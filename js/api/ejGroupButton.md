@@ -124,7 +124,7 @@ Sets the specified class to GroupButton wrapper element, which allows for custom
 {:#members:datasource}
 
 
-To set the local JSON data, define a JSON array and initialize the GroupButton with **dataSource** property. Specify the column names in the fields’ property.
+To set the local JSON data, define a JSON array and initialize the GroupButton with **dataSource** property. Specify the column names in the **fields** property.
 
 
 #### Default Value 
@@ -274,7 +274,7 @@ Used to enable or disable the ejGroupButton control.
 {:#members:fields}
 
 
-Gets or sets a value that indicates to display the values of the data
+Gets or sets a value that indicates to display the values of the data.
 
 
 ### Default value
@@ -287,50 +287,48 @@ Gets or sets a value that indicates to display the values of the data
 ### fields.contentType `enum|string`
 
 
-specifies the contentType of the button
+Specifies the content type of the button. Button can have image only, text only, imagetextimage, textandimage, or imageboth as content type.
 
 
 ### fields.htmlAttribute `object`
 
 
-Specifies the htmlAttributes to the element
+Specifies the HTML attributes to the element.
  
  
 ### fields.imagePosition `enum|string`
 
-specifies the position of the image
+Specifies the image position in the button. This property is applicable for the content type 'textandimage' only.
 
 
 ### fields.linkAttribute `object`
  
- 
- specifies the linkAttributes to the element
- 
- 
- ### fields.prefixIcon `string`
- 
- specifies the prefixIcon of the element
+Specifies the link attributes to the element.
  
  
- ### fields.selected `boolean`
+### fields.prefixIcon `string`
+
+Specifies the primary icon for button. This icon will be displayed from the left margin of the button.
+ 
+
+### fields.selected `boolean`
+ 
+Specifies the button is in selected state.
+ 
+
+### fields.suffixIcon `string`
+ 
+Specifies the secondary icon for button. This icon will be displayed from the right margin of the button.
  
  
- specifies the button is in selected state
+### fields.text `string`
+ 
+Specifies the text in the button.
  
  
- ### fields.suffixIcon `string`
+### fields.url `string`
  
- specifies the suffix Icon of the element
- 
- 
- ### fields.text `string`
- 
- specifies the text in the button
- 
- 
- ### fields.url `string`
- 
- specifies the URL of the button for navigation. 
+Specifies the URL of the button for navigation. 
 
 ### Example
 

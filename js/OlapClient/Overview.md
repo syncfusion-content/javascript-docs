@@ -22,7 +22,7 @@ The key features of the **OlapClient** control is as follows:
 * **Member Editor:** A tree-view-like structure contains members of a selected dimension that are used for manipulation purposes.
 * **Measure Editor:** Comprises of a collection of measures.
 * **Toolbar:** The toolbar of the **OlapClient** component provide options for exporting and manipulating the **OLAP** report such as add report, new report, remove report, rename report, and select report.
-* **Visualization Controls:** For a diagramatic representation of multidimensional data.
+* **Visualization Controls:** For a diagrammatic representation of multidimensional data.
 
 
 

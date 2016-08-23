@@ -139,8 +139,6 @@ So you can add the below Script references in the head section:
 
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"> </script>
 
-    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"></script>
-
     <script src="http://cdn.syncfusion.com/js/assets/external/jsrender.min.js"></script>
 
     <!--Internal script references-->

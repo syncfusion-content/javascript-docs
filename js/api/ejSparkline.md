@@ -657,13 +657,13 @@ Column</td>
 <td class="name">
 Pie</td>
 <td class="type">string</td> 
-<td class="description">PSpecifies the series type as pie.</td>
+<td class="description">Specifies the series type as pie.</td>
 </tr>
 <tr>
 <td class="name">
-Winloss</td>
+WinLoss</td>
 <td class="type">string</td> 
-<td class="description">PSpecifies the series type as winloss.</td>
+<td class="description">Specifies the series type as WinLoss.</td>
 </tr>
 </tbody>
 </table>
@@ -1633,7 +1633,7 @@ type{% endhighlight %}</td>
 
 
 
-### tooltipInitializaion
+### tooltipInitialization
 {:#events:tooltipinitializaion}
 
 Fires before rendering trackball tooltip. You can use this event to customize the text displayed in trackball tooltip.

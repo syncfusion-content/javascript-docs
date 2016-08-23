@@ -9,7 +9,7 @@ documentation: ug
 
 # AngularJS Binding
 
-The **ColorPicker** widget is availed with two types of **angular JS** support namely, 
+The **ColorPicker** widget is availed with two types of **angularJS** support namely, 
 
 * One-way binding
 * Two-way binding 

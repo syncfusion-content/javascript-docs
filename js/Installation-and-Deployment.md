@@ -208,7 +208,7 @@ Follow the below steps to install Syncfusion JavaScript npm package via command 
 3. npm install the Syncfusion JavaScript assets into the project location to develop with Syncfusion controls.  
 
 N> As per standard Syncfusion used the 3 digit version for npm packages. To install a particular version of npm package, provide the version as suffix of the package name while installing. For instance, run the below command, 
-N> E.g. The below command installs Syncfusion Javascript package of version 14.1.0.46. 
+N> E.g. The below command installs Syncfusion JavaScript package of version 14.1.0.46. 
 N> 'npm install Syncfusion-javascript@14.1.46'
 
 #### Using package.json file
@@ -274,7 +274,7 @@ Follow the below steps to install Syncfusion JavaScript jspm package via command
 
 1. Open project’s location in command prompt window.
 
-2. A) To install the Syncfusion JavaScript jspm package via github repository.
+2. A) To install the Syncfusion JavaScript jspm package via GitHub repository.
 
    ~~~
    jspm install syncfusion=github:syncfusion/Javascript-Widgets
@@ -289,7 +289,7 @@ Follow the below steps to install Syncfusion JavaScript jspm package via command
    ~~~
    
 N> As per standard Syncfusion used the 3 digit version for jspm packages. To install a particular version of jspm package, need to provide the version as suffix of the package name while installing. For instance, run the below command,  
-N> E.g. The below command installs Syncfusion Javascript package of version 14.1.0.46.  
+N> E.g. The below command installs Syncfusion JavaScript package of version 14.1.0.46.  
 N> 'jspm install syncfusion=github:syncfusion/JavaScript-Widgets@14.1.46'
 
 ### jspm Update

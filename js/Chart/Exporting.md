@@ -9,7 +9,7 @@ documentation: ug
 
 # Exporting Chart
 
-Exporting a chart can be done in both client-side and in server-side. This can be modified by setting values to the property “mode” in exporting. Default value for mode is client. 
+Exporting a chart can be done in both client-side and in server-side. This can be modified by setting values to the property "mode" in exporting. Default value for mode is client. 
 
 ## Client-side Exporting
 
@@ -268,11 +268,11 @@ Export multiple chart to excel at server-side
 
 ## Naming the exported file
 
-ejChart provides options to customize the name of the file to be exported. This can be done by setting the name of the file to the property “fileName” in exporting.
+ejChart provides options to customize the name of the file to be exported. This can be done by setting the name of the file to the property "fileName" in exporting.
 
 ## Rotating the chart
 
-We can also rotate the chart and can export it. Possible angles of rotation are 0, 90, -90 and 180 degree. This can be achieved by setting values to the “angle” property in exporting.
+We can also rotate the chart and can export it. Possible angles of rotation are 0, 90, -90 and 180 degree. This can be achieved by setting values to the "angle" property in exporting.
 
 {% highlight javascript %}
 
@@ -288,4 +288,4 @@ We can also rotate the chart and can export it. Possible angles of rotation are 
 
 ## Setting orientation for the document
 
-This is applicable for PDF, excel and word documents. By setting values to the “orientation” property in exporting, we can change the orientation of those documents. By default it will export with portrait orientation.
+This is applicable for PDF, excel and word documents. By setting values to the "orientation" property in exporting, we can change the orientation of those documents. By default it will export with portrait orientation.

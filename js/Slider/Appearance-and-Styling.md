@@ -43,8 +43,6 @@ In an **HTML** page, specify the desired “**ej.widgets.all.min.css”** file t
    <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-lime-dark/ej.web.all.min.css"rel="stylesheet"/>
    <!--scripts-->
    <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
-   <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"> </script>
-   <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"> </script>
    <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"></script>
 </head>
 
@@ -85,7 +83,7 @@ Execute the above code example to render the following output.
 
 ![](/js/Slider/Appearance-and-Styling_images/Appearance-and-Styling_img1.png) 
 
-## Css Class
+## CSS Class
 
 When you want to display the **Slider** widget in a different style based on the appearance of your application, you can use this **cssClass** property to apply custom theme for the **Slider**. Specify a class name as the value for **cssClass** property. The specified class is added to the wrapper of the **Slider** widget. Now, you can easily override the styles of the **Slider** widget by accessing the styles from the root level (using the cssClass specified).
 

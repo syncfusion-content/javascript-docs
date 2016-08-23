@@ -89,6 +89,70 @@ $("#PivotSchemaDesigner1").ejPivotSchemaDesigner({ enableWrapper : true });
 {% endhighlight %}
 
 
+### enableRTL `boolean`
+{:#members:enablertl}
+
+Allows the user to view PivotTable Field List from right to left.
+
+#### Default Value: false
+
+**Example:**
+
+{% highlight html %}
+ 
+$("#PivotSchemaDesigner1").ejPivotSchemaDesigner({ enableRTL : true });
+
+{% endhighlight %}
+
+
+### showKPI `boolean`
+{:#members:showkpi}
+
+Allows the user to view the KPI elements in tree-view inside PivotTable Field List. This is only applicable for OLAP datasource.
+
+#### Default Value: false
+
+**Example:**
+
+{% highlight html %}
+ 
+$("#PivotSchemaDesigner1").ejPivotSchemaDesigner({ olap: { showKPI : true } });
+
+{% endhighlight %}
+
+
+### showNamedSets `boolean`
+{:#members:shownamedsets}
+
+Allows the user to view the named sets in tree-view inside PivotTable Field List. This is only applicable for OLAP datasource.
+
+#### Default Value: false
+
+**Example:**
+
+{% highlight html %}
+ 
+$("#PivotSchemaDesigner1").ejPivotSchemaDesigner({ olap: { showNamedSets : true } });
+
+{% endhighlight %}
+
+
+### enableDragDrop `boolean`
+{:#members:enabledragdrop}
+
+Allows the user to restrict drag and drop operation within the PivotTable Field List.
+
+#### Default Value: true
+
+**Example:**
+
+{% highlight html %}
+ 
+$("#PivotSchemaDesigner1").ejPivotSchemaDesigner({ enableDragDrop : true });
+
+{% endhighlight %}
+
+
 ### filters `array`
 {:#members:filters}
 
@@ -527,3 +591,67 @@ $("#PivotSchemaDesigner1").$("#PivotSchemaDesigner1")({
 
 {% endhighlight %}
 
+
+### dragMove
+{:#events:dragmove}
+
+Triggers when we start dragging any field from PivotSchemaDesigner.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">argument</td>
+<td class="type">Object</td>
+<td class="description last">Event parameters from PivotSchemaDesigner
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">dragTarget</td>
+<td class="type">object</td>
+<td class="description last">return the HTML of the dragged field from PivotSchemaDesigner.</td>
+</tr>
+<tr>
+<td class="name">draggedElementData</td>
+<td class="type">object</td>
+<td class="description last">return the JSON details of the dragged field.</td>
+</tr>
+<tr>
+<td class="name">cancel</td>
+<td class="type">boolean</td>
+<td class="description last">if the event should be canceled; otherwise, false.</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type"><ts ref="ej.PivotSchemaDesigner.Model"/>object</td>
+<td class="description last">returns the PivotSchemaDesigner model</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+**Example:**
+
+{% highlight html %}
+ 
+$("#PivotSchemaDesigner1").$("#PivotSchemaDesigner1")({
+   dragMove: function (args) {}
+});      
+
+{% endhighlight %}

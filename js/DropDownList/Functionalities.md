@@ -5,12 +5,161 @@ description: Functionalities in the DropDownList widget for Syncfusion Essential
 platform: js
 control: DropDownList
 documentation: ug
+keywords: DropDownList, dropdown, Selection, Grouping, Sorting
 ---
 # Functionalities
 
 ## Selection
 
 By default only one item can be selected from the popup list. For multiple selection, you have to enable [checkboxes](Checkbox). The selected item consist of active class (“e-active”) to differentiate it from other items.
+
+The following API’s, select the items in the DropDownList via text or value or indices.
+
+<table>
+    <tr>
+        <th>
+            Properties
+            <br/>
+        </th>
+        <th>
+            Description
+            <br/>
+        </th>
+    </tr>
+    <tr>
+        <td>
+            {{'[value](http://help.syncfusion.com/js/api/ejdropdownlist#members:value)'| markdownify }} 
+            <br/>
+        </td>
+        <td>
+            To select an item initially, you can pass the item’s value via value property.
+            <br/>
+            {{'N> Also multiple items can select via Value property, the given values should be separated by delimiter character. ' | markdownify }}
+        </td>
+    </tr>
+    <tr>
+        <td>
+            {{'[text](http://help.syncfusion.com/js/api/ejdropdownlist#members:text)'| markdownify }} 
+            <br/>
+        </td>
+        <td>
+            To select an item initially, you can pass the item’s text via text property.
+            <br/>
+            {{'N> Also multiple items can select via Value property, the given values should be separated by delimiter character. ' | markdownify }}
+        </td>
+    </tr>
+    <tr>
+        <td>
+            {{'[selectedIndex](http://help.syncfusion.com/js/api/ejdropdownlist#members:selectedindex)'| markdownify }} 
+            <br/>
+        </td>
+        <td>
+            Select a single item by passing an index value to the selectedIndex property.
+            <br/>
+        </td>
+    </tr>
+    <tr>
+        <td>
+             {{'[selectedIndices](http://help.syncfusion.com/js/api/ejdropdownlist#members:selectedindices)'| markdownify }}
+            <br/>
+        </td>
+        <td>
+            Select more than one items by passing index values to the selectedIndices property when multi selection enabled. 
+            <br/>
+        </td>
+    </tr>
+</table>
+
+N> Index starts from 0 here.
+N> To use “selectedIndices” property, you should enable wither showCheckbox or multipSelectMode property.
+
+The following methods, select the items in the DropDownList.
+
+<table>
+    <tr>
+        <th>
+            Methods
+            <br/>
+        </th>
+        <th>
+            Description
+            <br/>
+        </th>
+    </tr>
+    <tr>
+        <td>
+            {{'[selectItemByIndices](http://help.syncfusion.com/js/api/ejdropdownlist#methods:selectitembyindices)'| markdownify }}
+            <br/>
+        </td>
+        <td>
+            This method is used to select the list of items in the DropDownList through the Index of the items.
+        </td>
+    </tr>
+    <tr>
+        <td>
+            {{'[selectItemByText](http://help.syncfusion.com/js/api/ejdropdownlist#methods:selectItemByText)'| markdownify }}
+            <br/>
+        </td>
+        <td>
+            This method is used to select an item in the DropDownList by using the given text value.
+        </td>
+    </tr>
+    <tr>
+        <td>
+            {{'[selectItemByValue](http://help.syncfusion.com/js/api/ejdropdownlist#methods:selectitembyvalue)'| markdownify }}
+            <br/>
+        </td>
+        <td>
+            This method is used to select an item in the DropDownList by using the given value.
+            <br/>
+        </td>
+    </tr>
+</table>
+
+The following methods, used to retrieve the items from the DropDownList.
+
+<table>
+    <tr>
+        <th>
+            Methods
+            <br/>
+        </th>
+        <th>
+            Description
+            <br/>
+        </th>
+    </tr>
+    <tr>
+        <td>
+            {{'[getListData](http://help.syncfusion.com/js/api/ejdropdownlist#methods:getlistdata)'| markdownify }}
+            <br/>
+        </td>
+        <td>
+            This method is used to retrieve the items that are bound with the DropDownList.
+        </td>
+    </tr>
+    <tr>
+        <td>
+            {{'[getSelectedItem](http://help.syncfusion.com/js/api/ejdropdownlist#methods:getselecteditem)'| markdownify }}
+            <br/>
+        </td>
+        <td>
+            This method is used to get the selected items in the DropDownList.
+        </td>
+    </tr>
+    <tr>
+        <td>
+            {{'[getSelectedValue](http://help.syncfusion.com/js/api/ejdropdownlist#methods:getSelectedValue)'| markdownify }}
+            <br/>
+        </td>
+        <td>
+            This method is used to retrieve the items value that are selected in the DropDownList.
+            <br/>
+        </td>
+    </tr>
+</table>
+
+I> When multiSelectMode is enabled in a DropDownList and selected items having same text but its value is different means, the items can be selected. Please refer the online [link](http://jsplayground.syncfusion.com/Sync_5fgywhmb)
 
 ### Using value or text
 
@@ -340,9 +489,21 @@ The below given example explains the behavior of grouping with JSON array bindin
 ![](Functionalities_images/Functionalities_img3.jpeg)
 
 N> Grouping has restrictions in the following scenarios,
+
 N> 1.  It is not supported on using HTML "select" element with predefined set of options
+
 N> 2.  When using UL-LI elements you need to use “e-category” class in LI element to specify it as the grouping header. The following code will explain this behavior,
 
+N> 3.  The sorting behavior varies when grouping is enabled in the DropDownList, based on browser as we have used browser based stable sorting method when there is multiple level of sorting. 
+
+N> 4.  To overcome this behavior on sorting order with browser, we suggest you to set ej.support.stableSort as false from the script when the page is loaded or in document ready function.
+   {% highlight javascript %}
+    <script type="text/javascript">
+            $(document).ready(function () {
+                ej.support.stableSort = false;            
+            });
+    </script>
+   {% endhighlight %}
 
 {% highlight html %}
 
@@ -536,7 +697,9 @@ Configuring the data items for cascading to the series of DropDownList is demons
 
 ![](Functionalities_images/Functionalities_img6.jpeg)
 
-You can also bind the data source to the cascading DropDownList dynamically using [cascade](http://help.syncfusion.com/js/api/ejdropdownlist#events:cascade) event as demonstrated below,
+### Binding the data source to the cascading DropDownList using cascade event
+
+Bind the data source to the cascading DropDownList dynamically using [cascade](http://help.syncfusion.com/js/api/ejdropdownlist#events:cascade) event as demonstrated below,
 
 {% highlight html %}
 
@@ -638,6 +801,102 @@ You can also bind the data source to the cascading DropDownList dynamically usin
 {% endhighlight %}
 
 ![](Functionalities_images/Functionalities_img7.jpeg)
+
+### Multi-Level Cascading
+
+The below scenario can be explained with three DropDownList for the multi-level cascading
+
+{% highlight html %}
+
+    <div class="frame">
+        <div class="control" style="float: left; padding:10px;">
+            <span class="txt">Select Continent</span>
+            <input id="groupsList" type="text" />
+        </div>
+        <div class="control" style="float: left; padding:10px;">
+            <span class="txt">Select Country</span>
+            <input id="countryList" type="text" />
+        </div>
+        <div class="control" style="float: left; padding:10px;">
+            <span class="txt">Select State</span>
+            <input id="capitalList" type="text" />
+        </div>
+    </div>
+
+{% endhighlight %}
+
+{% highlight javascript %}
+
+    <script type="text/javascript">
+       var target;
+       $(function () {
+           // declaration
+           var groups = [
+           { parentId: 'a', text: "Africa" },
+           { parentId: 'b', text: "Asia" },
+           { parentId: 'c', text: "Europe" },
+           { parentId: 'd', text: "North America" },
+           { parentId: 'e', text: "South America" },
+           { parentId: 'f', text: "Oceania" },
+           { parentId: 'g', text: "Antarctica" }]
+           //Countries List
+           var countries = [
+           { value: 11, parentId: 'a', text: "Algeria" },
+           { value: 12, parentId: 'a', text: "Egypt" },
+           { value: 13, parentId: 'b', text: "Armenia" },
+           { value: 14, parentId: 'b', text: "Bangladesh" },
+           { value: 15, parentId: 'b', text: "India" },
+           { value: 16, parentId: 'c', text: "Denmark" },
+           { value: 17, parentId: 'c', text: "Finland" },
+           { value: 18, parentId: 'd', text: "Cuba" },
+           { value: 19, parentId: 'd', text: "USA" },
+           { value: 20, parentId: 'e', text: "Brazil" },
+           { value: 21, parentId: 'e', text: "Peru" },
+           { value: 22, parentId: 'f', text: "Australia" },
+           { value: 23, parentId: 'f', text: "New Zealand" },
+           { value: 24, parentId: 'g', text: "French Southern" },
+           { value: 25, parentId: 'g', text: "South Georgia" }]
+           //Capital List
+           var capital = [
+           { value: 11, text: "Algiers" },
+           { value: 12, text: "Cairo" },
+           { value: 13, text: "Yerevan" },
+           { value: 14, text: "Dhaka" },
+           { value: 15, text: "New Delhi" },
+           { value: 16, text: "Copenhagen" },
+           { value: 17, text: "Helsinki" },
+           { value: 18, text: "Havana" },
+           { value: 19, text: "Washington, D.C." },
+           { value: 20, text: "Brasília" },
+           { value: 21, text: "Lima" },
+           { value: 22, text: "Canberra" },
+           { value: 23, text: "Wellington" },
+           { value: 24, text: "Alfred Faure" },
+           { value: 25, text: "King Edward Point" }]
+           $('#groupsList').ejDropDownList({
+               dataSource: groups,
+               fields: { value: "parentId" },
+               cascadeTo: 'countryList'
+           });
+           $('#countryList').ejDropDownList({
+               dataSource: countries,
+               fields: { value: "value" },
+               cascadeTo: 'capitalList',
+               enabled: false
+           });
+           $('#capitalList').ejDropDownList({
+               dataSource: capital,
+               fields: { value: "value" },
+               enabled: false
+           });
+       });
+    </script>
+    
+{% endhighlight %}
+
+First two DropDownList cascaded based on the parentId, and then from second to third, cascading performed based on the value field.
+
+![](Functionalities_images/multipCascade.png)
 
 ## Search
 

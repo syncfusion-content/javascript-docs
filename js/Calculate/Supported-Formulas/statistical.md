@@ -2045,7 +2045,7 @@ _T.INV(probability,deg_freedom)_
 
 
 
-* If either argument is nonnumeric, T.INV returns the `#VALUE!` error value.
+* If either argument is non-numeric, T.INV returns the `#VALUE!` error value.
 
 
 

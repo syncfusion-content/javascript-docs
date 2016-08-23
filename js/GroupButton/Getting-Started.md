@@ -86,7 +86,7 @@ A simple HTML file with required CSS and script reference added to create GroupB
 
 ## GroupButton initialization
 
-GroupButton can be created using “div” tag or “span” tag and corresponding child button elements can be rendered as li tag or href tag. Below is the sample code to showcase the rendering the GroupButton with li tags in HTML page,
+GroupButton can be created using **&lt;DIV&gt;** tag or **&lt;SPAN&gt;** tag and corresponding child button elements can be rendered as **&lt;LI&gt;** tag or **&lt;HREF&gt;** tag. Below is the sample code to showcase the rendering the GroupButton with **&lt;LI&gt;** tags in HTML page,
 
 {% highlight html %}
 

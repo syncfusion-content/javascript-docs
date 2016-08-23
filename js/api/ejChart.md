@@ -9278,7 +9278,7 @@ $("#container").ejChart({
 
 
 
-Controls whether Chart has to be responsive or not.
+Controls whether Chart has to be responsive while resizing.
 
 
 #### Default Value
@@ -19926,6 +19926,34 @@ series :[{marker :{ visible : true}}]
  {% endhighlight %}
 
 
+### series.name `string`
+{:#members:series.name}
+
+
+
+
+Name of the series, that is to be displayed in the legend.
+
+
+
+#### Default Value
+
+
+Add a comment to this line
+
+ * ""
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+$("#container").ejChart({
+   series : [{name: "India" }]                   
+});
+
+{% endhighlight %} 
 
 
 ### series.opacity `number`

@@ -393,6 +393,21 @@ $("#OlapClient1").ejOlapClient({ enableDeferUpdate: true });
 
 {% endhighlight %}
 
+### enableRTL `boolean`
+{:#members:enablertl}
+
+Allows the user to view the layout of OlapClient from right to left.
+
+#### Default Value: false
+
+**Example:**
+
+{% highlight html %}
+ 
+$("#OlapClient1").ejOlapClient({ enableRTL: true });
+
+{% endhighlight %}
+
 ### enableMeasureGroups `boolean`
 {:#members:enablemeasuregroups}
 

@@ -47,7 +47,7 @@ These files are referred for proper working of the sub-controls used within Recu
 
 N> Recurrence Editor uses one or more sub-controls, therefore refer the `ej.web.all.min.js` (which encapsulates all the `ej` controls and frameworks in a single file) in the application instead of referring all the above specified internal dependencies. 
 
-To get the real appearance of the Recurrence Editor, the dependent css file `ej.web.all.min.css` (which includes styles of all the widgets) should also needs to be referred.
+To get the real appearance of the Recurrence Editor, the dependent CSS file `ej.web.all.min.css` (which includes styles of all the widgets) should also needs to be referred.
 
 ## Control Initialization 
 

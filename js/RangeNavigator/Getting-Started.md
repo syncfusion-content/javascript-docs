@@ -65,11 +65,11 @@ The following code example renders a **RangeNavigator** with a range from 2010, 
 {% highlight html %}
 
 
-    <script type=”text/javascript” language=”javascript”>
+    <script type="text/javascript" language="javascript">
         $(function () {
-            $(“#rangecontainer”).ejRangeNavigator({
+            $("#rangecontainer").ejRangeNavigator({
                 rangeSettings: {
-                    start: “2010/1/1”, end: “2010/12/31”
+                    start: "2010/1/1", end: "2010/12/31"
                 },
             });
         });
@@ -94,13 +94,13 @@ You can create data source for **RangeNavigator** as follows.
 
 {% highlight javascript %}
 
-    window.chartData = [{ “xDate”: new Date(2011, 0, 1), “yValue”: 10 },
-                        { “xDate”: new Date(2011, 2, 1), “yValue”: 5 },
-                        { “xDate”: new Date(2011, 4, 1), “yValue”: 15 },
-                        { “xDate”: new Date(2011, 6, 1), “yValue”: 25 },
-                        { “xDate”: new Date(2011, 8, 1), “yValue”: 10 },
-                        { “xDate”: new Date(2011, 10, 1), “yValue”: 5 },
-                        { “xDate”: new Date(2011, 12, 1), “yValue”: 15 }];
+    window.chartData = [{ "xDate": new Date(2011, 0, 1), "yValue": 10 },
+                        { "xDate": new Date(2011, 2, 1), "yValue": 5 },
+                        { "xDate": new Date(2011, 4, 1), "yValue": 15 },
+                        { "xDate": new Date(2011, 6, 1), "yValue": 25 },
+                        { "xDate": new Date(2011, 8, 1), "yValue": 10 },
+                        { "xDate": new Date(2011, 10, 1), "yValue": 5 },
+                        { "xDate": new Date(2011, 12, 1), "yValue": 15 }];
 
 {% endhighlight %}
 
@@ -110,8 +110,8 @@ Now, add the **dataSource** to the **RangeNavigator** and provide the field name
 {% highlight javascript %}
 
     $(function () {
-            $(“#rangecontainer”).ejRangeNavigator({
-              dataSource: window.chartData, xName: “xDate”, yName: “yValue”      
+            $("#rangecontainer").ejRangeNavigator({
+              dataSource: window.chartData, xName: "xDate", yName: "yValue"      
             });
         });
 
@@ -119,7 +119,7 @@ Now, add the **dataSource** to the **RangeNavigator** and provide the field name
 {% endhighlight %}
 
 
-The following screenshot displays a RangeNavigator with the default **“Line”** series type.
+The following screenshot displays a RangeNavigator with the default **"Line"** series type.
 
 
 
@@ -127,7 +127,7 @@ The following screenshot displays a RangeNavigator with the default **“Line”
 
 **Enable tooltip**
 
-You can customize **Tooltip** for RangeNavigator using **tooltip** option. You can use **tooltipDisplayMode** option in **tooltip**,to display the tooltip “always” or “ondemand” (displays tooltip only while dragging the sliders). You can also specify label format for tooltip using **labelFormat**.
+You can customize **Tooltip** for RangeNavigator using **tooltip** option. You can use **tooltipDisplayMode** option in **tooltip**,to display the tooltip "always" or "ondemand" (displays tooltip only while dragging the sliders). You can also specify label format for tooltip using **labelFormat**.
 
 The following code sample shows how to enable a Tooltip.
 
@@ -135,7 +135,7 @@ The following code sample shows how to enable a Tooltip.
 
 
        $(function () {
-          $(“#rangecontainer”).ejRangeNavigator({
+          $("#rangecontainer").ejRangeNavigator({
             //…
             tooltipSettings: {
             visible: true, labelFormat: "MMM/yyy", tooltipDisplayMode: "always",
@@ -256,7 +256,7 @@ You can create a **dataSource** for Chart Series with integer Values using the f
 
 {% endhighlight %}
 
-Now, you can set the **dataSource** for Chart Series and **valueType** property to “numeric” as given in the following code example.
+Now, you can set the **dataSource** for Chart Series and **valueType** property to "numeric" as given in the following code example.
 
 {% highlight javascript %}
 

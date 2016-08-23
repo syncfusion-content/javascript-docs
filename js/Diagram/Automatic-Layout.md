@@ -309,7 +309,7 @@ options.offset|Offset is the horizontal space to be left between parent and chil
 options.hasSubTree|Gets whether the node contains sub trees.|Boolean
 options.level|Gets the depth of the node from layout root|Number
 options.enableRouting|By default, Connections are routed based on the chart type and orientations.This property gets or sets whether default routing is to be enabled or disabled.|true
-
+options.rows|Sets the number of rows on which the child nodes will be arranged. Applicable only for balanced type horizontal tree |Number
 
 The following table illustrates the different chart orientations and chart types.
 
@@ -318,9 +318,11 @@ The following table illustrates the different chart orientations and chart types
 | Horizontal | Left | Arranges the child nodes horizontally at the left side of parent. | ![](/js/Diagram/Automatic-Layout_images/Automatic-Layout_img4.png) |
 | | Right | Arranges the child nodes horizontally at the right side of parent. | ![](/js/Diagram/Automatic-Layout_images/Automatic-Layout_img5.png) |
 | | Center | Arranges the children like standard tree layout orientation. | ![](/js/Diagram/Automatic-Layout_images/Automatic-Layout_img6.png) |
+| | Balanced | Arranges the leaf-level child nodes in multiple rows. | ![](/js/Diagram/Automatic-Layout_images/Automatic-Layout_img16.png) |
 | Vertical | Left | Vertically arranges the children at the left side of parent | ![](/js/Diagram/Automatic-Layout_images/Automatic-Layout_img7.png) |
 | | Right | Vertically arranges the children at the right side of parent | ![](/js/Diagram/Automatic-Layout_images/Automatic-Layout_img8.png) |
 | | Alternate | Vertically arranges the children at both left and right sides of parent | ![](/js/Diagram/Automatic-Layout_images/Automatic-Layout_img9.png) |
+
 
 The following code example illustrates how to set the vertical right arrangement to the leaf level trees.
 

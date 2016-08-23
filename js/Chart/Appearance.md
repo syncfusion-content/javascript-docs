@@ -108,7 +108,7 @@ Marker, data label and fill color of each point in a series can be customized in
 
 To customize the series border color, width and dashArray, you can use [`series.border`](../api/ejchart#members:series-border) option. 
 
-N> Series border can be applied to all the series (except line, spline, hilo, hiloopenclose and stepline series).
+N> Series border can be applied to all the series (except Line, Spline, HiLo, HiLoOpenClose and StepLine series).
 
 {% highlight javascript %}
 

@@ -9,7 +9,7 @@ documentation: ug
 
 # Overview
 
-Essential [Theme Studio](http://js.syncfusion.com/themestudio/) for JavaScript allows us to build a new theme based on an existing themes for Syncfusion Essential JavaScript controls except Data visualization controls like Chart, Diagram, Gauage, Range Navigator, Barcode, Maps. Also, you can import your customized theme into the Theme studio and customize the colors and download.
+Essential [Theme Studio](http://js.syncfusion.com/themestudio/) for JavaScript allows us to build a new theme based on an existing themes for Syncfusion Essential JavaScript controls except Data visualization controls like Chart, Diagram, Gauge, Range Navigator, Barcode, Maps. Also, you can import your customized theme into the Theme studio and customize the colors and download.
 
 ## How to create a new theme based on existing built-in themes?
 
@@ -72,7 +72,7 @@ In the Download dialog popup provide a name to the file to be generated. Once th
 <tr>
 <td>
 ej.theme.less<br/><br/></td><td>
-You can manually change the color code in this less file and generate the css by using less to css generator.<br/><br/></td>
+You can manually change the color code in this less file and generate the css by using less to CSS generator.<br/><br/></td>
 </tr>
 <tr>
 <td>properties.json<br/><br/></td>

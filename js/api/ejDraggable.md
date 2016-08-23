@@ -399,7 +399,7 @@ Used to group sets of draggable and droppable items, in addition to droppable's 
 
 
 
-destroy in the dragable.
+destroy in the draggable.
 
 
 
@@ -750,7 +750,7 @@ This event is triggered when dragged.
 <td class="name">
 element</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description">returns the draggle element object</td>
+<td class="description">returns the draggable element object</td>
 </tr>
 <tr>
 <td class="name">

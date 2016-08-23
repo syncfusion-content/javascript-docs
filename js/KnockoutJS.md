@@ -49,7 +49,7 @@ The below code snippet shows how the data-bind attribute is used with our Syncfu
 
 ### Dependency tracking
 
-KnockoutJS provides a special type of variable `observable`, through which the data-binding can be achieved in a more convenient manner. Everytime, when the model data is being changed, all those changes are automatically synchronized with the associated UI elements. 
+KnockoutJS provides a special type of variable `observable`, through which the data-binding can be achieved in a more convenient manner. Every time, when the model data is being changed, all those changes are automatically synchronized with the associated UI elements. 
 
 Here, the below sample code defines how to define the `observable` variable within the `script` section,
 
@@ -61,7 +61,7 @@ window.viewModel = {
 
 {% endhighlight %}
 
-The value to be bound to the UI element needs to be passed through the **ko.observable** varaible as shown above. The `dateValue` defined in the above code is an observable variable holding a date value, which can be assigned to the properties of the UI components.
+The value to be bound to the UI element needs to be passed through the **ko.observable** variable as shown above. The `dateValue` defined in the above code is an observable variable holding a date value, which can be assigned to the properties of the UI components.
 
 The `data-bind` attribute which we have defined in the previous section cannot be identified directly by the HTML tags and also the browser on which we run that page.  Therefore, in order to work with KnockoutJS, we need to call the `ko.applyBindings() function at the end of the script, so that the `data-bind` attribute will get recognized. Such KnockoutJS code needs to be wrapped in a jQuery function as shown below within the script section, in order to work properly.
 

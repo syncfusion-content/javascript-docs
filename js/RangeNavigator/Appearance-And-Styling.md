@@ -13,7 +13,7 @@ documentation: ug
 
 #### Customize labels
 
-The labels are found along the range, displaying the value of the data it correspond, both on (higher level label) and below (lower level label) the **RangeNavigator**. **RangeNavigator** labels are further customized using “**font**” property in label Settings. 
+The labels are found along the range, displaying the value of the data it correspond, both on (higher level label) and below (lower level label) the **RangeNavigator**. **RangeNavigator** labels are further customized using "**font**" property in label Settings. 
 
 {% highlight javascript %}
 
@@ -58,7 +58,7 @@ The labels are found along the range, displaying the value of the data it corres
 
 ##### Label Placement
 
-Labels in **RangeNavigator** are placed inside or outside of the control. You can customize both the higher and lower level labels using **labelPlacement** property in label setting of **RangeNavigator**. By default **labelPlacement** is “outside” for the both higher and lower level labels.
+Labels in **RangeNavigator** are placed inside or outside of the control. You can customize both the higher and lower level labels using **labelPlacement** property in label setting of **RangeNavigator**. By default **labelPlacement** is "outside" for the both higher and lower level labels.
 
 The following screen shot illustrates both the lower and higher level labels that are placed outside the control with **labelPlacement** specified as outside.
 

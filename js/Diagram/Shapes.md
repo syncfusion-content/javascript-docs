@@ -17,7 +17,6 @@ Diagram provides support to add different kind of nodes. They are as follows.
 * Native Node
 * Basic Shapes
 * Flow Shapes
-* BPMN Shapes
 
 ## Text
 
@@ -48,7 +47,9 @@ var nodes = [{
 ![](/js/Diagram/Shapes_images/Shapes_img59.png)
 
 ## Image
-Diagram allows to add images as image nodes. For image nodes, the `type` should be set as "image". In addition, the `source` property of node enables you to set the image source. The following code illustrates how an **Image** node is created.
+Diagram allows to add images as image nodes. For image nodes, the `type` should be set as "image". In addition, the `source` property of node enables you to set the image source. 
+
+The following code illustrates how an **Image** node is created.
 
 {% highlight javascript %}
 
@@ -74,6 +75,46 @@ N> Deploy your HTML file in the web Application and export the diagram (image no
 Link: http://asked.online/draw-images-on-canvas-locally-using-chrome/2546077/
 
 Link1: http://stackoverflow.com/questions/4761711/local-image-in-canvas-in-chrome
+
+### Image Alignment
+
+You can stretch and align the image content anywhere but within the node boundary.
+
+The `contentAlignment` property of node allows to align an image within the node boundary. The `scale` property of node allows to stretch the image as you desired (either to maintain proportion or to stretch). By default, the `scale` property of node is set as "meet".
+The following code illustrates how to scale or stretch the content of the image node.
+
+{% highlight javascript %}
+
+// Defines JSON to create node with image
+var nodes = [{
+	name: "imageNode", 
+	width: 100, 
+	height: 60, 
+	offsetX: 40, 
+	offsetY: 40,
+	type: ej.datavisualization.Diagram.Shapes.Image,
+	source: "sample/emlpoyee.png"
+	borderWidth:3,
+	borderColor:"white",
+}];
+//Initializes Diagram
+$("#diagram").ejDiagram({
+	width: "100%", 
+	height: "100%",
+	//Initializes nodes collection
+	nodes: nodes,
+});
+
+{% endhighlight %}
+
+The following tables illustrates all the possible scale options for the image node
+
+| Values| Image |
+|---|---|
+| None | ![](/js/Diagram/Shapes_images/Shapes_img128.png) |
+| Meet | ![](/js/Diagram/Shapes_images/Shapes_img129.png) |
+| Slice | ![](/js/Diagram/Shapes_images/Shapes_img130.png) |
+| Stretch | ![](/js/Diagram/Shapes_images/Shapes_img131.png) |
 
 
 ## HTML
@@ -150,6 +191,64 @@ var nodes = [{
 ![](/js/Diagram/Shapes_images/Shapes_img62.png)
 
 N> Like HTML node, Native node also cannot be exported to image format. Fill color of native node can be overridden by the inline style or fill of the SVG element specified in the template. 
+
+### SVG content alignment
+
+You can stretch and align the svg content anywhere but within the node boundary.
+
+The `contentAlignment` property of node allows to align the svg content within the node boundaries. The `scale` property of node allows to stretch the svg content as you desired(either to maintain proportion or to stretch).By default, the `scale` property of node is set as "meet".
+The following code illustrates how to scale or stretch the content of the node.
+
+{% highlight html %}
+
+<!--dependency scripts-->
+<script src="http://borismoore.github.io/jsrender/jsrender.min.js"></script>
+<!--define html element-->
+<script id="svgTemplate" type="text/x-jsrender">
+	<g>	
+		<ellipse  ry="35" rx="37" id="svg_1" cy="139" cx="215.5"  />
+	</g>
+</script>
+
+{% endhighlight %}
+
+{% highlight javascript %}
+
+// Defines JSON to create node with SVG element
+var nodes = [{
+	name: "NativeNode", 
+	width: 100, 
+	height: 60, 
+	offsetX: 40, 
+	offsetY: 40,
+	fillColor:"darkcyan",
+	borderWidth:3,
+	borderColor:"black",
+
+	//Sets type as Native
+	type: ej.datavisualization.Diagram.Shapes.Native,
+
+	//Sets id of SVG element
+	templateId: "svgTemplate",
+}];
+//Initializes Diagram
+$("#diagram").ejDiagram({
+	width: "100%", 
+	height: "100%",
+	//Initializes nodes collection
+	nodes: nodes,
+});
+
+{% endhighlight %}
+
+The following tables illustrates all the possible scale options for the node
+
+| Values| Image |
+|---|---|
+| None | ![](/js/Diagram/Shapes_images/Shapes_img124.png) |
+| Meet | ![](/js/Diagram/Shapes_images/Shapes_img125.png) |
+| Slice | ![](/js/Diagram/Shapes_images/Shapes_img126.png) |
+| Stretch | ![](/js/Diagram/Shapes_images/Shapes_img127.png) |
 
 ## Basic Shapes
 
@@ -255,539 +354,4 @@ The list of flow shapes are as follows.
 
 ![](/js/Diagram/Shapes_images/Shapes_img4.png)
 
-## BPMN Shapes
 
-BPMN shapes are used to represent the internal business procedure in a graphical notation and enables you to communicate the procedures in a standard manner. To create a BPMN shape, the `type` of the node should be set as "bpmn" and its `shape` should be set as any one of the built-in shape. [BPMN Shapes](/js/api/global#bpmnshapes "BPMN Shapes"). The following code example illustrates how to create a simple business process. 
-
-{% highlight javascript %}
-
-$("#diagram").ejDiagram({
-	width: "100%",
-	height: "100%",
-	pageSettings: {
-		scrollLimit: "diagram"
-	},
-	nodes: [{
-		name: "node",
-		width: 100,
-		height: 100,
-		offsetX: 100,
-		offsetY: 100,
-		borderWidth: 2,
-		borderColor: "black",
-		labels: [{
-			text: "End Event"
-		}],
-		//Sets the type of shape as BPMN
-		type: ej.datavisualization.Diagram.Shapes.BPMN,
-		//Sets the type of bpmn shape
-		shape: ej.datavisualization.Diagram.BPMNShapes.Event,
-		//Sets type of the Event
-		event: ej.datavisualization.Diagram.BPMNEvents.End
-	}],
-});
-
-{% endhighlight %}
-
-![](/js/Diagram/Shapes_images/Shapes_img5.png)
-
-N> The default value for the property `shape` is "event".
-
-The list of BPMN shapes are as follows.
-
-| Shape | Image |
-|---|---|
-| Event | ![](/js/Diagram/Shapes_images/Shapes_img6.png) |
-| Gateway | ![](/js/Diagram/Shapes_images/Shapes_img7.png) |
-| Task | ![](/js/Diagram/Shapes_images/Shapes_img8.png) |
-| Message | ![](/js/Diagram/Shapes_images/Shapes_img9.png) |
-| DataSource | ![](/js/Diagram/Shapes_images/Shapes_img10.png) |
-| DataObject | ![](/js/Diagram/Shapes_images/Shapes_img11.png) |
-
-The BPMN shapes and its types are explained as follows.
-
-### Event 
-
-An event is notated with a circle and it represents an event in a business process. The type of events are as follows.
-
-* Start
-* End
-* Intermediate
-
-The `event` property of the node allows you to define the type of the event. The default value of the `event` is "start". The following code example illustrates how to create a BPMN Event.
-
-{% highlight javascript %}
-
-$("#diagram").ejDiagram({
-	width: "100%",
-	height: "100%",
-	pageSettings: {
-		scrollLimit: "diagram"
-	},
-	nodes: [{
-		name: "node",
-		width: 100,
-		height: 100,
-		offsetX: 100,
-		offsetY: 100,
-		borderWidth: 2,
-		borderColor: "black",
-		//Sets the type as BPMN
-		type: ej.datavisualization.Diagram.Shapes.BPMN,
-		//Sets the shape as BPMN Event
-		shape: ej.datavisualization.Diagram.BPMNShapes.Event,
-		//Sets type of the Event
-		event: ej.datavisualization.Diagram.BPMNEvents.End,
-		//Sets sub-type of the Event
-		trigger: ej.datavisualization.Diagram.BPMNTriggers.None
-	}],
-});
-
-{% endhighlight %}
-
-![](/js/Diagram/Shapes_images/Shapes_img12.png)
-
-| Event | Image |
-|---|---|
-| Start | ![](/js/Diagram/Shapes_images/Shapes_img13.png) |
-| NonInterruptingStart | ![](/js/Diagram/Shapes_images/Shapes_img14.png) |
-| Intermediate | ![](/js/Diagram/Shapes_images/Shapes_img15.png) |
-| NonInterruptingIntermediate | ![](/js/Diagram/Shapes_images/Shapes_img16.png) |
-| End | ![](/js/Diagram/Shapes_images/Shapes_img17.png) |
-
-Event triggers are notated as icons inside the circle and they represent the specific details of the process. The `triggers` property of node allows you to set the type of trigger and by default, it is set as "none". The following table illustrates the type of event triggers.
-
-| Triggers | Image |
-|---|---|
-| Message | ![](/js/Diagram/Shapes_images/Shapes_img18.png) |
-| Compensation | ![](/js/Diagram/Shapes_images/Shapes_img19.png) |
-| Error | ![](/js/Diagram/Shapes_images/Shapes_img20.png) |
-| Escalation | ![](/js/Diagram/Shapes_images/Shapes_img21.png) |
-| Link | ![](/js/Diagram/Shapes_images/Shapes_img22.png) |
-| Multiple | ![](/js/Diagram/Shapes_images/Shapes_img23.png) |
-| Parallel | ![](/js/Diagram/Shapes_images/Shapes_img24.png) |
-| Signal | ![](/js/Diagram/Shapes_images/Shapes_img25.png) |
-| Timer | ![](/js/Diagram/Shapes_images/Shapes_img26.png) |
-
-### Gateway
-
-Gateway is used to control the flow of a process. It is represented as a diamond shape. To create a gateway, the `shape` property of node should be set as "gateway" and the `gateway` property can be set with any of the appropriate [Gateways](/js/api/global#bpmngateways "Gateways"). The following code example illustrates how to create a BPMN Gateway.
-
-{% highlight javascript %}
-
-$("#diagram").ejDiagram({
-	width: "100%",
-	height: "100%",
-	pageSettings: {
-		scrollLimit: "diagram"
-	},
-	nodes: [{
-		name: "node",
-		width: 100,
-		height: 100,
-		offsetX: 100,
-		offsetY: 100,
-		borderWidth: 2,
-		borderColor: "black",
-		type: ej.datavisualization.Diagram.Shapes.BPMN,
-		//Sets the shape as Gateway
-		shape: ej.datavisualization.Diagram.BPMNShapes.Gateway,
-		//Sets the type of BPMN Gateway
-		gateway: ej.datavisualization.Diagram.BPMNGateways.None,
-	}],
-});
-
-{% endhighlight %}
-
-![](/js/Diagram/Shapes_images/Shapes_img27.png)
-
-N> By default, the `gateway` will be set as "none".
-
-There are several types of gateways as tabulated
-
-| Gateways | Image |
-|---|---|
-| Complex | ![](/js/Diagram/Shapes_images/Shapes_img28.png) |
-| EventBased | ![](/js/Diagram/Shapes_images/Shapes_img29.png) |
-| Exclusive | ![](/js/Diagram/Shapes_images/Shapes_img30.png) |
-| Inclusive | ![](/js/Diagram/Shapes_images/Shapes_img31.png) |
-| Parallel | ![](/js/Diagram/Shapes_images/Shapes_img32.png) |
-
-### Activity
-
-The activity is the task that is performed in a business process. It is represented by a rounded rectangle.
-
-There are two types of activities .They are listed as follows.
-
-* Task – Occurs within a process and it is not broken down to finer level of detail.
-* Subprocess – Occurs within a process and it is broken down to finer level of detail.
-
-To create a BPMN activity, you need to set the `shape` as "activity". You also need to set the type of the [BPMN Activity](/js/api/global#bpmnactivity "BPMN Activity") by using the `activity` property of node. By default, the type of the `activity` is set as "task". The following code example illustrates how to create an activity.
-
-{% highlight javascript %}
-
-$("#diagram").ejDiagram({
-	width: "100%",
-	height: "100%",
-	pageSettings: {
-		scrollLimit: "diagram"
-	},
-	nodes: [{
-		name: "node",
-		width: 100,
-		height: 100,
-		offsetX: 100,
-		offsetY: 100,
-		borderWidth: 2,
-		borderColor: "black",
-		type: ej.datavisualization.Diagram.Shapes.BPMN,
-		//Sets the bpmn shape as activity
-		shape: ej.datavisualization.Diagram.BPMNShapes.Activity,
-		//Sets the type of BPMN Activity
-		activity: ej.datavisualization.Diagram.BPMNActivity.Task,
-	}],
-});
-
-{% endhighlight %}
-
-![](/js/Diagram/Shapes_images/Shapes_img33.png)
-
-The different activities of BPMN process are listed as follows.
-
-#### Tasks
-
-The `task` property of node allows you to define the `type` of task such as sending, receiving, user based task etc… By default, the `type` property of task is set as "none". The following code illustrates how to create different types of BPMN tasks. 
-
-{% highlight javascript %}
-
-$("#diagram").ejDiagram({
-	width: "100%",
-	height: "100%",
-	pageSettings: {
-		scrollLimit: "diagram"
-	},
-	nodes: [{
-		name: "task",
-		width: 100,
-		height: 100,
-		offsetX: 100,
-		offsetY: 100,
-		borderWidth: 2,
-		borderColor: "black",
-		type: ej.datavisualization.Diagram.Shapes.BPMN,
-		//Sets the type of bpmn shape
-		shape: ej.datavisualization.Diagram.BPMNShapes.Activity,
-		//Sets the type of BPMN Activity
-		activity: ej.datavisualization.Diagram.BPMNActivity.Task,
-		//Sets the type of BPMN Task Activity
-		task: {
-			type: ej.datavisualization.Diagram.BPMNTasks.Send
-		}
-	}]
-});
-
-{% endhighlight %}
-
-![](/js/Diagram/Shapes_images/Shapes_img34.png)
-
-The various types of BPMN tasks are tabulated as follows.
-
-| Task Type | Image |
-|---|---|
-| Service | ![](/js/Diagram/Shapes_images/Shapes_img35.png) |
-| Send | ![](/js/Diagram/Shapes_images/Shapes_img36.png) |
-| Receive | ![](/js/Diagram/Shapes_images/Shapes_img37.png) |
-| Instantiating Receive | ![](/js/Diagram/Shapes_images/Shapes_img38.png) |
-| Manual | ![](/js/Diagram/Shapes_images/Shapes_img39.png) |
-| Business Rule | ![](/js/Diagram/Shapes_images/Shapes_img40.png) |
-| User | ![](/js/Diagram/Shapes_images/Shapes_img41.png) |
-| Script | ![](/js/Diagram/Shapes_images/Shapes_img42.png) |
-
-#### Loop
-
-Loop is a task that is internally being looped. The `loop` property of task allows you to define the type of loop. The default value for `loop` is "none". 
-
-{% highlight javascript %}
-
-var diagram = $("#diagram").ejDiagram("instance");
-
-var node = {
-	name: "task",
-	width: 100,
-	height: 100,
-	offsetX: 100,
-	offsetY: 100,
-	borderWidth: 2,
-	borderColor: "black",
-	type: ej.datavisualization.Diagram.Shapes.BPMN,
-	//Sets the type of BPMN shape
-	shape: ej.datavisualization.Diagram.BPMNShapes.Activity,
-	//Sets the type of BPMN Activity
-	activity: ej.datavisualization.Diagram.BPMNActivity.Task,
-	//Sets the type of bpmn loops.
-	task: {
-		loop: ej.datavisualization.Diagram.BPMNLoops.Standard
-	}
-};
-diagram.add(node);
-
-node = {
-	name: "subprocess",
-	width: 100,
-	height: 100,
-	offsetX: 300,
-	offsetY: 100,
-	borderWidth: 2,
-	borderColor: "black",
-	type: ej.datavisualization.Diagram.Shapes.BPMN,
-	shape: ej.datavisualization.Diagram.BPMNShapes.Activity,
-	//Sets the type of BPMN activity
-	activity: ej.datavisualization.Diagram.BPMNActivity.SubProcess,
-	//Sets the type of bpmn loops.
-	subProcess: {
-		loop: ej.datavisualization.Diagram.BPMNLoops.Standard
-	}
-};
-diagram.add(node);
-
-{% endhighlight %}
-
-![](/js/Diagram/Shapes_images/Shapes_img43.png)
-
-The following table contains various types of BPMN loops.
-
-| Loops | Task | SubProcess |
-|---|---|---|
-| Standard | ![](/js/Diagram/Shapes_images/Shapes_img44.png) | ![](/js/Diagram/Shapes_images/Shapes_img45.png) |
-| SequenceMultiInstance | ![](/js/Diagram/Shapes_images/Shapes_img46.png) | ![](/js/Diagram/Shapes_images/Shapes_img47.png) |
-| ParallelMultiInstance | ![](/js/Diagram/Shapes_images/Shapes_img48.png) | ![](/js/Diagram/Shapes_images/Shapes_img49.png) |
-
-#### Compensation
-
-Compensation is triggered when operation is partially failed and you can enable it with the `compensation` property of task.
-
-{% highlight javascript %}
-
-var nodes = [];
-
-nodes.push({
-	name: "task",
-	width: 100,
-	height: 100,
-	offsetX: 100,
-	offsetY: 100,
-	borderWidth: 2,
-	borderColor: "black",
-	type: ej.datavisualization.Diagram.Shapes.BPMN,
-	shape: ej.datavisualization.Diagram.BPMNShapes.Activity
-	//Sets the type of BPMN Activity
-	activity: ej.datavisualization.Diagram.BPMNActivity.Task,
-	//Creates compensation task
-	task: {
-		compensation: true
-	}
-});
-
-nodes.push({
-	name: "subprocess",
-	width: 100,
-	height: 100,
-	offsetX: 300,
-	offsetY: 100,
-	borderWidth: 2,
-	borderColor: "black",
-	type: ej.datavisualization.Diagram.Shapes.BPMN,
-	shape: ej.datavisualization.Diagram.BPMNShapes.Activity,
-	//Sets the type of BPMN Activity
-	activity: ej.datavisualization.Diagram.BPMNActivity.SubProcess,
-	//Creates compensation subprocess 
-	subProcess: {
-		compensation: true
-	}
-});
-
-$("#diagram").ejDiagram({
-	width: "100%",
-	height: "100%",
-	pageSettings: {
-		scrollLimit: "diagram"
-	},
-	nodes: nodes
-});
-
-{% endhighlight %}
-
-![](/js/Diagram/Shapes_images/Shapes_img50.png)
-
-#### Call
-
-A call activity is a global sub-process that is reused at various points of the business flow and you can set it with the `call` property of task.
-
-{% highlight javascript %}
-
-$("#diagram").ejDiagram({
-	width: "100%",
-	height: "100%",
-	pageSettings: {
-		scrollLimit: "diagram"
-	},
-	nodes: [{
-		name: "task",
-		width: 100,
-		height: 100,
-		offsetX: 100,
-		offsetY: 100,
-		borderWidth: 2,
-		borderColor: "black",
-		type: ej.datavisualization.Diagram.Shapes.BPMN,
-		shape: ej.datavisualization.Diagram.BPMNShapes.Activity,
-		//Sets the type of BPMN Activity
-		activity: ej.datavisualization.Diagram.BPMNActivity.Task,
-		//Creates a call task
-		task: {
-			call: true
-		}
-	}]
-});
-
-{% endhighlight %}
-
-![](/js/Diagram/Shapes_images/Shapes_img51.png)
-
-#### Ad-Hoc
-
-An ad hoc subprocess is a group of tasks that are executed in any order or skipped in order to fulfill the end condition and you can set it with the `adhoc` property of subprocess. 
-
-{% highlight javascript %}
-
-$("#diagram").ejDiagram({
-	width: "100%",
-	height: "100%",
-	pageSettings: {
-		scrollLimit: "diagram"
-	},
-	nodes: [{
-		name: "task",
-		width: 100,
-		height: 100,
-		offsetX: 100,
-		offsetY: 100,
-		borderWidth: 2,
-		borderColor: "black",
-		type: ej.datavisualization.Diagram.Shapes.BPMN,
-		shape: ej.datavisualization.Diagram.BPMNShapes.Activity,
-		activity: ej.datavisualization.Diagram.BPMNActivity.SubProcess,
-		//Creates ad hoc subprocess
-		subProcess: {
-			adhoc: true
-		}
-	}]
-});
-
-{% endhighlight %}
-
-![](/js/Diagram/Shapes_images/Shapes_img52.png)
-
-#### Boundary
-
-Boundary represents the type of task that is being processed. The `boundary` property of sub process allows you to define the type of boundary. By default, it is set as "default".
-
-{% highlight javascript %}
-
-$("#diagram").ejDiagram({
-	width: "100%",
-	height: "100%",
-	pageSettings: {
-		scrollLimit: "diagram"
-	},
-	nodes: [{
-		name: "task",
-		width: 100,
-		height: 100,
-		offsetX: 100,
-		offsetY: 100,
-		borderWidth: 2,
-		borderColor: "black",
-		type: ej.datavisualization.Diagram.Shapes.BPMN,
-		shape: ej.datavisualization.Diagram.BPMNShapes.Activity,
-		activity: ej.datavisualization.Diagram.BPMNActivity.SubProcess,
-		//Adds boundary to a subprocess 
-		subProcess: {
-			boundary: ej.datavisualization.Diagram.BPMNBoundary.Call
-		}
-	}]
-});
-
-{% endhighlight %}
-
-The following table contains various types of BPMN boundaries.
-
-| Boundary | Image |
-|---|---|
-| Call | ![](/js/Diagram/Shapes_images/Shapes_img53.png) |
-| Event | ![](/js/Diagram/Shapes_images/Shapes_img54.png) |
-| Default | ![](/js/Diagram/Shapes_images/Shapes_img55.png) |
-
-### Data
-
-A data object represents information flowing through the process, such as data placed into the process, data resulting from the process, data that needs to be collected, or data that must be stored. To define a data object, set the `shape` as "dataobject". You can create multiple instances of data object with the `collection` property of node.
-
-{% highlight javascript %}
-
-$("#diagram").ejDiagram({
-	width: "100%",
-	height: "100%",
-	pageSettings: {
-		scrollLimit: "diagram"
-	},
-	nodes: [{
-		name: "task",
-		width: 100,
-		height: 100,
-		offsetX: 100,
-		offsetY: 100,
-		borderWidth: 2,
-		borderColor: "black",
-		//Sets the type of the shape
-		type: ej.datavisualization.Diagram.Shapes.BPMN,
-		//Sets the type of BPMN Shape
-		shape: ej.datavisualization.Diagram.BPMNShapes.DataObject,
-		//Sets collection as true when Dataobject is not a Single instance
-		collection: true
-	}]
-});
-
-{% endhighlight %}
-
-![](/js/Diagram/Shapes_images/Shapes_img56.png)
-
-### Datasource
-
-DataSource is used to store or access data associated with a business process. To create a data source, set the `shape` as "datasource". The following code example illustrate how to create data source.
-
-{% highlight javascript %}
-
-$("#diagram").ejDiagram({
-	width: "100%",
-	height: "100%",
-	pageSettings: {
-		scrollLimit: "diagram"
-	},
-	nodes: [{
-		name: "task",
-		width: 100,
-		height: 100,
-		offsetX: 100,
-		offsetY: 100,
-		borderWidth: 2,
-		borderColor: "black",
-		//Sets type of the shape
-		type: ej.datavisualization.Diagram.Shapes.BPMN,
-		//Sets the type of bpmn shape
-		shape: ej.datavisualization.Diagram.BPMNShapes.DataSource,
-	}]
-});
-
-{% endhighlight %}
-
-![](/js/Diagram/Shapes_images/Shapes_img57.png)

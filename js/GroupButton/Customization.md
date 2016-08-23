@@ -154,7 +154,7 @@ Simply you can use these Built-in icons by mentioning the icon class name as val
 
 ## Orientation
 
-GroupButton has two built-in orientation support called vertical and horizontal orientations which defines the direction of rendered GroupButton component. You can set the value to this property as enum or string type.
+GroupButton has two Built-in orientation support called vertical and horizontal orientations which defines the direction of rendered GroupButton component. You can set the value to this property as enum or string type.
 
  * ej.Orientation.Horizontal or “Horizontal”
  * ej.Orientation.Vertical or “Vertical”

@@ -2494,7 +2494,7 @@ data</td>
 </tr>
 <tr>
 <td class="name">
-url</td>
+URL</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the URL of AJAX request.</td>
 </tr>

@@ -4985,15 +4985,8 @@ $("#rteSample").ejRTE("show");// Shows the rte
 
 ## Events
 
-
-
-
 ### change
 {:#events:change}
-
-
-
-
 
 Fires when changed successfully.
 
@@ -5030,8 +5023,6 @@ type</td>
 
 #### Example
 
-
-
 {% highlight html %}
  
 <textarea   id="rteSample">     
@@ -5053,10 +5044,6 @@ $("#rteSample").ejRTE({
 
 ### create
 {:#events:create}
-
-
-
-
 
 Fires when the RTE is created successfully
 
@@ -5093,8 +5080,6 @@ type</td>
 
 #### Example
 
-
-
 {% highlight html %}
  
 <textarea   id="rteSample">     
@@ -5115,10 +5100,6 @@ $("#rteSample").ejRTE({
 
 ### contextMenuClick  
 {:#events:contextMenuClick  }
-
-
-
-
 
 Fires when mouse click on menu items.
 
@@ -5173,8 +5154,6 @@ selectedItem</td>
 
 #### Example
 
-
-
 {% highlight html %}
  
 <textarea   id="rteSample">     
@@ -5195,14 +5174,8 @@ $("#rteSample").ejRTE({
    
 </script>{% endhighlight %}
 
-
-
-
 ### destroy
 {:#events:destroy}
-
-
-
 
 Fires before the RTE is destroyed.
 
@@ -5239,8 +5212,6 @@ type</td>
 
 #### Example
 
-
-
 {% highlight html %}
  
 <textarea   id="rteSample">     
@@ -5262,10 +5233,6 @@ $("#rteSample").ejRTE({
 
 ### execute
 {:#events:execute}
-
-
-
-
 
 Fires when the commands are executed successfully.
 
@@ -5302,8 +5269,6 @@ type</td>
 
 #### Example
 
-
-
 {% highlight html %}
  
 <textarea   id="rteSample">     
@@ -5322,13 +5287,8 @@ $("#rteSample").ejRTE({
 </script>   {% endhighlight %}
 
 
-
-
 ### keydown
 {:#events:keydown}
-
-
-
 
 Fires when the keydown action is successful.
 
@@ -5365,8 +5325,6 @@ type</td>
 
 #### Example
 
-
-
 {% highlight html %}
  
 <textarea   id="rteSample">     
@@ -5384,14 +5342,8 @@ $("#rteSample").ejRTE({
 });  
 </script>    {% endhighlight %}
 
-
-
-
 ### keyup
 {:#events:keyup}
-
-
-
 
 Fires when the keyup action is successful.
 
@@ -5428,8 +5380,6 @@ type</td>
 
 #### Example
 
-
-
 {% highlight html %}
  
 <textarea   id="rteSample">     
@@ -5448,13 +5398,8 @@ $("#rteSample").ejRTE({
 </script>    {% endhighlight %}
 
 
-
-
 ### preRender
 {:#events:preRender}
-
-
-
 
 Fires before the RTE Edit area is rendered and after the toolbar is rendered.
 
@@ -5491,8 +5436,6 @@ type</td>
 
 #### Example
 
-
-
 {% highlight html %}
  
 <textarea   id="rteSample">     
@@ -5509,6 +5452,68 @@ $("#rteSample").ejRTE({
         preRender: function(args) {}
 });   
 </script>   {% endhighlight %}
+
+### select
+{:#events:select}
+
+Fires when the text is selected in the text area
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">When the event is canceled; otherwise, false.</td>
+</tr>
+<tr>
+<td class="name">
+model</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Returns the RTE model</td>
+</tr>
+<tr>
+<td class="name">
+type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Returns the name of the event</td>
+</tr>
+<tr>
+<td class="name">
+event</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Returns the event object</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">     
+<p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is an easy to render in
+        client side. Customer easy to edit the contents and get the HTML content for
+        the displayed content. A rich text editor control provides users with a toolbar
+        that helps them to apply rich text formats to the text entered in the text
+        area. </p></textarea >     
+<script>
+$("#rteSample").ejRTE();
+//select event for RTE
+$("#rteSample").ejRTE({ 
+        select: function(args) {}
+});   
+</script>   
+
+{% endhighlight %}
 
 
 

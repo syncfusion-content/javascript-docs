@@ -209,13 +209,13 @@ $(function () {
 
 ### Apply Summary Types
 
-Allow us to specify the required summary type that PivotGrid should use in its summary cells. **"totalsum"** is the default summary type. Following are the summary types that are supported:
+Allow us to specify the required summary type that PivotGrid should use in its summary cells. **"sum"** is the default summary type. Following are the summary types that are supported:
 
-* totalsum
+* sum
 * average
 * count
-* minimum
-* maximum
+* min
+* max
 
 {% highlight html %}
 
@@ -232,7 +232,7 @@ $(function () {
             {
                 fieldName: "Quantity",
                 fieldCaption: "Quantity",
-                summaryType: ej.PivotAnalysis.SummaryType.TotalSum
+                summaryType: ej.PivotAnalysis.SummaryType.Sum
             }
             ],
             //……

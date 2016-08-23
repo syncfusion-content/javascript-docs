@@ -65,9 +65,6 @@
             <li>
                  <a href="/js/typescript">TypeScript</a>
              </li>
-			 <li>
-                  <a href="/js/sourcemap">Source Maps</a>
-            </li>
 			<li>
                   <a href="/js/validation">Validation</a>
             </li>
@@ -101,6 +98,9 @@
             </li>
             <li>
                   <a href="/js/Angular2">Angular2</a>
+            </li>
+            <li>
+                  <a href="/js/AureliaJS">AureliaJS</a>
             </li>
             <li>
                   <a href="/js/requirejs">RequireJS</a>
@@ -207,6 +207,19 @@
                             <li id="toc-members:highlightsearch"><a href="/js/api/ejautocomplete#members:highlightsearch">highlightSearch</a></li>
                             <li id="toc-members:itemscount"><a href="/js/api/ejautocomplete#members:itemscount">itemsCount</a></li>
                             <li id="toc-members:mincharacter"><a href="/js/api/ejautocomplete#members:mincharacter">minCharacter</a></li>
+							<li id="toc-members:multicolumnsettings"><a href="/js/api/ejautocomplete#members:multicolumnsettings">multiColumnSettings</a>
+							<ul>
+							<li id="toc-members:multicolumnsettings-enable"><a href="/js/api/ejautocomplete#members:multicolumnsettings-enable">enable</a></li>
+							<li id="toc-members:multicolumnsettings-showHeader"><a href="/js/api/ejautocomplete#members:multicolumnsettings-showHeader">showHeader</a></li>
+							<li id="toc-members:multicolumnsettings-stringFormat"><a href="/js/api/ejautocomplete#members:multicolumnsettings-stringFormat">stringFormat</a></li>
+							<li id="toc-members:multicolumnsettings-columns"><a href="/js/api/ejautocomplete#members:multicolumnsettings-columns">columns</a>
+							<ul>
+							<li id="toc-members:multicolumnsettings-columns-field"><a href="/js/api/ejautocomplete#members:multicolumnsettings-columns-field">columns-field</a></li>
+							<li id="toc-members:multicolumnsettings-columns-headerText"><a href="/js/api/ejautocomplete#members:multicolumnsettings-columns-headerText">columns-headerText</a></li>
+							</ul>
+							</li>							
+							</ul> 
+							</li>
                             <li id="toc-members:multiselectmode"><a href="/js/api/ejautocomplete#members:multiselectmode">multiSelectMode</a></li>
                             <li id="toc-members:popupheight"><a href="/js/api/ejautocomplete#members:popupheight">popupHeight</a></li>
                             <li id="toc-members:popupwidth"><a href="/js/api/ejautocomplete#members:popupwidth">popupWidth</a></li>
@@ -217,6 +230,7 @@
                             <li id="toc-members:showloadingicon"><a href="/js/api/ejautocomplete#members:showloadingicon">showLoadingIcon</a></li>
                             <li id="toc-members:showpopupbutton"><a href="/js/api/ejautocomplete#members:showpopupbutton">showPopupButton</a></li>
                             <li id="toc-members:showroundedcorner"><a href="/js/api/ejautocomplete#members:showroundedcorner">showRoundedCorner</a></li>
+							<li id="toc-members:showreseticon"><a href="/js/api/ejautocomplete#members:showreseticon">showResetIcon</a></li>
                             <li id="toc-members:sortorder"><a href="/js/api/ejautocomplete#members:sortorder">sortOrder</a></li>
                             <li id="toc-members:template"><a href="/js/api/ejautocomplete#members:template">template</a></li>
                             <li id="toc-members:validationmessage"><a href="/js/api/ejautocomplete#members:validationmessage">validationMessage</a></li>
@@ -236,6 +250,7 @@
                             <li id="toc-methods:enable"><a href="/js/api/ejautocomplete#methods:enable">enable</a></li>
                             <li id="toc-methods:getselecteditems"><a href="/js/api/ejautocomplete#methods:getselecteditems">getSelectedItems</a></li>
                             <li id="toc-methods:getvalue"><a href="/js/api/ejautocomplete#methods:getvalue">getValue</a></li>
+							<li id="toc-methods:getactivetext"><a href="/js/api/ejautocomplete#methods:getactivetext">getActiveText</a></li>
                             <li id="toc-methods:search"><a href="/js/api/ejautocomplete#methods:search">search</a></li>
                             <li id="toc-methods:open"><a href="/js/api/ejautocomplete#methods:open">open</a></li>
                             <li id="toc-methods:selectvaluebykey"><a href="/js/api/ejautocomplete#methods:selectvaluebykey">selectValueByKey</a></li>
@@ -1847,7 +1862,6 @@
                             <li id="toc-members:enablertl"><a href="/js/api/ejcheckbox#members:enablertl">enableRTL</a></li>
                             <li id="toc-members:enabletristate"><a href="/js/api/ejcheckbox#members:enabletristate">enableTriState</a></li>
                             <li id="toc-members:htmlattributes"><a href="/js/api/ejcheckbox#members:htmlattributes">htmlAttributes</a></li>
-                            <li id="toc-members:htmlattributes"><a href="/js/api/ejcheckbox#members:htmlattributes">htmlAttributes</a></li>
                             <li id="toc-members:id"><a href="/js/api/ejcheckbox#members:id">id</a></li>
                             <li id="toc-members:idprefix"><a href="/js/api/ejcheckbox#members:idprefix">idPrefix</a></li>
                             <li id="toc-members:name"><a href="/js/api/ejcheckbox#members:name">name</a></li>
@@ -2191,7 +2205,13 @@
                 <ul>
                     <li><a href="/js/api/ejcolorpicker#members">Members</a>
                         <ul>
-                            <li id="toc-members:buttontext"><a href="/js/api/ejcolorpicker#members:buttontext">buttonText</a></li>
+                            <li id="toc-members:buttontext"><a href="/js/api/ejcolorpicker#members:buttontext">buttonText</a>
+                                <ul>
+                                    <li id="toc-members:buttontext-apply"><a href="/js/api/ejcolorpicker#members:buttontext-apply">apply</a></li>
+                                    <li id="toc-members:buttontext-cancel"><a href="/js/api/ejcolorpicker#members:buttontext-cancel">cancel</a></li>
+                                    <li id="toc-members:buttontext-swatches"><a href="/js/api/ejcolorpicker#members:buttontext-swatches">swatches</a></li>
+                                </ul>
+                            </li>
                             <li id="toc-members:buttonmode"><a href="/js/api/ejcolorpicker#members:buttonmode">buttonMode</a></li>
                             <li id="toc-members:columns"><a href="/js/api/ejcolorpicker#members:columns">columns</a></li>
                             <li id="toc-members:cssclass"><a href="/js/api/ejcolorpicker#members:cssclass">cssClass</a></li>
@@ -2211,7 +2231,26 @@
 							<li id="toc-members:showswitcher"><a href="/js/api/ejcolorpicker#members:showswitcher">showSwitcher</a></li>
                             <li id="toc-members:showtooltip"><a href="/js/api/ejcolorpicker#members:showtooltip">showTooltip</a></li>
                             <li id="toc-members:toolicon"><a href="/js/api/ejcolorpicker#members:toolicon">toolIcon</a></li>
-                            <li id="toc-members:tooltiptext"><a href="/js/api/ejcolorpicker#members:tooltiptext">tooltipText</a></li>
+                            <li id="toc-members:tooltiptext"><a href="/js/api/ejcolorpicker#members:tooltiptext">tooltipText</a>
+                               <ul>
+                                    <li id="toc-members:tooltiptext-switcher"><a href="/js/api/ejcolorpicker#members:tooltiptext-switcher">switcher</a></li>
+                                    <li id="toc-members:tooltiptext-addbutton"><a href="/js/api/ejcolorpicker#members:tooltiptext-addbutton">addbutton</a></li>
+                                    <li id="toc-members:tooltiptext-basic"><a href="/js/api/ejcolorpicker#members:tooltiptext-basic">basic</a></li>
+                                    <li id="toc-members:tooltiptext-monochrome"><a href="/js/api/ejcolorpicker#members:tooltiptext-monochrome">monochrome</a></li>
+                                    <li id="toc-members:tooltiptext-flatcolors"><a href="/js/api/ejcolorpicker#members:tooltiptext-flatcolors">flatcolors</a></li>
+                                    <li id="toc-members:tooltiptext-seawolf"><a href="/js/api/ejcolorpicker#members:tooltiptext-seawolf">seawolf</a></li>
+                                    <li id="toc-members:tooltiptext-webcolors"><a href="/js/api/ejcolorpicker#members:tooltiptext-webcolors">webcolors</a></li>
+                                    <li id="toc-members:tooltiptext-sandy"><a href="/js/api/ejcolorpicker#members:tooltiptext-sandy">sandy</a></li>
+                                    <li id="toc-members:tooltiptext-pinkshades"><a href="/js/api/ejcolorpicker#members:tooltiptext-pinkshades">pinkshades</a></li>
+                                    <li id="toc-members:tooltiptext-misty"><a href="/js/api/ejcolorpicker#members:tooltiptext-misty">misty</a></li>
+                                    <li id="toc-members:tooltiptext-citrus"><a href="/js/api/ejcolorpicker#members:tooltiptext-citrus">citrus</a></li>
+                                    <li id="toc-members:tooltiptext-vintage"><a href="/js/api/ejcolorpicker#members:tooltiptext-vintage">vintage</a></li>
+                                    <li id="toc-members:tooltiptext-moonlight"><a href="/js/api/ejcolorpicker#members:tooltiptext-moonlight">moonlight</a></li>
+                                    <li id="toc-members:tooltiptext-candycrush"><a href="/js/api/ejcolorpicker#members:tooltiptext-candycrush">candycrush</a></li>
+                                    <li id="toc-members:tooltiptext-currentcolor"><a href="/js/api/ejcolorpicker#members:tooltiptext-currentcolor">currentcolor</a></li>
+                                    <li id="toc-members:tooltiptext-selectedcolor"><a href="/js/api/ejcolorpicker#members:tooltiptext-selectedcolor">selectedcolor</a></li>
+                                </ul>
+                            </li>
                             <li id="toc-members:value"><a href="/js/api/ejcolorpicker#members:value">value</a></li>
                         </ul>
                     </li>
@@ -2261,6 +2300,7 @@
                         <ul>
                             <li id="toc-members:allowedit"><a href="/js/api/ejdatepicker#members:allowedit">allowEdit</a></li>
                             <li id="toc-members:allowdrildown"><a href="/js/api/ejdatepicker#members:allowdrildown">allowDrilDown</a></li>
+                            <li id="toc-members:blackoutdates"><a href="/js/api/ejdatepicker#members:blackoutdates">blackoutDates</a></li>
                             <li id="toc-members:buttontext"><a href="/js/api/ejdatepicker#members:buttontext">buttonText</a></li>
                             <li id="toc-members:cssclass"><a href="/js/api/ejdatepicker#members:cssclass">cssClass</a></li>
                             <li id="toc-members:dateformat"><a href="/js/api/ejdatepicker#members:dateformat">dateFormat</a></li>
@@ -2275,8 +2315,9 @@
                             <li id="toc-members:fields"><a href="/js/api/ejdatepicker#members:fields">fields</a>
                                 <ul>
                                     <li id="toc-members:fields-date"><a href="/js/api/ejdatepicker#members:fields-date">date</a></li>
-                                    <li id="toc-members:fields-icon"><a href="/js/api/ejdatepicker#members:fields-icon">icon</a></li>
+                                    <li id="toc-members:fields-iconClass"><a href="/js/api/ejdatepicker#members:fields-iconClass">iconClass</a></li>
                                     <li id="toc-members:fields-tooltip"><a href="/js/api/ejdatepicker#members:fields-tooltip">tooltip</a></li>
+                                    <li id="toc-members:fields-cssclass"><a href="/js/api/ejdatepicker#members:fields-cssclass">cssclass</a></li>
                                 </ul>
                             </li>
                             <li id="toc-members:headerformat"><a href="/js/api/ejdatepicker#members:headerformat">headerFormat</a></li>
@@ -2370,7 +2411,14 @@
                             <li id="toc-members:stepmonths"><a href="/js/api/ejdatetimepicker#members:stepmonths">stepMonths</a></li>
                             <li id="toc-members:timedisplayformat"><a href="/js/api/ejdatetimepicker#members:timedisplayformat">timeDisplayFormat</a></li>
                             <li id="toc-members:timepopupwidth"><a href="/js/api/ejdatetimepicker#members:timepopupwidth">timePopupWidth</a></li>
-                            <li id="toc-members:timedrilldown"><a href="/js/api/ejdatetimepicker#members:timedrilldown">timeDrillDown</a></li>
+                            <li id="toc-members:timedrilldown"><a href="/js/api/ejdatetimepicker#members:timedrilldown">timeDrillDown</a>
+                                <ul>
+                                    <li id="toc-members:timedrilldown-done"><a href="/js/api/ejdatetimepicker#members:timedrilldown-enabled">enabled</a></li>
+                                    <li id="toc-members:timedrilldown-interval"><a href="/js/api/ejdatetimepicker#members:timedrilldown-interval">interval</a></li>
+                                    <li id="toc-members:timedrilldown-showMeridian"><a href="/js/api/ejdatetimepicker#members:timedrilldown-showMeridian">showMeridian</a></li>
+                                    <li id="toc-members:timedrilldown-autoClose"><a href="/js/api/ejdatetimepicker#members:timedrilldown-autoClose">autoClose</a></li>
+                                </ul>
+                            </li>
                             <li id="toc-members:validationmessage"><a href="/js/api/ejdatetimepicker#members:validationmessage">validationMessage</a></li>
                             <li id="toc-members:validationrules"><a href="/js/api/ejdatetimepicker#members:validationrules">validationRules</a></li>
                             <li id="toc-members:value"><a href="/js/api/ejdatetimepicker#members:value">value</a></li>
@@ -3143,6 +3191,7 @@
                 <ul>
                     <li><a href="/js/api/ejdropdownlist#members">Members</a>
                         <ul>
+							<li id="toc-members:allowvirtualscrolling"><a href="/js/api/ejdropdownlist#members:allowvirtualscrolling">allowVirtualScrolling</a></li>
                             <li id="toc-members:cascadeto"><a href="/js/api/ejdropdownlist#members:cascadeto">cascadeTo</a></li>
                             <li id="toc-members:casesensitivesearch"><a href="/js/api/ejdropdownlist#members:casesensitivesearch">caseSensitiveSearch</a></li>
                             <li id="toc-members:cssclass"><a href="/js/api/ejdropdownlist#members:cssclass">cssClass</a></li>
@@ -3173,7 +3222,9 @@
                             <li id="toc-members:filtertype"><a href="/js/api/ejdropdownlist#members:filtertype">filterType</a></li>
                             <li id="toc-members:headertemplate"><a href="/js/api/ejdropdownlist#members:headertemplate">headerTemplate</a></li>
                             <li id="toc-members:height"><a href="/js/api/ejdropdownlist#members:height">height</a></li>
+							<li id="toc-members:htmlattributes"><a href="/js/api/ejdropdownlist#members:htmlattributes">htmlAttributes</a></li>
                             <li id="toc-members:itemscount"><a href="/js/api/ejdropdownlist#members:itemscount">itemsCount</a></li>
+							<li id="toc-members:locale"><a href="/js/api/ejdropdownlist#members:locale">locale</a></li>
                             <li id="toc-members:maxpopupheight"><a href="/js/api/ejdropdownlist#members:maxpopupheight">maxPopupHeight</a></li>
                             <li id="toc-members:minpopupheight"><a href="/js/api/ejdropdownlist#members:minpopupheight">minPopupHeight</a></li>
                             <li id="toc-members:maxpopupwidth"><a href="/js/api/ejdropdownlist#members:maxpopupwidth">maxPopupWidth</a></li>
@@ -3367,6 +3418,7 @@
                         <ul>
                             <li id="toc-members:adddialogfields"><a href="/js/api/ejgantt#members:adddialogfields">addDialogFields</a></li>
                             <li id="toc-members:allowcolumnresize"><a href="/js/api/ejgantt#members:allowcolumnresize">allowColumnResize</a></li>
+                            <li id="toc-members:allowdraganddrop"><a href="/js/api/ejgantt#members:allowdraganddrop">allowDragAndDrop</a></li>                          
                             <li id="toc-members:allowganttchartediting"><a href="/js/api/ejgantt#members:allowganttchartediting">allowGanttChartEditing</a></li>
                             <li id="toc-members:allowkeyboardnavigation"><a href="/js/api/ejgantt#members:allowkeyboardnavigation">allowKeyboardNavigation</a></li>
                             <li id="toc-members:allowmultisorting"><a href="/js/api/ejgantt#members:allowmultisorting">allowMultiSorting</a></li>
@@ -3376,11 +3428,19 @@
                             <li id="toc-members:baselineenddatemapping"><a href="/js/api/ejgantt#members:baselineenddatemapping">baselineEndDateMapping</a></li>
                             <li id="toc-members:baselinestartdatemapping"><a href="/js/api/ejgantt#members:baselinestartdatemapping">baselineStartDateMapping</a></li>
                             <li id="toc-members:childmapping"><a href="/js/api/ejgantt#members:childmapping">childMapping</a></li>
+                            <li id="toc-members:columndialogfields"><a href="/js/api/ejgantt#members:columndialogfields">columnDiaglogFields</a></li>                            
                             <li id="toc-members:connectorlinebackground"><a href="/js/api/ejgantt#members:connectorlinebackground">connectorLineBackground</a></li>
                             <li id="toc-members:connectorlinewidth"><a href="/js/api/ejgantt#members:connectorlinewidth">connectorlineWidth</a></li>
                             <li id="toc-members:cssclass"><a href="/js/api/ejgantt#members:cssclass">cssClass</a></li>
                             <li id="toc-members:datasource"><a href="/js/api/ejgantt#members:datasource">dataSource</a></li>
                             <li id="toc-members:dateformat"><a href="/js/api/ejgantt#members:dateformat">dateFormat</a></li>
+                            <li id="toc-members:dragtooltip"><a href="/js/api/ejgantt#members:dragtooltip">dragTooltip</a>
+                                <ul>
+                                    <li id="toc-members:dragtooltip-showtooltip"><a href="/js/api/ejgantt#members:dragtooltip-showtooltip">showTooltip</a></li>
+                                    <li id="toc-members:dragtooltip-tooltipitems"><a href="/js/api/ejgantt#members:dragtooltip-tooltipitems">tooltipItems</a></li>
+                                    <li id="toc-members:dragtooltip-tooltiptemplate"><a href="/js/api/ejgantt#members:dragtooltip-tooltiptemplate">tooltipTemplate</a></li>                                                                        
+                                </ul>
+                            </li>                            
                             <li id="toc-members:durationmapping"><a href="/js/api/ejgantt#members:durationmapping">durationMapping</a></li>
                             <li id="toc-members:durationunit"><a href="/js/api/ejgantt#members:durationunit">durationUnit</a></li>
                             <li id="toc-members:editdialogfields"><a href="/js/api/ejgantt#members:editdialogfields">editDialogFields</a></li>
@@ -3390,6 +3450,7 @@
                                     <li id="toc-members:editsettings-allowdeleting"><a href="/js/api/ejgantt#members:editsettings-allowdeleting">allowDeleting</a></li>
                                     <li id="toc-members:editsettings-allowediting"><a href="/js/api/ejgantt#members:editsettings-allowediting">allowEditing</a></li>
                                     <li id="toc-members:editsettings-editmode"><a href="/js/api/ejgantt#members:editsettings-editmode">editMode</a></li>
+                                    <li id="toc-members:editsettings-begineditaction"><a href="/js/api/ejgantt#members:editsettings-begineditaction">beginEditAction</a></li>                                    
                                 </ul>
                             </li>
                             <li id="toc-members:splitterSettings">
@@ -3409,13 +3470,17 @@
                             <li id="toc-members:enabletaskbartooltip"><a href="/js/api/ejgantt#members:enabletaskbartooltip">enableTaskbarTooltip</a></li>
                             <li id="toc-members:enablevirtualization"><a href="/js/api/ejgantt#members:enablevirtualization">enableVirtualization</a></li>
                             <li id="toc-members:enddatemapping"><a href="/js/api/ejgantt#members:enddatemapping">endDateMapping</a></li>
+                            <li id="toc-members:enablewbs"><a href="/js/api/ejgantt#members:enablewbs">enableWBS</a></li>
+                            <li id="toc-members:enablewbspredecessor"><a href="/js/api/ejgantt#members:enablewbspredecessor">enableWBSPredecessor</a></li>                      
                             <li id="toc-members:highlightweekends"><a href="/js/api/ejgantt#members:highlightweekends">highlightWeekends</a></li>
                             <li id="toc-members:holidays"><a href="/js/api/ejgantt#members:holidays">holidays</a></li>
                             <li id="toc-members:includeweekend"><a href="/js/api/ejgantt#members:includeweekend">includeWeekend</a></li>
                             <li id="toc-members:locale"><a href="/js/api/ejgantt#members:locale">locale</a></li>
                             <li id="toc-members:milestonemapping"><a href="/js/api/ejgantt#members:milestonemapping">milestoneMapping</a></li>
+                            <li id="toc-members:milestonetemplate"><a href="/js/api/ejgantt#members:milestonetemplate">milestoneTemplate</a></li>                            
                             <li id="toc-members:parentprogressbarbackground"><a href="/js/api/ejgantt#members:parentprogressbarbackground">parentProgressbarBackground</a></li>
                             <li id="toc-members:parenttaskbarbackground"><a href="/js/api/ejgantt#members:parenttaskbarbackground">parentTaskbarBackground</a></li>
+                            <li id="toc-members:parenttaskbartemplate"><a href="/js/api/ejgantt#members:parenttaskbartemplate">parentTaskbarTemplate</a></li>                            
                             <li id="toc-members:parenttaskidmapping"><a href="/js/api/ejgantt#members:parenttaskidmapping">parentTaskIdMapping</a></li>
                             <li id="toc-members:predecessormapping"><a href="/js/api/ejgantt#members:predecessormapping">predecessorMapping</a></li>
                             <li id="toc-members:progressbarbackground"><a href="/js/api/ejgantt#members:progressbarbackground">progressbarBackground</a></li>
@@ -3445,9 +3510,12 @@
                                 </ul>
                             </li>
                             <li id="toc-members:schedulestartdate"><a href="/js/api/ejgantt#members:schedulestartdate">scheduleStartDate</a></li>
-                            <li id="toc-members:selecteditem"><a href="/js/api/ejgantt#members:selecteditem">selectedItem</a></li>
                             <li id="toc-members:selectedrowindex"><a href="/js/api/ejgantt#members:selectedrowindex">selectedRowIndex</a></li>
+                            <li id="toc-members:selectiontype"><a href="/js/api/ejgantt#members:selectiontype">selectionType</a></li>
+                            <li id="toc-members:selectionmode"><a href="/js/api/ejgantt#members:selectionmode">selectionMode</a></li>
+                            <li id="toc-members:selectedcellindexes"><a href="/js/api/ejgantt#members:selectedcellindexes">selectedCellIndexes</a></li>                           
                             <li id="toc-members:showcolumnchooser"><a href="/js/api/ejgantt#members:showcolumnchooser">showColumnChooser</a></li>
+                            <li id="toc-members:showcolumnoptions"><a href="/js/api/ejgantt#members:showcolumnoptions">showColumnOptions</a></li>                            
                             <li id="toc-members:showgridcelltooltip"><a href="/js/api/ejgantt#members:showgridcelltooltip">showGridCellTooltip</a></li>
                             <li id="toc-members:showgridexpandcelltooltip"><a href="/js/api/ejgantt#members:showgridexpandcelltooltip">showGridExpandCellTooltip</a></li>
                             <li id="toc-members:showprogressstatus"><a href="/js/api/ejgantt#members:showprogressstatus">showProgressStatus</a></li>
@@ -3470,6 +3538,7 @@
                             <li id="toc-members:taskbarbackground"><a href="/js/api/ejgantt#members:taskbarbackground">taskbarBackground</a></li>
                             <li id="toc-members:taskbareditingtooltiptemplate"><a href="/js/api/ejgantt#members:taskbareditingtooltiptemplate">taskbarEditingTooltipTemplate</a></li>
                             <li id="toc-members:taskbareditingtooltiptemplateid"><a href="/js/api/ejgantt#members:taskbareditingtooltiptemplateid">taskbarEditingTooltipTemplateId</a></li>
+                            <li id="toc-members:taskbartemplate"><a href="/js/api/ejgantt#members:taskbartemplate">taskbarTemplate</a></li>                           
                             <li id="toc-members:taskbartooltiptemplate"><a href="/js/api/ejgantt#members:taskbartooltiptemplate">taskbarTooltipTemplate</a></li>
                             <li id="toc-members:taskbartooltiptemplateid"><a href="/js/api/ejgantt#members:taskbartooltiptemplateid">taskbarTooltipTemplateId</a></li>
                             <li id="toc-members:taskidmapping"><a href="/js/api/ejgantt#members:taskidmapping">taskIdMapping</a></li>
@@ -3499,6 +3568,7 @@
                             <li id="toc-methods:openadddialog"><a href="/js/api/ejgantt#methods:openadddialog">openAddDialog</a></li>
                             <li id="toc-methods:openeditdialog"><a href="/js/api/ejgantt#methods:openeditdialog">openEditDialog</a></li>
                             <li id="toc-methods:outdentitem"><a href="/js/api/ejgantt#methods:outdentitem">outdentItem</a></li>
+                            <li id="toc-methods:selectcells"><a href="/js/api/ejgantt#methods:selectcells">selectCells</a></li>                           
                             <li id="toc-methods:saveedit"><a href="/js/api/ejgantt#methods:saveedit">saveEdit</a></li>
                             <li id="toc-methods:searchitem"><a href="/js/api/ejgantt#methods:searchitem">searchItem</a></li>
                             <li id="toc-methods:setsplitterposition"><a href="/js/api/ejgantt#methods:setsplitterindex">setSplitterIndex</a></li>
@@ -3511,9 +3581,11 @@
                             <li id="toc-events:actionbegin"><a href="/js/api/ejgantt#events:actionbegin">actionBegin</a></li>
                             <li id="toc-events:actioncomplete"><a href="/js/api/ejgantt#events:actioncomplete">actionComplete</a></li>
                             <li id="toc-events:beginedit"><a href="/js/api/ejgantt#events:beginedit">beginEdit</a></li>
+                            <li id="toc-events:cellselecting"><a href="/js/api/ejgantt#events:cellselecting">cellSelecting</a></li>
+                            <li id="toc-events:cellselected"><a href="/js/api/ejgantt#events:cellselected">cellSelected</a></li>                     
                             <li id="toc-events:collapsed"><a href="/js/api/ejgantt#events:collapsed">collapsed</a></li>
                             <li id="toc-events:collapsing"><a href="/js/api/ejgantt#events:collapsing">collapsing</a></li>
-                            <li id="toc-events:contextmenuopen"><a href="/js/api/ejgantt#events:contextmenuopen">contextMenuOpen</a></li>
+                            <li id="toc-events:contextmenuopen"><a href="/js/api/ejgantt#events:contextmenuopen">contextMenuOpen</a></li>                            
                             <li id="toc-events:endedit"><a href="/js/api/ejgantt#events:endedit">endEdit</a></li>
                             <li id="toc-events:expanded"><a href="/js/api/ejgantt#events:expanded">expanded</a></li>
                             <li id="toc-events:expanding"><a href="/js/api/ejgantt#events:expanding">expanding</a></li>
@@ -3521,6 +3593,9 @@
                             <li id="toc-events:querycellinfo"><a href="/js/api/ejgantt#events:querycellinfo">queryCellInfo</a></li>
                             <li id="toc-events:querytaskbarinfo"><a href="/js/api/ejgantt#events:querytaskbarinfo">queryTaskbarInfo</a></li>
                             <li id="toc-events:rowdatabound"><a href="/js/api/ejgantt#events:rowdatabound">rowDataBound</a></li>
+                            <li id="toc-events:rowdrag"><a href="/js/api/ejgantt#events:rowdrag">rowDrag</a></li>
+                            <li id="toc-events:rowdragstart"><a href="/js/api/ejgantt#events:rowdragstart">rowDragStart</a></li>
+                            <li id="toc-events:rowdragstop"><a href="/js/api/ejgantt#events:rowdragstop">rowDragStop</a></li>
                             <li id="toc-events:rowselected"><a href="/js/api/ejgantt#events:rowselected">rowSelected</a></li>
                             <li id="toc-events:rowselecting"><a href="/js/api/ejgantt#events:rowselecting">rowSelecting</a></li>
                             <li id="toc-events:taskbaredited"><a href="/js/api/ejgantt#events:taskbaredited">taskbarEdited</a></li>
@@ -4575,7 +4650,8 @@
 			   <li id="Li12"><a href="/js/api/ejkanban#members:contextmenusettings">contextMenuSettings</a>
 			     <ul>
 				   <li id="Li13"><a href="/js/api/ejkanban#members:contextmenusettings-enable">enable</a></li>
-				   <li id="Li14"><a href="/js/api/ejkanban#members:contextmenusettings-disabledefaultitems">disableDefaultItems</a></li>
+                   <li id="Li14"><a href="/js/api/ejkanban#members:contextmenusettings-menuitems">menuItems</a></li>
+				   <li id="Li15"><a href="/js/api/ejkanban#members:contextmenusettings-disabledefaultitems">disableDefaultItems</a></li>
 				   <li id="toc-members:contextmenusettings-custommenuitems"><a href="/js/api/ejkanban#members:contextmenusettings-custommenuitems">customMenuItems</a>
 				      <ul>
 					    <li id="toc-members:contextmenusettings-custommenuitems-target"><a href="/js/api/ejkanban#members:contextmenusettings-custommenuitems-target">target</a></li>
@@ -4586,15 +4662,16 @@
 				   </li>
 				 </ul>
 			   </li>
-			   <li id="Li15"><a href="/js/api/ejkanban#members:datasource">dataSource</a></li>
-			   <li id="Li16"><a href="/js/api/ejkanban#members:enablertl">enableRTL</a></li>
+			   <li id="Li16"><a href="/js/api/ejkanban#members:datasource">dataSource</a></li>
+                <li id="Li17"><a href="/js/api/ejkanban#members:enabletouch">enableTouch</a></li>
+			   <li id="Li18"><a href="/js/api/ejkanban#members:enablertl">enableRTL</a></li>
 			   <li id="toc-members:enabletotalcount"><a href="/js/api/ejkanban#members:enabletotalcount">enableTotalCount</a></li>
-			   <li id="Li17"><a href="/js/api/ejkanban#members:editsettings">editSettings</a>
+			   <li id="Li19"><a href="/js/api/ejkanban#members:editsettings">editSettings</a>
 			     <ul>
-				   <li id="Li18"><a href="/js/api/ejkanban#members:editsettings-allowediting">allowEditing</a></li>
-				   <li id="Li19"><a href="/js/api/ejkanban#members:editsettings-allowadding">allowAdding</a></li>
+				   <li id="Li20"><a href="/js/api/ejkanban#members:editsettings-allowediting">allowEditing</a></li>
+				   <li id="Li21"><a href="/js/api/ejkanban#members:editsettings-allowadding">allowAdding</a></li>
 				   <li id="toc-members:editsettings-dialogtemplate"><a href="/js/api/ejkanban#members:editsettings-dialogtemplate">dialogTemplate</a></li>
-				   <li id="Li20"><a href="/js/api/ejkanban#members:editsettings-editmode">editMode</a></li>
+				   <li id="Li22"><a href="/js/api/ejkanban#members:editsettings-editmode">editMode</a></li>
 				   <li id="toc-members:editsettings-edititems"><a href="/js/api/ejkanban#members:editsettings-edititems">editItems</a>
 				      <ul>
 					    <li id="toc-members:editsettings-edititems-field"><a href="/js/api/ejkanban#members:editsettings-edititems-field">field</a></li>
@@ -4605,17 +4682,17 @@
 					  </ul>
 				   </li>
                    <li id="toc-members:editsettings-externalformtemplate"><a href="/js/api/ejkanban#members:editsettings-externalformtemplate">externalFormTemplate</a></li>
-                   <li id="Li21"><a href="/js/api/ejkanban#members:editsettings-formposition">formPosition</a></li>  
+                   <li id="Li23"><a href="/js/api/ejkanban#members:editsettings-formposition">formPosition</a></li>  
 				 </ul>
 			   </li>
-			   <li id="Li22"><a href="/js/api/ejkanban#members:filtersettings">filterSettings</a>
+			   <li id="Li24"><a href="/js/api/ejkanban#members:filtersettings">filterSettings</a>
 			     <ul>
 				   <li id="toc-members:filtersettings-text"><a href="/js/api/ejkanban#members:filtersettings-text">text</a></li>
 				   <li id="toc-members:filtersettings-query"><a href="/js/api/ejkanban#members:filtersettings-query">query</a></li>
 				   <li id="toc-members:filtersettings-description"><a href="/js/api/ejkanban#members:filtersettings-description">description</a></li>
 				 </ul>
 			   </li>
-			   <li id="Li23"><a href="/js/api/ejkanban#members:fields">fields</a>
+			   <li id="Li25"><a href="/js/api/ejkanban#members:fields">fields</a>
 			     <ul>
 				   <li id="toc-members:fields-primarykey"><a href="/js/api/ejkanban#members:fields-primarykey">primaryKey</a></li>
 				   <li id="toc-members:fields-swimlanekey"><a href="/js/api/ejkanban#members:fields-swimlanekey">swimlaneKey</a></li>
@@ -4624,22 +4701,22 @@
 				   <li id="toc-members:fields-tag"><a href="/js/api/ejkanban#members:fields-tag">tag</a></li>
 				   <li id="toc-members:fields-title"><a href="/js/api/ejkanban#members:fields-title">title</a></li>
 				   <li id="toc-members:fields-color"><a href="/js/api/ejkanban#members:fields-color">color</a></li>
-				   <li id="Li24"><a href="/js/api/ejkanban#members:fields-imageurl">imageUrl</a></li>
+				   <li id="Li26"><a href="/js/api/ejkanban#members:fields-imageurl">imageUrl</a></li>
 				 </ul>
 			   </li>
 			   <li id="toc-members:keyfield"><a href="/js/api/ejkanban#members:keyfield">keyField</a></li>
-			   <li id="Li25"><a href="/js/api/ejkanban#members:keysettings">keySettings</a></li>
-			   <li id="Li26"><a href="/js/api/ejkanban#members:isresponsive">isResponsive</a></li>
-			   <li id="Li27"><a href="/js/api/ejkanban#members:locale">locale</a></li>
-			   <li id="Li28"><a href="/js/api/ejkanban#members:minwidth">minWidth</a></li>
-			   <li id="Li29"><a href="/js/api/ejkanban#members:query">query</a></li>
-			   <li id="Li30"><a href="/js/api/ejkanban#members:selectiontype">selectionType</a></li>
-			   <li id="Li31"><a href="/js/api/ejkanban#members:stackedheaderrows">stackedHeaderRows</a>
+			   <li id="Li27"><a href="/js/api/ejkanban#members:keysettings">keySettings</a></li>
+			   <li id="Li28"><a href="/js/api/ejkanban#members:isresponsive">isResponsive</a></li>
+			   <li id="Li29"><a href="/js/api/ejkanban#members:locale">locale</a></li>
+			   <li id="Li30"><a href="/js/api/ejkanban#members:minwidth">minWidth</a></li>
+			   <li id="Li31"><a href="/js/api/ejkanban#members:query">query</a></li>
+			   <li id="Li32"><a href="/js/api/ejkanban#members:selectiontype">selectionType</a></li>
+			   <li id="Li33"><a href="/js/api/ejkanban#members:stackedheaderrows">stackedHeaderRows</a>
 			     <ul>
-				   <li id="Li32"><a href="/js/api/ejkanban#members:stackedheaderrows-stackedheadercolumns">stackedHeaderColumns</a>
+				   <li id="Li34"><a href="/js/api/ejkanban#members:stackedheaderrows-stackedheadercolumns">stackedHeaderColumns</a>
 				      <ul>
-					    <li id="Li33"><a href="/js/api/ejkanban#members:stackedheaderrows-stackedheadercolumns-headertext">headerText</a></li>
-						<li id="Li34"><a href="/js/api/ejkanban#members:stackedheaderrows-stackedheadercolumns-column">column</a></li>
+					    <li id="Li35"><a href="/js/api/ejkanban#members:stackedheaderrows-stackedheadercolumns-headertext">headerText</a></li>
+						<li id="Li36"><a href="/js/api/ejkanban#members:stackedheaderrows-stackedheadercolumns-column">column</a></li>
 					  </ul>
 				   </li>
 				 </ul>
@@ -4652,10 +4729,10 @@
 					<li id="toc-members:searchsettings-ignorecase"><a href="/js/api/ejkanban#members:searchsettings-ignorecase">ignoreCase</a></li>
 				 </ul>
 			   </li>
-			   <li id="Li35"><a href="/js/api/ejkanban#members:scrollsettings">scrollSettings</a>
+			   <li id="Li37"><a href="/js/api/ejkanban#members:scrollsettings">scrollSettings</a>
 			     <ul>
-				    <li id="Li36"><a href="/js/api/ejkanban#members:scrollsettings-height">height</a></li>
-					<li id="Li37"><a href="/js/api/ejkanban#members:scrollsettings-width">width</a></li>
+				    <li id="Li38"><a href="/js/api/ejkanban#members:scrollsettings-height">height</a></li>
+					<li id="Li39"><a href="/js/api/ejkanban#members:scrollsettings-width">width</a></li>
 					<li id="toc-members:scrollsettings-allowfreezeswimlane"><a href="/js/api/ejkanban#members:scrollsettings-allowfreezeswimlane">allowFreezeSwimlane</a></li>
 				 </ul>
 			   </li>
@@ -4664,10 +4741,10 @@
 			     <li id="toc-members:swimlanesettings-showcount"><a href="/js/api/ejkanban#members:swimlanesettings-showcount">showCount</a></li>
 			   </ul>
 			   </li>
-			   <li id="Li38"><a href="/js/api/ejkanban#members:tooltipsettings">tooltipSettings</a>
+			   <li id="Li40"><a href="/js/api/ejkanban#members:tooltipsettings">tooltipSettings</a>
 			     <ul>
                    <li><a href="/js/api/ejkanban#members:tooltipsettings-enable">enable</a></li>
-				   <li id="Li39"><a href="/js/api/ejkanban#members:tooltipsettings-template">template</a></li>
+				   <li id="Li41"><a href="/js/api/ejkanban#members:tooltipsettings-template">template</a></li>
 				 </ul>
 			   </li>
 		  </ul>
@@ -4675,25 +4752,25 @@
 	   <li><a href="/js/api/ejkanban#methods">Methods</a>
 	   <ul>
 		 <li id="toc-methods:clearsearch"><a href="/js/api/ejkanban#methods:clearsearch">clearSearch</a></li>
-		 <li id="Li40"><a href="/js/api/ejkanban#methods:clearselection">clearSelection</a></li>
-		 <li id="Li41"><a href="/js/api/ejkanban#methods:collapseall">collapseAll</a></li>
-		 <li id="Li42"><a href="/js/api/ejkanban#methods:columns">columns</a></li>
-         <li id="Li43"><a href="/js/api/ejkanban#methods:clearfilter">clearFilter</a></li>
-		 <li id="Li44"><a href="/js/api/ejkanban#methods:destroy">destroy</a></li>
-		 <li id="Li45"><a href="/js/api/ejkanban#methods:datasource">dataSource</a></li>
-         <li id="Li46"><a href="/js/api/ejkanban#methods:filtercards">filterCards</a></li>
+		 <li id="Li42"><a href="/js/api/ejkanban#methods:clearselection">clearSelection</a></li>
+		 <li id="Li43"><a href="/js/api/ejkanban#methods:collapseall">collapseAll</a></li>
+		 <li id="Li44"><a href="/js/api/ejkanban#methods:columns">columns</a></li>
+         <li id="Li45"><a href="/js/api/ejkanban#methods:clearfilter">clearFilter</a></li>
+		 <li id="Li46"><a href="/js/api/ejkanban#methods:destroy">destroy</a></li>
+		 <li id="Li47"><a href="/js/api/ejkanban#methods:datasource">dataSource</a></li>
+         <li id="Li48"><a href="/js/api/ejkanban#methods:filtercards">filterCards</a></li>
 		 <li id="toc-methods:togglecolumn"><a href="/js/api/ejkanban#methods:togglecolumn">toggleColumn</a></li>
 		 <li id="toc-methods:togglecard"><a href="/js/api/ejkanban#methods:togglecard">toggleCard</a></li>
 		 <li id="toc-methods:toggleswimlane"><a href="/js/api/ejkanban#methods:toggleswimlane">toggleSwimlane</a></li>
-		 <li id="Li47"><a href="/js/api/ejkanban#methods:expandall">expandAll</a></li>
-		 <li id="Li48"><a href="/js/api/ejkanban#methods:getvisiblecolumnnames">getVisibleColumnNames</a></li>
-		 <li id="Li49"><a href="/js/api/ejkanban#methods:getscrollobject">getScrollObject</a></li>
-		 <li id="Li50"><a href="/js/api/ejkanban#methods:getcolumnbyheadertext">getColumnByHeaderText</a></li>
-         <li id="Li51"><a href="/js/api/ejkanban#methods:getheadertable">getHeaderTable</a></li>
-		 <li id="Li52"><a href="/js/api/ejkanban#methods:hidecolumns">hideColumns</a></li>
-         <li id="Li53"><a href="/js/api/ejkanban#methods:print">Print</a></li>
-		 <li id="Li54"><a href="/js/api/ejkanban#methods:refreshtemplate">refreshTemplate</a></li>
-		 <li id="Li55"><a href="/js/api/ejkanban#methods:refresh">refresh</a></li>
+		 <li id="Li49"><a href="/js/api/ejkanban#methods:expandall">expandAll</a></li>
+		 <li id="Li50"><a href="/js/api/ejkanban#methods:getvisiblecolumnnames">getVisibleColumnNames</a></li>
+		 <li id="Li51"><a href="/js/api/ejkanban#methods:getscrollobject">getScrollObject</a></li>
+		 <li id="Li52"><a href="/js/api/ejkanban#methods:getcolumnbyheadertext">getColumnByHeaderText</a></li>
+         <li id="Li53"><a href="/js/api/ejkanban#methods:getheadertable">getHeaderTable</a></li>
+		 <li id="Li54"><a href="/js/api/ejkanban#methods:hidecolumns">hideColumns</a></li>
+         <li id="Li55"><a href="/js/api/ejkanban#methods:print">Print</a></li>
+		 <li id="Li56"><a href="/js/api/ejkanban#methods:refreshtemplate">refreshTemplate</a></li>
+		 <li id="Li57"><a href="/js/api/ejkanban#methods:refresh">refresh</a></li>
 		 <li id="toc-methods:searchcards"><a href="/js/api/ejkanban#methods:searchcards">searchCards</a></li>
 		 <li id="toc-methods:showcolumns"><a href="/js/api/ejkanban#methods:showcolumns">showColumns</a></li>
 		 <li id="toc-methods:updatecard"><a href="/js/api/ejkanban#methods:updatecard">updateCard</a></li>
@@ -4738,9 +4815,14 @@
 		   <li id="toc-events:cardselect"><a href="/js/api/ejkanban#events:cardselect">cardSelect</a></li>
 		   <li id="toc-events:carddoubleclick"><a href="/js/api/ejkanban#events:carddoubleclick">cardDoubleClick</a></li>
 		   <li id="toc-events:cardselecting"><a href="/js/api/ejkanban#events:cardselecting">cardSelecting</a></li>
+           <li id="toc-events:create"><a href="/js/api/ejkanban#events:create">create</a></li>
+           <li id="toc-events:cellclick"><a href="/js/api/ejkanban#events:cellclick">cellClick</a></li>
 		   <li id="toc-events:databound"><a href="/js/api/ejkanban#events:databound">dataBound</a></li>
+           <li id="toc-events:destroy"><a href="/js/api/ejkanban#events:destroy">destroy</a></li>
 		   <li id="toc-events:enddelete"><a href="/js/api/ejkanban#events:enddelete">endDelete</a></li>
-		   <li id="toc-events:endddit"><a href="/js/api/ejkanban#events:endddit">endEdit</a></li>
+		   <li id="toc-events:endedit"><a href="/js/api/ejkanban#events:endedit">endEdit</a></li>
+           <li id="toc-events:headerclick"><a href="/js/api/ejkanban#events:headerclick">headerClick</a></li>
+		   <li id="toc-events:load"><a href="/js/api/ejkanban#events:load">load</a></li>
 		   <li id="toc-events:toolbarclick"><a href="/js/api/ejkanban#events:toolbarclick">toolbarClick</a></li>
 		   <li id="toc-events:querycellinfo"><a href="/js/api/ejkanban#events:querycellinfo">queryCellInfo</a></li>
 		   <li id="toc-events:contextclick"><a href="/js/api/ejkanban#events:contextclick">contextClick</a></li>
@@ -4757,7 +4839,19 @@
 							<li id="toc-members:datasource"><a href="/js/api/ejgroupbutton#members:datasoure">dataSource</a></li>
                             <li id="toc-members:enabled"><a href="/js/api/ejgroupbutton#members:enabled">enabled</a></li>
                             <li id="toc-members:enablertl"><a href="/js/api/ejgroupbutton#members:enablertl">enableRTL</a></li>
-                            <li id="toc-members:fields"><a href="/js/api/ejgroupbutton#members:fields">fields</a></li>
+                            <li id="toc-members:fields"><a href="/js/api/ejgroupbutton#members:fields">fields</a>
+                                <ul>
+                                    <li id="toc-members:fields-contentType"><a href="/js/api/ejgroupbutton#members:fields-contentType">contentType</a></li>
+                                    <li id="toc-members:fields-htmlAttribute"><a href="/js/api/ejgroupbutton#members:fields-htmlAttribute">htmlAttribute</a></li>
+                                    <li id="toc-members:fields-imagePosition"><a href="/js/api/ejgroupbutton#members:fields-imagePosition">imagePosition</a></li>
+                                    <li id="toc-members:fields-linkAttribute"><a href="/js/api/ejgroupbutton#members:fields-linkAttribute">linkAttribute</a></li>
+                                    <li id="toc-members:fields-prefixIcon"><a href="/js/api/ejgroupbutton#members:fields-prefixIcon">prefixIcon</a></li>
+                                    <li id="toc-members:fields-selected"><a href="/js/api/ejgroupbutton#members:fields-selected">selected</a></li>
+                                    <li id="toc-members:fields-suffixIcon"><a href="/js/api/ejgroupbutton#members:fields-suffixIcon">suffixIcon</a></li>
+                                    <li id="toc-members:fields-text"><a href="/js/api/ejgroupbutton#members:fields-text">text</a></li>
+                                    <li id="toc-members:fields-url"><a href="/js/api/ejgroupbutton#members:fields-url">url</a></li>                                    
+                                </ul>
+                            </li>
                             <li id="toc-members:groupbuttonmode"><a href="/js/api/ejgroupbutton#members:groupbuttonmode">groupButtonMode</a></li>
 							<li id="toc-members:height"><a href="/js/api/ejgroupbutton#members:height">height</a></li>
                             <li id="toc-members:htmlattributes"><a href="/js/api/ejgroupbutton#members:htmlattributes">htmlAttributes</a></li>
@@ -4774,6 +4868,7 @@
                             <li id="toc-methods:deselectItem"><a href="/js/api/ejgroupbutton#methods:deselectitem">deselectItem</a></li>
                             <li id="toc-methods:destroy"><a href="/js/api/ejgroupbutton#methods:destroy">destroy</a></li>
                             <li id="toc-methods:disable"><a href="/js/api/ejgroupbutton#methods:disable">disable</a></li>
+                            <li id="toc-methods:disableitem"><a href="/js/api/ejgroupbutton#methods:disableitem">disableItem</a></li>
                             <li id="toc-methods:enable"><a href="/js/api/ejgroupbutton#methods:enable">enable</a></li>
                             <li id="toc-methods:enableitem"><a href="/js/api/ejgroupbutton#methods:enableitem">enableItem</a></li>
                             <li id="toc-methods:getindex"><a href="/js/api/ejgroupbutton#methods:getindex">getIndex</a></li>
@@ -5625,74 +5720,142 @@
                     </li>
                 </ul>
             </li>
-            <li><a href="/js/api/ejolapbase">ejOlapBase</a>
+            <li>
+                <a href="/js/api/ejolapbase">ejOlapBase</a>
                 <ul>
-                    <li><a href="/js/api/ejolapbase#methods">Methods</a>
+                    <li>
+                        <a href="/js/api/ejolapbase#methods">Methods</a>
                         <ul>
                             <li id="toc-methods:getjsondata"><a href="/js/api/ejolapbase#methods:getjsondata">getJSONData</a></li>
                         </ul>
                     </li>
+                    <li>
+                        <a href="/js/api/ejolapbase#enum">Enumeration</a>
+                        <ul>
+                            <li id="toc-enum:sortorder"><a href="/js/api/ejolapbase#enum:sortorder">SortOrder</a></li>
+                            <li id="toc-enum:advancedfiltertype"><a href="/js/api/ejolapbase#enum:advancedfiltertype">AdvancedFilterType</a></li>
+                            <li id="toc-enum:valuefilteroptions"><a href="/js/api/ejolapbase#enum:valuefilteroptions">ValueFilterOptions</a></li>
+                            <li id="toc-enum:labelfilteroptions"><a href="/js/api/ejolapbase#enum:labelfilteroptions">LabelFilterOptions</a></li>
+                            <li id="toc-enum:axisname"><a href="/js/api/ejolapbase#enum:axisname">AxisName</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </li>
-                               
-            <li><a href="/js/api/ejolapchart">ejOlapChart</a>
+
+            <li>
+                <a href="/js/api/ejpivotchart">ejPivotChart</a>
                 <ul>
-                    <li><a href="/js/api/ejolapchart#members">Members</a>
+                    <li>
+                        <a href="/js/api/ejpivotchart#members">Members</a>
                         <ul>
-                            <li id="toc-members:cssclass"><a href="/js/api/ejolapchart#members:cssclass">cssClass</a></li>
-                            <li id="toc-members:currentreport"><a href="/js/api/ejolapchart#members:currentreport">currentReport</a></li>
-                            <li id="toc-members:customobject"><a href="/js/api/ejolapchart#members:customobject">customObject</a></li>
-                            <li id="toc-members:enable3d"><a href="/js/api/ejolapchart#members:enable3d">enable3D</a></li>
-                            <li id="toc-members:isresponsive"><a href="/js/api/ejolapchart#members:isresponsive">isResponsive</a></li>
-                            <li id="toc-members:locale"><a href="/js/api/ejolapchart#members:locale">locale</a></li>
-                            <li id="toc-members:rotation"><a href="/js/api/ejolapchart#members:rotation">rotation</a></li>
-                            <li id="toc-members:servicemethodsettings"><a href="/js/api/ejolapchart#members:servicemethodsettings">serviceMethodSettings</a>
+                            <li id="toc-members:cssclass"><a href="/js/api/ejpivotchart#members:cssclass">cssClass</a></li>
+                            <li id="toc-members:currentreport"><a href="/js/api/ejpivotchart#members:currentreport">currentReport</a></li>
+                            <li id="toc-members:customobject"><a href="/js/api/ejpivotchart#members:customobject">customObject</a></li>
+                            <li id="toc-members:enable3d"><a href="/js/api/ejpivotchart#members:enable3d">enable3D</a></li>
+                            <li id="toc-members:enablertl"><a href="/js/api/ejpivotchart#members:enablertl">enableRTL</a></li>
+                            <li id="toc-members:isresponsive"><a href="/js/api/ejpivotchart#members:isresponsive">isResponsive</a></li>
+                            <li id="toc-members:locale"><a href="/js/api/ejpivotchart#members:locale">locale</a></li>
+                            <li id="toc-members:rotation"><a href="/js/api/ejpivotchart#members:rotation">rotation</a></li>
+                            <li id="toc-members:servicemethodsettings">
+                                <a href="/js/api/ejpivotchart#members:servicemethodsettings">serviceMethodSettings</a>
                                 <ul>
-                                    <li id="toc-members:servicemethodsettings-drilldown"><a href="/js/api/ejolapchart#members:servicemethodsettings-drilldown">drillDown</a></li>
-                                    <li id="toc-members:servicemethodsettings-exportolapchart"><a href="/js/api/ejolapchart#members:servicemethodsettings-exportolapchart">exportOlapChart</a></li>
-                                    <li id="toc-members:servicemethodsettings-initialize"><a href="/js/api/ejolapchart#members:servicemethodsettings-initialize">initialize</a></li>
+                                    <li id="toc-members:servicemethodsettings-drilldown"><a href="/js/api/ejpivotchart#members:servicemethodsettings-drilldown">drillDown</a></li>
+                                    <li id="toc-members:servicemethodsettings-exportpivotchart"><a href="/js/api/ejpivotchart#members:servicemethodsettings-exportpivotchart">exportPivotChart</a></li>
+                                    <li id="toc-members:servicemethodsettings-initialize"><a href="/js/api/ejpivotchart#members:servicemethodsettings-initialize">initialize</a></li>
                                 </ul>
                             </li>
-                            <li id="toc-members:url"><a href="/js/api/ejolapchart#members:url">url</a></li>
+
+                            <li id="toc-members:datasource">
+                                <a href="/js/api/ejpivotchart#members:datasource">dataSource</a>
+                                <ul>
+                                    <li id="toc-members:datasource-catalog"><a href="/js/api/ejpivotchart#members:datasource-catalog">catalog</a></li>
+                                    <li id="toc-members:datasource-columns">
+                                        <a href="/js/api/ejpivotchart#members:datasource-columns">columns</a>
+                                        <ul>
+                                            <li id="toc-members:datasource-columns-fieldname"><a href="/js/api/ejpivotchart#members:datasource-columns-fieldname">fieldName</a></li>
+                                            <li id="toc-members:datasource-columns-fieldcaption"><a href="/js/api/ejpivotchart#members:datasource-columns-fieldcaption">fieldCaption</a></li>
+                                            <li id="toc-members:datasource-columns-isnamedsets"><a href="/js/api/ejpivotchart#members:datasource-columns-isnamedsets">isNamedSets</a></li>
+                                        </ul>
+                                    </li>
+                                    <li id="toc-members:datasource-rows">
+                                        <a href="/js/api/ejpivotchart#members:datasource-rows">rows</a>
+                                        <ul>
+                                            <li id="toc-members:datasource-rows-fieldname"><a href="/js/api/ejpivotchart#members:datasource-rows-fieldname">fieldName</a></li>
+                                            <li id="toc-members:datasource-rows-fieldcaption"><a href="/js/api/ejpivotchart#members:datasource-rows-fieldcaption">fieldCaption</a></li>
+                                            <li id="toc-members:datasource-rows-isnamedsets"><a href="/js/api/ejpivotchart#members:datasource-rows-isnamedsets">isNamedSets</a></li>
+                                        </ul>
+                                    </li>
+                                    <li id="toc-members:datasource-cube"><a href="/js/api/ejpivotchart#members:datasource-cube">cube</a></li>
+                                    <li id="toc-members:datasource-data"><a href="/js/api/ejpivotchart#members:datasource-data">data</a></li>
+                                    <li id="toc-members:datasource-filters">
+                                        <a href="/js/api/ejpivotchart#members:datasource-filters">filters</a>
+                                        <ul>
+                                            <li id="toc-members:datasource-filters-fieldname"><a href="/js/api/ejpivotchart#members:datasource-filters-fieldname">fieldName</a></li>
+                                            <li id="toc-members:datasource-filters-fieldcaption"><a href="/js/api/ejpivotchart#members:datasource-filters-fieldcaption">fieldCaption</a></li>
+                                            <li id="toc-members:datasource-filters-isnamedsets"><a href="/js/api/ejpivotchart#members:datasource-filters-isnamedsets">isNamedSets</a></li>
+                                        </ul>
+                                    </li>
+                                    <li id="toc-members:datasource-values">
+                                        <a href="/js/api/ejpivotchart#members:datasource-values">values</a>
+                                        <ul>
+                                            <li id="toc-members:datasource-values[0]-measures"><a href="/js/api/ejpivotchart#members:datasource-values[0]-measures">measures</a></li>
+                                            <li id="toc-members:datasource-values[0]-axis"><a href="/js/api/ejpivotchart#members:datasource-values[0]-axis">axis</a></li>
+                                            <li id="toc-members:datasource-values[0]-fieldname"><a href="/js/api/ejpivotchart#members:datasource-values[0]-fieldname">fieldName</a></li>
+                                            <li id="toc-members:datasource-values[0]-fieldcaption"><a href="/js/api/ejpivotchart#members:datasource-values[0]-fieldcaption">fieldCaption</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li id="toc-members:url"><a href="/js/api/ejpivotchart#members:url">url</a></li>
                         </ul>
                     </li>
-                    <li><a href="/js/api/ejolapchart#methods">Methods</a>
+                    <li>
+                        <a href="/js/api/ejpivotchart#methods">Methods</a>
                         <ul>
-                            <li id="toc-methods:doajaxpost"><a href="/js/api/ejolapchart#methods:doajaxpost">doAjaxPost</a></li>
-                            <li id="toc-methods:dopostback"><a href="/js/api/ejolapchart#methods:dopostback">doPostBack</a></li>
-                            <li id="toc-methods:exportolapchart"><a href="/js/api/ejolapchart#methods:exportolapchart">exportOlapChart</a></li>
-                            <li id="toc-methods:renderchartfromjson"><a href="/js/api/ejolapchart#methods:renderchartfromjson">renderChartFromJSON</a></li>
-                            <li id="toc-methods:rendercontrolsuccess"><a href="/js/api/ejolapchart#methods:rendercontrolsuccess">renderControlSuccess</a></li>
+                            <li id="toc-methods:doajaxpost"><a href="/js/api/ejpivotchart#methods:doajaxpost">doAjaxPost</a></li>
+                            <li id="toc-methods:dopostback"><a href="/js/api/ejpivotchart#methods:dopostback">doPostBack</a></li>
+                            <li id="toc-methods:exportpivotchart"><a href="/js/api/ejpivotchart#methods:exportpivotchart">exportPivotChart</a></li>
+                            <li id="toc-methods:renderchartfromjson"><a href="/js/api/ejpivotchart#methods:renderchartfromjson">renderChartFromJSON</a></li>
+                            <li id="toc-methods:rendercontrolsuccess"><a href="/js/api/ejpivotchart#methods:rendercontrolsuccess">renderControlSuccess</a></li>
                         </ul>
                     </li>
-                    <li><a href="/js/api/ejolapchart#events">Events</a>
+                    <li>
+                        <a href="/js/api/ejpivotchart#events">Events</a>
                         <ul>
-                            <li id="toc-events:afterserviceinvoke"><a href="/js/api/ejolapchart#events:afterserviceinvoke">afterServiceInvoke</a></li>
-                            <li id="toc-events:beforeserviceinvoke"><a href="/js/api/ejolapchart#events:beforeserviceinvoke">beforeServiceInvoke</a></li>
-                            <li id="toc-events:drillsuccess"><a href="/js/api/ejolapchart#events:drillsuccess">drillSuccess</a></li>
-                            <li id="toc-events:rendercomplete"><a href="/js/api/ejolapchart#events:rendercomplete">renderComplete</a></li>
-                            <li id="toc-events:renderfailure"><a href="/js/api/ejolapchart#events:renderfailure">renderFailure</a></li>
-                            <li id="toc-events:rendersuccess"><a href="/js/api/ejolapchart#events:rendersuccess">renderSuccess</a></li>
+                            <li id="toc-events:load"><a href="/js/api/ejpivotchart#events:load">load</a></li>
+                            <li id="toc-events:afterserviceinvoke"><a href="/js/api/ejpivotchart#events:afterserviceinvoke">afterServiceInvoke</a></li>
+                            <li id="toc-events:beforeserviceinvoke"><a href="/js/api/ejpivotchart#events:beforeserviceinvoke">beforeServiceInvoke</a></li>
+                            <li id="toc-events:drillsuccess"><a href="/js/api/ejpivotchart#events:drillsuccess">drillSuccess</a></li>
+                            <li id="toc-events:rendercomplete"><a href="/js/api/ejpivotchart#events:rendercomplete">renderComplete</a></li>
+                            <li id="toc-events:renderfailure"><a href="/js/api/ejpivotchart#events:renderfailure">renderFailure</a></li>
+                            <li id="toc-events:rendersuccess"><a href="/js/api/ejpivotchart#events:rendersuccess">renderSuccess</a></li>
                         </ul>
                     </li>
-                    <li><a href="/js/api/ejolapchart#enum">Enumeration</a>
+                    <li>
+                        <a href="/js/api/ejpivotchart#enum">Enumeration</a>
                         <ul>
-                            <li id="toc-enum:charttypes"><a href="/js/api/ejolapchart#enum:charttypes">ChartTypes</a></li>
-                            <li id="toc-enum:exportoption"><a href="/js/api/ejolapchart#enum:exportoption">ExportOption</a></li>
-                            <li id="toc-enum:symbolshapes"><a href="/js/api/ejolapchart#enum:symbolshapes">SymbolShapes</a></li>
+                            <li id="toc-enum:analysismode"><a href="/js/api/ejpivotchart#enum:analysismode">AnalysisMode</a></li>
+                            <li id="toc-enum:operationalmode"><a href="/js/api/ejpivotchart#enum:operationalmode">OperationalMode</a></li>
+                            <li id="toc-enum:charttypes"><a href="/js/api/ejpivotchart#enum:charttypes">ChartTypes</a></li>
+                            <li id="toc-enum:exportoption"><a href="/js/api/ejpivotchart#enum:exportoption">ExportOption</a></li>
+                            <li id="toc-enum:symbolshapes"><a href="/js/api/ejpivotchart#enum:symbolshapes">SymbolShapes</a></li>
                         </ul>
                     </li>
                 </ul>
             </li>
-            <li><a href="/js/api/ejolapclient">ejOlapClient</a>
+            <li>
+                <a href="/js/api/ejolapclient">ejOlapClient</a>
                 <ul>
-                    <li><a href="/js/api/ejolapclient#members">Members</a>
+                    <li>
+                        <a href="/js/api/ejolapclient#members">Members</a>
                         <ul>
                             <li id="toc-members:charttype"><a href="/js/api/ejolapclient#members:charttype">chartType</a></li>
                             <li id="toc-members:clientexportmode"><a href="/js/api/ejolapclient#members:clientexportmode">clientExportMode</a></li>
                             <li id="toc-members:cssclass"><a href="/js/api/ejolapclient#members:cssclass">cssClass</a></li>
                             <li id="toc-members:customobject"><a href="/js/api/ejolapclient#members:customobject">customObject</a></li>
-                            <li id="toc-members:displaysettings"><a href="/js/api/ejolapclient#members:displaysettings">displaySettings</a>
+                            <li id="toc-members:displaysettings">
+                                <a href="/js/api/ejolapclient#members:displaysettings">displaySettings</a>
                                 <ul>
                                     <li id="toc-members:displaysettings-controlplacement"><a href="/js/api/ejolapclient#members:displaysettings-controlplacement">controlPlacement</a></li>
                                     <li id="toc-members:displaysettings-defaultview"><a href="/js/api/ejolapclient#members:displaysettings-defaultview">defaultView</a></li>
@@ -5703,11 +5866,13 @@
                                 </ul>
                             </li>
                             <li id="toc-members:enabledeferupdate"><a href="/js/api/ejolapclient#members:enabledeferupdate">enableDeferUpdate</a></li>
+                            <li id="toc-members:enablertl"><a href="/js/api/ejolapclient#members:enablertl">enableRTL</a></li>
                             <li id="toc-members:enablemeasuregroups"><a href="/js/api/ejolapclient#members:enablemeasuregroups">enableMeasureGroups</a></li>
                             <li id="toc-members:gridlayout"><a href="/js/api/ejolapclient#members:gridlayout">gridLayout</a></li>
 
                             <li id="toc-members:locale"><a href="/js/api/ejolapclient#members:locale">locale</a></li>
-                            <li id="toc-members:servicemethodsettings"><a href="/js/api/ejolapclient#members:servicemethodsettings">serviceMethodSettings</a>
+                            <li id="toc-members:servicemethodsettings">
+                                <a href="/js/api/ejolapclient#members:servicemethodsettings">serviceMethodSettings</a>
                                 <ul>
                                     <li id="toc-members:servicemethodsettings-cubechanged"><a href="/js/api/ejolapclient#members:servicemethodsettings-cubechanged">cubeChanged</a></li>
                                     <li id="toc-members:servicemethodsettings-exportolapclient"><a href="/js/api/ejolapclient#members:servicemethodsettings-exportolapclient">exportOlapClient</a></li>
@@ -5731,13 +5896,15 @@
                             <li id="toc-members:url"><a href="/js/api/ejolapclient#members:url">url</a></li>
                         </ul>
                     </li>
-                    <li><a href="/js/api/ejolapclient#methods">Methods</a>
+                    <li>
+                        <a href="/js/api/ejolapclient#methods">Methods</a>
                         <ul>
                             <li id="toc-methods:doajaxpost"><a href="/js/api/ejolapclient#methods:doajaxpost">doAjaxPost</a></li>
                             <li id="toc-methods:dopostback"><a href="/js/api/ejolapclient#methods:dopostback">doPostBack</a></li>
                         </ul>
                     </li>
-                    <li><a href="/js/api/ejolapclient#events">Events</a>
+                    <li>
+                        <a href="/js/api/ejolapclient#events">Events</a>
                         <ul>
                             <li id="toc-events:afterserviceinvoke"><a href="/js/api/ejolapclient#events:afterserviceinvoke">afterServiceInvoke</a></li>
                             <li id="toc-events:beforeserviceinvoke"><a href="/js/api/ejolapclient#events:beforeserviceinvoke">beforeServiceInvoke</a></li>
@@ -5748,7 +5915,8 @@
                             <li id="toc-events:rendersuccess"><a href="/js/api/ejolapclient#events:rendersuccess">renderSuccess</a></li>
                         </ul>
                     </li>
-                    <li><a href="/js/api/ejolapclient#enum">Enumeration</a>
+                    <li>
+                        <a href="/js/api/ejolapclient#enum">Enumeration</a>
                         <ul>
                             <li id="toc-enum:clientexportmode"><a href="/js/api/ejolapclient#enum:clientexportmode">ClientExportMode</a></li>
                             <li id="toc-enum:controlplacement"><a href="/js/api/ejolapclient#enum:controlplacement">ControlPlacement</a></li>
@@ -5758,56 +5926,199 @@
                     </li>
                 </ul>
             </li>
-            <li><a href="/js/api/ejolapgauge">ejOlapGauge</a>
+            <li>
+                <a href="/js/api/ejpivotgauge">ejPivotGauge</a>
                 <ul>
-                    <li><a href="/js/api/ejolapgauge#members">Members</a>
+                    <li>
+                        <a href="/js/api/ejpivotgauge#members">Members</a>
                         <ul>
-                            <li id="toc-members:columnscount"><a href="/js/api/ejolapgauge#members:columnscount">columnsCount</a></li>
-                            <li id="toc-members:cssclass"><a href="/js/api/ejolapgauge#members:cssclass">cssClass</a></li>
-                            <li id="toc-members:customobject"><a href="/js/api/ejolapgauge#members:customobject">customObject</a></li>
-                            <li id="toc-members:enabletooltip"><a href="/js/api/ejolapgauge#members:enabletooltip">enableTooltip</a></li>
-                            <li id="toc-members:isresponsive"><a href="/js/api/ejolapgauge#members:isresponsive">isResponsive</a></li>
-                            <li id="toc-members:labelformatsettings"><a href="/js/api/ejolapgauge#members:labelformatsettings">labelFormatSettings</a>
+                            <li id="toc-members:columnscount"><a href="/js/api/ejpivotgauge#members:columnscount">columnsCount</a></li>
+                            <li id="toc-members:cssclass"><a href="/js/api/ejpivotgauge#members:cssclass">cssClass</a></li>
+                            <li id="toc-members:customobject"><a href="/js/api/ejpivotgauge#members:customobject">customObject</a></li>
+                            <li id="toc-members:enabletooltip"><a href="/js/api/ejpivotgauge#members:enabletooltip">enableTooltip</a></li>
+                            <li id="toc-members:enablertl"><a href="/js/api/ejpivotgauge#members:enablertl">enableRTL</a></li>
+                            <li id="toc-members:isresponsive"><a href="/js/api/ejpivotgauge#members:isresponsive">isResponsive</a></li>
+                            <li id="toc-members:labelformatsettings">
+                                <a href="/js/api/ejpivotgauge#members:labelformatsettings">labelFormatSettings</a>
                                 <ul>
-                                    <li id="toc-members:labelformatsettings-decimalplaces"><a href="/js/api/ejolapgauge#members:labelformatsettings-decimalplaces">decimalPlaces</a></li>
-                                    <li id="toc-members:labelformatsettings-numberformat"><a href="/js/api/ejolapgauge#members:labelformatsettings-numberformat">numberFormat</a></li>
-                                    <li id="toc-members:labelformatsettings-prefixtext"><a href="/js/api/ejolapgauge#members:labelformatsettings-prefixtext">prefixText</a></li>
-                                    <li id="toc-members:labelformatsettings-suffixtext"><a href="/js/api/ejolapgauge#members:labelformatsettings-suffixtext">suffixText</a></li>
+                                    <li id="toc-members:labelformatsettings-decimalplaces"><a href="/js/api/ejpivotgauge#members:labelformatsettings-decimalplaces">decimalPlaces</a></li>
+                                    <li id="toc-members:labelformatsettings-numberformat"><a href="/js/api/ejpivotgauge#members:labelformatsettings-numberformat">numberFormat</a></li>
+                                    <li id="toc-members:labelformatsettings-prefixtext"><a href="/js/api/ejpivotgauge#members:labelformatsettings-prefixtext">prefixText</a></li>
+                                    <li id="toc-members:labelformatsettings-suffixtext"><a href="/js/api/ejpivotgauge#members:labelformatsettings-suffixtext">suffixText</a></li>
                                 </ul>
                             </li>
-                            <li id="toc-members:locale"><a href="/js/api/ejolapgauge#members:locale">locale</a></li>
-                            <li id="toc-members:rowscount"><a href="/js/api/ejolapgauge#members:rowscount">rowsCount</a></li>
-                            <li id="toc-members:scales"><a href="/js/api/ejolapgauge#members:scales">scales</a></li>
-                            <li id="toc-members:servicemethodsettings"><a href="/js/api/ejolapgauge#members:servicemethodsettings">serviceMethodSettings</a>
+                            <li id="toc-members:locale"><a href="/js/api/ejpivotgauge#members:locale">locale</a></li>
+                            <li id="toc-members:rowscount"><a href="/js/api/ejpivotgauge#members:rowscount">rowsCount</a></li>
+                            <li id="toc-members:scales"><a href="/js/api/ejpivotgauge#members:scales">scales</a></li>
+                            <li id="toc-members:servicemethodsettings">
+                                <a href="/js/api/ejpivotgauge#members:servicemethodsettings">serviceMethodSettings</a>
                                 <ul>
-                                    <li id="toc-members:servicemethodsettings-initialize"><a href="/js/api/ejolapgauge#members:servicemethodsettings-initialize">initialize</a></li>
+                                    <li id="toc-members:servicemethodsettings-initialize"><a href="/js/api/ejpivotgauge#members:servicemethodsettings-initialize">initialize</a></li>
                                 </ul>
                             </li>
-                            <li id="toc-members:showheaderlabel"><a href="/js/api/ejolapgauge#members:showheaderlabel">showHeaderLabel</a></li>
-                            <li id="toc-members:url"><a href="/js/api/ejolapgauge#members:url">url</a></li>
+                            <li id="toc-members:showheaderlabel"><a href="/js/api/ejpivotgauge#members:showheaderlabel">showHeaderLabel</a></li>
+                            <li id="toc-members:datasource">
+                                <a href="/js/api/ejpivotgauge#members:datasource">dataSource</a>
+                                <ul>
+                                    <li id="toc-members:datasource-catalog"><a href="/js/api/ejpivotgauge#members:datasource-catalog">catalog</a></li>
+                                    <li id="toc-members:datasource-columns">
+                                        <a href="/js/api/ejpivotgauge#members:datasource-columns">columns</a>
+                                        <ul>
+                                            <li id="toc-members:datasource-columns-fieldname"><a href="/js/api/ejpivotgauge#members:datasource-columns-fieldname">fieldName</a></li>
+                                            <li id="toc-members:datasource-columns-fieldcaption"><a href="/js/api/ejpivotgauge#members:datasource-columns-fieldcaption">fieldCaption</a></li>
+                                            <li id="toc-members:datasource-columns-isnamedsets"><a href="/js/api/ejpivotgauge#members:datasource-columns-isnamedsets">isNamedSets</a></li>
+                                        </ul>
+                                    </li>
+                                    <li id="toc-members:datasource-rows">
+                                        <a href="/js/api/ejpivotgauge#members:datasource-rows">rows</a>
+                                        <ul>
+                                            <li id="toc-members:datasource-rows-fieldname"><a href="/js/api/ejpivotgauge#members:datasource-rows-fieldname">fieldName</a></li>
+                                            <li id="toc-members:datasource-rows-fieldcaption"><a href="/js/api/ejpivotgauge#members:datasource-rows-fieldcaption">fieldCaption</a></li>
+                                            <li id="toc-members:datasource-rows-isnamedsets"><a href="/js/api/ejpivotgauge#members:datasource-rows-isnamedsets">isNamedSets</a></li>
+                                        </ul>
+                                    </li>
+                                    <li id="toc-members:datasource-cube"><a href="/js/api/ejpivotgauge#members:datasource-cube">cube</a></li>
+                                    <li id="toc-members:datasource-data"><a href="/js/api/ejpivotgauge#members:datasource-data">data</a></li>
+                                    <li id="toc-members:datasource-filters">
+                                        <a href="/js/api/ejpivotgauge#members:datasource-filters">filters</a>
+                                        <ul>
+                                            <li id="toc-members:datasource-filters-fieldname"><a href="/js/api/ejpivotgauge#members:datasource-filters-fieldname">fieldName</a></li>
+                                            <li id="toc-members:datasource-filters-fieldcaption"><a href="/js/api/ejpivotgauge#members:datasource-filters-fieldcaption">fieldCaption</a></li>
+                                            <li id="toc-members:datasource-filters-isnamedsets"><a href="/js/api/ejpivotgauge#members:datasource-filters-isnamedsets">isNamedSets</a></li>
+                                        </ul>
+                                    </li>
+                                    <li id="toc-members:datasource-values">
+                                        <a href="/js/api/ejpivotgauge#members:datasource-values">values</a>
+                                        <ul>
+                                            <li id="toc-members:datasource-values[0]-measures"><a href="/js/api/ejpivotgauge#members:datasource-values[0]-measures">measures</a></li>
+                                            <li id="toc-members:datasource-values[0]-axis"><a href="/js/api/ejpivotgauge#members:datasource-values[0]-axis">axis</a></li>
+                                            <li id="toc-members:datasource-values[0]-fieldname"><a href="/js/api/ejpivotgauge#members:datasource-values[0]-fieldname">fieldName</a></li>
+                                            <li id="toc-members:datasource-values[0]-fieldcaption"><a href="/js/api/ejpivotgauge#members:datasource-values[0]-fieldcaption">fieldCaption</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li id="toc-members:url"><a href="/js/api/ejpivotgauge#members:url">url</a></li>
                         </ul>
                     </li>
-                    <li><a href="/js/api/ejolapgauge#methods">Methods</a>
+                    <li>
+                        <a href="/js/api/ejpivotgauge#methods">Methods</a>
                         <ul>
-                            <li id="toc-methods:doajaxpost"><a href="/js/api/ejolapgauge#methods:doajaxpost">doAjaxPost</a></li>
-                            <li id="toc-methods:refresh"><a href="/js/api/ejolapgauge#methods:refresh">refresh</a></li>
-                            <li id="toc-methods:removeimg"><a href="/js/api/ejolapgauge#methods:removeimg">removeImg</a></li>
-                            <li id="toc-methods:rendercontrolfromjson"><a href="/js/api/ejolapgauge#methods:rendercontrolfromjson">renderControlFromJSON</a></li>
+                            <li id="toc-methods:doajaxpost"><a href="/js/api/ejpivotgauge#methods:doajaxpost">doAjaxPost</a></li>
+                            <li id="toc-methods:refresh"><a href="/js/api/ejpivotgauge#methods:refresh">refresh</a></li>
+                            <li id="toc-methods:removeimg"><a href="/js/api/ejpivotgauge#methods:removeimg">removeImg</a></li>
+                            <li id="toc-methods:rendercontrolfromjson"><a href="/js/api/ejpivotgauge#methods:rendercontrolfromjson">renderControlFromJSON</a></li>
                         </ul>
                     </li>
-                    <li><a href="/js/api/ejolapgauge#events">Events</a>
+                    <li>
+                        <a href="/js/api/ejpivotgauge#events">Events</a>
                         <ul>
-                            <li id="toc-events:afterserviceinvoke"><a href="/js/api/ejolapgauge#events:afterserviceinvoke">afterServiceInvoke</a></li>
-                            <li id="toc-events:beforeserviceinvoke"><a href="/js/api/ejolapgauge#events:beforeserviceinvoke">beforeServiceInvoke</a></li>
-                            <li id="toc-events:load"><a href="/js/api/ejolapgauge#events:load">load</a></li>
-                            <li id="toc-events:rendercomplete"><a href="/js/api/ejolapgauge#events:rendercomplete">renderComplete</a></li>
-                            <li id="toc-events:renderfailure"><a href="/js/api/ejolapgauge#events:renderfailure">renderFailure</a></li>
-                            <li id="toc-events:rendersuccess"><a href="/js/api/ejolapgauge#events:rendersuccess">renderSuccess</a></li>
+                            <li id="toc-events:afterserviceinvoke"><a href="/js/api/ejpivotgauge#events:afterserviceinvoke">afterServiceInvoke</a></li>
+                            <li id="toc-events:beforeserviceinvoke"><a href="/js/api/ejpivotgauge#events:beforeserviceinvoke">beforeServiceInvoke</a></li>
+                            <li id="toc-events:load"><a href="/js/api/ejpivotgauge#events:load">load</a></li>
+                            <li id="toc-events:rendercomplete"><a href="/js/api/ejpivotgauge#events:rendercomplete">renderComplete</a></li>
+                            <li id="toc-events:renderfailure"><a href="/js/api/ejpivotgauge#events:renderfailure">renderFailure</a></li>
+                            <li id="toc-events:rendersuccess"><a href="/js/api/ejpivotgauge#events:rendersuccess">renderSuccess</a></li>
                         </ul>
                     </li>
-                     <li><a href="/js/api/ejolapgauge#enum">Enumeration</a>
+                    <li>
+                        <a href="/js/api/ejpivotgauge#enum">Enumeration</a>
                         <ul>
-                            <li id="toc-enum:numberformat"><a href="/js/api/ejolapgauge#enum:numberformat">NumberFormat</a></li>
+                            <li id="toc-enum:axisname"><a href="/js/api/ejpivotgauge#enum:axisname">AxisName</a></li>
+                            <li id="toc-enum:numberformat"><a href="/js/api/ejpivotgauge#enum:numberformat">NumberFormat</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="/js/api/ejpivottreemap">ejPivotTreeMap</a>
+                <ul>
+                    <li>
+                        <a href="/js/api/ejpivottreemap#members">Members</a>
+                        <ul>
+                            <li id="toc-members:cssclass"><a href="/js/api/ejpivottreemap#members:cssclass">cssClass</a></li>
+                            <li id="toc-members:currentreport"><a href="/js/api/ejpivottreemap#members:currentreport">currentReport</a></li>
+                            <li id="toc-members:customobject"><a href="/js/api/ejpivottreemap#members:customobject">customObject</a></li>
+                            <li id="toc-members:enable3d"><a href="/js/api/ejpivottreemap#members:enable3d">enable3D</a></li>
+                            <li id="toc-members:enablertl"><a href="/js/api/ejpivottreemap#members:enablertl">enableRTL</a></li>
+                            <li id="toc-members:isresponsive"><a href="/js/api/ejpivottreemap#members:isresponsive">isResponsive</a></li>
+                            <li id="toc-members:locale"><a href="/js/api/ejpivottreemap#members:locale">locale</a></li>
+                            <li id="toc-members:servicemethodsettings">
+                                <a href="/js/api/ejpivottreemap#members:servicemethodsettings">serviceMethodSettings</a>
+                                <ul>
+                                    <li id="toc-members:servicemethodsettings-drilldown"><a href="/js/api/ejpivottreemap#members:servicemethodsettings-drilldown">drillDown</a></li>
+                                    <li id="toc-members:servicemethodsettings-initialize"><a href="/js/api/ejpivottreemap#members:servicemethodsettings-initialize">initialize</a></li>
+                                </ul>
+                            </li>
+                            <li id="toc-members:datasource">
+                                <a href="/js/api/ejpivottreemap#members:datasource">dataSource</a>
+                                <ul>
+                                    <li id="toc-members:datasource-catalog"><a href="/js/api/ejpivottreemap#members:datasource-catalog">catalog</a></li>
+                                    <li id="toc-members:datasource-columns">
+                                        <a href="/js/api/ejpivottreemap#members:datasource-columns">columns</a>
+                                        <ul>
+                                            <li id="toc-members:datasource-columns-fieldname"><a href="/js/api/ejpivottreemap#members:datasource-columns-fieldname">fieldName</a></li>
+                                            <li id="toc-members:datasource-columns-fieldcaption"><a href="/js/api/ejpivottreemap#members:datasource-columns-fieldcaption">fieldCaption</a></li>
+                                            <li id="toc-members:datasource-columns-isnamedsets"><a href="/js/api/ejpivottreemap#members:datasource-columns-isnamedsets">isNamedSets</a></li>
+                                        </ul>
+                                    </li>
+                                    <li id="toc-members:datasource-rows">
+                                        <a href="/js/api/ejpivottreemap#members:datasource-rows">rows</a>
+                                        <ul>
+                                            <li id="toc-members:datasource-rows-fieldname"><a href="/js/api/ejpivottreemap#members:datasource-rows-fieldname">fieldName</a></li>
+                                            <li id="toc-members:datasource-rows-fieldcaption"><a href="/js/api/ejpivottreemap#members:datasource-rows-fieldcaption">fieldCaption</a></li>
+                                            <li id="toc-members:datasource-rows-isnamedsets"><a href="/js/api/ejpivottreemap#members:datasource-rows-isnamedsets">isNamedSets</a></li>
+                                        </ul>
+                                    </li>
+                                    <li id="toc-members:datasource-cube"><a href="/js/api/ejpivottreemap#members:datasource-cube">cube</a></li>
+                                    <li id="toc-members:datasource-data"><a href="/js/api/ejpivottreemap#members:datasource-data">data</a></li>
+                                    <li id="toc-members:datasource-filters">
+                                        <a href="/js/api/ejpivottreemap#members:datasource-filters">filters</a>
+                                        <ul>
+                                            <li id="toc-members:datasource-filters-fieldname"><a href="/js/api/ejpivottreemap#members:datasource-filters-fieldname">fieldName</a></li>
+                                            <li id="toc-members:datasource-filters-fieldcaption"><a href="/js/api/ejpivottreemap#members:datasource-filters-fieldcaption">fieldCaption</a></li>
+                                            <li id="toc-members:datasource-filters-isnamedsets"><a href="/js/api/ejpivottreemap#members:datasource-filters-isnamedsets">isNamedSets</a></li>
+                                        </ul>
+                                    </li>
+                                    <li id="toc-members:datasource-values">
+                                        <a href="/js/api/ejpivottreemap#members:datasource-values">values</a>
+                                        <ul>
+                                            <li id="toc-members:datasource-values[0]-measures"><a href="/js/api/ejpivottreemap#members:datasource-values[0]-measures">measures</a></li>
+                                            <li id="toc-members:datasource-values[0]-axis"><a href="/js/api/ejpivottreemap#members:datasource-values[0]-axis">axis</a></li>
+                                            <li id="toc-members:datasource-values[0]-fieldname"><a href="/js/api/ejpivottreemap#members:datasource-values[0]-fieldname">fieldName</a></li>
+                                            <li id="toc-members:datasource-values[0]-fieldcaption"><a href="/js/api/ejpivottreemap#members:datasource-values[0]-fieldcaption">fieldCaption</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li id="toc-members:url"><a href="/js/api/ejpivottreemap#members:url">url</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="/js/api/ejpivottreemap#methods">Methods</a>
+                        <ul>
+                            <li id="toc-methods:doajaxpost"><a href="/js/api/ejpivottreemap#methods:doajaxpost">doAjaxPost</a></li>
+                            <li id="toc-methods:dopostback"><a href="/js/api/ejpivottreemap#methods:dopostback">doPostBack</a></li>
+                            <li id="toc-methods:rendertreemapfromjson"><a href="/js/api/ejpivottreemap#methods:rendertreemapfromjson">renderTreeMapFromJSON</a></li>
+                            <li id="toc-methods:rendercontrolsuccess"><a href="/js/api/ejpivottreemap#methods:rendercontrolsuccess">renderControlSuccess</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="/js/api/ejpivottreemap#events">Events</a>
+                        <ul>
+                            <li id="toc-events:afterserviceinvoke"><a href="/js/api/ejpivottreemap#events:afterserviceinvoke">afterServiceInvoke</a></li>
+                            <li id="toc-events:beforeserviceinvoke"><a href="/js/api/ejpivottreemap#events:beforeserviceinvoke">beforeServiceInvoke</a></li>
+                            <li id="toc-events:drillsuccess"><a href="/js/api/ejpivottreemap#events:drillsuccess">drillSuccess</a></li>
+                            <li id="toc-events:rendercomplete"><a href="/js/api/ejpivottreemap#events:rendercomplete">renderComplete</a></li>
+                            <li id="toc-events:renderfailure"><a href="/js/api/ejpivottreemap#events:renderfailure">renderFailure</a></li>
+                            <li id="toc-events:rendersuccess"><a href="/js/api/ejpivottreemap#events:rendersuccess">renderSuccess</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="/js/api/ejpivottreemap#enum">Enumeration</a>
+                        <ul>
+                            <li id="toc-enum:operationalmode"><a href="/js/api/ejpivottreemap#enum:operationalmode">OperationalMode</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -5856,26 +6167,75 @@
 					</li>
 				</ul>
 			</li>
-            <li><a href="/js/api/ejpivotgrid">ejPivotGrid</a>
+            <li>
+                <a href="/js/api/ejpivotgrid">ejPivotGrid</a>
                 <ul>
-                    <li><a href="/js/api/ejpivotgrid#members">Members</a>
+                    <li>
+                        <a href="/js/api/ejpivotgrid#members">Members</a>
                         <ul>
                             <li id="toc-members:analysismode"><a href="/js/api/ejpivotgrid#members:analysismode">analysisMode</a></li>
                             <li id="toc-members:cssclass"><a href="/js/api/ejpivotgrid#members:cssclass">cssClass</a></li>
                             <li id="toc-members:currentreport"><a href="/js/api/ejpivotgrid#members:currentreport">currentReport</a></li>
                             <li id="toc-members:customobject"><a href="/js/api/ejpivotgrid#members:customobject">customObject</a></li>
-                            <li id="toc-members:datasource"><a href="/js/api/ejpivotgrid#members:datasource">dataSource</a>
+                            <li id="toc-members:datasource">
+                                <a href="/js/api/ejpivotgrid#members:datasource">dataSource</a>
                                 <ul>
                                     <li id="toc-members:datasource-catalog"><a href="/js/api/ejpivotgrid#members:datasource-catalog">catalog</a></li>
-                                    <li id="toc-members:datasource-columns"><a href="/js/api/ejpivotgrid#members:datasource-columns">columns</a></li>
+                                    <li id="toc-members:datasource-columns">
+                                        <a href="/js/api/ejpivotgrid#members:datasource-columns">columns</a>
+                                        <ul>
+                                            <li id="toc-members:datasource-columns-fieldname"><a href="/js/api/ejpivotgrid#members:datasource-columns-fieldname">fieldName</a></li>
+                                            <li id="toc-members:datasource-columns-fieldcaption"><a href="/js/api/ejpivotgrid#members:datasource-columns-fieldcaption">fieldCaption</a></li>
+                                            <li id="toc-members:datasource-columns-isnamedsets"><a href="/js/api/ejpivotgrid#members:datasource-columns-isnamedsets">isNamedSets</a></li>
+                                            <li id="toc-members:datasource-columns-advancedfilter">
+                                                <a href="/js/api/ejpivotgrid#members:datasource-columns-advancedfilter">advancedFilter</a>
+                                                <ul>
+                                                    <li id="toc-members:datasource-columns-advancedfilter-name"><a href="/js/api/ejpivotgrid#members:datasource-columns-advancedfilter-name">name</a></li>
+                                                    <li id="toc-members:datasource-columns-advancedfilter-labelfilteroperator"><a href="/js/api/ejpivotgrid#members:datasource-columns-advancedfilter-labelfilteroperator">labelFilterOperator</a></li>
+                                                    <li id="toc-members:datasource-columns-advancedfilter-valuefilteroperator"><a href="/js/api/ejpivotgrid#members:datasource-columns-advancedfilter-valuefilteroperator">valueFilterOperator</a></li>
+                                                    <li id="toc-members:datasource-columns-advancedfilter-advancedfiltertype"><a href="/js/api/ejpivotgrid#members:datasource-columns-advancedfilter-advancedfiltertype">advancedFilterType</a></li>
+                                                    <li id="toc-members:datasource-columns-advancedfilter-values"><a href="/js/api/ejpivotgrid#members:datasource-columns-advancedfilter-values">values</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
                                     <li id="toc-members:datasource-cube"><a href="/js/api/ejpivotgrid#members:datasource-cube">cube</a></li>
                                     <li id="toc-members:datasource-data"><a href="/js/api/ejpivotgrid#members:datasource-data">data</a></li>
-                                    <li id="toc-members:datasource-filters"><a href="/js/api/ejpivotgrid#members:datasource-filters">filters</a></li>
-                                    <li id="toc-members:datasource-rows"><a href="/js/api/ejpivotgrid#members:datasource-rows">rows</a></li>
-                                    <li id="toc-members:datasource-values"><a href="/js/api/ejpivotgrid#members:datasource-values">values</a>
+                                    <li id="toc-members:datasource-filters">
+                                        <a href="/js/api/ejpivotgrid#members:datasource-filters">filters</a>
+                                        <ul>
+                                            <li id="toc-members:datasource-filters-fieldname"><a href="/js/api/ejpivotgrid#members:datasource-filters-fieldname">fieldName</a></li>
+                                            <li id="toc-members:datasource-filters-fieldcaption"><a href="/js/api/ejpivotgrid#members:datasource-filters-fieldcaption">fieldCaption</a></li>
+                                            <li id="toc-members:datasource-filters-isnamedsets"><a href="/js/api/ejpivotgrid#members:datasource-filters-isnamedsets">isNamedSets</a></li>
+                                        </ul>
+                                    </li>
+                                    <li id="toc-members:datasource-rows">
+                                        <a href="/js/api/ejpivotgrid#members:datasource-rows">rows</a>
+                                        <ul>
+                                            <li id="toc-members:datasource-rows-fieldname"><a href="/js/api/ejpivotgrid#members:datasource-rows-fieldname">fieldName</a></li>
+                                            <li id="toc-members:datasource-rows-fieldcaption"><a href="/js/api/ejpivotgrid#members:datasource-rows-fieldcaption">fieldCaption</a></li>
+                                            <li id="toc-members:datasource-rows-isnamedsets"><a href="/js/api/ejpivotgrid#members:datasource-rows-isnamedsets">isNamedSets</a></li>
+                                            <li id="toc-members:datasource-rows-advancedfilter">
+                                                <a href="/js/api/ejpivotgrid#members:datasource-rows-advancedfilter">advancedFilter</a>
+                                                <ul>
+                                                    <li id="toc-members:datasource-rows-advancedfilter-name"><a href="/js/api/ejpivotgrid#members:datasource-rows-advancedfilter-name">name</a></li>
+                                                    <li id="toc-members:datasource-rows-advancedfilter-labelfilteroperator"><a href="/js/api/ejpivotgrid#members:datasource-rows-advancedfilter-labelfilteroperator">labelFilterOperator</a></li>
+                                                    <li id="toc-members:datasource-rows-advancedfilter-valuefilteroperator"><a href="/js/api/ejpivotgrid#members:datasource-rows-advancedfilter-valuefilteroperator">valueFilterOperator</a></li>
+                                                    <li id="toc-members:datasource-rows-advancedfilter-advancedfiltertype"><a href="/js/api/ejpivotgrid#members:datasource-rows-advancedfilter-advancedfiltertype">advancedFilterType</a></li>
+                                                    <li id="toc-members:datasource-rows-advancedfilter-values"><a href="/js/api/ejpivotgrid#members:datasource-rows-advancedfilter-values">values</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li id="toc-members:datasource-values">
+                                        <a href="/js/api/ejpivotgrid#members:datasource-values">values</a>
                                         <ul>
                                             <li id="toc-members:datasource-values[0]-axis"><a href="/js/api/ejpivotgrid#members:datasource-values[0]-axis">axis</a></li>
                                             <li id="toc-members:datasource-values[0]-measures"><a href="/js/api/ejpivotgrid#members:datasource-values[0]-measures">measures</a></li>
+                                            <li id="toc-members:datasource-values[0]-fieldname"><a href="/js/api/ejpivotgrid#members:datasource-values[0]-fieldname">fieldName</a></li>
+                                            <li id="toc-members:datasource-values[0]-fieldcaption"><a href="/js/api/ejpivotgrid#members:datasource-values[0]-fieldcaption">fieldCaption</a></li>
+                                            <li id="toc-members:datasource-values[0]-iscalculatedfield"><a href="/js/api/ejpivotgrid#members:datasource-values[0]-iscalculatedfield">isCalculetedField</a></li>
+                                            <li id="toc-members:datasource-values[0]-formula"><a href="/js/api/ejpivotgrid#members:datasource-values[0]-formula">Formula</a></li>
                                         </ul>
                                     </li>
                                 </ul>
@@ -5883,6 +6243,9 @@
                             <li id="toc-members:drilleditems"><a href="/js/api/ejpivotgrid#members:drilleditems">drilledItems</a></li>
                             <li id="toc-members:enablecellcontext"><a href="/js/api/ejpivotgrid#members:enablecellcontext">enableCellContext</a></li>
                             <li id="toc-members:enablecellselection"><a href="/js/api/ejpivotgrid#members:enablecellselection">enableCellSelection</a></li>
+                            <li id="toc-members:enabledrillthrough"><a href="/js/api/ejpivotgrid#members:enabledrillthrough">enableDrillThrough</a></li>
+                            <li id="toc-members:enablecelldoubleclick"><a href="/js/api/ejpivotgrid#members:enablecelldoubleclick">enableCellDoubleClick</a></li>
+                            <li id="toc-members:enablecellediting"><a href="/js/api/ejpivotgrid#members:enablecellediting">enableCellEditing</a></li>
                             <li id="toc-members:enablecollapsebydefault"><a href="/js/api/ejpivotgrid#members:enablecollapsebydefault">enableCollapseByDefault</a></li>
                             <li id="toc-members:enablecolumngrandtotal"><a href="/js/api/ejpivotgrid#members:enablecolumngrandtotal">enableColumnGrandTotal</a></li>
                             <li id="toc-members:enableconditionalformatting"><a href="/js/api/ejpivotgrid#members:enableconditionalformatting">enableConditionalFormatting</a></li>
@@ -5893,9 +6256,11 @@
                             <li id="toc-members:enablepivotfieldlist"><a href="/js/api/ejpivotgrid#members:enablepivotfieldlist">enablePivotFieldList</a></li>
                             <li id="toc-members:enablerowgrandtotal"><a href="/js/api/ejpivotgrid#members:enablerowgrandtotal">enableRowGrandTotal</a></li>
                             <li id="toc-members:enablertl"><a href="/js/api/ejpivotgrid#members:enablertl">enableRTL</a></li>
+                            <li id="toc-members:enabletooltipanimation"><a href="/js/api/ejpivotgrid#members:enabletooltipanimation">enableToolTipAnimation</a></li>
                             <li id="toc-members:enabletooltip"><a href="/js/api/ejpivotgrid#members:enabletooltip">enableToolTip</a></li>
                             <li id="toc-members:enablevirtualscrolling"><a href="/js/api/ejpivotgrid#members:enablevirtualscrolling">enableVirtualScrolling</a></li>
-                            <li id="toc-members:hyperlinksettings"><a href="/js/api/ejpivotgrid#members:hyperlinksettings">hyperlinkSettings</a>
+                            <li id="toc-members:hyperlinksettings">
+                                <a href="/js/api/ejpivotgrid#members:hyperlinksettings">hyperlinkSettings</a>
                                 <ul>
                                     <li id="toc-members:hyperlinksettings-enablecolumnheaderhyperlink"><a href="/js/api/ejpivotgrid#members:hyperlinksettings-enablecolumnheaderhyperlink">enableColumnHeaderHyperlink</a></li>
                                     <li id="toc-members:hyperlinksettings-enablerowheaderhyperlink"><a href="/js/api/ejpivotgrid#members:hyperlinksettings-enablerowheaderhyperlink">enableRowHeaderHyperlink</a></li>
@@ -5909,7 +6274,8 @@
                             <li id="toc-members:layout"><a href="/js/api/ejpivotgrid#members:layout">layout</a></li>
                             <li id="toc-members:locale"><a href="/js/api/ejpivotgrid#members:locale">locale</a></li>
                             <li id="toc-members:operationalmode"><a href="/js/api/ejpivotgrid#members:operationalmode">operationalMode</a></li>
-                            <li id="toc-members:servicemethodsettings"><a href="/js/api/ejpivotgrid#members:servicemethodsettings">serviceMethodSettings</a>
+                            <li id="toc-members:servicemethodsettings">
+                                <a href="/js/api/ejpivotgrid#members:servicemethodsettings">serviceMethodSettings</a>
                                 <ul>
                                     <li id="toc-members:servicemethodsettings-deferupdate"><a href="/js/api/ejpivotgrid#members:servicemethodsettings-deferupdate">deferUpdate</a></li>
                                     <li id="toc-members:servicemethodsettings-drilldown"><a href="/js/api/ejpivotgrid#members:servicemethodsettings-drilldown">drillDown</a></li>
@@ -5921,28 +6287,37 @@
                                     <li id="toc-members:servicemethodsettings-nodestatemodified"><a href="/js/api/ejpivotgrid#members:servicemethodsettings-nodestatemodified">nodeStateModified</a></li>
                                     <li id="toc-members:servicemethodsettings-paging"><a href="/js/api/ejpivotgrid#members:servicemethodsettings-paging">paging</a></li>
                                     <li id="toc-members:servicemethodsettings-sorting"><a href="/js/api/ejpivotgrid#members:servicemethodsettings-sorting">sorting</a></li>
+                                    <li id="toc-members:servicemethodsettings-memberexpand"><a href="/js/api/ejpivotgrid#members:servicemethodsettings-memberexpand">memberExpand</a></li>
+                                    <li id="toc-members:servicemethodsettings-writeback"><a href="/js/api/ejpivotgrid#members:servicemethodsettings-writeback">writeBack</a></li>
                                 </ul>
                             </li>
                             <li id="toc-members:url"><a href="/js/api/ejpivotgrid#members:url">url</a></li>
                         </ul>
                     </li>
-                    <li><a href="/js/api/ejpivotgrid#methods">Methods</a>
+                    <li>
+                        <a href="/js/api/ejpivotgrid#methods">Methods</a>
                         <ul>
                             <li id="toc-methods:doajaxpost"><a href="/js/api/ejpivotgrid#methods:doajaxpost">doAjaxPost</a></li>
                             <li id="toc-methods:dopostback"><a href="/js/api/ejpivotgrid#methods:dopostback">doPostBack</a></li>
                             <li id="toc-methods:exportpivotgrid"><a href="/js/api/ejpivotgrid#methods:exportpivotgrid">exportPivotGrid</a></li>
                             <li id="toc-methods:refreshpagedpivotgrid"><a href="/js/api/ejpivotgrid#methods:refreshpagedpivotgrid">refreshPagedPivotGrid</a></li>
+                            <li id="toc-methods:refreshpivotgrid"><a href="/js/api/ejpivotgrid#methods:refreshpivotgrid">refreshPivotgrid</a></li>
+                            <li id="toc-methods:refreshfieldcaption"><a href="/js/api/ejpivotgrid#methods:refreshfieldcaption">refreshFieldCaption</a></li>
                             <li id="toc-methods:rendercontrolfromjson"><a href="/js/api/ejpivotgrid#methods:rendercontrolfromjson">renderControlFromJSON</a></li>
                         </ul>
                     </li>
-                    <li><a href="/js/api/ejpivotgrid#events">Events</a>
+                    <li>
+                        <a href="/js/api/ejpivotgrid#events">Events</a>
                         <ul>
                             <li id="toc-events:afterserviceinvoke"><a href="/js/api/ejpivotgrid#events:afterserviceinvoke">afterServiceInvoke</a></li>
                             <li id="toc-events:beforeserviceinvoke"><a href="/js/api/ejpivotgrid#events:beforeserviceinvoke">beforeServiceInvoke</a></li>
+                            <li id="toc-events:beforepivotenginepopulate"><a href="/js/api/ejpivotgrid#events:beforepivotenginepopulate">beforePivotEnginePopulate</a></li>
+                            <li id="toc-events:celldoubleclick"><a href="/js/api/ejpivotgrid#events:celldoubleclick">cellDoubleClick</a></li>
                             <li id="toc-events:cellcontext"><a href="/js/api/ejpivotgrid#events:cellcontext">cellContext</a></li>
                             <li id="toc-events:cellselection"><a href="/js/api/ejpivotgrid#events:cellselection">cellSelection</a></li>
                             <li id="toc-events:columnheaderhyperlinkclick"><a href="/js/api/ejpivotgrid#events:columnheaderhyperlinkclick">columnHeaderHyperlinkClick</a></li>
                             <li id="toc-events:drillsuccess"><a href="/js/api/ejpivotgrid#events:drillsuccess">drillSuccess</a></li>
+                            <li id="toc-events:drillthrough"><a href="/js/api/ejpivotgrid#events:drillthrough">drillThrough</a></li>
                             <li id="toc-events:load"><a href="/js/api/ejpivotgrid#events:load">load</a></li>
                             <li id="toc-events:rendercomplete"><a href="/js/api/ejpivotgrid#events:rendercomplete">renderComplete</a></li>
                             <li id="toc-events:renderfailure"><a href="/js/api/ejpivotgrid#events:renderfailure">renderFailure</a></li>
@@ -5952,7 +6327,8 @@
                             <li id="toc-events:valuecellhyperlinkclick"><a href="/js/api/ejpivotgrid#events:valuecellhyperlinkclick">valueCellHyperlinkClick</a></li>
                         </ul>
                     </li>
-                    <li><a href="/js/api/ejpivotgrid#enum">Enumeration</a>
+                    <li>
+                        <a href="/js/api/ejpivotgrid#enum">Enumeration</a>
                         <ul>
                             <li id="toc-enum:analysismode"><a href="/js/api/ejpivotgrid#enum:analysismode">AnalysisMode</a></li>
                             <li id="toc-enum:exportoptions"><a href="/js/api/ejpivotgrid#enum:exportoptions">ExportOptions</a></li>
@@ -6024,13 +6400,19 @@
                     </li>
                 </ul>
             </li>
-            <li><a href="/js/api/ejpivotschemadesigner">ejPivotSchemaDesigner</a>
+            <li>
+                <a href="/js/api/ejpivotschemadesigner">ejPivotSchemaDesigner</a>
                 <ul>
-                    <li><a href="/js/api/ejpivotschemadesigner#members">Members</a>
+                    <li>
+                        <a href="/js/api/ejpivotschemadesigner#members">Members</a>
                         <ul>
                             <li id="toc-members:customobject"><a href="/js/api/ejpivotschemadesigner#members:customobject">customObject</a></li>
                             <li id="toc-members:cssclass"><a href="/js/api/ejpivotschemadesigner#members:cssclass">cssClass</a></li>
                             <li id="toc-members:enablewrapper"><a href="/js/api/ejpivotschemadesigner#members:enablewrapper">enableWrapper</a></li>
+                            <li id="toc-members:enablertl"><a href="/js/api/ejpivotschemadesigner#members:enablertl">enableRTL</a></li>
+                            <li id="toc-members:showkpi"><a href="/js/api/ejpivotschemadesigner#members:showkpi">showKPI</a></li>
+                            <li id="toc-members:shownamedsets"><a href="/js/api/ejpivotschemadesigner#members:shownamedsets">showNamedSets</a></li>
+                            <li id="toc-members:enabledragdrop"><a href="/js/api/ejpivotschemadesigner#members:enabledragdrop">enableDragDrop</a></li>
                             <li id="toc-members:filters"><a href="/js/api/ejpivotschemadesigner#members:filters">filters</a></li>
                             <li id="toc-members:height"><a href="/js/api/ejpivotschemadesigner#members:height">height</a></li>
                             <li id="toc-members:locale"><a href="/js/api/ejpivotschemadesigner#members:locale">locale</a></li>
@@ -6039,7 +6421,8 @@
                             <li id="toc-members:pivotcontrol"><a href="/js/api/ejpivotschemadesigner#members:pivotcontrol">pivotControl</a></li>
                             <li id="toc-members:pivotrows"><a href="/js/api/ejpivotschemadesigner#members:pivotrows">pivotRows</a></li>
                             <li id="toc-members:pivottablefields"><a href="/js/api/ejpivotschemadesigner#members:pivottablefields">pivotTableFields</a></li>
-                            <li id="toc-members:servicemethod"><a href="/js/api/ejpivotschemadesigner#members:servicemethod">serviceMethod</a>
+                            <li id="toc-members:servicemethod">
+                                <a href="/js/api/ejpivotschemadesigner#members:servicemethod">serviceMethod</a>
                                 <ul>
                                     <li id="toc-members:servicemethod-fetchmembers"><a href="/js/api/ejpivotschemadesigner#members:servicemethod-fetchmembers">fetchMembers</a></li>
                                     <li id="toc-members:servicemethod-filtering"><a href="/js/api/ejpivotschemadesigner#members:servicemethod-filtering">filtering</a></li>
@@ -6053,9 +6436,18 @@
                             <li id="toc-members:width"><a href="/js/api/ejpivotschemadesigner#members:width">width</a></li>
                         </ul>
                     </li>
-                    <li><a href="/js/api/ejpivotschemadesigner#methods">Methods</a>
+                    <li>
+                        <a href="/js/api/ejpivotschemadesigner#methods">Methods</a>
                         <ul>
                             <li id="toc-methods:doajaxpost"><a href="/js/api/ejpivotschemadesigner#methods:doajaxpost">doAjaxPost</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="/js/api/ejpivotschemadesigner#events">Events</a>
+                        <ul>
+                            <li id="toc-events:afterserviceinvoke"><a href="/js/api/ejpivotschemadesigner#events:afterserviceinvoke">afterServiceInvoke</a></li>
+                            <li id="toc-events:afterserviceinvoke"><a href="/js/api/ejpivotschemadesigner#events:beforeserviceinvoke">beforeServiceInvoke</a></li>
+                            <li id="toc-events:dragmove"><a href="/js/api/ejpivotschemadesigner#events:dragmove">dragMove</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -6205,8 +6597,13 @@
                             <li id="toc-members:inline"><a href="/js/api/ejradialslider#members:inline">inline</a></li>
                             <li id="toc-members:innercircleimageclass"><a href="/js/api/ejradialslider#members:innercircleimageclass">innerCircleImageClass</a></li>
                             <li id="toc-members:innercircleimageurl"><a href="/js/api/ejradialslider#members:innercircleimageurl">innerCircleImageUrl</a></li>
-                            <li id="toc-members:radius"><a href="/js/api/ejradialslider#members:radius">radius</a></li>
-                            <li id="toc-members:strokewidth"><a href="/js/api/ejradialslider#members:strokewidth">strokeWidth</a></li>
+                            <li id="toc-members:lablespace"><a href="/js/api/ejradialslider#members:lablespace">lableSpace</a></li>
+							<li id="toc-members:radius"><a href="/js/api/ejradialslider#members:radius">radius</a></li>
+                            <li id="toc-members:showinnercircle"><a href="/js/api/ejradialslider#members:showinnercircle">showInnerCircle</a></li>
+							<li id="toc-members:startangle"><a href="/js/api/ejradialslider#members:startangle">startAngle</a></li>
+							<li id="toc-members:strokewidth"><a href="/js/api/ejradialslider#members:strokewidth">strokeWidth</a></li>
+							<li id="toc-members:ticks"><a href="/js/api/ejradialslider#members:ticks">ticks</a></li>
+							<li id="toc-members:value"><a href="/js/api/ejradialslider#members:value">value</a></li>
                         </ul>
                     </li>
                     <li><a href="/js/api/ejradialslider#methods">Methods</a>
@@ -7102,11 +7499,14 @@
                     <li><a href="/js/api/ejrte#events">Events</a>
                         <ul>
                             <li id="toc-events:change"><a href="/js/api/ejrte#events:change">change</a></li>
+							<li id="toc-events:create"><a href="/js/api/ejrte#events:create">create</a></li>
+							<li id="toc-events:contextMenuClick"><a href="/js/api/ejrte#events:contextMenuClick">contextMenuClick</a></li>
                             <li id="toc-events:destroy"><a href="/js/api/ejrte#events:destroy">destroy</a></li>
                             <li id="toc-events:execute"><a href="/js/api/ejrte#events:execute">execute</a></li>
                             <li id="toc-events:keydown"><a href="/js/api/ejrte#events:keydown">keydown</a></li>
                             <li id="toc-events:keyup"><a href="/js/api/ejrte#events:keyup">keyup</a></li>
                             <li id="toc-events:prerender"><a href="/js/api/ejrte#events:prerender">preRender</a></li>
+							<li id="toc-events:select"><a href="/js/api/ejrte#events:select">select</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -7308,7 +7708,7 @@
                             <li id="toc-methods:getslotbyelement"><a href="/js/api/ejschedule#methods:getslotbyelement">getSlotByElement</a></li>
                             <li id="toc-methods:print"><a href="/js/api/ejschedule#methods:print">print</a></li>
                             <li id="toc-methods:refresh"><a href="/js/api/ejschedule#methods:refresh">refresh</a></li>
-                            <li id="toc-methods:refreshAppointment"><a href="/js/api/ejschedule#methods:refreshAppointment">refreshAppointment</a></li>
+                            <li id="toc-methods:refreshAppointments"><a href="/js/api/ejschedule#methods:refreshAppointments">refreshAppointments</a></li>
                             <li id="toc-methods:refreshscroller"><a href="/js/api/ejschedule#methods:refreshscroller">refreshScroller</a></li>
                             <li id="toc-methods:saveappointment"><a href="/js/api/ejschedule#methods:saveappointment">saveAppointment</a></li>
                             <li id="toc-methods:searchappointments"><a href="/js/api/ejschedule#methods:searchappointments">searchAppointments</a></li>
@@ -7393,6 +7793,7 @@
                 <ul>
                     <li><a href="/js/api/ejslider#members">Members</a>
                         <ul>
+                            <li id="toc-members:allowmousewheel"><a href="/js/api/ejslider#members:allowmousewheel">allowMouseWheel</a></li>
                             <li id="toc-members:animationspeed"><a href="/js/api/ejslider#members:animationspeed">animationSpeed</a></li>
                             <li id="toc-members:cssclass"><a href="/js/api/ejslider#members:cssclass">cssClass</a></li>
                             <li id="toc-members:enableanimation"><a href="/js/api/ejslider#members:enableanimation">enableAnimation</a></li>
@@ -7433,6 +7834,7 @@
                             <li id="toc-events:slide"><a href="/js/api/ejslider#events:slide">slide</a></li>
                             <li id="toc-events:start"><a href="/js/api/ejslider#events:start">start</a></li>
                             <li id="toc-events:stop"><a href="/js/api/ejslider#events:stop">stop</a></li>
+                            <li id="toc-events:tooltipchange"><a href="/js/api/ejslider#events:tooltipchange">tooltipChange</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -7573,6 +7975,8 @@
                             <li id="toc-methods:destroy"><a href="/js/api/ejsplitbutton#methods:destroy">destroy</a></li>
                             <li id="toc-methods:disable"><a href="/js/api/ejsplitbutton#methods:disable">disable</a></li>
                             <li id="toc-methods:enable"><a href="/js/api/ejsplitbutton#methods:enable">enable</a></li>
+                            <li id="toc-methods:hide"><a href="/js/api/ejsplitbutton#methods:hide">hide</a></li>
+                            <li id="toc-methods:show"><a href="/js/api/ejsplitbutton#methods:show">show</a></li>
                         </ul>
                     </li>
                     <li><a href="/js/api/ejsplitbutton#events">Events</a>
@@ -8116,9 +8520,6 @@
                             <li id="toc-methods:mergecells">
                                 <a href="/js/api/ejspreadsheet#methods:mergecells">mergeCells</a>
                             </li>
-                            <li id="toc-methods:movesheet">
-                                <a href="/js/api/ejspreadsheet#methods:movesheet">moveSheet</a>
-                            </li>
                             <li id="toc-methods:protectsheet">
                                 <a href="/js/api/ejspreadsheet#methods:protectsheet">protectSheet</a>
                             </li>
@@ -8172,6 +8573,12 @@
                             </li>
                             <li id="toc-methods:showformulabar">
                                 <a href="/js/api/ejspreadsheet#methods:showformulabar">showFormulaBar</a>
+                            </li>
+							<li id="toc-methods:showgridlines">
+                                <a href="/js/api/ejspreadsheet#methods:showgridlines">showGridlines</a>
+                            </li>
+							<li id="toc-methods:showheadings">
+                                <a href="/js/api/ejspreadsheet#methods:showheadings">showHeadings</a>
                             </li>
                             <li id="toc-methods:showrow">
                                 <a href="/js/api/ejspreadsheet#methods:showrow">showRow</a>
@@ -8897,6 +9304,7 @@
                     <li><a href="/js/api/ejtimepicker#members">Members</a>
                         <ul>
                             <li id="toc-members:cssclass"><a href="/js/api/ejtimepicker#members:cssclass">cssClass</a></li>
+                            <li id="toc-members:disabletimeranges"><a href="/js/api/ejtimepicker#members:disabletimeranges">disableTimeRanges</a></li> 
                             <li id="toc-members:enableanimation"><a href="/js/api/ejtimepicker#members:enableanimation">enableAnimation</a></li>
                             <li id="toc-members:enabled"><a href="/js/api/ejtimepicker#members:enabled">enabled</a></li>
                             <li id="toc-members:enablepersistence"><a href="/js/api/ejtimepicker#members:enablepersistence">enablePersistence</a></li>
@@ -8926,7 +9334,9 @@
                             <li id="toc-methods:disable"><a href="/js/api/ejtimepicker#methods:disable">disable</a></li>
                             <li id="toc-methods:enable"><a href="/js/api/ejtimepicker#methods:enable">enable</a></li>
                             <li id="toc-methods:getvalue"><a href="/js/api/ejtimepicker#methods:getvalue">getValue</a></li>
+                            <li id="toc-methods:hide"><a href="/js/api/ejtimepicker#methods:hide">hide</a></li>
                             <li id="toc-methods:setcurrenttime"><a href="/js/api/ejtimepicker#methods:setcurrenttime">setCurrentTime</a></li>
+                            <li id="toc-methods:show"><a href="/js/api/ejtimepicker#methods:show">show</a></li>
                         </ul>
                     </li>
                     <li><a href="/js/api/ejtimepicker#events">Events</a>
@@ -9067,7 +9477,6 @@
                             <li id="toc-members:cssClass"><a href="/js/api/ejtooltip#members:cssclass">cssClass</a></li>
                             <li id="toc-members:enabled"><a href="/js/api/ejtooltip#members:enabled">enabled</a></li>
                             <li id="toc-members:enableRTL"><a href="/js/api/ejtooltip#members:enablertl">enableRTL</a></li>
-                            <li id="toc-members:enableInteraction"><a href="/js/api/ejtooltip#members:enableinteraction">enableInteraction</a></li>
                             <li id="toc-members:height"><a href="/js/api/ejtooltip#members:height">height</a></li>
 							<li id="toc-members:isBalloon"><a href="/js/api/ejtooltip#members:isballoon">isBalloon</a></li>
                             <li id="toc-members:position"><a href="/js/api/ejtooltip#members:position">position</a>
@@ -9087,6 +9496,7 @@
                                 </ul>
 							</li>
                             <li id="toc-members:showRoundedCorner"><a href="/js/api/ejtooltip#members:showroundedcorner">showRoundedCorner</a></li>
+							<li id="toc-members:showShadow"><a href="/js/api/ejtooltip#members:showshadow">showShadow</a></li>
                             <li id="toc-members:target"><a href="/js/api/ejtooltip#members:target">target</a></li>
 							<li id="toc-members:template"><a href="/js/api/ejtooltip#members:template">template</a></li>
 							<li id="toc-members:title"><a href="/js/api/ejtooltip#members:title">title</a></li>
@@ -9100,7 +9510,6 @@
                             <li id="toc-methods:disable"><a href="/js/api/ejtooltip#methods:disable">disable</a></li>
                             <li id="toc-methods:enable"><a href="/js/api/ejtooltip#methods:enable">enable</a></li>
                             <li id="toc-methods:hide"><a href="/js/api/ejtooltip#methods:hide">hide</a></li>
-                            <li id="toc-methods:refresh"><a href="/js/api/ejtooltip#methods:refresh">refresh</a></li>
                             <li id="toc-methods:show"><a href="/js/api/ejtooltip#methods:show">show</a></li>
                         </ul>
                     </li>
@@ -9130,10 +9539,13 @@
                             <li id="toc-members:allowmultisorting"><a href="/js/api/ejtreegrid#members:allowmultisorting">allowMultiSorting</a></li>
                             <li id="toc-members:allowselection"><a href="/js/api/ejtreegrid#members:allowselection">allowSelection</a></li>
                             <li id="toc-members:allowsorting"><a href="/js/api/ejtreegrid#members:allowsorting">allowSorting</a></li>
+                            <li id="toc-members:allowpaging"><a href="/js/api/ejtreegrid#members:allowpaging">allowPaging</a></li>                            
                             <li id="toc-members:altrowtemplateid"><a href="/js/api/ejtreegrid#members:altrowtemplateid">altRowTemplateID</a></li>
                             <li id="toc-members:headertextoverflow"><a href="/js/api/ejtreegrid#members:headertextoverflow">headerTextOverflow</a></li>
+                            <li id="toc-members:celltooltiptemplate"><a href="/js/api/ejtreegrid#members:celltooltiptemplate">cellTooltipTemplate</a></li>                            
                             <li id="toc-members:columns"><a href="/js/api/ejtreegrid#members:columns">columns</a>
                                 <ul>
+                                    <li id="toc-members:columns-allowcellselection"><a href="/js/api/ejtreegrid#members:columns-allowcellselection">allowCellSelection</a></li>                                    
                                     <li id="toc-members:columns-allowfiltering"><a href="/js/api/ejtreegrid#members:columns-allowfiltering">allowFiltering</a></li>
                                     <li id="toc-members:columns-allowsorting"><a href="/js/api/ejtreegrid#members:columns-allowsorting">allowSorting</a></li>
                                     <li id="toc-members:columns-edittype"><a href="/js/api/ejtreegrid#members:columns-edittype">editType</a></li>
@@ -9146,6 +9558,7 @@
                                     <li id="toc-members:columns-allowfreezing"><a href="/js/api/ejtreegrid#members:columns-allowfreezing">allowFreezing</a></li>
                                 </ul>
                             </li>
+                            <li id="toc-members:columndialogfields"><a href="/js/api/ejtreegrid#members:columndialogfields">columnDialogFields</a></li>                            
                             <li id="toc-members:contextmenusettings"><a href="/js/api/ejtreegrid#members:contextmenusettings">contextMenuSettings</a>
                                 <ul>
                                     <li id="toc-members:contextmenusettings-contextmenuitems"><a href="/js/api/ejtreegrid#members:contextmenusettings-contextmenuitems">contextMenuItems</a></li>
@@ -9166,6 +9579,7 @@
                                     <li id="toc-members:editsettings-allowadding"><a href="/js/api/ejtreegrid#members:editsettings-allowadding">allowAdding</a></li>
                                     <li id="toc-members:editsettings-allowdeleting"><a href="/js/api/ejtreegrid#members:editsettings-allowdeleting">allowDeleting</a></li>
                                     <li id="toc-members:editsettings-allowediting"><a href="/js/api/ejtreegrid#members:editsettings-allowediting">allowEditing</a></li>
+                                    <li id="toc-members:editsettings-begineditaction"><a href="/js/api/ejtreegrid#members:editsettings-begineditaction">beginEditAction</a></li>                                    
                                     <li id="toc-members:editsettings-editmode"><a href="/js/api/ejtreegrid#members:editsettings-editmode">editMode</a></li>
                                     <li id="toc-members:editsettings-rowposition"><a href="/js/api/ejtreegrid#members:editsettings-rowposition">rowPosition</a></li>
                                 </ul>
@@ -9176,14 +9590,25 @@
                             <li id="toc-members:enablevirtualization"><a href="/js/api/ejtreegrid#members:enablevirtualization">enableVirtualization</a></li>
                             <li id="toc-members:filterbarmode"><a href="/js/api/ejtreegrid#members:filterbarmode">filterBarMode</a></li>
                             <li id="toc-members:idmapping"><a href="/js/api/ejtreegrid#members:idmapping">idMapping</a></li>
-                            <li id="toc-members:parentidmapping"><a href="/js/api/ejtreegrid#members:parentidmapping">parentIdMapping</a></li>
+                            <li id="toc-members:pagesettings"><a href="/js/api/ejtreegrid#members:pagesettings">pageSettings</a>
+                                <ul>
+                                    <li id="toc-members:pagesettings-pagecount"><a href="/js/api/ejtreegrid#members:pagesettings-pagecount">pageCount</a></li>
+                                    <li id="toc-members:pagesettings-pagesize"><a href="/js/api/ejtreegrid#members:pagesettings-pagesize">pageSize</a></li>
+                                    <li id="toc-members:pagesettings-totalrecordscount"><a href="/js/api/ejtreegrid#members:pagesettings-totalrecordscount">totalRecordsCount</a></li>
+                                    <li id="toc-members:pagesettings-currentpage"><a href="/js/api/ejtreegrid#members:pagesettings-currentpage">currentPage</a></li>
+                                    <li id="toc-members:pagesettings-pagesizemode"><a href="/js/api/ejtreegrid#members:pagesettings-pagesizemode">pageSizeMode</a></li>
+                                    <li id="toc-members:pagesettings-template"><a href="/js/api/ejtreegrid#members:pagesettings-template">template</a></li>                                
+                               </ul>
+                            </li>
+                            <li id="toc-members:parentidmapping"><a href="/js/api/ejtreegrid#members:parentidmapping">parentIdMapping</a></li>                            
                             <li id="toc-members:query"><a href="/js/api/ejtreegrid#members:query">query</a></li>
                             <li id="toc-members:rowheight"><a href="/js/api/ejtreegrid#members:rowheight">rowHeight</a></li>
                             <li id="toc-members:rowtemplateid"><a href="/js/api/ejtreegrid#members:rowtemplateid">rowTemplateID</a></li>
-                            <li id="toc-members:selecteditem"><a href="/js/api/ejtreegrid#members:selecteditem">selectedItem</a></li>
                             <li id="toc-members:selectedrowindex"><a href="/js/api/ejtreegrid#members:selectedrowindex">selectedRowIndex</a></li>
+                            <li id="toc-members:selectionmode"><a href="/js/api/ejtreegrid#members:selectionmode">selectionMode</a></li>                            
                             <li id="toc-members:selectiontype"><a href="/js/api/ejtreegrid#members:selectiontype">selectionType</a></li>
                             <li id="toc-members:showcolumnchooser"><a href="/js/api/ejtreegrid#members:showcolumnchooser">showColumnChooser</a></li>
+                            <li id="toc-members:showcolumnoptions"><a href="/js/api/ejtreegrid#members:showcolumnoptions">showColumnOptions</a></li>                            
                             <li id="toc-members:showgridcelltooltip"><a href="/js/api/ejtreegrid#members:showgridcelltooltip">showGridCellTooltip</a></li>
                             <li id="toc-members:showgridexpandcelltooltip"><a href="/js/api/ejtreegrid#members:showgridexpandcelltooltip">showGridExpandCellTooltip</a></li>
                             <li id="toc-members:sizesettings"><a href="/js/api/ejtreegrid#members:sizesettings">sizeSettings</a>
@@ -9210,10 +9635,12 @@
                         <ul>
                             <li id="toc-methods:clearselection"><a href="/js/api/ejtreegrid#methods:clearselection">clearSelection</a></li>
                             <li id="toc-methods:collapseall"><a href="/js/api/ejtreegrid#methods:collapseall">collapseAll</a></li>
+                            <li id="toc-methods:gotopage"><a href="/js/api/ejtreegrid#methods:gotopage">gotoPage</a></li>                            
                             <li id="toc-methods:hidecolumn"><a href="/js/api/ejtreegrid#methods:hidecolumn">hideColumn</a></li>
                             <li id="toc-methods:refresh"><a href="/js/api/ejtreegrid#methods:refresh">refresh</a></li>
                             <li id="toc-methods:savecell"><a href="/js/api/ejtreegrid#methods:savecell">saveCell</a></li>
                             <li id="toc-methods:search"><a href="/js/api/ejtreegrid#methods:search">search</a></li>
+                            <li id="toc-methods:selectcells"><a href="/js/api/ejtreegrid#methods:selectcells">selectCells</a></li>                            
                             <li id="toc-methods:showcolumn"><a href="/js/api/ejtreegrid#methods:showcolumn">showColumn</a></li>
                             <li id="toc-methods:sortcolumn"><a href="/js/api/ejtreegrid#methods:sortcolumn">sortColumn</a></li>
                             <li id="toc-methods:freezeprecedingcolumns"><a href="/js/api/ejtreegrid#methods:freezeprecedingcolumns">freezePrecedingColumns</a></li>
@@ -9227,6 +9654,8 @@
                             <li id="toc-events:beginedit"><a href="/js/api/ejtreegrid#events:beginedit">beginEdit</a></li>
                             <li id="toc-events:collapsed"><a href="/js/api/ejtreegrid#events:collapsed">collapsed</a></li>
                             <li id="toc-events:collapsing"><a href="/js/api/ejtreegrid#events:collapsing">collapsing</a></li>
+                            <li id="toc-events:cellselecting"><a href="/js/api/ejtreegrid#events:cellselecting">cellSelecting</a></li>
+                            <li id="toc-events:cellselected"><a href="/js/api/ejtreegrid#events:cellselected">cellSelected</a></li>
                             <li id="toc-events:contextmenuopen"><a href="/js/api/ejtreegrid#events:contextmenuopen">contextMenuOpen</a></li>
                             <li id="toc-events:endedit"><a href="/js/api/ejtreegrid#events:endedit">endEdit</a></li>
                             <li id="toc-events:expanded"><a href="/js/api/ejtreegrid#events:expanded">expanded</a></li>
@@ -9239,7 +9668,7 @@
                             <li id="toc-events:rowdragstop"><a href="/js/api/ejtreegrid#events:rowdragstop">rowDragStop</a></li>
                             <li id="toc-events:rowselected"><a href="/js/api/ejtreegrid#events:rowselected">rowSelected</a></li>
                             <li id="toc-events:rowselecting"><a href="/js/api/ejtreegrid#events:rowselecting">rowSelecting</a></li>
-                            <li id="toc-events:toolbarClick"><a href="/js/api/ejtreegrid#events:toolbarClick">toolbarClick</a></li>
+                            <li id="toc-events:toolbarClick"><a href="/js/api/ejtreegrid#events:toolbarclick">toolbarClick</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -9496,6 +9925,7 @@
                             <li id="toc-events:nodepaste"><a href="/js/api/ejtreeview#events:nodepaste">nodePaste</a></li>
                             <li id="toc-events:nodeselect"><a href="/js/api/ejtreeview#events:nodeselect">nodeSelect</a></li>
                             <li id="toc-events:nodeuncheck"><a href="/js/api/ejtreeview#events:nodeuncheck">nodeUncheck</a></li>
+                            <li id="toc-events:ready"><a href="/js/api/ejtreeview#events:ready">ready</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -9633,6 +10063,7 @@
             <li><a href="/js/autocomplete/overview">Overview</a></li>
             <li><a href="/js/autocomplete/getting-started">Getting Started</a></li>
             <li><a href="/js/autocomplete/data-binding">Data Binding</a></li>
+			<li><a href="/js/autocomplete/multicolumn">MultiColumn</a></li>
             <li><a href="/js/autocomplete/multiselection">MultiSelection</a></li>
             <li><a href="/js/autocomplete/grouping">Grouping</a></li>
             <li><a href="/js/autocomplete/template">Templates</a></li>
@@ -9847,6 +10278,12 @@
                 <ul>
                     <li><a href="/js/diagram/shapes">Shapes</a></li>
                 </ul>
+                <ul>
+                    <li><a href="/js/diagram/bpmn-shapes">BPMN Shapes</a></li>
+                </ul>
+                <ul>
+                    <li><a href="/js/diagram/uml-class-shapes">Class Diagram Shapes</a></li>
+                </ul>
             </li>
             <li><a href="/js/diagram/connector">Connector</a></li>
             <li><a href="/js/diagram/port">Port</a></li>
@@ -9912,6 +10349,7 @@
             <li><a href="/js/dropdownlist/Customization">Customization</a></li>
             <li><a href="/js/dropdownlist/SettingDimension">Setting Dimension</a></li>
             <li><a href="/js/dropdownlist/StatePersistance">State Persistance</a></li>
+			<li><a href="/js/dropdownlist/Localization">Localization</a></li>
             <li><a href="/js/dropdownlist/Accessibility">Accessibility</a></li>
             <li><a href="/js/dropdownlist/HowTo">HowTo</a></li>
         </ul>
@@ -9944,6 +10382,7 @@
             <li><a href="/js/gantt/columns">Columns</a></li>
             <li><a href="/js/gantt/editing">Editing</a></li>
             <li><a href="/js/gantt/sorting">Sorting</a></li>
+			<li><a href="/js/gantt/searching">Searching</a></li>
             <li><a href="/js/gantt/schedule-modes">Schedule Modes</a></li>
             <li><a href="/js/gantt/toolbar">Toolbar</a></li>
             <li><a href="/js/gantt/baseline">Baseline</a></li>
@@ -10135,23 +10574,33 @@
         </ul>
     </li>
     <li>
-        OlapChart
+        PivotChart
         <ul>
-            <li><a href="/js/olapchart/overview">Overview</a></li>
-            <li><a href="/js/olapchart/getting-started">Getting Started</a></li>
-            <li><a href="/js/olapchart/data-binding">Data Binding</a></li>
-            <li><a href="/js/olapchart/Dimensions">Dimensions</a></li>
-            <li><a href="/js/olapchart/Chart-Types">Types</a></li>
-            <li><a href="/js/olapchart/Drill-Operation">Drill Operation</a></li>
-            <li><a href="/js/olapchart/Legend">Legend</a></li>
-            <li><a href="/js/olapchart/Axes">Axes</a></li>
-            <li><a href="/js/olapchart/Title">Title</a></li>
-            <li><a href="/js/olapchart/Series">Series</a></li>
-            <li><a href="/js/olapchart/3D-Visualization">3D Visualization</a></li>
-            <li><a href="/js/olapchart/User-Interactions">User Interactions</a></li>
-            <li><a href="/js/olapchart/Export">Exporting</a></li>
-            <li><a href="/js/olapchart/Appearance">Appearance</a></li>
-            <li><a href="/js/olapchart/Localization">Localization</a></li>
+            <li><a href="/js/pivotchart/overview">Overview</a></li>
+			<li>Getting Started
+				<ul>
+					<li><a href="/js/pivotchart/relational-getting-started">Relational</a></li>
+					<li><a href="/js/pivotchart/olap-getting-started">OLAP</a></li>
+				</ul>
+			</li>
+			<li>Data Binding
+				<ul>
+						<li><a href="/js/pivotchart/relational-connectivity">Relational</a></li>
+						<li><a href="/js/pivotchart/olap-connectivity">OLAP</a></li>
+				</ul>
+			</li>
+            <li><a href="/js/pivotchart/Dimensions">Dimensions</a></li>
+            <li><a href="/js/pivotchart/Chart-Types">Types</a></li>
+            <li><a href="/js/pivotchart/Drill-Operation">Drill Operation</a></li>
+            <li><a href="/js/pivotchart/Legend">Legend</a></li>
+            <li><a href="/js/pivotchart/Axes">Axes</a></li>
+            <li><a href="/js/pivotchart/Title">Title</a></li>
+            <li><a href="/js/pivotchart/Series">Series</a></li>
+            <li><a href="/js/pivotchart/3D-Visualization">3D Visualization</a></li>
+            <li><a href="/js/pivotchart/User-Interactions">User Interactions</a></li>
+            <li><a href="/js/pivotchart/Export">Exporting</a></li>
+            <li><a href="/js/pivotchart/Appearance">Appearance</a></li>
+            <li><a href="/js/pivotchart/Localization">Localization</a></li>
         </ul>
     </li>
     <li>
@@ -10172,25 +10621,61 @@
         </ul>
     </li>
     <li>
-        OlapGauge
+        PivotGauge
         <ul>
-            <li><a href="/js/olapgauge/overview">Overview</a></li>
-            <li><a href="/js/olapgauge/getting-started">Getting Started</a></li>
-            <li><a href="/js/olapgauge/data-binding">Data Binding</a></li>
-            <li><a href="/js/olapgauge/frame-type">Frame Type</a></li>
-            <li><a href="/js/olapgauge/scale">Scale</a></li>
-            <li><a href="/js/olapgauge/pointers">Pointers</a></li>
-            <li><a href="/js/olapgauge/ticks">Ticks</a></li>
-            <li><a href="/js/olapgauge/ranges">Ranges</a></li>
-            <li><a href="/js/olapgauge/layout">Layout</a></li>
-            <li><a href="/js/olapgauge/labels">Labels</a></li>
-            <li><a href="/js/olapgauge/custom-labels">Custom labels</a></li>
-            <li><a href="/js/olapgauge/tooltip">Tooltip</a></li>
-            <li><a href="/js/olapgauge/animation">Animation</a></li>
-            <li><a href="/js/olapgauge/localization">Localization</a></li>
-            <li><a href="/js/olapgauge/responsive-layout">Responsive Layout</a></li>
+            <li><a href="/js/pivotgauge/overview">Overview</a></li>
+            <li>Getting Started
+				<ul>
+					<li><a href="/js/pivotgauge/relational-getting-started">Relational</a></li>
+					<li><a href="/js/pivotgauge/olap-getting-started">OLAP</a></li>
+				</ul>
+			</li>
+			<li>Data Binding
+				<ul>
+						<li><a href="/js/pivotgauge/relational-connectivity">Relational</a></li>
+						<li><a href="/js/pivotgauge/olap-connectivity">OLAP</a></li>
+				</ul>
+			</li>
+            <li><a href="/js/pivotgauge/frame-type">Frame Type</a></li>
+            <li><a href="/js/pivotgauge/scale">Scale</a></li>
+            <li><a href="/js/pivotgauge/pointers">Pointers</a></li>
+            <li><a href="/js/pivotgauge/ticks">Ticks</a></li>
+            <li><a href="/js/pivotgauge/ranges">Ranges</a></li>
+            <li><a href="/js/pivotgauge/layout">Layout</a></li>
+            <li><a href="/js/pivotgauge/labels">Labels</a></li>
+            <li><a href="/js/pivotgauge/custom-labels">Custom labels</a></li>
+            <li><a href="/js/pivotgauge/tooltip">Tooltip</a></li>
+            <li><a href="/js/pivotgauge/animation">Animation</a></li>
+            <li><a href="/js/pivotgauge/localization">Localization</a></li>
+            <li><a href="/js/pivotgauge/responsive-layout">Responsive Layout</a></li>
         </ul>
-    </li>
+    </li>	
+	<li>
+		PivotTreeMap
+		<ul>
+			<li>
+				<a href="/js/pivottreemap/overview">Overview</a>
+			</li>
+			<li>
+				<a href="/js/pivottreemap/getting-started">Getting Started</a>
+			</li>
+			<li>
+				<a href="/js/pivottreemap/olap-connectivity">Data Binding</a>
+			 </li>
+			<li>
+				<a href="/js/pivottreemap/drill-operation">Drill Operation</a>
+			</li>
+			<li>
+				<a href="/js/pivottreemap/namedset">Named Sets</a>
+			</li>
+			<li>
+				<a href="/js/pivottreemap/color-mapping">Color Mapping</a>
+			</li>
+			<li>
+				<a href="/js/pivottreemap/legend">Legend</a>
+			</li>
+		</ul>	
+	</li>
     <li>
         PdfViewer
         <ul>
@@ -10240,6 +10725,7 @@
                 <li><a href="/js/pivotgrid/state-persistence">State-Persistence</a></li>
                 <li><a href="/js/pivotgrid/relational-defer-update">Defer Update</a></li>
                 <li><a href="/js/pivotgrid/relational-export">Exporting</a></li>
+                <li><a href="/js/pivotgrid/calculated-field">Calculated Field</a></li>
             </ul>
         </li>
         <li>OLAP
@@ -10253,6 +10739,7 @@
                 <li><a href="/js/pivotgrid/write-back">write-back</a></li>
                 <li><a href="/js/pivotgrid/olap-defer-update">Defer Update</a></li>
                 <li><a href="/js/pivotgrid/olap-export">Exporting</a></li>
+				<li><a href="/js/pivotgrid/drillthrough">DrillThrough</a></li>
             </ul>
         </li>
         <li>Common
@@ -10389,6 +10876,8 @@
             <li><a href="/js/richtexteditor/Working-with-Hyperlinks">Working with Hyperlinks</a> </li>
             <li><a href="/js/richtexteditor/Image-and-File-browser">Image and File browser</a> </li>
             <li><a href="/js/richtexteditor/XHTML-Validation">XHTML Validation</a></li>
+			<li><a href="/js/richtexteditor/Zoom-and-Print">Document Interation</a></li>
+			<li><a href="/js/richtexteditor/Working-with-Lists">Working with list items</a></li>
             <li><a href="/js/richtexteditor/Localization">Localization</a></li>
             <li><a href="/js/richtexteditor/Keyboard-Support">Keyboard Support</a></li>
         </ul>
@@ -10479,7 +10968,7 @@
         <ul>
             <li><a href="/js/splitter/overview">Overview</a></li>
             <li><a href="/js/splitter/getting-started">Getting Started</a></li>
-            <li><a href="/js/splitter/configure-collapsible-and-expandable-properties">Configure Collapsible and Expandable properties</a></li>
+            <li><a href="/js/splitter/enabling-collapsible">Configure Collapsible and Expandable properties</a></li>
             <li><a href="/js/splitter/splitter-orientation">Splitter Orientation</a></li>
             <li><a href="/js/splitter/nested-splitter-support">Nested Splitter Support</a></li>
             <li><a href="/js/splitter/splitter-integration">Splitter Integration</a></li>
@@ -10492,8 +10981,13 @@
         Spreadsheet
         <ul>
             <li><a href="/js/spreadsheet/overview">Overview</a></li>
-            <li><a href="/js/spreadsheet/Getting-Started">Getting-Started</a></li>
-            <li><a href="/js/spreadsheet/server-configuration">Server Configuration</a></li>
+            <li><a href="/js/spreadsheet/getting-started">Getting Started</a></li>
+			<li><a href="/js/spreadsheet/worksheet">Worksheet</a></li>
+			<li><a href="/js/spreadsheet/rows-and-columns">Rows and Columns</a></li>
+			<li><a href="/js/spreadsheet/open-and-save">Open and Save</a></li>			
+			<li><a href="/js/spreadsheet/data-binding">Data Binding</a></li>
+            <li><a href="/js/spreadsheet/selection">Selection</a></li>
+			<li><a href="/js/spreadsheet/keyboard-shortcuts">Keyboard Shortcuts</a></li>
         </ul>
     </li>
     <li>
@@ -10579,9 +11073,13 @@
         </ul>
     </li>
 	<li>
-        Tooltip
+       Tooltip
         <ul>
-            <li><a href="/js/tooltip/getting-started">Getting Started</a></li>
+			 <li><a href="/js/tooltip/overview">Overview</a></li>
+             <li><a href="/js/tooltip/getting-started">Getting Started</a></li>
+			 <li><a href="/js/tooltip/customization">Customization</a></li>
+			  <li><a href="/js/tooltip/position">Position</a></li>
+			  <li><a href="/js/tooltip/HowTo">How To</a></li>
         </ul>
     </li>
     <li>
@@ -10658,6 +11156,9 @@
         Release Notes
         <ul>
 		<li>
+                <a href="/js/release-notes/v14.2.0.28">v14.2.0.28</a>
+            </li>
+		<li>
                 <a href="/js/release-notes/v14.2.0.26">v14.2.0.26</a>
             </li>
 		<li>
@@ -10679,6 +11180,7 @@
                   <a href="/js/release-notes/v13.3.0.7">V13.3.0.7</a>
 
               </li>
+			  
         </ul>
     </li>
 </ul>

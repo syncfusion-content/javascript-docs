@@ -183,6 +183,98 @@ $("#diagram").ejDiagram({
 
 ![](/js/Diagram/Label_images/Label_img12.png)
 
+### Label alignment with respect to Segments
+
+ `segmentOffset` and `alignment` properties of label allows you to align the connector labels with respect to the segments. In the following image, the labels are placed exactly over the segments regardless of its rectangular bounds.
+ 
+ ![](/js/Diagram/Label_images/Label_img32.png)
+ 
+ Following code example illustrates how to align connector labels.
+ 
+ {% highlight javascript %}
+
+ var nodes = [
+          { name: "node1", width: 50, height: 40, offsetX: 200, offsetY: 200, labels: [{ "text": "Task 1" }] },
+          { name: "node2", width: 50, height: 40, offsetX: 400, offsetY: 200, labels: [{ "text": "Task 2" }] }
+		  ];
+		  var connectors = [
+		  { name: "connector1", sourceNode: "node1", targetNode: "node2"}
+		  ];
+		  //Initializes Diagram
+		  $("#diagram").ejDiagram({
+            width: "100%",
+            height: "100%",
+            nodes: nodes,
+            connectors: connectors,
+            snapSettings: ej.datavisualization.Diagram.SnapConstraints.None,
+            defaultSettings: {
+                connector: {
+                    segments: [{ type: "orthogonal" }], 
+					// Sets labels for segments
+					labels: [{
+                            text: "0",
+                            fontColor: "black",
+							
+							// Aligns the label either top or left(before) of the connector segment
+                            alignment: "before",
+							
+							// Sets the position of the label with respect to the segment
+                            segmentOffset: 0
+                        },{
+                            text: "1",
+                            fontColor: "black",
+							
+							// Aligns the label either bottom or right(after) of the connector segment
+                            alignment: "after",
+							
+							// Sets segmentOffset as 1
+                            segmentOffset: 1,
+							
+							// Enables boundaryConstraints for the label should be docked within the label bounds
+                            boundaryConstraints: true,
+							
+                        }], lineWidth: 2
+						},
+						node: { borderColor: "#000000", fillColor: "#1BA0E2", labels: [{ "fontColor": "black", }]},
+            },
+        });
+		
+{% endhighlight %}
+
+![](/js/Diagram/Label_images/Label_img31.png)
+
+By default, connector labels will be aligned with respect to the segments. The `relativeMode` property of label allows you to disable this segment specific label alignment. Following code example illustrates how to disable the segment specific label alignment.
+
+{% highlight javascript %}
+
+ var nodes = [
+          { name: "node1", width: 50, height: 40, offsetX: 200, offsetY: 200, labels: [{ "text": "Task 1" }] },
+          { name: "node2", width: 50, height: 40, offsetX: 400, offsetY: 200, labels: [{ "text": "Task 2" }] }
+		  ];
+		  var connectors = [
+		  { name: "connector1", sourceNode: "node1", targetNode: "node2",
+		  lineWidth: 2,
+		  segments: [{ type: "orthogonal" }],
+		  
+		  // Sets labels for segments
+		   labels: [{
+		   text: "0",
+		   fontColor: "black",
+		   
+		   //Sets the relativeMode as segmentpath
+		   relativeMode: "segmentpath",
+		   }]
+		   }];
+		  //Initializes Diagram
+		  $("#diagram").ejDiagram({
+            width: "100%",
+            height: "100%",
+            connectors: connectors,
+            snapSettings: ej.datavisualization.Diagram.SnapConstraints.None
+			});
+		
+{% endhighlight %}
+
 ### Margin
 
 **Margin** is an absolute value used to add some blank space in any one of its four sides. You can displace the labels with the `margin` property.
@@ -342,7 +434,7 @@ $("#diagram").ejDiagram({
 
 ![](/js/Diagram/Label_images/Label_img23.png)
 
-The fill and border appearances of the text can also be customized with appearance specific properties of label.The following code illustrates how to customize background and border of a label.
+The fill, border and opacity appearances of the text can also be customized with appearance specific properties of label.The following code illustrates how to customize background, opacity and border of a label.
 
 {% highlight javascript %}
 
@@ -367,6 +459,8 @@ $("#diagram").ejDiagram({
 			fillColor: "white",
 			borderColor: "black",
 			borderWidth: 1,
+			//Customize transparency of a label
+			opacity: 0.7
 		}]
 	}],
 });

@@ -5,6 +5,7 @@ description: How To Section in DropDownList widget for Syncfusion Essential JS
 platform: js
 control: DropDownList
 documentation: ug
+keywords: DropDownList, dropdown, Adding Items, Set Focus, custommization
 ---
 
 # How To
@@ -561,3 +562,336 @@ Before removing an item:
 
 After removing an item:
 ![](HowTo_images/Image2.JPG)
+
+## Select the image rather than the text from the DropDownList when the template concept is used?
+
+By default, the DropDownList displays only the text of the data item. We can able to customize the selected data to show case the custom visual element in the DropDownList’s input element.
+
+Initialize the DropDownList as follows
+
+{% highlight javascript %}
+
+    <input type="text" id="empList " />
+
+    //DataSource
+    var empList = [
+    { text: "Erik Linden", eimg: "3", desig: "Representative", country: "England" }, 
+    { text: "John Linden", eimg: "6", desig: "Representative", country: "Norway" },
+    { text: "Louis", eimg: "7", desig: "Representative", country: "Australia" }, 
+    { text: "Lawrence", eimg: "8", desig: "Representative", country: "India" }];
+
+    //DropDownList Initialization
+
+    $(function () {
+        $('#empList').ejDropDownList({
+            dataSource: empList,
+            fields: { text: "text", value: "eimg" },
+            width : "80px"
+            popupWidth: 200 ,
+            watermarkText: "Select an employee",
+            template: '<div><img class="eimg" src="http://js.syncfusion.com/demos/web/images/Employee/${eimg}.png" alt="employee"/>' +
+                        '<div class="ename"> ${text} </div></div>',
+            select: "onSelect"
+        });
+    });
+    
+{% endhighlight %}    
+
+Upon selecting the items from the DropDownList, the client side event “select” will be triggered, in that find the input element which holds the text value and make it as “hidden” and then create the span element for the custom value and append to the DropDownList outer wrapper element.
+
+{% highlight javascript %}
+
+function onSelect(args){
+        
+    if(!args.model.showCheckbox && args.model.multiSelectMode == "none"){
+         var imgLocation = "http://js.syncfusion.com/demos/web/images/Employee/" + args.value + ".png";
+         if($("#myImg").length != 1){
+             var targetEle = $("#selectCar");
+             $(targetEle).css({display : "none"});
+             var dateSpan = document.createElement('span');
+             dateSpan.innerHTML = '<img id="myImg" class="eimg" src=' + imgLocation + ' alt="employee"/>';
+              $(dateSpan).insertBefore(targetEle);
+          }
+          else{
+
+              edit_save = document.getElementById("myImg");
+              edit_save.src = imgLocation;     
+          }
+    }
+     
+{% endhighlight %}
+
+Apply the following styles 
+
+{% highlight javascript %}
+
+    <style type="text/css" class="cssStyles">
+        .eimg {
+            margin: 0;
+            padding: 3px 10px 3px 3px;
+            border: 0 none;
+            width: 20px;
+            height: 20px;
+            float: left;
+        }
+        .ename {
+            font-weight: bold;
+            padding: 6px 3px 1px 3px;
+        }
+        .desig, .cont {
+            font-size: smaller;
+            padding: 3px 3px -1px 0px;
+        }
+    </style>
+
+{% endhighlight %}
+
+![](HowTo_images/customValue.jpg)
+
+N> This scenarios, will be suits for the single select mode in the DropDownList.
+
+## Apply HTML Attributes such as color and class directly to the input element rather than the outer wrapper element of DropDownList?
+
+By default, htmlAttributes property of DropDownList, will add the HTML attributes to the input element of DropDownList. But, the following attributes such as class, style, readOnly and disabled cannot add directly to the input element.
+
+This can be achieved, by adding the attributes directly to the input element if you needed.
+
+{% highlight javascript %}
+
+    <input type="text" id="dropdown1" />
+
+    <script>
+        //Data Source
+        var empList = [
+            { text: "Erik Linden", role: "Representative", country: "England" },
+            { text: "John Linden", role: "Representative", country: "Norway" },
+            { text: "Louis", role: "Representative", country: "Australia" },
+            { text: "Lawrence", role: "Representative", country: "India" }
+        ];
+        //DropDownList Initialization
+        var data = $('#dropdown1').ejDropDownList({
+            dataSource: empList,
+            fields: { text: "text", value: "country" },
+            width: "200px"
+        }).data("ejDropDownList");
+
+        data.element.attr("style", "background:yellow");
+    </script>
+   
+{% endhighlight %}
+
+ ![](HowTo_images/htmlAttr.png)
+ 
+## Add tooltip on hovering the DropDownList’s items?
+ 
+ In order to get tooltip on hovering the DropDownList popup items, use htmlAttributes field in it. Generate a DataSource with a field for mapping the HtmlAttributes having the “title” attribute value, which will allow you to show the tooltip on hovering. The htmlAttributes field will set the HTML properties for the list items.
+ 
+ {% highlight javascript %}
+ 
+    <div class="control">
+        <div class="ctrllabel">Select a bike</div>
+        <input type="text" id="bikeList" />
+    </div>
+    <script type="text/javascript">
+
+    $(function () {
+        // declaration
+        BikeList = [
+            { empid: "bk1", text: "Apache RTR", tooltip: { title: "Apache RTR" } },
+            { empid: "bk2", text: "CBR 150-R", tooltip: { title: "CBR 150-R" } },
+            { empid: "bk3", text: "CBZ Xtreme", tooltip: { title: "CBZ Xtreme" } },
+            { empid: "bk4", text: "Discover", tooltip: { title: "Discover" } },
+            { empid: "bk5", text: "Dazzler", tooltip: { title: "Dazzler" } },
+            { empid: "bk6", text: "Flame", tooltip: { title: "Flame" } },
+            { empid: "bk7", text: "Fazzer", tooltip: { title: "Fazzer" } },
+            { empid: "bk8", text: "FZ-S", tooltip: { title: "FZ-S" } },
+            { empid: "bk9", text: "Pulsar", tooltip: { title: "Pulsar" } },
+            { empid: "bk10", text: "Shine", tooltip: { title: "Shine" } },
+            { empid: "bk11", text: "R15", tooltip: { title: "R15" } },
+            { empid: "bk12", text: "Unicorn", tooltip: { title: "Unicorn" } }
+        ];
+        $('#bikeList').ejDropDownList({
+            dataSource: BikeList,
+            fields: { id: "empid", text: "text", value: "text", htmlAttributes: "tooltip" }
+        });
+    });
+
+    </script>
+    <style class="cssStyles">
+
+        .control {
+            margin-left: 20px;
+        }
+
+        .ctrllabel {
+            padding-bottom: 3px;
+        }
+    </style>
+
+{% endhighlight %}
+
+## Stop/Prevent the events (change/select) in the DropDownList?
+
+The client side events such as “select” or “change” can be prevented in the DropDownList by using argument name called cancel.
+
+{% highlight javascript %}
+
+    <div class="ctrllabel">Select a car</div>
+        <input type="text" id="selectCar" />
+    <div id="carsList">
+    <ul>
+        <li>Audi A4</li>
+        <li>Audi A5</li>
+        <li>Audi A6</li>
+        <li>Audi A7</li>
+        <li>Audi A8</li>
+    </ul>
+
+    </div>
+    <button id="button21">Select</button>
+    var target;
+    $(function () {
+        target = $('#selectCar').ejDropDownList({
+            targetID: "carsList",
+            width: "150px",
+            select: "onSelect",
+            change: “onSelect”
+        }).data("ejDropDownList");
+    });
+    
+{% endhighlight %}
+
+While selecting the items in the DropDownList, the select or change event will be triggered. In that, sets “true” to the cancel argument, which will prevent the further selecting of items in the DropDownList.
+
+{% highlight javascript %}
+
+    function onSelect(args) {
+        args.cancel = true;
+    }
+    
+{% endhighlight %}
+
+## How can I add items in ejDropDownList at the first place in list?
+
+To add the item in the certain position, then we should clear the old dataSource and add the items in array using jQuery Splice() method and then should re-initialize the dataSource in DropDownList.
+
+Initialize the DropDownList as follows
+
+{% highlight javascript %}
+
+    <div class="dropdown">
+        <input type="text" id="drpdwn" />
+        <div class="btn">
+            <button type="button" onclick="dataPrepend()">PREPEND</button>
+            <button type="button" onclick="dataAppend()">POSTPOND</button>
+        </div>
+    </div>
+    <script>
+        window.countries = [
+            { text: "Algeria" },
+            { text: "Argentina" },
+            { text: "Armenia" },
+            { text: "Brazil" },
+            { text: "Bangladesh" }
+        ];
+
+        // Creates the DropDownList
+        $('#drpdwn').ejDropDownList(
+        {
+            dataSource: window.countries,
+            field: { text: "text" }
+
+        });
+    </script>
+    
+{% endhighlight %}
+
+Upon clicking to the Prepend button, which will insert the items at index of “0” in the DropDownList.
+
+{% highlight javascript %}
+
+    function dataPrepend() {
+        var prepend = $('#drpdwn').data("ejDropDownList");
+        if (prepend.model.dataSource != null) {
+            prepend.model.dataSource.splice(0, 0, { text: "India", value: "-1" });
+            var b = prepend.model.dataSource;
+            prepend.model.dataSource = null;
+            prepend.option("dataSource", b);
+        }
+    }
+    
+{% endhighlight %}
+
+If you click the postpond button, which insert items at the last index in the DropDownList.
+
+{% highlight javascript %}
+
+    function dataAppend() {
+        $('#drpdwn').ejDropDownList("addItem", { text: "India" });
+    }
+
+{% endhighlight %}
+
+## Can a DropDownList have delimiters in their JSON data source?
+
+If the items have delimiter character, the same delimiter should not be set in the “delimiterChar” property of DropDownList. The default delimiter is “comma”. We suggest to use different delimiter character in the “delimiterChar” property of DropDownList if the multiSelectMode or showCheckbox is enabled.
+
+Setting delimiter character other than comma will differentiate the selected items in DropDownList. Else you can use multiSelectMode as visualMode, so that each selected item in DropDownList will be boxed separately in the textbox.
+
+Method 1: Setting custom delimiter Character
+
+{% highlight javascript %}
+
+    <input type="text" id="empList” />
+    <script type="text/javascript">
+        var empList = [
+               { text: "Erik, Linden", desig: "Representative" },
+               { text: "John, Linden",desig: "Dancer"},
+               { text: "Louis, John", desig: "Professor"},
+               { text: "Lawrence, Joseph", desig: "Software Engineer" }
+        ];
+        $(function () {
+            $(“#empList”).ejDropDownList({
+                dataSource: empList,
+                width: "100%",
+                fields: { text: "text", value :"desig" },
+                watermarkText: "Select an employee",
+                multiSelectMode: "delimiter",
+                delimiterChar : ";",
+                showCheckbox: true
+            });
+        });
+    </script>
+    
+{% endhighlight %}
+
+![](HowTo_images/Json1.jpg)
+
+Method 2: Using Visual Mode
+
+{% highlight javascript %}
+
+    <input type="text" id=" empList " />
+    <script type="text/javascript">
+    var empList = [
+            { text: "Erik, Linden", desig: "Representative" },
+            { text: "John, Linden", desig: "Dancer" },
+            { text: "Louis, John", desig: "Professor" },
+            { text: "Lawrence, Joseph", desig: "Software Engineer" }
+    ];
+    $(function () {
+        $('# empList).ejDropDownList({
+            dataSource: empList,
+            width: "100%",
+            fields: { text: "text", value: "desig" },
+            watermarkText: "Select an employee",
+            multiSelectMode: "visualmode",
+            showCheckbox: true
+        });
+    });
+    </script>
+ 
+ {% endhighlight %}
+
+![](HowTo_images/Json2.jpg)   
+    

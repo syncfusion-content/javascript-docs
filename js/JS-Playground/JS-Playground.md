@@ -20,7 +20,7 @@ The options provided in this live editor are explained below.
 
 ## New
 
-Use the keyboard shortcut <b> Ctrl + N </b> or <b> F4 </b> or click the <b>New</b> icon to create the new editor. A dialog will be opened in which you can see an option (checkbox) to create the template with or without EJ Template. The EJ template will insert the basic html code to use Essential JavaScript controls.
+Use the keyboard shortcut <b> Ctrl + N </b> or <b> F4 </b> or click the <b>New</b> icon to create the new editor. A dialog will be opened in which you can see an option (checkbox) to create the template with or without EJ Template. The EJ template will insert the basic HTML code to use Essential JavaScript controls.
 
 Note:  Chrome<b> Ctrl + N </b> will not work use <b>F4</b>
 
@@ -78,7 +78,7 @@ Refer the below screenshot
 
 ## Helper intellisense
 
-User can get suggestion while typing the code by pressing <b>Ctrl + Space</b> keys. You can get the suggestion list for html, CSS and JavaScript. 
+User can get suggestion while typing the code by pressing <b>Ctrl + Space</b> keys. You can get the suggestion list for HTML, CSS and JavaScript. 
 
 ## Code Alignment
 

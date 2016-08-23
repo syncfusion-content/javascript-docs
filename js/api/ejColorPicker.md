@@ -104,12 +104,7 @@ The ColorPicker control allows to define the customized text to displayed in but
 
 #### Default Value
 
-
-
-* buttonText.apply= "Apply", buttonText.cancel= "Cancel",buttonText.swatches="Swatches"
-
-
-
+* { apply: "Apply", cancel: "Cancel", swatches: "Swatches" }
 
 #### Example
 
@@ -126,8 +121,63 @@ The ColorPicker control allows to define the customized text to displayed in but
 
 {% endhighlight %}
 
+### buttonText.apply `string`
+{:#members:buttontext-apply}
+
+Sets the text for the apply button.
+
+#### Example
 
 
+{% highlight html %}
+ 
+        <input type="text" id="colorPick"/> 
+        
+        <script>
+        //To set buttonText API during initialization
+        $('#colorPick').ejColorPicker({ value: "#278787",   buttonText: {apply: "select"}});
+        </script>
+ 
+ {% endhighlight %}
+
+### buttonText.cancel `string`
+{:#members:buttontext-cancel}
+
+Sets the text for the cancel button.
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+        <input type="text" id="colorPick"/> 
+        
+        <script>
+        //To set buttonText API during initialization
+        $('#colorPick').ejColorPicker({ value: "#278787",   buttonText: {cancel: "Exit" }});
+        </script>
+ 
+ {% endhighlight %}
+
+### buttonText.swatches `string`
+{:#members:buttontext-swatches}
+
+Sets the header text for the swatches area.
+
+#### Example
+
+
+{% highlight html %}
+ 
+        <input type="text" id="colorPick"/> 
+        
+        <script>
+        //To set buttonText API during initialization
+        $('#colorPick').ejColorPicker({ value: "#278787",   buttonText: {swatches: "colors"}});
+        </script>
+ 
+ {% endhighlight %}
 
 ### buttonMode `enum|string`
 {:#members:buttonmode}
@@ -1208,14 +1258,89 @@ This property allows to define the customized text or content to displayed when 
 
 
 
-* tooltipText: { switcher: "Switcher", addbutton: "Add Color", basic: "Basic", monochrome: "Mono Chrome", flatcolors: "Flat Color", seawolf: "Sea Wolf", webcolors: "Web Colors", sandy: "Sandy", pinkshades: "Pink Shades", misty: "Misty", citrus: "Citrus", vintage: "Vintage", moonlight: "Moon Light", candycrush: "Candy Crush", currentcolor: "Current Color", selectedcolor: "Selected Color" }
+* { switcher: "Switcher", addbutton: "Add Color", basic: "Basic", monochrome: "Mono Chrome", flatcolors: "Flat Color", seawolf: "Sea Wolf", webcolors: "Web Colors", sandy: "Sandy", pinkshades: "Pink Shades", misty: "Misty", citrus: "Citrus", vintage: "Vintage", moonlight: "Moon Light", candycrush: "Candy Crush", currentcolor: "Current Color", selectedcolor: "Selected Color" }
 
 
 
+### tooltipText.switcher `string`
+{:#members:tooltiptext-switcher}
 
+Sets the tooltip text for the switcher button.
 
+### tooltipText.addbutton `string`
+{:#members:tooltiptext-addbutton}
 
+Sets the tooltip text for the add button.
 
+### tooltipText.basic `string`
+{:#members:tooltiptext-basic}
+
+Sets the tooltip text for the basic preset.
+
+### tooltipText.monochrome `string`
+{:#members:tooltiptext-monochrome}
+
+Sets the tooltip text for the mono chrome preset.
+
+### tooltipText.flatcolors `string`
+{:#members:tooltiptext-flatcolors}
+
+Sets the tooltip text for the flat colors preset.
+
+### tooltipText.seawolf `string`
+{:#members:tooltiptext-seawolf}
+
+Sets the tooltip text for the sea wolf preset.
+
+### tooltipText.webcolors `string`
+{:#members:tooltiptext-webcolors}
+
+Sets the tooltip text for the web colors preset.
+
+### tooltipText.sandy `string`
+{:#members:tooltiptext-sandy}
+
+Sets the tooltip text for the sandy preset.
+
+### tooltipText.pinkshades `string`
+{:#members:tooltiptext-pinkshades}
+
+Sets the tooltip text for the pink shades preset.
+
+### tooltipText.misty `string`
+{:#members:tooltiptext-misty}
+
+Sets the tooltip text for the misty preset.
+
+### tooltipText.citrus `string`
+{:#members:tooltiptext-citrus}
+
+Sets the tooltip text for the citrus preset.
+
+### tooltipText.vintage `string`
+{:#members:tooltiptext-vintage}
+
+Sets the tooltip text for the vintage preset.
+
+### tooltipText.moonlight `string`
+{:#members:tooltiptext-moonlight}
+
+Sets the tooltip text for the moon light preset.
+
+### tooltipText.candycrush `string`
+{:#members:tooltiptext-candycrush}
+
+Sets the tooltip text for the candy crush preset.
+
+### tooltipText.currentcolor `string`
+{:#members:tooltiptext-currentcolor}
+
+Sets the tooltip text for the current color area.
+
+### tooltipText.selectedcolor `string`
+{:#members:tooltiptext-selectedcolor}
+
+Sets the tooltip text for the selected color area.
 
 #### Example
 

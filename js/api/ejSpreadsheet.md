@@ -676,10 +676,11 @@ Gets or sets a value that indicates whether to enable or disable selection in th
 
 #### Example
 {% highlight html %}
-<div id="Spreadsheet"></div> 
+<div id="Spreadsheet"></div>
+ 
 <script>
 $('#Spreadsheet').ejSpreadsheet({ 
-allowSelection: true
+    allowSelection: true
 });         
 </script>
 
@@ -1041,7 +1042,7 @@ Gets or sets an object that indicates to customize the exporting behavior in Spr
 
 Gets or sets a value that indicates whether to enable or disable save feature in Spreadsheet. By enabling this feature, you can save existing Spreadsheet.
 
-Note: User must specify excelUrl or csvUrl while enabling this feature.
+N> User must specify excelUrl or csvUrl while enabling this feature
 
 #### Default Value
 * true
@@ -1811,9 +1812,9 @@ enableAnimation: true
 
 <ts name="ej.Spreadsheet.SelectionType"/>
 
-Gets or sets a value that indicates to set selection type in Spreadsheet. It has three types which are Column, Row and default.
+Gets or sets a value that indicates to set selection type in Spreadsheet. It has three types which are Column, Row and Default.
 
-Note: allowSelection must be true while using this property.
+N> [`allowSelection`](http://help.syncfusion.com/js/api/ejspreadsheet#members:allowselection "allowSelection") must be `true` while using this property
 
 <table class="params">
 <thead>
@@ -1841,24 +1842,21 @@ Note: allowSelection must be true while using this property.
 #### Default Value
 * ej.Spreadsheet.SelectionType.Default
 
-
-
-
 #### Example
 
 {% highlight html %}
-<div id="Spreadsheet"></div> 
+<div id="Spreadsheet"></div>
+
 <script>
 $('#Spreadsheet').ejSpreadsheet({
-allowSelection: true,
-selectionSettings({
-selectionType: ej.Spreadsheet.SelectionType.Default,
-animationTime: 0.001,
-enableAnimation: true
-})
+    allowSelection: true,
+    selectionSettings({
+        selectionType: ej.Spreadsheet.SelectionType.Default,
+        animationTime: 0.001,
+        enableAnimation: true
+    })
 });
 </script>
-
 {% endhighlight %}
 
 ### selectionSettings.selectionUnit `Enum`
@@ -1868,7 +1866,7 @@ enableAnimation: true
 
 Gets or sets a value that indicates to set selection unit in Spreadsheet. It has three types which are Single, Range and MultiRange.
 
-Note: allowSelection must be true while using this property.
+N> [`allowSelection`](http://help.syncfusion.com/js/api/ejspreadsheet#members:allowselection "allowSelection") must be `true` while using this property
 	
 <table class="params">
 <thead>
@@ -1880,15 +1878,15 @@ Note: allowSelection must be true while using this property.
 <tbody>
 <tr>
 <td class="name">Single</td>
-<td class="description">To enable Single selection in Spreadsheet.</td>
+<td class="description">To enable Single selection in Spreadsheet</td>
 </tr>
 <tr>
 <td class="name">Range</td>
-<td class="description">To enable Range selection in Spreadsheet.</td>
+<td class="description">To enable Range selection in Spreadsheet</td>
 </tr>
 <tr>
 <td class="name">MultiRange</td>
-<td class="description">To enable MultiRange selection in Spreadsheet.</td>
+<td class="description">To enable MultiRange selection in Spreadsheet</td>
 </tr>
 </tbody>
 </table>
@@ -1899,13 +1897,14 @@ Note: allowSelection must be true while using this property.
 #### Example
 
 {% highlight html %}
-<div id="Spreadsheet"></div> 
+<div id="Spreadsheet"></div>
+
 <script>
 $('#Spreadsheet').ejSpreadsheet({
-allowSelection: true,
-selectionSettings({
-selectionUnit: ej.Spreadsheet.SelectionUnit.MultiRange
-})
+    allowSelection: true,
+    selectionSettings({
+        selectionUnit: ej.Spreadsheet.SelectionUnit.Single
+    })
 });  
 </script>
 
@@ -1995,15 +1994,16 @@ Gets or sets the data to render the Spreadsheet.
 #### Example
 
 {% highlight html %}
-<div id="Spreadsheet"></div> 
+<div id="Spreadsheet"></div>
+
 <script>
 $('#Spreadsheet').ejSpreadsheet({
-sheets:[{
-dataSource: window.defaultData;
-}]
+    sheets:[{
+        // the datasource "window.defaultData" is referred from 'http://js.syncfusion.com/demos/web/scripts/xljsondata.js'
+        dataSource: window.defaultData;
+    }]
 });    
 </script>
-
 {% endhighlight %}
 
 ### sheets.fieldAsColumnHeader `Boolean`
@@ -2084,7 +2084,7 @@ primaryKey: "OrderID"
 ### sheets.query `Object`
 {:#members:sheets-query}
 
-Specifies the query for the datasource in Spreadsheet.
+Specifies the query for the [`dataSource`](http://help.syncfusion.com/js/api/ejspreadsheet#members:sheets-datasource "dataSource") in Spreadsheet.
 
 #### Default Value:
 
@@ -2094,16 +2094,16 @@ Specifies the query for the datasource in Spreadsheet.
 
 {% highlight html %}
 <div id="Spreadsheet"></div> 
+
 <script>
 var dataManager = ej.DataManager("http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/");
 $('#Spreadsheet').ejSpreadsheet({
-sheets:[{
-dataSource: dataManager,
-query: ej.Query().take(50).select(["OrderID", "CustomerID", "EmployeeID", "ShipName", "ShipAddress", "ShipCity", "ShipCountry"])
-}]
+    sheets:[{
+        dataSource: dataManager,
+        query: ej.Query().take(50).select(["OrderID", "CustomerID", "EmployeeID", "ShipName", "ShipAddress", "ShipCity", "ShipCountry"])
+    }]
 });    
 </script>
-
 {% endhighlight %}
 
 ### sheets.rangeSettings `Array`
@@ -2789,7 +2789,7 @@ $("#Spreadsheet").ejSpreadsheet("clearRangeData", "A1:A5", ["value", "value2"], 
 ### copySheet(fromIdx, toIdx, isCopySheet)
 {:#methods:copysheet}
 
-This method is used to copy sheets in Spreadsheet.
+This method is used to copy or move the sheets in Spreadsheet.
 <table class="params">
 <thead>
 <tr>
@@ -2802,12 +2802,12 @@ This method is used to copy sheets in Spreadsheet.
 <tr>
 <td class="name">fromIdx</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description">Pass the sheet index that you want to copy.</td>
+<td class="description">Pass the sheet index that you want to copy or move.</td>
 </tr>
 <tr>
 <td class="name">toIdx</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description">Pass the position index where you want to copy.</td>
+<td class="description">Pass the position index where you want to copy or move.</td>
 </tr>
 <tr>
 <td class="name">isCopySheet</td>
@@ -2824,6 +2824,7 @@ This method is used to copy sheets in Spreadsheet.
 // Initialize the Spreadsheet object.
 var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
 xlObj.copySheet(2, 1, true); // Sends a copy sheet request to the Spreadsheet.
+//xlObj.copySheet(2, 1, false); // Sends a move sheet request to the Spreadsheet.
 </script>
 
 {% endhighlight %}
@@ -3856,7 +3857,7 @@ This method is used to hide the entire columns from the specified range (startCo
 <tr>
 <td class="name">endCol</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description">Index of the end column.</td>
+<td class="description">Optional. Index of the end column.</td>
 </tr>
 </tbody>
 </table>
@@ -3868,16 +3869,20 @@ This method is used to hide the entire columns from the specified range (startCo
 <script>
 // Initialize the Spreadsheet object
 var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-// Hide a column in the sheet.
-xlObj.hideColumn(1, 1);
+// Hide the column by passing column index in the active sheet.
+xlObj.hideColumn(1);
+// Hide the columns from startCol to endCol in the active sheet.
+xlObj.hideColumn(1, 4);
 </script>
 
 {% endhighlight %}
 
 {% highlight html %}
 <script>
-// Hide a column in the sheet.
-$("#Spreadsheet").ejSpreadsheet("hideColumn", 1, 1);
+// Hide the column by passing column index in the active sheet.
+$("#Spreadsheet").ejSpreadsheet("hideColumn", 1);
+// Hide the columns from startCol to endCol in the active sheet.
+$("#Spreadsheet").ejSpreadsheet("hideColumn", 1, 4);
 </script>
 
 {% endhighlight %}
@@ -3921,7 +3926,7 @@ This method is used to hide the rows, based on the specified row index in Spread
 <tr>
 <td class="name">endRow</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description">Index of the end row.</td>
+<td class="description"> Optional. Index of the end row.</td>
 </tr>
 </tbody>
 </table>
@@ -3933,7 +3938,9 @@ This method is used to hide the rows, based on the specified row index in Spread
 <script>
 // Initialize the Spreadsheet object
 var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-// Hide a row in the sheet.
+// Hide the row by passing row index in the active sheet.
+xlObj.hideRow(1);
+// Hide a rows from startRow to endRow in the active sheet.
 xlObj.hideRow(1, 4);
 </script>
 
@@ -3942,7 +3949,9 @@ xlObj.hideRow(1, 4);
 
 {% highlight html %}
 <script>
-// Hide a row in the sheet.
+// Hide the row by passing row index in the active sheet.
+$("#Spreadsheet").ejSpreadsheet("hideRow", 1);
+// Hide a rows from startRow to endRow in the active sheet.
 $("#Spreadsheet").ejSpreadsheet("hideRow", 1, 4);
 </script>
 
@@ -4260,7 +4269,7 @@ This method is used to import excel file manually by using form data.
 </tbody>
 </table>
 
-The Objects are File, Password, Url, FileStream, FileType. 
+The Objects are File, Password, URL, FileStream, FileType. 
 
 #### Example
 
@@ -4410,52 +4419,6 @@ xlObj.mergeCells("A3:B5", true); // To merge the selecetd cell in Spreadsheet.
 <script>
 // To merge the selecetd cell in Spreadsheet
 $("#Spreadsheet").ejSpreadsheet("mergeCells","A3:B5");        
-</script>
-
-{% endhighlight %}
-
-### moveSheet(fromIdx, toIdx)
-{:#methods:movesheet}
-
-This method is used to move sheets in Spreadsheet.
-
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">fromIdx</td>
-<td class="type"><span class="param-type">number</span></td>
-<td class="description">Pass the sheet index that you want to move.</td>
-</tr>
-<tr>
-<td class="name">toIdx</td>
-<td class="type"><span class="param-type">number</span></td>
-<td class="description">Pass the position index where you want to move.</td>
-</tr>
-</tbody>
-</table>
-
-#### Example
-
-{% highlight html %}
-<script>
-// Initialize the Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj.moveSheet(2, 1); // Sends a move sheet request to the Spreadsheet.
-</script>
-
-{% endhighlight %}
-
-{% highlight html %}
-<script>
-// Sends a move sheet request to the Spreadsheet.
-$("#Spreadsheet").ejSpreadsheet("moveSheet", 2, 1);        
 </script>
 
 {% endhighlight %}
@@ -4993,7 +4956,7 @@ This method is used to set the width for the columns in the Spreadsheet.
 <tr>
 <td class="name">widthColl</td>
 <td class="type"><span class="param-type">array|object</span></td>
-<td class="description">Pass the cell index and width of the cells.</td>
+<td class="description">Pass the column index and width of the columns.</td>
 </tr>
 </tbody>
 </table>
@@ -5002,19 +4965,24 @@ This method is used to set the width for the columns in the Spreadsheet.
 
 {% highlight html %}
 <script>
-var widthColl= [{cellIndex: 1, width: 40}, {cellIndex: 2, width: 50}];
+var widthCollObj= [{colIndex: 2, width: 40}, {colIndex: 3, width: 50}], widthCollArr = [80, 90];
 //initialize the Spreadsheet object
 var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-// Set width for columns in specified sheet
-xlObj.setWidthToColumns(widthColl);
+// Set width for specified columns in active sheet
+xlObj.setWidthToColumns(widthCollObj);
+// Set width for columns starting from the '0'th index in active sheet.
+xlObj.setWidthToColumns(widthCollArr);
 </script>
 
 {% endhighlight %}
 
 {% highlight html %}
 <script>
-// Set width for columns in specified sheet
-$("#Spreadsheet").ejSpreadsheet("setWidthToColumns", widthColl);
+// Set width for specified columns in active sheet.
+$("#Spreadsheet").ejSpreadsheet("setWidthToColumns", widthCollObj);
+// Set width for columns starting from the '0'th index in active sheet.
+$("#Spreadsheet").ejSpreadsheet("setWidthToColumns", widthCollArr);
+
 </script>
 
 {% endhighlight %}
@@ -5120,7 +5088,7 @@ This method is used to show the hidden columns within the specified range in the
 <tr>
 <td class="name">endColIdx</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description">Index of the end column.</td>
+<td class="description">Optional. Index of the end column.</td>
 </tr>
 </tbody>
 </table>
@@ -5131,16 +5099,21 @@ This method is used to show the hidden columns within the specified range in the
 <script>
 //initialize the Spreadsheet object
 var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-// show the hidden column in the sheet.
-xlObj.showColumn(1, 1);
+// show the hidden column by passing column index in the active sheet.
+xlObj.showColumn(1);
+// show the hidden columns from startColIdx to startColIdx in the active sheet.
+xlObj.showColumn(3, 6);
+
 </script>
 
 {% endhighlight %}
 
 {% highlight html %}
 <script>
-// show the hidden column in the sheet.
-$("#Spreadsheet").ejSpreadsheet("showColumn", 1, 1);
+// show the hidden column by passing column index in the active sheet.
+$("#Spreadsheet").ejSpreadsheet("showColumn", 1);
+// show the hidden columns from startColIdx to startColIdx in the active sheet.
+$("#Spreadsheet").ejSpreadsheet("showColumn", 3, 6);
 </script>
 
 {% endhighlight %}
@@ -5170,10 +5143,91 @@ $("#Spreadsheet").ejSpreadsheet("showFormulaBar ");
 
 {% endhighlight %}
 
+### showGridlines(status)
+{:#methods:showgridlines}
+
+This method is used to show/hide gridlines in active sheet in the Spreadsheet.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">status</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">Pass true to show the gridlines</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+// Initialize the Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+// To hide the gridlines in the sheet.
+xlObj.showGridlines(false);
+</script>
+
+{% endhighlight %}
+
+{% highlight html %}
+<script>
+// hide the gridlines in the sheet.
+$("#Spreadsheet").ejSpreadsheet("showGridlines", false);
+</script>
+
+{% endhighlight %}
+
+### showHeadings(status)
+{:#methods:showheadings}
+
+This method is used to show/hide the headers in active sheet in the Spreadsheet.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">startRow</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">Pass true to show the sheet headers.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+// Initialize the Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+// To hide the headers in the sheet.
+xlObj.showHeadings(false);
+</script>
+{% endhighlight %}
+
+{% highlight html %}
+<script>
+// To hide the headers in the sheet.
+$("#Spreadsheet").ejSpreadsheet("showHeadings", false);
+</script>
+
+{% endhighlight %}
+
 ### showRow(startRow, endRow)
 {:#methods:showrow}
 
-This method is used to show the hidden rows in the specified range in the Spreadsheet.
+This method is used to show the hidden rows in the specified range in the Spreadsheet. 
 <table class="params">
 <thead>
 <tr>
@@ -5191,7 +5245,7 @@ This method is used to show the hidden rows in the specified range in the Spread
 <tr>
 <td class="name">endRow</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description">Index of the end row.</td>
+<td class="description">Optional. Index of the end row.</td>
 </tr>
 </tbody>
 </table>
@@ -5202,16 +5256,20 @@ This method is used to show the hidden rows in the specified range in the Spread
 <script>
 // Initialize the Spreadsheet object.
 var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-// To show the hidden rows in the sheet.
-xlObj.showRow(1, 1);
+// show the hidden row by passing row index in the active sheet.
+xlObj.showRow(1);
+// To show the hidden rows for startRow to endRow in the active sheet.
+xlObj.showRow(3, 6);
 </script>
 
 {% endhighlight %}
 
 {% highlight html %}
 <script>
-// show the hidden row in the sheet.
-$("#Spreadsheet").ejSpreadsheet("showRow", 1, 1);
+// show the hidden row by passing row index in the active sheet.
+$("#Spreadsheet").ejSpreadsheet("showRow", 1);
+// To show the hidden rows for startRow to endRow in the active sheet.
+$("#Spreadsheet").ejSpreadsheet("showRow", 3, 6);
 </script>
 
 {% endhighlight %}
@@ -6650,7 +6708,7 @@ xlObj.XLEdit.updateCellValue({rowIndex: 1, colIndex: 1}, "product", className,1)
 
 This method is used to save the sheet data as Excel or CSV document (.xls, .xlsx and .csv) in Spreadsheet.
 
-Note: Using export, user must be provided the excelUrl and csvUrl property under exportSettings.
+N> Using export, user must be provided the excelUrl and csvUrl property under exportSettings
 
 <table class="params">
 <thead>
@@ -7888,7 +7946,7 @@ xlObj.XLSelection.selectColumns(2, 4); //To select entire columns in the specifi
 
 {% endhighlight %}
 
-### XLSelection.selectRange(range, endCell)
+### XLSelection.selectRange(range)
 {:#methods:xlselection-selectrange}
 
 This method is used to select the specified range of cells in the Spreadsheet.
@@ -7906,11 +7964,6 @@ This method is used to select the specified range of cells in the Spreadsheet.
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">Pass range which want to select.</td>
 </tr>
-<tr>
-<td class="name">endCell</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description">Pass the row and column index of the end cell.</td>
-</tr>
 </tbody>
 </table>
 
@@ -7920,9 +7973,8 @@ This method is used to select the specified range of cells in the Spreadsheet.
 <script>
 // initialize Spreadsheet object.
 var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj.XLSelection.selectRange("A1:B2", {rowIndex: 7, colIndex: 1 }); //To select range of cells in Spreadsheet.
+xlObj.XLSelection.selectRange("A1:B2"); //To select range of cells in Spreadsheet.
 </script>
-
 {% endhighlight %}
 
 ### XLSelection.selectRow(rowIdx)

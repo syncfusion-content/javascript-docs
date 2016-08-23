@@ -73,32 +73,33 @@ Refer to the following code example.
 {% highlight html %}
     
     <div id="tile" style="margin-top: 45px;">
-            <div class="group">
-                <div class="column">
-                    <div id="tile1">
-                    </div>
-                    <div id="tile2">
-                    </div>
-                    <div id="tile3">
-                    </div>
-                    <div id="tile4">
-                    </div>
-                    <div id="tile5">
+                <div class="e-tile-group">
+                    <div class="e-tile-column">
+                    <div id="tile1" ></div>
+                    <div class="e-tile-small-col-2">
+                        <div id="tile2" >
+                        </div>
+                        <div id="tile3" >
+                        </div>
+                        <div id="tile4">
+                        </div>
+                        <div id="tile5" >
+                        </div>
                     </div>
                     <div id="tile6">
                     </div>
-                    <div id="tile7">
-                    </div>   
+                    <div id="tile7" >
+                    </div>
                 </div>
-                <div class="column">
-                    <div id="tile8">
+                <div class="e-tile-column">
+                    <div id="tile8" >
                     </div>
                     <div id="tile9">
                     </div>
                     <div id="tile10">
                     </div>
                 </div>
-                </div>
+            </div>
         </div>
 {% endhighlight %}
 

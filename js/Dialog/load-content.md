@@ -37,7 +37,7 @@ This settings can be specified through `contentType` property.
 
 
 
-dialogcontent.html
+Here below the content of that html file.
 
 {% highlight html %}
 

@@ -314,6 +314,41 @@ Specifies the file name of center circle icon
 
 
 
+### labelSpace `Number`
+{:#members:labelspace}
+
+
+Specifies the Space between the radial slider element and the label.
+
+
+#### Default Value:
+
+* 30
+
+
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+    // Set Radialslider labelSpace on initialization. 
+    //To set labelSpace API  
+    <div id="radialSlider">
+    </div>
+    <script>
+    $(function()
+    {
+    $("#radialSlider").ejRadialSlider({ labelSpace:100 });
+    });
+    </script>
+
+{% endhighlight %}
+
+
+
+
 
 ### radius `Number`
 {:#members:radius}
@@ -350,6 +385,75 @@ Specifies the radius of radial slider
 
 
 
+### showInnerCircle  `Boolean`
+{:#members:showinnercircle}
+
+
+To show the RadialSlider inner circle.
+
+
+#### Default Value:
+
+* true
+
+
+
+
+#### Example
+
+
+{% highlight html %}
+ 
+    // Set Radialslider showInnerCircle on initialization. 
+    //To set showInnerCircle API 
+    <div id="radialSlider">
+    </div>
+    <script>
+    $(function()
+    {
+    $("#radialSlider").ejRadialSlider({ showInnerCircle:false });
+    });
+    </script>
+
+{% endhighlight %}
+
+
+
+
+
+### startAngle  `Number`
+{:#members:startangle}
+
+
+Specifies the endAngle value for radial slider circle.
+
+
+#### Default Value:
+
+* 0
+
+
+
+
+#### Example
+
+
+{% highlight html %}
+ 
+    // Set Radialslider startAngle on initialization. 
+    //To set startAngle API 
+    <div id="radialSlider">
+    </div>
+    <script>
+    $(function()
+    {
+    $("#radialSlider").ejRadialSlider({ startAngle:180 });
+    });
+    </script>
+
+{% endhighlight %}
+
+
 
 
 ### strokeWidth  `Number`
@@ -380,6 +484,72 @@ Specifies the  strokeWidth for customize the needle, outer circle and inner circ
     </script>
 
 {% endhighlight %}
+
+
+
+## ticks `Array`
+{:#members:ticks}
+
+
+Specifies the ticks value of radial slider
+
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+    // Set Radialslider ticks value on initialization. 
+    //To set ticks API  
+    <div id="radialSlider">
+    </div>
+    <script>
+    $(function()
+    {
+    $("#radialSlider").ejRadialSlider({ ticks:[0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100] });
+    });
+    </script>
+
+{% endhighlight %}
+
+
+
+
+
+
+### value `Number`
+{:#members:value}
+
+
+Specifies the value of radial slider
+
+
+#### Default Value:
+
+* 10
+
+
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+    // Set Radialslider value on initialization. 
+    //To set value API  
+    <div id="radialSlider">
+    </div>
+    <script>
+    $(function()
+    {
+    $("#radialSlider").ejRadialSlider({ value:40 });
+    });
+    </script>
+
+{% endhighlight %}
+
 
 
 

@@ -8,26 +8,6 @@ documentation: ug
 ---
 # How to
 
-## Display Tooltip
-
-To apply tooltip for cells, You need to use [`customAttributes`](http://help.syncfusion.com/js/api/ejgrid#members:columns-customattributes) in columns. For more reference, about [`customAttributes`](http://help.syncfusion.com/js/grid/columns#custom-attribute).
-
-{% highlight html %}
-<div id="Grid"></div>
-    <script type="text/javascript">
-        $(function () {
-            $("#Grid").ejGrid({
-                dataSource: window.gridData,
-                allowPaging: true,
-                columns: [
-                    { field: "OrderID", headerText: "Order ID", width: 75, textAlign: ej.TextAlign.Right },
-                    { field: "CustomerID", headerText: "Customer ID", width: 80, customAttributes: { title: "{{:CustomerID}}" } },
-                    { field: "EmployeeID", headerText: "Employee ID", width: 75, textAlign: ej.TextAlign.Right },
-                    { field: "Freight", width: 75, format: "{0:C}", textAlign: ej.TextAlign.Right }]
-            });
-        });
-  {% endhighlight %}   
-  
 ## Binding SignalR endpoint
 
 Grid  supports SignalR features for live updates in record. Please find the below option to configure signalR with Grid. 
@@ -205,5 +185,5 @@ obj.search(val);
 
 {% endtabs %}
 The following output is displayed as a result of the above code example.
-![](externalsearch_images/externalsearch_img1.jpeg)
+![](externalsearch_images/externalsearch_img1.png)
 

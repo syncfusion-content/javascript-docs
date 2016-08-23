@@ -16,7 +16,7 @@ The **Textbox** widget supports two types of **Angular JS support** namely,
 
 **One-way binding** refers to the process of applying scope values to all the available properties of the CurrencyTextBox widget, but the changes made in CurrencyTextBox widget are not reflected or triggered in turn to the scope collection. This kind of binding applies to all the properties of the CurrencyTextBox widget.
 
-**Two-way binding** supports both the processes; it applies the scope values to the **CurrencyTextBox** properties as well as the changes made in the CurrencyTextBox widget also get reflected back and triggered within the angular scope change function.
+**Two-way binding** supports both the processes; it applies the scope values to the **CurrencyTextBox** properties as well as the changes made in the CurrencyTextBox widget also get reflected back and triggered within the AngularJS scope change function.
 
 Apply the plugin and property assigning to the CurrencyTextBox widget element through the directive that starts with the letter **“e-“.**
 
@@ -37,8 +37,6 @@ The following example depicts the way to bind data to the **CurrencyTextBox** wi
     <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
     <!--scripts-->
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"> </script>
-    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"></script>
-    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"> </script>
     <script src="http://cdn.syncfusion.com/js/assets/external/angular.min.js"> </script>
     <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"></script>
     <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/ej.widget.angular.min.js"></script>
@@ -84,7 +82,7 @@ The following example depicts the way to bind data to the **CurrencyTextBox** wi
 
 
 
-The output of **CurrencyTextBox** controls with **two-way angular binding** is as follows.
+The output of **CurrencyTextBox** controls with **two-way AngularJS binding** is as follows.
 
 ![](/js/Currency/Angular-Support_images/Angular-Support_img1.png)
 

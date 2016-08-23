@@ -18,8 +18,12 @@ The Essential JavaScript Gantt control is designed to visualize and edit the pro
 * Task relationship
 * Stripline
 * Baseline
-* Localization   
-* Resource display
+* Timeline customization
+* Work break down structure
+* Taskbar customization
+* Task label customization
+* Localization
+* Resources
 
 
 

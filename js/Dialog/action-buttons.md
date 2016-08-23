@@ -43,7 +43,7 @@ You can display only the necessary buttons in the Dialog widget by configuring t
 
 We can customize the action buttons in dialog widget.
 
-You can add new action button in the dialod widget by configuring the `actionButtonClick` event.
+You can add new action button in the dialog widget by configuring the `actionButtonClick` event.
 
 {% highlight javascript %}
 

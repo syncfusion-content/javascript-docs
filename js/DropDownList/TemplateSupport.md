@@ -5,6 +5,7 @@ description: Template Support with DropDownList widget for Syncfusion Essential 
 platform: js
 control: DropDownList
 documentation: ug
+keywords: Template Support, DropDownList, dropdown, Header Template
 ---
 
 # Template Support
@@ -14,6 +15,8 @@ By default you can add any text or image to the DropDownList list item. To custo
 ## Header Template
 
 You can create the popup header by using [headerTemplate](http://helpjs.syncfusion.com/js/api/ejdropdownlist#members:headertemplate) property. You can add any HTML content in header template.
+
+N> Refer the check all option in popup list : [link](http://help.syncfusion.com/js/dropdownlist/howto#add-check-all-option-in-popup-list)
 
 ## Template Field
 
@@ -100,4 +103,6 @@ In the demo, a JSON array is created with text, imgId, role and country which is
 N> Images for this sample are available in (installed location)\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\samples\web\themes\images<br/>
 
 ![](TemplateSupport_images/TemplateSupport_img1.jpeg)
+
+N> Shwoing custom selected valued in the input field of DropDownList : [link](http://help.syncfusion.com/js/dropdownlist/howto)
 

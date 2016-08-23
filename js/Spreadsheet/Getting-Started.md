@@ -275,7 +275,7 @@ The Spreadsheet control can be created from an HTML `DIV` element with `id` attr
     </script>
 {% endhighlight %}
 
-![](ejSpreadsheetGettingStarted_images/ejSpreadsheetGettingStarted_img1.png)
+![](Getting-Started_images/Getting-Started_img1.png)
 
 
 ## Initialize from Excel File
@@ -299,7 +299,7 @@ The Spreadsheet control can be initialized from an Excel file by defining `impor
     </script>
 {% endhighlight %}
 
-![](ejSpreadsheetGettingStarted_images/ejSpreadsheetGettingStarted_img2.png)
+![](Getting-Started_images/Getting-Started_img2.png)
 
 
 ## Cell Navigation and Drag Fill
@@ -406,7 +406,7 @@ For auto filling, editing and auto fill should be enabled using `allowEditing` a
 {% endhighlight %}
 
 
-![](ejSpreadsheetGettingStarted_images/ejSpreadsheetGettingStarted_img3.png)
+![](Getting-Started_images/Getting-Started_img3.png)
 
 
 ## Creating Chart
@@ -440,7 +440,7 @@ The Spreadsheet control provides options to create chart through API and Ribbon.
     </script>
 			{% endhighlight %}
 			
-![](ejSpreadsheetGettingStarted_images/ejSpreadsheetGettingStarted_img4.png)
+![](Getting-Started_images/Getting-Started_img4.png)
 
 
 

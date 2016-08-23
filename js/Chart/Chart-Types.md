@@ -273,7 +273,7 @@ You can use the [`lineJoin`](../api/ejchart.html#members:series-linejoin) proper
 
 ## Area Chart
 
-To render an Area chart, you can specify the series [`type`](../api/ejchart.html#members:series-type) as **“area”** in the chart series. To change the Area color, you can use the [`fill`](../api/ejchart.html#members:series-fill) property of the series.
+To render an Area chart, you can specify the series [`type`](../api/ejchart.html#members:series-type) as **"area"** in the chart series. To change the Area color, you can use the [`fill`](../api/ejchart.html#members:series-fill) property of the series.
 
 {% highlight javascript %}
 
@@ -2127,7 +2127,7 @@ By using the [`isStacking`](../api/ejchart.html#members:series-isstacking) prope
 
 ## Waterfall Chart 
 
-For rendering a Waterfall chart, set series [`type`](../api/ejchart.html#members:series-type) as **“waterfall”** in the chart series. To change the waterfall series segment color use [`fill`](../api/ejchart.html#members:series-fill) option of series and use [`positiveFill`](../api/ejchart.html#members:series-positiveFill) property to differentiate the positive segments.
+For rendering a Waterfall chart, set series [`type`](../api/ejchart.html#members:series-type) as **"waterfall"** in the chart series. To change the waterfall series segment color use [`fill`](../api/ejchart.html#members:series-fill) option of series and use [`positiveFill`](../api/ejchart.html#members:series-positiveFill) property to differentiate the positive segments.
 
 N> The inline property of the **series.positiveFill** has the first priority and override the **series.fill**.
 
@@ -2241,7 +2241,7 @@ To customize the connector line color, width, opacity and dashArray of the water
 
 ## Error bar Chart 
 
-EjChart can generate Error bar for Cartesian type series *(line, column, bar, scatter, area, candle, hilo, etc.)*. To render the Error bar for the series, set [`visibility`](../api/ejchart.html#members:series-errorBar-visibility) as *“visible”* to [`errorBar`](../api/ejchart.html#members:series-errorBar) in the series.
+EjChart can generate Error bar for Cartesian type series *(Line, Column, Bar, Scatter, Area, Candle, HiLo, etc.)*. To render the Error bar for the series, set [`visibility`](../api/ejchart.html#members:series-errorBar-visibility) as *"visible"* to [`errorBar`](../api/ejchart.html#members:series-errorBar) in the series.
 
 
 {% highlight javascript %}

@@ -4942,8 +4942,8 @@ schObj.refresh(); // To refresh the Schedule control within the client side even
 
 {% endhighlight %}
 
-### refreshAppointment()
-{:#methods:refreshappointment}
+### refreshAppointments()
+{:#methods:refreshappointments}
 
 Refreshes only the appointment elements within the Schedule control.
 
@@ -4956,7 +4956,7 @@ Refreshes only the appointment elements within the Schedule control.
 <script>
 $('#Schedule').ejSchedule();
 var schObj = $("#Schedule").data("ejSchedule");
-schObj.refreshAppointment(); // To refresh all the appointments within Scheduler
+schObj.refreshAppointments(); // To refresh all the appointments within Scheduler
 </script>
 
 {% endhighlight %}

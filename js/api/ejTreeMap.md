@@ -166,6 +166,40 @@ Specifies the uniform color mapping of the treemap
 Specifies the desaturationColorMapping settings of the treemap
 
 
+### desaturationColorMapping.to `number`
+{:#members:desaturationcolormapping-to}
+
+Specifies the to value for desaturation color mapping
+
+#### Default Value
+
+* 0
+
+#### Example
+
+{% highlight html %}
+ 
+//To set to API value during initialization 
+  $("#container").ejTreeMap( {desaturationColorMapping{ to:1}});
+
+{% endhighlight %}
+
+
+{% highlight html %}
+ 
+//Get or set the to API, after initialization:
+   
+   //Gets the to value 
+   
+   var property =$("#container").data("ejTreeMap").model.desaturationColorMapping.to;
+ 
+   //Sets the to value 
+   
+   $("#container").data("ejTreeMap").model.desaturationColorMapping = { to:1}; 
+
+{% endhighlight %}
+
+
 ### desaturationColorMapping.color `string`
 {:#members:desaturationcolormapping-color}
 
@@ -197,6 +231,107 @@ Specifies the color for desaturationColorMapping
    //Sets the color for desaturationColorMapping value 
    
    $("#container").data("ejTreeMap").model.desaturationColorMapping = { color:"#41B8C4" }; 
+
+{% endhighlight %}
+
+
+### desaturationColorMapping.from `number`
+{:#members:desaturationcolormapping-from}
+
+Specifies the from value for desaturation color mapping
+
+#### Default Value
+
+* 0
+
+#### Example
+
+{% highlight html %}
+ 
+//To set from API value during initialization 
+  $("#container").ejTreeMap( {desaturationColorMapping{ from:1}});
+
+{% endhighlight %}
+
+
+{% highlight html %}
+ 
+//Get or set the from API, after initialization:
+   
+   //Gets the from value 
+   
+   var property =$("#container").data("ejTreeMap").model.desaturationColorMapping.from;
+ 
+   //Sets the from value 
+   
+   $("#container").data("ejTreeMap").model.desaturationColorMapping = { from:1}; 
+
+{% endhighlight %}
+
+
+### desaturationColorMapping.rangeMaximum `number`
+{:#members:desaturationcolormapping-rangemaximum}
+
+Specifies the rangeMaximum value for desaturation color mapping
+
+#### Default Value
+
+* 0
+
+#### Example
+
+{% highlight html %}
+ 
+//To set rangeMaximum API value during initialization 
+  $("#container").ejTreeMap( {desaturationColorMapping{ rangeMaximum:1}});
+
+{% endhighlight %}
+
+
+{% highlight html %}
+ 
+//Get or set the rangeMaximum API, after initialization:
+   
+   //Gets the rangeMaximum value 
+   
+   var property =$("#container").data("ejTreeMap").model.desaturationColorMapping.rangeMaximum;
+ 
+   //Sets the rangeMaximum value 
+   
+   $("#container").data("ejTreeMap").model.desaturationColorMapping = { rangeMaximum:1}; 
+
+{% endhighlight %}
+
+
+### desaturationColorMapping.rangeMinimum `number`
+{:#members:desaturationcolormapping-rangeminimum}
+
+Specifies the rangeMinimum value for desaturation color mapping
+
+#### Default Value
+
+* 0
+
+#### Example
+
+{% highlight html %}
+ 
+//To set rangeMinimum API value during initialization 
+  $("#container").ejTreeMap( {desaturationColorMapping{ rangeMinimum:1}});
+
+{% endhighlight %}
+
+{% highlight html %}
+ 
+//Get or set the rangeMinimum API, after initialization:
+   
+   //Gets the rangeMinimum value 
+   
+   var property =$("#container").data("ejTreeMap").model.desaturationColorMapping.rangeMinimum;
+ 
+   //Sets the rangeMinimum value 
+   
+   $("#container").data("ejTreeMap").model.desaturationColorMapping = { rangeMinimum:1}; 
 
 {% endhighlight %}
 
@@ -476,6 +611,24 @@ Enable/Disable the drillDown for treemap
 {% endhighlight %}
 
 
+
+### isResponsive `boolean`
+{:#members:isresponsive}
+
+Controls whether Treemap has to be responsive while resizing the window.
+
+#### Default Value
+
+* true
+
+#### Example
+
+{% highlight js %}
+ 
+//To set isResponsive API value during initialization 
+  $("#container").ejTreeMap({isResponsive:true});
+{% endhighlight %}
+
 ### enableResize `boolean`
 {:#members:enableresize}
 
@@ -510,37 +663,39 @@ Specifies whether treemap need to resize when container is resized
 {% endhighlight %}
 
 
-### desaturationColorMapping.from `number`
-{:#members:desaturationcolormapping-from}
+### draggingOnSelection`boolean`
+{:#members:draggingOnSelection}
 
-Specifies the from value for desaturation color mapping
+This property is used to select treemap items while clicking and dragging
 
 #### Default Value
 
-* 0
+* false
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
  
-//To set from API value during initialization 
-  $("#container").ejTreeMap( {desaturationColorMapping{ from:1}});
-
+//To set draggingOnSelection API value during initialization 
+  $("#container").ejTreeMap({draggingOnSelection:false});
 {% endhighlight %}
 
 
-{% highlight html %}
- 
-//Get or set the from API, after initialization:
-   
-   //Gets the from value 
-   
-   var property =$("#container").data("ejTreeMap").model.desaturationColorMapping.from;
- 
-   //Sets the from value 
-   
-   $("#container").data("ejTreeMap").model.desaturationColorMapping = { from:1}; 
+### draggingGroupOnSelection`boolean`
+{:#members:draggingGroupOnSelection}
 
+This property is used to select group of treemap items while clicking and dragging 
+
+#### Default Value
+
+* false
+
+#### Example
+
+{% highlight js %}
+ 
+//To set draggingGroupOnSelectionAPI value during initialization 
+  $("#container").ejTreeMap({draggingGroupOnSelection:false});
 {% endhighlight %}
 
 
@@ -575,6 +730,40 @@ Specifies the group color mapping of the treemap
    
    $("#container").data("ejTreeMap").model.groupColorMapping = [groupColorMapping:[{ groupID: "Asia", rangeColorMapping:[{ color: "#77D8D8", from: "0", to: "1"}] }]});
    
+{% endhighlight %}
+
+
+### groupColorMapping.groupID `string`
+{:#members:groupcolormapping-groupid}
+
+Specifies the groupID for GroupColorMapping.
+
+#### Default Value
+
+* null
+
+#### Example
+
+{% highlight html %}
+  
+// Set the groupID for GroupColorMapping during initialization.                         
+        $("#container").ejTreeMap({groupColorMapping: [{ groupID:"Asia" }]})
+
+{% endhighlight %}
+
+
+{% highlight html %}
+ 
+//Get or set the groupID for GroupColorMapping after initialization:
+
+  //Gets the groupID for GroupColorMapping from map.
+
+  var property =$("#container").data("ejTreeMap").model.groupColorMapping.groupID;
+
+  //Sets the groupID for GroupColorMapping to map.
+
+  $("#container").data("ejTreeMap").model.groupColorMapping.groupID  = "Asia";
+  
 {% endhighlight %}
 
 
@@ -614,6 +803,142 @@ Specifies the height for legend
    //Sets the height value 
    
    $("#container").data("ejTreeMap").model.legendSettings = { height: 30};
+
+{% endhighlight %}
+
+
+### legendSettings.width `number`
+{:#members:legendsettings-width}
+
+Specifies the width for legend
+
+#### Default Value
+
+* 100
+
+#### Example
+
+{% highlight html %}
+ 
+//To set width API value during initialization 
+  $("#container").ejTreeMap( {legendSettings:{ width: 100}});
+
+{% endhighlight %}
+
+
+{% highlight html %}
+ 
+//Get or set the width API, after initialization:
+   
+   //Gets the template value 
+   
+   var property =$("#container").data("ejTreeMap").model.legendSettings.width;
+ 
+   //Sets the width value 
+   
+   $("#container").data("ejTreeMap").model.legendSettings = { width: 100}; 
+
+{% endhighlight %}
+
+
+### legendSettings.iconHeight `number`
+{:#members:legendsettings-iconheight}
+
+Specifies the iconHeight for legend
+
+#### Default Value
+
+* 15
+
+#### Example
+
+{% highlight html %}
+ 
+//To set iconHeight API value during initialization 
+  $("#container").ejTreeMap( {legendSettings:{ iconHeight: 15}});
+
+{% endhighlight %}
+
+
+{% highlight html %}
+ 
+//Get or set the iconHeight API, after initialization:
+   
+   //Gets the template value 
+   
+   var property =$("#container").data("ejTreeMap").model.legendSettings.iconHeight;
+ 
+   //Sets the iconHeight value 
+   
+   $("#container").data("ejTreeMap").model.legendSettings = { iconHeight: 15};
+
+{% endhighlight %}
+
+
+### legendSettings.iconWidth `number`
+{:#members:legendsettings-iconwidth}
+
+Specifies the iconWidth for legend
+
+#### Default Value
+
+* 15
+
+#### Example
+
+{% highlight html %}
+ 
+//To set iconWidth API value during initialization 
+  $("#container").ejTreeMap( {legendSettings:{ iconWidth: 15}});
+
+{% endhighlight %}
+
+
+{% highlight html %}
+ 
+//Get or set the iconWidth API, after initialization:
+   
+   //Gets the template value 
+   
+   var property =$("#container").data("ejTreeMap").model.legendSettings.iconWidth;
+ 
+   //Sets the iconWidth value 
+   
+   $("#container").data("ejTreeMap").model.legendSettings = { iconWidth: 15}; 
+
+{% endhighlight %}
+
+
+### legendSettings.template `string`
+{:#members:legendsettings-template}
+
+Specifies the template for legendSettings
+
+#### Default Value
+
+* null
+
+#### Example
+
+{% highlight html %}
+ 
+//To set template API value during initialization 
+  $("#container").ejTreeMap( {legendSettings:{ template: null}});
+
+{% endhighlight %}
+
+
+{% highlight html %}
+ 
+//Get or set the template API, after initialization:
+   
+   //Gets the template value 
+   
+   var property =$("#container").data("ejTreeMap").model.legendSettings.template;
+ 
+   //Sets the template value 
+   
+   $("#container").data("ejTreeMap").model.legendSettings = { template: null}; 
 
 {% endhighlight %}
 
@@ -820,74 +1145,6 @@ Specifies whether treemap item need to highlighted on selection
    //Sets the highlightOnSelection value 
    
    $("#container").data("ejTreeMap").model.highlightOnSelection = false; 
-
-{% endhighlight %}
-
-
-### legendSettings.iconHeight `number`
-{:#members:legendsettings-iconheight}
-
-Specifies the iconHeight for legend
-
-#### Default Value
-
-* 15
-
-#### Example
-
-{% highlight html %}
- 
-//To set iconHeight API value during initialization 
-  $("#container").ejTreeMap( {legendSettings:{ iconHeight: 15}});
-
-{% endhighlight %}
-
-
-{% highlight html %}
- 
-//Get or set the iconHeight API, after initialization:
-   
-   //Gets the template value 
-   
-   var property =$("#container").data("ejTreeMap").model.legendSettings.iconHeight;
- 
-   //Sets the iconHeight value 
-   
-   $("#container").data("ejTreeMap").model.legendSettings = { iconHeight: 15};
-
-{% endhighlight %}
-
-
-### legendSettings.iconWidth `number`
-{:#members:legendsettings-iconwidth}
-
-Specifies the iconWidth for legend
-
-#### Default Value
-
-* 15
-
-#### Example
-
-{% highlight html %}
- 
-//To set iconWidth API value during initialization 
-  $("#container").ejTreeMap( {legendSettings:{ iconWidth: 15}});
-
-{% endhighlight %}
-
-
-{% highlight html %}
- 
-//Get or set the iconWidth API, after initialization:
-   
-   //Gets the template value 
-   
-   var property =$("#container").data("ejTreeMap").model.legendSettings.iconWidth;
- 
-   //Sets the iconWidth value 
-   
-   $("#container").data("ejTreeMap").model.legendSettings = { iconWidth: 15}; 
 
 {% endhighlight %}
 
@@ -1278,6 +1535,10 @@ Shows or hides the label of the leaf item.
 
 Specifies the rangeColorMapping settings of the treemap
 
+#### Default Value
+
+* []
+
 #### Example
 
 {% highlight html %}
@@ -1303,72 +1564,230 @@ Specifies the rangeColorMapping settings of the treemap
 {% endhighlight %}
 
 
-### desaturationColorMapping.rangeMaximum `number`
-{:#members:desaturationcolormapping-rangemaximum}
+### rangeColorMapping.color `string`
+{:#members:rangecolormapping-color}
 
-Specifies the rangeMaximum value for desaturation color mapping
+Specifies the color value for rangeColorMapping.
 
 #### Default Value
 
-* 0
+* null
+
+#### Example
+
+{% highlight html %}
+  
+// Set the color value for rangeColorMapping during initialization.                     
+   $("#container").ejTreeMap({rangeColorMapping: [{ color: "#77D8D8" }]})
+
+{% endhighlight %}
+
+
+{% highlight html %}
+ 
+//Get or set the color value for rangeColorMapping after initialization:
+  
+  //Gets the color value for rangeColorMapping from map.
+  
+  var property =$("#container").data("ejTreeMap").model.rangeColorMapping.color;
+  
+  //Sets the color value for rangeColorMapping to map.
+  
+  $("#container").data("ejTreeMap").model.rangeColorMapping.color  = "#77D8D8";
+
+{% endhighlight %}
+
+
+### rangeColorMapping.gradientColors `array`
+{:#members:rangecolormapping-gradientcolors}
+
+specifies the gradient colors for th given range value
+
+#### Default Value
+
+* []
 
 #### Example
 
 {% highlight html %}
  
-//To set rangeMaximum API value during initialization 
-  $("#container").ejTreeMap( {desaturationColorMapping{ rangeMaximum:1}});
+//To set gradientColors API value during initialization 
+  $("#container").ejTreeMap( {rangeColorMapping:[{ from: "0", to: "1", gradientColors: ["#fde6cc", "#fab665"] }]});
 
 {% endhighlight %}
 
 
 {% highlight html %}
  
-//Get or set the rangeMaximum API, after initialization:
+//Get or set the gradientColors API, after initialization:
    
-   //Gets the rangeMaximum value 
+   //Gets the gradientColors value 
    
-   var property =$("#container").data("ejTreeMap").model.desaturationColorMapping.rangeMaximum;
+   var property =$("#container").data("ejTreeMap").model.rangeColorMapping.gradientColors;
  
-   //Sets the rangeMaximum value 
+   //Sets the gradientColors value 
    
-   $("#container").data("ejTreeMap").model.desaturationColorMapping = { rangeMaximum:1}; 
+   $("#container").data("ejTreeMap").model.rangeColorMapping.gradientColors = ["#fde6cc", "#fab665"]; 
 
 {% endhighlight %}
 
 
-### desaturationColorMapping.rangeMinimum `number`
-{:#members:desaturationcolormapping-rangeminimum}
+### rangeColorMapping.from `number`
+{:#members:rangecolormapping-from}
 
-Specifies the rangeMinimum value for desaturation color mapping
+Specifies the from value for rangeColorMapping.
 
 #### Default Value
 
-* 0
+* -1
 
 #### Example
 
 {% highlight html %}
- 
-//To set rangeMinimum API value during initialization 
-  $("#container").ejTreeMap( {desaturationColorMapping{ rangeMinimum:1}});
+  
+// Set the from value for rangeColorMapping during initialization.                      
+   $("#container").ejTreeMap({rangeColorMapping: [{ from:-1 }]})
 
 {% endhighlight %}
+
 
 {% highlight html %}
  
-//Get or set the rangeMinimum API, after initialization:
-   
-   //Gets the rangeMinimum value 
-   
-   var property =$("#container").data("ejTreeMap").model.desaturationColorMapping.rangeMinimum;
- 
-   //Sets the rangeMinimum value 
-   
-   $("#container").data("ejTreeMap").model.desaturationColorMapping = { rangeMinimum:1}; 
+//Get or set the from value for rangeColorMapping after initialization:
+
+  //Gets the from value for rangeColorMapping from map.
+
+  var property =$("#container").data("ejTreeMap").model.rangeColorMapping.from;
+
+  //Sets the from value for rangeColorMapping to map.
+
+  $("#container").data("ejTreeMap").model.rangeColorMapping.from  = -1;
 
 {% endhighlight %}
 
+
+### rangeColorMapping.legendLabel `string`
+{:#members:rangecolormapping-legendlabel}
+
+Specifies the legend label value for rangeColorMapping.
+
+#### Default Value
+
+* null
+
+#### Example
+
+{% highlight html %}
+  
+// Set the legendlabel value for rangeColorMapping during initialization.                       
+   $("#container").ejTreeMap({rangeColorMapping: [{ legendlabel: "1% Growth" }]})
+
+{% endhighlight %}
+
+
+{% highlight html %}
+ 
+//Get or set the legendlabel value for rangeColorMapping after initialization:
+
+  //Gets the legendlabel value for rangeColorMapping from map.
+
+  var property =$("#container").data("ejTreeMap").model.rangeColorMapping.legendlabel;
+
+  //Sets the legendlabel value for rangeColorMapping to map.
+
+  $("#container").data("ejTreeMap").model.rangeColorMapping.legendlabel  = "1% Growth";
+
+{% endhighlight %}
+
+
+### rangeColorMapping.to `number`
+{:#members:rangecolormapping-to}
+
+Specifies the to value for rangeColorMapping.
+
+#### Default Value
+
+* -1
+
+#### Example
+
+{% highlight html %}
+  
+// Set the to value for rangeColorMapping during initialization.                        
+   $("#container").ejTreeMap({rangeColorMapping: [{ to:-1 }]})
+
+{% endhighlight %}
+
+
+{% highlight html %}
+ 
+//Get or set the to value for rangeColorMapping after initialization:
+
+  //Gets the to value for rangeColorMapping from map.
+
+  var property =$("#container").data("ejTreeMap").model.rangeColorMapping.to;
+
+  //Sets the to value for rangeColorMapping to map.
+
+  $("#container").data("ejTreeMap").model.rangeColorMapping.to  = -1;
+
+{% endhighlight %}
+
+
+
+### selectionMode `enum`
+{:#members:selectionmode}
+
+<ts name = "ej.datavisualization.TreeMap.selectionMode"/>
+
+Specifies the selection mode of treemap item. Accepted selection mode values are Default and Multiple.
+
+<table class="params">
+	<thead>
+		<tr>
+			<th>Name </th>			
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="name">default</td>			
+			<td class="description">specifies the default mode</td>
+		</tr>
+		<tr>
+			<td class="name">multiple</td>			
+			<td class="description">specifies the multiple mode</td>
+		</tr>  
+	</tbody>
+</table>
+
+#### Default Value
+
+* "default"
+
+#### Example
+
+{% highlight html %}
+  
+// Set the selection mode during initialization.                                        
+          $("#container").ejTreeMap({selectionMode:'default'});
+
+{% endhighlight %}
+
+
+{% highlight html %}
+ 
+//Get or set the selection mode after initialization:
+  
+  //Gets the selection mode from treemap.
+  
+  var property =$("#container").data("ejTreeMap").model.selectionMode;
+  
+  //Sets the selection mode to treemap.
+  
+  $("#container").data("ejTreeMap").model.selectionMode  = 'default';
+
+{% endhighlight %}
 
 ### groupSelectionMode `enum`
 {:#members:groupselectionmode}
@@ -1459,16 +1878,45 @@ Specifies the legend visibility status of the treemap
 {% endhighlight %}
 
 
-### showTooltip `boolean`
-{:#members:showtooltip}
+### enableGradient `boolean`
+{:#members:enableGradient}
 
-Specifies whether treemap tooltip need to be visible
+Specifies whether gradient color has to be applied for treemap items
 
 #### Default Value
 
 * false
 
 #### Example
+
+{% highlight html %}
+ 
+//To set enableGradient API value during initialization 
+  $("#container").ejTreeMap({enableGradient:true});
+
+{% endhighlight %}
+
+
+{% highlight html %}
+ 
+//Get or set the enableGradient API, after initialization:
+   
+   //Gets the enableGradient value 
+   
+   var property =$("#container").data("ejTreeMap").model.enableGradient;
+ 
+   //Sets the enableGradient value 
+   
+   $("#container").data("ejTreeMap").model.enableGradient = false; 
+
+{% endhighlight %}
+
+
+
+### showTooltip `boolean`
+{:#members:showTooltip}
+
+Specifies whether treemap showTooltip need to be visible
 
 {% highlight html %}
  
@@ -1489,73 +1937,6 @@ Specifies whether treemap tooltip need to be visible
    //Sets the showTooltip value 
    
    $("#container").data("ejTreeMap").model.showTooltip = false; 
-
-{% endhighlight %}
-
-
-### legendSettings.template `string`
-{:#members:legendsettings-template}
-
-Specifies the template for legendSettings
-
-#### Default Value
-
-* null
-
-#### Example
-
-{% highlight html %}
- 
-//To set template API value during initialization 
-  $("#container").ejTreeMap( {legendSettings:{ template: null}});
-
-{% endhighlight %}
-
-
-{% highlight html %}
- 
-//Get or set the template API, after initialization:
-   
-   //Gets the template value 
-   
-   var property =$("#container").data("ejTreeMap").model.legendSettings.template;
- 
-   //Sets the template value 
-   
-   $("#container").data("ejTreeMap").model.legendSettings = { template: null}; 
-
-{% endhighlight %}
-
-### desaturationColorMapping.to `number`
-{:#members:desaturationcolormapping-to}
-
-Specifies the to value for desaturation color mapping
-
-#### Default Value
-
-* 0
-
-#### Example
-
-{% highlight html %}
- 
-//To set to API value during initialization 
-  $("#container").ejTreeMap( {desaturationColorMapping{ to:1}});
-
-{% endhighlight %}
-
-
-{% highlight html %}
- 
-//Get or set the to API, after initialization:
-   
-   //Gets the to value 
-   
-   var property =$("#container").data("ejTreeMap").model.desaturationColorMapping.to;
- 
-   //Sets the to value 
-   
-   $("#container").data("ejTreeMap").model.desaturationColorMapping = { to:1}; 
 
 {% endhighlight %}
 
@@ -1591,40 +1972,6 @@ Specifies the tooltip template of the treemap
    
    $("#container").data("ejTreeMap").model.tooltipTemplate = 'template'; 
 
-{% endhighlight %}
-
-
-### groupColorMapping.groupID `string`
-{:#members:groupcolormapping-groupid}
-
-Specifies the groupID for GroupColorMapping.
-
-#### Default Value
-
-* null
-
-#### Example
-
-{% highlight html %}
-  
-// Set the groupID for GroupColorMapping during initialization.                         
-        $("#container").ejTreeMap({groupColorMapping: [{ groupID:"Asia" }]})
-
-{% endhighlight %}
-
-
-{% highlight html %}
- 
-//Get or set the groupID for GroupColorMapping after initialization:
-
-  //Gets the groupID for GroupColorMapping from map.
-
-  var property =$("#container").data("ejTreeMap").model.groupColorMapping.groupID;
-
-  //Sets the groupID for GroupColorMapping to map.
-
-  $("#container").data("ejTreeMap").model.groupColorMapping.groupID  = "Asia";
-  
 {% endhighlight %}
 
 
@@ -2262,142 +2609,6 @@ Shows or hides the labels for tree map level.
 {% endhighlight %}
 
 
-### rangeColorMapping.color `string`
-{:#members:rangecolormapping-color}
-
-Specifies the color value for rangeColorMapping.
-
-#### Default Value
-
-* null
-
-#### Example
-
-{% highlight html %}
-  
-// Set the color value for rangeColorMapping during initialization.                     
-   $("#container").ejTreeMap({rangeColorMapping: [{ color: "#77D8D8" }]})
-
-{% endhighlight %}
-
-
-{% highlight html %}
- 
-//Get or set the color value for rangeColorMapping after initialization:
-  
-  //Gets the color value for rangeColorMapping from map.
-  
-  var property =$("#container").data("ejTreeMap").model.rangeColorMapping.color;
-  
-  //Sets the color value for rangeColorMapping to map.
-  
-  $("#container").data("ejTreeMap").model.rangeColorMapping.color  = "#77D8D8";
-
-{% endhighlight %}
-
-
-### rangeColorMapping.from `number`
-{:#members:rangecolormapping-from}
-
-Specifies the from value for rangeColorMapping.
-
-#### Default Value
-
-* -1
-
-#### Example
-
-{% highlight html %}
-  
-// Set the from value for rangeColorMapping during initialization.                      
-   $("#container").ejTreeMap({rangeColorMapping: [{ from:-1 }]})
-
-{% endhighlight %}
-
-
-{% highlight html %}
- 
-//Get or set the from value for rangeColorMapping after initialization:
-
-  //Gets the from value for rangeColorMapping from map.
-
-  var property =$("#container").data("ejTreeMap").model.rangeColorMapping.from;
-
-  //Sets the from value for rangeColorMapping to map.
-
-  $("#container").data("ejTreeMap").model.rangeColorMapping.from  = -1;
-
-{% endhighlight %}
-
-
-### rangecolormapping.legendLabel `string`
-{:#members:rangecolormapping-legendlabel}
-
-Specifies the legend label value for rangeColorMapping.
-
-#### Default Value
-
-* null
-
-#### Example
-
-{% highlight html %}
-  
-// Set the legendlabel value for rangeColorMapping during initialization.                       
-   $("#container").ejTreeMap({rangeColorMapping: [{ legendlabel: "1% Growth" }]})
-
-{% endhighlight %}
-
-
-{% highlight html %}
- 
-//Get or set the legendlabel value for rangeColorMapping after initialization:
-
-  //Gets the legendlabel value for rangeColorMapping from map.
-
-  var property =$("#container").data("ejTreeMap").model.rangeColorMapping.legendlabel;
-
-  //Sets the legendlabel value for rangeColorMapping to map.
-
-  $("#container").data("ejTreeMap").model.rangeColorMapping.legendlabel  = "1% Growth";
-
-{% endhighlight %}
-
-
-### rangeColorMapping.to `number`
-{:#members:rangecolormapping-to}
-
-Specifies the to value for rangeColorMapping.
-
-#### Default Value
-
-* -1
-
-#### Example
-
-{% highlight html %}
-  
-// Set the to value for rangeColorMapping during initialization.                        
-   $("#container").ejTreeMap({rangeColorMapping: [{ to:-1 }]})
-
-{% endhighlight %}
-
-
-{% highlight html %}
- 
-//Get or set the to value for rangeColorMapping after initialization:
-
-  //Gets the to value for rangeColorMapping from map.
-
-  var property =$("#container").data("ejTreeMap").model.rangeColorMapping.to;
-
-  //Sets the to value for rangeColorMapping to map.
-
-  $("#container").data("ejTreeMap").model.rangeColorMapping.to  = -1;
-
-{% endhighlight %}
-
-
 ### weightValuePath `string`
 {:#members:weightvaluepath}
 
@@ -2430,41 +2641,6 @@ Specifies the weight value path of the treemap
    $("#container").data("ejTreeMap").model.weightValuePath = 'TotalMedals'; 
 
 {% endhighlight %}
-
-
-### legendSettings.width `number`
-{:#members:legendsettings-width}
-
-Specifies the width for legend
-
-#### Default Value
-
-* 100
-
-#### Example
-
-{% highlight html %}
- 
-//To set width API value during initialization 
-  $("#container").ejTreeMap( {legendSettings:{ width: 100}});
-
-{% endhighlight %}
-
-
-{% highlight html %}
- 
-//Get or set the width API, after initialization:
-   
-   //Gets the template value 
-   
-   var property =$("#container").data("ejTreeMap").model.legendSettings.width;
- 
-   //Sets the width value 
-   
-   $("#container").data("ejTreeMap").model.legendSettings = { width: 100}; 
-
-{% endhighlight %}
-
 
 
 ## Methods
@@ -2519,6 +2695,3 @@ Triggers on treemap item selected.
   });
 
 {% endhighlight %}
-
-
-

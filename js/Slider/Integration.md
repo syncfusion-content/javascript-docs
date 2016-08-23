@@ -11,7 +11,7 @@ documentation: ug
 
 ## AngularJS binding 
 
-AngularJS is structural Framework to create dynamic web apps. It is distributed as a **JavaScript** file. It extends **HTML** attributes with Directives, and binds data to **HTML** with Expressions. To learn more about Angular JS refer the following link
+AngularJS is structural Framework to create dynamic web apps. It is distributed as a **JavaScript** file. It extends **HTML** attributes with Directives, and binds data to **HTML** with Expressions. To learn more about AngularJS refer the following link
 
 [http://www.w3schools.com/angular/default.asp](http://www.w3schools.com/angular/default.asp)
 
@@ -36,10 +36,7 @@ The following example explains you the binding of **value** property using the A
      <link href="http://cdn.syncfusion.com/js/web/ej.widgets.core.min.css" rel="stylesheet" />
      <link href="http://cdn.syncfusion.com/js/web/flat-azure/ej.theme.min.css" rel="stylesheet" />
      <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
-     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"> </script>
-     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"> </script>
      <script src="http://cdn.syncfusion.com/js/assets/external/angular.min.js"></script>
-     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"></script>
      <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"></script>
      <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/ej.widget.angular.min.js"></script>
 </head>
@@ -95,11 +92,11 @@ Execute the above code example to render the following output.
 
 ## Knockout binding
 
-KnockoutJS is a **JavaScript** library that follows the MVVM pattern to build sophisticated user interface with a clean underlying data model. It supports to update the UI dynamically. Refer the following link to know more about KnockOutJS.
+KnockoutJS is a **JavaScript** library that follows the MVVM pattern to build sophisticated user interface with a clean underlying data model. It supports to update the UI dynamically. Refer the following link to know more about KnockoutJS.
 
 [http://knockoutjs.com/documentation/introduction.html](http://knockoutjs.com/documentation/introduction.html)
 
-**Slider** widget includes support to use it with KnockoutJS. The support is achieved by integration of the JS library **ej.widget.ko.min.js file.** Refer the following link to know more about the KnockOutJS support
+**Slider** widget includes support to use it with KnockoutJS. The support is achieved by integration of the JS library **ej.widget.ko.min.js file.** Refer the following link to know more about the KnockoutJS support
 
 <http://help.syncfusion.com/js/knockoutjs>
 

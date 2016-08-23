@@ -114,7 +114,7 @@ For further information on – how to refer the required culture scripts into yo
 
 {% endhighlight %}
 
-![](Globalizationandlocalization._images/Globalizationandlocalization._img1.png)
+![](Globalizationandlocalization_images/Globalizationandlocalization._img1.png)
 
 ## Right to Left - RTL
 
@@ -195,6 +195,6 @@ By default, Ribbon render its content and layout from left to right. To customiz
 
 {% endhighlight %}
 
-![](Globalizationandlocalization._images/Globalizationandlocalization._img2.png)
+![](Globalizationandlocalization_images/Globalizationandlocalization._img2.png)
 
 

@@ -523,7 +523,7 @@ Controls the visibility of the column.
 
 ### columns.headerTemplateID `String`
 
-{:#members:columns-headertemplateiD}
+{:#members:columns-headertemplateid}
 
 Specifies the header template value for the column header
 
@@ -646,6 +646,29 @@ Shows/hides the context menu.
 
 {% endhighlight %}
 
+### cssClass `string`
+{:#members:cssclass}
+
+Specify the CSS class for TreeGrid to achieve custom theme.
+
+
+#### Default Value:
+{:.param}
+
+* ""
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="treeGrid"></div> 
+<script>          
+        $("#treeGrid").ejTreeGrid({  cssClass : "gradient-lime" });
+</script>
+
+{% endhighlight %}
 
 ### dataSource `array`
 {:#members:datasource}
@@ -672,7 +695,7 @@ Specifies hierarchical or self-referential data to populate the TreeGrid.
 
 
 ### headerTextOverflow `string`
-{:#members:headerTextOverflow}
+{:#members:headertextoverflow}
 
 Specifies whether to wrap the header text when it is overflown i.e., when it exceeds the header width.
 
@@ -922,6 +945,7 @@ Specifies the position where the new row has to be added.
  $("#treegrid").ejTreeGrid({  editSettings:{rowPosition : ej.TreeGrid.RowPosition.Bottom} });
 
 {% endhighlight %}
+
 ### enableAltRow `boolean`
 {:#members:enablealtrow}
 
@@ -1136,7 +1160,7 @@ This specifies the number of rows to display in each page.
 ### pageSettings.totalRecordsCount `number`
 {:#members:pagesettings-totalrecordscount}
 
-Get the value of records which is bound to TreeGrid. The totalRecordsCount value is calculated based on the datasoure bound to TreeGrid.
+Get the value of records which is bound to TreeGrid. The totalRecordsCount value is calculated based on the datasource bound to TreeGrid.
 
 
 #### Default Value:
@@ -1228,7 +1252,7 @@ Specifies the mode of record count in a page, whether it should count all the re
 
 
 ### pageSettings.template `string`
-{:#members:pageSettings-template}
+{:#members:pagesettings-template}
 
 Specifies the Custom template for Pager control.
 
@@ -1787,7 +1811,6 @@ treegridObj.collapseAll(); // To collapse all parent items in tree grid
 </script>
 {% endhighlight %}
 
-
 ### hideColumn(headerText)
 {:#methods:hidecolumn}
 
@@ -1912,7 +1935,6 @@ treegridObj.freezePrecedingColumns(field);
 
 
 ### freezeColumn (field, isFrozen)
-
 {:#methods:freezecolumn}
 
 Freeze/unfreeze the specified column.
@@ -2011,6 +2033,7 @@ treegridObj.search("Plan"); // To search a Plan string in tree grid data
 </script>
 
 {% endhighlight %}
+
 ### showColumn(headerText)
 {:#methods:showcolumn}
 
@@ -3776,7 +3799,7 @@ Triggered after selected a cell
 <td class="description">Returns the previously selected cell index</td>
 </tr>
 <tr>
-<td class="name">perviousRowIndex</td>
+<td class="name">previousRowIndex</td>
 <td class="type">object</td>
 <td class="description">Returns the previously selected row index</td>
 </tr>

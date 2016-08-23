@@ -445,3 +445,33 @@ height:300,minHeight:250,maxHeight:500
 N> When you set the enableRTL property to true, the resize handle will automatically positioned to the bottom-left corner of the editor.
 
 
+
+
+
+### Characters Count/Word Count
+
+The editor automatically counts the number of characters and words in the content while you type. The characters and words count displayed at the bottom of the editor. You can limit the number of characters in your content using [maxLength](http://help.syncfusion.com/js/api/ejrte#members:maxlength) property. By default, the editor sets the characters limit value as 7000 characters.
+
+{% highlight html %}
+
+    <textarea id="texteditor"></textarea>
+    <script type="text/javascript">
+        $(function () {
+
+            $("#texteditor").ejRTE({
+                showFooter: true,
+                showWordCount: true,
+                showCharCount: true,
+                maxLength: 500
+            });
+
+        });
+    </script>
+
+{% endhighlight %}
+
+By clicking the Characters Count/Word Count labels in footer , The word and character count information dialog is opened. It contains the details of the number of words and characters with and without spacing.  
+
+![](UserInterface_images/wordchar.png)
+
+N> The editor counts the characters by including the space, and this validation occurs while pasting the content into the editor also.

@@ -899,6 +899,7 @@ Specifies the edit mode in Gantt, "normal" is for dialog editing ,"cellEditing" 
 </script>
 
 {% endhighlight %}
+
 ### enableAltRow `boolean`
 {:#members:enablealtrow}
 
@@ -925,7 +926,7 @@ Enables or Disables enableAltRow row effect in Gantt
 
 
 ### enableWBS `boolean`
-{:#members:enableWBS}
+{:#members:enablewbs}
 
 Enables/disables work breakdown structure column. 
 
@@ -949,7 +950,7 @@ Enables/disables work breakdown structure column.
 {% endhighlight %}
 
 ### enableWBSPredecessor `boolean`
-{:#members:enableWBSpredecessor}
+{:#members:enablewbspredecessor}
 
 Enables/disables WBS predecessor column. 
 
@@ -2234,35 +2235,6 @@ Specifies start date of the Gantt schedule. By default, start date will be round
         $("#gantt").ejGantt(
  {
     scheduleStartDate:"12/2/2000"
- });            
-</script>
-
-{% endhighlight %}
-
-
-### selectedItem `number`
-{:#members:selecteditem}
-
-Specifies the selected row index in Gantt
-
-
-#### Default Value:
-{:.param}
-
-* null
-
-
-#### Example
-{:.example}
-
-
-{% highlight html %}
- 
-<div id="gantt"></div> 
-<script>  
-        $("#gantt").ejGantt(
- {
-    selectedItem: 2
  });            
 </script>
 
@@ -4437,7 +4409,7 @@ Triggered after selected a cell
 <td class="description">Returns the previously selected cell index</td>
 </tr>
 <tr>
-<td class="name">perviousRowIndex</td>
+<td class="name">previousRowIndex</td>
 <td class="type">object</td>
 <td class="description">Returns the previously selected row index</td>
 </tr>
@@ -5798,7 +5770,7 @@ $("#gantt").ejGantt({
 
 
 ### toolbarClick
-{:#events:toolbarClick}
+{:#events:toolbarclick}
 
 Triggered when toolbar item is clicked in Gantt.
 

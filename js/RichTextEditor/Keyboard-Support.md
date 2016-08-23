@@ -156,7 +156,7 @@ Decreases the indent of the focused content.
 <kbd>CTRL </kbd>+<kbd>SHIFT</kbd>+<kbd>H</kbd><br/><br/>
 </td>
 <td>
-Opens the html source of the editor content.
+Opens the HTML source of the editor content.
 </td>
 </tr>
 <tr>

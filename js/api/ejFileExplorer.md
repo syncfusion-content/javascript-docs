@@ -162,7 +162,7 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/
 
 
 
-Sets the URL of server side Ajax handling method that handles file operation like Read, Remove, Rename, Create, Upload, Download, Copy and Move in FileExplorer.
+Sets the URL of server side AJAX handling method that handles file operation like Read, Remove, Rename, Create, Upload, Download, Copy and Move in FileExplorer.
 
 
 
@@ -207,7 +207,7 @@ Sets the URL of server side Ajax handling method that handles file operation lik
 ### ajaxDataType `string`
 {:#members:ajaxdatatype}
 
-Specifies the data type of server side Ajax handling method. 
+Specifies the data type of server side AJAX handling method. 
 
 #### Default Value
 
@@ -245,7 +245,7 @@ Specifies the data type of server side Ajax handling method.
 
 
 
-By using ajaxSettings property, you can customize the Ajax configurations. Normally you can customize the following option in Ajax handling data, url, type, async, contentType, dataType and success. For upload, download and getImage API, you can only customize url.
+By using ajaxSettings property, you can customize the AJAX configurations. Normally you can customize the following option in AJAX handling data, URL, type, async, contentType, dataType and success. For upload, download and getImage API, you can only customize URL.
 
 
 
@@ -2362,7 +2362,7 @@ item</td>
 ### beforeAjaxRequest
 {:#events:beforeajaxrequest}
 
-Fires before the Ajax request is performed.
+Fires before the AJAX request is performed.
 
 <table class="params">
 <thead>
@@ -2397,7 +2397,7 @@ cancel</td>
 <td class="name">
 data</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description">returns the Ajax request data</td>
+<td class="description">returns the AJAX request data</td>
 </tr>
 <tr>
 <td class="name">
@@ -2936,7 +2936,7 @@ cancel</td>
 <td class="name">
 data</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description">returns the Ajax response data</td>
+<td class="description">returns the AJAX response data</td>
 </tr>
 <tr>
 <td class="name">
@@ -3483,7 +3483,7 @@ cancel</td>
 <td class="name">
 data</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description">returns the Ajax response data.</td>
+<td class="description">returns the AJAX response data.</td>
 </tr>
 <tr>
 <td class="name">

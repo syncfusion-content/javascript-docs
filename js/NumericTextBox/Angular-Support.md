@@ -39,8 +39,6 @@ The following example depicts the way to bind data to the **NumericTextBox** wid
     <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
     <!--scripts-->
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"> </script>
-    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"></script>
-    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"> </script>
     <script src="http://cdn.syncfusion.com/js/assets/external/angular.min.js"> </script>
     <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"></script>
     <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/ej.widget.angular.min.js"></script>
@@ -85,7 +83,7 @@ The following example depicts the way to bind data to the **NumericTextBox** wid
 
 
 
-The output of **NumericTextBox** controls with **two-way angularJS binding** is as follows.
+The output of **NumericTextBox** controls with **two-way AngularJS binding** is as follows.
 
 ![](/js/NumericTextBox/Angular-Support_images/Angular-Support_img1.png)
 

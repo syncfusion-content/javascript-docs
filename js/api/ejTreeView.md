@@ -1203,7 +1203,7 @@ Its allow us to indicate whether the node has child or not in load on demand
 
 
 
-Specifies the HTML Attributes to &ldquo;li&rdquo; item list.
+Specifies the HTML Attributes to "li" item list.
 
 
 
@@ -1269,7 +1269,7 @@ Specifies the image attribute to &ldquo;img&rdquo; tag inside items list
 
 
 
-Specifies the HTML Attributes to &ldquo;li&rdquo; item list.
+Specifies the HTML Attributes to "li" item list.
 
 
 
@@ -1401,7 +1401,7 @@ Allow us to specify the node to be in selected state
 
 
 
-Specifies the sprite CSS class to &ldquo;li&rdquo; item list.
+Specifies the sprite CSS class to "li" item list.
 
 
 
@@ -5417,7 +5417,7 @@ Fires before cut node in TreeView.
 <td class="name"> 
  keyCode </td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description">returns the keypressed keycode value</td>
+<td class="description">returns the key pressed key code value</td>
 </tr>
 </tbody>
 </table>
@@ -5861,7 +5861,7 @@ Fires before paste node in TreeView.
 <td class="name"> 
  keyCode </td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description">returns the keypressed keycode value</td>
+<td class="description">returns the key pressed key code value</td>
 </tr>
 </tbody>
 </table>
@@ -6260,7 +6260,7 @@ Fires when key pressed successfully.
 <td class="name"> 
  keyCode </td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description">returns the keypressed keycode value</td>
+<td class="description">returns the key pressed key code value</td>
 </tr>
 <tr>
 <td class="name"> 
@@ -6927,7 +6927,7 @@ Fires when node cut successfully.
 <td class="name"> 
  keyCode </td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description">returns the keypressed keycode value</td>
+<td class="description">returns the key pressed key code value</td>
 </tr>
 </tbody>
 </table>
@@ -7738,7 +7738,7 @@ Fires once node pasted successfully.
 <td class="name">
  keyCode </td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description">returns the keypressed keycode value</td>
+<td class="description">returns the key pressed key code value</td>
 </tr>
 </tbody>
 </table>
@@ -7972,5 +7972,71 @@ $("#treeView").ejTreeView({
 </script>{% endhighlight %}
 
 
+### ready
+{:#events:ready}
 
+
+Fires when TreeView nodes are loaded successfully
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name"> 
+ cancel </td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
+</tr>
+<td class="name"> 
+ element </td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">returns the TreeView element.</td>
+</tr>
+<tr>
+<td class="name"> 
+ model </td>
+<td class="type"><ts ref="ej.TreeView.Model"/><span class="param-type">object</span></td>
+<td class="description">returns the TreeView model</td>
+</tr>
+<tr>
+<td class="name"> 
+ type </td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">returns the name of the event</td>
+</tr>
+</tbody>
+</table>
+
+
+#### Example
+
+
+{% highlight html %}
+
+<div id="treeView"></div>
+<script>
+// DataManager creation
+var dataManger = ej.DataManager({
+    url: "http://mvc.syncfusion.com/Services/Northwnd.svc/"
+});
+// Query creation
+var query = ej.Query().from("Categories").select("CategoryID,CategoryName").take(3);
+// Initialize TreeView with ready event.
+$("#treeView").ejTreeView({
+    fields: {
+        dataSource: dataManger, query: query, id: "CategoryID", text: "CategoryName",
+        child: { dataSource: dataManger, tableName: "Products", parentId: "CategoryID", text: "ProductName" }
+    },
+    ready: function(args) {
+        alert("All TreeView nodes are loaded successfully.");
+    }
+});
+</script>
+{% endhighlight %}
 

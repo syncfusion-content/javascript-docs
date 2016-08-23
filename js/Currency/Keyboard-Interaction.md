@@ -40,7 +40,7 @@ Focus the next element</td></tr>
 
 The following steps explain the implementation of keyboard interaction in **CurrencyTextBox** .
 
-In the **HTML** page set the corresponding **&lt;input&gt;** elements for rendering CurrencyTextBox controls. Set the **accesskey** property to the **CurrencyTextBox** control for focusing the control while key is pressed.
+In the **HTML** page set the corresponding **&lt;input&gt;** elements for rendering CurrencyTextBox controls. Set the **access key** property to the **CurrencyTextBox** control for focusing the control while key is pressed.
 
 
 {% highlight html %}

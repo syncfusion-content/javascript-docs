@@ -17,7 +17,8 @@ In this tutorial, you can learn how to create a simple Gantt chart, add tasks or
 
 ![](/js/Gantt/Getting-Started_images/Getting-Started_img4.png)
 
-1.Create an HTML file and add the following template to the HTML file.
+### Adding script references
+Create an HTML file and add the following template to the HTML file.
 
 {% highlight html %}
 
@@ -53,18 +54,8 @@ In this tutorial, you can learn how to create a simple Gantt chart, add tasks or
 
 {% endhighlight %}
 
-2.Add a **&lt;div&gt;** element with in the &lt;Body&gt; tag.
-
-{% highlight html %}
-
-    <body>    
-        <!--Add  Gantt control here-->    
-        <div id="GanttContainer"></div>    
-    </body>
-
-{% endhighlight %}
-
-3.Create data source for ejGantt.
+### Binding Gantt with data
+Create data source for ejGantt.
 
 {% highlight javascript %}
 
@@ -116,7 +107,20 @@ In this tutorial, you can learn how to create a simple Gantt chart, add tasks or
 
 {% endhighlight %}
 
-4.Initialize the Gantt with data source created in the last step.
+### Initialize Gantt
+Add a **&lt;div&gt;** element with in the &lt;Body&gt; tag.
+
+{% highlight html %}
+
+    <body>    
+        <!--Add  Gantt control here-->    
+        <div id="GanttContainer"></div>    
+    </body>
+
+{% endhighlight %}
+
+
+Initialize the Gantt with data source created in the last step.
 
 {% highlight javascript %}
 
@@ -250,6 +254,26 @@ The following screen shot displays Gantt chart in which Context menu option is e
 
 ![](/js/Gantt/Getting-Started_images/Getting-Started_img8.png)
 
+### Enable Column Menu
+
+You can enable the column menu in Gantt, by setting the [`showColumnChooser`](/js/api/ejgantt#members:showcolumnchooser "showColumnChooser")
+
+ as `true`.
+
+{% highlight javascript %}
+
+    $("#GanttContainer").ejGantt({   
+        //...
+        showColumnChooser:true
+    });
+
+
+{% endhighlight %}
+
+The following screen shot displays Gantt chart in which column chooser option is enabled:
+
+![](/js/Gantt/Getting-Started_images/Getting-Started_img11.png)
+
 ### Provide tasks relationship
 
 In Gantt, you have the predecessor support to show the relationship between two different tasks.
@@ -320,3 +344,22 @@ The following screenshot displays resource allocation for tasks in Gantt chart.
 
 By following these steps, you have learned how to provide data source to Gantt chart, how to configure Gantt to set task relationships, assign resources for each task, and add toolbar with necessary buttons.
 
+### Highlight Weekend
+
+In Gantt, you can on or off weekends high lighting by setting the [`highlightWeekEnds`](/js/api/ejgantt#members:highlightweekends "highlightWeekEnds")
+
+ as `true` or `false`.
+
+{% highlight javascript %}
+
+    $("#GanttContainer").ejGantt({   
+        //...
+        highlightWeekEnds:false
+    });
+
+
+{% endhighlight %}
+
+The following screen shot displays Gantt chart in which highlight weekends is disabled:
+
+![](/js/Gantt/Getting-Started_images/Getting-Started_img12.png)
