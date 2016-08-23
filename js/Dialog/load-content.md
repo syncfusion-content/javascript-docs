@@ -37,7 +37,7 @@ This settings can be specified through `contentType` property.
 
 
 
-Here below the content of that html file.
+Here below the content of that HTML file.
 
 {% highlight html %}
 
