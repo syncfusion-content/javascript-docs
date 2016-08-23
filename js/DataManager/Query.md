@@ -237,48 +237,7 @@ Result of the above code example is illustrated as follows.
 
 ![](/js/DataManager/Query_images/Query_img4.png)
 
-N> Suppose, application has been hosted in IST time zone and client may be in EST, GMT etc. in that case, date will differ from database. The below solution will fix the conflict. 
 
-<table>
-    <tr> 
-        Property <br>
-        Name: ej.serverTimeZoneOffset 
-        Data type: number
-        Default Value: 0 
-    </tr>
-</table>
-
-<table>
-    <tr>
-        Formula: <br>
-        ej.serverTimeZoneOffset = serverTimeZoneDiff(in hours) + ClientSideTimeZoneDiff(in hours); 
-    </tr>
-</table>
-
-{% highlight html %}
-
-    <div class="content-container-fluid">
-        <div class="row">
-            <div class="cols-sample-area">
-                <div id="Grid"></div>
-            </div>
-        </div>
-    </div>
-    <script type="text/javascript">
-        var serverTimeZoneDiff = 5.5   // if your server is in IST time zone (UTC +5.5) (in hours)
-        var clientSideTimeZoneDiff = new Date().getTimezoneOffset() / 60; // get client time zone differents and convert it to hours;
-        ej.serverTimeZoneOffset = serverTimeZoneDiff + clientSideTimeZoneDiff;
-        $(function () {
-            var dm = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" });
-            $("#Grid").ejGrid({
-                dataSource: dm,
-                allowPaging: true,
-                columns: ["OrderID", "EmployeeID", "CustomerID", "OrderDate", "Freight"]
-            });
-        });
-    </script>
-
-{% endhighlight %}
 
 
 
