@@ -57,7 +57,7 @@ $("#lb").ejListView();
 
 * module:jQuery
 
-* module: jsrender
+* module: JsRender
 
 * module:ej.core
 
