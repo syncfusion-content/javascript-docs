@@ -245,5 +245,63 @@ The following screenshot shows Gantt with task tooltip customization.
 
 ![](/js/Gantt/Customization_images/Customization_img3.png)
 
+### Cell tooltip 
 
+TreeGrid part tooltip can also be customized using [cellTooltipTemplate](/js/api/ejgantt#members:celltooltiptemplate) property. We need to map the script element or element id to this property. The following code explains how to customize the cell tooltip in Gantt.
+
+{% highlight javascript %}
+<script type="text/javascript">
+    $("#GanttContainer").ejGantt({
+
+        //...
+
+        showGridCellTooltip: true,
+
+        cellTooltipTemplate: "#CustomToolTip",
+
+    })
+
+    $.views.helpers({
+        _TaskID: getTaskID,
+        _TaskName: getTaskname
+    });
+
+    function getTaskID() {
+
+        return this.data.record["taskId"];
+
+    }
+
+    function getTaskname() {
+
+        return this.data.record["taskName"];
+
+    }
+</script>
+
+<script id="CustomToolTip" type="text/x-jsrender">
+
+    <table>
+
+        <tr>
+
+            <td>Id:</td>
+
+            <td>{{:~_TaskID()}}</td>
+
+        </tr>
+
+        <tr>
+
+            <td>Name:</td>
+
+            <td>{{:~_TaskName()}}</td>
+
+        </tr>
+
+    </table>
+
+</script>
+{% endhighlight %}
+![](/js/Gantt/Customization_images/Customization_img5.png)
 
