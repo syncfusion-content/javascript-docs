@@ -79,7 +79,7 @@ Excel file document imported in spreadsheet.
 
 ### Description
 
-The following are the types of exporting is available in Spreadsheet.
+The following exporting options available in Spreadsheet.
 *	Excel Export
 *	CSV Export
 *	PDF Export
