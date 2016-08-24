@@ -235,6 +235,8 @@ The `expand` query of the data manager is used to perform complex data binding.
 
 Result of the above code example is illustrated as follows.
 
+
+
 ![](/js/DataManager/Query_images/Query_img4.png)
 
 

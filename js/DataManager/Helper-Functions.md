@@ -43,9 +43,9 @@ This method is used to swap the position of element in an array. It accepts thre
 
 **ej.serverTimeZoneOffset**
 
-This method is used to set the time-zone offset from UTC, in hours
+This property is used to set the time-zone offset from UTC, in hours
 
-N> Suppose, application has been hosted in IST time zone and client may be in EST, GMT etc. in that case, date will differ from database. The below given solution will fix the conflict. 
+N> Suppose, application has been hosted in EST time zone and client may be in IST, GMT etc. in that case, date will differ from database. The below given solution will fix the conflict. 
 
 <table>
     <tr> 
@@ -57,7 +57,7 @@ N> Suppose, application has been hosted in IST time zone and client may be in ES
 </table>
 
 N> By default, The server time zone will be in UTC, if its other than the UTC, set the proper format time zone offset value to the ej.serverTimeZoneOffset property. <BR>
-Please refer the online (link)[http://www.timeanddate.com/worldclock/difference.html?p1=1440] for time zone difference offset value.
+Please refer the online (link)[https://en.wikipedia.org/wiki/Time_zone#List_of_UTC_offsets] for time zone offset values.
 
 <table>
     <tr>
@@ -76,7 +76,7 @@ Please refer the online (link)[http://www.timeanddate.com/worldclock/difference.
         </div>
     </div>
     <script type="text/javascript">
-        var serverTimeZoneDiff = +5.5   // if your server is in IST time zone (UTC +5.5) (in hours)
+        var serverTimeZoneDiff = -5.0   // if your server is in EST time zone (UTC -5.0) (in hours)
         var clientSideTimeZoneDiff = new Date().getTimezoneOffset() / 60; // get client time zone differents and convert it to hours;
         ej.serverTimeZoneOffset = serverTimeZoneDiff + clientSideTimeZoneDiff;
         $(function () {
@@ -91,6 +91,35 @@ Please refer the online (link)[http://www.timeanddate.com/worldclock/difference.
 
 {% endhighlight %}
 
-N> When the DayLight Saving mode is enabled in the sever, take care about this time adjustment with the time-zone offset calculation.
+N> When the Daylight saving time mode is enabled in the sever, take care about this time adjustment with the server time-zone offset calculation.
 
-I> Daylight saving time (DST) or summer time is the practice of advancing clocks during summer months by one hour so that evening daylight lasts an hour longer, while sacrificing normal sunrise times. Typically, regions with summer time adjust clocks forward one hour close to the start of spring and adjust them backward in the autumn to standard time. Please refer the (link)[http://www.worldtimezone.com/daylight.html].
+The countries that are using Eastern Standard Time (EST) when observing standard time (autumn/winter) are 5 hours behind Coordinated Universal Time (UTC−05:00).
+
+Eastern Daylight Time (EDT), when observing daylight saving time DST (spring/summer) is 4 hours behind Coordinated Universal Time (UTC−04:00).
+
+Let see an example, when they observe the Daylight saving time.
+
+{% highlight html %}
+
+    <div class="content-container-fluid">
+        <div class="row">
+            <div class="cols-sample-area">
+                <div id="Grid"></div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        var serverTimeZoneDiff = -4.0  // if your server is in EDT time zone (UTC -4.0) (in hours)
+        var clientSideTimeZoneDiff = new Date().getTimezoneOffset() / 60; // get client time zone differents and convert it to hours;
+        ej.serverTimeZoneOffset = serverTimeZoneDiff + clientSideTimeZoneDiff;
+        $(function () {
+            var dm = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" });
+            $("#Grid").ejGrid({
+                dataSource: dm,
+                allowPaging: true,
+                columns: ["OrderID", "EmployeeID", "CustomerID", "OrderDate", "Freight"]
+            });
+        });
+    </script>
+
+{% endhighlight %}
