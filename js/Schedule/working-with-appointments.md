@@ -1609,7 +1609,7 @@ The Appointments that lies within the blocked time range can be restricted to pe
 The [blockoutSettings](/js/api/ejschedule#members:blockoutsettings) holds the below properties to customize the block intervals such as,
 
 * [templateId](/js/api/ejschedule#members:blockoutsettings-templateid) - Template design that applies on the block intervals.
-* [customStyle](/js/api/ejschedule#members:blockoutsettings-customstyle) - The custom css that applies on the blocked intervals.
+* [customStyle](/js/api/ejschedule#members:blockoutsettings-customstyle) - The custom CSS that applies on the blocked intervals.
 
 {% highlight html %}
 
