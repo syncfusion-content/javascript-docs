@@ -4350,7 +4350,7 @@ Template design that applies on the Schedule block intervals. All the field name
 
 * null
 
-#### Example - To set the block intevals template.
+#### Example - To set the block intervals template.
 
 {% highlight html %}
 
