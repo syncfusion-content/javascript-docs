@@ -8,11 +8,11 @@ keywords: Validation, jQuery validation, Client side validation
 ---
 # Validation 
 
-## JQuery Validation
+## jQuery Validation
 
 To perform the jQuery validation for EJ form controls, please refer following steps.
 
-**Step 1:** First you need to include [jquery.validate](http://www.nuget.org/packages/jQuery.Validation/#) (1.15.0) script in your html page.
+**Step 1:** First you need to include [jquery.validate](http://www.nuget.org/packages/jQuery.Validation/#) (1.15.0) script in your HTML page.
 
 **Step 2:** After adding this script file, you can validate the EJ form controls in same way as you perform the jQuery validation for HTML form elements. But here you have to do some little bit configuration along with that.  Let we discuss about it.
 
