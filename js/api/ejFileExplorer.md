@@ -296,7 +296,7 @@ By using ajaxSettings property, you can customize the AJAX configurations. Norma
 ### allowDragAndDrop `boolean`
 {:#members:allowdraganddrop}
 
-The FileExplorer allows to drag and drop the files from one loacation to another location. 
+The FileExplorer allows to move the files from one folder to another folder of FileExplorer by using drag and drop option. Also it supports to upload a file by dragging it from windows explorer to the necessary folder of ejFileExplorer.  
 
 #### Default Value
 
@@ -532,7 +532,7 @@ Enables or disables the Right to Left alignment support in FileExplorer control.
 
 
 
-Enables or disables the thumbnail compression option in FileExplorer control.
+Enables or disables the thumbnail image compression option in FileExplorer control. By enabling this option, you can reduce the thumbnail image size while loaading. 
 
 
 
@@ -2630,7 +2630,9 @@ type</td>
 
 
 
-Fires before getting a requested image from server. Also this event helps to customize the image compression size.
+Fires before getting a requested image from server. Also this event will be triggered when you have enabled thumbnail image compression option in FileExplorer. 
+Using this event, you can customize the image compression size.
+
 
 <table class="params">
 <thead>
@@ -3350,7 +3352,7 @@ type</td>
 
 
 
-Fires when the file has been started to drag in FileExplorer
+Fires when the files or directory has been started to drag over on the FileExplorer
 
 <table class="params">
 <thead>
@@ -3436,7 +3438,7 @@ selectedItems</td>
 
 
 
-Fires when the file / element is dragging over the FileExplorer.
+Fires when the files or directory is dragging over on the FileExplorer.
 
 <table class="params">
 <thead>
@@ -3528,7 +3530,7 @@ targetPath</td>
 
 
 
-Fires when the file has been stopped to drag a file in FileExplorer
+Fires when the files or directory has been stopped to drag over on FileExplorer
 
 <table class="params">
 <thead>
@@ -3579,7 +3581,7 @@ targetElementName</td>
 <td class="name">
 dropAction</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description">returns the action, which is performed after dropping the files.(upload/ move)</td>
+<td class="description">returns the action, which is performed after dropping the files (upload/ move).</td>
 </tr>
 <tr>
 <td class="name">
@@ -3628,7 +3630,7 @@ fileInfo</td>
 
 
 
-Fires when the file is dropped to the folder of FileExplorer
+Fires when the files or directory is dropped to the target folder of FileExplorer
 
 <table class="params">
 <thead>
@@ -3685,7 +3687,7 @@ fileInfo</td>
 <td class="name">
 dropAction</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description">returns the action, which is performed after dropping the files.(upload/ move)</td>
+<td class="description">returns the action, which is performed after dropping the files (upload/ move).</td>
 </tr>
 </tbody>
 </table>
