@@ -1467,3 +1467,252 @@ function reminderCustom(args) {
 
 N> Whenever the reminder setting is enabled in the Scheduler with some specific value (in minutes) assigned to the **alertBefore** property, the **reminder** event gets triggered before this specified value. It includes the reminder appointment’s entire information within its arguments.
 
+## Block Time Intervals
+
+It allows to block the particular timeslots in Schedule. When specific timeslots are blocked, the appointments that lies in that range can either be made read-only or else can be allowed to interact with the users based on the value assigned to the `isBlockAppointment` property.
+
+### Blockout Settings
+
+The [blockoutSettings](/js/api/ejschedule#members:blockoutsettings) holds the below block intervals related properties such as,
+
+* [enable](/js/api/ejschedule#members:blocktimesettings-enable) - It accepts true or false value, denoting whether to enable/disable the block intervals option. It's default value is `false`.
+* [templateId](/js/api/ejschedule#members:blockoutsettings-templateid) â€“ It applies the template design to block the intervals.
+* [dataSource](/js/api/ejschedule#members:blockoutsettings-datasource) â€“ Binds the block intervals dataSource collection. This property should be assigned either with the JSON data array collection or instance of [ej.DataManger](/js/datamanager/overview).
+
+The below blockout fields holds the appropriate column names from the dataSource - 
+
+<table>
+<tr>
+<th>
+Field name<br/><br/></th><th>
+Description<br/><br/></th></tr>
+<tr>
+<td>
+id<br/><br/></td><td>
+It holds the binding name for <b>id</b> field in the blockout dataSource<br/><br/></td></tr>
+<tr>
+<td>
+subject<br/><br/></td><td>
+It holds the binding name for <b>subject</b> field in the blockout dataSource<br/><br/></td></tr>
+<tr>
+<td>
+startTime<br/><br/></td><td>
+It holds the binding name for <b>startTime</b> field in the blockout dataSource.<br/><br/></td></tr>
+<tr>
+<td>
+endTime<br/><br/></td><td>
+It holds the binding name for <b>endTime</b> field in the blockout dataSource.<br/><br/></td></tr>
+<tr>
+<td>
+isBlockAppointment<br/><br/></td><td>
+It holds the binding name for <b>isBlockAppointment</b> field in the blockout dataSource.<br/><br/></td></tr>
+<tr>
+<td>
+isAllDay<br/><br/></td><td>
+It holds the binding name for <b>isAllDay</b> field in the blockout dataSource.<br/><br/></td></tr>
+<tr>
+<td>
+resourceId<br/><br/></td><td>
+It holds the binding name for <b>resourceId</b> field in the blockout dataSource.<br/><br/></td></tr>
+<tr>
+<td>
+customStyle<br/><br/></td><td>
+It holds the binding name for <b>customStyle</b> field in the blockout dataSource.<br/><br/></td></tr>
+</table>
+
+{% highlight html %}
+
+<!--Container for ejScheduler widget-->
+<div id="schedule"></div>
+
+<script>
+    $(function() {
+            $("#schedule").ejSchedule({
+                currentDate: new Date(2014, 4, 5),
+                //Configure the blockout settings
+                blockoutSettings: {
+                    //Enable the blockout options
+                    enable: true,
+                    //data source collection binding
+                    dataSource: [{
+                        BlockId: 101,
+                        BlockStartTime: new Date(2014, 4, 5, 10, 00),
+                        BlockEndTime: new Date(2014, 4, 5, 11, 00),
+                        BlockSubject: "Service",
+                        IsBlockAppointment: true
+                    },
+                    {
+                        BlockId: 102,
+                        BlockStartTime: new Date(2014, 4, 4, 12, 00),
+                        BlockEndTime: new Date(2014, 4, 4, 13, 00),
+                        BlockSubject: "Maintenance",
+                        IsBlockAppointment: true
+                    }],
+                    //id mapper field 
+                    id: "BlockId",
+                    //start time mapper field 
+                    startTime: "BlockStartTime",
+                    //end time mapper field 
+                    endTime: "BlockEndTime",
+                    //subject mapper field 
+                    subject: "BlockSubject",
+                    //block appointment mapper field 
+                    isBlockAppointment: "IsBlockAppointment"
+                }
+            });
+    });	
+</script>
+
+{% endhighlight %}
+
+### Blocking Appointments
+
+The Appointments that lies within the blocked time range can be restricted to perform CRUD operations in it and can be made read-only. This can be achieved by setting [isBlockAppointment](/js/api/ejschedule#members:blockoutsettings-isblockappointment) property to true.
+
+
+{% highlight html %}
+
+<!--Container for ejScheduler widget-->
+<div id="schedule"></div>
+
+<script>
+        $(function () {
+            $("#schedule").ejSchedule({
+                currentDate: new Date(2014, 4, 5),
+                //Configure the blockout settings
+                blockoutSettings: {
+                    //Enable the blockout options
+                    enable: true,
+                    //data source collection binding
+                    dataSource: [{
+                        BlockId: 101,
+                        BlockStartTime: new Date(2014, 4, 5, 10, 00),
+                        BlockEndTime: new Date(2014, 4, 5, 11, 00),
+                        BlockSubject: "Service",
+                        IsBlockAppointment: true
+                    }],
+                    id: "BlockId",
+                    startTime: "BlockStartTime",
+                    endTime: "BlockEndTime",
+                    subject: "BlockSubject",
+                    //Bind the block appointment field in datasource
+                    isBlockAppointment: "IsBlockAppointment"
+                }
+            });
+        });
+</script>
+
+{% endhighlight %}
+
+### Customizing block time intervals
+
+The [blockoutSettings](/js/api/ejschedule#members:blockoutsettings) holds the below properties to customize the block intervals such as,
+
+* [templateId](/js/api/ejschedule#members:blockoutsettings-templateid) - Template design that applies on the block intervals.
+* [customStyle](/js/api/ejschedule#members:blockoutsettings-customstyle) - The custom css that applies on the blocked intervals.
+
+{% highlight html %}
+
+<!--Container for ejScheduler widget-->
+<div id="schedule"></div>
+
+<!--Template to apply block intervals-->
+<script id="blocktemplate" type="text/x-jsrender">
+   <div style="height:100%">
+      <div>{{:BlockSubject}}</div>
+   </div>
+</script>
+
+<script>
+    $(function() {
+            $("#schedule").ejSchedule({
+                currentDate: new Date(2014, 4, 5),
+                blockoutSettings: {
+                    enable: true,
+                    templateId: "#blocktemplate",
+                    dataSource: [{
+                        BlockId: 101,
+                        BlockStartTime: new Date(2014, 4, 5, 10, 00),
+                        BlockEndTime: new Date(2014, 4, 5, 11, 00),
+                        BlockSubject: "Service",
+                        IsBlockAppointment: true
+                    }],
+                    id: "BlockId",
+                    startTime: "BlockStartTime",
+                    endTime: "BlockEndTime",
+                    subject: "BlockSubject",
+                    isBlockAppointment: "IsBlockAppointment"
+                }
+            });
+    });	
+</script>
+
+{% endhighlight %}
+
+### Blocking time interval based on resources
+
+* [resourceId](/js/api/ejschedule#members:blockoutsettings-resourceid) - property used within the `blockoutSettings` which accepts the resource id's can be used to apply the block intervals based on the resources.
+
+{% highlight html %}
+
+<!--Container for ejScheduler widget-->
+<div id="schedule"></div>
+
+<script>
+        $(function () {
+            $("#schedule").ejSchedule({
+                currentDate: new Date(2014, 4, 2),
+                group: {
+                    resources: ["Owners"]
+                },
+                resources: [{
+                    field: "ownerId", title: "Owner", name: "Owners",
+                    allowMultiple: true,
+                    resourceSettings: {
+                        dataSource: [
+                         { text: "Nancy", id: 1, color: "#f8a398" },
+                         { text: "Steven", id: 2, color: "#56ca85"}],
+                        text: "text", id: "id", color: "color"
+                    }
+                }],
+                appointmentSettings: {
+                    dataSource: [{
+                        EventId: 100,
+                        EventSubject: "Research on Sky Miracles",
+                        EventStartTime: new Date(2014, 4, 2, 9, 00),
+                        EventEndTime: new Date(2014, 4, 2, 10, 30),
+                        ownerId: 2
+                    }],
+                    id: "EventId",
+                    startTime: "EventStartTime",
+                    endTime: "EventEndTime",
+                    subject: "EventSubject",
+                    resourceFields: "ownerId" 
+                },
+                //Configure the blockout settings
+                blockoutSettings: {
+                    //Enable the blockout options
+                    enable: true,
+                    //data source collection binding
+                    dataSource: [{
+                        BlockId: 101,
+                        BlockStartTime: new Date(2014, 4, 1, 10, 00),
+                        BlockEndTime: new Date(2014, 4, 1, 11, 00),
+                        BlockSubject: "Travel",
+                        IsBlockAppointment: true,
+                        BlockResId: 2
+                    }],
+                    id: "BlockId",
+                    startTime: "BlockStartTime",
+                    endTime: "BlockEndTime",
+                    subject: "BlockSubject",
+                    isBlockAppointment: "IsBlockAppointment",
+                    //resource id mapper field
+                    resourceId: "BlockResId"
+                }
+            });
+        });
+</script>
+
+{% endhighlight %}
+
