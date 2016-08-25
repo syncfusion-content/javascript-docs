@@ -4302,6 +4302,520 @@ When set to true, displays the other months days from the current month on the S
 
 {% endhighlight %}
 
+### blockoutSettings `object`
+{:#members:blockoutsettings}
+
+Blocks the user-specific time interval on the Scheduler, so that no appointments can be created on that particular time slots. It includes the dataSource option and also the fields related to block intervals.
+
+### blockoutSettings.enable `boolean`
+{:#members:blockoutsettings-enable}
+
+When set to true, enables the blockout option to be applied on the Scheduler cells.
+
+#### Default Value
+
+* false
+
+#### Example - To enable the block intervals option.
+
+{% highlight html %}
+
+<div id="Schedule"></div>
+    
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+                currentDate: new Date(2014, 4, 5),
+             	blockoutSettings: {
+                    enable:true,
+                    dataSource: [{
+                        Id: 101,
+                        Subject: "Talk with Nature",
+                        StartTime: new Date(2014, 4, 5, 10, 00),
+                        EndTime: new Date(2014, 4, 5, 12, 00)
+                    }]
+                }   
+            });
+        });
+</script>
+
+{% endhighlight %}
+
+### blockoutSettings.templateId `string`
+{:#members:blockoutsettings-templateid}
+
+Template design that applies on the Schedule block intervals. All the field names that are mapped from dataSource to the appropriate field properties within the blockoutSettings can be used within the template.
+
+#### Default Value
+
+* null
+
+#### Example - To set the block intevals template.
+
+{% highlight html %}
+
+<div id="Schedule"></div>
+    
+<script id="blocktemplate" type="text/x-jsrender">
+   <div style="height:100%">
+      <div>{{:Subject}}</div>
+   </div>
+</script>
+
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+                currentDate:new Date(2014,4,5),
+                blockoutSettings: {
+                    enable: true,
+                    templateId: "#blocktemplate",
+                    dataSource: [{
+                        Id: 101,
+                        Subject: "Talk with Nature",
+                        StartTime: new Date(2014, 4, 5, 10, 00),
+                        EndTime: new Date(2014, 4, 5, 11, 00)                        
+                    }]
+                }
+            });
+        });
+</script>
+
+{% endhighlight %}
+
+### blockoutSettings.dataSource `object|Array`
+{:#members:blockoutsettings-datasource}
+
+The dataSource option accepts either JSON object collection or DataManager ([ej.DataManager](/js/datamanager/overview)) instance that contains Schedule block intervals.
+
+#### Default Value
+
+* []
+
+#### Example - To set the dataSource with array of JSON object collection.
+
+{% highlight html %}
+       
+<div id="Schedule"></div>
+
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+                currentDate:new Date(2014,4,5),
+		        blockoutSettings: {
+                    enable:true,
+                    dataSource: [{
+                        Id: 101,
+                        Subject: "Service",
+                        StartTime: new Date(2014, 4, 5, 10, 00),
+                        EndTime: new Date(2014, 4, 5, 12, 00)
+                    },
+                    {
+                        Id: 102,
+                        Subject: "Bad Monsoon",
+                        StartTime: new Date(2014, 4, 5, 05, 00),
+                        EndTime: new Date(2014, 4, 5, 07, 00)
+                    }]
+                }
+            });
+        });
+</script>
+
+{% endhighlight %}
+
+#### Example - To set the dataSource with data manager instance.
+
+{% highlight html %}
+
+<div id="Schedule"></div>
+
+<script type="text/javascript">
+        $(function () {
+            // DataManager creation
+            var dataManager = ej.DataManager({
+                url: "http://mvc.syncfusion.com/OdataServices/Northwnd.svc/Events",
+                crossDomain: true
+            });
+
+            $("#Schedule").ejSchedule({
+                currentDate: new Date(2014, 4, 5),
+                blockoutSettings: {
+                    dataSource: dataManager // passing remote url
+                }
+            });
+        });
+</script>
+
+{% endhighlight %}
+
+
+### blockoutSettings.query `string`
+{:#members:blockoutsettings-query}
+
+It holds either the ej.Query() object or simply the query string that retrieves the specified records from the table.
+
+#### Default Value
+
+* null
+
+#### Example - Query the data manager to fetch specific record count from the Events table.
+
+{% highlight html %}
+
+<div id="Schedule"></div>
+
+<script type="text/javascript">
+        $(function () {
+            // DataManager creation
+            var dataManager = ej.DataManager({
+                url: "http://mvc.syncfusion.com/OdataServices/Northwnd.svc",
+                crossDomain: true
+            });
+            // Query creation
+            var query = ej.Query().from("Events").take(10);
+
+            $("#Schedule").ejSchedule({
+                currentDate: new Date(2014, 4, 5),
+                blockoutSettings: {
+                    enable:true,
+                    dataSource: dataManager, // passing remote url
+                    query: query // query to retrieve the records from “Events” table
+                }
+            });
+        });
+</script>
+
+{% endhighlight %}
+
+### blockoutSettings.tableName `string`
+{:#members:blockoutsettings-tablename}
+
+Assign the table name from where the records are to be fetched for the Schedule.
+
+#### Default Value
+
+* null
+
+#### Example - Using tableName property to fetch all the records directly from it.
+
+{% highlight html %}
+
+<div id="Schedule"></div>
+
+<script type="text/javascript">
+        $(function () {
+            // DataManager creation
+            var dataManager = ej.DataManager({
+                url: "http://mvc.syncfusion.com/OdataServices/Northwnd.svc",
+                crossDomain: true
+            });
+            
+            $("#Schedule").ejSchedule({
+                currentDate: new Date(2014, 4, 5),
+                blockoutSettings: {
+                    enable: true,
+                    dataSource: dataManager, // passing remote url
+                    tableName: "Events" // tableName to retrieve the records from it
+                }
+            });
+        });
+</script>
+
+{% endhighlight %}
+
+> The following are the block time fields that holds the appropriate column names from the dataSource. All its default values are `null`.
+
+### blockoutSettings.id `string`
+{:#members:blockoutsettings-id}
+
+Binds the id field name in dataSource to the id of block time interval. It denotes the unique id assigned to each of the block records.
+
+#### Default Value
+
+* null
+
+### blockoutSettings.startTime `string`
+{:#members:blockoutsettings-starttime}
+
+Binds the name of startTime field in the dataSource with start time of block time interval. It indicates the date and time, when the block interval actually starts in the Scheduler.
+
+#### Default Value
+
+* null
+
+### blockoutSettings.endTime `string`
+{:#members:blockoutsettings-endtime}
+
+Binds the name of endTime field in dataSource with the end time of block time interval. It indicates the date and time, when the block interval actually ends in the Scheduler.
+
+#### Default Value
+
+* null
+
+#### Example - To create a block intervals with the fields id, startTime and endTime.
+
+{% highlight html %}
+
+<div id="Schedule"></div>
+
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+                currentDate: new Date(2014, 4, 5),
+                blockoutSettings: {
+                    enable: true,
+                    dataSource: [{
+                        BlockId: 101,
+                        BlockStartTime: new Date(2014, 4, 5, 10, 00),
+                        BlockEndTime: new Date(2014, 4, 5, 11, 00)
+                    }],
+                    id: "BlockId",
+                    startTime: "BlockStartTime",
+                    endTime: "BlockEndTime"
+                }
+            });
+        });
+</script>
+
+{% endhighlight %}
+
+> The fields startTime and endTime are mandatory fields to create the block intervals.
+
+### blockoutSettings.subject `string`
+{:#members:blockoutsettings-subject}
+
+Binds the name of subject field in the dataSource to block time Subject. Indicates the Subject or title that gets displayed on the Schedule block intervals.
+
+#### Default Value
+
+* null
+
+#### Example - The block intervals with Subject.
+
+{% highlight html %}
+
+<div id="Schedule"></div>
+
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+                currentDate: new Date(2014, 4, 5),
+                blockoutSettings: {
+                    enable: true,
+                    dataSource: [{
+                        BlockId: 101,
+                        BlockStartTime: new Date(2014, 4, 5, 10, 00),
+                        BlockEndTime: new Date(2014, 4, 5, 11, 00),
+                        BlockSubject: "Holiday"
+                    }],
+                    id: "BlockId",
+                    startTime: "BlockStartTime",
+                    endTime: "BlockEndTime",
+                    subject: "BlockSubject"
+                }
+            });
+        });
+</script>
+
+{% endhighlight %}
+
+### blockoutSettings.isBlockAppointment `string`
+{:#members:blockoutsettings-isblockappointment}
+
+Binds the name of `isBlockAppointment` field in dataSource. When set to true, disables the appointments that lies on the blocked area and restrict to perform CRUD operations in it.
+
+#### Default Value
+
+* null
+
+#### Example - To restrict the CRUD operations on the appointments that lies behind the blocked intervals.
+
+{% highlight html %}
+
+<div id="Schedule"></div>
+
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+                currentDate: new Date(2014, 4, 5),
+                blockoutSettings: {
+                    enable: true,
+                    dataSource: [{
+                        BlockId: 101,
+                        BlockStartTime: new Date(2014, 4, 5, 10, 00),
+                        BlockEndTime: new Date(2014, 4, 5, 11, 00),
+                        BlockSubject: "Holiday",
+                        IsBlockAppointment: true
+                    }],
+                    id: "BlockId",
+                    startTime: "BlockStartTime",
+                    endTime: "BlockEndTime",
+                    subject: "BlockSubject",
+                    isBlockAppointment: "IsBlockAppointment"
+                }
+            });
+        });
+</script>
+
+{% endhighlight %}
+
+### blockoutSettings.isAllDay `string`
+{:#members:blockoutsettings-isallday}
+
+Binds the name of `isAllDay` field in dataSource. It indicates whether an entire day is blocked or not.
+
+#### Default Value
+
+* null
+
+#### Example - To limits the entire day
+
+{% highlight html %}
+
+<div id="Schedule"></div>
+
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+                currentDate: new Date(2014, 4, 5),
+                blockoutSettings: {
+                    enable: true,
+                    dataSource: [{
+                        BlockId: 101,
+                        BlockStartTime: new Date(2014, 4, 5, 10, 00),
+                        BlockEndTime: new Date(2014, 4, 5, 11, 00),
+                        BlockSubject: "Holiday",
+                        IsBlockAppointment: true,
+                        FullDay: true
+                    }],
+                    id: "BlockId",
+                    startTime: "BlockStartTime",
+                    endTime: "BlockEndTime",
+                    subject: "BlockSubject",
+                    isBlockAppointment: "IsBlockAppointment",
+                    isAllDay: "FullDay"
+                }
+            });
+        });
+</script>
+
+{% endhighlight %}
+
+### blockoutSettings.resourceId `string`
+{:#members:blockoutsettings-resourceid}
+
+Binds the name of `resourceId` field in dataSource. Specifies the id of the resources, to which the time intervals are needed to be blocked.
+
+#### Default Value
+
+* null
+
+#### Example - Block intervals for multiple resources scenario.
+
+{% highlight html %}
+
+<div id="Schedule"></div>
+
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+                currentDate: new Date(2014, 4, 2),
+                group: {
+                    resources: ["Owners"]
+                },
+                resources: [{
+                    field: "ownerId", title: "Owner", name: "Owners",
+                    allowMultiple: true,
+                    resourceSettings: {
+                        dataSource: [
+                         { text: "Nancy", id: 1, color: "#f8a398" },
+                         { text: "Steven", id: 2, color: "#56ca85"}],
+                        text: "text", id: "id", color: "color"
+                    }
+                }],
+                appointmentSettings: {
+                    dataSource: [{
+                        EventId: 100,
+                        EventSubject: "Research on Sky Miracles",
+                        EventStartTime: new Date(2014, 4, 2, 9, 00),
+                        EventEndTime: new Date(2014, 4, 2, 10, 30),
+                        ownerId: 2
+                    }],
+                    id: "EventId",
+                    startTime: "EventStartTime",
+                    endTime: "EventEndTime",
+                    subject: "EventSubject",
+                    resourceFields: "ownerId" 
+                },
+                blockoutSettings: {
+                    enable: true,
+                    dataSource: [{
+                        BlockId: 101,
+                        BlockStartTime: new Date(2014, 4, 1, 10, 00),
+                        BlockEndTime: new Date(2014, 4, 1, 11, 00),
+                        BlockSubject: "Travel",
+                        IsBlockAppointment: true,
+                        BlockResId: 2
+                    }],
+                    id: "BlockId",
+                    startTime: "BlockStartTime",
+                    endTime: "BlockEndTime",
+                    subject: "BlockSubject",
+                    isBlockAppointment: "IsBlockAppointment",
+                    resourceId: "BlockResId"
+                }
+            });
+        });
+</script>
+
+{% endhighlight %}
+
+### blockoutSettings.customStyle `string`
+{:#members:blockoutsettings-customstyle}
+
+Binds the name of `customStyle` field in dataSource. It applies the custom CSS to the block intervals.
+
+#### Default Value
+
+* null
+
+#### Example - The block intervals with custom style.
+
+{% highlight html %}
+
+<div id="Schedule"></div>
+<style type="text/css">
+    .customcss
+    {
+        background-color: Teal !important;
+    }
+</style>
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+                currentDate: new Date(2014, 4, 5),
+                blockoutSettings: {
+                    enable: true,
+                    dataSource: [{
+                        BlockId: 101,
+                        BlockStartTime: new Date(2014, 4, 5, 10, 00),
+                        BlockEndTime: new Date(2014, 4, 5, 11, 00),
+                        BlockSubject: "Service",
+                        IsBlockAppointment: true,
+                        BlockStyle: "customcss"
+                    }],
+                    id: "BlockId",
+                    startTime: "BlockStartTime",
+                    endTime: "BlockEndTime",
+                    subject: "BlockSubject",
+                    isBlockAppointment: "IsBlockAppointment",
+                    customStyle: "BlockStyle"
+                }
+            });
+        });
+</script>
+
+{% endhighlight %}
+
 ## Methods
 
 ### deleteAppointment(data)
