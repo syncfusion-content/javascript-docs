@@ -43,7 +43,7 @@ It takes TreeGrid model properties that should be pass to exporting</td></tr>
 <td>
 datasource</td><td>
 object</td><td>
-It holds the data to be exported in pdf</td></tr>
+It holds the data to be exported in PDF</td></tr>
 <tr>
 <td>
 TreeGridExportSettings</td><td>
@@ -68,7 +68,7 @@ It takes TreeGrid model properties that should be pass to exporting</td></tr>
 <td>
 datasource</td><td>
 object</td><td>
-It holds the data to be exported in pdf</td></tr>
+It holds the data to be exported in PDF</td></tr>
 <tr>
 <td>
 TreeGridExportSettings</td><td>
@@ -98,7 +98,7 @@ It takes TreeGrid model properties that should be pass to exporting</td></tr>
 <td>
 datasource</td><td>
 object</td><td>
-It holds the data to be exported in pdf</td></tr>
+It holds the data to be exported in PDF</td></tr>
 <tr>
 <td>
 TreeGridExportSettings</td><td>
@@ -133,7 +133,7 @@ It takes TreeGrid model properties that should be pass to exporting</td></tr>
 <td>
 datasource</td><td>
 object</td><td>
-It holds the data to be exported in pdf</td></tr>
+It holds the data to be exported in PDF</td></tr>
 <tr>
 <td>
 TreeGridExportSettings</td><td>
@@ -165,7 +165,7 @@ It takes TreeGrid model properties that should be pass to exporting</td></tr>
 <td>
 datasource</td><td>
 object</td><td>
-It holds the data to be exported in pdf</td></tr>
+It holds the data to be exported in PDF</td></tr>
 <tr>
 <td>
 TreeGridExportSettings</td><td>
@@ -205,7 +205,7 @@ It takes TreeGrid model properties that should be pass to exporting</td></tr>
 <td>
 datasource</td><td>
 object</td><td>
-It holds the data to be exported in pdf</td></tr>
+It holds the data to be exported in PDF</td></tr>
 <tr>
 <td>
 TreeGridExportSettings</td><td>
@@ -245,7 +245,7 @@ It takes TreeGrid model properties that should be pass to exporting</td></tr>
 <td>
 datasource</td><td>
 object</td><td>
-It holds the data to be exported in pdf</td></tr>
+It holds the data to be exported in PDF</td></tr>
 <tr>
 <td>
 TreeGridExportSettings</td><td>
@@ -290,7 +290,7 @@ It takes TreeGrid model properties that should be pass to exporting</td></tr>
 <td>
 datasource</td><td>
 object</td><td>
-It holds the data to be exported in pdf</td></tr>
+It holds the data to be exported in PDF</td></tr>
 <tr>
 <td>
 TreeGridExportSettings</td><td>
@@ -300,7 +300,7 @@ Returns the exporting settings like Unicode support, columns fit to width, hidde
 <td>
 Document</td><td>
 Object</td><td>
-It specifies in case of multiple exporting, in which document the file export should append, it holds the internally stored pdf files which is exported previously.</td></tr>
+It specifies in case of multiple exporting, in which document the file export should append, it holds the internally stored PDF files which is exported previously.</td></tr>
 <tr>
 <td>
 exportToFile </td><td>
@@ -330,7 +330,7 @@ It takes TreeGrid model properties that should be pass to exporting</td></tr>
 <td>
 datasource</td><td>
 object</td><td>
-It holds the data to be exported in pdf</td></tr>
+It holds the data to be exported in PDF</td></tr>
 <tr>
 <td>
 TreeGridExportSettings</td><td>
@@ -345,7 +345,7 @@ With this parameter you can set the downloaded file name. By default it is set t
 <td>
 Document</td><td>
 Object</td><td>
-It specifies in case of multiple exporting, in which document the file export should append, it holds the internally stored pdf files which is exported previously.</td></tr>
+It specifies in case of multiple exporting, in which document the file export should append, it holds the internally stored PDF files which is exported previously.</td></tr>
 <tr>
 <td>
 exportToFile </td><td>
@@ -375,7 +375,7 @@ It takes TreeGrid model properties that should be pass to exporting</td></tr>
 <td>
 datasource</td><td>
 object</td><td>
-It holds the data to be exported in pdf</td></tr>
+It holds the data to be exported in PDF</td></tr>
 <tr>
 <td>
 TreeGridExportSettings</td><td>
@@ -395,7 +395,7 @@ With this parameter you can set the location where the exporting file should dow
 <td>
 Document</td><td>
 Object</td><td>
-It specifies in case of multiple exporting, in which document the file export should append, it holds the internally stored pdf files which is exported previously.</td></tr>
+It specifies in case of multiple exporting, in which document the file export should append, it holds the internally stored PDF files which is exported previously.</td></tr>
 <tr>
 <td>
 exportToFile </td><td>
@@ -489,7 +489,7 @@ It takes TreeGrid model properties that should be pass to exporting</td></tr>
 <td>
 datasource</td><td>
 object</td><td>
-It holds the data to be exported in pdf</td></tr>
+It holds the data to be exported in PDF</td></tr>
 <tr>
 <td>
 excelName</td><td>
@@ -524,7 +524,7 @@ It takes TreeGrid model properties that should be pass to exporting</td></tr>
 <td>
 datasource</td><td>
 object</td><td>
-It holds the data to be exported in pdf</td></tr>
+It holds the data to be exported in PDF</td></tr>
 <tr>
 <td>
 excelName</td><td>
@@ -564,7 +564,7 @@ It takes TreeGrid model properties that should be pass to exporting</td></tr>
 <td>
 datasource</td><td>
 object</td><td>
-It holds the data to be exported in pdf</td></tr>
+It holds the data to be exported in PDF</td></tr>
 <tr>
 <td>
 excelName</td><td>
