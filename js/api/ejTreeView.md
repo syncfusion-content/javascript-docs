@@ -462,7 +462,29 @@ $("#treeView").ejTreeView({
 
 
 
+### allowMultiSelection `boolean`
+{:#members:allowmultiselection}
 
+Gets or sets a value that indicates whether to enable multi selection support for TreeView.
+
+#### Default Value
+
+* false
+
+#### Example
+
+
+{% highlight html %}
+ 
+<div id="treeView"></div>
+<script>
+// Initialize the TreeView with the allowMultiSelection value specified.
+$("#treeView").ejTreeView({
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+    allowMultiSelection: true
+});
+</script>
+{% endhighlight %}
 
 
 
@@ -1668,7 +1690,31 @@ $("#treeView").ejTreeView({
 
 
 
+### selectedNodes `array`
+{:#members:selectednodes}
 
+Gets or sets a value that indicates the selectedNodes index collection as an array. The given array index position denotes the nodes, that are selected while rendering TreeView.
+
+If we enable the `allowMultiSelection` property then it will select TreeView node of all given array indexes otherwise it will select TreeView node of the first index from the given array. 
+
+#### Default Value
+
+* []
+
+#### Example
+
+{% highlight html %}
+ 
+<div id="treeView"></div>
+<script>          
+// Initialize the TreeView with the selectedNodes value specified.
+$("#treeView").ejTreeView({
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+    allowMultiSelection: true,
+    selectedNodes: [1, 2] 
+});
+</script>
+{% endhighlight %}
 
 
 
@@ -3341,7 +3387,41 @@ $("#treeView").ejTreeView("getSelectedNode");
 
 
 
+### getSelectedNodes()
+{:#methods:getselectednodes}
 
+To get the currently selected nodes in TreeView.
+
+
+#### Returns:
+{:#methods:returns:}
+
+array
+
+
+#### Example
+
+
+{% highlight html %}
+
+<div id="treeView"></div>
+<script>
+// Initialize TreeView
+$("#treeView").ejTreeView({
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+});
+
+var treeObj = $("#treeView").data("ejTreeView");
+treeObj.getSelectedNodes(); // Currently selected TreeView nodes will be returned as array.
+</script>
+{% endhighlight %}
+
+
+{% highlight html %}
+<script>
+$("#treeView").ejTreeView("getSelectedNodes");        
+</script>
+{% endhighlight %}
 
 
 
@@ -3398,7 +3478,40 @@ $("#treeView").ejTreeView("getSelectedNodeIndex");
 
 
 
+### getSelectedNodesIndex()
+{:#methods:getselectednodesindex}
 
+To get the index positions of currently selected nodes in TreeView.
+
+#### Returns:
+{:#methods:returns:}
+
+array
+
+
+#### Example
+
+
+{% highlight html %}
+
+<div id="treeView"></div>
+<script>
+// Initialize TreeView
+$("#treeView").ejTreeView({
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+});
+
+var treeObj = $("#treeView").data("ejTreeView");
+treeObj.getSelectedNodesIndex(); // Currently selected TreeView nodes index positions will be returned as array.
+</script>
+{% endhighlight %}
+
+
+{% highlight html %}
+<script>
+$("#treeView").ejTreeView("getSelectedNodesIndex");        
+</script>
+{% endhighlight %}
 
 
 
@@ -4744,7 +4857,36 @@ $("#treeView").ejTreeView("removeNode", $("#book"));
 
 
 
+### selectAll()
+{:#methods:selectall}
 
+To select all the TreeView nodes when enable `allowMultiSelection` property.
+
+
+#### Example
+
+
+{% highlight html %}
+ 
+<div id="treeView"></div>
+<script>
+// Initialize TreeView
+$("#treeView").ejTreeView({
+    allowMultiSelection: true,
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+});
+
+var treeObj = $("#treeView").data("ejTreeView");
+treeObj.selectAll(); // All the TreeView nodes will be selected.
+</script>
+{% endhighlight %}
+
+
+{% highlight html %}
+<script>
+$("#treeView").ejTreeView("selectAll");        
+</script>
+{% endhighlight %}
 
 
 
@@ -5022,6 +5164,36 @@ $("#treeView").ejTreeView("uncheckNode", $("#book"));
 
 
 
+### unselectAll()
+{:#methods:unselectall}
+
+To unselect all the TreeView nodes when enable `allowMultiSelection` property.
+
+
+#### Example
+
+
+{% highlight html %}
+ 
+<div id="treeView"></div>
+<script>
+// Initialize TreeView
+$("#treeView").ejTreeView({
+    allowMultiSelection: true,
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+});
+
+var treeObj = $("#treeView").data("ejTreeView");
+treeObj.unselectAll(); // All the TreeView nodes will be unselected.
+</script>
+{% endhighlight %}
+
+
+{% highlight html %}
+<script>
+$("#treeView").ejTreeView("unselectAll");        
+</script>
+{% endhighlight %}
 
 
 
@@ -5517,6 +5689,11 @@ Fires before deleting node in TreeView.
  parentDetails </td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the parent node values</td> 
+</tr>
+<tr>
+<td class="name">removedNodes</td>
+<td class="type"><span class="param-type">array</span></td>
+<td class="description">returns the currently removed nodes</td> 
 </tr>
 </tbody>
 </table>
@@ -7016,6 +7193,11 @@ Fires when node deleted successfully.
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the given parent node details</td> 
 </tr>
+<tr>
+<td class="name">removedNodes</td>
+<td class="type"><span class="param-type">array</span></td>
+<td class="description">returns the currently removed nodes</td> 
+</tr>
 </tbody>
 </table>
 
@@ -7824,6 +8006,11 @@ Fires when node selected successfully.
 <td class="description">returns the id of the parent element of current element of the node clicked</td>
 </tr>
 <tr>
+<td class="name">selectedNodes</td>
+<td class="type"><span class="param-type">array</span></td>
+<td class="description">returns the current selected nodes index of TreeView</td>
+</tr>
+<tr>
 <td class="name">
  value </td>
 <td class="type"><span class="param-type">string</span></td>
@@ -7970,6 +8157,81 @@ $("#treeView").ejTreeView({
     nodeUncheck: function(args) {}
 });
 </script>{% endhighlight %}
+
+
+
+### nodeUnselect
+{:#events:nodeunselect}
+
+Fires once node unselected successfully.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
+</tr>
+<tr>
+<td class="name">currentElement</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">returns the current element of the node unselected</td>
+</tr>
+<tr>
+<td class="name">id</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">returns the id of the current element of the node unselected</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type"><ts ref="ej.TreeView.Model"/><span class="param-type">object</span></td>
+<td class="description">returns the TreeView model</td>
+</tr>
+<tr>
+<td class="name">parentId</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">returns the id of the parent element of current element of the node unselected</td>
+</tr>
+<tr>
+<td class="name">selectedNodes</td>
+<td class="type"><span class="param-type">array</span></td>
+<td class="description">returns the current selected nodes index of TreeView</td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">returns the name of the event</td>
+</tr>
+<tr>
+<td class="name">value</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">returns the value of the node</td>
+</tr>
+</tbody>
+</table>
+
+
+#### Example
+
+{% highlight html %}
+
+<div id="treeView"></div>
+<script>
+// Initialize TreeView with nodeUnselect event.
+$("#treeView").ejTreeView({
+    allowMultiSelection: true,
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+    nodeUnselect: function(args) {}
+});
+</script>{% endhighlight %}
+
 
 
 ### ready
