@@ -34,7 +34,7 @@ While right click on File / Folder<br/><br/></td><td>
 <tr>
 <td>
 While right click on layout (content pane)<br/><br/></td><td>
-* Refresh<br/>* Paste<br/>* Sort by<br/>* New Folder<br/>* Upload <br/>* Get info <br/><br/><br/><br/></td><td>
+* Refresh<br/>* Paste<br/>* Sort By<br/>* New Folder<br/>* Upload <br/>* Get info <br/><br/><br/><br/></td><td>
 <br/><br/><br/><br/></td></tr>
 </table>
 The below table explains the behavior of each context menu item:
@@ -82,7 +82,7 @@ Get info<br/><br/></td><td>
 It displays the details of the current selected file or folder.<br/><br/></td></tr>
 <tr>
 <td>
-Sort by<br/><br/></td><td>
+Sort By<br/><br/></td><td>
 It's used to sorting the files and folders from the current directory.The sorting can be done based on the columns availbale from grid,in both ascending and descending order.<br/><br/></td></tr>
 </table>
 ## Context menu Visibility

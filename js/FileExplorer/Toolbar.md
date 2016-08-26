@@ -39,13 +39,13 @@ From below you can see the available toolbar items and its categorization:
 
                 layout: ["Layout"],
                 
-                sortby: ["Sortby"]
+                sortBy: ["SortBy"]
 
         },
 
         // all tools categories are placed in the toolbar by the below order
 
-        toolsList: ["layout", "creation", "navigation", "addressBar", "editing", "copyPaste", "sortby", "getProperties", "searchBar"]
+        toolsList: ["layout", "creation", "navigation", "addressBar", "editing", "copyPaste", "sortBy", "getProperties", "searchBar"]
 
 {% endhighlight %}
 
