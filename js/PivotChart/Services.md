@@ -27,10 +27,10 @@ To export PivotChart data to an Excel, Word, PDF or Image document.
 
 ### URL
 
-http://js.syncfusion.com/demos/ejservices/api/JSPivotChartExport/ExcelExport
-http://js.syncfusion.com/demos/ejservices/api/JSPivotChartExport/WordExport
-http://js.syncfusion.com/demos/ejservices/api/JSPivotChartExport/PDFExport
-http://js.syncfusion.com/demos/ejservices/api/JSPivotChartExport/ImageExport
+[http://js.syncfusion.com/demos/ejservices/api/JSPivotChartExport/ExcelExport](http://js.syncfusion.com/demos/ejservices/api/JSPivotChartExport/ExcelExport)
+[http://js.syncfusion.com/demos/ejservices/api/JSPivotChartExport/WordExport](http://js.syncfusion.com/demos/ejservices/api/JSPivotChartExport/WordExport)
+[http://js.syncfusion.com/demos/ejservices/api/JSPivotChartExport/PDFExport](http://js.syncfusion.com/demos/ejservices/api/JSPivotChartExport/PDFExport)
+[http://js.syncfusion.com/demos/ejservices/api/JSPivotChartExport/ImageExport](http://js.syncfusion.com/demos/ejservices/api/JSPivotChartExport/ImageExport)
 
 ### Parameter
 <table>
@@ -65,45 +65,55 @@ http://js.syncfusion.com/demos/ejservices/api/JSPivotChartExport/ImageExport
 
 {% highlight html %}
 
-<div id="PivotChart1" style="min-height: 275px; min-width: 525px; height: 460px; width: 950px">
-<button id="btnExport">Export</button>
- $(function() {
-     $("#PivotChart1").ejPivotChart({
-         dataSource: {
-             data: pivot_dataset,
-             rows: [{
-                 fieldName: "Country",
-                 fieldCaption: "Country"
-             }],
-             columns: [{
-                 fieldName: "Product",
-                 fieldCaption: "Product"
-             }],
-             values: [{
-                 fieldName: "Amount",
-                 fieldCaption: "Amount"
-             }]
-         }
-     });
-     $("#btnExport").ejButton({
-           click: "exportBtnClick"
-     });
- });
-     function exportBtnClick(args)
-     {
-        var pGridObj = $('#PivotChart1').data("ejPivotChart");
-        pGridObj.exportPivotChart("http://js.syncfusion.com/demos/ejservices/api/JSPivotChartExport/ExcelExport");  //Excel Export
-        pGridObj.exportPivotChart("http://js.syncfusion.com/demos/ejservices/api/JSPivotChartExport/WordExport");   //Word Export
-        pGridObj.exportPivotChart("http://js.syncfusion.com/demos/ejservices/api/JSPivotChartExport/PDFExport");    //PDF Export
-        pGridObj.exportPivotChart("http://js.syncfusion.com/demos/ejservices/api/JSPivotChartExport/ImageExport","PivotChart", ej.PivotChart.ExportOptions.PNG); //PNG Export
-        pGridObj.exportPivotChart("http://js.syncfusion.com/demos/ejservices/api/JSPivotChartExport/ImageExport","PivotChart", ej.PivotChart.ExportOptions.EMF); //EMF Export
-        pGridObj.exportPivotChart("http://js.syncfusion.com/demos/ejservices/api/JSPivotChartExport/ImageExport","PivotChart", ej.PivotChart.ExportOptions.JPG); //JPG Export
-        pGridObj.exportPivotChart("http://js.syncfusion.com/demos/ejservices/api/JSPivotChartExport/ImageExport","PivotChart", ej.PivotChart.ExportOptions.GIF); //GIF Export
-        pGridObj.exportPivotChart("http://js.syncfusion.com/demos/ejservices/api/JSPivotChartExport/ImageExport","PivotChart", ej.PivotChart.ExportOptions.BMP); //BMP Export
-     }
+<html>
+//...
+<body>
+      
+     <div id="PivotChart1" style="min-height: 275px; min-width: 525px; height: 460px; width: 950px"></div>
+     <button id="btnExport">Export</button>
+     <script type="text/javascript">
+        $(function() {
+            $("#PivotChart1").ejPivotChart({
+                dataSource: {
+                   data: pivot_dataset,
+                   rows: [{
+                      fieldName: "Country",
+                      fieldCaption: "Country"
+                   }],
+                  columns: [{
+                      fieldName: "Product",
+                      fieldCaption: "Product"
+                  }],
+                  values: [{
+                      fieldName: "Amount",
+                      fieldCaption: "Amount"
+                  }]
+               }
+           });
+           $("#btnExport").ejButton({
+              click: "exportBtnClick"
+           });
+       });
+       function exportBtnClick(args)
+       {
+          var pGridObj = $('#PivotChart1').data("ejPivotChart");
+          pGridObj.exportPivotChart("http://js.syncfusion.com/demos/ejservices/api/JSPivotChartExport/ExcelExport");  //Excel Export
+          pGridObj.exportPivotChart("http://js.syncfusion.com/demos/ejservices/api/JSPivotChartExport/WordExport");   //Word Export
+          pGridObj.exportPivotChart("http://js.syncfusion.com/demos/ejservices/api/JSPivotChartExport/PDFExport");    //PDF Export
+          pGridObj.exportPivotChart("http://js.syncfusion.com/demos/ejservices/api/JSPivotChartExport/ImageExport","PivotChart", ej.PivotChart.ExportOptions.PNG); //PNG Export
+          pGridObj.exportPivotChart("http://js.syncfusion.com/demos/ejservices/api/JSPivotChartExport/ImageExport","PivotChart", ej.PivotChart.ExportOptions.EMF); //EMF Export
+          pGridObj.exportPivotChart("http://js.syncfusion.com/demos/ejservices/api/JSPivotChartExport/ImageExport","PivotChart", ej.PivotChart.ExportOptions.JPG); //JPG Export
+          pGridObj.exportPivotChart("http://js.syncfusion.com/demos/ejservices/api/JSPivotChartExport/ImageExport","PivotChart", ej.PivotChart.ExportOptions.GIF); //GIF Export
+          pGridObj.exportPivotChart("http://js.syncfusion.com/demos/ejservices/api/JSPivotChartExport/ImageExport","PivotChart", ej.PivotChart.ExportOptions.BMP); //BMP Export
+       }
+       
+     </script>
+</body>
+</html>
+
 {% endhighlight %}
 
-#### PivotChart Exporting in C# 
+#### PivotChart Exporting in C\#
 
 {% highlight c# %}
 
