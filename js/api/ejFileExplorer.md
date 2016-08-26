@@ -334,7 +334,7 @@ By using the contextMenuSettings property, you can customize the ContextMenu in 
 ### contextMenuSettings.items `object`
 {:#members:contextmenusettings-items}
 
-The items property is used to configure and group required ContextMenu items in FileExplorer control.
+The items property is used to configure and group the required ContextMenu items in FileExplorer control.
 
 #### Default Value
 
@@ -354,13 +354,14 @@ The items property is used to configure and group required ContextMenu items in 
         // Initialize the FileExplorer with the items value specified.
         $('#fileExplorer').ejFileExplorer({ 
         contextMenuSettings:{
+                //define the ContextMenu items
                 items:{
-                        // NavigationPane ContextMenu
+                        // removed the "NewFolder" item from NavigationPane ContextMenu
                         navbar: ["Upload", "|", "Delete", "Rename", "|", "Cut", "Copy", "Paste", "|", "Getinfo"],
-                        // Current working directory ContextMenu
-                        cwd: ["Refresh", "Paste","|", "Sortby", "|", "NewFolder", "Upload"],
-                        // Selected files/ folders ContextMenu
-                        files: ["Open", "Download", "|", "Upload", "|", "Delete", "Rename", "|", "Cut", "Copy", "Paste", "|", "Getinfo"]
+                        // added the custom menu item (View) to Current working directory ContextMenu
+                        cwd: ["Refresh", "Paste","|", "Sortby", "|", "NewFolder", "Upload", "|", "Getinfo", "View"],
+                        // removed "Upload" item from Selected files/ folder's ContextMenu
+                        files: ["Open", "Download", "|", "Delete", "Rename", "|", "Cut", "Copy", "Paste", "|", "OpenFolderLocation", "Getinfo"]
                 },
         },
         path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
@@ -374,7 +375,7 @@ The items property is used to configure and group required ContextMenu items in 
 ### contextMenuSettings.customMenuFields `array`
 {:#members:contextmenusettings-custommenufields}
 
-The customMenuFileds property is used to define custom ContextMenu items with custom functionality.
+The customMenuFileds property is used to define custom functionality for custom ContextMenu item's which are defined in `items` property.
 
 #### Default Value
 
@@ -393,14 +394,16 @@ The customMenuFileds property is used to define custom ContextMenu items with cu
         // Initialize the FileExplorer with the customMenuFields value specified.
         $('#fileExplorer').ejFileExplorer({ 
         contextMenuSettings:{
+                //define the ContextMenu items
                 items:{
-                        // NavigationPane ContextMenu
-                        navbar: ["NewFolder", "Upload", "|", "Delete", "Rename", "|", "Cut", "Copy", "Paste", "|", "Getinfo"],
-                        // Current working directory ContextMenu
+                        // removed the "NewFolder" item from NavigationPane ContextMenu
+                        navbar: ["Upload", "|", "Delete", "Rename", "|", "Cut", "Copy", "Paste", "|", "Getinfo"],
+                        // added the custom ContextMenu item (View) to Current working directory ContextMenu
                         cwd: ["Refresh", "Paste","|", "Sortby", "|", "NewFolder", "Upload", "|", "Getinfo", "View"],
-                        // Selected files/ folders ContextMenu
-                        files: ["Open", "Download", "|", "Upload", "|", "Delete", "Rename", "|", "Cut", "Copy", "Paste", "|", "OpenFolderLocation", "Getinfo"]
+                        // removed "Upload" item from Selected files/ folder's ContextMenu
+                        files: ["Open", "Download", "|", "Delete", "Rename", "|", "Cut", "Copy", "Paste", "|", "OpenFolderLocation", "Getinfo"]
                 },
+                //added the custom ContextMenu item's (View) functionality
                 customMenuFields: [
                 {
                         id: "View",
@@ -427,6 +430,7 @@ The customMenuFileds property is used to define custom ContextMenu items with cu
         ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction"               
         });
         
+        //define the action for custom ContextMenu item
         function onlayout(args) {
                 var feObj = $('#fileExplorer').data("ejFileExplorer");
                 feObj.option("layout", args.ID);
