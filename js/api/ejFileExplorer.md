@@ -324,6 +324,120 @@ The FileExplorer allows to select multiple files by enabling the allowMultiSelec
 
 
 
+
+### contextMenuSettings `object`
+{:#members:contextmenusettings}
+
+By using the contextMenuSettings property, you can customize the ContextMenu in the FileExplorer control.
+
+
+### contextMenuSettings.items `object`
+{:#members:contextmenusettings-items}
+
+The items property is used to configure and group required ContextMenu items in FileExplorer control.
+
+#### Default Value
+
+* {navbar: ["NewFolder", "Upload", "|", "Delete", "Rename", "|", "Cut", "Copy", "Paste", "|", "Getinfo"],
+   cwd: ["Refresh", "Paste","|", "Sortby", "|", "NewFolder", "Upload", "|", "Getinfo"],
+   files: ["Open", "Download", "|", "Upload", "|", "Delete", "Rename", "|", "Cut", "Copy", "Paste", "|", "OpenFolderLocation", "Getinfo"]}
+
+
+#### Example
+
+
+{% highlight html %}
+ 
+        <div id="fileExplorer"></div> 
+        
+        <script>
+        // Initialize the FileExplorer with the items value specified.
+        $('#fileExplorer').ejFileExplorer({ 
+        contextMenuSettings:{
+                items:{
+                        // NavigationPane ContextMenu
+                        navbar: ["Upload", "|", "Delete", "Rename", "|", "Cut", "Copy", "Paste", "|", "Getinfo"],
+                        // Current working directory ContextMenu
+                        cwd: ["Refresh", "Paste","|", "Sortby", "|", "NewFolder", "Upload"],
+                        // Selected files/ folders ContextMenu
+                        files: ["Open", "Download", "|", "Upload", "|", "Delete", "Rename", "|", "Cut", "Copy", "Paste", "|", "Getinfo"]
+                },
+        },
+        path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
+        ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction"               
+        }); 
+        </script>
+
+{% endhighlight %}
+
+
+### contextMenuSettings.customMenuFields `array`
+{:#members:contextmenusettings-custommenufields}
+
+The customMenuFileds property is used to define custom ContextMenu items with custom functionality.
+
+#### Default Value
+
+* []
+
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+        <div id="fileExplorer"></div> 
+        
+        <script>
+        // Initialize the FileExplorer with the customMenuFields value specified.
+        $('#fileExplorer').ejFileExplorer({ 
+        contextMenuSettings:{
+                items:{
+                        // NavigationPane ContextMenu
+                        navbar: ["NewFolder", "Upload", "|", "Delete", "Rename", "|", "Cut", "Copy", "Paste", "|", "Getinfo"],
+                        // Current working directory ContextMenu
+                        cwd: ["Refresh", "Paste","|", "Sortby", "|", "NewFolder", "Upload", "|", "Getinfo", "View"],
+                        // Selected files/ folders ContextMenu
+                        files: ["Open", "Download", "|", "Upload", "|", "Delete", "Rename", "|", "Cut", "Copy", "Paste", "|", "OpenFolderLocation", "Getinfo"]
+                },
+                customMenuFields: [
+                {
+                        id: "View",
+                        text: "View",
+                        child: [
+                        {
+                                id: "Tile",
+                                text: "Tile view",
+                                action: "onlayout"
+                        },
+                        {
+                                id: "Grid",
+                                text: "Grid view",
+                                action: "onlayout"
+                        },
+                        {
+                                id: "LargeIcons",
+                                text: "Large icons view",
+                                action: "onlayout"
+                        },]
+                },]
+        },
+        path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
+        ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction"               
+        });
+        
+        function onlayout(args) {
+                var feObj = $('#fileExplorer').data("ejFileExplorer");
+                feObj.option("layout", args.ID);
+        }
+        </script>
+
+{% endhighlight %}
+
+
+
+
 ### cssClass `string`
 {:#members:cssclass}
 
@@ -3241,6 +3355,302 @@ type</td>
         </script>
 
 {% endhighlight %}
+
+
+
+
+### menuBeforeOpen
+{:#events:menubeforeopen}
+
+
+Fires when before the ContextMenu opening.
+
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">argument</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description">Event parameters from FileExplorer
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">set to true when the event has to be canceled, else false.</td>
+</tr>
+<tr>
+<td class="name">contextMenu</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">returns the name of ContextMenu items group.</td>
+</tr>
+<tr>
+<td class="name">dataSource</td>
+<td class="type"><span class="param-type">array</span></td>
+<td class="description">returns the dataSource of ContextMenu.</td>
+</tr>
+<tr>
+<td class="name">element</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">returns the element of ContextMenu.</td>
+</tr>
+<tr>
+<td class="name">events</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">returns the event of ContextMenu.</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type"><ts ref="ej.FileExplorer.Model"/>
+<span class="param-type">object</span></td>
+<td class="description">returns the FileExplorer model.</td>
+</tr>
+<tr>
+<td class="name">target</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">returns the target element.</td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">returns the name of the event.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+#### Example
+
+
+{% highlight html %}
+        
+        <div id="fileExplorer"></div> 
+        
+        <script>
+        // menuBeforeOpen event of ContextMenu for FileExplorer
+        $('#fileExplorer').ejFileExplorer({            
+        path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",         
+        ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction",      
+        menuBeforeOpen: function (args) {}
+        });
+        </script>
+
+{% endhighlight %}
+
+
+
+### menuClick
+{:#events:menuclick}
+
+
+Fires when click the ContextMenu item.
+
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">argument</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description">Event parameters from FileExplorer
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">ID</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">returns the ID of clicked ContextMenu item.</td>
+</tr>
+<tr>
+<td class="name">cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">set to true when the event has to be canceled, else false.</td>
+</tr>
+<tr>
+<td class="name">contextMenu</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">returns the name of ContextMenu items group.</td>
+</tr>
+<tr>
+<td class="name">element</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">returns the element of clicked ContextMenu item.</td>
+</tr>
+<tr>
+<td class="name">events</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">returns the event of ContextMenu.</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type"><ts ref="ej.FileExplorer.Model"/>
+<span class="param-type">object</span></td>
+<td class="description">returns the FileExplorer model.</td>
+</tr>
+<tr>
+<td class="name">parentId</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">returns the parent element ID of clicked ContextMenu item.</td>
+</tr>
+<tr>
+<td class="name">parentText</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">returns the parent element text of clicked ContextMenu item.</td>
+</tr>
+<tr>
+<td class="name">text</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">returns the text of clicked ContextMenu item.</td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">returns the name of the event.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+#### Example
+
+
+{% highlight html %}
+        
+        <div id="fileExplorer"></div> 
+        
+        <script>
+        // menuClick event of ContextMenu for FileExplorer
+        $('#fileExplorer').ejFileExplorer({            
+        path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",         
+        ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction",      
+        menuClick: function (args) {}
+        });
+        </script>
+
+{% endhighlight %}
+
+
+
+### menuOpen
+{:#events:menuopen}
+
+
+Fires when ContextMenu is successfully opened.
+
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">argument</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description">Event parameters from FileExplorer
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">set to true when the event has to be canceled, else false.</td>
+</tr>
+<tr>
+<td class="name">contextMenu</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">returns the name of ContextMenu items group.</td>
+</tr>
+<tr>
+<td class="name">element</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">returns the element of ContextMenu.</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type"><ts ref="ej.FileExplorer.Model"/>
+<span class="param-type">object</span></td>
+<td class="description">returns the FileExplorer model.</td>
+</tr>
+<tr>
+<td class="name">target</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">returns the target element.</td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">returns the name of the event.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+#### Example
+
+
+{% highlight html %}
+        
+        <div id="fileExplorer"></div> 
+        
+        <script>
+        // menuOpen event of ContextMenu for FileExplorer
+        $('#fileExplorer').ejFileExplorer({            
+        path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",         
+        ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction",      
+        menuOpen: function (args) {}
+        });
+        </script>
+
+{% endhighlight %}
+
 
 
 
