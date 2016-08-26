@@ -662,7 +662,7 @@ By using filterSettings property, you can customize the search functionality of 
 {:#members:filtersettings-allowsearchontyping}
  
  
-It allows to search the text given in searchbar in every keyup event. When this property was set as false, search the text only in Enter key press.
+It allows to search the text given in searchbar in every keyup event. When this property was set as false, searching will works only on Enter key and searchbar blur.
 
 #### Default Value
 
