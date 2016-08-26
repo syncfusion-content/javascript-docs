@@ -25,7 +25,8 @@ emptyRecord: "No records to display"</td></tr>
 <tr>
 <td>
 Column Header Texts:<br/>
-taskIdtaskName<br/>
+taskId<br/>
+taskName<br/>
 startDate<br/>
 endDate<br/>
 resourceInfo<br/>
@@ -138,7 +139,8 @@ columnDialogTexts: {   field: "Field",
 <tr>
 <td>
 toolboxTooltipTexts:<br/>
-addTooleditTool<br/>
+addTool<br/>
+editTool<br/>
 saveTool<br/>
 deleteTool<br/>
 cancelTool<br/>
@@ -247,7 +249,9 @@ confirmDeleteText</td><td>
 "Confirm Delete"</td></tr>
 <tr>
 <td>
-predecessorEditingTexts:fromTexttoText</td><td>
+predecessorEditingTexts:<br/>
+fromText<br/>
+toText</td><td>
 {% highlight javascript %}
 predecessorEditingTexts: {
     fromText: "From",
