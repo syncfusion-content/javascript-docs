@@ -3507,7 +3507,7 @@ Fires when click the ContextMenu item.
 <td class="description">returns the element of clicked ContextMenu item.</td>
 </tr>
 <tr>
-<td class="name">events</td>
+<td class="name">event</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the event of ContextMenu.</td>
 </tr>
