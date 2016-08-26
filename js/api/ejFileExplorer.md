@@ -662,7 +662,7 @@ By using filterSettings property, you can customize the search functionality of 
 {:#members:filtersettings-allowsearchontyping}
  
  
-It allows to search the text given in searchbar in every keyup event.When this property was set as false,search the text only in Enter key press.
+It allows to search the text given in searchbar in every keyup event. When this property was set as false, search the text only in Enter key press.
 
 #### Default Value
 
@@ -876,7 +876,7 @@ By using the gridSettings property, you can customize the grid behavior in the F
 
 
 
- Allows to Resize the width of the columns by simply click and move the particular column header line.
+Allows to Resize the width of the columns by simply click and move the particular column header line.
 
 
 
