@@ -776,6 +776,43 @@ By using filterSettings property, you can customize the search functionality of 
 
 
 
+### filterSettings.allowSearchOnTyping `boolean`
+{:#members:filtersettings-allowsearchontyping}
+ 
+ 
+It allows to search the text given in searchbar in every keyup event. When this property was set as false, searching will works only on Enter key and searchbar blur.
+
+#### Default Value
+
+
+* true
+
+
+#### Example
+
+
+{% highlight html %}
+ 
+        <div id="fileExplorer"></div> 
+        
+        <script>
+        // Initialize the FileExplorer with selectedFolder value specified.
+        $('#fileExplorer').ejFileExplorer({
+        path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
+        ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction",
+        filterSettings: {allowSearchOnTyping: false},
+        });
+        </script>
+
+{% endhighlight %}
+
+
+
+
+
+
+
+
 ### filterSettings.caseSensitiveSearch `boolean`
 {:#members:filtersettings-casesensitivesearch}
 
@@ -940,6 +977,62 @@ By using the gridSettings property, you can customize the grid behavior in the F
 
 
 
+
+
+
+
+
+
+
+### gridSettings.allowResizing `boolean`
+{:#members:gridsettings-allowresizing}
+
+
+
+
+
+
+
+
+Allows to Resize the width of the columns by simply click and move the particular column header line.
+
+
+
+#### Default Value
+
+
+
+
+
+
+
+* true
+
+
+
+
+
+
+
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+        <div id="fileExplorer" ></div> 
+        
+        <script>
+        // Initialize the FileExplorer with the allowSorting value specified for grid.
+        $('#fileExplorer').ejFileExplorer({ 
+        gridSettings:{allowResizing:false},
+        path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
+        ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction"               
+        }); 
+        </script>
+
+{% endhighlight %}
 
 
 
