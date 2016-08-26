@@ -293,6 +293,37 @@ By using ajaxSettings property, you can customize the AJAX configurations. Norma
 
 
 
+### allowDragAndDrop `boolean`
+{:#members:allowdraganddrop}
+
+The FileExplorer allows to move the files from one folder to another folder of FileExplorer by using drag and drop option. Also it supports to upload a file by dragging it from windows explorer to the necessary folder of ejFileExplorer.  
+
+#### Default Value
+
+
+* true
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+        <div id="fileExplorer"></div> 
+        
+        <script>
+        // Initialize the FileExplorer with allowDragAndDrop value specified.
+        $('#fileExplorer').ejFileExplorer({
+        allowDragAndDrop: false,            
+        path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
+        ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction"
+        });
+        </script>
+        
+{% endhighlight %}
+
+
+
 ### allowMultiSelection `boolean`
 {:#members:allowmultiselection}
 
@@ -482,6 +513,59 @@ Enables or disables the Right to Left alignment support in FileExplorer control.
         // Initialize the FileExplorer with enableRTL value specified.
         $('#fileExplorer').ejFileExplorer({ 
         enableRTL: true,
+        path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
+        ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction"                
+        });
+        </script>
+
+{% endhighlight %}
+
+
+
+### enableThumbnailCompress `boolean`
+{:#members:enablethumbnailcompress}
+
+
+
+
+
+
+
+
+Enables or disables the thumbnail image compression option in FileExplorer control. By enabling this option, you can reduce the thumbnail image size while loaading. 
+
+
+
+
+#### Default Value
+
+
+
+
+
+
+
+* false
+
+
+
+
+
+
+
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+        <div id="fileExplorer"></div> 
+        
+        <script>
+        // Initialize the FileExplorer with enableThumbnailCompress value specified.
+        $('#fileExplorer').ejFileExplorer({ 
+        enableThumbnailCompress: true,
         path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
         ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction"                
         });
@@ -2540,6 +2624,108 @@ type</td>
 
 
 
+
+### beforeGetImage
+{:#events:beforegetimage}
+
+
+
+Fires before getting a requested image from server. Also this event will be triggered when you have enabled thumbnail image compression option in FileExplorer. 
+Using this event, you can customize the image compression size.
+
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+path</td>
+<td class="type"><span class="param-type">String</span></td>
+<td class="description"> Image path
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">set to true when the event has to be canceled, else false.</td>
+</tr>
+<tr>
+<td class="name">
+canCompress</td>
+<td class="type"><span class="param-type">bool</span></td>
+<td class="description">enable or disable the image compress option.</td>
+</tr>
+<tr>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.FileExplorer.Model"/>
+<span class="param-type">object</span></td>
+<td class="description">returns the FileExplorer model.</td>
+</tr>
+<tr>
+<td class="name">
+size</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">returns the expected image size.</td>
+</tr>
+<tr>
+<td class="name">
+selectedItems</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">returns the selected item details.</td>
+</tr>
+<tr>
+<td class="name">
+type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">returns the name of the event.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+        <div id="fileExplorer" ></div> 
+        
+        <script>
+        // beforeGetImage event for FileExplorer
+        $('#fileExplorer').ejFileExplorer({            
+        path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",         
+        ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction",      
+        beforeGetImage: function (args) {}
+        });
+        </script>
+
+{% endhighlight %}
+
+
+
+
+
 ### beforeOpen
 {:#events:beforeopen}
 
@@ -3148,6 +3334,387 @@ type</td>
         </script>
 
 {% endhighlight %}
+
+
+
+
+
+
+
+
+### dragStart
+{:#events:dragstart}
+
+
+
+
+
+
+
+
+Fires when the files or directory has been started to drag over on the FileExplorer
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">set to true when the event has to be canceled, else false.</td>
+</tr>
+<tr>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.FileExplorer.Model"/><span class="param-type">object</span></td>
+<td class="description">returns the FileExplorer model.</td>
+</tr>
+<tr>
+<td class="name">
+type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">returns the name of the event.</td>
+</tr>
+<tr>
+<td class="name">
+target</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">returns the dragging element.</td>
+</tr>
+<tr>
+<td class="name">
+targetPath</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">returns the path of dragging element.</td>
+</tr>
+<tr>
+<td class="name">
+selectedItems</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">returns the dragging file details.</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+        <div id="fileExplorer" ></div> 
+        
+        <script>
+        // dragStart event for FileExplorer
+        $('#fileExplorer').ejFileExplorer({            
+        path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
+        ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction",      
+        dragStart: function (args) {}
+        });
+        </script>
+
+{% endhighlight %}
+
+
+
+
+
+### drag
+{:#events:drag}
+
+
+
+
+
+
+
+
+Fires when the files or directory is dragging over on the FileExplorer.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">set to true when the event has to be canceled, else false.</td>
+</tr>
+<tr>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.FileExplorer.Model"/><span class="param-type">object</span></td>
+<td class="description">returns the FileExplorer model.</td>
+</tr>
+<tr>
+<td class="name">
+type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">returns the name of the event.</td>
+</tr>
+<tr>
+<td class="name">
+target</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">returns the target element.</td>
+</tr>
+<tr>
+<td class="name">
+targetElementName</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">returns the name of target element.</td>
+</tr>
+<tr>
+<td class="name">
+targetPath</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">returns the path of target element.</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+        <div id="fileExplorer" ></div> 
+        
+        <script>
+        // drag event for FileExplorer
+        $('#fileExplorer').ejFileExplorer({            
+        path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
+        ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction",      
+        drag: function (args) {}
+        });
+        </script>
+
+{% endhighlight %}
+
+
+
+
+
+
+
+
+
+
+
+### dragStop
+{:#events:dragstop}
+
+
+
+
+
+
+
+
+Fires when the files or directory has been stopped to drag over on FileExplorer
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">set to true when the event has to be canceled, else false.</td>
+</tr>
+<tr>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.FileExplorer.Model"/><span class="param-type">object</span></td>
+<td class="description">returns the FileExplorer model.</td>
+</tr>
+<tr>
+<td class="name">
+type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">returns the name of the event.</td>
+</tr>
+<tr>
+<td class="name">
+target</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">returns the target element.</td>
+</tr>
+<tr>
+<td class="name">
+targetPath</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">returns the path of target element.</td>
+</tr>
+<tr>
+<td class="name">
+targetElementName</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">returns the name of target element</td>
+</tr>
+<tr>
+<td class="name">
+dropAction</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">returns the action, which is performed after dropping the files (upload/ move).</td>
+</tr>
+<tr>
+<td class="name">
+fileInfo</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">returns the dragging file details</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+        <div id="fileExplorer" ></div> 
+        
+        <script>
+        // dragStop event for FileExplorer
+        $('#fileExplorer').ejFileExplorer({            
+        path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
+        ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction",      
+        dragStop: function (args) {}
+        });
+        </script>
+
+{% endhighlight %}
+
+
+
+
+
+
+
+### drop
+{:#events:drop}
+
+
+
+
+
+
+
+
+Fires when the files or directory is dropped to the target folder of FileExplorer
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">set to true when the event has to be canceled, else false.</td>
+</tr>
+<tr>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.FileExplorer.Model"/><span class="param-type">object</span></td>
+<td class="description">returns the FileExplorer model.</td>
+</tr>
+<tr>
+<td class="name">
+type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">returns the name of the event.</td>
+</tr>
+<tr>
+<td class="name">
+target</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">returns the target element.</td>
+</tr>
+<tr>
+<td class="name">
+targetFolder</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">returns the name of target folder.</td>
+</tr>
+<tr>
+<td class="name">
+targetPath</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">returns the path of target folder.</td>
+</tr>
+<tr>
+<td class="name">
+fileInfo</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">returns the dragging element details.</td>
+</tr>
+<tr>
+<td class="name">
+dropAction</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">returns the action, which is performed after dropping the files (upload/ move).</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+        <div id="fileExplorer" ></div> 
+        
+        <script>
+        // drop event for FileExplorer
+        $('#fileExplorer').ejFileExplorer({            
+        path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
+        ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction",      
+        drop: function (args) {}
+        });
+        </script>
+
+{% endhighlight %}
+
+
 
 
 
