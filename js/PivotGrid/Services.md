@@ -27,10 +27,10 @@ To export PivotGrid data to an Excel, Word, PDF or CSV document.
 
 ### URL
 
-http://js.syncfusion.com/demos/ejservices/api/JSPivotGridExport/ExcelExport
-http://js.syncfusion.com/demos/ejservices/api/JSPivotGridExport/WordExport
-http://js.syncfusion.com/demos/ejservices/api/JSPivotGridExport/PDFExport
-http://js.syncfusion.com/demos/ejservices/api/JSPivotGridExport/CSVExport
+[http://js.syncfusion.com/demos/ejservices/api/JSPivotGridExport/ExcelExport](http://js.syncfusion.com/demos/ejservices/api/JSPivotGridExport/ExcelExport)
+[http://js.syncfusion.com/demos/ejservices/api/JSPivotGridExport/WordExport](http://js.syncfusion.com/demos/ejservices/api/JSPivotGridExport/WordExport)
+[http://js.syncfusion.com/demos/ejservices/api/JSPivotGridExport/PDFExport](http://js.syncfusion.com/demos/ejservices/api/JSPivotGridExport/PDFExport)
+[http://js.syncfusion.com/demos/ejservices/api/JSPivotGridExport/CSVExport](http://js.syncfusion.com/demos/ejservices/api/JSPivotGridExport/CSVExport)
 
 ### Parameter
 
@@ -66,32 +66,38 @@ http://js.syncfusion.com/demos/ejservices/api/JSPivotGridExport/CSVExport
 
 {% highlight html %}
 
-<div id="PivotGrid1" style="min-height: 275px; min-width: 525px; height: 460px; width: 720px"></div>
-<button id="btnExport">Export</button>
- $(function() {
-     $("#PivotGrid1").ejPivotGrid({
-         dataSource: {
-             data: pivot_dataset,
-             rows: [{
-                 fieldName: "Country",
-                 fieldCaption: "Country"
-             }],
-             columns: [{
-                 fieldName: "Product",
-                 fieldCaption: "Product"
-             }],
-             values: [{
-                 fieldName: "Amount",
-                 fieldCaption: "Amount"
-             }]
-         }
-     });
-     $("#btnExport").ejButton({
-           click: "exportBtnClick"
-     });
- });
-     function exportBtnClick(args)
-     {
+<html>
+//...
+
+<body>
+      
+    <div id="PivotGrid1" style="min-height: 275px; min-width: 525px; height: 460px; width: 720px"></div>
+    <button id="btnExport">Export</button>
+    <script type="text/javascript">
+       $(function() {
+          $("#PivotGrid1").ejPivotGrid({
+              dataSource: {
+                 data: pivot_dataset,
+                 rows: [{
+                    fieldName: "Country",
+                    fieldCaption: "Country"
+                 }],
+                 columns: [{
+                    fieldName: "Product",
+                    fieldCaption: "Product"
+                 }],
+                 values: [{
+                    fieldName: "Amount",
+                    fieldCaption: "Amount"
+                }]
+             }
+         });
+         $("#btnExport").ejButton({
+             click: "exportBtnClick"
+         });
+      });
+      function exportBtnClick(args)
+      {
         var pGridObj = $('#PivotGrid1').data("ejPivotGrid");
         //If want to export to excel
         pGridObj.exportPivotGrid("http://js.syncfusion.com/demos/ejservices/api/JSPivotGridExport/ExcelExport");
@@ -102,9 +108,14 @@ http://js.syncfusion.com/demos/ejservices/api/JSPivotGridExport/CSVExport
         //If want to export to CSV
         pGridObj.exportPivotGrid("http://js.syncfusion.com/demos/ejservices/api/JSPivotGridExport/CSVExport");
      }
+     
+     </script>
+</body>
+</html>
+
 {% endhighlight %}
 
-#### PivotGrid Exporting in C# 
+#### PivotGrid Exporting in C\#
 
 {% highlight c# %}
 
