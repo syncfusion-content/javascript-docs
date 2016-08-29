@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Service reference for ejPdfViewer widget
 description: Services used in Essential JavaScript PDF Viewer.
 platform: js
@@ -46,7 +47,7 @@ viewerAction
 String
 </td>
 <td class="description">
-Specified the action of the ajax request
+Specified the action of the AJAX request
 </td>
 </tr>
 <tr>
@@ -79,7 +80,7 @@ isInitialLoading
 String
 </td>
 <td class="description">
-Specify the ajax request whether the request is initial loading or consecutive loading.  
+Specify the AJAX request whether the request is initial loading or consecutive loading.  
 </td>
 </tr>
 </tbody>
@@ -96,7 +97,7 @@ $.ajax({
     data: JSON.stringify([{
         "viewerAction": "GetPageModel",
         "controlId": this._id,
-        "isInitialLoading": "true"
+        "isInitialLoading": "true",
         "pageindex": "1"
     }])
 });
@@ -113,12 +114,12 @@ $.ajax({
 <table>
 <thead>
 <tr>
-<th>
+<td>
 imagestream
-</th>
-<th>
+</td>
+<td>
 Current page content stream 
-</th>
+</td>
 </tr>
 </thead>
 <tbody>
@@ -227,7 +228,7 @@ viewerAction
 String
 </td>
 <td class="description">
-Specified the action of the ajax request
+Specified the action of the AJAX request
 </td>
 </tr>
 <tr>
@@ -260,7 +261,7 @@ isInitialLoading
 String
 </td>
 <td class="description">
-Specify the ajax request whether the request is initial loading or consecutive loading.  
+Specify the AJAX request whether the request is initial loading or consecutive loading.  
 </td>
 </tr>
 <tr>
@@ -288,7 +289,7 @@ $.ajax({
     data: JSON.stringify([{
         "viewerAction": "GetPageModel",
         "controlId": this._id,
-        "isInitialLoading": "true"
+        "isInitialLoading": "true",
         "pageindex": "1"
     }])
 });
@@ -305,12 +306,12 @@ $.ajax({
 <table>
 <thead>
 <tr>
-<th>
+<td>
 imagestream
-</th>
-<th>
+</td>
+<td>
 Current page content stream 
-</th>
+</td>
 </tr>
 </thead>
 <tbody>
@@ -434,7 +435,7 @@ $.ajax({
     url: 'http://js.syncfusion.com/demos/ejservices/api/PdfViewer/ DocumentDownloadAction',
     dataType: "json",
     data: JSON.stringify([{
-        "DocumentName: this.fileName
+        "DocumentName": this.fileName
     }])
 });
 {% endhighlight %}
@@ -476,7 +477,7 @@ Code snippet:
 
 PdfViewerHelper helper = new PdfViewerHelper();
 
-helper.Load(filepath/filename.pdf);
+helper.Load(file path/filename.pdf);
 
 ### Load(string filename, string password)
 
@@ -486,7 +487,7 @@ Code snippet:
 
 PdfViewerHelper helper = new PdfViewerHelper();
 
-helper.Load(filepath/filename.pdf, password);
+helper.Load(file path/filename.pdf, password);
 
 ### Load(Stream documentStream)
 
@@ -508,7 +509,7 @@ PdfViewerHelper helper = new PdfViewerHelper();
 
 helper.Load(documentStream,password);
 
-### Load(PdfLoadedDocument ldoc)
+### Load(PdfLoadedDocument pdfLoadedDocument)
 
 Loads the PDF document from the PdfLoadedDocument object.
 
@@ -516,7 +517,7 @@ Code snippet:
 
 PdfViewerHelper helper = new PdfViewerHelper();
 
-helper.Load(pdfloadeddocument);
+helper.Load(pdfLoadedDocument);
 
 ### Load(byte[] byteArray)
 
@@ -540,12 +541,12 @@ helper.Load(byteArray,password);
 
 ### ProcessPdf(Dictionary&lt;string,string&gt; jsonResult)
 
-Process the PDF document and convert them to json data.
+Process the PDF document and convert them to JSON data.
 
 Code snippet:
 
 PdfViewerHelper helper = new PdfViewerHelper();
 
-helper.Load(filepath/filename.pdf);
+helper.Load(file path/filename.pdf);
 
 helper.ProcessPdf(jsonResult)
