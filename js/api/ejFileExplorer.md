@@ -2666,7 +2666,7 @@ cancel</td>
 <tr>
 <td class="name">
 canCompress</td>
-<td class="type"><span class="param-type">bool</span></td>
+<td class="type"><span class="param-type">boolean</span></td>
 <td class="description">enable or disable the image compress option.</td>
 </tr>
 <tr>
