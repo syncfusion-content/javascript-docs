@@ -1,3 +1,12 @@
+---
+layout: post
+title: Find and Replace with Spreadsheet widget for Syncfusion Essential JS
+description: How to enable Find and Replace and its functionalities
+platform: js
+control: Spreadsheet
+documentation: ug
+--- 
+
 # Find and Replace
 
 This feature is used to search for something and replace the found content with the new content in your worksheet or workbook, such as a particular number or text string. You can use [`allowSearching`](https://help.syncfusion.com/js/api/ejspreadsheet#members:allowsearching "allowSearching") property to enable or disable this feature.
