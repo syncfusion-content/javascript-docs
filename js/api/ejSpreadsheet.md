@@ -7715,6 +7715,214 @@ xlObj.XLRibbon.removeNamedRange("PRICE_LIST");
 ### XLSearch
 {:#methods:xlsearch}
 
+### XLSearch.findNext(findData, sheetIdx, isCSen, isEMatch, type, mode, searchBy)
+{:#methods:xlsearch-findnext}
+
+This method is used to find the data next to the currently found data in the Spreadsheet.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">findData</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Pass the search data.</td>
+</tr>
+<tr>
+<td class="name">sheetIdx</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Pass the sheet index.</td>
+</tr>
+<tr>
+<td class="name">isCSen</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">Pass true, if you want to match with case-sensitive.</td>
+</tr>
+<tr>
+<td class="name">isEMatch</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">Pass true, if you want to match with entire cell contents.</td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Pass the type, whether search a value, formula or comments.</td>
+</tr>
+<tr>
+<td class="name">mode</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Pass the mode, whether search in sheet or workbook.</td>
+</tr>
+<tr>
+<td class="name">searchBy</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Pass the search type, whether it is row wise or column wise search.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+// initialize Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+xlObj.XLSearch.findNext("Sheet", xlObj.getActiveSheetIdx(), true, false, "workbook", "rows"); // Sends a find next request to the Spreadsheet.
+</script>
+
+{% endhighlight %}
+
+### XLSearch.findPrevious(findData, sheetIdx, isCSen, isEMatch, type, mode, searchBy)
+{:#methods:xlsearch-findprevious}
+
+This method is used to find the previous data from the currently found data in the Spreadsheet.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">findData</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Pass the search data.</td>
+</tr>
+<tr>
+<td class="name">sheetIdx</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Pass the sheet index.</td>
+</tr>
+<tr>
+<td class="name">isCSen</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">Pass true, if you want to match with case-sensitive.</td>
+</tr>
+<tr>
+<td class="name">isEMatch</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">Pass true, if you want to match with entire cell contents.</td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Pass the type, whether search a value, formula or comment.</td>
+</tr>
+<tr>
+<td class="name">mode</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Pass the mode, whether search in sheet or workbook.</td>
+</tr>
+<tr>
+<td class="name">searchBy</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Pass the search type, whether it is row wise or column wise search.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+// initialize Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+xlObj.XLSearch.findPrevious("Sheet", xlObj.getActiveSheetIdx(), true, false, "workbook", "rows"); // Sends find previous request to the Spreadsheet.
+</script>
+
+{% endhighlight %}
+
+### XLSearch.goTo(cellAddr)
+{:#methods:xlsearch-goto}
+
+This method is used to navigate to the particular cell in the Spreadsheet.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cellAddr</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Pass the cell address.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+// initialize Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+xlObj.XLSearch.goTo("F10"); // Sends a go to request to the Spreadsheet.
+</script>
+
+{% endhighlight %}
+
+### XLSearch.goToSpecial(type, isNumber, isText, isLogical, isError)
+{:#methods:xlsearch-gotospecial}
+
+This method is used to highlight the particular cells based on the mentioned type in the Spreadsheet.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Pass the type of the go to operation. Such as Constants, Formulas, Data Validation, Conditional Formats, Comments and Last Cell/td>
+</tr>
+<tr>
+<td class="name">isNumber</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">This paramter is used only for Formulas and Constants. Pass true, if you want to do with numbers.</td>
+</tr>
+<tr>
+<td class="name">isText</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">This paramter is used only for Formulas and Constants. Pass true, if you want to do with strings.</td>
+</tr>
+<tr>
+<td class="name">isLogical</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">This paramter is used only for Formulas and Constants. Pass true, if you want to do with logicals (TRUE or FALSE</td>
+</tr>
+<tr>
+<td class="name">isError</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">This paramter is used only for Formulas and Constants. Pass true, if you want to do with errors.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+// initialize Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+xlObj.XLSearch.goToSpecial("constants", false, true, false, false); // Sends a go to special request to the Spreadsheet.
+</script>
+
+{% endhighlight %}
+
 ### XLSearch.replaceAllByBook(findData, replaceData, isCSen, isEMatch)
 {:#methods:xlsearch-replaceallbybook}
 
