@@ -489,6 +489,8 @@ Column settings for the individual heatmap column.
 
 #### Example
 
+{% highlight html %}
+
     <div id="heatmap"></div>
     <script>
         $("#heatmap").ejHeatMap({
@@ -499,6 +501,8 @@ Column settings for the individual heatmap column.
             }
         });
     </script>
+    
+{% endhighlight %}
 
 ### itemsMapping.columnStyle.width `Number`
 {:#members:itemsMapping-columnStyle-width}
@@ -999,6 +1003,8 @@ Specifies the color of the heatmap column data.
 
 #### Example
 
+{% highlight html %}
+
     <div id="heatmap"></div>
     <script>
         $("#heatmap").ejHeatMap({
@@ -1093,6 +1099,8 @@ Enables/disables the italic style of the heatmap label.
 * false
 
 #### Example
+
+{% highlight html %}
 
     <div id="heatmap"></div>
     <script>
