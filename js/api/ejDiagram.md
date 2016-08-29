@@ -14807,14 +14807,9 @@ Triggered when the diagram is rendered completely.
 	</thead>
 	<tbody>
 		<tr>
-			<td class="name">cancel</td>
-			<td class="type">boolean</td>
-			<td class="description last">Returns the cancel option value.</td>
-		</tr>
-		<tr>
 			<td class="name">model</td>
 			<td class="type">object</td>
-			<td class="description last">Returns the grid model.</td>
+			<td class="description last">Returns the diagram model.</td>
 		</tr>
 		<tr>
 			<td class="name">type</td>
