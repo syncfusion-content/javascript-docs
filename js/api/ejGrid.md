@@ -2907,14 +2907,14 @@ $("#Grid").ejGrid({
 {% endhighlight %}
 
 ### mediaSettings `Object`
-{:#members:mediaSettings}
+{:#members:mediasettings}
 
-Gets or sets an object that indicates whether to modify the media default configuration.
+Gets or sets an object that indicates whether to modify the media query default configuration.
 
 ### mediaSettings.phone `Number`
 {:#members:mediaSettings-phone}
 
-PropertiesGets or sets a value that indicates whether to define the grid to be rendered as detail view in mobile mode while enableResponsiveRow property is set as true and need to set same value in ejgrid.responsive.css file
+Gets or sets a value that indicates whether the grid rows has to be rendered as detail view in mobile mode while enableResponsiveRow property is set as true and also need to set same value for max-width in ejgrid.responsive.css file
 
 #### Default Value:
 {:.param}
@@ -3214,10 +3214,11 @@ $("#Grid").ejGrid({
 ### resizeSettings `Object`
 {:#members:resizeSettings}
 
-Gets or sets an object that indicates whether to modify the resizing default configuration.
+Gets or sets an object that indicates whether to modify the resizing behaviour.
 ### resizeSettings.resizeMode `enum`
 {:#members:resizeSettings-resizeMode}
 
+Gets or sets a value that indicates whether to define the mode of resizing See resizeMode.
 Accepting types are “nextcolumn” and “control”.
 
 #### Default Value:
@@ -3233,7 +3234,7 @@ $("#Grid").ejGrid({
     dataSource:  window.gridData,
     allowPaging: true, 
     allowResizing: true,  
-    resizeSettings: { resizeMode: "nextcolumn" }
+    resizeSettings: { resizeMode: "control" }
 });
 </script>
 {% endhighlight %}
