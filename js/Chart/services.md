@@ -29,6 +29,7 @@ Export Chart as PNG, JPG, SVG, PDF document, Excel document or Word document.
 <tr>
     <td>exportMultipleChart</td>
 	<td>false</td>
+    <td>Set this parameter as true to export all the charts in DOM. Note: Currently, this option is available only for exporting Chart to excel workbook.</td>
 </tr>
 </table>
 
@@ -37,13 +38,16 @@ Export Chart as PNG, JPG, SVG, PDF document, Excel document or Word document.
 {% highlight js %}
  
 var chart = $(".e-datavisualization-chart").ejChart("instance");
+var exportMultipleChart = false;
 var exportSettings = chart.model.exportSettings;
+
 exportSettings.fileName = "Chart";
 exportSettings.angle = "90";
 exportSettings.type = "png";
 exportSettings.mode = 'server';
 exportSettings.action = 'http://js.syncfusion.com/ExportingServices/api/JSChartExport/ExportChart';
-data = chart.export();
+
+data = chart.export(exportMultipleChart); // Multiple Charts can be exported only to excel worksheet. This feature is not available when exporting to other formats (PNG, JPG, SVG, PDF and Word document.
 
 {% endhighlight %}
 
