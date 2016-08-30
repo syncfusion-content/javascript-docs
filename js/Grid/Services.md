@@ -25,12 +25,22 @@ To retrieve the records from *Orders* table in *Northwnd service*.
 [http://mvc.syncfusion.com/Services/Northwnd.svc/](http://mvc.syncfusion.com/Services/Northwnd.svc/)
 
 ### Parameter
+
 <table>
-<tr>
-<td>$top</td><td>10</td>
-<td>$filter</td><td>EmployeeID eq 5</td>
-<td>$skip</td><td>2</td>
-</tr>
+   <th>Query</th>
+   <th>Value</th>
+   <tr>
+      <td>$top</td>
+      <td>10</td>
+   </tr>
+   <tr>
+      <td>$filter</td>
+      <td>EmployeeID eq 5</td>
+   </tr>
+   <tr>
+      <td>$skip</td>
+      <td>2</td>
+   </tr>
 </table>
 
 ### Request
@@ -168,7 +178,7 @@ $(function() {
 })
 {% endhighlight %}
 
-#### Essential Grid exporting in C# 
+#### Essential Grid exporting in `C#` 
 
 {% highlight c# %}
 public void ExportToExcel(string GridModel)
