@@ -369,10 +369,13 @@ The items property is used to configure and group the required ContextMenu items
 
 #### Default Value
 
-* {navbar: ["NewFolder", "Upload", "|", "Delete", "Rename", "|", "Cut", "Copy", "Paste", "|", "Getinfo"],
-   cwd: ["Refresh", "Paste","|", "Sortby", "|", "NewFolder", "Upload", "|", "Getinfo"],
-   files: ["Open", "Download", "|", "Upload", "|", "Delete", "Rename", "|", "Cut", "Copy", "Paste", "|", "OpenFolderLocation", "Getinfo"]}
-
+* {% highlight javascript %} 
+        {
+        navbar: ["NewFolder", "Upload", "|", "Delete", "Rename", "|", "Cut", "Copy", "Paste", "|", "Getinfo"],
+        cwd: ["Refresh", "Paste","|", "Sortby", "|", "NewFolder", "Upload", "|", "Getinfo"],
+        files: ["Open", "Download", "|", "Upload", "|", "Delete", "Rename", "|", "Cut", "Copy", "Paste", "|", "OpenFolderLocation", "Getinfo"]
+        }
+{% endhighlight %}
 
 #### Example
 
