@@ -24,7 +24,7 @@ http://js.syncfusion.com/demos/ejservices/api/PredictiveAnalytics/PostAnalyticsA
 <tr>
 <th>
 Parameter</th><th>
-Datatype</th><th>
+Data type</th><th>
 Description</th>
 </tr>
 <tr>
