@@ -653,7 +653,7 @@ Enables or disables the Right to Left alignment support in FileExplorer control.
 
 
 
-Enables or disables the thumbnail image compression option in FileExplorer control. By enabling this option, you can reduce the thumbnail image size while loaading. 
+Enables or disables the thumbnail image compression option in FileExplorer control. By enabling this option, you can reduce the thumbnail image size while loading. 
 
 
 
@@ -3543,6 +3543,7 @@ type</td>
         $('#fileExplorer').ejFileExplorer({            
         path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
         ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction",      
+        
         destroy: function (args) {}
         });
         </script>
