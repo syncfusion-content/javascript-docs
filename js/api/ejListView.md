@@ -3293,7 +3293,7 @@ $("#lb").ejListView({
 
 
 
-### mouseUP
+### mouseUp
 {:#events:mouseup}
 
 
@@ -3398,7 +3398,7 @@ checkedItemsText</td>
 
 {% highlight html %}
  
-//mouseUP event for ListView
+//mouseUp event for ListView
 <div id="lb" >
         <ul>
                 <li data-ej-text="Artwork"></li>
@@ -3416,7 +3416,7 @@ checkedItemsText</td>
 <script>
 $(document).ready(function(){
 $("#lb").ejListView({
-        mouseUP: function (args) { //handle the event 
+        mouseUp: function (args) { //handle the event 
 }
         });    
 });
