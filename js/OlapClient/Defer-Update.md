@@ -14,7 +14,7 @@ Defer Update support allows the user to refresh the control on-demand and not du
 {% highlight javascript %}
 
 $("#OlapClient").ejOlapClient({
-    url: "../OlapClient",
+    url: "/OlapClient",
     title: "OLAP Browser",
     enableDeferUpdate: true
 });

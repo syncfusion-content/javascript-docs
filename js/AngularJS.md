@@ -309,6 +309,8 @@ In controller, you can get the reference to the `ej` widgets using the `ID` of p
 
 {% endhighlight %}
 
+N> Since the widgets rendered after the controller, we can’t access the widget object  and their members like properties/methods inside controller. So we need to use callback functions or  '$postLink' (in case of custom directives).  For more information about component Life-cycle refer the [link](https://docs.angularjs.org/api/ng/service/$compile)
+
 ## Widget Configuration in Controller
 
 You can set whole `ej` widgets configuration using particular component attribute. Please find the code snippet for the same:

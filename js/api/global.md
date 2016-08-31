@@ -1166,70 +1166,70 @@ Enum for the BPMNTriggers in diagram
 None</td>
 <td class="type">string</td>
 <td class="default">none</td>
-<td class="description">Used to set Event Triger as None</td>
+<td class="description">Used to set Event Trigger as None</td>
 </tr>
 <tr>
 <td class="name">
 Message</td>
 <td class="type">string</td>
 <td class="default">message</td>
-<td class="description">Used to set Event Triger as Message</td>
+<td class="description">Used to set Event Trigger as Message</td>
 </tr>
 <tr>
 <td class="name">
 Timer</td>
 <td class="type">string</td>
 <td class="default">timer</td>
-<td class="description">Used to set Event Triger as Timer</td>
+<td class="description">Used to set Event Trigger as Timer</td>
 </tr>
 <tr>
 <td class="name">
 Escalation</td>
 <td class="type">string</td>
 <td class="default">escalation</td>
-<td class="description">Used to set Event Triger as Escalation</td>
+<td class="description">Used to set Event Trigger as Escalation</td>
 </tr>
 <tr>
 <td class="name">
 Link</td>
 <td class="type">string</td>
 <td class="default">link</td>
-<td class="description">Used to set Event Triger as Link</td>
+<td class="description">Used to set Event Trigger as Link</td>
 </tr>
 <tr>
 <td class="name">
 Error</td>
 <td class="type">string</td>
 <td class="default">error</td>
-<td class="description">Used to set Event Triger as Error</td>
+<td class="description">Used to set Event Trigger as Error</td>
 </tr>
 <tr>
 <td class="name">
 Compensation</td>
 <td class="type">string</td>
 <td class="default">compensation</td>
-<td class="description">Used to set Event Triger as Compensation</td>
+<td class="description">Used to set Event Trigger as Compensation</td>
 </tr>
 <tr>
 <td class="name">
 Signal</td>
 <td class="type">string</td>
 <td class="default">signal</td>
-<td class="description">Used to set Event Triger as Signal</td>
+<td class="description">Used to set Event Trigger as Signal</td>
 </tr>
 <tr>
 <td class="name">
 Multiple</td>
 <td class="type">string</td>
 <td class="default">multiple</td>
-<td class="description">Used to set Event Triger as Multiple</td>
+<td class="description">Used to set Event Trigger as Multiple</td>
 </tr>
 <tr>
 <td class="name">
 Parallel</td>
 <td class="type">string</td>
 <td class="default">parallel</td>
-<td class="description">Used to set Event Triger as Parallel</td>
+<td class="description">Used to set Event Trigger as Parallel</td>
 </tr>
 </tbody>
 </table>
@@ -2872,7 +2872,7 @@ Undoable</td>
 Resizable</td>
 <td class="type">DiagramConstraints</td>
 <td class="default">LSH</td>
-<td class="description">Autamatically adjusts the view port size, when the window is resized</td>
+<td class="description">Automatically adjusts the view port size, when the window is resized</td>
 </tr>
 <tr>
 <td class="name">
@@ -3595,28 +3595,28 @@ Enum for the FileFormats in diagram
 <td class="name">
 JPG</td>
 <td class="type">string</td>
-<td class="default">jpg</td>
+<td class="default">JPG</td>
 <td class="description">Exports diagram to .jpg format</td>
 </tr>
 <tr>
 <td class="name">
 PNG</td>
 <td class="type">string</td>
-<td class="default">png</td>
+<td class="default">PNG</td>
 <td class="description">Exports diagram to .png format</td>
 </tr>
 <tr>
 <td class="name">
 BMP</td>
 <td class="type">string</td>
-<td class="default">bmp</td>
+<td class="default">BMP</td>
 <td class="description">Exports diagram to .bmp format</td>
 </tr>
 <tr>
 <td class="name">
 SVG</td>
 <td class="type">string</td>
-<td class="default">svg</td>
+<td class="default">SVG</td>
 <td class="description">Exports diagram to .svg format</td>
 </tr>
 </tbody>
@@ -11584,7 +11584,7 @@ Hover</td>
 Connect</td>
 <td class="type">PortVisibility</td>
 <td class="default">LSH</td>
-<td class="description">Port gets visibile when connect connector to node</td>
+<td class="description">Port gets visible when connect connector to node</td>
 </tr>
 <tr>
 <td class="name">
@@ -13755,10 +13755,10 @@ Text</td>
 </tr>
 <tr>
 <td class="name">
-Html</td>
+HTML</td>
 <td class="type">string</td>
-<td class="default">html</td>
-<td class="description">Used to specify node Shape as Html</td>
+<td class="default">HTML</td>
+<td class="description">Used to specify node Shape as HTML</td>
 </tr>
 <tr>
 <td class="name">
@@ -13792,7 +13792,7 @@ Arrow</td>
 <td class="name">
 BPMN</td>
 <td class="type">string</td>
-<td class="default">bpmn</td>
+<td class="default">BPMN</td>
 <td class="description">Used to specify node Shape as BPMN</td>
 </tr>
 </tbody>
@@ -14167,7 +14167,7 @@ Enum for AndroidStyle
 Normal</td>
 <td class="type">string</td>
 <td class="default">normal</td>
-<td class="description">Enum for normal anroid button style</td>
+<td class="description">Enum for normal android button style</td>
 </tr>
 <tr>
 <td class="name">

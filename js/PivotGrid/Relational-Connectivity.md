@@ -232,6 +232,7 @@ namespace PivotGridDemo
             
         [OperationContract]
         void Export(System.IO.Stream stream);
+        
         [OperationContract]
         Dictionary<string, object> DeferUpdate(string action, string filterParams, string sortedHeaders, string currentReport);
     }
@@ -314,12 +315,15 @@ namespace PivotGridDemo
         private PivotReport BindDefaultData()
         {
             PivotReport pivotSetting = new PivotReport();
-            pivotSetting.PivotRows.Add(new PivotItem { FieldMappingName = "Product", FieldHeader = "Product", TotalHeader = "Total", ShowSubTotal = false });
-            pivotSetting.PivotColumns.Add(new PivotItem { FieldMappingName = "Country", FieldHeader = "Country", TotalHeader = "Total", ShowSubTotal = false });
+            pivotSetting.PivotRows.Add(new PivotItem { FieldMappingName = "Product", FieldHeader = "Product", TotalHeader = "Total" });
+            pivotSetting.PivotColumns.Add(new PivotItem { FieldMappingName = "Country", FieldHeader = "Country", TotalHeader = "Total" });
             pivotSetting.PivotCalculations.Add(new PivotComputationInfo { CalculationName = "Amount", Description = "Amount", FieldHeader = "Amount", FieldName = "Amount", Format = "C", SummaryType = Syncfusion.PivotAnalysis.Base.SummaryType.DoubleTotalSum });
             return pivotSetting;
         }
     }
+    .....
+    ..... // Initialize the datasourse
+    .....
 }
 
 {% endhighlight %}

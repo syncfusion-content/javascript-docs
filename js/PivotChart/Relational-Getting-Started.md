@@ -17,7 +17,7 @@ This section covers the basic information required to populate a simple PivotCha
 
 Create a HTML page and add scripts and style sheets that are mandatorily required to render a PivotChart widget which are highlighted below in an appropriate order.
 
-1. ej.widgets.all.min.css
+1. ej.web.all.min.css
 2. jQuery-1.10.2.min.js
 3. jQuery.easing.1.3.min.js
 4. ej.web.all.min.js
@@ -39,7 +39,7 @@ Place a "div" tag in the HTML page which acts as a container for the PivotChart 
         </head>
         <body>
             <!--Create a tag which acts as a container for ejPivotChart widget.-->
-            <div id="PivotChart1"></div>
+            <div id="PivotChart1" style="width: 800px; height: 350px"></div>
 
             <script type="text/javascript">
                 $(function () {
@@ -129,7 +129,9 @@ The above code will generate a simple PivotChart with sales amount over a range 
 
 ### Apply Sorting
 
-You can sort a field either in ascending or descending order using the **"sortOrder"** property. Sorting is applicable only for the fields in rows and columns. By default, the values in all fields are arranged in ascending order.
+You can sort a field either in ascending or descending order using the **"sortOrder"** property. Sorting is applicable only for the fields in rows and columns.
+
+N> By default, the values in all fields are arranged in ascending order.
 
 {% highlight html %}
 
@@ -215,7 +217,7 @@ Now you need to set “GettingStarted.html” as start-up page. In-order to do s
 ### Scripts and CSS Initialization
 The scripts and style sheets that are mandatorily required to render a PivotChart widget inside a HTML page are highlighted below in an appropriate order.
 
-1. ej.widgets.all.min.css
+1. ej.web.all.min.css
 2. jQuery-1.10.2.min.js
 3. jQuery.easing.1.3.min.js
 4. ej.web.all.min.js
@@ -247,7 +249,7 @@ In-order to initialize a PivotChart widget, first you need to define a “div”
 
         <body>
             <!--Create a tag which acts as a container for ejPivotChart widget.-->
-            <div id="PivotChart1"> </div>
+            <div id="PivotChart1" style="width: 800px; height: 350px"> </div>
             <script type="text/javascript">
                 //Set properties and initialize ejPivotChart widget.
                 $(function() {
@@ -308,6 +310,7 @@ To add them to your Web Application, right-click on **References** in Solution E
 * Syncfusion.Pdf.Base
 * Syncfusion.DocIO.Base
 * Syncfusion.EJ
+* Syncfusion.EJ.Web
 * Syncfusion.EJ.Olap
 
 **List of Namespaces**
@@ -473,13 +476,16 @@ Now you need to define the service methods inside RelationalChartController clas
 
             private void BindData()
             {
-                this.pivotChart.PivotEngine.PivotRows.Add(new PivotItem { FieldMappingName = "Country", FieldHeader = "Country", TotalHeader = "Total", ShowSubTotal = false });
+                this.pivotChart.PivotEngine.PivotRows.Add(new PivotItem { FieldMappingName = "Country", FieldHeader = "Country", TotalHeader = "Total" });
                 this.pivotChart.PivotEngine.PivotRows.Add(new PivotItem { FieldMappingName = "State", FieldHeader = "State", TotalHeader = "Total" });
                 this.pivotChart.PivotEngine.PivotRows.Add(new PivotItem { FieldMappingName = "Date", FieldHeader = "Date", TotalHeader = "Total" });
-                this.pivotChart.PivotEngine.PivotColumns.Add(new PivotItem { FieldMappingName = "Product", FieldHeader = "Product", TotalHeader = "Total", ShowSubTotal = false });
+                this.pivotChart.PivotEngine.PivotColumns.Add(new PivotItem { FieldMappingName = "Product", FieldHeader = "Product", TotalHeader = "Total" });
                 this.pivotChart.PivotEngine.PivotCalculations.Add(new PivotComputationInfo { CalculationName = "Amount", Description = "Amount", FieldHeader = "Amount", FieldName = "Amount", Format = "C", SummaryType = Syncfusion.PivotAnalysis.Base.SummaryType.DoubleTotalSum });
             }
         }
+        .....
+        ..... // Datasource initialization
+        .....
     }
 {% endhighlight %}
 

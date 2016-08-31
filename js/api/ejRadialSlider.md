@@ -487,7 +487,7 @@ Specifies the  strokeWidth for customize the needle, outer circle and inner circ
 
 
 
-## ticks `Array`
+### ticks `Array`
 {:#members:ticks}
 
 

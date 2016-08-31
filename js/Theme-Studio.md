@@ -72,7 +72,7 @@ In the Download dialog popup provide a name to the file to be generated. Once th
 <tr>
 <td>
 ej.theme.less<br/><br/></td><td>
-You can manually change the color code in this less file and generate the css by using less to CSS generator.<br/><br/></td>
+You can manually change the color code in this less file and generate the CSS by using less to CSS generator.<br/><br/></td>
 </tr>
 <tr>
 <td>properties.json<br/><br/></td>

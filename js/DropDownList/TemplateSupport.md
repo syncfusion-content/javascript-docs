@@ -104,5 +104,5 @@ N> Images for this sample are available in (installed location)\Syncfusion\Essen
 
 ![](TemplateSupport_images/TemplateSupport_img1.jpeg)
 
-N> Shwoing custom selected valued in the input field of DropDownList : [link](http://help.syncfusion.com/js/dropdownlist/howto)
+N> Showing custom selected valued in the input field of DropDownList : [link](http://help.syncfusion.com/js/dropdownlist/howto)
 

@@ -46,7 +46,7 @@ The **“KpiElements”** class in OLAP Base library holds the KPI name and when
                     }, {
                         fieldName: "[Measures].[Growth in Customer Base Trend]"
                     }],
-                    axis: ej.PivotGrid.AxisName.Column
+                    axis: ej.olap.AxisName.Column
                 }]
             }
         });

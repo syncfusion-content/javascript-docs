@@ -29,7 +29,7 @@ Scale can be added within the PivotGauge widget as an array.
 
 ### Pointer Cap
 
-Pointer Cap is a circular shape element that is located at the center of the PivotGauge. It can be customized with the `pointerCap` option inside scales. Following are the properties used to customize its appearance.
+Pointer Cap is a circular shape element which is located at the center of the PivotGauge. It can be customized with the property `pointerCap` inside the scales option. Following are the properties used to customize its appearance.
 
 * **radius** – sets the radius of the pointer cap.
 * **borderColor** – sets the color of the pointer cap border.

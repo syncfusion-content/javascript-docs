@@ -292,7 +292,6 @@ By using ajaxSettings property, you can customize the AJAX configurations. Norma
 {% endhighlight %}
 
 
-
 ### allowMultiSelection `boolean`
 {:#members:allowmultiselection}
 
@@ -3139,11 +3138,11 @@ type</td>
         <div id="fileExplorer" ></div> 
         
         <script>
-        // layoutChange event for FileExplorer
+        // destroy event for FileExplorer
         $('#fileExplorer').ejFileExplorer({            
         path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
         ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction",      
-        layoutChange: function (args) {}
+        destroy: function (args) {}
         });
         </script>
 

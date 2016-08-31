@@ -9,7 +9,7 @@ keywords: Kanban, ejKanban, syncfusion, Kanban api
 
 # ejKanban
 
-The Kanban can be easily configured to the DOM element, such as div. you can create a Kanban with a highly customizable look and feel.
+The Kanban can be easily configured to the DOM element, such as div. You can create a Kanban with a highly customizable look and feel.
 
 #### Syntax
 
@@ -34,6 +34,7 @@ The Kanban can be easily configured to the DOM element, such as div. you can cre
     // Create Kanban
     $("#Kanban").ejKanban({
         dataSource: window.kanbandata,
+        keyField:"Status",
         columns: [
             { headerText: "Backlog", key: "Open" },
             { headerText: "In Progress", key: "InProgress" },
@@ -162,7 +163,7 @@ To enable or disable the title of the card.
 ### swimlaneSettings `object`
 {:#members:swimlanesettings}
 
-Customize the settings for swimlane.
+Customize the settings for swim lane.
 
 #### Default Value:
 
@@ -208,7 +209,7 @@ Customize the settings for swimlane.
 ### swimlaneSettings.showCount `boolean`
 {:#members:swimlanesettings-showcount}
 
-To enable or disable items count in swimlane
+To enable or disable items count in swim lane.
 
 #### Default Value:
 
@@ -267,10 +268,10 @@ To enable or disable the column expand /collapse.
     <div id="Kanban"></div>
     <script type="text/javascript">
     window.kanbandata = [
-        { Id: 1, Status: "Open", Text: "Task 1", Assignee: "Nancy" },
-        { Id: 2, Status: "Open", Text: "Task 2", Assignee: "Andrew" },
-        { Id: 3, Status: "InProgress", Text: "Task 3", Assignee: "Andrew" },
-        { Id: 4, Status: "Testing", Text: "Task4", Assignee: "Nancy" }
+        { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
+        { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
+        { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
+        { Id: 4, Status: "Testing", Summary: "Task4", Assignee: "Nancy" }
     ];
     $(function () {
         var data = ej.DataManager(window.kanbandata);
@@ -287,7 +288,7 @@ To enable or disable the column expand /collapse.
                 keyField: "Status",
                 fields: {
                     primaryKey: "Id",
-                    content: "Text",
+                    content: "Summary",
                 },
             });
     });
@@ -432,7 +433,7 @@ Gets or sets a value that indicates whether to allow card hover actions.
 
 To allow keyboard navigation actions.
 
-#### Default Value:
+#### Default Value
 
 * false
 
@@ -463,16 +464,9 @@ To allow keyboard navigation actions.
                 keyField: "Status",
                 fields: {
                     content: "Summary",
-                    primaryKey: "Id",
-                    swimlaneKey: "Assignee",
+                    primaryKey: "Id"
                 },
-            });
-        $(document).on("keydown", function (e) {
-            //if (e.keyCode === 69) { // j- key code.
-            if (e.altKey && e.keyCode === 74) { // j- key code.
-                $("#Kanban").focus();
-            }
-        });
+            });       
     });
     </script>
 
@@ -483,7 +477,7 @@ To allow keyboard navigation actions.
 
 Gets or sets a value that indicates whether to enable the scrollbar in the Kanban and view the card by scroll through the Kanban manually.
 
-#### Default Value:
+#### Default Value
 
 * false
 
@@ -532,7 +526,7 @@ Gets or sets a value that indicates whether to enable the scrollbar in the Kanba
 ### allowPrinting `boolean`
 {:#members:allowprinting}
 
-Gets or sets a value that indicates whether to define the number of pages to print.
+Gets or sets a value that indicates whether to enable printing option.
 
 #### Default Value:
 
@@ -548,9 +542,7 @@ Gets or sets a value that indicates whether to define the number of pages to pri
        { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
        { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
        { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
-       { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Nancy" },
-       { Id: 5, Status: "InProgress", Summary: "Task 5", Assignee: "Andrew" },
-       { Id: 6, Status: "Close", Summary: "Task 6", Assignee: "Robert" }
+       { Id: 4, Status: "Close", Summary: "Task 6", Assignee: "Robert" }
     ];
     $(function () {
         var data = ej.DataManager(window.kanbandata);
@@ -596,8 +588,7 @@ Gets or sets an object that indicates whether to customize the context menu beha
     { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
     { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
     { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Nancy" },
-    { Id: 5, Status: "InProgress", Summary: "Task 5", Assignee: "Andrew" },
-    { Id: 6, Status: "Testing", Summary: "Task 6", Assignee: "Robert" }
+    { Id: 5, Status: "Close", Summary: "Task 5", Assignee: "Andrew" }    
     ];
     $(function () {
         var data = ej.DataManager(window.kanbandata);
@@ -612,9 +603,8 @@ Gets or sets an object that indicates whether to customize the context menu beha
             ],
             keyField: "Status",
             fields: {
-                primaryKey: "Id",
-                swimlaneKey: "Assignee",
-                content: "Summary",
+                primaryKey: "Id",                
+                content: "Summary"
             },
             contextMenuSettings: {
                 enable: true,
@@ -629,7 +619,7 @@ Gets or sets an object that indicates whether to customize the context menu beha
 ### contextMenuSettings.enable `boolean`
 {:#members:contextmenusettings-enable}
 
-To enable Context menu,All default context menu will show.
+To enable context menu.All default context menu will show.
 
 #### Default Value:
 
@@ -646,8 +636,7 @@ To enable Context menu,All default context menu will show.
      { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
      { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
      { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Nancy" },
-     { Id: 5, Status: "InProgress", Summary: "Task 5", Assignee: "Andrew" },
-     { Id: 6, Status: "Testing", Summary: "Task 6", Assignee: "Robert" }
+     { Id: 5, Status: "Close", Summary: "Task 5", Assignee: "Andrew" }     
     ];
     $(function () {
         var data = ej.DataManager(window.kanbandata);
@@ -663,8 +652,7 @@ To enable Context menu,All default context menu will show.
             keyField: "Status",
             fields: {
                 primaryKey: "Id",
-                swimlaneKey: "Assignee",
-                content: "Summary",
+                content: "Summary"
             },
             contextMenuSettings: {
                 enable: true
@@ -678,7 +666,7 @@ To enable Context menu,All default context menu will show.
 ### contextMenuSettings.disableDefaultItems `array`
 {:#members:contextmenusettings-disabledefaultitems}
 
-Gets or sets a value that indicates the list of items needs to be disable from default context menu
+Gets or sets a value that indicates the list of items needs to be disable from default context menu items.
 
 #### Default Value:
 
@@ -695,8 +683,7 @@ Gets or sets a value that indicates the list of items needs to be disable from d
         { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
         { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
         { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Nancy" },
-        { Id: 5, Status: "InProgress", Summary: "Task 5", Assignee: "Andrew" },
-        { Id: 6, Status: "Testing", Summary: "Task 6", Assignee: "Robert" }
+        { Id: 5, Status: "Close", Summary: "Task 5", Assignee: "Andrew" }        
     ];
     $(function () {
         var data = ej.DataManager(window.kanbandata);
@@ -711,16 +698,12 @@ Gets or sets a value that indicates the list of items needs to be disable from d
             ],
             keyField: "Status",
             fields: {
-                primaryKey: "Id",
-                swimlaneKey: "Assignee",
-                content: "Summary",
+                primaryKey: "Id",                
+                content: "Summary"
             },
             contextMenuSettings: {
                 enable: true,
-                disableDefaultItems: [ej.Kanban.MenuItem.AddCard]
-            },
-            editSettings: {
-                allowAdding: true
+                disableDefaultItems: [ej.Kanban.MenuItem.MoveLeft]
             }
         });
     });
@@ -731,7 +714,7 @@ Gets or sets a value that indicates the list of items needs to be disable from d
 ### contextMenuSettings.menuItems `array`
 {:#members:contextmenusettings-menuitems}
 
-sets a value that indicates whether to add default Menu items.
+Its used to add specific default context menu items.
 
 #### Default Value:
 
@@ -748,37 +731,29 @@ sets a value that indicates whether to add default Menu items.
          { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
          { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
          { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Nancy" },
-         { Id: 5, Status: "InProgress", Summary: "Task 5", Assignee: "Andrew" },
-         { Id: 6, Status: "Testing", Summary: "Task 6", Assignee: "Robert" }
+         { Id: 5, Status: "Close", Summary: "Task 5", Assignee: "Andrew" }
     ];
     $(function () {
-    var data = ej.DataManager(window.kanbandata);
-    $("#Kanban").ejKanban(
-    {
-        dataSource: data,			    
-        allowScrolling:true,
-        scrollSettings:{  
-            height:500,
-            width:900,
-        },
-        columns: [
-            { headerText: "Backlog", key: "Open" },
-            { headerText: "In Progress", key: "InProgress" },
-            { headerText: "Testing", key: "Testing" },
-            { headerText: "Done", key: "Close" }
-        ],
-        keyField: "Status",
-        allowTitle: true,
-        fields: {
-            primaryKey: "Id",
-            swimlaneKey: "Assignee",
-            content: "Summary",
-        },
-        contextMenuSettings: {
-            enable: true,
-             menuItems:[{ menuItem: "Move Right"},{menuItem: "Move Left"  }],
-        }
-    });
+        var data = ej.DataManager(window.kanbandata);
+        $("#Kanban").ejKanban(
+        {
+            dataSource: data,		
+            columns: [
+                { headerText: "Backlog", key: "Open" },
+                { headerText: "In Progress", key: "InProgress" },
+                { headerText: "Testing", key: "Testing" },
+                { headerText: "Done", key: "Close" }
+            ],
+            keyField: "Status",        
+            fields: {
+                primaryKey: "Id",            
+                content: "Summary"
+            },
+            contextMenuSettings: {
+                enable: true,
+                menuItems:[{ menuItem: "Move Right"},{menuItem: "Move Left"  }],
+            }
+        });
     });
     </script>
    
@@ -804,8 +779,7 @@ Gets or sets a value that indicates whether to add custom contextMenu items.
          { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
          { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
          { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Nancy" },
-         { Id: 5, Status: "InProgress", Summary: "Task 5", Assignee: "Andrew" },
-         { Id: 6, Status: "Testing", Summary: "Task 6", Assignee: "Robert" }
+         { Id: 5, Status: "Close", Summary: "Task 5", Assignee: "Andrew" }
     ];
     $(function () {
         var data = ej.DataManager(window.kanbandata);
@@ -821,15 +795,13 @@ Gets or sets a value that indicates whether to add custom contextMenu items.
             keyField: "Status",
             fields: {
                 primaryKey: "Id",
-                swimlaneKey: "Assignee",
-                content: "Summary",
+                content: "Summary"
             },
             contextMenuSettings: {
                 enable: true,
                 customMenuItems: [
                           { text: "Menu1" },
-                          { text: "Menu2", target: ej.Kanban.Target.Header },
-                          { text: "Menu3", target: "" }
+                          { text: "Menu2", target: ej.Kanban.Target.Header }                          
                 ],
             }
         });
@@ -843,7 +815,7 @@ Gets or sets a value that indicates whether to add custom contextMenu items.
 
 <ts name="ej.Kanban.Target"/>
 
-Sets context menu to target element.
+Its sets target element to custom context menu item.
 
 <table class="params">
 <thead>
@@ -872,7 +844,7 @@ Sets context menu to target element.
 </tbody>
 </table>
 
-#### Default Value:
+#### Default Value
 
 * ej.Kanban.Target.All
 
@@ -887,8 +859,7 @@ Sets context menu to target element.
          { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
          { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
          { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Nancy" },
-         { Id: 5, Status: "InProgress", Summary: "Task 5", Assignee: "Andrew" },
-         { Id: 6, Status: "Testing", Summary: "Task 6", Assignee: "Robert" }
+         { Id: 5, Status: "Close", Summary: "Task 5", Assignee: "Andrew" }
     ];
     $(function () {
         var data = ej.DataManager(window.kanbandata);
@@ -904,16 +875,13 @@ Sets context menu to target element.
             keyField: "Status",
             fields: {
                 primaryKey: "Id",
-                swimlaneKey: "Assignee",
-                content: "Summary",
+                content: "Summary"
             },
             contextMenuSettings: {
                 enable: true,
                 customMenuItems: [
-                          { text: "Menu1" },
-                          { text: "Menu2", target: ej.Kanban.Target.Header },
-                          { text: "Menu3", target: "card" },
-                          { text: "Menu4", target: "" }
+                          { text: "Menu1", target: ej.Kanban.Target.Card },
+                          { text: "Menu2", target: ej.Kanban.Target.Header }
                 ],
             }
         });
@@ -925,7 +893,7 @@ Sets context menu to target element.
 ### contextMenuSettings.customMenuItems.text `string`
 {:#members:contextmenusettings-custommenuitems-text}
 
-Gets the name to custom menu.
+Gets the display name to custom menu item.
 
 #### Default Value:
 
@@ -942,8 +910,7 @@ Gets the name to custom menu.
          { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
          { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
          { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Nancy" },
-         { Id: 5, Status: "InProgress", Summary: "Task 5", Assignee: "Andrew" },
-         { Id: 6, Status: "Testing", Summary: "Task 6", Assignee: "Robert" }
+         { Id: 5, Status: "Close", Summary: "Task 5", Assignee: "Andrew" }
     ];
     $(function () {
         var data = ej.DataManager(window.kanbandata);
@@ -959,15 +926,13 @@ Gets the name to custom menu.
             keyField: "Status",
             fields: {
                 primaryKey: "Id",
-                swimlaneKey: "Assignee",
-                content: "Summary",
+                content: "Summary"
             },
             contextMenuSettings: {
                 enable: true,
                 customMenuItems: [
                           { text: "Menu1" },
-                          { text: "Menu2" },
-                          { text: "Menu3" }
+                          { text: "Menu2" }
                 ]
             }
         });
@@ -980,7 +945,7 @@ Gets the name to custom menu.
 ### contextMenuSettings.customMenuItems.template `String`
 {:#members:contextmenusettings-custommenuitems-template}
 
-Gets the template to render custom menu.
+Gets the template to render custom context menu item.
 
 #### Default Value:
 
@@ -992,28 +957,16 @@ Gets the template to render custom menu.
 
     <div id="Kanban"></div>
     <ul id="contexttemplate">
-        <li><a>hi</a></li>
-        <li><a>hi</a></li>
-        <li><a>hi</a></li>
-    </ul>
-    <ul id="contexttemplate1">
-        <li><a>hello</a></li>
-        <li><a>hello</a></li>
-        <li><a>hello</a></li>
-    </ul>
-    <ul id="contexttemplate2">
-        <li><a>hihello</a></li>
-        <li><a>hihello</a></li>
-        <li><a>hihello</a></li>
-    </ul>
+        <li><a>Backlog</a></li>
+        <li><a>Testing</a></li>        
+    </ul>    
     <script type="text/javascript">
         window.kanbandata = [
              { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
              { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
              { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
              { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Nancy" },
-             { Id: 5, Status: "InProgress", Summary: "Task 5", Assignee: "Andrew" },
-             { Id: 6, Status: "Testing", Summary: "Task 6", Assignee: "Robert" }
+             { Id: 5, Status: "Close", Summary: "Task 5", Assignee: "Andrew" }
         ];
         $(function () {
             var data = ej.DataManager(window.kanbandata);
@@ -1035,9 +988,7 @@ Gets the template to render custom menu.
                 contextMenuSettings: {
                     enable: true,
                     customMenuItems: [
-                              { text: "Menu1", template: "#contexttemplate" },
-                              { text: "Menu2", template: "#contexttemplate1" },
-                              { text: "Menu3", template: "#contexttemplate2" }
+                              { text: "Hide Column", template: "#contexttemplate" },
                     ],
                 }
             });
@@ -1112,8 +1063,7 @@ Gets or sets an object that indicates to render the Kanban with specified column
          { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
          { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
          { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Nancy" },
-         { Id: 5, Status: "InProgress", Summary: "Task 5", Assignee: "Andrew" },
-         { Id: 6, Status: "Testing", Summary: "Task 6", Assignee: "Robert" }
+         { Id: 5, Status: "Close", Summary: "Task 5", Assignee: "Andrew" }
     ];
     $(function () {
         var data = ej.DataManager(window.kanbandata);
@@ -1121,7 +1071,6 @@ Gets or sets an object that indicates to render the Kanban with specified column
         {
             dataSource: data,
             columns: [
-                { headerText: "Backlog", key: "Open" },
                 { headerText: "Backlog", key: "Open" },
                 { headerText: "In Progress", key: "InProgress" },
                 { headerText: "Testing", key: "Testing" },
@@ -1159,8 +1108,7 @@ Gets or sets an object that indicates to render the Kanban with specified column
          { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
          { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
          { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Nancy" },
-         { Id: 5, Status: "InProgress", Summary: "Task 5", Assignee: "Andrew" },
-         { Id: 6, Status: "Testing", Summary: "Task 6", Assignee: "Robert" }
+         { Id: 5, Status: "Close", Summary: "Task 5", Assignee: "Andrew" }
     ];
     $(function () {
         var data = ej.DataManager(window.kanbandata);
@@ -1213,16 +1161,14 @@ To set column collapse or expand state
                 dataSource: data,
                 allowToggleColumn: true,
                 columns: [
-                        { headerText: "Backlog", key: "Open", isCollapsed: false },
-                        { headerText: "In Progress", key: "InProgress", isCollapsed: false },
-                        { headerText: "Testing", key: "Testing", isCollapsed: false },
-                        { headerText: "Done", key: "Close", isCollapsed: false }
+                        { headerText: "Backlog", key: "Open" },
+                        { headerText: "In Progress", key: "InProgress" },
+                        { headerText: "Testing", key: "Testing", isCollapsed: true }                        
                 ],
                 keyField: "Status",
                 fields: {
                     primaryKey: "Id",
-                    swimlaneKey: "Assignee",
-                    content: "Summary",
+                    content: "Summary"
                 },
             });
     });
@@ -1233,7 +1179,7 @@ To set column collapse or expand state
 ### columns.constraints `object`
 {:#members:columns-constraints}
 
-To customize the column constraints whether the constraints contains minimum limit or maximum limit or both.
+To customize the column level constraints with minimum ,maximum limit validation.
 
 #### Default Value
 
@@ -1249,7 +1195,7 @@ To customize the column constraints whether the constraints contains minimum lim
        { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
        { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
        { Id: 3, Status: "In Progress", Summary: "Task 3", Assignee: "Andrew" },
-       { Id: 4, Status: "Testing", Summary: "Task4", Assignee: "Nancy" }
+       { Id: 4, Status: "Done", Summary: "Task4", Assignee: "Nancy" }
     ];
     $(function () {
         var data = ej.DataManager(window.kanbandata);
@@ -1265,14 +1211,11 @@ To customize the column constraints whether the constraints contains minimum lim
                 keyField: "Status",
                 allowTitle: true,
                 fields: {
-                    primaryKey: "Id",
-                    swimlaneKey: "Assignee",
-                    content: "Summary",
-                },
-                allowSelection: false
-            });
-        $("#constraint").ejDropDownList({ width: "120px", change: "onConstraintTypeChange", selectedItemIndex: 0 });
-    });
+                    primaryKey: "Id",                    
+                    content: "Summary"
+                }               
+            });        
+     });
     </script>
 
 {% endhighlight %}       
@@ -1280,7 +1223,7 @@ To customize the column constraints whether the constraints contains minimum lim
 ### columns.constraints.type `string`
 {:#members:columns-constraints-type}
 
-It is used to specify the type whether the constraints based on column or swimlane.
+It is used to specify the type of constraints as column or swimlane.
 
 #### Default Value
 
@@ -1297,36 +1240,23 @@ It is used to specify the type whether the constraints based on column or swimla
          { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
          { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
          { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Nancy" },
-         { Id: 5, Status: "InProgress", Summary: "Task 5", Assignee: "Andrew" },
-         { Id: 6, Status: "InProgress", Summary: "Task 6", Assignee: "Nancy" },
-         { Id: 7, Status: "Close", Summary: "Task 7", Assignee: "Nancy" },
-         { Id: 8, Status: "Testing", Summary: "Task 8", Assignee: "Robert" },
-         { Id: 9, Status: "Close", Summary: "Task 9", Assignee: "Nancy" },
-         { Id: 10, Status: "Testing", Summary: "Task 10", Assignee: "Robert" },
-         { Id: 11, Status: "Testing", Summary: "Task 11", Assignee: "Robert" },
-         { Id: 12, Status: "Close", Summary: "Task 12", Assignee: "Andrew" },
-         { Id: 13, Status: "Testing", Summary: "Task 13", Assignee: "Nancy" },
-         { Id: 14, Status: "Testing", Summary: "Task 14", Assignee: "Robert" },
-         { Id: 15, Status: "Close", Summary: "Task 15", Assignee: "Nancy" },
-
+         { Id: 5, Status: "Close", Summary: "Task 5", Assignee: "Andrew" }
     ];
     $(function () {
         var data = ej.DataManager(window.kanbandata);
         $("#Kanban").ejKanban(
             {
                 dataSource: data,
-
                 columns: [
                      { headerText: "Backlog", key: "Open" },
                      { headerText: "In Progress", key: "InProgress", constraints: { type: ej.Kanban.Type.Swimlane, min: 1, max: 2 }, },
-                     { headerText: "Testing", key: "Testing", constraints: { type: ej.Kanban.Type.Column, max: 5 }, },
-                     { headerText: "Done", key: "Close", constraints: { min: 2, max: 7 }, },
+                     { headerText: "Testing", key: "Testing", constraints: { type: ej.Kanban.Type.Column, max: 2 }, },
+                     { headerText: "Done", key: "Close" },
                 ],
                 keyField: "Status",
                 fields: {
-                    primaryKey: "Id",
-                    swimlaneKey: "Assignee",
-                    content: "Summary",
+                    primaryKey: "Id",                    
+                    content: "Summary"
                 },
             }
         );
@@ -1355,18 +1285,7 @@ It is used to specify the minimum amount of card in particular column cell or sw
          { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
          { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
          { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Nancy" },
-         { Id: 5, Status: "InProgress", Summary: "Task 5", Assignee: "Andrew" },
-         { Id: 6, Status: "InProgress", Summary: "Task 6", Assignee: "Nancy" },
-         { Id: 7, Status: "Close", Summary: "Task 7", Assignee: "Nancy" },
-         { Id: 8, Status: "Testing", Summary: "Task 8", Assignee: "Robert" },
-         { Id: 9, Status: "Close", Summary: "Task 9", Assignee: "Nancy" },
-         { Id: 10, Status: "Testing", Summary: "Task 10", Assignee: "Robert" },
-         { Id: 11, Status: "Testing", Summary: "Task 11", Assignee: "Robert" },
-         { Id: 12, Status: "Close", Summary: "Task 12", Assignee: "Andrew" },
-         { Id: 13, Status: "Testing", Summary: "Task 13", Assignee: "Nancy" },
-         { Id: 14, Status: "Testing", Summary: "Task 14", Assignee: "Robert" },
-         { Id: 15, Status: "Close", Summary: "Task 15", Assignee: "Nancy" },
-
+         { Id: 5, Status: "Close", Summary: "Task 5", Assignee: "Andrew" }
     ];
     $(function () {
         var data = ej.DataManager(window.kanbandata);
@@ -1377,14 +1296,13 @@ It is used to specify the minimum amount of card in particular column cell or sw
                 columns: [
                      { headerText: "Backlog", key: "Open" },
                      { headerText: "In Progress", key: "InProgress", constraints: { type: ej.Kanban.Type.Swimlane, min: 1, max: 2 }, },
-                     { headerText: "Testing", key: "Testing", constraints: { type: ej.Kanban.Type.Column, max: 5 }, },
-                     { headerText: "Done", key: "Close", constraints: { min: 2, max: 7 }, },
+                     { headerText: "Testing", key: "Testing", constraints: { type: ej.Kanban.Type.Column, max: 2 }, },
+                     { headerText: "Done", key: "Close" },
                 ],
                 keyField: "Status",
                 fields: {
                     primaryKey: "Id",
-                    swimlaneKey: "Assignee",
-                    content: "Summary",
+                    content: "Summary"
                 },
             }
         );
@@ -1413,36 +1331,23 @@ It is used to specify the maximum amount of card in particular column cell or sw
          { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
          { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
          { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Nancy" },
-         { Id: 5, Status: "InProgress", Summary: "Task 5", Assignee: "Andrew" },
-         { Id: 6, Status: "InProgress", Summary: "Task 6", Assignee: "Nancy" },
-         { Id: 7, Status: "Close", Summary: "Task 7", Assignee: "Nancy" },
-         { Id: 8, Status: "Testing", Summary: "Task 8", Assignee: "Robert" },
-         { Id: 9, Status: "Close", Summary: "Task 9", Assignee: "Nancy" },
-         { Id: 10, Status: "Testing", Summary: "Task 10", Assignee: "Robert" },
-         { Id: 11, Status: "Testing", Summary: "Task 11", Assignee: "Robert" },
-         { Id: 12, Status: "Close", Summary: "Task 12", Assignee: "Andrew" },
-         { Id: 13, Status: "Testing", Summary: "Task 13", Assignee: "Nancy" },
-         { Id: 14, Status: "Testing", Summary: "Task 14", Assignee: "Robert" },
-         { Id: 15, Status: "Close", Summary: "Task 15", Assignee: "Nancy" },
-
+         { Id: 5, Status: "Close", Summary: "Task 5", Assignee: "Andrew" }
     ];
     $(function () {
         var data = ej.DataManager(window.kanbandata);
         $("#Kanban").ejKanban(
             {
                 dataSource: data,
-
                 columns: [
                      { headerText: "Backlog", key: "Open" },
                      { headerText: "In Progress", key: "InProgress", constraints: { type: ej.Kanban.Type.Swimlane, min: 1, max: 2 }, },
-                     { headerText: "Testing", key: "Testing", constraints: { type: ej.Kanban.Type.Column, max: 5 }, },
-                     { headerText: "Done", key: "Close", constraints: { min: 2, max: 7 }, },
+                     { headerText: "Testing", key: "Testing", constraints: { type: ej.Kanban.Type.Column, max: 2 }, },
+                     { headerText: "Done", key: "Close" },
                 ],
                 keyField: "Status",
                 fields: {
-                    primaryKey: "Id",
-                    swimlaneKey: "Assignee",
-                    content: "Summary",
+                    primaryKey: "Id",                    
+                    content: "Summary"
                 },
             }
         );
@@ -1476,12 +1381,8 @@ Gets or sets a value that indicates to add the template within the header elemen
     <div id="image">
     <img src="themes/images/kanban/9.png">
     Done
-    </div>
-    <div id="check">
-    <input id="checksync" type="checkbox" />
-    Backlog
-    </div>
-    <style type="text/css" class="cssStyles">
+    </div>  
+    <style type="text/css">
     img {
         height: 14px;
         width: 14px;
@@ -1501,7 +1402,7 @@ Gets or sets a value that indicates to add the template within the header elemen
             {
                 dataSource: data,
                 columns: [
-                    { headerText: "Backlog", key: "Open", headerTemplate: "#check" },
+                    { headerText: "Backlog", key: "Open" },
                     { headerText: "In Progress", key: "InProgress", headerTemplate: "#calender" },
                     { headerText: "Testing", key: "Testing", headerTemplate: "#userlogin" },
                     { headerText: "Done", key: "Close", headerTemplate: "#image" }
@@ -1509,11 +1410,10 @@ Gets or sets a value that indicates to add the template within the header elemen
                 keyField: "Status",
                 fields: {
                     primaryKey: "Id",
-                    content: "Summary",
+                    content: "Summary"
                 },
             });
     });
-    $("#checksync").ejCheckBox();
     </script>
 
     
@@ -1539,8 +1439,7 @@ Gets or sets an object that indicates to render the Kanban with specified column
          { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
          { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
          { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Nancy" },
-         { Id: 5, Status: "InProgress", Summary: "Task 5", Assignee: "Andrew" },
-         { Id: 6, Status: "Testing", Summary: "Task 6", Assignee: "Robert" }
+         { Id: 5, Status: "Close", Summary: "Task 5", Assignee: "Andrew" }
     ];
     $(function () {
         var data = ej.DataManager(window.kanbandata);
@@ -1548,15 +1447,14 @@ Gets or sets an object that indicates to render the Kanban with specified column
         {
             dataSource: data,
             columns: [
-                { headerText: "Backlog", key: "Open", width: 80 },
-                { headerText: "Validated", key: "Validate", width: 80 },
-                { headerText: "Currently Working", key: "InProgress", width: 80 },
-                { headerText: "Testing", key: "Testing", width: 80 },
-                { headerText: "Done", key: "Close", width: 70 }
+                { headerText: "Backlog", key: "Open", width: 200 },
+                { headerText: "Validated", key: "Validate", width: 200 },           
+                { headerText: "Testing", key: "Testing", width: 200 },
+                { headerText: "Done", key: "Close", width: 200 }
             ],
             fields: {
                 primaryKey: "Id",
-                content: "Summary",
+                content: "Summary"
             },
             keyField: "Status"
         }
@@ -1569,7 +1467,7 @@ Gets or sets an object that indicates to render the Kanban with specified column
 ### columns.visible `boolean`
 {:#members:columns-visible}
 
-Gets or sets an object that indicates to render the Kanban with specified columns visible.
+Gets or sets an object that indicates to set specific column visibility.
 
 #### Default Value:
 
@@ -1586,8 +1484,7 @@ Gets or sets an object that indicates to render the Kanban with specified column
                     { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
                     { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
                     { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Nancy" },
-                    { Id: 5, Status: "InProgress", Summary: "Task 5", Assignee: "Andrew" },
-                    { Id: 6, Status: "Testing", Summary: "Task 6", Assignee: "Robert" }
+                    { Id: 5, Status: "Close", Summary: "Task 5", Assignee: "Andrew" }
     ];
     $(function () {
         var data = ej.DataManager(window.kanbandata);
@@ -1595,15 +1492,15 @@ Gets or sets an object that indicates to render the Kanban with specified column
         {
             dataSource: data,
             columns: [
-                { headerText: "Backlog", key: "Open", visible: false },
-                { headerText: "In Progress", key: "InProgress", visible: true },
+                { headerText: "Backlog", key: "Open" },
+                { headerText: "In Progress", key: "InProgress" },
                 { headerText: "Testing", key: "Testing", visible: false },
-                { headerText: "Done", key: "Close", visible: true }
+                { headerText: "Done", key: "Close" }
             ],
             keyField: "Status",
             fields: {
                 primaryKey: "Id",
-                content: "Summary",
+                content: "Summary"
             },
         }
     );
@@ -1615,7 +1512,7 @@ Gets or sets an object that indicates to render the Kanban with specified column
 ### columns.showAddButton `boolean`
 {:#members:columns-showaddbutton}
 
-Gets or sets an object that indicates to render the Kanban with specified columns to show the add button.
+Gets or sets an object that indicates whether to show add new button.
 
 #### Default Value:
 
@@ -1632,8 +1529,7 @@ Gets or sets an object that indicates to render the Kanban with specified column
                     { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
                     { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
                     { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Nancy" },
-                    { Id: 5, Status: "InProgress", Summary: "Task 5", Assignee: "Andrew" },
-                    { Id: 6, Status: "Testing", Summary: "Task 6", Assignee: "Robert" }
+                    { Id: 5, Status: "Close", Summary: "Task 5", Assignee: "Andrew" }
     ];
     $(function () {
         var data = ej.DataManager(window.kanbandata);
@@ -1642,15 +1538,14 @@ Gets or sets an object that indicates to render the Kanban with specified column
                 dataSource: data,
                 columns: [
                     { headerText: "Backlog", key: "Open", showAddButton: true },
-                    { headerText: "In Progress", key: "InProgress", showAddButton: true },
-                    { headerText: "Testing", key: "Testing", showAddButton: true },
-                    { headerText: "Done", key: "Close", showAddButton: true }
+                    { headerText: "In Progress", key: "InProgress" },
+                    { headerText: "Testing", key: "Testing" },
+                    { headerText: "Done", key: "Close" }
                 ],
                 keyField: "Status",
                 fields: {
                     primaryKey: "Id",
-                    content: "Summary",
-                    imageUrl: "ImgUrl"
+                    content: "Summary"                    
                 },
                 editSettings: {
                     editItems: [
@@ -1672,7 +1567,7 @@ Gets or sets an object that indicates to render the Kanban with specified column
 ### cardSettings `object`
 {:#members:cardsettings}
 
-Gets or sets an object that indicates whether to Customize the card based on the Mapping Fields.
+Gets or sets an object that indicates whether to Customize the card settings.
 
 #### Default Value
 
@@ -1683,54 +1578,10 @@ Gets or sets an object that indicates whether to Customize the card based on the
 {% highlight html %}
      
     <div id="Kanban"></div>
-    <script id="cardtemplate" type="text/x-jsrender">
-    <table>
-        <tr>
-            <td class="photo">
-                <img src="../themes/images/kanban/{{:Priority}}.png">
-            </td>
-
-            <td class="details">
-                <table>
-                    <colgroup>
-                        <col width="30%">
-                        <col width="70%">
-                    </colgroup>
-                    <tbody>
-                        <tr>
-                            <td class="CardHeader">Name: </td>
-                            <td>{{:Assignee}}</td>
-                        </tr>
-                        <tr>
-                            <td class="CardHeader">Task: </td>
-                            <td>{{:Type}}</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </td>
-        </tr>
-    </table>
-    </script>
-    <style type="text/css">
-    .details > table {
-        margin-left: 10px;
-        border-collapse: separate;
-        border-spacing: 7px;
-        width: 100%;
-    }
-
-    .photo {
-        padding-left: 6px;
-    }
-
-    .CardHeader {
-        font-weight: bolder;
-    }
-    </style>
     <script type="text/javascript">
     window.kanbandata = [
         { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy", Type: "UG" },
-        { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew", Type: "Improvement" },
+        { Id: 2, Status: "Close", Summary: "Task 2", Assignee: "Andrew", Type: "Improvement" },
         { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
         { Id: 4, Status: "Testing", Summary: "Task4", Type: "Issue", Assignee: "Nancy" }
     ];
@@ -1751,16 +1602,14 @@ Gets or sets an object that indicates whether to Customize the card based on the
                     content: "Summary",
                     color: "Type",
                 },
-                cardSettings: {
-                    template: "#cardtemplate",
+                cardSettings: {                    
                     colorMapping: {
                         "#cb2027": "Issue,Story",
                         "#67ab47": "Improvement",
                         "#fbae19": "Epic",
                         "#6a5da8": "UG"
                     }
-                },
-
+                }
             });
     });
     </script>
@@ -1770,7 +1619,7 @@ Gets or sets an object that indicates whether to Customize the card based on the
 ### cardSettings.template `string`
 {:#members:cardsettings-template}
 
-Gets or sets a value that indicates to add the template of card .
+Gets or sets a value that indicates to add the template for card .
 
 #### Default Value:
 
@@ -1787,7 +1636,6 @@ Gets or sets a value that indicates to add the template of card .
             <td class="photo">
                 <img src="../themes/images/kanban/{{:Priority}}.png">
             </td>
-
             <td class="details">
                 <table>
                     <colgroup>
@@ -1810,23 +1658,23 @@ Gets or sets a value that indicates to add the template of card .
     </table>
     </script>
     <style type="text/css">
-    .details > table {
-        margin-left: 10px;
-        border-collapse: separate;
-        border-spacing: 7px;
-        width: 100%;
-    }
-    .photo {
-        padding-left: 6px;
-    }
-    .CardHeader {
-        font-weight: bolder;
-    }
+        .details > table {
+            margin-left: 10px;
+            border-collapse: separate;
+            border-spacing: 7px;
+            width: 100%;
+        }
+        .photo {
+            padding-left: 6px;
+        }
+        .CardHeader {
+            font-weight: bolder;
+        }
     </style>
     <script type="text/javascript">
     window.kanbandata = [
         { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy", Type: "UG" },
-        { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew", Type: "Improvement" },
+        { Id: 2, Status: "Close", Summary: "Task 2", Assignee: "Andrew", Type: "Improvement" },
         { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
         { Id: 4, Status: "Testing", Summary: "Task4", Type: "Issue", Assignee: "Nancy" }
     ];
@@ -1844,12 +1692,11 @@ Gets or sets a value that indicates to add the template of card .
                 keyField: "Status",
                 fields: {
                     primaryKey: "Id",
-                    content: "Summary",
-                    color: "Type",
+                    content: "Summary"
                 },
                 cardSettings: {
                     template: "#cardtemplate",
-                },
+                }
             });
     });
     </script>
@@ -1859,7 +1706,7 @@ Gets or sets a value that indicates to add the template of card .
 ### cardSettings.colorMapping `object`
 {:#members:cardsettings-colormapping}
 
-To customize the card border color based on assigned task. Colors and corresponding values defined  here will be mapped with colorField mapped data source column.
+To customize the card border color based on assigned task. Colors and corresponding values defined here will be mapped with colorField mapped data source column.
 
 #### Default Value
 
@@ -1873,7 +1720,7 @@ To customize the card border color based on assigned task. Colors and correspond
     <script type="text/javascript">
     window.kanbandata = [
         { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy", Type: "UG" },
-        { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew", Type: "Improvement" },
+        { Id: 2, Status: "Close", Summary: "Task 2", Assignee: "Andrew", Type: "Improvement" },
         { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
         { Id: 4, Status: "Testing", Summary: "Task4", Type: "Issue", Assignee: "Nancy" }
     ];
@@ -1915,7 +1762,7 @@ To customize the card border color based on assigned task. Colors and correspond
 Gets or sets a value that indicates whether to add customToolbarItems within the toolbar to perform any action in the Kanban.
 
 #### Default Value:
-{:.param}
+
 * []
 
 #### Example
@@ -1924,21 +1771,21 @@ Gets or sets a value that indicates whether to add customToolbarItems within the
 
     <div id="Kanban"></div>
     <script id="Delete" type="text/x-jsrender">
-    <a class="e-customdelete  e-icon" />
+        <a class="e-customdelete  e-icon" />
     </script>
     <style type="text/css" class="cssStyles">
-    .e-customdelete:before {
-        content: "\e800";
-        line-height: 26px;
-        min-height: 26px;
-        min-width: 14px;
-        display: inline-block;
-    }
+        .e-customdelete:before {
+            content: "\e800";
+            line-height: 26px;
+            min-height: 26px;
+            min-width: 14px;
+            display: inline-block;
+        }
     </style>
     <script type="text/javascript">
     window.kanbandata = [
         { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
-        { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
+        { Id: 2, Status: "Close", Summary: "Task 2", Assignee: "Andrew" },
         { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
         { Id: 4, Status: "Testing", Summary: "Task4", Assignee: "Nancy" }
     ];
@@ -1958,19 +1805,17 @@ Gets or sets a value that indicates whether to add customToolbarItems within the
                       {
                           template: "#Delete"
                       }
-                ],
-                allowTitle: true,
+                ],                
                 fields: {
                     primaryKey: "Id",
-                    content: "Summary",
-                    imageUrl: "ImgUrl"
+                    content: "Summary"                  
                 },
                 toolbarClick: function (args) {
                     if (args.itemName == "Delete" && this.element.find(".e-kanbancard").hasClass("e-cardselection")) {
                         var selectedcard = this.element.find(".e-cardselection");
                         this.KanbanEdit.deleteCard(selectedcard.attr("id"));
                     }
-                },
+                }
             });
     });
     </script>
@@ -1992,7 +1837,7 @@ Gets the template to render customToolbarItems.
 
     <div id="Kanban"></div>
     <script id="Delete" type="text/x-jsrender">
-    <a class="e-customdelete  e-icon" />
+        <a class="e-customdelete  e-icon" />
     </script>
     <style type="text/css" class="cssStyles">
     .e-customdelete:before {
@@ -2006,7 +1851,7 @@ Gets the template to render customToolbarItems.
     <script type="text/javascript">
     window.kanbandata = [
         { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
-        { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
+        { Id: 2, Status: "Close", Summary: "Task 2", Assignee: "Andrew" },
         { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
         { Id: 4, Status: "Testing", Summary: "Task4", Assignee: "Nancy" }
     ];
@@ -2026,18 +1871,17 @@ Gets the template to render customToolbarItems.
                       {
                           template: "#Delete"
                       }
-                ],
-                allowTitle: true,
+                ],                
                 fields: {
                     primaryKey: "Id",
-                    content: "Summary",
+                    content: "Summary"
                 },
                 toolbarClick: function (args) {
                     if (args.itemName == "Delete" && this.element.find(".e-kanbancard").hasClass("e-cardselection")) {
                         var selectedcard = this.element.find(".e-cardselection");
                         this.KanbanEdit.deleteCard(selectedcard.attr("id"));
                     }
-                },
+                }
             });
     });
     </script>
@@ -2059,9 +1903,9 @@ Gets or sets a value that indicates to render the Kanban with custom theme.
  
     <div id="Kanban"></div>
     <style type="text/css">
-    .gradient-green {
-        font-family: cursive;
-    }
+        .gradient-green {
+            font-family: cursive;
+        }
         .gradient-green .e-swimlanerow {
             background: none repeat scroll 0 0 #71A409;
         }
@@ -2084,9 +1928,9 @@ Gets or sets a value that indicates to render the Kanban with custom theme.
             ],
             fields: {
                 primaryKey: "Id",
-                content: "Summary",
+                content: "Summary"
             },
-            keyField: "Status",
+            keyField: "Status"
         }
     );
     });
@@ -2097,7 +1941,7 @@ Gets or sets a value that indicates to render the Kanban with custom theme.
 ### dataSource `object`
 {:#members:datasource}
 
-Gets or sets the data to render the Kanban with card.
+Gets or sets the data to render the Kanban with cards.
 
 #### Default Value:
 
@@ -2124,11 +1968,10 @@ Gets or sets the data to render the Kanban with card.
                 { headerText: "In Progress", key: "InProgress" }
             ],
             fields: {
-                primaryKey: "Id",
-                swimlaneKey: "Assignee",
-                content: "Summary",
+                primaryKey: "Id",                
+                content: "Summary"
             },
-            keyField: "Status",
+            keyField: "Status"
         }
     );
     });
@@ -2155,9 +1998,7 @@ To perform kanban functionalities with touch interaction.
        { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
        { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
        { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
-       { Id: 4, Status: "Testing", Summary: "Task4", Assignee: "Nancy" },
-       { Id: 5, Status: "InProgress", Summary: "Task 5", Assignee: "Andrew" },
-       { Id: 6, Status: "Testing", Summary: "Task 6", Assignee: "Nancy" }
+       { Id: 4, Status: "Testing", Summary: "Task4", Assignee: "Nancy" }
     ];
     $(function () {
         var data = ej.DataManager(window.kanbandata);
@@ -2168,26 +2009,13 @@ To perform kanban functionalities with touch interaction.
                 columns: [
                     { headerText: "Backlog", key: "Open" },
                     { headerText: "In Progress", key: "InProgress" },
-                    { headerText: "Testing", key: "Testing" },
-                    { headerText: "Done", key: "Close" }
+                    { headerText: "Testing", key: "Testing" }
                 ],
                 keyField: "Status",
                 fields: {
-                    primaryKey: "Id",
-                    swimlaneKey: "Assignee",
+                    primaryKey: "Id",                    
                     content: "Summary",
-                },
-                editSettings: {
-                    editItems: [
-                        { field: "Id", editType: ej.Kanban.EditingType.String },
-                        { field: "Status", editType: ej.Kanban.EditingType.Dropdown },
-                        { field: "Assignee", editType: ej.Kanban.EditingType.Dropdown },
-                        { field: "Estimate", editType: ej.Kanban.EditingType.Numeric, editParams: { decimalPlaces: 2 } },
-                        { field: "Summary", editType: ej.Kanban.EditingType.TextArea }
-                    ],
-                    allowEditing: true,
-                    allowAdding: true
-                },
+                }
             });
     });
     </script>
@@ -2197,7 +2025,7 @@ To perform kanban functionalities with touch interaction.
 ### enableRTL `boolean`
 {:#members:enablertl}
 
-Align content in the Kanban control from right to left by setting the property as true.
+Align content in the Kanban control align from right to left by setting the property as true.
 
 #### Default Value:
 
@@ -2213,9 +2041,7 @@ Align content in the Kanban control from right to left by setting the property a
        { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
        { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
        { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
-       { Id: 4, Status: "Testing", Summary: "Task4", Assignee: "Nancy" },
-       { Id: 5, Status: "InProgress", Summary: "Task 5", Assignee: "Andrew" },
-       { Id: 6, Status: "Testing", Summary: "Task 6", Assignee: "Nancy" }
+       { Id: 4, Status: "Testing", Summary: "Task4", Assignee: "Nancy" }
     ];
     $(function () {
         var data = ej.DataManager(window.kanbandata);
@@ -2226,26 +2052,13 @@ Align content in the Kanban control from right to left by setting the property a
                 columns: [
                     { headerText: "Backlog", key: "Open" },
                     { headerText: "In Progress", key: "InProgress" },
-                    { headerText: "Testing", key: "Testing" },
-                    { headerText: "Done", key: "Close" }
+                    { headerText: "Testing", key: "Testing" }
                 ],
                 keyField: "Status",
                 fields: {
-                    primaryKey: "Id",
-                    swimlaneKey: "Assignee",
-                    content: "Summary",
-                },
-                editSettings: {
-                    editItems: [
-                        { field: "Id", editType: ej.Kanban.EditingType.String },
-                        { field: "Status", editType: ej.Kanban.EditingType.Dropdown },
-                        { field: "Assignee", editType: ej.Kanban.EditingType.Dropdown },
-                        { field: "Estimate", editType: ej.Kanban.EditingType.Numeric, editParams: { decimalPlaces: 2 } },
-                        { field: "Summary", editType: ej.Kanban.EditingType.TextArea }
-                    ],
-                    allowEditing: true,
-                    allowAdding: true
-                },
+                    primaryKey: "Id",                    
+                    content: "Summary"
+                }                
             });
     });
     </script>
@@ -2255,7 +2068,7 @@ Align content in the Kanban control from right to left by setting the property a
 ### enableTotalCount `boolean`
 {:#members:enabletotalcount}
 
-To show Total count of cards in each column 
+To show total count of cards in each column. 
     
 #### Default Value:
 
@@ -2271,8 +2084,7 @@ To show Total count of cards in each column
          { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
          { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
          { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
-         { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Nancy" },
-         { Id: 5, Status: "Close", Summary: "Task 6", Assignee: "Robert" }
+         { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Nancy" }
     ];
     $(function () {
         var data = ej.DataManager(window.kanbandata);
@@ -2283,16 +2095,13 @@ To show Total count of cards in each column
                 columns: [
                     { headerText: "Backlog", key: "Open" },
                     { headerText: "In Progress", key: "InProgress" },
-                    { headerText: "Testing", key: "Testing" },
-                    { headerText: "Done", key: "Close" }
+                    { headerText: "Testing", key: "Testing" }
                 ],
                 keyField: "Status",
                 fields: {
-                    primaryKey: "Id",
-                    swimlaneKey: "Assignee",
-                    content: "Summary",
-                },
-
+                    primaryKey: "Id",                    
+                    content: "Summary"
+                }
             });
     });
     </script>
@@ -2318,8 +2127,7 @@ Get or sets an object that indicates whether to customize the editing behavior o
          { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy", Estimate: "2.5" },
          { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew", Estimate: "1.5" },
          { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew", Estimate: "1" },
-         { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Nancy", Estimate: "3" },
-         { Id: 5, Status: "Close", Summary: "Task 6", Assignee: "Robert", Estimate: "1.5" }
+         { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Nancy", Estimate: "3" }
     ];
     $(function () {
         var data = ej.DataManager(window.kanbandata);
@@ -2336,7 +2144,7 @@ Get or sets an object that indicates whether to customize the editing behavior o
                 keyField: "Status",
                 fields: {
                     primaryKey: "Id",
-                    content: "Summary",
+                    content: "Summary"
                 },
                 editSettings: {
                     editItems: [
@@ -2348,7 +2156,7 @@ Get or sets an object that indicates whether to customize the editing behavior o
                     ],
                     allowEditing: true,
                     allowAdding: true
-                },
+                }
             }
         );
     });
@@ -2375,8 +2183,7 @@ Gets or sets a value that indicates whether to enable the editing action in card
          { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy", Estimate: "2.5" },
          { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew", Estimate: "1.5" },
          { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew", Estimate: "1" },
-         { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Nancy", Estimate: "3" },
-         { Id: 5, Status: "Close", Summary: "Task 6", Assignee: "Robert", Estimate: "1.5" }
+         { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Nancy", Estimate: "3" }
     ];
     $(function () {
         var data = ej.DataManager(window.kanbandata);
@@ -2387,13 +2194,12 @@ Gets or sets a value that indicates whether to enable the editing action in card
                 columns: [
                     { headerText: "Backlog", key: "Open" },
                     { headerText: "In Progress", key: "InProgress" },
-                    { headerText: "Testing", key: "Testing" },
-                    { headerText: "Done", key: "Close" }
+                    { headerText: "Testing", key: "Testing" }
                 ],
                 keyField: "Status",
                 fields: {
                     primaryKey: "Id",
-                    content: "Summary",
+                    content: "Summary"
                 },
                 editSettings: {
                     editItems: [
@@ -2404,7 +2210,7 @@ Gets or sets a value that indicates whether to enable the editing action in card
                         { field: "Summary", editType: ej.Kanban.EditingType.TextArea }
                     ],
                     allowEditing: true
-                },
+                }
             }
         );
     });
@@ -2431,8 +2237,7 @@ Gets or sets a value that indicates whether to enable the adding action in cards
          { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy", Estimate: "2.5" },
          { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew", Estimate: "1.5" },
          { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew", Estimate: "1" },
-         { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Nancy", Estimate: "3" },
-         { Id: 5, Status: "Close", Summary: "Task 6", Assignee: "Robert", Estimate: "1.5" }
+         { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Nancy", Estimate: "3" }
     ];
     $(function () {
         var data = ej.DataManager(window.kanbandata);
@@ -2443,13 +2248,12 @@ Gets or sets a value that indicates whether to enable the adding action in cards
                 columns: [
                     { headerText: "Backlog", key: "Open" },
                     { headerText: "In Progress", key: "InProgress" },
-                    { headerText: "Testing", key: "Testing" },
-                    { headerText: "Done", key: "Close" }
+                    { headerText: "Testing", key: "Testing" }
                 ],
                 keyField: "Status",
                 fields: {
                     primaryKey: "Id",
-                    content: "Summary",
+                    content: "Summary"
                 },
                 editSettings: {
                     editItems: [
@@ -2460,7 +2264,7 @@ Gets or sets a value that indicates whether to enable the adding action in cards
                         { field: "Summary", editType: ej.Kanban.EditingType.TextArea }
                     ],
                     allowAdding: true
-                },
+                }
             }
         );
     });
@@ -2471,7 +2275,7 @@ Gets or sets a value that indicates whether to enable the adding action in cards
 ### editSettings.dialogTemplate `String`
 {:#members:editsettings-dialogtemplate}
 
-This specifies the id of the template.which is require to be edited using the Dialog Box
+This specifies the id of the template which is require to be edited using the Dialog Box.
 
 #### Default Value:
 
@@ -2520,7 +2324,7 @@ This specifies the id of the template.which is require to be edited using the Di
                 keyField: "Status",
                 fields: {
                     primaryKey: "Id",
-                    content: "Summary",
+                    content: "Summary"
                 },
                 editSettings: {
                     editMode: ej.Kanban.EditMode.DialogTemplate,
@@ -2656,7 +2460,7 @@ Get or sets an object that indicates whether to customize the editing fields of 
                 keyField: "Status",
                 fields: {
                     primaryKey: "Id",
-                    content: "Summary",
+                    content: "Summary"
                 },
                 editSettings: {
                     editMode: ej.Kanban.EditMode.Dialog,
@@ -2668,7 +2472,7 @@ Get or sets an object that indicates whether to customize the editing fields of 
                         { field: "Summary", editType: ej.Kanban.EditingType.TextArea }],
                     allowEditing: true,
                     allowAdding: true
-                },
+                }
             }
           );
     })
@@ -2679,7 +2483,7 @@ Get or sets an object that indicates whether to customize the editing fields of 
 ### editSettings.editItems.field `string`
 {:#members:editsettings-edititems-field}
 
-It is used to map editing field in the card.
+It is used to map editing field from the data source.
 
 #### Default Value:
 
@@ -2712,7 +2516,7 @@ It is used to map editing field in the card.
                 keyField: "Status",
                 fields: {
                     primaryKey: "Id",
-                    content: "Summary",
+                    content: "Summary"
                 },
                 editSettings: {
                     editMode: ej.Kanban.EditMode.Dialog,
@@ -2724,7 +2528,7 @@ It is used to map editing field in the card.
                         { field: "Summary", editType: ej.Kanban.EditingType.TextArea }],
                     allowEditing: true,
                     allowAdding: true
-                },
+                }
             }
           );
     })
@@ -2809,7 +2613,7 @@ It is used to set the particular editType in the card for editing.
                 keyField: "Status",
                 fields: {
                     primaryKey: "Id",
-                    content: "Summary",
+                    content: "Summary"
                 },
                 editSettings: {
                     editMode: ej.Kanban.EditMode.Dialog,
@@ -2821,7 +2625,7 @@ It is used to set the particular editType in the card for editing.
                         { field: "Summary", editType: ej.Kanban.EditingType.TextArea }],
                     allowEditing: true,
                     allowAdding: true
-                },
+                }
             }
           );
     })
@@ -2834,7 +2638,7 @@ It is used to set the particular editType in the card for editing.
 
 Gets or sets a value that indicates to define constraints for saving data to the database.
 
-#### Default Value:
+#### Default Value
 
 * Object
 
@@ -2865,7 +2669,7 @@ Gets or sets a value that indicates to define constraints for saving data to the
                 keyField: "Status",
                 fields: {
                     primaryKey: "Id",
-                    content: "Summary",
+                    content: "Summary"
                 },
                 editSettings: {
                     editMode: ej.Kanban.EditMode.Dialog,
@@ -2878,7 +2682,7 @@ Gets or sets a value that indicates to define constraints for saving data to the
                     ],
                     allowEditing: true,
                     allowAdding: true
-                },
+                }
             }
           );
     })
@@ -2923,10 +2727,9 @@ It is used to set the particular editparams in the card for editing.
                 keyField: "Status",
                 fields: {
                     primaryKey: "Id",
-                    content: "Summary",
+                    content: "Summary"
                 },
-                editSettings: {
-                    title: "Assignee",
+                editSettings: {                    
                     editMode: ej.Kanban.EditMode.Dialog,
                     editItems: [
                         { field: "Id", editType: ej.Kanban.EditingType.String },
@@ -2936,7 +2739,7 @@ It is used to set the particular editparams in the card for editing.
                         { field: "Summary", editType: ej.Kanban.EditingType.TextArea }],
                     allowEditing: true,
                     allowAdding: true
-                },
+                }
             }
         );
     })
@@ -2947,7 +2750,7 @@ It is used to set the particular editparams in the card for editing.
 ### editSettings.editItems.defaultValue `string/number`
 {:#members:editsettings-edititems-defaultvalue}
 
-It is used to specify defaultValue in the card.
+It is used to specify defaultValue for the fields while adding new card.
 
 #### Default Value
 
@@ -2970,8 +2773,7 @@ It is used to specify defaultValue in the card.
         var data = ej.DataManager(window.kanbandata);
         $("#Kanban").ejKanban(
             {
-                dataSource: data,
-                actionComplete: "complete",
+                dataSource: data,                
                 columns: [
                     { headerText: "Backlog", key: "Open" },
                     { headerText: "In Progress", key: "InProgress" },
@@ -2981,7 +2783,7 @@ It is used to specify defaultValue in the card.
                 keyField: "Status",
                 fields: {
                     primaryKey: "Id",
-                    content: "Summary",
+                    content: "Summary"
                 },
                 editSettings: {
                     editMode: ej.Kanban.EditMode.Dialog,
@@ -2993,7 +2795,7 @@ It is used to specify defaultValue in the card.
                         { field: "Summary", editType: ej.Kanban.EditingType.TextArea, validationRules: { required: true } }],
                     allowEditing: true,
                     allowAdding: true
-                },
+                }
             }
         );
     })
@@ -3054,14 +2856,14 @@ This specifies the id of the template which is require to be edited using the Ex
                 keyField: "Status",
                 fields: {
                     primaryKey: "Id",
-                    content: "Summary",
+                    content: "Summary"
                 },
                 editSettings: {
                     editMode: ej.Kanban.EditMode.ExternalFormTemplate,
                     externalFormTemplate: "#template",
                     allowEditing: true,
                     allowAdding: true
-                },
+                }
             }
           );
     })
@@ -3074,7 +2876,7 @@ This specifies the id of the template which is require to be edited using the Ex
 
 <ts name="ej.Kanban.FormPosition"/>
 
-This specifies to set the position of an External edit form either in the top-right or bottom of the Kanban.
+This specifies to set the position of an External edit form either in the right or bottom of the Kanban.
 
 #### Default Value:
 
@@ -3126,7 +2928,7 @@ This specifies to set the position of an External edit form either in the top-ri
                 keyField: "Status",
                 fields: {
                     primaryKey: "Id",
-                    content: "Summary",
+                    content: "Summary"
                 },
                 editSettings: {
                     editMode: ej.Kanban.EditMode.ExternalForm,
@@ -3139,7 +2941,7 @@ This specifies to set the position of an External edit form either in the top-ri
                         { field: "Summary", editType: ej.Kanban.EditingType.TextArea }],
                     allowEditing: true,
                     allowAdding: true
-                },
+                }
             }
           );
     })
@@ -3207,7 +3009,7 @@ To customize field mappings for card , editing title and control key parameters
 ### fields.primaryKey `string`
 {:#members:fields-primarykey}
 
-The primarykey field is get as property of Kanban. And this will used for Drag and drop and editing mainly.
+The primarykey field is mapped to data source field. And this will used for Drag and drop and editing mainly.
 
 #### Default Value:
 
@@ -3240,7 +3042,7 @@ The primarykey field is get as property of Kanban. And this will used for Drag a
             keyField: "Status",
             fields: {
                 primaryKey: "Id",
-                content: "Summary",
+                content: "Summary"
             },
         });
     });
@@ -3251,7 +3053,7 @@ The primarykey field is get as property of Kanban. And this will used for Drag a
 ### fields.swimlaneKey `string`
 {:#members:fields-swimlanekey}
 
-To enable swimlane grouping based on the given key field.
+To enable swimlane grouping based on the given key field from datasource mapping.
 
 #### Default Value
 
@@ -3285,8 +3087,8 @@ To enable swimlane grouping based on the given key field.
             fields: {
                 primaryKey: "Id",
                 swimlaneKey: "Assignee",
-                content: "Summary",
-            },
+                content: "Summary"
+            }
         });
     });
     </script>
@@ -3296,7 +3098,7 @@ To enable swimlane grouping based on the given key field.
 ### fields.priority `string`
 {:#members:fields-priority}
 
-Priority field has been mapped data source field to maintain card priority
+Priority field has been mapped data source field to maintain cards priority.
 
 #### Default Value:
 
@@ -3330,9 +3132,9 @@ Priority field has been mapped data source field to maintain card priority
             keyField: "Status",
             fields: {
                 primaryKey: "Id",
-                Priority: "RankId",
-                content: "Summary",
-            },
+                priority: "RankId",
+                content: "Summary"
+            }
         });
     });
     </script>
@@ -3342,7 +3144,7 @@ Priority field has been mapped data source field to maintain card priority
 ### fields.content `string`
 {:#members:fields-content}
 
-ContentField has been Mapped into card text.
+Content field has been Mapped into card text.
 
 #### Default Value:
 
@@ -3386,7 +3188,7 @@ ContentField has been Mapped into card text.
 ### fields.tag `string`
 {:#members:fields-tag}
 
-TagField has been Mapped into card tag.
+Tag field has been Mapped into card tag.
 
 #### Default Value:
 
@@ -3420,8 +3222,8 @@ TagField has been Mapped into card tag.
             fields: {
                 primaryKey: "Id",
                 content: "Summary",
-                tag: "Tags",
-            },
+                tag: "Tags"
+            }
         });
     });
     </script>
@@ -3431,7 +3233,7 @@ TagField has been Mapped into card tag.
 ### fields.title `string`
 {:#members:fields-title}
 
-Title Field has been Mapped to field in datasource for title content. If title field specified , card expand/collapse will be enabled with header and content section
+Title field has been Mapped to field in datasource for title content. If title field specified , card expand/collapse will be enabled with header and content section.
 
 #### Default Value:
 
@@ -3465,8 +3267,8 @@ Title Field has been Mapped to field in datasource for title content. If title f
             fields: {
                 primaryKey: "Id",
                 content: "Summary",
-                title: "Id",
-            },
+                title: "Assignee"
+            }
         });
     });
     </script>
@@ -3510,7 +3312,7 @@ To customize the card has been Mapped into card color field.
             fields: {
                 primaryKey: "Id",
                 content: "Summary",
-                color: "Type",
+                color: "Type"
             },
             cardSettings: {
                 colorMapping: {
@@ -3529,9 +3331,9 @@ To customize the card has been Mapped into card color field.
 ### fields.imageUrl `string`
 {:#members:fields-imageurl}
 
-ImageUrlField has been Mapped into card image.
+ImageUrl field has been Mapped into card image.
 
-#### Default Value:
+#### Default Value
 
 * null
 
@@ -3563,9 +3365,8 @@ ImageUrlField has been Mapped into card image.
             fields: {
                 primaryKey: "Id",
                 content: "Summary",
-                imageUrl: "ImgUrl",
-            },
-
+                imageUrl: "ImgUrl"
+            }
         });
     });
     </script>
@@ -3606,8 +3407,8 @@ To map datasource field for column values mapping
                 ],
                 keyField: "Status",
                 fields: {
-                    content: "Summary",
-                },
+                    content: "Summary"
+                }
             });
     });
     </script>
@@ -3640,20 +3441,19 @@ When set to true, adapts the Kanban layout to fit the screen size of devices on 
         var data = ej.DataManager(window.kanbandata);
         $("#Kanban").ejKanban(
             {
-                dataSource: data,
-                minWidth: 400,
+                dataSource: data,                
                 isResponsive: true,
                 columns: [
-                    { headerText: "Backlog", key: "Open", width: 150 },
-                    { headerText: "In Progress", key: "InProgress", width: 120 },
-                    { headerText: "Testing", key: "Testing", width: 120 },
-                    { headerText: "Done", key: "Close", width: 150 }
+                    { headerText: "Backlog", key: "Open" },
+                    { headerText: "In Progress", key: "InProgress" },
+                    { headerText: "Testing", key: "Testing" },
+                    { headerText: "Done", key: "Close" }
                 ],
                 keyField: "Status",
                 fields: {
                     primaryKey: "Id",
-                    content: "Summary",
-                },
+                    content: "Summary"
+                }
             });
     });
     </script>
@@ -3698,8 +3498,8 @@ Gets or sets a value that indicates whether to set the minimum width of the resp
                 keyField: "Status",
                 fields: {
                     primaryKey: "Id",
-                    content: "Summary",
-                },
+                    content: "Summary"
+                }
             });
     });
     </script>
@@ -3725,9 +3525,7 @@ To customize the filtering behavior based on queries given.
            { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Janet Leverling" },
            { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
            { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
-           { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Janet Leverling" },
-           { Id: 5, Status: "InProgress", Summary: "Task 5", Assignee: "Andrew" },
-           { Id: 6, Status: "Testing", Summary: "Task 6", Assignee: "Janet Leverling" }
+           { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Janet Leverling" }
     ];
     $(function () {
         var data = ej.DataManager(window.kanbandata);
@@ -3737,13 +3535,12 @@ To customize the filtering behavior based on queries given.
                 columns: [
                     { headerText: "Backlog", key: "Open" },
                     { headerText: "In Progress", key: "InProgress" },
-                    { headerText: "Testing", key: "Testing" },
-                    { headerText: "Done", key: "Close" }
+                    { headerText: "Testing", key: "Testing" }
                 ],
                 keyField: "Status",
                 fields: {
                     primaryKey: "Id",
-                    content: "Summary",
+                    content: "Summary"
                 },
                 filterSettings: [
                          { text: "Janet Issues", query: new ej.Query().where("Assignee", "equal", "Janet Leverling"), description: "Displays issues which matches the assignee as 'Janet Leverling'" },
@@ -3775,9 +3572,7 @@ Gets or sets an object of display name to filter queries.
            { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Janet Leverling" },
            { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
            { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
-           { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Janet Leverling" },
-           { Id: 5, Status: "InProgress", Summary: "Task 5", Assignee: "Andrew" },
-           { Id: 6, Status: "Testing", Summary: "Task 6", Assignee: "Janet Leverling" }
+           { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Janet Leverling" }
     ];
     $(function () {
         var data = ej.DataManager(window.kanbandata);
@@ -3787,13 +3582,12 @@ Gets or sets an object of display name to filter queries.
                 columns: [
                     { headerText: "Backlog", key: "Open" },
                     { headerText: "In Progress", key: "InProgress" },
-                    { headerText: "Testing", key: "Testing" },
-                    { headerText: "Done", key: "Close" }
+                    { headerText: "Testing", key: "Testing" }
                 ],
                 keyField: "Status",
                 fields: {
                     primaryKey: "Id",
-                    content: "Summary",
+                    content: "Summary"
                 },
                 filterSettings: [
                          { text: "Janet Issues", query: new ej.Query().where("Assignee", "equal", "Janet Leverling"), description: "Displays issues which matches the assignee as 'Janet Leverling'" },
@@ -3825,9 +3619,7 @@ Gets or sets an object that Queries to perform filtering
            { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Janet Leverling" },
            { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
            { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
-           { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Janet Leverling" },
-           { Id: 5, Status: "InProgress", Summary: "Task 5", Assignee: "Andrew" },
-           { Id: 6, Status: "Testing", Summary: "Task 6", Assignee: "Janet Leverling" }
+           { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Janet Leverling" }
     ];
     $(function () {
         var data = ej.DataManager(window.kanbandata);
@@ -3837,13 +3629,12 @@ Gets or sets an object that Queries to perform filtering
                 columns: [
                     { headerText: "Backlog", key: "Open" },
                     { headerText: "In Progress", key: "InProgress" },
-                    { headerText: "Testing", key: "Testing" },
-                    { headerText: "Done", key: "Close" }
+                    { headerText: "Testing", key: "Testing" }
                 ],
                 keyField: "Status",
                 fields: {
                     primaryKey: "Id",
-                    content: "Summary",
+                    content: "Summary"
                 },
                 filterSettings: [
                          { text: "Janet Issues", query: new ej.Query().where("Assignee", "equal", "Janet Leverling"), description: "Displays issues which matches the assignee as 'Janet Leverling'" },
@@ -3875,9 +3666,7 @@ Gets or sets an object of tooltip to filter buttons.
            { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Janet Leverling" },
            { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
            { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
-           { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Janet Leverling" },
-           { Id: 5, Status: "InProgress", Summary: "Task 5", Assignee: "Andrew" },
-           { Id: 6, Status: "Testing", Summary: "Task 6", Assignee: "Janet Leverling" }
+           { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Janet Leverling" }
     ];
     $(function () {
         var data = ej.DataManager(window.kanbandata);
@@ -3893,7 +3682,7 @@ Gets or sets an object of tooltip to filter buttons.
                 keyField: "Status",
                 fields: {
                     primaryKey: "Id",
-                    content: "Summary",
+                    content: "Summary"
                 },
                 filterSettings: [
                          { text: "Janet Issues", query: new ej.Query().where("Assignee", "equal", "Janet Leverling"), description: "Displays issues which matches the assignee as 'Janet Leverling'" },
@@ -3927,7 +3716,7 @@ ej Query to query database of Kanban.
      { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" }
     ];
     $(function () {
-        var query = ej.Query().select(["Status", "Assignee", "Text"]);
+        var query = ej.Query().select(["Status", "Id", "Summary"]);
         var data = ej.DataManager(window.kanbandata);
         $("#kanban").ejKanban(
             {
@@ -3940,7 +3729,7 @@ ej Query to query database of Kanban.
                 ],
                 fields: {
                     primaryKey: "Id",
-                    content: "Summary",
+                    content: "Summary"
                 },
             }
         );
@@ -3968,9 +3757,7 @@ To change the key in keyboard interaction to Kanban control.
            { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
            { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
            { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
-           { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Nancy" },
-           { Id: 5, Status: "InProgress", Summary: "Task 5", Assignee: "Andrew" },
-           { Id: 6, Status: "Testing", Summary: "Task 6", Assignee: "Robert" }
+           { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Nancy" }
     ];
     $(function () {
         var data = ej.DataManager(window.kanbandata);
@@ -3981,13 +3768,12 @@ To change the key in keyboard interaction to Kanban control.
                 columns: [
                     { headerText: "Backlog", key: "Open" },
                     { headerText: "In Progress", key: "InProgress" },
-                    { headerText: "Testing", key: "Testing" },
-                    { headerText: "Done", key: "Close" }
+                    { headerText: "Testing", key: "Testing" }                    
                 ],
                 keyField: "Status",
                 fields: {
                     primaryKey: "Id",
-                    content: "Summary",
+                    content: "Summary"
                 },
                 selectionType: "multiple",
                 editSettings: {
@@ -4001,13 +3787,11 @@ To change the key in keyboard interaction to Kanban control.
                     allowEditing: true,
                     allowAdding: true
                 },
-
                 keySettings: {
                     focus: "e",
                     insertCard: "45",
                 },
             });
-
         $(document).on("keydown", function (e) {
             if (e.altKey && e.keyCode === 74) {
                 $("#Kanban").focus();
@@ -4217,7 +4001,7 @@ To allow the Kanban to freeze particular swimlane at the time of scrolling , unt
                 fields: {
                     primaryKey: "Id",
                     swimlaneKey: "Assignee",
-                    content: "Summary",
+                    content: "Summary"
                 },
             });
     });
@@ -4254,18 +4038,16 @@ To customize the searching behavior of the Kanban.
                 columns: [
                      { headerText: "Backlog", key: "Open" },
                      { headerText: "In Progress", key: "InProgress" },
-                     { headerText: "Testing", key: "Testing" },
-                     { headerText: "Done", key: "Close" }
+                     { headerText: "Testing", key: "Testing" }
                 ],
                 keyField: "Status",
                 fields: {
-                    primaryKey: "Id",
-                    swimlaneKey: "Assignee",
-                    content: "Summary",
+                    primaryKey: "Id",                    
+                    content: "Summary"
                 },
                 allowSearching: true,
                 searchSettings: {
-                    fields: ["Text", "Id"],
+                    fields: ["Summary", "Id"],
                     key: "",
                     operator: "contains",
                     ignoreCase: true,
@@ -4306,14 +4088,12 @@ To customize the fields the searching operation can be perform.
                 columns: [
                      { headerText: "Backlog", key: "Open" },
                      { headerText: "In Progress", key: "InProgress" },
-                     { headerText: "Testing", key: "Testing" },
-                     { headerText: "Done", key: "Close" }
+                     { headerText: "Testing", key: "Testing" }
                 ],
                 keyField: "Status",
                 fields: {
-                    primaryKey: "Id",
-                    swimlaneKey: "Assignee",
-                    content: "Summary",
+                    primaryKey: "Id",                    
+                    content: "Summary"
                 },
                 allowSearching: true,
                 searchSettings: {
@@ -4321,7 +4101,7 @@ To customize the fields the searching operation can be perform.
                     key: "",
                     operator: "contains",
                     ignoreCase: true,
-                },
+                }
             }
         );
     });
@@ -4358,22 +4138,19 @@ To customize the searching string.
                 columns: [
                      { headerText: "Backlog", key: "Open" },
                      { headerText: "In Progress", key: "InProgress" },
-                     { headerText: "Testing", key: "Testing" },
-                     { headerText: "Done", key: "Close" }
+                     { headerText: "Testing", key: "Testing" }
                 ],
                 keyField: "Status",
                 fields: {
                     primaryKey: "Id",
-                    swimlaneKey: "Assignee",
-                    content: "Summary",
+                    content: "Summary"
                 },
                 allowSearching: true,
-                searchSettings: {
-                    fields: ["Summary", "Id"],
-                    key: "",
+                searchSettings: {                    
+                    key: "Task 1",
                     operator: "contains",
                     ignoreCase: true,
-                },
+                }
             }
         );
     });
@@ -4410,19 +4187,16 @@ To customize the operator based on searching.
                 columns: [
                      { headerText: "Backlog", key: "Open" },
                      { headerText: "In Progress", key: "InProgress" },
-                     { headerText: "Testing", key: "Testing" },
-                     { headerText: "Done", key: "Close" }
+                     { headerText: "Testing", key: "Testing" }
                 ],
                 keyField: "Status",
                 fields: {
-                    primaryKey: "Id",
-                    swimlaneKey: "Assignee",
-                    content: "Summary",
+                    primaryKey: "Id",                    
+                    content: "Summary"
                 },
                 allowSearching: true,
-                searchSettings: {
-                    fields: ["Summary", "Id"],
-                    key: "",
+                searchSettings: {                    
+                    key: "Task 1",
                     operator: "contains",
                     ignoreCase: true,
                 },
@@ -4462,19 +4236,16 @@ To customize the ignore case based on searching.
                 columns: [
                      { headerText: "Backlog", key: "Open" },
                      { headerText: "In Progress", key: "InProgress" },
-                     { headerText: "Testing", key: "Testing" },
-                     { headerText: "Done", key: "Close" }
+                     { headerText: "Testing", key: "Testing" }
                 ],
                 keyField: "Status",
                 fields: {
-                    primaryKey: "Id",
-                    swimlaneKey: "Assignee",
-                    content: "Summary",
+                    primaryKey: "Id",                    
+                    content: "Summary"
                 },
                 allowSearching: true,
-                searchSettings: {
-                    fields: ["Summary", "Id"],
-                    key: "",
+                searchSettings: {                    
+                    key: "task",
                     operator: "contains",
                     ignoreCase: true,
                 },
@@ -4537,14 +4308,13 @@ To allow customize selection type. Accepting types are "single" and "multiple".
                 columns: [
                     { headerText: "Backlog", key: "Open" },
                     { headerText: "In Progress", key: "InProgress" },
-                    { headerText: "Testing", key: "Testing" },
-                    { headerText: "Done", key: "Close" }
+                    { headerText: "Testing", key: "Testing" }
                 ],
                 keyField: "Status",
                 fields: {
                     primaryKey: "Id",
-                    content: "Summary",
-                },
+                    content: "Summary"
+                }
             });
     });
     </script>
@@ -4579,11 +4349,11 @@ Gets or sets an object that indicates to managing the collection of stacked head
              {
                  dataSource: data,
                  columns: [
-                     { headerText: "Backlog", key: "Open", width: 80 },
-                     { headerText: "Validated", key: "Validate", width: 80 },
-                     { headerText: "In Progress", key: "InProgress", width: 80 },
-                     { headerText: "Testing", key: "Testing", width: 80 },
-                     { headerText: "Done", key: "Close", width: 70 }
+                     { headerText: "Backlog", key: "Open" },
+                     { headerText: "Validated", key: "Validate" },
+                     { headerText: "In Progress", key: "InProgress" },
+                     { headerText: "Testing", key: "Testing" },
+                     { headerText: "Done", key: "Close" }
                  ],
                  keyField: "Status",
                  stackedHeaderRows: [{
@@ -4594,8 +4364,8 @@ Gets or sets an object that indicates to managing the collection of stacked head
                  ],
                  fields: {
                      primaryKey: "Id",
-                     content: "Summary",
-                 },
+                     content: "Summary"
+                 }
              });
     });
     </script>
@@ -4630,11 +4400,11 @@ Gets or sets a value that indicates whether to add stacked header columns into t
              {
                  dataSource: data,
                  columns: [
-                     { headerText: "Backlog", key: "Open", width: 80 },
-                     { headerText: "Validated", key: "Validate", width: 80 },
-                     { headerText: "In Progress", key: "InProgress", width: 80 },
-                     { headerText: "Testing", key: "Testing", width: 80 },
-                     { headerText: "Done", key: "Close", width: 70 }
+                     { headerText: "Backlog", key: "Open" },
+                     { headerText: "Validated", key: "Validate" },
+                     { headerText: "In Progress", key: "InProgress" },
+                     { headerText: "Testing", key: "Testing" },
+                     { headerText: "Done", key: "Close" }
                  ],
                  keyField: "Status",
                  stackedHeaderRows: [{
@@ -4645,8 +4415,8 @@ Gets or sets a value that indicates whether to add stacked header columns into t
                  ],
                  fields: {
                      primaryKey: "Id",
-                     content: "Summary",
-                 },
+                     content: "Summary"
+                 }
              });
     });
     </script>
@@ -4681,11 +4451,11 @@ Gets or sets a value that indicates the headerText for the particular stacked he
              {
                  dataSource: data,
                  columns: [
-                     { headerText: "Backlog", key: "Open", width: 80 },
-                     { headerText: "Validated", key: "Validate", width: 80 },
-                     { headerText: "In Progress", key: "InProgress", width: 80 },
-                     { headerText: "Testing", key: "Testing", width: 80 },
-                     { headerText: "Done", key: "Close", width: 70 }
+                     { headerText: "Backlog", key: "Open" },
+                     { headerText: "Validated", key: "Validate" },
+                     { headerText: "In Progress", key: "InProgress" },
+                     { headerText: "Testing", key: "Testing" },
+                     { headerText: "Done", key: "Close" }
                  ],
                  keyField: "Status",
                  stackedHeaderRows: [{
@@ -4696,8 +4466,8 @@ Gets or sets a value that indicates the headerText for the particular stacked he
                  ],
                  fields: {
                      primaryKey: "Id",
-                     content: "Summary",
-                 },
+                     content: "Summary"
+                 }
              });
     });
     </script>
@@ -4732,11 +4502,11 @@ Gets or sets a value that indicates the column for the particular stacked header
              {
                  dataSource: data,
                  columns: [
-                     { headerText: "Backlog", key: "Open", width: 80 },
-                     { headerText: "Validated", key: "Validate", width: 80 },
-                     { headerText: "In Progress", key: "InProgress", width: 80 },
-                     { headerText: "Testing", key: "Testing", width: 80 },
-                     { headerText: "Done", key: "Close", width: 70 }
+                     { headerText: "Backlog", key: "Open" },
+                     { headerText: "Validated", key: "Validate" },
+                     { headerText: "In Progress", key: "InProgress" },
+                     { headerText: "Testing", key: "Testing" },
+                     { headerText: "Done", key: "Close" }
                  ],
                  keyField: "Status",
                  stackedHeaderRows: [{
@@ -4747,8 +4517,8 @@ Gets or sets a value that indicates the column for the particular stacked header
                  ],
                  fields: {
                      primaryKey: "Id",
-                     content: "Summary",
-                 },
+                     content: "Summary"
+                 }
              });
     });
     </script>
@@ -4766,7 +4536,7 @@ The tooltip allows to display card details in a tooltip while hovering on it.
 To enable or disable the tooltip display.
 
 
-#### Default Value:
+#### Default Value
 
 * false
 
@@ -4793,21 +4563,16 @@ To enable or disable the tooltip display.
                 columns: [
                     { headerText: "Backlog", key: "Open" },
                     { headerText: "In Progress", key: "InProgress" },
-                    { headerText: "Testing", key: "Testing" },
-                    { headerText: "Done", key: "Close" }
+                    { headerText: "Testing", key: "Testing" }
                 ],
                 keyField: "Status",
                 fields: {
                     primaryKey: "Id",
                     content: "Summary",
-                },
-                fields: {
-                    primaryKey: "Id",
-                    content: "Text",
                     title: "Id",
                     tag: "Tags",
                     color: "Type",
-                    imageUrl: "ImgUrl",
+                    imageUrl: "ImgUrl"
                 },
                 cardSettings: {
                     colorMapping: {
@@ -4815,7 +4580,7 @@ To enable or disable the tooltip display.
                         "#67ab47": "Improvement",
                         "#fbae19": "Epic",
                         "#6a5da8": "UG",
-                    },
+                    }
                 },
             });
     });
@@ -4886,8 +4651,7 @@ To customize the tooltip display based on your requirements.
                 columns: [
                     { headerText: "Backlog", key: "Open" },
                     { headerText: "In Progress", key: "InProgress" },
-                    { headerText: "Testing", key: "Testing" },
-                    { headerText: "Done", key: "Close" }
+                    { headerText: "Testing", key: "Testing" }                    
                 ],
                 keyField: "Status",
                 fields: {
@@ -4956,15 +4720,15 @@ Gets or sets a value that indicates whether to customizing the user interface (U
             columns: [
                     { headerText: "Backlog", key: "Open" },
                     { headerText: "In Progress", key: "InProgress", constraints: { max: 2 } },
-                    { headerText: "Done", key: "Close" }
+                    { headerText: "Testing", key: "Testing" }
             ],
             keyField: "Status",
             allowTitle: true,
             fields: {
                 primaryKey: "Id",
                 swimlaneKey: "Assignee",
-                content: "Summary",
-            },
+                content: "Summary"
+            }
         });
     });
     </script>
@@ -5051,7 +4815,7 @@ Collapse all the swimlane rows in Kanban.
 ### columns(column,key,\[action\])
 {:#methods:columns}
 
-Add or remove columns in Kanban columns collections
+Add or remove columns in Kanban columns collections.Default action is add.
 
  <table class="params">
     <thead>
@@ -5817,7 +5581,7 @@ Update a card in Kanban control based on key and JSON data given.
     // Create Kanban object.
     var kanbanObj = $("#Kanban").data("ejKanban");
     // Sends a update card request to the Kanban
-    kanbanObj.updateCard(2,{ Id: 2, Status: "Open", Text: "Task 1", Assignee: "Andrew Piller");
+    kanbanObj.updateCard(2,{ Id: 2, Status: "Open", Summary: "Task 1", Assignee: "Andrew Piller");
     </script>
     
 {% endhighlight %}
@@ -5828,7 +5592,7 @@ Update a card in Kanban control based on key and JSON data given.
 ### KanbanEdit.addCard(\[primaryKey\],\[card\])
 {:#methods:kanbanedit-addcard}
 
-Add a new card in Kanban control.If parameters are not given default dialog will be open
+Add a new card in Kanban control.If parameters are not given default dialog will be open.
 
  <table class="params">
     <thead>
@@ -5865,12 +5629,11 @@ Add a new card in Kanban control.If parameters are not given default dialog will
     
 {% endhighlight %}
 
-
 {% highlight html %}
  
     <script>
     // add new card to the Kanban
-     kanbanObj.KanbanEdit.addCard("2",{Id:2, Status: "Open", Text: "Task 1", Assignee: "Nancy" })     
+     kanbanObj.KanbanEdit.addCard("2",{Id:2, Status: "Open", Summary: "Task 1", Assignee: "Nancy" })     
     </script>
     
 {% endhighlight %}
@@ -5878,7 +5641,7 @@ Add a new card in Kanban control.If parameters are not given default dialog will
 ### KanbanEdit.cancelEdit()
 {:#methods:kanbanedit-canceledit}
 
-Send a cancel request of add/edit card in Kanban
+Send a cancel request of add/edit card in Kanban.
 
 #### Example
 
@@ -6055,7 +5818,7 @@ Method used for set validation to a field during editing.
      // Create Kanban object.
      var kanbanObj = $("#Kanban").data("ejKanban");
      // It is used to set validation to a field during editing
-     kanbanObj.KanbanEdit.setValidationToField("Id", { required: true }); 
+     kanbanObj.KanbanEdit.setValidationToField("Summary", { required: true }); 
      </script>
      
 {% endhighlight %}
@@ -6064,7 +5827,7 @@ Method used for set validation to a field during editing.
  
     <script>
     // It is used to set validation to a field during editing
-    $("#Kanban").ejKanban("setValidationToField", "Id", { required: true });
+    $("#Kanban").ejKanban("setValidationToField", "Summary", { required: true });
     </script>
     
 {% endhighlight %} 
@@ -7225,7 +6988,7 @@ Triggered before the task is going to be edited.
 ### beginAdd
 {:#events:beginadd}
 
-Triggered before the task is going to be added
+Triggered before the card is going to be added
 
 <table class="params">
 <thead>
@@ -7293,7 +7056,7 @@ model</td>
 ### beforeCardSelect
 {:#events:beforecardselect}
 
-Triggered before the card is going to be selecting.
+Triggered before the card is selected.
 
 <table class="params">
 <thead>
@@ -7712,7 +7475,7 @@ Triggered when card dragging stops.
 ### cardDrop
 {:#events:carddrop}
 
-Triggered when the card is Drop.
+Triggered when the card is Dropped.
 
 <table class="params">
 <thead>
@@ -7795,7 +7558,7 @@ Triggered when the card is Drop.
 ### cardSelect
 {:#events:cardselect}
 
-Triggered after the card is select.
+Triggered after the card is selected.
 
 <table class="params">
 <thead>
@@ -7960,7 +7723,7 @@ Triggered when card is double clicked.
 ### cardSelecting
 {:#events:cardselecting}
 
-Triggered before the card is going to be selecting
+Triggered before the card is selected.
 
 <table class="params">
 <thead>
@@ -8057,7 +7820,7 @@ Triggered before the card is going to be selecting
 ### create
 {:#events:create}
 
-TTriggered for every Kanban Create.  
+Triggered when the Kanban is rendered completely
 
 <table class="params">
 <thead>
@@ -8300,7 +8063,7 @@ Triggered when Kanban going to destroy.
 ### endDelete
 {:#events:enddelete}
 
-Triggered after the task is deleted.
+Triggered after the card is deleted.
 
 <table class="params">
 <thead>
@@ -8378,7 +8141,7 @@ Triggered after the task is deleted.
 ### endEdit
 {:#events:endddit}
 
-Triggered after the task is edited.
+Triggered after the card is edited.
 
 <table class="params">
 <thead>

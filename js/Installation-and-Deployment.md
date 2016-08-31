@@ -181,7 +181,7 @@ Syncfusion JavaScript npm package is available as [public Git Repository](https:
 
 ### Syncfusion npm Installation 
 
-To configure the npm,  install the [nodejs](http://nodejs.org/) and update the npm. For more information to configure the npm packages refer the official site of [npm](https://docs.npmjs.com/getting-started/installing-node). 
+To configure the npm,  install the [Nodejs](http://nodejs.org/) and update the npm. For more information to configure the npm packages refer the official site of [npm](https://docs.npmjs.com/getting-started/installing-node). 
 
 syncfusion-javascript npm package can be configured in following ways.
 
@@ -260,21 +260,21 @@ npm update
 
 ### Overview
 
-jspm is a package manager for [SystemJS universal module loader](https://github.com/systemjs/systemjs), built on top of the dynamic [ES6 module loader](https://github.com/ModuleLoader/es6-module-loader). This can load any module format (ES6, AMD, CommonJS and globals) directly from any registry such as npm and GitHub with flat versioned dependency management. Any custom registry endpoints can be created through the Registry API.
+JSPM is a package manager for [SystemJS universal module loader](https://github.com/systemjs/systemjs), built on top of the dynamic [ES6 module loader](https://github.com/ModuleLoader/es6-module-loader). This can load any module format (ES6, AMD, CommonJS and globals) directly from any registry such as npm and GitHub with flat versioned dependency management. Any custom registry endpoints can be created through the Registry API.
 
 ### Syncfusion JavaScript JSPM
 
-Syncfusion JavaScript jspm package is available as [public Git Repository](https://github.com/syncfusion/JavaScript-Widgets) and also registered as Syncfusion-JavaScript in the npm registry too.
+Syncfusion JavaScript JSPM package is available as [public Git Repository](https://github.com/syncfusion/JavaScript-Widgets) and also registered as Syncfusion-JavaScript in the npm registry too.
 
-### Syncfusion jspm Installation 
+### Syncfusion JSPM Installation 
 
 #### Using Command prompt 
 
-Follow the below steps to install Syncfusion JavaScript jspm package via command prompt in required web application location.
+Follow the below steps to install Syncfusion JavaScript JSPM package via command prompt in required web application location.
 
 1. Open project’s location in command prompt window.
 
-2. A) To install the Syncfusion JavaScript jspm package via GitHub repository.
+2. A) To install the Syncfusion JavaScript JSPM package via GitHub repository.
 
    ~~~
    jspm install syncfusion=github:syncfusion/Javascript-Widgets
@@ -282,17 +282,17 @@ Follow the below steps to install Syncfusion JavaScript jspm package via command
    
    ![](Installation-and-Deployment_images/jspminstallationsteps_img1.jpeg)
 
-   B) To install the Syncfusion JavaScript jspm package via npm repository.
+   B) To install the Syncfusion JavaScript JSPM package via npm repository.
    
    ~~~
    jspm install npm:syncfusion-javascript
    ~~~
    
-N> As per standard Syncfusion used the 3 digit version for jspm packages. To install a particular version of jspm package, need to provide the version as suffix of the package name while installing. For instance, run the below command,  
+N> As per standard Syncfusion used the 3 digit version for JSPM packages. To install a particular version of JSPM package, need to provide the version as suffix of the package name while installing. For instance, run the below command,  
 N> E.g. The below command installs Syncfusion JavaScript package of version 14.1.0.46.  
-N> 'jspm install syncfusion=github:syncfusion/JavaScript-Widgets@14.1.46'
+N> 'JSPM install syncfusion=github:syncfusion/JavaScript-Widgets@14.1.46'
 
-### jspm Update
+### JSPM Update
 
 To update all the installed packages by using below command.
 

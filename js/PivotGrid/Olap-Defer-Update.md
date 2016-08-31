@@ -17,7 +17,7 @@ Defer Update support allows you to refresh the control only on-demand and not du
 
 $(function() {
     $("#PivotGrid1").ejPivotGrid({
-        url: "../OLAPService",
+        url: "/OLAPService",
         afterServiceInvoke: "onServiceInvokes"
     });
 });

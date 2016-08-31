@@ -297,7 +297,7 @@ You can set the “**strict mode” option** to restrict entering values defined
 
 
 
-Run the above code example and you can see that it restricts entering a value exceeding the **minValue** and **maxValue** range mentioned in the numeric textbox. 
+Run the above code example and you can see that it restricts entering a value exceeding the **minValue** and **maxValue** range mentioned in the Numeric textbox. 
 
 ## Set Calculation process with NumericTextBox Widget
 

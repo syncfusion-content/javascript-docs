@@ -17,14 +17,14 @@ Defer Update support allows you to refresh the control only on-demand and not du
 
   $(function() {
       $("#PivotGrid1").ejPivotGrid({
-          url: "../RelationalService",
+          url: "/RelationalService",
           afterServiceInvoke: "onServiceInvokes"
       });
   });
 
   function onServiceInvokes(args) {
       if (args.action == "initialize")
-          $("#PivotSchemaDesigner").ejPivotSchemaDesigner({
+          $("#PivotSchemaDesigner1").ejPivotSchemaDesigner({
               pivotControl: this,
               layout: ej.PivotSchemaDesigner.Layouts.Excel
           });

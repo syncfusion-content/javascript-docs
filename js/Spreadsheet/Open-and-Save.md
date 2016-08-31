@@ -25,7 +25,7 @@ function loadFromJSON() {
 {% endhighlight %}
 
 
-When you open an excel file, it needs to be read and converted to client side Spreadsheet model. The converted client side Spreadsheet model is sent as JSON which is used to render Spreadsheet. Similarly, when you save the Spreadsheet, the client Spreadsheet model is sent to the server as JSON for processing and saved. `Server configuration` is used for this process.
+When you open an excel file, it needs to be read and converted to client side Spreadsheet model. The converted client side Spreadsheet model is sent as JSON which is used to render Spreadsheet. Similarly, when you save the Spreadsheet, the client Spreadsheet model is sent to the server as JSON for processing and saved. [`Server configuration`](https://help.syncfusion.com/js/spreadsheet/open-and-save#server-configuration "Server configuration") is used for this process.
 
 ## Open 
 
@@ -64,7 +64,7 @@ You can open excel documents in following ways,
 ### Initial settings
 
 The Spreadsheet can load excel documents initially. The document can be specified either from client side or in server side.
-To load excel documents initially from client side, set excel file URL in [`importSettings`](http://help.syncfusion.com/js/api/ejspreadsheet#members:importsettings "importSettings") [`importUrl`](http://help.syncfusion.com/js/api/ejspreadsheet#members:importsettings-importurl "importUrl"). The code snippets for document initial load on client side are as follows,
+To load excel documents initially from client side, set [`importUrl`](http://help.syncfusion.com/js/api/ejspreadsheet#members:importsettings-importurl "importUrl") as excel file URL in [`importSettings`](http://help.syncfusion.com/js/api/ejspreadsheet#members:importsettings "importSettings"). The code snippets for document initial load on client side are as follows,
 
 {% highlight html %}
 
@@ -92,9 +92,9 @@ To load excel documents initially from server side, set [`importOnLoad`](http://
 
 <script>
 $(function () {
-    $("#Spreadsheet").ejSpreadsheet({
-        importOnLoad: true,
+    $("#Spreadsheet").ejSpreadsheet({        
         importSettings: {
+            importOnLoad: true,
             importMapper: "http://js.syncfusion.com/demos/ejservices/api/JSXLExport/Import"
         }           
     });
@@ -300,6 +300,9 @@ public class JSXLExportController : ApiController
 }
 
 {% endhighlight %}
+
+N> To export as `Stream` skip file name parameter in `Save` method. For more details refer below code snippets,<br>
+   Stream stream = Spreadsheet.Save(sheetModel, sheetData, ExportFormat.XLSX, ExcelVersion.Excel2013);
 
 ### Server dependencies
 

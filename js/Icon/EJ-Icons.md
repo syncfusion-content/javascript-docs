@@ -21,7 +21,7 @@ You have to include the common-images folder in the specified theme folder for d
 
 **For example**:
 
-“default-theme” folder css which contains the “ej.widgets.all.min.css/ej.web.all.min.css” and “ej.theme.min.css” file. The “ej.widgets.core.min.css” file is in the outside of the default theme folder as shown below:
+“default-theme” folder CSS which contains the “ej.widgets.all.min.css/ej.web.all.min.css” and “ej.theme.min.css” file. The “ej.widgets.core.min.css” file is in the outside of the default theme folder as shown below:
 
 ![](/js/Icon/IconLibrary_images/themefolder.png)
 
@@ -96,7 +96,7 @@ The following example showcases to display the EJ Icon by using their correspond
 {% endhighlight %}
 {% endtabs %}
 
-N>  Make sure the css file (ej.widgets.all.min.css/ej.web.all.min.css) is referred in your application.
+N>  Make sure the CSS file (ej.widgets.all.min.css/ej.web.all.min.css) is referred in your application.
 
 Execute the above code to render the following output.
 

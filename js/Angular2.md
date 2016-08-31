@@ -9,7 +9,7 @@ documentation: ug
 
 # Angular 2
 
-Essential JavaScript provides support for Angular 2 framework through wrappers. Each Syncfusion widgets are created as Angular 2 components with built in support for data binding and child directives to make complex property definition easier. 
+Essential JavaScript provides support for Angular 2 Framework through wrappers. Each Syncfusion widgets are created as Angular 2 components with built in support for data binding and child directives to make complex property definition easier. 
 
 # Getting Started
 
@@ -122,7 +122,7 @@ export class AppComponent {
 
 ### Two-way Binding
 
-Two-way binding of Angular 2 synchronizes the value in both view and component model using attiribute `[(ngModel)]`. The same convension is used for Syncfusion widgets which reflect the changes both ways. In general, we could have more than one property bound to the same variable.
+Two-way binding of Angular 2 synchronizes the value in both view and component model using attribute `[(ngModel)]`. The same conversion is used for Syncfusion widgets which reflect the changes both ways. In general, we could have more than one property bound to the same variable.
 
 Two-way binding for ejAutocomplete has been demonstrated in the below code.
 

@@ -9,7 +9,13 @@ documentation: ug
 
 # 3D Visualization
 
-The PivotChart control allows you to view the data in a 3D view with 5 different chart types namely Bar, Column, Stacking Bar, Stocking Column and Pie.
+The PivotChart control allows you to view the data in a 3D view. Following are the chart types that are supported:
+
+* Bar
+* Column
+* Stacking Bar
+* Stocking Column 
+* Pie
 
 ## 3D Column Chart
 

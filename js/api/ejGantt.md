@@ -500,6 +500,25 @@ Specify the CSS class for Gantt to achieve custom theme.
 {% endhighlight %}
 
 
+### cellTooltipTemplate `string`
+{:#members:celltooltiptemplate}
+
+Specifies the template for cell tooltip
+
+#### Default Value
+
+* null
+
+
+#### Example
+
+
+{% highlight html %}
+                  
+        $("#gantt").ejGantt({ cellTooltipTemplate : "CellTooltipTemplate"});        
+
+{% endhighlight %}
+
 ### dragTooltip `object`
 {:#members:dragtooltip}
 
@@ -736,6 +755,25 @@ Specifies the fields to be included in the edit dialog in Gantt
 
 {% endhighlight %}
 
+### isResponsive `boolean`
+{:#members:isresponsive}
+
+Enables or disables the responsiveness of Gantt
+
+#### Default Value
+
+* "false"
+
+
+#### Example
+
+
+{% highlight html %}
+                  
+        $("#gantt").ejGantt({  isResponsive : true });                   
+
+{% endhighlight %}
+
 ### splitterSettings `object`
 {:#members:splittersettings}
 
@@ -874,6 +912,94 @@ Specifies the option for enabling or disabling editing in Gantt grid part
 
 {% endhighlight %}
 
+### editSettings.allowIndent `boolean`
+{:#members:editsettings-allowindent}
+
+Specifies the option for enabling or disabling indent action in Gantt.
+
+
+#### Default Value:
+{:.param}
+
+* false
+
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                  
+        $("#gantt").ejGantt({  editSettings:{allowIndent : true} });   
+</script>
+
+{% endhighlight %}
+
+### editSettings.allowOutdent `boolean`
+{:#members:editsettings-allowoutdent}
+
+Specifies the option for enabling or disabling outdent action in Gantt
+
+#### Default Value:
+{:.param}
+
+* false
+
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                  
+        $("#gantt").ejGantt({  editSettings:{allowOutdent : true} });   
+</script>
+
+{% endhighlight %}
+
+### editSettings.beginEditAction `enum`
+{:#members:editsettings-begineditaction}
+
+<ts name = "ej.Gantt.BeginEditAction"/>
+
+Specifies the mouse action whether single click or double click to begin the editing
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">DblClick</td>
+<td class="description">you can begin the editing at double click</td>
+</tr>
+<tr>
+<td class="name">Click</td>
+<td class="description">you can begin the editing at single click</td>
+</tr>
+</tbody>
+</table>
+
+
+#### Default Value
+
+* ej.Gantt.BeginEditAction.DblClick
+
+#### Example
+
+
+{% highlight html %}
+                 
+        $("#Gantt").ejGantt({  editSettings:{beginEditAction : ej.Gantt.BeginEditAction.Click} });
+
+{% endhighlight %}
 
 ### editSettings.editMode `string`
 {:#members:editsettings-editmode}
@@ -1001,6 +1127,116 @@ Enables or disables the collapse all records when loading the Gantt.
 
 {% endhighlight %}
 
+### leftTaskLabelMapping `string`
+{:#members:lefttasklabelmapping}
+
+Specifies the data source field name to be displayed as left task label
+
+#### Default Value:
+{:.param}
+
+* ""
+
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                  
+        $("#gantt").ejGantt(
+ {
+    leftTaskLabelMapping: "taskId",
+ });            
+</script>
+
+{% endhighlight %}
+
+### rightTaskLabelMapping `string`
+{:#members:righttasklabelmapping}
+
+Specifies the data source field name to be displayed as right task label
+
+
+#### Default Value:
+{:.param}
+
+* ""
+
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                  
+        $("#gantt").ejGantt(
+ {
+    rightTaskLabelMapping: "taskName",
+ });            
+</script>
+
+{% endhighlight %}
+
+### leftTaskLabelTemplate `string`
+{:#members:lefttasklabeltemplate}
+
+Specifies the template for left task label
+
+
+#### Default Value:
+{:.param}
+
+* ""
+
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                  
+        $("#gantt").ejGantt(
+ {
+    leftTaskLabelTemplate: "#customTaskLeftLabel",
+ });            
+</script>
+
+{% endhighlight %}
+
+### rightTaskLabelTemplate `string`
+{:#members:righttasklabeltemplate}
+
+Specifies the template for right task label
+
+
+#### Default Value:
+{:.param}
+
+* ""
+
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                  
+        $("#gantt").ejGantt(
+ {
+    rightTaskLabelTemplate: "#customTaskRightLabel",
+ });            
+</script>
+
+{% endhighlight %}
 
 ### enableContextMenu `boolean`
 {:#members:enablecontextmenu}
@@ -2121,13 +2357,67 @@ Specifies the schedule mode
  
 <div id="gantt"></div> 
 <script>                          
-        $("#gantt").ejGantt({  
-                        scheduleHeaderSettings:{scheduleHeaderType : ej.Gantt.ScheduleHeaderType.Month}
-               });
+    $("#gantt").ejGantt({  
+               scheduleHeaderSettings:{scheduleHeaderType : ej.Gantt.ScheduleHeaderType.Month}
+    });
 </script>              
 
 {% endhighlight %}
 
+### scheduleHeaderSettings.timescaleStartDateMode `enum`
+{:#members:scheduleheadersettings-timescalestartdatemode}
+
+<ts name = "ej.Gantt.TimescaleRoundMode"/>
+
+Specifies the round-off mode for the start date in schedule header.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">Auto</td>
+<td class="description">The round-off value will be automatically calculated based on the data source values.</td>
+</tr>
+<tr>
+<td class="name">Week</td>
+<td class="description">Schedule header start date will round-off to the immediate week.</td>
+</tr>
+<tr>
+<td class="name">Month</td>
+<td class="description">Schedule headers start date will round off to the immediate month</td>
+</tr>
+<tr>
+<td class="name">Year</td>
+<td class="description">Schedule headers start date will round off to the immediate year</td>
+</tr>
+</tbody>
+</table>
+
+#### Default Value:
+{:.param}
+
+* ej.Gantt.TimescaleRoundMode.Auto
+
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                          
+        $("#gantt").ejGantt({  
+                        scheduleHeaderSettings:{timescaleStartDateMode : ej.Gantt.TimescaleRoundMode.Week}
+                });              
+</script>              
+
+{% endhighlight %}
 
 ### scheduleHeaderSettings.weekendBackground `string`
 {:#members:scheduleheadersettings-weekendbackground}
@@ -2300,8 +2590,7 @@ Enables or disables the column chooser.
 ### showGridCellTooltip `boolean`
 {:#members:showgridcelltooltip}
 
-Specifies whether to show grid cell tooltip.
-
+Specifies the template for cell tooltip
 
 #### Default Value:
 {:.param}
@@ -2831,6 +3120,30 @@ To Specify the JsRender script Id to customize the mile stone with our preferenc
 
 {% endhighlight %}
 
+### readOnly `boolean`
+{:#members:readonly}
+
+Enables or disables Gantt to read-only mode
+
+#### Default Value:
+{:.param}
+
+* "false"
+
+#### Example
+{:.example}
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>          
+        $("#gantt").ejGantt(
+ {
+    readOnly: "true"
+ });            
+</script>
+
+{% endhighlight %}
 
 ### taskbarTooltipTemplateId `string`
 {:#members:taskbartooltiptemplateid}
@@ -2940,32 +3253,6 @@ Specifies the state of enabling or disabling toolbar
 <div id="gantt"></div> 
 <script>  
         $("#gantt").ejGantt({ showToolBar:  true });                     
-</script>
-
-{% endhighlight %}
-
-
-### toolbarSettings.toolbarItems `array`
-{:#members:toolbarsettings-toolbaritems}
-
-Specifies the list of toolbar items to rendered in toolbar
-
-
-#### Default Value:
-{:.param}
-
-* []
-
-
-#### Example
-{:.example}
-
-
-{% highlight html %}
- 
-<div id="gantt"></div> 
-<script>  
-        $("#gantt").ejGantt({ toolbarSettings: { toolbarItems: [ej.Gantt.ToolbarItems.Add,ej.Gantt.ToolbarItems.Edit] } });                   
 </script>
 
 {% endhighlight %}
@@ -3960,7 +4247,7 @@ Triggered for every Gantt action success event.
 <tr>
 <td class="name">argument</td>
 <td class="type">Object</td>
-<td class="description">Event parameters after perform the sorting in TreeGrid is completed:
+<td class="description">Event parameters after perform the sorting in TreeGrid part is completed:
 <table class="params">
 <thead>
 <tr>
@@ -4506,7 +4793,7 @@ Triggered while dragging a row in Gantt control
 <tr>
 <td class="name">model</td>
 <td class="type">object</td>
-<td class="description">Returns the TreeGrid model.</td>
+<td class="description">Returns the Gantt model.</td>
 </tr>
 <tr>
 <td class="name">requestType</td>
@@ -4588,7 +4875,7 @@ Triggered while start to drag row in Gantt control
 <tr>
 <td class="name">model</td>
 <td class="type">object</td>
-<td class="description">Returns the TreeGrid model.</td>
+<td class="description">Returns the Gantt model.</td>
 </tr>
 <tr>
 <td class="name">requestType</td>
@@ -4680,7 +4967,7 @@ Triggered while drop a row in Gantt control
 <tr>
 <td class="name">model</td>
 <td class="type">object</td>
-<td class="description">Returns the TreeGrid model.</td>
+<td class="description">Returns the Gantt model.</td>
 </tr>
 <tr>
 <td class="name">requestType</td>
@@ -4934,6 +5221,67 @@ $("#gantt").ejGantt({
 </script>
 {% endhighlight %}
 
+### create
+{:#events:create}
+
+Triggered when Gantt is rendered completely.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">argument</td>
+<td class="type">Object</td>
+<td class="description">Arguments when create event is triggered.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cancel</td>
+<td class="type">boolean</td>
+<td class="description">Returns the cancel option value.</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type">object</td>
+<td class="description">Returns the Gantt model</td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type">string</td>
+<td class="description">Returns the name of the event.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+
+{% highlight html %}
+ 
+<div id="Gantt"></div> 
+<script>
+$("#Gantt").ejGantt({
+   create: function (args) {}
+});
+</script>
+{% endhighlight %}
 
 ### endEdit
 {:#events:endedit}

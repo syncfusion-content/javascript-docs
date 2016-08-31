@@ -17,10 +17,9 @@ This section covers the information that you need to know to populate a simple P
 
 Create a HTML page and add scripts and style sheets that are mandatorily required to render a PivotGrid widget which are highlighted below in an appropriate order.
 
-1. ej.widgets.all.min.css
+1. ej.web.all.min.css
 2. jQuery-1.10.2.min.js
 3. jQuery.easing.1.3.min.js
-4. jQuery.linq.js
 5. ej.web.all.min.js
 
 ### Initialize PivotGrid
@@ -38,7 +37,6 @@ Place a "div" tag in the HTML page which acts as a container for the PivotGrid w
     <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" type="text/css" />
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js" type="text/javascript"></script>
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js" type="text/javascript"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/linq.js/2.2.0.2/jquery.linq.js" type="text/javascript"></script>
     <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js" type="text/javascript"></script>
 
 </head>
@@ -120,7 +118,7 @@ Now you need to set “GettingStarted.html” as start-up page. In-order to do s
 ### Scripts and CSS Initialization
 The scripts and style sheets that are mandatorily required to render a PivotGrid widget inside a HTML page are highlighted below in an appropriate order.
 
-1. ej.widgets.all.min.css
+1. ej.web.all.min.css
 2. jQuery-1.10.2.min.js
 3. jQuery.easing.1.3.min.js
 4. ej.web.all.min.js
@@ -158,7 +156,7 @@ In-order to initialize a PivotGrid widget, first you need to define a “div” 
                 {
                     $("#PivotGrid1").ejPivotGrid(
                     {
-                        url: "../OLAPService"
+                        url: "/OLAPService"
                     });
                 });
             </script>
@@ -172,7 +170,7 @@ In-order to initialize a PivotGrid widget, first you need to define a “div” 
 
 The “url” property in PivotGrid widget points the service endpoint, where data are processed and fetched in the form of JSON. The service used for the PivotGrid widget as endpoint are WCF and WebAPI.
 
-N> The above "GettingStarted.html" contains WebAPI URL, which is **“../OLAPService”**. Suppose if you are using WCF service then the URL would look like **"../OLAPService.svc"**. 
+N> The above "GettingStarted.html" contains WebAPI URL, which is **“/OLAPService”**. Suppose if you are using WCF service then the URL would look like **"/OLAPService.svc"**. 
 
 ### WebAPI
 
@@ -373,7 +371,7 @@ jsonResult["tag"].ToString(), jsonResult["cubeName"].ToString());
             htmlHelper.ExportPivotGrid(DataManager, args, fileName, System.Web.HttpContext.Current.Response);
         }
         
-         [System.Web.Http.ActionName("DeferUpdate")]
+        [System.Web.Http.ActionName("DeferUpdate")]
         [System.Web.Http.HttpPost]
         public Dictionary<string, object> DeferUpdate(Dictionary<string, object> jsonResult)
         {

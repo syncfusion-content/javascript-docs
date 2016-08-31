@@ -8,15 +8,15 @@ documentation: ug
 ---
 # Overview
 
-The Spreadsheet control is a Microsoft Excel-like Spreadsheet component for web. It provides editing experience that is very similar to that of Excel, and it is able to import and export Excel workbook files. The Spreadsheet control includes all the important features of Microsoft Excel, like editing, sorting, filtering, formulas, data validation, formatting, table, charts, import and export.
+The Spreadsheet control is a Microsoft Excel-like Spreadsheet component for web. It provides editing experience that is very similar to that of Excel and it is able to import and export Excel workbook files. The Spreadsheet control includes all the important features of Microsoft Excel like editing, sorting, filtering, formulas, data validation, formatting, table, charts, import and export.
 
 **Key** **Features**
 
-The key features of Spreadsheet control for JavaScript are:
+The key features of Spreadsheet control for JavaScript are:
 
-* **Editing** - Provide support to edit the cell content.
+* **Editing** - Provides support to edit the cell content.
 * **Sorting** - Helps you to visualize and figure out your data better, organize and find the data quickly that you want.
-* **Filtering** - Offers Excel-like filtering for filter data.
+* **Filtering** - Offers Excel-like filtering to filter data.
 * **Formulas** - Allows you to handle calculations in cells.
 * **Table** - Allows you to manage and analyze a group of related data.
 * **Formatting** - Provides various formatting support like cell formatting, number formatting, text formatting.

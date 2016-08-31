@@ -17,10 +17,13 @@ Grouping Bar allows user to dynamically alter the report by filter, sort and rem
 {% highlight js %}
 
   <script type="text/javascript">
+
+  // Deatasourse
+  
     $(function() {
         $("#PivotGrid1").ejPivotGrid({
             dataSource: {
-                data: pivot_dataset,
+                data: pivotData,
                 rows: [{
                     fieldName: "Country",
                     fieldCaption: "Country",
@@ -67,7 +70,7 @@ Grouping Bar allows user to dynamically alter the report by filter, sort and rem
 
 $(function() {
     $("#PivotGrid1").ejPivotGrid({
-       url: "../RelationalService",
+       url: "/RelationalService",
         enableGroupingBar: true
     });
 });
