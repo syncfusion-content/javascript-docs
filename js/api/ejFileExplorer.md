@@ -3543,6 +3543,7 @@ type</td>
         $('#fileExplorer').ejFileExplorer({            
         path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
         ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction",      
+        
         destroy: function (args) {}
         });
         </script>
