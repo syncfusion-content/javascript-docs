@@ -148,10 +148,10 @@ Specifies the source data of the heat map.
 
  
 
-### heatmapCell `Object`
+### heatMapCell `Object`
 {:#members:heatmapCell}
 
-Specifies the property of the heatmap cell.
+Specifies the property of the heat map cell.
 
 #### Default Value:
 
@@ -171,7 +171,7 @@ Specifies the property of the heatmap cell.
 {% endhighlight %}
 
 
-### heatmapCell.showContent `enum`
+### heatMapCell.showContent `enum`
 {:#members:heatmapCell-showContent}
  
 <ts name = "ej.HeatMap.CellVisibility"/>
@@ -216,7 +216,7 @@ Specifies whether the cell content can be visible or not.
 {% endhighlight %}
 
 
-### heatmapCell.showColor `Boolean`
+### heatMapCell.showColor `Boolean`
 {:#members:heatmapCell-showColor}
 
 Specifies whether the cell color can be visible or not.
@@ -244,7 +244,7 @@ Specifies whether the cell color can be visible or not.
 ### isResponsive `Boolean`
 {:#members:isResponsive}
 
-Specifies can enable responsive mode or not for heatmap.
+Specifies can enable responsive mode or not for heat map.
 
 #### Default Value:
 
@@ -316,7 +316,7 @@ Specifies the default column properties for all the column style not specified i
 ### defaultColumnStyle.textAlign `Object`
 {:#members:defaultColumnStyle-textAlign}
 
-Specifies the aligment mode of the heatmap column.
+Specifies the alignment mode of the heat map column.
 
 <ts name = "ej.HeatMap.TextAlign"/>
 
@@ -332,16 +332,16 @@ Enables/disables the bold style
    <tbody>
         <tr>
             <td class="name">Right</td>
-            <td class="description last">SAlign right to the heatmap cell.
+            <td class="description last">SAlign right to the heat map cell.
             </td>
        </tr>
         <tr>
             <td class="name">Left</td>
-            <td class="description last">Align left to the heatmap cell.  </td>
+            <td class="description last">Align left to the heat map cell.  </td>
        </tr>
        <tr>
             <td class="name">Center</td>
-            <td class="description last">Align center to the heatmap cell. </td>
+            <td class="description last">Align center to the heat map cell. </td>
        </tr>
    </tbody>
 </table>
@@ -370,7 +370,7 @@ Enables/disables the bold style
 ### defaultColumnStyle.headerTemplateID `String`
 {:#members:defaultColumnStyle-headerTemplateID}
 
-Specifies the template id of the heatmap column header.
+Specifies the template id of the heat map column header.
 
 #### Default Value:
 
@@ -399,7 +399,7 @@ Specifies the template id of the heatmap column header.
 ### defaultColumnStyle.templateID `String`
 {:#members:defaultColumnStyle-templateID}
 
-Specifies the template id of all individual cell data of the heatmap. 
+Specifies the template id of all individual cell data of the heat map. 
 
 #### Default Value:
 
@@ -430,7 +430,7 @@ Specifies the template id of all individual cell data of the heatmap.
 ### legendCollection `Array`
 {:#members:legendCollection}
 
-Specifies the no of legends can sync with heatmap. 
+Specifies the no of legends can sync with heat map. 
 
 #### Default Value:
 
@@ -455,7 +455,7 @@ Specifies the no of legends can sync with heatmap.
 ### itemsMapping `Object`
 {:#members:itemsMapping}
 
-Specifies the property and display value of the heatmap column.
+Specifies the property and display value of the heat map column.
 
 #### Default Value:
 
@@ -481,14 +481,13 @@ Specifies the property and display value of the heatmap column.
 ### itemsMapping.columnStyle `Object`
 {:#members:itemsMapping-columnStyle}
 
-Column settings for the individual heatmap column.
+Column settings for the individual heat map column.
 
 #### Default Value:
 
 * null
 
 #### Example
-
 {% highlight html %}
 
     <div id="heatmap"></div>
@@ -501,13 +500,14 @@ Column settings for the individual heatmap column.
             }
         });
     </script>
-    
+
 {% endhighlight %}
+
 
 ### itemsMapping.columnStyle.width `Number`
 {:#members:itemsMapping-columnStyle-width}
 
-Specifies the width of the heatmap column.
+Specifies the width of the heat map column.
 
 #### Default Value:
 
@@ -533,7 +533,7 @@ Specifies the width of the heatmap column.
 ### itemsMapping.columnStyle.textAlign `string`
 {:#members:itemsMapping-columnStyle-textAlign}
 
-Specifies the text align mode of the heatmap column.
+Specifies the text align mode of the heat map column.
 
 #### Default Value:
 
@@ -543,16 +543,16 @@ Specifies the text align mode of the heatmap column.
 
 {% highlight html %} 
 
-   <div id="heatmap"></div>
-    <script>
-        $("#heatmap").ejHeatMap({
-            itemsMapping: {
-                columnStyle: {
-                    textAlign: ej.HeatMap.TextAlign.Left
+    <div id="heatmap"></div>
+        <script>
+            $("#heatmap").ejHeatMap({
+                itemsMapping: {
+                    columnStyle: {
+                        textAlign: ej.HeatMap.TextAlign.Left
+                    }
                 }
-            }
-        });
-    </script>
+            });
+        </script>
 
 {% endhighlight %}
 
@@ -702,7 +702,7 @@ Specifies the value of the column or row.
 ### itemsMapping.row `Object`
 {:#members:itemsMapping-row}
 
-Specifies the property and display value of the heatmap.
+Specifies the property and display value of the heat map.
 row
 #### Default Value:
 
@@ -970,7 +970,7 @@ Specifies the property and display value of the collection of column.
 ### colorMappingCollection `Array`
 {:#members:colorMappingCollection}
 
-Specifies the color values of the heatmap column data.
+Specifies the color values of the heat map column data.
 
 #### Default Value:
 
@@ -995,7 +995,7 @@ Specifies the color values of the heatmap column data.
 ### colorMappingCollection.color `String`
 {:#members:colorMappingCollection-color}
 
-Specifies the color of the heatmap column data. 
+Specifies the color of the heat map column data. 
 
 #### Default Value:
 
@@ -1020,7 +1020,7 @@ Specifies the color of the heatmap column data.
 ### colorMappingCollection.value `Number`
 {:#members:colorMappingCollection-value}
 
-Specifies the color values of the heatmap column data. 
+Specifies the color values of the heat map column data. 
 
 #### Default Value:
 
@@ -1045,7 +1045,7 @@ Specifies the color values of the heatmap column data.
 ### colorMappingCollection.label `Object`
 {:#members:colorMappingCollection-label}
 
-Specifies the label properties of the heatmap color.
+Specifies the label properties of the heat map color.
 
 #### Default Value:
 
@@ -1068,7 +1068,7 @@ Specifies the label properties of the heatmap color.
 ### colorMappingCollection.label.bold `Boolean`
 {:#members:colorMappingCollection-label-bold}
 
-Enables/disables the bold style of the heatmap label.
+Enables/disables the bold style of the heat map label.
 
 #### Default Value:
 
@@ -1092,14 +1092,13 @@ Enables/disables the bold style of the heatmap label.
 ### colorMappingCollection.label.italic `Boolean`
 {:#members:colorMappingCollection-label-italic}
 
-Enables/disables the italic style of the heatmap label.
+Enables/disables the italic style of the heat map label.
 
 #### Default Value:
 
 * false
 
 #### Example
-
 {% highlight html %}
 
     <div id="heatmap"></div>
@@ -1116,7 +1115,7 @@ Enables/disables the italic style of the heatmap label.
 ### colorMappingCollection.label.text `String`
 {:#members:colorMappingCollection-label-text}
 
-specifies the text value of the heatmap label.
+specifies the text value of the heat map label.
 
 #### Default Value:
 
@@ -1142,7 +1141,7 @@ specifies the text value of the heatmap label.
 
 <ts name = "ej.HeatMap.TextDecoration "/>
 
-Specifies the text style of the heatmap label.
+Specifies the text style of the heat map label.
 
 <table class="props">
    <thead>
@@ -1194,7 +1193,7 @@ Specifies the text style of the heatmap label.
 ### colorMappingCollection.label.fontSize `Number`
 {:#members:colorMappingCollection-label-fontSize}
 
-Specifies the font size of the heatmap label.
+Specifies the font size of the heat map label.
 
 #### Default Value:
 
@@ -1218,7 +1217,7 @@ Specifies the font size of the heatmap label.
 ### colorMappingCollection.label.fontFamily `String`
 {:#members:colorMappingCollection-label-fontFamily}
 
-Specifies the font family of the heatmap label.
+Specifies the font family of the heat map label.
 
 #### Default Value:
 
@@ -1242,7 +1241,7 @@ Specifies the font family of the heatmap label.
 ### colorMappingCollection.label.fontColor `String`
 {:#members:colorMappingCollection-label-fontColor}
 
-Specifies the font color of the heatmap label.
+Specifies the font color of the heat map label.
 
 #### Default Value:
 
