@@ -378,7 +378,7 @@ The items property is used to configure and group the required ContextMenu items
 ### contextMenuSettings.customMenuFields `array`
 {:#members:contextmenusettings-custommenufields}
 
-The customMenuFileds property is used to define custom functionality for custom ContextMenu item's which are defined in `items` property.
+The customMenuFields property is used to define custom functionality for custom ContextMenu item's which are defined in `items` property.
 
 #### Default Value
 
