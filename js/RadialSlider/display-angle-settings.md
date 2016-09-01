@@ -7,11 +7,11 @@ control: Radial Slider
 documentation: ug
 ---
 
-# Change display angle
+# Display Angle Support
 
 ## Start Angle
 
-The **RadialSlider** property **startAngle** Indicates the starting point of the Radialslider and its  allow you to change the startAngle level view of the  **RadialSlider**. By default, the **Radial Slider** startAngle is set as 0. Refer to the following code example.
+The **RadialSlider** property **startAngle** allows you to change the startAngle level of the  **RadialSlider**. By default, the **Radial Slider** startAngle is set as 0. Refer to the following code example.
 
 
 {% highlight html %}
@@ -30,12 +30,12 @@ The **RadialSlider** property **startAngle** Indicates the starting point of the
 
 The following screenshot illustrates the output of the above code.
 
-![](Angle-Support_images\Angle-Support_images_img1.png)
+![](display-angle-settings_images\display-angle-settings_images_img1.png)
 
 
 ## End Angle
 
-The **RadialSlider** property **endAngle** Indicates the end point of the Radialslider and its  allow you  to change the   endAngle level view of the  **RadialSlider**. By default, the **Radial Slider** startAngle is set as 0. Refer to the following code example.
+The **RadialSlider** property **endAngle** allows you  to change the endAngle level of the  **RadialSlider**. By default, the **Radial Slider** endAngle is set as 360. Refer to the following code example.
 
 {% highlight html %}
 
@@ -52,7 +52,7 @@ The **RadialSlider** property **endAngle** Indicates the end point of the Radial
 
 The following screenshot illustrates the output of the above code.
 
-![](Angle-Support_images\Angle-Support_images_img2.png)
+![](display-angle-settings_images\display-angle-settings_images_img2.png)
 
 
 
