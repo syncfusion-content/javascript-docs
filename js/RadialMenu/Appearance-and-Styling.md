@@ -9,11 +9,11 @@ documentation: ug
 
 # Appearance and Styling
 
-You can customize RadialMenu control style and apperance by using available themes or cssClass property.
+You can customize RadialMenu control style and the appearance by using available themes or cssClass property.
 
 ## Theme
 
-In order to apply styles to the RadialMenu control, refer to 2 files namely, ej.widgets.core.min.css and ej.theme.min.css. When you refer ej.web.all.min.css file, it is not necessary to include the files ej.widgets.core.min.css and ej.theme.min.css in your project, as ej.web.all.min.css is the combination of these two. 
+In order to apply styles to the RadialMenu control, refer these 2 files namely, ej.widgets.core.min.css and ej.theme.min.css. When you refer ej.web.all.min.css file, it is not necessary to include the files ej.widgets.core.min.css and ej.theme.min.css in your project, as ej.web.all.min.css is the combination of these two. 
 
 By default, there are 13 theme support available for RadialMenu component, namely:
 
@@ -83,7 +83,7 @@ In the HTML page, define the li items for RadialMenu component.
 {% endhighlight %}
 
 
-Initialize the **Radial Menu** control with cssClass in script as follows.
+Initialize the **Radial Menu** control with cssClass in the script as follows.
 
 
 
@@ -96,7 +96,7 @@ Initialize the **Radial Menu** control with cssClass in script as follows.
 {% endhighlight %}
 
 
-The following screenshot is the output of an RadialMenu configured based on CSS class.
+Output of RadialMenu configured based on CSS class is as follow,
 
 
 ![](apperance-and-styling-images\appearance-and-styling_img1.png)

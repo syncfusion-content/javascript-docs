@@ -15,8 +15,6 @@ You can customize individual **Radial Menu** items by using the items properties
 
 The **data-ej-imageUrl** property specifies the URL of the image for the items. **data-ej-text** attribute is used to specify the item text. Refer to the following code example.
 
-You can add the page content with text-area by referring to this section.
-
 {% highlight html %}
 
 
@@ -56,8 +54,6 @@ The following screenshot illustrates the output.
 ### Adding events to Radial Menu items
 
 You can specify the click event to corresponding image/text of **Radial Menu** items for performing some specific action. You need to handle the click event in script manually for each item click.
-
-You can add the page content with text-area by referring to this section
 
 {% highlight html %}
 
@@ -131,7 +127,7 @@ The following screenshot illustrates the output.
 
 ### Badge Customization in Radial Menu Items
 
-You can specify set badges for the items by using badge settings in radial menu. You can set value for badge and enable badge with default value.
+You can specify set badges for the items by using badge settings in the radial menu. You can set value for the badge and enable badge with a default value.
 
 The **data-ej-badge-enabled** property to enable or disable badges. **data-ej-badge-value** attribute is to set the badge value.
 
@@ -175,8 +171,6 @@ You can customize the Radial Menu with slider settings.The **data-ej-type** prop
 You can customize the **Radial Menu** slider settings by using the **ticks**, **strokeWidth** and **labelSpace** properties. The **data-ej-slidersettings-ticks** property ppecifies the slider ticks for radial menu item.**data-ej-slidersettings-strokewidth** attribute is used to specify the slider's stroke width value.**data-ej-slidersettings-labelspace** attribute is used to specify the value of slider label space.
 
 Refer to the following code example.
-
-You can add slidersettings in radial menu items by referring this section.
 
 {% highlight html %}
 
@@ -235,20 +229,3 @@ Add the following script in your code.
 The following screenshot illustrates the output.
 
 ![](item-customization_images\item-customization_img4.png)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

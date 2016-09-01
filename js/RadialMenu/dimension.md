@@ -88,9 +88,3 @@ Add the following script in your code.
 The following screenshot illustrates the output while selecting the text in the page.
 
 ![](dimension-images\dimension_img4.png)
-
-
-
-
-
-

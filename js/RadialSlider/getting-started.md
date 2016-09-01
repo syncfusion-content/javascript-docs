@@ -20,22 +20,22 @@ The external script dependencies of the RadialSlider component are,
 And the internal script dependencies of the RadialSlider widget are:
 
 <table>
-	<tr>
-		<th>File </th>
-		<th>Description / Usage </th>
-	</tr>
-	<tr>
-		<td>ej.core.min.js</td>
-		<td>Must be referred always before using all the JS controls.</td>
-	</tr>
-	<tr>
-		<td>ej.touch.min.js</td>
-		<td>For providing touch support</td>
-	</tr>
-	<tr>
-		<td>ej.radialslider.min.js</td>
-		<td>This is main source file specific for rendering RadialSlider</td>
-	</tr>
+    <tr>
+        <th>File </th>
+        <th>Description / Usage </th>
+    </tr>
+    <tr>
+        <td>ej.core.min.js</td>
+        <td>Must be referred always before using all the JS controls.</td>
+    </tr>
+    <tr>
+        <td>ej.touch.min.js</td>
+        <td>For providing touch support</td>
+    </tr>
+    <tr>
+        <td>ej.radialslider.min.js</td>
+        <td>This is main source file specific for rendering RadialSlider</td>
+    </tr>
 </table>
 
 For getting started you can use the ‘ej.web.all.min.js’ file, which encapsulates all the 'ej' controls and frameworks in one single file.<br/> 
@@ -88,7 +88,7 @@ Create a new HTML file and add [CDN](http://help.syncfusion.com/js/cdn) links to
 
 {% endhighlight %}
 
- N>  In production, we highly recommend you to use our [custom script generator](http://help.syncfusion.com/js/include-only-the-needed-widgets#) to create custom script file with required controls and its dependencies only. Also to reduce the file size further please use [GZip compression](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/optimize-encoding-and-transfer?hl=en#text-compression-with-gzip) in your server. 
+ N>  In production, we highly recommend you to use our [custom script generator](http://help.syncfusion.com/js/include-only-the-needed-widgets#) to create a custom script file with required controls and its dependencies only. Also to reduce the file size further please use [GZip compression](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/optimize-encoding-and-transfer?hl=en#text-compression-with-gzip) on your server. 
 
 ## Create your first Radial Slider control in JavaScript
 

@@ -16,26 +16,26 @@ The external script dependencies of the RadialMenu component are,
 And the internal script dependencies of the RadialMenu widget are:
 
 <table>
-	<tr>
-		<th>File </th>
-		<th>Description / Usage </th>
-	</tr>
-	<tr>
-		<td>ej.core.min.js</td>
-		<td>Must be referred always before using all the JS controls.</td>
-	</tr>
-	<tr>
-		<td>ej.data.min.js</td>
-		<td>Used to handle data operation and should be used while binding data to JS controls.</td>
-	</tr>
-	<tr>
-		<td>ej.touch.min.js</td>
-		<td>For providing touch support</td>
-	</tr>
-	<tr>
-		<td>ej.radialmenu.min.js</td>
-		<td>This is main source file specific for rendering RadialMenu</td>
-	</tr>
+    <tr>
+        <th>File </th>
+        <th>Description / Usage </th>
+    </tr>
+    <tr>
+        <td>ej.core.min.js</td>
+        <td>Must be referred always before using all the JS controls.</td>
+    </tr>
+    <tr>
+        <td>ej.data.min.js</td>
+        <td>Used to handle data operation and should be used while binding data to JS controls.</td>
+    </tr>
+    <tr>
+        <td>ej.touch.min.js</td>
+        <td>For providing touch support</td>
+    </tr>
+    <tr>
+        <td>ej.radialmenu.min.js</td>
+        <td>This is main source file specific for rendering RadialMenu</td>
+    </tr>
 </table>
 
 For getting started you can use the ‘ej.web.all.min.js’ file, which encapsulates all the 'ej' controls and frameworks in one single file.<br/> 
@@ -88,7 +88,7 @@ Create a new HTML file and add [CDN](http://help.syncfusion.com/js/cdn) links to
 
 {% endhighlight %}
 
- N>  In production, we highly recommend you to use our [custom script generator](http://help.syncfusion.com/js/include-only-the-needed-widgets#) to create custom script file with required controls and its dependencies only. Also to reduce the file size further please use [GZip compression](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/optimize-encoding-and-transfer?hl=en#text-compression-with-gzip) in your server. 
+ N>  In production, we highly recommend you to use our [custom script generator](http://help.syncfusion.com/js/include-only-the-needed-widgets#) to create a custom script file with required controls and its dependencies only. Also to reduce the file size further please use [GZip compression](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/optimize-encoding-and-transfer?hl=en#text-compression-with-gzip) on your server. 
 
 ## Create your first Radial Menu control in JavaScript
 
@@ -142,7 +142,7 @@ Refer to the following code example to add target content to the **Radial Menu**
              The controller mediates input, converting it to commands for the model or view.The central ideas behind MVC are code reusability and in addition to dividing the application into three kinds of components, the MVC design defines the interactions between them.</p>
           <p>A controller can send commands to its associated view to change the view's presentation of the model (e.g., by scrolling through a document). It can also send commands to the model to update the model's state (e.g., editing a document).</p>
 
-          <p>A model notifies its associated views and controllers when there has been a change in its state. This notification allows the views to produce updated output, and the controllers to change the available set of commands. A passive implementation of MVC omits these notifications, because the application does not require them or the software platform does not support them.</p>
+          <p>A model notifies its associated views and controllers when there has been a change in its state. This notification allows the views to produce updated output, and the controllers to change the available set of commands. A passive implementation of MVC omits these notifications because the application does not require them or the software platform does not support them.</p>
 
           <p>A view requests from the model the information that it needs to generate an output representation to the user.</p>
        </textarea>
@@ -167,7 +167,7 @@ Add the following styles in your code.
 
 
 
-Initialize **Radial Menu** control with the **div** element and set its target content in script as follows.
+Initialize **Radial Menu** control with the **div** element and set its target content in the script as follows.
 
 
 
@@ -181,7 +181,7 @@ Initialize **Radial Menu** control with the **div** element and set its target c
 
 
 
-You can display the **Radial Menu** by performing desired action on the target content while selecting the text inside the target. Therefore, call the **show** method in the select action of the content. Refer to the following code example and add it to the script.
+You can display the **Radial Menu** by performing the desired action on the target content while selecting the text inside the target. Therefore, call the **show** method in the select action of the content. Refer to the following code example and add it to the script.
 
 
 

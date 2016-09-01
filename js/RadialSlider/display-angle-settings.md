@@ -53,7 +53,3 @@ The **RadialSlider** property **endAngle** allows you  to change the endAngle le
 The following screenshot illustrates the output of the above code.
 
 ![](display-angle-settings_images\display-angle-settings_images_img2.png)
-
-
-
-

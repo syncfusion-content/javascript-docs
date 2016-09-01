@@ -13,7 +13,7 @@ The following are some  properties that enables you to an option to enhance the 
 
 ##  Show/hide RadialSlider on initial rendering 
 
-The **RadialSlider** property **autoOpen** allow you to make the control visible on initial rendering. By default, value of the property is set as **true**. Setting it as **false** will hide the control on initail rendering.
+The **RadialSlider** property **autoOpen** allow you to make the control visible on initial rendering. By default, the value of the property is set as **true**. Setting it as **false** will hide the control on initial rendering.
 
 {% highlight html %}
 
@@ -29,7 +29,7 @@ The **RadialSlider** property **autoOpen** allow you to make the control visible
 
 ## Value accuracy 
 
-The **RadialSlider** property **enableRoundOff** allow  to show  the rounded off value when user changes it. By default, value of the property is set as **true**. For accurate values you can set this as false.
+The **RadialSlider** property **enableRoundOff** allow  to show  the rounded off value when user changes it. By default, the value of the property is set as **true**. For accurate values, you can set this as false.
 
 {% highlight html %}
 
@@ -45,7 +45,7 @@ The **RadialSlider** property **enableRoundOff** allow  to show  the rounded off
 
 ## Display inline
 
-The **RadialSlider** property **inline** is used to show the control values inline of the slider. By default, value of the property is set as **false**.
+The **RadialSlider** property **inline** is used to show the control values inline of the slider. By default, the value of the property is set as **false**.
 
 {% highlight html %}
 
@@ -102,7 +102,7 @@ The following screenshot shows the output for the above code example.
 
 ## Values customization
 
-The **RadialSlider** property **ticks** allow to set an array of numeric value which will be displayed in it. By Default **RadialSlider** ticks value is a set to an array of length 11 as following,
+The **RadialSlider** property **ticks** allow to set an array of a numeric value which will be displayed in it. By Default **RadialSlider** ticks value is a set to an array of length 11 as following,
 
 ticks = { 0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100 }. You can refer the below code for reference.
 
