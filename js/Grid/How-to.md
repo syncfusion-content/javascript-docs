@@ -158,7 +158,7 @@ Using [`search`](http://help.syncfusion.com/js/api/ejgrid#methods:search “sear
 
 {% endhighlight %}
 
-{% highlight javascript %}
+{% highlight js %}
 <script>
     $(function () {
         $("#Grid").ejGrid({
