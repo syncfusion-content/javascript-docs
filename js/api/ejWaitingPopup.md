@@ -280,6 +280,39 @@ Enables the visibility of the WaitingPopup control
 
 
 
+### target `string`
+{:#members:target} 
+
+Specified a selector for elements, within the container. 
+
+#### Default Value 
+
+* null
+ 
+#### Example
+ 
+{% highlight html %}
+ 
+ <div id="waiting"></div>
+<script>
+//To set target API value during initialization  
+        $("#waiting").ejWaitingPopup({ showOnInit: true,target: "body"});
+</script>
+<style>
+              #target {
+            height: 200px;
+            width: 600px;
+            margin: 0 auto;
+        }
+
+       #target_WaitingPopup .e-image {
+            display: block;
+            height: 70px;
+        }
+</style>
+
+{% endhighlight %}
+  
 ### template `object`
 {:#members:template}
 
