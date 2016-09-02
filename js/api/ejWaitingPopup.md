@@ -281,41 +281,16 @@ Enables the visibility of the WaitingPopup control
 
 
 ### target `string`
-{:#members:target}
+{:#members:target} 
 
+Specified a selector for elements, within the container. 
 
-
-
-
-
-
-
-Specified a selector for elements, within the container.
-
-
-
-
-#### Default Value
-
-
-
-
-
-
+#### Default Value 
 
 * null
-
-
-
-
-
-
-
-
+ 
 #### Example
-
-
-
+ 
 {% highlight html %}
  
  <div id="target"></div>
@@ -337,12 +312,7 @@ Specified a selector for elements, within the container.
 </style>
 
 {% endhighlight %}
-
-
-
-
-
-
+  
 ### template `object`
 {:#members:template}
 
