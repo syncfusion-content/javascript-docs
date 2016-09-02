@@ -2865,7 +2865,64 @@ $("#treeView").ejTreeView("getCheckedNodesIndex");
 
 
 
+### getChildren(element, [includeNestedChild])
+{:#methods:getchildren}
 
+This method is used to get immediate child nodes of a node in TreeView control. If you want to get the all child nodes include nested child nodes then we need to pass **includeNestedChild** as true along with element arguments to this method.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">element</td>
+<td class="type"><span class="param-type">string|object</span></td>
+<td class="description">ID of TreeView node/object of TreeView node</td>
+</tr>
+<tr>
+<td class="name">includeNestedChild</td>
+<td class="type"><span class="param-type">bool</span></td>
+<td class="description">Weather include nested child nodes of TreeView node</td>
+</tr>
+</tbody>
+</table>
+
+#### Returns:
+{:#methods:returns:}
+
+array
+
+
+#### Example
+
+
+{% highlight html %}
+
+<div id="treeView"></div>
+<script>
+// Initialize TreeView
+$("#treeView").ejTreeView({
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+});
+
+var treeObj = $("#treeView").data("ejTreeView");
+treeObj.getChildren("book"); // return all immediate child nodes of node ("book") in TreeView as array.
+treeObj.getChildren($("#book"), true); // return all child nodes include nested child nodes of node ("book") in TreeView as array.
+</script>
+{% endhighlight %}
+
+
+{% highlight html %} 
+<script>
+$("#treeView").ejTreeView("getChildren", $("#book"));
+$("#treeView").ejTreeView("getChildren", "book", true);  
+</script>
+{% endhighlight %}
 
 
 
