@@ -64,10 +64,10 @@ $.ajax({
 
 <table>
 <tr>
-<th>
-Name</th><th>
-Type</th><th>
-Description</th></tr>
+<td>
+**Name**</td><td>
+**Type**</td><td>
+**Description**</td></tr>
 <tr>
 <td>
 data</td><td>
@@ -114,10 +114,10 @@ $.ajax({
 
 <table>
 <tr>
-<th>
-Name</th><th>
-Type</th><th>
-Description</th></tr>
+<td>
+**Name**</td><td>
+**Type**</td><td>
+**Description**</td></tr>
 <tr>
 <td>
 data</td><td>
@@ -164,10 +164,10 @@ $.ajax({
 
 <table>
 <tr>
-<th>
-Name</th><th>
-Type</th><th>
-Description</th></tr>
+<td>
+**Name**</td><td>
+**Type**</td><td>
+**Description**</td></tr>
 <tr>
 <td>
 data</td><td>
@@ -252,10 +252,10 @@ $.ajax({
 
 <table>
 <tr>
-<th>
-Name</th><th>
-Type</th><th>
-Description</th></tr>
+<td>
+**Name**</td><td>
+**Type**</td><td>
+**Description**</td></tr>
 <tr>
 <td>
 data</td><td>
@@ -302,10 +302,10 @@ $.ajax({
 
 <table>
 <tr>
-<th>
-Name</th><th>
-Type</th><th>
-Description</th></tr>
+<td>
+**Name**</td><td>
+**Type**</td><td>
+**Description**</td></tr>
 <tr>
 <td>
 data</td><td>
@@ -352,10 +352,10 @@ $.ajax({
 
 <table>
 <tr>
-<th>
-Name</th><th>
-Type</th><th>
-Description</th></tr>
+<td>
+**Name**</td><td>
+**Type**</td><td>
+**Description**</td></tr>
 <tr>
 <td>
 data</td><td>

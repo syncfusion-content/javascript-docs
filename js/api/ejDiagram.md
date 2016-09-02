@@ -14791,3 +14791,41 @@ textChange:function (args) {}
 });
 
 {% endhighlight %}
+
+### create
+{:#events:create}
+
+Triggered when the diagram is rendered completely.
+
+<table class="params">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Type</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="name">model</td>
+			<td class="type">object</td>
+			<td class="description last">Returns the diagram model.</td>
+		</tr>
+		<tr>
+			<td class="name">type</td>
+			<td class="type">string</td>
+			<td class="description last">Returns the name of the event</td>
+		</tr>
+	</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+
+    // create event for diagram
+    $("#diagramcontent").ejDiagram({
+    create:function (args) {}
+    });
+
+{% endhighlight %}

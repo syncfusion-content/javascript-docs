@@ -38,11 +38,12 @@ From below you can see the available toolbar items and its categorization:
                 searchBar: ["Searchbar"],
 
                 layout: ["Layout"]
+
         },
 
         // all tools categories are placed in the toolbar by the below order
 
-        toolsList: ["layout", "creation", "navigation", "addressBar", "editing", "copyPaste","getProperties", "searchBar"]
+        toolsList: ["layout", "creation", "navigation", "addressBar", "editing", "copyPaste", "getProperties", "searchBar"]
 
 {% endhighlight %}
 

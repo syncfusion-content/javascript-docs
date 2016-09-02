@@ -14167,7 +14167,7 @@ Enum for AndroidStyle
 Normal</td>
 <td class="type">string</td>
 <td class="default">normal</td>
-<td class="description">Enum for normal android button style</td>
+<td class="description">Enum for normal anroid button style</td>
 </tr>
 <tr>
 <td class="name">

@@ -159,7 +159,7 @@ Sets the specific culture to the Recurrence Editor.
 
 * "en-US"
 
-#### Example - To set the french culture on Recurrence Editor, set its locale as fr-FR.
+#### Example - To set the French culture on Recurrence Editor, set its locale as fr-FR.
 
 {% highlight html %}
  
@@ -498,7 +498,7 @@ Triggers whenever any of the Recurrence Editor’s value is changed.
 <tr>
 <td class="name">recurrenceRule</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description">Returns the recurreneceRule value.</td>
+<td class="description">Returns the recurrence rule value.</td>
 </tr>
 </tbody>
 </table>

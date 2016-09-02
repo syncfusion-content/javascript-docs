@@ -24,9 +24,9 @@ Fetch and bind the records from *DefaultSchedules* table to the Scheduler.
 ### Parameter
 <table>
 <tr>
-<td>$top</td><td>10</td>
-<td>CurrentAction</td><td>Load</td>
-<td>CurrentDate</td><td>Mon May 05 2014 05:00:00 GMT 0530 (India Standard Time)</td>
+<td>$top</td><td>10</td></tr><tr>
+<td>CurrentAction</td><td>Load</td></tr><tr>
+<td>CurrentDate</td><td>Mon May 05 2014 05:00:00 GMT 0530 (India Standard Time)</td></tr><tr>
 <td>CurrentView</td><td>week</td>
 </tr>
 </table>
@@ -42,7 +42,7 @@ var dataManger = new ej.DataManager(
 
 {% endhighlight %}
 
-#### Action getting invoked in C# 
+#### Action getting invoked in C Sharp 
 
 {% highlight c# %}
 
@@ -95,7 +95,7 @@ To export appointment data from Scheduler into an ICS file format.
 <td>ScheduleApps</td><td>{"id":"Id","subject":"Subject","description":"Description","startTime":"StartTime","endTime":"EndTime"
 ,"recurrence":"Recurrence","recurrenceRule":"RecurrenceRule","allDay":"AllDay","categorize":null,"recurrenceId"
 :"RecurrenceId","recurrenceExDate":"RecurrenceExDate","location":"Location","priority":null,"startTimeZone"
-:"StartTimeZone","endTimeZone":"EndTimeZone"}</td>
+:"StartTimeZone","endTimeZone":"EndTimeZone"}</td></tr><tr>
 <td>ScheduleModel</td><td>{"views":["day","week","workweek","month","agenda"], ...} -- Schedule Model Values</td>
 </tr>
 </table>
@@ -105,11 +105,11 @@ To export appointment data from Scheduler into an ICS file format.
 {% highlight js %}
  
 var obj = $("#Schedule1").data("ejSchedule"); // instance of Scheduler widget after initialization
-obj.exportSchedule(http://js.syncfusion.com/demos/ejservices/api/JSScheduleExport/ICSExport, null, null); // client-side method to be made use in order to invoke the service action for exporting.
+obj.exportSchedule("http://js.syncfusion.com/demos/ejservices/api/JSScheduleExport/ICSExport", null, null); // client-side method to be made use in order to invoke the service action for exporting.
 
 {% endhighlight %}
 
-#### Export Action invoked in C# 
+#### Export Action invoked in C Sharp 
 
 {% highlight c# %}
 
@@ -166,7 +166,7 @@ To import appointment data generated from external calendar into Scheduler.
 
 {% endhighlight %}
 
-#### Import Action invoked in C# 
+#### Import Action invoked in C Sharp 
 
 {% highlight c# %}
 
@@ -243,8 +243,8 @@ To export the entire Scheduler content in a PDF file format.
 <td>ScheduleApps</td><td>{"id":"Id","subject":"Subject","description":"Description","startTime":"StartTime","endTime":"EndTime"
 ,"recurrence":"Recurrence","recurrenceRule":"RecurrenceRule","allDay":"AllDay","categorize":null,"recurrenceId"
 :"RecurrenceId","recurrenceExDate":"RecurrenceExDate","location":"Location","priority":null,"startTimeZone"
-:"StartTimeZone","endTimeZone":"EndTimeZone"}</td>
-<td>ScheduleProcesedApps</td><td>[{"Id":504,"Subject":"Case study","StartTime":"2014-05-01T18:30:00.000Z","EndTime":"2014-05-03T18:29:00.000Z","Description":"","AllDay":true,"Recurrence":false,"AppTaskId":26,"ParentId":26,"Guid":"557984d8-55de-6a63-3868-f236ad1d2d61","RecurrenceId":null,"RecurrenceExDate":null}, ... ] -- Processed Appointment data</td>
+:"StartTimeZone","endTimeZone":"EndTimeZone"}</td></tr><tr>
+<td>ScheduleProcessedApps</td><td>[{"Id":504,"Subject":"Case study","StartTime":"2014-05-01T18:30:00.000Z","EndTime":"2014-05-03T18:29:00.000Z","Description":"","AllDay":true,"Recurrence":false,"AppTaskId":26,"ParentId":26,"Guid":"557984d8-55de-6a63-3868-f236ad1d2d61","RecurrenceId":null,"RecurrenceExDate":null}, ... ] -- Processed Appointment data</td></tr><tr>
 <td>ScheduleModel</td><td>{"views":["day","week","workweek","month","agenda"], ...} -- Schedule Model Values</td>
 </tr>
 </table>
@@ -254,11 +254,11 @@ To export the entire Scheduler content in a PDF file format.
 {% highlight js %}
  
     var obj = $("#Schedule1").data("ejSchedule"); // instance of Scheduler widget after initialization
-    obj.exportSchedule(http://js.syncfusion.com/demos/ejservices/api/JSScheduleExport/PDFExport, null, null); // client-side method to be made use in order to invoke the service action for exporting.
+    obj.exportSchedule("http://js.syncfusion.com/demos/ejservices/api/JSScheduleExport/PDFExport", null, null); // client-side method to be made use in order to invoke the service action for exporting.
 
 {% endhighlight %}
 
-#### Export Action invoked in C# 
+#### Export Action invoked in C Sharp
 
 {% highlight c# %}
 
@@ -267,7 +267,7 @@ To export the entire Scheduler content in a PDF file format.
 		JavaScriptSerializer serializer = new JavaScriptSerializer();
         SchedulePDFExport convert = new SchedulePDFExport();
         ScheduleProperties scheduleObject = convert.ScheduleSerializeModel(HttpContext.Current.Request.Form["ScheduleModel"]);
-        IEnumerable scheduleAppointments = (IEnumerable)serializer.Deserialize(HttpContext.Current.Request.Form["ScheduleProcesedApps"], typeof(IEnumerable));
+        IEnumerable scheduleAppointments = (IEnumerable)serializer.Deserialize(HttpContext.Current.Request.Form["ScheduleProcessedApps"], typeof(IEnumerable));
         PdfExport exp = new PdfExport();
         PdfPageSettings pageSettings = new PdfPageSettings(50f);
         pageSettings.Orientation= PdfPageOrientation.Landscape;

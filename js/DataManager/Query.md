@@ -238,4 +238,3 @@ Result of the above code example is illustrated as follows.
 
 
 ![](/js/DataManager/Query_images/Query_img4.png)
-
