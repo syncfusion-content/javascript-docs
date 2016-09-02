@@ -293,10 +293,10 @@ Specified a selector for elements, within the container.
  
 {% highlight html %}
  
- <div id="target"></div>
+ <div id="waiting"></div>
 <script>
 //To set target API value during initialization  
-        $("#target").ejWaitingPopup({ showOnInit: true,target: "body"});
+        $("#waiting").ejWaitingPopup({ showOnInit: true,target: "body"});
 </script>
 <style>
               #target {
