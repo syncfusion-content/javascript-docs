@@ -5305,6 +5305,25 @@ $('#Schedule').ejSchedule({
 
 {% endhighlight %}
 
+### getRecurrenceRule()
+{:#methods:getrecurrencerule}
+
+Generate the recurrence rule as a string, based on the repeat options selected.
+
+#### Example
+
+{% highlight html %}
+ 
+<div id="RecurrenceEditor"></div> 
+ 
+<script>
+$('#RecurrenceEditor').ejRecurrenceEditor();
+var obj = $("#RecurrenceEditor").data("ejRecurrenceEditor");
+alert( obj.getRecurrenceRule()); // Display the recurrence rule
+</script>
+
+{% endhighlight %}
+
 ### getSlotByElement(element)
 
 {:#methods:getslotbyelement}
