@@ -1261,3 +1261,138 @@ Specifies the font color of the heat map label.
     </script>
 
 {% endhighlight %}
+
+
+## Events
+
+### cellMouseOver
+{:#events:cellMouseOver}
+
+Triggered when the mouse over on the cell. 
+
+<table class="params">
+	<thead>
+		<tr>
+			<th>cellValue</th>
+			<th>source</th>
+			<th>cell</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="cellValue">Value displayed on the cell</td>
+			<td class="source">Returns the HeatMap cell data.</td>
+			<td class="cell">Returns the specific HeatMap cell.</td>
+		</tr>
+	</tbody>
+</table>
+
+#### Example
+
+{% highlight javascript %}
+
+// cellMouseOver event for HeatMap
+$("#heatmapcontent").ejHeatMap({
+    cellMouseOver: function(args) {}
+});
+
+{% endhighlight %}
+
+### cellMouseEnter
+{:#events:cellMouseEnter}
+
+Triggered when the mouse over on the cell. 
+
+<table class="params">
+	<thead>
+		<tr>
+			<th>cellValue</th>
+			<th>source</th>
+			<th>cell</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="cellValue">Value displayed on the cell</td>
+			<td class="source">Returns the HeatMap cell data.</td>
+			<td class="cell">Returns the specific HeatMap cell.</td>
+		</tr>
+	</tbody>
+</table>
+
+#### Example
+
+{% highlight javascript %}
+
+// cellMouseEnter event for HeatMap
+$("#heatmapcontent").ejHeatMap({
+    cellMouseEnter: function(args) {}
+});
+
+{% endhighlight %}
+
+### cellMouseLeave
+{:#events:cellMouseLeave}
+
+Triggered when the mouse over on the cell. 
+
+<table class="params">
+	<thead>
+		<tr>
+			<th>cellValue</th>
+			<th>source</th>
+			<th>cell</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="cellValue">Value displayed on the cell</td>
+			<td class="source">Returns the HeatMap cell data.</td>
+			<td class="cell">Returns the specific HeatMap cell.</td>
+		</tr>
+	</tbody>
+</table>
+
+#### Example
+
+{% highlight javascript %}
+
+// cellMouseLeave event for HeatMap
+$("#heatmapcontent").ejHeatMap({
+    cellMouseLeave: function(args) {}
+});
+
+{% endhighlight %}
+
+### cellSelected
+{:#events:cellSelected}
+
+Triggered when the mouse over on the cell. 
+
+<table class="params">
+	<thead>
+		<tr>
+			<th>cellValue</th>
+			<th>source</th>
+			<th>cell</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="cellValue">Value displayed on the cell</td>
+			<td class="source">Returns the HeatMap cell data.</td>
+			<td class="cell">Returns the specific HeatMap cell.</td>
+		</tr>
+	</tbody>
+</table>
+
+#### Example
+
+{% highlight javascript %}
+
+// cellSelected event for HeatMap
+$("#heatmapcontent").ejHeatMap({
+    cellSelected: function(args) {}
+});
+
+{% endhighlight %}

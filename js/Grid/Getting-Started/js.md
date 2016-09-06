@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Getting started
 
-## Preparing HTML document
+## Adding JavaScript and CSS references
 
 The grid control has the following list of external JavaScript dependencies. 
 
