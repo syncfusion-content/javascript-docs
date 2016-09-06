@@ -52,7 +52,7 @@ $(function () {
 
 Currently grid data can be converted to different file formats in server-side only, through **EJ's** helper functions in .NET. So, to use exporting in your projects, it is required to create a server with any of the following web services. 
 
-* WebAPI 
+* Web API 
 * WCF Service
 * ASP.NET MVC Controller Action 
 * ASP.NET WebMethod 
