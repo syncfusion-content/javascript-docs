@@ -7,9 +7,9 @@ control: Radial slider
 documentation: ug
 ---
 
-## Animation
+## Animation Effect
 
-The **RadialSlider** property **animation** is used to  specify the animation effect  fo the **RadialSlider** And its allow to Enables or disables the handle movement animation.Set the value to this property as **Boolean** type.
+The animation effect for the **RadialSlider** can be enabled or disabled using the **enableAnimation** property.By default, it is set as **true**, so that the handle movement will be animated.
 
 {% highlight html %}
 
@@ -17,7 +17,7 @@ The **RadialSlider** property **animation** is used to  specify the animation ef
     
 {% endhighlight %}
 
-Add the following script in your code.
+Add the following script in your code and this will stop the handle movement's animation.
     
 {% highlight js %}
 

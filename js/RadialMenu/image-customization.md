@@ -9,9 +9,9 @@ documentation: ug
 
 ## Image Customization
 
-You can simply customize the **Radial Menu’s** Center and Back images by using the **ImageClass** and **BackImageClass** properties. By using this **data-ej-imageClass** attribute, you can customize the **Radial Menu** center image. 
+You can customize the **Radial Menu’s** Center and Back images by using the **ImageClass** and **BackImageClass** properties. Every menu item can be added with image using **url** property. By using this **data-ej-imageClass** attribute, you can customize the **Radial Menu** center image. 
 
-The **Radial Menu** control is essentially a context menu presenting its items in a circular arrangement around a center button. Sub-Items are also supported in the **Radial Menu**. To navigate Sub-Items, click the arrows in the outer ring and it displays the corresponding sub-items group. Clicking the center button when a sub-items group is shown, displays the items on the previous level. Nested **Radial Menu** has the second level back button. In this case, you can use the **data-ej-backImageClass** attribute to change your second level back button. **BackImageClass** is used to customize the **nestedRadialmenu** back image. Refer to the following code example.
+Sub-Items are also supported in the **Radial Menu**. To navigate Sub-Items, click the arrows in the outer ring and it displays the corresponding sub-items group. Clicking the center button when a sub-items group is shown, displays the items on the previous level. Nested **Radial Menu** has the second level back button. In this case, you can use the **data-ej-backImageClass** attribute to change your second level back button. **BackImageClass** is used to customize the **nestedRadialmenu** back image. Refer to the following code example.
 
 You can add the page content with text-area by referring to this section.
 
