@@ -1289,12 +1289,12 @@ Triggered when the mouse over on the cell.
 
 #### Example
 
-{% highlight html %}
+{% highlight javascript %}
 
-    // cellMouseOver event for HeatMap
-    $("#heatmapcontent").ejHeatMap({
-    cellMouseOver:function (args) {}
-    });
+// cellMouseOver event for HeatMap
+$("#heatmapcontent").ejHeatMap({
+    cellMouseOver: function(args) {}
+});
 
 {% endhighlight %}
 
@@ -1322,12 +1322,12 @@ Triggered when the mouse over on the cell.
 
 #### Example
 
-{% highlight html %}
+{% highlight javascript %}
 
-    // cellMouseEnter event for HeatMap
-    $("#heatmapcontent").ejHeatMap({
-    cellMouseEnter:function (args) {}
-    });
+// cellMouseEnter event for HeatMap
+$("#heatmapcontent").ejHeatMap({
+    cellMouseEnter: function(args) {}
+});
 
 {% endhighlight %}
 
@@ -1355,12 +1355,12 @@ Triggered when the mouse over on the cell.
 
 #### Example
 
-{% highlight html %}
+{% highlight javascript %}
 
-    // cellMouseLeave event for HeatMap
-    $("#heatmapcontent").ejHeatMap({
-    cellMouseLeave:function (args) {}
-    });
+// cellMouseLeave event for HeatMap
+$("#heatmapcontent").ejHeatMap({
+    cellMouseLeave: function(args) {}
+});
 
 {% endhighlight %}
 
@@ -1388,11 +1388,11 @@ Triggered when the mouse over on the cell.
 
 #### Example
 
-{% highlight html %}
+{% highlight javascript %}
 
-    // cellSelected event for HeatMap
-    $("#heatmapcontent").ejHeatMap({
-    cellSelected:function (args) {}
-    });
+// cellSelected event for HeatMap
+$("#heatmapcontent").ejHeatMap({
+    cellSelected: function(args) {}
+});
 
 {% endhighlight %}
