@@ -1680,7 +1680,26 @@ Sets the height of the browse button.
 
 
 
+### htmlAttributes `object`
 
+{:#members:htmlattributes}
+ 
+Specifies the list of HTML attributes to be added to uploadbox control.
+ 
+#### Default Value
+ 
+* {}
+ 
+#### Example 
+
+{% highlight html %}
+ 
+<div id="uploadbox1"></div> 
+ 
+<script>
+//To set htmlAttributes API value during initialization
+        $("#uploadbox1").ejUploadbox({ htmlAttributes:{"aria-label":"uploadbox"} });
+</script>{% endhighlight %}
 
 
 
@@ -2061,9 +2080,26 @@ Specifies the file details to be displayed when selected for uploading. This can
 </script>{% endhighlight %}
 
 
+### showRoundedCorner `boolean`
+{:#members:showroundedcorner} 
 
-
-
+Specifies the file details to be displayed when selected for uploading. This can be done when the showFileDetails is set to true.
+ 
+#### Default Value 
+ 
+* true
+ 
+#### Example
+ 
+{% highlight html %}
+ 
+<div id="uploadbox1"></div> 
+ 
+<script>
+//Sets the showRoundedCorner API value during initialization
+        $("#uploadbox1").ejUploadbox({ showRoundedCorner: false });       
+</script>{% endhighlight %}
+ 
 
 
 ### uploadName `string`
@@ -2320,6 +2356,39 @@ $("#uploadbox1").ejUploadbox("enable");
 
 {% endhighlight %}
 
+### refresh()
+{:#methods:refresh}
+
+Refresh the Uploadbox control
+ 
+#### Example
+ 
+{% highlight html %}
+ 
+<div id="uploadbox1"></div> 
+ 
+<script>
+// Refresh the Uploadbox
+$("#uploadbox1").ejUploadbox();
+var uploadObj = $("#uploadbox1").data("ejUploadbox");
+uploadObj.refresh(); // refresh the Uploadbox
+</script>
+
+{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<div id="uploadbox1"></div> 
+ 
+<script>
+// Refresh the Uploadbox
+$("#uploadbox1").ejUploadbox();
+$("#uploadbox1").ejUploadbox("refresh"); 
+</script>
+
+{% endhighlight %}
+
 
 
 
@@ -2331,6 +2400,64 @@ $("#uploadbox1").ejUploadbox("enable");
 
 
 
+
+### beforeSend
+{:#events:beforesend}
+ 
+Fires when the upload progress beforeSend.
+ 
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody> 
+<tr>
+<td class="name">files</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Selected FileList Object.</td>
+</tr>
+<tr>
+<td class="name">cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">returns the Uploadbox model</td>
+</tr>
+<tr>
+<td class="name">xhr</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">XHR-AJAX Object for reference.</td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">returns the name of the event.</td>
+</tr>
+</tbody>
+</table>
+
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+<div id="uploadbox1"></div> 
+ 
+<script>
+//beforeSend event for Uploadbox
+$("#uploadbox1").ejUploadbox({
+   beforeSend: function (args) {}
+});   
+</script>{% endhighlight %}
 
 
 ### begin
@@ -2542,7 +2669,7 @@ $("#uploadbox1").ejUploadbox({
 
 
 ### success
-{:#events:complete}
+{:#events:success}
 
 
 
@@ -2551,7 +2678,7 @@ $("#uploadbox1").ejUploadbox({
 
 
 
-Fires when the file upload progress is completed.
+Fires when the file upload progress is successed.
 
 <table class="params">
 <thead>
@@ -2861,6 +2988,64 @@ $("#uploadbox1").ejUploadbox({
 </script>    {% endhighlight %}
 
 
+### inProgress
+{:#events:inprogress}
+  
+Fires when the file is uploading.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
+</tr>
+<tr>
+<td class="name">e</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">AJAX event argument for reference.</td>
+</tr>
+<tr>
+<td class="name">files</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">returns Selected FileList objects</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">returns the Uploadbox model</td>
+</tr>
+<tr>
+<td class="name">percentage</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">returns the current progress percentage.</td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">returns the name of the event.</td>
+</tr>
+</tbody>
+</table>
+ 
+#### Example
+
+{% highlight html %}
+<div id="uploadbox1"></div> 
+ 
+<script> 
+//inProgress event for Uploadbox
+$("#uploadbox1").ejUploadbox({
+   inProgress: function (args) {}
+});  
+</script>    {% endhighlight %}
 
 
 
@@ -2921,8 +3106,6 @@ Fires when the uploaded file is removed successfully.
 $("#uploadbox1").ejUploadbox({
    remove: function (args) {}
 });  
-</script>    {% endhighlight %}
-
-
-
+</script>    {% endhighlight %} 
+ 
 

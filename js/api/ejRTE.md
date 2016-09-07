@@ -2275,7 +2275,30 @@ Counts the total characters and displays it in the RTE footer.
 {% endhighlight %}
 
 
-
+### showRoundedCorner  `boolean`
+{:#members:showroundedcorner  }
+ 
+Displays the RTE with rounded corners. 
+ 
+#### Default Value
+ 
+* false
+ 
+#### Example
+ 
+{% highlight html %}
+ 
+<textarea   id="rteSample">     
+<p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is easy to render in the
+        client side. Customers can easily edit the contents and get the HTML content for
+        the displayed content. A rich text editor control provides users with a toolbar
+        that helps them to apply rich text formats to the text entered in the text
+        area. </p></textarea ><script> 
+        
+    $("#rteSample").ejRTE({showRoundedCorner: true });
+</script>
+{% endhighlight %}
 
 
 

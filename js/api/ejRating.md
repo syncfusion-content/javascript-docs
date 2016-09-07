@@ -178,6 +178,29 @@ Specifies the height of the Rating control wrapper.
 
 {% endhighlight %}
 
+### htmlAttributes `object`
+
+{:#members:htmlattributes}
+
+Specifies the list of HTML attributes to be added to rating control.
+
+#### Default Value
+
+* {}
+
+#### Example
+
+{% highlight html %}
+
+    <input id="rating"></input>
+
+    <script>
+        //To set htmlAttributes API value during initialization
+        $("#rating").ejRating({ htmlAttributes:{"aria-label":"rating"} });
+    </script>
+
+{% endhighlight %}
+
 
 ### incrementStep `number`
 {:#members:incrementstep}
