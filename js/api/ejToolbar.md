@@ -656,6 +656,56 @@ Specifies the height of the Toolbar.
 
 
 
+### htmlAttributes `object`
+{:#members:htmlattributes} 
+
+Specifies the list of HTML attributes to be added to toolbar control. 
+
+#### Default Value
+ 
+* {}
+ 
+#### Example 
+
+{% highlight html %}
+ 
+<div id="toolbar1">
+<ul>
+   <li id="Left" title="Left">
+       <div class="ToolbarItems LeftAlign_tool"></div>
+  </li>
+   <li id="Center" title="Center">
+       <div class="ToolbarItems CenterAlign_tool"></div>
+   </li>
+   <li id="Right" title="Right">
+       <div class="ToolbarItems RightAlign_tool"></div>
+   </li>
+   <li id="Justify" title="Justify">
+       <div class="ToolbarItems Justify_tool"></div>
+   </li>
+</ul>
+<ul>
+   <li id="Bold" title="Bold">
+       <div class="ToolbarItems Bold_tool"></div>
+   </li>
+   <li id="Italic" title="Italic">
+       <div class="ToolbarItems Italic_tool"></div>
+   </li>
+   <li id="StrikeThrough" title="Strike Through">
+       <div class="ToolbarItems StrikeThrough_tool"></div>
+   </li>
+   <li id="UndeLine" title="UnderLine">
+       <div class="ToolbarItems Underline_tool"></div>
+   </li>
+</ul>
+</div>
+<script>
+//To set htmlattributes API value during initialization  
+        $("#toolbar1").ejToolbar({ htmlAttributes: { title: "Demo" } });                                        
+</script>
+{% endhighlight %}
+
+
 
 ### hide `boolean`
 {:#members:hide}
@@ -1009,6 +1059,7 @@ Displays the Toolbar with rounded corners.
         //To set showRoundedCorner API value 
         $("#toolbar1").ejToolbar({ showRoundedCorner: true });                   
 </script>{% endhighlight %}
+
 
 
 ### width `number|string`
@@ -2264,6 +2315,90 @@ type</td>
 });
 </script>{% endhighlight %}
 
+
+
+### focusOut
+{:#events:focusout}
+
+
+
+
+Fires after Toolbar control is focused.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
+</tr>
+<tr>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.Toolbar.Model"/><span class="param-type">object</span></td>
+<td class="description">returns the Toolbar model</td>
+</tr>
+<tr>
+<td class="name">
+type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">returns the name of the event</td>
+</tr>
+</tbody>
+</table>
+
+
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+<div id="toolbar1">
+<ul>
+   <li id="Left" title="Left">
+       <div class="ToolbarItems LeftAlign_tool"></div>
+  </li>
+   <li id="Center" title="Center">
+       <div class="ToolbarItems CenterAlign_tool"></div>
+   </li>
+   <li id="Right" title="Right">
+       <div class="ToolbarItems RightAlign_tool"></div>
+   </li>
+   <li id="Justify" title="Justify">
+       <div class="ToolbarItems Justify_tool"></div>
+   </li>
+</ul>
+<ul>
+   <li id="Bold" title="Bold">
+       <div class="ToolbarItems Bold_tool"></div>
+   </li>
+   <li id="Italic" title="Italic">
+       <div class="ToolbarItems Italic_tool"></div>
+   </li>
+   <li id="StrikeThrough" title="Strike Through">
+       <div class="ToolbarItems StrikeThrough_tool"></div>
+   </li>
+   <li id="UndeLine" title="UnderLine">
+       <div class="ToolbarItems Underline_tool"></div>
+   </li>
+</ul>
+</div>
+<script>
+//focusOut event for Toolbar
+ $("#toolbar1").ejToolbar({
+ focusOut: function (args) {}
+});
+</script>{% endhighlight %}
 
 
 

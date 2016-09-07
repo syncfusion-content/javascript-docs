@@ -387,7 +387,27 @@ Defines the URL link to navigate while click the tag.
 
 
 
+### htmlAttributes `object`
 
+{:#members:htmlattributes}
+
+Specifies the list of HTML attributes to be added to TagCloud control.
+
+#### Default Value
+
+* {}
+
+#### Example
+
+{% highlight html %}
+ 
+<div id="tagcloud"></div> 
+ 
+<script>
+// Set the htmlattributes during initialization.                   
+        $("#tagcloud").ejTagCloud({ htmlAttributes:{"aria-label":"tagcloud"} });                      
+</script>
+{% endhighlight %}
 
 
 
