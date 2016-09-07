@@ -147,7 +147,38 @@ Sets the root class for the WaitingPopup control theme
 {% endhighlight %}
 
 
+### htmlAttributes `object`
+{:#members:htmlattributes}
+ 
+Specifies the list of HTML attributes to be added to waitingpopup control.
 
+#### Default Value
+ 
+* {}
+ 
+#### Example
+ 
+{% highlight html %}
+ 
+ <div id="target"></div>
+<script>
+//To set htmlAttributes API value during initialization. 
+        $("#target").ejWaitingPopup({showOnInit: true, htmlAttributes:{"aria-label":"waitingpopup"} });
+</script>
+<style>
+              #target {
+            height: 200px;
+            width: 600px;
+            margin: 0 auto;
+        }
+
+       #target_WaitingPopup .e-image {
+            display: block;
+            height: 70px;
+        }
+</style>
+
+{% endhighlight %}
 
 
 

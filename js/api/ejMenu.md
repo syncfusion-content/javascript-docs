@@ -842,6 +842,62 @@ Specifies the list of HTML attributes to be added to menu control.
 
 {% endhighlight %}
 
+### isResponsive `boolean`
+
+{:#members:isresponsive}
+
+Enables/disables responsive support for the Menu control during the window resizing time.
+
+#### Default Value
+
+* true
+
+#### Example
+
+{% highlight html %}
+ 
+        <ul id="menu">
+        <li id="Home"><a>Home</a></li>
+        <li>
+            <a>Search Jobs</a>
+            <ul>
+                <li><a>Advanced Search</a></li>
+                <li><a>Jobs by Company</a></li>
+                <li><a>Jobs by Category</a></li>
+                <li><a>Jobs by Location</a></li>
+                <li><a>Jobs by Skills</a></li>
+                <li><a>Jobs by Designation</a></li>
+            </ul>
+        </li>
+        <li id="Post Resume"><a>Post Resume</a></li>
+        <li id="Job Seeker"><a>JobSeeker Login</a></li>
+        <li id="Fast Forward">
+            <a>Fast Forward</a>
+            <ul>
+                <li><a>Resume writing</a></li>
+                <li><a>Certification</a></li>
+                <li><a>Resume Spotlight</a></li>
+                <li><a>Jobs4u</a></li>
+            </ul>
+        </li>
+        <li id="More">
+            <a>More</a>
+            <ul>
+                <li><a>Mobile</a></li>
+                <li><a>Pay check</a></li>
+                <li><a>Blog</a></li>
+            </ul>
+        </li>
+    </ul>
+
+{% endhighlight %}
+
+{% highlight javascript %}
+
+        $("#menu").ejMenu({ isResponsive: false });
+
+{% endhighlight %} 
+
 ### menuType `string|enum`
 {:#members:menutype}
 

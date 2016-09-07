@@ -4454,6 +4454,130 @@ Fires the action when the DropDownList is destroyed.
     </script>
 {% endhighlight %}
 
+### focusIn
+{:#events:focusin}
+
+Fires the action when the DropDownList is focused. 
+   
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">its value is set as true,if the event should be canceled; otherwise, false.</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">returns the DropDownList model</td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">returns the name of the event</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+ 
+<input type="text" id="drpdwn" />
+
+    <div id="carsList">
+        <ul>
+            <li>Audi A4</li>
+            <li>Audi A5</li>
+            <li>Audi A6</li>
+            <li>Audi A7</li>
+            <li>Audi A8</li>
+        </ul>
+    </div>
+
+    <script>
+        // Creates the DropDownList.
+        $('#drpdwn').ejDropDownList(
+        {
+            targetID: "carsList",  
+            focusIn: function (args) 
+            {
+               /*Do your changes */                        
+            }
+        });
+
+    </script>
+{% endhighlight %}
+
+### focusOut
+{:#events:focusout}
+
+Fires the action when the DropDownList is about to lose focus. 
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">its value is set as true,if the event should be canceled; otherwise, false.</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">returns the DropDownList model</td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">returns the name of the event</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+ 
+<input type="text" id="drpdwn" />
+
+    <div id="carsList">
+        <ul>
+            <li>Audi A4</li>
+            <li>Audi A5</li>
+            <li>Audi A6</li>
+            <li>Audi A7</li>
+            <li>Audi A8</li>
+        </ul>
+    </div>
+
+    <script>
+        // Creates the DropDownList.
+        $('#drpdwn').ejDropDownList(
+        {
+            targetID: "carsList",  
+            focusOut: function (args) 
+            {
+               /*Do your changes */                        
+            }
+        });
+
+    </script>
+{% endhighlight %}
+
 ### popupHide
 {:#events:popuphide}
 

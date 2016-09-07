@@ -1187,6 +1187,66 @@ accObj.collapseAll(); //Calls the collapseAll method of Accordion.
 </script>{% endhighlight %}
 
 
+### collapsePanel()
+{:#methods:collapsepanel}
+
+This method used to Collapses the specified items in accordion at a time.
+
+
+#### Example
+
+{% highlight html %}
+<div id="accordion">
+       <h3>
+           <a href="#">ASP.NET</a></h3>
+       <div>
+Microsoft ASP.NET is a set of technologies in the Microsoft .NET Framework for building Web applications and XML Web services. ASP.NET pages execute on the server and generate markup such as HTML, WML, or XML that is sent to a desktop or mobile browser.
+       </div>
+       <h3>
+           <a href="#">ASP.NET MVC</a></h3>
+       <div>
+The Model-View-Controller (MVC) architectural pattern separates an application into three main components: the model, the view, and the controller. The ASP.NET MVC framework provides an alternative to the ASP.NET Web Forms pattern for creating Web applications.
+       </div>
+       <h3>
+           <a href="#">Javascript</a></h3>
+       <div>
+JavaScript (JS) is an interpreted computer programming language. It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed.
+       </div>
+   </div>
+<script>
+// Call collapsePanel method.
+$("#accordion").ejAccordion();
+$("#accordion").ejAccordion("collapsePanel",0);
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+  <div id="accordion">
+       <h3>
+           <a href="#">ASP.NET</a></h3>
+       <div>
+Microsoft ASP.NET is a set of technologies in the Microsoft .NET Framework for building Web applications and XML Web services. ASP.NET pages execute on the server and generate markup such as HTML, WML, or XML that is sent to a desktop or mobile browser.
+       </div>
+       <h3>
+           <a href="#">ASP.NET MVC</a></h3>
+       <div>
+The Model-View-Controller (MVC) architectural pattern separates an application into three main components: the model, the view, and the controller. The ASP.NET MVC framework provides an alternative to the ASP.NET Web Forms pattern for creating Web applications.
+       </div>
+       <h3>
+           <a href="#">Javascript</a></h3>
+       <div>
+JavaScript (JS) is an interpreted computer programming language. It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed.
+       </div>
+   </div>
+<script>
+// collapse Panel the Accordion
+$("#accordion").ejAccordion();
+var accObj = $("#accordion").data("ejAccordion");
+accObj.collapsePanel(0); //Calls the collapsePanel method of Accordion.      
+</script>{% endhighlight %}
+
+
 ### destroy()
 {:#methods:destroy}
 
@@ -1592,6 +1652,66 @@ var accObj = $("#accordion").data("ejAccordion");
 accObj.expandAll(); //Calls the expandAll method of Accordion.  
 </script>{% endhighlight %}
 
+
+
+### expandPanel()
+{:#methods:expandpanel}
+
+This method used to Expand the specified items in accordion at a time.
+
+#### Example
+
+
+{% highlight html %}
+<div id="accordion">
+       <h3>
+           <a href="#">ASP.NET</a></h3>
+       <div>
+Microsoft ASP.NET is a set of technologies in the Microsoft .NET Framework for building Web applications and XML Web services. ASP.NET pages execute on the server and generate markup such as HTML, WML, or XML that is sent to a desktop or mobile browser.
+       </div>
+       <h3>
+           <a href="#">ASP.NET MVC</a></h3>
+       <div>
+The Model-View-Controller (MVC) architectural pattern separates an application into three main components: the model, the view, and the controller. The ASP.NET MVC framework provides an alternative to the ASP.NET Web Forms pattern for creating Web applications.
+       </div>
+       <h3>
+           <a href="#">Javascript</a></h3>
+       <div>
+JavaScript (JS) is an interpreted computer programming language. It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed.
+       </div>
+   </div>
+<script>
+// Call expandPanel method.
+ $("#accordion").ejAccordion();
+$("#accordion").ejAccordion("expandPanel",1);
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<div id="accordion">
+       <h3>
+           <a href="#">ASP.NET</a></h3>
+       <div>
+Microsoft ASP.NET is a set of technologies in the Microsoft .NET Framework for building Web applications and XML Web services. ASP.NET pages execute on the server and generate markup such as HTML, WML, or XML that is sent to a desktop or mobile browser.
+       </div>
+       <h3>
+           <a href="#">ASP.NET MVC</a></h3>
+       <div>
+The Model-View-Controller (MVC) architectural pattern separates an application into three main components: the model, the view, and the controller. The ASP.NET MVC framework provides an alternative to the ASP.NET Web Forms pattern for creating Web applications.
+       </div>
+       <h3>
+           <a href="#">Javascript</a></h3>
+       <div>
+JavaScript (JS) is an interpreted computer programming language. It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed.
+       </div>
+   </div>
+<script>
+// expand Panel the Accordion
+$("#accordion").ejAccordion();
+var accObj = $("#accordion").data("ejAccordion");
+accObj.expandPanel(1); //Calls the expandPanel method of Accordion.  
+</script>{% endhighlight %}
 
 
 
