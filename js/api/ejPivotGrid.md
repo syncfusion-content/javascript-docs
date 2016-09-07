@@ -853,6 +853,21 @@ $("#PivotGrid1").ejPivotGrid({dataSource: {values: {formula : formulaString}}});
 
 {% endhighlight %}
 
+### dataSource.enableAdvancedFilter `boolean`
+{:#members:datasource-enableadvancedfilter}
+
+Allows user to filter the members (by its name and values) by enable the advanced filtering (excel-like) option for OLAP data source in client-mode.
+
+#### Default Value: false
+
+**Example:**
+
+{% highlight html %}
+ 
+$("#PivotGrid1").ejPivotGrid({dataSource: {enableAdvancedFilter: true}});
+
+{% endhighlight %}
+
 
 ### dataSource.filters `array`
 {:#members:datasource-filters}
@@ -866,22 +881,6 @@ Lists out the items which supports filtering of values in PivotGrid.
 {% highlight html %}
  
 $("#PivotGrid1").ejPivotGrid({dataSource: {filters: itemsArray}});
-
-{% endhighlight %}
-
-
-### dataSource.enableAdvancedFilter `boolean`
-{:#members:datasource-enableadvancedfilter}
-
-Allows user to filter the members (by its name and values) by enable the advanced filtering (excel-like) option for OLAP data source in client-mode.
-
-#### Default Value: false
-
-**Example:**
-
-{% highlight html %}
- 
-$("#PivotGrid1").ejPivotGrid({dataSource: {enableAdvancedFilter: true}});
 
 {% endhighlight %}
 
