@@ -3258,6 +3258,91 @@ Specifies the state of enabling or disabling toolbar
 {% endhighlight %}
 
 
+### toolbarSettings.toolbarItems `array`
+{:#members:toolbarsettings-toolbaritems}
+
+<ts name = "ej.Gantt.ToolbarItems"/>
+
+Specifies the list of toolbar items to be rendered in Gantt toolbar
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">Add</td>
+<td class="description">Enables the add icon in toolbar</td>
+</tr>
+<tr>
+<td class="name">Edit</td>
+<td class="description">Enables the edit icon in toolbar</td>
+</tr>
+<tr>
+<td class="name">Delete</td>
+<td class="description">Enables the edit icon in toolbar</td>
+</tr>
+<tr>
+<td class="name">Update</td>
+<td class="description">Enables the update icon in toolbar</td>
+</tr>
+<tr>
+<td class="name">Cancel</td>
+<td class="description">Enables the cancel icon in toolbar</td>
+</tr>
+<tr>
+<td class="name">Search</td>
+<td class="description">Enables the search icon in toolbar</td>
+</tr>
+<tr>
+<td class="name">Indent</td>
+<td class="description">Enables the indent icon in toolbar</td>
+</tr>
+<tr>
+<td class="name">Outdent</td>
+<td class="description">Enables the outdent icon in toolbar</td>
+</tr>
+<tr>
+<td class="name">ExpandAll</td>
+<td class="description">Enables the expand all icon in toolbar</td>
+</tr>
+<tr>
+<td class="name">Collapse All</td>
+<td class="description">Enables the collapse all icon in toolbar</td>
+</tr>
+<tr>
+<td class="name">PrevTimeSpan</td>
+<td class="description">Enables the previous time span icon in toolbar</td>
+</tr>
+<tr>
+<td class="name">NextTimeSpan</td>
+<td class="description">Enables the next time span icon in toolbar</td>
+</tr>
+</tbody>
+</table>
+
+#### Default Value:
+{:.param}
+* []
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>  
+        $("#gantt").ejGantt({ toolbarSettings: { toolbarItems: [ej.Gantt.ToolbarItems.Add,ej.Gantt.ToolbarItems.Edit] } });                   
+</script>
+
+{% endhighlight %}
+
+
+
 ### treeColumnIndex `number`
 {:#members:treecolumnindex}
 
