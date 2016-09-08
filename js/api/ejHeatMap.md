@@ -1266,7 +1266,7 @@ Specifies the font color of the heat map label.
 ## Events
 
 ### cellMouseOver
-{:#events:cellMouseOver}
+{:#events:cellmouseover}
 
 Triggered when the mouse over on the cell. 
 
@@ -1299,7 +1299,7 @@ $("#heatmapcontent").ejHeatMap({
 {% endhighlight %}
 
 ### cellMouseEnter
-{:#events:cellMouseEnter}
+{:#events:cellmouseenter}
 
 Triggered when the mouse over on the cell. 
 
@@ -1332,7 +1332,7 @@ $("#heatmapcontent").ejHeatMap({
 {% endhighlight %}
 
 ### cellMouseLeave
-{:#events:cellMouseLeave}
+{:#events:cellmouseleave}
 
 Triggered when the mouse over on the cell. 
 
@@ -1365,7 +1365,7 @@ $("#heatmapcontent").ejHeatMap({
 {% endhighlight %}
 
 ### cellSelected
-{:#events:cellSelected}
+{:#events:cellselected}
 
 Triggered when the mouse over on the cell. 
 
