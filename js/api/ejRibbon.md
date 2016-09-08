@@ -162,6 +162,115 @@ Enables the ribbon resize feature.
 
 {% endhighlight %}
 
+### isResponsive `boolean`
+{:#members:isresponsive}
+
+When set to true, adapts the Ribbon layout to fit the screen size of devices on which it renders.
+
+#### Default Value
+
+* false
+
+#### Example
+
+{% highlight html %}
+ 
+    <ul id="ribbonmenu">
+        <li>
+            <a>FILE </a>
+            <ul>
+            <li><a>New</a></li>
+            <li><a>Open</a></li>
+            <li><a>Save</a></li>
+            <li><a>Save as</a></li>
+            <li><a>Print</a></li>
+            </ul>
+        </li>
+     </ul>
+    <div id="Ribbon"></div>
+    <script type="text/javascript">   
+       $(function() {
+            $("#Ribbon").ejRibbon({
+                width: "100%",
+                isResponsive: true,
+                applicationTab: {
+                    type: ej.Ribbon.applicationTabType.menu,
+                    menuItemID: "ribbonmenu",
+                    menuSettings: {
+                        openOnClick: false
+                    }
+                },
+                tabs: [{
+                    id: "home",
+                    text: "HOME",
+                    groups: [{
+                        text: "Clipboard",
+                        alignType: ej.Ribbon.alignType.rows,
+                        content: [{
+                            groups: [{
+                                id: "cut",
+                                text: "Cut"
+                            }, {
+                                id: "copy",
+                                text: "Copy"
+                            }, {
+                                id: "paste",
+                                text: "Paste"
+                            }],
+                            defaults: {
+                                type: ej.Ribbon.type.button,
+                                height: 70,
+                                width: 75
+                            }
+                        }]
+                    }, {
+                        text: "Font",
+                        alignType: ej.Ribbon.alignType.rows,
+                        content: [{
+                            groups: [{
+                                id: "bold",
+                                text: "Bold"
+                            }, {
+                                id: "italic",
+                                text: "Italic"
+                            }, {
+                                id: "underline",
+                                text: "Underline"
+                            }],
+                            defaults: {
+                                type: ej.Ribbon.type.button,
+                                height: 70,
+                                width: 75
+                            }
+                        }]
+                    }, {
+                        text: "Alignment",
+                        alignType: ej.Ribbon.alignType.rows,
+                        content: [{
+                            groups: [{
+                                id: "left",
+                                text: " Left"
+                            }, {
+                                id: "center",
+                                text: "Center"
+                            }, {
+                                id: "right",
+                                text: "Right"
+                            }],
+                            defaults: {
+                                type: ej.Ribbon.type.button,
+                                height: 70,
+                                width: 75
+                            }
+                        }]
+                    }]
+                }]
+            });
+        });      
+    </script>  
+
+{% endhighlight %}
+
 ### buttonDefaults `object`
 {:#members:buttondefaults}
 
