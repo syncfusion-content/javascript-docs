@@ -2090,6 +2090,75 @@ Shows/hides the toolbar.
 
 {% endhighlight %}
 
+
+### toolbarSettings.toolbarItems `array`
+{:#members:toolbarsettings-toolbaritems}
+
+<ts name = "ej.TreeGrid.ToolbarItems"/>
+
+Specifies the list of toolbar items to be rendered in TreeGrid toolbar
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">Add</td>
+<td class="description">Enables the add icon in toolbar</td>
+</tr>
+<tr>
+<td class="name">Edit</td>
+<td class="description">Enables the edit icon in toolbar</td>
+</tr>
+<tr>
+<td class="name">Delete</td>
+<td class="description">Enables the edit icon in toolbar</td>
+</tr>
+<tr>
+<td class="name">Update</td>
+<td class="description">Enables the update icon in toolbar</td>
+</tr>
+<tr>
+<td class="name">Cancel</td>
+<td class="description">Enables the cancel icon in toolbar</td>
+</tr>
+<tr>
+<td class="name">ExpandAll</td>
+<td class="description">Enables the expand all icon in toolbar</td>
+</tr>
+<tr>
+<td class="name">Collapse All</td>
+<td class="description">Enables the collapse all icon in toolbar</td>
+</tr>
+<tr>
+<td class="name">PdfExport</td>
+<td class="description">Enables the pdf export icon in toolbar</td>
+</tr>
+<tr>
+<td class="name">ExcelExport</td>
+<td class="description">Enables the excel export icon in toolbar</td>
+</tr>
+</tbody>
+</table>
+
+#### Default Value:
+{:.param}
+* []
+
+
+#### Example
+
+
+{% highlight html %}
+ 
+        $("#treegrid").ejTreeGrid({ toolbarItems: [ej.TreeGrid.ToolbarItems.Add,ej.TreeGrid.ToolbarItems.Edit] });                       
+
+{% endhighlight %}
+
 ### treeColumnIndex `number`
 {:#members:treecolumnindex}
 
