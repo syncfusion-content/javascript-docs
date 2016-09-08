@@ -940,7 +940,7 @@ Option to add field names whose corresponding values in the dragged row needs to
 
 {% highlight html %}
 
-        $("#treegrid").ejTreeGrid(dragTooltip :{ tooltipItems: "TaskName","TaskID","StartDate" });                       
+        $("#treegrid").ejTreeGrid(dragTooltip :{ tooltipItems: ["TaskName","TaskID","StartDate"] });                       
 
 {% endhighlight %}
 
@@ -2088,7 +2088,7 @@ Option to add columns based on which the rows have to be sorted recursively.
 Options for displaying and customizing the toolbar items.
 
 
-### toolbarSettings.showToolBar `boolean`
+### toolbarSettings.showToolbar `boolean`
 {:#members:toolbarsettings-showtoolbar}
 
 Shows/hides the toolbar.
@@ -2104,7 +2104,7 @@ Shows/hides the toolbar.
 
 {% highlight html %}
    
-        $("#treegrid").ejTreeGrid({ showToolBar:  true });                       
+        $("#treegrid").ejTreeGrid({ showToolbar:  true });                       
 
 {% endhighlight %}
 
