@@ -3261,8 +3261,6 @@ Specifies the state of enabling or disabling toolbar
 ### toolbarSettings.toolbarItems `array`
 {:#members:toolbarsettings-toolbaritems}
 
-<ts name = "ej.Gantt.ToolbarItems"/>
-
 Specifies the list of toolbar items to be rendered in Gantt toolbar
 
 <table class="params">
