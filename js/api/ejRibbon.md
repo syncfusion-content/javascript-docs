@@ -56,7 +56,7 @@ The ribbon can be easily configured to the DOM element, such as div. You can cre
 ### allowResizing `boolean`
 {:#members:allowresizing}
 
-Enables the ribbon resize feature.
+Enables the ribbon resize feature.allowResizing is a deprecated property of isResponsive. 
 
 #### Default Value
 
@@ -165,7 +165,7 @@ Enables the ribbon resize feature.
 ### isResponsive `boolean`
 {:#members:isresponsive}
 
-When set to true, adapts the Ribbon layout to fit the screen size of devices on which it renders.allowResizing is a deprecated property.
+When set to true, adapts the Ribbon layout to fit the screen size of devices on which it renders.
 
 #### Default Value
 
