@@ -1273,16 +1273,26 @@ Triggered when the mouse over on the cell.
 <table class="params">
 	<thead>
 		<tr>
-			<th>cellValue</th>
-			<th>source</th>
-			<th>cell</th>
+			<th>Name</th>
+			<th>Type</th>
+			<th>Description</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
-			<td class="cellValue">Value displayed on the cell</td>
-			<td class="source">Returns the HeatMap cell data.</td>
-			<td class="cell">Returns the specific HeatMap cell.</td>
+			<td class="name">cellValue</td>
+			<td class="type">string</td>
+			<td class="description last">Value displayed on the cell</td>
+		</tr>
+		<tr>
+			<td class="name">source</td>
+			<td class="type">object</td>
+			<td class="description last">Returns the HeatMap cell data</td>
+		</tr>
+		<tr>
+			<td class="name">cell</td>
+			<td class="type">object</td>
+			<td class="description last">Returns the specific HeatMap cell</td>
 		</tr>
 	</tbody>
 </table>
@@ -1306,16 +1316,26 @@ Triggered when the mouse over on the cell.
 <table class="params">
 	<thead>
 		<tr>
-			<th>cellValue</th>
-			<th>source</th>
-			<th>cell</th>
+			<th>Name</th>
+			<th>Type</th>
+			<th>Description</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
-			<td class="cellValue">Value displayed on the cell</td>
-			<td class="source">Returns the HeatMap cell data.</td>
-			<td class="cell">Returns the specific HeatMap cell.</td>
+			<td class="name">cellValue</td>
+			<td class="type">string</td>
+			<td class="description last">Value displayed on the cell</td>
+		</tr>
+		<tr>
+			<td class="name">source</td>
+			<td class="type">object</td>
+			<td class="description last">Returns the HeatMap cell data</td>
+		</tr>
+		<tr>
+			<td class="name">cell</td>
+			<td class="type">object</td>
+			<td class="description last">Returns the specific HeatMap cell</td>
 		</tr>
 	</tbody>
 </table>
@@ -1339,16 +1359,26 @@ Triggered when the mouse over on the cell.
 <table class="params">
 	<thead>
 		<tr>
-			<th>cellValue</th>
-			<th>source</th>
-			<th>cell</th>
+			<th>Name</th>
+			<th>Type</th>
+			<th>Description</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
-			<td class="cellValue">Value displayed on the cell</td>
-			<td class="source">Returns the HeatMap cell data.</td>
-			<td class="cell">Returns the specific HeatMap cell.</td>
+			<td class="name">cellValue</td>
+			<td class="type">string</td>
+			<td class="description last">Value displayed on the cell</td>
+		</tr>
+		<tr>
+			<td class="name">source</td>
+			<td class="type">object</td>
+			<td class="description last">Returns the HeatMap cell data</td>
+		</tr>
+		<tr>
+			<td class="name">cell</td>
+			<td class="type">object</td>
+			<td class="description last">Returns the specific HeatMap cell</td>
 		</tr>
 	</tbody>
 </table>
@@ -1372,16 +1402,26 @@ Triggered when the mouse over on the cell.
 <table class="params">
 	<thead>
 		<tr>
-			<th>cellValue</th>
-			<th>source</th>
-			<th>cell</th>
+			<th>Name</th>
+			<th>Type</th>
+			<th>Description</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
-			<td class="cellValue">Value displayed on the cell</td>
-			<td class="source">Returns the HeatMap cell data.</td>
-			<td class="cell">Returns the specific HeatMap cell.</td>
+			<td class="name">cellValue</td>
+			<td class="type">string</td>
+			<td class="description last">Value displayed on the cell</td>
+		</tr>
+		<tr>
+			<td class="name">source</td>
+			<td class="type">object</td>
+			<td class="description last">Returns the HeatMap cell data</td>
+		</tr>
+		<tr>
+			<td class="name">cell</td>
+			<td class="type">object</td>
+			<td class="description last">Returns the specific HeatMap cell</td>
 		</tr>
 	</tbody>
 </table>
