@@ -404,29 +404,25 @@ Mapping fields for the suggestion items of the **Autocomplete** textbox widget.
 
 * null
 
-<table>
-<tr>
-<th>Name<br/><br/></th>
-<th>Description<br/><br/></th>
-</tr>
-<tr>
-<td>
-fields.groupBy<br/><br/></td><td>
-Used to group the suggestion list items. <br/><br/></td>
-</tr>
-<tr>
-<td>fields.htmlAttributes<br/><br/></td>
-<td>Defines the HTML attributes such as id, class, styles for the item.<br/><br/></td>
-</tr>
-<tr>
-<td>fields.key<br/><br/></td>
-<td>Defines the specific field name which contains unique key values for the list items.<br/><br/></td>
-</tr>
-<tr>
-<td>fields.text<br/><br/></td>
-<td>Defines the specific field name in the data source to load the suggestion list with data.<br/><br/></td>
-</tr>
-</table>
+### fields.groupBy `string`
+{:#members:fields-groupBy}
+
+Used to group the suggestion list items.
+
+### fields.htmlAttributes `object`
+{:#members:fields-htmlAttributes}
+
+Defines the HTML attributes such as id, class, styles for the item.
+
+### fields.key `string`
+{:#members:fields-key}
+
+Defines the specific field name which contains unique key values for the list items.
+
+### fields.text `string`
+{:#members:fields-text}
+
+Defines the specific field name in the data source to load the suggestion list with data.
 
 #### Example 
 

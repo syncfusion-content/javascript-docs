@@ -368,48 +368,60 @@ $("#countrylist").ejListBox({
 
 {% endhighlight %}
 
-<table>
-<tr>
-<td>
-fields.checkBy </td><td>
-Defines the specific field name which contains Boolean values to specify whether the list items to be checked by default or not.</td></tr>
-<tr>
-<td>
-fields.groupBy </td><td>
-The grouping in the ListBox widget can be defined using this field. </td></tr>
-<tr>
-<td>
-fields.htmlAttributes</td><td>
-Defines the HTML attributes such as id, class, styles for the specific ListBox item.</td></tr>
-<tr>
-<td>
-fields.id</td><td>
-Defines the specific field name which contains id values for the list items.</td></tr>
-<tr>
-<td>
-fields.imageUrl</td><td>
-Defines the imageURL for the image to be displayed in the ListBox item.</td></tr>
-<tr>
-<td>
-fields.imageAttributes</td><td>
-Defines the image attributes such as height, width, styles and so on.</td></tr>
-<tr>
-<td>
-selectBy</td><td>
-Defines the specific field name which contains Boolean values to specify whether the list items to be selected by default or not.</td></tr>
-<tr>
-<td>
-spriteCssClass</td><td>
-Defines the sprite CSS class for the image to be displayed.</td></tr>
-<tr>
-<td>
-tableName</td><td>
-Defines the table name to get the specific set of list items to be loaded in the ListBox widget while rendering with remote data.</td></tr>
-<tr>
-<td>
-text</td><td>
-Defines the specific field name in the data source to load the list with data.</td></tr>
-</table>
+###fields.checkBy `boolean`
+{:#members:fields-checkBy}
+
+Defines the specific field name which contains Boolean values to specify whether the list items to be checked by default or not.
+
+###fields.groupBy `string`
+{:#members:fields-groupBy}
+
+The grouping in the ListBox widget can be defined using this field. 
+
+###fields.htmlAttributes `object`
+{:#members:fields-htmlAttributes}
+
+Defines the HTML attributes such as id, class, styles for the specific ListBox item.
+
+###fields.id `string`
+{:#members:fields-id}
+
+Defines the specific field name which contains id values for the list items.
+
+###fields.imageUrl `string`
+{:#members:fields-imageUrl}
+
+Defines the imageURL for the image to be displayed in the ListBox item.
+
+###fields.imageAttributes `string`
+{:#members:fields-imageAttributes}
+
+Defines the image attributes such as height, width, styles and so on.
+
+###fields.selectBy `boolean`
+{:#members:fields-selectBy}
+
+Defines the specific field name which contains Boolean values to specify whether the list items to be selected by default or not.
+
+###fields.spriteCssClass `string`
+{:#members:fields-spriteCssClass}
+
+Defines the sprite CSS class for the image to be displayed.
+
+###fields.tableName `string`
+{:#members:fields-tableName}
+
+Defines the table name to get the specific set of list items to be loaded in the ListBox widget while rendering with remote data.
+
+###fields.text `string`
+{:#members:fields-text}
+
+Defines the specific field name in the data source to load the list with data.
+
+###fields.value `string`
+{:#members:fields-value}
+
+Defines the specific field name in the data source to load the list with data value property.
 
 
 ### height `string`
