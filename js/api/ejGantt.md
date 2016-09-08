@@ -566,7 +566,7 @@ Specifies the data source fields to be displayed in the drag tooltip.
                     
 <div id="gantt"></div> 
 <script>          
-        $("#gantt").ejGantt({  dragTooltip : { tooltipItems: "TaskName","TaskID","StartDate" } });
+        $("#gantt").ejGantt({  dragTooltip : { tooltipItems: ["TaskName","TaskID","StartDate"] } });
 </script>
 
 {% endhighlight %}
@@ -3232,7 +3232,7 @@ Specifies the mapping property path for task name in datasource
 Specifies the toolbarSettings options.
 
 
-### toolbarSettings.showToolBar `boolean`
+### toolbarSettings.showToolbar `boolean`
 {:#members:toolbarsettings-showtoolbar}
 
 Specifies the state of enabling or disabling toolbar
@@ -3252,7 +3252,7 @@ Specifies the state of enabling or disabling toolbar
  
 <div id="gantt"></div> 
 <script>  
-        $("#gantt").ejGantt({ showToolBar:  true });                     
+        $("#gantt").ejGantt({ showToolbar:  true });                     
 </script>
 
 {% endhighlight %}
