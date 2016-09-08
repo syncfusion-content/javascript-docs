@@ -165,7 +165,7 @@ Enables the ribbon resize feature.
 ### isResponsive `boolean`
 {:#members:isresponsive}
 
-When set to true, adapts the Ribbon layout to fit the screen size of devices on which it renders.
+When set to true, adapts the Ribbon layout to fit the screen size of devices on which it renders.allowResizing is a deprecated property.
 
 #### Default Value
 
