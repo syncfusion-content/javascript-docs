@@ -2886,7 +2886,7 @@ This method is used to get immediate child nodes of a node in TreeView control. 
 </tr>
 <tr>
 <td class="name">includeNestedChild</td>
-<td class="type"><span class="param-type">bool</span></td>
+<td class="type"><span class="param-type">boolean</span></td>
 <td class="description">Weather include nested child nodes of TreeView node</td>
 </tr>
 </tbody>

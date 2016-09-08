@@ -2094,8 +2094,6 @@ Shows/hides the toolbar.
 ### toolbarSettings.toolbarItems `array`
 {:#members:toolbarsettings-toolbaritems}
 
-<ts name = "ej.TreeGrid.ToolbarItems"/>
-
 Specifies the list of toolbar items to be rendered in TreeGrid toolbar
 
 <table class="params">
