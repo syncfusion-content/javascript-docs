@@ -9,13 +9,7 @@ keywords: RTE, ejRTE, syncfusion, RTE api
 
 # ejRTE
 
-
-
-
 Rich text editor is a component that help you to display or edit the content including tables, hyperlinks, paragraphs, lists, video, and images. The editor supports file and folder management using FileExplorer component.
-
-
-
 
 #### Syntax
 
@@ -24,10 +18,6 @@ Rich text editor is a component that help you to display or edit the content inc
 $(element).ejRTE(options)
 
 {% endhighlight %}
-
-
-
-
 
 <table class="params">
 <thead>
@@ -140,27 +130,16 @@ $("#rteSample").ejRTE();
 
 ### Members
 
-
-
 ### allowEditing `boolean`
 {:#members:allowediting}
 
 Enables/disables the editing of the content.
 
-
 #### Default Value
-
-
-
 
 * True
 
-
-
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -180,26 +159,13 @@ Enables/disables the editing of the content.
 ### allowKeyboardNavigation `boolean`
 {:#members:allowkeyboardnavigation}
 
-
-
-
-
 RTE control can be accessed through the keyboard shortcut keys.
-
 
 #### Default Value
 
-
-
-
 * True
 
-
-
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -215,31 +181,16 @@ RTE control can be accessed through the keyboard shortcut keys.
 </script>
 {% endhighlight %}
 
-
-
-
 ### autoFocus  `boolean`
 {:#members:autoFocus }
 
-
-
-
 When the property is set to true, it focuses the RTE at the time of rendering.
-
 
 #### Default Value
 
-
-
-
 * false
 
-
-
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -255,31 +206,16 @@ When the property is set to true, it focuses the RTE at the time of rendering.
     </script>
 {% endhighlight %}
 
-
-
-
 ### autoHeight  `boolean`
 {:#members:autoHeight }
 
-
-
-
 Based on the content size, its height is adjusted instead of adding the scrollbar.
-
 
 #### Default Value
 
-
-
-
 * false
 
-
-
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -295,34 +231,17 @@ Based on the content size, its height is adjusted instead of adding the scrollba
 </script>
 {% endhighlight %}
 
-
-
-
 ### colorCode `object`
 {:#members:colorcode}
 
-
-
-
-
 Sets the colorCode to display the color of the fontColor and backgroundColor in the font tools of the RTE.
 
-
 #### Default Value
-
-
-
 
 * ["000000", "FFFFFF", "C4C4C4", "ADADAD", "595959", "262626", "4f81bd", "dbe5f1", "b8cce4", "95b3d7", "366092", "244061", "c0504d", "f2dcdb", "e5b9b7", "d99694", "953734",
 "632423", "9bbb59", "ebf1dd", "d7e3bc", "c3d69b", "76923c", "4f6128", "8064a2", "e5e0ec", "ccc1d9", "b2a2c7", "5f497a", "3f3151", "f79646", "fdeada", "fbd5b5", "fac08f","e36c09", "974806"]
 
-
-
-
-
 #### Example
-
-
 
 {% highlight html %}
  <textarea   id="rteSample">     
@@ -346,31 +265,16 @@ Sets the colorCode to display the color of the fontColor and backgroundColor in 
     </script>
 {% endhighlight %}
 
-
-
-
 ### colorPaletteColumns `number`
 {:#members:colorpalettecolumns}
 
-
-
-
 The number of columns given are rendered in the color palate popup.
-
 
 #### Default Value
 
-
-
-
 * 6
 
-
-
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -392,30 +296,16 @@ The number of columns given are rendered in the color palate popup.
     </script>
 {% endhighlight %}
 
-
-
-
 ### colorPaletteRows `number`
 {:#members:colorpaletterows}
 
-
-
 The number of rows given are rendered in the color palate popup.
-
 
 #### Default Value
 
-
-
-
 * 6
 
-
-
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -437,30 +327,16 @@ The number of rows given are rendered in the color palate popup.
 </script>
 {% endhighlight %}
 
-
-
-
 ### cssClass `string`
 {:#members:cssclass}
-
-
-
 
 Sets the root class for the RTE theme. This cssClass API helps the usage of custom skinning option for the RTE control by including this root class in CSS.
 
 #### Default Value
 
-
-
-
 * ""
 
-
-
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -476,32 +352,16 @@ Sets the root class for the RTE theme. This cssClass API helps the usage of cust
 </script>
 {% endhighlight %}
 
-
-
-
 ### enabled `boolean`
 {:#members:enabled}
 
-
-
-
-
 Enables/disables the RTE control’s accessibility or interaction.
-
 
 #### Default Value
 
-
-
-
 * True
 
-
-
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -517,32 +377,16 @@ Enables/disables the RTE control’s accessibility or interaction.
 </script>
 {% endhighlight %}
 
-
-
-
 ### enableHtmlEncode  `boolean`
 {:#members:enableHtmlEncode }
 
-
-
-
-
 When the property is set to true, it returns the encrypted text.
-
 
 #### Default Value
 
-
-
-
 * false
 
-
-
-
 #### Example
-
-
 
 {% highlight html %}
  <textarea   id="rteSample">     
@@ -557,31 +401,16 @@ When the property is set to true, it returns the encrypted text.
 </script>
 {% endhighlight %}
 
-
-
-
 ### enablePersistence `boolean`
 {:#members:enablepersistence}
 
-
-
-
 Maintain the values of the RTE after page reload.
-
 
 #### Default Value
 
-
-
-
 * false
 
-
-
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -597,32 +426,16 @@ Maintain the values of the RTE after page reload.
 </script>
 {% endhighlight %}
 
-
-
-
 ### enableResize `boolean`
 {:#members:enableresize}
 
-
-
-
-
 Shows the resize icon and enables the resize option in the RTE.
-
 
 #### Default Value
 
-
-
-
 * True
 
-
-
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -638,31 +451,16 @@ Shows the resize icon and enables the resize option in the RTE.
 </script>
 {% endhighlight %}
 
-
-
-
 ### enableRTL `boolean`
 {:#members:enablertl}
 
-
-
-
 Shows the RTE in the RTL direction.
-
 
 #### Default Value
 
-
-
-
 * false
 
-
-
-
 #### Example
-
-
 
 {% highlight html %}
  <textarea   id="rteSample">     
@@ -677,31 +475,16 @@ Shows the RTE in the RTL direction.
 </script>
 {% endhighlight %}
 
-
-
 ### enableXHTML `boolean`
 {:#members:enablexhtml}
 
-
-
-
-
 Formats the contents based on the XHTML rules.
-
 
 #### Default Value
 
-
-
-
 * false
 
-
-
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -717,32 +500,16 @@ Formats the contents based on the XHTML rules.
 </script>
 {% endhighlight %}
 
-
-
-
 ### enableTabKeyNavigation  `boolean`
-{:#members:enableTabKeyNavigation }
-
-
-
-
+{:#members:enabletabkeynavigation }
 
 Enables the tab key action with the RichTextEditor content. 
 
-
 #### Default Value
-
-
-
 
 * True
 
-
-
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -758,31 +525,16 @@ Enables the tab key action with the RichTextEditor content.
 </script>
 {% endhighlight %}
 
-
-
-
-
 ### externalCSS `string`
 {:#members:externalcss}
 
-
-
-
 Load the external CSS file inside Iframe.
-
 
 #### Default Value
 
-
-
-
 * null
 
-
-
-
 #### Example
-
 
 {% highlight html %}
  
@@ -798,31 +550,16 @@ Load the external CSS file inside Iframe.
 </script>
 {% endhighlight %}
 
-
-
 ### fileBrowser `object`
 {:#members:filebrowser}
 
-
-
-
-
 This API allows to enable the file browser support in the RTE control to browse, create, delete and upload the files in the specified current directory.
-
 
 #### Default Value
 
-
-
-
 * null
 
-
-
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -842,31 +579,16 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/api/fileoperation/",
 </script>
 {% endhighlight %}
 
-
-
-
 ### fileBrowser.ajaxAction `string`
 {:#members:filebrowser-ajaxaction}
 
-
-
-
 This API is used to receive the server-side handler for file related operations.
-
 
 #### Default Value
 
-
-
-
 * ""
 
-
-
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -885,22 +607,12 @@ This API is used to receive the server-side handler for file related operations.
 </script>
 {% endhighlight %}
 
-
-
-
 ### fileBrowser.extensionAllow `string`
 {:#members:filebrowser-extensionallow}
 
-
-
-
 Specifies the file type extension shown in the file browser window.
 
-
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -919,20 +631,12 @@ Specifies the file type extension shown in the file browser window.
 </script>
 {% endhighlight %}
 
-
-
-
 ### fileBrowser.filePath `string`
 {:#members:filebrowser-filepath}
 
-
 Specifies the directory to perform operations like create, delete and rename folder and files, and upload the selected files to the current directory.
 
-
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -951,20 +655,12 @@ Specifies the directory to perform operations like create, delete and rename fol
 </script>
 {% endhighlight %}
 
-
-
 ### fontName `object`
 {:#members:fontname}
 
-
-
 Sets the fontName in the RTE.
 
-
 #### Default Value
-
-
-
 
 * {text: "Segoe UI", value: "Segoe UI" },
 {text: "Arial", value: "Arial,Helvetica,sans-serif" },
@@ -977,13 +673,7 @@ Sets the fontName in the RTE.
 {text: "Trebuchet MS", value: "Trebuchet MS,Helvetica,sans-serif" }, 
 {text: "Verdana", value: "Verdana,Geneva,sans-serif"}
 
-
-
-
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -1011,21 +701,12 @@ $("#rteSample").ejRTE({ fontName: [
                 
 {% endhighlight %}
 
-
-
 ### fontSize `object`
 {:#members:fontsize}
 
-
-
-
 Sets the fontSize in the RTE.
 
-
 #### Default Value
-
-
-
 
 * { text: "1", value: "1" },
 { text: "2 (10pt)", value: "2" },
@@ -1035,12 +716,7 @@ Sets the fontSize in the RTE.
 { text: "6 (24pt)", value: "6" },
 { text: "7 (36pt)", value: "7" }
 
-
-
-
 #### Example
-
-
 
 {% highlight html %}
 
@@ -1085,23 +761,12 @@ $("#rteSample").ejRTE({ fontSize: [
 ]});
 </script> {% endhighlight %}
 
-
-
-
 ### format `string`
 {:#members:format}
 
-
-
-
-
 Sets the format in the RTE.
 
-
 #### Default Value
-
-
-
 
 * { text: "Paragraph", value: "&lt;p&gt;", spriteCssClass: "e-paragraph" },
 { text: "Quotation", value: "&lt;blockquote&gt;", spriteCssClass: "e-quotation" },
@@ -1112,13 +777,7 @@ Sets the format in the RTE.
 { text: "Heading 5", value: "&lt;h5&gt;", spriteCssClass: "e-h5" },
 { text: "Heading 6", value: "&lt;h6&gt;", spriteCssClass: "e-h6"}
 
-
-
-
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -1146,26 +805,14 @@ $("#rteSample").ejRTE({format: [
 ### height `string`  `number`
 {:#members:height}
 
-
-
-
-
 Defines the height of the RTE textbox.
 
 
 #### Default Value
 
-
-
-
 * 370
 
-
-
-
 #### Example
-
-
 
 {% highlight html %}
 
@@ -1181,32 +828,16 @@ Defines the height of the RTE textbox.
 </script>
 {% endhighlight %}
 
-
-
-
 ### htmlAttributes `object`
 {:#members:htmlattributes}
 
-
-
-
-
 Specifies the HTML Attributes of the ejRTE.
-
 
 #### Default Value
 
-
-
-
 * {}
 
-
-
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -1222,32 +853,16 @@ Specifies the HTML Attributes of the ejRTE.
 </script>
 {% endhighlight %}
 
-
-
-
 ### iframeAttributes `object`
 {:#members:iframeattributes}
 
-
-
-
-
 Sets the given attributes to the iframe body element.
-
 
 #### Default Value
 
-
-
-
 * {}
 
-
-
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -1263,32 +878,16 @@ Sets the given attributes to the iframe body element.
 </script>
 {% endhighlight %}
 
-
-
-
 ### imageBrowser `object`
 {:#members:imagebrowser}
 
-
-
-
-
 This API allows the image browser to support in the RTE control to browse, create, delete, and upload the image files to the specified current directory.
-
 
 #### Default Value
 
-
-
-
 * null
 
-
-
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -1308,23 +907,12 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/api/fileoperation/",
 </script>
 {% endhighlight %}
 
-
-
-
 ### imageBrowser.ajaxAction `string`
 {:#members:imagebrowser-ajaxaction}
 
-
-
-
-
 This API is used to receive the server-side handler for the file related operations.
 
-
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -1342,23 +930,12 @@ $("#rteSample").ejRTE({  imageBrowser: {
 </script>
 {% endhighlight %}
 
-
-
-
 ### imageBrowser.extensionAllow `string`
 {:#members:imagebrowser-extensionallow}
 
-
-
-
-
 Specifies the file type extension shown in the image browser window.
 
-
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -1377,23 +954,12 @@ Specifies the file type extension shown in the image browser window.
 </script>
 {% endhighlight %}
 
-
-
-
 ### imageBrowser.filePath `string`
 {:#members:imagebrowser-filepath}
 
-
-
-
-
 Specifies the directory to perform operations like create, delete and rename folder and files, and upload the selected images to the current directory.
 
-
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -1412,32 +978,16 @@ Specifies the directory to perform operations like create, delete and rename fol
 </script>
 {% endhighlight %}
 
-
-
-
 ### isResponsive `boolean`
 {:#members:isresponsive}
 
-
-
-
-
 Enables/disables responsive support for the RTE control toolbar items during the window resizing time.
-
 
 #### Default Value
 
-
-
-
 * false
 
-
-
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -1453,32 +1003,17 @@ Enables/disables responsive support for the RTE control toolbar items during the
 </script>
 {% endhighlight %}
 
-
-
-
 ### locale `string`
 {:#members:locale}
-
-
-
-
 
 Sets the culture in the RTE when you set the localization values are needs to be assigned to the corresponding text as follows.  
 
 
 #### Default Value
 
-
-
-
 * "en-US"
 
-
-
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -1588,31 +1123,16 @@ ej.RTE.Locale["en-US"] = {
 </script>
 {% endhighlight %}
 
-
-
-
 ### maxHeight `string`  `number`
 {:#members:maxheight}
 
-
-
-
 Sets the maximum height for the RTE outer wrapper element.
-
 
 #### Default Value
 
-
-
-
 * null
 
-
-
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -1628,31 +1148,16 @@ Sets the maximum height for the RTE outer wrapper element.
 </script>
 {% endhighlight %}
 
-
-
-
 ### maxLength `number`
 {:#members:maxlength}
 
-
-
-
 Sets the maximum length for the RTE outer wrapper element.
-
 
 #### Default Value
 
-
-
-
 * 7000
 
-
-
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -1668,32 +1173,16 @@ Sets the maximum length for the RTE outer wrapper element.
 </script>
 {% endhighlight %}
 
-
-
-
 ### maxWidth `string`  `number`
 {:#members:maxwidth}
 
-
-
-
-
 Sets the maximum width for the RTE outer wrapper element.
-
 
 #### Default Value
 
-
-
-
 * null
 
-
-
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -1709,32 +1198,16 @@ Sets the maximum width for the RTE outer wrapper element.
 </script>
 {% endhighlight %}
 
-
-
-
 ### minHeight `string`  `number`
 {:#members:minheight}
 
-
-
-
-
 Sets the minimum height for the RTE outer wrapper element.
-
 
 #### Default Value
 
-
-
-
 * 280
 
-
-
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -1750,31 +1223,16 @@ Sets the minimum height for the RTE outer wrapper element.
 </script>
 {% endhighlight %}
 
-
-
-
 ### minWidth `string`  `number`
 {:#members:minwidth}
 
-
-
-
 Sets the minimum width for the RTE outer wrapper element.
-
 
 #### Default Value
 
-
-
-
 * 400
 
-
-
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -1790,32 +1248,16 @@ Sets the minimum width for the RTE outer wrapper element.
 </script>
 {% endhighlight %}
 
-
-
-
 ### name `string`
 {:#members:name}
 
-
-
-
-
 Sets the name in the RTE. When the name value is not initialized, the ID value is assigned to the name.
-
 
 #### Default Value
 
-
-
-
 * ""
 
-
-
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -1831,32 +1273,16 @@ Sets the name in the RTE. When the name value is not initialized, the ID value i
 </script>
 {% endhighlight %}
 
-
-
-
 ### showClearAll `boolean`
 {:#members:showclearall}
 
-
-
-
-
 Shows ClearAll icon in the RTE footer.
-
 
 #### Default Value
 
-
-
-
 * false
 
-
-
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -1872,31 +1298,16 @@ Shows ClearAll icon in the RTE footer.
 </script>
 {% endhighlight %}
 
-
-
 ### showClearFormat `boolean`
 {:#members:showclearformat}
 
-
-
-
-
 Shows the clear format in the RTE footer.
-
 
 #### Default Value
 
-
-
-
 * true
 
-
-
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -1912,31 +1323,16 @@ Shows the clear format in the RTE footer.
 </script>
 {% endhighlight %}
 
-
-
-
 ### showCustomTable `boolean`
 {:#members:showcustomtable}
 
-
-
-
 Shows the Custom Table in the RTE.
-
 
 #### Default Value
 
-
-
-
 * True
 
-
-
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -1952,31 +1348,16 @@ Shows the Custom Table in the RTE.
 </script>
 {% endhighlight %}
 
-
-
-
 ### showContextMenu  `boolean`
-{:#members:showContextMenu}
+{:#members:showcontextmenu}
 
-
-
-
-Shows custom contextmenu with the RTE. 
-
+The showContextMenu property helps to enable custom context menu within editor area. 
 
 #### Default Value
 
-
-
-
 * True
 
-
-
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -1993,33 +1374,16 @@ Shows custom contextmenu with the RTE.
 
 {% endhighlight %}
 
-
-
-
-
 ### showDimensions `boolean`
 {:#members:showdimensions}
 
-
-
-
-
 This API is used to set the default dimensions for the image and video. When this property is set to true, the image and video dialog displays the dimension option.
-
 
 #### Default Value
 
-
-
-
 * false
 
-
-
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -2035,31 +1399,16 @@ This API is used to set the default dimensions for the image and video. When thi
 </script>
 {% endhighlight %}
 
-
-
-
 ### showFontOption `boolean`
 {:#members:showfontoption}
 
-
-
-
 Shows the FontOption in the RTE.
-
 
 #### Default Value
 
-
-
-
 * True
 
-
-
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -2075,32 +1424,16 @@ Shows the FontOption in the RTE.
 </script>
 {% endhighlight %}
 
-
-
-
 ### showFooter `boolean`
 {:#members:showfooter}
 
-
-
-
-
 Shows footer in the RTE. When the footer is enabled, it displays the HTML tag, word Count, character count, clear format, resize icon and clear all the content icons, by default.
-
 
 #### Default Value
 
-
-
-
 * false
 
-
-
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -2116,31 +1449,16 @@ Shows footer in the RTE. When the footer is enabled, it displays the HTML tag, w
 </script>
 {% endhighlight %}
 
-
-
-
 ### showHtmlSource `boolean`
 {:#members:showhtmlsource}
 
-
-
-
 Shows the HtmlSource in the RTE footer.
-
 
 #### Default Value
 
-
-
-
 * false
 
-
-
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -2156,31 +1474,16 @@ Shows the HtmlSource in the RTE footer.
 </script>
 {% endhighlight %}
 
-
-
-
 ### showHtmlTagInfo `boolean`
 {:#members:showhtmltaginfo}
 
-
-
-
 When the cursor is placed or when the text is selected in the RTE, it displays the tag info in the footer.
-
 
 #### Default Value
 
-
-
-
 * True
 
-
-
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -2196,31 +1499,16 @@ When the cursor is placed or when the text is selected in the RTE, it displays t
 </script>
 {% endhighlight %}
 
-
-
-
 ### showToolbar `boolean`
 {:#members:showtoolbar}
 
-
-
-
 Shows the toolbar in the RTE.
-
 
 #### Default Value
 
-
-
-
 * True
 
-
-
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -2236,29 +1524,16 @@ Shows the toolbar in the RTE.
 </script>
 {% endhighlight %}
 
-
-
-
 ### showCharCount `boolean`
 {:#members:showCharCount }
 
-
 Counts the total characters and displays it in the RTE footer.
-
 
 #### Default Value
 
-
-
-
 * True
 
-
-
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -2274,18 +1549,17 @@ Counts the total characters and displays it in the RTE footer.
 </script>
 {% endhighlight %}
 
-
 ### showRoundedCorner  `boolean`
-{:#members:showroundedcorner  }
- 
-Displays the RTE with rounded corners. 
- 
+{:#members:showroundedcorner }
+
+Enables or disables rounded corner UI look for RTE.
+
 #### Default Value
- 
+
 * false
- 
+
 #### Example
- 
+
 {% highlight html %}
  
 <textarea   id="rteSample">     
@@ -2294,37 +1568,22 @@ Displays the RTE with rounded corners.
         client side. Customers can easily edit the contents and get the HTML content for
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
-        area. </p></textarea ><script> 
-        
-    $("#rteSample").ejRTE({showRoundedCorner: true });
+        area. </p></textarea ><script>
+    // Initializes the RTE with the specified showCharCount value.
+    $("#rteSample").ejRTE({showRoundedCorner: false });
 </script>
 {% endhighlight %}
-
-
-
 
 ### showWordCount  `boolean`
 {:#members:showWordCount  }
 
-
-
-
 Counts the total words and displays it in the RTE footer.
-
 
 #### Default Value
 
-
-
-
 * True
 
-
-
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -2340,32 +1599,16 @@ Counts the total words and displays it in the RTE footer.
 </script>
 {% endhighlight %}
 
-
-
-
 ### tableColumns `number`
 {:#members:tablecolumns}
 
-
-
-
-
 The given number of columns render the insert table pop.
-
 
 #### Default Value
 
-
-
-
 * 10
 
-
-
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -2381,31 +1624,16 @@ The given number of columns render the insert table pop.
 </script>
  {% endhighlight %}
 
-
-
-
 ### tableRows `number`
 {:#members:tablerows}
 
-
-
-
 The given number of rows render the insert table pop.
-
 
 #### Default Value
 
-
-
-
 * 8
 
-
-
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -2421,22 +1649,13 @@ The given number of rows render the insert table pop.
 </script>
 {% endhighlight %}
 
-
-
-
 ### tools `object`
 {:#members:tools}
-
-
-
 
 Sets the tools in the RTE and gets the inner display order of the corresponding group element. Tools are dependent on the toolsList property. 
 
 
 #### Default Value
-
-
-
 
 * formatStyle: ["format"], 
 style: ["bold", "italic", "underline", "strikethrough"], 
@@ -2451,13 +1670,7 @@ tables: ["createTable", "addRowAbove", "addRowBelow", "addColumnLeft", addColumn
 view:[“fullScreen”,"zoomIn","zoomOut"],
 print:["print"]
 
-
-
-
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -2492,22 +1705,12 @@ print:["print"]
     </script>
 {% endhighlight %}
 
-
-
-
 ### tools.alignment `object`
 {:#members:tools-alignment}
 
-
-
 Specifies the alignment tools and the display order of this tool in the RTE toolbar.
 
-
-
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -2527,22 +1730,12 @@ Specifies the alignment tools and the display order of this tool in the RTE tool
     </script>
 {% endhighlight %}
 
-
-
-
 ### tools.casing  `array`
 {:#members:tools-casing }
 
-
-
 Specifies the casing tools and the display order of this tool in the RTE toolbar.
 
-
-
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -2562,22 +1755,12 @@ Specifies the casing tools and the display order of this tool in the RTE toolbar
     </script>
 {% endhighlight %}
 
-
-
-
 ### tools.clear   `array`
 {:#members:tools-clear  }
 
-
-
 Specifies the clear tools and the display order of this tool in the RTE toolbar.
 
-
-
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -2597,23 +1780,12 @@ Specifies the clear tools and the display order of this tool in the RTE toolbar.
     </script>
 {% endhighlight %}
 
-
-
-
 ### tools.clipboard `array`
 {:#members:tools-clipboard}
 
-
-
-
 Specifies the clipboard tools and the display order of this tool in the RTE toolbar.
 
-
-
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -2633,23 +1805,12 @@ Specifies the clipboard tools and the display order of this tool in the RTE tool
     </script>
 {% endhighlight %}
 
-
-
-
 ### tools.edit `array`
 {:#members:tools-edit}
 
-
-
-
 Specifies the edit tools and the displays tool in the RTE toolbar.
 
-
-
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -2669,21 +1830,12 @@ Specifies the edit tools and the displays tool in the RTE toolbar.
     </script>
 {% endhighlight %}
 
-
-
-
 ### tools.doAction `array`
 {:#members:tools-doaction}
 
-
-
 Specifies the doAction tools and the display order of this tool in the RTE toolbar.
 
-
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -2702,21 +1854,12 @@ Specifies the doAction tools and the display order of this tool in the RTE toolb
     </script>
 {% endhighlight %}
 
-
-
 ### tools.effects `array`
 {:#members:tools-effects}
 
-
-
-
 Specifies the effect of tools and the display order of this tool in RTE toolbar.
 
-
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -2733,21 +1876,12 @@ effects: ["superscript", "subscript"]
 }});
 </script>{% endhighlight %}
 
-
-
 ### tools.font `array`
 {:#members:tools-font}
 
-
-
-
 Specifies the font tools and the display order of this tool in the RTE toolbar.
 
-
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -2767,23 +1901,15 @@ Specifies the font tools and the display order of this tool in the RTE toolbar.
     </script>
 {% endhighlight %}
 
-
-
 ### tools.formatStyle `array`
 {:#members:tools-formatstyle}
 
-
-
 Specifies the formatStyle tools and the display order of this tool in the RTE toolbar.
-
-
 
 #### Example
 
-
-
 {% highlight html %}
- 
+
 <textarea id="rteSample">     
 <p><b>Description:</b></p>
         <p>The Rich Text Editor (RTE) control is easy to render in the
@@ -2800,20 +1926,12 @@ Specifies the formatStyle tools and the display order of this tool in the RTE to
     </script>
 {% endhighlight %}
 
-
-
-
 ### tools.images `array`
 {:#members:tools-images}
 
-
 Specifies the image tools and the display order of this tool in the RTE toolbar.
 
-
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -2833,20 +1951,12 @@ Specifies the image tools and the display order of this tool in the RTE toolbar.
     </script>
 {% endhighlight %}
 
-
-
-
 ### tools.indenting `array`
 {:#members:tools-indenting}
 
-
 Specifies the indent tools and the display order of this tool in the RTE toolbar.
 
-
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -2866,19 +1976,12 @@ Specifies the indent tools and the display order of this tool in the RTE toolbar
     </script>
 {% endhighlight %}
 
-
-
-
 ### tools.links `array`
 {:#members:tools-links}
 
-
 Specifies the link tools and the display order of this tool in the RTE toolbar.
 
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -2898,21 +2001,12 @@ Specifies the link tools and the display order of this tool in the RTE toolbar.
     </script>
 {% endhighlight %}
 
-
-
-
 ### tools.lists `array`
 {:#members:tools-lists}
 
-
-
 Specifies the list tools and the display order of this tool in the RTE toolbar.
 
-
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -2932,19 +2026,12 @@ Specifies the list tools and the display order of this tool in the RTE toolbar.
     </script>
 {% endhighlight %}
 
-
-
 ### tools.media `array`
 {:#members:tools-media}
 
-
 Specifies the media tools and the display order of this tool in the RTE toolbar.
 
-
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -2964,21 +2051,12 @@ Specifies the media tools and the display order of this tool in the RTE toolbar.
     </script>
 {% endhighlight %}
 
-
-
-
 ### tools.style `array`
 {:#members:tools-style}
 
-
-
 Specifies the style tools and the display order of this tool in the RTE toolbar.
 
-
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -2998,21 +2076,12 @@ Specifies the style tools and the display order of this tool in the RTE toolbar.
     </script>
 {% endhighlight %}
 
-
-
-
 ### tools.tables `array`
 {:#members:tools-tables}
 
-
-
 Specifies the table tools and the display order of this tool in the RTE toolbar.
 
-
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -3032,22 +2101,14 @@ Specifies the table tools and the display order of this tool in the RTE toolbar.
     </script>
 {% endhighlight %}
 
-
-
 ### tools.view `array`
 {:#members:tools-view}
 
-
 Specifies the view tools and the display order of this tool in the RTE toolbar.
-
-
 
 #### Example
 
-
-
 {% highlight html %}
- 
  
 <textarea id="rteSample">     
 <p><b>Description:</b></p>
@@ -3065,22 +2126,14 @@ Specifies the view tools and the display order of this tool in the RTE toolbar.
     </script>
 {% endhighlight %}
 
-
-
 ### tools.print `array`
 {:#members:tools-print}
 
-
 Specifies the print tools and the display order of this tool in the RTE toolbar.
-
-
 
 #### Example
 
-
-
 {% highlight html %}
- 
  
 <textarea id="rteSample">     
 <p><b>Description:</b></p>
@@ -3101,17 +2154,11 @@ Specifies the print tools and the display order of this tool in the RTE toolbar.
 ### tools.customOrderedList `array`
 {:#members:tools-customOrderedList }
 
-
 Specifies the customOrderedList tools and the display order of this tool in the RTE toolbar.
-
-
 
 #### Example
 
-
-
 {% highlight html %} 
-
 
 <textarea id="rteSample">     
 <p><b>Description:</b></p>
@@ -3135,19 +2182,12 @@ Specifies the customOrderedList tools and the display order of this tool in the 
     </script>
 {% endhighlight %}
 
-
-
 ### tools.customOrderedList.name `string`
 {:#members:tools-customOrderedList-name }
 
-
 Specifies the name for customOrderedList item.
 
-
-
 #### Example
-
-
 
 {% highlight html %} 
 
@@ -3174,19 +2214,12 @@ Specifies the name for customOrderedList item.
     </script>
 {% endhighlight %}
 
-
-
 ### tools.customOrderedList.tooltip `string`
 {:#members:tools-customOrderedList-tooltip }
 
-
 Specifies the title for customOrderedList item.
 
-
-
 #### Example
-
-
 
 {% highlight html %} 
 
@@ -3213,19 +2246,12 @@ Specifies the title for customOrderedList item.
     </script>
 {% endhighlight %}
 
-
-
 ### tools.customOrderedList.css `string`
 {:#members:tools-customOrderedList-css }
 
-
 Specifies the styles for customOrderedList item.
 
-
-
 #### Example
-
-
 
 {% highlight html %} 
 
@@ -3252,19 +2278,12 @@ Specifies the styles for customOrderedList item.
     </script>
 {% endhighlight %}
 
-
-
 ### tools.customOrderedList.text `string`
 {:#members:tools-customOrderedList-text }
 
-
 Specifies the text for customOrderedList item.
 
-
-
 #### Example
-
-
 
 {% highlight html %} 
 
@@ -3291,19 +2310,12 @@ Specifies the text for customOrderedList item.
     </script>
 {% endhighlight %}
 
-
-
 ### tools.customOrderedList.listStyle `string`
 {:#members:tools-customOrderedList-listStyle }
 
-
 Specifies the list style for customOrderedList item.
 
-
-
 #### Example
-
-
 
 {% highlight html %} 
 
@@ -3330,19 +2342,12 @@ Specifies the list style for customOrderedList item.
     </script>
 {% endhighlight %}
 
-
-
 ### tools.customOrderedList.listImage `string`
 {:#members:tools-customOrderedList-listImage }
 
-
 Specifies the image for customOrderedList item.
 
-
-
 #### Example
-
-
 
 {% highlight html %} 
 
@@ -3369,22 +2374,14 @@ Specifies the image for customOrderedList item.
     </script>
 {% endhighlight %}
 
-
-
 ### tools.customUnorderedList `array`
 {:#members:tools-customUnorderedList }
 
-
 Specifies the customUnOrderedList tools and the display order of this tool in the RTE toolbar.
-
-
 
 #### Example
 
-
-
 {% highlight html %} 
-
 
 <textarea id="rteSample">     
 <p><b>Description:</b></p>
@@ -3408,22 +2405,14 @@ Specifies the customUnOrderedList tools and the display order of this tool in th
     </script>
 {% endhighlight %}
 
-
-
 ### tools.customUnorderedList.name `string`
 {:#members:tools-customUnorderedList-name }
 
-
 Specifies the name for customUnorderedList item.
-
-
 
 #### Example
 
-
-
 {% highlight html %} 
-
 
 <textarea id="rteSample">     
 <p><b>Description:</b></p>
@@ -3447,22 +2436,14 @@ Specifies the name for customUnorderedList item.
     </script>
 {% endhighlight %}
 
-
-
 ### tools.customUnorderedList.tooltip `string`
 {:#members:tools-customUnorderedList-tooltip }
 
-
 Specifies the title for customUnorderedList item.
-
-
 
 #### Example
 
-
-
 {% highlight html %} 
-
 
 <textarea id="rteSample">     
 <p><b>Description:</b></p>
@@ -3486,22 +2467,14 @@ Specifies the title for customUnorderedList item.
     </script>
 {% endhighlight %}
 
-
-
 ### tools.customUnorderedList.css `string`
 {:#members:tools-customUnorderedList-css }
 
-
 Specifies the styles for customUnorderedList item.
-
-
 
 #### Example
 
-
-
 {% highlight html %} 
-
 
 <textarea id="rteSample">     
 <p><b>Description:</b></p>
@@ -3525,22 +2498,14 @@ Specifies the styles for customUnorderedList item.
     </script>
 {% endhighlight %}
 
-
-
 ### tools.customUnorderedList.text `string`
 {:#members:tools-customUnorderedList-text }
 
-
 Specifies the text for customUnorderedList item.
-
-
 
 #### Example
 
-
-
 {% highlight html %} 
-
 
 <textarea id="rteSample">     
 <p><b>Description:</b></p>
@@ -3564,19 +2529,12 @@ Specifies the text for customUnorderedList item.
     </script>
 {% endhighlight %}
 
-
-
 ### tools.customUnorderedList.listStyle `string`
 {:#members:tools-customUnorderedList-listStyle }
 
-
 Specifies the list style for customUnorderedList item.
 
-
-
 #### Example
-
-
 
 {% highlight html %} 
 
@@ -3604,21 +2562,14 @@ Specifies the list style for customUnorderedList item.
 {% endhighlight %}
 
 
-
 ### tools.customUnorderedList.listImage `string`
 {:#members:tools-customUnorderedList-listImage }
 
-
 Specifies the image for customUnorderedList item.
-
-
 
 #### Example
 
-
-
 {% highlight html %} 
-
 
 <textarea id="rteSample">     
 <p><b>Description:</b></p>
@@ -3642,29 +2593,16 @@ Specifies the image for customUnorderedList item.
     </script>
 {% endhighlight %}
 
-
-
-
 ### toolsList `array`
 {:#members:toolslist}
 
-
 Specifies the list of groups and order of those groups displayed in the RTE toolbar.  The toolsList property is used to get the root group order and tools property is used to get the inner order of the corresponding groups displayed. When the value is not specified, it gets its default display order and tools.
-
 
 #### Default Value
 
-
-
-
 * ["formatStyle", "font", "style", "effects", "alignment", "lists", "indenting", "clipboard", "doAction", "clear", "links", "images", "media", "tables", "casing","view", "customTools","print","edit"]
 
-
-
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -3681,28 +2619,41 @@ Specifies the list of groups and order of those groups displayed in the RTE tool
 </script>
 {% endhighlight %}
 
+### tooltipSettings   `object`
+{:#members:tooltipsettings  }
 
+Display the hints for the tools in the Toolbar.
 
+#### Default Value
+ 
+
+* { associate: "mouseenter", showShadow: true, position: { stem: { horizontal: "left", vertical: "top" }  }, tip: { size: { width: 5, height: 5 }, isBalloon: false }
+   
+#### Example
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">     
+<p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is easy to render in the
+        client side. Customers can easily edit the contents and get the HTML content for
+        the displayed content. A rich text editor control provides users with a toolbar
+        that helps them to apply rich text formats to the text entered in the text
+        area. </p></textarea ><script>
+    $("#rteSample").ejRTE({tooltipSettings  : { showShadow :false}  });
+</script>
+{% endhighlight %}
+ 
 ### undoStackLimit `number`
 {:#members:undostacklimit}
 
-
 Gets the undo stack limit.
-
 
 #### Default Value
 
-
-
-
 * 50
 
-
-
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -3718,31 +2669,16 @@ Gets the undo stack limit.
 </script>
 {% endhighlight %}
 
-
-
-
 ### value `string`
 {:#members:value}
 
-
-
-
 The given string value is displayed in the editable area.
-
 
 #### Default Value
 
-
-
-
 * null
 
-
-
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -3757,29 +2693,16 @@ The given string value is displayed in the editable area.
 $("#rteSample").ejRTE({value: "The Rich Text Editor (RTE) control is an easy to render in client side. Customer easy to edit the contents, insert table, images and get the HTML content for the displayed content." });
 </script>{% endhighlight %}
 
-
-
 ### validationRules  `object`
 {:#members:validationrules}
 
-
-
-
 Sets the jQuery validation rules to the Rich Text Editor.
-
 
 #### Default Value
 
-
-
-
 * null
 
-
-
-
 #### Example
-
 
 {% highlight html %}
  <textarea   id="rteSample">     
@@ -3815,23 +2738,14 @@ Sets the jQuery validation rules to the Rich Text Editor.
 </script>
 {% endhighlight %}
 
-
-
 ### validationMessage  `object`
 {:#members:validationmessage}
 
 Sets the jQuery validation error message to the Rich Text Editor. 
 
-
 #### Default Value
 
-
-
-
 * null
-
-
-
 
 #### Example
 
@@ -3862,31 +2776,16 @@ Sets the jQuery validation error message to the Rich Text Editor.
 </script>
 {% endhighlight %}
 
-
-
-
-
 ### width `string`  `number`
 {:#members:width}
 
-
-
 Defines the width of the RTE textbox.
-
 
 #### Default Value
 
-
-
-
 * 786
 
-
-
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -3902,26 +2801,15 @@ Defines the width of the RTE textbox.
 </script>{% endhighlight %}
 
 ### zoomStep `string`  `number`
-{:#members:zoomStep}
-
-
+{:#members:zoomstep}
 
 Increases and decreases the contents zoom range in percentage
 
-
 #### Default Value
-
-
-
 
 * 0.05
 
-
-
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -3936,20 +2824,14 @@ Increases and decreases the contents zoom range in percentage
             $("#rteSample").ejRTE({tools: { view:[“zoomIn”,”zoomOut”]}, zoomStep: 0.1 });
 </script>{% endhighlight %}
 
-
 ## Methods
-
 
 ### createRange()
 {:#methods:createRange}
 
-
 Returns the range object.
 
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -3970,17 +2852,9 @@ Returns the range object.
 ### disable()
 {:#methods:disable}
 
-
-
-
-
 Disables the RTE control.
 
-
-
 #### Example
-
-
 
 {% highlight html %}
 <textarea   id="rteSample">
@@ -3996,9 +2870,8 @@ var rteeObj  = $("#rteSample").data("ejRTE");
 rteeObj.disable(); // Disables the RTE
 </script>{% endhighlight %}
 
-
 {% highlight html %}
- 
+
 <textarea   id="rteSample">
 <p><b>Description:</b></p>
 <p>The Rich Text Editor (RTE) control is an easy to render in
@@ -4011,20 +2884,12 @@ $("#rteSample").ejRTE();
 $("#rteSample").ejRTE("disable");// Disables the RTE
 </script>{% endhighlight %}
 
-
-
-
 ### disableToolbarItem()
 {:#methods:disabletoolbaritem}
 
-
 Disables the corresponding tool in the RTE ToolBar.
 
-
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -4047,7 +2912,6 @@ Disables the corresponding tool in the RTE ToolBar.
 </script>
 {% endhighlight %}
 
-
 {% highlight html %}
  
 <textarea   id="rteSample">          
@@ -4068,20 +2932,12 @@ Disables the corresponding tool in the RTE ToolBar.
 </script>
 {% endhighlight %}
 
-
-
-
 ### enable()
 {:#methods:enable}
 
-
 Enables the RTE control.
 
-
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -4098,7 +2954,6 @@ var rteeObj  = $("#rteSample").data("ejRTE");
 rteeObj.enable(); // Enables RTE
 </script>{% endhighlight %}
 
-
 {% highlight html %}
  
 <textarea   id="rteSample">
@@ -4113,21 +2968,12 @@ $("#rteSample").ejRTE();
 $("#rteSample").ejRTE("enable");// Enables RTE
 </script>{% endhighlight %}
 
-
-
-
 ### enableToolbarItem()
 {:#methods:enabletoolbaritem}
 
-
-
 Enables the corresponding tool in the toolbar when the tool is disabled.
 
-
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -4177,21 +3023,12 @@ Note: When you are using our release version before 13.3, refer to the following
 </script>
 {% endhighlight %}
 
-
-
-
 ### executeCommand()
 {:#methods:executecommand}
 
-
-
 Performs the action value based on the given command. 
 
-
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -4209,21 +3046,12 @@ var rteeObj  = $("#rteSample").data("ejRTE");
 rteeObj.executeCommand("bold", true); // Gets the content as string from rte
 </script>{% endhighlight %}
 
-
-
-
 ### focus()
 {:#methods:focus}
 
-
-
 Focuses the RTE control.
 
-
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -4241,7 +3069,6 @@ var rteeObj  = $("#rteSample").data("ejRTE");
 rteeObj.focus(); // Focuses the RTE.
 </script>{% endhighlight %}
 
-
 {% highlight html %}
  
 <textarea   id="rteSample">          
@@ -4257,21 +3084,12 @@ $("#rteSample").ejRTE();
 $("#rteSample").ejRTE("focus");// Focuses the RTE.    
 </script>{% endhighlight %}
 
-
-
-
 ### getCommandStatus()
 {:#methods:getcommandstatus}
 
-
-
 Gets the command status of the selected text based on the given comment in the RTE control.
 
-
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -4289,17 +3107,12 @@ var rteeObj  = $("#rteSample").data("ejRTE");
 rteeObj.getCommandStatus(("bold");  // Gets the bold status form selected text in RTE.
 </script>{% endhighlight %}
 
-
 ### getDocument()
 {:#methods:getDocument}
 
-
 Gets the HTML string from the RTE control.
 
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -4318,19 +3131,12 @@ Gets the HTML string from the RTE control.
 </script>
 {% endhighlight %}
 
-
 ### getHtml()
 {:#methods:gethtml}
 
-
-
 Gets the HTML string from the RTE control.
 
-
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -4348,7 +3154,6 @@ var rteeObj  = $("#rteSample").data("ejRTE");
 rteeObj.getHtml(); // Gets the html string from the rte.
 </script>{% endhighlight %}
 
-
 {% highlight html %}
  
 <textarea   id="rteSample">          
@@ -4364,21 +3169,12 @@ $("#rteSample").ejRTE();
 $("#rteSample").ejRTE("getHtml");// Gets the html string from the rte.       
 </script>{% endhighlight %}
 
-
-
-
 ### getSelectedHtml()
 {:#methods:getselectedhtml}
 
-
-
 Gets the selected HTML string from the RTE control.
 
-
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -4396,7 +3192,6 @@ var rteeObj  = $("#rteSample").data("ejRTE");
 rteeObj.getSelectedHtml(); // Gets the content as string from rte
 </script>{% endhighlight %}
 
-
 {% highlight html %}
  
 <textarea   id="rteSample">          
@@ -4412,20 +3207,12 @@ $("#rteSample").ejRTE();
 $("#rteSample").ejRTE("getSelectedHtml");// GetSelectedHtml from rte        
 </script>{% endhighlight %}
 
-
-
-
 ### getText()
 {:#methods:gettext}
 
-
 Gets the content as string from the RTE control.
 
-
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -4443,7 +3230,6 @@ var rteeObj  = $("#rteSample").data("ejRTE");
 rteeObj.getText(); // Gets the content as string from the RTE.
 </script>{% endhighlight %}
 
-
 {% highlight html %}
  
 <textarea   id="rteSample">          
@@ -4459,21 +3245,12 @@ $("#rteSample").ejRTE();
 $("#rteSample").ejRTE("getText");// getText from rte        
 </script>{% endhighlight %}
 
-
-
-
 ### hide()
 {:#methods:hide}
 
-
-
 Hides the RTE control.
 
-
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -4491,7 +3268,6 @@ var rteeObj  = $("#rteSample").data("ejRTE");
 rteeObj.hide(); // Hides the rte
 </script>{% endhighlight %}
 
-
 {% highlight html %}
  
 <textarea   id="rteSample">          
@@ -4507,13 +3283,8 @@ $("#rteSample").ejRTE();
 $("#rteSample").ejRTE("hide");// Hides the rte       
 </script>{% endhighlight %}
 
-
-
-
 ### insertMenuOption()
-{:#methods:insertMenuOption}
-
-
+{:#methods:insertmenuoption}
 
 Inserts new item to the target contextmenu node. 
 
@@ -4592,8 +3363,6 @@ Sprite CSS class name for menu item icon.
 
 #### Example
 
-
-
 {% highlight html %}
  
 <textarea   id="rteSample">                        
@@ -4612,18 +3381,160 @@ rteeObj.insertMenuOption({newItem:"Show Table Details",targetItem:"Table Propert
 {% endhighlight %}
 
 
+### insertColumn([before],[cell])
+{:#methods:insertcolumn}
 
-### pasteContent()
-{:#methods:pasteContent}
+Add a table column at the right or left of the specified cell
 
-
-This method helps to insert/paste the content at the current cursor (caret) position or the selected content to be replaced with our text by passing the value as parameter to the pasteContent method in the Editor.
-
-
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+before </td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">
+If it’s true, add a column at the left of the cell, otherwise add a column at the right of the cell
+</td>
+</tr>
+<tr>
+<td class="name">
+cell </td>
+<td class="type"><span class="param-type">jQuery</span></td>
+<td class="description">
+Column will be added based on the given cell element
+</td>
+</tr>
+</tbody>
+</table>
 
 #### Example
 
+{% highlight html %}
+ 
+<textarea id="rteSample" rows="10" cols="30" style="width: 740px; height: 440px">
+    The Rich Text Editor (RTE) control is an easy to render in
+    client side. Customer easy to edit the contents and get the HTML content for
+    the displayed content. A rich text editor control provides users with a toolbar
+    that helps them to apply rich text formats to the text entered in the text
+    area.
+</textarea>
+<script type="text/javascript">
+    var target;
 
+    target = $("#rteSample").ejRTE({ width: "100%", minWidth: "100px", isResponsive: true }).data("ejRTE");
+
+    target.insertColumn(true, $($("#rteSample").ejRTE("instance").getDocument().body).find("table tr:first td:first"));
+  
+</script>
+
+{% endhighlight %}
+
+{% highlight html %}
+
+<textarea id="rteSample" rows="10" cols="30" style="width: 740px; height: 440px">
+    The Rich Text Editor (RTE) control is an easy to render in
+    client side. Customer easy to edit the contents and get the HTML content for
+    the displayed content. A rich text editor control provides users with a toolbar
+    that helps them to apply rich text formats to the text entered in the text
+    area.
+</textarea>
+<script type="text/javascript">
+    var target;
+
+    target = $("#rteSample").ejRTE({ width: "100%", minWidth: "100px", isResponsive: true }).data("ejRTE");
+
+    $("#rteSample").ejRTE("insertColumn", "true $($('#rteSample').ejRTE('instance').getDocument().body).find('table tr:first td:first')");
+</script>
+
+{% endhighlight %}
+
+
+### insertRow([before],[cell])
+{:#methods:insertrow}
+
+To add a table row below or above the specified cell.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+before </td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">
+If it’s true, add a row before the cell, otherwise add a row after the cell
+</td>
+</tr>
+<tr>
+<td class="name">
+cell </td>
+<td class="type"><span class="param-type">jQuery</span></td>
+<td class="description">
+Row will be added based on the given cell element
+</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+ 
+<textarea id="rteSample" rows="10" cols="30" style="width: 740px; height: 440px">
+    The Rich Text Editor (RTE) control is an easy to render in
+    client side. Customer easy to edit the contents and get the HTML content for
+    the displayed content. A rich text editor control provides users with a toolbar
+    that helps them to apply rich text formats to the text entered in the text
+    area.
+</textarea>
+<script type="text/javascript">
+    var target;
+
+    target = $("#rteSample").ejRTE({ width: "100%", minWidth: "100px", isResponsive: true }).data("ejRTE");
+
+    target.insertRow(true, $($("#rteSample").ejRTE("instance").getDocument().body).find("table tr:first td:first"));
+  
+</script>
+
+{% endhighlight %}
+
+{% highlight html %}
+ 
+<textarea id="rteSample" rows="10" cols="30" style="width: 740px; height: 440px">
+    The Rich Text Editor (RTE) control is an easy to render in
+    client side. Customer easy to edit the contents and get the HTML content for
+    the displayed content. A rich text editor control provides users with a toolbar
+    that helps them to apply rich text formats to the text entered in the text
+    area.
+</textarea>
+
+<script type="text/javascript">
+    var target;
+    target = $("#rteSample").ejRTE({ width: "100%", minWidth: "100px", isResponsive: true }).data("ejRTE");
+    $("#rteSample").ejRTE("insertRow", "true $($('#rteSample').ejRTE('instance').getDocument().body).find('table tr:first td:first')");
+</script>
+
+{% endhighlight %}
+
+### pasteContent()
+{:#methods:pastecontent}
+
+This method helps to insert/paste the content at the current cursor (caret) position or the selected content to be replaced with our text by passing the value as parameter to the pasteContent method in the Editor.
+
+#### Example
 
 {% highlight html %}
  
@@ -4642,20 +3553,12 @@ This method helps to insert/paste the content at the current cursor (caret) posi
 </script>
 {% endhighlight %}
 
-
-
 ### refresh()
 {:#methods:refresh}
 
-
-
 Refreshes the RTE control.
 
-
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -4673,7 +3576,6 @@ var rteeObj  = $("#rteSample").data("ejRTE");
 rteeObj.refresh(); // Refreshes the rte
 </script>{% endhighlight %}
 
-
 {% highlight html %}
  
 <textarea   id="rteSample">          
@@ -4689,12 +3591,202 @@ $("#rteSample").ejRTE();
 $("#rteSample").ejRTE("refresh");// Refreshes the rte       
 </script>{% endhighlight %}
 
+### removeColumn([cell])
+{:#methods:removecolumn}
+
+Removes the specified table column.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+cell </td>
+<td class="type"><span class="param-type">jQuery</span></td>
+<td class="description">
+Remove the given column element
+</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+
+<textarea id="rteSample" rows="10" cols="30" style="width: 740px; height: 440px">
+    The Rich Text Editor (RTE) control is an easy to render in
+    client side. Customer easy to edit the contents and get the HTML content for
+    the displayed content. A rich text editor control provides users with a toolbar
+    that helps them to apply rich text formats to the text entered in the text
+    area.
+</textarea>
+<script type="text/javascript">
+    var target;
+
+    target = $("#rteSample").ejRTE({ width: "100%", minWidth: "100px", isResponsive: true }).data("ejRTE");
+
+   target.removeColumn($($("#rteSample").ejRTE("instance").getDocument().body).find("table tr:first td:first")); 
+</script>
+
+{% endhighlight %}
+
+{% highlight html %}
+
+<textarea id="rteSample" rows="10" cols="30" style="width: 740px; height: 440px">
+    The Rich Text Editor (RTE) control is an easy to render in
+    client side. Customer easy to edit the contents and get the HTML content for
+    the displayed content. A rich text editor control provides users with a toolbar
+    that helps them to apply rich text formats to the text entered in the text
+    area.
+</textarea>
+<script type="text/javascript">
+    var target;
+
+    target = $("#rteSample").ejRTE({ width: "100%", minWidth: "100px", isResponsive: true }).data("ejRTE");
+
+$("#rteSample").ejRTE("removeColumn", $($('#rteSample').ejRTE('instance').getDocument().body).find('table tr:first td:first')); 
+</script>
+
+{% endhighlight %}
+
+### removeRow([cell])
+{:#methods:removerow}
+
+Removes the specified table row.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+cell </td>
+<td class="type"><span class="param-type">jQuery</span></td>
+<td class="description">
+Remove the given row element
+</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+
+<textarea id="rteSample" rows="10" cols="30" style="width: 740px; height: 440px">
+    The Rich Text Editor (RTE) control is an easy to render in
+    client side. Customer easy to edit the contents and get the HTML content for
+    the displayed content. A rich text editor control provides users with a toolbar
+    that helps them to apply rich text formats to the text entered in the text
+    area.
+</textarea>
+<script type="text/javascript">
+    var target;
+
+    target = $("#rteSample").ejRTE({ width: "100%", minWidth: "100px", isResponsive: true }).data("ejRTE");
+
+    target.removeRow($($("#rteSample").ejRTE("instance").getDocument().body).find("table tr:first td:first"));
+  
+</script>
+
+{% endhighlight %}
+
+
+{% highlight html %}
+
+<textarea id="rteSample" rows="10" cols="30" style="width: 740px; height: 440px">
+    The Rich Text Editor (RTE) control is an easy to render in
+    client side. Customer easy to edit the contents and get the HTML content for
+    the displayed content. A rich text editor control provides users with a toolbar
+    that helps them to apply rich text formats to the text entered in the text
+    area.
+</textarea>
+<script type="text/javascript">
+    var target;
+
+    target = $("#rteSample").ejRTE({ width: "100%", minWidth: "100px", isResponsive: true }).data("ejRTE");
+
+$("#rteSample").ejRTE("removeRow", $($('#rteSample').ejRTE('instance').getDocument().body).find('table tr:first td:first'));
+</script>
+
+{% endhighlight %}
+
+### removeTable([table])
+{:#methods:removetable}
+
+Deletes the specified table.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+table </td>
+<td class="type"><span class="param-type">jQuery</span></td>
+<td class="description">
+Remove the given table
+</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+
+<textarea id="rteSample" rows="10" cols="30" style="width: 740px; height: 440px">
+    The Rich Text Editor (RTE) control is an easy to render in
+    client side. Customer easy to edit the contents and get the HTML content for
+    the displayed content. A rich text editor control provides users with a toolbar
+    that helps them to apply rich text formats to the text entered in the text
+    area.
+</textarea>
+<script type="text/javascript">
+    var target;
+    target = $("#rteSample").ejRTE({ width: "100%", minWidth: "100px", isResponsive: true }).data("ejRTE");
+    target.removeTable($($("#rteSample").ejRTE("instance").getDocument().body).find("table"));
+</script>
+
+{% endhighlight %}
+
+{% highlight html %}
+
+<textarea id="rteSample" rows="10" cols="30" style="width: 740px; height: 440px">
+    The Rich Text Editor (RTE) control is an easy to render in
+    client side. Customer easy to edit the contents and get the HTML content for
+    the displayed content. A rich text editor control provides users with a toolbar
+    that helps them to apply rich text formats to the text entered in the text
+    area.
+</textarea>
+<script type="text/javascript">
+    var target;
+    target = $("#rteSample").ejRTE({ width: "100%", minWidth: "100px", isResponsive: true }).data("ejRTE");
+    $("#rteSample").ejRTE("removeTable", $($('#rteSample').ejRTE('instance').getDocument().body).find('table'));
+</script>
+
+{% endhighlight %}
+
 
 ### removeMenuOption ()
 {:#methods:removeMenuOption}
-
-
-
 
 Removes the target menu item from the RTE contextmenu.
 
@@ -4720,8 +3812,6 @@ Target Node text.
 
 #### Example
 
-
-
 {% highlight html %}
  
 <textarea   id="rteSample">                 
@@ -4739,19 +3829,12 @@ Target Node text.
 </script>
 {% endhighlight %}
 
-
 ### removeToolbarItem()
 {:#methods:removetoolbaritem}
 
-
-
-
 Removes the given tool from the RTE Toolbar.
 
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -4777,7 +3860,6 @@ Note: When you use the release version before 13.3, refer to the following
 </script>
 {% endhighlight %}
 
-
 {% highlight html %}
  
 <textarea   id="rteSample">          
@@ -4801,19 +3883,12 @@ Note: When using the release version before 13.3, refer to the following
 </script>
 {% endhighlight %}
 
-
-
-
 ### selectAll()
 {:#methods:selectAll}
 
-
 Selects all the contents within the RTE.
 
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -4832,17 +3907,12 @@ Selects all the contents within the RTE.
 </script>
 {% endhighlight %}
 
-
 ### selectRange()
 {:#methods:selectRange}
 
-
 Selects the contents in the given range.
 
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -4871,19 +3941,12 @@ Selects the contents in the given range.
 </script>
 {% endhighlight %}
 
-
 ### setColorPickerType()
 {:#methods:setcolorpickertype}
 
-
-
 Sets the color picker model type rendered initially in the RTE control.
 
-
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -4901,7 +3964,6 @@ var rteeObj  = $("#rteSample").data("ejRTE");
 rteeObj.setColorPickerType("picker"); // Sets the picker mode
 </script>{% endhighlight %}
 
-
 {% highlight html %}
  
 <textarea   id="rteSample">          
@@ -4917,21 +3979,12 @@ $("#rteSample").ejRTE();
 $("#rteSample").ejRTE("setColorPickerType","picker");// Sets the picker mode        
 </script>{% endhighlight %}
 
-
-
-
 ### setHtml()
 {:#methods:sethtml}
 
-
-
 Sets the HTML string from the RTE control.
 
-
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -4943,7 +3996,6 @@ $("#rteSample").ejRTE();
 var rteeObj  = $("#rteSample").data("ejRTE");
 rteeObj.setHtml("The Rich Text Editor (RTE) control is an easy to render in client side."); // Sets the html string to the rte
 </script>{% endhighlight %}
-
 
 {% highlight html %}
  
@@ -4960,18 +4012,12 @@ $("#rteSample").ejRTE();
 $("#rteSample").ejRTE("setHtml","The Rich Text Editor (RTE) control is an easy to render in client side.");// sets the html string to the rte    
 </script>{% endhighlight %}
 
-
-
-
 ### show()
 {:#methods:show}
 
 Displays the RTE control.
 
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -4989,7 +4035,6 @@ var rteeObj  = $("#rteSample").data("ejRTE");
 rteeObj.show(); // Shows the rte
 </script>{% endhighlight %}
 
-
 {% highlight html %}
  
 <textarea   id="rteSample">          
@@ -5004,7 +4049,6 @@ $("#rteSample").ejRTE();
 // Creates the RTE
 $("#rteSample").ejRTE("show");// Shows the rte       
 </script>{% endhighlight %}
-
 
 ## Events
 
@@ -5042,7 +4086,6 @@ type</td>
 </tr>
 </tbody>
 </table>
-
 
 #### Example
 

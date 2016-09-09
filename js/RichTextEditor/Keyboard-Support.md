@@ -5,7 +5,7 @@ description: Keyboard navigation Support for RichTextEditor widget
 platform: js
 control: RTE
 documentation: ug
-
+keywords: RichTextEditor, Keyboard Support
 ---
 # Keyboard Support
 
@@ -339,13 +339,19 @@ Clears the entire editor content.
 
 To disable the keyboard navigation, set the [allowKeyboardNavigation](http://help.syncfusion.com/js/api/ejrte#members:allowkeyboardnavigation) property of the editor to false (its default value is true). It will disable all the keyboard navigation shortcuts except for the UP/DOWN keys and PAGE UP/PAGE DOWN keys.
 
-{% highlight javascript %}
+{% highlight html %}
 
-$("#texteditor").ejRTE({
-        value: "The RichTextEditor (RTE) control enables you to edit the contents with insert table and images," +
-        " it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.",
-        allowKeyboardNavigation: false
-    });
+<textarea id="texteditor"></textarea>
+
+<script type="text/javascript">
+
+    $("#texteditor").ejRTE({
+            value: "The RichTextEditor (RTE) control enables you to edit the contents with insert table and images," +
+            " it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.",
+            allowKeyboardNavigation: false
+        });
+        
+</script>
 {% endhighlight %}
 
 **Note:** In order to make the tab key for form element navigation –disable the **enableTabKeyNavigation** property.

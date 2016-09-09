@@ -5,6 +5,7 @@ description: Configuring and working with Image and File browser in RichTextEdit
 platform: js
 control: RTE
 documentation: ug
+keywords: RichTextEditor, File browser, Image, Image Browser
 
 ---
 
@@ -90,6 +91,7 @@ You can resize an image by manually select an image, and drag a handle until the
 
 ![](ImageandFilebrowser_images/ImageandFilebrowser_img4.png)
 
+N> Set the default height and width of the Images which was inserted into the RTE text area in “change” event of RTE - {{'[Link](http://jsplayground.syncfusion.com/Sync_rghpsadi)'| markdownify }}
 
 ### Set Width and Height
 
@@ -115,4 +117,77 @@ The editor provides you to set the width and height properties to change the siz
 
 ![](ImageandFilebrowser_images/ImageandFilebrowser_img5.png)
 
+## Suppression of the Image Browser
 
+The General and Advanced tabs in the RTE Image browser can be removed by setting its corresponding display CSS property to none.
+
+{% highlight CSS %}
+
+    <style type="text/css" class="cssStyles">
+        div.e-rte-imageTab.e-tab.e-js.e-widget {
+            display: none;
+        }
+    </style>
+    
+ {% endhighlight %}
+ 
+ Can remove the Add Newfolder button by using [removeToolbarItem](https://help.syncfusion.com/js/api/ejrte#methods:removetoolbaritem) property of Image Browser in the RTE create event. 
+
+{% highlight html %}
+
+    <textarea id="rteSample" rows="10" cols="30" style="width: 740px; height: 440px">
+        Description:
+        The Rich Text Editor (RTE) control is an easy to render in
+        client side.Customer easy to edit the contents and get the HTML content for
+        the displayed content.A rich text editor control provides users with a toolbar
+        that helps them to apply rich text formats to the text entered in the text
+        area.
+    </textarea>
+    <script>
+        $("#rteSample").ejRTE({
+            toolsList: ["images"],
+            tools: { images: ["image"] },
+            width: "100%",
+            minWidth: "10px",
+            imageBrowser: { filePath: "http://mvc.syncfusion.com/OdataServices/FileBrowser/", ajaxAction: fileService, extensionAllow: "*.png, *.gif, *.jpg, *.jpeg, *.docx", ajaxSettings: ajaxSettings },
+            fileBrowser: { filePath: "http://mvc.syncfusion.com/OdataServices/FileBrowser/", ajaxAction: fileService, extensionAllow: "*.txt, *.png, *.pdf,*.jpeg", ajaxSettings: ajaxSettings1 },
+            create: function (args) {
+                this._explorerObj.removeToolbarItem("NewFolder");
+            }
+
+        });
+    </script>
+    
+ {% endhighlight %}
+ 
+ In RTE control, there is no direct support for the autoUpload option. But this can be achieved by enabling the autoUpload at create event of RTE.
+
+{% highlight html %}
+
+    <textarea id="texteditor">
+        <p><b>Description:</b></p>
+        <p>
+            The Rich Text Editor (RTE) control is easy to render in the
+            client side. Customers can easily edit the contents and get the HTML content for
+            the displayed content. A rich text editor control provides users with a toolbar
+            that helps them to apply rich text formats to the text entered in the text
+            area.
+        </p>
+    </textarea>
+    <script>
+        $(function () {
+            $("#texteditor").ejRTE({
+                toolsList: ["images"],
+                tools: { images: ["image"] },
+                width: "100%",
+                minWidth: "10px",
+                imageBrowser: { filePath: "http://mvc.syncfusion.com/OdataServices/FileBrowser/", ajaxAction: fileService, extensionAllow: "*.png, *.gif, *.jpg, *.jpeg, *.docx", ajaxSettings: ajaxSettings },
+                create: function (args) {
+                    //setting autoUpload property as true                   
+                    this._explorerObj._uploadtag.data("ejUploadbox").option("autoUpload", true);
+                }
+            });
+        });
+    </script>
+    
+ {% endhighlight %}
