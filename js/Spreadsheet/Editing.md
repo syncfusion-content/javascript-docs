@@ -65,7 +65,7 @@ The following output is displayed as a result of the above code example.
 
 ## Read-Only Cells
 
-You can restrict/prevent the editing in the selected cells. You can use [allowLockCell](https://help.syncfusion.com/js/api/ejspreadsheet#members:allowlockcell "") property to enable/disable the lock cells. You can do using following ways,
+You can restrict/prevent the editing in the selected cells. You can use [`allowLockCell`](https://help.syncfusion.com/js/api/ejspreadsheet#members:allowlockcell "") property to enable/disable the lock cells. You can do using following ways,
 
 * Using [`lockCells`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:lockcells "lockCells") method to lock the selected cells. Then you need to protect the sheet using [`protectSheet`](https://help.syncfusion.com/js/api/ejspreadsheet#methods:protectsheet "protectSheet") method to restrict the editing.
 * Using "lock Cells” option under Changes tab in REVIEW tab of ribbon. Then Using "protect Sheet” option under Changes tab in REVIEW tab of ribbon to restrict editing.
@@ -104,11 +104,8 @@ The following output is displayed as a result of the above code example.
 
 The following events will trigger when editing and saving the cell. 
 
-<table>
-    <tr><th>Events<br/></th><th>Description<br/></th></tr>
-    <tr><td>[`cellEdit`](http://help.syncfusion.com/js/api/ejspreadsheet#events:celledit"cellEdit")</td><td >Triggered when the cell is edited.<br/></td></tr>
-    <tr><td>[`cellSave`](http://help.syncfusion.com/js/api/ejspreadsheet#events:cellsave"cellSave")</td><td >Triggered when save the edited cell.<br/></td></tr>
-</table>
+* [`cellEdit`](http://help.syncfusion.com/js/api/ejspreadsheet#events:celledit"cellEdit") - Triggered when the cell is edited.
+* [`cellSave`](http://help.syncfusion.com/js/api/ejspreadsheet#events:cellsave"cellSave") - Triggered when save the edited cell.
 
 ## Data binding
 
