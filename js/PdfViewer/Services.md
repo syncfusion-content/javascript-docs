@@ -91,7 +91,7 @@ Specify the AJAX request whether the request is initial loading or consecutive l
 {% highlight javascript %}
 $.ajax({
     type: 'POST',
-    contentType: 'application/json: charset=utf-8',
+    contentType: 'application/json; charset=utf-8',
     url: 'http://js.syncfusion.com/demos/ejservices/api/PdfViewer/PostViewerAction',
     dataType: "json",
     data: JSON.stringify([{
@@ -107,7 +107,7 @@ $.ajax({
 
 #### Code:  200
 
-#### Content-Type:”application/json:charset=utf-8”;
+#### Content-Type:”application/json;charset=utf-8”;
 
 #### Response Text:
 
@@ -283,7 +283,7 @@ New file name to be loaded into the PDF Viewer
 {% highlight javascript %}
 $.ajax({
     type: 'POST',
-    contentType: 'application/json: charset=utf-8',
+    contentType: 'application/json; charset=utf-8',
     url: 'http://js.syncfusion.com/demos/ejservices/api/PdfViewer/ FileUploadPostAction',
     dataType: "json",
     data: JSON.stringify([{
@@ -299,7 +299,7 @@ $.ajax({
 
 #### Code:  200
 
-#### Content-Type:”application/json:charset=utf-8”;
+#### Content-Type:”application/json;charset=utf-8”;
 
 #### Response Text:
 
@@ -431,7 +431,7 @@ PDF document name to be download
 {% highlight javascript %}
 $.ajax({
     type: 'POST',
-    contentType: 'application/json: charset=utf-8',
+    contentType: 'application/json; charset=utf-8',
     url: 'http://js.syncfusion.com/demos/ejservices/api/PdfViewer/ DocumentDownloadAction',
     dataType: "json",
     data: JSON.stringify([{
@@ -444,7 +444,7 @@ $.ajax({
 
 #### Code:  200
 
-#### Content-Type:”application/json:charset=utf-8”;
+#### Content-Type:”application/json;charset=utf-8”;
 
 #### Response Text:
 
