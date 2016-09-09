@@ -277,10 +277,10 @@ $("#pager").ejPager({enableRTL:true})
 </script>
 {% endhighlight %}
 
-### showPagerInfo `Boolean`
-{:#members:showpagerinfo}
+### showPageInfo `Boolean`
+{:#members:showpageinfo}
 
-Shows or hides the current pagination information from pager footer.
+Shows or hides the current page information in pager footer.
 
 #### Default Value:
 {:.param}
@@ -293,7 +293,7 @@ Shows or hides the current pagination information from pager footer.
 
 <div id="pager"></div> 
 <script>
-$("#pager").ejPager({showPagerInfo:false})
+$("#pager").ejPager({showPageInfo:false})
 });
 </script>
 
