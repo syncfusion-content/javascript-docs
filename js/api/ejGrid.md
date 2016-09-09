@@ -2928,7 +2928,7 @@ Gets or sets a value that indicates whether the grid rows has to be rendered as 
 $("#Grid").ejGrid({
     dataSource:  window.gridData,
     allowPaging: true,   
-    mediaSettings: { Phone: 340 }
+    mediaSettings: { phone: 340 }
 });
 </script>
 {% endhighlight %}
