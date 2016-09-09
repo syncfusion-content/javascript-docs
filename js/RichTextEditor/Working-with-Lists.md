@@ -5,6 +5,7 @@ description: Working with Lists customization for RichTextEditor widget
 platform: js
 control: RTE
 documentation: ug
+keywords: RichTextEditor, Lists, Custom Lists
 
 ---
 # Working with Lists

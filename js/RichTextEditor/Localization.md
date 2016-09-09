@@ -5,7 +5,7 @@ description: Initialize the RichTextEditor widget with specified Localization
 platform: js
 control: RTE
 documentation: ug
-
+keywords: RichTextEditor, Localization
 ---
 # Localization
 
@@ -331,13 +331,19 @@ ej.RTE.Locale["de-DE"] = {
 
 You can set the [locale](http://help.syncfusion.com/js/api/ejrte#members:locale) property of the editor to the new language. 
 
-{% highlight javascript %}
+{% highlight html %}
 
-$("#texteditor").ejRTE({
+<textarea id="texteditor"></textarea>
+
+<script type="text/javascript">
+
+    $("#texteditor").ejRTE({
         value: "Das Richtexteditor (RTE) Steuerung ermöglicht Ihnen, den Inhalt mit Einsatz Tisch und Bilder zu bearbeiten ," +
         " sondern bietet auch eine Werkzeugleiste , die Rich-Text- Format ," +
         " um die in der Textarea eingegeben Gehalt gelten können.",
         locale: "de-DE", format: format_DE
     });
+</script>
+
 {% endhighlight %}
 

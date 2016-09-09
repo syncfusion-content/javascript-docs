@@ -5,6 +5,7 @@ description: Working with Tables customization for RichTextEditor widget
 platform: js
 control: RTE
 documentation: ug
+keywords: RichTextEditor, Tables, Insert a Table, Delete a table
 
 ---
 # Working with Tables
