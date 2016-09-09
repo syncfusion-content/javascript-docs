@@ -147,29 +147,27 @@ This example shows how to encode the HTML content before form submit event.
 
 {% highlight html %}
 
-<form>
-<textarea id ="texteditor"></textarea>
+    <form>
+        <textarea id ="texteditor"></textarea>
+        <button type ="submit">Submit</button>
+    </form>
+    <script type ="text/javascript">
 
-     <button type ="submit">Submit</button>
-     
-</form>
-<script type ="text/javascript">
-
-        $(function () {
-        $("#texteditor").ejRTE({
-            value: "The RichTextEditor (RTE) control enables you to edit the contents with insert table and images," +
-            " it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.",
+            $(function () {
+            $("#texteditor").ejRTE({
+                value: "The RichTextEditor (RTE) control enables you to edit the contents with insert table and images," +
+                " it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.",
+            });
         });
-    });
 
-    $("form").on("submit", function () {
+        $("form").on("submit", function () {
 
-        var editor = $("#texteditor").data("ejRTE");
-        var encoded = $('<div />').text(editor.model.value).html();
-        $("#texteditor").val(encoded);
+            var editor = $("#texteditor").data("ejRTE");
+            var encoded = $('<div />').text(editor.model.value).html();
+            $("#texteditor").val(encoded);
 
-    });
-        </script>
+        });
+    </script>
 
 {% endhighlight %}
 
@@ -179,27 +177,28 @@ When you move the editor’s wrapper element into another DOM element, the edito
 
 {% highlight html %}
 
- <textarea id="texteditor"></textarea>
+    <textarea id="texteditor"></textarea>
 
-<div id="target"></div>
+    <div id="target"></div>
 
     <button onclick="appendTo()">Append To</button>
     <button onclick="refresh()">Refresh</button>
-<script type="text/javascript">
-        var editor = null;
-        $(function () {
-            $("#texteditor").ejRTE({
-                value: "The RichTextEditor (RTE) control enables you to edit the contents with insert table and images," +
-                " it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.",
+    
+    <script type="text/javascript">
+            var editor = null;
+            $(function () {
+                $("#texteditor").ejRTE({
+                    value: "The RichTextEditor (RTE) control enables you to edit the contents with insert table and images," +
+                    " it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.",
+                });
+                editor = $("#texteditor").ejRTE("instance");
             });
-            editor = $("#texteditor").ejRTE("instance");
-        });
-        function appendTo() {
-            editor._rteWapper.appendTo($("#target"))
-        }
-        function refresh() {
-            editor.refresh()
-        }
+            function appendTo() {
+                editor._rteWapper.appendTo($("#target"))
+            }
+            function refresh() {
+                editor.refresh()
+            }
     </script>
 
 {% endhighlight %}
@@ -212,15 +211,15 @@ N>  [local storage](http://www.w3schools.com/html/html5_webstorage.asp#) is not 
 
 {% highlight html %}
 
- <textarea id="texteditor"></textarea>
- 
- <script type="text/javascript">
-    $(function () {
-        $("#texteditor").ejRTE({
-            enablePersistence: true
+    <textarea id="texteditor"></textarea>
+
+    <script type="text/javascript">
+        $(function () {
+            $("#texteditor").ejRTE({
+                enablePersistence: true
+            });
         });
-    });
-</script>
+    </script>
 
 {% endhighlight %}
 
