@@ -5,7 +5,7 @@ description: Getting started with RichTextEditor and configure the toolbar and o
 platform: js
 control: RTE
 documentation: ug
-
+keywords: RichTextEditor, Control Initialization, Setting and Getting Content
 ---
 # Getting Started
 
@@ -103,10 +103,15 @@ images: ["image"]
 You can set the content of the editor as follows.
 
 {% highlight javascript %}
-$("#texteditor").ejRTE({
-value: "The RichTextEditor (RTE) control enables you to edit the contents with insert table and images," +
-" it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.",
-});
+
+<textarea id="texteditor"></textarea>
+   
+<script type="text/javascript">
+    $("#texteditor").ejRTE({
+        value: "The RichTextEditor (RTE) control enables you to edit the contents with insert table and images," +
+        " it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.",
+    });
+</script>
 {% endhighlight %}
 
 To retrieve the editor contents,

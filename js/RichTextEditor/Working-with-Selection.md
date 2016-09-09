@@ -5,7 +5,7 @@ description: Working with content selection in RichTextEditor widget
 platform: js
 control: RTE
 documentation: ug
-
+keywords: RichTextEditor, Selection, Select a Range
 ---
 # Working with Selection
 

@@ -5,21 +5,26 @@ description: XHTML Validation to format the RichTextEditor widget's content
 platform: js
 control: RTE
 documentation: ug
-
+keywords: RichTextEditor, XHTML Validation
 ---
 # XHTML Validation
 
 The editor provides option to validate its content through the [enableXHTML](http://help.syncfusion.com/js/api/ejrte#members:enablexhtml) property. When you set or modify the content into the editor, it continuously checks whether the HTML source of the content that you are creating is valid. The editor examines the HTML markup and then removes the elements or attributes that are not valid. 
 
-{% highlight javascript %}
+{% highlight html %}
 
-$(function () {
+<textarea id="texteditor"></textarea>
+
+<script type="text/javascript">
+    $(function () {
         $("#texteditor").ejRTE({
             value: "The RichTextEditor (RTE) control enables you to edit the contents with insert table and images," +
             " it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.",
             enableXHTML: true
         });
     });
+</script>
+    
 {% endhighlight %}
 
 The editor checks the following settings on validation:

@@ -5,7 +5,7 @@ description: Zoom and Print support for RichTextEditor widget
 platform: js
 control: RTE
 documentation: ug
-
+keywords: RichTextEditor, Zoom, Print
 ---
 # Zoom
 
