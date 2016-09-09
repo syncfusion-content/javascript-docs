@@ -395,7 +395,7 @@ Min</td>
 
 
 
-* ej.DatePicker.Header.Min
+* ej.DatePicker.Header.Short
 
 
 
@@ -2435,21 +2435,8 @@ $("#datepicker").ejDatePicker("show");
 ## Events
 
 
-
-
-
-
-
-
-
 ### beforeClose
 {:#events:beforeclose}
-
-
-
-
-
-
 
 
 Fires before closing the DatePicker popup.
@@ -2510,24 +2497,14 @@ element</td>
 $("#datepicker").ejDatePicker({
    beforeClose: function (args) {}
 });  
-</script>                         {% endhighlight %}
+</script>
 
-
-
-
-
-
+{% endhighlight %}
 
 
 
 ### beforeDateCreate
 {:#events:beforedatecreate}
-
-
-
-
-
-
 
 
 Fires when each date is created in the DatePicker popup calendar.
@@ -2571,6 +2548,12 @@ element</td>
 <td class="type"><span class="param-type">Element</span></td>
 <td class="description">returns the current DOM object of the date from the Calendar.</td>
 </tr>
+<tr>
+<td class="name">
+value</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">returns the currently created date as string type.</td>
+</tr>
 </tbody>
 </table>
 
@@ -2589,19 +2572,15 @@ element</td>
 $("#datepicker").ejDatePicker({
    beforeDateCreate: function (args) {}
 });  
-</script>                         {% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 
 
 ### beforeOpen
 {:#events:beforeopen}
-
-
-
-
-
-
 
 
 Fires before opening the DatePicker popup.
@@ -2663,25 +2642,14 @@ element</td>
 $("#datepicker").ejDatePicker({
    beforeOpen: function (args) {}
 });  
-</script>                         {% endhighlight %}
+</script>
 
-
-
-
-
-
-
+{% endhighlight %}
 
 
 
 ### change
 {:#events:change}
-
-
-
-
-
-
 
 
 Fires when the DatePicker input value is changed.
@@ -2743,7 +2711,9 @@ prevDate</td>
 $("#datepicker").ejDatePicker({
    change: function (args) {}
 });  
-</script>                         {% endhighlight %}
+</script> 
+
+{% endhighlight %}
 
 
 
@@ -2753,12 +2723,6 @@ $("#datepicker").ejDatePicker({
 
 ### close
 {:#events:close}
-
-
-
-
-
-
 
 
 Fires when DatePicker popup is closed.
@@ -2777,6 +2741,12 @@ Fires when DatePicker popup is closed.
 cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">Set to true when the event has to be canceled, else false.</td>
+</tr>
+<tr>
+<td class="name">
+date</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">returns the current date object.</td>
 </tr>
 <tr>
 <td class="name">
@@ -2820,7 +2790,9 @@ prevDate</td>
 $("#datepicker").ejDatePicker({
    close: function (args) {}
 });   
-</script>                         {% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 
@@ -2830,12 +2802,6 @@ $("#datepicker").ejDatePicker({
 
 ### create
 {:#events:create}
-
-
-
-
-
-
 
 
 Fires when the DatePicker is created successfully.
@@ -2885,22 +2851,13 @@ type</td>
 $("#datepicker").ejDatePicker({
    create: function (args) {}
 });
-</script>                         {% endhighlight %}
+</script>
 
-
-
-
-
+{% endhighlight %}
 
 
 ### destroy
 {:#events:destroy}
-
-
-
-
-
-
 
 
 Fires when the DatePicker is destroyed successfully.
@@ -2950,7 +2907,9 @@ type</td>
 $("#datepicker").ejDatePicker({
    destroy: function (args) {}
 }); 
-</script>                 {% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 
@@ -3013,7 +2972,9 @@ value</td>
 $("#datepicker").ejDatePicker({
    focusIn: function (args) {}
 }); 
-</script>                         {% endhighlight %}
+</script> 
+
+{% endhighlight %}
 
 
 
@@ -3084,9 +3045,92 @@ prevDate</td>
 $("#datepicker").ejDatePicker({
    focusOut: function (args) {}
 });
-</script>                         {% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
+
+
+
+### navigate
+{:#events:navigate}
+
+
+Fires when calender view navigates to month/year/decade/century.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">Set to true when the event has to be canceled, else false.</td>
+</tr>
+<tr>
+<td class="name">
+date</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">returns the current date object.</td>
+</tr>
+<tr>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.DatePicker.Model"/><span class="param-type">object</span></td>
+<td class="description">returns the DatePicker model.</td>
+</tr>
+<tr>
+<td class="name">
+navigateFrom</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">returns the previous view state of calendar.</td>
+</tr>
+<tr>
+<td class="name">
+navigateFrom</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">returns the current view state of calendar.</td>
+</tr>
+<tr>
+<td class="name">
+type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">returns the name of the event</td>
+</tr>
+<tr>
+<td class="name">
+value</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">returns the current date value.</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+<input type="text" id="datepicker" />
+<script>
+//navigate event for datepicker
+$("#datepicker").ejDatePicker({
+   navigate: function (args) {}
+});  
+</script>
+
+{% endhighlight %}
 
 
 
@@ -3094,12 +3138,6 @@ $("#datepicker").ejDatePicker({
 
 ### open
 {:#events:open}
-
-
-
-
-
-
 
 
 Fires when DatePicker popup is opened.
@@ -3118,6 +3156,12 @@ Fires when DatePicker popup is opened.
 cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">Set to true when the event has to be canceled, else false.</td>
+</tr>
+<tr>
+<td class="name">
+date</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">returns the current date object.</td>
 </tr>
 <tr>
 <td class="name">
@@ -3161,7 +3205,9 @@ prevDate</td>
 $("#datepicker").ejDatePicker({
    open: function (args) {}
 });  
-</script>                         {% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 
@@ -3171,12 +3217,6 @@ $("#datepicker").ejDatePicker({
 
 ### select
 {:#events:select}
-
-
-
-
-
-
 
 
 Fires when a date is selected from the DatePicker popup.
@@ -3195,6 +3235,12 @@ Fires when a date is selected from the DatePicker popup.
 cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">Set to true when the event has to be canceled, else false.</td>
+</tr>
+<tr>
+<td class="name">
+date</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">returns the selected date object.</td>
 </tr>
 <tr>
 <td class="name">
@@ -3244,7 +3290,10 @@ isSpecialDay</td>
 $("#datepicker").ejDatePicker({
    select: function (args) {}
 }); 
-</script>                         {% endhighlight %}
+</script>
+
+
+{% endhighlight %}
 
 
 
