@@ -80,13 +80,13 @@ In the following example, the page is broken into two separate editable areas, e
 
 {% highlight html %}
 
-    <textarea class="myEdit" rows="10" cols="30" style="width: 740px; height: 440px">
-        Title
-    </textarea>
-    <br>
-    <textarea class="myEdit" rows="10" cols="30" style="width: 740px; height: 440px">
-        Description
-    </textarea>
+        <textarea class="myEdit" rows="10" cols="30" style="width: 740px; height: 440px">
+            Title
+        </textarea>
+        <br>
+        <textarea class="myEdit" rows="10" cols="30" style="width: 740px; height: 440px">
+            Description
+        </textarea>
     <script type="text/javascript">
         $(function () {
             $(".myEdit").ejRTE(
@@ -108,13 +108,13 @@ In this next example each editable area will be loaded with an instance of RTE w
 
 {% highlight html %}
 
-    <textarea class="myEdit1" rows="10" cols="30" style="width: 740px; height: 440px">
-        Title
-    </textarea>
-    <br>
-    <textarea class="myEdit2" rows="10" cols="30" style="width: 740px; height: 440px">
-        Description
-    </textarea>
+        <textarea class="myEdit1" rows="10" cols="30" style="width: 740px; height: 440px">
+            Title
+        </textarea>
+        <br>
+        <textarea class="myEdit2" rows="10" cols="30" style="width: 740px; height: 440px">
+            Description
+        </textarea>
     <script type="text/javascript">
         $(function () {
             $(".myEdit1").ejRTE(

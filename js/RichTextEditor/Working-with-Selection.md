@@ -19,11 +19,11 @@ N> the selection highlight is invisible if the editor does not have focus. So, i
 
 {% highlight html %}
 
-<textarea id="texteditor"></textarea>
+    <textarea id="texteditor"></textarea>
 
-     <button onclick="selectAll()">Select All</button>
+    <button onclick="selectAll()">Select All</button>
 
-<script type="text/javascript">
+    <script type="text/javascript">
 
         $(function () {
 
@@ -39,7 +39,7 @@ N> the selection highlight is invisible if the editor does not have focus. So, i
             editor.selectAll();
         }
 
-</script>
+    </script>
 {% endhighlight %}
 
 ## Select a Range 
@@ -84,11 +84,11 @@ The following public methods helps you to retrieve the selected content from the
 
 {% highlight html %}
 
-<textarea id="texteditor"></textarea>
+    <textarea id="texteditor"></textarea>
 
-       <button onclick="getSelection()">get Selection</button>
+    <button onclick="getSelection()">get Selection</button>
 
-<script type="text/javascript">
+    <script type="text/javascript">
 
         $(function () {
 
@@ -105,6 +105,6 @@ The following public methods helps you to retrieve the selected content from the
             var selectedHtml = editor.getSelectedHtml();
         }
 
-</script>
+    </script>
 {% endhighlight %}
 

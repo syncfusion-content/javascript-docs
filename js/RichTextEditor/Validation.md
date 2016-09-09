@@ -65,10 +65,10 @@ Required field, minlength, maxlength, minWordCount and maxWordCount values valid
 
     <form id="form1">
                     
-		   <textarea id ="texteditor"></textarea>
-		   <br/>
-		   <button id="save">Validate</button>
-		   
+        <textarea id ="texteditor"></textarea>
+        <br/>
+        <button id="save">Validate</button>
+            
     </form>
 
 {% endhighlight %}
