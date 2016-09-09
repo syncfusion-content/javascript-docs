@@ -80,7 +80,7 @@ N> Default value of [`scrollSettings.isResponsive`](https://help.syncfusion.com/
 
 ### Mobile Mode
 
-If client width is less than 421px, the spreadsheet will render in mobile mode. In which, you can see that grid user interface is customized and redesigned for best view in small screens. The customized feature includes filter dialog, format dialog, chart type dialog and ribbon.
+If client width is less than 421px, the spreadsheet will render in mobile mode. In which, you can see that spreadsheet user interface is customized and redesigned for best view in small screens. The customized feature includes filter dialog, format dialog, chart type dialog and ribbon.
 
 ![](Scrolling_images/Scrolling_img2.png)
 
