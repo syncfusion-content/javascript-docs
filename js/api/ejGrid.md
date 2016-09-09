@@ -2927,7 +2927,9 @@ Gets or sets a value that indicates whether the grid rows has to be rendered as 
 <script>
 $("#Grid").ejGrid({
     dataSource:  window.gridData,
-    allowPaging: true,   
+    allowPaging: true, 
+    isResponsive: true,
+    enableResponsiveRow: true, 
     mediaSettings: { phone: 340 }
 });
 </script>
