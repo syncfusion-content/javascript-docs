@@ -3221,11 +3221,28 @@ Gets or sets an object that indicates whether to modify the resizing behaviour.
 {:#members:resizeSettings-resizeMode}
 
 Gets or sets a value that indicates whether to define the mode of resizing.
-Accepting types are “nextcolumn” and “control”.
+Accepting types are "nextcolumn" and "control".
+
+<ts name="ej.Grid.ResizeMode"/>
 
 #### Default Value:
 {:.param}
 * ej.Grid.ResizeMode.NextColumn
+
+<table>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="name">NextColumn</td>
+<td class="description">New column Size will be adjusted using next column.</td>
+</tr>
+<tr>
+<td class="name">Control</td>
+<td class="description">New column Size will be adjusted using entire control</td>
+</tr>
+</table>
 
 #### Example
 {:.example}
