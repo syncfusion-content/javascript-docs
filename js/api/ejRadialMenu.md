@@ -726,6 +726,11 @@ $("#radialmenu").ejRadialMenu({ items:[{ type:"slider", sliderSettings.ticks:[0,
 </script>{% endhighlight %}
 
 
+### items.items `array`
+{:#members:items-items}
+
+
+Specifies to add sub level items .
 
 ### radius `number`
 {:#members:radius}
