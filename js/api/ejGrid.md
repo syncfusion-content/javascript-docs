@@ -3220,10 +3220,10 @@ Gets or sets an object that indicates whether to modify the resizing behaviour.
 ### resizeSettings.resizeMode `enum`
 {:#members:resizeSettings-resizeMode}
 
+<ts name="ej.Grid.ResizeMode"/>
+
 Gets or sets a value that indicates whether to define the mode of resizing.
 Accepting types are "nextcolumn" and "control".
-
-<ts name="ej.Grid.ResizeMode"/>
 
 #### Default Value:
 {:.param}
