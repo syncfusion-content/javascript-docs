@@ -117,6 +117,7 @@ The following screenshot displays the output for the above code.
 
 ![](/js/Menu/Icons-and-navigation_images/Icons-and-navigation_img1.png) 
 
+N> Images for this sample are available in (installed location)\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\samples\web\content\images<br/>
 
 ##Navigation
 
