@@ -3250,8 +3250,8 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/pmnp5qjl)
 
 
 
-### commonSeriesOptions.connectorLine.color `string`
-{:#members:commonSeriesOptions.connectorline.color}
+### commonSeriesOptions.marker.dataLabel.connectorLine.color `string`
+{:#members:commonseriesoptions.marker.datalabel.connectorline.color}
 
 
 
@@ -3282,8 +3282,8 @@ commonSeriesOptions :{marker :{dataLabel :{connectorLine :{ color : "red" }}}}
  
  
  
- ### commonSeriesOptions.connectorLine.height `string`
-{:#members:commonSeriesOptions.connectorline.height}
+ ### commonSeriesOptions.marker.dataLabel.connectorLine.height `string`
+{:#members:commonseriesoptions.marker.datalabel.connectorline.height}
 
 
 
