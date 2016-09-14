@@ -3280,6 +3280,38 @@ commonSeriesOptions :{marker :{dataLabel :{connectorLine :{ color : "red" }}}}
 });
  {% endhighlight %} 
  
+ 
+ 
+ ### commonSeriesOptions.connectorLine.height `string`
+{:#members:commonSeriesOptions.connectorline.height}
+
+
+
+
+Height of the connector line.
+
+
+
+#### Default Value
+
+
+
+ * null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+commonSeriesOptions :{marker :{dataLabel :{connectorLine :{ height : 20 }}}}                 
+});
+ {% endhighlight %} 
+ 
 
 
 ### commonSeriesOptions.marker.dataLabel.fill `string`
@@ -10522,181 +10554,6 @@ $("#container").ejChart({
 
 
 
-### title.background `string`
-{:#members:title-background}
-
-
-
-
-Background color for the chart title.
-
-
-#### Default Value
-
-* "transparent"
-
-
-
-
-#### Example
-
-
-{% highlight js %}
- 
-$("#container").ejChart({
-
-   title : { background : "red" }                     
-
-});
-
-{% endhighlight %}
-
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/vq3sp2j2)
-
-
-### title.border `object`
-{:#members:title-border}
-
-
-
-
-Options to customize the border of the title.
-
-
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/vq3sp2j2)
-
-
-### title.border.width `number`
-{:#members:title-border-width}
-
-
-
-
-Width of the title border.
-
-
-#### Default Value
-
-* 1
-
-
-
-
-#### Example
-
-
-{% highlight js %}
- 
-$("#container").ejChart({
-
-       title:{ 
-          border : { width:1}
-      }  
-                     
-
-});
-
-{% endhighlight %}
-
-
-### title.border.color `string`
-{:#members:title-border-color}
-
-
-
-
-color of the title border.
-
-
-#### Default Value
-
-* "transparent"
-
-
-
-
-#### Example
-
-
-{% highlight js %}
- 
-$("#container").ejChart({
-
-       title:{ 
-          border : { color: "black"}
-      }  
-                     
-
-});
-
-{% endhighlight %}
-
-
-### title.border.opacity `number`
-{:#members:title-border-opacity}
-
-
-
-
-opacity of the title border.
-
-
-#### Default Value
-
-* 0.8
-
-
-
-
-#### Example
-
-
-{% highlight js %}
- 
-$("#container").ejChart({
-
-       title:{ 
-          border : { opacity: 1 }
-      }  
-                     
-
-});
-
-{% endhighlight %}
-
-
-### title.border.cornerRadius `number`
-{:#members:title-border-cornerRadius}
-
-
-
-
-opacity of the title border.
-
-
-#### Default Value
-
-* 0.8
-
-
-
-
-#### Example
-
-
-{% highlight js %}
- 
-$("#container").ejChart({
-
-       title:{ 
-          border : { cornerRadius: 2 }
-      }  
-                     
-
-});
-
-{% endhighlight %}
-
 
 ### legend.title.text `string`
 {:#members:legend-title-text}
@@ -15612,7 +15469,7 @@ $("#container").ejChart({
 
 
 
-color of the major grid lines.
+Color of the major grid lines.
 
 
 #### Default Value
@@ -20754,7 +20611,7 @@ $("#container").ejChart({
 
 
 
-DashArray of the connector line.
+Opacity of the connector line.
 
 
 
@@ -20780,7 +20637,6 @@ $("#container").ejChart({
 });
  {% endhighlight %} 
  
-
 
 ### series.errorBar `object`
 {:#members:series.errorbar}
@@ -25109,6 +24965,185 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/p0cd1lvx)
 
 
 Options for customizing the title and subtitle of Chart.
+
+
+
+
+### title.background `string`
+{:#members:title-background}
+
+
+
+
+Background color for the chart title.
+
+
+#### Default Value
+
+* "transparent"
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+$("#container").ejChart({
+
+   title : { background : "red" }                     
+
+});
+
+{% endhighlight %}
+
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/vq3sp2j2)
+
+
+### title.border `object`
+{:#members:title-border}
+
+
+
+
+Options to customize the border of the title.
+
+
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/vq3sp2j2)
+
+
+### title.border.width `number`
+{:#members:title-border-width}
+
+
+
+
+Width of the title border.
+
+
+#### Default Value
+
+* 1
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+$("#container").ejChart({
+
+       title:{ 
+          border : { width:1}
+      }  
+                     
+
+});
+
+{% endhighlight %}
+
+
+### title.border.color `string`
+{:#members:title-border-color}
+
+
+
+
+color of the title border.
+
+
+#### Default Value
+
+* "transparent"
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+$("#container").ejChart({
+
+       title:{ 
+          border : { color: "black"}
+      }  
+                     
+
+});
+
+{% endhighlight %}
+
+
+### title.border.opacity `number`
+{:#members:title-border-opacity}
+
+
+
+
+opacity of the title border.
+
+
+#### Default Value
+
+* 0.8
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+$("#container").ejChart({
+
+       title:{ 
+          border : { opacity: 1 }
+      }  
+                     
+
+});
+
+{% endhighlight %}
+
+
+### title.border.cornerRadius `number`
+{:#members:title-border-cornerRadius}
+
+
+
+
+opacity of the title border.
+
+
+#### Default Value
+
+* 0.8
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+$("#container").ejChart({
+
+       title:{ 
+          border : { cornerRadius: 2 }
+      }  
+                     
+
+});
+
+{% endhighlight %}
+
 
 
 
