@@ -3249,6 +3249,39 @@ commonSeriesOptions :{marker :{dataLabel :{connectorLine :{ width : 2 }}}}
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/pmnp5qjl)
 
 
+
+### commonSeriesOptions.connectorLine.color `string`
+{:#members:commonSeriesOptions.connectorline.color}
+
+
+
+
+Color of the connector line.
+
+
+
+#### Default Value
+
+
+
+ * "#565656"
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+commonSeriesOptions :{marker :{dataLabel :{connectorLine :{ color : "red" }}}}                 
+});
+ {% endhighlight %} 
+ 
+
+
 ### commonSeriesOptions.marker.dataLabel.fill `string`
 {:#members:commonseriesoptions-marker-datalabel-fill}
 
@@ -4400,6 +4433,39 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/yzleny3o)
 
 
 
+### commonSeriesOptions.pointColorMappingName `string`
+{:#members:commonseriesoptions-pointcolormappingname}
+
+
+
+
+Name of the property in the datasource that contains fill color for the series.
+
+
+#### Default Value
+
+
+
+* null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+commonSeriesOptions : {pointColorMappingName: "color" }                   
+});
+ {% endhighlight %}
+ 
+ 
+
+
+
 ### commonSeriesOptions.pyramidMode `enum`
 {:#members:commonseriesoptions-pyramidmode}
 
@@ -5361,6 +5427,40 @@ commonSeriesOptions : {close: "close" }
 
 
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/fqxo0isj)
+
+
+
+### commonSeriesOptions.zOrder `number`
+{:#members:commonseriesoptions-zOrder}
+
+
+
+
+zOrder of the series.
+
+
+#### Default Value
+
+
+
+* 0
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+commonSeriesOptions :{zOrder : 1}                  
+});
+
+ {% endhighlight %}
+ 
+ 
 
 
 ### commonSeriesOptions.size `string`
@@ -12407,6 +12507,39 @@ $("#container").ejChart({
 
 
 
+### primaryXAxis.majorGridLines.color `string`
+{:#members:primaryxaxis-majorgridlines-color}
+
+
+
+
+Color of the major grid line.
+
+
+#### Default Value
+
+
+
+* null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    primaryXAxis: { majorGridLines: { color : "red"} }
+                          
+});
+
+{% endhighlight %}
+
+
+
 
 ### primaryXAxis.majorGridLines.opacity `number`
 {:#members:primaryxaxis-majorgridlines-opacity}
@@ -15473,6 +15606,35 @@ $("#container").ejChart({
 {% endhighlight %}
 
 
+### primaryYAxis.majorGridLines.color `string`
+{:#members:primaryyaxis-majorgridlines-color}
+
+
+
+
+color of the major grid lines.
+
+
+#### Default Value
+
+
+
+* null
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    primaryYAxis: { majorGridLines : {color : "red"} }
+                      
+});
+
+
 
 
 ### primaryYAxis.majorGridLines.opacity `number`
@@ -16124,6 +16286,108 @@ $("#container").ejChart({
 {% endhighlight %}
 
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/ls2i5oiv)
+
+
+
+### primaryYAxis.range `object`
+{:#members:primaryyaxis-range}
+
+
+Options to customize the range of the axis.
+
+ 
+
+
+### primaryYAxis.range.min `number`
+{:#members:primaryyaxis-range-min}
+
+
+
+
+Minimum value of the axis range.
+
+
+#### Default Value
+
+* null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    primaryYAxis: { range : { min: 10 } }
+                          
+});
+
+{% endhighlight %}
+
+
+### primaryYAxis.range.max `number`
+{:#members:primaryyaxis-range-max}
+
+
+
+
+Maximum value of the axis range.
+
+
+#### Default Value
+
+* null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    primaryYAxis: { range : { max: 100 } }
+                          
+});
+
+{% endhighlight %}
+
+
+
+### primaryYAxis.range.interval `number`
+{:#members:primaryyaxis-range-interval}
+
+
+
+
+Interval for the range.
+
+
+#### Default Value
+
+* null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    primaryYAxis: { range : { interval: 10 } }
+                          
+});
+
+{% endhighlight %}
+
 
 
 ### primaryYAxis.rangePadding `enum`
@@ -19055,6 +19319,71 @@ series :[{marker :{dataLabel :{connectorLine :{ width : 2 }}}}]
 
 
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/fjr0nbgc)
+
+
+### series.marker.dataLabel.connectorLine.color `string`
+{:#members:series-marker-datalabel-connectorline-color}
+
+
+
+
+Color of the connector. 
+
+
+#### Default Value
+
+
+
+ * null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+series :[{marker :{dataLabel :{connectorLine :{ color : "red" }}}}]                 
+});
+ {% endhighlight %}
+ 
+ 
+ 
+ 
+ ### series.marker.dataLabel.connectorLine.height `number`
+{:#members:series-marker-datalabel-connectorline-color}
+
+
+
+
+Height of the connector. 
+
+
+#### Default Value
+
+
+
+ * null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+series :[{marker :{dataLabel :{connectorLine :{ height : 10 }}}}]                 
+});
+ {% endhighlight %}
+
+
+ 
 
 
 
@@ -23440,6 +23769,70 @@ series : [{close: "close" }]
 
 
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/pqshst44)
+
+
+
+
+### series.pointColorMappingName `string`
+{:#members:series-pointcolormappingname}
+
+
+
+
+Name of the property in the datasource that contains fill color for the series.
+
+
+#### Default Value
+
+
+
+* null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+   series : [{pointColorMappingName: "color" }]                   
+});
+ {% endhighlight %}
+ 
+ 
+ 
+ ### series.zOrder `number`
+{:#members:series-zOrder}
+
+
+
+
+zOrder of the series.
+
+
+#### Default Value
+
+
+
+* 0
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+series :[{zOrder : 1}]                  
+});
+ {% endhighlight %}
+ 
 
 
 ### series.size `string`
