@@ -32,25 +32,30 @@ Add the following code in your **HTML** page.
 
 
     // Initialize the Menu control in JavaScript.
-    var data = [
-        { id: 1, text: "Inbox", parentId: null, sprite: "mail-ca" },
-        { id: 2, text: "Sent Items", parentId: null, sprite: "mail-cn" },
-        { id: 3, text: "All Mail", parentId: null, sprite: "mail-ee" },
-        { id: 4, text: "Outbox", parentId: null, sprite: "mail-es" },
-        //first level child
-        { id: 11, parentId: 1, text: "Mark as unread", sprite: "mail-dz" },
-        { id: 12, parentId: 1, text: "Forward", sprite: "mail-am" },
-        { id: 13, parentId: 1, text: "Mark as favourite", sprite: "mail-bd" },
-        { id: 14, parentId: 1, text: "Mark as important", sprite: "mail-cu" },
-        { id: 15, parentId: 2, text: "Move to trash", sprite: "mail-dk" },
-        { id: 16, parentId: 2, text: "Delete", sprite: "mail-eg" },
-        { id: 17, parentId: 3, text: "New Mail", sprite: "mail-fi" },
-        { id: 18, parentId: 3, text: "Read Mail", sprite: "mail-in" },
-        { id: 19, parentId: 3, text: "Unread Mail", sprite: "mail-my" },
-        { id: 20, parentId: 4, text: "Discard draft", sprite: "mail-nz" },
-        { id: 21, parentId: 4, text: "Send again", sprite: "mail-no" },
-        { id: 22, parentId: 4, text: "Delete", sprite: "mail-pl" },
-    ];
+        var data = [
+            { id: 1, text: "Group A", parentId: null },
+            { id: 2, text: "Group B", parentId: null },
+            { id: 3, text: "Group C", parentId: null },
+            { id: 4, text: "Group D", parentId: null },
+            { id: 5, text: "Group E", parentId: null },
+            //first level child
+            { id: 11, parentId: 1, text: "Algeria", sprite: "flag-dz" },
+            { id: 12, parentId: 1, text: "Armenia", sprite: "flag-am" },
+            { id: 13, parentId: 1, text: "Bangladesh", sprite: "flag-bd" },
+            { id: 14, parentId: 1, text: "Cuba", sprite: "flag-cu" },
+            { id: 15, parentId: 2, text: "Denmark", sprite: "flag-dk" },
+            { id: 16, parentId: 2, text: "Egypt", sprite: "flag-eg" },
+            { id: 17, parentId: 3, text: "Finland", sprite: "flag-fi" },
+            { id: 18, parentId: 3, text: "India", sprite: "flag-in" },
+            { id: 19, parentId: 3, text: "Malaysia", sprite: "flag-my" },
+            { id: 20, parentId: 4, text: "New Zealand", sprite: "flag-nz" },
+            { id: 21, parentId: 4, text: "Norway", sprite: "flag-no" },
+            { id: 22, parentId: 4, text: "Poland", sprite: "flag-pl" },
+            { id: 23, parentId: 5, text: "Romania", sprite: "flag-ro" },
+            { id: 24, parentId: 5, text: "Singapore", sprite: "flag-sg" },
+            { id: 25, parentId: 5, text: "Thailand", sprite: "flag-th" },
+            { id: 26, parentId: 5, text: "Ukraine", sprite: "flag-ua" },            
+        ];
     jQuery(function ($) {
         $("#menujson").ejMenu({
             width: 425,
@@ -76,30 +81,31 @@ Add the following code in your style section.
         .e-menu li > ul > li > a {
             padding: 3px 24px 3px 35px;
         }
-        [class^="mail-"],
-        [class*="mail-"] {
-            background-image: url("../images/spriteimage.png");
-            height: 18px;
+        [class^="flag-"],
+        [class*="flag-"] {
+            background-image: url("../content/images/autocomplete/flags.png");
+            height: 14px;
             left: 2px;
             top: 4px;
             width: 24px;
         }
-        .mail-dz { background-position: -68px -15px;     }
-        .mail-am { background-position: 91px -45px;      }
-        .mail-bd { background-position: -98px 0;         }
-        .mail-cu { background-position: -607px -221px;   }
-        .mail-dk { background-position: -67px -15px;     }
-        .mail-eg { background-position: 600px -15px;     }
-        .mail-fi { background-position: 12441px 12458px; }
-        .mail-in { background-position: -307px -103px;   }
-        .mail-my { background-position: 240px -102px;    }
-        .mail-nz { background-position: -100px -45px;    }
-        .mail-no { background-position: -69px -45px;     }
-        .mail-pl { background-position: -129px -45px;    }
-        .mail-ca { background-position: -1345px -387px;  }
-        .mail-cn { background-position: -427px -42px;    }
-        .mail-ee { background-position: -706px -15px;    }
-        .mail-es { background-position: -1157px -43px    }
+        .flag-am {background-position: -25px 0;}
+        .flag-bd {background-position: -75px 0;}
+        .flag-cu {background-position: -25px -15px;}
+        .flag-dk {background-position: -50px -15px;}
+        .flag-dz {background-position: -75px -15px;}
+        .flag-eg {background-position: -125px -15px;}
+        .flag-fi {background-position: -25px -30px;}
+        .flag-id {background-position: -100px -30px;}
+        .flag-in {background-position: -125px -30px;}
+        .flag-my {background-position: -25px -45px;}
+        .flag-no {background-position: -75px -45px;}
+        .flag-nz {background-position: -100px -45px;}
+        .flag-pl {background-position: -125px -45px;}
+        .flag-ro {background-position: -50px -60px;}
+        .flag-sg {background-position: -100px -60px;}
+        .flag-th {background-position: -125px -60px;}
+        .flag-ua {background-position: -25px -75px;}
     </style>
 
 
@@ -111,6 +117,7 @@ The following screenshot displays the output for the above code.
 
 ![](/js/Menu/Icons-and-navigation_images/Icons-and-navigation_img1.png) 
 
+N> Images for this sample are available in (installed location)\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\samples\web\content\images<br/>
 
 ##Navigation
 
