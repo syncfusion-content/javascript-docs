@@ -2579,56 +2579,44 @@ Process the Report in Reportviewer Control  with specified report details
 
 Code snippet:
 
-ReportHelper helper = new ReportHelper();
-
-helper.ProcessReport(jsonResult, this);
+return.ProcessReport(jsonResult, this);
 
 ### GetReport(string key, string type)
 
-Getting the Report with specified key and type for Reportviewer Control
+Getting the Report to be processed in Reportviewer Control
 
 Code snippet:
 
-ReportHelper helper = new ReportHelper();
-
-helper.GetReport(string key, string type);
+return.GetReport(string key, string type);
 
 ### GetResource(string key, string resourcetype, bool isPrint)
 
-Getting the Resource with specified key and typresourcetype for Reportviewer Control
+Getting the Resource from Reportviewer Control and It will process the report Exporting.
 
 Code snippet:
 
-ReportHelper helper = new ReportHelper();
-
-helper.GetResource(string key, string resourcetype, bool isPrint);
+return.GetResource(string key, string resourcetype, bool isPrint);
 
 ### GetParameters()
 
-Getting the Report Parameters for Reportviewer Control
+Getting the Report Parameters of the Reportviewer Control
 
 Code snippet:
 
-ReportHelper helper = new ReportHelper();
-
-helper.GetParameters();
+return.GetParameters();
 
 ### GetDataSources()
 
-Getting the Report DataSource for Reportviewer Control
+Getting the Report DataSource of the Reportviewer Control
 
 Code snippet:
 
-ReportHelper helper = new ReportHelper();
-
-helper.GetDataSources();
+return.GetDataSources();
 
 ### GetDataSetNames()
 
-Getting the Report Dataset for Reportviewer Control
+Getting the Report Dataset of the Reportviewer Control
 
 Code snippet:
 
-ReportHelper helper = new ReportHelper();
-
-helper.GetDataSetNames();
+return.GetDataSetNames();
