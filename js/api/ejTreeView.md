@@ -2345,19 +2345,27 @@ $("#treeView").ejTreeView("checkNode", $("#book"));
 
 
 
-### collapseAll()
+### collapseAll([levelUntil])
 {:#methods:collapseall}
 
+This method is used to collapse all nodes in TreeView control. If you want to collapse all nodes up to the specific level in TreeView control then we need to pass level as argument to this method.
 
-
-
-
-
-
-
-To collapse all the TreeView nodes.
-
-
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">levelUntil</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">TreeView nodes will collapse until the given level</td>
+</tr>
+</tbody>
+</table>
 
 
 
@@ -2376,6 +2384,7 @@ $("#treeView").ejTreeView({
 
 var treeObj = $("#treeView").data("ejTreeView");
 treeObj.collapseAll(); // All the TreeView nodes will be collapsed.
+treeObj.collapseAll(2); // All the TreeView nodes up to level 2 will be collapsed.
 </script>{% endhighlight %}
 
 
@@ -2652,20 +2661,28 @@ $("#treeView").ejTreeView("ensureVisible", $("#book"));
 
 
 
-### expandAll()
+### expandAll([levelUntil])
 {:#methods:expandall}
 
+This method is used to expand all nodes in TreeView control. If you want to expand all nodes up to the specific level in TreeView control then we need to pass level as argument to this method.
 
 
-
-
-
-
-
-To expand all the TreeView nodes.
-
-
-
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">levelUntil</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">TreeView nodes will expand until the given level</td>
+</tr>
+</tbody>
+</table>
 
 
 #### Example
@@ -2683,6 +2700,7 @@ $("#treeView").ejTreeView({
 
 var treeObj = $("#treeView").data("ejTreeView");
 treeObj.expandAll(); // All the TreeView nodes will be expanded.
+treeObj.expandAll(2); // All the TreeView nodes up to the level 2 will be expanded.
 </script>{% endhighlight %}
 
 
