@@ -1323,6 +1323,103 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 {% endhighlight %}
 
+### connectors.labels.mode `enum`
+{:#members:connectors-labels-mode}
+
+<ts ref = "ej.datavisualization.Diagram.LabelEditMode"/>
+
+Gets whether the label is currently being edited or not.
+
+#### Default Value:
+
+* ej.datavisualization.Diagram.LabelEditMode.Edit
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var connector = diagram.selectionList[0];
+console.log(connector.labels[0].mode);
+</script>
+
+{% endhighlight %}
+
+### connectors.labels.name `String`
+{:#members:connectors-labels-name}
+
+Sets the unique identifier of the label
+
+#### Default Value:
+
+* ""
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var connectors;
+connectors=[{ name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200},
+         labels:[{ text:"label", name:"label1"}]
+      }];
+$("#diagramcontent").ejDiagram({connectors:connectors});
+</script>
+
+{% endhighlight %}
+
+### connectors.labels.offset `Object`
+{:#members:connectors-labels-offset}
+
+Sets the fraction/ratio(relative to connector) that defines the position of the label
+
+#### Default Value:
+
+* ej.datavisualization.Diagram.Point(0.5, 0.5)
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var connectors;
+connectors=[{ name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200},
+         labels:[{ text:"label", offset:ej.datavisualization.Diagram.Point(0,0.5) }]
+      }];
+$("#diagramcontent").ejDiagram({connectors:connectors});
+
+</script>
+
+{% endhighlight %}
+
+### connectors.labels.margin `Object`
+{:#members:connectors-labels-margin}
+
+Sets the fraction/ratio(relative to connector) that defines the position of the label
+
+#### Default Value:
+
+* ej.datavisualization.Diagram.Point(0.5, 0.5)
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var connectors;
+connectors=[{ name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200},
+         labels:[{ text:"label", offset:ej.datavisualization.Diagram.Point(0,0.5) }]
+      }];
+$("#diagramcontent").ejDiagram({connectors:connectors});
+
+</script>
+
+{% endhighlight %}
+
 ### connectors.labels.margin.right `number`
 {:#members:connectors-labels-margin-right}
 
@@ -1419,103 +1516,6 @@ connectors=[{ name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200,
          labels:[{ text:"label", offset:{ x:0 }, horizontalAlignment:"left", margin:{ bottom: 5 }}]
       }];
 $("#diagramcontent").ejDiagram({connectors:connectors});
-</script>
-
-{% endhighlight %}
-
-### connectors.labels.mode `enum`
-{:#members:connectors-labels-mode}
-
-<ts ref = "ej.datavisualization.Diagram.LabelEditMode"/>
-
-Gets whether the label is currently being edited or not.
-
-#### Default Value:
-
-* ej.datavisualization.Diagram.LabelEditMode.Edit
-
-#### Example
-
-{% highlight html %}
-
-<div id="diagramcontent"></div>
-<script>
-var connector = diagram.selectionList[0];
-console.log(connector.labels[0].mode);
-</script>
-
-{% endhighlight %}
-
-### connectors.labels.name `String`
-{:#members:connectors-labels-name}
-
-Sets the unique identifier of the label
-
-#### Default Value:
-
-* ""
-
-#### Example
-
-{% highlight html %}
-
-<div id="diagramcontent"></div>
-<script>
-var connectors;
-connectors=[{ name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200},
-         labels:[{ text:"label", name:"label1"}]
-      }];
-$("#diagramcontent").ejDiagram({connectors:connectors});
-</script>
-
-{% endhighlight %}
-
-### connectors.labels.offset `Object`
-{:#members:connectors-labels-offset}
-
-Sets the fraction/ratio(relative to connector) that defines the position of the label
-
-#### Default Value:
-
-* ej.datavisualization.Diagram.Point(0.5, 0.5)
-
-#### Example
-
-{% highlight html %}
-
-<div id="diagramcontent"></div>
-<script>
-var connectors;
-connectors=[{ name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200},
-         labels:[{ text:"label", offset:ej.datavisualization.Diagram.Point(0,0.5) }]
-      }];
-$("#diagramcontent").ejDiagram({connectors:connectors});
-
-</script>
-
-{% endhighlight %}
-
-### connectors.labels.margin `Object`
-{:#members:connectors-labels-margin}
-
-Sets the fraction/ratio(relative to connector) that defines the position of the label
-
-#### Default Value:
-
-* ej.datavisualization.Diagram.Point(0.5, 0.5)
-
-#### Example
-
-{% highlight html %}
-
-<div id="diagramcontent"></div>
-<script>
-var connectors;
-connectors=[{ name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200},
-         labels:[{ text:"label", offset:ej.datavisualization.Diagram.Point(0,0.5) }]
-      }];
-$("#diagramcontent").ejDiagram({connectors:connectors});
-
 </script>
 
 {% endhighlight %}
