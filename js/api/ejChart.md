@@ -7837,6 +7837,88 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/hfja2bta)
 
 
 
+### crosshair.line `object`
+{:#members:crosshair-line}
+
+
+
+
+Options for customizing the crosshair line.
+
+
+
+
+
+
+### crosshair.line.color `string`
+{:#members:crosshair-line-color}
+
+
+
+
+Color of the crosshair line.
+ 
+
+
+#### Default Value
+
+* "transparent"
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+$("#container").ejChart({
+
+   crosshair : { line : { color "red" } }              
+
+});
+
+{% endhighlight %}
+
+
+### crosshair.line.width `number`
+{:#members:crosshair-line-width}
+
+
+
+
+Width of the crosshair line.
+ 
+
+
+#### Default Value
+
+* 1
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+$("#container").ejChart({
+
+   crosshair : { line : { width: 2 } }              
+
+});
+
+{% endhighlight %}
+
+
+
+
+
+ 
+
+
+
 ### crosshair.type `enum`
 {:#members:crosshair-type}
 
