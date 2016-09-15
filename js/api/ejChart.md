@@ -3249,6 +3249,71 @@ commonSeriesOptions :{marker :{dataLabel :{connectorLine :{ width : 2 }}}}
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/pmnp5qjl)
 
 
+
+### commonSeriesOptions.marker.dataLabel.connectorLine.color `string`
+{:#members:commonseriesoptions.marker.datalabel.connectorline.color}
+
+
+
+
+Color of the connector line.
+
+
+
+#### Default Value
+
+
+
+ * "#565656"
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+commonSeriesOptions :{marker :{dataLabel :{connectorLine :{ color : "red" }}}}                 
+});
+ {% endhighlight %} 
+ 
+ 
+ 
+ ### commonSeriesOptions.marker.dataLabel.connectorLine.height `string`
+{:#members:commonseriesoptions.marker.datalabel.connectorline.height}
+
+
+
+
+Height of the connector line.
+
+
+
+#### Default Value
+
+
+
+ * null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+commonSeriesOptions :{marker :{dataLabel :{connectorLine :{ height : 20 }}}}                 
+});
+ {% endhighlight %} 
+ 
+
+
 ### commonSeriesOptions.marker.dataLabel.fill `string`
 {:#members:commonseriesoptions-marker-datalabel-fill}
 
@@ -4400,6 +4465,39 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/yzleny3o)
 
 
 
+### commonSeriesOptions.pointColorMappingName `string`
+{:#members:commonseriesoptions-pointcolormappingname}
+
+
+
+
+Name of the property in the datasource that contains fill color for the series.
+
+
+#### Default Value
+
+
+
+* null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+commonSeriesOptions : {pointColorMappingName: "color" }                   
+});
+ {% endhighlight %}
+ 
+ 
+
+
+
 ### commonSeriesOptions.pyramidMode `enum`
 {:#members:commonseriesoptions-pyramidmode}
 
@@ -5361,6 +5459,40 @@ commonSeriesOptions : {close: "close" }
 
 
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/fqxo0isj)
+
+
+
+### commonSeriesOptions.zOrder `number`
+{:#members:commonseriesoptions-zOrder}
+
+
+
+
+zOrder of the series.
+
+
+#### Default Value
+
+
+
+* 0
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+commonSeriesOptions :{zOrder : 1}                  
+});
+
+ {% endhighlight %}
+ 
+ 
 
 
 ### commonSeriesOptions.size `string`
@@ -7702,6 +7834,88 @@ $("#container").ejChart({
 
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/hfja2bta)
 
+
+
+
+### crosshair.line `object`
+{:#members:crosshair-line}
+
+
+
+
+Options for customizing the crosshair line.
+
+
+
+
+
+
+### crosshair.line.color `string`
+{:#members:crosshair-line-color}
+
+
+
+
+Color of the crosshair line.
+ 
+
+
+#### Default Value
+
+* "transparent"
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+$("#container").ejChart({
+
+   crosshair : { line : { color "red" } }              
+
+});
+
+{% endhighlight %}
+
+
+### crosshair.line.width `number`
+{:#members:crosshair-line-width}
+
+
+
+
+Width of the crosshair line.
+ 
+
+
+#### Default Value
+
+* 1
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+$("#container").ejChart({
+
+   crosshair : { line : { width: 2 } }              
+
+});
+
+{% endhighlight %}
+
+
+
+
+
+ 
 
 
 
@@ -10422,181 +10636,6 @@ $("#container").ejChart({
 
 
 
-### title.background `string`
-{:#members:title-background}
-
-
-
-
-Background color for the chart title.
-
-
-#### Default Value
-
-* "transparent"
-
-
-
-
-#### Example
-
-
-{% highlight js %}
- 
-$("#container").ejChart({
-
-   title : { background : "red" }                     
-
-});
-
-{% endhighlight %}
-
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/vq3sp2j2)
-
-
-### title.border `object`
-{:#members:title-border}
-
-
-
-
-Options to customize the border of the title.
-
-
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/vq3sp2j2)
-
-
-### title.border.width `number`
-{:#members:title-border-width}
-
-
-
-
-Width of the title border.
-
-
-#### Default Value
-
-* 1
-
-
-
-
-#### Example
-
-
-{% highlight js %}
- 
-$("#container").ejChart({
-
-       title:{ 
-          border : { width:1}
-      }  
-                     
-
-});
-
-{% endhighlight %}
-
-
-### title.border.color `string`
-{:#members:title-border-color}
-
-
-
-
-color of the title border.
-
-
-#### Default Value
-
-* "transparent"
-
-
-
-
-#### Example
-
-
-{% highlight js %}
- 
-$("#container").ejChart({
-
-       title:{ 
-          border : { color: "black"}
-      }  
-                     
-
-});
-
-{% endhighlight %}
-
-
-### title.border.opacity `number`
-{:#members:title-border-opacity}
-
-
-
-
-opacity of the title border.
-
-
-#### Default Value
-
-* 0.8
-
-
-
-
-#### Example
-
-
-{% highlight js %}
- 
-$("#container").ejChart({
-
-       title:{ 
-          border : { opacity: 1 }
-      }  
-                     
-
-});
-
-{% endhighlight %}
-
-
-### title.border.cornerRadius `number`
-{:#members:title-border-cornerRadius}
-
-
-
-
-opacity of the title border.
-
-
-#### Default Value
-
-* 0.8
-
-
-
-
-#### Example
-
-
-{% highlight js %}
- 
-$("#container").ejChart({
-
-       title:{ 
-          border : { cornerRadius: 2 }
-      }  
-                     
-
-});
-
-{% endhighlight %}
-
 
 ### legend.title.text `string`
 {:#members:legend-title-text}
@@ -12407,6 +12446,39 @@ $("#container").ejChart({
 
 
 
+### primaryXAxis.majorGridLines.color `string`
+{:#members:primaryxaxis-majorgridlines-color}
+
+
+
+
+Color of the major grid line.
+
+
+#### Default Value
+
+
+
+* null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    primaryXAxis: { majorGridLines: { color : "red"} }
+                          
+});
+
+{% endhighlight %}
+
+
+
 
 ### primaryXAxis.majorGridLines.opacity `number`
 {:#members:primaryxaxis-majorgridlines-opacity}
@@ -13068,8 +13140,8 @@ Options to customize the range of the axis.
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/Sync_jhhilggd)
 
 
-### primaryXAxis.range.minimum `number`
-{:#members:primaryxaxis-range-minimum}
+### primaryXAxis.range.min `number`
+{:#members:primaryxaxis-range-min}
 
 
 
@@ -13091,15 +13163,15 @@ Minimum value of the axis range.
 
 $("#container").ejChart({
 
-    primaryXAxis: { range : { minimum: 10 } }
+    primaryXAxis: { range : { min: 10 } }
                           
 });
 
 {% endhighlight %}
 
 
-### primaryXAxis.range.maximum `number`
-{:#members:primaryxaxis-range-maximum}
+### primaryXAxis.range.max `number`
+{:#members:primaryxaxis-range-max}
 
 
 
@@ -13121,7 +13193,7 @@ Maximum value of the axis range.
 
 $("#container").ejChart({
 
-    primaryXAxis: { range : { maximum: 100 } }
+    primaryXAxis: { range : { max: 100 } }
                           
 });
 
@@ -15473,6 +15545,35 @@ $("#container").ejChart({
 {% endhighlight %}
 
 
+### primaryYAxis.majorGridLines.color `string`
+{:#members:primaryyaxis-majorgridlines-color}
+
+
+
+
+Color of the major grid lines.
+
+
+#### Default Value
+
+
+
+* null
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    primaryYAxis: { majorGridLines : {color : "red"} }
+                      
+});
+
+
 
 
 ### primaryYAxis.majorGridLines.opacity `number`
@@ -16124,6 +16225,108 @@ $("#container").ejChart({
 {% endhighlight %}
 
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/ls2i5oiv)
+
+
+
+### primaryYAxis.range `object`
+{:#members:primaryyaxis-range}
+
+
+Options to customize the range of the axis.
+
+ 
+
+
+### primaryYAxis.range.min `number`
+{:#members:primaryyaxis-range-min}
+
+
+
+
+Minimum value of the axis range.
+
+
+#### Default Value
+
+* null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    primaryYAxis: { range : { min: 10 } }
+                          
+});
+
+{% endhighlight %}
+
+
+### primaryYAxis.range.max `number`
+{:#members:primaryyaxis-range-max}
+
+
+
+
+Maximum value of the axis range.
+
+
+#### Default Value
+
+* null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    primaryYAxis: { range : { max: 100 } }
+                          
+});
+
+{% endhighlight %}
+
+
+
+### primaryYAxis.range.interval `number`
+{:#members:primaryyaxis-range-interval}
+
+
+
+
+Interval for the range.
+
+
+#### Default Value
+
+* null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    primaryYAxis: { range : { interval: 10 } }
+                          
+});
+
+{% endhighlight %}
+
 
 
 ### primaryYAxis.rangePadding `enum`
@@ -19057,6 +19260,71 @@ series :[{marker :{dataLabel :{connectorLine :{ width : 2 }}}}]
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/fjr0nbgc)
 
 
+### series.marker.dataLabel.connectorLine.color `string`
+{:#members:series-marker-datalabel-connectorline-color}
+
+
+
+
+Color of the connector. 
+
+
+#### Default Value
+
+
+
+ * null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+series :[{marker :{dataLabel :{connectorLine :{ color : "red" }}}}]                 
+});
+ {% endhighlight %}
+ 
+ 
+ 
+ 
+ ### series.marker.dataLabel.connectorLine.height `number`
+{:#members:series-marker-datalabel-connectorline-color}
+
+
+
+
+Height of the connector. 
+
+
+#### Default Value
+
+
+
+ * null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+series :[{marker :{dataLabel :{connectorLine :{ height : 10 }}}}]                 
+});
+ {% endhighlight %}
+
+
+ 
+
+
 
 ### series.marker.dataLabel.fill `string`
 {:#members:series-marker-datalabel-fill}
@@ -20425,7 +20693,7 @@ $("#container").ejChart({
 
 
 
-DashArray of the connector line.
+Opacity of the connector line.
 
 
 
@@ -20451,7 +20719,6 @@ $("#container").ejChart({
 });
  {% endhighlight %} 
  
-
 
 ### series.errorBar `object`
 {:#members:series.errorbar}
@@ -23442,6 +23709,70 @@ series : [{close: "close" }]
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/pqshst44)
 
 
+
+
+### series.pointColorMappingName `string`
+{:#members:series-pointcolormappingname}
+
+
+
+
+Name of the property in the datasource that contains fill color for the series.
+
+
+#### Default Value
+
+
+
+* null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+   series : [{pointColorMappingName: "color" }]                   
+});
+ {% endhighlight %}
+ 
+ 
+ 
+ ### series.zOrder `number`
+{:#members:series-zOrder}
+
+
+
+
+zOrder of the series.
+
+
+#### Default Value
+
+
+
+* 0
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+series :[{zOrder : 1}]                  
+});
+ {% endhighlight %}
+ 
+
+
 ### series.size `string`
 {:#members:series.size}
 
@@ -24716,6 +25047,185 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/p0cd1lvx)
 
 
 Options for customizing the title and subtitle of Chart.
+
+
+
+
+### title.background `string`
+{:#members:title-background}
+
+
+
+
+Background color for the chart title.
+
+
+#### Default Value
+
+* "transparent"
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+$("#container").ejChart({
+
+   title : { background : "red" }                     
+
+});
+
+{% endhighlight %}
+
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/vq3sp2j2)
+
+
+### title.border `object`
+{:#members:title-border}
+
+
+
+
+Options to customize the border of the title.
+
+
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/vq3sp2j2)
+
+
+### title.border.width `number`
+{:#members:title-border-width}
+
+
+
+
+Width of the title border.
+
+
+#### Default Value
+
+* 1
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+$("#container").ejChart({
+
+       title:{ 
+          border : { width:1}
+      }  
+                     
+
+});
+
+{% endhighlight %}
+
+
+### title.border.color `string`
+{:#members:title-border-color}
+
+
+
+
+color of the title border.
+
+
+#### Default Value
+
+* "transparent"
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+$("#container").ejChart({
+
+       title:{ 
+          border : { color: "black"}
+      }  
+                     
+
+});
+
+{% endhighlight %}
+
+
+### title.border.opacity `number`
+{:#members:title-border-opacity}
+
+
+
+
+opacity of the title border.
+
+
+#### Default Value
+
+* 0.8
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+$("#container").ejChart({
+
+       title:{ 
+          border : { opacity: 1 }
+      }  
+                     
+
+});
+
+{% endhighlight %}
+
+
+### title.border.cornerRadius `number`
+{:#members:title-border-cornerRadius}
+
+
+
+
+opacity of the title border.
+
+
+#### Default Value
+
+* 0.8
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+$("#container").ejChart({
+
+       title:{ 
+          border : { cornerRadius: 2 }
+      }  
+                     
+
+});
+
+{% endhighlight %}
+
 
 
 
