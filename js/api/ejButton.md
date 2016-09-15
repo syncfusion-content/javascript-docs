@@ -219,7 +219,7 @@ Specifies the button control state.
         
         <script>
         // Enable Button on initialization. 
-                $("#button1").ejButton({ enabled:true });       
+                $("#button1").ejButton({ enabled:false });       
         </script>
 
 {% endhighlight %}
@@ -256,7 +256,7 @@ Specify the Right to Left direction to button
         
         <script>
         // Set the enableRTL during initialization.                     
-                $("#button1").ejButton({ enableRTL : true });        
+                $("#button1").ejButton({ enableRTL : false });        
         </script>                                 
 
 {% endhighlight %}
@@ -417,7 +417,7 @@ ImageBottom</td>
 
 Specifies the primary icon for Button. This icon will be displayed from the left margin of the button.
 
-N>  This is applicable for the content type’s imageonly, textandimage, imagetextimage and imageboth.
+N>  This is applicable for the content type's imageonly, textandimage, imagetextimage and imageboth.
 
 
 #### Default Value
@@ -609,7 +609,7 @@ Large</td>
 
 Specifies the secondary icon for Button. This icon will be displayed from the right margin of the button. 
 
-N>   This is applicable for the content type’s imagetextimage and imageboth.
+N>   This is applicable for the content type's imagetextimage and imageboth.
 
 
 #### Default Value
@@ -635,8 +635,7 @@ N>   This is applicable for the content type’s imagetextimage and imageboth.
                 $("#button1").ejButton(
         {
             contentType: "imageonly",
-                        prefixIcon: "e-uiLight e-icon e-handup",
-                    suffixIcon: "e-uiLight e-icon e-padlockclosed"
+            prefixIcon: "e-uiLight e-icon e-handup",
         });            
         </script>
 
