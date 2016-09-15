@@ -322,6 +322,42 @@ Assign the table name from where the records are to be fetched for the Schedule.
 
 > The following are the appointment fields that holds the appropriate column names from the dataSource. All its default values are `null`.
 
+### appointmentSettings.applyTimeOffset `boolean`
+{:#members:appointmentsettings-applytimeoffset}
+
+When set to false, doesn't consider the time difference offset calculation on appointment time.
+
+#### Default Value
+
+* true
+
+#### Example - To set the timezone for schedule appointments or not.
+
+{% highlight html %}
+
+<div id="Schedule"></div>
+
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+                  currentDate:new Date(2014,4,5),
+        		  appointmentSettings: {
+                    applyTimeOffset: false,
+                    dataSource: [{
+                        EventId: 101,
+                        EventStartTime: new Date(2014, 4, 5, 10, 00),
+                        EventEndTime: new Date(2014, 4, 5, 12, 00)
+                    }],
+                    id: "EventId",
+                    startTime: "EventStartTime",
+                    endTime: "EventEndTime"
+                }
+            });
+        });
+</script>
+
+{% endhighlight %}
+
 ### appointmentSettings.id `string`
 {:#members:appointmentsettings-id}
 
@@ -3228,6 +3264,43 @@ When set to true, displays the location field additionally on Schedule appointme
                 width: "100%",
                 currentDate: new Date(2014, 04, 05),
                 showLocationField: true,
+                appointmentSettings: {
+                    dataSource: [{
+                        Id: 101,
+                        Subject: "Talk with Nature",
+                        StartTime: new Date(2014, 4, 5, 10, 00),
+                        EndTime: new Date(2014, 4, 5, 11, 00),
+                        Location: "Chicago"
+                    }],
+                    location: "Location"
+                }
+            });
+        });
+</script>
+
+{% endhighlight %}
+
+### showTimeZoneFields `boolean`
+{:#members:showtimezonefields}
+
+When set to false, doesn't render the start and end timezone fields on the Schedule appointment window.
+
+#### Default Value
+
+* true
+
+#### Example - To show or hide the timezone field in appointment window.
+
+{% highlight html %}
+
+<div id="Schedule"></div>
+
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+                width: "100%",
+                currentDate: new Date(2014, 04, 05),
+                showTimeZoneFields: false,
                 appointmentSettings: {
                     dataSource: [{
                         Id: 101,
