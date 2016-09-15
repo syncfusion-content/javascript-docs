@@ -325,7 +325,7 @@ Assign the table name from where the records are to be fetched for the Schedule.
 ### appointmentSettings.applyTimeOffset `boolean`
 {:#members:appointmentsettings-applytimeoffset}
 
-To set the timezone for Schedule appointment
+When set to false, doesn't consider the time difference offset calculation on appointment time.
 
 #### Default Value
 
@@ -3283,7 +3283,7 @@ When set to true, displays the location field additionally on Schedule appointme
 ### showTimeZoneFields `boolean`
 {:#members:showtimezonefields}
 
-When set to false, hides the timezone field on Schedule appointment window.
+When set to false, doesn't render the start and end timezone fields on the Schedule appointment window.
 
 #### Default Value
 
