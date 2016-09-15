@@ -262,6 +262,105 @@ $("#symbolpalette").ejSymbolPalette({
 
 {% endhighlight %}
 
+### palettes.name `string`
+{:#members:palettes-name}
+
+Defines the name of the palette
+
+#### Default Value
+
+* null
+
+#### Example
+
+{% highlight html %}
+
+<div id="symbolpalette"></div>
+<script>
+	
+var palette = {
+		name: "Basic Shapes",
+		expanded: true,
+		items: [{
+			name: "Rectangle", height: 40, width: 80
+		}]
+	};
+	
+$("#symbolpalette").ejSymbolPalette({
+	//Initializes the palette collection
+	palettes: [ palette ]
+});
+
+</script>
+
+{% endhighlight %}
+
+### palettes.expanded `boolean`
+{:#members:palettes-expanded}
+
+Defines whether the palette must be in expanded state or in collapsed state
+
+#### Default Value
+
+* true
+
+#### Example
+
+{% highlight html %}
+
+<div id="symbolpalette"></div>
+<script>
+	
+var palette = {
+		name: "Basic Shapes",
+		expanded: true,
+		items: [{
+			name: "Rectangle", expanded:true, height: 40, width: 80
+		}]
+	};
+	
+$("#symbolpalette").ejSymbolPalette({
+	//Initializes the palette collection
+	palettes: [ palette ]
+});
+
+</script>
+
+{% endhighlight %}
+
+### palettes.items `Array`
+{:#members:palettes-items}
+
+Defines the palette items
+
+#### Default Value
+
+* []
+
+#### Example
+
+{% highlight html %}
+
+<div id="symbolpalette"></div>
+<script>
+	
+var palette = {
+		name: "Basic Shapes",
+		expanded: true,
+		items: [{
+			name: "Rectangle", height: 40, width: 80
+		}]
+	};
+	
+$("#symbolpalette").ejSymbolPalette({
+	//Initializes the palette collection
+	palettes: [ palette ]
+});
+
+</script>
+
+{% endhighlight %}
+
 ### previewHeight `Number`
 {:#members:previewheight}
 
