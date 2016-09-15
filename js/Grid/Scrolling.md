@@ -331,7 +331,7 @@ $(function () {
 	$("#Grid").ejGrid({
 		dataSource : ej.DataManager("http://mvc.syncfusion.com/Services/Northwnd.svc/Orders"),
 		allowScrolling : true,
-		scrollSettings: { width: 550, height: 300, allowVirtualScrolling: true, enableVirtualization: true },
+		scrollSettings: { width: 550, height: 300, enableVirtualization: true },
 		columns : ["OrderID", "EmployeeID", "CustomerID", "ShipCity", "ShipCountry", "ShipAddress", "ShipPostalCode", "Freight"]
 	});
 });
