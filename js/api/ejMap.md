@@ -61,14 +61,14 @@ Specifies the background color for map
 
 #### Default Value
 
-* "white"
+* "transparent"
 
 #### Example
 
 {% highlight js %}
  
 //To set background API value during initialization 
-  $("#container").ejMap({background:'white'});
+  $("#container").ejMap({background:'transparent'});
   
 {% endhighlight %}
 
