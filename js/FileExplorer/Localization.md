@@ -17,7 +17,7 @@ The below table lists out the keys with corresponding texts in English culture.
 {% highlight javascript %}
 
         ej.FileExplorer.Locale["en-US"] = {
-		
+            		
 		    Back: "Backward",
 
             Forward: "Forward",
