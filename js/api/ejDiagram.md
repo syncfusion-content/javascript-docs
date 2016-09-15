@@ -1298,31 +1298,6 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 {% endhighlight %}
 
-### connectors.labels.margin `Object`
-{:#members:connectors-labels-margin}
-
-To set the margin of the label
-
-#### Default Value:
-
-* ej.datavisualization.Diagram.Margin()
-
-#### Example
-
-{% highlight html %}
-
-<div id="diagramcontent"></div>
-<script>
-var connectors;
-connectors=[{ name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200},
-	     //Leaves 5px space between the left boundary of connector and label
-         labels:[{ text:"label", offset:{ x:0 }, horizontalAlignment:"left", margin:{ left: 5 }}]
-      }];
-$("#diagramcontent").ejDiagram({connectors:connectors});
-</script>
-
-{% endhighlight %}
-
 ### connectors.labels.mode `enum`
 {:#members:connectors-labels-mode}
 
