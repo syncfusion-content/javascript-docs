@@ -26,7 +26,7 @@ The FileExplorer allows the user to select multiple files by enabling the [allow
 
                 ajaxAction: ajaxActionHandler,
 
-                allowMultiSelection: true
+                allowMultiSelection: false
 
             });
 

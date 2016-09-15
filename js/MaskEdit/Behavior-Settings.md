@@ -47,7 +47,7 @@ Output of MaskEdit with **enablePersistence** is as follows.
 
 ## Enabled or Disabled
 
-MaskEdit has an option to enable or disable its element. You can set the **enabled** property as “**false**” to enable the MaskEdit controls.
+MaskEdit has an option to enable or disable its element. You can set the **enabled** property as “**false**” to disable the MaskEdit controls.
 
 The following steps explain the **enabled** property in the **MaskEdit** control.
 

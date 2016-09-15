@@ -69,7 +69,7 @@ The visibility of the navigation pane can be controlled by the [showNavigationPa
 
 ## Customizing the Content pane
 
-The content pane is the main part of the Fie explorer UI which displays all the files and folders from the filesystem. The content pane supports the following two types of layout views:
+The content pane is the main part of the FileExplorer UI which displays all the files and folders from the filesystem. The content pane supports the following two types of layout views:
 
 * Grid
 * Tile

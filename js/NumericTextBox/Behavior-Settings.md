@@ -143,14 +143,14 @@ In the **HTML** page set the corresponding **&lt;input&gt;** elements for render
 
         $("#numeric").ejNumericTextbox({
             value: 1,
-            enabled: true           
+            enabled: false           
         });
 
 
 {% endhighlight %}
 
 
-The output for NumericTextBox when enabled is “True” and when enabled is “False”.
+The output for NumericTextBox when enabled is “False” and when enabled is “True”.
 
 ![](/js/NumericTextBox/Behavior-Settings_images/Behavior-Settings_img5.png)
 
