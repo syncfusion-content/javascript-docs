@@ -733,6 +733,281 @@ Get or set a value that indicates to display the title of that particular column
 
 {% endhighlight %}
 
+
+### multiColumnSettings.columns.cssClass `String`
+{:#members:multicolumnsettings-columns-cssclass}
+
+Gets or sets a value that indicates to render the multicolumn with custom theme. 
+
+#### Default Value:
+{:.param}
+* ""
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<style type="text/css">
+   .gradient-green {
+       font-family: cursive;
+   }
+</style>
+<script>
+$("#autocomplete").ejAutocomplete({ 
+    multiColumnSettings: {
+    enable: true,
+    showHeader: true,
+    stringFormat: "{0} ({1})",
+    columns: [{
+    field:"name", 
+    headerText: "Name",
+    cssClass: "gradient-green"
+    },{
+    field: "id" ,
+    headerText:"ID"
+    }]
+    }
+	});
+</script> 
+{% endhighlight %}
+
+
+### multiColumnSettings.columns.type `enum`
+{:#members:multicolumnsettings-columns-type}
+
+<ts ref="ej.Type"/>
+
+Specifies the search data type. There are four types of data types available such as string, ‘number’, ‘boolean’ and ‘date’. 
+
+#### Default Value:  
+{:.param}
+* ej.Type.String
+
+<table>
+<tr>
+<th>
+Column type</th><th>
+Data type</th></tr>
+<tr>
+<td>
+Number</td><td>
+ej.Type.Number</td></tr>
+<tr>
+<td>
+String</td><td>
+ej.Type.String</td></tr>
+<tr>
+<td>
+Boolean</td><td>
+ej.Type.Boolean</td></tr>
+<tr>
+<td>
+Date</td><td>
+ej.Type.Date</td></tr>
+</table>
+
+
+#### Example 
+
+{% highlight javascript %}
+
+	$("#autocomplete").ejAutocomplete({ 
+    multiColumnSettings: {
+    enable: true,
+    showHeader: true,
+    stringFormat: "{0} ({1})",
+    columns: [{
+    field:"name", 
+    headerText: "Name",
+    },{
+    field: "id" ,
+    headerText:"ID",
+    type: ej.Type.Number,
+    filterType: ej.filterType.GreaterThan
+    }]
+    }
+	});
+
+{% endhighlight %}
+
+### multiColumnSettings.columns.filterType `enum`
+{:#members:multicolumnsettings-columns-filtertype}
+
+<ts ref="ej.filterType"/>
+
+Specifies the search filter type. There are several types of search filter available such as ‘startswith’, ‘contains’, ‘endswith’, ‘lessthan’, ‘lessthanorequal’, ‘greaterthan’, ‘greaterthanorequal’, ‘equal’, ‘notequal’. 
+
+#### Default Value:  
+{:.param}
+* ej.filterType.StartsWith
+
+<table>
+<tr>
+<th>
+Column type</th><th>
+Filter type</th></tr>
+<tr>
+<td>
+Number</td><td>
+ej.filterType.GreaterThan<br/>ej.filterType.GreaterThanOrEqual<br/>ej.filterType.LessThan<br/>ej.filterType.LessThanOrEqual<br/>ej.filterType.Equal</td></tr>
+<tr>
+<td>
+String</td><td>
+ej.filterType.StartsWith<br/>ej.filterType.EndsWith<br/>ej.filterType.Contains<br/>ej.filterType.Equal<br/>ej.filterType.NotEqual</td></tr>
+<tr>
+<td>
+Boolean</td><td>
+ej.filterType.Equal<br/>ej.filterType.NotEqual</td></tr>
+<tr>
+<td>
+Date</td><td>
+ej.filterType.GreaterThan<br/>ej.filterType.GreaterThanOrEqual<br/>ej.filterType.LessThan<br/>ej.filterType.LessThanOrEqual<br/>ej.filterType.Equal</td></tr>
+</table>
+
+
+#### Example 
+
+{% highlight javascript %}
+
+	$("#autocomplete").ejAutocomplete({ 
+    multiColumnSettings: {
+    enable: true,
+    showHeader: true,
+    stringFormat: "{0} ({1})",
+    columns: [{
+    field:"name", 
+    headerText: "Name",
+    type: ej.Type.String,
+    filterType: ej.filterType.Contains
+    },{
+    field: "id" ,
+    headerText:"ID"
+    }]
+    }
+	});
+
+{% endhighlight %}
+
+
+
+### multiColumnSettings.columns.headerTextAlign `enum`
+{:#members:multicolumnsettings-columns-headertextalign}
+
+<ts ref="ej.TextAlign"/>
+
+This defines the text alignment of a particular column header cell value. See headerTextAlign
+
+#### Default Value:
+{:.param}
+* ej.TextAlign.Left
+
+<table>
+Add a comment to this line
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="name">Center</td>
+<td class="description">Header text is centered.</td>
+</tr>
+<tr>
+<td class="name">Justify</td>
+<td class="description">Header text is justified.</td>
+</tr> 
+<tr>
+<td class="name">Left</td>
+<td class="description">Header text is aligned to the left.</td>
+</tr> 
+<tr>
+<td class="name">Right</td>
+<td class="description">Header text is aligned to the right.</td>
+</tr>   
+</table>
+
+
+#### Example 
+
+{% highlight javascript %}
+
+	$("#autocomplete").ejAutocomplete({ 
+    multiColumnSettings: {
+    enable: true,
+    showHeader: true,
+    stringFormat: "{0} ({1})",
+    columns: [{
+    field:"name", 
+    headerText: "Name",
+    headerTextAlign: ej.TextAlign.Center
+    },{
+    field: "id" ,
+    headerText:"ID"
+    }]
+    }
+	});
+
+{% endhighlight %}
+
+### multiColumnSettings.columns.textAlign `enum`
+{:#members:multicolumnsettings-columns-textalign}
+
+<ts ref=" ej.TextAlign"/>
+
+Gets or sets a value that indicates to align the text within the column. See textAlign
+
+#### Default Value:
+{:.param}
+* ej.TextAlign.Left
+
+<table>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="name">Center</td>
+<td class="description">Text is centered.</td>
+</tr>
+<tr>
+<td class="name">Justify</td>
+<td class="description">Text is justified.</td>
+</tr> 
+<tr>
+<td class="name">Left</td>
+<td class="description">Text is aligned to the left.</td>
+</tr> 
+<tr>
+<td class="name">Right</td>
+<td class="description">Text is aligned to the right.</td>
+</tr>   
+</table>
+
+
+#### Example 
+
+{% highlight javascript %}
+
+	$("#autocomplete").ejAutocomplete({ 
+    multiColumnSettings: {
+    enable: true,
+    showHeader: true,
+    stringFormat: "{0} ({1})",
+    columns: [{
+    field:"name", 
+    headerText: "Name",
+    textAlign: ej.TextAlign.Right
+    },{
+    field: "id" ,
+    headerText:"ID"
+    }]
+    }
+	});
+
+{% endhighlight %}
+
+
 ### multiSelectMode `Enum`
 {:#members:multiselectmode}
 
