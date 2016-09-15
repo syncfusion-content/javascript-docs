@@ -3769,6 +3769,28 @@ $("#Grid").ejGrid({
 </script>                          
 {% endhighlight %}
 
+### scrollSettings.enableVirtualization `Boolean`
+{:#members:scrollsettings-enableVirtualization}
+
+This is used to enable the enhanced virtual scrolling in Grid.
+
+#### Default Value:
+{:.param}
+* false
+
+#### Example
+{:.example}
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
+$("#Grid").ejGrid({
+   dataSource:window.gridData,
+   allowScrolling: true,
+   scrollSettings: { width: 550, height: 300, enableVirtualization: true }
+});
+</script> 
+{% endhighlight %}
+
 ### scrollSettings.width `Number`
 {:#members:scrollsettings-width}
 
