@@ -1323,6 +1323,106 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 {% endhighlight %}
 
+### connectors.labels.margin.right `number`
+{:#members:connectors-labels-margin-right}
+
+To set the margin of the label in right direction
+
+#### Default Value:
+
+* 0
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var connectors;
+connectors=[{ name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200},
+	     //Leaves 5px space between the left boundary of connector and label
+         labels:[{ text:"label", offset:{ x:0 }, horizontalAlignment:"left", margin:{ right: 5 }}]
+      }];
+$("#diagramcontent").ejDiagram({connectors:connectors});
+</script>
+
+{% endhighlight %}
+
+### connectors.labels.margin.left `number`
+{:#members:connectors-labels-margin-left}
+
+To set the margin of the label in left direction
+
+#### Default Value:
+
+* 0
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var connectors;
+connectors=[{ name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200},
+	     //Leaves 5px space between the left boundary of connector and label
+         labels:[{ text:"label", offset:{ x:0 }, horizontalAlignment:"left", margin:{ left: 5 }}]
+      }];
+$("#diagramcontent").ejDiagram({connectors:connectors});
+</script>
+
+{% endhighlight %}
+
+### connectors.labels.margin.top `number`
+{:#members:connectors-labels-margin-top}
+
+To set the margin of the label in top direction
+
+#### Default Value:
+
+* 0
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var connectors;
+connectors=[{ name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200},
+	     //Leaves 5px space between the left boundary of connector and label
+         labels:[{ text:"label", offset:{ x:0 }, horizontalAlignment:"left", margin:{ top: 5 }}]
+      }];
+$("#diagramcontent").ejDiagram({connectors:connectors});
+</script>
+
+{% endhighlight %}
+
+### connectors.labels.margin.bottom `number`
+{:#members:connectors-labels-margin-bottom}
+
+To set the margin of the label in bottom direction
+
+#### Default Value:
+
+* 0
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var connectors;
+connectors=[{ name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200},
+	     //Leaves 5px space between the left boundary of connector and label
+         labels:[{ text:"label", offset:{ x:0 }, horizontalAlignment:"left", margin:{ bottom: 5 }}]
+      }];
+$("#diagramcontent").ejDiagram({connectors:connectors});
+</script>
+
+{% endhighlight %}
+
 ### connectors.labels.mode `enum`
 {:#members:connectors-labels-mode}
 
@@ -1372,6 +1472,31 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 ### connectors.labels.offset `Object`
 {:#members:connectors-labels-offset}
+
+Sets the fraction/ratio(relative to connector) that defines the position of the label
+
+#### Default Value:
+
+* ej.datavisualization.Diagram.Point(0.5, 0.5)
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var connectors;
+connectors=[{ name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200},
+         labels:[{ text:"label", offset:ej.datavisualization.Diagram.Point(0,0.5) }]
+      }];
+$("#diagramcontent").ejDiagram({connectors:connectors});
+
+</script>
+
+{% endhighlight %}
+
+### connectors.labels.margin `Object`
+{:#members:connectors-labels-margin}
 
 Sets the fraction/ratio(relative to connector) that defines the position of the label
 
@@ -7446,6 +7571,75 @@ $("#diagramcontent").ejDiagram({nodes:[swimlane]});
 
 {% endhighlight %}
 
+### nodes.lanes.width `number`
+{:#members:nodes-lanes-width}
+
+Defines the width of lane
+
+#### Default Value:
+
+* 0
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var addInfo = { Description:"Describe the functionality" };
+var swimlane = {type: "swimlane",name: "swimlane", offsetX:300, offsetY:200,
+lanes:[{ name:"lane1", width:200, addInfo: addInfo }] };
+$("#diagramcontent").ejDiagram({nodes:[swimlane]});
+</script>
+
+{% endhighlight %}
+
+### nodes.lanes.height `number`
+{:#members:nodes-lanes-height}
+
+Defines the height of lane
+
+#### Default Value:
+
+* 0
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var addInfo = { Description:"Describe the functionality" };
+var swimlane = {type: "swimlane",name: "swimlane", offsetX:300, offsetY:200,
+lanes:[{ name:"lane1", width:200, height:100, addInfo: addInfo }] };
+$("#diagramcontent").ejDiagram({nodes:[swimlane]});
+</script>
+
+{% endhighlight %}
+
+### nodes.lanes.zorder `number`
+{:#members:nodes-lanes-zorder}
+
+Defines the z-index of the lane
+
+#### Default Value:
+
+* 0
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var addInfo = { Description:"Describe the functionality" };
+var swimlane = {type: "swimlane",name: "swimlane", offsetX:300, offsetY:200,
+lanes:[{ name:"lane1", width:200,height:100,zOrder:10, addInfo: addInfo }] };
+$("#diagramcontent").ejDiagram({nodes:[swimlane]});
+</script>
+
+{% endhighlight %}
+
 ### nodes.lanes.addInfo `Object`
 {:#members:nodes-lanes-addinfo}
 
@@ -11403,6 +11597,65 @@ Defines the angle by which the object needs to be snapped
 {% highlight html %}
 
 $("#diagramcontent").ejDiagram({snapSettings: { snapAngle: 10} });
+
+{% endhighlight %}
+
+### snapSettings.snapConstraints `enum`
+{:#members:snapsettings-snapconstraints}
+
+<ts name = "ej.datavisualization.Diagram.SnapConstraints"/>
+Defines and sets the snapConstraints
+<table class="props">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+       </tr>
+   </thead>
+    <tbody>
+        <tr>
+            <td class="name">None</td>
+            <td class="description last">Enables node to be snapped to horizontal gridlines</td>
+       </tr>
+        <tr>
+            <td class="name">SnapToHorizontalLines</td>
+            <td class="description last">Enables node to be snapped to vertical gridlines</td>
+       </tr>
+        <tr>
+            <td class="name">SnapToVerticalLines</td>
+            <td class="description last">Enables node to be snapped to horizontal gridlines</td>
+       </tr>
+        <tr>
+            <td class="name">SnapToLines</td>
+            <td class="description last">Enables node to be snapped to gridlines</td>
+       </tr>
+        <tr>
+            <td class="name">ShowHorizontalLines</td>
+            <td class="description last">Enable horizontal lines</td>
+       </tr>
+        <tr>
+            <td class="name">ShowVerticalLines</td>
+            <td class="description last">Enable vertical lines</td>
+       </tr>
+        <tr>
+            <td class="name">ShowLines</td>
+            <td class="description last">Enable both horizontal and vertical lines</td>
+       </tr>
+        <tr>
+            <td class="name">All</td>
+            <td class="description last">Enable all the constraints</td>
+       </tr>
+   </tbody>
+</table>
+#### Default Value:
+
+* ej.datavisualization.Diagram.SnapConstraints.ShowLines
+
+#### Example
+
+{% highlight html %}
+var snapConstraints = ej.datavisualization.Diagram.SnapConstraints.ShowLines
+$("#diagramcontent").ejDiagram({snapConstraints:snapConstraints});
 
 {% endhighlight %}
 
