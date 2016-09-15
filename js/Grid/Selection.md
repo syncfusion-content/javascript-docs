@@ -55,6 +55,39 @@ The following output is displayed as a result of the above code example
 
 ![](selection_images/selection_img1.png)
 
+## Row Selection By Checkbox Column
+
+Row selection by Checkbox can be enabled using column `type` as `checkbox`. It enables grid to select rows using checkbox column. It also provides the option to select/deselect all the rows in Grid using a checkbox in the corresponding column header. 
+
+Without `field` property of Checkox column, it acts as a template column and if sorting, editing, etc., are need to be handled by checkbox column, then it is necessary to specify `field` property.
+
+The following code example describes the above behavior.
+
+{% highlight html %}
+<div id="Grid"></div>
+{% endhighlight %}
+
+{% highlight javascript %}
+$(function () {
+        $("#Grid").ejGrid({
+            dataSource: window.gridData,
+            allowPaging: true,
+            columns: [
+                      { type: "checkbox", width: 50 }, //enables the checkbox column
+                      { field: "OrderID", isPrimaryKey: true, width: 80, textAlign: ej.TextAlign.Right },
+                      { field: "CustomerID", headerText: "Customer ID", width: 75 },
+                      { field: "EmployeeID", headerText: "Employee ID", width: 75, textAlign: ej.TextAlign.Right },
+                      { field: "Freight", headerText: "Freight", width: 75, textAlign: ej.TextAlign.Right, format: "{0:C}" },
+            ]
+        });
+});
+{% endhighlight %}
+
+
+
+The following output is displayed as a result of the above code example
+
+![](selection_images/selection_img6.png)
 
 ## Cell Selection
 
