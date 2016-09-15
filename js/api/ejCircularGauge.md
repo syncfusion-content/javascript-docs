@@ -1051,6 +1051,355 @@ CounterClockwise</td>
 
 
 
+### scales.customLabels `Array`
+{:#members:scales.customlabels}
+
+
+
+
+Specify the custom labels for the scales.
+
+
+#### Default Value
+
+
+
+* Array
+
+
+
+
+#### Example
+
+
+{% highlight html %}
+
+ $("#CoreCircularGauge").ejCircularGauge({ 
+  
+  scales: [{
+    customLabels:[]
+  }]                      
+
+}); 
+ 
+{% endhighlight %}
+
+
+
+### scales.customLabels.value `string`
+{:#members:scales.customlabels.value}
+
+
+
+
+Value of the custom labels.
+
+
+#### Default Value
+
+
+
+* ""
+
+
+
+
+#### Example
+
+
+{% highlight html %}
+ 
+< $("#CoreCircularGauge").ejCircularGauge({ 
+  
+  scales: [{
+    customLabels:[{value:'Sports'}]
+  }]                      
+
+}); 
+
+{% endhighlight %}
+
+
+### scales.customLabels.color `string`
+{:#members:scales.customlabels.color}
+
+
+
+
+Color of the custom labels.
+
+
+#### Default Value
+
+
+
+* ""
+
+
+
+
+#### Example
+
+
+{% highlight html %}
+ 
+<$("#CoreCircularGauge").ejCircularGauge({ 
+  
+  scales: [{
+    customLabels:[{color:"#333333"}]
+  }]                      
+
+}); 
+
+{% endhighlight %}
+
+
+
+
+
+### scales.customLabels.position `object`
+{:#members:scales.customlabels.position}
+
+
+
+
+Specify position of custom labels
+
+
+#### Default Value
+
+
+
+* Object
+
+
+
+
+#### Example
+
+
+{% highlight html %}
+ 
+                         
+<$("#CoreCircularGauge").ejCircularGauge({ 
+  
+   scales: [{
+    customLabels:[{position:{x:10}}]
+    }]                      
+
+}); 
+
+{% endhighlight %}
+
+
+
+
+### scales.customLabels.position.x `number`
+{:#members:scales.customlabels.position.x}
+
+
+
+
+Specify x-axis position of label
+
+
+#### Default Value
+
+
+
+* 0
+
+
+
+
+#### Example
+
+
+{% highlight html %}
+ 
+                         
+<$("#CoreCircularGauge").ejCircularGauge({ 
+  
+   scales: [{
+    customLabels:[{position:{x:10}}]
+    }]                      
+
+}); 
+
+{% endhighlight %}
+
+
+
+
+### scales.customLabels.position.y `number`
+{:#members:scales.customlabels.position.y}
+
+
+
+
+Specify y-axis  position of labels.
+
+
+#### Default Value
+
+
+
+* 0
+
+
+
+
+#### Example
+
+ 
+{% highlight html %}
+ 
+                         
+<$("#CoreCircularGauge").ejCircularGauge({ 
+  
+   scales: [{
+    customLabels:[{position:{y:10}}]
+    }]                      
+
+}); 
+
+{% endhighlight %}
+
+
+
+### scales.customLabels.font `object`
+{:#members:scales.customlabels.font}
+
+
+
+
+Specify font for custom labels
+
+
+#### Default Value
+
+
+
+* Object
+
+
+
+
+#### Example
+
+
+{% highlight html %}
+  
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>                  
+        $("#CoreCircularGauge").ejCircularGauge({ scales: [{ customLabels: [{ font: { size: "12px", fontFamily: "Segou", fontStyle: "Bold" } }] }] });
+</script>{% endhighlight %}
+
+
+
+
+### scales.customLabels.font.fontFamily `string`
+{:#members:scales.customlabels.font.fontfamily}
+
+
+
+
+Specify font fontFamily for custom labels.
+
+
+#### Default Value
+
+
+
+* "Arial"
+
+
+
+
+#### Example
+
+
+{% highlight html %}
+ 
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>                          
+$("#CoreCircularGauge").ejCircularGauge({ scales: [{ customLabels: [{ font: { fontFamily: "Arial" } }] }] });
+</script>{% endhighlight %}
+
+
+
+
+### scales.customLabels.font.fontStyle `string`
+{:#members:scales.customlabels.font.fontstyle}
+
+
+
+
+Specify font Style for custom labels.
+
+
+#### Default Value
+
+
+
+* "Bold"
+
+
+
+
+#### Example
+
+
+{% highlight html %}
+ 
+                          
+$("#CoreCircularGauge").ejCircularGauge({ 
+    scales: [{ customLabels: [{ font: { fontStyle: "Bold" } }] }] 
+    });
+ {% endhighlight %}
+ 
+ 
+ 
+ 
+ 
+### scales.customLabels.font.size `string`
+{:#members:scales.customlabels.font.size}
+
+
+
+
+Specify font size for custom labels.
+
+
+#### Default Value
+
+
+
+* "12px"
+
+
+
+
+#### Example
+
+
+{% highlight html %}
+ 
+                          
+$("#CoreCircularGauge").ejCircularGauge({ 
+    scales: [{ customLabels: [{ font: { size: "12px" } }] }] 
+    });
+ {% endhighlight %}
+
+
+
+
+
+
 ### scales.indicators `Array`
 {:#members:scales.indicators}
 
