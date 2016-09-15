@@ -13140,8 +13140,8 @@ Options to customize the range of the axis.
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/Sync_jhhilggd)
 
 
-### primaryXAxis.range.minimum `number`
-{:#members:primaryxaxis-range-minimum}
+### primaryXAxis.range.min `number`
+{:#members:primaryxaxis-range-min}
 
 
 
@@ -13163,15 +13163,15 @@ Minimum value of the axis range.
 
 $("#container").ejChart({
 
-    primaryXAxis: { range : { minimum: 10 } }
+    primaryXAxis: { range : { min: 10 } }
                           
 });
 
 {% endhighlight %}
 
 
-### primaryXAxis.range.maximum `number`
-{:#members:primaryxaxis-range-maximum}
+### primaryXAxis.range.max `number`
+{:#members:primaryxaxis-range-max}
 
 
 
@@ -13193,7 +13193,7 @@ Maximum value of the axis range.
 
 $("#container").ejChart({
 
-    primaryXAxis: { range : { maximum: 100 } }
+    primaryXAxis: { range : { max: 100 } }
                           
 });
 
