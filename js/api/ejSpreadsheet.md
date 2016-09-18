@@ -5362,7 +5362,7 @@ The Objects are File, Password, URL, FileStream, FileType.
 <div id="Spreadsheet"></div> 
 <script>
 var xlObj = $("#Spreadsheet").data("ejSpreadsheet"); // Initialize the Spreadsheet object.
-var importRequest = {Url:"http://staging.syncfusion.com:7777/ejSpreadsheet/Spreadsheet.xlsx";
+var importRequest = { Url:"http://staging.syncfusion.com:7777/ejSpreadsheet/Spreadsheet.xlsx" };
 xlObj.import(importRequest); 
 </script>
 
@@ -10635,6 +10635,7 @@ Triggered when the cell is selected.
 #### Example
 
 {% highlight html %}
+
 <div id="Spreadsheet"></div> 
 <script>
 //cellSelected event for Spreadsheet
@@ -10642,6 +10643,8 @@ $('#Spreadsheet').ejSpreadsheet({
     cellSelected: function (args){}
  });
  </script>
+ 
+{% endhighlight %}
 
 ### contextMenuClick
 {:#events:contextmenuclick}
@@ -11392,6 +11395,7 @@ Triggered when a file is imported.
 #### Example
 
 {% highlight html %}
+
 <div id="Spreadsheet"></div> 
 <script>
 //onImport event for Spreadsheet
@@ -11399,6 +11403,8 @@ $('#Spreadsheet').ejSpreadsheet({
     onImport: function (args){}
  });
  </script>
+
+{% endhighlight %}
 
 ### openFailure
 {:#events:openfailure}
