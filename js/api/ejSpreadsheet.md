@@ -954,7 +954,7 @@ $('#Spreadsheet').ejSpreadsheet({
 ### cssClass `String`
 {:#members:cssclass}
 
-Gets or sets a value that indicates to render the spreadsheet with custom theme.
+Gets or sets a value to add root css class for customizing Spreadsheet skins.
 
 #### Default Value
 * ""
@@ -1590,7 +1590,7 @@ Gets or sets a value that indicates to set application tab type in Spreadsheet. 
 </table>
 
 #### Default Value
-* ej.Spreadsheet.ApplicationTabType.Backstage
+* ej.Ribbon.ApplicationTabType.Backstage
 
 #### Example
 
@@ -2141,6 +2141,8 @@ $('#Spreadsheet').ejSpreadsheet({
 ### sheets.border.type `Enum`
 {:#members:sheets-border-type}
 
+<ts name="ej.Spreadsheet.BorderType"/> 
+
 Specifies border type in the Spreadsheet.
 
 <table class="params">
@@ -2291,6 +2293,8 @@ $('#Spreadsheet').ejSpreadsheet({
 ### sheets.cFormatRule.action `Enum`
 {:#members:sheets-cformatrule-action}
 
+<ts name="ej.Spreadsheet.CFormatRule"/>
+
 Specifies the conditions to apply for the range of cells in Spreadsheet.
 
 <table class="params">
@@ -2355,6 +2359,8 @@ $('#Spreadsheet').ejSpreadsheet({
 
 ### sheets.cFormatRule.color `Enum`
 {:#members:sheets-cformatrule-color}
+
+<ts name="ej.Spreadsheet.CFormatHighlightColor"/>
 
 Specifies the color to apply for the range of cell while conditional formatting.
 
@@ -5362,7 +5368,7 @@ The Objects are File, Password, URL, FileStream, FileType.
 <div id="Spreadsheet"></div> 
 <script>
 var xlObj = $("#Spreadsheet").data("ejSpreadsheet"); // Initialize the Spreadsheet object.
-var importRequest = {Url:"http://staging.syncfusion.com:7777/ejSpreadsheet/Spreadsheet.xlsx";
+var importRequest = { Url:"http://staging.syncfusion.com:7777/ejSpreadsheet/Spreadsheet.xlsx" };
 xlObj.import(importRequest); 
 </script>
 
@@ -10635,6 +10641,7 @@ Triggered when the cell is selected.
 #### Example
 
 {% highlight html %}
+
 <div id="Spreadsheet"></div> 
 <script>
 //cellSelected event for Spreadsheet
@@ -10642,6 +10649,8 @@ $('#Spreadsheet').ejSpreadsheet({
     cellSelected: function (args){}
  });
  </script>
+ 
+{% endhighlight %}
 
 ### contextMenuClick
 {:#events:contextmenuclick}
@@ -11392,6 +11401,7 @@ Triggered when a file is imported.
 #### Example
 
 {% highlight html %}
+
 <div id="Spreadsheet"></div> 
 <script>
 //onImport event for Spreadsheet
@@ -11399,6 +11409,8 @@ $('#Spreadsheet').ejSpreadsheet({
     onImport: function (args){}
  });
  </script>
+
+{% endhighlight %}
 
 ### openFailure
 {:#events:openfailure}
