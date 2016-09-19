@@ -829,6 +829,16 @@ Default Value:
 Example
 {:.example}
 
+{% highlight html %}
+
+    <div id="dialog"> Sample content </div>
+
+    <script id="sample" type="text/x-jsrender">
+      <!-- Template content here -->
+    </script>
+
+{% endhighlight %}
+
 {% highlight javascript %}
 
     $("#dialog").ejDialog({showFooter: true,footerTemplateId:"sample"}); 

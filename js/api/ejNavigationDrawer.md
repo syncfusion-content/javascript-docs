@@ -1199,18 +1199,6 @@ type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
-<tr>
-<td class="name">
-item</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description">returns the item of element</td>
-</tr>
-<tr>
-<td class="name">
-itemName</td>
-<td class="type"><span class="param-type">String</span></td>
-<td class="description">returns the name of item</td>
-</tr>
 </tbody>
 </table>
 </td>
@@ -1316,18 +1304,6 @@ type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
 </tr>
-<tr>
-<td class="name">
-item</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description">returns the item of element</td>
-</tr>
-<tr>
-<td class="name">
-itemName</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description">returns the name of item</td>
-</tr>
 </tbody>
 </table>
 </td>
@@ -1432,18 +1408,6 @@ model</td>
 type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
-</tr>
-<tr>
-<td class="name">
-item</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description">returns the item of element</td>
-</tr>
-<tr>
-<td class="name">
-itemName</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description">returns the name of item</td>
 </tr>
 </tbody>
 </table>
