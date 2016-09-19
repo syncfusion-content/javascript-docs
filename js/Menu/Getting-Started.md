@@ -84,46 +84,32 @@ Every **Menu** has a list of **Menu** items with list of sub level **Menu** item
 {% highlight javascript %}
 
 
-        var data = [
+         var data = [
             { id: 1, text: "Products", parentId: null },
             { id: 2, text: "Support", parentId: null },
             { id: 3, text: "Purchase", parentId: null },
             { id: 4, text: "Downloads", parentId: null },
-            { id: 5, text: "Resources", parentId: null },
-			 { id: 6, text: "Company", parentId: null },
+			{ id: 5, text: "Company", parentId: null },
             //first level child
             { id: 11, parentId: 1, text: "ASP.NET" },
             { id: 12, parentId: 1, text: "ASP.NET MVC" },
             { id: 13, parentId: 1, text: "Mobile MVC" },
             { id: 14, parentId: 1, text: "Silverlight" },
-            { id: 15, parentId: 1, text: "Windows Forms" },
-            { id: 16, parentId: 1, text: "Windows Phone" },
-            { id: 17, parentId: 1, text: "WinRT (XMAL)" },
-            { id: 18, parentId: 1, text: "WPF" },
-            { id: 19, parentId: 1, text: "Orubase Studio" },
-            { id: 20, parentId: 1, text: "Metro Studio" },
-            { id: 21, parentId: 1, text: "What's New" },
-            { id: 22, parentId: 2, text: "Direct-Trac Support" },
-            { id: 23, parentId: 2, text: "Community Forums" },
-            { id: 24, parentId: 2, text: "Knowledge Base" },
-            { id: 25, parentId: 2, text: "Online Documentation" },
-            { id: 26, parentId: 2, text: "Services" },
-			{ id: 27, parentId: 4, text: "Evaluation" },
-			{ id: 28, parentId: 4, text: "Free E-Books" },
-			{ id: 29, parentId: 4, text: "Metro Studio" },
-			{ id: 30, parentId: 4, text: "Latest Version" },
-			{ id: 31, parentId: 4, text: "Version History" },
-			{ id: 32, parentId: 5, text: "Technology Resource Portal " },
-			{ id: 33, parentId: 5, text: "Case Studies" },
-			{ id: 34, parentId: 5, text: "Bouchers & Datasheets" },
-			{ id: 35, parentId: 5, text: "FAQ" },
+            { id: 15, parentId: 2, text: "Direct-Trac Support" },
+            { id: 16, parentId: 2, text: "Community Forums" },
+            { id: 17, parentId: 2, text: "Knowledge Base" },
+            { id: 18, parentId: 2, text: "Services" },
+			{ id: 19, parentId: 4, text: "Evaluation" },
+			{ id: 20, parentId: 4, text: "Free E-Books" },
+			{ id: 21, parentId: 4, text: "Metro Studio" },
+			{ id: 22, parentId: 4, text: "Latest Version" },
+			{ id: 23, parentId: 5, text: "Technology Resource Portal " },
+			{ id: 24, parentId: 5, text: "Case Studies" },
+			{ id: 25, parentId: 5, text: "Bouchers & Datasheets" },
+			{ id: 26, parentId: 5, text: "FAQ" },
             //second level child
-            {id: 111, parentId: 21, text: "WinRT (XMAL)" },
-            { id: 112, parentId: 21, text: "WPF" },
-            { id: 113, parentId: 21, text: "Silverlight" },
-            { id: 114, parentId: 21, text: "Windows Forms" },
-            { id: 115, parentId: 21, text: "Windows Phone" }
-            
+            {id: 111, parentId: 18, text: "Consulting" },
+            { id: 112, parentId: 18, text: "Training" }            
         ];
         jQuery(function ($) {
             $("#syncfusionProducts").ejMenu({
@@ -149,46 +135,32 @@ The following code example describes how to initialize first level sub menu item
 {% highlight javascript %}
 
 
-       var data = [
+         var data = [
             { id: 1, text: "Products", parentId: null },
             { id: 2, text: "Support", parentId: null },
             { id: 3, text: "Purchase", parentId: null },
             { id: 4, text: "Downloads", parentId: null },
-            { id: 5, text: "Resources", parentId: null },
-			 { id: 6, text: "Company", parentId: null },
+			{ id: 5, text: "Company", parentId: null },
             //first level child
             { id: 11, parentId: 1, text: "ASP.NET" },
             { id: 12, parentId: 1, text: "ASP.NET MVC" },
             { id: 13, parentId: 1, text: "Mobile MVC" },
             { id: 14, parentId: 1, text: "Silverlight" },
-            { id: 15, parentId: 1, text: "Windows Forms" },
-            { id: 16, parentId: 1, text: "Windows Phone" },
-            { id: 17, parentId: 1, text: "WinRT (XMAL)" },
-            { id: 18, parentId: 1, text: "WPF" },
-            { id: 19, parentId: 1, text: "Orubase Studio" },
-            { id: 20, parentId: 1, text: "Metro Studio" },
-            { id: 21, parentId: 1, text: "What's New" },
-            { id: 22, parentId: 2, text: "Direct-Trac Support" },
-            { id: 23, parentId: 2, text: "Community Forums" },
-            { id: 24, parentId: 2, text: "Knowledge Base" },
-            { id: 25, parentId: 2, text: "Online Documentation" },
-            { id: 26, parentId: 2, text: "Services" },
-			{ id: 27, parentId: 4, text: "Evaluation" },
-			{ id: 28, parentId: 4, text: "Free E-Books" },
-			{ id: 29, parentId: 4, text: "Metro Studio" },
-			{ id: 30, parentId: 4, text: "Latest Version" },
-			{ id: 31, parentId: 4, text: "Version History" },
-			{ id: 32, parentId: 5, text: "Technology Resource Portal " },
-			{ id: 33, parentId: 5, text: "Case Studies" },
-			{ id: 34, parentId: 5, text: "Bouchers & Datasheets" },
-			{ id: 35, parentId: 5, text: "FAQ" },
+            { id: 15, parentId: 2, text: "Direct-Trac Support" },
+            { id: 16, parentId: 2, text: "Community Forums" },
+            { id: 17, parentId: 2, text: "Knowledge Base" },
+            { id: 18, parentId: 2, text: "Services" },
+			{ id: 19, parentId: 4, text: "Evaluation" },
+			{ id: 20, parentId: 4, text: "Free E-Books" },
+			{ id: 21, parentId: 4, text: "Metro Studio" },
+			{ id: 22, parentId: 4, text: "Latest Version" },
+			{ id: 23, parentId: 5, text: "Technology Resource Portal " },
+			{ id: 24, parentId: 5, text: "Case Studies" },
+			{ id: 25, parentId: 5, text: "Bouchers & Datasheets" },
+			{ id: 26, parentId: 5, text: "FAQ" },
             //second level child
-            {id: 111, parentId: 21, text: "WinRT (XMAL)" },
-            { id: 112, parentId: 21, text: "WPF" },
-            { id: 113, parentId: 21, text: "Silverlight" },
-            { id: 114, parentId: 21, text: "Windows Forms" },
-            { id: 115, parentId: 21, text: "Windows Phone" }
-            
+            {id: 111, parentId: 18, text: "Consulting" },
+            { id: 112, parentId: 18, text: "Training" }            
         ];
         jQuery(function ($) {
             $("#syncfusionProducts").ejMenu({
@@ -217,46 +189,32 @@ To initialize multiple levels sub menu items, use the following code example.
 {% highlight javascript %}
 
 
-        var data = [
+          var data = [
             { id: 1, text: "Products", parentId: null },
             { id: 2, text: "Support", parentId: null },
             { id: 3, text: "Purchase", parentId: null },
             { id: 4, text: "Downloads", parentId: null },
-            { id: 5, text: "Resources", parentId: null },
-			 { id: 6, text: "Company", parentId: null },
+			{ id: 5, text: "Company", parentId: null },
             //first level child
             { id: 11, parentId: 1, text: "ASP.NET" },
             { id: 12, parentId: 1, text: "ASP.NET MVC" },
             { id: 13, parentId: 1, text: "Mobile MVC" },
             { id: 14, parentId: 1, text: "Silverlight" },
-            { id: 15, parentId: 1, text: "Windows Forms" },
-            { id: 16, parentId: 1, text: "Windows Phone" },
-            { id: 17, parentId: 1, text: "WinRT (XMAL)" },
-            { id: 18, parentId: 1, text: "WPF" },
-            { id: 19, parentId: 1, text: "Orubase Studio" },
-            { id: 20, parentId: 1, text: "Metro Studio" },
-            { id: 21, parentId: 1, text: "What's New" },
-            { id: 22, parentId: 2, text: "Direct-Trac Support" },
-            { id: 23, parentId: 2, text: "Community Forums" },
-            { id: 24, parentId: 2, text: "Knowledge Base" },
-            { id: 25, parentId: 2, text: "Online Documentation" },
-            { id: 26, parentId: 2, text: "Services" },
-			{ id: 27, parentId: 4, text: "Evaluation" },
-			{ id: 28, parentId: 4, text: "Free E-Books" },
-			{ id: 29, parentId: 4, text: "Metro Studio" },
-			{ id: 30, parentId: 4, text: "Latest Version" },
-			{ id: 31, parentId: 4, text: "Version History" },
-			{ id: 32, parentId: 5, text: "Technology Resource Portal " },
-			{ id: 33, parentId: 5, text: "Case Studies" },
-			{ id: 34, parentId: 5, text: "Bouchers & Datasheets" },
-			{ id: 35, parentId: 5, text: "FAQ" },
+            { id: 15, parentId: 2, text: "Direct-Trac Support" },
+            { id: 16, parentId: 2, text: "Community Forums" },
+            { id: 17, parentId: 2, text: "Knowledge Base" },
+            { id: 18, parentId: 2, text: "Services" },
+			{ id: 19, parentId: 4, text: "Evaluation" },
+			{ id: 20, parentId: 4, text: "Free E-Books" },
+			{ id: 21, parentId: 4, text: "Metro Studio" },
+			{ id: 22, parentId: 4, text: "Latest Version" },
+			{ id: 23, parentId: 5, text: "Technology Resource Portal " },
+			{ id: 24, parentId: 5, text: "Case Studies" },
+			{ id: 25, parentId: 5, text: "Bouchers & Datasheets" },
+			{ id: 26, parentId: 5, text: "FAQ" },
             //second level child
-            {id: 111, parentId: 21, text: "WinRT (XMAL)" },
-            { id: 112, parentId: 21, text: "WPF" },
-            { id: 113, parentId: 21, text: "Silverlight" },
-            { id: 114, parentId: 21, text: "Windows Forms" },
-            { id: 115, parentId: 21, text: "Windows Phone" }
-            
+            {id: 111, parentId: 18, text: "Consulting" },
+            { id: 112, parentId: 18, text: "Training" }            
         ];
         jQuery(function ($) {
             $("#syncfusionProducts").ejMenu({

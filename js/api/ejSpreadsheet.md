@@ -105,8 +105,8 @@ Gets or sets an active sheet index in the Spreadsheet. By defining this value, y
 <div id="Spreadsheet"></div>
 <script>
 $('#Spreadsheet').ejSpreadsheet({
-sheetCount: 5,
-activeSheetIndex: 3
+    sheetCount: 5,
+    activeSheetIndex: 3
 });         
 </script>
 
@@ -121,7 +121,7 @@ Gets or sets a value that indicates whether to enable or disable auto rendering 
 * false
 
 
-Note: allowCellType must be true while using the allowAutoCellType.
+N> [`allowCellType`](https://help.syncfusion.com/js/api/ejspreadsheet#members:allowcelltype "allowCellType") must be `true` while using this property.
 
 #### Example
 
@@ -129,8 +129,8 @@ Note: allowCellType must be true while using the allowAutoCellType.
 <div id="Spreadsheet"></div> 
 <script>
 $('#Spreadsheet').ejSpreadsheet({   
-allowCellType: true,
-allowAutoCellType:true
+    allowCellType: true,
+    allowAutoCellType:true
 });        
 </script>
 
@@ -149,7 +149,7 @@ Gets or sets a value that indicates whether to enable or disable auto fill featu
 <div id="Spreadsheet"></div> 
 <script>
 $('#Spreadsheet').ejSpreadsheet({   
-allowAutoFill: true
+    allowAutoFill: true
 });        
 </script>
 
@@ -170,7 +170,7 @@ Gets or sets a value that indicates whether to enable or disable auto sum featur
 <div id="Spreadsheet"></div>
 <script>
 $('#Spreadsheet').ejSpreadsheet({ 
-allowAutoSum: true
+    allowAutoSum: true
 });         
 </script>
 
@@ -191,7 +191,7 @@ Gets or sets a value that indicates whether to enable or disable cell format fea
 <div id="Spreadsheet"></div> 
 <script>
 $('#Spreadsheet').ejSpreadsheet({ 
-allowCellFormatting : true
+    allowCellFormatting : true
 });                     
 </script>
 
@@ -210,7 +210,7 @@ Gets or sets a value that indicates whether to enable or disable cell type featu
 <div id="Spreadsheet"></div> 
 <script>
 $('#Spreadsheet').ejSpreadsheet({ 
-allowCellType : true
+    allowCellType : true
 });                     
 </script>
 
@@ -230,7 +230,7 @@ Gets or sets a value that indicates whether to enable or disable chart feature i
 <div id="Spreadsheet"></div> 
 <script>
 $('#Spreadsheet').ejSpreadsheet({ 
-allowCharts: true
+    allowCharts: false
 }); 
 </script>
 
@@ -251,7 +251,7 @@ Gets or sets a value that indicates whether to enable or disable clipboard featu
 <div id="Spreadsheet"></div> 
 <script>
 $('#Spreadsheet').ejSpreadsheet({ 
-allowClipboard : true                    
+    allowClipboard : true                  
 });
 </script>
 
@@ -271,7 +271,7 @@ Gets or sets a value that indicates whether to enable or disable comment feature
 <div id="Spreadsheet"></div> 
 <script>
 $('#Spreadsheet').ejSpreadsheet({ 
-allowComments: true
+    allowComments: true
 });         
 </script>
 
@@ -282,7 +282,8 @@ allowComments: true
 {:#members:allowconditionalformats}
 
 Gets or sets a value that indicates whether to enable or disable Conditional Format feature in the Spreadsheet. By enabling this, you can apply formatting to the selected range of cells based on the provided conditions (Greater than, Less than, Equal, Between, Contains, etc.).
-Note: allowCellFormatting must be true while using conditional formatting.
+
+N> [`allowConditionalFormats`](https://help.syncfusion.com/js/api/ejspreadsheet#members:allowconditionalformats "allowConditionalFormats") must be `true` while using conditional formatting.
 
 #### Default Value
 * true
@@ -293,8 +294,8 @@ Note: allowCellFormatting must be true while using conditional formatting.
 <div id="Spreadsheet"></div> 
 <script>
 $('#Spreadsheet').ejSpreadsheet({
-allowCellFormatting : true,
-allowConditionalFormats : true         
+    allowCellFormatting : true,
+    allowConditionalFormats : true        
 });
 </script>
 
@@ -315,7 +316,7 @@ Gets or sets a value that indicates whether to enable or disable data validation
 <div id="Spreadsheet"></div> 
 <script>
 $('#Spreadsheet').ejSpreadsheet({ 
-allowDataValidation: true                   
+    allowDataValidation: true                   
 });
 </script>
 
@@ -336,7 +337,7 @@ Gets or sets a value that indicates whether to enable or disable the delete acti
 <div id="Spreadsheet"></div> 
 <script>
 $('#Spreadsheet').ejSpreadsheet({ 
-allowDelete: true
+    allowDelete: true
 });         
 </script>
 
@@ -357,7 +358,7 @@ Gets or sets a value that indicates whether to enable or disable drag and drop f
 <div id="Spreadsheet"></div> 
 <script>
 $('#Spreadsheet').ejSpreadsheet({ 
-allowDragAndDrop: true
+    allowDragAndDrop: true
 });         
 </script>
 
@@ -378,7 +379,7 @@ Gets or sets a value that indicates whether to enable or disable the edit action
 <div id="Spreadsheet"></div> 
 <script>
 $('#Spreadsheet').ejSpreadsheet({ 
-allowEditing: true
+    allowEditing: true
 });         
 </script>
 
@@ -399,7 +400,7 @@ Gets or sets a value that indicates whether to enable or disable filtering featu
 <div id="Spreadsheet"></div> 
 <script>
 $('#Spreadsheet').ejSpreadsheet({ 
-allowFiltering: true
+    allowFiltering: true
 });         
 </script>
 
@@ -411,7 +412,7 @@ allowFiltering: true
 
 Gets or sets a value that indicates whether to enable or disable table feature in the Spreadsheet. By enabling this, you can render table in selected range.
 
-Note: allowCellFormatting and allowFiltering must be true while using format as table.
+N> [`allowCellFormatting`](https://help.syncfusion.com/js/api/ejspreadsheet#members:allowcellformatting "allowCellFormatting") and [`allowFiltering`](https://help.syncfusion.com/js/api/ejspreadsheet#members:allowfiltering "allowFiltering") must be `true` while using format as table.
 
 #### Default Value
 * true
@@ -422,9 +423,9 @@ Note: allowCellFormatting and allowFiltering must be true while using format as 
 <div id="Spreadsheet"></div> 
 <script>
 $('#Spreadsheet').ejSpreadsheet({ 
-allowCellFormatting  :true,
-allowFiltering:true,
-allowFormatAsTable: true
+    allowCellFormatting  :true,
+    allowFiltering:true,
+    allowFormatAsTable: true
 });         
 </script>
 
@@ -436,7 +437,7 @@ allowFormatAsTable: true
 
 Get or sets a value that indicates whether to enable or disable format painter feature in the Spreadsheet. By enabling this feature, you can copy the format from the selected range and apply it to another range.
 
-Note: allowCellFormatting must be true while enable this feature.
+N> [`allowCellFormatting`](https://help.syncfusion.com/js/api/ejspreadsheet#members:allowcellformatting "allowCellFormatting") must be `true` while enable this feature.
 
 #### Default Value
 * true
@@ -447,8 +448,8 @@ Note: allowCellFormatting must be true while enable this feature.
 <div id="Spreadsheet"></div>  
 <script>
 $('#Spreadsheet').ejSpreadsheet({ 
-allowCellFormatting: true,
-allowFormatPainter: true
+    allowCellFormatting: true,
+    allowFormatPainter: true
 });         
 </script>
 
@@ -469,7 +470,7 @@ Gets or sets a value that indicates whether to enable or disable formula bar in 
 <div id="Spreadsheet"></div>  
 <script>
 $('#Spreadsheet').ejSpreadsheet({ 
-allowFormulaBar: false
+    allowFormulaBar: false
 });         
 </script>
 
@@ -490,7 +491,7 @@ Gets or sets a value that indicates whether to enable or disable freeze pane sup
 <div id="Spreadsheet"></div> 
 <script>
 $('#Spreadsheet').ejSpreadsheet({
-allowFreezing : true
+    allowFreezing : true
 });
 </script>
 
@@ -511,7 +512,7 @@ Gets or sets a value that indicates whether to enable or disable hyperlink featu
 <div id="Spreadsheet"></div> 
 <script>
 $('#Spreadsheet').ejSpreadsheet({ 
-allowHyperlink: true
+    allowHyperlink: true
 });         
 </script>
 
@@ -523,7 +524,7 @@ allowHyperlink: true
 
 Gets or sets a value that indicates whether to enable or disable import feature in the Spreadsheet. By enabling this feature, you can open existing Spreadsheet documents. 
 
-Note: Need to specify importMapper while enabling this feature. Import feature supports XLS, XLSX file formats.
+N> Need to specify [`importMapper`](https://help.syncfusion.com/js/api/ejspreadsheet#members:importsettings-importmapper "importMapper") while enabling this feature.Import feature supports XLS, XLSX file formats.
 
 #### Default Value
 * true
@@ -534,11 +535,11 @@ Note: Need to specify importMapper while enabling this feature. Import feature s
 <div id="Spreadsheet"></div> 
 <script>
 $('#Spreadsheet').ejSpreadsheet({ 
-allowImport: true,
-importSettings:
-{
-importMapper: "http://js.syncfusion.com/ExportingServices/api/JSXLExport/Import"
-}
+    allowImport: true,
+    importSettings:
+        {
+            importMapper: "http://js.syncfusion.com/ExportingServices/api/JSXLExport/Import"
+        }
 });         
 </script>
 
@@ -559,7 +560,7 @@ Gets or sets a value that indicates whether to enable or disable the insert acti
 <div id="Spreadsheet"></div> 
 <script>
 $('#Spreadsheet').ejSpreadsheet({
-allowInsert: true
+    allowInsert: true
 });         
 </script>
 
@@ -580,7 +581,7 @@ Gets or sets a value that indicates whether to enable or disable keyboard naviga
 <div id="Spreadsheet"></div> 
 <script>
 $('#Spreadsheet').ejSpreadsheet({
-allowKeyboardNavigation: true
+    allowKeyboardNavigation: true
 });         
 </script>
 
@@ -601,7 +602,7 @@ Gets or sets a value that indicates whether to enable or disable lock cell featu
 <div id="Spreadsheet"></div> 
 <script>
 $('#Spreadsheet').ejSpreadsheet({ 
-allowLockCell: true                     
+    allowLockCell: true                    
 });
 </script>
 {% endhighlight %}
@@ -620,7 +621,7 @@ Gets or sets a value that indicates whether to enable or disable merge feature i
 <div id="Spreadsheet"></div> 
 <script>
 $('#Spreadsheet').ejSpreadsheet({
-allowMerging: true
+    allowMerging: true
 });         
 </script>
 
@@ -640,7 +641,7 @@ Gets or sets a value that indicates whether to enable or disable resizing featur
 <div id="Spreadsheet"></div> 
 <script>
 $('#Spreadsheet').ejSpreadsheet({
-allowResizing: true
+    allowResizing: true
 });         
 </script>
 
@@ -660,7 +661,7 @@ Gets or sets a value that indicates whether to enable or disable find and replac
 <div id="Spreadsheet"></div> 
 <script>
 $('#Spreadsheet').ejSpreadsheet({
-allowSearching : true
+    allowSearching : true
 });        
 </script>
 
@@ -700,7 +701,7 @@ Gets or sets a value that indicates whether to enable the sorting feature in the
 <div id="Spreadsheet"></div> 
 <script>
 $('#Spreadsheet').ejSpreadsheet({ 
-allowSorting: true
+    allowSorting: true
 });         
 </script>
 
@@ -720,7 +721,7 @@ Gets or sets a value that indicates whether to enable or disable undo and redo f
 <div id="Spreadsheet"></div> 
 <script>
 $('#Spreadsheet').ejSpreadsheet({ 
-allowUndoRedo: true                    
+    allowUndoRedo: true                    
 });
 </script>
 
@@ -740,7 +741,7 @@ Gets or sets a value that indicates whether to enable or disable wrap text featu
 <div id="Spreadsheet"></div> 
 <script>
 $('#Spreadsheet').ejSpreadsheet({ 
-allowWrap: true                     
+    allowWrap: true                     
 });
 </script>
 
@@ -752,7 +753,7 @@ allowWrap: true
 Gets or sets a value that indicates to define the width of the activation panel in Spreadsheet.
 
 #### Default Value
-* 200
+* 300
 
 #### Example
 
@@ -760,7 +761,7 @@ Gets or sets a value that indicates to define the width of the activation panel 
 <div id="Spreadsheet"></div>
 <script>
 $('#Spreadsheet').ejSpreadsheet({ 
-apWidth: 100
+    apWidth: 100
 });         
 </script>
 
@@ -778,7 +779,7 @@ Gets or sets an object that indicates to customize the auto fill behavior in the
 
 This property is used to set fillType unit in Spreadsheet. It has five types which are CopyCells, FillSeries, FillFormattingOnly, FillWithoutFormatting and FlashFill.
 
-Note: allowAutoFill must be true while setting fillType. 
+N> [`allowAutoFill`](https://help.syncfusion.com/js/api/ejspreadsheet#members:allowautofill "allowAutoFill") must be `true` while using this property.
 
 <table class="params">
 <thead>
@@ -822,10 +823,10 @@ Note: allowAutoFill must be true while setting fillType.
 <div id="Spreadsheet"></div> 
 <script>
 $('#Spreadsheet').ejSpreadsheet({
-allowAutoFill: true,
-autoFillSettings({
-fillType: ej.Spreadsheet.AutoFillOptions.CopyCells
-})
+    allowAutoFill: true,
+    autoFillSettings:{
+        fillType: ej.Spreadsheet.AutoFillOptions.CopyCells
+    }
 });  
 </script>
 
@@ -836,7 +837,7 @@ fillType: ej.Spreadsheet.AutoFillOptions.CopyCells
 
 Gets or sets a value that indicates to enable or disable auto fill options in the Spreadsheet.
 
-Note: allowAutoFill must be true while enabling this property.
+N> [`allowAutoFill`](https://help.syncfusion.com/js/api/ejspreadsheet#members:allowautofill "allowAutoFill") must be `true` while enabling this property.
 
 #### Default Value
 * true
@@ -847,10 +848,10 @@ Note: allowAutoFill must be true while enabling this property.
 <div id="Spreadsheet"></div> 
 <script>
 $('#Spreadsheet').ejSpreadsheet({
-allowAutoFille: true,
-autoFillSettings({
-showFillOptions: true
-})
+    allowAutoFill: true,
+    autoFillSettings:{
+        showFillOptions: true
+    }
 });  
 </script>
 
@@ -866,6 +867,8 @@ Gets or sets an object that indicates to customize the chart behavior in the Spr
 
 Gets or sets a value that defines the chart height in Spreadsheet.
 
+N> [`allowCharts`](https://help.syncfusion.com/js/api/ejspreadsheet#members:allowcharts "allowCharts") must be `true` while using this property.
+
 #### Default Value
 * 220
 
@@ -875,10 +878,10 @@ Gets or sets a value that defines the chart height in Spreadsheet.
 <div id="Spreadsheet"></div> 
 <script>
 $('#Spreadsheet').ejSpreadsheet({ 
-allowCharts: true,
-chartSettings: {
-height : 300
-}
+    allowCharts: true,
+    chartSettings: {
+        height : 300
+    }
 }); 
 </script>
 
@@ -889,6 +892,8 @@ height : 300
 
 Gets or sets a value that defines the chart width in the Spreadsheet.
 
+N> [`allowCharts`](https://help.syncfusion.com/js/api/ejspreadsheet#members:allowcharts "allowCharts") must be `true` while using this property.
+
 #### Default Value
 * 440
 
@@ -898,10 +903,10 @@ Gets or sets a value that defines the chart width in the Spreadsheet.
 <div id="Spreadsheet"></div> 
 <script>
 $('#Spreadsheet').ejSpreadsheet({ 
-allowCharts: true,
-chartSettings: {
-width : 500
-}
+    allowCharts: true,
+    chartSettings: {
+        width : 500
+    }
 }); 
 </script>
 
@@ -921,7 +926,7 @@ Gets or sets a value that defines the number of columns displayed in the sheet.
 <div id="Spreadsheet"></div>
 <script>
 $('#Spreadsheet').ejSpreadsheet({ 
-columnCount: 30
+    columnCount: 30
 });         
 </script>
 
@@ -940,7 +945,7 @@ Gets or sets a value that indicates to define the common width for each column i
 <div id="Spreadsheet"></div>
 <script>
 $('#Spreadsheet').ejSpreadsheet({ 
-columnWidth: 100
+    columnWidth: 100
 });         
 </script>
 
@@ -949,7 +954,7 @@ columnWidth: 100
 ### cssClass `String`
 {:#members:cssclass}
 
-Gets or sets a value that indicates to render the spreadsheet with custom theme.
+Gets or sets a value to add root css class for customizing Spreadsheet skins.
 
 #### Default Value
 * ""
@@ -961,13 +966,13 @@ Gets or sets a value that indicates to render the spreadsheet with custom theme.
 <script>
 // Set the CSS class during initialization. 
 $('#Spreadsheet').ejSpreadsheet({
-cssClass: "gradient-lime"
+    cssClass: "gradient-lime"
 });        
 </script>
 
 {% endhighlight %}
 
-### customFormulas `Object`
+### customFormulas `Array`
 {:#members:customformulas}
 
 Gets or sets a value that indicates custom formulas in Spreadsheet.
@@ -982,10 +987,10 @@ Gets or sets a value that indicates custom formulas in Spreadsheet.
 <script>
 // Set the custom formula
 $('#Spreadsheet').ejSpreadsheet({
-customFormulas: [{
-	formulaName:"CUSTOMTOTAL",
-	functionName:"customTotal"
-}]
+    customFormulas: [{
+	    formulaName:"CUSTOMTOTAL",
+	    functionName:"customTotal"
+    }]
 });   
 function customTotal(args){}//args-It uses the value given by the user while using custom formula in Spreadsheet.
 </script>
@@ -1006,7 +1011,7 @@ Gets or sets a value that indicates whether to enable or disable context menu in
 <div id="Spreadsheet"></div> 
 <script>
 $('#Spreadsheet').ejSpreadsheet({ 
-enableContextMenu: true
+    enableContextMenu: true
 });                   
 </script>
 
@@ -1026,7 +1031,27 @@ Gets or sets a value that indicates whether to enable or disable pivot table in 
 <div id="Spreadsheet"></div> 
 <script>
 $('#Spreadsheet').ejSpreadsheet({ 
-enablePivotTable: false
+    enablePivotTable: false
+});                   
+</script>
+
+{% endhighlight %}
+
+### enableTouch `Boolean`
+{:#members:enabletouch}
+
+Gets or sets a value that indicates whether to enable or disable touch support in the Spreadsheet.
+
+#### Default Value
+* true
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({ 
+    enableTouch: true
 });                   
 </script>
 
@@ -1042,7 +1067,7 @@ Gets or sets an object that indicates to customize the exporting behavior in Spr
 
 Gets or sets a value that indicates whether to enable or disable save feature in Spreadsheet. By enabling this feature, you can save existing Spreadsheet.
 
-N> User must specify excelUrl or csvUrl while enabling this feature
+N> User must specify [`excelUrl`](https://help.syncfusion.com/js/api/ejspreadsheet#members:exportsettings-excelurl "excelUrl") or [`pdfUrl`](https://help.syncfusion.com/js/api/ejspreadsheet#members:exportsettings-pdfurl "pdfUrl") or [`csvUrl`](https://help.syncfusion.com/js/api/ejspreadsheet#members:exportsettings-csvurl "csvUrl") while enabling this feature
 
 #### Default Value
 * true
@@ -1053,11 +1078,12 @@ N> User must specify excelUrl or csvUrl while enabling this feature
 <div id="Spreadsheet"></div> 
 <script>
 $('#Spreadsheet').ejSpreadsheet({
-exportSettings({
-allowExporting: true,
-csvUrl: "http://js.syncfusion.com/ExportingServices/api/JSXLExport/ExportToCsv", // It is used to set the url of the csv export.
-excelUrl: "http://js.syncfusion.com/ExportingServices/api/JSXLExport/ExportToExcel", //It is used to set the url of the excel export.
-})
+    exportSettings:{
+        allowExporting: true,
+        csvUrl: "http://js.syncfusion.com/ExportingServices/api/JSXLExport/ExportToCsv", // It is used to set the url of the csv export.
+        excelUrl: "http://js.syncfusion.com/ExportingServices/api/JSXLExport/ExportToExcel", //It is used to set the url of the excel export.
+        pdfUrl: "http://js.syncfusion.com/ExportingServices/api/JSXLExport/ExportToPdf", //It is used to set the url of the pdf export.
+    }
 });        
 </script>
 
@@ -1068,7 +1094,7 @@ excelUrl: "http://js.syncfusion.com/ExportingServices/api/JSXLExport/ExportToExc
 
 Gets or sets a value that indicates to define csvUrl for export to CSV format.
 
-Note: User must specify allowExporting true while use this property.
+N> User must specify [`allowExporting`](https://help.syncfusion.com/js/api/ejspreadsheet#members:exportsettings-allowexporting "allowExporting") `true` while use this property.
 
 #### Default Value
 * null
@@ -1079,10 +1105,10 @@ Note: User must specify allowExporting true while use this property.
 <div id="Spreadsheet"></div> 
 <script>
 $('#Spreadsheet').ejSpreadsheet({
-exportSettings({
-allowExporting: true,
-csvUrl: "http://js.syncfusion.com/ExportingServices/api/JSXLExport/ExportToCsv", // It is used to set the url of the csv export.
-})
+    exportSettings:{
+        allowExporting: true,
+        csvUrl: "http://js.syncfusion.com/ExportingServices/api/JSXLExport/ExportToCsv", // It is used to set the url of the csv export.
+    }
 });        
 </script>
 
@@ -1092,7 +1118,8 @@ csvUrl: "http://js.syncfusion.com/ExportingServices/api/JSXLExport/ExportToCsv",
 {:#members:exportsettings-excelurl}
 
 Gets or sets a value that indicates to define excelUrl for export to excel format.
-Note: User must specify allowExporting true while use this property.
+
+N> User must specify [`allowExporting`](https://help.syncfusion.com/js/api/ejspreadsheet#members:exportsettings-allowexporting "allowExporting") `true` while use this property.
 
 #### Default Value
 * null
@@ -1103,10 +1130,10 @@ Note: User must specify allowExporting true while use this property.
 <div id="Spreadsheet"></div> 
 <script>
 $('#Spreadsheet').ejSpreadsheet({
-exportSettings({
-allowExporting: true,
-excelUrl: "http://js.syncfusion.com/ExportingServices/api/JSXLExport/ExportToExcel", //It is used to set the url of the excel export.
-})
+    exportSettings:{
+        allowExporting: true,
+        excelUrl: "http://js.syncfusion.com/ExportingServices/api/JSXLExport/ExportToExcel", //It is used to set the url of the excel export.
+    }
 });        
 </script>
 
@@ -1117,7 +1144,7 @@ excelUrl: "http://js.syncfusion.com/ExportingServices/api/JSXLExport/ExportToExc
 
 Gets or sets a value that indicates to define password while export to excel format.
 
-Note: User must specify allowExporting true while use this property.
+N> User must specify [`allowExporting`](https://help.syncfusion.com/js/api/ejspreadsheet#members:exportsettings-allowexporting "allowExporting") `true` while use this property.
 
 #### Default Value
 * null
@@ -1128,11 +1155,36 @@ Note: User must specify allowExporting true while use this property.
 <div id="Spreadsheet"></div> 
 <script>
 $('#Spreadsheet').ejSpreadsheet({
-exportSettings({
-allowExporting: true,
-excelUrl: "http://js.syncfusion.com/ExportingServices/api/JSXLExport/ExportToExcel", //It is used to set the url of the excel export
-password :"Spreadsheet"
-})
+    exportSettings:{
+        allowExporting: true,
+        excelUrl: "http://js.syncfusion.com/ExportingServices/api/JSXLExport/ExportToExcel", //It is used to set the url of the excel export
+        password :"Spreadsheet"
+    }
+});        
+</script>
+
+{% endhighlight %}
+
+### exportSettings.pdfUrl `String`
+{:#members:exportsettings-pdfurl}
+
+Gets or sets a value that indicates to define pdfUrl for export to pdf format.
+
+N> User must specify [`allowExporting`](https://help.syncfusion.com/js/api/ejspreadsheet#members:exportsettings-allowexporting "allowExporting") `true` while using this property.
+
+#### Default Value
+* null
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+    exportSettings:{
+        allowExporting: true,
+        pdfUrl: "http://js.syncfusion.com/ExportingServices/api/JSXLExport/ExportToPdf", //It is used to set the url of the pdf export.
+    }
 });        
 </script>
 
@@ -1148,7 +1200,7 @@ Gets or sets an object that indicates to customize the format behavior in the Sp
 
 Gets or sets a value that indicates whether to enable or disable cell border feature in the Spreadsheet.
 
-Note: allowCellFormatting must be true while using this property.
+N> [`allowCellFormatting`](https://help.syncfusion.com/js/api/ejspreadsheet#members:allowcellformatting "allowCellFormatting") must be `true` while using this property.
 
 #### Default Value
 * true
@@ -1158,10 +1210,10 @@ Note: allowCellFormatting must be true while using this property.
 <div id="Spreadsheet"></div> 
 <script>
 $('#Spreadsheet').ejSpreadsheet({
-allowCellFormatting: true,
-formatSettings({
-allowCellBorder: true
-})
+    allowCellFormatting: true,
+    formatSettings:{
+        allowCellBorder: true
+    }
 });  
 </script>
 
@@ -1172,7 +1224,7 @@ allowCellBorder: true
 
 Gets or sets a value that indicates whether to enable or disable decimal places in the Spreadsheet.
 
-Note: allowCellFormatting must be true while using this property.
+N> [`allowCellFormatting`](https://help.syncfusion.com/js/api/ejspreadsheet#members:allowcellformatting "allowCellFormatting") must be `true` while using this property.
 
 #### Default Value
 * true
@@ -1183,10 +1235,10 @@ Note: allowCellFormatting must be true while using this property.
 <div id="Spreadsheet"></div> 
 <script>
 $('#Spreadsheet').ejSpreadsheet({
-allowCellFormatting: true,
-formatSettings({
-allowDecimalPlaces: true
-})
+    allowCellFormatting: true,
+    formatSettings:{
+        allowDecimalPlaces: true
+    }
 });  
 </script>
 
@@ -1197,7 +1249,7 @@ allowDecimalPlaces: true
 
 Gets or sets a value that indicates whether to enable or disable font family feature in Spreadsheet.
 
-Note: allowCellFormatting must be true while using this property. 
+N> [`allowCellFormatting`](https://help.syncfusion.com/js/api/ejspreadsheet#members:allowcellformatting "allowCellFormatting") must be `true` while using this property. 
 
 #### Default Value
 * true
@@ -1208,17 +1260,47 @@ Note: allowCellFormatting must be true while using this property.
 <div id="Spreadsheet"></div> 
 <script>
 $('#Spreadsheet').ejSpreadsheet({
-allowCellFormatting : true,
-formatSettings({
-allowFontFamily: true
-})
+    allowCellFormatting : true,
+    formatSettings:{
+        allowFontFamily: true
+    }
 });  
 </script>
 
 {% endhighlight %}
 
-### importOnLoad `Boolean`
-{:#members:importonload}
+### importSettings `Object`
+{:#members:importsettings}
+
+Gets or sets an object that indicates to customize the import behavior in the Spreadsheet.
+
+### importSettings.importMapper `String`
+{:#members:importsettings-importmapper}
+
+Sets import mapper to perform import feature in Spreadsheet.
+
+N> [`allowImport`](https://help.syncfusion.com/js/api/ejspreadsheet#members:allowimport "allowImport") must be `true` while using this property.
+
+#### Default Value
+* ""
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+    allowImport: true,
+    importSettings:{
+        importMapper: "http://js.syncfusion.com/ExportingServices/api/JSXLExport/Import"
+    }
+});        
+</script>
+
+{% endhighlight %}
+
+### importSettings.importOnLoad `Boolean`
+{:#members:importsettings-importonload}
 
 Gets or sets a value that indicates whether to enable or disable import while initial loading.
 
@@ -1234,39 +1316,9 @@ Gets or sets a value that indicates whether to enable or disable import while in
 <script>
 $('#Spreadsheet').ejSpreadsheet({ 
     importSettings: {
-        importOnLoad: false            
+        importOnLoad: true            
     }
 });                   
-</script>
-
-{% endhighlight %}
-
-### importSettings `Object`
-{:#members:importsettings}
-
-Gets or sets an object that indicates to customize the import behavior in the Spreadsheet.
-
-### importSettings.importMapper `String`
-{:#members:importsettings-importmapper}
-
-Sets import mapper to perform import feature in Spreadsheet.
-
-Note: allowImport must be true while using this property.
-
-#### Default Value
-* ""
-
-#### Example
-
-{% highlight html %}
-<div id="Spreadsheet"></div> 
-<script>
-$('#Spreadsheet').ejSpreadsheet({
-allowImport: true,
-importSettings({
-importMapper: "http://js.syncfusion.com/ExportingServices/api/JSXLExport/Import",
-})
-});        
 </script>
 
 {% endhighlight %}
@@ -1276,7 +1328,7 @@ importMapper: "http://js.syncfusion.com/ExportingServices/api/JSXLExport/Import"
 
 Sets import URL to access the online files in the Spreadsheet.
 
-Note: allowImport must be true while using this property.
+N> [`allowImport`](https://help.syncfusion.com/js/api/ejspreadsheet#members:allowimport "allowImport") must be `true` while using this property.
 
 #### Default Value
 * ""
@@ -1287,10 +1339,10 @@ Note: allowImport must be true while using this property.
 <div id="Spreadsheet"></div> 
 <script>
 $('#Spreadsheet').ejSpreadsheet({
-allowImport: true,
-importSettings({
-importUrl: "http://mvc.syncfusion.com/beta/JSSpreadSheet/SpreadSheet.xlsx", //It is used to access the online files in Spreadsheet.
-})
+    allowImport: true,
+    importSettings:{
+        importUrl: "http://mvc.syncfusion.com/Spreadsheet/Spreadsheet.xlsx", //It is used to access the online files in Spreadsheet.
+    }
 });        
 </script>
 
@@ -1301,7 +1353,7 @@ importUrl: "http://mvc.syncfusion.com/beta/JSSpreadSheet/SpreadSheet.xlsx", //It
 
 Gets or sets a value that indicates to define password while importing in the Spreadsheet.
 
-Note: allowImport must be true while using this property.
+N> [`allowImport`](https://help.syncfusion.com/js/api/ejspreadsheet#members:allowimport "allowImport") must be `true` while using this property.
 
 #### Default Value
 * ""
@@ -1312,11 +1364,11 @@ Note: allowImport must be true while using this property.
 <div id="Spreadsheet"></div> 
 <script>
 $('#Spreadsheet').ejSpreadsheet({
-allowImport: true,
-importSettings({
-importMapper: "http://js.syncfusion.com/ExportingServices/api/JSXLExport/Import",
-password: "Spreadsheet" //It is used to set password for sheet.
-})
+    allowImport: true,
+    importSettings:{
+        importMapper: "http://js.syncfusion.com/ExportingServices/api/JSXLExport/Import",
+        password: "Spreadsheet" //It opens the excel file using this password.
+    }
 });        
 </script>
 
@@ -1339,7 +1391,7 @@ ej.Spreadsheet.locale["es-ES"] = {
 Sheet: "Hoja"
 };             
 $('#Spreadsheet').ejSpreadsheet({ 
-locale: "es-ES"
+    locale: "es-ES"
 });         
 </script>
 
@@ -1364,9 +1416,9 @@ Gets or sets a value that indicates whether to enable or disable picture feature
 <div id="Spreadsheet"></div> 
 <script>
 $('#Spreadsheet').ejSpreadsheet({
-pictureSettings({
-allowPictures: true,
-})
+    pictureSettings:{
+        allowPictures: true
+    }
 });    
 </script>
 
@@ -1377,6 +1429,8 @@ allowPictures: true,
 
 Gets or sets a value that indicates to define height to picture in the Spreadsheet.
 
+N> [`allowPictures`](https://help.syncfusion.com/js/api/ejspreadsheet#members:picturesettings-allowpictures "allowPictures") must be `true` while using this property.
+
 #### Default Value
 * 220
 
@@ -1386,10 +1440,10 @@ Gets or sets a value that indicates to define height to picture in the Spreadshe
 <div id="Spreadsheet"></div> 
 <script>
 $('#Spreadsheet').ejSpreadsheet({
-pictureSettings({
-allowPictures: true,
-height: 300
-})
+    pictureSettings:{
+        allowPictures: true,
+        height: 300
+    }
 });    
 </script>
 
@@ -1400,6 +1454,8 @@ height: 300
 
 Gets or sets a value that indicates to define width to picture in the Spreadsheet.
 
+N> [`allowPictures`](https://help.syncfusion.com/js/api/ejspreadsheet#members:picturesettings-allowpictures "allowPictures") must be `true` while using this property.
+
 #### Default Value
 * 440
 
@@ -1409,10 +1465,10 @@ Gets or sets a value that indicates to define width to picture in the Spreadshee
 <div id="Spreadsheet"></div> 
 <script>
 $('#Spreadsheet').ejSpreadsheet({
-pictureSettings({
-allowPictures: true,
-width: 500
-})
+    pictureSettings:{
+        allowPictures: true,
+        width: 500
+    }
 });    
 </script>
 
@@ -1428,7 +1484,7 @@ Gets or sets an object that indicates to customize the print option in Spreadshe
 
 Gets or sets a value that indicates whether to enable or disable page setup support for printing in Spreadsheet. 
 
-Note: allowPrinting must be true while enabling allowPageSetup.
+N> [`allowPrinting`](https://help.syncfusion.com/js/api/ejspreadsheet#members:printsettings-allowprinting "allowPrinting") must be `true` while enabling this property.
 
 #### Default Value
 * true
@@ -1439,10 +1495,10 @@ Note: allowPrinting must be true while enabling allowPageSetup.
 <div id="Spreadsheet"></div> 
 <script>
 $('#Spreadsheet').ejSpreadsheet({
-allowPrinting: true,
-printSettings({
-allowPageSetup: true
-})
+    allowPrinting: true,
+    printSettings:{
+        allowPageSetup: true
+    }
 });   
 </script>
 
@@ -1453,7 +1509,7 @@ allowPageSetup: true
 
 Gets or sets a value that indicates whether to enable or disable page size support for printing in Spreadsheet.
 
-Note: allowPrinting must be true while enabling allowPageSetup.
+N> [`allowPrinting`](https://help.syncfusion.com/js/api/ejspreadsheet#members:printsettings-allowprinting "allowPrinting") must be `true` while enabling this property.
 
 #### Default Value
 * false
@@ -1464,10 +1520,10 @@ Note: allowPrinting must be true while enabling allowPageSetup.
 <div id="Spreadsheet"></div> 
 <script>
 $('#Spreadsheet').ejSpreadsheet({
-allowPrinting: true,
-printSettings({
-allowPageSize: true
-})
+    allowPrinting: true,
+    printSettings:{
+        allowPageSize: true
+    }
 });   
 </script>
 
@@ -1487,9 +1543,128 @@ Gets or sets a value that indicates whether to enable or disable print feature i
 <div id="Spreadsheet"></div> 
 <script>
 $('#Spreadsheet').ejSpreadsheet({
-printSettings({
-allowPrinting: true
-})
+    printSettings:{
+        allowPrinting: true
+    }
+});   
+</script>
+
+{% endhighlight %}
+
+### ribbonSettings `Object`
+{:#members:ribbonsettings}
+
+Gets or sets an object that indicates to customize the ribbon settings in Spreadsheet.
+
+### ribbonSettings.applicationTab `Object`
+{:#members:ribbonsettings-applicationtab}
+
+Gets or sets an object that indicates application tab settings in Spreadsheet.
+
+N>[`showRibbon`](https://help.syncfusion.com/js/api/ejspreadsheet#members:showribbon "showRibbon") must be `true` while using this property.
+
+### ribbonSettings.applicationTab.type `Enum`
+{:#members:ribbonsettings-applicationtab-type}
+
+<ts name="ej.Ribbon.ApplicationTabType"/>
+
+Gets or sets a value that indicates to set application tab type in Spreadsheet. It has two types, Menu and Backstage.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">Menu</td>
+<td class="description">To enable menu type in ribbon.</td>
+</tr>
+<tr>
+<td class="name">Backstage</td>
+<td class="description">To enable back stage type in ribbon.</td>
+</tr>
+</tbody>
+</table>
+
+#### Default Value
+* ej.Ribbon.ApplicationTabType.Backstage
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+    ribbonSettings: {
+        applicationTab: {
+            type: ej.Ribbon.ApplicationTabType.Menu
+        }
+    }
+    });   
+</script>
+
+{% endhighlight %}
+
+### ribbonSettings.applicationTab.menuSettings `Object`
+{:#members:ribbonsettings-applicationtab-menusettings}
+
+Gets or sets an object that indicates menu settings for application tab in Spreadsheet.
+
+N> `ApplicationTabType` should be `Menu` while using this property.
+
+### ribbonSettings.applicationTab.menuSettings.isAppend `Boolean`
+{:#members:ribbonsettings-applicationtab-menusettings-isappend}
+
+Gets or sets a value that indicates whether to enable or disable isAppend property in ribbon settings.
+
+#### Default Value
+* false
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+    ribbonSettings:{
+        applicationTab:{
+            type: ej.Ribbon.ApplicationTabType.Menu
+            menuSettings:{
+                isAppend:true
+            }
+        }
+    }   
+});   
+</script>
+
+{% endhighlight %}
+
+### ribbonSettings.applicationTab.menuSettings.dataSource `Array`
+{:#members:ribbonsettings-applicationtab-menusettings-datasource}
+
+Specifies the data source to append in applicationtab.
+
+#### Default Value
+* []
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+    ribbonSettings:{
+        applicationTab:{
+            type: ej.Ribbon.ApplicationTabType.Menu,
+            menuSettings:{                
+                isAppend:true,
+                dataSource:[{ id: "File", text: "File" }]
+            }
+        }
+    }
 });   
 </script>
 
@@ -1509,7 +1684,7 @@ Gets or sets a value that indicates whether to define the number of rows to be d
 <div id="Spreadsheet"></div> 
 <script>
 $('#Spreadsheet').ejSpreadsheet({ 
-rowCount: 30
+    rowCount: 30
 });         
 </script>
 
@@ -1529,7 +1704,7 @@ Gets or sets a value that indicates to define the common height for each row in 
 <div id="Spreadsheet"></div> 
 <script>
 $('#Spreadsheet').ejSpreadsheet({ 
-rowHeight: 30
+    rowHeight: 30
 });         
 </script>
 
@@ -1553,9 +1728,9 @@ Gets or sets a value that indicates whether to enable or disable scrolling in Sp
 <div id="Spreadsheet"></div> 
 <script>
 $('#Spreadsheet').ejSpreadsheet({
-scrollSettings({
-allowScrolling: true,
-})
+    scrollSettings:{
+        allowScrolling: true,
+    }
 });    
 </script>
 
@@ -1575,10 +1750,10 @@ Gets or sets a value that indicates whether to enable or disable sheet on demand
 <div id="Spreadsheet"></div> 
 <script>
 $('#Spreadsheet').ejSpreadsheet({
-scrollSettings({
-allowScrolling: true,
-allowSheetOnDemand: true,
-})
+    scrollSettings:{
+        allowScrolling: true,
+        allowSheetOnDemand: true
+    }
 });    
 </script>
 
@@ -1589,7 +1764,7 @@ allowSheetOnDemand: true,
 
 Gets or sets a value that indicates whether to enable or disable virtual scrolling feature in the Spreadsheet.
 
-Note: allowScrolling must be true while enabling allowVirtualScrolling.
+N> [`allowScrolling`](https://help.syncfusion.com/js/api/ejspreadsheet#members:scrollsettings-allowscrolling "allowScrolling") must be `true` while enabling this property.
 
 #### Default Value
 * true
@@ -1600,10 +1775,10 @@ Note: allowScrolling must be true while enabling allowVirtualScrolling.
 <div id="Spreadsheet"></div> 
 <script>
 $('#Spreadsheet').ejSpreadsheet({
-scrollSettings({
-allowScrolling: true,
-allowVirtualScrolling: true
-})
+    scrollSettings:{
+        allowScrolling: true,
+        allowVirtualScrolling: true
+    }
 });    
 </script>
 
@@ -1615,7 +1790,7 @@ allowVirtualScrolling: true
 Gets or sets the value that indicates to define the height of spreadsheet.
 
 #### Default Value
-* 550
+* 100%
 
 #### Example
 
@@ -1623,10 +1798,10 @@ Gets or sets the value that indicates to define the height of spreadsheet.
 <div id="Spreadsheet"></div> 
 <script>
 $('#Spreadsheet').ejSpreadsheet({
-scrollSettings({
-allowScrolling: true,
-height: 600
-})
+    scrollSettings:{
+        allowScrolling: true,
+        height: 600
+    }
 });    
 </script>
 
@@ -1638,7 +1813,7 @@ height: 600
 Gets or sets the value that indicates whether to enable or disable responsive mode in the Spreadsheet.
 
 #### Default Value
-* false
+* true
 
 #### Example
 
@@ -1646,12 +1821,12 @@ Gets or sets the value that indicates whether to enable or disable responsive mo
 <div id="Spreadsheet"></div> 
 <script>
 $('#Spreadsheet').ejSpreadsheet({
-scrollSettings({
-allowScrolling: true,
-width: "100%",
-height: "100%",
-isResponsive: true
-})
+    scrollSettings:{
+        allowScrolling: true,
+        width: "100%",
+        height: "100%",
+        isResponsive: true
+    }
 });    
 </script>
 
@@ -1664,7 +1839,7 @@ isResponsive: true
 
 Gets or sets a value that indicates to set scroll mode in Spreadsheet. It has two scroll modes, Normal and Infinite.
 
-Note: allowScrolling must be true while enabling this property.
+N> [`allowScrolling`](https://help.syncfusion.com/js/api/ejspreadsheet#members:scrollsettings-allowscrolling "allowScrolling") must be `true` while enabling this property.
 
 <table class="params">
 <thead>
@@ -1696,12 +1871,12 @@ Note: allowScrolling must be true while enabling this property.
 <div id="Spreadsheet"></div> 
 <script>
 $('#Spreadsheet').ejSpreadsheet({
-scrollSettings({
-allowScrolling: true,
-height: "100%",
-width: "100%",
-scrollmode: ej.Spreadsheet.scrollMode.Infinite,
-})
+    scrollSettings:{
+        allowScrolling: true,
+        height: "100%",
+        width: "100%",
+        scrollmode: ej.Spreadsheet.scrollMode.Infinite,
+    }
 });    
 </script>
 
@@ -1710,10 +1885,10 @@ scrollmode: ej.Spreadsheet.scrollMode.Infinite,
 ### scrollSettings.width `Number|String`
 {:#members:scrollsettings-width}
 
-Gets or sets the value that indicates to define the height off spreadsheet.
+Gets or sets the value that indicates to define the height of the spreadsheet.
 
 #### Default Value
-* 1300
+* 100%
 
 #### Example
 
@@ -1721,11 +1896,11 @@ Gets or sets the value that indicates to define the height off spreadsheet.
 <div id="Spreadsheet"></div> 
 <script>
 $('#Spreadsheet').ejSpreadsheet({
-scrollSettings({
-allowScrolling: true,
-width: 1300,
-scrollmode: ej.Spreadsheet.scrollMode.Infinite
-})
+    scrollSettings:{
+        allowScrolling: true,
+        width: 1300,
+        scrollmode: ej.Spreadsheet.scrollMode.Infinite
+    }
 });    
 </script>
 
@@ -1741,7 +1916,7 @@ Gets or sets an object that indicates to customize the selection options in the 
 
 Gets or sets a value that indicates to define active cell in spreadsheet.
 
-Note: allowSelection must be true while using this property.
+N> [`allowSelection`](https://help.syncfusion.com/js/api/ejspreadsheet#members:allowselection "allowSelection") must be `true` while using this property.
 
 #### Default Value
 * ""
@@ -1752,10 +1927,10 @@ Note: allowSelection must be true while using this property.
 <div id="Spreadsheet"></div> 
 <script>
 $('#Spreadsheet').ejSpreadsheet({
-allowSelection: true,
-selectionSettings({
-activeCell: "A1"
-})
+    allowSelection: true,
+    selectionSettings:{
+        activeCell: "A1"
+    }
 });
 </script>
 
@@ -1766,7 +1941,7 @@ activeCell: "A1"
 
 Gets or sets a value that indicates to define animation time while selection in the Spreadsheet.
 
-Note: allowSelection and enableAnimation must be true while using this property.
+N> [`allowSelection`](https://help.syncfusion.com/js/api/ejspreadsheet#members:allowselection "allowSelection") must be `true` while using this property.
 
 #### Default Value
 * 0.001
@@ -1777,11 +1952,11 @@ Note: allowSelection and enableAnimation must be true while using this property.
 <div id="Spreadsheet"></div> 
 <script>
 $('#Spreadsheet').ejSpreadsheet({
-allowSelection: true,
-selectionSettings({
-enableAnimation: true,
-animationTime: 0.002
-})
+    allowSelection: true,
+    selectionSettings:{
+        enableAnimation: true,
+        animationTime: 0.002
+    }
 });
 </script>
 
@@ -1791,7 +1966,8 @@ animationTime: 0.002
 {:#members:selectionsettings-enableanimation}
 
 Gets or sets a value that indicates to enable or disable animation while selection.
-Note: allowSelection must be true while using this property.
+
+N> [`allowSelection`](https://help.syncfusion.com/js/api/ejspreadsheet#members:allowselection "allowSelection") must be `true` while using this property
 
 #### Default Value
 * false
@@ -1802,10 +1978,10 @@ Note: allowSelection must be true while using this property.
 <div id="Spreadsheet"></div> 
 <script>
 $('#Spreadsheet').ejSpreadsheet({
-allowSelection: true,
-selectionSettings({
-enableAnimation: true
-})
+    allowSelection: true,
+    selectionSettings:{
+        enableAnimation: true
+    }
 });
 </script>
 
@@ -1818,7 +1994,7 @@ enableAnimation: true
 
 Gets or sets a value that indicates to set selection type in Spreadsheet. It has three types which are Column, Row and Default.
 
-N> [`allowSelection`](http://help.syncfusion.com/js/api/ejspreadsheet#members:allowselection "allowSelection") must be `true` while using this property
+N> [`allowSelection`](https://help.syncfusion.com/js/api/ejspreadsheet#members:allowselection "allowSelection") must be `true` while using this property
 
 <table class="params">
 <thead>
@@ -1854,11 +2030,11 @@ N> [`allowSelection`](http://help.syncfusion.com/js/api/ejspreadsheet#members:al
 <script>
 $('#Spreadsheet').ejSpreadsheet({
     allowSelection: true,
-    selectionSettings({
-        selectionType: ej.Spreadsheet.SelectionType.Default,
+    selectionSettings:{
+        selectionType: ej.Spreadsheet.SelectionType.Row,
         animationTime: 0.001,
         enableAnimation: true
-    })
+    }
 });
 </script>
 {% endhighlight %}
@@ -1870,7 +2046,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 Gets or sets a value that indicates to set selection unit in Spreadsheet. It has three types which are Single, Range and MultiRange.
 
-N> [`allowSelection`](http://help.syncfusion.com/js/api/ejspreadsheet#members:allowselection "allowSelection") must be `true` while using this property
+N> [`allowSelection`](https://help.syncfusion.com/js/api/ejspreadsheet#members:allowselection "allowSelection") must be `true` while using this property
 	
 <table class="params">
 <thead>
@@ -1906,9 +2082,9 @@ N> [`allowSelection`](http://help.syncfusion.com/js/api/ejspreadsheet#members:al
 <script>
 $('#Spreadsheet').ejSpreadsheet({
     allowSelection: true,
-    selectionSettings({
+    selectionSettings:{
         selectionUnit: ej.Spreadsheet.SelectionUnit.Single
-    })
+    }
 });  
 </script>
 
@@ -1928,7 +2104,7 @@ Gets or sets a value that indicates to define the number of sheets to be created
 <div id="Spreadsheet"></div> 
 <script>
 $('#Spreadsheet').ejSpreadsheet({ 
-sheetCount: 5
+    sheetCount: 5
 });         
 </script>
 
@@ -1938,6 +2114,379 @@ sheetCount: 5
 {:#members:sheets}
 
 Gets or sets an object that indicates to customize the sheet behavior in Spreadsheet.
+
+### sheets.border `Array`
+{:#members:sheets-border}
+
+Specifies the border for the cell in the Spreadsheet.
+
+#### Default Value:
+
+* []
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+    sheets:[{
+        border: [{ type: ej.Spreadsheet.BorderType.AllBorder, color: "#456534", range: "C6:D9" }]
+    }]
+});    
+</script>
+
+{% endhighlight %}
+
+### sheets.border.type `Enum`
+{:#members:sheets-border-type}
+
+<ts name="ej.Spreadsheet.BorderType"/> 
+
+Specifies border type in the Spreadsheet.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">Top</td>
+<td class="description">To apply top border for the given range of cell.</td>
+</tr>
+<tr>
+<td class="name">Left</td>
+<td class="description">To apply left border for the given range of cell.</td>
+</tr>
+<tr>
+<td class="name">Right</td>
+<td class="description">To apply right border for the given range of cell.</td>
+</tr>
+<tr>
+<td class="name">Bottom</td>
+<td class="description">To apply bottom border for the given range of cell.</td>
+</tr>
+<tr>
+<td class="name">OutSide</td>
+<td class="description">To apply outside border for the given range of cell.</td>
+</tr>
+<tr>
+<td class="name">AllBorder</td>
+<td class="description">To apply all border for the given range of cell.</td>
+</tr>
+<tr>
+<td class="name">ThickBox</td>
+<td class="description">To apply thick box border for the given range of cell.</td>
+</tr>
+<tr>
+<td class="name">ThickBottom</td>
+<td class="description">To apply thick bottom border for the given range of cell.</td>
+</tr>
+<tr>
+<td class="name">TopandBottom</td>
+<td class="description">To apply top and bottom border for the given range of cell.</td>
+</tr>
+<tr>
+<td class="name">TopandThickBottom</td>
+<td class="description">To apply top and thick bottom border for the given range of cell.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+    sheets:[{
+        border: [{ type: ej.Spreadsheet.BorderType.AllBorder, color: "#456534", range: "C6:D9" }]
+    }]
+});    
+</script>
+
+{% endhighlight %}
+
+### sheets.border.color `String`
+{:#members:sheets-border-color}
+
+Specifies border color for range of cells in Spreadsheet.
+
+#### Default Value:
+
+* ""
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+    sheets:[{
+        border: [{ type: ej.Spreadsheet.BorderType.AllBorder, color: "#456534", range: "C6:D9" }]
+    }]
+});    
+</script>
+
+{% endhighlight %}
+
+### sheets.border.range `String`
+{:#members:sheets-border-range}
+
+To apply border for the specified range of cell. 
+
+#### Default Value:
+
+* ""
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+    sheets:[{
+        border: [{ type: ej.Spreadsheet.BorderType.AllBorder, color: "#456534", range: "C6:D9" }]
+    }]
+});    
+</script>
+
+{% endhighlight %}
+
+### sheets.cFormatRule `Array`
+{:#members:sheets-cformatrule}
+
+Specifies the conditional formatting for the range of cell in Spreadsheet.
+
+#### Default Value:
+
+* []
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+    sheets:[{
+        cFormatRule: [{ action: ej.Spreadsheet.CFormatRule.LessThan, inputs: ["30"], color: ej.Spreadsheet.CFormatHighlightColor.RedFillwithDarkRedText, range: "A1:E1" }],
+        rows:[
+            {
+                cells: [
+                    { value: "20"},
+				    { value: "30"},
+				    { value: "15"},
+				    { value: "40"},
+				    { value: "50"}
+                ]
+            }
+        ]
+    }]
+});    
+</script>
+
+{% endhighlight %}
+
+### sheets.cFormatRule.action `Enum`
+{:#members:sheets-cformatrule-action}
+
+<ts name="ej.Spreadsheet.CFormatRule"/>
+
+Specifies the conditions to apply for the range of cells in Spreadsheet.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">GreaterThan</td>
+<td class="description">To identify greater than values in the given range of cells.</td>
+</tr>
+<tr>
+<td class="name">LessThan</td>
+<td class="description">To identify less than values in the given range of cells.</td>
+</tr>
+<tr>
+<td class="name">Between</td>
+<td class="description">To identify in between values in the given range of cells.</td>
+</tr>
+<tr>
+<td class="name">EqualTo</td>
+<td class="description">To identify the equal values in the given range of cells.</td>
+</tr>
+<tr>
+<td class="name">TextContains</td>
+<td class="description">To identify the specified text in the range of cells.</td>
+</tr>
+<tr>
+<td class="name">DateOccurs</td>
+<td class="description">To identify the specified date in the range of cells.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+    sheets:[{
+        cFormatRule: [{ action: ej.Spreadsheet.CFormatRule.LessThan, inputs: ["30"], color: ej.Spreadsheet.CFormatHighlightColor.RedFillwithDarkRedText, range: "A1:E1" }],
+        rows:[
+            {
+            cells: [
+                    { value: "20"},
+				    { value: "30"},
+				    { value: "15"},
+				    { value: "40"},
+				    { value: "50"}
+                ]
+            }
+        ]
+    }]
+});    
+</script>
+
+{% endhighlight %}
+
+### sheets.cFormatRule.color `Enum`
+{:#members:sheets-cformatrule-color}
+
+<ts name="ej.Spreadsheet.CFormatHighlightColor"/>
+
+Specifies the color to apply for the range of cell while conditional formatting.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">RedFillwithDarkRedText</td>
+<td class="description">Highlights red with dark red text color.</td>
+</tr>
+<tr>
+<td class="name">YellowFillwithDarkYellowText</td>
+<td class="description">Highlights yellow with dark yellow text color.</td>
+</tr>
+<tr>
+<td class="name">GreenFillwithDarkGreenText</td>
+<td class="description">Highlights green with dark green text color.</td>
+</tr>
+<tr>
+<td class="name">RedFill</td>
+<td class="description">Highlights with red fill.</td>
+</tr>
+<tr>
+<td class="name">RedText</td>
+<td class="description">Highlights with red text.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+    sheets:[{
+        cFormatRule: [{ action: ej.Spreadsheet.CFormatRule.LessThan, inputs: ["30"], color: ej.Spreadsheet.CFormatHighlightColor.RedFillwithDarkRedText, range: "A1:E1" }],
+        rows:[
+            {
+            cells: [
+                    { value: "20"},
+				    { value: "30"},
+				    { value: "15"},
+				    { value: "40"},
+				    { value: "50"}
+                ]
+            }
+        ]
+    }]
+});    
+</script>
+
+{% endhighlight %}
+
+### sheets.cFormatRule.inputs `Array`
+{:#members:sheets-cformatrule-inputs}
+
+Specifies the inputs for conditional formatting in Spreadsheet.
+
+#### Default Value:
+
+* []
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+    sheets:[{
+        cFormatRule: [{ action: ej.Spreadsheet.CFormatRule.LessThan, inputs: ["30"], color: ej.Spreadsheet.CFormatHighlightColor.RedFillwithDarkRedText, range: "A1:E1" }],
+        rows:[
+            {
+                cells: [
+                    { value: "20"},
+				    { value: "30"},
+				    { value: "15"},
+				    { value: "40"},
+				    { value: "50"}
+                ]
+            }
+        ]
+    }]
+});    
+</script>
+
+{% endhighlight %}
+
+### sheets.cFormatRule.range `String`
+{:#members:sheets-cformatrule-range}
+
+Specifies the range for conditional formatting in Spreadsheet.
+
+#### Default Value:
+
+* ""
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+    sheets:[{
+        cFormatRule: [{ action: ej.Spreadsheet.CFormatRule.LessThan, inputs: ["30"], color: ej.Spreadsheet.CFormatHighlightColor.RedFillwithDarkRedText, range: "A1:E1" }],
+        rows:[
+            {
+            cells: [
+                    { value: "20"},
+				    { value: "30"},
+				    { value: "15"},
+				    { value: "40"},
+				    { value: "50"}
+                ]
+            }
+        ]
+    }]
+});    
+</script>
+
+{% endhighlight %}
 
 ### sheets.colCount `Number`
 {:#members:sheets-colcount}
@@ -1954,10 +2503,10 @@ Gets or sets a value that indicates to define column count in the Spreadsheet.
 <div id="Spreadsheet"></div> 
 <script>
 $('#Spreadsheet').ejSpreadsheet({
-sheets:[{
-rangeSettings: [{dataSource: window.defaultData, startCell: "A1"}],
-colCount: 25
-}]
+    sheets:[{
+        rangeSettings: [{dataSource: window.defaultData}],
+        colCount: 25
+    }]
 });    
 </script>
 
@@ -1978,9 +2527,9 @@ Gets or sets a value that indicates to define column width in the Spreadsheet.
 <div id="Spreadsheet"></div> 
 <script>
 $('#Spreadsheet').ejSpreadsheet({
-sheets:[{
-        columnWidth: 100
-    }]
+    sheets:[{
+            columnWidth: 100
+        }]
 });    
 </script>
 
@@ -1993,7 +2542,7 @@ Gets or sets the data to render the Spreadsheet.
 
 #### Default Value:
 
-* -
+* null
 
 #### Example
 
@@ -2004,7 +2553,7 @@ Gets or sets the data to render the Spreadsheet.
 $('#Spreadsheet').ejSpreadsheet({
     sheets:[{
         // the datasource "window.defaultData" is referred from 'http://js.syncfusion.com/demos/web/scripts/xljsondata.js'
-        dataSource: window.defaultData;
+        dataSource: window.defaultData
     }]
 });    
 </script>
@@ -2026,12 +2575,12 @@ Gets or sets a value that indicates whether to enable or disable field as column
 <script>
 var dataManager = ej.DataManager("http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/");
 $('#Spreadsheet').ejSpreadsheet({
-sheets:[{
-dataSource: dataManager,
-query: ej.Query().take(50).select(["OrderID", "CustomerID", "EmployeeID", "ShipName", "ShipAddress", "ShipCity", "ShipCountry"]),
-fieldAsColumnHeader: true,
-primaryKey: "OrderID"
-}]
+    sheets:[{
+        dataSource: dataManager,
+        query: ej.Query().take(50).select(["OrderID", "CustomerID", "EmployeeID", "ShipName", "ShipAddress", "ShipCity", "ShipCountry"]),
+        fieldAsColumnHeader: true,
+        primaryKey: "OrderID"
+    }]
 });    
 </script>
 
@@ -2040,7 +2589,7 @@ primaryKey: "OrderID"
 ### sheets.headerStyles `Object`
 {:#members:sheets-headerstyles}
 
-Specifies the header styles for the datasource range in Spreadsheet.
+Specifies the header styles for the headers in datasource range.
 
 #### Default Value:
 
@@ -2052,8 +2601,77 @@ Specifies the header styles for the datasource range in Spreadsheet.
 <div id="Spreadsheet"></div> 
 <script>
 $('#Spreadsheet').ejSpreadsheet({
-sheets:[{
-dataSource: window.defaultData, showHeader: true, headerStyles: { "font-weight": "bold", "vertical-align": "middle", "text-align": "center", "background-color": "#559ad9", "color": "#FFFFFF" }}]
+    sheets:[{
+        dataSource: window.defaultData, showHeader: true, headerStyles: { "font-weight": "bold", "vertical-align": "middle", "text-align": "center", "background-color": "#559ad9", "color": "#FFFFFF" }}]
+    });    
+</script>
+
+{% endhighlight %}
+
+### sheets.hideColumns `Array`
+{:#members:sheets-hidecolumns}
+
+To hide the specified columns in Spreadsheet.
+
+#### Default Value:
+
+* []
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+    sheets:[{
+        hideColumns: [3, 4]
+    }]
+});    
+</script>
+
+{% endhighlight %}
+
+### sheets.hideRows `Array`
+{:#members:sheets-hiderows}
+
+To hide the specified rows in Spreadsheet.
+
+#### Default Value:
+
+* []
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+    sheets:[{
+        hideRows: [2, 3]
+    }]
+});    
+</script>
+
+{% endhighlight %}
+
+### sheets.mergeCells `Array`
+{:#members:sheets-mergecells}
+
+To merge specified ranges in Spreadsheet.
+
+#### Default Value:
+
+* []
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+    sheets:[{
+        mergeCells:["A1:A2","B2:C2"]
+    }]
 });    
 </script>
 
@@ -2075,11 +2693,11 @@ Specifies the primary key for the datasource in Spreadsheet.
 <script>
 var dataManager = ej.DataManager("http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/");
 $('#Spreadsheet').ejSpreadsheet({
-sheets:[{
-dataSource: dataManager,
-query: ej.Query().take(50).select(["OrderID", "CustomerID", "EmployeeID", "ShipName", "ShipAddress", "ShipCity", "ShipCountry"]),
-primaryKey: "OrderID"
-}]
+    sheets:[{
+        dataSource: dataManager,
+        query: ej.Query().take(50).select(["OrderID", "CustomerID", "EmployeeID", "ShipName", "ShipAddress", "ShipCity", "ShipCountry"]),
+        primaryKey: "OrderID"
+    }]
 });    
 </script>
 
@@ -2104,7 +2722,8 @@ var dataManager = ej.DataManager("http://mvc.syncfusion.com/Services/Northwnd.sv
 $('#Spreadsheet').ejSpreadsheet({
     sheets:[{
         dataSource: dataManager,
-        query: ej.Query().take(50).select(["OrderID", "CustomerID", "EmployeeID", "ShipName", "ShipAddress", "ShipCity", "ShipCountry"])
+        query: ej.Query().take(50).select(["OrderID", "CustomerID", "EmployeeID", "ShipName", "ShipAddress", "ShipCity", "ShipCountry"]),
+        primaryKey: "OrderID"
     }]
 });    
 </script>
@@ -2117,7 +2736,7 @@ Specifies single range or multiple range settings for a sheet in Spreadsheet.
 
 #### Default Value:
 
-* -
+* []
 
 #### Example
 
@@ -2125,10 +2744,10 @@ Specifies single range or multiple range settings for a sheet in Spreadsheet.
 <div id="Spreadsheet"></div> 
 <script>
 $('#Spreadsheet').ejSpreadsheet({
-sheets:[
-{rangeSettings: [{dataSource: window.defaultData, showHeader: true, startCell: "A1"}]},
-{rangeSettings: [{dataSource: window.personList, showHeader: true, startCell: "D1"}]}
-]
+    sheets:[{
+        {rangeSettings: [{dataSource: window.defaultData, showHeader: true, startCell: "A1"}]},
+        {rangeSettings: [{dataSource: window.personList, showHeader: true, startCell: "D1"}]}
+    }]
 });    
 </script>
 
@@ -2141,7 +2760,7 @@ Gets or sets the data to render the Spreadsheet.
 
 #### Default Value:
 
-* -
+* null
 
 #### Example
 
@@ -2149,9 +2768,9 @@ Gets or sets the data to render the Spreadsheet.
 <div id="Spreadsheet"></div> 
 <script>
 $('#Spreadsheet').ejSpreadsheet({
-sheets:[{
-rangeSettings: [{dataSource: window.defaultData, showHeader: true, startCell: "A1"}]}]
-});    
+    sheets:[{
+        rangeSettings: [{dataSource: window.defaultData, showHeader: true}]}]
+    });    
 </script>
 
 {% endhighlight %}
@@ -2159,7 +2778,7 @@ rangeSettings: [{dataSource: window.defaultData, showHeader: true, startCell: "A
 ### sheets.rangeSettings.headerStyles `Object`
 {:#members:sheets-rangesettings-headerstyles}
 
-Specifies the header styles for the datasource range in Spreadsheet.
+Specifies the header styles for the headers in datasource range.
 
 #### Default Value:
 
@@ -2171,8 +2790,9 @@ Specifies the header styles for the datasource range in Spreadsheet.
 <div id="Spreadsheet"></div> 
 <script>
 $('#Spreadsheet').ejSpreadsheet({
-sheets:[{
-rangeSettings: [{dataSource: window.defaultData, showHeader: true, headerStyles: { "font-weight": "bold", "vertical-align": "middle", "text-align": "center", "background-color": "#559ad9", "color": "#FFFFFF" }}]}]
+    sheets:[{
+        rangeSettings: [{dataSource: window.defaultData, showHeader: true, headerStyles: { "font-weight": "bold", "vertical-align": "middle", "text-align": "center", "background-color": "#559ad9", "color": "#FFFFFF" }}]
+        }]
 });    
 </script>
 
@@ -2194,13 +2814,13 @@ Specifies the primary key for the datasource in Spreadsheet.
 <script>
 var dataManager = ej.DataManager("http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/");
 $('#Spreadsheet').ejSpreadsheet({
-sheets:[{
-dataSource: dataManager,
-sheets:[{
-        query: ej.Query().take(50).select(["OrderID", "CustomerID", "EmployeeID", "ShipName", "ShipAddress", "ShipCity", "ShipCountry"]),
-        primaryKey: "OrderID"
+    sheets:[{
+        rangeSettings:[{
+            dataSource: dataManager,
+            query: ej.Query().take(50).select(["OrderID", "CustomerID", "EmployeeID", "ShipName", "ShipAddress", "ShipCity", "ShipCountry"]),
+            primaryKey: "OrderID"
+        }]
     }]
-}]
 });    
 </script>
 
@@ -2222,12 +2842,13 @@ Specifies the query for the datasource in Spreadsheet.
 <script>
 var dataManager = ej.DataManager("http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/");
 $('#Spreadsheet').ejSpreadsheet({
-sheets:[{
-dataSource: dataManager,
-rangeSettings:[{
-    query: ej.Query().take(50).select(["OrderID", "CustomerID", "EmployeeID", "ShipName", "ShipAddress", "ShipCity", "ShipCountry"])
-    }]
-}]
+    sheets:[{
+        rangeSettings:[{
+	        dataSource: dataManager,
+            query: ej.Query().take(50).select(["OrderID", "CustomerID", "EmployeeID", "ShipName", "ShipAddress", "ShipCity", "ShipCountry"]),
+            primaryKey: "OrderID"
+            }]
+        }]
 });    
 </script>
 
@@ -2248,8 +2869,9 @@ Gets or sets a value that indicates whether to enable or disable the datasource 
 <div id="Spreadsheet"></div> 
 <script>
 $('#Spreadsheet').ejSpreadsheet({
-sheets:[{
-rangeSettings: [{dataSource: window.defaultData, showHeader: true}]}]
+    sheets:[{
+        rangeSettings: [{dataSource: window.defaultData, showHeader: true}]
+        }]
 });    
 </script>
 
@@ -2270,8 +2892,9 @@ Specifies the start cell for the datasource range in Spreadsheet.
 <div id="Spreadsheet"></div> 
 <script>
 $('#Spreadsheet').ejSpreadsheet({
-sheets:[{
-rangeSettings: [{dataSource: window.defaultData, startCell: "A1"}]}]
+    sheets: [{
+        rangeSettings: [{ dataSource: window.defaultData, startCell: "B1" }]
+}]
 });    
 </script>
 
@@ -2292,11 +2915,452 @@ Gets or sets a value that indicates to define row count in the Spreadsheet.
 <div id="Spreadsheet"></div> 
 <script>
 $('#Spreadsheet').ejSpreadsheet({
-sheets:[{
-rangeSettings: [{dataSource: window.defaultData, startCell: "A1"}],
-rowCount: 30
-}]
+    sheets:[{
+        rangeSettings: [{dataSource: window.defaultData}],
+        rowCount: 30
+    }]
 });    
+</script>
+
+{% endhighlight %}
+
+### sheets.rows `Array`
+{:#members:sheets-rows}
+
+Specifies the rows for a sheet in Spreadsheet.
+
+#### Default Value:
+
+* []
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+    sheets:[{
+        rows:[
+            {
+                height:30,
+                cells:[
+                     { value: "Item Name", style: { "font-weight": "bold", "color": "#FFFFFF", "background-color": "#428bca" }},
+                     { value: "Quantity", style: { "font-weight": "bold", "color": "#FFFFFF", "background-color": "#428bca" }},
+                ]
+            }
+        ]
+    }],
+});    
+</script>
+
+{% endhighlight %}
+
+### sheets.rows.height `Number`
+{:#members:sheets-rows-height}
+
+Gets or sets the height of a row in Spreadsheet.
+
+#### Default Value:
+
+* 20
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+    sheets:[{
+        rows:[
+            {
+                height:30,
+			    cells: [
+                            { value: "Item Name", style: { "font-weight": "bold", "color": "#FFFFFF", "background-color": "#428bca" }},
+                            { value: "Quantity", style: { "font-weight": "bold", "color": "#FFFFFF", "background-color": "#428bca" } },
+			    ]
+            }
+        ]
+    }],    
+});
+</script>
+
+{% endhighlight %}
+
+### sheets.rows.cells `Array`
+{:#members:sheets-rows-cells}
+
+Specifies the cells of a row in Spreadsheet.
+
+#### Default Value:
+
+* []
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+sheets: [{
+    rows: [
+        {
+            cells: [
+                { value: "Item Name", style: { "font-weight": "bold", "color": "#FFFFFF", "background-color": "#428bca" } },
+                { value: "Quantity", style: { "font-weight": "bold", "color": "#FFFFFF", "background-color": "#428bca" } }
+            ]
+        }
+    ]
+}]   
+});
+</script>
+
+{% endhighlight %}
+
+### sheets.rows.cells.comment `Object`
+{:#members:sheets-rows-cells-comment}
+
+Specifies the comment for a cell in Spreadsheet.
+
+#### Default Value:
+
+* null
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+    sheets: [{
+    rows: [
+        {
+            cells: [
+                { value: "Item Name", comment: { value: "Name of the item" } }
+            ]
+        }
+    ]
+}]    
+});
+</script>
+
+{% endhighlight %}
+
+### sheets.rows.cells.comment.isVisible `Boolean`
+{:#members:sheets-rows-cells-comment-isvisible}
+
+Get or sets the value that indicates whether to show or hide comments in Spreadsheet.
+
+#### Default Value:
+
+* false
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+    sheets:[{
+        rows:[
+            {
+                cells: [
+                    { value: "Item Name",comment: { value: "Name of the item" , isVisible:true}}
+                ]
+            }
+        ]
+    }]    
+});
+</script>
+
+{% endhighlight %}
+
+### sheets.rows.cells.format `Object`
+{:#members:sheets-rows-cells-format}
+
+Specifies the format of a cell in Spreadsheet.
+
+#### Default Value:
+* null
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+    sheets:[{
+        rows:[
+            {
+                cells: [
+                    { value: "20", format: { type: "currency" } }
+                ]
+            }
+        ]
+    }]    
+});
+</script>
+
+{% endhighlight %}
+
+### sheets.rows.cells.format.type `String`
+{:#members:sheets-rows-cells-format-type}
+
+Specifies the type of the format in Spreadsheet.
+
+#### Default Value:
+* ""
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+    sheets:[{
+        rows:[
+            {
+                cells: [
+                    { value: "20", format: { type: "currency" } }
+                ]
+            }
+        ]
+    }]    
+});
+</script>
+
+{% endhighlight %}
+
+### sheets.rows.cells.hyperlink `Object`
+{:#members:sheets-rows-cells-hyperlink}
+
+Specifies the hyperlink for a cell in Spreadsheet.
+
+#### Default Value:
+* null
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+    sheets:[{
+        rows:[
+            {
+                cells: [
+                    { value: "AliExpress", hyperlink: { webAddr: "www.aliexpress.com" } }
+                ]
+            }
+        ]
+    }]    
+});
+</script>
+
+{% endhighlight %}
+
+### sheets.rows.cells.hyperlink.webAddr `String`
+{:#members:sheets-rows-cells-hyperlink-webaddr}
+
+Specifies the web address for the hyperlink of a cell.
+
+#### Default Value:
+* ""
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+    sheets:[{
+        rows:[
+            {
+                cells: [
+                    { value: "AliExpress", hyperlink: { webAddr: "www.aliexpress.com" } }
+                ]
+            }
+        ]
+    }]    
+});
+</script>
+
+{% endhighlight %}
+
+### sheets.rows.cells.hyperlink.cellAddr `String`
+{:#members:sheets-rows-cells-hyperlink-celladdr}
+
+Specifies the cell address for the hyperlink of a cell.
+
+#### Default Value:
+* ""
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+    sheets:[{
+        rows:[
+            {
+                cells: [
+                    { value: "AliExpress", hyperlink: { cellAddr: "B2" } }
+                ]
+            }
+        ]
+    }]    
+});
+</script>
+
+{% endhighlight %}
+
+### sheets.rows.cells.hyperlink.sheetIndex `Number`
+{:#members:sheets-rows-cells-hyperlink-sheetindex}
+
+Specifies the sheet index to which the cell is referred.
+
+N> User must give `cellAddr` to use this property.
+
+#### Default Value:
+* 1
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+    sheets:[{
+        rows:[
+            {
+                cells: [
+                    { value: "AliExpress", hyperlink: { cellAddr: "B2" , sheetIndex: 2} }
+                ]
+            }
+        ]
+    }]    
+});
+</script>
+
+{% endhighlight %}
+
+### sheets.rows.cells.index `Number`
+{:#members:sheets-rows-cells-index}
+
+Specifies the index of a cell in Spreadsheet.
+
+#### Default Value:
+
+* 0
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+    sheets:[{
+        rows:[
+            {
+                cells: [
+                    { index: 1, value: "Item Name", style: { "font-weight": "bold", "color": "#FFFFFF", "background-color": "#428bca" }},
+                    { value: "Quantity", style: { "font-weight": "bold", "color": "#FFFFFF", "background-color": "#428bca" }}
+                ]
+            }
+        ]
+    }]    
+});
+</script>
+
+{% endhighlight %}
+
+### sheets.rows.cells.style `Object`
+{:#members:sheets-rows-cells-style}
+
+Specifies the styles of a cell in Spreadsheet.
+
+#### Default Value:
+* null
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+    sheets:[{
+        rows:[
+            {
+                cells: [
+                    { value: "Item Name",style: { "font-weight": "bold", "color": "#FFFFFF", "background-color": "#428bca" }},
+                    { value: "Quantity",style: { "font-weight": "bold", "color": "#FFFFFF", "background-color": "#428bca" }}
+                ]
+            }
+        ]
+    }]    
+});
+</script>
+
+{% endhighlight %}
+
+### sheets.rows.cells.value `String`
+{:#members:sheets-rows-cells-value}
+
+Specifies the value for a cell in Spreadsheet.
+
+#### Default Value:
+
+* ""
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+    sheets:[{
+        rows:[
+            {
+                cells: [
+                    { value: "Item Name"},
+                    { value: "Quantity"}
+                ]
+            }
+        ]
+    }]    
+});
+</script>
+
+{% endhighlight %}
+
+### sheets.rows.index `Number`
+{:#members:sheets-rows-index}
+
+Gets or sets the index of a row in Spreadsheet.
+
+#### Default Value:
+
+* 0
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+    sheets:[{
+        rows:[
+            {   
+                index:1,
+                height:30,
+			    cells: [
+                            { value: "Item Name", style: { "font-weight": "bold", "color": "#FFFFFF", "background-color": "#428bca" }},
+                            { value: "Quantity", style: { "font-weight": "bold", "color": "#FFFFFF", "background-color": "#428bca" }},
+			    ]
+            }
+        ]
+    }],    
+});
 </script>
 
 {% endhighlight %}
@@ -2339,8 +3403,9 @@ Gets or sets a value that indicates whether to enable or disable the datasource 
 <div id="Spreadsheet"></div> 
 <script>
 $('#Spreadsheet').ejSpreadsheet({
-sheets:[{
-dataSource: window.defaultData, showHeader: true}]
+    sheets:[{
+        dataSource: window.defaultData, showHeader: true
+        }]
 });    
 </script>
 
@@ -2383,9 +3448,30 @@ Specifies the start cell for the datasource range in Spreadsheet.
 <div id="Spreadsheet"></div> 
 <script>
 $('#Spreadsheet').ejSpreadsheet({
-sheets:[{
-dataSource: window.defaultData, startCell: "A1"}]
+    sheets:[{
+        dataSource: window.defaultData, startCell: "B1"
+        }]
 });    
+</script>
+
+{% endhighlight %}
+
+### showPager `Boolean`
+{:#members:showpager}
+
+Gets or sets a value that indicates whether to show or hide pager in the Spreadsheet.
+
+#### Default Value
+* true
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({ 
+    showPager: true
+});         
 </script>
 
 {% endhighlight %}
@@ -2404,7 +3490,7 @@ Gets or sets a value that indicates whether to show or hide ribbon in the Spread
 <div id="Spreadsheet"></div> 
 <script>
 $('#Spreadsheet').ejSpreadsheet({ 
-showRibbon: true
+    showRibbon: true
 });         
 </script>
 
@@ -2424,7 +3510,7 @@ This is used to set the number of undo-redo steps in the Spreadsheet.
 <div id="Spreadsheet"></div>
 <script>
 $('#Spreadsheet').ejSpreadsheet({ 
-undoRedoStep: 15
+    undoRedoStep: 15
 });         
 </script>
 
@@ -2444,7 +3530,7 @@ Define the username for the Spreadsheet which is displayed in comment.
 <div id="Spreadsheet"></div>
 <script>
 $('#Spreadsheet').ejSpreadsheet({ 
-userName: "User Name"
+    userName: "User Name"
 });         
 </script>
 
@@ -4282,7 +5368,7 @@ The Objects are File, Password, URL, FileStream, FileType.
 <div id="Spreadsheet"></div> 
 <script>
 var xlObj = $("#Spreadsheet").data("ejSpreadsheet"); // Initialize the Spreadsheet object.
-var importRequest = {Url:"http://staging.syncfusion.com:7777/ejSpreadsheet/Spreadsheet.xlsx";
+var importRequest = { Url:"http://staging.syncfusion.com:7777/ejSpreadsheet/Spreadsheet.xlsx" };
 xlObj.import(importRequest); 
 </script>
 
@@ -8372,7 +9458,7 @@ Triggered for every action before its starts.
 <script>
 //actionBegin event for Spreadsheet
 $("#Spreadsheet").ejSpreadsheet({
-actionBegin: function (args){}
+    actionBegin: function (args){}
 });
 </script>
 
@@ -8447,7 +9533,7 @@ Triggered for every action complete.
 <script>
 //actionComplete event for Spreadsheet
 $("#Spreadsheet").ejSpreadsheet({
-actionComplete: function (args){}
+    actionComplete: function (args){}
 });
 </script>
 
@@ -8532,7 +9618,7 @@ Triggered when the auto fill operation begins.
 <script>
 //autoFillBegin event for Spreadsheet
 $("#Spreadsheet").ejSpreadsheet({
-autoFillBegin: function (args){}
+    autoFillBegin: function (args){}
 });
 </script>
 
@@ -8618,7 +9704,7 @@ Triggered when the auto fill operation completes.
 <script>
 //autoFillComplete event for Spreadsheet
 $("#Spreadsheet").ejSpreadsheet({
-autoFillComplete: function (args){}
+    autoFillComplete: function (args){}
 });
 </script>
 
@@ -8678,7 +9764,7 @@ Triggered before the batch save.
 <script>
 //beforeBatchSave event for Spreadsheet
 $("#Spreadsheet").ejSpreadsheet({
-beforeBatchSave: function (args){}
+    beforeBatchSave: function (args){}
 });
 </script>
 
@@ -8753,7 +9839,7 @@ Triggered before the cells to be formatted.
 <script>
 //beforeCellFormat event for Spreadsheet
 $("#Spreadsheet").ejSpreadsheet({
-beforeCellFormat: function (args){}
+    beforeCellFormat: function (args){}
 });
 </script>
 
@@ -8824,8 +9910,8 @@ Triggered before the cell selection.
 <div id="Spreadsheet"></div> 
 <script>
 // beforeCellSelect event for Spreadsheet
-$('#Spreadsheet').ejSpreadsheet({ 
-beforeCellSelect: function (args){}
+$('#Spreadsheet').ejSpreadsheet({   
+    beforeCellSelect: function (args){}
 });
 </script>
 
@@ -8911,7 +9997,7 @@ Triggered before the selected cells are dropped.
 <script>
 //beforeDrop event for Spreadsheet.
 $("#Spreadsheet").ejSpreadsheet({
-beforeDrop: function (args){}
+    beforeDrop: function (args){}
 });
 </script>
 
@@ -8977,7 +10063,7 @@ Triggered before the contextmenu is open.
 <script>
 //beforeOpen event for Spreadsheet
 $('#Spreadsheet').ejSpreadsheet({ 
-beforeOpen: function (args){}
+    beforeOpen: function (args){}
 });
 </script>
 
@@ -9053,7 +10139,7 @@ Triggered before the activation panel is open.
 <script>
 // beforePanelOpen event for Spreadsheet
 $('#Spreadsheet').ejSpreadsheet({ 
-beforePanelOpen: function (args){}
+    beforePanelOpen: function (args){}
 });
 </script>
 
@@ -9111,6 +10197,31 @@ Triggered when click on sheet cell.
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Returns the column information.</td>
 </tr>
+<tr>
+<td class="name">model</td>
+<td class="type"><ts ref="ej.Spreadsheet.Model"/><span class="param-type">object</span></td>
+<td class="description">Returns the Spreadsheet model.</td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Returns the name of the event.</td>
+</tr>
+<tr>
+<td class="name">target</td>
+<td class="type"><span class="param-type">Element</span></td>
+<td class="description">Returns the target element.</td>
+</tr>
+<tr>
+<td class="name">value</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Returns the value of the cell.</td>
+</tr>
+<tr>
+<td class="name">cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">Returns the cancel option value.</td>
+</tr>
 </tbody>
 </table>
 </td></tr>
@@ -9124,7 +10235,7 @@ Triggered when click on sheet cell.
 <script>
 //cellClick event for Spreadsheet
 $('#Spreadsheet').ejSpreadsheet({ 
-cellClick: function (args){}
+    cellClick: function (args){}
 });
 </script>
 
@@ -9183,6 +10294,11 @@ Triggered when the cell is edited.
 <td class="description">Returns the name of the event.</td>
 </tr>
 <tr>
+<td class="name">target</td>
+<td class="type"><span class="param-type">Element</span></td>
+<td class="description">Returns the target element.</td>
+</tr>
+<tr>
 <td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">Returns the cancel option value.</td>
@@ -9200,7 +10316,7 @@ Triggered when the cell is edited.
 <script>
 //cellEdit event for Spreadsheet
 $('#Spreadsheet').ejSpreadsheet({ 
-cellEdit: function (args){}
+    cellEdit: function (args){}
 });
 </script>
 
@@ -9248,6 +10364,26 @@ Triggered while cell is formatting.
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">Returns the cell index.</td>
 </tr>
+<tr>
+<td class="name">cssClass</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Returns the name of the css theme.</td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Returns the name of the event.</td>
+</tr>
+<tr>
+<td class="name">target</td>
+<td class="type"><span class="param-type">Element</span></td>
+<td class="description">Returns the target element.</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type"><ts ref="ej.Spreadsheet.Model"/><span class="param-type">object</span></td>
+<td class="description">Returns the Spreadsheet model.</td>
+</tr>
 </tbody>
 </table>
 </td></tr>
@@ -9261,7 +10397,7 @@ Triggered while cell is formatting.
 <script>
 //cellFormatting event for Spreadsheet
 $('#Spreadsheet').ejSpreadsheet({ 
-cellFormatting: function (args){}
+    cellFormatting: function (args){}
 });
 </script>
 
@@ -9327,7 +10463,7 @@ Triggered when mouse hover on cell in sheets.
 <script>
 // cellHover event for Spreadsheet
 $('#Spreadsheet').ejSpreadsheet({ 
-cellHover: function (args){}
+    cellHover: function (args){}
 });
 </script>
 
@@ -9406,6 +10542,11 @@ Triggered when save the edited cell.
 <td class="description">Returns the cancel option value.</td>
 </tr>
 <tr>
+<td class="name">target</td>
+<td class="type"><span class="param-type">Element</span></td>
+<td class="description">Returns the target element.</td>
+</tr>
+<tr>
 <td class="name">value</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">Returns the cell value.</td>
@@ -9423,10 +10564,92 @@ Triggered when save the edited cell.
 <script>
 //cellSave event for Spreadsheet
 $('#Spreadsheet').ejSpreadsheet({ 
-cellSave: function (args){}
+    cellSave: function (args){}
 });
 </script>
 
+{% endhighlight %}
+
+### cellSelected
+{:#events:cellselected}
+
+Triggered when the cell is selected.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">argument</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Arguments when cellSelected event is triggered. 
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">sheetIdx</td>
+<td class="type"><span class="param-type">Number</span></td>
+<td class="description">Returns the active sheet index.</td>
+</tr>
+<tr>
+<td class="name">selectedRange</td>
+<td class="type"><span class="param-type">Array</span></td>
+<td class="description">Returns the selected range.</td>
+</tr>
+<tr>
+<td class="name">target</td>
+<td class="type"><span class="param-type">Element</span></td>
+<td class="description">Returns the target element.</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type"><ts ref="ej.Spreadsheet.Model"/><span class="param-type">object</span></td>
+<td class="description">Returns Spreadsheet model.</td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Returns the name of the event.</td>
+</tr>
+<tr>
+<td class="name">target</td>
+<td class="type"><span class="param-type">Element</span></td>
+<td class="description">Returns the target element.</td>
+</tr>
+<tr>
+<td class="name">cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">Returns the cancel option value.</td>
+</tr>
+</tbody>
+</table>
+</td></tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+
+<div id="Spreadsheet"></div> 
+<script>
+//cellSelected event for Spreadsheet
+$('#Spreadsheet').ejSpreadsheet({ 
+    cellSelected: function (args){}
+ });
+ </script>
+ 
 {% endhighlight %}
 
 ### contextMenuClick
@@ -9518,7 +10741,7 @@ Triggered when click the contextmenu items.
 <script>
 // contextMenuClick event for Spreadsheet.
 $('#Spreadsheet').ejSpreadsheet({ 
-contextMenuClick: function (args){}
+    contextMenuClick: function (args){}
 });
 </script>
 
@@ -9599,7 +10822,7 @@ Triggered when the selected cells are being dragged.
 <script>
 //drag event for Spreadsheet
 $("#Spreadsheet").ejSpreadsheet({
-drag: function (args){}
+    drag: function (args){}
 });
 </script>
 
@@ -9679,7 +10902,7 @@ Triggered when the selected cells are initiated to drag.
 <script>
 //dragStart event for Spreadsheet
 $("#Spreadsheet").ejSpreadsheet({
-dragStart: function (args){}
+    dragStart: function (args){}
 });
 </script>
 
@@ -9760,7 +10983,7 @@ Triggered when the selected cells are dropped.
 <script>
 //drop event for Spreadsheet
 $("#Spreadsheet").ejSpreadsheet({
-drop: function (args){}
+    drop: function (args){}
 });
 </script>
 
@@ -9831,7 +11054,7 @@ Triggered before the range editing starts.
 <script>
 // editRangeBegin event for Spreadsheet.
 $('#Spreadsheet').ejSpreadsheet({ 
-editRangeBegin: function (args){}
+    editRangeBegin: function (args){}
 });
 </script>
 
@@ -9902,7 +11125,7 @@ Triggered after range editing completes.
 <script>
 // editRangeComplete event for Spreadsheet
 $('#Spreadsheet').ejSpreadsheet({ 
-editRangeComplete: function (args){}
+    editRangeComplete: function (args){}
 });
 </script>
 
@@ -9968,7 +11191,7 @@ Triggered before the sheet is loaded.
 <script>
 //load event for Spreadsheet
 $('#Spreadsheet').ejSpreadsheet({ 
-load: function (args){}
+    load: function (args){}
 });
 </script>
 
@@ -10029,7 +11252,7 @@ Triggered after the sheet is loaded.
 <script>
 // loadComplete event for Spreadsheet
 $('#Spreadsheet').ejSpreadsheet({ 
-loadComplete: function (args){}
+    loadComplete: function (args){}
 });
 </script>
 
@@ -10116,9 +11339,76 @@ Triggered every click of the menu item.
 <script>
 // menuClick event for Spreadsheet.
 $('#Spreadsheet').ejSpreadsheet({ 
-menuClick: function (args){}
+    menuClick: function (args){}
 });
 </script>
+
+{% endhighlight %}
+
+### onImport
+{:#events:onImport}
+
+Triggered when a file is imported.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">argument</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Arguments when onImport event is triggered. 
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Returns the name of the event.</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type"><ts ref="ej.Spreadsheet.Model"/><span class="param-type">object</span></td>
+<td class="description">Returns the Spreadsheet model.</td>
+</tr>
+<tr>
+<td class="name">cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">Returns the cancel option value.</td>
+</tr>
+<tr>
+<td class="name">importData</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Returns the imported data.</td>
+</tr>
+</tbody>
+</table>
+</td></tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+
+<div id="Spreadsheet"></div> 
+<script>
+//onImport event for Spreadsheet
+$('#Spreadsheet').ejSpreadsheet({ 
+    onImport: function (args){}
+ });
+ </script>
 
 {% endhighlight %}
 
@@ -10251,6 +11541,11 @@ Triggered when pager item is clicked in the Spreadsheet.
 <td class="description">Returns the name of the event.</td>
 </tr>
 <tr>
+<td class="name">target</td>
+<td class="type"><span class="param-type">Element</span></td>
+<td class="description">Returns the target element.</td>
+</tr>
+<tr>
 <td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">Returns the cancel option value.</td>
@@ -10268,7 +11563,7 @@ Triggered when pager item is clicked in the Spreadsheet.
 <script>
 // pagerClick event for Spreadsheet
 $('#Spreadsheet').ejSpreadsheet({ 
-pagerClick: function (args){}
+    pagerClick: function (args){}
 });
 </script>
 
@@ -10332,6 +11627,11 @@ Triggered when click on the ribbon.
 <td class="description">Returns the name of the event.</td>
 </tr>
 <tr>
+<td class="name">target</td>
+<td class="type"><span class="param-type">Element</span></td>
+<td class="description">Returns the target element.</td>
+</tr>
+<tr>
 <td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">Returns the cancel option value.</td>
@@ -10349,7 +11649,7 @@ Triggered when click on the ribbon.
 <script>
 // ribbonClick event for Spreadsheet
 $('#Spreadsheet').ejSpreadsheet({ 
-ribbonClick: function (args){}
+    ribbonClick: function (args){}
 });
 </script>
 
@@ -10416,7 +11716,7 @@ Triggered when the chart series rendering.
 <script>
 //seriesRendering event for Spreadsheet
 $("#Spreadsheet").ejSpreadsheet({
-seriesRendering: function (args){}
+    seriesRendering: function (args){}
 });
 </script>
 
@@ -10480,6 +11780,11 @@ Triggered when click the ribbon tab.
 <td class="description">Returns the name of the event.</td>
 </tr>
 <tr>
+<td class="name">target</td>
+<td class="type"><span class="param-type">Element</span></td>
+<td class="description">Returns the target element.</td>
+</tr>
+<tr>
 <td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">Returns the cancel option value.</td>
@@ -10497,7 +11802,7 @@ Triggered when click the ribbon tab.
 <script>
 // tabClick event for Spreadsheet.
 $('#Spreadsheet').ejSpreadsheet({ 
-tabClick: function (args){}
+    tabClick: function (args){}
 });
 </script>
 
@@ -10561,6 +11866,11 @@ Triggered when select the ribbon tab.
 <td class="description">Returns the name of the event.</td>
 </tr>
 <tr>
+<td class="name">target</td>
+<td class="type"><span class="param-type">Element</span></td>
+<td class="description">Returns the target element.</td>
+</tr>
+<tr>
 <td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">Returns the cancel option value.</td>
@@ -10578,7 +11888,7 @@ Triggered when select the ribbon tab.
 <script>
 // tabSelect event for Spreadsheet.
 $('#Spreadsheet').ejSpreadsheet({ 
-tabSelect: function (args){}
+    tabSelect: function (args){}
 });
 </script>
 

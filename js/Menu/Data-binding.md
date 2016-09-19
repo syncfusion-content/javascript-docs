@@ -179,7 +179,6 @@ Add the following code in your **HTML** page.
         var dataManger = ej.DataManager({
             url: "http://mvc.syncfusion.com/Services/Northwnd.svc/"
         });
-        var query = null, query1 = null;
         var query = ej.Query().from("Categories").select("CategoryID,CategoryName").take(3);
 
         $("#shipDetails").ejMenu({

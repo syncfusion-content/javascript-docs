@@ -143,14 +143,14 @@ In the **HTML** page set the corresponding **&lt;input&gt;** elements for render
 
         $("#currency").ejCurrencyTextbox({
             value: 3,
-            enabled: true
+            enabled: false
         });
 
 
 {% endhighlight %}
 
 
-The output for CurrencyTextBox when **enabled** is **“True”** and when **enabled** is “**False**”**.**
+The output for CurrencyTextBox when **enabled** is **“False”** and when **enabled** is “**True**”**.**
 
 
 
