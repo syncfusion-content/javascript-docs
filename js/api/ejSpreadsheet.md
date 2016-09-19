@@ -1094,7 +1094,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 Gets or sets a value that indicates to define csvUrl for export to CSV format.
 
-N> User must specify [`allowExporting`](https://help.syncfusion.com/js/api/ejspreadsheet#members:exportsettings-allowexporting "allowExporting") `true` while use this property.
+N> User must specify [`allowExporting`](https://help.syncfusion.com/js/api/ejspreadsheet#members:exportsettings-allowexporting "allowExporting") `true` while using this property.
 
 #### Default Value
 * null
@@ -1119,7 +1119,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 Gets or sets a value that indicates to define excelUrl for export to excel format.
 
-N> User must specify [`allowExporting`](https://help.syncfusion.com/js/api/ejspreadsheet#members:exportsettings-allowexporting "allowExporting") `true` while use this property.
+N> User must specify [`allowExporting`](https://help.syncfusion.com/js/api/ejspreadsheet#members:exportsettings-allowexporting "allowExporting") `true` while using this property.
 
 #### Default Value
 * null
@@ -1144,7 +1144,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 Gets or sets a value that indicates to define password while export to excel format.
 
-N> User must specify [`allowExporting`](https://help.syncfusion.com/js/api/ejspreadsheet#members:exportsettings-allowexporting "allowExporting") `true` while use this property.
+N> User must specify [`allowExporting`](https://help.syncfusion.com/js/api/ejspreadsheet#members:exportsettings-allowexporting "allowExporting") `true` while using this property.
 
 #### Default Value
 * null
@@ -3053,6 +3053,35 @@ Get or sets the value that indicates whether to show or hide comments in Spreads
 #### Default Value:
 
 * false
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+    sheets:[{
+        rows:[
+            {
+                cells: [
+                    { value: "Item Name",comment: { value: "Name of the item" , isVisible:true}}
+                ]
+            }
+        ]
+    }]    
+});
+</script>
+
+{% endhighlight %}
+
+### sheets.rows.cells.comment.value `String`
+{:#members:sheets-rows-cells-comment-value}
+
+Specifies the value for the comment in Spreadsheet.
+
+#### Default Value:
+
+* "" 
 
 #### Example
 
@@ -11346,7 +11375,7 @@ $('#Spreadsheet').ejSpreadsheet({
 {% endhighlight %}
 
 ### onImport
-{:#events:onImport}
+{:#events:onimport}
 
 Triggered when a file is imported.
 
