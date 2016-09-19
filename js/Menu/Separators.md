@@ -91,7 +91,7 @@ The following screenshot displays the output for the above code.
 
 # Separators for Context Menu
 
-We can add the separators for ContextMenu by including **e-separator** class in **LI** elements. Add the following code to display ContextMenu with separator lines.
+We can add the separators for particular ContextMenu items by including **e-separator** class in the required **LI** elements. Add the following code to display ContextMenu with separator lines.
 
 
 {% highlight html %}
