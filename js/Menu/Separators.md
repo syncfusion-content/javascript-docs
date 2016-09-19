@@ -89,3 +89,66 @@ The following screenshot displays the output for the above code.
 ![](/js/Menu/Separators_images/Separators_img2.png) 
 
 
+# Separators for Context Menu
+
+We can add the separators for ContextMenu by including **e-separator** class in **LI** elements. Add the following code to display ContextMenu with separator lines.
+
+
+{% highlight html %}
+
+<div id="target" class="textarea">
+	HTML is written in the form of HTML elements consisting of tags enclosed in angle brackets (like &lt;html&gt;),within the web page content. HTML tags most commonly come in pairs like and ,although some tags, known as empty elements, are unpaired, for example &lt;img&gt;. The purpose of a web browser is to read HTML documents and compose them into visible or audible web pages. The browser does not display the HTML tags, but uses the tags to interpret the content of the page.
+</div>
+
+<ul id="contextMenu">
+	<li><a>Cut</a></li>
+	<li><a>Copy</a></li>
+	<li class="e-separator"><a>Paste</a></li>
+	<li><a>Comments</a></li>
+	<li><a>Links</a></li>
+	<li><a>Clear Formatting</a></li>
+</ul>
+
+{% endhighlight %}
+
+
+{% highlight javascript %}
+
+ <script type="text/javascript">
+
+        jQuery(function ($) {
+            $("#contextMenu").ejMenu(
+			{
+				menuType: ej.MenuType.ContextMenu,
+				openOnClick: false,
+				contextMenuTarget: "#target",
+			});
+        });
+		
+ </script>
+	
+{% endhighlight %}
+
+
+{% highlight css %}
+
+    <style type="text/css">'
+	
+        .textarea {
+            border: 1px solid;
+            padding: 10px;
+            position: relative;
+            text-align: justify;
+            width: 463px;
+            color: gray;
+        }
+		
+    </style>
+
+{% endhighlight %}
+
+The following screenshot displays the output for the above code. 
+
+![](/js/Menu/Separators_images/Separators_img3.png) 
+
+
