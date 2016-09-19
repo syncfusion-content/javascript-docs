@@ -8,6 +8,7 @@ keywords: heatmap, ejHeatMap, heatmap api, syncfusion
 ---
 
 #ejHeatMap
+<ts root="datavisualization" />
 
 Essential HeatMap JS represents tabular data values as gradient colors instead of numbers,low and high values are different colors with different gradients.
 
