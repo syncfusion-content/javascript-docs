@@ -8,6 +8,7 @@ keywords: heatMapLegend, ejHeatMapLegend, heatMapLegend api, syncfusion
 ---
 
 # ejHeatMapLegend
+<ts root="datavisualization" />
 
 Legend is a control used to summarize the range of colors in HeatMap. This gives visual guideline for mapping between value and color.
 
