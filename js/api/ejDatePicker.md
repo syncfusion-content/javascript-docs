@@ -3094,7 +3094,7 @@ navigateFrom</td>
 </tr>
 <tr>
 <td class="name">
-navigateFrom</td>
+navigateTo</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the current view state of calendar.</td>
 </tr>
