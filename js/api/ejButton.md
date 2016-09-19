@@ -218,7 +218,7 @@ Specifies the button control state.
         <button id="button1">Button</button> 
         
         <script>
-        // Enable Button on initialization. 
+        // Disable Button on initialization. 
                 $("#button1").ejButton({ enabled:false });       
         </script>
 
@@ -256,7 +256,7 @@ Specify the Right to Left direction to button
         
         <script>
         // Set the enableRTL during initialization.                     
-                $("#button1").ejButton({ enableRTL : false });        
+                $("#button1").ejButton({ enableRTL : true });        
         </script>                                 
 
 {% endhighlight %}
