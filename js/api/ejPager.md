@@ -304,7 +304,7 @@ $("#pager").ejPager({showPageInfo:false})
 ### gotoPage(pageIndex)
 {:#methods:gotopage}
 
-Send a paging request to specified page through the pagerControl.
+Send a paging request to specified page through the pager control.
 
 ####Example
 
@@ -377,6 +377,7 @@ Send a paging request to specified page through the pagerControl.
 
 
 ### refreshPager()
+{:#methods:refreshpager}
 
 `refreshPager()` helps to refresh the model value of pager control.
 
