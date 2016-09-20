@@ -3332,6 +3332,90 @@ $('#Spreadsheet').ejSpreadsheet({
 
 {% endhighlight %}
 
+### sheets.rows.cells.style.backgroundColor `String`
+{:#members:sheets-rows-cells-style-backgroundcolor}
+
+Specifies the background color of a cell in the Spreadsheet.
+
+#### Default Value:
+* ""
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+    sheets:[{
+        rows:[
+            {
+                cells: [
+                    { value: "Item Name",style: { "background-color": "#428bca" }},
+                ]
+            }
+        ]
+    }]    
+});
+</script>
+
+{% endhighlight %}
+
+### sheets.rows.cells.style.color `String`
+{:#members:sheets-rows-cells-style-color}
+
+Specifies the font color of a cell in the Spreadsheet.
+
+#### Default Value:
+* ""
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+    sheets:[{
+        rows:[
+            {
+                cells: [
+                    { value: "Item Name",style: { "color": "#428bca" }},
+                ]
+            }
+        ]
+    }]    
+});
+</script>
+
+{% endhighlight %}
+
+### sheets.rows.cells.style.fontWeight `String`
+{:#members:sheets-rows-cells-style-fontweight}
+
+Specifies the font weight of a cell in the Spreadsheet.
+
+#### Default Value:
+* ""
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+    sheets:[{
+        rows:[
+            {
+                cells: [
+                    { value: "Item Name",style: { "font-weight": "bold" }},
+                ]
+            }
+        ]
+    }]    
+});
+</script>
+
+{% endhighlight %}
+
 ### sheets.rows.cells.value `String`
 {:#members:sheets-rows-cells-value}
 
