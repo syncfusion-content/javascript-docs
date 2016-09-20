@@ -250,9 +250,9 @@ $(function () {
 
 ## Virtual Scrolling
 
-The virtual scrolling support allows you to load data that you require (load data based on page size) without buffering the entire huge database. To enable virtual scrolling by setting `AllowVirtualScrolling`  property of `ScrollSettings`  as `true`. 
+The virtual scrolling support allows you to load data that you require (load data based on page size) without buffering the entire huge database. To enable virtual scrolling by setting `allowVirtualScrolling`  property of `scrollSettings`  as `true`. 
 
-We also have an enhanced virtual scrolling feature with an improvised virtual scrolling performance. To enable improvised virtual scrolling feature by setting `EnableVirtualization` property of `ScrollSettings` as true and it doesn't requires `AllowVirtualScrolling` to enabled. It allows you to load the grid with data while scrolling. In order to enable this, you need to enable `EnableVirtualization` property of the `ScrollSettings`. Some of the relevant functionalities of this are,
+We also have an enhanced virtual scrolling feature with an improvised virtual scrolling performance. To enable improvised virtual scrolling feature by setting `enableVirtualization` property of `scrollSettings` as true and it doesn't requires `allowVirtualScrolling` to be enabled. It allows you to load the grid with data while scrolling. Some of the relevant functionalities of this are,
 
 1.	White space will not be appeared in the Grid. 
 2.	Improved page rendering performance. 
@@ -272,6 +272,7 @@ N> 4. Detail template
 N> 5. Row template 
 N> 6. Hierarchy
 N> 7. Editing
+
 ### Normal Mode:
 
 It allows you to load the grid with data while scrolling. This can be achieved by setting [`virtualScrollMode`](http://help.syncfusion.com/js/api/ejgrid#members:scrollsettings-virtualscrollmode "virtualScrollMode") as `normal`.
@@ -299,7 +300,7 @@ The following output is displayed as a result of the above code example.
 
 #### Enhanced Virtual Scrolling:
 
-In order to enable this, you need to set the `EnableVirtualization` property of the `ScrollSettings` as true. 
+In order to enable this, you need to set the `enableVirtualization` property of the `scrollSettings` as true. 
 
 The following code example describes the above behavior.
 
