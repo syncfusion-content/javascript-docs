@@ -8879,7 +8879,7 @@ To customize Group alone in the inside content.
          {
            text: "new one "
           };
-    $("#Ribbon").ejRibbon("updateGroup",1, one, ribbonGrp);
+    $("#Ribbon").ejRibbon("updateGroup",1, "one", ribbonGrp);
     </script>
 
 {% endhighlight %}
