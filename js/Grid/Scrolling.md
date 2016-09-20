@@ -250,11 +250,20 @@ $(function () {
 
 ## Virtual Scrolling
 
-The virtual scrolling support allows you to load data that you require (load data based on page size) without buffering the entire huge database. To enable virtual scrolling by setting [`allowVirtualScrolling`](http://help.syncfusion.com/js/api/ejgrid#members:scrollsettings-allowvirtualscrolling "allowVirtulScrolling") property of [`scrollSettings`](http://help.syncfusion.com/js/api/ejgrid#members:scrollsettings "scrollSettings") as `true`. It supports two mode of virtualization. They are,
+The virtual scrolling support allows you to load data that you require (load data based on page size) without buffering the entire huge database. To enable virtual scrolling by setting `AllowVirtualScrolling`  property of `ScrollSettings`  as `true`. 
+
+We also have an enhanced virtual scrolling feature with an improvised virtual scrolling performance. To enable improvised virtual scrolling feature by setting `EnableVirtualization` property of `ScrollSettings` as true and it doesn't requires `AllowVirtualScrolling` to enabled. It allows you to load the grid with data while scrolling. In order to enable this, you need to enable `EnableVirtualization` property of the `ScrollSettings`. Some of the relevant functionalities of this are,
+
+1.	White space will not be appeared in the Grid. 
+2.	Improved page rendering performance. 
+3.  It can render nearly 5 lakhs records.
+
+It supports two mode of virtualization. They are,
 
 1. Normal Mode
 2. Continuous Mode
 
+N> Enhanced Virtual Scrolling supports only Normal mode
 N> The following features are not supported by virtual scrolling 
 N> 1. Grouping
 N> 2. Frozen Rows 
@@ -263,7 +272,6 @@ N> 4. Detail template
 N> 5. Row template 
 N> 6. Hierarchy
 N> 7. Editing
-
 ### Normal Mode:
 
 It allows you to load the grid with data while scrolling. This can be achieved by setting [`virtualScrollMode`](http://help.syncfusion.com/js/api/ejgrid#members:scrollsettings-virtualscrollmode "virtualScrollMode") as `normal`.
@@ -288,6 +296,31 @@ $(function () {
 The following output is displayed as a result of the above code example.
 
 ![](scrolling_images/scrolling_img8.png)
+
+#### Enhanced Virtual Scrolling:
+
+In order to enable this, you need to set the `EnableVirtualization` property of the `ScrollSettings` as true. 
+
+The following code example describes the above behavior.
+
+{% highlight html %}
+<div id="Grid"></div>
+{% endhighlight %}
+
+{% highlight javascript %}
+$(function () {
+	$("#Grid").ejGrid({
+		dataSource : ej.DataManager("http://mvc.syncfusion.com/Services/Northwnd.svc/Orders"),
+		allowScrolling : true,
+		scrollSettings: { width: 550, height: 300, enableVirtualization: true },
+		columns : ["OrderID", "EmployeeID", "CustomerID", "ShipCity", "ShipCountry", "ShipAddress", "ShipPostalCode", "Freight"]
+	});
+});
+{% endhighlight %}
+
+The following output is displayed as a result of the above code example.
+
+![](scrolling_images/scrolling_img10.png)
 
 
 ### Continuous Mode:
@@ -314,5 +347,3 @@ $(function () {
 The following output is displayed as a result of the above code example.
 
 ![](scrolling_images/scrolling_img9.png)
-
-
