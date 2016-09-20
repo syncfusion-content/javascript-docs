@@ -3934,6 +3934,102 @@ dropAction</td>
 
 
 
+### getImage
+{:#events:getimage}
+
+
+
+Fires after loading the requested image from server. Using this event, you can get the details of loaded image.
+
+
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">set to true when the event has to be canceled, else false.</td>
+</tr>
+<tr>
+<td class="name">
+path</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">loaded image path.</td>
+</tr>
+<tr>
+<td class="name">
+element</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">loaded image element</td>
+</tr>
+<tr>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.FileExplorer.Model"/>
+<span class="param-type">object</span></td>
+<td class="description">returns the FileExplorer model.</td>
+</tr>
+<tr>
+<td class="name">
+originalArgs</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">original arguments of image load or error event</td>
+</tr>
+<tr>
+<td class="name">
+action</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">returns the action type, which specifies thumbnail preview or opening image.</td>
+</tr>
+<tr>
+<td class="name">
+type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">returns the name of the event.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+        <div id="fileExplorer" ></div> 
+        
+        <script>
+        // getImage event for FileExplorer
+        $('#fileExplorer').ejFileExplorer({            
+        path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",         
+        ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction",      
+        getImage: function (args) {}
+        });
+        </script>
+
+{% endhighlight %}
+
+
+
+
+
+
+
+
 
 ### layoutChange
 {:#events:layoutchange}
