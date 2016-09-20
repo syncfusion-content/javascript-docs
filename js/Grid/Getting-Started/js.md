@@ -16,77 +16,6 @@ The grid control has the following list of external JavaScript dependencies.
 * [jsRender](https://github.com/borismoore/jsrender) - to render the templates
 * [jQuery.easing](http://gsgd.co.uk/sandbox/jquery/easing/) - to support animation effects in the components
 
-Refer to the internal dependencies in the following table.
-
-<table>
-<tr>
-<th>
-File                          </th><th>
-Description/Usage</th></tr>
-<tr>
-<td>
-ej.core.min.js</td><td>
-It is referred always before using all the JS controls.</td></tr>
-<tr>
-<td>
-ej.data.min.js</td><td>
-Used to handle data operation and is used while binding data to the JS controls.</td></tr>
-<tr>
-<td>
-ej.grid.min.js</td><td>
-The grid's main file.</td></tr>
-<tr>
-<td>
-ej.pager.min.js</td><td>
-It is referred when paging is used in the Grid.  </td></tr>
-<tr>
-<td>
-ej.scroller.min.js</td><td>
-It is referred when scrolling is used in the Grid.  </td></tr>
-<tr>
-<td>
-ej.waitingpopup.min.js</td><td>
-It is referred when the remote data binding is used in the Grid. The waiting popup shows while requesting the server for data.</td></tr>
-<tr>
-<td>
-ej.gridresize.min.js</td><td>
-It is referred when resizing is used in the Grid.</td></tr>
-<tr>
-<td>
-ej.dropdownlist.min.js</td><td rowspan = "8">
-These files are used while enable the Editing and Filtering feature in the Grid.</td></tr>
-<tr>
-<td>
-ej.dialog.min.js</td></tr>
-<tr>
-<td>
-ej.button.min.js</td></tr>
-<tr>
-<td>
-ej.autocomplete.min.js</td></tr>
-<tr>
-<td>
-ej.datepicker.min.js</td></tr>
-<tr>
-<td>
-ej.datetimepicker.min.js</td></tr>
-<tr>
-<td>
-ej.checkbox.min.js</td></tr>
-<tr>
-<td>
-ej.editor.min.js</td></tr>
-<tr>
-<td>
-ej.excelfilter.js</td><td>
-It is referred when excel like filter menu is enabled.</td></tr>
-<tr>
-<td>
-ej.globalize.min.js</td><td>
-It is referred when using localization in Grid.</td></tr>
-</table>
-
-
 To get started, you can use the `ej.web.all.min.js` file that encapsulates all the `ej` controls and frameworks in one single file. So the complete boilerplate code is
 
 {% highlight html %}
@@ -155,9 +84,9 @@ The grid can be created from a HTML `DIV` element with the HTML `id` attribute s
 {:.image }
 
 
-## Data binding
+## Data Binding
 
-[`Data binding`](http://helpjs.syncfusion.com/js/grid/data-binding) in the grid is achieved by using the [`ej.DataManager`](http://helpjs.syncfusion.com/js/datamanager/overview) that supports both RESTful JSON data services binding and local JSON array binding.  To set the data source to the grid, the [`dataSource`](http://help.syncfusion.com/js/api/ejgrid#members:columns-datasource) property is assigned with the instance of the `ej.DataManger`. For demonstration purpose, [Northwind OData service](http://mvc.syncfusion.com/Services/Northwnd.svc/) is used in this tutorial. Refer to the following code example.
+[`Data Binding`](http://helpjs.syncfusion.com/js/grid/data-binding) in the grid is achieved by using the [`ej.DataManager`](http://helpjs.syncfusion.com/js/datamanager/overview) that supports both RESTful JSON data services binding and local JSON array binding.  To set the data source to the grid, the [`dataSource`](http://help.syncfusion.com/js/api/ejgrid#members:columns-datasource) property is assigned with the instance of the `ej.DataManger`. For demonstration purpose, [Northwind OData service](http://mvc.syncfusion.com/Services/Northwnd.svc/) is used in this tutorial. Refer to the following code example.
 
 {% highlight html %}
 
@@ -314,6 +243,76 @@ Refer to the following code example for initial grouping.
 ![](../Getting-started_images/Getting-started_img7.png)
 {:.image }
 
+## Internal Dependency Scripts
 
+Refer to the internal dependencies in the following table.
+
+<table>
+<tr>
+<th>
+File                          </th><th>
+Description/Usage</th></tr>
+<tr>
+<td>
+ej.core.min.js</td><td>
+It is referred always before using all the JS controls.</td></tr>
+<tr>
+<td>
+ej.data.min.js</td><td>
+Used to handle data operation and is used while binding data to the JS controls.</td></tr>
+<tr>
+<td>
+ej.grid.min.js</td><td>
+The grid's main file.</td></tr>
+<tr>
+<td>
+ej.pager.min.js</td><td>
+It is referred when paging is used in the Grid.  </td></tr>
+<tr>
+<td>
+ej.scroller.min.js</td><td>
+It is referred when scrolling is used in the Grid.  </td></tr>
+<tr>
+<td>
+ej.waitingpopup.min.js</td><td>
+It is referred when the remote data binding is used in the Grid. The waiting popup shows while requesting the server for data.</td></tr>
+<tr>
+<td>
+ej.gridresize.min.js</td><td>
+It is referred when resizing is used in the Grid.</td></tr>
+<tr>
+<td>
+ej.dropdownlist.min.js</td><td rowspan = "8">
+These files are used while enable the Editing and Filtering feature in the Grid.</td></tr>
+<tr>
+<td>
+ej.dialog.min.js</td></tr>
+<tr>
+<td>
+ej.button.min.js</td></tr>
+<tr>
+<td>
+ej.autocomplete.min.js</td></tr>
+<tr>
+<td>
+ej.datepicker.min.js</td></tr>
+<tr>
+<td>
+ej.datetimepicker.min.js</td></tr>
+<tr>
+<td>
+ej.checkbox.min.js</td></tr>
+<tr>
+<td>
+ej.editor.min.js</td></tr>
+<tr>
+<td>
+ej.excelfilter.js</td><td>
+It is referred when excel like filter menu is enabled.</td></tr>
+<tr>
+<td>
+ej.globalize.min.js</td><td>
+It is referred when using localization in Grid.</td></tr>
+</table>
 
 
