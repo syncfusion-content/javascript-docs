@@ -50,7 +50,7 @@ $("#heatmap_legend").ejHeatMapLegend({
     colorMappingCollection: colorMappingCollection,
     height: "50px",
     width: "75%",
-    legendMode: ej.HeatMap.LegendMode.Gradient   
+    legendMode: ej.datavisualization.HeatMap.LegendMode.Gradient   
 });
         
 {% endhighlight %}
@@ -65,7 +65,7 @@ $("#heatmap_legend").ejHeatMapLegend({
     colorMappingCollection: colorMappingCollection,
     height: "50px",
     width: "75%",
-    legendMode: ej.HeatMap.LegendMode.List   
+    legendMode: ej.datavisualization.HeatMap.LegendMode.List   
 });
         
 {% endhighlight %}
@@ -86,7 +86,7 @@ $("#heatmap_legend").ejHeatMapLegend({
     colorMappingCollection: colorMappingCollection,
     height: "50px",
     width: "75%",
-    legendMode: ej.HeatMap.LegendMode.List   
+    legendMode: ej.datavisualization.HeatMap.LegendMode.List   
 });
         
 {% endhighlight %}
@@ -101,8 +101,8 @@ $("#heatmap_legend").ejHeatMapLegend({
     colorMappingCollection: colorMappingCollection,
     height: "550px",
     width: "100px",
-    orientation: ej.HeatMap.LegendOrientation.Vertical,
-    legendMode: ej.HeatMap.LegendMode.List
+    orientation: ej.datavisualization.HeatMap.LegendOrientation.Vertical,
+    legendMode: ej.datavisualization.HeatMap.LegendMode.List
 });
         
 {% endhighlight %}
