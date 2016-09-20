@@ -24,7 +24,7 @@ Screenshot</th></tr>
 <tr>
 <td>
 While right click on treeview nodes (from navigation pane)<br/><br/></td><td>
-* New Folder<br/>* Upload<br/>* Delete<br/>* Rename<br/>* Cut<br/>* Copy<br/>* Paste<br/><br/><br/><br/></td><td>
+* New folder<br/>* Upload<br/>* Delete<br/>* Rename<br/>* Cut<br/>* Copy<br/>* Paste<br/><br/><br/><br/></td><td>
 <br/><br/><br/><br/></td></tr>
 <tr>
 <td>
@@ -34,7 +34,7 @@ While right click on File / Folder<br/><br/></td><td>
 <tr>
 <td>
 While right click on layout (content pane)<br/><br/></td><td>
-* Refresh<br/>* Paste<br/>* New Folder<br/>* Upload <br/>* Get info <br/><br/><br/><br/></td><td>
+* Refresh<br/>* Paste<br/>* New folder<br/>* Upload <br/>* Get info <br/><br/><br/><br/></td><td>
 <br/><br/><br/><br/></td></tr>
 </table>
 The below table explains the behavior of each context menu item:
@@ -70,7 +70,7 @@ Rename<br/><br/></td><td>
 This is used to rename the current selected file or folder. When you select any file or folder at that time only this option gets enabled.<br/><br/>Even multiple files selected it renames the single file only.<br/><br/></td></tr>
 <tr>
 <td>
-New Folder<br/><br/></td><td>
+New folder<br/><br/></td><td>
 It creates a new folder on the current directory.<br/><br/>While click on the NewFolder item a dialog appears to get the folder name. Based on the user input, a new folder create on the current directory.<br/><br/></td></tr>
 <tr>
 <td>
@@ -128,7 +128,7 @@ These methods only accepts the context menu item name as the parameter.
 
             // this disables the New Folder item
 
-            fileExpObj.disableMenuItem("New Folder");
+            fileExpObj.disableMenuItem("New folder");
 
             // this disables the Download item
 
