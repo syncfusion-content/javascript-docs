@@ -427,7 +427,7 @@ _ISEVEN (value)_
 
 
 
-•If the given value is non-numeric, ISEVEN function returns `#VALUE!` error value.
+* If the given value is non-numeric, ISEVEN function returns `#VALUE!` error value.
 
 
 
@@ -448,6 +448,73 @@ _ISREF(given_value)_
 
 
 * given_value: Required. The value that is to be tested. The value argument can be a blank (empty cell), error, logical value, text, number, or reference value, or a name referring to any of these.
+
+
+
+## MATCH
+
+
+The `MATCH` function searches for a specified item in a range of cells, and then returns the relative position of that item in the range.
+
+
+
+**Syntax:**
+
+
+
+_MATCH(lookup_value, lookup_array, [match_type])_
+
+
+
+**Where:**
+
+
+
+* lookup_value is the value that you want to match in lookup_array.
+
+
+
+* lookup_array is the range of cells being searched.
+
+
+
+* match_type specifies how Excel matches looup_value with values in lookup_array. The default value for this argument is 1.
+ 
+  <table>
+
+	<tr>
+
+	<th>
+
+	<b>Match_type</b></th><th>
+
+	<b>Behavior</b></th></tr>
+
+	<tr>
+
+	<td>
+
+	0 or omitted</td><td>
+
+	MATCH finds the largest value that is less than or equal to lookup_value. The lookup_array argument must be placed in ascending order.</td></tr>
+
+	<tr>
+
+	<td>
+
+	0</td><td>
+
+	MATCH finds the first value that is exactly equal to lookup_value. The lookup_array argument can be in any order.</td></tr>
+
+	<tr>
+
+	<td>
+
+	-1</td><td>
+
+	MATCH finds the smallest value that is greater than or equal to lookup_value. The lookup_array argument must be placed in descending order.</td></tr>
+
+  </table>
 
 
 
