@@ -320,7 +320,7 @@ The following are the list of formulas supported in Calculate library,
 
 [PI](/js/calculate/supported-formulas#pi)
 
-[PMT](/js/calculate/supported-formulas/financial-formulas#bitand)
+[PMT](/js/calculate/supported-formulas/financial-formulas#pmt)
 
 [POISSON.DIST](/js/calculate/supported-formulas/statistical#poissondist)
 
