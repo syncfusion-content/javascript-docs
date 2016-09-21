@@ -48,6 +48,18 @@ The following are the list of formulas supported in Calculate library,
 
 [BINOM.DIST](/js/calculate/supported-formulas/statistical#binomdist)
 
+[BINOM.INV](/js/calculate/supported-formulas/statistical#binominv)
+
+[BITAND](/js/calculate/supported-formulas/engineering#bitand)
+
+[BITLSHIFT](/js/calculate/supported-formulas/engineering#bitlshift)
+
+[BITOR](/js/calculate/supported-formulas/engineering#bitor)
+
+[BITRSHIFT](/js/calculate/supported-formulas/engineering#bitrshift)
+
+[BITXOR](/js/calculate/supported-formulas/engineering#bitxor)
+
 [CEILING](/js/calculate/supported-formulas/math-trigonometry#ceiling)
 
 [CEILINGMATH](/js/calculate/supported-formulas/math-trigonometry#ceilingmath)
@@ -55,6 +67,8 @@ The following are the list of formulas supported in Calculate library,
 [CELL](/js/calculate/supported-formulas/information-formulas#cell)
 
 [CHAR](/js/calculate/supported-formulas/text-formulas#char)
+
+[CHIDIST](/js/calculate/supported-formulas/statistical#chidist)
 
 [CHISQ.DIST.RT](/js/calculate/supported-formulas/statistical#chisqdistrt)
 
@@ -87,6 +101,8 @@ The following are the list of formulas supported in Calculate library,
 [COSH](/js/calculate/supported-formulas/math-trigonometry#cosh)
 
 [COT](/js/calculate/supported-formulas/math-trigonometry#cot)
+
+[COTH](/js/calculate/supported-formulas/math-trigonometry#coth)
 
 [COUNT](/js/calculate/supported-formulas/statistical#count)
 
@@ -244,6 +260,8 @@ The following are the list of formulas supported in Calculate library,
 
 [LOWER](/js/calculate/supported-formulas/text-formulas#lower)
 
+[MATCH](/js/calculate/supported-formulas/information-formulas#match)
+
 [MAX](/js/calculate/supported-formulas/statistical#max)
 
 [MAXA](/js/calculate/supported-formulas/statistical#maxa)
@@ -301,6 +319,8 @@ The following are the list of formulas supported in Calculate library,
 [PERMUTATIONA](/js/calculate/supported-formulas/statistical#permutationa)
 
 [PI](/js/calculate/supported-formulas#pi)
+
+[PMT](/js/calculate/supported-formulas/financial-formulas#bitand)
 
 [POISSON.DIST](/js/calculate/supported-formulas/statistical#poissondist)
 
