@@ -169,6 +169,86 @@ _BINOM.DIST (trial number,sp,value, cumulative)_
 
 
 
+## BINOM.INV
+
+
+
+The `Bino.Inv` function returns the smallest value for which the cumulative binomial distribution is greater than or equal to a criterion value.
+
+
+
+**Syntax:**
+
+
+
+_BINOM.INV(trial number,sp,value)_
+
+
+
+**Where:**
+
+
+
+* trial number is the number of Bernoulli trials.
+
+
+
+* sp is the probability of a success on each trial.
+
+
+
+* value is the criterion value.
+
+
+
+**Remarks:**
+
+
+
+* `#NUM!` - occurs if trial number is less than zero, if sp and value is less than zero or greater one.
+
+
+
+* `#VALUE!` - occurs if trials, sp and value are non-numeric.
+
+
+
+## CHIDIST
+
+
+
+The `CHIDIST` function returns the right-tailed probability of the chi-squared distribution. 
+
+
+
+**Syntax:**
+
+
+
+_CHIDIST(x,degFreedom)_
+
+
+
+**Where:**
+
+
+
+* X is the value at which the chi-square distribution is to be evaluated (must be ≥ 0).
+
+
+
+* degFreedom is the number of degrees of freedom.
+
+
+
+**Remarks:**
+
+
+
+* `#NUM!` - occurs if the  x is negative or degFreedom argument is invalid.
+
+
+
 ## CONFIDENCE.NORM
 
 
