@@ -310,7 +310,7 @@ specifies the text value of the heatmap legend label.
 ### colorMappingCollection.label.textDecoration `enum`
 {:#members:colorMappingCollection-label-textDecoration}
 
-<ts name = "ej.datavisualization.HeatMap.TextDecoration "/>
+<ts name = "ej.HeatMap.TextDecoration "/>
 
 Specifies the text style of the heatmap legend label.
 
@@ -344,7 +344,7 @@ Specifies the text style of the heatmap legend label.
 
 #### Default Value:
 
-* ej.datavisualization.HeatMap.TextDecoration.None
+* ej.HeatMap.TextDecoration.None
 
 #### Example
 
@@ -354,7 +354,7 @@ Specifies the text style of the heatmap legend label.
     <script>
         $("#heatmapLegend").ejHeatMapLegend({
             colorMappingCollection: [
-            { value: 0, color: "#8ec8f8", label: { textDecoration: ej.datavisualization.HeatMap.TextDecoration.None } }]
+            { value: 0, color: "#8ec8f8", label: { textDecoration: ej.HeatMap.TextDecoration.None } }]
         });
     </script>
 
@@ -435,7 +435,7 @@ Specifies the font color of the heatmap legend label.
 ### orientation `enum`
 {:#members:orientation}
 
-<ts name = "ej.datavisualization.HeatMap.LegendOrientation"/>
+<ts name = "ej.HeatMap.LegendOrientation"/>
 
 Specifies the orientation of the heatmap legend 
 
@@ -461,7 +461,7 @@ Specifies the orientation of the heatmap legend
 
 #### Default Value:
 
-*  ej.datavisualization.HeatMap.LegendOrientation.Horizontal
+*  ej.HeatMap.LegendOrientation.Horizontal
 
 #### Example
 
@@ -470,7 +470,7 @@ Specifies the orientation of the heatmap legend
     <div id="heatmapLegend"></div>
     <script>
         $("#heatmapLegend").ejHeatMapLegend({
-            orientation: ej.datavisualization.HeatMap.LegendOrientation.Vertical
+            orientation: ej.HeatMap.LegendOrientation.Vertical
         });
     </script>
 
@@ -482,7 +482,7 @@ Specifies the orientation of the heatmap legend
 ### legendMode `enum`
 {:#members:legendMode}
 
-<ts name = "ej.datavisualization.HeatMap.LegendMode"/>
+<ts name = "ej.HeatMap.LegendMode"/>
 
 Specifies the legend mode as gradient or list.
 
@@ -508,7 +508,7 @@ Specifies the legend mode as gradient or list.
 
 #### Default Value:
 
-*  ej.datavisualization.HeatMap.LegendMode.Gradient
+*  ej.HeatMap.LegendMode.Gradient
 
 #### Example
 
@@ -517,7 +517,7 @@ Specifies the legend mode as gradient or list.
     <div id="heatmapLegend"></div>
     <script>
         $("#heatmapLegend").ejHeatMapLegend({
-            legendMode: ej.datavisualization.HeatMap.LegendMode.List
+            legendMode: ej.HeatMap.LegendMode.List
         });
     </script>
 

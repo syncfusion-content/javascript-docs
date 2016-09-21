@@ -175,7 +175,7 @@ Specifies the property of the heat map cell.
 ### heatMapCell.showContent `enum`
 {:#members:heatmapCell-showContent}
  
-<ts name = "ej.datavisualization.HeatMap.CellVisibility"/>
+<ts name = "ej.HeatMap.CellVisibility"/>
 
 Specifies whether the cell content can be visible or not.
 
@@ -201,7 +201,7 @@ Specifies whether the cell content can be visible or not.
 
 #### Default Value:
 
-* ej.datavisualization.HeatMap.CellVisibility.Visible
+* ej.HeatMap.CellVisibility.Visible
 
 #### Example
 
@@ -210,7 +210,7 @@ Specifies whether the cell content can be visible or not.
     <div id="heatmap"></div>
     <script>
         $("#heatmap").ejHeatMap({
-            heatmapCell: { showContent: ej.datavisualization.HeatMap.CellVisibility.Hidden }
+            heatmapCell: { showContent: ej.HeatMap.CellVisibility.Hidden }
         });
     </script>
 
@@ -306,7 +306,7 @@ Specifies the default column properties for all the column style not specified i
     <script>
         $("#heatmap").ejHeatMap({
             defaultColumnStyle: {
-                textAlign: ej.datavisualization.HeatMap.TextAlign.Left
+                textAlign: ej.HeatMap.TextAlign.Left
             }
         });
     </script>
@@ -319,7 +319,7 @@ Specifies the default column properties for all the column style not specified i
 
 Specifies the alignment mode of the heat map column.
 
-<ts name = "ej.datavisualization.HeatMap.TextAlign"/>
+<ts name = "ej.HeatMap.TextAlign"/>
 
 Enables/disables the bold style
 
@@ -349,7 +349,7 @@ Enables/disables the bold style
 
 #### Default Value:
 
-* ej.datavisualization.HeatMap.TextAlign.Center
+* ej.HeatMap.TextAlign.Center
 
 #### Example
 
@@ -359,7 +359,7 @@ Enables/disables the bold style
     <script>
         $("#heatmap").ejHeatMap({
             defaultColumnStyle: {
-                textAlign: ej.datavisualization.HeatMap.TextAlign.Left
+                textAlign: ej.HeatMap.TextAlign.Left
             }
         });
     </script>
@@ -496,7 +496,7 @@ Column settings for the individual heat map column.
         $("#heatmap").ejHeatMap({
             itemsMapping: {
                 columnStyle: {
-                    textAlign: ej.datavisualization.HeatMap.TextAlign.Left
+                    textAlign: ej.HeatMap.TextAlign.Left
                 }
             }
         });
@@ -538,7 +538,7 @@ Specifies the text align mode of the heat map column.
 
 #### Default Value:
 
-* ej.datavisualization.HeatMap.TextAlign.Center
+* ej.HeatMap.TextAlign.Center
 
 #### Example
 
@@ -549,7 +549,7 @@ Specifies the text align mode of the heat map column.
             $("#heatmap").ejHeatMap({
                 itemsMapping: {
                     columnStyle: {
-                        textAlign: ej.datavisualization.HeatMap.TextAlign.Left
+                        textAlign: ej.HeatMap.TextAlign.Left
                     }
                 }
             });
@@ -1140,7 +1140,7 @@ specifies the text value of the heat map label.
 ### colorMappingCollection.label.textDecoration `enum`
 {:#members:colorMappingCollection-label-textDecoration}
 
-<ts name = "ej.datavisualization.HeatMap.TextDecoration "/>
+<ts name = "ej.HeatMap.TextDecoration "/>
 
 Specifies the text style of the heat map label.
 
@@ -1174,7 +1174,7 @@ Specifies the text style of the heat map label.
 
 #### Default Value:
 
-* ej.datavisualization.HeatMap.TextDecoration.None
+* ej.HeatMap.TextDecoration.None
 
 #### Example
 
@@ -1184,7 +1184,7 @@ Specifies the text style of the heat map label.
     <script>
         $("#heatmap").ejHeatMap({
             colorMappingCollection: [
-                { label: { textDecoration: ej.datavisualization.HeatMap.TextDecoration.None } }
+                { label: { textDecoration: ej.HeatMap.TextDecoration.None } }
             ]
         });
     </script>
