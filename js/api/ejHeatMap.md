@@ -201,7 +201,7 @@ Specifies whether the cell content can be visible or not.
 
 #### Default Value:
 
-* ej.datavisualization.HeatMap.CellVisibility.Visible
+* ej.HeatMap.CellVisibility.Visible
 
 #### Example
 
