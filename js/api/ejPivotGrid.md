@@ -214,75 +214,12 @@ $("#PivotGrid1").ejPivotGrid({dataSource: {columns: [{ advancedFilter : [{name: 
 
 {% endhighlight %}
 
-### dataSource.columns.advancedFilter.labelFilterOperator `enum`
+### dataSource.columns.advancedFilter.labelFilterOperator `string`
 {:#members:datasource-columns-advancedfilter-labelfilteroperator}
 
 <ts name = "ej.olap.LabelFilterOptions"/>
 
 Allows the user to set the operator for label filtering to do advanced filtering (excel-like) for OLAP data source in client-mode.
-
-<table class="params">
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Description</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td class="name">None</td>
-            <td class="description">Doesn't allow the label filtering operation.</td>
-        </tr>
-        <tr>
-            <td class="name">BeginsWith</td>
-            <td class="description">To filter the members of a hierarchy element by its name which begins with the provided string.</td>
-        </tr>
-		<tr>
-            <td class="name">NotBeginsWith</td>
-            <td class="description">To filter the members of a hierarchy element by its name which doesn't begins with the provided string.</td>
-        </tr>
-        <tr>
-            <td class="name">EndsWith</td>
-            <td class="description">To filter the members of a hierarchy element by its name which ends with the provided string.</td>
-        </tr>
-		<tr>
-            <td class="name">NotEndsWith</td>
-            <td class="description">To filter the members of a hierarchy element by its name which doesn't ends with the provided string.</td>
-        </tr>
-        <tr>
-            <td class="name">Contains</td>
-            <td class="description">To filter the members of a hierarchy element by its name which contains the provided string.</td>
-        </tr>
-		<tr>
-            <td class="name">NotContains</td>
-            <td class="description">To filter the members of a hierarchy element by its name which doesn't contains the provided string.</td>
-        </tr>
-		<tr>
-            <td class="name">Equals</td>
-            <td class="description">To filter the members of a hierarchy element by its name which equals to the provided string.</td>
-        </tr>
-        <tr>
-            <td class="name">NotEquals</td>
-            <td class="description">To filter the members of a hierarchy element by its name which doesn't equals to the provided string.</td>
-        </tr>
-		<tr>
-            <td class="name">GreaterThan</td>
-            <td class="description">To filter the members of a hierarchy element by its name where its first letter is next to the first letter of the provided member name in alphabetical order.</td>
-        </tr>
-		<tr>
-            <td class="name">GreaterThanOrEqualTo</td>
-            <td class="description">To filter the members of a hierarchy element by its name where its first letter is next or equal to the first letter of the provided member name in alphabetical order.</td>
-        </tr>
-        <tr>
-            <td class="name">LessThan</td>
-            <td class="description">To filter the members of a hierarchy element by its name where its first letter is before to the first letter of the provided member name in alphabetical order.</td>
-        </tr>
-		<tr>
-            <td class="name">LessThanOrEqualTo</td>
-            <td class="description">To filter the members of a hierarchy element by its name where its first letter is before or equal to the first letter of the provided member name in alphabetical order.</td>
-        </tr>
-    </tbody>
-</table>
 
 #### Default Value: ""
 
@@ -294,60 +231,12 @@ $("#PivotGrid1").ejPivotGrid({dataSource: {columns: [{ advancedFilter : [{labelF
 
 {% endhighlight %}
 
-### dataSource.columns.advancedFilter.valueFilterOperator `enum`
+### dataSource.columns.advancedFilter.valueFilterOperator `string`
 {:#members:datasource-columns-advancedfilter-valuefilteroperator}
 
 <ts name = "ej.olap.ValueFilterOptions"/>
 
 Allows the user to set the operator for value filtering to do advanced filtering (excel-like) for OLAP data source in client-mode.
-
-<table class="params">
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Description</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td class="name">None</td>
-            <td class="description">Doesn't allow the value filtering operation.</td>
-        </tr>
-        <tr>
-            <td class="name">Equals</td>
-            <td class="description">To filter the members of a hierarchy element by its total value which is equal to the provided value.</td>
-        </tr>
-		<tr>
-            <td class="name">NotEquals</td>
-            <td class="description">To filter the members of a hierarchy element by its total value which is not equal to the provided value.</td>
-        </tr>
-        <tr>
-            <td class="name">GreaterThan</td>
-            <td class="description">To filter the members of a hierarchy element by its total value which is greater than the provided value.</td>
-        </tr>
-		<tr>
-            <td class="name">GreaterThanOrEqualTo</td>
-            <td class="description">To filter the members of a hierarchy element by its total value which is greater than or equal to the provided value.</td>
-        </tr>
-        <tr>
-            <td class="name">LessThan</td>
-            <td class="description">To filter the members of a hierarchy element by its total value which is less than the provided value.</td>
-        </tr>
-		<tr>
-            <td class="name">LessThanOrEqualTo</td>
-            <td class="description">To filter the members of a hierarchy element by its total value which is less than or equal to the provided value.</td>
-        </tr>
-		<tr>
-            <td class="name">Between</td>
-            <td class="description">To filter the members of a hierarchy element by its total value which is in-between the provided values.</td>
-        </tr>
-        <tr>
-            <td class="name">NotBetween</td>
-            <td class="description">To filter the members of a hierarchy element by its total value which is not between the provided values.</td>
-        </tr>
-    </tbody>
-</table>
-
 
 #### Default Value: ""
 
@@ -359,31 +248,12 @@ $("#PivotGrid1").ejPivotGrid({dataSource: {columns: [{ advancedFilter : [{valueF
 
 {% endhighlight %}
 
-### dataSource.columns.advancedFilter.advancedFilterType `enum`
+### dataSource.columns.advancedFilter.advancedFilterType `string`
 {:#members:datasource-columns-advancedfilter-advancedfiltertype}
 
 <ts name = "ej.olap.AdvancedFilterType"/>
 
 Allows the user to set the filtering type while doing advanced filtering (excel-like) for OLAP data source in client-mode.
-
-<table class="params">
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Description</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td class="name">LabelFilter</td>
-            <td class="description">To filter the members of an hierarchy element by its names.</td>
-        </tr>
-        <tr>
-            <td class="name">ValueFilter</td>
-            <td class="description">To filter the members of an hierarchy element by its total value.</td>
-        </tr>
-    </tbody>
-</table>
 
 #### Default Value: ""
 
@@ -535,75 +405,12 @@ $("#PivotGrid1").ejPivotGrid({dataSource: {rows: [{ advancedFilter : [{name: "di
 
 {% endhighlight %}
 
-### dataSource.rows.advancedFilter.labelFilterOperator `enum`
+### dataSource.rows.advancedFilter.labelFilterOperator `string`
 {:#members:datasource-rows-advancedfilter-labelfilteroperator}
 
 <ts name = "ej.olap.LabelFilterOptions"/>
 
 Allows the user to set the operator for label filtering to do advanced filtering (excel-like) for OLAP data source in client-mode.
-
-<table class="params">
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Description</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td class="name">None</td>
-            <td class="description">Doesn't allow the label filtering operation.</td>
-        </tr>
-        <tr>
-            <td class="name">BeginsWith</td>
-            <td class="description">To filter the members of a hierarchy element by its name which begins with the provided string.</td>
-        </tr>
-		<tr>
-            <td class="name">NotBeginsWith</td>
-            <td class="description">To filter the members of a hierarchy element by its name which doesn't begins with the provided string.</td>
-        </tr>
-        <tr>
-            <td class="name">EndsWith</td>
-            <td class="description">To filter the members of a hierarchy element by its name which ends with the provided string.</td>
-        </tr>
-		<tr>
-            <td class="name">NotEndsWith</td>
-            <td class="description">To filter the members of a hierarchy element by its name which doesn't ends with the provided string.</td>
-        </tr>
-        <tr>
-            <td class="name">Contains</td>
-            <td class="description">To filter the members of a hierarchy element by its name which contains the provided string.</td>
-        </tr>
-		<tr>
-            <td class="name">NotContains</td>
-            <td class="description">To filter the members of a hierarchy element by its name which doesn't contains the provided string.</td>
-        </tr>
-		<tr>
-            <td class="name">Equals</td>
-            <td class="description">To filter the members of a hierarchy element by its name which equals to the provided string.</td>
-        </tr>
-        <tr>
-            <td class="name">NotEquals</td>
-            <td class="description">To filter the members of a hierarchy element by its name which doesn't equals to the provided string.</td>
-        </tr>
-		<tr>
-            <td class="name">GreaterThan</td>
-            <td class="description">To filter the members of a hierarchy element by its name where its first letter is next to the first letter of the provided member name in alphabetical order.</td>
-        </tr>
-		<tr>
-            <td class="name">GreaterThanOrEqualTo</td>
-            <td class="description">To filter the members of a hierarchy element by its name where its first letter is next or equal to the first letter of the provided member name in alphabetical order.</td>
-        </tr>
-        <tr>
-            <td class="name">LessThan</td>
-            <td class="description">To filter the members of a hierarchy element by its name where its first letter is before to the first letter of the provided member name in alphabetical order.</td>
-        </tr>
-		<tr>
-            <td class="name">LessThanOrEqualTo</td>
-            <td class="description">To filter the members of a hierarchy element by its name where its first letter is before or equal to the first letter of the provided member name in alphabetical order.</td>
-        </tr>
-    </tbody>
-</table>
 
 #### Default Value: ""
 
@@ -615,60 +422,12 @@ $("#PivotGrid1").ejPivotGrid({dataSource: {rows: [{ advancedFilter : [{labelFilt
 
 {% endhighlight %}
 
-### dataSource.rows.advancedFilter.valueFilterOperator `enum`
+### dataSource.rows.advancedFilter.valueFilterOperator `string`
 {:#members:datasource-rows-advancedfilter-valuefilteroperator}
 
 <ts name = "ej.olap.ValueFilterOptions"/>
 
 Allows the user to set the operator for value filtering to do advanced filtering (excel-like) for OLAP data source in client-mode.
-
-<table class="params">
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Description</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td class="name">None</td>
-            <td class="description">Doesn't allow the value filtering operation.</td>
-        </tr>
-        <tr>
-            <td class="name">Equals</td>
-            <td class="description">To filter the members of a hierarchy element by its total value which is equal to the provided value.</td>
-        </tr>
-		<tr>
-            <td class="name">NotEquals</td>
-            <td class="description">To filter the members of a hierarchy element by its total value which is not equal to the provided value.</td>
-        </tr>
-        <tr>
-            <td class="name">GreaterThan</td>
-            <td class="description">To filter the members of a hierarchy element by its total value which is greater than the provided value.</td>
-        </tr>
-		<tr>
-            <td class="name">GreaterThanOrEqualTo</td>
-            <td class="description">To filter the members of a hierarchy element by its total value which is greater than or equal to the provided value.</td>
-        </tr>
-        <tr>
-            <td class="name">LessThan</td>
-            <td class="description">To filter the members of a hierarchy element by its total value which is less than the provided value.</td>
-        </tr>
-		<tr>
-            <td class="name">LessThanOrEqualTo</td>
-            <td class="description">To filter the members of a hierarchy element by its total value which is less than or equal to the provided value.</td>
-        </tr>
-		<tr>
-            <td class="name">Between</td>
-            <td class="description">To filter the members of a hierarchy element by its total value which is in-between the provided values.</td>
-        </tr>
-        <tr>
-            <td class="name">NotBetween</td>
-            <td class="description">To filter the members of a hierarchy element by its total value which is not between the provided values.</td>
-        </tr>
-    </tbody>
-</table>
-
 
 #### Default Value: ""
 
@@ -680,31 +439,12 @@ $("#PivotGrid1").ejPivotGrid({dataSource: {rows: [{ advancedFilter : [{valueFilt
 
 {% endhighlight %}
 
-### dataSource.rows.advancedFilter.advancedFilterType `enum`
+### dataSource.rows.advancedFilter.advancedFilterType `string`
 {:#members:datasource-rows-advancedfilter-advancedfiltertype}
 
 <ts name = "ej.olap.AdvancedFilterType"/>
 
 Allows the user to set the filtering type while doing advanced filtering (excel-like) for OLAP data source in client-mode.
-
-<table class="params">
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Description</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td class="name">LabelFilter</td>
-            <td class="description">To filter the members of an hierarchy element by its names.</td>
-        </tr>
-        <tr>
-            <td class="name">ValueFilter</td>
-            <td class="description">To filter the members of an hierarchy element by its total value.</td>
-        </tr>
-    </tbody>
-</table>
 
 #### Default Value: ""
 
