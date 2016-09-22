@@ -7106,6 +7106,101 @@ $("#Schedule").ejSchedule({
 
 {% endhighlight %}
 
+
+### create
+{:#events:create}
+
+Triggered when the scheduler is rendered completely.
+
+<table class="params">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">cancel</td>
+            <td class="type">boolean</td>
+            <td class="description">Returns the cancel option value.</td>
+        </tr>
+        <tr>
+            <td class="name">model</td>
+            <td class="type"><ts ref="ej.Schedule.Model"/><span class="param-type">object</span></td>
+            <td class="description">Returns the Schedule model.</td>
+        </tr>
+        <tr>
+            <td class="name">type</td>
+            <td class="type">string</td>
+            <td class="description">Returns the name of the Scheduler event.</td>
+        </tr>
+    </tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+ 
+<div id="Schedule"></div> 
+ 
+<script>
+$("#Schedule").ejSchedule({
+   create: function (args) {}
+});
+</script>
+
+{% endhighlight %}
+
+
+### destroy
+{:#events:destroy}
+
+Triggered when scheduler going to destroy.
+
+<table class="params">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">cancel</td>
+            <td class="type">boolean</td>
+            <td class="description">Returns the cancel option value.</td>
+        </tr>
+        <tr>
+            <td class="name">model</td>
+            <td class="type"><ts ref="ej.Schedule.Model"/><span class="param-type">object</span></td>
+            <td class="description">Returns the Schedule model.</td>
+        </tr>
+        <tr>
+            <td class="name">type</td>
+            <td class="type">string</td>
+            <td class="description">Returns the name of the Scheduler event.</td>
+        </tr>
+    </tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+ 
+<div id="Schedule"></div> 
+ 
+<script>
+$("#Schedule").ejSchedule({
+   destroy: function (args) {}
+});
+</script>
+
+{% endhighlight %}
+
+
 ### drag
 {:#events:drag}
 
