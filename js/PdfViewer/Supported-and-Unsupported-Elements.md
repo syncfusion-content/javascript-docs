@@ -5,6 +5,7 @@ description: Supported and unsupported elements of Syncfusion Essential JS PDF v
 platform: js
 control: PDF viewer
 documentation: ug
+keywords: ejPdfViewer, PDF Viewer
 ---
 
 ## Supported and Unsupported Elements
@@ -319,7 +320,7 @@ No
 Hyperlink
 </td>
 <td>
-No
+Yes
 </td>
 </tr>
 <tr>
@@ -348,7 +349,7 @@ No
 </tr>
 <tr>
 <td>
-Page Navigation	
+Page Navigation 
 </td>
 <td>
 Yes
@@ -404,15 +405,23 @@ Yes
 </tr>
 <tr>
 <td>
-{{'**Print**'| markdownify }}
+Print
 </td>
 <td>
-No
+Yes
 </td>
 </tr>
 <tr>
 <td>
-{{'**Export to image**'| markdownify }}
+Download
+</td>
+<td>
+Yes
+</td>
+</tr>
+<tr>
+<td>
+Export to image
 </td>
 <td>
 No
@@ -420,4 +429,4 @@ No
 </tr>
 </table>
 
-**Supported only for shapes and texts*
+Supported only for shapes and texts*
