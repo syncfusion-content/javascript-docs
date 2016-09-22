@@ -3346,15 +3346,15 @@ Specifies the background color of a cell in the Spreadsheet.
 <div id="Spreadsheet"></div> 
 <script>
 $('#Spreadsheet').ejSpreadsheet({
-    sheets:[{
-        rows:[
+    sheets: [{
+        rows: [
             {
                 cells: [
-                    { value: "Item Name",style: { "background-color": "#428bca" }},
+                    { value: "Item Name", style: { "background-color": "#428bca" } }
                 ]
             }
         ]
-    }]    
+    }]
 });
 </script>
 
@@ -3374,15 +3374,15 @@ Specifies the font color of a cell in the Spreadsheet.
 <div id="Spreadsheet"></div> 
 <script>
 $('#Spreadsheet').ejSpreadsheet({
-    sheets:[{
-        rows:[
+    sheets: [{
+        rows: [
             {
                 cells: [
-                    { value: "Item Name",style: { "color": "#428bca" }},
+                    { value: "Item Name", style: { "color": "#428bca" } }
                 ]
             }
         ]
-    }]    
+    }]
 });
 </script>
 
@@ -3402,15 +3402,15 @@ Specifies the font weight of a cell in the Spreadsheet.
 <div id="Spreadsheet"></div> 
 <script>
 $('#Spreadsheet').ejSpreadsheet({
-    sheets:[{
-        rows:[
+    sheets: [{
+        rows: [
             {
                 cells: [
-                    { value: "Item Name",style: { "font-weight": "bold" }},
+                    { value: "Item Name", style: { "font-weight": "bold" } }
                 ]
             }
         ]
-    }]    
+    }]
 });
 </script>
 
