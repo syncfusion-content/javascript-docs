@@ -2888,6 +2888,251 @@ Specifies the height, width, type, isBig property to the controls in the group c
 
 {% endhighlight %}
 
+### tabs.groups.content.defaults.height `string|number`
+{:#members:tabs-groups-content-defaults-height}
+
+Specifies the controls height such as Syncfusion button,split button,dropdown list,toggle button in the subgroup of  the ribbon tab.
+
+#### Default Value:
+
+* null
+
+#### Example
+
+{% highlight html %}
+
+    <ul id="menu">
+    <li><a>FILE </a>
+    <ul>
+    <li><a>New</a></li>
+    <li><a>Open</a></li>
+    <li><a>Save</a></li>
+    <li><a>Save as</a></li>
+    <li><a>Print</a></li>
+    </ul></li></ul>
+    <div id="Ribbon"></div> 
+    <script type="text/javascript">   
+    $(function () {
+        $("#Ribbon").ejRibbon({
+    // Set the width during initialization.         
+        width: "100%",
+        applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
+        tabs: [{
+            id: "home", text: "HOME", groups: [{
+                    text: "New", alignType: ej.Ribbon.alignType.rows,content: [{
+                        groups: [{
+                            id: "new",
+                            text: "New",
+                            toolTip: "New",
+                            buttonSettings: {
+                            width: 100,
+                            }
+                        },
+                           {
+                            id: "font",
+                            text: "Font",
+                            toolTip: "Font",
+                            buttonSettings: {
+                            width: 150,
+                            }
+                        }],
+                        defaults: {
+                        type: ej.Ribbon.type.button,
+                        height: 70
+                    }
+                    }]
+            }]
+            }]
+    });
+    });             
+    </script>  
+
+{% endhighlight %}
+
+### tabs.groups.content.defaults.width `string|number`
+{:#members:tabs-groups-content-defaults-width}
+
+Specifies the controls width such as Syncfusion button,split button,dropdown list,toggle button in the subgroup of  the ribbon tab.
+
+#### Default Value:
+
+* null
+
+#### Example
+
+{% highlight html %}
+
+    <ul id="menu">
+    <li><a>FILE </a>
+    <ul>
+    <li><a>New</a></li>
+    <li><a>Open</a></li>
+    <li><a>Save</a></li>
+    <li><a>Save as</a></li>
+    <li><a>Print</a></li>
+    </ul></li></ul>
+    <div id="Ribbon"></div> 
+    <script type="text/javascript">   
+    $(function () {
+        $("#Ribbon").ejRibbon({
+    // Set the width during initialization.         
+        width: "100%",
+        applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
+        tabs: [{
+            id: "home", text: "HOME", groups: [{
+                    text: "New", alignType: ej.Ribbon.alignType.rows,content: [{
+                        groups: [{
+                            id: "new",
+                            text: "New",
+                            toolTip: "New",
+                            buttonSettings: {
+                            width: 100,
+                            }
+                        },
+                           {
+                            id: "font",
+                            text: "Font",
+                            toolTip: "Font",
+                            buttonSettings: {
+                            width: 150,
+                            }
+                        }],
+                        defaults: {
+                        type: ej.Ribbon.type.button,
+                        width: 70
+                    }
+                    }]
+            }]
+            }]
+    });
+    });             
+    </script>  
+
+{% endhighlight %}
+
+### tabs.groups.content.defaults.type `enum`
+{:#members:tabs-groups-content-defaults-type}
+
+Specifies the controls type such as Syncfusion button,split button,dropdown list,toggle button in the subgroup of  the ribbon tab.
+
+#### Default Value:
+
+* ej.Ribbon.Type.Button
+
+#### Example
+
+{% highlight html %}
+
+    <ul id="menu">
+    <li><a>FILE </a>
+    <ul>
+    <li><a>New</a></li>
+    <li><a>Open</a></li>
+    <li><a>Save</a></li>
+    <li><a>Save as</a></li>
+    <li><a>Print</a></li>
+    </ul></li></ul>
+    <div id="Ribbon"></div> 
+    <script type="text/javascript">   
+    $(function () {
+        $("#Ribbon").ejRibbon({
+    // Set the width during initialization.         
+        width: "100%",
+        applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
+        tabs: [{
+            id: "home", text: "HOME", groups: [{
+                    text: "New", alignType: ej.Ribbon.alignType.rows,content: [{
+                        groups: [{
+                            id: "new",
+                            text: "New",
+                            toolTip: "New",
+                            buttonSettings: {
+                            width: 100,
+                            }
+                        },
+                           {
+                            id: "font",
+                            text: "Font",
+                            toolTip: "Font",
+                            buttonSettings: {
+                            width: 150,
+                            }
+                        }],
+                        defaults: {
+                        type: ej.Ribbon.type.button,
+                        width: 70
+                    }
+                    }]
+            }]
+            }]
+    });
+    });             
+    </script>  
+
+{% endhighlight %}
+
+### tabs.groups.content.defaults.isBig `boolean`
+{:#members:tabs-groups-content-defaults-isbig}
+
+Specifies the controls size such as Syncfusion button,split button,dropdown list,toggle button in the subgroup of  the ribbon tab.
+
+#### Default Value:
+
+* false
+
+#### Example
+
+{% highlight html %}
+
+    <ul id="menu">
+    <li><a>FILE </a>
+    <ul>
+    <li><a>New</a></li>
+    <li><a>Open</a></li>
+    <li><a>Save</a></li>
+    <li><a>Save as</a></li>
+    <li><a>Print</a></li>
+    </ul></li></ul>
+    <div id="Ribbon"></div> 
+    <script type="text/javascript">   
+    $(function () {
+        $("#Ribbon").ejRibbon({
+    // Set the width during initialization.         
+        width: "100%",
+        applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
+        tabs: [{
+            id: "home", text: "HOME", groups: [{
+                    text: "New", alignType: ej.Ribbon.alignType.rows,content: [{
+                        groups: [{
+                            id: "new",
+                            text: "New",
+                            toolTip: "New",
+                            buttonSettings: {
+                            width: 100,
+                            }
+                        },
+                           {
+                            id: "font",
+                            text: "Font",
+                            toolTip: "Font",
+                            buttonSettings: {
+                            width: 150,
+                            }
+                        }],
+                        defaults: {
+                        type: ej.Ribbon.type.button,
+                        width: 70,
+                        isBig: true
+                    }
+                    }]
+            }]
+            }]
+    });
+    });             
+    </script>  
+
+{% endhighlight %}
+
 ### tabs.groups.content.groups `array`
 {:#members:tabs-groups-content-groups}
 
