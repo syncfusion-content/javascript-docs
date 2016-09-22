@@ -3127,11 +3127,40 @@ Specifies the controls width such as Syncfusion button,split button,dropdown lis
 ### tabs.groups.content.defaults.type `enum`
 {:#members:tabs-groups-content-defaults-type}
 
+<ts name="ej.Ribbon.type"/>
+
 Specifies the controls type such as Syncfusion button,split button,dropdown list,toggle button in the subgroup of  the ribbon tab.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">button</td>
+<td class="description">Specifies the button control</td>
+</tr>
+<tr>
+<td class="name">splitButton</td>
+<td class="description">Specifies the split button</td>
+</tr>
+<tr>
+<td class="name">dropDownList</td>
+<td class="description">Specifies the dropDown</td>
+</tr>
+<tr>
+<td class="name">toggleButton</td>
+<td class="description">Specifies the toggle button</td>
+</tr>
+</tbody>
+</table>
 
 #### Default Value:
 
-* ej.Ribbon.Type.Button
+* ej.Ribbon.type.button
 
 #### Example
 
