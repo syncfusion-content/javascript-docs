@@ -1094,7 +1094,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 Gets or sets a value that indicates to define csvUrl for export to CSV format.
 
-N> User must specify [`allowExporting`](https://help.syncfusion.com/js/api/ejspreadsheet#members:exportsettings-allowexporting "allowExporting") `true` while use this property.
+N> User must specify [`allowExporting`](https://help.syncfusion.com/js/api/ejspreadsheet#members:exportsettings-allowexporting "allowExporting") `true` while using this property.
 
 #### Default Value
 * null
@@ -1119,7 +1119,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 Gets or sets a value that indicates to define excelUrl for export to excel format.
 
-N> User must specify [`allowExporting`](https://help.syncfusion.com/js/api/ejspreadsheet#members:exportsettings-allowexporting "allowExporting") `true` while use this property.
+N> User must specify [`allowExporting`](https://help.syncfusion.com/js/api/ejspreadsheet#members:exportsettings-allowexporting "allowExporting") `true` while using this property.
 
 #### Default Value
 * null
@@ -1144,7 +1144,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 Gets or sets a value that indicates to define password while export to excel format.
 
-N> User must specify [`allowExporting`](https://help.syncfusion.com/js/api/ejspreadsheet#members:exportsettings-allowexporting "allowExporting") `true` while use this property.
+N> User must specify [`allowExporting`](https://help.syncfusion.com/js/api/ejspreadsheet#members:exportsettings-allowexporting "allowExporting") `true` while using this property.
 
 #### Default Value
 * null
@@ -3074,6 +3074,35 @@ $('#Spreadsheet').ejSpreadsheet({
 
 {% endhighlight %}
 
+### sheets.rows.cells.comment.value `String`
+{:#members:sheets-rows-cells-comment-value}
+
+Specifies the value for the comment in Spreadsheet.
+
+#### Default Value:
+
+* "" 
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+    sheets:[{
+        rows:[
+            {
+                cells: [
+                    { value: "Item Name",comment: { value: "Name of the item" , isVisible:true}}
+                ]
+            }
+        ]
+    }]    
+});
+</script>
+
+{% endhighlight %}
+
 ### sheets.rows.cells.format `Object`
 {:#members:sheets-rows-cells-format}
 
@@ -3298,6 +3327,90 @@ $('#Spreadsheet').ejSpreadsheet({
             }
         ]
     }]    
+});
+</script>
+
+{% endhighlight %}
+
+### sheets.rows.cells.style.backgroundColor `String`
+{:#members:sheets-rows-cells-style-backgroundcolor}
+
+Specifies the background color of a cell in the Spreadsheet.
+
+#### Default Value:
+* ""
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+    sheets: [{
+        rows: [
+            {
+                cells: [
+                    { value: "Item Name", style: { "background-color": "#428bca" } }
+                ]
+            }
+        ]
+    }]
+});
+</script>
+
+{% endhighlight %}
+
+### sheets.rows.cells.style.color `String`
+{:#members:sheets-rows-cells-style-color}
+
+Specifies the font color of a cell in the Spreadsheet.
+
+#### Default Value:
+* ""
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+    sheets: [{
+        rows: [
+            {
+                cells: [
+                    { value: "Item Name", style: { "color": "#428bca" } }
+                ]
+            }
+        ]
+    }]
+});
+</script>
+
+{% endhighlight %}
+
+### sheets.rows.cells.style.fontWeight `String`
+{:#members:sheets-rows-cells-style-fontweight}
+
+Specifies the font weight of a cell in the Spreadsheet.
+
+#### Default Value:
+* ""
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+    sheets: [{
+        rows: [
+            {
+                cells: [
+                    { value: "Item Name", style: { "font-weight": "bold" } }
+                ]
+            }
+        ]
+    }]
 });
 </script>
 
@@ -11346,7 +11459,7 @@ $('#Spreadsheet').ejSpreadsheet({
 {% endhighlight %}
 
 ### onImport
-{:#events:onImport}
+{:#events:onimport}
 
 Triggered when a file is imported.
 
