@@ -25983,6 +25983,38 @@ $("#container").ejChart({
 
 
 
+### zooming.enablePinching `boolean`
+{:#members:zooming-enablePinching}
+
+
+
+
+Enables or disables pinch zooming.
+
+
+#### Default Value
+
+* true
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+$("#container").ejChart({
+
+   zooming :{enablePinching :true}          
+
+});
+
+{% endhighlight %}
+
+
+
+
 ### zooming.enableDeferredZoom `boolean`
 {:#members:zooming-enabledeferredzoom}
 
