@@ -5,6 +5,7 @@ description: Toolbar customization of Syncfusion Essential JS PDF viewer.
 platform: js
 control: PDF viewer
 documentation: ug
+keywords: ejPdfViewer
 ---
 
 ## Toolbar Customization
@@ -12,14 +13,13 @@ documentation: ug
 **Customizing default toolbar**
 
 The default toolbar is grouped into the following set of tools.
-
 <table>
 <tr>
 <td>
 {{'**MagnificationTools**'| markdownify }}
 </td>
 <td>
-containing ZoomIn, ZoomOut, Zoom, FitPage and FitWidth tools
+Contains ZoomIn, ZoomOut, Zoom, FitPage and FitWidth tools
 </td>
 </tr>
 <tr>
@@ -27,13 +27,28 @@ containing ZoomIn, ZoomOut, Zoom, FitPage and FitWidth tools
 {{'**NavigationTools**'| markdownify }}
 </td>
 <td>
-containing GoToFirst, GoToLast, GoToNext and GoToLast tools
+Contains GoToFirst, GoToLast, GoToNext and GoToLast tools
+</td>
+</tr>
+<tr>
+<td>
+{{'**PrintTools**'| markdownify }}
+</td>
+<td>
+Contains print tool.
+</td>
+</tr>
+<tr>
+<td>
+{{'**DownloadTool**'| markdownify }}
+</td>
+<td>
+Contains download tool
 </td>
 </tr>
 </table>
 
 The ejPdfViewer has an option to show or hide these grouped items in the default toolbar.  You can hide/display any of these tools by using the toolbarSettings property.
-
 The below code snippet describes how to hide the magnification tools in the widget.
 
 {% highlight javascript %}
@@ -45,7 +60,6 @@ $(function () {
 **Adding Custom toolbar**
 
 The toolbar can be customized as per the application’s needs, by hiding the existing toolbar.
-
 Hide the default toolbar of the ejPdfViewer, by using the below code snippet.
 
 {% highlight javascript %}
@@ -62,15 +76,21 @@ The below code snippet shows how to create a customer toolbar by using the clien
         <!--"-->
         <div id="magnificationDiv" class="toolbarclass" role="toolbar">
             <div class="round-button-circle" style=" position:absolute;top:20px;">
+                <div class=" e-pdfviewer-customtoolbar-print "onclick=" callClientSideMethod('print')"></div>
+            </div>
+              <div class="round-button-circle" style=" position:absolute;top:70px;">
+                <div class=" e-pdfviewer-customtoolbar-download "onclick=" callClientSideMethod('download')"></div>
+            </div>
+            <div class="round-button-circle" style=" position:absolute;top:120px;">
                 <div class=" e-pdfviewer-customtoolbar-zoomin "  onclick=" callClientSideMethod('zoomin')"></div>
             </div>
-            <div class="round-button-circle" style="position:absolute;top:70px;">
+            <div class="round-button-circle" style="position:absolute;top:170px;">
                 <div class="  e-pdfviewer-customtoolbar-zoomout "  onclick="callClientSideMethod('zoomout')"></div>
             </div>
-            <div class="round-button-circle" style="position:absolute;top:120px;">
+            <div class="round-button-circle" style="position:absolute;top:220px;">
                 <div class=" e-pdfviewer-customtoolbar-fitpage "  onclick="callClientSideMethod('fitpage')"></div>
             </div>
-            <div class="round-button-circle" style="position:absolute;top:170px;">
+            <div class="round-button-circle" style="position:absolute;top:270px;">
                 <div class=" e-pdfviewer-customtoolbar-fitwidth "  onclick="callClientSideMethod('fitwidth')"></div>
             </div>
         </div>
@@ -150,6 +170,12 @@ The below code snippet shows how to create a customer toolbar by using the clien
                         break;
                     case 'next':
                         obj.goToNextPage();
+                        break;
+                    case 'print':
+                        obj.print();
+                        break;
+                    case 'download':
+                        obj.download();
                         break;
                 }
             }
@@ -233,12 +259,21 @@ The below code snippet shows how to create a customer toolbar by using the clien
     .e-pdfviewer-customtoolbar-fitwidth:before{
         content: url('../images/pdfviewer/CustomToolbarImages/fitwidth.png');
         }
+    .e-pdfviewer-customtoolbar-print:before{
+        content: url('../images/pdfviewer/CustomToolbarImages/print.png');
+        }
+    .e-pdfviewer-customtoolbar-download:before{
+        content: url('../images/pdfviewer/CustomToolbarImages/download.png');
+        }
+
     .e-pdfviewer-customtoolbar-fitpage:before{
         content: url('../images/pdfviewer/CustomToolbarImages/fitpage.png');
         }
     </style>
 </body>
-
 {% endhighlight %}
+
+
+N> Ensure the icon images available in the referred location for the custom toolbar.
 
 Run the sample. You can view the ejPdfViewer with custom toolbar.
