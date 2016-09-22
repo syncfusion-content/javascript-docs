@@ -1,22 +1,22 @@
 ---
 layout: post
-title: Properties, Methods and Events of ejOlapClient Widget
+title: Properties, Methods and Events of ejPivotClient Widget
 documentation: API
 platform: js
-keywords: ejOlapClient, API, Essential JS OlapClient
+keywords: ejPivotClient, API, Essential JS PivotClient
 metaname: 
 metacontent: 
 ---
 
-# OlapClient
+# PivotClient
 
-OlapClient is an ad hoc analysis tool that can be easily bound to any OLAP datasource to provide a visual presentation of the information retrieved from multidimensional data.
+PivotClient is an ad hoc analysis tool that can be easily bound to any OLAP datasource to provide a visual presentation of the information retrieved from multidimensional data.
 
 #### Syntax
 
 {% highlight javascript %}
 
-$(element).ejOlapClient()
+$(element).ejPivotClient()
 
 {% endhighlight %}
 
@@ -24,11 +24,11 @@ $(element).ejOlapClient()
 
 {% highlight html %}
  
-<div id="OlapClient1"></div> 
+<div id="PivotClient1"></div> 
  
 <script>
-//Create OlapClient
-$("#OlapClient1").ejOlapClient(...);     
+//Create PivotClient
+$("#PivotClient1").ejPivotClient(...);     
 </script>
 
 {% endhighlight %}
@@ -55,20 +55,20 @@ $("#OlapClient1").ejOlapClient(...);
 * module:ej.treeview.js
 * module:ej.tab.js
 * module:ej.chart.js
-* module:ej.olapchart.js
+* module:ej.pivotchart.js
 * module:ej.pivotgrid.js
-* module:ej.olapclient.js
+* module:ej.pivotclient.js
 
 ## Members
 
 ### chartType `enum`
 {:#members:charttype}
 
-<ts name = "ej.olap.OlapChart.ChartTypes"/>
+<ts name = "ej.PivotChart.ChartTypes"/>
 
-Allows the user to set the specific chart type for OlapChart.
+Allows the user to set the specific chart type for PivotChart.
 
-#### Default Value: ej.olap.OlapChart.ChartTypes.Column
+#### Default Value: ej.PivotChart.ChartTypes.Column
 
 <table class="params">
     <thead>
@@ -80,71 +80,71 @@ Allows the user to set the specific chart type for OlapChart.
     <tbody>
         <tr>
             <td class="name">Line</td>
-            <td class="description">To render a Line type for OlapChart.</td>
+            <td class="description">To render a Line type for PivotChart.</td>
         </tr>
         <tr>
             <td class="name">Spline</td>
-            <td class="description">To render a Spline type for OlapChart.</td>
+            <td class="description">To render a Spline type for PivotChart.</td>
         </tr>
         <tr>
             <td class="name">Column</td>
-            <td class="description">To render a Column type for OlapChart.</td>
+            <td class="description">To render a Column type for PivotChart.</td>
         </tr>
         <tr>
             <td class="name">Area</td>
-            <td class="description">To render a Area type for OlapChart.</td>
+            <td class="description">To render a Area type for PivotChart.</td>
         </tr>
         <tr>
             <td class="name">SplineArea</td>
-            <td class="description">To render a SplineArea type for OlapChart.</td>
+            <td class="description">To render a SplineArea type for PivotChart.</td>
         </tr>
         <tr>
             <td class="name">StepLine</td>
-            <td class="description">To render a StepLine type for OlapChart.</td>
+            <td class="description">To render a StepLine type for PivotChart.</td>
         </tr>
         <tr>
             <td class="name">StepArea</td>
-            <td class="description">To render a StepArea type for OlapChart.</td>
+            <td class="description">To render a StepArea type for PivotChart.</td>
         </tr>
         <tr>
             <td class="name">Pie</td>
-            <td class="description">To render a Pie type for OlapChart.</td>
+            <td class="description">To render a Pie type for PivotChart.</td>
         </tr>
         <tr>
             <td class="name">Bar</td>
-            <td class="description">To render a Bar type for OlapChart.</td>
+            <td class="description">To render a Bar type for PivotChart.</td>
         </tr>
         <tr>
             <td class="name">StackingArea</td>
-            <td class="description">To render a StackingArea type for OlapChart.</td>
+            <td class="description">To render a StackingArea type for PivotChart.</td>
         </tr>
         <tr>
             <td class="name">StackingColumn</td>
-            <td class="description">To render a StackingColumn type for OlapChart.</td>
+            <td class="description">To render a StackingColumn type for PivotChart.</td>
         </tr>
         <tr>
             <td class="name">StackingBar</td>
-            <td class="description">To render a StackingBar type for OlapChart.</td>
+            <td class="description">To render a StackingBar type for PivotChart.</td>
         </tr>
         <tr>
             <td class="name">Pyramid</td>
-            <td class="description">To render a Pyramid type for OlapChart.</td>
+            <td class="description">To render a Pyramid type for PivotChart.</td>
         </tr>
         <tr>
             <td class="name">Funnel</td>
-            <td class="description">To render a Funnel type for OlapChart.</td>
+            <td class="description">To render a Funnel type for PivotChart.</td>
         </tr>
         <tr>
             <td class="name">Doughnut</td>
-            <td class="description">To render a Doughnut type for OlapChart.</td>
+            <td class="description">To render a Doughnut type for PivotChart.</td>
         </tr>
         <tr>
             <td class="name">Scatter</td>
-            <td class="description">To render a Scatter type for OlapChart.</td>
+            <td class="description">To render a Scatter type for PivotChart.</td>
         </tr>
         <tr>
             <td class="name">Bubble</td>
-            <td class="description">To render a Bubble type for OlapChart.</td>
+            <td class="description">To render a Bubble type for PivotChart.</td>
         </tr>
     </tbody>
 </table>
@@ -154,29 +154,29 @@ Allows the user to set the specific chart type for OlapChart.
 
 {% highlight html %}
  
-$("#OlapClient1").ejOlapClient({ chartType: ej.olap.OlapChart.ChartTypes.Spline });
+$("#PivotClient1").ejPivotClient({ chartType: ej.PivotChart.ChartTypes.Spline });
 
 {% endhighlight %}
 
 ### clientExportMode `string`
 {:#members:clientexportmode}
 
-Sets the mode to export the OLAP visualization components such as OlapChart and PivotGrid in OlapClient. Based on the option, either Chart or Grid or both gets exported. 
+Sets the mode to export the OLAP visualization components such as PivotChart and PivotGrid in PivotClient. Based on the option, either Chart or Grid or both gets exported. 
 
-#### Default Value: ej.olap.OlapClient.ClientExportMode.ChartAndGrid 
+#### Default Value: ej.PivotClient.ClientExportMode.ChartAndGrid 
 
 **Example:**
 
 {% highlight html %}
  
-$("#OlapClient1").ejOlapClient({ clientExportMode: ej.olap.OlapClient.ClientExportMode.ChartAndGrid });
+$("#PivotClient1").ejPivotClient({ clientExportMode: ej.PivotClient.ClientExportMode.ChartAndGrid });
 
 {% endhighlight %}
 
 ### cssClass `string`
 {:#members:cssclass}
 
-Specifies the CSS class to OlapClient to achieve custom theme.
+Specifies the CSS class to PivotClient to achieve custom theme.
 
 #### Default Value: “”
 
@@ -184,7 +184,7 @@ Specifies the CSS class to OlapClient to achieve custom theme.
 
 {% highlight html %}
  
-$("#OlapClient1").ejOlapClient({ cssClass: "Olive" });
+$("#PivotClient1").ejPivotClient({ cssClass: "Olive" });
 
 {% endhighlight %}
 
@@ -199,7 +199,7 @@ Object utilized to pass additional information between client-end and service-en
 
 {% highlight html %}
  
-$("#OlapClient1").ejOlapClient({ customObject: {"MyObject": "Hi Syncfusion!!"} });
+$("#PivotClient1").ejPivotClient({ customObject: {"MyObject": "Hi Syncfusion!!"} });
 
 {% endhighlight %}
 
@@ -214,18 +214,18 @@ Allows the user to customize the widgets layout and appearance.
 
 {% highlight html %}
  
- $("#OlapClient1").ejOlapClient({ displaySettings: { mode: ej.olap.OlapClient.DisplayMode.Both } });
+ $("#PivotClient1").ejPivotClient({ displaySettings: { mode: ej.PivotClient.DisplayMode.Both } });
  
 {% endhighlight %}
 
 ### displaySettings.controlPlacement `enum`
 {:#members:displaysettings-controlplacement}
 
-<ts name = "ej.olap.OlapClient.ControlPlacement"/>
+<ts name = "ej.PivotClient.ControlPlacement"/>
 
-Let’s the user to customize the display of OlapChart and PivotGrid widgets, either in tab view or in tile view.
+Let’s the user to customize the display of PivotChart and PivotGrid widgets, either in tab view or in tile view.
 
-#### Default Value: ej.olap.OlapClient.ControlPlacement.Tab
+#### Default Value: ej.PivotClient.ControlPlacement.Tab
 
 <table class="params">
     <thead>
@@ -237,11 +237,11 @@ Let’s the user to customize the display of OlapChart and PivotGrid widgets, ei
     <tbody>
         <tr>
             <td class="name">Tab</td>
-            <td class="description">To display OlapChart and PivotGrid widgets in tab view.</td>
+            <td class="description">To display PivotChart and PivotGrid widgets in tab view.</td>
         </tr>
         <tr>
             <td class="name">Tile</td>
-            <td class="description">To display OlapChart and PivotGrid widgets within the same view, one below the other.</td>
+            <td class="description">To display PivotChart and PivotGrid widgets within the same view, one below the other.</td>
         </tr>
     </tbody>
 </table>
@@ -251,18 +251,18 @@ Let’s the user to customize the display of OlapChart and PivotGrid widgets, ei
 
 {% highlight html %}
  
-$("#OlapClient1").ejOlapClient({ displaySettings: {controlPlacement: ej.olap.OlapClient.ControlPlacement.Tab} });
+$("#PivotClient1").ejPivotClient({ displaySettings: {controlPlacement: ej.PivotClient.ControlPlacement.Tab} });
 
 {% endhighlight %}
 
 ### displaySettings.defaultView `enum`
 {:#members:displaysettings-defaultview}
 
-<ts name = "ej.olap.OlapClient.DefaultView"/>
+<ts name = "ej.PivotClient.DefaultView"/>
 
 Let’s the user to set either Chart or Grid as the start-up widget.
 
-#### Default Value: ej.olap.OlapClient.DefaultView.Grid
+#### Default Value: ej.PivotClient.DefaultView.Grid
 
 <table class="params">
     <thead>
@@ -274,11 +274,11 @@ Let’s the user to set either Chart or Grid as the start-up widget.
     <tbody>
         <tr>
             <td class="name">Chart</td>
-            <td class="description">To set OlapChart as a default control in view when the OlapClient widget is loaded for the first time.</td>
+            <td class="description">To set PivotChart as a default control in view when the PivotClient widget is loaded for the first time.</td>
         </tr>
         <tr>
             <td class="name">Grid</td>
-            <td class="description">To set PivotGrid as a default control in view when the OlapClient widget is loaded for the first time.</td>
+            <td class="description">To set PivotGrid as a default control in view when the PivotClient widget is loaded for the first time.</td>
         </tr>
     </tbody>
 </table>
@@ -288,14 +288,14 @@ Let’s the user to set either Chart or Grid as the start-up widget.
 
 {% highlight html %}
  
-$("#OlapClient1").ejOlapClient({ displaySettings: {defaultView: ej.olap.OlapClient.DefaultView.Grid} });
+$("#PivotClient1").ejPivotClient({ displaySettings: {defaultView: ej.PivotClient.DefaultView.Grid} });
 
 {% endhighlight %}
 
 ### displaySettings.enableFullScreen `boolean`
 {:#members:displaysettings-enablefullscreen}
 
-Enables/disables the full screen view of OlapChart and PivotGrid in OlapClient.
+Enables/disables the full screen view of PivotChart and PivotGrid in PivotClient.
 
 #### Default Value: false
 
@@ -303,14 +303,14 @@ Enables/disables the full screen view of OlapChart and PivotGrid in OlapClient.
 
 {% highlight html %}
  
-$("#OlapClient1").ejOlapClient({ displaySettings: { enableFullScreen: true } });
+$("#PivotClient1").ejPivotClient({ displaySettings: { enableFullScreen: true } });
 
 {% endhighlight %}
 
 ### displaySettings.enableTogglePanel `boolean`
 {:#members:displaysettings-enabletogglepanel}
 
-Enhances the space for PivotGrid and OlapChart, by hiding Cube Browser and Axis Element Builder.
+Enhances the space for PivotGrid and PivotChart, by hiding Cube Browser and Axis Element Builder.
 
 #### Default Value: false
 
@@ -318,14 +318,14 @@ Enhances the space for PivotGrid and OlapChart, by hiding Cube Browser and Axis 
 
 {% highlight html %}
  
-$("#OlapClient1").ejOlapClient({ displaySettings: { enableTogglePanel: true } });
+$("#PivotClient1").ejPivotClient({ displaySettings: { enableTogglePanel: true } });
 
 {% endhighlight %}
 
 ### displaySettings.isResponsive `boolean`
 {:#members:displaysettings-isresponsive}
 
-Allows the user to enable OlapClient’s responsiveness in the browser layout.
+Allows the user to enable PivotClient’s responsiveness in the browser layout.
 
 #### Default Value: false
 
@@ -333,18 +333,18 @@ Allows the user to enable OlapClient’s responsiveness in the browser layout.
 
 {% highlight html %}
  
-$("#OlapClient1").ejOlapClient({ displaySettings: { isResponsive: true } });
+$("#PivotClient1").ejPivotClient({ displaySettings: { isResponsive: true } });
 
 {% endhighlight %}
 
 ### displaySettings.mode `enum`
 {:#members:displaysettings-mode}
 
-<ts name = "ej.olap.OlapClient.DisplayMode"/>
+<ts name = "ej.PivotClient.DisplayMode"/>
 
-Sets the display mode (Only Chart/Only Grid/Both) in OlapClient.
+Sets the display mode (Only Chart/Only Grid/Both) in PivotClient.
 
-#### Default Value: ej.olap.OlapClient.DisplayMode.ChartAndGrid
+#### Default Value: ej.PivotClient.DisplayMode.ChartAndGrid
 
 <table class="params">
     <thead>
@@ -356,7 +356,7 @@ Sets the display mode (Only Chart/Only Grid/Both) in OlapClient.
     <tbody>
         <tr>
             <td class="name">ChartOnly</td>
-            <td class="description">To display only OlapChart widget.</td>
+            <td class="description">To display only PivotChart widget.</td>
         </tr>
         <tr>
             <td class="name">GridOnly</td>
@@ -364,7 +364,7 @@ Sets the display mode (Only Chart/Only Grid/Both) in OlapClient.
         </tr>
         <tr>
             <td class="name">ChartAndGrid</td>
-            <td class="description">To display both OlapChart and PivotGrid widgets.</td>
+            <td class="description">To display both PivotChart and PivotGrid widgets.</td>
         </tr>
     </tbody>
 </table>
@@ -374,7 +374,7 @@ Sets the display mode (Only Chart/Only Grid/Both) in OlapClient.
 
 {% highlight html %}
  
-$("#OlapClient1").ejOlapClient({ displaySettings: { mode: ej.olap.OlapClient.DisplayMode.ChartOnly } });
+$("#PivotClient1").ejPivotClient({ displaySettings: { mode: ej.PivotClient.DisplayMode.ChartOnly } });
 
 {% endhighlight %}
 
@@ -389,14 +389,14 @@ Allows the user to refresh the control on-demand and not during every UI operati
 
 {% highlight html %}
  
-$("#OlapClient1").ejOlapClient({ enableDeferUpdate: true });
+$("#PivotClient1").ejPivotClient({ enableDeferUpdate: true });
 
 {% endhighlight %}
 
 ### enableRTL `boolean`
 {:#members:enablertl}
 
-Allows the user to view the layout of OlapClient from right to left.
+Allows the user to view the layout of PivotClient from right to left.
 
 #### Default Value: false
 
@@ -404,7 +404,7 @@ Allows the user to view the layout of OlapClient from right to left.
 
 {% highlight html %}
  
-$("#OlapClient1").ejOlapClient({ enableRTL: true });
+$("#PivotClient1").ejPivotClient({ enableRTL: true });
 
 {% endhighlight %}
 
@@ -419,7 +419,7 @@ Enables/disables the visibility of measure group selector drop-down in Cube Brow
 
 {% highlight html %}
  
-$("#OlapClient1").ejOlapClient({ enableMeasureGroups : true });
+$("#PivotClient1").ejPivotClient({ enableMeasureGroups : true });
 
 {% endhighlight %}
 
@@ -463,7 +463,7 @@ Sets the summary layout for PivotGrid. Following are the ways in which summary c
 
 {% highlight html %}
  
-$("#OlapClient1").ejOlapClient({ gridLayout: ej.PivotGrid.Layout.NoSummaries });
+$("#PivotClient1").ejPivotClient({ gridLayout: ej.PivotGrid.Layout.NoSummaries });
 
 {% endhighlight %}
 
@@ -478,7 +478,7 @@ Allows the user to set the localized language for the widget.
 
 {% highlight html %}
  
-$("#OlapClient1").ejOlapClient({ locale: "en-US" });
+$("#PivotClient1").ejPivotClient({ locale: "en-US" });
 
 {% endhighlight %}
 
@@ -493,7 +493,7 @@ Allows the user to set custom name for the methods at service-end, communicated 
 
 {% highlight html %}
  
-$("#OlapClient1").ejOlapClient({ serviceMethodSettings: {initialize: "MyMethod"} });
+$("#PivotClient1").ejPivotClient({ serviceMethodSettings: {initialize: "MyMethod"} });
  
 {% endhighlight %}
 
@@ -508,12 +508,12 @@ Allows the user to set the custom name for the service method that&rsquo;s respo
 
 {% highlight html %}
  
-$("#OlapClient1").ejOlapClient({ serviceMethodSettings: {cubeChanged: "CubeChangedMyMethod"} });
+$("#PivotClient1").ejPivotClient({ serviceMethodSettings: {cubeChanged: "CubeChangedMyMethod"} });
  
 {% endhighlight %}
 
-### serviceMethodSettings.exportOlapClient `string`
-{:#members:servicemethodsettings-exportolapclient}
+### serviceMethodSettings.exportPivotClient `string`
+{:#members:servicemethodsettings-exportpivotclient}
 
 Allows the user to set the custom name for the service method that’s responsible for exporting.
 
@@ -523,7 +523,7 @@ Allows the user to set the custom name for the service method that’s responsib
 
 {% highlight html %}
  
-$("#OlapClient1").ejOlapClient({ serviceMethodSettings: { exportOlapClient: "Export"} });
+$("#PivotClient1").ejPivotClient({ serviceMethodSettings: { exportPivotClient: "Export"} });
  
 {% endhighlight %}
 
@@ -538,7 +538,7 @@ Allows the user to set the custom name for the service method that&rsquo;s respo
 
 {% highlight html %}
  
-$("#OlapClient1").ejOlapClient({ serviceMethodSettings: {fetchMemberTreeNodes: "FetchMemberTreeNodesMyMethod"} });
+$("#PivotClient1").ejPivotClient({ serviceMethodSettings: {fetchMemberTreeNodes: "FetchMemberTreeNodesMyMethod"} });
  
 {% endhighlight %}
 
@@ -553,7 +553,7 @@ Allows the user to set the custom name for the service method that&rsquo;s respo
 
 {% highlight html %}
                      
-$("#OlapClient1").ejOlapClient({ serviceMethodSettings: {fetchReportList: "FetchReportListFromDBMyMethod"} });
+$("#PivotClient1").ejPivotClient({ serviceMethodSettings: {fetchReportList: "FetchReportListFromDBMyMethod"} });
  
 {% endhighlight %}
 
@@ -568,14 +568,14 @@ Allows the user to set the custom name for the service method that&rsquo;s respo
 
 {% highlight html %}
  
-$("#OlapClient1").ejOlapClient({ serviceMethodSettings: {filterElement: "filterElementMyMethod"} });
+$("#PivotClient1").ejPivotClient({ serviceMethodSettings: {filterElement: "filterElementMyMethod"} });
  
 {% endhighlight %}
 
 ### serviceMethodSettings.initialize `string`
 {:#members:servicemethodsettings-initialize}
 
-Allows the user to set the custom name for the service method that&rsquo;s responsible for initializing OlapClient.
+Allows the user to set the custom name for the service method that&rsquo;s responsible for initializing PivotClient.
 
 #### Default Value: "InitializeClient"
 
@@ -583,7 +583,7 @@ Allows the user to set the custom name for the service method that&rsquo;s respo
 
 {% highlight html %}
  
-$("#OlapClient1").ejOlapClient({ serviceMethodSettings: {initialize: "InitializeClientMyMethod"} });
+$("#PivotClient1").ejPivotClient({ serviceMethodSettings: {initialize: "InitializeClientMyMethod"} });
  
 {% endhighlight %}
 
@@ -598,7 +598,7 @@ Allows the user to set the custom name for the service method that&rsquo;s respo
 
 {% highlight html %}
  
-$("#OlapClient1").ejOlapClient({ serviceMethodSettings: {loadReport: "LoadReportFromDBMyMethod"} });
+$("#PivotClient1").ejPivotClient({ serviceMethodSettings: {loadReport: "LoadReportFromDBMyMethod"} });
  
 {% endhighlight %}
 
@@ -613,7 +613,7 @@ Allows the user to set the custom name for the service method that’s responsib
 
 {% highlight html %}
  
-$("#OlapClient1").ejOlapClient({ serviceMethodSettings: {mdxQuery: "GetMDXQuery"} });
+$("#PivotClient1").ejPivotClient({ serviceMethodSettings: {mdxQuery: "GetMDXQuery"} });
 
 {% endhighlight %}
 
@@ -628,7 +628,7 @@ Allows the user to set the custom name for the service method that&rsquo;s respo
 
 {% highlight html %}
  
-$("#OlapClient1").ejOlapClient({ serviceMethodSettings: {measureGroupChanged: "MeasureGroupChangedMyMethod"} });
+$("#PivotClient1").ejPivotClient({ serviceMethodSettings: {measureGroupChanged: "MeasureGroupChangedMyMethod"} });
  
 {% endhighlight %}
 
@@ -643,7 +643,7 @@ Allows the user to set the custom name for the service method that&rsquo;s respo
 
 {% highlight html %}
  
-$("#OlapClient1").ejOlapClient({ serviceMethodSettings: {memberExpand: "MemberExpandedMyMethod"} });
+$("#PivotClient1").ejPivotClient({ serviceMethodSettings: {memberExpand: "MemberExpandedMyMethod"} });
 
 {% endhighlight %}
 
@@ -658,7 +658,7 @@ Allows the user to set the custom name for the service method that&rsquo;s respo
 
 {% highlight html %}
  
-$("#OlapClient1").ejOlapClient({ serviceMethodSettings: {nodeDropped: "NodeDroppedMyMethod"} });
+$("#PivotClient1").ejPivotClient({ serviceMethodSettings: {nodeDropped: "NodeDroppedMyMethod"} });
  
 {% endhighlight %}
 
@@ -673,7 +673,7 @@ Allows the user to set the custom name for the service method that&rsquo;s respo
 
 {% highlight html %}
  
-$("#OlapClient1").ejOlapClient({ serviceMethodSettings: {removeSplitButton: "RemoveSplitButtonMyMethod"} });
+$("#PivotClient1").ejPivotClient({ serviceMethodSettings: {removeSplitButton: "RemoveSplitButtonMyMethod"} });
  
 {% endhighlight %}
 
@@ -688,7 +688,7 @@ Allows the user to set the custom name for the service method that&rsquo;s respo
 
 {% highlight html %}
  
-$("#OlapClient1").ejOlapClient({ serviceMethodSettings: {saveReport: "SaveReportToDBMyMethod"} });
+$("#PivotClient1").ejPivotClient({ serviceMethodSettings: {saveReport: "SaveReportToDBMyMethod"} });
  
 {% endhighlight %}
 
@@ -703,7 +703,7 @@ Allows the user to set the custom name for the service method that’s responsib
 
 {% highlight html %}
  
-$("#OlapClient1").ejOlapClient({ serviceMethodSettings: {toggleAxis: "ToggleAxis"} });
+$("#PivotClient1").ejPivotClient({ serviceMethodSettings: {toggleAxis: "ToggleAxis"} });
 
 {% endhighlight %}
 
@@ -718,7 +718,7 @@ Allows the user to set the custom name for the service method that&rsquo;s respo
 
 {% highlight html %}
  
-$("#OlapClient1").ejOlapClient({ serviceMethodSettings: {toolbarServices: "ToolbarOperationsMyMethod"} });
+$("#PivotClient1").ejPivotClient({ serviceMethodSettings: {toolbarServices: "ToolbarOperationsMyMethod"} });
  
 {% endhighlight %}
 
@@ -733,14 +733,14 @@ Allows the user to set the custom name for the service method that&rsquo;s respo
 
 {% highlight html %}
  
-$("#OlapClient1").ejOlapClient({  serviceMethodSettings: {updateReport: "UpdateReportFromMyMethod"} });
+$("#PivotClient1").ejPivotClient({  serviceMethodSettings: {updateReport: "UpdateReportFromMyMethod"} });
  
 {% endhighlight %}
 
 ### title `string`
 {:#members:title}
 
-Sets the title for OlapClient widget.
+Sets the title for PivotClient widget.
 
 #### Default Value: null
 
@@ -748,7 +748,7 @@ Sets the title for OlapClient widget.
 
 {% highlight html %}
  
-$("#OlapClient1").ejOlapClient({ title: "OLAP Browser" });
+$("#PivotClient1").ejPivotClient({ title: "OLAP Browser" });
 
 {% endhighlight %}
 
@@ -763,7 +763,7 @@ Connects the service using the specified URL for any server updates.
 
 {% highlight html %}
  
-$("#OlapClient1").ejOlapClient({ url: "/wcf/OlapClientService.svc" });
+$("#PivotClient1").ejPivotClient({ url: "/wcf/OlapClientService.svc" });
 
 {% endhighlight %}
 
@@ -778,13 +778,13 @@ Perform an asynchronous HTTP (AJAX) request.
 
 {% highlight html %}
  
-<div id="OlapClient1"></div> 
+<div id="PivotClient1"></div> 
  
 <script>
-$('#OlapClient1').ejOlapClient({
+$('#PivotClient1').ejPivotClient({
       url: "OlapClientService.svc"
   });
-var clientObj = $("#OlapClient1").data("ejOlapClient");
+var clientObj = $("#PivotClient1").data("ejPivotClient");
 clientObj.doAjaxPost("POST", "/OlapClientService.svc/Initialize", {"key", "Hello World"}, "renderControlSuccess", null);
 </script>
 
@@ -799,13 +799,13 @@ Perform an asynchronous HTTP (FullPost) submit.
 
 {% highlight html %}
 
-<div id="OlapClient1"></div> 
+<div id="PivotClient1"></div> 
  
 <script>
-$('#OlapClient1').ejOlapClient({
+$('#PivotClient1').ejPivotClient({
       url: "OlapClientService.svc"
   });
-var clientObj = $("#OlapClient1").data("ejOlapClient");
+var clientObj = $("#PivotClient1").data("ejPivotClient");
 clientObj.doPostBack("/OlapClientService.svc/Initialize", {"key", "Hello World"});
 </script>
 
@@ -831,7 +831,7 @@ Triggers when it reaches client-side after any AJAX request.
 <tr>
 <td class="name">argument</td>
 <td class="type">Object</td>
-<td class="description last">Event parameters from OlapClient component.
+<td class="description last">Event parameters from PivotClient component.
 <table class="params">
 <thead>
 <tr>
@@ -844,17 +844,17 @@ Triggers when it reaches client-side after any AJAX request.
 <tr>
 <td class="name">action</td>
 <td class="type">string</td>
-<td class="description last">return the current action of OlapClient control.</td>
+<td class="description last">return the current action of PivotClient control.</td>
 </tr>
 <tr>
 <td class="name">customObject</td>
 <td class="type">object</td>
-<td class="description last">return the custom object bounds with OlapClient control.</td>
+<td class="description last">return the custom object bounds with PivotClient control.</td>
 </tr>
 <tr>
 <td class="name">element</td>
 <td class="type">string</td>
-<td class="description last">return the outer HTML of OlapClient control.</td>
+<td class="description last">return the outer HTML of PivotClient control.</td>
 </tr>
 <tr>
 <td class="name">cancel</td>
@@ -863,8 +863,8 @@ Triggers when it reaches client-side after any AJAX request.
 </tr>
 <tr>
 <td class="name">model</td>
-<td class="type"><ts ref="ej.olap.OlapClient.Model"/>object</td>
-<td class="description last">returns the OlapClient model.</td>
+<td class="type"><ts ref="ej.PivotClient.Model"/>object</td>
+<td class="description last">returns the PivotClient model.</td>
 </tr>
 <tr>
 <td class="name">type</td>
@@ -882,7 +882,7 @@ Triggers when it reaches client-side after any AJAX request.
 
 {% highlight html %}
  
-$("#OlapClient1").ejOlapClient({
+$("#PivotClient1").ejPivotClient({
     afterServiceInvoke: function(args) {}
 });
 
@@ -893,7 +893,7 @@ $("#OlapClient1").ejOlapClient({
 ### beforeServiceInvoke
 {:#events:beforeserviceinvoke}
 
-Triggers before any AJAX request is passed from OlapClient to service methods.
+Triggers before any AJAX request is passed from PivotClient to service methods.
 
 <table class="params">
 <thead>
@@ -907,7 +907,7 @@ Triggers before any AJAX request is passed from OlapClient to service methods.
 <tr>
 <td class="name">argument</td>
 <td class="type">Object</td>
-<td class="description last">Event parameters from OlapClient component.
+<td class="description last">Event parameters from PivotClient component.
 <table class="params">
 <thead>
 <tr>
@@ -920,17 +920,17 @@ Triggers before any AJAX request is passed from OlapClient to service methods.
 <tr>
 <td class="name">action</td>
 <td class="type">string</td>
-<td class="description last">return the current action of OlapClient control.</td>
+<td class="description last">return the current action of PivotClient control.</td>
 </tr>
 <tr>
 <td class="name">customObject</td>
 <td class="type">object</td>
-<td class="description last">return the custom object bounds with OlapClient control.</td>
+<td class="description last">return the custom object bounds with PivotClient control.</td>
 </tr>
 <tr>
 <td class="name">element</td>
 <td class="type">string</td>
-<td class="description last">return the outer HTML of OlapClient control.</td>
+<td class="description last">return the outer HTML of PivotClient control.</td>
 </tr>
 <tr>
 <td class="name">cancel</td>
@@ -939,8 +939,8 @@ Triggers before any AJAX request is passed from OlapClient to service methods.
 </tr>
 <tr>
 <td class="name">model</td>
-<td class="type"><ts ref="ej.olap.OlapClient.Model"/>object</td>
-<td class="description last">returns the OlapClient model.</td>
+<td class="type"><ts ref="ej.PivotClient.Model"/>object</td>
+<td class="description last">returns the PivotClient model.</td>
 </tr>
 <tr>
 <td class="name">type</td>
@@ -958,7 +958,7 @@ Triggers before any AJAX request is passed from OlapClient to service methods.
 
 {% highlight html %}
  
-$("#OlapClient1").ejOlapClient({
+$("#PivotClient1").ejPivotClient({
     beforeServiceInvoke: function(args) {}
 });
 
@@ -968,7 +968,7 @@ $("#OlapClient1").ejOlapClient({
 ### chartLoad
 {:#events:chartload}
 
-Triggers before rendering the OlapChart.
+Triggers before rendering the PivotChart.
 
 <table class="params">
 <thead>
@@ -982,7 +982,7 @@ Triggers before rendering the OlapChart.
 <tr>
 <td class="name">argument</td>
 <td class="type">Object</td>
-<td class="description last">Event parameters from OlapChart component.
+<td class="description last">Event parameters from PivotChart component.
 <table class="params">
 <thead>
 <tr>
@@ -995,17 +995,17 @@ Triggers before rendering the OlapChart.
 <tr>
 <td class="name">action</td>
 <td class="type">string</td>
-<td class="description last">return the current action of OlapChart control.</td>
+<td class="description last">return the current action of PivotChart control.</td>
 </tr>
 <tr>
 <td class="name">customObject</td>
 <td class="type">object</td>
-<td class="description last">return the custom object bounds with OlapChart control.</td>
+<td class="description last">return the custom object bounds with PivotChart control.</td>
 </tr>
 <tr>
 <td class="name">element</td>
 <td class="type">string</td>
-<td class="description last">return the outer HTML of OlapChart control.</td>
+<td class="description last">return the outer HTML of PivotChart control.</td>
 </tr>
 <tr>
 <td class="name">cancel</td>
@@ -1014,8 +1014,8 @@ Triggers before rendering the OlapChart.
 </tr>
 <tr>
 <td class="name">model</td>
-<td class="type"><ts ref="ej.olap.OlapClient.Model"/>object</td>
-<td class="description last">returns the OlapChart model.</td>
+<td class="type"><ts ref="ej.PivotClient.Model"/>object</td>
+<td class="description last">returns the PivotChart model.</td>
 </tr>
 <tr>
 <td class="name">type</td>
@@ -1033,7 +1033,7 @@ Triggers before rendering the OlapChart.
 
 {% highlight html %}
  
-$("#OlapClient1").ejOlapClient({
+$("#PivotClient1").ejPivotClient({
    chartLoad: function (args) {}
 });      
 
@@ -1056,7 +1056,7 @@ Triggers while we initiate loading of the widget.
 <tr>
 <td class="name">argument</td>
 <td class="type">Object</td>
-<td class="description last">Event parameters from OlapClient component.
+<td class="description last">Event parameters from PivotClient component.
 <table class="params">
 <thead>
 <tr>
@@ -1069,7 +1069,7 @@ Triggers while we initiate loading of the widget.
 <tr>
 <td class="name">element</td>
 <td class="type">string</td>
-<td class="description last">returns the outer HTML of OlapClient component.</td>
+<td class="description last">returns the outer HTML of PivotClient component.</td>
 </tr>
 <tr>
 <td class="name">cancel</td>
@@ -1078,8 +1078,8 @@ Triggers while we initiate loading of the widget.
 </tr>
 <tr>
 <td class="name">model</td>
-<td class="type"><ts ref="ej.olap.OlapClient.Model"/>object</td>
-<td class="description last">returns the OlapClient model.</td>
+<td class="type"><ts ref="ej.PivotClient.Model"/>object</td>
+<td class="description last">returns the PivotClient model.</td>
 </tr>
 <tr>
 <td class="name">type</td>
@@ -1097,7 +1097,7 @@ Triggers while we initiate loading of the widget.
 
 {% highlight html %}
  
-$("#OlapClient1").ejOlapClient({
+$("#PivotClient1").ejPivotClient({
    load: function (args) {}
 });     
 
@@ -1107,7 +1107,7 @@ $("#OlapClient1").ejOlapClient({
 ### renderComplete
 {:#events:rendercomplete}
 
-Triggers when OlapClient widget completes all operations at client-end after any AJAX request. 
+Triggers when PivotClient widget completes all operations at client-end after any AJAX request. 
 
 <table class="params">
 <thead>
@@ -1121,7 +1121,7 @@ Triggers when OlapClient widget completes all operations at client-end after any
 <tr>
 <td class="name">argument</td>
 <td class="type">Object</td>
-<td class="description last">Event parameters from OlapClient component
+<td class="description last">Event parameters from PivotClient component
 <table class="params">
 <thead>
 <tr>
@@ -1139,7 +1139,7 @@ Triggers when OlapClient widget completes all operations at client-end after any
 <tr>
 <td class="name">element</td>
 <td class="type">string</td>
-<td class="description last">returns the outer HTML of OlapClient control.</td>
+<td class="description last">returns the outer HTML of PivotClient control.</td>
 </tr>
 <tr>
 <td class="name">cancel</td>
@@ -1148,8 +1148,8 @@ Triggers when OlapClient widget completes all operations at client-end after any
 </tr>
 <tr>
 <td class="name">model</td>
-<td class="type"><ts ref="ej.olap.OlapClient.Model"/>object</td>
-<td class="description last">returns the OlapClient model.</td>
+<td class="type"><ts ref="ej.PivotClient.Model"/>object</td>
+<td class="description last">returns the PivotClient model.</td>
 </tr>
 <tr>
 <td class="name">type</td>
@@ -1167,7 +1167,7 @@ Triggers when OlapClient widget completes all operations at client-end after any
 
 {% highlight html %}
  
-$("#OlapClient1").ejOlapClient({
+$("#PivotClient1").ejPivotClient({
    renderComplete: function (args) {}
 });     
 
@@ -1190,7 +1190,7 @@ Triggers when any error occurred during AJAX request.
 <tr>
 <td class="name">argument</td>
 <td class="type">Object</td>
-<td class="description last">Event parameters from OlapClient component
+<td class="description last">Event parameters from PivotClient component
 <table class="params">
 <thead>
 <tr>
@@ -1208,7 +1208,7 @@ Triggers when any error occurred during AJAX request.
 <tr>
 <td class="name">element</td>
 <td class="type">string</td>
-<td class="description last">returns the outer HTML of OlapClient control.</td>
+<td class="description last">returns the outer HTML of PivotClient control.</td>
 </tr>
 <tr>
 <td class="name">message</td>
@@ -1222,8 +1222,8 @@ Triggers when any error occurred during AJAX request.
 </tr>
 <tr>
 <td class="name">model</td>
-<td class="type"><ts ref="ej.olap.OlapClient.Model"/>object</td>
-<td class="description last">returns the OlapClient model.</td>
+<td class="type"><ts ref="ej.PivotClient.Model"/>object</td>
+<td class="description last">returns the PivotClient model.</td>
 </tr>
 <tr>
 <td class="name">type</td>
@@ -1241,7 +1241,7 @@ Triggers when any error occurred during AJAX request.
 
 {% highlight html %}
  
-$("#OlapClient1").ejOlapClient({
+$("#PivotClient1").ejPivotClient({
    renderFailure: function (args) {}
 });     
 
@@ -1250,7 +1250,7 @@ $("#OlapClient1").ejOlapClient({
 ### renderSuccess
 {:#events:rendersuccess}
 
-Triggers when OlapClient successfully reaches client-side after any AJAX request.
+Triggers when PivotClient successfully reaches client-side after any AJAX request.
 
 <table class="params">
 <thead>
@@ -1264,7 +1264,7 @@ Triggers when OlapClient successfully reaches client-side after any AJAX request
 <tr>
 <td class="name">argument</td>
 <td class="type">Object</td>
-<td class="description last">Event parameters from OlapClient component.
+<td class="description last">Event parameters from PivotClient component.
 <table class="params">
 <thead>
 <tr>
@@ -1282,7 +1282,7 @@ Triggers when OlapClient successfully reaches client-side after any AJAX request
 <tr>
 <td class="name">element</td>
 <td class="type">string</td>
-<td class="description last">returns the outer HTML of OlapClient control.</td>
+<td class="description last">returns the outer HTML of PivotClient control.</td>
 </tr>
 <tr>
 <td class="name">cancel</td>
@@ -1291,8 +1291,8 @@ Triggers when OlapClient successfully reaches client-side after any AJAX request
 </tr>
 <tr>
 <td class="name">model</td>
-<td class="type"><ts ref="ej.olap.OlapClient.Model"/>object</td>
-<td class="description last">returns the OlapClient model.</td>
+<td class="type"><ts ref="ej.PivotClient.Model"/>object</td>
+<td class="description last">returns the PivotClient model.</td>
 </tr>
 <tr>
 <td class="name">type</td>
@@ -1310,7 +1310,7 @@ Triggers when OlapClient successfully reaches client-side after any AJAX request
 
 {% highlight html %}
  
-$("#OlapClient1").ejOlapClient({
+$("#PivotClient1").ejPivotClient({
    renderSuccess: function (args) {}
 });      
 
@@ -1323,9 +1323,9 @@ $("#OlapClient1").ejOlapClient({
 ### clientExportMode `enum`
 {:#enum:clientexportmode}
 
-<ts name = "ej.olap.OlapClient.ClientExportMode"/>
+<ts name = "ej.PivotClient.ClientExportMode"/>
 
-Sets the mode to export the OLAP visualization components such as OlapChart and PivotGrid in OlapClient. Based on the option, either Chart or Grid or both gets exported.
+Sets the mode to export the OLAP visualization components such as PivotChart and PivotGrid in PivotClient. Based on the option, either Chart or Grid or both gets exported.
 
 <table class="params">
     <thead>
@@ -1337,11 +1337,11 @@ Sets the mode to export the OLAP visualization components such as OlapChart and 
     <tbody>
         <tr>
             <td class="name">ChartAndGrid</td>
-            <td class="description">To export both PivotGrid and OlapChart contents.</td>
+            <td class="description">To export both PivotGrid and PivotChart contents.</td>
         </tr>
         <tr>
             <td class="name">ChartOnly</td>
-            <td class="description">To export only OlapChart contents.</td>
+            <td class="description">To export only PivotChart contents.</td>
         </tr>
         <tr>
             <td class="name">GridOnly</td>
@@ -1354,16 +1354,16 @@ Sets the mode to export the OLAP visualization components such as OlapChart and 
 
 {% highlight html %}
 
-$("#OlapClient1").ejOlapClient({ clientExportMode: ej.olap.OlapClient.ClientExportMode.ChartAndGrid});
+$("#PivotClient1").ejPivotClient({ clientExportMode: ej.PivotClient.ClientExportMode.ChartAndGrid});
 
 {% endhighlight %}
 
 ### ControlPlacement  `enum`
 {:#enum:controlplacement}
 
-<ts name = "ej.olap.OlapClient.ControlPlacement"/>
+<ts name = "ej.PivotClient.ControlPlacement"/>
 
-Allow the user to customize the display of OlapChart and PivotGrid widgets, either in tab view or tile view.
+Allow the user to customize the display of PivotChart and PivotGrid widgets, either in tab view or tile view.
 
 <table class="params">
     <thead>
@@ -1375,11 +1375,11 @@ Allow the user to customize the display of OlapChart and PivotGrid widgets, eith
     <tbody>
         <tr>
             <td class="name">Tab</td>
-            <td class="description">To display OlapChart and PivotGrid widgets in tab view.</td>
+            <td class="description">To display PivotChart and PivotGrid widgets in tab view.</td>
         </tr>
         <tr>
             <td class="name">Tile</td>
-            <td class="description">To display OlapChart and PivotGrid widgets within the same view, one below the other.</td>
+            <td class="description">To display PivotChart and PivotGrid widgets within the same view, one below the other.</td>
         </tr>
     </tbody>
 </table>
@@ -1389,7 +1389,7 @@ Allow the user to customize the display of OlapChart and PivotGrid widgets, eith
 
 {% highlight html %}
 
-$("#OlapClient1").ejOlapClient({ displaySettings: {controlPlacement: ej.olap.OlapClient.ControlPlacement.Tab} });
+$("#PivotClient1").ejPivotClient({ displaySettings: {controlPlacement: ej.PivotClient.ControlPlacement.Tab} });
 
 {% endhighlight %}
 
@@ -1397,9 +1397,9 @@ $("#OlapClient1").ejOlapClient({ displaySettings: {controlPlacement: ej.olap.Ola
 ### DisplayMode  `enum`
 {:#enum:displaymode}
 
-<ts name = "ej.olap.OlapClient.DisplayMode"/>
+<ts name = "ej.PivotClient.DisplayMode"/>
 
-Sets the display mode to view only Chart or only Grid or both in OlapClient.
+Sets the display mode to view only Chart or only Grid or both in PivotClient.
 
 <table class="params">
     <thead>
@@ -1411,7 +1411,7 @@ Sets the display mode to view only Chart or only Grid or both in OlapClient.
     <tbody>
         <tr>
             <td class="name">ChartOnly</td>
-            <td class="description">To display only OlapChart widget.</td>
+            <td class="description">To display only PivotChart widget.</td>
         </tr>
         <tr>
             <td class="name">GridOnly</td>
@@ -1419,7 +1419,7 @@ Sets the display mode to view only Chart or only Grid or both in OlapClient.
         </tr>
         <tr>
             <td class="name">ChartAndGrid</td>
-            <td class="description">To display both OlapChart and PivotGrid widgets.</td>
+            <td class="description">To display both PivotChart and PivotGrid widgets.</td>
         </tr>
     </tbody>
 </table>
@@ -1429,14 +1429,14 @@ Sets the display mode to view only Chart or only Grid or both in OlapClient.
 
 {% highlight html %}
 
-$("#OlapClient1").ejOlapClient({ displaySettings: { mode: ej.olap.OlapClient.DisplayMode.ChartOnly } });
+$("#PivotClient1").ejPivotClient({ displaySettings: { mode: ej.PivotClient.DisplayMode.ChartOnly } });
 
 {% endhighlight %}
 
 ### DefaultView `enum`
 {:#enum:defaultview}
 
-<ts name = "ej.olap.OlapClient.DefaultView"/>
+<ts name = "ej.PivotClient.DefaultView"/>
 
 Allows the user to set either Chart or Grid as the start-up widget.
 
@@ -1450,11 +1450,11 @@ Allows the user to set either Chart or Grid as the start-up widget.
     <tbody>
         <tr>
             <td class="name">Chart</td>
-            <td class="description">To set OlapChart as a default control in view when the OlapClient widget is loaded for the first time.</td>
+            <td class="description">To set PivotChart as a default control in view when the PivotClient widget is loaded for the first time.</td>
         </tr>
         <tr>
             <td class="name">Grid</td>
-            <td class="description">To set PivotGrid as a default control in view when the OlapClient widget is loaded for the first time.</td>
+            <td class="description">To set PivotGrid as a default control in view when the PivotClient widget is loaded for the first time.</td>
         </tr>
     </tbody>
 </table>
@@ -1463,7 +1463,7 @@ Allows the user to set either Chart or Grid as the start-up widget.
 
 {% highlight html %}
 
-$("#OlapClient1").ejOlapClient({ displaySettings: {defaultView: ej.olap.OlapClient.DefaultView.Grid} });
+$("#PivotClient1").ejPivotClient({ displaySettings: {defaultView: ej.PivotClient.DefaultView.Grid} });
 
 {% endhighlight %}
 
