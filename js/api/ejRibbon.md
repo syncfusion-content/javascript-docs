@@ -271,6 +271,120 @@ When set to true, adapts the Ribbon layout to fit the screen size of devices on 
 
 {% endhighlight %}
 
+### isMobileOnly `boolean`
+{:#members:ismobileonly}
+
+When isMobileOnly is true,its shows in mobile toolbar.
+
+#### Default Value
+
+* false
+
+#### Example
+
+{% highlight html %}
+ 
+    <div id="defaultRibbon"></div>
+    <script type="text/javascript">
+        $(function () {
+            $("#defaultRibbon").ejRibbon({
+                width: "100%",
+                allowResizing: true,
+                groupClick: function (args) {
+                    if ($(args.target).hasClass("e-ribGroupContent") && args.targetElement == "resizedGroup")
+                        this.goToMainContent();
+                },
+                tabs: [{
+                    id: "home", text: "HOME", groups: [ {
+                        text: "Font", alignType: "rows", content: [{
+                            groups: [{
+                                id: "bold",
+                                type: ej.Ribbon.Type.ToggleButton,
+                                isMobileOnly: true,
+                                toggleButtonSettings: {
+                                    contentType: ej.ContentType.ImageOnly,
+                                    defaultText: "Bold",
+                                    activeText: "Bold",
+                                    defaultPrefixIcon: "e-icon e-ribbon e-resbold",
+                                    activePrefixIcon: "e-icon e-ribbon e-resbold",
+                                    click: "executeAction"
+                                }
+                            },
+                               {
+                                   id: "italic",
+                                   type: ej.Ribbon.Type.ToggleButton,
+                                   isMobileOnly: true,
+                                   toggleButtonSettings: {
+                                       contentType: ej.ContentType.ImageOnly,
+                                       defaultText: "Italic",
+                                       activeText: "Italic",
+                                       defaultPrefixIcon: "e-icon e-ribbon e-resitalic",
+                                       activePrefixIcon: "e-icon e-ribbon e-resitalic",
+                                       click: "executeAction"
+                                   }
+                               },
+                               {
+                                   id: "underline",
+                                   text: "Underline",
+                                   type: ej.Ribbon.Type.ToggleButton,
+                                   isMobileOnly: true,
+                                   toggleButtonSettings: {
+                                       contentType: ej.ContentType.ImageOnly,
+                                       defaultText: "Underline",
+                                       activeText: "Underline",
+                                       defaultPrefixIcon: "e-icon e-ribbon e-resunderline",
+                                       activePrefixIcon: "e-icon e-ribbon e-resunderline",
+                                       click: "executeAction"
+                                   }
+                               },
+                               {
+                                   id: "strikethrough",
+                                   text: "strikethrough",
+                                   isMobileOnly: true,
+                                   type: ej.Ribbon.Type.ToggleButton,
+                                   toggleButtonSettings: {
+                                       contentType: ej.ContentType.ImageOnly,
+                                       defaultText: "Strikethrough",
+                                       activeText: "Strikethrough",
+                                       defaultPrefixIcon: "e-icon e-ribbon strikethrough",
+                                       activePrefixIcon: "e-icon e-ribbon strikethrough",
+                                       click: "executeAction"
+                                   }
+                               },
+                               {
+                                   id: "superscript",
+                                   text: "superscript",
+                                   isMobileOnly: true,
+                                   buttonSettings: {
+                                       contentType: ej.ContentType.ImageOnly,
+                                       prefixIcon: "e-icon e-ribbon e-superscripticon",
+                                       click: "executeAction"
+                                   }
+                               }
+                            ],
+                            defaults: {
+                                isBig: false
+                            }
+                        }, ]
+                    },
+				]
+                },
+			],
+                create: "createControl",
+            });
+        });
+    </script>
+    <style>
+        .e-ribbon .e-Font:before {
+            font-family: 'ej-ribbonfont';
+            content: "\e90e";
+            top: 7px !important;
+            text-indent: -2px;
+        }
+    </style>
+
+{% endhighlight %}
+
 ### buttonDefaults `object`
 {:#members:buttondefaults}
 
@@ -10175,6 +10289,82 @@ Triggered when the ribbon control is expanded.
              }]
          }],
          expand: function(args) {}
+     });
+    });       
+    </script>  
+
+{% endhighlight %}
+
+### load
+{:#events:load}
+
+Triggered before the ribbon control is load.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">Set to true when the event has to be canceled, else false.</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the ribbon model.</td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the name of the event.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+ 
+    <ul id="menu">
+    <li><a>FILE </a>
+    <ul>
+    <li><a>New</a></li>
+    <li><a>Open</a></li>
+    <li><a>Save</a></li>
+    <li><a>Save as</a></li>
+    <li><a>Print</a></li>
+    </ul></li></ul>
+    <div id="Ribbon"></div> 
+    <button id="btn">Home button</button>
+    <script type="text/javascript">   
+    $(function() {
+     $("#Ribbon").ejRibbon({
+         // Set the width during initialization.         
+         width: "100%",
+         applicationTab: {
+             type: ej.Ribbon.applicationTabType.menu,
+             menuItemID: "menu",
+             menuSettings: {
+                 openOnClick: false
+             }
+         },
+         tabs: [{
+             id: "home",
+             text: "HOME",
+             groups: [{
+                 text: "New",
+                 alignType: ej.Ribbon.alignType.rows,
+                 type: "custom",
+                 contentID: "btn"
+             }]
+         }],
+         load: function(args) {}
      });
     });       
     </script>  
