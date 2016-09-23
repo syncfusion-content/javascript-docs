@@ -997,7 +997,7 @@ Specifies the leftLabel text for legend
 {% endhighlight %}
 
 ### legendSettings.rightLabel `string`
-{:#members:legendsettings-leftlabel}
+{:#members:legendsettings-rightlabel}
 
 Specifies the rightLabel text for legend
 
