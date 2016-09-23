@@ -271,7 +271,7 @@ The below code snippet shows the service accessed from remote server.
 {% endhighlight %}
 
 
-### hyperlinkOpenState ‘enum’
+### hyperlinkOpenState `enum`
 
 {:#members:hyperlinkopenstate}
 
@@ -335,7 +335,7 @@ The below code snippet shows the hyperlink opened in a new tab.
 {% endhighlight %}
 
 
-#### enableHyperlink ‘Boolean’
+#### enableHyperlink `boolean`
 
 Enable or Disable the hyperlinks in PDF Document.
 
@@ -373,7 +373,7 @@ Enables or disables the responsive support for PDF Viewer control during the win
 {% endhighlight %}
 
 
-### fileName ‘String’
+### fileName `string`
 
 {:#members:filename}
 
@@ -443,7 +443,7 @@ pdfviewerObj.abortPrint();
 {% endhighlight %}
 
 
-### showPrintTools(show) ‘Boolean’
+### showPrintTools(show) `boolean`
 
 Shows/hides the print icon in the tool bar.
 
@@ -467,7 +467,7 @@ pdfviewerObj.download();
 {% endhighlight %}
 
 
-### showDownloadTool(show) ‘Boolean’
+### showDownloadTool(show) `boolean`
 
 Shows/hides the download tool in the tool bar.
 
