@@ -343,7 +343,41 @@ Specified a selector for elements, within the container.
 </style>
 
 {% endhighlight %}
-  
+
+
+### appendTo `string`
+{:#members:appendto} 
+
+Waitingpopup element append to given container element. 
+
+#### Default Value 
+
+* null
+ 
+#### Example
+ 
+{% highlight html %}
+ 
+ <div id="waiting"></div>
+<script>
+//To set target API value during initialization  
+        $("#waiting").ejWaitingPopup({ showOnInit: true,appendTo: "body"});
+</script>
+<style>
+              #target {
+            height: 200px;
+            width: 600px;
+            margin: 0 auto;
+        }
+
+       #target_WaitingPopup .e-image {
+            display: block;
+            height: 70px;
+        }
+</style>
+
+{% endhighlight %}
+
 ### template `object`
 {:#members:template}
 
