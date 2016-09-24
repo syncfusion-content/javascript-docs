@@ -1500,7 +1500,7 @@ $("#slider").ejSlider("getValue");
 
 
 
-### setValue(value)
+### setValue(value ,[enableAnimation])
 {:#methods:setValue}
 
 
@@ -1510,7 +1510,7 @@ $("#slider").ejSlider("getValue");
 
 
 
-To set value to slider handle
+To set value to slider handle.By defaut animation is false while set the value. If you want to enable the animation, pass the `enableAnimation` as true to this method. 
 
 
 
@@ -1528,6 +1528,19 @@ $("#slider").ejSlider();
 // Create slider control object
 var sliderObj = $("#slider").data("ejSlider");
 sliderObj.setValue(10); // set value to the slider handle
+</script>
+                 
+  {% endhighlight %}
+  
+  
+  {% highlight html %}
+ 
+<div id="slider"> </div> 
+<script>
+$("#slider").ejSlider();
+// Create slider control object
+var sliderObj = $("#slider").data("ejSlider");
+sliderObj.setValue(30, true); // enable the slider animation 
 </script>
                  
   {% endhighlight %}
