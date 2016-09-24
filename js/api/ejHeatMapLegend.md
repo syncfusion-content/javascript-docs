@@ -310,7 +310,7 @@ specifies the text value of the heatmap legend label.
 ### colorMappingCollection.label.textDecoration `enum`
 {:#members:colorMappingCollection-label-textDecoration}
 
-<ts ref = "ej.datavisualization.HeatMap.TextDecoration "/>
+<ts ref = "ej.datavisualization.HeatMap.TextDecoration"/>
 
 Specifies the text style of the heatmap legend label.
 
