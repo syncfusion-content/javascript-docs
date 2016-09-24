@@ -849,7 +849,7 @@ Its used to add specific default context menu items.
             },
             contextMenuSettings: {
                 enable: true,
-                menuItems:[{ menuItem: "Move Right"},{menuItem: "Move Left"  }],
+                menuItems:["Move Right","Move Left"],
             }
         });
     });
@@ -5108,7 +5108,7 @@ Gets or sets a value that indicates whether to customizing the user interface (U
         SaveButton: "Speichern",
         CancelButton: "stornieren",
         EditFormTitle: "Details von ",
-        AddFormTitle: "Neue Karte hinzufÃ¼gen",
+        AddFormTitle: "Neue Karte hinzufügen",
         SwimlaneCaptionFormat: "- {{:count}}{{if count == 1 }} Artikel {{else}} Artikel {{/if}}",
         FilterSettings: "Filter:",
         FilterOfText: "Von",
