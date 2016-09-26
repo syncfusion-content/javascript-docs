@@ -788,7 +788,7 @@ $("#sbutton").ejSplitButton({targetID: "target",width:100,contentType: "imageonl
 
 
 
-### showRoundedCorner `string`
+### showRoundedCorner `boolean`
 {:#members:showroundedcorner}
 
 
