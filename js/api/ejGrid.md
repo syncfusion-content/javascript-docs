@@ -7224,7 +7224,7 @@ Number
 // Create grid object.
 var gridObj = $("#Grid").data("ejGrid");
 var summaryCol = { summaryType: ej.Grid.SummaryType.Average, displayColumn: "Freight", dataMember: "Freight" };
-// Gets the names of all the visible column collections
+// Get the calculated summary values of JSON data passed to it
 gridObj.getSummaryValues(summaryCol, window.gridData); 
 </script>{% endhighlight %}
 
@@ -7232,7 +7232,7 @@ gridObj.getSummaryValues(summaryCol, window.gridData);
 {% highlight html %}
  
 <script>
-// Gets the names of all the visible column collections
+// Get the calculated summary values of JSON data passed to it
 $("#Grid").ejGrid("getSummaryValues", summaryCol, window.gridData);        
 </script>{% endhighlight %}
 
