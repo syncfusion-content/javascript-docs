@@ -305,7 +305,7 @@ fields: { text: "text" , url:"url",frequency: "frequency"}
 
 
 
-### fields.frequency `number`
+### fields.frequency `string`
 {:#members:fields-frequency}
 
 
@@ -315,7 +315,7 @@ fields: { text: "text" , url:"url",frequency: "frequency"}
 
 
 
-Defines the frequency number to categorize the font size.
+Defines the frequency column number to categorize the font size.
 
 
 
@@ -327,7 +327,7 @@ Defines the frequency number to categorize the font size.
 
 
 
-### fields.htmlAttributes `object`
+### fields.htmlAttributes `string`
 {:#members:fields-htmlattributes}
 
 
@@ -337,7 +337,7 @@ Defines the frequency number to categorize the font size.
 
 
 
-Defines the HTML attributes for the anchor elements inside the each tag items.
+Defines the HTML attributes column for the anchor elements inside the each tag items.
 
 
 
