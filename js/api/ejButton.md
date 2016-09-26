@@ -783,7 +783,7 @@ Submit</td>
 
 
 
-### width `string`
+### width `string | number`
 {:#members:width}
 
 

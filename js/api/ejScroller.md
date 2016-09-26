@@ -443,7 +443,7 @@ It can also send commands to the model to update the model's state (e.g., editin
 
 
 
-### height `number`
+### height `number|string`
 {:#members:height}
 
 
@@ -749,7 +749,7 @@ It can also send commands to the model to update the model's state (e.g., editin
 
 
 
-### width `number`
+### width `number|string`
 {:#members:width}
 
 
