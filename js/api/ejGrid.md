@@ -3680,7 +3680,7 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### scrollSettings.height `Number`
+### scrollSettings.height `String|Number`
 {:#members:scrollsettings-height}
 
 This specify the grid to show the vertical scroll bar, to scroll and view the grid contents.
@@ -3741,7 +3741,7 @@ $("#Grid").ejGrid({
 {% endhighlight %}
 
 ### scrollSettings.enableVirtualization `Boolean`
-{:#members:scrollsettings-enableVirtualization}
+{:#members:scrollsettings-enablevirtualization}
 
 This is used to enable the enhanced virtual scrolling in Grid.
 
@@ -3762,7 +3762,7 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### scrollSettings.width `Number`
+### scrollSettings.width `String|Number`
 {:#members:scrollsettings-width}
 
 This specify the grid to show the horizontal scroll bar, to scroll and view the grid contents
