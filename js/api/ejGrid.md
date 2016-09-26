@@ -2902,35 +2902,6 @@ $("#Grid").ejGrid({
 </script>
 {% endhighlight %}
 
-### mediaSettings `Object`
-{:#members:mediasettings}
-
-Gets or sets an object that indicates whether to modify the media query default configuration.
-
-### mediaSettings.phone `Number`
-{:#members:mediaSettings-phone}
-
-Gets or sets a value that indicates whether the grid rows has to be rendered as detail view in mobile mode while enableResponsiveRow property is set as true and also need to set same value for max-width in ejgrid.responsive.css file
-
-#### Default Value:
-{:.param}
-* 320
-
-#### Example
-{:.example}
-{% highlight html %}
-<div id="Grid"></div> 
-<script>
-$("#Grid").ejGrid({
-    dataSource:  window.gridData,
-    allowPaging: true, 
-    isResponsive: true,
-    enableResponsiveRow: true, 
-    mediaSettings: { phone: 340 }
-});
-</script>
-{% endhighlight %}
-
 ### pageSettings `Object`
 {:#members:pagesettings}
 
