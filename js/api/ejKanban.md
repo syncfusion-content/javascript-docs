@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Properties, Methods and Events of ejKanban Widget
 description: Members,Methods,Events available in ejKanban
@@ -5108,7 +5108,7 @@ Gets or sets a value that indicates whether to customizing the user interface (U
         SaveButton: "Speichern",
         CancelButton: "stornieren",
         EditFormTitle: "Details von ",
-        AddFormTitle: "Neue Karte hinzuf�gen",
+        AddFormTitle: "Neue Karte hinzufügen",
         SwimlaneCaptionFormat: "- {{:count}}{{if count == 1 }} Artikel {{else}} Artikel {{/if}}",
         FilterSettings: "Filter:",
         FilterOfText: "Von",
