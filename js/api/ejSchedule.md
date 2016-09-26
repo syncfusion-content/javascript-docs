@@ -2844,14 +2844,14 @@ A unique resource name that is used for differentiating various resource objects
 {% endhighlight %}
 
 
-### resources.allowMultiple `string`
+### resources.allowMultiple `boolean`
 {:#members:resources-allowmultiple}
 
 When set to true, allows multiple selection of resource names, thus creating multiple instances of same appointment for the selected resources.
 
 #### Default Value
 
-* null
+* false
 
 #### Example - To set allowMultiple option for a resource object.
 
@@ -7110,7 +7110,7 @@ $("#Schedule").ejSchedule({
 ### create
 {:#events:create}
 
-Triggered when the scheduler is rendered completely.
+Triggers when the Scheduler completely renders on the page.
 
 <table class="params">
     <thead>
@@ -7157,7 +7157,7 @@ $("#Schedule").ejSchedule({
 ### destroy
 {:#events:destroy}
 
-Triggered when scheduler going to destroy.
+Triggers when the Scheduler and all its sub-components gets destroyed.
 
 <table class="params">
     <thead>
