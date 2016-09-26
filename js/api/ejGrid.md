@@ -7182,6 +7182,60 @@ gridObj.getSelectedRecords();
 $("#Grid").ejGrid("getSelectedRecords");        
 </script>{% endhighlight %}
 
+### getSummaryValues(summaryCol, summaryData)
+{:#methods:getsummaryvalues}
+
+Get the calculated summary values of JSON data passed to it
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">summaryCol</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Pass Summary Column details</td>
+</tr>
+<tr>
+<td class="name">summaryData</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Pass JSON Array for which its field values to be calculated</td>
+</tr>
+</tbody>
+</table>
+
+#### Returns:
+{:#methods:returns:}
+
+Number
+
+####Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<script>
+// Create grid object.
+var gridObj = $("#Grid").data("ejGrid");
+var summaryCol = { summaryType: ej.Grid.SummaryType.Average, displayColumn: "Freight", dataMember: "Freight" };
+// Get the calculated summary values of JSON data passed to it
+gridObj.getSummaryValues(summaryCol, window.gridData); 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
+// Get the calculated summary values of JSON data passed to it
+$("#Grid").ejGrid("getSummaryValues", summaryCol, window.gridData);        
+</script>{% endhighlight %}
+
 
 ### getVisibleColumnNames()
 {:#methods:getvisiblecolumnnames}
