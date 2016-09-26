@@ -1913,10 +1913,6 @@ Add a comment to this line
 <td class="description">Edit mode is normal.</td>
 </tr>
 <tr>
-<td class="name">Clip</td>
-<td class="description">Truncate the text in the cell</td>
-</tr> 
-<tr>
 <td class="name">Dialog</td>
 <td class="description">Edit mode is dialog.</td>
 </tr>  
@@ -3223,16 +3219,20 @@ Gets or sets an object that indicates whether to modify the resizing behaviour.
 <ts name="ej.Grid.ResizeMode"/>
 
 Gets or sets a value that indicates whether to define the mode of resizing.
-Accepting types are "nextcolumn" and "control".
+Accepting types are "normal", "nextcolumn" and "control".
 
 #### Default Value:
 {:.param}
-* ej.Grid.ResizeMode.NextColumn
+* ej.Grid.ResizeMode.Normal
 
 <table>
 <tr>
 <th>Name</th>
 <th>Description</th>
+</tr>
+<tr>
+<td class="name">Normal</td>
+<td class="description">New column size will be adjusted by all other Columns</td>
 </tr>
 <tr>
 <td class="name">NextColumn</td>
@@ -4786,6 +4786,8 @@ $("#Grid").ejGrid({
 
 ### toolbarSettings.toolbarItems `Array`
 {:#members:toolbarsettings-toolbaritems}
+
+<ts name="ej.Grid.ToolBarItems"/>
 
 Gets or sets a value that indicates whether to add the default editing actions as a toolbar items
 
