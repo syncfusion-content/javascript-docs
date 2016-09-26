@@ -7185,7 +7185,7 @@ $("#Grid").ejGrid("getSelectedRecords");
 ### getSummaryValues(summaryCol, summaryData)
 {:#methods:getsummaryvalues}
 
-Get the calculated summary values of json data passed to it
+Get the calculated summary values of JSON data passed to it
 
 <table class="params">
 <thead>
@@ -7233,7 +7233,7 @@ gridObj.getSummaryValues(summaryCol, window.gridData);
  
 <script>
 // Gets the names of all the visible column collections
-$("#Grid").ejGrid("getVisibleColumnNames", summaryCol, window.gridData);        
+$("#Grid").ejGrid("getSummaryValues", summaryCol, window.gridData);        
 </script>{% endhighlight %}
 
 
