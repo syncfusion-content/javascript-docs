@@ -173,7 +173,7 @@ _BINOM.DIST (trial number,sp,value, cumulative)_
 
 
 
-The `Bino.Inv` function returns the smallest value for which the cumulative binomial distribution is greater than or equal to a criterion value.
+The `Binom.Inv` function returns the smallest value for which the cumulative binomial distribution is greater than or equal to a criterion value.
 
 
 
