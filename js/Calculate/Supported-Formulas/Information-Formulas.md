@@ -478,7 +478,7 @@ _MATCH(lookup_value, lookup_array, [match_type])_
 
 
 
-* match_type specifies how Excel matches looup_value with values in lookup_array. The default value for this argument is 1.
+* match_type specifies how Excel matches lookup_value with values in lookup_array. The default value for this argument is 1.
  
   <table>
 
