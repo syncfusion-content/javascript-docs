@@ -1326,6 +1326,30 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
+### columns.priority `Number`
+{:#members:columns-priority}
+
+Gets or sets a value that indicates the order of Column that are to be hidden or visible when Grid element is in responsive mode and could not occupy all columns. 
+
+#### Default Value:
+{:.param}
+* null
+
+#### Example
+{:.example}
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
+$("#Grid").ejGrid({             
+  dataSource:window.gridData,
+  editSettings:{allowEditing:true},
+  isResponsive: true,
+  minWidth: 400,
+  columns:[{field:"OrderID",isPrimaryKey:true},{field:"CustomerID", priority: 2},{field:"ShipCity", priority: 1}]
+});
+</script> 
+{% endhighlight %}
+
 ### columns.showInColumnChooser `Boolean`
 {:#members:columns-showincolumnchooser}
 
@@ -3508,10 +3532,8 @@ $("#Grid").ejGrid({
 </script>
 {% endhighlight %}
 
-### selectionSettings.selectionMode `enum`
+### selectionSettings.selectionMode `Array`
 {:#members:selectionsettings-selectionmode}
-
-<ts name="ej.Grid.SelectionMode"/>
 
 Gets or sets a value that indicates whether to add the default selection actions as a selection mode.See selectionMode
 
