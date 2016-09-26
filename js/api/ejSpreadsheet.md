@@ -1566,7 +1566,7 @@ N>[`showRibbon`](https://help.syncfusion.com/js/api/ejspreadsheet#members:showri
 ### ribbonSettings.applicationTab.type `Enum`
 {:#members:ribbonsettings-applicationtab-type}
 
-<ts name="ej.Ribbon.ApplicationTabType"/>
+<ts ref="ej.Ribbon.ApplicationTabType"/>
 
 Gets or sets a value that indicates to set application tab type in Spreadsheet. It has two types, Menu and Backstage.
 
@@ -4665,7 +4665,7 @@ $("#Spreadsheet").ejSpreadsheet("getFrozenColumns", 1);
 ### getFrozenRows(sheetIdx)
 {:#methods:getfrozenrows}
 
-This method is used to get the frozen rowâ€™s index in Spreadsheet.
+This method is used to get the frozen row’s index in Spreadsheet.
 <table class="params">
 <thead>
 <tr>
