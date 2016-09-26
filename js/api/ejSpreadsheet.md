@@ -8911,6 +8911,23 @@ xlObj.XLRibbon.removeNamedRange("PRICE_LIST");
 
 {% endhighlight %}
 
+### XLRibbon.updateRibbonIcons()
+{:#methods:xlribbon-updateribbonicons}
+
+This method is used to update the ribbon icons in the Spreadsheet.
+
+#### Example
+
+{% highlight html %}
+<script>
+//initialize the Spreadsheet object
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+// To update the ribbon icons in the spreadsheet based on the active sheet index.
+xlObj.XLRibbon.updateRibbonIcons();
+</script>
+
+{% endhighlight %}
+
 ### XLSearch
 {:#methods:xlsearch}
 
