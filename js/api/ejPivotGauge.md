@@ -283,6 +283,51 @@ $("#PivotGauge1").ejPivotGauge({dataSource: {rows: [{ fieldCaption : value}]}});
 
 {% endhighlight %}
 
+### dataSource.rows.filterItems `object`
+{:#members:datasource-rows-filterItems}
+
+Allows the user to set the filtering values name for an item.
+
+#### Default Value: null
+
+**Example:**
+
+{% highlight html %}
+ 
+$("#PivotGauge1").ejPivotGauge({dataSource: {rows: [{ filterItems : value}]}});
+
+{% endhighlight %}
+
+### dataSource.rows.filterItems.filterType `string`
+{:#members:datasource-rows-filterItems-filterType}
+
+Allows the user to set the type of filtering for an item.
+
+#### Default Value: "exclude"
+
+**Example:**
+
+{% highlight html %}
+ 
+$("#PivotGauge1").ejPivotGauge({dataSource: {rows: [{ filterItems : {filterType: "include"}}]}});
+
+{% endhighlight %}
+
+### dataSource.rows.filterItems.values `array`
+{:#members:datasource-rows-filterItems-values}
+
+Allows the user to set the values for filtering an item.
+
+#### Default Value: []
+
+**Example:**
+
+{% highlight html %}
+ 
+$("#PivotGauge1").ejPivotGauge({dataSource: {rows: [{ filterItems : {values: itemsArray}}]}});
+
+{% endhighlight %}
+
 ### dataSource.rows.isNamedSets `boolean`
 {:#members:datasource-rows-isnamedsets}
 
@@ -481,60 +526,18 @@ $("#PivotGauge1").ejPivotGauge({ isResponsive: true });
 
 {% endhighlight %}
 
-### labelFormatSettings `enum`
+### labelFormatSettings `object`
 {:#members:labelformatsettings}
-
-<ts name = "ej.PivotGauge.NumberFormat"/>
 
 Allows the user to change the format of the label values in PivotGauge.
 
-#### Default Value: ej.PivotGauge.NumberFormat.Default
-
-<table class="params">
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Description</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td class="name">Default</td>
-            <td class="description">To set default format for label values.</td>
-        </tr>
-        <tr>
-            <td class="name">Currency</td>
-            <td class="description">To set currency format for label values.</td>
-        </tr>
-        <tr>
-            <td class="name">Percentage</td>
-            <td class="description">To set percentage format for label values.</td>
-        </tr>
-        <tr>
-            <td class="name">Fraction</td>
-            <td class="description">To set fraction format for label values.</td>
-        </tr>
-        <tr>
-            <td class="name">Scientific</td>
-            <td class="description">To set scientific format for label values.</td>
-        </tr>
-        <tr>
-            <td class="name">Text</td>
-            <td class="description">To set text format for label values.</td>
-        </tr>
-        <tr>
-            <td class="name">Notation</td>
-            <td class="description">To set notation format for label values.</td>
-        </tr>
-    </tbody>
-</table>
-
+#### Default Value: null
 
 **Example:**
 
 {% highlight html %}
  
-$("#PivotGauge1").ejPivotGauge({ numberFormat: ej.PivotGauge.NumberFormat.Default });
+$("#PivotGauge1").ejPivotGauge({ labelFormatSettings: value  });
 
 {% endhighlight %}
 
