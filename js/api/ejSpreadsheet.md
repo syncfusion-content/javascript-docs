@@ -4665,7 +4665,7 @@ $("#Spreadsheet").ejSpreadsheet("getFrozenColumns", 1);
 ### getFrozenRows(sheetIdx)
 {:#methods:getfrozenrows}
 
-This method is used to get the frozen row’s index in Spreadsheet.
+This method is used to get the frozen row index in Spreadsheet.
 <table class="params">
 <thead>
 <tr>
