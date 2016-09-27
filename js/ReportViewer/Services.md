@@ -23,7 +23,7 @@ keywords: ejReportViewer, Services, Essential JS ReportViewer, ReportViewer
 Parameter name
 </th>
 <th>
-Datatype
+Data type
 </th>
 <th>
 Description
@@ -61,7 +61,7 @@ reportPath
 String 
 </td>
 <td class="description">
-Reportpath of the report 
+Report path of the report 
 </td>
 </tr>
 <tr>
@@ -72,7 +72,7 @@ reportServerUrl
 String
 </td>
 <td class="description">
-Specify the reportserver url to accessing the report
+Specify the report server url to accessing the report
 </td>
 </tr>
 <tr>
@@ -98,7 +98,7 @@ Specify the processing mode of the report
 Parameter name
 </th>
 <th>
-Datatype
+Data type
 </th>
 <th>
 Description
@@ -151,7 +151,7 @@ Specify the parameter collections
 Parameter name
 </th>
 <th>
-Datatype
+Data type
 </th>
 <th>
 Description
@@ -193,7 +193,7 @@ Datasource of the report
 Parameter name
 </th>
 <th>
-Datatype
+Data type
 </th>
 <th>
 Description
@@ -235,7 +235,7 @@ Datasource of the report
 Parameter name
 </th>
 <th>
-Datatype
+Data type
 </th>
 <th>
 Description
@@ -266,7 +266,7 @@ Input data in the JSON format to get the parameters
 Parameter name
 </th>
 <th>
-Datatype
+Data type
 </th>
 <th>
 Description
@@ -308,7 +308,7 @@ Specify the parameters details to set the parameters
 Parameter name
 </th>
 <th>
-Datatype
+Data type
 </th>
 <th>
 Description
@@ -329,7 +329,7 @@ Input data in the JSON format to update the parameters
 </tr>
 <tr>
 <td class="parameter name">
-updateparam 
+update param 
 </td>
 <td class="datatype">
 JSON
@@ -350,7 +350,7 @@ Specify the parameters details to update the parameters
 Parameter name
 </th>
 <th>
-Datatype
+Data type
 </th>
 <th>
 Description
@@ -381,7 +381,7 @@ Input data in the JSON format to update the datasource
 Parameter name
 </th>
 <th>
-Datatype
+Data type
 </th>
 <th>
 Description
@@ -467,7 +467,7 @@ Specify whether the page layout is print or not
 Parameter name
 </th>
 <th>
-Datatype
+Data type
 </th>
 <th>
 Description
@@ -498,7 +498,7 @@ Input data in the JSON format to get the print model
 Parameter name
 </th>
 <th>
-Datatype
+Data type
 </th>
 <th>
 Description
@@ -595,7 +595,7 @@ specify whether the page layout is print or not
 Parameter name
 </th>
 <th>
-Datatype
+Data type
 </th>
 <th>
 Description
@@ -611,13 +611,13 @@ reportAction
 JSON
 </td>
 <td class="description">
-Input data in the JSON format to clear the cahce
+Input data in the JSON format to clear the cache
 </td>
 </tr>
 </tbody>
 </table>
 
-### DrilltThrough
+### DrillThrough
 
 <table>
 <thead>
@@ -626,7 +626,7 @@ Input data in the JSON format to clear the cahce
 Parameter name
 </th>
 <th>
-Datatype
+Data type
 </th>
 <th>
 Description
@@ -669,7 +669,7 @@ Specify the parameters details to process drill through
 </tr>
 <tr>
 <td class="parameter name">
-authKey  
+auth Key  
 </td>
 <td class="datatype">
 String
@@ -718,7 +718,7 @@ Browser will render the reportviewer control with specified RDL report.
 Parameter name
 </th>
 <th>
-Datatype
+Data type
 </th>
 <th>
 Description
@@ -745,7 +745,7 @@ reportModel
 property
 </td>
 <td class="description">
-Contains the collections of Reportmodel items.
+Contains the collections of Report model items.
 </td>
 </tr>
 <tr>
@@ -756,7 +756,7 @@ SubReportModel
 property
 </td>
 <td class="description">
-Contains the collections of Sub Reportmodel items.
+Contains the collections of Sub Report model items.
 </td>
 </tr>
 </tbody>
@@ -789,7 +789,7 @@ ReportOptions will be Initialized for RDL report
 Parameter name
 </th>
 <th>
-Datatype
+Data type
 </th>
 <th>
 Description
@@ -816,7 +816,7 @@ reportModel
 property
 </td>
 <td class="description">
-Contains the collections of Reportmodel items.
+Contains the collections of Report model items.
 </td>
 </tr>
 <tr>
@@ -827,7 +827,7 @@ SubReportModel
 property
 </td>
 <td class="description">
-Contains the collections of Sub Reportmodel items.
+Contains the collections of Sub Report model items.
 </td>
 </tr>
 </tbody>
@@ -867,7 +867,7 @@ ReportOptions will be updated when loading the RDL report.
 Parameter name
 </th>
 <th>
-Datatype
+Data type
 </th>
 <th>
 Description
@@ -905,7 +905,7 @@ reportPath
 String 
 </td>
 <td class="description">
-Reportpath of the report 
+Report path of the report 
 </td>
 </tr>
 <tr>
@@ -916,7 +916,7 @@ reportServerUrl
 String
 </td>
 <td class="description">
-Specify the reportserver url to accessing the report
+Specify the report server url to accessing the report
 </td>
 </tr>
 <tr>
@@ -942,7 +942,7 @@ Specify the processing mode of the report
 Parameter name
 </th>
 <th>
-Datatype
+Data type
 </th>
 <th>
 Description
@@ -995,7 +995,7 @@ Specify the parameter collections
 Parameter name
 </th>
 <th>
-Datatype
+Data type
 </th>
 <th>
 Description
@@ -1037,7 +1037,7 @@ Datasource of the report
 Parameter name
 </th>
 <th>
-Datatype
+Data type
 </th>
 <th>
 Description
@@ -1079,7 +1079,7 @@ Datasource of the report
 Parameter name
 </th>
 <th>
-Datatype
+Data type
 </th>
 <th>
 Description
@@ -1110,7 +1110,7 @@ Input data in the JSON format to get the parameters
 Parameter name
 </th>
 <th>
-Datatype
+Data type
 </th>
 <th>
 Description
@@ -1152,7 +1152,7 @@ Specify the parameters details to set the parameters
 Parameter name
 </th>
 <th>
-Datatype
+Data type
 </th>
 <th>
 Description
@@ -1173,7 +1173,7 @@ Input data in the JSON format to update the parameters
 </tr>
 <tr>
 <td class="parameter name">
-updateparam 
+update param 
 </td>
 <td class="datatype">
 JSON
@@ -1194,7 +1194,7 @@ Specify the parameters details to update the parameters
 Parameter name
 </th>
 <th>
-Datatype
+Data type
 </th>
 <th>
 Description
@@ -1225,7 +1225,7 @@ Input data in the JSON format to update the datasource
 Parameter name
 </th>
 <th>
-Datatype
+Data type
 </th>
 <th>
 Description
@@ -1311,7 +1311,7 @@ Specify whether the page layout is print or not
 Parameter name
 </th>
 <th>
-Datatype
+Data type
 </th>
 <th>
 Description
@@ -1342,7 +1342,7 @@ Input data in the JSON format to get the print model
 Parameter name
 </th>
 <th>
-Datatype
+Data type
 </th>
 <th>
 Description
@@ -1439,7 +1439,7 @@ specify whether the page layout is print or not
 Parameter name
 </th>
 <th>
-Datatype
+Data type
 </th>
 <th>
 Description
@@ -1455,13 +1455,13 @@ reportAction
 JSON
 </td>
 <td class="description">
-Input data in the JSON format to clear the cahce
+Input data in the JSON format to clear the cache
 </td>
 </tr>
 </tbody>
 </table>
 
-### DrilltThrough
+### DrillThrough
 
 <table>
 <thead>
@@ -1470,7 +1470,7 @@ Input data in the JSON format to clear the cahce
 Parameter name
 </th>
 <th>
-Datatype
+Data type
 </th>
 <th>
 Description
@@ -1513,7 +1513,7 @@ Specify the parameters details to process drill through
 </tr>
 <tr>
 <td class="parameter name">
-authKey  
+auth Key  
 </td>
 <td class="datatype">
 String
@@ -1578,7 +1578,7 @@ Browser will render the reportviewer control with specified RDLC report.
 Parameter name
 </th>
 <th>
-Datatype
+Data type
 </th>
 <th>
 Description
@@ -1605,7 +1605,7 @@ reportModel
 property
 </td>
 <td class="description">
-Contains the collections of Reportmodel items.
+Contains the collections of Report model items.
 </td>
 </tr>
 <tr>
@@ -1616,7 +1616,7 @@ SubReportModel
 property
 </td>
 <td class="description">
-Contains the collections of Sub Reportmodel items.
+Contains the collections of Sub Report model items.
 </td>
 </tr>
 </tbody>
@@ -1625,7 +1625,7 @@ Contains the collections of Sub Reportmodel items.
 ### Request
 
 ~~~csharp
-            if (reportOption.ReportModel.IsDrillthroughReport)            
+            if (reportOption.ReportModel.IsDrillhroughReport)            
                 return;
             var reportName = reportOption.ReportModel.ReportPath;
             reportOption.ReportModel.ReportPath = ReportViewerHelper.GetReportPath(reportOption.ReportModel.ReportPath);
@@ -1656,7 +1656,7 @@ ReportOptions will be Initialized for RDLC Report
 Parameter name
 </th>
 <th>
-Datatype
+Data type
 </th>
 <th>
 Description
@@ -1683,7 +1683,7 @@ reportModel
 property
 </td>
 <td class="description">
-Contains the collections of Reportmodel items.
+Contains the collections of Report model items.
 </td>
 </tr>
 <tr>
@@ -1694,7 +1694,7 @@ SubReportModel
 property
 </td>
 <td class="description">
-Contains the collections of Sub Reportmodel items.
+Contains the collections of Sub Report model items.
 </td>
 </tr>
 </tbody>
@@ -1735,7 +1735,7 @@ ReportOptions will be updated when loading the RDLC report.
 Parameter name
 </th>
 <th>
-Datatype
+Data type
 </th>
 <th>
 Description
@@ -1773,7 +1773,7 @@ reportPath
 String 
 </td>
 <td class="description">
-Reportpath of the report 
+Report path of the report 
 </td>
 </tr>
 <tr>
@@ -1784,7 +1784,7 @@ reportServerUrl
 String
 </td>
 <td class="description">
-Specify the reportserver url to accessing the report
+Specify the report server url to accessing the report
 </td>
 </tr>
 <tr>
@@ -1810,7 +1810,7 @@ Specify the processing mode of the report
 Parameter name
 </th>
 <th>
-Datatype
+Data type
 </th>
 <th>
 Description
@@ -1863,7 +1863,7 @@ Specify the parameter collections
 Parameter name
 </th>
 <th>
-Datatype
+Data type
 </th>
 <th>
 Description
@@ -1905,7 +1905,7 @@ Datasource of the report
 Parameter name
 </th>
 <th>
-Datatype
+Data type
 </th>
 <th>
 Description
@@ -1947,7 +1947,7 @@ Datasource of the report
 Parameter name
 </th>
 <th>
-Datatype
+Data type
 </th>
 <th>
 Description
@@ -1978,7 +1978,7 @@ Input data in the JSON format to get the parameters
 Parameter name
 </th>
 <th>
-Datatype
+Data type
 </th>
 <th>
 Description
@@ -2020,7 +2020,7 @@ Specify the parameters details to set the parameters
 Parameter name
 </th>
 <th>
-Datatype
+Data type
 </th>
 <th>
 Description
@@ -2041,7 +2041,7 @@ Input data in the JSON format to update the parameters
 </tr>
 <tr>
 <td class="parameter name">
-updateparam 
+update param 
 </td>
 <td class="datatype">
 JSON
@@ -2062,7 +2062,7 @@ Specify the parameters details to update the parameters
 Parameter name
 </th>
 <th>
-Datatype
+Data type
 </th>
 <th>
 Description
@@ -2093,7 +2093,7 @@ Input data in the JSON format to update the datasource
 Parameter name
 </th>
 <th>
-Datatype
+Data type
 </th>
 <th>
 Description
@@ -2179,7 +2179,7 @@ Specify whether the page layout is print or not
 Parameter name
 </th>
 <th>
-Datatype
+Data type
 </th>
 <th>
 Description
@@ -2210,7 +2210,7 @@ Input data in the JSON format to get the print model
 Parameter name
 </th>
 <th>
-Datatype
+Data type
 </th>
 <th>
 Description
@@ -2307,7 +2307,7 @@ specify whether the page layout is print or not
 Parameter name
 </th>
 <th>
-Datatype
+Data type
 </th>
 <th>
 Description
@@ -2323,13 +2323,13 @@ reportAction
 JSON
 </td>
 <td class="description">
-Input data in the JSON format to clear the cahce
+Input data in the JSON format to clear the cache
 </td>
 </tr>
 </tbody>
 </table>
 
-### DrilltThrough
+### DrillThrough
 
 <table>
 <thead>
@@ -2338,7 +2338,7 @@ Input data in the JSON format to clear the cahce
 Parameter name
 </th>
 <th>
-Datatype
+Data type
 </th>
 <th>
 Description
@@ -2381,7 +2381,7 @@ Specify the parameters details to process drill through
 </tr>
 <tr>
 <td class="parameter name">
-authKey  
+auth Key  
 </td>
 <td class="datatype">
 String
@@ -2431,7 +2431,7 @@ Browser will render the reportviewer control with specified SSRS report.
 Parameter name
 </th>
 <th>
-Datatype
+Data type
 </th>
 <th>
 Description
@@ -2458,7 +2458,7 @@ reportModel
 property
 </td>
 <td class="description">
-Contains the collections of Reportmodel items.
+Contains the collections of Report model items.
 </td>
 </tr>
 <tr>
@@ -2469,7 +2469,7 @@ SubReportModel
 property
 </td>
 <td class="description">
-Contains the collections of Sub Reportmodel items.
+Contains the collections of Sub Report model items.
 </td>
 </tr>
 </tbody>
@@ -2504,7 +2504,7 @@ ReportOptions will be Initialized for SSRS report
 Parameter name
 </th>
 <th>
-Datatype
+Data type
 </th>
 <th>
 Description
@@ -2531,7 +2531,7 @@ reportModel
 property
 </td>
 <td class="description">
-Contains the collections of Reportmodel items.
+Contains the collections of Report model items.
 </td>
 </tr>
 <tr>
@@ -2542,7 +2542,7 @@ SubReportModel
 property
 </td>
 <td class="description">
-Contains the collections of Sub Reportmodel items.
+Contains the collections of Sub Report model items.
 </td>
 </tr>
 </tbody>
@@ -2589,13 +2589,13 @@ Code snippet:
 
 return.GetReport(string key, string type);
 
-### GetResource(string key, string resourcetype, bool isPrint)
+### GetResource(string key, string resourceType, bool isPrint)
 
 Getting the Resource from Reportviewer Control and It will process the report Exporting.
 
 Code snippet:
 
-return.GetResource(string key, string resourcetype, bool isPrint);
+return.GetResource(string key, string resourceType, bool isPrint);
 
 ### GetParameters()
 
