@@ -12,7 +12,7 @@ documentation: ug
 ## Display View
 
 ### Tab View
-In Tab View representation, both Grid and Chart will be displayed in a separate tab.  This could be set using the [`controlPlacement`](/js/api/ejolapclient#members:displaysettings-controlplacement) property under the [`displaySettings`](/js/api/ejolapclient#members:displaysettings) option.  By default, **Tab** value is set.
+In Tab View representation, both Grid and Chart will be displayed in a separate tab.  This could be set using the [`controlPlacement`](/js/api/ejpivotclient#members:displaysettings-controlplacement) property under the [`displaySettings`](/js/api/ejpivotclient#members:displaysettings) option.  By default, **Tab** value is set.
 
 {% highlight javascript %}
 
@@ -29,7 +29,7 @@ $("#OlapClient").ejOlapClient({
 ![](Layout-Customization_images/tab.png) 
 
 ### Tile View
-In Tile View representation, both Grid and Chart will be displayed one over the other, in the same layout. Tile view can be set by using the [`controlPlacement`](/js/api/ejolapclient#members:displaysettings-controlplacement) property under the [`displaySettings`](/js/api/ejolapclient#members:displaysettings) option.
+In Tile View representation, both Grid and Chart will be displayed one over the other, in the same layout. Tile view can be set by using the [`controlPlacement`](/js/api/ejpivotclient#members:displaysettings-controlplacement) property under the [`displaySettings`](/js/api/ejpivotclient#members:displaysettings) option.
 
 {% highlight javascript %}
 
@@ -48,7 +48,7 @@ $("#OlapClient").ejOlapClient({
 ## Default View
 
 ### Grid View
-To display Grid control by default, set [`defaultView`](/js/api/ejolapclient#members:displaysettings-defaultview) property under [`displaySettings`](/js/api/ejolapclient#members:displaysettings) option to **Grid**, which is the default value of the property.
+To display Grid control by default, set [`defaultView`](/js/api/ejpivotclient#members:displaysettings-defaultview) property under [`displaySettings`](/js/api/ejpivotclient#members:displaysettings) option to **Grid**, which is the default value of the property.
 
 {% highlight javascript %}
 
@@ -65,7 +65,7 @@ $("#OlapClient").ejOlapClient({
 ![](Layout-Customization_images/grid layout.png)
 
 ### Chart View
-To display Chart control by default, set the property [`defaultView`](/js/api/ejolapclient#members:displaysettings-defaultview) property to **Chart**.
+To display Chart control by default, set the property [`defaultView`](/js/api/ejpivotclient#members:displaysettings-defaultview) property to **Chart**.
 
 {% highlight javascript %}
 
@@ -84,7 +84,7 @@ $("#OlapClient").ejOlapClient({
 ## Display Mode
 
 ### Grid Only
-After setting the [`mode`](/js/api/ejolapclient#members:displaysettings-mode) property under [`displaySettings`](/js/api/ejolapclient#members:displaysettings) option to **GridOnly**, the Chart is hidden and the data is displayed only in the Grid.
+After setting the [`mode`](/js/api/ejpivotclient#members:displaysettings-mode) property under [`displaySettings`](/js/api/ejpivotclient#members:displaysettings) option to **GridOnly**, the Chart is hidden and the data is displayed only in the Grid.
 
 {% highlight javascript %}
 
@@ -101,7 +101,7 @@ $("#OlapClient").ejOlapClient({
 ![](Layout-Customization_images/Grid only.png)
 
 ### Chart Only
-After setting the [`mode`](/js/api/ejolapclient#members:displaysettings-mode) property under [`displaySettings`](/js/api/ejolapclient#members:displaysettings) option to **ChartOnly**, the Grid is hidden and data is displayed only in the Chart.
+After setting the [`mode`](/js/api/ejpivotclient#members:displaysettings-mode) property under [`displaySettings`](/js/api/ejpivotclient#members:displaysettings) option to **ChartOnly**, the Grid is hidden and data is displayed only in the Chart.
 
 {% highlight javascript %}
 
@@ -118,7 +118,7 @@ $("#OlapClient").ejOlapClient({
 ![](Layout-Customization_images/Chart only.png)
 
 ### Both Chart and Grid
-After setting the [`mode`](/js/api/ejolapclient#members:displaysettings-mode) property under [`displaySettings`](/js/api/ejolapclient#members:displaysettings) option to **ChartAndGrid**, data is displayed in both Grid and Chart.  This is the default value of the property.
+After setting the [`mode`](/js/api/ejpivotclient#members:displaysettings-mode) property under [`displaySettings`](/js/api/ejpivotclient#members:displaysettings) option to **ChartAndGrid**, data is displayed in both Grid and Chart.  This is the default value of the property.
 
 {% highlight javascript %}
 
@@ -135,7 +135,7 @@ $("#OlapClient").ejOlapClient({
 ![](Layout-Customization_images/grid layout.png)
 
 ## Toggle Panel
-Toggle panel option lets the user to toggle the visibility of Axis Element Builder and Cube Dimension Browser panels in OlapClient with a use of a button. The button could be added to the control by using the [`enableTogglePanel`](/js/api/ejolapclient#members:displaysettings-enabletogglepanel) property under [`displaySettings`](/js/api/ejolapclient#members:displaysettings) option.  This property is disabled by default.
+Toggle panel option lets the user to toggle the visibility of Axis Element Builder and Cube Dimension Browser panels in OlapClient with a use of a button. The button could be added to the control by using the [`enableTogglePanel`](/js/api/ejpivotclient#members:displaysettings-enabletogglepanel) property under [`displaySettings`](/js/api/ejpivotclient#members:displaysettings) option.  This property is disabled by default.
 
 {% highlight javascript %}
 
@@ -152,7 +152,7 @@ $("#OlapClient").ejOlapClient({
 ![](Layout-Customization_images/toggle panel.png)
 
 ## Maximized/Full Screen View
-Full screen view helps to visualize the PivotGrid and OlapChart controls inside OlapClient precisely according to the browser window size.  By selecting full screen icon in the toolbar, PivotGrid/OlapChart is maximized depending on the selected tab.  Drilldown action can also be performed in both PivotGrid and OlapChart in the maximized view.  This option is enabled by setting the [`enableFullScreen`](/js/api/ejolapclient#members:displaysettings-enablefullscreen) property under [`displaySettings`](/js/api/ejolapclient#members:displaysettings)  option to true.  The value is false by default.
+Full screen view helps to visualize the PivotGrid and OlapChart controls inside OlapClient precisely according to the browser window size.  By selecting full screen icon in the toolbar, PivotGrid/OlapChart is maximized depending on the selected tab.  Drilldown action can also be performed in both PivotGrid and OlapChart in the maximized view.  This option is enabled by setting the [`enableFullScreen`](/js/api/ejpivotclient#members:displaysettings-enablefullscreen) property under [`displaySettings`](/js/api/ejpivotclient#members:displaysettings)  option to true.  The value is false by default.
 
 {% highlight javascript %}
 
@@ -180,7 +180,7 @@ PivotGrid inside OlapClient control can be rendered in any of the following layo
 * NoSummaries
 * ExcelLikeLayout
 
-The layout is set using the [`gridLayout`](/js/api/ejolapclient#members:gridlayout) property. By default, normal layout is set.
+The layout is set using the [`gridLayout`](/js/api/ejpivotclient#members:gridlayout) property. By default, normal layout is set.
 
 {% highlight javascript %}
 
@@ -195,7 +195,7 @@ $("#OlapClient").ejOlapClient({
 ![](Layout-Customization_images/grid layout.png)
 
 ## Chart Types
-While loading the OlapClient initially, the OlapChart widget can be rendered in any one of the available chart types using the [`chartType`](/js/api/ejolapclient#members:charttype) property.
+While loading the OlapClient initially, the OlapChart widget can be rendered in any one of the available chart types using the [`chartType`](/js/api/ejpivotclient#members:charttype) property.
 
 {% highlight javascript %}
 
@@ -207,7 +207,7 @@ $("#OlapClient").ejOlapClient({
 
 {% endhighlight %} 
 
-The [`chartType`](/js/api/ejolapclient#members:charttype) property takes Column Chart by default. The types available are Column, Stacking Column, Bar, Stacking Bar, Line, Spline, Step Line, Area, Spline Area, Step Area, Stacking Area, Pie, Funnel and Pyramid.
+The [`chartType`](/js/api/ejpivotclient#members:charttype) property takes Column Chart by default. The types available are Column, Stacking Column, Bar, Stacking Bar, Line, Spline, Step Line, Area, Spline Area, Step Area, Stacking Area, Pie, Funnel and Pyramid.
 
 The Chart Type can also be changed dynamically through the toolbar icon. 
 
