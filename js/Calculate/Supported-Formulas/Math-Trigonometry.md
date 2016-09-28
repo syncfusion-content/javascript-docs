@@ -367,6 +367,41 @@ _COT(number)_
 
 
 
+## COTH
+
+
+The `COTH` function returns the hyperbolic cotangent of a hyperbolic angle.
+
+
+
+**Syntax:**
+
+
+
+_COTH(number)_
+
+
+
+**Where:**
+
+
+
+* number - angle radians to get the hyperbolic cotangent value.
+
+
+
+**Remarks:**
+
+
+
+* `#NUM!` - occurs if the number is outside of its constraints.
+
+
+
+* `#VALUE!` - occurs if the number is a non-numeric value.
+
+
+
 ## CSC
 
 

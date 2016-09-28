@@ -2345,19 +2345,27 @@ $("#treeView").ejTreeView("checkNode", $("#book"));
 
 
 
-### collapseAll()
+### collapseAll([levelUntil])
 {:#methods:collapseall}
 
+This method is used to collapse all nodes in TreeView control. If you want to collapse all nodes up to the specific level in TreeView control then we need to pass level as argument to this method.
 
-
-
-
-
-
-
-To collapse all the TreeView nodes.
-
-
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">levelUntil</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">TreeView nodes will collapse until the given level</td>
+</tr>
+</tbody>
+</table>
 
 
 
@@ -2376,6 +2384,7 @@ $("#treeView").ejTreeView({
 
 var treeObj = $("#treeView").data("ejTreeView");
 treeObj.collapseAll(); // All the TreeView nodes will be collapsed.
+treeObj.collapseAll(2); // All the TreeView nodes up to level 2 will be collapsed.
 </script>{% endhighlight %}
 
 
@@ -2652,20 +2661,28 @@ $("#treeView").ejTreeView("ensureVisible", $("#book"));
 
 
 
-### expandAll()
+### expandAll([levelUntil])
 {:#methods:expandall}
 
+This method is used to expand all nodes in TreeView control. If you want to expand all nodes up to the specific level in TreeView control then we need to pass level as argument to this method.
 
 
-
-
-
-
-
-To expand all the TreeView nodes.
-
-
-
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">levelUntil</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">TreeView nodes will expand until the given level</td>
+</tr>
+</tbody>
+</table>
 
 
 #### Example
@@ -2683,6 +2700,7 @@ $("#treeView").ejTreeView({
 
 var treeObj = $("#treeView").data("ejTreeView");
 treeObj.expandAll(); // All the TreeView nodes will be expanded.
+treeObj.expandAll(2); // All the TreeView nodes up to the level 2 will be expanded.
 </script>{% endhighlight %}
 
 
@@ -4950,14 +4968,7 @@ $("#treeView").ejTreeView("selectAll");
 ### selectNode(element) 
 {:#methods:selectnode}
 
-
-
-
-
-
-
-
-To select a node in TreeView.
+This method is used to select a node in TreeView control. If you want to select the collection of nodes in TreeView control then we need to enable **allowMultiSelection** property.
 
 <table class="params">
 <thead>
@@ -4971,8 +4982,8 @@ To select a node in TreeView.
 <tr>
 <td class="name"> 
 element </td>
-<td class="type"><span class="param-type">string|object</span></td>
-<td class="description">ID of TreeView node/object of TreeView node</td>
+<td class="type"><span class="param-type">string|object|array</span></td>
+<td class="description">ID of TreeView node/object of TreeView node/ collection of ID/object of TreeView nodes</td>
 </tr>
 </tbody>
 </table>
@@ -4995,6 +5006,7 @@ $("#treeView").ejTreeView({
 
 var treeObj = $("#treeView").data("ejTreeView");
 treeObj.selectNode($("#book")); // Given TreeView node will be selected.
+treeObj.selectNode([$("#book"), "art"]); // Given TreeView nodes will be selected when enable `allowMultiSelection` property.
 </script>{% endhighlight %}
 
 
@@ -5258,14 +5270,7 @@ $("#treeView").ejTreeView("unselectAll");
 ### unselectNode(element) 
 {:#methods:unselectnode}
 
-
-
-
-
-
-
-
-To unselect the node in the TreeView.
+This method is used to unselect a node in TreeView control. If you want to unselect the collection of nodes in TreeView control then we need to enable **allowMultiSelection** property.
 
 <table class="params">
 <thead>
@@ -5279,8 +5284,8 @@ To unselect the node in the TreeView.
 <tr>
 <td class="name"> 
 element </td>
-<td class="type"><span class="param-type">string|object</span></td>
-<td class="description">ID of TreeView node/object of TreeView node</td>
+<td class="type"><span class="param-type">string|object|array</span></td>
+<td class="description">ID of TreeView node/object of TreeView node/ collection of ID/object of TreeView nodes</td>
 </tr>
 </tbody>
 </table>
@@ -5303,6 +5308,7 @@ $("#treeView").ejTreeView({
 
 var treeObj = $("#treeView").data("ejTreeView");
 treeObj.unselectNode($("#book")); // Given TreeView node will be unselected.
+treeObj.unselectNode([$("#book"), "art"]); // Given TreeView nodes will be unselected when enable `allowMultiSelection` property.
 </script>{% endhighlight %}
 
 

@@ -1566,7 +1566,7 @@ N>[`showRibbon`](https://help.syncfusion.com/js/api/ejspreadsheet#members:showri
 ### ribbonSettings.applicationTab.type `Enum`
 {:#members:ribbonsettings-applicationtab-type}
 
-<ts name="ej.Ribbon.ApplicationTabType"/>
+<ts ref="ej.Ribbon.ApplicationTabType"/>
 
 Gets or sets a value that indicates to set application tab type in Spreadsheet. It has two types, Menu and Backstage.
 
@@ -4665,7 +4665,7 @@ $("#Spreadsheet").ejSpreadsheet("getFrozenColumns", 1);
 ### getFrozenRows(sheetIdx)
 {:#methods:getfrozenrows}
 
-This method is used to get the frozen row’s index in Spreadsheet.
+This method is used to get the frozen row index in Spreadsheet.
 <table class="params">
 <thead>
 <tr>
@@ -8907,6 +8907,23 @@ This method is used to delete the defined name in the Spreadsheet name manager.
 var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
 // To remove the define name in Spreadsheet name manager.
 xlObj.XLRibbon.removeNamedRange("PRICE_LIST");
+</script>
+
+{% endhighlight %}
+
+### XLRibbon.updateRibbonIcons()
+{:#methods:xlribbon-updateribbonicons}
+
+This method is used to update the ribbon icons in the Spreadsheet.
+
+#### Example
+
+{% highlight html %}
+<script>
+//initialize the Spreadsheet object
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+// To update the ribbon icons in the spreadsheet based on the active sheet index.
+xlObj.XLRibbon.updateRibbonIcons();
 </script>
 
 {% endhighlight %}

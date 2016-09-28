@@ -279,6 +279,27 @@ $("#pager").ejPager({totalRecordsCount: 10 })
 </script>
 {% endhighlight %}
 
+### showPageInfo `Boolean`
+{:#members:showpageinfo}
+
+Shows or hides the current page information in pager footer.
+
+#### Default Value:
+{:.param}
+* true
+
+#### Example
+{:.example}
+
+{% highlight html %}
+
+<div id="pager"></div> 
+<script>
+$("#pager").ejPager({showPageInfo:false})
+});
+</script>
+
+{% endhighlight %}
 
 
 ## Methods

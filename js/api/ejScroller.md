@@ -79,6 +79,59 @@ $('#scrollcontent').ejScroller();
 
 
 
+### animationSpeed `number`
+{:#members:animationspeed}
+
+
+
+
+Specifies the swipe scrolling speed(in millisecond).
+
+
+#### Default Value
+
+
+
+
+* 600
+
+
+
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+<div id="scrollcontent" style="width:900px;" >
+<p>Model view controller (MVC) is a software architecture pattern which separates the
+representation of information from the user's interaction with it.
+The model consists of application data, business rules, logic, and functions. A view can be any
+output representation of data, such as a chart or a diagram. Multiple views of the same data 
+are possible, such as a bar chart for management and a tabular view for accountants. 
+The controller mediates input, converting it to commands for the model or view.The central 
+ideas behind MVC are code reusability and n addition to dividing the application into three 
+kinds of components, the MVC design defines the interactions between them.
+
+<ul>
+<li>
+<b>A controller</b>can send commands to its associated view to change the view's presentation of the model (e.g., by scrolling through a document). 
+It can also send commands to the model to update the model's state (e.g., editing a document).
+</li>
+</ul> 
+</div> 
+ 
+<script>
+//To set the animationSpeed property of Scroller during initialization
+        $("#scrollcontent").ejScroller({animationSpeed: 1000 });      
+</script> 
+{% endhighlight %}
+
+
+
+
+
 
 ### autoHide `boolean`
 {:#members:autohide}
@@ -390,7 +443,7 @@ It can also send commands to the model to update the model's state (e.g., editin
 
 
 
-### height `number`
+### height `number|string`
 {:#members:height}
 
 
@@ -696,7 +749,7 @@ It can also send commands to the model to update the model's state (e.g., editin
 
 
 
-### width `number`
+### width `number|string`
 {:#members:width}
 
 

@@ -10,7 +10,7 @@ documentation: ug
 
 Before we start with the Grid, please refer [this page](http://help.syncfusion.com/js/angularjs) for general information regarding integrating Syncfusion widget's.
 
-## Preparing HTML document
+## Adding JavaScript and CSS references
 
 The Grid control has the following list of external JavaScript dependencies.
 
@@ -88,7 +88,7 @@ The code example for defining controls in AngularJS is as follows,
 ![](../Getting-started_images/Angularimages/Getting-started_img1.png)
 {:.image }
 
-In the above code snippet, `ej-grid` denotes the control directive for the Syncfusion’s Grid AngularJS widget and all its properties are prefixed with the letter `e-` (For example, e-datasource).
+In the above code snippet, `ej-grid` denotes the control directive for the Syncfusion's Grid AngularJS widget and all its properties are prefixed with the letter `e-` (For example, e-datasource).
 
 ## Data Binding
 

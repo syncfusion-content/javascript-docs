@@ -783,7 +783,7 @@ Submit</td>
 
 
 
-### width `number`
+### width `string | number`
 {:#members:width}
 
 
@@ -797,7 +797,7 @@ Specifies the width of the Button.
 
 
 
-* 100
+* "100px"
 
 
 

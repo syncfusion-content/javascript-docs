@@ -61,14 +61,14 @@ Specifies the background color for map
 
 #### Default Value
 
-* "white"
+* "transparent"
 
 #### Example
 
 {% highlight js %}
  
 //To set background API value during initialization 
-  $("#container").ejMap({background:'white'});
+  $("#container").ejMap({background:'transparent'});
   
 {% endhighlight %}
 
@@ -1983,10 +1983,10 @@ to get leftLabel value for legend setting
 {% endhighlight %}
 
 
-### layers.legendSettings.LegendMode `enum`
+### layers.legendSettings.mode `enum`
 {:#members:layers-legendsettings-mode}
 
-<ts name = "ej.datavisualization.Map.LegendMode"/>
+<ts name = "ej.datavisualization.Map.Mode"/>
 
 to get mode of legend setting
 
@@ -2699,7 +2699,142 @@ Specifies the colorMappings of the shape layer in map
 {% highlight js %}
  
 //To set colorMappings API value during initialization 
-  $("#container").ejMap({layers:{ shapeSettings: {colorMappings:{rangeColorMapping:{from: 0,to: 100000,gradientColors: ["#9CBF4E", "#B8CE7B"]}}}}});
+  $("#container").ejMap({layers:{ shapeSettings: {colorMappings:{rangeColorMapping:[{from: 0,to: 100000,gradientColors: ["#9CBF4E", "#B8CE7B"]}]}}}});
+{% endhighlight %}
+
+
+{% highlight js %}
+ 
+//Get or set the colorMappings API, after initialization:
+   
+   //Gets the colorMappings value 
+   
+   var shapeProperty =$("#container").data("ejMap").model.layers[layerIndex].shapeSettings.colorMappings;
+    
+   //Sets the colorMappings value 
+   
+   $("#container").data("ejMap").model.layers[0].shapeSettings.colorMappings={rangeColorMapping:[{from: 0,to: 100000,gradientColors: ["#9CBF4E", "#B8CE7B"]}]}; 
+{% endhighlight %}
+
+
+
+### layers.shapeSettings.colorMappings.rangeColorMapping `array`
+{:#members:layers-shapesettings-colormappings-rangecolormapping}
+
+Specifies the range colorMappings in the shape layer of map.
+
+#### Default Value
+
+* null
+
+#### Example
+
+{% highlight js %}
+ 
+//To set rangeColorMapping API value during initialization 
+  $("#container").ejMap({layers:{ shapeSettings: {colorMappings:{rangeColorMapping:[{from: 0,to: 100000,gradientColors: ["#9CBF4E", "#B8CE7B"]}]}}}});
+{% endhighlight %}
+
+### layers.shapeSettings.colorMappings.rangeColorMapping.from `number`
+{:#members:layers-shapesettings-colormappings-rangecolormapping-from}
+
+Specifies the start range colorMappings in the shape layer of map.
+
+#### Default Value
+
+* null
+
+#### Example
+
+{% highlight js %}
+ 
+//To set start range colorMapping API value during initialization 
+  $("#container").ejMap({layers:{ shapeSettings: {colorMappings:{rangeColorMapping:[{from: 0,to: 100000,gradientColors: ["#9CBF4E", "#B8CE7B"]}]}}}});
+{% endhighlight %}
+
+### layers.shapeSettings.colorMappings.rangeColorMapping.to `number`
+{:#members:layers-shapesettings-colormappings-rangecolormapping-to}
+
+Specifies the to range colorMappings in the shape layer of map.
+
+#### Default Value
+
+* null
+
+#### Example
+
+{% highlight js %}
+ 
+//To set to range colorMapping API value during initialization 
+  $("#container").ejMap({layers:{ shapeSettings: {colorMappings:{rangeColorMapping:[{from: 0,to: 100000,gradientColors: ["#9CBF4E", "#B8CE7B"]}]}}}});
+{% endhighlight %}
+
+### layers.shapeSettings.colorMappings.rangeColorMapping.gradientColors `array`
+{:#members:layers-shapesettings-colormappings-rangecolormapping-gradientcolors}
+
+Specifies the gradientColors in the shape layer of map.
+
+#### Default Value
+
+* null
+
+#### Example
+
+{% highlight js %}
+ 
+//To set gradientColors API value during initialization 
+  $("#container").ejMap({layers:{ shapeSettings: {colorMappings:{rangeColorMapping:[{from: 0,to: 100000,gradientColors: ["#9CBF4E", "#B8CE7B"]}]}}}});
+{% endhighlight %}
+
+### layers.shapeSettings.colorMappings.equalColorMapping `array`
+{:#members:layers-shapesettings-colormappings-equalcolormapping}
+
+Specifies the equalColorMapping in the shape layer of map.
+
+#### Default Value
+
+* null
+
+#### Example
+
+{% highlight js %}
+ 
+//To set equalColorMapping API value during initialization 
+  $("#container").ejMap({layers:{ shapeSettings: {colorMappings:{equalColorMapping:[{ value: "Romney", color: "#D84444" }]}}}});
+{% endhighlight %}
+
+### layers.shapeSettings.colorMappings.equalColorMapping.value `string`
+{:#members:layers-shapesettings-colormappings-equalcolormapping-value}
+
+Specifies the equalColorMapping value in the shape layer of map.
+
+#### Default Value
+
+* null
+
+#### Example
+
+{% highlight js %}
+ 
+//To set equalColorMapping value API value during initialization 
+  $("#container").ejMap({layers:{ shapeSettings: {colorMappings:{equalColorMapping:[{ value: "Romney", color: "#D84444" }]}}}});
+{% endhighlight %}
+
+### layers.shapeSettings.colorMappings.equalColorMapping.color `string`
+{:#members:layers-shapesettings-colormappings-equalcolormapping-color}
+
+Specifies the equalColorMapping color in the shape layer of map.
+
+#### Default Value
+
+* null
+
+#### Example
+
+{% highlight js %}
+ 
+//To set equalColorMapping color API value during initialization 
+  $("#container").ejMap({layers:{ shapeSettings: {colorMappings:{equalColorMapping:[{ value: "Romney", color: "#D84444" }]}}}});
 {% endhighlight %}
 
 

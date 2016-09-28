@@ -942,6 +942,132 @@ Specifies the template for legendSettings
 
 {% endhighlight %}
 
+### legendSettings.mode `string`
+{:#members:legendsettings-mode}
+
+Specifies the mode for legendSettings whether defaul or interactive mode
+
+#### Default Value
+
+* "default"
+
+#### Example
+
+{% highlight js %}
+ 
+//To set mode API value during initialization 
+  $("#container").ejTreeMap( {legendSettings:{ mode: "interactive"}});
+
+{% endhighlight %}
+
+### legendSettings.title `string`
+{:#members:legendsettings-title}
+
+Specifies the title text for legend
+
+#### Default Value
+
+* ""
+
+#### Example
+
+{% highlight js %}
+ 
+//To set title API value during initialization 
+  $("#container").ejTreeMap( {legendSettings:{ title: "Population"}});
+
+{% endhighlight %}
+
+### legendSettings.leftLabel `string`
+{:#members:legendsettings-leftlabel}
+
+Specifies the leftLabel text for legend
+
+#### Default Value
+
+* ""
+
+#### Example
+
+{% highlight js %}
+ 
+//To set leftLabel API value during initialization 
+  $("#container").ejTreeMap( {legendSettings:{ leftLabel: "10Million"}});
+
+{% endhighlight %}
+
+### legendSettings.rightLabel `string`
+{:#members:legendsettings-rightlabel}
+
+Specifies the rightLabel text for legend
+
+#### Default Value
+
+* ""
+
+#### Example
+
+{% highlight js %}
+ 
+//To set rightLabel API value during initialization 
+  $("#container").ejTreeMap( {legendSettings:{ rightLabel: "100Million"}});
+
+{% endhighlight %}
+
+
+### legendSettings.dockPosition `string`
+{:#members:legendsettings-dockposition}
+
+Specifies the dockPosition text for legend
+
+#### Default Value
+
+* "top"
+
+#### Example
+
+{% highlight js %}
+ 
+//To set dockPosition API value during initialization 
+  $("#container").ejTreeMap( {legendSettings:{ dockPosition: "bottom"}});
+
+{% endhighlight %}
+
+### legendSettings.alignment `string`
+{:#members:legendsettings-alignment}
+
+Specifies the alignment text for legend
+
+#### Default Value
+
+* "near"
+
+#### Example
+
+{% highlight js %}
+ 
+//To set alignment API value during initialization 
+  $("#container").ejTreeMap( {legendSettings:{ alignment: "far"}});
+
+{% endhighlight %}
+
+### legendSettings.columnCount `number`
+{:#members:legendsettings-columncount}
+
+Specifies the alignment text for legend
+
+#### Default Value
+
+* 0
+
+#### Example
+
+{% highlight js %}
+ 
+//To set columnCount API value during initialization 
+  $("#container").ejTreeMap( {legendSettings:{ columnCount: 2}});
+
+{% endhighlight %}
 
 ### highlightBorderBrush `string`
 {:#members:highlightborderbrush}

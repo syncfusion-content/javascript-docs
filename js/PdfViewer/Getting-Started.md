@@ -5,6 +5,7 @@ description: Getting started with Syncfusion Essential JS PDF viewer.
 platform: js
 control: PDF viewer
 documentation: ug
+keywords: ejPdfViewer, PDF Viewer
 ---
 
 ## Getting Started
@@ -14,7 +15,6 @@ This section explains briefly about how to create a PDF viewer in your web appli
 **Create your first PDF viewer application in JavaScript**
 
 Create a new project in the Visual Studio by selecting the ASP.NET Empty Web Application template. The following screenshot displays the Project Creation Wizard in Visual Studio 2012.
-
 ![](Getting-Started_images/Getting-Started_img1.jpeg)
 
 **Create HTML Page**
@@ -27,26 +27,32 @@ Name the page as Default.html and click OK.
 
 **Add References**
 
-* Add reference to the following list of assemblies from ASP.NET Web API NuGet package.  
+* Add reference to the following list of assemblies from ASP.NET Web API NuGet package.
 
-   * System.Web.Http
-   * System. Web.Http.WebHost
-   * System.Net.Http.WebRequest
-   * System.Net.Http.Formatting
+* System.Web.Http
+
+* System. Web.Http.WebHost
+
+* System.Net.Http.WebRequest
+
+* System.Net.Http.Formatting
 
 N> The System.Web.Routing, System.Net.Http assemblies are also required, which are referred by default when creating the project.
 
 * The following Syncfusion assemblies has to be added as reference to the project for using the ejPdfViewer.
 
-   * Syncfusion.Compression.Base
-   * Syncfusion.EJ.PdfViewer
-   * Syncfusion.Pdf.Base
-   
+* Syncfusion.Compression.Base
+
+* Syncfusion.EJ.PdfViewer
+
+* Syncfusion.Pdf.Base
+
 **Add Scripts and Styles**
 
 PDF viewer have the following external dependencies.
 
 * [JQuery](http://jquery.com/# "JQuery")
+
 * [JQuery.easing](http://gsgd.co.uk/sandbox/jquery/easing/# "JQuery.easing")
 
 The following table shows the list of ej widgets required for using the ejPdfViewer.
@@ -125,16 +131,12 @@ To show waiting popups on loading and rendering.
 </td>
 </tr>
 </table>
-
 You can find the scripts listed above and style sheets in any of the following locations:
-
 Local Disk: [Click here](http://helpjs.syncfusion.com/js/installation-and-deployment# "Installation and deployment") to know more about script and style sheets installed in local machine.
-
 CDN Link: [Click here](http://helpjs.syncfusion.com/js/cdn# "CDN scripts and styles links") to know more about script and style sheets available online.
-
 NuGet Package: [Click here](http://helpjs.syncfusion.com/js/installation-and-deployment#configuring-syncfusion-nuget-packages "Configuring Syncfusion NuGet Packages") to know more about script and style sheets available in NuGet package.
-
 Add the script files and CSS files in the <head> tag of the Default.html page.
+
 
 {% highlight html %}
 <script src="assets/external/jquery-1.11.3.min.js" type="text/javascript"></script>
@@ -142,6 +144,7 @@ Add the script files and CSS files in the <head> tag of the Default.html pag
 <script src="assets/scripts/web/ej.web.all.min.js" type="text/javascript"></script>
 <link href="assets/css/web/default-theme/ej.widgets.all.min.css" rel="stylesheet" type="text/css" />
 {% endhighlight %}
+
 
 N> For getting started, you can use the ej.web.all.min.js file, which encapsulates all the ej widgets and frameworks in one single file. In production, we highly recommend you to use our [custom script generator](http://helpjs.syncfusion.com/js/include-only-the-needed-widgets# "custom script generator") to create custom script file with required widgets and its dependencies, to reduce the size of the script file.
 
@@ -167,6 +170,7 @@ Add the following code in the <body> tag in the Default.html page. Set the d
 **Add Web API controller for PDF viewer**
 
 The PDF viewer uses Web API services to process the PDF file. Right-Click the Project, select Add and select Web API Controller Class from the listed templates. Rename it as PdfViewerAPIController.cs.
+
 ![](Getting-Started_images/Getting-Started_img3.jpeg)
 
 N> While adding WebAPI Controller Class, name it with the suffix “Controller” which is mandatory. For example, in the demo the controller is named as “PdfViewerAPIController”.
@@ -215,11 +219,13 @@ namespace PDFViewerDemo.Api
 }
 {% endhighlight %}
 
-N> Please create a folder named **Data** in the project location and add the PDF document to be viewed in PDF viewer.
+
+N> Please create a folder named Data in the project location and add the PDF document to be viewed in PDF viewer.
 
 **Web API Routing**
 
 Right-Click the Project, select Add and select Global.asax file from the listed templates.
+
 ![](Getting-Started_images/Getting-Started_img4.jpeg)
 
 You can route the Web API in Application_Start event into Global.asax file as follows.
@@ -250,6 +256,7 @@ namespace PDFViewerDemo
 {% endhighlight %}
 
 **Run the Application**
+
 Run the sample application and you can see the PDF Viewer on the page as displayed in the following screenshot.
 
 ![](Getting-Started_images/Getting-Started_img5.jpeg)
@@ -262,3 +269,4 @@ When closing a window containing the ejPdfViewer, you can also remove the ejPdfV
 var pdfviewerObj = $("#container").data("ejPdfViewer");
 pdfviewerObj.destroy();
 {% endhighlight %}
+

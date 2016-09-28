@@ -300,6 +300,248 @@ Specifies the data source for range navigator.
 
 
 
+### series `array`
+{:#members:series}
+
+
+
+
+Specifies the properties used for customizing the range series.
+
+
+
+### series.xName `string`
+{:#members:series.xname}
+
+
+
+
+Name of the property in the datasource that contains x value for the series.
+
+
+#### Default Value
+
+
+
+ * null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+
+$("#container").ejRangeNavigator({
+series : [{xName: "XValue" }]                   
+});
+ {% endhighlight %}
+
+
+
+### series.yName `string`
+{:#members:series.xname}
+
+
+
+
+Name of the property in the datasource that contains y value for the series.
+
+
+#### Default Value
+
+
+
+ * null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+
+$("#container").ejRangeNavigator({
+series : [{xName: "YValue" }]                   
+});
+ {% endhighlight %}
+
+
+
+### series.dataSource `object`
+{:#members:series-datasource}
+
+
+
+
+Specifies the dataSource for the series. It can be an array of JSON objects or an instance of ej.DataManager.
+
+
+#### Default Value
+
+
+
+* null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejRangeNavigator({
+series : [{dataSource: data }]                   
+});
+ {% endhighlight %}
+
+
+
+### series.type `enum`
+{:#members:series.type}
+
+
+<ts name = "ej.datavisualization.RangeNavigator.Type"/>
+
+Specifies the type of the series to render in chart.
+
+
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th> 
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+Area</td>
+<td class="type">string</td> 
+<td class="description">Specifies the series type as area.</td>
+</tr>
+<tr>
+<td class="name">
+Line</td>
+<td class="type">string</td>
+<td class="description">Specifies the series type as line.</td>
+</tr> 
+<tr>
+<td class="name">
+Spline</td>
+<td class="type">string</td>
+<td class="description">Specifies the series type as spline.</td>
+</tr> 
+<tr>
+<td class="name">
+StepArea</td>
+<td class="type">string</td> 
+<td class="description">Specifies the series type as steparea.</td>
+</tr>
+<tr>
+<td class="name">
+SplineArea</td>
+<td class="type">string</td> 
+<td class="description">Specifies the series type as steparea.</td>
+</tr>
+
+<tr>
+<td class="name">
+StepLine</td>
+<td class="type">string</td>
+<td class="description">Specifies the series type as stepline.</td>
+</tr> 
+</tbody>
+</table>
+
+#### Default Value
+
+
+
+* "column". see <a href="global.html#members:type">Type</a>
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejRangeNavigator({
+series : [{type : "line" }]                   
+});
+ {% endhighlight %}
+
+
+### series.enableAnimation `boolean`
+{:#members:series-enableanimation}
+
+
+
+
+Enable/disable the animation of series.
+
+
+#### Default Value
+
+
+
+* false
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejRangeNavigator({
+series : [{enableAnimation : true }]                   
+});
+{% endhighlight %}
+
+
+
+### series.fill `string`
+{:#members:series-fill}
+
+
+
+
+Fill color of the series.
+
+
+#### Default Value
+
+
+
+ * null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejRangeNavigator({
+series :[{fill : "green"}]                 
+});
+{% endhighlight %}
+
+
 ### enableDeferredUpdate `boolean`
 {:#members:enabledeferredupdate}
 
