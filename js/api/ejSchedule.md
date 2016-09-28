@@ -5567,6 +5567,35 @@ schObj.refreshAppointments(); // To refresh all the appointments within Schedule
 
 {% endhighlight %}
 
+### notifyChanges(action, data)
+{:#methods:notifychanges}
+
+Pass the server action and data to client method for rendering the appointments in schedule control.
+
+#### Example
+
+{% highlight html %}
+ 
+<div id="Schedule"></div> 
+ 
+<script>
+$(function () {
+	window.signalr = $.signalR.scheduleHub;
+	window.signalr.client.modify = function (action, data) {
+		$("#Schedule1").ejSchedule('instance').notifyChanges(action, data);
+	};
+	$.signalR.hub.start({ jsonp: true }).done(function () {
+		window.actionComplete = function (args) {
+			if (args.methodType != "public" && (args.type == "beforeAppointmentCreate" || args.type == "beforeAppointmentChange" || args.type == "beforeAppointmentRemove")) {
+				window.signalr.server.modify(args.type, args.appointment);
+			}
+		};
+	});
+});
+</script>
+
+{% endhighlight %}
+
 ## Events
 
 ### actionBegin
