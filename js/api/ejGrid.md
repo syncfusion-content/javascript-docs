@@ -3214,7 +3214,6 @@ Gets or sets an object that indicates whether to modify the resizing behavior.
 <ts name="ej.Grid.ResizeMode"/>
 
 Gets or sets a value that indicates whether to define the mode of resizing.
-Accepting types are "normal", "nextcolumn" and "control".
 
 #### Default Value:
 {:.param}
