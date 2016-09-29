@@ -3207,7 +3207,7 @@ $("#Grid").ejGrid({
 ### resizeSettings `Object`
 {:#members:resizeSettings}
 
-Gets or sets an object that indicates whether to modify the resizing behaviour.
+Gets or sets an object that indicates whether to modify the resizing behavior.
 ### resizeSettings.resizeMode `enum`
 {:#members:resizeSettings-resizeMode}
 
