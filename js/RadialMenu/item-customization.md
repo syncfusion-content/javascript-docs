@@ -168,7 +168,7 @@ The following screenshot illustrates the output.
 
 You can customize the Radial Menu with slider settings.The **data-ej-type** property specifies the type of radial menu item, where you can set the type for RadialMenu item.
 
-You can customize the **Radial Menu** slider settings by using the **ticks**, **strokeWidth** and **labelSpace** properties. The **data-ej-slidersettings-ticks** property ppecifies the slider ticks for radial menu item.**data-ej-slidersettings-strokewidth** attribute is used to specify the slider's stroke width value.**data-ej-slidersettings-labelspace** attribute is used to specify the value of slider label space.
+You can customize the **Radial Menu** slider settings by using the **ticks**, **strokeWidth** and **labelSpace** properties. The **data-ej-slidersettings-ticks** property specifies the slider ticks for radial menu item.**data-ej-slidersettings-strokewidth** attribute is used to specify the slider's stroke width value.**data-ej-slidersettings-labelspace** attribute is used to specify the value of slider label space.
 
 Refer to the following code example.
 
