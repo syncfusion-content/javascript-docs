@@ -1510,7 +1510,7 @@ $("#slider").ejSlider("getValue");
 
 
 
-To set value to slider handle.By defaut animation is false while set the value. If you want to enable the animation, pass the `enableAnimation` as true to this method. 
+To set value to slider handle.By default animation is false while set the value. If you want to enable the animation, pass the `enableAnimation` as true to this method. 
 
 
 
