@@ -5468,7 +5468,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/fqxo0isj)
 
 
 
-zOrder of the series.
+Z-order of the series.
 
 
 #### Default Value
@@ -23748,7 +23748,7 @@ $("#container").ejChart({
 
 
 
-zOrder of the series.
+Z-order of the series.
 
 
 #### Default Value
