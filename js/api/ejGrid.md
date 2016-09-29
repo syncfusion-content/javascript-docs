@@ -1326,6 +1326,30 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
+### columns.priority `Number`
+{:#members:columns-priority}
+
+Gets or sets a value that indicates the order of Column that are to be hidden or visible when Grid element is in responsive mode and could not occupy all columns. 
+
+#### Default Value:
+{:.param}
+* null
+
+#### Example
+{:.example}
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
+$("#Grid").ejGrid({             
+  dataSource:window.gridData,
+  editSettings:{allowEditing:true},
+  isResponsive: true,
+  minWidth: 400,
+  columns:[{field:"OrderID",isPrimaryKey:true},{field:"CustomerID", priority: 2},{field:"ShipCity", priority: 1}]
+});
+</script> 
+{% endhighlight %}
+
 ### columns.showInColumnChooser `Boolean`
 {:#members:columns-showincolumnchooser}
 
@@ -1912,10 +1936,6 @@ Add a comment to this line
 <td class="name">Normal</td>
 <td class="description">Edit mode is normal.</td>
 </tr>
-<tr>
-<td class="name">Clip</td>
-<td class="description">Truncate the text in the cell</td>
-</tr> 
 <tr>
 <td class="name">Dialog</td>
 <td class="description">Edit mode is dialog.</td>
@@ -2906,35 +2926,6 @@ $("#Grid").ejGrid({
 </script>
 {% endhighlight %}
 
-### mediaSettings `Object`
-{:#members:mediasettings}
-
-Gets or sets an object that indicates whether to modify the media query default configuration.
-
-### mediaSettings.phone `Number`
-{:#members:mediaSettings-phone}
-
-Gets or sets a value that indicates whether the grid rows has to be rendered as detail view in mobile mode while enableResponsiveRow property is set as true and also need to set same value for max-width in ejgrid.responsive.css file
-
-#### Default Value:
-{:.param}
-* 320
-
-#### Example
-{:.example}
-{% highlight html %}
-<div id="Grid"></div> 
-<script>
-$("#Grid").ejGrid({
-    dataSource:  window.gridData,
-    allowPaging: true, 
-    isResponsive: true,
-    enableResponsiveRow: true, 
-    mediaSettings: { phone: 340 }
-});
-</script>
-{% endhighlight %}
-
 ### pageSettings `Object`
 {:#members:pagesettings}
 
@@ -3216,23 +3207,26 @@ $("#Grid").ejGrid({
 ### resizeSettings `Object`
 {:#members:resizeSettings}
 
-Gets or sets an object that indicates whether to modify the resizing behaviour.
+Gets or sets an object that indicates whether to modify the resizing behavior.
 ### resizeSettings.resizeMode `enum`
 {:#members:resizeSettings-resizeMode}
 
 <ts name="ej.Grid.ResizeMode"/>
 
 Gets or sets a value that indicates whether to define the mode of resizing.
-Accepting types are "nextcolumn" and "control".
 
 #### Default Value:
 {:.param}
-* ej.Grid.ResizeMode.NextColumn
+* ej.Grid.ResizeMode.Normal
 
 <table>
 <tr>
 <th>Name</th>
 <th>Description</th>
+</tr>
+<tr>
+<td class="name">Normal</td>
+<td class="description">New column size will be adjusted by all other Columns</td>
 </tr>
 <tr>
 <td class="name">NextColumn</td>
@@ -3537,10 +3531,8 @@ $("#Grid").ejGrid({
 </script>
 {% endhighlight %}
 
-### selectionSettings.selectionMode `enum`
+### selectionSettings.selectionMode `Array`
 {:#members:selectionsettings-selectionmode}
-
-<ts name="ej.Grid.SelectionMode"/>
 
 Gets or sets a value that indicates whether to add the default selection actions as a selection mode.See selectionMode
 
@@ -3709,7 +3701,7 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### scrollSettings.height `Number`
+### scrollSettings.height `String|Number`
 {:#members:scrollsettings-height}
 
 This specify the grid to show the vertical scroll bar, to scroll and view the grid contents.
@@ -3769,7 +3761,29 @@ $("#Grid").ejGrid({
 </script>                          
 {% endhighlight %}
 
-### scrollSettings.width `Number`
+### scrollSettings.enableVirtualization `Boolean`
+{:#members:scrollsettings-enablevirtualization}
+
+This is used to enable the enhanced virtual scrolling in Grid.
+
+#### Default Value:
+{:.param}
+* false
+
+#### Example
+{:.example}
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
+$("#Grid").ejGrid({
+   dataSource:window.gridData,
+   allowScrolling: true,
+   scrollSettings: { width: 550, height: 300, enableVirtualization: true }
+});
+</script> 
+{% endhighlight %}
+
+### scrollSettings.width `String|Number`
 {:#members:scrollsettings-width}
 
 This specify the grid to show the horizontal scroll bar, to scroll and view the grid contents
@@ -7187,6 +7201,60 @@ gridObj.getSelectedRecords();
 <script>
 // Gets the selected row list
 $("#Grid").ejGrid("getSelectedRecords");        
+</script>{% endhighlight %}
+
+### getSummaryValues(summaryCol, summaryData)
+{:#methods:getsummaryvalues}
+
+Get the calculated summary values of JSON data passed to it
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">summaryCol</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Pass Summary Column details</td>
+</tr>
+<tr>
+<td class="name">summaryData</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Pass JSON Array for which its field values to be calculated</td>
+</tr>
+</tbody>
+</table>
+
+#### Returns:
+{:#methods:returns:}
+
+Number
+
+####Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<script>
+// Create grid object.
+var gridObj = $("#Grid").data("ejGrid");
+var summaryCol = { summaryType: ej.Grid.SummaryType.Average, displayColumn: "Freight", dataMember: "Freight" };
+// Get the calculated summary values of JSON data passed to it
+gridObj.getSummaryValues(summaryCol, window.gridData); 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
+// Get the calculated summary values of JSON data passed to it
+$("#Grid").ejGrid("getSummaryValues", summaryCol, window.gridData);        
 </script>{% endhighlight %}
 
 

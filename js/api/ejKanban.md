@@ -252,6 +252,53 @@ To enable or disable items count in swim lane.
 
 {% endhighlight %}
 
+### swimlaneSettings.allowDragAndDrop `boolean`
+{:#members:swimlanesettings-allowdraganddrop}
+
+To enable or disable DragAndDrop across swim lane.
+
+#### Default Value:
+
+* false
+
+#### Example
+
+{% highlight html %}
+  
+    <div id="Kanban"></div>
+    <script type="text/javascript">
+    window.kanbandata = [
+        { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
+        { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
+        { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
+        { Id: 4, Status: "Testing", Summary: "Task4", Assignee: "Nancy" }
+    ];
+    $(function () {
+        var data = ej.DataManager(window.kanbandata);
+        $("#Kanban").ejKanban({
+            dataSource: data,
+            allowDragAndDrop: true,
+            columns: [
+                { headerText: "Backlog", key: "Open" },
+                { headerText: "In Progress", key: "InProgress" },
+                { headerText: "Testing", key: "Testing" },
+                { headerText: "Done", key: "Close" }
+            ],
+            keyField: "Status",
+            fields: {
+                primaryKey: "Id",
+				swimlaneKey: "Assignee",
+                content: "Summary",
+            },
+			swimlaneSettings:{
+					     allowDragAndDrop: true,
+				    },
+        });
+    });
+    </script>
+
+{% endhighlight %}
+
 ### allowToggleColumn `boolean`
 {:#members:allowtogglecolumn}
 
@@ -335,6 +382,57 @@ To enable Searching operation in Kanban.
                 },
                 allowSearching: true,
             });
+    });
+    </script>
+    
+{% endhighlight %}
+
+### allowFiltering `boolean`
+{:#members:allowfiltering}
+
+To enable filtering behavior on Kanban.User can specify query in filterSettings collection after enabling allowFiltering.
+
+#### Default Value:
+
+* false
+
+#### Example
+
+{% highlight html %}
+
+     <div id="Kanban"></div>
+    <script type="text/javascript">
+    window.kanbandata = [
+        { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Janet Leverling" },
+        { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
+        { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
+        { Id: 4, Status: "Testing", Summary: "Task4", Assignee: "Janet Leverling" }
+    ];
+    $(function () {
+        var data = ej.DataManager(window.kanbandata);
+        $("#Kanban").ejKanban(
+                {
+                    dataSource: data,
+					isResponsive:true,
+                    columns: [
+                        { headerText: "Backlog", key: "Open" },
+                        { headerText: "In Progress", key: "InProgress" },
+                        { headerText: "Testing", key: "Testing" },
+                        { headerText: "Done", key: "Close" }
+                    ],      
+                    allowTitle: true,		
+                    allowFiltering:true,		
+                    keyField: "Status",
+                    filterSettings: [
+                         { text: "Janet Issues", query: new ej.Query().where("Assignee", "equal", "Janet Leverling"), description: "Displays issues which matches the assignee as 'Janet Leverling'" },
+                         { text: "Testing Issues", query: new ej.Query().where("Status", "equal", "Testing"), description: "Display the issues of 'Testing'" }
+                    ],
+					fields: {
+					     primaryKey: "Id",
+					     content: "Summary",
+					     imageUrl: "ImgUrl"
+			         }, 
+              });
     });
     </script>
     
@@ -751,7 +849,7 @@ Its used to add specific default context menu items.
             },
             contextMenuSettings: {
                 enable: true,
-                menuItems:[{ menuItem: "Move Right"},{menuItem: "Move Left"  }],
+                menuItems:["Move Right","Move Left"],
             }
         });
     });
@@ -1088,6 +1186,49 @@ Gets or sets an object that indicates to render the Kanban with specified column
 
 {% endhighlight %}
 
+### columns.totalCount `string`
+{:#members:columns-totalcount}
+
+To customize the totalCount properties.
+    
+#### Default Value:
+
+* false
+
+#### Example
+
+{% highlight html %}
+ 
+    <div id="Kanban"></div>
+    <script type="text/javascript">
+    window.kanbandata = [
+         { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
+         { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
+         { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
+         { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Nancy" }
+    ];
+    $(function () {
+        var data = ej.DataManager(window.kanbandata);
+        $("#Kanban").ejKanban(
+            {
+                enableTotalCount: true,
+                dataSource: data,
+                columns: [
+                    { headerText: "Backlog", key: "Open",totalCount:{text:"OpenCount"}},
+                    { headerText: "In Progress", key: "InProgress" },
+                    { headerText: "Testing", key: "Testing" }
+                ],
+                keyField: "Status",
+                fields: {
+                    primaryKey: "Id",                    
+                    content: "Summary"
+                }
+            });
+    });
+    </script>
+
+{% endhighlight %}
+
 ### columns.key `string/number`
 {:#members:columns-key}
 
@@ -1132,6 +1273,116 @@ Gets or sets an object that indicates to render the Kanban with specified column
     </script>
 
  {% endhighlight %}
+
+### columns.allowDrop `boolean`
+{:#members:columns-allowdrop}
+
+To enable/disable allowDrop for specific column wise.
+
+#### Default Value
+
+* false
+
+#### Example
+
+{% highlight html %}
+
+    <div id="Kanban"></div>
+    <script type="text/javascript">
+	window.kanbanPizzaData=[
+	{Id:1,Title:"Mexican Green Wave",Type:"Vegetarian",Size:"Small",Category:"Order",Description:"Stromboli sandwich with chili sauce.",Tags:"Onions, Pepper, Cheese",ImageURL:"../content/images/kanban/menu_09.png" },
+	{Id:2,Title:"Milan Veg Fantasy",Type:"Vegetarian",Size:"Medium",Category:"Order",Description:"Zucchini wrapped in spicy grilled seasoning along with tomato and jalapeno.",Tags:"Onions, Pepper, Tomato, Zucchini",ImageURL:"../content/images/kanban/menu_01.png" },
+	{Id:3,Title:"Peppy Paneer",Type:"Vegetarian",Size:"Large",Category:"Ready to Serve",Description:"It's made using toppings of tomato, mozzarella cheese and fresh basil, which represent the red, white and green of the Italian flag.",Tags:"Onions, Pepper, Cheese",ImageURL:"../content/images/kanban/menu_02.png" },
+	{Id:4,Title:"Margherita",Type:"Vegetarian",Size:"Small",Category:"Ready to Deliver",Description:"Lebanese Pizza topped with tomato sauce.",Tags:"Onions, Pepper, Cheese",ImageURL:"../content/images/kanban/menu_03.png" },
+	{Id:5,Title:"Farm House",Type:"Vegetarian",Size:"Small",Category:"Delivered",Description:"Stromboli sandwich with chili sauce.",Tags:"Onions, Pepper, Cheese",ImageURL:"../content/images/kanban/menu_04.png" },
+	]
+        $(function() {
+            var data = ej.DataManager(window.kanbanPizzaData)
+            $("#Kanban").ejKanban(
+                {
+                    dataSource: data,
+					workflows:[
+					{key:"Order",allowedTransitions:"Ready to Serve,Ready to Deliver"},
+					{key:"Ready to Serve",allowedTransitions:"Served"},
+					{key:"Ready to Deliver",allowedTransitions:"Delivered"}
+					],
+					enableTotalCount:true,
+					allowToggleColumn:true,
+                    columns: [
+                        { headerText: "Order", key: "Order",allowDrop:false},
+                        { headerText: "Ready to Serve", key: "Ready to Serve"},
+                        { headerText: "Home Delivery", key: "Ready to Deliver" },
+						{ headerText: "Served or Delivered", key: "Delivered,Served"}
+                    ],   
+                    keyField: "Category",
+					allowTitle: true,
+					fields: {
+					    content: "Description",
+					    primaryKey: "Id",
+						title:"Title",
+						color: "Size",
+					    imageUrl: "ImageURL"
+					},
+					  
+                });
+        });
+    </script>
+{% endhighlight %}
+
+### columns.allowDrag `boolean`
+{:#members:columns-allowdrag}
+
+To enable/disable allowDrag for specific column wise.
+
+#### Default Value
+
+* false
+
+#### Example
+
+{% highlight html %}
+
+    <div id="Kanban"></div>
+    <script type="text/javascript">
+	window.kanbanPizzaData=[
+	{Id:1,Title:"Mexican Green Wave",Type:"Vegetarian",Size:"Small",Category:"Order",Description:"Stromboli sandwich with chili sauce.",Tags:"Onions, Pepper, Cheese",ImageURL:"../content/images/kanban/menu_09.png" },
+	{Id:2,Title:"Milan Veg Fantasy",Type:"Vegetarian",Size:"Medium",Category:"Order",Description:"Zucchini wrapped in spicy grilled seasoning along with tomato and jalapeno.",Tags:"Onions, Pepper, Tomato, Zucchini",ImageURL:"../content/images/kanban/menu_01.png" },
+	{Id:3,Title:"Peppy Paneer",Type:"Vegetarian",Size:"Large",Category:"Ready to Serve",Description:"It's made using toppings of tomato, mozzarella cheese and fresh basil, which represent the red, white and green of the Italian flag.",Tags:"Onions, Pepper, Cheese",ImageURL:"../content/images/kanban/menu_02.png" },
+	{Id:4,Title:"Margherita",Type:"Vegetarian",Size:"Small",Category:"Ready to Deliver",Description:"Lebanese Pizza topped with tomato sauce.",Tags:"Onions, Pepper, Cheese",ImageURL:"../content/images/kanban/menu_03.png" },
+	{Id:5,Title:"Farm House",Type:"Vegetarian",Size:"Small",Category:"Delivered",Description:"Stromboli sandwich with chili sauce.",Tags:"Onions, Pepper, Cheese",ImageURL:"../content/images/kanban/menu_04.png" },
+	]
+        $(function() {
+            var data = ej.DataManager(window.kanbanPizzaData)
+            $("#Kanban").ejKanban(
+                {
+                    dataSource: data,
+					workflows:[
+					{key:"Order",allowedTransitions:"Ready to Serve,Ready to Deliver"},
+					{key:"Ready to Serve",allowedTransitions:"Served"},
+					{key:"Ready to Deliver",allowedTransitions:"Delivered"}
+					],
+					enableTotalCount:true,
+					allowToggleColumn:true,
+                    columns: [
+                        { headerText: "Order", key: "Order"},
+                        { headerText: "Ready to Serve", key: "Ready to Serve"},
+                        { headerText: "Home Delivery", key: "Ready to Deliver" },
+						{ headerText: "Served or Delivered", key: "Delivered,Served",allowDrag:false }
+                    ],   
+                    keyField: "Category",
+					allowTitle: true,
+					fields: {
+					    content: "Description",
+					    primaryKey: "Id",
+						title:"Title",
+						color: "Size",
+					    imageUrl: "ImageURL"
+					},
+					  
+                });
+        });
+    </script>
+{% endhighlight %}
 
 ### columns.isCollapsed `boolean`
 {:#members:columns-iscollapsed}
@@ -3542,6 +3793,7 @@ To customize the filtering behavior based on queries given.
                     primaryKey: "Id",
                     content: "Summary"
                 },
+                allowFiltering:true,
                 filterSettings: [
                          { text: "Janet Issues", query: new ej.Query().where("Assignee", "equal", "Janet Leverling"), description: "Displays issues which matches the assignee as 'Janet Leverling'" },
                          { text: "Testing Issues", query: new ej.Query().where("Status", "equal", "Testing"), description: "Display the issues of 'Testing'" }
@@ -4676,6 +4928,159 @@ To customize the tooltip display based on your requirements.
     
 {% endhighlight %}
   
+### workflows `array`
+{:#members:workflows}
+
+Gets or sets an object that indicates to render the Kanban with specified workflows.
+
+#### Default Value
+
+* array
+
+#### Example
+
+{% highlight html %}
+
+    <div id="Kanban"></div>
+    <script type="text/javascript">
+	window.kanbanPizzaData=[
+	{Id:1,Title:"Mexican Green Wave",Type:"Vegetarian",Size:"Small",Category:"Order",Description:"Stromboli sandwich with chili sauce.",Tags:"Onions, Pepper, Cheese",ImageURL:"../content/images/kanban/menu_09.png" },
+	{Id:2,Title:"Milan Veg Fantasy",Type:"Vegetarian",Size:"Medium",Category:"Order",Description:"Zucchini wrapped in spicy grilled seasoning along with tomato and jalapeno.",Tags:"Onions, Pepper, Tomato, Zucchini",ImageURL:"../content/images/kanban/menu_01.png" },
+	{Id:3,Title:"Peppy Paneer",Type:"Vegetarian",Size:"Large",Category:"Ready to Serve",Description:"It's made using toppings of tomato, mozzarella cheese and fresh basil, which represent the red, white and green of the Italian flag.",Tags:"Onions, Pepper, Cheese",ImageURL:"../content/images/kanban/menu_02.png" },
+	{Id:4,Title:"Margherita",Type:"Vegetarian",Size:"Small",Category:"Ready to Deliver",Description:"Lebanese Pizza topped with tomato sauce.",Tags:"Onions, Pepper, Cheese",ImageURL:"../content/images/kanban/menu_03.png" },
+	{Id:5,Title:"Farm House",Type:"Vegetarian",Size:"Small",Category:"Delivered",Description:"Stromboli sandwich with chili sauce.",Tags:"Onions, Pepper, Cheese",ImageURL:"../content/images/kanban/menu_04.png" },
+	]
+        $(function() {
+            var data = ej.DataManager(window.kanbanPizzaData)
+            $("#Kanban").ejKanban(
+                {
+                    dataSource: data,
+					workflows:[
+					{key:"Order",allowedTransitions:"Ready to Serve,Ready to Deliver"},
+					{key:"Ready to Serve",allowedTransitions:"Served"},
+					{key:"Ready to Deliver",allowedTransitions:"Delivered"}
+					],
+					enableTotalCount:true,
+					allowToggleColumn:true,
+                    columns: [
+                        { headerText: "Order", key: "Order"},
+                        { headerText: "Ready to Serve", key: "Ready to Serve"},
+                        { headerText: "Home Delivery", key: "Ready to Deliver" },
+						{ headerText: "Served or Delivered", key: "Delivered,Served"}
+                    ],   
+                    keyField: "Category",
+					allowTitle: true,
+					fields: {
+					    content: "Description",
+					    primaryKey: "Id"
+					}					  
+                });
+        });
+    </script>
+{% endhighlight %}
+
+### workflows.key  `string/number`
+{:#members:workflows-key}
+
+Gets or sets an object that indicates to render the Kanban with specified workflows key.
+
+#### Default Value
+
+* null
+
+#### Example
+
+{% highlight html %}
+
+    <div id="Kanban"></div>
+    <script type="text/javascript">
+	window.kanbanPizzaData=[
+	{Id:1,Title:"Mexican Green Wave",Type:"Vegetarian",Size:"Small",Category:"Order",Description:"Stromboli sandwich with chili sauce.",Tags:"Onions, Pepper, Cheese",ImageURL:"../content/images/kanban/menu_09.png" },
+	{Id:2,Title:"Milan Veg Fantasy",Type:"Vegetarian",Size:"Medium",Category:"Order",Description:"Zucchini wrapped in spicy grilled seasoning along with tomato and jalapeno.",Tags:"Onions, Pepper, Tomato, Zucchini",ImageURL:"../content/images/kanban/menu_01.png" },
+	{Id:3,Title:"Peppy Paneer",Type:"Vegetarian",Size:"Large",Category:"Ready to Serve",Description:"It's made using toppings of tomato, mozzarella cheese and fresh basil, which represent the red, white and green of the Italian flag.",Tags:"Onions, Pepper, Cheese",ImageURL:"../content/images/kanban/menu_02.png" },
+	{Id:4,Title:"Margherita",Type:"Vegetarian",Size:"Small",Category:"Ready to Deliver",Description:"Lebanese Pizza topped with tomato sauce.",Tags:"Onions, Pepper, Cheese",ImageURL:"../content/images/kanban/menu_03.png" },
+	{Id:5,Title:"Farm House",Type:"Vegetarian",Size:"Small",Category:"Delivered",Description:"Stromboli sandwich with chili sauce.",Tags:"Onions, Pepper, Cheese",ImageURL:"../content/images/kanban/menu_04.png" },
+	]
+        $(function() {
+            var data = ej.DataManager(window.kanbanPizzaData)
+            $("#Kanban").ejKanban(
+                {
+                    dataSource: data,
+					workflows:[
+					{key:"Order",allowedTransitions:"Ready to Serve,Ready to Deliver"},
+					{key:"Ready to Serve",allowedTransitions:"Served"},
+					{key:"Ready to Deliver",allowedTransitions:"Delivered"}
+					],
+					enableTotalCount:true,
+					allowToggleColumn:true,
+                    columns: [
+                        { headerText: "Order", key: "Order"},
+                        { headerText: "Ready to Serve", key: "Ready to Serve"},
+                        { headerText: "Home Delivery", key: "Ready to Deliver" },
+						{ headerText: "Served or Delivered", key: "Delivered,Served"}
+                    ],   
+                    keyField: "Category",
+					allowTitle: true,
+					fields: {
+					    content: "Description",
+					    primaryKey: "Id"
+					}					  
+                });
+        });
+    </script>
+{% endhighlight %}
+
+### workflows.allowedTransitions `string`
+{:#members:workflows-allowedtransitions}
+
+Gets or sets an object that indicates to render the Kanban with specified workflows allowed Transitions.
+
+#### Default Value
+
+* null
+
+#### Example
+
+{% highlight html %}
+
+    <div id="Kanban"></div>
+    <script type="text/javascript">
+	window.kanbanPizzaData=[
+	{Id:1,Title:"Mexican Green Wave",Type:"Vegetarian",Size:"Small",Category:"Order",Description:"Stromboli sandwich with chili sauce.",Tags:"Onions, Pepper, Cheese",ImageURL:"../content/images/kanban/menu_09.png" },
+	{Id:2,Title:"Milan Veg Fantasy",Type:"Vegetarian",Size:"Medium",Category:"Order",Description:"Zucchini wrapped in spicy grilled seasoning along with tomato and jalapeno.",Tags:"Onions, Pepper, Tomato, Zucchini",ImageURL:"../content/images/kanban/menu_01.png" },
+	{Id:3,Title:"Peppy Paneer",Type:"Vegetarian",Size:"Large",Category:"Ready to Serve",Description:"It's made using toppings of tomato, mozzarella cheese and fresh basil, which represent the red, white and green of the Italian flag.",Tags:"Onions, Pepper, Cheese",ImageURL:"../content/images/kanban/menu_02.png" },
+	{Id:4,Title:"Margherita",Type:"Vegetarian",Size:"Small",Category:"Ready to Deliver",Description:"Lebanese Pizza topped with tomato sauce.",Tags:"Onions, Pepper, Cheese",ImageURL:"../content/images/kanban/menu_03.png" },
+	{Id:5,Title:"Farm House",Type:"Vegetarian",Size:"Small",Category:"Delivered",Description:"Stromboli sandwich with chili sauce.",Tags:"Onions, Pepper, Cheese",ImageURL:"../content/images/kanban/menu_04.png" },
+	]
+        $(function() {
+            var data = ej.DataManager(window.kanbanPizzaData)
+            $("#Kanban").ejKanban(
+                {
+                    dataSource: data,
+					workflows:[
+					{key:"Order",allowedTransitions:"Ready to Serve,Ready to Deliver"},
+					{key:"Ready to Serve",allowedTransitions:"Served"},
+					{key:"Ready to Deliver",allowedTransitions:"Delivered"}
+					],
+					enableTotalCount:true,
+					allowToggleColumn:true,
+                    columns: [
+                        { headerText: "Order", key: "Order"},
+                        { headerText: "Ready to Serve", key: "Ready to Serve"},
+                        { headerText: "Home Delivery", key: "Ready to Deliver" },
+						{ headerText: "Served or Delivered", key: "Delivered,Served"}
+                    ],   
+                    keyField: "Category",
+					allowTitle: true,
+					fields: {
+					    content: "Description",
+					    primaryKey: "Id"
+					}					  
+                });
+        });
+    </script>
+{% endhighlight %}
+
 ### locale `String`
 {:#members:locale}
 
@@ -4737,81 +5142,6 @@ Gets or sets a value that indicates whether to customizing the user interface (U
 
 ## Methods
 
-### clearSearch()
-{:#methods:clearsearch}
-
-Method used for send a clear search request to Kanban.
-
-#### Example
-
-{% highlight html %}
- 
-    <script>
-    // Create Kanban object.
-    var kanbanObj = $("#Kanban").data("ejKanban");
-    // Sends a clearSearch request to the Kanban
-    kanbanObj.clearSearch(); 
-    </script>
-
-{% endhighlight %}
-
-### clearSelection()
-{:#methods:clearselection}
-
-It is used to clear all the card selection.
-
-#### Example
-
-{% highlight html %}
- 
-    <script>
-    // Create Kanban object.
-    var kanbanObj = $("#kanban").data("ejKanban");
-    kanbanObj.clearSelection();  // clears all of the card selection
-    </script>
-    
-{% endhighlight %}
-
-
-{% highlight html %}
- 
-    <script>         
-    // clears all of the card selection
-    $("#Kanban").ejKanban("clearSelection");        
-    </script>
-    
-{% endhighlight %}
-
-
-### collapseAll()
-{:#methods:collapseall}
-
-Collapse all the swimlane rows in Kanban.
-
-#### Example
-
-{% highlight html %}
- 
-    <script>
-    // Create Kanban object.
-    var kanbanObj = $("#Kanban").data("ejKanban");
-    // Collapse all the  rows
-    kanbanObj.collapseAll(); 
-    </script>
-    
-{% endhighlight %}
-
-
-{% highlight html %}
- 
-    <script>
-    // Collapse all the group caption rows
-    $("#Kanban").ejKanban("collapseAll");        
-    </script>
-    
-{% endhighlight %}
-
-
 ### columns(column,key,\[action\])
 {:#methods:columns}
 
@@ -4855,24 +5185,6 @@ Add or remove columns in Kanban columns collections.Default action is add.
     kanbanObj.columns("Testing","Testing", "remove");
     // Add new column into Kanban or modified already existing column in the Kanban.
     kanbanObj.columns("Codereview","codereview","add"); 
-    </script>
-    
-{% endhighlight %}
-
-### clearFilter()
-{:#methods:clearfilter}
-
-Send a clear request to filter cards in the kanban.
-
-#### Example
-
-{% highlight html %}
- 
-    <script>
-    // Create Kanban object.
-    var kanbanObj = $("#Kanban").data("ejKanban");
-    // Sends clear request to filter the cards
-    kanbanObj.clearFilter();
     </script>
     
 {% endhighlight %}
@@ -4944,40 +5256,6 @@ Refresh the Kanban with new data source.
     $("#Kanban").ejKanban("dataSource", data);        
     </script>
 
-{% endhighlight %}
-
-### filterCards()
-{:#methods:filtercards}
-
-Send a filtering request to cards in the kanban.
-
- <table class="params">
-    <thead>
-    <tr>
-    <th>Name</th>
-    <th>Type</th>
-    <th class="last">Description</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-    <td class="name">query</td><td class="type"><span class="param-type">object</span></td>
-    <td class="description last">Pass the query to the cards</td>
-    </tr>
-    </tbody>
-    </table>
-
-#### Example
-
-{% highlight html %}
- 
-    <script>
-    // Create Kanban object.
-    var kanbanObj = $("#Kanban").data("ejKanban");
-    // Sends filtering request to the cards
-    kanbanObj.filterCards(new ej.Query().where("Assignee", "equal", "Janet Leverling"));
-    </script>
-    
 {% endhighlight %}
 
 ### toggleColumn(headerText or $div)
@@ -5071,82 +5349,6 @@ Expand or collapse the card based on the state of target "div"
       $("#Kanban").ejKanban("toggleCard",("2"));        
       </script>
       
-{% endhighlight %}
-
-### toggleSwimlane($div or key)
-{:#methods:toggleswimlane}
-
-Expand or collapse the swimlane row based on the state of target "div"
-
- <table class="params">
-    <thead>
-    <tr>
-    <th>Name</th>
-    <th>Type</th>
-    <th class="last">Description</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-    <td class="name">
-    $div 
-    </td>
-    <td class="type"><span class="param-type">object</span></td>
-    <td class="description last">Pass the div object to toggleSwimlane row based on its row state</td>
-    </tr>
-    </tbody>
-    </table>
-
-#### Example
-
-{% highlight html %}
- 
-      <script>
-      // Create Kanban object.
-      var kanbanObj = $("#Kanban").data("ejKanban");
-      // toggleSwimlane the row based on the row state
-      kanbanObj.toggleSwimlane($(".e-slexpandcollapse").eq(1)); 
-      </script>
-      
-{% endhighlight %}
-
-
-{% highlight html %}
- 
-      <script>
-      // toggleSwimlane the row based on the row state
-      $("#Kanban").ejKanban("toggleSwimlane", $(".e-slexpandcollapse").eq(1)); 
-      </script>     
-      </script>
-      
-{% endhighlight %}
-
-### expandAll()
-{:#methods:expandall}
-
-Expand all the swimlane rows in Kanban.
-
-#### Example
-
-{% highlight html %}
- 
-    <script>
-    // Create Kanban object.
-    var kanbanObj = $("#Kanban").data("ejKanban");
-    // expand all the  rows
-    kanbanObj.expandAll(); 
-    </script>
-    
-{% endhighlight %}
-
-
-{% highlight html %}
- 
-    <script>
-    // expand all the group caption rows
-    $("#Kanban").ejKanban("expandAll");        
-    </script>
-    
 {% endhighlight %}
 
 ### getVisibleColumnNames()
@@ -5446,54 +5648,6 @@ Refresh the Kanban contents.The template refreshment is based on the argument pa
     
 {% endhighlight %}
 
-### searchCards(searchString)
-{:#methods:searchcards}
-
-Send a search request to Kanban with specified string passed in it.
-
-  <table class="params">
-    <thead>
-    <tr>
-    <th>Name</th>
-    <th>Type</th>
-    <th class="last">Description</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-    <td class="name">{% highlight html %}
-    searchString{% endhighlight %}</td>
-    <td class="type"><span class="param-type">string</span></td>
-    <td class="description last">Pass the string to search in Kanban card</td>
-    </tr>
-    </tbody>
-    </table>
-
-#### Example
-{:.example}
-
-
-{% highlight html %}
- 
-    <script>
-    // Create Kanban object.
-    var kanbanObj = $("#Kanban").data("ejKanban");
-    // Sends a search request to the Kanban
-    kanbanObj.searchCards("Analyse"); 
-    </script>
-
-{% endhighlight %}
-
-
-{% highlight html %}
-
-    <script>
-    // Sends a search request to the Kanban
-    $("#Kanban").ejKanban("searchCards", "Analyse");        
-    </script>
-    
-{% endhighlight %}
-
 ### showColumns(headerText)
 {:#methods:showcolumns}
 
@@ -5581,7 +5735,264 @@ Update a card in Kanban control based on key and JSON data given.
     // Create Kanban object.
     var kanbanObj = $("#Kanban").data("ejKanban");
     // Sends a update card request to the Kanban
-    kanbanObj.updateCard(2,{ Id: 2, Status: "Open", Summary: "Task 1", Assignee: "Andrew Piller");
+    kanbanObj.updateCard(2,{ Id: 2, Status: "Open", Summary: "Task 1", Assignee: "Andrew Piller"});
+    </script>
+    
+{% endhighlight %}
+
+### KanbanSelection
+{:#methods:kanbanselection}
+
+### KanbanSelection.clear()
+{:#methods:kanbanselection-clear}
+
+It is used to clear all the card selection.
+
+#### Example
+
+{% highlight html %}
+ 
+    <script>
+    // Create Kanban object.
+    var kanbanObj = $("#kanban").data("ejKanban");
+    kanbanObj.KanbanSelection.clear()  // clears all of the card selection
+    </script>
+    
+{% endhighlight %}
+
+
+{% highlight html %}
+ 
+    <script>         
+    // clears all of the card selection
+    $("#Kanban").ejKanban("clear");        
+    </script>
+    
+{% endhighlight %}
+
+### KanbanSwimlane
+{:#methods:kanbanswimlane}
+
+### KanbanSwimlane.expandAll()
+{:#methods:kanbanswimlane-expandall}
+
+Expand all the swimlane rows in Kanban.
+
+#### Example
+
+{% highlight html %}
+ 
+    <script>
+    // Create Kanban object.
+    var kanbanObj = $("#Kanban").data("ejKanban");
+    // expand all the  rows
+    kanbanObj.KanbanSwimlane.expandAll(); 
+    </script>
+    
+{% endhighlight %}
+
+
+{% highlight html %}
+ 
+    <script>
+    // expand all the group caption rows
+    $("#Kanban").ejKanban("expandAll");        
+    </script>
+    
+{% endhighlight %}
+
+### KanbanSwimlane.collapseAll()
+{:#methods:kanbanswimlane-collapseall}
+
+Collapse all the swimlane rows in Kanban.
+
+#### Example
+
+{% highlight html %}
+ 
+    <script>
+    // Create Kanban object.
+    var kanbanObj = $("#Kanban").data("ejKanban");
+    // Collapse all the  rows
+    kanbanObj.KanbanSwimlane.collapseAll();
+    </script>
+    
+{% endhighlight %}
+
+{% highlight html %}
+ 
+    <script>
+    // Collapse all the group caption rows
+    $("#Kanban").ejKanban("collapseAll");        
+    </script>
+    
+{% endhighlight %}
+
+### KanbanSwimlane.toggle($div or key)
+{:#methods:kanbanswimlane-toggle}
+
+Expand or collapse the swimlane row based on the state of target "div"
+
+ <table class="params">
+    <thead>
+    <tr>
+    <th>Name</th>
+    <th>Type</th>
+    <th class="last">Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td class="name">
+    $div 
+    </td>
+    <td class="type"><span class="param-type">object</span></td>
+    <td class="description last">Pass the div object to toggleSwimlane row based on its row state</td>
+    </tr>
+    </tbody>
+    </table>
+
+#### Example
+
+{% highlight html %}
+ 
+      <script>
+      // Create Kanban object.
+      var kanbanObj = $("#Kanban").data("ejKanban");
+      // toggle the row based on the row state
+      kanbanObj.KanbanSwimlane.toggle($(".e-slexpandcollapse").eq(1)); 
+      </script>
+      
+{% endhighlight %}
+
+
+{% highlight html %}
+ 
+      <script>
+      // toggle the row based on the row state
+      $("#Kanban").ejKanban("toggleSwimlane", $(".e-slexpandcollapse").eq(1)); 
+      </script>     
+      </script>
+      
+{% endhighlight %}
+
+### KanbanFilter
+{:#methods:kanbanfilter}
+
+### KanbanFilter.clearSearch()
+{:#methods:kanbanfilter-clearsearch}
+
+Method used for send a clear search request to Kanban.
+
+#### Example
+
+{% highlight html %}
+ 
+    <script>
+    // Create Kanban object.
+    var kanbanObj = $("#Kanban").data("ejKanban");
+    // Sends a clearSearch request to the Kanban
+    kanbanObj.KanbanFilter.clearSearch();
+    </script>
+
+{% endhighlight %}
+
+### KanbanFilter.searchCards(searchString)
+{:#methods:kanbanfilter-searchcards}
+
+Send a search request to Kanban with specified string passed in it.
+
+  <table class="params">
+    <thead>
+    <tr>
+    <th>Name</th>
+    <th>Type</th>
+    <th class="last">Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td class="name">{% highlight html %}
+    searchString{% endhighlight %}</td>
+    <td class="type"><span class="param-type">string</span></td>
+    <td class="description last">Pass the string to search in Kanban card</td>
+    </tr>
+    </tbody>
+    </table>
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+    <script>
+    // Create Kanban object.
+    var kanbanObj = $("#Kanban").data("ejKanban");
+    // Sends a search request to the Kanban
+    kanbanObj.KanbanFilter.searchCards("Analyse"); 
+    </script>
+
+{% endhighlight %}
+
+
+{% highlight html %}
+
+    <script>
+    // Sends a search request to the Kanban
+    $("#Kanban").ejKanban("searchCards", "Analyse");        
+    </script>
+    
+{% endhighlight %}
+
+### KanbanFilter.clearFilter()
+{:#methods:kanbanfilter-clearfilter}
+
+Send a clear request to filter cards in the kanban.
+
+#### Example
+
+{% highlight html %}
+ 
+    <script>
+    // Create Kanban object.
+    var kanbanObj = $("#Kanban").data("ejKanban");
+    // Sends clear request to filter the cards
+    kanbanObj.KanbanFilter.clearFilter();
+    </script>
+    
+{% endhighlight %}
+
+### KanbanFilter.filterCards()
+{:#methods:kanbanfilter-filtercards}
+
+Send a filtering request to cards in the kanban.
+
+ <table class="params">
+    <thead>
+    <tr>
+    <th>Name</th>
+    <th>Type</th>
+    <th class="last">Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td class="name">query</td><td class="type"><span class="param-type">object</span></td>
+    <td class="description last">Pass the query to the cards</td>
+    </tr>
+    </tbody>
+    </table>
+
+#### Example
+
+{% highlight html %}
+ 
+    <script>
+    // Create Kanban object.
+    var kanbanObj = $("#Kanban").data("ejKanban");
+    // Sends filtering request to the cards
+    kanbanObj.KanbanFilter.filterCards(new ej.Query().where("Assignee", "equal", "Janet Leverling"));
     </script>
     
 {% endhighlight %}

@@ -8,6 +8,7 @@ keywords: overview, ejOverview, overview api, syncfusion
 ---
 
 # ejOverview
+<ts root="datavisualization" />
 
 Overview control allows you to see a preview or an overall view of the entire content of a Diagram. This helps you to look at the overall picture of a large Diagram and also to navigate, pan, or zoom, on a particular position of the page.
 

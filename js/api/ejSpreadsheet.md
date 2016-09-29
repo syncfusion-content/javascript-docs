@@ -954,7 +954,7 @@ $('#Spreadsheet').ejSpreadsheet({
 ### cssClass `String`
 {:#members:cssclass}
 
-Gets or sets a value to add root css class for customizing Spreadsheet skins.
+Gets or sets a value to add root CSS class for customizing Spreadsheet skins.
 
 #### Default Value
 * ""
@@ -1094,7 +1094,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 Gets or sets a value that indicates to define csvUrl for export to CSV format.
 
-N> User must specify [`allowExporting`](https://help.syncfusion.com/js/api/ejspreadsheet#members:exportsettings-allowexporting "allowExporting") `true` while use this property.
+N> User must specify [`allowExporting`](https://help.syncfusion.com/js/api/ejspreadsheet#members:exportsettings-allowexporting "allowExporting") `true` while using this property.
 
 #### Default Value
 * null
@@ -1119,7 +1119,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 Gets or sets a value that indicates to define excelUrl for export to excel format.
 
-N> User must specify [`allowExporting`](https://help.syncfusion.com/js/api/ejspreadsheet#members:exportsettings-allowexporting "allowExporting") `true` while use this property.
+N> User must specify [`allowExporting`](https://help.syncfusion.com/js/api/ejspreadsheet#members:exportsettings-allowexporting "allowExporting") `true` while using this property.
 
 #### Default Value
 * null
@@ -1144,7 +1144,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 Gets or sets a value that indicates to define password while export to excel format.
 
-N> User must specify [`allowExporting`](https://help.syncfusion.com/js/api/ejspreadsheet#members:exportsettings-allowexporting "allowExporting") `true` while use this property.
+N> User must specify [`allowExporting`](https://help.syncfusion.com/js/api/ejspreadsheet#members:exportsettings-allowexporting "allowExporting") `true` while using this property.
 
 #### Default Value
 * null
@@ -1168,7 +1168,7 @@ $('#Spreadsheet').ejSpreadsheet({
 ### exportSettings.pdfUrl `String`
 {:#members:exportsettings-pdfurl}
 
-Gets or sets a value that indicates to define pdfUrl for export to pdf format.
+Gets or sets a value that indicates to define pdfUrl for export to PDF format.
 
 N> User must specify [`allowExporting`](https://help.syncfusion.com/js/api/ejspreadsheet#members:exportsettings-allowexporting "allowExporting") `true` while using this property.
 
@@ -1566,7 +1566,7 @@ N>[`showRibbon`](https://help.syncfusion.com/js/api/ejspreadsheet#members:showri
 ### ribbonSettings.applicationTab.type `Enum`
 {:#members:ribbonsettings-applicationtab-type}
 
-<ts name="ej.Ribbon.ApplicationTabType"/>
+<ts ref="ej.Ribbon.ApplicationTabType"/>
 
 Gets or sets a value that indicates to set application tab type in Spreadsheet. It has two types, Menu and Backstage.
 
@@ -1645,7 +1645,7 @@ $('#Spreadsheet').ejSpreadsheet({
 ### ribbonSettings.applicationTab.menuSettings.dataSource `Array`
 {:#members:ribbonsettings-applicationtab-menusettings-datasource}
 
-Specifies the data source to append in applicationtab.
+Specifies the data source to append in application tab.
 
 #### Default Value
 * []
@@ -3074,6 +3074,35 @@ $('#Spreadsheet').ejSpreadsheet({
 
 {% endhighlight %}
 
+### sheets.rows.cells.comment.value `String`
+{:#members:sheets-rows-cells-comment-value}
+
+Specifies the value for the comment in Spreadsheet.
+
+#### Default Value:
+
+* "" 
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+    sheets:[{
+        rows:[
+            {
+                cells: [
+                    { value: "Item Name",comment: { value: "Name of the item" , isVisible:true}}
+                ]
+            }
+        ]
+    }]    
+});
+</script>
+
+{% endhighlight %}
+
 ### sheets.rows.cells.format `Object`
 {:#members:sheets-rows-cells-format}
 
@@ -3298,6 +3327,90 @@ $('#Spreadsheet').ejSpreadsheet({
             }
         ]
     }]    
+});
+</script>
+
+{% endhighlight %}
+
+### sheets.rows.cells.style.backgroundColor `String`
+{:#members:sheets-rows-cells-style-backgroundcolor}
+
+Specifies the background color of a cell in the Spreadsheet.
+
+#### Default Value:
+* ""
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+    sheets: [{
+        rows: [
+            {
+                cells: [
+                    { value: "Item Name", style: { "background-color": "#428bca" } }
+                ]
+            }
+        ]
+    }]
+});
+</script>
+
+{% endhighlight %}
+
+### sheets.rows.cells.style.color `String`
+{:#members:sheets-rows-cells-style-color}
+
+Specifies the font color of a cell in the Spreadsheet.
+
+#### Default Value:
+* ""
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+    sheets: [{
+        rows: [
+            {
+                cells: [
+                    { value: "Item Name", style: { "color": "#428bca" } }
+                ]
+            }
+        ]
+    }]
+});
+</script>
+
+{% endhighlight %}
+
+### sheets.rows.cells.style.fontWeight `String`
+{:#members:sheets-rows-cells-style-fontweight}
+
+Specifies the font weight of a cell in the Spreadsheet.
+
+#### Default Value:
+* ""
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+    sheets: [{
+        rows: [
+            {
+                cells: [
+                    { value: "Item Name", style: { "font-weight": "bold" } }
+                ]
+            }
+        ]
+    }]
 });
 </script>
 
@@ -4552,7 +4665,7 @@ $("#Spreadsheet").ejSpreadsheet("getFrozenColumns", 1);
 ### getFrozenRows(sheetIdx)
 {:#methods:getfrozenrows}
 
-This method is used to get the frozen row’s index in Spreadsheet.
+This method is used to get the frozen row index in Spreadsheet.
 <table class="params">
 <thead>
 <tr>
@@ -8798,6 +8911,23 @@ xlObj.XLRibbon.removeNamedRange("PRICE_LIST");
 
 {% endhighlight %}
 
+### XLRibbon.updateRibbonIcons()
+{:#methods:xlribbon-updateribbonicons}
+
+This method is used to update the ribbon icons in the Spreadsheet.
+
+#### Example
+
+{% highlight html %}
+<script>
+//initialize the Spreadsheet object
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+// To update the ribbon icons in the spreadsheet based on the active sheet index.
+xlObj.XLRibbon.updateRibbonIcons();
+</script>
+
+{% endhighlight %}
+
 ### XLSearch
 {:#methods:xlsearch}
 
@@ -10367,7 +10497,7 @@ Triggered while cell is formatting.
 <tr>
 <td class="name">cssClass</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description">Returns the name of the css theme.</td>
+<td class="description">Returns the name of the CSS theme.</td>
 </tr>
 <tr>
 <td class="name">type</td>
@@ -11346,7 +11476,7 @@ $('#Spreadsheet').ejSpreadsheet({
 {% endhighlight %}
 
 ### onImport
-{:#events:onImport}
+{:#events:onimport}
 
 Triggered when a file is imported.
 

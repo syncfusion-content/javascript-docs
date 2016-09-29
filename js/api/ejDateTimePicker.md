@@ -404,7 +404,7 @@ Specifies the header format of the datepicker inside the DateTimePicker popup. S
 
 
 
-* ej.DatePicker.Header.Min
+* ej.DatePicker.Header.Short
 
 
 
@@ -441,7 +441,7 @@ Specifies the header format of the datepicker inside the DateTimePicker popup. S
 
 
 
-Specifies the drill down level in datepicker inside the DateTimePicker popup. See ej.DatePicker.Level
+Specifies the navigation depth level in DatePicker calendar inside DateTimePicker popup. This option is not applied when start level view option is lower than depth level view. See ej.DatePicker.Level
 
 
 

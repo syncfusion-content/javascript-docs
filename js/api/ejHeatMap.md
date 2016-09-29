@@ -8,6 +8,7 @@ keywords: heatmap, ejHeatMap, heatmap api, syncfusion
 ---
 
 #ejHeatMap
+<ts root="datavisualization" />
 
 Essential HeatMap JS represents tabular data values as gradient colors instead of numbers,low and high values are different colors with different gradients.
 
@@ -174,7 +175,7 @@ Specifies the property of the heat map cell.
 ### heatMapCell.showContent `enum`
 {:#members:heatmapCell-showContent}
  
-<ts name = "ej.HeatMap.CellVisibility"/>
+<ts name = "ej.datavisualization.HeatMap.CellVisibility"/>
 
 Specifies whether the cell content can be visible or not.
 
@@ -318,7 +319,7 @@ Specifies the default column properties for all the column style not specified i
 
 Specifies the alignment mode of the heat map column.
 
-<ts name = "ej.HeatMap.TextAlign"/>
+<ts name = "ej.datavisualization.HeatMap.TextAlign"/>
 
 Enables/disables the bold style
 
@@ -1139,7 +1140,7 @@ specifies the text value of the heat map label.
 ### colorMappingCollection.label.textDecoration `enum`
 {:#members:colorMappingCollection-label-textDecoration}
 
-<ts name = "ej.HeatMap.TextDecoration "/>
+<ts name = "ej.datavisualization.HeatMap.TextDecoration "/>
 
 Specifies the text style of the heat map label.
 

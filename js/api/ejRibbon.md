@@ -85,7 +85,7 @@ Enables the ribbon resize feature.allowResizing is a deprecated property of isRe
                 width: "100%",
                 allowResizing: true,
                 applicationTab: {
-                    type: ej.Ribbon.applicationTabType.menu,
+                    type: ej.Ribbon.ApplicationTabType.Menu,
                     menuItemID: "ribbonmenu",
                     menuSettings: {
                         openOnClick: false
@@ -96,7 +96,7 @@ Enables the ribbon resize feature.allowResizing is a deprecated property of isRe
                     text: "HOME",
                     groups: [{
                         text: "Clipboard",
-                        alignType: ej.Ribbon.alignType.rows,
+                        alignType: ej.Ribbon.AlignType.Rows,
                         content: [{
                             groups: [{
                                 id: "cut",
@@ -109,14 +109,14 @@ Enables the ribbon resize feature.allowResizing is a deprecated property of isRe
                                 text: "Paste"
                             }],
                             defaults: {
-                                type: ej.Ribbon.type.button,
+                                type: ej.Ribbon.Type.Button,
                                 height: 70,
                                 width: 75
                             }
                         }]
                     }, {
                         text: "Font",
-                        alignType: ej.Ribbon.alignType.rows,
+                        alignType: ej.Ribbon.AlignType.Rows,
                         content: [{
                             groups: [{
                                 id: "bold",
@@ -129,14 +129,14 @@ Enables the ribbon resize feature.allowResizing is a deprecated property of isRe
                                 text: "Underline"
                             }],
                             defaults: {
-                                type: ej.Ribbon.type.button,
+                                type: ej.Ribbon.Type.Button,
                                 height: 70,
                                 width: 75
                             }
                         }]
                     }, {
                         text: "Alignment",
-                        alignType: ej.Ribbon.alignType.rows,
+                        alignType: ej.Ribbon.AlignType.Rows,
                         content: [{
                             groups: [{
                                 id: "left",
@@ -149,7 +149,7 @@ Enables the ribbon resize feature.allowResizing is a deprecated property of isRe
                                 text: "Right"
                             }],
                             defaults: {
-                                type: ej.Ribbon.type.button,
+                                type: ej.Ribbon.Type.Button,
                                 height: 70,
                                 width: 75
                             }
@@ -194,7 +194,7 @@ When set to true, adapts the Ribbon layout to fit the screen size of devices on 
                 width: "100%",
                 isResponsive: true,
                 applicationTab: {
-                    type: ej.Ribbon.applicationTabType.menu,
+                    type: ej.Ribbon.ApplicationTabType.Menu,
                     menuItemID: "ribbonmenu",
                     menuSettings: {
                         openOnClick: false
@@ -205,7 +205,7 @@ When set to true, adapts the Ribbon layout to fit the screen size of devices on 
                     text: "HOME",
                     groups: [{
                         text: "Clipboard",
-                        alignType: ej.Ribbon.alignType.rows,
+                        alignType: ej.Ribbon.AlignType.Rows,
                         content: [{
                             groups: [{
                                 id: "cut",
@@ -218,14 +218,14 @@ When set to true, adapts the Ribbon layout to fit the screen size of devices on 
                                 text: "Paste"
                             }],
                             defaults: {
-                                type: ej.Ribbon.type.button,
+                                type: ej.Ribbon.Type.Button,
                                 height: 70,
                                 width: 75
                             }
                         }]
                     }, {
                         text: "Font",
-                        alignType: ej.Ribbon.alignType.rows,
+                        alignType: ej.Ribbon.AlignType.Rows,
                         content: [{
                             groups: [{
                                 id: "bold",
@@ -238,14 +238,14 @@ When set to true, adapts the Ribbon layout to fit the screen size of devices on 
                                 text: "Underline"
                             }],
                             defaults: {
-                                type: ej.Ribbon.type.button,
+                                type: ej.Ribbon.Type.Button,
                                 height: 70,
                                 width: 75
                             }
                         }]
                     }, {
                         text: "Alignment",
-                        alignType: ej.Ribbon.alignType.rows,
+                        alignType: ej.Ribbon.AlignType.Rows,
                         content: [{
                             groups: [{
                                 id: "left",
@@ -258,7 +258,7 @@ When set to true, adapts the Ribbon layout to fit the screen size of devices on 
                                 text: "Right"
                             }],
                             defaults: {
-                                type: ej.Ribbon.type.button,
+                                type: ej.Ribbon.Type.Button,
                                 height: 70,
                                 width: 75
                             }
@@ -268,6 +268,120 @@ When set to true, adapts the Ribbon layout to fit the screen size of devices on 
             });
         });      
     </script>  
+
+{% endhighlight %}
+
+### isMobileOnly `boolean`
+{:#members:ismobileonly}
+
+When isMobileOnly is true,its shows in mobile toolbar.
+
+#### Default Value
+
+* false
+
+#### Example
+
+{% highlight html %}
+ 
+    <div id="defaultRibbon"></div>
+    <script type="text/javascript">
+        $(function () {
+            $("#defaultRibbon").ejRibbon({
+                width: "100%",
+                allowResizing: true,
+                groupClick: function (args) {
+                    if ($(args.target).hasClass("e-ribGroupContent") && args.targetElement == "resizedGroup")
+                        this.goToMainContent();
+                },
+                tabs: [{
+                    id: "home", text: "HOME", groups: [ {
+                        text: "Font", alignType: "rows", content: [{
+                            groups: [{
+                                id: "bold",
+                                type: ej.Ribbon.Type.ToggleButton,
+                                isMobileOnly: true,
+                                toggleButtonSettings: {
+                                    contentType: ej.ContentType.ImageOnly,
+                                    defaultText: "Bold",
+                                    activeText: "Bold",
+                                    defaultPrefixIcon: "e-icon e-ribbon e-resbold",
+                                    activePrefixIcon: "e-icon e-ribbon e-resbold",
+                                    click: "executeAction"
+                                }
+                            },
+                               {
+                                   id: "italic",
+                                   type: ej.Ribbon.Type.ToggleButton,
+                                   isMobileOnly: true,
+                                   toggleButtonSettings: {
+                                       contentType: ej.ContentType.ImageOnly,
+                                       defaultText: "Italic",
+                                       activeText: "Italic",
+                                       defaultPrefixIcon: "e-icon e-ribbon e-resitalic",
+                                       activePrefixIcon: "e-icon e-ribbon e-resitalic",
+                                       click: "executeAction"
+                                   }
+                               },
+                               {
+                                   id: "underline",
+                                   text: "Underline",
+                                   type: ej.Ribbon.Type.ToggleButton,
+                                   isMobileOnly: true,
+                                   toggleButtonSettings: {
+                                       contentType: ej.ContentType.ImageOnly,
+                                       defaultText: "Underline",
+                                       activeText: "Underline",
+                                       defaultPrefixIcon: "e-icon e-ribbon e-resunderline",
+                                       activePrefixIcon: "e-icon e-ribbon e-resunderline",
+                                       click: "executeAction"
+                                   }
+                               },
+                               {
+                                   id: "strikethrough",
+                                   text: "strikethrough",
+                                   isMobileOnly: true,
+                                   type: ej.Ribbon.Type.ToggleButton,
+                                   toggleButtonSettings: {
+                                       contentType: ej.ContentType.ImageOnly,
+                                       defaultText: "Strikethrough",
+                                       activeText: "Strikethrough",
+                                       defaultPrefixIcon: "e-icon e-ribbon strikethrough",
+                                       activePrefixIcon: "e-icon e-ribbon strikethrough",
+                                       click: "executeAction"
+                                   }
+                               },
+                               {
+                                   id: "superscript",
+                                   text: "superscript",
+                                   isMobileOnly: true,
+                                   buttonSettings: {
+                                       contentType: ej.ContentType.ImageOnly,
+                                       prefixIcon: "e-icon e-ribbon e-superscripticon",
+                                       click: "executeAction"
+                                   }
+                               }
+                            ],
+                            defaults: {
+                                isBig: false
+                            }
+                        }, ]
+                    },
+				]
+                },
+			],
+                create: "createControl",
+            });
+        });
+    </script>
+    <style>
+        .e-ribbon .e-Font:before {
+            font-family: 'ej-ribbonfont';
+            content: "\e90e";
+            top: 7px !important;
+            text-indent: -2px;
+        }
+    </style>
 
 {% endhighlight %}
 
@@ -305,7 +419,7 @@ it will work only when those properties are not defined in buttonSettings and co
                 showRoundedCorner: true
             },
             applicationTab: {
-                type: ej.Ribbon.applicationTabType.menu,
+                type: ej.Ribbon.ApplicationTabType.Menu,
                 menuItemID: "menu",
                 menuSettings: {
                     openOnClick: false
@@ -316,13 +430,13 @@ it will work only when those properties are not defined in buttonSettings and co
                 text: "HOME",
                 groups: [{
                     text: "New",
-                    alignType: ej.Ribbon.alignType.rows,
+                    alignType: ej.Ribbon.AlignType.Rows,
                     content: [{
                         groups: [{
                             id: "new",
                             text: "New",
                             toolTip: "New",
-                            type: ej.Ribbon.type.button,
+                            type: ej.Ribbon.Type.Button,
                             buttonSettings: {
                                 width: 70,
                                 height: 50
@@ -366,7 +480,7 @@ Property to enable the ribbon quick access toolbar.
                 width: "100%",
                 showQAT: true,
                 applicationTab: {
-                    type: ej.Ribbon.applicationTabType.menu,
+                    type: ej.Ribbon.ApplicationTabType.Menu,
                     menuItemID: "ribbonmenu",
                     menuSettings: {
                         openOnClick: false
@@ -377,12 +491,12 @@ Property to enable the ribbon quick access toolbar.
                     text: "HOME",
                     groups: [{
                         text: "Font",
-                        alignType: ej.Ribbon.alignType.rows,
+                        alignType: ej.Ribbon.AlignType.Rows,
                         content: [{
                             groups: [{
                                 id: "bold",
                                 text: "Bold",
-                                quickAccessMode: ej.Ribbon.quickAccessMode.toolBar,
+                                quickAccessMode: ej.Ribbon.QuickAccessMode.ToolBar,
                                 buttonSettings: {
                                     contentType: ej.ContentType.ImageOnly,
                                     prefixIcon: "e-ribbon bold"
@@ -390,7 +504,7 @@ Property to enable the ribbon quick access toolbar.
                             }, {
                                 id: "italic",
                                 text: "Italic",
-                                quickAccessMode: ej.Ribbon.quickAccessMode.toolBar,
+                                quickAccessMode: ej.Ribbon.QuickAccessMode.ToolBar,
                                 buttonSettings: {
                                     contentType: ej.ContentType.ImageOnly,
                                     prefixIcon: "e-ribbon e-ribbonitalic"
@@ -398,14 +512,14 @@ Property to enable the ribbon quick access toolbar.
                             }, {
                                 id: "underline",
                                 text: "Underline",
-                                quickAccessMode: ej.Ribbon.quickAccessMode.toolBar,
+                                quickAccessMode: ej.Ribbon.QuickAccessMode.ToolBar,
                                 buttonSettings: {
                                     contentType: ej.ContentType.ImageOnly,
                                     prefixIcon: "e-ribbon e-ribbonunderline"
                                 }
                             }],
                             defaults: {
-                                type: ej.Ribbon.type.button,
+                                type: ej.Ribbon.Type.Button,
                                 height: 30
                             }
                         }]
@@ -447,7 +561,7 @@ Sets custom setting to the collapsible pin in the ribbon.
                     toolTip: "Pin the Ribbon"
                 },
                 applicationTab: {
-                    type: ej.Ribbon.applicationTabType.menu,
+                    type: ej.Ribbon.ApplicationTabType.Menu,
                     menuItemID: "ribbonmenu",
                     menuSettings: {
                         openOnClick: false
@@ -458,7 +572,7 @@ Sets custom setting to the collapsible pin in the ribbon.
                     text: "HOME",
                     groups: [{
                         text: "New",
-                        alignType: ej.Ribbon.alignType.rows,
+                        alignType: ej.Ribbon.AlignType.Rows,
                         content: [{
                             groups: [{
                                 id: "new",
@@ -472,7 +586,7 @@ Sets custom setting to the collapsible pin in the ribbon.
                                 }
                             }],
                             defaults: {
-                                type: ej.Ribbon.type.button,
+                                type: ej.Ribbon.Type.Button,
                                 width: 60,
                                 height: 70
                             }
@@ -515,7 +629,7 @@ Sets tooltip for the collapse pin .
                 toolTip: "Pin the Ribbon"
             },
             applicationTab: {
-                type: ej.Ribbon.applicationTabType.menu,
+                type: ej.Ribbon.ApplicationTabType.Menu,
                 menuItemID: "ribbonmenu",
                 menuSettings: {
                     openOnClick: false
@@ -526,7 +640,7 @@ Sets tooltip for the collapse pin .
                 text: "HOME",
                 groups: [{
                     text: "New",
-                    alignType: ej.Ribbon.alignType.rows,
+                    alignType: ej.Ribbon.AlignType.Rows,
                     content: [{
                         groups: [{
                             id: "new",
@@ -540,7 +654,7 @@ Sets tooltip for the collapse pin .
                             }
                         }],
                         defaults: {
-                            type: ej.Ribbon.type.button,
+                            type: ej.Ribbon.Type.Button,
                             width: 60,
                             height: 70
                         }
@@ -587,7 +701,7 @@ Specifies the custom tooltip for collapse pin.Refer to ejRibbon#tabs->groups->co
                         }
                     },	
             applicationTab: {
-                type: ej.Ribbon.applicationTabType.menu,
+                type: ej.Ribbon.ApplicationTabType.Menu,
                 menuItemID: "ribbonmenu",
                 menuSettings: {
                     openOnClick: false
@@ -598,7 +712,7 @@ Specifies the custom tooltip for collapse pin.Refer to ejRibbon#tabs->groups->co
                 text: "HOME",
                 groups: [{
                     text: "New",
-                    alignType: ej.Ribbon.alignType.rows,
+                    alignType: ej.Ribbon.AlignType.Rows,
                     content: [{
                         groups: [{
                             id: "new",
@@ -612,7 +726,7 @@ Specifies the custom tooltip for collapse pin.Refer to ejRibbon#tabs->groups->co
                             }
                         }],
                         defaults: {
-                            type: ej.Ribbon.type.button,
+                            type: ej.Ribbon.Type.Button,
                             width: 60,
                             height: 70
                         }
@@ -717,7 +831,7 @@ Sets custom setting to the expandable pin in the ribbon.
                         toolTip: "Collapse the Ribbon"                  
                     },
             applicationTab: {
-                type: ej.Ribbon.applicationTabType.menu,
+                type: ej.Ribbon.ApplicationTabType.Menu,
                 menuItemID: "ribbonmenu",
                 menuSettings: {
                     openOnClick: false
@@ -728,7 +842,7 @@ Sets custom setting to the expandable pin in the ribbon.
                 text: "HOME",
                 groups: [{
                     text: "New",
-                    alignType: ej.Ribbon.alignType.rows,
+                    alignType: ej.Ribbon.AlignType.Rows,
                     content: [{
                         groups: [{
                             id: "new",
@@ -742,7 +856,7 @@ Sets custom setting to the expandable pin in the ribbon.
                             }
                         }],
                         defaults: {
-                            type: ej.Ribbon.type.button,
+                            type: ej.Ribbon.Type.Button,
                             width: 60,
                             height: 70
                         }
@@ -784,7 +898,7 @@ Sets tooltip for the expand pin.
                         toolTip: "Collapse the Ribbon"                  
                     },
             applicationTab: {
-                type: ej.Ribbon.applicationTabType.menu,
+                type: ej.Ribbon.ApplicationTabType.Menu,
                 menuItemID: "ribbonmenu",
                 menuSettings: {
                     openOnClick: false
@@ -795,7 +909,7 @@ Sets tooltip for the expand pin.
                 text: "HOME",
                 groups: [{
                     text: "New",
-                    alignType: ej.Ribbon.alignType.rows,
+                    alignType: ej.Ribbon.AlignType.Rows,
                     content: [{
                         groups: [{
                             id: "new",
@@ -809,7 +923,7 @@ Sets tooltip for the expand pin.
                             }
                         }],
                         defaults: {
-                            type: ej.Ribbon.type.button,
+                            type: ej.Ribbon.Type.Button,
                             width: 60,
                             height: 70
                         }
@@ -855,7 +969,7 @@ Specifies the custom tooltip for expand pin.Refer to ejRibbon#tabs->groups->cont
                         }
                     },
             applicationTab: {
-                type: ej.Ribbon.applicationTabType.menu,
+                type: ej.Ribbon.ApplicationTabType.Menu,
                 menuItemID: "ribbonmenu",
                 menuSettings: {
                     openOnClick: false
@@ -866,7 +980,7 @@ Specifies the custom tooltip for expand pin.Refer to ejRibbon#tabs->groups->cont
                 text: "HOME",
                 groups: [{
                     text: "New",
-                    alignType: ej.Ribbon.alignType.rows,
+                    alignType: ej.Ribbon.AlignType.Rows,
                     content: [{
                         groups: [{
                             id: "new",
@@ -880,7 +994,7 @@ Specifies the custom tooltip for expand pin.Refer to ejRibbon#tabs->groups->cont
                             }
                         }],
                         defaults: {
-                            type: ej.Ribbon.type.button,
+                            type: ej.Ribbon.Type.Button,
                             width: 60,
                             height: 70
                         }
@@ -923,7 +1037,7 @@ Specifies the application tab to contain application menu or backstage page in t
         // Set the width during initialization.         
         width: "100%",
         applicationTab: {
-            type: ej.Ribbon.applicationTabType.menu,
+            type: ej.Ribbon.ApplicationTabType.Menu,
             menuItemID: "menu",
             menuSettings: {
                 openOnClick: false
@@ -934,7 +1048,7 @@ Specifies the application tab to contain application menu or backstage page in t
             text: "HOME",
             groups: [{
                 text: "New",
-                alignType: ej.Ribbon.alignType.rows,
+                alignType: ej.Ribbon.AlignType.Rows,
                 type: "custom",
                 contentID: "btn"
             }]
@@ -985,7 +1099,7 @@ Specifies the ribbon backstage page items.
         $("#Ribbon").ejRibbon({
             width: "500px",
             applicationTab: {
-                type: ej.Ribbon.applicationTabType.backstage,
+                 type: ej.Ribbon.ApplicationTabType.Backstage,
                 backstageSettings: {
                     text: "FILE",
                     height: 250,
@@ -1017,7 +1131,7 @@ Specifies the ribbon backstage page items.
                 text: "HOME",
                 groups: [{
                     text: "New",
-                    alignType: ej.Ribbon.alignType.rows,
+                    alignType: ej.Ribbon.AlignType.Rows,
                     type: "custom",
                     contentID: "btn"
                 }]
@@ -1067,7 +1181,7 @@ Specifies the display text of application tab.
         $("#Ribbon").ejRibbon({
             width: "500px",
             applicationTab: {
-                type: ej.Ribbon.applicationTabType.backstage,
+                 type: ej.Ribbon.ApplicationTabType.Backstage,
                 backstageSettings: {
                     text: "FILE",
                     height: 250,
@@ -1099,7 +1213,7 @@ Specifies the display text of application tab.
                 text: "HOME",
                 groups: [{
                     text: "New",
-                    alignType: ej.Ribbon.alignType.rows,
+                    alignType: ej.Ribbon.AlignType.Rows,
                     type: "custom",
                     contentID: "btn"
                 }]
@@ -1149,7 +1263,7 @@ Specifies the height of ribbon backstage page.
         $("#Ribbon").ejRibbon({
             width: "500px",
             applicationTab: {
-                type: ej.Ribbon.applicationTabType.backstage,
+                 type: ej.Ribbon.ApplicationTabType.Backstage,
                 backstageSettings: {
                     text: "FILE",
                     height: 250,
@@ -1181,7 +1295,7 @@ Specifies the height of ribbon backstage page.
                 text: "HOME",
                 groups: [{
                     text: "New",
-                    alignType: ej.Ribbon.alignType.rows,
+                    alignType: ej.Ribbon.AlignType.Rows,
                     type: "custom",
                     contentID: "btn"
                 }]
@@ -1232,7 +1346,7 @@ Specifies the width of ribbon backstage page.
         $("#Ribbon").ejRibbon({
             width: "500px",
             applicationTab: {
-                type: ej.Ribbon.applicationTabType.backstage,
+                 type: ej.Ribbon.ApplicationTabType.Backstage,
                 backstageSettings: {
                     text: "FILE",
                     height: 250,
@@ -1264,7 +1378,7 @@ Specifies the width of ribbon backstage page.
                 text: "HOME",
                 groups: [{
                     text: "New",
-                    alignType: ej.Ribbon.alignType.rows,
+                    alignType: ej.Ribbon.AlignType.Rows,
                     type: "custom",
                     contentID: "btn"
                 }]
@@ -1315,7 +1429,7 @@ Specifies the ribbon backstage page with its tab and button elements.
         $("#Ribbon").ejRibbon({
             width: "500px",
             applicationTab: {
-                type: ej.Ribbon.applicationTabType.backstage,
+                 type: ej.Ribbon.ApplicationTabType.Backstage,
                 backstageSettings: {
                     text: "FILE",
                     height: 250,
@@ -1347,7 +1461,7 @@ Specifies the ribbon backstage page with its tab and button elements.
                 text: "HOME",
                 groups: [{
                     text: "New",
-                    alignType: ej.Ribbon.alignType.rows,
+                    alignType: ej.Ribbon.AlignType.Rows,
                     type: "custom",
                     contentID: "btn"
                 }]
@@ -1399,7 +1513,7 @@ Specifies the id for ribbon backstage page's tab and button elements.
         $("#Ribbon").ejRibbon({
             width: "500px",
             applicationTab: {
-                type: ej.Ribbon.applicationTabType.backstage,
+                 type: ej.Ribbon.ApplicationTabType.Backstage,
                 backstageSettings: {
                     text: "FILE",
                     height: 250,
@@ -1431,7 +1545,7 @@ Specifies the id for ribbon backstage page's tab and button elements.
                 text: "HOME",
                 groups: [{
                     text: "New",
-                    alignType: ej.Ribbon.alignType.rows,
+                    alignType: ej.Ribbon.AlignType.Rows,
                     type: "custom",
                     contentID: "btn"
                 }]
@@ -1483,7 +1597,7 @@ Specifies the text for ribbon backstage page's tab header and button elements.
         $("#Ribbon").ejRibbon({
             width: "500px",
             applicationTab: {
-                type: ej.Ribbon.applicationTabType.backstage,
+                 type: ej.Ribbon.ApplicationTabType.Backstage,
                 backstageSettings: {
                     text: "FILE",
                     height: 250,
@@ -1515,7 +1629,7 @@ Specifies the text for ribbon backstage page's tab header and button elements.
                 text: "HOME",
                 groups: [{
                     text: "New",
-                    alignType: ej.Ribbon.alignType.rows,
+                    alignType: ej.Ribbon.AlignType.Rows,
                     type: "custom",
                     contentID: "btn"
                 }]
@@ -1530,9 +1644,13 @@ Specifies the text for ribbon backstage page's tab header and button elements.
 ### applicationTab.backstageSettings.pages.itemType `enum`
 {:#members:applicationtab-backstagesettings-pages-itemtype}
 
-<ts name="ej.Ribbon.itemType"/>
+<ts name="ej.Ribbon.ItemType"/>
 
-Specifies the type for ribbon backstage page's contents. Set "ej.Ribbon.backStageItemType.tab" to render the tab or "ej.Ribbon.backStageItemType.button" to render the button.
+Specifies the type for ribbon backstage page's contents. Set "ej.Ribbon.BackStageItemType.Tab" to render the tab or "ej.Ribbon.BackStageItemType.Button" to render the button.
+
+#### Default Value:
+
+* ej.Ribbon.ItemType.Tab
 
 <table class="params">
 <thead>
@@ -1543,19 +1661,16 @@ Specifies the type for ribbon backstage page's contents. Set "ej.Ribbon.backStag
 </thead>
 <tbody>
 <tr>
-<td class="name">button</td>
+<td class="name">Button</td>
 <td class="description">To render the button for ribbon backstage page’s contents</td>
 </tr>
 <tr>
-<td class="name">tab</td>
+<td class="name">Tab</td>
 <td class="description">To render the tab for ribbon backstage page’s contents</td>
 </tr>
 </tbody>
 </table>
 
-#### Default Value:
-
-* ej.Ribbon.itemType.tab
 
 #### Example
 
@@ -1588,7 +1703,7 @@ Specifies the type for ribbon backstage page's contents. Set "ej.Ribbon.backStag
         $("#Ribbon").ejRibbon({
             width: "500px",
             applicationTab: {
-                type: ej.Ribbon.applicationTabType.backstage,
+                 type: ej.Ribbon.ApplicationTabType.Backstage,
                 backstageSettings: {
                     text: "FILE",
                     height: 250,
@@ -1620,7 +1735,7 @@ Specifies the type for ribbon backstage page's contents. Set "ej.Ribbon.backStag
                 text: "HOME",
                 groups: [{
                     text: "New",
-                    alignType: ej.Ribbon.alignType.rows,
+                    alignType: ej.Ribbon.AlignType.Rows,
                     type: "custom",
                     contentID: "btn"
                 }]
@@ -1672,7 +1787,7 @@ Specifies the id of HTML elements like `div`,`ul`, etc., as ribbon backstage pag
         $("#Ribbon").ejRibbon({
             width: "500px",
             applicationTab: {
-                type: ej.Ribbon.applicationTabType.backstage,
+                 type: ej.Ribbon.ApplicationTabType.Backstage,
                 backstageSettings: {
                     text: "FILE",
                     height: 250,
@@ -1704,7 +1819,7 @@ Specifies the id of HTML elements like `div`,`ul`, etc., as ribbon backstage pag
                 text: "HOME",
                 groups: [{
                     text: "New",
-                    alignType: ej.Ribbon.alignType.rows,
+                    alignType: ej.Ribbon.AlignType.Rows,
                     type: "custom",
                     contentID: "btn"
                 }]
@@ -1756,7 +1871,7 @@ Specifies the separator between backstage page's tab and button elements.
         $("#Ribbon").ejRibbon({
             width: "500px",
             applicationTab: {
-                type: ej.Ribbon.applicationTabType.backstage,
+                 type: ej.Ribbon.ApplicationTabType.Backstage,
                 backstageSettings: {
                     text: "FILE",
                     height: 250,
@@ -1788,7 +1903,7 @@ Specifies the separator between backstage page's tab and button elements.
                 text: "HOME",
                 groups: [{
                     text: "New",
-                    alignType: ej.Ribbon.alignType.rows,
+                    alignType: ej.Ribbon.AlignType.Rows,
                     type: "custom",
                     contentID: "btn"
                 }]
@@ -1840,7 +1955,7 @@ Specifies the width of backstage page header that contains tabs and buttons.
         $("#Ribbon").ejRibbon({
             width: "500px",
             applicationTab: {
-                type: ej.Ribbon.applicationTabType.backstage,
+                 type: ej.Ribbon.ApplicationTabType.Backstage,
                 backstageSettings: {
                     text: "FILE",
                     height: 250,
@@ -1872,7 +1987,7 @@ Specifies the width of backstage page header that contains tabs and buttons.
                 text: "HOME",
                 groups: [{
                     text: "New",
-                    alignType: ej.Ribbon.alignType.rows,
+                    alignType: ej.Ribbon.AlignType.Rows,
                     type: "custom",
                     contentID: "btn"
                 }]
@@ -1913,10 +2028,10 @@ Specifies the ID of `ul` list to create application menu in the ribbon control.
         $("#Ribbon").ejRibbon({
     // Set the width during initialization.         
         width: "100%",
-        applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
+        applicationTab: { type: ej.Ribbon.ApplicationTabType.Menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
         tabs: [{
             id: "home", text: "HOME", groups: [{
-                    text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
+                    text: "New", alignType: ej.Ribbon.AlignType.Rows,type:"custom",contentID:"btn"
             }]
             }]
     });
@@ -1956,10 +2071,10 @@ Specifies the menu members, events by using the menu settings for the menu in th
         $("#Ribbon").ejRibbon({
     // Set the width during initialization.         
         width: "100%",
-        applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
+        applicationTab: { type: ej.Ribbon.ApplicationTabType.Menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
         tabs: [{
             id: "home", text: "HOME", groups: [{
-                    text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
+                    text: "New", alignType: ej.Ribbon.AlignType.Rows,type:"custom",contentID:"btn"
             }]
             }]
     });
@@ -1972,9 +2087,13 @@ Specifies the menu members, events by using the menu settings for the menu in th
 ### applicationTab.type `enum`
 {:#members:applicationtab-type}
 
-<ts name="ej.Ribbon.applicationTabType"/>
+<ts name="ej.Ribbon.ApplicationTabType"/>
 
-Specifies the application menu or backstage page. Specify the type of application tab as "ej.Ribbon.applicationTabType.menu" to render the application menu or "ej.Ribbon.applicationTabType.backstage" to render backstage page in the ribbon control.
+Specifies the application menu or backstage page. Specify the type of application tab as "ej.Ribbon.ApplicationTabType.Menu" to render the application menu or "ej.Ribbon.ApplicationTabType.Backstage" to render backstage page in the ribbon control.
+
+#### Default Value:
+
+* ej.Ribbon.ApplicationTabType.Menu
 
 <table class="params">
 <thead>
@@ -1985,19 +2104,16 @@ Specifies the application menu or backstage page. Specify the type of applicatio
 </thead>
 <tbody>
 <tr>
-<td class="name">menu</td>
+<td class="name">Menu</td>
 <td class="description">applicationTab display as menu</td>
 </tr>
 <tr>
-<td class="name">backstage</td>
+<td class="name">Backstage</td>
 <td class="description">applicationTab display as backstage</td>
 </tr>
 </tbody>
 </table>
 
-#### Default Value:
-
-*  ej.Ribbon.applicationTabType.menu
 
 #### Example
 
@@ -2019,10 +2135,10 @@ Specifies the application menu or backstage page. Specify the type of applicatio
         $("#Ribbon").ejRibbon({
     // Set the width during initialization.         
         width: "100%",
-        applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
+        applicationTab: { type: ej.Ribbon.ApplicationTabType.Menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
         tabs: [{
             id: "home", text: "HOME", groups: [{
-                    text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
+                    text: "New", alignType: ej.Ribbon.AlignType.Rows,type:"custom",contentID:"btn"
             }]
             }]
     });
@@ -2065,7 +2181,7 @@ Specifies the contextual tabs and tab set to the ribbon control with the backgro
         // Set the width during initialization.         
         width: "100%",
         applicationTab: {
-            type: ej.Ribbon.applicationTabType.menu,
+            type: ej.Ribbon.ApplicationTabType.Menu,
             menuItemID: "menu",
             menuSettings: {
                 openOnClick: false
@@ -2076,7 +2192,7 @@ Specifies the contextual tabs and tab set to the ribbon control with the backgro
             text: "HOME",
             groups: [{
                 text: "New",
-                alignType: ej.Ribbon.alignType.rows,
+                alignType: ej.Ribbon.AlignType.Rows,
                 type: "custom",
                 contentID: "btn"
             }]
@@ -2154,7 +2270,7 @@ Specifies the backgroundColor of the contextual tabs and tab set in the ribbon c
          // Set the width during initialization.         
          width: "100%",
          applicationTab: {
-             type: ej.Ribbon.applicationTabType.menu,
+             type: ej.Ribbon.ApplicationTabType.Menu,
              menuItemID: "menu",
              menuSettings: {
                  openOnClick: false
@@ -2165,7 +2281,7 @@ Specifies the backgroundColor of the contextual tabs and tab set in the ribbon c
              text: "HOME",
              groups: [{
                  text: "New",
-                 alignType: ej.Ribbon.alignType.rows,
+                 alignType: ej.Ribbon.AlignType.Rows,
                  type: "custom",
                  contentID: "btn"
              }]
@@ -2243,7 +2359,7 @@ Specifies the borderColor of the contextual tabs and tab set in the ribbon contr
         // Set the width during initialization.         
         width: "100%",
         applicationTab: {
-            type: ej.Ribbon.applicationTabType.menu,
+            type: ej.Ribbon.ApplicationTabType.Menu,
             menuItemID: "menu",
             menuSettings: {
                 openOnClick: false
@@ -2254,7 +2370,7 @@ Specifies the borderColor of the contextual tabs and tab set in the ribbon contr
             text: "HOME",
             groups: [{
                 text: "New",
-                alignType: ej.Ribbon.alignType.rows,
+                alignType: ej.Ribbon.AlignType.Rows,
                 type: "custom",
                 contentID: "btn"
             }]
@@ -2331,7 +2447,7 @@ Specifies the tabs to present in the contextual tabs and tab set. Refer to the t
          // Set the width during initialization.         
          width: "100%",
          applicationTab: {
-             type: ej.Ribbon.applicationTabType.menu,
+             type: ej.Ribbon.ApplicationTabType.Menu,
              menuItemID: "menu",
              menuSettings: {
                  openOnClick: false
@@ -2342,7 +2458,7 @@ Specifies the tabs to present in the contextual tabs and tab set. Refer to the t
              text: "HOME",
              groups: [{
                  text: "New",
-                 alignType: ej.Ribbon.alignType.rows,
+                 alignType: ej.Ribbon.AlignType.Rows,
                  type: "custom",
                  contentID: "btn"
              }]
@@ -2419,7 +2535,7 @@ Specifies the index or indexes to disable the given index tab or indexes tabs in
          // Set the disabledItemIndex during initialization. 
          disabledItemIndex: [1, 2],
          applicationTab: {
-             type: ej.Ribbon.applicationTabType.menu,
+             type: ej.Ribbon.ApplicationTabType.Menu,
              menuItemID: "menu",
              menuSettings: {
                  openOnClick: false
@@ -2430,7 +2546,7 @@ Specifies the index or indexes to disable the given index tab or indexes tabs in
              text: "HOME",
              groups: [{
                  text: "New",
-                 alignType: ej.Ribbon.alignType.rows,
+                 alignType: ej.Ribbon.AlignType.Rows,
                  type: "custom",
                  contentID: "btn"
              }]
@@ -2439,7 +2555,7 @@ Specifies the index or indexes to disable the given index tab or indexes tabs in
              text: "INSERT",
              groups: [{
                  text: "Insert group",
-                 alignType: ej.Ribbon.alignType.rows,
+                 alignType: ej.Ribbon.AlignType.Rows,
                  type: "custom",
                  contentID: "insert"
              }]
@@ -2481,7 +2597,7 @@ Specifies the index or indexes to enable the given index tab or indexes tabs in 
     $("#Ribbon").ejRibbon({
         width: "100%",
         applicationTab: {
-            type: ej.Ribbon.applicationTabType.menu,
+            type: ej.Ribbon.ApplicationTabType.Menu,
             menuItemID: "menu",
             menuSettings: {
                 openOnClick: false
@@ -2492,7 +2608,7 @@ Specifies the index or indexes to enable the given index tab or indexes tabs in 
             text: "HOME",
             groups: [{
                 text: "New",
-                alignType: ej.Ribbon.alignType.rows,
+                alignType: ej.Ribbon.AlignType.Rows,
                 type: "custom",
                 contentID: "btn"
             }]
@@ -2501,7 +2617,7 @@ Specifies the index or indexes to enable the given index tab or indexes tabs in 
             text: "INSERT",
             groups: [{
                 text: "Insert group",
-                alignType: ej.Ribbon.alignType.rows,
+                alignType: ej.Ribbon.AlignType.Rows,
                 type: "custom",
                 contentID: "insert"
             }]
@@ -2553,7 +2669,7 @@ Specifies the index of the ribbon tab to select the given index tab item in the 
         // Set the selectedItemIndex during initialization. 
         selectedItemIndex: 2,
         applicationTab: {
-            type: ej.Ribbon.applicationTabType.menu,
+            type: ej.Ribbon.ApplicationTabType.Menu,
             menuItemID: "menu",
             menuSettings: {
                 openOnClick: false
@@ -2564,7 +2680,7 @@ Specifies the index of the ribbon tab to select the given index tab item in the 
             text: "HOME",
             groups: [{
                 text: "New",
-                alignType: ej.Ribbon.alignType.rows,
+                alignType: ej.Ribbon.AlignType.Rows,
                 type: "custom",
                 contentID: "btn"
             }]
@@ -2573,7 +2689,7 @@ Specifies the index of the ribbon tab to select the given index tab item in the 
             text: "INSERT",
             groups: [{
                 text: "Insert group",
-                alignType: ej.Ribbon.alignType.rows,
+                alignType: ej.Ribbon.AlignType.Rows,
                 type: "custom",
                 contentID: "insert"
             }]
@@ -2616,7 +2732,7 @@ Specifies the tabs and its groups. Also specifies the control details that has t
          // Set the width during initialization.         
          width: "100%",
          applicationTab: {
-             type: ej.Ribbon.applicationTabType.menu,
+             type: ej.Ribbon.ApplicationTabType.Menu,
              menuItemID: "menu",
              menuSettings: {
                  openOnClick: false
@@ -2627,7 +2743,7 @@ Specifies the tabs and its groups. Also specifies the control details that has t
              text: "HOME",
              groups: [{
                  text: "New",
-                 alignType: ej.Ribbon.alignType.rows,
+                 alignType: ej.Ribbon.AlignType.Rows,
                  type: "custom",
                  contentID: "btn"
              }]
@@ -2636,7 +2752,7 @@ Specifies the tabs and its groups. Also specifies the control details that has t
              text: "INSERT",
              groups: [{
                  text: "Insert group",
-                 alignType: ej.Ribbon.alignType.rows,
+                 alignType: ej.Ribbon.AlignType.Rows,
                  type: "custom",
                  contentID: "insert"
              }]
@@ -2678,7 +2794,7 @@ Specifies single group or multiple groups and its contents to each tab in the ri
          // Set the width during initialization.         
          width: "100%",
          applicationTab: {
-             type: ej.Ribbon.applicationTabType.menu,
+             type: ej.Ribbon.ApplicationTabType.Menu,
              menuItemID: "menu",
              menuSettings: {
                  openOnClick: false
@@ -2689,7 +2805,7 @@ Specifies single group or multiple groups and its contents to each tab in the ri
              text: "HOME",
              groups: [{
                  text: "New",
-                 alignType: ej.Ribbon.alignType.rows,
+                 alignType: ej.Ribbon.AlignType.Rows,
                  type: "custom",
                  contentID: "btn"
              }]
@@ -2704,9 +2820,13 @@ Specifies single group or multiple groups and its contents to each tab in the ri
 ### tabs.groups.alignType `enum`
 {:#members:tabs-groups-aligntype}
 
-<ts name="ej.Ribbon.alignType"/>
+<ts name="ej.Ribbon.AlignType"/>
 
-Specifies the alignment of controls in the groups in 'row' type or 'column' type. Value for row type is "ej.Ribbon.alignType.rows" and for column type is "ej.Ribbon.alignType.columns".
+Specifies the alignment of controls in the groups in 'row' type or 'column' type. Value for row type is "ej.Ribbon.AlignType.Rows" and for column type is "ej.Ribbon.alignType.columns".
+
+#### Default Value:
+
+* ej.Ribbon.AlignType.Rows
 
 <table class="params">
 <thead>
@@ -2717,19 +2837,15 @@ Specifies the alignment of controls in the groups in 'row' type or 'column' type
 </thead>
 <tbody>
 <tr>
-<td class="name">rows</td>
+<td class="name">Rows</td>
 <td class="description">To align the group content's in row</td>
 </tr>
 <tr>
-<td class="name">columns</td>
+<td class="name">Columns</td>
 <td class="description">To align group content's in columns</td>
 </tr>
 </tbody>
 </table>
-
-#### Default Value:
-
-* ej.Ribbon.alignType.rows
 
 #### Example
 
@@ -2752,7 +2868,7 @@ Specifies the alignment of controls in the groups in 'row' type or 'column' type
         // Set the width during initialization.         
         width: "100%",
         applicationTab: {
-            type: ej.Ribbon.applicationTabType.menu,
+            type: ej.Ribbon.ApplicationTabType.Menu,
             menuItemID: "menu",
             menuSettings: {
                 openOnClick: false
@@ -2763,7 +2879,7 @@ Specifies the alignment of controls in the groups in 'row' type or 'column' type
             text: "HOME",
             groups: [{
                 text: "New",
-                alignType: ej.Ribbon.alignType.rows,
+                alignType: ej.Ribbon.AlignType.Rows,
                 type: "custom",
                 contentID: "btn"
             }]
@@ -2803,15 +2919,15 @@ Specifies the Syncfusion button, split button, dropdown list, toggle button, gal
         $("#Ribbon").ejRibbon({
     // Set the width during initialization.         
         width: "100%",
-        applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
+        applicationTab: { type: ej.Ribbon.ApplicationTabType.Menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
         tabs: [{
             id: "home", text: "HOME", groups: [{
-                    text: "New", alignType: ej.Ribbon.alignType.rows,content: [{
+                    text: "New", alignType: ej.Ribbon.AlignType.Rows,content: [{
                         groups: [{
                             id: "new",
                             text: "New",
                             toolTip: "New",
-                            type: ej.Ribbon.type.button,
+                            type: ej.Ribbon.Type.Button,
                             buttonSettings: {
                             width: 160,
                             height: 50
@@ -2855,10 +2971,10 @@ Specifies the height, width, type, isBig property to the controls in the group c
         $("#Ribbon").ejRibbon({
     // Set the width during initialization.         
         width: "100%",
-        applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
+        applicationTab: { type: ej.Ribbon.ApplicationTabType.Menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
         tabs: [{
             id: "home", text: "HOME", groups: [{
-                    text: "New", alignType: ej.Ribbon.alignType.rows,content: [{
+                    text: "New", alignType: ej.Ribbon.AlignType.Rows,content: [{
                         groups: [{
                             id: "new",
                             text: "New",
@@ -2876,8 +2992,253 @@ Specifies the height, width, type, isBig property to the controls in the group c
                             }
                         }],
                         defaults: {
-                        type: ej.Ribbon.type.button,
+                        type: ej.Ribbon.Type.Button,
                         height: 70
+                    }
+                    }]
+            }]
+            }]
+    });
+    });             
+    </script>  
+
+{% endhighlight %}
+
+### tabs.groups.content.defaults.height `string|number`
+{:#members:tabs-groups-content-defaults-height}
+
+Specifies the controls height such as Syncfusion button,split button,dropdown list,toggle button in the subgroup of  the ribbon tab.
+
+#### Default Value:
+
+* null
+
+#### Example
+
+{% highlight html %}
+
+    <ul id="menu">
+    <li><a>FILE </a>
+    <ul>
+    <li><a>New</a></li>
+    <li><a>Open</a></li>
+    <li><a>Save</a></li>
+    <li><a>Save as</a></li>
+    <li><a>Print</a></li>
+    </ul></li></ul>
+    <div id="Ribbon"></div> 
+    <script type="text/javascript">   
+    $(function () {
+        $("#Ribbon").ejRibbon({
+    // Set the width during initialization.         
+        width: "100%",
+        applicationTab: { type: ej.Ribbon.ApplicationTabType.Menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
+        tabs: [{
+            id: "home", text: "HOME", groups: [{
+                    text: "New", alignType: ej.Ribbon.AlignType.Rows,content: [{
+                        groups: [{
+                            id: "new",
+                            text: "New",
+                            toolTip: "New",
+                            buttonSettings: {
+                            width: 100,
+                            }
+                        },
+                           {
+                            id: "font",
+                            text: "Font",
+                            toolTip: "Font",
+                            buttonSettings: {
+                            width: 150,
+                            }
+                        }],
+                        defaults: {
+                        type: ej.Ribbon.Type.Button,
+                        height: 70
+                    }
+                    }]
+            }]
+            }]
+    });
+    });             
+    </script>  
+
+{% endhighlight %}
+
+### tabs.groups.content.defaults.width `string|number`
+{:#members:tabs-groups-content-defaults-width}
+
+Specifies the controls width such as Syncfusion button,split button,dropdown list,toggle button in the subgroup of  the ribbon tab.
+
+#### Default Value:
+
+* null
+
+#### Example
+
+{% highlight html %}
+
+    <ul id="menu">
+    <li><a>FILE </a>
+    <ul>
+    <li><a>New</a></li>
+    <li><a>Open</a></li>
+    <li><a>Save</a></li>
+    <li><a>Save as</a></li>
+    <li><a>Print</a></li>
+    </ul></li></ul>
+    <div id="Ribbon"></div> 
+    <script type="text/javascript">   
+    $(function () {
+        $("#Ribbon").ejRibbon({
+    // Set the width during initialization.         
+        width: "100%",
+        applicationTab: { type: ej.Ribbon.ApplicationTabType.Menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
+        tabs: [{
+            id: "home", text: "HOME", groups: [{
+                    text: "New", alignType: ej.Ribbon.AlignType.Rows,content: [{
+                        groups: [{
+                            id: "new",
+                            text: "New",
+                            toolTip: "New",
+                            buttonSettings: {
+                            width: 100,
+                            }
+                        },
+                           {
+                            id: "font",
+                            text: "Font",
+                            toolTip: "Font",
+                            buttonSettings: {
+                            width: 150,
+                            }
+                        }],
+                        defaults: {
+                        type: ej.Ribbon.Type.Button,
+                        width: 70
+                    }
+                    }]
+            }]
+            }]
+    });
+    });             
+    </script>  
+
+{% endhighlight %}
+
+### tabs.groups.content.defaults.type `string`
+{:#members:tabs-groups-content-defaults-type}
+
+Specifies the controls type such as Syncfusion button,split button,dropdown list,toggle button in the subgroup of  the ribbon tab.
+
+#### Default Value:
+
+* ej.Ribbon.Type.Button
+
+#### Example
+
+{% highlight html %}
+
+    <ul id="menu">
+    <li><a>FILE </a>
+    <ul>
+    <li><a>New</a></li>
+    <li><a>Open</a></li>
+    <li><a>Save</a></li>
+    <li><a>Save as</a></li>
+    <li><a>Print</a></li>
+    </ul></li></ul>
+    <div id="Ribbon"></div> 
+    <script type="text/javascript">   
+    $(function () {
+        $("#Ribbon").ejRibbon({
+    // Set the width during initialization.         
+        width: "100%",
+        applicationTab: { type: ej.Ribbon.ApplicationTabType.Menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
+        tabs: [{
+            id: "home", text: "HOME", groups: [{
+                    text: "New", alignType: ej.Ribbon.AlignType.Rows,content: [{
+                        groups: [{
+                            id: "new",
+                            text: "New",
+                            toolTip: "New",
+                            buttonSettings: {
+                            width: 100,
+                            }
+                        },
+                           {
+                            id: "font",
+                            text: "Font",
+                            toolTip: "Font",
+                            buttonSettings: {
+                            width: 150,
+                            }
+                        }],
+                        defaults: {
+                        type: ej.Ribbon.Type.Button,
+                        width: 70
+                    }
+                    }]
+            }]
+            }]
+    });
+    });             
+    </script>  
+
+{% endhighlight %}
+
+### tabs.groups.content.defaults.isBig `boolean`
+{:#members:tabs-groups-content-defaults-isbig}
+
+Specifies the controls size such as Syncfusion button,split button,dropdown list,toggle button in the subgroup of  the ribbon tab.
+
+#### Default Value:
+
+* false
+
+#### Example
+
+{% highlight html %}
+
+    <ul id="menu">
+    <li><a>FILE </a>
+    <ul>
+    <li><a>New</a></li>
+    <li><a>Open</a></li>
+    <li><a>Save</a></li>
+    <li><a>Save as</a></li>
+    <li><a>Print</a></li>
+    </ul></li></ul>
+    <div id="Ribbon"></div> 
+    <script type="text/javascript">   
+    $(function () {
+        $("#Ribbon").ejRibbon({
+    // Set the width during initialization.         
+        width: "100%",
+        applicationTab: { type: ej.Ribbon.ApplicationTabType.Menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
+        tabs: [{
+            id: "home", text: "HOME", groups: [{
+                    text: "New", alignType: ej.Ribbon.AlignType.Rows,content: [{
+                        groups: [{
+                            id: "new",
+                            text: "New",
+                            toolTip: "New",
+                            buttonSettings: {
+                            width: 100,
+                            }
+                        },
+                           {
+                            id: "font",
+                            text: "Font",
+                            toolTip: "Font",
+                            buttonSettings: {
+                            width: 150,
+                            }
+                        }],
+                        defaults: {
+                        type: ej.Ribbon.Type.Button,
+                        width: 70,
+                        isBig: true
                     }
                     }]
             }]
@@ -2916,15 +3277,15 @@ Specifies the controls such as Syncfusion button, split button, dropdown list, t
         $("#Ribbon").ejRibbon({
     // Set the width during initialization.         
         width: "100%",
-        applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
+        applicationTab: { type: ej.Ribbon.ApplicationTabType.Menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
         tabs: [{
             id: "home", text: "HOME", groups: [{
-                    text: "New", alignType: ej.Ribbon.alignType.rows,content: [{
+                    text: "New", alignType: ej.Ribbon.AlignType.Rows,content: [{
                         groups: [{
                             id: "new",
                             text: "New",
                             toolTip: "New",
-                            type: ej.Ribbon.type.button,
+                            type: ej.Ribbon.Type.Button,
                             buttonSettings: {
                             width: 160,
                             height: 50
@@ -2969,7 +3330,7 @@ Specifies the Syncfusion button members, events by using this buttonSettings.
             // Set the width during initialization.         
             width: "100%",
             applicationTab: {
-                type: ej.Ribbon.applicationTabType.menu,
+                type: ej.Ribbon.ApplicationTabType.Menu,
                 menuItemID: "menu",
                 menuSettings: {
                     openOnClick: false
@@ -2980,14 +3341,14 @@ Specifies the Syncfusion button members, events by using this buttonSettings.
                 text: "HOME",
                 groups: [{
                     text: "New",
-                    alignType: ej.Ribbon.alignType.rows,
+                    alignType: ej.Ribbon.AlignType.Rows,
                     content: [{
                         groups: [{
                             id: "new",
                             text: "New",
                             toolTip: "New",
                             isBig: true,
-                            type: ej.Ribbon.type.button,
+                            type: ej.Ribbon.Type.Button,
                             buttonSettings: {
                                 width: 100,
                             }
@@ -3050,7 +3411,7 @@ It is used to set the count of gallery contents in a row.
         // Set the width during initialization.         
         width: "700px",
         applicationTab: {
-            type: ej.Ribbon.applicationTabType.menu,
+            type: ej.Ribbon.ApplicationTabType.Menu,
             menuItemID: "menu",
             menuSettings: {
                 openOnClick: false
@@ -3061,7 +3422,7 @@ It is used to set the count of gallery contents in a row.
             text: "HOME",
             groups: [{
                 text: "Gallery",
-                alignType: ej.Ribbon.alignType.rows,
+                alignType: ej.Ribbon.AlignType.Rows,
                 content: [{
                     groups: [{
                         id: "Gallery",
@@ -3117,7 +3478,7 @@ It is used to set the count of gallery contents in a row.
 ### tabs.groups.content.groups.contentID `string`
 {:#members:tabs-groups-content-groups-contentid}
 
-Specifies the custom items such as div, table, controls as custom controls with the type "ej.Ribbon.type.custom" in the groups.
+Specifies the custom items such as div, table, controls as custom controls with the type "ej.Ribbon.Type.Custom" in the groups.
 
 #### Default Value:
 
@@ -3144,7 +3505,7 @@ Specifies the custom items such as div, table, controls as custom controls with 
         // Set the width during initialization.         
         width: "100%",
         applicationTab: {
-            type: ej.Ribbon.applicationTabType.menu,
+            type: ej.Ribbon.ApplicationTabType.Menu,
             menuItemID: "menu",
             menuSettings: {
                 openOnClick: false
@@ -3155,13 +3516,13 @@ Specifies the custom items such as div, table, controls as custom controls with 
             text: "HOME",
             groups: [{
                 text: "New",
-                alignType: ej.Ribbon.alignType.rows,
+                alignType: ej.Ribbon.AlignType.Rows,
                 content: [{
                     groups: [{
                         id: "new",
                         text: "New",
                         toolTip: "New",
-                        type: ej.Ribbon.type.button,
+                        type: ej.Ribbon.Type.Button,
                         buttonSettings: {
                             width: 160,
                             height: 50
@@ -3170,7 +3531,7 @@ Specifies the custom items such as div, table, controls as custom controls with 
                         id: "fontcolor",
                         text: "Font Color",
                         toolTip: "Font Color",
-                        type: ej.Ribbon.type.custom,
+                        type: ej.Ribbon.Type.Custom,
                         contentID: "fontcolor"
                     }]
                 }]
@@ -3226,17 +3587,17 @@ Specifies the CSS class property to apply styles to the button, split, dropdown 
         $("#Ribbon").ejRibbon({
     // Set the width during initialization.         
         width: "100%",
-        applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
+        applicationTab: { type: ej.Ribbon.ApplicationTabType.Menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
         tabs: [{
             id: "home", text: "HOME", groups: [{
-                    text: "New", alignType: ej.Ribbon.alignType.rows,content: [{
+                    text: "New", alignType: ej.Ribbon.AlignType.Rows,content: [{
                         groups: [{
                             id: "new",
                             text: "New",
                             toolTip: "New",
                             cssClass:"e-cssclass",
                             isBig:true,
-                            type: ej.Ribbon.type.button,
+                            type: ej.Ribbon.Type.Button,
                             buttonSettings: {
                             width: 100,
                             }
@@ -3294,7 +3655,7 @@ Specifies the Syncfusion button and menu as gallery extra items.
          // Set the width during initialization.         
          width: "700px",
          applicationTab: {
-             type: ej.Ribbon.applicationTabType.menu,
+             type: ej.Ribbon.ApplicationTabType.Menu,
              menuItemID: "menu",
              menuSettings: {
                  openOnClick: false
@@ -3305,7 +3666,7 @@ Specifies the Syncfusion button and menu as gallery extra items.
              text: "HOME",
              groups: [{
                  text: "Gallery",
-                 alignType: ej.Ribbon.alignType.rows,
+                 alignType: ej.Ribbon.AlignType.Rows,
                  content: [{
                      groups: [{
                          id: "Gallery",
@@ -3404,7 +3765,7 @@ Specifies the Syncfusion button members, events by using buttonSettings.
          // Set the width during initialization.         
          width: "700px",
          applicationTab: {
-             type: ej.Ribbon.applicationTabType.menu,
+             type: ej.Ribbon.ApplicationTabType.Menu,
              menuItemID: "menu",
              menuSettings: {
                  openOnClick: false
@@ -3415,7 +3776,7 @@ Specifies the Syncfusion button members, events by using buttonSettings.
              text: "HOME",
              groups: [{
                  text: "Gallery",
-                 alignType: ej.Ribbon.alignType.rows,
+                 alignType: ej.Ribbon.AlignType.Rows,
                  content: [{
                      groups: [{
                          id: "Gallery",
@@ -3474,9 +3835,13 @@ Specifies the Syncfusion button members, events by using buttonSettings.
 ### tabs.groups.content.groups.customGalleryItems.customItemType `enum`
 {:#members:tabs-groups-content-groups-customgalleryitems-customitemtype}
 
-<ts name="ej.Ribbon.customItemType"/>
+<ts name="ej.Ribbon.CustomItemType"/>
 
-Specifies the type as ej.Ribbon.customItemType.menu or ej.Ribbon.customItemType.button to render Syncfusion button and menu.
+Specifies the type as ej.Ribbon.CustomItemType.Menu or ej.Ribbon.CustomItemType.Button to render Syncfusion button and menu.
+
+#### Default Value:
+
+* ej.Ribbon.CustomItemType.Button
 
 <table class="params">
 <thead>
@@ -3487,19 +3852,16 @@ Specifies the type as ej.Ribbon.customItemType.menu or ej.Ribbon.customItemType.
 </thead>
 <tbody>
 <tr>
-<td class="name">button</td>
+<td class="name">Button</td>
 <td class="description">Specifies the button type in customGalleryItems</td>
 </tr>
 <tr>
-<td class="name">menu</td>
+<td class="name">Menu</td>
 <td class="description">Specifies the menu type in customGalleryItems</td>
 </tr>
 </tbody>
 </table>
 
-#### Default Value:
-
-* ej.Ribbon.customItemType.button
 
 #### Example
 
@@ -3536,7 +3898,7 @@ Specifies the type as ej.Ribbon.customItemType.menu or ej.Ribbon.customItemType.
          // Set the width during initialization.         
          width: "700px",
          applicationTab: {
-             type: ej.Ribbon.applicationTabType.menu,
+             type: ej.Ribbon.ApplicationTabType.Menu,
              menuItemID: "menu",
              menuSettings: {
                  openOnClick: false
@@ -3547,7 +3909,7 @@ Specifies the type as ej.Ribbon.customItemType.menu or ej.Ribbon.customItemType.
              text: "HOME",
              groups: [{
                  text: "Gallery",
-                 alignType: ej.Ribbon.alignType.rows,
+                 alignType: ej.Ribbon.AlignType.Rows,
                  content: [{
                      groups: [{
                          id: "Gallery",
@@ -3647,7 +4009,7 @@ Specifies the custom tooltip for gallery extra item's button. Refer to ejRibbon#
          // Set the width during initialization.         
          width: "700px",
          applicationTab: {
-             type: ej.Ribbon.applicationTabType.menu,
+             type: ej.Ribbon.ApplicationTabType.Menu,
              menuItemID: "menu",
              menuSettings: {
                  openOnClick: false
@@ -3658,7 +4020,7 @@ Specifies the custom tooltip for gallery extra item's button. Refer to ejRibbon#
              text: "HOME",
              groups: [{
                  text: "Gallery",
-                 alignType: ej.Ribbon.alignType.rows,
+                 alignType: ej.Ribbon.AlignType.Rows,
                  content: [{
                      groups: [{
                          id: "Gallery",
@@ -3759,7 +4121,7 @@ Specifies the UL list id to render menu as gallery extra item.
          // Set the width during initialization.         
          width: "700px",
          applicationTab: {
-             type: ej.Ribbon.applicationTabType.menu,
+             type: ej.Ribbon.ApplicationTabType.Menu,
              menuItemID: "menu",
              menuSettings: {
                  openOnClick: false
@@ -3770,7 +4132,7 @@ Specifies the UL list id to render menu as gallery extra item.
              text: "HOME",
              groups: [{
                  text: "Gallery",
-                 alignType: ej.Ribbon.alignType.rows,
+                 alignType: ej.Ribbon.AlignType.Rows,
                  content: [{
                      groups: [{
                          id: "Gallery",
@@ -3871,7 +4233,7 @@ Specifies the Syncfusion menu members, events by using menuSettings.
          // Set the width during initialization.         
          width: "700px",
          applicationTab: {
-             type: ej.Ribbon.applicationTabType.menu,
+             type: ej.Ribbon.ApplicationTabType.Menu,
              menuItemID: "menu",
              menuSettings: {
                  openOnClick: false
@@ -3882,7 +4244,7 @@ Specifies the Syncfusion menu members, events by using menuSettings.
              text: "HOME",
              groups: [{
                  text: "Gallery",
-                 alignType: ej.Ribbon.alignType.rows,
+                 alignType: ej.Ribbon.AlignType.Rows,
                  content: [{
                      groups: [{
                          id: "Gallery",
@@ -3983,7 +4345,7 @@ Specifies the text for gallery extra item's button.
      // Set the width during initialization.         
       width: "700px",
       applicationTab: {
-      type: ej.Ribbon.applicationTabType.menu,
+      type: ej.Ribbon.ApplicationTabType.Menu,
       menuItemID: "menu",
       menuSettings: {
           openOnClick: false
@@ -3994,7 +4356,7 @@ Specifies the text for gallery extra item's button.
       text: "HOME",
       groups: [{
           text: "Gallery",
-          alignType: ej.Ribbon.alignType.rows,
+          alignType: ej.Ribbon.AlignType.Rows,
           content: [{
               groups: [{
                   id: "Gallery",
@@ -4091,7 +4453,7 @@ Specifies the tooltip for gallery extra item's button.
           // Set the width during initialization.         
           width: "700px",
           applicationTab: {
-              type: ej.Ribbon.applicationTabType.menu,
+              type: ej.Ribbon.ApplicationTabType.Menu,
               menuItemID: "menu",
               menuSettings: {
                   openOnClick: false
@@ -4102,7 +4464,7 @@ Specifies the tooltip for gallery extra item's button.
               text: "HOME",
               groups: [{
                   text: "Gallery",
-                  alignType: ej.Ribbon.alignType.rows,
+                  alignType: ej.Ribbon.AlignType.Rows,
                   content: [{
                       groups: [{
                           id: "Gallery",
@@ -4184,7 +4546,7 @@ Provides custom tooltip for button, split button, dropdown list, toggle button, 
          // Set the width during initialization.         
          width: "700px",
          applicationTab: {
-             type: ej.Ribbon.applicationTabType.menu,
+             type: ej.Ribbon.ApplicationTabType.Menu,
              menuItemID: "menu",
              menuSettings: {
                  openOnClick: false
@@ -4195,7 +4557,7 @@ Provides custom tooltip for button, split button, dropdown list, toggle button, 
              text: "HOME",
              groups: [{
                  text: "Expand",
-                 alignType: ej.Ribbon.alignType.rows,
+                 alignType: ej.Ribbon.AlignType.Rows,
                  content: [{
                      groups: [{
                          id: "expand",
@@ -4252,7 +4614,7 @@ Sets content to the custom tooltip. Text and HTML support are provided for conte
          // Set the width during initialization.         
          width: "700px",
          applicationTab: {
-             type: ej.Ribbon.applicationTabType.menu,
+             type: ej.Ribbon.ApplicationTabType.Menu,
              menuItemID: "menu",
              menuSettings: {
                  openOnClick: false
@@ -4263,7 +4625,7 @@ Sets content to the custom tooltip. Text and HTML support are provided for conte
              text: "HOME",
              groups: [{
                  text: "Expand",
-                 alignType: ej.Ribbon.alignType.rows,
+                 alignType: ej.Ribbon.AlignType.Rows,
                  content: [{
                      groups: [{
                          id: "expand",
@@ -4320,7 +4682,7 @@ Sets icon to the custom tooltip content.
         // Set the width during initialization.         
         width: "700px",
         applicationTab: {
-            type: ej.Ribbon.applicationTabType.menu,
+            type: ej.Ribbon.ApplicationTabType.Menu,
             menuItemID: "menu",
             menuSettings: {
                 openOnClick: false
@@ -4331,7 +4693,7 @@ Sets icon to the custom tooltip content.
             text: "HOME",
             groups: [{
                 text: "Expand",
-                alignType: ej.Ribbon.alignType.rows,
+                alignType: ej.Ribbon.AlignType.Rows,
                 content: [{
                     groups: [{
                         id: "expand",
@@ -4388,7 +4750,7 @@ Sets title to the custom tooltip. Text and HTML support are provided for title a
         // Set the width during initialization.         
         width: "700px",
         applicationTab: {
-            type: ej.Ribbon.applicationTabType.menu,
+            type: ej.Ribbon.ApplicationTabType.Menu,
             menuItemID: "menu",
             menuSettings: {
                 openOnClick: false
@@ -4399,7 +4761,7 @@ Sets title to the custom tooltip. Text and HTML support are provided for title a
             text: "HOME",
             groups: [{
                 text: "Expand",
-                alignType: ej.Ribbon.alignType.rows,
+                alignType: ej.Ribbon.AlignType.Rows,
                 content: [{
                     groups: [{
                         id: "expand",
@@ -4463,7 +4825,7 @@ Specifies the Syncfusion dropdown list members, events by using this dropdownSet
         // Set the width during initialization.         
         width: "100%",
         applicationTab: {
-            type: ej.Ribbon.applicationTabType.menu,
+            type: ej.Ribbon.ApplicationTabType.Menu,
             menuItemID: "menu",
             menuSettings: {
                 openOnClick: false
@@ -4474,12 +4836,12 @@ Specifies the Syncfusion dropdown list members, events by using this dropdownSet
             text: "HOME",
             groups: [{
                 text: "New",
-                alignType: ej.Ribbon.alignType.rows,
+                alignType: ej.Ribbon.AlignType.Rows,
                 content: [{
                     groups: [{
                         id: "fontfamily",
                         toolTip: "Font",
-                        type: ej.Ribbon.type.dropDownList,
+                        type: ej.Ribbon.Type.DropDownList,
                         dropdownSettings: {
                             dataSource: fontfamily,
                             value: "Segoe UI",
@@ -4524,10 +4886,10 @@ Specifies the separator to the control that is in row type group. The separator 
         $("#Ribbon").ejRibbon({
     // Set the width during initialization.         
         width: "100%",
-        applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
+        applicationTab: { type: ej.Ribbon.ApplicationTabType.Menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
         tabs: [{
             id: "home", text: "HOME", groups: [{
-                    text: "New", alignType: ej.Ribbon.alignType.rows,content: [{
+                    text: "New", alignType: ej.Ribbon.AlignType.Rows,content: [{
                         groups: [{
                             id: "new",
                             text: "New",
@@ -4546,7 +4908,7 @@ Specifies the separator to the control that is in row type group. The separator 
                             }
                         }],
                         defaults: {
-                        type: ej.Ribbon.type.button,
+                        type: ej.Ribbon.Type.Button,
                         height: 70
                     }
                     }]
@@ -4603,7 +4965,7 @@ Sets the count of gallery contents in a row, when the gallery is in expanded sta
          // Set the width during initialization.         
          width: "700px",
          applicationTab: {
-             type: ej.Ribbon.applicationTabType.menu,
+             type: ej.Ribbon.ApplicationTabType.Menu,
              menuItemID: "menu",
              menuSettings: {
                  openOnClick: false
@@ -4614,7 +4976,7 @@ Sets the count of gallery contents in a row, when the gallery is in expanded sta
              text: "HOME",
              groups: [{
                  text: "Gallery",
-                 alignType: ej.Ribbon.alignType.rows,
+                 alignType: ej.Ribbon.AlignType.Rows,
                  content: [{
                      groups: [{
                          id: "Gallery",
@@ -4711,7 +5073,7 @@ Defines each gallery content.
          // Set the width during initialization.         
          width: "700px",
          applicationTab: {
-             type: ej.Ribbon.applicationTabType.menu,
+             type: ej.Ribbon.ApplicationTabType.Menu,
              menuItemID: "menu",
              menuSettings: {
                  openOnClick: false
@@ -4722,7 +5084,7 @@ Defines each gallery content.
              text: "HOME",
              groups: [{
                  text: "Gallery",
-                 alignType: ej.Ribbon.alignType.rows,
+                 alignType: ej.Ribbon.AlignType.Rows,
                  content: [{
                      groups: [{
                          id: "Gallery",
@@ -4823,7 +5185,7 @@ Specifies the Syncfusion button members, events by using buttonSettings.
          // Set the width during initialization.         
          width: "700px",
          applicationTab: {
-             type: ej.Ribbon.applicationTabType.menu,
+             type: ej.Ribbon.ApplicationTabType.Menu,
              menuItemID: "menu",
              menuSettings: {
                  openOnClick: false
@@ -4834,7 +5196,7 @@ Specifies the Syncfusion button members, events by using buttonSettings.
              text: "HOME",
              groups: [{
                  text: "Gallery",
-                 alignType: ej.Ribbon.alignType.rows,
+                 alignType: ej.Ribbon.AlignType.Rows,
                  content: [{
                      groups: [{
                          id: "Gallery",
@@ -4934,7 +5296,7 @@ Specifies the custom tooltip for gallery content. Refer to ejRibbon#tabs->groups
         // Set the width during initialization.         
         width: "700px",
         applicationTab: {
-            type: ej.Ribbon.applicationTabType.menu,
+            type: ej.Ribbon.ApplicationTabType.Menu,
             menuItemID: "menu",
             menuSettings: {
                 openOnClick: false
@@ -4945,7 +5307,7 @@ Specifies the custom tooltip for gallery content. Refer to ejRibbon#tabs->groups
             text: "HOME",
             groups: [{
                 text: "Gallery",
-                alignType: ej.Ribbon.alignType.rows,
+                alignType: ej.Ribbon.AlignType.Rows,
                 content: [{
                     groups: [{
                         id: "Gallery",
@@ -5047,7 +5409,7 @@ Sets text for the gallery content.
          // Set the width during initialization.         
          width: "700px",
          applicationTab: {
-             type: ej.Ribbon.applicationTabType.menu,
+             type: ej.Ribbon.ApplicationTabType.Menu,
              menuItemID: "menu",
              menuSettings: {
                  openOnClick: false
@@ -5058,7 +5420,7 @@ Sets text for the gallery content.
              text: "HOME",
              groups: [{
                  text: "Gallery",
-                 alignType: ej.Ribbon.alignType.rows,
+                 alignType: ej.Ribbon.AlignType.Rows,
                  content: [{
                      groups: [{
                          id: "Gallery",
@@ -5155,7 +5517,7 @@ Sets tooltip for the gallery content.
         // Set the width during initialization.         
         width: "700px",
         applicationTab: {
-            type: ej.Ribbon.applicationTabType.menu,
+            type: ej.Ribbon.ApplicationTabType.Menu,
             menuItemID: "menu",
             menuSettings: {
                 openOnClick: false
@@ -5166,7 +5528,7 @@ Sets tooltip for the gallery content.
             text: "HOME",
             groups: [{
                 text: "Gallery",
-                alignType: ej.Ribbon.alignType.rows,
+                alignType: ej.Ribbon.AlignType.Rows,
                 content: [{
                     groups: [{
                         id: "Gallery",
@@ -5247,15 +5609,15 @@ Specifies the Id for button, split button, dropdown list, toggle button, gallery
         $("#Ribbon").ejRibbon({
     // Set the width during initialization.         
         width: "100%",
-        applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
+        applicationTab: { type: ej.Ribbon.ApplicationTabType.Menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
         tabs: [{
             id: "home", text: "HOME", groups: [{
-                    text: "New", alignType: ej.Ribbon.alignType.rows,content: [{
+                    text: "New", alignType: ej.Ribbon.AlignType.Rows,content: [{
                         groups: [{
                             id: "new",
                             text: "New",
                             toolTip: "New",
-                            type: ej.Ribbon.type.button,
+                            type: ej.Ribbon.Type.Button,
                             buttonSettings: {
                             width: 160,
                             height: 50
@@ -5299,16 +5661,16 @@ Specifies the size for button, split button controls. Set "true" for big size an
         $("#Ribbon").ejRibbon({
     // Set the width during initialization.         
         width: "100%",
-        applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
+        applicationTab: { type: ej.Ribbon.ApplicationTabType.Menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
         tabs: [{
             id: "home", text: "HOME", groups: [{
-                    text: "New", alignType: ej.Ribbon.alignType.rows,content: [{
+                    text: "New", alignType: ej.Ribbon.AlignType.Rows,content: [{
                         groups: [{
                             id: "new",
                             text: "New",
                             toolTip: "New",
                             isBig:true,
-                            type: ej.Ribbon.type.button,
+                            type: ej.Ribbon.Type.Button,
                             buttonSettings: {
                             width: 100
                             }
@@ -5367,7 +5729,7 @@ Sets the height of each gallery content.
          // Set the width during initialization.         
          width: "700px",
          applicationTab: {
-             type: ej.Ribbon.applicationTabType.menu,
+             type: ej.Ribbon.ApplicationTabType.Menu,
              menuItemID: "menu",
              menuSettings: {
                  openOnClick: false
@@ -5378,7 +5740,7 @@ Sets the height of each gallery content.
              text: "HOME",
              groups: [{
                  text: "Gallery",
-                 alignType: ej.Ribbon.alignType.rows,
+                 alignType: ej.Ribbon.AlignType.Rows,
                  content: [{
                      groups: [{
                          id: "Gallery",
@@ -5475,7 +5837,7 @@ Sets the width of each gallery content.
         // Set the width during initialization.         
         width: "700px",
         applicationTab: {
-            type: ej.Ribbon.applicationTabType.menu,
+            type: ej.Ribbon.ApplicationTabType.Menu,
             menuItemID: "menu",
             menuSettings: {
                 openOnClick: false
@@ -5486,7 +5848,7 @@ Sets the width of each gallery content.
             text: "HOME",
             groups: [{
                 text: "Gallery",
-                alignType: ej.Ribbon.alignType.rows,
+                alignType: ej.Ribbon.AlignType.Rows,
                 content: [{
                     groups: [{
                         id: "Gallery",
@@ -5570,16 +5932,16 @@ Specifies the Syncfusion split button members, events by using this splitButtonS
         $("#Ribbon").ejRibbon({
     // Set the width during initialization.         
         width: "100%",
-        applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
+        applicationTab: { type: ej.Ribbon.ApplicationTabType.Menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
         tabs: [{
             id: "home", text: "HOME", groups: [{
-                    text: "New", alignType: ej.Ribbon.alignType.rows,content: [{
+                    text: "New", alignType: ej.Ribbon.AlignType.Rows,content: [{
                         groups: [{
                             id: "new",
                             text: "New",
                             toolTip: "New",
                             isBig:true,
-                            type: ej.Ribbon.type.splitButton,
+                            type: ej.Ribbon.Type.SplitButton,
                             splitButtonSettings: {
                             targetID: "split",
                             buttonMode: "dropdown",
@@ -5624,15 +5986,15 @@ Specifies the text for button, split button, toggle button controls in the sub g
         $("#Ribbon").ejRibbon({
     // Set the width during initialization.         
         width: "100%",
-        applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
+        applicationTab: { type: ej.Ribbon.ApplicationTabType.Menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
         tabs: [{
             id: "home", text: "HOME", groups: [{
-                    text: "New", alignType: ej.Ribbon.alignType.rows,content: [{
+                    text: "New", alignType: ej.Ribbon.AlignType.Rows,content: [{
                         groups: [{
                             id: "new",
                             text: "New",
                             toolTip: "New",
-                            type: ej.Ribbon.type.button,
+                            type: ej.Ribbon.Type.Button,
                             buttonSettings: {
                             width: 160,
                             height: 50
@@ -5677,15 +6039,15 @@ Specifies the Syncfusion toggle button members, events by using toggleButtonSett
         $("#Ribbon").ejRibbon({
     // Set the width during initialization.         
         width: "100%",
-        applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
+        applicationTab: { type: ej.Ribbon.ApplicationTabType.Menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
         tabs: [{
             id: "home", text: "HOME", groups: [{
-                    text: "New", alignType: ej.Ribbon.alignType.rows,content: [{
+                    text: "New", alignType: ej.Ribbon.AlignType.Rows,content: [{
                         groups: [{
                             id: "bold",
                             toolTip: "Bold",
                             isBig:true,
-                            type: ej.Ribbon.type.toggleButton,
+                            type: ej.Ribbon.Type.ToggleButton,
                             toggleButtonSettings: {
                             defaultText: "Bold",
                             activeText: "BoldTog"
@@ -5729,15 +6091,15 @@ Specifies the tooltip for button, split button, dropdown list, toggle button, cu
         $("#Ribbon").ejRibbon({
     // Set the width during initialization.         
         width: "100%",
-        applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
+        applicationTab: { type: ej.Ribbon.ApplicationTabType.Menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
         tabs: [{
             id: "home", text: "HOME", groups: [{
-                    text: "New", alignType: ej.Ribbon.alignType.rows,content: [{
+                    text: "New", alignType: ej.Ribbon.AlignType.Rows,content: [{
                         groups: [{
                             id: "new",
                             text: "New",
                             toolTip: "New",
-                            type: ej.Ribbon.type.button,
+                            type: ej.Ribbon.Type.Button,
                             buttonSettings: {
                             width: 160,
                             height: 50
@@ -5755,7 +6117,7 @@ Specifies the tooltip for button, split button, dropdown list, toggle button, cu
 ### tabs.groups.content.groups.quickAccessMode `enum`
 {:#members:tabs-groups-content-groups-quickaccessmode}
 
-<ts name="ej.Ribbon.quickAccessMode"/>
+<ts name="ej.Ribbon.QuickAccessMode"/>
 
 To add,show and hide controls in Quick Access toolbar.
 
@@ -5768,15 +6130,15 @@ To add,show and hide controls in Quick Access toolbar.
 </thead>
 <tbody>
 <tr>
-<td class="name">none</td>
+<td class="name">None</td>
 <td class="description">Controls are hidden in Quick Access toolbar </td>
 </tr>
 <tr>
-<td class="name">toolBar</td>
+<td class="name">ToolBar</td>
 <td class="description">Add controls in toolBar</td>
 </tr>
 <tr>
-<td class="name">menu</td>
+<td class="name">Menu</td>
 <td class="description">Add controls in menu</td>
 </tr>
 </tbody>
@@ -5784,7 +6146,7 @@ To add,show and hide controls in Quick Access toolbar.
 
 #### Default Value:
 
-* ej.Ribbon.quickAccessMode.none
+* ej.Ribbon.QuickAccessMode.None
 
 #### Example
 
@@ -5806,7 +6168,7 @@ To add,show and hide controls in Quick Access toolbar.
                 width: "100%",
                 showQAT: true,
                 applicationTab: {
-                    type: ej.Ribbon.applicationTabType.menu,
+                    type: ej.Ribbon.ApplicationTabType.Menu,
                     menuItemID: "ribbonmenu",
                     menuSettings: {
                         openOnClick: false
@@ -5817,12 +6179,12 @@ To add,show and hide controls in Quick Access toolbar.
                     text: "HOME",
                     groups: [{
                         text: "Font",
-                        alignType: ej.Ribbon.alignType.rows,
+                        alignType: ej.Ribbon.AlignType.Rows,
                         content: [{
                             groups: [{
                                 id: "bold",
                                 text: "Bold",
-                                quickAccessMode: ej.Ribbon.quickAccessMode.toolBar,
+                                quickAccessMode: ej.Ribbon.QuickAccessMode.ToolBar,
                                 buttonSettings: {
                                     contentType: ej.ContentType.ImageOnly,
                                     prefixIcon: "e-ribbon bold"
@@ -5830,7 +6192,7 @@ To add,show and hide controls in Quick Access toolbar.
                             }, {
                                 id: "italic",
                                 text: "Italic",
-                                quickAccessMode: ej.Ribbon.quickAccessMode.toolBar,
+                                quickAccessMode: ej.Ribbon.QuickAccessMode.ToolBar,
                                 buttonSettings: {
                                     contentType: ej.ContentType.ImageOnly,
                                     prefixIcon: "e-ribbon e-ribbonitalic"
@@ -5838,14 +6200,14 @@ To add,show and hide controls in Quick Access toolbar.
                             }, {
                                 id: "underline",
                                 text: "Underline",
-                                quickAccessMode: ej.Ribbon.quickAccessMode.toolBar,
+                                quickAccessMode: ej.Ribbon.QuickAccessMode.ToolBar,
                                 buttonSettings: {
                                     contentType: ej.ContentType.ImageOnly,
                                     prefixIcon: "e-ribbon e-ribbonunderline"
                                 }
                             }],
                             defaults: {
-                                type: ej.Ribbon.type.button,
+                                type: ej.Ribbon.Type.Button,
                                 height: 30
                             }
                         }]
@@ -5860,9 +6222,13 @@ To add,show and hide controls in Quick Access toolbar.
 ### tabs.groups.content.groups.type `enum`
 {:#members:tabs-groups-content-groups-type}
 
-<ts name="ej.Ribbon.type"/>
+<ts name="ej.Ribbon.Type"/>
 
-Specifies the type as "ej.Ribbon.type.button" or "ej.Ribbon.type.splitButton" or "ej.Ribbon.type.dropDownList" or "ej.Ribbon.type.toggleButton" or "ej.Ribbon.type.custom" or "ej.Ribbon.type.gallery" to render button, split, dropdown, toggle button, gallery, custom controls.
+Specifies the type as "ej.Ribbon.Type.Button" or "ej.Ribbon.Type.SplitButton" or "ej.Ribbon.Type.DropDownList" or "ej.Ribbon.Type.ToggleButton" or "ej.Ribbon.Type.Custom" or "ej.Ribbon.Type.Gallery" to render button, split, dropdown, toggle button, gallery, custom controls.
+
+#### Default Value:
+
+* ej.Ribbon.Type.Button
 
 <table class="params">
 <thead>
@@ -5873,35 +6239,31 @@ Specifies the type as "ej.Ribbon.type.button" or "ej.Ribbon.type.splitButton" or
 </thead>
 <tbody>
 <tr>
-<td class="name">button</td>
+<td class="name">Button</td>
 <td class="description">Specifies the button control</td>
 </tr>
 <tr>
-<td class="name">splitButton</td>
+<td class="name">SplitButton</td>
 <td class="description">Specifies the split button</td>
 </tr>
 <tr>
-<td class="name">dropDownList</td>
+<td class="name">DropDownList</td>
 <td class="description">Specifies the dropDown</td>
 </tr>
 <tr>
-<td class="name">custom</td>
+<td class="name">Custom</td>
 <td class="description">To append external element's</td>
 </tr>
 <tr>
-<td class="name">toggleButton</td>
+<td class="name">ToggleButton</td>
 <td class="description">Specifies the toggle button</td>
 </tr>
 <tr>
-<td class="name">gallery</td>
+<td class="name">Gallery</td>
 <td class="description">Specifies the ribbon gallery</td>
 </tr>
 </tbody>
 </table>
-
-#### Default Value:
-
-* ej.Ribbon.type.button
  
 #### Example
 
@@ -5922,15 +6284,15 @@ Specifies the type as "ej.Ribbon.type.button" or "ej.Ribbon.type.splitButton" or
         $("#Ribbon").ejRibbon({
     // Set the width during initialization.         
         width: "100%",
-        applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
+        applicationTab: { type: ej.Ribbon.ApplicationTabType.Menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
         tabs: [{
             id: "home", text: "HOME", groups: [{
-                    text: "New", alignType: ej.Ribbon.alignType.rows,content: [{
+                    text: "New", alignType: ej.Ribbon.AlignType.Rows,content: [{
                         groups: [{
                             id: "new",
                             text: "New",
                             toolTip: "New",
-                            type: ej.Ribbon.type.button,
+                            type: ej.Ribbon.Type.Button,
                             buttonSettings: {
                             width: 160,
                             height: 50
@@ -5976,7 +6338,7 @@ Specifies the ID of custom items to be placed in the groups.
         // Set the width during initialization.         
         width: "100%",
         applicationTab: {
-            type: ej.Ribbon.applicationTabType.menu,
+            type: ej.Ribbon.ApplicationTabType.Menu,
             menuItemID: "menu",
             menuSettings: {
                 openOnClick: false
@@ -5987,7 +6349,7 @@ Specifies the ID of custom items to be placed in the groups.
             text: "HOME",
             groups: [{
                 text: "New",
-                alignType: ej.Ribbon.alignType.rows,
+                alignType: ej.Ribbon.AlignType.Rows,
                 type: "custom",
                 contentID: "btn"
             }]
@@ -6028,7 +6390,7 @@ Specifies the HTML contents to place into the groups.
      $("#Ribbon").ejRibbon({
          width: "100%",
          applicationTab: {
-             type: ej.Ribbon.applicationTabType.menu,
+             type: ej.Ribbon.ApplicationTabType.Menu,
              menuItemID: "menu",
              menuSettings: {
                  openOnClick: false
@@ -6080,7 +6442,7 @@ Specifies the group expander for groups in the ribbon control. Set "true" to ena
         // Set the width during initialization.         
         width: "100%",
         applicationTab: {
-            type: ej.Ribbon.applicationTabType.menu,
+            type: ej.Ribbon.ApplicationTabType.Menu,
             menuItemID: "menu",
             menuSettings: {
                 openOnClick: false
@@ -6091,7 +6453,7 @@ Specifies the group expander for groups in the ribbon control. Set "true" to ena
             text: "HOME",
             groups: [{
                 text: "New",
-                alignType: ej.Ribbon.alignType.rows,
+                alignType: ej.Ribbon.AlignType.Rows,
                 type: "custom",
                 enableGroupExpander: true,
                 contentID: "btn"
@@ -6130,7 +6492,7 @@ Sets custom setting to the groups in the ribbon control.
         $("#defaultRibbon").ejRibbon({
             width: "100%",
             applicationTab: {
-                type: ej.Ribbon.applicationTabType.menu,
+                type: ej.Ribbon.ApplicationTabType.Menu,
                 menuItemID: "ribbonmenu",
                 menuSettings: {
                     openOnClick: false
@@ -6141,7 +6503,7 @@ Sets custom setting to the groups in the ribbon control.
                 text: "HOME",
                 groups: [{
                     text: "New",
-                    alignType: ej.Ribbon.alignType.rows,
+                    alignType: ej.Ribbon.AlignType.Rows,
                     type: "custom",
                     enableGroupExpander: true,
                     groupExpanderSettings:{   
@@ -6182,7 +6544,7 @@ Sets tooltip for the group expander of the group.
         $("#defaultRibbon").ejRibbon({
             width: "100%",
             applicationTab: {
-                type: ej.Ribbon.applicationTabType.menu,
+                type: ej.Ribbon.ApplicationTabType.Menu,
                 menuItemID: "ribbonmenu",
                 menuSettings: {
                     openOnClick: false
@@ -6193,7 +6555,7 @@ Sets tooltip for the group expander of the group.
                 text: "HOME",
                 groups: [{
                     text: "New",
-                    alignType: ej.Ribbon.alignType.rows,
+                    alignType: ej.Ribbon.AlignType.Rows,
                     type: "custom",
                     enableGroupExpander: true,
                     groupExpanderSettings:{   
@@ -6234,7 +6596,7 @@ Specifies the custom tooltip for group expander.Refer to ejRibbon#tabs->groups->
         $("#defaultRibbon").ejRibbon({
             width: "100%",
             applicationTab: {
-                type: ej.Ribbon.applicationTabType.menu,
+                type: ej.Ribbon.ApplicationTabType.Menu,
                 menuItemID: "ribbonmenu",
                 menuSettings: {
                     openOnClick: false
@@ -6245,7 +6607,7 @@ Specifies the custom tooltip for group expander.Refer to ejRibbon#tabs->groups->
                 text: "HOME",
                 groups: [{
                     text: "New",
-                    alignType: ej.Ribbon.alignType.rows,
+                    alignType: ej.Ribbon.AlignType.Rows,
                     type: "custom",
                     enableGroupExpander: true,
                     groupExpanderSettings:{   
@@ -6292,7 +6654,7 @@ Specifies the text to the groups in the ribbon control.
          // Set the width during initialization.         
          width: "100%",
          applicationTab: {
-             type: ej.Ribbon.applicationTabType.menu,
+             type: ej.Ribbon.ApplicationTabType.Menu,
              menuItemID: "menu",
              menuSettings: {
                  openOnClick: false
@@ -6303,7 +6665,7 @@ Specifies the text to the groups in the ribbon control.
              text: "HOME",
              groups: [{
                  text: "New",
-                 alignType: ej.Ribbon.alignType.rows,
+                 alignType: ej.Ribbon.AlignType.Rows,
                  type: "custom",
                  contentID: "btn"
              }]
@@ -6345,7 +6707,7 @@ Specifies the custom items such as div, table, controls by using the "custom" ty
         // Set the width during initialization.         
         width: "100%",
         applicationTab: {
-            type: ej.Ribbon.applicationTabType.menu,
+            type: ej.Ribbon.ApplicationTabType.Menu,
             menuItemID: "menu",
             menuSettings: {
                 openOnClick: false
@@ -6356,7 +6718,7 @@ Specifies the custom items such as div, table, controls by using the "custom" ty
             text: "HOME",
             groups: [{
                 text: "New",
-                alignType: ej.Ribbon.alignType.rows,
+                alignType: ej.Ribbon.AlignType.Rows,
                 type: "custom",
                 contentID: "btn"
             }]
@@ -6398,7 +6760,7 @@ Specifies the ID for each tab's content panel.
         // Set the width during initialization.         
         width: "100%",
         applicationTab: {
-            type: ej.Ribbon.applicationTabType.menu,
+            type: ej.Ribbon.ApplicationTabType.Menu,
             menuItemID: "menu",
             menuSettings: {
                 openOnClick: false
@@ -6409,7 +6771,7 @@ Specifies the ID for each tab's content panel.
             text: "HOME",
             groups: [{
                 text: "New",
-                alignType: ej.Ribbon.alignType.rows,
+                alignType: ej.Ribbon.AlignType.Rows,
                 type: "custom",
                 contentID: "btn"
             }]
@@ -6451,7 +6813,7 @@ Specifies the text of the tab in the ribbon control.
         // Set the width during initialization.         
         width: "100%",
         applicationTab: {
-            type: ej.Ribbon.applicationTabType.menu,
+            type: ej.Ribbon.ApplicationTabType.Menu,
             menuItemID: "menu",
             menuSettings: {
                 openOnClick: false
@@ -6462,7 +6824,7 @@ Specifies the text of the tab in the ribbon control.
             text: "HOME",
             groups: [{
                 text: "New",
-                alignType: ej.Ribbon.alignType.rows,
+                alignType: ej.Ribbon.AlignType.Rows,
                 type: "custom",
                 contentID: "btn"
             }]
@@ -6506,7 +6868,7 @@ Gets or sets a value that indicates whether to customizing the user interface (U
                 locale: "es-ES",
                 showQAT: true,
                 applicationTab: {
-                    type: ej.Ribbon.applicationTabType.menu,
+                    type: ej.Ribbon.ApplicationTabType.Menu,
                     menuItemID: "ribbonmenu",
                     menuSettings: {
                         openOnClick: false
@@ -6523,7 +6885,7 @@ Gets or sets a value that indicates whether to customizing the user interface (U
                                 id: "paste",
                                 text: "paste",
                                 toolTip: "Paste",
-                                quickAccessMode: ej.Ribbon.quickAccessMode.toolBar,
+                                quickAccessMode: ej.Ribbon.QuickAccessMode.ToolBar,
                                 splitButtonSettings: {
                                     contentType: ej.ContentType.ImageOnly,
                                     prefixIcon: "e-ribbon e-ribbonpaste",
@@ -6534,7 +6896,7 @@ Gets or sets a value that indicates whether to customizing the user interface (U
                                 }
                             }],
                             defaults: {
-                                type: ej.Ribbon.type.splitButton,
+                                type: ej.Ribbon.Type.SplitButton,
                                 width: 50,
                                 height: 70
                             }
@@ -6578,7 +6940,7 @@ Specifies the width to the ribbon control. You can set width in string or number
          // Set the width during initialization.         
          width: "100%",
          applicationTab: {
-             type: ej.Ribbon.applicationTabType.menu,
+             type: ej.Ribbon.ApplicationTabType.Menu,
              menuItemID: "menu",
              menuSettings: {
                  openOnClick: false
@@ -6589,7 +6951,7 @@ Specifies the width to the ribbon control. You can set width in string or number
              text: "HOME",
              groups: [{
                  text: "New",
-                 alignType: ej.Ribbon.alignType.rows,
+                 alignType: ej.Ribbon.AlignType.Rows,
                  type: "custom",
                  contentID: "btn"
              }]
@@ -6655,7 +7017,7 @@ Adds contextual tab or contextual tab set dynamically in the ribbon control with
          // Set the width during initialization.         
          width: "700px",
          applicationTab: {
-             type: ej.Ribbon.applicationTabType.menu,
+             type: ej.Ribbon.ApplicationTabType.Menu,
              menuItemID: "menu",
              menuSettings: {
                  openOnClick: false
@@ -6666,7 +7028,7 @@ Adds contextual tab or contextual tab set dynamically in the ribbon control with
              text: "HOME",
              groups: [{
                  text: "New",
-                 alignType: ej.Ribbon.alignType.rows,
+                 alignType: ej.Ribbon.AlignType.Rows,
                  type: "custom",
                  contentID: "btn"
              }]
@@ -6715,7 +7077,7 @@ Adds contextual tab or contextual tab set dynamically in the ribbon control with
          // Set the width during initialization.         
          width: "100%",
          applicationTab: {
-             type: ej.Ribbon.applicationTabType.menu,
+             type: ej.Ribbon.ApplicationTabType.Menu,
              menuItemID: "menu",
              menuSettings: {
                  openOnClick: false
@@ -6726,7 +7088,7 @@ Adds contextual tab or contextual tab set dynamically in the ribbon control with
              text: "HOME",
              groups: [{
                  text: "New",
-                 alignType: ej.Ribbon.alignType.rows,
+                 alignType: ej.Ribbon.AlignType.Rows,
                  type: "custom",
                  contentID: "btn"
              }]
@@ -6796,7 +7158,7 @@ Add new option to Backstage page.
         $("#Ribbon").ejRibbon({
             width: "500px",
             applicationTab: {
-                type: ej.Ribbon.applicationTabType.backstage,
+                 type: ej.Ribbon.ApplicationTabType.Backstage,
                 backstageSettings: {
                     text: "FILE",
                     height: 250,
@@ -6818,7 +7180,7 @@ Add new option to Backstage page.
                 text: "HOME",
                 groups: [{
                     text: "New",
-                    alignType: ej.Ribbon.alignType.rows,
+                    alignType: ej.Ribbon.AlignType.Rows,
                     type: "custom",
                     contentID: "btn"
                 }]
@@ -6856,7 +7218,7 @@ Add new option to Backstage page.
         $("#Ribbon").ejRibbon({
             width: "500px",
             applicationTab: {
-                type: ej.Ribbon.applicationTabType.backstage,
+                 type: ej.Ribbon.ApplicationTabType.Backstage,
                 backstageSettings: {
                     text: "FILE",
                     height: 250,
@@ -6878,7 +7240,7 @@ Add new option to Backstage page.
                 text: "HOME",
                 groups: [{
                     text: "New",
-                    alignType: ej.Ribbon.alignType.rows,
+                    alignType: ej.Ribbon.AlignType.Rows,
                     type: "custom",
                     contentID: "btn"
                 }]
@@ -6950,7 +7312,7 @@ Adds tab dynamically in the ribbon control with given name, tab group array and 
             // Set the width during initialization.         
             width: "700px",
             applicationTab: {
-                type: ej.Ribbon.applicationTabType.menu,
+                type: ej.Ribbon.ApplicationTabType.Menu,
                 menuItemID: "menu",
                 menuSettings: {
                     openOnClick: false
@@ -6961,7 +7323,7 @@ Adds tab dynamically in the ribbon control with given name, tab group array and 
                 text: "HOME",
                 groups: [{
                     text: "New",
-                    alignType: ej.Ribbon.alignType.rows,
+                    alignType: ej.Ribbon.AlignType.Rows,
                     type: "custom",
                     contentID: "btn"
                 }]
@@ -6970,7 +7332,7 @@ Adds tab dynamically in the ribbon control with given name, tab group array and 
         });
         var tabGroup = [{
         text: "New",
-        alignType: ej.Ribbon.alignType.rows,
+        alignType: ej.Ribbon.AlignType.Rows,
         content: [{
             groups: [{
                 id: "new",
@@ -6978,7 +7340,7 @@ Adds tab dynamically in the ribbon control with given name, tab group array and 
                 toolTip: "New"
             }],
             defaults: {
-                type: ej.Ribbon.type.button,
+                type: ej.Ribbon.Type.Button,
                 width: 60,
                 height: 70
             }
@@ -7012,7 +7374,7 @@ Adds tab dynamically in the ribbon control with given name, tab group array and 
         // Set the width during initialization.         
         width: "100%",
         applicationTab: {
-            type: ej.Ribbon.applicationTabType.menu,
+            type: ej.Ribbon.ApplicationTabType.Menu,
             menuItemID: "menu",
             menuSettings: {
                 openOnClick: false
@@ -7023,7 +7385,7 @@ Adds tab dynamically in the ribbon control with given name, tab group array and 
             text: "HOME",
             groups: [{
                 text: "New",
-                alignType: ej.Ribbon.alignType.rows,
+                alignType: ej.Ribbon.AlignType.Rows,
                 type: "custom",
                 contentID: "btn"
             }]
@@ -7032,7 +7394,7 @@ Adds tab dynamically in the ribbon control with given name, tab group array and 
 });
     var tabGroup = [{
     text: "New",
-    alignType: ej.Ribbon.alignType.rows,
+    alignType: ej.Ribbon.AlignType.Rows,
     content: [{
         groups: [{
             id: "new",
@@ -7040,7 +7402,7 @@ Adds tab dynamically in the ribbon control with given name, tab group array and 
             toolTip: "New"
         }],
         defaults: {
-            type: ej.Ribbon.type.button,
+            type: ej.Ribbon.Type.Button,
             width: 60,
             height: 70
         }
@@ -7103,7 +7465,7 @@ Adds tab group dynamically in the ribbon control with given tab index, tab group
         // Set the width during initialization.         
         width: "700px",
         applicationTab: {
-            type: ej.Ribbon.applicationTabType.menu,
+            type: ej.Ribbon.ApplicationTabType.Menu,
             menuItemID: "menu",
             menuSettings: {
                 openOnClick: false
@@ -7114,7 +7476,7 @@ Adds tab group dynamically in the ribbon control with given tab index, tab group
             text: "HOME",
             groups: [{
                 text: "One",
-                alignType: ej.Ribbon.alignType.rows,
+                alignType: ej.Ribbon.AlignType.Rows,
                 content: [{
                     groups: [{
                         id: "one",
@@ -7124,7 +7486,7 @@ Adds tab group dynamically in the ribbon control with given tab index, tab group
                         text: "two"
                     }],
                     defaults: {
-                        type: ej.Ribbon.type.button,
+                        type: ej.Ribbon.Type.Button,
                         width: 60,
                         height: 70
                     }
@@ -7135,14 +7497,14 @@ Adds tab group dynamically in the ribbon control with given tab index, tab group
     });
     var ribbonGrp = {
     text: "New",
-    alignType: ej.Ribbon.alignType.rows,
+    alignType: ej.Ribbon.AlignType.Rows,
     content: [{
         groups: [{
             id: "new",
             text: "New"
         }],
         defaults: {
-            type: ej.Ribbon.type.button,
+            type: ej.Ribbon.Type.Button,
             width: 60,
             height: 70
         }
@@ -7175,7 +7537,7 @@ Adds tab group dynamically in the ribbon control with given tab index, tab group
         // Set the width during initialization.         
         width: "700px",
         applicationTab: {
-            type: ej.Ribbon.applicationTabType.menu,
+            type: ej.Ribbon.ApplicationTabType.Menu,
             menuItemID: "menu",
             menuSettings: {
                 openOnClick: false
@@ -7186,7 +7548,7 @@ Adds tab group dynamically in the ribbon control with given tab index, tab group
             text: "HOME",
             groups: [{
                 text: "One",
-                alignType: ej.Ribbon.alignType.rows,
+                alignType: ej.Ribbon.AlignType.Rows,
                 content: [{
                     groups: [{
                         id: "one",
@@ -7196,7 +7558,7 @@ Adds tab group dynamically in the ribbon control with given tab index, tab group
                         text: "two"
                     }],
                     defaults: {
-                        type: ej.Ribbon.type.button,
+                        type: ej.Ribbon.Type.Button,
                         width: 60,
                         height: 70
                     }
@@ -7207,14 +7569,14 @@ Adds tab group dynamically in the ribbon control with given tab index, tab group
     });
     var ribbonGrp = {
         text: "New",
-        alignType: ej.Ribbon.alignType.rows,
+        alignType: ej.Ribbon.AlignType.Rows,
         content: [{
             groups: [{
                 id: "new",
                 text: "New"
             }],
             defaults: {
-                type: ej.Ribbon.type.button,
+                type: ej.Ribbon.Type.Button,
                 width: 60,
                 height: 70
             }
@@ -7291,7 +7653,7 @@ Adds group content dynamically in the ribbon control with given tab index, group
         // Set the width during initialization.         
         width: "700px",
         applicationTab: {
-            type: ej.Ribbon.applicationTabType.menu,
+            type: ej.Ribbon.ApplicationTabType.Menu,
             menuItemID: "menu",
             menuSettings: {
                 openOnClick: false
@@ -7302,7 +7664,7 @@ Adds group content dynamically in the ribbon control with given tab index, group
             text: "HOME",
             groups: [{
                 text: "One",
-                alignType: ej.Ribbon.alignType.rows,
+                alignType: ej.Ribbon.AlignType.Rows,
                 content: [{
                     groups: [{
                         id: "one",
@@ -7312,7 +7674,7 @@ Adds group content dynamically in the ribbon control with given tab index, group
                         text: "two"
                     }],
                     defaults: {
-                        type: ej.Ribbon.type.button,
+                        type: ej.Ribbon.Type.Button,
                         width: 60,
                         height: 70
                     }
@@ -7350,10 +7712,10 @@ Adds group content dynamically in the ribbon control with given tab index, group
     $(function () {$("#Ribbon").ejRibbon({
     // Set the width during initialization.         
         width: "700px",
-        applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
+        applicationTab: { type: ej.Ribbon.ApplicationTabType.Menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
         tabs: [{
             id: "home", text: "HOME", groups: [{
-                text: "One", alignType: ej.Ribbon.alignType.rows, content: [{
+                text: "One", alignType: ej.Ribbon.AlignType.Rows, content: [{
                     groups: [{
                         id: "one",
                         text: "one"
@@ -7362,7 +7724,7 @@ Adds group content dynamically in the ribbon control with given tab index, group
                         text: "two"
                     }],
                         defaults: {
-                        type: ej.Ribbon.type.button,
+                        type: ej.Ribbon.Type.Button,
                             width: 60,
                             height: 70
                         }
@@ -7419,7 +7781,7 @@ Hides the ribbon backstage page.
         $("#Ribbon").ejRibbon({
             width: "500px",
             applicationTab: {
-                type: ej.Ribbon.applicationTabType.backstage,
+                 type: ej.Ribbon.ApplicationTabType.Backstage,
                 backstageSettings: {
                     text: "FILE",
                     height: 250,
@@ -7451,7 +7813,7 @@ Hides the ribbon backstage page.
                 text: "HOME",
                 groups: [{
                     text: "New",
-                    alignType: ej.Ribbon.alignType.rows,
+                    alignType: ej.Ribbon.AlignType.Rows,
                     type: "custom",
                     contentID: "btn"
                 }]
@@ -7495,7 +7857,7 @@ Hides the ribbon backstage page.
         $("#Ribbon").ejRibbon({
             width: "500px",
             applicationTab: {
-                type: ej.Ribbon.applicationTabType.backstage,
+                 type: ej.Ribbon.ApplicationTabType.Backstage,
                 backstageSettings: {
                     text: "FILE",
                     height: 250,
@@ -7527,7 +7889,7 @@ Hides the ribbon backstage page.
                 text: "HOME",
                 groups: [{
                     text: "New",
-                    alignType: ej.Ribbon.alignType.rows,
+                    alignType: ej.Ribbon.AlignType.Rows,
                     type: "custom",
                     contentID: "btn"
                 }]
@@ -7566,7 +7928,7 @@ Collapses the ribbon tab content.
          // Set the width during initialization.         
          width: "700px",
          applicationTab: {
-             type: ej.Ribbon.applicationTabType.menu,
+             type: ej.Ribbon.ApplicationTabType.Menu,
              menuItemID: "menu",
              menuSettings: {
                  openOnClick: false
@@ -7577,7 +7939,7 @@ Collapses the ribbon tab content.
              text: "HOME",
              groups: [{
                  text: "New",
-                 alignType: ej.Ribbon.alignType.rows,
+                 alignType: ej.Ribbon.AlignType.Rows,
                  type: "custom",
                  contentID: "btn"
              }]
@@ -7612,7 +7974,7 @@ Collapses the ribbon tab content.
          // Set the width during initialization.         
          width: "700px",
          applicationTab: {
-             type: ej.Ribbon.applicationTabType.menu,
+             type: ej.Ribbon.ApplicationTabType.Menu,
              menuItemID: "menu",
              menuSettings: {
                  openOnClick: false
@@ -7623,7 +7985,7 @@ Collapses the ribbon tab content.
              text: "HOME",
              groups: [{
                  text: "New",
-                 alignType: ej.Ribbon.alignType.rows,
+                 alignType: ej.Ribbon.AlignType.Rows,
                  type: "custom",
                  contentID: "btn"
              }]
@@ -7689,7 +8051,7 @@ Expands the ribbon tab content.
         // Set the width during initialization.         
         width: "700px",
         applicationTab: {
-            type: ej.Ribbon.applicationTabType.menu,
+            type: ej.Ribbon.ApplicationTabType.Menu,
             menuItemID: "menu",
             menuSettings: {
                 openOnClick: false
@@ -7700,7 +8062,7 @@ Expands the ribbon tab content.
             text: "HOME",
             groups: [{
                 text: "New",
-                alignType: ej.Ribbon.alignType.rows,
+                alignType: ej.Ribbon.AlignType.Rows,
                 type: "custom",
                 contentID: "btn"
             }]
@@ -7736,7 +8098,7 @@ Expands the ribbon tab content.
         // Set the width during initialization.         
         width: "700px",
         applicationTab: {
-            type: ej.Ribbon.applicationTabType.menu,
+            type: ej.Ribbon.ApplicationTabType.Menu,
             menuItemID: "menu",
             menuSettings: {
                 openOnClick: false
@@ -7747,7 +8109,7 @@ Expands the ribbon tab content.
             text: "HOME",
             groups: [{
                 text: "New",
-                alignType: ej.Ribbon.alignType.rows,
+                alignType: ej.Ribbon.AlignType.Rows,
                 type: "custom",
                 contentID: "btn"
             }]
@@ -7809,7 +8171,7 @@ String
          // Set the width during initialization.         
          width: "100%",
          applicationTab: {
-             type: ej.Ribbon.applicationTabType.menu,
+             type: ej.Ribbon.ApplicationTabType.Menu,
              menuItemID: "menu",
              menuSettings: {
                  openOnClick: false
@@ -7820,7 +8182,7 @@ String
              text: "HOME",
              groups: [{
                  text: "New",
-                 alignType: ej.Ribbon.alignType.rows,
+                 alignType: ej.Ribbon.AlignType.Rows,
                  type: "custom",
                  contentID: "btn"
              }]
@@ -7855,7 +8217,7 @@ String
         // Set the width during initialization.         
         width: "100%",
         applicationTab: {
-            type: ej.Ribbon.applicationTabType.menu,
+            type: ej.Ribbon.ApplicationTabType.Menu,
             menuItemID: "menu",
             menuSettings: {
                 openOnClick: false
@@ -7866,7 +8228,7 @@ String
             text: "HOME",
             groups: [{
                 text: "New",
-                alignType: ej.Ribbon.alignType.rows,
+                alignType: ej.Ribbon.AlignType.Rows,
                 type: "custom",
                 contentID: "btn"
             }]
@@ -7922,7 +8284,7 @@ Hides the given text tab in the ribbon control.
           // Set the width during initialization.         
           width: "100%",
           applicationTab: {
-              type: ej.Ribbon.applicationTabType.menu,
+              type: ej.Ribbon.ApplicationTabType.Menu,
               menuItemID: "menu",
               menuSettings: {
                   openOnClick: false
@@ -7933,7 +8295,7 @@ Hides the given text tab in the ribbon control.
               text: "HOME",
               groups: [{
                   text: "New",
-                  alignType: ej.Ribbon.alignType.rows,
+                  alignType: ej.Ribbon.AlignType.Rows,
                   type: "custom",
                   contentID: "btn"
               }]
@@ -7968,7 +8330,7 @@ Hides the given text tab in the ribbon control.
          // Set the width during initialization.         
          width: "100%",
          applicationTab: {
-             type: ej.Ribbon.applicationTabType.menu,
+             type: ej.Ribbon.ApplicationTabType.Menu,
              menuItemID: "menu",
              menuSettings: {
                  openOnClick: false
@@ -7979,7 +8341,7 @@ Hides the given text tab in the ribbon control.
              text: "HOME",
              groups: [{
                  text: "New",
-                 alignType: ej.Ribbon.alignType.rows,
+                 alignType: ej.Ribbon.AlignType.Rows,
                  type: "custom",
                  contentID: "btn"
              }]
@@ -8040,7 +8402,7 @@ Boolean
          // Set the width during initialization.         
          width: "100%",
          applicationTab: {
-             type: ej.Ribbon.applicationTabType.menu,
+             type: ej.Ribbon.ApplicationTabType.Menu,
              menuItemID: "menu",
              menuSettings: {
                  openOnClick: false
@@ -8051,7 +8413,7 @@ Boolean
              text: "HOME",
              groups: [{
                  text: "New",
-                 alignType: ej.Ribbon.alignType.rows,
+                 alignType: ej.Ribbon.AlignType.Rows,
                  type: "custom",
                  contentID: "btn"
              }]
@@ -8086,7 +8448,7 @@ Boolean
           // Set the width during initialization.         
           width: "100%",
           applicationTab: {
-              type: ej.Ribbon.applicationTabType.menu,
+              type: ej.Ribbon.ApplicationTabType.Menu,
               menuItemID: "menu",
               menuSettings: {
                   openOnClick: false
@@ -8097,7 +8459,7 @@ Boolean
               text: "HOME",
               groups: [{
                   text: "New",
-                  alignType: ej.Ribbon.alignType.rows,
+                  alignType: ej.Ribbon.AlignType.Rows,
                   type: "custom",
                   contentID: "btn"
               }]
@@ -8158,7 +8520,7 @@ Boolean
         // Set the width during initialization.         
         width: "100%",
         applicationTab: {
-            type: ej.Ribbon.applicationTabType.menu,
+            type: ej.Ribbon.ApplicationTabType.Menu,
             menuItemID: "menu",
             menuSettings: {
                 openOnClick: false
@@ -8169,7 +8531,7 @@ Boolean
             text: "HOME",
             groups: [{
                 text: "New",
-                alignType: ej.Ribbon.alignType.rows,
+                alignType: ej.Ribbon.AlignType.Rows,
                 type: "custom",
                 contentID: "btn"
             }]
@@ -8204,7 +8566,7 @@ Boolean
         // Set the width during initialization.         
         width: "100%",
         applicationTab: {
-            type: ej.Ribbon.applicationTabType.menu,
+            type: ej.Ribbon.ApplicationTabType.Menu,
             menuItemID: "menu",
             menuSettings: {
                 openOnClick: false
@@ -8215,7 +8577,7 @@ Boolean
             text: "HOME",
             groups: [{
                 text: "New",
-                alignType: ej.Ribbon.alignType.rows,
+                alignType: ej.Ribbon.AlignType.Rows,
                 type: "custom",
                 contentID: "btn"
             }]
@@ -8271,7 +8633,7 @@ Removes the given index tab item from the ribbon control.
          // Set the width during initialization.         
          width: "100%",
          applicationTab: {
-             type: ej.Ribbon.applicationTabType.menu,
+             type: ej.Ribbon.ApplicationTabType.Menu,
              menuItemID: "menu",
              menuSettings: {
                  openOnClick: false
@@ -8282,7 +8644,7 @@ Removes the given index tab item from the ribbon control.
              text: "HOME",
              groups: [{
                  text: "New",
-                 alignType: ej.Ribbon.alignType.rows,
+                 alignType: ej.Ribbon.AlignType.Rows,
                  type: "custom",
                  contentID: "btn"
              }]
@@ -8317,7 +8679,7 @@ Removes the given index tab item from the ribbon control.
         // Set the width during initialization.         
         width: "100%",
         applicationTab: {
-            type: ej.Ribbon.applicationTabType.menu,
+            type: ej.Ribbon.ApplicationTabType.Menu,
             menuItemID: "menu",
             menuSettings: {
                 openOnClick: false
@@ -8328,7 +8690,7 @@ Removes the given index tab item from the ribbon control.
             text: "HOME",
             groups: [{
                 text: "New",
-                alignType: ej.Ribbon.alignType.rows,
+                alignType: ej.Ribbon.AlignType.Rows,
                 type: "custom",
                 contentID: "btn"
             }]
@@ -8389,7 +8751,7 @@ Sets new text to the given text tab in the ribbon control.
          // Set the width during initialization.         
          width: "100%",
          applicationTab: {
-             type: ej.Ribbon.applicationTabType.menu,
+             type: ej.Ribbon.ApplicationTabType.Menu,
              menuItemID: "menu",
              menuSettings: {
                  openOnClick: false
@@ -8400,7 +8762,7 @@ Sets new text to the given text tab in the ribbon control.
              text: "HOME",
              groups: [{
                  text: "New",
-                 alignType: ej.Ribbon.alignType.rows,
+                 alignType: ej.Ribbon.AlignType.Rows,
                  type: "custom",
                  contentID: "btn"
              }]
@@ -8435,7 +8797,7 @@ Sets new text to the given text tab in the ribbon control.
          // Set the width during initialization.         
          width: "100%",
          applicationTab: {
-             type: ej.Ribbon.applicationTabType.menu,
+             type: ej.Ribbon.ApplicationTabType.Menu,
              menuItemID: "menu",
              menuSettings: {
                  openOnClick: false
@@ -8446,7 +8808,7 @@ Sets new text to the given text tab in the ribbon control.
              text: "HOME",
              groups: [{
                  text: "New",
-                 alignType: ej.Ribbon.alignType.rows,
+                 alignType: ej.Ribbon.AlignType.Rows,
                  type: "custom",
                  contentID: "btn"
              }]
@@ -8495,7 +8857,7 @@ Displays the ribbon backstage page.
         $("#Ribbon").ejRibbon({
             width: "500px",
             applicationTab: {
-                type: ej.Ribbon.applicationTabType.backstage,
+                 type: ej.Ribbon.ApplicationTabType.Backstage,
                 backstageSettings: {
                     text: "FILE",
                     height: 250,
@@ -8527,7 +8889,7 @@ Displays the ribbon backstage page.
                 text: "HOME",
                 groups: [{
                     text: "New",
-                    alignType: ej.Ribbon.alignType.rows,
+                    alignType: ej.Ribbon.AlignType.Rows,
                     type: "custom",
                     contentID: "btn"
                 }]
@@ -8571,7 +8933,7 @@ Displays the ribbon backstage page.
         $("#Ribbon").ejRibbon({
             width: "500px",
             applicationTab: {
-                type: ej.Ribbon.applicationTabType.backstage,
+                 type: ej.Ribbon.ApplicationTabType.Backstage,
                 backstageSettings: {
                     text: "FILE",
                     height: 250,
@@ -8603,7 +8965,7 @@ Displays the ribbon backstage page.
                 text: "HOME",
                 groups: [{
                     text: "New",
-                    alignType: ej.Ribbon.alignType.rows,
+                    alignType: ej.Ribbon.AlignType.Rows,
                     type: "custom",
                     contentID: "btn"
                 }]
@@ -8659,7 +9021,7 @@ Displays the given text tab in the ribbon control.
         // Set the width during initialization.         
         width: "100%",
         applicationTab: {
-            type: ej.Ribbon.applicationTabType.menu,
+            type: ej.Ribbon.ApplicationTabType.Menu,
             menuItemID: "menu",
             menuSettings: {
                 openOnClick: false
@@ -8670,7 +9032,7 @@ Displays the given text tab in the ribbon control.
             text: "HOME",
             groups: [{
                 text: "New",
-                alignType: ej.Ribbon.alignType.rows,
+                alignType: ej.Ribbon.AlignType.Rows,
                 type: "custom",
                 contentID: "btn"
             }]
@@ -8705,7 +9067,7 @@ Displays the given text tab in the ribbon control.
          // Set the width during initialization.         
          width: "100%",
          applicationTab: {
-             type: ej.Ribbon.applicationTabType.menu,
+             type: ej.Ribbon.ApplicationTabType.Menu,
              menuItemID: "menu",
              menuSettings: {
                  openOnClick: false
@@ -8716,7 +9078,7 @@ Displays the given text tab in the ribbon control.
              text: "HOME",
              groups: [{
                  text: "New",
-                 alignType: ej.Ribbon.alignType.rows,
+                 alignType: ej.Ribbon.AlignType.Rows,
                  type: "custom",
                  contentID: "btn"
              }]
@@ -8782,7 +9144,7 @@ To customize Group alone in the inside content.
             // Set the width during initialization.         
             width: "700px",
             applicationTab: {
-                type: ej.Ribbon.applicationTabType.menu,
+                type: ej.Ribbon.ApplicationTabType.Menu,
                 menuItemID: "menu",
                 menuSettings: {
                     openOnClick: false
@@ -8793,7 +9155,7 @@ To customize Group alone in the inside content.
                 text: "HOME",
                 groups: [{
                     text: "One",
-                    alignType: ej.Ribbon.alignType.rows,
+                    alignType: ej.Ribbon.AlignType.Rows,
                     content: [{
                         groups: [{
                             id: "one",
@@ -8804,7 +9166,7 @@ To customize Group alone in the inside content.
 
                         }],
                         defaults: {
-                            type: ej.Ribbon.type.button,
+                            type: ej.Ribbon.Type.Button,
                             width: 60,
                             height: 70
                         }
@@ -8844,7 +9206,7 @@ To customize Group alone in the inside content.
             // Set the width during initialization.         
             width: "700px",
             applicationTab: {
-                type: ej.Ribbon.applicationTabType.menu,
+                type: ej.Ribbon.ApplicationTabType.Menu,
                 menuItemID: "menu",
                 menuSettings: {
                     openOnClick: false
@@ -8855,7 +9217,7 @@ To customize Group alone in the inside content.
                 text: "HOME",
                 groups: [{
                     text: "One",
-                    alignType: ej.Ribbon.alignType.rows,
+                    alignType: ej.Ribbon.AlignType.Rows,
                     content: [{
                         groups: [{
                             id: "one",
@@ -8866,7 +9228,7 @@ To customize Group alone in the inside content.
 
                         }],
                         defaults: {
-                            type: ej.Ribbon.type.button,
+                            type: ej.Ribbon.Type.Button,
                             width: 60,
                             height: 70
                         }
@@ -8879,7 +9241,7 @@ To customize Group alone in the inside content.
          {
            text: "new one "
           };
-    $("#Ribbon").ejRibbon("updateGroup",1, one, ribbonGrp);
+    $("#Ribbon").ejRibbon("updateGroup",1, "one", ribbonGrp);
     </script>
 
 {% endhighlight %}
@@ -8929,7 +9291,7 @@ Update option in existing Backstage.
         $("#Ribbon").ejRibbon({
             width: "500px",
             applicationTab: {
-                type: ej.Ribbon.applicationTabType.backstage,
+                 type: ej.Ribbon.ApplicationTabType.Backstage,
                 backstageSettings: {
                     text: "FILE",
                     height: 250,
@@ -8951,7 +9313,7 @@ Update option in existing Backstage.
                 text: "HOME",
                 groups: [{
                     text: "New",
-                    alignType: ej.Ribbon.alignType.rows,
+                    alignType: ej.Ribbon.AlignType.Rows,
                     type: "custom",
                     contentID: "btn"
                 }]
@@ -8986,7 +9348,7 @@ Update option in existing Backstage.
         $("#Ribbon").ejRibbon({
             width: "500px",
             applicationTab: {
-                type: ej.Ribbon.applicationTabType.backstage,
+                 type: ej.Ribbon.ApplicationTabType.Backstage,
                 backstageSettings: {
                     text: "FILE",
                     height: 250,
@@ -9008,7 +9370,7 @@ Update option in existing Backstage.
                 text: "HOME",
                 groups: [{
                     text: "New",
-                    alignType: ej.Ribbon.alignType.rows,
+                    alignType: ej.Ribbon.AlignType.Rows,
                     type: "custom",
                     contentID: "btn"
                 }]
@@ -9083,7 +9445,7 @@ To customize whole content from Tab Group.
             // Set the width during initialization.         
             width: "700px",
             applicationTab: {
-                type: ej.Ribbon.applicationTabType.menu,
+                type: ej.Ribbon.ApplicationTabType.Menu,
                 menuItemID: "menu",
                 menuSettings: {
                     openOnClick: false
@@ -9094,7 +9456,7 @@ To customize whole content from Tab Group.
                 text: "HOME",
                 groups: [{
                     text: "One",
-                    alignType: ej.Ribbon.alignType.rows,
+                    alignType: ej.Ribbon.AlignType.Rows,
                     content: [{
                         groups: [{
                             id: "one",
@@ -9104,7 +9466,7 @@ To customize whole content from Tab Group.
                             text: "two"
                         }],
                         defaults: {
-                            type: ej.Ribbon.type.button,
+                            type: ej.Ribbon.Type.Button,
                             width: 60,
                             height: 70
                         }
@@ -9142,7 +9504,7 @@ To customize whole content from Tab Group.
             // Set the width during initialization.         
             width: "700px",
             applicationTab: {
-                type: ej.Ribbon.applicationTabType.menu,
+                type: ej.Ribbon.ApplicationTabType.Menu,
                 menuItemID: "menu",
                 menuSettings: {
                     openOnClick: false
@@ -9153,7 +9515,7 @@ To customize whole content from Tab Group.
                 text: "HOME",
                 groups: [{
                     text: "One",
-                    alignType: ej.Ribbon.alignType.rows,
+                    alignType: ej.Ribbon.AlignType.Rows,
                     content: [{
                         groups: [{
                             id: "one",
@@ -9163,7 +9525,7 @@ To customize whole content from Tab Group.
                             text: "two"
                         }],
                         defaults: {
-                            type: ej.Ribbon.type.button,
+                            type: ej.Ribbon.Type.Button,
                             width: 60,
                             height: 70
                         }
@@ -9224,7 +9586,7 @@ Remove option from Backstage.
         $("#Ribbon").ejRibbon({
             width: "500px",
             applicationTab: {
-                type: ej.Ribbon.applicationTabType.backstage,
+                 type: ej.Ribbon.ApplicationTabType.Backstage,
                 backstageSettings: {
                     text: "FILE",
                     height: 250,
@@ -9246,7 +9608,7 @@ Remove option from Backstage.
                 text: "HOME",
                 groups: [{
                     text: "New",
-                    alignType: ej.Ribbon.alignType.rows,
+                    alignType: ej.Ribbon.AlignType.Rows,
                     type: "custom",
                     contentID: "btn"
                 }]
@@ -9284,7 +9646,7 @@ Remove option from Backstage.
         $("#Ribbon").ejRibbon({
             width: "500px",
             applicationTab: {
-                type: ej.Ribbon.applicationTabType.backstage,
+                 type: ej.Ribbon.ApplicationTabType.Backstage,
                 backstageSettings: {
                     text: "FILE",
                     height: 250,
@@ -9306,7 +9668,7 @@ Remove option from Backstage.
                 text: "HOME",
                 groups: [{
                     text: "New",
-                    alignType: ej.Ribbon.alignType.rows,
+                    alignType: ej.Ribbon.AlignType.Rows,
                     type: "custom",
                     contentID: "btn"
                 }]
@@ -9402,7 +9764,7 @@ Triggered before the ribbon tab item is removed.
         // Set the width during initialization.         
         width: "100%",
         applicationTab: {
-            type: ej.Ribbon.applicationTabType.menu,
+            type: ej.Ribbon.ApplicationTabType.Menu,
             menuItemID: "menu",
             menuSettings: {
                 openOnClick: false
@@ -9413,7 +9775,7 @@ Triggered before the ribbon tab item is removed.
             text: "HOME",
             groups: [{
                 text: "New",
-                alignType: ej.Ribbon.alignType.rows,
+                alignType: ej.Ribbon.AlignType.Rows,
                 type: "custom",
                 contentID: "btn"
             }]
@@ -9495,7 +9857,7 @@ Triggered before the ribbon control is created.
          // Set the width during initialization.         
          width: "100%",
          applicationTab: {
-             type: ej.Ribbon.applicationTabType.menu,
+             type: ej.Ribbon.ApplicationTabType.Menu,
              menuItemID: "menu",
              menuSettings: {
                  openOnClick: false
@@ -9506,7 +9868,7 @@ Triggered before the ribbon control is created.
              text: "HOME",
              groups: [{
                  text: "New",
-                 alignType: ej.Ribbon.alignType.rows,
+                 alignType: ej.Ribbon.AlignType.Rows,
                  type: "custom",
                  contentID: "btn"
              }]
@@ -9593,7 +9955,7 @@ Triggered before the ribbon control is destroyed.
          // Set the width during initialization.         
          width: "100%",
          applicationTab: {
-             type: ej.Ribbon.applicationTabType.menu,
+             type: ej.Ribbon.ApplicationTabType.Menu,
              menuItemID: "menu",
              menuSettings: {
                  openOnClick: false
@@ -9604,7 +9966,7 @@ Triggered before the ribbon control is destroyed.
              text: "HOME",
              groups: [{
                  text: "New",
-                 alignType: ej.Ribbon.alignType.rows,
+                 alignType: ej.Ribbon.AlignType.Rows,
                  type: "custom",
                  contentID: "btn"
              }]
@@ -9674,7 +10036,7 @@ Triggered when the control in the group is clicked successfully.
          // Set the width during initialization.         
          width: "100%",
          applicationTab: {
-             type: ej.Ribbon.applicationTabType.menu,
+             type: ej.Ribbon.ApplicationTabType.Menu,
              menuItemID: "menu",
              menuSettings: {
                  openOnClick: false
@@ -9685,7 +10047,7 @@ Triggered when the control in the group is clicked successfully.
              text: "HOME",
              groups: [{
                  text: "New",
-                 alignType: ej.Ribbon.alignType.rows,
+                 alignType: ej.Ribbon.AlignType.Rows,
                  type: "custom",
                  contentID: "btn"
              }]
@@ -9755,7 +10117,7 @@ Triggered when the group expander in the group is clicked successfully.
         // Set the width during initialization.         
         width: "100%",
         applicationTab: {
-            type: ej.Ribbon.applicationTabType.menu,
+            type: ej.Ribbon.ApplicationTabType.Menu,
             menuItemID: "menu",
             menuSettings: {
                 openOnClick: false
@@ -9766,7 +10128,7 @@ Triggered when the group expander in the group is clicked successfully.
             text: "HOME",
             groups: [{
                 text: "New",
-                alignType: ej.Ribbon.alignType.rows,
+                alignType: ej.Ribbon.AlignType.Rows,
                 type: "custom",
                 contentID: "btn"
             }]
@@ -9841,7 +10203,7 @@ Triggered when an item in the Gallery control is clicked successfully.
          // Set the width during initialization.         
          width: "100%",
          applicationTab: {
-             type: ej.Ribbon.applicationTabType.menu,
+             type: ej.Ribbon.ApplicationTabType.Menu,
              menuItemID: "menu",
              menuSettings: {
                  openOnClick: false
@@ -9853,7 +10215,7 @@ Triggered when an item in the Gallery control is clicked successfully.
              groups: [{
 
                  text: "Gallery",
-                 alignType: ej.Ribbon.alignType.rows,
+                 alignType: ej.Ribbon.AlignType.Rows,
                  content: [{
                      groups: [{
                          id: "Gallery",
@@ -9984,7 +10346,7 @@ Triggered when a tab or button in the backstage page is clicked successfully.
         $("#Ribbon").ejRibbon({
             width: "500px",
             applicationTab: {
-                type: ej.Ribbon.applicationTabType.backstage,
+                 type: ej.Ribbon.ApplicationTabType.Backstage,
                 backstageSettings: {
                     text: "FILE",
                     height: 250,
@@ -10016,7 +10378,7 @@ Triggered when a tab or button in the backstage page is clicked successfully.
                 text: "HOME",
                 groups: [{
                     text: "New",
-                    alignType: ej.Ribbon.alignType.rows,
+                    alignType: ej.Ribbon.AlignType.Rows,
                     type: "custom",
                     contentID: "btn"
                 }]
@@ -10081,7 +10443,7 @@ Triggered when the ribbon control is collapsed.
          // Set the width during initialization.         
          width: "100%",
          applicationTab: {
-             type: ej.Ribbon.applicationTabType.menu,
+             type: ej.Ribbon.ApplicationTabType.Menu,
              menuItemID: "menu",
              menuSettings: {
                  openOnClick: false
@@ -10092,7 +10454,7 @@ Triggered when the ribbon control is collapsed.
              text: "HOME",
              groups: [{
                  text: "New",
-                 alignType: ej.Ribbon.alignType.rows,
+                 alignType: ej.Ribbon.AlignType.Rows,
                  type: "custom",
                  contentID: "btn"
              }]
@@ -10158,7 +10520,7 @@ Triggered when the ribbon control is expanded.
          // Set the width during initialization.         
          width: "100%",
          applicationTab: {
-             type: ej.Ribbon.applicationTabType.menu,
+             type: ej.Ribbon.ApplicationTabType.Menu,
              menuItemID: "menu",
              menuSettings: {
                  openOnClick: false
@@ -10169,12 +10531,88 @@ Triggered when the ribbon control is expanded.
              text: "HOME",
              groups: [{
                  text: "New",
-                 alignType: ej.Ribbon.alignType.rows,
+                 alignType: ej.Ribbon.AlignType.Rows,
                  type: "custom",
                  contentID: "btn"
              }]
          }],
          expand: function(args) {}
+     });
+    });       
+    </script>  
+
+{% endhighlight %}
+
+### load
+{:#events:load}
+
+Triggered before the ribbon control is load.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">Set to true when the event has to be canceled, else false.</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the ribbon model.</td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the name of the event.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+ 
+    <ul id="menu">
+    <li><a>FILE </a>
+    <ul>
+    <li><a>New</a></li>
+    <li><a>Open</a></li>
+    <li><a>Save</a></li>
+    <li><a>Save as</a></li>
+    <li><a>Print</a></li>
+    </ul></li></ul>
+    <div id="Ribbon"></div> 
+    <button id="btn">Home button</button>
+    <script type="text/javascript">   
+    $(function() {
+     $("#Ribbon").ejRibbon({
+         // Set the width during initialization.         
+         width: "100%",
+         applicationTab: {
+             type: ej.Ribbon.ApplicationTabType.Menu,
+             menuItemID: "menu",
+             menuSettings: {
+                 openOnClick: false
+             }
+         },
+         tabs: [{
+             id: "home",
+             text: "HOME",
+             groups: [{
+                 text: "New",
+                 alignType: ej.Ribbon.AlignType.Rows,
+                 type: "custom",
+                 contentID: "btn"
+             }]
+         }],
+         load: function(args) {}
      });
     });       
     </script>  
@@ -10261,7 +10699,7 @@ Triggered after adding the new ribbon tab item.
          // Set the width during initialization.         
          width: "100%",
          applicationTab: {
-             type: ej.Ribbon.applicationTabType.menu,
+             type: ej.Ribbon.ApplicationTabType.Menu,
              menuItemID: "menu",
              menuSettings: {
                  openOnClick: false
@@ -10272,7 +10710,7 @@ Triggered after adding the new ribbon tab item.
              text: "HOME",
              groups: [{
                  text: "New",
-                 alignType: ej.Ribbon.alignType.rows,
+                 alignType: ej.Ribbon.AlignType.Rows,
                  type: "custom",
                  contentID: "btn"
              }]
@@ -10374,7 +10812,7 @@ Triggered when tab is clicked successfully in the ribbon control.
          // Set the width during initialization.         
          width: "100%",
          applicationTab: {
-             type: ej.Ribbon.applicationTabType.menu,
+             type: ej.Ribbon.ApplicationTabType.Menu,
              menuItemID: "menu",
              menuSettings: {
                  openOnClick: false
@@ -10385,7 +10823,7 @@ Triggered when tab is clicked successfully in the ribbon control.
              text: "HOME",
              groups: [{
                  text: "New",
-                 alignType: ej.Ribbon.alignType.rows,
+                 alignType: ej.Ribbon.AlignType.Rows,
                  type: "custom",
                  contentID: "btn"
              }]
@@ -10472,7 +10910,7 @@ Triggered before the ribbon tab is created.
         // Set the width during initialization.         
         width: "100%",
         applicationTab: {
-            type: ej.Ribbon.applicationTabType.menu,
+            type: ej.Ribbon.ApplicationTabType.Menu,
             menuItemID: "menu",
             menuSettings: {
                 openOnClick: false
@@ -10483,7 +10921,7 @@ Triggered before the ribbon tab is created.
             text: "HOME",
             groups: [{
                 text: "New",
-                alignType: ej.Ribbon.alignType.rows,
+                alignType: ej.Ribbon.AlignType.Rows,
                 type: "custom",
                 contentID: "btn"
             }]
@@ -10572,7 +11010,7 @@ Triggered after the tab item is removed from the ribbon control.
          // Set the width during initialization.         
          width: "100%",
          applicationTab: {
-             type: ej.Ribbon.applicationTabType.menu,
+             type: ej.Ribbon.ApplicationTabType.Menu,
              menuItemID: "menu",
              menuSettings: {
                  openOnClick: false
@@ -10583,7 +11021,7 @@ Triggered after the tab item is removed from the ribbon control.
              text: "HOME",
              groups: [{
                  text: "New",
-                 alignType: ej.Ribbon.alignType.rows,
+                 alignType: ej.Ribbon.AlignType.Rows,
                  type: "custom",
                  contentID: "btn"
              }]
@@ -10685,7 +11123,7 @@ Triggered after the ribbon tab item is selected in the ribbon control.
         // Set the width during initialization.         
         width: "100%",
         applicationTab: {
-            type: ej.Ribbon.applicationTabType.menu,
+            type: ej.Ribbon.ApplicationTabType.Menu,
             menuItemID: "menu",
             menuSettings: {
                 openOnClick: false
@@ -10696,7 +11134,7 @@ Triggered after the ribbon tab item is selected in the ribbon control.
             text: "HOME",
             groups: [{
                 text: "New",
-                alignType: ej.Ribbon.alignType.rows,
+                alignType: ej.Ribbon.AlignType.Rows,
                 type: "custom",
                 contentID: "btn"
             }]
@@ -10769,7 +11207,7 @@ Triggered when the expand/collapse button is clicked successfully .
           // Set the width during initialization.         
           width: "100%",
           applicationTab: {
-              type: ej.Ribbon.applicationTabType.menu,
+              type: ej.Ribbon.ApplicationTabType.Menu,
               menuItemID: "menu",
               menuSettings: {
                   openOnClick: false
@@ -10780,7 +11218,7 @@ Triggered when the expand/collapse button is clicked successfully .
               text: "HOME",
               groups: [{
                   text: "New",
-                  alignType: ej.Ribbon.alignType.rows,
+                  alignType: ej.Ribbon.AlignType.Rows,
                   type: "custom",
                   contentID: "btn"
               }]
@@ -10850,7 +11288,7 @@ Triggered when the QAT menu item is clicked successfully .
             width: "100%",
             showQAT: true,
             applicationTab: {
-                type: ej.Ribbon.applicationTabType.menu,
+                type: ej.Ribbon.ApplicationTabType.Menu,
                 menuItemID: "ribbonmenu",
                 menuSettings: {
                     openOnClick: false
@@ -10861,12 +11299,12 @@ Triggered when the QAT menu item is clicked successfully .
                 text: "HOME",
                 groups: [{
                     text: "Font",
-                    alignType: ej.Ribbon.alignType.rows,
+                    alignType: ej.Ribbon.AlignType.Rows,
                     content: [{
                         groups: [{
                             id: "bold",
                             text: "Bold",
-                            quickAccessMode: ej.Ribbon.quickAccessMode.toolBar,
+                            quickAccessMode: ej.Ribbon.QuickAccessMode.ToolBar,
                             buttonSettings: {
                                 contentType: ej.ContentType.ImageOnly,
                                 prefixIcon: "e-ribbon bold"
@@ -10874,7 +11312,7 @@ Triggered when the QAT menu item is clicked successfully .
                         }, {
                             id: "italic",
                             text: "Italic",
-                            quickAccessMode: ej.Ribbon.quickAccessMode.toolBar,
+                            quickAccessMode: ej.Ribbon.QuickAccessMode.ToolBar,
                             buttonSettings: {
                                 contentType: ej.ContentType.ImageOnly,
                                 prefixIcon: "e-ribbon e-ribbonitalic"
@@ -10882,14 +11320,14 @@ Triggered when the QAT menu item is clicked successfully .
                         }, {
                             id: "underline",
                             text: "Underline",
-                            quickAccessMode: ej.Ribbon.quickAccessMode.toolBar,
+                            quickAccessMode: ej.Ribbon.QuickAccessMode.ToolBar,
                             buttonSettings: {
                                 contentType: ej.ContentType.ImageOnly,
                                 prefixIcon: "e-ribbon e-ribbonunderline"
                             }
                         }],
                         defaults: {
-                            type: ej.Ribbon.type.button,
+                            type: ej.Ribbon.Type.Button,
                             height: 30
                         }
                     }]

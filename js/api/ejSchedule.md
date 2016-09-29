@@ -322,6 +322,42 @@ Assign the table name from where the records are to be fetched for the Schedule.
 
 > The following are the appointment fields that holds the appropriate column names from the dataSource. All its default values are `null`.
 
+### appointmentSettings.applyTimeOffset `boolean`
+{:#members:appointmentsettings-applytimeoffset}
+
+When set to false, doesn't consider the time difference offset calculation on appointment time.
+
+#### Default Value
+
+* true
+
+#### Example - To set the timezone for schedule appointments or not.
+
+{% highlight html %}
+
+<div id="Schedule"></div>
+
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+                  currentDate:new Date(2014,4,5),
+        		  appointmentSettings: {
+                    applyTimeOffset: false,
+                    dataSource: [{
+                        EventId: 101,
+                        EventStartTime: new Date(2014, 4, 5, 10, 00),
+                        EventEndTime: new Date(2014, 4, 5, 12, 00)
+                    }],
+                    id: "EventId",
+                    startTime: "EventStartTime",
+                    endTime: "EventEndTime"
+                }
+            });
+        });
+</script>
+
+{% endhighlight %}
+
 ### appointmentSettings.id `string`
 {:#members:appointmentsettings-id}
 
@@ -2808,14 +2844,14 @@ A unique resource name that is used for differentiating various resource objects
 {% endhighlight %}
 
 
-### resources.allowMultiple `string`
+### resources.allowMultiple `boolean`
 {:#members:resources-allowmultiple}
 
 When set to true, allows multiple selection of resource names, thus creating multiple instances of same appointment for the selected resources.
 
 #### Default Value
 
-* null
+* false
 
 #### Example - To set allowMultiple option for a resource object.
 
@@ -3228,6 +3264,43 @@ When set to true, displays the location field additionally on Schedule appointme
                 width: "100%",
                 currentDate: new Date(2014, 04, 05),
                 showLocationField: true,
+                appointmentSettings: {
+                    dataSource: [{
+                        Id: 101,
+                        Subject: "Talk with Nature",
+                        StartTime: new Date(2014, 4, 5, 10, 00),
+                        EndTime: new Date(2014, 4, 5, 11, 00),
+                        Location: "Chicago"
+                    }],
+                    location: "Location"
+                }
+            });
+        });
+</script>
+
+{% endhighlight %}
+
+### showTimeZoneFields `boolean`
+{:#members:showtimezonefields}
+
+When set to false, doesn't render the start and end timezone fields on the Schedule appointment window.
+
+#### Default Value
+
+* true
+
+#### Example - To show or hide the timezone field in appointment window.
+
+{% highlight html %}
+
+<div id="Schedule"></div>
+
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+                width: "100%",
+                currentDate: new Date(2014, 04, 05),
+                showTimeZoneFields: false,
                 appointmentSettings: {
                     dataSource: [{
                         Id: 101,
@@ -5305,6 +5378,25 @@ $('#Schedule').ejSchedule({
 
 {% endhighlight %}
 
+### getRecurrenceRule()
+{:#methods:getrecurrencerule}
+
+Generate the recurrence rule as a string, based on the repeat options selected.
+
+#### Example
+
+{% highlight html %}
+ 
+<div id="RecurrenceEditor"></div> 
+ 
+<script>
+$('#RecurrenceEditor').ejRecurrenceEditor();
+var obj = $("#RecurrenceEditor").data("ejRecurrenceEditor");
+alert( obj.getRecurrenceRule()); // Display the recurrence rule
+</script>
+
+{% endhighlight %}
+
 ### getSlotByElement(element)
 
 {:#methods:getslotbyelement}
@@ -7013,6 +7105,101 @@ $("#Schedule").ejSchedule({
 </script>
 
 {% endhighlight %}
+
+
+### create
+{:#events:create}
+
+Triggers when the Scheduler completely renders on the page.
+
+<table class="params">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">cancel</td>
+            <td class="type">boolean</td>
+            <td class="description">Returns the cancel option value.</td>
+        </tr>
+        <tr>
+            <td class="name">model</td>
+            <td class="type"><ts ref="ej.Schedule.Model"/><span class="param-type">object</span></td>
+            <td class="description">Returns the Schedule model.</td>
+        </tr>
+        <tr>
+            <td class="name">type</td>
+            <td class="type">string</td>
+            <td class="description">Returns the name of the Scheduler event.</td>
+        </tr>
+    </tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+ 
+<div id="Schedule"></div> 
+ 
+<script>
+$("#Schedule").ejSchedule({
+   create: function (args) {}
+});
+</script>
+
+{% endhighlight %}
+
+
+### destroy
+{:#events:destroy}
+
+Triggers when the Scheduler and all its sub-components gets destroyed.
+
+<table class="params">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">cancel</td>
+            <td class="type">boolean</td>
+            <td class="description">Returns the cancel option value.</td>
+        </tr>
+        <tr>
+            <td class="name">model</td>
+            <td class="type"><ts ref="ej.Schedule.Model"/><span class="param-type">object</span></td>
+            <td class="description">Returns the Schedule model.</td>
+        </tr>
+        <tr>
+            <td class="name">type</td>
+            <td class="type">string</td>
+            <td class="description">Returns the name of the Scheduler event.</td>
+        </tr>
+    </tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+ 
+<div id="Schedule"></div> 
+ 
+<script>
+$("#Schedule").ejSchedule({
+   destroy: function (args) {}
+});
+</script>
+
+{% endhighlight %}
+
 
 ### drag
 {:#events:drag}

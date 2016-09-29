@@ -720,7 +720,7 @@ $("#lb").ejListView ("option", "headerTitle", "Title");
 
 
 
-### height `number`
+### height `String` `Number`
 {:#members:height}
 
 
@@ -1126,7 +1126,7 @@ $("#lb").ejListView ("option", "showHeader", true);
 
 
 
-### templateId `boolean`
+### templateId `string`
 {:#members:templateid}
 
 
@@ -1140,7 +1140,7 @@ Specifies ID of the element contains template contents.
 
 
 
-* false
+* null
 
 
 
@@ -1172,7 +1172,7 @@ Specifies ID of the element contains template contents.
 
 
 
-### width `number`
+### width `String` `Number`
 {:#members:width}
 
 
@@ -1257,7 +1257,7 @@ To add item in the given index. If you have enabled grouping in ListView then yo
 <tr>
 <td class="name">
 item</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="type"><span class="param-type">object</span></td>
 <td class="description">Specifies the item to be added in ListView</td>
 </tr>
 <tr>
@@ -1270,7 +1270,7 @@ index</td>
 <td class="name">
 groupid</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description">This is an optional parameter. You must pass the group list title here if grouping is enabled in the ListView</td>
+<td class="description"><span class="optional">optional</span>This is an optional parameter. You must pass the group list title here if grouping is enabled in the ListView</td>
 </tr>
 </tbody>
 </table>
