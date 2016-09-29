@@ -954,7 +954,7 @@ $('#Spreadsheet').ejSpreadsheet({
 ### cssClass `String`
 {:#members:cssclass}
 
-Gets or sets a value to add root css class for customizing Spreadsheet skins.
+Gets or sets a value to add root CSS class for customizing Spreadsheet skins.
 
 #### Default Value
 * ""
@@ -1168,7 +1168,7 @@ $('#Spreadsheet').ejSpreadsheet({
 ### exportSettings.pdfUrl `String`
 {:#members:exportsettings-pdfurl}
 
-Gets or sets a value that indicates to define pdfUrl for export to pdf format.
+Gets or sets a value that indicates to define pdfUrl for export to PDF format.
 
 N> User must specify [`allowExporting`](https://help.syncfusion.com/js/api/ejspreadsheet#members:exportsettings-allowexporting "allowExporting") `true` while using this property.
 
@@ -1645,7 +1645,7 @@ $('#Spreadsheet').ejSpreadsheet({
 ### ribbonSettings.applicationTab.menuSettings.dataSource `Array`
 {:#members:ribbonsettings-applicationtab-menusettings-datasource}
 
-Specifies the data source to append in applicationtab.
+Specifies the data source to append in application tab.
 
 #### Default Value
 * []
@@ -10497,7 +10497,7 @@ Triggered while cell is formatting.
 <tr>
 <td class="name">cssClass</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description">Returns the name of the css theme.</td>
+<td class="description">Returns the name of the CSS theme.</td>
 </tr>
 <tr>
 <td class="name">type</td>
