@@ -72,7 +72,7 @@ reportServerUrl
 String
 </td>
 <td class="description">
-Specify the report server url to accessing the report
+Specify the Report Server url to accessing the report
 </td>
 </tr>
 <tr>
@@ -669,7 +669,7 @@ Specify the parameters details to process drill through
 </tr>
 <tr>
 <td class="parameter name">
-auth Key  
+authentication Key  
 </td>
 <td class="datatype">
 String
@@ -916,7 +916,7 @@ reportServerUrl
 String
 </td>
 <td class="description">
-Specify the report server url to accessing the report
+Specify the Report Server url to accessing the report
 </td>
 </tr>
 <tr>
@@ -1513,7 +1513,7 @@ Specify the parameters details to process drill through
 </tr>
 <tr>
 <td class="parameter name">
-auth Key  
+authentication Key  
 </td>
 <td class="datatype">
 String
@@ -1784,7 +1784,7 @@ reportServerUrl
 String
 </td>
 <td class="description">
-Specify the report server url to accessing the report
+Specify the Report Server url to accessing the report
 </td>
 </tr>
 <tr>
@@ -2381,7 +2381,7 @@ Specify the parameters details to process drill through
 </tr>
 <tr>
 <td class="parameter name">
-auth Key  
+authentication Key  
 </td>
 <td class="datatype">
 String
