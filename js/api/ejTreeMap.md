@@ -945,7 +945,7 @@ Specifies the template for legendSettings
 ### legendSettings.mode `string`
 {:#members:legendsettings-mode}
 
-Specifies the mode for legendSettings whether defaul or interactive mode
+Specifies the mode for legendSettings whether default or interactive mode
 
 #### Default Value
 
