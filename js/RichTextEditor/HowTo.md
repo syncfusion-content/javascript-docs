@@ -10,7 +10,7 @@ keywords: RichTextEditor, Context Menu, Adding Items, Removing Items
 
 # How To
 
-## Add google web fonts to editor 
+## Add Google web fonts to editor 
 
 To use web fonts in EJ RTE, it is not needed for the web fonts to be present in local machine. To add the web fonts to EJ RTE, we need to append the web font link to the RTE Iframe <head> tag. We can achieve this in the “create” event of the RTE as shown below. 
 
@@ -169,7 +169,7 @@ Bind the “keydown” event to the RTE’s Iframe, from which we can prevent th
 
 ## Capture ctrl+s keypress event inside the RichTextEditor 
 
-Yes, we can capture the ctrl + s keypress inside Rich Text Editor. To achieve this, we need to bind the “keydown” event to the RTE content (which is an iframe) and capture the ctrl + s keypress using its keycode. 
+Yes, we can capture the ctrl + s keypress inside Rich Text Editor. To achieve this, we need to bind the “keydown” event to the RTE content (which is an iframe) and capture the ctrl + s keypress using its keyCode. 
 
 1.	Render the RTE control 
 
@@ -219,7 +219,7 @@ Yes, we can capture the ctrl + s keypress inside Rich Text Editor. To achieve th
 
 ## Save the content of RichTextEditor control automatically when the control loses its focus 
 
-This can be achieved by binding the click event to the iframe element. Also we need to bind document click event for capture the iframe focus out. Since focusout and blur events cannot be cached within the iframe, when we click the document we can get the html string from the RTE instance to save it. Please refer the below code.
+This can be achieved by binding the click event to the iframe element. Also we need to bind document click event for capture the iframe focus out. Since focusout and blur events cannot be cached within the iframe, when we click the document we can get the HTML string from the RTE instance to save it. Please refer the below code.
 
 1.	Render the RTE control
 
@@ -293,11 +293,11 @@ You can find the cursor location by getting the offset value of desired text usi
 
 {% endhighlight %}
 
-This “getRange” method will return the startContainter, endContainer, startOffset, endOffset parameters of the selected text or cursor location. By using this method, you can get the current cursor location.   
+This “getRange” method will return the startContainer, endContainer, startOffset, endOffset parameters of the selected text or cursor location. By using this method, you can get the current cursor location.   
 
 ## Set the horizontal scroller rather than text wrapping in the RTE? 
 
-This can be achieved by setting the css “whitespace” as nowrap in RTE body element in the create event of RTE as shown below code: 
+This can be achieved by setting the CSS “whitespace” as nowrap in RTE body element in the create event of RTE as shown below code: 
 
 {% highlight html %}
 
