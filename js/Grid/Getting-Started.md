@@ -14,7 +14,6 @@ The grid control has the following list of external JavaScript dependencies.
 
 * [jQuery](http://jquery.com/) 1.7.1 and later versions
 * [jsRender](https://github.com/borismoore/jsrender) - to render the templates
-* [jQuery.easing](http://gsgd.co.uk/sandbox/jquery/easing/) - to support animation effects in the components
 
 Refer to the internal dependencies in the following table.
 
@@ -33,6 +32,22 @@ ej.data.min.js</td><td>
 Used to handle data operation and is used while binding data to the JS controls.</td></tr>
 <tr>
 <td>
+ej.touch.min.js</td><td>
+Used to handle touch operations in touch-enabled devices</td></tr>
+<tr>
+<td>
+ej.print.min.js</td><td>
+Used to handle print operation in JS controls.</td></tr>
+<tr>
+<td>
+ej.globalize.min.js</td><td>
+It is referred when using localization in Grid.</td></tr>
+<tr>
+<td>
+ej.draggable.min.js</td><td>
+Used for drag and drop an element in JS controls.</td></tr>
+<tr>
+<td>
 ej.grid.min.js</td><td>
 The grid's main file.</td></tr>
 <tr>
@@ -47,10 +62,6 @@ It is referred when scrolling is used in the Grid.  </td></tr>
 <td>
 ej.waitingpopup.min.js</td><td>
 It is referred when the remote data binding is used in the Grid. The waiting popup shows while requesting the server for data.</td></tr>
-<tr>
-<td>
-ej.gridresize.min.js</td><td>
-It is referred when resizing is used in the Grid.</td></tr>
 <tr>
 <td>
 ej.dropdownlist.min.js</td><td rowspan = "8">
@@ -78,12 +89,19 @@ ej.checkbox.min.js</td></tr>
 ej.editor.min.js</td></tr>
 <tr>
 <td>
-ej.excelfilter.js</td><td>
-It is referred when excel like filter menu is enabled.</td></tr>
+ej.tooltip.js</td><td rowspan = "2">
+It is referred when toolbar is enabled in Grid.</td></tr>
 <tr>
 <td>
-ej.globalize.min.js</td><td>
-It is referred when using localization in Grid.</td></tr>
+ej.toolbar.min.js</td></tr>
+<tr>
+<td>
+ej.menu.js</td><td>
+It is referred when excel like filter menu or context menu is enabled.</td></tr>
+<tr>
+<td>
+ej.excelfilter.js</td><td>
+It is referred when excel like filter menu is enabled.</td></tr>
 </table>
 
 
