@@ -100,6 +100,10 @@ ej.menu.js</td><td>
 It is referred when excel like filter menu or context menu is enabled.</td></tr>
 <tr>
 <td>
+ej.radiobutton.js</td><td>
+It is referred when filtering is enabled.</td></tr>
+<tr>
+<td>
 ej.excelfilter.js</td><td>
 It is referred when excel like filter menu is enabled.</td></tr>
 </table>
