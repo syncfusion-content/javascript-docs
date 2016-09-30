@@ -49,11 +49,13 @@ $('#Grid').ejGrid({
 {:.require}
 
 * module:jQuery
-* module:jquery.easing.min.js
-* module:jquery.globalize.min.js
 * module:jsrender.min.js
 * module:ej.core.js
 * module:ej.data.js
+* module:ej.touch.js
+* module:ej.print.js
+* module:ej.globalize.js
+* module:ej.draggable.js
 * module:ej.grid.js
 * module:ej.pager.js
 * module:ej.scroller.js
@@ -67,6 +69,7 @@ $('#Grid').ejGrid({
 * module:ej.datepicker.js
 * module:ej.datetimepicker.js
 * module:ej.editor.js
+* module:ej.tooltip.js
 * module:ej.toolbar.js
 * module:ej.menu.js
 * module:ej.excelfilter.js
