@@ -9,14 +9,14 @@ documentation: ug
 
 # Getting Started 
 
-This section explains briefly about how to create a **Menu** control in your application with **JavaScript**. The **Essential JavaScript** **Menu** supports displaying a **Menu** of list-out items. This **Menu** is based on ul-li hierarchy, where the sub-list items are rendered as the sub-menu items. The **Menu** control can also be rendered with local and remote data source.  From the following guidelines, you can learn how to customize the **Menu** control for a website. In this case, **Syncfusionâ€™s** website **Menu** is discussed. The following screenshot displays the appearance of **Menu**.
+This section explains briefly about how to create a **Menu** control in your application with **JavaScript**. The **Essential JavaScript** **Menu** supports displaying a **Menu** of list-out items. This **Menu** is based on ul-li hierarchy, where the sub-list items are rendered as the sub-menu items. The **Menu** control can also be rendered with local and remote data source.  From the following guidelines, you can learn how to customize the **Menu** control for a website. In this case, **Syncfusion’s** website **Menu** is discussed. The following screenshot displays the appearance of **Menu**.
 
 
 ![](/js/Menu/Getting-Started_images/Getting-Started_img1.png) 
 
 ## Create a Menu
 
-**Essential JavaScript** **Menu** widgets are basically provided with built-in features like keyboard navigation, show and hide **Menu** items with animations, and flexible APIâ€™s. From the following guidelines, you can learn how to render **Menu** control with Remote data source value.
+**Essential JavaScript** **Menu** widgets are basically provided with built-in features like keyboard navigation, show and hide **Menu** items with animations, and flexible API’s. From the following guidelines, you can learn how to render **Menu** control with Remote data source value.
 
 Create an **HTML** file and add the following template into it for **Menu** creation.
 
@@ -89,27 +89,7 @@ Every **Menu** has a list of **Menu** items with list of sub level **Menu** item
             { id: 2, text: "Support", parentId: null },
             { id: 3, text: "Purchase", parentId: null },
             { id: 4, text: "Downloads", parentId: null },
-			{ id: 5, text: "Company", parentId: null },
-            //first level child
-            { id: 11, parentId: 1, text: "ASP.NET" },
-            { id: 12, parentId: 1, text: "ASP.NET MVC" },
-            { id: 13, parentId: 1, text: "Mobile MVC" },
-            { id: 14, parentId: 1, text: "Silverlight" },
-            { id: 15, parentId: 2, text: "Direct-Trac Support" },
-            { id: 16, parentId: 2, text: "Community Forums" },
-            { id: 17, parentId: 2, text: "Knowledge Base" },
-            { id: 18, parentId: 2, text: "Services" },
-			{ id: 19, parentId: 4, text: "Evaluation" },
-			{ id: 20, parentId: 4, text: "Free E-Books" },
-			{ id: 21, parentId: 4, text: "Metro Studio" },
-			{ id: 22, parentId: 4, text: "Latest Version" },
-			{ id: 23, parentId: 5, text: "Technology Resource Portal " },
-			{ id: 24, parentId: 5, text: "Case Studies" },
-			{ id: 25, parentId: 5, text: "Bouchers & Datasheets" },
-			{ id: 26, parentId: 5, text: "FAQ" },
-            //second level child
-            {id: 111, parentId: 18, text: "Consulting" },
-            { id: 112, parentId: 18, text: "Training" }            
+			{ id: 5, text: "Company", parentId: null }                 
         ];
         jQuery(function ($) {
             $("#syncfusionProducts").ejMenu({
@@ -157,10 +137,7 @@ The following code example describes how to initialize first level sub menu item
 			{ id: 23, parentId: 5, text: "Technology Resource Portal " },
 			{ id: 24, parentId: 5, text: "Case Studies" },
 			{ id: 25, parentId: 5, text: "Bouchers & Datasheets" },
-			{ id: 26, parentId: 5, text: "FAQ" },
-            //second level child
-            {id: 111, parentId: 18, text: "Consulting" },
-            { id: 112, parentId: 18, text: "Training" }            
+			{ id: 26, parentId: 5, text: "FAQ" }                   
         ];
         jQuery(function ($) {
             $("#syncfusionProducts").ejMenu({
@@ -235,7 +212,7 @@ The following screenshot is the output.
 
 By following the above mentioned steps, you can render the **Menu** control with multiple level sub items through online data source. You can simply customize the **Menu** widget in an efficient manner.
 
-In summary of this getting started, you have now simulated the **Syncfusionâ€™s** website **Menu** with **Essential JavaScript Menu**. You have utilized and learn the appearance customization etc.  
+In summary of this getting started, you have now simulated the **Syncfusion’s** website **Menu** with **Essential JavaScript Menu**. You have utilized and learn the appearance customization etc.  
 
 By following the above mentioned steps, you can render the **Menu** control with multiple level sub items. You can simply customize the **Menu** in an efficient manner.
 
