@@ -18,8 +18,10 @@ CSS file
 
 External script files
 
-* [jQuery 1.7.1](http://jquery.com/#) and later versions.
+* [jQuery 1.7.1](http://jquery.com/#) to jQuery 3.1.0
 * [jQuery.easing.js](http://gsgd.co.uk/sandbox/jquery/easing/#) - to support the animation effects.
+
+N> Removed the jQuery.easing external dependency from the version 14.3.0.49 onwards.
 
 Internal script files
 
