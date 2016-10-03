@@ -13,11 +13,11 @@ documentation: ug
 
 **Essential JavaScript** components mainly relies on the following 3 common libraries –
 
-* jQuery 1.7.1 to jQuery 3.1.0
+* jQuery (From the version 1.7.1 to 3.1.0)
 * JsRender - to render the templates.
 * jQuery.easing - to support the animation effects in the components.
 
-N> Removed the jQuery.easing external dependency from the version 14.3.0.49 onwards.
+N> jQuery.easing external dependency has been removed from version 14.3.0.49 onwards. Kindly include this jQuery.easing dependency for versions lesser than 14.3.0.49. 
 
 ## Server-side Libraries
 
