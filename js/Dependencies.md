@@ -13,7 +13,7 @@ documentation: ug
 
 **Essential JavaScript** components mainly relies on the following 3 common libraries –
 
-* jQuery (From the version 1.7.1 to 3.1.0)
+* jQuery (from the version 1.7.1 to 3.1.0)
 * JsRender - to render the templates.
 * jQuery.easing - to support the animation effects in the components.
 
