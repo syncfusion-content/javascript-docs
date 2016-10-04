@@ -195,9 +195,9 @@ Specifies the editor control state.
  
 <script>
 //To set enabled API value during initialization  
-        $("#numeric").ejNumericTextbox({ enabled: true, value:1200  }); 
-        $("#currency").ejCurrencyTextbox({ enabled: true , value:50 });
-        $("#percentage").ejPercentageTextbox({ enabled: true, value:100  });                     
+        $("#numeric").ejNumericTextbox({ enabled: false, value:1200  }); 
+        $("#currency").ejCurrencyTextbox({ enabled: false , value:50 });
+        $("#percentage").ejPercentageTextbox({ enabled: false, value:100  });                     
 </script>{% endhighlight %}
 
 
@@ -376,7 +376,7 @@ It provides the options to get the customized character to separate the digits. 
 
 
 
-* null
+* Based on the culture
 
 
 
@@ -401,7 +401,7 @@ It provides the options to get the customized character to separate the digits. 
 </script>{% endhighlight %}
 
 
-### height `number|string`
+### height `string`
 {:#members:height}
 
 
@@ -474,9 +474,9 @@ It allows to define the characteristics of the Editors control. It will helps to
  
 <script>
 //To Set HtmlAttributes API value during initialization  
-        $("#numeric").ejNumericTextbox({ htmlAttributes : {required:"required"} });     
-        $("#currency").ejCurrencyTextbox({ htmlAttributes : {required:"required"}});
-        $("#percentage").ejPercentageTextbox({ htmlAttributes : {required:"required"}});
+        $("#numeric").ejNumericTextbox({ htmlAttributes : {disabled:"disabled"} });     
+        $("#currency").ejCurrencyTextbox({ htmlAttributes : {disabled:"disabled"}});
+        $("#percentage").ejPercentageTextbox({ htmlAttributes : {disabled:"disabled"}});
 </script>{% endhighlight %}
 
 
@@ -557,9 +557,9 @@ Defines the localization culture for editor.
  
 <script>
 //To set locale API value during initialization  
-        $("#numeric").ejNumericTextbox({ locale: "en-US", value:5  });  
-        $("#currency").ejCurrencyTextbox({ locale: "en-US", value:5000  });
-        $("#percentage").ejPercentageTextbox({ locale: "en-US", value:455  });                   
+        $("#numeric").ejNumericTextbox({ locale: "de-DE", value:5  });  
+        $("#currency").ejCurrencyTextbox({ locale: "de-DE", value:5000  });
+        $("#percentage").ejPercentageTextbox({ locale: "de-DE", value:455  });                   
 </script>{% endhighlight %}
 
 
@@ -711,19 +711,19 @@ Specifies the pattern for formatting positive values in editor.We have maintaine
 #### Example
 
 
-{% highlight html %} 
- 	<input id="numeric" type="text" /> 
-
-	<input id="currency" type="text" /> 
+{% highlight html %}
+ 	 <input id="numeric" type="text" /> 
  
-	<input id="percentage" type="text" /> 
+     <input id="currency" type="text" /> 
  
-	<script>
-	//To set negativePattern API value during initialization 
-	    $("#numeric").ejNumericTextbox({ negativePattern:"( n)", value:-5 });         //output: ( 5)
-        $("#percentage").ejPercentageTextbox({ negativePattern:"-% n", value:-100  });      //output: -% 100
-        $("#currency").ejCurrencyTextbox({ negativePattern:"-n $", value:-505 , minValue:-600 });  //output: -505 $                       
-	</script>{% endhighlight %} 
+     <input id="percentage" type="text" />
+ 
+	 <script>
+	     //To set negativePattern API value during initialization 
+	     $("#numeric").ejNumericTextbox({ negativePattern:"( n)", value:-5 });         //output: ( 5)
+         $("#percentage").ejPercentageTextbox({ negativePattern:"-% n", value:-100  });      //output: -% 100
+         $("#currency").ejCurrencyTextbox({ negativePattern:"-n $", value:-505 , minValue:-600 });  //output: -505 $                       
+	 </script>{% endhighlight %} 
     
     
     
@@ -756,15 +756,15 @@ N>NumericTextBox does not support for positive pattern.
 
 {% highlight html %} 
  
-	<input id="currency" type="text" /> 
+	 <input id="currency" type="text" /> 
  
-	<input id="percentage" type="text" /> 
+	 <input id="percentage" type="text" /> 
  
-	<script>
-	//To set positivePattern API value during initialization  
-        $("#percentage").ejPercentageTextbox({ positivePattern:"% n", value:100  });      //% 100
-        $("#currency").ejCurrencyTextbox({ positivePattern:"n $", value:505  });  //505 $                       
-	</script>{% endhighlight %} 
+	 <script>
+	 //To set positivePattern API value during initialization  
+         $("#percentage").ejPercentageTextbox({ positivePattern:"% n", value:100  });      //% 100
+         $("#currency").ejCurrencyTextbox({ positivePattern:"n $", value:505  });  //505 $                       
+	 </script>{% endhighlight %} 
     
     
     
@@ -1075,7 +1075,7 @@ Specifies the watermark text to editor.
 
 
 
-* ""
+* Based on the culture.
 
 
 
@@ -1102,7 +1102,7 @@ Specifies the watermark text to editor.
 
 
 
-### width `number|string`
+### width `string`
 {:#members:width}
 
 
@@ -1699,20 +1699,6 @@ $("#percentage").ejPercentageTextbox({
 
 Fires after Editor control is loss the focus.
 
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">
-argument</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description">Event parameters from editors.
 <table class="params">
 <thead>
 <tr>

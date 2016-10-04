@@ -27,7 +27,6 @@ Create an **HTML** file and add the following template to the HTML file for Text
 <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css"rel="stylesheet"/>
     <!--scripts-->
 <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
-<script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"></script>
 <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"> </script>
 </head>
 <body>
@@ -271,7 +270,6 @@ You can set the “**StrictMode” option** to restrict entering values defined 
                 value: 35, // sets value in the numeric
                 minValue: 1, // sets min value for range 
                 maxValue: 10000, // sets max value for range
-                enableStrictMode:true // sets strict mode to True will set the value 
             });
               // simple Percentage creation
               $("#servTax").ejPercentageTextbox({
@@ -286,6 +284,7 @@ You can set the “**StrictMode” option** to restrict entering values defined 
                 value: 55, // sets value by default
                 minValue: 5, // sets min value for amount
                 maxValue: 55// sets max value for amount
+                enableStrictMode:true // sets strict mode to True will set the value 
             });
               // simple MaskEdit creation
               $("#mobiNo").ejMaskEdit({
