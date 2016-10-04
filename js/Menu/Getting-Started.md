@@ -9,14 +9,14 @@ documentation: ug
 
 # Getting Started 
 
-This section explains briefly about how to create a **Menu** control in your application with **JavaScript**. The **Essential JavaScript** **Menu** supports displaying a **Menu** of list-out items. This **Menu** is based on ul-li hierarchy, where the sub-list items are rendered as the sub-menu items. The **Menu** control can also be rendered with local and remote data source.  From the following guidelines, you can learn how to customize the **Menu** control for a website. In this case, **Syncfusion’s** website **Menu** is discussed. The following screenshot displays the appearance of **Menu**.
+This section explains briefly about how to create a **Menu** control in your application with **JavaScript**. The **Essential JavaScript** **Menu** supports displaying a **Menu** of list-out items. This **Menu** is based on ul-li hierarchy, where the sub-list items are rendered as the sub-menu items. The **Menu** control can also be rendered with local and remote data source.  From the following guidelines, you can learn how to customize the **Menu** control for a website. In this case, **Syncfusion's** website **Menu** is discussed. The following screenshot displays the appearance of **Menu**.
 
 
 ![](/js/Menu/Getting-Started_images/Getting-Started_img1.png) 
 
 ## Create a Menu
 
-**Essential JavaScript** **Menu** widgets are basically provided with built-in features like keyboard navigation, show and hide **Menu** items with animations, and flexible API’s. From the following guidelines, you can learn how to render **Menu** control with Remote data source value.
+**Essential JavaScript** **Menu** widgets are basically provided with built-in features like keyboard navigation, show and hide **Menu** items with animations, and flexible API's. From the following guidelines, you can learn how to render **Menu** control with Remote data source value.
 
 Create an **HTML** file and add the following template into it for **Menu** creation.
 
@@ -212,7 +212,7 @@ The following screenshot is the output.
 
 By following the above mentioned steps, you can render the **Menu** control with multiple level sub items through online data source. You can simply customize the **Menu** widget in an efficient manner.
 
-In summary of this getting started, you have now simulated the **Syncfusion’s** website **Menu** with **Essential JavaScript Menu**. You have utilized and learn the appearance customization etc.  
+In summary of this getting started, you have now simulated the **Syncfusionï¿½s** website **Menu** with **Essential JavaScript Menu**. You have utilized and learn the appearance customization etc.  
 
 By following the above mentioned steps, you can render the **Menu** control with multiple level sub items. You can simply customize the **Menu** in an efficient manner.
 
