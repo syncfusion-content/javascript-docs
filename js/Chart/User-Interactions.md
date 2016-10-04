@@ -197,6 +197,10 @@ There are two ways you can zoom the chart,
 
 * When the [`zooming.enableMouseWheel`](../api/ejchart#members:zooming-enablemousewheel) option is set to true, you can zoom the chart on mouse wheel scrolling. 
 
+* When [`zooming.enablePinching`](../api/ejchart#members:zooming-enablePinching) option is set to *true*, you can zoom the chart through pinch gesture.
+
+N> Pinch zooming is supported only in browsers that support multi-touch gestures. Currently IE10, IE11, Chrome and Opera browsers support multi-touch in desktop devices.
+
 {% highlight javascript %}
 
 
