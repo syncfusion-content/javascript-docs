@@ -1351,7 +1351,7 @@ Enables or disables the responsiveness of TreeGrid
 ### parentIdMapping `string`
 {:#members:parentidmapping}
 
-Specifies the name of the field in the dataSource, which contains the parent’s id. This is necessary to form a parent-child hierarchy, if the dataSource contains self-referential data.
+Specifies the name of the field in the dataSource, which contains the parent's id. This is necessary to form a parent-child hierarchy, if the dataSource contains self-referential data.
 
 
 #### Default Value
@@ -1770,7 +1770,7 @@ Enables/disables the options for inserting , deleting and renaming  columns.
 ### showColumnChooser `boolean`
 {:#members:showcolumnchooser}
 
-Controls the visibility of the menu button, which is displayed on the column header. Clicking on this button will show a popup menu. When you choose “Columns” item from this popup, a list box with column names will be shown, from which you can select/deselect a column name to control the visibility of the respective columns.
+Controls the visibility of the menu button, which is displayed on the column header. Clicking on this button will show a popup menu. When you choose `Columns` item from this popup, a list box with column names will be shown, from which you can select/deselect a column name to control the visibility of the respective columns.
 
 
 #### Default Value
