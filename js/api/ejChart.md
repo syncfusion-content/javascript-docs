@@ -18049,6 +18049,8 @@ $('#container').ejChart({
 
 {% endhighlight %}
 
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/yxqlqo2x)
+
 
 ### series.columnWidth `number`
 {:#members:series-columnwidth}
