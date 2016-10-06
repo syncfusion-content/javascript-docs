@@ -1236,7 +1236,7 @@ $("#scrollcontent").ejScroller("refresh");
 
 
 
-### scrollX(pixel, noAnimation , animationSpeed)
+### scrollX(pixel, enableAnimation , animationSpeed)
 {:#methods:scrollx}
 
 
@@ -1259,9 +1259,9 @@ pixel </td>
 </tr>
 <tr>
 <td class="name"> 
-noAnimation </td>
+enableAnimation </td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description">Specifies animation is enabled or not.</td>
+<td class="description">Specifies to enable/disable the animation.</td>
 </tr>
 <tr>
 <td class="name"> 
@@ -1336,7 +1336,7 @@ $("#scrollcontent").ejScroller("scrollX", 25,false,1000);       // call scrollX 
 
 
 
-### scrollY(pixel, noAnimation , animationSpeed)
+### scrollY(pixel, enableAnimation , animationSpeed)
 {:#methods:scrolly}
 
 Vertical scroller moves to given pixel from its origin position. We can also specify the animation speed,in which the scroller has to move while re-positioning it.
@@ -1358,9 +1358,9 @@ pixel </td>
 </tr>
 <tr>
 <td class="name"> 
-noAnimation </td>
+enableAnimation </td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description">Specifies animation is enabled or not.</td>
+<td class="description">Specifies to enable/disable the animation.</td>
 </tr>
 <tr>
 <td class="name"> 
