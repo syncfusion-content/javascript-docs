@@ -14,7 +14,6 @@ The grid control has the following list of external JavaScript dependencies.
 
 * [jQuery](http://jquery.com/) 1.7.1 and later versions
 * [jsRender](https://github.com/borismoore/jsrender) - to render the templates
-* [jQuery.easing](http://gsgd.co.uk/sandbox/jquery/easing/) - to support animation effects in the components
 
 To get started, you can use the `ej.web.all.min.js` file that encapsulates all the `ej` controls and frameworks in one single file. So the complete boilerplate code is
 
@@ -262,6 +261,22 @@ ej.data.min.js</td><td>
 Used to handle data operation and is used while binding data to the JS controls.</td></tr>
 <tr>
 <td>
+ej.touch.min.js</td><td>
+Used to handle touch operations in touch-enabled devices</td></tr>
+<tr>
+<td>
+ej.print.min.js</td><td>
+Used to handle print operation in JS controls.</td></tr>
+<tr>
+<td>
+ej.globalize.min.js</td><td>
+It is referred when using localization in Grid.</td></tr>
+<tr>
+<td>
+ej.draggable.min.js</td><td>
+Used for drag and drop an element in JS controls.</td></tr>
+<tr>
+<td>
 ej.grid.min.js</td><td>
 The grid's main file.</td></tr>
 <tr>
@@ -307,12 +322,23 @@ ej.checkbox.min.js</td></tr>
 ej.editor.min.js</td></tr>
 <tr>
 <td>
-ej.excelfilter.js</td><td>
-It is referred when excel like filter menu is enabled.</td></tr>
+ej.tooltip.js</td><td rowspan = "2">
+It is referred when toolbar is enabled in Grid.</td></tr>
 <tr>
 <td>
-ej.globalize.min.js</td><td>
-It is referred when using localization in Grid.</td></tr>
+ej.toolbar.min.js</td></tr>
+<tr>
+<td>
+ej.menu.js</td><td>
+It is referred when excel like filter menu or context menu is enabled.</td></tr>
+<tr>
+<td>
+ej.radiobutton.js</td><td>
+It is referred when filtering is enabled.</td></tr>
+<tr>
+<td>
+ej.excelfilter.js</td><td>
+It is referred when excel like filter menu is enabled.</td></tr>
 </table>
 
 
