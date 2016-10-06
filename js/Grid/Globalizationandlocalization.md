@@ -35,6 +35,10 @@ EditOperationAlert</td><td>
 No records selected for edit operation</td></tr>
 <tr>
 <td>
+ForeignKeyAlert</td><td>
+The updated value should be a valid foreign key value</td></tr>
+<tr>
+<td>
 SaveButton</td><td>
 Save</td></tr>
 <tr>
@@ -77,6 +81,10 @@ Unsaved changes will be lost. Are you sure you want to continue?</td></tr>
 <td>
 ConfirmDelete</td><td>
 Are you sure you want to Delete Record?</td></tr>
+<tr>
+<td>
+CancelEdit</td><td>
+Are you sure you want to Cancel the changes?</td></tr>
 <tr>
 <td>
 PagerInfo</td><td>
@@ -171,6 +179,10 @@ MatchCase</td><td>
 Match Case</td></tr>
 <tr>
 <td>
+NoResult</td><td>
+No Matches Found</td></tr>
+<tr>
+<td>
 Clear</td><td>
 Clear</td></tr>
 <tr>
@@ -187,12 +199,24 @@ Search</td><td>
 Search</td></tr>
 <tr>
 <td>
+SelectAll</td><td>
+(Select All)</td></tr>
+<tr>
+<td>
 DatePickerWaterMark</td><td>
 Select date</td></tr>
 <tr>
 <td>
+NumericTextBoxWaterMark</td><td>
+Enter value</td></tr>
+<tr>
+<td>
 EmptyDataSource</td><td>
 DataSource must not be empty at initial load since columns are generated from dataSource in AutoGenerate Column Grid</td></tr>
+<tr>
+<td>
+EmptyRowValidationMessage</td><td>
+Atleast one field must be updated</td></tr>
 <tr>
 <td>
 True</td><td>
@@ -224,11 +248,15 @@ Save</td></tr>
 <tr>
 <td>
 Grouping</td><td>
-Grouping</td></tr>
+Group</td></tr>
 <tr>
 <td>
 Ungrouping</td><td>
-Ungrouping</td></tr>
+Ungroup</td></tr>
+<tr>
+<td>
+UnGroup</td><td>
+Click here to ungroup</td></tr>
 <tr>
 <td>
 SortInAscendingOrder</td><td>
@@ -237,6 +265,10 @@ Sort In Ascending Order</td></tr>
 <td>
 SortInDescendingOrder</td><td>
 Sort In Descending Order</td></tr>
+<tr>
+<td>
+PagerInfo</td><td>
+{0} of {1} pages ({2} items)</td></tr>
 <tr>
 <td>
 NextPage</td><td>
