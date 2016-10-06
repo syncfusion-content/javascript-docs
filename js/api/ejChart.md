@@ -1677,7 +1677,7 @@ commonSeriesOptions :{border :{ width : 2 } }
 
 <ts name = "ej.datavisualization.Chart.ColumnFacet"/>
 
-Render the column and bar type series in rectangle/cylinder shape. See <a href="global.html#ColumnFacet">ColumnFacet</a>
+To render the column and bar type series in rectangle/cylinder shape. See <a href="global.html#ColumnFacet">ColumnFacet</a>
 
 
 <table class="props">
@@ -18020,7 +18020,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/v540kjyb)
 {:#members:series-columnfacet}
 
 
-Render the column and bar type series in rectangle/cylinder shape. See <a href="global.html#ColumnFacet">ColumnFacet</a>
+To render the column and bar type series in rectangle/cylinder shape. See <a href="global.html#ColumnFacet">ColumnFacet</a>
 
 
 #### Default Value
