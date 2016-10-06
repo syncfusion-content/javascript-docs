@@ -5570,7 +5570,7 @@ schObj.refreshAppointments(); // To refresh all the appointments within Schedule
 ### notifyChanges(action, data)
 {:#methods:notifychanges}
 
-Pass the server action and data to client method for rendering the appointments in schedule control.
+Passes the server-side action and data to the client-side for rendering the modified appointment list on the Schedule control.
 
 #### Example
 
