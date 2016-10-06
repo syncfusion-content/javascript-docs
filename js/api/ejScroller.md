@@ -1236,14 +1236,41 @@ $("#scrollcontent").ejScroller("refresh");
 
 
 
-### scrollX()
+### scrollX(pixel, noAnimation , animationSpeed)
 {:#methods:scrollx}
 
 
+Horizontal scroller moves to given pixel from its origin position. We can also specify the animation speed,in which the scroller has to move while re-positioning it.
 
-
-Scroller moves to given pixel in X (left) position. We can also specify the animation speed,in which the scroller has to move while re-positioning it.
-
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name"> 
+pixel </td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Horizontal scroller moves to the specified pixel.</td>
+</tr>
+<tr>
+<td class="name"> 
+noAnimation </td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Specifies animation is enabled or not.</td>
+</tr>
+<tr>
+<td class="name"> 
+animationSpeed </td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Specifies the animation speed when scrolling, if animation is enabled.</td>
+</tr>
+</tbody>
+</table>
 
 
 #### Example
@@ -1309,15 +1336,40 @@ $("#scrollcontent").ejScroller("scrollX", 25,false,1000);       // call scrollX 
 
 
 
-### scrollY()
+### scrollY(pixel, noAnimation , animationSpeed)
 {:#methods:scrolly}
 
+Vertical scroller moves to given pixel from its origin position. We can also specify the animation speed,in which the scroller has to move while re-positioning it.
 
-
-
-Scroller moves to given pixel in Y (top) position. We can also specify the animation speed,in which the scroller has to move while re-positioning it.
-
-
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name"> 
+pixel </td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Vertical scroller moves to the specified pixel.</td>
+</tr>
+<tr>
+<td class="name"> 
+noAnimation </td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Specifies animation is enabled or not.</td>
+</tr>
+<tr>
+<td class="name"> 
+animationSpeed </td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Specifies the animation speed when scrolling, if animation is enabled.</td>
+</tr>
+</tbody>
+</table>
 
 #### Example
 
