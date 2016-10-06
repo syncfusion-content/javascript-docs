@@ -1672,6 +1672,70 @@ commonSeriesOptions :{border :{ width : 2 } }
 
 
 
+### commonSeriesOptions.columnFacet `enum`
+{:#members:commonseriesoptions-columnfacet}
+
+<ts name = "ej.datavisualization.Chart.ColumnFacet"/>
+
+Render the column and bar type series in rectangle/cylinder shape. See <a href="global.html#ColumnFacet">ColumnFacet</a>
+
+
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th> 
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+Rectangle</td>
+<td class="type">string</td> 
+<td class="description">Draw column and bar series in rectangle shape</td>
+</tr>
+<tr>
+<td class="name">
+Cylinder</td>
+<td class="type">string</td>
+<td class="description">Draw column and bar series in cylinder shape</td>
+</tr> 
+</tbody>
+</table>
+
+
+
+#### Default Value
+
+
+
+ * "rectangle"
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+
+$('#container').ejChart({
+
+    commonSeriesOptions: {
+    
+        //change to cylinder chart
+		columnFacet: "cylinder"
+
+    },
+
+    //...
+
+});
+
+{% endhighlight %}
+
 
 ### commonSeriesOptions.columnWidth `number`
 {:#members:commonseriesoptions-columnwidth}
@@ -17950,6 +18014,40 @@ series : [{bullFillColor: "green" }]
 
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/v540kjyb)
 
+
+
+### series.columnFacet `enum`
+{:#members:series-columnfacet}
+
+
+Render the column and bar type series in rectangle/cylinder shape. See <a href="global.html#ColumnFacet">ColumnFacet</a>
+
+
+#### Default Value
+
+ * "rectangle"
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+
+$('#container').ejChart({
+
+    series: {
+    
+        //change to cylinder chart
+		columnFacet: "cylinder"
+
+    },
+
+    //...
+
+});
+
+{% endhighlight %}
 
 
 ### series.columnWidth `number`
