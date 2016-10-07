@@ -11810,13 +11810,13 @@ Specifies the placement of labels.
 <td class="name">
 OnTicks</td>
 <td class="type">string</td> 
-<td class="description">Labels will be placed on axis ticks</td>
+<td class="description">Labels will be placed on tick</td>
 </tr>
 <tr>
 <td class="name">
 BetweenTicks</td>
 <td class="type">string</td>
-<td class="description">Labels will be placend on between to the axis ticks</td>
+<td class="description">Labels will be placed between ticks</td>
 </tr> 
 </tbody>
 </table>
