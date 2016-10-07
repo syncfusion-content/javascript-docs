@@ -55,3 +55,83 @@ The following output is displayed as a result of the above code example.
 
 ![](Drag_and_Drop_images/drag_and_drop_img1.png)
 
+
+## Card Drag
+
+You can enable and disable drag behavior to the cards in the Kanban columns using the `allowDrag` property and the default value is `true`.
+
+The following code example describes the above behavior.
+
+{% highlight html %}
+
+    <div id='Kanban'></div>
+
+{% endhighlight %}
+
+{% highlight javascript %}
+
+    $(function () {
+        var data = ej.DataManager(window.kanbanData).executeLocal(ej.Query().take(30));
+        
+         $("#Kanban").ejKanban(
+            {
+                dataSource: data,
+                columns: [
+                    { headerText: "Backlog", key: "Open", allowDrag: false },
+                    { headerText: "In Progress", key: "InProgress" },
+                    { headerText: "Done", key: "Close" }
+                ],
+                keyField: "Status",
+                fields: {
+                    content: "Summary",
+                    primaryKey: "Id",
+                    priority: "RankId"
+                }
+            });
+    });
+
+{% endhighlight %}
+
+The following output is displayed as a result of the above code example.
+
+![](Drag_and_Drop_images/drag_and_drop_img3.png)
+
+## Card Drop
+
+You can enable and disable drop behavior to the cards in the Kanban columns using the `allowDrop` property and the default value is `true`.
+
+The following code example describes the above behavior.
+
+{% highlight html %}
+
+    <div id='Kanban'></div>
+
+{% endhighlight %}
+
+{% highlight javascript %}
+
+    $(function () {
+        var data = ej.DataManager(window.kanbanData).executeLocal(ej.Query().take(30));
+        
+        $("#Kanban").ejKanban(
+            {
+                dataSource: data,
+                columns: [
+                    { headerText: "Backlog", key: "Open"},
+                    { headerText: "In Progress", key: "InProgress" },
+                    { headerText: "Done", key: "Close", allowDrop: false  }
+                ],
+                keyField: "Status",
+                fields: {
+                    content: "Summary",
+                    primaryKey: "Id",
+                    priority: "RankId"
+                }
+            });
+    });
+
+{% endhighlight %}
+
+The following output is displayed as a result of the above code example.
+
+![](Drag_and_Drop_images/drag_and_drop_img4.png)
