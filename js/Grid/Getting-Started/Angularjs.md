@@ -18,8 +18,6 @@ The Grid control has the following list of external JavaScript dependencies.
 
 * [jsRender](https://github.com/borismoore/jsrender) - to render the templates
 
-* [jQuery.easing](http://gsgd.co.uk/sandbox/jquery/easing/)- to support animation effects in the components
-
 To get started, you can use the `ej.web.all.min.js` file that encapsulates all the `ej` controls and frameworks in one single file. Also use the `ej.widget.angular.min.js` script file that encapsulates the AngularJS directives for our controls. So the complete boilerplate code is
 
 {% highlight html %}

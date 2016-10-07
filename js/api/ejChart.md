@@ -1672,6 +1672,70 @@ commonSeriesOptions :{border :{ width : 2 } }
 
 
 
+### commonSeriesOptions.columnFacet `enum`
+{:#members:commonseriesoptions-columnfacet}
+
+<ts name = "ej.datavisualization.Chart.ColumnFacet"/>
+
+To render the column and bar type series in rectangle/cylinder shape. See <a href="global.html#ColumnFacet">ColumnFacet</a>
+
+
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th> 
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+Rectangle</td>
+<td class="type">string</td> 
+<td class="description">Draw column and bar series in rectangle shape</td>
+</tr>
+<tr>
+<td class="name">
+Cylinder</td>
+<td class="type">string</td>
+<td class="description">Draw column and bar series in cylinder shape</td>
+</tr> 
+</tbody>
+</table>
+
+
+
+#### Default Value
+
+
+
+ * "rectangle"
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+
+$('#container').ejChart({
+
+    commonSeriesOptions: {
+    
+        //change to cylinder chart
+		columnFacet: "cylinder"
+
+    },
+
+    //...
+
+});
+
+{% endhighlight %}
+
 
 ### commonSeriesOptions.columnWidth `number`
 {:#members:commonseriesoptions-columnwidth}
@@ -11725,6 +11789,60 @@ $("#container").ejChart({
 {% endhighlight %}
 
 
+### primaryXAxis.labelPlacement `enum`
+{:#members:primaryxaxis-labelplacement}
+
+<ts name = "ej.datavisualization.Chart.LabelPlacement"/>
+
+Specifies the placement of labels. 
+
+
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th> 
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+OnTicks</td>
+<td class="type">string</td> 
+<td class="description">Labels will be placed on tick</td>
+</tr>
+<tr>
+<td class="name">
+BetweenTicks</td>
+<td class="type">string</td>
+<td class="description">Labels will be placed between ticks</td>
+</tr> 
+</tbody>
+</table>
+
+
+
+#### Default Value
+
+
+
+* ej.datavisualization.Chart.LabelPlacement.BetweenTicks. See <a href="global.html#members:labelplacement">LabelPlacement</a>
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    primaryXAxis: { labelPlacement : "onTicks" }
+                          
+});
+
+{% endhighlight %}
+
 
 
 ### primaryXAxis.edgeLabelPlacement `enum`
@@ -15039,6 +15157,33 @@ $("#container").ejChart({
 {% endhighlight %}
 
 
+### primaryYAxis.labelPlacement `enum`
+{:#members:primaryyaxis-labelplacement}
+
+<ts ref = "ej.datavisualization.Chart.LabelPlacement"/>
+
+Specifies the placement of labels. 
+
+
+#### Default Value
+
+
+
+* ej.datavisualization.Chart.LabelPlacement.BetweenTicks. See <a href="global.html#members:labelplacement">LabelPlacement</a>
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    primaryYAxis: { labelPlacement : "onTicks" }
+                          
+});
+
+{% endhighlight %}
 
 
 ### primaryYAxis.edgeLabelPlacement `enum`
@@ -17952,6 +18097,43 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/v540kjyb)
 
 
 
+### series.columnFacet `enum`
+{:#members:series-columnfacet}
+
+<ts ref = "ej.datavisualization.Chart.ColumnFacet"/>
+
+To render the column and bar type series in rectangle/cylinder shape. See <a href="global.html#ColumnFacet">ColumnFacet</a>
+
+
+#### Default Value
+
+ * "rectangle"
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+
+$('#container').ejChart({
+
+    series: {
+    
+        //change to cylinder chart
+		columnFacet: "cylinder"
+
+    },
+
+    //...
+
+});
+
+{% endhighlight %}
+
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/yxqlqo2x)
+
+
 ### series.columnWidth `number`
 {:#members:series-columnwidth}
 
@@ -18170,10 +18352,10 @@ series : [{doughnutSize : 0.6 }]
 
 Try it : [JS Playground Sample](http://jsplayground.syncfusion.com/eyi1qmre)
 
-### series.drawType `boolean`
+### series.drawType `enum`
 {:#members:series-drawtype}
 
-
+<ts ref = "ej.datavisualization.Chart.DrawType"/>
 
 
 Type of series to be drawn in radar or polar series. 

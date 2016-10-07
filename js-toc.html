@@ -724,6 +724,7 @@
 											<li id="toc-members:commonseriesoptions-border-dasharray"><a href="/js/api/ejchart#members:commonseriesoptions-border-dasharray">dashArray</a></li>
                                         </ul>
                                     </li>
+									<li id="toc-members:commonseriesoptions-columnfacet"><a href="/js/api/ejchart#members:commonseriesoptions-columnfacet">columnFacet</a></li>
 									<li id="toc-members:commonseriesoptions-columnwidth"><a href="/js/api/ejchart#members:commonseriesoptions-columnwidth">columnWidth</a></li>
 									<li id="toc-members:commonseriesoptions-columnspacing"><a href="/js/api/ejchart#members:commonseriesoptions-columnspacing">columnSpacing</a></li>
                                     <li id="toc-members:commonseriesoptions-dasharray"><a href="/js/api/ejchart#members:commonseriesoptions-dasharray">dashArray</a></li>
@@ -1436,6 +1437,7 @@
                                         </ul>
                                     </li>
                                     <li id="toc-members:series-bullfillcolor"><a href="/js/api/ejchart#members:series-bullfillcolor">bullFillColor</a></li>
+									<li id="toc-members:series-columnfacet"><a href="/js/api/ejchart#members:series-columnfacet">columnFacet</a></li>
 									<li id="toc-members:series-columnwidth"><a href="/js/api/ejchart#members:series-columnwidth">columnWidth</a></li>
 									<li id="toc-members:series-columnspacing"><a href="/js/api/ejchart#members:series-columnspacing">columnSpacing</a></li>
 									<li id="toc-members:series-connectorline"><a href="/js/api/ejchart#members:series-connectorLine">connectorLine</a>
@@ -3008,6 +3010,41 @@
                     </li>
                 </ul>
             </li>
+			<li>
+				<a href="/js/api/ejDocumentEditor">ejDocumentEditor</a>
+				<ul>
+					<li>
+						<a href="/js/api/ejDocumentEditor#members">Member</a>
+						<ul>
+							<li id="toc-members:importexportsettings">
+								<a href="/js/api/ejDocumentEditor#members:importexportsettings">importExportSettings</a>
+								<ul>
+									 <li id="toc-members:importexportsettings-importurl"><a href="/js/api/ejDocumentEditor#members:importexportsettings-importurl">importUrl</a></li>
+								</ul>
+							</li>
+                        </ul>
+					</li>
+					<li><a href="/js/api/ejDocumentEditor#methods">Methods</a>
+                        <ul>
+                            <li id="toc-methods:load"><a href="/js/api/ejDocumentEditor#methods:load">load</a></li>
+                            <li id="toc-methods:getcurrentpagenumber"><a href="/js/api/ejDocumentEditor#methods:getcurrentpagenumber">getCurrentPageNumber</a></li>
+                            <li id="toc-methods:getpagecount"><a href="/js/api/ejDocumentEditor#methods:getpagecount">getPageCount</a></li>
+                            <li id="toc-methods:getzoomfactor"><a href="/js/api/ejDocumentEditor#methods:getzoomfactor">getZoomFactor</a></li>
+                            <li id="toc-methods:setzoomfactor"><a href="/js/api/ejDocumentEditor#methods:setzoomfactor">setZoomFactor</a></li>
+                            <li id="toc-methods:print"><a href="/js/api/ejDocumentEditor#methods:print">print</a></li>                          
+                            <li id="toc-methods:find"><a href="/js/api/ejDocumentEditor#methods:find">find</a></li>
+                        </ul>
+                    </li>
+					<li><a href="/js/api/ejDocumentEditor#events">Events</a>
+                        <ul>
+                            <li id="toc-events:ondocumentchange"><a href="/js/api/ejDocumentEditor#events:ondocumentchange">onDocumentChange</a></li>
+                            <li id="toc-events:onselectionchange"><a href="/js/api/ejDocumentEditor#events:onselectionchange">onSelectionChange</a></li>
+                            <li id="toc-events:onzoomfactorchange"><a href="/js/api/ejDocumentEditor#events:onzoomfactorchange">onZoomFactorChange</a></li>
+                            <li id="toc-events:onrequestnavigate"><a href="/js/api/ejDocumentEditor#events:onrequestnavigate">onRequestNavigate</a></li>
+                        </ul>
+                    </li>
+				</ul>
+			</li>
             <li>
                 <a href="/js/api/ejheatmap">ejHeatMap</a>
                 <ul>
@@ -11103,18 +11140,31 @@
     <li>
         PivotClient
         <ul>
-            <li><a href="/js/olapclient/overview">Overview</a></li>
-            <li><a href="/js/olapclient/getting-started">Getting Started</a></li>
-            <li><a href="/js/olapclient/data-binding">Data Binding</a></li>
-            <li><a href="/js/olapclient/olap-client-elements">PivotClient: Elements</a></li>
-            <li><a href="/js/olapclient/data-exploration">Data Exploration</a></li>
-            <li><a href="/js/olapclient/measure-groups">Measure Groups</a></li>
-            <li><a href="/js/olapclient/layout-customization">Layout Customization</a></li>
-            <li><a href="/js/olapclient/defer-update">Defer Update</a></li>
-            <li><a href="/js/olapclient/toggle-axis">Toggle Axis</a></li>
-            <li><a href="/js/olapclient/exporting">Exporting</a></li>
-            <li><a href="/js/olapclient/localization">Localization</a></li>
-            <li><a href="/js/olapclient/responsive-layout">Responsive Layout</a></li>
+            <li><a href="/js/pivotclient/overview">Overview</a></li><li>Getting Started
+				<ul>
+					<li><a href="/js/pivotclient/relational-getting-started">Relational</a></li>
+					<li><a href="/js/pivotclient/olap-getting-started">OLAP</a></li>
+				</ul>
+			</li>
+			<li>Data Binding
+				<ul>
+						<li><a href="/js/pivotclient/relational-connectivity">Relational</a></li>
+						<li><a href="/js/pivotclient/olap-connectivity">OLAP</a></li>
+				</ul>
+			</li>
+            <li><a href="/js/pivotclient/olap-client-elements">PivotClient: Elements</a></li>
+            <li><a href="/js/pivotclient/data-exploration">Data Exploration</a></li>
+            <li><a href="/js/pivotclient/measure-groups">Measure Groups</a></li>
+            <li><a href="/js/pivotclient/layout-customization">Layout Customization</a></li>
+            <li><a href="/js/pivotclient/defer-update">Defer Update</a></li>
+            <li><a href="/js/pivotclient/toggle-axis">Toggle Axis</a></li>
+			<li><a href="/js/pivotclient/save-load">Save and Load</a></li>
+			<li><a href="/js/pivotclient/advance-filtering">Advance Filtering</a></li>
+			<li><a href="/js/pivotclient/paging">Paging</a></li>
+			<li><a href="/js/pivotclient/member-editor-paging">Member Editor Paging</a></li>
+            <li><a href="/js/pivotclient/exporting">Exporting</a></li>
+            <li><a href="/js/pivotclient/localization">Localization</a></li>
+            <li><a href="/js/pivotclient/responsive-layout">Responsive Layout</a></li>
         </ul>
     </li>
     <li>
