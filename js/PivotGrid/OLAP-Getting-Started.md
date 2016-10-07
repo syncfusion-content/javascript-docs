@@ -15,12 +15,11 @@ This section covers the information that you need to know to populate a simple P
 
 ### Scripts and CSS References
 
-Create a HTML page and add scripts and style sheets that are mandatorily required to render a PivotGrid widget which are highlighted below in an appropriate order.
+Create a HTML page and add scripts and style sheets that are mandatorily required to render a PivotGrid widget which are listed below in an appropriate order.
 
 1. ej.web.all.min.css
-2. jQuery-1.10.2.min.js
-3. jQuery.easing.1.3.min.js
-5. ej.web.all.min.js
+2. jQuery-3.0.0.min.js
+3. ej.web.all.min.js
 
 ### Initialize PivotGrid
 
@@ -35,22 +34,21 @@ Place a "div" tag in the HTML page which acts as a container for the PivotGrid w
     <title>PivotGrid - Getting Started</title>
 
     <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" type="text/css" />
-    <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js" type="text/javascript"></script>
-    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js" type="text/javascript"></script>
+    <script src="http://cdn.syncfusion.com/js/assets/external/jquery-3.0.0.min.js" type="text/javascript"></script>
     <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js" type="text/javascript"></script>
 
 </head>
 <body>
-     <!--Create a tag which acts as a container for ejPivotGrid widget.-->
-     <div id="PivotGrid1" style="height: 350px; width: 100%; overflow: auto">
-     </div>
+    <!--Create a tag which acts as a container for ejPivotGrid widget.-->
+    <div id="PivotGrid1" style="height: 350px; width: 100%; overflow: auto">
+    </div>
 
-     <script type="text/javascript">
-         $(function () {
-              //Set properties and initialize ejPivotGrid widget.
-              $("#PivotGrid1").ejPivotGrid();
-         });
-     </script>
+    <script type="text/javascript">
+        $(function () {
+            //Set properties and initialize ejPivotGrid widget.
+            $("#PivotGrid1").ejPivotGrid();
+        });
+    </script>
 </body>
 </html>
 
@@ -94,7 +92,7 @@ Initializes the OLAP datasource for PivotGrid widget as shown below.
     </script>
 </body>
 
-</html>
+    </html>
 
 {% endhighlight %}
 
@@ -116,12 +114,11 @@ Next you need to add a HTML page. To add a HTML page in your Web Application, ri
 Now you need to set “GettingStarted.html” as start-up page. In-order to do so, right-click on “GettingStarted.html” page and select **“Set As Start Page”**.
 
 ### Scripts and CSS Initialization
-The scripts and style sheets that are mandatorily required to render a PivotGrid widget inside a HTML page are highlighted below in an appropriate order.
+The scripts and style sheets that are mandatorily required to render a PivotGrid widget inside a HTML page are listed below in an appropriate order.
 
 1. ej.web.all.min.css
-2. jQuery-1.10.2.min.js
-3. jQuery.easing.1.3.min.js
-4. ej.web.all.min.js
+2. jQuery-3.0.0.min.js
+3. ej.web.all.min.js
 
 The scripts and style sheets listed above could be found in any of the following locations:
 
@@ -135,13 +132,14 @@ NuGet Package: [Click here](http://helpjs.syncfusion.com/js/installation-and-dep
 In-order to initialize a PivotGrid widget, first you need to define a “div” tag with an appropriate “id” attribute which acts as a container for PivotGrid widget. Then you need to initialize the widget using `ejPivotGrid` method.
     
 {% highlight html %}
+
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>PivotGrid - Getting Started</title>
+
     <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" type="text/css" />
-    <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js" type="text/javascript"></script>
-    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js" type="text/javascript"></script>
+    <script src="http://cdn.syncfusion.com/js/assets/external/jquery-3.0.0.min.js" type="text/javascript"></script>
     <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js" type="text/javascript"></script>
 </head>
 
@@ -156,7 +154,7 @@ In-order to initialize a PivotGrid widget, first you need to define a “div” 
                 {
                     $("#PivotGrid1").ejPivotGrid(
                     {
-                        url: "/OLAPService"
+                        url: "/Olap"
                     });
                 });
             </script>
@@ -170,27 +168,27 @@ In-order to initialize a PivotGrid widget, first you need to define a “div” 
 
 The “url” property in PivotGrid widget points the service endpoint, where data are processed and fetched in the form of JSON. The service used for the PivotGrid widget as endpoint are WCF and WebAPI.
 
-N> The above "GettingStarted.html" contains WebAPI URL, which is **“/OLAPService”**. Suppose if you are using WCF service then the URL would look like **"/OLAPService.svc"**. 
+N> The above "GettingStarted.html" contains WebAPI URL, which is **“/Olap”**. Suppose if you are using WCF service then the URL would look like **"/OlapService.svc"**. 
 
 ### WebAPI
 
 **Adding a WebAPI Controller**
 
-To add a WebAPI controller in your existing Web Application, right-click on the project in Solution Explorer and select **Add > New Item.** In the **Add New Item** window, select **WebAPI Controller Class** and name it as “OLAPServiceController.cs”, click **Add.**
+To add a WebAPI controller in your existing Web Application, right-click on the project in Solution Explorer and select **Add > New Item.** In the **Add New Item** window, select **WebAPI Controller Class** and name it as “OlapController.cs”, click **Add.**
 
 Now WebAPI controller is added into your application successfully which in-turn comprise of the following file. The utilization of this file will be explained in the following sections.
  
-* OLAPServiceController.cs
+* OlapController.cs
 
-N> While adding WebAPI Controller Class, name it with the suffix “Controller” that is mandatory. For example, in demo the controller is named as “OLAPServiceController”.
+N> While adding WebAPI Controller Class, name it with the suffix “Controller” that is mandatory. For example, in demo the controller is named as “OlapController”.
 
-Next, remove all the existing methods such as “Get”, “Post”, “Put” and “Delete” present inside `OLAPServiceController.cs` file. 
+Next, remove all the existing methods such as “Get”, “Post”, “Put” and “Delete” present inside `OlapController.cs` file. 
 
 {% highlight c# %}
 
 namespace PivotGridDemo
 {
-    public class OLAPServiceController : ApiController
+    public class OlapController : ApiController
     {
         
     }
@@ -211,29 +209,38 @@ N> When you have installed any version of SQL Server Analysis Service (SSAS) or 
 * Syncfusion.Linq.Base
 * Syncfusion.Olap.Base
 * Syncfusion.PivotAnalysis.Base
+* System.Data.SqlServerCe (Version: 4.0.0.0)
 * Syncfusion.XlsIO.Base
 * Syncfusion.Pdf.Base
 * Syncfusion.DocIO.Base
 * Syncfusion.EJ
-* Syncfusion.EJ.Olap
+* Syncfusion.EJ.Export
+* Syncfusion.EJ.Pivot
 
 **List of Namespaces**
 
-Following are the list of namespaces to be added on top of the main class inside `OLAPServiceController.cs` file.
+Following are the list of namespaces to be added on top of the main class inside `OlapController.cs` file.
 
 {% highlight c# %}
 
-using System.Web;
-using System.Web.Script.Serialization;
 using Syncfusion.Olap.Manager;
 using Syncfusion.Olap.Reports;
-using Syncfusion.JavaScript;
+using System;
+using System.Collections.Generic;
+using System.Configuration;
+using System.Linq;
+using System.Web.Http;
+using System.Web.Script.Serialization;
 using Syncfusion.JavaScript.Olap;
+using System.Web;
+using System.Data.SqlServerCe;
 using OLAPUTILS = Syncfusion.JavaScript.Olap;
+using System.Data;
+using System.Text;
 
 namespace PivotGridDemo
 {
-    public class OLAPServiceController : ApiController
+    public class OlapController : ApiController
     {
 
     }
@@ -243,17 +250,18 @@ namespace PivotGridDemo
 
 **Datasource Initialization**
 
-Now, the connection string to connect OLAP Cube, PivotGrid and JavaScriptSerializer instances are created immediately inside the main class in `OLAPServiceController.cs` file.
+Now, the connection string to connect OLAP Cube, PivotGrid and JavaScriptSerializer instances are created immediately inside the main class in `OlapController.cs` file.
 
 {% highlight c# %}
 
 namespace PivotGridDemo
 {
-    public class OLAPServiceController : ApiController
+    public class OlapController : ApiController
     {
-        PivotGrid htmlHelper = new PivotGrid();
+        Syncfusion.JavaScript.PivotGrid htmlHelper = new Syncfusion.JavaScript.PivotGrid();
         string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
         JavaScriptSerializer serializer = new JavaScriptSerializer();
+        string conStringforDB = ""; //Enter appropriate connection string to connect database for saving and loading operation of reports
         //Other codes
 
     }
@@ -263,44 +271,38 @@ namespace PivotGridDemo
 
 **Service methods in WebAPI Controller**
 
-Now you need to define the service methods inside OLAPServiceController class, found inside `OLAPServiceController.cs` file, created while adding WebAPI Controller Class to your Web Application.
+Now you need to define the service methods inside OlapController class, found inside `OlapController.cs` file, created while adding WebAPI Controller Class to your Web Application.
  
 {% highlight c# %}
 
 namespace PivotGridDemo
 {
-    public class OLAPServiceController : ApiController
+    public class OlapController : ApiController
     {
-        PivotGrid htmlHelper = new PivotGrid();
+        Syncfusion.JavaScript.PivotGrid htmlHelper = new Syncfusion.JavaScript.PivotGrid();
         string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
         JavaScriptSerializer serializer = new JavaScriptSerializer();
+        string conStringforDB = ""; //Enter appropriate connection string to connect database for saving and loading operation of reports
 
         [System.Web.Http.ActionName("InitializeGrid")]
         [System.Web.Http.HttpPost]
-        public Dictionary<string, object> InitializeGrid(Dictionary<string, object> jsonResult)
+        public Dictionary<string, object> InitializeOlapGrid(Dictionary<string, object> jsonResult)
         {
-            Dictionary<string, object> customDict = new Dictionary<string, object>();
-            OlapDataManager DataManager = new OlapDataManager(connectionString);
+            OlapDataManager DataManager = null;
+            DataManager = new OlapDataManager(connectionString);
             DataManager.SetCurrentReport(CreateOlapReport());
-            customDict = htmlHelper.GetJsonData(jsonResult["action"].ToString(), DataManager, jsonResult.ContainsKey("gridLayout") ? jsonResult["gridLayout"].ToString() : null, Convert.ToBoolean(jsonResult["enablePivotFieldList"].ToString()));
-            return customDict;
+            DataManager.OverrideDefaultFormatStrings = true;
+            return htmlHelper.GetJsonData(jsonResult["action"].ToString(), DataManager, jsonResult.ContainsKey("gridLayout") ? jsonResult["gridLayout"].ToString() : null, Convert.ToBoolean(jsonResult["enablePivotFieldList"].ToString()));
         }
 
         [System.Web.Http.ActionName("DrillGrid")]
         [System.Web.Http.HttpPost]
         public Dictionary<string, object> DrillGrid(Dictionary<string, object> jsonResult)
         {
-            dynamic customData = serializer.Deserialize<dynamic>(jsonResult["customObject"].ToString());
             OlapDataManager DataManager = new OlapDataManager(connectionString);
             DataManager = new OlapDataManager(connectionString);
-            if ((customData.ContainsKey("Language")))
-            {
-                DataManager.Culture = new System.Globalization.CultureInfo((customData["Language"]));
-                DataManager.OverrideDefaultFormatStrings = true;
-            }
-            DataManager.SetCurrentReport(Syncfusion.JavaScript.Olap.Utils.DeserializeOlapReport(jsonResult["currentReport"].ToString()));
-            return htmlHelper.GetJsonData(jsonResult["action"].ToString(), connectionString, DataManager, jsonResult["cellPosition"].ToString(), jsonResult
-["headerInfo"].ToString(), jsonResult["layout"].ToString());
+            DataManager.SetCurrentReport(Utils.DeserializeOlapReport(jsonResult["currentReport"].ToString()));
+            return htmlHelper.GetJsonData(jsonResult["action"].ToString(), connectionString, DataManager, jsonResult["cellPosition"].ToString(), jsonResult["headerInfo"].ToString(), jsonResult["layout"].ToString());
         }
 
         [System.Web.Http.ActionName("NodeDropped")]
@@ -308,9 +310,8 @@ namespace PivotGridDemo
         public Dictionary<string, object> NodeDropped(Dictionary<string, object> jsonResult)
         {
             OlapDataManager DataManager = new OlapDataManager(connectionString);
-            DataManager.SetCurrentReport(Syncfusion.JavaScript.Olap.Utils.DeserializeOlapReport(jsonResult["currentReport"].ToString()));
-            return htmlHelper.GetJsonData(jsonResult["action"].ToString(), DataManager, jsonResult["dropType"].ToString(), jsonResult["nodeInfo"].ToString(), null,
-true);
+            DataManager.SetCurrentReport(Utils.DeserializeOlapReport(jsonResult["currentReport"].ToString()));
+            return htmlHelper.GetJsonData(jsonResult["action"].ToString(), DataManager, jsonResult["dropType"].ToString(), jsonResult["nodeInfo"].ToString(), jsonResult.ContainsKey("filterParams") ? jsonResult["filterParams"].ToString() : null, jsonResult["gridLayout"].ToString(), true);
         }
 
         [System.Web.Http.ActionName("Filtering")]
@@ -318,8 +319,8 @@ true);
         public Dictionary<string, object> Filtering(Dictionary<string, object> jsonResult)
         {
             OlapDataManager DataManager = new OlapDataManager(connectionString);
-            DataManager.SetCurrentReport(Syncfusion.JavaScript.Olap.Utils.DeserializeOlapReport(jsonResult["currentReport"].ToString()));
-            return htmlHelper.GetJsonData(jsonResult["action"].ToString(), DataManager, null, jsonResult["filterParams"].ToString());
+            DataManager.SetCurrentReport(Utils.DeserializeOlapReport(jsonResult["currentReport"].ToString()));
+            return htmlHelper.GetJsonData(jsonResult["action"].ToString(), connectionString, DataManager, null, jsonResult["filterParams"].ToString(), jsonResult["gridLayout"].ToString());
         }
 
         [System.Web.Http.ActionName("FetchMembers")]
@@ -327,17 +328,8 @@ true);
         public Dictionary<string, object> FetchMembers(Dictionary<string, object> jsonResult)
         {
             OlapDataManager DataManager = new OlapDataManager(connectionString);
-            DataManager.SetCurrentReport(Syncfusion.JavaScript.Olap.Utils.DeserializeOlapReport(jsonResult["currentReport"].ToString()));
+            DataManager.SetCurrentReport(Utils.DeserializeOlapReport(jsonResult["currentReport"].ToString()));
             return htmlHelper.GetJsonData(jsonResult["action"].ToString(), DataManager, null, jsonResult["headerTag"].ToString());
-        }
-
-        [System.Web.Http.ActionName("Paging")]
-        [System.Web.Http.HttpPost]
-        public Dictionary<string, object> Paging(Dictionary<string, object> jsonResult)
-        {
-            OlapDataManager DataManager = new OlapDataManager(connectionString);
-            DataManager.SetCurrentReport(htmlHelper.SetPaging(jsonResult["currentReport"].ToString(), jsonResult["pagingInfo"].ToString()));
-            return htmlHelper.GetJsonData(jsonResult["action"].ToString(), DataManager, jsonResult["gridLayout"].ToString());
         }
 
         [System.Web.Http.ActionName("RemoveButton")]
@@ -345,8 +337,8 @@ true);
         public Dictionary<string, object> RemoveButton(Dictionary<string, object> jsonResult)
         {
             OlapDataManager DataManager = new OlapDataManager(connectionString);
-            DataManager.SetCurrentReport(Syncfusion.JavaScript.Olap.Utils.DeserializeOlapReport(jsonResult["currentReport"].ToString()));
-            return htmlHelper.GetJsonData(jsonResult["action"].ToString(), DataManager, null, jsonResult["headerInfo"].ToString());
+            DataManager.SetCurrentReport(Utils.DeserializeOlapReport(jsonResult["currentReport"].ToString()));
+            return htmlHelper.GetJsonData(jsonResult["action"].ToString(), connectionString, DataManager, null, jsonResult["headerInfo"].ToString(), jsonResult["gridLayout"].ToString());
         }
 
         [System.Web.Http.ActionName("MemberExpanded")]
@@ -355,29 +347,99 @@ true);
         {
             OlapDataManager DataManager = new OlapDataManager(connectionString);
             if (!string.IsNullOrEmpty(jsonResult["currentReport"].ToString()))
-                DataManager.SetCurrentReport(Syncfusion.JavaScript.Olap.Utils.DeserializeOlapReport(jsonResult["currentReport"].ToString()));
-            return htmlHelper.GetJsonData(jsonResult["action"].ToString(), DataManager, jsonResult["checkedStatus"].ToString(), jsonResult["parentNode"].ToString(),
-jsonResult["tag"].ToString(), jsonResult["cubeName"].ToString());
+                DataManager.SetCurrentReport(Utils.DeserializeOlapReport(jsonResult["currentReport"].ToString()));
+            return htmlHelper.GetJsonData(jsonResult["action"].ToString(), DataManager, Convert.ToBoolean(jsonResult["checkedStatus"].ToString()), jsonResult["parentNode"].ToString(), jsonResult["tag"].ToString(), jsonResult["cubeName"].ToString());
         }
 
         [System.Web.Http.ActionName("Export")]
         [System.Web.Http.HttpPost]
-        public void Export(System.IO.Stream stream)
+        public void Export()
         {
-            System.IO.StreamReader sReader = new System.IO.StreamReader(stream);
-            string args = System.Web.HttpContext.Current.Server.UrlDecode(sReader.ReadToEnd());
+            string args = HttpContext.Current.Request.Form.GetValues(0)[0];
             OlapDataManager DataManager = new OlapDataManager(connectionString);
             string fileName = "Sample";
             htmlHelper.ExportPivotGrid(DataManager, args, fileName, System.Web.HttpContext.Current.Response);
         }
-        
+
+        [System.Web.Http.ActionName("SaveReport")]
+        [System.Web.Http.HttpPost]
+        public Dictionary<string, object> SaveReport(Dictionary<string, object> jsonResult)
+        {
+            string mode = jsonResult["operationalMode"].ToString();
+            SqlCeConnection con = new SqlCeConnection() { ConnectionString = conStringforDB };
+            con.Open();
+            SqlCeCommand cmd1 = new SqlCeCommand("insert into ReportsTable Values(@ReportName,@Reports)", con);
+            cmd1.Parameters.Add("@ReportName", jsonResult["reportName"].ToString());
+            if (mode == "clientMode")
+                cmd1.Parameters.Add("@Reports", Encoding.UTF8.GetBytes(jsonResult["clientReports"].ToString()).ToArray());
+            else if (mode == "serverMode")
+                cmd1.Parameters.Add("@Reports", OLAPUTILS.Utils.GetReportStream(jsonResult["clientReports"].ToString()).ToArray());
+            cmd1.ExecuteNonQuery();
+            con.Close();
+            return null;
+        }
+
+
+        [System.Web.Http.ActionName("LoadReportFromDB")]
+        [System.Web.Http.HttpPost]
+        public Dictionary<string, object> LoadReportFromDB(Dictionary<string, object> jsonResult)
+        {
+            string mode = jsonResult["operationalMode"].ToString();
+            byte[] reportString = new byte[4 * 1024];
+            Dictionary<string, object> dictionary = new Dictionary<string, object>();
+            foreach (DataRow row in GetDataTable().Rows)
+            {
+                if ((row.ItemArray[0] as string).Equals(jsonResult["reportName"].ToString()))
+                {
+                    if (mode == "clientMode")
+                    {
+                        reportString = row.ItemArray[1] as byte[];
+                        dictionary.Add("report", Encoding.UTF8.GetString(reportString));
+                        break;
+                    }
+                    else if (mode == "serverMode")
+                    {
+                        OlapDataManager DataManager = new OlapDataManager(connectionString);
+                        var reports = "";
+                        if ((row.ItemArray[0] as string).Equals(jsonResult["reportName"].ToString()))
+                        {
+                            reports = OLAPUTILS.Utils.CompressData(row.ItemArray[1] as byte[]);
+                        }
+                        DataManager.SetCurrentReport(Utils.DeserializeOlapReport(reports));
+                        DataManager.OverrideDefaultFormatStrings = true;
+                        dictionary = htmlHelper.GetJsonData(jsonResult["action"].ToString(), DataManager, jsonResult["gridLayout"].ToString(), Convert.ToBoolean(jsonResult["enablePivotFieldList"].ToString()));
+                    }
+                }
+            }
+            return dictionary;
+        }
+
+        private DataTable GetDataTable()
+        {
+            SqlCeConnection con = new SqlCeConnection() { ConnectionString = conStringforDB };
+            con.Open();
+            DataSet dSet = new DataSet();
+            new SqlCeDataAdapter("Select * from ReportsTable", con).Fill(dSet);
+            con.Close();
+            return dSet.Tables[0];
+        }
+
         [System.Web.Http.ActionName("DeferUpdate")]
         [System.Web.Http.HttpPost]
         public Dictionary<string, object> DeferUpdate(Dictionary<string, object> jsonResult)
         {
             OlapDataManager DataManager = new OlapDataManager(connectionString);
-            DataManager.SetCurrentReport(Syncfusion.JavaScript.Olap.Utils.DeserializeOlapReport(jsonResult["currentReport"].ToString()));
+            DataManager.SetCurrentReport(Utils.DeserializeOlapReport(jsonResult["currentReport"].ToString()));
             return htmlHelper.GetJsonData(jsonResult["action"].ToString(), DataManager, null, jsonResult["filterParams"].ToString());
+        }
+
+        [System.Web.Http.ActionName("Paging")]
+        [System.Web.Http.HttpPost]
+        public Dictionary<string, object> Paging(Dictionary<string, object> jsonResult)
+        {
+            OlapDataManager DataManager = new OlapDataManager(connectionString);
+            DataManager.SetCurrentReport(htmlHelper.SetPaging(jsonResult["currentReport"].ToString(), jsonResult["pagingInfo"].ToString()));
+            return htmlHelper.GetJsonData(jsonResult["action"].ToString(), DataManager, jsonResult["layout"].ToString());
         }
 
         private OlapReport CreateOlapReport()

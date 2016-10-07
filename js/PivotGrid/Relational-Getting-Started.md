@@ -15,12 +15,11 @@ This section covers the information that you need to know to populate a simple P
 
 ### Scripts and CSS References
 
-Create a HTML page and add scripts and style sheets that are mandatorily required to render a PivotGrid widget which are highlighted below in an appropriate order.
+Create a HTML page and add scripts and style sheets that are mandatorily required to render a PivotGrid widget which are listed below in an appropriate order.
 
 1. ej.web.all.min.css
-2. jQuery-1.10.2.min.js
-3. jQuery.easing.1.3.min.js
-5. ej.web.all.min.js
+2. jQuery-3.0.0.min.js
+3. ej.web.all.min.js
 
 ### Initialize PivotGrid
 
@@ -35,22 +34,21 @@ Place a "div" tag in the HTML page which acts as a container for the PivotGrid w
     <title>PivotGrid - Getting Started</title>
 
     <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" type="text/css" />
-    <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js" type="text/javascript"></script>
-    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js" type="text/javascript"></script>
+    <script src="http://cdn.syncfusion.com/js/assets/external/jquery-3.0.0.min.js" type="text/javascript"></script>
     <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js" type="text/javascript"></script>
 
 </head>
 <body>
-     <!--Create a tag which acts as a container for ejPivotGrid widget.-->
-     <div id="PivotGrid1" style="height: 350px; width: 100%; overflow: auto">
-     </div>
+    <!--Create a tag which acts as a container for ejPivotGrid widget.-->
+    <div id="PivotGrid1" style="height: 350px; width: 100%; overflow: auto">
+    </div>
 
-     <script type="text/javascript">
-         $(function () {
-              //Set properties and initialize ejPivotGrid widget.
-              $("#PivotGrid1").ejPivotGrid();
-         });
-     </script>
+    <script type="text/javascript">
+        $(function () {
+            //Set properties and initialize ejPivotGrid widget.
+            $("#PivotGrid1").ejPivotGrid();
+        });
+    </script>
 </body>
 </html>
 
@@ -60,7 +58,7 @@ Place a "div" tag in the HTML page which acts as a container for the PivotGrid w
 
 Let us now see how to populate the PivotGrid control using a sample JSON data as shown below. 
 
-{% highlight html %}
+{% highlight javascript %}
 
 var pivotData = [
     { Amount: 100, Country: "Canada", Date: "FY 2005", Product: "Bike", Quantity: 2, State: "Alberta" },
@@ -111,7 +109,9 @@ Now set the JSON data to the **"data"** property present inside the **"dataSourc
             { Amount: 200, Country: "Germany", Product: "Van", Quantity: 1 },
             { Amount: 300, Country: "Germany", Product: "Car", Quantity: 1 },
             { Amount: 150, Country: "United Kingdom", Product: "Bike", Quantity: 1 },
-            { Amount: 200, Country: "Canada", Product: "Car", Quantity: 1 }
+            { Amount: 200, Country: "Canada", Product: "Car", Quantity: 1 },
+            ....
+            ....
         ]
 
         $(function () {
@@ -134,8 +134,8 @@ Now set the JSON data to the **"data"** property present inside the **"dataSourc
                     ],
                     values: [
                         {
-                           fieldName: "Amount",
-                           fieldCaption: "Amount"
+                        fieldName: "Amount",
+                        fieldCaption: "Amount"
                         }
                     ]
                 }
@@ -144,7 +144,6 @@ Now set the JSON data to the **"data"** property present inside the **"dataSourc
     </script>
 </body>
 </html>
-
 
 {% endhighlight %}
 
@@ -172,8 +171,6 @@ $(function () {
         }
     });
 });
-
-
 
 {% endhighlight %}
 
@@ -212,10 +209,10 @@ $(function () {
                 filterItems: {
                     filterType: ej.PivotAnalysis.FilterType.Include,
                     values: ["Bike", "Car"]
-                 }
+                }
             }
             ],
-           //……
+        //……
         }
     });
 });
@@ -256,7 +253,6 @@ $(function () {
     });
 });
 
-
 {% endhighlight %}
 
 {% include image.html url="/js/PivotGrid/Getting-Started_images/purejssummarytype.png" %}
@@ -276,12 +272,11 @@ Next you need to add a HTML page. To add a HTML page in your Web Application, ri
 Now you need to set “GettingStarted.html” as start-up page. In-order to do so, right-click on “GettingStarted.html” page and select **“Set As Start Page”**.
 
 ### Scripts and CSS Initialization
-The scripts and style sheets that are mandatorily required to render a PivotGrid widget inside a HTML page are highlighted below in an appropriate order.
+The scripts and style sheets that are mandatorily required to render a PivotGrid widget inside a HTML page are listed below in an appropriate order.
 
 1. ej.web.all.min.css
-2. jQuery-1.10.2.min.js
-3. jQuery.easing.1.3.min.js
-4. ej.web.all.min.js
+2. jQuery-3.0.0.min.js
+3. ej.web.all.min.js
 
 The scripts and style sheets listed above could be found in any of the following locations:
 
@@ -303,28 +298,22 @@ In-order to initialize a PivotGrid widget, first you need to define a “div” 
 <head>
     <title>PivotGrid - Getting Started</title>
     <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" type="text/css" />
-    <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js" type="text/javascript"></script>
-    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js" type="text/javascript"></script>
+    <script src="http://cdn.syncfusion.com/js/assets/external/jquery-3.0.0.min.js" type="text/javascript"></script>
     <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js" type="text/javascript"></script>
 </head>
 
 <body>
-    <form id="form1" runat="server">
-        <div>
-            <!--Create a tag which acts as a container for ejPivotGrid widget.-->
-            <div id="PivotGrid1" style="height: 350px; width: 100%; overflow: auto"> </div>
-            <script type="text/javascript">
-                //Set properties and initialize ejPivotGrid widget.
-                $(function()
-                {
-                    $("#PivotGrid1").ejPivotGrid(
-                    {
-                        url: "/RelationalService"
-                    });
-                });
-            </script>
-        </div>
-    </form>
+    <!--Create a tag which acts as a container for ejPivotGrid widget.-->
+    <div id="PivotGrid1" style="height: 350px; width: 100%; overflow: auto"> </div>
+    <script type="text/javascript">
+        //Set properties and initialize ejPivotGrid widget.
+        $(function () {
+            $("#PivotGrid1").ejPivotGrid(
+            {
+                url: "/Relational"
+            });
+        });
+    </script>
 </body>
 </html>
 
@@ -336,21 +325,21 @@ The “url” property in PivotGrid widget points the service endpoint, where da
 
 **Adding a WebAPI Controller**
 
-To add a WebAPI controller in your existing Web Application, right-click on the project in Solution Explorer and select **Add > New Item**. In the **Add New Item** window, select **WebAPI Controller Class** and name it as “RelationalServiceController.cs”, click **Add**.
+To add a WebAPI controller in your existing Web Application, right-click on the project in Solution Explorer and select **Add > New Item**. In the **Add New Item** window, select **WebAPI Controller Class** and name it as “RelationalController.cs”, click **Add**.
  
 Now WebAPI controller is added into your application successfully which in-turn comprise of the following file. The utilization of this file will be explained in the immediate sections. 
 
-* RelationalServiceController.cs
+* RelationalController.cs
 
-N> While adding WebAPI Controller Class, name it with the suffix “Controller” that is mandatory. For example, in demo the controller is named as “RelationalServiceController”.
+N> While adding WebAPI Controller Class, name it with the suffix “Controller” that is mandatory. For example, in demo the controller is named as “RelationalController”.
 
-Next, remove all the existing methods such as “Get”, “Post”, “Put” and “Delete” present inside `RelationalServiceController.cs` file.
+Next, remove all the existing methods such as “Get”, “Post”, “Put” and “Delete” present inside `RelationalController.cs` file.
 
 {% highlight c# %}
 
 namespace PivotGridDemo
 {
-    public class RelationalServiceController: ApiController
+    public class RelationalController: ApiController
     {
         
     }
@@ -368,26 +357,36 @@ To add them to your Web Application, right-click on **References** in Solution E
 * Syncfusion.Linq.Base
 * Syncfusion.Olap.Base
 * Syncfusion.PivotAnalysis.Base
+* System.Data.SqlServerCe (Version: 4.0.0.0)
 * Syncfusion.XlsIO.Base
 * Syncfusion.Pdf.Base
 * Syncfusion.DocIO.Base
 * Syncfusion.EJ
-* Syncfusion.EJ.Olap
+* Syncfusion.EJ.Export
+* Syncfusion.EJ.Pivot
 
 **List of Namespaces**
 
-Following are the list of namespaces to be added on top of the main class inside `RelationalServiceController.cs` file.
+Following are the list of namespaces to be added on top of the main class inside `RelationalController.cs` file.
  
 {% highlight c# %}
 
-using System.Web;
-using System.Web.Script.Serialization;
 using Syncfusion.JavaScript;
-using Syncfusion.PivotAnalysis.Base; 
+using Syncfusion.PivotAnalysis.Base;
+using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlServerCe;
+using System.Linq;
+using System.Text;
+using System.Web;
+using System.Web.Http;
+using System.Web.Script.Serialization;
+using OLAPUTILS = Syncfusion.JavaScript.Olap;
 
 namespace PivotGridDemo
 {
-    public class RelationalServiceController : ApiController
+    public class RelationalController : ApiController
     {
 
     }
@@ -397,7 +396,7 @@ namespace PivotGridDemo
 
 **Datasource Initialization**
 
-A simple collection is provided as a datasource for the PivotGrid in this demo section. This datasource is placed inside a separate class “ProductSales” in `RelationalServiceController.cs` file. Refer to the following code example.
+A simple collection is provided as a datasource for the PivotGrid in this demo section. This datasource is placed inside a separate class “ProductSales” in `RelationalController.cs` file. Refer to the following code example.
 
 {% highlight c# %}
 
@@ -512,24 +511,27 @@ internal class ProductSales
 
 **Service methods in WebAPI Controller**
 
-Now you need to define the service methods inside RelationalServiceController class, found inside `RelationalServiceController.cs` file, created while adding WebAPI Controller Class to your Web Application.
+Now you need to define the service methods inside RelationalController class, found inside `RelationalController.cs` file, created while adding WebAPI Controller Class to your Web Application.
  
 {% highlight c# %}
 
 namespace PivotGridDemo
 {
-    public class RelationalServiceController : ApiController
+    public class RelationalController : ApiController
     {
         PivotGrid htmlHelper = new PivotGrid();
         JavaScriptSerializer serializer = new JavaScriptSerializer();
         Dictionary<string, object> dict = new Dictionary<string, object>();
+        static int cultureIDInfoval = 1033;
+        string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
+        string conStringforDB = ""; //Enter appropriate connection string to connect database for saving and loading operation of reports            public Dictionary<string, object> InitializeGrid(string action, string gridLayout, bool enablePivotFieldList, object customObject)
 
         [System.Web.Http.ActionName("InitializeGrid")]
         [System.Web.Http.HttpPost]
         public Dictionary<string, object> InitializeGrid(Dictionary<string, object> jsonResult)
         {
-                htmlHelper.PivotReport = BindDefaultData();
-                dict = htmlHelper.GetJsonData(jsonResult["action"].ToString(), ProductSales.GetSalesData());
+            htmlHelper.PivotReport = BindDefaultData();
+            dict = htmlHelper.GetJsonData(jsonResult["action"].ToString(), ProductSales.GetSalesData());
             return dict;
         }
 
@@ -565,7 +567,7 @@ namespace PivotGridDemo
         public Dictionary<string, object> NodeDropped(Dictionary<string, object> jsonResult)
         {
             htmlHelper.PopulateData(jsonResult["currentReport"].ToString());
-            dict = htmlHelper.GetJsonData(jsonResult["action"].ToString(), ProductSales.GetSalesData(), jsonResult["dropAxis"].ToString(), jsonResult["headerTag"].ToString(), jsonResult["filterParams"].ToString(), jsonResult["sortedHeaders"].ToString());
+            dict = htmlHelper.GetJsonData(jsonResult["action"].ToString(), ProductSales.GetSalesData(), jsonResult["dropAxis"].ToString(), jsonResult["headerTag"].ToString(), jsonResult.ContainsKey("filterParams") ? jsonResult["filterParams"].ToString() : null, jsonResult["sortedHeaders"].ToString());
             return dict;
         }
 
@@ -578,6 +580,88 @@ namespace PivotGridDemo
             return dict;
         }
 
+        [System.Web.Http.ActionName("CalculatedField")]
+        [System.Web.Http.HttpPost]
+        public Dictionary<string, object> CalculatedField(Dictionary<string, object> jsonResult)
+        {
+            htmlHelper.PopulateData(jsonResult["currentReport"].ToString());
+            dict = htmlHelper.GetJsonData(jsonResult["action"].ToString(), ProductSales.GetSalesData(), null, jsonResult["headerTag"].ToString());
+            return dict;
+        }
+
+        [System.Web.Http.ActionName("Export")]
+        [System.Web.Http.HttpPost]
+        public void Export()
+        {
+            string args = HttpContext.Current.Request.Form.GetValues(0)[0];
+            Dictionary<string, string> gridParams = serializer.Deserialize<Dictionary<string, string>>(args);
+            htmlHelper.PopulateData(gridParams["currentReport"]);
+            string fileName = "Sample";
+            htmlHelper.ExportPivotGrid(ProductSales.GetSalesData(), args, fileName, System.Web.HttpContext.Current.Response);
+        }
+
+        [System.Web.Http.ActionName("SaveReport")]
+        [System.Web.Http.HttpPost]
+        public Dictionary<string, object> SaveReport(Dictionary<string, object> jsonResult)
+        {
+            string mode = jsonResult["operationalMode"].ToString();
+            SqlCeConnection con = new SqlCeConnection() { ConnectionString = conStringforDB };
+            con.Open();
+            SqlCeCommand cmd1 = new SqlCeCommand("insert into ReportsTable Values(@ReportName,@Reports)", con);
+            cmd1.Parameters.Add("@ReportName", jsonResult["reportName"].ToString());
+            if (mode == "serverMode")
+                cmd1.Parameters.Add("@Reports", OLAPUTILS.Utils.GetReportStream(jsonResult["clientReports"].ToString()).ToArray());
+            else if (mode == "clientMode")
+                cmd1.Parameters.Add("@Reports", Encoding.UTF8.GetBytes(jsonResult["clientReports"].ToString()).ToArray());
+            cmd1.ExecuteNonQuery();
+            con.Close();
+            return null;
+        }
+
+        [System.Web.Http.ActionName("LoadReportFromDB")]
+        [System.Web.Http.HttpPost]
+        public Dictionary<string, object> LoadReportFromDB(Dictionary<string, object> jsonResult)
+        {
+            byte[] reportString = new byte[2 * 1024];
+            PivotReport report = new PivotReport();
+            var reports = "";
+            string mode = jsonResult["operationalMode"].ToString();
+            Dictionary<string, object> dictionary = new Dictionary<string, object>();
+            foreach (DataRow row in GetDataTable().Rows)
+            {
+                if ((row.ItemArray[0] as string).Equals(jsonResult["reportName"].ToString()))
+                {
+                    if (mode == "clientMode")
+                    {
+                        reportString = (row.ItemArray[1] as byte[]);
+                        dictionary.Add("report", Encoding.UTF8.GetString(reportString));
+                        break;
+                    }
+                    else if (mode == "serverMode")
+                    {
+                        reports = OLAPUTILS.Utils.CompressData(row.ItemArray[1] as byte[]);
+                        report = htmlHelper.DeserializedReports(reports);
+                        htmlHelper.PivotReport = report;
+                        dictionary = htmlHelper.GetJsonData("loadOperation", ProductSales.GetSalesData(), "Load Report", jsonResult["reportName"].ToString());
+                        break;
+                    }
+                }
+            }
+            return dictionary;
+        }
+
+
+        private DataTable GetDataTable()
+        {
+            SqlCeConnection con = new SqlCeConnection() { ConnectionString = conStringforDB };
+            con.Open();
+            DataSet dSet = new DataSet();
+            new SqlCeDataAdapter("Select * from ReportsTable", con).Fill(dSet);
+            con.Close();
+            return dSet.Tables[0];
+        }
+
+
         [System.Web.Http.ActionName("DeferUpdate")]
         [System.Web.Http.HttpPost]
         public Dictionary<string, object> DeferUpdate(Dictionary<string, object> jsonResult)
@@ -586,7 +670,16 @@ namespace PivotGridDemo
             dict = htmlHelper.GetJsonData(jsonResult["action"].ToString(), ProductSales.GetSalesData(), null, null, null, jsonResult["sortedHeaders"].ToString(), jsonResult["filterParams"].ToString());
             return dict;
         }
-        
+
+        [System.Web.Http.ActionName("CellEditing")]
+        [System.Web.Http.HttpPost]
+        public Dictionary<string, object> CellEditing(Dictionary<string, object> jsonResult)
+        {
+            htmlHelper.PopulateData(jsonResult["currentReport"].ToString());
+            dict = htmlHelper.GetJsonData(jsonResult["action"].ToString(), ProductSales.GetSalesData(), jsonResult["index"].ToString(), jsonResult["summaryValues"].ToString(), jsonResult["valueHeaders"].ToString());
+            return dict;
+        }
+
         private PivotReport BindDefaultData()
         {
             PivotReport pivotSetting = new PivotReport();
