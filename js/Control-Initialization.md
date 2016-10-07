@@ -71,14 +71,14 @@ Now, Include the specific theme reference to your HTML file by referring the app
 
 Essential JS widgets requires the following external dependent scripts,
 
-* jQuery-1.10.2.min.js 
+* jQuery (version supported from 1.7.1 to 3.1.0)
 * jQuery.easing.1.3.min.js
 * jsrender.min.js
 
 In the below specified location, you can find the dependent script files. Copy and paste it into the **Scripts** folder of your application,
 
 
-<b>(installed location)</b>\ Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets\external 
+<b>(installed location)</b>\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets\external 
 
 Apart from the above dependent scripts, you need to refer the **ej.web.all.min.js** file, which contains all the JavaScript components script and globalize library packed together in a minified format.
 
@@ -175,6 +175,7 @@ The below image depicts that the NuGet Packages for JavaScript has been successf
 ### Adding HTML page in your application
 
 Right click on your Project in Solution Explorer. Select `Add|New Item|HTML Page` and add it to your application. The blank HTML page will be added.
+
 ![](/js/Control-Initialization_images/Control-Initialization_img8.png) 
 
 ### Adding reference to the required style sheets
