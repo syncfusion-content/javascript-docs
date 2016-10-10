@@ -38,7 +38,7 @@ In order to perform exporting with the use of a custom service method, the servi
         function Export(args) {
             args.url = "http://js.syncfusion.com/demos/ejservices/api/JSPivotClientExport/ExportPivotClient";//Exporting url can be modified here
         }
-{% endhightlight %}
+{% endhighlight %}
 
 ### Customize the export document name
 
@@ -56,7 +56,7 @@ The document name could be customized. Following code sample illustrates the sam
             args.url = "http://js.syncfusion.com/demos/ejservices/api/JSPivotClientExport/ExportPivotClient";
             args.fileName="File name is customized here";
         }
-{% endhightlight %}
+{% endhighlight %}
 
 ## PivotEngine Export
 
@@ -75,7 +75,7 @@ In order to perform exporting with the use of PivotEngine available in server-si
             args.url = "";
         }
         
- {% endhightlight %}
+ {% endhighlight %}
 
 For WebAPI controller, the below method needs to be added to perform exporting with PivotEngine.
 
