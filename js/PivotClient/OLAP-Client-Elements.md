@@ -1,13 +1,13 @@
 ---
 layout: post
 title: OLAP-Client-Elements
-description: OlapClient Elements 
+description: PivotClient Elements 
 platform: js
-control: OlapClient
+control: PivotClient
 documentation: ug
 ---
 
-# OlapClient: Elements
+# PivotClient: Elements
 
 ## Cube Selector
 Cube Selector allows to select any one of the cubes that are available in connected database. This can be achieved with a dropdown list displaying the list of cube names. On selecting a cube from the dropdown list the corresponding cube elements get loaded.
@@ -99,7 +99,7 @@ True</td></tr>
 </table>
 
 ##Axis Element Builder
-Axis Element Builder allows you to build the elements in the axes of OlapClient.  It supports three axes namely Categorical, Series and Slicer. Based on the construction of axes, PivotGrid and OlapChart will display the resultant data.
+Axis Element Builder allows you to build the elements in the axes of PivotClient.  It supports three axes namely Categorical, Series and Slicer. Based on the construction of axes, PivotGrid and OlapChart will display the resultant data.
 
 ### Categorical (Column)
 The categorical axis defines one or more elements that are displayed along the Chart’s y-axis as labels and in the columns of the Grid. If more than one dimension is on the categorical axis, the Chart/Grid will stack each dimension. The order in which the dimensions are stacked is based on the order that they appear on the categorical axis.
@@ -156,7 +156,7 @@ Member Editor is a dialog which displays the members of the current hierarchy in
 
 ![](OLAP-Client-Elements_images/Member editor.png)
 
-The “Check All” and “Uncheck All” option in the dialog lets the user to select and unselect entire nodes for filtering. For more details, about filtering, [click here](http://help.syncfusion.com/js/olapclient/data-exploration#filtering-by-member).
+The “Check All” and “Uncheck All” option in the dialog lets the user to select and unselect entire nodes for filtering. For more details, about filtering, [click here](http://help.syncfusion.com/js/pivotclient/olap-data-exploration#filtering-by-member).
 
 ## Toolbar
 
@@ -180,7 +180,7 @@ The options available in the toolbar are,
 * **Filter/Sort Row** - Filters/Sorts the data in the OlapReport with respect to Row.
 * **Toggle Axis** – Interchanges the items between Categorical and Series axes.
 * **Chart types** – Allows user to change the Chart type dynamically.
-* **Report List** - It holds all the reports of the current session of the OlapClient control and displays in a dropdown list. By default, from the dropdown list a report can be selected.
+* **Report List** - It holds all the reports of the current session of the PivotClient control and displays in a dropdown list. By default, from the dropdown list a report can be selected.
 
 ## Report Manipulation
 
