@@ -630,7 +630,7 @@ Now, PivotClient is rendered with PivotChart and PivotGrid showing Customer Coun
 ![](Getting-Started_images/olapwebapi.png) 
 
 ### WCF
-This section demonstrates the utilization of WCF service as endpoint binding OLAP datasource to a simple PivotClient. For more details on this topic, [click here](http://help.syncfusion.com/js/pivotclient/data-binding#wcf).
+This section demonstrates the utilization of WCF service as endpoint binding OLAP datasource to a simple PivotClient. For more details on this topic, [click here](http://help.syncfusion.com/js/pivotclient/olap-connectivity#wcf).
 
 
 
