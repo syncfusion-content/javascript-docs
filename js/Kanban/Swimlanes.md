@@ -47,3 +47,47 @@ The following code example describes the above behavior.
 The following output is displayed as a result of the above code example.
 
 ![](Swimlane_images/swimlane_img1.png)
+
+# Drag And Drop between swim lanes
+
+You can set ['allowDragAndDrop'](https://help.syncfusion.com/js/api/ejkanban#members:swimlanesettings-allowdraganddrop) property of ['swimlaneSettings'](https://help.syncfusion.com/js/api/ejkanban#members:swimlanesettings) as true to enable Drag and Drop between the swim lanes.
+
+The following code example describes the above behavior.
+
+{% highlight html %}
+
+    <div id='Kanban'></div>
+
+{% endhighlight %}
+
+{% highlight javascript %}
+
+    $(function () {
+        var data = ej.DataManager(window.kanbanData).executeLocal(ej.Query().take(30));
+        
+        $("#Kanban").ejKanban(
+            {
+                dataSource: data,
+                columns: [
+                    { headerText: "Backlog", key: "Open" },
+                    { headerText: "In Progress", key: "InProgress" },
+                    { headerText: "Done", key: "Close" }
+                ],
+                keyField: "Status",
+                fields: {
+                    content: "Summary",
+                    primaryKey: "Id",
+                    swimlaneKey: "Assignee",
+                    imageUrl: "ImgUrl"
+                },
+                swimlaneSettings:{
+                    allowDragAndDrop: true,
+                },
+            });
+    });
+
+{% endhighlight %}
+
+The following output is displayed as a result of the above code example.
+
+![](Swimlane_images/swimlane_img2.png)
