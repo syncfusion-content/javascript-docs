@@ -7151,7 +7151,7 @@ Get the scroller object of grid.
 #### Returns:
 {:#methods:returns:}
 
-Object
+ej.Scroller
 
 ####Example
 {:.example}
