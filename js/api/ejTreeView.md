@@ -1171,7 +1171,7 @@ It receives Essential DataManager object and JSON object.
 
 
 
-### fields.expanded `boolean`
+### fields.expanded `string`
 {:#members:fields-expanded}
 
 
@@ -1193,7 +1193,7 @@ Specifies the node to be in expanded state.
 
 
 
-### fields.hasChild `boolean`
+### fields.hasChild `string`
 {:#members:fields-haschild}
 
 
@@ -1303,7 +1303,7 @@ Specifies the HTML Attributes to "li" item list.
 
 
 
-### fields.isChecked `boolean`
+### fields.isChecked `string`
 {:#members:fields-ischecked}
 
 
@@ -1391,7 +1391,7 @@ It receives query to retrieve data from the table (query is same as SQL).
 
 
 
-### fields.selected `boolean`
+### fields.selected `string`
 {:#members:fields-selected}
 
 
