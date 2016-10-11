@@ -7151,7 +7151,7 @@ Get the scroller object of grid.
 #### Returns:
 {:#methods:returns:}
 
-Object
+ej.Scroller
 
 ####Example
 {:.example}
@@ -7183,7 +7183,7 @@ Get the selected records details in grid.
 #### Returns:
 {:#methods:returns:}
 
-Void
+Array
 
 ####Example
 {:.example}

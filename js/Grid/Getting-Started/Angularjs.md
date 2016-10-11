@@ -34,7 +34,6 @@ To get started, you can use the `ej.web.all.min.js` file that encapsulates all t
 		    
      <!-- Essential Studio for JavaScript  script references -->
 	 <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"></script> 
      <script src="http://cdn.syncfusion.com/js/assets/external/jsrender.min.js"></script>
      <script src="http://cdn.syncfusion.com/13.4.0.53/js/web/ej.web.all.min.js"> </script>
      <script src="http://cdn.syncfusion.com/13.4.0.53/js/web/ej.widget.angular.min.js"> </script>
