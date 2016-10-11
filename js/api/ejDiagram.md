@@ -4214,10 +4214,10 @@ function customUndoRedo(args) {
 
 {% endhighlight %}
 
-### historyManager.redoStack `Number`
+### historyManager.redoStack `array`
 {:#members:historymanager-redostack}
 
- redoStack property takes a history entry as argument and returns the number of redo operation to be stored on the history manager
+The `redoStack` property is used to get the number of redo actions to be stored on the history manager. Its an read-only property and the collection should not be modified.
 
 #### Default Value:
 
@@ -4240,7 +4240,7 @@ diagram.model.historyManager.redoStack();
 ### historyManager.stackLimit `Number`
 {:#members:historymanager-stacklimit}
 
-stackLimit property takes a history entry as argument and returns the number of actions to be stored on the history manager
+The `stackLimit` property used to restrict the undo and redo actions to a certain limit. 
 
 #### Default Value:
 
@@ -4327,10 +4327,10 @@ function customUndoRedo(args) {
 
 {% endhighlight %}
 
-### historyManager.undoStack `function`
+### historyManager.undoStack `array`
 {:#members:historymanager-undostack}
 
-undoStack property takes a history entry as argument and returns the number of undo operation to be stored on the history manager
+The `undoStack` property is used to get the number of undo actions to be stored on the history manager. Its an read-only property and the collection should not be modified.
 
 #### Default Value:
 
@@ -9643,7 +9643,7 @@ Defines whether connections can be created with the port
        </tr>
        <tr>
             <td class="name">ConnectOnDrag</td>
-            <td class="description last">Enables connections with connector, when the port is clicked</td>
+            <td class="description last">Enables to create the connection when mouse hover on the port.</td>
        </tr>
    </tbody>
 </table>
@@ -13148,7 +13148,7 @@ diagram.clear();
 ### clearHistory()
 {:#methods:clearhistory}
 
-Clears the actions performed in diagram
+Clears the actions which is recorded to perform undo/redo operation in the diagram.
 
 #### Example
 
@@ -14579,7 +14579,7 @@ Triggers when the connector collection is changed
         <tr>
 			<td class="name">state</td>
 			<td class="type">string</td>
-			<td class="description last">triggers before and after adding the connector in the diagram,also defines whether the state of connector collection is changing or changed.</td>
+			<td class="description last">triggers before and after adding the connector in the diagram which can be differentiated through `state` argument. We can cancel the event only before adding the connector.</td>
 		</tr>
         <tr>
 			<td class="name">diagramId</td>
@@ -15142,7 +15142,7 @@ drop:function (args) {}
 
 ### editorFocusChange
 {:#events:editorfocuschange}
-Triggers When labels of node or text is edited and the position of the cursor is at the end of the selected editor string
+Triggers when editor got focus at the time of nodeslabel or text node editing.
 
 #### Example
 
@@ -15523,7 +15523,7 @@ Triggers when node collection is changed
         	<tr>
 			<td class="name">state</td>
 			<td class="type">string</td>
-			<td class="description last">triggers before and after adding the node in the diagram,also defines whether the state of connector collection is changing or changed.</td>
+			<td class="description last">triggers before and after adding the node in the diagram which can be differentiated through `state` argument. We can cancel the event only before adding the node</td>
 		</tr>
         <tr>
 			<td class="name">diagramId</td>
@@ -15798,7 +15798,7 @@ Triggers when the selection is changed in diagram
         <tr>
 			<td class="name">state</td>
 			<td class="type">string</td>
-			<td class="description last">triggers before and after adding the connector/node in the diagram,also defines whether the state of connector/node collection is changing or changed.</td>
+			<td class="description last">triggers before and after adding the selection to the object in the diagram which can be differentiated through `state` argument. We can cancel the event only before the selection of the object.</td>
 		</tr>
         <tr>
 			<td class="name">diagramId</td>
