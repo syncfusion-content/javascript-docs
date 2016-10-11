@@ -7183,7 +7183,7 @@ Get the selected records details in grid.
 #### Returns:
 {:#methods:returns:}
 
-Void
+Array
 
 ####Example
 {:.example}
