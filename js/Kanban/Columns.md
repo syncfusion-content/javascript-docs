@@ -263,3 +263,164 @@ The following code example describes the above behavior.
 The following output is displayed as a result of the above code example.
 
 ![](Columns_images/column_img4.png)
+
+## Allow Dragging
+
+You can enable and disable drag behavior to the cards in the Kanban columns using the `allowDrag` property and the default value is `true`.
+
+The following code example describes the above behavior.
+
+{% highlight html %}
+
+    <div id='Kanban'></div>
+
+{% endhighlight %}
+
+{% highlight javascript %}
+
+    $(function () {
+        var data = ej.DataManager(window.kanbanData).executeLocal(ej.Query().take(30));
+        
+         $("#Kanban").ejKanban(
+            {
+                dataSource: data,
+                columns: [
+                    { headerText: "Backlog", key: "Open", allowDrag: false },
+                    { headerText: "In Progress", key: "InProgress" },
+                    { headerText: "Done", key: "Close" }
+                ],
+                keyField: "Status",
+                fields: {
+                    content: "Summary",
+                    primaryKey: "Id",
+                    priority: "RankId"
+                }
+            });
+    });
+
+{% endhighlight %}
+
+The following output is displayed as a result of the above code example.
+
+![](Columns_images/column_img5.png)
+
+## Allow Dropping
+
+You can enable and disable drop behavior to the cards in the Kanban columns using the `allowDrop` property and the default value is `true`.
+
+The following code example describes the above behavior.
+
+{% highlight html %}
+
+    <div id='Kanban'></div>
+
+{% endhighlight %}
+
+{% highlight javascript %}
+
+    $(function () {
+        var data = ej.DataManager(window.kanbanData).executeLocal(ej.Query().take(30));
+        
+        $("#Kanban").ejKanban(
+            {
+                dataSource: data,
+                columns: [
+                    { headerText: "Backlog", key: "Open"},
+                    { headerText: "In Progress", key: "InProgress" },
+                    { headerText: "Done", key: "Close", allowDrop: false  }
+                ],
+                keyField: "Status",
+                fields: {
+                    content: "Summary",
+                    primaryKey: "Id",
+                    priority: "RankId"
+                }
+            });
+    });
+
+{% endhighlight %}
+
+The following output is displayed as a result of the above code example.
+
+![](Columns_images/column_img6.png)
+
+#Items Count
+
+You can show total cards count in each column's header using the property `enableTotalCount` and the default value is `false`.
+
+The following code example describes the above behavior.
+
+{% highlight html %}
+
+    <div id='Kanban'></div>
+
+{% endhighlight %}
+
+{% highlight javascript %}
+
+    $(function () {
+        var data = ej.DataManager(window.kanbanData).executeLocal(ej.Query().take(30));
+        
+        $("#Kanban").ejKanban(
+            {
+                dataSource: data,
+				enableTotalCount:true,
+                columns: [
+                    { headerText: "Backlog", key: "Open"},
+                    { headerText: "In Progress", key: "InProgress" },
+                    { headerText: "Done", key: "Close" }
+                ],
+                keyField: "Status",
+                fields: {
+                    content: "Summary",
+                    primaryKey: "Id"
+                }
+            });
+    });
+
+{% endhighlight %}
+
+The following output is displayed as a result of the above code example.
+
+![](Columns_images/column_img7.png)
+
+
+## Customize Items count text
+
+You can customize the Items count text using the property `totalCount.text`.
+
+The following code example describes the above behavior.
+
+{% highlight html %}
+
+    <div id='Kanban'></div>
+
+{% endhighlight %}
+
+{% highlight javascript %}
+
+    $(function () {
+        var data = ej.DataManager(window.kanbanData).executeLocal(ej.Query().take(30));
+        
+          $("#Kanban").ejKanban(
+            {
+                dataSource: data,
+				enableTotalCount:true,
+                columns: [
+                    { headerText: "Backlog", key: "Open",totalCount:{text:"Backlog Count"}},
+                    { headerText: "In Progress", key: "InProgress" },
+                    { headerText: "Done", key: "Close" }
+                ],
+                keyField: "Status",
+                fields: {
+                    content: "Summary",
+                    primaryKey: "Id"
+                }
+            });
+    });
+
+{% endhighlight %}
+
+The following output is displayed as a result of the above code example.
+
+![](Columns_images/column_img8.png)
