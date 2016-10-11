@@ -8586,7 +8586,7 @@ $("#Grid").ejGrid("setCellValue", 1, "EmployeeID", "GREYER");
 </script>{% endhighlight %}
 
 ### setPhoneModeMaxWidth(value)
-{:#methods:setPhoneModeMaxWidth}
+{:#methods:setphonemodemaxwidth}
 
 The grid rows has to be rendered as detail view in mobile mode based on given value.
 
