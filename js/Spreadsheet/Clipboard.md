@@ -26,18 +26,17 @@ The following code example describes the above behavior.
 {% highlight javascript %}
 $(function () {
     $("#Spreadsheet").ejSpreadsheet({
-        // the datasource "window.defaultData" is referred from   
-        'http://js.syncfusion.com/demos/web/scripts/xljsondata.min.js'
+        // the datasource "window.defaultData" is referred from 'http://js.syncfusion.com/demos/web/scripts/xljsondata.min.js'
         sheets: [{
             rangeSettings: [{ dataSource: window.defaultData, startCell: "A1" }],                               
         }],
         allowClipboard: true,
-        loadComplete: “loadComplete”
+        loadComplete: "loadComplete"
     });
 });
 function loadComplete() {
     var xlClip = this.XLObj.XLClipboard;
-    this.XLObj.performSelection(“A1:C3”);
+    this.XLObj.performSelection("A1:C3");
 }
 {% endhighlight %}
 
@@ -86,20 +85,20 @@ The following code example describes the above behavior.
 {% highlight javascript %}
 $(function () {
     $("#Spreadsheet").ejSpreadsheet({
-        // the datasource "window.defaultData" is referred from   
-        'http://js.syncfusion.com/demos/web/scripts/xljsondata.min.js'
+        // the datasource "window.defaultData" is referred from 'http://js.syncfusion.com/demos/web/scripts/xljsondata.min.js'
         sheets: [{
             rangeSettings: [{ dataSource: window.defaultData, startCell: "A1" }],                               
         }],
         allowClipboard: true,
-        loadComplete: “loadComplete”
+        loadComplete: "loadComplete"
     });
 });
 function loadComplete() {
     var xlClip = this.XLObj.XLClipboard;
-    this.XLObj.performSelection(“A1:C3”);
+    this.XLObj.performSelection("A1:C3");
     xlClip.cut(); // Cut the selected cells
     //xlClip.copy();//Copy the selected cells.
+    this.XLObj.performSelection("J4");
     xlClip.paste();
 }
 {% endhighlight %}
