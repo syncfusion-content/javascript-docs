@@ -18,6 +18,7 @@ Diagram constraints allow to enable or disable the following behaviors.
 * Line Bridging
 * Zoom and Pan
 * Undo Redo
+* Crisp Edges
 * Resizing
 
 For more information about Diagram constraints, refer to [Diagram Constraints](/js/api/global#diagramconstraints "Diagram Constraints").
@@ -49,6 +50,7 @@ NodeConstraints allows to enable or disable the following behaviors of node.
 * Drop shadow
 * Drag label
 * Define tooltip
+* Crisp Edges
 * Interaction
 
 For more information about node constraints, refer to [Node Constraints](/js/api/global#nodeconstraints "Node Constraints")
@@ -83,6 +85,7 @@ ConnectorConstraints allow to enable or disable certain behaviors of Connectors.
 * Define tooltip
 * Bridging
 * Label dragging
+* Crisp Edges
 * Interaction
 
 For more information about connector constraints, refer to [Connector Constraints](/js/api/global#connectorconstraints "Connector Constraints")
@@ -111,6 +114,7 @@ $("#diagram").ejDiagram({
 You can enable or disable certain behaviors of Port. They are as follows.
 
 * Connect
+* ConnectOnDrag
 
 For more information about port constraints, refer to [Port Constraints](/js/api/global#portconstraints "Port Constraints")
 

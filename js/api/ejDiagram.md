@@ -848,6 +848,10 @@ Enables or disables the behaviors of connectors.
             <td class="name">PointerEvents</td>
             <td class="description last">Enables user interaction to the connector</td>
        </tr>
+       <tr>
+            <td class="name">CrispEdges</td>
+            <td class="description last">Enables the contrast between clean edges of connector over rendering speed and geometric precision</td>
+       </tr>
         <tr>
             <td class="name">Default</td>
             <td class="description last">Enables all constraints</td>
@@ -1126,7 +1130,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 {% endhighlight %}
 
 ### connectors.labels.boundaryConstraints `Boolean`
-{:#members:connectors-labels-boundaryConstraints}
+{:#members:connectors-labels-boundaryconstraints}
 
 Defines whether the label should be aligned within the connector boundaries
 
@@ -1614,7 +1618,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 {% endhighlight %}
 
 ### connectors.labels.segmentOffset `String`
-{:#members:connectors-labels-segmentOffset}
+{:#members:connectors-labels-segmentoffset}
 
 Sets the position of the label with respect to the total segment length
 
@@ -2590,7 +2594,7 @@ $("#diagramcontent").ejDiagram({connectors : connector});
 {% endhighlight %}
 
 ### connectors.shape.relationship`String`
-{:#members:connectors-shape.relationship}
+{:#members:connectors-shape-relationship}
 
 Defines the role of the connector in a UML Class Diagram. Applicable, if the type of the connector is "classifier".
 
@@ -2643,10 +2647,12 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 
 {% endhighlight %}
 
-### connectors.shape.multiplicity`String`
-{:#members:connectors-shape.multiplicity}
+### connectors.shape.multiplicity.type `enum`
+{:#members:connectors-shape-multiplicity-type}
 
-Defines the multiplicity of a relationship in UML class diagram
+<ts name = "ej.datavisualization.Diagram.Multiplicity"/>
+
+Sets the type of the multiplicity. Applicable, if the connector is of type "classifier"
 
 <table class="props">
     <thead>
@@ -2656,24 +2662,28 @@ Defines the multiplicity of a relationship in UML class diagram
        </tr>
    </thead>
     <tbody>
-       <tr>
+        <tr>
             <td class="name">OneToOne</td>
-            <td class="description last">Used to specify the one to one relationship</td>
+            <td class="description last">Each entity instance is related to a single instance of another entity</td>
        </tr>
         <tr>
             <td class="name">OneToMany</td>
-            <td class="description last">Used to specify the one to many relationship</td>
+            <td class="description last">An entity instance can be related to multiple instances of the other entities</td>
        </tr>
         <tr>
             <td class="name">ManyToOne</td>
-            <td class="description last">Used to specify the many to one relationship</td>
+            <td class="description last">Multiple instances of an entity can be related to a single instance of the other entity</td>
        </tr>
-      </tbody>
+       <tr>
+            <td class="name">ManyToMany</td>
+            <td class="description last">The entity instances can be related to multiple instances of each other</td>
+       </tr>
+     </tbody>
 </table>
 
 #### Default Value:
 
-* ""
+* ej.datavisualization.Diagram.Multiplicity.OneToOne
 
 #### Example
 
@@ -2682,7 +2692,196 @@ Defines the multiplicity of a relationship in UML class diagram
 <div id="diagramcontent"></div>
 <script>
 var connector = { name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200}, 
-                  shape: {type: "umlclassifier", relationship: ej.datavisualization.Diagram.ClassifierShapes.Dependency, multiplicity:"onetomany"
+                  shape: {type: "umlclassifier", relationship: ej.datavisualization.Diagram.ClassifierShapes.Dependency, multiplicity:{type: "onetomany"}
+                 } }; 
+$("#diagramcontent").ejDiagram({connectors : [connector]});
+</script>
+{% endhighlight %}
+
+### connectors.shape.multiplicity.source.optional `boolean`
+{:#members:connectors-shape-multiplicity-source-optional}
+
+Defines the source label to connector. Applicable, if the connector is of type "UML"
+
+<table class="params">
+	<thead>
+		<tr>
+			<th>Type</th>
+            <th>Optional</th>
+			<th>Source</th>
+			<th>Target</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="type">OneToOne</td>
+            <td class =""></td>
+			<td class="source">false</td>
+			<td class="target last">false</td>
+		</tr>
+		<tr>
+			<td class="type">OneToMany</td>
+            <td class =""></td>
+			<td class="source">false</td>
+			<td class="target last">true</td>
+		</tr>
+        <tr>
+			<td class="type">ManyToOne</td>
+            <td class =""></td>
+			<td class="source">true</td>
+			<td class="target last">false</td>
+		</tr>
+        <tr>
+			<td class="type">ManyToMany</td>
+            <td class =""></td>
+			<td class="source">true</td>
+			<td class="target last">true</td>
+		</tr>
+	</tbody>
+</table>
+
+#### Default Value:
+
+* true
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var connector = { name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200}, 
+                  shape: {type: "umlclassifier", relationship: ej.datavisualization.Diagram.ClassifierShapes.Dependency, 
+                      multiplicity:{
+                          type: "onetomany", source: { optional: true, lowerBounds: 89, upperBounds: 67 }}
+                 } }; 
+$("#diagramcontent").ejDiagram({connectors : [connector]});
+</script>
+
+{% endhighlight %}
+
+### connectors.shape.multiplicity.source.lowerBounds `Number`
+{:#members:connectors-shape-multiplicity-source-lowerBounds}
+
+Defines the source label to connector. Applicable, if the connector is of type "UML"
+
+#### Default Value:
+
+* null
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var connector = { name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200}, 
+                  shape: {type: "umlclassifier", relationship: ej.datavisualization.Diagram.ClassifierShapes.Dependency, 
+                      multiplicity:{
+                          type: "onetomany", 
+                          source: { optional: true, 
+                              //
+                              lowerBounds: 1, upperBounds: 10 }}
+                 } }; 
+$("#diagramcontent").ejDiagram({connectors : [connector]});
+</script>
+
+{% endhighlight %}
+
+### connectors.shape.multiplicity.source.upperBounds `Number`
+{:#members:connectors-shape-multiplicity-source-upperBounds}
+
+Defines the source label to connector. Applicable, if the connector is of type "UML"
+
+#### Default Value:
+
+* null
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var connector = { name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200}, 
+                  shape: {type: "umlclassifier", relationship: ej.datavisualization.Diagram.ClassifierShapes.Dependency, 
+                      multiplicity:{
+                          type: "onetomany", 
+                          source: { optional: true, lowerBounds: 1, upperBounds: 10 }}
+                 } }; 
+$("#diagramcontent").ejDiagram({connectors : [connector]});
+</script>
+
+{% endhighlight %}
+
+### connectors.shape.multiplicity.target.optional `boolean`
+{:#members:connectors-shape-multiplicity-target-optional}
+
+Defines the target label to connector. Applicable, if the connector is of type "UML"
+
+#### Default Value:
+
+* true
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var connector = { name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200}, 
+                  shape: {type: "umlclassifier", relationship: ej.datavisualization.Diagram.ClassifierShapes.Dependency, 
+                      multiplicity:{type: "onetomany",
+                          target: { optional: true, lowerBounds: 1, upperBounds: 10 }}
+                 } }; 
+$("#diagramcontent").ejDiagram({connectors : [connector]});
+</script>
+
+{% endhighlight %}
+
+### connectors.shape.multiplicity.target.lowerBounds `Number`
+{:#members:connectors-shape-multiplicity-target-lowerBounds}
+
+Defines the target label to connector. Applicable, if the connector is of type "UML"
+
+#### Default Value:
+
+* null
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var connector = { name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200}, 
+                  shape: {type: "umlclassifier", relationship: ej.datavisualization.Diagram.ClassifierShapes.Dependency, multiplicity:{type: "onetomany", 
+                       target: { optional: true, lowerBounds: 1, upperBounds: 10 }}
+                 } }; 
+$("#diagramcontent").ejDiagram({connectors : [connector]});
+</script>
+
+{% endhighlight %}
+
+### connectors.shape.multiplicity.target.upperBounds `Number`
+{:#members:connectors-shape-multiplicity-target-upperBounds}
+
+Defines the target label to connector. Applicable, if the connector is of type "UML"
+
+#### Default Value:
+
+* null
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var connector = { name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200}, 
+                  shape: {type: "umlclassifier", relationship: ej.datavisualization.Diagram.ClassifierShapes.Dependency, 
+                      multiplicity:{type: "manytomany",
+                           target: { optional: true, lowerBounds: 1, upperBounds: 10 }}
                  } }; 
 $("#diagramcontent").ejDiagram({connectors : [connector]});
 </script>
@@ -3555,6 +3754,10 @@ Enables/Disables the default behaviors of the diagram.
             <td class="name">Undoable</td>
             <td class="description last">Enables/Disables undo actions</td>
        </tr>
+       <tr>
+            <td class="name">CrispEdges</td>
+            <td class="description last">Enables/Disables the sharp edges</td>
+       </tr>
         <tr>
             <td class="name">Default</td>
             <td class="description last">Enables all Constraints</td>
@@ -4111,6 +4314,52 @@ function customUndoRedo(args) {
 
 {% endhighlight %}
 
+### historyManager.redoStack `array`
+{:#members:historymanager-redostack}
+
+The `redoStack` property is used to get the number of redo actions to be stored on the history manager. Its an read-only property and the collection should not be modified.
+
+#### Default Value:
+
+* []
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+    
+var diagram = $("#diagramcontent").ejDiagram("instance");
+diagram.model.historyManager.redoStack();
+
+</script>
+
+{% endhighlight %}
+
+### historyManager.stackLimit `Number`
+{:#members:historymanager-stacklimit}
+
+The `stackLimit` property used to restrict the undo and redo actions to a certain limit. 
+
+#### Default Value:
+
+* null
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+    
+var diagram = $("#diagramcontent").ejDiagram("instance");
+diagram.model.historyManager.stackLimit();
+    
+</script>
+
+{% endhighlight %}
+
 ### historyManager.startGroupAction `function`
 {:#members:historymanager-startgroupaction}
 
@@ -4174,6 +4423,29 @@ function customUndoRedo(args) {
 	//Saves the previous state
 	args.prevState = currentState;
 }	
+</script>
+
+{% endhighlight %}
+
+### historyManager.undoStack `array`
+{:#members:historymanager-undostack}
+
+The `undoStack` property is used to get the number of undo actions to be stored on the history manager. Its an read-only property and the collection should not be modified.
+
+#### Default Value:
+
+* []
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+    
+var diagram = $("#diagramcontent").ejDiagram("instance");
+diagram.model.historyManager.undoStack();
+
 </script>
 
 {% endhighlight %}
@@ -4999,7 +5271,7 @@ $("#DiagramContent").ejDiagram({ nodes:nodes });
 {% endhighlight %}
 
 ### nodes.class.name `String`
-{:#members:nodes-class.name}
+{:#members:nodes-class-name}
 
 Sets the name of class.
 
@@ -5022,7 +5294,7 @@ $("#DiagramContent").ejDiagram({ nodes:nodes });
 {% endhighlight %}
 
 ### nodes.class.attributes `Array`
-{:#members:nodes-class.attributes}
+{:#members:nodes-class-attributes}
 
 Defines the collection of attributes
 
@@ -5046,7 +5318,7 @@ $("#DiagramContent").ejDiagram({ nodes:nodes });
 {% endhighlight %}
 
 ### nodes.class.attributes.name `String`
-{:#members:nodes-class.attributes.name}
+{:#members:nodes-class-attributes-name}
 
 Sets the name of the attribute
 
@@ -5070,7 +5342,7 @@ $("#DiagramContent").ejDiagram({ nodes:nodes });
 {% endhighlight %}
 
 ### nodes.class.attributes.type `String`
-{:#members:nodes-class.attributes.type}
+{:#members:nodes-class-attributes-type}
 
 Sets the data type of attribute
 
@@ -5094,7 +5366,7 @@ $("#DiagramContent").ejDiagram({ nodes:nodes });
 {% endhighlight %}
 
 ### nodes.class.attributes.scope `String`
-{:#members:nodes-class.attributes.scope}
+{:#members:nodes-class-attributes-scope}
 
 Defines the visibility of the attribute
 
@@ -5118,7 +5390,7 @@ $("#DiagramContent").ejDiagram({ nodes:nodes });
 {% endhighlight %}
 
 ### nodes.class.methods `Array`
-{:#members:nodes-class.methods}
+{:#members:nodes-class-methods}
 
 Defines the collection of methods of a Class.
 
@@ -5142,7 +5414,7 @@ $("#DiagramContent").ejDiagram({ nodes:nodes });
 {% endhighlight %}
 
 ## nodes.class.methods.name `String`
-{:#members:nodes-class.methods.name}
+{:#members:nodes-class-methods-name}
 
 Sets the name of the method.
 
@@ -5166,7 +5438,7 @@ $("#DiagramContent").ejDiagram({ nodes:nodes });
 {% endhighlight %}
 
 ## nodes.class.methods.arguments `Array`
-{:#members:nodes-class.methods.arguments}
+{:#members:nodes-class-methods-arguments}
 
 Defines the arguments of the method.
 
@@ -5190,7 +5462,7 @@ $("#DiagramContent").ejDiagram({ nodes:nodes });
 {% endhighlight %}
 
 ## nodes.class.methods.arguments.name `String`
-{:#members:nodes-class.methods.arguments.name}
+{:#members:nodes-class-methods-arguments-name}
 
 Sets the name of the argument
 
@@ -5214,7 +5486,7 @@ $("#DiagramContent").ejDiagram({ nodes:nodes });
 {% endhighlight %}
 
 ## nodes.class.methods.arguments.type `String`
-{:#members:nodes-class.methods.arguments.type}
+{:#members:nodes-class-methods-arguments-type}
 
 Sets the type of the argument
 
@@ -5238,7 +5510,7 @@ $("#DiagramContent").ejDiagram({ nodes:nodes });
 {% endhighlight %}
 
 ## nodes.class.methods.type `String`
-{:#members:nodes-class.methods.type}
+{:#members:nodes-class-methods-type}
 
 Sets the return type of the method
 
@@ -5262,7 +5534,7 @@ $("#DiagramContent").ejDiagram({ nodes:nodes });
 {% endhighlight %}
 
 ### nodes.class.methods.scope `String`
-{:#members:nodes-class.methods.scope}
+{:#members:nodes-class-methods-scope}
 
 Sets the visibility of the method.
 
@@ -5401,6 +5673,10 @@ Enables or disables the default behaviors of the node.
         <tr>
             <td class="name">PointerEvents</td>
             <td class="description last">Enables the user interaction with the node</td>
+       </tr>
+       <tr>
+            <td class="name">CrispEdges</td>
+            <td class="description last">Enables contrast between clean edges for the node over rendering speed and geometric precision</td>
        </tr>
         <tr>
             <td class="name">Default</td>
@@ -5677,7 +5953,7 @@ $("#DiagramContent").ejDiagram({ nodes:nodes });
 {% endhighlight %}
 
 ### nodes.enumeration.name `String`
-{:#members:nodes-enumeration.name}
+{:#members:nodes-enumeration-name}
 
 Sets the name of the Enumeration
 
@@ -5701,7 +5977,7 @@ $("#DiagramContent").ejDiagram({ nodes:nodes });
 {% endhighlight %}
 
 ### nodes.enumeration.members `Array`
-{:#members:nodes-enumeration.members}
+{:#members:nodes-enumeration-members}
 
 Defines the collection of enumeration members
 
@@ -5725,7 +6001,7 @@ $("#DiagramContent").ejDiagram({ nodes:nodes });
 {% endhighlight %}
 
 ### nodes.enumeration.members.name `String`
-{:#members:nodes-enumeration.members.name}
+{:#members:nodes-enumeration-members-name}
 
 Sets the name of the enumeration member
 
@@ -5837,6 +6113,645 @@ $("#diagramcontent").ejDiagram({
       layout:{type:"hierarchicaltree"}
 });
 
+</script>
+
+{% endhighlight %}
+
+### nodes.expandIcon `object`
+{:#members:nodes-expandicon}
+
+Defines the state of the node is expanded or collapsed.
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var nodes;
+nodes=[{ name: "node1", width: 75, height:55, offsetX:50, offsetY:50, expandIcon:{ shape:"arrowdown", width:10, height:10 } }];
+$("#diagramcontent").ejDiagram({nodes:nodes});
+</script>
+
+{% endhighlight %}
+
+### nodes.expandIcon.borderColor `String`
+{:#members:nodes-expandicon-bordercolor}
+
+Sets the border color for expand icon of node
+
+#### Default Value:
+
+* "black"
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var nodes;
+nodes=[{ name: "node1", width: 75, height:55, offsetX:50, offsetY:50, expandIcon:{ shape:"arrowdown", width:10, height:10,borderColor: "red"} }];
+$("#diagramcontent").ejDiagram({nodes:nodes});
+</script>
+
+{% endhighlight %}
+
+### nodes.expandIcon.borderWidth `Number`
+{:#members:nodes-expandicon-borderwidth}
+
+Sets the border width for expand icon of node
+
+#### Default Value:
+
+* 1
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var nodes;
+nodes=[{ name: "node1", width: 75, height:55, offsetX:50, offsetY:50, 
+    expandIcon:{ shape:"arrowdown", width:10, height:10, borderWidth: "2"} }];
+$("#diagramcontent").ejDiagram({nodes:nodes});
+</script>
+
+{% endhighlight %}
+
+### nodes.expandIcon.fillColor `String`
+{:#members:nodes-expandicon-fillcolor}
+
+Sets the fill color for expand icon of node
+
+#### Default Value:
+
+* "white"
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var nodes;
+nodes=[{ name: "node1", width: 75, height:55, offsetX:50, offsetY:50, expandIcon:{ shape:"arrowdown", width:10, height:10,fillColor: "green"} }];
+$("#diagramcontent").ejDiagram({nodes:nodes});
+</script>
+
+{% endhighlight %}
+
+### nodes.expandIcon.height `Number`
+{:#members:nodes-expandicon-height}
+
+Defines the height for expand icon of node
+
+#### Default Value:
+
+* "15"
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var nodes;
+nodes=[{ name: "node1", width: 75, height:55, offsetX:50, offsetY:50, expandIcon:{ shape:"arrowdown", width:10, height:10} }];
+$("#diagramcontent").ejDiagram({nodes:nodes});
+</script>
+
+{% endhighlight %}
+
+### nodes.expandIcon.horizontalAlignment `enum`
+{:#members:nodes-expandicon-horizontalalignment}
+
+<ts name = "ej.datavisualization.Diagram.HorizontalAlignment"/>
+
+Sets the horizontal alignment of the icon.
+
+<table class="props">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+       </tr>
+   </thead>
+    <tbody>
+        <tr>
+            <td class="name">Left</td>
+            <td class="description last">Used to align the icon horizontally on left side of node</td>
+       </tr>
+        <tr>
+            <td class="name">Center</td>
+            <td class="description last">Used to align the icon horizontally on center of node</td>
+       </tr>
+        <tr>
+            <td class="name">Right</td>
+            <td class="description last">Used to align the icon horizontally on right side of node</td>
+       </tr>
+     </tbody>
+</table>
+
+#### Default Value:
+
+* ej.datavisualization.Diagram.HorizontalAlignment.Center
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var nodes;
+nodes=[{ name: "node1", width: 75, height:55, offsetX:50, offsetY:50, 
+expandIcon:{ shape:"arrowdown", width:10, height:10, 
+horizontalAlignment:ej.datavisualization.Diagram.HorizontalAlignment.Left }}]
+$("#diagramcontent").ejDiagram({nodes:nodes});
+</script>
+
+{% endhighlight %}
+
+### nodes.expandIcon.margin `Object`
+{:#members:nodes-expandicon-margin}
+
+To set the margin for the expand icon of node
+
+#### Default Value:
+
+* ej.datavisualization.Diagram.Margin()
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var nodes;
+nodes=[{ name: "node1", width: 75, height:55, offsetX:50, offsetY:50, 
+    expandIcon:{ shape:"arrowdown", width:10, height:10, margin:{ left: 5 }}}]
+      }];
+$("#diagramcontent").ejDiagram({nodes:nodes});
+</script>
+
+{% endhighlight %}
+
+### nodes.expandIcon.offset `object`
+{:#members:nodes-expandicon-offset}
+
+Sets the fraction/ratio(relative to node) that defines the position of the icon
+
+#### Default Value:
+
+* ej.datavisualization.Diagram.Point(0.5, 1)
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var nodes;
+nodes=[{ name: "node1", width: 75, height:55, offsetX:50, offsetY:50, 
+    expandIcon:{ shape:"arrowdown", width:10, height:10, offset:ej.datavisualization.Diagram.Point(0,0.5) }]
+      }];
+$("#diagramcontent").ejDiagram({nodes:nodes});
+
+</script>
+
+{% endhighlight %}
+
+### nodes.expandIcon.shape `enum`
+{:#members:nodes-expandicon-shape}
+
+<ts name = "ej.datavisualization.Diagram.IconShapes"/>
+
+Defines the shape of the expanded state of the node.
+
+<table class="props">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+       </tr>
+   </thead>
+    <tbody>
+        <tr>
+            <td class="name">None</td>
+            <td class="description last">Used to set expand icon shape as none</td>
+       </tr>
+        <tr>
+            <td class="name">Arrow</td>
+            <td class="description last">Used to set expand icon shape as Arrow(Up/Down)</td>
+       </tr>
+        <tr>
+            <td class="name">Plus</td>
+            <td class="description last">Used to set expand icon shape as plus</td>
+       </tr>
+        <tr>
+            <td class="name">Minus</td>
+            <td class="description last">Used to set expand icon shape as minus</td>
+       </tr>
+        <tr>
+            <td class="name">Path</td>
+            <td class="description last">Used to set expand icon shape as path</td>
+       </tr>
+        <tr>
+            <td class="name">Template</td>
+            <td class="description last">Used to set icon shape as template</td>
+       </tr>
+       <tr>
+            <td class="name">Image</td>
+            <td class="description last">Used to set icon shape as image</td>
+       </tr>
+   </tbody>
+</table>
+
+#### Default Value:
+
+* ej.datavisualization.Diagram.IconShapes.None
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+nodes=[{ name: "node1", width: 75, height:55, offsetX:50, offsetY:50, 
+expandIcon:{ shape:"arrowdown", width:10, height:10}
+}];
+$("#diagramcontent").ejDiagram({nodes : nodes});
+</script>
+
+{% endhighlight %}
+
+### nodes.expandIcon.verticalAlignment `enum`
+{:#members:nodes-expandicon-verticalalignment}
+
+<ts name = "ej.datavisualization.Diagram.VerticalAlignment"/>
+
+Sets the vertical alignment of the icon.
+
+<table class="props">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+       </tr>
+   </thead>
+    <tbody>
+        <tr>
+            <td class="name">Top</td>
+            <td class="description last">Set vertical alignment as top</td>
+       </tr>
+        <tr>
+            <td class="name">Middle</td>
+            <td class="description last">Set vertical alignment as middle</td>
+       </tr>
+        <tr>
+            <td class="name">Bottom</td>
+            <td class="description last">Set vertical alignment as bottom</td>
+       </tr>
+   </tbody>
+</table>
+
+#### Default Value:
+
+* ej.datavisualization.Diagram.VerticalAlignment.Center
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+<script>
+var nodes;
+nodes=[{ name: "node1", width: 75, height:55, offsetX:50, offsetY:50, 
+expandIcon:{ shape:"arrowdown", width:10, height:10, 
+    verticalAlignment:ej.datavisualization.Diagram.VerticalAlignment.Top }}];
+$("#diagramcontent").ejDiagram({ nodes:nodes });
+</script>
+
+{% endhighlight %}
+
+### nodes.collapseIcon `object`
+{:#members:nodes-collapseicon}
+
+Defines the state of the node is collapsed.
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var nodes;
+nodes=[{ name: "node1", width: 75, height:55, offsetX:50, offsetY:50, collapseIcon:{ shape:"arrowdown", width:10, height:10 } }];
+$("#diagramcontent").ejDiagram({nodes:nodes});
+</script>
+
+{% endhighlight %}
+
+### nodes.collapseIcon.borderColor `String`
+{:#members:nodes-collapseicon-bordercolor}
+
+Sets the border color for collapse icon of node
+
+#### Default Value:
+
+* "black"
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var nodes;
+nodes=[{ name: "node1", width: 75, height:55, offsetX:50, offsetY:50, collapseIcon:{ shape:"arrowdown", width:10, height:10,borderColor: "red"} }];
+$("#diagramcontent").ejDiagram({nodes:nodes});
+</script>
+
+{% endhighlight %}
+
+### nodes.collapseIcon.borderWidth `Number`
+{:#members:nodes-collapseicon-borderwidth}
+
+Sets the border width for collapse icon of node
+
+#### Default Value:
+
+* 1
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var nodes;
+nodes=[{ name: "node1", width: 75, height:55, offsetX:50, offsetY:50, 
+    collapseIcon:{ shape:"arrowdown", width:10, height:10, borderWidth: "2"} }];
+$("#diagramcontent").ejDiagram({nodes:nodes});
+</script>
+
+{% endhighlight %}
+
+### nodes.collapseIcon.fillColor `String`
+{:#members:nodes-collapseicon-fillcolor}
+
+Sets the fill color for collapse icon of node
+
+#### Default Value:
+
+* "white"
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var nodes;
+nodes=[{ name: "node1", width: 75, height:55, offsetX:50, offsetY:50, collapseIcon:{ shape:"arrowdown", width:10, height:10,fillColor: "green"} }];
+$("#diagramcontent").ejDiagram({nodes:nodes});
+</script>
+
+{% endhighlight %}
+
+### nodes.collapseIcon.height `Number`
+{:#members:nodes-collapseicon-height}
+
+Defines the height for collapse icon of node
+
+#### Default Value:
+
+* "15"
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var nodes;
+nodes=[{ name: "node1", width: 75, height:55, offsetX:50, offsetY:50, collapseIcon:{ shape:"arrowdown", width:10, height:10} }];
+$("#diagramcontent").ejDiagram({nodes:nodes});
+</script>
+
+{% endhighlight %}
+
+### nodes.collapseIcon.horizontalAlignment `enum`
+{:#members:nodes-collapseicon-horizontalalignment}
+
+<ts name = "ej.datavisualization.Diagram.HorizontalAlignment"/>
+
+Sets the horizontal alignment of the icon.
+
+<table class="props">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+       </tr>
+   </thead>
+    <tbody>
+        <tr>
+            <td class="name">Left</td>
+            <td class="description last">Used to align the icon horizontally on left side of node</td>
+       </tr>
+        <tr>
+            <td class="name">Center</td>
+            <td class="description last">Used to align the icon horizontally on center of node</td>
+       </tr>
+        <tr>
+            <td class="name">Right</td>
+            <td class="description last">Used to align the icon horizontally on right side of node</td>
+       </tr>
+     </tbody>
+</table>
+
+#### Default Value:
+
+* ej.datavisualization.Diagram.HorizontalAlignment.Center
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var nodes;
+nodes=[{ name: "node1", width: 75, height:55, offsetX:50, offsetY:50, 
+collapseIcon:{ shape:"arrowdown", width:10, height:10, 
+horizontalAlignment:ej.datavisualization.Diagram.HorizontalAlignment.Left }}]
+$("#diagramcontent").ejDiagram({nodes:nodes});
+</script>
+
+{% endhighlight %}
+
+### nodes.collapseIcon.margin `Object`
+{:#members:nodes-collapseicon-margin}
+
+To set the margin for the collapse icon of node
+
+#### Default Value:
+
+* ej.datavisualization.Diagram.Margin()
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var nodes;
+nodes=[{ name: "node1", width: 75, height:55, offsetX:50, offsetY:50, 
+    collapseIcon:{ shape:"arrowdown", width:10, height:10, margin:{ left: 5 }}}]
+      }];
+$("#diagramcontent").ejDiagram({nodes:nodes});
+</script>
+
+{% endhighlight %}
+
+### nodes.collapseIcon.offset `object`
+{:#members:nodes-collapseicon-offset}
+
+Sets the fraction/ratio(relative to node) that defines the position of the icon
+
+#### Default Value:
+
+* ej.datavisualization.Diagram.Point(0.5, 1)
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var nodes;
+nodes=[{ name: "node1", width: 75, height:55, offsetX:50, offsetY:50, 
+    collapseIcon:{ shape:"arrowdown", width:10, height:10, offset:ej.datavisualization.Diagram.Point(0,0.5) }]
+      }];
+$("#diagramcontent").ejDiagram({nodes:nodes});
+
+</script>
+
+{% endhighlight %}
+
+### nodes.collapseIcon.shape `enum`
+{:#members:nodes-collapseicon-shape}
+
+<ts name = "ej.datavisualization.Diagram.IconShapes"/>
+
+Defines the shape of the collapsed state of the node.
+
+<table class="props">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+       </tr>
+   </thead>
+    <tbody>
+        <tr>
+            <td class="name">None</td>
+            <td class="description last">Used to set collapse icon shape as none</td>
+       </tr>
+        <tr>
+            <td class="name">Arrow</td>
+            <td class="description last">Used to set collapse icon shape as Arrow(Up/Down)</td>
+       </tr>
+        <tr>
+            <td class="name">Plus</td>
+            <td class="description last">Used to set collapse icon shape as Plus</td>
+       </tr>
+        <tr>
+            <td class="name">Minus</td>
+            <td class="description last">Used to set collapse icon shape as Minus</td>
+       </tr>
+        <tr>
+            <td class="name">Path</td>
+            <td class="description last">Used to set collapse icon shape as path</td>
+       </tr>
+        <tr>
+            <td class="name">Template</td>
+            <td class="description last">Used to set icon shape as template</td>
+       </tr>
+       <tr>
+            <td class="name">Image</td>
+            <td class="description last">Used to set icon shape as image</td>
+       </tr>
+   </tbody>
+</table>
+
+#### Default Value:
+
+* ej.datavisualization.Diagram.IconShapes.None
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+nodes=[{ name: "node1", width: 75, height:55, offsetX:50, offsetY:50, 
+collapseIcon:{ shape:"arrowdown", width:10, height:10}
+}];
+$("#diagramcontent").ejDiagram({nodes : nodes});
+</script>
+
+{% endhighlight %}
+
+
+### nodes.collapseIcon.verticalAlignment `enum`
+{:#members:nodes-collapseicon-verticalalignment}
+
+<ts name = "ej.datavisualization.Diagram.VerticalAlignment"/>
+
+Sets the vertical alignment of the icon.
+
+<table class="props">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+       </tr>
+   </thead>
+    <tbody>
+        <tr>
+            <td class="name">Top</td>
+            <td class="description last">Set vertical alignment as top</td>
+       </tr>
+        <tr>
+            <td class="name">Middle</td>
+            <td class="description last">Set vertical alignment as middle</td>
+       </tr>
+        <tr>
+            <td class="name">Bottom</td>
+            <td class="description last">Set vertical alignment as bottom</td>
+       </tr>
+   </tbody>
+</table>
+
+#### Default Value:
+
+* ej.datavisualization.Diagram.VerticalAlignment.Center
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+<script>
+var nodes;
+nodes=[{ name: "node1", width: 75, height:55, offsetX:50, offsetY:50, 
+collapseIcon:{ shape:"arrowdown", width:10, height:10, 
+    verticalAlignment:ej.datavisualization.Diagram.VerticalAlignment.Top }}];
+$("#diagramcontent").ejDiagram({ nodes:nodes });
 </script>
 
 {% endhighlight %}
@@ -8895,6 +9810,10 @@ Defines whether connections can be created with the port
             <td class="name">Connect</td>
             <td class="description last">Enables connections with connector</td>
        </tr>
+       <tr>
+            <td class="name">ConnectOnDrag</td>
+            <td class="description last">Enables to create the connection when mouse hover on the port.</td>
+       </tr>
    </tbody>
 </table>
 
@@ -9682,6 +10601,33 @@ var nodes;
 nodes=[{ name: "node1", width: 100, height:100, offsetX:50, offsetY:50, 
 type:"bpmn", shape:"activity", activity:"subprocess", 
 subProcess:{ loop: ej.datavisualization.Diagram.BPMNLoops.ParallelMultiInstance} }];
+$("#diagramcontent").ejDiagram({nodes:nodes});
+</script>
+
+{% endhighlight %}
+
+### nodes.subProcess.Processes `Array`
+{:#members:nodes-subprocess-processes}
+
+<ts ref = "ej.datavisualization.Diagram.BPMNSubProcess"/>
+
+Defines the children values for BPMNsubprocess 
+
+#### Default Value:
+
+* []
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var nodes;
+nodes=[{ name: "node1", width: 100, height:100, offsetX:50, offsetY:50, 
+		type:"bpmn", shape:"activity", activity:"subprocess", 
+            subProcess: { type: "event",  trigger: "conditional", offset: { x: 0.75, y: 1 } }
+            }];
 $("#diagramcontent").ejDiagram({nodes:nodes});
 </script>
 
@@ -12427,6 +13373,23 @@ diagram.clear();
 
 {% endhighlight %}
 
+### clearHistory()
+{:#methods:clearhistory}
+
+Clears the actions which is recorded to perform undo/redo operation in the diagram.
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var diagram=$("#diagramcontent").ejDiagram("instance");
+diagram.clearHistory();
+</script>
+
+{% endhighlight %}
+
 ### clearSelection()
 {:#methods:clearselection}
 
@@ -13677,6 +14640,11 @@ Triggers When auto scroll is changed
 			<td class="type">string</td>
 			<td class="description last">Returns the delay between subsequent auto scrolls</td>
 		</tr>
+        <tr>
+			<td class="name">diagramId</td>
+			<td class="type">string</td>
+			<td class="description last">parameter returns the id of the diagram</td>
+		</tr>
 	</tbody>
 </table>
 
@@ -13735,6 +14703,11 @@ Triggers when a node, connector or diagram is clicked
 			<td class="type">object</td>
 			<td class="description last">parameter returns the actual click event arguments that explains which button is clicked</td>
 		</tr>
+        <tr>
+			<td class="name">diagramId</td>
+			<td class="type">string</td>
+			<td class="description last">parameter returns the id of the diagram</td>
+		</tr>
 	</tbody>
 </table>
 
@@ -13783,6 +14756,11 @@ Triggers when the connection is changed
 			<td class="type">boolean</td>
 			<td class="description last">parameter defines whether to cancel the change or not</td>
 		</tr>
+        <tr>
+			<td class="name">diagramId</td>
+			<td class="type">string</td>
+			<td class="description last">parameter returns the id of the diagram</td>
+		</tr>
 	</tbody>
 </table>
 
@@ -13825,6 +14803,16 @@ Triggers when the connector collection is changed
 			<td class="name">cancel</td>
 			<td class="type">boolean</td>
 			<td class="description last">parameter defines whether to cancel the collection change or not</td>
+		</tr>
+        <tr>
+			<td class="name">state</td>
+			<td class="type">string</td>
+			<td class="description last">triggers before and after adding the connector in the diagram which can be differentiated through `state` argument. We can cancel the event only before adding the connector.</td>
+		</tr>
+        <tr>
+			<td class="name">diagramId</td>
+			<td class="type">string</td>
+			<td class="description last">parameter returns the id of the diagram</td>
 		</tr>
 	</tbody>
 </table>
@@ -13884,6 +14872,11 @@ Triggers when the connectors' source point is changed
 			<td class="type">boolean</td>
 			<td class="description last">parameter defines whether to cancel the change or not</td>
 		</tr>
+        <tr>
+			<td class="name">diagramId</td>
+			<td class="type">string</td>
+			<td class="description last">parameter returns the id of the diagram</td>
+		</tr>
 	</tbody>
 </table>
 
@@ -13942,6 +14935,11 @@ Triggers when the connectors' target point is changed
 			<td class="type">boolean</td>
 			<td class="description last">parameter defines whether to cancel the change or not</td>
 		</tr>
+        <tr>
+			<td class="name">diagramId</td>
+			<td class="type">string</td>
+			<td class="description last">parameter returns the id of the diagram</td>
+		</tr>
 	</tbody>
 </table>
 
@@ -13984,6 +14982,11 @@ Triggers before opening the context menu
 			<td class="name">target</td>
 			<td class="type">object</td>
 			<td class="description last">parameter returns the object that was clicked</td>
+		</tr>
+        <tr>
+			<td class="name">diagramId</td>
+			<td class="type">string</td>
+			<td class="description last">parameter returns the id of the diagram</td>
 		</tr>
 	</tbody>
 </table>
@@ -14043,6 +15046,11 @@ Triggers when a context menu item is clicked
 			<td class="type">boolean</td>
 			<td class="description last">parameter defines whether to execute the click event or not</td>
 		</tr>
+        <tr>
+			<td class="name">diagramId</td>
+			<td class="type">string</td>
+			<td class="description last">parameter returns the id of the diagram</td>
+		</tr>
 	</tbody>
 </table>
 
@@ -14080,6 +15088,11 @@ Triggers when a node, connector or diagram model is clicked twice
 			<td class="name">element</td>
 			<td class="type">object</td>
 			<td class="description last">parameter returns the selected object</td>
+		</tr>
+        <tr>
+			<td class="name">diagramId</td>
+			<td class="type">string</td>
+			<td class="description last">parameter returns the id of the diagram</td>
 		</tr>
 	</tbody>
 </table>
@@ -14134,6 +15147,11 @@ Triggers while dragging the elements in diagram
 			<td class="type">boolean</td>
 			<td class="description last">parameter returns whether or not to cancel the drag event</td>
 		</tr>
+        <tr>
+			<td class="name">diagramId</td>
+			<td class="type">string</td>
+			<td class="description last">parameter returns the id of the diagram</td>
+		</tr>
 	</tbody>
 </table>
 
@@ -14172,6 +15190,11 @@ Triggers when a symbol is dragged into diagram from symbol palette
 			<td class="type">boolean</td>
 			<td class="description last">parameter returns whether to add or remove the symbol from diagram</td>
 		</tr>
+        <tr>
+			<td class="name">diagramId</td>
+			<td class="type">string</td>
+			<td class="description last">parameter returns the id of the diagram</td>
+		</tr>
 	</tbody>
 </table>
 
@@ -14204,6 +15227,11 @@ Triggers when a symbol is dragged outside of the diagram.
 			<td class="name">element</td>
 			<td class="type">object</td>
 			<td class="description last">parameter returns the node or connector that is dragged outside of the diagram</td>
+		</tr>
+        <tr>
+			<td class="name">diagramId</td>
+			<td class="type">string</td>
+			<td class="description last">parameter returns the id of the diagram</td>
 		</tr>
 	</tbody>
 </table>
@@ -14263,6 +15291,11 @@ Triggers when a symbol is dragged over diagram
 			<td class="type">boolean</td>
 			<td class="description last">parameter returns whether or not to cancel the dragOver event</td>
 		</tr>
+        <tr>
+			<td class="name">diagramId</td>
+			<td class="type">string</td>
+			<td class="description last">parameter returns the id of the diagram</td>
+		</tr>
 	</tbody>
 </table>
 
@@ -14316,6 +15349,11 @@ Triggers when a symbol is dragged and dropped from symbol palette to drawing are
 			<td class="type">String</td>
 			<td class="description last">parameter returns the enum which defines the type of the source</td>
 		</tr>
+        <tr>
+			<td class="name">diagramId</td>
+			<td class="type">string</td>
+			<td class="description last">parameter returns the id of the diagram</td>
+		</tr>
 	</tbody>
 </table>
 
@@ -14326,6 +15364,21 @@ Triggers when a symbol is dragged and dropped from symbol palette to drawing are
 // drop event for diagram
 $("#diagramcontent").ejDiagram({
 drop:function (args) {}
+});
+
+{% endhighlight %}
+
+### editorFocusChange
+{:#events:editorfocuschange}
+Triggers when editor got focus at the time of nodeslabel or text node editing.
+
+#### Example
+
+{% highlight html %}
+
+// editorFocusChange event for diagram
+$("#diagramcontent").ejDiagram({
+editorFocusChange:function (args) {}
 });
 
 {% endhighlight %}
@@ -14364,6 +15417,11 @@ Triggers when a child is added to or removed from a group
 			<td class="type">string</td>
 			<td class="description last">parameter returns the cause of group change("group", unGroup")</td>
 		</tr>
+        <tr>
+			<td class="name">diagramId</td>
+			<td class="type">string</td>
+			<td class="description last">parameter returns the id of the diagram</td>
+		</tr>
 	</tbody>
 </table>
 
@@ -14401,6 +15459,11 @@ Triggers when a change is reverted or restored(undo/redo)
 			<td class="name">Source</td>
 			<td class="type">Array</td>			 
 			<td class="description">A collection of objects that are changed in the last undo/redo</td>
+		</tr>
+        <tr>
+			<td class="name">diagramId</td>
+			<td class="type">string</td>
+			<td class="description last">parameter returns the id of the diagram</td>
 		</tr>		 
 	</tbody>
 </table>
@@ -14439,6 +15502,11 @@ Triggers when a change is reverted or restored(undo/redo)
 			<td class="name">deletedItems</td>
 			<td class="type">Array</td>			 
 			<td class="description">Returns the items that are deleted from model</td>
+		</tr>
+        <tr>
+			<td class="name">diagramId</td>
+			<td class="type">string</td>
+			<td class="description last">parameter returns the id of the diagram</td>
 		</tr>		 
 	</tbody>
 </table>
@@ -14488,6 +15556,11 @@ Triggers when a diagram element is clicked
 			<td class="type">object</td>
 			<td class="description last">parameter returns the actual click event arguments that explains which button is clicked</td>
 		</tr>
+        <tr>
+			<td class="name">diagramId</td>
+			<td class="type">string</td>
+			<td class="description last">parameter returns the id of the diagram</td>
+		</tr>
 	</tbody>
 </table>
 
@@ -14530,6 +15603,11 @@ Triggers when mouse enters a node/connector
 			<td class="name">target</td>
 			<td class="type">object</td>
 			<td class="description last">parameter returns the target object over which the selected object is dragged</td>
+		</tr>
+        <tr>
+			<td class="name">diagramId</td>
+			<td class="type">string</td>
+			<td class="description last">parameter returns the id of the diagram</td>
 		</tr>
 	</tbody>
 </table>
@@ -14574,6 +15652,11 @@ Triggers when mouse leaves node/connector
 			<td class="type">object</td>
 			<td class="description last">parameter returns the target object over which the selected object is dragged</td>
 		</tr>
+        <tr>
+			<td class="name">diagramId</td>
+			<td class="type">string</td>
+			<td class="description last">parameter returns the id of the diagram</td>
+		</tr>
 	</tbody>
 </table>
 
@@ -14617,6 +15700,11 @@ Triggers when mouse hovers over a node/connector
 			<td class="type">object</td>
 			<td class="description last">parameter returns the object over which the element is being dragged.</td>
 		</tr>
+        <tr>
+			<td class="name">diagramId</td>
+			<td class="type">string</td>
+			<td class="description last">parameter returns the id of the diagram</td>
+		</tr>
 	</tbody>
 </table>
 
@@ -14659,6 +15747,16 @@ Triggers when node collection is changed
 			<td class="name">cancel</td>
 			<td class="type">boolean</td>
 			<td class="description last">parameter defines whether to cancel the collection change or not</td>
+		</tr>
+        	<tr>
+			<td class="name">state</td>
+			<td class="type">string</td>
+			<td class="description last">triggers before and after adding the node in the diagram which can be differentiated through `state` argument. We can cancel the event only before adding the node</td>
+		</tr>
+        <tr>
+			<td class="name">diagramId</td>
+			<td class="type">string</td>
+			<td class="description last">parameter returns the id of the diagram</td>
 		</tr>
 	</tbody>
 </table>
@@ -14713,6 +15811,11 @@ Triggers when the node properties(x, y,width and height alone) are changed using
 			<td class="type">string</td>
 			<td class="description last">parameter returns the name of the property that is changed</td>
 		</tr>
+        <tr>
+			<td class="name">diagramId</td>
+			<td class="type">string</td>
+			<td class="description last">parameter returns the id of the diagram</td>
+		</tr>
 	</tbody>
 </table>
 
@@ -14761,6 +15864,11 @@ Triggers when the diagram elements are rotated
 			<td class="type">boolean</td>
 			<td class="description last">parameter to specify whether or not to cancel the event</td>
 		</tr>
+        <tr>
+			<td class="name">diagramId</td>
+			<td class="type">string</td>
+			<td class="description last">parameter returns the id of the diagram</td>
+		</tr>
 	</tbody>
 </table>
 
@@ -14798,6 +15906,11 @@ Triggers when the diagram is zoomed or panned
 			<td class="name">oldValues</td>
 			<td class="type">object</td>
 			<td class="description last">parameter returns the previous zoom value, horizontal and vertical scroll offsets.</td>
+		</tr>
+        <tr>
+			<td class="name">diagramId</td>
+			<td class="type">string</td>
+			<td class="description last">parameter returns the id of the diagram</td>
 		</tr>
 	</tbody>
 </table>
@@ -14846,6 +15959,11 @@ Triggers when a connector segment is edited
 			<td class="name">cancel</td>
 			<td class="type">boolean</td>
 			<td class="description last">parameter to specify whether or not to cancel the event</td>
+		</tr>
+        <tr>
+			<td class="name">diagramId</td>
+			<td class="type">string</td>
+			<td class="description last">parameter returns the id of the diagram</td>
 		</tr>
 	</tbody>
 </table>
@@ -14905,6 +16023,16 @@ Triggers when the selection is changed in diagram
 			<td class="type">boolean</td>
 			<td class="description last">parameter to specify whether or not to cancel the selection change event</td>
 		</tr>
+        <tr>
+			<td class="name">state</td>
+			<td class="type">string</td>
+			<td class="description last">triggers before and after adding the selection to the object in the diagram which can be differentiated through `state` argument. We can cancel the event only before the selection of the object.</td>
+		</tr>
+        <tr>
+			<td class="name">diagramId</td>
+			<td class="type">string</td>
+			<td class="description last">parameter returns the id of the diagram</td>
+		</tr>
 	</tbody>
 </table>
 
@@ -14963,6 +16091,11 @@ Triggers when a node is resized
 			<td class="type">object</td>
 			<td class="description last">parameter returns the difference between new and old value</td>
 		</tr>
+        <tr>
+			<td class="name">diagramId</td>
+			<td class="type">string</td>
+			<td class="description last">parameter returns the id of the diagram</td>
+		</tr>
 	</tbody>
 </table>
 
@@ -15006,6 +16139,11 @@ Triggers when label editing is ended
 			<td class="type">string</td>
 			<td class="description last">parameter returns the keyCode of the key entered</td>
 		</tr>
+        <tr>
+			<td class="name">diagramId</td>
+			<td class="type">string</td>
+			<td class="description last">parameter returns the id of the diagram</td>
+		</tr>
 	</tbody>
 </table>
 
@@ -15043,6 +16181,11 @@ Triggered when the diagram is rendered completely.
 			<td class="name">type</td>
 			<td class="type">string</td>
 			<td class="description last">Returns the name of the event</td>
+		</tr>
+        <tr>
+			<td class="name">diagramId</td>
+			<td class="type">string</td>
+			<td class="description last">parameter returns the id of the diagram</td>
 		</tr>
 	</tbody>
 </table>

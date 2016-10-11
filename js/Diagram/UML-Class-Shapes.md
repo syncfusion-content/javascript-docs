@@ -402,6 +402,7 @@ Multiplicity is a definition of an inclusive interval of non-negative integers t
 * OneToOne
 * ManyToOne
 * OneToMany
+* ManyToMany
 
 By default the multiplicity will be considered as "OneToOne". You can customize it using the `multiplicity` property of connector.
 
@@ -441,7 +442,18 @@ The following code example illustrates how to customize the multiplicity.
                   type: "umlclassifier",
                   relationship: ej.datavisualization.Diagram.ClassifierShapes.Dependency,
                   //Sets the type of multiplicity
-                  multiplicity:"onetomany"
+                  multiplicity:{
+                  //Sets the type of multiplicity
+                  type:"onetomany",
+                  //Sets the source label
+                  source: { 
+                  //Sets the optionality/cardinality for the connector
+                  optional: true, 
+                  //Specifies interval for number of instances of described element
+                  lowerBounds: 89, 
+                  upperBounds: 67 }, 
+                  //Sets the target label
+                  target: { optional: true, lowerBounds: 78, upperBounds: 90 }}
               }
 	}]
 });	

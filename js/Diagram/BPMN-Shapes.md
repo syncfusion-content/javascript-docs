@@ -371,6 +371,44 @@ $("#diagram").ejDiagram({
 
 ![](/js/Diagram/Shapes_images/Shapes_img118.png)
 
+#### Processes 
+
+Processes is a array collection that defines the children values for BPMN subprocess.
+
+{% highlight javascript %}
+<div id="diagram"></div>
+<script type="text/javascript">
+var nodes = [{
+        name: "group", offsetX: 500, offsetY: 300, width: 300, height: 200,
+        type: "bpmn", shape: ej.datavisualization.Diagram.BPMNShapes.Group,
+        children: [{
+            name: "node", marginLeft: 15, marginTop: 15, width: 250, height: 150,
+            type: "bpmn", shape: ej.datavisualization.Diagram.BPMNShapes.Activity, activity: ej.datavisualization.Diagram.BPMNActivity.SubProcess,
+            subProcess: {
+                collapsed: false,
+                Processes: [{
+                    name: "subnode01", marginLeft: 20, marginTop: 50, width: 30, height: 30,
+                    type: "bpmn", shape: ej.datavisualization.Diagram.BPMNShapes.Event
+                },
+                    {
+                        name: "subnode02", marginLeft: 90, marginTop: 25, width: 100, height: 80,
+                        type: "bpmn", shape: ej.datavisualization.Diagram.BPMNShapes.Activity, activity: ej.datavisualization.Diagram.BPMNActivity.Task, task: { type: "user" }, annotation: { text: "Review Customer Rating", length: 125, angle: 24, width: 100, height: 30 }
+                    }]
+            }
+        }]
+    }];
+var connectors = [{
+        name: "connector1", sourceNode: "subnode01", targetNode: "subnode02"
+    }];
+
+$("#diagram").ejDiagram({
+        connectors: connectors,
+        nodes: nodes});
+</script>
+{% endhighlight %}
+
+![](/js/Diagram/Shapes_images/Shapes_img151.png)
+
 #### Loop
 
 Loop is a task that is internally being looped. The `loop` property of task allows you to define the type of loop. The default value for `loop` is "none". 
