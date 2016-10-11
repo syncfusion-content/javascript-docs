@@ -850,11 +850,7 @@ Enables or disables the behaviors of connectors.
        </tr>
        <tr>
             <td class="name">CrispEdges</td>
-            <td class="description last">Enables the sharp edges to the connector</td>
-       </tr>
-       <tr>
-            <td class="name">InheritCrispEdges</td>
-            <td class="description last">Enables the sharp edges to the connector</td>
+            <td class="description last">Enables the contrast between clean edges of connector over rendering speed and geometric precision</td>
        </tr>
         <tr>
             <td class="name">Default</td>
@@ -2605,7 +2601,7 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 ### connectors.shape.multiplicity.source.optional `boolean`
 {:#members:connectors-shape-multiplicity-source-optional}
 
-Defines the source label to connector. Applicable, if the connector is of type "BPMN"
+Defines the source label to connector. Applicable, if the connector is of type "UML"
 
 <table class="params">
 	<thead>
@@ -2667,7 +2663,7 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 ### connectors.shape.multiplicity.source.lowerBounds `Number`
 {:#members:connectors-shape-multiplicity-source-lowerBounds}
 
-Defines the source label to connector. Applicable, if the connector is of type "BPMN"
+Defines the source label to connector. Applicable, if the connector is of type "UML"
 
 #### Default Value:
 
@@ -2692,10 +2688,10 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 
 {% endhighlight %}
 
-### connectors.shape.multiplicity.source.upperBounds `boolean`
+### connectors.shape.multiplicity.source.upperBounds `Number`
 {:#members:connectors-shape-multiplicity-source-upperBounds}
 
-Defines the source label to connector. Applicable, if the connector is of type "BPMN"
+Defines the source label to connector. Applicable, if the connector is of type "UML"
 
 #### Default Value:
 
@@ -2721,7 +2717,7 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 ### connectors.shape.multiplicity.target.optional `boolean`
 {:#members:connectors-shape-multiplicity-target-optional}
 
-Defines the target label to connector. Applicable, if the connector is of type "BPMN"
+Defines the target label to connector. Applicable, if the connector is of type "UML"
 
 #### Default Value:
 
@@ -2746,7 +2742,7 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 ### connectors.shape.multiplicity.target.lowerBounds `Number`
 {:#members:connectors-shape-multiplicity-target-lowerBounds}
 
-Defines the target label to connector. Applicable, if the connector is of type "BPMN"
+Defines the target label to connector. Applicable, if the connector is of type "UML"
 
 #### Default Value:
 
@@ -2767,10 +2763,10 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 
 {% endhighlight %}
 
-### connectors.shape.multiplicity.target.upperBounds `boolean`
+### connectors.shape.multiplicity.target.upperBounds `Number`
 {:#members:connectors-shape-multiplicity-target-upperBounds}
 
-Defines the target label to connector. Applicable, if the connector is of type "BPMN"
+Defines the target label to connector. Applicable, if the connector is of type "UML"
 
 #### Default Value:
 
@@ -4218,10 +4214,10 @@ function customUndoRedo(args) {
 
 {% endhighlight %}
 
-### historyManager.redoStack `function`
+### historyManager.redoStack `Number`
 {:#members:historymanager-redostack}
 
-A method that takes a history entry as argument and returns the number of redo operation to be stored on the history manager
+ redoStack property takes a history entry as argument and returns the number of redo operation to be stored on the history manager
 
 #### Default Value:
 
@@ -4241,10 +4237,10 @@ diagram.model.historyManager.redoStack();
 
 {% endhighlight %}
 
-### historyManager.stackLimit `function`
+### historyManager.stackLimit `Number`
 {:#members:historymanager-stacklimit}
 
-A method that takes a history entry as argument and returns the number of actions to be stored on the history manager
+stackLimit property takes a history entry as argument and returns the number of actions to be stored on the history manager
 
 #### Default Value:
 
@@ -4334,7 +4330,7 @@ function customUndoRedo(args) {
 ### historyManager.undoStack `function`
 {:#members:historymanager-undostack}
 
-A method that takes a history entry as argument and returns the number of undo operation to be stored on the history manager
+undoStack property takes a history entry as argument and returns the number of undo operation to be stored on the history manager
 
 #### Default Value:
 
@@ -5580,11 +5576,7 @@ Enables or disables the default behaviors of the node.
        </tr>
        <tr>
             <td class="name">CrispEdges</td>
-            <td class="description last">Enables the sharp edges for the node</td>
-       </tr>
-       <tr>
-            <td class="name">InheritCrispEdges</td>
-            <td class="description last">Enables the sharp edges for the node</td>
+            <td class="description last">Enables contrast between clean edges for the node over rendering speed and geometric precision</td>
        </tr>
         <tr>
             <td class="name">Default</td>
@@ -10450,7 +10442,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 <ts ref = "ej.datavisualization.Diagram.BPMNSubProcess"/>
 
-Defines the children values for subprocess 
+Defines the children values for BPMNsubprocess 
 
 #### Default Value:
 
@@ -13156,7 +13148,7 @@ diagram.clear();
 ### clearHistory()
 {:#methods:clearhistory}
 
-Remove all the history from diagram
+Clears the actions performed in diagram
 
 #### Example
 
@@ -14587,7 +14579,7 @@ Triggers when the connector collection is changed
         <tr>
 			<td class="name">state</td>
 			<td class="type">string</td>
-			<td class="description last">parameter defines whether the state of connector collection is changing or changed</td>
+			<td class="description last">triggers before and after adding the connector in the diagram,also defines whether the state of connector collection is changing or changed.</td>
 		</tr>
         <tr>
 			<td class="name">diagramId</td>
@@ -15150,7 +15142,7 @@ drop:function (args) {}
 
 ### editorFocusChange
 {:#events:editorfocuschange}
-Cursor will be positioned to end of the selected editor string when event is triggered
+Triggers When labels of node or text is edited and the position of the cursor is at the end of the selected editor string
 
 #### Example
 
@@ -15531,7 +15523,7 @@ Triggers when node collection is changed
         	<tr>
 			<td class="name">state</td>
 			<td class="type">string</td>
-			<td class="description last">parameter defines whether the state of node collection is changing or changed</td>
+			<td class="description last">triggers before and after adding the node in the diagram,also defines whether the state of connector collection is changing or changed.</td>
 		</tr>
         <tr>
 			<td class="name">diagramId</td>
@@ -15806,7 +15798,7 @@ Triggers when the selection is changed in diagram
         <tr>
 			<td class="name">state</td>
 			<td class="type">string</td>
-			<td class="description last">parameter returns the collection of nodes and connectors state is changing or changed</td>
+			<td class="description last">triggers before and after adding the connector/node in the diagram,also defines whether the state of connector/node collection is changing or changed.</td>
 		</tr>
         <tr>
 			<td class="name">diagramId</td>

@@ -373,7 +373,7 @@ $("#diagram").ejDiagram({
 
 #### Processes 
 
-Processes is a array collection that defines the children values for subprocess.
+Processes is a array collection that defines the children values for BPMN subprocess.
 
 {% highlight javascript %}
 <div id="diagram"></div>
