@@ -5557,6 +5557,326 @@ $("#DiagramContent").ejDiagram({ nodes:nodes });
 
 {% endhighlight %}
 
+### nodes.collapseIcon `object`
+{:#members:nodes-collapseicon}
+
+Defines the state of the node is collapsed.
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var nodes;
+nodes=[{ name: "node1", width: 75, height:55, offsetX:50, offsetY:50, collapseIcon:{ shape:"arrowdown", width:10, height:10 } }];
+$("#diagramcontent").ejDiagram({nodes:nodes});
+</script>
+
+{% endhighlight %}
+
+### nodes.collapseIcon.borderColor `String`
+{:#members:nodes-collapseicon-bordercolor}
+
+Sets the border color for collapse icon of node
+
+#### Default Value:
+
+* "black"
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var nodes;
+nodes=[{ name: "node1", width: 75, height:55, offsetX:50, offsetY:50, collapseIcon:{ shape:"arrowdown", width:10, height:10,borderColor: "red"} }];
+$("#diagramcontent").ejDiagram({nodes:nodes});
+</script>
+
+{% endhighlight %}
+
+### nodes.collapseIcon.borderWidth `Number`
+{:#members:nodes-collapseicon-borderwidth}
+
+Sets the border width for collapse icon of node
+
+#### Default Value:
+
+* 1
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var nodes;
+nodes=[{ name: "node1", width: 75, height:55, offsetX:50, offsetY:50, 
+    collapseIcon:{ shape:"arrowdown", width:10, height:10, borderWidth: "2"} }];
+$("#diagramcontent").ejDiagram({nodes:nodes});
+</script>
+
+{% endhighlight %}
+
+### nodes.collapseIcon.fillColor `String`
+{:#members:nodes-collapseicon-fillcolor}
+
+Sets the fill color for collapse icon of node
+
+#### Default Value:
+
+* "white"
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var nodes;
+nodes=[{ name: "node1", width: 75, height:55, offsetX:50, offsetY:50, collapseIcon:{ shape:"arrowdown", width:10, height:10,fillColor: "green"} }];
+$("#diagramcontent").ejDiagram({nodes:nodes});
+</script>
+
+{% endhighlight %}
+
+### nodes.collapseIcon.height `Number`
+{:#members:nodes-collapseicon-height}
+
+Defines the height for collapse icon of node
+
+#### Default Value:
+
+* "15"
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var nodes;
+nodes=[{ name: "node1", width: 75, height:55, offsetX:50, offsetY:50, collapseIcon:{ shape:"arrowdown", width:10, height:10} }];
+$("#diagramcontent").ejDiagram({nodes:nodes});
+</script>
+
+{% endhighlight %}
+
+### nodes.collapseIcon.horizontalAlignment `enum`
+{:#members:nodes-collapseicon-horizontalalignment}
+
+<ts name = "ej.datavisualization.Diagram.HorizontalAlignment"/>
+
+Sets the horizontal alignment of the icon.
+
+<table class="props">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+       </tr>
+   </thead>
+    <tbody>
+        <tr>
+            <td class="name">Left</td>
+            <td class="description last">Used to align the icon horizontally on left side of node</td>
+       </tr>
+        <tr>
+            <td class="name">Center</td>
+            <td class="description last">Used to align the icon horizontally on center of node</td>
+       </tr>
+        <tr>
+            <td class="name">Right</td>
+            <td class="description last">Used to align the icon horizontally on right side of node</td>
+       </tr>
+     </tbody>
+</table>
+
+#### Default Value:
+
+* ej.datavisualization.Diagram.HorizontalAlignment.Center
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var nodes;
+nodes=[{ name: "node1", width: 75, height:55, offsetX:50, offsetY:50, 
+collapseIcon:{ shape:"arrowdown", width:10, height:10, 
+horizontalAlignment:ej.datavisualization.Diagram.HorizontalAlignment.Left }}]
+$("#diagramcontent").ejDiagram({nodes:nodes});
+</script>
+
+{% endhighlight %}
+
+### nodes.collapseIcon.margin `Object`
+{:#members:nodes-collapseicon-margin}
+
+To set the margin for the collapse icon of node
+
+#### Default Value:
+
+* ej.datavisualization.Diagram.Margin()
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var nodes;
+nodes=[{ name: "node1", width: 75, height:55, offsetX:50, offsetY:50, 
+    collapseIcon:{ shape:"arrowdown", width:10, height:10, margin:{ left: 5 }}}]
+      }];
+$("#diagramcontent").ejDiagram({nodes:nodes});
+</script>
+
+{% endhighlight %}
+
+### nodes.collapseIcon.offset `object`
+{:#members:nodes-collapseicon-offset}
+
+Sets the fraction/ratio(relative to node) that defines the position of the icon
+
+#### Default Value:
+
+* ej.datavisualization.Diagram.Point(0.5, 1)
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var nodes;
+nodes=[{ name: "node1", width: 75, height:55, offsetX:50, offsetY:50, 
+    collapseIcon:{ shape:"arrowdown", width:10, height:10, offset:ej.datavisualization.Diagram.Point(0,0.5) }]
+      }];
+$("#diagramcontent").ejDiagram({nodes:nodes});
+
+</script>
+
+{% endhighlight %}
+
+### nodes.collapseIcon.shape `enum`
+{:#members:nodes-collapseicon-shape}
+
+<ts name = "ej.datavisualization.Diagram.IconShapes"/>
+
+Defines the shape of the collapsed state of the node.
+
+<table class="props">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+       </tr>
+   </thead>
+    <tbody>
+        <tr>
+            <td class="name">None</td>
+            <td class="description last">Used to set collapse icon shape as none</td>
+       </tr>
+        <tr>
+            <td class="name">Arrow</td>
+            <td class="description last">Used to set collapse icon shape as Arrow(Up/Down)</td>
+       </tr>
+        <tr>
+            <td class="name">Plus</td>
+            <td class="description last">Used to set collapse icon shape as Plus</td>
+       </tr>
+        <tr>
+            <td class="name">Minus</td>
+            <td class="description last">Used to set collapse icon shape as Minus</td>
+       </tr>
+        <tr>
+            <td class="name">Path</td>
+            <td class="description last">Used to set collapse icon shape as path</td>
+       </tr>
+        <tr>
+            <td class="name">Template</td>
+            <td class="description last">Used to set icon shape as template</td>
+       </tr>
+       <tr>
+            <td class="name">Image</td>
+            <td class="description last">Used to set icon shape as image</td>
+       </tr>
+   </tbody>
+</table>
+
+#### Default Value:
+
+* ej.datavisualization.Diagram.IconShapes.None
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+nodes=[{ name: "node1", width: 75, height:55, offsetX:50, offsetY:50, 
+collapseIcon:{ shape:"arrowdown", width:10, height:10}
+}];
+$("#diagramcontent").ejDiagram({nodes : nodes});
+</script>
+
+{% endhighlight %}
+
+
+### nodes.collapseIcon.verticalAlignment `enum`
+{:#members:nodes-collapseicon-verticalalignment}
+
+<ts name = "ej.datavisualization.Diagram.VerticalAlignment"/>
+
+Sets the vertical alignment of the icon.
+
+<table class="props">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+       </tr>
+   </thead>
+    <tbody>
+        <tr>
+            <td class="name">Top</td>
+            <td class="description last">Set vertical alignment as top</td>
+       </tr>
+        <tr>
+            <td class="name">Middle</td>
+            <td class="description last">Set vertical alignment as middle</td>
+       </tr>
+        <tr>
+            <td class="name">Bottom</td>
+            <td class="description last">Set vertical alignment as bottom</td>
+       </tr>
+   </tbody>
+</table>
+
+#### Default Value:
+
+* ej.datavisualization.Diagram.VerticalAlignment.Center
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+<script>
+var nodes;
+nodes=[{ name: "node1", width: 75, height:55, offsetX:50, offsetY:50, 
+collapseIcon:{ shape:"arrowdown", width:10, height:10, 
+    verticalAlignment:ej.datavisualization.Diagram.VerticalAlignment.Top }}];
+$("#diagramcontent").ejDiagram({ nodes:nodes });
+</script>
+
+{% endhighlight %}
+
 ### nodes.connectorPadding `Number`
 {:#members:nodes-connectorpadding}
 
@@ -6430,326 +6750,6 @@ Sets the vertical alignment of the icon.
 var nodes;
 nodes=[{ name: "node1", width: 75, height:55, offsetX:50, offsetY:50, 
 expandIcon:{ shape:"arrowdown", width:10, height:10, 
-    verticalAlignment:ej.datavisualization.Diagram.VerticalAlignment.Top }}];
-$("#diagramcontent").ejDiagram({ nodes:nodes });
-</script>
-
-{% endhighlight %}
-
-### nodes.collapseIcon `object`
-{:#members:nodes-collapseicon}
-
-Defines the state of the node is collapsed.
-
-#### Example
-
-{% highlight html %}
-
-<div id="diagramcontent"></div>
-<script>
-var nodes;
-nodes=[{ name: "node1", width: 75, height:55, offsetX:50, offsetY:50, collapseIcon:{ shape:"arrowdown", width:10, height:10 } }];
-$("#diagramcontent").ejDiagram({nodes:nodes});
-</script>
-
-{% endhighlight %}
-
-### nodes.collapseIcon.borderColor `String`
-{:#members:nodes-collapseicon-bordercolor}
-
-Sets the border color for collapse icon of node
-
-#### Default Value:
-
-* "black"
-
-#### Example
-
-{% highlight html %}
-
-<div id="diagramcontent"></div>
-<script>
-var nodes;
-nodes=[{ name: "node1", width: 75, height:55, offsetX:50, offsetY:50, collapseIcon:{ shape:"arrowdown", width:10, height:10,borderColor: "red"} }];
-$("#diagramcontent").ejDiagram({nodes:nodes});
-</script>
-
-{% endhighlight %}
-
-### nodes.collapseIcon.borderWidth `Number`
-{:#members:nodes-collapseicon-borderwidth}
-
-Sets the border width for collapse icon of node
-
-#### Default Value:
-
-* 1
-
-#### Example
-
-{% highlight html %}
-
-<div id="diagramcontent"></div>
-<script>
-var nodes;
-nodes=[{ name: "node1", width: 75, height:55, offsetX:50, offsetY:50, 
-    collapseIcon:{ shape:"arrowdown", width:10, height:10, borderWidth: "2"} }];
-$("#diagramcontent").ejDiagram({nodes:nodes});
-</script>
-
-{% endhighlight %}
-
-### nodes.collapseIcon.fillColor `String`
-{:#members:nodes-collapseicon-fillcolor}
-
-Sets the fill color for collapse icon of node
-
-#### Default Value:
-
-* "white"
-
-#### Example
-
-{% highlight html %}
-
-<div id="diagramcontent"></div>
-<script>
-var nodes;
-nodes=[{ name: "node1", width: 75, height:55, offsetX:50, offsetY:50, collapseIcon:{ shape:"arrowdown", width:10, height:10,fillColor: "green"} }];
-$("#diagramcontent").ejDiagram({nodes:nodes});
-</script>
-
-{% endhighlight %}
-
-### nodes.collapseIcon.height `Number`
-{:#members:nodes-collapseicon-height}
-
-Defines the height for collapse icon of node
-
-#### Default Value:
-
-* "15"
-
-#### Example
-
-{% highlight html %}
-
-<div id="diagramcontent"></div>
-<script>
-var nodes;
-nodes=[{ name: "node1", width: 75, height:55, offsetX:50, offsetY:50, collapseIcon:{ shape:"arrowdown", width:10, height:10} }];
-$("#diagramcontent").ejDiagram({nodes:nodes});
-</script>
-
-{% endhighlight %}
-
-### nodes.collapseIcon.horizontalAlignment `enum`
-{:#members:nodes-collapseicon-horizontalalignment}
-
-<ts name = "ej.datavisualization.Diagram.HorizontalAlignment"/>
-
-Sets the horizontal alignment of the icon.
-
-<table class="props">
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Description</th>
-       </tr>
-   </thead>
-    <tbody>
-        <tr>
-            <td class="name">Left</td>
-            <td class="description last">Used to align the icon horizontally on left side of node</td>
-       </tr>
-        <tr>
-            <td class="name">Center</td>
-            <td class="description last">Used to align the icon horizontally on center of node</td>
-       </tr>
-        <tr>
-            <td class="name">Right</td>
-            <td class="description last">Used to align the icon horizontally on right side of node</td>
-       </tr>
-     </tbody>
-</table>
-
-#### Default Value:
-
-* ej.datavisualization.Diagram.HorizontalAlignment.Center
-
-#### Example
-
-{% highlight html %}
-
-<div id="diagramcontent"></div>
-<script>
-var nodes;
-nodes=[{ name: "node1", width: 75, height:55, offsetX:50, offsetY:50, 
-collapseIcon:{ shape:"arrowdown", width:10, height:10, 
-horizontalAlignment:ej.datavisualization.Diagram.HorizontalAlignment.Left }}]
-$("#diagramcontent").ejDiagram({nodes:nodes});
-</script>
-
-{% endhighlight %}
-
-### nodes.collapseIcon.margin `Object`
-{:#members:nodes-collapseicon-margin}
-
-To set the margin for the collapse icon of node
-
-#### Default Value:
-
-* ej.datavisualization.Diagram.Margin()
-
-#### Example
-
-{% highlight html %}
-
-<div id="diagramcontent"></div>
-<script>
-var nodes;
-nodes=[{ name: "node1", width: 75, height:55, offsetX:50, offsetY:50, 
-    collapseIcon:{ shape:"arrowdown", width:10, height:10, margin:{ left: 5 }}}]
-      }];
-$("#diagramcontent").ejDiagram({nodes:nodes});
-</script>
-
-{% endhighlight %}
-
-### nodes.collapseIcon.offset `object`
-{:#members:nodes-collapseicon-offset}
-
-Sets the fraction/ratio(relative to node) that defines the position of the icon
-
-#### Default Value:
-
-* ej.datavisualization.Diagram.Point(0.5, 1)
-
-#### Example
-
-{% highlight html %}
-
-<div id="diagramcontent"></div>
-<script>
-var nodes;
-nodes=[{ name: "node1", width: 75, height:55, offsetX:50, offsetY:50, 
-    collapseIcon:{ shape:"arrowdown", width:10, height:10, offset:ej.datavisualization.Diagram.Point(0,0.5) }]
-      }];
-$("#diagramcontent").ejDiagram({nodes:nodes});
-
-</script>
-
-{% endhighlight %}
-
-### nodes.collapseIcon.shape `enum`
-{:#members:nodes-collapseicon-shape}
-
-<ts name = "ej.datavisualization.Diagram.IconShapes"/>
-
-Defines the shape of the collapsed state of the node.
-
-<table class="props">
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Description</th>
-       </tr>
-   </thead>
-    <tbody>
-        <tr>
-            <td class="name">None</td>
-            <td class="description last">Used to set collapse icon shape as none</td>
-       </tr>
-        <tr>
-            <td class="name">Arrow</td>
-            <td class="description last">Used to set collapse icon shape as Arrow(Up/Down)</td>
-       </tr>
-        <tr>
-            <td class="name">Plus</td>
-            <td class="description last">Used to set collapse icon shape as Plus</td>
-       </tr>
-        <tr>
-            <td class="name">Minus</td>
-            <td class="description last">Used to set collapse icon shape as Minus</td>
-       </tr>
-        <tr>
-            <td class="name">Path</td>
-            <td class="description last">Used to set collapse icon shape as path</td>
-       </tr>
-        <tr>
-            <td class="name">Template</td>
-            <td class="description last">Used to set icon shape as template</td>
-       </tr>
-       <tr>
-            <td class="name">Image</td>
-            <td class="description last">Used to set icon shape as image</td>
-       </tr>
-   </tbody>
-</table>
-
-#### Default Value:
-
-* ej.datavisualization.Diagram.IconShapes.None
-
-#### Example
-
-{% highlight html %}
-
-<div id="diagramcontent"></div>
-<script>
-nodes=[{ name: "node1", width: 75, height:55, offsetX:50, offsetY:50, 
-collapseIcon:{ shape:"arrowdown", width:10, height:10}
-}];
-$("#diagramcontent").ejDiagram({nodes : nodes});
-</script>
-
-{% endhighlight %}
-
-
-### nodes.collapseIcon.verticalAlignment `enum`
-{:#members:nodes-collapseicon-verticalalignment}
-
-<ts name = "ej.datavisualization.Diagram.VerticalAlignment"/>
-
-Sets the vertical alignment of the icon.
-
-<table class="props">
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Description</th>
-       </tr>
-   </thead>
-    <tbody>
-        <tr>
-            <td class="name">Top</td>
-            <td class="description last">Set vertical alignment as top</td>
-       </tr>
-        <tr>
-            <td class="name">Middle</td>
-            <td class="description last">Set vertical alignment as middle</td>
-       </tr>
-        <tr>
-            <td class="name">Bottom</td>
-            <td class="description last">Set vertical alignment as bottom</td>
-       </tr>
-   </tbody>
-</table>
-
-#### Default Value:
-
-* ej.datavisualization.Diagram.VerticalAlignment.Center
-
-#### Example
-
-{% highlight html %}
-
-<div id="diagramcontent"></div>
-<script>
-<script>
-var nodes;
-nodes=[{ name: "node1", width: 75, height:55, offsetX:50, offsetY:50, 
-collapseIcon:{ shape:"arrowdown", width:10, height:10, 
     verticalAlignment:ej.datavisualization.Diagram.VerticalAlignment.Top }}];
 $("#diagramcontent").ejDiagram({ nodes:nodes });
 </script>
@@ -10611,7 +10611,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 <ts ref = "ej.datavisualization.Diagram.BPMNSubProcess"/>
 
-Defines the children values for BPMNsubprocess 
+Defines the children values for BPMN's SubProcess
 
 #### Default Value:
 
@@ -15370,7 +15370,7 @@ drop:function (args) {}
 
 ### editorFocusChange
 {:#events:editorfocuschange}
-Triggers when editor got focus at the time of nodeslabel or text node editing.
+Triggers when editor got focus at the time of node's label or text node editing.
 
 #### Example
 
