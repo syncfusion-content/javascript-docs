@@ -20,4 +20,4 @@ documentation: ug
 * **Keyboard Navigation** — Allows to interact with NumericTextBox by using keyboard.
 * **RTL Support** — Support for right to left alignment of NumericTextBox input.
 * **Decimal Values** — specifies the number of digits to allow after the decimal point in the NumericTextBox.
-* **Themes** — Essential JavaScript NumericTextBox consist of 16 built-in themes , and also support custom skins for creating user-defined themes.
+* **Themes** — Essential JavaScript NumericTextBox consist of 17 built-in themes , and also support custom skins for creating user-defined themes.

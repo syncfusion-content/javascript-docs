@@ -20,4 +20,4 @@ documentation: ug
 * **Keyboard Navigation** — You can interact with CurrencyTextBox by using keyboard.
 * **RTL Support** — Support for right to left alignment of CurrencyTextBox input.
 * **Decimal Values** — You can configure CurrencyTextBox to accept decimal values.
-* **Themes** — Essential JavaScript CurrencyTextBox consist of 16 built-in themes, and also support custom skins for creating user-defined themes.
+* **Themes** — Essential JavaScript CurrencyTextBox consist of 17 built-in themes, and also support custom skins for creating user-defined themes.

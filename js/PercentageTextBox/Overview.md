@@ -20,7 +20,7 @@ documentation: ug
 * **Keyboard Navigation** — You can interact with Text Boxes by using keyboard.
 * **RTL Support** — Support for right to left alignment of Text Box input.
 * **Decimal Values** — You can configure Text Boxes to accept decimal values.
-* **Themes** — **Essential JavaScript PercentageTextBox** consist of 16 built-in themes , and also support custom skins for creating user-defined themes.
+* **Themes** — **Essential JavaScript PercentageTextBox** consist of 17 built-in themes , and also support custom skins for creating user-defined themes.
 
 
 
