@@ -2698,6 +2698,11 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 </script>
 {% endhighlight %}
 
+### connectors.shape.multiplicity.source `object`
+{:#members:connectors-shape-multiplicity-source}
+
+Defines the source label to connector. Applicable, if the connector is of type "UML"
+
 ### connectors.shape.multiplicity.source.optional `boolean`
 {:#members:connectors-shape-multiplicity-source-optional}
 
@@ -2761,7 +2766,7 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 {% endhighlight %}
 
 ### connectors.shape.multiplicity.source.lowerBounds `Number`
-{:#members:connectors-shape-multiplicity-source-lowerBounds}
+{:#members:connectors-shape-multiplicity-source-lowerbounds}
 
 Defines the source label to connector. Applicable, if the connector is of type "UML"
 
@@ -2789,7 +2794,7 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 {% endhighlight %}
 
 ### connectors.shape.multiplicity.source.upperBounds `Number`
-{:#members:connectors-shape-multiplicity-source-upperBounds}
+{:#members:connectors-shape-multiplicity-source-upperbounds}
 
 Defines the source label to connector. Applicable, if the connector is of type "UML"
 
@@ -2814,8 +2819,10 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 
 {% endhighlight %}
 
-### connectors.shape.multiplicity.target.optional `boolean`
-{:#members:connectors-shape-multiplicity-target-optional}
+### connectors.shape.multiplicity.target `object`
+{:#members:connectors-shape-multiplicity-target}
+
+<ts ref = "ej.datavisualization.Diagram.ConnectorsShapeMultiplicitySource"/>
 
 Defines the target label to connector. Applicable, if the connector is of type "UML"
 
@@ -2832,56 +2839,8 @@ Defines the target label to connector. Applicable, if the connector is of type "
 var connector = { name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200}, 
                   shape: {type: "umlclassifier", relationship: ej.datavisualization.Diagram.ClassifierShapes.Dependency, 
                       multiplicity:{type: "onetomany",
+                          source: { optional: true, lowerBounds: 1, upperBounds: 10 },
                           target: { optional: true, lowerBounds: 1, upperBounds: 10 }}
-                 } }; 
-$("#diagramcontent").ejDiagram({connectors : [connector]});
-</script>
-
-{% endhighlight %}
-
-### connectors.shape.multiplicity.target.lowerBounds `Number`
-{:#members:connectors-shape-multiplicity-target-lowerBounds}
-
-Defines the target label to connector. Applicable, if the connector is of type "UML"
-
-#### Default Value:
-
-* null
-
-#### Example
-
-{% highlight html %}
-
-<div id="diagramcontent"></div>
-<script>
-var connector = { name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200}, 
-                  shape: {type: "umlclassifier", relationship: ej.datavisualization.Diagram.ClassifierShapes.Dependency, multiplicity:{type: "onetomany", 
-                       target: { optional: true, lowerBounds: 1, upperBounds: 10 }}
-                 } }; 
-$("#diagramcontent").ejDiagram({connectors : [connector]});
-</script>
-
-{% endhighlight %}
-
-### connectors.shape.multiplicity.target.upperBounds `Number`
-{:#members:connectors-shape-multiplicity-target-upperBounds}
-
-Defines the target label to connector. Applicable, if the connector is of type "UML"
-
-#### Default Value:
-
-* null
-
-#### Example
-
-{% highlight html %}
-
-<div id="diagramcontent"></div>
-<script>
-var connector = { name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200}, 
-                  shape: {type: "umlclassifier", relationship: ej.datavisualization.Diagram.ClassifierShapes.Dependency, 
-                      multiplicity:{type: "manytomany",
-                           target: { optional: true, lowerBounds: 1, upperBounds: 10 }}
                  } }; 
 $("#diagramcontent").ejDiagram({connectors : [connector]});
 </script>
@@ -10609,9 +10568,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 ### nodes.subProcess.Processes `Array`
 {:#members:nodes-subprocess-processes}
 
-<ts ref = "ej.datavisualization.Diagram.BPMNSubProcess"/>
-
-Defines the children values for BPMN's SubProcess
+Defines the children for BPMN's SubProcess
 
 #### Default Value:
 
