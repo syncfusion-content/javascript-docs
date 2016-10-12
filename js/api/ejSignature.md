@@ -47,7 +47,7 @@ Using ejSignature we can customize the background, stroke width and stroke color
 
 ## Members
 
-### backgroundColor 'string'
+### backgroundColor `string`
 {:#members:backgroundColor}
 
 This property is used to set the background color for the signature.  
@@ -66,7 +66,7 @@ This property is used to set the background color for the signature.
 
 {% endhighlight %}
 
-### backgroundImage 'string'
+### backgroundImage `string`
 {:#members:backgroundImage}
 
 This property is used to set the background image for the signature.  
@@ -100,7 +100,7 @@ Enables or disables the **Signature** textbox widget.
 
 {% endhighlight %}
  
-### height 'string'
+### height `string`
 {:#members:height}
 
 Sets the height of the Signature control.
@@ -119,7 +119,7 @@ Sets the height of the Signature control.
 
 {% endhighlight %}
  
-### isResponsive 'Boolean'
+### isResponsive `Boolean`
 {:#members:isResponsive}
 
  Enables/disables responsive support for the signature control (i.e) maintain the signature drawing during the window resizing time.
@@ -138,7 +138,7 @@ Sets the height of the Signature control.
 
 {% endhighlight %}
  
-### saveImageFormat 'Enum'
+### saveImageFormat `Enum`
 {:#members:saveImageFormat}
 
 Allows the type of the image format to be saved when the signature image is saved.
@@ -154,7 +154,7 @@ Allows the type of the image format to be saved when the signature image is save
 {% endhighlight %}
 
 
-### saveWithBackground 'Boolean'
+### saveWithBackground `Boolean`
 {:#members:saveWithBackground}
 
 Allows the signature image to be saved along with its background.
@@ -174,7 +174,7 @@ Allows the signature image to be saved along with its background.
 
 {% endhighlight %}
  
-### showRoundedCorner 'Boolean'
+### showRoundedCorner `Boolean`
 {:#members:showRoundedCorner}
 
 Enables or disables rounded corner.
@@ -193,7 +193,7 @@ Enables or disables rounded corner.
 
 {% endhighlight %}
  
-### strokeColor 'string'
+### strokeColor `string`
 {:#members:strokeColor} 
 
 Sets the stroke color for the stroke of the signature.
@@ -213,7 +213,7 @@ Sets the stroke color for the stroke of the signature.
 {% endhighlight %}
  
 
-### strokeWidth 'Number'
+### strokeWidth `Number`
 {:#members:strokeMaxWidth} 
 
 Sets the stroke width for the stroke of the signature.
@@ -233,7 +233,7 @@ Sets the stroke width for the stroke of the signature.
 {% endhighlight %}
  
  
-### width 'string'
+### width `string`
 {:#members:width} 
 
 Sets the width of the Signature control.
