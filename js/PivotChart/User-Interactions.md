@@ -109,7 +109,7 @@ $(function()
 ![](User-Interactions_images/tooltipcustomization.png) 
 
 ###Tooltip with Rounded Corners
-The tooltip properties, `rx` and `ry` are used to customize its corner radius.
+The tooltip properties, [`rx`](/js/api/ejchart#members:commonseriesoptions-tooltip-rx) and [`ry`](/js/api/ejchart#members:commonseriesoptions-tooltip-ry) are used to customize its corner radius.
 
 {% highlight javascript %}
 
@@ -198,6 +198,7 @@ $(function()
 
 ###Marker Shape Customization
 In PivotChart, you can customize the marker [`shape`](/js/api/ejchart#members:series-marker-shape) with the following symbols.
+
 * Rectangle
 * Circle
 * Cross
@@ -234,7 +235,7 @@ function onSeriesRender(args)
 ![](User-Interactions_images/marker.png) 
 
 ###Enable Crosshair and Crosshair Label
-Crosshair helps you to view the value at mouse position or touch contact point. Crosshair can be enabled by using the [`visible`](/js/api/ejchart#members:crosshair-visible) option in [`crosshair`](/js/api/ejchart#members:crosshair) property. Crosshair label can be enabled by using the **“visible”** option in [`crosshairLabel`](/js/api/ejchart#members:crosshair) property within its corresponding axis.
+Crosshair helps you to view the value at mouse position or touch contact point. Crosshair can be enabled by using the [`visible`](/js/api/ejchart#members:crosshair-visible) option in [`crosshair`](/js/api/ejchart#members:crosshair) property. Crosshair label can be enabled by using the **“visible”** option in [`crosshairLabel`](/js/api/ejchart#members:primaryxaxis-crosshairlabel) property within its corresponding axis.
 
 {% highlight javascript %}
 
@@ -272,7 +273,7 @@ $(function()
 ![](User-Interactions_images/crosshair.png) 
 
 ###Crosshair Line and Label Customization
-By using `line` property of crosshair, you can customize its line color and width. Also by using `fill` and `border` properties of crosshair label, you can customize its background color, border color and border width.
+By using [`line`](/js/api/ejchart#members:crosshair-line) property of crosshair, you can customize its line color and width. Also by using `fill` and `border` properties of [`crosshairLabel`](/js/api/ejchart#members:primaryxaxis-crosshairlabel) in its corresponding axis , you can customize its background color, border color and border width.
 
 {% highlight javascript %}
 
