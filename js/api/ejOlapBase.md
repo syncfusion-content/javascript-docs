@@ -39,7 +39,10 @@ This function gets the datasource, action and grid layout for rendering the Pivo
 ### SortOrder  `string`
 {:#members:sortorder}
 
+<ts name = "ej.olap.SortOrder"/>
+
 Sets the sort order for the specified row/column values.
+
 
 **Example:**
 
@@ -49,10 +52,14 @@ $("#PivotGrid1").ejPivotGrid({dataSource: {columns: [{ sortOrder : ej.olap.SortO
 
 {% endhighlight %}
 
+
 ### AdvancedFilterType  `string`
 {:#members:advancedfiltertype}
 
+<ts name = "ej.olap.AdvancedFilterType"/>
+
 Sets the type of filter while doing advanced filtering (excel-like) in OLAP client-side components.
+
 
 **Example:**
 
@@ -66,7 +73,10 @@ $("#PivotGrid1").ejPivotGrid({dataSource: {columns: [{ advancedFilter : [{advanc
 ### ValueFilterOptions  `string`
 {:#members:valuefilteroptions}
 
+<ts name = "ej.olap.ValueFilterOptions"/>
+
 Sets the options for value filter in advanced filtering (excel-like) concept available in OLAP client-side components.
+
 
 **Example:**
 
@@ -80,7 +90,10 @@ $("#PivotGrid1").ejPivotGrid({dataSource: {columns: [{ advancedFilter : [{valueF
 ### LabelFilterOptions  `string`
 {:#members:labelfilteroptions}
 
+<ts name = "ej.olap.LabelFilterOptions"/>
+
 Sets the options for label filter in advanced filtering (excel-like) concept available in OLAP client-side components.
+
 
 **Example:**
 
@@ -94,7 +107,10 @@ $("#PivotGrid1").ejPivotGrid({dataSource: {columns: [{ advancedFilter : [{labelF
 ### AxisName  `string`
 {:#members:axisname}
 
+<ts name = "ej.olap.AxisName"/>
+
 Allows the user to set the axis position to place the value items available in the report.
+
 
 **Example:**
 

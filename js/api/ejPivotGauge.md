@@ -16,101 +16,77 @@ The PivotGauge control is ideal for highlighting business critical Key Performan
 
 {% highlight javascript %}
 
-$(element).ejPivotGauge()
-
+    $(element).ejPivotGauge()
 {% endhighlight %}
 
 #### Example
 
 {% highlight html %}
  
-<div id="PivotGauge1"></div> 
- 
-<script>
-//Create PivotGauge
-$("#PivotGauge1").ejPivotGauge(...);       
-</script>
+    <div id="PivotGauge1"></div> 
+    
+    <script>
+    //Create PivotGauge
+    $("#PivotGauge1").ejPivotGauge(...);       
+    </script>
 
 {% endhighlight %}
 
 #### Requires
 
-* module:jQuery-1.10.2.min.js
-* module:jQuery.easing.1.3.min.js
-* module:jQuery.globalize.min.js
+* module:jQuery-3.0.0.min.js
 * module:ej.core.js
 * module:ej.data.js
 * module:ej.waitingpopup.js
 * module:ej.circulargauge.js
+* module:ej.pivot.common.js
+* module:ej.olap.base.js
+* module:ej.pivotanalysis.base.js
 * module:ej.pivotgauge.js
 
 
 ## Members
 
-### backgroundColor `string`
-{:#members:backgroundcolor}
-
-Specifies the background color of pivot gauge.
-
-#### Default Value: null
-
-#### Example
-
-{% highlight html %}
-                     
-<div id="PivotGauge">
-</div> 
- 
-<script>
-$("#PivotGauge").ejPivotGauge({  backgroundColor : "#F234F4" });
-</script>
-
-{% endhighlight %}
-
-
 ### columnsCount `number`
 {:#members:columnscount}
 
-Sets the number of column count to arrange the PivotGauge's.
+Sets the number of columns to arrange the Pivot Gauges.
 
 #### Default Value: 0
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotGauge1").ejPivotGauge({ columnsCount: 1 }); 
-
+    $("#PivotGauge1").ejPivotGauge({ columnsCount: 1 });
 {% endhighlight %}
 
 ### cssClass `string`
 {:#members:cssclass}
 
-Specify the CSS class to PivotGauge to achieve custom theme.
+Specifies the CSS class to PivotGauge to achieve custom theme.
 
 #### Default Value: “”
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotGauge1").ejPivotGauge({ cssClass : "gradient-lime" });
-
+    $("#PivotGauge1").ejPivotGauge({ cssClass : "gradient-lime" });
 {% endhighlight %}
 
 ### customObject `object`
 {:#members:customobject}
 
-Object utilized to pass additional information between client-end and service-end.
+Object utilized to pass additional information between client-end and service-end on operating in server mode.
 
 #### Default Value: {}
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotGauge1").ejPivotGauge({ customObject: {"key":"Hello World"} }); 
-
+    $("#PivotGauge1").ejPivotGauge({ customObject: { "key": "Hello World" } });
 {% endhighlight %}
 
 ### dataSource `object`
@@ -475,10 +451,22 @@ Allows the user to enable the usage of named set items in respective axis. This 
 
 {% highlight html %}
  
-$("#PivotGauge1").ejPivotGauge({dataSource: {filters: [{ isNamedSets : true}]}});
-
+    $("#PivotGauge1").ejPivotGauge({dataSource: {filters: [{ isNamedSets : true}]}});
 {% endhighlight %}
 
+### enableAnimation `boolean`
+{:#members:enableanimation}
+
+Enables/disables the animation of pointer in PivotGauge.
+
+#### Default Value: false
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotGauge1").ejPivotGauge({ enableAnimation: true });
+{% endhighlight %}
 
 ### enableTooltip `boolean`
 {:#members:enabletooltip}
@@ -489,10 +477,9 @@ Enables/disables tooltip visibility in PivotGauge.
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotGauge1").ejPivotGauge({ enableTooltip: true }); 
-
+    $("#PivotGauge1").ejPivotGauge({ enableTooltip: true }); 
 {% endhighlight %}
 
 ### enableRTL `boolean`
@@ -504,10 +491,9 @@ Allows the user to view PivotGauge from right to left.
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotGauge1").ejPivotGauge({ enableRTL: true });
-
+    $("#PivotGauge1").ejPivotGauge({ enableRTL: true });
 {% endhighlight %}
 
 
@@ -520,10 +506,9 @@ Allows the user to enable PivotGauge’s responsiveness in the browser layout.
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotGauge1").ejPivotGauge({ isResponsive: true });
-
+    $("#PivotGauge1").ejPivotGauge({ isResponsive: true });
 {% endhighlight %}
 
 ### labelFormatSettings `object`
@@ -535,12 +520,10 @@ Allows the user to change the format of the label values in PivotGauge.
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotGauge1").ejPivotGauge({ labelFormatSettings: value  });
-
+    $("#PivotGauge1").ejPivotGauge({ labelFormatSettings: value  });
 {% endhighlight %}
-
 
 ### labelFormatSettings.numberFormat `enum`
 {:#members:labelformatsettings-numberformat}
@@ -593,26 +576,24 @@ Allows the user to change the number format of the label values in PivotGauge.
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotGauge1").ejPivotGauge({labelFormatSettings: {numberFormat: ej.PivotGauge.NumberFormat.Default} });
-
+    $("#PivotGauge1").ejPivotGauge({ labelFormatSettings: { numberFormat: ej.PivotGauge.NumberFormat.Default } });
 {% endhighlight %}
 
 
 ### labelFormatSettings.decimalPlaces `number`
 {:#members:labelformatsettings-decimalplaces}
 
-Allows you to change the position of a digit on the right-hand side of the decimal point for label value.
+Allows you to set the number of digits displayed after decimal point.
 
 #### Default Value: 5
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotGauge1").ejPivotGauge({labelFormatSettings: {decimalPlaces: 3} });
-
+    $("#PivotGauge1").ejPivotGauge({ labelFormatSettings: { decimalPlaces: 3 } });
 {% endhighlight %}
 
 
@@ -625,10 +606,9 @@ Allows you to add a text at the beginning of the label.
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotGauge1").ejPivotGauge({labelFormatSettings: {prefixText: “prefixTextValue”} });
-
+    $("#PivotGauge1").ejPivotGauge({ labelFormatSettings: { prefixText: "prefixTextValue" } });
 {% endhighlight %}
 
 
@@ -641,10 +621,9 @@ Allows you to add text at the end of the label.
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotGauge1").ejPivotGauge({labelFormatSettings: {suffixText: “suffixTextValue”} });
-
+    $("#PivotGauge1").ejPivotGauge({ labelFormatSettings: { suffixText: "suffixTextValue" } });
 {% endhighlight %}
 
 
@@ -657,25 +636,23 @@ Allows the user to set the localized language for the widget.
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotGauge1").ejPivotGauge({ locale: "fr-FR" }); 
-
+    $("#PivotGauge1").ejPivotGauge({ locale: "fr-FR" });
 {% endhighlight %}
 
 ### rowsCount `number`
 {:#members:rowscount}
 
-Sets the number of row count to arrange the PivotGauge's.
+Sets the number of rows to arrange the Pivot Gauges.
 
 #### Default Value: 0
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotGauge1").ejPivotGauge({ rowsCount: 1 });
-
+    $("#PivotGauge1").ejPivotGauge({ rowsCount: 1 });
 {% endhighlight %}
 
 ### scales `object`
@@ -687,10 +664,9 @@ Sets the scale values such as pointers, indicators, etc... for PivotGauge.
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotGauge1").ejPivotGauge({ scales: {showRanges: true, showIndicators: true} });
-
+    $("#PivotGauge1").ejPivotGauge({ scales: { showRanges: true, showIndicators: true } });
 {% endhighlight %}
 
 ### serviceMethodSettings `object`
@@ -698,29 +674,29 @@ $("#PivotGauge1").ejPivotGauge({ scales: {showRanges: true, showIndicators: true
 
 Allows the user to set the custom name for the methods at service-end, communicated during AJAX post.
 
+>**Note**: This is applicable only for server mode operation.
+
 #### Default Value: {}
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotGauge1").ejPivotGauge({ serviceMethodSettings: {initialize: "MyMethod"} });
-
+    $("#PivotGauge1").ejPivotGauge({ serviceMethodSettings: { initialize: "MyMethod" } });
 {% endhighlight %}
 
 ### serviceMethodSettings.initialize `string`
 {:#members:servicemethodsettings-initialize}
 
-Allows the user to set the custom name for the service method that&rsquo;s responsible for initializing PivotGauge.
+Allows the user to set the custom name for the service method responsible for initializing PivotGauge.
 
 #### Default Value: "InitializeGauge"
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotGauge1").ejPivotGauge({ serviceMethodSettings: {initialize: "InitializeGaugeMyMethod"} });
- 
+    $("#PivotGauge1").ejPivotGauge({ serviceMethodSettings: { initialize: "InitializeGaugeMyMethod" } }); 
 {% endhighlight %}
 
 ### showHeaderLabel `boolean`
@@ -732,25 +708,93 @@ Enables/disables the header labels in PivotGauge.
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotGauge1").ejPivotGauge({ showHeaderLabel: false }); 
-
+    $("#PivotGauge1").ejPivotGauge({ showHeaderLabel: false });
 {% endhighlight %}
 
 ### url `string`
 {:#members:url}
 
-Connects the service using the specified URL for any server updates.
+Connects the service using the specified URL for any server updates on server mode operation.
 
 #### Default Value: “”
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotGauge1").ejPivotGauge({ url: "/PivotGaugeService.svc" }); 
+    $("#PivotGauge1").ejPivotGauge({ url: "/PivotGaugeService" });
+{% endhighlight %}
 
+### analysisMode `enum`
+{:#members:analysisMode}
+
+<ts name = "ej.Pivot.AnalysisMode"/>
+
+Sets the mode for the PivotGauge widget for binding either OLAP or Relational data source.
+
+#### Default Value: ej.Pivot.AnalysisMode.Pivot
+
+<table class="params">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">Pivot</td>
+            <td class="description">To bind Relational datasource to PivotGauge widget</td>
+        </tr>
+        <tr>
+            <td class="name">Olap</td>
+            <td class="description">To bind OLAP datasource to PivotGauge widget</td>
+        </tr>
+    </tbody>
+</table>
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotGauge1").ejPivotGauge({ analysisMode: ej.Pivot.AnalysisMode.Olap });
+{% endhighlight %}
+
+### operationalMode `enum`
+{:#members:operationalmode}
+
+<ts name = "ej.Pivot.OperationalMode"/>
+
+Sets the mode for the PivotGauge widget for binding data source either in server-side or client-side.
+
+<table class="params">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">ClientMode</td>
+            <td class="description">To bind data source completely from client-side.</td>
+        </tr>
+        <tr>
+            <td class="name">ServerMode</td>
+            <td class="description">To bind data source completely from server-side.</td>
+        </tr>
+    </tbody>
+</table>
+
+#### Default Value: ej.Pivot.OperationalMode.ClientMode
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotGauge1").ejPivotGauge({ operationalMode: ej.PivotGrid.OperationalMode.ServerMode });
 {% endhighlight %}
 
 ## Methods
@@ -758,40 +802,14 @@ $("#PivotGauge1").ejPivotGauge({ url: "/PivotGaugeService.svc" });
 ### doAjaxPost()
 {:#methods:doajaxpost}
 
-Perform an asynchronous HTTP (AJAX) request.
+Performs an asynchronous HTTP (AJAX) request.
 
 **Example:**
 
-{% highlight html %}
- 
-<div id="PivotGauge1"></div> 
- 
-<script>
-$('#PivotGauge1').ejPivotGauge({
-      url: "PivotGaugeService.svc",
-                enableTooltip: true,
-                scales: [{
-                pointers: [{
-                           showBackNeedle: true,
-                           backNeedleLength: 20,
-                           length: 120,
-                           width: 7
-                       },
-               {
-                   type: "marker",
-                   markerType: "diamond",
-                   distanceFromScale: 5,
-                   placement: "center",
-                   backgroundColor: "#29A4D9",
-                   length: 25,
-                   width: 15
-               }]
-        }]
-  });
-var gaugeObj = $("#PivotGauge1").data("ejPivotGauge");
-gaugeObj.doAjaxPost("POST", "/PivotGaugeService.svc/Initialize", {"key", "Hello World"}, "renderControlSuccess", null);
-</script>
-
+{% highlight javascript %}
+    
+    var gaugeObj = $("#PivotGauge1").data("ejPivotGauge");
+    gaugeObj.doAjaxPost("POST", "/PivotService/Initialize", { "key", "Hello World" }, "renderControlSuccess", null);
 {% endhighlight %}
 
 ### refresh()
@@ -801,116 +819,50 @@ This function is used to refresh the PivotGauge at client-side itself.
 
 **Example:**
 
-{% highlight html %}
- 
-<div id="PivotGauge1"></div> 
- 
-<script>
-$('#PivotGauge1').ejPivotGauge({
-      url: "PivotGaugeService.svc",
-                enableTooltip: true,
-                scales: [{
-                pointers: [{
-                           showBackNeedle: true,
-                           backNeedleLength: 20,
-                           length: 120,
-                           width: 7
-                       },
-               {
-                   pointerType: "marker",
-                   markerType: "diamond",
-                   distanceFromScale: 5,
-                   placement: "center",
-                   backgroundColor: "#29A4D9",
-                   length: 25,
-                   width: 15
-               }]
-        }]
-  });
-var gaugeObj = $("#PivotGauge1").data("ejPivotGauge");
-gaugeObj.refresh();
-</script>
+{% highlight javascript %}
 
+    var gaugeObj = $("#PivotGauge1").data("ejPivotGauge");
+    gaugeObj.refresh();
 {% endhighlight %}
-
 
 ### removeImg()
 {:#methods:removeimg}
 
-This function removes the KPI related images from PivotGauge.
+This function removes the KPI related images from PivotGauge on binding OLAP datasource.
 
 **Example:**
 
-{% highlight html %}
- 
-<div id="PivotGauge1"></div> 
- 
-<script>
-$('#PivotGauge1').ejPivotGauge({
-      url: "PivotGaugeService.svc",
-                enableTooltip: true,
-                scales: [{
-                pointers: [{
-                           showBackNeedle: true,
-                           backNeedleLength: 20,
-                           length: 120,
-                           width: 7
-                       },
-               {
-                   type: "marker",
-                   markerType: "diamond",
-                   distanceFromScale: 5,
-                   placement: "center",
-                   backgroundColor: "#29A4D9",
-                   length: 25,
-                   width: 15
-               }]
-        }]
-  });
-var gaugeObj = $("#PivotGauge1").data("ejPivotGauge");
-gaugeObj.removeImg();
-</script>
+{% highlight javascript %}
 
+    var gaugeObj = $("#PivotGauge1").data("ejPivotGauge");
+    gaugeObj.removeImg();
 {% endhighlight %}
-
 
 ### renderControlFromJSON()
 {:#methods:rendercontrolfromjson}
 
-This function receives the JSON formatted datasource to render the PivotGauge control.
+This function receives the JSON formatted datasource and renders the PivotGauge control.
 
 **Example:**
 
-{% highlight html %}
- 
-<div id="PivotGauge1"></div> 
- 
-<script>
-$('#PivotGauge1').ejPivotGauge({
-      url: "PivotGaugeService.svc",
-                enableTooltip: true,
-                scales: [{
-                pointers: [{
-                           showBackNeedle: true,
-                           backNeedleLength: 20,
-                           length: 120,
-                           width: 7
-                       },
-               {
-                   type: "marker",
-                   markerType: "diamond",
-                   distanceFromScale: 5,
-                   placement: "center",
-                   backgroundColor: "#29A4D9",
-                   length: 25,
-                   width: 15
-               }]
-        }]
-  });
-var gaugeObj = $("#PivotGauge1").data("ejPivotGauge");
-gaugeObj.renderControlFromJSON(this.getJSONRecords());
-</script>
+{% highlight javascript %}
 
+    var gaugeObj = $("#PivotGauge1").data("ejPivotGauge");
+    gaugeObj.renderControlFromJSON(this.getJSONRecords());
+{% endhighlight %}
+
+### getJSONData()
+{:#methods:getjsondata}
+
+Returns the JSON records required to render the PivotGauge on performing any action with OLAP data source.
+
+**Example:**
+
+{% highlight javascript %}
+
+    var gaugeObj = $("#PivotGauge1").data("ejPivotGauge");
+    var args = { action : "initialize", activeObject : gaugeObj };
+    var jsonData = gaugeObj.getJSONData(args, dataSource);
 {% endhighlight %}
 
 ## Events
@@ -923,18 +875,8 @@ Triggers when it reaches client-side after any AJAX request.
 <table class="params">
 <thead>
 <tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
+<th colspan="3">Event Parameters</th>
 </tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">argument</td>
-<td class="type">Object</td>
-<td class="description last">Event parameters from PivotGauge.
-<table class="params">
-<thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
@@ -942,39 +884,15 @@ Triggers when it reaches client-side after any AJAX request.
 </tr>
 </thead>
 <tbody>
-<tr>
-<td class="name">action</td>
-<td class="type">string</td>
-<td class="description last">return the current action of PivotGauge control.</td>
-</tr>
 <tr>
 <td class="name">customObject</td>
 <td class="type">object</td>
-<td class="description last">return the custom object bounds with PivotGauge control.</td>
+<td class="description last">returns the custom object bound with PivotGauge control.</td>
 </tr>
 <tr>
 <td class="name">element</td>
-<td class="type">string</td>
-<td class="description last">return the outer HTML of PivotGauge control.</td>
-</tr>
-<tr>
-<td class="name">cancel</td>
-<td class="type">boolean</td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
-</tr>
-<tr>
-<td class="name">model</td>
-<td class="type"><ts ref="ej.PivotGauge.Model"/>object</td>
-<td class="description last">returns the PivotGauge model.</td>
-</tr>
-<tr>
-<td class="name">type</td>
-<td class="type">string</td>
-<td class="description last">returns the name of the event.</td>
-</tr>
-</tbody>
-</table>
-</td>
+<td class="type">object</td>
+<td class="description last">returns the HTML element of PivotGauge control.</td>
 </tr>
 </tbody>
 </table>
@@ -982,12 +900,11 @@ Triggers when it reaches client-side after any AJAX request.
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotGauge1").ejPivotGauge({
-   afterServiceInvoke: function (args) {}
-});      
-
+    $("#PivotGauge1").ejPivotGauge({
+        afterServiceInvoke: function (args) {}
+    });
 {% endhighlight %}
 
 
@@ -999,18 +916,8 @@ Triggers before any AJAX request is passed from PivotGauge to service methods.
 <table class="params">
 <thead>
 <tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
+<th colspan="3">Event Parameters</th>
 </tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">argument</td>
-<td class="type">Object</td>
-<td class="description last">Event parameters from PivotGauge.
-<table class="params">
-<thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
@@ -1018,52 +925,26 @@ Triggers before any AJAX request is passed from PivotGauge to service methods.
 </tr>
 </thead>
 <tbody>
-<tr>
-<td class="name">action</td>
-<td class="type">string</td>
-<td class="description last">return the current action of PivotGauge control.</td>
-</tr>
 <tr>
 <td class="name">customObject</td>
 <td class="type">object</td>
-<td class="description last">return the custom object bounds with PivotGauge control.</td>
+<td class="description last">returns the custom object bound with PivotGauge control.</td>
 </tr>
 <tr>
 <td class="name">element</td>
-<td class="type">string</td>
-<td class="description last">return the outer HTML of PivotGauge control.</td>
-</tr>
-<tr>
-<td class="name">cancel</td>
-<td class="type">boolean</td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
-</tr>
-<tr>
-<td class="name">model</td>
-<td class="type"><ts ref="ej.PivotGauge.Model"/>object</td>
-<td class="description last">returns the PivotGauge model.</td>
-</tr>
-<tr>
-<td class="name">type</td>
-<td class="type">string</td>
-<td class="description last">returns the name of the event.</td>
+<td class="type">object</td>
+<td class="description last">returns the HTML element of PivotGauge control.</td>
 </tr>
 </tbody>
 </table>
-</td>
-</tr>
-</tbody>
-</table>
-
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotGauge1").ejPivotGauge({
-   beforeServiceInvoke: function (args) {}
-});      
-
+    $("#PivotGauge1").ejPivotGauge({
+        beforeServiceInvoke: function (args) {}
+    });
 {% endhighlight %}
 
 
@@ -1075,18 +956,8 @@ Triggers when PivotGauge started loading at client-side.
 <table class="params">
 <thead>
 <tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
+<th colspan="3">Event Parameters</th>
 </tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">argument</td>
-<td class="type">Object</td>
-<td class="description last">Event parameters from PivotGauge.
-<table class="params">
-<thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
@@ -1095,35 +966,35 @@ Triggers when PivotGauge started loading at client-side.
 </thead>
 <tbody>
 <tr>
-<td class="name">cancel</td>
-<td class="type">boolean</td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="name">action</td>
+<td class="type">string</td>
+<td class="description last">returns the current action of PivotGauge control.</td>
 </tr>
 <tr>
 <td class="name">model</td>
-<td class="type"><ts ref="ej.PivotGauge.Model"/>object</td>
-<td class="description last">returns the PivotGauge model.</td>
+<td class="type">object</td>
+<td class="description last">returns the model of PivotGauge control.</td>
 </tr>
 <tr>
-<td class="name">type</td>
-<td class="type">string</td>
-<td class="description last">returns the name of the event.</td>
+<td class="name">element</td>
+<td class="type">object</td>
+<td class="description last">returns the HTML element of the widget.</td>
 </tr>
-</tbody>
-</table>
-</td>
+<tr>
+<td class="name">customObject</td>
+<td class="type">object</td>
+<td class="description last">returns the custom object bound to the control.</td>
 </tr>
 </tbody>
 </table>
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotGauge1").ejPivotGauge({
-   load: function (args) {}
-});      
-
+    $("#PivotGauge1").ejPivotGauge({
+        load: function (args) {}
+    });
 {% endhighlight %}
 
 ### renderComplete
@@ -1134,18 +1005,8 @@ Triggers when PivotGauge widget completes all operations at client-side after an
 <table class="params">
 <thead>
 <tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
+<th colspan="3">Event Parameters</th>
 </tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">argument</td>
-<td class="type">Object</td>
-<td class="description last">Event parameters from PivotGauge.
-<table class="params">
-<thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
@@ -1153,34 +1014,15 @@ Triggers when PivotGauge widget completes all operations at client-side after an
 </tr>
 </thead>
 <tbody>
-<tr>
-<td class="name">element</td>
-<td class="type">string</td>
-<td class="description last">returns the outer HTML of PivotGauge control.</td>
-</tr>
 <tr>
 <td class="name">customObject</td>
-<td class="type">Object</td>
-<td class="description last">returns the custom object bounded with the control.</td>
+<td class="type">object</td>
+<td class="description last">returns the custom object bound with PivotGauge control.</td>
 </tr>
 <tr>
-<td class="name">cancel</td>
-<td class="type">boolean</td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
-</tr>
-<tr>
-<td class="name">model</td>
-<td class="type"><ts ref="ej.PivotGauge.Model"/>object</td>
-<td class="description last">returns the PivotGauge model.</td>
-</tr>
-<tr>
-<td class="name">type</td>
-<td class="type">string</td>
-<td class="description last">returns the name of the event.</td>
-</tr>
-</tbody>
-</table>
-</td>
+<td class="name">element</td>
+<td class="type">object</td>
+<td class="description last">returns the HTML element of PivotGauge control.</td>
 </tr>
 </tbody>
 </table>
@@ -1188,14 +1030,12 @@ Triggers when PivotGauge widget completes all operations at client-side after an
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotGauge1").ejPivotGauge({
-   renderComplete: function (args) {}
-});      
-
+    $("#PivotGauge1").ejPivotGauge({
+        renderComplete: function (args) {}
+    });
 {% endhighlight %}
-
 
 ### renderFailure
 {:#events:renderfailure}
@@ -1205,18 +1045,8 @@ Triggers when any error occurred during AJAX request.
 <table class="params">
 <thead>
 <tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
+<th colspan="3">Event Parameters</th>
 </tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">argument</td>
-<td class="type">Object</td>
-<td class="description last">Event parameters from PivotGauge.
-<table class="params">
-<thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
@@ -1226,54 +1056,29 @@ Triggers when any error occurred during AJAX request.
 <tbody>
 <tr>
 <td class="name">element</td>
-<td class="type">string</td>
-<td class="description last">returns the outer HTML of PivotGauge control.</td>
+<td class="type">object</td>
+<td class="description last">returns the HTML element of PivotGauge control.</td>
 </tr>
 <tr>
 <td class="name">customObject</td>
-<td class="type">Object</td>
-<td class="description last">returns the custom object bounded with the control.</td>
+<td class="type">object</td>
+<td class="description last">returns the custom object bound with the control.</td>
 </tr>
 <tr>
 <td class="name">message</td>
-<td class="type">Object</td>
-<td class="description last">returns the error message with error code.</td>
-</tr>
-<tr>
-<td class="name">cancel</td>
-<td class="type">boolean</td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
-</tr>
-<tr>
-<td class="name">model</td>
-<td class="type"><ts ref="ej.PivotGauge.Model"/>object</td>
-<td class="description last">returns the PivotGauge model.</td>
-</tr>
-<tr>
-<td class="name">type</td>
 <td class="type">string</td>
-<td class="description last">returns the name of the event.</td>
-</tr>
-<tr>
-<td class="name">responseJSON</td>
-<td class="type">object</td>
-<td class="description last">returns the JSON formatted response while error occurs.</td>
-</tr>
-</tbody>
-</table>
-</td>
+<td class="description last">returns the error message with error code.</td>
 </tr>
 </tbody>
 </table>
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotGauge1").ejPivotGauge({
-   renderFailure: function (args) {}
-}); 
-
+    $("#PivotGauge1").ejPivotGauge({
+        renderFailure: function (args) {}
+    });
 {% endhighlight %}
 
 
@@ -1285,18 +1090,8 @@ Triggers when PivotGauge successfully reaches client-side after any AJAX request
 <table class="params">
 <thead>
 <tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
+<th colspan="3">Event Parameters</th>
 </tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">argument</td>
-<td class="type">Object</td>
-<td class="description last">Event parameters from PivotGauge.
-<table class="params">
-<thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
@@ -1306,44 +1101,24 @@ Triggers when PivotGauge successfully reaches client-side after any AJAX request
 <tbody>
 <tr>
 <td class="name">element</td>
-<td class="type">string</td>
-<td class="description last">returns the outer HTML of PivotGauge control.</td>
+<td class="type">object</td>
+<td class="description last">returns the HTML element of PivotGauge control.</td>
 </tr>
 <tr>
 <td class="name">customObject</td>
-<td class="type">Object</td>
-<td class="description last">returns the custom object bounded with the control.</td>
-</tr>
-<tr>
-<td class="name">cancel</td>
-<td class="type">boolean</td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
-</tr>
-<tr>
-<td class="name">model</td>
-<td class="type"><ts ref="ej.PivotGauge.Model"/>object</td>
-<td class="description last">returns the PivotGauge model.</td>
-</tr>
-<tr>
-<td class="name">type</td>
-<td class="type">string</td>
-<td class="description last">returns the name of the event.</td>
-</tr>
-</tbody>
-</table>
-</td>
+<td class="type">object</td>
+<td class="description last">returns the custom object bound with the control.</td>
 </tr>
 </tbody>
 </table>
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotGauge1").ejPivotGauge({
-   renderSuccess: function (args) {}
-});      
-
+    $("#PivotGauge1").ejPivotGauge({
+        renderSuccess: function (args) {}
+    });
 {% endhighlight %}
 
 
@@ -1398,45 +1173,7 @@ Allows the user to change the format of the label values in PivotGauge.
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
 
-$("#PivotGauge1").ejPivotGauge({labelFormatSettings: {numberFormat: ej.PivotGauge.NumberFormat.Default} });
-
+    $("#PivotGauge1").ejPivotGauge({ labelFormatSettings: { numberFormat: ej.PivotGauge.NumberFormat.Default } });
 {% endhighlight %}
-
-
-### AxisName  `enum`
-{:#enum:axisname}
-
-<ts name = "ej.PivotGauge.AxisName"/>
-
-Allows the user to set the axis position to place value items from the report.
-
-<table class="params">
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Description</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td class="name">Rows</td>
-            <td class="description">To place the value items in row axis.</td>
-        </tr>
-        <tr>
-            <td class="name">Columns</td>
-            <td class="description">To place the value items in column axis.</td>
-        </tr>
-    </tbody>
-</table>
-
-
-**Example:**
-
-{% highlight html %}
-
-$("#PivotGauge1").ejPivotGauge({dataSource: {values: {axis : ej.PivotGauge.AxisName.Columns}}});
-
-{% endhighlight %}
-

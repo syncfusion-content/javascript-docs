@@ -10,14 +10,13 @@ metacontent:
 
 # ejPivotTreeMap
 
-The PivotTreemap is a lightweight control that reads OLAP and Relational information and visualizes it in graphical format with the ability to drill up and down.
+The PivotTreemap is a lightweight control that reads OLAP information and visualizes it in graphical format with the ability to drill up and down.
 
 #### Syntax
 
 {% highlight javascript %}
 
-$(element).ejPivotTreeMap()
-
+    $(element).ejPivotTreeMap()
 {% endhighlight %}
 
 
@@ -25,31 +24,28 @@ $(element).ejPivotTreeMap()
 
 {% highlight html %}
  
-<div id="PivotTreeMap1"></div>
+    <div id="PivotTreeMap1"></div>
 
-<script>
-    //Create PivotTreeMap
-    $("#PivotTreeMap1").ejPivotTreeMap(...);
-</script>
-
+    <script>
+        //Create PivotTreeMap
+        $("#PivotTreeMap1").ejPivotTreeMap(...);
+    </script>
 {% endhighlight %}
 
 #### Requires
 
 * module:jQuery-1.10.2.min.js
-* module:jQuery.easing.1.3.min.js
-* module:jQuery.globalize.min.js
 * module:ej.core.js
 * module:ej.data.js
 * module:ej.touch.js
 * module:ej.dialog.js
 * module:ej.draggable.js
 * module:ej.waitingpopup.js
+* module:ej.pivot.common.js
 * module:ej.olap.base.js
 * module:ej.pivotanalysis.base.js
 * module:ej.treemap.js
 * module:ej.pivottreemap.js
-
 
 ## Members
 
@@ -62,19 +58,10 @@ Specifies the CSS class to PivotTreeMap to achieve custom theme.
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotTreeMap1").ejPivotTreeMap({ cssClass : "gradient-lime" });
-
+    $("#PivotTreeMap1").ejPivotTreeMap({ cssClass : "gradient-lime" });
 {% endhighlight %}
-
-
-### currentReport `string`
-{:#members:currentreport}
-
-Contains the serialized Report at that instant, that is, current Report. 
-
-#### Default Value: “”
 
 ### dataSource `object`
 {:#members:datasource}
@@ -415,26 +402,9 @@ Object utilized to pass additional information between client-end and service-en
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotTreeMap1").ejPivotTreeMap({ customObject: {"key":"Hello World"} });
-
-{% endhighlight %}
-
-
-### enableRTL `boolean`
-{:#members:enablertl}
-
-Allows the user to view the layout of PivotTreeMap from right to left.
-
-#### Default Value: false
-
-**Example:**
-
-{% highlight html %}
- 
-$("#PivotTreeMap1").ejPivotTreeMap({ enableRTL: true });
-
+    $("#PivotTreeMap1").ejPivotTreeMap({ customObject: { "key": "Hello World" } });
 {% endhighlight %}
 
 ### isResponsive `boolean`
@@ -446,10 +416,9 @@ Allows the user to enable PivotTreeMap’s responsiveness in the browser layout.
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotTreeMap1").ejPivotTreeMap({ isResponsive: true });
-
+    $("#PivotTreeMap1").ejPivotTreeMap({ isResponsive: true });
 {% endhighlight %}
 
 
@@ -462,10 +431,9 @@ Allows the user to set the localized language for the widget.
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotTreeMap1").ejPivotTreeMap({ locale: "fr-FR" }); 
-
+    $("#PivotTreeMap1").ejPivotTreeMap({ locale: "fr-FR" }); 
 {% endhighlight %}
 
 ### operationalMode `object`
@@ -473,14 +441,13 @@ $("#PivotTreeMap1").ejPivotTreeMap({ locale: "fr-FR" });
 
 Sets the mode for the PivotTreeMap widget for binding data source either in server-side or client-side.
 
-#### Default Value: ej.PivotTreeMap.OperationalMode.ClientMode
+#### Default Value: ej.Pivot.OperationalMode.ClientMode
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotTreeMap1").ejPivotTreeMap({operationalMode: ej.PivotTreemap.OperationalMode.ServerMode});
-
+    $("#PivotTreeMap1").ejPivotTreeMap({ operationalMode: ej.Pivot.OperationalMode.ServerMode });
 {% endhighlight %}
 
 
@@ -493,44 +460,41 @@ Allows the user to set custom name for the methods at service-end, communicated 
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotTreeMap1").ejPivotTreeMap({ serviceMethodSettings: values });
-
+    $("#PivotTreeMap1").ejPivotTreeMap({ serviceMethodSettings: values });
 {% endhighlight %}
 
 ### serviceMethodSettings.initialize `string`
 {:#members:servicemethodsettings-initialize}
 
-Allows the user to set the custom name for the service method that&rsquo;s responsible for initializing PivotTreeMap.
+Allows the user to set the custom name for the service method responsible for initializing PivotTreeMap.
 
 #### Default Value: "InitializeTreemap"
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotTreeMap1").ejPivotTreeMap({ serviceMethodSettings: {initialize: "IninlizeTreeMapMyMethod"} });
-
- {% endhighlight %}
+    $("#PivotTreeMap1").ejPivotTreeMap({ serviceMethodSettings: { initialize: "IninlizeTreeMapMyMethod" } });
+{% endhighlight %}
 
 ### serviceMethodSettings.drillDown `string`
 {:#members:servicemethodsettings-drilldown}
 
-Allows the user to set the custom name for the service method that&rsquo;s responsible for drilling up/down operation in PivotTreeMap.
+Allows the user to set the custom name for the service method responsible for drilling up/down operation in PivotTreeMap.
 
 #### Default Value: "DrillTreeMap"
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotTreeMap1").ejPivotTreeMap({ serviceMethodSettings: {drillDown: "DrillTreeMapMyMethod"} });                                       
-
+    $("#PivotTreeMap1").ejPivotTreeMap({ serviceMethodSettings: { drillDown: "DrillTreeMapMyMethod" } });
 {% endhighlight %}
 
 
-###  url `string`
+### url `string`
 {:#members:url}
 
 Connects the service using the specified URL for any server updates.
@@ -539,10 +503,9 @@ Connects the service using the specified URL for any server updates.
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotTreeMap1").ejPivotTreeMap({ url: "/PivotTreeMapService.svc" });
-
+    $("#PivotTreeMap1").ejPivotTreeMap({ url: "/PivotTreeMapService.svc" });
 {% endhighlight %}
 
 
@@ -551,68 +514,109 @@ $("#PivotTreeMap1").ejPivotTreeMap({ url: "/PivotTreeMapService.svc" });
 ### doAjaxPost()
 {:#methods:doajaxpost}
 
-Perform an asynchronous HTTP (AJAX) request.
+Performs an asynchronous HTTP (AJAX) request.
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-<div id="PivotTreeMap1"></div> 
- 
-<script>
-$('#PivotTreeMap1').ejPivotTreeMap({
-      url: "PivotTreeMapService.svc"
- });
-var treemapObj = $("#PivotTreeMap1").data("ejPivotTreeMap");
-treemapObj.doAjaxPost("POST", "/PivotTreeMapService.svc/Initialize", {"key", "Hello World"}, "renderControlSuccess", null);
-</script>
-
+    var treemapObj = $("#PivotTreeMap1").data("ejPivotTreeMap");
+    treemapObj.doAjaxPost("POST", "/PivotTreeMapService.svc/Initialize", { "key", "Hello World" }, successEvent, null);
 {% endhighlight %}
-
-
 
 ### doPostBack()
 {:#methods:dopostback}
 
-Perform an asynchronous HTTP (FullPost) submit.
+Performs an asynchronous HTTP (FullPost) submit.
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
 
-<div id="PivotTreeMap1"></div> 
- 
-<script>
-$('#PivotTreeMap1).ejPivotTreeMap({
-      url: "PivotTreeMapService.svc",
- });
-var treemapObj = $("#PivotTreeMap1").data("ejPivotTreeMap");
-treemapObj.doPostBack("/PivotTreeMapService.svc/Initialize", {"key", "Hello World"});
-</script> 
-
+    var treemapObj = $("#PivotTreeMap1").data("ejPivotTreeMap");
+    treemapObj.doPostBack("/PivotTreeMapService.svc/Initialize", { "key", "Hello World" });
 {% endhighlight %}
 
+### getOlapReport()
+{:#methods:getolapreport}
+
+Returns the OlapReport string maintained along with the axis elements information.
+
+>**Note**: This method is applicable only on operating the control in server mode.
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    var treeMapObj = $("#PivotTreeMap1").data("ejPivotTreeMap");
+    var report = treeMapObj.getOlapReport();
+{% endhighlight %}
+
+### setOlapReport()
+{:#methods:setolapreport}
+
+Sets the OlapReport string along with the axis information and maintains it in a property.
+
+>**Note**: This method is applicable only on operating the control in server mode.
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    var treeMapObj = $("#PivotTreeMap1").data("ejPivotTreeMap");
+    treeMapObj.setOlapReport(olapReportObj);
+{% endhighlight %}
+
+### getJSONRecords()
+{:#methods:getjsonrecords}
+
+Returns the JSON records formed to render the control.
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    var treeMapObj = $("#PivotTreeMap1").data("ejPivotTreeMap");
+    var jsonRecords = treeMapObj.getJSONRecords();
+{% endhighlight %}
+
+### setJSONRecords()
+{:#methods:setjsonrecords}
+
+Sets the JSON records to render the control.
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    var treeMapObj = $("#PivotTreeMap1").data("ejPivotTreeMap");
+    treeMapObj.setJSONRecords(jsonRecords);
+{% endhighlight %}
+
+### generateJSON()
+{:#methods:generatejson}
+
+Renders the control with the pivot engine obtained from olap base source.
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    var treeMapObj = $("#PivotTreeMap1").data("ejPivotTreeMap");
+    treeMapObj.generateJSON(baseObj, pivotEngineObj);
+{% endhighlight %}
 
 ### renderTreeMapFromJSON()
 {:#methods:rendertreemapfromjson}
 
 This function receives the JSON formatted datasource to render the PivotTreeMap control.
 
-
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-<div id="PivotTreeMap1"></div> 
- 
-<script>
-$('#PivotTreeMap1').ejPivotTreeMap({
-      url: "PivotTreeMap.svc"
- });
-var treeMapObj = $("#PivotTreeMap1").data("ejPivotTreeMap");
-treeMapObj.renderTreeMapFromJSON(this.getJSONRecords());
-</script>
-
+    var treeMapObj = $("#PivotTreeMap1").data("ejPivotTreeMap");
+    treeMapObj.renderTreeMapFromJSON(this.getJSONRecords());
 {% endhighlight %}
 
 ### renderControlSuccess()
@@ -622,18 +626,10 @@ This function receives the update from service-end, which would be utilized for 
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-<div id="PivotTreeMap1"></div> 
- 
-<script>
-$('#PivotTreeMap1').ejPivotTreeMap({
-      url: "PivotTreeMapService.svc"
-  });
-var treeMapObj = $("#PivotTreeMap1").data("ejPivotTreeMap");
-treeMapObj.renderControlSuccess({"OlapReport": this.getOlapReport(), "JsonRecords": this.getJSONRecords()});
-</script>
-
+    var treeMapObj = $("#PivotTreeMap1").data("ejPivotTreeMap");
+    treeMapObj.renderControlSuccess({"OlapReport": this.getOlapReport(), "JsonRecords": this.getJSONRecords()});
 {% endhighlight %}
 
 
@@ -647,18 +643,8 @@ Triggers when it reaches client-side after any AJAX request.
 <table class="params">
 <thead>
 <tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
+<th colspan="3">Event Parameters</th>
 </tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">argument</td>
-<td class="type">Object</td>
-<td class="description last">Event parameters from PivotTreeMap
-<table class="params">
-<thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
@@ -669,36 +655,17 @@ Triggers when it reaches client-side after any AJAX request.
 <tr>
 <td class="name">action</td>
 <td class="type">string</td>
-<td class="description last">return the current action of PivotTreeMap control.</td>
+<td class="description last">returns the current action of PivotTreeMap control.</td>
 </tr>
 <tr>
 <td class="name">customObject</td>
 <td class="type">object</td>
-<td class="description last">return the custom object bounds with PivotTreeMap control.</td>
+<td class="description last">returns the custom object bound with PivotTreeMap control.</td>
 </tr>
 <tr>
 <td class="name">element</td>
-<td class="type">string</td>
-<td class="description last">return the outer HTML of PivotTreeMap control.</td>
-</tr>
-<tr>
-<td class="name">cancel</td>
-<td class="type">boolean</td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
-</tr>
-<tr>
-<td class="name">model</td>
-<td class="type"><ts ref="ej.PivotTreeMap.Model"/>object</td>
-<td class="description last">returns the PivotTreeMap model.</td>
-</tr>
-<tr>
-<td class="name">type</td>
-<td class="type">string</td>
-<td class="description last">returns the name of the event.</td>
-</tr>
-</tbody>
-</table>
-</td>
+<td class="type">object</td>
+<td class="description last">returns the HTML element of PivotTreeMap control.</td>
 </tr>
 </tbody>
 </table>
@@ -706,12 +673,11 @@ Triggers when it reaches client-side after any AJAX request.
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotTreeMap1").ejPivotTreeMap({
-   afterServiceInvoke: function (args) {}
-});
-
+    $("#PivotTreeMap1").ejPivotTreeMap({
+        afterServiceInvoke: function (args) {}
+    });
 {% endhighlight %}
 
 
@@ -723,18 +689,8 @@ Triggers before any AJAX request is passed from PivotTreeMap to service methods.
 <table class="params">
 <thead>
 <tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
+<th colspan="3">Event Parameters</th>
 </tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">argument</td>
-<td class="type">Object</td>
-<td class="description last">Event parameters from PivotTreeMap
-<table class="params">
-<thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
@@ -745,36 +701,17 @@ Triggers before any AJAX request is passed from PivotTreeMap to service methods.
 <tr>
 <td class="name">action</td>
 <td class="type">string</td>
-<td class="description last">return the current action of PivotTreeMap control.</td>
+<td class="description last">returns the current action of PivotTreeMap control.</td>
 </tr>
 <tr>
 <td class="name">customObject</td>
 <td class="type">object</td>
-<td class="description last">return the custom object bounds with PivotTreeMap control.</td>
+<td class="description last">returns the custom object bound with PivotTreeMap control.</td>
 </tr>
 <tr>
 <td class="name">element</td>
-<td class="type">string</td>
-<td class="description last">return the outer HTML of PivotTreeMap control.</td>
-</tr>
-<tr>
-<td class="name">cancel</td>
-<td class="type">boolean</td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
-</tr>
-<tr>
-<td class="name">model</td>
-<td class="type"><ts ref="ej.PivotTreeMap.Model"/>object</td>
-<td class="description last">returns the PivotTreeMap model.</td>
-</tr>
-<tr>
-<td class="name">type</td>
-<td class="type">string</td>
-<td class="description last">returns the name of the event.</td>
-</tr>
-</tbody>
-</table>
-</td>
+<td class="type">object</td>
+<td class="description last">returns the HTML element of PivotTreeMap control.</td>
 </tr>
 </tbody>
 </table>
@@ -782,29 +719,125 @@ Triggers before any AJAX request is passed from PivotTreeMap to service methods.
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotTreeMap1").ejPivotTreeMap({
-   beforeServiceInvoke: function (args) {}
-});      
-
+    $("#PivotTreeMap1").ejPivotTreeMap({
+        beforeServiceInvoke: function (args) {}
+    });
 {% endhighlight %}
 
+### load
+{:#events:load}
 
+Triggers when PivotTreeMap starts to render.
+
+<table class="params">
+<thead>
+<tr>
+<th colspan="3">Event Parameters</th>
+</tr>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">action</td>
+<td class="type">string</td>
+<td class="description last">returns the current action of PivotTreeMap control.</td>
+</tr>
+<tr>
+<td class="name">customObject</td>
+<td class="type">object</td>
+<td class="description last">returns the custom object bound with PivotTreeMap control.</td>
+</tr>
+<tr>
+<td class="name">element</td>
+<td class="type">object</td>
+<td class="description last">returns the HTML element of PivotTreeMap control.</td>
+</tr>
+</tbody>
+</table>
+
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotTreeMap1").ejPivotTreeMap({
+        load: function (args) {}
+    });
+{% endhighlight %}
+
+### beforePivotEnginePopulate
+{:#events:beforepivotenginepopulate}
+
+Triggers before populating the pivot engine from datasource.
+
+<table class="params">
+<thead>
+<tr>
+<th colspan="3">Event Parameters</th>
+</tr>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">treeMapObject</td>
+<td class="type">object</td>
+<td class="description last">returns the current instance of PivotTreeMap control.</td>
+</tr>
+</tbody>
+</table>
+
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotTreeMap1").ejPivotTreeMap({
+        beforePivotEnginePopulate: function (args) {}
+    });
+{% endhighlight %}
 
 ### drillSuccess
 {:#events:drillsuccess}
 
 Triggers when drill up/down happens in PivotTreeMap control. And it returns the outer HTML of PivotTreeMap control.
 
+<table class="params">
+<thead>
+<tr>
+<th colspan="3">Event Parameters</th>
+</tr>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">element</td>
+<td class="type">object</td>
+<td class="description last">return the HTML element of PivotTreeMap control.</td>
+</tr>
+</tbody>
+</table>
+
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotTreeMap1").ejPivotTreeMap({
-   drillSuccess: function (args) {}
-});
-
+    $("#PivotTreeMap1").ejPivotTreeMap({
+        drillSuccess: function (args) {}
+    });
 {% endhighlight %}
 
 
@@ -816,18 +849,8 @@ Triggers when PivotTreeMap widget completes all operations at client-side after 
 <table class="params">
 <thead>
 <tr>
-<th>Name</th>
-<th>Type</th>
-<th >Description</th>
+<th colspan="3">Event Parameters</th>
 </tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">argument</td>
-<td class="type">Object</td>
-<td class="description last">Event parameters from PivotTreeMap
-<table class="params">
-<thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
@@ -838,36 +861,17 @@ Triggers when PivotTreeMap widget completes all operations at client-side after 
 <tr>
 <td class="name">action</td>
 <td class="type">string</td>
-<td class="description last">return the current action of PivotTreeMap control.</td>
+<td class="description last">returns the current action of PivotTreeMap control.</td>
 </tr>
 <tr>
 <td class="name">customObject</td>
 <td class="type">object</td>
-<td class="description last">return the custom object bounds with PivotTreeMap control.</td>
+<td class="description last">returns the custom object bound with PivotTreeMap control.</td>
 </tr>
 <tr>
 <td class="name">element</td>
-<td class="type">string</td>
-<td class="description last">return the outer HTML of PivotTreeMap control.</td>
-</tr>
-<tr>
-<td class="name">cancel</td>
-<td class="type">boolean</td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
-</tr>
-<tr>
-<td class="name">model</td>
-<td class="type"><ts ref="ej.PivotTreeMap.Model"/>object</td>
-<td class="description last">returns the PivotTreeMap model.</td>
-</tr>
-<tr>
-<td class="name">type</td>
-<td class="type">string</td>
-<td class="description last">returns the name of the event.</td>
-</tr>
-</tbody>
-</table>
-</td>
+<td class="type">object</td>
+<td class="description last">returns the HTML element of PivotTreeMap control.</td>
 </tr>
 </tbody>
 </table>
@@ -875,12 +879,11 @@ Triggers when PivotTreeMap widget completes all operations at client-side after 
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotTreeMap1").ejPivotTreeMap({
-   renderComplete: function (args) {}
-});     
-
+    $("#PivotTreeMap1").ejPivotTreeMap({
+        renderComplete: function (args) {}
+    });
 {% endhighlight %}
 
 
@@ -892,18 +895,8 @@ Triggers when any error occurred during AJAX request.
 <table class="params">
 <thead>
 <tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
+<th colspan="3">Event Parameters</th>
 </tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">argument</td>
-<td class="type">Object</td>
-<td class="description last">Event parameters from PivotTreeMap
-<table class="params">
-<thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
@@ -914,41 +907,22 @@ Triggers when any error occurred during AJAX request.
 <tr>
 <td class="name">action</td>
 <td class="type">string</td>
-<td class="description last">return the current action of PivotTreeMap control.</td>
+<td class="description last">returns the current action of PivotTreeMap control.</td>
 </tr>
 <tr>
 <td class="name">customObject</td>
 <td class="type">object</td>
-<td class="description last">return the custom object bounds with PivotTreeMap control.</td>
-</tr>
-<tr>
-<td class="name">message</td>
-<td class="type">object</td>
-<td class="description last">return the error stack trace of the original exception.</td>
+<td class="description last">returns the custom object bound with PivotTreeMap control.</td>
 </tr>
 <tr>
 <td class="name">element</td>
+<td class="type">object</td>
+<td class="description last">returns the HTML element of PivotTreeMap control.</td>
+</tr>
+<tr>
+<td class="name">message</td>
 <td class="type">string</td>
-<td class="description last">return the outer HTML of PivotTreeMap control.</td>
-</tr>
-<tr>
-<td class="name">cancel</td>
-<td class="type">boolean</td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
-</tr>
-<tr>
-<td class="name">model</td>
-<td class="type"><ts ref="ej.PivotTreeMap.Model"/>object</td>
-<td class="description last">returns the PivotTreeMap model.</td>
-</tr>
-<tr>
-<td class="name">type</td>
-<td class="type">string</td>
-<td class="description last">returns the name of the event.</td>
-</tr>
-</tbody>
-</table>
-</td>
+<td class="description last">returns the error stack trace of the original exception.</td>
 </tr>
 </tbody>
 </table>
@@ -956,12 +930,11 @@ Triggers when any error occurred during AJAX request.
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotTreeMap1").ejPivotTreeMap({
-   renderFailure: function (args) {}
-});      
-
+    $("#PivotTreeMap1").ejPivotTreeMap({
+        renderFailure: function (args) {}
+    });
 {% endhighlight %}
 
 
@@ -973,18 +946,8 @@ Triggers when PivotTreeMap successfully reaches client-side after any AJAX reque
 <table class="params">
 <thead>
 <tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
+<th colspan="3">Event Parameters</th>
 </tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">argument</td>
-<td class="type">Object</td>
-<td class="description last">Event parameters from PivotTreeMap
-<table class="params">
-<thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
@@ -995,36 +958,17 @@ Triggers when PivotTreeMap successfully reaches client-side after any AJAX reque
 <tr>
 <td class="name">action</td>
 <td class="type">string</td>
-<td class="description last">return the current action of PivotTreeMap control.</td>
+<td class="description last">returns the current action of PivotTreeMap control.</td>
 </tr>
 <tr>
 <td class="name">customObject</td>
 <td class="type">object</td>
-<td class="description last">return the custom object bounds with PivotTreeMap control.</td>
+<td class="description last">returns the custom object bound with PivotTreeMap control.</td>
 </tr>
 <tr>
 <td class="name">element</td>
-<td class="type">string</td>
-<td class="description last">return the outer HTML of PivotTreeMap control.</td>
-</tr>
-<tr>
-<td class="name">cancel</td>
-<td class="type">boolean</td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
-</tr>
-<tr>
-<td class="name">model</td>
-<td class="type"><ts ref="ej.PivotTreeMap.Model"/>object</td>
-<td class="description last">returns the PivotTreeMap model.</td>
-</tr>
-<tr>
-<td class="name">type</td>
-<td class="type">string</td>
-<td class="description last">returns the name of the event.</td>
-</tr>
-</tbody>
-</table>
-</td>
+<td class="type">object</td>
+<td class="description last">returns the HTML element of PivotTreeMap control.</td>
 </tr>
 </tbody>
 </table>
@@ -1032,52 +976,9 @@ Triggers when PivotTreeMap successfully reaches client-side after any AJAX reque
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotTreeMap1").ejPivotTreeMap({
-   renderSuccess: function (args) {}
-});     
-
+    $("#PivotTreeMap1").ejPivotTreeMap({
+        renderSuccess: function (args) {}
+    });
 {% endhighlight %}
-
-
-
-## Enumeration
-
-
-### OperationalMode  `enum`
-{:#enum:operationalmode}
-
-<ts name = "ej.PivotTreeMap.OperationalMode"/>
-
-Sets the mode for the PivotTreeMap widget for binding data source either in server-side or client-side.
-
-<table class="params">
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Description</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td class="name">ClientMode</td>
-            <td class="description">To bind data source completely from client-side.</td>
-        </tr>
-        <tr>
-            <td class="name">ServerMode</td>
-            <td class="description">To bind data source completely from server-side.</td>
-        </tr>
-    </tbody>
-</table>
-
-
-**Example:**
-
-{% highlight html %}
-
-$("#PivotTreeMap1").ejPivotTreeMap({operationalMode:ej.PivotTreeMap.OperationalMode.ServerMode});
-
-{% endhighlight %}
-
-
