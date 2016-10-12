@@ -37,6 +37,7 @@ $(function()
 
 ##Legend Shape
 You can customize the legend [`shape`](/js/api/ejchart#members:legend-shape) in PivotChart widget. Default value of legend shape is “Rectangle”. Following legend shapes that are supported:
+
 * Rectangle
 * Circle
 * Cross
