@@ -76,9 +76,6 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/
 * module:jQuery
 
 
-* module:jquery.easing.1.3.min.js
-
-
 * module:jsrender.min.js
 
 
