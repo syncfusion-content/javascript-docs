@@ -141,7 +141,32 @@ Sets the height of the Signature control.
 ### saveImageFormat `Enum`
 {:#members:saveImageFormat}
 
+<ts name = "ej.Signature.SaveImageFormat"/>
+
 Allows the type of the image format to be saved when the signature image is saved.
+
+<table>
+<tr>
+<th>Name<br/><br/></th>
+<th>Description<br/><br/></th>
+</tr>
+<tr>
+<td>png<br/><br/></td>
+<td>To save the signature image with png format only.<br/><br/></td>
+</tr>
+<tr>
+<td>jpg<br/><br/></td>
+<td>To save the signature image with jpg format only.<br/><br/></td>
+</tr>
+<tr>
+<td>bmp<br/><br/></td>
+<td>To save the signature image with bmp format only.<br/><br/></td>
+</tr>
+<tr>
+<td>bmp<br/><br/></td>
+<td>To save the signature image with bmp format only.<br/><br/></td>
+</tr>
+</table>
 
 #### Example  
 
