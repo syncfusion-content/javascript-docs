@@ -216,8 +216,6 @@ $("#PivotGrid1").ejPivotGrid({dataSource: {columns: [{ advancedFilter : [{name: 
 ### dataSource.columns.advancedFilter.labelFilterOperator `string`
 {:#members:datasource-columns-advancedfilter-labelfilteroperator}
 
-<ts name = "ej.olap.LabelFilterOptions"/>
-
 Allows the user to set the operator for label filtering to do advanced filtering (excel-like) for OLAP data source in client-mode.
 
 #### Default Value: ""
@@ -233,8 +231,6 @@ $("#PivotGrid1").ejPivotGrid({dataSource: {columns: [{ advancedFilter : [{labelF
 ### dataSource.columns.advancedFilter.valueFilterOperator `string`
 {:#members:datasource-columns-advancedfilter-valuefilteroperator}
 
-<ts name = "ej.olap.ValueFilterOptions"/>
-
 Allows the user to set the operator for value filtering to do advanced filtering (excel-like) for OLAP data source in client-mode.
 
 #### Default Value: ""
@@ -249,8 +245,6 @@ $("#PivotGrid1").ejPivotGrid({dataSource: {columns: [{ advancedFilter : [{valueF
 
 ### dataSource.columns.advancedFilter.advancedFilterType `string`
 {:#members:datasource-columns-advancedfilter-advancedfiltertype}
-
-<ts name = "ej.olap.AdvancedFilterType"/>
 
 Allows the user to set the filtering type while doing advanced filtering (excel-like) for OLAP data source in client-mode.
 
@@ -407,8 +401,6 @@ $("#PivotGrid1").ejPivotGrid({dataSource: {rows: [{ advancedFilter : [{name: "di
 ### dataSource.rows.advancedFilter.labelFilterOperator `string`
 {:#members:datasource-rows-advancedfilter-labelfilteroperator}
 
-<ts name = "ej.olap.LabelFilterOptions"/>
-
 Allows the user to set the operator for label filtering to do advanced filtering (excel-like) for OLAP data source in client-mode.
 
 #### Default Value: ""
@@ -424,8 +416,6 @@ $("#PivotGrid1").ejPivotGrid({dataSource: {rows: [{ advancedFilter : [{labelFilt
 ### dataSource.rows.advancedFilter.valueFilterOperator `string`
 {:#members:datasource-rows-advancedfilter-valuefilteroperator}
 
-<ts name = "ej.olap.ValueFilterOptions"/>
-
 Allows the user to set the operator for value filtering to do advanced filtering (excel-like) for OLAP data source in client-mode.
 
 #### Default Value: ""
@@ -440,8 +430,6 @@ $("#PivotGrid1").ejPivotGrid({dataSource: {rows: [{ advancedFilter : [{valueFilt
 
 ### dataSource.rows.advancedFilter.advancedFilterType `string`
 {:#members:datasource-rows-advancedfilter-advancedfiltertype}
-
-<ts name = "ej.olap.AdvancedFilterType"/>
 
 Allows the user to set the filtering type while doing advanced filtering (excel-like) for OLAP data source in client-mode.
 
@@ -1061,21 +1049,6 @@ Allows the user to view large amount of data by applying paging.
 {% highlight html %}
  
 $("#PivotGrid1").ejPivotGrid({ enablePaging: true });
-
-{% endhighlight %}
-
-### enableVirtualScrolling `boolean`
-{:#members:enablevirtualscrolling}
-
-Allows the user to view large amount of data through virtual scrolling.
-
-#### Default Value: false
-
-**Example:**
-
-{% highlight html %}
- 
-$("#PivotGrid1").ejPivotGrid({ enableVirtualScrolling: true });
 
 {% endhighlight %}
 
