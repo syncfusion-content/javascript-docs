@@ -4,7 +4,7 @@ title:  Resize
 description: resize
 documentation: ug
 platform: js
-keywords: resize,ribbon resize
+keywords: resize,ribbon resize,responsive
 ---
 
 # Resize 
@@ -13,9 +13,11 @@ Ribbon control dynamically resizes to display possible number of controls in the
 
 As the window is narrowed, controls in the Ribbon will be combined as group button with dropdown arrow, in which controls can be expanded with dropdown arrow.
 
-## Enable Resizing 
+## Tablet Layout 
 
-Set [`allowResizing`](http://help.syncfusion.com/js/api/ejribbon#members:allowresizing) as true to enable resizing in Ribbon.
+If client width is above  420px, the ribbon will render in Tablet mode.
+
+Set [`isResponsive`](http://help.syncfusion.com/js/api/ejribbon#members:isresponsive) as true to enable resizing in Ribbon.
 
 {% highlight html %}
 
@@ -32,9 +34,8 @@ Set [`allowResizing`](http://help.syncfusion.com/js/api/ejribbon#members:allowre
         $(function () {
             $("#Ribbon").ejRibbon({
                 width: "20%",
-
                 // resizing enabled
-                allowResizing: true,
+                isResponsive: true,
                 applicationTab: {
                     type: ej.Ribbon.applicationTabType.menu,
                     menuItemID: "ribbonmenu",
@@ -96,6 +97,224 @@ Set [`allowResizing`](http://help.syncfusion.com/js/api/ejribbon#members:allowre
 {% endhighlight %}
 
 ![](/js/Ribbon/Resize_images/Resize_img1.png)
+
+## Mobile Layout
+
+If client width is less than 420px, the ribbon will render in mobile mode. In which, you can see that ribbon user interface is customized and redesigned for best view in small screens.
+The customized features includes responsive tab & group rendering, backstage, gallery and button controls.
+
+### Responsive Tab and group
+
+Set [`isResponsive`](http://help.syncfusion.com/js/api/ejribbon#members:isresponsive) as true to enable responsive mode in Ribbon.
+   
+
+{% highlight html %}
+
+    <div id="Ribbon"></div>
+    <script type="text/javascript">
+       $(function () {
+            $("#Ribbon").ejRibbon({
+			isResponsive:true,
+                tabs: [{
+                    id: "home", text: "HOME", groups: [
+                         {
+                             text: "Font", alignType: "rows", content: [{
+                                 groups: [{
+                                     id: "bold",
+                                     type: ej.Ribbon.Type.ToggleButton,
+                                     isMobileOnly: true,
+                                     toggleButtonSettings: {
+                                         contentType: ej.ContentType.ImageOnly,
+                                         defaultText: "Bold",
+                                         activeText: "Bold",
+                                         defaultPrefixIcon: "e-icon e-ribbon e-resbold",
+                                         activePrefixIcon: "e-icon e-ribbon e-resbold",
+                                     }
+                                 },
+                                    {
+                                        id: "italic",
+                                        type: ej.Ribbon.Type.ToggleButton,
+                                        isMobileOnly: true,
+                                        toggleButtonSettings: {
+                                            contentType: ej.ContentType.ImageOnly,
+                                            defaultText: "Italic",
+                                            activeText: "Italic",
+                                            defaultPrefixIcon: "e-icon e-ribbon e-resitalic",
+                                            activePrefixIcon: "e-icon e-ribbon e-resitalic",
+                                            click: "executeAction"
+                                        }
+                                    },
+                                    {
+                                        id: "underline",
+                                        text: "Underline",
+                                        type: ej.Ribbon.Type.ToggleButton,
+                                        isMobileOnly: true,
+                                        toggleButtonSettings: {
+                                            contentType: ej.ContentType.ImageOnly,
+                                            defaultText: "Underline",
+                                            activeText: "Underline",
+                                            defaultPrefixIcon: "e-icon e-ribbon e-resunderline",
+                                            activePrefixIcon: "e-icon e-ribbon e-resunderline",
+                                        }
+                                    },
+                                    {
+                                        id: "strikethrough",
+                                        text: "strikethrough",
+                                        isMobileOnly: true,
+                                        type: ej.Ribbon.Type.ToggleButton,
+                                        toggleButtonSettings: {
+                                            contentType: ej.ContentType.ImageOnly,
+                                            defaultText: "Strikethrough",
+                                            activeText: "Strikethrough",
+                                            defaultPrefixIcon: "e-icon e-ribbon strikethrough",
+                                            activePrefixIcon: "e-icon e-ribbon strikethrough",
+                                        }
+                                    },
+                                    {
+                                        id: "superscript",
+                                        text: "superscript",
+                                        isMobileOnly: true,
+                                        buttonSettings: {
+                                            contentType: ej.ContentType.ImageOnly,
+                                            prefixIcon: "e-icon e-ribbon e-superscripticon",
+                                        }
+                                    }
+                                 ],
+                                 defaults: {
+                                     isBig: false
+                                 }
+                             }]
+                         },
+					]
+                }],
+            });
+        });
+    </script>
+
+{% endhighlight %}
+
+![](Resize_images/responsive1.png)
+{:caption}
+Ribbon Responsive with tab content 
+
+
+
+N> To make the Ribbon control to react as responsive in mobile devices, it is necessary to refer the additional ej.responsive.css file in the application.
+
+## Mobile Toolbar Customization
+
+ Set [`isMobileOnly`](https://help.syncfusion.com/js/api/ejribbon#members:ismobileonly) as true to group control to show the controls 
+ in the Mobile Toolbar of the ribbon. For each tab , first row of mobile ribbon will pick and display the controls which is set as `isMobileOnly` with look adapt to mobile mode.If `isMobileOnly` property is not defined to any of the control within tab, then by default first group content will be displayed in first row toolbar.
+
+ To adapt to proper display of controls , following layout will be customized with constants display.
+
+  * First ribbon toolbar and Button controls with min-height. 
+  * Drop down control will adapt to full screen width.
+  * All button controls icon will be displayed commonly as Top position.
+  
+  {% highlight html %}
+
+    <div id="Ribbon"></div>
+    <script type="text/javascript">
+       $(function () {
+            $("#Ribbon").ejRibbon({
+			isResponsive:true,
+                tabs: [{
+                    id: "home", text: "HOME", groups: [
+                         {
+                             text: "Font", alignType: "rows", content: [{
+                                 groups: [{
+                                     id: "bold",
+                                     type: ej.Ribbon.Type.ToggleButton,
+                                     isMobileOnly: true,
+                                     toggleButtonSettings: {
+                                         contentType: ej.ContentType.ImageOnly,
+                                         defaultText: "Bold",
+                                         activeText: "Bold",
+                                         defaultPrefixIcon: "e-icon e-ribbon e-resbold",
+                                         activePrefixIcon: "e-icon e-ribbon e-resbold",
+                                     }
+                                 },
+                                    {
+                                        id: "italic",
+                                        type: ej.Ribbon.Type.ToggleButton,
+                                        isMobileOnly: true,
+                                        toggleButtonSettings: {
+                                            contentType: ej.ContentType.ImageOnly,
+                                            defaultText: "Italic",
+                                            activeText: "Italic",
+                                            defaultPrefixIcon: "e-icon e-ribbon e-resitalic",
+                                            activePrefixIcon: "e-icon e-ribbon e-resitalic",
+                                            click: "executeAction"
+                                        }
+                                    },
+                                    {
+                                        id: "underline",
+                                        text: "Underline",
+                                        type: ej.Ribbon.Type.ToggleButton,
+                                        isMobileOnly: true,
+                                        toggleButtonSettings: {
+                                            contentType: ej.ContentType.ImageOnly,
+                                            defaultText: "Underline",
+                                            activeText: "Underline",
+                                            defaultPrefixIcon: "e-icon e-ribbon e-resunderline",
+                                            activePrefixIcon: "e-icon e-ribbon e-resunderline",
+                                        }
+                                    },
+                                    {
+                                        id: "strikethrough",
+                                        text: "strikethrough",
+                                        type: ej.Ribbon.Type.ToggleButton,
+                                        toggleButtonSettings: {
+                                            contentType: ej.ContentType.ImageOnly,
+                                            defaultText: "Strikethrough",
+                                            activeText: "Strikethrough",
+                                            defaultPrefixIcon: "e-icon e-ribbon strikethrough",
+                                            activePrefixIcon: "e-icon e-ribbon strikethrough",
+                                        }
+                                    },
+                                    {
+                                        id: "superscript",
+                                        text: "superscript",
+                                        buttonSettings: {
+                                            contentType: ej.ContentType.ImageOnly,
+                                            prefixIcon: "e-icon e-ribbon e-superscripticon",
+                                        }
+                                    }
+                                 ],
+                                 defaults: {
+                                     isBig: false
+                                 }
+                             }]
+                         },
+					]
+                }],
+            });
+        });
+    </script>
+
+{% endhighlight %}
+
+![](Resize_images/responsive2.png)
+{:caption}
+Ribbon Responsive with MobileToolbar 
+
+### Customized Features
+
+The customized layout for  Quick Access Toolbar, backstage, gallery can be seen following screen shots.
+ 
+ ![](Resize_images/responsive3.png)
+ {:caption}
+Ribbon Responsive with Quick Access Toolbar 
+ 
+ ![](Resize_images/responsive4.png)
+ ![](Resize_images/responsive5.png)
+ {:caption}
+Ribbon Responsive with backstage
+ 
+ ![](Resize_images/responsive6.png)
+ {:caption}
+Ribbon Responsive with gallery
 
 ## Group Button Customization
 
