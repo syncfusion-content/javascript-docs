@@ -78,6 +78,11 @@ Multiple custom labels can be set to a PivotGauge widget by adding an array of o
             customLabels: [
                 {
                     color: "Red",
+                    font: {
+                    size: "12px",
+                    fontFamily: "Segoe UI",
+                    fontStyle: "Normal"
+                    },
                     position: {
                         x: 180,
                         y: 150
@@ -85,6 +90,11 @@ Multiple custom labels can be set to a PivotGauge widget by adding an array of o
                 }, 
                 {
                     color: "Green",
+                    font: {
+                    size: "10px",
+                    fontFamily: "Segoe UI",
+                    fontStyle: "Normal"
+                    },
                     position: {
                         x: 180,
                         y: 320
@@ -92,6 +102,11 @@ Multiple custom labels can be set to a PivotGauge widget by adding an array of o
                 }, 
                 {
                     color: "Blue",
+                    font: {
+                    size: "10px",
+                    fontFamily: "Segoe UI",
+                    fontStyle: "Normal"
+                    },
                     position: {
                         x: 180,
                         y: 290

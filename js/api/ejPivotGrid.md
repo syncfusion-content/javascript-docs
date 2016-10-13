@@ -16,8 +16,7 @@ The PivotGrid control is easily configurable, presentation-quality business cont
 
 {% highlight javascript %}
 
-$(element).ejPivotGrid()
-
+    $(element).ejPivotGrid()
 {% endhighlight %}
 
 #### Example
@@ -50,7 +49,7 @@ $("#PivotGrid1").ejPivotGrid(...);
 ### analysisMode `enum`
 {:#members:analysismode}
 
-<ts name = "ej.PivotGrid.AnalysisMode"/>
+<ts name = "ej.Pivot.AnalysisMode"/>
 
 Sets the mode for the PivotGrid widget for binding either OLAP or relational data source.
 
@@ -217,6 +216,8 @@ $("#PivotGrid1").ejPivotGrid({dataSource: {columns: [{ advancedFilter : [{name: 
 ### dataSource.columns.advancedFilter.labelFilterOperator `string`
 {:#members:datasource-columns-advancedfilter-labelfilteroperator}
 
+<ts name = "ej.olap.LabelFilterOptions"/>
+
 Allows the user to set the operator for label filtering to do advanced filtering (excel-like) for OLAP data source in client-mode.
 
 #### Default Value: ""
@@ -232,6 +233,8 @@ $("#PivotGrid1").ejPivotGrid({dataSource: {columns: [{ advancedFilter : [{labelF
 ### dataSource.columns.advancedFilter.valueFilterOperator `string`
 {:#members:datasource-columns-advancedfilter-valuefilteroperator}
 
+<ts name = "ej.olap.ValueFilterOptions"/>
+
 Allows the user to set the operator for value filtering to do advanced filtering (excel-like) for OLAP data source in client-mode.
 
 #### Default Value: ""
@@ -246,6 +249,8 @@ $("#PivotGrid1").ejPivotGrid({dataSource: {columns: [{ advancedFilter : [{valueF
 
 ### dataSource.columns.advancedFilter.advancedFilterType `string`
 {:#members:datasource-columns-advancedfilter-advancedfiltertype}
+
+<ts name = "ej.olap.AdvancedFilterType"/>
 
 Allows the user to set the filtering type while doing advanced filtering (excel-like) for OLAP data source in client-mode.
 
@@ -402,6 +407,8 @@ $("#PivotGrid1").ejPivotGrid({dataSource: {rows: [{ advancedFilter : [{name: "di
 ### dataSource.rows.advancedFilter.labelFilterOperator `string`
 {:#members:datasource-rows-advancedfilter-labelfilteroperator}
 
+<ts name = "ej.olap.LabelFilterOptions"/>
+
 Allows the user to set the operator for label filtering to do advanced filtering (excel-like) for OLAP data source in client-mode.
 
 #### Default Value: ""
@@ -417,6 +424,8 @@ $("#PivotGrid1").ejPivotGrid({dataSource: {rows: [{ advancedFilter : [{labelFilt
 ### dataSource.rows.advancedFilter.valueFilterOperator `string`
 {:#members:datasource-rows-advancedfilter-valuefilteroperator}
 
+<ts name = "ej.olap.ValueFilterOptions"/>
+
 Allows the user to set the operator for value filtering to do advanced filtering (excel-like) for OLAP data source in client-mode.
 
 #### Default Value: ""
@@ -431,6 +440,8 @@ $("#PivotGrid1").ejPivotGrid({dataSource: {rows: [{ advancedFilter : [{valueFilt
 
 ### dataSource.rows.advancedFilter.advancedFilterType `string`
 {:#members:datasource-rows-advancedfilter-advancedfiltertype}
+
+<ts name = "ej.olap.AdvancedFilterType"/>
 
 Allows the user to set the filtering type while doing advanced filtering (excel-like) for OLAP data source in client-mode.
 
@@ -667,6 +678,56 @@ Used to bind the drilled members by default through report.
 
 #### Default Value: []
 
+### frozenHeaderSettings `object`
+{:#members:frozenheadersettings}
+
+Object that holds the settings of frozen headers.
+
+#### Default Value: {}
+
+{% highlight html %}
+ 
+$("#PivotGrid1").ejPivotGrid({ frozenHeaderSettings: { enableFrozenHeaders: true }}); 
+
+{% endhighlight %}
+
+### frozenHeaderSettings.enableFrozenRowHeaders `boolean`
+{:#members:frozenheadersettings-enablefrozenrowheaders}
+
+Allows the user to freeze the row headers alone on scrolling the horizontal scroll bar.
+
+#### Default Value: false
+
+{% highlight html %}
+ 
+$("#PivotGrid1").ejPivotGrid({ frozenHeaderSettings: { enableFrozenRowHeaders: true }}); 
+
+{% endhighlight %}
+### frozenHeaderSettings.enableFrozenColumnHeaders `boolean`
+{:#members:frozenheadersettings-enablefrozencolumnheaders}
+
+Allows the user to freeze the column headers alone on scrolling the vertical scroll bar.
+
+#### Default Value: false
+
+{% highlight html %}
+ 
+$("#PivotGrid1").ejPivotGrid({ frozenHeaderSettings: { enableFrozenColumnHeaders: true }}); 
+
+{% endhighlight %}
+
+### frozenHeaderSettings.enableFrozenHeaders `boolean`
+{:#members:frozenheadersettings-enablefrozenheaders}
+
+Allows the user to freeze both the row headers and column headers on scrolling.
+
+#### Default Value: false
+
+{% highlight html %}
+ 
+$("#PivotGrid1").ejPivotGrid({ frozenHeaderSettings: { enableFrozenHeaders: true }});
+
+{% endhighlight %}
 
 ### customObject `object`
 {:#members:customobject}
@@ -680,6 +741,21 @@ Object utilized to pass additional information between client-end and service-en
 {% highlight html %}
  
 $("#PivotGrid1").ejPivotGrid({ customObject: { Language: "en-US" }}); 
+
+{% endhighlight %}
+
+### collapsedMembers `object`
+{:#members:collapsedmembers}
+
+Contains the list of members in field-wise manner which are collapsed.
+
+#### Default Value: null
+
+**Example:**
+
+{% highlight html %}
+ 
+$("#PivotGrid1").ejPivotGrid({ collapsedMembers: { Country: ["Canada", "France"] } }); 
 
 {% endhighlight %}
 
@@ -943,6 +1019,50 @@ $("#PivotGrid1").ejPivotGrid({ enableToolTipAnimation: true });
 
 {% endhighlight %}
 
+### enableColumnResizing `boolean`
+{:#members:enablecolumnresizing}
+
+Allows the user to adjust the width of the columns dynamically.
+
+#### Default Value: false
+
+**Example:**
+
+{% highlight html %}
+ 
+$("#PivotGrid1").ejPivotGrid({ enableColumnResizing: true });
+
+{% endhighlight %}
+
+### enableVirtualScrolling `boolean`
+{:#members:enablevirtualscrolling}
+
+Allows the user to view large amount of data through virtual scrolling.
+
+#### Default Value: false
+
+**Example:**
+
+{% highlight html %}
+ 
+$("#PivotGrid1").ejPivotGrid({ enableVirtualScrolling: true });
+
+{% endhighlight %}
+
+### enablePaging `boolean`
+{:#members:enablepaging}
+
+Allows the user to view large amount of data by applying paging.
+
+#### Default Value: false
+
+**Example:**
+
+{% highlight html %}
+ 
+$("#PivotGrid1").ejPivotGrid({ enablePaging: true });
+
+{% endhighlight %}
 
 ### enableVirtualScrolling `boolean`
 {:#members:enablevirtualscrolling}
@@ -1341,6 +1461,96 @@ $("#PivotGrid1").ejPivotGrid({ serviceMethodSettings: { memberExpand: "MemberExp
 
 {% endhighlight %}
 
+### serviceMethodSettings.cellEditing `string`
+{:#members:servicemethodsettings-cellediting}
+
+Allows the user to set the custom name for the service method responsible for editing the cells.
+
+#### Default Value: "CellEditing"
+
+**Example:**
+
+{% highlight html %}
+ 
+$("#PivotGrid1").ejPivotGrid({ serviceMethodSettings: { cellEditing: "MyCellEditingMethod" } });
+
+{% endhighlight %}
+
+### serviceMethodSettings.saveReport `string`
+{:#members:servicemethodsettings-savereport}
+
+Allows the user to set the custom name for the service method responsible for saving the current report to data base.
+
+#### Default Value: "SaveReport"
+
+**Example:**
+
+{% highlight html %}
+ 
+$("#PivotGrid1").ejPivotGrid({ serviceMethodSettings: { saveReport: "MySaveReportMethod" } });
+
+{% endhighlight %}
+
+### serviceMethodSettings.loadReport `string`
+{:#members:servicemethodsettings-loadreport}
+
+Allows the user to set the custom name for the service method responsible for loading a report from data base.
+
+#### Default Value: "LoadReportFromDB"
+
+**Example:**
+
+{% highlight html %}
+ 
+$("#PivotGrid1").ejPivotGrid({ serviceMethodSettings: { loadReport: "MyLoadReportMethod" } });
+
+{% endhighlight %}
+
+### serviceMethodSettings.calculatedField `string`
+{:#members:servicemethodsettings-calculatedfield}
+
+Allows the user to set the custom name for the service method responsible for adding a calculated field to the report.
+
+#### Default Value: "CalculatedField"
+
+**Example:**
+
+{% highlight html %}
+ 
+$("#PivotGrid1").ejPivotGrid({ serviceMethodSettings: { calculatedField: "MyCalculatedFieldMethod" } });
+
+{% endhighlight %}
+
+### serviceMethodSettings.drillThroughHierarchies `string`
+{:#members:servicemethodsettings-drillthroughhierarchies}
+
+Allows the user to set the custom name for the service method responsible for performing drill through operation.
+
+#### Default Value: "DrillThroughHierarchies"
+
+**Example:**
+
+{% highlight html %}
+ 
+$("#PivotGrid1").ejPivotGrid({ serviceMethodSettings: { drillThroughHierarchies: "MyDrillThroughHierarchiesMethod" } });
+
+{% endhighlight %}
+
+### serviceMethodSettings.drillThroughDataTable `string`
+{:#members:servicemethodsettings-drillthroughdatatable}
+
+Allows the user to set the custom name for the service method responsible for performing drill through operation in data table.
+
+#### Default Value: "DrillThroughDataTable"
+
+**Example:**
+
+{% highlight html %}
+ 
+$("#PivotGrid1").ejPivotGrid({ serviceMethodSettings: { drillThroughDataTable: "MyDrillThroughDataTableMethod" } });
+
+{% endhighlight %}
+
 ### serviceMethodSettings.writeBack `string`
 {:#members:servicemethodsettings-writeback}
 
@@ -1467,6 +1677,146 @@ gridObj.refreshPivotGrid();
 
 {% endhighlight %}
 
+### refreshControl()
+{:#methods:refreshcontrol}
+
+This function re-renders the control with the report available at that instant.
+
+**Example:**
+
+{% highlight html %}
+
+var gridObj = $("#PivotGrid1").data("ejPivotGrid");
+gridObj.refreshControl();
+
+{% endhighlight %}
+
+### calculateCellWidths()
+{:#methods:calculatecellwidths}
+
+This function returns the height of all rows and width each and every column.
+
+**Example:**
+
+{% highlight html %}
+
+var gridObj = $("#PivotGrid1").data("ejPivotGrid");
+var gridDimensions = gridObj.calculateCellWidths();
+
+{% endhighlight %}
+
+### createConditionalDialog()
+{:#methods:createconditionaldialog}
+
+This function creates the conditional formatting dialog to apply conditional formatting for PivotGrid control.
+
+**Example:**
+
+{% highlight html %}
+
+var gridObj = $("#PivotGrid1").data("ejPivotGrid");
+gridObj.createConditionalDialog();
+
+{% endhighlight %}
+
+### saveReport()
+{:#methods:savereport}
+
+This function saves the current report to the database/local storage.
+
+**Example:**
+
+{% highlight html %}
+
+var gridObj = $("#PivotGrid1").data("ejPivotGrid");
+var storageOption = "local"; //it takes the string value "local" for local storage and "database" for storing to data base.
+var url = "";//it takes the service url for storing to data base. For local it is not required.
+gridObj.saveReport("reportName", storageOption, url);
+
+{% endhighlight %}
+
+### loadReport()
+{:#methods:loadreport}
+
+This function loads the specified report from the database/local storage.
+
+**Example:**
+
+{% highlight html %}
+
+var gridObj = $("#PivotGrid1").data("ejPivotGrid");
+var storageOption = "local"; //it takes the string value "local" for loading a report from local storage and "database" for loading from data base.
+var url = "";//it takes the service method url for loading report from data base. For local it is not required.
+gridObj.loadReport("reportName", storageOption, url);
+
+{% endhighlight %}
+
+### excelLikeLayout()
+{:#methods:excellikelayout}
+
+This function reconstructs the JSON data formed for rendering PivotGrid in excel-like layout format.
+
+**Example:**
+
+{% highlight html %}
+
+var gridObj = $("#PivotGrid1").data("ejPivotGrid");
+gridObj.excelLikeLayout(JSONObjectArray);
+
+{% endhighlight %}
+
+### getOlapReport()
+{:#methods:getolapreport}
+
+Returns the OlapReport string maintained along with the axis elements information.
+
+**Example:**
+
+{% highlight html %}
+ 
+    var gridObj = $("#PivotGrid1").data("ejPivotGrid");
+    var report = gridObj.getOlapReport();
+{% endhighlight %}
+
+### setOlapReport()
+{:#methods:setolapreport}
+
+Sets the OlapReport string along with the axis information and maintains it in a property.
+
+**Example:**
+
+{% highlight html %}
+ 
+    var gridObj = $("#PivotGrid1").data("ejPivotGrid");
+    gridObj.setOlapReport(olapReportObj);
+{% endhighlight %}
+
+### getJSONRecords()
+{:#methods:getjsonrecords}
+
+Returns the JSON records formed to render the control.
+
+**Example:**
+
+{% highlight html %}
+ 
+    var gridObj = $("#PivotGrid1").data("ejPivotGrid");
+    var jsonRecords = gridObj.getJSONRecords();
+{% endhighlight %}
+
+### setJSONRecords()
+{:#methods:setjsonrecords}
+
+Sets the JSON records formed to render the control to a property.
+
+**Example:**
+
+{% highlight html %}
+ 
+    var gridObj = $("#PivotGrid1").data("ejPivotGrid");
+    gridObj.setJSONRecords(jsonRecords);
+{% endhighlight %}
+
 ### refreshFieldCaption()
 {:#methods:refreshfieldcaption}
 
@@ -1522,19 +1872,6 @@ Triggers when it reaches client-side after any AJAX request.
 </thead>
 <tbody>
 <tr>
-<td class="name">argument</td>
-<td class="type">Object</td>
-<td class="description last">Event parameters from PivotGrid
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
 <td class="name">action</td>
 <td class="type">string</td>
 <td class="description last">return the current action of PivotGrid control.</td>
@@ -1563,10 +1900,6 @@ Triggers when it reaches client-side after any AJAX request.
 <td class="name">type</td>
 <td class="type">string</td>
 <td class="description last">returns the name of the event</td>
-</tr>
-</tbody>
-</table>
-</td>
 </tr>
 </tbody>
 </table>
@@ -1597,19 +1930,6 @@ Triggers before any AJAX request is passed from PivotGrid to service methods.
 </thead>
 <tbody>
 <tr>
-<td class="name">argument</td>
-<td class="type">Object</td>
-<td class="description last">Event parameters from PivotGrid
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
 <td class="name">action</td>
 <td class="type">string</td>
 <td class="description last">return the current action of PivotGrid control.</td>
@@ -1641,10 +1961,6 @@ Triggers before any AJAX request is passed from PivotGrid to service methods.
 </tr>
 </tbody>
 </table>
-</td>
-</tr>
-</tbody>
-</table>
 
 **Example:**
 
@@ -1661,19 +1977,6 @@ $("#PivotGrid1").ejPivotGrid({
 
 Triggers before Pivot Engine starts to populate.
 
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">argument</td>
-<td class="type">Object</td>
-<td class="description last">Event parameters from PivotGrid
 <table class="params">
 <thead>
 <tr>
@@ -1705,10 +2008,6 @@ Triggers before Pivot Engine starts to populate.
 </tr>
 </tbody>
 </table>
-</td>
-</tr>
-</tbody>
-</table>
 
 **Example:**
 
@@ -1726,19 +2025,6 @@ $("#PivotGrid1").ejPivotGrid({
 
 Triggers when double click action is performed over a cell. 
 
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">argument</td>
-<td class="type">Object</td>
-<td class="description last">Event parameters from PivotGrid
 <table class="params">
 <thead>
 <tr>
@@ -1780,10 +2066,6 @@ Triggers when double click action is performed over a cell.
 </tr>
 </tbody>
 </table>
-</td>
-</tr>
-</tbody>
-</table>
 
 **Example:**
 
@@ -1801,19 +2083,6 @@ $("#PivotGrid1").ejPivotGrid({
 
 Triggers when right-click action is performed on a cell.
 
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">argument</td>
-<td class="type">Object</td>
-<td class="description last">Event parameters from PivotGrid.
 <table class="params">
 <thead>
 <tr>
@@ -1850,10 +2119,6 @@ Triggers when right-click action is performed on a cell.
 </tr>
 </tbody>
 </table>
-</td>
-</tr>
-</tbody>
-</table>
 
 **Example:**
 
@@ -1871,19 +2136,6 @@ $("#PivotGrid1").ejPivotGrid({
 
 Triggers when a specific range of value cells are selected.
 
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">argument</td>
-<td class="type">Object</td>
-<td class="description last">Event parameters from PivotGrid.
 <table class="params">
 <thead>
 <tr>
@@ -1925,10 +2177,6 @@ Triggers when a specific range of value cells are selected.
 </tr>
 </tbody>
 </table>
-</td>
-</tr>
-</tbody>
-</table>
 
 **Example:**
 
@@ -1945,19 +2193,6 @@ $("#PivotGrid1").ejPivotGrid({
 
 Triggers when the hyperlink of column header is clicked.
 
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">argument</td>
-<td class="type">Object</td>
-<td class="description last">Event parameters from PivotGrid.
 <table class="params">
 <thead>
 <tr>
@@ -1994,10 +2229,6 @@ Triggers when the hyperlink of column header is clicked.
 </tr>
 </tbody>
 </table>
-</td>
-</tr>
-</tbody>
-</table>
 
 **Example:**
 
@@ -2025,19 +2256,6 @@ Triggers after performing drill operation in PivotGrid.
 </thead>
 <tbody>
 <tr>
-<td class="name">argument</td>
-<td class="type">Object</td>
-<td class="description last">Event parameters from PivotGrid
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
 <td class="name">cancel</td>
 <td class="type">boolean</td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
@@ -2051,10 +2269,6 @@ Triggers after performing drill operation in PivotGrid.
 <td class="name">type</td>
 <td class="type">string</td>
 <td class="description last">returns the name of the event</td>
-</tr>
-</tbody>
-</table>
-</td>
 </tr>
 </tbody>
 </table>
@@ -2075,19 +2289,6 @@ $("#PivotGrid1").ejPivotGrid({
 
 Triggers while clicking "OK" button in the drill-through dialog. 
 
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">argument</td>
-<td class="type">Object</td>
-<td class="description last">Event parameters from PivotGrid
 <table class="params">
 <thead>
 <tr>
@@ -2124,10 +2325,6 @@ Triggers while clicking "OK" button in the drill-through dialog.
 </tr>
 </tbody>
 </table>
-</td>
-</tr>
-</tbody>
-</table>
 
 **Example:**
 
@@ -2145,19 +2342,6 @@ $("#PivotGrid1").ejPivotGrid({
 
 Triggers when PivotGrid loading is initiated.
 
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">argument</td>
-<td class="type">Object</td>
-<td class="description last">Event parameters from PivotGrid.
 <table class="params">
 <thead>
 <tr>
@@ -2201,10 +2385,6 @@ Triggers when PivotGrid loading is initiated.
 <td class="name">type</td>
 <td class="type">string</td>
 <td class="description last">returns the name of the event.</td>
-</tr>
-</tbody>
-</table>
-</td>
 </tr>
 </tbody>
 </table>
@@ -2234,19 +2414,6 @@ Triggers when PivotGrid widget completes all operations at client-side after any
 </thead>
 <tbody>
 <tr>
-<td class="name">argument</td>
-<td class="type">Object</td>
-<td class="description last">Event parameters from PivotGrid.
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
 <td class="name">args</td>
 <td class="type">object</td>
 <td class="description last">returns the original event args.</td>
@@ -2283,10 +2450,6 @@ Triggers when PivotGrid widget completes all operations at client-side after any
 </tr>
 </tbody>
 </table>
-</td>
-</tr>
-</tbody>
-</table>
 
 **Example:**
 
@@ -2303,19 +2466,6 @@ $("#PivotGrid1").ejPivotGrid({
 
 Triggers when any error occurred during AJAX request.
 
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">argument</td>
-<td class="type">Object</td>
-<td class="description last">Event parameters from PivotGrid.
 <table class="params">
 <thead>
 <tr>
@@ -2367,10 +2517,6 @@ Triggers when any error occurred during AJAX request.
 </tr>
 </tbody>
 </table>
-</td>
-</tr>
-</tbody>
-</table>
 
 **Example:**
 
@@ -2388,19 +2534,6 @@ $("#PivotGrid1").ejPivotGrid({
 
 Triggers when PivotGrid successfully reaches client-side after any AJAX request. 
 
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">argument</td>
-<td class="type">Object</td>
-<td class="description last">Event parameters from PivotGrid.
 <table class="params">
 <thead>
 <tr>
@@ -2447,10 +2580,6 @@ Triggers when PivotGrid successfully reaches client-side after any AJAX request.
 </tr>
 </tbody>
 </table>
-</td>
-</tr>
-</tbody>
-</table>
 
 **Example:**
 
@@ -2468,19 +2597,6 @@ $("#PivotGrid1").ejPivotGrid({
 
 Triggers when the hyperlink of row header is clicked.
 
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">argument</td>
-<td class="type">Object</td>
-<td class="description last">Event parameters from PivotGrid.
 <table class="params">
 <thead>
 <tr>
@@ -2514,10 +2630,6 @@ Triggers when the hyperlink of row header is clicked.
 <td class="name">uniqueName</td>
 <td class="type">string</td>
 <td class="description last">returns the unique name of levels/members.</td>
-</tr>
-</tbody>
-</table>
-</td>
 </tr>
 </tbody>
 </table>
@@ -2547,19 +2659,6 @@ Triggers when the hyperlink of summary cell is clicked.
 </thead>
 <tbody>
 <tr>
-<td class="name">argument</td>
-<td class="type">Object</td>
-<td class="description last">Event parameters from PivotGrid.
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
 <td class="name">args</td>
 <td class="type">object</td>
 <td class="description last">returns the original event args.</td>
@@ -2583,10 +2682,6 @@ Triggers when the hyperlink of summary cell is clicked.
 <td class="name">uniqueName</td>
 <td class="type">string</td>
 <td class="description last">returns the unique name of levels/members.</td>
-</tr>
-</tbody>
-</table>
-</td>
 </tr>
 </tbody>
 </table>
@@ -2616,19 +2711,6 @@ Triggers when the hyperlink of value cell is clicked.
 </thead>
 <tbody>
 <tr>
-<td class="name">argument</td>
-<td class="type">Object</td>
-<td class="description last">Event parameters from PivotGrid.
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
 <td class="name">args</td>
 <td class="type">object</td>
 <td class="description last">returns the original event args.</td>
@@ -2655,7 +2737,30 @@ Triggers when the hyperlink of value cell is clicked.
 </tr>
 </tbody>
 </table>
-</td>
+
+### saveReport
+{:#events:saveReport}
+
+Triggers before saving the current report to data base.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">args</td>
+<td class="type">object</td>
+<td class="description last">returns the original event args.</td>
+</tr>
+<tr>
+<td class="name">report</td>
+<td class="type">object</td>
+<td class="description last">returns the report to be stored in data base.</td>
 </tr>
 </tbody>
 </table>
@@ -2665,11 +2770,116 @@ Triggers when the hyperlink of value cell is clicked.
 {% highlight html %}
  
 $("#PivotGrid1").ejPivotGrid({
-   valueCellHyperlinkClick: function (args) {}
-});      
+   saveReport: function (args) {}
+});
 
 {% endhighlight %}
 
+### loadReport
+{:#events:loadReport}
+
+Triggers before loading a report from data base.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">targetControl</td>
+<td class="type">object</td>
+<td class="description last">returns the PivotGrid object.</td>
+</tr>
+<tr>
+<td class="name">dataModel</td>
+<td class="type">string</td>
+<td class="description last">returns whether the control is bound with OLAP or Relational data source.</td>
+</tr>
+</tbody>
+</table>
+
+**Example:**
+
+{% highlight html %}
+ 
+$("#PivotGrid1").ejPivotGrid({
+   loadReport: function (args) {}
+});
+
+{% endhighlight %}
+
+### beforeExport
+{:#events:beforeExport}
+
+Triggers before performing exporting in pivot grid.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">url</td>
+<td class="type">string</td>
+<td class="description last">contains the url of the service responsible for exporting.</td>
+</tr>
+<tr>
+<td class="name">fileName</td>
+<td class="type">string</td>
+<td class="description last">contains the name of the exporting file.</td>
+</tr>
+</tbody>
+</table>
+
+**Example:**
+
+{% highlight html %}
+ 
+$("#PivotGrid1").ejPivotGrid({
+   beforeExport: function (args) {}
+});
+
+{% endhighlight %}
+
+### cellEdit
+{:#events:celledit}
+
+Triggers before editing the cells.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">editCellsInfo</td>
+<td class="type">array</td>
+<td class="description last">contains the array of cells selected for editing.</td>
+</tr>
+</tbody>
+</table>
+
+**Example:**
+
+{% highlight html %}
+ 
+$("#PivotGrid1").ejPivotGrid({
+   cellEdit: function (args) {}
+});
+
+{% endhighlight %}
 
 ## Enumeration
 

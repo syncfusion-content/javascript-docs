@@ -3208,11 +3208,12 @@ $("#Grid").ejGrid({
 {% endhighlight %}
 
 ### resizeSettings `Object`
-{:#members:resizeSettings}
+{:#members:resizesettings}
 
 Gets or sets an object that indicates whether to modify the resizing behavior.
+
 ### resizeSettings.resizeMode `enum`
-{:#members:resizeSettings-resizeMode}
+{:#members:resizesettings-resizemode}
 
 <ts name="ej.Grid.ResizeMode"/>
 
@@ -8583,6 +8584,55 @@ gridObj.setCellValue(1,"EmployeeID", "GREYER");
 <script>
 //Used to update a particular cell value
 $("#Grid").ejGrid("setCellValue", 1, "EmployeeID", "GREYER");
+</script>{% endhighlight %}
+
+### setPhoneModeMaxWidth(value)
+{:#methods:setphonemodemaxwidth}
+
+The grid rows has to be rendered as detail view in mobile mode based on given value.
+
+N> Need to set same value for max-width in ejgrid.responsive.css file  
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">Index</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description last">It is used to render grid rows as details view in mobile mode.</td>
+</tr>
+</tbody>
+</table>
+
+#### Returns:
+{:#methods:returns:}
+
+Void
+
+####Example
+{:.example}
+
+
+{% highlight html %} 
+
+<script>
+// Create grid object.
+var gridObj = $("#Grid").data("ejGrid");
+//Used to render grid rows as details view in mobile mode
+gridObj.setPhoneModeMaxWidth(500);
+</script>{% endhighlight %}
+
+{% highlight html %}
+ 
+<script>
+//Used to render grid rows as details view in mobile mode
+$("#Grid").ejGrid("setPhoneModeMaxWidth", 500);
 </script>{% endhighlight %}
 
 
