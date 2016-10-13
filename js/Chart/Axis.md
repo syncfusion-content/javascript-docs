@@ -1388,7 +1388,7 @@ You can change the alignment of the text to far, near and center position using 
 
 ![](/js/Chart/Axis_images/axis_img60.png)
 
-You can trim, wrap or wrap and trim the text if it exceeds the maximum text width value using the property [`textOverflow`]
+You can trim, wrap or wrapAndTrim the text if it exceeds the maximum text width value using the property [`textOverflow`]
 
 {% highlight javascript %}
 
