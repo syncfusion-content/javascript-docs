@@ -323,6 +323,37 @@ The FileExplorer allows to move the files from one folder to another folder of F
 {% endhighlight %}
 
 
+### allowKeyboardNavigation `boolean`
+{:#members:allowkeyboardnavigation}
+
+Gets or sets a value that indicates whether to enable keyboard support for FileExplorer actions.
+
+#### Default Value
+
+
+* true
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+        <div id="fileExplorer"></div> 
+        
+        <script>
+        // Initialize the FileExplorer with allowKeyboardNavigation value specified.
+        $('#fileExplorer').ejFileExplorer({
+        allowKeyboardNavigation: false,            
+        path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
+        ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction"
+        });
+        </script>
+        
+{% endhighlight %}
+
+
+
 
 ### allowMultiSelection `boolean`
 {:#members:allowmultiselection}
@@ -1990,7 +2021,7 @@ The tools property is used to configure and group required toolbar items in File
 
 
 
-* { creation: ["NewFolder"], navigation: ["Back", "Forward", "Upward"], addressBar: ["Addressbar"], editing: ["Refresh", "Upload", "Delete", "Rename", "Download"], copyPaste: ["Cut", "Copy", "Paste"], getProperties: ["Details"], searchBar: ["Searchbar"], layout: ["Layout"]}
+* { creation: ["NewFolder"], navigation: ["Back", "Forward", "Upward"], addressBar: ["Addressbar"], editing: ["Refresh", "Upload", "Delete", "Rename", "Download"], copyPaste: ["Cut", "Copy", "Paste"], getProperties: ["Details"], searchBar: ["Searchbar"], layout: ["Layout"], sortby: ["Sortby"]}
 
 
 
@@ -2055,7 +2086,7 @@ The toolsList property is used to arrange the toolbar items in the FileExplorer 
 
 
 
-* ["layout", "creation", "navigation", "addressBar", "editing", "copyPaste", "getProperties", "searchBar"]
+* ["layout", "creation", "navigation", "addressBar", "editing", "copyPaste", "sortby", "getProperties", "searchBar"]
 
 
 
@@ -4026,6 +4057,117 @@ type</td>
 
 
 
+
+
+
+### keydown
+{:#events:keydown}
+
+
+
+Fires when keydown in FileExplorer control.
+
+<<table class="params">
+<thead>
+<tr>
+Add a comment to this line
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+argument</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description">Event parameters from FileExplorer
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">Set to true when the event has to be canceled, else false.</td>
+</tr>
+<tr>
+<td class="name">
+keyCode</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">returns the downed key keyCode value</td>
+</tr>
+<tr>
+<td class="name">
+altKey</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">returns altKey value.</td>
+</tr>
+<tr>
+<td class="name">
+shiftKey</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">returns shiftKey value.</td>
+</tr>
+<tr>
+<td class="name">
+ctrlKey</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">returns ctrlKey value.</td>
+</tr>
+<tr>
+<td class="name">
+originalArgs</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">returns the event object.</td>
+</tr>
+<tr>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.FileExplorer.Model"/>
+<span class="param-type">object</span></td>
+<td class="description">returns the FileExplorer model.</td>
+</tr>
+<tr>
+<td class="name">
+type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">returns the name of the event.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+        <div id="fileExplorer" ></div> 
+        
+        <script>
+        // keydown event for FileExplorer
+        $('#fileExplorer').ejFileExplorer({            
+        path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
+        ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction",      
+        keydown: function (args) {}
+        });
+        </script>
+
+{% endhighlight %}
 
 
 
