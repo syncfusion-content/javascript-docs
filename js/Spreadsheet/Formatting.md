@@ -125,7 +125,7 @@ To customize your fonts you can apply formats like bold, italic, strike-through 
 
 ### Text alignment
 
-Text align like top, bottom, middle, left, right, and centre is used to align texts based on cell dimension.
+Text align like top, bottom, middle, left, right, and center is used to align texts based on cell dimension.
 
 ### Indents
 

@@ -265,14 +265,14 @@ You can set the “**enableStrictMode” option** to restrict entering values de
                 value: 35, // sets value in the numeric
                 minValue: 1, // sets min value for range 
                 maxValue: 10000, // sets max value for range
-                enableStrictMode: true // sets strict mode to True will set the value 
             });
             // simple Percentage creation
             $("#servTax").ejPercentageTextbox({
                 watermarkText: " Service Tax", // sets watermark in percentage
-                value: 3, // sets value by default 
-                minValue: 5, // sets min value for calculation
+                value: 5, // sets value by default 
+                minValue: 3, // sets min value for calculation
                 maxValue: 100// sets max value for calculation
+                enableStrictMode: true // sets strict mode to True will set the value 
             });
             // simple Currency creation
             $("#amountperum").ejCurrencyTextbox({

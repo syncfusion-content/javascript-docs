@@ -11,7 +11,7 @@ documentation: ug
 
 ## Localization in PivotGauge Control
 
- We can localize the PivotGauge control texts with a collection of localized strings using **"ej.PivotGauge.locale"** for different cultures.
+ We can localize the PivotGauge control texts with a collection of localized strings using **"ej.PivotGauge.Locale"** for different cultures.
  
  N> By default, the PivotGauge control is localized in **"en-US"**.
 
@@ -19,7 +19,7 @@ Following code example illustrates on how to localize PivotGauge based on "Frenc
 
 {% highlight javascript %}
 
-    ej.PivotGauge.locale["fr-FR"] = {
+    ej.PivotGauge.Locale["fr-FR"] = {
         RevenueGoal: "Objectif de chiffre d'affaires",
         RevenueValue: "Valeur du chiffre d'affaires"
     }

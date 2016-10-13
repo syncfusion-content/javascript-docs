@@ -325,6 +325,7 @@ When the axis labels overlap with each other based on the Chart dimensions and l
 N> By default, the [`labelIntersection`](/js/api/ejchart#members:primaryxaxis-labelintersectaction) property is none in PivotChart.
 
 The following options that are supported for `labelIntersection` property are: 
+
 * rotate45
 * rotate90
 * trim

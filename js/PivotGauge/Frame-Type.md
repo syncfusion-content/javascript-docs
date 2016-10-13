@@ -26,13 +26,21 @@ Full Circle frame lets the PivotGauge display in circular shape. Frame type can 
 
 ## Half Circle
 
-Half Circle frame lets the PivotGauge display in semi-circular shape. For this, frame type needs to be set as "halfCircle" within the [`frameType`](/js/api/ejcirculargauge#members:frame) property.
+Half Circle frame lets the PivotGauge to display in semi-circular shape. For this, frame type needs to be set as "halfCircle" within the [`frameType`](/js/api/ejcirculargauge#members:frame) property and need to set `startAngle` and `sweepAngle` for the PivotGauge in the  [`scales`](/js/api/ejcirculargauge#members:scales) property.
 
 {% highlight javascript %}
 
     $("#PivotGauge1").ejPivotGauge({
         //....
-        frame: { frameType: "halfCircle" }
+        frame: {
+               frameType: 'halfcircle',
+               halfCircleFrameStartAngle: 180, halfCircleFrameEndAngle: 360
+        },
+        scales: [{
+                    //..
+                    startAngle: 180, sweepAngle: 180
+                    //..
+                }]
     });
 
 {% endhighlight %}

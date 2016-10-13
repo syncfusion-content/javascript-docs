@@ -63,8 +63,7 @@ The following code example describes the above behavior.
 {% highlight javascript %}
 $(function () {
     $("#Spreadsheet").ejSpreadsheet({
-        // the datasource "window.defaultData" is referred from   
-        'http://js.syncfusion.com/demos/web/scripts/xljsondata.min.js'
+        // the datasource "window.defaultData" is referred from 'http://js.syncfusion.com/demos/web/scripts/xljsondata.min.js'
         sheets: [{
             rangeSettings: [{ dataSource: window.defaultData, startCell: "A1" }],                               
         }],
@@ -116,8 +115,7 @@ The following code example describes the above behavior.
 {% highlight javascript %}
 $(function () {
     $("#Spreadsheet").ejSpreadsheet({
-        // the datasource "window.defaultData" is referred from   
-        'http://js.syncfusion.com/demos/web/scripts/xljsondata.min.js'
+        // the datasource "window.defaultData" is referred from 'http://js.syncfusion.com/demos/web/scripts/xljsondata.min.js'
         sheets: [{
             rangeSettings: [{ dataSource: window.defaultData, startCell: "A1"}], 
             showGridlines: false                             

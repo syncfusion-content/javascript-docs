@@ -246,6 +246,248 @@ The following output is displayed as a result of the above code example.
 
 ![](Editing_images/editing_img3.png)
 
+### External Form
+
+Set the [`editMode`](https://help.syncfusion.com/js/api/ejkanban#members:editsettings-editmode) as externalform to open the edit form in outside kanban content.
+
+The following code example describes the above behavior.
+
+{% highlight html %}
+
+    <div id='Kanban'></div>
+
+{% endhighlight %}
+
+{% highlight javascript %}
+
+    $(function () {
+        var data = ej.DataManager(window.kanbanData).executeLocal(ej.Query().take(30));
+        
+        $("#Kanban").ejKanban(
+        {
+            dataSource: data,
+            columns: [
+                { headerText: "Backlog", key: "Open" },
+                { headerText: "In Progress", key: "InProgress" },
+                { headerText: "Done", key: "Close" }
+            ],
+            keyField: "Status",
+            allowTitle: true,
+            fields: {
+                content: "Summary",
+                primaryKey: "Id"
+            },
+            scrollSettings:{  
+			      height:500,
+				  width:700,
+			},
+            editSettings: {
+                editMode: ej.Kanban.EditMode.ExternalForm,
+                editItems: [
+                            { field: "Id", editType: ej.Kanban.EditingType.String,validationRules: { required: true, number: true }},
+                            { field: "Status", editType: ej.Kanban.EditingType.Dropdown },
+                            { field: "Assignee", editType: ej.Kanban.EditingType.Dropdown },
+                            { field: "Estimate", editType: ej.Kanban.EditingType.Numeric, editParams: { decimalPlaces: 2 },validationRules: {range: [0, 1000]}},
+                            { field: "Summary", editType: ej.Kanban.EditingType.TextArea,validationRules: { required: true}},
+                ],
+                allowEditing: true,
+                allowAdding: true
+            }
+        });
+    });
+
+{% endhighlight %}
+
+The following output is displayed as a result of the above code example.
+
+![](Editing_images/editing_img11.png)
+
+Form Position:
+
+Form Position can be customized by setting the [`formPosition`](https://help.syncfusion.com/js/api/ejkanban#members:editsettings-formposition) property of [`editSettings'](https://help.syncfusion.com/js/api/ejkanban#members:editsettings) as "right" or "bottom".
+
+The following code example describes the above behavior.
+
+{% highlight html %}
+
+    <div id='Kanban'></div>
+
+{% endhighlight %}
+
+{% highlight javascript %}
+
+    $(function() {
+          var data = ej.DataManager(window.kanbanData).executeLocal(ej.Query().take(30));
+            
+            $("#Kanban").ejKanban(
+                {
+                    dataSource: data,   
+                    columns: [
+                        { headerText: "Backlog", key: "Open"},
+                        { headerText: "In Progress", key: "InProgress"},
+                        { headerText: "Done", key: "Close"}
+                   ],
+                   keyField: "Status",
+                   allowTitle: true,
+                   fields: {
+					     content: "Summary",
+					     primaryKey: "Id"
+                    },
+                    allowScrolling:true,
+                    scrollSettings:{  
+					       height:250,
+				           width:700,
+                     },
+                    editSettings: {
+					   editMode:ej.Kanban.EditMode.ExternalForm,
+					   formPosition: ej.Kanban.FormPosition.Bottom,
+                       editItems: [
+                            { field: "Id", editType: ej.Kanban.EditingType.String,validationRules: { required: true, number: true }},
+                            { field: "Status", editType: ej.Kanban.EditingType.Dropdown },
+                            { field: "Assignee", editType: ej.Kanban.EditingType.Dropdown },
+                            { field: "Estimate", editType: ej.Kanban.EditingType.Numeric, editParams: { decimalPlaces: 2 },validationRules: {range: [0, 1000]}},
+                            { field: "Summary", editType: ej.Kanban.EditingType.TextArea,validationRules: { required: true}}
+							],
+                        allowEditing: true,
+                        allowAdding: true
+                    },
+                });
+		}); 
+        
+{% endhighlight %}
+
+The following output is displayed as a result of the above code example.
+
+![](Editing_images/editing_img12.png)
+
+### External Template Form
+
+You can edit any of the fields pertaining to a single card of data and apply it to a template so that the same format is applied to all the other cards that you may edit later. 
+
+Using this template support, you can edit the fields that are not bound to Kanban Edit Items.
+
+To edit the cards using External template form, set [`editMode`](https://help.syncfusion.com/js/api/ejkanban#members:editsettings-editmode) as externalformtemplate and specify the template id to [`externaFormTemplate`](https://help.syncfusion.com/js/api/ejkanban#members:editsettings-externalformtemplate) property of [`editSettings`](https://help.syncfusion.com/js/api/ejkanban#members:editsettings).
+
+While using template, you can change the elements that are defined in the template, to appropriate Syncfusion JS controls based on the column type. This can be achieved by using [`actionComplete`](https://help.syncfusion.com/js/api/ejkanban#events:actioncomplete) event of Kanban.
+
+N> 1. `value` attribute is used to bind the corresponding field value while editing. 
+N> 2. `name` attribute is used to get the changed field values while save the edited card. 
+N> 3. For [`editMode`](https://help.syncfusion.com/js/api/ejkanban#members:editsettings-editmode) property you can assign either `string` value ("externalformtemplate") or `enum` value (`ej.Kanban.EditMode.ExternalFormTemplate`).
+
+The following code example describes the above behavior.
+
+{% highlight html %}
+
+    <div id='Kanban'></div>
+    
+    <script id="template" type="text/template">
+                    <table cellspacing="10">
+                        <tr>
+                            <td style="text-align:left;">Id
+                            </td>
+                            <td style="text-align: left">
+                                <input id="Id" name="Id" value="{{: Id}}" class="e-field e-ejinputtext valid e-disable" style="text-align: right; width: 175px; height: 28px" disabled="disabled" />
+                            </td>
+                            </tr>
+                            <tr>
+                            <td style="text-align: left;">Status
+                            </td>
+                            <td style="text-align: left">
+                                  <select id="Status" name="Status">
+                                    <option value="Close">Close</option>
+                                    <option value="InProgress">InProgress</option>
+                                    <option value="Open">Open</option>
+                                    <option value="Testing">Testing</option>
+                                    <option value="Validate">Validate</option>
+                                </select>
+                            </td>
+                        </tr>
+                            <tr>
+                             <td style="text-align: left;">Assignee
+                            </td>
+                            <td style="text-align: left">
+                                <select id="Assignee" name="Assignee">
+                                    <option value="Nancy Davloio">Nancy Davloio</option>
+                                    <option value="Andrew Fuller">Andrew Fuller</option>
+                                    <option value="Janet Leverling">Janet Leverling</option>
+                                    <option value="Margaret hamilt">Margaret hamilt</option>
+                                    <option value="Steven walker">Steven walker</option>
+                                    <option value="Michael Suyama">Michael Suyama</option>
+                                    <option value="Robert King">Robert King</option>
+                                    <option value="Laura Callahan">Laura Callahan</option>
+                                </select>
+                            </td>
+                        </tr>                      
+                        <tr>
+                            <td style="text-align: left;">Priority
+                            </td>
+                            <td style="text-align: left">
+                                <input id="Priority" name="Priority" value="{{: Priority}}" class="e-field e-ejinputtext valid" style="width: 175px; height: 28px" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: left;">Summary
+                            </td>
+                            <td style="text-align: left">
+                                <textarea id="Summary" name="Summary" class="e-ejinputtext"  value="{{: Summary}}" style="width: 270px; height: 95px">{{: Summary}}</textarea>
+                            </td>
+                        </tr>
+                    </table>
+    </script>
+ 
+{% endhighlight %}
+
+{% highlight javascript %}
+
+      $(function() {
+      
+       var data = ej.DataManager(window.kanbanData).executeLocal(ej.Query().take(30));
+            
+            $("#Kanban").ejKanban(
+                {
+                    dataSource: data,   
+                    actionComplete: "complete",
+                    columns: [
+                        { headerText: "Backlog", key: "Open"},
+                        { headerText: "In Progress", key: "InProgress"},
+                        { headerText: "Done", key: "Close"}
+                    ],
+                    keyField: "Status",
+                    allowTitle: true,
+                    fields: {
+					     content: "Summary",
+					     primaryKey: "Id"
+					},
+                    allowScrolling:true,
+                    scrollSettings:{  
+					       height:450,
+				           width:700,
+					},
+                    editSettings: {
+                        editMode:ej.Kanban.EditMode.ExternalFormTemplate,
+                        externalFormTemplate: "#template",
+                        allowEditing: true,
+                        allowAdding: true
+                    },
+                }
+            );
+		});
+       function complete(args) {
+            if ((args.requestType == "beginedit" || args.requestType == "add") && args.model.editSettings.editMode == "externalformtemplate") {
+                $("#Assignee").ejDropDownList({ width: '175px' });
+                $("#Status").ejDropDownList({ width: '175px' });
+                if(args.requestType == "beginedit" || args.requestType == "add" ){
+				     $("#Assignee").ejDropDownList("setSelectedValue", args.data['Assignee']);
+				     $("#Status").ejDropDownList("setSelectedValue", args.data['Status']);
+				}                
+            }
+        }
+{% endhighlight %}
+
+The following output is displayed as a result of the above code example.
+
+![](Editing_images/editing_img13.png)
+
 ## Cell edit type and its params
 
 The edit type of bound column can be customized using [`editType`](https://help.syncfusion.com/js/api/ejkanban#members:editsettings-edititems-edittype) property of [`editItems`](https://help.syncfusion.com/js/api/ejkanban#members:editsettings-edititems). The following Essential JavaScript controls are supported built-in by `editType`. And also you can define the model for all the edit types controls while editing through `editParams` property of `editItems`.

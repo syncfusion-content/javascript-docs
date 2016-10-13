@@ -10,14 +10,13 @@ metacontent:
 
 # ejPivotChart
 
-The PivotChart is a lightweight control that reads OLAP information and visualizes it in graphical format with the ability to drill up and down.
+The PivotChart is a lightweight control that reads OLAP and Relational information and visualizes it in graphical format with the ability to drill up and down.
 
 #### Syntax
 
 {% highlight javascript %}
 
-$(element).ejPivotChart()
-
+    $(element).ejPivotChart()
 {% endhighlight %}
 
 
@@ -25,20 +24,18 @@ $(element).ejPivotChart()
 
 {% highlight html %}
  
-<div id="PivotChart1"></div>
+    <div id="PivotChart1"></div>
 
-<script>
-    //Create PivotChart
-    $("#PivotChart1").ejPivotChart(...);
-</script>
+    <script>
+        //Create PivotChart
+        $("#PivotChart1").ejPivotChart(...);
+    </script>
 
 {% endhighlight %}
 
 #### Requires
 
-* module:jQuery-1.10.2.min.js
-* module:jQuery.easing.1.3.min.js
-* module:jQuery.globalize.min.js
+* module:jQuery-3.0.0.min.js
 * module:ej.core.js
 * module:ej.data.js
 * module:ej.touch.js
@@ -46,6 +43,7 @@ $(element).ejPivotChart()
 * module:ej.draggable.js
 * module:ej.waitingpopup.js
 * module:ej.chart.js
+* module:ej.pivot.common.js
 * module:ej.olap.base.js
 * module:ej.pivotanalysis.base.js
 * module:ej.pivotchart.js
@@ -53,19 +51,39 @@ $(element).ejPivotChart()
 
 ## Members
 
-### analysisMode `object`
+### analysisMode `enum`
 {:#members:analysismode}
+
+<ts name = "ej.Pivot.AnalysisMode"/>
 
 Sets the mode for the PivotChart widget for binding either OLAP or Relational data source.
 
-#### Default Value: ej.PivotChart.AnalysisMode.Olap
+#### Default Value: ej.Pivot.AnalysisMode.Pivot
+
+<table class="params">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">Pivot</td>
+            <td class="description">To bind Relational datasource to PivotChart widget</td>
+        </tr>
+        <tr>
+            <td class="name">Olap</td>
+            <td class="description">To bind OLAP datasource to PivotChart widget</td>
+        </tr>
+    </tbody>
+</table>
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotChart1").ejPivotChart({analysisMode: ej.PivotChart.AnalysisMode.Relational });  
-
+    $("#PivotChart1").ejPivotChart({ analysisMode: ej.Pivot.AnalysisMode.Olap });
 {% endhighlight %}
 
 
@@ -78,10 +96,9 @@ Specifies the CSS class to PivotChart to achieve custom theme.
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotChart1").ejPivotChart({ cssClass : "gradient-lime" });
-
+    $("#PivotChart1").ejPivotChart({ cssClass : "olive" });
 {% endhighlight %}
 
 ### commonSeriesOptions `object`
@@ -95,14 +112,15 @@ Options available to configure the properties of entire series. You can also ove
 
 {% highlight html %}
  
-$("#PivotChart1").ejPivotChart({commonSeriesOptions: {type: ej.PivotChart.ChartTypes.Line}});
-
+    $("#PivotChart1").ejPivotChart({ commonSeriesOptions: { type: ej.PivotChart.ChartTypes.Line } });
 {% endhighlight %}
 
 ### currentReport `string`
 {:#members:currentreport}
 
-Contains the serialized OlapReport at that instant, that is, current OlapReport. 
+Contains the serialized OlapReport at that instant. 
+
+>**Note**: This is applicable only on binding the control with OLAP data.
 
 #### Default Value: “”
 
@@ -440,16 +458,15 @@ $("#PivotChart1").ejPivotChart({dataSource: {filters: [{ isNamedSets : true}]}})
 ### customObject `object`
 {:#members:customobject}
 
-Object utilized to pass additional information between client-end and service-end.
+Object utilized to pass additional information between client-end and service-end on operating the control in server mode.
 
 #### Default Value: {}
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotChart1").ejPivotChart({ customObject: {"key":"Hello World"} });
-
+    $("#PivotChart1").ejPivotChart({ customObject: { "key": "Hello World" } });
 {% endhighlight %}
 
 ### enable3D `boolean`
@@ -461,10 +478,9 @@ Allows the user to enable 3D view of PivotChart.
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotChart1").ejPivotChart({ enable3D: true });
-
+    $("#PivotChart1").ejPivotChart({ enable3D: true });
 {% endhighlight %}
 
 ### enableRTL `boolean`
@@ -476,10 +492,9 @@ Allows the user to view PivotChart from right to left.
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotChart1").ejPivotChart({ enableRTL: true });
-
+    $("#PivotChart1").ejPivotChart({ enableRTL: true });
 {% endhighlight %}
 
 ### isResponsive `boolean`
@@ -491,25 +506,23 @@ Allows the user to enable PivotChart’s responsiveness in the browser layout.
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotChart1").ejPivotChart({ isResponsive: true });
-
+    $("#PivotChart1").ejPivotChart({ isResponsive: true });
 {% endhighlight %}
 
 ### legend `object`
 {:#members:legend}
 
-Options available to customize the legend items and its title.
+Lets the user to customize the legend items and their labels.
 
 #### Default Value: {}
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotChart1").ejPivotChart({legend: {visible: true}});
-
+    $("#PivotChart1").ejPivotChart({ legend: { visible: true } });
 {% endhighlight %}
 
 ### locale `string`
@@ -521,863 +534,15 @@ Allows the user to set the localized language for the widget.
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotChart1").ejPivotChart({ locale: "fr-FR" }); 
-
+    $("#PivotChart1").ejPivotChart({ locale: "fr-FR" });
 {% endhighlight %}
 
-### operationalMode `object`
+### operationalMode `enum`
 {:#members:operationalmode}
 
-Sets the mode for the PivotChart widget for binding data source either in server-side or client-side.
-
-#### Default Value: ej.PivotChart.OperationalMode.ClientMode
-
-**Example:**
-
-{% highlight html %}
- 
-$("#PivotChart1").ejPivotChart({operationalMode: ej.PivotChart.OperationalMode.ServerMode});
-
-{% endhighlight %}
-
-### primaryXAxis `object`
-{:#members:primaryxaxis}
-
-This is a horizontal axis that contains options to configure axis and it is the primary x axis for all the series in series array. To override x axis for particular series, create an axis object by providing unique name by using name property and add it to axes array. Then, assign the name to the series&rsquo;s xAxisName property to link both axis and series.
-
-#### Default Value: {}
-
-**Example:**
-
-{% highlight html %}
- 
-$("#PivotChart1").ejPivotChart({ primaryXAxis: { title: { text: "Fiscal Year" }, labelRotation: 0 });
-
-{% endhighlight %}
-
-### primaryYAxis `object`
-{:#members:primaryyaxis}
-
-This is a vertical axis that contains options to configure axis. This is the primary y axis for all the series in series array. To override y axis for particular series, create an axis object by providing unique name by using name property and add it to axes array. Then, assign the name to the series&rsquo;s yAxisName property to link both axis and series.
-
-#### Default Value: {}
-
-**Example:**
-
-{% highlight html %}
- 
-$("#PivotChart1").ejPivotChart({ title: { text: "Customer Count"} });
-
-{% endhighlight %}
-
-### rotation `number`
-{:#members:rotation}
-
-Allows the user to rotate the angle of PivotChart in 3D view.
-
-#### Default Value: 0
-
-**Example:**
-
-{% highlight html %}
- 
-$("#PivotChart1").ejPivotChart({ rotation: 45 }); 
-
-{% endhighlight %}
-
-
-### serviceMethodSettings `object`
-{:#members:servicemethodsettings}
-
-Allows the user to set custom name for the methods at service-end, communicated on AJAX post.
-
-#### Default Value: {}
-
-**Example:**
-
-{% highlight html %}
- 
-$("#PivotChart1").ejPivotChart({ serviceMethodSettings: {initialize: "MyMethod1", drillDown: "MyMethod2"} });
-
-{% endhighlight %}
-
-### serviceMethodSettings.drillDown `string`
-{:#members:servicemethodsettings-drilldown}
-
-Allows the user to set the custom name for the service method that&rsquo;s responsible for drilling up/down operation in PivotChart.
-
-#### Default Value: "DrillChart"
-
-**Example:**
-
-{% highlight html %}
- 
-$("#PivotChart1").ejPivotChart({ serviceMethodSettings: {drillDown: "DrillChartMyMethod"} });                                       
-
-{% endhighlight %}
-
-### serviceMethodSettings.exportPivotChart `string`
-{:#members:servicemethodsettings-exportpivotchart}
-
-Allows the user to set the custom name for the service method that’s responsible for exporting.
-
-#### Default Value: "Export"
-
-**Example:**
-
-{% highlight html %}
- 
-$("#PivotChart1").ejPivotChart({ serviceMethodSettings: { exportPivotChart: "ExportMyMethod" } })
-
-{% endhighlight %}
-
-### serviceMethodSettings.initialize `string`
-{:#members:servicemethodsettings-initialize}
-
-Allows the user to set the custom name for the service method that&rsquo;s responsible for initializing PivotChart.
-
-#### Default Value: "InitializeChart"
-
-**Example:**
-
-{% highlight html %}
- 
-$("#PivotChart1").ejPivotChart({ serviceMethodSettings: {initialize: "IninlizeChartMyMethod"} });
-
- {% endhighlight %}
-
-
-### size `object`
-{:#members:size}
-
-Options to customize the Chart size.
-
-#### Default Value: {}
-
-**Example:**
-
-{% highlight html %}
- 
-$("#PivotChart1").ejPivotChart({ size: { height: "450px", width: "95%" } });
-
-{% endhighlight %}
-
-###  url `string`
-{:#members:url}
-
-Connects the service using the specified URL for any server updates.
-
-#### Default Value: “”
-
-**Example:**
-
-{% highlight html %}
- 
-$("#PivotChart1").ejPivotChart({ url: "/PivotChartService.svc" });
-
-{% endhighlight %}
-
-
-## Methods
-
-### doAjaxPost()
-{:#methods:doajaxpost}
-
-Perform an asynchronous HTTP (AJAX) request.
-
-**Example:**
-
-{% highlight html %}
- 
-<div id="PivotChart1"></div> 
- 
-<script>
-$('#PivotChart1').ejPivotChart({
-      url: "PivotChartService.svc",
-                animation: true, type: ej.PivotChart.ChartTypes.Column, 
-                       commonSeriesOptions: { type: ej.PivotChart.ChartTypes.Column, tooltip: { visible: true} },
-                       size: { height: 460, width: 950 }, primaryXAxis: { title: { text: "Fiscal Year" }, labelRotation: 0 },
-                       primaryYAxis: { title: { text: "Customer Count"} }, legend: { visible: true, rowCount: 2 },
-                       load: "loadTheme"
- });
-var chartObj = $("#PivotChart1").data("ejPivotChart");
-chartObj.doAjaxPost("POST", "/PivotChartService.svc/Initialize", {"key", "Hello World"}, "renderControlSuccess", null);
-</script>
-
-{% endhighlight %}
-
-
-
-### doPostBack()
-{:#methods:dopostback}
-
-Perform an asynchronous HTTP (FullPost) submit.
-
-**Example:**
-
-{% highlight html %}
-
-<div id="PivotChart1"></div> 
- 
-<script>
-$('#PivotChart1).ejPivotChart({
-      url: "PivotChartService.svc",
- });
-var chartObj = $("#PivotChart1").data("ejPivotChart");
-chartObj.doPostBack("/PivotChartService.svc/Initialize", {"key", "Hello World"});
-</script> 
-
-{% endhighlight %}
-
-
-### exportPivotChart()
-{:#methods:exportpivotchart}
-
-Exports the PivotChart to an appropriate format based on the parameter passed.
-  
-**Example:**
-
-{% highlight html %}
- 
-<div id="PivotChart1"></div> 
- 
-<script>
-var chartObj = $("#PivotChart1").data("ejPivotChart");
-chartObj.exportPivotChart(ej.PivotChart.ExportOptions.Excel);
-</script>
-
-{% endhighlight %}
-
-
-### renderChartFromJSON()
-{:#methods:renderchartfromjson}
-
-This function receives the JSON formatted datasource to render the PivotChart control.
-
-
-**Example:**
-
-{% highlight html %}
- 
-<div id="PivotChart1"></div> 
- 
-<script>
-$('#PivotChart1').ejPivotChart({
-      url: "PivotChartService.svc",
-                animation: true, type: ej.PivotChart.ChartTypes.Column, 
-                       commonSeriesOptions: { type: ej.PivotChart.ChartTypes.Column, tooltip: { visible: true} },
-                       size: { height: 460, width: 950 }, primaryXAxis: { title: { text: "Fiscal Year" }, labelRotation: 0 },
-                       primaryYAxis: { title: { text: "Customer Count"} }, legend: { visible: true, rowCount: 2 },
-                       load: "loadTheme"
- });
-var chartObj = $("#PivotChart1").data("ejPivotChart");
-chartObj.renderControlFromJSON(this.getJSONRecords());
-</script>
-
-{% endhighlight %}
-
-### renderControlSuccess()
-{:#methods:rendercontrolsuccess}
-
-This function receives the update from service-end, which would be utilized for rendering the widget.
-
-**Example:**
-
-{% highlight html %}
- 
-<div id="PivotChart1"></div> 
- 
-<script>
-$('#PivotChart1').ejPivotChart({
-      url: "PivotChartService.svc",
-                animation: true, type: ej.PivotChart.ChartTypes.Column, 
-                       commonSeriesOptions: { type: ej.PivotChart.ChartTypes.Column, tooltip: { visible: true} },
-                       size: { height: 460, width: 950 }, primaryXAxis: { title: { text: "Fiscal Year" }, labelRotation: 0 },
-                       primaryYAxis: { title: { text: "Customer Count"} }, legend: { visible: true, rowCount: 2 },
-                       load: "loadTheme"
-  });
-var chartObj = $("#PivotChart1").data("ejPivotChart");
-chartObj.renderControlSuccess({"OlapReport": this.getOlapReport(), "JsonRecords": this.getJSONRecords()});
-</script>
-
-{% endhighlight %}
-
-
-## Events
-
-
-### load
-{:#events:load}
-
-Triggers when PivotChart starts to render.
-
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">argument</td>
-<td class="type">Object</td>
-<td class="description last">Event parameters from PivotChart
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">action</td>
-<td class="type">string</td>
-<td class="description last">return the current action of PivotChart control.</td>
-</tr>
-<tr>
-<td class="name">customObject</td>
-<td class="type">object</td>
-<td class="description last">return the custom object bounds with PivotChart control.</td>
-</tr>
-<tr>
-<td class="name">element</td>
-<td class="type">string</td>
-<td class="description last">return the outer HTML of PivotChart control.</td>
-</tr>
-<tr>
-<td class="name">cancel</td>
-<td class="type">boolean</td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
-</tr>
-<tr>
-<td class="name">model</td>
-<td class="type"><ts ref="ej.PivotChart.Model"/>object</td>
-<td class="description last">returns the PivotChart model.</td>
-</tr>
-<tr>
-<td class="name">type</td>
-<td class="type">string</td>
-<td class="description last">returns the name of the event.</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-</tbody>
-</table>
-
-
-**Example:**
-
-{% highlight html %}
- 
-$("#PivotChart1").ejPivotChart({
-   load: function (args) {}
-});
-
-{% endhighlight %}
-
-
-### afterServiceInvoke
-{:#events:afterserviceinvoke}
-
-Triggers when it reaches client-side after any AJAX request.
-
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">argument</td>
-<td class="type">Object</td>
-<td class="description last">Event parameters from PivotChart
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">action</td>
-<td class="type">string</td>
-<td class="description last">return the current action of PivotChart control.</td>
-</tr>
-<tr>
-<td class="name">customObject</td>
-<td class="type">object</td>
-<td class="description last">return the custom object bounds with PivotChart control.</td>
-</tr>
-<tr>
-<td class="name">element</td>
-<td class="type">string</td>
-<td class="description last">return the outer HTML of PivotChart control.</td>
-</tr>
-<tr>
-<td class="name">cancel</td>
-<td class="type">boolean</td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
-</tr>
-<tr>
-<td class="name">model</td>
-<td class="type"><ts ref="ej.PivotChart.Model"/>object</td>
-<td class="description last">returns the PivotChart model.</td>
-</tr>
-<tr>
-<td class="name">type</td>
-<td class="type">string</td>
-<td class="description last">returns the name of the event.</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-</tbody>
-</table>
-
-
-**Example:**
-
-{% highlight html %}
- 
-$("#PivotChart1").ejPivotChart({
-   afterServiceInvoke: function (args) {}
-});
-
-{% endhighlight %}
-
-
-### beforeServiceInvoke
-{:#events:beforeserviceinvoke}
-
-Triggers before any AJAX request is passed from PivotChart to service methods.
-
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">argument</td>
-<td class="type">Object</td>
-<td class="description last">Event parameters from PivotChart
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">action</td>
-<td class="type">string</td>
-<td class="description last">return the current action of PivotChart control.</td>
-</tr>
-<tr>
-<td class="name">customObject</td>
-<td class="type">object</td>
-<td class="description last">return the custom object bounds with PivotChart control.</td>
-</tr>
-<tr>
-<td class="name">element</td>
-<td class="type">string</td>
-<td class="description last">return the outer HTML of PivotChart control.</td>
-</tr>
-<tr>
-<td class="name">cancel</td>
-<td class="type">boolean</td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
-</tr>
-<tr>
-<td class="name">model</td>
-<td class="type"><ts ref="ej.PivotChart.Model"/>object</td>
-<td class="description last">returns the PivotChart model.</td>
-</tr>
-<tr>
-<td class="name">type</td>
-<td class="type">string</td>
-<td class="description last">returns the name of the event.</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-</tbody>
-</table>
-
-
-**Example:**
-
-{% highlight html %}
- 
-$("#PivotChart1").ejPivotChart({
-   beforeServiceInvoke: function (args) {}
-});      
-
-{% endhighlight %}
-
-
-
-### drillSuccess
-{:#events:drillsuccess}
-
-Triggers when drill up/down happens in PivotChart control.
-
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">argument</td>
-<td class="type">Object</td>
-<td class="description last">Event parameters from PivotChart
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">cancel</td>
-<td class="type">boolean</td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
-</tr>
-<tr>
-<td class="name">model</td>
-<td class="type"><ts ref="ej.PivotChart.Model"/>object</td>
-<td class="description last">returns the PivotChart model.</td>
-</tr>
-<tr>
-<td class="name">type</td>
-<td class="type">string</td>
-<td class="description last">returns the name of the event.</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-</tbody>
-</table>
-
-
-**Example:**
-
-{% highlight html %}
- 
-$("#PivotChart1").ejPivotChart({
-   drillSuccess: function (args) {}
-});
-
-{% endhighlight %}
-
-
-
-
-### renderComplete
-{:#events:rendercomplete}
-
-Triggers when PivotChart widget completes all operations at client-side after any AJAX request.
-
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th >Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">argument</td>
-<td class="type">Object</td>
-<td class="description last">Event parameters from PivotChart
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">action</td>
-<td class="type">string</td>
-<td class="description last">return the current action of PivotChart control.</td>
-</tr>
-<tr>
-<td class="name">customObject</td>
-<td class="type">object</td>
-<td class="description last">return the custom object bounds with PivotChart control.</td>
-</tr>
-<tr>
-<td class="name">element</td>
-<td class="type">string</td>
-<td class="description last">return the outer HTML of PivotChart control.</td>
-</tr>
-<tr>
-<td class="name">cancel</td>
-<td class="type">boolean</td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
-</tr>
-<tr>
-<td class="name">model</td>
-<td class="type"><ts ref="ej.PivotChart.Model"/>object</td>
-<td class="description last">returns the PivotChart model.</td>
-</tr>
-<tr>
-<td class="name">type</td>
-<td class="type">string</td>
-<td class="description last">returns the name of the event.</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-</tbody>
-</table>
-
-
-**Example:**
-
-{% highlight html %}
- 
-$("#PivotChart1").ejPivotChart({
-   renderComplete: function (args) {}
-});     
-
-{% endhighlight %}
-
-
-
-
-### renderFailure
-{:#events:renderfailure}
-
-Triggers when any error occurred during AJAX request.
-
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">argument</td>
-<td class="type">Object</td>
-<td class="description last">Event parameters from PivotChart
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">action</td>
-<td class="type">string</td>
-<td class="description last">return the current action of PivotChart control.</td>
-</tr>
-<tr>
-<td class="name">customObject</td>
-<td class="type">object</td>
-<td class="description last">return the custom object bounds with PivotChart control.</td>
-</tr>
-<tr>
-<td class="name">message</td>
-<td class="type">object</td>
-<td class="description last">return the error stack trace of the original exception.</td>
-</tr>
-<tr>
-<td class="name">element</td>
-<td class="type">string</td>
-<td class="description last">return the outer HTML of PivotChart control.</td>
-</tr>
-<tr>
-<td class="name">cancel</td>
-<td class="type">boolean</td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
-</tr>
-<tr>
-<td class="name">model</td>
-<td class="type"><ts ref="ej.PivotChart.Model"/>object</td>
-<td class="description last">returns the PivotChart model.</td>
-</tr>
-<tr>
-<td class="name">type</td>
-<td class="type">string</td>
-<td class="description last">returns the name of the event.</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-</tbody>
-</table>
-
-
-**Example:**
-
-{% highlight html %}
- 
-$("#PivotChart1").ejPivotChart({
-   renderFailure: function (args) {}
-});      
-
-{% endhighlight %}
-
-
-### renderSuccess
-{:#events:rendersuccess}
-
-Triggers when PivotChart successfully reaches client-side after any AJAX request.
-
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">argument</td>
-<td class="type">Object</td>
-<td class="description last">Event parameters from PivotChart
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">action</td>
-<td class="type">string</td>
-<td class="description last">return the current action of PivotChart control.</td>
-</tr>
-<tr>
-<td class="name">customObject</td>
-<td class="type">object</td>
-<td class="description last">return the custom object bounds with PivotChart control.</td>
-</tr>
-<tr>
-<td class="name">element</td>
-<td class="type">string</td>
-<td class="description last">return the outer HTML of PivotChart control.</td>
-</tr>
-<tr>
-<td class="name">cancel</td>
-<td class="type">boolean</td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
-</tr>
-<tr>
-<td class="name">model</td>
-<td class="type"><ts ref="ej.PivotChart.Model"/>object</td>
-<td class="description last">returns the PivotChart model.</td>
-</tr>
-<tr>
-<td class="name">type</td>
-<td class="type">string</td>
-<td class="description last">returns the name of the event.</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-</tbody>
-</table>
-
-
-**Example:**
-
-{% highlight html %}
- 
-$("#PivotChart1").ejPivotChart({
-   renderSuccess: function (args) {}
-});     
-
-{% endhighlight %}
-
-
-
-## Enumeration
-
-### AnalysisMode  `enum`
-{:#enum:analysismode}
-
-<ts name = "ej.PivotChart.AnalysisMode"/>
-
-Sets the mode for the PivotChart widget for binding either OLAP or relational data source.
-
-<table class="params">
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Description</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td class="name">OLAP</td>
-            <td class="description">To bind an OLAP data source to PivotChart.</td>
-        </tr>
-        <tr>
-            <td class="name">Relational</td>
-            <td class="description">To bind a relational data source to PivotChart.</td>
-        </tr>
-    </tbody>
-</table>
-
-
-**Example:**
-
-{% highlight html %}
-
-$("#PivotChart1").ejPivotChart({analysisMode: ej.PivotChart.AnalysisMode.Olap});
-
-{% endhighlight %}
-
-
-### OperationalMode  `enum`
-{:#enum:operationalmode}
-
-<ts name = "ej.PivotChart.OperationalMode"/>
+<ts name = "ej.Pivot.OperationalMode"/>
 
 Sets the mode for the PivotChart widget for binding data source either in server-side or client-side.
 
@@ -1400,15 +565,684 @@ Sets the mode for the PivotChart widget for binding data source either in server
     </tbody>
 </table>
 
+#### Default Value: ej.Pivot.OperationalMode.ClientMode
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
+ 
+    $("#PivotChart1").ejPivotChart({ operationalMode: ej.Pivot.OperationalMode.ServerMode });
+{% endhighlight %}
 
-$("#PivotChart1").ejPivotChart({operationalMode:ej.PivotChart.OperationalMode.ServerMode});
+### primaryXAxis `object`
+{:#members:primaryxaxis}
+
+This is a horizontal axis that contains options to configure axis and it is the primary x axis for all the series in series array. To override x axis for particular series, create an axis object by providing unique name by using name property and add it to axes array. Then, assign the name to the series&rsquo;s xAxisName property to link both axis and series.
+
+#### Default Value: {}
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotChart1").ejPivotChart({ primaryXAxis: { title: { text: "Fiscal Year" }, labelRotation: 0 });
+{% endhighlight %}
+
+### primaryYAxis `object`
+{:#members:primaryyaxis}
+
+This is a vertical axis that contains options to configure axis. This is the primary y axis for all the series in series array. To override y axis for particular series, create an axis object by providing unique name by using name property and add it to axes array. Then, assign the name to the series&rsquo;s yAxisName property to link both axis and series.
+
+#### Default Value: {}
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotChart1").ejPivotChart({ title: { text: "Customer Count"} });
+{% endhighlight %}
+
+### rotation `number`
+{:#members:rotation}
+
+Allows the user to rotate the angle of PivotChart in 3D view.
+
+#### Default Value: 0
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotChart1").ejPivotChart({ rotation: 45 });
+{% endhighlight %}
+
+
+### serviceMethodSettings `object`
+{:#members:servicemethodsettings}
+
+Allows the user to set custom name for the methods at service-end, communicated on AJAX post.
+
+>**Note**: This is applicable only on operating the control in server mode.
+
+#### Default Value: {}
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotChart1").ejPivotChart({ serviceMethodSettings: { initialize: "MyMethod1", drillDown: "MyMethod2" } });
+{% endhighlight %}
+
+### serviceMethodSettings.drillDown `string`
+{:#members:servicemethodsettings-drilldown}
+
+Allows the user to set the custom name for the service method responsible for drilling up/down operation in PivotChart.
+
+#### Default Value: "DrillChart"
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotChart1").ejPivotChart({ serviceMethodSettings: { drillDown: "DrillChartMyMethod" } });
+{% endhighlight %}
+
+### serviceMethodSettings.exportPivotChart `string`
+{:#members:servicemethodsettings-exportpivotchart}
+
+Allows the user to set the custom name for the service method responsible for exporting.
+
+#### Default Value: "Export"
+
+**Example:**
+
+{% highlight javascript %}
+
+    $("#PivotChart1").ejPivotChart({ serviceMethodSettings: { exportPivotChart: "ExportMyMethod" } })
+{% endhighlight %}
+
+### serviceMethodSettings.initialize `string`
+{:#members:servicemethodsettings-initialize}
+
+Allows the user to set the custom name for the service method responsible for initializing PivotChart.
+
+#### Default Value: "InitializeChart"
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotChart1").ejPivotChart({ serviceMethodSettings: { initialize: "IninlizeChartMyMethod" } });
+{% endhighlight %}
+ 
+ ### serviceMethodSettings.paging `string`
+{:#members:servicemethodsettings-paging}
+
+Allows the user to set the custom name for the service method responsible for navigating between pages in paged PivotChart.
+
+#### Default Value: "Paging"
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotChart1").ejPivotChart({ serviceMethodSettings: { paging: "PagingMyMethod" } });
+{% endhighlight %}
+
+
+### size `object`
+{:#members:size}
+
+Options to customize the size of the PivotChart control.
+
+#### Default Value: {}
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotChart1").ejPivotChart({ size: { height: "450px", width: "95%" } });
+{% endhighlight %}
+
+###  url `string`
+{:#members:url}
+
+Connects the service using the specified URL for any server updates on operating the control in server mode.
+
+#### Default Value: “”
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotChart1").ejPivotChart({ url: "/PivotService" });
+{% endhighlight %}
+
+## Methods
+
+### doAjaxPost()
+{:#methods:doajaxpost}
+
+Performs an asynchronous HTTP (AJAX) request.
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    var chartObj = $("#PivotChart1").data("ejPivotChart");
+    chartObj.doAjaxPost("POST", "/PivotService/Initialize", { "key", "Hello World" }, successEvent, null);
+{% endhighlight %}
+
+### doPostBack()
+{:#methods:dopostback}
+
+Perform an asynchronous HTTP (FullPost) submit.
+
+**Example:**
+
+{% highlight javascript %}
+
+    var chartObj = $("#PivotChart1").data("ejPivotChart");
+    chartObj.doPostBack("/PivotService/Initialize", { "key", "Hello World" });
+{% endhighlight %}
+
+### exportPivotChart()
+{:#methods:exportpivotchart}
+
+Exports the PivotChart to the format specified in the parameter.
+  
+**Example:**
+
+{% highlight javascript %}
+ 
+    var chartObj = $("#PivotChart1").data("ejPivotChart");
+    chartObj.exportPivotChart(ej.PivotChart.ExportOptions.Excel);
+{% endhighlight %}
+
+
+### renderChartFromJSON()
+{:#methods:renderchartfromjson}
+
+This function renders the PivotChart control with the JSON formatted datasource.
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    var chartObj = $("#PivotChart1").data("ejPivotChart");
+    chartObj.renderControlFromJSON(chartObj.getJSONRecords());
+{% endhighlight %}
+
+### renderControlSuccess()
+{:#methods:rendercontrolsuccess}
+
+This function receives the update from service-end, which would be utilized for rendering the widget.
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    var chartObj = $("#PivotChart1").data("ejPivotChart");
+    chartObj.renderControlSuccess({ "OlapReport": chartObj.getOlapReport(), "JsonRecords": chartObj.getJSONRecords() });
+{% endhighlight %}
+
+### getOlapReport()
+{:#methods:getolapreport}
+
+Returns the OlapReport string maintained along with the axis elements information.
+
+>**Note**: This property is applicable only on operating the control in server mode.
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    var chartObj = $("#PivotChart1").data("ejPivotChart");
+    var report = chartObj.getOlapReport();
+{% endhighlight %}
+
+### setOlapReport()
+{:#methods:setolapreport}
+
+Sets the OlapReport string along with the axis information and maintains it in a property.
+
+>**Note**: This property is applicable only on operating the control in server mode.
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    var chartObj = $("#PivotChart1").data("ejPivotChart");
+    chartObj.setOlapReport(olapReportObj);
+{% endhighlight %}
+
+### getJSONRecords()
+{:#methods:getjsonrecords}
+
+Returns the JSON records formed to render the control.
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    var chartObj = $("#PivotChart1").data("ejPivotChart");
+    var jsonRecords = chartObj.getJSONRecords();
+{% endhighlight %}
+
+### setJSONRecords()
+{:#methods:setjsonrecords}
+
+Sets the JSON records to render the control.
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    var chartObj = $("#PivotChart1").data("ejPivotChart");
+    chartObj.setJSONRecords(jsonRecords);
+{% endhighlight %}
+
+### getPivotEngine()
+{:#methods:getpivotengine}
+
+Returns the PivotEngine formed to render the control.
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    var chartObj = $("#PivotChart1").data("ejPivotChart");
+    var jsonRecords = chartObj.getPivotEngine();
+{% endhighlight %}
+
+### setPivotEngine()
+{:#methods:setpivotengine}
+
+Sets the PivotEngine required to render the control.
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    var chartObj = $("#PivotChart1").data("ejPivotChart");
+    chartObj.setPivotEngine(jsonRecords);
+{% endhighlight %}
+
+### refreshControl()
+{:#methods:refreshControl}
+
+Re-renders the control with the data source at the instant.
+
+>**Note**: This is only applicable on operating in client mode.
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    var chartObj = $("#PivotChart1").data("ejPivotChart");
+    chartObj.model.dataSource = newDataSource;
+    chartObj.refreshControl();
+{% endhighlight %}
+
+### generateJSON()
+{:#methods:generatejson}
+
+Renders the control with the pivot engine obtained from olap base source.
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    var chartObj = $("#PivotChart1").data("ejPivotChart");
+    chartObj.generateJSON(baseObj, pivotEngineObj);
+{% endhighlight %}
+
+### refreshPagedPivotChart()
+{:#methods:refreshpagedpivotchart}
+
+Navigates to the specified page number in specified axis.
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    var chartObj = $("#PivotChart1").data("ejPivotChart");
+    chartObj.refreshPagedPivotChart("series", 4);
+{% endhighlight %}
+
+## Events
+
+
+### load
+{:#events:load}
+
+Triggers when PivotChart starts to render.
+
+<table class="params">
+<thead>
+<tr>
+<th colspan="3">Event Parameters</th>
+</tr>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">action</td>
+<td class="type">string</td>
+<td class="description last">returns the current action of PivotChart control.</td>
+</tr>
+<tr>
+<td class="name">customObject</td>
+<td class="type">object</td>
+<td class="description last">returns the custom object bound with PivotChart control.</td>
+</tr>
+<tr>
+<td class="name">element</td>
+<td class="type">object</td>
+<td class="description last">returns the HTML element of PivotChart control.</td>
+</tr>
+</tbody>
+</table>
+
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotChart1").ejPivotChart({
+        load: function (args) {}
+    });
 
 {% endhighlight %}
 
+
+### afterServiceInvoke
+{:#events:afterserviceinvoke}
+
+Triggers when it reaches client-side after any AJAX request.
+
+<table class="params">
+<thead>
+<tr>
+<th colspan="3">Event Parameters</th>
+</tr>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">action</td>
+<td class="type">string</td>
+<td class="description last">returns the current action of PivotChart control.</td>
+</tr>
+<tr>
+<td class="name">customObject</td>
+<td class="type">object</td>
+<td class="description last">returns the custom object bound with PivotChart control.</td>
+</tr>
+<tr>
+<td class="name">element</td>
+<td class="type">object</td>
+<td class="description last">returns the HTML element of PivotChart control.</td>
+</tr>
+</tbody>
+</table>
+
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotChart1").ejPivotChart({
+        afterServiceInvoke: function (args) {}
+    });
+{% endhighlight %}
+
+
+### beforeServiceInvoke
+{:#events:beforeserviceinvoke}
+
+Triggers before any AJAX request is passed from PivotChart to service methods.
+
+<table class="params">
+<thead>
+<tr>
+<th colspan="3">Event Parameters</th>
+</tr>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">action</td>
+<td class="type">string</td>
+<td class="description last">returns the current action of PivotChart control.</td>
+</tr>
+<tr>
+<td class="name">customObject</td>
+<td class="type">object</td>
+<td class="description last">returns the custom object bound with PivotChart control.</td>
+</tr>
+<tr>
+<td class="name">element</td>
+<td class="type">object</td>
+<td class="description last">returns the HTML element of PivotChart control.</td>
+</tr>
+</tbody>
+</table>
+
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotChart1").ejPivotChart({
+        beforeServiceInvoke: function (args) {}
+    });      
+
+{% endhighlight %}
+
+
+
+### drillSuccess
+{:#events:drillsuccess}
+
+Triggers on performing drill up/down in PivotChart control.
+
+<table class="params">
+<thead>
+<tr>
+<th colspan="3">Event Parameters</th>
+</tr>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">chartObj</td>
+<td class="type">object</td>
+<td class="description last">returns the current instance of PivotChart.</td>
+</tr>
+<tr>
+<td class="name">drillAction</td>
+<td class="type">string</td>
+<td class="description last">returns the drill action of PivotChart.</td>
+</tr>
+<tr>
+<td class="name">drilledMember</td>
+<td class="type">string</td>
+<td class="description last">contains the name of the member drilled.</td>
+</tr>
+<tr>
+<td class="name">event</td>
+<td class="type">object</td>
+<td class="description last">returns the event object.</td>
+</tr>
+</tbody>
+</table>
+
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotChart1").ejPivotChart({
+        drillSuccess: function (args) {}
+    });
+
+{% endhighlight %}
+
+### renderComplete
+{:#events:rendercomplete}
+
+Triggers when PivotChart widget completes all operations at client-side after any AJAX request.
+
+<table class="params">
+<thead>
+<tr>
+<th colspan="3">Event Parameters</th>
+</tr>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">action</td>
+<td class="type">string</td>
+<td class="description last">returns the current action of PivotChart control.</td>
+</tr>
+<tr>
+<td class="name">customObject</td>
+<td class="type">object</td>
+<td class="description last">returns the custom object bound with PivotChart control.</td>
+</tr>
+<tr>
+<td class="name">element</td>
+<td class="type">object</td>
+<td class="description last">returns the HTML element of PivotChart control.</td>
+</tr>
+</tbody>
+</table>
+
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotChart1").ejPivotChart({
+        renderComplete: function (args) {}
+    });
+
+{% endhighlight %}
+
+
+
+
+### renderFailure
+{:#events:renderfailure}
+
+Triggers when any error occurred during AJAX request.
+
+<table class="params">
+<thead>
+<tr>
+<th colspan="3">Event Parameters</th>
+</tr>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">action</td>
+<td class="type">string</td>
+<td class="description last">returns the current action of PivotChart control.</td>
+</tr>
+<tr>
+<td class="name">customObject</td>
+<td class="type">object</td>
+<td class="description last">returns the custom object bound with PivotChart control.</td>
+</tr>
+<tr>
+<td class="name">element</td>
+<td class="type">object</td>
+<td class="description last">returns the HTML element of PivotChart control.</td>
+</tr>
+<tr>
+<td class="name">message</td>
+<td class="type">string</td>
+<td class="description last">returns the error stack trace of the original exception.</td>
+</tr>
+</tbody>
+</table>
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotChart1").ejPivotChart({
+        renderFailure: function (args) {}
+    });      
+
+{% endhighlight %}
+
+
+### renderSuccess
+{:#events:rendersuccess}
+
+Triggers when PivotChart successfully reaches client-side after any AJAX request.
+
+<table class="params">
+<thead>
+<tr>
+<th colspan="3">Event Parameters</th>
+</tr>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">args</td>
+<td class="type">object</td>
+<td class="description last">returns the current instance of PivotChart.</td>
+</tr>
+</tbody>
+</table>
+
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotChart1").ejPivotChart({
+        renderSuccess: function (args) {}
+    });
+{% endhighlight %}
+
+
+
+## Enumeration
 
 ### SymbolShapes  `enum`
 {:#enum:symbolshapes}
@@ -1510,10 +1344,9 @@ Allows the user to set shape for the marker.
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
 
-$("#PivotChart1").ejPivotChart({commonSeriesOptions :{marker :{ shape: ej.PivotChart.SymbolShapes.LeftArrow} }});
-
+    $("#PivotChart1").ejPivotChart({ commonSeriesOptions: { marker: { shape: ej.PivotChart.SymbolShapes.LeftArrow } } });
 {% endhighlight %}
 
 
@@ -1605,10 +1438,9 @@ Allows the user to set the type for PivotChart.
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
 
-$("#PivotChart1").ejPivotChart({commonSeriesOptions :{ type: ej.PivotChart.ChartTypes.Column} });
-
+    $("#PivotChart1").ejPivotChart({ commonSeriesOptions: { type: ej.PivotChart.ChartTypes.Column } });
 {% endhighlight %}
 
 ### ExportOption  `enum`
@@ -1616,7 +1448,7 @@ $("#PivotChart1").ejPivotChart({commonSeriesOptions :{ type: ej.PivotChart.Chart
 
 <ts name = "ej.PivotChart.ExportOptions"/>
 
-Allows the user to export PivotChart to an appropriate format based on the parameter passed.
+Allows the user to set the exporting format of PivotChart.
 
 <table class="params">
     <thead>
@@ -1637,10 +1469,6 @@ Allows the user to export PivotChart to an appropriate format based on the param
         <tr>
             <td class="name">PDF</td>
             <td class="description">To export PivotChart in PDF format.</td>
-        </tr>
-        <tr>
-            <td class="name">CSV</td>
-            <td class="description">To export PivotChart in CSV format.</td>
         </tr>
         <tr>
             <td class="name">PNG</td>
@@ -1667,8 +1495,7 @@ Allows the user to export PivotChart to an appropriate format based on the param
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
 
-$("#PivotChart1").ejPivotChart({commonSeriesOptions :{ exportPivotChart: ej.PivotChart.ExportOptions.Excel } });
-
+    $("#PivotChart1").ejPivotChart({ commonSeriesOptions: { exportPivotChart: ej.PivotChart.ExportOptions.Excel } });
 {% endhighlight %}

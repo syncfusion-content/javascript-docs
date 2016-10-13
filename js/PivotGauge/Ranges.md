@@ -19,6 +19,7 @@ Range collection can be directly added to the scales option within the PivotGaug
         //...
         scales: [{
             //...
+            showRanges: true,
             ranges: [{
                 distanceFromScale: 10
             }]
@@ -49,6 +50,7 @@ N> By default, placement takes the value "near", whereas other enumeration value
         //...
         scales: [{
             //...
+            showRanges: true,
             ranges: [{
                 startValue: 20,
                 endValue: 50,
@@ -91,6 +93,7 @@ Multiple ranges can be added by placing an array of objects in `ranges` option.
         //...
         scales: [{
             //...
+            showRanges: true,
             ranges: [
                 {
                     startValue: 0,
