@@ -15,9 +15,7 @@ As the window is narrowed, controls in the Ribbon will be combined as group butt
 
 ## Tablet Layout 
 
-If client width is above  420px, the ribbon will render in Tablet mode.
-
-Set [`isResponsive`](http://help.syncfusion.com/js/api/ejribbon#members:isresponsive) as true to enable resizing in Ribbon.
+Set [`isResponsive`](http://help.syncfusion.com/js/api/ejribbon#members:isresponsive) as true to enable responsive layout in Ribbon.If client width is above  420px or control content exceeds the page then, the ribbon will render in Tablet mode.
 
 {% highlight html %}
 
@@ -34,7 +32,7 @@ Set [`isResponsive`](http://help.syncfusion.com/js/api/ejribbon#members:isrespon
         $(function () {
             $("#Ribbon").ejRibbon({
                 width: "20%",
-                // resizing enabled
+                // responsive enabled
                 isResponsive: true,
                 applicationTab: {
                     type: ej.Ribbon.applicationTabType.menu,
