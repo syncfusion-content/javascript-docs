@@ -23,7 +23,7 @@ PivotClient is an ad hoc analysis tool that can be easily bound to any OLAP and 
 
 {% highlight html %}
  
-    <div id="PivotClient1"></div> 
+    <div id="PivotClient1"></div>
  
     <script>
         //Create PivotClient
@@ -198,42 +198,6 @@ Allows the user to set the specific chart type for PivotChart inside PivotClient
     $("#PivotClient1").ejPivotClient({ chartType: ej.PivotChart.ChartTypes.Spline });
 {% endhighlight %}
 
-### operationalMode `enum`
-{:#members:operationalmode}
-
-<ts name = "ej.Pivot.OperationalMode"/>
-
-Sets the mode for the PivotClient widget for binding data source either in server-side or client-side.
-
-<table class="params">
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Description</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td class="name">ClientMode</td>
-            <td class="description">To bind data source completely from client-side.</td>
-        </tr>
-        <tr>
-            <td class="name">ServerMode</td>
-            <td class="description">To bind data source completely from server-side.</td>
-        </tr>
-    </tbody>
-</table>
-
-#### Default Value: ej.Pivot.OperationalMode.ClientMode
-
-**Example:**
-
-{% highlight html %}
- 
-    $("#PivotClient1").ejPivotClient({ operationalMode: ej.Pivot.OperationalMode.ServerMode });
-
-{% endhighlight %}
-
 ### clientExportMode `enum`
 {:#members:clientExportMode}
 
@@ -316,54 +280,10 @@ Initializes the data source for the PivotClient widget, when it functions comple
     $("#PivotClient1").ejPivotClient( { dataSource: { data: value } });
 {% endhighlight %}
 
-### dataSource.cube `string`
-{:#members:datasource-cube}
-
-Contains the respective Cube name from OLAP database as string type.
-
-#### Default Value: “”
-
-**Example:**
-
-{% highlight javascript %}
- 
-    $("#PivotClient1").ejPivotClient({ dataSource: { cube: "Adventure Works" } });
-{% endhighlight %}
-
-
-### dataSource.data `object`
-{:#members:datasource-data}
-
-Provides the raw data source for the PivotClient.
-
-#### Default Value: null
-
-**Example:**
-
-{% highlight javascript %}
- 
-    $("#PivotClient1").ejPivotClient({ dataSource: { data: value } });
-{% endhighlight %}
-
-### dataSource.catalog `string`
-{:#members:datasource-catalog}
-
-In connection with an OLAP database, this property contains the database name as string to fetch the data from the given connection string.
-
-#### Default Value: “”
-
-**Example:**
-
-{% highlight javascript %}
- 
-    $("#PivotClient1").ejPivotClient( { dataSource: { catalog: "databaseName" } } );
-{% endhighlight %}
-
-
 ### dataSource.columns `array`
 {:#members:datasource-columns}
 
-Lists out the items to be arranged in column section of PivotClient.
+Lists out the items to be arranged in columns section of PivotClient.
 
 #### Default Value: []
 
@@ -434,9 +354,9 @@ Allows the user to provide level unique name to perform advanced filtering.
 ### dataSource.columns.advancedFilter.labelFilterOperator `string`
 {:#members:datasource-columns-advancedfilter-labelfilteroperator}
 
-Allows the user to set the operator to perform Label filtering.
+Allows the user to set the operator to perform Label Filtering.
 
-#### Default Value: ""
+#### Default Value: "none"
 
 **Example:**
 
@@ -448,9 +368,9 @@ Allows the user to set the operator to perform Label filtering.
 ### dataSource.columns.advancedFilter.valueFilterOperator `string`
 {:#members:datasource-columns-advancedfilter-valuefilteroperator}
 
-Allows the user to set the operator to perform Value filtering.
+Allows the user to set the operator to perform Value Filtering.
 
-#### Default Value: ""
+#### Default Value: "none"
 
 **Example:**
 
@@ -470,7 +390,7 @@ Allows the user to set the filtering type while performing advanced filtering.
 
 {% highlight javascript %}
  
-    $("#PivotClient1").ejPivotClient({ dataSource: { columns: [{ advancedFilter : [{ advancedFilterType:  ej.olap.AdvancedFilterType.LabelFilter}] }] } });
+    $("#PivotClient1").ejPivotClient({ dataSource: { columns: [{ advancedFilter : [{ advancedFilterType:  ej.olap.AdvancedFilterType.LabelFilter }] }] } });
 {% endhighlight %}
 
 ### dataSource.columns.advancedFilter.measure `string`
@@ -487,7 +407,7 @@ In case of value filtering, this property contains the measure name to which the
     $("#PivotClient1").ejPivotClient({ dataSource: { columns: [{ advancedFilter : [{ measure: "measureUniqueName", advancedFilterType: ej.olap.AdvancedFilterType.ValueFilter }] }] } });
 {% endhighlight %}
 
-### dataSource.columns.advancedFilter.values `string`
+### dataSource.columns.advancedFilter.values `array`
 {:#members:datasource-columns-advancedfilter-values}
 
 Allows the user to hold the filter operand values in advanced filtering.
@@ -500,9 +420,6 @@ Allows the user to hold the filter operand values in advanced filtering.
     
     //For Label Filters
     $("#PivotClient1").ejPivotClient({ dataSource: { columns: [{ advancedFilter : [{ labelFilterOperator: ej.olap.LabelFilterOptions.EndsWith, values:  ["002"] }] }] } });
-{% endhighlight %}
-
-{% highlight javascript %}
     
     //For Value Filters
     $("#PivotClient1").ejPivotClient({ dataSource: { columns: [{ advancedFilter : [{ valueFilterOperator: ej.olap.ValueFilterOptions.GreaterThan, values:  ["200"] }] }] } });
@@ -528,7 +445,7 @@ Allows the user to indicate whether the added item is a named set or not.
 ### dataSource.columns.showSubTotal `boolean`
 {:#members:datasource-columns-showsubtotal}
 
-Shows/Hides the sub-total of the field. 
+Shows/Hides the sub-total of the field in PivotGrid 
 
 #### Default Value: true
 
@@ -545,6 +462,8 @@ Shows/Hides the sub-total of the field.
 <ts name = "ej.PivotAnalysis.SortOrder"/>
 
 Allows the user to set the sorting order of the members of the field.
+
+>**Note**: This is applicable for Relational datasource only.
 
 #### Default Value: ej.PivotAnalysis.SortOrder.Ascending
 
@@ -579,9 +498,9 @@ Allows the user to set the sorting order of the members of the field.
 {% endhighlight %}
 
 ### dataSource.columns.drilledItems `array`
-{:#members:datasource-drilleditems}
+{:#members:datasource-columns-drilleditems}
 
-Contains the list of members which are drilled in the field.
+Contains the list of members need to be drilled down by default in the field.
 
 #### Default Value: []
 
@@ -593,7 +512,7 @@ Contains the list of members which are drilled in the field.
 {% endhighlight %}
 
 ### dataSource.columns.filterItems `object`
-{:#members:datasource-filteritems}
+{:#members:datasource-columns-filteritems}
 
 Applies filter to the field members.
 
@@ -612,6 +531,8 @@ Applies filter to the field members.
 <ts name = "ej.PivotAnalysis.FilterType"/>
 
 Sets the type of filter whether to include/exclude the mentioned values.
+
+>**Note**: This is applicable for Relational datasource only.
 
 #### Default Value: ej.PivotAnalysis.FilterType.Exclude
 
@@ -642,7 +563,7 @@ Sets the type of filter whether to include/exclude the mentioned values.
 {% endhighlight %}
 
 ### dataSource.columns.filterItems.values `array`
-{:#members:datasource-filteritems}
+{:#members:datasource-columns-filteritems-values}
 
 Contains the collection of items to be included/excluded among the field members.
 
@@ -658,7 +579,7 @@ Contains the collection of items to be included/excluded among the field members
 ### dataSource.rows `array`
 {:#members:datasource-rows}
 
-Lists out the items to be arranged in row section of PivotClient.
+Lists out the items to be arranged in rows section of PivotClient.
 
 #### Default Value: []
 
@@ -668,6 +589,7 @@ Lists out the items to be arranged in row section of PivotClient.
  
     $("#PivotClient1").ejPivotClient({ dataSource: { rows: itemsArray } });
 {% endhighlight %}
+
 
 ### dataSource.rows.fieldName `string`
 {:#members:datasource-rows-fieldname}
@@ -708,69 +630,13 @@ Allows the user to filter the report by default using advanced filtering (excel-
 
 {% highlight javascript %}
  
-    $("#PivotClient1").ejPivotClient({ dataSource: { columns: [{ advancedFilter : itemArray }] } });
-{% endhighlight %}
-
-### dataSource.columns.advancedFilter.name `string`
-{:#members:datasource-columns-advancedfilter-name}
-
-Allows the user to provide level unique name to perform advanced filtering.
-
-#### Default Value: ""
-
-**Example:**
-
-{% highlight javascript %}
- 
-    $("#PivotClient1").ejPivotClient({ dataSource: { columns: [{ advancedFilter : [{ name: "dimensionUniqueName" }] }] } });
-{% endhighlight %}
-
-### dataSource.columns.advancedFilter.labelFilterOperator `string`
-{:#members:datasource-columns-advancedfilter-labelfilteroperator}
-
-Allows the user to set the operator to perform Label filtering.
-
-#### Default Value: ""
-
-**Example:**
-
-{% highlight javascript %}
- 
-    $("#PivotClient1").ejPivotClient({ dataSource: { columns: [{ advancedFilter : [{ labelFilterOperator: ej.olap.LabelFilterOptions.EndsWith }] }] } });
-{% endhighlight %}
-
-### dataSource.columns.advancedFilter.valueFilterOperator `string`
-{:#members:datasource-columns-advancedfilter-valuefilteroperator}
-
-Allows the user to set the operator to perform Value filtering.
-
-#### Default Value: ""
-
-**Example:**
-
-{% highlight javascript %}
- 
-    $("#PivotClient1").ejPivotClient({ dataSource: { columns: [{ advancedFilter : [{ valueFilterOperator: ej.olap.ValueFilterOptions.Between }] }] } });
-{% endhighlight %}
-
-### dataSource.rows.advancedFilter `array`
-{:#members:datasource-rows-advancedfilter}
-
-Allows the user to filter the report by default using advanced filtering (excel-like) option for OLAP data source in client-mode.
-
-#### Default Value: []
-
-**Example:**
-
-{% highlight javascript %}
- 
     $("#PivotClient1").ejPivotClient({ dataSource: { rows: [{ advancedFilter : itemArray }] } });
 {% endhighlight %}
 
 ### dataSource.rows.advancedFilter.name `string`
 {:#members:datasource-rows-advancedfilter-name}
 
-Allows the user to provide level unique name to do advanced filtering (excel-like) for OLAP data source in client-mode.
+Allows the user to provide level unique name to perform advanced filtering.
 
 #### Default Value: ""
 
@@ -784,9 +650,9 @@ Allows the user to provide level unique name to do advanced filtering (excel-lik
 ### dataSource.rows.advancedFilter.labelFilterOperator `string`
 {:#members:datasource-rows-advancedfilter-labelfilteroperator}
 
-Allows the user to set the operator for label filtering to do advanced filtering (excel-like) for OLAP data source in client-mode.
+Allows the user to set the operator to perform Label Filtering.
 
-#### Default Value: ""
+#### Default Value: "none"
 
 **Example:**
 
@@ -798,9 +664,9 @@ Allows the user to set the operator for label filtering to do advanced filtering
 ### dataSource.rows.advancedFilter.valueFilterOperator `string`
 {:#members:datasource-rows-advancedfilter-valuefilteroperator}
 
-Allows the user to set the operator for value filtering to do advanced filtering (excel-like) for OLAP data source in client-mode.
+Allows the user to set the operator to perform Value Filtering.
 
-#### Default Value: ""
+#### Default Value: "none"
 
 **Example:**
 
@@ -812,7 +678,7 @@ Allows the user to set the operator for value filtering to do advanced filtering
 ### dataSource.rows.advancedFilter.advancedFilterType `string`
 {:#members:datasource-rows-advancedfilter-advancedfiltertype}
 
-Allows the user to set the filtering type while doing advanced filtering (excel-like) for OLAP data source in client-mode.
+Allows the user to set the filtering type while performing advanced filtering.
 
 #### Default Value: ""
 
@@ -820,27 +686,48 @@ Allows the user to set the filtering type while doing advanced filtering (excel-
 
 {% highlight javascript %}
  
-    $("#PivotClient1").ejPivotClient({ dataSource: {rows: [{ advancedFilter : [{ advancedFilterType:  ej.olap.AdvancedFilterType.LabelFilter }] }] } });
+    $("#PivotClient1").ejPivotClient({ dataSource: { rows: [{ advancedFilter : [{ advancedFilterType:  ej.olap.AdvancedFilterType.LabelFilter }] }] } });
 {% endhighlight %}
 
-### dataSource.rows.advancedFilter.values `string`
+### dataSource.rows.advancedFilter.measure `string`
+{:#members:datasource-rows-advancedfilter-measure}
+
+In case of value filtering, this property contains the measure name to which the filter is applied.
+
+#### Default Value: ""
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotClient1").ejPivotClient({ dataSource: { rows: [{ advancedFilter : [{ measure: "measureUniqueName", advancedFilterType: ej.olap.AdvancedFilterType.ValueFilter }] }] } });
+{% endhighlight %}
+
+### dataSource.rows.advancedFilter.values `array`
 {:#members:datasource-rows-advancedfilter-values}
 
-Allows the user to holds the filter value in advanced filtering (excel-like) option for OLAP data source in client-mode.
+Allows the user to hold the filter operand values in advanced filtering.
 
 #### Default Value: ""
 
 **Example:**
 
 {% highlight javascript %}
- 
-    $("#PivotClient1").ejPivotClient({ dataSource: { rows: [{ advancedFilter : [{ values:  ["002"] }] }] } });
+    
+    //For Label Filters
+    $("#PivotClient1").ejPivotClient({ dataSource: { rows: [{ advancedFilter : [{ labelFilterOperator: ej.olap.LabelFilterOptions.EndsWith, values:  ["002"] }] }] } });
+    
+    //For Value Filters
+    $("#PivotClient1").ejPivotClient({ dataSource: { rows: [{ advancedFilter : [{ valueFilterOperator: ej.olap.ValueFilterOptions.GreaterThan, values:  ["200"] }] }] } });
 {% endhighlight %}
+
 
 ### dataSource.rows.isNamedSets `boolean`
 {:#members:datasource-rows-isnamedsets}
 
-Allows the user to enable the usage of named set items in respective axis. This is only applicable for OLAP datasource.
+Allows the user to indicate whether the added item is a named set or not. 
+
+> **Note**: This is only applicable for OLAP datasource.
 
 #### Default Value: false
 
@@ -848,9 +735,142 @@ Allows the user to enable the usage of named set items in respective axis. This 
 
 {% highlight javascript %}
  
-    $("#PivotClient1").ejPivotClient({ dataSource: { rows: [{ isNamedSets : true}]}});
+    $("#PivotClient1").ejPivotClient({ dataSource: { rows: [{ fieldName: "[Core Product Group]", isNamedSets : true }] } });
 {% endhighlight %}
 
+### dataSource.rows.showSubTotal `boolean`
+{:#members:datasource-rows-showsubtotal}
+
+Shows/Hides the sub-total of the field. 
+
+#### Default Value: true
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotClient1").ejPivotClient({ dataSource: { rows: [{ fieldName: "Country", showSubTotal : false }] } });
+{% endhighlight %}
+
+### dataSource.rows.sortOrder `enum`
+{:#members:datasource-rows-sortorder}
+
+<ts name = "ej.PivotAnalysis.SortOrder"/>
+
+Allows the user to set the sorting order of the members of the field.
+
+>**Note**: This is applicable for Relational datasource only.
+
+#### Default Value: ej.PivotAnalysis.SortOrder.Ascending
+
+<table class="params">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">Ascending</td>
+            <td class="description">Sorts the members of the field in ascending order.</td>
+        </tr>
+        <tr>
+            <td class="name">Descending</td>
+            <td class="description">Sorts the members of the field in descending order.</td>
+        </tr>
+        <tr>
+            <td class="name">None</td>
+            <td class="description">Displays the members without sorting in any order.</td>
+        </tr>
+    </tbody>
+</table>
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotClient1").ejPivotClient({ dataSource: { rows: [{ fieldName: "Country", sortOrder : ej.PivotAnalysis.SortOrder.Descending }] } });
+{% endhighlight %}
+
+### dataSource.rows.drilledItems `array`
+{:#members:datasource-rows-drilleditems}
+
+Contains the list of members need to be drilled down by default in the field.
+
+#### Default Value: []
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotClient1").ejPivotClient({ dataSource: { rows: [{ fieldName: "Country", drilledItems : ["Canada", "France"] }] } });
+{% endhighlight %}
+
+### dataSource.rows.filterItems `object`
+{:#members:datasource-rows-filteritems}
+
+Applies filter to the field members.
+
+#### Default Value: null
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotClient1").ejPivotClient({ dataSource: { rows: [{ fieldName: "Country", filterItems : { filterType: ej.PivotAnalysis.FilterType.Exclude, values: ["Canada", "France"] } }] } });
+{% endhighlight %}
+
+### dataSource.rows.filterItems.filterType `enum`
+{:#members:datasource-rows-filteritems-filtertype}
+
+<ts name = "ej.PivotAnalysis.FilterType"/>
+
+Sets the type of filter whether to include/exclude the mentioned values.
+
+>**Note**: This is applicable for Relational datasource only.
+
+#### Default Value: ej.PivotAnalysis.FilterType.Exclude
+
+<table class="params">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">Exclude</td>
+            <td class="description">Excludes the specified values among the members of the field.</td>
+        </tr>
+        <tr>
+            <td class="name">Include</td>
+            <td class="description">Includes the specified values alone among the members of the field.</td>
+        </tr>
+    </tbody>
+</table>
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotClient1").ejPivotClient({ dataSource: { rows: [{ fieldName: "Country", filterItems : { filterType: ej.PivotAnalysis.FilterType.Include, values: valueArray } }] } });
+{% endhighlight %}
+
+### dataSource.rows.filterItems.values `array`
+{:#members:datasource-rows-filteritems-values}
+
+Contains the collection of items to be included/excluded among the field members.
+
+#### Default Value: []
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotClient1").ejPivotClient({ dataSource: { rows: [{ fieldName: "Country", filterItems : { filterType: ej.PivotAnalysis.FilterType.Exclude, values: ["Canada", "France"] } }] } });
+{% endhighlight %}
 
 ### dataSource.values `array`
 {:#members:datasource-values}
@@ -866,12 +886,38 @@ Lists out the items which supports calculation in PivotClient.
     $("#PivotClient1").ejPivotClient({ dataSource: { values: itemsArray } });
 {% endhighlight %}
 
+### dataSource.values.fieldName `string`
+{:#members:datasource-values-fieldname}
+
+Allows the user to bind the item by using its unique name as field name for Relational datasource.
+
+#### Default Value: ""
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotClient1").ejPivotClient({ dataSource: { values: [{ fieldName : "MyFieldName" }] } });
+{% endhighlight %}
+
+### dataSource.values.fielCaption `string`
+{:#members:datasource-values-fieldcaption}
+
+Allows the user to set the display caption for an item for Relational datasource.
+
+#### Default Value: ""
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotClient1").ejPivotClient({ dataSource: { values: [{ fieldCaption : "MyFieldCaption" }] } });
+{% endhighlight %}
+
 ### dataSource.values.measures `array`
-{:#members:datasource-values[0]-measures}
+{:#members:datasource-values-measures}
 
-This holds the list of unique names of measures to bind them from the cube.
-
-> **Note**: This is applicable only for OLAP data source.
+This holds the list of unique names of measures to bind them from the OLAP cube.
 
 #### Default Value: []
 
@@ -882,12 +928,28 @@ This holds the list of unique names of measures to bind them from the cube.
     $("#PivotClient1").ejPivotClient({ dataSource: { values: [{ measures : itemsArray }] } });
 {% endhighlight %}
 
+### dataSource.values.measures.fieldName `string`
+{:#members:datasource-values-measures-fieldName}
+
+Allows the user to bind the measure from OLAP datasource by using its unique name as field name.
+
+#### Default Value: ""
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotClient1").ejPivotClient({ dataSource: { values: [{ measures : [{ fieldName: "MeasureUniqueName" }] }] } });
+{% endhighlight %}
+
 ### dataSource.values.axis `string`
-{:#members:datasource-values[0]-axis}
+{:#members:datasource-values-axis}
 
 Allows to set the axis name to place the measures items.
 
-#### Default Value: “”
+>**Note**: This is applicable for OLAP datasource only.
+
+#### Default Value: "rows"
 
 **Example:**
 
@@ -896,38 +958,10 @@ Allows to set the axis name to place the measures items.
     $("#PivotClient1").ejPivotClient({ dataSource: { values: [{ axis : ej.olap.AxisName.Row }] } });
 {% endhighlight %}
 
-### dataSource.values.fieldName `string`
-{:#members:datasource-values[0]-fieldname}
+### dataSource.values.isCalculatedField `boolean`
+{:#members:datasource-values-iscalculatedfield}
 
-Allows the user to bind the item by its unique name as field name.
-
-#### Default Value: ""
-
-**Example:**
-
-{% highlight javascript %}
- 
-    $("#PivotClient1").ejPivotClient({ dataSource: { values: [{ fieldName : value }] } });
-{% endhighlight %}
-
-### dataSource.values.fieldCaption `string`
-{:#members:datasource-values[0]-fieldcaption}
-
-Allows the user to set the display name for an item.
-
-#### Default Value: ""
-
-**Example:**
-
-{% highlight javascript %}
- 
-    $("#PivotClient1").ejPivotClient({ dataSource: { values: [{ fieldCaption : value}] } });
-{% endhighlight %}
-
-### dataSource.enableAdvancedFilter `boolean`
-{:#members:datasource-enableadvancedfilter}
-
-Allows user to filter the members (by its name and values) through advanced filtering (excel-like) option for OLAP data source in client-mode.
+Indicates whether the field is a calculated field or not with Relational datasource.
 
 #### Default Value: false
 
@@ -935,9 +969,99 @@ Allows user to filter the members (by its name and values) through advanced filt
 
 {% highlight javascript %}
  
-    $("#PivotClient1").ejPivotClient({ dataSource: { enableAdvancedFilter: true } });
+    $("#PivotClient1").ejPivotClient({ dataSource: { values: [{ isCalculatedField : true }] } });
 {% endhighlight %}
 
+### dataSource.values.summaryType `enum`
+{:#members:datasource-values-summarytype}
+
+<ts name = "ej.PivotAnalysis.SummaryType"/>
+
+Allows to set the type of PivotGrid summary calculation for the value field with Relational datasource.
+
+#### Default Value: ej.PivotAnalysis.SummaryType.Sum
+
+**Example:**
+
+<table class="params">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">Sum</td>
+            <td class="description">Calculates the summary as the total of all values.</td>
+        </tr>
+        <tr>
+            <td class="name">Average</td>
+            <td class="description">Displays the average of all values as the summaries.</td>
+        </tr>
+        <tr>
+            <td class="name">Count</td>
+            <td class="description">Displays the count of items in summaries.</td>
+        </tr>
+        <tr>
+            <td class="name">Min</td>
+            <td class="description">Displays the minimum value of all the items in the summary.</td>
+        </tr>
+        <tr>
+            <td class="name">Max</td>
+            <td class="description">Displays the maximum value of all the items in the summary.</td>
+        </tr>
+    </tbody>
+</table>
+
+{% highlight javascript %}
+ 
+    $("#PivotClient1").ejPivotClient({ dataSource: { values: [{ summaryType : ej.PivotAnalysis.SummaryType.Average }] } });
+{% endhighlight %}
+
+### dataSource.values.format `string`
+{:#members:datasource-values-format}
+
+Allows to set the format of the values.
+
+#### Default Value: ""
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotClient1").ejPivotClient({ dataSource: { values: [{ format : "percentage" }] } });
+{% endhighlight %}
+
+### dataSource.values.formatString `string`
+{:#members:datasource-values-formatstring}
+
+This property sets type of display of date.
+
+>**Note**: This is applicable only when the format is set as "date".
+
+#### Default Value: ""
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotClient1").ejPivotClient({ dataSource: { values: [{ formatString : "MM/DD/YYYY" }] } });
+{% endhighlight %}
+
+### dataSource.values.formula `string`
+{:#members:datasource-values-formula}
+
+Allows to set the formula for calculation of values for calculated members in Relational datasource.
+
+#### Default Value: ""
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotClient1").ejPivotClient({ dataSource: { values: [{ formula : "Quantity*10" }] } });
+{% endhighlight %}
 
 ### dataSource.filters `array`
 {:#members:datasource-filters}
@@ -965,7 +1089,7 @@ Allows the user to bind the item by using its unique name as field name.
 
 {% highlight javascript %}
  
-    $("#PivotClient1").ejPivotClient({ dataSource: { filters: [{ fieldName : value }] } });
+    $("#PivotClient1").ejPivotClient({ dataSource: { filters: [{ fieldName : "MyFieldName" }] } });
 {% endhighlight %}
 
 ### dataSource.filters.fieldCaption `string`
@@ -979,7 +1103,129 @@ Allows the user to set the display name for an item.
 
 {% highlight javascript %}
  
-    $("#PivotClient1").ejPivotClient({ dataSource: { filters: [{ fieldCaption : value }] } });
+    $("#PivotClient1").ejPivotClient({ dataSource: { filters: [{ fieldCaption : "MyFieldCaption" }] } });
+{% endhighlight %}
+
+### dataSource.filters.filterItems `object`
+{:#members:datasource-filters-filteritems}
+
+Applies filter to the field members.
+
+#### Default Value: null
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotClient1").ejPivotClient({ dataSource: { filters: [{ fieldName: "Country", filterItems : { filterType: ej.PivotAnalysis.FilterType.Exclude, values: ["Canada", "France"] } }] } });
+{% endhighlight %}
+
+### dataSource.filters.filterItems.filterType `enum`
+{:#members:datasource-filters-filteritems-filtertype}
+
+<ts name = "ej.PivotAnalysis.FilterType"/>
+
+Sets the type of filter whether to include/exclude the mentioned values.
+
+>**Note**: This is applicable for Relational datasource only.
+
+#### Default Value: ej.PivotAnalysis.FilterType.Exclude
+
+<table class="params">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">Exclude</td>
+            <td class="description">Excludes the specified values among the members of the field.</td>
+        </tr>
+        <tr>
+            <td class="name">Include</td>
+            <td class="description">Includes the specified values alone among the members of the field.</td>
+        </tr>
+    </tbody>
+</table>
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotClient1").ejPivotClient({ dataSource: { filters: [{ fieldName: "Country", filterItems : { filterType: ej.PivotAnalysis.FilterType.Include, values: valueArray } }] } });
+{% endhighlight %}
+
+### dataSource.filters.filterItems.values `array`
+{:#members:datasource-filters-filteritems-values}
+
+Contains the collection of items to be included/excluded among the field members.
+
+#### Default Value: []
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotClient1").ejPivotClient({ dataSource: { filters: [{ fieldName: "Country", filterItems : { filterType: ej.PivotAnalysis.FilterType.Exclude, values: ["Canada", "France"] } }] } });
+{% endhighlight %}
+
+### dataSource.cube `string`
+{:#members:datasource-cube}
+
+Contains the respective cube name from OLAP database as string type.
+
+#### Default Value: “”
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotClient1").ejPivotClient({ dataSource: { cube: "Adventure Works" } });
+{% endhighlight %}
+
+
+### dataSource.data `object`
+{:#members:datasource-data}
+
+Provides the raw data source for the PivotClient.
+
+#### Default Value: null
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotClient1").ejPivotClient({ dataSource: { data: value } });
+{% endhighlight %}
+
+### dataSource.catalog `string`
+{:#members:datasource-catalog}
+
+In connection with an OLAP database, this property contains the database name as string to fetch the data from the given connection string.
+
+#### Default Value: “”
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotClient1").ejPivotClient( { dataSource: { catalog: "databaseName" } } );
+{% endhighlight %}
+
+### dataSource.enableAdvancedFilter `boolean`
+{:#members:datasource-enableadvancedfilter}
+
+Allows user to filter the members (by its name and values) through advanced filtering (excel-like) option for OLAP data source in client-mode.
+
+#### Default Value: false
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotClient1").ejPivotClient({ dataSource: { enableAdvancedFilter: true } });
 {% endhighlight %}
 
 ### dataSource.reportName `string`
@@ -999,7 +1245,7 @@ Sets a name to the report bound to the control.
 ### dataSource.pagerOptions `object`
 {:#members:datasource-pageroptions}
 
-Allows the set the page size and current page number for each axis on applying paging.
+Allows to set the page size and current page number for each axis on applying paging.
 
 > **Note**: This is applicable only for binding OLAP data from client-side.
 
@@ -1009,7 +1255,7 @@ Allows the set the page size and current page number for each axis on applying p
 
 {% highlight javascript %}
  
-    $("#PivotClient1").ejPivotClient({ dataSource: { pagerOptions: value } }); 
+    $("#PivotClient1").ejPivotClient({ dataSource: { pagerOptions: pagerSettings } }); 
 {% endhighlight %}
 
 ### dataSource.pagerOptions.categoricalPageSize `number`
@@ -1017,9 +1263,7 @@ Allows the set the page size and current page number for each axis on applying p
 
 Allows to set the number of categorical columns to be displayed in each page on applying paging.
 
-> **Note**: This is applicable only for binding OLAP data from client-side.
-
-#### Default Value: {}
+#### Default Value: 0
 
 **Example:**
 
@@ -1033,9 +1277,7 @@ Allows to set the number of categorical columns to be displayed in each page on 
 
 Allows to set the number of series rows to be displayed in each page on applying paging.
 
-> **Note**: This is applicable only for binding OLAP data from client-side.
-
-#### Default Value: {}
+#### Default Value: 0
 
 **Example:**
 
@@ -1051,7 +1293,7 @@ Allows to set the page number in categorical axis to be loaded by default.
 
 > **Note**: This is applicable only for binding OLAP data from client-side.
 
-#### Default Value: {}
+#### Default Value: 1
 
 **Example:**
 
@@ -1065,9 +1307,7 @@ Allows to set the page number in categorical axis to be loaded by default.
 
 Allows to set the page number in series axis to be loaded by default.
 
-> **Note**: This is applicable only for binding OLAP data from client-side.
-
-#### Default Value: {}
+#### Default Value: 1
 
 **Example:**
 
@@ -1247,7 +1487,7 @@ Sets the display mode (Only Chart/Only Grid/Both) in PivotClient.
 ### enableAdvancedFilter `boolean`
 {:#members:enableadvancedfilter}
 
-Enables the advanced filtering options Value Filtering, Label Filtering and Sorting for each dimensions on binding OLAP data.
+Enables the advanced filtering options Value Filtering, Label Filtering and Sorting for each dimensions on binding OLAP data in server mode.
 
 #### Default Value: false
 
@@ -1293,7 +1533,7 @@ Lets the user to save and load reports in a customized way with the help of even
 
 Allows the user to enable paging for both the PivotChart and PivotGrid components for the ease of viewing large data.
 
-> **Note**: This property is applicable OLAP data bound from client-side alone.
+> **Note**: This property is applicable for OLAP data bound from client-side alone.
 
 #### Default Value: false
 
@@ -1611,6 +1851,8 @@ Allows the user to set the custom name for the service method responsible for lo
 
 Allows the user to set the custom name for the service method responsible for retrieving the MDX query for the current report.
 
+>**Note**: This is applicable only with OLAP data bound.
+
 #### Default Value: "GetMDXQuery"
 
 **Example:**
@@ -1771,7 +2013,7 @@ Connects the service using the specified URL for any server updates.
 
 {% highlight javascript %}
  
-    $("#PivotClient1").ejPivotClient({ url: "/wcf/OlapClientService.svc" });
+    $("#PivotClient1").ejPivotClient({ url: "/wcf/OlapService" });
 {% endhighlight %}
 
 ## Methods
@@ -1783,18 +2025,10 @@ Performs an asynchronous HTTP (AJAX) request.
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-    <div id="PivotClient1"></div> 
-    
-    <script>
-        $('#PivotClient1').ejPivotClient({
-            //...
-        });
-        var clientObj = $("#PivotClient1").data("ejPivotClient");
-        clientObj.doAjaxPost("POST", "/OlapClientService.svc/Initialize", {"key", "Hello World"}, "renderControlSuccess", null);
-    </script>
-
+    var clientObj = $("#PivotClient1").data("ejPivotClient");
+    clientObj.doAjaxPost("POST", "/OlapService/Initialize", { "key", "Hello World" }, "renderControlSuccess", null);
 {% endhighlight %}
 
 ### doPostBack()
@@ -1804,17 +2038,10 @@ Performs an asynchronous HTTP (FullPost) submit.
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
 
-    <div id="PivotClient1"></div> 
-    
-    <script>
-        $('#PivotClient1').ejPivotClient({
-            //...
-        });
-        var clientObj = $("#PivotClient1").data("ejPivotClient");
-        clientObj.doPostBack("/OlapClientService.svc/Initialize", {"key", "Hello World"});
-    </script>
+    var clientObj = $("#PivotClient1").data("ejPivotClient");
+    clientObj.doPostBack("/OlapService/Initialize", { "key", "Hello World" });
 {% endhighlight %}
 
 ### refreshPagedPivotClient()
@@ -1824,17 +2051,10 @@ Navigates to the specified page in specified axis.
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-    <div id="PivotClient1"></div> 
-    
-    <script>
-        $('#PivotClient1').ejPivotClient({
-            //...
-        });
-        var clientObj = $("#PivotClient1").data("ejPivotClient");
-        clientObj.refreshPagedPivotClient("series", 24);//Loads the 24th page in series axis
-    </script>
+    var clientObj = $("#PivotClient1").data("ejPivotClient");
+    clientObj.refreshPagedPivotClient("series", 24);//Loads the 24th page in series axis
 {% endhighlight %}
 
 ### refreshPagedPivotClientSuccess()
@@ -1844,17 +2064,10 @@ Updates the PivotClient component with the JSON data fetched from the service on
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-    <div id="PivotClient1"></div> 
-    
-    <script>
-        $('#PivotClient1').ejPivotClient({
-            //...
-        });
-        var clientObj = $("#PivotClient1").data("ejPivotClient");
-        clientObj.refreshPagedPivotClientSuccess(jsonData); //jsonData object holds the JSON data required to render a specific page of the control
-    </script>
+    var clientObj = $("#PivotClient1").data("ejPivotClient");
+    clientObj.refreshPagedPivotClientSuccess(jsonData); //jsonData object holds the JSON data required to render a specific page of the control.
 {% endhighlight %}
 
 ### generateJSON()
@@ -1864,17 +2077,10 @@ Renders the PivotChart and PivotGrid with the JSON data provided.
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-    <div id="PivotClient1"></div> 
-    
-    <script>
-        $('#PivotClient1').ejPivotClient({
-            //...
-        });
-        var clientObj = $("#PivotClient1").data("ejPivotClient");
-        clientObj.generateJSON(jsonData);//jsonData object holds the data in JSON format required to render the control
-    </script>
+    var clientObj = $("#PivotClient1").data("ejPivotClient");
+    clientObj.generateJSON(jsonData);//jsonData object holds the data in JSON format required to render the control
 {% endhighlight %}
 
 ### refreshControl()
@@ -1886,17 +2092,10 @@ Re-renders the control with the report at that instant.
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-    <div id="PivotClient1"></div> 
-    
-    <script>
-        $('#PivotClient1').ejPivotClient({
-            //...
-        });
-        var clientObj = $("#PivotClient1").data("ejPivotClient");
-        clientObj.refreshControl();
-    </script>
+    var clientObj = $("#PivotClient1").data("ejPivotClient");
+    clientObj.refreshControl();
 {% endhighlight %}
 
 ### getOlapReport()
@@ -1906,17 +2105,10 @@ Returns the OlapReport string maintained along with the axis elements informatio
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-    <div id="PivotClient1"></div> 
-    
-    <script>
-        $('#PivotClient1').ejPivotClient({
-            //...
-        });
-        var clientObj = $("#PivotClient1").data("ejPivotClient");
-        var report = clientObj.getOlapReport();
-    </script>
+    var clientObj = $("#PivotClient1").data("ejPivotClient");
+    var report = clientObj.getOlapReport();
 {% endhighlight %}
 
 ### setOlapReport()
@@ -1926,17 +2118,10 @@ Sets the OlapReport string along with the axis information and maintains it in a
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-    <div id="PivotClient1"></div> 
-    
-    <script>
-        $('#PivotClient1').ejPivotClient({
-            //...
-        });
-        var clientObj = $("#PivotClient1").data("ejPivotClient");
-        clientObj.setOlapReport(olapReportObj);
-    </script>
+    var clientObj = $("#PivotClient1").data("ejPivotClient");
+    clientObj.setOlapReport(olapReportObj);
 {% endhighlight %}
 
 ### getJSONRecords()
@@ -1946,17 +2131,10 @@ Returns the JSON records formed to render the control.
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-    <div id="PivotClient1"></div> 
-    
-    <script>
-        $('#PivotClient1').ejPivotClient({
-            //...
-        });
-        var clientObj = $("#PivotClient1").data("ejPivotClient");
-        var jsonRecords = clientObj.getJSONRecords();
-    </script>
+    var clientObj = $("#PivotClient1").data("ejPivotClient");
+    var jsonRecords = clientObj.getJSONRecords();
 {% endhighlight %}
 
 ### setJSONRecords()
@@ -1966,17 +2144,10 @@ Sets the JSON records formed to render the control to a property.
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-    <div id="PivotClient1"></div> 
-    
-    <script>
-        $('#PivotClient1').ejPivotClient({
-            //...
-        });
-        var clientObj = $("#PivotClient1").data("ejPivotClient");
-        clientObj.setJSONRecords(jsonRecords);
-    </script>
+    var clientObj = $("#PivotClient1").data("ejPivotClient");
+    clientObj.setJSONRecords(jsonRecords);
 {% endhighlight %}
 
 ## Events
@@ -1986,10 +2157,11 @@ Sets the JSON records formed to render the control to a property.
 
 Triggers when it reaches client-side after any AJAX request.
 
-Below are the event parameters from PivotClient component.
-
 <table class="params">
 <thead>
+<tr>
+<th colspan="3">Event Parameters</th>
+</tr>
 <tr>
 <th>Name</th>
 <th>Type</th>
@@ -2034,6 +2206,9 @@ Triggers before any AJAX request is passed from client-side to service methods.
 <table class="params">
 <thead>
 <tr>
+<th colspan="3">Event Parameters</th>
+</tr>
+<tr>
 <th>Name</th>
 <th>Type</th>
 <th>Description</th>
@@ -2075,6 +2250,9 @@ Triggers before saving the current collection of reports.
 <table class="params">
 <thead>
 <tr>
+<th colspan="3">Event Parameters</th>
+</tr>
+<tr>
 <th>Name</th>
 <th>Type</th>
 <th>Description</th>
@@ -2110,6 +2288,9 @@ Triggers before loading a saved collection of reports.
 
 <table class="params">
 <thead>
+<tr>
+<th colspan="3">Event Parameters</th>
+</tr>
 <tr>
 <th>Name</th>
 <th>Type</th>
@@ -2148,6 +2329,9 @@ Triggers before fetching the report collection from storage.
 <table class="params">
 <thead>
 <tr>
+<th colspan="3">Event Parameters</th>
+</tr>
+<tr>
 <th>Name</th>
 <th>Type</th>
 <th>Description</th>
@@ -2185,6 +2369,9 @@ Triggers before exporting the control.
 <table class="params">
 <thead>
 <tr>
+<th colspan="3">Event Parameters</th>
+</tr>
+<tr>
 <th>Name</th>
 <th>Type</th>
 <th>Description</th>
@@ -2220,6 +2407,9 @@ Triggers before rendering the PivotChart.
 
 <table class="params">
 <thead>
+<tr>
+<th colspan="3">Event Parameters</th>
+</tr>
 <tr>
 <th>Name</th>
 <th>Type</th>
@@ -2267,6 +2457,9 @@ Triggers before rendering the PivotTreeMap.
 <table class="params">
 <thead>
 <tr>
+<th colspan="3">Event Parameters</th>
+</tr>
+<tr>
 <th>Name</th>
 <th>Type</th>
 <th>Description</th>
@@ -2308,6 +2501,9 @@ Triggers while we initiate loading of the widget.
 <table class="params">
 <thead>
 <tr>
+<th colspan="3">Event Parameters</th>
+</tr>
+<tr>
 <th>Name</th>
 <th>Type</th>
 <th>Description</th>
@@ -2317,7 +2513,7 @@ Triggers while we initiate loading of the widget.
 <tr>
 <td class="name">element</td>
 <td class="type">object</td>
-<td class="description last">returns the HTML tag of PivotClient component.</td>
+<td class="description last">returns the HTML element of PivotClient component.</td>
 </tr>
 <tr>
 <td class="name">customObject</td>
@@ -2345,6 +2541,9 @@ Triggers when PivotClient widget completes all operations at client-end after an
 <table class="params">
 <thead>
 <tr>
+<th colspan="3">Event Parameters</th>
+</tr>
+<tr>
 <th>Name</th>
 <th>Type</th>
 <th>Description</th>
@@ -2354,7 +2553,7 @@ Triggers when PivotClient widget completes all operations at client-end after an
 <tr>
 <td class="name">element</td>
 <td class="type">object</td>
-<td class="description last">returns the HTML tag of PivotClient component.</td>
+<td class="description last">returns the HTML element of PivotClient component.</td>
 </tr>
 <tr>
 <td class="name">customObject</td>
@@ -2380,6 +2579,9 @@ Triggers when any error occurred during AJAX request.
 
 <table class="params">
 <thead>
+<tr>
+<th colspan="3">Event Parameters</th>
+</tr>
 <tr>
 <th>Name</th>
 <th>Type</th>
@@ -2423,6 +2625,9 @@ Triggers when PivotClient successfully completes rendering.
 <table class="params">
 <thead>
 <tr>
+<th colspan="3">Event Parameters</th>
+</tr>
+<tr>
 <th>Name</th>
 <th>Type</th>
 <th>Description</th>
@@ -2445,147 +2650,4 @@ Triggers when PivotClient successfully completes rendering.
         renderSuccess: function (args) { }
     });      
 
-{% endhighlight %}
-
-
-## Enumeration
-
-### ClientExportMode `enum`
-{:#enum:clientexportmode}
-
-<ts name = "ej.PivotClient.ClientExportMode"/>
-
-Sets the mode to export the OLAP visualization components such as PivotChart and PivotGrid in PivotClient. Based on the option, either Chart or Grid or both gets exported.
-
-<table class="params">
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Description</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td class="name">ChartAndGrid</td>
-            <td class="description">To export both PivotGrid and PivotChart contents.</td>
-        </tr>
-        <tr>
-            <td class="name">ChartOnly</td>
-            <td class="description">To export only PivotChart contents.</td>
-        </tr>
-        <tr>
-            <td class="name">GridOnly</td>
-            <td class="description">To export only PivotGrid contents.</td>
-        </tr>
-    </tbody>
-</table>
-
-**Example:**
-
-{% highlight javascript %}
-
-    $("#PivotClient1").ejPivotClient({ clientExportMode: ej.PivotClient.ClientExportMode.ChartAndGrid });
-{% endhighlight %}
-
-### ControlPlacement `enum`
-{:#enum:controlplacement}
-
-<ts name = "ej.PivotClient.ControlPlacement" />
-
-Sets the display of the PivotChart and PivotGrid either in separate tabs or one above another (in tiles).
-
-<table class="params">
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Description</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td class="name">Tab</td>
-            <td class="description">Displays PivotGrid and PivotChart in separate tabs.</td>
-        </tr>
-        <tr>
-            <td class="name">Tile</td>
-            <td class="description">Displays PivotGrid and PivotChart one above another.</td>
-        </tr>
-    </tbody>
-</table>
-
-**Example:**
-
-{% highlight javascript %}
-
-    $("#PivotClient1").ejPivotClient({ displaySettings: { controlPlacement: ej.PivotClient.ControlPlacement.Tile } });
-{% endhighlight %}
-
-### DisplayMode `enum`
-{:#enum:displaymode}
-
-<ts name = "ej.PivotClient.DisplayMode" />
-
-Sets the option to render PivotClient widget either with both PivotChart and PivotGrid or with any one of them.
-
-<table class="params">
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Description</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td class="name">ChartOnly</td>
-            <td class="description">Renders PivotChart only within PivotClient.</td>
-        </tr>
-        <tr>
-            <td class="name">GridOnly</td>
-            <td class="description">Renders PivotGrid only within PivotClient.</td>
-        </tr>
-        <tr>
-            <td class="name">ChartAndGrid</td>
-            <td class="description">Renders both PivotChart and PivotGrid within PivotClient.</td>
-        </tr>
-    </tbody>
-</table>
-
-**Example:**
-
-{% highlight javascript %}
-
-    $("#PivotClient1").ejPivotClient({ displaySettings: { mode: ej.PivotClient.DisplayMode.ChartOnly } });
-{% endhighlight %}
-
-### DefaultView `enum`
-{:#enum:defaultview}
-
-<ts name = "ej.PivotClient.DefaultView" />
-
-Sets either PivotChart or PivotGrid as default component in initial loading view.
-
-<table class="params">
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Description</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td class="name">Chart</td>
-            <td class="description">Sets PivotChart as the default control.</td>
-        </tr>
-        <tr>
-            <td class="name">Grid</td>
-            <td class="description">Sets PivotGrid as the default control.</td>
-        </tr>
-    </tbody>
-</table>
-
-**Example:**
-
-{% highlight javascript %}
-
-    $("#PivotClient1").ejPivotClient({ displaySettings: { defaultView: ej.PivotClient.DefaultView.Chart } });
 {% endhighlight %}

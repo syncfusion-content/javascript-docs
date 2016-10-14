@@ -216,7 +216,7 @@ DataSource must not be empty at initial load since columns are generated from da
 <tr>
 <td>
 EmptyRowValidationMessage</td><td>
-Atleast one field must be updated</td></tr>
+At least one field must be updated</td></tr>
 <tr>
 <td>
 True</td><td>

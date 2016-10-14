@@ -216,8 +216,6 @@ $("#PivotGrid1").ejPivotGrid({dataSource: {columns: [{ advancedFilter : [{name: 
 ### dataSource.columns.advancedFilter.labelFilterOperator `string`
 {:#members:datasource-columns-advancedfilter-labelfilteroperator}
 
-<ts name = "ej.olap.LabelFilterOptions"/>
-
 Allows the user to set the operator for label filtering to do advanced filtering (excel-like) for OLAP data source in client-mode.
 
 #### Default Value: ""
@@ -233,8 +231,6 @@ $("#PivotGrid1").ejPivotGrid({dataSource: {columns: [{ advancedFilter : [{labelF
 ### dataSource.columns.advancedFilter.valueFilterOperator `string`
 {:#members:datasource-columns-advancedfilter-valuefilteroperator}
 
-<ts name = "ej.olap.ValueFilterOptions"/>
-
 Allows the user to set the operator for value filtering to do advanced filtering (excel-like) for OLAP data source in client-mode.
 
 #### Default Value: ""
@@ -249,8 +245,6 @@ $("#PivotGrid1").ejPivotGrid({dataSource: {columns: [{ advancedFilter : [{valueF
 
 ### dataSource.columns.advancedFilter.advancedFilterType `string`
 {:#members:datasource-columns-advancedfilter-advancedfiltertype}
-
-<ts name = "ej.olap.AdvancedFilterType"/>
 
 Allows the user to set the filtering type while doing advanced filtering (excel-like) for OLAP data source in client-mode.
 
@@ -407,8 +401,6 @@ $("#PivotGrid1").ejPivotGrid({dataSource: {rows: [{ advancedFilter : [{name: "di
 ### dataSource.rows.advancedFilter.labelFilterOperator `string`
 {:#members:datasource-rows-advancedfilter-labelfilteroperator}
 
-<ts name = "ej.olap.LabelFilterOptions"/>
-
 Allows the user to set the operator for label filtering to do advanced filtering (excel-like) for OLAP data source in client-mode.
 
 #### Default Value: ""
@@ -424,8 +416,6 @@ $("#PivotGrid1").ejPivotGrid({dataSource: {rows: [{ advancedFilter : [{labelFilt
 ### dataSource.rows.advancedFilter.valueFilterOperator `string`
 {:#members:datasource-rows-advancedfilter-valuefilteroperator}
 
-<ts name = "ej.olap.ValueFilterOptions"/>
-
 Allows the user to set the operator for value filtering to do advanced filtering (excel-like) for OLAP data source in client-mode.
 
 #### Default Value: ""
@@ -440,8 +430,6 @@ $("#PivotGrid1").ejPivotGrid({dataSource: {rows: [{ advancedFilter : [{valueFilt
 
 ### dataSource.rows.advancedFilter.advancedFilterType `string`
 {:#members:datasource-rows-advancedfilter-advancedfiltertype}
-
-<ts name = "ej.olap.AdvancedFilterType"/>
 
 Allows the user to set the filtering type while doing advanced filtering (excel-like) for OLAP data source in client-mode.
 
@@ -1061,21 +1049,6 @@ Allows the user to view large amount of data by applying paging.
 {% highlight html %}
  
 $("#PivotGrid1").ejPivotGrid({ enablePaging: true });
-
-{% endhighlight %}
-
-### enableVirtualScrolling `boolean`
-{:#members:enablevirtualscrolling}
-
-Allows the user to view large amount of data through virtual scrolling.
-
-#### Default Value: false
-
-**Example:**
-
-{% highlight html %}
- 
-$("#PivotGrid1").ejPivotGrid({ enableVirtualScrolling: true });
 
 {% endhighlight %}
 
@@ -2880,164 +2853,3 @@ $("#PivotGrid1").ejPivotGrid({
 });
 
 {% endhighlight %}
-
-## Enumeration
-
-### AnalysisMode  `enum`
-{:#enum:analysismode}
-
-<ts name = "ej.PivotGrid.AnalysisMode"/>
-
-Sets the mode for the PivotGrid widget for binding either OLAP or relational data source.
-
-<table class="params">
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Description</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td class="name">OLAP</td>
-            <td class="description">To bind an OLAP data source to PivotGrid.</td>
-        </tr>
-        <tr>
-            <td class="name">Relational</td>
-            <td class="description">To bind a relational data source to PivotGrid.</td>
-        </tr>
-    </tbody>
-</table>
-
-
-**Example:**
-
-{% highlight html %}
-
-$("#PivotGrid1").ejPivotGrid({analysisMode: ej.PivotGrid.AnalysisMode.Olap});
-
-{% endhighlight %}
-
-
-### ExportOptions  `enum`
-{:#enum:exportoptions}
-
-<ts name = "ej.PivotGrid.ExportOptions"/>
-
-Allows the user to set the exporting options for PivotGrid widget.
-
-<table class="params">
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Description</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td class="name">Excel</td>
-            <td class="description">To export PivotGrid in Excel format.</td>
-        </tr>
-        <tr>
-            <td class="name">Word</td>
-            <td class="description">To export PivotGrid in Word format.</td>
-        </tr>
-         <tr>
-            <td class="name">PDF</td>
-            <td class="description">To export PivotGrid in PDF format.</td>
-        </tr>
-         <tr>
-            <td class="name">CSV</td>
-            <td class="description">To export PivotGrid in CSV format.</td>
-        </tr>
-    </tbody>
-</table> 
-
-**Example:**
-
-{% highlight html %}
-
-$("#PivotGrid1").ejPivotGrid({ exportOptions: ej.PivotGrid.ExportOptions.Excel});
-
-{% endhighlight %}
-
-### Layout  `enum`
-{:#enum:layout}
-
-<ts name = "ej.PivotGrid.Layout"/>
-
-Allows the user to set the layout for PivotGrid.
-
-<table class="params">
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Description</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td class="name">Normal</td>
-            <td class="description">To set normal summary layout in PivotGrid.</td>
-        </tr>
-        <tr>
-            <td class="name">NormalTopSummary</td>
-            <td class="description">To set layout with summaries at the top in PivotGrid.</td>
-        </tr>
-        <tr>
-            <td class="name">NoSummaries</td>
-            <td class="description">To set layout without summaries in PivotGrid.</td>
-        </tr>
-        <tr>
-            <td class="name">ExcelLikeLayout</td>
-            <td class="description">To set excel-like layout in PivotGrid.</td>
-        </tr>
-    </tbody>
-</table>
-
-**Example:**
-
-{% highlight html %}
-
-$("#PivotGrid1").ejPivotGrid({ layout: ej.PivotGrid.Layout.Normal });
-
-{% endhighlight %}
-
-
-### OperationalMode  `enum`
-{:#enum:operationalmode}
-
-<ts name = "ej.PivotGrid.OperationalMode"/>
-
-Sets the mode for the PivotGrid widget for binding data source either in server-side or client-side.
-
-<table class="params">
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Description</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td class="name">ClientMode</td>
-            <td class="description">To bind data source completely from client-side.</td>
-        </tr>
-        <tr>
-            <td class="name">ServerMode</td>
-            <td class="description">To bind data source completely from server-side.</td>
-        </tr>
-    </tbody>
-</table>
-
-
-**Example:**
-
-{% highlight html %}
-
-$("#PivotGrid1").ejPivotGrid({operationalMode:ej.PivotGrid.OperationalMode.ServerMode});
-
-{% endhighlight %}
-
-
-
