@@ -1388,7 +1388,7 @@ You can change the alignment of the text to far, near and center position using 
 
 ![](/js/Chart/Axis_images/axis_img60.png)
 
-You can trim, wrap or wrapandtrim the text if it exceeds the maximum text width value using the property [`textOverflow`]
+You can trim, wrap or wrapAndTrim the text if it exceeds the maximum text width value using the property [`textOverflow`]
 
 {% highlight javascript %}
 
@@ -1412,4 +1412,4 @@ The below screenshot shows the trimmed multi-level labels
 ![](/js/Chart/Axis_images/axis_img61.png)
 
 And these labels can be placed in various rows using the [`level`] property.
-[Click](http://js.syncfusion.com/demos/web/#!/bootstrap/chart/chartaxes/multi-levellabels)here to view the multi-level labels online demo sample.
+[Click](http://js.syncfusion.com/demos/web/#!/bootstrap/chart/chartaxes/multi-levellabels) here to view the multi-level labels online demo sample.
