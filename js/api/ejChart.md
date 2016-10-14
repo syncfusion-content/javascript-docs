@@ -3128,6 +3128,57 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/rbw3xizf)
 
 
 
+### commonSeriesOptions.marker.dataLabel.maximumLabelWidth `number`
+{:#members:commonseriesoptions-marker-datalabel-maximumlabelwidth}
+
+
+Maximum label width of the data label 
+
+
+#### Default Value
+
+ * null
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+commonSeriesOptions :{marker :{dataLabel :{maximumLabelWidth : 90}}}                  
+});
+ {% endhighlight %}
+
+
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/klibjzkp)
+
+
+
+### commonSeriesOptions.marker.dataLabel.enableWrap `boolean`
+{:#members:commonseriesoptions-marker-datalabel-enablewrap}
+
+Enable the wap option to the dataLable 
+
+#### Default Value
+
+ * false
+
+#### Example
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+commonSeriesOptions :{marker :{dataLabel :{enableWrap : false}}}                  
+});
+ {% endhighlight %}
+
+
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/klibjzkp)
+
+
 ### commonSeriesOptions.marker.dataLabel.border `object`
 {:#members:commonseriesoptions-marker-datalabel-border}
 
@@ -7695,6 +7746,201 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/ne1iit3s)
 Options for displaying and customizing the crosshair.
 
 
+
+### crosshair.trackballTooltipSettings `object`
+{:#members:crosshair-trackballtooltipsettings}
+
+Options for customizing the trackabll.
+
+### crosshair.trackballTooltipSettings.border `object`
+{:#members:crosshair-trackballtooltipsettings-border}
+
+Options for customizing the border.
+
+
+### crosshair.trackballTooltipSettings.border.width `number`
+{:#members:crosshair-trackballtooltipsettings-border-width}
+
+Border width of the trackball.
+
+#### Default Value
+
+* null
+
+#### Example
+
+{% highlight js %}
+ 
+$("#container").ejChart({
+
+   crosshair : { trackballTooltipSettings : { border : { width :2 } } }              
+
+});
+
+{% endhighlight %}
+
+
+### crosshair.trackballTooltipSettings.border.color `string`
+{:#members:crosshair-trackballtooltipsettings-border-color}
+
+Border color of the trackball.
+
+#### Default Value
+
+* null
+
+#### Example
+
+{% highlight js %}
+ 
+$("#container").ejChart({
+
+   crosshair : { trackballTooltipSettings : { border : { color :"red" } } }              
+
+});
+
+{% endhighlight %}
+
+
+
+### crosshair.trackballTooltipSettings.fill `string`
+{:#members:crosshair-trackballtooltipsettings-fill}
+
+background color of the trackball tooltip.
+
+#### Default Value
+
+* null
+
+#### Example
+
+{% highlight js %}
+ 
+$("#container").ejChart({
+
+   crosshair : { trackballTooltipSettings : { fill :"red"  } }              
+
+});
+
+{% endhighlight %}
+
+
+
+### crosshair.trackballTooltipSettings.rx `number`
+{:#members:crosshair-trackballtooltipsettings-rx}
+
+Rx value of the trackball tooltip.
+
+#### Default Value
+
+* 3
+
+#### Example
+
+{% highlight js %}
+ 
+$("#container").ejChart({
+
+   crosshair : { trackballTooltipSettings : { rx : 5  } }              
+
+});
+
+{% endhighlight %}
+
+
+### crosshair.trackballTooltipSettings.ry `number`
+{:#members:crosshair-trackballtooltipsettings-ry}
+
+Ry value of the trackball tooltip.
+
+#### Default Value
+
+* 3
+
+#### Example
+
+{% highlight js %}
+ 
+$("#container").ejChart({
+
+   crosshair : { trackballTooltipSettings : { ry : 5  } }              
+
+});
+
+{% endhighlight %}
+
+
+### crosshair.trackballTooltipSettings.opacity `number`
+{:#members:crosshair-trackballtooltipsettings-opacity}
+
+opacity  of the trackball tooltip.
+
+#### Default Value
+
+* 1
+
+#### Example
+
+{% highlight js %}
+ 
+$("#container").ejChart({
+
+   crosshair : { trackballTooltipSettings : { opacity : 0.5  } }              
+
+});
+
+{% endhighlight %}
+
+
+### crosshair.trackballTooltipSettings.mode `enum`
+{:#members:crosshair-trackballtooltipsettings-mode}
+
+<ts name = "ej.datavisualization.Chart.CrosshairMode"/>
+
+Specifies the mode of the trackball.
+
+
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th> 
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+Float</td>
+<td class="type">string</td> 
+<td class="description">Shown the trackball as float mode.</td>
+</tr>
+<tr>
+<td class="name">
+Grouping</td>
+<td class="type">string</td>
+<td class="description">Shown the trackball as grouping mode.</td>
+</tr> 
+</tbody>
+</table>
+
+
+#### Default Value
+
+* "float". See <a href="global.html#members:crosshairmode">CrosshairMode</a>
+
+#### Example
+
+
+{% highlight js %}
+ 
+$("#container").ejChart({
+
+   crosshair : { trackballTooltipSettings : { mode : 'grouping'  } }              
+
+});
+
+{% endhighlight %}
 
 
 
@@ -12450,6 +12696,72 @@ $("#container").ejChart({
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/u0s1y0dg)
 
 
+
+### primaryXAxis.alignment `enum`
+{:#members:primaryxaxis-alignment}
+
+<ts name = "ej.datavisualization.Chart.LabelAlignment"/>
+
+Specifies the axis labels alignment.
+
+
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th> 
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+Near</td>
+<td class="type">string</td> 
+<td class="description">The axis labels placed as near</td>
+</tr>
+<tr>
+<td class="name">
+Far</td>
+<td class="type">string</td>
+<td class="description">The axis labels placed as far</td>
+</tr> 
+<tr>
+<td class="name">
+Center</td>
+<td class="type">string</td>
+<td class="description">The axis labels placed as center</td>
+</tr> 
+</tbody>
+</table>
+
+
+#### Default Value
+
+
+
+* "center". See <a href="global.html#members:alignment">Alignment</a>
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    primaryXAxis: { alignment : "far" }
+                       
+});
+
+{% endhighlight %}
+
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/vfgwipz1)
+
+
+
 ### primaryXAxis.labelRotation `number`
 {:#members:primaryxaxis-labelrotation}
 
@@ -15608,6 +15920,37 @@ $("#container").ejChart({
 {% endhighlight %}
 
 
+
+
+### primaryYAxis.alignment `enum`
+{:#members:primaryyaxis-alignment}
+
+<ts ref = "ej.datavisualization.Chart.LabelAlignment"/>
+
+Specifies the position of the axis labels.
+
+
+#### Default Value
+
+
+
+* "center". See <a href="global.html#members:alignment">Alignment</a>
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    primaryYAxis: { alignment : "near" }
+                           
+});
+
+{% endhighlight %}
 
 
 ### primaryYAxis.logBase `number`
@@ -19287,6 +19630,57 @@ series :[{marker :{dataLabel :{angle : 90}}]
 
 
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/ulhda01g)
+
+
+### series.marker.dataLabel.maximumLabelWidth `number`
+{:#members:series-marker-datalabel-maximumlabelwidth}
+
+
+Maximum label width of the data label 
+
+
+#### Default Value
+
+ * null
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+series :[{marker :{dataLabel :{maximumLabelWidth : 80}}]                  
+});
+ {% endhighlight %}
+
+
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/klibjzkp)
+
+
+
+### series.marker.dataLabel.enableWrap `boolean`
+{:#members:series-marker-datalabel-enablewrap}
+
+Enable the wap option to the dataLable 
+
+#### Default Value
+
+ * false
+
+#### Example
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+series :[{marker :{dataLabel :{enableWrap : true}}]            
+});
+ {% endhighlight %}
+
+
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/klibjzkp)
 
 
 ### series.marker.dataLabel.border `object`
