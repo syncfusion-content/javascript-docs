@@ -13,7 +13,7 @@ Named sets is a multidimensional expression (MDX) that returns a set of dimensio
 
 ## Client Mode
 
-You can bind the Named Sets in PivotGrid by setting it's unique name in the `fieldName` property either in row or column axis and `isNamedSets` boolean property to "true".
+You can bind the Named Sets in PivotGrid by setting it's unique name in the [`fieldName`](/js/api/ejpivotgrid#members:datasource-rows-fieldname) property either in row or column axis and [`isNamedSets`](/js/api/ejpivotgrid#members:datasource-columns-isnamedsets) boolean property to "true".
 
 {% highlight js %}
 

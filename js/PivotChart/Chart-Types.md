@@ -335,7 +335,7 @@ The following screen shot displays the **Bubble Chart.**
 
 ![](Chart-Types_images/BubbleChart.png)
 
-##Combination Chart
+## Combination Chart
 
 A **combination Chart** combines two or more series types in a single Chart. But there are some limitations in the combination Chart. They are:
 

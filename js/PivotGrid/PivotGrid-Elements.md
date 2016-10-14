@@ -21,7 +21,7 @@ Also hyperlink option provides separate events for row header, column header, va
  
 * [`columnHeaderHyperlinkClick`](/js/api/ejpivotgrid#events:columnheaderhyperlinkclick) - Returns column header information through event on hyperlink click.
 * [`rowHeaderHyperlinkClick`](/js/api/ejpivotgrid#events:rowheaderhyperlinkclick) - Returns row header information through event on hyperlink click.
-* [`summaryCellHyperlinkClick`](/js/api/ejpivotgrid#events:summarycellhyperlinkclick) - Returns column header information through event on hyperlink click.
+* [`summaryCellHyperlinkClick`](/js/api/ejpivotgrid#events:summarycellhyperlinkclick) - Returns summary cell information through event on hyperlink click.
 * [`valueCellHyperlinkClick`](/js/api/ejpivotgrid#events:valuecellhyperlinkclick) - Returns value cell information through event on hyperlink click.
 
 {% highlight html %}
@@ -52,9 +52,9 @@ $(function() {
 ![](PivotGrid-Elements_images/hyperlink.png)
 
 ## Selection
-You can select a particular range of value cells from PivotGrid and manipulate/display them. Cell selection is applicable only for value cells and you can enable this functionality by setting `enableCellSelection` property to true.
+You can select a particular range of value cells from PivotGrid and manipulate/display them. Cell selection is applicable only for value cells and you can enable this functionality by setting [`enableCellSelection`](/js/api/ejpivotgrid#members:enablecellselection) property to true.
 
-The **"cellSelection"** event would be triggered as soon as the selection process is over, that is, when the mouse left click is released. The event argument contains a collection of JSON records and header values, which contains information about the selected cells.
+The [`cellSelection`](/js/api/ejpivotgrid#events:cellselection) event would be triggered as soon as the selection process is over, that is, when the mouse left click is released. The event argument contains a collection of JSON records and header values, which contains information about the selected cells.
 
 {% highlight html %}
 
@@ -80,7 +80,7 @@ $(function() {
 ## Cell Context
 Cell context allows user to perform any custom operation on cell right-click. For example, you can create and display context menu on cell right-click.
 
-Cell context is enabled by setting the [`enableCellContext`](/js/api/ejpivotgrid#members:enablecellcontext) property to true. The **"cellContext"** event would be raised as soon as right-click is done providing cell information through event argument.
+Cell context is enabled by setting the [`enableCellContext`](/js/api/ejpivotgrid#members:enablecellcontext) property to true. The [`cellContext`](/js/api/ejpivotgrid#events:cellcontext) event would be raised as soon as right-click is done providing cell information through event argument.
 
 {% highlight html %}
 
@@ -144,20 +144,22 @@ Conditional formatting is enabled by setting [`enableConditionalFormatting`](/js
 
 We can export the PivotGrid with highlighted particular cells along with its formatting styles. 
 
-LIMITATION FOR WORD:
+LIMITATIONS FOR WORD:
 
 The following border styles are not supported
+
 * Solid
 * Groove
 * Ridge
 
-LIMITATION FOR PDF:
+LIMITATIONS FOR PDF:
 
 Border styles are not applicable.
 
 LIMITATIONS FOR EXCEL:
 
 The following border styles are alone supported
+
 * Dashed
 * Dotted
 * Double
