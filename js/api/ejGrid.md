@@ -67,6 +67,7 @@ $('#Grid').ejGrid({
 * module:ej.autocomplete.js
 * module:ej.checkbox.js
 * module:ej.datepicker.js
+* module:ej.timepicker.js
 * module:ej.datetimepicker.js
 * module:ej.editor.js
 * module:ej.tooltip.js
