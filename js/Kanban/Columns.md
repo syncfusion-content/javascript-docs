@@ -57,7 +57,7 @@ The following code example describes the above behavior.
         $("#Kanban").ejKanban({    
             dataSource: data,
             columns: [
-                        { headerText: "Backlog", key: "Open"},
+                { headerText: "Backlog", key: "Open"},
                 { headerText: "In Progress", key: "InProgress"},
                 { headerText: "Testing", key: "Testing"},
                 { headerText: "Done", key: "Close"}    
@@ -75,6 +75,46 @@ The following output is displayed as a result of the above code example.
 
 ![](Columns_images/column_img.png)
 
+## Multiple Key Mapping
+
+You can map more than one datasource fields as [`key`](https://help.syncfusion.com/js/api/ejkanban#members:columns-key) values to show different key cards into single column. For e.g , you can map "Validate,Inprogress" keys under "In progress" column. 
+
+The following code example and screenshot which describes the above behavior.
+
+{% highlight html %}
+
+    <div id='Kanban'></div>
+
+{% endhighlight %}
+
+{% highlight javascript %}
+
+    $(function() {
+        var data = ej.DataManager(window.kanbanData).executeLocal(ej.Query().take(10));
+        
+        $("#Kanban").ejKanban(
+            {
+                dataSource: data,
+                columns: [
+                    { headerText: "Backlog", key: "Open"},
+                    { headerText: "In Progress or Validate", key: "InProgress,Validate" },
+                    { headerText: "Testing", key: "Testing" },
+                    { headerText: "Done", key: "Close" }
+                ],                                                           			
+                keyField: "Status",
+                allowTitle: true,
+                fields: {
+                content: "Summary",
+                primaryKey: "Id"
+            },
+            });
+    });
+
+{% endhighlight %}
+
+The following output is displayed as a result of the above code example.
+
+![](Columns_images/column_img5.png)
 
 ## Headers
 
@@ -263,3 +303,4 @@ The following code example describes the above behavior.
 The following output is displayed as a result of the above code example.
 
 ![](Columns_images/column_img4.png)
+
