@@ -197,7 +197,7 @@ Ribbon Responsive with tab content
 
 
 
-N> To make the Ribbon control to react as responsive in mobile devices, it is necessary to refer the additional ej.responsive.css file in the application.
+N> To make the Ribbon control to react as responsive in mobile devices, it is necessary to refer the additional `ej.responsive.css` file in the application.
 
 ## Mobile Toolbar Customization
 
