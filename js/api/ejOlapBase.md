@@ -32,3 +32,4 @@ Support has been provided in PivotGrid to load OLAP Cube information at client-s
 {:#methods:getjsondata}
 
 This function gets the datasource, action and grid layout for rendering the PivotGrid.
+
