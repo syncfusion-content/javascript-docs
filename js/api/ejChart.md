@@ -3132,7 +3132,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/rbw3xizf)
 {:#members:commonseriesoptions-marker-datalabel-maximumlabelwidth}
 
 
-Maximum label width of the data label 
+Maximum label width of the data label. 
 
 
 #### Default Value
@@ -3159,7 +3159,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/klibjzkp)
 ### commonSeriesOptions.marker.dataLabel.enableWrap `boolean`
 {:#members:commonseriesoptions-marker-datalabel-enablewrap}
 
-Enable the wrap option to the dataLable 
+Enable the wrap option to the dataLable. 
 
 #### Default Value
 
@@ -7750,18 +7750,18 @@ Options for displaying and customizing the crosshair.
 ### crosshair.trackballTooltipSettings `object`
 {:#members:crosshair-trackballtooltipsettings}
 
-Options for customizing the trackabll.
+Options for customizing the trackabll tooltip.
 
 ### crosshair.trackballTooltipSettings.border `object`
 {:#members:crosshair-trackballtooltipsettings-border}
 
-Options for customizing the border.
+Options for customizing the trackball tooltip border.
 
 
 ### crosshair.trackballTooltipSettings.border.width `number`
 {:#members:crosshair-trackballtooltipsettings-border-width}
 
-Border width of the trackball.
+Border width of the trackball tooltip.
 
 #### Default Value
 
@@ -7783,7 +7783,7 @@ $("#container").ejChart({
 ### crosshair.trackballTooltipSettings.border.color `string`
 {:#members:crosshair-trackballtooltipsettings-border-color}
 
-Border color of the trackball.
+Border color of the trackball tooltip.
 
 #### Default Value
 
@@ -7806,7 +7806,7 @@ $("#container").ejChart({
 ### crosshair.trackballTooltipSettings.fill `string`
 {:#members:crosshair-trackballtooltipsettings-fill}
 
-background color of the trackball tooltip.
+Background color of the trackball tooltip.
 
 #### Default Value
 
@@ -7829,7 +7829,7 @@ $("#container").ejChart({
 ### crosshair.trackballTooltipSettings.rx `number`
 {:#members:crosshair-trackballtooltipsettings-rx}
 
-Rx value of the trackball tooltip.
+Rounded corner x value of the trackball tooltip.
 
 #### Default Value
 
@@ -7851,7 +7851,7 @@ $("#container").ejChart({
 ### crosshair.trackballTooltipSettings.ry `number`
 {:#members:crosshair-trackballtooltipsettings-ry}
 
-Ry value of the trackball tooltip.
+Rounded corner y value of the trackball tooltip.
 
 #### Default Value
 
@@ -7873,7 +7873,7 @@ $("#container").ejChart({
 ### crosshair.trackballTooltipSettings.opacity `number`
 {:#members:crosshair-trackballtooltipsettings-opacity}
 
-opacity  of the trackball tooltip.
+Opacity  of the trackball tooltip.
 
 #### Default Value
 
@@ -7897,7 +7897,7 @@ $("#container").ejChart({
 
 <ts name = "ej.datavisualization.Chart.CrosshairMode"/>
 
-Specifies the mode of the trackball.
+Specifies the mode of the trackball tooltip.
 
 
 <table class="props">
@@ -7913,13 +7913,13 @@ Specifies the mode of the trackball.
 <td class="name">
 Float</td>
 <td class="type">string</td> 
-<td class="description">Shown the trackball as float mode.</td>
+<td class="description">Shown the trackball tooltip as float mode.</td>
 </tr>
 <tr>
 <td class="name">
 Grouping</td>
 <td class="type">string</td>
-<td class="description">Shown the trackball as grouping mode.</td>
+<td class="description">Shown the trackball tooltip as grouping mode.</td>
 </tr> 
 </tbody>
 </table>
@@ -12702,7 +12702,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/u0s1y0dg)
 
 <ts name = "ej.datavisualization.Chart.LabelAlignment"/>
 
-Specifies the axis labels alignment.
+Specifies the position of the axis labels.
 
 
 <table class="props">
@@ -19636,7 +19636,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/ulhda01g)
 {:#members:series-marker-datalabel-maximumlabelwidth}
 
 
-Maximum label width of the data label 
+Maximum label width of the data label. 
 
 
 #### Default Value
@@ -19663,7 +19663,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/klibjzkp)
 ### series.marker.dataLabel.enableWrap `boolean`
 {:#members:series-marker-datalabel-enablewrap}
 
-Enable the wap option to the dataLable 
+Enable the wrap option to the dataLable. 
 
 #### Default Value
 
