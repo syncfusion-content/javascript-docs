@@ -19,9 +19,8 @@ CSS file
 External script files
 
 * [jQuery](http://jquery.com/#) (from the version 1.7.1 to 3.1.0)
-* [jQuery.easing.js](http://gsgd.co.uk/sandbox/jquery/easing/#) - to support the animation effects.
 
-N> jQuery.easing external dependency has been removed from version 14.3.0.49 onwards. Kindly include this jQuery.easing dependency for versions lesser than 14.3.0.49.
+N> From V13.4.0.53 onwards, jQuery.globalize.min.js file has been replaced with our script file ej.globalize.min.js to support the globalization for our widgets. For version lower than 13.4.0.53, refer jQuery.globalize.min.js. jQuery.easing external dependency has been removed from version 14.3.0.49 onwards. Kindly include this jQuery.easing dependency for versions lesser than 14.3.0.49 in order to support animation effects.
 
 Internal script files
 
@@ -72,8 +71,6 @@ A simple HTML file with required CSS and script reference added to create DatePi
         <!--scripts-->
 
         <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.11.3.min.js"></script>
-
-        <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"></script>
 
         <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"></script>
 

@@ -55,7 +55,6 @@ Refer the **ej.unobtrusive.min.js** file in your application along with the othe
     <title>My first HTML page</title>
     <link href="Content/ej/web/default-theme/ej.web.all.min.css" rel="stylesheet" />
     <script src="Scripts/jquery-1.10.2.min.js"></script>
-    <script src="Scripts/jquery.easing.1.3.min.js"></script>
     <script src="Scripts/jsrender.min.js"></script>
     <script src="Scripts/ej/ej.web.all.min.js"></script>
     <script src="Scripts/ej/ej.unobtrusive.min.js"></script>
@@ -70,6 +69,7 @@ Refer the **ej.unobtrusive.min.js** file in your application along with the othe
 
 N>   In the above code, **value** is one of the DatePicker property to set the date value for the control, which is defined here with **data-ej** keyword prepended to it.
 N>   The order of the reference to the script files made in the above section should be maintained in the same manner as mentioned above. Before making use of the unobtrusive script in your application, make sure that you have copied the **ej.unobtrusive.min.js** file from its installed location into the **scripts/ej** folder of your application.
+N> jQuery.easing external dependency has been removed from version 14.3.0.49 onwards. Kindly include this jQuery.easing dependency for versions lesser than 14.3.0.49 in order to support animation effects.
 
 The output of the above code will look as the one shown below with the value set to the given date,
 ![](/js/Unobtrusive-Support_images/Unobtrusive-Support_img1.png) 
@@ -88,7 +88,6 @@ An important thing to be noted while using EJ role is that, you need to add the 
     <title>My first HTML page</title>
     <link href="Content/ej/web/default-theme/ej.web.all.min.css" rel="stylesheet" />
     <script src="Scripts/jquery-1.10.2.min.js"></script>
-    <script src="Scripts/jquery.easing.1.3.min.js"></script>
     <script src="Scripts/jsrender.min.js"></script>
     <script src="Scripts/ej/ej.web.all.min.js"></script>
     <script src="Scripts/ej/ej.unobtrusive.min.js"></script>
@@ -121,7 +120,6 @@ While making use of directives, you need to add the **data-directive** attribute
     <title>My first HTML page</title>
     <link href="Content/ej/web/default-theme/ej.web.all.min.css" rel="stylesheet" />
     <script src="Scripts/jquery-1.10.2.min.js"></script>
-    <script src="Scripts/jquery.easing.1.3.min.js"></script>
     <script src="Scripts/jsrender.min.js"></script>
     <script src="Scripts/ej/ej.web.all.min.js"></script>
     <script src="Scripts/ej/ej.unobtrusive.min.js"></script>
