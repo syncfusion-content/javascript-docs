@@ -24,9 +24,11 @@ _For example, if you had chosen to install under `C:\Program Files (x86)`, then 
 Within the root `javascript` folder, the `assets` folder contains all the minified versions of scripts along with the [Source Maps](/js/sourcemap) and stylesheets where as the `assets-src` folder contains the uncompressed version of the same files. The assets have been organized in the following folder structure
 
   * CSS - contains the style sheets for mobile and web components.
-  * External - contains the external dependency files such as jQuery, jquery.easing etc.
+  * External - contains the external dependency files such as jQuery, jsRender etc.
   * Scripts - includes all the necessary widget scripts as well as culture scripts for Syncfusion Essential JS components.
   * TypeScript - includes the default type-definition file `ej.widgets.all.d.ts`.
+
+N> jQuery.easing external dependency has been removed from version 14.3.0.49 onwards. Kindly include this jQuery.easing dependency for versions lesser than 14.3.0.49 in order to support animation effects.
 
 ## For Mac and Linux Users
 
@@ -35,7 +37,7 @@ Within the root `javascript` folder, the `assets` folder contains all the minifi
 The assets have been organized in the following folder structure
 
 * Assets – contains all the necessary scripts and stylesheets.
-* External – contains the external dependency files such as jQuery, jquery.easing etc.
+* External – contains the external dependency files such as jQuery, jsRender etc.
 * Samples  – contains sample code that demonstrate usage of all the components.
 
 

@@ -72,8 +72,9 @@ Now, Include the specific theme reference to your HTML file by referring the app
 Essential JS widgets requires the following external dependent scripts,
 
 * jQuery (version supported from 1.7.1 to 3.1.0)
-* jQuery.easing.1.3.min.js
 * jsrender.min.js
+
+N> jQuery.easing external dependency has been removed from version 14.3.0.49 onwards. Kindly include this jQuery.easing dependency for versions lesser than 14.3.0.49 in order to support animation effects.
 
 In the below specified location, you can find the dependent script files. Copy and paste it into the **Scripts** folder of your application,
 
@@ -103,7 +104,6 @@ Include the script references in the head section of your HTML page as shown bel
     <title>My first HTML page</title>
     <link href="Content/ej/web/default-theme/ej.web.all.min.css" rel="stylesheet" />
     <script src="Scripts/jquery-1.10.2.min.js"></script>
-    <script src="Scripts/jquery.easing.1.3.min.js"></script>
     <script src="Scripts/jsrender.min.js"></script>
     <script src="Scripts/ej/ej.web.all.min.js"></script>
   </head>
@@ -131,7 +131,6 @@ Add the `<input>` element within the `<body>` section, which acts as a container
         <title>My first HTML page</title>
         <link href="Content/ej/web/default-theme/ej.web.all.min.css" rel="stylesheet" />
         <script src="Scripts/jquery-1.10.2.min.js"></script>
-        <script src="Scripts/jquery.easing.1.3.min.js"></script>
         <script src="Scripts/jsrender.min.js"></script>
         <script src="Scripts/ej/ej.web.all.min.js"></script>
     </head>
@@ -209,7 +208,6 @@ Include the reference to the required JavaScript files in your HTML page as show
     <title>My first HTML page</title>
     <link href="Content/ej/web/default-theme/ej.web.all.min.css" rel="stylesheet" />
     <script src="Scripts/jquery-1.10.2.min.js"></script>
-    <script src="Scripts/jquery.easing.1.3.min.js"></script>
     <script src="Scripts/jsrender.min.js"></script>
     <script src="Scripts/ej/ej.web.all.min.js"></script>
 </head>
@@ -241,7 +239,6 @@ Create a basic HTML file and directly refer all the required CDN links for the [
         <title>My first HTML page</title>
         <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/default-theme/ej.web.all.min.css" rel="stylesheet" />
         <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
-        <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"></script>
         <script src="http://cdn.syncfusion.com/js/assets/external/jsrender.min.js"></script>
         <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"></script> 
     </head>
@@ -265,7 +262,6 @@ Add the `<input>` element within the `<body>` section, which acts as a container
         <title>My first HTML page</title>
         <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/default-theme/ej.web.all.min.css" rel="stylesheet" />
         <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
-        <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"></script>
         <script src="http://cdn.syncfusion.com/js/assets/external/jsrender.min.js"></script>
         <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"></script> 
     </head>

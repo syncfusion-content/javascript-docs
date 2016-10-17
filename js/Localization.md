@@ -75,7 +75,6 @@ Define the **locale** property for the DatePicker control with the appropriate *
     <title>My first HTML page</title>
     <link href="Content/ej/web/default-theme/ej.web.all.min.css" rel="stylesheet" />
     <script src="Scripts/jquery-1.10.2.min.js"></script>
-    <script src="Scripts/jquery.easing.1.3.min.js"></script>
     <script src="Scripts/jsrender.min.js"></script>
     <script src="Scripts/ej/ej.web.all.min.js"></script>
     <script src="Scripts/ej/i18n/ej.culture.de-DE.min.js"></script>
@@ -97,6 +96,8 @@ Define the **locale** property for the DatePicker control with the appropriate *
 
 {% endhighlight %}
 
+N> jQuery.easing external dependency has been removed from version 14.3.0.49 onwards. Kindly include this jQuery.easing dependency for versions lesser than 14.3.0.49 in order to support animation effects.
+
 Browse your HTML page in any of the web browser and now the screen will display the DatePicker widget with the localized texts as shown below,
 ![](/js/Localization_images/Localization_img2.png) 
 
@@ -116,7 +117,6 @@ N>   In the below example, copy the culture files of **de-DE**, **vi-VN** and **
     <!-- CSS and Script reference section -->
     <link href="Content/ej/web/default-theme/ej.web.all.min.css" rel="stylesheet" />
     <script src="Scripts/jquery-1.10.2.min.js"></script>
-    <script src="Scripts/jquery.easing.1.3.min.js"></script>
     <script src="Scripts/jsrender.min.js"></script>
     <script src="Scripts/ej/ej.web.all.min.js"></script>
     <script src="Scripts/ej/i18n/ej.culture.de-DE.min.js"></script>
@@ -194,7 +194,6 @@ Refer the same steps mentioned in the previous example – as it is applicable f
     <title>My first HTML page</title>
     <link href="Content/ej/web/default-theme/ej.web.all.min.css" rel="stylesheet" />
     <script src="Scripts/jquery-1.10.2.min.js"></script>
-    <script src="Scripts/jquery.easing.1.3.min.js"></script>
     <script src="Scripts/jsrender.min.js"></script>
     <script src="Scripts/ej/ej.web.all.min.js"></script>
     <script src="Scripts/ej/i18n/ej.culture.de-DE.min.js"></script>
@@ -242,7 +241,6 @@ Now define the **locale** property for the Grid control with the appropriate **c
     <title>My first HTML page</title>
     <link href="Content/ej/web/default-theme/ej.web.all.min.css" rel="stylesheet" />
     <script src="Scripts/jquery-1.10.2.min.js"></script>
-    <script src="Scripts/jquery.easing.1.3.min.js"></script>
     <script src="Scripts/jsrender.min.js"></script>
     <script src="Scripts/ej/ej.web.all.min.js"></script>
     <script src="Scripts/ej/i18n/ej.culture.de-DE.min.js"></script>
@@ -312,7 +310,6 @@ N>   In the below example, copy the culture files of **de-DE** and **es-ES** int
     <!-- CSS and Script reference section -->
     <link href="Content/ej/web/default-theme/ej.web.all.min.css" rel="stylesheet" />
     <script src="Scripts/jquery-1.10.2.min.js"></script>
-    <script src="Scripts/jquery.easing.1.3.min.js"></script>
     <script src="Scripts/jsrender.min.js"></script>
     <script src="Scripts/ej/ej.web.all.min.js"></script>
     <script src="Scripts/ej/i18n/ej.culture.de-DE.min.js"></script>
@@ -417,7 +414,6 @@ N> Add and refer the necessary **Scripts** and **Stylesheets** to your sample ap
         <title>My first HTML page</title>
         <link href="Content/ej/web/default-theme/ej.web.all.min.css" rel="stylesheet" />
         <script src="Scripts/jquery-1.10.2.min.js"></script>
-        <script src="Scripts/jquery.easing.1.3.min.js"></script>
         <script src="Scripts/jsrender.min.js"></script>
         <script src="Scripts/ej/ej.web.all.min.js"></script>
         // Culture file reference to use the ar-DZ culture
