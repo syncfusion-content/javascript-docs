@@ -3159,7 +3159,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/klibjzkp)
 ### commonSeriesOptions.marker.dataLabel.enableWrap `boolean`
 {:#members:commonseriesoptions-marker-datalabel-enablewrap}
 
-Enable the wap option to the dataLable 
+Enable the wrap option to the dataLable 
 
 #### Default Value
 
