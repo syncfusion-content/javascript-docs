@@ -730,7 +730,7 @@ Connects the service using the specified URL for any server updates on server mo
 ### analysisMode `enum`
 {:#members:analysisMode}
 
-<ts name = "ej.Pivot.AnalysisMode"/>
+<ts ref = "ej.Pivot.AnalysisMode"/>
 
 Sets the mode for the PivotGauge widget for binding either OLAP or Relational data source.
 
@@ -765,7 +765,7 @@ Sets the mode for the PivotGauge widget for binding either OLAP or Relational da
 ### operationalMode `enum`
 {:#members:operationalmode}
 
-<ts name = "ej.Pivot.OperationalMode"/>
+<ts ref = "ej.Pivot.OperationalMode"/>
 
 Sets the mode for the PivotGauge widget for binding data source either in server-side or client-side.
 
