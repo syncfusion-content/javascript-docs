@@ -51,6 +51,14 @@ Refer to the internal dependencies in the following table.
           It is referred when using touch functionalities in Kanban.
       </td>
    </tr>
+    <tr>
+      <td>
+        ej.draggable.min.js 
+      </td>
+      <td>
+          It is referred when using drag and drop in Kanban.
+      </td>
+   </tr>
    <tr>
       <td>
         ej.kanban.min.js
