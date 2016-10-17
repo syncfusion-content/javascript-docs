@@ -54,7 +54,7 @@ The PivotChart is a lightweight control that reads OLAP and Relational informati
 ### analysisMode `enum`
 {:#members:analysismode}
 
-<ts name = "ej.Pivot.AnalysisMode"/>
+<ts ref = "ej.Pivot.AnalysisMode"/>
 
 Sets the mode for the PivotChart widget for binding either OLAP or Relational data source.
 
@@ -542,7 +542,7 @@ Allows the user to set the localized language for the widget.
 ### operationalMode `enum`
 {:#members:operationalmode}
 
-<ts name = "ej.Pivot.OperationalMode"/>
+<ts ref = "ej.Pivot.OperationalMode"/>
 
 Sets the mode for the PivotChart widget for binding data source either in server-side or client-side.
 

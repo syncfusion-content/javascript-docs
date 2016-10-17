@@ -3128,6 +3128,57 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/rbw3xizf)
 
 
 
+### commonSeriesOptions.marker.dataLabel.maximumLabelWidth `number`
+{:#members:commonseriesoptions-marker-datalabel-maximumlabelwidth}
+
+
+Maximum label width of the data label. 
+
+
+#### Default Value
+
+ * null
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+commonSeriesOptions :{marker :{dataLabel :{maximumLabelWidth : 90}}}                  
+});
+ {% endhighlight %}
+
+
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/klibjzkp)
+
+
+
+### commonSeriesOptions.marker.dataLabel.enableWrap `boolean`
+{:#members:commonseriesoptions-marker-datalabel-enablewrap}
+
+Enable the wrap option to the data label. 
+
+#### Default Value
+
+ * false
+
+#### Example
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+commonSeriesOptions :{marker :{dataLabel :{enableWrap : false}}}                  
+});
+ {% endhighlight %}
+
+
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/klibjzkp)
+
+
 ### commonSeriesOptions.marker.dataLabel.border `object`
 {:#members:commonseriesoptions-marker-datalabel-border}
 
@@ -4651,6 +4702,163 @@ commonSeriesOptions :{ startAngle : 150}
  
 
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/gposb4vh)
+
+
+### commonSeriesOptions.cornerRadius `object`
+{:#members:commonSeriesOptions-cornerradius}
+
+
+
+
+Options for customizing the corner radius. cornerRadius property also takes the numeric input and applies it for all the four corners of the column.
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+commonSeriesOptions : {
+             cornerRadius: 10 
+    }                   
+});
+ {% endhighlight %} 
+
+
+
+### commonSeriesOptions.cornerRadius.topLeft `number`
+{:#members:commonSeriesOptions.cornerradius.topleft}
+
+
+
+
+Specifies the radius for the top left corner.
+
+
+
+#### Default Value
+
+
+
+ * 0
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+commonSeriesOptions : {
+             cornerRadius: {topLeft : 10 }
+    }                   
+});
+ {% endhighlight %} 
+
+
+### commonSeriesOptions.cornerRadius.topRight `number`
+{:#members:commonSeriesOptions.cornerradius.topright}
+
+
+
+
+Specifies the radius for the top right corner.
+
+
+
+#### Default Value
+
+
+
+ * 0
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+commonSeriesOptions : {
+             cornerRadius: {topRight : 10 }
+    }                   
+});
+ {% endhighlight %} 
+
+
+
+### commonSeriesOptions.cornerRadius.bottomLeft `number`
+{:#members:commonSeriesOptions.cornerradius.bottomleft}
+
+
+
+
+Specifies the radius for the bottom left corner.
+
+
+
+#### Default Value
+
+
+
+ * 0
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+commonSeriesOptions : {
+             cornerRadius: {bottomLeft : 10 }
+    }                   
+});
+ {% endhighlight %} 
+
+
+### commonSeriesOptions.cornerRadius.bottomRight `number`
+{:#members:commonSeriesOptions.cornerradius.bottomright}
+
+
+
+
+Specifies the radius for the bottom right corner.
+
+
+
+#### Default Value
+
+
+
+ * 0
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+commonSeriesOptions : {
+             cornerRadius: {bottomRight : 10 }
+    }                   
+});
+ {% endhighlight %} 
 
 
 
@@ -7695,6 +7903,201 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/ne1iit3s)
 Options for displaying and customizing the crosshair.
 
 
+
+### crosshair.trackballTooltipSettings `object`
+{:#members:crosshair-trackballtooltipsettings}
+
+Options for customizing the trackabll tooltip.
+
+### crosshair.trackballTooltipSettings.border `object`
+{:#members:crosshair-trackballtooltipsettings-border}
+
+Options for customizing the trackball tooltip border.
+
+
+### crosshair.trackballTooltipSettings.border.width `number`
+{:#members:crosshair-trackballtooltipsettings-border-width}
+
+Border width of the trackball tooltip.
+
+#### Default Value
+
+* null
+
+#### Example
+
+{% highlight js %}
+ 
+$("#container").ejChart({
+
+   crosshair : { trackballTooltipSettings : { border : { width :2 } } }              
+
+});
+
+{% endhighlight %}
+
+
+### crosshair.trackballTooltipSettings.border.color `string`
+{:#members:crosshair-trackballtooltipsettings-border-color}
+
+Border color of the trackball tooltip.
+
+#### Default Value
+
+* null
+
+#### Example
+
+{% highlight js %}
+ 
+$("#container").ejChart({
+
+   crosshair : { trackballTooltipSettings : { border : { color :"red" } } }              
+
+});
+
+{% endhighlight %}
+
+
+
+### crosshair.trackballTooltipSettings.fill `string`
+{:#members:crosshair-trackballtooltipsettings-fill}
+
+Background color of the trackball tooltip.
+
+#### Default Value
+
+* null
+
+#### Example
+
+{% highlight js %}
+ 
+$("#container").ejChart({
+
+   crosshair : { trackballTooltipSettings : { fill :"red"  } }              
+
+});
+
+{% endhighlight %}
+
+
+
+### crosshair.trackballTooltipSettings.rx `number`
+{:#members:crosshair-trackballtooltipsettings-rx}
+
+Rounded corner x value of the trackball tooltip.
+
+#### Default Value
+
+* 3
+
+#### Example
+
+{% highlight js %}
+ 
+$("#container").ejChart({
+
+   crosshair : { trackballTooltipSettings : { rx : 5  } }              
+
+});
+
+{% endhighlight %}
+
+
+### crosshair.trackballTooltipSettings.ry `number`
+{:#members:crosshair-trackballtooltipsettings-ry}
+
+Rounded corner y value of the trackball tooltip.
+
+#### Default Value
+
+* 3
+
+#### Example
+
+{% highlight js %}
+ 
+$("#container").ejChart({
+
+   crosshair : { trackballTooltipSettings : { ry : 5  } }              
+
+});
+
+{% endhighlight %}
+
+
+### crosshair.trackballTooltipSettings.opacity `number`
+{:#members:crosshair-trackballtooltipsettings-opacity}
+
+Opacity value of the trackball tooltip.
+
+#### Default Value
+
+* 1
+
+#### Example
+
+{% highlight js %}
+ 
+$("#container").ejChart({
+
+   crosshair : { trackballTooltipSettings : { opacity : 0.5  } }              
+
+});
+
+{% endhighlight %}
+
+
+### crosshair.trackballTooltipSettings.mode `enum`
+{:#members:crosshair-trackballtooltipsettings-mode}
+
+<ts name = "ej.datavisualization.Chart.CrosshairMode"/>
+
+Specifies the mode of the trackball tooltip.
+
+
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th> 
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+Float</td>
+<td class="type">string</td> 
+<td class="description">Shown the trackball tooltip as float mode.</td>
+</tr>
+<tr>
+<td class="name">
+Grouping</td>
+<td class="type">string</td>
+<td class="description">Shown the trackball tooltip as grouping mode.</td>
+</tr> 
+</tbody>
+</table>
+
+
+#### Default Value
+
+* "float". See <a href="global.html#members:crosshairmode">CrosshairMode</a>
+
+#### Example
+
+
+{% highlight js %}
+ 
+$("#container").ejChart({
+
+   crosshair : { trackballTooltipSettings : { mode : 'grouping'  } }              
+
+});
+
+{% endhighlight %}
 
 
 
@@ -12450,6 +12853,72 @@ $("#container").ejChart({
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/u0s1y0dg)
 
 
+
+### primaryXAxis.alignment `enum`
+{:#members:primaryxaxis-alignment}
+
+<ts name = "ej.datavisualization.Chart.LabelAlignment"/>
+
+Specifies the position of the axis labels.
+
+
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th> 
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+Near</td>
+<td class="type">string</td> 
+<td class="description">The axis labels placed as near</td>
+</tr>
+<tr>
+<td class="name">
+Far</td>
+<td class="type">string</td>
+<td class="description">The axis labels placed as far</td>
+</tr> 
+<tr>
+<td class="name">
+Center</td>
+<td class="type">string</td>
+<td class="description">The axis labels placed as center</td>
+</tr> 
+</tbody>
+</table>
+
+
+#### Default Value
+
+
+
+* "center". See <a href="global.html#members:alignment">Alignment</a>
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    primaryXAxis: { alignment : "far" }
+                       
+});
+
+{% endhighlight %}
+
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/vfgwipz1)
+
+
+
 ### primaryXAxis.labelRotation `number`
 {:#members:primaryxaxis-labelrotation}
 
@@ -13453,6 +13922,644 @@ $("#container").ejChart({
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/hgqmxm50)
 
 
+### primaryXAxis.multiLevelLabels `array`
+{:#members:primaryxaxis-multilevellabels}
+
+
+Options for customizing the multi level labels.
+
+
+#### Default Value
+
+
+
+* [ ]
+
+
+
+
+
+
+
+### primaryXAxis.multiLevelLabels.visible `boolean`
+{:#members:primaryxaxis-multilevellabels-visible}
+
+
+
+
+Visibility of the multi level labels.
+
+
+#### Default Value
+
+
+
+* false
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+ 
+    primaryXAxis: { multiLevelLabels:[{ visible: true }]}
+                          
+});
+
+{% endhighlight %}
+
+
+### primaryXAxis.multiLevelLabels.text `string`
+{:#members:primaryxaxis-multilevellabels-text}
+
+
+
+
+Text of the multi level labels.
+
+
+#### Default Value
+
+
+
+* ""
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+ 
+    primaryXAxis: { multiLevelLabels:[{ text: "2016" }]}
+                          
+});
+
+{% endhighlight %}
+
+
+### primaryXAxis.multiLevelLabels.start `number`
+{:#members:primaryxaxis-multilevellabels-start}
+
+
+
+
+Starting value of the multi level labels.
+
+
+#### Default Value
+
+
+
+* null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+ 
+    primaryXAxis: { multiLevelLabels:[{ start: 1 }]}
+                          
+});
+
+{% endhighlight %}
+
+### primaryXAxis.multiLevelLabels.end `number`
+{:#members:primaryxaxis-multilevellabels-end}
+
+
+
+
+Ending value of the multi level labels.
+
+
+#### Default Value
+
+
+
+* null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+ 
+    primaryXAxis: { multiLevelLabels:[{ end: 4 }]}
+                          
+});
+
+{% endhighlight %}
+
+
+### primaryXAxis.multiLevelLabels.level `number`
+{:#members:primaryxaxis-multilevellabels-level}
+
+
+
+
+Specifies the level of multi level labels.
+
+
+#### Default Value
+
+
+
+* 0
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+ 
+    primaryXAxis: { multiLevelLabels:[{ level: 2 }]}
+                          
+});
+
+{% endhighlight %}
+
+
+### primaryXAxis.multiLevelLabels.maximumTextWidth `number`
+{:#members:primaryxaxis-multilevellabels-maximumtextwidth}
+
+
+
+
+Specifies the maximum width of the text in multi level labels.
+
+
+#### Default Value
+
+
+
+* null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+ 
+    primaryXAxis: { multiLevelLabels:[{ maximumTextWidth: 30 }]}
+                          
+});
+
+{% endhighlight %}
+
+
+
+### primaryXAxis.multiLevelLabels.textAlignment `enum`
+{:#members:primaryxaxis-multilevellabels-textalignment}
+
+<ts name = "ej.datavisualization.Chart.TextAlignment"/>
+
+
+Specifies the alignment of the text in multi level labels.
+
+
+#### Default Value
+
+
+
+* "center". See <a href="global.html#members:textalignment">TextAlignment</a>
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+ 
+    primaryXAxis: { multiLevelLabels:[{ textAlignment: "near" }]}
+                          
+});
+
+{% endhighlight %}
+
+
+### primaryXAxis.multiLevelLabels.textOverflow `enum`
+{:#members:primaryxaxis-multilevellabels-textoverflow}
+
+<ts name = "ej.datavisualization.Chart.TextOverflow"/>
+
+
+Specifies the handling of text over flow in multi level labels.
+
+
+#### Default Value
+
+
+
+* "center". See <a href="global.html#members:textoverflow">TextOverflow</a>
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+ 
+    primaryXAxis: { multiLevelLabels:[{ textOverflow: "trim" }]}
+                          
+});
+
+{% endhighlight %}
+
+
+
+### primaryXAxis.multiLevelLabels.font `object`
+{:#members:primaryxaxis-multilevellabels-font}
+
+
+
+
+Options for customizing the font of the text.
+
+
+
+
+
+
+### primaryXAxis.multiLevelLabels.font.color `string`
+{:#members:primaryxaxis-multilevellabels-font-color}
+
+
+
+
+Font color of the multi level labels text.
+
+
+#### Default Value
+
+
+
+* null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+     primaryXAxis: { multiLevelLabels:[{ font : { color: "green"} }]}
+                           
+});
+
+{% endhighlight %}
+
+
+
+
+### primaryXAxis.multiLevelLabels.font.fontFamily `string`
+{:#members:primaryxaxis-multilevellabels-font-fontfamily}
+
+
+
+
+Font family of the multi level labels text.
+
+
+#### Default Value
+
+
+
+* "Segoe UI"
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    primaryXAxis: { multiLevelLabels:[{ font : { fontFamily : "Algerian"} }]}
+                          
+});
+
+{% endhighlight %}
+
+
+
+
+### primaryXAxis.multiLevelLabels.font.fontStyle `enum`
+{:#members:primaryxaxis-multilevellabels-font-fontstyle}
+
+<ts ref="ej.datavisualization.Chart.FontStyle"/>
+
+
+Font style of the multi level labels text.
+
+
+#### Default Value
+
+
+
+* "Normal"
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({ 
+
+    primaryXAxis: { multiLevelLabels:[{ font : { fontStyle: "Bold"} }]}
+                          
+});
+
+{% endhighlight %}
+
+
+
+
+### primaryXAxis.multiLevelLabels.font.fontWeight `string`
+{:#members:primaryxaxis-multilevellabels-font-fontweight}
+
+
+
+
+Font weight of the multi level label text.
+
+
+#### Default Value
+
+
+
+* "regular"
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+      primaryXAxis: { multiLevelLabels:[{ font : { fontWeight: "lighter"} }]}
+                            
+});
+
+{% endhighlight %}
+
+
+
+
+### primaryXAxis.multiLevelLabels.font.opacity `number`
+{:#members:primaryxaxis-multilevellabels-font-opacity}
+
+
+
+
+Opacity of the multi level label text.
+
+
+#### Default Value
+
+
+
+* 1
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+primaryXAxis: { multiLevelLabels:[{ font : { opacity: 0.5} }]}
+                      
+});
+
+{% endhighlight %}
+
+
+
+
+### primaryXAxis.multiLevelLabels.font.size `string`
+{:#members:primaryxaxis-multilevellabels-font-size}
+
+
+
+
+Font size of the multi level label text.
+
+
+#### Default Value
+
+
+
+* "12px"
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+        primaryXAxis: { multiLevelLabels:[{ font : { size: "15px"} }]}
+                              
+});
+
+{% endhighlight %}
+
+
+### primaryXAxis.multiLevelLabels.border `object`
+{:#members:primaryxaxis-multilevellabels-border}
+
+
+
+
+Options for customizing the border of the series.
+
+
+
+
+
+
+### primaryXAxis.multiLevelLabels.border.color `string`
+{:#members:primaryxaxis-multilevellabels-border-color}
+
+
+
+
+Border color of the multi level labels.
+
+
+#### Default Value
+
+
+
+*  null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+        primaryXAxis: { multiLevelLabels:[{border :{ color : "green" } }]}                  
+});
+{% endhighlight %}
+
+
+
+
+### primaryXAxis.multiLevelLabels.border.width `number`
+{:#members:primaryxaxis-multilevellabels-border-width}
+
+
+
+
+Border width of the multi level labels.
+
+
+#### Default Value
+
+
+
+* 1
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+
+$("#container").ejChart({
+        primaryXAxis: { multiLevelLabels:[{border :{ width : 2 } }]}                  
+});
+{% endhighlight %}
+
+
+### primaryXAxis.multiLevelLabels.border.type `enum`
+{:#members:primaryxaxis-multilevellabels-border-type}
+
+
+<ts name = "ej.datavisualization.Chart.MultiLevelLabelsBorderType"/>
+
+
+Border type of the multi level labels.
+
+
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+Rectangle</td>
+<td class="type">string</td>
+<td class="description">To render rectangle border.</td>
+</tr>
+<tr>
+<td class="name">
+None</td>
+<td class="type">string</td>
+<td class="description">No border will be rendered.</td>
+</tr>
+<tr>
+<td class="name">
+WithoutTopAndBottom</td>
+<td class="type">string</td>
+<td class="description">Border will be rendered only on left and right side of the labels.</td>
+</tr>
+<tr>
+<td class="name">
+Brace</td>
+<td class="type">string</td>
+<td class="description">To render brace border style.</td>
+</tr>
+<tr>
+<td class="name">
+CurlyBrace</td>
+<td class="type">string</td>
+<td class="description">To render curely brace border style.</td>
+</tr>
+</tbody>
+</table>
+
+#### Default Value
+
+
+
+* "rectangle". See <a href="global.html#members:multilevellabelsbordertype">Type</a>
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+
+$("#container").ejChart({
+        primaryXAxis: { multiLevelLabels:[{border :{ type : "brace" } }]}                  
+});
+{% endhighlight %}
+
 
 
 ### primaryXAxis.stripLine `array`
@@ -14150,6 +15257,83 @@ $("#container").ejChart({
 {% endhighlight %}
 
 
+### primaryXAxis.labelBorder `object`
+{:#members:primaryxaxis-labelborder}
+
+
+
+
+Options for customizing the border of the labels.
+
+
+
+
+
+
+### primaryXAxis.labelBorder.color `string`
+{:#members:primaryxaxis-labelborder-color}
+
+
+
+
+Specifies the color of the label border.
+
+
+#### Default Value
+
+
+
+* null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    primaryXAxis: { labelBorder:{color: "green"} }
+                      
+});
+
+{% endhighlight %}
+
+
+
+### primaryXAxis.labelBorder.width `number`
+{:#members:primaryxaxis-labelborder-width}
+
+
+
+
+Specifies the width of the label border.
+
+
+#### Default Value
+
+
+
+* 1
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    primaryXAxis: { labelBorder:{width: 2} }
+                      
+});
+
+{% endhighlight %}
+
 
 
 ### primaryXAxis.title `object`
@@ -14482,6 +15666,97 @@ $("#container").ejChart({
 
 {% endhighlight %}
 
+
+### primaryXAxis.title.offset `number`
+{:#members:primaryxaxis-title-offset}
+
+
+
+
+offset value for axis title.
+
+
+#### Default Value
+
+
+
+* 0
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    primaryXAxis: { title: { offset: 0 } }
+                          
+});
+
+{% endhighlight %}
+
+### primaryXAxis.title.position `enum`
+{:#members:primaryxaxis-title-position}
+
+<ts ref = "ej.datavisualization.Chart.LabelPosition"/>
+
+Specifies the position of the axis title.
+
+
+#### Default Value
+
+
+
+* "outside". See <a href="global.html#members:labelposition">Position</a>
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    primaryXAxis: { title: { position : "inside" }}
+                           
+});
+
+{% endhighlight %}
+
+### primaryXAxis.title.alignment `enum`
+{:#members:primaryxaxis-title-alignment}
+
+<ts ref = "ej.datavisualization.Chart.TextAlignment"/>
+
+Specifies the position of the axis title.
+
+
+#### Default Value
+
+
+
+* "center". See <a href="global.html#members:textalignment">Alignment</a>
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    primaryXAxis: { title: { alignment : "near" }}
+                           
+});
+
+{% endhighlight %}
 
 
 
@@ -15610,6 +16885,37 @@ $("#container").ejChart({
 
 
 
+### primaryYAxis.alignment `enum`
+{:#members:primaryyaxis-alignment}
+
+<ts ref = "ej.datavisualization.Chart.LabelAlignment"/>
+
+Specifies the position of the axis labels.
+
+
+#### Default Value
+
+
+
+* "center". See <a href="global.html#members:alignment">Alignment</a>
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    primaryYAxis: { alignment : "near" }
+                           
+});
+
+{% endhighlight %}
+
+
 ### primaryYAxis.logBase `number`
 {:#members:primaryyaxis-logbase}
 
@@ -16610,6 +17916,604 @@ $("#container").ejChart({
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/fitf4tn3)
 
 
+### primaryYAxis.multiLevelLabels `array`
+{:#members:primaryyaxis-multilevellabels}
+
+
+Options for customizing the multi level labels.
+
+
+#### Default Value
+
+
+
+* [ ]
+
+
+
+
+
+
+
+### primaryYAxis.multiLevelLabels.visible `boolean`
+{:#members:primaryyaxis-multilevellabels-visible}
+
+
+
+
+Visibility of the multi level labels.
+
+
+#### Default Value
+
+
+
+* false
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+ 
+    primaryYAxis: { multiLevelLabels:[{ visible: true }]}
+                          
+});
+
+{% endhighlight %}
+
+
+### primaryYAxis.multiLevelLabels.text `string`
+{:#members:primaryyaxis-multilevellabels-text}
+
+
+
+
+Text of the multi level labels.
+
+
+#### Default Value
+
+
+
+* ""
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+ 
+    primaryYAxis: { multiLevelLabels:[{ text: "2016" }]}
+                          
+});
+
+{% endhighlight %}
+
+
+### primaryYAxis.multiLevelLabels.start `number`
+{:#members:primaryyaxis-multilevellabels-start}
+
+
+
+
+Starting value of the multi level labels.
+
+
+#### Default Value
+
+
+
+* null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+ 
+    primaryYAxis: { multiLevelLabels:[{ start: 1 }]}
+                          
+});
+
+{% endhighlight %}
+
+### primaryYAxis.multiLevelLabels.end `number`
+{:#members:primaryyaxis-multilevellabels-end}
+
+
+
+
+Ending value of the multi level labels.
+
+
+#### Default Value
+
+
+
+* null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+ 
+    primaryYAxis: { multiLevelLabels:[{ end: 4 }]}
+                          
+});
+
+{% endhighlight %}
+
+
+### primaryYAxis.multiLevelLabels.level `number`
+{:#members:primaryyaxis-multilevellabels-level}
+
+
+
+
+Specifies the level of multi level labels.
+
+
+#### Default Value
+
+
+
+* 0
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+ 
+    primaryYAxis: { multiLevelLabels:[{ level: 2 }]}
+                          
+});
+
+{% endhighlight %}
+
+
+### primaryYAxis.multiLevelLabels.maximumTextWidth `number`
+{:#members:primaryyaxis-multilevellabels-maximumtextwidth}
+
+
+
+
+Specifies the maximum width of the text in multi level labels.
+
+
+#### Default Value
+
+
+
+* null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+ 
+    primaryYAxis: { multiLevelLabels:[{ maximumTextWidth: 30 }]}
+                          
+});
+
+{% endhighlight %}
+
+
+
+### primaryYAxis.multiLevelLabels.textAlignment `enum`
+{:#members:primaryyaxis-multilevellabels-textalignment}
+
+<ts name = "ej.datavisualization.Chart.TextAlignment"/>
+
+
+Specifies the alignment of the text in multi level labels.
+
+
+#### Default Value
+
+
+
+* "center". See <a href="global.html#members:textalignment">TextAlignment</a>
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+ 
+    primaryYAxis: { multiLevelLabels:[{ textAlignment: "near" }]}
+                          
+});
+
+{% endhighlight %}
+
+
+### primaryYAxis.multiLevelLabels.textOverflow `enum`
+{:#members:primaryyaxis-multilevellabels-textoverflow}
+
+<ts name = "ej.datavisualization.Chart.TextOverflow"/>
+
+
+Specifies the handling of text over flow in multi level labels.
+
+
+#### Default Value
+
+
+
+* "center". See <a href="global.html#members:textoverflow">TextOverflow</a>
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+ 
+    primaryYAxis: { multiLevelLabels:[{ textOverflow: "trim" }]}
+                          
+});
+
+{% endhighlight %}
+
+
+
+### primaryYAxis.multiLevelLabels.font `object`
+{:#members:primaryyaxis-multilevellabels-font}
+
+
+
+
+Options for customizing the font of the text.
+
+
+
+
+
+
+### primaryYAxis.multiLevelLabels.font.color `string`
+{:#members:primaryyaxis-multilevellabels-font-color}
+
+
+
+
+Font color of the multi level labels text.
+
+
+#### Default Value
+
+
+
+* null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+     primaryYAxis: { multiLevelLabels:[{ font : { color: "green"} }]}
+                           
+});
+
+{% endhighlight %}
+
+
+
+
+### primaryYAxis.multiLevelLabels.font.fontFamily `string`
+{:#members:primaryyaxis-multilevellabels-font-fontfamily}
+
+
+
+
+Font family of the multi level labels text.
+
+
+#### Default Value
+
+
+
+* "Segoe UI"
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    primaryYAxis: { multiLevelLabels:[{ font : { fontFamily : "Algerian"} }]}
+                          
+});
+
+{% endhighlight %}
+
+
+
+
+### primaryYAxis.multiLevelLabels.font.fontStyle `enum`
+{:#members:primaryyaxis-multilevellabels-font-fontstyle}
+
+<ts ref="ej.datavisualization.Chart.FontStyle"/>
+
+
+Font style of the multi level labels text.
+
+
+#### Default Value
+
+
+
+* "Normal"
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({ 
+
+    primaryYAxis: { multiLevelLabels:[{ font : { fontStyle: "Bold"} }]}
+                          
+});
+
+{% endhighlight %}
+
+
+
+
+### primaryYAxis.multiLevelLabels.font.fontWeight `string`
+{:#members:primaryyaxis-multilevellabels-font-fontweight}
+
+
+
+
+Font weight of the multi level label text.
+
+
+#### Default Value
+
+
+
+* "regular"
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+      primaryYAxis: { multiLevelLabels:[{ font : { fontWeight: "lighter"} }]}
+                            
+});
+
+{% endhighlight %}
+
+
+
+
+### primaryYAxis.multiLevelLabels.font.opacity `number`
+{:#members:primaryyaxis-multilevellabels-font-opacity}
+
+
+
+
+Opacity of the multi level label text.
+
+
+#### Default Value
+
+
+
+* 1
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+primaryYAxis: { multiLevelLabels:[{ font : { opacity: 0.5} }]}
+                      
+});
+
+{% endhighlight %}
+
+
+
+
+### primaryYAxis.multiLevelLabels.font.size `string`
+{:#members:primaryyaxis-multilevellabels-font-size}
+
+
+
+
+Font size of the multi level label text.
+
+
+#### Default Value
+
+
+
+* "12px"
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+        primaryYAxis: { multiLevelLabels:[{ font : { size: "15px"} }]}
+                              
+});
+
+{% endhighlight %}
+
+
+### primaryYAxis.multiLevelLabels.border `object`
+{:#members:primaryyaxis-multilevellabels-border}
+
+
+
+
+Options for customizing the border of the series.
+
+
+
+
+
+
+### primaryYAxis.multiLevelLabels.border.color `string`
+{:#members:primaryyaxis-multilevellabels-border-color}
+
+
+
+
+Border color of the multi level labels.
+
+
+#### Default Value
+
+
+
+*  null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+        primaryYAxis: { multiLevelLabels:[{border :{ color : "green" } }]}                  
+});
+{% endhighlight %}
+
+
+
+
+### primaryYAxis.multiLevelLabels.border.width `number`
+{:#members:primaryyaxis-multilevellabels-border-width}
+
+
+
+
+Border width of the multi level labels.
+
+
+#### Default Value
+
+
+
+* 1
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+
+$("#container").ejChart({
+        primaryYAxis: { multiLevelLabels:[{border :{ width : 2 } }]}                  
+});
+{% endhighlight %}
+
+
+### primaryYAxis.multiLevelLabels.border.type `enum`
+{:#members:primaryyaxis-multilevellabels-border-type}
+
+
+<ts name = "ej.datavisualization.Chart.MultiLevelLabelsBorderType"/>
+
+
+Border type of the multi level labels.
+
+
+#### Default Value
+
+
+
+* "rectangle". See <a href="global.html#members:multilevellabelsbordertype">Type</a>
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+
+$("#container").ejChart({
+        primaryYAxis: { multiLevelLabels:[{border :{ type : "brace" } }]}                  
+});
+{% endhighlight %}
+
+
+
 ### primaryYAxis.stripLine `array`
 {:#members:primaryyaxis-stripline}
 
@@ -17223,6 +19127,83 @@ $("#container").ejChart({
 {% endhighlight %}
 
 
+### primaryYAxis.labelBorder `object`
+{:#members:primaryyaxis-labelborder}
+
+
+
+
+Options for customizing the border of the labels.
+
+
+
+
+
+
+### primaryYAxis.labelBorder.color `string`
+{:#members:primaryyaxis-labelborder-color}
+
+
+
+
+Specifies the color of the label border.
+
+
+#### Default Value
+
+
+
+* null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    primaryYAxis: { labelBorder:{color: "green"} }
+                      
+});
+
+{% endhighlight %}
+
+
+
+### primaryYAxis.labelBorder.width `number`
+{:#members:primaryyaxis-labelborder-width}
+
+
+
+
+Specifies the width of the label border.
+
+
+#### Default Value
+
+
+
+* 1
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    primaryYAxis: { labelBorder:{width: 2} }
+                      
+});
+
+{% endhighlight %}
+
 
 
 ### primaryYAxis.title `object`
@@ -17554,6 +19535,97 @@ $("#container").ejChart({
 
 {% endhighlight %}
 
+
+### primaryYAxis.title.offset `number`
+{:#members:primaryyaxis-title-offset}
+
+
+
+
+offset value for axis title.
+
+
+#### Default Value
+
+
+
+* 0
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    primaryYAxis: { title: { offset: 0 } }
+                          
+});
+
+{% endhighlight %}
+
+### primaryYAxis.title.position `enum`
+{:#members:primaryyaxis-title-position}
+
+<ts ref = "ej.datavisualization.Chart.LabelPosition"/>
+
+Specifies the position of the axis title.
+
+
+#### Default Value
+
+
+
+* "outside". See <a href="global.html#members:labelposition">Position</a>
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    primaryYAxis: { title: { position : "inside" }}
+                           
+});
+
+{% endhighlight %}
+
+### primaryYAxis.title.alignment `enum`
+{:#members:primaryyaxis-title-alignment}
+
+<ts ref = "ej.datavisualization.Chart.TextAlignment"/>
+
+Specifies the position of the axis title.
+
+
+#### Default Value
+
+
+
+* "center". See <a href="global.html#members:textalignment">Alignment</a>
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    primaryYAxis: { title: { alignment : "near" }}
+                           
+});
+
+{% endhighlight %}
 
 
 
@@ -19287,6 +21359,57 @@ series :[{marker :{dataLabel :{angle : 90}}]
 
 
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/ulhda01g)
+
+
+### series.marker.dataLabel.maximumLabelWidth `number`
+{:#members:series-marker-datalabel-maximumlabelwidth}
+
+
+Maximum label width of the data label. 
+
+
+#### Default Value
+
+ * null
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+series :[{marker :{dataLabel :{maximumLabelWidth : 80}}]                  
+});
+ {% endhighlight %}
+
+
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/klibjzkp)
+
+
+
+### series.marker.dataLabel.enableWrap `boolean`
+{:#members:series-marker-datalabel-enablewrap}
+
+Enable the wrap option to the data label. 
+
+#### Default Value
+
+ * false
+
+#### Example
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+series :[{marker :{dataLabel :{enableWrap : true}}]            
+});
+ {% endhighlight %}
+
+
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/klibjzkp)
 
 
 ### series.marker.dataLabel.border `object`
@@ -23132,6 +25255,165 @@ series : [{startAngle: 140 }]
 
 
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/cw1zlin3)
+
+
+
+### series.cornerRadius `object`
+{:#members:series-cornerradius}
+
+
+
+
+Options for customizing the corner radius. cornerRadius property also takes the numeric input and applies it for all the four corners of the column.
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+series : [{
+             cornerRadius: 10 
+    }]                   
+});
+ {% endhighlight %} 
+
+
+
+### series.cornerRadius.topLeft `number`
+{:#members:series.cornerradius.topleft}
+
+
+
+
+Specifies the radius for the top left corner.
+
+
+
+#### Default Value
+
+
+
+ * 0
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+series : [{
+             cornerRadius: {topLeft : 10 }
+    }]                   
+});
+ {% endhighlight %} 
+
+
+### series.cornerRadius.topRight `number`
+{:#members:series.cornerradius.topright}
+
+
+
+
+Specifies the radius for the top right corner.
+
+
+
+#### Default Value
+
+
+
+ * 0
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+series : [{
+             cornerRadius: {topRight : 10 }
+    }]                   
+});
+ {% endhighlight %} 
+
+
+
+### series.cornerRadius.bottomLeft `number`
+{:#members:series.cornerradius.bottomleft}
+
+
+
+
+Specifies the radius for the bottom left corner.
+
+
+
+#### Default Value
+
+
+
+ * 0
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+series : [{
+             cornerRadius: {bottomLeft : 10 }
+    }]                   
+});
+ {% endhighlight %} 
+
+
+### series.cornerRadius.bottomRight `number`
+{:#members:series.cornerradius.bottomright}
+
+
+
+
+Specifies the radius for the bottom right corner.
+
+
+
+#### Default Value
+
+
+
+ * 0
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+series : [{
+             cornerRadius: {bottomRight : 10 }
+    }]                   
+});
+ {% endhighlight %} 
+
 
 
 ### series.tooltip `object`

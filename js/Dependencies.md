@@ -15,7 +15,6 @@ documentation: ug
 
 * jQuery (from the version 1.7.1 to 3.1.0)
 * JsRender - to render the templates.
-* jQuery.easing - to support the animation effects in the components.
 
 N> jQuery.easing external dependency has been removed from version 14.3.0.49 onwards. Kindly include this jQuery.easing dependency for versions lesser than 14.3.0.49. 
 

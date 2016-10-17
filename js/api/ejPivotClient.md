@@ -70,7 +70,7 @@ PivotClient is an ad hoc analysis tool that can be easily bound to any OLAP and 
 ### analysisMode `enum`
 {:#members:analysisMode}
 
-<ts name = "ej.Pivot.AnalysisMode"/>
+<ts ref = "ej.Pivot.AnalysisMode"/>
 
 Sets the mode for the PivotClient widget for binding either OLAP or Relational data source.
 
@@ -1700,7 +1700,7 @@ Allows the user to set the localized language for the widget.
 ### operationalMode `enum`
 {:#members:operationalmode}
 
-<ts name = "ej.Pivot.OperationalMode"/>
+<ts ref = "ej.Pivot.OperationalMode"/>
 
 Sets the mode for the PivotClient widget for binding data source either in server-side or client-side.
 

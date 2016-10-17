@@ -56,6 +56,7 @@ The Kanban can be easily configured to the DOM element, such as div. You can cre
 * module:ej.core.min.js
 * module:ej.data.min.js
 * module:ej.touch.min.js
+* module:ej.draggable.min.js
 * module:ej.kanban.min.js
 * module:ej.scroller.min.js
 * module:ej.waitingpopup.min.js
@@ -5108,7 +5109,7 @@ Gets or sets a value that indicates whether to customizing the user interface (U
         SaveButton: "Speichern",
         CancelButton: "stornieren",
         EditFormTitle: "Details von ",
-        AddFormTitle: "Neue Karte hinzufÃ¼gen",
+        AddFormTitle: "Neue Karte hinzufügen",
         SwimlaneCaptionFormat: "- {{:count}}{{if count == 1 }} Artikel {{else}} Artikel {{/if}}",
         FilterSettings: "Filter:",
         FilterOfText: "Von",

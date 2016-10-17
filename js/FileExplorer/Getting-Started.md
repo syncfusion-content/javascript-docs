@@ -62,7 +62,6 @@ N> Essential JS widgets having the support for 13 built-in themes, to know more 
 The external script dependencies of the FileExplorer widget are,
 
 * [jQuery 1.7.1](http://jquery.com/#) or later versions.
-* [jQuery.easing](http://gsgd.co.uk/sandbox/jquery/easing/#) - to support the animation effects.
 * [jsrender](https://www.jsviews.com/#jsrender) – for grid view template.
 
 And the internal script dependencies of the FileExplorer widget are:
@@ -136,8 +135,6 @@ So you can add the below Script references in the head section:
     <!--External script references-->
 
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-
-    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"> </script>
 
     <script src="http://cdn.syncfusion.com/js/assets/external/jsrender.min.js"></script>
 

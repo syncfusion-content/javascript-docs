@@ -7,7 +7,7 @@ control: PivotChart
 documentation: ug
 ---
 
-#Title
+# Title
 
 ## Title Text
 By using the [`title.text`](/js/api/ejchart#members:title-text) property, you can add the title text for PivotChart.
