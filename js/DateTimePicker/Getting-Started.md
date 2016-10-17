@@ -37,7 +37,6 @@ Create an **HTML** file and add the following template to the **HTML** file.
       <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
       <!--Scripts-->
       <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"> </script>
-      <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"> </script>
       <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"></script>
       <!--Add custom scripts here -->
    </head>
@@ -48,7 +47,7 @@ Create an **HTML** file and add the following template to the **HTML** file.
 
 {% endhighlight %}
 
-
+N> jQuery.easing external dependency has been removed from version 14.3.0.49 onwards. Kindly include this jQuery.easing dependency for versions lesser than 14.3.0.49 in order to support animation effects.
 
 Add **&lt;input&gt;** element to render a **DateTimePicker**.
 

@@ -68,9 +68,6 @@ $(element).ejSplitButton()
 * module:jQuery
 
 
-* module:jquery.easing
-
-
 * module:ej.core.js
 
 
@@ -85,6 +82,8 @@ $(element).ejSplitButton()
 
 * module:ej.checkbox.js
 
+
+N> jQuery.easing external dependency has been removed from version 14.3.0.49 onwards. Kindly include this jQuery.easing dependency for versions lesser than 14.3.0.49 in order to support animation effects.
 
 
 

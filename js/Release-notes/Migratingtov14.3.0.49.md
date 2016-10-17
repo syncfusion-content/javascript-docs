@@ -1,3 +1,10 @@
+---
+title : Essential Studio 2015 Vol 3 Migration document
+description : Essential Studio 2015 Migration document
+platform : js
+documentation: ug
+---
+
 ### Common Changes
 
 * To avoid conflict between ej.web.all and ej.widgets.all JavaScript, theme and TypeScript files we are deprecating the below ej.widgets.all files and those files are no longer shipped along with our next Essential Studio release

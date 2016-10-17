@@ -50,7 +50,6 @@ For quicker startup, we are going to use CDN links for all Syncfusion resources.
 
     <!-- Essential Studio for JavaScript  script references -->
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"> </script>
     <script src="http://cdn.syncfusion.com/js/assets/external/jsrender.min.js"></script>
     <script src="http://cdn.syncfusion.com/14.1.0.41/js/web/ej.web.all.min.js"> </script> 
     <script src="http://cdn.syncfusion.com/14.1.0.41/js/common/ej.angular2.min.js"></script>
@@ -74,7 +73,7 @@ For quicker startup, we are going to use CDN links for all Syncfusion resources.
 
 
 N> In production, we highly recommend you to use our custom script generator to create custom script file with required controls and its dependencies only. Also to reduce the file size further please use GZip compression in your server.
-For SystemJS configuration, please refer [Angular 2.0 documentation](https://angular.io/docs/ts/latest/quickstart.html#!#config-files).
+For SystemJS configuration, please refer [Angular 2.0 documentation](https://angular.io/docs/ts/latest/quickstart.html#!#config-files). jQuery.easing external dependency has been removed from version 14.3.0.49 onwards. Kindly include this jQuery.easing dependency for versions lesser than 14.3.0.49 in order to support animation effects.
 
 ## 2. Adding Syncfusion Component to your Application
 
