@@ -7873,7 +7873,7 @@ $("#container").ejChart({
 ### crosshair.trackballTooltipSettings.opacity `number`
 {:#members:crosshair-trackballtooltipsettings-opacity}
 
-Opacity  of the trackball tooltip.
+Opacity value of the trackball tooltip.
 
 #### Default Value
 
