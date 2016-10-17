@@ -15,7 +15,6 @@ The Kanban control has the following list of external JavaScript dependencies.
 
 * [`jQuery 1.7.1`](http://jquery.com) and later versions
 * [`jsRender`](https://github.com/borismoore/jsrender) - to render the templates
-* [`jQuery.easing`](http://gsgd.co.uk/sandbox/jquery/easing) - to support animation effects in the components
 
 Refer to the internal dependencies in the following table.
 
