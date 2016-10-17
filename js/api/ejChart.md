@@ -3159,7 +3159,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/klibjzkp)
 ### commonSeriesOptions.marker.dataLabel.enableWrap `boolean`
 {:#members:commonseriesoptions-marker-datalabel-enablewrap}
 
-Enable the wrap option to the data lable. 
+Enable the wrap option to the data label. 
 
 #### Default Value
 
@@ -19663,7 +19663,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/klibjzkp)
 ### series.marker.dataLabel.enableWrap `boolean`
 {:#members:series-marker-datalabel-enablewrap}
 
-Enable the wrap option to the data lable. 
+Enable the wrap option to the data label. 
 
 #### Default Value
 
