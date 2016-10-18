@@ -10,35 +10,31 @@ metacontent:
 
 # PivotPager
 
-Support has been provided in PivotGrid to load and render large amount of data without any performance constraint through pager. The PivotPager widget is used to navigate between pages to view the paged information. 
+PivotPager is a control used to render large amount of data without any performance constraint in PivotGrid and PivotClient. The PivotPager widget is used to navigate between pages to view the paged information. 
 
 
 #### Syntax
 
 {% highlight javascript %}
 
-$(element).ejPivotPager()
-
+    $(element).ejPivotPager();
 {% endhighlight %}
 
 #### Example
 
 {% highlight html %}
  
-<div id="PivotPager1"></div> 
- 
-<script>
-//Create PivotPager
-$("#PivotPager1").ejPivotPager(...);     
-</script>
-
+    <div id="PivotPager1"></div>     
+    <script>
+        //Create PivotPager
+        $("#PivotPager1").ejPivotPager(...);     
+    </script>
 {% endhighlight %}
 
 
 #### Requires
 
-* module:jQuery-1.10.2.min.js
-* module:jQuery.easing.1.3.min.js
+* module:jQuery-3.0.0.min.js
 * module:ej.core.js
 * module:ej.data.js
 * module:ej.touch.js
@@ -59,10 +55,9 @@ Contains the current page number in categorical axis.
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotPager1").ejPivotPager({ categoricalCurrentPage: 1 });
-
+    $("#PivotPager1").ejPivotPager({ categoricalCurrentPage: 1 });
 {% endhighlight %}
 
 ### categoricalPageCount `number`
@@ -74,7 +69,7 @@ Contains the total page count in categorical axis.
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
 $("#PivotPager1").ejPivotPager({ categPageCount: 1 });
 
@@ -89,10 +84,9 @@ Allows the user to set the localized language for the widget.
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotPager1").ejPivotPager({ locale: "en-US" });
-
+    $("#PivotPager1").ejPivotPager({ locale: "en-US" });
 {% endhighlight %}
 
 ### mode `enum`
@@ -129,10 +123,9 @@ Sets the pager mode (Only Categorical Pager/Only Series Pager/Both) for the Pivo
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotPager1").ejPivotPager({ mode: ej.PivotPager.Mode.Series });
-
+    $("#PivotPager1").ejPivotPager({ mode: ej.PivotPager.Mode.Series });
 {% endhighlight %}
 
 ### seriesCurrentPage `number`
@@ -144,10 +137,9 @@ Contains the current page number in series axis.
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotPager1").ejPivotPager({ seriesCurrentPage: 1 }); 
-
+    $("#PivotPager1").ejPivotPager({ seriesCurrentPage: 1 });
 {% endhighlight %}
 
 ### seriesPageCount `number`
@@ -159,10 +151,9 @@ Contains the total page count in series axis.
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotPager1").ejPivotPager({ seriesPageCount: 1 });
-
+    $("#PivotPager1").ejPivotPager({ seriesPageCount: 1 });
 {% endhighlight %}
 
 ### targetControlID `string`
@@ -174,10 +165,9 @@ Contains the ID of the target element for which paging needs to be done.
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotPager1").ejPivotPager({ targetControlID: "PivotGrid1" });
-
+    $("#PivotPager1").ejPivotPager({ targetControlID: "PivotGrid1" });
 {% endhighlight %}
 
 
@@ -190,13 +180,8 @@ This function initializes the page counts and page numbers for the PivotPager.
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-<div id="PivotPager1"></div> 
- 
-<script>
-var pagerObj = $("#PivotPager1").data("ejPivotPager");
-pagerObj.initPagerProperties(150, {CategorialPageSize: 10, SeriesPageSize: 10, CategorialCurrentPage: 1, SeriesCurrentPage: 1});
-</script>
-
+    var pagerObj = $("#PivotPager1").data("ejPivotPager");
+    pagerObj.initPagerProperties(150, { CategorialPageSize: 10, SeriesPageSize: 10, CategorialCurrentPage: 1, SeriesCurrentPage: 1});
 {% endhighlight %}

@@ -33,10 +33,14 @@ PivotSchemaDesigner, also known as PivotTable Field List, is automatically popul
 
 #### Requires
 
-* module:jQuery-3.0.0
-* module:ej.common.all
-* module:ej.tools.js
+* module:jQuery-3.0.0.min.js
+* module:ej.core.js
+* module:ej.data.js
+* module:ej.touch.js
+* module:ej.dialog.js
+* module:ej.draggable.js
 * module:ej.pivot.common.js
+* module:ej.pivotschemadesigner.js
 
 ## Members
 
@@ -145,7 +149,7 @@ Allows the user to view the named sets in tree-view inside PivotTable Field List
 ### enableDragDrop `boolean`
 {:#members:enabledragdrop}
 
-Allows the user to restrict drag and drop operation within the PivotTable Field List.
+Allows the user to enable/disable drag and drop operations within the PivotTable Field List.
 
 #### Default Value: true
 
@@ -154,21 +158,6 @@ Allows the user to restrict drag and drop operation within the PivotTable Field 
 {% highlight javascript %}
  
     $("#PivotSchemaDesigner1").ejPivotSchemaDesigner({ enableDragDrop : true });
-{% endhighlight %}
-
-
-### filters `array`
-{:#members:filters}
-
-Allows the user to set the list of filters in filter section.
-
-#### Default Value: new Array()
-
-**Example:**
-
-{% highlight javascript %}
- 
-    $("#PivotSchemaDesigner1").ejPivotSchemaDesigner({ filters: [] });
 {% endhighlight %}
 
 ### height `string`
@@ -200,38 +189,6 @@ Allows the user to set the localized language for the widget.
     $("#PivotSchemaDesigner1").ejPivotSchemaDesigner({ locale: "en-US" });
 {% endhighlight %}
 
-
-### pivotCalculations `array`
-{:#members:pivotcalculations}
-
-Allows the user to set list of PivotCalculations in values section.
-
-#### Default Value: new Array()
-
-**Example:**
-
-{% highlight javascript %}
- 
-    $("#PivotSchemaDesigner1").ejPivotSchemaDesigner({ pivotCalculations: [] });
-{% endhighlight %}
-
-
-### pivotColumns `array`
-{:#members:pivotcolumns}
-
-Allows the user to set the list of PivotItems in column section.
-
-#### Default Value: new Array()
-
-**Example:**
-
-{% highlight javascript %}
- 
-    $("#PivotSchemaDesigner1").ejPivotSchemaDesigner({pivotColumns: []});
-
-{% endhighlight %}
-
-
 ### pivotControl `object`
 {:#members:pivotcontrol}
 
@@ -243,41 +200,10 @@ Sets the Pivot control bound with this PivotSchemaDesigner.
 
 {% highlight javascript %}
  
-    $("#PivotSchemaDesigner1").ejPivotSchemaDesigner({pivotControl: controlObject});
-
+    $("#PivotSchemaDesigner1").ejPivotSchemaDesigner({ pivotControl: controlObject });
 {% endhighlight %}
 
-### pivotRows `array`
-{:#members:pivotrows}
-
-Allows the user to set the list of PivotItems in row section.
-
-#### Default Value: new Array()
-
-**Example:**
-
-{% highlight javascript %}
- 
-    $("#PivotSchemaDesigner1").ejPivotSchemaDesigner({pivotRows: []});
-
-{% endhighlight %}
-
-### pivotTableFields `array`
-{:#members:pivottablefields}
-
-Allows the user to arrange the fields inside Field List of PivotSchemaDesigner.
-
-#### Default Value: new Array()
-
-**Example:**
-
-{% highlight javascript %}
- 
-    $("#PivotSchemaDesigner1").ejPivotSchemaDesigner({pivotTableFields: []});
-
-{% endhighlight %}
-
-### serviceMethod  `object`
+### serviceMethod `object`
 {:#members:servicemethod}
 
 Allows the user to set custom name for the methods at service-end, communicated during AJAX post.
@@ -292,10 +218,10 @@ Allows the user to set custom name for the methods at service-end, communicated 
 {% endhighlight %}
 
 
-### serviceMethod.fetchMembers  `string`
+### serviceMethod.fetchMembers `string`
 {:#members:servicemethod-fetchmembers}
 
-Allows the user to set the custom name for the service method that’s responsible for getting the values for the tree-view inside filter dialog.
+Allows the user to set the custom name for the service method responsible for getting the values for the tree-view inside filter dialog.
 
 #### Default Value: "FetchMembers"
 
@@ -303,14 +229,14 @@ Allows the user to set the custom name for the service method that’s responsib
 
 {% highlight javascript %}
  
-    $("#PivotSchemaDesigner1").ejPivotSchemaDesigner({ serviceMethod:  { fetchMembers: "FetchMembersMethod" } });
+    $("#PivotSchemaDesigner1").ejPivotSchemaDesigner({ serviceMethod: { fetchMembers: "FetchMembersMethod" } });
 {% endhighlight %}
 
 
-### serviceMethod.filtering  `string`
+### serviceMethod.filtering `string`
 {:#members:servicemethod-filtering}
 
-Allows the user to set the custom name for the service method that’s responsible for filtering operation in Field List.
+Allows the user to set the custom name for the service method responsible for filtering operation in Field List.
 
 #### Default Value: "Filtering"
 
@@ -318,14 +244,14 @@ Allows the user to set the custom name for the service method that’s responsib
 
 {% highlight javascript %}
  
-    $("#PivotSchemaDesigner1").ejPivotSchemaDesigner({ serviceMethod:  { filtering : "FilteringMethod" } });
+    $("#PivotSchemaDesigner1").ejPivotSchemaDesigner({ serviceMethod: { filtering : "FilteringMethod" } });
 {% endhighlight %}
 
 
 ### serviceMethod.memberExpand `string`
 {:#members:servicemethod-memberexpand}
 
-Allows the user to set the custom name for the service method that’s responsible for the server-side action, on expanding members in Field List.
+Allows the user to set the custom name for the service method responsible for the server-side action, on expanding members in Field List.
 
 #### Default Value: "MemberExpanded"
 
@@ -336,12 +262,10 @@ Allows the user to set the custom name for the service method that’s responsib
     $("#PivotSchemaDesigner1").ejPivotSchemaDesigner({ serviceMethod: { memberExpand: "MemberExpandedMethod" } });
 {% endhighlight %}
 
-
-
 ### serviceMethod.nodeDropped `string`
 {:#members:servicemethod-nodedropped}
 
-Allows the user to set the custom name for the service method that’s responsible for the server-side action, on dropping a node into Field List.
+Allows the user to set the custom name for the service method responsible for the server-side action, on dropping a node into Field List.
 
 #### Default Value: "NodeDropped"
 
@@ -355,7 +279,7 @@ Allows the user to set the custom name for the service method that’s responsib
 ### serviceMethod.nodeStateModified  `string`
 {:#members:servicemethod-nodestatemodified }
 
-Allows the user to set the custom name for the service method that’s responsible for the server-side action on changing the checked state of a node in Field List.
+Allows the user to set the custom name for the service method responsible for the server-side action on changing the checked state of a node in Field List.
 
 #### Default Value: "NodeStateModified"
 
@@ -370,7 +294,7 @@ Allows the user to set the custom name for the service method that’s responsib
 ### serviceMethod.removeButton `string`
 {:#members:servicemethod-removebutton}
 
-Allows the user to set the custom name for the service method that’s responsible for remove operation in Field List.
+Allows the user to set the custom name for the service method responsible for button removing operation in Field List.
 
 #### Default Value: "RemoveButton"
 
@@ -393,7 +317,7 @@ Connects the service using the specified URL for any server updates.
 
 {% highlight javascript %}
  
-    $("#PivotSchemaDesigner1").ejPivotSchemaDesigner({url: "/wcf/PivotService.svc"});
+    $("#PivotSchemaDesigner1").ejPivotSchemaDesigner({ url: "/wcf/PivotService.svc" });
 {% endhighlight %}
 
 ### width `string`
@@ -407,7 +331,7 @@ Sets the width for PivotSchemaDesigner.
 
 {% highlight javascript %}
  
-    $("#PivotSchemaDesigner1").ejPivotSchemaDesigner({width: "415px"});
+    $("#PivotSchemaDesigner1").ejPivotSchemaDesigner({ width: "415px" });
 {% endhighlight %}
 
 ### layout `enum`
@@ -449,15 +373,6 @@ Sets the layout for PivotSchemaDesigner.
     $("#PivotSchemaDesigner1").ejPivotSchemaDesigner({ layout: ej.PivotSchemaDesigner.Layouts.Normal });
 {% endhighlight %}
 
-#### Default Value: “”
-
-**Example:**
-
-{% highlight javascript %}
- 
-    $("#PivotSchemaDesigner1").ejPivotSchemaDesigner({width: "415px"});
-{% endhighlight %}
-
 ## Methods
 
 ### doAjaxPost()
@@ -470,7 +385,7 @@ Performs an asynchronous HTTP (AJAX) request.
 {% highlight javascript %}
  
     var schemaObj = $("#PivotSchemaDesigner1").data("ejPivotSchemaDesigner");
-    schemaObj.doAjaxPost("POST", "/PivotGridService.svc/Initialize", {"key", "Hello World"}, "_renderControlSuccess", null);
+    schemaObj.doAjaxPost("POST", "/PivotGridService.svc/Initialize", {"key", "Hello World"}, successEvent, null);
 {% endhighlight %}
 
 ### refreshControl()
@@ -600,7 +515,7 @@ Triggers when we start dragging any field from PivotSchemaDesigner.
 <tr>
 <td class="name">dragTarget</td>
 <td class="type">object</td>
-<td class="description last">return the HTML of the dragged field from PivotSchemaDesigner.</td>
+<td class="description last">returns the HTML element of the dragged field from PivotSchemaDesigner.</td>
 </tr>
 <tr>
 <td class="name">draggedElementData</td>
@@ -614,7 +529,7 @@ Triggers when we start dragging any field from PivotSchemaDesigner.
 </tr>
 <tr>
 <td class="name">model</td>
-<td class="type"><ts ref="ej.PivotSchemaDesigner.Model"/>object</td>
+<td class="type">object</td>
 <td class="description last">returns the PivotSchemaDesigner model</td>
 </tr>
 </tbody>
