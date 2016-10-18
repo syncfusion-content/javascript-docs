@@ -362,4 +362,4 @@ You can show/hide the symbol text by using the `showPaletteItemText` property of
     });
 
 {% endhighlight %}
-To explore the properties of symbol palette, refer to [Symbol Palette Properties](/js/api/ejsymbolpalette#members "Symbol Palette Properties").
+To explore the properties of symbol palette, refer to [Symbol Palette Properties](/api/js/ejsymbolpalette#members "Symbol Palette Properties").

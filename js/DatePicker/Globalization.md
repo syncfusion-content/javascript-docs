@@ -60,7 +60,7 @@ Set German culture to DatePicker at initialization.
 
 ## Watermark and Today Button Text
 
-By default DatePicker input has **“select date”** as watermark text, you can also change this value by using [watermarkText](http://help.syncfusion.com/js/api/ejdatepicker#members:watermarktext) property. Also there’s a today button in DatePicker calendar which allows you to quick select the current date and its value can be changed by using **‘buttonText’** property.
+By default DatePicker input has **“select date”** as watermark text, you can also change this value by using [watermarkText](http://help.syncfusion.com/api/js/ejdatepicker#members:watermarktext) property. Also there’s a today button in DatePicker calendar which allows you to quick select the current date and its value can be changed by using **‘buttonText’** property.
 
 {% highlight javascript %}
 

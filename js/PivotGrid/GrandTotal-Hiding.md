@@ -17,7 +17,7 @@ Grand Total Hiding can be classified into three categories.
 
 ## Row Grand Total Hiding
 
-You can hide the **Grand Total** in row alone by setting the property [`enableRowGrandTotal`](/js/api/ejpivotgrid#members:enablerowgrandtotal) to `false`
+You can hide the **Grand Total** in row alone by setting the property [`enableRowGrandTotal`](/api/js/ejpivotgrid#members:enablerowgrandtotal) to `false`
 
 {% highlight html %}
 
@@ -36,7 +36,7 @@ You can hide the **Grand Total** in row alone by setting the property [`enableRo
 
 ## Column Grand Total Hiding
 
-You can hide the **Grand Total** in column alone by setting the property [`enableColumnGrandTotal`](/js/api/ejpivotgrid#members:enablecolumngrandtotal) to `false`
+You can hide the **Grand Total** in column alone by setting the property [`enableColumnGrandTotal`](/api/js/ejpivotgrid#members:enablecolumngrandtotal) to `false`
 
 
 {% highlight html %}
@@ -57,7 +57,7 @@ You can hide the **Grand Total** in column alone by setting the property [`enabl
 
 ## Both
 
-You can hide the **Grand Total** in both row and column by setting the property [`enableGrandTotal`](/js/api/ejpivotgrid#members:enablegrandtotal) to `false`
+You can hide the **Grand Total** in both row and column by setting the property [`enableGrandTotal`](/api/js/ejpivotgrid#members:enablegrandtotal) to `false`
 
 {% highlight html %}
 

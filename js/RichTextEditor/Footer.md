@@ -78,7 +78,7 @@ N> The outermost tag is the body tag of &lt; iframe &gt; element in design view,
 
 ## Characters Count/Word Count
 
-The editor automatically counts the number of characters and words in the content while you type. The characters and words count displayed at the bottom of the editor. You can limit the number of characters in your content using [maxLength](http://help.syncfusion.com/js/api/ejrte#members:maxlength) property. By default, the editor sets the characters limit value as 7000 characters.
+The editor automatically counts the number of characters and words in the content while you type. The characters and words count displayed at the bottom of the editor. You can limit the number of characters in your content using [maxLength](http://help.syncfusion.com/api/js/ejrte#members:maxlength) property. By default, the editor sets the characters limit value as 7000 characters.
 
 {% highlight html %}
 
@@ -102,7 +102,7 @@ N> The editor counts the characters by including the space, and this validation 
 
 ## Clear Format
 
-The clear format tool is useful to remove all formatting styles (such as bold, italic, underline, color, superscript, subscript, and more) from currently selected text. As a result, all the text formatting will be cleared and return to its default formatting styles. When you set the [showClearFormat](http://help.syncfusion.com/js/api/ejrte#members:showclearformat) property to true, the clear format tool will be displayed at bottom of the editor.
+The clear format tool is useful to remove all formatting styles (such as bold, italic, underline, color, superscript, subscript, and more) from currently selected text. As a result, all the text formatting will be cleared and return to its default formatting styles. When you set the [showClearFormat](http://help.syncfusion.com/api/js/ejrte#members:showclearformat) property to true, the clear format tool will be displayed at bottom of the editor.
 
 {% highlight javascript %}
 
@@ -121,7 +121,7 @@ The clear format tool is useful to remove all formatting styles (such as bold, i
 
 ## Resize Handle
 
-When you set the [enableResize](http://help.syncfusion.com/js/api/ejrte#members:enableresize) property to true, resize handle will be displayed at bottom-right corner of the editor. You can drag the handle to change its size. On resizing, the editor will automatically adjust the toolbar, content area, and footer within it accordingly. Resize limits can be defined via [minHeight](http://help.syncfusion.com/js/api/ejrte#members:minheight), [maxHeight](http://help.syncfusion.com/js/api/ejrte#members:maxheight), [minWidth](http://help.syncfusion.com/js/api/ejrte#members:minwidth), and [maxWidth](http://help.syncfusion.com/js/api/ejrte#members:maxwidth) properties. You can specify the size of the editor programmatically through the [height](http://help.syncfusion.com/js/api/ejrte#members:height) and [width](http://help.syncfusion.com/js/api/ejrte#members:width) properties. 
+When you set the [enableResize](http://help.syncfusion.com/api/js/ejrte#members:enableresize) property to true, resize handle will be displayed at bottom-right corner of the editor. You can drag the handle to change its size. On resizing, the editor will automatically adjust the toolbar, content area, and footer within it accordingly. Resize limits can be defined via [minHeight](http://help.syncfusion.com/api/js/ejrte#members:minheight), [maxHeight](http://help.syncfusion.com/api/js/ejrte#members:maxheight), [minWidth](http://help.syncfusion.com/api/js/ejrte#members:minwidth), and [maxWidth](http://help.syncfusion.com/api/js/ejrte#members:maxwidth) properties. You can specify the size of the editor programmatically through the [height](http://help.syncfusion.com/api/js/ejrte#members:height) and [width](http://help.syncfusion.com/api/js/ejrte#members:width) properties. 
 
 {% highlight html %}
 
@@ -146,7 +146,7 @@ N>  1.	As resizable option will be added in the footer of RTE, so set the showFo
 
 ## Characters Count/Word Count
 
-The editor automatically counts the number of characters and words in the content while you type. The characters and words count displayed at the bottom of the editor. You can limit the number of characters in your content using [maxLength](http://help.syncfusion.com/js/api/ejrte#members:maxlength) property. By default, the editor sets the characters limit value as 7000 characters.
+The editor automatically counts the number of characters and words in the content while you type. The characters and words count displayed at the bottom of the editor. You can limit the number of characters in your content using [maxLength](http://help.syncfusion.com/api/js/ejrte#members:maxlength) property. By default, the editor sets the characters limit value as 7000 characters.
 
 {% highlight html %}
 

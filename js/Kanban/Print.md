@@ -8,7 +8,7 @@ platform: js
 
 # Print
 
- Set [‘allowPrinting’](https://help.syncfusion.com/js/api/ejkanban#members:allowprinting) as true, to enable Print icon in the Kanban toolbar.  You can use [‘print()’](https://help.syncfusion.com/js/api/ejkanban#methods:print) method from Kanban instance to print the Kanban.
+ Set [‘allowPrinting’](https://help.syncfusion.com/api/js/ejkanban#members:allowprinting) as true, to enable Print icon in the Kanban toolbar.  You can use [‘print()’](https://help.syncfusion.com/api/js/ejkanban#methods:print) method from Kanban instance to print the Kanban.
 
 The following code example describes the above behavior.
 

@@ -133,7 +133,7 @@ Grid actions can be persisted throughout by enabling the enablePersistence prope
    
 # External Search in Grid
 
-Using [`search`](http://help.syncfusion.com/js/api/ejgrid#methods:search “search”) method of Grid, you can search the string in Grid externally without using in-built toolbar search support. While using [`search`](http://help.syncfusion.com/js/api/ejgrid#methods:search “search”) method it is necessary to set [`allowSearching`](http://help.syncfusion.com/js/api/ejgrid#members:allowsearching “allowSearching”) property as `true`. The following code example explains the above behavior.
+Using [`search`](http://help.syncfusion.com/api/js/ejgrid#methods:search “search”) method of Grid, you can search the string in Grid externally without using in-built toolbar search support. While using [`search`](http://help.syncfusion.com/api/js/ejgrid#methods:search “search”) method it is necessary to set [`allowSearching`](http://help.syncfusion.com/api/js/ejgrid#members:allowsearching “allowSearching”) property as `true`. The following code example explains the above behavior.
 
 {% tabs %}
 {% highlight html %}

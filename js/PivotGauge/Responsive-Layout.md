@@ -9,7 +9,7 @@ documentation: ug
 
 # Responsive Layout
 
-PivotGauge widget supports responsive rendering based on the target device (desktop & tablet) resolution. It supports resolution upto 1024x600. You can enable responsiveness in PivotGauge by setting [`isResponsive`](/js/api/ejpivotgauge#members:isresponsive) property to true.
+PivotGauge widget supports responsive rendering based on the target device (desktop & tablet) resolution. It supports resolution upto 1024x600. You can enable responsiveness in PivotGauge by setting [`isResponsive`](/api/js/ejpivotgauge#members:isresponsive) property to true.
 
 {% highlight javascript %}
 

@@ -13,7 +13,7 @@ N> These features are applicable only for OLAP datasource.
 
 ## Sorting
 
-Sorting provides an option to sort the members of a hierarchy either in ascending or descending order. You can enable sorting option in PivotClient by setting the [`enableAdvancedFilter`](/js/api/ejpivotclient#members:enableAdvancedFilter) property under [`dataSource`] to true.
+Sorting provides an option to sort the members of a hierarchy either in ascending or descending order. You can enable sorting option in PivotClient by setting the [`enableAdvancedFilter`](/api/js/ejpivotclient#members:enableAdvancedFilter) property under [`dataSource`] to true.
 
 I> This feature is applicable only for OLAP datasource bound from client-side. 
 
@@ -38,7 +38,7 @@ Label filtering provides an option to filter the members of a hierarchy purely b
 
 ### Client Mode
 
-You can enable label filtering option in PivotClient by setting the [`enableAdvancedFilter`](/js/api/ejpivotclient#members:enableAdvancedFilter) property under [`dataSource`] to true.
+You can enable label filtering option in PivotClient by setting the [`enableAdvancedFilter`](/api/js/ejpivotclient#members:enableAdvancedFilter) property under [`dataSource`] to true.
 
 {% highlight html %}
 
@@ -59,7 +59,7 @@ You can enable label filtering option in PivotClient by setting the [`enableAdva
 
 ### Server Mode
 
-In server mode, you can enable label filtering option in PivotClient by setting the [`enableAdvancedFilter`](/js/api/ejpivotclient#members:enableAdvancedFilter) property to true.
+In server mode, you can enable label filtering option in PivotClient by setting the [`enableAdvancedFilter`](/api/js/ejpivotclient#members:enableAdvancedFilter) property to true.
 
 {% highlight html %}
 
@@ -83,7 +83,7 @@ Value filtering provides an option to filter members based on the total values o
 
 ### Client Mode
 
-You can enable the value filtering option in PivotClient by setting the [`enableAdvancedFilter`](/js/api/ejpivotclient#members:enableAdvancedFilter) property under [`dataSource`] to true .
+You can enable the value filtering option in PivotClient by setting the [`enableAdvancedFilter`](/api/js/ejpivotclient#members:enableAdvancedFilter) property under [`dataSource`] to true .
 
 {% highlight html %}
 
@@ -105,7 +105,7 @@ You can enable the value filtering option in PivotClient by setting the [`enable
 
 ### Server Mode
 
-In server mode, you can enable the value filtering option in PivotClient by setting the [`enableAdvancedFilter`](/js/api/ejpivotclient#members:enableAdvancedFilter) property to true
+In server mode, you can enable the value filtering option in PivotClient by setting the [`enableAdvancedFilter`](/api/js/ejpivotclient#members:enableAdvancedFilter) property to true
 
 {% highlight html %}
 

@@ -14,11 +14,11 @@ keywords: Auto Sizing, DropDownList, dropdown, popup size,
 
 ### Fixed Size DropDownList widget
 
-You can customize the widget dimensions using [width](http://help.syncfusion.com/js/api/ejdropdownlist#members:width) and [height](http://help.syncfusion.com/js/api/ejdropdownlist#members:height) properties. Fixed size values can be specified in pixel or percentage values. By default the DropDownList wrapper will be assigned with "143px" width and "30px" height.
+You can customize the widget dimensions using [width](http://help.syncfusion.com/api/js/ejdropdownlist#members:width) and [height](http://help.syncfusion.com/api/js/ejdropdownlist#members:height) properties. Fixed size values can be specified in pixel or percentage values. By default the DropDownList wrapper will be assigned with "143px" width and "30px" height.
 
 ### Fixed size popup list
 
-You can customize the popup list dimensions using [popupWidth](http://help.syncfusion.com/js/api/ejdropdownlist#members:popupwidth) and [popupHeight](http://help.syncfusion.com/js/api/ejdropdownlist#members:popupheight) properties. Fixed size values can be specified in pixel or percentage values. By default popup width is auto and popup height is "152px". 
+You can customize the popup list dimensions using [popupWidth](http://help.syncfusion.com/api/js/ejdropdownlist#members:popupwidth) and [popupHeight](http://help.syncfusion.com/api/js/ejdropdownlist#members:popupheight) properties. Fixed size values can be specified in pixel or percentage values. By default popup width is auto and popup height is "152px". 
 
 ### Auto Sizing
 
@@ -26,9 +26,9 @@ DropDownList is adaptive to mobile and web layout such that it is adjustable wit
 
 ### Limit the number of items
 
-You can use [itemsCount](http://help.syncfusion.com/js/api/ejdropdownlist#members:itemscount) property to fetch only the specific number of items from the data source. To fetch the remaining items you can enable [virtual scrolling](databinding#virtual-scrolling) support which loads the data on scrolling the data items in popup list. 
+You can use [itemsCount](http://help.syncfusion.com/api/js/ejdropdownlist#members:itemscount) property to fetch only the specific number of items from the data source. To fetch the remaining items you can enable [virtual scrolling](databinding#virtual-scrolling) support which loads the data on scrolling the data items in popup list. 
 
-N> By default popup list is shown on DropDownList button click but you can display the list initially by enabling the [showPopupOnLoad](http://help.syncfusion.com/js/api/ejdropdownlist#members:showpopuponload) property. You can also use [showPopup ()](http://help.syncfusion.com/js/api/ejdropdownlist#methods:showpopup) or [hidePopup ()](http://help.syncfusion.com/js/api/ejdropdownlist#methods:hidepopup) methods at run time to display or hide the popup list.
+N> By default popup list is shown on DropDownList button click but you can display the list initially by enabling the [showPopupOnLoad](http://help.syncfusion.com/api/js/ejdropdownlist#members:showpopuponload) property. You can also use [showPopup ()](http://help.syncfusion.com/api/js/ejdropdownlist#methods:showpopup) or [hidePopup ()](http://help.syncfusion.com/api/js/ejdropdownlist#methods:hidepopup) methods at run time to display or hide the popup list.
 
 {% highlight html %}
 
@@ -73,12 +73,12 @@ N> By default popup list is shown on DropDownList button click but you can displ
 
 ## Popup resizing 
 
-To show a resize handle in the popup list, use [enablePopupResize](http://help.syncfusion.com/js/api/ejdropdownlist#members:enablepopupresize) property. You can customize the resize functionality by setting dimensions to the following properties.
+To show a resize handle in the popup list, use [enablePopupResize](http://help.syncfusion.com/api/js/ejdropdownlist#members:enablepopupresize) property. You can customize the resize functionality by setting dimensions to the following properties.
 
 <table>
     <tr>
         <td>
-            {{'[minPopupWidth](http://help.syncfusion.com/js/api/ejdropdownlist#members:minpopupwidth)'| markdownify }}
+            {{'[minPopupWidth](http://help.syncfusion.com/api/js/ejdropdownlist#members:minpopupwidth)'| markdownify }}
             <br/>
         </td>
         <td>
@@ -88,7 +88,7 @@ To show a resize handle in the popup list, use [enablePopupResize](http://help.s
     </tr>
     <tr>
         <td>
-            {{'[maxPopupWidth](http://help.syncfusion.com/js/api/ejdropdownlist#members:maxpopupwidth)'| markdownify }}
+            {{'[maxPopupWidth](http://help.syncfusion.com/api/js/ejdropdownlist#members:maxpopupwidth)'| markdownify }}
             <br/>
         </td>
         <td>
@@ -98,7 +98,7 @@ To show a resize handle in the popup list, use [enablePopupResize](http://help.s
     </tr>
     <tr>
         <td>
-            {{'[minPopupHeight](http://help.syncfusion.com/js/api/ejdropdownlist#members:minpopupheight)'| markdownify }}
+            {{'[minPopupHeight](http://help.syncfusion.com/api/js/ejdropdownlist#members:minpopupheight)'| markdownify }}
             <br/>
         </td>
         <td>
@@ -108,7 +108,7 @@ To show a resize handle in the popup list, use [enablePopupResize](http://help.s
     </tr>
     <tr>
         <td>
-            {{'[maxPopupHeight](http://help.syncfusion.com/js/api/ejdropdownlist#members:maxpopupheight)'| markdownify }}
+            {{'[maxPopupHeight](http://help.syncfusion.com/api/js/ejdropdownlist#members:maxpopupheight)'| markdownify }}
             <br/>
         </td>
         <td>

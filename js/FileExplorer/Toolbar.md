@@ -126,7 +126,7 @@ It's used to sorting the files and folders from the current directory.The sortin
 
 ## Toolbar Visibility
 
-The visibility of the toolbar can be customized through the [showToolbar](http://help.syncfusion.com/js/api/ejfileexplorer#members:showtoolbar) property. By disabling this property you can remove the toolbar from FileExplorer.
+The visibility of the toolbar can be customized through the [showToolbar](http://help.syncfusion.com/api/js/ejfileexplorer#members:showtoolbar) property. By disabling this property you can remove the toolbar from FileExplorer.
 
 {% highlight javascript %}
 
@@ -154,7 +154,7 @@ The visibility of the toolbar can be customized through the [showToolbar](http:/
 
 ## Toolbar Configuration
 
-As you can see the available toolbar items from [here](#toolbar-items). From the list of available items, you can configure and group your required toolbar items only through the [tools](http://help.syncfusion.com/js/api/ejfileexplorer#members:tools) property. And also you can arrange the toolbar items by the [toolsList](http://help.syncfusion.com/js/api/ejfileexplorer#members:toolslist) property. 
+As you can see the available toolbar items from [here](#toolbar-items). From the list of available items, you can configure and group your required toolbar items only through the [tools](http://help.syncfusion.com/api/js/ejfileexplorer#members:tools) property. And also you can arrange the toolbar items by the [toolsList](http://help.syncfusion.com/api/js/ejfileexplorer#members:toolslist) property. 
 
 {% highlight javascript %}
 
@@ -200,7 +200,7 @@ As you can see the available toolbar items from [here](#toolbar-items). From the
 
 ## Search bar  
 
-The Search bar can be customize through the [filterSettings](http://help.syncfusion.com/js/api/ejfileexplorer#members:filtersettings) property. By default the search doesn’t consider the case sensitivity, and the search works based on [filter type](http://help.syncfusion.com/js/api/ejfileexplorer#members:filtersettings-filtertype).
+The Search bar can be customize through the [filterSettings](http://help.syncfusion.com/api/js/ejfileexplorer#members:filtersettings) property. By default the search doesn’t consider the case sensitivity, and the search works based on [filter type](http://help.syncfusion.com/api/js/ejfileexplorer#members:filtersettings-filtertype).
 
 The FileExplorer allows the following filter types in the search functionality.
 
@@ -343,8 +343,8 @@ Define the CSS that needs to apply for the custom tool.
 
 Each toolbar item can be enabled or disabled through the below client-side public methods.
 
-* [enableToolbarItem](http://help.syncfusion.com/js/api/ejfileexplorer#methods:enabletoolbaritem)
-* [disableToolbarItem](http://help.syncfusion.com/js/api/ejfileexplorer#methods:disabletoolbaritem)
+* [enableToolbarItem](http://help.syncfusion.com/api/js/ejfileexplorer#methods:enabletoolbaritem)
+* [disableToolbarItem](http://help.syncfusion.com/api/js/ejfileexplorer#methods:disabletoolbaritem)
 
 These methods accepts the tool name as the parameter. It also allows the parameter as tool item index or the jQuery object of the tool item. 
 
@@ -374,7 +374,7 @@ These methods accepts the tool name as the parameter. It also allows the paramet
 
 ## Customizing the Upload Functionality
 
-FileExplorer helps you to upload the file using [Upload](http://help.syncfusion.com/js/uploadbox/overview#) component. File upload can be done through the toolbar item or context menu item. The [uploadSettings](http://help.syncfusion.com/js/api/ejfileexplorer#members:uploadsettings) property is used to configure the upload functionalities.
+FileExplorer helps you to upload the file using [Upload](http://help.syncfusion.com/js/uploadbox/overview#) component. File upload can be done through the toolbar item or context menu item. The [uploadSettings](http://help.syncfusion.com/api/js/ejfileexplorer#members:uploadsettings) property is used to configure the upload functionalities.
 
 This property has the below sub properties with the default values:
 

@@ -332,11 +332,11 @@ diagram.fitToPage("page", "content", {
 
 ### FitToMode
 
-Mode specifies whether the Diagram content has to be fit into view with respect to width, height, or entire bounds of the Diagram. To explore the mode, refer to [FitToMode](/js/api/global#fitmode "FitToMode").
+Mode specifies whether the Diagram content has to be fit into view with respect to width, height, or entire bounds of the Diagram. To explore the mode, refer to [FitToMode](/api/js/global#fitmode "FitToMode").
 
 ### Region
 
-Region specifies the region/bounds of the Diagram content that is to be fit into the view. For more information about Region, refer to [Region](/js/api/global#region "Region").
+Region specifies the region/bounds of the Diagram content that is to be fit into the view. For more information about Region, refer to [Region](/api/js/global#region "Region").
 
 ## Command Manager
 
@@ -350,7 +350,7 @@ To define a custom command, you need to specify following properties.
 * `canExecute`: a method to define whether the command can be executed at the moment. 
 * `gesture`: the combination of key gestures.
 
-To explore the properties of custom commands, refer to [Commands](/js/api/ejDiagram#commandmanager:commands "Commands")
+To explore the properties of custom commands, refer to [Commands](/api/js/ejDiagram#commandmanager:commands "Commands")
 
 The following code example illustrates how to define a custom command.
 

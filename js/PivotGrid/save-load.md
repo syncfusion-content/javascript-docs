@@ -88,7 +88,7 @@ public Dictionary<string, object> SaveReport(string reportName, string operation
 
 ## Save Report to Local Storage
 
-To save the current report of PivotGrid to local storage, we need to call the [`saveReport`](/js/api/ejpivotgrid#members:saveReport) method in PivotGrid.
+To save the current report of PivotGrid to local storage, we need to call the [`saveReport`](/api/js/ejpivotgrid#members:saveReport) method in PivotGrid.
 
 {% highlight html %}
 
@@ -335,7 +335,7 @@ private DataTable GetDataTable()
 
 ## Load Report from Local Storage
 
-To load the stored report of PivotGrid from local storage, we need to call the ['loadReport'](/js/api/ejpivotgrid#members:loadReport) method in PivotGrid.
+To load the stored report of PivotGrid from local storage, we need to call the ['loadReport'](/api/js/ejpivotgrid#members:loadReport) method in PivotGrid.
 
 {% highlight html %}
 

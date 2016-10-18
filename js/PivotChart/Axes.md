@@ -12,7 +12,7 @@ documentation: ug
 ## Label Format
 
 ### Format Numeric labels
-By using the [`labelFormat`](/js/api/ejchart#members:primaryyaxis-labelformat) property, you can format the numeric labels. Numeric values can be formatted with n (number with decimal points), c (currency) and p (percentage) commands.
+By using the [`labelFormat`](/api/js/ejchart#members:primaryyaxis-labelformat) property, you can format the numeric labels. Numeric values can be formatted with n (number with decimal points), c (currency) and p (percentage) commands.
 
 {% highlight javascript %}
 
@@ -93,7 +93,7 @@ Following table describes the result on applying some commonly used label format
 </table>
 
 ### Label Format Customization 
-By using the [`labelFormat`](/js/api/ejchart#members:primaryyaxis-labelformat) property of [`primaryYAxis`](/js/api/ejchart#members:primaryyaxis), you can add the category labels with prefix and/or suffix. 
+By using the [`labelFormat`](/api/js/ejchart#members:primaryyaxis-labelformat) property of [`primaryYAxis`](/api/js/ejchart#members:primaryyaxis), you can add the category labels with prefix and/or suffix. 
 
 {% highlight javascript %}
 
@@ -117,9 +117,9 @@ By using the [`labelFormat`](/js/api/ejchart#members:primaryyaxis-labelformat) p
 ## Common Axis Features
 
 ### Axis Visibility
-Axis visibility can be set by using the [`visible`](/js/api/ejchart#members:primaryyaxis-visible) property of the respective axis. 
+Axis visibility can be set by using the [`visible`](/api/js/ejchart#members:primaryyaxis-visible) property of the respective axis. 
 
-N> By default, the value of [`visible`](/js/api/ejchart#members:primaryyaxis-visible) property is true in PivotChart.
+N> By default, the value of [`visible`](/api/js/ejchart#members:primaryyaxis-visible) property is true in PivotChart.
 
 {% highlight javascript %}
 
@@ -141,7 +141,7 @@ N> By default, the value of [`visible`](/js/api/ejchart#members:primaryyaxis-vis
 ![](Chart-Axes_images/AxisVisibility.png)
 
 ### Label Customization
-By using the [`font`](/js/api/ejchart#members:primaryxaxis-font) property of the axis, we can customize the labels – font family, color, opacity, size and font-weight.
+By using the [`font`](/api/js/ejchart#members:primaryxaxis-font) property of the axis, we can customize the labels – font family, color, opacity, size and font-weight.
 
 {% highlight javascript %}
 
@@ -168,7 +168,7 @@ By using the [`font`](/js/api/ejchart#members:primaryxaxis-font) property of the
 ![](Chart-Axes_images/LabelCustomization.png)
 
 ### Label and Tick Positioning
-Axis labels and ticks can be positioned inside or outside the Chart area by using the [`labelPosition`](/js/api/ejchart#members:primaryxaxis-labelposition) and [`tickLinesPosition`](/js/api/ejchart#members:primaryxaxis-ticklinesposition) properties. The labels and ticks are positioned outside the Chart area, by default.
+Axis labels and ticks can be positioned inside or outside the Chart area by using the [`labelPosition`](/api/js/ejchart#members:primaryxaxis-labelposition) and [`tickLinesPosition`](/api/js/ejchart#members:primaryxaxis-ticklinesposition) properties. The labels and ticks are positioned outside the Chart area, by default.
 
 {% highlight javascript %}
 
@@ -190,7 +190,7 @@ Axis labels and ticks can be positioned inside or outside the Chart area by usin
 ![](Chart-Axes_images/LabelAndTickPositioning.png)
 
 ### Grid Lines Customization
-By using the [`majorGridLines`](/js/api/ejchart#members:primaryxaxis-majorgridlines) and [`minorGridLines`](/js/api/ejchart#members:primaryxaxis-minorgridlines) properties of the axis, you can customize the width, color, visibility and opacity of the grid lines.
+By using the [`majorGridLines`](/api/js/ejchart#members:primaryxaxis-majorgridlines) and [`minorGridLines`](/api/js/ejchart#members:primaryxaxis-minorgridlines) properties of the axis, you can customize the width, color, visibility and opacity of the grid lines.
 
 N> By default, the minor grid lines are not visible in PivotChart.
 
@@ -226,7 +226,7 @@ N> By default, the minor grid lines are not visible in PivotChart.
 ![](Chart-Axes_images/GridLinesCustomization.png)
 
 ### Tick Lines Customization
-By using the [`majorTickLines`](/js/api/ejchart#members:primaryxaxis-majorticklines) and [`minorTickLines`](/js/api/ejchart#members:primaryxaxis-minorgridlines) properties of the axis, you can customize the width, color, visibility, size and opacity of the tick lines.
+By using the [`majorTickLines`](/api/js/ejchart#members:primaryxaxis-majorticklines) and [`minorTickLines`](/api/js/ejchart#members:primaryxaxis-minorgridlines) properties of the axis, you can customize the width, color, visibility, size and opacity of the tick lines.
 
 N> By default, the minor tick lines are not visible in PivotChart.
 
@@ -263,9 +263,9 @@ N> By default, the minor tick lines are not visible in PivotChart.
 ![](Chart-Axes_images/TickLinesCustomization.png)
 
 ### Inversing Axes
-Axes can be inversed by using the [`isInversed`](/js/api/ejchart#members:primaryxaxis-isinversed) property of the respective axis.
+Axes can be inversed by using the [`isInversed`](/api/js/ejchart#members:primaryxaxis-isinversed) property of the respective axis.
 
-N> By default, the [`isInversed`](/js/api/ejchart#members:primaryyaxis-isinversed) property is false in PivotChart.
+N> By default, the [`isInversed`](/api/js/ejchart#members:primaryyaxis-isinversed) property is false in PivotChart.
 
 {% highlight javascript %}
 
@@ -291,9 +291,9 @@ N> By default, the [`isInversed`](/js/api/ejchart#members:primaryyaxis-isinverse
 ![](Chart-Axes_images/InversingAxes.png)
 
 ### Placing Axes at Opposite Side
-The [`opposedPosition`](/js/api/ejchart#members:primaryxaxis-opposedposition) property of Chart axis can be used to place the axis at the opposite direction from its default position.
+The [`opposedPosition`](/api/js/ejchart#members:primaryxaxis-opposedposition) property of Chart axis can be used to place the axis at the opposite direction from its default position.
 
-N> By default, the [`opposedPosition`](/js/api/ejchart#members:primaryyaxis-opposedposition) property is false in PivotChart.
+N> By default, the [`opposedPosition`](/api/js/ejchart#members:primaryyaxis-opposedposition) property is false in PivotChart.
 
 {% highlight javascript %}
 
@@ -320,9 +320,9 @@ N> By default, the [`opposedPosition`](/js/api/ejchart#members:primaryyaxis-oppo
 
 ## Smart Axis Labels
 
-When the axis labels overlap with each other based on the Chart dimensions and label size, you can use [`labelIntersection`](/js/api/ejchart#members:primaryxaxis-labelintersectaction) property of the axis to avoid overlapping. 
+When the axis labels overlap with each other based on the Chart dimensions and label size, you can use [`labelIntersection`](/api/js/ejchart#members:primaryxaxis-labelintersectaction) property of the axis to avoid overlapping. 
 
-N> By default, the [`labelIntersection`](/js/api/ejchart#members:primaryxaxis-labelintersectaction) property is none in PivotChart.
+N> By default, the [`labelIntersection`](/api/js/ejchart#members:primaryxaxis-labelintersectaction) property is none in PivotChart.
 
 The following options that are supported for `labelIntersection` property are: 
 

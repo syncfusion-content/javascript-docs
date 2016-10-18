@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Print
 
-You need to use [`print()`](http://helpjs.syncfusion.com/js/api/ejgrid#methods:print) method from Grid instance to print the Grid. You can add Print option in Toolbar item by adding `ej.Grid.ToolBarItems.PrintGrid` in [`toolbarItems`](http://help.syncfusion.com/js/api/ejgrid#members:toolbarsettings-toolbaritems).
+You need to use [`print()`](http://helpjs.syncfusion.com/api/js/ejgrid#methods:print) method from Grid instance to print the Grid. You can add Print option in Toolbar item by adding `ej.Grid.ToolBarItems.PrintGrid` in [`toolbarItems`](http://help.syncfusion.com/api/js/ejgrid#members:toolbarsettings-toolbaritems).
 
 {% highlight html %}
 
@@ -47,7 +47,7 @@ Some of print options are not configurable through JavaScript code. You need to 
 
 ## Print on external Button Click
 
-By default, the Grid can be print from toolbar. To print from external button action, you need to call the grid's [`print()`](http://help.syncfusion.com/js/api/ejgrid#methods:print) method from required button event.
+By default, the Grid can be print from toolbar. To print from external button action, you need to call the grid's [`print()`](http://help.syncfusion.com/api/js/ejgrid#methods:print) method from required button event.
 
 {% highlight html %}
 <button id="print">Print</button>

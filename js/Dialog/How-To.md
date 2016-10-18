@@ -70,7 +70,7 @@ Initialize the Dialog widgets by adding the script section as below.
 
 
 N>If the position of the dialog is not set as above, all the three dialogs will be overlapped with each other.
-{%seealso%}[position](http://help.syncfusion.com/js/api/ejdialog#members:position){%endseealso%}
+{%seealso%}[position](http://help.syncfusion.com/api/js/ejdialog#members:position){%endseealso%}
 
 ![Create Multiple Dialogs](how-to_images\create-multiple-dialogs_img1.png)
 

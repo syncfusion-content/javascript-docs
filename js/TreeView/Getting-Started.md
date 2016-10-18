@@ -244,5 +244,5 @@ Initialize TreeView with remote data source
 
 {% endhighlight %}
 
-N>  In remote data source, [ej.DataManager](http://helpjs.syncfusion.com/js/api/ejdatamanager#) is used to process the data from services and the value has been assigned to dataSource. 
+N>  In remote data source, [ej.DataManager](http://helpjs.syncfusion.com/api/js/ejdatamanager#) is used to process the data from services and the value has been assigned to dataSource. 
 

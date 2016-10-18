@@ -80,8 +80,8 @@ The output of the above steps is as follows:
 
 TreeGrid is rendered from Self-Referential data structures by providing two fields: **ID** field and **parent ID** field.
 
-* **ID Field** - This field contains unique values used to identify nodes. Its name is assigned to the [`idMapping`](/js/api/ejtreegrid#idmappingspan-classtype-signature-type-stringstringspan "idMapping") property.
-* **Parent ID Field** - This field contains values that indicate parent nodes. Its name is assigned to the [`parentIdMapping`](/js/api/ejtreegrid#parentidmappingspan-classtype-signature-type-stringstringspan "parentIdMapping") property.
+* **ID Field** - This field contains unique values used to identify nodes. Its name is assigned to the [`idMapping`](/api/js/ejtreegrid#idmappingspan-classtype-signature-type-stringstringspan "idMapping") property.
+* **Parent ID Field** - This field contains values that indicate parent nodes. Its name is assigned to the [`parentIdMapping`](/api/js/ejtreegrid#parentidmappingspan-classtype-signature-type-stringstringspan "parentIdMapping") property.
 
 {% highlight js %}
 

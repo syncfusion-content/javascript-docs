@@ -9,13 +9,13 @@ keywords: scrolling,kanban scrolling
 
 # Scrolling
 
-Scrolling can be enabled by setting [`allowScrolling`](https://help.syncfusion.com/js/api/ejkanban#members:allowscrolling) as true. The height and width can be set to Kanban by using the properties [`scrollSettings.height`](https://help.syncfusion.com/js/api/ejkanban#members:scrollsettings-height) and [`scrollSettings.width`](https://help.syncfusion.com/js/api/ejkanban#members:scrollsettings-width) respectively.
+Scrolling can be enabled by setting [`allowScrolling`](https://help.syncfusion.com/api/js/ejkanban#members:allowscrolling) as true. The height and width can be set to Kanban by using the properties [`scrollSettings.height`](https://help.syncfusion.com/api/js/ejkanban#members:scrollsettings-height) and [`scrollSettings.width`](https://help.syncfusion.com/api/js/ejkanban#members:scrollsettings-width) respectively.
 
-N> The height and width can be set in percentage and pixel. The default value for [`height`](https://help.syncfusion.com/js/api/ejkanban#members:scrollsettings-height) and [`width`](https://help.syncfusion.com/js/api/ejkanban#members:scrollsettings-width) in [`scrollSettings`](https://help.syncfusion.com/js/api/ejkanban#members:scrollsettings) is 0 and auto respectively.
+N> The height and width can be set in percentage and pixel. The default value for [`height`](https://help.syncfusion.com/api/js/ejkanban#members:scrollsettings-height) and [`width`](https://help.syncfusion.com/api/js/ejkanban#members:scrollsettings-width) in [`scrollSettings`](https://help.syncfusion.com/api/js/ejkanban#members:scrollsettings) is 0 and auto respectively.
 
 ## Set width and height in pixel
 
-To specify the [`scrollSettings.width`](https://help.syncfusion.com/js/api/ejkanban#members:scrollsettings-width) and [`scrollSettings.height`](https://help.syncfusion.com/js/api/ejkanban#members:scrollsettings-height) in pixel, by set the pixel value as integer.
+To specify the [`scrollSettings.width`](https://help.syncfusion.com/api/js/ejkanban#members:scrollsettings-width) and [`scrollSettings.height`](https://help.syncfusion.com/api/js/ejkanban#members:scrollsettings-height) in pixel, by set the pixel value as integer.
 
 The following code example describes the above behavior.
 
@@ -60,7 +60,7 @@ The following output is displayed as a result of the above code example.
 
 ## Set height and width in percentage
 
-To specify the [`scrollSettings.width`](https://help.syncfusion.com/js/api/ejkanban#members:scrollsettings-width) and [`scrollSettings.height`](https://help.syncfusion.com/js/api/ejkanban#members:scrollsettings-height) in percentage, by set the percentage value as string.
+To specify the [`scrollSettings.width`](https://help.syncfusion.com/api/js/ejkanban#members:scrollsettings-width) and [`scrollSettings.height`](https://help.syncfusion.com/api/js/ejkanban#members:scrollsettings-height) in percentage, by set the percentage value as string.
 
 The following code example describes the above behavior.
 
@@ -106,7 +106,7 @@ The following output is displayed as a result of the above code example.
 
 ## Set width as auto
 
-Specify [`width`](https://help.syncfusion.com/js/api/ejkanban#members:scrollsettings-width) property of [`scrollSettings`](https://help.syncfusion.com/js/api/ejkanban#members:scrollsettings) as auto, then the scrollbar is rendered only when the Kanban width exceeds the browser window width.
+Specify [`width`](https://help.syncfusion.com/api/js/ejkanban#members:scrollsettings-width) property of [`scrollSettings`](https://help.syncfusion.com/api/js/ejkanban#members:scrollsettings) as auto, then the scrollbar is rendered only when the Kanban width exceeds the browser window width.
 
 The following code example describes the above behavior.
 
@@ -149,7 +149,7 @@ The following output is displayed as a result of the above code example.
 
 ## Enabling freeze swim lane
 
-Set [`allowFreezeSwimlane`](https://help.syncfusion.com/js/api/ejkanban#members:scrollsettings-allowfreezeswimlane) as true. This enables scrolling with freezing of swim lane until you scroll to the next Swim lane, which helps user to aware of current swim lane target.
+Set [`allowFreezeSwimlane`](https://help.syncfusion.com/api/js/ejkanban#members:scrollsettings-allowfreezeswimlane) as true. This enables scrolling with freezing of swim lane until you scroll to the next Swim lane, which helps user to aware of current swim lane target.
 
 The following code example describes the above behavior.
 

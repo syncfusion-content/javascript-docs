@@ -11,7 +11,7 @@ documentation: ug
 
 This section explains you briefly on how to create one dimensional and two dimensional barcodes and customizing its appearance in your JavaScript application.
 
-You can easily configure the barcode to any DOM element such as `div` or `span`. It takes [`text`](/js/api/ejbarcode#textspan-classtype-signature-type-stringstringspan) and [`symbologyType`](/js/api/ejbarcode#symbologytypespan-classtype-signature-type-enumenumspan) as input and renders the encoded text as barcode.
+You can easily configure the barcode to any DOM element such as `div` or `span`. It takes [`text`](/api/js/ejbarcode#textspan-classtype-signature-type-stringstringspan) and [`symbologyType`](/api/js/ejbarcode#symbologytypespan-classtype-signature-type-enumenumspan) as input and renders the encoded text as barcode.
 
 ## Adding a QR Code
 
@@ -101,6 +101,6 @@ $("#barcode").ejBarcode({
 ![](/js/Barcode/Getting-Started_images/Getting-Started_img3.png)
 
 ## Customizing the Barcode appearance
-The height of the barcode can be changed using the [barHeight](/js/api/ejBarcode#barheightspan-classtype-signature-type-numbernumberspan) property. The equivalent property to change the block size for two dimensional barcode is [xDimension](/js/api/ejBarcode#xdimensionspan-classtype-signature-type-numbernumberspan). You can also customize the barcode color by changing the [darkBarColor](/js/api/ejBarcode#darkbarcolorspan-classtype-signature-type-objectobjectspan) and [lightBarColor](/js/api/ejbarcode#lightbarcolorspan-classtype-signature-type-objectobjectspan) properties.
+The height of the barcode can be changed using the [barHeight](/api/js/ejBarcode#barheightspan-classtype-signature-type-numbernumberspan) property. The equivalent property to change the block size for two dimensional barcode is [xDimension](/api/js/ejBarcode#xdimensionspan-classtype-signature-type-numbernumberspan). You can also customize the barcode color by changing the [darkBarColor](/api/js/ejBarcode#darkbarcolorspan-classtype-signature-type-objectobjectspan) and [lightBarColor](/api/js/ejbarcode#lightbarcolorspan-classtype-signature-type-objectobjectspan) properties.
 
 N>    This color customization is possible only for one dimensional barcodes and it is not supported for two dimensional barcodes.

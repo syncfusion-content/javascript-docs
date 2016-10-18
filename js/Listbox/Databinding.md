@@ -15,27 +15,27 @@ The ListBox widget has a field property (object) which holds the properties to m
 
 The field object contains the following properties.
 
-* [text](http://help.syncfusion.com/js/api/ejlistbox#members:fields)
+* [text](http://help.syncfusion.com/api/js/ejlistbox#members:fields)
 
-* [toolTipText](http://helpjs.syncfusion.com/js/api/ejlistbox#members:fields)
+* [toolTipText](http://helpjs.syncfusion.com/api/js/ejlistbox#members:fields)
 
-* [id](http://help.syncfusion.com/js/api/ejlistbox#members:fields)
+* [id](http://help.syncfusion.com/api/js/ejlistbox#members:fields)
 
-* [selectBy](http://help.syncfusion.com/js/api/ejlistbox#members:fields)
+* [selectBy](http://help.syncfusion.com/api/js/ejlistbox#members:fields)
 
-* [groupBy](http://help.syncfusion.com/js/api/ejlistbox#members:fields)
+* [groupBy](http://help.syncfusion.com/api/js/ejlistbox#members:fields)
 
-* [checkBy](http://help.syncfusion.com/js/api/ejlistbox#members:fields)
+* [checkBy](http://help.syncfusion.com/api/js/ejlistbox#members:fields)
 
-* [tableName](http://help.syncfusion.com/js/api/ejlistbox#members:fields)
+* [tableName](http://help.syncfusion.com/api/js/ejlistbox#members:fields)
 
-* [imageUrl](http://help.syncfusion.com/js/api/ejlistbox#members:fields)
+* [imageUrl](http://help.syncfusion.com/api/js/ejlistbox#members:fields)
 
-* [imageAttributes](http://help.syncfusion.com/js/api/ejlistbox#members:fields)
+* [imageAttributes](http://help.syncfusion.com/api/js/ejlistbox#members:fields)
 
-* [spriteCssClass](http://help.syncfusion.com/js/api/ejlistbox#members:fields)
+* [spriteCssClass](http://help.syncfusion.com/api/js/ejlistbox#members:fields)
 
-* [htmlAttributes](http://help.syncfusion.com/js/api/ejlistbox#members:fields)
+* [htmlAttributes](http://help.syncfusion.com/api/js/ejlistbox#members:fields)
 
 
 ## Local data
@@ -252,7 +252,7 @@ N> The “itemRequestCount” property will work only when “virtualScrollMode�
 
  In remote binding, the server might not return data sometimes due to various reasons. In such cases we need to handle the error properly. We can handle it using the “actionFailure” event. 
 
-{% seealso %} [actionComplete](http://help.syncfusion.com/js/api/ejlistbox#events:actioncomplete) and [actionSuccess](http://help.syncfusion.com/js/api/ejlistbox#events:actionsuccess) {% endseealso %}
+{% seealso %} [actionComplete](http://help.syncfusion.com/api/js/ejlistbox#events:actioncomplete) and [actionSuccess](http://help.syncfusion.com/api/js/ejlistbox#events:actionsuccess) {% endseealso %}
 
 
 

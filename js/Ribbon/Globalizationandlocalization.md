@@ -10,7 +10,7 @@ documentation: ug
 
 ## Localization
 
-The localization support allows to customize the display of text within the Ribbon in a user-specific culture and locale. The Ribbon control can be localized in specific culture using the common API [`locale`](http://help.syncfusion.com/js/api/ejribbon#members:locale) along with the collection of localized words defined for that culture using the ej.Ribbon.Locale [culture-code].Please find the table with list of properties and its value in locale object.
+The localization support allows to customize the display of text within the Ribbon in a user-specific culture and locale. The Ribbon control can be localized in specific culture using the common API [`locale`](http://help.syncfusion.com/api/js/ejribbon#members:locale) along with the collection of localized words defined for that culture using the ej.Ribbon.Locale [culture-code].Please find the table with list of properties and its value in locale object.
 
 <table>
 <tr>
@@ -118,7 +118,7 @@ For further information on – how to refer the required culture scripts into yo
 
 ## Right to Left - RTL
 
-By default, Ribbon render its content and layout from left to right. To customize Ribbon direction, you can change direction from LTR to RTL by using [`enableRTL`](http://help.syncfusion.com/js/api/ejribbon#members:enablertl) as true.
+By default, Ribbon render its content and layout from left to right. To customize Ribbon direction, you can change direction from LTR to RTL by using [`enableRTL`](http://help.syncfusion.com/api/js/ejribbon#members:enablertl) as true.
 
 {% highlight html %}
 

@@ -14,9 +14,9 @@ The Appointments can be exported as a whole collection or else a single appointm
 
 ### Single Appointment Exporting
 
-A single appointment can be exported by making use of its Id. You can achieve this functionality by making use of an [exportSchedule](/js/api/ejschedule#methods:exportschedule) method by passing the id of an appointment to export as one of its parameter. 
+A single appointment can be exported by making use of its Id. You can achieve this functionality by making use of an [exportSchedule](/api/js/ejschedule#methods:exportschedule) method by passing the id of an appointment to export as one of its parameter. 
 
-It can also be achieved in another way by enabling the context menu settings and then adding a custom menu option for export appointment functionality. When right clicked on an appointment, and **export Appointment** option is chosen, the exporting functionality can be handled through the [menuItemClick](/js/api/ejschedule#events:menuitemclick) event, within which the **exportSchedule** method should be defined with the following parameters,
+It can also be achieved in another way by enabling the context menu settings and then adding a custom menu option for export appointment functionality. When right clicked on an appointment, and **export Appointment** option is chosen, the exporting functionality can be handled through the [menuItemClick](/api/js/ejschedule#events:menuitemclick) event, within which the **exportSchedule** method should be defined with the following parameters,
 
 * Action name (to be called in the server-side)
 * Server Event (optional)
@@ -76,7 +76,7 @@ N> The Id value of the appointment passed in the above code example can be retri
 
 ### Exporting all Appointments
 
-To export the entire Scheduler appointments, the same [exportSchedule](/js/api/ejschedule#methods:exportschedule) method can be used without passing the id value to its parameter list. To achieve this, keep an individual button to export, and when it is clicked - the Scheduler can be allowed to export all the appointments.
+To export the entire Scheduler appointments, the same [exportSchedule](/api/js/ejschedule#methods:exportschedule) method can be used without passing the id value to its parameter list. To achieve this, keep an individual button to export, and when it is clicked - the Scheduler can be allowed to export all the appointments.
 
 The following code example depicts the way to export all the Scheduler appointments as a whole.
 
@@ -141,7 +141,7 @@ public void ExportToICS(FormCollection form)
 
 ## PDF Export
 
-Scheduler supports exporting it along with all its appointments in PDF format, for which the same [exportSchedule](/js/api/ejschedule#methods:exportschedule) method can be used without passing any id value to its parameter list. To achieve this, keep an individual button to export and when it is clicked, the Scheduler with appointments can be allowed to export as PDF.
+Scheduler supports exporting it along with all its appointments in PDF format, for which the same [exportSchedule](/api/js/ejschedule#methods:exportschedule) method can be used without passing any id value to its parameter list. To achieve this, keep an individual button to export and when it is clicked, the Scheduler with appointments can be allowed to export as PDF.
 
 The following code example depicts the way to export the Scheduler with appointments in PDF format.
 
@@ -370,7 +370,7 @@ It is also possible to pass both the `PageSettings` and header/footer template o
 
 ## Print
 
-Two types of Print options are available – either to print the entire Scheduler layout including all the appointments in it or else to print any particular appointment alone. The public method [print](/js/api/ejschedule#methods:print) is used to print the entire Scheduler.
+Two types of Print options are available – either to print the entire Scheduler layout including all the appointments in it or else to print any particular appointment alone. The public method [print](/api/js/ejschedule#methods:print) is used to print the entire Scheduler.
 
 ### Print the Scheduler
 
@@ -417,7 +417,7 @@ function onClick(args) {
 
 ### Printing Specific Appointments
 
-To print a particular appointment, either the default context menu **print** option can be used or else the [print](/js/api/ejschedule#methods:print) method can be used by passing the id of the appointment to be printed as its argument. 
+To print a particular appointment, either the default context menu **print** option can be used or else the [print](/api/js/ejschedule#methods:print) method can be used by passing the id of the appointment to be printed as its argument. 
 
 #### Using Context Menu
 
@@ -470,7 +470,7 @@ $(function() {
 
 The public method `print` needs to be used here by passing the appointment object as its argument, that needs to be printed.
 
-For example, here the below code example depicts the way to print the particular appointment programmatically by calling the **print** function within the [appointmentClick](/js/api/ejschedule#events:appointmentclick) event, which triggers whenever the user clicks on an appointment.
+For example, here the below code example depicts the way to print the particular appointment programmatically by calling the **print** function within the [appointmentClick](/api/js/ejschedule#events:appointmentclick) event, which triggers whenever the user clicks on an appointment.
 
 {% highlight html %}
 

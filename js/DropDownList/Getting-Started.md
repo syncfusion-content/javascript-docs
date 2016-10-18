@@ -137,7 +137,7 @@ The DropDownList can be created from a HTML ‘select’ element with the HTML '
 
 ## Populating data
 
-The DropDownList can be bounded to both local array and remote data services using [ej.DataManager](http://help.syncfusion.com/js/datamanager/overview). You can use [DataManager](http://help.syncfusion.com/js/datamanager/overview) component to serve data from the data services based on the query provided. To bind data to DropDownList widget, the [dataSource](http://help.syncfusion.com/js/api/ejdropdownlist#members:datasource) property should be assigned with the instance of 'ej.DataManager'.
+The DropDownList can be bounded to both local array and remote data services using [ej.DataManager](http://help.syncfusion.com/js/datamanager/overview). You can use [DataManager](http://help.syncfusion.com/js/datamanager/overview) component to serve data from the data services based on the query provided. To bind data to DropDownList widget, the [dataSource](http://help.syncfusion.com/api/js/ejdropdownlist#members:datasource) property should be assigned with the instance of 'ej.DataManager'.
  
 N> ODataAdaptor is the default adaptor for DataManager. On binding to other web services, proper [data adaptor](http://help.syncfusion.com/js/datamanager/data-adaptors) needs to be set on 'adaptor' option of DataManager. 
 	
@@ -239,7 +239,7 @@ PopupWidth and popupHeight can be used to create a fixed size popup list.
 	
 ## Setting and Getting Value
 
-You can select single or multiple values from DropDownList widget. To assign a value initially to the DropDownList, you can use [value](http://help.syncfusion.com/js/api/ejdropdownlist#members:value) property.
+You can select single or multiple values from DropDownList widget. To assign a value initially to the DropDownList, you can use [value](http://help.syncfusion.com/api/js/ejdropdownlist#members:value) property.
 
 N> To select multiple items based on index, refer [here](functionalities#selection).
 
