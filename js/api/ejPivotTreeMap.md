@@ -34,7 +34,7 @@ The PivotTreemap is a lightweight control that reads OLAP information and visual
 
 #### Requires
 
-* module:jQuery-1.10.2.min.js
+* module:jQuery-3.0.0.min.js
 * module:ej.core.js
 * module:ej.data.js
 * module:ej.touch.js
@@ -72,43 +72,53 @@ Initializes the data source for the PivotTreeMap widget, when it functions compl
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotTreeMap1").ejPivotTreeMap({dataSource: {data:value}});
-
+    $("#PivotTreeMap1").ejPivotTreeMap( { dataSource: { data: value } });
 {% endhighlight %}
 
+### dataSource.cube `string`
+{:#members:datasource-cube}
 
-### dataSource.catalog `string`
-{:#members:datasource-catalog}
-
-Contains the database name as string type to fetch the data from the given connection string.
+Contains the respective cube name from OLAP database as string type.
 
 #### Default Value: “”
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotTreeMap1").ejPivotTreeMap({dataSource: {catalog: value}});
-
+    $("#PivotTreeMap1").ejPivotTreeMap({ dataSource: { cube: "Adventure Works" } });
 {% endhighlight %}
 
+### dataSource.catalog `string`
+{:#members:datasource-catalog}
+
+In connection with an OLAP database, this property contains the database name as string to fetch the data from the given connection string.
+
+#### Default Value: “”
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotTreeMap1").ejPivotTreeMap( { dataSource: { catalog: "databaseName" } } );
+{% endhighlight %}
 
 ### dataSource.columns `array`
 {:#members:datasource-columns}
 
-Lists out the items to be arranged in column section of PivotTreeMap.
+Lists out the items to be displayed as series of PivotTreeMap.
 
 #### Default Value: []
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotTreeMap1").ejPivotTreeMap({dataSource: {columns: itemsArray}});
-
+    $("#PivotTreeMap1").ejPivotTreeMap({ dataSource: { columns: itemsArray } });
 {% endhighlight %}
+
 
 ### dataSource.columns.fieldName `string`
 {:#members:datasource-columns-fieldname}
@@ -119,91 +129,67 @@ Allows the user to bind the item by using its unique name as field name.
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotTreeMap1").ejPivotTreeMap({dataSource: {columns: [{ fieldName : value}]}});
-
+    $("#PivotTreeMap1").ejPivotTreeMap({ dataSource: { columns: [{ fieldName : "HierarchyUniqueName" }] } });
 {% endhighlight %}
-
-
-### dataSource.columns.fieldCaption `string`
-{:#members:datasource-columns-fieldcaption}
-
-Allows the user to set the display name for an item.
-
-#### Default Value: ""
-
-**Example:**
-
-{% highlight html %}
- 
-$("#PivotTreeMap1").ejPivotTreeMap({dataSource: {columns: [{ fieldCaption : value}]}});
-
-{% endhighlight %}
-
 
 ### dataSource.columns.isNamedSets `boolean`
 {:#members:datasource-columns-isnamedsets}
 
-Allows the user to enable the usage of named set items in respective axis. This is only applicable for OLAP datasource.
+Allows the user to indicate whether the added item is a named set or not. 
 
 #### Default Value: false
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotTreeMap1").ejPivotTreeMap({dataSource: {columns: [{ isNamedSets : true}]}});
-
+    $("#PivotTreeMap1").ejPivotTreeMap({ dataSource: { columns: [{ fieldName: "[Core Product Group]", isNamedSets : true }] } });
 {% endhighlight %}
 
+### dataSource.columns.filterItems `object`
+{:#members:datasource-columns-filteritems}
 
-### dataSource.cube `string`
-{:#members:datasource-cube}
-
-Contains the respective Cube name from database as string type.
-
-#### Default Value: “”
-
-**Example:**
-
-{% highlight html %}
- 
-$("#PivotTreeMap1").ejPivotTreeMap({dataSource: {cube: value}});
-
-{% endhighlight %}
-
-
-### dataSource.data `object`
-{:#members:datasource-data}
-
-Provides the raw data source for the PivotTreeMap.
+Applies filter to the field members.
 
 #### Default Value: null
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotTreeMap1").ejPivotTreeMap({dataSource: {data: value}});
-
+    $("#PivotTreeMap1").ejPivotTreeMap({ dataSource: { columns: [{ fieldName: "[Customer].[Customer Geography]", filterItems : { filterType: ej.PivotAnalysis.FilterType.Exclude, values: ["Canada", "France"] } }] } });
 {% endhighlight %}
 
+### dataSource.columns.filterItems.values `array`
+{:#members:datasource-columns-filteritems-values}
 
-### dataSource.rows `array`
-{:#members:datasource-rows}
-
-Lists out the items to be arranged in row section of PivotTreeMap.
+Contains the collection of items to be excluded among the field members.
 
 #### Default Value: []
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotTreeMap1").ejPivotTreeMap({dataSource: {rows: itemsArray}});
-
+    $("#PivotTreeMap1").ejPivotTreeMap({ dataSource: { columns: [{ fieldName: "[Customer].[Customer Geography]", filterItems : { filterType: ej.PivotAnalysis.FilterType.Exclude, values: ["Canada", "France"] } }] } });
 {% endhighlight %}
+
+### dataSource.rows `array`
+{:#members:datasource-rows}
+
+Lists out the items to be displayed as segments of PivotTreeMap.
+
+#### Default Value: []
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotTreeMap1").ejPivotTreeMap({ dataSource: { rows: itemsArray } });
+{% endhighlight %}
+
 
 ### dataSource.rows.fieldName `string`
 {:#members:datasource-rows-fieldname}
@@ -214,136 +200,123 @@ Allows the user to bind the item by using its unique name as field name.
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotTreeMap1").ejPivotTreeMap({dataSource: {rows: [{ fieldName : value}]}});
-
+    $("#PivotTreeMap1").ejPivotTreeMap({ dataSource: { rows: [{ fieldName : "HierarchyUniqueName" }] } });
 {% endhighlight %}
-
-
-### dataSource.rows.fieldCaption `string`
-{:#members:datasource-rows-fieldcaption}
-
-Allows the user to set the display name for an item.
-
-#### Default Value: ""
-
-**Example:**
-
-{% highlight html %}
- 
-$("#PivotTreeMap1").ejPivotTreeMap({dataSource: {rows: [{ fieldCaption : value}]}});
-
-{% endhighlight %}
-
 
 ### dataSource.rows.isNamedSets `boolean`
 {:#members:datasource-rows-isnamedsets}
 
-Allows the user to enable the usage of named set items in respective axis. This is only applicable for OLAP datasource.
+Allows the user to indicate whether the added item is a named set or not. 
 
 #### Default Value: false
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotTreeMap1").ejPivotTreeMap({dataSource: {rows: [{ isNamedSets : true}]}});
-
+    $("#PivotTreeMap1").ejPivotTreeMap({ dataSource: { rows: [{ fieldName: "[Core Product Group]", isNamedSets : true }] } });
 {% endhighlight %}
 
+### dataSource.rows.filterItems `object`
+{:#members:datasource-rows-filteritems}
+
+Applies filter to the field members.
+
+#### Default Value: null
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotTreeMap1").ejPivotTreeMap({ dataSource: { rows: [{ fieldName: "[Customer].[Customer Geography]", filterItems : { filterType: ej.PivotAnalysis.FilterType.Exclude, values: ["Canada", "France"] } }] } });
+{% endhighlight %}
+
+### dataSource.rows.filterItems.values `array`
+{:#members:datasource-rows-filteritems-values}
+
+Contains the collection of items to be excluded among the field members.
+
+#### Default Value: []
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotTreeMap1").ejPivotTreeMap({ dataSource: { rows: [{ fieldName: "[Customer].[Customer Geography]", filterItems : { filterType: ej.PivotAnalysis.FilterType.Exclude, values: ["Canada", "France"] } }] } });
+{% endhighlight %}
 
 ### dataSource.values `array`
 {:#members:datasource-values}
 
-Lists out the items which supports calculation in PivotTreeMap.
+Lists out the items supports calculation in PivotTreeMap.
 
 #### Default Value: []
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotTreeMap1").ejPivotTreeMap({dataSource: {values: itemsArray}});
-
+    $("#PivotTreeMap1").ejPivotTreeMap({ dataSource: { values: itemsArray } });
 {% endhighlight %}
 
 ### dataSource.values.measures `array`
-{:#members:datasource-values[0]-measures}
+{:#members:datasource-values-measures}
 
-This holds the measures unique name to bind them from the Cube.
+This holds the list of unique names of measures to bind them from the OLAP cube.
 
 #### Default Value: []
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotTreeMap1").ejPivotTreeMap({dataSource: {values: [{measures : itemsArray}]}});
+    $("#PivotTreeMap1").ejPivotTreeMap({ dataSource: { values: [{ measures : itemsArray }] } });
+{% endhighlight %}
 
+### dataSource.values.measures.fieldName `string`
+{:#members:datasource-values-measures-fieldName}
+
+Allows the user to bind the measure from OLAP datasource by using its unique name as field name.
+
+#### Default Value: ""
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotTreeMap1").ejPivotTreeMap({ dataSource: { values: [{ measures : [{ fieldName: "MeasureUniqueName" }] }] } });
 {% endhighlight %}
 
 ### dataSource.values.axis `string`
-{:#members:datasource-values[0]-axis}
+{:#members:datasource-values-axis}
 
 Allows to set the axis name to place the measures items.
 
-#### Default Value: “”
+#### Default Value: "rows"
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotTreeMap1").ejPivotTreeMap({dataSource: {values: [{axis : value}]}});
-
+    $("#PivotTreeMap1").ejPivotTreeMap({ dataSource: { values: [{ axis : ej.olap.AxisName.Row }] } });
 {% endhighlight %}
-
-### dataSource.values.fieldName `string`
-{:#members:datasource-values[0]-fieldname}
-
-Allows the user to bind the item by using its unique name as field name.
-
-#### Default Value: ""
-
-**Example:**
-
-{% highlight html %}
- 
-$("#PivotTreeMap1").ejPivotTreeMap({dataSource: {values: [{ fieldName : value}]}});
-
-{% endhighlight %}
-
-
-### dataSource.values.fieldCaption `string`
-{:#members:datasource-values[0]-fieldcaption}
-
-Allows the user to set the display name for an item.
-
-#### Default Value: ""
-
-**Example:**
-
-{% highlight html %}
- 
-$("#PivotTreeMap1").ejPivotTreeMap({dataSource: {values: [{ fieldCaption : value}]}});
-
-{% endhighlight %}
-
 
 ### dataSource.filters `array`
 {:#members:datasource-filters}
 
-Lists out the items which supports filtering of values in PivotTreeMap.
+Lists out the items which supports filtering of values without displaying the members in UI in PivotTreeMap.
 
 #### Default Value: []
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotTreeMap1").ejPivotTreeMap({dataSource: {filters: itemsArray}});
-
+    $("#PivotTreeMap1").ejPivotTreeMap({ dataSource: { filters: itemsArray } });
 {% endhighlight %}
+
 
 ### dataSource.filters.fieldName `string`
 {:#members:datasource-filters-fieldname}
@@ -354,44 +327,38 @@ Allows the user to bind the item by using its unique name as field name.
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotTreeMap1").ejPivotTreeMap({dataSource: {filters: [{ fieldName : value}]}});
-
+    $("#PivotTreeMap1").ejPivotTreeMap({ dataSource: { filters: [{ fieldName : "HierarchyUniqueName" }] } });
 {% endhighlight %}
 
+### dataSource.filters.filterItems `object`
+{:#members:datasource-filters-filteritems}
 
-### dataSource.filters.fieldCaption `string`
-{:#members:datasource-filters-fieldcaption}
+Applies filter to the field members.
 
-Allows the user to set the display name for an item.
-
-#### Default Value: ""
+#### Default Value: null
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotTreeMap1").ejPivotTreeMap({dataSource: {filters: [{ fieldCaption : value}]}});
-
+    $("#PivotTreeMap1").ejPivotTreeMap({ dataSource: { filters: [{ fieldName: "[Customer].[Customer Geography]", filterItems : { filterType: ej.PivotAnalysis.FilterType.Exclude, values: ["Canada", "France"] } }] } });
 {% endhighlight %}
 
+### dataSource.filters.filterItems.values `array`
+{:#members:datasource-filters-filteritems-values}
 
-### dataSource.filters.isNamedSets `boolean`
-{:#members:datasource-filters-isnamedsets}
+Contains the collection of items to be excluded among the field members.
 
-Allows the user to enable the usage of named set items in respective axis. This is only applicable for OLAP datasource.
-
-#### Default Value: false
+#### Default Value: []
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotTreeMap1").ejPivotTreeMap({dataSource: {filters: [{ isNamedSets : true}]}});
-
+    $("#PivotTreeMap1").ejPivotTreeMap({ dataSource: { filters: [{ fieldName: "[Customer].[Customer Geography]", filterItems : { filterType: ej.PivotAnalysis.FilterType.Exclude, values: ["Canada", "France"] } }] } });
 {% endhighlight %}
-
 
 ### customObject `object`
 {:#members:customobject}
@@ -436,10 +403,31 @@ Allows the user to set the localized language for the widget.
     $("#PivotTreeMap1").ejPivotTreeMap({ locale: "fr-FR" }); 
 {% endhighlight %}
 
-### operationalMode `object`
+### operationalMode `enum`
 {:#members:operationalmode}
 
+<ts ref = "ej.Pivot.OperationalMode"/>
+
 Sets the mode for the PivotTreeMap widget for binding data source either in server-side or client-side.
+
+<table class="params">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">ClientMode</td>
+            <td class="description">To bind data source completely from client-side.</td>
+        </tr>
+        <tr>
+            <td class="name">ServerMode</td>
+            <td class="description">To bind data source completely from server-side.</td>
+        </tr>
+    </tbody>
+</table>
 
 #### Default Value: ej.Pivot.OperationalMode.ClientMode
 
@@ -505,7 +493,7 @@ Connects the service using the specified URL for any server updates.
 
 {% highlight javascript %}
  
-    $("#PivotTreeMap1").ejPivotTreeMap({ url: "/PivotTreeMapService.svc" });
+    $("#PivotTreeMap1").ejPivotTreeMap({ url: "/PivotTreeMapService" });
 {% endhighlight %}
 
 
@@ -522,19 +510,6 @@ Performs an asynchronous HTTP (AJAX) request.
  
     var treemapObj = $("#PivotTreeMap1").data("ejPivotTreeMap");
     treemapObj.doAjaxPost("POST", "/PivotTreeMapService.svc/Initialize", { "key", "Hello World" }, successEvent, null);
-{% endhighlight %}
-
-### doPostBack()
-{:#methods:dopostback}
-
-Performs an asynchronous HTTP (FullPost) submit.
-
-**Example:**
-
-{% highlight javascript %}
-
-    var treemapObj = $("#PivotTreeMap1").data("ejPivotTreeMap");
-    treemapObj.doPostBack("/PivotTreeMapService.svc/Initialize", { "key", "Hello World" });
 {% endhighlight %}
 
 ### getOlapReport()
@@ -596,7 +571,7 @@ Sets the JSON records to render the control.
 ### generateJSON()
 {:#methods:generatejson}
 
-Renders the control with the pivot engine obtained from OLAP base source.
+Renders the control with the pivot engine obtained from olap cube.
 
 **Example:**
 
@@ -629,7 +604,7 @@ This function receives the update from service-end, which would be utilized for 
 {% highlight javascript %}
  
     var treeMapObj = $("#PivotTreeMap1").data("ejPivotTreeMap");
-    treeMapObj.renderControlSuccess({"OlapReport": this.getOlapReport(), "JsonRecords": this.getJSONRecords()});
+    treeMapObj.renderControlSuccess({ "OlapReport": this.getOlapReport(), "JsonRecords": this.getJSONRecords() });
 {% endhighlight %}
 
 

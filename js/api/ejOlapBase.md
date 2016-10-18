@@ -11,19 +11,16 @@ metacontent:
 # OlapBase
 <ts  isFrameWork="true" />
 
-Support has been provided in PivotGrid to load OLAP Cube information at client-side directly through XML/A. 
-
 #### Requires
 
-* module:jQuery-1.10.2.min.js
-* module:jQuery.easing.1.3.min.js
+* module:jQuery-3.0.0.min.js
 * module:ej.core.js
 * module:ej.data.js
 * module:ej.touch.js
 * module:ej.waitingpopup.js
 * module:ej.pivotgrid.js
 * module:ej.pivotpager.js
-* module: ej.olap.base.js
+* module:ej.olap.base.js
 
 
 ## Methods
@@ -33,3 +30,10 @@ Support has been provided in PivotGrid to load OLAP Cube information at client-s
 
 This function gets the datasource, action and grid layout for rendering the PivotGrid.
 
+**Example:**
+
+{% highlight javascript %}
+
+    var args = controlInfo;//contains the information about the action performed
+    ej.olap.getJSONData(args, dataSource, controlObj);
+{% endhighlight %}

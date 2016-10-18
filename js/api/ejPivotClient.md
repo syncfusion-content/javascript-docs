@@ -105,7 +105,7 @@ Sets the mode for the PivotClient widget for binding either OLAP or Relational d
 ### chartType `enum`
 {:#members:charttype}
 
-<ts name = "ej.PivotChart.ChartTypes"/>
+<ts ref = "ej.PivotChart.ChartTypes"/>
 
 Allows the user to set the specific chart type for PivotChart inside PivotClient widget.
 
@@ -348,7 +348,7 @@ Allows the user to provide level unique name to perform advanced filtering.
 
 {% highlight javascript %}
  
-    $("#PivotClient1").ejPivotClient({ dataSource: { columns: [{ advancedFilter : [{ name: "dimensionUniqueName" }] }] } });
+    $("#PivotClient1").ejPivotClient({ dataSource: { columns: [{ advancedFilter : [{ name: "levelUniqueName" }] }] } });
 {% endhighlight %}
 
 ### dataSource.columns.advancedFilter.labelFilterOperator `string`
@@ -445,7 +445,9 @@ Allows the user to indicate whether the added item is a named set or not.
 ### dataSource.columns.showSubTotal `boolean`
 {:#members:datasource-columns-showsubtotal}
 
-Shows/Hides the sub-total of the field in PivotGrid 
+Shows/Hides the sub-total of the field in PivotGrid.
+
+>**Note**: This is applicable only for Relational datasource.
 
 #### Default Value: true
 
@@ -459,7 +461,7 @@ Shows/Hides the sub-total of the field in PivotGrid
 ### dataSource.columns.sortOrder `enum`
 {:#members:datasource-columns-sortorder}
 
-<ts name = "ej.PivotAnalysis.SortOrder"/>
+<ts ref = "ej.PivotAnalysis.SortOrder"/>
 
 Allows the user to set the sorting order of the members of the field.
 
@@ -528,7 +530,7 @@ Applies filter to the field members.
 ### dataSource.columns.filterItems.filterType `enum`
 {:#members:datasource-columns-filteritems-filtertype}
 
-<ts name = "ej.PivotAnalysis.FilterType"/>
+<ts ref = "ej.PivotAnalysis.FilterType"/>
 
 Sets the type of filter whether to include/exclude the mentioned values.
 
@@ -644,7 +646,7 @@ Allows the user to provide level unique name to perform advanced filtering.
 
 {% highlight javascript %}
  
-    $("#PivotClient1").ejPivotClient({ dataSource: { rows: [{ advancedFilter : [{ name: "dimensionUniqueName" }] }] } });
+    $("#PivotClient1").ejPivotClient({ dataSource: { rows: [{ advancedFilter : [{ name: "levelUniqueName" }] }] } });
 {% endhighlight %}
 
 ### dataSource.rows.advancedFilter.labelFilterOperator `string`
@@ -743,6 +745,8 @@ Allows the user to indicate whether the added item is a named set or not.
 
 Shows/Hides the sub-total of the field. 
 
+>**Note**: This is applicable only for Relational datasource.
+
 #### Default Value: true
 
 **Example:**
@@ -755,7 +759,7 @@ Shows/Hides the sub-total of the field.
 ### dataSource.rows.sortOrder `enum`
 {:#members:datasource-rows-sortorder}
 
-<ts name = "ej.PivotAnalysis.SortOrder"/>
+<ts ref = "ej.PivotAnalysis.SortOrder"/>
 
 Allows the user to set the sorting order of the members of the field.
 
@@ -824,7 +828,7 @@ Applies filter to the field members.
 ### dataSource.rows.filterItems.filterType `enum`
 {:#members:datasource-rows-filteritems-filtertype}
 
-<ts name = "ej.PivotAnalysis.FilterType"/>
+<ts ref = "ej.PivotAnalysis.FilterType"/>
 
 Sets the type of filter whether to include/exclude the mentioned values.
 
@@ -891,6 +895,8 @@ Lists out the items which supports calculation in PivotClient.
 
 Allows the user to bind the item by using its unique name as field name for Relational datasource.
 
+>**Note**: This is applicable only for Relational datasource.
+
 #### Default Value: ""
 
 **Example:**
@@ -900,10 +906,12 @@ Allows the user to bind the item by using its unique name as field name for Rela
     $("#PivotClient1").ejPivotClient({ dataSource: { values: [{ fieldName : "MyFieldName" }] } });
 {% endhighlight %}
 
-### dataSource.values.fieldCaption `string`
+### dataSource.values.fielCaption `string`
 {:#members:datasource-values-fieldcaption}
 
 Allows the user to set the display caption for an item for Relational datasource.
+
+>**Note**: This is applicable only for Relational datasource.
 
 #### Default Value: ""
 
@@ -975,7 +983,7 @@ Indicates whether the field is a calculated field or not with Relational datasou
 ### dataSource.values.summaryType `enum`
 {:#members:datasource-values-summarytype}
 
-<ts name = "ej.PivotAnalysis.SummaryType"/>
+<ts ref = "ej.PivotAnalysis.SummaryType"/>
 
 Allows to set the type of PivotGrid summary calculation for the value field with Relational datasource.
 
@@ -1123,7 +1131,7 @@ Applies filter to the field members.
 ### dataSource.filters.filterItems.filterType `enum`
 {:#members:datasource-filters-filteritems-filtertype}
 
-<ts name = "ej.PivotAnalysis.FilterType"/>
+<ts ref = "ej.PivotAnalysis.FilterType"/>
 
 Sets the type of filter whether to include/exclude the mentioned values.
 
@@ -1189,7 +1197,7 @@ Contains the respective cube name from OLAP database as string type.
 ### dataSource.data `object`
 {:#members:datasource-data}
 
-Provides the raw data source for the PivotClient.
+Provides the raw data source for the PivotClient for Relational mode.
 
 #### Default Value: null
 
@@ -2267,7 +2275,7 @@ Triggers before saving the current collection of reports.
 <tr>
 <td class="name">saveReportSetting</td>
 <td class="type">object</td>
-<td class="description last">returns the object which holds the necessary parameters required for saving the report collection.</td>
+<td class="description last">returns the object which holds the necessary parameteres required for saving the report collection.</td>
 </tr>
 </tbody>
 </table>
@@ -2306,7 +2314,7 @@ Triggers before loading a saved collection of reports.
 <tr>
 <td class="name">loadReportSetting</td>
 <td class="type">object</td>
-<td class="description last">returns the object which holds the necessary parameters required for loading a report collection from database.</td>
+<td class="description last">returns the object which holds the necessary parameteres required for loading a report collection from database.</td>
 </tr>
 </tbody>
 </table>
@@ -2346,7 +2354,7 @@ Triggers before fetching the report collection from storage.
 <tr>
 <td class="name">fetchReportSetting</td>
 <td class="type">object</td>
-<td class="description last">returns the object which holds the necessary parameters required for fetching the report names stored in database.</td>
+<td class="description last">returns the object which holds the necessary parameteres required for fetching the report names stored in database.</td>
 </tr>
 </tbody>
 </table>
