@@ -1452,7 +1452,7 @@ $("#PivotGrid1").ejPivotGrid({ serviceMethodSettings: { cellEditing: "MyCellEdit
 ### serviceMethodSettings.saveReport `string`
 {:#members:servicemethodsettings-savereport}
 
-Allows the user to set the custom name for the service method responsible for saving the current report to data base.
+Allows the user to set the custom name for the service method responsible for saving the current report to database.
 
 #### Default Value: "SaveReport"
 
@@ -1467,7 +1467,7 @@ $("#PivotGrid1").ejPivotGrid({ serviceMethodSettings: { saveReport: "MySaveRepor
 ### serviceMethodSettings.loadReport `string`
 {:#members:servicemethodsettings-loadreport}
 
-Allows the user to set the custom name for the service method responsible for loading a report from data base.
+Allows the user to set the custom name for the service method responsible for loading a report from database.
 
 #### Default Value: "LoadReportFromDB"
 
@@ -1702,8 +1702,8 @@ This function saves the current report to the database/local storage.
 {% highlight html %}
 
 var gridObj = $("#PivotGrid1").data("ejPivotGrid");
-var storageOption = "local"; //it takes the string value "local" for local storage and "database" for storing to data base.
-var url = "";//it takes the service url for storing to data base. For local it is not required.
+var storageOption = "local"; //it takes the string value "local" for local storage and "database" for storing to database.
+var url = "";//it takes the service url for storing to database. For local it is not required.
 gridObj.saveReport("reportName", storageOption, url);
 
 {% endhighlight %}
@@ -1718,8 +1718,8 @@ This function loads the specified report from the database/local storage.
 {% highlight html %}
 
 var gridObj = $("#PivotGrid1").data("ejPivotGrid");
-var storageOption = "local"; //it takes the string value "local" for loading a report from local storage and "database" for loading from data base.
-var url = "";//it takes the service method url for loading report from data base. For local it is not required.
+var storageOption = "local"; //it takes the string value "local" for loading a report from local storage and "database" for loading from database.
+var url = "";//it takes the service method url for loading report from database. For local it is not required.
 gridObj.loadReport("reportName", storageOption, url);
 
 {% endhighlight %}
@@ -2714,7 +2714,7 @@ Triggers when the hyperlink of value cell is clicked.
 ### saveReport
 {:#events:saveReport}
 
-Triggers before saving the current report to data base.
+Triggers before saving the current report to database.
 
 <table class="params">
 <thead>
@@ -2733,7 +2733,7 @@ Triggers before saving the current report to data base.
 <tr>
 <td class="name">report</td>
 <td class="type">object</td>
-<td class="description last">returns the report to be stored in data base.</td>
+<td class="description last">returns the report to be stored in database.</td>
 </tr>
 </tbody>
 </table>
@@ -2751,7 +2751,7 @@ $("#PivotGrid1").ejPivotGrid({
 ### loadReport
 {:#events:loadReport}
 
-Triggers before loading a report from data base.
+Triggers before loading a report from database.
 
 <table class="params">
 <thead>

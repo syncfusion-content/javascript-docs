@@ -596,7 +596,7 @@ Sets the JSON records to render the control.
 ### generateJSON()
 {:#methods:generatejson}
 
-Renders the control with the pivot engine obtained from olap base source.
+Renders the control with the pivot engine obtained from OLAP base source.
 
 **Example:**
 
