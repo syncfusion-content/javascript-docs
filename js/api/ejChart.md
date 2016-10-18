@@ -7767,7 +7767,7 @@ Options for displaying and customizing the crosshair.
 ### crosshair.trackballTooltipSettings `object`
 {:#members:crosshair-trackballtooltipsettings}
 
-Options for customizing the trackabll tooltip.
+Options for customizing the trackball tooltip.
 
 ### crosshair.trackballTooltipSettings.border `object`
 {:#members:crosshair-trackballtooltipsettings-border}
