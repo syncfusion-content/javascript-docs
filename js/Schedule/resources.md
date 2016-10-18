@@ -14,7 +14,7 @@ One or more resources can be assigned to the Scheduler appointments by making se
 
 ## Fields of Resources
 
-The default options available within the [resources](/js/api/ejschedule#members:resources) collection are as follows,
+The default options available within the [resources](/api/js/ejschedule#members:resources) collection are as follows,
 
 ### name (**String**)
 
@@ -482,9 +482,9 @@ N> Here, the appointments will make use of the **color** defined for the Owners 
 
 It is possible to assign different workdays and workhours for each resources present within the Scheduler. The process of assigning different working days for every individual resources is applicable only for the vertical Scheduler mode and not for timeline view, whereas the customization of workhours for each resources is applicable on both the Scheduler orientation.  The custom workdays and workhours needs to be defined within the `resourceSettings` property using the following 3 sub-properties available within it.
 
-* [start](/js/api/ejschedule#members:resources-resourcesettings-start) is used to define the work start hour for each individual resources.
-* [end](/js/api/ejschedule#members:resources-resourcesettings-end) is used to define the work end hour for each individual resources.
-* [workWeek](/js/api/ejschedule#members:resources-resourcesettings-workWeek) is used to define different working days for each individual resources.
+* [start](/api/js/ejschedule#members:resources-resourcesettings-start) is used to define the work start hour for each individual resources.
+* [end](/api/js/ejschedule#members:resources-resourcesettings-end) is used to define the work end hour for each individual resources.
+* [workWeek](/api/js/ejschedule#members:resources-resourcesettings-workWeek) is used to define different working days for each individual resources.
 
 **Example**: To display the Scheduler with each individual resources having different workhours and workdays, the code example is depicted below.
 

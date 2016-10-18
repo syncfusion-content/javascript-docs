@@ -16,7 +16,7 @@ documentation: ug
 
 To import an excel file in Spreadsheet by using import service.
 
-N> [`allowImport`](http://help.syncfusion.com/js/api/ejspreadsheet#members:allowimport "allowImport") must be true.
+N> [`allowImport`](http://help.syncfusion.com/api/js/ejspreadsheet#members:allowimport "allowImport") must be true.
 
 ### URL
 
@@ -81,7 +81,7 @@ The following exporting options are available in Spreadsheet.
 *	CSV Export
 *	PDF Export
 
-N> [`allowExporting`](http://help.syncfusion.com/js/api/ejspreadsheet#members:exportsettings-allowexporting "allowExporting") must be true.
+N> [`allowExporting`](http://help.syncfusion.com/api/js/ejspreadsheet#members:exportsettings-allowexporting "allowExporting") must be true.
 
 ## Excel Export
 

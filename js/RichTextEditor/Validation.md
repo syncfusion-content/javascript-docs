@@ -10,7 +10,7 @@ keywords: RichTextEditor, Validation, Validation Rules, Validation Messages
 
 # Validation 
 
-You can validate the RichTextEditor’s value on form submission by applying [validationRules](http://help.syncfusion.com/js/api/ejrte#members:validationrules) and [validationMessage](http://help.syncfusion.com/js/api/ejrte#members:validationmessage) to the RichTextEditor.
+You can validate the RichTextEditor’s value on form submission by applying [validationRules](http://help.syncfusion.com/api/js/ejrte#members:validationrules) and [validationMessage](http://help.syncfusion.com/api/js/ejrte#members:validationmessage) to the RichTextEditor.
 
 N> [jquery.validate.min](http://cdn.syncfusion.com/js/assets/external/jquery.validate.min.js) script file should be referred for validation, for more details, refer [here](http://jqueryvalidation.org/documentation).
 
@@ -45,12 +45,12 @@ maxlength</td><td>
 
 ## Validation Rules
 
-The validation rules help you to verify the content by adding validation attributes to the text area. This can be set by using [validationRules](http://help.syncfusion.com/js/api/ejrte#members:validationrules) property.
+The validation rules help you to verify the content by adding validation attributes to the text area. This can be set by using [validationRules](http://help.syncfusion.com/api/js/ejrte#members:validationrules) property.
 
 
 ## Validation Messages 
 
-You can set your own custom error message by using [validationMessage](http://help.syncfusion.com/js/api/ejrte#members:validationmessage) property. To display the error message, specify the corresponding annotation attribute followed by the message to display.
+You can set your own custom error message by using [validationMessage](http://help.syncfusion.com/api/js/ejrte#members:validationmessage) property. To display the error message, specify the corresponding annotation attribute followed by the message to display.
 
 
 N> jQuery predefined error messages to that annotation attribute will be shown when this property is not defined. The below given example explain this behavior of ‘maxLength’ attribute,

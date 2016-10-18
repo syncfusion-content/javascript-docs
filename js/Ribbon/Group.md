@@ -9,30 +9,30 @@ keywords: group,ribbon group
 
 # Group
 
-[`Group`](http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups) is a collection of logical content groups that are combined under related Tab. Each group can be defined using content groups or custom content.
+[`Group`](http://help.syncfusion.com/api/js/ejribbon#members:tabs-groups) is a collection of logical content groups that are combined under related Tab. Each group can be defined using content groups or custom content.
 
 ## Adding Tab Groups
 
-Group items can be added to Tabs by specifying [`text`](http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-text) and corresponding [`content`](http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-content) to be displayed. The content of group can be specified as either with [`content`](http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-content) collection, [`contentID`](http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-contentid) or [`customContent`](http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-customcontent).
+Group items can be added to Tabs by specifying [`text`](http://help.syncfusion.com/api/js/ejribbon#members:tabs-groups-text) and corresponding [`content`](http://help.syncfusion.com/api/js/ejribbon#members:tabs-groups-content) to be displayed. The content of group can be specified as either with [`content`](http://help.syncfusion.com/api/js/ejribbon#members:tabs-groups-content) collection, [`contentID`](http://help.syncfusion.com/api/js/ejribbon#members:tabs-groups-contentid) or [`customContent`](http://help.syncfusion.com/api/js/ejribbon#members:tabs-groups-customcontent).
 
 ### Adding Content
 
-Add content to Group item which is based on [`type`](http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-type) of content specified. The available types are `button`, `splitButton`, `toggleButton`,`gallery`, and `dropDownList`.
+Add content to Group item which is based on [`type`](http://help.syncfusion.com/api/js/ejribbon#members:tabs-groups-type) of content specified. The available types are `button`, `splitButton`, `toggleButton`,`gallery`, and `dropDownList`.
 
-Groups and defaults settings can be added with the [`content`](http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-content).
+Groups and defaults settings can be added with the [`content`](http://help.syncfusion.com/api/js/ejribbon#members:tabs-groups-content).
 
 #### _Defaults_
 
-The `height`, `width`, `type`, `isBig` property to the controls in the [`group`](http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-content-groups) can be specified commonly.
+The `height`, `width`, `type`, `isBig` property to the controls in the [`group`](http://help.syncfusion.com/api/js/ejribbon#members:tabs-groups-content-groups) can be specified commonly.
 The `height` & `width` applicable to button, split button, dropdown list ,Toggle button controls and `isBig` applicable to only button controls ( button, split , toggle)
 
 #### _Adding Content Groups_
 
-Controls such as button, split button, dropdown list, toggle button, gallery in the subgroup of the Ribbon tab can be rendered. All of these can be customized using its corresponding settings property such as [`buttonSettings`](http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-content-groups-buttonsettings), `dropdownSettings`, etc.
+Controls such as button, split button, dropdown list, toggle button, gallery in the subgroup of the Ribbon tab can be rendered. All of these can be customized using its corresponding settings property such as [`buttonSettings`](http://help.syncfusion.com/api/js/ejribbon#members:tabs-groups-content-groups-buttonsettings), `dropdownSettings`, etc.
 
-Custom controls or items (such as table, div etc.) can be added when the [`type`](http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-type) set as `custom`. [`defaults`](http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-content-defaults) control settings of group can be specified for an `individual group` instead of specifying them to groups collection commonly.
+Custom controls or items (such as table, div etc.) can be added when the [`type`](http://help.syncfusion.com/api/js/ejribbon#members:tabs-groups-type) set as `custom`. [`defaults`](http://help.syncfusion.com/api/js/ejribbon#members:tabs-groups-content-defaults) control settings of group can be specified for an `individual group` instead of specifying them to groups collection commonly.
 
-[`Tooltip`](http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-content-groups-tooltip) and [`Custom Tooltip`](http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-content-groups-customtooltip) can be specified for each group controls.
+[`Tooltip`](http://help.syncfusion.com/api/js/ejribbon#members:tabs-groups-content-groups-tooltip) and [`Custom Tooltip`](http://help.syncfusion.com/api/js/ejribbon#members:tabs-groups-content-groups-customtooltip) can be specified for each group controls.
 
 {% highlight html %}
 	
@@ -121,7 +121,7 @@ Custom controls or items (such as table, div etc.) can be added when the [`type`
 
 #### _Enable Separator_ 
 
-Separates the control from the next control in the group when group `alignType` is `row`. Set “true” to [`enableSeparator`](http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-content-groups-enableseparator).
+Separates the control from the next control in the group when group `alignType` is `row`. Set “true” to [`enableSeparator`](http://help.syncfusion.com/api/js/ejribbon#members:tabs-groups-content-groups-enableseparator).
 
 {% highlight html %}
 
@@ -187,10 +187,10 @@ Separates the control from the next control in the group when group `alignType` 
 
 ### Adding Custom Content 
 
-Set group [`type`](http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-type) as `custom` to add custom items such as div, table and custom controls. With type as custom, content can be added in two ways as specified below.
+Set group [`type`](http://help.syncfusion.com/api/js/ejribbon#members:tabs-groups-type) as `custom` to add custom items such as div, table and custom controls. With type as custom, content can be added in two ways as specified below.
 
-*	HTML contents can be directly added into the groups as string content using [`customContent`](http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-customcontent) property
-*	Custom template id can be specified to render those specific custom template using [`contentID`](http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-contentid) property
+*	HTML contents can be directly added into the groups as string content using [`customContent`](http://help.syncfusion.com/api/js/ejribbon#members:tabs-groups-customcontent) property
+*	Custom template id can be specified to render those specific custom template using [`contentID`](http://help.syncfusion.com/api/js/ejribbon#members:tabs-groups-contentid) property
 
 {% highlight html %}
 
@@ -234,7 +234,7 @@ Set group [`type`](http://help.syncfusion.com/js/api/ejribbon#members:tabs-group
 
 ## Group Expander
 
-Set [`enableGroupExpander`](http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-enablegroupexpander) as true to show Group Expander for each group in Tab. These expanders can be customized using [`groupExpand`](http://help.syncfusion.com/js/api/ejribbon#events:groupexpand) event, such as to show popup dialog.
+Set [`enableGroupExpander`](http://help.syncfusion.com/api/js/ejribbon#members:tabs-groups-enablegroupexpander) as true to show Group Expander for each group in Tab. These expanders can be customized using [`groupExpand`](http://help.syncfusion.com/api/js/ejribbon#events:groupexpand) event, such as to show popup dialog.
 
 {% highlight html %}
 

@@ -11,7 +11,7 @@ documentation: ug
 
 ## Localization in PivotChart
 
-We can localize the PivotChart controls text with a collection of localized strings using [`ej.PivotChart.Locale`](/js/api/ejpivotchart#members:locale) for different cultures. By default, the PivotChart control is localized in **“en-US”.**
+We can localize the PivotChart controls text with a collection of localized strings using [`ej.PivotChart.Locale`](/api/js/ejpivotchart#members:locale) for different cultures. By default, the PivotChart control is localized in **“en-US”.**
 
 Following code example illustrates on how to localize PivotChart based on **“French”** culture.
 

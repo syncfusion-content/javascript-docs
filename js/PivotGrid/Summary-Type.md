@@ -11,7 +11,7 @@ documentation: ug
 
 I> This feature is applicable only for Relational datasource only at Client Mode.
 
-Allow us to specify the required [`layout`](/js/api/ejpivotgrid#members:layout) that PivotGrid should use in its summary cells. “Sum” is the default summary type. Following summary types that are supported:
+Allow us to specify the required [`layout`](/api/js/ejpivotgrid#members:layout) that PivotGrid should use in its summary cells. “Sum” is the default summary type. Following summary types that are supported:
 
 * Sum
 * Average

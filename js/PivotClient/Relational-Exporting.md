@@ -13,9 +13,9 @@ Chart and Grid in the PivotClient widget can be exported to Excel, Word and PDF 
 
 ![](Export_images/exporting-icons.png) 
 
-Exporting feature provides an option that allows you to export either PivotChart or PivotGrid or both with the use of the property [`clientExportMode`](/js/api/ejpivotclient#enum:clientexportmode).
+Exporting feature provides an option that allows you to export either PivotChart or PivotGrid or both with the use of the property [`clientExportMode`](/api/js/ejpivotclient#enum:clientexportmode).
 
-The property [`clientExportMode`](/js/api/ejpivotclient#enum:clientexportmode) takes any one of the following value:
+The property [`clientExportMode`](/api/js/ejpivotclient#enum:clientexportmode) takes any one of the following value:
 
 * **ChartAndGrid** – Exports both PivotChart and PivotGrid controls. This is the default mode.
 * **ChartOnly** – Exports PivotChart control alone.

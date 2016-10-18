@@ -15,7 +15,7 @@ Formulas are used for calculation of data in sheet. You can set formula for a `c
 
 ### Initial Load
 
-You can set formula for a cell by specifying [`value`](https://help.syncfusion.com/js/api/ejspreadsheet#members:sheets-rows-cells-value "value") property in cell data binding. The following code example describes the above behavior,
+You can set formula for a cell by specifying [`value`](https://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-rows-cells-value "value") property in cell data binding. The following code example describes the above behavior,
 
 {% highlight html %}
 
@@ -52,7 +52,7 @@ The following output is displayed as a result of the above code example.
 
 ### Method
 
-You can set formula for a cell using [`updateCellValue`](https://help.syncfusion.com/js/api/ejspreadsheet#methods:xledit-updatecellvalue "updateCellValue") method. The following code example describes the above behavior,
+You can set formula for a cell using [`updateCellValue`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xledit-updatecellvalue "updateCellValue") method. The following code example describes the above behavior,
 
 {% highlight html %}
 
@@ -185,7 +185,7 @@ The following output is displayed as a result of the above code example.
 
 ### Method
 
-You can add named range to Spreadsheet with [`addNamedRange`](https://help.syncfusion.com/js/api/ejspreadsheet#methods:xlribbon-addnamedrange "addNamedRange") method and it can be removed with [`removeNamedRange`](https://help.syncfusion.com/js/api/ejspreadsheet#methods:xlribbon-removenamedrange "removeNamedRange") method. The following code example describes the [`addNamedRange`](https://help.syncfusion.com/js/api/ejspreadsheet#methods:xlribbon-addnamedrange "addNamedRange") behavior,
+You can add named range to Spreadsheet with [`addNamedRange`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlribbon-addnamedrange "addNamedRange") method and it can be removed with [`removeNamedRange`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlribbon-removenamedrange "removeNamedRange") method. The following code example describes the [`addNamedRange`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlribbon-addnamedrange "addNamedRange") behavior,
 
 {% highlight html %}
 
@@ -230,9 +230,9 @@ N> Defining name for cell reference or table will be accessible across all sheet
 
 ## Formula Bar
 
-Formula bar is used to edit or enter cell data in much easier way. To enable formula bar set [`allowFormulaBar`](https://help.syncfusion.com/js/api/ejspreadsheet#members:allowformulabar "allowFormulaBar") as `true`.
+Formula bar is used to edit or enter cell data in much easier way. To enable formula bar set [`allowFormulaBar`](https://help.syncfusion.com/api/js/ejspreadsheet#members:allowformulabar "allowFormulaBar") as `true`.
 
 ## Auto Sum
 
-To sum a row or column of numbers, select a cell next to the numbers you want to sum, click `AutoSum` on the `HOME` tab and press enter. To enable auto sum set [`allowAutoSum`](https://help.syncfusion.com/js/api/ejspreadsheet#members:allowautosum "allowAutoSum") API as `true`.
+To sum a row or column of numbers, select a cell next to the numbers you want to sum, click `AutoSum` on the `HOME` tab and press enter. To enable auto sum set [`allowAutoSum`](https://help.syncfusion.com/api/js/ejspreadsheet#members:allowautosum "allowAutoSum") API as `true`.
 The auto sum options in ribbon is used to perform basic operations like sum, average, count, minimum, maximum etc.

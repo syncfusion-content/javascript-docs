@@ -85,7 +85,7 @@ The ListBox widget allows selection through checkbox. It can be enabled using �
 
 The specified items can be checked on initialize through “checkedIndices” property. 
 
-{% seealso %} [checkedIndices](http://helpjs.syncfusion.com/js/api/ejlistbox#members:checkedindices). {% endseealso %}
+{% seealso %} [checkedIndices](http://helpjs.syncfusion.com/api/js/ejlistbox#members:checkedindices). {% endseealso %}
 
 {% highlight javascript %}
 

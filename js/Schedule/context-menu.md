@@ -10,7 +10,7 @@ keywords: context-menu
 
 Scheduler provides default context menu options for both appointments as well as work cells. It also allows to define additional custom context menu options.
 
-The options that are available under [contextMenuSettings](/js/api/ejschedule#members:contextmenusettings) are as follows,
+The options that are available under [contextMenuSettings](/api/js/ejschedule#members:contextmenusettings) are as follows,
 
 * **enable** - Enables/disables the context menu option in Scheduler.
 * **menuItems** - Contains the sub-menu collections related to both the appointment and cells.
@@ -204,7 +204,7 @@ N> The **id** given for the custom menu items **must be unique** in both the app
 
 ## Handling Menu Actions
 
-To define specific actions for a click made on the custom menu items, the client-side event [menuItemClick](/js/api/ejschedule#events:menuitemclick) can be used as depicted in the below code example.
+To define specific actions for a click made on the custom menu items, the client-side event [menuItemClick](/api/js/ejschedule#events:menuitemclick) can be used as depicted in the below code example.
 
 {% highlight html %}
 
@@ -250,7 +250,7 @@ $(function() {
 {% endhighlight %}
 
 
-Also, it is possible to predict the target on which the right click is made, either on the cells or appointments with the use of the event [beforeContextMenuOpen](/js/api/ejschedule#events:beforecontextmenuopen). The below code example shows how to block the display of context menu, when right clicked on the cells by setting **args.cancel** as **true**.
+Also, it is possible to predict the target on which the right click is made, either on the cells or appointments with the use of the event [beforeContextMenuOpen](/api/js/ejschedule#events:beforecontextmenuopen). The below code example shows how to block the display of context menu, when right clicked on the cells by setting **args.cancel** as **true**.
 
 {% highlight html %}
 
@@ -297,7 +297,7 @@ $(function() {
 
 ## Adding Categorize Option
 
-To include the default categorize option within the context menu, it is necessary to enable the [categorizeSettings](/js/api/ejschedule#members:categorizesettings) property as shown in the below code example.
+To include the default categorize option within the context menu, it is necessary to enable the [categorizeSettings](/api/js/ejschedule#members:categorizesettings) property as shown in the below code example.
 
 {% highlight html %}
 

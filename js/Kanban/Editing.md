@@ -11,19 +11,19 @@ keywords: editing,kanban editing
 
 The Kanban control has support for dynamic insertion, updating and deletion of cards. 
 
-Set [`allowEditing`](https://help.syncfusion.com/js/api/ejkanban#members:editsettings-allowediting) and [`allowAdding`](https://help.syncfusion.com/js/api/ejkanban#members:editsettings-allowadding) property as true to enable editing/inserting respectively. The primary key for the data source should be defined in [`primaryKey`](https://help.syncfusion.com/js/api/ejkanban#members:primarykey), for editing to work properly. 
+Set [`allowEditing`](https://help.syncfusion.com/api/js/ejkanban#members:editsettings-allowediting) and [`allowAdding`](https://help.syncfusion.com/api/js/ejkanban#members:editsettings-allowadding) property as true to enable editing/inserting respectively. The primary key for the data source should be defined in [`primaryKey`](https://help.syncfusion.com/api/js/ejkanban#members:primarykey), for editing to work properly. 
 
-You can start the edit action by double clicking the particular card. Similarly, you can add new card to Kanban either by double clicking the particular cell or on an external button which is bound to call [`addCard`](https://help.syncfusion.com/js/api/ejkanban#methods:kanbanedit-addcard) method of Kanban. 
+You can start the edit action by double clicking the particular card. Similarly, you can add new card to Kanban either by double clicking the particular cell or on an external button which is bound to call [`addCard`](https://help.syncfusion.com/api/js/ejkanban#methods:kanbanedit-addcard) method of Kanban. 
 
-Deletion of the card is possible by using [`deleteCard`](https://help.syncfusion.com/js/api/ejkanban#methods:kanbanedit-deletecard) by passing primary key as attribute.
+Deletion of the card is possible by using [`deleteCard`](https://help.syncfusion.com/api/js/ejkanban#methods:kanbanedit-deletecard) by passing primary key as attribute.
 
 N> In Kanban, the `primary key` column will be automatically set to `read only` while editing the card which is to avoid duplicate entry in the cards.
 
 ## Configuring Edit Items
 
-You need to configure the list of data source fields that are allowable in editing state using [`editItems`](https://help.syncfusion.com/js/api/ejkanban#members:editsettings-edititems) property. The [`field`](https://help.syncfusion.com/js/api/ejkanban#members:editsettings-edititems-field) property of [`editItems`](https://help.syncfusion.com/js/api/ejkanban#members:editsettings-edititems) needs to be mapped with data source fields.
+You need to configure the list of data source fields that are allowable in editing state using [`editItems`](https://help.syncfusion.com/api/js/ejkanban#members:editsettings-edititems) property. The [`field`](https://help.syncfusion.com/api/js/ejkanban#members:editsettings-edititems-field) property of [`editItems`](https://help.syncfusion.com/api/js/ejkanban#members:editsettings-edititems) needs to be mapped with data source fields.
 
-You can map the data source field as title to edit form using [`title`](https://help.syncfusion.com/js/api/ejkanban#members:fields-title) property of `fields`. By default, it’s mapped with `primaryKey`.
+You can map the data source field as title to edit form using [`title`](https://help.syncfusion.com/api/js/ejkanban#members:fields-title) property of `fields`. By default, it’s mapped with `primaryKey`.
 
 The following code example describes the above behavior.
 
@@ -76,9 +76,9 @@ The following output is displayed as a result of the above code example.
 
 ### Dialog
 
-Set [`editMode`](https://help.syncfusion.com/js/api/ejkanban#members:editsettings-editmode) as `dialog` to edit data using a dialog box, which displays the fields associated with the data card being edited. Default value is `dialog`.
+Set [`editMode`](https://help.syncfusion.com/api/js/ejkanban#members:editsettings-editmode) as `dialog` to edit data using a dialog box, which displays the fields associated with the data card being edited. Default value is `dialog`.
 
-N> For [`editMode`](https://help.syncfusion.com/js/api/ejkanban#members:editsettings-editmode) property you can assign either `string` value (“dialog”) or `enum` value (`ej.Kanban.EditMode.Dialog`).
+N> For [`editMode`](https://help.syncfusion.com/api/js/ejkanban#members:editsettings-editmode) property you can assign either `string` value (“dialog”) or `enum` value (`ej.Kanban.EditMode.Dialog`).
 
 The following code example describes the above behavior.
 
@@ -130,13 +130,13 @@ The following output is displayed as a result of the above code example.
 
 You can edit any of the fields pertaining to a single card of data and apply it to a template so that the same format is applied to all the other cards that you may edit later. 
 
-Using this template support, you can edit the fields that are not bound to [`editItems`](https://help.syncfusion.com/js/api/ejkanban#members:editsettings-edititems).
+Using this template support, you can edit the fields that are not bound to [`editItems`](https://help.syncfusion.com/api/js/ejkanban#members:editsettings-edititems).
 
-To edit the cards using Dialog template form, set [`editMode`](https://help.syncfusion.com/js/api/ejkanban#members:editsettings-editmode) as `dialogtemplate` and specify the template id to [`dialogTemplate`](https://help.syncfusion.com/js/api/ejkanban#members:editsettings-dialogtemplate) property of [`editSettings`](https://help.syncfusion.com/js/api/ejkanban#members:editsettings).
+To edit the cards using Dialog template form, set [`editMode`](https://help.syncfusion.com/api/js/ejkanban#members:editsettings-editmode) as `dialogtemplate` and specify the template id to [`dialogTemplate`](https://help.syncfusion.com/api/js/ejkanban#members:editsettings-dialogtemplate) property of [`editSettings`](https://help.syncfusion.com/api/js/ejkanban#members:editsettings).
 
 N> 1. `value` attribute is used to bind the corresponding field value while editing.
 N> 2. `name` attribute is used to get the changed field values while save the edited card.
-N> 3.  For [`editMode`](https://help.syncfusion.com/js/api/ejkanban#members:editsettings-editmode) property you can assign either `string` value (“dialogtemplate”) or `enum` value (`ej.Kanban.EditMode.DialogTemplate`).
+N> 3.  For [`editMode`](https://help.syncfusion.com/api/js/ejkanban#members:editsettings-editmode) property you can assign either `string` value (“dialogtemplate”) or `enum` value (`ej.Kanban.EditMode.DialogTemplate`).
 
 The following code example describes the above behavior.
 
@@ -221,7 +221,7 @@ The following code example describes the above behavior.
 
 {% endhighlight %}
 
-While using template, you can change the elements that are defined in the `template`, to appropriate Syncfusion JS controls based on the column type. This can be achieved by using [`actionComplete`](https://help.syncfusion.com/js/api/ejkanban#events:actioncomplete) event of Kanban. Please refer to following code snippets.
+While using template, you can change the elements that are defined in the `template`, to appropriate Syncfusion JS controls based on the column type. This can be achieved by using [`actionComplete`](https://help.syncfusion.com/api/js/ejkanban#events:actioncomplete) event of Kanban. Please refer to following code snippets.
 
 {% highlight javascript %}
 
@@ -248,7 +248,7 @@ The following output is displayed as a result of the above code example.
 
 ### External Form
 
-Set the [`editMode`](https://help.syncfusion.com/js/api/ejkanban#members:editsettings-editmode) as externalform to open the edit form in outside kanban content.
+Set the [`editMode`](https://help.syncfusion.com/api/js/ejkanban#members:editsettings-editmode) as externalform to open the edit form in outside kanban content.
 
 The following code example describes the above behavior.
 
@@ -304,7 +304,7 @@ The following output is displayed as a result of the above code example.
 
 Form Position:
 
-Form Position can be customized by setting the [`formPosition`](https://help.syncfusion.com/js/api/ejkanban#members:editsettings-formposition) property of [`editSettings'](https://help.syncfusion.com/js/api/ejkanban#members:editsettings) as "right" or "bottom".
+Form Position can be customized by setting the [`formPosition`](https://help.syncfusion.com/api/js/ejkanban#members:editsettings-formposition) property of [`editSettings'](https://help.syncfusion.com/api/js/ejkanban#members:editsettings) as "right" or "bottom".
 
 The following code example describes the above behavior.
 
@@ -366,13 +366,13 @@ You can edit any of the fields pertaining to a single card of data and apply it 
 
 Using this template support, you can edit the fields that are not bound to Kanban Edit Items.
 
-To edit the cards using External template form, set [`editMode`](https://help.syncfusion.com/js/api/ejkanban#members:editsettings-editmode) as externalformtemplate and specify the template id to [`externaFormTemplate`](https://help.syncfusion.com/js/api/ejkanban#members:editsettings-externalformtemplate) property of [`editSettings`](https://help.syncfusion.com/js/api/ejkanban#members:editsettings).
+To edit the cards using External template form, set [`editMode`](https://help.syncfusion.com/api/js/ejkanban#members:editsettings-editmode) as externalformtemplate and specify the template id to [`externaFormTemplate`](https://help.syncfusion.com/api/js/ejkanban#members:editsettings-externalformtemplate) property of [`editSettings`](https://help.syncfusion.com/api/js/ejkanban#members:editsettings).
 
-While using template, you can change the elements that are defined in the template, to appropriate Syncfusion JS controls based on the column type. This can be achieved by using [`actionComplete`](https://help.syncfusion.com/js/api/ejkanban#events:actioncomplete) event of Kanban.
+While using template, you can change the elements that are defined in the template, to appropriate Syncfusion JS controls based on the column type. This can be achieved by using [`actionComplete`](https://help.syncfusion.com/api/js/ejkanban#events:actioncomplete) event of Kanban.
 
 N> 1. `value` attribute is used to bind the corresponding field value while editing. 
 N> 2. `name` attribute is used to get the changed field values while save the edited card. 
-N> 3. For [`editMode`](https://help.syncfusion.com/js/api/ejkanban#members:editsettings-editmode) property you can assign either `string` value ("externalformtemplate") or `enum` value (`ej.Kanban.EditMode.ExternalFormTemplate`).
+N> 3. For [`editMode`](https://help.syncfusion.com/api/js/ejkanban#members:editsettings-editmode) property you can assign either `string` value ("externalformtemplate") or `enum` value (`ej.Kanban.EditMode.ExternalFormTemplate`).
 
 The following code example describes the above behavior.
 
@@ -490,9 +490,9 @@ The following output is displayed as a result of the above code example.
 
 ## Cell edit type and its params
 
-The edit type of bound column can be customized using [`editType`](https://help.syncfusion.com/js/api/ejkanban#members:editsettings-edititems-edittype) property of [`editItems`](https://help.syncfusion.com/js/api/ejkanban#members:editsettings-edititems). The following Essential JavaScript controls are supported built-in by `editType`. And also you can define the model for all the edit types controls while editing through `editParams` property of `editItems`.
+The edit type of bound column can be customized using [`editType`](https://help.syncfusion.com/api/js/ejkanban#members:editsettings-edititems-edittype) property of [`editItems`](https://help.syncfusion.com/api/js/ejkanban#members:editsettings-edititems). The following Essential JavaScript controls are supported built-in by `editType`. And also you can define the model for all the edit types controls while editing through `editParams` property of `editItems`.
 
-The following table describes [`editType`](https://help.syncfusion.com/js/api/ejkanban#members:editsettings-edititems-edittype) and their corresponding [`editParams`](https://help.syncfusion.com/js/api/ejkanban#members:editsettings-edititems-editparams) of the specific data type of the column.
+The following table describes [`editType`](https://help.syncfusion.com/api/js/ejkanban#members:editsettings-edititems-edittype) and their corresponding [`editParams`](https://help.syncfusion.com/api/js/ejkanban#members:editsettings-edititems-editparams) of the specific data type of the column.
 
 <table>
 <tr>
@@ -507,7 +507,7 @@ Example</th>
 <tr>
 <td>
 Numeric</td><td>
-{{ '[ejTextBoxes](https://help.syncfusion.com/js/api/ejtextboxes)' | markdownify }} </td>
+{{ '[ejTextBoxes](https://help.syncfusion.com/api/js/ejtextboxes)' | markdownify }} </td>
 <td>
 control for integers, double, and decimal data’s</td>
 <td>
@@ -525,7 +525,7 @@ HTML Textbox</td>
 <tr>
 <td>
 DatePicker </td><td>
-{{ '[ejDatePicker](https://help.syncfusion.com/js/api/ejdatepicker)' | markdownify }} </td>
+{{ '[ejDatePicker](https://help.syncfusion.com/api/js/ejdatepicker)' | markdownify }} </td>
 <td>
 control for date data</td>
 <td>
@@ -534,7 +534,7 @@ editParams: { buttonText : "Now" }</td>
 <tr>
 <td>
 DateTimePicker </td><td>
-{{ '[ejDateTimePicker](https://help.syncfusion.com/js/api/ejdatetimepicker)' | markdownify }} </td>
+{{ '[ejDateTimePicker](https://help.syncfusion.com/api/js/ejdatetimepicker)' | markdownify }} </td>
 <td>
 control for date data-time data</td>
 <td>
@@ -543,7 +543,7 @@ editParams: { enabled: true }</td>
 <tr>
 <td>
 DropDown </td><td>
-{{ '[ejDropDownList](https://help.syncfusion.com/js/api/ejdropdownlist)' | markdownify }} </td>
+{{ '[ejDropDownList](https://help.syncfusion.com/api/js/ejdropdownlist)' | markdownify }} </td>
 <td>
 control for list of data</td>
 <td>
@@ -552,7 +552,7 @@ editParams: { allowGrouping: true }</td>
 <tr>
 <td>
 RTE </td><td>
-{{ '[ejRTE](https://help.syncfusion.com/js/api/ejrte)' | markdownify }} </td>
+{{ '[ejRTE](https://help.syncfusion.com/api/js/ejrte)' | markdownify }} </td>
 <td>
 control for customizing text in RTE format</td>
 <td>
@@ -569,8 +569,8 @@ editParams:{height:100,width:200}</td>
 </tr>
 </table>
 
-N> 1. If [`editType`](https://help.syncfusion.com/js/api/ejkanban#members:editsettings-edititems-edittype) is not set, then by default it will display HTML textbox while editing a card.
-N> 2. For [`editType`](https://help.syncfusion.com/js/api/ejkanban#members:editsettings-edititems-edittype) property you can assign either string value (“numericedit”) or `enum` value (`ej.Kanban.EditingType.Numeric`).
+N> 1. If [`editType`](https://help.syncfusion.com/api/js/ejkanban#members:editsettings-edititems-edittype) is not set, then by default it will display HTML textbox while editing a card.
+N> 2. For [`editType`](https://help.syncfusion.com/api/js/ejkanban#members:editsettings-edititems-edittype) property you can assign either string value (“numericedit”) or `enum` value (`ej.Kanban.EditingType.Numeric`).
 
 The following code example describes the above behavior.
 
@@ -632,7 +632,7 @@ file in your application along with the other script.
 
 ### jQuery Validation
 
-You can set validation rules using [`validationRules`](https://help.syncfusion.com/js/api/ejkanban#members:editsettings-edititems-validationrules) property of [`columns`](https://help.syncfusion.com/js/api/ejkanban#members:columns). The following are jQuery validation methods.
+You can set validation rules using [`validationRules`](https://help.syncfusion.com/api/js/ejkanban#members:editsettings-edititems-validationrules) property of [`columns`](https://help.syncfusion.com/api/js/ejkanban#members:columns). The following are jQuery validation methods.
 
 #### List of jQuery validation methods
 
@@ -764,7 +764,7 @@ All the CRUD operations in Kanban are done through DataManager. DataManager have
 
 ### URL Adaptor
 
-You can use the `UrlAdaptor` of [`ejDataManger`](https://help.syncfusion.com/js/api/ejdatamanager) when binding `dataSource` from remote data. At initial load of Kanban, using URL property of DataManager, data are fetched from remote data and bound to Kanban. You can map CRUD operation in Kanban to Server-Side Controller action using the properties `insertUrl`, `removeUrl`, `updateUrl` and `crudUrl`.
+You can use the `UrlAdaptor` of [`ejDataManger`](https://help.syncfusion.com/api/js/ejdatamanager) when binding `dataSource` from remote data. At initial load of Kanban, using URL property of DataManager, data are fetched from remote data and bound to Kanban. You can map CRUD operation in Kanban to Server-Side Controller action using the properties `insertUrl`, `removeUrl`, `updateUrl` and `crudUrl`.
 
 The following code example describes the above behavior.
 

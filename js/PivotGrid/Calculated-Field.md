@@ -22,7 +22,7 @@ Click **Add** for adding the respective Calculated Field and **OK** to populate 
 
 ### Through Code-behind
 
-For client mode, Calculated Field can be created at code-behind by defining formula based on the existing Pivot Fields in the PivotGrid. To indicate a field as a calculated field we need to set [`isCalculatedField`](/js/api/ejpivotgrid#members:isCalculatedField) property to true and [`formula`](/js/api/ejpivotgrid#members:formula) property to set the expression.
+For client mode, Calculated Field can be created at code-behind by defining formula based on the existing Pivot Fields in the PivotGrid. To indicate a field as a calculated field we need to set [`isCalculatedField`](/api/js/ejpivotgrid#members:isCalculatedField) property to true and [`formula`](/api/js/ejpivotgrid#members:formula) property to set the expression.
 
 {% highlight html %}
 

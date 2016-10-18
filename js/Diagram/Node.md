@@ -290,7 +290,7 @@ Diagram provides support to describe the state of the node. i.e., node is expand
 
 N> Icon can be created only when the node has outedges.
 
-To explore the properties of expandIcon and collapseIcon, refer to [Icon Properties](/js/api/ejDiagram#members:nodes-expandicon "Icon Properties").
+To explore the properties of expandIcon and collapseIcon, refer to [Icon Properties](/api/js/ejDiagram#members:nodes-expandicon "Icon Properties").
 
 The `shape` property of icon allows to define the shape of the icon. The following code example illustrates how to create icon of various shapes.
 

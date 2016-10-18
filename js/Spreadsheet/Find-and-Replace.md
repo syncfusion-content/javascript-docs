@@ -9,7 +9,7 @@ documentation: ug
 
 # Find and Replace
 
-This feature is used to search for something and replace the found content with the new content in your worksheet or workbook, such as a particular number or text string. You can use [`allowSearching`](https://help.syncfusion.com/js/api/ejspreadsheet#members:allowsearching "allowSearching") property to enable or disable this feature.
+This feature is used to search for something and replace the found content with the new content in your worksheet or workbook, such as a particular number or text string. You can use [`allowSearching`](https://help.syncfusion.com/api/js/ejspreadsheet#members:allowsearching "allowSearching") property to enable or disable this feature.
 
 The following code example describes the above behavior.
 
@@ -56,7 +56,7 @@ The following output is displayed as a result of search the content "Shoes".
 This is used to replace the contents of a cell. You can do this by following ways.
 
 * Using "Replace" option in Find and Replace button of OTHERS Tab in ribbon to open the Find and Replace dialog.
-* Using [`replaceAllByBook`](https://help.syncfusion.com/js/api/ejspreadsheet#methods:xlsearch-replaceallbybook "replaceAllByBook") or [`replaceAllBySheet`](https://help.syncfusion.com/js/api/ejspreadsheet#methods:xlsearch-replaceallbysheet "replaceAllBySheet") method to replace the contents.
+* Using [`replaceAllByBook`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlsearch-replaceallbybook "replaceAllByBook") or [`replaceAllBySheet`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlsearch-replaceallbysheet "replaceAllBySheet") method to replace the contents.
 * Using findNext and findPrevious methods to search the given value in workbook.
 
 The following code example describes the above behavior.
@@ -89,7 +89,7 @@ The following output is displayed as a result of the above code example.
 
 ## Go To
 
-This feature is used to navigate to the particular cell in the worksheet or workbook. You can use [`allowSearching`](https://help.syncfusion.com/js/api/ejspreadsheet#members:allowsearching "allowSearching") property to enable or disable this feature.
+This feature is used to navigate to the particular cell in the worksheet or workbook. You can use [`allowSearching`](https://help.syncfusion.com/api/js/ejspreadsheet#members:allowsearching "allowSearching") property to enable or disable this feature.
 
 You can do this by one of the following way,
 

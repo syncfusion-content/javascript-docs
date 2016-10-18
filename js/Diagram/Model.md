@@ -27,4 +27,4 @@ $("#Diagram").ejDiagram({
 
 ![](/js/Diagram/Model_images/Model_img1.png)
 
-To explore more model properties, refer to [Model Properties](/js/api/ejdiagram#members "Model Properties").
+To explore more model properties, refer to [Model Properties](/api/js/ejdiagram#members "Model Properties").

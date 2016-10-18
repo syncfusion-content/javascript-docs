@@ -13,7 +13,7 @@ The TreeGrid control for JavaScript has built-in support for Sorting one or 
 
 ### Sorting Columns
 
-TreeGrid allows the items to be sorted in ascending or descending order based on the selected column by enabling the [`allowSorting`](/js/api/ejtreegrid#allowsortingspan-classtype-signature-type-booleanbooleanspan "allowSorting") property in TreeGrid control. The following code example shows you how to enable Sorting in TreeGrid control.
+TreeGrid allows the items to be sorted in ascending or descending order based on the selected column by enabling the [`allowSorting`](/api/js/ejtreegrid#allowsortingspan-classtype-signature-type-booleanbooleanspan "allowSorting") property in TreeGrid control. The following code example shows you how to enable Sorting in TreeGrid control.
 
 {% highlight js %}
 

@@ -10,7 +10,7 @@ documentation: ug
 # Title
 
 ## Title Text
-By using the [`title.text`](/js/api/ejchart#members:title-text) property, you can add the title text for PivotChart.
+By using the [`title.text`](/api/js/ejchart#members:title-text) property, you can add the title text for PivotChart.
  
 
 {% highlight javascript %}
@@ -32,7 +32,7 @@ $(function () {
 
 ## Title Alignment
 
-By using the [`title.textAlignment`](/js/api/ejchart#members:title-textalignment) property, you can align the PivotChart controls title text to center, far or near.
+By using the [`title.textAlignment`](/api/js/ejchart#members:title-textalignment) property, you can align the PivotChart controls title text to center, far or near.
 
 {% highlight javascript %}
 
@@ -53,7 +53,7 @@ $(function () {
 ![](Title_images/Title_img2.png) 
 
 ## Title Customization
-By using the [`title`](/js/api/ejchart#members:title) property, you can add the title text for X-axis and Y-axis. Also title text can be customized by using the [`text`](/js/api/ejchart#members:title-text) and [`font`](/js/api/ejchart#members:title-font) properties. On setting [`enableTrim`](/js/api/ejchart#members:primaryyaxis-enabletrim) to true, title text could be trimmed based on its length.
+By using the [`title`](/api/js/ejchart#members:title) property, you can add the title text for X-axis and Y-axis. Also title text can be customized by using the [`text`](/api/js/ejchart#members:title-text) and [`font`](/api/js/ejchart#members:title-font) properties. On setting [`enableTrim`](/api/js/ejchart#members:primaryyaxis-enabletrim) to true, title text could be trimmed based on its length.
 
 {% highlight javascript %}
 

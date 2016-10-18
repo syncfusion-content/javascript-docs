@@ -476,11 +476,11 @@ $("#diagram").ejDiagram({
 
 Orientation, spacings, and position of layout can be customized with a set of properties.
 
-To explore layout properties, refer to [Layout Properties](/js/api/ejDiagram#members:layout "Layout Properties").
+To explore layout properties, refer to [Layout Properties](/api/js/ejDiagram#members:layout "Layout Properties").
 
 ### Layout Bounds 
 
-Diagram provides support to align the layout within any custom rectangular area. For more information about bounds, refer to [Layout Bounds] (/js/api/ejDiagram#members:layout-bounds "Layout Bounds")
+Diagram provides support to align the layout within any custom rectangular area. For more information about bounds, refer to [Layout Bounds] (/api/js/ejDiagram#members:layout-bounds "Layout Bounds")
 
 ### Layout Alignment
 
@@ -573,7 +573,7 @@ $("#diagram").ejDiagram({
 
 ### Layout Orientation
 
-Diagram provides support to customize the orientation of layout. You can set the desired orientation using `layout.orientation`. For more information about orientation, refer to [Layout Orientations](/js/api/global#layoutorientations "Layout Orientations")
+Diagram provides support to customize the orientation of layout. You can set the desired orientation using `layout.orientation`. For more information about orientation, refer to [Layout Orientations](/api/js/global#layoutorientations "Layout Orientations")
 
 The following code illustrates how to arrange the nodes in a "BottomToTop" orientation.
 
@@ -712,4 +712,4 @@ In above example, while expanding/collapsing a node, it is set as fixed node in 
 
 ### Refresh layout
 
-Diagram allows to refresh the layout at runtime. To refresh the layout, refer to [Refresh layout](/js/api/ejDiagram#methods:layout "Refresh layout").
+Diagram allows to refresh the layout at runtime. To refresh the layout, refer to [Refresh layout](/api/js/ejDiagram#methods:layout "Refresh layout").

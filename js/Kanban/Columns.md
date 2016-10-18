@@ -9,11 +9,11 @@ keywords: columns,kanban columns
 
 # Columns 
 
-Column fields are present in the [`dataSource`](https://help.syncfusion.com/js/api/ejkanban#members:datasource) schema and it is rendering cards based its mapping column values.
+Column fields are present in the [`dataSource`](https://help.syncfusion.com/api/js/ejkanban#members:datasource) schema and it is rendering cards based its mapping column values.
 
 ## Key Mapping
 
-To render Kanban with simple cards, you need to map the `dataSource` fields to Kanban cards and [`columns`](https://help.syncfusion.com/js/api/ejkanban#members:columns). The required mapping field are listed as follows
+To render Kanban with simple cards, you need to map the `dataSource` fields to Kanban cards and [`columns`](https://help.syncfusion.com/api/js/ejkanban#members:columns). The required mapping field are listed as follows
 
 <table>
 <tr>
@@ -22,19 +22,19 @@ Mapping Fields</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{ '[keyField](https://help.syncfusion.com/js/api/ejkanban#members:keyField)' | markdownify }} </td><td>
-Map the column name to use as {{ '[key](https://help.syncfusion.com/js/api/ejkanban#members:columns-key)'| markdownify }} values to columns.</td></tr>
+{{ '[keyField](https://help.syncfusion.com/api/js/ejkanban#members:keyField)' | markdownify }} </td><td>
+Map the column name to use as {{ '[key](https://help.syncfusion.com/api/js/ejkanban#members:columns-key)'| markdownify }} values to columns.</td></tr>
 <tr>
 <td>
-{{ '[columns.key](https://help.syncfusion.com/js/api/ejkanban#members:columns-key)' | markdownify }} </td><td>
+{{ '[columns.key](https://help.syncfusion.com/api/js/ejkanban#members:columns-key)' | markdownify }} </td><td>
 Map the corresponding `key` values of `keyField` column to each columns.</td></tr>
 <tr>
 <td>
-{{ '[columns.headerText](https://help.syncfusion.com/js/api/ejkanban#members:columns-headertext)' | markdownify }} </td><td>
+{{ '[columns.headerText](https://help.syncfusion.com/api/js/ejkanban#members:columns-headertext)' | markdownify }} </td><td>
  It represents the title for particular column</td></tr>
 <tr>
 <td>
-{{ '[fields.content](https://help.syncfusion.com/js/api/ejkanban#members:fields-content)' | markdownify }} </td><td>
+{{ '[fields.content](https://help.syncfusion.com/api/js/ejkanban#members:fields-content)' | markdownify }} </td><td>
 Map the column name to use as content to cards.</td></tr>
 </table>
 
@@ -77,7 +77,7 @@ The following output is displayed as a result of the above code example.
 
 ## Multiple Key Mapping
 
-You can map more than one datasource fields as [`key`](https://help.syncfusion.com/js/api/ejkanban#members:columns-key) values to show different key cards into single column. For e.g , you can map "Validate,Inprogress" keys under "In progress" column. 
+You can map more than one datasource fields as [`key`](https://help.syncfusion.com/api/js/ejkanban#members:columns-key) values to show different key cards into single column. For e.g , you can map "Validate,Inprogress" keys under "In progress" column. 
 
 The following code example and screenshot which describes the above behavior.
 
@@ -120,7 +120,7 @@ The following output is displayed as a result of the above code example.
 
 ### Header Template
 
-The template design that applies on for the column header. To render template, set [`headerTemplate`](https://help.syncfusion.com/js/api/ejkanban#members:columns-headertemplate) property of the [`columns`](https://help.syncfusion.com/js/api/ejkanban#members:columns).
+The template design that applies on for the column header. To render template, set [`headerTemplate`](https://help.syncfusion.com/api/js/ejkanban#members:columns-headertemplate) property of the [`columns`](https://help.syncfusion.com/api/js/ejkanban#members:columns).
 
 You can use JsRender syntax in the template. For more information about JsRender syntax, please refer the [`link`](https://www.jsviews.com/).
 
@@ -185,7 +185,7 @@ The following output is displayed as a result of the above code example.
 
 ## Width
 
-You can specify the width for particular column by setting [`width`](https://help.syncfusion.com/js/api/ejkanban#members:columns-width) property of [`columns`](https://help.syncfusion.com/js/api/ejkanban#members:columns) as in pixel (ex: 100) or in percentage (ex: 40%).
+You can specify the width for particular column by setting [`width`](https://help.syncfusion.com/api/js/ejkanban#members:columns-width) property of [`columns`](https://help.syncfusion.com/api/js/ejkanban#members:columns) as in pixel (ex: 100) or in percentage (ex: 40%).
 
 The following code example describes the above behavior.
 
@@ -225,7 +225,7 @@ The following output is displayed as a result of the above code example.
 
 ## Visibility 
 
-You can hide particular column in Kanban by setting [`visible`](https://help.syncfusion.com/js/api/ejkanban#members:columns-visible) property of it as false.
+You can hide particular column in Kanban by setting [`visible`](https://help.syncfusion.com/api/js/ejkanban#members:columns-visible) property of it as false.
 
 The following code example describes the above behavior.
 
@@ -265,7 +265,7 @@ The following output is displayed as a result of the above code example.
 
 ## Toggle 
 
-You can set particular column collapsed state in Kanban by setting [`isCollapsed`](https://help.syncfusion.com/js/api/ejkanban#members:columns-iscollapsed) property of it as true. You need to set [`allowToggleColumn`](https://help.syncfusion.com/js/api/ejkanban#members:allowtogglecolumn) as true to use “Expand/Collapse” Column.
+You can set particular column collapsed state in Kanban by setting [`isCollapsed`](https://help.syncfusion.com/api/js/ejkanban#members:columns-iscollapsed) property of it as true. You need to set [`allowToggleColumn`](https://help.syncfusion.com/api/js/ejkanban#members:allowtogglecolumn) as true to use “Expand/Collapse” Column.
 
 The following code example describes the above behavior.
 

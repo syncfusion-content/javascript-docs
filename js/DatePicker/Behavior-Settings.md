@@ -12,7 +12,7 @@ DatePicker has some default behavior settings which helps you to perform more op
 
 ## Selected Date
 
-DatePicker value can be selected through picking date from DatePicker calendar or you can set it by using [value](http://help.syncfusion.com/js/api/ejdatepicker#members:value) property.
+DatePicker value can be selected through picking date from DatePicker calendar or you can set it by using [value](http://help.syncfusion.com/api/js/ejdatepicker#members:value) property.
 
 {% highlight javascript %}
   
@@ -45,7 +45,7 @@ DatePicker allows only the valid date to be entered and it should be within the 
 
 ## Date Range
 
-DatePicker provides an option to restrict the user to pick the date from specified range of value. You can utilize this option by make use of [minDate](http://help.syncfusion.com/js/api/ejdatepicker#members:mindate) and [maxDate](http://help.syncfusion.com/js/api/ejdatepicker#members:maxdate) property.
+DatePicker provides an option to restrict the user to pick the date from specified range of value. You can utilize this option by make use of [minDate](http://help.syncfusion.com/api/js/ejdatepicker#members:mindate) and [maxDate](http://help.syncfusion.com/api/js/ejdatepicker#members:maxdate) property.
 
 **minDate** - specifies the minimum date to be picked in DatePicker calendar by disabling below date of minDate.
 
@@ -77,7 +77,7 @@ N> You can change the ‘**minDate’** and ‘**maxDate’** value dynamically 
 
 Start and depth represents the view of DatePicker calendar. DatePicker calendar has four different level of views, which are month, year, decade and century. It allows you to quick pick date from different months and years by drilling down or up. 
 
-By default DatePicker starts with month view and can be drill down into year, decade and century. You can also change the start and depth level view by using [startLevel](http://help.syncfusion.com/js/api/ejdatepicker#members:startlevel) and [depthLevel](http://help.syncfusion.com/js/api/ejdatepicker#members:depthlevel) property. So that you can initiate DatePicker calendar to view at any level and control the navigation.
+By default DatePicker starts with month view and can be drill down into year, decade and century. You can also change the start and depth level view by using [startLevel](http://help.syncfusion.com/api/js/ejdatepicker#members:startlevel) and [depthLevel](http://help.syncfusion.com/api/js/ejdatepicker#members:depthlevel) property. So that you can initiate DatePicker calendar to view at any level and control the navigation.
 
 * “month”   – shows the days in month to pick.
 * “year”    – shows the months in year to pick.
@@ -108,7 +108,7 @@ By default DatePicker starts with month view and can be drill down into year, de
 
 ## Display Inline Mode
 
-DatePicker provides an option to act as calendar by setting the [displayInline](http://help.syncfusion.com/js/api/ejdatepicker#members:displayinline) property as true. In this mode the DatePicker calendar has been placed open state constantly to pick the date. 
+DatePicker provides an option to act as calendar by setting the [displayInline](http://help.syncfusion.com/api/js/ejdatepicker#members:displayinline) property as true. In this mode the DatePicker calendar has been placed open state constantly to pick the date. 
 
 You can make use of ‘div’ element to create DatePicker when you going for inline mode, which gives good visualization as like calendar in page instead of creating with ‘input’ element. 
 
@@ -138,7 +138,7 @@ You can make use of ‘div’ element to create DatePicker when you going for in
 
 ## Strict Mode
 
-Strict mode in DatePicker allows you to enter valid or invalid date in input textbox, but an error class will get added to exhibit if it’s an invalid date. When you set [enableStrictMode](http://help.syncfusion.com/js/api/ejdatepicker#members:enablestrictmode) to false, DatePicker allows you to enter only the valid date or else it will resets with previous value. 
+Strict mode in DatePicker allows you to enter valid or invalid date in input textbox, but an error class will get added to exhibit if it’s an invalid date. When you set [enableStrictMode](http://help.syncfusion.com/api/js/ejdatepicker#members:enablestrictmode) to false, DatePicker allows you to enter only the valid date or else it will resets with previous value. 
 
 Also the valid date should be defined in specified range or else it resets to min or maximum date when the entered date is out of range
 

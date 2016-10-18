@@ -31,7 +31,7 @@ Following are the built-in themes available in the PivotChart.
 * bootstrap
 
 
-By using the [`theme`](/js/api/ejchart#members:theme) property, you can set the desired theme in PivotChart. By default, **“Flat Light”** theme is applied to PivotChart.
+By using the [`theme`](/api/js/ejchart#members:theme) property, you can set the desired theme in PivotChart. By default, **“Flat Light”** theme is applied to PivotChart.
 
 {% highlight javascript %}
 
@@ -52,7 +52,7 @@ By using the [`theme`](/js/api/ejchart#members:theme) property, you can set the 
 ## PivotChart - Area Customization
 
 ### Border Customization
-To customize the PivotChart border, use [`border`](/js/api/ejchart#members:border) property in PivotChart.
+To customize the PivotChart border, use [`border`](/api/js/ejchart#members:border) property in PivotChart.
 
 {% highlight javascript %}
 
@@ -76,7 +76,7 @@ To customize the PivotChart border, use [`border`](/js/api/ejchart#members:borde
 ![](Appearance_images/BorderCustomization.png)
 
 ### Margin Customization
-The PivotChart control [`margin`](/js/api/ejchart#members:margin) property is used to add the margin to the Chart area at left, right, top and bottom position.
+The PivotChart control [`margin`](/api/js/ejchart#members:margin) property is used to add the margin to the Chart area at left, right, top and bottom position.
 
 {% highlight javascript %}
 
@@ -101,7 +101,7 @@ The PivotChart control [`margin`](/js/api/ejchart#members:margin) property is us
 ![](Appearance_images/MarginCustomization.png)
 
 ### Background Customization
-The PivotChart control background can be customized by using the [`background`](/js/api/ejchart#members:chartarea-background) property in the Chart area.
+The PivotChart control background can be customized by using the [`background`](/api/js/ejchart#members:chartarea-background) property in the Chart area.
 
 {% highlight javascript %}
 
@@ -123,7 +123,7 @@ The PivotChart control background can be customized by using the [`background`](
 ![](Appearance_images/BackgroundCustomization.png)
 
 ### Grid Bands Customization
-By using the [`alternateGridBand`](/js/api/ejchart#members:primaryxaxis-alternategridband) property of the axis, you can provide different color for grid rows and columns formed by the grid lines in the Chart area. The properties [`odd`](/js/api/ejchart#members:primaryyaxis-alternategridband-odd) and [`even`](/js/api/ejchart#members:primaryyaxis-alternategridband-even) are used to customize the grid bands at odd and even positions respectively.
+By using the [`alternateGridBand`](/api/js/ejchart#members:primaryxaxis-alternategridband) property of the axis, you can provide different color for grid rows and columns formed by the grid lines in the Chart area. The properties [`odd`](/api/js/ejchart#members:primaryyaxis-alternategridband-odd) and [`even`](/api/js/ejchart#members:primaryyaxis-alternategridband-even) are used to customize the grid bands at odd and even positions respectively.
 
 {% highlight javascript %}
 
@@ -154,7 +154,7 @@ By using the [`alternateGridBand`](/js/api/ejchart#members:primaryxaxis-alternat
 ![](Appearance_images/GridBandsCustomization.png)
 
 ### Animation
-You can enable animation by using the [`enableAnimation`](/js/api/ejchart#members:commonseriesoptions-enableanimation) property under [`commonSeriesOptions`](/js/api/ejchart#members:commonseriesoptions) of the PivotChart control. This animates the Chart series on two occasions - when the Chart is loaded for the first time and when you change the series type by using the “type” property.
+You can enable animation by using the [`enableAnimation`](/api/js/ejchart#members:commonseriesoptions-enableanimation) property under [`commonSeriesOptions`](/api/js/ejchart#members:commonseriesoptions) of the PivotChart control. This animates the Chart series on two occasions - when the Chart is loaded for the first time and when you change the series type by using the “type” property.
 
 {% highlight javascript %}
 

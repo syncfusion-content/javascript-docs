@@ -598,7 +598,7 @@ Content displayed within the PivotClient control are obtained from the Relationa
 
 ## RTL
 
-You can render our PivotClient control from Right to Left by setting [`enableRTL`](/js/api/ejPivotClient#members:enablertl) property to true.
+You can render our PivotClient control from Right to Left by setting [`enableRTL`](/api/js/ejPivotClient#members:enablertl) property to true.
 
 {% highlight javascript %}
 

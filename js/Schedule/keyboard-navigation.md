@@ -77,5 +77,5 @@ Traversing through the appointments in a forward direction.</td></tr>
 Traversal of appointments in a reverse order.</td></tr>
 </table>
 
-N> By default [allowKeyboardNavigation](/js/api/ejschedule#members:allowkeyboardnavigation) property is set to **true**, which allows the Scheduler to be accessed through the above specified keys.
+N> By default [allowKeyboardNavigation](/api/js/ejschedule#members:allowkeyboardnavigation) property is set to **true**, which allows the Scheduler to be accessed through the above specified keys.
 

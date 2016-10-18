@@ -10,11 +10,11 @@ keywords: ejautocomplete, autocomplete widget, autocomplete ui, js autocomplete,
 
 # Multiple Columns
 
-The Autocomplete allows list of data to be displayed in several columns and column collection can be defined and customized through the [MultiColumnSettings](http://help.syncfusion.com/js/api/ejautocomplete#members:multiColumnSettings) property.
+The Autocomplete allows list of data to be displayed in several columns and column collection can be defined and customized through the [MultiColumnSettings](http://help.syncfusion.com/api/js/ejautocomplete#members:multiColumnSettings) property.
  
-In AutoComplete Multiple Column search is based on [stringFormat](http://help.syncfusion.com/js/api/ejautocomplete#members:multiColumnSettings-stringFormat) property which specifies column indices. 
+In AutoComplete Multiple Column search is based on [stringFormat](http://help.syncfusion.com/api/js/ejautocomplete#members:multiColumnSettings-stringFormat) property which specifies column indices. 
 
-N> [stringFormat](http://help.syncfusion.com/js/api/ejautocomplete#members:multiColumnSettings-stringFormat) as “{0} ({1}) ({2})” means search based on 0, 1 and 2 columns data.
+N> [stringFormat](http://help.syncfusion.com/api/js/ejautocomplete#members:multiColumnSettings-stringFormat) as “{0} ({1}) ({2})” means search based on 0, 1 and 2 columns data.
 
 <table><tr><th>Name</th><th>Description</th></tr>
 <tr><td>multiColumnSettings.enable</td><td>Allow list of data to be displayed in several columns.</td></tr>
