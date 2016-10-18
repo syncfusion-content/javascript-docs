@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Import and Export in RichTextEditor widget for Syncfusion Essential JS
-description:Import content from word document into the RichTextEditor and Export the  widget's content into word or pdf document.
+description: Import content from word document into the RichTextEditor and Export the RichTextEditor content into word or pdf document.
 platform: js
 control: RTE
 documentation: ug

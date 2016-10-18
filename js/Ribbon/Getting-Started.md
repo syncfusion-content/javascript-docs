@@ -16,7 +16,6 @@ This section explains briefly how to create a `Ribbon`.
 Ribbon have the following list of external script dependencies and these should be referred before `ej` Script files
 
 * [`jQuery`](http://jquery.com) 1.7.1 and later versions
-* [`jQuery.easing`](http://gsgd.co.uk/sandbox/jquery/easing) - to support the animation effects in the components.
 
 Also Ribbon have internal dependencies which includes `ej.core` libraries and [`child controls`](http://help.syncfusion.com/js/api/ejribbon#requires). For getting started, you can refer `ej.web.all.min.js` which includes `ej.core` and all Syncfusion JavaScript controls.
 

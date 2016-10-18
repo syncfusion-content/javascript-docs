@@ -3597,7 +3597,24 @@ commonSeriesOptions :{marker :{dataLabel :{font :{ opacity : 0.5 }}}}
 });
 {% endhighlight %}
 
+### commonSeriesOptions.marker.dataLabel.font.color `string`
+{:#members:commonseriesoptions-marker-datalabel-font-color}
 
+Font color of the data label text. 
+
+#### Default Value
+
+ * null
+
+#### Example
+
+{% highlight js %}
+
+ 
+$("#container").ejChart({
+commonSeriesOptions :{marker :{dataLabel :{font :{ color : "red" }}}}                 
+});
+{% endhighlight %}
 
 
 ### commonSeriesOptions.marker.dataLabel.font.size `string`
@@ -14136,7 +14153,7 @@ $("#container").ejChart({
 ### primaryXAxis.multiLevelLabels.textAlignment `enum`
 {:#members:primaryxaxis-multilevellabels-textalignment}
 
-<ts name = "ej.datavisualization.Chart.TextAlignment"/>
+<ts ref = "ej.datavisualization.Chart.TextAlignment"/>
 
 
 Specifies the alignment of the text in multi level labels.
@@ -14168,7 +14185,7 @@ $("#container").ejChart({
 ### primaryXAxis.multiLevelLabels.textOverflow `enum`
 {:#members:primaryxaxis-multilevellabels-textoverflow}
 
-<ts name = "ej.datavisualization.Chart.TextOverflow"/>
+<ts ref = "ej.datavisualization.Chart.TextOverflow"/>
 
 
 Specifies the handling of text over flow in multi level labels.
@@ -18130,7 +18147,7 @@ $("#container").ejChart({
 ### primaryYAxis.multiLevelLabels.textAlignment `enum`
 {:#members:primaryyaxis-multilevellabels-textalignment}
 
-<ts name = "ej.datavisualization.Chart.TextAlignment"/>
+<ts ref = "ej.datavisualization.Chart.TextAlignment"/>
 
 
 Specifies the alignment of the text in multi level labels.
@@ -18162,7 +18179,7 @@ $("#container").ejChart({
 ### primaryYAxis.multiLevelLabels.textOverflow `enum`
 {:#members:primaryyaxis-multilevellabels-textoverflow}
 
-<ts name = "ej.datavisualization.Chart.TextOverflow"/>
+<ts ref = "ej.datavisualization.Chart.TextOverflow"/>
 
 
 Specifies the handling of text over flow in multi level labels.
@@ -18486,7 +18503,7 @@ $("#container").ejChart({
 {:#members:primaryyaxis-multilevellabels-border-type}
 
 
-<ts name = "ej.datavisualization.Chart.MultiLevelLabelsBorderType"/>
+<ts ref = "ej.datavisualization.Chart.MultiLevelLabelsBorderType"/>
 
 
 Border type of the multi level labels.
@@ -21706,7 +21723,24 @@ series :[{marker :{dataLabel :{ font :{fontFamily : "algerian"}}}}]
  {% endhighlight %}
 
 
+### series.marker.dataLabel.font.color `string`
+{:#members:series-marker-datalabel-font-color}
 
+Font color of the data label text. 
+
+#### Default Value
+
+ * null
+
+#### Example
+
+{% highlight js %}
+
+ 
+$("#container").ejChart({
+series :[{marker :{dataLabel :{ font :{color : "red"}}}}]               
+});
+{% endhighlight %}
 
 ### series.marker.dataLabel.font.fontStyle `enum`
 {:#members:series-marker-datalabel-font-fontstyle}
