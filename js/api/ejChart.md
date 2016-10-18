@@ -3597,7 +3597,24 @@ commonSeriesOptions :{marker :{dataLabel :{font :{ opacity : 0.5 }}}}
 });
 {% endhighlight %}
 
+### commonSeriesOptions.marker.dataLabel.font.color `string`
+{:#members:commonseriesoptions-marker-datalabel-font-color}
 
+Font color of the data label text. 
+
+#### Default Value
+
+ * null
+
+#### Example
+
+{% highlight js %}
+
+ 
+$("#container").ejChart({
+commonSeriesOptions :{marker :{dataLabel :{font :{ color : "red" }}}}                 
+});
+{% endhighlight %}
 
 
 ### commonSeriesOptions.marker.dataLabel.font.size `string`
@@ -21706,7 +21723,24 @@ series :[{marker :{dataLabel :{ font :{fontFamily : "algerian"}}}}]
  {% endhighlight %}
 
 
+### series.marker.dataLabel.font.color `string`
+{:#members:series-marker-datalabel-font-color}
 
+Font color of the data label text. 
+
+#### Default Value
+
+ * null
+
+#### Example
+
+{% highlight js %}
+
+ 
+$("#container").ejChart({
+series :[{marker :{dataLabel :{ font :{color : "red"}}}}]               
+});
+{% endhighlight %}
 
 ### series.marker.dataLabel.font.fontStyle `enum`
 {:#members:series-marker-datalabel-font-fontstyle}
