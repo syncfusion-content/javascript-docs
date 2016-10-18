@@ -1221,7 +1221,7 @@ $("#PivotGrid1").ejPivotGrid({ locale: "en-US" }});
 ### operationalMode `enum`
 {:#members:operationalmode}
 
-<ts name = "ej.PivotGrid.OperationalMode"/>
+<ts name = "ej.Pivot.OperationalMode"/>
 
 Sets the mode for the PivotGrid widget for binding data source either in server-side or client-side.
 
