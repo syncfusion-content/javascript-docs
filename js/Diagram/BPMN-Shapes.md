@@ -9,7 +9,7 @@ documentation: ug
 
 ### BPMN Shapes
 
-BPMN shapes are used to represent the internal business procedure in a graphical notation and enables you to communicate the procedures in a standard manner. To create a BPMN shape, the `type` of the node should be set as "bpmn" and its `shape` should be set as any one of the built-in shape. [BPMN Shapes](/js/api/global#bpmnshapes "BPMN Shapes"). The following code example illustrates how to create a simple business process. 
+BPMN shapes are used to represent the internal business procedure in a graphical notation and enables you to communicate the procedures in a standard manner. To create a BPMN shape, the `type` of the node should be set as "bpmn" and its `shape` should be set as any one of the built-in shape. [BPMN Shapes](/api/js/global#bpmnshapes "BPMN Shapes"). The following code example illustrates how to create a simple business process. 
 
 {% highlight javascript %}
 
@@ -120,7 +120,7 @@ Event triggers are notated as icons inside the circle and they represent the spe
 
 ### Gateway
 
-Gateway is used to control the flow of a process. It is represented as a diamond shape. To create a gateway, the `shape` property of node should be set as "gateway" and the `gateway` property can be set with any of the appropriate [Gateways](/js/api/global#bpmngateways "Gateways"). The following code example illustrates how to create a BPMN Gateway.
+Gateway is used to control the flow of a process. It is represented as a diamond shape. To create a gateway, the `shape` property of node should be set as "gateway" and the `gateway` property can be set with any of the appropriate [Gateways](/api/js/global#bpmngateways "Gateways"). The following code example illustrates how to create a BPMN Gateway.
 
 {% highlight javascript %}
 
@@ -173,7 +173,7 @@ There are two types of activities .They are listed as follows.
 * Task – Occurs within a process and it is not broken down to finer level of detail.
 * Subprocess – Occurs within a process and it is broken down to finer level of detail.
 
-To create a BPMN activity, you need to set the `shape` as "activity". You also need to set the type of the [BPMN Activity](/js/api/global#bpmnactivity "BPMN Activity") by using the `activity` property of node. By default, the type of the `activity` is set as "task". The following code example illustrates how to create an activity.
+To create a BPMN activity, you need to set the `shape` as "activity". You also need to set the type of the [BPMN Activity](/api/js/global#bpmnactivity "BPMN Activity") by using the `activity` property of node. By default, the type of the `activity` is set as "task". The following code example illustrates how to create an activity.
 
 {% highlight javascript %}
 

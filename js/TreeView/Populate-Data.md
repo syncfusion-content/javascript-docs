@@ -10,7 +10,7 @@ documentation: ug
 
 # Populate Data
 
-TreeView can be populated with local or remote data source by using a property [dataSource](http://help.syncfusion.com/js/api/ejtreeview#members:fields-datasource), which is the member of [fields](http://help.syncfusion.com/js/api/ejtreeview#members:fields) property.
+TreeView can be populated with local or remote data source by using a property [dataSource](http://help.syncfusion.com/api/js/ejtreeview#members:fields-datasource), which is the member of [fields](http://help.syncfusion.com/api/js/ejtreeview#members:fields) property.
 
 In TreeView, you should use “**fields**” property to go with data source. It specifies the mapping fields for the data source to receive the data, query to process the data and field mappers to map the data members.
 
@@ -25,63 +25,63 @@ Properties</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{'[dataSource](http://help.syncfusion.com/js/api/ejtreeview#members:fields-datasource)'| markdownify }}<br/><br/></td><td>
+{{'[dataSource](http://help.syncfusion.com/api/js/ejtreeview#members:fields-datasource)'| markdownify }}<br/><br/></td><td>
 The data source contains the list of data for generating the TreeView list.<br/><br/></td></tr>
 <tr>
 <td>
-{{'[query](http://help.syncfusion.com/js/api/ejtreeview#members:fields-query)'| markdownify }}<br/><br/></td><td>
+{{'[query](http://help.syncfusion.com/api/js/ejtreeview#members:fields-query)'| markdownify }}<br/><br/></td><td>
 It specifies the query to retrieve the data from the online server.<br/><br/></td></tr>
 <tr>
 <td>
-{{'[tableName](http://help.syncfusion.com/js/api/ejtreeview#members:fields-tablename)'| markdownify }}<br/><br/></td><td>
+{{'[tableName](http://help.syncfusion.com/api/js/ejtreeview#members:fields-tablename)'| markdownify }}<br/><br/></td><td>
 It specifies the name of the table from which data to be processed from given data source.<br/><br/></td></tr>
 <tr>
 <td>
-{{'[id](http://help.syncfusion.com/js/api/ejtreeview#members:fields-id)'| markdownify }}<br/><br/></td><td>
+{{'[id](http://help.syncfusion.com/api/js/ejtreeview#members:fields-id)'| markdownify }}<br/><br/></td><td>
 It specifies the ID of the node.<br/><br/></td></tr>
 <tr>
 <td>
-{{'[parentId](http://help.syncfusion.com/js/api/ejtreeview#members:fields-parentid)'| markdownify }}<br/><br/></td><td>
+{{'[parentId](http://help.syncfusion.com/api/js/ejtreeview#members:fields-parentid)'| markdownify }}<br/><br/></td><td>
 It specifies the parent id of the node<br/><br/></td></tr>
 <tr>
 <td>
-{{'[text](http://help.syncfusion.com/js/api/ejtreeview#members:fields-text)'| markdownify }}<br/><br/></td><td>
+{{'[text](http://help.syncfusion.com/api/js/ejtreeview#members:fields-text)'| markdownify }}<br/><br/></td><td>
 It specifies the text content of the node.<br/><br/></td></tr>
 <tr>
 <td>
-{{'[hasChild](http://help.syncfusion.com/js/api/ejtreeview#members:fields-haschild)'| markdownify }}<br/><br/></td><td>
+{{'[hasChild](http://help.syncfusion.com/api/js/ejtreeview#members:fields-haschild)'| markdownify }}<br/><br/></td><td>
 It specifies the node has child (which is the nested or inner level of nodes). Also it’s used in load on demand of tree data.<br/><br/></td></tr>
 <tr>
 <td>
-{{'[expanded](http://help.syncfusion.com/js/api/ejtreeview#members:fields-expanded)'| markdownify }}<br/><br/></td><td>
+{{'[expanded](http://help.syncfusion.com/api/js/ejtreeview#members:fields-expanded)'| markdownify }}<br/><br/></td><td>
 It specifies the tree node to be in expanded state<br/><br/></td></tr>
 <tr>
 <td>
-{{'[selected](http://help.syncfusion.com/js/api/ejtreeview#members:fields-selected)'| markdownify }}<br/><br/></td><td>
+{{'[selected](http://help.syncfusion.com/api/js/ejtreeview#members:fields-selected)'| markdownify }}<br/><br/></td><td>
 It specifies the select node at initialize. N> only one node get selected <br/><br/></td></tr>
 <tr>
 <td>
-{{'[isChecked](http://help.syncfusion.com/js/api/ejtreeview#members:fields-ischecked)'| markdownify }} <br/><br/></td><td>
+{{'[isChecked](http://help.syncfusion.com/api/js/ejtreeview#members:fields-ischecked)'| markdownify }} <br/><br/></td><td>
 It specifies the node to be in checked state, if tree node represented with checkboxes. <br/><br/></td></tr>
 <tr>
 <td>
-{{'[imageUrl](http://help.syncfusion.com/js/api/ejtreeview#members:fields-imageurl)'| markdownify }}<br/><br/></td><td>
+{{'[imageUrl](http://help.syncfusion.com/api/js/ejtreeview#members:fields-imageurl)'| markdownify }}<br/><br/></td><td>
 It defines the image location.<br/><br/></td></tr>
 <tr>
 <td>
-{{'[imageAttribute](http://help.syncfusion.com/js/api/ejtreeview#members:fields-imageattribute)'| markdownify }}<br/><br/></td><td>
+{{'[imageAttribute](http://help.syncfusion.com/api/js/ejtreeview#members:fields-imageattribute)'| markdownify }}<br/><br/></td><td>
 It defines the image attributes such as height, width, styles, etc.<br/><br/></td></tr>
 <tr>
 <td>
-{{'[spriteCssClass](http://help.syncfusion.com/js/api/ejtreeview#members:fields-spritecssclass)'| markdownify }}<br/><br/></td><td>
+{{'[spriteCssClass](http://help.syncfusion.com/api/js/ejtreeview#members:fields-spritecssclass)'| markdownify }}<br/><br/></td><td>
 It defines the sprite CSS for the image tag.<br/><br/></td></tr>
 <tr>
 <td>
-{{'[htmlAttribute](http://help.syncfusion.com/js/api/ejtreeview#members:fields-htmlattribute)'| markdownify }}<br/><br/></td><td>
+{{'[htmlAttribute](http://help.syncfusion.com/api/js/ejtreeview#members:fields-htmlattribute)'| markdownify }}<br/><br/></td><td>
 It defines the HTML attributes such as class and styles for a node ("li" tag).<br/><br/></td></tr>
 <tr>
 <td>
-{{'[linkAttribute](http://help.syncfusion.com/js/api/ejtreeview#members:fields-linkattribute)'| markdownify }}<br/><br/></td><td>
+{{'[linkAttribute](http://help.syncfusion.com/api/js/ejtreeview#members:fields-linkattribute)'| markdownify }}<br/><br/></td><td>
 It defines the HTML attributes such as class and styles for a link tag, which is child of node.<br/><br/></td></tr>
 </table>
 Mapping all fields with data source
@@ -158,7 +158,7 @@ To find the complete details about fields, refer the sample [here](http://jsplay
 
 ## Local Data
 
-TreeView can be rendered from a self-referential data by providing the two required fields [id](http://help.syncfusion.com/js/api/ejtreeview#members:fields-id) and [parentId](http://help.syncfusion.com/js/api/ejtreeview#members:fields-parentid). 
+TreeView can be rendered from a self-referential data by providing the two required fields [id](http://help.syncfusion.com/api/js/ejtreeview#members:fields-id) and [parentId](http://help.syncfusion.com/api/js/ejtreeview#members:fields-parentid). 
 
 {% highlight js %}
 
@@ -178,7 +178,7 @@ TreeView can be rendered from a self-referential data by providing the two requi
 
 {% endhighlight %}
 
-Above flat array of JSON data can be directly assigned to [dataSource](http://help.syncfusion.com/js/api/ejtreeview#members:fields-datasource) property and mapping data fields with respect to the mapper field in order to create TreeView.
+Above flat array of JSON data can be directly assigned to [dataSource](http://help.syncfusion.com/api/js/ejtreeview#members:fields-datasource) property and mapping data fields with respect to the mapper field in order to create TreeView.
 
 {% highlight html %}
 
@@ -232,7 +232,7 @@ Above flat array of JSON data can be directly assigned to [dataSource](http://he
 
 ## Remote Data
 
-When using remote data binding, the adaptor of [ej.DataManager](http://helpjs.syncfusion.com/js/api/ejdatamanager#) plays vital role in processing queries to make them suitable to sends along with data request and also process the response data from the server.
+When using remote data binding, the adaptor of [ej.DataManager](http://helpjs.syncfusion.com/api/js/ejdatamanager#) plays vital role in processing queries to make them suitable to sends along with data request and also process the response data from the server.
 
 ### OData
 
@@ -240,7 +240,7 @@ When using remote data binding, the adaptor of [ej.DataManager](http://helpjs.sy
 
 * Passing OData service link to DataManager
 
-You can provide the OData service URL directly to the [ej.DataManager](http://helpjs.syncfusion.com/js/api/ejdatamanager#) class and then we can assign it to TreeView dataSource.
+You can provide the OData service URL directly to the [ej.DataManager](http://helpjs.syncfusion.com/api/js/ejdatamanager#) class and then we can assign it to TreeView dataSource.
 
 {% highlight html %}
 
@@ -286,9 +286,9 @@ You can provide the OData service URL directly to the [ej.DataManager](http://he
 
 {% endhighlight %}
 
-* Passing OData service link to “**url**” property of [ej.DataManager](http://helpjs.syncfusion.com/js/api/ejdatamanager#)
+* Passing OData service link to “**url**” property of [ej.DataManager](http://helpjs.syncfusion.com/api/js/ejdatamanager#)
 
-By using “**url**” property of [ej.DataManager](http://helpjs.syncfusion.com/js/api/ejdatamanager#) we can bind OData Service to Dropdown. Here we may also specify the **adaptor** as [ej.ODataAdaptor](http://helpjs.syncfusion.com/js/datamanager/data-adaptors#odata-adaptor) and it is optional to specify.
+By using “**url**” property of [ej.DataManager](http://helpjs.syncfusion.com/api/js/ejdatamanager#) we can bind OData Service to Dropdown. Here we may also specify the **adaptor** as [ej.ODataAdaptor](http://helpjs.syncfusion.com/js/datamanager/data-adaptors#odata-adaptor) and it is optional to specify.
 
 We can provide adaptor value either as string value (“ODataAdaptor”) or by creating a new instance (new [ej.ODataAdaptor](http://helpjs.syncfusion.com/js/datamanager/data-adaptors#odata-adaptor))
 
@@ -448,7 +448,7 @@ Using [ej.WebApiAdaptor](http://helpjs.syncfusion.com/js/datamanager/data-adapto
 
 ### Other Restful Web Services
 
-The Custom Adaptor concept of [ej.DataManager](http://helpjs.syncfusion.com/js/api/ejdatamanager#) allow you to customize or generate your own adaptor which is used to process query and result data. 
+The Custom Adaptor concept of [ej.DataManager](http://helpjs.syncfusion.com/api/js/ejdatamanager#) allow you to customize or generate your own adaptor which is used to process query and result data. 
 
 [http://helpjs.syncfusion.com/js/datamanager/data-adaptors#custom-adaptor](http://helpjs.syncfusion.com/js/datamanager/data-adaptors#custom-adaptor)
 
@@ -514,7 +514,7 @@ The Custom Adaptor concept of [ej.DataManager](http://helpjs.syncfusion.com/js/a
 
 ## Load on Demand
 
-Load on demand is a technique (Lazy load) that is used to reduce the bandwidth size of consuming huge data. You can load data on demand in TreeView by using [loadOnDemand](http://help.syncfusion.com/js/api/ejtreeview#members:loadondemand) property when you’re going to use huge data.
+Load on demand is a technique (Lazy load) that is used to reduce the bandwidth size of consuming huge data. You can load data on demand in TreeView by using [loadOnDemand](http://help.syncfusion.com/api/js/ejtreeview#members:loadondemand) property when you’re going to use huge data.
 
 Refer below code example to load data on demand from local data source.
 

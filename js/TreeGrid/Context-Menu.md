@@ -9,7 +9,7 @@ documentation: ug
 
 # Context Menu
 
-**Context menu** in TreeGrid control is used to manipulate (add, edit and delete) the tree grid rows. In TreeGrid, context menu can be enabled with [`contextMenuSettings`](/js/api/ejtreegrid#contextmenusettingsspan-classtype-signature-type-objectobjectspan "contextMenuSettings") property. The `contextMenuSettings` property contains two inner properties [`showContextMenu`](/js/api/ejtreegrid#contextmenusettingsshowcontextmenuspan-classtype-signature-type-booleanbooleanspan "contextMenuSettings.showContextMenu") and [`contextMenuItems`](/js/api/ejtreegrid#contextmenusettingscontextmenuitemsspan-classtype-signature-type-arrayarrayspan "contextMenuSettings.contextMenuItems").
+**Context menu** in TreeGrid control is used to manipulate (add, edit and delete) the tree grid rows. In TreeGrid, context menu can be enabled with [`contextMenuSettings`](/api/js/ejtreegrid#contextmenusettingsspan-classtype-signature-type-objectobjectspan "contextMenuSettings") property. The `contextMenuSettings` property contains two inner properties [`showContextMenu`](/api/js/ejtreegrid#contextmenusettingsshowcontextmenuspan-classtype-signature-type-booleanbooleanspan "contextMenuSettings.showContextMenu") and [`contextMenuItems`](/api/js/ejtreegrid#contextmenusettingscontextmenuitemsspan-classtype-signature-type-arrayarrayspan "contextMenuSettings.contextMenuItems").
 
 The `showContextMenu` property is used to **enable or disable** the context menu, default value for this property is `false`.
 
@@ -34,7 +34,7 @@ The following screenshot displays the Context menu in TreeGrid control.
 
 ### ContextMenu Customization
 
-Context menu can be customized by adding a new custom menu item to it. In TreeGrid, context menu can be customized using [`contextMenuOpen`](/js/api/ejtreegrid#contextmenuopen "contextMenuOpen") client side event. This event is triggered when the context menu is rendered with mouse right click action. The following properties are available in the event,
+Context menu can be customized by adding a new custom menu item to it. In TreeGrid, context menu can be customized using [`contextMenuOpen`](/api/js/ejtreegrid#contextmenuopen "contextMenuOpen") client side event. This event is triggered when the context menu is rendered with mouse right click action. The following properties are available in the event,
 
 * headerText: Display text for menu item.
 * menuId: provides ID field for the created DOM element for custom menu item

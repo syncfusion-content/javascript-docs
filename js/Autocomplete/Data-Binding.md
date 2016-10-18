@@ -18,13 +18,13 @@ The AutoComplete widget has a field property (object) which holds the properties
 
 The field object contains the following properties.
 
-* [text](http://help.syncfusion.com/js/api/ejautocomplete)
+* [text](http://help.syncfusion.com/api/js/ejautocomplete)
 
-* [key](http://help.syncfusion.com/js/api/ejautocomplete)
+* [key](http://help.syncfusion.com/api/js/ejautocomplete)
 
-* [groupBy](http://help.syncfusion.com/js/api/ejautocomplete)
+* [groupBy](http://help.syncfusion.com/api/js/ejautocomplete)
 
-* [htmlAttributes](http://help.syncfusion.com/js/api/ejautocomplete)
+* [htmlAttributes](http://help.syncfusion.com/api/js/ejautocomplete)
 
 
 
@@ -141,12 +141,12 @@ N> In the above data manager configuration, “crossDomain” must be set to tru
 
 #### Handling errors
 
- In remote binding, the server might not return data sometimes due to various reasons. In such cases we need to handle the error properly. We can handle this using the “[actionFailure](http://help.syncfusion.com/js/api/ejautocomplete)” event. 
+ In remote binding, the server might not return data sometimes due to various reasons. In such cases we need to handle the error properly. We can handle this using the “[actionFailure](http://help.syncfusion.com/api/js/ejautocomplete)” event. 
 
 {%seealso%} 
-* [actionComplete](http://help.syncfusion.com/js/api/ejautocomplete) event
+* [actionComplete](http://help.syncfusion.com/api/js/ejautocomplete) event
 
-* [actionSuccess](http://help.syncfusion.com/js/api/ejautocomplete) event
+* [actionSuccess](http://help.syncfusion.com/api/js/ejautocomplete) event
 {%endseealso%}
 
 {% highlight html %}

@@ -11,7 +11,7 @@ documentation: ug
 
 N> This feature is applicable only for Relational data source.
 
-You can hide the **Sub Total** for respective fields in rows and columns by setting the property [`showSubTotal`](/js/api/ejpivotgrid#members:showSubTotal) to `false`
+You can hide the **Sub Total** for respective fields in rows and columns by setting the property [`showSubTotal`](/api/js/ejpivotgrid#members:showSubTotal) to `false`
 
 ## Client Mode
 

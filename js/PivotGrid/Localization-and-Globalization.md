@@ -10,7 +10,7 @@ documentation: ug
 # Localization and Globalization
 
 ## Localization in PivotGrid 
-You can localize the PivotGrid controls text with a collection of localized strings using [`ej.PivotGrid.Locale`](/js/api/ejpivotgrid#members:locale) for different cultures. By default, the PivotGrid control is localized in **"en-US"** culture.
+You can localize the PivotGrid controls text with a collection of localized strings using [`ej.PivotGrid.Locale`](/api/js/ejpivotgrid#members:locale) for different cultures. By default, the PivotGrid control is localized in **"en-US"** culture.
 
 {% highlight html %}
 
@@ -1167,7 +1167,7 @@ Content displayed within the PivotGrid control are obtained from the Relational 
 
 ## RTL
 
-You can render our PivotGrid control from Right to Left by setting [`enableRTL`](/js/api/ejpivotgrid#members:enablertl) property to true.
+You can render our PivotGrid control from Right to Left by setting [`enableRTL`](/api/js/ejpivotgrid#members:enablertl) property to true.
 
 {% highlight js %}
 

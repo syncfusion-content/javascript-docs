@@ -13,7 +13,7 @@ I> This feature is applicable only for OLAP data source.
 
 ## Pager 
 
-Paging helps to improve the rendering performance of the PivotGrid control by dividing large amount of data into sections and displaying one section at a time. You can enable Paging option in PivotGrid by setting the [`enablePaging`](/js/api/ejpivotgrid#members:enablePaging) property to true. You can provide the page size and current page details for each axis in [`pagerOptions`](/js/api/ejpivotgrid#members:pagerOptions) property.
+Paging helps to improve the rendering performance of the PivotGrid control by dividing large amount of data into sections and displaying one section at a time. You can enable Paging option in PivotGrid by setting the [`enablePaging`](/api/js/ejpivotgrid#members:enablePaging) property to true. You can provide the page size and current page details for each axis in [`pagerOptions`](/api/js/ejpivotgrid#members:pagerOptions) property.
 
 In-order to initialize a **Pager**, first you need to define a **div** tag with an appropriate **id** attribute which acts as a container for the widget. Then you need to initialize the widget using **ejPivotPager** method.
 
@@ -63,7 +63,7 @@ Following are the navigation options available in Pager.
 
 ## Virtual Scrolling
 
-Virtual Scrolling is a technique that allows user to view the PivotGrid information page by page with the use of vertical and horizontal scrollbar. You can enable Virtual Scrolling option in PivotGrid by setting the [`enableVirtualScrolling`](/js/api/ejpivotgrid#members:enablevirtualscrolling) property to true. You can provide the page size and current page details for each axis in [`pagerOptions`](/js/api/ejpivotgrid#members:pagerOptions) property. 
+Virtual Scrolling is a technique that allows user to view the PivotGrid information page by page with the use of vertical and horizontal scrollbar. You can enable Virtual Scrolling option in PivotGrid by setting the [`enableVirtualScrolling`](/api/js/ejpivotgrid#members:enablevirtualscrolling) property to true. You can provide the page size and current page details for each axis in [`pagerOptions`](/api/js/ejpivotgrid#members:pagerOptions) property. 
 
 {% highlight html %}
 

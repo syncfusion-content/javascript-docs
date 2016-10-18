@@ -11,7 +11,7 @@ documentation: ug
 
 I> This feature is applicable only for OLAP data source bound from server-side.
 
-Defer Update support allows the user to refresh the control on-demand and not during every user interaction. To enable this functionality, set the [`enableDeferUpdate`](/js/api/ejpivotclient#members:enabledeferupdate) property to true. By default, the value is set to false.
+Defer Update support allows the user to refresh the control on-demand and not during every user interaction. To enable this functionality, set the [`enableDeferUpdate`](/api/js/ejpivotclient#members:enabledeferupdate) property to true. By default, the value is set to false.
 
 {% highlight javascript %}
 

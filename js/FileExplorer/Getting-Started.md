@@ -183,7 +183,7 @@ Once added the element you can initialize the control from the script section li
 
 {% endhighlight %}
 
-Here [path](http://help.syncfusion.com/js/api/ejfileexplorer#members:path) and [ajaxAction](http://help.syncfusion.com/js/api/ejfileexplorer#members:ajaxaction) are the mandatory configuration to showcase the FileExplorer control.
+Here [path](http://help.syncfusion.com/api/js/ejfileexplorer#members:path) and [ajaxAction](http://help.syncfusion.com/api/js/ejfileexplorer#members:ajaxaction) are the mandatory configuration to showcase the FileExplorer control.
 
     <table>
         <tr>

@@ -69,7 +69,7 @@ You can customize the PivotChart dimension by setting the width and height of th
 
 ## Responsive
 
-PivotChart widget supports responsive rendering based on the target device (desktop & tablet) resolution. It supports resolution upto 1024x600. You can enable responsiveness in PivotChart by setting [`isResponsive`](/js/api/ejpivotchart#members:isresponsive) property to true.
+PivotChart widget supports responsive rendering based on the target device (desktop & tablet) resolution. It supports resolution upto 1024x600. You can enable responsiveness in PivotChart by setting [`isResponsive`](/api/js/ejpivotchart#members:isresponsive) property to true.
 
 {% highlight javascript %}
 

@@ -203,7 +203,7 @@ The TreeGrid control has sorting functionality, to arrange the data in ascending
 
 #### Multicolumn Sorting
 
-Enable the multicolumn sorting in TreeGrid by setting [`allowMultiSorting`](/js/api/ejtreegrid#allowmultisortingspan-classtype-signature-type-booleanbooleanspan "allowMultiSorting") as `true`. You can sort multiple columns in TreeGrid, by selecting the desired column header while holding the `Ctrl` key.
+Enable the multicolumn sorting in TreeGrid by setting [`allowMultiSorting`](/api/js/ejtreegrid#allowmultisortingspan-classtype-signature-type-booleanbooleanspan "allowMultiSorting") as `true`. You can sort multiple columns in TreeGrid, by selecting the desired column header while holding the `Ctrl` key.
 
 {% highlight js %}
 
@@ -219,7 +219,7 @@ Enable the multicolumn sorting in TreeGrid by setting [`allowMultiSorting`](/js/
 
 ### Enable Editing
 
-You can enable Editing in TreeGrid by using the [`editSettings`](/js/api/ejtreegrid#editsettingsspan-classtype-signature-type-objectobjectspan "editSettings") property as follows.
+You can enable Editing in TreeGrid by using the [`editSettings`](/api/js/ejtreegrid#editsettingsspan-classtype-signature-type-objectobjectspan "editSettings") property as follows.
 
 {% highlight js %}
 

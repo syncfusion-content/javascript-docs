@@ -10,7 +10,7 @@ documentation: ug
 
 # Multiple Selection
 
-TreeView supports to select the multiple nodes by specifying [allowMultiSelection](http://help.syncfusion.com/js/api/ejtreeview#members:allowmultiselection) as true. It allows you to select more than one nodes in TreeView.
+TreeView supports to select the multiple nodes by specifying [allowMultiSelection](http://help.syncfusion.com/api/js/ejtreeview#members:allowmultiselection) as true. It allows you to select more than one nodes in TreeView.
 
 {% highlight html %}
 
@@ -67,7 +67,7 @@ For more details about multiple selection in TreeView, refer the sample [here](h
 
 ## Select Nodes
 
-To select more than one nodes of TreeView, you can use [selectedNodes](http://help.syncfusion.com/js/api/ejtreeview#members:selectednodes) property. It will select the TreeView nodes from the given indexes.
+To select more than one nodes of TreeView, you can use [selectedNodes](http://help.syncfusion.com/api/js/ejtreeview#members:selectednodes) property. It will select the TreeView nodes from the given indexes.
 
 {% highlight html %}
 
@@ -126,7 +126,7 @@ To select more than one nodes of TreeView, you can use [selectedNodes](http://he
 
 ## Get Selected Nodes
 
-To get the selected Nodes of TreeView, you can use [getSelectedNodes](http://help.syncfusion.com/js/api/ejtreeview#methods:getselectednodes) method. It returns the collections of TreeView selected nodes.
+To get the selected Nodes of TreeView, you can use [getSelectedNodes](http://help.syncfusion.com/api/js/ejtreeview#methods:getselectednodes) method. It returns the collections of TreeView selected nodes.
 
 {% highlight html %}
 

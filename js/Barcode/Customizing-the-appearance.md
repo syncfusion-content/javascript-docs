@@ -11,7 +11,7 @@ documentation: ug
 
 ##Customizing the Barcode color
 
-A page or printed media with barcode often appears colorful in the background and surrounding region with other contents. In such cases the barcode can also be customized to suit the needs. You can achieve this by changing the [darkBarColor](/js/api/ejBarcode#darkbarcolorspan-classtype-signature-type-objectobjectspan) property.
+A page or printed media with barcode often appears colorful in the background and surrounding region with other contents. In such cases the barcode can also be customized to suit the needs. You can achieve this by changing the [darkBarColor](/api/js/ejBarcode#darkbarcolorspan-classtype-signature-type-objectobjectspan) property.
 
 N>    This color customization is possible only for one dimensional barcodes and it is not supported for two dimensional barcodes.
 
@@ -32,7 +32,7 @@ Execute the above code to render the following output.
 ![](/js/Barcode/Customizing-the-appearance_images/Customizing-the-appearance_img2.png)
 
 ##Customizing the Barcode height
-The height of the barcode can be changed using the [barHeight](/js/api/ejBarcode#barheightspan-classtype-signature-type-numbernumberspan) property. The equivalent property to change the block size for two dimensional barcode is [xDimension](/js/api/ejBarcode#xdimensionspan-classtype-signature-type-numbernumberspan).
+The height of the barcode can be changed using the [barHeight](/api/js/ejBarcode#barheightspan-classtype-signature-type-numbernumberspan) property. The equivalent property to change the block size for two dimensional barcode is [xDimension](/api/js/ejBarcode#xdimensionspan-classtype-signature-type-numbernumberspan).
 
 {% highlight javascript %}
 $("#barcode").ejBarcode({

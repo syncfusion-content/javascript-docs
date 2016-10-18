@@ -10,7 +10,7 @@ documentation: ug
 
 ## Row selection
 
-You can enable or disable the row selection in Gantt, by using [allowSelection](/js/api/ejgantt#members:allowselection) property. And you can able to get the selected row object using selectedItem property from the Gantt model. The following code example shows how to disable the row selection in Gantt.
+You can enable or disable the row selection in Gantt, by using [allowSelection](/api/js/ejgantt#members:allowselection) property. And you can able to get the selected row object using selectedItem property from the Gantt model. The following code example shows how to disable the row selection in Gantt.
 
 {% highlight javascript %}
 $("#GanttContainer").ejGantt({
@@ -24,7 +24,7 @@ $("#GanttContainer").ejGantt({
 
 ### Selecting a row on initial load
 
-You can select a row on load time by setting the index of the row to [selectedRowIndex](/js/api/ejgantt#members:selectedrowindex) property. Find the following code example for details.
+You can select a row on load time by setting the index of the row to [selectedRowIndex](/api/js/ejgantt#members:selectedrowindex) property. Find the following code example for details.
 
 {% highlight javascript %}
 $("#GanttContainer").ejGantt({
@@ -40,7 +40,7 @@ $("#GanttContainer").ejGantt({
 
 ### Selecting a row programmatically 
 
-You can also select a row programmatically by setting index of the row value to [selectedRowIndex](/js/api/ejgantt#members:selectedrowindex) property. The following code shows to select a row programmatically with a custom button click action,
+You can also select a row programmatically by setting index of the row value to [selectedRowIndex](/api/js/ejgantt#members:selectedrowindex) property. The following code shows to select a row programmatically with a custom button click action,
 
 {% highlight html %}
 <body>
@@ -66,7 +66,7 @@ $("#selectRow").click(function(args) {
 
 ## Cell selection
 
-You can select a cell in Gantt by setting [selectionMode](/js/api/ejgantt#members:selectionmode) property as ‘cell’. And you can able to get the selected cell information using selectedCellIndexes property from the Gantt object. selectedCellIndexes is an object collection, which has the cell index and row index information of the selected cells.
+You can select a cell in Gantt by setting [selectionMode](/api/js/ejgantt#members:selectionmode) property as ‘cell’. And you can able to get the selected cell information using selectedCellIndexes property from the Gantt object. selectedCellIndexes is an object collection, which has the cell index and row index information of the selected cells.
 
 Find the code example below to enable the cell selection in Gantt. 
 
@@ -86,7 +86,7 @@ The following screen shots shows you cell selection.
 
 ### Selecting multiple cells
 
-You can also select multiple cells by setting [selectionType](/js/api/ejgantt#members:selectiontype) property as ‘multiple’ while [selectionMode](/js/api/ejgantt#members:selectionmode) property is set to “cell”. Multiple cells can be selected by holding the ctrl key and to click on the cells. The following code example shows you to select multiple cells.
+You can also select multiple cells by setting [selectionType](/api/js/ejgantt#members:selectiontype) property as ‘multiple’ while [selectionMode](/api/js/ejgantt#members:selectionmode) property is set to “cell”. Multiple cells can be selected by holding the ctrl key and to click on the cells. The following code example shows you to select multiple cells.
 
 {% highlight javascript %}
 $("#GanttContainer").ejGantt({
@@ -104,7 +104,7 @@ $("#GanttContainer").ejGantt({
 
 ### Select cells programmatically 
 
-You can select the cells programmatically using [selectCells](/js/api/ejgantt#methods:selectcells) public method. Find the code example below for details.
+You can select the cells programmatically using [selectCells](/api/js/ejgantt#methods:selectcells) public method. Find the code example below for details.
 
 {% highlight html %}
 <body>

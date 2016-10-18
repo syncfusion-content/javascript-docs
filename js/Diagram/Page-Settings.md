@@ -19,7 +19,7 @@ Page settings enable to customize the appearance, width, and height of the Diagr
 The size and appearance of the Diagram pages can be customized with the `pageSettings` property. 
 
 The `pageWidth` and `pageHeight` properties of page settings define the size of the page. In addition to that, you can customize the appearance of the page with `backgroundImage` and set of appearance specific properties.
-To explore those properties, refer [Page Settings](/js/api/ejDiagram#members:pagesettings "Page Settings").
+To explore those properties, refer [Page Settings](/api/js/ejDiagram#members:pagesettings "Page Settings").
 
 You can also customize the appearance of off-page regions with the property `backgroundColor`.
 
@@ -34,7 +34,7 @@ N> When the pageWidth and pageHeight are not specified, the rectangular region t
 You can stretch and align the background image anywhere over the diagram area. 
 The `source` property of `backgroundImage` allows you to set the path of the image. The `scale` and the `align` properties help to stretch/align the background images.
  
-To explore the backgroundImage properties, refer [Background Image](/js/api/ejDiagram#members:backgroundimage "Background Image").
+To explore the backgroundImage properties, refer [Background Image](/api/js/ejDiagram#members:backgroundimage "Background Image").
 
 
 The following code illustrates how to stretch and align the background image.
@@ -86,7 +86,7 @@ $("#diagram").ejDiagram({
 ## Boundary Constraints
 
  Diagram provides support to restrict/customize the interactive region, out of which the elements cannot be dragged, resized or rotated. 
- `boundaryConstraints` property of page settings allows you to customize the interactive region. To explore the boundary constraints, refer refer [Boundary Constraints](/js/api/ejDiagram#members:boundaryConstraints "Boundary Constraints").
+ `boundaryConstraints` property of page settings allows you to customize the interactive region. To explore the boundary constraints, refer refer [Boundary Constraints](/api/js/ejDiagram#members:boundaryConstraints "Boundary Constraints").
 
 The following code example illustrates how to define boundaryConstraints.
 

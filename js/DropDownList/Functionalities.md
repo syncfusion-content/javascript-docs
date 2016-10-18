@@ -28,7 +28,7 @@ The following API’s, select the items in the DropDownList via text or value or
     </tr>
     <tr>
         <td>
-            {{'[value](http://help.syncfusion.com/js/api/ejdropdownlist#members:value)'| markdownify }} 
+            {{'[value](http://help.syncfusion.com/api/js/ejdropdownlist#members:value)'| markdownify }} 
             <br/>
         </td>
         <td>
@@ -39,7 +39,7 @@ The following API’s, select the items in the DropDownList via text or value or
     </tr>
     <tr>
         <td>
-            {{'[text](http://help.syncfusion.com/js/api/ejdropdownlist#members:text)'| markdownify }} 
+            {{'[text](http://help.syncfusion.com/api/js/ejdropdownlist#members:text)'| markdownify }} 
             <br/>
         </td>
         <td>
@@ -50,7 +50,7 @@ The following API’s, select the items in the DropDownList via text or value or
     </tr>
     <tr>
         <td>
-            {{'[selectedIndex](http://help.syncfusion.com/js/api/ejdropdownlist#members:selectedindex)'| markdownify }} 
+            {{'[selectedIndex](http://help.syncfusion.com/api/js/ejdropdownlist#members:selectedindex)'| markdownify }} 
             <br/>
         </td>
         <td>
@@ -60,7 +60,7 @@ The following API’s, select the items in the DropDownList via text or value or
     </tr>
     <tr>
         <td>
-             {{'[selectedIndices](http://help.syncfusion.com/js/api/ejdropdownlist#members:selectedindices)'| markdownify }}
+             {{'[selectedIndices](http://help.syncfusion.com/api/js/ejdropdownlist#members:selectedindices)'| markdownify }}
             <br/>
         </td>
         <td>
@@ -88,7 +88,7 @@ The following methods, select the items in the DropDownList.
     </tr>
     <tr>
         <td>
-            {{'[selectItemByIndices](http://help.syncfusion.com/js/api/ejdropdownlist#methods:selectitembyindices)'| markdownify }}
+            {{'[selectItemByIndices](http://help.syncfusion.com/api/js/ejdropdownlist#methods:selectitembyindices)'| markdownify }}
             <br/>
         </td>
         <td>
@@ -97,7 +97,7 @@ The following methods, select the items in the DropDownList.
     </tr>
     <tr>
         <td>
-            {{'[selectItemByText](http://help.syncfusion.com/js/api/ejdropdownlist#methods:selectItemByText)'| markdownify }}
+            {{'[selectItemByText](http://help.syncfusion.com/api/js/ejdropdownlist#methods:selectItemByText)'| markdownify }}
             <br/>
         </td>
         <td>
@@ -106,7 +106,7 @@ The following methods, select the items in the DropDownList.
     </tr>
     <tr>
         <td>
-            {{'[selectItemByValue](http://help.syncfusion.com/js/api/ejdropdownlist#methods:selectitembyvalue)'| markdownify }}
+            {{'[selectItemByValue](http://help.syncfusion.com/api/js/ejdropdownlist#methods:selectitembyvalue)'| markdownify }}
             <br/>
         </td>
         <td>
@@ -131,7 +131,7 @@ The following methods, used to retrieve the items from the DropDownList.
     </tr>
     <tr>
         <td>
-            {{'[getListData](http://help.syncfusion.com/js/api/ejdropdownlist#methods:getlistdata)'| markdownify }}
+            {{'[getListData](http://help.syncfusion.com/api/js/ejdropdownlist#methods:getlistdata)'| markdownify }}
             <br/>
         </td>
         <td>
@@ -140,7 +140,7 @@ The following methods, used to retrieve the items from the DropDownList.
     </tr>
     <tr>
         <td>
-            {{'[getSelectedItem](http://help.syncfusion.com/js/api/ejdropdownlist#methods:getselecteditem)'| markdownify }}
+            {{'[getSelectedItem](http://help.syncfusion.com/api/js/ejdropdownlist#methods:getselecteditem)'| markdownify }}
             <br/>
         </td>
         <td>
@@ -149,7 +149,7 @@ The following methods, used to retrieve the items from the DropDownList.
     </tr>
     <tr>
         <td>
-            {{'[getSelectedValue](http://help.syncfusion.com/js/api/ejdropdownlist#methods:getSelectedValue)'| markdownify }}
+            {{'[getSelectedValue](http://help.syncfusion.com/api/js/ejdropdownlist#methods:getSelectedValue)'| markdownify }}
             <br/>
         </td>
         <td>
@@ -163,7 +163,7 @@ I> When multiSelectMode is enabled in a DropDownList and selected items having s
 
 ### Using value or text
 
-To select an item initially you can pass the item’s value via [value](http://help.syncfusion.com/js/api/ejdropdownlist#members:value) property or [selectItemByValue](http://help.syncfusion.com/js/api/ejdropdownlist#members:selectitembyvalue) method. To achieve this DropDownList widget must be initiated with the associate value. 
+To select an item initially you can pass the item’s value via [value](http://help.syncfusion.com/api/js/ejdropdownlist#members:value) property or [selectItemByValue](http://help.syncfusion.com/api/js/ejdropdownlist#members:selectitembyvalue) method. To achieve this DropDownList widget must be initiated with the associate value. 
 
 {% highlight html %}
 
@@ -205,7 +205,7 @@ To select an item initially you can pass the item’s value via [value](http://h
 
 ![](Functionalities_images/Functionalities_img1.jpeg)
 
-N> To retrieve the selected item’s LI elements and value you can use [getSelectedItem](http://help.syncfusion.com/js/api/ejdropdownlist#methods:getselecteditem), [getSelectedValue](http://help.syncfusion.com/js/api/ejdropdownlist#methods:getselectedvalue) methods respectively.
+N> To retrieve the selected item’s LI elements and value you can use [getSelectedItem](http://help.syncfusion.com/api/js/ejdropdownlist#methods:getselecteditem), [getSelectedValue](http://help.syncfusion.com/api/js/ejdropdownlist#methods:getselectedvalue) methods respectively.
 
 {% highlight html %}
 
@@ -251,7 +251,7 @@ N> To retrieve the selected item’s LI elements and value you can use [getSelec
 
 ### Using indices
 
-You can select a single or more than one item by passing index values to the properties [selectedIndex](http://help.syncfusion.com/js/api/ejdropdownlist#members:selectedindex) or [selectedIndices](http://help.syncfusion.com/js/api/ejdropdownlist#members:selectedindices) respectively. Index starts from 0 here.
+You can select a single or more than one item by passing index values to the properties [selectedIndex](http://help.syncfusion.com/api/js/ejdropdownlist#members:selectedindex) or [selectedIndices](http://help.syncfusion.com/api/js/ejdropdownlist#members:selectedindices) respectively. Index starts from 0 here.
 
 {% highlight html %}
 
@@ -335,7 +335,7 @@ I> To use "selectedIndices" property, you should enable either showCheckbox or m
 
 ### Unselect items
 
-Similarly, you can unselect a single or multiple items by using [unselectItemByValue](http://help.syncfusion.com/js/api/ejdropdownlist#methods:unselectitembyvalue) or [unselectItemByIndices](http://help.syncfusion.com/js/api/ejdropdownlist#methods:unselectitembyindices) or [unselectItemByText](http://help.syncfusion.com/js/api/ejdropdownlist#methods:unselectitembytext) methods. This will remove the selection state of the corresponding data item from the popup list and textbox. 
+Similarly, you can unselect a single or multiple items by using [unselectItemByValue](http://help.syncfusion.com/api/js/ejdropdownlist#methods:unselectitembyvalue) or [unselectItemByIndices](http://help.syncfusion.com/api/js/ejdropdownlist#methods:unselectitembyindices) or [unselectItemByText](http://help.syncfusion.com/api/js/ejdropdownlist#methods:unselectitembytext) methods. This will remove the selection state of the corresponding data item from the popup list and textbox. 
 
 {% highlight html %}
 
@@ -392,7 +392,7 @@ Similarly, you can unselect a single or multiple items by using [unselectItemByV
 
 ## Grouping
 
-The DropDownList items can be categorized by using a specific field in the popup list. This is enabled by using [groupBy](http://help.syncfusion.com/js/api/ejdropdownlist#members:fields-groupby) field on data source binding. By default grouping is disabled in DropDownList.
+The DropDownList items can be categorized by using a specific field in the popup list. This is enabled by using [groupBy](http://help.syncfusion.com/api/js/ejdropdownlist#members:fields-groupby) field on data source binding. By default grouping is disabled in DropDownList.
 The below given example explains the behavior of grouping with JSON array binding.
 
 {% highlight html %}
@@ -526,7 +526,7 @@ I> Virtual scrolling is not supported with Grouping.
 
 ## Sorting
 
-Sorting is enabled to order to display the items alphabetically in either ascending or descending order. By default the items is displayed in the initialized order, use [enableSorting](http://help.syncfusion.com/js/api/ejdropdownlist#members:enablesorting) property to automatically sort strings based on text field value. You can assign either “ascending” or “descending” string values to the [sortOrder](http://help.syncfusion.com/js/api/ejdropdownlist#members:sortorder) property to sort out the list items. By default ascending order is followed when "sortOrder" property is not specified. 
+Sorting is enabled to order to display the items alphabetically in either ascending or descending order. By default the items is displayed in the initialized order, use [enableSorting](http://help.syncfusion.com/api/js/ejdropdownlist#members:enablesorting) property to automatically sort strings based on text field value. You can assign either “ascending” or “descending” string values to the [sortOrder](http://help.syncfusion.com/api/js/ejdropdownlist#members:sortorder) property to sort out the list items. By default ascending order is followed when "sortOrder" property is not specified. 
 
 {% highlight html %}
 
@@ -570,7 +570,7 @@ I> Virtual scrolling is not supported with Sorting.
 
 ## Cascading
 
-This works for series of DropDownList in which items are filtered based on the previous DropDownList‘s selection. Cascading is performed based on the value field and this field should be bounded with a foreign key. To perform cascading, specify the child DropDownList’s id in [cascadeTo](http://help.syncfusion.com/js/api/ejdropdownlist#members:cascadeto) property and use delimiter (“,”) to specify more than one child DropDownList.
+This works for series of DropDownList in which items are filtered based on the previous DropDownList‘s selection. Cascading is performed based on the value field and this field should be bounded with a foreign key. To perform cascading, specify the child DropDownList’s id in [cascadeTo](http://help.syncfusion.com/api/js/ejdropdownlist#members:cascadeto) property and use delimiter (“,”) to specify more than one child DropDownList.
 
 Configuring the data items for cascading to the series of DropDownList is demonstrated below
 
@@ -698,7 +698,7 @@ Configuring the data items for cascading to the series of DropDownList is demons
 
 ### Binding the data source to the cascading DropDownList using cascade event
 
-Bind the data source to the cascading DropDownList dynamically using [cascade](http://help.syncfusion.com/js/api/ejdropdownlist#events:cascade) event as demonstrated below,
+Bind the data source to the cascading DropDownList dynamically using [cascade](http://help.syncfusion.com/api/js/ejdropdownlist#events:cascade) event as demonstrated below,
 
 {% highlight html %}
 
@@ -906,7 +906,7 @@ Items are searched based on the keyed in values to the textbox. There are two ty
 
 ### Incremental Search
 
-Selects the item in the popup list based on the keyed in value. If the time taken to type exceeds 1000 milliseconds then filtered items will be reset based on the current input value. By default this mode of search is enabled. Incremental search can be case sensitive or case insensitive. To make case sensitive, you can use [caseSensitiveSearch](http://help.syncfusion.com/js/api/ejdropdownlist#members:casesensitivesearch) property.
+Selects the item in the popup list based on the keyed in value. If the time taken to type exceeds 1000 milliseconds then filtered items will be reset based on the current input value. By default this mode of search is enabled. Incremental search can be case sensitive or case insensitive. To make case sensitive, you can use [caseSensitiveSearch](http://help.syncfusion.com/api/js/ejdropdownlist#members:casesensitivesearch) property.
 
 {% highlight html %}
 
@@ -950,8 +950,8 @@ Selects the item in the popup list based on the keyed in value. If the time take
 
 ### Filter search
 
-You can quickly locate specific item within a large data source by filtering matches with a search box. A text box appears in the popup list for searching when [enableFilterSearch](http://help.syncfusion.com/js/api/ejdropdownlist#members:enablefiltersearch) property is enabled. By default, filtering returns the matched items list based on text in search textbox. 
-You can configure the search filter by using [filterType](http://help.syncfusion.com/js/api/ejdropdownlist#members:filtertype) property. There is two types of filter options,
+You can quickly locate specific item within a large data source by filtering matches with a search box. A text box appears in the popup list for searching when [enableFilterSearch](http://help.syncfusion.com/api/js/ejdropdownlist#members:enablefiltersearch) property is enabled. By default, filtering returns the matched items list based on text in search textbox. 
+You can configure the search filter by using [filterType](http://help.syncfusion.com/api/js/ejdropdownlist#members:filtertype) property. There is two types of filter options,
 
 * Starts With 
 * Contains
@@ -1006,11 +1006,11 @@ N> [jquery.validate.min](http://cdn.syncfusion.com/js/assets/external/jquery.val
 
 ### Validation Rules
 
-The validation rules help you to verify the selected text by adding validation attributes to the input element. This can be set by using [validationRules](http://help.syncfusion.com/js/api/ejdropdownlist#members:validationrules) property.
+The validation rules help you to verify the selected text by adding validation attributes to the input element. This can be set by using [validationRules](http://help.syncfusion.com/api/js/ejdropdownlist#members:validationrules) property.
 
 ### Validation Messages 
 
-You can set your own custom error message by using [validationMessage](http://help.syncfusion.com/js/api/ejdropdownlist#members:validationmessage) property. To display the error message, specify the corresponding annotation attribute followed by the message to display.
+You can set your own custom error message by using [validationMessage](http://help.syncfusion.com/api/js/ejdropdownlist#members:validationmessage) property. To display the error message, specify the corresponding annotation attribute followed by the message to display.
 
 N> jQuery predefined error messages to that annotation attribute will be shown when this property is not defined. The below given example explain this behavior of ‘required’ attribute,
 

@@ -9,11 +9,11 @@ keywords: controls support,ribbon controls support
 
 # Controls Support
 
-Button, Split Button, DropdownList, Toggle button, Gallery and Custom controls can be added to each groups. You can set [`type`](http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-content-groups-type) property in group to define the controls. Default `type` is `button`. 
+Button, Split Button, DropdownList, Toggle button, Gallery and Custom controls can be added to each groups. You can set [`type`](http://help.syncfusion.com/api/js/ejribbon#members:tabs-groups-content-groups-type) property in group to define the controls. Default `type` is `button`. 
 
 ## Built in Controls
 
-The following table describes about the built in controls [`type`](http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-content-groups-type) and their corresponding control settings.
+The following table describes about the built in controls [`type`](http://help.syncfusion.com/api/js/ejribbon#members:tabs-groups-content-groups-type) and their corresponding control settings.
 
 <table class="params">
 <thead>
@@ -26,7 +26,7 @@ The following table describes about the built in controls [`type`](http://help.s
 <tbody>
 <tr>
 <td class="type">Button</td>
-<td class="control settings"><span class="param-type"><a href="http://help.syncfusion.com/js/api/ejbutton">ejButton</a> -  <a href="http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-content-groups-buttonsettings">buttonSettings</a></span></td><td class="example last">
+<td class="control settings"><span class="param-type"><a href="http://help.syncfusion.com/api/js/ejbutton">ejButton</a> -  <a href="http://help.syncfusion.com/api/js/ejribbon#members:tabs-groups-content-groups-buttonsettings">buttonSettings</a></span></td><td class="example last">
     buttonSettings: {
 					width: 70,
 					contentType: ej.ContentType.ImageOnly,
@@ -36,7 +36,7 @@ The following table describes about the built in controls [`type`](http://help.s
 </tr>
 <tr>
 <td class="type">SplitButton</td>
-<td class="control settings"><span class="param-type"> <a href="http://help.syncfusion.com/js/api/ejsplitbutton">ejSplitButton</a> - <a href="http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-content-groups-splitbuttonsettings">splitButtonSettings</a></span></td>
+<td class="control settings"><span class="param-type"> <a href="http://help.syncfusion.com/api/js/ejsplitbutton">ejSplitButton</a> - <a href="http://help.syncfusion.com/api/js/ejribbon#members:tabs-groups-content-groups-splitbuttonsettings">splitButtonSettings</a></span></td>
 <td class="example last">
 	splitButtonSettings: {
                           contentType: ej.ContentType.ImageOnly,
@@ -48,7 +48,7 @@ The following table describes about the built in controls [`type`](http://help.s
 </tr>
 <tr>
 <td class="type">ToggleButton</td>
-<td class="control settings"><span class="param-type"><a href="http://help.syncfusion.com/js/api/ejtogglebutton">ejToggleButton</a> - <a href="http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-content-groups-togglebuttonsettings">toggleButtonSettings</a></span></td>
+<td class="control settings"><span class="param-type"><a href="http://help.syncfusion.com/api/js/ejtogglebutton">ejToggleButton</a> - <a href="http://help.syncfusion.com/api/js/ejribbon#members:tabs-groups-content-groups-togglebuttonsettings">toggleButtonSettings</a></span></td>
 <td class="example last">
 	toggleButtonSettings: {
                            contentType: ej.ContentType.ImageOnly,
@@ -59,7 +59,7 @@ The following table describes about the built in controls [`type`](http://help.s
 </tr>
 <tr>
 <td class="type">DropDownList</td>
-<td class="control settings"><span class="param-type"><a href="http://help.syncfusion.com/js/api/ejdropdownlist">ejDropDownList</a> - <a href="http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-content-groups-dropdownsettings">dropdownSettings</a></span></td>
+<td class="control settings"><span class="param-type"><a href="http://help.syncfusion.com/api/js/ejdropdownlist">ejDropDownList</a> - <a href="http://help.syncfusion.com/api/js/ejribbon#members:tabs-groups-content-groups-dropdownsettings">dropdownSettings</a></span></td>
 <td class="example last">
 	dropdownSettings: {
                       dataSource: size,
@@ -71,8 +71,8 @@ The following table describes about the built in controls [`type`](http://help.s
 </tbody>
 </table>
 
-N> 1. You can specify type either to [`group’s collection`](http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-content-defaults) or to each [`group`](http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-content-groups-type).
-N> 2. For [`type`](http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-content-groups-type) property you can assign either string value (“splitbutton”) or enum value (ej.Ribbon.type.splitButton).
+N> 1. You can specify type either to [`group’s collection`](http://help.syncfusion.com/api/js/ejribbon#members:tabs-groups-content-defaults) or to each [`group`](http://help.syncfusion.com/api/js/ejribbon#members:tabs-groups-content-groups-type).
+N> 2. For [`type`](http://help.syncfusion.com/api/js/ejribbon#members:tabs-groups-content-groups-type) property you can assign either string value (“splitbutton”) or enum value (ej.Ribbon.type.splitButton).
 
 {% highlight html %}
 
@@ -225,7 +225,7 @@ N> 2. For [`type`](http://help.syncfusion.com/js/api/ejribbon#members:tabs-group
 
 ## Custom
 
-You can set [`type`](http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-content-groups-type) as `custom` to render custom controls and Custom element id has to be specified as [`contentID`](http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-content-groups-contentid).You can change the element defined in the custom template to appropriate Syncfusion control in the event of Ribbon [`create`](http://help.syncfusion.com/js/api/ejribbon#events:create).
+You can set [`type`](http://help.syncfusion.com/api/js/ejribbon#members:tabs-groups-content-groups-type) as `custom` to render custom controls and Custom element id has to be specified as [`contentID`](http://help.syncfusion.com/api/js/ejribbon#members:tabs-groups-content-groups-contentid).You can change the element defined in the custom template to appropriate Syncfusion control in the event of Ribbon [`create`](http://help.syncfusion.com/api/js/ejribbon#events:create).
 
 {% highlight html %}
 

@@ -8,7 +8,7 @@ documentation: UG
 
 # Formatting
 
-Spreadsheet supports many Formatting options to make your data easier to view and understand. Use [`allowCellFormatting`](https://help.syncfusion.com/js/api/ejspreadsheet#members:allowcellformatting "allowCellFormatting") API to enable / disable formatting option in Spreadsheet. Following are the different types of formatting supported in Spreadsheet,
+Spreadsheet supports many Formatting options to make your data easier to view and understand. Use [`allowCellFormatting`](https://help.syncfusion.com/api/js/ejspreadsheet#members:allowcellformatting "allowCellFormatting") API to enable / disable formatting option in Spreadsheet. Following are the different types of formatting supported in Spreadsheet,
     
     1) Number Formatting
 
@@ -48,7 +48,7 @@ You can apply number format for a cell in following ways,
 
 ### Initial Load
 
-You can set number format for a cell by specifying [`format`](https://help.syncfusion.com/js/api/ejspreadsheet#members:sheets-rows-cells-format "format") property in cell data binding. The following code example describes the above behavior,
+You can set number format for a cell by specifying [`format`](https://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-rows-cells-format "format") property in cell data binding. The following code example describes the above behavior,
 
 {% highlight html %}
 
@@ -76,7 +76,7 @@ The following output is displayed as a result of the above code example.
 
 ### Method
 
-You can set number format for a cell using [`Format`](https://help.syncfusion.com/js/api/ejspreadsheet#methods:xlformat-format "Format") method. The following code example describes the above behavior,
+You can set number format for a cell using [`Format`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlformat-format "Format") method. The following code example describes the above behavior,
 
 {% highlight html %}
 
@@ -143,7 +143,7 @@ You can apply text format for a cell in following ways,
 
 ### Initial Load
 
-You can apply text format for a cell by specifying [`style`](https://help.syncfusion.com/js/api/ejspreadsheet#members:sheets-rows-cells-style "style") property in cell data binding. The following code example describes the above behavior,
+You can apply text format for a cell by specifying [`style`](https://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-rows-cells-style "style") property in cell data binding. The following code example describes the above behavior,
 
 {% highlight html %}
 
@@ -171,7 +171,7 @@ The following output is displayed as a result of the above code example.
 
 ### Method
 
-You can apply text format for a cell or range of cells using [`Format`](https://help.syncfusion.com/js/api/ejspreadsheet#methods:xlformat-format "Format") method. The following code example describes the above behavior,
+You can apply text format for a cell or range of cells using [`Format`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlformat-format "Format") method. The following code example describes the above behavior,
 
 {% highlight html %}
 
@@ -207,7 +207,7 @@ You can apply text format for a cell through text formatting options in ribbon H
 
 ## Wrap text 
 
-To appear text on multiple lines in a cell you can format the cell so that the text wraps automatically or you can enter a manual line break using `ALT + ENTER` key in edit mode. Use [`allowWrap`](https://help.syncfusion.com/js/api/ejspreadsheet#members:allowwrap "allowWrap") API to enable / disable wrap text. You can apply wrap text for a cell in following ways,
+To appear text on multiple lines in a cell you can format the cell so that the text wraps automatically or you can enter a manual line break using `ALT + ENTER` key in edit mode. Use [`allowWrap`](https://help.syncfusion.com/api/js/ejspreadsheet#members:allowwrap "allowWrap") API to enable / disable wrap text. You can apply wrap text for a cell in following ways,
 
     1) Method
 
@@ -215,7 +215,7 @@ To appear text on multiple lines in a cell you can format the cell so that the t
 
 ### Method
 
-You can wrap, text in a cell using [`wrapText`](https://help.syncfusion.com/js/api/ejspreadsheet#methods:wraptext "wrapText") method. The following code example describes the above behavior,
+You can wrap, text in a cell using [`wrapText`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:wraptext "wrapText") method. The following code example describes the above behavior,
 
 {% highlight html %}
 
@@ -245,7 +245,7 @@ You can wrap, text in a cell using [`wrapText`](https://help.syncfusion.com/js/a
 The following output is displayed as a result of the above code example.
 ![](Formatting_images/Formatting_img4.png)
 
-You can unwrap wrapped text using [`unWrapText`](https://help.syncfusion.com/js/api/ejspreadsheet#methods:unwraptext "unWrapText") method.
+You can unwrap wrapped text using [`unWrapText`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:unwraptext "unWrapText") method.
 
 ### User Interface
 
@@ -282,7 +282,7 @@ You can add border around a cell or range of cells to define a section of worksh
 
 You can apply border for a cell or range of cells through following ways,
     
-    1) Use [`Format`](https://help.syncfusion.com/js/api/ejspreadsheet#methods:xlformat-format "Format") method to apply border via code
+    1) Use [`Format`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlformat-format "Format") method to apply border via code
 
     2) Apply border for a cell or range of cells using border options in ribbon Home tab
 

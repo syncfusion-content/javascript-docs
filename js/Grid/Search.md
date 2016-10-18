@@ -8,7 +8,7 @@ documentation: ug
 --- 
 # Searching
 
-The grid has an option to search its content using the JavaScript method [`search`](http://help.syncfusion.com/js/api/ejgrid#methods:search "search") with search key as parameter. Also, it provides an option to integrate Search text box in grid toolbar, by adding `search` toolbar item in [`toolbarSetting.toolbarItems`](http://help.syncfusion.com/js/api/ejgrid#members:toolbarsettings-toolbaritems "toolbarSetting.toolbarItems") property.
+The grid has an option to search its content using the JavaScript method [`search`](http://help.syncfusion.com/api/js/ejgrid#methods:search "search") with search key as parameter. Also, it provides an option to integrate Search text box in grid toolbar, by adding `search` toolbar item in [`toolbarSetting.toolbarItems`](http://help.syncfusion.com/api/js/ejgrid#members:toolbarsettings-toolbaritems "toolbarSetting.toolbarItems") property.
 
 The following code example describes the above behavior.
 

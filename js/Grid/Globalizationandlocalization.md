@@ -559,7 +559,7 @@ Please find the code
 
 ## Globalization
 
-`ej.globalize` library is used to globalize numeric values in Grid control using [`format`](http://help.syncfusion.com/js/api/ejgrid#members:columns-format "format") property in [`columns`](http://help.syncfusion.com/js/api/ejgrid#members:columns "columns"). Globalize values will be automatically used when [`locale`](http://help.syncfusion.com/js/api/ejgrid#members:locale "locale") property is set with locale string value for example `en-US`.
+`ej.globalize` library is used to globalize numeric values in Grid control using [`format`](http://help.syncfusion.com/api/js/ejgrid#members:columns-format "format") property in [`columns`](http://help.syncfusion.com/api/js/ejgrid#members:columns "columns"). Globalize values will be automatically used when [`locale`](http://help.syncfusion.com/api/js/ejgrid#members:locale "locale") property is set with locale string value for example `en-US`.
 
 {% highlight html %}
 
@@ -592,7 +592,7 @@ I> In the above example, you need to use `globalize.culture.de-DE` script file t
 
 ## Right to Left - RTL
 
-By default, Grid render its text and layout from left to right. To customize Grid's direction, you can change direction from LTR to RTL by using [`enableRTL`](http://help.syncfusion.com/js/api/ejgrid#members:enablertl "enableRTL") as true.
+By default, Grid render its text and layout from left to right. To customize Grid's direction, you can change direction from LTR to RTL by using [`enableRTL`](http://help.syncfusion.com/api/js/ejgrid#members:enablertl "enableRTL") as true.
 
 {% highlight html %}
 

@@ -25,7 +25,7 @@ N> If the normal appointment is to be created for two days (say from November 25
 
 Represents an appointment that is created for an entire day such as holiday events. It renders separately in an All-day row, a separate place for all-day appointments. In Timeline (horizontal) view, all-day appointment renders in the usual work cells, as no all-day cells are present in that view. 
 
-N> An all-day row is normally visible on the Scheduler, as the [showAllDayRow](/js/api/ejschedule#members:showalldayrow) property is set to true by default. 
+N> An all-day row is normally visible on the Scheduler, as the [showAllDayRow](/api/js/ejschedule#members:showalldayrow) property is set to true by default. 
 
 ### Recurrence
 
@@ -54,7 +54,7 @@ On single clicking the scheduler appointments, the pop-up that shows up contains
 * Edit Series (only for the recurrence appointments)
 * Delete icon
 
-The quick window option can be enabled/disabled by using [showQuickWindow](/js/api/ejschedule#members:showquickwindow) API, whereas its default value is set to **true**.
+The quick window option can be enabled/disabled by using [showQuickWindow](/api/js/ejschedule#members:showquickwindow) API, whereas its default value is set to **true**.
 
 {% highlight html %}
 
@@ -89,7 +89,7 @@ $(function() {
 
 N> Select multiple cells either using mouse or keyboard access keys (<kbd>shift</kbd>+<kbd>arrow keys</kbd>) and press <kbd>enter</kbd> key, so that the quick window opens up for the selected date/time range.
 
-Another way to disable the quick window option at dynamic time can be achieved through the [cellClick](/js/api/ejschedule#events:cellclick) and [appointmentClick](/js/api/ejschedule#events:appointmentclick) events. The below code example shows the way to disable the quick appointment window only while clicking on the cells, but displays for appointments.
+Another way to disable the quick window option at dynamic time can be achieved through the [cellClick](/api/js/ejschedule#events:cellclick) and [appointmentClick](/api/js/ejschedule#events:appointmentclick) events. The below code example shows the way to disable the quick appointment window only while clicking on the cells, but displays for appointments.
 
 {% highlight html %}
 
@@ -149,7 +149,7 @@ The appointments can be created by double-clicking the Scheduler cells across th
 
 N> Select multiple cells both using mouse or keyboard access keys (<kbd>shift</kbd>+<kbd>arrow keys</kbd>) and press <kbd>Alt</kbd>+<kbd>N</kbd> key, so that the default appointment window opens up for the selected date/time range with the Start and End time fields automatically filled in.
 
-To prevent the display of default appointment window on double clicking the Scheduler cells, either the [appointmentWindowOpen](/js/api/ejschedule#events:appointmentwindowopen) or [cellDoubleClick](/js/api/ejschedule#events:celldoubleclick) event can be used, within which the **args.cancel** needs to be set to true. This behavior is depicted in the below code example.
+To prevent the display of default appointment window on double clicking the Scheduler cells, either the [appointmentWindowOpen](/api/js/ejschedule#events:appointmentwindowopen) or [cellDoubleClick](/api/js/ejschedule#events:celldoubleclick) event can be used, within which the **args.cancel** needs to be set to true. This behavior is depicted in the below code example.
 
 {% highlight html %}
 
@@ -184,7 +184,7 @@ function onAppointmentWindowOpen(args) {
 
 #### Through Programmatically
 
-You can add/edit the appointments dynamically through the public method [saveAppointment](/js/api/ejschedule#methods:saveappointment). It accepts the JSON Object data (either a new or updated appointment object) as its argument.
+You can add/edit the appointments dynamically through the public method [saveAppointment](/api/js/ejschedule#methods:saveappointment). It accepts the JSON Object data (either a new or updated appointment object) as its argument.
 
 {% highlight html %}
 
@@ -286,11 +286,11 @@ N> All these CRUD operations on appointments (add/edit/delete) can also be done 
 
 #### Through Programmatically
 
-You can delete the appointments dynamically using the method [deleteAppointment](/js/api/ejschedule#methods:deleteappointment), which accepts the Guid of the appointment or complete appointment data as its argument. The Guid is availed as one of the appointment element’s attribute.
+You can delete the appointments dynamically using the method [deleteAppointment](/api/js/ejschedule#methods:deleteappointment), which accepts the Guid of the appointment or complete appointment data as its argument. The Guid is availed as one of the appointment element’s attribute.
 
 #### Example 1 - Using GUID 
 
-The below code example depicts the way to delete the appointments using GUID programmatically by calling the **deleteAppointment** function within the [appointmentClick](/js/api/ejschedule#events:appointmentclick) event, which triggers whenever the user clicks on an appointment.
+The below code example depicts the way to delete the appointments using GUID programmatically by calling the **deleteAppointment** function within the [appointmentClick](/api/js/ejschedule#events:appointmentclick) event, which triggers whenever the user clicks on an appointment.
 
 {% highlight html %}
 
@@ -328,7 +328,7 @@ The below code example depicts the way to delete the appointments using GUID pro
 
 #### Example 2 - Using Appointment object 
 
-The below code example depicts the way to delete the appointments using appointment data programmatically by calling the **deleteAppointment** function within the [appointmentClick](/js/api/ejschedule#events:appointmentclick) event, which triggers whenever the user clicks on an appointment.
+The below code example depicts the way to delete the appointments using appointment data programmatically by calling the **deleteAppointment** function within the [appointmentClick](/api/js/ejschedule#events:appointmentclick) event, which triggers whenever the user clicks on an appointment.
 
 {% highlight html %}
 
@@ -367,9 +367,9 @@ The below code example depicts the way to delete the appointments using appointm
 
 It is possible to define some specific actions to take place before the CRUD operation occurs on the Scheduler appointments through the following available client-side events,
 
-* [beforeAppointmentCreate](/js/api/ejschedule#events:beforeAppointmentCreate)
-* [beforeAppointmentChange](/js/api/ejschedule#events:beforeAppointmentChange)
-* [beforeAppointmentRemove](/js/api/ejschedule#events:beforeAppointmentRemove)
+* [beforeAppointmentCreate](/api/js/ejschedule#events:beforeAppointmentCreate)
+* [beforeAppointmentChange](/api/js/ejschedule#events:beforeAppointmentChange)
+* [beforeAppointmentRemove](/api/js/ejschedule#events:beforeAppointmentRemove)
 
 **beforeAppointmentCreate** – Triggers before saving a new appointment.
 
@@ -422,7 +422,7 @@ function onAppointmentDelete(args) {
 
 ## Read Only
 
-An interaction with the appointments of the Scheduler can be enabled/disabled through the [readOnly](/js/api/ejschedule#members:readonly) property. When the `readOnly` property is set to `true`, it is not possible to do any actions on the appointments, but you can navigate between the schedule dates, views and can also be able to see the appointment details in the quick window. By default, this property is set to `false`.
+An interaction with the appointments of the Scheduler can be enabled/disabled through the [readOnly](/api/js/ejschedule#members:readonly) property. When the `readOnly` property is set to `true`, it is not possible to do any actions on the appointments, but you can navigate between the schedule dates, views and can also be able to see the appointment details in the quick window. By default, this property is set to `false`.
 
 {% highlight html %}
 
@@ -496,9 +496,9 @@ $(function() {
 
 The drag and drop functionality can be handled with the following three events,
 
-* [dragStart](/js/api/ejschedule#events:dragstart)
-* [drag](/js/api/ejschedule#events:drag)
-* [dragStop](/js/api/ejschedule#events:dragstop)
+* [dragStart](/api/js/ejschedule#events:dragstart)
+* [drag](/api/js/ejschedule#events:drag)
+* [dragStop](/api/js/ejschedule#events:dragstop)
 
 **dragStart** – Triggers when the appointments are started to drag from its source location.
 
@@ -541,7 +541,7 @@ function onDragStop(args) {
 
 ### External Drag and Drop
 
-It is possible to drag and drop the external items to and fro the Scheduler control. This action is handled through the property [`appointmentDragArea`](/js/api/ejschedule#members:appointmentdragarea), 
+It is possible to drag and drop the external items to and fro the Scheduler control. This action is handled through the property [`appointmentDragArea`](/api/js/ejschedule#members:appointmentdragarea), 
 which specifies the draggable area name stating whether the appointments can be dragged outside of the control or within it.
 
 The following code example lets you drag and drop the external items from the tree view control to the Scheduler.
@@ -770,7 +770,7 @@ function cancel() {
 
 ## Resize
 
-Resizing an appointment is another way to change its start and end time. Mouse hover on the appointments, so that the resizing handlers gets displayed on either sides of the appointment which allows resizing. The resizing functionality can be enabled/disabled by setting the [enableAppointmentResize](/js/api/ejschedule#members:enableappointmentresize) property. By default it is set to `true`.
+Resizing an appointment is another way to change its start and end time. Mouse hover on the appointments, so that the resizing handlers gets displayed on either sides of the appointment which allows resizing. The resizing functionality can be enabled/disabled by setting the [enableAppointmentResize](/api/js/ejschedule#members:enableappointmentresize) property. By default it is set to `true`.
 
 {% highlight html %}
 
@@ -807,9 +807,9 @@ $(function() {
 
 The appointment resizing functionality can be handled through the following three events,
 
-* [resizeStart](/js/api/ejschedule#events:resizestart)
-* [resize](/js/api/ejschedule#events:resize)
-* [resizeStop](/js/api/ejschedule#events:resizestop)
+* [resizeStart](/api/js/ejschedule#events:resizestart)
+* [resize](/api/js/ejschedule#events:resize)
+* [resizeStop](/api/js/ejschedule#events:resizestop)
 
 **resizeStart** – Triggers when the appointments are started resizing from its original time.
 
@@ -856,11 +856,11 @@ It allows to differentiate the appointments with various categorize options and 
 
 ### Categorize Settings
 
-The [categorizeSettings](/js/api/ejschedule#members:categorizesettings) holds the below categorize related properties such as,
+The [categorizeSettings](/api/js/ejschedule#members:categorizesettings) holds the below categorize related properties such as,
 
-* [enable](/js/api/ejschedule#members:categorizesettings-enable) - It accepts true or false value, denoting whether to enable/disable the categorize option. Its default value is `false`.
-* [allowMultiple](/js/api/ejschedule#members:categorizesettings-allowmultiple) – It enables or disables the multiple selection of categories for each appointments in the appointment window as well as in the context menu. Its default value is `false`.
-* [dataSource](/js/api/ejschedule#members:categorizesettings-datasource) – Binds the categorize dataSource collection. This property should be assigned with the JSON data array collection or instance of [ej.DataManger](/js/datamanager/overview). 
+* [enable](/api/js/ejschedule#members:categorizesettings-enable) - It accepts true or false value, denoting whether to enable/disable the categorize option. Its default value is `false`.
+* [allowMultiple](/api/js/ejschedule#members:categorizesettings-allowmultiple) – It enables or disables the multiple selection of categories for each appointments in the appointment window as well as in the context menu. Its default value is `false`.
+* [dataSource](/api/js/ejschedule#members:categorizesettings-datasource) – Binds the categorize dataSource collection. This property should be assigned with the JSON data array collection or instance of [ej.DataManger](/js/datamanager/overview). 
 
 We have below 6 default values for Categorize dataSource collection.
 
@@ -1012,11 +1012,11 @@ This option prioritize the appointments based on its importance and it can be di
 
 ### Priority Settings
 
-The [prioritySettings](/js/api/ejschedule#members:prioritysettings) holds the below priority related properties such as,
+The [prioritySettings](/api/js/ejschedule#members:prioritysettings) holds the below priority related properties such as,
 
-* [enable](/js/api/ejschedule#members:prioritysettings-enable) - It accepts true or false value, denoting whether to enable/disable the priority option. Its default value is **false**.
+* [enable](/api/js/ejschedule#members:prioritysettings-enable) - It accepts true or false value, denoting whether to enable/disable the priority option. Its default value is **false**.
 * [template](/js/schedule/templates#priority-settings-template) – Customize the priority icon/images using template options.
-* [dataSource](/js/api/ejschedule#members:prioritysettings-datasource) – binds the priority dataSource collection. This property should be assigned with the JSON data array collection or instance of [ej.DataManger](/js/datamanager/overview). 
+* [dataSource](/api/js/ejschedule#members:prioritysettings-datasource) – binds the priority dataSource collection. This property should be assigned with the JSON data array collection or instance of [ej.DataManger](/js/datamanager/overview). 
 
 We have below 4 default values for priority dataSource collection.
 
@@ -1114,7 +1114,7 @@ $(function() {
 
 ### Appointment Search
 
-The public method [searchAppointments](/js/api/ejschedule#methods:searchappointments) is used to search the appointments in the Scheduler dataSource. It contains the below four arguments such as search string, search field, filter operator and ignore case.
+The public method [searchAppointments](/api/js/ejschedule#methods:searchappointments) is used to search the appointments in the Scheduler dataSource. It contains the below four arguments such as search string, search field, filter operator and ignore case.
 
 **searchString** - It is used to search the given word/sentence within the appointment data.
 
@@ -1182,7 +1182,7 @@ function showResult(list, _searchString) {
 
 ### Appointment Filters
 
-The appointments can be filtered or shortlisted based on the simple or complex conditions with four available properties such as **field**, **operator**, **value** and **predicate** which is passed to the public method [filterAppointments](/js/api/ejschedule#methods:filterappointments).
+The appointments can be filtered or shortlisted based on the simple or complex conditions with four available properties such as **field**, **operator**, **value** and **predicate** which is passed to the public method [filterAppointments](/api/js/ejschedule#methods:filterappointments).
 
 **field** - It is the field, with which the search operation takes place. It’s an optional argument.
 
@@ -1375,7 +1375,7 @@ $(function() {
 
 ### Recurrence Validation
 
-The default recurrence validation has been included for recurrence appointments similar to the one available in outlook. The validation occurs during the recurrence appointment creation, drag and drop or resizing of the recurrence appointments and also if any single occurrence changes. The validation can be disabled by setting the [enableRecurrenceValidation](/js/api/ejschedule#members:enablerecurrencevalidation) property to `false`.
+The default recurrence validation has been included for recurrence appointments similar to the one available in outlook. The validation occurs during the recurrence appointment creation, drag and drop or resizing of the recurrence appointments and also if any single occurrence changes. The validation can be disabled by setting the [enableRecurrenceValidation](/api/js/ejschedule#members:enablerecurrencevalidation) property to `false`.
 
 {% highlight html %}
 
@@ -1417,9 +1417,9 @@ N> You can parse the **RecurrenceRule** of an appointment from the server-side b
 
 ## Reminder
 
-Reminder option notifies all the appointments before some specific time. By default, it notifies before 5 minutes. Each and every appointment triggers the [reminder](/js/api/ejschedule#events:reminder) event and can utilize this event for other user actions like mailing particular event to someone or to do any kind of manipulations with the reminder appointments and so on. The `reminderSettings` includes the following 2 properties namely,
+Reminder option notifies all the appointments before some specific time. By default, it notifies before 5 minutes. Each and every appointment triggers the [reminder](/api/js/ejschedule#events:reminder) event and can utilize this event for other user actions like mailing particular event to someone or to do any kind of manipulations with the reminder appointments and so on. The `reminderSettings` includes the following 2 properties namely,
 
-* **enable** - To enable the reminder settings of the Schedule control, set the **enable** property as `true` within the [reminderSettings](/js/api/ejschedule#members:remindersettings) option.
+* **enable** - To enable the reminder settings of the Schedule control, set the **enable** property as `true` within the [reminderSettings](/api/js/ejschedule#members:remindersettings) option.
 
 * **alertBefore** - Accepts the integer value to denote the time, before how long the reminder should be notified to the user.
 
@@ -1473,11 +1473,11 @@ It allows to block the particular timeslots in Schedule. When specific timeslots
 
 ### Blockout Settings
 
-The [blockoutSettings](/js/api/ejschedule#members:blockoutsettings) holds the below block intervals related properties such as,
+The [blockoutSettings](/api/js/ejschedule#members:blockoutsettings) holds the below block intervals related properties such as,
 
-* [enable](/js/api/ejschedule#members:blocktimesettings-enable) - It accepts true or false value, denoting whether to enable/disable the block intervals option. It's default value is `false`.
-* [templateId](/js/api/ejschedule#members:blockoutsettings-templateid) â€“ It applies the template design to block the intervals.
-* [dataSource](/js/api/ejschedule#members:blockoutsettings-datasource) â€“ Binds the block intervals dataSource collection. This property should be assigned either with the JSON data array collection or instance of [ej.DataManger](/js/datamanager/overview).
+* [enable](/api/js/ejschedule#members:blocktimesettings-enable) - It accepts true or false value, denoting whether to enable/disable the block intervals option. It's default value is `false`.
+* [templateId](/api/js/ejschedule#members:blockoutsettings-templateid) â€“ It applies the template design to block the intervals.
+* [dataSource](/api/js/ejschedule#members:blockoutsettings-datasource) â€“ Binds the block intervals dataSource collection. This property should be assigned either with the JSON data array collection or instance of [ej.DataManger](/js/datamanager/overview).
 
 The below blockout fields holds the appropriate column names from the dataSource - 
 
@@ -1567,7 +1567,7 @@ It holds the binding name for <b>customStyle</b> field in the blockout dataSourc
 
 ### Blocking Appointments
 
-The Appointments that lies within the blocked time range can be restricted to perform CRUD operations in it and can be made read-only. This can be achieved by setting [isBlockAppointment](/js/api/ejschedule#members:blockoutsettings-isblockappointment) property to true.
+The Appointments that lies within the blocked time range can be restricted to perform CRUD operations in it and can be made read-only. This can be achieved by setting [isBlockAppointment](/api/js/ejschedule#members:blockoutsettings-isblockappointment) property to true.
 
 
 {% highlight html %}
@@ -1606,10 +1606,10 @@ The Appointments that lies within the blocked time range can be restricted to pe
 
 ### Customizing block time intervals
 
-The [blockoutSettings](/js/api/ejschedule#members:blockoutsettings) holds the below properties to customize the block intervals such as,
+The [blockoutSettings](/api/js/ejschedule#members:blockoutsettings) holds the below properties to customize the block intervals such as,
 
-* [templateId](/js/api/ejschedule#members:blockoutsettings-templateid) - Template design that applies on the block intervals.
-* [customStyle](/js/api/ejschedule#members:blockoutsettings-customstyle) - The custom CSS that applies on the blocked intervals.
+* [templateId](/api/js/ejschedule#members:blockoutsettings-templateid) - Template design that applies on the block intervals.
+* [customStyle](/api/js/ejschedule#members:blockoutsettings-customstyle) - The custom CSS that applies on the blocked intervals.
 
 {% highlight html %}
 
@@ -1651,7 +1651,7 @@ The [blockoutSettings](/js/api/ejschedule#members:blockoutsettings) holds the be
 
 ### Blocking time interval based on resources
 
-* [resourceId](/js/api/ejschedule#members:blockoutsettings-resourceid) - property used within the `blockoutSettings` which accepts the resource id's can be used to apply the block intervals based on the resources.
+* [resourceId](/api/js/ejschedule#members:blockoutsettings-resourceid) - property used within the `blockoutSettings` which accepts the resource id's can be used to apply the block intervals based on the resources.
 
 {% highlight html %}
 

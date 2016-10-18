@@ -9,7 +9,7 @@ documentation: ug
 
 # Editing 
 
-You can edit the contents of a cell directly in the cell. You can also do this by typing in the formula bar. When you edit the cell, Spreadsheet is operating in edit mode. In this mode some of the options are unavailable. You can use [`allowEditing`](http://help.syncfusion.com/js/api/ejspreadsheet#members:allowediting "allowEditing") property to enable/disable editing feature.
+You can edit the contents of a cell directly in the cell. You can also do this by typing in the formula bar. When you edit the cell, Spreadsheet is operating in edit mode. In this mode some of the options are unavailable. You can use [`allowEditing`](http://help.syncfusion.com/api/js/ejspreadsheet#members:allowediting "allowEditing") property to enable/disable editing feature.
 
 N> By default allowEditing property is set to true.
 N> The cell content is also displayed in the formula bar.
@@ -23,7 +23,7 @@ You can perform this by one of the following ways,
 * Use Formula bar to perform editing.
 * Use Backspace and Delete Key to delete the contents of a cell.
 * Use "Alt + Enter" keys to perform multi line editing.
-* Using [`editCell`](https://help.syncfusion.com/js/api/ejspreadsheet#methods:xledit-editcell "editCell") method.
+* Using [`editCell`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xledit-editcell "editCell") method.
 
 ## Save the Edited Cell
 
@@ -31,7 +31,7 @@ You can do this by one of the following ways,
 
 * Perform mouse click on any other cell other than the current editing cell.
 * Perform Enter/Tab key press on the cell.
-* Using [`saveCell`](https://help.syncfusion.com/js/api/ejspreadsheet#methods:xledit-savecell "saveCell") method.
+* Using [`saveCell`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xledit-savecell "saveCell") method.
 
 N> Edited cells are automatically formatted (right/left/center/Number Formatting) based on cell values.
 
@@ -65,9 +65,9 @@ The following output is displayed as a result of the above code example.
 
 ## Read-Only Cells
 
-You can restrict/prevent the editing in the selected cells. You can use [`allowLockCell`](https://help.syncfusion.com/js/api/ejspreadsheet#members:allowlockcell "") property to enable/disable the lock cells. You can do using following ways,
+You can restrict/prevent the editing in the selected cells. You can use [`allowLockCell`](https://help.syncfusion.com/api/js/ejspreadsheet#members:allowlockcell "") property to enable/disable the lock cells. You can do using following ways,
 
-* Using [`lockCells`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:lockcells "lockCells") method to lock the selected cells. Then you need to protect the sheet using [`protectSheet`](https://help.syncfusion.com/js/api/ejspreadsheet#methods:protectsheet "protectSheet") method to restrict the editing.
+* Using [`lockCells`](http://help.syncfusion.com/api/js/ejspreadsheet#methods:lockcells "lockCells") method to lock the selected cells. Then you need to protect the sheet using [`protectSheet`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:protectsheet "protectSheet") method to restrict the editing.
 * Using "lock Cells” option under Changes tab in REVIEW tab of ribbon. Then Using "protect Sheet” option under Changes tab in REVIEW tab of ribbon to restrict editing.
 
 The following code example describes the above behavior.
@@ -104,12 +104,12 @@ The following output is displayed as a result of the above code example.
 
 The following events will trigger when editing and saving the cell. 
 
-* [`cellEdit`](http://help.syncfusion.com/js/api/ejspreadsheet#events:celledit"cellEdit") - Triggered when the cell is edited.
-* [`cellSave`](http://help.syncfusion.com/js/api/ejspreadsheet#events:cellsave"cellSave") - Triggered when save the edited cell.
+* [`cellEdit`](http://help.syncfusion.com/api/js/ejspreadsheet#events:celledit"cellEdit") - Triggered when the cell is edited.
+* [`cellSave`](http://help.syncfusion.com/api/js/ejspreadsheet#events:cellsave"cellSave") - Triggered when save the edited cell.
 
 ## Data binding
 
-You can bind the data to Spreadsheet using data manager. You can refer [`Data Binding`](https://help.syncfusion.com/js/spreadsheet/data-binding# "Data Binding") to know more about this. You can use [`saveBatchChanges`](https://help.syncfusion.com/js/api/ejspreadsheet#methods:savebatchchanges "saveBatchChanges") method to update the changes in server.  
+You can bind the data to Spreadsheet using data manager. You can refer [`Data Binding`](https://help.syncfusion.com/js/spreadsheet/data-binding# "Data Binding") to know more about this. You can use [`saveBatchChanges`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:savebatchchanges "saveBatchChanges") method to update the changes in server.  
 
 The following code example describes the above behavior.
 

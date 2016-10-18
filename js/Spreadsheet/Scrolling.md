@@ -9,7 +9,7 @@ documentation: ug
 
 # Scrolling
 
-Scrolling can be enabled by setting [`scrollSettings.allowScrolling`](https://help.syncfusion.com/js/api/ejspreadsheet#members:scrollsettings-allowscrolling "scrollSettings.allowScrolling") as true. The height and width can be set to spreadsheet by setting properties [`scrollSettings.height`](https://help.syncfusion.com/js/api/ejspreadsheet#members:scrollsettings-height "scrollSettings.height") and [`scrollSettings.width`](https://help.syncfusion.com/js/api/ejspreadsheet#members:scrollsettings-width "scrollSettings.width"). 
+Scrolling can be enabled by setting [`scrollSettings.allowScrolling`](https://help.syncfusion.com/api/js/ejspreadsheet#members:scrollsettings-allowscrolling "scrollSettings.allowScrolling") as true. The height and width can be set to spreadsheet by setting properties [`scrollSettings.height`](https://help.syncfusion.com/api/js/ejspreadsheet#members:scrollsettings-height "scrollSettings.height") and [`scrollSettings.width`](https://help.syncfusion.com/api/js/ejspreadsheet#members:scrollsettings-width "scrollSettings.width"). 
 
 ## Height
 
@@ -69,14 +69,14 @@ $(function () {
 
 ## Responsive
 
-Spreadsheet has support for responsive behavior based on client browser's width and height. To enable responsive, [`scrollSettings.isResponsive`](https://help.syncfusion.com/js/api/ejspreadsheet#members:scrollsettings-isresponsive "scrollSettings.isResponsive") property should be true. There are three modes of responsive layout is available in grid based on client width. They are.
+Spreadsheet has support for responsive behavior based on client browser's width and height. To enable responsive, [`scrollSettings.isResponsive`](https://help.syncfusion.com/api/js/ejspreadsheet#members:scrollsettings-isresponsive "scrollSettings.isResponsive") property should be true. There are three modes of responsive layout is available in grid based on client width. They are.
 
 * Mobile(<421px)
 * Tablet (421px to 800px)
 * Desktop(>800px)
 
-N> Default value of [`scrollSettings.height`](https://help.syncfusion.com/js/api/ejspreadsheet#members:scrollsettings-height "scrollSettings.height") and [`scrollSettings.width`](https://help.syncfusion.com/js/api/ejspreadsheet#members:scrollsettings-width "scrollSettings.width") is "100%"
-N> Default value of [`scrollSettings.isResponsive`](https://help.syncfusion.com/js/api/ejspreadsheet#members:scrollsettings-isresponsive "scrollSettings.isResponsive") is true.
+N> Default value of [`scrollSettings.height`](https://help.syncfusion.com/api/js/ejspreadsheet#members:scrollsettings-height "scrollSettings.height") and [`scrollSettings.width`](https://help.syncfusion.com/api/js/ejspreadsheet#members:scrollsettings-width "scrollSettings.width") is "100%"
+N> Default value of [`scrollSettings.isResponsive`](https://help.syncfusion.com/api/js/ejspreadsheet#members:scrollsettings-isresponsive "scrollSettings.isResponsive") is true.
 
 ### Mobile Mode
 
@@ -103,7 +103,7 @@ If the client width is between 421px and 800px, then the spreadsheet will render
 
 ## Scroll Mode
 
-Spreadsheet has supports two type of modes in scrolling. You can use [`scrollSettings.scrollMode`](https://help.syncfusion.com/js/api/ejspreadsheet#members:scrollsettings-scrollmode "scrollSettings.scrollMode") property to specify the mode of scrolling.
+Spreadsheet has supports two type of modes in scrolling. You can use [`scrollSettings.scrollMode`](https://help.syncfusion.com/api/js/ejspreadsheet#members:scrollsettings-scrollmode "scrollSettings.scrollMode") property to specify the mode of scrolling.
 
 * Normal - This mode doesn't create new row/column when the scrollbar reaches the end.
 * Infinite - This mode creates new row/column when the scrollbar reaches the end.
@@ -112,9 +112,9 @@ N> Default value of scrollMode property is infinite mode.
 
 ## Virtual Scrolling
 
-Spreadsheet has supports virtual scrolling. This allows you to load data that you require (load data based on viewport size) without buffering the entire huge database. You can set [`scrollSettings.allowVirtualScrolling`](https://help.syncfusion.com/js/api/ejspreadsheet#members:scrollsettings-allowvirtualscrolling "scrollSettings.allowVirtualScrolling") property as true to enable virtual scrolling.
+Spreadsheet has supports virtual scrolling. This allows you to load data that you require (load data based on viewport size) without buffering the entire huge database. You can set [`scrollSettings.allowVirtualScrolling`](https://help.syncfusion.com/api/js/ejspreadsheet#members:scrollsettings-allowvirtualscrolling "scrollSettings.allowVirtualScrolling") property as true to enable virtual scrolling.
 
-N> Default value of [`scrollSettings.allowVirtualScrolling`](https://help.syncfusion.com/js/api/ejspreadsheet#members:scrollsettings-allowvirtualscrolling "scrollSettings.allowVirtualScrolling") property is true.
+N> Default value of [`scrollSettings.allowVirtualScrolling`](https://help.syncfusion.com/api/js/ejspreadsheet#members:scrollsettings-allowvirtualscrolling "scrollSettings.allowVirtualScrolling") property is true.
 
 The following code example describes the above behavior.
 

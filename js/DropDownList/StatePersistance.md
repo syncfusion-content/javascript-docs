@@ -10,7 +10,7 @@ keywords: Persistence, DropDownList, dropdown, State Persistence
 
 # State Persistence
 
-DropDownList stores its model is local storage by defining the property [enablePersistence](http://help.syncfusion.com/js/api/ejdropdownlist#members:enablepersistence).
+DropDownList stores its model is local storage by defining the property [enablePersistence](http://help.syncfusion.com/api/js/ejdropdownlist#members:enablepersistence).
 You can sustain the below given functionalities in DropDownList by enabling persistence property,
 
 * selected items value in the textbox 

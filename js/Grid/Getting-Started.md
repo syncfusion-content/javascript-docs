@@ -179,7 +179,7 @@ The grid can be created from a HTML `DIV` element with the HTML `id` attribute s
 
 ## Data binding
 
-[`Data binding`](http://helpjs.syncfusion.com/js/grid/data-binding) in the grid is achieved by using the [`ej.DataManager`](http://helpjs.syncfusion.com/js/datamanager/overview) that supports both RESTful JSON data services binding and local JSON array binding.  To set the data source to the grid, the [`dataSource`](http://help.syncfusion.com/js/api/ejgrid#members:columns-datasource) property is assigned with the instance of the `ej.DataManger`. For demonstration purpose, [Northwind OData service](http://mvc.syncfusion.com/Services/Northwnd.svc/) is used in this tutorial. Refer to the following code example.
+[`Data binding`](http://helpjs.syncfusion.com/js/grid/data-binding) in the grid is achieved by using the [`ej.DataManager`](http://helpjs.syncfusion.com/js/datamanager/overview) that supports both RESTful JSON data services binding and local JSON array binding.  To set the data source to the grid, the [`dataSource`](http://help.syncfusion.com/api/js/ejgrid#members:columns-datasource) property is assigned with the instance of the `ej.DataManger`. For demonstration purpose, [Northwind OData service](http://mvc.syncfusion.com/Services/Northwnd.svc/) is used in this tutorial. Refer to the following code example.
 
 {% highlight html %}
 
@@ -205,7 +205,7 @@ N> ODataAdaptor is the default adaptor for the DataManager. On binding to other 
 
 ## Enable Paging
 
-[Paging](http://helpjs.syncfusion.com/js/grid/paging) can be enabled by setting the [`allowPaging`](http://help.syncfusion.com/js/api/ejgrid#members:allowpaging) to true.  This adds the pager in the bottom of the grid and page size can be customized by using the [`pageSettings.pageSize`](http://help.syncfusion.com/js/api/ejgrid#members:pagesettings-pagesize) property
+[Paging](http://helpjs.syncfusion.com/js/grid/paging) can be enabled by setting the [`allowPaging`](http://help.syncfusion.com/api/js/ejgrid#members:allowpaging) to true.  This adds the pager in the bottom of the grid and page size can be customized by using the [`pageSettings.pageSize`](http://help.syncfusion.com/api/js/ejgrid#members:pagesettings-pagesize) property
 
 {% highlight html %}
 
@@ -222,7 +222,7 @@ N> ODataAdaptor is the default adaptor for the DataManager. On binding to other 
 </script>
 {% endhighlight %}
 
-N> Pager settings can be customized by using the [`pageSettings.pageSize`](http://help.syncfusion.com/js/api/ejgrid#members:pagesettings-pagesize) property. When it is not given the default values for `pageSize` and `pageCount` are 12 and 8 respectively.
+N> Pager settings can be customized by using the [`pageSettings.pageSize`](http://help.syncfusion.com/api/js/ejgrid#members:pagesettings-pagesize) property. When it is not given the default values for `pageSize` and `pageCount` are 12 and 8 respectively.
 
 
 ![](Getting-started_images/Getting-started_img3.png)
@@ -231,7 +231,7 @@ N> Pager settings can be customized by using the [`pageSettings.pageSize`](http:
 
 ## Enable Filtering
 
-[`Filtering`](/js/grid/filter) can be enabled by setting the `allowFiltering` to `true`. By default, the filter bar row is displayed to perform filtering, you can change the filter type by using the [`filterSetting.filterType`](http://help.syncfusion.com/js/api/ejgrid#members:filtersettings) property.
+[`Filtering`](/js/grid/filter) can be enabled by setting the `allowFiltering` to `true`. By default, the filter bar row is displayed to perform filtering, you can change the filter type by using the [`filterSetting.filterType`](http://help.syncfusion.com/api/js/ejgrid#members:filtersettings) property.
 
 {% highlight html %}
 
@@ -256,7 +256,7 @@ N> Pager settings can be customized by using the [`pageSettings.pageSize`](http:
 
 ## Enable Grouping
 
-[`Grouping`](/js/grid/grouping) can be enabled by setting the [`allowGrouping`](http://help.syncfusion.com/js/api/ejgrid#members:allowgrouping) to `true`.  Columns can be grouped dynamically by drag and drop the grid column header to the group drop area. The initial grouping can be done by adding required column names in the [`groupSettings.groupedColumns`](http://help.syncfusion.com/js/api/ejgrid#members:groupsettings-groupedcolumns) property. 
+[`Grouping`](/js/grid/grouping) can be enabled by setting the [`allowGrouping`](http://help.syncfusion.com/api/js/ejgrid#members:allowgrouping) to `true`.  Columns can be grouped dynamically by drag and drop the grid column header to the group drop area. The initial grouping can be done by adding required column names in the [`groupSettings.groupedColumns`](http://help.syncfusion.com/api/js/ejgrid#members:groupsettings-groupedcolumns) property. 
 {% highlight html %}
 
 <div id="Grid"></div>
@@ -304,7 +304,7 @@ Refer to the following code example for initial grouping.
 
 ## Add Summaries
 
-[`Summaries`](http://helpjs.syncfusion.com/js/grid/summary) can be added by setting the [`showSummary`](http://help.syncfusion.com/js/api/ejgrid#members:showsummary) to true and adding required summary rows and columns in the [`summaryRows`](http://help.syncfusion.com/js/api/ejgrid#members:summaryrows) property. For demonstration, Stock column's sum value is displayed as summary.
+[`Summaries`](http://helpjs.syncfusion.com/js/grid/summary) can be added by setting the [`showSummary`](http://help.syncfusion.com/api/js/ejgrid#members:showsummary) to true and adding required summary rows and columns in the [`summaryRows`](http://help.syncfusion.com/api/js/ejgrid#members:summaryrows) property. For demonstration, Stock column's sum value is displayed as summary.
 
 {% highlight html %}
 

@@ -21,7 +21,7 @@ Template is applicable to all the below specified elements of the Scheduler,
 
 ## Appointment Template
 
-The template design that applies on for the Scheduler appointments. The field names that are mapped from the dataSource to the appropriate field properties within the [appointmentSettings](/js/api/ejschedule#members:appointmentsettings) can be accessed within the template.
+The template design that applies on for the Scheduler appointments. The field names that are mapped from the dataSource to the appropriate field properties within the [appointmentSettings](/api/js/ejschedule#members:appointmentsettings) can be accessed within the template.
 
 Apart from the dataSource field names, the template can also access the current view of the Scheduler using the name **View** – which can contain either of the following values in lowercase. 
 
@@ -32,7 +32,7 @@ Apart from the dataSource field names, the template can also access the current 
 * month
 * custom view
 
-It is controlled by an API named [appointmentTemplateId](/js/api/ejschedule#members:appointmenttemplateid) which accepts the id value of the template design block preceded by a symbol **#**.
+It is controlled by an API named [appointmentTemplateId](/api/js/ejschedule#members:appointmenttemplateid) which accepts the id value of the template design block preceded by a symbol **#**.
 
 Usually, the appointments are displayed with its **Subject** and **Start/End time** on the Scheduler. If suppose, the subject needs to be accompanied with location text, it can be done with the following code example.
 
@@ -76,9 +76,9 @@ $(function() {
 
 The template design that applies on the Scheduler elements such as all-day cells, work cells and month cells which allows the customization to be done based on the date, view, resources and timescale. The cells can be customized to add images, colors, and other elements etc and can also access the current view of the Scheduler using the name **view**.
 
-**All-day cells** - An API named [allDayCellsTemplateId](/js/api/ejschedule#members:alldaycellstemplateid) can be used to customize the all-day cells, which accepts the id of the template design block preceded with a symbol **#**.
+**All-day cells** - An API named [allDayCellsTemplateId](/api/js/ejschedule#members:alldaycellstemplateid) can be used to customize the all-day cells, which accepts the id of the template design block preceded with a symbol **#**.
 
-**Work cells and Month cells** - An API named [workCellsTemplateId](/js/api/ejschedule#members:workcellstemplateid) can be used to customize the work cells in all the views, which accepts the id of the template design block preceded by a symbol **#**. 
+**Work cells and Month cells** - An API named [workCellsTemplateId](/api/js/ejschedule#members:workcellstemplateid) can be used to customize the work cells in all the views, which accepts the id of the template design block preceded by a symbol **#**. 
 
 The cells can be customized with the following code example.
 
@@ -145,7 +145,7 @@ $(function() {
 
 ## Date Header Template
 
-The template design that applies on for the date header part of the Scheduler. An API named [dateHeaderTemplateId](/js/api/ejschedule#members:dateheadertemplateid) can be used to customize the date header which accepts the id value of the template design block preceded by a symbol **#**. The template can also access the current view of the Scheduler in using the name **view**.
+The template design that applies on for the date header part of the Scheduler. An API named [dateHeaderTemplateId](/api/js/ejschedule#members:dateheadertemplateid) can be used to customize the date header which accepts the id value of the template design block preceded by a symbol **#**. The template can also access the current view of the Scheduler in using the name **view**.
 
 The Date header can be customized with the following code example.
 
@@ -321,10 +321,10 @@ N> In horizontal Scheduler, the header template makes use of an additional field
 
 ## TimeScale Templates
 
-The [TimeScale](/js/api/ejschedule#members:timeScale) is also availed with template options to allow customization. It includes the following 2 properties for customization -
+The [TimeScale](/api/js/ejschedule#members:timeScale) is also availed with template options to allow customization. It includes the following 2 properties for customization -
 
-* [majorSlotTemplateId](/js/api/ejschedule#members:timeScale-majorSlotTemplateId) - Accepts the id value of the template design block preceded by a symbol **#**, which gets applied for the major time slots.
-* [minorSlotTemplateId](/js/api/ejschedule#members:timeScale-minorSlotTemplateId) - Accepts the id value of the template design block preceded by a symbol **#**, which gets applied for the minor time slots.
+* [majorSlotTemplateId](/api/js/ejschedule#members:timeScale-majorSlotTemplateId) - Accepts the id value of the template design block preceded by a symbol **#**, which gets applied for the major time slots.
+* [minorSlotTemplateId](/api/js/ejschedule#members:timeScale-minorSlotTemplateId) - Accepts the id value of the template design block preceded by a symbol **#**, which gets applied for the minor time slots.
 
 The template customization for major and minor timeslots can be referred from the following code example.
 
@@ -390,7 +390,7 @@ $(function() {
 
 The template design which can be applied to the content of the priority field in the appointment window. By default, the appropriate icons are displayed for each priority options such as **None**, **High**, **Medium** and **Low**. 
 
-When template is applied for the [prioritySettings](/js/api/ejschedule#members:prioritysettings), these default icons will be replaced by the custom icons or styles defined newly. The following code example depicts the way to enable the priority settings and to define the new custom styles to replace the default icons in the Priority field.
+When template is applied for the [prioritySettings](/api/js/ejschedule#members:prioritysettings), these default icons will be replaced by the custom icons or styles defined newly. The following code example depicts the way to enable the priority settings and to define the new custom styles to replace the default icons in the Priority field.
 
 {% highlight html %}
 
@@ -463,7 +463,7 @@ $(function() {
 
 The custom style class names defined for the priority template should be same as that of the values defined for each priority option within the dataSource, so that it applies properly.
 
-N> Additionally, the priority field within the [appointmentSettings](/js/api/ejschedule#members:appointmentsettings) should be defined with appropriate dataSource field name. When an appointment is assigned with a priority value, the custom style/icon defined for that priority option will get applied over that appointment.
+N> Additionally, the priority field within the [appointmentSettings](/api/js/ejschedule#members:appointmentsettings) should be defined with appropriate dataSource field name. When an appointment is assigned with a priority value, the custom style/icon defined for that priority option will get applied over that appointment.
 
 ## Tooltip Template
 
@@ -471,7 +471,7 @@ The tooltip can be applied with the customized template design. Currently the to
 
 By making use of template feature with tooltip, all the field names that are mapped from the dataSource to the appropriate field properties within the **appointmentSettings** can be accessed.
 
-To define the template option for tooltip, the [tooltipSettings](/js/api/ejschedule#members:tooltipsettings) must be enabled first. The following code example depicts the way to add the tooltip template.
+To define the template option for tooltip, the [tooltipSettings](/api/js/ejschedule#members:tooltipsettings) must be enabled first. The following code example depicts the way to add the tooltip template.
 
 {% highlight html %}
 
@@ -516,7 +516,7 @@ $(function() {
 
 ## Agenda View Templates
 
-Agenda View provides two separate templates – one for date column and another for time column. These templates allows the customization of the content of both the date and time columns. Apart from this, the event column can also be customized through the existing API named [appointmentTemplateId](/js/api/ejschedule#members:appointmenttemplateid).
+Agenda View provides two separate templates – one for date column and another for time column. These templates allows the customization of the content of both the date and time columns. Apart from this, the event column can also be customized through the existing API named [appointmentTemplateId](/api/js/ejschedule#members:appointmenttemplateid).
 
 The following code snippet shows how to customize the content of the date, time and event column.
 

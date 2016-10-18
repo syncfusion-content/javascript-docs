@@ -15,7 +15,7 @@ As the window is narrowed, controls in the Ribbon will be combined as group butt
 
 ## Tablet Layout 
 
-Set [`isResponsive`](http://help.syncfusion.com/js/api/ejribbon#members:isresponsive) as true to enable responsive layout in Ribbon.If client width is above  420px or control content exceeds the page then, the ribbon will render in Tablet mode.
+Set [`isResponsive`](http://help.syncfusion.com/api/js/ejribbon#members:isresponsive) as true to enable responsive layout in Ribbon.If client width is above  420px or control content exceeds the page then, the ribbon will render in Tablet mode.
 
 {% highlight html %}
 
@@ -103,7 +103,7 @@ The customized features includes responsive tab & group rendering, backstage, ga
 
 ### Responsive Tab and group
 
-Set [`isResponsive`](http://help.syncfusion.com/js/api/ejribbon#members:isresponsive) as true to enable responsive mode in Ribbon.
+Set [`isResponsive`](http://help.syncfusion.com/api/js/ejribbon#members:isresponsive) as true to enable responsive mode in Ribbon.
    
 
 {% highlight html %}
@@ -201,7 +201,7 @@ N> To make the Ribbon control to react as responsive in mobile devices, it is ne
 
 ## Mobile Toolbar Customization
 
- Set [`isMobileOnly`](https://help.syncfusion.com/js/api/ejribbon#members:ismobileonly) as true to group control to show the controls 
+ Set [`isMobileOnly`](https://help.syncfusion.com/api/js/ejribbon#members:ismobileonly) as true to group control to show the controls 
  in the Mobile Toolbar of the ribbon. For each tab , first row of mobile ribbon will pick and display the controls which is set as `isMobileOnly` with look adapt to mobile mode.If `isMobileOnly` property is not defined to any of the control within tab, then by default first group content will be displayed in first row toolbar.
 
  To adapt to proper display of controls , following layout will be customized with constants display.

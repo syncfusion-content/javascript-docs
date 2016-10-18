@@ -11,7 +11,7 @@ documentation: ug
 
 The FileExplorer has the resize support through the resize handle which appears at right-bottom corner of footer. By clicking the resize handle the user can resize the FileExplorer through the UI. While resizing the dimension of the FileExplorer is automatically adjusted.
 
-The resize behavior can be enabled through the [enableResize](http://help.syncfusion.com/js/api/ejfileexplorer#members:enableresize) property. 
+The resize behavior can be enabled through the [enableResize](http://help.syncfusion.com/api/js/ejfileexplorer#members:enableresize) property. 
 
 {% highlight javascript %}
 
@@ -41,7 +41,7 @@ The resize behavior can be enabled through the [enableResize](http://help.syncfu
 
 ## Responsiveness
 
-By enabling the [isResponsive](http://help.syncfusion.com/js/api/ejfileexplorer#members:isresponsive) property, you can make the FileExplorer as responsive. While resizing the FileExplorer component, the inner content and toolbar items are automatically adjusted to equalize the size. The toolbar items are displayed within Dropdown on enabling the responsive. Otherwise it floated to the next line to equalize the space. 
+By enabling the [isResponsive](http://help.syncfusion.com/api/js/ejfileexplorer#members:isresponsive) property, you can make the FileExplorer as responsive. While resizing the FileExplorer component, the inner content and toolbar items are automatically adjusted to equalize the size. The toolbar items are displayed within Dropdown on enabling the responsive. Otherwise it floated to the next line to equalize the space. 
 
 {% highlight javascript %}
 
@@ -74,7 +74,7 @@ By enabling the [isResponsive](http://help.syncfusion.com/js/api/ejfileexplorer#
 
 ## Restriction on Resize
 
-You can restrict the dimension of the FileExplorer by setting the [minHeight](http://help.syncfusion.com/js/api/ejfileexplorer#members:minheight), [maxHeight](http://help.syncfusion.com/js/api/ejfileexplorer#members:maxheight) and [minWidth](http://help.syncfusion.com/js/api/ejfileexplorer#members:minwidth),[maxWidth](http://help.syncfusion.com/js/api/ejfileexplorer#members:maxwidth) properties while resizing the FileExplorer. 
+You can restrict the dimension of the FileExplorer by setting the [minHeight](http://help.syncfusion.com/api/js/ejfileexplorer#members:minheight), [maxHeight](http://help.syncfusion.com/api/js/ejfileexplorer#members:maxheight) and [minWidth](http://help.syncfusion.com/api/js/ejfileexplorer#members:minwidth),[maxWidth](http://help.syncfusion.com/api/js/ejfileexplorer#members:maxwidth) properties while resizing the FileExplorer. 
 
 {% highlight javascript %}
 

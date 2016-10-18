@@ -11,7 +11,7 @@ documentation: ug
 
 ## Dimension Customization
 
-The dimension of the FileExplorer can be customized through [height](http://help.syncfusion.com/js/api/ejfileexplorer#members:height) and [width](http://help.syncfusion.com/js/api/ejfileexplorer#members:width) property. The dimension can be set in percentage (ex; width: “100 %”), so that the control inherits the width from the parent element. 
+The dimension of the FileExplorer can be customized through [height](http://help.syncfusion.com/api/js/ejfileexplorer#members:height) and [width](http://help.syncfusion.com/api/js/ejfileexplorer#members:width) property. The dimension can be set in percentage (ex; width: “100 %”), so that the control inherits the width from the parent element. 
 
 {% highlight javascript %}
 
@@ -41,7 +41,7 @@ The dimension of the FileExplorer can be customized through [height](http://help
 
 The navigation pane contains the tree view element which displays all the folders from the filesystem in a hierarchical manner. This is useful to a quick navigation of any folder in the filesystem.
 
-The visibility of the navigation pane can be controlled by the [showNavigationPane](http://help.syncfusion.com/js/api/ejfileexplorer#members:shownavigationpane) property. By disabling this property, you can hide the navigation pane from FileExplorer. 
+The visibility of the navigation pane can be controlled by the [showNavigationPane](http://help.syncfusion.com/api/js/ejfileexplorer#members:shownavigationpane) property. By disabling this property, you can hide the navigation pane from FileExplorer. 
 
 {% highlight javascript %}
 
@@ -85,7 +85,7 @@ You can change the layout of current view by the switcher which displays at righ
 ![](Customization_images/Customization_img1.png)
 
 
-Also the layout views can be changed through the [layout](http://help.syncfusion.com/js/api/ejfileexplorer#members:layout) property. 
+Also the layout views can be changed through the [layout](http://help.syncfusion.com/api/js/ejfileexplorer#members:layout) property. 
 
 {% highlight javascript %}
 
@@ -113,9 +113,9 @@ Also the layout views can be changed through the [layout](http://help.syncfusion
 
 ### Customizing the Grid view
 
-By default sorting is enabled in grid view of FileExplorer, it helps you to sort each columns in ascending or descending order by pressing the corresponding column header. The sorting functionality can be disabled by setting [allowSorting](http://help.syncfusion.com/js/api/ejfileexplorer#members:gridsettings-allowsorting) property to false.
+By default sorting is enabled in grid view of FileExplorer, it helps you to sort each columns in ascending or descending order by pressing the corresponding column header. The sorting functionality can be disabled by setting [allowSorting](http://help.syncfusion.com/api/js/ejfileexplorer#members:gridsettings-allowsorting) property to false.
 
-The behavior of the columns can be customized through the [columns](http://help.syncfusion.com/js/api/ejfileexplorer#members:gridsettings-columns) property. 
+The behavior of the columns can be customized through the [columns](http://help.syncfusion.com/api/js/ejfileexplorer#members:gridsettings-columns) property. 
 
 {% highlight javascript %}
 
@@ -161,7 +161,7 @@ The behavior of the columns can be customized through the [columns](http://help.
 
 ## Footer Customization 
 
-The footer displays the details of the current selected files and folders, and the footer contains the switcher to change the layout view. The visibility of the footer can be customized by the [showFooter](http://help.syncfusion.com/js/api/ejfileexplorer#members:showfooter) property. 
+The footer displays the details of the current selected files and folders, and the footer contains the switcher to change the layout view. The visibility of the footer can be customized by the [showFooter](http://help.syncfusion.com/api/js/ejfileexplorer#members:showfooter) property. 
 
 {% highlight javascript %}
 

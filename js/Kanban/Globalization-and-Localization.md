@@ -141,7 +141,7 @@ The following output is displayed as a result of the above code example.
 
 ## Right to Left (RTL)
 
-By default, Kanban render its text and layout from left to right. To customize Kanban’s direction, you can change direction from LTR to RTL by using [`enableRTL`](https://help.syncfusion.com/js/api/ejkanban#members:enablertl) as true.
+By default, Kanban render its text and layout from left to right. To customize Kanban’s direction, you can change direction from LTR to RTL by using [`enableRTL`](https://help.syncfusion.com/api/js/ejkanban#members:enablertl) as true.
 
 The following code example describes the above behavior.
 

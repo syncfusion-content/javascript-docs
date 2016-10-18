@@ -9,14 +9,14 @@ keywords: responsive,kanban responsive
 
 # Responsive
 
-The Kanban control has support for responsive behavior based on client browser’s width and height. To enable responsive, [`isResponsive`](https://help.syncfusion.com/js/api/ejkanban#members:isresponsive) property should be true.There are two modes of responsive layout is available in Kanban based on client width. They are.
+The Kanban control has support for responsive behavior based on client browser’s width and height. To enable responsive, [`isResponsive`](https://help.syncfusion.com/api/js/ejkanban#members:isresponsive) property should be true.There are two modes of responsive layout is available in Kanban based on client width. They are.
 
 * Mobile(<480px)
 * Desktop(>480px)
 
 ## Mobile Layout
 
-If client width is less than 480px, the Kanban will render in mobile mode. In which, you can see that kanban user interface is customized and redesigned for best view in small screens.To enable responsive, [`isResponsive`](https://help.syncfusion.com/js/api/ejkanban#members:isresponsive) property should be true.
+If client width is less than 480px, the Kanban will render in mobile mode. In which, you can see that kanban user interface is customized and redesigned for best view in small screens.To enable responsive, [`isResponsive`](https://help.syncfusion.com/api/js/ejkanban#members:isresponsive) property should be true.
 
 {% highlight html %}
 
@@ -95,7 +95,7 @@ Kanban with Swim-lane
 
 ## Width
 
-By default, the Kanban is adaptable to its parent container. It can adjust its width of columns based on parent container width. You can also assign width of [`columns`](https://help.syncfusion.com/js/api/ejkanban#members:columns) in percentage. 
+By default, the Kanban is adaptable to its parent container. It can adjust its width of columns based on parent container width. You can also assign width of [`columns`](https://help.syncfusion.com/api/js/ejkanban#members:columns) in percentage. 
 
 The following code example describes the above behavior.
 
@@ -136,7 +136,7 @@ N> `allowScrolling` should be false while defining width in percentage.
 
 ## Min Width
 
-Min Width is used to maintain minimum width for the Kanban. If the Kanban width is less than [`minWidth`](https://help.syncfusion.com/js/api/ejkanban#members:minwidth) then the scrollbar will be displayed to maintain minimum width.
+Min Width is used to maintain minimum width for the Kanban. If the Kanban width is less than [`minWidth`](https://help.syncfusion.com/api/js/ejkanban#members:minwidth) then the scrollbar will be displayed to maintain minimum width.
 
 The following code example describes the above behavior.
 

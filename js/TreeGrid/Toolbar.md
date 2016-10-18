@@ -9,9 +9,9 @@ documentation: ug
 
 # Toolbar
 
-TreeGrid control contains toolbar options for adding, deleting and editing the records. You can customize the TreeGrid toolbar by using [`toolbarSettings`](/js/api/ejtreegrid#toolbarsettingsspan-classtype-signature-type-objectobjectspan "toolbarSettings") property. 
+TreeGrid control contains toolbar options for adding, deleting and editing the records. You can customize the TreeGrid toolbar by using [`toolbarSettings`](/api/js/ejtreegrid#toolbarsettingsspan-classtype-signature-type-objectobjectspan "toolbarSettings") property. 
 
-In TreeGrid by using [`rowPosition`](/js/api/ejtreegrid#editsettingsrowpositionspan-classtype-signature-type-stringstringspan "editSettings.rowPosition") property, the index position for the newly added row can be provided. Default value of the `rowPosition` property is `top`. The enumeration values for `rowPosition` properties are,
+In TreeGrid by using [`rowPosition`](/api/js/ejtreegrid#editsettingsrowpositionspan-classtype-signature-type-stringstringspan "editSettings.rowPosition") property, the index position for the newly added row can be provided. Default value of the `rowPosition` property is `top`. The enumeration values for `rowPosition` properties are,
 
 * top
 * bottom

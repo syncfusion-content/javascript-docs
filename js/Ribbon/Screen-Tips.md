@@ -13,7 +13,7 @@ ScreenTip/Tooltip is used to reduce the controls related Help that are needed to
 
 ## HTML Tooltip
 
-Standard `html tooltip` can be set using [`tooltip`](http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-content-groups-tooltip) property of each group item.
+Standard `html tooltip` can be set using [`tooltip`](http://help.syncfusion.com/api/js/ejribbon#members:tabs-groups-content-groups-tooltip) property of each group item.
 
 {% highlight html %}
 
@@ -76,11 +76,11 @@ Standard `html tooltip` can be set using [`tooltip`](http://help.syncfusion.com/
 
 ## Custom Tooltip
 
-Custom Tooltip is used to set detailed help to the user about the controls. You can set [`title`](http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-content-groups-customtooltip-title), [`content`](http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-content-groups-customtooltip-content) and [`prefixIcon`](http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-content-groups-customtooltip-prefixicon) class to customize the tooltip with icons.
+Custom Tooltip is used to set detailed help to the user about the controls. You can set [`title`](http://help.syncfusion.com/api/js/ejribbon#members:tabs-groups-content-groups-customtooltip-title), [`content`](http://help.syncfusion.com/api/js/ejribbon#members:tabs-groups-content-groups-customtooltip-content) and [`prefixIcon`](http://help.syncfusion.com/api/js/ejribbon#members:tabs-groups-content-groups-customtooltip-prefixicon) class to customize the tooltip with icons.
 
 ### For Groups 
 
-[`Custom tooltip`](http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-content-groups-customtooltip) for each group controls can be specified. Such as to the controls button, split button, dropdown list etc.
+[`Custom tooltip`](http://help.syncfusion.com/api/js/ejribbon#members:tabs-groups-content-groups-customtooltip) for each group controls can be specified. Such as to the controls button, split button, dropdown list etc.
 
 {% highlight html %}
 
@@ -158,7 +158,7 @@ Custom Tooltip is used to set detailed help to the user about the controls. You 
 
 ### For Gallery
 
-[`Custom tooltip`](http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-content-groups-galleryitems-customtooltip) for each [`gallery`](http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-content-groups-galleryitems) and [`custom gallery`](http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-content-groups-customgalleryitems) items button control can be specified. 
+[`Custom tooltip`](http://help.syncfusion.com/api/js/ejribbon#members:tabs-groups-content-groups-galleryitems-customtooltip) for each [`gallery`](http://help.syncfusion.com/api/js/ejribbon#members:tabs-groups-content-groups-galleryitems) and [`custom gallery`](http://help.syncfusion.com/api/js/ejribbon#members:tabs-groups-content-groups-customgalleryitems) items button control can be specified. 
 
 N> Custom gallery item `menu` is not supported to Custom tooltip.
 
@@ -306,7 +306,7 @@ N> Custom gallery item `menu` is not supported to Custom tooltip.
 
 ### For Expand Pin
 
-Specifies the [`custom tooltip`](http://help.syncfusion.com/js/api/ejribbon#members:expandpinsettings-customtooltip) for expand pin in the Ribbon. 
+Specifies the [`custom tooltip`](http://help.syncfusion.com/api/js/ejribbon#members:expandpinsettings-customtooltip) for expand pin in the Ribbon. 
 
 {% highlight html %}
 
@@ -373,7 +373,7 @@ Specifies the [`custom tooltip`](http://help.syncfusion.com/js/api/ejribbon#memb
 
 ### For Collapse Pin
 
-Specifies the [`custom tooltip`](http://help.syncfusion.com/js/api/ejribbon#members:collapsepinsettings-customtooltip) for collapse pin in the Ribbon. 
+Specifies the [`custom tooltip`](http://help.syncfusion.com/api/js/ejribbon#members:collapsepinsettings-customtooltip) for collapse pin in the Ribbon. 
 
 {% highlight html %}
 
@@ -440,7 +440,7 @@ Specifies the [`custom tooltip`](http://help.syncfusion.com/js/api/ejribbon#memb
 
 ### For GroupExpander
 
-[`Custom tooltip`](http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-groupexpandersettings-customtooltip) for each group expander can be specified.
+[`Custom tooltip`](http://help.syncfusion.com/api/js/ejribbon#members:tabs-groups-groupexpandersettings-customtooltip) for each group expander can be specified.
 
 {% highlight html %}
 
