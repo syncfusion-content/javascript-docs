@@ -98,43 +98,67 @@ Initializes the data source for the PivotGauge widget, when it functions complet
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotGauge1").ejPivotGauge({dataSource: {data:value}});
-
+    $("#PivotGauge1").ejPivotGauge( { dataSource: { data: value } });
 {% endhighlight %}
 
+### dataSource.cube `string`
+{:#members:datasource-cube}
 
-### dataSource.catalog `string`
-{:#members:datasource-catalog}
-
-Contains the database name as string type to fetch the data from the given connection string.
+Contains the respective cube name from OLAP database as string type.
 
 #### Default Value: “”
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotGauge1").ejPivotGauge({dataSource: {catalog: value}});
-
+    $("#PivotGauge1").ejPivotGauge({ dataSource: { cube: "Adventure Works" } });
 {% endhighlight %}
 
+### dataSource.data `object`
+{:#members:datasource-data}
+
+Provides the raw data source for the PivotGauge in Relational mode.
+
+#### Default Value: null
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotGauge1").ejPivotGauge({ dataSource: { data: value } });
+{% endhighlight %}
+
+### dataSource.catalog `string`
+{:#members:datasource-catalog}
+
+In connection with an OLAP database, this property contains the database name as string to fetch the data from the given connection string.
+
+#### Default Value: “”
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotGauge1").ejPivotGauge( { dataSource: { catalog: "databaseName" } } );
+{% endhighlight %}
 
 ### dataSource.columns `array`
 {:#members:datasource-columns}
 
-Lists out the items to be arranged in column section of PivotGauge.
+Lists out the items to bind in columns section.
 
 #### Default Value: []
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotGauge1").ejPivotGauge({dataSource: {columns: itemsArray}});
-
+    $("#PivotGauge1").ejPivotGauge({ dataSource: { columns: itemsArray } });
 {% endhighlight %}
+
 
 ### dataSource.columns.fieldName `string`
 {:#members:datasource-columns-fieldname}
@@ -145,88 +169,88 @@ Allows the user to bind the item by using its unique name as field name.
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotGauge1").ejPivotGauge({dataSource: {columns: [{ fieldName : value}]}});
-
+    $("#PivotGauge1").ejPivotGauge({ dataSource: { columns: [{ fieldName : "MyFieldName" }] } });
 {% endhighlight %}
 
-### dataSource.columns.fieldCaption `string`
-{:#members:datasource-columns-fieldcaption}
+### dataSource.columns.filterItems `object`
+{:#members:datasource-columns-filteritems}
 
-Allows the user to set the display name for an item.
-
-#### Default Value: ""
-
-**Example:**
-
-{% highlight html %}
- 
-$("#PivotGauge1").ejPivotGauge({dataSource: {columns: [{ fieldCaption : value}]}});
-
-{% endhighlight %}
-
-### dataSource.columns.isNamedSets `boolean`
-{:#members:datasource-columns-isnamedsets}
-
-Allows the user to enable the usage of named set items in respective axis. This is only applicable for OLAP datasource.
-
-#### Default Value: false
-
-**Example:**
-
-{% highlight html %}
- 
-$("#PivotGauge1").ejPivotGauge({dataSource: {columns: [{ isNamedSets : true}]}});
-
-{% endhighlight %}
-
-
-### dataSource.cube `string`
-{:#members:datasource-cube}
-
-Contains the respective Cube name from database as string type.
-
-#### Default Value: “”
-
-**Example:**
-
-{% highlight html %}
- 
-$("#PivotGauge1").ejPivotGauge({dataSource: {cube: value}});
-
-{% endhighlight %}
-
-
-### dataSource.data `object`
-{:#members:datasource-data}
-
-Provides the raw data source for the PivotGauge.
+Applies filter to the field members.
 
 #### Default Value: null
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotGauge1").ejPivotGauge({dataSource: {data: value}});
-
+    $("#PivotGauge1").ejPivotGauge({ dataSource: { columns: [{ fieldName: "Country", filterItems : { filterType: ej.PivotAnalysis.FilterType.Exclude, values: ["Canada", "France"] } }] } });
 {% endhighlight %}
 
+### dataSource.columns.filterItems.filterType `enum`
+{:#members:datasource-columns-filteritems-filtertype}
 
-### dataSource.rows `array`
-{:#members:datasource-rows}
+<ts ref = "ej.PivotAnalysis.FilterType"/>
 
-Lists out the items to be arranged in row section of PivotGauge.
+Sets the type of filter whether to include/exclude the mentioned values.
+
+>**Note**: This is applicable for Relational datasource only.
+
+#### Default Value: ej.PivotAnalysis.FilterType.Exclude
+
+<table class="params">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">Exclude</td>
+            <td class="description">Excludes the specified values among the members of the field.</td>
+        </tr>
+        <tr>
+            <td class="name">Include</td>
+            <td class="description">Includes the specified values alone among the members of the field.</td>
+        </tr>
+    </tbody>
+</table>
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotGauge1").ejPivotGauge({ dataSource: { columns: [{ fieldName: "Country", filterItems : { filterType: ej.PivotAnalysis.FilterType.Include, values: valueArray } }] } });
+{% endhighlight %}
+
+### dataSource.columns.filterItems.values `array`
+{:#members:datasource-columns-filteritems-values}
+
+Contains the collection of items to be included/excluded among the field members.
 
 #### Default Value: []
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotGauge1").ejPivotGauge({dataSource: {rows: itemsArray}});
+    $("#PivotGauge1").ejPivotGauge({ dataSource: { columns: [{ fieldName: "Country", filterItems : { filterType: ej.PivotAnalysis.FilterType.Exclude, values: ["Canada", "France"] } }] } });
+{% endhighlight %}
 
+### dataSource.rows `array`
+{:#members:datasource-rows}
+
+Lists out the items to bind in rows section.
+
+#### Default Value: []
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotGauge1").ejPivotGauge({ dataSource: { rows: itemsArray } });
 {% endhighlight %}
 
 ### dataSource.rows.fieldName `string`
@@ -238,177 +262,204 @@ Allows the user to bind the item by using its unique name as field name.
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotGauge1").ejPivotGauge({dataSource: {rows: [{ fieldName : value}]}});
-
-{% endhighlight %}
-
-### dataSource.rows.fieldCaption `string`
-{:#members:datasource-rows-fieldcaption}
-
-Allows the user to set the display name for an item.
-
-#### Default Value: ""
-
-**Example:**
-
-{% highlight html %}
- 
-$("#PivotGauge1").ejPivotGauge({dataSource: {rows: [{ fieldCaption : value}]}});
-
+    $("#PivotGauge1").ejPivotGauge({ dataSource: { rows: [{ fieldName : "MyFieldName" }] } });
 {% endhighlight %}
 
 ### dataSource.rows.filterItems `object`
-{:#members:datasource-rows-filterItems}
+{:#members:datasource-rows-filteritems}
 
-Allows the user to set the filtering values name for an item.
+Applies filter to the field members.
 
 #### Default Value: null
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotGauge1").ejPivotGauge({dataSource: {rows: [{ filterItems : value}]}});
-
+    $("#PivotGauge1").ejPivotGauge({ dataSource: { rows: [{ fieldName: "Country", filterItems : { filterType: ej.PivotAnalysis.FilterType.Exclude, values: ["Canada", "France"] } }] } });
 {% endhighlight %}
 
-### dataSource.rows.filterItems.filterType `string`
-{:#members:datasource-rows-filterItems-filterType}
+### dataSource.rows.filterItems.filterType `enum`
+{:#members:datasource-rows-filteritems-filtertype}
 
-Allows the user to set the type of filtering for an item.
+<ts ref = "ej.PivotAnalysis.FilterType"/>
 
-#### Default Value: "exclude"
+Sets the type of filter whether to include/exclude the mentioned values.
+
+>**Note**: This is applicable for Relational datasource only.
+
+#### Default Value: ej.PivotAnalysis.FilterType.Exclude
+
+<table class="params">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">Exclude</td>
+            <td class="description">Excludes the specified values among the members of the field.</td>
+        </tr>
+        <tr>
+            <td class="name">Include</td>
+            <td class="description">Includes the specified values alone among the members of the field.</td>
+        </tr>
+    </tbody>
+</table>
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotGauge1").ejPivotGauge({dataSource: {rows: [{ filterItems : {filterType: "include"}}]}});
-
+    $("#PivotGauge1").ejPivotGauge({ dataSource: { rows: [{ fieldName: "Country", filterItems : { filterType: ej.PivotAnalysis.FilterType.Include, values: valueArray } }] } });
 {% endhighlight %}
 
 ### dataSource.rows.filterItems.values `array`
-{:#members:datasource-rows-filterItems-values}
+{:#members:datasource-rows-filteritems-values}
 
-Allows the user to set the values for filtering an item.
+Contains the collection of items to be included/excluded among the field members.
 
 #### Default Value: []
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotGauge1").ejPivotGauge({dataSource: {rows: [{ filterItems : {values: itemsArray}}]}});
-
-{% endhighlight %}
-
-### dataSource.rows.isNamedSets `boolean`
-{:#members:datasource-rows-isnamedsets}
-
-Allows the user to enable the usage of named set items in respective axis. This is only applicable for OLAP datasource.
-
-#### Default Value: false
-
-**Example:**
-
-{% highlight html %}
- 
-$("#PivotGauge1").ejPivotGauge({dataSource: {rows: [{ isNamedSets : true}]}});
-
+    $("#PivotGauge1").ejPivotGauge({ dataSource: { rows: [{ fieldName: "Country", filterItems : { filterType: ej.PivotAnalysis.FilterType.Exclude, values: ["Canada", "France"] } }] } });
 {% endhighlight %}
 
 ### dataSource.values `array`
 {:#members:datasource-values}
 
-Lists out the items which supports calculation in PivotGauge.
+Lists out the items supports calculation in PivotGauge.
 
 #### Default Value: []
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotGauge1").ejPivotGauge({dataSource: {values: itemsArray}});
-
-{% endhighlight %}
-
-### dataSource.values.measures `array`
-{:#members:datasource-values[0]-measures}
-
-This holds the measures unique name to bind them from the Cube.
-
-#### Default Value: []
-
-**Example:**
-
-{% highlight html %}
- 
-$("#PivotGauge1").ejPivotGauge({dataSource: {values: [{measures : itemsArray}]}});
-
-{% endhighlight %}
-
-### dataSource.values.axis `string`
-{:#members:datasource-values[0]-axis}
-
-Allows to set the axis name to place the measures items.
-
-#### Default Value: “”
-
-**Example:**
-
-{% highlight html %}
- 
-$("#PivotGauge1").ejPivotGauge({dataSource: {values: [{axis : value}]}});
-
+    $("#PivotGauge1").ejPivotGauge({ dataSource: { values: itemsArray } });
 {% endhighlight %}
 
 ### dataSource.values.fieldName `string`
-{:#members:datasource-values[0]-fieldname}
+{:#members:datasource-values-fieldname}
 
-Allows the user to bind the item by using its unique name as field name.
+Allows the user to bind the item by using its unique name as field name for Relational datasource.
 
 #### Default Value: ""
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotGauge1").ejPivotGauge({dataSource: {values: [{ fieldName : value}]}});
-
+    $("#PivotGauge1").ejPivotGauge({ dataSource: { values: [{ fieldName : "MyFieldName" }] } });
 {% endhighlight %}
 
 ### dataSource.values.fieldCaption `string`
-{:#members:datasource-values[0]-fieldcaption}
+{:#members:datasource-values-fieldcaption}
 
-Allows the user to set the display name for an item.
+Allows the user to set the display caption for an item for Relational datasource.
 
 #### Default Value: ""
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotGauge1").ejPivotGauge({dataSource: {values: [{ fieldCaption : value}]}});
-
+    $("#PivotGauge1").ejPivotGauge({ dataSource: { values: [{ fieldCaption : "MyFieldCaption" }] } });
 {% endhighlight %}
 
+### dataSource.values.measures `array`
+{:#members:datasource-values-measures}
+
+This holds the list of unique names of measures to bind them from the OLAP cube.
+
+#### Default Value: []
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotGauge1").ejPivotGauge({ dataSource: { values: [{ measures : itemsArray }] } });
+{% endhighlight %}
+
+### dataSource.values.measures.fieldName `string`
+{:#members:datasource-values-measures-fieldName}
+
+Allows the user to bind the measure from OLAP datasource by using its unique name as field name.
+
+#### Default Value: ""
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotGauge1").ejPivotGauge({ dataSource: { values: [{ measures : [{ fieldName: "MeasureUniqueName" }] }] } });
+{% endhighlight %}
+
+### dataSource.values.axis `string`
+{:#members:datasource-values-axis}
+
+Allows to set the axis name to place the measures items.
+
+>**Note**: This is applicable for OLAP datasource only.
+
+#### Default Value: "rows"
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotGauge1").ejPivotGauge({ dataSource: { values: [{ axis : ej.olap.AxisName.Row }] } });
+{% endhighlight %}
+
+### dataSource.values.isCalculatedField `boolean`
+{:#members:datasource-values-iscalculatedfield}
+
+Indicates whether the field is a calculated field or not with Relational datasource.
+
+#### Default Value: false
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotGauge1").ejPivotGauge({ dataSource: { values: [{ isCalculatedField : true }] } });
+{% endhighlight %}
+
+### dataSource.values.formula `string`
+{:#members:datasource-values-formula}
+
+Allows to set the formula for calculation of values for calculated members in Relational datasource.
+
+#### Default Value: ""
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotGauge1").ejPivotGauge({ dataSource: { values: [{ formula : "Quantity*10" }] } });
+{% endhighlight %}
 
 ### dataSource.filters `array`
 {:#members:datasource-filters}
 
-Lists out the items which supports filtering of values in PivotGauge.
+Lists out the items which supports filtering of values without displaying the members in UI in PivotGauge.
 
 #### Default Value: []
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotGauge1").ejPivotGauge({dataSource: {filters: itemsArray}});
-
+    $("#PivotGauge1").ejPivotGauge({ dataSource: { filters: itemsArray } });
 {% endhighlight %}
+
 
 ### dataSource.filters.fieldName `string`
 {:#members:datasource-filters-fieldname}
@@ -419,39 +470,74 @@ Allows the user to bind the item by using its unique name as field name.
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotGauge1").ejPivotGauge({dataSource: {filters: [{ fieldName : value}]}});
-
+    $("#PivotGauge1").ejPivotGauge({ dataSource: { filters: [{ fieldName : "MyFieldName" }] } });
 {% endhighlight %}
 
-### dataSource.filters.fieldCaption `string`
-{:#members:datasource-filters-fieldcaption}
+### dataSource.filters.filterItems `object`
+{:#members:datasource-filters-filteritems}
 
-Allows the user to set the display name for an item.
+Applies filter to the field members.
 
-#### Default Value: ""
+#### Default Value: null
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotGauge1").ejPivotGauge({dataSource: {filters: [{ fieldCaption : value}]}});
-
+    $("#PivotGauge1").ejPivotGauge({ dataSource: { filters: [{ fieldName: "Country", filterItems : { filterType: ej.PivotAnalysis.FilterType.Exclude, values: ["Canada", "France"] } }] } });
 {% endhighlight %}
 
-### dataSource.filters.isNamedSets `boolean`
-{:#members:datasource-filters-isnamedsets}
+### dataSource.filters.filterItems.filterType `enum`
+{:#members:datasource-filters-filteritems-filtertype}
 
-Allows the user to enable the usage of named set items in respective axis. This is only applicable for OLAP datasource.
+<ts ref = "ej.PivotAnalysis.FilterType"/>
 
-#### Default Value: false
+Sets the type of filter whether to include/exclude the mentioned values.
+
+>**Note**: This is applicable for Relational datasource only.
+
+#### Default Value: ej.PivotAnalysis.FilterType.Exclude
+
+<table class="params">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">Exclude</td>
+            <td class="description">Excludes the specified values among the members of the field.</td>
+        </tr>
+        <tr>
+            <td class="name">Include</td>
+            <td class="description">Includes the specified values alone among the members of the field.</td>
+        </tr>
+    </tbody>
+</table>
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-    $("#PivotGauge1").ejPivotGauge({dataSource: {filters: [{ isNamedSets : true}]}});
+    $("#PivotGauge1").ejPivotGauge({ dataSource: { filters: [{ fieldName: "Country", filterItems : { filterType: ej.PivotAnalysis.FilterType.Include, values: valueArray } }] } });
+{% endhighlight %}
+
+### dataSource.filters.filterItems.values `array`
+{:#members:datasource-filters-filteritems-values}
+
+Contains the collection of items to be included/excluded among the field members.
+
+#### Default Value: []
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotGauge1").ejPivotGauge({ dataSource: { filters: [{ fieldName: "Country", filterItems : { filterType: ej.PivotAnalysis.FilterType.Exclude, values: ["Canada", "France"] } }] } });
 {% endhighlight %}
 
 ### enableAnimation `boolean`
@@ -794,7 +880,7 @@ Sets the mode for the PivotGauge widget for binding data source either in server
 
 {% highlight javascript %}
  
-    $("#PivotGauge1").ejPivotGauge({ operationalMode: ej.PivotGrid.OperationalMode.ServerMode });
+    $("#PivotGauge1").ejPivotGauge({ operationalMode: ej.Pivot.OperationalMode.ServerMode });
 {% endhighlight %}
 
 ## Methods
@@ -849,6 +935,62 @@ This function receives the JSON formatted datasource and renders the PivotGauge 
 
     var gaugeObj = $("#PivotGauge1").data("ejPivotGauge");
     gaugeObj.renderControlFromJSON(this.getJSONRecords());
+{% endhighlight %}
+
+### getOlapReport()
+{:#methods:getolapreport}
+
+Returns the OlapReport string maintained along with the axis elements information.
+
+>**Note**: This method is applicable only on operating the control in server mode.
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    var gaugeObj = $("#PivotGauge1").data("ejPivotGauge");
+    var report = gaugeObj.getOlapReport();
+{% endhighlight %}
+
+### setOlapReport()
+{:#methods:setolapreport}
+
+Sets the OlapReport string along with the axis information and maintains it in a property.
+
+>**Note**: This method is applicable only on operating the control in server mode.
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    var gaugeObj = $("#PivotGauge1").data("ejPivotGauge");
+    gaugeObj.setOlapReport(olapReportObj);
+{% endhighlight %}
+
+### getJSONRecords()
+{:#methods:getjsonrecords}
+
+Returns the JSON records formed to render the control.
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    var gaugeObj = $("#PivotGauge1").data("ejPivotGauge");
+    var jsonRecords = gaugeObj.getJSONRecords();
+{% endhighlight %}
+
+### setJSONRecords()
+{:#methods:setjsonrecords}
+
+Sets the JSON records to render the control.
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    var gaugeObj = $("#PivotGauge1").data("ejPivotGauge");
+    gaugeObj.setJSONRecords(jsonRecords);
 {% endhighlight %}
 
 ### getJSONData()

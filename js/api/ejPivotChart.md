@@ -110,19 +110,106 @@ Options available to configure the properties of entire series. You can also ove
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
     $("#PivotChart1").ejPivotChart({ commonSeriesOptions: { type: ej.PivotChart.ChartTypes.Line } });
 {% endhighlight %}
 
-### currentReport `string`
-{:#members:currentreport}
+### commonSeriesOptions.type `enum`
+{:#members:commonseriesoptions-type}
 
-Contains the serialized OlapReport at that instant. 
+<ts name = "ej.PivotChart.ChartTypes"/>
 
->**Note**: This is applicable only on binding the control with OLAP data.
+Allows the user to set the specific chart type for PivotChart widget.
 
-#### Default Value: “”
+#### Default Value: ej.PivotChart.ChartTypes.Column
+
+<table class="params">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">Line</td>
+            <td class="description">To render a Line type PivotChart.</td>
+        </tr>
+        <tr>
+            <td class="name">Spline</td>
+            <td class="description">To render a Spline type PivotChart.</td>
+        </tr>
+        <tr>
+            <td class="name">Column</td>
+            <td class="description">To render a Column type PivotChart.</td>
+        </tr>
+        <tr>
+            <td class="name">Area</td>
+            <td class="description">To render an Area type PivotChart.</td>
+        </tr>
+        <tr>
+            <td class="name">SplineArea</td>
+            <td class="description">To render a SplineArea type PivotChart.</td>
+        </tr>
+        <tr>
+            <td class="name">StepLine</td>
+            <td class="description">To render a StepLine type PivotChart.</td>
+        </tr>
+        <tr>
+            <td class="name">StepArea</td>
+            <td class="description">To render a StepArea type PivotChart.</td>
+        </tr>
+        <tr>
+            <td class="name">Pie</td>
+            <td class="description">To render a Pie type PivotChart.</td>
+        </tr>
+        <tr>
+            <td class="name">Bar</td>
+            <td class="description">To render a Bar type PivotChart.</td>
+        </tr>
+        <tr>
+            <td class="name">StackingArea</td>
+            <td class="description">To render a StackingArea type PivotChart.</td>
+        </tr>
+        <tr>
+            <td class="name">StackingColumn</td>
+            <td class="description">To render a StackingColumn type PivotChart.</td>
+        </tr>
+        <tr>
+            <td class="name">StackingBar</td>
+            <td class="description">To render a StackingBar type PivotChart.</td>
+        </tr>
+        <tr>
+            <td class="name">Pyramid</td>
+            <td class="description">To render a Pyramid type PivotChart.</td>
+        </tr>
+        <tr>
+            <td class="name">Funnel</td>
+            <td class="description">To render a Funnel type PivotChart.</td>
+        </tr>
+        <tr>
+            <td class="name">Doughnut</td>
+            <td class="description">To render a Doughnut type PivotChart.</td>
+        </tr>
+        <tr>
+            <td class="name">Scatter</td>
+            <td class="description">To render a Scatter type PivotChart.</td>
+        </tr>
+        <tr>
+            <td class="name">Bubble</td>
+            <td class="description">To render a Bubble type PivotChart.</td>
+        </tr>
+    </tbody>
+</table>
+
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotChart1").ejPivotChart({ commonSeriesOptions: { type: ej.PivotChart.ChartTypes.Spline } });
+{% endhighlight %}
 
 ### dataSource `object`
 {:#members:datasource}
@@ -133,42 +220,65 @@ Initializes the data source for the PivotChart widget, when it functions complet
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotChart1").ejPivotChart({dataSource: {data:value}});
-
+    $("#PivotChart1").ejPivotChart( { dataSource: { data: value } });
 {% endhighlight %}
 
+### dataSource.cube `string`
+{:#members:datasource-cube}
 
-### dataSource.catalog `string`
-{:#members:datasource-catalog}
-
-Contains the database name as string type to fetch the data from the given connection string.
+Contains the respective cube name from OLAP database as string type.
 
 #### Default Value: “”
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotChart1").ejPivotChart({dataSource: {catalog: value}});
-
+    $("#PivotChart1").ejPivotChart({ dataSource: { cube: "Adventure Works" } });
 {% endhighlight %}
 
+### dataSource.data `object`
+{:#members:datasource-data}
+
+Provides the raw data source for the PivotChart in Relational mode.
+
+#### Default Value: null
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotChart1").ejPivotChart({ dataSource: { data: value } });
+{% endhighlight %}
+
+### dataSource.catalog `string`
+{:#members:datasource-catalog}
+
+In connection with an OLAP database, this property contains the database name as string to fetch the data from the given connection string.
+
+#### Default Value: “”
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotChart1").ejPivotChart( { dataSource: { catalog: "databaseName" } } );
+{% endhighlight %}
 
 ### dataSource.columns `array`
 {:#members:datasource-columns}
 
-Lists out the items to be arranged in column section of PivotChart.
+Lists out the items to be displayed as series of PivotChart.
 
 #### Default Value: []
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotChart1").ejPivotChart({dataSource: {columns: itemsArray}});
-
+    $("#PivotChart1").ejPivotChart({ dataSource: { columns: itemsArray } });
 {% endhighlight %}
 
 
@@ -181,90 +291,159 @@ Allows the user to bind the item by using its unique name as field name.
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotChart1").ejPivotChart({dataSource: {columns: [{ fieldName : value}]}});
-
+    $("#PivotChart1").ejPivotChart({ dataSource: { columns: [{ fieldName : "MyFieldName" }] } });
 {% endhighlight %}
-
 
 ### dataSource.columns.fieldCaption `string`
 {:#members:datasource-columns-fieldcaption}
 
-Allows the user to set the display name for an item.
+Allows the user to set the display caption for an item.
 
 #### Default Value: ""
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotChart1").ejPivotChart({dataSource: {columns: [{ fieldCaption : value}]}});
-
+    $("#PivotChart1").ejPivotChart({ dataSource: { columns: [{ fieldCaption : "MyFieldCaption" }] } });
 {% endhighlight %}
-
 
 ### dataSource.columns.isNamedSets `boolean`
 {:#members:datasource-columns-isnamedsets}
 
-Allows the user to enable the usage of named set items in respective axis. This is only applicable for OLAP datasource.
+Allows the user to indicate whether the added item is a named set or not. 
+
+> **Note**: This is only applicable for OLAP datasource.
 
 #### Default Value: false
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotChart1").ejPivotChart({dataSource: {columns: [{ isNamedSets : true}]}});
-
+    $("#PivotChart1").ejPivotChart({ dataSource: { columns: [{ fieldName: "[Core Product Group]", isNamedSets : true }] } });
 {% endhighlight %}
 
+### dataSource.columns.sortOrder `enum`
+{:#members:datasource-columns-sortorder}
 
-### dataSource.cube `string`
-{:#members:datasource-cube}
+<ts ref = "ej.PivotAnalysis.SortOrder"/>
 
-Contains the respective Cube name from database as string type.
+Allows the user to set the sorting order of the members of the field.
 
-#### Default Value: “”
+>**Note**: This is applicable for Relational datasource only.
+
+#### Default Value: ej.PivotAnalysis.SortOrder.Ascending
+
+<table class="params">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">Ascending</td>
+            <td class="description">Sorts the members of the field in ascending order.</td>
+        </tr>
+        <tr>
+            <td class="name">Descending</td>
+            <td class="description">Sorts the members of the field in descending order.</td>
+        </tr>
+        <tr>
+            <td class="name">None</td>
+            <td class="description">Displays the members without sorting in any order.</td>
+        </tr>
+    </tbody>
+</table>
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotChart1").ejPivotChart({dataSource: {cube: value}});
-
+    $("#PivotChart1").ejPivotChart({ dataSource: { columns: [{ fieldName: "Country", sortOrder : ej.PivotAnalysis.SortOrder.Descending }] } });
 {% endhighlight %}
 
+### dataSource.columns.filterItems `object`
+{:#members:datasource-columns-filteritems}
 
-### dataSource.data `object`
-{:#members:datasource-data}
-
-Provides the raw data source for the PivotChart.
+Applies filter to the field members.
 
 #### Default Value: null
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotChart1").ejPivotChart({dataSource: {data: value}});
-
+    $("#PivotChart1").ejPivotChart({ dataSource: { columns: [{ fieldName: "Country", filterItems : { filterType: ej.PivotAnalysis.FilterType.Exclude, values: ["Canada", "France"] } }] } });
 {% endhighlight %}
 
+### dataSource.columns.filterItems.filterType `enum`
+{:#members:datasource-columns-filteritems-filtertype}
 
-### dataSource.rows `array`
-{:#members:datasource-rows}
+<ts ref = "ej.PivotAnalysis.FilterType"/>
 
-Lists out the items to be arranged in row section of PivotChart.
+Sets the type of filter whether to include/exclude the mentioned values.
+
+>**Note**: This is applicable for Relational datasource only.
+
+#### Default Value: ej.PivotAnalysis.FilterType.Exclude
+
+<table class="params">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">Exclude</td>
+            <td class="description">Excludes the specified values among the members of the field.</td>
+        </tr>
+        <tr>
+            <td class="name">Include</td>
+            <td class="description">Includes the specified values alone among the members of the field.</td>
+        </tr>
+    </tbody>
+</table>
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotChart1").ejPivotChart({ dataSource: { columns: [{ fieldName: "Country", filterItems : { filterType: ej.PivotAnalysis.FilterType.Include, values: valueArray } }] } });
+{% endhighlight %}
+
+### dataSource.columns.filterItems.values `array`
+{:#members:datasource-columns-filteritems-values}
+
+Contains the collection of items to be included/excluded among the field members.
 
 #### Default Value: []
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotChart1").ejPivotChart({dataSource: {rows: itemsArray}});
+    $("#PivotChart1").ejPivotChart({ dataSource: { columns: [{ fieldName: "Country", filterItems : { filterType: ej.PivotAnalysis.FilterType.Exclude, values: ["Canada", "France"] } }] } });
+{% endhighlight %}
 
+### dataSource.rows `array`
+{:#members:datasource-rows}
+
+Lists out the items to be displayed as segments of PivotChart.
+
+#### Default Value: []
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotChart1").ejPivotChart({ dataSource: { rows: itemsArray } });
 {% endhighlight %}
 
 
@@ -277,135 +456,275 @@ Allows the user to bind the item by using its unique name as field name.
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotChart1").ejPivotChart({dataSource: {rows: [{ fieldName : value}]}});
-
+    $("#PivotChart1").ejPivotChart({ dataSource: { rows: [{ fieldName : "MyFieldName" }] } });
 {% endhighlight %}
-
 
 ### dataSource.rows.fieldCaption `string`
 {:#members:datasource-rows-fieldcaption}
 
-Allows the user to set the display name for an item.
+Allows the user to set the display caption for an item.
 
 #### Default Value: ""
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotChart1").ejPivotChart({dataSource: {rows: [{ fieldCaption : value}]}});
-
+    $("#PivotChart1").ejPivotChart({ dataSource: { rows: [{ fieldCaption : "MyFieldCaption" }] } });
 {% endhighlight %}
-
 
 ### dataSource.rows.isNamedSets `boolean`
 {:#members:datasource-rows-isnamedsets}
 
-Allows the user to enable the usage of named set items in respective axis. This is only applicable for OLAP datasource.
+Allows the user to indicate whether the added item is a named set or not. 
+
+> **Note**: This is only applicable for OLAP datasource.
 
 #### Default Value: false
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotChart1").ejPivotChart({dataSource: {rows: [{ isNamedSets : true}]}});
+    $("#PivotChart1").ejPivotChart({ dataSource: { rows: [{ fieldName: "[Core Product Group]", isNamedSets : true }] } });
+{% endhighlight %}
 
+### dataSource.rows.sortOrder `enum`
+{:#members:datasource-rows-sortorder}
+
+<ts ref = "ej.PivotAnalysis.SortOrder"/>
+
+Allows the user to set the sorting order of the members of the field.
+
+>**Note**: This is applicable for Relational datasource only.
+
+#### Default Value: ej.PivotAnalysis.SortOrder.Ascending
+
+<table class="params">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">Ascending</td>
+            <td class="description">Sorts the members of the field in ascending order.</td>
+        </tr>
+        <tr>
+            <td class="name">Descending</td>
+            <td class="description">Sorts the members of the field in descending order.</td>
+        </tr>
+        <tr>
+            <td class="name">None</td>
+            <td class="description">Displays the members without sorting in any order.</td>
+        </tr>
+    </tbody>
+</table>
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotChart1").ejPivotChart({ dataSource: { rows: [{ fieldName: "Country", sortOrder : ej.PivotAnalysis.SortOrder.Descending }] } });
+{% endhighlight %}
+
+### dataSource.rows.filterItems `object`
+{:#members:datasource-rows-filteritems}
+
+Applies filter to the field members.
+
+#### Default Value: null
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotChart1").ejPivotChart({ dataSource: { rows: [{ fieldName: "Country", filterItems : { filterType: ej.PivotAnalysis.FilterType.Exclude, values: ["Canada", "France"] } }] } });
+{% endhighlight %}
+
+### dataSource.rows.filterItems.filterType `enum`
+{:#members:datasource-rows-filteritems-filtertype}
+
+<ts ref = "ej.PivotAnalysis.FilterType"/>
+
+Sets the type of filter whether to include/exclude the mentioned values.
+
+>**Note**: This is applicable for Relational datasource only.
+
+#### Default Value: ej.PivotAnalysis.FilterType.Exclude
+
+<table class="params">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">Exclude</td>
+            <td class="description">Excludes the specified values among the members of the field.</td>
+        </tr>
+        <tr>
+            <td class="name">Include</td>
+            <td class="description">Includes the specified values alone among the members of the field.</td>
+        </tr>
+    </tbody>
+</table>
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotChart1").ejPivotChart({ dataSource: { rows: [{ fieldName: "Country", filterItems : { filterType: ej.PivotAnalysis.FilterType.Include, values: valueArray } }] } });
+{% endhighlight %}
+
+### dataSource.rows.filterItems.values `array`
+{:#members:datasource-rows-filteritems-values}
+
+Contains the collection of items to be included/excluded among the field members.
+
+#### Default Value: []
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotChart1").ejPivotChart({ dataSource: { rows: [{ fieldName: "Country", filterItems : { filterType: ej.PivotAnalysis.FilterType.Exclude, values: ["Canada", "France"] } }] } });
 {% endhighlight %}
 
 ### dataSource.values `array`
 {:#members:datasource-values}
 
-Lists out the items which supports calculation in PivotChart.
+Lists out the items supports calculation in PivotChart.
 
 #### Default Value: []
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotChart1").ejPivotChart({dataSource: {values: itemsArray}});
+    $("#PivotChart1").ejPivotChart({ dataSource: { values: itemsArray } });
+{% endhighlight %}
 
+### dataSource.values.fieldName `string`
+{:#members:datasource-values-fieldname}
+
+Allows the user to bind the item by using its unique name as field name for Relational datasource.
+
+#### Default Value: ""
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotChart1").ejPivotChart({ dataSource: { values: [{ fieldName : "MyFieldName" }] } });
+{% endhighlight %}
+
+### dataSource.values.fieldCaption `string`
+{:#members:datasource-values-fieldcaption}
+
+Allows the user to set the display caption for an item for Relational datasource.
+
+#### Default Value: ""
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotChart1").ejPivotChart({ dataSource: { values: [{ fieldCaption : "MyFieldCaption" }] } });
 {% endhighlight %}
 
 ### dataSource.values.measures `array`
-{:#members:datasource-values[0]-measures}
+{:#members:datasource-values-measures}
 
-This holds the measures unique name to bind them from the Cube.
+This holds the list of unique names of measures to bind them from the OLAP cube.
 
 #### Default Value: []
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotChart1").ejPivotChart({dataSource: {values: [{measures : itemsArray}]}});
+    $("#PivotChart1").ejPivotChart({ dataSource: { values: [{ measures : itemsArray }] } });
+{% endhighlight %}
 
+### dataSource.values.measures.fieldName `string`
+{:#members:datasource-values-measures-fieldName}
+
+Allows the user to bind the measure from OLAP datasource by using its unique name as field name.
+
+#### Default Value: ""
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotChart1").ejPivotChart({ dataSource: { values: [{ measures : [{ fieldName: "MeasureUniqueName" }] }] } });
 {% endhighlight %}
 
 ### dataSource.values.axis `string`
-{:#members:datasource-values[0]-axis}
+{:#members:datasource-values-axis}
 
 Allows to set the axis name to place the measures items.
 
-#### Default Value: “”
+>**Note**: This is applicable for OLAP datasource only.
+
+#### Default Value: "rows"
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotChart1").ejPivotChart({dataSource: {values: [{axis : value}]}});
-
+    $("#PivotChart1").ejPivotChart({ dataSource: { values: [{ axis : ej.olap.AxisName.Row }] } });
 {% endhighlight %}
 
+### dataSource.values.isCalculatedField `boolean`
+{:#members:datasource-values-iscalculatedfield}
 
-### dataSource.values.fieldName `string`
-{:#members:datasource-values[0]-fieldname}
+Indicates whether the field is a calculated field or not with Relational datasource.
 
-Allows the user to bind the item by using its unique name as field name.
+#### Default Value: false
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotChart1").ejPivotChart({ dataSource: { values: [{ isCalculatedField : true }] } });
+{% endhighlight %}
+
+### dataSource.values.formula `string`
+{:#members:datasource-values-formula}
+
+Allows to set the formula for calculation of values for calculated members in Relational datasource.
 
 #### Default Value: ""
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotChart1").ejPivotChart({dataSource: {values: [{ fieldName : value}]}});
-
-{% endhighlight %}
-
-
-### dataSource.values.fieldCaption `string`
-{:#members:datasource-values[0]-fieldcaption}
-
-Allows the user to set the display name for an item.
-
-#### Default Value: ""
-
-**Example:**
-
-{% highlight html %}
- 
-$("#PivotChart1").ejPivotChart({dataSource: {values: [{ fieldCaption : value}]}});
-
+    $("#PivotChart1").ejPivotChart({ dataSource: { values: [{ formula : "Quantity*10" }] } });
 {% endhighlight %}
 
 ### dataSource.filters `array`
 {:#members:datasource-filters}
 
-Lists out the items which supports filtering of values in PivotChart.
+Lists out the items which supports filtering of values without displaying the members in UI in PivotChart.
 
 #### Default Value: []
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotChart1").ejPivotChart({dataSource: {filters: itemsArray}});
-
+    $("#PivotChart1").ejPivotChart({ dataSource: { filters: itemsArray } });
 {% endhighlight %}
+
 
 ### dataSource.filters.fieldName `string`
 {:#members:datasource-filters-fieldname}
@@ -416,44 +735,75 @@ Allows the user to bind the item by using its unique name as field name.
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotChart1").ejPivotChart({dataSource: {filters: [{ fieldName : value}]}});
-
+    $("#PivotChart1").ejPivotChart({ dataSource: { filters: [{ fieldName : "MyFieldName" }] } });
 {% endhighlight %}
 
+### dataSource.filters.filterItems `object`
+{:#members:datasource-filters-filteritems}
 
-### dataSource.filters.fieldCaption `string`
-{:#members:datasource-filters-fieldcaption}
+Applies filter to the field members.
 
-Allows the user to set the display name for an item.
-
-#### Default Value: ""
+#### Default Value: null
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotChart1").ejPivotChart({dataSource: {filters: [{ fieldCaption : value}]}});
-
+    $("#PivotChart1").ejPivotChart({ dataSource: { filters: [{ fieldName: "Country", filterItems : { filterType: ej.PivotAnalysis.FilterType.Exclude, values: ["Canada", "France"] } }] } });
 {% endhighlight %}
 
+### dataSource.filters.filterItems.filterType `enum`
+{:#members:datasource-filters-filteritems-filtertype}
 
-### dataSource.filters.isNamedSets `boolean`
-{:#members:datasource-filters-isnamedsets}
+<ts ref = "ej.PivotAnalysis.FilterType"/>
 
-Allows the user to enable the usage of named set items in respective axis. This is only applicable for OLAP datasource.
+Sets the type of filter whether to include/exclude the mentioned values.
 
-#### Default Value: false
+>**Note**: This is applicable for Relational datasource only.
+
+#### Default Value: ej.PivotAnalysis.FilterType.Exclude
+
+<table class="params">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">Exclude</td>
+            <td class="description">Excludes the specified values among the members of the field.</td>
+        </tr>
+        <tr>
+            <td class="name">Include</td>
+            <td class="description">Includes the specified values alone among the members of the field.</td>
+        </tr>
+    </tbody>
+</table>
 
 **Example:**
 
-{% highlight html %}
+{% highlight javascript %}
  
-$("#PivotChart1").ejPivotChart({dataSource: {filters: [{ isNamedSets : true}]}});
-
+    $("#PivotChart1").ejPivotChart({ dataSource: { filters: [{ fieldName: "Country", filterItems : { filterType: ej.PivotAnalysis.FilterType.Include, values: valueArray } }] } });
 {% endhighlight %}
 
+### dataSource.filters.filterItems.values `array`
+{:#members:datasource-filters-filteritems-values}
+
+Contains the collection of items to be included/excluded among the field members.
+
+#### Default Value: []
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotChart1").ejPivotChart({ dataSource: { filters: [{ fieldName: "Country", filterItems : { filterType: ej.PivotAnalysis.FilterType.Exclude, values: ["Canada", "France"] } }] } });
+{% endhighlight %}
 
 ### customObject `object`
 {:#members:customobject}
@@ -791,7 +1141,7 @@ This function receives the update from service-end, which would be utilized for 
 
 Returns the OlapReport string maintained along with the axis elements information.
 
->**Note**: This property is applicable only on operating the control in server mode.
+>**Note**: This method is applicable only on operating the control in server mode.
 
 **Example:**
 
@@ -806,7 +1156,7 @@ Returns the OlapReport string maintained along with the axis elements informatio
 
 Sets the OlapReport string along with the axis information and maintains it in a property.
 
->**Note**: This property is applicable only on operating the control in server mode.
+>**Note**: This method is applicable only on operating the control in server mode.
 
 **Example:**
 
@@ -887,7 +1237,7 @@ Re-renders the control with the data source at the instant.
 ### generateJSON()
 {:#methods:generatejson}
 
-Renders the control with the pivot engine obtained from OLAP base source.
+Renders the control with the pivot engine obtained from olap cube.
 
 **Example:**
 
