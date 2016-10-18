@@ -78,7 +78,7 @@ To achieve Word export, service URL and file name is sent as the parameter.
 
 ### PDF Export
 
-User can exportthe contents of PivotGrid to a PDF document for future archival, references and analysis purposes.
+User can export the contents of PivotGrid to a PDF document for future archival, references and analysis purposes.
 
 To achieve PDF export, service URL and file name is sent as the parameter.
 

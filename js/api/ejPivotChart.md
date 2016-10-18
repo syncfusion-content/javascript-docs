@@ -887,7 +887,7 @@ Re-renders the control with the data source at the instant.
 ### generateJSON()
 {:#methods:generatejson}
 
-Renders the control with the pivot engine obtained from olap base source.
+Renders the control with the pivot engine obtained from OLAP base source.
 
 **Example:**
 
