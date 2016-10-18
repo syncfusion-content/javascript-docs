@@ -5109,7 +5109,7 @@ Gets or sets a value that indicates whether to customizing the user interface (U
         SaveButton: "Speichern",
         CancelButton: "stornieren",
         EditFormTitle: "Details von ",
-        AddFormTitle: "Neue Karte hinzufügen",
+        AddFormTitle: "Neue Karte hinzufugen",
         SwimlaneCaptionFormat: "- {{:count}}{{if count == 1 }} Artikel {{else}} Artikel {{/if}}",
         FilterSettings: "Filter:",
         FilterOfText: "Von",
