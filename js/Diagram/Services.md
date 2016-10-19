@@ -12,7 +12,11 @@ control: ejDiagram
 
 #Diagram CRUD services
 
-## Read Nodes DataSource
+## Binding Shapes Data
+
+### Description
+
+Fetch and bind the records from database to shapes.
 
 ### URL 
 [http://js.syncfusion.com/demos/ejservices/api/JSDiagram/GetShapeData](http://js.syncfusion.com/demos/ejservices/api/JSDiagram/GetShapeData)
@@ -30,6 +34,18 @@ $.ajax({
 
     url: 'http://js.syncfusion.com/demos/ejservices/api/JSDiagram/GetShapeData',
 });
+
+{% endhighlight %}
+
+#### Action getting invoked in C Sharp 
+
+{% highlight c# %}
+
+    public List<HierarchicalData> GetShapeData()
+    {
+        DiagramContextDataContext context = new DiagramContextDataContext();
+        return context.HierarchicalDatas.ToList();
+    }
 
 {% endhighlight %}
 
@@ -55,7 +71,11 @@ $.ajax({
     }]
 {% endhighlight %}
 
-## New Shapes
+## Insert Shapes
+
+### Description
+
+Send the shapes which needs to be inserted into database.
 
 ### URL 
 [http://js.syncfusion.com/demos/ejservices/api/JSDiagram/InsertShape](http://js.syncfusion.com/demos/ejservices/api/JSDiagram/InsertShape)
@@ -64,15 +84,14 @@ $.ajax({
 
 <table>
 <tr>
-<td>
-**Name**</td><td>
-**Type**</td><td>
-**Description**</td></tr>
+    <th>Name</th>
+    <th>Type</th>
+    <th>Description</th>
+</tr>
 <tr>
-<td>
-data</td><td>
-Array</td><td>
-Send the newly added shapes as a collection of array.</td></tr>
+    <td>data</td>
+    <td>Array</td>
+    <td>Send the shapes which needs to be inserted.</td></tr>
 </table>
 
 ### Request
@@ -97,6 +116,23 @@ $.ajax({
 
 {% endhighlight %}
 
+#### Action getting invoked in C Sharp 
+
+{% highlight c# %}
+
+    public void InsertShape(List<HierarchicalData> data)
+    {
+        DiagramContextDataContext context = new DiagramContextDataContext();
+        context.HierarchicalDatas.InsertAllOnSubmit(data);
+        foreach (HierarchicalData hdata in data)
+        {
+            context.HierarchicalDatas.InsertOnSubmit(hdata);
+            context.SubmitChanges();
+        }
+    }
+
+{% endhighlight %}
+
 ### Response 
 
 ####Code:  204
@@ -105,7 +141,11 @@ $.ajax({
 
 ####Response Text: Empty
 
-## Updated Shapes
+## Update Shapes
+
+### Description
+
+Send the shapes which needs to be modified into database.
 
 ### URL 
 [http://js.syncfusion.com/demos/ejservices/api/JSDiagram/UpdateShape](http://js.syncfusion.com/demos/ejservices/api/JSDiagram/UpdateShape)
@@ -114,15 +154,15 @@ $.ajax({
 
 <table>
 <tr>
-<td>
-**Name**</td><td>
-**Type**</td><td>
-**Description**</td></tr>
+    <th>Name</th>
+    <th>Type</th>
+    <th>Description</th>
+</tr>
 <tr>
-<td>
-data</td><td>
-Array</td><td>
-Send the updated shapes as a collection of array.</td></tr>
+    <td>data</td>
+    <td>Array</td>
+    <td>Send the shapes which needs to be modified.</td>
+</tr>
 </table>
 
 ### Request
@@ -147,6 +187,25 @@ $.ajax({
 
 {% endhighlight %}
 
+#### Action getting invoked in C Sharp 
+
+{% highlight c# %}
+
+    public void UpdateShape(List<HierarchicalData> data)
+    {
+        DiagramContextDataContext context = new DiagramContextDataContext();
+        foreach (HierarchicalData hdata in data)
+        {
+            HierarchicalData originalData = context.HierarchicalDatas.Single(h => h.Name == hdata.Name);
+            originalData.Description = hdata.Description;
+            originalData.Color = hdata.Color;
+            context.SubmitChanges();
+        }
+
+    }
+
+{% endhighlight %}
+
 ### Response 
 
 ####Code:  204
@@ -155,7 +214,11 @@ $.ajax({
 
 ####Response Text: Empty
 
-## Deleted Shapes
+## Delete Shapes
+
+### Description
+
+Send the shapes which needs to be deleted into database.
 
 ### URL 
 [http://js.syncfusion.com/demos/ejservices/api/JSDiagram/DeleteShape](http://js.syncfusion.com/demos/ejservices/api/JSDiagram/DeleteShape)
@@ -164,15 +227,15 @@ $.ajax({
 
 <table>
 <tr>
-<td>
-**Name**</td><td>
-**Type**</td><td>
-**Description**</td></tr>
+    <th>Name</th>
+    <th>Type</th>
+    <th>Description</th>
+</tr>
 <tr>
-<td>
-data</td><td>
-Array</td><td>
-Send the deleted shapes as a collection of array.</td></tr>
+    <td>data</td>
+    <td>Array</td>
+    <td>Send the shapes which needs to be deleted.</td>
+</tr>
 </table>
 
 ### Request
@@ -197,6 +260,23 @@ $.ajax({
 
 {% endhighlight %}
 
+#### Action getting invoked in C Sharp 
+
+{% highlight c# %}
+
+    public void DeleteShape(List<HierarchicalData> data)
+    {
+        DiagramContextDataContext context = new DiagramContextDataContext();
+        foreach (HierarchicalData hdata in data)
+        {
+            HierarchicalData originalData = context.HierarchicalDatas.Single(h => h.Name == hdata.Name);
+            context.HierarchicalDatas.DeleteOnSubmit(originalData);
+            context.SubmitChanges();
+        }
+    }
+
+{% endhighlight %}
+
 ### Response 
 
 ####Code:  204
@@ -205,7 +285,11 @@ $.ajax({
 
 ####Response Text: Empty
 
-## Read Connectors DataSource
+## Binding Connectors Data
+
+### Description
+
+Fetch and bind the records from database to connectors.
 
 ### URL 
 [http://js.syncfusion.com/demos/ejservices/api/JSDiagram/GetConnectorData](http://js.syncfusion.com/demos/ejservices/api/JSDiagram/GetConnectorData)
@@ -226,6 +310,18 @@ $.ajax({
 
 {% endhighlight %}
 
+#### Action getting invoked in C Sharp 
+
+{% highlight c# %}
+
+    public List<HierarchicalDetails> GetConnectorData()
+    {
+        DiagramContextDataContext context = new DiagramContextDataContext();
+        return context.HierarchicalDetails.ToList();
+    }
+
+{% endhighlight %}
+
 ### Response 
 
 ####Code:  200
@@ -243,7 +339,11 @@ $.ajax({
 }]
 {% endhighlight %}
 
-## New Connectors
+## Insert Connectors
+
+### Description
+
+Send the connectors which needs to be inserted into database.
 
 ### URL 
 [http://js.syncfusion.com/demos/ejservices/api/JSDiagram/InsertConnector](http://js.syncfusion.com/demos/ejservices/api/JSDiagram/InsertConnector)
@@ -252,15 +352,15 @@ $.ajax({
 
 <table>
 <tr>
-<td>
-**Name**</td><td>
-**Type**</td><td>
-**Description**</td></tr>
+    <th>Name</th>
+    <th>Type</th>
+    <th>Description</th>
+</tr>
 <tr>
-<td>
-data</td><td>
-Array</td><td>
-Send the newly added connectors as a collection of array.</td></tr>
+    <td>data</td>
+    <td>Array</td>
+    <td>Send the connectors which needs to be inserted.</td>
+</tr>
 </table>
 
 ### Request
@@ -285,6 +385,22 @@ $.ajax({
 
 {% endhighlight %}
 
+#### Action getting invoked in C Sharp 
+
+{% highlight c# %}
+
+    public void InsertConnector(List<HierarchicalDetails> data)
+    {
+        DiagramContextDataContext context = new DiagramContextDataContext();
+        foreach (HierarchicalDetails hdata in data)
+        {
+            context.HierarchicalDetails.InsertOnSubmit(hdata);
+            context.SubmitChanges();
+        }
+    }
+
+{% endhighlight %}
+
 ### Response 
 
 ####Code:  204
@@ -293,7 +409,11 @@ $.ajax({
 
 ####Response Text: Empty
 
-## Updated Connectors
+## Update Connectors
+
+### Description
+
+Send the connectors which needs to be modified into database.
 
 ### URL 
 [http://js.syncfusion.com/demos/ejservices/api/JSDiagram/UpdateConnector](http://js.syncfusion.com/demos/ejservices/api/JSDiagram/UpdateConnector)
@@ -302,15 +422,15 @@ $.ajax({
 
 <table>
 <tr>
-<td>
-**Name**</td><td>
-**Type**</td><td>
-**Description**</td></tr>
+    <th>Name</th>
+    <th>Type</th>
+    <th>Description</th>
+</tr>
 <tr>
-<td>
-data</td><td>
-Array</td><td>
-Send the updated connectors as a collection of array.</td></tr>
+    <td>data</td>
+    <td>Array</td>
+    <td>Send the connectors which needs to be modified.</td>
+</tr>
 </table>
 
 ### Request
@@ -335,6 +455,24 @@ $.ajax({
 
 {% endhighlight %}
 
+#### Action getting invoked in C Sharp 
+
+{% highlight c# %}
+
+    public void UpdateConnector(List<HierarchicalDetails> data)
+    {
+        DiagramContextDataContext context = new DiagramContextDataContext();
+        foreach (HierarchicalDetails hdata in data)
+        {
+            HierarchicalDetails originalData = context.HierarchicalDetails.Single(h => h.Name == hdata.Name);
+            originalData.SourceNode = hdata.SourceNode;
+            originalData.TargetNode = hdata.TargetNode;
+            context.SubmitChanges();
+        }
+    }
+
+{% endhighlight %}
+
 ### Response 
 
 ####Code:  204
@@ -343,7 +481,11 @@ $.ajax({
 
 ####Response Text: Empty
 
-## Deleted Connectors
+## Delete Connectors
+
+### Description
+
+Send the connectors which needs to be deleted into database.
 
 ### URL 
 [http://js.syncfusion.com/demos/ejservices/api/JSDiagram/DeleteConnector](http://js.syncfusion.com/demos/ejservices/api/JSDiagram/DeleteConnector)
@@ -352,15 +494,15 @@ $.ajax({
 
 <table>
 <tr>
-<td>
-**Name**</td><td>
-**Type**</td><td>
-**Description**</td></tr>
+    <th>Name</th>
+    <th>Type</th>
+    <th>Description</th>
+</tr>
 <tr>
-<td>
-data</td><td>
-Array</td><td>
-Send the deleted connectors as a collection of array.</td></tr>
+    <td>data</td>
+    <td>Array</td>
+    <td>Send the connectors which needs to be deleted.</td>
+</tr>
 </table>
 
 ### Request
@@ -382,6 +524,23 @@ $.ajax({
         "TargetNode": "Layout"
     }])
 });
+
+{% endhighlight %}
+
+#### Action getting invoked in C Sharp 
+
+{% highlight c# %}
+
+    public void DeleteConnector(List<HierarchicalDetails> data)
+    {
+        DiagramContextDataContext context = new DiagramContextDataContext();
+        foreach (HierarchicalDetails hdata in data)
+        {
+            HierarchicalDetails originalData = context.HierarchicalDetails.Single(h => h.Name == hdata.Name);
+            context.HierarchicalDetails.DeleteOnSubmit(originalData);
+            context.SubmitChanges();
+        }
+    }
 
 {% endhighlight %}
 
