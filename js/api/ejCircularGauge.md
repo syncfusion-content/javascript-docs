@@ -829,7 +829,7 @@ $("#CoreCircularGauge").ejCircularGauge({  readOnly : false });
 
 
 
-### scales `object`
+### scales `array`
 {:#members:scales}
 
 

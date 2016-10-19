@@ -384,7 +384,7 @@ $("#DigitalCore").ejDigitalGauge({ isResponsive: true });
 
 
 
-### items`object`
+### items`array`
 {:#members:items}
 
 
