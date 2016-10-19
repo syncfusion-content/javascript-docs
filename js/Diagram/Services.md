@@ -10,13 +10,13 @@ metacontent:
 control: ejDiagram
 ---
 
-#Diagram CRUD services
+# Diagram CRUD services
 
-## Binding Shapes Data
+## Get Shape Data
 
 ### Description
 
-Fetch and bind the records from database to shapes.
+Fetch the collection of records from database and further it will be used to generate the shapes.
 
 ### URL 
 [http://js.syncfusion.com/demos/ejservices/api/JSDiagram/GetShapeData](http://js.syncfusion.com/demos/ejservices/api/JSDiagram/GetShapeData)
@@ -41,21 +41,21 @@ $.ajax({
 
 {% highlight c# %}
 
-    public List<HierarchicalData> GetShapeData()
-    {
-        DiagramContextDataContext context = new DiagramContextDataContext();
-        return context.HierarchicalDatas.ToList();
-    }
+public List<HierarchicalData> GetShapeData()
+{
+    DiagramContextDataContext context = new DiagramContextDataContext();
+    return context.HierarchicalDatas.ToList();
+}
 
 {% endhighlight %}
 
 ### Response 
 
-####Code:  200
+#### Code:  200
 
-####Content-Type: application/json;
+#### Content-Type: application/json;
 
-####Response (JSON):
+#### Response (JSON):
 
 {% highlight js %}
     [{
@@ -71,11 +71,11 @@ $.ajax({
     }]
 {% endhighlight %}
 
-## Insert Shapes
+## Insert Shape
 
 ### Description
 
-Send the shapes which needs to be inserted into database.
+Send one or more shapes which needs to be inserted into database.
 
 ### URL 
 [http://js.syncfusion.com/demos/ejservices/api/JSDiagram/InsertShape](http://js.syncfusion.com/demos/ejservices/api/JSDiagram/InsertShape)
@@ -120,32 +120,32 @@ $.ajax({
 
 {% highlight c# %}
 
-    public void InsertShape(List<HierarchicalData> data)
+public void InsertShape(List<HierarchicalData> data)
+{
+    DiagramContextDataContext context = new DiagramContextDataContext();
+    context.HierarchicalDatas.InsertAllOnSubmit(data);
+    foreach (HierarchicalData hdata in data)
     {
-        DiagramContextDataContext context = new DiagramContextDataContext();
-        context.HierarchicalDatas.InsertAllOnSubmit(data);
-        foreach (HierarchicalData hdata in data)
-        {
-            context.HierarchicalDatas.InsertOnSubmit(hdata);
-            context.SubmitChanges();
-        }
+        context.HierarchicalDatas.InsertOnSubmit(hdata);
+        context.SubmitChanges();
     }
+}
 
 {% endhighlight %}
 
 ### Response 
 
-####Code:  204
+#### Code:  204
 
-####Content-Type: null;
+#### Content-Type: null;
 
-####Response Text: Empty
+#### Response Text: Empty
 
-## Update Shapes
+## Update Shape
 
 ### Description
 
-Send the shapes which needs to be modified into database.
+Send one or more shapes which needs to be modified into database.
 
 ### URL 
 [http://js.syncfusion.com/demos/ejservices/api/JSDiagram/UpdateShape](http://js.syncfusion.com/demos/ejservices/api/JSDiagram/UpdateShape)
@@ -191,34 +191,34 @@ $.ajax({
 
 {% highlight c# %}
 
-    public void UpdateShape(List<HierarchicalData> data)
+public void UpdateShape(List<HierarchicalData> data)
+{
+    DiagramContextDataContext context = new DiagramContextDataContext();
+    foreach (HierarchicalData hdata in data)
     {
-        DiagramContextDataContext context = new DiagramContextDataContext();
-        foreach (HierarchicalData hdata in data)
-        {
-            HierarchicalData originalData = context.HierarchicalDatas.Single(h => h.Name == hdata.Name);
-            originalData.Description = hdata.Description;
-            originalData.Color = hdata.Color;
-            context.SubmitChanges();
-        }
-
+        HierarchicalData originalData = context.HierarchicalDatas.Single(h => h.Name == hdata.Name);
+        originalData.Description = hdata.Description;
+        originalData.Color = hdata.Color;
+        context.SubmitChanges();
     }
+
+}
 
 {% endhighlight %}
 
 ### Response 
 
-####Code:  204
+#### Code:  204
 
-####Content-Type: null;
+#### Content-Type: null;
 
-####Response Text: Empty
+#### Response Text: Empty
 
-## Delete Shapes
+## Delete Shape
 
 ### Description
 
-Send the shapes which needs to be deleted into database.
+Send one or more shapes which needs to be deleted from database.
 
 ### URL 
 [http://js.syncfusion.com/demos/ejservices/api/JSDiagram/DeleteShape](http://js.syncfusion.com/demos/ejservices/api/JSDiagram/DeleteShape)
@@ -264,32 +264,32 @@ $.ajax({
 
 {% highlight c# %}
 
-    public void DeleteShape(List<HierarchicalData> data)
+public void DeleteShape(List<HierarchicalData> data)
+{
+    DiagramContextDataContext context = new DiagramContextDataContext();
+    foreach (HierarchicalData hdata in data)
     {
-        DiagramContextDataContext context = new DiagramContextDataContext();
-        foreach (HierarchicalData hdata in data)
-        {
-            HierarchicalData originalData = context.HierarchicalDatas.Single(h => h.Name == hdata.Name);
-            context.HierarchicalDatas.DeleteOnSubmit(originalData);
-            context.SubmitChanges();
-        }
+        HierarchicalData originalData = context.HierarchicalDatas.Single(h => h.Name == hdata.Name);
+        context.HierarchicalDatas.DeleteOnSubmit(originalData);
+        context.SubmitChanges();
     }
+}
 
 {% endhighlight %}
 
 ### Response 
 
-####Code:  204
+#### Code:  204
 
-####Content-Type: null;
+#### Content-Type: null;
 
-####Response Text: Empty
+#### Response Text: Empty
 
-## Binding Connectors Data
+## Get Connector Data
 
 ### Description
 
-Fetch and bind the records from database to connectors.
+Fetch the collection of records from database and further it will be used to generate the connectors.
 
 ### URL 
 [http://js.syncfusion.com/demos/ejservices/api/JSDiagram/GetConnectorData](http://js.syncfusion.com/demos/ejservices/api/JSDiagram/GetConnectorData)
@@ -314,21 +314,21 @@ $.ajax({
 
 {% highlight c# %}
 
-    public List<HierarchicalDetails> GetConnectorData()
-    {
-        DiagramContextDataContext context = new DiagramContextDataContext();
-        return context.HierarchicalDetails.ToList();
-    }
+public List<HierarchicalDetails> GetConnectorData()
+{
+    DiagramContextDataContext context = new DiagramContextDataContext();
+    return context.HierarchicalDetails.ToList();
+}
 
 {% endhighlight %}
 
 ### Response 
 
-####Code:  200
+#### Code:  200
 
-####Content-Type: application/json;
+#### Content-Type: application/json;
 
-####Response (JSON):
+#### Response (JSON):
 
 {% highlight js %}
 [{
@@ -339,11 +339,11 @@ $.ajax({
 }]
 {% endhighlight %}
 
-## Insert Connectors
+## Insert Connector
 
 ### Description
 
-Send the connectors which needs to be inserted into database.
+Send one or more connectors which needs to be inserted into database.
 
 ### URL 
 [http://js.syncfusion.com/demos/ejservices/api/JSDiagram/InsertConnector](http://js.syncfusion.com/demos/ejservices/api/JSDiagram/InsertConnector)
@@ -389,31 +389,31 @@ $.ajax({
 
 {% highlight c# %}
 
-    public void InsertConnector(List<HierarchicalDetails> data)
+public void InsertConnector(List<HierarchicalDetails> data)
+{
+    DiagramContextDataContext context = new DiagramContextDataContext();
+    foreach (HierarchicalDetails hdata in data)
     {
-        DiagramContextDataContext context = new DiagramContextDataContext();
-        foreach (HierarchicalDetails hdata in data)
-        {
-            context.HierarchicalDetails.InsertOnSubmit(hdata);
-            context.SubmitChanges();
-        }
+        context.HierarchicalDetails.InsertOnSubmit(hdata);
+        context.SubmitChanges();
     }
+}
 
 {% endhighlight %}
 
 ### Response 
 
-####Code:  204
+#### Code:  204
 
-####Content-Type: null;
+#### Content-Type: null;
 
-####Response Text: Empty
+#### Response Text: Empty
 
-## Update Connectors
+## Update Connector
 
 ### Description
 
-Send the connectors which needs to be modified into database.
+Send one or more connectors which needs to be modified into database.
 
 ### URL 
 [http://js.syncfusion.com/demos/ejservices/api/JSDiagram/UpdateConnector](http://js.syncfusion.com/demos/ejservices/api/JSDiagram/UpdateConnector)
@@ -459,33 +459,33 @@ $.ajax({
 
 {% highlight c# %}
 
-    public void UpdateConnector(List<HierarchicalDetails> data)
+public void UpdateConnector(List<HierarchicalDetails> data)
+{
+    DiagramContextDataContext context = new DiagramContextDataContext();
+    foreach (HierarchicalDetails hdata in data)
     {
-        DiagramContextDataContext context = new DiagramContextDataContext();
-        foreach (HierarchicalDetails hdata in data)
-        {
-            HierarchicalDetails originalData = context.HierarchicalDetails.Single(h => h.Name == hdata.Name);
-            originalData.SourceNode = hdata.SourceNode;
-            originalData.TargetNode = hdata.TargetNode;
-            context.SubmitChanges();
-        }
+        HierarchicalDetails originalData = context.HierarchicalDetails.Single(h => h.Name == hdata.Name);
+        originalData.SourceNode = hdata.SourceNode;
+        originalData.TargetNode = hdata.TargetNode;
+        context.SubmitChanges();
     }
+}
 
 {% endhighlight %}
 
 ### Response 
 
-####Code:  204
+#### Code:  204
 
-####Content-Type: null;
+#### Content-Type: null;
 
-####Response Text: Empty
+#### Response Text: Empty
 
-## Delete Connectors
+## Delete Connector
 
 ### Description
 
-Send the connectors which needs to be deleted into database.
+Send one or more connectors which needs to be deleted from database.
 
 ### URL 
 [http://js.syncfusion.com/demos/ejservices/api/JSDiagram/DeleteConnector](http://js.syncfusion.com/demos/ejservices/api/JSDiagram/DeleteConnector)
@@ -531,24 +531,23 @@ $.ajax({
 
 {% highlight c# %}
 
-    public void DeleteConnector(List<HierarchicalDetails> data)
+public void DeleteConnector(List<HierarchicalDetails> data)
+{
+    DiagramContextDataContext context = new DiagramContextDataContext();
+    foreach (HierarchicalDetails hdata in data)
     {
-        DiagramContextDataContext context = new DiagramContextDataContext();
-        foreach (HierarchicalDetails hdata in data)
-        {
-            HierarchicalDetails originalData = context.HierarchicalDetails.Single(h => h.Name == hdata.Name);
-            context.HierarchicalDetails.DeleteOnSubmit(originalData);
-            context.SubmitChanges();
-        }
+        HierarchicalDetails originalData = context.HierarchicalDetails.Single(h => h.Name == hdata.Name);
+        context.HierarchicalDetails.DeleteOnSubmit(originalData);
+        context.SubmitChanges();
     }
+}
 
 {% endhighlight %}
 
 ### Response 
 
-####Code:  204
+#### Code:  204
 
-####Content-Type: null;
+#### Content-Type: null;
 
-####Response Text: Empty
-
+#### Response Text: Empty
