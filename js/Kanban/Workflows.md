@@ -15,7 +15,7 @@ You can set [`workflows`](https://help.syncfusion.com/api/js/ejkanban#members:wo
 
 If a card is to be dragged to not allowed transition columns , then not supported warning symbol will be displayed for denoting the error.
         
-The following code example describes the above Workflow behaviour.
+The following code example describes the above Workflow behavior.
 
 {% highlight html %}
 
