@@ -1043,7 +1043,7 @@ Specifies the read only state.
 
 
 
-### scales `array`
+### scales `object`
 {:#members:scales}
 
 
