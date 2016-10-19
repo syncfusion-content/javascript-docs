@@ -10,13 +10,13 @@ metacontent:
 control: ejDiagram
 ---
 
-#Diagram CRUD services
+# Diagram CRUD services
 
-## Binding Shapes Data
+## Get Shape Data
 
 ### Description
 
-Fetch and bind the records from database to shapes.
+Fetch the collection of records from database and further it will be used to generate the shapes.
 
 ### URL 
 [http://js.syncfusion.com/demos/ejservices/api/JSDiagram/GetShapeData](http://js.syncfusion.com/demos/ejservices/api/JSDiagram/GetShapeData)
@@ -71,11 +71,11 @@ $.ajax({
     }]
 {% endhighlight %}
 
-## Insert Shapes
+## Insert Shape
 
 ### Description
 
-Send the shapes which needs to be inserted into database.
+Send one or more shapes which needs to be inserted into database.
 
 ### URL 
 [http://js.syncfusion.com/demos/ejservices/api/JSDiagram/InsertShape](http://js.syncfusion.com/demos/ejservices/api/JSDiagram/InsertShape)
@@ -141,11 +141,11 @@ $.ajax({
 
 ####Response Text: Empty
 
-## Update Shapes
+## Update Shape
 
 ### Description
 
-Send the shapes which needs to be modified into database.
+Send one or more shapes which needs to be modified into database.
 
 ### URL 
 [http://js.syncfusion.com/demos/ejservices/api/JSDiagram/UpdateShape](http://js.syncfusion.com/demos/ejservices/api/JSDiagram/UpdateShape)
@@ -214,11 +214,11 @@ $.ajax({
 
 ####Response Text: Empty
 
-## Delete Shapes
+## Delete Shape
 
 ### Description
 
-Send the shapes which needs to be deleted into database.
+Send one or more shapes which needs to be deleted from database.
 
 ### URL 
 [http://js.syncfusion.com/demos/ejservices/api/JSDiagram/DeleteShape](http://js.syncfusion.com/demos/ejservices/api/JSDiagram/DeleteShape)
@@ -285,11 +285,11 @@ $.ajax({
 
 ####Response Text: Empty
 
-## Binding Connectors Data
+## Get Connector Data
 
 ### Description
 
-Fetch and bind the records from database to connectors.
+Fetch the collection of records from database and further it will be used to generate the connectors.
 
 ### URL 
 [http://js.syncfusion.com/demos/ejservices/api/JSDiagram/GetConnectorData](http://js.syncfusion.com/demos/ejservices/api/JSDiagram/GetConnectorData)
@@ -339,11 +339,11 @@ $.ajax({
 }]
 {% endhighlight %}
 
-## Insert Connectors
+## Insert Connector
 
 ### Description
 
-Send the connectors which needs to be inserted into database.
+Send one or more connectors which needs to be inserted into database.
 
 ### URL 
 [http://js.syncfusion.com/demos/ejservices/api/JSDiagram/InsertConnector](http://js.syncfusion.com/demos/ejservices/api/JSDiagram/InsertConnector)
@@ -409,11 +409,11 @@ $.ajax({
 
 ####Response Text: Empty
 
-## Update Connectors
+## Update Connector
 
 ### Description
 
-Send the connectors which needs to be modified into database.
+Send one or more connectors which needs to be modified into database.
 
 ### URL 
 [http://js.syncfusion.com/demos/ejservices/api/JSDiagram/UpdateConnector](http://js.syncfusion.com/demos/ejservices/api/JSDiagram/UpdateConnector)
@@ -481,11 +481,11 @@ $.ajax({
 
 ####Response Text: Empty
 
-## Delete Connectors
+## Delete Connector
 
 ### Description
 
-Send the connectors which needs to be deleted into database.
+Send one or more connectors which needs to be deleted from database.
 
 ### URL 
 [http://js.syncfusion.com/demos/ejservices/api/JSDiagram/DeleteConnector](http://js.syncfusion.com/demos/ejservices/api/JSDiagram/DeleteConnector)
@@ -551,4 +551,3 @@ $.ajax({
 ####Content-Type: null;
 
 ####Response Text: Empty
-
