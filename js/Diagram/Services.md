@@ -41,21 +41,21 @@ $.ajax({
 
 {% highlight c# %}
 
-    public List<HierarchicalData> GetShapeData()
-    {
-        DiagramContextDataContext context = new DiagramContextDataContext();
-        return context.HierarchicalDatas.ToList();
-    }
+public List<HierarchicalData> GetShapeData()
+{
+    DiagramContextDataContext context = new DiagramContextDataContext();
+    return context.HierarchicalDatas.ToList();
+}
 
 {% endhighlight %}
 
 ### Response 
 
-####Code:  200
+#### Code:  200
 
-####Content-Type: application/json;
+#### Content-Type: application/json;
 
-####Response (JSON):
+#### Response (JSON):
 
 {% highlight js %}
     [{
@@ -120,26 +120,26 @@ $.ajax({
 
 {% highlight c# %}
 
-    public void InsertShape(List<HierarchicalData> data)
+public void InsertShape(List<HierarchicalData> data)
+{
+    DiagramContextDataContext context = new DiagramContextDataContext();
+    context.HierarchicalDatas.InsertAllOnSubmit(data);
+    foreach (HierarchicalData hdata in data)
     {
-        DiagramContextDataContext context = new DiagramContextDataContext();
-        context.HierarchicalDatas.InsertAllOnSubmit(data);
-        foreach (HierarchicalData hdata in data)
-        {
-            context.HierarchicalDatas.InsertOnSubmit(hdata);
-            context.SubmitChanges();
-        }
+        context.HierarchicalDatas.InsertOnSubmit(hdata);
+        context.SubmitChanges();
     }
+}
 
 {% endhighlight %}
 
 ### Response 
 
-####Code:  204
+#### Code:  204
 
-####Content-Type: null;
+#### Content-Type: null;
 
-####Response Text: Empty
+#### Response Text: Empty
 
 ## Update Shape
 
@@ -191,28 +191,28 @@ $.ajax({
 
 {% highlight c# %}
 
-    public void UpdateShape(List<HierarchicalData> data)
+public void UpdateShape(List<HierarchicalData> data)
+{
+    DiagramContextDataContext context = new DiagramContextDataContext();
+    foreach (HierarchicalData hdata in data)
     {
-        DiagramContextDataContext context = new DiagramContextDataContext();
-        foreach (HierarchicalData hdata in data)
-        {
-            HierarchicalData originalData = context.HierarchicalDatas.Single(h => h.Name == hdata.Name);
-            originalData.Description = hdata.Description;
-            originalData.Color = hdata.Color;
-            context.SubmitChanges();
-        }
-
+        HierarchicalData originalData = context.HierarchicalDatas.Single(h => h.Name == hdata.Name);
+        originalData.Description = hdata.Description;
+        originalData.Color = hdata.Color;
+        context.SubmitChanges();
     }
+
+}
 
 {% endhighlight %}
 
 ### Response 
 
-####Code:  204
+#### Code:  204
 
-####Content-Type: null;
+#### Content-Type: null;
 
-####Response Text: Empty
+#### Response Text: Empty
 
 ## Delete Shape
 
@@ -264,26 +264,26 @@ $.ajax({
 
 {% highlight c# %}
 
-    public void DeleteShape(List<HierarchicalData> data)
+public void DeleteShape(List<HierarchicalData> data)
+{
+    DiagramContextDataContext context = new DiagramContextDataContext();
+    foreach (HierarchicalData hdata in data)
     {
-        DiagramContextDataContext context = new DiagramContextDataContext();
-        foreach (HierarchicalData hdata in data)
-        {
-            HierarchicalData originalData = context.HierarchicalDatas.Single(h => h.Name == hdata.Name);
-            context.HierarchicalDatas.DeleteOnSubmit(originalData);
-            context.SubmitChanges();
-        }
+        HierarchicalData originalData = context.HierarchicalDatas.Single(h => h.Name == hdata.Name);
+        context.HierarchicalDatas.DeleteOnSubmit(originalData);
+        context.SubmitChanges();
     }
+}
 
 {% endhighlight %}
 
 ### Response 
 
-####Code:  204
+#### Code:  204
 
-####Content-Type: null;
+#### Content-Type: null;
 
-####Response Text: Empty
+#### Response Text: Empty
 
 ## Get Connector Data
 
@@ -314,21 +314,21 @@ $.ajax({
 
 {% highlight c# %}
 
-    public List<HierarchicalDetails> GetConnectorData()
-    {
-        DiagramContextDataContext context = new DiagramContextDataContext();
-        return context.HierarchicalDetails.ToList();
-    }
+public List<HierarchicalDetails> GetConnectorData()
+{
+    DiagramContextDataContext context = new DiagramContextDataContext();
+    return context.HierarchicalDetails.ToList();
+}
 
 {% endhighlight %}
 
 ### Response 
 
-####Code:  200
+#### Code:  200
 
-####Content-Type: application/json;
+#### Content-Type: application/json;
 
-####Response (JSON):
+#### Response (JSON):
 
 {% highlight js %}
 [{
@@ -389,25 +389,25 @@ $.ajax({
 
 {% highlight c# %}
 
-    public void InsertConnector(List<HierarchicalDetails> data)
+public void InsertConnector(List<HierarchicalDetails> data)
+{
+    DiagramContextDataContext context = new DiagramContextDataContext();
+    foreach (HierarchicalDetails hdata in data)
     {
-        DiagramContextDataContext context = new DiagramContextDataContext();
-        foreach (HierarchicalDetails hdata in data)
-        {
-            context.HierarchicalDetails.InsertOnSubmit(hdata);
-            context.SubmitChanges();
-        }
+        context.HierarchicalDetails.InsertOnSubmit(hdata);
+        context.SubmitChanges();
     }
+}
 
 {% endhighlight %}
 
 ### Response 
 
-####Code:  204
+#### Code:  204
 
-####Content-Type: null;
+#### Content-Type: null;
 
-####Response Text: Empty
+#### Response Text: Empty
 
 ## Update Connector
 
@@ -459,27 +459,27 @@ $.ajax({
 
 {% highlight c# %}
 
-    public void UpdateConnector(List<HierarchicalDetails> data)
+public void UpdateConnector(List<HierarchicalDetails> data)
+{
+    DiagramContextDataContext context = new DiagramContextDataContext();
+    foreach (HierarchicalDetails hdata in data)
     {
-        DiagramContextDataContext context = new DiagramContextDataContext();
-        foreach (HierarchicalDetails hdata in data)
-        {
-            HierarchicalDetails originalData = context.HierarchicalDetails.Single(h => h.Name == hdata.Name);
-            originalData.SourceNode = hdata.SourceNode;
-            originalData.TargetNode = hdata.TargetNode;
-            context.SubmitChanges();
-        }
+        HierarchicalDetails originalData = context.HierarchicalDetails.Single(h => h.Name == hdata.Name);
+        originalData.SourceNode = hdata.SourceNode;
+        originalData.TargetNode = hdata.TargetNode;
+        context.SubmitChanges();
     }
+}
 
 {% endhighlight %}
 
 ### Response 
 
-####Code:  204
+#### Code:  204
 
-####Content-Type: null;
+#### Content-Type: null;
 
-####Response Text: Empty
+#### Response Text: Empty
 
 ## Delete Connector
 
@@ -531,23 +531,23 @@ $.ajax({
 
 {% highlight c# %}
 
-    public void DeleteConnector(List<HierarchicalDetails> data)
+public void DeleteConnector(List<HierarchicalDetails> data)
+{
+    DiagramContextDataContext context = new DiagramContextDataContext();
+    foreach (HierarchicalDetails hdata in data)
     {
-        DiagramContextDataContext context = new DiagramContextDataContext();
-        foreach (HierarchicalDetails hdata in data)
-        {
-            HierarchicalDetails originalData = context.HierarchicalDetails.Single(h => h.Name == hdata.Name);
-            context.HierarchicalDetails.DeleteOnSubmit(originalData);
-            context.SubmitChanges();
-        }
+        HierarchicalDetails originalData = context.HierarchicalDetails.Single(h => h.Name == hdata.Name);
+        context.HierarchicalDetails.DeleteOnSubmit(originalData);
+        context.SubmitChanges();
     }
+}
 
 {% endhighlight %}
 
 ### Response 
 
-####Code:  204
+#### Code:  204
 
-####Content-Type: null;
+#### Content-Type: null;
 
-####Response Text: Empty
+#### Response Text: Empty
