@@ -8,8 +8,17 @@ documentation: api
 keywords: ejPdfViewer, Services, Essential JS PDF Viewer, PDF Viewer
 ---
 ## PDF Viewer services
+PDF Viewer services loads the PDF document on server side and parse the PDF document content, then return the necessary details for rendering PDF document content to the client side as JSON data.
 
-### URL: http://js.syncfusion.com/demos/ejservices/api/PdfViewer/PostViewerAction 
+## PostViewerAction
+
+### Description
+
+PostViewerAction loads the PDF document into the PDF Viewer control and parse the PDF document content on the server side, then return the necessary details for rendering PDF document content to the client side as JSON data.
+
+### URL
+
+[http://js.syncfusion.com/ejservices/api/PdfViewer/PostViewerAction](http://js.syncfusion.com/ejservices/api/PdfViewer/PostViewerAction) 
 
 ### Parameter
 
@@ -92,7 +101,7 @@ Specify the AJAX request whether the request is initial loading or consecutive l
 $.ajax({
     type: 'POST',
     contentType: 'application/json; charset=utf-8',
-    url: 'http://js.syncfusion.com/demos/ejservices/api/PdfViewer/PostViewerAction',
+    url: 'http://js.syncfusion.com/ejservices/api/PdfViewer/PostViewerAction',
     dataType: "json",
     data: JSON.stringify([{
         "viewerAction": "GetPageModel",
@@ -101,6 +110,32 @@ $.ajax({
         "pageindex": "1"
     }])
 });
+{% endhighlight %}
+
+#### PostViewerAction invoked in C# 
+
+{% highlight c# %}
+
+        [System.Web.Http.HttpPost]
+        [System.Web.Http.ActionName("PostViewerAction")]
+		public object PostViewerAction(Dictionary<string, string> jsonResult)
+        {
+            PdfViewerHelper helper = new PdfViewerHelper();
+            //load the multiple document from client side 
+            if (jsonResult.ContainsKey("newFileName"))
+            {
+                var name = jsonResult["newFileName"];
+                var pdfName = name.ToString() + ".pdf";
+                helper.Load(Helper.GetFilePath("" + pdfName));
+            }
+            else
+            {
+                if (jsonResult.ContainsKey("isInitialLoading"))
+                    helper.Load(Helper.GetFilePath(documentname));
+            }
+            return JsonConvert.SerializeObject(helper.ProcessPdf(jsonResult));
+        }
+
 {% endhighlight %}
 
 ### Response
@@ -112,7 +147,6 @@ $.ajax({
 #### Response Text:
 
 <table>
-<thead>
 <tr>
 <td>
 imagestream
@@ -121,76 +155,81 @@ imagestream
 Current page content stream 
 </td>
 </tr>
-</thead>
-<tbody>
 <tr>
-<td class="imagestream">
+<td>
 pagesize
 </td>
-<td class="current page content stream">
+<td>
 Collection of page size for total page
 </td>
 </tr>
 <tr>
-<td class="imagestream">
+<td>
 currentpage
 </td>
-<td class="current page content stream">
+<td>
 Current page number
 </td>
 </tr>
 <tr>
-<td class="imagestream">
+<td>
 filename 
 </td>
-<td class="current page content stream">
+<td>
 Current file name
 </td>
 </tr>
 <tr>
-<td class="imagestream">
+<td>
 pagecount
 </td>
-<td class="current page content stream">
+<td>
 Total page count of the PDF document
 </td>
 </tr>
 <tr>
-<td class="imagestream">
+<td>
 pageheight 
 </td>
-<td class="current page content stream">
+<td>
 Current page height
 </td>
 </tr>
 <tr>
-<td class="imagestream">
+<td>
 pagewidth
 </td>
-<td class="current page content stream">
+<td>
 Current page width
 </td>
 </tr>
 <tr>
-<td class="imagestream">
+<td>
 linkannotation
 </td>
-<td class="current page content stream">
+<td>
 Collection of link annotation in the PDF document
 </td>
 </tr>
 <tr>
-<td class="imagestream">
+<td>
 annotpagenum
 </td>
-<td class="current page content stream">
+<td>
 Collection of page number which contain annotation
 </td>
 </tr>
-</tbody>
 </table>
 
-### URL: http://js.syncfusion.com/demos/ejservices/api/PdfViewer/FileUploadPostAction  
+## FileUploadPostAction
+
+### Description
+
+FileUploadPostAction loads the PDF document using file uploader into the PDF Viewer control.
+
+### URL
+
+[http://js.syncfusion.com/ejservices/api/PdfViewer/FileUploadPostAction](http://js.syncfusion.com/ejservices/api/PdfViewer/FileUploadPostAction)  
 
 ### Parameter
 
@@ -284,7 +323,7 @@ New file name to be loaded into the PDF Viewer
 $.ajax({
     type: 'POST',
     contentType: 'application/json; charset=utf-8',
-    url: 'http://js.syncfusion.com/demos/ejservices/api/PdfViewer/ FileUploadPostAction',
+    url: 'http://js.syncfusion.com/ejservices/api/PdfViewer/FileUploadPostAction',
     dataType: "json",
     data: JSON.stringify([{
         "viewerAction": "GetPageModel",
@@ -293,6 +332,28 @@ $.ajax({
         "pageindex": "1"
     }])
 });
+{% endhighlight %}
+
+#### FileUploadPostAction invoked in C# 
+
+{% highlight c# %}
+
+        [System.Web.Http.HttpPost]
+        [System.Web.Http.ActionName("FileUploadPostAction")]
+        public object FileUploadPostAction(Dictionary<string, string> jsonResult)
+        {
+            PdfViewerHelper helper = new PdfViewerHelper();
+            //load the PDF document from client side by using upload button 
+            if (jsonResult.ContainsKey("uploadedFile"))
+            {
+                var fileurl = jsonResult["uploadedFile"];
+                byte[] byteArray = Convert.FromBase64String(fileurl);
+                MemoryStream stream = new MemoryStream(byteArray);
+                helper.Load(stream);
+            }
+            return JsonConvert.SerializeObject(helper.ProcessPdf(jsonResult));
+        }      
+
 {% endhighlight %}
 
 ### Response
@@ -304,7 +365,6 @@ $.ajax({
 #### Response Text:
 
 <table>
-<thead>
 <tr>
 <td>
 imagestream
@@ -313,76 +373,81 @@ imagestream
 Current page content stream 
 </td>
 </tr>
-</thead>
-<tbody>
 <tr>
-<td class="imagestream">
+<td>
 pagesize
 </td>
-<td class="current page content stream">
+<td>
 Collection of page size for total page
 </td>
 </tr>
 <tr>
-<td class="imagestream">
+<td>
 currentpage
 </td>
-<td class="current page content stream">
+<td>
 Current page number
 </td>
 </tr>
 <tr>
-<td class="imagestream">
+<td>
 filename 
 </td>
-<td class="current page content stream">
+<td>
 Current file name
 </td>
 </tr>
 <tr>
-<td class="imagestream">
+<td>
 pagecount
 </td>
-<td class="current page content stream">
+<td>
 Total page count of the PDF document
 </td>
 </tr>
 <tr>
-<td class="imagestream">
+<td>
 pageheight 
 </td>
-<td class="current page content stream">
+<td>
 Current page height
 </td>
 </tr>
 <tr>
-<td class="imagestream">
+<td>
 pagewidth
 </td>
-<td class="current page content stream">
+<td>
 Current page width
 </td>
 </tr>
 <tr>
-<td class="imagestream">
+<td>
 linkannotation
 </td>
-<td class="current page content stream">
+<td>
 Collection of link annotation in the PDF document
 </td>
 </tr>
 <tr>
-<td class="imagestream">
+<td>
 annotpagenum
 </td>
-<td class="current page content stream">
+<td>
 Collection of page number which contain annotation
 </td>
 </tr>
-</tbody>
 </table>
 
-### URL: http://js.syncfusion.com/demos/ejservices/api/PdfViewer/DocumentDownloadAction 
+## DocumentDownloadAction
+
+### Description
+
+DocumentDownloadAction return the PDF document being displing in the PDF Viewer control as base64 string to the client side for downloading the same.
+
+### URL
+
+[http://js.syncfusion.com/ejservices/api/PdfViewer/DocumentDownloadAction](http://js.syncfusion.com/ejservices/api/PdfViewer/DocumentDownloadAction) 
 
 ### Parameter
 
@@ -432,12 +497,26 @@ PDF document name to be download
 $.ajax({
     type: 'POST',
     contentType: 'application/json; charset=utf-8',
-    url: 'http://js.syncfusion.com/demos/ejservices/api/PdfViewer/ DocumentDownloadAction',
+    url: 'http://js.syncfusion.com/ejservices/api/PdfViewer/DocumentDownloadAction',
     dataType: "json",
     data: JSON.stringify([{
         "DocumentName": this.fileName
     }])
 });
+{% endhighlight %}
+
+#### DocumentDownloadAction invoked in C# 
+
+{% highlight c# %}
+
+     	[System.Web.Http.HttpPost]
+        [System.Web.Http.ActionName("DocumentDownloadAction")]
+        public object DocumentDownloadAction(Dictionary<string, string> jsonResult)
+        {
+            PdfViewerHelper helper = new PdfViewerHelper();
+            return new { DocumentStream = Convert.ToBase64String(helper.DocumentStream.ToArray()) };
+        }		
+
 {% endhighlight %}
 
 ### Response
@@ -449,104 +528,12 @@ $.ajax({
 #### Response Text:
 
 <table>
-<thead>
 <tr>
-<th>
+<td>
 DocumentStream
-</th>
-<th>
+</td>
+<td>
 PDF document stream for downloading 
-</th>
+</td>
 </tr>
-</thead>
-<tbody>
-</tbody>
 </table>
-
-### PdfViewerHelper
-
-PdfViewerHelper class used to process the PDF document in server side.
-
-### Methods:
-
-### Load(string filename)
-
-Loads a PDF document in the PDF viewer from the specified file path.
-
-Code snippet:
-
-PdfViewerHelper helper = new PdfViewerHelper();
-
-helper.Load(file path/filename.pdf);
-
-### Load(string filename, string password)
-
-Loads the encrypted PDF document.
-
-Code snippet:
-
-PdfViewerHelper helper = new PdfViewerHelper();
-
-helper.Load(file path/filename.pdf, password);
-
-### Load(Stream documentStream)
-
-Loads the PDF document from the specified stream.
-
-Code snippet:
-
-PdfViewerHelper helper = new PdfViewerHelper();
-
-helper.Load(documentStream);
-
-### Load(Stream documentStream, string password)
-
-Loads the encrypted PDF document from the specified stream.
-
-Code snippet:
-
-PdfViewerHelper helper = new PdfViewerHelper();
-
-helper.Load(documentStream,password);
-
-### Load(PdfLoadedDocument pdfLoadedDocument)
-
-Loads the PDF document from the PdfLoadedDocument object.
-
-Code snippet:
-
-PdfViewerHelper helper = new PdfViewerHelper();
-
-helper.Load(pdfLoadedDocument);
-
-### Load(byte[] byteArray)
-
-Loads the PDF document from the byte array.
-
-Code snippet:
-
-PdfViewerHelper helper = new PdfViewerHelper();
-
-helper.Load(byteArray);
-
-### Load(byte[] byteArray, string password)
-
-Loads the encrypted PDF document from the byte array.
-
-Code snippet:
-
-PdfViewerHelper helper = new PdfViewerHelper();
-
-helper.Load(byteArray,password);
-
-### ProcessPdf(Dictionary&lt;string,string&gt; jsonResult)
-
-Process the PDF document and convert them to JSON data.
-
-Code snippet:
-
-PdfViewerHelper helper = new PdfViewerHelper();
-
-helper.Load(file path/filename.pdf);
-
-helper.ProcessPdf(jsonResult)
