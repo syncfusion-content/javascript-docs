@@ -123,15 +123,7 @@ The following output is displayed while saving edited cell with above code examp
 
 N> 1. The list of supported formulas can be find in following [`link`](https://help.syncfusion.com/js/calculate/supported-formulas/supported-formulas "link")
 
-N> 2. The following type of arguments can be passed to formulas wherever applicable,
-
-a. Constant values
-
-b. Cell references
-
-c. Formula within formula
-
-d. Named ranges
+N> 2. Constant values, cell references, formulas and named ranges can be passed as argument to formulas 
 
 N> 3. Selection can be used to mention cell references within formula
 
