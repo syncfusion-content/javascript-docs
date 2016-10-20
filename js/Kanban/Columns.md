@@ -114,7 +114,7 @@ The following code example and screenshot which describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Columns_images/column_img5.png)
+![](Columns_images/column_img9.png)
 
 ## Headers
 
