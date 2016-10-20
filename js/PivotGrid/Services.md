@@ -21,18 +21,15 @@ For OLAP data source, [click here.](https://help.syncfusion.com/js/pivotgrid/ola
  
 ## Exporting Service
 
-### Description
+### Excel Export
 
-To export PivotGrid data to an Excel, Word, PDF or CSV document.
+User can export the contents of PivotGrid to an Excel document for future archival, references and analysis purposes.
 
-### URL
+#### URL
 
-[http://js.syncfusion.com/demos/ejservices/api/JSPivotGridExport/ExcelExport](http://js.syncfusion.com/demos/ejservices/api/JSPivotGridExport/ExcelExport)
-[http://js.syncfusion.com/demos/ejservices/api/JSPivotGridExport/WordExport](http://js.syncfusion.com/demos/ejservices/api/JSPivotGridExport/WordExport)
-[http://js.syncfusion.com/demos/ejservices/api/JSPivotGridExport/PDFExport](http://js.syncfusion.com/demos/ejservices/api/JSPivotGridExport/PDFExport)
-[http://js.syncfusion.com/demos/ejservices/api/JSPivotGridExport/CSVExport](http://js.syncfusion.com/demos/ejservices/api/JSPivotGridExport/CSVExport)
+[http://js.syncfusion.com/ejservices/api/JSPivotGridExport/ExcelExport](http://js.syncfusion.com/ejservices/api/JSPivotGridExport/ExcelExport)
 
-### Parameter
+#### Parameter
 
 <table>
    <th>Type</th>
@@ -40,35 +37,21 @@ To export PivotGrid data to an Excel, Word, PDF or CSV document.
    <th>MultipleExport </th>
    <tr>
       <td>Excel</td>
-      <td>http://js.syncfusion.com/demos/ejservices/api/JSPivotGridExport/ExcelExport</td>
-      <td>False</td>
-   </tr>
-   <tr>
-      <td>Word</td>
-      <td>http://js.syncfusion.com/demos/ejservices/api/JSPivotGridExport/WordExport</td>
-      <td>False</td>
-   </tr>
-   <tr>
-      <td>PDF</td>
-      <td>http://js.syncfusion.com/demos/ejservices/api/JSPivotGridExport/PDFExport</td>
-      <td>False</td>
-   </tr>
-   <tr>
-      <td>CSV</td>
-      <td>http://js.syncfusion.com/demos/ejservices/api/JSPivotGridExport/CSVExport</td>
+      <td>http://js.syncfusion.com/ejservices/api/JSPivotGridExport/ExcelExport</td>
       <td>False</td>
    </tr>
 </table>
 
-### Request
+#### Request
 
-#### PivotGrid Exporting in JS
+To achieve Excel export, service URL and file name is sent as the parameter.
+
+##### JS
 
 {% highlight html %}
 
 <html>
 //...
-
 <body>
       
     <div id="PivotGrid1" style="min-height: 275px; min-width: 525px; height: 460px; width: 720px"></div>
@@ -99,23 +82,16 @@ To export PivotGrid data to an Excel, Word, PDF or CSV document.
       function exportBtnClick(args)
       {
         var pGridObj = $('#PivotGrid1').data("ejPivotGrid");
-        //If want to export to excel
-        pGridObj.exportPivotGrid("http://js.syncfusion.com/demos/ejservices/api/JSPivotGridExport/ExcelExport");
-        //If want to export to Word
-        pGridObj.exportPivotGrid("http://js.syncfusion.com/demos/ejservices/api/JSPivotGridExport/WordExport");
-        //If want to export to PDF
-        pGridObj.exportPivotGrid("http://js.syncfusion.com/demos/ejservices/api/JSPivotGridExport/PDFExport");
-        //If want to export to CSV
-        pGridObj.exportPivotGrid("http://js.syncfusion.com/demos/ejservices/api/JSPivotGridExport/CSVExport");
-     }
-     
+        pGridObj.exportPivotGrid("http://js.syncfusion.com/ejservices/api/JSPivotGridExport/ExcelExport","fileName");
+      }
+
      </script>
 </body>
 </html>
 
 {% endhighlight %}
 
-#### PivotGrid Exporting in C\#
+##### C\#
 
 {% highlight c# %}
 
@@ -128,14 +104,91 @@ To export PivotGrid data to an Excel, Word, PDF or CSV document.
             pGrid.ExportToExcel(string.Empty, args, HttpContext.Current.Response);
         }
 
-        [System.Web.Http.ActionName("PDFExport")]
-        [System.Web.Http.HttpPost]
-        public void PDFExport()
-        {
-            PivotGridPDFExport pGrid = new PivotGridPDFExport();
-            string args = HttpContext.Current.Request.Form.GetValues(0)[0];
-            pGrid.ExportToPDF(string.Empty, args, HttpContext.Current.Response);
-        }
+{% endhighlight %}
+ 
+
+#### Response
+
+##### Code: 200
+
+##### Content-Type: application/octet-stream
+
+##### Response for Excel Export:
+Browser will prompt a dialog box to save the Excel document.
+
+### Word Export
+
+User can export the contents of PivotGrid to a Word document for future archival, references and analysis purposes.
+
+#### URL
+
+[http://js.syncfusion.com/ejservices/api/JSPivotGridExport/WordExport](http://js.syncfusion.com/ejservices/api/JSPivotGridExport/WordExport)
+
+#### Parameter
+
+<table>
+   <th>Type</th>
+   <th>URL </th>
+   <th>MultipleExport </th>
+   <tr>
+      <td>Word</td>
+      <td>http://js.syncfusion.com/ejservices/api/JSPivotGridExport/WordExport</td>
+      <td>False</td>
+   </tr>
+</table>
+
+#### Request
+
+To achieve Word export, service URL and file name is sent as the parameter.
+
+##### JS
+
+{% highlight html %}
+
+<html>
+//...
+<body>
+      
+    <div id="PivotGrid1" style="min-height: 275px; min-width: 525px; height: 460px; width: 720px"></div>
+    <button id="btnExport">Export</button>
+    <script type="text/javascript">
+       $(function() {
+          $("#PivotGrid1").ejPivotGrid({
+              dataSource: {
+                 data: pivot_dataset,
+                 rows: [{
+                    fieldName: "Country",
+                    fieldCaption: "Country"
+                 }],
+                 columns: [{
+                    fieldName: "Product",
+                    fieldCaption: "Product"
+                 }],
+                 values: [{
+                    fieldName: "Amount",
+                    fieldCaption: "Amount"
+                }]
+             }
+         });
+         $("#btnExport").ejButton({
+             click: "exportBtnClick"
+         });
+      });
+      function exportBtnClick(args)
+      {
+        var pGridObj = $('#PivotGrid1').data("ejPivotGrid");
+        pGridObj.exportPivotGrid("http://js.syncfusion.com/ejservices/api/JSPivotGridExport/WordExport","fileName");
+      }
+
+     </script>
+</body>
+</html>
+
+{% endhighlight %}
+
+##### C\#
+
+{% highlight c# %}
 
         [System.Web.Http.ActionName("WordExport")]
         [System.Web.Http.HttpPost]
@@ -146,6 +199,185 @@ To export PivotGrid data to an Excel, Word, PDF or CSV document.
             pGrid.ExportToWord(string.Empty, args, HttpContext.Current.Response);
         }
 
+{% endhighlight %}
+ 
+#### Response
+
+##### Code: 200
+
+##### Content-Type: application/octet-stream
+
+##### Response for Word export:
+Browser will prompt a dialog box to save the Word document.
+
+### PDF Export
+
+User can export the contents of PivotGrid to a PDF document for future archival, references and analysis purposes.
+
+#### URL
+
+[http://js.syncfusion.com/ejservices/api/JSPivotGridExport/PDFExport](http://js.syncfusion.com/ejservices/api/JSPivotGridExport/PDFExport)
+
+#### Parameter
+
+<table>
+   <th>Type</th>
+   <th>URL </th>
+   <th>MultipleExport </th>
+   <tr>
+      <td>PDF</td>
+      <td>http://js.syncfusion.com/ejservices/api/JSPivotGridExport/PDFExport</td>
+      <td>False</td>
+   </tr>
+</table>
+
+#### Request
+
+To achieve PDF export, service URL and file name is sent as the parameter.
+
+##### JS
+
+{% highlight html %}
+
+<html>
+//...
+<body>
+      
+    <div id="PivotGrid1" style="min-height: 275px; min-width: 525px; height: 460px; width: 720px"></div>
+    <button id="btnExport">Export</button>
+    <script type="text/javascript">
+       $(function() {
+          $("#PivotGrid1").ejPivotGrid({
+              dataSource: {
+                 data: pivot_dataset,
+                 rows: [{
+                    fieldName: "Country",
+                    fieldCaption: "Country"
+                 }],
+                 columns: [{
+                    fieldName: "Product",
+                    fieldCaption: "Product"
+                 }],
+                 values: [{
+                    fieldName: "Amount",
+                    fieldCaption: "Amount"
+                }]
+             }
+         });
+         $("#btnExport").ejButton({
+             click: "exportBtnClick"
+         });
+      });
+      function exportBtnClick(args)
+      {
+        var pGridObj = $('#PivotGrid1').data("ejPivotGrid");
+        pGridObj.exportPivotGrid("http://js.syncfusion.com/ejservices/api/JSPivotGridExport/PDFExport","fileName");
+      }
+
+     </script>
+</body>
+</html>
+
+{% endhighlight %}
+
+##### C\#
+
+{% highlight c# %}
+
+        [System.Web.Http.ActionName("PDFExport")]
+        [System.Web.Http.HttpPost]
+        public void PDFExport()
+        {
+            PivotGridPDFExport pGrid = new PivotGridPDFExport();
+            string args = HttpContext.Current.Request.Form.GetValues(0)[0];
+            pGrid.ExportToPDF(string.Empty, args, HttpContext.Current.Response);
+        }
+
+{% endhighlight %}
+ 
+#### Response
+
+##### Code: 200
+
+##### Content-Type: application/octet-stream
+
+##### Response for PDF export:
+Browser will prompt a dialog box to save the PDF document.
+
+### CSV Export
+
+User can export the contents of PivotGrid to a CSV document for future archival, references and analysis purposes.
+
+#### URL
+
+[http://js.syncfusion.com/ejservices/api/JSPivotGridExport/CSVExport](http://js.syncfusion.com/ejservices/api/JSPivotGridExport/CSVExport)
+
+#### Parameter
+
+<table>
+   <th>Type</th>
+   <th>URL </th>
+   <th>MultipleExport </th>
+   <tr>
+      <td>CSV</td>
+      <td>http://js.syncfusion.com/ejservices/api/JSPivotGridExport/CSVExport</td>
+      <td>False</td>
+   </tr>
+</table>
+
+#### Request
+
+To achieve CSV export, service URL and file name is sent as the parameter.
+
+##### JS
+
+{% highlight html %}
+
+<html>
+//...
+<body>
+      
+    <div id="PivotGrid1" style="min-height: 275px; min-width: 525px; height: 460px; width: 720px"></div>
+    <button id="btnExport">Export</button>
+    <script type="text/javascript">
+       $(function() {
+          $("#PivotGrid1").ejPivotGrid({
+              dataSource: {
+                 data: pivot_dataset,
+                 rows: [{
+                    fieldName: "Country",
+                    fieldCaption: "Country"
+                 }],
+                 columns: [{
+                    fieldName: "Product",
+                    fieldCaption: "Product"
+                 }],
+                 values: [{
+                    fieldName: "Amount",
+                    fieldCaption: "Amount"
+                }]
+             }
+         });
+         $("#btnExport").ejButton({
+             click: "exportBtnClick"
+         });
+      });
+      function exportBtnClick(args)
+      {
+        var pGridObj = $('#PivotGrid1').data("ejPivotGrid");
+        pGridObj.exportPivotGrid("http://js.syncfusion.com/ejservices/api/JSPivotGridExport/CSVExport","fileName");
+      }
+
+     </script>
+</body>
+</html>
+
+{% endhighlight %}
+
+##### C\#
+
+{% highlight c# %}
+
         [System.Web.Http.ActionName("CSVExport")]
         [System.Web.Http.HttpPost]
         public void CSVExport()
@@ -154,16 +386,15 @@ To export PivotGrid data to an Excel, Word, PDF or CSV document.
             string args = HttpContext.Current.Request.Form.GetValues(0)[0];
             pGrid.ExportToCSV(string.Empty, args, HttpContext.Current.Response);
         }
-        
+
 {% endhighlight %}
  
+#### Response
 
-### Response
+##### Code: 200
 
-#### Code: 200
+##### Content-Type: application/octet-stream
 
-#### Content-Type: application/octet-stream
-
-#### Response (Excel, Word, PDF or CSV):
-Browser will prompt a dialog box to save the file.
+##### Response for CSV export:
+Browser will prompt a dialog box to save the CSV document.
 
