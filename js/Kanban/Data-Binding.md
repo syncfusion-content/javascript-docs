@@ -45,7 +45,7 @@ The following code example describes the above behavior.
         columns: [
             { headerText: "Backlog", key: "Open" },
             { headerText: "In Progress", key: "InProgress" },
-            { headerText: "Testing", key: "Testing" }
+            { headerText: "Done", key: "Close" }
         ],
         keyField: "Status",
         fields: {
@@ -87,7 +87,7 @@ The following code example describes the above behavior.
             columns: [
                 { headerText: "Backlog", key: "Open" },
                 { headerText: "In Progress", key: "InProgress" },
-                { headerText: "Testing", key: "Testing" }
+               { headerText: "Done", key: "Close" }
             ],
             keyField: "Status",
             fields: {

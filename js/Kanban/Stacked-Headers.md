@@ -40,12 +40,12 @@ The following code example describes the above behavior.
                         keyField: "Status", 
                         fields: {
                         primaryKey: "Id",
-                        content: "Text",
+                        content: "Summary",
                         },
                         stackedHeaderRows: [{
                         stackedHeaderColumns: [{
                             headerText: "Unresolved",
-                            column: "Backlog,Validated,In Progress"
+                            column: "Backlog,In Progress"
                         }, {
                             headerText: "Resolved",
                             column: "Testing,Done"
