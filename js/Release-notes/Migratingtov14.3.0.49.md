@@ -1,9 +1,9 @@
 ---
-title : Essential Studio 2015 Vol 3 Migration document
-description : Essential Studio 2015 Migration document
+title : Essential Studio 2016 Vol3 Migration document
+description : Essential Studio 2016 Migration document
 platform : js
 documentation: ug
-keywords:Essential Studio 2015 Migration document
+keywords: migration, upgradation, upgrade-changes, vol3-changes
 ---
 
 # Common Changes
