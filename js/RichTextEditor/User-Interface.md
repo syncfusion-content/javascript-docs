@@ -267,7 +267,7 @@ $(function () {
             customTools: [{
                 name: "specialCharacter",
                 tooltip: "Special Characters",
-                css: "insertsc",
+                css: "insert-special-character",
                 text: "Insert - O",
                 action: function () {
                     $("#specialcharacter").ejDialog("open");   
@@ -276,7 +276,7 @@ $(function () {
         },isResponsive:true
     });
     rteObj = $("#texteditor").data("ejRTE");
-    $(".insertsc").ejButton();
+    $(".insert-special-character").ejButton();
     $("#specialcharacter").ejDialog({ enableResize: false, enableModal: true, showOnInit: false, width: "auto", position: { X: 218, Y: 38 } });
     $(".specialtbl tbody tr td" ).addClass("specialtd").on( "click", customTdClick);
 });
@@ -316,5 +316,5 @@ N> The CSS class that defined for custom tool is directly applies to the newly a
 
 ![](UserInterface_images/CustomTool.png)
 
-I> The custom buttons get a insertsc CSS class to allow styling, where name is the name specified in the custom tool configuration.
+I> The custom buttons get a `insert-special-character` CSS class to allow styling, where name is the name specified in the custom tool configuration.
 
