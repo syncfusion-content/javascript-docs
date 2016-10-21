@@ -21,47 +21,31 @@ For OLAP data source, [click here.](https://help.syncfusion.com/js/pivotchart/ol
  
 ## Exporting Service
 
-### Description
+### Excel Export
 
-To export PivotChart data to an Excel, Word, PDF or Image document.
+User can export contents of the PivotChart to Excel document for future archival, references and analysis purposes.
 
-### URL
+#### URL
 
-[http://js.syncfusion.com/demos/ejservices/api/JSPivotChartExport/ExcelExport](http://js.syncfusion.com/demos/ejservices/api/JSPivotChartExport/ExcelExport)
-[http://js.syncfusion.com/demos/ejservices/api/JSPivotChartExport/WordExport](http://js.syncfusion.com/demos/ejservices/api/JSPivotChartExport/WordExport)
-[http://js.syncfusion.com/demos/ejservices/api/JSPivotChartExport/PDFExport](http://js.syncfusion.com/demos/ejservices/api/JSPivotChartExport/PDFExport)
-[http://js.syncfusion.com/demos/ejservices/api/JSPivotChartExport/ImageExport](http://js.syncfusion.com/demos/ejservices/api/JSPivotChartExport/ImageExport)
+[http://js.syncfusion.com/ejservices/api/JSPivotChartExport/ExcelExport](http://js.syncfusion.com/ejservices/api/JSPivotChartExport/ExcelExport)
 
-### Parameter
+#### Parameter
 <table>
    <th>Type</th>
    <th>URL </th>
    <th>MultipleExport </th>
    <tr>
       <td>Excel</td>
-      <td>http://js.syncfusion.com/demos/ejservices/api/JSPivotChartExport/ExcelExport</td>
-      <td>False</td>
-   </tr>
-   <tr>
-      <td>Word</td>
-      <td>http://js.syncfusion.com/demos/ejservices/api/JSPivotChartExport/WordExport</td>
-      <td>False</td>
-   </tr>
-   <tr>
-      <td>PDF</td>
-      <td>http://js.syncfusion.com/demos/ejservices/api/JSPivotChartExport/PDFExport</td>
-      <td>False</td>
-   </tr>
-   <tr>
-      <td>Image</td>
-      <td>http://js.syncfusion.com/demos/ejservices/api/JSPivotChartExport/ImageExport</td>
+      <td>http://js.syncfusion.com/ejservices/api/JSPivotChartExport/ExcelExport</td>
       <td>False</td>
    </tr>
 </table>
 
-### Request
+#### Request
 
-#### PivotChart Exporting in JS
+To achieve Excel export, service URL and file name is sent as the parameter.
+
+##### JS
 
 {% highlight html %}
 
@@ -96,15 +80,8 @@ To export PivotChart data to an Excel, Word, PDF or Image document.
        });
        function exportBtnClick(args)
        {
-          var pGridObj = $('#PivotChart1').data("ejPivotChart");
-          pGridObj.exportPivotChart("http://js.syncfusion.com/demos/ejservices/api/JSPivotChartExport/ExcelExport");  //Excel Export
-          pGridObj.exportPivotChart("http://js.syncfusion.com/demos/ejservices/api/JSPivotChartExport/WordExport");   //Word Export
-          pGridObj.exportPivotChart("http://js.syncfusion.com/demos/ejservices/api/JSPivotChartExport/PDFExport");    //PDF Export
-          pGridObj.exportPivotChart("http://js.syncfusion.com/demos/ejservices/api/JSPivotChartExport/ImageExport","PivotChart", ej.PivotChart.ExportOptions.PNG); //PNG Export
-          pGridObj.exportPivotChart("http://js.syncfusion.com/demos/ejservices/api/JSPivotChartExport/ImageExport","PivotChart", ej.PivotChart.ExportOptions.EMF); //EMF Export
-          pGridObj.exportPivotChart("http://js.syncfusion.com/demos/ejservices/api/JSPivotChartExport/ImageExport","PivotChart", ej.PivotChart.ExportOptions.JPG); //JPG Export
-          pGridObj.exportPivotChart("http://js.syncfusion.com/demos/ejservices/api/JSPivotChartExport/ImageExport","PivotChart", ej.PivotChart.ExportOptions.GIF); //GIF Export
-          pGridObj.exportPivotChart("http://js.syncfusion.com/demos/ejservices/api/JSPivotChartExport/ImageExport","PivotChart", ej.PivotChart.ExportOptions.BMP); //BMP Export
+          var pChartObj = $('#PivotChart1').data("ejPivotChart");
+          pChartObj.exportPivotChart("http://js.syncfusion.com/ejservices/api/JSPivotChartExport/ExcelExport","fileName"); 
        }
        
      </script>
@@ -113,7 +90,7 @@ To export PivotChart data to an Excel, Word, PDF or Image document.
 
 {% endhighlight %}
 
-#### PivotChart Exporting in C\#
+##### C\#
 
 {% highlight c# %}
 
@@ -127,6 +104,90 @@ To export PivotChart data to an Excel, Word, PDF or Image document.
             pivotChartExcelExport.ExportToExcel(chartParams);
         }
 
+{% endhighlight %}
+ 
+#### Response
+
+##### Code: 200
+
+##### Content-Type: application/octet-stream
+
+##### Response for Excel Export:
+Browser will prompt a dialog box to save the Excel document.
+
+### Word Export
+
+User can export contents of the PivotChart to Word document for future archival, references and analysis purposes.
+
+#### URL
+
+[http://js.syncfusion.com/ejservices/api/JSPivotChartExport/WordExport](http://js.syncfusion.com/ejservices/api/JSPivotChartExport/WordExport)
+
+#### Parameter
+<table>
+   <th>Type</th>
+   <th>URL </th>
+   <th>MultipleExport </th>
+   <tr>
+      <td>Word</td>
+      <td>http://js.syncfusion.com/ejservices/api/JSPivotChartExport/WordExport</td>
+      <td>False</td>
+   </tr>
+</table>
+
+#### Request
+
+To achieve Word export, service URL and file name is sent as the parameter.
+
+##### JS
+
+{% highlight html %}
+
+<html>
+//...
+<body>
+      
+     <div id="PivotChart1" style="min-height: 275px; min-width: 525px; height: 460px; width: 950px"></div>
+     <button id="btnExport">Export</button>
+     <script type="text/javascript">
+        $(function() {
+            $("#PivotChart1").ejPivotChart({
+                dataSource: {
+                   data: pivot_dataset,
+                   rows: [{
+                      fieldName: "Country",
+                      fieldCaption: "Country"
+                   }],
+                  columns: [{
+                      fieldName: "Product",
+                      fieldCaption: "Product"
+                  }],
+                  values: [{
+                      fieldName: "Amount",
+                      fieldCaption: "Amount"
+                  }]
+               }
+           });
+           $("#btnExport").ejButton({
+              click: "exportBtnClick"
+           });
+       });
+       function exportBtnClick(args)
+       {
+          var pChartObj = $('#PivotChart1').data("ejPivotChart");
+          pChartObj.exportPivotChart("http://js.syncfusion.com/ejservices/api/JSPivotChartExport/WordExport","fileName");
+       }
+       
+     </script>
+</body>
+</html>
+
+{% endhighlight %}
+
+##### C\#
+
+{% highlight c# %}
+
         [System.Web.Http.ActionName("WordExport")]
         [System.Web.Http.HttpPost]
         public void WordExport()
@@ -136,6 +197,90 @@ To export PivotChart data to an Excel, Word, PDF or Image document.
             Dictionary<string, string> chartParams = serializer.Deserialize<Dictionary<string, string>>(args);
             pivotChartWordExport.ExportToWord(chartParams);
         }
+
+{% endhighlight %}
+ 
+#### Response
+
+##### Code: 200
+
+##### Content-Type: application/octet-stream
+
+##### Response for Word Export:
+Browser will prompt a dialog box to save the Word document.
+
+### PDF Export
+
+User can export contents of the PivotChart to PDF document for future archival, references and analysis purposes.
+
+#### URL
+
+[http://js.syncfusion.com/ejservices/api/JSPivotChartExport/PDFExport](http://js.syncfusion.com/ejservices/api/JSPivotChartExport/PDFExport)
+
+#### Parameter
+<table>
+   <th>Type</th>
+   <th>URL </th>
+   <th>MultipleExport </th>
+   <tr>
+      <td>PDF</td>
+      <td>http://js.syncfusion.com/ejservices/api/JSPivotChartExport/PDFExport</td>
+      <td>False</td>
+   </tr>
+</table>
+
+#### Request
+
+To achieve PDF export, service URL and file name is sent as the parameter.
+
+##### JS
+
+{% highlight html %}
+
+<html>
+//...
+<body>
+      
+     <div id="PivotChart1" style="min-height: 275px; min-width: 525px; height: 460px; width: 950px"></div>
+     <button id="btnExport">Export</button>
+     <script type="text/javascript">
+        $(function() {
+            $("#PivotChart1").ejPivotChart({
+                dataSource: {
+                   data: pivot_dataset,
+                   rows: [{
+                      fieldName: "Country",
+                      fieldCaption: "Country"
+                   }],
+                  columns: [{
+                      fieldName: "Product",
+                      fieldCaption: "Product"
+                  }],
+                  values: [{
+                      fieldName: "Amount",
+                      fieldCaption: "Amount"
+                  }]
+               }
+           });
+           $("#btnExport").ejButton({
+              click: "exportBtnClick"
+           });
+       });
+       function exportBtnClick(args)
+       {
+          var pChartObj = $('#PivotChart1').data("ejPivotChart");
+          pChartObj.exportPivotChart("http://js.syncfusion.com/ejservices/api/JSPivotChartExport/PDFExport","fileName");   
+       }
+       
+     </script>
+</body>
+</html>
+
+{% endhighlight %}
+
+##### C\#
+
+{% highlight c# %}
 
         [System.Web.Http.ActionName("PDFExport")]
         [System.Web.Http.HttpPost]
@@ -147,6 +292,100 @@ To export PivotChart data to an Excel, Word, PDF or Image document.
             pivotChartPDFExport.ExportToPDF(chartParams);
         }
 
+{% endhighlight %}
+ 
+#### Response
+
+##### Code: 200
+
+##### Content-Type: application/octet-stream
+
+##### Response for PDF Export:
+Browser will prompt a dialog box to save the PDF document.
+
+### Image Export
+
+User can export contents of the PivotChart to image format for future archival, references and analysis purposes. We can export PivotChart to the following image formats.
+
+* PNG
+* EMF
+* JPG
+* GIF
+* BMP
+
+#### URL
+
+[http://js.syncfusion.com/ejservices/api/JSPivotChartExport/ImageExport](http://js.syncfusion.com/ejservices/api/JSPivotChartExport/ImageExport)
+
+#### Parameter
+<table>
+   <th>Type</th>
+   <th>URL </th>
+   <th>MultipleExport </th>
+   <tr>
+      <td>Image</td>
+      <td>http://js.syncfusion.com/ejservices/api/JSPivotChartExport/ImageExport</td>
+      <td>False</td>
+   </tr>
+</table>
+
+#### Request
+
+To export PivotChart in PNG format, service URL, file name and **“ej.PivotChart.ExportOptions.PNG”** enumeration value is sent as the parameter. This is similar to other image formats.
+
+##### JS
+
+{% highlight html %}
+
+<html>
+//...
+<body>
+      
+     <div id="PivotChart1" style="min-height: 275px; min-width: 525px; height: 460px; width: 950px"></div>
+     <button id="btnExport">Export</button>
+     <script type="text/javascript">
+        $(function() {
+            $("#PivotChart1").ejPivotChart({
+                dataSource: {
+                   data: pivot_dataset,
+                   rows: [{
+                      fieldName: "Country",
+                      fieldCaption: "Country"
+                   }],
+                  columns: [{
+                      fieldName: "Product",
+                      fieldCaption: "Product"
+                  }],
+                  values: [{
+                      fieldName: "Amount",
+                      fieldCaption: "Amount"
+                  }]
+               }
+           });
+           $("#btnExport").ejButton({
+              click: "exportBtnClick"
+           });
+       });
+       function exportBtnClick(args)
+       {
+          var pChartObj = $('#PivotChart1').data("ejPivotChart");
+          pChartObj.exportPivotChart("http://js.syncfusion.com/ejservices/api/JSPivotChartExport/ImageExport","fileName", ej.PivotChart.ExportOptions.PNG); //PNG Export
+          pChartObj.exportPivotChart("http://js.syncfusion.com/ejservices/api/JSPivotChartExport/ImageExport","fileName", ej.PivotChart.ExportOptions.EMF); //EMF Export
+          pChartObj.exportPivotChart("http://js.syncfusion.com/ejservices/api/JSPivotChartExport/ImageExport","fileName", ej.PivotChart.ExportOptions.JPG); //JPG Export
+          pChartObj.exportPivotChart("http://js.syncfusion.com/ejservices/api/JSPivotChartExport/ImageExport","fileName", ej.PivotChart.ExportOptions.GIF); //GIF Export
+          pChartObj.exportPivotChart("http://js.syncfusion.com/ejservices/api/JSPivotChartExport/ImageExport","fileName", ej.PivotChart.ExportOptions.BMP); //BMP Export
+       }
+       
+     </script>
+</body>
+</html>
+
+{% endhighlight %}
+
+##### C\#
+
+{% highlight c# %}
+
         [System.Web.Http.ActionName("ImageExport")]
         [System.Web.Http.HttpPost]
         public void ImageExport()
@@ -156,15 +395,15 @@ To export PivotChart data to an Excel, Word, PDF or Image document.
             Dictionary<string, string> chartParams = serializer.Deserialize<Dictionary<string, string>>(args);
             pivotChartImageExport.ExportToImage(chartParams);
         }  
+
 {% endhighlight %}
  
-### Response
+#### Response
 
-#### Code: 200
+##### Code: 200
 
-#### Content-Type: application/octet-stream
+##### Content-Type: application/octet-stream
 
-#### Response (Excel, Word, PDF or Image):
-Browser will prompt a dialog box to save the file.
-
+##### Response for PNG Export:
+Browser will prompt a dialog box to save the PNG image.
 

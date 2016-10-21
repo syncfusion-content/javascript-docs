@@ -1,11 +1,12 @@
 ---
-title : Essential Studio 2015 Vol 3 Migration document
-description : Essential Studio 2015 Migration document
+title : Essential Studio 2016 Vol3 Migration document
+description : Essential Studio 2016 Migration document
 platform : js
 documentation: ug
+keywords: migration, upgradation, upgrade-changes, vol3-changes
 ---
 
-### Common Changes
+# Common Changes
 
 * To avoid conflict between ej.web.all and ej.widgets.all JavaScript, theme and TypeScript files we are deprecating the below ej.widgets.all files and those files are no longer shipped along with our next Essential Studio release
 
@@ -51,18 +52,11 @@ documentation: ug
 
  * Proper naming convention is implemented in TypeScript definition file for Syncfusion JavaScript control’s Array properties to ensure unique naming style followed throughout all the controls. 
 
-<table class="params">
-<tbody>
-<tr>
-<td>columns: Array<Columns></td>
-<td>columns: Array<Column></td>
-</tr>
-</tbody>
-</table>
+        For example, columns: Array<Columns> renamed as columns: Array<Column>.
 
  * jQuery easing external dependency has been removed from our JavaScript package.
  
- ### ejButton
+## ejButton
  
 **Class name**
 
@@ -77,7 +71,8 @@ Custom font icons are not applied due to e-icon class overrides it. So e-icon cl
 </tbody>
 </table>
 
- ### ejChart
+
+## ejChart
  
 To have a better appearance in mobile, we have changed the font size for the chart title, axis title, axis label and data label. 
 
@@ -128,18 +123,17 @@ To have a better appearance in mobile, we have changed the font size for the cha
 </tbody>
 </table>
 
-
-### ejFileExplorer
+## ejFileExplorer
 
 **select** event is triggered while unselect any items in grid/tile view issue has been fixed and now we have provided **unselect** event while unselect any items in grid/tile view.
 
 
-### ejGantt
+##  ejGantt
 
 Now the editor type of the duration column has been changed, to support displaying duration units in the project such as days, hours and minutes. Hence duration column will be displayed along with duration unit, with days as default duration unit.
 
 
-**Editor type of the duration column **
+**Editor type of the duration column**
 
 
 <table class="params">
@@ -163,13 +157,13 @@ Now the editor type for the duration and predecessor offset fields in the add an
 </table>
 
 
-### ejGrid
+## ejGrid
 
 Grid height responsiveness will works only if the scrollSettings->height property is set as ‘100%’
 
 Restore old resizing behaviour, in which adjusting all the other columns while resizing a particular column
 
-**Default column resizing mode **
+**Default column resizing mode**
 
 <table class="params">
 <tbody>
@@ -183,7 +177,7 @@ Restore old resizing behaviour, in which adjusting all the other columns while r
 While referring individual files, it is essential to include ej.tooltip.min.js file in project for rendering toolbar in Grid.
 
 
-### ejkanban
+## ejkanban
 
 * Kanban card layout structure has been changed.
 
@@ -243,7 +237,7 @@ Divided as module based structure based on features and corresponding methods ar
 </tbody>
 </table>
 
-### ejPivotChart
+## ejPivotChart
 
 We have started to support both OLAP and Relational data sources in a single widget and so we have renamed our controls from “Olap” to “Pivot” (prefix term). Due to this change we have renamed our assembly as well from “Syncfusion.EJ.Olap” to “Syncfusion.EJ.Pivot”. 
 
@@ -261,7 +255,7 @@ Note: Widget name, namespace, class name and enumeration were changed in prior r
 </table>
 
 
-### ejPivotClient
+## ejPivotClient
 
 We have started to support both OLAP and Relational data sources in Client widget and so we have renamed our controls from “OlapClient” to “PivotClient”. Due to this change we have renamed our widget name, assembly name, namespace, class name and enumeration. 
 
@@ -326,7 +320,7 @@ We have started to support both OLAP and Relational data sources in Client widge
 </tbody>
 </table>
 
-### ejPivotGauge
+## ejPivotGauge
 
 We have started to support both OLAP and Relational data sources in a single widget and so we have renamed our controls from “Olap” to “Pivot” (prefix term). Due to this change we have renamed our assembly as well from “Syncfusion.EJ.Olap” to “Syncfusion.EJ.Pivot”. 
 
@@ -344,7 +338,7 @@ Note: Widget name, namespace, class name and enumeration were changed in prior r
 </table>
 
 
-### ejPivotGrid
+## ejPivotGrid
 
 We have started to support both OLAP and Relational data sources in a single widget and so we have renamed our controls from “Olap” to “Pivot” (prefix term). Due to this change we have renamed our assembly as well from “Syncfusion.EJ.Olap” to “Syncfusion.EJ.Pivot”. 
 
@@ -362,7 +356,7 @@ Note: Widget name, namespace, class name and enumeration were changed in prior r
 </tbody>
 </table>
 
-### ejPivotTreeMap
+## ejPivotTreeMap
 
 We have started to support both OLAP and Relational data sources in a single widget and so we have renamed our controls from “Olap” to “Pivot” (prefix term). Due to this change we have renamed our assembly as well from “Syncfusion.EJ.Olap” to “Syncfusion.EJ.Pivot”. 
 
@@ -380,7 +374,7 @@ Note: Widget name, namespace, class name and enumeration were changed in prior r
 </tbody>
 </table>
 
-### ejPivotSchemaDesigner
+## ejPivotSchemaDesigner
 
 We have started to support both OLAP and Relational data sources in a single widget and so we have renamed our controls from “Olap” to “Pivot” (prefix term). Due to this change we have renamed our assembly as well from “Syncfusion.EJ.Olap” to “Syncfusion.EJ.Pivot”.
 
@@ -399,7 +393,7 @@ Note: Widget name, namespace, class name and enumeration were changed in prior r
 </table>
 
 
-### ejSpreadsheet
+## ejSpreadsheet
 
 For getting started sample code optimization, default value is changed for show header.
 
@@ -420,8 +414,6 @@ For getting started sample code optimization, default value is changed for show 
 </tbody>
 </table>
 
-
-
 **Class name**
 
 Issue with Styles class which conflict between Syncfusion.JavaScript.Models and System.Web.Optimization. 
@@ -435,12 +427,11 @@ Issue with Styles class which conflict between Syncfusion.JavaScript.Models and 
 </tbody>
 </table>
 
-### ejTreeGrid
+## ejTreeGrid
 
 To group the selection related APIs and to maintain the consistency with other APIs in ejTreeGrid, we have deprecated the selectionMode and selectionType properties.
 
 **Property name**
-
 
 <table class="params">
 <tbody>
