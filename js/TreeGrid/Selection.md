@@ -73,7 +73,7 @@ To enable multiple selection, you can set `selectionSettings.selectionType` prop
 You can select a row programmatically by setting the row index value to `selectedRowIndex` property. 
 The following code shows on how to select a row programmatically with button click action,
 
-{% higlight html %}
+{% highlight html %}
 
     <html>
         <body>
@@ -143,7 +143,7 @@ The output of the TreeGrid with multiple cell selection is as follows.
 You can select the cells programmatically using `selectCells` public method. Find the code example below for selecting TreeGrid cells programmatically
 
 
-{% higlight html %}
+{% highlight html %}
 
     <html>
         <body>
