@@ -13,8 +13,6 @@ The Spreadsheet have the following list of external dependencies.
 
 * [`jsRender`](https://github.com/borismoore/jsrender "jsRender") - to render the templates.
 
-* [`jQuery.easing`](http://gsgd.co.uk/sandbox/jquery/easing "jQuery.easing") - to support the animation effects in the components.
-
 * [`jQuery.validate`](https://github.com/jzaefferer/jquery-validation "jQuery.validate") - to support validation in editing and dialog inputs.
 
 
