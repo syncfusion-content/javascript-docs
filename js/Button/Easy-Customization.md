@@ -93,7 +93,7 @@ In the **HTML** page, add the following button elements to configure button widg
             size: "normal",
             showRoundedCorner: true,
             contentType: "imageonly",
-            prefixIcon: "e-uiLight e-handup"
+            prefixIcon: "e-icon e-handup"
         });
         $("#button_mini").ejButton({
             showRoundedCorner: true,
@@ -115,7 +115,7 @@ In the **HTML** page, add the following button elements to configure button widg
             size: "large",
             showRoundedCorner: true,
             contentType: "textandimage",
-            prefixIcon: "e-uiLight e-handup"
+            prefixIcon: "e-icon e-handup"
         });
         $("#button_custom").ejButton({
             //button with user given height and width
@@ -123,7 +123,7 @@ In the **HTML** page, add the following button elements to configure button widg
             width: 130,
             showRoundedCorner: true,
             contentType: "textandimage",
-            prefixIcon: "e-uiLight e-handup"
+            prefixIcon: "e-icon e-handup"
         });
     });
 
@@ -246,7 +246,7 @@ In the **HTML** page, add the following button elements to configure **Button** 
             //only image is used as content
             contentType: "imageonly",
             showRoundedCorner: true,
-            prefixIcon: "e-uiLight e-handup"
+            prefixIcon: "e-icon e-handup"
         });
         $("#button_textonly").ejButton({
             //only text is used as content
@@ -257,21 +257,21 @@ In the **HTML** page, add the following button elements to configure **Button** 
             //only images in both end is used as content
             contentType: "imageboth",
             showRoundedCorner: true,
-            prefixIcon: "e-uiLight e-handup",
-            suffixIcon: "e-uiLight e-palette"
+            prefixIcon: "e-icon e-handup",
+            suffixIcon: "e-icon e-palette"
         });
         $("#button_textandimage").ejButton({
             //text and image is used as content
             contentType: "textandimage",
             showRoundedCorner: true,
-            prefixIcon: "e-uiLight e-handup"
+            prefixIcon: "e-icon e-handup"
         });
         $("#button_imagetextimage").ejButton({
             //images in both end and text in center is used as content
             contentType: "imagetextimage",
             showRoundedCorner: true,
-            prefixIcon: "e-uiLight e-handup",
-            suffixIcon: "e-uiLight e-palette"
+            prefixIcon: "e-icon e-handup",
+            suffixIcon: "e-icon e-palette"
         });
 
         $("#button_imageonly_small").ejButton({
@@ -279,7 +279,7 @@ In the **HTML** page, add the following button elements to configure **Button** 
             //only image is used as content
             contentType: "imageonly",
             showRoundedCorner: true,
-            prefixIcon: "e-uiLight e-handup"
+            prefixIcon: "e-icon e-handup"
         });
         $("#button_textonly_small").ejButton({
             size: "small",
@@ -293,24 +293,24 @@ In the **HTML** page, add the following button elements to configure **Button** 
             contentType: "imageboth",
             showRoundedCorner: true,
             //It specifies the image in prefix location
-            prefixIcon: "e-uiLight e-handup",
+            prefixIcon: "e-icon e-handup",
             //It specifies the image in suffix location
-            suffixIcon: "e-uiLight e-palette"
+            suffixIcon: "e-icon e-palette"
         });
         $("#button_textandimage_small").ejButton({
             size: "small",
             //text and image is used as content
             contentType: "textandimage",
             showRoundedCorner: true,
-            prefixIcon: "e-uiLight e-handup"
+            prefixIcon: "e-icon e-handup"
         });
         $("#button_imagetextimage_small").ejButton({
             size: "small",
             //images in both end and text in center is used as content
             contentType: "imagetextimage",
             showRoundedCorner: true,
-            prefixIcon: "e-uiLight e-handup",
-            suffixIcon: "e-uiLight e-palette"
+            prefixIcon: "e-icon e-handup",
+            suffixIcon: "e-icon e-palette"
         });
     });
 
@@ -406,83 +406,83 @@ In the **HTML** page, add the following button elements to configure **Button** 
             imagePosition: "imageleft",
             contentType: "textandimage",
             showRoundedCorner: true,
-            prefixIcon: "e-uiLight e-handup",
+            prefixIcon: "e-icon e-handup",
         });
         $("#button_imageleft_mini").ejButton({
             size: "mini",
             imagePosition: "imageleft",
             contentType: "textandimage",
             showRoundedCorner: true,
-            prefixIcon: "e-uiLight e-handup",
+            prefixIcon: "e-icon e-handup",
         });
         $("#button_imageleft_small").ejButton({
             size: "small",
             imagePosition: "imageleft",
             contentType: "textandimage",
             showRoundedCorner: true,
-            prefixIcon: "e-uiLight e-handup",
+            prefixIcon: "e-icon e-handup",
         });
         $("#button_imageleft_medium").ejButton({
             size: "medium",
             imagePosition: "imageleft",
             contentType: "textandimage",
             showRoundedCorner: true,
-            prefixIcon: "e-uiLight e-handup",
+            prefixIcon: "e-icon e-handup",
         });
         $("#button_imageleft_large").ejButton({
             size: "large",
             imagePosition: "imageleft",
             contentType: "textandimage",
             showRoundedCorner: true,
-            prefixIcon: "e-uiLight e-handup",
+            prefixIcon: "e-icon e-handup",
         });
         $("#button_imageright_normal").ejButton({
             size: "normal",
             imagePosition: "imageright",
             contentType: "textandimage",
             showRoundedCorner: true,
-            prefixIcon: "e-uiLight e-handup",
+            prefixIcon: "e-icon e-handup",
         });
         $("#button_imageright_mini").ejButton({
             size: "mini",
             imagePosition: "imageright",
             contentType: "textandimage",
             showRoundedCorner: true,
-            prefixIcon: "e-uiLight e-handup",
+            prefixIcon: "e-icon e-handup",
         });
         $("#button_imageright_small").ejButton({
             size: "small",
             imagePosition: "imageright",
             contentType: "textandimage",
             showRoundedCorner: true,
-            prefixIcon: "e-uiLight e-handup",
+            prefixIcon: "e-icon e-handup",
         });
         $("#button_imageright_medium").ejButton({
             size: "medium",
             imagePosition: "imageright",
             contentType: "textandimage",
             showRoundedCorner: true,
-            prefixIcon: "e-uiLight e-handup",
+            prefixIcon: "e-icon e-handup",
         });
         $("#button_imageright_large").ejButton({
             size: "large",
             imagePosition: "imageright",
             contentType: "textandimage",
             showRoundedCorner: true,
-            prefixIcon: "e-uiLight e-handup",
+            prefixIcon: "e-icon e-handup",
         });
         $("#button_imagetop").ejButton({
             imagePosition: "imagetop",
             contentType: "textandimage",
             showRoundedCorner: true,
-            prefixIcon: "e-uiLight e-handup",
+            prefixIcon: "e-icon e-handup",
             width: 60
         });
         $("#button_imagebottom").ejButton({
             imagePosition: "imagebottom",
             contentType: "textandimage",
             showRoundedCorner: true,
-            prefixIcon: "e-uiLight e-handup",
+            prefixIcon: "e-icon e-handup",
             width: 60
         });
     });
@@ -540,35 +540,35 @@ In the **HTML** page, add the following button elements to configure **Button** 
             size: "small",
             showRoundedCorner: true,
             contentType: "textandimage",
-            prefixIcon: "e-uiLight e-handup",
+            prefixIcon: "e-icon e-handup",
         });
         $("#button_customCss2").ejButton({
             cssClass: "customCss2",
             size: "small",
             showRoundedCorner: true,
             contentType: "textandimage",
-            prefixIcon: "e-uiLight e-handup"
+            prefixIcon: "e-icon e-handup"
         });
         $("#button_customCss3").ejButton({
             cssClass: "customCss3",
             size: "small",
             showRoundedCorner: true,
             contentType: "textandimage",
-            prefixIcon: "e-uiLight e-handup"
+            prefixIcon: "e-icon e-handup"
         });
         $("#button_customCss4").ejButton({
             cssClass: "customCss4",
             size: "small",
             showRoundedCorner: true,
             contentType: "textandimage",
-            prefixIcon: "e-uiLight e-handup"
+            prefixIcon: "e-icon e-handup"
         });
         $("#button_customCss5").ejButton({
             cssClass: "customCss5",
             size: "small",
             showRoundedCorner: true,
             contentType: "textandimage",
-            prefixIcon: "e-uiLight e-handup"
+            prefixIcon: "e-icon e-handup"
         });
     });
 

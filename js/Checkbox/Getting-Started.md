@@ -151,7 +151,6 @@ Initialize **Checkbox** in script.
         $("#check1").ejCheckBox({ checked:true });
         $("#Checkbox3").ejCheckBox();
         $("#Checkbox4").ejCheckBox();
-        $("#Checkbox3").ejCheckBox();
         $("#Checkbox1").ejCheckBox({ size: "medium", checked: true });
         $("#Checkbox5").ejCheckBox({ size: "medium" });
         $("#Checkbox6").ejCheckBox({ size: "medium" });
