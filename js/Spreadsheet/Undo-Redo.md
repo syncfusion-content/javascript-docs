@@ -9,9 +9,9 @@ documentation: ug
 
 # Undo and Redo
 
-Spreadsheet provides the support to perform undo and redo operations. You can set [`allowUndoRedo`](https://help.syncfusion.com/api/js/ejspreadsheet#members:allowundoredo "allowUndoRedo") as true to enable undo redo feature. You can also use [`undoRedoStep`](https://help.syncfusion.com/api/js/ejspreadsheet#members:undoredostep "undoRedoStep") property to limit the undo redo action.
+Spreadsheet provides the support to perform undo and redo operations. You can set [`allowUndoRedo`](https://help.syncfusion.com/js/api/ejspreadsheet#members:allowundoredo "allowUndoRedo") as true to enable undo redo feature. You can also use [`undoRedoStep`](https://help.syncfusion.com/js/api/ejspreadsheet#members:undoredostep "undoRedoStep") property to limit the undo redo action.
 
-N> Default value of [`undoRedoStep`](https://help.syncfusion.com/api/js/ejspreadsheet#members:undoredostep "undoRedoStep") is 20. You can perform 20 undo or redo actions.
+N> Default value of [`undoRedoStep`](https://help.syncfusion.com/js/api/ejspreadsheet#members:undoredostep "undoRedoStep") is 20. You can perform 20 undo or redo actions.
 
 ## Undo the last action
 
@@ -22,9 +22,7 @@ Undo reverses the last action you performed with spreadsheet. You can do this by
 
 ## Redo the action
 
-Redo Undoes the last undo action you performed with spreadsheet. You can do this by following ways.
+Redo reverses the last undo action you performed with spreadsheet. You can do this by following ways.
 
 * Use Redo button of HOME tab in ribbon.
 * Use Ctrl + Y key.
-
-N> All the features in spreadsheet have Undo Redo support.
