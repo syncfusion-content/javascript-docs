@@ -9,7 +9,7 @@ documentation: ug
 
 # Print
 
-This feature is used for produce text and graphics from a computer screen or file onto a sheet of paper. You can use [`printSettings.allowPrinting`](https://help.syncfusion.com/js/api/ejspreadsheet#members:printsettings-allowprinting "printSettings.allowPrinting") property to enable/disable the print operation.
+This feature is used for produce text and graphics from a computer screen or file onto a sheet of paper. You can use [`printSettings.allowPrinting`](https://help.syncfusion.com/api/js/ejspreadsheet#members:printsettings-allowprinting "printSettings.allowPrinting") property to enable/disable the print operation.
 
 You have following options in printing.
 
@@ -22,7 +22,7 @@ You have following options in printing.
 You can print the sheet or print the selected area by following ways,
 
 * Using the Print button or Print Selected button under Print group of PAGE LAYOUT tab in ribbon.
-* Using [`printSheet`](https://help.syncfusion.com/js/api/ejspreadsheet#methods:xlprint-printsheet "printSheet") or [`printSelection`](https://help.syncfusion.com/js/api/ejspreadsheet#methods:xlprint-printselection "printSelection") method to print the spreadsheet.
+* Using [`printSheet`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlprint-printsheet "printSheet") or [`printSelection`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlprint-printselection "printSelection") method to print the spreadsheet.
 
 The following code example describes the above behavior.
 
@@ -75,7 +75,7 @@ Print dialog with selected area print in chrome browser
 You have an option to print the spreadsheet with gridlines or without gridlines. You can do this by one of the following ways,
 
 * Check the Gridlines option under Show group of PAGE LAYOUT tab in ribbon to print with Gridlines.
-* Using [`showGridlines`](https://help.syncfusion.com/js/api/ejspreadsheet#members:sheets-showgridlines "showGridlines") property to enable / disable the gridlines.
+* Using [`showGridlines`](https://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-showgridlines "showGridlines") property to enable / disable the gridlines.
 
 The following code example describes the above behavior.
 
@@ -108,7 +108,7 @@ Print dialog without gridlines in chrome browser
 You have an option to print the spreadsheet with gridlines or without headers. You can do this by one of the following ways,
 
 * Check the Headings option under Show group of PAGE LAYOUT tab in ribbon. 
-* Using [`showHeadings`](https://help.syncfusion.com/js/api/ejspreadsheet#members:sheets-showheadings "showHeadings") property to enable / disable gridlines.
+* Using [`showHeadings`](https://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-showheadings "showHeadings") property to enable / disable gridlines.
 
 The following code example describes the above behavior.
 
