@@ -27,7 +27,7 @@ In the **HTML** page, add the following button elements to configure button widg
         $("#button_rtl").ejButton({
             size: "large", contentType: ej.ContentType.TextAndImage,
             showRoundedCorner: true,
-            prefixIcon: "e-uiLight e-login",
+            prefixIcon: "e-icon e-login",
             //used to enable or disable RTL support for button
             enableRTL: true
         });

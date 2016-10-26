@@ -42,7 +42,7 @@ In the **HTML** page, add the following button elements to configure **Split But
                 showRoundedCorner: true,
                 //targetID used to specify vertical menu content
                 targetID: "Ul11",
-                prefixIcon: "e-uiLight e-login"
+                prefixIcon: "e-icon e-login"
             });
         });
     
@@ -169,7 +169,7 @@ In the **HTML** page, add the following button elements to configure **Split But
                 showRoundedCorner: true,
                 contentType: "imageonly",
                 targetID: "Ul11",
-                prefixIcon: "e-uiLight e-login"
+                prefixIcon: "e-icon e-login"
             });
 
             $("#spltbutton_mini").ejSplitButton({
@@ -199,7 +199,7 @@ In the **HTML** page, add the following button elements to configure **Split But
                 showRoundedCorner: true,
                 targetID: "Ul51",
                 contentType: "textandimage",
-                prefixIcon: "e-login e-uiLight",
+                prefixIcon: "e-login e-icon",
             });
 
             $("#spltbutton_customsize").ejSplitButton({
@@ -209,7 +209,7 @@ In the **HTML** page, add the following button elements to configure **Split But
                 showRoundedCorner: true,
                 targetID: "Ul61",
                 contentType: "textandimage",
-                prefixIcon: "e-login e-uiLight",
+                prefixIcon: "e-login e-icon",
             });
 
         });
@@ -359,7 +359,7 @@ In the **HTML** page, add the following button elements to configure **Split But
              //only image is used as content
              contentType: "imageonly",
              showRoundedCorner: true,
-             prefixIcon: "e-uiLight e-handup",
+             prefixIcon: "e-icon e-handup",
              targetID: "Ul11",
          });
          $("#spltbutton_textonly").ejSplitButton({
@@ -375,9 +375,9 @@ In the **HTML** page, add the following button elements to configure **Split But
              contentType: "imageboth",
              showRoundedCorner: true,
              //e-handup is a build in class, which specify font icon
-             prefixIcon: "e-uiLight e-handup",
+             prefixIcon: "e-icon e-handup",
              //e-palette is a build in class, which specify font icon
-             suffixIcon: "e-uiLight e-palette",
+             suffixIcon: "e-icon e-palette",
              targetID: "Ul31",
          });
          $("#spltbutton_textandimage").ejSplitButton({
@@ -385,7 +385,7 @@ In the **HTML** page, add the following button elements to configure **Split But
              //text and image is used as content
              contentType: "textandimage",
              showRoundedCorner: true,
-             prefixIcon: "e-uiLight e-handup",
+             prefixIcon: "e-icon e-handup",
              targetID: "Ul41",
          });
          $("#spltbutton_imagetextimage").ejSplitButton({
@@ -394,9 +394,9 @@ In the **HTML** page, add the following button elements to configure **Split But
              contentType: "imagetextimage",
              showRoundedCorner: true,
              //It specifies the image in prefix location
-             prefixIcon: "e-uiLight e-handup",
+             prefixIcon: "e-icon e-handup",
              //It specifies the image in suffix location
-             suffixIcon: "e-uiLight e-palette",
+             suffixIcon: "e-icon e-palette",
              targetID: "Ul51",
          });
      });
@@ -562,7 +562,7 @@ In the **HTML** page, add the following button elements to configure **Split But
             imagePosition: "imageleft",
             contentType: "textandimage",
             showRoundedCorner: true,
-            prefixIcon: "e-uiLight e-handup",
+            prefixIcon: "e-icon e-handup",
             targetID: "Ul11",
         });
         $("#spltbutton_imageleft_small").ejSplitButton({
@@ -570,7 +570,7 @@ In the **HTML** page, add the following button elements to configure **Split But
             imagePosition: "imageleft",
             contentType: "textandimage",
             showRoundedCorner: true,
-            prefixIcon: "e-uiLight e-handup",
+            prefixIcon: "e-icon e-handup",
             targetID: "Ul21",
         });
         $("#spltbutton_imageleft_medium").ejSplitButton({
@@ -578,7 +578,7 @@ In the **HTML** page, add the following button elements to configure **Split But
             imagePosition: "imageleft",
             contentType: "textandimage",
             showRoundedCorner: true,
-            prefixIcon: "e-uiLight e-handup",
+            prefixIcon: "e-icon e-handup",
             targetID: "Ul31",
         });
         $("#spltbutton_imageleft_large").ejSplitButton({
@@ -586,7 +586,7 @@ In the **HTML** page, add the following button elements to configure **Split But
             imagePosition: "imageleft",
             contentType: "textandimage",
             showRoundedCorner: true,
-            prefixIcon: "e-uiLight e-handup",
+            prefixIcon: "e-icon e-handup",
             targetID: "Ul1",
         });
 
@@ -594,7 +594,7 @@ In the **HTML** page, add the following button elements to configure **Split But
             imagePosition: "imageright",
             contentType: "textandimage",
             showRoundedCorner: true,
-            prefixIcon: "e-uiLight e-handup",
+            prefixIcon: "e-icon e-handup",
             targetID: "Ul2",
         });
         $("#spltbutton_imageright_small").ejSplitButton({
@@ -602,7 +602,7 @@ In the **HTML** page, add the following button elements to configure **Split But
             imagePosition: "imageright",
             contentType: "textandimage",
             showRoundedCorner: true,
-            prefixIcon: "e-uiLight e-handup",
+            prefixIcon: "e-icon e-handup",
             targetID: "Ul3",
         });
         $("#spltbutton_imageright_medium").ejSplitButton({
@@ -610,7 +610,7 @@ In the **HTML** page, add the following button elements to configure **Split But
             imagePosition: "imageright",
             contentType: "textandimage",
             showRoundedCorner: true,
-            prefixIcon: "e-uiLight e-handup",
+            prefixIcon: "e-icon e-handup",
             targetID: "Ul4",
         });
         $("#spltbutton_imageright_large").ejSplitButton({
@@ -618,14 +618,14 @@ In the **HTML** page, add the following button elements to configure **Split But
             imagePosition: "imageright",
             contentType: "textandimage",
             showRoundedCorner: true,
-            prefixIcon: "e-uiLight e-handup",
+            prefixIcon: "e-icon e-handup",
             targetID: "Ul41",
         });
         $("#spltbutton_imagetop").ejSplitButton({
             imagePosition: "imagetop",
             contentType: "textandimage",
             showRoundedCorner: true,
-            prefixIcon: "e-uiLight e-handup",
+            prefixIcon: "e-icon e-handup",
             targetID: "Ul5",
             height: 60
         });
@@ -633,7 +633,7 @@ In the **HTML** page, add the following button elements to configure **Split But
             imagePosition: "imagebottom",
             contentType: "textandimage",
             showRoundedCorner: true,
-            prefixIcon: "e-uiLight e-handup",
+            prefixIcon: "e-icon e-handup",
             targetID: "Ul6",
             height: 60
         });
@@ -763,7 +763,7 @@ In the **HTML** page, add the following button elements to configure **Split But
             size: "small",
             showRoundedCorner: true,
             contentType: "textandimage",
-            prefixIcon: "e-uiLight e-handup",
+            prefixIcon: "e-icon e-handup",
             targetID: "Ul11",
         });
 
@@ -772,7 +772,7 @@ In the **HTML** page, add the following button elements to configure **Split But
             size: "small",
             showRoundedCorner: true,
             contentType: "textandimage",
-            prefixIcon: "e-uiLight e-handup",
+            prefixIcon: "e-icon e-handup",
             targetID: "Ul21",
         });
 
@@ -781,7 +781,7 @@ In the **HTML** page, add the following button elements to configure **Split But
             size: "small",
             showRoundedCorner: true,
             contentType: "textandimage",
-            prefixIcon: "e-uiLight e-handup",
+            prefixIcon: "e-icon e-handup",
             targetID: "Ul31",
         });
 
@@ -790,7 +790,7 @@ In the **HTML** page, add the following button elements to configure **Split But
             size: "small",
             showRoundedCorner: true,
             contentType: "textandimage",
-            prefixIcon: "e-uiLight e-handup",
+            prefixIcon: "e-icon e-handup",
             targetID: "Ul41",
         });
 
@@ -799,7 +799,7 @@ In the **HTML** page, add the following button elements to configure **Split But
             size: "small",
             showRoundedCorner: true,
             contentType: "textandimage",
-            prefixIcon: "e-uiLight e-handup",
+            prefixIcon: "e-icon e-handup",
             targetID: "Ul51",
         });
 
