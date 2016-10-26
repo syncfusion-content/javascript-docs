@@ -22,7 +22,6 @@ Create an HTML page and add the scripts references in the order mentioned in the
         <link rel="stylesheet" href="http://cdn.syncfusion.com/14.2.0.26/js/web/flat-azure/ej.web.all.min.css" />
         <!--  jquery script  -->
         <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-        <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"></script>
         <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"></script>
         <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.min.js"></script>
         <!--  jsrender script  -->
