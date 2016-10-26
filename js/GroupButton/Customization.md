@@ -131,11 +131,11 @@ Simply you can use these Built-in icons by mentioning the icon class name as val
 
                 dataSource: [
 
-                { contentType: "imageonly", prefixIcon: "e-bold_01" },
+                { contentType: "imageonly", prefixIcon: "e-icon e-bold_01" },
 
-                { contentType: "imageonly", prefixIcon: "e-italic_01" },
+                { contentType: "imageonly", prefixIcon: "e-icon e-italic_01" },
 
-                { contentType: "imageonly", prefixIcon: "e-underline_01" }],
+                { contentType: "imageonly", prefixIcon: "e-icon e-underline_01" }],
 
                 showRoundedCorner: true,
 

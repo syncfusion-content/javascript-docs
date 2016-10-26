@@ -93,8 +93,8 @@ Initialize Button in the script with properties.
             size: "large",
             click: "playpause",
             contentType: "textandimage",
-            defaultPrefixIcon: "e-mediaplay e-uiLight",
-            activePrefixIcon: "e-mediapause e-uiLight",
+            defaultPrefixIcon: "e-icon e-mediaplay",
+            activePrefixIcon: "e-icon e-mediapause",
         });
 
 
@@ -222,8 +222,8 @@ Add the following code in the **&lt;script&gt;** tag.
             size: "large",
             click: "playpause",
             contentType: "textandimage",
-            defaultPrefixIcon: "e-mediaplay e-uiLight",
-            activePrefixIcon: "e-mediapause e-uiLight",
+            defaultPrefixIcon: "e-icon e-mediaplay",
+            activePrefixIcon: "e-icon e-mediapause",
         });
 
 

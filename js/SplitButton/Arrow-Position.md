@@ -80,7 +80,7 @@ In the **HTML** page, add the following button elements to configure **Split 
             showRoundedCorner: true,
             contentType: "imageonly",
             targetID: "Ul11",
-            prefixIcon: "e-uiLight e-login",
+            prefixIcon: "e-icon e-login",
             arrowPosition: "left"
         });
         $("#spltbutton21").ejSplitButton({
