@@ -37,8 +37,8 @@ In the **HTML** page, add the following button elements to configure **Toggle Bu
                 showRoundedCorner: true,
                 defaultText: "Play",
                 activeText: "Next",
-                defaultPrefixIcon: "e-mediaplay e-uiLight",
-                activePrefixIcon: "e-mediapause e-uiLight"
+                defaultPrefixIcon: "e-mediaplay e-icon",
+                activePrefixIcon: "e-mediapause e-icon"
             });
         });
     
@@ -77,8 +77,8 @@ In the **HTML** page, add the following button elements to configure **Toggle Bu
                 contentType: "textandimage",
                 defaultText: "Play",
                 activeText: "Next",
-                defaultPrefixIcon: "e-mediaplay e-uiLight",
-                activePrefixIcon: "e-mediapause e-uiLight",
+                defaultPrefixIcon: "e-mediaplay e-icon",
+                activePrefixIcon: "e-mediapause e-icon",
                 //prevent changing state of toggle button
                 preventToggle: true
             });

@@ -40,8 +40,8 @@ In the **HTML** page, add the following button elements to configure **Toggle Bu
                 contentType: "textandimage",
                 defaultText: "Play",
                 activeText: "Pause",
-                defaultPrefixIcon: "e-mediaplay e-uiLight",
-                activePrefixIcon: "e-mediapause e-uiLight",
+                defaultPrefixIcon: "e-icon e-mediaplay",
+                activePrefixIcon: "e-icon e-mediapause",
                 //set the button in default state
                 toggleState: false
             });
@@ -50,8 +50,8 @@ In the **HTML** page, add the following button elements to configure **Toggle Bu
                 contentType: "textandimage",
                 defaultText: "Play",
                 activeText: "Pause",
-                defaultPrefixIcon: "e-mediaplay e-uiLight",
-                activePrefixIcon: "e-mediapause e-uiLight",
+                defaultPrefixIcon: "e-icon e-mediaplay",
+                activePrefixIcon: "e-icon e-mediapause",
                 //set the button in active state
                 toggleState: true
             });
@@ -153,15 +153,15 @@ In the **HTML** page, add the following button elements to configure **Toggle Bu
                 showRoundedCorner: true,
                 contentType: "imagetextimage",
                 //e-mediaforward class contain font icon
-                defaultPrefixIcon: "e-mediaforward e-uiLight",
+                defaultPrefixIcon: "e-icon e-mediaforward",
                 //e-mediaback class contain font icon
-                activePrefixIcon: "e-mediaback e-uiLight",
+                activePrefixIcon: "e-icon e-mediaback",
                 defaultText: "forward",
                 activeText: "backward",
                 //e-undo class contain font icon
-                defaultSuffixIcon: "e-undo e-uiLight",
+                defaultSuffixIcon: "e-icon e-undo",
                 //e- redo class contain font icon
-                activeSuffixIcon: "e-redo e-uiLight"
+                activeSuffixIcon: "e-icon e-redo"
             });
         });
 
@@ -272,8 +272,8 @@ In the **HTML** page, add the following button elements to configure **Toggle Bu
             size: "normal",
             showRoundedCorner: true,
             contentType: "imageonly",
-            defaultPrefixIcon: "e-mediaplay e-uiLight",
-            activePrefixIcon: "e-mediapause e-uiLight",
+            defaultPrefixIcon: "e-icon e-mediaplay",
+            activePrefixIcon: "e-icon e-mediapause",
         });
         $("#toggle_mini").ejToggleButton({
             defaultText: "Play",
@@ -303,8 +303,8 @@ In the **HTML** page, add the following button elements to configure **Toggle Bu
             //large size of toggle button
             size: "large",
             contentType: "textandimage",
-            defaultPrefixIcon: "e-mediaplay e-uiLight",
-            activePrefixIcon: "e-mediapause e-uiLight",
+            defaultPrefixIcon: "e-icon e-mediaplay",
+            activePrefixIcon: "e-icon e-mediapause",
         });
         $("#toggle_customSize").ejToggleButton({
             showRoundedCorner: true,
@@ -314,8 +314,8 @@ In the **HTML** page, add the following button elements to configure **Toggle Bu
             height: 50,
             width: 150,
             contentType: "textandimage",
-            defaultPrefixIcon: "e-mediaplay e-uiLight",
-            activePrefixIcon: "e-mediapause e-uiLight",
+            defaultPrefixIcon: "e-icon e-mediaplay",
+            activePrefixIcon: "e-icon e-mediapause",
         });
     });
 
@@ -452,8 +452,8 @@ In the **HTML** page, add the following button elements to configure **Toggle Bu
               showRoundedCorner: true,
               //only image is used as content
               contentType: "imageonly",
-              defaultPrefixIcon: "e-mediaplay e-uiLight",
-              activePrefixIcon: "e-mediapause e-uiLight"
+              defaultPrefixIcon: "e-mediaplay e-icon",
+              activePrefixIcon: "e-mediapause e-icon"
           });
           $("#toggle_textonly").ejToggleButton({
               //only text is used as content
@@ -466,10 +466,10 @@ In the **HTML** page, add the following button elements to configure **Toggle Bu
               //only images in both end is used as content
               contentType: "imageboth",
               showRoundedCorner: true,
-              defaultPrefixIcon: "e-mediaforward e-uiLight",
-              activePrefixIcon: "e-mediaback e-uiLight",
-              defaultSuffixIcon: "e-undo e-uiLight",
-              activeSuffixIcon: "e-redo e-uiLight"
+              defaultPrefixIcon: "e-mediaforward e-icon",
+              activePrefixIcon: "e-mediaback e-icon",
+              defaultSuffixIcon: "e-undo e-icon",
+              activeSuffixIcon: "e-redo e-icon"
           });
           $("#toggle_textandimage").ejToggleButton({
               //text and image is used as content
@@ -477,26 +477,26 @@ In the **HTML** page, add the following button elements to configure **Toggle Bu
               showRoundedCorner: true,
               defaultText: "Play",
               activeText: "Next",
-              defaultPrefixIcon: "e-mediaplay e-uiLight",
-              activePrefixIcon: "e-mediapause e-uiLight"
+              defaultPrefixIcon: "e-mediaplay e-icon",
+              activePrefixIcon: "e-mediapause e-icon"
           });
           $("#toggle_imagetextimage").ejToggleButton({
               //image text image is used as content
               contentType: "imagetextimage",
               showRoundedCorner: true,
-              defaultPrefixIcon: "e-mediaforward e-uiLight",
-              activePrefixIcon: "e-mediaback e-uiLight",
+              defaultPrefixIcon: "e-mediaforward e-icon",
+              activePrefixIcon: "e-mediaback e-icon",
               defaultText: "forward",
               activeText: "backward",
-              defaultSuffixIcon: "e-undo e-uiLight",
-              activeSuffixIcon: "e-redo e-uiLight"
+              defaultSuffixIcon: "e-undo e-icon",
+              activeSuffixIcon: "e-redo e-icon"
           });
           $("#toggle_imageonly_small").ejToggleButton({
               size: "small",
               showRoundedCorner: true,
               contentType: "imageonly",
-              defaultPrefixIcon: "e-mediaplay e-uiLight",
-              activePrefixIcon: "e-mediapause e-uiLight"
+              defaultPrefixIcon: "e-mediaplay e-icon",
+              activePrefixIcon: "e-mediapause e-icon"
           });
           $("#toggle_textonly_small").ejToggleButton({
               size: "small",
@@ -509,10 +509,10 @@ In the **HTML** page, add the following button elements to configure **Toggle Bu
               size: "small",
               contentType: "imageboth",
               showRoundedCorner: true,
-              defaultPrefixIcon: "e-mediaforward e-uiLight",
-              activePrefixIcon: "e-mediaback e-uiLight",
-              defaultSuffixIcon: "e-undo e-uiLight",
-              activeSuffixIcon: "e-redo e-uiLight"
+              defaultPrefixIcon: "e-mediaforward e-icon",
+              activePrefixIcon: "e-mediaback e-icon",
+              defaultSuffixIcon: "e-undo e-icon",
+              activeSuffixIcon: "e-redo e-icon"
           });
           $("#toggle_textandimage_small").ejToggleButton({
               size: "small",
@@ -520,19 +520,19 @@ In the **HTML** page, add the following button elements to configure **Toggle Bu
               showRoundedCorner: true,
               defaultText: "Play",
               activeText: "Next",
-              defaultPrefixIcon: "e-mediaplay e-uiLight",
-              activePrefixIcon: "e-mediapause e-uiLight"
+              defaultPrefixIcon: "e-mediaplay e-icon",
+              activePrefixIcon: "e-mediapause e-icon"
           });
           $("#toggle_imagetextimage_small").ejToggleButton({
               size: "small",
               contentType: "imagetextimage",
               showRoundedCorner: true,
-              defaultPrefixIcon: "e-mediaforward e-uiLight",
-              activePrefixIcon: "e-mediaback e-uiLight",
+              defaultPrefixIcon: "e-mediaforward e-icon",
+              activePrefixIcon: "e-mediaback e-icon",
               defaultText: "forward",
               activeText: "backward",
-              defaultSuffixIcon: "e-undo e-uiLight",
-              activeSuffixIcon: "e-redo e-uiLight"
+              defaultSuffixIcon: "e-undo e-icon",
+              activeSuffixIcon: "e-redo e-icon"
           });
       });
 
@@ -681,8 +681,8 @@ In the **HTML** page, add the following button elements to configure **Toggle Bu
             showRoundedCorner: true,
             defaultText: "Play",
             activeText: "Next",
-            defaultPrefixIcon: "e-mediaplay e-uiLight",
-            activePrefixIcon: "e-mediapause e-uiLight"
+            defaultPrefixIcon: "e-mediaplay e-icon",
+            activePrefixIcon: "e-mediapause e-icon"
         });
         $("#toggle_imageleft_mini").ejToggleButton({
             size: "mini",
@@ -691,8 +691,8 @@ In the **HTML** page, add the following button elements to configure **Toggle Bu
             showRoundedCorner: true,
             defaultText: "Play",
             activeText: "Next",
-            defaultPrefixIcon: "e-mediaplay e-uiLight",
-            activePrefixIcon: "e-mediapause e-uiLight"
+            defaultPrefixIcon: "e-mediaplay e-icon",
+            activePrefixIcon: "e-mediapause e-icon"
         });
         $("#toggle_imageleft_small").ejToggleButton({
             size: "small",
@@ -701,8 +701,8 @@ In the **HTML** page, add the following button elements to configure **Toggle Bu
             showRoundedCorner: true,
             defaultText: "Play",
             activeText: "Next",
-            defaultPrefixIcon: "e-mediaplay e-uiLight",
-            activePrefixIcon: "e-mediapause e-uiLight"
+            defaultPrefixIcon: "e-mediaplay e-icon",
+            activePrefixIcon: "e-mediapause e-icon"
         });
         $("#toggle_imageleft_medium").ejToggleButton({
             size: "medium",
@@ -711,8 +711,8 @@ In the **HTML** page, add the following button elements to configure **Toggle Bu
             showRoundedCorner: true,
             defaultText: "Play",
             activeText: "Next",
-            defaultPrefixIcon: "e-mediaplay e-uiLight",
-            activePrefixIcon: "e-mediapause e-uiLight"
+            defaultPrefixIcon: "e-mediaplay e-icon",
+            activePrefixIcon: "e-mediapause e-icon"
         });
         $("#toggle_imageleft_large").ejToggleButton({
             size: "large",
@@ -721,8 +721,8 @@ In the **HTML** page, add the following button elements to configure **Toggle Bu
             showRoundedCorner: true,
             defaultText: "Play",
             activeText: "Next",
-            defaultPrefixIcon: "e-mediaplay e-uiLight",
-            activePrefixIcon: "e-mediapause e-uiLight"
+            defaultPrefixIcon: "e-mediaplay e-icon",
+            activePrefixIcon: "e-mediapause e-icon"
         });
         $("#toggle_imageright_normal").ejToggleButton({
             size: "normal",
@@ -731,8 +731,8 @@ In the **HTML** page, add the following button elements to configure **Toggle Bu
             showRoundedCorner: true,
             defaultText: "Play",
             activeText: "Next",
-            defaultPrefixIcon: "e-mediaplay e-uiLight",
-            activePrefixIcon: "e-mediapause e-uiLight"
+            defaultPrefixIcon: "e-mediaplay e-icon",
+            activePrefixIcon: "e-mediapause e-icon"
         });
         $("#toggle_imageright_mini").ejToggleButton({
             size: "mini",
@@ -741,8 +741,8 @@ In the **HTML** page, add the following button elements to configure **Toggle Bu
             showRoundedCorner: true,
             defaultText: "Play",
             activeText: "Next",
-            defaultPrefixIcon: "e-mediaplay e-uiLight",
-            activePrefixIcon: "e-mediapause e-uiLight"
+            defaultPrefixIcon: "e-mediaplay e-icon",
+            activePrefixIcon: "e-mediapause e-icon"
         });
         $("#toggle_imageright_small").ejToggleButton({
             size: "small",
@@ -751,8 +751,8 @@ In the **HTML** page, add the following button elements to configure **Toggle Bu
             showRoundedCorner: true,
             defaultText: "Play",
             activeText: "Next",
-            defaultPrefixIcon: "e-mediaplay e-uiLight",
-            activePrefixIcon: "e-mediapause e-uiLight"
+            defaultPrefixIcon: "e-mediaplay e-icon",
+            activePrefixIcon: "e-mediapause e-icon"
         });
         $("#toggle_imageright_medium").ejToggleButton({
             size: "medium",
@@ -761,8 +761,8 @@ In the **HTML** page, add the following button elements to configure **Toggle Bu
             showRoundedCorner: true,
             defaultText: "Play",
             activeText: "Next",
-            defaultPrefixIcon: "e-mediaplay e-uiLight",
-            activePrefixIcon: "e-mediapause e-uiLight"
+            defaultPrefixIcon: "e-mediaplay e-icon",
+            activePrefixIcon: "e-mediapause e-icon"
         });
         $("#toggle_imageright_large").ejToggleButton({
             size: "large",
@@ -771,8 +771,8 @@ In the **HTML** page, add the following button elements to configure **Toggle Bu
             showRoundedCorner: true,
             defaultText: "Play",
             activeText: "Next",
-            defaultPrefixIcon: "e-mediaplay e-uiLight",
-            activePrefixIcon: "e-mediapause e-uiLight"
+            defaultPrefixIcon: "e-mediaplay e-icon",
+            activePrefixIcon: "e-mediapause e-icon"
         });
         $("#toggle_imagetop").ejToggleButton({
             imagePosition: "imagetop",
@@ -780,8 +780,8 @@ In the **HTML** page, add the following button elements to configure **Toggle Bu
             showRoundedCorner: true,
             defaultText: "Play",
             activeText: "Next",
-            defaultPrefixIcon: "e-mediaplay e-uiLight",
-            activePrefixIcon: "e-mediapause e-uiLight",
+            defaultPrefixIcon: "e-mediaplay e-icon",
+            activePrefixIcon: "e-mediapause e-icon",
             width: 60
         });
         $("#toggle_imagebottom").ejToggleButton({
@@ -790,8 +790,8 @@ In the **HTML** page, add the following button elements to configure **Toggle Bu
             showRoundedCorner: true,
             defaultText: "Play",
             activeText: "Next",
-            defaultPrefixIcon: "e-mediaplay e-uiLight",
-            activePrefixIcon: "e-mediapause e-uiLight",
+            defaultPrefixIcon: "e-mediaplay e-icon",
+            activePrefixIcon: "e-mediapause e-icon",
             width: 60
         });
     });
@@ -896,8 +896,8 @@ In the **HTML** page, add the following button elements to configure **Toggle Bu
             contentType: "textandimage",
             defaultText: "Play",
             activeText: "Next",
-            defaultPrefixIcon: "e-mediaplay e-uiLight",
-            activePrefixIcon: "e-mediapause e-uiLight"
+            defaultPrefixIcon: "e-mediaplay e-icon",
+            activePrefixIcon: "e-mediapause e-icon"
 
         });
         $("#toggle_customCss2").ejToggleButton({
@@ -907,8 +907,8 @@ In the **HTML** page, add the following button elements to configure **Toggle Bu
             contentType: "textandimage",
             defaultText: "Play",
             activeText: "Next",
-            defaultPrefixIcon: "e-mediaplay e-uiLight",
-            activePrefixIcon: "e-mediapause e-uiLight"
+            defaultPrefixIcon: "e-mediaplay e-icon",
+            activePrefixIcon: "e-mediapause e-icon"
 
         });
         $("#toggle_customCss3").ejToggleButton({
@@ -918,8 +918,8 @@ In the **HTML** page, add the following button elements to configure **Toggle Bu
             contentType: "textandimage",
             defaultText: "Play",
             activeText: "Next",
-            defaultPrefixIcon: "e-mediaplay e-uiLight",
-            activePrefixIcon: "e-mediapause e-uiLight"
+            defaultPrefixIcon: "e-mediaplay e-icon",
+            activePrefixIcon: "e-mediapause e-icon"
 
         });
         $("#toggle_customCss4").ejToggleButton({
@@ -929,8 +929,8 @@ In the **HTML** page, add the following button elements to configure **Toggle Bu
             contentType: "textandimage",
             defaultText: "Play",
             activeText: "Next",
-            defaultPrefixIcon: "e-mediaplay e-uiLight",
-            activePrefixIcon: "e-mediapause e-uiLight"
+            defaultPrefixIcon: "e-mediaplay e-icon",
+            activePrefixIcon: "e-mediapause e-icon"
 
         });
         $("#toggle_customCss5").ejToggleButton({
@@ -940,8 +940,8 @@ In the **HTML** page, add the following button elements to configure **Toggle Bu
             contentType: "textandimage",
             defaultText: "Play",
             activeText: "Next",
-            defaultPrefixIcon: "e-mediaplay e-uiLight",
-            activePrefixIcon: "e-mediapause e-uiLight"
+            defaultPrefixIcon: "e-mediaplay e-icon",
+            activePrefixIcon: "e-mediapause e-icon"
 
         });
     });

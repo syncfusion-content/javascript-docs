@@ -34,7 +34,7 @@ Also in the button sample, you can use the icon class names as follows,
 
     $("#buttonid").ejButton({
         contentType: "imageonly",
-        prefixIcon: "e-handup"
+        prefixIcon: "e-icon e-handup"
     });
 
 {% endhighlight %}
