@@ -16,9 +16,8 @@ You need to use [`print()`](http://helpjs.syncfusion.com/api/js/ejgrid#methods:p
 <script type="text/javascript">
   $("#Grid").ejGrid(
   // the datasource "window.gridData" is referred from jsondata.min.js
- 	 dataSource: window.gridData,
-  	toolbarSettings:{ showToolbar: true},
-  	toolbarItems: [ej.Grid.ToolBarItems.PrintGrid],
+ 	dataSource: window.gridData,
+  	toolbarSettings:{showToolbar: true,toolbarItems: [ej.Grid.ToolBarItems.PrintGrid]},
   	allowPaging: true,
   	columns: 
   		[
