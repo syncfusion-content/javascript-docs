@@ -22,9 +22,7 @@ Undo reverses the last action you performed with spreadsheet. You can do this by
 
 ## Redo the action
 
-Redo Undoes the last undo action you performed with spreadsheet. You can do this by following ways.
+Redo reverses the last undo action you performed with spreadsheet. You can do this by following ways.
 
 * Use Redo button of HOME tab in ribbon.
 * Use Ctrl + Y key.
-
-N> All the features in spreadsheet have Undo Redo support.
