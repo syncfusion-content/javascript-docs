@@ -219,7 +219,7 @@ Yes, we can capture the ctrl + s keypress inside Rich Text Editor. To achieve th
 
 ## Save the content of RichTextEditor control automatically when the control loses its focus 
 
-This can be achieved by binding the click event to the iframe element. Also we need to bind document click event for capture the iframe focus out. Since focusout and blur events cannot be cached within the iframe, when we click the document we can get the HTML string from the RTE instance to save it. Please refer the below code.
+This can be achieved by binding the click event to the iframe element. Also we need to bind document click event for capture the iframe focus out. Since `focusout` and blur events cannot be cached within the iframe, when we click the document we can get the HTML string from the RTE instance to save it. Please refer the below code.
 
 1.	Render the RTE control
 
