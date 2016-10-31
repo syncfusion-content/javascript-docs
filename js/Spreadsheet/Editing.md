@@ -95,7 +95,7 @@ function loadComplete(args) {
 }
 {% endhighlight %}
 
-The following output is displayed as a result of editing in Spredsheet which is rendered with above code example.
+The following output is displayed as a result of editing in Spreadsheet which is rendered with above code example.
 
 ![](Editing_images/Editing_img2.png)
 
