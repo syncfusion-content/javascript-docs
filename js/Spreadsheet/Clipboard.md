@@ -9,33 +9,31 @@ documentation: ug
 
 # Clipboard
 
-The Spreadsheet provides support for the clipboard operations (cut, copy, and paste) in all text, chart and images. You can use [`allowClipboard`](https://help.syncfusion.com/api/js/ejspreadsheet#members:allowclipboard "allowClipboard") property to enable/disable this feature. You have following clipboard operations.
-
-* Cut
-* Copy
-* Paste
+The Spreadsheet provides support for the clipboard operations (cut, copy, and paste) in all text, chart and images.
 
 ## Cut
 
-This function takes the back up of selected range values and removed from the selected range.
+This function cuts the selected range values and make it available in clipboard.
 
 You can do this by one of the following ways. 
 
-* By pressing "Ctrl-X" or using Cut button of HOME tab in ribbon to perform cut operation.
+* Using "Ctrl-X" key.
+* Using Cut button of HOME tab in ribbon to perform cut operation.
 * Using [`cut`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlclipboard-cut "cut") method.
 
 ## Copy
 
-This function takes the back up of selected range values.
+This function copies the selected range values and make it available in clipboard.
 
 You can do this by one of the following ways. 
 
-* By pressing "Ctrl-C" or using Copy button of HOME tab in ribbon to perform copy operation.
+* Using "Ctrl-C" key.
+* Using Copy button of HOME tab in ribbon to perform copy operation.
 * Using [`copy`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlclipboard-copy "copy") method.
 
 ## Paste
 
-This function pastes the content from the back up storage to newly selected range and clears the back up storage. 
+This function pastes the clipboard content to newly selected range. If you perform cut paste, clipboard contents are cleared whereas in copy paste the clipboard contents are maintained. 
 
 You have following options in Paste.
 
@@ -46,7 +44,8 @@ N> The default paste option is Paste Special. This is working only within the cu
 
 You can do this by one of the following ways,
 
-* By pressing "Ctrl-V" or using Paste button of HOME tab in ribbon to perform paste operation.
+* Using "Ctrl-V" key.
+* Using Paste button of HOME tab in ribbon to perform paste operation.
 * Using [`paste`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlclipboard-paste "paste") method.
 
 The following code example describes the above behavior.
