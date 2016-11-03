@@ -9,44 +9,15 @@ documentation: ug
 
 # Clipboard
 
-A clipboard is a temporary storage area for data that the user wants to copy from one place to another. When the user copies the selected content, it's stored in the clipboard buffer until it's pasted. 
-
-You can use [`allowClipboard`](https://help.syncfusion.com/api/js/ejspreadsheet#members:allowclipboard "allowClipboard") property to enable/disable this feature. You have following clipboard operations.
+The Spreadsheet provides support for the clipboard operations (cut, copy, and paste) in all text, chart and images. You can use [`allowClipboard`](https://help.syncfusion.com/api/js/ejspreadsheet#members:allowclipboard "allowClipboard") property to enable/disable this feature. You have following clipboard operations.
 
 * Cut
 * Copy
 * Paste
 
-The following code example describes the above behavior.
-
-{% highlight html %}
-<div id="Spreadsheet"></div>
-{% endhighlight %}
-
-{% highlight javascript %}
-$(function () {
-    $("#Spreadsheet").ejSpreadsheet({
-        // the datasource "window.defaultData" is referred from 'http://js.syncfusion.com/demos/web/scripts/xljsondata.min.js'
-        sheets: [{
-            rangeSettings: [{ dataSource: window.defaultData, startCell: "A1" }],                               
-        }],
-        allowClipboard: true,
-        loadComplete: "loadComplete"
-    });
-});
-function loadComplete() {
-    var xlClip = this.XLObj.XLClipboard;
-    this.XLObj.performSelection("A1:C3");
-}
-{% endhighlight %}
-
-The following output is displayed as a result of the above code example.
-
-![](Clipboard_images/Clipboard_img1.png)
-
 ## Cut
 
-This function removes the currently selected text and places it on the clipboard. The clipboard is a temporary storage for the last item you've cut.
+This function takes the back up of selected range values and removed from the selected range.
 
 You can do this by one of the following ways. 
 
@@ -55,7 +26,7 @@ You can do this by one of the following ways.
 
 ## Copy
 
-This function copies the currently selected text and places it on the clipboard. The clipboard is a temporary storage for the last item you've copied.
+This function takes the back up of selected range values.
 
 You can do this by one of the following ways. 
 
@@ -64,12 +35,14 @@ You can do this by one of the following ways.
 
 ## Paste
 
-This function pastes the content from the clipboard to somewhere else and clears the clipboard. You have following options in Paste.
+This function pastes the content from the back up storage to newly selected range and clears the back up storage. 
+
+You have following options in Paste.
 
 * Paste Special - You can paste the values with formatting.
 * Paste - You can paste only the values.
 
-N> The default paste option is Paste Special.
+N> The default paste option is Paste Special. This is working only within the current Spreadsheet. If you copy the content from other sources, it will paste only the values in the Spreadsheet.
 
 You can do this by one of the following ways,
 
@@ -95,7 +68,7 @@ $(function () {
 });
 function loadComplete() {
     var xlClip = this.XLObj.XLClipboard;
-    this.XLObj.performSelection("A1:C3");
+    this.XLObj.performSelection("G1:H3");
     xlClip.cut(); // Cut the selected cells
     //xlClip.copy();//Copy the selected cells.
     this.XLObj.performSelection("J4");
