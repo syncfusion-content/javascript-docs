@@ -119,11 +119,11 @@ N> Spreadsheet supports basic number format customization and it doesn't have al
 
 ## Text Formatting
 
-To organise and easier to follow your financial, statistical or scientific data, you can apply text formats like font size, font color, text alignment etc. to a cell or range of cells.
+To organize and easier to follow your financial, statistical or scientific data, you can apply text formats like font size, font color, text alignment etc. to a cell or range of cells.
 
 ### Fonts
 
-To distinguish your data from build-in font formats, you can apply different font formats like bold, italic, strike-through, color, font-family and size etc.
+To distinguish your data from built-in font formats, you can apply different font formats like bold, italic, strike-through, color, font-family and size etc.
 
 ### Text alignment
 
