@@ -22,7 +22,7 @@ For more information, refer the official electron page in this [link](http://ele
 
 Prerequisites
 
-While runningthe electron it requires[Node.js](https://nodejs.org/en/download/)(which includes[npm](https://npmjs.org/)) on your system.
+While running the electron it requires[Node.js](https://nodejs.org/en/download/)(which includes[npm](https://npmjs.org/)) on your system.
 
 Compatibility
 
@@ -38,7 +38,7 @@ Both x86 and amd64 (x64) binaries are provided for Windows and it is not sup
 
 ## Using Syncfusion Essential JS controls with Electron Framework:
 
-This step by step guide is used to create a combination of Essential JS UI controls with Electron framework. 
+This step by step guide is used to create a combination of Essential JS UI controls with Electron Framework. 
 
 
 
@@ -52,7 +52,7 @@ This step by step guide is used to create a combination of Essential JS UI contr
 
 Step1:
 
-To clone and run this repository need[Git](https://git-scm.com/)and[Node.js](https://nodejs.org/en/download/)(which comes with[npm](http://npmjs.com/)) installed on your system, then enter the below command line using terminal (Mac OS) with administrator mode($sudo prefix) or Command Prompt (Windows).
+To clone and run this repository need[Git](https://git-scm.com/) and [Node.js](https://nodejs.org/en/download/)(which comes with[npm](http://npmjs.com/)) installed on your system, then enter the below command line using terminal (Mac OS) with administrator mode($sudo prefix) or Command Prompt (Windows).
 
 
 
@@ -151,7 +151,7 @@ Add the below sample code in index.html file to render Accordion control.
 <table>
 <tr>
 <td>
-    <h1 style="text-align: center;">Essential JS-Electron Demo</h1>    &lt;div id="accordion" style="margin: auto;"&gt;        &lt;h3&gt;            <a href="#">ASP.NET</a>&lt;/h3&gt;        &lt;div&gt;            Microsoft ASP.NET is a set of technologies in the Microsoft .NET Framework for building Web applications and XML Web services. ASP.NET pages execute on the server and generate markup such as HTML, WML, or XML that is sent to a desktop or mobile browser.        &lt;/div&gt;        &lt;h3&gt;            <a href="#">ASP.NET MVC</a>&lt;/h3&gt;        &lt;div&gt;            The Model-View-Controller (MVC) architectural pattern separates an application into three main components: the model, the view, and the controller. The ASP.NET MVC framework provides an alternative to the ASP.NET Web Forms pattern for creating Web applications.        &lt;/div&gt;        &lt;h3&gt;            <a href="#">Javascript</a>&lt;/h3&gt;        &lt;div&gt;            JavaScript (JS) is an interpreted computer programming language.                        It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed.        &lt;/div&gt;    &lt;/div&gt;</td></tr>
+    <h1 style="text-align: center;">Essential JS-Electron Demo</h1>    &lt;div id="accordion" style="margin: auto;"&gt;        &lt;h3&gt;            <a href="#">ASP.NET</a>&lt;/h3&gt;        &lt;div&gt;            Microsoft ASP.NET is a set of technologies in the Microsoft .NET Framework for building Web applications and XML Web services. ASP.NET pages execute on the server and generate markup such as HTML, WML, or XML that is sent to a desktop or mobile browser.        &lt;/div&gt;        &lt;h3&gt;            <a href="#">ASP.NET MVC</a>&lt;/h3&gt;        &lt;div&gt;            The Model-View-Controller (MVC) architectural pattern separates an application into three main components: the model, the view, and the controller. The ASP.NET MVC Framework provides an alternative to the ASP.NET Web Forms pattern for creating Web applications.        &lt;/div&gt;        &lt;h3&gt;            <a href="#">JavaScript</a>&lt;/h3&gt;        &lt;div&gt;            JavaScript (JS) is an interpreted computer programming language.                        It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed.        &lt;/div&gt;    &lt;/div&gt;</td></tr>
 <tr>
 <td>
 </td></tr>
