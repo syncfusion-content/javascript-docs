@@ -81,6 +81,42 @@ In the below specified location, you can find the dependent script files. Copy a
 
 <b>(installed location)</b>\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets\external 
 
+#### Supported jQuery Versions
+
+There will be some cases when a new jQuery version is released. This new version may be introduces a breaking changes and it would not be compatible with the existing EJ versions. In such scenarios, it is recommended that you use the previous jQuery version until the next official EJ version which resolves the problem is released. Normally, the jQuery version that is shipped with our packages is not changed, but is updated in major releases.
+
+The following list provides jQuery compatibility information
+
+<table class="props">
+<thead>
+<tr>
+<th>EJ Versions</th>
+<th>Compatible jQuery Versions</th>
+<th>Comments</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+
+<td class="ejversion">14.3.0.49 and higher versions</td>
+<td class="jqueryversion">compatible with 1.7.1, 1.8.x, 1.9.x, 1.10.x, 1.11.x, 1.12.x, 2.x, 3.0.0, 3.1.0</td>
+<td class="comments">Provided the support for jQuery-3.0.0 from this ej version onwards. jQuery version >= 3.0.0 are incompatible with ejversion <= 14.2.x.x</td>
+</tr>
+<tr>
+
+<td class="ejversion">13.2.0.29 and higher versions</td>
+<td class="jqueryversion">compatible with 1.7.1, 1.8.x, 1.9.x, 1.10.x, 1.11.x, 1.12.x, 2.x</td>
+<td class="comments">Provided the support for jQuery-2.1.4 from this ej version onwards. jQuery version >= 2.1.4 are incompatible with ejversion <= 13.1.x.x</td>
+</tr>
+<tr>
+
+<td class="ejversion">13.1.x.x and lower versions</td>
+<td class="jqueryversion">compatible with 1.7.1, 1.8.x, 1.9.x, 1.10.x, 1.11.x, 1.12.x, 2.0.x, 2.1.1, 2.1.2, 2.1.3</td>
+<td class="comments">-</td>
+</tr>
+</tbody>
+</table>
+
 Apart from the above dependent scripts, you need to refer the **ej.web.all.min.js** file, which contains all the JavaScript components script and globalize library packed together in a minified format.
 
 N> Syncfusion recommends not to use this file in the production environment as it contains all the controls and size will be huge. Please use our [Custom Script Generator](/js/include-only-the-needed-widgets) to generate only the needed scripts for the controls you have used in your application before going into production.
