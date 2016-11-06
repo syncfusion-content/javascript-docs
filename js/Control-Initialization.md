@@ -83,39 +83,47 @@ In the below specified location, you can find the dependent script files. Copy a
 
 #### Supported jQuery Versions
 
-There will be some cases when a new jQuery version is released. This new version may be introduces a breaking changes and it would not be compatible with the existing EJ versions. In such scenarios, it is recommended that you use the previous jQuery version until the next official EJ version which resolves the problem is released. Normally, the jQuery version that is shipped with our packages is not changed, but is updated in major releases.
-
-The following list provides jQuery compatibility information
+The following table provides jQuery compatibility information.
 
 <table class="props">
 <thead>
 <tr>
-<th>EJ Versions</th>
-<th>Compatible jQuery Versions</th>
-<th>Comments</th>
+<th colspan="2">EJ Versions</th>
+<th colspan="2">Compatible jQuery Versions</th>
+</tr>
+<tr>
+<th>From</th>
+<th>To</th>
+<th>From</th>
+<th>To</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-
-<td class="ejversion">14.3.0.49 and higher versions</td>
-<td class="jqueryversion">compatible with 1.7.1, 1.8.x, 1.9.x, 1.10.x, 1.11.x, 1.12.x, 2.x, 3.0.0, 3.1.0</td>
-<td class="comments">Provided the support for jQuery-3.0.0 from this ej version onwards. jQuery version >= 3.0.0 are incompatible with ejversion <= 14.2.x.x</td>
+<td class="frmejversion">14.3.0.49</td>
+<td class="toejversion">14.3.0.52</td>
+<td class="fromjqueryversion">1.7.1</td>
+<td class="tojqueryversion">3.1.0</td>
 </tr>
-<tr>
 
-<td class="ejversion">13.2.0.29 and higher versions</td>
-<td class="jqueryversion">compatible with 1.7.1, 1.8.x, 1.9.x, 1.10.x, 1.11.x, 1.12.x, 2.x</td>
-<td class="comments">Provided the support for jQuery-2.1.4 from this ej version onwards. jQuery version >= 2.1.4 are incompatible with ejversion <= 13.1.x.x</td>
+<tr>
+<td class="frmejversion">13.2.0.29</td>
+<td class="toejversion">14.2.0.32</td>
+<td class="fromjqueryversion">1.7.1</td>
+<td class="tojqueryversion">2.2.4</td>
 </tr>
-<tr>
 
-<td class="ejversion">13.1.x.x and lower versions</td>
-<td class="jqueryversion">compatible with 1.7.1, 1.8.x, 1.9.x, 1.10.x, 1.11.x, 1.12.x, 2.0.x, 2.1.1, 2.1.2, 2.1.3</td>
-<td class="comments">-</td>
+<tr>
+<td class="frmejversion">lower version</td>
+<td class="toejversion">13.1.0.30</td>
+<td class="fromjqueryversion">1.7.1</td>
+<td class="tojqueryversion">2.1.3</td>
 </tr>
 </tbody>
 </table>
+
+> jQuery-2.1.4, jQuery-3.0.0 support has been given from ejVersion 13.2.0.29, 14.3.0.49 onwards respectively.
 
 Apart from the above dependent scripts, you need to refer the **ej.web.all.min.js** file, which contains all the JavaScript components script and globalize library packed together in a minified format.
 
