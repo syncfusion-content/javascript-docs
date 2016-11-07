@@ -81,6 +81,50 @@ In the below specified location, you can find the dependent script files. Copy a
 
 <b>(installed location)</b>\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets\external 
 
+#### Supported jQuery Versions
+
+The following table provides jQuery compatibility information.
+
+<table class="props">
+<thead>
+<tr>
+<th colspan="2">EJ Versions</th>
+<th colspan="2">Compatible jQuery Versions</th>
+</tr>
+<tr>
+<th>From</th>
+<th>To</th>
+<th>From</th>
+<th>To</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td class="fromejversion">14.3.0.49</td>
+<td class="toejversion">14.3.0.52</td>
+<td class="fromjqueryversion">1.7.1</td>
+<td class="tojqueryversion">3.1.0</td>
+</tr>
+
+<tr>
+<td class="fromejversion">13.2.0.29</td>
+<td class="toejversion">14.2.0.32</td>
+<td class="fromjqueryversion">1.7.1</td>
+<td class="tojqueryversion">2.2.4</td>
+</tr>
+
+<tr>
+<td class="fromejversion">lower version</td>
+<td class="toejversion">13.1.0.30</td>
+<td class="fromjqueryversion">1.7.1</td>
+<td class="tojqueryversion">2.1.3</td>
+</tr>
+</tbody>
+</table>
+
+> jQuery-2.1.4, jQuery-3.0.0 support has been given from ejVersion 13.2.0.29, 14.3.0.49 onwards respectively.
+
 Apart from the above dependent scripts, you need to refer the **ej.web.all.min.js** file, which contains all the JavaScript components script and globalize library packed together in a minified format.
 
 N> Syncfusion recommends not to use this file in the production environment as it contains all the controls and size will be huge. Please use our [Custom Script Generator](/js/include-only-the-needed-widgets) to generate only the needed scripts for the controls you have used in your application before going into production.
