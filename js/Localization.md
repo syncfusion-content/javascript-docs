@@ -46,7 +46,8 @@ Define the **locale** property which is applicable for all the Syncfusion compon
 
 $("#MyDatePicker").ejDatePicker({
      locale: "de-DE",
-     buttonText: "aujourd'hui"
+     watermarkText: "Datum auswählen",
+     buttonText: "heute"
 });   
 
 {% endhighlight %}
@@ -65,7 +66,7 @@ The date formats, day names and month names are automatically translated into th
 
 Refer the **JavaScript Control Initialization** document for creating a HTML page with Syncfusion components from the link [here](/js/control-initialization). The very first requirement to localize the DatePicker control into **de-DE** culture is to refer the **ej.culture.de-DE.min.js** file in your HTML application, which will be available in the location mentioned in the above note section.
 
-Define the **locale** property for the DatePicker control with the appropriate **culture-code [de-De]** as shown below,
+Define the **locale** property for the DatePicker control with the appropriate **culture-code [de-DE]** as shown below,
 
 {% highlight html %}
 
@@ -87,6 +88,7 @@ Define the **locale** property for the DatePicker control with the appropriate *
             // declaration of ejDatePicker
             $("#startDate").ejDatePicker({
                 locale: "de-DE",
+                watermarkText: "Datum auswählen",
                 buttonText: "heute"
             });
         });
@@ -105,7 +107,7 @@ Browse your HTML page in any of the web browser and now the screen will display 
 
 Define a dropdownlist control additionally in your HTML page along with the DatePicker control, to hold the required culture codes. When the user selects a particular culture code option from the dropdownlist, the datepicker will get localized appropriately based on the dynamic selection made – which is depicted in the below code.
 
-N>   In the below example, copy the culture files of **de-DE**, **vi-VN** and **fr-FR** into the **Scripts** folder of your application and refer it in the head section along with the other CSS and script references, so that the **locale** of the datepicker switches between the selected culture appropriately.
+N>   In the below example, copy the culture files of **vi-VN** and **fr-FR** into the **Scripts** folder of your application and refer it in the head section along with the other CSS and script references, so that the **locale** of the datepicker switches between the selected culture appropriately.
 
 
 {% highlight html %}
@@ -119,7 +121,6 @@ N>   In the below example, copy the culture files of **de-DE**, **vi-VN** and **
     <script src="Scripts/jquery-1.10.2.min.js"></script>
     <script src="Scripts/jsrender.min.js"></script>
     <script src="Scripts/ej/ej.web.all.min.js"></script>
-    <script src="Scripts/ej/i18n/ej.culture.de-DE.min.js"></script>
     <script src="Scripts/ej/i18n/ej.culture.vi-VN.min.js"></script>
     <script src="Scripts/ej/i18n/ej.culture.fr-FR.min.js"></script>
 </head>
@@ -136,8 +137,7 @@ N>   In the below example, copy the culture files of **de-DE**, **vi-VN** and **
         $(function () {
             // declaration of ejDatePicker
             $("#startDate").ejDatePicker({
-                locale: "de-DE",
-                buttonText: "heute"
+                locale: "fr-FR",
             });
 
             // declaration of ejDropDownList
@@ -153,13 +153,13 @@ N>   In the below example, copy the culture files of **de-DE**, **vi-VN** and **
             var datebject = $("#startDate").data("ejDatePicker");
             // localizable text
             if (args.value == "vi-VN") {
-                datebject.option({ buttonText: "Hôm nay" });
+                datebject.option({ watermarkText: "Chọn ngày", buttonText: "Hôm nay" });
             }
             else if (args.value == "fr-FR") {
-                datebject.option({ buttonText: "aujourd'hui" });
+                datebject.option({ watermarkText: "Sélectionner une date", buttonText: "aujourd'hui" });
             }
             else {
-                datebject.option({ buttonText: "Today" });
+                datebject.option({ watermarkText: "Select date", buttonText: "Today" });
             }
 
             // Setting the locale value dynamically for the datePicker
@@ -427,7 +427,8 @@ N> Add and refer the necessary **Scripts** and **Stylesheets** to your sample ap
             $(function () {
                 // initialization of ejDatePicker control with enableRTL property (Since the arabic script is the most widespread RTL writing system, therefore here we have showcased our datepicker control localized in one of the Arabic language.)
                 $("#startDate").ejDatePicker({ locale: "ar-DZ", 
-                      enableRTL: true,   
+                      enableRTL: true,
+                      watermarkText: "حدد تاريخ",
                       buttonText: "اليوم" 
                 });
             });
