@@ -101,21 +101,21 @@ The following table provides jQuery compatibility information.
 
 <tbody>
 <tr>
-<td class="frmejversion">14.3.0.49</td>
+<td class="fromejversion">14.3.0.49</td>
 <td class="toejversion">14.3.0.52</td>
 <td class="fromjqueryversion">1.7.1</td>
 <td class="tojqueryversion">3.1.0</td>
 </tr>
 
 <tr>
-<td class="frmejversion">13.2.0.29</td>
+<td class="fromejversion">13.2.0.29</td>
 <td class="toejversion">14.2.0.32</td>
 <td class="fromjqueryversion">1.7.1</td>
 <td class="tojqueryversion">2.2.4</td>
 </tr>
 
 <tr>
-<td class="frmejversion">lower version</td>
+<td class="fromejversion">lower version</td>
 <td class="toejversion">13.1.0.30</td>
 <td class="fromjqueryversion">1.7.1</td>
 <td class="tojqueryversion">2.1.3</td>
