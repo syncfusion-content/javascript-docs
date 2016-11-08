@@ -1,8 +1,18 @@
+---
+layout: post
+title: Getting Started for Electron
+description: How to use Essential JS with Electron.
+platform: js
+control: Introduction
+documentation: ug
+---
+
+
 # Electron 
 
 
 ## Introduction
-
+	
 
 
 Electron (Previously known as Atom Shell) is used create a cross platform desktop application for different OS like Linux, Windows and OS X by using JavaScript and able to achieve native API supports.
