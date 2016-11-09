@@ -76,7 +76,7 @@ This is in fact a common use case, especially when you may wish to break your co
 
 ### Multiple editor instances sharing same RTE properties 
 
-In the following example, the page is broken into two separate editable areas, each sharing the same RTE configuration. Each individual textarea is provided the same class of 'myEdit'. 
+In the following example, the page is broken into two separate editable areas, each sharing the same RTE configuration. Each individual `textarea` is provided the same class of 'myEdit'. 
 
 {% highlight html %}
 
