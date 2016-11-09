@@ -58,7 +58,7 @@ N> jQuery predefined error messages to that annotation attribute will be shown w
 
 When you initialize the RichTextEditor widget, it creates a text area hidden element which is used to store the value. Hence, the validation is performed based on the value stored in this hidden element.
 
-Required field, minlength, maxlength, minWordCount and maxWordCount values validation is demonstrated in the below given example.
+Required field, `minlength`, maxlength, minWordCount and maxWordCount values validation is demonstrated in the below given example.
 
 
 {% highlight html %}
