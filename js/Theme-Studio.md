@@ -131,3 +131,69 @@ Now, you can customize the Dialog control with your desired theme as shown below
 After customizing theme, you can export or download the customized theme files.
 
 ![](/js/ThemeStudio_images/Import-06.png)
+
+## How to use the generated CSS in your web application?
+
+Once download the customized theme from the theme studio, you can find the customized unminified/minified theme files in the downloaded folder as like below structure.
+
+![](/js/ThemeStudio_images/Generated-01.png)
+ 
+Refer these customized unminified/minified theme files into your application. The below section explains what are all the files required to refer and the steps to apply the customized theme in your application.
+
+**Step 1:**
+
+Create the following folders in the same structure under your application folder.
+
+** appfolder\Content\ej\{customized theme name} **
+
+**Step 2:**
+
+Copy the **common-images** folder from the installed location & **ej.widgets.core.min.css** file from the downloaded folder and paste into the **appfolder\Content\ej**.
+
+**Step 3:**
+
+After that copy **ej.theme.min.css** file from the downloaded folder and paste inside the customized theme folder.
+
+**Step 4:**
+
+Now refer the both files (**ej.widgets.core.min.css & ej.theme.min.css**) directly in the place of its reference in your application. 
+
+## How to generate the CSS from the downloaded LESS file?
+
+You can find the customized theme less files in the downloaded folder under below location. 
+
+![](/js/ThemeStudio_images/Less-01.png)
+
+You can choose any compiler which is available in local/online to generate the CSS from LESS such as dotless compiler, less2css etc. The below section explains how to generate the CSS from LESS using less2css compiler.
+
+**Step 1:**
+
+Install less with global access using npm
+
+   **npm install -g less**
+
+
+![](/js/ThemeStudio_images/Less-02.png)
+ 
+**Step 2:**
+
+Go to the less folder present in the custom theme downloaded folder. 
+
+**Step 3:**
+
+Open command prompt and run the below command. 
+
+   ** lessc {source less file name} {output css file name} **
+    
+   ** For example: lessc ej.theme.less output.css **
+   
+   
+![](/js/ThemeStudio_images/Less-03.png)
+
+**Step 4:**
+
+This will generate the CSS file with the given name “output.css”.
+
+![](/js/ThemeStudio_images/Less-04.png)
+
+You can manually edit the color code variables in this less (ej.theme.less) file to add more styling and compiled to CSS files.
