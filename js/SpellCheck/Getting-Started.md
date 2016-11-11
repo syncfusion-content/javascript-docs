@@ -122,7 +122,7 @@ It includes the service method path to find the error words and its suggestions 
 
 ### dictionaryUrl
 
-This property contains the service path details to trigger the server method to check the word is errornous or not. If errornous fetching the possible suggestions and returns the result. So, which is mandatory to perform the spellcheck.
+This property contains the service path details to trigger the server method to check the word is erroneous or not. If erroneous fetching the possible suggestions and returns the result. So, which is mandatory to perform the spellcheck.
 
 {% highlight html %}
 <!--Container for ejSpellCheck widget-->
@@ -131,7 +131,7 @@ This property contains the service path details to trigger the server method to 
 <script type="text/javascript">
 $(function() { // Document is ready    
     $("#SpellCheck").ejSpellCheck({
-        dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/GetWords"
+        dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/CheckWords"
     });
 });	
 </script>
@@ -139,7 +139,7 @@ $(function() { // Document is ready
 
 {% endhighlight %}
 
-### customdictionaryUrl
+### customDictionaryUrl
 
 This property contains the service path details to trigger the server method to add the custom word into the custom dictionary. So, which is mandatory to perform the add to dictionary spellcheck operation.
 
@@ -150,8 +150,8 @@ This property contains the service path details to trigger the server method to 
 <script type="text/javascript">
 $(function() { // Document is ready    
     $("#SpellCheck").ejSpellCheck({
-        dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/GetWords",
-        customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/GetCustomDictionary"
+        dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/CheckWords",
+        customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/AddToDictionary"
     });
 });	
 </script>
