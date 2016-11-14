@@ -19,7 +19,7 @@ The key features of the **PDF viewer** control are listed as follows:
 
 * Supports uploading PDF document into the server as byte array or as stream and supports displaying the same in the client.
 
-* Supports for viewing password protected/encrypted PDF documents.
+* Supports viewing password protected/encrypted PDF documents.
 
 * Supports customizing the default toolbar or creation of a toolbar as per the application requirements.
 
