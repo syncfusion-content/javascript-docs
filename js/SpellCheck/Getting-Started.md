@@ -131,7 +131,9 @@ This property contains the service path details to trigger the server method to 
 <script type="text/javascript">
 $(function() { // Document is ready    
     $("#SpellCheck").ejSpellCheck({
-        dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/CheckWords"
+        dictionarySettings: {
+            dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/CheckWords"
+        }
     });
 });	
 </script>
@@ -150,8 +152,10 @@ This property contains the service path details to trigger the server method to 
 <script type="text/javascript">
 $(function() { // Document is ready    
     $("#SpellCheck").ejSpellCheck({
-        dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/CheckWords",
-        customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/AddToDictionary"
+        dictionarySettings: {
+            dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/CheckWords",
+            customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/AddToDictionary"
+        }
     });
 });	
 </script>
