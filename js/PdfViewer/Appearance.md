@@ -36,5 +36,5 @@ By default, ‘flat-azure’ theme is applied to PDF viewer. You can change the 
 <link href="assets/css/web/gradient-saffron/ej.widgets.all.min.css" rel="stylesheet" type="text/css" />
 {% endhighlight %}
 The following screenshot shows the PDF viewer in ‘gradient-saffron’ theme.
-![](Appearance_images/Appearance_img1.jpeg)
+![](Appearance_images/Appearance_img1.png)
 
