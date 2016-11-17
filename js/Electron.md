@@ -70,13 +70,12 @@ To clone and run this repository need[Git](https://git-scm.com/) and [Node.js](h
 
 
 
-<table>
-<tr>
-<td>
+{% highlight text %}
+
 $ git clone <a href=https://github.com/electron/electron-quick-start>https://github.com/electron/electron-quick-start</a> 
-</td>
-</tr>
-</table>
+
+{% endhighlight %}
+
 
 
 
@@ -91,13 +90,12 @@ $ git clone <a href=https://github.com/electron/electron-quick-start>https://
 
 
 
-<table>
-<tr>
-<td>
+{% highlight text %}
+
 $ cd electron-quick-start 
-</td>
-</tr>
-</table>
+
+{% endhighlight %}
+
 
 
 ![](Electron-Getting-started\steps-to-add-the-sample-and-runthe-application_img2.png)
@@ -108,13 +106,12 @@ $ cd electron-quick-start 
 
 
 
-<table>
-<tr>
-<td>
+{% highlight text %}
+
 $ npm install 
-</td>
-</tr>
-</table>
+
+{% endhighlight %}
+
 
 
 ![](Electron-Getting-started\steps-to-add-the-sample-and-runthe-application_img3.png)
@@ -139,7 +136,6 @@ N> When refer jQuery reference add the below_ [code](http://electron.atom.io/do
 window.nodeRequire = require;        
 delete window.exports;        
 delete window.module;
-&lt;/script&gt;
 
 {% endhighlight %}
 
@@ -184,13 +180,11 @@ Run the Electron Application using the below command line.
 
 
 
-<table>
-<tr>
-<td>
+{% highlight text %}
+
 $ npm start 
-</td>
-</tr>
-</table>
+
+{% endhighlight %}
 
 
 
@@ -223,25 +217,21 @@ Use the below CLI to create Electron package for windows.
  i) Install Electron packager
 
 
-<table>
-<tr>
-<td>
+{% highlight text %}
+
 $ npm install electron-packager –g
-</td>
-</tr>
-</table>
+
+{% endhighlight %}
 
 
 ii) Package the application
 
 
-<table>
-<tr>
-<td>
+{% highlight text %}
+
 $ electron-packager ./ JS_Electron --platform=win32 --arch=ia32 ./JS_Electron
-</td>
-</tr>
-</table>
+
+{% endhighlight %}
 
 Now JS_Electron-win32-ia32 folder is created. Open the mentioned folder and JS_Electron.exe is the runnable Application file for the created Electron project. 
 
@@ -257,26 +247,23 @@ Use the below CLI to create Electron package for windows.
 i) Install Electron packager
 
 
-<table>
-<tr>
-<td>
+{% highlight text %}
+
 $ npm install electron-packager –g
-</td>
-</tr>
-</table>
+
+{% endhighlight %}
+
 
 
 
 ii) Package the application
 
 
-<table>
-<tr>
-<td>
+{% highlight text %}
+
 $ electron-packager ./ JS_Electron --platform=win32 --arch=ia32 ./JS_Electron
-</td>
-</tr>
-</table>
+
+{% endhighlight %}
 
 Now JS_Electron-win32-ia32 folder is created. Open the mentioned folder and JS_Electron.exe is the runnable Application file for the created Electron project. 
 
@@ -293,35 +280,32 @@ Use the below CLI to create Electron package in Mac OS(OS X).
 
 i) Install npm
 
-<table>
-<tr>
-<td>
+{% highlight text %}
+
 sudo npm install
-</td>
-</tr>
-</table>
+
+{% endhighlight %}
+
 
 
 ii) Install electron packager
 
-<table>
-<tr>
-<td>
+{% highlight text %}
+
 sudo npm install electron-packager -g
-</td>
-</tr>
-</table>
+
+{% endhighlight %}
 
 
 iii) Package the application
 
-<table>
-<tr>
-<td>
+{% highlight text %}
+
 sudo electron-packager ./ JS_Electron --platform=darwin ./JS_Electron
-</td>
-</tr>
-</table>
+
+{% endhighlight %}
+
+
 
 
 Now the Electron Application is created in the mentioned folder JS_Electron-darwin-x64.
