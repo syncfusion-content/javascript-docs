@@ -214,7 +214,7 @@ Bundle the Electron based application and make it as executable file by using[El
 
 Use the below CLI to create Electron package for windows.
 
- i) Install Electron packager
+ 1. Install Electron packager
 
 
 {% highlight text %}
@@ -224,7 +224,7 @@ $ npm install electron-packager –g
 {% endhighlight %}
 
 
-ii) Package the application
+2. Package the application
 
 
 {% highlight text %}
@@ -244,7 +244,7 @@ Now JS_Electron-win32-ia32 folder is created. Open the mentioned folder and JS_E
 
 Use the below CLI to create Electron package for windows.
 
-i) Install Electron packager
+1. Install Electron packager
 
 
 {% highlight text %}
@@ -256,7 +256,7 @@ $ npm install electron-packager –g
 
 
 
-ii) Package the application
+2. Package the application
 
 
 {% highlight text %}
@@ -278,7 +278,7 @@ Use the below CLI to create Electron package in Mac OS(OS X).
 
 
 
-i) Install npm
+1. Install npm
 
 {% highlight text %}
 
@@ -288,7 +288,7 @@ sudo npm install
 
 
 
-ii) Install electron packager
+2. Install electron packager
 
 {% highlight text %}
 
@@ -297,7 +297,7 @@ sudo npm install electron-packager -g
 {% endhighlight %}
 
 
-iii) Package the application
+3. Package the application
 
 {% highlight text %}
 
