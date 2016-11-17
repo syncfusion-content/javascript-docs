@@ -113,16 +113,13 @@ $(function() { // Document is ready
 });	
 </script>
 
-
 {% endhighlight %}
 
-## Dictionary Settings
+## Service Reference
 
-It includes the service method path to find the error words and its suggestions also adding the custom word into the custom dictionary.
+Assign the service method (CheckWords) path reference to the property [dictionaryUrl](https://help.syncfusion.com/api/js/ejspellcheck#members:dictionarysettings-dictionaryurl), which is mandatory to check the spelling of the word.
 
-### dictionaryUrl
-
-This property contains the service path details to trigger the server method to check the word is erroneous or not. If erroneous fetching the possible suggestions and returns the result. So, which is mandatory to perform the spellcheck.
+The CheckWords method will perform the splitting of target sentence into separate words and check each word is that an erroneous or not. If the word is erroneous fetching the possible suggestions for it and returns those details as a result. 
 
 {% highlight html %}
 <!--Container for ejSpellCheck widget-->
@@ -138,27 +135,39 @@ $(function() { // Document is ready
 });	
 </script>
 
+## Spell Checking
 
-{% endhighlight %}
+To spell check the content of the target element, you need to add one button and calling any one of the spellcheck method [showInDialog](https://help.syncfusion.com/api/js/ejspellcheck#methods:showindialog) or [validate](https://help.syncfusion.com/api/js/ejspellcheck#methods:validate) by clicking the button to highlight the error words.
 
-### customDictionaryUrl
-
-This property contains the service path details to trigger the server method to add the custom word into the custom dictionary. So, which is mandatory to perform the add to dictionary spellcheck operation.
+The following code example depicts that checking the spelling of the target element through the "validate" method.
 
 {% highlight html %}
-<!--Container for ejSpellCheck widget-->
-<div id="SpellCheck"></div>
-	
+
+<div id="TextArea">
+  It is a concept vehicle with Liuid Silver body colour, 20-inch wheels, fabric foding roof, electrically-controlled hood, 4-cylinder 2.0 TDI engine rated 204 PS (150 kW; 201 hp)
+  and 400  (295.02 lbf ft), diesel particulate filter and Bluetec emission control system, quattro permanent four-wheel drve system,
+  Audi S tronic dual-clutch gearbox, McPherson-strut front axle and a four-link rear axle, Audi drive select system with 3 modes (dynamic, sport, efficiency),
+  MMI control panel with touch pad and dual-view technology, sound system with the proinent extending tweeters.
+</div>
+<div>
+      <input type="button" id="SpellCheck"/>
+</div>
+    
 <script type="text/javascript">
-$(function() { // Document is ready    
-    $("#SpellCheck").ejSpellCheck({
-        dictionarySettings: {
-            dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/CheckWords",
-            customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/AddToDictionary"
-        }
-    });
-});	
+            $("#TextArea").ejSpellCheck({
+                 dictionarySettings: {
+                     dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/CheckWords",
+                     customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/AddToDictionary"
+                 }
+            });
+            $("#SpellCheck").ejButton({ width: "200px", height: "25px", click: "showInContextMenu", text: "Spell check" });
+            
+            function showInContextMenu() {
+                var spellObj = $("#TextArea").data("ejSpellCheck");
+                spellObj.validate(); // highlighting the error word in the target area itself
+            }
 </script>
 
-
 {% endhighlight %}
+
+You can find the sample to getting start with the spellchecker [here](http://jsplayground.syncfusion.com/Sync_5c5angwy), which is prepared by following the above steps.
