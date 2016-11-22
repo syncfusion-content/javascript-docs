@@ -259,7 +259,7 @@ namespace PDFViewerDemo
 
 Run the sample application and you can see the PDF Viewer on the page as displayed in the following screenshot.
 
-![](Getting-Started_images/Getting-Started_img5.jpeg)
+![](Getting-Started_images/Getting-Started_img5.png)
 
 **Destroy**
 

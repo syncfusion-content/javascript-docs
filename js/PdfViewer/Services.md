@@ -225,7 +225,7 @@ Collection of page number which contain annotation
 
 ### Description
 
-FileUploadPostAction loads the PDF document using file uploader into the PDF Viewer control.
+FileUploadPostAction loads the PDF document using fileuploader into the PDF Viewer control.
 
 ### URL
 
@@ -443,7 +443,7 @@ Collection of page number which contain annotation
 
 ### Description
 
-DocumentDownloadAction return the PDF document being displing in the PDF Viewer control as base64 string to the client side for downloading the same.
+DocumentDownloadAction returns the PDF document being displayed in the PDF viewer control as base64 string to the client side for downloading the same.
 
 ### URL
 
