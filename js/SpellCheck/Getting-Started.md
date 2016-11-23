@@ -134,6 +134,7 @@ $(function() { // Document is ready
     });
 });	
 </script>
+{% endhighlight %}
 
 ## Spell Checking
 
