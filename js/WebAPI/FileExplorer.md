@@ -9,7 +9,7 @@ keywords: fileexplorer, ejfileexplorer, syncfusion, fileexplorer webapi
 
 ## FileOperations
 
-<a>POST&nbsp;&nbsp;/Api/FileExplorer/FileOperations</a>
+[POST&nbsp;&nbsp;/Api/FileExplorer/FileOperations](http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations)
 
 It helps to handle the FileExplorer operations like Read, Upload, Download, GetDetails, Rename, Remove etc.
 
@@ -95,7 +95,7 @@ $.ajax({
     data: JSON.stringify({
         "Name": "",
         "ActionType": "Read",
-        "Path": "http://js.syncfusion.com/demos/ejServices/webapi/FileExplorer/FileBrowser/",
+        "Path": "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/Food/",
         "ExtensionsAllow": "*.png, *.gif, *.jpg, *.jpeg, *.docx",
         "LocationFrom": "",
         "LocationTo": "",
@@ -119,7 +119,7 @@ $.ajax({
 
 ## FileOperationsCors
 
-<a>GET&nbsp;&nbsp;/Api/FileExplorer/FileOperationsCors</a>
+[GET&nbsp;&nbsp;/Api/FileExplorer/FileOperationsCors](http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperationsCors)
 
 It helps to handle the FileExplorer operations in cross origin.
 
@@ -192,7 +192,7 @@ $.ajax({
         json: JSON.stringify({
             "Name": "",
             "ActionType": "Read",
-            "Path": "http://js.syncfusion.com/demos/ejServices/webapi/FileExplorer/FileBrowser/",
+            "Path": "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/Food/",
             "ExtensionsAllow": "*.png, *.gif, *.jpg, *.jpeg, *.docx",
             "LocationFrom": "",
             "LocationTo": "",

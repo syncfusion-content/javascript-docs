@@ -9,7 +9,7 @@ keywords: ejPredictiveAnalysis,PredictiveAnalysis, syncfusion, PredictiveAnalysi
 
 ## Load
 
-<a>POST&nbsp;&nbsp;/Api/PredictiveAnalytics/Load</a>
+[POST&nbsp;&nbsp;/Api/PredictiveAnalytics/Load](http://js.syncfusion.com/demos/ejServices/api/PredictiveAnalytics/Load)
 
 ### URL parameters
 

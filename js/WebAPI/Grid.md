@@ -7,9 +7,9 @@ platform: js-webapi
 keywords: grid, ejGrid, syncfusion, grid webapi
 ---
 
-## Northwind Data Service
+## NorthwindDataService
 
-<a href="http://js.syncfusion.com/demos/ejservices/wcf/northwind.svc/">GET&nbsp;&nbsp;/wcf/northwind.svc</a>
+[GET&nbsp;&nbsp;/wcf/northwind.svc](http://js.syncfusion.com/demos/ejservices/Wcf/Northwind.svc)
 
 It is used to retrieve the records from the tables like `Orders` and `Customers` in `Northwind data service`.
 
@@ -64,7 +64,7 @@ Response (JSON):
         
 ## ExcelExport
 
-<a>POST&nbsp;&nbsp;/Api/Grid/ExcelExport</a>
+[POST&nbsp;&nbsp;/Api/Grid/ExcelExport](http://js.syncfusion.com/demos/ejservices/api/Grid/ExcelExport)
 
 It is used to export the Grid data in Excel.
 
@@ -90,7 +90,8 @@ Essential Grid Excel-Exporting in javascript
          },
          toolbarClick: function (e) {
          this.exportGrid = this["export"];
-         if (e.itemName == "Excel Export") {                  										this.exportGrid('http://js.syncfusion.com/demos/ejservices/api/Grid/ExcelExport')
+         if (e.itemName == "Excel Export") {              
+         this.exportGrid('http://js.syncfusion.com/demos/ejservices/api/Grid/ExcelExport')
          e.cancel = true;
          }
          },
@@ -116,7 +117,7 @@ Essential Grid Excel-Exporting in C#
         
 ## PdfExport
 
-<a>POST&nbsp;&nbsp;/Api/Grid/PdfExport</a>
+[POST&nbsp;&nbsp;/Api/Grid/PdfExport](http://js.syncfusion.com/demos/ejservices/api/Grid/PdfExport)
 
 It is used to export the Grid data in PDF.
 
@@ -168,7 +169,7 @@ public void ExportToPdf(string GridModel)
         
 ## WordExport
 
-<a>POST&nbsp;&nbsp;/Api/Grid/WordExport</a>
+[POST&nbsp;&nbsp;/Api/Grid/WordExport](http://js.syncfusion.com/demos/ejservices/api/Grid/WordExport)
 
 It is used to export the Grid data in Word.
 
@@ -218,5 +219,135 @@ Essential Grid Word-Exporting in C#
 
 >The above example shows that the Grid data has been exported in Word file.
 
+## Get
+
+[GET&nbsp;&nbsp;Api/Grid/Get](http://js.syncfusion.com/demos/ejservices/api/Grid/Get)
+
+It is used to get the dataSource from Northwind dataSource.
+
+### URL parameters
+
+|  Parameter |  Description | 
+|---|---|
+|  $top | Returns only the first n results| 
+|  $skip | Used to skip the first n results| 
+
+### Response information 
+
+Code: 200
+
+Content-Type: application/json;odata=verbose;charset=utf-8
+
+Response (JSON):   
+
+```javascript
+{
+"__metadata":
+
+{"id":"http://js.syncfusion.com/demos/ejservices/Wcf/Northwind.svc/Orders(10248)",
+"uri":"http://js.syncfusion.com/demos/ejservices/Wcf/Northwind.svc/Orders(10248)",
+"type":"EJServices.Models.Order"},
+
+"Customer":
+{"__deferred":{"uri":"http://js.syncfusion.com/demos/ejservices/Wcf/Northwind.svc/Orders(10248)/Customer"}},
+
+"OrderID":10248,
+"CustomerID":"VINET",
+"EmployeeID":5,
+"OrderDate":"\/Date(836438400000)\/",
+"RequiredDate":"\/Date(838857600000)\/",
+"ShippedDate":"\/Date(837475200000)\/",
+"ShipVia":3,
+"Freight":"32.3800",
+"ShipName":"Vins et alcools Chevalier",
+"ShipAddress":"59 rue de l'Abbaye",
+"ShipCity":"Reims",
+"ShipRegion":null,
+"ShipPostalCode":"51100",
+"ShipCountry":"France"
+}, 	 //... 9 more records
+
+```
+
+### Code example 
+
+
+```javascript
+
+```
+
+> We can see that the first ten results from the `Orders` table of Northwind database in the above JSON reponse where it uses `$top` query option.   
+
+
+## Post
+
+[POST&nbsp;&nbsp;/Api/Grid/Post](http://js.syncfusion.com/demos/ejservices/api/Grid/Post)
+
+It is used to add the data to the grid column. 
+
+### URL parameters
+
+|  Parameter |  Description | 
+|---|---|
+|   | | 
+
+### Response information 
+
+Code: 200
+
+Content-Type: application/json;odata=verbose;charset=utf-8
+
+### Code example 
+
+
+```javascript
+
+```
+
+## Put
+
+[POST&nbsp;&nbsp;/Api/Grid/Put](http://js.syncfusion.com/demos/ejservices/api/Grid/Put)
+
+It is used to update the Grid data. 
+
+|  Parameter |  Description | 
+|---|---|
+|   | | 
+
+### Response information 
+
+Code: 200
+
+Content-Type: application/json;odata=verbose;charset=utf-8
+
+### Code example 
+
+
+```javascript
+
+```
+
+## Delete
+
+[POST&nbsp;&nbsp;/Api/Grid/Delete](http://js.syncfusion.com/demos/ejservices/api/Grid/Delete)
+
+It is used to delete the data which is present in Grid column. 
+
+|  Parameter |  Description | 
+|---|---|
+|   | | 
+
+### Response information 
+
+Code: 200
+
+Content-Type: application/json;odata=verbose;charset=utf-8
+
+### Code example 
+
+
+```javascript
+
+```
 
 
