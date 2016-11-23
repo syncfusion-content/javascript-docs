@@ -117,7 +117,7 @@ $(function() { // Document is ready
 
 ## Service Reference
 
-Assign the service method (CheckWords) path reference to the property [dictionaryUrl](https://help.syncfusion.com/api/js/ejspellcheck#members:dictionarysettings-dictionaryurl), which is mandatory to check the spelling of the word.
+Assign the service method (CheckWords) path reference to the property [dictionaryUrl](/api/js/ejspellcheck#members:dictionarysettings-dictionaryurl), which is mandatory to check the spelling of the word.
 
 The CheckWords method will perform the splitting of target sentence into separate words and check each word is that an erroneous or not. If the word is erroneous fetching the possible suggestions for it and returns those details as a result. 
 
@@ -138,7 +138,7 @@ $(function() { // Document is ready
 
 ## Spell Checking
 
-To spell check the content of the target element, you need to add one button and calling any one of the spellcheck method [showInDialog](https://help.syncfusion.com/api/js/ejspellcheck#methods:showindialog) or [validate](https://help.syncfusion.com/api/js/ejspellcheck#methods:validate) by clicking the button to highlight the error words.
+To spell check the content of the target element, you need to add one button and calling any one of the spellcheck method [showInDialog](/api/js/ejspellcheck#methods:showindialog) or [validate](/api/js/ejspellcheck#methods:validate) by clicking the button to highlight the error words.
 
 The following code example depicts that checking the spelling of the target element through the "validate" method.
 
