@@ -11,7 +11,7 @@ keywords: grid, ejGrid, syncfusion, grid webapi
 
 [GET&nbsp;&nbsp;/wcf/northwind.svc](http://js.syncfusion.com/demos/ejservices/Wcf/Northwind.svc)
 
-It is used to retrieve the records from the tables like `Orders` and `Customers` in `Northwind data service`.
+This is an [OData](http://www.odata.org/) endpoint for Microsoft Northwind sample database with limited data tables like `Orders` and `Customers`.
 
 ### URL parameters
 
