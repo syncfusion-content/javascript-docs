@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: webAPI reference for PdfViewer
 description: webAPI reference for PdfViewer
@@ -11,7 +11,7 @@ keywords: pdfviewer,ejpdfviewer, syncfusion, pdfviewer webapi
 
 [POST&nbsp;&nbsp;/Api/PdfViewer/Load](http://js.syncfusion.com/demos/ejServices/api/PdfViewer/Load)
 
-It loads the PDF document in the PDF viewer control and process the PDF document for each request.
+Loads the PDF document into the PDF viewer control and parse the PDF document content on the server side, then return the necessary details for rendering PDF document content to the client side as JSON data.
 
 ### URL parameters
 
@@ -75,7 +75,7 @@ $.ajax({
 
 [POST&nbsp;&nbsp;/Api/PdfViewer/FileUpload](http://js.syncfusion.com/demos/ejServices/api/PdfViewer/FileUpload)
 
-It uploads and loads the PDF document to the PDF viewer control.
+Uploads and loads the PDF document into the PDF viewer control.
 
 ### URL parameters
 
@@ -138,7 +138,7 @@ $.ajax({
 
 [POST&nbsp;&nbsp;/Api/PdfViewer/Download](http://js.syncfusion.com/demos/ejServices/api/PdfViewer/Download)
 
-It downloads the PDF document that is in view of the PDF viewer control.
+Downloads the PDF document being displayed in the PDF viewer control.
 
 ### Response information 
 
