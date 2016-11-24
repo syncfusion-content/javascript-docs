@@ -161,12 +161,12 @@ $(function () {
 function loadComplete() {
     var xlCFormat = this.XLCFormat;
     if (!this.isImport) {
-        xlCFormat.setCFRule({ "action": "greaterthan", "input1": "10", "color": "redft", "range": "G2:G11" });
-        xlCFormat.setCFRule({ "action": "lessthan", "input1": "20", "color": "yellowft", "range": "E1:E11" });
-        xlCFormat.setCFRule({ "action": "between", "input1": "300", "input2": "600", "color": "greenft", "range": "F2:F11" });
-        xlCFormat.setCFRule({ "action": "equalto", "input1": "20", "color": "redf", "range": "D2:D11" });
-        xlCFormat.setCFRule({ "action": "textcontains", "input1": "loafers", "color": "redt", "range": "A1:A11" });
-        xlCFormat.setCFRule({ "action": "dateoccur", "input1": "02/04/2014", "color": "redft", "range": "B1:B11" });
+        xlCFormat.setCFRule({ "action": "greaterthan", "inputs": ["10"], "color": "redft", "range": "G2:G11" });
+        xlCFormat.setCFRule({ "action": "lessthan", "inputs": ["20"], "color": "yellowft", "range": "E1:E11" });
+        xlCFormat.setCFRule({ "action": "between", "inputs": ["300", "600"], "color": "greenft", "range": "F2:F11" });
+        xlCFormat.setCFRule({ "action": "equalto", "inputs": ["20"], "color": "redf", "range": "D2:D11" });
+        xlCFormat.setCFRule({ "action": "textcontains", "inputs": ["loafers"], "color": "redt", "range": "A1:A11" });
+        xlCFormat.setCFRule({ "action": "dateoccur", "inputs": ["02/04/2014"], "color": "redft", "range": "B1:B11" });
     }
 }
 {% endhighlight %}
@@ -201,9 +201,9 @@ $(function () {
 function loadComplete() {
     var xlCFormat = this.XLCFormat;
     if (!this.isImport) {
-        xlCFormat.setCFRule({ "action": "greaterthan", "input1": "10", "color": "redft", "range": "G2:G11" });
-        xlCFormat.setCFRule({ "action": "lessthan", "input1": "20", "color": "yellowft", "range": "E1:E11" });
-        xlCFormat.setCFRule({ "action": "between", "input1": "300", "input2": "600", "color": "greenft", "range": "F2:F11" });
+        xlCFormat.setCFRule({ "action": "greaterthan", "inputs": ["10"], "color": "redft", "range": "G2:G11" });
+        xlCFormat.setCFRule({ "action": "lessthan", "inputs": ["20"], "color": "yellowft", "range": "E1:E11" });
+        xlCFormat.setCFRule({ "action": "between", "inputs": ["300", "600"], "color": "greenft", "range": "F2:F11" });
         xlCFormat.clearCF(true, "G2:G11");
         xlCFormat.clearCF(true, "F2:F11");
     }
@@ -396,16 +396,6 @@ You can do this by one of the following ways,
 * Using "Sort A to Z" or "Sort Z to A" for strings an "Sort Smallest to Largest" or "Sort Largest to Smallest" for numbers in filter dialog.
 * Using [`sortByRange`](http://help.syncfusion.com/api/js/ejspreadsheet#methods:xlsort-sortbyrange "sortByRange") method.
 
-### Sort by Color
-
-You can perform sort by color to arrange the data based on the selected cell's background color or font color. This option is only available if the selected range of cells having any color.
-
-You can do this by one of the following ways,
-
-* Using "Sort By Color" option in filter dialog to perform sorting by cell color or font color.
-* Using context menu to select "Put Selected Cell Color To The Top" or "Put Selected Font Color To The Top" in Sort option.
-* Using [`sortByColor`](http://help.syncfusion.com/api/js/ejspreadsheet#methods:xlsort-sortbycolor "sortByColor") method to perform sorting by color.
-
 The following code example describes the above behavior.
 {% highlight html %}
 <div id="Spreadsheet"></div>
@@ -425,13 +415,7 @@ function loadComplete() {
     var xlSort = this.XLSort, xlFormat = this.XLFormat;
     if (!this.isImport) {
         xlSort.sortByRange("A2:A10", "A", "ascending");
-        xlSort.sortByRange("E2:E10", "E", "descending"); 
-        xlFormat.format({ "style": { "background-color": "#FFEB9C" } }, "D2");
-        xlFormat.format({ "style": { "background-color": "#C6EFCE" } }, "D3");
-        xlFormat.format({ "style": { "background-color": "#FFEB9C" } }, "D4");
-        xlFormat.format({ "style": { "background-color": "#C6EFCE" } }, "D5");
-        xlFormat.format({ "style": { "background-color": "#FFEB9C" } }, "D6");     
-        xlSort.sortByColor("PutCellolor", {"background-color": "#FFEB9C"}, "D2:D6");
+        xlSort.sortByRange("E2:E10", "E", "descending");     
     }
 }
 {% endhighlight %}
@@ -439,6 +423,15 @@ function loadComplete() {
 The following output is displayed as a result of the above code example.
 
 ![](Data-Presentation_images/Data-Presentation_img8.png)
+
+### Sort by Color
+
+You can perform sort by color to arrange the data based on the selected cell's background color or font color. This option is only available if the selected range of cells having any color.
+
+You can do this by one of the following ways,
+
+* Using "Sort By Color" option in filter dialog to perform sorting by cell color or font color.
+* Using context menu to select "Put Selected Cell Color To The Top" or "Put Selected Font Color To The Top" in Sort option.
 
 ## Table
 
