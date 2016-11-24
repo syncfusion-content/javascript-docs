@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: webAPI reference for ejDiagram
 description: webAPI reference for ejDiagram

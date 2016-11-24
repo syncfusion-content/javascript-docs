@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: webAPI reference for PdfViewer
 description: webAPI reference for PdfViewer

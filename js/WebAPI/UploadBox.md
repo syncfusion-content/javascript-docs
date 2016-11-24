@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: webAPI reference for ejUploadbox
 description: webAPI reference for ejUploadbox

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: webAPI reference for ejTreeGrid
 description: webAPI reference for ejTreeGrid

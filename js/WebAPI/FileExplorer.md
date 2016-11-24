@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: webAPI reference for ejFileExplorer
 description: webAPI reference for ejFileExplorer
@@ -17,7 +17,7 @@ It helps to handle the FileExplorer operations like Read, Upload, Download, GetD
 
 |  Parameter |Data Type| Description | 
 |---|---|---|
-|Action	|String|Specifies the paste operation format which should be “Copy” or ”Move”.These details will be send through AJAX request parameter while performing the search operation.|
+|Action	|String|Specifies the paste operation format which should be “Copy” or ”Move”.These details will be send through AJAX request parameter while performing the paste operation.|
 |ActionType|String|Specifies the file operation that need to be performed on this request.For example: Read, Upload, Download, GetDetails, Rename, Remove operations.|
 |CaseSensitive|Boolean |Specifies the case sensitive option for filtering the files.Also these details will be send to the parameter through AJAX request while performing search operation.|
 |CommonFiles|IEnumerable<object >|It contains the details about already existing files in destination folder, which contains the files in same name and type as same as new files.|

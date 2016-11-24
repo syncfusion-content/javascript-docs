@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: webAPI reference for ejSchedule
 description: webAPI reference for ejSchedule
