@@ -22,6 +22,7 @@ You can find the **require.min.js** from the following installed location of you
 `(installed location)\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets\external`   
 _For example, If you have installed the Essential Studio package within `C:\Program Files (x86)`, then navigate to the location,_ **C:\Program Files (x86)**\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets\external  
 
+N> For version lower than 13.3.0.18, refer this [Knowledge Base](http://www.syncfusion.com/support/kb/7146).
 
 N> From version 14.3.0.49, we have removed the **jquery.easing** dependency from our components. For version lower than 14.3.0.49, you need to refer the jquery.easing as additional dependency. 
 
@@ -67,7 +68,7 @@ N> From version 14.3.0.49, we have removed the **jquery.easing** dependency from
 
                 "jsrender": 'http://cdn.syncfusion.com/js/assets/external/jsrender.min',
 
-                "scripts": 'http://cdn.syncfusion.com/{{ site.releaseversion }}/js'
+                "ejscripts": 'http://cdn.syncfusion.com/{{ site.releaseversion }}/js'
             }
 
         });
@@ -83,7 +84,7 @@ N> From version 14.3.0.49, we have removed the **jquery.easing** dependency from
 {% highlight javascript %}
 
 
-      require(["scripts/web/ej.treeview.min"], function () {
+      require(["ejscripts/web/ej.treeview.min"], function () {
 
             $("#tree").ejTreeView({  //initializes the TreeView
                 fields: {
@@ -201,10 +202,10 @@ Essential JavaScript provides a complete support of AngularJS for all the Syncfu
                 "jquery": 'http://cdn.syncfusion.com/js/assets/external/jquery-3.0.0.min',
 
                 "jsrender": 'http://cdn.syncfusion.com/js/assets/external/jsrender.min',
+                
+                "angular": 'http://cdn.syncfusion.com/js/assets/external/angular.min',
 
-                "scripts": 'http://cdn.syncfusion.com/{{ site.releaseversion }}/js',
-
-                "angular": 'http://cdn.syncfusion.com/js/assets/external/angular.min'
+                "ejscripts": 'http://cdn.syncfusion.com/{{ site.releaseversion }}/js'
 
             }
 
@@ -220,7 +221,7 @@ Essential JavaScript provides a complete support of AngularJS for all the Syncfu
             { id: 7, pid: 4, name: "Child5" }
         ];
 
-        require(["scripts/common/ej.widget.angular.min", "scripts/web/ej.treeview.min"], function () {
+        require(["ejscripts/common/ej.widget.angular.min", "ejscripts/web/ej.treeview.min"], function () {
 
             angular.module('syncApp', ['ejangular'])
                 .controller('TreeViewCtrl', function ($scope) {
@@ -267,16 +268,16 @@ Essential JavaScript provides a complete support of KnockoutJS (MVVM pattern) fo
                 "jquery": 'http://cdn.syncfusion.com/js/assets/external/jquery-3.0.0.min',
 
                 "jsrender": 'http://cdn.syncfusion.com/js/assets/external/jsrender.min',
+                
+                "knockout": 'http://cdn.syncfusion.com/js/assets/external/knockout.min',
 
-                "scripts": 'http://cdn.syncfusion.com/{{ site.releaseversion }}/js',
-
-                "knockout": 'http://cdn.syncfusion.com/js/assets/external/knockout.min'
+                "ejscripts": 'http://cdn.syncfusion.com/{{ site.releaseversion }}/js'
 
             }
 
         });
 
-        require(["scripts/common/ej.widget.ko.min", "scripts/web/ej.treeview.min"], function (ko) {
+        require(["ejscripts/common/ej.widget.ko.min", "ejscripts/web/ej.treeview.min"], function (ko) {
 
             var localData = [
             { id: 1, name: "Parent1", expanded: true, hasChild: true },
