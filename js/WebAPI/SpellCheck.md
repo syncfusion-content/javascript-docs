@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: webAPI reference for ejSpellCheck
 description: webAPI reference for ejSpellCheck
@@ -45,8 +45,7 @@ $(function () {
 	$("#TextArea").ejSpellCheck({
 		dictionarySettings: {
 			dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/CheckWords"
-		},
-		contextMenuSettings: { enable: false }
+		}
 	});
 	$("#SpellCheck").ejButton({ width: "200px", height: "25px", click: "showDialog", text: "Spell check using dialog" });
 });
@@ -97,8 +96,7 @@ $(function () {
 		dictionarySettings: {
 			dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/CheckWords",
 			customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/AddToDictionary"
-		},
-		contextMenuSettings: { enable: false }
+		}
 	});
 	$("#SpellCheck").ejButton({ width: "200px", height: "25px", click: "showDialog", text: "Spell check using dialog" });
 });

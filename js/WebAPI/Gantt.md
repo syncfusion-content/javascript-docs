@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: webAPI reference for ejGantt
 description: webAPI reference for ejGantt

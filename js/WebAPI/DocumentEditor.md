@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: webAPI reference for DocumentEditor
 description: webAPI reference for DocumentEditor
@@ -66,12 +66,6 @@ $.ajax({
 [POST&nbsp;&nbsp;/Api/DocumentEditor/LoadDefault](http://js.syncfusion.com/demos/ejServices/api/DocumentEditor/LoadDefaul)
 
 It loads the default document in DocumentEditor.
-
-### URL parameters
-
-|  Parameter |Data Type|  Description | 
-|---|---|---|
-| filePath|String|Specifies the path of the input document to be loaded.|
 
 ### Response information 
 

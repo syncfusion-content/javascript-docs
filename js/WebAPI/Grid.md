@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: webAPI reference for ejGrid
 description: webAPI reference for ejGrid

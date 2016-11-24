@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: webAPI reference for ejPredictiveAnalysis
 description: webAPI reference for ejPredictiveAnalysis
