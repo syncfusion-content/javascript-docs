@@ -15,7 +15,7 @@ documentation: ug
 	
 
 
-Electron (Previously known as Atom Shell) is used create a cross platform desktop application for different OS like Linux, Windows and OS X by using JavaScript and able to achieve native API supports.
+Electron (Previously known as Atom Shell) is used create a cross platform desktop application for different OS like Linux, Windows and OS X by using JavaScript and able to access platform sepcific native API's.
 
 
 
@@ -62,10 +62,10 @@ This step by step guide is used to create a combination of Essential JS UI contr
 
 Step1:
 
-To clone and run this repository need[Git](https://git-scm.com/) and [Node.js](https://nodejs.org/en/download/)(which comes with[npm](http://npmjs.com/)) installed on your system, then enter the below command line using terminal (Mac OS) or Command Prompt (Windows).
+To clone and run this repository need[Git](https://git-scm.com/) and [Node.js](https://nodejs.org/en/download/)(which comes with[npm](http://npmjs.com/)) installed on your system, then enter the below command using terminal (Mac OS) or Command Prompt (Windows).
 
 
-N> For Mac OS run the command in administrator mode($sudo prefix)
+N> For Mac OS run the command in administrator mode with $sudo as prefix
 
 1. **Clone the Quick Start repository**
 
