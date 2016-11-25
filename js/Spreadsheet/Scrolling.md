@@ -37,7 +37,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](Scrolling_images/Scrolling_img5.png)
+![](Scrolling_images/Scrolling_img1.png)
 
 ## Set height and width in percentage
 
@@ -63,7 +63,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](Scrolling_images/Scrolling_img6.png)
+![](Scrolling_images/Scrolling_img2.png)
 
 ## Responsive
 
@@ -79,20 +79,20 @@ N> Default value of [`scrollSettings.isResponsive`](https://help.syncfusion.com/
 
 If client width is less than 420px, the spreadsheet will render in mobile mode. In which, you can see that spreadsheet user interface is customized and redesigned for best view in small screens. The customized feature includes filter dialog, format dialog, chart type dialog and ribbon.
 
-![](Scrolling_images/Scrolling_img4.png)
-
-{:caption}
-Ribbon in mobile layout
-
-![](Scrolling_images/Scrolling_img2.png)
-
-{:caption}
-Format cell dialog in mobile layout.
-
 ![](Scrolling_images/Scrolling_img3.png)
 
-{:caption}
+Ribbon in mobile layout
+{:.caption}
+
+![](Scrolling_images/Scrolling_img4.png)
+
+Format cell dialog in mobile layout.
+{:.caption}
+
+![](Scrolling_images/Scrolling_img5.png)
+
 Filter dialog in mobile layout
+{:.caption}
 
 ### Tablet Layout
 
@@ -136,4 +136,4 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](Scrolling_images/Scrolling_img1.png)
+![](Scrolling_images/Scrolling_img6.png)

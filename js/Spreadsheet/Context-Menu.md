@@ -61,21 +61,22 @@ $(function () {
 {% endhighlight %}
 
 ![](Context-Menu_images/context-menu_img1.png)
-{:caption}
 
 Contextmenu at Cell
+{:.caption}
+
 
 ![](Context-Menu_images/context-menu_img2.png)
-{:caption}
 
 Contextmenu at Column Header
+{:.caption}
 
 ![](Context-Menu_images/context-menu_img3.png)
-{:caption}
 
 Contextmenu at Row Header
+{:.caption}
 
 ![](Context-Menu_images/context-menu_img4.png)
-{:caption}
 
 Contextmenu at Pager
+{:.caption}
