@@ -62,19 +62,20 @@ This step by step guide is used to create a combination of Essential JS UI contr
 
 Step1:
 
-To clone and run this repository need[Git](https://git-scm.com/) and [Node.js](https://nodejs.org/en/download/)(which comes with[npm](http://npmjs.com/)) installed on your system, then enter the below command line using terminal (Mac OS) with administrator mode($sudo prefix) or Command Prompt (Windows).
+To clone and run this repository need[Git](https://git-scm.com/) and [Node.js](https://nodejs.org/en/download/)(which comes with[npm](http://npmjs.com/)) installed on your system, then enter the below command line using terminal (Mac OS) or Command Prompt (Windows).
 
 
+N> For Mac OS run the command in administrator mode($sudo prefix)
 
 1. **Clone the Quick Start repository**
 
 
 
-{% highlight text %}
+    {% highlight shell %}
 
-$ git clone <a href=https://github.com/electron/electron-quick-start>https://github.com/electron/electron-quick-start</a> 
+    $ git clone <a href=https://github.com/electron/electron-quick-start>https://github.com/electron/electron-quick-start</a> 
 
-{% endhighlight %}
+    {% endhighlight %}
 
 
 
@@ -90,11 +91,11 @@ $ git clone <a href=https://github.com/electron/electron-quick-start>https://
 
 
 
-{% highlight text %}
+    {% highlight shell %}
 
-$ cd electron-quick-start 
+    $ cd electron-quick-start 
 
-{% endhighlight %}
+    {% endhighlight %}
 
 
 
@@ -106,11 +107,11 @@ $ cd electron-quick-start 
 
 
 
-{% highlight text %}
+    {% highlight shell %}
 
-$ npm install 
+    $ npm install 
 
-{% endhighlight %}
+    {% endhighlight %}
 
 
 
@@ -180,7 +181,7 @@ Run the Electron Application using the below command line.
 
 
 
-{% highlight text %}
+{% highlight shell %}
 
 $ npm start 
 
@@ -217,21 +218,21 @@ Use the below CLI to create Electron package for windows.
  1. Install Electron packager
 
 
-{% highlight text %}
+    {% highlight shell %}
 
-$ npm install electron-packager –g
+    $ npm install electron-packager –g
 
-{% endhighlight %}
+    {% endhighlight %}
 
 
 2. Package the application
 
 
-{% highlight text %}
+    {% highlight shell %}
 
-$ electron-packager ./ JS_Electron --platform=win32 --arch=ia32 ./JS_Electron
+    $ electron-packager ./ JS_Electron --platform=win32 --arch=ia32 ./JS_Electron
 
-{% endhighlight %}
+    {% endhighlight %}
 
 Now JS_Electron-win32-ia32 folder is created. Open the mentioned folder and JS_Electron.exe is the runnable Application file for the created Electron project. 
 
@@ -247,11 +248,11 @@ Use the below CLI to create Electron package for windows.
 1. Install Electron packager
 
 
-{% highlight text %}
+    {% highlight shell %}
 
-$ npm install electron-packager –g
+    $ npm install electron-packager –g
 
-{% endhighlight %}
+    {% endhighlight %}
 
 
 
@@ -259,11 +260,11 @@ $ npm install electron-packager –g
 2. Package the application
 
 
-{% highlight text %}
+    {% highlight shell %}
 
-$ electron-packager ./ JS_Electron --platform=win32 --arch=ia32 ./JS_Electron
+    $ electron-packager ./ JS_Electron --platform=win32 --arch=ia32 ./JS_Electron
 
-{% endhighlight %}
+    {% endhighlight %}
 
 Now JS_Electron-win32-ia32 folder is created. Open the mentioned folder and JS_Electron.exe is the runnable Application file for the created Electron project. 
 
@@ -280,30 +281,30 @@ Use the below CLI to create Electron package in Mac OS(OS X).
 
 1. Install npm
 
-{% highlight text %}
+    {% highlight shell %}
 
-sudo npm install
+    sudo npm install
 
-{% endhighlight %}
+    {% endhighlight %}
 
 
 
 2. Install electron packager
 
-{% highlight text %}
+    {% highlight shell %}
 
-sudo npm install electron-packager -g
+    sudo npm install electron-packager -g
 
-{% endhighlight %}
+    {% endhighlight %}
 
 
 3. Package the application
 
-{% highlight text %}
+    {% highlight shell %}
 
-sudo electron-packager ./ JS_Electron --platform=darwin ./JS_Electron
+    sudo electron-packager ./ JS_Electron --platform=darwin ./JS_Electron
 
-{% endhighlight %}
+    {% endhighlight %}
 
 
 
