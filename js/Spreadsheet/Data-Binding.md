@@ -80,7 +80,7 @@ $(function () {
                 url: "http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",
                 offline: true
             }),
-            query: ej.Query().take(5).select(["OrderID", "CustomerID", "EmployeeID", "ShipName",  "ShipAddress"]),
+            query: ej.Query().select(["OrderID", "CustomerID", "EmployeeID", "ShipName",  "ShipAddress"]),
             primaryKey: "OrderID"
         }],
     });
@@ -90,7 +90,7 @@ $(function () {
 {% endhighlight %}
 
 The following output is displayed as a result of the above code snippets.
-![](Data-Binding_images/Data-Binding_img7.png)
+![](Data-Binding_images/Data-Binding_img2.png)
 
 N> For further reference about `offline` property in [`ej.DataManager`](http://help.syncfusion.com/js/api/ejdatamanager "ej.DataManager") refer following [`link`](http://help.syncfusion.com/js/datamanager/data-binding#offline-mode "link")
 
