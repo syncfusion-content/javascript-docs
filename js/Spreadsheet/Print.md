@@ -61,14 +61,14 @@ The following output is displayed as a result of the above code example.
 ![](Print_images/Print_img1.png)
 
 ![](Print_images/Print_img2.png)
-{:caption}
 
 Print dialog with entire sheet in Chrome browser
+{:.caption}
 
 ![](Print_images/Print_img3.png)
-{:caption}
 
 Print dialog with selected area print in chrome browser
+{:.caption}
 
 ## Print with Gridlines
 
@@ -99,9 +99,9 @@ $(function () {
 {% endhighlight %}
 
 ![](Print_images/Print_img4.png)
-{:caption}
 
 Print dialog without gridlines in chrome browser
+{:.caption}
 
 ## Print with Headings
 
@@ -133,6 +133,6 @@ $(function () {
 {% endhighlight %}
 
 ![](Print_images/Print_img5.png)
-{:caption}
 
 Print dialog without headings in chrome browser
+{:.caption}

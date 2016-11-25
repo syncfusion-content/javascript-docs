@@ -38,7 +38,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example which shows the find and Select button.
 
-![](Searching_images/Searching_img3.png)
+![](Searching_images/Searching_img1.png)
 
 ## Find
 
@@ -50,7 +50,7 @@ This is used to search the contents of a cell. You can do this by one of the fol
 
 The following output is displayed as a result of Find and Replace dialog with Find tab enabled.
 
-![](Searching_images/Searching_img7.png)
+![](Searching_images/Searching_img2.png)
 
 You can customize the following settings in find option.
 
@@ -61,7 +61,7 @@ You can customize the following settings in find option.
 * Search - You can search the contents by rows or columns.
 * Replace Direction - You can replace the contents by up or down direction.
 
-![](Searching_images/Searching_img1.png)
+![](Searching_images/Searching_img3.png)
 {:caption}
 
 Find and Replace dialog with Settings tab enabled.
@@ -74,7 +74,7 @@ This is used to replace the contents of a cell. You can do this by one of the fo
 * Using [`replaceAllByBook`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlsearch-replaceallbybook "replaceAllByBook") or [`replaceAllBySheet`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlsearch-replaceallbysheet "replaceAllBySheet") method to replace the contents.
 * Using Ctrl + R key to open the Find and Replace dialog with Replace tab enabled.
 
-![](Searching_images/Searching_img8.png)
+![](Searching_images/Searching_img4.png)
 {:caption}
 
 Find and Replace dialog with Replace tab enabled
@@ -106,7 +106,7 @@ function loadComplete() {
 
 The following output is displayed as a result of the above code example.
 
-![](Searching_images/Searching_img2.png)
+![](Searching_images/Searching_img5.png)
 
 ## Go To
 
@@ -119,11 +119,11 @@ You can do this by one of the following ways,
 
 The following output is displayed the Go To dialog.
 
-![](Searching_images/Searching_img4.png)
+![](Searching_images/Searching_img6.png)
 
 The following output is displayed as a result of goto to cell "F10".
 
-![](Searching_images/Searching_img5.png)
+![](Searching_images/Searching_img7.png)
 
 ## GoTo Special
 
@@ -143,4 +143,4 @@ This feature is used to quickly select cells of a specified type within the work
 
 The following output is displayed as a result of goto constants which selects the cells containing constant values.
 
-![](Searching_images/Searching_img6.png)
+![](Searching_images/Searching_img8.png)

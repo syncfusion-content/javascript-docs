@@ -55,8 +55,9 @@ function loadComplete() {
         xlCellType.addCellTypes("D1", {"type" : ej.Spreadsheet.CustomCellType.Button, "text" : "Button1", "background-color" : "green" },  1);
         xlCellType.addCellTypes("B1", {"type" : ej.Spreadsheet.CustomCellType.DatePicker, 'value' : '2/12/2016'},  1);
         xlCellType.addCellTypes("A1", {"type" : ej.Spreadsheet.CustomCellType.DropDownList, 'dataSourceRange': 'A2:A11'},  1);
+        xlCellType.addCellTypes("C1", {"type" : ej.Spreadsheet.CustomCellType.DropDownList, 'dataSourceRange': 'A2:A11'},  1);
         xlCellType.addCellTypes("E1", {"type" : ej.Spreadsheet.CustomCellType.CheckBox, "isChecked" : true },  1);
-        xlCellType.removeCellTypes("A1");
+        xlCellType.removeCellTypes("C1");
     }
 }
 {% endhighlight %}
