@@ -7,9 +7,9 @@ control: Spreadsheet
 documentation: ug
 --- 
 
-# Rows and columns
+# Rows and Columns
 
-Spreadsheet is a tabular format consisting of rows and columns. Rows and Columns are used to represent the editing area in Spreadsheet. The intersection point of rows and columns are called as Cells. In that you can perform editing. You have [`rowCount`](http://help.syncfusion.com/api/js/ejspreadsheet#members:rowcount "rowCount") and [`columnCount`](http://help.syncfusion.com/api/js/ejspreadsheet#members:columncount "columnCount") in sheets property and model for defining the rows and columns count. By default Spreadsheet creates `20` rows and `21` columns. Based on this grid content will be created.
+Spreadsheet is a tabular format consisting of rows and columns. Rows and columns are used to represent the editing area in Spreadsheet. The intersection point of rows and columns are called as Cells. In that you can perform editing. You have [`rowCount`](http://help.syncfusion.com/api/js/ejspreadsheet#members:rowcount "rowCount") and [`columnCount`](http://help.syncfusion.com/api/js/ejspreadsheet#members:columncount "columnCount") in sheets property and model for defining the rows and columns count. By default Spreadsheet creates `20` rows and `21` columns. Based on this grid content will be created.
 
 ## Rows 
 
@@ -51,7 +51,7 @@ You can perform following operations in rows and columns,
 ## Insert 
 
 You can insert blank cells, rows or columns based on the selection in a worksheet. You have to enable the [`allowInsert`](http://help.syncfusion.com/api/js/ejspreadsheet#members:allowinsert "allowInsert") property to perform the insert operation. 
-You can access insert operation through,
+You can perform insert operation through,
 
 * OTHERS tab in ribbon.
 * Context menu
@@ -100,9 +100,9 @@ You can also perform insert entire column using [`insertEntireColumn`](http://he
 
 ## Delete 
 
-You can delete a range of cells, rows or columns based on the selection in worksheet. You have to enable the [`allowDelete`](http://help.syncfusion.com/api/js/ejspreadsheet#members:allowdelete "allowDelete") property to perform Delete Operation. 
+You can delete a range of cells, rows or columns based on the selection in worksheet. You have to enable the [`allowDelete`](http://help.syncfusion.com/api/js/ejspreadsheet#members:allowdelete "allowDelete") property to perform delete operation. 
 
-You can access delete operation through,
+You can perform delete operation through,
 
 * OTHERS tab in Ribbon
 * Context menu
@@ -125,7 +125,7 @@ You can dynamically delete the selected range of cells and shift the other cells
 * Click Delete in the context menu and select "Shift Cells Left" option in Delete dialog.
 * Select Delete Cells in Delete button of OTHERS tab in Ribbon and select "Shift Cells Left" option in Delete dialog.
 
-You can also perform delete shift up using [`deleteShiftLeft`](http://help.syncfusion.com/api/js/ejspreadsheet#methods:deleteshiftleft "deleteShiftLeft") method.
+You can also perform delete shift left using [`deleteShiftLeft`](http://help.syncfusion.com/api/js/ejspreadsheet#methods:deleteshiftleft "deleteShiftLeft") method.
 
 #### Delete Entire Row
 
