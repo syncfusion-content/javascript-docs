@@ -1,7 +1,7 @@
 ---
 layout: post
-title: SignalR binding with Grid widget for Syncfusion Essential JS
-description: How to use tooltip and signalR binding in Grid
+title: How to
+description: How to
 platform: js
 control: Grid
 documentation: ug
@@ -131,7 +131,7 @@ Grid actions can be persisted throughout by enabling the enablePersistence prope
   
   So on navigating to another page by clicking on the link, by default the filterSettings and groupSettings will be persisted. But upon clicking the button and navigating, the persist state of the Grid actions are modified.
    
-# External Search in Grid
+## External Search in Grid
 
 Using [`search`](http://help.syncfusion.com/api/js/ejgrid#methods:search “search”) method of Grid, you can search the string in Grid externally without using in-built toolbar search support. While using [`search`](http://help.syncfusion.com/api/js/ejgrid#methods:search “search”) method it is necessary to set [`allowSearching`](http://help.syncfusion.com/api/js/ejgrid#members:allowsearching “allowSearching”) property as `true`. The following code example explains the above behavior.
 
