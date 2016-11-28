@@ -75,7 +75,15 @@ The details of WebAPI has been shown in the below table.
 |[Put](WebAPI\Grid#Put)|It is used to update the Grid data.|  
 |[Delete](WebAPI\Grid#Delete)|It is used to delete the data which is present in Grid column.| 
 
-### OlapChart
+### PivotChart (Relational)
+
+|  WebAPI | Description  |
+|---|---|
+|[Initialize](WebAPI\RelationalChart#Initialize)|It fetches the Relational data required to initialize the PivotChart from server-end.|
+|[Drill](WebAPI\RelationalChart#Drill)|It fetches the drilled Relational data required to render the PivotChart control from server-end.|
+|[Export](WebAPI\RelationalChart#Export)|It exports the PivotChart control at the instant to the specified format.|
+
+### PivotChart (OLAP)
 
 |  WebAPI | Description  |
 |---|---|
@@ -83,68 +91,105 @@ The details of WebAPI has been shown in the below table.
 |[Drill](WebAPI\OlapChart#Drill)|It fetches the drilled OLAP data required to render the PivotChart control from server-end.|
 |[Export](WebAPI\OlapChart#Export)|It exports the PivotChart control at the instant to the specified format.|
 |[ExcelExport](WebAPI\OlapChart#ExcelExport)|It exports the PivotChart control at the instant to an Excel document.|
-|[WordExport](WebAPI\OlapChart#WordExport)|It exports the PivotChart control at the instant to an Word document.|
-|[PdfExport](WebAPI\OlapChart#PdfExport)|It exports the PivotChart control at the instant to an PDF document.| 
+|[WordExport](WebAPI\OlapChart#WordExport)|It exports the PivotChart control at the instant to a Word document.|
+|[PdfExport](WebAPI\OlapChart#PdfExport)|It exports the PivotChart control at the instant to a PDF document.|
 |[ImageExport](WebAPI\OlapChart#ImageExport)|It exports the PivotChart control at the instant as an Image in specified format.|
 
-### OlapClient
+### PivotClient (Relational)
 
 |  WebAPI | Description  |
 |---|---|
-|[Initialize](WebAPI\OlapClient#Initialize)||
-|[InitializeGrid](WebAPI\OlapClient#InitializeGrid)||
-|[InitializeChart](WebAPI\OlapClient#InitializeChart)||
-|[InitializeTreeMap](WebAPI\OlapClient#InitializeTreeMap)||
-|[DrillChart](WebAPI\OlapClient#DrillChart)||
-|[DrillTreeMap](WebAPI\OlapClient#DrillTreeMap)||
-|[DrillGrid](WebAPI\OlapClient#DrillGrid)||
-|[FilterElement](WebAPI\OlapClient#FilterElement)||
-|[RemoveSplitButton](WebAPI\OlapClient#RemoveSplitButton)||
-|[FetchMemberTreeNodes](WebAPI\OlapClient#FetchMemberTreeNodes)||
-|[DropNode](WebAPI\OlapClient#DropNode)||
-|[CubeChange](WebAPI\OlapClient#CubeChange)||
-|[MeasureGroup](WebAPI\OlapClient#MeasureGroup)||
-|[ToolbarOperations](WebAPI\OlapClient#ToolbarOperations)||
-|[UpdateReport](WebAPI\OlapClient#UpdateReport)||
-|[SaveReportToDB](WebAPI\OlapClient#SaveReportToDB)||
-|[FetchReportListFromDB](WebAPI\OlapClient#FetchReportListFromDB)||
-|[LoadReportFromDB](WebAPI\OlapClient#LoadReportFromDB)||
-|[Export](WebAPI\OlapClient#Export)||
-|[ExportOlapClient](WebAPI\OlapClient#ExportOlapClient)||
-|[GetMDXQuery](WebAPI\OlapClient#GetMDXQuery)||
-|[ToggleAxis](WebAPI\OlapClient#ToggleAxis)||
-|[Paging](WebAPI\OlapClient#Paging)||
+|[Initialize](WebAPI\RelationalClient#Initialize)|It fetches the data required to initialize the control.|
+|[FetchMembers](WebAPI\RelationalClient#FetchMembers)|It fetches the details of the members in the selected field on opening member editor.|
+|[DrillChart](WebAPI\RelationalClient#DrillChart)|It fetches the drilled data required to render the control on performing drilldown in PivotChart.|
+|[Filtering](WebAPI\RelationalClient#Filtering)|It fetches the data required to render the control on performing filtering.|
+|[DropNode](WebAPI\RelationalClient#DropNode)|It fetches the data required to render the control on performing node drop action.|
+|[ToolbarOperations](WebAPI\RelationalClient#ToolbarOperations)|It fetches the data required to render the control on performing toolbar operations.|
+|[SaveReportToDB](WebAPI\RelationalClient#SaveReportToDB)|It saves the current report to database with the specified name.|
+|[Export](WebAPI\RelationalClient#Export)|It exports the PivotGrid or PivotChart or both to the selected format.|
+|[FetchReportListFromDB](WebAPI\RelationalClient#FetchReportListFromDB)|It fetches the list of names of reports stored in database.|
+|[LoadReportFromDB](WebAPI\RelationalClient#LoadReportFromDB)|It loads the report with specified name from the database to the control.|
 
-### OlapGauge
+### PivotClient (OLAP)
+
+|  WebAPI | Description  |
+|---|---|
+|[Initialize](WebAPI\OlapClient#Initialize)|It fetches the data required to render the PivotClient control initially.|
+|[InitializeGrid](WebAPI\OlapClient#InitializeGrid)|It fetches the data required to render the PivotGrid control inside PivotClient.|
+|[InitializeChart](WebAPI\OlapClient#InitializeChart)|It fetches the data required to render the PivotChart control inside PivotClient.|
+|[InitializeTreeMap](WebAPI\OlapClient#InitializeTreeMap)|It fetches the data required to render the PivotTreeMap control inside PivotClient.|
+|[DrillChart](WebAPI\OlapClient#DrillChart)|It fetches the drilled data required to render the PivotChart on drilling.|
+|[DrillTreeMap](WebAPI\OlapClient#DrillTreeMap)|It fetches the drilled data required to render the PivotTreeMap on drilling.|
+|[DrillGrid](WebAPI\OlapClient#DrillGrid)|It fetches the drilled data required to render the PivotGrid on drilling.|
+|[FilterElement](WebAPI\OlapClient#FilterElement)|It fetches the filtered data required to render the control after performing filtering.|
+|[RemoveSplitButton](WebAPI\OlapClient#RemoveSplitButton)|It fetches the drilled data required to render the PivotChart on removing an item from report.|
+|[FetchMemberTreeNodes](WebAPI\OlapClient#FetchMemberTreeNodes)|It fetches the details of the members to render the member editor dialog.|
+|[DropNode](WebAPI\OlapClient#DropNode)|It fetches the data required to render the control after drag and drop action.|
+|[CubeChange](WebAPI\OlapClient#CubeChange)|It fetches the data required to render the control on changing the cube.|
+|[MeasureGroup](WebAPI\OlapClient#MeasureGroup)|It fetches the data required to render the control on changing the measure group.|
+|[ToolbarOperations](WebAPI\OlapClient#ToolbarOperations)|It fetches the data required to render the control on performing toolbar operations.|
+|[ExpandMember](WebAPI\OlapClient#ExpandMember)|It fetches the children nodes on expanding a node in Member Editor.|
+|[UpdateReport](WebAPI\OlapClient#UpdateReport)|It updates the report in server side.|
+|[SaveReportToDB](WebAPI\OlapClient#SaveReportToDB)|It saves the current report to database with the specified name.|
+|[FetchReportListFromDB](WebAPI\OlapClient#FetchReportListFromDB)|It fetches the list of names of reports stored in database.|
+|[LoadReportFromDB](WebAPI\OlapClient#LoadReportFromDB)|It loads the report with specified name from the database to the control.|
+|[Export](WebAPI\OlapClient#Export)|It exports the PivotGrid or PivotChart or both to the selected format.|
+|[ExportOlapClient](WebAPI\OlapClient#ExportOlapClient)|It exports the PivotGrid or PivotChart or both with OLAP data to the selected format.|
+|[GetMDXQuery](WebAPI\OlapClient#GetMDXQuery)|It retrieves the MDX query formed to fetch the data at that instant.|
+|[ToggleAxis](WebAPI\OlapClient#ToggleAxis)|It fetches the data after interchanging the elements in row and column axes.|
+|[Paging](WebAPI\OlapClient#Paging)|It fetches the data on navigating between pages in PivotClient with OLAP data.|
+
+### PivotGauge (Relational)
+
+|  WebAPI | Description  |
+|---|---|
+|[Initialize](WebAPI\RelationalGauge#Initialize)|It fetches the Relational data required to render the PivotGauge control from server-end.|
+
+### PivotGauge (OLAP)
 
 |  WebAPI | Description  |
 |---|---|
 |[Initialize](WebAPI\OlapGauge#Initialize)|It fetches the OLAP data required to render the PivotGauge control from server-end.|
 
+### PivotGrid (Relational)
 
-### OlapGrid
+|  WebAPI | Description  |
+|---|---|
+|[Initialize](WebAPI\RelationalGrid#Initialize)|It fetches the data required to render the PivotGrid initially.|
+|[FetchMembers](WebAPI\RelationalGrid#FetchMembers)|It fetches the members of the selected field to render the member editor tree.|
+|[Filtering](WebAPI\RelationalGrid#Filtering)|It fetches the data required to render the PivotGrid control on performing filtering action.|
+|[ModifyNodeState](WebAPI\RelationalGrid#ModifyNodeState)|It fetches the relational data required to render the PivotGrid control on selecting/unselecting fields in Field list.|
+|[DropNode](WebAPI\RelationalGrid#DropNode)|It fetches the relational data required to render the PivotGrid control on node drop action.|
+|[Sorting](WebAPI\RelationalGrid#Sorting)|It fetches the sorted data to render the PivotGrid control on performing sorting.|
+|[CalculatedField](WebAPI\RelationalGrid#CalculatedField)|It forms a calculated field in values area and fetches the data along with it to render the PivotGrid control.|
+|[Export](WebAPI\RelationalGrid#Export)|It is used to export the PivotGrid data to specified format.|
+|[SaveReport](WebAPI\RelationalGrid#SaveReport)|It saves the current report to database with the specified name.|
+|[LoadReportFromDB](WebAPI\RelationalGrid#LoadReportFromDB)|It loads a report from the database and refreshes the control with it.|
+|[DeferUpdate](WebAPI\RelationalGrid#DeferUpdate)|It fetches the data with respect to the report available at that instant (i.e) updates the control with current report.|
+|[CellEditing](WebAPI\RelationalGrid#CellEditing)|It rewrites the content of database on editing a cell.|
+
+### PivotGrid (OLAP)
 
 |  WebAPI | Description  |
 |---|---|
 |[Initialize](WebAPI\OlapGrid#Initialize)|It fetches the OLAP data required to render the PivotGrid initially from server-end.|
 |[Drill](WebAPI\OlapGrid#Drill)|It fetches the OLAP data required to render the PivotGrid control after drilling it.|
 |[DropNode](WebAPI\OlapGrid#DropNode)|It fetches the data required to render the control after performing node drop operation.|
-|[Filtering](WebAPI\OlapGrid#Filtering)|It fetches the OLAP data required to render the specific page of PivotGrid with paging enabled.|
-|[FetchMembers](WebAPI\OlapGrid#FetchMembers)|It fetches the OLAP data required to render the specific page of PivotGrid with paging enabled.|
-|[Paging](WebAPI\OlapGrid#Paging)|It fetches the members of the selected hierarchy to render the member editor.|
+|[Filtering](WebAPI\OlapGrid#Filtering)|It fetches the OLAP data required to render the control after performing filtering.|
+|[FetchMembers](WebAPI\OlapGrid#FetchMembers)|It fetches the members of the selected hierarchy to render the member editor.|
+|[Paging](WebAPI\OlapGrid#Paging)|It fetches the OLAP data required to render the specific page of PivotGrid with paging enabled.|
 |[RemoveButton](WebAPI\OlapGrid#RemoveButton)|It fetches the data required to render the control after removing a button.|
 |[ExpandMember](WebAPI\OlapGrid#ExpandMember)|It fetches the data to render children nodes of a member in Member Editor Tree.|
-|[Export](WebAPI\OlapGrid#Export)|It is used to export the PivotGrid data as an Excel document.|
-|[SaveReport](WebAPI\OlapGrid#SaveReport)|It loads a report from the database and refreshes the control with it.|
+|[Export](WebAPI\OlapGrid#Export)|It is used to export the PivotGrid data to specified format.|
+|[SaveReport](WebAPI\OlapGrid#SaveReport)|It saves the current report to database with the specified name.|
 |[LoadReportFromDB](WebAPI\OlapGrid#LoadReportFromDB)|It loads a report from the database and refreshes the control with it.|
 |[DeferUpdate](WebAPI\OlapGrid#DeferUpdate)|It fetches the data with respect to the report available at that instant (i.e) updates the control with current report.|
-|[ExcelExport](WebAPI\OlapGrid#ExcelExport)|It exports the PivotGrid control at that instant to the Excel format.|
+|[ExcelExport](WebAPI\OlapGrid#ExcelExport)|It exports the PivotGrid control at that instant to Excel document.|
 |[PdfExport](WebAPI\OlapGrid#PdfExport)|It exports the PivotGrid control at the instant to PDF document.|
 |[WordExport](WebAPI\OlapGrid#WordExport)|It exports the PivotGrid control at the instant to Word document.|
-|[CsvExport](WebAPI\OlapGrid#CsvExport)|It exports the PivotGrid control at the instant to Csv document.|
+|[CsvExport](WebAPI\OlapGrid#CsvExport)|It exports the PivotGrid control at the instant to CSV document.|
 
-
-### OlapTreeMap
+### PivotTreeMap (OLAP)
 
 |  WebAPI | Description  |
 |---|---|
@@ -179,31 +224,6 @@ The details of WebAPI has been shown in the below table.
 |---|---|
 |[Load](WebAPI\PredictiveAnalysis#Load)|It is used to the load the data.|
 
-
-### RelationalChart
-
-|  WebAPI | Description  |
-|---|---|
-|[](WebAPI\RelationalChart#)||
-|[](WebAPI\RelationalChart#)||
-
-### RelationalClient
-
-|  WebAPI | Description  |
-|---|---|
-|[](WebAPI\RelationalClient#)||
-
-### RelationalGauge
-
-|  WebAPI | Description  |
-|---|---|
-|[](WebAPI\RelationalGauge#)||
-
-### RelationalGrid
-
-|  WebAPI | Description  |
-|---|---|
-|[](WebAPI\RelationalGrid#)||
 
 ### RichTextEditor
 

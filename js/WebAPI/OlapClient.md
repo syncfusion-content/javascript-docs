@@ -11,25 +11,23 @@ keywords: PivotClient, syncfusion, PivotClient webapi
 
 [POST&nbsp;&nbsp;/Api/OlapClient/Initialize](http://js.syncfusion.com/demos/ejServices/api/OlapClient/Initialize)
 
+It fetches the data required to render the PivotClient control initially.
 
 ### URL parameters
 
 |  Parameter |  Description | 
 |---|---|
-|   |   |
+|action|It holds the current action name as string|
+|customObject|It contains the custom object passed from client side|
+|clientParams|It contains the information about the control for initial rendering|
 
 ### Response information 
 
-Code: 
+Code: 200
 
-Content-Type: 
+Content-Type: application/json
 
-Response(JSON):
-
-```javascript
-
-
-```
+Response: serialized JSON string
 
 ### Code example 
 
@@ -42,25 +40,24 @@ Response(JSON):
 
 [POST&nbsp;&nbsp;/Api/OlapClient/InitializeGrid](http://js.syncfusion.com/demos/ejServices/api/OlapClient/InitializeGrid)
 
+It fetches the data required to render the PivotGrid control inside PivotClient.
 
 ### URL parameters
 
 |  Parameter |  Description | 
 |---|---|
-|   |   |
+|action|It holds the current action name as string|
+|currentReport|It contains the current report as compressed string|
+|gridLayout|It contains the layout of PivotGrid control|
+|customObject|It contains the custom object passed from client side|
 
 ### Response information 
 
-Code: 
+Code: 200
 
-Content-Type: 
+Content-Type: application/json
 
-Response(JSON):
-
-```javascript
-
-
-```
+Response: serialized JSON string
 
 ### Code example 
 
@@ -88,25 +85,23 @@ public Dictionary<string, object> InitializeGrid(Dictionary<string, object> json
 
 [POST&nbsp;&nbsp;/Api/OlapClient/InitializeChart](http://js.syncfusion.com/demos/ejServices/api/OlapClient/InitializeChart)
 
+It fetches the data required to render the PivotChart control inside PivotClient.
 
 ### URL parameters
 
 |  Parameter |  Description | 
 |---|---|
-|   |   |
+|action|It holds the current action name as string|
+|currentReport|It contains the current report as compressed string|
+|customObject|It contains the custom object passed from client side|
 
 ### Response information 
 
-Code: 
+Code: 200
 
-Content-Type: 
+Content-Type: application/json
 
-Response(JSON):
-
-```javascript
-
-
-```
+Response: serialized JSON string
 
 ### Code example 
 
@@ -128,25 +123,24 @@ public Dictionary<string, object> InitializeChart(Dictionary<string, object> jso
 
 [POST&nbsp;&nbsp;/Api/OlapClient/InitializeTreeMap](http://js.syncfusion.com/demos/ejServices/api/OlapClient/InitializeTreeMap)
 
+It fetches the data required to render the PivotTreeMap control inside PivotClient.
 
 ### URL parameters
 
 |  Parameter |  Description | 
 |---|---|
-|   |   |
+|action|It holds the current action name as string|
+|currentReport|It contains the current report as compressed string|
+|customObject|It contains the custom object passed from client side|
+
 
 ### Response information 
 
-Code: 
+Code: 200
 
-Content-Type: 
+Content-Type: application/json
 
-Response(JSON):
-
-```javascript
-
-
-```
+Response: serialized JSON string
 
 ### Code example 
 
@@ -169,24 +163,25 @@ public Dictionary<string, object> InitializeTreeMap(Dictionary<string, object> j
 
 [POST&nbsp;&nbsp;/Api/OlapClient/DrillChart](http://js.syncfusion.com/demos/ejServices/api/OlapClient/DrillChart
 
+It fetches the drilled data required to render the PivotChart on drilling.
+
 ### URL parameters
 
 |  Parameter |  Description | 
 |---|---|
-|   |   |
+|action|It holds the current action name as string|
+|drilledSeries|It contains the name of the drilled member|
+|olapReport|It contains the current report as compressed string|
+|clientReports|It contains the report collection as compressed string|
+
 
 ### Response information 
 
-Code: 
+Code: 200
 
-Content-Type: 
+Content-Type: application/json
 
-Response(JSON):
-
-```javascript
-
-
-```
+Response: serialized JSON string
 
 ### Code example 
 
@@ -208,24 +203,25 @@ public Dictionary<string, object> DrillChart(Dictionary<string, object> jsonResu
 
 [POST&nbsp;&nbsp;/Api/OlapClient/DrillTreeMap](http://js.syncfusion.com/demos/ejServices/api/OlapClient/DrillTreeMap)
 
+It fetches the drilled data required to render the PivotTreeMap on drilling.
 
 ### URL parameters
 
 |  Parameter |  Description | 
 |---|---|
-|   |   |
+|action|It holds the current action name as string|
+|drillInfo|It contains the drilled information|
+|olapReport|It contains the current report as compressed string|
+|clientReports|It contains the report collection at that instant|
 
 ### Response information 
 
-Code: 
+Code: 200
 
-Content-Type: 
+Content-Type: application/json
 
-Response(JSON):
+Response: serialized JSON string
 
-```javascript
-
-```
 ```csharp
 
 public Dictionary<string, object> DrillTreeMap(Dictionary<string, object> jsonResult)
@@ -249,25 +245,26 @@ public Dictionary<string, object> DrillTreeMap(Dictionary<string, object> jsonRe
 
 [POST&nbsp;&nbsp;/Api/OlapClient/DrillGrid](http://js.syncfusion.com/demos/ejServices/api/OlapClient/DrillGrid)
 
+It fetches the drilled data required to render the PivotGrid on drilling.
 
 ### URL parameters
 
 |  Parameter |  Description | 
 |---|---|
-|   |   |
+|action|It holds the current action name as string|
+|cellPosition|It holds the position of the cell drilled|
+|currentReport|It contains the current report as compressed string|
+|clientReports|It contains the report collection at that instant|
+|headerInfo|It contains the information about the drilled member|
+|layout|It contains the layout of PivotGrid control|
 
 ### Response information 
 
-Code: 
+Code: 200
 
-Content-Type: 
+Content-Type: application/json
 
-Response(JSON):
-
-```javascript
-
-
-```
+Response: serialized JSON string
 
 ### Code example 
 
@@ -295,25 +292,24 @@ public Dictionary<string, object> DrillGrid(Dictionary<string, object> jsonResul
 
 [POST&nbsp;&nbsp;/Api/OlapClient/FilterElement](http://js.syncfusion.com/demos/ejServices/api/OlapClient/FilterElement)
 
+It fetches the filtered data required to render the control after performing filtering.
 
 ### URL parameters
 
 |  Parameter |  Description | 
 |---|---|
-|   |   |
+|action|It holds the current action name as string|
+|clientParams|It contains the information about the filter action performed|
+|olapReport|It contains the current report as compressed string|
+|clientReports|It contains the report collection at that instant|
 
 ### Response information 
 
-Code: 
+Code: 200
 
-Content-Type: 
+Content-Type: application/json
 
-Response(JSON):
-
-```javascript
-
-
-```
+Response: serialized JSON string
 
 ### Code example 
 
@@ -337,25 +333,24 @@ public Dictionary<string, object> FilterElement(Dictionary<string, object> jsonR
 
 [POST&nbsp;&nbsp;/Api/OlapClient/RemoveSplitButton](http://js.syncfusion.com/demos/ejServices/api/OlapClient/RemoveSplitButton)
 
+It fetches the drilled data required to render the PivotChart on removing an item from report.
 
 ### URL parameters
 
 |  Parameter |  Description | 
 |---|---|
-|   |   |
+|action|It holds the current action name as string|
+|clientParams|It contains the information about the removed item|
+|olapReport|It contains the current report as compressed string|
+|clientReports|It contains the report collection at that instant|
 
 ### Response information 
 
-Code: 
+Code: 200
 
-Content-Type: 
+Content-Type: application/json
 
-Response(JSON):
-
-```javascript
-
-
-```
+Response: serialized JSON string
 
 ### Code example 
 
@@ -377,25 +372,23 @@ public Dictionary<string, object> RemoveSplitButton(Dictionary<string, object> j
 
 [POST&nbsp;&nbsp;/Api/OlapClient/FetchMemberTreeNodes](http://js.syncfusion.com/demos/ejServices/api/OlapClient/FetchMemberTreeNodes)
 
+It fetches the details of the members to render the member editor dialog.
 
 ### URL parameters
 
 |  Parameter |  Description | 
 |---|---|
-|   |   |
+|action|It holds the current action name as string|
+|dimensionName|It contains the hierarchy name|
+|olapReport|It contains the current report as compressed string|
 
 ### Response information 
 
-Code: 
+Code: 200
 
-Content-Type: 
+Content-Type: application/json
 
-Response(JSON):
-
-```javascript
-
-
-```
+Response: serialized JSON string
 
 ### Code example 
 
@@ -418,25 +411,25 @@ public Dictionary<string, object> FetchMemberTreeNodes(Dictionary<string, object
 
 [POST&nbsp;&nbsp;/Api/OlapClient/DropNode](http://js.syncfusion.com/demos/ejServices/api/OlapClient/DropNode)
 
+It fetches the data required to render the control after drag and drop action.
 
 ### URL parameters
 
 |  Parameter |  Description | 
 |---|---|
-|   |   |
+|action|It holds the current action name as string|
+|dropType|It tells whether the dropped item is a node or pivot button|
+|nodeInfo|It contains the information about the dropped item|
+|olapReport|It contains the current report as compressed string|
+|clientReports|It contains the report collection at that instant|
 
 ### Response information 
 
-Code: 
+Code: 200
 
-Content-Type: 
+Content-Type: application/json
 
-Response(JSON):
-
-```javascript
-
-
-```
+Response: serialized JSON string
 
 ### Code example 
 
@@ -460,25 +453,23 @@ public Dictionary<string, object> DropNode(Dictionary<string, object> jsonResult
 
 [POST&nbsp;&nbsp;/Api/OlapClient/CubeChange](http://js.syncfusion.com/demos/ejServices/api/OlapClient/CubeChange)
 
+It fetches the data required to render the control on changing the cube.
 
 ### URL parameters
 
 |  Parameter |  Description | 
 |---|---|
-|   |   |
+|action|It holds the current action name as string|
+|cubeName|It contains the cube name|
+|clientParams|It contains the information of the cube selected|
 
 ### Response information 
 
-Code: 
+Code: 200
 
-Content-Type: 
+Content-Type: application/json
 
-Response(JSON):
-
-```javascript
-
-
-```
+Response: serialized JSON string
 
 ### Code example 
 
@@ -507,25 +498,23 @@ public Dictionary<string, object> CubeChange(Dictionary<string, object> jsonResu
 
 [POST&nbsp;&nbsp;/Api/OlapClient/MeasureGroup](http://js.syncfusion.com/demos/ejServices/api/OlapClient/MeasureGroup)
 
+It fetches the data required to render the control on changing the measure group.
 
 ### URL parameters
 
 |  Parameter |  Description | 
 |---|---|
-|   |   |
+|action|It holds the current action name as string|
+|measureGroupName|It contains the measure group selected|
 
 ### Response information 
 
-Code: 
+Code: 200
 
-Content-Type: 
+Content-Type: application/json
 
-Response(JSON):
+Response: serialized JSON string
 
-```javascript
-
-
-```
 ```csharp
 
 public Dictionary<string, object> MeasureGroup(Dictionary<string, object> jsonResult)
@@ -547,25 +536,25 @@ public Dictionary<string, object> MeasureGroup(Dictionary<string, object> jsonRe
 
 [POST&nbsp;&nbsp;/Api/OlapClient/ToolbarOperations](http://js.syncfusion.com/demos/ejServices/api/OlapClient/ToolbarOperations)
 
+It fetches the data required to render the control on performing toolbar operations.
 
 ### URL parameters
 
 |  Parameter |  Description | 
 |---|---|
-|   |   |
+|action|It holds the current action name as string|
+|toolbarOperation|It contains the operation performed|
+|clientInfo|It contains the information about the operation performed|
+|olapReport|It contains the current report as compressed string|
+|clientReports|It contains the report collection at that instant|
 
 ### Response information 
 
-Code: 
+Code: 200
 
-Content-Type: 
+Content-Type: application/json
 
-Response(JSON):
-
-```javascript
-
-
-```
+Response: serialized JSON string
 
 ### Code example 
 
@@ -578,25 +567,29 @@ Response(JSON):
 
 [POST&nbsp;&nbsp;/Api/OlapClient/ExpandMember](http://js.syncfusion.com/demos/ejServices/api/OlapClient/ExpandMember)
 
+It fetches the children nodes on expanding a node in Member Editor.
 
 ### URL parameters
 
 |  Parameter |  Description | 
 |---|---|
-|   |   |
+|action|It holds the current action name as string|
+|checkedStatus|It contains the checked status of the member in member editor|
+|parentNode|It contains the name of member expanded|
+|tag|It contains the information of the member expanded|
+|dimensionName|It contains the hierarchy name|
+|cubeName|It contains the cube name|
+|olapReport|It contains the current report as compressed string|
+|clientReports|It contains the report collection at that instant|
 
 ### Response information 
 
-Code: 
+Code: 200
 
-Content-Type: 
+Content-Type: application/json
 
-Response(JSON):
+Response: serialized JSON string
 
-```javascript
-
-
-```
 ```csharp
 
 public Dictionary<string, object> ExpandMember(Dictionary<string, object> jsonResult)
@@ -621,25 +614,24 @@ public Dictionary<string, object> ExpandMember(Dictionary<string, object> jsonRe
 
 [POST&nbsp;&nbsp;/Api/OlapClient/UpdateReport](http://js.syncfusion.com/demos/ejServices/api/OlapClient/UpdateReport)
 
+It updates the report in server side.
 
 ### URL parameters
 
 |  Parameter |  Description | 
 |---|---|
-|   |   |
+|action|It holds the current action name as string|
+|clientParams|It contains the information required to update the report|
+|olapReport|It contains the current report as compressed string|
+|clientReports|It contains the report collection at that instant|
 
 ### Response information 
 
-Code: 
+Code: 200
 
-Content-Type: 
+Content-Type: application/json
 
-Response(JSON):
-
-```javascript
-
-
-```
+Response: serialized JSON string
 
 ### Code example 
 
@@ -659,25 +651,25 @@ public Dictionary<string, object> UpdateReport(Dictionary<string, object> jsonRe
 
 [POST&nbsp;&nbsp;/Api/OlapClient/SaveReportToDB](http://js.syncfusion.com/demos/ejServices/api/OlapClient/SaveReportToDB)
 
+It saves the current report to database with the specified name.
 
 ### URL parameters
 
 |  Parameter |  Description | 
 |---|---|
-|   |   |
+|reportName|It contains the name with which the report to be stored|
+|operationalMode|It contains the mode of operation of control whether from client side or server side|
+|analysisMode|It contains the analysis mode to indicate whether the bound data source is OLAP or Relational|
+|olapReport|It contains the current report as compressed string|
+|clientReports|It contains the report collection at that instant|
 
 ### Response information 
 
-Code: 
+Code: 200
 
-Content-Type: 
+Content-Type: application/json
 
-Response(JSON):
-
-```javascript
-
-
-```
+Response: None
 
 ### Code example 
 
@@ -690,25 +682,22 @@ Response(JSON):
 
 [POST&nbsp;&nbsp;/Api/OlapClient/FetchReportListFromDB](http://js.syncfusion.com/demos/ejServices/api/OlapClient/FetchReportListFromDB)
 
+It fetches the list of names of reports stored in database.
 
 ### URL parameters
 
 |  Parameter |  Description | 
 |---|---|
-|   |   |
+|operationalMode|It contains the mode of operation of control whether from client side or server side|
+|analysisMode|It contains the analysis mode to indicate whether the bound data source is OLAP or Relational|
 
 ### Response information 
 
-Code: 
+Code: 200
 
-Content-Type: 
+Content-Type: application/json
 
-Response(JSON):
-
-```javascript
-
-
-```
+Response: serialized JSON string
 
 ### Code example 
 
@@ -720,25 +709,25 @@ Response(JSON):
 
 [POST&nbsp;&nbsp;/Api/OlapClient/LoadReportFromDB](http://js.syncfusion.com/demos/ejServices/api/OlapClient/LoadReportFromDB)
 
+It loads the report with specified name from the database to the control.
 
 ### URL parameters
 
 |  Parameter |  Description | 
 |---|---|
-|   |   |
+|reportName|It contains the name of the report to be loaded|
+|operationalMode|It contains the mode of operation of control whether from client side or server side|
+|analysisMode|It contains the analysis mode to indicate whether the bound data source is OLAP or Relational|
+|olapReport|It contains the current report as compressed string|
+|clientReports|It contains the report collection at that instant|
 
 ### Response information 
 
-Code: 
+Code: 200
 
-Content-Type: 
+Content-Type: application/json
 
-Response(JSON):
-
-```javascript
-
-
-```
+Response: serialized JSON string
 
 ### Code example 
 
@@ -753,25 +742,21 @@ Response(JSON):
 
 [POST&nbsp;&nbsp;/Api/OlapClient/Export](http://js.syncfusion.com/demos/ejServices/api/OlapClient/Export)
 
+It exports the PivotGrid or PivotChart or both to the selected format.
 
 ### URL parameters
 
 |  Parameter |  Description | 
 |---|---|
-|   |   |
+|args|It contains necessary information to export the PivotClient control to the specified format|
 
 ### Response information 
 
-Code: 
+Code: 200
 
-Content-Type: 
+Content-Type: application/json
 
-Response(JSON):
-
-```javascript
-
-
-```
+Response: file
 
 ### Code example 
 
@@ -793,25 +778,21 @@ public void Export()
 
 [POST&nbsp;&nbsp;/Api/OlapClient/ExportOlapClient](http://js.syncfusion.com/demos/ejServices/api/OlapClient/ExportOlapClient)
 
+It exports the PivotGrid or PivotChart or both with OLAP data to the selected format.
 
 ### URL parameters
 
 |  Parameter |  Description | 
 |---|---|
-|   |   |
+|args|It contains the current report as serialized string for exporting process|
 
 ### Response information 
 
-Code: 
+Code: 200
 
-Content-Type: 
+Content-Type: application/json
 
-Response(JSON):
-
-```javascript
-
-
-```
+Response: file
 
 ### Code example 
 
@@ -834,25 +815,21 @@ public void ExportOlapClient()
 
 [POST&nbsp;&nbsp;/Api/OlapClient/GetMDXQuery](http://js.syncfusion.com/demos/ejServices/api/OlapClient/GetMDXQuery)
 
+It retrieves the MDX query formed to fetch the data at that instant.
 
 ### URL parameters
 
 |  Parameter |  Description | 
 |---|---|
-|   |   |
+|olapReport|It contains the current report as compressed string|
 
 ### Response information 
 
-Code: 
+Code: 200
 
-Content-Type: 
+Content-Type: application/json
 
-Response(JSON):
-
-```javascript
-
-
-```
+Response: serialized JSON string
 
 ### Code example 
 
@@ -874,25 +851,23 @@ public string GetMDXQuery(Dictionary<string, object> jsonResult)
 
 [POST&nbsp;&nbsp;/Api/OlapClient/ToggleAxis](http://js.syncfusion.com/demos/ejServices/api/OlapClient/ToggleAxis)
 
+It fetches the data after interchanging the elements in row and column axes.
 
 ### URL parameters
 
 |  Parameter |  Description | 
 |---|---|
-|   |   |
+|action|It holds the current action name as string|
+|currentReport|It contains the current report as compressed string|
+|clientReports|It contains the report collection at that instant|
 
 ### Response information 
 
-Code: 
+Code: 200
 
-Content-Type: 
+Content-Type: application/json
 
-Response(JSON):
-
-```javascript
-
-
-```
+Response: serialized JSON string
 
 ### Code example 
 
@@ -916,25 +891,24 @@ public Dictionary<string, object> ToggleAxis(Dictionary<string, object> jsonResu
 
 [POST&nbsp;&nbsp;/Api/OlapClient/Paging](http://js.syncfusion.com/demos/ejServices/api/OlapClient/Paging)
 
+It fetches the data on navigating between pages in PivotClient with OLAP data.
 
 ### URL parameters
 
 |  Parameter |  Description | 
 |---|---|
-|   |   |
+|action|It contains the current action as string|
+|currentReport|It contains the report at that instant as serialized string|
+|layout|It holds the layout of the PivotGrid control|
+|pagingInfo|It contains the page number to which the control needs to be moved|
 
 ### Response information 
 
-Code: 
+Code: 200
 
-Content-Type: 
+Content-Type: application/json
 
-Response(JSON):
-
-```javascript
-
-
-```
+Response: serialized JSON string
 
 ### Code example 
 
