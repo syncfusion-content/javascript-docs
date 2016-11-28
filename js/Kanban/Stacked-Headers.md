@@ -8,11 +8,11 @@ keywords: stacked headers,kanban stacked headers
 ---
 # Stacked Headers
 
-The stacked headers helps you to group the logical columns in Kanban. It can be shown by setting `showStackedHeader` as true and by defining [`stackedHeaderRows`](https://help.syncfusion.com/js/api/ejkanban#members:stackedheaderrows).
+The stacked headers helps you to group the logical columns in Kanban. It can be shown by setting `showStackedHeader` as true and by defining [`stackedHeaderRows`](https://help.syncfusion.com/api/js/ejkanban#members:stackedheaderrows).
 
 ## Adding Stacked header columns
 
-To stack columns in stacked header, you need to define [`column`](https://help.syncfusion.com/js/api/ejkanban#members:stackedheaderrows-stackedheadercolumns-column) property in [`stackedHeaderColumns`](https://help.syncfusion.com/js/api/ejkanban#members:stackedheaderrows-stackedheadercolumns) with field names of visible columns.
+To stack columns in stacked header, you need to define [`column`](https://help.syncfusion.com/api/js/ejkanban#members:stackedheaderrows-stackedheadercolumns-column) property in [`stackedHeaderColumns`](https://help.syncfusion.com/api/js/ejkanban#members:stackedheaderrows-stackedheadercolumns) with field names of visible columns.
 
 The following code example describes the above behavior.
 
@@ -40,12 +40,12 @@ The following code example describes the above behavior.
                         keyField: "Status", 
                         fields: {
                         primaryKey: "Id",
-                        content: "Text",
+                        content: "Summary",
                         },
                         stackedHeaderRows: [{
                         stackedHeaderColumns: [{
                             headerText: "Unresolved",
-                            column: "Backlog,Validated,In Progress"
+                            column: "Backlog,In Progress"
                         }, {
                             headerText: "Resolved",
                             column: "Testing,Done"

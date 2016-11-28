@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Toolbar
 
-Toolbar can be shown by defining [`toolbarSettings.showToolbar`](http://help.syncfusion.com/js/api/ejgrid#members:toolbarsettings-showtoolbar "showToolbar") should be true. Toolbar has option to add default items in [`toolbarSettings.toolbarItems`](http://help.syncfusion.com/js/api/ejgrid#members:toolbarsettings-toolbaritems "toolbarItems") and customized items in [`toolbarSettings.customToolbarItems`](http://help.syncfusion.com/js/api/ejgrid#members:toolbarsettings-customtoolbaritems "customToolbarItems").
+Toolbar can be shown by defining [`toolbarSettings.showToolbar`](http://help.syncfusion.com/api/js/ejgrid#members:toolbarsettings-showtoolbar "showToolbar") should be true. Toolbar has option to add default items in [`toolbarSettings.toolbarItems`](http://help.syncfusion.com/api/js/ejgrid#members:toolbarsettings-toolbaritems "toolbarItems") and customized items in [`toolbarSettings.customToolbarItems`](http://help.syncfusion.com/api/js/ejgrid#members:toolbarsettings-customtoolbaritems "customToolbarItems").
 
 ## Default Toolbar items
 
@@ -77,11 +77,11 @@ Search text in records</td></tr>
 ![](Toolbar_images/Toolbar_img1.png)
 
 
-I> [`editSettings.allowAdding`](http://help.syncfusion.com/js/api/ejgrid#members:editsettings-allowadding "allowAdding"), [`editSettings.allowEditing`](http://help.syncfusion.com/js/api/ejgrid#members:editsettings-allowediting "allowEditing") and [`editSettings.allowDeleting`](http://help.syncfusion.com/js/api/ejgrid#members:editsettings-allowdeleting "allowdeleting") need to be enabled for add, delete, edit, save & cancel in [`toolbarItems`](http://help.syncfusion.com/js/api/ejgrid#members:toolbarsettings-toolbaritems "toolbaritems"). [`allowSearching`](http://help.syncfusion.com/js/api/ejgrid#members:allowsearching "allowsearching")` to be enabled while adding Search in toolbar to perform search action.
+I> [`editSettings.allowAdding`](http://help.syncfusion.com/api/js/ejgrid#members:editsettings-allowadding "allowAdding"), [`editSettings.allowEditing`](http://help.syncfusion.com/api/js/ejgrid#members:editsettings-allowediting "allowEditing") and [`editSettings.allowDeleting`](http://help.syncfusion.com/api/js/ejgrid#members:editsettings-allowdeleting "allowdeleting") need to be enabled for add, delete, edit, save & cancel in [`toolbarItems`](http://help.syncfusion.com/api/js/ejgrid#members:toolbarsettings-toolbaritems "toolbaritems"). [`allowSearching`](http://help.syncfusion.com/api/js/ejgrid#members:allowsearching "allowsearching")` to be enabled while adding Search in toolbar to perform search action.
 
 ## Custom Toolbar items
 
-Custom toolbar is used to create your own toolbar items in toolbar. It can add by defining [`toolbarSettings.customToolbarItems`](http://help.syncfusion.com/js/api/ejgrid#members:toolbarsettings-customtoolbaritems "customToolbarItems").  Actions for this customized toolbar is defined in [`toolbarClick`](http://help.syncfusion.com/js/api/ejgrid#events:toolbarclick "toolbarclick") event.
+Custom toolbar is used to create your own toolbar items in toolbar. It can add by defining [`toolbarSettings.customToolbarItems`](http://help.syncfusion.com/api/js/ejgrid#members:toolbarsettings-customtoolbaritems "customToolbarItems").  Actions for this customized toolbar is defined in [`toolbarClick`](http://help.syncfusion.com/api/js/ejgrid#events:toolbarclick "toolbarclick") event.
 
 {% highlight html %}
 <div id="Grid"></div>

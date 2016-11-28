@@ -5,6 +5,7 @@ description: Working with Tables customization for RichTextEditor widget
 platform: js
 control: RTE
 documentation: ug
+keywords: RichTextEditor, Tables, Insert a Table, Delete a table
 
 ---
 # Working with Tables
@@ -13,7 +14,7 @@ The editor provides tools that make to work with tables in your content. You can
 
 ## Create a Table
 
-By default, [Insert Table](http://help.syncfusion.com/js/api/ejrte#members:tools-tables) tool is enabled in the editor’s toolbar. There are two ways to insert a table into the editor’s content.
+By default, [Insert Table](http://help.syncfusion.com/api/js/ejrte#members:tools-tables) tool is enabled in the editor’s toolbar. There are two ways to insert a table into the editor’s content.
 
 * [Insert a table](#insert-a-table)
 * [Insert a custom table](#custom-table)

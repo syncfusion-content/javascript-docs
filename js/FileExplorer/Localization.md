@@ -17,7 +17,7 @@ The below table lists out the keys with corresponding texts in English culture.
 {% highlight javascript %}
 
         ej.FileExplorer.Locale["en-US"] = {
-		
+            		
 		    Back: "Backward",
 
             Forward: "Forward",
@@ -192,7 +192,7 @@ The below table lists out the keys with corresponding texts in English culture.
 
 ## Change the Culture
 
-The language of the FileExplorer can be changed by the [locale](http://help.syncfusion.com/js/api/ejfileexplorer#members:locale) property. This property allows the culture code of the country as input. The culture code has to specify in the standard format as ** [Language Code]-[County/Region Code]**. 
+The language of the FileExplorer can be changed by the [locale](http://help.syncfusion.com/api/js/ejfileexplorer#members:locale) property. This property allows the culture code of the country as input. The culture code has to specify in the standard format as ** [Language Code]-[County/Region Code]**. 
 
 For example the culture code for German is **de-DE**.
 

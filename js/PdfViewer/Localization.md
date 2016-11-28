@@ -5,6 +5,7 @@ description: Localization of Syncfusion Essential JS PDF viewer.
 platform: js
 control: PDF viewer
 documentation: ug
+keywords: ejPdfViewer
 ---
 
 ## Localization
@@ -215,6 +216,44 @@ contentText
 Fit the PDF page to the container.
 </td>
 </tr>
+<tr>
+<td colspan="1" rowspan="2">
+print 
+</td>
+<td>
+headerText
+</td>
+<td>
+Print
+</td>
+</tr>
+<tr>
+<td>
+contentText
+</td>
+<td>
+Print the PDF document.
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="2">
+download
+</td>
+<td>
+headerText
+</td>
+<td>
+Download
+</td>
+</tr>
+<tr>
+<td>
+contentText
+</td>
+<td>
+Download the PDF document.
+</td>
+</tr>
 </table>
 
 The following code snippet illustrates you to change the localization to German culture “**de-DE**”
@@ -284,6 +323,15 @@ The following code snippet illustrates you to change the localization to German 
                         headerText: 'An Seite anpassen',
                         contentText: 'Montieren Sie die PDF-Seite in den Behälter.'
                     },
+                    print: {
+                        headerText: ' Drucken',
+                        contentText: ' Drucken Sie das PDF-Dokument.'
+                    },
+                    download: {
+                        headerText: ' Herunterladen',
+                        contentText: ' Laden Sie das PDF-Dokument'
+                    },
+
                 },
             };
         });
@@ -299,5 +347,6 @@ The following code snippet illustrates you to change the localization to German 
 {% endhighlight %}
 
 The following screenshot shows the PDF viewer with tooltip in German language.
-![](Localization_images/Localization_img1.jpeg)
+
+![](Localization_images/Localization_img1.png)
 

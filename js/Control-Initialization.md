@@ -71,14 +71,59 @@ Now, Include the specific theme reference to your HTML file by referring the app
 
 Essential JS widgets requires the following external dependent scripts,
 
-* jQuery-1.10.2.min.js 
-* jQuery.easing.1.3.min.js
+* jQuery (version supported from 1.7.1 to 3.1.0)
 * jsrender.min.js
+
+N> jQuery.easing external dependency has been removed from version 14.3.0.49 onwards. Kindly include this jQuery.easing dependency for versions lesser than 14.3.0.49 in order to support animation effects.
 
 In the below specified location, you can find the dependent script files. Copy and paste it into the **Scripts** folder of your application,
 
 
-<b>(installed location)</b>\ Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets\external 
+<b>(installed location)</b>\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets\external 
+
+#### Supported jQuery Versions
+
+The following table provides jQuery compatibility information.
+
+<table class="props">
+<thead>
+<tr>
+<th colspan="2">EJ Versions</th>
+<th colspan="2">Compatible jQuery Versions</th>
+</tr>
+<tr>
+<th>From</th>
+<th>To</th>
+<th>From</th>
+<th>To</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td class="fromejversion">14.3.0.49</td>
+<td class="toejversion">14.3.0.52</td>
+<td class="fromjqueryversion">1.7.1</td>
+<td class="tojqueryversion">3.1.0</td>
+</tr>
+
+<tr>
+<td class="fromejversion">13.2.0.29</td>
+<td class="toejversion">14.2.0.32</td>
+<td class="fromjqueryversion">1.7.1</td>
+<td class="tojqueryversion">2.2.4</td>
+</tr>
+
+<tr>
+<td class="fromejversion">lower version</td>
+<td class="toejversion">13.1.0.30</td>
+<td class="fromjqueryversion">1.7.1</td>
+<td class="tojqueryversion">2.1.3</td>
+</tr>
+</tbody>
+</table>
+
+> jQuery-2.1.4, jQuery-3.0.0 support has been given from ejVersion 13.2.0.29, 14.3.0.49 onwards respectively.
 
 Apart from the above dependent scripts, you need to refer the **ej.web.all.min.js** file, which contains all the JavaScript components script and globalize library packed together in a minified format.
 
@@ -103,7 +148,6 @@ Include the script references in the head section of your HTML page as shown bel
     <title>My first HTML page</title>
     <link href="Content/ej/web/default-theme/ej.web.all.min.css" rel="stylesheet" />
     <script src="Scripts/jquery-1.10.2.min.js"></script>
-    <script src="Scripts/jquery.easing.1.3.min.js"></script>
     <script src="Scripts/jsrender.min.js"></script>
     <script src="Scripts/ej/ej.web.all.min.js"></script>
   </head>
@@ -131,7 +175,6 @@ Add the `<input>` element within the `<body>` section, which acts as a container
         <title>My first HTML page</title>
         <link href="Content/ej/web/default-theme/ej.web.all.min.css" rel="stylesheet" />
         <script src="Scripts/jquery-1.10.2.min.js"></script>
-        <script src="Scripts/jquery.easing.1.3.min.js"></script>
         <script src="Scripts/jsrender.min.js"></script>
         <script src="Scripts/ej/ej.web.all.min.js"></script>
     </head>
@@ -175,6 +218,7 @@ The below image depicts that the NuGet Packages for JavaScript has been successf
 ### Adding HTML page in your application
 
 Right click on your Project in Solution Explorer. Select `Add|New Item|HTML Page` and add it to your application. The blank HTML page will be added.
+
 ![](/js/Control-Initialization_images/Control-Initialization_img8.png) 
 
 ### Adding reference to the required style sheets
@@ -208,7 +252,6 @@ Include the reference to the required JavaScript files in your HTML page as show
     <title>My first HTML page</title>
     <link href="Content/ej/web/default-theme/ej.web.all.min.css" rel="stylesheet" />
     <script src="Scripts/jquery-1.10.2.min.js"></script>
-    <script src="Scripts/jquery.easing.1.3.min.js"></script>
     <script src="Scripts/jsrender.min.js"></script>
     <script src="Scripts/ej/ej.web.all.min.js"></script>
 </head>
@@ -240,7 +283,6 @@ Create a basic HTML file and directly refer all the required CDN links for the [
         <title>My first HTML page</title>
         <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/default-theme/ej.web.all.min.css" rel="stylesheet" />
         <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
-        <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"></script>
         <script src="http://cdn.syncfusion.com/js/assets/external/jsrender.min.js"></script>
         <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"></script> 
     </head>
@@ -264,7 +306,6 @@ Add the `<input>` element within the `<body>` section, which acts as a container
         <title>My first HTML page</title>
         <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/default-theme/ej.web.all.min.css" rel="stylesheet" />
         <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
-        <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"></script>
         <script src="http://cdn.syncfusion.com/js/assets/external/jsrender.min.js"></script>
         <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"></script> 
     </head>

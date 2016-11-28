@@ -9,7 +9,7 @@ keywords: contextual tab and tab set
 
 # Contextual Tabs
 
-[`Contextual Tabs`](http://help.syncfusion.com/js/api/ejribbon#members:contextualtabs) are collection of Tabs that extended styling and can be shown based on some criteria. Contextual Tabs can be added like [`tabs`](http://help.syncfusion.com/js/api/ejribbon#members:tabs) including groups and content section. You can set [`backgroundColor`](http://help.syncfusion.com/js/api/ejribbon#members:contextualtabs-backgroundcolor) and [`borderColor`](http://help.syncfusion.com/js/api/ejribbon#members:contextualtabs-bordercolor) to highlight them as Tab set
+[`Contextual Tabs`](http://help.syncfusion.com/api/js/ejribbon#members:contextualtabs) are collection of Tabs that extended styling and can be shown based on some criteria. Contextual Tabs can be added like [`tabs`](http://help.syncfusion.com/api/js/ejribbon#members:tabs) including groups and content section. You can set [`backgroundColor`](http://help.syncfusion.com/api/js/ejribbon#members:contextualtabs-backgroundcolor) and [`borderColor`](http://help.syncfusion.com/api/js/ejribbon#members:contextualtabs-bordercolor) to highlight them as Tab set
 
 {% highlight html %}
 

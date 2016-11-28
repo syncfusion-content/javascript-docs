@@ -18,9 +18,9 @@ The number of days and its associated appointments are usually grouped together 
 * Agenda
 * Timeline View
 
-Usually these view options are displayed as a toolbar in the date-header section of the Schedule control. The items within the views toolbar can be added/removed based on the value passed to the [views](/js/api/ejschedule#members:views) property. 
+Usually these view options are displayed as a toolbar in the date-header section of the Schedule control. The items within the views toolbar can be added/removed based on the value passed to the [views](/api/js/ejschedule#members:views) property. 
 
-By default, the Schedule control’s active view is **Week** view. Also, it is possible to change the active view of the Scheduler by setting [currentView](/js/api/ejschedule#members:currentview) option with the required view name as depicted below.
+By default, the Schedule control’s active view is **Week** view. Also, it is possible to change the active view of the Scheduler by setting [currentView](/api/js/ejschedule#members:currentview) option with the required view name as depicted below.
 
 {% highlight html %}
 
@@ -79,7 +79,7 @@ $(function() {
 
 ## Week
 
-It’s a view displaying a count of 7 days (from Sunday to Saturday) with all its related appointments. The first day of the week can be changed using the [firstDayOfWeek](/js/api/ejschedule#members:firstdayofweek) API which accepts either the `integer` (Sunday=0, Monday=1, Tuesday=2, etc) or `string` (“Sunday”, “Monday”, etc) or `ej.Schedule.DayOfWeek` enum type value. The default value of this **firstDayOfWeek** depends on the current culture (language) used in the Scheduler.
+It’s a view displaying a count of 7 days (from Sunday to Saturday) with all its related appointments. The first day of the week can be changed using the [firstDayOfWeek](/api/js/ejschedule#members:firstdayofweek) API which accepts either the `integer` (Sunday=0, Monday=1, Tuesday=2, etc) or `string` (“Sunday”, “Monday”, etc) or `ej.Schedule.DayOfWeek` enum type value. The default value of this **firstDayOfWeek** depends on the current culture (language) used in the Scheduler.
 
 {% highlight html %}
 
@@ -116,7 +116,7 @@ $(function() {
 
 ## Work Week 
 
-Work week view displays the working days of the week (count of 5 days) and its associated appointments. It is also possible to customize the days to be displayed in the work week view using [workWeek](/js/api/ejschedule#members:workweek) API which accepts the string array such as ["Monday", "Tuesday", "Wednesday", "Thursday" and "Friday"]. By default, it renders from Monday to Friday (5 days).
+Work week view displays the working days of the week (count of 5 days) and its associated appointments. It is also possible to customize the days to be displayed in the work week view using [workWeek](/api/js/ejschedule#members:workweek) API which accepts the string array such as ["Monday", "Tuesday", "Wednesday", "Thursday" and "Friday"]. By default, it renders from Monday to Friday (5 days).
 
 {% highlight html %}
 
@@ -155,7 +155,7 @@ $(function() {
 
 Month view displays the entire days of a particular month and all its related appointments. An alternative way to navigate to a particular date in a day view directly from Month view, clicking on the appropriate month cell date header will do so. If the week date range column is clicked, it will navigate to the corresponding week view.
 
-The next and previous month date cells in the Month view can be shown/hidden on the Scheduler using [showNextPrevMonth](/js/api/ejschedule#members:shownextprevmonth) property by setting it to *false*.
+The next and previous month date cells in the Month view can be shown/hidden on the Scheduler using [showNextPrevMonth](/api/js/ejschedule#members:shownextprevmonth) property by setting it to *false*.
 
 For example – To set the Month view as current view in Scheduler and to hide the other month days in it, refer the below code example.
 
@@ -195,7 +195,7 @@ N> An appointment directly created in Month view will be considered as an all-da
 
 ## Custom
 
-The Scheduler can be displayed with the user-specified date ranges, such as 4 days or any specific date ranges instead of default view options, by making use of the [renderDates](/js/api/ejschedule#members:renderdates) property. This property includes two sub properties namely **start** and **end**, which accepts the date object or date value in string format to specify the date range. 
+The Scheduler can be displayed with the user-specified date ranges, such as 4 days or any specific date ranges instead of default view options, by making use of the [renderDates](/api/js/ejschedule#members:renderdates) property. This property includes two sub properties namely **start** and **end**, which accepts the date object or date value in string format to specify the date range. 
 
 To display the custom view option in the toolbar-like view options in the scheduler header area, add the `CustomView` value to the views property array collection as shown below. 
 
@@ -245,7 +245,7 @@ N> When the `currentDate` property of Scheduler is set with a date, that lies be
 
 ## Agenda
 
-This View option lists out the appointments in a grid-like view for the next 7 days by default from the current date. The count of the number of appointments to be listed in this view can be customized using the [agendaViewSettings.daysInAgenda](/js/api/ejschedule#members:agendaviewsettings-daysinagenda).
+This View option lists out the appointments in a grid-like view for the next 7 days by default from the current date. The count of the number of appointments to be listed in this view can be customized using the [agendaViewSettings.daysInAgenda](/api/js/ejschedule#members:agendaviewsettings-daysinagenda).
 
 {% highlight html %}
 
@@ -283,7 +283,7 @@ $(function() {
 
 {% endhighlight %}
 
-N> In Agenda view, the templates can be applied for the date and time columns which can be referred [here](/js/api/ejschedule#members:agendaviewsettings). Also, the template passed through the [appointmentTemplateID](/js/api/ejschedule#members:appointmenttemplateid) will gets applied to the event column in Agenda view.
+N> In Agenda view, the templates can be applied for the date and time columns which can be referred [here](/api/js/ejschedule#members:agendaviewsettings). Also, the template passed through the [appointmentTemplateID](/api/js/ejschedule#members:appointmenttemplateid) will gets applied to the event column in Agenda view.
 
 ## Restriction on View Navigation
 
@@ -326,7 +326,7 @@ N> Even though Week view is the active view in Scheduler by default, if it is no
 
 ## Timeline View
 
-Timeline view displays the day, time and its associated events horizontally arranged from left to right. By default, Scheduler renders in vertical mode and it can be changed to the timeline mode using [orientation](/js/api/ejschedule#members:orientation) property which accepts both the `string` and `ej.Schedule.Orientation` enum value.
+Timeline view displays the day, time and its associated events horizontally arranged from left to right. By default, Scheduler renders in vertical mode and it can be changed to the timeline mode using [orientation](/api/js/ejschedule#members:orientation) property which accepts both the `string` and `ej.Schedule.Orientation` enum value.
 
 All the applicable features in Vertical mode works similar with Timeline mode (Horizontal) and only the visualization of the layout changes based on the orientation.
 

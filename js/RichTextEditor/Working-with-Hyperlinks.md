@@ -5,6 +5,7 @@ description: Working with Hyperlinks customization in RichTextEditor widget
 platform: js
 control: RTE
 documentation: ug
+keywords: RichTextEditor, Hyperlinks, Add/Edit a hyperlink
 
 ---
 # Working with Hyperlinks

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Selection and Hovering
+title: Selection and Hovering
 description: Selection and Hovering
 documentation: ug
 platform: js
@@ -9,9 +9,9 @@ keywords: selection, hovering,kanban selection, hovering
 
 # Selection and Hovering
 
-Selection provides an interactive support to highlight the card that you select. Selection can be done through simple Mouse down or Keyboard interaction. To enable selection, set [`allowSelection`](https://help.syncfusion.com/js/api/ejkanban#members:allowselection) as true.
+Selection provides an interactive support to highlight the card that you select. Selection can be done through simple Mouse down or Keyboard interaction. To enable selection, set [`allowSelection`](https://help.syncfusion.com/api/js/ejkanban#members:allowselection) as true.
 
-You can see the mouse hovering effect on the corresponding cards using [`allowHover`](https://help.syncfusion.com/js/api/ejkanban#members:allowhover) property. By default selection and hovering is `true`.
+You can see the mouse hovering effect on the corresponding cards using [`allowHover`](https://help.syncfusion.com/api/js/ejkanban#members:allowhover) property. By default selection and hovering is `true`.
 
 ## Types of Selection
 
@@ -22,11 +22,11 @@ Two types of selections available in Kanban are,
 
 ### Single Selection
 
-To enable single selection by setting [`selectionType`](https://help.syncfusion.com/js/api/ejkanban#members:selectiontype) property as single.
+To enable single selection by setting [`selectionType`](https://help.syncfusion.com/api/js/ejkanban#members:selectiontype) property as single.
 
 ### Multiple Selection
 
-Multiple selections is an interactive support to select a group of cards in Kanban by mouse or keyboard interactions. To enable multiple selections by set [`selectionType`](https://help.syncfusion.com/js/api/ejkanban#members:selectiontype) property as `multiple`.
+Multiple selections is an interactive support to select a group of cards in Kanban by mouse or keyboard interactions. To enable multiple selections by set [`selectionType`](https://help.syncfusion.com/api/js/ejkanban#members:selectiontype) property as `multiple`.
 
 You can select multiple random cards below key press.
 

@@ -31,7 +31,6 @@ Create an HTML file and add the following code template to the HTML file.
       <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/gradient-saffron-dark/ej.web.all.min.css" rel="stylesheet" />
       <!--Scripts-->
       <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
-      <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"> </script>
       <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"></script>
       <!--Add custom scripts here -->
    </head>
@@ -94,8 +93,8 @@ Initialize Button in the script with properties.
             size: "large",
             click: "playpause",
             contentType: "textandimage",
-            defaultPrefixIcon: "e-mediaplay e-uiLight",
-            activePrefixIcon: "e-mediapause e-uiLight",
+            defaultPrefixIcon: "e-icon e-mediaplay",
+            activePrefixIcon: "e-icon e-mediapause",
         });
 
 
@@ -223,8 +222,8 @@ Add the following code in the **&lt;script&gt;** tag.
             size: "large",
             click: "playpause",
             contentType: "textandimage",
-            defaultPrefixIcon: "e-mediaplay e-uiLight",
-            activePrefixIcon: "e-mediapause e-uiLight",
+            defaultPrefixIcon: "e-icon e-mediaplay",
+            activePrefixIcon: "e-icon e-mediapause",
         });
 
 

@@ -9,87 +9,98 @@ documentation: ug
 
 # Getting Started
 
-## Create your first Radial Slider control in JavaScript
-
 In this section, you can learn how to create a simple **Radial Slider**.      
 
 ![](getting-started_images\getting-started_img1.png)
 
-**Create a simple Radial Slider**
+The external script dependencies of the RadialSlider component are,
 
-The following steps guide you to add a **Radial Slider** control.
+* [jQuery 1.7.1](http://jquery.com/) and later versions.
 
-1. Create an **HTML** file and paste the following template for web layout.
+And the internal script dependencies of the RadialSlider widget are:
 
-        {% highlight html %}
+<table>
+    <tr>
+        <th>File </th>
+        <th>Description / Usage </th>
+    </tr>
+    <tr>
+        <td>ej.core.min.js</td>
+        <td>Must be referred always before using all the JS controls.</td>
+    </tr>
+    <tr>
+        <td>ej.touch.min.js</td>
+        <td>For providing touch support</td>
+    </tr>
+    <tr>
+        <td>ej.radialslider.min.js</td>
+        <td>This is main source file specific for rendering RadialSlider</td>
+    </tr>
+</table>
 
-            <html>
-            <head>
-            <title>Radial Slider</title>
-            <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css"rel="stylesheet"/>
-            <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
-            <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"></script>
-            </head>
-            <body>
-                    <!-- Adds Radial Slider control Here -->
-            </body>
-            </html>
+For getting started you can use the ‘ej.web.all.min.js’ file, which encapsulates all the 'ej' controls and frameworks in one single file.<br/> 
 
-        {% endhighlight %}
+For themes, you can use the ‘ej.web.all.min.css’ CDN link from the snippet given. To add the themes in your application, please refer [this link](http://help.syncfusion.com/js/theming-in-essential-javascript-components#adding-specific-theme-to-your-application).
 
-2. Create a **div** element that is a container for **Radial Slider**. You can Refer to the following code example.
+
+## Preparing HTML document
+
+Create a new HTML file and add [CDN](http://help.syncfusion.com/js/cdn) links to the [JavaScript](http://help.syncfusion.com/js/dependencies) and [CSS](http://help.syncfusion.com/js/theming-in-essential-javascript-components) dependencies to your project.
+
+{% highlight html %}
+
+    <!DOCTYPE html>
+
+    <html>
+
+    <head>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8" />
+
+        <!-- style sheet for default theme(flat azure) -->
+
+        <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css"
+              rel="stylesheet" />
+
+        <!--scripts-->
+
+        <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.11.3.min.js"></script>
+
+        <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"></script>
+
+        <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"></script>
+
+    </head>
+
+    <body>
+
+        <!--Place element to create RadialSlider-->
+
+        <script>
+
+            // Place your script code here to initialize RadialSlider
+
+        </script>
+
+    </body>
+
+    </html>
+
+{% endhighlight %}
+
+ N>  In production, we highly recommend you to use our [custom script generator](http://help.syncfusion.com/js/include-only-the-needed-widgets#) to create a custom script file with required controls and its dependencies only. Also to reduce the file size further please use [GZip compression](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/optimize-encoding-and-transfer?hl=en#text-compression-with-gzip) on your server. 
+
+## Create your first Radial Slider control in JavaScript
+
+Create a **div** element that is a container for **Radial Slider**. You can Refer to the following code example.
 
         {% highlight html %}
         
-            <!DOCTYPE html>
-            <html xmlns="http://www.w3.org/1999/xhtml">
-            <head>
-                <title>RadialSlider - GettingStarted</title>
-                <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8" />
-                <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
-                <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/responsive-css/ej.responsive.css" rel="stylesheet"/>
-                <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.11.3.min.js" type="text/javascript"> </script>	
-                <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js" type="text/javascript"></script>
-                <script src="http://cdn.syncfusion.com/js/assets/external/angular.min.js" type="text/javascript"></script>
-                <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js" type="text/javascript"></script>    
-                <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/common/ej.widget.angular.min.js" type="text/javascript"></script>
-
-            </head>
-            <body>
-                <div id="radialSlider">
-                </div>
-                <script>
-                //Add the below script elements here.
-                </script>
-            </body>
-            </html>
-
+                <div id="radialSlider"></div>
+                
         {% endhighlight %}
 
-3. Add the following styles in your code.
-    
-    {% highlight css %}
-
-        <style type="text/css" class="cssStyles">
-        
-            .content {
-                padding: 0 25px;
-            }
-
-            p {
-                text-indent: 1em;
-                text-align: justify;
-            }
-
-            #radialSlider.e-radialslider {
-                margin: 0 auto;
-            }
-    
-        </style>
-       
-       {% endhighlight %}
-
-4. Initialize the "RadialSlider" widgets by adding the script section as below.
+Initialize the "RadialSlider" widgets by adding the script section as below.
 
     {% highlight js %}
     

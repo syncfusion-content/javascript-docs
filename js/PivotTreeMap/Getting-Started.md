@@ -17,11 +17,10 @@ This section covers the information that you need to know to populate a simple P
 
 Create a HTML page and add scripts and style sheets that are mandatorily required to render a PivotTreeMap widget which are highlighted below in an appropriate order.
 
-1.	ej.web.all.min.css
-2.	jQuery-1.10.2.min.js
-3.	jQuery.easing.1.3.min.js
-4.	ej.web.all.min.js
-5.	jsrender.min.js
+1. ej.web.all.min.css
+2. jQuery-3.0.0.min.js
+3. ej.web.all.min.js
+4. jsrender.min.js
 
 ### Initialize PivotTreeMap
 
@@ -33,27 +32,26 @@ Place a "div" tag in the HTML page which acts as a container for the PivotTreeMa
 <html> 
 <head> 
     <title>PivotTreeMap - Getting Started</title> 
-    <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" type="text/css" /> 
-    <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js" type="text/javascript"></script> 
-    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js" type="text/javascript"></script>
-    <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js" type="text/javascript"></script> 
-    <script src="http://cdn.syncfusion.com/js.assets/external/jsrender.min.js.js" type="text/javascript"></script> 
+    <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" type="text/css" />
+    <script src="http://cdn.syncfusion.com/js/assets/external/jquery-3.0.0.min.js" type="text/javascript"></script>
+    <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js" type="text/javascript"></script>
+    <script src="http://cdn.syncfusion.com/js/assets/external/jsrender.min.js" type="text/javascript"></script>
 </head> 
 <body> 
-     <! --Create a tag which acts as a container for ejPivotTreeMap widget. --> 
-     <div id="PivotTreeMap1" style="min-height: 275px; min-width: 525px; height: 460px; width: 99%;"> </div> 
-     <script type="text/javascript"> 
-         $(function () { 
-              //Set properties and initialize ejPivotTreeMap widget. 
-              $("#PivotTreeMap1").ejPivotTreeMap(); 
-         }); 
-     </script> 
+    <! --Create a tag which acts as a container for ejPivotTreeMap widget. --> 
+    <div id="PivotTreeMap1" style="min-height: 275px; min-width: 525px; height: 460px; width: 99%;"> </div> 
+    <script type="text/javascript"> 
+        $(function () { 
+            //Set properties and initialize ejPivotTreeMap widget. 
+            $("#PivotTreeMap1").ejPivotTreeMap(); 
+        }); 
+    </script> 
 </body> 
 </html>
 
 {% endhighlight %}
 
-### Populate PivotTreeMap with Data Source
+### Populate PivotTreeMap with DataSource
 
 Initialize the OLAP data source for PivotTreeMap widget as shown below.
 
@@ -62,7 +60,7 @@ Initialize the OLAP data source for PivotTreeMap widget as shown below.
 <html> 
 
 //……
- 
+
 <body> 
     <div id="PivotTreeMap1" style=" min-height: 275px; min-width: 525px; height: 460px; width: 99%;"> </div> 
     <script type="text/javascript"> 
@@ -83,18 +81,18 @@ Initialize the OLAP data source for PivotTreeMap widget as shown below.
                             fieldName: "[Measures].[Customer Count]", 
                         }],
                         axis: "columns" 
-                   }] 
-               } 
-           }); 
-       }); 
-   </script>
-   
-   <! --Tooltip labels can be localized here-->
-   <script id="tooltipTemplate" type="application/jsrender">
+                }] 
+            } 
+        }); 
+    }); 
+</script>
+
+<! --Tooltip labels can be localized here-->
+<script id="tooltipTemplate" type="application/jsrender">
         <div style="background:White; color:black; font-size:12px; font-weight:normal; border: 1px solid #4D4D4D; white-space: nowrap;border-radius: 2px; margin-right: 25px; min-width: 110px;padding-right: 5px; padding-left: 5px; padding-bottom: 2px ;width: auto; height: auto;">
             <div>Measure(s) : {{:~Measures(#data)}}</div><div>Row : {{:~Row(#data)}}</div><div>Column : {{:~Column(#data)}}</div><div>Value : {{:~Value(#data)}}</div>
         </div>
-   </script>  
+</script>  
 </body> 
 </html>
 
@@ -120,11 +118,10 @@ Now you need to set “GettingStarted.html” as start-up page. In-order to do s
 ### Scripts and CSS Initialization
 The scripts and style sheets that are mandatorily required to render a PivotTreeMap widget inside a HTML page are highlighted below in an appropriate order.
 
-1.	ej.web.all.min.css
-2.	jQuery-1.10.2.min.js
-3.	jQuery.easing.1.3.min.js
-4.	ej.web.all.min.js
-5.	jsrender.min.js
+1. ej.web.all.min.css
+2. jQuery-3.0.0.min.js
+3. ej.web.all.min.js
+4. jsrender.min.js
 
 The scripts and style sheets listed above could be found in any of the following locations:
 
@@ -138,15 +135,15 @@ NuGet Package: [Click here](http://helpjs.syncfusion.com/js/installation-and-dep
 In-order to initialize a PivotTreeMap widget, first you need to define a “div” tag with an appropriate “id” attribute which acts as a container for PivotTreeMap widget. Then you need to initialize the widget using `ejPivotTreeMap` method.
     
 {% highlight html %}
+
 <!DOCTYPE html> 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head> 
     <title>PivotTreeMap - Getting Started</title> 
-    <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" type="text/css" /> 
-    <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js" type="text/javascript"></script> 
-    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js" type="text/javascript"></script>
-    <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js" type="text/javascript"></script> 
-    <script src="http://cdn.syncfusion.com/js.assets/external/jsrender.min.js.js" type="text/javascript"></script> 
+    <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" type="text/css" />
+    <script src="http://cdn.syncfusion.com/js/assets/external/jquery-3.0.0.min.js" type="text/javascript"></script>
+    <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js" type="text/javascript"></script>
+    <script src="http://cdn.syncfusion.com/js/assets/external/jsrender.min.js" type="text/javascript"></script>
 </head> 
 <body> 
     <form id="form1" runat="server"> 
@@ -156,11 +153,11 @@ In-order to initialize a PivotTreeMap widget, first you need to define a “div�
             <script type="text/javascript"> 
                 //Set properties and initialize ejPivotTreeMap widget. 
                 $(function () 
-	            { 
+                { 
                     $("#PivotTreeMap1").ejPivotTreeMap(
                     { 
-                        url: "/PivotTreeMapService" 
-		            });
+                        url: "/Olap" 
+                    });
                 }); 
             </script>
 
@@ -180,7 +177,7 @@ In-order to initialize a PivotTreeMap widget, first you need to define a “div�
 
 The “url” property in PivotTreeMap widget points the service endpoint, where data are processed and fetched in the form of JSON. The service used for the PivotTreeMap widget as endpoint are WCF and WebAPI.
 
-N> The above "GettingStarted.html" contains WebAPI URL, which is **“/PivotTreeMapService”**. Suppose if you are using WCF service then the URL would look like **"/PivotTreeMapService.svc"**.
+N> The above "GettingStarted.html" contains WebAPI URL, which is **“/Olap”**. Suppose if you are using WCF service then the URL would look like **"/OlapService.svc"**.
 
 Register the referenced assemblies in Web.config file available at the root of the application.
 
@@ -191,7 +188,7 @@ Register the referenced assemblies in Web.config file available at the root of t
         …… 
         ……
         <add assembly="Syncfusion.EJ, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
-        <add assembly="Syncfusion.EJ.Olap, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+        <add assembly="Syncfusion.EJ.Pivot, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
         <add assembly="Syncfusion.Linq.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
         <add assembly="Syncfusion.Olap.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
         <add assembly="Syncfusion.Compression.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" /> 
@@ -208,21 +205,21 @@ Register the referenced assemblies in Web.config file available at the root of t
 
 **Adding a WebAPI Controller**
 
-To add a WebAPI controller in your existing Web Application, right-click on the project in Solution Explorer and select **Add > New Item.** In the **Add New Item** window, select **WebAPI Controller Class** and name it as “PivotTreeMapServiceController.cs”, click **Add.**
+To add a WebAPI controller in your existing Web Application, right-click on the project in Solution Explorer and select **Add > New Item.** In the **Add New Item** window, select **WebAPI Controller Class** and name it as “OlapController.cs”, click **Add.**
 
 Now WebAPI controller is added into your application successfully which in-turn comprise of the following file. The utilization of this file will be explained in the following sections.
  
-* PivotTreeMapServiceController.cs
+* OlapController.cs
 
-N> While adding WebAPI Controller Class, name it with the suffix “Controller” which is mandatory. For example, in demo the controller is named as “PivotTreeMapServiceController”.
+N> While adding WebAPI Controller Class, name it with the suffix “Controller” which is mandatory. For example, in demo the controller is named as “OlapController”.
 
-Next, remove all the existing methods such as “Get”, “Post”, “Put” and “Delete” present inside `PivotTreeMapServiceController.cs` file. 
+Next, remove all the existing methods such as “Get”, “Post”, “Put” and “Delete” present inside `OlapController.cs` file. 
 
 {% highlight c# %}
 
 namespace PivotTreeMapDemo 
 { 
-    public class PivotTreeMapServiceController : ApiController 
+    public class OlapController : ApiController 
     { 
         
     } 
@@ -248,11 +245,11 @@ N> When you have installed any version of SQL Server Analysis Service (SSAS) or 
 * Syncfusion.Pdf.Base
 * Syncfusion.DocIO.Base
 * Syncfusion.EJ
-* Syncfusion.EJ.Olap
+* Syncfusion.EJ.Pivot
 
 **List of Namespaces**
 
-Following are the list of namespaces to be added on top of the main class inside `PivotTreeMapServiceController.cs` file.
+Following are the list of namespaces to be added on top of the main class inside `OlapController.cs` file.
 
 {% highlight c# %}
 
@@ -271,7 +268,7 @@ using OLAPUTILS = Syncfusion.JavaScript.Olap;
 
 namespace PivotTreeMapDemo
 {
-    public class PivotTreeMapServiceController : ApiController
+    public class OlapController : ApiController
     {
 
     }
@@ -281,13 +278,13 @@ namespace PivotTreeMapDemo
 
 **Datasource Initialization**
 
-Now, the connection string to connect OLAP Cube and PivotTreeMap instances are created immediately inside the main class in `PivotTreeMapServiceController.cs` file.
+Now, the connection string to connect OLAP Cube and PivotTreeMap instances are created immediately inside the main class in `OlapController.cs` file.
 
 {% highlight c# %}
 
 namespace PivotTreeMapDemo
 {
-    public class PivotTreeMapServiceController : ApiController
+    public class OlapController : ApiController
     {
         PivotTreeMap htmlHelper = new PivotTreeMap();
         string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
@@ -299,13 +296,13 @@ namespace PivotTreeMapDemo
 
 **Service methods in WebAPI Controller**
 
-Now you need to define the service methods inside PivotTreeMapServiceController class, found inside `PivotTreeMapServiceController.cs` file, created while adding WebAPI Controller Class to your Web Application.
+Now you need to define the service methods inside OlapController class, found inside `OlapController.cs` file, created while adding WebAPI Controller Class to your Web Application.
  
 {% highlight c# %}
 
 namespace PivotTreeMapDemo 
 { 
-    public class PivotTreeMapServiceController : ApiController
+    public class OlapController : ApiController
     {
         PivotTreeMap htmlHelper = new PivotTreeMap(); 
         string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";

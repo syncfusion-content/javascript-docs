@@ -9,37 +9,94 @@ documentation: ug
 
 # Getting Started
 
+The external script dependencies of the RadialMenu component are,
+
+* [jQuery 1.7.1](http://jquery.com/) and later versions.
+
+And the internal script dependencies of the RadialMenu widget are:
+
+<table>
+    <tr>
+        <th>File </th>
+        <th>Description / Usage </th>
+    </tr>
+    <tr>
+        <td>ej.core.min.js</td>
+        <td>Must be referred always before using all the JS controls.</td>
+    </tr>
+    <tr>
+        <td>ej.data.min.js</td>
+        <td>Used to handle data operation and should be used while binding data to JS controls.</td>
+    </tr>
+    <tr>
+        <td>ej.touch.min.js</td>
+        <td>For providing touch support</td>
+    </tr>
+    <tr>
+        <td>ej.radialmenu.min.js</td>
+        <td>This is main source file specific for rendering RadialMenu</td>
+    </tr>
+</table>
+
+For getting started you can use the ‘ej.web.all.min.js’ file, which encapsulates all the 'ej' controls and frameworks in one single file.<br/> 
+
+For themes, you can use the ‘ej.web.all.min.css’ CDN link from the snippet given. To add the themes in your application, please refer [this link](http://help.syncfusion.com/js/theming-in-essential-javascript-components#adding-specific-theme-to-your-application).
+
+
+## Preparing HTML document
+
+Create a new HTML file and add [CDN](http://help.syncfusion.com/js/cdn) links to the [JavaScript](http://help.syncfusion.com/js/dependencies) and [CSS](http://help.syncfusion.com/js/theming-in-essential-javascript-components) dependencies to your project.
+
+{% highlight html %}
+
+    <!DOCTYPE html>
+
+    <html>
+
+    <head>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8" />
+
+        <!-- style sheet for default theme(flat azure) -->
+
+        <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css"
+              rel="stylesheet" />
+
+        <!--scripts-->
+
+        <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.11.3.min.js"></script>
+
+        <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"></script>
+
+        <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"></script>
+
+    </head>
+
+    <body>
+
+        <!--Place element to create RadialMenu-->
+
+        <script>
+
+            // Place your script code here to initialize RadialMenu
+
+        </script>
+
+    </body>
+
+    </html>
+
+{% endhighlight %}
+
+ N>  In production, we highly recommend you to use our [custom script generator](http://help.syncfusion.com/js/include-only-the-needed-widgets#) to create a custom script file with required controls and its dependencies only. Also to reduce the file size further please use [GZip compression](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/optimize-encoding-and-transfer?hl=en#text-compression-with-gzip) on your server. 
+
 ## Create your first Radial Menu control in JavaScript
 
-In this section, you can learn how to create a simple **Radial Menu**.      
+**RadialMenu** can be rendered using ul li element or div element      
 
 ![](getting-started_images\getting-started_img1.png)
 
 **Create a simple Radial Menu**
-
-The following steps guide you to add a **Radial Menu** control.
-
-Create an **HTML** file and paste the following template for web layout.
-
-{% highlight html %}
-
-
-<html>
-<head>
-<title>Radial Menu</title>
-<link href="[http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css](http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css)"rel="stylesheet"/>
-<script src="[http://code.jquery.com/jquery-1.10.2.min.js](http://code.jquery.com/jquery-1.10.2.min.js)"></script>
-<script src="[http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js](http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js)"></script>
-</head>
-<body>
-        <!-- Adds Radial Menu control Here -->
-        <!-- Adds Radial Menu target content Here -->
-</body>
-</html>
-
-
-{% endhighlight %}
-
 
 
 Create a **div** element that is a container for **Radial Menu**. You can set the images for each item by giving the image **url** with the **data-ej-imageUrl** attribute in the inner list element and text with **data-ej-text** attribute. Refer to the following code example.
@@ -79,18 +136,17 @@ Refer to the following code example to add target content to the **Radial Menu**
 
     <div id="radialtarget">
         <textarea id="textarea">
-            Syncfusion Essential JavaScript Studio for Mobile contains the following built-in theme support with that you can achieve the native appearance and functionality of iOS7, android and windows platforms in your mobile applications.
+          <p>Model–view–controller (MVC) is a software architecture pattern which separates the representation of information from the user's interaction with it.
+             The model consists of application data, business rules, logic, and functions. A view can be any output representation of data, such as a chart or a diagram.
+             Multiple views of the same data are possible, such as a bar chart for management and a tabular view for accountants.
+             The controller mediates input, converting it to commands for the model or view.The central ideas behind MVC are code reusability and in addition to dividing the application into three kinds of components, the MVC design defines the interactions between them.</p>
+          <p>A controller can send commands to its associated view to change the view's presentation of the model (e.g., by scrolling through a document). It can also send commands to the model to update the model's state (e.g., editing a document).</p>
 
-            1.   iOS7
+          <p>A model notifies its associated views and controllers when there has been a change in its state. This notification allows the views to produce updated output, and the controllers to change the available set of commands. A passive implementation of MVC omits these notifications because the application does not require them or the software platform does not support them.</p>
 
-            2.   Android
-
-            3.   Windows
-
-            4.   Flat
-
-            By default, the respective render modes are chosen based on the device where the application runs. You can also force and use a particular theme to a control or the whole application that is discussed in later sections. All of the above widgets are highly customizable and also designed with high performance in mind.
-        </textarea>
+          <p>A view requests from the model the information that it needs to generate an output representation to the user.</p>
+       </textarea>
+    
     </div>
 
 {% endhighlight %}
@@ -111,7 +167,7 @@ Add the following styles in your code.
 
 
 
-Initialize **Radial Menu** control with the **div** element and set its target content in script as follows.
+Initialize **Radial Menu** control with the **div** element and set its target content in the script as follows.
 
 
 
@@ -125,7 +181,7 @@ Initialize **Radial Menu** control with the **div** element and set its target c
 
 
 
-You can display the **Radial Menu** by performing desired action on the target content while selecting the text inside the target. Therefore, call the **show** method in the select action of the content. Refer to the following code example and add it to the script.
+You can display the **Radial Menu** by performing the desired action on the target content while selecting the text inside the target. Therefore, call the **show** method in the select action of the content. Refer to the following code example and add it to the script.
 
 
 

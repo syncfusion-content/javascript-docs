@@ -155,16 +155,16 @@ You can define the image classes specified for the list items as follows.
             }
             .icon-profile
             {
-                background-position: 0 -253px;
+                background-position: 0 -173px;
             }
             .icon-photo
             {
-                background-position: 0 -168px;
+                background-position: 0 -117px;
             }
             .icon-locations
             {
-                background-position: 0 -85px;
-            }    
+                background-position: 0 -55px;
+            }   
     </style>
 
 {% endhighlight %}

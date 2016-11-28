@@ -9,7 +9,7 @@ keywords: context menu ,kanban context menu
 
 # Context Menu  
 
-Context menu is used to improve user action with Kanban using popup menu. It can be shown by defining [`contextMenuSettings.enable`](https://help.syncfusion.com/js/api/ejkanban#members:contextmenusettings-enable) as true. Context menu has option to add default items in [`contextMenuSettings.menuItems`](https://help.syncfusion.com/js/api/ejkanban#members:contextmenusettings-menuitems) and customized items in [`contextMenuSettings.customMenuItems`](https://help.syncfusion.com/js/api/ejkanban#members:contextmenusettings-custommenuitems).
+Context menu is used to improve user action with Kanban using popup menu. It can be shown by defining [`contextMenuSettings.enable`](https://help.syncfusion.com/api/js/ejkanban#members:contextmenusettings-enable) as true. Context menu has option to add default items in [`contextMenuSettings.menuItems`](https://help.syncfusion.com/api/js/ejkanban#members:contextmenusettings-menuitems) and customized items in [`contextMenuSettings.customMenuItems`](https://help.syncfusion.com/api/js/ejkanban#members:contextmenusettings-custommenuitems).
 
 ## Default Context Menu items
 
@@ -58,7 +58,7 @@ Please find the below table for default context menu items and its actions.
             </td>
         </tr>
         <tr>
-            <td rowspan="9">
+            <td rowspan="10">
                 Card
             </td>
             <td>
@@ -132,6 +132,14 @@ Please find the below table for default context menu items and its actions.
                 Move the card to Swim lane which is chosen from given list
             </td>
         </tr>
+         <tr>
+            <td>
+              Print Card
+            </td>
+            <td>
+                Print the specific card
+            </td>
+        </tr>
     </table>
 
     
@@ -180,7 +188,7 @@ The following output is displayed as a result of the above code example.
 
 ## Custom Context Menu
 
-Custom context menu is used to create your own menu item and its action. To add customized context menu items, you need to use [`contextMenuSettings.customMenuItems`](https://help.syncfusion.com/js/api/ejkanban#members:contextmenusettings-custommenuitems) property and to bind required actions for this, use [`contextClick`](https://help.syncfusion.com/js/api/ejkanban#events:contextclick) event.
+Custom context menu is used to create your own menu item and its action. To add customized context menu items, you need to use [`contextMenuSettings.customMenuItems`](https://help.syncfusion.com/api/js/ejkanban#members:contextmenusettings-custommenuitems) property and to bind required actions for this, use [`contextClick`](https://help.syncfusion.com/api/js/ejkanban#events:contextclick) event.
 
 The following code example describes the above behavior.
 
@@ -242,7 +250,7 @@ The following output is displayed as a result of the above code example.
 
 ## Sub Context Menu
 
-Sub context menu is used to add customized sub menu to the custom context menu item. To add a sub context menu, you need to use [`contextMenuSettings.subMenu`](https://help.syncfusion.com/js/api/ejkanban#members:contextmenusettings-custommenuitems-template) property and to bind required actions for this, use [`contextClick`](https://help.syncfusion.com/js/api/ejkanban#events:contextclick) event.
+Sub context menu is used to add customized sub menu to the custom context menu item. To add a sub context menu, you need to use [`contextMenuSettings.subMenu`](https://help.syncfusion.com/api/js/ejkanban#members:contextmenusettings-custommenuitems-template) property and to bind required actions for this, use [`contextClick`](https://help.syncfusion.com/api/js/ejkanban#events:contextclick) event.
 
 The following code example describes the above behavior.
 

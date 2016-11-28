@@ -111,6 +111,193 @@ _BIN2DEC(num)_
 
 
 
+## BITAND
+
+
+The `BITAND` function returns the bitwise `AND` of two numbers.
+
+
+
+**Syntax:**
+
+
+
+_BITAND(num1,num2)_
+
+
+
+**Where:**
+
+
+
+* num1 and num2 should be in decimal format.
+
+
+
+**Remarks:**
+
+
+
+* `#NUM!` - occurs if num1 or num2 is less than zero, if num1 or num2 is a non-integer or is greater than (2^48)-1.
+
+
+
+* `#VALUE!` - occurs if num1 or num2 is a non-numeric value.
+
+
+
+## BITLSHIFT
+
+
+
+The `BITLSHIFT` function returns a number shifted left by specified number of bits.
+
+
+
+**Syntax:**
+
+
+
+_BITLSHIFT(num1,num2)_
+
+
+
+**Where:**
+
+
+
+* num1 must be an integer greater than or equal to 0.
+
+
+
+* Num2 must be an integer.
+
+
+
+**Remarks:**
+
+
+	
+* `#NUM!` - occurs if num1 or num2 is less than zero, if num1 or num2 is a non-integer or is greater than (2^48)-1.
+
+
+
+* `#VALUE!` - occurs if num1 or num2 is a non-numeric value.
+
+
+
+## BITOR
+
+
+
+The `BITOR` function returns a bitwise ‘OR’ of two numbers.
+
+
+
+**Syntax:**
+
+
+
+_BITOR(num1, num2)_
+
+
+
+**Where:**
+
+
+
+* num1 and num2 should be in decimal format.
+
+
+
+**Remarks:**
+
+
+
+* `#NUM!` - occurs if num1 or num2 is less than zero, if num1 or num2 is a non-integer or is greater than (2^48)-1.
+
+
+
+* `#VALUE!` - occurs if num1 or num2 is a non-numeric value.
+
+
+
+## BITRSHIFT
+
+
+
+The `BITRSHIFT` function returns a number shifted right by the specified number of bits.
+
+
+
+**Syntax:**
+
+
+
+_BITRSHIFT(num1,num2)_
+
+
+
+**Where:**
+
+
+
+* num1 must be an integer greater than or equal to 0.
+
+
+
+* Num2 must be an integer.
+
+
+
+**Remarks:**
+
+
+
+* `#NUM!` - occurs if num1 or num2 is less than zero, if num1 or num2 is a non-integer or is greater than (2^48)-1.
+
+
+
+* `#VALUE!` - occurs if num1 or num2 is a non-numeric value.
+
+
+
+## BITXOR
+
+
+
+The `BITXOR` function returns bitwise `XOR` of two numbers.
+
+
+
+**Syntax:**
+
+
+
+_BITXOR(num1, num2)_
+
+
+
+**Where:**
+
+
+
+* num1 and num2 should be in decimal format.
+
+
+
+**Remarks:**
+
+
+
+* `#NUM!` - occurs if num1 or num2 is less than zero, if num1 or num2 is a non-integer or is greater than (2^48)-1.
+
+
+
+* `#VALUE!` - occurs if num1 or num2 is a non-numeric value.
+
+
+
 ## DEC2BIN
 
 

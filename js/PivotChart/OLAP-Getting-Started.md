@@ -18,9 +18,8 @@ This section covers the information required to populate a simple PivotChart wit
 Create a HTML page and add scripts and style sheets that are mandatorily required to render a PivotChart widget which are highlighted below in an appropriate order.
 
 1. ej.web.all.min.css
-2. jQuery-1.10.2.min.js
-3. jQuery.easing.1.3.min.js
-4. ej.web.all.min.js
+2. jQuery-3.0.0.min.js
+3. ej.web.all.min.js
 
 ### Initialize PivotChart
 
@@ -28,26 +27,25 @@ Place a "div" tag in the HTML page which acts as a container for the PivotChart 
 
 {% highlight html %}
 
-    <!DOCTYPE html>
-    <html>
-        <head>
-            <title>PivotChart - Getting Started</title>
-            <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" type="text/css" />
-            <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js" type="text/javascript"></script>
-            <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js" type="text/javascript"></script>
-            <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js" type="text/javascript"></script>
-        </head>
-        <body>
-            <!--Create a tag which acts as a container for ejPivotChart widget.-->
-            <div id="PivotChart1" style="width: 800px; height: 350px"></div>
-            <script type="text/javascript">
-                $(function () {
-                    //Set properties and initialize ejPivotChart widget.
-                    $("#PivotChart1").ejPivotChart();
-                });
-            </script>
-        </body>
-    </html>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PivotChart - Getting Started</title>
+        <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" type="text/css" />
+        <script src="http://cdn.syncfusion.com/js/assets/external/jquery-3.0.0.min.js" type="text/javascript"></script>
+        <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <!--Create a tag which acts as a container for ejPivotChart widget.-->
+        <div id="PivotChart1" style="width: 800px; height: 350px"></div>
+        <script type="text/javascript">
+            $(function () {
+                //Set properties and initialize ejPivotChart widget.
+                $("#PivotChart1").ejPivotChart();
+            });
+        </script>
+    </body>
+</html>
 {% endhighlight %}
 
 ### Populate PivotChart with DataSource
@@ -56,41 +54,41 @@ Initialize the OLAP datasource for PivotChart widget as shown below.
 
 {% highlight html %}
 
-    <html>
+<html>
 
-        //....
+    //....
 
-        <body>
-            <div id="PivotChart1" style="width: 800px; height: 350px"></div>
-            <script type="text/javascript">
-                $(function() {
-                    $("#PivotChart1").ejPivotChart({
-                        dataSource: {
-                            data: "http://bi.syncfusion.com/olap/msmdpump.dll",
-                            catalog: "Adventure Works DW 2008 SE",
-                            cube: "Adventure Works",
-                            rows: [{
-                                fieldName: "[Date].[Fiscal]"
+    <body>
+        <div id="PivotChart1" style="width: 800px; height: 350px"></div>
+        <script type="text/javascript">
+            $(function() {
+                $("#PivotChart1").ejPivotChart({
+                    dataSource: {
+                        data: "http://bi.syncfusion.com/olap/msmdpump.dll",
+                        catalog: "Adventure Works DW 2008 SE",
+                        cube: "Adventure Works",
+                        rows: [{
+                            fieldName: "[Date].[Fiscal]"
+                        }],
+                        columns: [{
+                            fieldName: "[Customer].[Customer Geography]"
+                        }],
+                        values: [{
+                            measures: [{
+                                fieldName: "[Measures].[Internet Sales Amount]",
                             }],
-                            columns: [{
-                                fieldName: "[Customer].[Customer Geography]"
-                            }],
-                            values: [{
-                                measures: [{
-                                    fieldName: "[Measures].[Internet Sales Amount]",
-                                }],
-                                axis: "columns"
-                            }]
-                        },
-                        size: {
-                            height: "350px",
-                            width: "800px"
-                        }
-                    });
+                            axis: "columns"
+                        }]
+                    },
+                    size: {
+                        height: "350px",
+                        width: "800px"
+                    }
                 });
-            </script>
-        </body>
-    </html>
+            });
+        </script>
+    </body>
+</html>
 {% endhighlight %}
 
 The above code will generate a simple PivotChart showing Internet Sales Amount over a period of fiscal years across different customer geographic locations.
@@ -113,10 +111,9 @@ Now you need to set “GettingStarted.html” as start-up page. In-order to do s
 ### Scripts and CSS Initialization
 The scripts and style sheets that are mandatorily required to render a PivotChart widget inside a HTML page are highlighted below in an appropriate order.
 
-1. ej.widgets.all.min.css
-2. jQuery-1.10.2.min.js
-3. jQuery.easing.1.3.min.js
-4. ej.web.all.min.js
+1. ej.web.all.min.css
+2. jQuery-3.0.0.min.js
+3. ej.web.all.min.js
 
 The scripts and style sheets listed above could be found in any of the following locations:
 
@@ -131,39 +128,38 @@ In-order to initialize a PivotChart widget, first you need to define a “div”
     
 {% highlight html %}
 
-    <!DOCTYPE html>
-    <html xmlns="http://www.w3.org/1999/xhtml">
-        <head>
-            <title>PivotChart - Getting Started</title>
-            <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" type="text/css" />
-            <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js" type="text/javascript"></script>
-            <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js" type="text/javascript"></script>
-            <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js" type="text/javascript"></script>
-        </head>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>PivotChart - Getting Started</title>
+        <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" type="text/css" />
+        <script src="http://cdn.syncfusion.com/js/assets/external/jquery-3.0.0.min.js" type="text/javascript"></script>
+        <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js" type="text/javascript"></script>
+    </head>
 
-        <body>
-            <!--Create a tag which acts as a container for ejPivotChart widget.-->
-            <div id="PivotChart1" style="width: 800px; height: 350px"> </div>
-            <script type="text/javascript">
-                //Set properties and initialize ejPivotChart widget.
-                $(function() {
-                    $("#PivotChart1").ejPivotChart({
-                        url: "/OlapChart",
-                        size: {
-                            height: "350px",
-                            width: "800px"
-                        }
-                    });
+    <body>
+        <!--Create a tag which acts as a container for ejPivotChart widget.-->
+        <div id="PivotChart1" style="width: 800px; height: 350px"> </div>
+        <script type="text/javascript">
+            //Set properties and initialize ejPivotChart widget.
+            $(function() {
+                $("#PivotChart1").ejPivotChart({
+                    url: "/Olap",
+                    size: {
+                        height: "350px",
+                        width: "800px"
+                    }
                 });
-            </script>
-        </body>
-    </html>
+            });
+        </script>
+    </body>
+</html>
 
 {% endhighlight %}
 
 The “url” property in PivotChart widget points the service endpoint, where data are processed and fetched in the form of JSON. The services used for the PivotChart widget as endpoint are WCF and WebAPI.
 
-N> The above "GettingStarted.html" contains WebAPI URL, which is **“/OlapChart”**. Suppose if you are using WCF service then the URL would look like **"/OlapChartService.svc"**. 
+N> The above "GettingStarted.html" contains WebAPI URL, which is **“/Olap”**. Suppose if you are using WCF service then the URL would look like **"/OlapService.svc"**. 
 
 Register the referenced assemblies in Web.config file available at the root of the application.
 
@@ -174,7 +170,7 @@ Register the referenced assemblies in Web.config file available at the root of t
         …… 
         ……
         <add assembly="Syncfusion.EJ, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
-        <add assembly="Syncfusion.EJ.Olap, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+        <add assembly="Syncfusion.EJ.Pivot, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
         <add assembly="Syncfusion.Linq.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
         <add assembly="Syncfusion.Olap.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
         <add assembly="Syncfusion.Compression.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" /> 
@@ -191,25 +187,25 @@ Register the referenced assemblies in Web.config file available at the root of t
 
 **Adding a WebAPI Controller**
 
-To add a WebAPI controller in your existing Web Application, right-click on the project in Solution Explorer and select **Add > New Item.** In the **Add New Item** window, select **WebAPI Controller Class** and name it as “OlapChartController.cs”, click **Add.**
+To add a WebAPI controller in your existing Web Application, right-click on the project in Solution Explorer and select **Add > New Item.** In the **Add New Item** window, select **WebAPI Controller Class** and name it as “OlapController.cs”, click **Add.**
 
 Now WebAPI controller is added into your application successfully which in-turn comprise of the following file. The utilization of this file will be explained in the following sections.
  
-* OlapChartController.cs
+* OlapController.cs
 
-N> While adding WebAPI Controller Class, name it with the suffix “Controller” that is mandatory. For example, in demo the controller is named as “OlapChartController”.
+N> While adding WebAPI Controller Class, name it with the suffix “Controller” that is mandatory. For example, in demo the controller is named as “OlapController”.
 
-Next, remove all the existing methods such as “Get”, “Post”, “Put” and “Delete” present inside `OlapChartController.cs` file. 
+Next, remove all the existing methods such as “Get”, “Post”, “Put” and “Delete” present inside `OlapController.cs` file. 
 
 {% highlight c# %}
 
-    namespace PivotChartDemo
+namespace PivotChartDemo
+{
+    public class OlapController : ApiController
     {
-        public class OlapChartController : ApiController
-        {
-        
-        }
+    
     }
+}
 
 {% endhighlight %}
 
@@ -230,107 +226,107 @@ N> When you have installed any version of SQL Server Analysis Service (SSAS) or 
 * Syncfusion.Pdf.Base
 * Syncfusion.DocIO.Base
 * Syncfusion.EJ
-* Syncfusion.EJ.Olap
+* Syncfusion.EJ.Pivot
 
 **List of Namespaces**
 
-Following are the list of namespaces to be added on top of the main class inside `OlapChartController.cs` file.
+Following are the list of namespaces to be added on top of the main class inside `OlapController.cs` file.
 
 {% highlight c# %}
 
-    using Syncfusion.Olap.Manager;
-    using Syncfusion.Olap.Reports;
-    using Syncfusion.JavaScript;
+using Syncfusion.Olap.Manager;
+using Syncfusion.Olap.Reports;
+using Syncfusion.JavaScript;
 
-    namespace PivotChartDemo
+namespace PivotChartDemo
+{
+    public class OlapController : ApiController
     {
-        public class OlapChartController : ApiController
-        {
 
-        }
     }
+}
 
 {% endhighlight %}
 
 **Datasource Initialization**
 
-Now, the connection string to connect OLAP Cube and PivotChart instances are created immediately inside the main class in `OlapChartController.cs` file.
+Now, the connection string to connect OLAP Cube and PivotChart instances are created immediately inside the main class in `OlapController.cs` file.
 
 {% highlight c# %}
 
-    namespace PivotChartDemo
+namespace PivotChartDemo
+{
+    public class OlapController : ApiController
     {
-        public class OlapChartController : ApiController
-        {
-            string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
-            PivotChart pivotChart = new PivotChart();
-            //Other codes
-        }
+        string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
+        PivotChart pivotChart = new PivotChart();
+        //Other codes
     }
+}
 
 {% endhighlight %}
 
 **Service methods in WebAPI Controller**
 
-Now you need to define the service methods inside OlapChartController class, found inside `OlapChartController.cs` file, created while adding WebAPI Controller Class to your Web Application.
+Now you need to define the service methods inside OlapController class, found inside `OlapController.cs` file, created while adding WebAPI Controller Class to your Web Application.
  
 {% highlight c# %}
 
-    namespace PivotChartDemo
+namespace PivotChartDemo
+{
+    public class OlapController : ApiController
     {
-        public class OlapChartController : ApiController
+        string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
+        PivotChart pivotChart = new PivotChart();
+        
+        [System.Web.Http.ActionName("InitializeChart")]
+        [System.Web.Http.HttpPost]
+        public Dictionary<string, object> InitializeChart(Dictionary<string, object> jsonResult)
         {
-            string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
-            PivotChart pivotChart = new PivotChart();
-            
-            [System.Web.Http.ActionName("InitializeChart")]
-            [System.Web.Http.HttpPost]
-            public Dictionary<string, object> InitializeChart(Dictionary<string, object> jsonResult)
-            {
-                OlapDataManager DataManager = new OlapDataManager(connectionString);
-                DataManager.SetCurrentReport(CreateOlapReport());
-                return pivotChart.GetJsonData(jsonResult["action"].ToString(), DataManager);
-            }
+            OlapDataManager DataManager = new OlapDataManager(connectionString);
+            DataManager.SetCurrentReport(CreateOlapReport());
+            return pivotChart.GetJsonData(jsonResult["action"].ToString(), DataManager);
+        }
 
-            [System.Web.Http.ActionName("DrillChart")]
-            [System.Web.Http.HttpPost]
-            public Dictionary<string, object> DrillChart(Dictionary<string, object> jsonResult)
-            {
-                OlapDataManager DataManager = new OlapDataManager(connectionString);
-                DataManager.SetCurrentReport(Syncfusion.JavaScript.Olap.Utils.DeserializeOlapReport(jsonResult["olapReport"].ToString()));
-                return pivotChart.GetJsonData(jsonResult["action"].ToString(), DataManager, jsonResult["drilledSeries"].ToString());
-            }
+        [System.Web.Http.ActionName("DrillChart")]
+        [System.Web.Http.HttpPost]
+        public Dictionary<string, object> DrillChart(Dictionary<string, object> jsonResult)
+        {
+            OlapDataManager DataManager = new OlapDataManager(connectionString);
+            DataManager.SetCurrentReport(Syncfusion.JavaScript.Olap.Utils.DeserializeOlapReport(jsonResult["olapReport"].ToString()));
+            return pivotChart.GetJsonData(jsonResult["action"].ToString(), DataManager, jsonResult["drilledSeries"].ToString());
+        }
 
-            private OlapReport CreateOlapReport()
-            {
-                OlapReport olapReport = new OlapReport();
-                olapReport.Name = "Default Report";
-                olapReport.CurrentCubeName = "Adventure Works";
+        private OlapReport CreateOlapReport()
+        {
+            OlapReport olapReport = new OlapReport();
+            olapReport.Name = "Default Report";
+            olapReport.CurrentCubeName = "Adventure Works";
 
-                DimensionElement dimensionElementColumn = new DimensionElement();
-                //Specifying the Name for the Dimension Element
-                dimensionElementColumn.Name = "Customer";
-                dimensionElementColumn.AddLevel("Customer Geography", "Country");
+            DimensionElement dimensionElementColumn = new DimensionElement();
+            //Specifying the Name for the Dimension Element
+            dimensionElementColumn.Name = "Customer";
+            dimensionElementColumn.AddLevel("Customer Geography", "Country");
 
-                MeasureElements measureElementColumn = new MeasureElements();
-                //Specifying the Name for the Measure Element
-                measureElementColumn.Elements.Add(new MeasureElement { Name = "Customer Count" });
+            MeasureElements measureElementColumn = new MeasureElements();
+            //Specifying the Name for the Measure Element
+            measureElementColumn.Elements.Add(new MeasureElement { Name = "Customer Count" });
 
-                DimensionElement dimensionElementRow = new DimensionElement();
-                //Specifying the Dimension Name
-                dimensionElementRow.Name = "Date";
-                dimensionElementRow.AddLevel("Fiscal", "Fiscal Year");
+            DimensionElement dimensionElementRow = new DimensionElement();
+            //Specifying the Dimension Name
+            dimensionElementRow.Name = "Date";
+            dimensionElementRow.AddLevel("Fiscal", "Fiscal Year");
 
-                ///Adding Row Members
-                olapReport.SeriesElements.Add(dimensionElementRow);
-                ///Adding Column Members
-                olapReport.CategoricalElements.Add(dimensionElementColumn);
-                ///Adding Measure Element
-                olapReport.CategoricalElements.Add(measureElementColumn);
-                return olapReport;
-            }
+            ///Adding Row Members
+            olapReport.SeriesElements.Add(dimensionElementRow);
+            ///Adding Column Members
+            olapReport.CategoricalElements.Add(dimensionElementColumn);
+            ///Adding Measure Element
+            olapReport.CategoricalElements.Add(measureElementColumn);
+            return olapReport;
         }
     }
+}
 
 {% endhighlight %}
 
@@ -342,17 +338,17 @@ Once you finish adding the **Global.asax** file, immediately add the namespace *
 
 {% highlight c# %}
 
-    public class Global : System.Web.HttpApplication
+public class Global : System.Web.HttpApplication
+{
+    protected void Application_Start(object sender, EventArgs e)
     {
-        protected void Application_Start(object sender, EventArgs e)
-        {
-            GlobalConfiguration.Configuration.Routes.MapHttpRoute(
-                name: "DefaultApi",
-                routeTemplate: "{controller}/{action}/{id}",
-                defaults: new { id = RouteParameter.Optional });
-            AppDomain.CurrentDomain.SetData("SQLServerCompactEditionUnderWebHosting", true);
-        }
+        GlobalConfiguration.Configuration.Routes.MapHttpRoute(
+            name: "DefaultApi",
+            routeTemplate: "{controller}/{action}/{id}",
+            defaults: new { id = RouteParameter.Optional });
+        AppDomain.CurrentDomain.SetData("SQLServerCompactEditionUnderWebHosting", true);
     }
+}
 
 {% endhighlight %}
 

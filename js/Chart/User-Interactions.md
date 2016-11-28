@@ -197,6 +197,10 @@ There are two ways you can zoom the chart,
 
 * When the [`zooming.enableMouseWheel`](../api/ejchart#members:zooming-enablemousewheel) option is set to true, you can zoom the chart on mouse wheel scrolling. 
 
+* When [`zooming.enablePinching`](../api/ejchart#members:zooming-enablePinching) option is set to *true*, you can zoom the chart through pinch gesture.
+
+N> Pinch zooming is supported only in browsers that support multi-touch gestures. Currently IE10, IE11, Chrome and Opera browsers support multi-touch in desktop devices.
+
 {% highlight javascript %}
 
 
@@ -457,6 +461,41 @@ X and Y values displayed in the trackball tooltip are formatted based on its axi
 {% endhighlight %}
 
 ![](/js/Chart/User-Interactions_images/User-Interactions_img14.png)
+
+
+You can able to show the trackball tooltip in two modes, using trackballTooltipSettings.
+
+                1.	Grouping.
+                2.	Float. 
+
+{% highlight javascript %}
+
+
+            $("#chartcontainer").ejChart({
+                // ... 
+                    crosshair: {
+                        visible: true,
+                        type: 'trackball',
+                        //Customize the trackball tooltip
+                        trackballTooltipSettings: {
+                            //Trackball mode
+                            mode: 'grouping',
+                            //Customize the trackball border, fill, rx and ry               
+                                border:{ 
+                                    width:1,
+                                    color: 'grey'
+                                },
+                            rx: 3,
+                            ry: 3,
+                            fill: 'whitesmoke'
+                        }
+                     }
+         // ... });
+
+
+{% endhighlight %}
+
+![](/js/Chart/User-Interactions_images/User-Interactions_img30.png)
 
 
 ## Highlight
@@ -1103,5 +1142,28 @@ To get the series information when selecting the specific series, subscribe to t
 {% endhighlight %}
 
 
+### Selection on Load
+
+We can able to select the point/series programmatically on chart load, by setting series and point index in the selectedDataPointIndexes property.
+
+{% highlight javascript %}
 
 
+       $("#chartcontainer").ejChart({   
+	
+             // ... 
+           
+           //Added selected data point indexes
+
+           selectedDataPointIndexes: [
+               { seriesIndex:0 , pointIndex:2 },
+               { seriesIndex:1 , pointIndex:4 }
+           ],
+            
+            // ...
+
+        });
+
+{% endhighlight %}
+
+![](/js/Chart/User-Interactions_images/User-Interactions_img29.png)

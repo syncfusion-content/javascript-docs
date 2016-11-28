@@ -25,7 +25,7 @@ For example, you can render the desired icon in the button by using the followin
 
 Refer to the following link to know what are the values passed in the “**ContentType**” property
 
-<http://help.syncfusion.com/js/api/global#members:contenttype>
+<http://help.syncfusion.com/api/js/global#members:contenttype>
 
 
 Also in the button sample, you can use the icon class names as follows,
@@ -34,7 +34,7 @@ Also in the button sample, you can use the icon class names as follows,
 
     $("#buttonid").ejButton({
         contentType: "imageonly",
-        prefixIcon: "e-handup"
+        prefixIcon: "e-icon e-handup"
     });
 
 {% endhighlight %}

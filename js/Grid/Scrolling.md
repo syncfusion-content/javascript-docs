@@ -8,11 +8,11 @@ documentation: ug
 --- 
 # Scrolling
 
-Scrolling can be enabled by setting [`allowScrolling`](http://help.syncfusion.com/js/api/ejgrid#members:allowscrolling "allowScrolling") as `true`. The height and width can be set to grid by using the properties [`scrollSettings.height`](http://help.syncfusion.com/js/api/ejgrid#members:scrollsettings-height "scrollSettings.height") and [`scrollSettings.width`](http://help.syncfusion.com/js/api/ejgrid#members:scrollsettings-width "scrollSettings.width") respectively. 
+Scrolling can be enabled by setting [`allowScrolling`](http://help.syncfusion.com/api/js/ejgrid#members:allowscrolling "allowScrolling") as `true`. The height and width can be set to grid by using the properties [`scrollSettings.height`](http://help.syncfusion.com/api/js/ejgrid#members:scrollsettings-height "scrollSettings.height") and [`scrollSettings.width`](http://help.syncfusion.com/api/js/ejgrid#members:scrollsettings-width "scrollSettings.width") respectively. 
 
-N> If [`width`](http://help.syncfusion.com/js/api/ejgrid#members:scrollsettings-width "width") and [`height`](http://help.syncfusion.com/js/api/ejgrid#members:scrollsettings-height "height") is not defined in the [`scrollSettings`](http://help.syncfusion.com/js/api/ejgrid#members:scrollsettings "scrollSettings") property then the horizontal and vertical scrollbar is enabled, only when the grid width exceeds the browser width.
+N> If [`width`](http://help.syncfusion.com/api/js/ejgrid#members:scrollsettings-width "width") and [`height`](http://help.syncfusion.com/api/js/ejgrid#members:scrollsettings-height "height") is not defined in the [`scrollSettings`](http://help.syncfusion.com/api/js/ejgrid#members:scrollsettings "scrollSettings") property then the horizontal and vertical scrollbar is enabled, only when the grid width exceeds the browser width.
 
-The height and width can be set in percentage and pixel. The default value for [`height`](http://help.syncfusion.com/js/api/ejgrid#members:scrollsettings-height "height") and [`width`](http://help.syncfusion.com/js/api/ejgrid#members:scrollsettings-width "width") in [`scrollSettings`](http://help.syncfusion.com/js/api/ejgrid#members:scrollsettings "scrollSettings") is 0 and `auto` respectively.
+The height and width can be set in percentage and pixel. The default value for [`height`](http://help.syncfusion.com/api/js/ejgrid#members:scrollsettings-height "height") and [`width`](http://help.syncfusion.com/api/js/ejgrid#members:scrollsettings-width "width") in [`scrollSettings`](http://help.syncfusion.com/api/js/ejgrid#members:scrollsettings "scrollSettings") is 0 and `auto` respectively.
 
 The following code example describes the above behavior.
 
@@ -39,7 +39,7 @@ The following output is displayed as a result of the above code example.
 
 ## Set width and height in pixel 	
 
-To specify the [`scrollSettings.width`](http://help.syncfusion.com/js/api/ejgrid#members:scrollsettings-width "scrollSettings.width") and [`scrollSettings.height`](http://help.syncfusion.com/js/api/ejgrid#members:scrollsettings-height "scrollSettings.height") in pixel, by set the pixel value as integer. 
+To specify the [`scrollSettings.width`](http://help.syncfusion.com/api/js/ejgrid#members:scrollsettings-width "scrollSettings.width") and [`scrollSettings.height`](http://help.syncfusion.com/api/js/ejgrid#members:scrollsettings-height "scrollSettings.height") in pixel, by set the pixel value as integer. 
 
 The following code example describes the above behavior.
 
@@ -66,7 +66,7 @@ The following output is displayed as a result of the above code example.
 
 ## Set width and height in percentage
 
-To specify the [`scrollSettings.width`](http://help.syncfusion.com/js/api/ejgrid#members:scrollsettings-width "scrollSettings.width") and [`scrollSettings.height`](http://help.syncfusion.com/js/api/ejgrid#members:scrollsettings-height "scrollSettings.height") in percentage, by set the percentage value as string.
+To specify the [`scrollSettings.width`](http://help.syncfusion.com/api/js/ejgrid#members:scrollsettings-width "scrollSettings.width") and [`scrollSettings.height`](http://help.syncfusion.com/api/js/ejgrid#members:scrollsettings-height "scrollSettings.height") in percentage, by set the percentage value as string.
 
 The following code example describes the above behavior.
 
@@ -93,7 +93,7 @@ The following output is displayed as a result of the above code example.
 
 ## Set width as auto
 
-Specify [`width`](http://help.syncfusion.com/js/api/ejgrid#members:scrollsettings-width "width") property of [`scrollSettings`](http://help.syncfusion.com/js/api/ejgrid#members:scrollsettings "scrollSettings") as auto, then the scrollbar is rendered only when the grid width exceeds the browser window width.
+Specify [`width`](http://help.syncfusion.com/api/js/ejgrid#members:scrollsettings-width "width") property of [`scrollSettings`](http://help.syncfusion.com/api/js/ejgrid#members:scrollsettings "scrollSettings") as auto, then the scrollbar is rendered only when the grid width exceeds the browser window width.
 
 The following code example describes the above behavior.
 
@@ -120,9 +120,9 @@ The following output is displayed as a result of the above code example.
 
 ## Frozen columns
 
-Specify [`frozenColumns`](http://help.syncfusion.com/js/api/ejgrid#members:scrollsettings-frozencolumns "frozenColumns") property of [`scrollSettings`](http://help.syncfusion.com/js/api/ejgrid#members:scrollsettings "scrollSettings") to freeze the columns(upto the specified frozenColumns value) at the time of scrolling. Horizontal scrollbar must be enabling while specifying [`frozenColumns`](http://help.syncfusion.com/js/api/ejgrid#members:scrollsettings-frozencolumns "frozenColumns") then only you can scroll and see the remaining columns with freeze pane.
+Specify [`frozenColumns`](http://help.syncfusion.com/api/js/ejgrid#members:scrollsettings-frozencolumns "frozenColumns") property of [`scrollSettings`](http://help.syncfusion.com/api/js/ejgrid#members:scrollsettings "scrollSettings") to freeze the columns(upto the specified frozenColumns value) at the time of scrolling. Horizontal scrollbar must be enabling while specifying [`frozenColumns`](http://help.syncfusion.com/api/js/ejgrid#members:scrollsettings-frozencolumns "frozenColumns") then only you can scroll and see the remaining columns with freeze pane.
 
-N> [`allowScrolling`](http://help.syncfusion.com/js/api/ejgrid#members:allowscrolling "allowScrolling") must be `true` while specifying [`frozenColumns`](http://help.syncfusion.com/js/api/ejgrid#members:scrollsettings-frozencolumns "frozenColumns").
+N> [`allowScrolling`](http://help.syncfusion.com/api/js/ejgrid#members:allowscrolling "allowScrolling") must be `true` while specifying [`frozenColumns`](http://help.syncfusion.com/api/js/ejgrid#members:scrollsettings-frozencolumns "frozenColumns").
 
 The following code example describes the above behavior.
 
@@ -149,7 +149,7 @@ The following output is displayed as a result of the above code example.
 
 ### Freeze particular columns:
 
-To freeze selected columns in grid at the time of scrolling, by set [`isFrozen`](http://help.syncfusion.com/js/api/ejgrid#members:columns-isfrozen "isFrozen") property of columns as `true`. [`isFrozen`](http://help.syncfusion.com/js/api/ejgrid#members:columns-isfrozen "isFrozen") columns are rendered first in the grid even the columns index is different while declaring the [`columns`](http://help.syncfusion.com/js/api/ejgrid#members:columns "columns").
+To freeze selected columns in grid at the time of scrolling, by set [`isFrozen`](http://help.syncfusion.com/api/js/ejgrid#members:columns-isfrozen "isFrozen") property of columns as `true`. [`isFrozen`](http://help.syncfusion.com/api/js/ejgrid#members:columns-isfrozen "isFrozen") columns are rendered first in the grid even the columns index is different while declaring the [`columns`](http://help.syncfusion.com/api/js/ejgrid#members:columns "columns").
 
 The following code example describes the above behavior.
 
@@ -186,8 +186,8 @@ The following output is displayed as a result of the above code example.
 
 ### Frozen Columns alert Messages:
 
-1. If [`allowScrolling`](http://help.syncfusion.com/js/api/ejgrid#members:allowscrolling "allowScrolling") is false while using [`frozenColumns`](http://help.syncfusion.com/js/api/ejgrid#members:scrollsettings-frozencolumns "frozenColumns") then "Enable [`allowScrolling`](http://help.syncfusion.com/js/api/ejgrid#members:allowscrolling "allowScrolling") while using frozen Columns" alert message is thrown.
-2. If [`frozenColumns`](http://help.syncfusion.com/js/api/ejgrid#members:scrollsettings-frozencolumns "frozenColumns") is specified out of the grid column view then "Frozen columns should be in grid view area" alert message is thrown.
+1. If [`allowScrolling`](http://help.syncfusion.com/api/js/ejgrid#members:allowscrolling "allowScrolling") is false while using [`frozenColumns`](http://help.syncfusion.com/api/js/ejgrid#members:scrollsettings-frozencolumns "frozenColumns") then "Enable [`allowScrolling`](http://help.syncfusion.com/api/js/ejgrid#members:allowscrolling "allowScrolling") while using frozen Columns" alert message is thrown.
+2. If [`frozenColumns`](http://help.syncfusion.com/api/js/ejgrid#members:scrollsettings-frozencolumns "frozenColumns") is specified out of the grid column view then "Frozen columns should be in grid view area" alert message is thrown.
 3. Frozen Rows and Columns are not supported the following features
  Grouping
  Row Template
@@ -199,9 +199,9 @@ If any one of the above feature is enabled along with Frozen Rows and Columns, t
 
 ## Frozen Rows
 
-Specify [`frozenRows`](http://help.syncfusion.com/js/api/ejgrid#members:scrollsettings-frozenrows "frozenRows") property of [`scrollSettings`](http://help.syncfusion.com/js/api/ejgrid#members:scrollsettings "scrollSettings") to freeze rows(upto the specified frozenRows value) at the time of scrolling. Vertical scrollbar must be enabling while specifying [`frozenRows`](http://help.syncfusion.com/js/api/ejgrid#members:scrollsettings-frozenrows "frozenRows") then only you can scroll and see the remaining rows with freeze pane.
+Specify [`frozenRows`](http://help.syncfusion.com/api/js/ejgrid#members:scrollsettings-frozenrows "frozenRows") property of [`scrollSettings`](http://help.syncfusion.com/api/js/ejgrid#members:scrollsettings "scrollSettings") to freeze rows(upto the specified frozenRows value) at the time of scrolling. Vertical scrollbar must be enabling while specifying [`frozenRows`](http://help.syncfusion.com/api/js/ejgrid#members:scrollsettings-frozenrows "frozenRows") then only you can scroll and see the remaining rows with freeze pane.
 
-N> [`allowScrolling`](http://help.syncfusion.com/js/api/ejgrid#members:allowscrolling "allowScrolling") must be `true` while specifying [`frozenRows`](http://help.syncfusion.com/js/api/ejgrid#members:scrollsettings-frozenrows "frozenRows").
+N> [`allowScrolling`](http://help.syncfusion.com/api/js/ejgrid#members:allowscrolling "allowScrolling") must be `true` while specifying [`frozenRows`](http://help.syncfusion.com/api/js/ejgrid#members:scrollsettings-frozenrows "frozenRows").
 
 The following code example describes the above behavior.
 
@@ -228,7 +228,7 @@ The following output is displayed as a result of the above code example.
 
 ## Touch scroll
 
-In [touch](http://help.syncfusion.com/js/api/ejgrid#members:scrollsettings-enabletouchscroll "touch") supported devices you can scroll and show the content by swipe left, right, top and bottom. Disable touch scroll by setting [`enableTouchScroll`](http://help.syncfusion.com/js/api/ejgrid#members:scrollsettings-enabletouchscroll "enableTouchScroll") property of [`scrollSettings`](http://help.syncfusion.com/js/api/ejgrid#members:scrollsettings "scrollSettings") as `false`.
+In [touch](http://help.syncfusion.com/api/js/ejgrid#members:scrollsettings-enabletouchscroll "touch") supported devices you can scroll and show the content by swipe left, right, top and bottom. Disable touch scroll by setting [`enableTouchScroll`](http://help.syncfusion.com/api/js/ejgrid#members:scrollsettings-enabletouchscroll "enableTouchScroll") property of [`scrollSettings`](http://help.syncfusion.com/api/js/ejgrid#members:scrollsettings "scrollSettings") as `false`.
 
 The following code example describes the above behavior.
 
@@ -250,11 +250,20 @@ $(function () {
 
 ## Virtual Scrolling
 
-The virtual scrolling support allows you to load data that you require (load data based on page size) without buffering the entire huge database. To enable virtual scrolling by setting [`allowVirtualScrolling`](http://help.syncfusion.com/js/api/ejgrid#members:scrollsettings-allowvirtualscrolling "allowVirtulScrolling") property of [`scrollSettings`](http://help.syncfusion.com/js/api/ejgrid#members:scrollsettings "scrollSettings") as `true`. It supports two mode of virtualization. They are,
+The virtual scrolling support allows you to load data that you require (load data based on page size) without buffering the entire huge database. To enable virtual scrolling by setting `allowVirtualScrolling`  property of `scrollSettings`  as `true`. 
+
+We also have an enhanced virtual scrolling feature with an improvised virtual scrolling performance. To enable improvised virtual scrolling feature by setting `enableVirtualization` property of `scrollSettings` as true and it doesn't requires `allowVirtualScrolling` to be enabled. It allows you to load the grid with data while scrolling. Some of the relevant functionalities of this are,
+
+1.	White space will not be appeared in the Grid. 
+2.	Improved page rendering performance. 
+3.  It can render nearly 500 thousand records.
+
+It supports two mode of virtualization. They are,
 
 1. Normal Mode
 2. Continuous Mode
 
+N> Enhanced Virtual Scrolling supports only Normal mode
 N> The following features are not supported by virtual scrolling 
 N> 1. Grouping
 N> 2. Frozen Rows 
@@ -266,7 +275,7 @@ N> 7. Editing
 
 ### Normal Mode:
 
-It allows you to load the grid with data while scrolling. This can be achieved by setting [`virtualScrollMode`](http://help.syncfusion.com/js/api/ejgrid#members:scrollsettings-virtualscrollmode "virtualScrollMode") as `normal`.
+It allows you to load the grid with data while scrolling. This can be achieved by setting [`virtualScrollMode`](http://help.syncfusion.com/api/js/ejgrid#members:scrollsettings-virtualscrollmode "virtualScrollMode") as `normal`.
 
 The following code example describes the above behavior.
 
@@ -289,10 +298,35 @@ The following output is displayed as a result of the above code example.
 
 ![](scrolling_images/scrolling_img8.png)
 
+#### Enhanced Virtual Scrolling:
+
+In order to enable this, you need to set the `enableVirtualization` property of the `scrollSettings` as true. 
+
+The following code example describes the above behavior.
+
+{% highlight html %}
+<div id="Grid"></div>
+{% endhighlight %}
+
+{% highlight javascript %}
+$(function () {
+	$("#Grid").ejGrid({
+		dataSource : ej.DataManager("http://mvc.syncfusion.com/Services/Northwnd.svc/Orders"),
+		allowScrolling : true,
+		scrollSettings: { width: 550, height: 300, enableVirtualization: true },
+		columns : ["OrderID", "EmployeeID", "CustomerID", "ShipCity", "ShipCountry", "ShipAddress", "ShipPostalCode", "Freight"]
+	});
+});
+{% endhighlight %}
+
+The following output is displayed as a result of the above code example.
+
+![](scrolling_images/scrolling_img10.png)
+
 
 ### Continuous Mode:
 
-In Continuous mode, the data is loaded in grid when the scrollbar reaches the end.  You can enable the continuous mode by setting the [`virtualScrollMode`](http://help.syncfusion.com/js/api/ejgrid#members:scrollsettings-virtualscrollmode "virtualScrollMode") property as `continuous`.
+In Continuous mode, the data is loaded in grid when the scrollbar reaches the end.  You can enable the continuous mode by setting the [`virtualScrollMode`](http://help.syncfusion.com/api/js/ejgrid#members:scrollsettings-virtualscrollmode "virtualScrollMode") property as `continuous`.
 
 The following code example describes the above behavior.
 
@@ -314,5 +348,3 @@ $(function () {
 The following output is displayed as a result of the above code example.
 
 ![](scrolling_images/scrolling_img9.png)
-
-

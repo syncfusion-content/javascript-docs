@@ -11,7 +11,7 @@ documentation: ug
 
 ## Decimal Places
 
-The command **decimalPlaces** declares the decimal point to the value of **PercentageTextBox** control. The default value of **decimalPlaces** is 0 in **PercentageTextBox** control.
+The property **decimalPlaces** declares the decimal point to the value of **PercentageTextBox** control. The default value of **decimalPlaces** is 0 in **PercentageTextBox** control.
 
 ### Configure Decimal Places
 
@@ -116,7 +116,7 @@ PercentageTextBox after changing the value and a page load
 
 ## Strict Mode Support
 
-The **PercentageTextBox** widget allows you to use the strict mode option by setting the **enableStrictMode** property. You can set the **minValue** and **maxValue** to the controls to enable strict mode functionality. When the Textbox value exceeds the **maxValue**, it restricts the exceeded value and returns the **maxValue**. Likewise when the Textbox value goes below **minValue**, it restricts the new value and returns the **minValue**.
+The **PercentageTextBox** widget allows you to use the strict mode option by setting the **enableStrictMode** property. You can set the **minValue** and **maxValue** to the controls to enable strict mode functionality. When the Textbox value exceeds the **maxValue**, it restricts the exceeded value and returns the **maxValue**. Likewise when the Textbox value goes below **minValue**, it restricts the new value and returns the **minValue**.When this property is true, it will not restrict the specified value and an error class will be added to indicate wrong value is provided to the PercentageTextBox.
 
 ### Configure Strict Mode Support 
 
@@ -439,11 +439,16 @@ In the **HTML** page set the corresponding **&lt;input&gt;** elements for render
 
 {% highlight javascript %}
 
-
+        //PercentageTextBox with maxValue
         $("#percent").ejPercentageTextbox({
             maxValue: 3,
+            value:5
+        });
+        
+         //PercentageTextBox with minValue
+        $("#percent").ejPercentageTextbox({
             minValue: -2,
-            value:3
+            value:-5
         });
 
 
@@ -517,11 +522,12 @@ The output for **PercentageTextBox** when **readOnly** is “**True**” is as f
 
 ### Theme
 
-The **PercentageTextBox** control’s style and appearance can be controlled based on CSS classes. In order to apply styles to the **Textbox** control, you need to refer 2 files namely, **ej.widgets.core.min.css** and **ej.theme.min.css**. If the file **ej.widgets.all.min.css** is referred, then it is not necessary to include the files **ej.widgets.core.min.css** and **ej.theme.min.css** in your project**,** as **ej.widgets.all.min.css** is the combination of these two. 
+The **PercentageTextBox** control’s style and appearance can be controlled based on CSS classes. In order to apply styles to the **Textbox** control, you need to refer 2 files namely, **ej.widgets.core.min.css** and **ej.theme.min.css**. If the file **ej.web.all.min.css** is referred, then it is not necessary to include the files **ej.widgets.core.min.css** and **ej.theme.min.css** in your project**,** as **ej.web.all.min.css** is the combination of these two. 
 
-By default, there are 12 themes support available for **PercentageTextBox** control namely:
+By default, there are 17 themes support available for **PercentageTextBox** control namely:
 
-* default-theme
+* bootstrap
+* flat-azure
 * flat-azure-dark
 * fat-lime
 * flat-lime-dark
@@ -533,6 +539,10 @@ By default, there are 12 themes support available for **PercentageTextBox** cont
 * gradient-lime-dark
 * gradient-saffron
 * gradient-saffron-dark
+* high-contrast-01
+* high-contrast-02
+* material
+* office-365
 
 ### CSS Class
 
@@ -656,7 +666,7 @@ The output for **PercentageTextBox** when **showRoundedCorner** is “**true**�
 
 ## Spin Button Support
 
-The **PercentageTextBox** provides you the option as to whether to display the split button in the widget or remove it from the control by using **showSpinButton** property.
+The **PercentageTextBox** provides you the option as to whether to display the spin button in the widget or remove it from the control by using **showSpinButton** property.
 
 ### Configure Spin Button
 

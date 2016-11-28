@@ -75,7 +75,7 @@ $("#diagram").ejDiagram({
 
 ![](/js/Diagram/Label_images/Label_img1.png)
 
-To explore more label properties, refer to [Label Properties](/js/api/ejdiagram#members:nodes-labels "Label Properties").
+To explore more label properties, refer to [Label Properties](/api/js/ejdiagram#members:nodes-labels "Label Properties").
 
 ### Add Labels at runtime
 

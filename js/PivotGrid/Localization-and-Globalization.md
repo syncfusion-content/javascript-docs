@@ -10,7 +10,7 @@ documentation: ug
 # Localization and Globalization
 
 ## Localization in PivotGrid 
-You can localize the PivotGrid controls text with a collection of localized strings using [`ej.PivotGrid.locale`](/js/api/ejpivotgrid#members:locale) for different cultures. By default, the PivotGrid control is localized in **"en-US"** culture.
+You can localize the PivotGrid controls text with a collection of localized strings using [`ej.PivotGrid.Locale`](/api/js/ejpivotgrid#members:locale) for different cultures. By default, the PivotGrid control is localized in **"en-US"** culture.
 
 {% highlight html %}
 
@@ -76,10 +76,10 @@ You can localize the PivotGrid controls text with a collection of localized stri
         ...
     };
 
-        ej.PivotPager.Locale["fr-FR"] = {
-            SeriesPage: "Série Page",
-            CategoricalPage: "Catégorique Page"
-        };
+    ej.PivotPager.Locale["fr-FR"] = {
+        SeriesPage: "Série Page",
+        CategoricalPage: "Catégorique Page"
+    };
     </script>
 </body>
 
@@ -1087,7 +1087,7 @@ Content displayed within the PivotGrid control are obtained from the OLAP Cube. 
 * To get localized data from OLAP Cube, we need to set **"Locale Identifier"** in the connection string to a specific culture in the **"data"** property present inside **"dataSource"**. 
 * To bind the globalized content in PivotGrid control, we need to set **"locale"** property to a specific culture and want to refer specific culture file in the sample. 
  
-N> Culture files are present under **"Syncfusion\EssentialStudio\14.2.0.26\JavaScript\samples\web\scripts\cultures".** 
+N> Culture files are present under **"[installed drive]:\Users\ [user name]\AppData\Local\Syncfusion\EssentialStudio\X.X.X.X\JavaScript\samples\web\scripts\cultures".** 
  
 {% highlight js %}
 
@@ -1128,7 +1128,7 @@ Content displayed within the PivotGrid control are obtained from the Relational 
 * To get the localized content, the Relational datasource must have localized headers in them which will be directly applied to PivotGrid.  
 * To globalize the values appear in PivotGrid , we need to set **"format"** and **"locale"** property to a specific culture and want to refer specific culture file in the sample. 
 
-N> Culture files are present under **"Syncfusion\EssentialStudio\14.2.0.26\JavaScript\samples\web\scripts\cultures".** 
+N> Culture files are present under **"[installed drive]:\Users\ [user name]\AppData\Local\Syncfusion\EssentialStudio\X.X.X.X\JavaScript\samples\web\scripts\cultures".** 
  
 {% highlight js %}
 
@@ -1154,12 +1154,12 @@ Content displayed within the PivotGrid control are obtained from the Relational 
 
 {% highlight c# %}
 
-PivotReport pivotSetting = new PivotReport();
-//...
-pivotSetting.PivotCalculations.Add(new PivotComputationInfo {
-    CalculationName = "Amount", Description = "Amount", FieldHeader = "Amount", FieldName = "Amount", Format = "E", SummaryType = Syncfusion.PivotAnalysis.Base.SummaryType.DoubleTotalSum
-});
-//...
+    PivotReport pivotSetting = new PivotReport();
+    //...
+    pivotSetting.PivotCalculations.Add(new PivotComputationInfo {
+        CalculationName = "Amount", Description = "Amount", FieldHeader = "Amount", FieldName = "Amount", Format = "E", SummaryType = Syncfusion.PivotAnalysis.Base.SummaryType.DoubleTotalSum
+    });
+    //...
 
 {% endhighlight %}
 
@@ -1167,7 +1167,7 @@ pivotSetting.PivotCalculations.Add(new PivotComputationInfo {
 
 ## RTL
 
-You can render our PivotGrid control from Right to Left by setting [`enableRTL`](/js/api/ejpivotgrid#members:enablertl) property to true.
+You can render our PivotGrid control from Right to Left by setting [`enableRTL`](/api/js/ejpivotgrid#members:enablertl) property to true.
 
 {% highlight js %}
 

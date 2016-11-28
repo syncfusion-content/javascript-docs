@@ -20,7 +20,6 @@ CSS file
 External script files
 
 * [jQuery 1.7.1](http://jquery.com/#) and later versions.
-* [jQuery.easing.js](http://gsgd.co.uk/sandbox/jquery/easing/#) - to support the animation effects.
 
 Internal script files
 
@@ -82,8 +81,6 @@ A simple HTML file with required CSS and script reference added to create TreeVi
         <!--scripts-->
 
         <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
-
-        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 
         <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"></script>
 
@@ -247,5 +244,5 @@ Initialize TreeView with remote data source
 
 {% endhighlight %}
 
-N>  In remote data source, [ej.DataManager](http://helpjs.syncfusion.com/js/api/ejdatamanager#) is used to process the data from services and the value has been assigned to dataSource. 
+N>  In remote data source, [ej.DataManager](http://helpjs.syncfusion.com/api/js/ejdatamanager#) is used to process the data from services and the value has been assigned to dataSource. 
 

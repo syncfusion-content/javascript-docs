@@ -9,57 +9,28 @@ documentation: ug
 
 # Editing 
 
-You can edit the content of a cell directly by clicking on the cell. When you edit the cell, Spreadsheet is operating in Edit mode. In this mode Some of the options are unavailable. You can use [`allowEditing`](http://help.syncfusion.com/js/api/ejspreadsheet#members:allowediting "allowEditing") property to enable/disable Editing feature.
+You can edit the contents of a cell directly in the cell. You can also do this by typing in the formula bar. When you edit the cell, Spreadsheet is operating in edit mode. In editing mode formatting options are not available. You can use [`allowEditing`](http://help.syncfusion.com/api/js/ejspreadsheet#members:allowediting "allowEditing") property to enable/disable editing feature.
 
-N> By default allowEditing property is set to true.
-N> If you perform editing in single click, all the existing content will be erased.
-N> The cell content is also displayed in the formula bar.
+N> By default [`allowEditing`](http://help.syncfusion.com/api/js/ejspreadsheet#members:allowediting "allowEditing") property is set to true.
 
-You can do following operations in Editing.
+## Edit the cell
 
-* Edit the Cell
-* Save the Cell
-* Data Binding
-* Read Only Cell
+You can perform this by one of the following ways,
 
-## Edit the Cell
+* Double click on the cell to perform editing. This starts the edit mode and positions the cursor at the end of the cell.
+* Press F2 Key to edit the active cell.
+* Use Formula bar to perform editing.
+* Use Backspace and Delete Key to delete the contents of a cell.
+* Use "Alt + Enter" keys to perform multi line editing.
+* Using [`editCell`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xledit-editcell "editCell") method.
 
-You can perform this by following ways,
+## Save the edited cell
 
-* Double Click Editing.
-* F2 Key Editing.
-* Formula bar Editing.
-* Backspace and Delete Key Editing.
-* Multi line Editing.
-* Using [`editCell`](https://help.syncfusion.com/js/api/ejspreadsheet#methods:xledit-editcell "editCell") method.
-
-### Double Click Editing
-
-You can double click on the cell to perform editing. This starts the Edit mode and positions the cursor at the end of the cell. You can move the cursor to any of the position in the cell to edit.
-
-### F2 Key Editing
-
-You can use F2 key to perform editing, that is similar to "Double Click Editing".
-
-### Formula bar Editing
-
-You can use Formula bar to perform editing. This is used to display formula or value of the selected cell. The quickest way to do this is simply press F2. 
-
-### Multi-line Editing
-
-You can use Alt + Enter key to insert line break when editing the cell. 
-
-### Backspace and Delete Key Editing
-
-You can use Backspace key to delete the active cell content and starts editing. Delete key is used to delete the selected cells.
-
-## Save the Edited Cell
-
-You can do this by following ways,
+You can do this by one of the following ways,
 
 * Perform mouse click on any other cell other than the current editing cell.
 * Perform Enter/Tab key press on the cell.
-* Using [`saveCell`](https://help.syncfusion.com/js/api/ejspreadsheet#methods:xledit-savecell "saveCell") method.
+* Using [`saveCell`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xledit-savecell "saveCell") method.
 
 N> Edited cells are automatically formatted (right/left/center/Number Formatting) based on cell values.
 
@@ -81,7 +52,7 @@ $(function () {
 });
 function loadComplete(args) {
     if(!this.isImport) {
-        this.XLEdit.editCell(3, 0, "Sports”); // mouse curser placed after the text "Sports”
+        this.XLEdit.editCell(3, 0, true); // if true, it maintains the existing data otherwise it clears the data.
         //this.XLEdit.saveCell();
     }
 }
@@ -91,16 +62,12 @@ The following output is displayed as a result of the above code example.
 
 ![](Editing_images/Editing_img1.png)
 
-## Data binding
+## Read-Only cells
 
-You can bind the data to Spreadsheet using data manager. You can refer [`Data Binding`](https://help.syncfusion.com/js/spreadsheet/data-binding# "Data Binding") to know more about this. You can use [`saveBatchChanges`](https://help.syncfusion.com/js/api/ejspreadsheet#methods:savebatchchanges "saveBatchChanges") method to update the changes in server.  
+You can restrict/prevent the editing in the specified range. You can use [`allowLockCell`](https://help.syncfusion.com/api/js/ejspreadsheet#members:allowlockcell "allowLockCell") property to enable/disable the lock cells. You can do using following ways,
 
-## Read-Only Cells
-
-You can restrict/prevent the editing in the selected cells. You can use [allowLockCell](https://help.syncfusion.com/js/api/ejspreadsheet#members:allowlockcell "") property to enable/disable the lock cells. You can do using following ways,
-
-* Using [`lockCells`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:lockcells "lockCells") method to lock the selected cells. Then you need to protect the sheet using [`protectSheet`](https://help.syncfusion.com/js/api/ejspreadsheet#methods:protectsheet "protectSheet") method to restrict the editing.
-* Using "lock Cells” option under Changes tab in REVIEW tab of ribbon. Then Using "protect Sheet” option under Changes tab in REVIEW tab of ribbon to restrict editing.
+* Using [`lockCells`](http://help.syncfusion.com/api/js/ejspreadsheet#methods:lockcells "lockCells") method to lock the specified range. Then you need to protect the sheet using [`protectSheet`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:protectsheet "protectSheet") method to restrict the editing.
+* Using "Lock Cells" option under Changes group of REVIEW tab in ribbon. Then Using "Protect Sheet" option under Changes group of REVIEW tab in ribbon to restrict editing.
 
 The following code example describes the above behavior.
 
@@ -122,13 +89,13 @@ $(function () {
 function loadComplete(args) {
     if(!this.isImport) {
         this.protectSheet(false);
-        this.lockCells("A1:A5”, true);
+        this.lockCells("A1:A5", true);
         this.protectSheet(true);
     }
 }
 {% endhighlight %}
 
-The following output is displayed as a result of the above code example.
+The following output is displayed as a result of editing in Spreadsheet which is rendered with above code example.
 
 ![](Editing_images/Editing_img2.png)
 
@@ -136,8 +103,37 @@ The following output is displayed as a result of the above code example.
 
 The following events will trigger when editing and saving the cell. 
 
-<table>
-    <tr><th>Events<br/></th><th>Description<br/></th></tr>
-    <tr><td >[`cellEdit`](http://help.syncfusion.com/js/api/ejspreadsheet#events:celledit"cellEdit")<br/></td><td >Triggered when the cell is edited.<br/></td></tr>
-    <tr><td >[`cellSave`](http://help.syncfusion.com/js/api/ejspreadsheet#events:cellsave"cellSave")<br/></td><td >Triggered when save the edited cell.<br/></td></tr>
-</table>
+* [`cellEdit`](http://help.syncfusion.com/api/js/ejspreadsheet#events:celledit"cellEdit") - Triggered when the cell is edited.
+* [`cellSave`](http://help.syncfusion.com/api/js/ejspreadsheet#events:cellsave"cellSave") - Triggered when save the edited cell.
+
+## Data binding
+
+You can bind the data to Spreadsheet using data manager. You can refer [`Data Binding`](https://help.syncfusion.com/js/spreadsheet/data-binding# "Data Binding") to know more about this. You can use [`saveBatchChanges`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:savebatchchanges "saveBatchChanges") method to update the changes in server.  
+
+The following code example describes the above behavior.
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+{% endhighlight %}
+
+{% highlight javascript %}
+$(function () {
+    var dataManager = ej.DataManager({
+        url: "http://js.syncfusion.com/demos/ejServices/wcf/Grid/GridService.svc/Orders",
+        crossDomain: true
+    });
+    $("#Spreadsheet").ejSpreadsheet({
+        sheets: [{
+            rangeSettings: [{ dataSource: dataManager, showHeader: true }],                               
+        }],
+        loadComplete: "loadComplete"
+    });
+});
+function loadComplete(args) {
+    if(!this.isImport) {
+        this.XLEdit.updateValue("I2", "amazon");
+        this.XLEdit.updateValue("J2", "flipkart");
+        this.saveBatchChanges(this.getActiveSheetIndex());
+    }
+}
+{% endhighlight %}

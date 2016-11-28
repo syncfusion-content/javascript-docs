@@ -9,15 +9,15 @@ keywords: gallery,ribbon gallery
 
 # Gallery
 
-Galleries are used to display items that can be arranged in a grid-type layout. Items in the gallery can be customized as [`button`](http://help.syncfusion.com/js/api/ejbutton)/[`menu`](http://help.syncfusion.com/js/api/ejmenu) to display images, text, or both images and text. You can set [`type`](http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-content-groups-type) of group as `gallery`.
+Galleries are used to display items that can be arranged in a grid-type layout. Items in the gallery can be customized as [`button`](http://help.syncfusion.com/api/js/ejbutton)/[`menu`](http://help.syncfusion.com/api/js/ejmenu) to display images, text, or both images and text. You can set [`type`](http://help.syncfusion.com/api/js/ejribbon#members:tabs-groups-content-groups-type) of group as `gallery`.
 
 ## Gallery Items
 
-[`Gallery items`](http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-content-groups-galleryitems) are collection of the items to be included in the main gallery. You can set [`text`](http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-content-groups-galleryitems-text) and [`toolTip`](http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-content-groups-galleryitems-tooltip) to gallery item which can also be customized with [`buttonSettings`](http://help.syncfusion.com/js/api/ejbutton).
+[`Gallery items`](http://help.syncfusion.com/api/js/ejribbon#members:tabs-groups-content-groups-galleryitems) are collection of the items to be included in the main gallery. You can set [`text`](http://help.syncfusion.com/api/js/ejribbon#members:tabs-groups-content-groups-galleryitems-text) and [`toolTip`](http://help.syncfusion.com/api/js/ejribbon#members:tabs-groups-content-groups-galleryitems-tooltip) to gallery item which can also be customized with [`buttonSettings`](http://help.syncfusion.com/api/js/ejbutton).
  
-Number of [`columns`](http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-content-groups-columns) to display in gallery for each row should be specified and the Number of columns in Expanded State [`(expandedColumns)`](http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-content-groups-expandedcolumns) can be customized, if not set, `columns` count will be set as default. 
+Number of [`columns`](http://help.syncfusion.com/api/js/ejribbon#members:tabs-groups-content-groups-columns) to display in gallery for each row should be specified and the Number of columns in Expanded State [`(expandedColumns)`](http://help.syncfusion.com/api/js/ejribbon#members:tabs-groups-content-groups-expandedcolumns) can be customized, if not set, `columns` count will be set as default. 
 
-N> The [`itemHeight`](http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-content-groups-itemheight) and [`itemWidth`](http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-content-groups-itemwidth) for gallery item can be set, if not set default values will be used.
+N> The [`itemHeight`](http://help.syncfusion.com/api/js/ejribbon#members:tabs-groups-content-groups-itemheight) and [`itemWidth`](http://help.syncfusion.com/api/js/ejribbon#members:tabs-groups-content-groups-itemwidth) for gallery item can be set, if not set default values will be used.
 
 {% highlight html %}
 
@@ -132,9 +132,9 @@ Gallery at Expanded State
 
 ## Custom Gallery Items
 
-[`Custom gallery items`](http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-content-groups-customgalleryitems) are the additional items to be displayed at gallery expanded state. You can set [`customItemType`](http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-content-groups-customgalleryitems-customitemtype) as `button` or `menu`, Default is `button`.
+[`Custom gallery items`](http://help.syncfusion.com/api/js/ejribbon#members:tabs-groups-content-groups-customgalleryitems) are the additional items to be displayed at gallery expanded state. You can set [`customItemType`](http://help.syncfusion.com/api/js/ejribbon#members:tabs-groups-content-groups-customgalleryitems-customitemtype) as `button` or `menu`, Default is `button`.
 
-You can also set [`text`](http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-content-groups-customgalleryitems-text) and [`toolTip`](http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-content-groups-customgalleryitems-tooltip) to custom gallery item which can also be customized with [`buttonSettings`](http://help.syncfusion.com/js/api/ejbutton)/[`menuSettings`](http://help.syncfusion.com/js/api/ejmenu) based on the [`customItemType`](http://help.syncfusion.com/js/api/ejribbon#members:tabs-groups-content-groups-customgalleryitems-customitemtype) specified.
+You can also set [`text`](http://help.syncfusion.com/api/js/ejribbon#members:tabs-groups-content-groups-customgalleryitems-text) and [`toolTip`](http://help.syncfusion.com/api/js/ejribbon#members:tabs-groups-content-groups-customgalleryitems-tooltip) to custom gallery item which can also be customized with [`buttonSettings`](http://help.syncfusion.com/api/js/ejbutton)/[`menuSettings`](http://help.syncfusion.com/api/js/ejmenu) based on the [`customItemType`](http://help.syncfusion.com/api/js/ejribbon#members:tabs-groups-content-groups-customgalleryitems-customitemtype) specified.
 
 {% highlight html %}
 

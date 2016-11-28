@@ -284,6 +284,54 @@ var nodes = [{
 
 ![](/js/Diagram/Node_images/Node_img8.png)
 
+## Icon
+
+Diagram provides support to describe the state of the node. i.e., node is expanded or collapsed state.
+
+N> Icon can be created only when the node has outedges.
+
+To explore the properties of expandIcon and collapseIcon, refer to [Icon Properties](/api/js/ejDiagram#members:nodes-expandicon "Icon Properties").
+
+The `shape` property of icon allows to define the shape of the icon. The following code example illustrates how to create icon of various shapes.
+
+{% highlight javascript %}
+
+// Defines JSON to create a node
+var nodes = [{
+	name: "node1", offsetX: 100, offsetY: 100,
+	height: 100, width:100,
+	//Sets shape of node
+	shape: "rectangle",
+	//Sets properties for expandIcon
+	expandIcon:{ shape:"arrowdown", width:10, height:10 },
+	//Sets properties for collapseIcon
+	collapseIcon:{ shape:"arrowup", width:10, height:10 }
+},
+	name: "node2", offsetX: 100, offsetY: 100,
+	height: 100, width:100,
+	//Sets shape of node
+	shape: "rectangle",
+];
+
+// Defines JSON to create a node
+var connectors = [{
+	name: "connect", sourceNode: "node1", targetNode: "node2"
+}];
+
+//Initializes Diagram
+$("#diagram").ejDiagram({
+	width: "100%", height: "100%",
+	//Initializes nodes collection
+	nodes: nodes
+	connectors: connectors
+});
+
+{% endhighlight %}
+
+![](/js/Diagram/Node_images/Node_img9.png)
+
+![](/js/Diagram/Node_images/Node_img10.png)
+
 ## Interaction
 
 Diagram provides support to drag, resize, or rotate the node interactively. For more information about editing a node at runtime, refer to [Edit Nodes](/js/Diagram/Interaction "Interaction").

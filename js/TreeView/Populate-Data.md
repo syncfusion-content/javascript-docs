@@ -10,7 +10,7 @@ documentation: ug
 
 # Populate Data
 
-TreeView can be populated with local or remote data source by using a property [dataSource](http://help.syncfusion.com/js/api/ejtreeview#members:fields-datasource), which is the member of [fields](http://help.syncfusion.com/js/api/ejtreeview#members:fields) property.
+TreeView can be populated with local or remote data source by using a property [dataSource](http://help.syncfusion.com/api/js/ejtreeview#members:fields-datasource), which is the member of [fields](http://help.syncfusion.com/api/js/ejtreeview#members:fields) property.
 
 In TreeView, you should use “**fields**” property to go with data source. It specifies the mapping fields for the data source to receive the data, query to process the data and field mappers to map the data members.
 
@@ -25,63 +25,63 @@ Properties</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{'[dataSource](http://help.syncfusion.com/js/api/ejtreeview#members:fields-datasource)'| markdownify }}<br/><br/></td><td>
+{{'[dataSource](http://help.syncfusion.com/api/js/ejtreeview#members:fields-datasource)'| markdownify }}<br/><br/></td><td>
 The data source contains the list of data for generating the TreeView list.<br/><br/></td></tr>
 <tr>
 <td>
-{{'[query](http://help.syncfusion.com/js/api/ejtreeview#members:fields-query)'| markdownify }}<br/><br/></td><td>
+{{'[query](http://help.syncfusion.com/api/js/ejtreeview#members:fields-query)'| markdownify }}<br/><br/></td><td>
 It specifies the query to retrieve the data from the online server.<br/><br/></td></tr>
 <tr>
 <td>
-{{'[tableName](http://help.syncfusion.com/js/api/ejtreeview#members:fields-tablename)'| markdownify }}<br/><br/></td><td>
+{{'[tableName](http://help.syncfusion.com/api/js/ejtreeview#members:fields-tablename)'| markdownify }}<br/><br/></td><td>
 It specifies the name of the table from which data to be processed from given data source.<br/><br/></td></tr>
 <tr>
 <td>
-{{'[id](http://help.syncfusion.com/js/api/ejtreeview#members:fields-id)'| markdownify }}<br/><br/></td><td>
+{{'[id](http://help.syncfusion.com/api/js/ejtreeview#members:fields-id)'| markdownify }}<br/><br/></td><td>
 It specifies the ID of the node.<br/><br/></td></tr>
 <tr>
 <td>
-{{'[parentId](http://help.syncfusion.com/js/api/ejtreeview#members:fields-parentid)'| markdownify }}<br/><br/></td><td>
+{{'[parentId](http://help.syncfusion.com/api/js/ejtreeview#members:fields-parentid)'| markdownify }}<br/><br/></td><td>
 It specifies the parent id of the node<br/><br/></td></tr>
 <tr>
 <td>
-{{'[text](http://help.syncfusion.com/js/api/ejtreeview#members:fields-text)'| markdownify }}<br/><br/></td><td>
+{{'[text](http://help.syncfusion.com/api/js/ejtreeview#members:fields-text)'| markdownify }}<br/><br/></td><td>
 It specifies the text content of the node.<br/><br/></td></tr>
 <tr>
 <td>
-{{'[hasChild](http://help.syncfusion.com/js/api/ejtreeview#members:fields-haschild)'| markdownify }}<br/><br/></td><td>
+{{'[hasChild](http://help.syncfusion.com/api/js/ejtreeview#members:fields-haschild)'| markdownify }}<br/><br/></td><td>
 It specifies the node has child (which is the nested or inner level of nodes). Also it’s used in load on demand of tree data.<br/><br/></td></tr>
 <tr>
 <td>
-{{'[expanded](http://help.syncfusion.com/js/api/ejtreeview#members:fields-expanded)'| markdownify }}<br/><br/></td><td>
+{{'[expanded](http://help.syncfusion.com/api/js/ejtreeview#members:fields-expanded)'| markdownify }}<br/><br/></td><td>
 It specifies the tree node to be in expanded state<br/><br/></td></tr>
 <tr>
 <td>
-{{'[selected](http://help.syncfusion.com/js/api/ejtreeview#members:fields-selected)'| markdownify }}<br/><br/></td><td>
+{{'[selected](http://help.syncfusion.com/api/js/ejtreeview#members:fields-selected)'| markdownify }}<br/><br/></td><td>
 It specifies the select node at initialize. N> only one node get selected <br/><br/></td></tr>
 <tr>
 <td>
-{{'[isChecked](http://help.syncfusion.com/js/api/ejtreeview#members:fields-ischecked)'| markdownify }} <br/><br/></td><td>
+{{'[isChecked](http://help.syncfusion.com/api/js/ejtreeview#members:fields-ischecked)'| markdownify }} <br/><br/></td><td>
 It specifies the node to be in checked state, if tree node represented with checkboxes. <br/><br/></td></tr>
 <tr>
 <td>
-{{'[imageUrl](http://help.syncfusion.com/js/api/ejtreeview#members:fields-imageurl)'| markdownify }}<br/><br/></td><td>
+{{'[imageUrl](http://help.syncfusion.com/api/js/ejtreeview#members:fields-imageurl)'| markdownify }}<br/><br/></td><td>
 It defines the image location.<br/><br/></td></tr>
 <tr>
 <td>
-{{'[imageAttribute](http://help.syncfusion.com/js/api/ejtreeview#members:fields-imageattribute)'| markdownify }}<br/><br/></td><td>
+{{'[imageAttribute](http://help.syncfusion.com/api/js/ejtreeview#members:fields-imageattribute)'| markdownify }}<br/><br/></td><td>
 It defines the image attributes such as height, width, styles, etc.<br/><br/></td></tr>
 <tr>
 <td>
-{{'[spriteCssClass](http://help.syncfusion.com/js/api/ejtreeview#members:fields-spritecssclass)'| markdownify }}<br/><br/></td><td>
+{{'[spriteCssClass](http://help.syncfusion.com/api/js/ejtreeview#members:fields-spritecssclass)'| markdownify }}<br/><br/></td><td>
 It defines the sprite CSS for the image tag.<br/><br/></td></tr>
 <tr>
 <td>
-{{'[htmlAttribute](http://help.syncfusion.com/js/api/ejtreeview#members:fields-htmlattribute)'| markdownify }}<br/><br/></td><td>
+{{'[htmlAttribute](http://help.syncfusion.com/api/js/ejtreeview#members:fields-htmlattribute)'| markdownify }}<br/><br/></td><td>
 It defines the HTML attributes such as class and styles for a node ("li" tag).<br/><br/></td></tr>
 <tr>
 <td>
-{{'[linkAttribute](http://help.syncfusion.com/js/api/ejtreeview#members:fields-linkattribute)'| markdownify }}<br/><br/></td><td>
+{{'[linkAttribute](http://help.syncfusion.com/api/js/ejtreeview#members:fields-linkattribute)'| markdownify }}<br/><br/></td><td>
 It defines the HTML attributes such as class and styles for a link tag, which is child of node.<br/><br/></td></tr>
 </table>
 Mapping all fields with data source
@@ -158,7 +158,7 @@ To find the complete details about fields, refer the sample [here](http://jsplay
 
 ## Local Data
 
-TreeView can be rendered from a self-referential data by providing the two required fields [id](http://help.syncfusion.com/js/api/ejtreeview#members:fields-id) and [parentId](http://help.syncfusion.com/js/api/ejtreeview#members:fields-parentid). 
+TreeView can be rendered from a self-referential data by providing the two required fields [id](http://help.syncfusion.com/api/js/ejtreeview#members:fields-id) and [parentId](http://help.syncfusion.com/api/js/ejtreeview#members:fields-parentid). 
 
 {% highlight js %}
 
@@ -178,7 +178,7 @@ TreeView can be rendered from a self-referential data by providing the two requi
 
 {% endhighlight %}
 
-Above flat array of JSON data can be directly assigned to [dataSource](http://help.syncfusion.com/js/api/ejtreeview#members:fields-datasource) property and mapping data fields with respect to the mapper field in order to create TreeView.
+Above flat array of JSON data can be directly assigned to [dataSource](http://help.syncfusion.com/api/js/ejtreeview#members:fields-datasource) property and mapping data fields with respect to the mapper field in order to create TreeView.
 
 {% highlight html %}
 
@@ -232,7 +232,7 @@ Above flat array of JSON data can be directly assigned to [dataSource](http://he
 
 ## Remote Data
 
-When using remote data binding, the adaptor of [ej.DataManager](http://helpjs.syncfusion.com/js/api/ejdatamanager#) plays vital role in processing queries to make them suitable to sends along with data request and also process the response data from the server.
+When using remote data binding, the adaptor of [ej.DataManager](http://helpjs.syncfusion.com/api/js/ejdatamanager#) plays vital role in processing queries to make them suitable to sends along with data request and also process the response data from the server.
 
 ### OData
 
@@ -240,7 +240,7 @@ When using remote data binding, the adaptor of [ej.DataManager](http://helpjs.sy
 
 * Passing OData service link to DataManager
 
-You can provide the OData service URL directly to the [ej.DataManager](http://helpjs.syncfusion.com/js/api/ejdatamanager#) class and then we can assign it to TreeView dataSource.
+You can provide the OData service URL directly to the [ej.DataManager](http://helpjs.syncfusion.com/api/js/ejdatamanager#) class and then we can assign it to TreeView dataSource.
 
 {% highlight html %}
 
@@ -286,9 +286,9 @@ You can provide the OData service URL directly to the [ej.DataManager](http://he
 
 {% endhighlight %}
 
-* Passing OData service link to “**url**” property of [ej.DataManager](http://helpjs.syncfusion.com/js/api/ejdatamanager#)
+* Passing OData service link to “**url**” property of [ej.DataManager](http://helpjs.syncfusion.com/api/js/ejdatamanager#)
 
-By using “**url**” property of [ej.DataManager](http://helpjs.syncfusion.com/js/api/ejdatamanager#) we can bind OData Service to Dropdown. Here we may also specify the **adaptor** as [ej.ODataAdaptor](http://helpjs.syncfusion.com/js/datamanager/data-adaptors#odata-adaptor) and it is optional to specify.
+By using “**url**” property of [ej.DataManager](http://helpjs.syncfusion.com/api/js/ejdatamanager#) we can bind OData Service to Dropdown. Here we may also specify the **adaptor** as [ej.ODataAdaptor](http://helpjs.syncfusion.com/js/datamanager/data-adaptors#odata-adaptor) and it is optional to specify.
 
 We can provide adaptor value either as string value (“ODataAdaptor”) or by creating a new instance (new [ej.ODataAdaptor](http://helpjs.syncfusion.com/js/datamanager/data-adaptors#odata-adaptor))
 
@@ -448,7 +448,7 @@ Using [ej.WebApiAdaptor](http://helpjs.syncfusion.com/js/datamanager/data-adapto
 
 ### Other Restful Web Services
 
-The Custom Adaptor concept of [ej.DataManager](http://helpjs.syncfusion.com/js/api/ejdatamanager#) allow you to customize or generate your own adaptor which is used to process query and result data. 
+The Custom Adaptor concept of [ej.DataManager](http://helpjs.syncfusion.com/api/js/ejdatamanager#) allow you to customize or generate your own adaptor which is used to process query and result data. 
 
 [http://helpjs.syncfusion.com/js/datamanager/data-adaptors#custom-adaptor](http://helpjs.syncfusion.com/js/datamanager/data-adaptors#custom-adaptor)
 
@@ -514,95 +514,214 @@ The Custom Adaptor concept of [ej.DataManager](http://helpjs.syncfusion.com/js/a
 
 ## Load on Demand
 
-Load on demand is a technique (Lazy load) that is used to reduce the bandwidth size of consuming huge data. You can load data on demand in TreeView by using [loadOnDemand](http://help.syncfusion.com/js/api/ejtreeview#members:loadondemand) property when you’re going to use huge data.
+Load on demand is a technique (Lazy load) that is used to reduce the bandwidth size of consuming huge data. You can load data on demand in TreeView by using [loadOnDemand](http://help.syncfusion.com/api/js/ejtreeview#members:loadondemand) property when you’re going to use huge data.
+
+For local data source, TreeView loads the first level nodes initially. While expand a parent node then TreeView loads it’s their child nodes from the data source based on the parentId member. It reduces the time to render TreeView with huge data.
 
 Refer below code example to load data on demand from local data source.
 
 {% highlight html %}
 
-    <!--create the TreeView wrapper-->
+<!--create the TreeView wrapper-->
 
-    <div id="treeView">
-
-    </div>
+<div id="treeview"></div>
 
 {% endhighlight %}
 
 {% highlight js %}
 
-        var localData = [
-
-        { id: 1, text: "Item 1", hasChild: true },
-
-        { id: 2, text: "Item 2" },
-
-        { id: 3, text: "Item 3", hasChild: true },
-
-        { id: 4, text: "Item 4" },
-
-        { id: 5, parent: 1, text: "Item 1.1", hasChild: true },
-
-        { id: 6, parent: 1, text: "Item 1.2" },
-
-        { id: 7, parent: 1, text: "Item 1.3" },
-
-        { id: 8, parent: 3, text: "Item 3.1" },
-
-        { id: 9, parent: 3, text: "Item 3.2" },
-
-        { id: 10, parent: 5, text: "Item 1.1.1" }
-
-        ];
-
-        $(function () {
-
-            // initialize and bind the TreeView with local data
-
-            $("#treeView").ejTreeView({
-
-                loadOnDemand: true,
-
-                fields: { dataSource: localData, id: "id", parentId: "parent", text: "text" }
-
-            });
-
-        });
+var localData = [
+    { id: 1, name: "Local Disk(C:)", hasChild: true },
+    { id: 2, name: "Local Disk(D:)", hasChild: true },
+    { id: 3, name: "Local Disk(E:)", hasChild: true },
+    { id: 4, parentId: 1, name: "Folder 1", hasChild: true },
+    { id: 5, parentId: 1, name: "Folder 2" },
+    { id: 6, parentId: 1, name: "Folder 3" },
+    { id: 7, parentId: 2, name: "Folder 4" },
+    { id: 8, parentId: 2, name: "Folder 5", hasChild: true },
+    { id: 9, parentId: 2, name: "Folder 6" },
+    { id: 10, parentId: 3, name: "Folder 7" },
+    { id: 11, parentId: 3, name: "Folder 8" },
+    { id: 12, parentId: 3, name: "Folder 9", hasChild: true },
+    { id: 13, parentId: 4, name: "File 1" },
+    { id: 14, parentId: 4, name: "File 2" },
+    { id: 15, parentId: 4, name: "File 3" },
+    { id: 16, parentId: 8, name: "File 4" },
+    { id: 17, parentId: 8, name: "File 5" },
+    { id: 18, parentId: 8, name: "File 6" },
+    { id: 19, parentId: 12, name: "File 7" },
+    { id: 20, parentId: 12, name: "File 8" },
+    { id: 21, parentId: 12, name: "File 9" }
+];
+$(function () {
+    $("#treeview").ejTreeView({
+        loadOnDemand: true,
+        fields: { dataSource: localData, id: "id", parentId: "parentId", text: "name", hasChild: "hasChild" },
+    });
+});
 
 {% endhighlight %}
+
+The following screenshot displays the load on demand for local data source in TreeView control.
+
+![](/js/TreeView/Populate-Data_images/Populate-Data_img1.png)
+
+While expanding the parent node
+{:.caption}
+
+![](/js/TreeView/Populate-Data_images/Populate-Data_img2.png)
+
+After expanding the parent node
+{:.caption}
+
+For more details about load on demand for local data source, refer the sample [here](http://jsplayground.syncfusion.com/5mnzloq0).
+
+
+For remote data source, TreeView loads the first level nodes initially. While expand the node from TreeView, the data manager passes the query to the controller. Based on this query, you can filter the data from table and return to TreeView.
 
 Refer below code example to load data on demand from remote data source.
 
 {% highlight html %}
 
-    <!--create the TreeView wrapper-->
+<!--create the TreeView wrapper-->
 
-    <div id="treeView">
-
-    </div>
+<div id="treeview"></div>
 
 {% endhighlight %}
 
 {% highlight js %}
 
-        $(function () {
-
-            var dataManager = ej.DataManager("http://mvc.syncfusion.com/OdataServices/treeView/TreeViewData/GetTreeData");
-
-            $("#treeView").ejTreeView({
-
-                loadOnDemand: true,
-
-                fields: {
-
-                    dataSource: dataManager,
-
-                    id: "id", text: "name", parentId: "pid",
-
-                }
-
-            });
-
-        });
+$(function () {
+    // DataManager creation
+    var dataManger = ej.DataManager({
+        url: "http://mvc.syncfusion.com/Services/Northwnd.svc/"
+    });
+    // Query creation
+    var query = ej.Query().from("Categories").select("CategoryID,CategoryName").take(3);
+    $("#treeview").ejTreeView({
+        loadOnDemand: true,
+        fields: {
+            dataSource: dataManger, query: query, id: "CategoryID", text: "CategoryName", hasChild: "CategoryName",
+            child: { dataSource: dataManger, tableName: "Products", parentId: "CategoryID", text: "ProductName" }
+        }
+    });
+});
 
 {% endhighlight %}
+
+For more details about load on demand for remote data source, refer the sample [here](http://jsplayground.syncfusion.com/fgln2q3v).
+
+
+For URL Adaptor, TreeView loads the first level nodes initially. While expand the node from TreeView, the data manager passes the Data Manager instance to the controller. The Data Manager instance contains the parent Id and filter options. Based on the Data Manager instance, you can filter the data from data source and return to TreeView.
+
+Refer below code example to load data on demand with URL adaptor.
+
+{% highlight html %}
+
+<!--create the TreeView wrapper-->
+
+<div id="treeview"></div>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+$(function () {
+    window.dataManger = ej.DataManager({
+        url:"/home/Data",
+        adaptor: new ej.UrlAdaptor(),
+        crossDomain: true,
+    });
+    window.fields = {
+        dataSource: dataManger, text: "name", parentId: "parentId", hasChild: "hasChild"
+    }
+    $("#treeview").ejTreeView({
+        loadOnDemand: true,
+        fields: fields,
+    });
+});
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+public class HomeController : Controller
+{
+
+    public ActionResult Index()
+    {
+        return View();
+    }
+
+    public JsonResult Data(DataManager dm)
+    {
+        List<loadondemand> treeData = GetTreeData();
+        IEnumerable<loadondemand> results;
+        if (dm.Where == null)
+        {
+            //return the first level nodes
+            results = treeData.Where(item => item.parentId == null);
+        }
+        else
+        {
+            //return the nodes which has parentId as you request
+            results = treeData.Where(s => s.parentId == Convert.ToInt32(dm.Where[0].value));
+        }
+        return Json(results, JsonRequestBehavior.AllowGet);
+    }
+
+    List<loadondemand> data = new List<loadondemand>();
+
+    public List<loadondemand> GetTreeData()
+    {
+        data.Add(new loadondemand { id = 1, name = "Local Disk(C:)", hasChild = true });
+        data.Add(new loadondemand { id = 2, name = "Local Disk(D:)", hasChild = true });
+        data.Add(new loadondemand { id = 3, name = "Local Disk(E:)", hasChild = true });
+        data.Add(new loadondemand { id = 4, parentId = 1, name = "Folder 1", hasChild = true });
+        data.Add(new loadondemand { id = 5, parentId = 1, name = "Folder 2" });
+        data.Add(new loadondemand { id = 6, parentId = 1, name = "Folder 3" });
+        data.Add(new loadondemand { id = 7, parentId = 2, name = "Folder 4" });
+        data.Add(new loadondemand { id = 8, parentId = 2, name = "Folder 5", hasChild = true });
+        data.Add(new loadondemand { id = 9, parentId = 2, name = "Folder 6" });
+        data.Add(new loadondemand { id = 10, parentId = 3, name = "Folder 7" });
+        data.Add(new loadondemand { id = 11, parentId = 3, name = "Folder 8" });
+        data.Add(new loadondemand { id = 12, parentId = 3, name = "Folder 9", hasChild = true });
+        data.Add(new loadondemand { id = 13, parentId = 4, name = "File 1" });
+        data.Add(new loadondemand { id = 14, parentId = 4, name = "File 2" });
+        data.Add(new loadondemand { id = 15, parentId = 4, name = "File 3" });
+        data.Add(new loadondemand { id = 16, parentId = 8, name = "File 4" });
+        data.Add(new loadondemand { id = 17, parentId = 8, name = "File 5" });
+        data.Add(new loadondemand { id = 18, parentId = 8, name = "File 6" });
+        data.Add(new loadondemand { id = 19, parentId = 12, name = "File 7" });
+        data.Add(new loadondemand { id = 20, parentId = 12, name = "File 8" });
+        data.Add(new loadondemand { id = 21, parentId = 12, name = "File 9" });
+        return data;
+    }
+}
+
+public class loadondemand
+{
+    public int id { get; set; }
+    public int? parentId { get; set; }
+    public string name { get; set; }
+    public bool? hasChild { get; set; }
+    public bool? expanded { get; set; }
+    public bool? ischecked { get; set; }
+    public bool? selected { get; set; }
+    public string spriteCss { get; set; }
+}
+
+{% endhighlight %}
+
+The following screenshot displays the load on demand for URL Adaptor in TreeView control.
+
+![](/js/TreeView/Populate-Data_images/Populate-Data_img1.png)
+
+While expanding the parent node
+{:.caption}
+
+![](/js/TreeView/Populate-Data_images/Populate-Data_img2.png)
+
+After expanding the parent node
+{:.caption}
 

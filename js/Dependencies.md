@@ -11,11 +11,54 @@ documentation: ug
 
 ## Common Libraries
 
-**Essential JavaScript** components mainly relies on the following 3 common libraries –
+**Essential JavaScript** components mainly relies on the following 2 common libraries –
 
-* jQuery 1.7.1 and later versions
+* jQuery (from the version 1.7.1 to 3.1.0)
 * JsRender - to render the templates.
-* jQuery.easing - to support the animation effects in the components.
+
+N> jQuery.easing external dependency has been removed from version 14.3.0.49 onwards. Kindly include this jQuery.easing dependency for versions lesser than 14.3.0.49. 
+
+The following table provides jQuery compatibility information.
+
+<table class="props">
+<thead>
+<tr>
+<th colspan="2">EJ Versions</th>
+<th colspan="2">Compatible jQuery Versions</th>
+</tr>
+<tr>
+<th>From</th>
+<th>To</th>
+<th>From</th>
+<th>To</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td class="fromejversion">14.3.0.49</td>
+<td class="toejversion">14.3.0.52</td>
+<td class="fromjqueryversion">1.7.1</td>
+<td class="tojqueryversion">3.1.0</td>
+</tr>
+
+<tr>
+<td class="fromejversion">13.2.0.29</td>
+<td class="toejversion">14.2.0.32</td>
+<td class="fromjqueryversion">1.7.1</td>
+<td class="tojqueryversion">2.2.4</td>
+</tr>
+
+<tr>
+<td class="fromejversion">lower version</td>
+<td class="toejversion">13.1.0.30</td>
+<td class="fromjqueryversion">1.7.1</td>
+<td class="tojqueryversion">2.1.3</td>
+</tr>
+</tbody>
+</table>
+
+> jQuery-2.1.4, jQuery-3.0.0 support has been given from ejVersion 13.2.0.29, 14.3.0.49 onwards respectively.
 
 ## Server-side Libraries
 

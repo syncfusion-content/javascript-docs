@@ -22,15 +22,15 @@ Data presentation is helpful for proper representation of data in Spreadsheet. Y
 
 ## Cell Type
 
-You can insert the controls like Button, Checkbox, Dropdown list and Date picker. You can use [`allowCellType`](http://help.syncfusion.com/js/api/ejspreadsheet#members:allowcelltype "allowCellType") property to enable/disable cell type operations.
+You can insert the controls like Button, Checkbox, Dropdown list and Date picker. You can use [`allowCellType`](http://help.syncfusion.com/api/js/ejspreadsheet#members:allowcelltype "allowCellType") property to enable/disable cell type operations.
 
 ### To Insert a Cell Type.
 
-You can insert the cell type to the selected range of cells by using [`addCellTypes`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:xlcelltype-addcelltypes "addCellTypes") method.
+You can insert the cell type to the selected range of cells by using [`addCellTypes`](http://help.syncfusion.com/api/js/ejspreadsheet#methods:xlcelltype-addcelltypes "addCellTypes") method.
 
 ### To remove Cell Type
 
-You can delete the cell type in the selected range of cells by using [`removeCellTypes`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:xlcelltype-removecelltypes "removeCellTypes") method.
+You can delete the cell type in the selected range of cells by using [`removeCellTypes`](http://help.syncfusion.com/api/js/ejspreadsheet#methods:xlcelltype-removecelltypes "removeCellTypes") method.
 
 The following code example describes the above behavior. 
 
@@ -55,8 +55,9 @@ function loadComplete() {
         xlCellType.addCellTypes("D1", {"type" : ej.Spreadsheet.CustomCellType.Button, "text" : "Button1", "background-color" : "green" },  1);
         xlCellType.addCellTypes("B1", {"type" : ej.Spreadsheet.CustomCellType.DatePicker, 'value' : '2/12/2016'},  1);
         xlCellType.addCellTypes("A1", {"type" : ej.Spreadsheet.CustomCellType.DropDownList, 'dataSourceRange': 'A2:A11'},  1);
+        xlCellType.addCellTypes("C1", {"type" : ej.Spreadsheet.CustomCellType.DropDownList, 'dataSourceRange': 'A2:A11'},  1);
         xlCellType.addCellTypes("E1", {"type" : ej.Spreadsheet.CustomCellType.CheckBox, "isChecked" : true },  1);
-        xlCellType.removeCellTypes("A1");
+        xlCellType.removeCellTypes("C1");
     }
 }
 {% endhighlight %}
@@ -67,7 +68,7 @@ The following output is displayed as a result of the above code example.
 
 ## Chart
 
-Chart is a graphical representation of data, that organizes and represents a set of numerical or qualitative data. It mostly displays the selected range of data in terms of x axis and y axis. You can use [`allowCharts`](http://help.syncfusion.com/js/api/ejspreadsheet#members:allowcharts "allowCharts") property to enable/disable chart operations.
+Chart is a graphical representation of data, that organizes and represents a set of numerical or qualitative data. It mostly displays the selected range of data in terms of x axis and y axis. You can use [`allowCharts`](http://help.syncfusion.com/api/js/ejspreadsheet#members:allowcharts "allowCharts") property to enable/disable chart operations.
 
 ### Type of Charts
 
@@ -84,7 +85,7 @@ The following types of charts are available in Spreadsheet.
 You can create the Chart by one of the following ways,
 
 * Using "Chart Type" button to Select the type of chart under Charts group of INSERT Tab in ribbon.
-* Using [`createChart`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:xlchart-createchart "createChart") method to create the chart.
+* Using [`createChart`](http://help.syncfusion.com/api/js/ejspreadsheet#methods:xlchart-createchart "createChart") method to create the chart.
 
 ### Chart Customization
 
@@ -132,7 +133,7 @@ The following output is displayed as a result of the above code example.
 
 ## Conditional Formatting
 
-Conditional formatting helps you to apply formats to a cell or range with certain color based on the cells values. You can use [`allowConditionalFormats`](http://help.syncfusion.com/js/api/ejspreadsheet#members:allowconditionalformats "allowConditionalFormats") property to enable/disable Conditional formats.
+Conditional formatting helps you to apply formats to a cell or range with certain color based on the cells values. You can use [`allowConditionalFormats`](http://help.syncfusion.com/api/js/ejspreadsheet#members:allowconditionalformats "allowConditionalFormats") property to enable/disable Conditional formats.
 
 ### Condition definition
 
@@ -140,7 +141,7 @@ You can define conditions such as greater than, less than, between, equal to, te
 You can do this by one of the following ways,
 
 * Using "Conditional Formatting" option in Conditional Formatting button of HOME Tab in ribbon to open the conditional formatting dialog.
-* Using [`setCFRule`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:xlcformat-setcfrule "setCFRule") method to define the condition.
+* Using [`setCFRule`](http://help.syncfusion.com/api/js/ejspreadsheet#methods:xlcformat-setcfrule "setCFRule") method to define the condition.
 
 The following code example describes the above behavior.
 {% highlight html %}
@@ -161,12 +162,12 @@ $(function () {
 function loadComplete() {
     var xlCFormat = this.XLCFormat;
     if (!this.isImport) {
-        xlCFormat.setCFRule({ "action": "greaterthan", "input1": "10", "color": "redft", "range": "G2:G11" });
-        xlCFormat.setCFRule({ "action": "lessthan", "input1": "20", "color": "yellowft", "range": "E1:E11" });
-        xlCFormat.setCFRule({ "action": "between", "input1": "300", "input2": "600", "color": "greenft", "range": "F2:F11" });
-        xlCFormat.setCFRule({ "action": "equalto", "input1": "20", "color": "redf", "range": "D2:D11" });
-        xlCFormat.setCFRule({ "action": "textcontains", "input1": "loafers", "color": "redt", "range": "A1:A11" });
-        xlCFormat.setCFRule({ "action": "dateoccur", "input1": "02/04/2014", "color": "redft", "range": "B1:B11" });
+        xlCFormat.setCFRule({ "action": "greaterthan", "inputs": ["10"], "color": "redft", "range": "G2:G11" });
+        xlCFormat.setCFRule({ "action": "lessthan", "inputs": ["20"], "color": "yellowft", "range": "E1:E11" });
+        xlCFormat.setCFRule({ "action": "between", "inputs": ["300", "600"], "color": "greenft", "range": "F2:F11" });
+        xlCFormat.setCFRule({ "action": "equalto", "inputs": ["20"], "color": "redf", "range": "D2:D11" });
+        xlCFormat.setCFRule({ "action": "textcontains", "inputs": ["loafers"], "color": "redt", "range": "A1:A11" });
+        xlCFormat.setCFRule({ "action": "dateoccur", "inputs": ["02/04/2014"], "color": "redft", "range": "B1:B11" });
     }
 }
 {% endhighlight %}
@@ -180,7 +181,7 @@ The following output is displayed as a result of the above code example.
 You can clear the defined rules by using one of the following ways,
 
 * Using "Clear Rules" option in Conditional Formatting button of HOME Tab in ribbon to clear the rule.
-* Using [`clearCF`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:xlcformat-clearcf "clearCF") method to clear the defined rules.
+* Using [`clearCF`](http://help.syncfusion.com/api/js/ejspreadsheet#methods:xlcformat-clearcf "clearCF") method to clear the defined rules.
 
 The following code example describes the above behavior.
 {% highlight html %}
@@ -201,9 +202,9 @@ $(function () {
 function loadComplete() {
     var xlCFormat = this.XLCFormat;
     if (!this.isImport) {
-        xlCFormat.setCFRule({ "action": "greaterthan", "input1": "10", "color": "redft", "range": "G2:G11" });
-        xlCFormat.setCFRule({ "action": "lessthan", "input1": "20", "color": "yellowft", "range": "E1:E11" });
-        xlCFormat.setCFRule({ "action": "between", "input1": "300", "input2": "600", "color": "greenft", "range": "F2:F11" });
+        xlCFormat.setCFRule({ "action": "greaterthan", "inputs": ["10"], "color": "redft", "range": "G2:G11" });
+        xlCFormat.setCFRule({ "action": "lessthan", "inputs": ["20"], "color": "yellowft", "range": "E1:E11" });
+        xlCFormat.setCFRule({ "action": "between", "inputs": ["300", "600"], "color": "greenft", "range": "F2:F11" });
         xlCFormat.clearCF(true, "G2:G11");
         xlCFormat.clearCF(true, "F2:F11");
     }
@@ -216,7 +217,7 @@ The following output is displayed as a result of the above code example.
 
 ## Filtering
 
-Filtering allows you to view specific rows in Spreadsheet, while hiding the other rows. When a filter is added to the header row, a drop-down menu appears in each cell of the header row. You can use [`allowFiltering`](http://help.syncfusion.com/js/api/ejspreadsheet#members:allowfiltering "allowFiltering") property to enable/disable filtering. 
+Filtering allows you to view specific rows in Spreadsheet, while hiding the other rows. When a filter is added to the header row, a drop-down menu appears in each cell of the header row. You can use [`allowFiltering`](http://help.syncfusion.com/api/js/ejspreadsheet#members:allowfiltering "allowFiltering") property to enable/disable filtering. 
 
 You can apply filtering by one of the following ways,
 
@@ -237,7 +238,7 @@ You can do this by one of the following ways,
 
 * Using dropdown button in filter header to open the filter dialog.
 * Using context menu to select "Filter by Selected Cell's Value" option in Filter. 
-* Using [`filterByActiveCell`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:xlfilter-filterbyactivecell "filterByActiveCell") method.
+* Using [`filterByActiveCell`](http://help.syncfusion.com/api/js/ejspreadsheet#methods:xlfilter-filterbyactivecell "filterByActiveCell") method.
 
 The following code example describes the above behavior.
 {% highlight html %}
@@ -283,7 +284,7 @@ You can do this by one of the following ways,
 * Using context menu to select "Clear Filter" option in Filter.
 * Using "Clear Filter" option in "Sort & Filter" button under Editing group of HOME Tab in ribbon.
 * Using "Clear Filter" option under Sort and Filter group of DATA Tab in ribbon.
-* Using [`clearFilter`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:xlfilter-clearfilter "clearFilter") method to perform clear filtering.
+* Using [`clearFilter`](http://help.syncfusion.com/api/js/ejspreadsheet#methods:xlfilter-clearfilter "clearFilter") method to perform clear filtering.
 
 The following code example describes the above behavior.
 {% highlight html %}
@@ -333,13 +334,13 @@ You can perform the following customizations for picture. These are available in
 
 ## Pivot Table
 
-Pivot table is a program tool that allows you to reorganize and summarize selected columns and rows of data to obtain a desired report. You can use [`enablePivotTable`](http://help.syncfusion.com/js/api/ejspreadsheet#members:enablepivottable "enablePivotTable") property to enable/disable pivot table operations. 
+Pivot table is a program tool that allows you to reorganize and summarize selected columns and rows of data to obtain a desired report. You can use [`enablePivotTable`](http://help.syncfusion.com/api/js/ejspreadsheet#members:enablepivottable "enablePivotTable") property to enable/disable pivot table operations. 
 
 You can do this by one of the following ways,
 
 * Using "Pivot Table" option under Tables group of INSERT Tab in ribbon.
-* Using [`createPivotTable`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:xlpivot-createpivottable "createPivotTable") method to create pivot table
-* Using [`deletePivotTable`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:xlpivot-deletepivottable "deletePivotTable") method to remove the pivot table.
+* Using [`createPivotTable`](http://help.syncfusion.com/api/js/ejspreadsheet#methods:xlpivot-createpivottable "createPivotTable") method to create pivot table
+* Using [`deletePivotTable`](http://help.syncfusion.com/api/js/ejspreadsheet#methods:xlpivot-deletepivottable "deletePivotTable") method to remove the pivot table.
 
 The following code example describes the above behavior.
 {% highlight html %}
@@ -377,7 +378,7 @@ The following output is displayed as a result of the above code example.
 
 ## Sorting
 
-Sorting helps you to arrange the data to particular order in a selected range of cells. You can use [`allowSorting`](http://help.syncfusion.com/js/api/ejspreadsheet#members:allowsorting "allowSorting") property to enable/disable sorting. 
+Sorting helps you to arrange the data to particular order in a selected range of cells. You can use [`allowSorting`](http://help.syncfusion.com/api/js/ejspreadsheet#members:allowsorting "allowSorting") property to enable/disable sorting. 
 
 You have following options in sorting.
 
@@ -394,17 +395,7 @@ You can do this by one of the following ways,
 * Using "Sort A to Z" or "Sort Z to A" button in Sort & Filter group of DATA Tab in ribbon.
 * Using context menu to select "Sort A to Z" or "Sort Z to A" for strings and option in Sort.
 * Using "Sort A to Z" or "Sort Z to A" for strings an "Sort Smallest to Largest" or "Sort Largest to Smallest" for numbers in filter dialog.
-* Using [`sortByRange`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:xlsort-sortbyrange "sortByRange") method.
-
-### Sort by Color
-
-You can perform sort by color to arrange the data based on the selected cell's background color or font color. This option is only available if the selected range of cells having any color.
-
-You can do this by one of the following ways,
-
-* Using "Sort By Color" option in filter dialog to perform sorting by cell color or font color.
-* Using context menu to select "Put Selected Cell Color To The Top" or "Put Selected Font Color To The Top" in Sort option.
-* Using [`sortByColor`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:xlsort-sortbycolor "sortByColor") method to perform sorting by color.
+* Using [`sortByRange`](http://help.syncfusion.com/api/js/ejspreadsheet#methods:xlsort-sortbyrange "sortByRange") method.
 
 The following code example describes the above behavior.
 {% highlight html %}
@@ -425,13 +416,7 @@ function loadComplete() {
     var xlSort = this.XLSort, xlFormat = this.XLFormat;
     if (!this.isImport) {
         xlSort.sortByRange("A2:A10", "A", "ascending");
-        xlSort.sortByRange("E2:E10", "E", "descending"); 
-        xlFormat.format({ "style": { "background-color": "#FFEB9C" } }, "D2");
-        xlFormat.format({ "style": { "background-color": "#C6EFCE" } }, "D3");
-        xlFormat.format({ "style": { "background-color": "#FFEB9C" } }, "D4");
-        xlFormat.format({ "style": { "background-color": "#C6EFCE" } }, "D5");
-        xlFormat.format({ "style": { "background-color": "#FFEB9C" } }, "D6");     
-        xlSort.sortByColor("PutCellolor", {"background-color": "#FFEB9C"}, "D2:D6");
+        xlSort.sortByRange("E2:E10", "E", "descending");     
     }
 }
 {% endhighlight %}
@@ -440,15 +425,24 @@ The following output is displayed as a result of the above code example.
 
 ![](Data-Presentation_images/Data-Presentation_img8.png)
 
+### Sort by Color
+
+You can perform sort by color to arrange the data based on the selected cell's background color or font color. This option is only available if the selected range of cells having any color.
+
+You can do this by one of the following ways,
+
+* Using "Sort By Color" option in filter dialog to perform sorting by cell color or font color.
+* Using context menu to select "Put Selected Cell Color To The Top" or "Put Selected Font Color To The Top" in Sort option.
+
 ## Table
 
-A table is a data structure that organizes information into rows and columns. You can use [`allowFormatAsTable`](http://help.syncfusion.com/js/api/ejspreadsheet#members:allowformatastable "allowFormatAsTable") property enable/disable table operations. 
+A table is a data structure that organizes information into rows and columns. You can use [`allowFormatAsTable`](http://help.syncfusion.com/api/js/ejspreadsheet#members:allowformatastable "allowFormatAsTable") property enable/disable table operations. 
 
 You can do this by one of the following ways,
 
 * Using "Format As Table" under Styles group of HOME Tab in ribbon.
 * Using Table option under Tables group of INSERT Tab in ribbon.
-* Using [`createTable`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:xlformat-createtable "createTable") method to insert a table and [`removeTable`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:xlformat-removetable "removeTable") to delete a table.
+* Using [`createTable`](http://help.syncfusion.com/api/js/ejspreadsheet#methods:xlformat-createtable "createTable") method to insert a table and [`removeTable`](http://help.syncfusion.com/api/js/ejspreadsheet#methods:xlformat-removetable "removeTable") to delete a table.
 
 ### Table Customization
 

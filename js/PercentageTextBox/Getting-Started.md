@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started
 
-This section explains briefly about how to create a **Editors** control in your application with **JavaScript**. From the following steps you can learn how to create and use **PercentageTextBox** in your application. Here we have showcased, a small Electric bill calculator application using **Editors** widgets. The **Essential JavaScript Editors** control includes numeric, percentage and currency textbox controls. You will learn how to use our JS textboxes widgets in the Electric bill calculator Application from the following documentation. This will guide you to use the wide range functionalities of textbox widgets features to complete this application. 
+This section explains briefly about how to create a **Editors** control in your application with **JavaScript**. From the following steps you can learn how to create and use **PercentageTextBox** in your application. Here we have showcased, a small Electric bill calculator application using **Editors** widgets. The **Essential JavaScript Editors** control includes Numeric, Percentage and Currency textbox controls. You will learn how to use our JS textboxes widgets in the Electric bill calculator Application from the following documentation. This will guide you to use the wide range functionalities of textbox widgets features to complete this application. 
 
 ![](/js/PercentageTextBox/Getting-Started_images/Getting-Started_img1.png) 
 
@@ -194,7 +194,7 @@ The following screenshot displays the output when the above code is executed.
 
 ## Set the MinValue, MaxValue and value in Textboxes
 
-You can set the **“MinValue”,** **“MaxValue”** and **“Value”** in Numeric, percentage and Currency text boxes for maintaining the range in Textboxes widgets. In this scenario, you have to enter the values between the given ranges.The following code example illustrates how to achieve this.
+You can set the **“MinValue”,** **“MaxValue”** and **“Value”** in Numeric, Percentage and Currency text boxes for maintaining the range in Textboxes widgets. In this scenario, you have to enter the values between the given ranges.The following code example illustrates how to achieve this.
 
 {% highlight javascript %}
 
@@ -265,14 +265,14 @@ You can set the “**enableStrictMode” option** to restrict entering values de
                 value: 35, // sets value in the numeric
                 minValue: 1, // sets min value for range 
                 maxValue: 10000, // sets max value for range
-                enableStrictMode: true // sets strict mode to True will set the value 
             });
             // simple Percentage creation
             $("#servTax").ejPercentageTextbox({
                 watermarkText: " Service Tax", // sets watermark in percentage
-                value: 3, // sets value by default 
-                minValue: 5, // sets min value for calculation
+                value: 5, // sets value by default 
+                minValue: 3, // sets min value for calculation
                 maxValue: 100// sets max value for calculation
+                enableStrictMode: true // sets strict mode to True will set the value 
             });
             // simple Currency creation
             $("#amountperum").ejCurrencyTextbox({
@@ -300,7 +300,7 @@ You can set the “**enableStrictMode” option** to restrict entering values de
 
 
 
-Run the above code example and you can see that it restricts entering a value exceeding the **minValue** and **maxValue** range mentioned in the numeric textbox. 
+Run the above code example and you can see that it restricts entering a value exceeding the **minValue** and **maxValue** range mentioned in the Numeric textbox. 
 
 ## Set Calculation process with Textboxes Widgets
 

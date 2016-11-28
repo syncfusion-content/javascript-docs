@@ -41,7 +41,7 @@ In the **HTML** page, add the following button elements to configure **Split But
             contentType: "textandimage",
             showRoundedCorner: true,
             targetID: "Ul11",
-            prefixIcon: "e-uiLight e-login"
+            prefixIcon: "e-icon e-login"
         });
     });
     

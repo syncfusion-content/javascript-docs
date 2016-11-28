@@ -5,6 +5,7 @@ description: Working with Lists customization for RichTextEditor widget
 platform: js
 control: RTE
 documentation: ug
+keywords: RichTextEditor, Lists, Custom Lists
 
 ---
 # Working with Lists
@@ -13,7 +14,7 @@ The editor provides tools to makes your content as list such as an ordered and u
 
 ## Create a Lists
 
-By default, [Insert Lists](http://help.syncfusion.com/js/api/ejrte#members:tools-lists) tool is enabled in the editor’s toolbar.The editor’s have ordered and unordered list types.
+By default, [Insert Lists](http://help.syncfusion.com/api/js/ejrte#members:tools-lists) tool is enabled in the editor’s toolbar.The editor’s have ordered and unordered list types.
 
 {% highlight html %}
 
@@ -40,7 +41,7 @@ By default, [Insert Lists](http://help.syncfusion.com/js/api/ejrte#members:tools
 
 ## Custom Lists
 
-You can use [custom lists](http://help.syncfusion.com/js/api/ejrte#members:tools-customOrderedList) tools to insert lists with custom behaviors.You can create a list with related attributes (such as listImage, listStyle, title, name, and text) using the custom list tool.Ordered and Unordered list having own customize ways to insert a list into the editor’s content.
+You can use [custom lists](http://help.syncfusion.com/api/js/ejrte#members:tools-customOrderedList) tools to insert lists with custom behaviors.You can create a list with related attributes (such as listImage, listStyle, title, name, and text) using the custom list tool.Ordered and Unordered list having own customize ways to insert a list into the editor’s content.
 
 * [Insert a customOrderedList](#insert-a-customOrderedList)
 * [Insert a customUnorderedList](#insert-a-customUnorderedList)  
@@ -48,7 +49,7 @@ You can use [custom lists](http://help.syncfusion.com/js/api/ejrte#members:tools
 
 ### Insert a customOrderedList
 
-you need to enable [customOrderedList](http://help.syncfusion.com/js/api/ejrte#members:tools-customOrderedList) tool on the editor’s toolbar.
+you need to enable [customOrderedList](http://help.syncfusion.com/api/js/ejrte#members:tools-customOrderedList) tool on the editor’s toolbar.
 
 The customOrderedList having below options for an ordered list customization.
 <table>
@@ -56,12 +57,12 @@ The customOrderedList having below options for an ordered list customization.
 <th>
 Option<br/><br/></th><th>
 Summary<br/><br/></th></tr>
-<tr><td>[name](http://help.syncfusion.com/js/api/ejrte#members:tools-customOrderedList-name)</td><td>Specifies the name for customOrderedList item.</td></tr>
-<tr><td>[tooltip](http://help.syncfusion.com/js/api/ejrte#members:tools-customOrderedList-tooltip)</td><td>Specifies the title for customOrderedList item.</td></tr>
-<tr><td>[css](http://help.syncfusion.com/js/api/ejrte#members:tools-customOrderedList-css)</td><td>Specifies the styles for customOrderedList item.</td></tr>
-<tr><td>[text](http://help.syncfusion.com/js/api/ejrte#members:tools-customOrderedList-text)</td><td>Specifies the text for customOrderedList item.</td></tr>
-<tr><td>[listStyle](http://help.syncfusion.com/js/api/ejrte#members:tools-customOrderedList-listStyle)</td><td>Specifies the list style for customOrderedList item.</td></tr>
-<tr><td>[listImage](http://help.syncfusion.com/js/api/ejrte#members:tools-customOrderedList-listImage)</td><td>Specifies the image for customOrderedList item.</td></tr>
+<tr><td>{{'[name](http://help.syncfusion.com/api/js/ejrte#members:tools-customOrderedList-name)'| markdownify }} </td><td>Specifies the name for customOrderedList item.</td></tr>
+<tr><td>{{'[tooltip](http://help.syncfusion.com/api/js/ejrte#members:tools-customOrderedList-tooltip)'| markdownify }} </td><td>Specifies the title for customOrderedList item.</td></tr>
+<tr><td>{{'[css](http://help.syncfusion.com/api/js/ejrte#members:tools-customOrderedList-css)'| markdownify }} </td><td>Specifies the styles for customOrderedList item.</td></tr>
+<tr><td>{{'[text](http://help.syncfusion.com/api/js/ejrte#members:tools-customOrderedList-text)'| markdownify }} </td><td>Specifies the text for customOrderedList item.</td></tr>
+<tr><td>{{'[listStyle](http://help.syncfusion.com/api/js/ejrte#members:tools-customOrderedList-listStyle)'| markdownify }} </td><td>Specifies the list style for customOrderedList item.</td></tr>
+<tr><td>{{'[listImage](http://help.syncfusion.com/api/js/ejrte#members:tools-customOrderedList-listImage)'| markdownify }} </td><td>Specifies the image for customOrderedList item.</td></tr>
 </table>
 
 
@@ -99,7 +100,7 @@ Summary<br/><br/></th></tr>
 
 ### Insert a customUnorderedList
 
-you need to enable [customUnorderedList](http://help.syncfusion.com/js/api/ejrte#members:tools-customUnorderedList) tool on the editor’s toolbar.
+you need to enable [customUnorderedList](http://help.syncfusion.com/api/js/ejrte#members:tools-customUnorderedList) tool on the editor’s toolbar.
 
 The customUnorderedList having below options for an unordered list customization.
 
@@ -108,12 +109,15 @@ The customUnorderedList having below options for an unordered list customization
 <th>
 Option<br/><br/></th><th>
 Summary<br/><br/></th></tr>
-<tr><td>[name](http://help.syncfusion.com/js/api/ejrte#members:tools-customUnorderedList-name)</td><td>Specifies the name for customUnorderedList item.</td></tr>
-<tr><td>[tooltip](http://help.syncfusion.com/js/api/ejrte#members:tools-customUnorderedList-tooltip)</td><td>Specifies the title for customUnorderedList item.</td></tr>
-<tr><td>[css](http://help.syncfusion.com/js/api/ejrte#members:tools-customUnorderedList-css)</td><td>Specifies the styles for customUnorderedList item.</td></tr>
-<tr><td>[text](http://help.syncfusion.com/js/api/ejrte#members:tools-customUnorderedList-text)</td><td>Specifies the text for customUnorderedList item.</td></tr>
-<tr><td>[listStyle](http://help.syncfusion.com/js/api/ejrte#members:tools-customUnorderedList-listStyle)</td><td>Specifies the list style for customUnorderedList item.</td></tr>
-<tr><td>[listImage](http://help.syncfusion.com/js/api/ejrte#members:tools-customUnorderedList-listImage)</td><td>Specifies the image for customUnorderedList item.</td></tr>
+<tr>
+<td>
+{{'[name](http://help.syncfusion.com/api/js/ejrte#members:tools-customUnorderedList-name)'| markdownify }} 
+</td><td>Specifies the name for customUnorderedList item.</td></tr>
+<tr><td> {{'[tooltip](http://help.syncfusion.com/api/js/ejrte#members:tools-customUnorderedList-tooltip)'| markdownify }} </td><td>Specifies the title for customUnorderedList item.</td></tr>
+<tr><td> {{'[css](http://help.syncfusion.com/api/js/ejrte#members:tools-customUnorderedList-css) '| markdownify }} </td><td>Specifies the styles for customUnorderedList item.</td></tr>
+<tr><td> {{'[text](http://help.syncfusion.com/api/js/ejrte#members:tools-customUnorderedList-text) '| markdownify }} </td><td>Specifies the text for customUnorderedList item.</td></tr>
+<tr><td> {{'[listStyle](http://help.syncfusion.com/api/js/ejrte#members:tools-customUnorderedList-listStyle) '| markdownify }} </td><td>Specifies the list style for customUnorderedList item.</td></tr>
+<tr><td> {{'[listImage](http://help.syncfusion.com/api/js/ejrte#members:tools-customUnorderedList-listImage) '| markdownify }} </td><td>Specifies the image for customUnorderedList item.</td></tr>
 </table>
 
 {% highlight html %}

@@ -5,17 +5,34 @@ description: User Interface for RichTextEditor widget (toolbar, content area, an
 platform: js
 control: RTE
 documentation: ug
-
+keywords: RichTextEditor, Toolbar Configuration, Custom Tool, Tool items
 ---
-# User Interface
 
-The editor user interface (UI) is designed with the toolbar, content area (iframe), and footer elements.
+# Toolbar Configuration
 
-## Toolbar
+The editor’s toolbar contains a collection of tools such as bold, italic and text alignment buttons that are used to format the content.
+However, in most integrations, it's desirable to change the toolbar configuration to suit needs. Fortunately, that's quite easy to do too.
 
-The editor’s toolbar contains buttons and dropdowns that help you to format your content.
+<table>
+<tr>
+    <th> Property <br/><br/></th>
+    <th> Description <br/><br/></th>
+</tr>
+<tr>
+    <td> {{'[toolsList](http://help.syncfusion.com/api/js/ejrte#members:toolslist)'| markdownify }} <br/><br/></td>
+    <td>  The toolsList option allows you to choose which tools appear on the toolbar, as well as the order and grouping of those items <br/><br/></td>
+</tr>
+<tr>
+    <td> {{'[tools](http://help.syncfusion.com/api/js/ejrte#members:tools)'| markdownify }} <br/><br/></td>
+    <td> The toolsList property is used to get the root group order and tools property is used to get the inner order of the corresponding groups displayed.<br/><br/></td>
+</tr>
+</table>
 
-### Toolbar Items
+N> By default, when you tab from the textbox to the RTE, the first tools in the Toolbar of RTE will get focus not in the text area. <BR>
+But we can able to focus the RTE text area by setting the tab index attribute as -1 to avoid the focus on RTE toolbar when we tab from textbox to RTE - {{'[Demo](http://jsplayground.syncfusion.com/Sync_1rlmhqbz)'| markdownify }}
+
+
+## Toolbar Items
 
 The following table lists the available buttons and dropdowns on the toolbar:
 
@@ -130,348 +147,174 @@ tools: { <br/>print: ["print"]<br/>}<br/><br/></td><td>
 No<br/><br/></td></tr>
 </table>
 
-### Customize Toolbar
+## Rearrange Group
 
-You can customize and rearrange items (buttons and dropdowns) by adding, removing, and enabling/disabling on the editor’s toolbar. 
-
-#### Rearrange Group
-
-The toolbar contains groups, which are similar or related functionalities of toolbar items for efficient access. By default, the groups are arranged using the following order:
+The toolbar contains groups, which are similar or related functionalities of toolbar items for efficient access. By default, the groups are arranged using the following order
 
 {% highlight javascript %}
 toolsList:["formatStyle","font","style","effects","alignment","lists","indenting","clipboard","doAction", 
 "clear","links","images","media","tables","casing","customTools","view"]
 {% endhighlight %}
 
-The group can be rearranged on customization using the **[toolsList](http://help.syncfusion.com/js/api/ejrte#members:toolslist)** property.
+The group can be rearranged on customization using the **[toolsList](http://help.syncfusion.com/api/js/ejrte#members:toolslist)** property.
 
+{% highlight html %}
 
+<textarea id="texteditor"></textarea>
 
-{% highlight javascript %}
-$(function (){
-$("#texteditor").ejRTE({
-toolsList:["links","lists","doAction","style","images"],
-tools:{
-style:["bold","italic"],
-lists:["unorderedList","orderedList"],
-doAction:["undo","redo"],
-links:["createLink","removeLink"],
-images:["image"]
-}
-});
+<script type="text/javascript">
+    $(function (){
+        $("#texteditor").ejRTE({
+            toolsList:["links","lists","doAction","style","images"],
+            tools:{
+                style:["bold","italic"],
+                lists:["unorderedList","orderedList"],
+                doAction:["undo","redo"],
+                links:["createLink","removeLink"],
+                images:["image"]
+            }
+        });
 
-});
+    });
+</script>
+
 {% endhighlight %}
 
 N> If you are not specify any group in **toolsList** property, the editor will create the toolbar with default group.
 
-#### Add Toolbar item
 
-The editor’s toolbar can be extended through the **customTools** option, which renders the custom toolbar items along with the built-in toolbar items. 
+## Undo and Redo 
 
-{% highlight javascript %}
-$("#texteditor").ejRTE({
+Undo and Redo buttons allow you to editing the text by disregard/cancel the recently made changes and restore it to previous state. It is a useful tool to restore the performed action which got changed by mistake. Up to 50 actions can be undo/redo in the editor by default. 
 
-toolsList: ["customTools"],
-tools:{
-customTools:[{
-name:"insertcode",
+To undo and redo operations, do one of the following:
 
-text:"insertcode",
-tooltip:"Insert code snippets",
-css:"e-rte-toolbar-icon insertcode",
-action: function () {
-var rte=$("#texteditor").data("ejRTE");
-// handle the execute action on click the custom tool
-}
-}]
-}
+* Press the undo/redo button on the toolbar
+* Press the **Ctrl** **+** **Z**/**Ctrl** **+** **Y** combination on the keyboard
+
+
+{% highlight html %}
+
+<textarea id ="texteditor"></textarea>
+
+<script type ="text/javascript">
+$(function () {
+        $("#texteditor").ejRTE({
+            value: "The RichTextEditor (RTE) control enables you to edit the contents with insert table and images," +
+            " it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.",
+            toolsList: ["doAction"],
+            tools: {
+                doAction: ["undo", "redo"]
+            }
+        });
+    });
+</script>
+
+{% endhighlight %}
+
+## Clipboard Operations
+
+The editor provides support for the clipboard operations (cut, copy, and paste) in all text and images using the toolbar buttons and the keyboard shortcuts. Toolbar includes buttons through which the clipboard operations, such as Cut, Copy, and Paste can be accessed.
+
+You can use the keyboard shortcuts to perform the clipboard operations.
+
+* Cut - CTRL+X
+* Copy - CTRL+C
+* Paste - CTRL+V
+
+N> Some browsers block the clipboard access from JavaScript. If you want to use the Cut, Copy, and Paste buttons on the toolbar, you need to allow JavaScript to use the clipboard. If you don’t want to do this configuration, use CTRL+C, CTRL+X, and CTRL+V keyboard commands.
+
+{% highlight html %}
+
+<textarea id="texteditor"></textarea>
+
+<script type="text/javascript">
+
+       $(function () {
+
+            $("#texteditor").ejRTE({
+                value: "The RichTextEditor (RTE) control enables you to edit the contents with insert table and images," +
+                " it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.",
+                toolsList: ["clipboard"],
+                tools: {
+                    clipboard: ["cut", "copy", "paste"]
+                }
+            });
+
+        });
+</script>
+
+{% endhighlight %}
+
+## Specify Custom Tools
+
+Beside the available built-in tools, the RichTextEditor’s toolbar functionality can be extended through custom tools, defined in the tools through the customTools options, which renders the custom toolbar items along with the built-in toolbar items.
+
+The example below demonstrates how to add a custom tool button
+
+{% highlight html %}
+
+<textarea id="texteditor"></textarea>
+
+<script type="text/javascript">
+
+$(function () {
+    $("#texteditor").ejRTE({
+        toolsList: ["customTools"],
+        width:"100%", 
+        minWidth:"100px",
+        tools: {
+            customTools: [{
+                name: "specialCharacter",
+                tooltip: "Special Characters",
+                css: "insert-special-character",
+                text: "Insert - O",
+                action: function () {
+                    $("#specialcharacter").ejDialog("open");   
+                }
+            }]
+        },isResponsive:true
+    });
+    rteObj = $("#texteditor").data("ejRTE");
+    $(".insert-special-character").ejButton();
+    $("#specialcharacter").ejDialog({ enableResize: false, enableModal: true, showOnInit: false, width: "auto", position: { X: 218, Y: 38 } });
+    $(".specialtbl tbody tr td" ).addClass("specialtd").on( "click", customTdClick);
 });
+
+</script>
+  
+{% endhighlight %}
+
+Upon clicking the "Insert" button, the special character will be added to the RTE's content.
+
+{% highlight html %}
+
+    function customTdClick(args) {
+        rteObj.executeCommand("inserthtml", args.currentTarget.innerText);
+        $("#specialcharacter").ejDialog("close");
+    }  
+    
 {% endhighlight %}
 
 Define the CSS that will be applied to the custom tool.
 
 {% highlight html %}
-.e-rte-toolbar-icon.insertcode:before {
-content: "\e780";
-font-size: 18px;
-margin: 3px;
+
+.specialtbl tr td
+{
+    border:1px solid #c8c8c8;
 }
-{% endhighlight %}
-
-N> The CSS class that defined for custom tool is directly applies to the newly added toolbar item. 
-
-#### Remove Toolbar item
-
-To remove a particular toolbar item, pass the id of a toolbar item to the [removeToolbarItem](http://help.syncfusion.com/js/api/ejrte#methods:removetoolbaritem) method.
-
-{% highlight javascript %}
-var rte = $("#texteditor").data("ejRTE");
-rte.removeToolbarItem("video");
-{% endhighlight %}
-
-N> This method completely removes the DOM element along with the events bounded to it.
-
-#### Enable/Disable Toolbar item
-
-The state of each toolbar item can be controlled by calling the client-side methods such as [enableToolbarItem](http://help.syncfusion.com/js/api/ejrte#methods:enabletoolbaritem) and [disableToolbarItem](http://help.syncfusion.com/js/api/ejrte#methods:disabletoolbaritem).
-
-{% highlight javascript %}
-var rte = $("#texteditor").data("ejRTE");
-rte.disableToolbarItem("video");
-{% endhighlight %}
-
-{% highlight javascript %}
-var rte = $("#texteditor").data("ejRTE");
-rte.enableToolbarItem("video");
-{% endhighlight %}
-
-N> If a toolbar item is in disabled state, then it will not have any interactivity including mouse hover.
-
-### Show/Hide Toolbar
-
-The toolbar can be initially set to visible or hidden within the editor using [showToolbar](http://help.syncfusion.com/js/api/ejrte#members:showtoolbar "") API. Default value is “true”.
-
-{% highlight javascript %}
-$("#texteditor").ejRTE({
-showToolbar: false
-});
-{% endhighlight %}
-
-## Content Area
-
-The editor creates the iframe element as the content area on control initialization, it is used to display and editing the content. In Content Area, the editor displays only the body tag of a &lt; iframe &gt; document. To set or modify details in the &lt; head &gt; tag, use [Source view](#source-view) of the editor.
-
-### Iframe Attributes
-
-The editor allows you to passing an additional attributes to body tag of a &lt; iframe &gt; element using [iframeAttributes](http://help.syncfusion.com/js/api/ejrte#members:iframeattributes) property. The property contains name/value pairs in string format, it is used to override the default appearance of the content area. For example, the content area’s font, color, margins, and background can be overridden using iframeAttributes property. You can specifies the editable behavior (content editable) of the content also in this property. For more information about the content editable, see [content editable](#content-editable).
-
-{% highlight javascript %}
- $(function () {
-
- $("#texteditor").ejRTE({
- value: "The RichTextEditor (RTE) control enables you to edit the contents with insert table and images," +
- " it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.",
- iframeAttributes:{style: "background-color:#e0ffff;color:#6495ed;"}
- });
- });
-{% endhighlight %}
-
-### Adding CSS File
-
-The editor offers you to add external CSS file to style the &lt; iframe &gt; element.  You can change the appearance of editor’s content using an external CSS file. For example, apply default styles for headings (h1, h2, etc.) and lists (bulleted or numbered) of the editor’s content. 
-
-{% highlight javascript %}
- $(function () {
-
- $("#texteditor").ejRTE({
-  value: "The RichTextEditor (RTE) control enables you to edit the contents with insert table and images," +
- " it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea." 
-});
-
- });
-function addCssToIframe() {
-var editor = $("#texteditor").ejRTE("instance");
-var iframeDoc = editor.getDocument();
-var linkTag = document.createElement("link");
-linkTag.type = "text/css";
-linkTag.rel = "stylesheet";
-linkTag.href = "Content/Css/iframe-custom.css";
-iframeDoc.head.appendChild(linkTag);
+.specialtd:hover
+{
+    background-color:#86bcea;
+    cursor:pointer;
 }
-
+      
 {% endhighlight %}
 
-The new file named iframe-custom.css is created and moved to the content folder with the following styles.
+N> The CSS class that defined for custom tool is directly applies to the newly added toolbar item - {{'[Demo](http://jsplayground.syncfusion.com/Sync_o1rxw2yj)'| markdownify }}
 
-{% highlight html %}
-h1 {
-color: navy;
-margin-left: 20px;
-}
+![](UserInterface_images/CustomTool.png)
 
-ul { 
-display: block;
-list-style-type: square;
-margin-left: 10px;
-}
+I> The custom buttons get a `insert-special-character` CSS class to allow styling, where name is the name specified in the custom tool configuration.
 
-ol {
-display: block;
-list-style-type: circle;
-margin-right: 10px;
-}
-{% endhighlight %}
-
-### Content Editable
-
-The editor provides option to control the editable behavior using [allowEditing](http://help.syncfusion.com/js/api/ejrte#members:allowediting) property. When the allowEditing property is set to false, the editor disables its editing functionality. 
-
-{% highlight html %}
-
-<textarea id ="texteditor"></textarea>
-
-<script type ="text/javascript">
-
-   $(function () {
-
-            $("#texteditor").ejRTE({
-                value: "The RichTextEditor (RTE) control enables you to edit the contents with insert table and images," +
-                " it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.",
-                allowEditing: false
-            });
-
-        });
-
-</script>
-{% endhighlight %}
-
-The contentEditable attribute allows you to make any element of HTML content to become editable or non-editable.  
-
-{% highlight html %}
-
-<textarea id ="texteditor"></textarea>
-
-<script type ="text/javascript">
-
- $(function () {
-
-            $("#texteditor").ejRTE({
-                value: "<p>The RichTextEditor (RTE) control enables you to edit the contents with insert table and images,</p>" +
-                "<p> it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.</p>",
-            });
-
-            var editor = $("#texteditor").ejRTE("instance");
-            var iframeDoc = editor.getDocument();
-            var paragraph = $("p", iframeDoc.body);
-            $($(paragraph)[1]).attr("contenteditable", "false");
-        });
-
-</script>
-{% endhighlight %}
-
-N> Content editable is fully compatible with latest browsers, to know more details, see [here](http://www.w3schools.com/tags/att_global_contenteditable.asp#).
-
-## Footer
-
-This option allows you to specify which footer elements should display at the bottom of the editor. The available footer elements are listed below:
-
-1. HTML View
-2. HTML Tag Info
-3. Characters Count / Word Count 
-4. Clear Format
-5. Resizer
-
-{% highlight javascript %}
-$("#texteditor").ejRTE({
-showFooter: true
-});
-{% endhighlight %}
-
-### Source View
-
-Source view displays the HTML code of the content in a separate dialog. Source view allows you to view and edit the HTML Tags, scripts, and styles directly. If you made any modification in Source view directly, click **Update** button to synchronize with Design view.
-
-You can paste HTML text into Source view. If you cut or copy from HTML source such as page source of Browser, paste as HTML (without escape characters) into Source view. 
-
-{% highlight javascript %}
-$("#texteditor").ejRTE({
-showFooter:true,
-showHtmlSource:true
-});
-{% endhighlight %}
-
-N> Source view is useful for working directly with raw HTML text, so this tool is mainly used for advanced users who would like to have more control over the source of their content. 
-
-### HTML Tag Info
-
-The HTML tag info tool that shows the path of currently selected tag along with hierarchy of parent tags to which it belongs. The tag information is displayed at the bottom of the editor. It is used to determine which element has the focus in the editor’s content. 
-
-{% highlight javascript %}
-$("#texteditor").ejRTE({
-showFooter:true,
-showHtmlTagInfo:true
-});
-{% endhighlight %}
-
-N> The outermost tag is the body tag of &lt; iframe &gt; element in design view, so it shows the path from currently selected path to the body tag.
-
-### Characters Count/Word Count
-
-The editor automatically counts the number of characters and words in the content while you type. The characters and words count displayed at the bottom of the editor. You can limit the number of characters in your content using [maxLength](http://help.syncfusion.com/js/api/ejrte#members:maxlength) property. By default, the editor sets the characters limit value as 7000 characters.
-
-{% highlight html %}
-<textarea id="texteditor"></textarea>
-<script type="text/javascript">
-    $(function () {
-
-        $("#texteditor").ejRTE({
-            showFooter: true,
-            showWordCount: true,
-            showCharCount: true,
-            maxLength: 500
-        });
-
-    });
-</script>
-{% endhighlight %}
-
-N> The editor counts the characters by including the space, and this validation occurs while pasting the content into the editor also.
-
-### Clear Format
-
-The clear format tool is useful to remove all formatting styles (such as bold, italic, underline, color, superscript, subscript, and more) from currently selected text. As a result, all the text formatting will be cleared and return to its default formatting styles. When you set the [showClearFormat](http://help.syncfusion.com/js/api/ejrte#members:showclearformat) property to true, the clear format tool will be displayed at bottom of the editor.
-
-{% highlight javascript %}
-$("#texteditor").ejRTE({
-showFooter:true,
-showClearFormat:true
-});
-{% endhighlight %}
-
-### Resize Handle
-
-When you set the [enableResize](http://help.syncfusion.com/js/api/ejrte#members:enableresize) property to true, resize handle will be displayed at bottom-right corner of the editor. You can drag the handle to change its size. On resizing, the editor will automatically adjust the toolbar, content area, and footer within it accordingly. Resize limits can be defined via [minHeight](http://help.syncfusion.com/js/api/ejrte#members:minheight), [maxHeight](http://help.syncfusion.com/js/api/ejrte#members:maxheight), [minWidth](http://help.syncfusion.com/js/api/ejrte#members:minwidth), and [maxWidth](http://help.syncfusion.com/js/api/ejrte#members:maxwidth) properties. You can specify the size of the editor programmatically through the [height](http://help.syncfusion.com/js/api/ejrte#members:height) and [width](http://help.syncfusion.com/js/api/ejrte#members:width) properties. 
-
-{% highlight javascript %}
-$("#texteditor").ejRTE({
-showFooter:true,
-enableResize:true,
-width:600,minWidth:250,maxWidth:750,
-height:300,minHeight:250,maxHeight:500
-});
-{% endhighlight %}
-
-N> When you set the enableRTL property to true, the resize handle will automatically positioned to the bottom-left corner of the editor.
-
-
-
-
-
-### Characters Count/Word Count
-
-The editor automatically counts the number of characters and words in the content while you type. The characters and words count displayed at the bottom of the editor. You can limit the number of characters in your content using [maxLength](http://help.syncfusion.com/js/api/ejrte#members:maxlength) property. By default, the editor sets the characters limit value as 7000 characters.
-
-{% highlight html %}
-
-    <textarea id="texteditor"></textarea>
-    <script type="text/javascript">
-        $(function () {
-
-            $("#texteditor").ejRTE({
-                showFooter: true,
-                showWordCount: true,
-                showCharCount: true,
-                maxLength: 500
-            });
-
-        });
-    </script>
-
-{% endhighlight %}
-
-By clicking the Characters Count/Word Count labels in footer , The word and character count information dialog is opened. It contains the details of the number of words and characters with and without spacing.  
-
-![](UserInterface_images/wordchar.png)
-
-N> The editor counts the characters by including the space, and this validation occurs while pasting the content into the editor also.

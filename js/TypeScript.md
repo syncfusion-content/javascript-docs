@@ -9,13 +9,13 @@ documentation: ug
 
 # TypeScript
 
-The Essential JavaScript package provides the default type definition file ej.widgets.all.d.ts to include the support for type-checking while initializing any of the Syncfusion widgets. The important step you need to do is to copy the ej.widgets.all.d.ts file into your project and then need to refer it in your TypeScript application (app.ts file), so that you will get the intelliSense support and also the compile time type-checking. 
+The Essential JavaScript package provides the default type definition file ej.web.all.d.ts to include the support for type-checking while initializing any of the Syncfusion widgets. The important step you need to do is to copy the ej.web.all.d.ts file into your project and then need to refer it in your TypeScript application (app.ts file), so that you will get the intelliSense support and also the compile time type-checking. 
 
-You can find the ej.widgets.all.d.ts file in the following location,
+You can find the ej.web.all.d.ts file in the following location,
 
 <b>(installed location)</b>\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets\typescript
 
-Apart from ej.widgets.all.d.ts file, it is also necessary to make use of the jquery.d.ts file in your TypeScript application, which can be downloaded from [here](https://github.com/borisyankov/DefinitelyTyped).
+Apart from ej.web.all.d.ts file, it is also necessary to make use of the jquery.d.ts file in your TypeScript application, which can be downloaded from [here](https://github.com/borisyankov/DefinitelyTyped).
 
 ## Prerequisites
 
@@ -30,13 +30,13 @@ To work with [TypeScript](http://www.typescriptlang.org/Handbook), the below men
 Start Visual Studio 2013 and Create a new TypeScript Application from `File|New|Project` and `save` it with a meaningful name as shown below (Select the **TypeScript** option, which is available by default in the listed Templates on the left side),
 ![](/js/TypeScript_images/TypeScript_img1.png) 
 
-Now, you need to add the required Scripts and style sheets into your Project, as shown below – Copy the required Scripts and themes from the installed location on your machine into your new TypeScript application for rendering the Syncfusion widgets (steps for copying the required scripts and stylesheets are described in the [manual reference](/js/control-initialization#manual-reference-of-scripts-and-stylesheets-in-a-html-page) section of the Control Initialization topic),
+Now, you need to add the required Scripts and style sheets into your Project, as shown below – Copy the required Scripts and Content/ejthemes from the installed location on your machine into your new TypeScript application for rendering the Syncfusion widgets (steps for copying the required scripts and stylesheets are described in the [manual reference](/js/control-initialization#manual-reference-of-scripts-and-stylesheets-in-a-html-page) section of the Control Initialization topic),
 ![](/js/TypeScript_images/TypeScript_img2.png)
 
-Scripts & themes folder copied into current project
+Scripts & Content folder copied into current project
 {:.caption} 
 
-Add the ej.widgets.all.d.ts and jquery.d.ts type-definition files in your project and refer it in the app.ts file of your project as shown below,
+Add the ej.web.all.d.ts and jquery.d.ts type-definition files in your project and refer it in the app.ts file of your project as shown below,
 ![](/js/TypeScript_images/TypeScript_img3.png) 
 
 Now, refer these two files within the app.ts file (before referring these files, remove all the unwanted content in that app.ts file) as shown below,

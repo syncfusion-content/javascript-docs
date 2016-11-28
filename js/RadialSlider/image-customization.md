@@ -13,7 +13,7 @@ documentation: ug
 
 ### Using Class
 
-The **RadialSlider** property **innerCircleImageClass** allow to show  image to the inner circle of the  **RadialSlider**.  By default, the **Radial Slider** innerCircleImageClass  is set as "null". Refer to the following code example.
+The **RadialSlider** property **innerCircleImageClass** allow to set image for the inner circle of the  **RadialSlider**.  By default, the **Radial Slider** innerCircleImageClass is set as "null". Refer to the following code example.
 
 {% highlight html %}
 
@@ -34,7 +34,7 @@ The following screenshot illustrates the output of above code.
 
 ### Using image URL 
 
-The **RadialSlider** property **innerCircleImageUrl** allow to show URL image to the inner circle of the **RadialSlider**.  By default, the **Radial Slider** innerCircleImageUrl  is set as "null". Refer to the following code example.
+The **RadialSlider** property **innerCircleImageUrl** allow to set URL image to the inner circle of the **RadialSlider**.  By default, the **Radial Slider** innerCircleImageUrl  is set as "null". Refer to the following code example.
 
 {% highlight html %}
 

@@ -9,7 +9,7 @@ documentation: ug
 
 ### BPMN Shapes
 
-BPMN shapes are used to represent the internal business procedure in a graphical notation and enables you to communicate the procedures in a standard manner. To create a BPMN shape, the `type` of the node should be set as "bpmn" and its `shape` should be set as any one of the built-in shape. [BPMN Shapes](/js/api/global#bpmnshapes "BPMN Shapes"). The following code example illustrates how to create a simple business process. 
+BPMN shapes are used to represent the internal business procedure in a graphical notation and enables you to communicate the procedures in a standard manner. To create a BPMN shape, the `type` of the node should be set as "bpmn" and its `shape` should be set as any one of the built-in shape. [BPMN Shapes](/api/js/global#bpmnshapes "BPMN Shapes"). The following code example illustrates how to create a simple business process. 
 
 {% highlight javascript %}
 
@@ -120,7 +120,7 @@ Event triggers are notated as icons inside the circle and they represent the spe
 
 ### Gateway
 
-Gateway is used to control the flow of a process. It is represented as a diamond shape. To create a gateway, the `shape` property of node should be set as "gateway" and the `gateway` property can be set with any of the appropriate [Gateways](/js/api/global#bpmngateways "Gateways"). The following code example illustrates how to create a BPMN Gateway.
+Gateway is used to control the flow of a process. It is represented as a diamond shape. To create a gateway, the `shape` property of node should be set as "gateway" and the `gateway` property can be set with any of the appropriate [Gateways](/api/js/global#bpmngateways "Gateways"). The following code example illustrates how to create a BPMN Gateway.
 
 {% highlight javascript %}
 
@@ -173,7 +173,7 @@ There are two types of activities .They are listed as follows.
 * Task – Occurs within a process and it is not broken down to finer level of detail.
 * Subprocess – Occurs within a process and it is broken down to finer level of detail.
 
-To create a BPMN activity, you need to set the `shape` as "activity". You also need to set the type of the [BPMN Activity](/js/api/global#bpmnactivity "BPMN Activity") by using the `activity` property of node. By default, the type of the `activity` is set as "task". The following code example illustrates how to create an activity.
+To create a BPMN activity, you need to set the `shape` as "activity". You also need to set the type of the [BPMN Activity](/api/js/global#bpmnactivity "BPMN Activity") by using the `activity` property of node. By default, the type of the `activity` is set as "task". The following code example illustrates how to create an activity.
 
 {% highlight javascript %}
 
@@ -370,6 +370,44 @@ $("#diagram").ejDiagram({
 {% endhighlight %}
 
 ![](/js/Diagram/Shapes_images/Shapes_img118.png)
+
+#### Processes 
+
+Processes is a array collection that defines the children values for BPMN subprocess.
+
+{% highlight javascript %}
+<div id="diagram"></div>
+<script type="text/javascript">
+var nodes = [{
+        name: "group", offsetX: 500, offsetY: 300, width: 300, height: 200,
+        type: "bpmn", shape: ej.datavisualization.Diagram.BPMNShapes.Group,
+        children: [{
+            name: "node", marginLeft: 15, marginTop: 15, width: 250, height: 150,
+            type: "bpmn", shape: ej.datavisualization.Diagram.BPMNShapes.Activity, activity: ej.datavisualization.Diagram.BPMNActivity.SubProcess,
+            subProcess: {
+                collapsed: false,
+                Processes: [{
+                    name: "subnode01", marginLeft: 20, marginTop: 50, width: 30, height: 30,
+                    type: "bpmn", shape: ej.datavisualization.Diagram.BPMNShapes.Event
+                },
+                    {
+                        name: "subnode02", marginLeft: 90, marginTop: 25, width: 100, height: 80,
+                        type: "bpmn", shape: ej.datavisualization.Diagram.BPMNShapes.Activity, activity: ej.datavisualization.Diagram.BPMNActivity.Task, task: { type: "user" }, annotation: { text: "Review Customer Rating", length: 125, angle: 24, width: 100, height: 30 }
+                    }]
+            }
+        }]
+    }];
+var connectors = [{
+        name: "connector1", sourceNode: "subnode01", targetNode: "subnode02"
+    }];
+
+$("#diagram").ejDiagram({
+        connectors: connectors,
+        nodes: nodes});
+</script>
+{% endhighlight %}
+
+![](/js/Diagram/Shapes_images/Shapes_img151.png)
 
 #### Loop
 

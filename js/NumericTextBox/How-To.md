@@ -11,7 +11,7 @@ documentation: ug
 
 ## Use Normal Textboxes as Syncfusion textboxes
 
-In an application or a web page, you may use normal textboxes along with other Syncfusion components, since there is no separate EJplugin for textboxes.
+In an application or a web page, you may use normal textboxes along with other Syncfusion components, since there is no separate Essential JavaScript plugin for textboxes.
 
 So, you may want to make a normal textbox to look like Syncfusion textbox in order to achieve uniform look and appearance in your web page.
 

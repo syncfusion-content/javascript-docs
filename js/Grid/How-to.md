@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tooltip and signalR binding with Grid widget for Syncfusion Essential JS
+title: SignalR binding with Grid widget for Syncfusion Essential JS
 description: How to use tooltip and signalR binding in Grid
 platform: js
 control: Grid
@@ -14,7 +14,7 @@ Grid  supports SignalR features for live updates in record. Please find the belo
 
 1) Before configure SignalR with ejGrid. You need to Setup SignalR configuration in Visual Studio project. For reference, please find the link.
 
-N> [signalR](http://www.asp.net/signalr/overview/getting-started/tutorial-getting-started-with-signalr#setup "signalr") 
+N> Getting started with [SignalR](http://www.asp.net/signalr/overview/getting-started/tutorial-getting-started-with-signalr#setup "signalr") 
 
 
 
@@ -89,12 +89,12 @@ public class SignalHub: Hub
 
 ## Copy data from Excel to Grid
 
-This [blog](https://www.syncfusion.com/blogs/post/Copying-and-Pasting-Excel-Sheet-Data-to-Grid-ASPNET-MVC.aspx) is about conversion of Excel to JSON data. After got JSON data you can bind it to Grid. 
+Copy data from Excel to Grid is possible by converting Excel data to JSON data and then binding it to the Grid. Details are covered in this [blog](https://www.syncfusion.com/blogs/post/Copying-and-Pasting-Excel-Sheet-Data-to-Grid-ASPNET-MVC.aspx) post. 
 
 
 ## Prevent/Maintain persistence of properties
 
-Grid actions can be persisted throughout by enabling the enablePersistence property of the Grid. But we can maintain/prevent a grid action explicitly with the help of `addToPersist` and `ignoreOnPersist` methods respectively.
+Grid actions can be persisted throughout by enabling the enablePersistence property of the Grid. However, we can maintain/prevent a grid action explicitly with the help of `addToPersist` and `ignoreOnPersist` methods respectively.
 
 {% highlight html %}
 <a href="http://www.syncfusion.com">Navigate to another Page</a>
@@ -129,56 +129,59 @@ Grid actions can be persisted throughout by enabling the enablePersistence prope
         });
   {% endhighlight %}   
   
-  So on navigating to another page by clicking on the link, by default the filterSettings and groupSettings will be persisted. But upon clicking the button and navigating, the persist state of the grid actions are modified.
+  So on navigating to another page by clicking on the link, by default the filterSettings and groupSettings will be persisted. But upon clicking the button and navigating, the persist state of the Grid actions are modified.
    
 # External Search in Grid
 
-Using [`search`](http://help.syncfusion.com/js/api/ejgrid#methods:search “search”) method of grid, you can search the string in grid externally without using in-built toolbar search support. While using [`search`](http://help.syncfusion.com/js/api/ejgrid#methods:search “search”) method it is necessary to set [`allowSearching`](http://help.syncfusion.com/js/api/ejgrid#members:allowsearching “allowSearching”) property as `true`. The following code example explains the above behavior.
+Using [`search`](http://help.syncfusion.com/api/js/ejgrid#methods:search “search”) method of Grid, you can search the string in Grid externally without using in-built toolbar search support. While using [`search`](http://help.syncfusion.com/api/js/ejgrid#methods:search “search”) method it is necessary to set [`allowSearching`](http://help.syncfusion.com/api/js/ejgrid#members:allowsearching “allowSearching”) property as `true`. The following code example explains the above behavior.
 
 {% tabs %}
 {% highlight html %}
 <div class="content-container-fluid">
-<div class="row">
-<div id="sampleProperties">
-<div class="prop-grid">
-<div class="row">
-<div class="col-md-3">
-<input type="text" id="srchstr" class="e-ejinputtext" />
-<input type="button" id = "search" value="Searching"/>
-</div>
-</div>
-</div>
-</div>
-<div class="cols-sample-area">
-<div id="Grid"></div>
-</div>
-</div>
+    <div class="row">
+        <div id="sampleProperties">
+            <div class="prop-grid">
+                <div class="row">
+                    <div class="col-md-3">
+                        <input type="text" id="srchstr" class="e-ejinputtext" />
+                        <input type="button" id="search" value="Searching" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cols-sample-area">
+            <div id="Grid"></div>
+        </div>
+    </div>
 </div>
 
 
 {% endhighlight %}
 
-{% highlight javascript %}
-$("#Grid").ejGrid({
-dataSource: window.gridData,
-allowPaging: true,
-allowSearching: true,
-columns: [
-{ field: "OrderID" },
-{ field: "CustomerID" },
-{ field: "EmployeeID"},
-{ field: "Freight" },
-{ field: "ShipCity"},
-{ field: "ShipCountry"}
-]
-});
-$("#search").ejButton({ click: "onSearching", size: "small" });
-});
-function onSearching(args) {
-var obj = $("#Grid").ejGrid("instance");
-var val = $("#srchstr").val();
-obj.search(val);
-}
+{% highlight js %}
+<script>
+    $(function () {
+        $("#Grid").ejGrid({
+            dataSource: window.gridData,
+            allowPaging: true,
+            allowSearching: true,
+            columns: [
+            { field: "OrderID" },
+            { field: "CustomerID" },
+            { field: "EmployeeID" },
+            { field: "Freight" },
+            { field: "ShipCity" },
+            { field: "ShipCountry" }
+            ]
+        });
+        $("#search").ejButton({ click: "onSearching", size: "small" });
+    });
+    function onSearching(args) {
+        var obj = $("#Grid").ejGrid("instance");
+        var val = $("#srchstr").val();
+        obj.search(val);
+    }
+</script>
 
 
 {% endhighlight %}

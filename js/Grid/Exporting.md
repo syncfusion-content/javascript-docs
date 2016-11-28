@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Export
 
-To export the grid, `export` method should  be called with export mapper as parameter. To make it work from the grid toolbar, `ExcelExport`, `WordExport` and `PdfExport` toolbar items needs to be added in [`toolbarSettings.toolbarItems`](http://help.syncfusion.com/js/api/ejgrid#members:toolbarsettings-toolbaritems) property and equivalent server action mapper should be defined in `exportToExcelAction`, `exportToWordAction`, and `exportToPdfAction` properties. The code snippet for this is
+To export the grid, `export` method should  be called with export mapper as parameter. To make it work from the grid toolbar, `ExcelExport`, `WordExport` and `PdfExport` toolbar items needs to be added in [`toolbarSettings.toolbarItems`](http://help.syncfusion.com/api/js/ejgrid#members:toolbarsettings-toolbaritems) property and equivalent server action mapper should be defined in `exportToExcelAction`, `exportToWordAction`, and `exportToPdfAction` properties. The code snippet for this is
 
 {% highlight html %}
 <div id="Grid"></div>
@@ -52,7 +52,7 @@ $(function () {
 
 Currently grid data can be converted to different file formats in server-side only, through **EJ's** helper functions in .NET. So, to use exporting in your projects, it is required to create a server with any of the following web services. 
 
-* WebAPI 
+* Web API 
 * WCF Service
 * ASP.NET MVC Controller Action 
 * ASP.NET WebMethod 
@@ -335,7 +335,7 @@ private GridProperties ConvertGridpropertiesect(string gridProperty)
 
 ## Local data 
 
-By default, client data source is not sent to server to prevent unwanted data transfer since all data origin is server. In case, if you don't want to query the data source again for exporting in server, the grid's client [`dataSource`](http://help.syncfusion.com/js/api/ejgrid#members:datasource) can be sent to server on export postback by removing the [`dataSource`](http://help.syncfusion.com/js/api/ejgrid#members:datasource) property in grid's ignore list. The code snippet for this as follows
+By default, client data source is not sent to server to prevent unwanted data transfer since all data origin is server. In case, if you don't want to query the data source again for exporting in server, the grid's client [`dataSource`](http://help.syncfusion.com/api/js/ejgrid#members:datasource) can be sent to server on export postback by removing the [`dataSource`](http://help.syncfusion.com/api/js/ejgrid#members:datasource) property in grid's ignore list. The code snippet for this as follows
 
 {% highlight javascript %}
 

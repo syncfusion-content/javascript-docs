@@ -56,7 +56,7 @@ SwimlaneCaptionFormat
 </td></tr>
 <tr>
 <td>
-Filters
+FilterSettings
 </td><td>
 Filters:
 </td></tr>
@@ -84,6 +84,18 @@ Cards
 </td><td>
 Cards
 </td></tr>
+<tr>
+<td>
+ItemsCount
+</td><td>
+Items Count :
+</td></tr>
+<tr>
+<td>
+Unassigned
+</td><td>
+Unassigned
+</td></tr>
 </table>
 
 The following code example describes the above behavior.
@@ -103,11 +115,13 @@ The following code example describes the above behavior.
         EditFormTitle: "Details von ",
         AddFormTitle: "Neue Karte hinzufügen",
         SwimlaneCaptionFormat: "- {{:count}}{{if count == 1 }} Artikel {{else}} Artikel {{/if}}",
-        Filters: "Filter:",
+        FilterSettings: "Filter:",
         FilterOfText: "Von",
         Max: "Max.",
         Min: "Min.",
-        Cards: "Karten"
+        Cards: "Karten",
+        ItemsCount:"Artikel Graf :",
+        Unassigned:"Nicht zugewiesen",
     };
     $(function () {
         var data = ej.DataManager(window.kanbanData).executeLocal(ej.Query().take(30));
@@ -141,7 +155,7 @@ The following output is displayed as a result of the above code example.
 
 ## Right to Left (RTL)
 
-By default, Kanban render its text and layout from left to right. To customize Kanban’s direction, you can change direction from LTR to RTL by using [`enableRTL`](https://help.syncfusion.com/js/api/ejkanban#members:enablertl) as true.
+By default, Kanban render its text and layout from left to right. To customize Kanban’s direction, you can change direction from LTR to RTL by using [`enableRTL`](https://help.syncfusion.com/api/js/ejkanban#members:enablertl) as true.
 
 The following code example describes the above behavior.
 
@@ -155,18 +169,20 @@ The following code example describes the above behavior.
 {% highlight javascript %}
 
     ej.Kanban.Locale["ar-AE"] = {
-        EmptyCard: "لا بطاقات لعرض",
-        SaveButton: "حفظ",
-        CancelButton: "إلغاء",
-        EditFormTitle: "تفاصيل ",
-        AddFormTitle: "إضافة بطاقة جديدة",
-        SwimlaneCaptionFormat: "- {{:count}}{{if count == 1 }} بند {{else}} العناصر {{/if}}",
-        FilterSettings: "مرشحات:",
-        FilterOfText: "من",
-        Max: "ماكس",
-        Min: "دقيقة",
-        Cards: "بطاقات"
-    };
+      EmptyCard: "لا بطاقات لعرض",
+      SaveButton: "حفظ",
+      CancelButton: "إلغاء",
+      EditFormTitle: "تفاصيل ",
+      AddFormTitle: "إضافة بطاقة جديدة",
+      SwimlaneCaptionFormat: "- {{:count}}{{if count == 1 }} بند {{else}} العناصر {{/if}}",
+      FilterSettings: "مرشحات:",
+      FilterOfText: "من",
+      Max: "ماكس",
+      Min: "دقيقة",
+      Cards: "  بطاقات",
+      ItemsCount: "عد العناصر:",
+      Unassigned: "غير معين",
+};
     $(function() {
         var data = ej.DataManager(window.kanbanLocaleData).executeLocal(ej.Query().take(30));
     

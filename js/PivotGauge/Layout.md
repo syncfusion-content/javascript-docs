@@ -9,9 +9,9 @@ documentation: ug
 
 # Layout
 
-##Row-wise Layout 
+## Row-wise Layout 
 
-Gauges can be arranged in specified number of rows by using the [`rowsCount`](/js/api/ejpivotgauge#members:rowscount) property.
+Gauges can be arranged in specified number of rows by using the [`rowsCount`](/api/js/ejpivotgauge#members:rowscount) property.
 
 {% highlight javascript %}
 
@@ -24,9 +24,9 @@ Gauges can be arranged in specified number of rows by using the [`rowsCount`](/j
 
 ![](Layout_images/Row-wiseLayout.png) 
 
-##Column-wise Layout
+## Column-wise Layout
 
-Gauges can be arranged in specified number of columns by using the [`columnsCount`](/js/api/ejpivotgauge#members:columnscount) property.
+Gauges can be arranged in specified number of columns by using the [`columnsCount`](/api/js/ejpivotgauge#members:columnscount) property.
 
 {% highlight javascript %}
 

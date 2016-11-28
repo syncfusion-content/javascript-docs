@@ -38,7 +38,7 @@ To show only horizontal/vertical gridlines or to hide gridlines, refer to [Const
 
 ## Appearance
 
-You can customize the appearance of the gridlines by using a set of predefined properties. To explore those properties, refer to [Gridlines](/js/api/ejDiagram#snapsettings:horizontalgridlines "Gridlines")
+You can customize the appearance of the gridlines by using a set of predefined properties. To explore those properties, refer to [Gridlines](/api/js/ejDiagram#snapsettings:horizontalgridlines "Gridlines")
 The `horizontalGridLines` and `verticalGridLines` properties allow to customize the appearance of the gridlines. The following code example illustrates how to customize the appearance of gridlines.
 
 {% highlight javascript %}

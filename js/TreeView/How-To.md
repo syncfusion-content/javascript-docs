@@ -12,7 +12,7 @@ documentation: ug
 
 ## Update the modified data from tree to database
 
-TreeView allow you to get the updated tree data after performing such operation like node editing, drag and drop, add and remove node. Using [getTreeData](http://help.syncfusion.com/js/api/ejtreeview#methods:gettreedata) method you can get the updated tree data. 
+TreeView allow you to get the updated tree data after performing such operation like node editing, drag and drop, add and remove node. Using [getTreeData](http://help.syncfusion.com/api/js/ejtreeview#methods:gettreedata) method you can get the updated tree data. 
 
 Refer the sample from the link [Updated tree data](http://jsplayground.syncfusion.com/3f1qqqm1#) to know how to get updated data from TreeView.
 
@@ -24,7 +24,7 @@ Refer the sample from the link [TreeContextMenu](http://jsplayground.syncfusion.
 
 ## Sorted data using refresh method
 
-TreeView allow you to refresh the entire tree data by using [refresh](http://help.syncfusion.com/js/api/ejtreeview#methods:refresh) method. Refer the sample from the link [Sorted tree data](http://jsplayground.syncfusion.com/ded1kjs4#) to know how to update entire tree data.
+TreeView allow you to refresh the entire tree data by using [refresh](http://help.syncfusion.com/api/js/ejtreeview#methods:refresh) method. Refer the sample from the link [Sorted tree data](http://jsplayground.syncfusion.com/ded1kjs4#) to know how to update entire tree data.
 
 ## Persist updated data after edit, add and remove node
 
@@ -42,7 +42,7 @@ TreeView allow you to bind and update tree data in mapped data component while a
 
 ## Set Tooltip for TreeView nodes
 
-TreeView allow you to set tooltip option to TreeView nodes by using [fields.linkAttribute](http://help.syncfusion.com/js/api/ejtreeview#members:fields-linkattribute) property of TreeView. Refer the sample from the link [Tooltip](http://jsplayground.syncfusion.com/nbdo3l5g#) to know how to set tooltip for TreeView nodes.
+TreeView allow you to set tooltip option to TreeView nodes by using [fields.linkAttribute](http://help.syncfusion.com/api/js/ejtreeview#members:fields-linkattribute) property of TreeView. Refer the sample from the link [Tooltip](http://jsplayground.syncfusion.com/nbdo3l5g#) to know how to set tooltip for TreeView nodes.
 
 ## Auto hide/show the expand/collapse icon of TreeView
 

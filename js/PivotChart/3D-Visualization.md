@@ -19,7 +19,7 @@ The PivotChart control allows you to view the data in a 3D view. Following are t
 
 ## 3D Column Chart
 
-3D Column Chart is rendered by specifying the chart type as **“Column”** in the **“type”** enumeration property of **“commonSeriesOptions”** along with [`enable3D`](/js/api/ejchart#members:enable3d) property set to **“true”.**
+3D Column Chart is rendered by specifying the chart type as **“Column”** in the **“type”** enumeration property of **“commonSeriesOptions”** along with [`enable3D`](/api/js/ejchart#members:enable3d) property set to **“true”.**
 
 {% highlight javascript %}
 
@@ -41,7 +41,7 @@ The PivotChart control allows you to view the data in a 3D view. Following are t
 
 ## 3D Bar Chart
 
-3D Bar Chart is rendered by specifying the chart type as **“Bar”** in the **“type”** enumeration property of **“commonSeriesOptions”** along with  [`enable3D`](/js/api/ejchart#members:enable3d) property set to **“true”.**
+3D Bar Chart is rendered by specifying the chart type as **“Bar”** in the **“type”** enumeration property of **“commonSeriesOptions”** along with  [`enable3D`](/api/js/ejchart#members:enable3d) property set to **“true”.**
 
 {% highlight javascript %}
 
@@ -62,7 +62,7 @@ The PivotChart control allows you to view the data in a 3D view. Following are t
 ![](3D-Visualization_images/3DBarChart.png)
 
 ## 3D Stacking Bar Chart
-3D Stacking Bar Chart is rendered by specifying the chart type as **“Stacking Bar”** in the **“type”** enumeration property of **“commonSeriesOptions”** along with [`enable3D`](/js/api/ejchart#members:enable3d) property set to **“true”.**
+3D Stacking Bar Chart is rendered by specifying the chart type as **“Stacking Bar”** in the **“type”** enumeration property of **“commonSeriesOptions”** along with [`enable3D`](/api/js/ejchart#members:enable3d) property set to **“true”.**
 
 {% highlight javascript %}
 
@@ -83,7 +83,7 @@ The PivotChart control allows you to view the data in a 3D view. Following are t
 ![](3D-Visualization_images/3DStackingBarChart.png)
 
 ## 3D Stacking Column Chart
-3D Stacking Column Chart is rendered by specifying the chart type as **“Stacking Column”** in the **“type”** enumeration property of **“commonSeriesOptions”** along with [`enable3D`](/js/api/ejchart#members:enable3d) property set to **“true”.**
+3D Stacking Column Chart is rendered by specifying the chart type as **“Stacking Column”** in the **“type”** enumeration property of **“commonSeriesOptions”** along with [`enable3D`](/api/js/ejchart#members:enable3d) property set to **“true”.**
 
 {% highlight javascript %}
 
@@ -104,7 +104,7 @@ The PivotChart control allows you to view the data in a 3D view. Following are t
 ![](3D-Visualization_images/3DStackingColumnChart.png)
 
 ## 3D Pie Chart
-3D Pie Chart is rendered by specifying the chart type as **"Pie"** in the **“type”** enumeration property of **“commonSeriesOptions”** along with [`enable3D`](/js/api/ejchart#members:enable3d) property set to **“true”.**
+3D Pie Chart is rendered by specifying the chart type as **"Pie"** in the **“type”** enumeration property of **“commonSeriesOptions”** along with [`enable3D`](/api/js/ejchart#members:enable3d) property set to **“true”.**
 
 {% highlight javascript %}
 
@@ -124,8 +124,8 @@ The PivotChart control allows you to view the data in a 3D view. Following are t
 
 ![](3D-Visualization_images/3DPieChart.png)
 
-##Rotating 3D Chart
-We can rotate the 3D Chart towards left or right by setting an appropriate angle value to the [`rotation`](/js/api/ejchart#members:rotation) property. The direction of the Chart display depends upon the positive or negative angle value.
+## Rotating 3D Chart
+We can rotate the 3D Chart towards left or right by setting an appropriate angle value to the [`rotation`](/api/js/ejchart#members:rotation) property. The direction of the Chart display depends upon the positive or negative angle value.
 
 {% highlight javascript %}
 

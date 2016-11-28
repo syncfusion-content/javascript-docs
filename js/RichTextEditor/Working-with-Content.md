@@ -5,9 +5,139 @@ description: Working with Content related changes in RichTextEditor widget
 platform: js
 control: RTE
 documentation: ug
+keywords: RichTextEditor, IFrame Attributes, Editing and Formatting 
 
 ---
 # Working with Content
+
+The editor creates the iframe element as the content area on control initialization, it is used to display and editing the content. In Content Area, the editor displays only the body tag of a &lt; iframe &gt; document. To set or modify details in the &lt; head &gt; tag, use [Source view](#footer#source-view) of the editor.
+
+## Iframe Attributes
+
+The editor allows you to passing an additional attributes to body tag of a &lt; iframe &gt; element using [iframeAttributes](http://help.syncfusion.com/api/js/ejrte#members:iframeattributes) property. The property contains name/value pairs in string format, it is used to override the default appearance of the content area. 
+
+N> the content area’s font, color, margins, and background can be overridden using iframeAttributes property. You can specifies the editable behavior (content editable) of the content also in this property.
+
+{% highlight html %}
+
+<textarea id="texteditor"></textarea>
+ 
+<script type="text/javascript">
+    $(function () {
+        $("#texteditor").ejRTE({
+            value: "The RichTextEditor (RTE) control enables you to edit the contents with insert table and images," +
+            " it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.",
+            iframeAttributes:{style: "background-color:#e0ffff;color:#6495ed;"}
+        });
+    });
+</script>
+
+{% endhighlight %}
+
+N> Background image for the RTE control : {{'[Link](http://jsplayground.syncfusion.com/Sync_cpaoqshs)'| markdownify }} <BR>
+Set default font for the Iframe : {{'[Link](http://jsplayground.syncfusion.com/Sync_k2uwsibi)'| markdownify }}
+
+
+## Adding External CSS File
+
+The editor offers you to add external CSS file to style the &lt; iframe &gt; element.  Easily change the appearance of editor’s content using an external CSS file. For example, apply default styles for headings (h1, h2, etc.) and lists (bulleted or numbered) of the editor’s content. 
+
+{% highlight javascript %}
+
+ <textarea id="texteditor"></textarea>
+ 
+ <script type="text/javascript">
+    $(function () {
+        $("#texteditor").ejRTE({
+        value: "The RichTextEditor (RTE) control enables you to edit the contents with insert table and images," +
+        " it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea." 
+        });
+    });
+    function addCssToIframe() {
+        var editor = $("#texteditor").ejRTE("instance");
+        var iframeDoc = editor.getDocument();
+        var linkTag = document.createElement("link");
+        linkTag.type = "text/css";
+        linkTag.rel = "stylesheet";
+        linkTag.href = "Content/Css/iframe-custom.css";
+        iframeDoc.head.appendChild(linkTag);
+    }
+</script>
+
+{% endhighlight %}
+
+The new file named iframe-custom.css is created and moved to the content folder with the following styles.
+
+{% highlight html %}
+h1 {
+    color: navy;
+    margin-left: 20px;
+}
+
+ul { 
+    display: block;
+    list-style-type: square;
+    margin-left: 10px;
+}
+
+ol {
+    display: block;
+    list-style-type: circle;
+    margin-right: 10px;
+}
+{% endhighlight %}
+
+N> Our RTE control editor section is an iframe. An iframe has another scope, so we can't access it to style using class which is defined in main document. To set the styles for the contents that kept inside the editor(iframe) we have to append the styles link in iframe head section.
+
+## Content Editable
+
+The editor provides option to control the editable behavior using [allowEditing](http://help.syncfusion.com/api/js/ejrte#members:allowediting) property. When the allowEditing property is set to false, the editor disables its editing functionality. 
+
+{% highlight html %}
+
+<textarea id ="texteditor"></textarea>
+
+<script type ="text/javascript">
+
+   $(function () {
+
+            $("#texteditor").ejRTE({
+                value: "The RichTextEditor (RTE) control enables you to edit the contents with insert table and images," +
+                " it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.",
+                allowEditing: false
+            });
+
+        });
+
+</script>
+{% endhighlight %}
+
+The contentEditable attribute allows you to make any element of HTML content to become editable or non-editable.  
+
+{% highlight html %}
+
+<textarea id ="texteditor"></textarea>
+
+<script type ="text/javascript">
+
+ $(function () {
+
+            $("#texteditor").ejRTE({
+                value: "<p>The RichTextEditor (RTE) control enables you to edit the contents with insert table and images,</p>" +
+                "<p> it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.</p>",
+            });
+
+            var editor = $("#texteditor").ejRTE("instance");
+            var iframeDoc = editor.getDocument();
+            var paragraph = $("p", iframeDoc.body);
+            $($(paragraph)[1]).attr("contenteditable", "false");
+        });
+
+</script>
+
+{% endhighlight %}
+
+N> Content editable is fully compatible with latest browsers, to know more details, see [here](http://www.w3schools.com/tags/att_global_contenteditable.asp#).
 
 ## Submit Content
 
@@ -17,190 +147,91 @@ This example shows how to encode the HTML content before form submit event.
 
 {% highlight html %}
 
-<form>
-<textarea id ="texteditor"></textarea>
+    <form>
+        <textarea id ="texteditor"></textarea>
+        <button type ="submit">Submit</button>
+    </form>
+    <script type ="text/javascript">
 
-     <button type ="submit">Submit</button>
-     
-</form>
-<script type ="text/javascript">
-
-        $(function () {
-        $("#texteditor").ejRTE({
-            value: "The RichTextEditor (RTE) control enables you to edit the contents with insert table and images," +
-            " it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.",
+            $(function () {
+            $("#texteditor").ejRTE({
+                value: "The RichTextEditor (RTE) control enables you to edit the contents with insert table and images," +
+                " it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.",
+            });
         });
-    });
 
-    $("form").on("submit", function () {
+        $("form").on("submit", function () {
 
-        var editor = $("#texteditor").data("ejRTE");
-        var encoded = $('<div />').text(editor.model.value).html();
-        $("#texteditor").val(encoded);
+            var editor = $("#texteditor").data("ejRTE");
+            var encoded = $('<div />').text(editor.model.value).html();
+            $("#texteditor").val(encoded);
 
-    });
-        </script>
+        });
+    </script>
 
 {% endhighlight %}
 
 ## Refresh
 
-When you move the editor’s wrapper element into another DOM element, the editor needs to be reinitialized by the [refresh](http://help.syncfusion.com/js/api/ejrte#methods:refresh) method to retain its content. The method reload the content area and rebind the events of the editor. 
+When you move the editor’s wrapper element into another DOM element, the editor needs to be reinitialized by the [refresh](http://help.syncfusion.com/api/js/ejrte#methods:refresh) method to retain its content. The method reload the content area and rebind the events of the editor. 
 
 {% highlight html %}
 
- <textarea id="texteditor"></textarea>
+    <textarea id="texteditor"></textarea>
 
-<div id="target"></div>
+    <div id="target"></div>
 
     <button onclick="appendTo()">Append To</button>
     <button onclick="refresh()">Refresh</button>
-<script type="text/javascript">
-        var editor = null;
-        $(function () {
-            $("#texteditor").ejRTE({
-                value: "The RichTextEditor (RTE) control enables you to edit the contents with insert table and images," +
-                " it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.",
+    
+    <script type="text/javascript">
+            var editor = null;
+            $(function () {
+                $("#texteditor").ejRTE({
+                    value: "The RichTextEditor (RTE) control enables you to edit the contents with insert table and images," +
+                    " it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.",
+                });
+                editor = $("#texteditor").ejRTE("instance");
             });
-            editor = $("#texteditor").ejRTE("instance");
-        });
-        function appendTo() {
-            editor._rteWapper.appendTo($("#target"))
-        }
-        function refresh() {
-            editor.refresh()
-        }
-    </script>
-
-{% endhighlight %}
-
-## Editing and Formatting 
-
-The editor’s [toolbar](/js/richtexteditor/user-interface#toolbar) contains buttons and dropdowns that allow you to editing and formatting in your content.
-
-* Font name, font size, and color
-* Bold, italic, underline, and strikethrough
-* Text Alignment – left, right, center, and justify
-* Indent – left and right
-* styles – quotation, normal,  headings, and sub-headings
-* superscript and subscript
-* casing – convert to lower case and upper case
-* list – create ordered and unordered list
-
-{% highlight html %}
-
-<textarea id ="texteditor"></textarea>
-
-<script type ="text/javascript">
-           $(function () {
-        $("#texteditor").ejRTE({
-            value: "The RichTextEditor (RTE) control enables you to edit the contents with insert table and images," +
-            " it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.",
-            toolsList: ["formatStyle", "font", "style", "effects", "alignment", "lists", "indenting", "clipboard", "doAction", "casing"],
-            tools: {
-                font: ["fontName", "fontSize", "fontColor", "backgroundColor"],
-                style: ["bold", "italic", "underline", "strikethrough"],
-                alignment: ["justifyLeft", "justifyCenter", "justifyRight", "justifyFull"],
-                indenting: ["outdent", "indent"],
-                formatStyle: ["format"],
-                effects: ["superscript", "subscript"],
-                casing: ["upperCase", "lowerCase"],
-                lists: ["unorderedList", "orderedList"],
-                clipboard: ["cut", "copy", "paste"],
-                doAction: ["undo", "redo"]
+            function appendTo() {
+                editor._rteWapper.appendTo($("#target"))
             }
-        });
-    });
-    </script>
-
-{% endhighlight %}
-
-## Undo and Redo 
-
-Undo and Redo buttons allow you to editing the text by disregard/cancel the recently made changes and restore it to previous state. It is a useful tool to restore the performed action which got changed by mistake. Up to 50 actions can be undo/redo in the editor by default. 
-
-To undo and redo operations, do one of the following:
-
-* Press the undo/redo button on the toolbar
-* Press the **Ctrl** **+** **Z**/**Ctrl** **+** **Y** combination on the keyboard
-
-
-{% highlight html %}
-
-<textarea id ="texteditor"></textarea>
-
-<script type ="text/javascript">
-$(function () {
-        $("#texteditor").ejRTE({
-            value: "The RichTextEditor (RTE) control enables you to edit the contents with insert table and images," +
-            " it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.",
-            toolsList: ["doAction"],
-            tools: {
-                doAction: ["undo", "redo"]
+            function refresh() {
+                editor.refresh()
             }
-        });
-    });
-</script>
-
-{% endhighlight %}
-
-## Clipboard Operations
-
-The editor provides support for the clipboard operations (cut, copy, and paste) in all text and images using the toolbar buttons and the keyboard shortcuts. Toolbar includes buttons through which the clipboard operations, such as Cut, Copy, and Paste can be accessed.
-
-You can use the keyboard shortcuts to perform the clipboard operations.
-
-* Cut - CTRL+X
-* Copy - CTRL+C
-* Paste - CTRL+V
-
-N> Some browsers block the clipboard access from JavaScript. If you want to use the Cut, Copy, and Paste buttons on the toolbar, you need to allow JavaScript to use the clipboard. If you don’t want to do this configuration, use CTRL+C, CTRL+X, and CTRL+V keyboard commands.
-
-{% highlight html %}
-
-<textarea id="texteditor"></textarea>
-
-<script type="text/javascript">
-
-       $(function () {
-
-            $("#texteditor").ejRTE({
-                value: "The RichTextEditor (RTE) control enables you to edit the contents with insert table and images," +
-                " it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.",
-                toolsList: ["clipboard"],
-                tools: {
-                    clipboard: ["cut", "copy", "paste"]
-                }
-            });
-
-        });
-</script>
+    </script>
 
 {% endhighlight %}
 
 ## Persistence
 
-The editor is capable to persist its content with HTML format. By default, the persistence support is disabled in the editor. When you set the [enablePersistence](http://help.syncfusion.com/js/api/ejrte#members:enablepersistence) property to true, the persistence will be enabled in the editor.
+The editor is capable to persist its content with HTML format. By default, the persistence support is disabled in the editor. When you set the [enablePersistence](http://help.syncfusion.com/api/js/ejrte#members:enablepersistence) property to true, the persistence will be enabled in the editor.
 
 N>  [local storage](http://www.w3schools.com/html/html5_webstorage.asp#) is not supported below ie9 version, therefore persistence support is fallback to [cookie](http://www.w3schools.com/js/js_cookies.asp#).
 
 {% highlight html %}
 
-$(function () {
-$("#texteditor").ejRTE({
-enablePersistence: true
-});
+    <textarea id="texteditor"></textarea>
 
-});
+    <script type="text/javascript">
+        $(function () {
+            $("#texteditor").ejRTE({
+                enablePersistence: true
+            });
+        });
+    </script>
+
 {% endhighlight %}
 
-## Change the Font
-
-By default, the editor’s &lt; iframe &gt; is initialized with “Segoe UI” font name and 3(12pt) font size. To change it, select a different font name and font size from the drop-down in the editor’s toolbar. To apply different font style for particular section of the content, select the text that you would like to change, and select a required font style from the drop-down to apply the changes to the selected text.
-
-### Set Default Font and Font Size
+## Set Default Font Name and Size
 
 * Set a default font name and font size to the font name and size drop-down programmatically.
+
+N> <BR>
+•	By default, the editor’s < iframe > is initialized with “Segoe UI” font name and 3(12pt) font size. <BR> 
+•	To change it, select a different font name and font size from the drop-down in the editor’s toolbar. <BR>
+•	To apply different font style for particular section of the content, select the text that you would like to change, and select a required font style from the drop-down to apply the changes to the selected text.<BR>
+
 
 {% highlight html %}
 
@@ -275,9 +306,10 @@ By default, the editor’s &lt; iframe &gt; is initialized with “Segoe UI” f
         });
 
 </script>
+
 {% endhighlight %}
 
-### Adding Font Names and Font Size
+## Adding Font Names and Font Size
 
 If you want to add additional font names and font sizes to font drop-down, pass the font information as JSON data and bind it with instance of drop-down. 
 
@@ -314,286 +346,23 @@ If you want to add additional font names and font sizes to font drop-down, pass 
 
 If you want to insert/paste the content at the current cursor position (or) to replace the selected content with some formatting, you can use pasteContent method in the editor.
 
-{% highlight javascript %}
+{% highlight html %}
+
+<textarea id="texteditor"></textarea>
+
+<script type="text/javascript">
 
     $(function () {
-            $("#texteditor").ejRTE({
-                value:"The RichTextEditor (RTE) control enables you to edit the contents with insert table and images,"+
-                " it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.",
-            });
+        $("#texteditor").ejRTE({
+            value:"The RichTextEditor (RTE) control enables you to edit the contents with insert table and images,"+
+            " it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.",
         });
-        function pasteContent() {
-            var editor = $("#texteditor").ejRTE("instance");
-            var selectedHtml = editor.getSelectedHtml();
-            editor.pasteContent("<p style ='background-color:yellow;color:skyblue'>" + selectedHtml + "</p>");
-        }
+    });
+    function pasteContent() {
+        var editor = $("#texteditor").ejRTE("instance");
+        var selectedHtml = editor.getSelectedHtml();
+        editor.pasteContent("<p style ='background-color:yellow;color:skyblue'>" + selectedHtml + "</p>");
+    }
+</script>
     
 {% endhighlight %}
-
-
-## Validation 
-
-You can validate the RichTextEditor’s value on form submission by applying [validationRules](http://help.syncfusion.com/js/api/ejrte#members:validationrules) and [validationMessage](http://help.syncfusion.com/js/api/ejrte#members:validationmessage) to the RichTextEditor.
-
-N> [jquery.validate.min](http://cdn.syncfusion.com/js/assets/external/jquery.validate.min.js) script file should be referred for validation, for more details, refer [here](http://jqueryvalidation.org/documentation).
-
-### jQuery Validation Methods
-
-The following are jQuery validation methods.
-
-_List of jQuery validation methods_
-
-<table>
-<tr>
-<th>
-Rules</th><th>
-Description</th></tr>
-<tr>
-<td>
-required</td><td>
- Requires value for the RichTextEditor control.</td></tr>
-<tr>
-<td>
-minWordCount</td><td>
- Requires the value to be of given minimum words count.</td></tr>
-<tr>
-<td>
-minlength</td><td>
- Requires the value to be of given minimum characters count.</td></tr>
-<tr>
-<td>
-maxlength</td><td>
- Requires the value to be of given maximum characters count.</td></tr>
-</table>
-
-### Validation Rules
-
-The validation rules help you to verify the content by adding validation attributes to the text area. This can be set by using [validationRules](http://help.syncfusion.com/js/api/ejrte#members:validationrules) property.
-
-
-### Validation Messages 
-
-You can set your own custom error message by using [validationMessage](http://help.syncfusion.com/js/api/ejrte#members:validationmessage) property. To display the error message, specify the corresponding annotation attribute followed by the message to display.
-
-
-N> jQuery predefined error messages to that annotation attribute will be shown when this property is not defined. The below given example explain this behavior of ‘maxLength’ attribute,
-
-
-When you initialize the RichTextEditor widget, it creates a text area hidden element which is used to store the value. Hence, the validation is performed based on the value stored in this hidden element.
-
-Required field, minlength, maxlength, minWordCount and maxWordCount values validation is demonstrated in the below given example.
-
-
-{% highlight html %}
-
-    <form id="form1">
-                    
-		   <textarea id ="texteditor"></textarea>
-		   <br/>
-		   <button id="save">Validate</button>
-		   
-    </form>
-
-{% endhighlight %}
-
-{% highlight javascript %}
-
-    <script type="text/javascript">
-        $(function () {
-			 $("#save").ejButton({
-				size: "large",
-				showRoundedCorner: true,
-				type : "submit"
-			});
-            $("#texteditor").ejRTE({
-				value: "The RichTextEditor (RTE) control enables you to edit the contents with insert table and images," +
-						" it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.",
-                 allowEditing: true,
-				 showFooter : true,
-				 validationRules: {
-						required: true,                
-						minlength:15,
-						maxlength: 150,
-						minWordCount: 10,
-						maxWordCount:50,
-						
-				 },
-				 validationMessage: {
-                    required: "Required RTE value",
-                    minWordCount: "Minimum word count not reached.",
-                    maxWordCount: "Maximum word count reached."
-                }});
-        });
-    </script>
-  
-{% endhighlight %}
-
-![](Working-with-Content_images/Validation.png)
-
-
-# Find and Replace
-RTE provides find and replace support, which is used to search for a keyword in RTE content and replace the matched keyword with a specified text. In order to use it, we have to enable the find and replace item in the editor toolbar (or) Press CTRL+F key.  
-
-{% highlight html %}
-
-<textarea id="texteditor">     
-<p><b>Description:</b></p>
-        <p>The Rich Text Editor (RTE) control is easy to render in the
-        client side. Customers can easily edit the contents and get the HTML content for
-        the displayed content. A rich text editor control provides users with a toolbar
-        that helps them to apply rich text formats to the text entered in the text
-        area. </p></textarea>
-<script>
-$("#rteSample").ejRTE({ tools: {edit: ["findAndReplace"]}});
-</script>
-{% endhighlight %}
-
-* Find and Replace action should happen in a following sequence:
-
-    Find => Replace (or) Replace All.
-<table>
-<tr>
-<th>
-Action
-</th>
-<th>
-Descriptions 
-</th>
-</tr>
-<tr>
-<td>
-Find
-</td>
-<td>
-Finds a keyword matches with the editor content.it consist of following filters.
-* Match Case.
-* Whole Word.
-</td>
-</tr>
-<tr>
-<td>
-Replace
-</td>
-<td>
-Replaces the particular selected match with the specified text.
-</td>
-</tr>
-<tr>
-<td>
-ReplaceAll
-</td>
-<td>
-Replaces the entire matches with the specified text.
-</td>
-</tr>
-</table>
-![](Working-with-Content_images/Find.png)
-Note:  Before performing the Replace/ReplaceAll action, we must do the find action to validate the match’s availability.  
-
-
-# Context Menu 
-Editor provides custom context menu support, which enables more interaction on the content modification and also it can be enabled dynamically.
-* The showContextMenu property helps to enable custom context menu within editor area.
-
-{% highlight html %}
-<textarea id="texteditor">     
-<p><b>Description:</b></p>
-        <p>The Rich Text Editor (RTE) control is easy to render in the
-        client side. Customers can easily edit the contents and get the HTML content for
-        the displayed content. A rich text editor control provides users with a toolbar
-        that helps them to apply rich text formats to the text entered in the text
-        area. </p></textarea>
-<script>
-$("#texteditor").ejRTE({ showFooter:true, enableResize:true,**showContextMenu: true**});
-
-//or
-rteObj=$("#texteditor").data(”ejRTE”);
-rteObj.setModel({showContextMenu: true});
-</script>
-
-{% endhighlight %}
-
-* Based on the target content type contextmenu provides different actions- refer the details with below table.
-
-<table>
-<tr>
-<td>
-Content-Type
-</td>
-<td>
-Supported Actions 
-</td>
-</tr>
-<tr>
-<td>
-Text content
-</td>
-<td>
-cut, copy, paste, add/edit/open/remove hyperlink.
-</td>
-</tr>
-<tr>
-<td>
-Image content
-</td>
-<td>
-cut, copy, paste, image properties.
-</td>
-</tr>
-<tr>
-<td>
-Table content
-</td>
-<td>
-cut, copy, paste, insert row/column, remove row/column/table, edit table properties, add/edit/open/remove hyperlink.
-</td>
-</tr>
-</table>
-
-
-## How to add/remove an item with the context menu
-### Adding an item with the context menu:
-  To add a new item to the editor contextmenu, you need to use the ‘[insertMenuOption’](http://help.syncfusion.com/js/api/ejrte#methods:insertMenuOption "") method and in order to handle the contextmenu item click using the ‘[contextMenuClick](http://help.syncfusion.com/js/api/ejrte#events:contextMenuClick "")’ client side-event.
-
-{% highlight html %}
-
-<textarea id="texteditor">     
-<p><b>Description:</b></p>
-        <p>The Rich Text Editor (RTE) control is easy to render in the
-        client side. Customers can easily edit the contents and get the HTML content for
-        the displayed content. A rich text editor control provides users with a toolbar
-        that helps them to apply rich text formats to the text entered in the text
-        area. </p></textarea>
-<script>
-$("#rteSample").ejRTE({ contextMenuClick: function(args){//handle menu-item click action.
- } });
-var rteeObj = $("#rteSample").data("ejRTE");// Inserts new item to the contextmenu 
-rteeObj.insertMenuOption({newItem:"Show Table Details",                                                 
-targetItem: "Table Properties",
-insertType:("insertAfter"),
-menuType:{text:false,image:false,hyperlink:false,table:true},                             
-spriteCssClass:"e-rte-toolbar-icon tableProperties"});
-</script>
-{% endhighlight %}
-
-
-### Removing an item from the context menu:
-  To remove a menu-item from the editor contextmenu, you have to use the ‘removeMenuOption’ method from the ejRTE object and find the method and parameter details with the [API-document](http://help.syncfusion.com/js/api/ejrte#methods:removeMenuOption "").
-
-{% highlight html %}
-<textarea id="texteditor">     
-<p><b>Description:</b></p>
-        <p>The Rich Text Editor (RTE) control is easy to render in the
-        client side. Customers can easily edit the contents and get the HTML content for
-        the displayed content. A rich text editor control provides users with a toolbar
-        that helps them to apply rich text formats to the text entered in the text
-        area. </p></textarea>
-<script>
-var rteeObj = $("#rteSample").data("ejRTE"); 
-rteeObj.removeMenuOption("Table-Details");
-</script> 
-{% endhighlight %}
-
-![](Working-with-Content_images/ContextMenu.png)
-
-

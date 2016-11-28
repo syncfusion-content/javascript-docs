@@ -20,38 +20,38 @@ Mapping Fields</th><th>
 Description</th></tr>
 <tr>
 <td>
-[`content`](https://help.syncfusion.com/js/api/ejkanban#members:fields-content)</td><td> Map the column name to use as content to cards.</td></tr>
+{{ '[content](https://help.syncfusion.com/api/js/ejkanban#members:fields-content)' | markdownify }} </td><td> Map the column name to use as content to cards.</td></tr>
 <tr>
 <td>
-[`tag`](https://help.syncfusion.com/js/api/ejkanban#members:fields-tag) </td><td>
-Map the column name to use as tag. Multiple tags can be given with comma separated.  Eg. “API”,”Sql,Database”.</td></tr>
+{{ '[tag](https://help.syncfusion.com/api/js/ejkanban#members:fields-tag)' | markdownify }} </td><td>
+Map the column name to use as tag. Multiple tags can be given with comma separated.  E.g. "API","SQL, Database".</td></tr>
 <tr>
 <td>
-[`color`](https://help.syncfusion.com/js/api/ejkanban#members:fields-color) </td><td>
+{{ '[color](https://help.syncfusion.com/api/js/ejkanban#members:fields-color)' | markdownify }} </td><td>
  Map the column name to use as colors to highlight cards left border.</td></tr>
 <tr>
 <td>
-[`colorMapping`](https://help.syncfusion.com/js/api/ejkanban#members:cardsettings.colormapping)</td><td>
+{{ '[colorMapping](https://help.syncfusion.com/api/js/ejkanban#members:cardsettings.colormapping)' | markdownify }} </td><td>
 Map the colors to use with column values which is mapped with `fields.color`.</td></tr>
 <tr>
 <td>
-[`imageUrl`](https://help.syncfusion.com/js/api/ejkanban#members:fields-imgurl)</td><td>
+{{ '[imageUrl](https://help.syncfusion.com/api/js/ejkanban#members:fields-imgurl)' | markdownify }} </td><td>
 Map the column name to use as image to cards.</td></tr>
 <tr>
 <td>
-[`primaryKey`](https://help.syncfusion.com/js/api/ejkanban#members:fields-primarykey)</td><td>
+{{ '[primaryKey](https://help.syncfusion.com/api/js/ejkanban#members:fields-primarykey)' | markdownify }} </td><td>
 Map the column name to use as primary key to cards.</td></tr>
 <tr>
 <td>
-[`priorityKey`](https://help.syncfusion.com/js/api/ejkanban#members:fields-prioritykey)</td><td>
+{{ '[priorityKey](https://help.syncfusion.com/api/js/ejkanban#members:fields-prioritykey)' | markdownify }} </td><td>
 Map the column name to use as priority key to cards.</td></tr>
 <tr>
 <td>
-[`title`](https://help.syncfusion.com/js/api/ejkanban#members:fields-title)</td><td>
+{{ '[title](https://help.syncfusion.com/api/js/ejkanban#members:fields-title)' | markdownify }} </td><td>
 Map the column name to use as title to cards. Default title is  `primaryKey`.</td></tr>
 <tr>
 <td>
-[`allowTitle`](https://help.syncfusion.com/js/api/ejkanban#members:allowtitle)</td><td>
+{{ '[allowTitle](https://help.syncfusion.com/api/js/ejkanban#members:allowtitle)' | markdownify }} </td><td>
 Set as true to enable title for card.</td></tr>
 </table>
 
@@ -106,7 +106,7 @@ The following output is displayed as a result of the above code example.
 
 ## Template
 
-Templates are used to create custom card layout as per the user convenient. Html templates can be specified in the [`template`](https://help.syncfusion.com/js/api/ejkanban#members:cardSettings-template) property of the [`cardSettings`](https://help.syncfusion.com/js/api/ejkanban#members:cardsettings) as an ID of the template’s HTML element.
+Templates are used to create custom card layout as per the user convenient. HTML templates can be specified in the [`template`](https://help.syncfusion.com/api/js/ejkanban#members:cardSettings-template) property of the [`cardSettings`](https://help.syncfusion.com/api/js/ejkanban#members:cardsettings) as an ID of the template’s HTML element.
 
 You can use JsRender syntax in the template. For more information about JsRender syntax, please refer this [`link`](https://www.jsviews.com/).
 
@@ -220,7 +220,7 @@ The following output is displayed as a result of the above code example.
 
 ## Tooltip
 
-You can enable HTML tooltip for Kanban card elements by setting [`enable`](https://help.syncfusion.com/js/api/ejkanban#members:tooltipsettings-enable) property as true in [`tooltipSettings`](https://help.syncfusion.com/js/api/ejkanban#members:tooltipsettings).
+You can enable HTML tooltip for Kanban card elements by setting [`enable`](https://help.syncfusion.com/api/js/ejkanban#members:tooltipsettings-enable) property as true in [`tooltipSettings`](https://help.syncfusion.com/api/js/ejkanban#members:tooltipsettings).
 
 The following code example describes the above behavior.
 
@@ -264,7 +264,7 @@ The following output is displayed as a result of the above code example.
 
 ### Template
 
-By making use of template feature with tooltip, all the field names that are mapped from the `dataSource` can be accessed to define the [`template`](https://help.syncfusion.com/js/api/ejkanban#members:tooltipsettings-template) tooltip for card. The [`tooltipSettings.enable`](https://help.syncfusion.com/js/api/ejschedule#members:tooltipsettings.enable) must be enabled first.
+By making use of template feature with tooltip, all the field names that are mapped from the `dataSource` can be accessed to define the [`template`](https://help.syncfusion.com/api/js/ejkanban#members:tooltipsettings-template) tooltip for card. The [`tooltipSettings.enable`](https://help.syncfusion.com/api/js/ejschedule#members:tooltipsettings.enable) must be enabled first.
 
 The following code example describes the tooltip template.
 

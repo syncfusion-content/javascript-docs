@@ -544,6 +544,29 @@ N> Width of a column also depends upon the [`columnSpacing`](../api/ejchart#memb
 
 ![](/js/Chart/Chart-Types_images/Chart-Types_img86.png)
 
+### Column with rounded corners
+Corners of the column chart can be customized by setting value to the [`cornerRadius`] property.
+
+{% highlight javascript %}
+
+    $('#container').ejChart({
+
+		//Common settings for all series
+		commonSeriesOptions: {
+    
+			cornerRadius:20
+
+			//...        
+		}
+
+		//...
+
+	});	
+
+{% endhighlight %}
+
+![](/js/Chart/Chart-Types_images/Chart-Types_img88.png)
+
 ### Spacing between column series
 
 Spacing between column type series can be customized using the [`columnSpacing`](../api/ejchart#members:series-columnspacing) property. Default value of [`columnSpacing`](../api/ejchart#members:series-columnspacing) is 0. Value ranges from 0 to 1. Here 1 corresponds to 100% available space and 0 corresponds to 0% available space.
@@ -579,6 +602,33 @@ N> Column spacing will also affect the width of the column. For example, setting
 {% endhighlight %}
 
 ![](/js/Chart/Chart-Types_images/Chart-Types_img87.png)
+
+
+### Cylindrical Chart
+
+To render a cylindrical chart, set the [`columnFacet`](../api/ejchart.html#members:series-columnfacet) property as "cylinder" in the chart series along with the series type. 
+
+The following chart types can be rendered as cylinder in both 2D and in 3D view.
+
+* Column Chart, Bar Chart, Stacked Column Chart, Stacked Bar Chart, 100% Stacked Column Chart, 100% Stacked Bar Chart.
+
+
+{% highlight javascript %}
+
+    $("#chartcontainer").ejChart({
+       //   ...
+       series: [{
+           //To change the shape of the series
+           columnFacet: 'cylinder',
+           type: 'column',     
+           //  ...         
+       }],            
+       //  ...
+    });
+
+{% endhighlight %}
+
+![](/js/Chart/Chart-Types_images/Chart-Types_img89.png)
 
 ## RangeColumn Chart
 
