@@ -11,7 +11,7 @@ documentation: ug
 
 Worksheet is a collection of cells organized in the form of rows and columns that allow us to store, format, manipulate and display data in grid format. You can create multiple sheets in Spreadsheet and use sheet tab for switching between those worksheets. By default Spreadsheet creates single worksheet since default [`sheetCount`](http://help.syncfusion.com/api/js/ejspreadsheet#members:sheetcount "sheetCount") value is `1`.
 
-## List of Sheet Operation 
+## List of Sheet Operations 
 
 You can perform following operations in Worksheet,
 
@@ -32,7 +32,7 @@ The Spreadsheet has support for inserting new sheet. You can insert a sheet in t
 
 You can dynamically add a sheet by one of the following ways,
 
-* Click the New sheet button in the spreadsheet sheet tab.
+* Click the new sheet button in the spreadsheet sheet tab.
 * Using [`addNewSheet`](http://help.syncfusion.com/api/js/ejspreadsheet#methods:addnewsheet "addNewSheet") method.
 
 #### Insert Sheet
@@ -187,7 +187,7 @@ The following output is displayed as a result of the above code example.
 
 ## Headers
 
-Headers in the spreadsheet are numbered rows and lettered columns in worksheets. It makes ease of view and reference your data. You can dynamically show/ hide worksheet header by using one of the following ways,
+Headers in the spreadsheet are numbered rows and lettered columns in worksheets. It makes ease of view and reference your data. You can dynamically show/hide worksheet header by using one of the following ways,
 
 * Select PAGE LAYOUT tab in the ribbon and uncheck Headings in the Show group.
 * Show/Hide the worksheet headers using [`showHeadings`](http://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-showheadings "showHeadings") property and [`showHeadings`](http://help.syncfusion.com/api/js/ejspreadsheet#methods:showheadings "showHeadings") method.
@@ -215,7 +215,7 @@ The following output is displayed as a result of the above code example.
 
 ## Show/Hide Sheets
 
-You can dynamically show/ hide worksheet by using one of the following ways,
+You can dynamically show/hide worksheet by using one of the following ways,
 
 * Right clicking on the worksheet in the sheet tab and then click Hide or Unhide in the context menu
 * Hide the sheet using [`hideSheet`](http://help.syncfusion.com/api/js/ejspreadsheet#methods:hidesheet "hideSheet") method.

@@ -64,7 +64,7 @@ The following output is displayed as a result of the above code snippets.
 
 ## HTML Table Data
 
-A HTML Table element can also be used as the data source of Spreadsheet. To use HTML Table as data source, the table element should be passed to worksheet [`dataSource`](http://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-datasource "dataSource") property of Spreadsheet as an instance of the [`ej.DataManager`](http://help.syncfusion.com/api/js/ejdatamanager "ej.DataManager"). The following code illustrates how to bind HTML Table data to the Spreadsheet,
+An HTML Table element can also be used as the data source of Spreadsheet. To use HTML Table as data source, the table element should be passed to worksheet [`dataSource`](http://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-datasource "dataSource") property of Spreadsheet as an instance of the [`ej.DataManager`](http://help.syncfusion.com/api/js/ejdatamanager "ej.DataManager"). The following code illustrates how to bind HTML Table data to the Spreadsheet,
 
 {% highlight html %}
 
