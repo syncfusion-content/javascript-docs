@@ -45,7 +45,7 @@ URL: http://js.syncfusion.com/demos/ejservices/api/XlsIO/CreateDocument
          }
 
 ```
-> Using the above code example we can generate the Excel Document with different formats.
+> Using the above code example we can generate the Excel document with different formats.
 
 
 ## WriteFormula
@@ -75,14 +75,14 @@ URL: http://js.syncfusion.com/demos/ejservices/api/XlsIO/WriteFormula
          }
 
 ```
-> Using the above code example we can generate the Excel Document with different formulae.
+> Using the above code example we can generate the Excel document with different formulae.
 
 
 ## ReadFormula
 
 [POST&nbsp;&nbsp;/Api/XlsIO/ReadFormula](http://js.syncfusion.com/demos/ejservices/api/XlsIO/ReadFormula)
 
-To read the formula string as well as value from the Excel Document.
+To read the formula string as well as value from the Excel document.
 
 ### Response information 
 
@@ -193,7 +193,7 @@ URL: http://js.syncfusion.com/demos/ejservices/api/XlsIO/ImportDataObject
          }
 
 ```
-> Using the above code example we can generate an Excel Document with imported data.
+> Using the above code example we can generate an Excel document with imported data.
 
 
 ## ApplyTemplateMarker
@@ -238,7 +238,7 @@ URL: http://js.syncfusion.com/demos/ejservices/api/XlsIO/ApplyTemplateMarker
          }
 
 ```
-> Using the above code example we can generate an Excel Document with imported data via template marker.
+> Using the above code example we can generate an Excel document with imported data using template marker.
 
 
 ## InputTemplate
