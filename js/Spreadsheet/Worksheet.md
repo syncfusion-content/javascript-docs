@@ -94,7 +94,7 @@ function loadComplete(args) {
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
-![](Worksheet_images/Worksheet_img5.png)
+![](Worksheet_images/Worksheet_img2.png)
 
 ### Move
 
@@ -123,7 +123,7 @@ function loadComplete(args) {
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
-![](Worksheet_images/Worksheet_img4.png)
+![](Worksheet_images/Worksheet_img3.png)
 
 ### Remove
 
@@ -154,7 +154,7 @@ function loadComplete(args) {
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
-![](Worksheet_images/Worksheet_img2.png)
+![](Worksheet_images/Worksheet_img4.png)
 
 ### Rename
 
@@ -183,7 +183,7 @@ function loadComplete(args) {
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
-![](Worksheet_images/Worksheet_img3.png)
+![](Worksheet_images/Worksheet_img5.png)
 
 ## Headers
 

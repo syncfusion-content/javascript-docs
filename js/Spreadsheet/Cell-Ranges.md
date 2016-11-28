@@ -67,7 +67,7 @@ function loadComplete(args) {
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
-![](Cell-Ranges_images/Cell-Ranges_img7.png)
+![](Cell-Ranges_images/Cell-Ranges_img1.png)
 
 ## Cell Navigation
 
@@ -137,7 +137,7 @@ $(function () {
 function loadComplete(args) {
     if(!this.isImport) {
         this.XLValidate.applyDVRules("G2:G12", ["Greater", 6], "number", true, true);
-        //the last two boolean values used for ignore blank value and error alert.
+        //the last two boolean values used to ignore blank value and error alert.
     }
 }
 {% endhighlight %}
@@ -167,7 +167,7 @@ $(function () {
 function loadComplete(args) {
     if(!this.isImport) {
         this.XLValidate.applyDVRules("G2:G12", ["Greater", 6], "number", true, true);
-        //the last two boolean values used for ignore blank value and error alert.
+        //the last two boolean values used to ignore blank value and error alert.
         this.XLValidate.clearDV("G2:G12");
     }
 }
@@ -198,14 +198,14 @@ $(function () {
 function loadComplete(args) {
     if(!this.isImport) {
         this.XLValidate.applyDVRules("G2:G12", ["Greater", 6], "number", true, true);
-        //the last two boolean values used for ignore blank value and error alert.
+        //the last two boolean values used to ignore blank value and error alert.
         this.XLValidate.highlightInvalidData ("G2:G12");
     }
 }
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
-![](Cell-Ranges_images/Cell-Ranges_img3.png)
+![](Cell-Ranges_images/Cell-Ranges_img2.png)
 
 ## Drag and Drop
 
@@ -238,7 +238,7 @@ function loadComplete(args) {
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
-![](Cell-Ranges_images/Cell-Ranges_img6.png)
+![](Cell-Ranges_images/Cell-Ranges_img3.png)
 
 ## Drag Fill
 
@@ -392,7 +392,7 @@ function loadComplete(args) {
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
-![](Cell-Ranges_images/Cell-Ranges_img8.png)
+![](Cell-Ranges_images/Cell-Ranges_img6.png)
 
 ## Merge Cell
 
@@ -407,28 +407,6 @@ You can do this by one of the following ways,
 * Using "Merge Cells" option in Merge & Center button under Alignment group of HOME Tab in ribbon.
 * Using [`mergeCells`](http://help.syncfusion.com/api/js/ejspreadsheet#methods:mergecells "mergeCells") method.
 
-The following code example describes the above behavior.
-
-{% highlight html %}
-<div id="Spreadsheet"></div>
-{% endhighlight %}
-
-{% highlight javascript %}
-$(function () {
-    $("#Spreadsheet").ejSpreadsheet({
-        // the datasource "window.defaultData" is referred from 'http://js.syncfusion.com/demos/web/scripts/xljsondata.min.js'
-        sheets: [{
-            rangeSettings: [{ dataSource: window.defaultData, showHeader: true }],                               
-        }],
-        loadComplete: "loadComplete"
-    });
-});
-function loadComplete(args) {
-    if(!this.isImport)
-        this.mergeCells("A2:B4", true); // true is for prevent the alert message.
-}
-{% endhighlight %}
-
 ### Merge & Center
 
 You can combine two or more cells located in the same row or column into a single cell with center text align. When cells with multiple values are merged, upper-left most cell's data will be the data of the merged cell. You can do this by one of the following ways,
@@ -437,29 +415,6 @@ You can combine two or more cells located in the same row or column into a singl
 * Using "Merge & Center" option in Merge & Center button under Alignment group of HOME Tab in ribbon.
 * Using [`mergeCells`](http://help.syncfusion.com/api/js/ejspreadsheet#methods:mergecells "mergeCells") method.
 * Using `mergeCenter` property to enable/disable the center alignment.
-
-The following code example describes the above behavior.
-{% highlight html %}
-<div id="Spreadsheet"></div>
-{% endhighlight %}
-
-{% highlight javascript %}
-$(function () {
-    $("#Spreadsheet").ejSpreadsheet({
-        // the datasource "window.defaultData" is referred from 'http://js.syncfusion.com/demos/web/scripts/xljsondata.min.js'
-        sheets: [{
-            rangeSettings: [{ dataSource: window.defaultData, showHeader: true }],                               
-        }],
-        loadComplete: "loadComplete"
-    });
-});
-function loadComplete(args) {
-    if(!this.isImport){
-        this.mergeCenter = true;
-        this.mergeCells("D2:E4", true); // true is for prevent the alert message.
-    }
-}
-{% endhighlight %}
 
 ### Merge Across
 
@@ -470,7 +425,7 @@ You can do this by one of the following ways,
 * Using "Merge Across" option in Merge & Center button under Alignment group of HOME Tab in ribbon.
 * Using [`mergeAcrossCells`](http://help.syncfusion.com/api/js/ejspreadsheet#methods:mergeacrosscells "mergeAcrossCells") method.
 
-The following code example describes the above behavior.
+The following code example describes the behavior of Merge Cells, Merge & Center and Merge Across.
 {% highlight html %}
 <div id="Spreadsheet"></div>
 {% endhighlight %}
@@ -486,13 +441,17 @@ $(function () {
     });
 });
 function loadComplete(args) {
-    if(!this.isImport)
-        this.mergeAcrossCells("G2:H4", true); // true is for prevent the alert message.
+    if(!this.isImport) {
+        this.mergeCells("A2:B4", true);
+        this.mergeCenter = true;
+        this.mergeCells("D2:E4", true); // true is to prevent the alert message.
+        this.mergeAcrossCells("G2:H4", true); // true is to prevent the alert message.
+    }
 }   
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
-![](Cell-Ranges_images/Cell-Ranges_img1.png)
+![](Cell-Ranges_images/Cell-Ranges_img7.png)
 
 ### Unmerge Cells
 
@@ -518,11 +477,11 @@ $(function () {
 });
 function loadComplete(args) {
     if(!this.isImport) {
-        this.mergeCells("B2:C4", true); // true is for prevent the alert message.
+        this.mergeCells("B2:C4", true); // true is to prevent the alert message.
         this.unmergeCells("B2:C4");
     }
 }
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
-![](Cell-Ranges_images/Cell-Ranges_img2.png)
+![](Cell-Ranges_images/Cell-Ranges_img8.png)

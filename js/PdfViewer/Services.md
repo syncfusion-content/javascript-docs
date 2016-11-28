@@ -225,7 +225,7 @@ Collection of page number which contain annotation
 
 ### Description
 
-FileUploadPostAction loads the PDF document using fileuploader into the PDF Viewer control.
+FileUploadPostAction loads the PDF document using file-uploader into the PDF viewer control.
 
 ### URL
 
