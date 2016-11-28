@@ -32,8 +32,13 @@ Response: serialized JSON string
 
 ### Code example 
 
-```javascript
-
+```csharp
+public Dictionary<string, object> Initialize(Dictionary<string, object> jsonResult)
+{
+    OlapDataManager DataManager = new OlapDataManager(connectionString);
+    DataManager.SetCurrentReport(CreateOlapReport());
+    return htmlHelper.GetJsonData(jsonResult["action"].ToString(), DataManager, jsonResult.ContainsKey("gridLayout") ? jsonResult["gridLayout"].ToString() : null, Convert.ToBoolean(jsonResult["enablePivotFieldList"].ToString()));
+}
 
 ```
 
@@ -64,8 +69,13 @@ Response: serialized JSON string
 
 ### Code example 
 
-```javascript
-
+```csharp
+public Dictionary<string, object> Drill(Dictionary<string, object> jsonResult)
+{
+    OlapDataManager DataManager = new OlapDataManager(connectionString);
+    DataManager.SetCurrentReport(Utils.DeserializeOlapReport(jsonResult["currentReport"].ToString()));
+    return htmlHelper.GetJsonData(jsonResult["action"].ToString(), connectionString, DataManager, jsonResult["cellPosition"].ToString(), jsonResult["headerInfo"].ToString(), jsonResult["layout"].ToString());
+}
 
 ```
 
@@ -96,13 +106,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-```javascript
-
-
-```
-
 ```csharp
-
 public Dictionary<string, object> DropNode(Dictionary<string, object> jsonResult)
 {
 	OlapDataManager DataManager = new OlapDataManager(connectionString);
@@ -136,12 +140,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-```javascript
-
-
-```
 ```csharp
-
 public Dictionary<string, object> Filtering(Dictionary<string, object> jsonResult)
 {
 	OlapDataManager DataManager = new OlapDataManager(connectionString);
@@ -175,12 +174,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-```javascript
-
-
-```
 ```csharp
-
 public Dictionary<string, object> FetchMembers(Dictionary<string, object> jsonResult)
 {
 	OlapDataManager DataManager = new OlapDataManager(connectionString);
@@ -217,12 +211,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-```javascript
-
-
-```
 ```csharp
-
 public Dictionary<string, object> Paging(Dictionary<string, object> jsonResult)
 {
 	OlapDataManager DataManager = new OlapDataManager(connectionString);
@@ -257,12 +246,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-```javascript
-
-
-```
 ```csharp
-
 public Dictionary<string, object> RemoveButton(Dictionary<string, object> jsonResult)
 {
 	OlapDataManager DataManager = new OlapDataManager(connectionString);
@@ -299,17 +283,11 @@ Response: serialized JSON string
 
 ### Code example 
 
-```javascript
-
-
-```
 ```csharp
-
 public Dictionary<string, object> ExpandMember(Dictionary<string, object> jsonResult)
 {
 	OlapDataManager DataManager = new OlapDataManager(connectionString);
-	if (!string.IsNullOrEmpty(jsonResult["currentReport"].ToString()))
-		DataManager.SetCurrentReport(Utils.DeserializeOlapReport(jsonResult["currentReport"].ToString()));
+	DataManager.SetCurrentReport(Utils.DeserializeOlapReport(jsonResult["currentReport"].ToString()));
 	return htmlHelper.GetJsonData(jsonResult["action"].ToString(), DataManager, Convert.ToBoolean(jsonResult["checkedStatus"].ToString()), jsonResult["parentNode"].ToString(), jsonResult["tag"].ToString(), jsonResult["cubeName"].ToString());
 }
 
@@ -337,13 +315,7 @@ Response: file
 
 ### Code example 
 
-```javascript
-
-
-```
-
 ```csharp
-
 public void Export()
 {
 	string args = HttpContext.Current.Request.Form.GetValues(0)[0];
@@ -380,8 +352,35 @@ Response: None
 
 ### Code example 
 
-```javascript
-
+```csharp
+public Dictionary<string, object> SaveReport(Dictionary<string, object> jsonResult)
+{
+    string mode = jsonResult["operationalMode"].ToString();
+    bool isDuplicate = true;
+    SqlCeConnection con = new SqlCeConnection() { ConnectionString = conStringforDB };
+    con.Open();
+    SqlCeCommand cmd1 = null;
+    foreach (DataRow row in GetDataTable().Rows)
+    {
+        if ((row.ItemArray[0] as string).Equals(jsonResult["reportName"].ToString()))
+        {
+            isDuplicate = false;
+            cmd1 = new SqlCeCommand("update ReportsTable set Report=@Reports where ReportName like @ReportName", con);
+        }
+    }
+    if (isDuplicate)
+    {
+        cmd1 = new SqlCeCommand("insert into ReportsTable Values(@ReportName,@Reports)", con);
+    }
+    cmd1.Parameters.Add("@ReportName", jsonResult["reportName"].ToString());
+    if (mode == "clientMode")
+        cmd1.Parameters.Add("@Reports", Encoding.UTF8.GetBytes(jsonResult["clientReports"].ToString()).ToArray());
+    else if (mode == "serverMode")
+        cmd1.Parameters.Add("@Reports", Utils.GetReportStream(jsonResult["clientReports"].ToString()).ToArray());
+    cmd1.ExecuteNonQuery();
+    con.Close();
+    return null;
+}
 
 ```
 ## LoadReportFromDB
@@ -413,10 +412,50 @@ Response: serialized JSON string
 
 ### Code example 
 
-```javascript
-
+```csharp
+public Dictionary<string, object> LoadReportFromDB(Dictionary<string, object> jsonResult)
+{
+    string mode = jsonResult["operationalMode"].ToString();
+    byte[] reportString = new byte[4 * 1024];
+    Dictionary<string, object> dictionary = new Dictionary<string, object>();
+    foreach (DataRow row in GetDataTable().Rows)
+    {
+        if ((row.ItemArray[0] as string).Equals(jsonResult["reportName"].ToString()))
+        {
+            if (mode == "clientMode")
+            {
+                reportString = row.ItemArray[1] as byte[];
+                dictionary.Add("report", Encoding.UTF8.GetString(reportString));
+                break;
+            }
+            else if (mode == "serverMode")
+            {
+                OlapDataManager DataManager = new OlapDataManager(connectionString);
+                var reports = "";
+                dynamic customData = serializer.Deserialize<dynamic>(jsonResult["customObject"].ToString());
+                var cultureIDInfo = new System.Globalization.CultureInfo(("en-US")).LCID;
+                if (customData is Dictionary<string, object> && customData.ContainsKey("Language"))
+                {
+                    cultureIDInfo = new System.Globalization.CultureInfo((customData["Language"])).LCID;
+                }
+                connectionString = connectionString.Replace("" + cultureIDInfoval + "", "" + cultureIDInfo + "");
+                cultureIDInfoval = cultureIDInfo;
+                if ((row.ItemArray[0] as string).Equals(jsonResult["reportName"].ToString()))
+                {
+                    reports = Utils.CompressData(row.ItemArray[1] as byte[]);
+                }
+                DataManager.Culture = new System.Globalization.CultureInfo((cultureIDInfo));
+                DataManager.SetCurrentReport(Utils.DeserializeOlapReport(reports));
+                DataManager.OverrideDefaultFormatStrings = true;
+                dictionary = htmlHelper.GetJsonData(jsonResult["action"].ToString(), DataManager, jsonResult["gridLayout"].ToString(), Convert.ToBoolean(jsonResult["enablePivotFieldList"].ToString()));
+            }
+        }
+    }
+    return dictionary;
+}
 
 ```
+
 ## DeferUpdate
 
 [POST&nbsp;&nbsp;/Api/OlapGrid/DeferUpdate](http://js.syncfusion.com/demos/ejServices/api/OlapGrid/DeferUpdate)
@@ -441,8 +480,13 @@ Response: serialized JSON string
 
 ### Code example 
 
-```javascript
-
+```csharp
+public Dictionary<string, object> DeferUpdate(Dictionary<string, object> jsonResult)
+{
+    OlapDataManager DataManager = new OlapDataManager(connectionString);
+    DataManager.SetCurrentReport(Utils.DeserializeOlapReport(jsonResult["currentReport"].ToString()));
+    return htmlHelper.GetJsonData(jsonResult["action"].ToString(), DataManager, null, jsonResult["filterParams"].ToString());
+}
 
 ```
 
@@ -468,12 +512,7 @@ Response: Excel document
 
 ### Code example 
 
-```javascript
-
-
-```
 ```csharp
-
 public void ExcelExport()
 {
 	PivotGridExcelExport pGrid = new PivotGridExcelExport();
@@ -482,8 +521,6 @@ public void ExcelExport()
 }
 
 ```
->The above example will export the PivotGrid as an Excel file.
-
 
 ## PdfExport
 
@@ -507,21 +544,15 @@ Response: PDF document
 
 ### Code example 
 
-```javascript
-
-
-```
-
 ```csharp
-
 public void PdfExport()
 {
 	PivotGridPDFExport pGrid = new PivotGridPDFExport();
 	string args = HttpContext.Current.Request.Form.GetValues(0)[0];
 	pGrid.ExportToPDF(string.Empty, args, HttpContext.Current.Response);
 }
+
 ```
->The above example will export the PivotGrid as PDF file.
 
 ## WordExport
 
@@ -545,13 +576,7 @@ Response: Word document
 
 ### Code example 
 
-```javascript
-
-
-```
-
 ```csharp
-
 public void WordExport()
 {
 	PivotGridWordExport pGrid = new PivotGridWordExport();
@@ -560,7 +585,6 @@ public void WordExport()
 }
 
 ```
->The above example will export the PivotGrid as Word file.
 
 ## CsvExport
 
@@ -584,13 +608,7 @@ Response: CSV document
 
 ### Code example 
 
-```javascript
-
-
-
-```
 ```csharp
-
 public void CsvExport()
 {
 	PivotGridCSVExport pGrid = new PivotGridCSVExport();
@@ -599,5 +617,3 @@ public void CsvExport()
 }
 
 ```
-
->The above example will export the PivotGrid as Csv file.

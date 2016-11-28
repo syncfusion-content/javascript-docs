@@ -31,8 +31,13 @@ Response: serialized JSON string
 
 ### Code example 
 
-```javascript
-
+```csharp
+public Dictionary<string, object> Initialize(Dictionary<string, object> jsonResult)
+{
+    OlapDataManager DataManager = new OlapDataManager(connectionString);
+    DataManager.SetCurrentReport(CreateOlapReport());
+    return htmlHelper.GetJsonData(jsonResult["action"].ToString(), DataManager);
+}
 
 ```
 
@@ -61,7 +66,12 @@ Response: serialized JSON string
 
 ### Code example 
 
-```javascript
-
+```csharp
+public Dictionary<string, object> Drill(Dictionary<string, object> jsonResult)
+{
+    OlapDataManager DataManager = new OlapDataManager(connectionString);
+    DataManager.SetCurrentReport(Syncfusion.JavaScript.Olap.Utils.DeserializeOlapReport(jsonResult["olapReport"].ToString()));
+    return htmlHelper.GetJsonData(jsonResult["action"].ToString(), DataManager, jsonResult["drillInfo"].ToString());
+}
 
 ```

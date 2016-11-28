@@ -30,8 +30,13 @@ Response: serialized JSON string
 
 ### Code example 
 
-```javascript
-
+```csharp
+public Dictionary<string, object> Initialize(Dictionary<string, object> jsonResult)
+{
+    OlapDataManager DataManager = new OlapDataManager(connectionString);
+    DataManager.SetCurrentReport(CreateOlapReport());
+    return htmlHelper.GetJsonData(jsonResult["action"].ToString(), DataManager);
+}
 
 ```
 
@@ -60,8 +65,13 @@ Response: serialized JSON string
 
 ### Code example 
 
-```javascript
-
+```csharp
+public Dictionary<string, object> Drill(Dictionary<string, object> jsonResult)
+{
+    OlapDataManager DataManager = new OlapDataManager(connectionString);
+    DataManager.SetCurrentReport(Syncfusion.JavaScript.Olap.Utils.DeserializeOlapReport(jsonResult["olapReport"].ToString()));
+    return htmlHelper.GetJsonData(jsonResult["action"].ToString(), DataManager, jsonResult["drilledSeries"].ToString());
+}
 
 ```
 
@@ -87,18 +97,12 @@ Response: file
 
 ### Code example 
 
-```javascript
-
-
-```
-
 ```csharp
-
 public void Export()
 {
-	string args = HttpContext.Current.Request.Form.GetValues(0)[0];
-	string fileName = "Sample";
-	htmlHelper.ExportPivotChart(args, fileName, System.Web.HttpContext.Current.Response);
+    string args = HttpContext.Current.Request.Form.GetValues(0)[0];
+    string fileName = "Sample";
+    htmlHelper.ExportPivotChart(args, fileName, System.Web.HttpContext.Current.Response);
 }
 
 ```
@@ -124,18 +128,13 @@ Response: Excel document
 
 ### Code example 
 
-```javascript
-
-
-```
 ```csharp
-
 public void ExcelExport()
 {
-	PivotChartExcelExport pivotChartExcelExport = new PivotChartExcelExport();
-	string args = HttpContext.Current.Request.Form.GetValues(0)[0];
-	Dictionary<string, string> chartParams = serializer.Deserialize<Dictionary<string, string>>(args);
-	pivotChartExcelExport.ExportToExcel(chartParams);
+    PivotChartExcelExport pivotChartExcelExport = new PivotChartExcelExport();
+    string args = HttpContext.Current.Request.Form.GetValues(0)[0];
+    Dictionary<string, string> chartParams = serializer.Deserialize<Dictionary<string, string>>(args);
+    pivotChartExcelExport.ExportToExcel(chartParams);
 }
 
 ```
@@ -143,7 +142,7 @@ public void ExcelExport()
 
 [POST&nbsp;&nbsp;/Api/OlapChart/WordExport](http://js.syncfusion.com/demos/ejServices/api/OlapChart/WordExport)
 
-It exports the PivotChart control at the instant to an Word document.
+It exports the PivotChart control at the instant to a Word document.
 
 ### URL parameters
 
@@ -161,18 +160,13 @@ Response: Word document
 
 ### Code example 
 
-```javascript
-
-
-```
 ```csharp
-
 public void WordExport()
 {
-	PivotChartWordExport pivotChartWordExport = new PivotChartWordExport();
-	string args = HttpContext.Current.Request.Form.GetValues(0)[0];
-	Dictionary<string, string> chartParams = serializer.Deserialize<Dictionary<string, string>>(args);
-	pivotChartWordExport.ExportToWord(chartParams);
+    PivotChartWordExport pivotChartWordExport = new PivotChartWordExport();
+    string args = HttpContext.Current.Request.Form.GetValues(0)[0];
+    Dictionary<string, string> chartParams = serializer.Deserialize<Dictionary<string, string>>(args);
+    pivotChartWordExport.ExportToWord(chartParams);
 }
 
 ```
@@ -180,7 +174,7 @@ public void WordExport()
 
 [POST&nbsp;&nbsp;/Api/OlapChart/PdfExport](http://js.syncfusion.com/demos/ejServices/api/OlapChart/PdfExport)
 
-It exports the PivotChart control at the instant to an PDF document.
+It exports the PivotChart control at the instant to a PDF document.
 
 ### URL parameters
 
@@ -198,18 +192,13 @@ Response: PDF document
 
 ### Code example 
 
-```javascript
-
-
-```
 ```csharp
-
 public void PdfExport()
 {
-	PivotChartPDFExport pivotChartPDFExport = new PivotChartPDFExport();
-	string args = HttpContext.Current.Request.Form.GetValues(0)[0];
-	Dictionary<string, string> chartParams = serializer.Deserialize<Dictionary<string, string>>(args);
-	pivotChartPDFExport.ExportToPDF(chartParams);
+    PivotChartPDFExport pivotChartPDFExport = new PivotChartPDFExport();
+    string args = HttpContext.Current.Request.Form.GetValues(0)[0];
+    Dictionary<string, string> chartParams = serializer.Deserialize<Dictionary<string, string>>(args);
+    pivotChartPDFExport.ExportToPDF(chartParams);
 }
 
 ```
@@ -235,18 +224,13 @@ Response: Image file
 
 ### Code example 
 
-```javascript
-
-
-```
 ```csharp
-
 public void ImageExport()
 {
-	PivotChartImageExport pivotChartImageExport = new PivotChartImageExport();
-	string args = HttpContext.Current.Request.Form.GetValues(0)[0];
-	Dictionary<string, string> chartParams = serializer.Deserialize<Dictionary<string, string>>(args);
-	pivotChartImageExport.ExportToImage(chartParams);
-}  
+    PivotChartImageExport pivotChartImageExport = new PivotChartImageExport();
+    string args = HttpContext.Current.Request.Form.GetValues(0)[0];
+    Dictionary<string, string> chartParams = serializer.Deserialize<Dictionary<string, string>>(args);
+    pivotChartImageExport.ExportToImage(chartParams);
+}
 
 ```
