@@ -22,16 +22,11 @@ It fetches the OLAP data required to render the PivotGauge control from server-e
 
 ### Response information 
 
-Code: 
+Code: 200
 
 Content-Type: application/json;
 
-Response(JSON):
-
-```javascript
-
-
-```
+Response: serialized JSON string
 
 ### Code example 
 

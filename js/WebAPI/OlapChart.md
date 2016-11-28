@@ -17,21 +17,16 @@ It fetches the OLAP data required to initialize the PivotChart from server-end.
 
 |  Parameter |  Description | 
 |---|---|
-|action|It holds the current action name as string.|
-|customObject|It contains the custom object passed from client side.|
+|action|It holds the current action name as string|
+|customObject|It contains the custom object passed from client side|
 
 ### Response information 
 
-Code: 
+Code: 200
 
 Content-Type: application/json;
 
-Response(JSON):
-
-```javascript
-
-
-```
+Response: serialized JSON string
 
 ### Code example 
 
@@ -50,23 +45,18 @@ It fetches the drilled OLAP data required to render the PivotChart control from 
 
 |  Parameter |  Description | 
 |---|---|
-|action|It holds the current action name as string.|
-|drilledSeries|It contains the name of the drilled member.|
-|olapReport|It contains the current report as compressed string.|
-|customObject|It contains the custom object passed from client side.|
+|action|It holds the current action name as string|
+|drilledSeries|It contains the name of the drilled member|
+|olapReport|It contains the current report as compressed string|
+|customObject|It contains the custom object passed from client side|
 
 ### Response information 
 
-Code: 
+Code: 200
 
 Content-Type: application/json;
 
-Response(JSON):
-
-```javascript
-
-
-```
+Response: serialized JSON string
 
 ### Code example 
 
@@ -85,13 +75,15 @@ It exports the PivotChart control at the instant to the specified format.
 
 |  Parameter |  Description | 
 |---|---|
-|chartData |It contains the information required to export the control.|
+|chartData |It contains the information required to export the control|
 
 ### Response information 
 
 Code: 200
 
-Content-Type: application/octet-stream	
+Content-Type: application/json	
+
+Response: file
 
 ### Code example 
 
@@ -120,13 +112,15 @@ It exports the PivotChart control at the instant to an Excel document.
 
 |  Parameter |  Description | 
 |---|---|
-|chartData |It contains the information required to export the control to an excel sheet.|
+|chartData |It contains the information required to export the control to an Excel sheet|
 
 ### Response information 
 
 Code: 200
 
-Content-Type: application/octet-stream
+Content-Type: application/json
+
+Response: Excel document
 
 ### Code example 
 
@@ -155,13 +149,15 @@ It exports the PivotChart control at the instant to an Word document.
 
 |  Parameter |  Description | 
 |---|---|
-|chartData |It contains the information required to export the control to Word document.|
+|chartData |It contains the information required to export the control to a Word document|
 
 ### Response information 
 
 Code: 200
 
-Content-Type: application/octet-stream
+Content-Type: application/json
+
+Response: Word document
 
 ### Code example 
 
@@ -190,13 +186,15 @@ It exports the PivotChart control at the instant to an PDF document.
 
 |  Parameter |  Description | 
 |---|---|
-|chartData |It contains the information required to export the control to PDF document.|
+|chartData |It contains the information required to export the control to a PDF document|
 
 ### Response information 
 
 Code: 200
 
-Content-Type: application/octet-stream
+Content-Type: application/json
+
+Response: PDF document
 
 ### Code example 
 
@@ -225,13 +223,15 @@ It exports the PivotChart control at the instant as an Image in specified format
 
 |  Parameter |  Description | 
 |---|---|
-|chartData |It contains the information required to export the control to an image file.|
+|chartData |It contains the information required to export the control to an image file|
 
 ### Response information 
 
 Code: 200
 
-Content-Type: application/octet-stream
+Content-Type: application/json
+
+Response: Image file
 
 ### Code example 
 

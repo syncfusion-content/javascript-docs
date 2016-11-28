@@ -7,30 +7,31 @@ platform: js-webapi
 keywords: RelationalGauge, syncfusion, RelationalGauge webapi
 ---
 
-## 
+## Initialize
+
+[POST&nbsp;&nbsp;/Api/RelationalGauge/Initialize](http://js.syncfusion.com/demos/ejServices/api/RelationalGauge/Initialize)
+
+It fetches the Relational data required to render the PivotGauge control from server-end.
 
 ### URL parameters
 
 |  Parameter |  Description | 
 |---|---|
-|   |   |
+|action|It holds the current action name as string|
+|customObject|It contains the custom object passed from client side|
 
 ### Response information 
 
-Code: 
+Code: 200
 
-Content-Type: 
+Content-Type: application/json
 
-Response(JSON):
-
-```javascript
-
-
-```
+Response: serialized JSON string	
 
 ### Code example 
 
 ```javascript
+
 
 
 ```

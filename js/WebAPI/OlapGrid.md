@@ -17,23 +17,18 @@ It fetches the OLAP data required to render the PivotGrid initially from server-
 
 |  Parameter |  Description | 
 |---|---|
-|action|It holds the current action name as string.|
-|gridLayout |It contains the layout of PivotGrid control.|
-|enablePivotFieldList|Boolean property tells whether the field list is enabled or not.|
-|customObject|It contains the custom object passed from client side.|
+|action|It holds the current action name as string|
+|gridLayout|It contains the layout of PivotGrid control|
+|enablePivotFieldList|Boolean property tells whether the field list is enabled or not|
+|customObject|It contains the custom object passed from client side|
 
 ### Response information 
 
-Code: 
+Code: 200
 
-Content-Type: application/json;
+Content-Type: application/json
 
-Response(JSON):
-
-```javascript
-
-
-```
+Response: serialized JSON string
 
 ### Code example 
 
@@ -61,16 +56,11 @@ It fetches the OLAP data required to render the PivotGrid control after drilling
 
 ### Response information 
 
-Code: 
+Code: 200
 
-Content-Type: application/json;
+Content-Type: application/json
 
-Response(JSON):
-
-```javascript
-
-
-```
+Response: serialized JSON string
 
 ### Code example 
 
@@ -98,16 +88,11 @@ It fetches the data required to render the control after performing node drop op
 
 ### Response information 
 
-Code: 
+Code: 200
 
-Content-Type: application/json;
+Content-Type: application/json
 
-Response(JSON):
-
-```javascript
-
-
-```
+Response: serialized JSON string
 
 ### Code example 
 
@@ -130,7 +115,7 @@ public Dictionary<string, object> DropNode(Dictionary<string, object> jsonResult
 
 [POST&nbsp;&nbsp;/Api/OlapGrid/Filtering](http://js.syncfusion.com/demos/ejServices/api/OlapGrid/Filtering)
 
-It fetches the OLAP data required to render the specific page of PivotGrid with paging enabled.
+It fetches the OLAP data required to render the control after performing filtering.
 
 ### URL parameters
 
@@ -143,16 +128,12 @@ It fetches the OLAP data required to render the specific page of PivotGrid with 
 
 ### Response information 
 
-Code: 
+Code: 200
 
-Content-Type: application/json;
+Content-Type: application/json
 
-Response(JSON):
+Response: serialized JSON string
 
-```javascript
-
-
-```
 ### Code example 
 
 ```javascript
@@ -169,6 +150,47 @@ public Dictionary<string, object> Filtering(Dictionary<string, object> jsonResul
 }
 
 ```
+
+## FetchMembers
+
+[POST&nbsp;&nbsp;/Api/OlapGrid/FetchMembers](http://js.syncfusion.com/demos/ejServices/api/OlapGrid/FetchMembers)
+
+It fetches the members of the selected hierarchy to render the member editor.
+
+### URL parameters
+
+|  Parameter |  Description | 
+|---|---|
+|action|It holds the current action name as string.|
+|headerTag|It contains the information about the selected hierarchy.|
+|currentReport|It contains the current report as compressed string.|
+
+### Response information 
+
+Code: 200
+
+Content-Type: application/json
+
+Response: serialized JSON string
+
+### Code example 
+
+```javascript
+
+
+```
+```csharp
+
+public Dictionary<string, object> FetchMembers(Dictionary<string, object> jsonResult)
+{
+	OlapDataManager DataManager = new OlapDataManager(connectionString);
+	DataManager.SetCurrentReport(Utils.DeserializeOlapReport(jsonResult["currentReport"].ToString()));
+	return htmlHelper.GetJsonData(jsonResult["action"].ToString(), DataManager, null, jsonResult["headerTag"].ToString());
+}
+
+```
+
+
 ## Paging
 
 [POST&nbsp;&nbsp;/Api/OlapGrid/Paging](http://js.syncfusion.com/demos/ejServices/api/OlapGrid/Paging)
@@ -187,16 +209,11 @@ It fetches the OLAP data required to render the specific page of PivotGrid with 
 
 ### Response information 
 
-Code: 
+Code: 200
 
-Content-Type: application/json;
+Content-Type: application/json
 
-Response(JSON):
-
-```javascript
-
-
-```
+Response: serialized JSON string
 
 ### Code example 
 
@@ -214,49 +231,7 @@ public Dictionary<string, object> Paging(Dictionary<string, object> jsonResult)
 }
 
 ```
-## FetchMembers
 
-[POST&nbsp;&nbsp;/Api/OlapGrid/FetchMembers](http://js.syncfusion.com/demos/ejServices/api/OlapGrid/FetchMembers)
-
-It fetches the members of the selected hierarchy to render the member editor.
-
-### URL parameters
-
-|  Parameter |  Description | 
-|---|---|
-|action|It holds the current action name as string.|
-|headerTag|It contains the information about the selected hierarchy.|
-|currentReport|It contains the current report as compressed string.|
-
-### Response information 
-
-Code: 
-
-Content-Type: application/json;
-
-Response(JSON):
-
-```javascript
-
-
-```
-
-### Code example 
-
-```javascript
-
-
-```
-```csharp
-
-public Dictionary<string, object> FetchMembers(Dictionary<string, object> jsonResult)
-{
-	OlapDataManager DataManager = new OlapDataManager(connectionString);
-	DataManager.SetCurrentReport(Utils.DeserializeOlapReport(jsonResult["currentReport"].ToString()));
-	return htmlHelper.GetJsonData(jsonResult["action"].ToString(), DataManager, null, jsonResult["headerTag"].ToString());
-}
-
-```
 ## RemoveButton
 
 [POST&nbsp;&nbsp;/Api/OlapGrid/RemoveButton](http://js.syncfusion.com/demos/ejServices/api/OlapGrid/RemoveButton)
@@ -274,16 +249,11 @@ It fetches the data required to render the control after removing a button.
 
 ### Response information 
 
-Code:
+Code: 200
 
-Content-Type: application/json;
+Content-Type: application/json
 
-Response(JSON):
-
-```javascript
-
-
-```
+Response: serialized JSON string
 
 ### Code example 
 
@@ -321,16 +291,11 @@ It fetches the data to render children nodes of a member in Member Editor Tree.
 
 ### Response information 
 
-Code:
+Code: 200
 
-Content-Type: application/json;
+Content-Type: application/json
 
-Response(JSON):
-
-```javascript
-
-
-```
+Response: serialized JSON string
 
 ### Code example 
 
@@ -350,11 +315,142 @@ public Dictionary<string, object> ExpandMember(Dictionary<string, object> jsonRe
 
 ```
 
+## Export
+
+[POST&nbsp;&nbsp;/Api/OlapGrid/Export](http://js.syncfusion.com/demos/ejServices/api/OlapGrid/Export)
+
+It is used to export the PivotGrid data to specified format.
+
+### URL parameters
+
+|  Parameter |  Description | 
+|---|---|
+|args|It holds the current report as compressed string|
+
+### Response information 
+
+Code: 200
+
+Content-Type: application/json
+
+Response: file
+
+### Code example 
+
+```javascript
+
+
+```
+
+```csharp
+
+public void Export()
+{
+	string args = HttpContext.Current.Request.Form.GetValues(0)[0];
+	OlapDataManager DataManager = new OlapDataManager(connectionString);
+	string fileName = "Sample";
+	htmlHelper.ExportPivotGrid(DataManager, args, fileName, System.Web.HttpContext.Current.Response);
+}
+
+```
+
+## SaveReport
+
+[POST&nbsp;&nbsp;/Api/OlapGrid/SaveReport](http://js.syncfusion.com/demos/ejServices/api/OlapGrid/SaveReport)
+
+It saves the current report to database with the specified name.
+
+### URL parameters
+
+|  Parameter |  Description | 
+|---|---|
+|reportName|It holds the name with which the report to be saved|
+|operationalMode|It contains the mode of operation of control whether from client side or server side|
+|olapReport|It contains the current report as compressed string|
+|clientReports|It contains the report collection as compressed string|
+
+
+### Response information 
+
+Code: 200
+
+Content-Type: application/json
+
+Response: None
+
+### Code example 
+
+```javascript
+
+
+```
+## LoadReportFromDB
+
+[POST&nbsp;&nbsp;/Api/OlapGrid/LoadReportFromDB](http://js.syncfusion.com/demos/ejServices/api/OlapGrid/LoadReportFromDB)
+
+It loads a report from the database and refreshes the control with it.
+
+### URL parameters
+
+|  Parameter |  Description | 
+|---|---|
+|action|It holds the current action name as string.|
+|layout|It contains the layout of PivotGrid control.|
+|enablePivotFieldList|Boolean property tells whether the field list is enabled or not.|
+|customObject|It contains the custom object passed from client side.|
+|reportName|It holds the name of the report to be loaded.|
+|operationalMode|It contains the mode of operation of control whether from client side or server side.|
+|olapReport|It contains the current report as compressed string.|
+|clientReports|It contains the report collection as compressed string.|
+
+### Response information 
+
+Code: 200
+
+Content-Type: application/json
+
+Response: serialized JSON string
+
+### Code example 
+
+```javascript
+
+
+```
+## DeferUpdate
+
+[POST&nbsp;&nbsp;/Api/OlapGrid/DeferUpdate](http://js.syncfusion.com/demos/ejServices/api/OlapGrid/DeferUpdate)
+
+It fetches the data with respect to the report available at that instant (i.e) updates the control with current report.
+
+### URL parameters
+
+|  Parameter |  Description | 
+|---|---|
+|action|It holds the current action name as string.|
+|filterParams|It contains the filter information applied to the hierarchy.|
+|currentReport|It contains the current report as compressed string.|
+
+### Response information 
+
+Code: 200
+
+Content-Type: application/json
+
+Response: serialized JSON string
+
+### Code example 
+
+```javascript
+
+
+```
+
 ## ExcelExport
 
 [POST&nbsp;&nbsp;/Api/OlapGrid/ExcelExport](http://js.syncfusion.com/demos/ejServices/api/OlapGrid/ExcelExport)
 
-It is used to export the PivotGrid data as an Excel document.
+It exports the PivotGrid control at that instant to the Excel format.
 
 ### URL parameters
 
@@ -366,7 +462,9 @@ It is used to export the PivotGrid data as an Excel document.
 
 Code: 200
 
-Content-Type: application/octet-stream	
+Content-Type: application/json
+
+Response: Excel document
 
 ### Code example 
 
@@ -386,43 +484,6 @@ public void ExcelExport()
 ```
 >The above example will export the PivotGrid as an Excel file.
 
-## CsvExport
-
-[POST&nbsp;&nbsp;/Api/OlapGrid/CsvExport](http://js.syncfusion.com/demos/ejServices/api/OlapGrid/CsvExport)
-
-It exports the PivotGrid control at the instant to a CSV document.
-
-### URL parameters
-
-|  Parameter |  Description | 
-|---|---|
-|currentReport|It contains the current report as compressed string.|
-
-### Response information 
-
-Code: 200
-
-Content-Type: application/octet-stream	
-
-### Code example 
-
-```javascript
-
-
-
-```
-```csharp
-
-public void CsvExport()
-{
-	PivotGridCSVExport pGrid = new PivotGridCSVExport();
-	string args = HttpContext.Current.Request.Form.GetValues(0)[0];
-	pGrid.ExportToCSV(string.Empty, args, HttpContext.Current.Response);
-}
-
-```
-
->The above example will export the PivotGrid as Csv file.
 
 ## PdfExport
 
@@ -440,7 +501,9 @@ It exports the PivotGrid control at the instant to PDF document.
 
 Code: 200
 
-Content-Type: application/octet-stream	
+Content-Type: application/json
+
+Response: PDF document
 
 ### Code example 
 
@@ -476,7 +539,9 @@ It exports the PivotGrid control at the instant to Word document.
 
 Code: 200
 
-Content-Type: application/octet-stream	
+Content-Type: application/json
+
+Response: Word document
 
 ### Code example 
 
@@ -497,144 +562,42 @@ public void WordExport()
 ```
 >The above example will export the PivotGrid as Word file.
 
+## CsvExport
 
-## Export
+[POST&nbsp;&nbsp;/Api/OlapGrid/CsvExport](http://js.syncfusion.com/demos/ejServices/api/OlapGrid/CsvExport)
 
-[POST&nbsp;&nbsp;/Api/OlapGrid/Export](http://js.syncfusion.com/demos/ejServices/api/OlapGrid/Export)
-
-It exports the PivotGrid control at that instant to the specified format.
-
-### URL parameters
-
-|  Parameter |  Description | 
-|---|---|
-|reportName|It holds the name with which the report to be saved.|
-|operationalMode|It contains the mode of operation of control whether from client side or server side.|
-|olapReport|It contains the current report as compressed string.|
-
-### Response information 
-
-Code: 
-
-Content-Type: application/octet-stream	
-
-### Code example 
-
-```javascript
-
-
-```
-
-```csharp
-
-public void Export()
-{
-	string args = HttpContext.Current.Request.Form.GetValues(0)[0];
-	OlapDataManager DataManager = new OlapDataManager(connectionString);
-	string fileName = "Sample";
-	htmlHelper.ExportPivotGrid(DataManager, args, fileName, System.Web.HttpContext.Current.Response);
-}
-
-```
-
-## SaveReport
-
-[POST&nbsp;&nbsp;/Api/OlapGrid/SaveReport](http://js.syncfusion.com/demos/ejServices/api/OlapGrid/SaveReport)
-
-It loads a report from the database and refreshes the control with it.
+It exports the PivotGrid control at the instant to CSV document.
 
 ### URL parameters
 
 |  Parameter |  Description | 
 |---|---|
-|action|It holds the current action name as string.|
-|layout|It contains the layout of PivotGrid control.|
-|enablePivotFieldList| Boolean property tells whether the field list is enabled or not.|
-|customObject|It contains the custom object passed from client side.|
-|reportName|It holds the name of the report to be loaded.|
-|operationalMode|It contains the mode of operation of control whether from client side or server side.|
-|olapReport|It contains the current report as compressed string.|
-
-### Response information 
-
-Code: 
-
-Content-Type: application/octet-stream	
-
-### Code example 
-
-```javascript
-
-
-```
-## LoadReportFromDB
-
-[POST&nbsp;&nbsp;/Api/OlapGrid/LoadReportFromDB](http://js.syncfusion.com/demos/ejServices/api/OlapGrid/LoadReportFromDB)
-
-It loads a report from the database and refreshes the control with it.
-
-### URL parameters
-
-|  Parameter |  Description | 
-|---|---|
-|action|It holds the current action name as string.|
-|layout|It contains the layout of PivotGrid control.|
-|enablePivotFieldList|Boolean property tells whether the field list is enabled or not.|
-|customObject|It contains the custom object passed from client side.|
-|reportName|It holds the name of the report to be loaded.|
-|operationalMode|It contains the mode of operation of control whether from client side or server side.|
-|olapReport|It contains the current report as compressed string.|
-
-### Response information 
-
-Code: 
-
-Content-Type: application/json;
-
-Response(JSON):
-
-```javascript
-
-
-```
-
-### Code example 
-
-```javascript
-
-
-```
-## DeferUpdate
-
-[POST&nbsp;&nbsp;/Api/OlapGrid/DeferUpdate](http://js.syncfusion.com/demos/ejServices/api/OlapGrid/DeferUpdate)
-
-It fetches the data with respect to the report available at that instant (i.e) updates the control with current report.
-
-### URL parameters
-
-|  Parameter |  Description | 
-|---|---|
-|action|It holds the current action name as string.|
-|filterParams|It contains the filter information applied to the hierarchy.|
-|sortedHeaders|It contains the information about the sorting applied.|
 |currentReport|It contains the current report as compressed string.|
 
 ### Response information 
 
-Code: 
+Code: 200
 
-Content-Type: application/json;
+Content-Type: application/json
 
-Response(JSON):
-
-```javascript
-
-
-```
+Response: CSV document
 
 ### Code example 
 
 ```javascript
 
 
+
 ```
+```csharp
+
+public void CsvExport()
+{
+	PivotGridCSVExport pGrid = new PivotGridCSVExport();
+	string args = HttpContext.Current.Request.Form.GetValues(0)[0];
+	pGrid.ExportToCSV(string.Empty, args, HttpContext.Current.Response);
+}
+
+```
+
+>The above example will export the PivotGrid as Csv file.

@@ -23,16 +23,11 @@ It fetches the OLAP data required to render the PivotTreeMap control from server
 
 ### Response information 
 
-Code: 
+Code: 200
 
 Content-Type: application/json;
 
-Response(JSON):
-
-```javascript
-
-
-```
+Response: serialized JSON string
 
 ### Code example 
 
@@ -51,23 +46,18 @@ It fetches the OLAP data required to render the drilled PivotTreeMap.
 
 |  Parameter |  Description | 
 |---|---|
-|action|It holds the current action name as string.|
-|drillInfo|It contains the information about the drilled member.|
-|olapReport|It contains the current report as compressed string.|
-|customObject|It contains the custom object passed from client side.|
+|action|It holds the current action name as string|
+|drillInfo|It contains the information about the drilled member|
+|olapReport|It contains the current report as serialized string|
+|customObject|It contains the custom object passed from client side|
 
 ### Response information 
 
-Code: 
+Code: 200
 
 Content-Type: application/json;
 
-Response(JSON):
-
-```javascript
-
-
-```
+Response: serialized JSON string
 
 ### Code example 
 
