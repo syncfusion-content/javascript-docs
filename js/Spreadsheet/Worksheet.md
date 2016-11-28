@@ -13,7 +13,7 @@ Worksheet is a collection of cells organized in the form of rows and columns tha
 
 ## List of Sheet Operations 
 
-You can perform following operations in Worksheet,
+You can perform following operations in worksheet,
 
 * Add
 * Copy
