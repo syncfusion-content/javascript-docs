@@ -80,6 +80,9 @@ ej.autocomplete.min.js</td></tr>
 ej.datepicker.min.js</td></tr>
 <tr>
 <td>
+ej.timepicker.min.js</td></tr>
+<tr>
+<td>
 ej.datetimepicker.min.js</td></tr>
 <tr>
 <td>
