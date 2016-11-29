@@ -6,62 +6,7 @@ documentation: API
 platform: js-webapi
 keywords: grid, ejGrid, syncfusion, grid webapi
 ---
-
-## NorthwindDataService
-
-[GET&nbsp;&nbsp;/wcf/northwind.svc](http://js.syncfusion.com/demos/ejservices/Wcf/Northwind.svc)
-
-This is an [OData](http://www.odata.org/) endpoint for Microsoft Northwind sample database with limited data tables like `Orders` and `Customers`.
-
-### URL parameters
-
-|  Parameter |  Description | 
-|---|---|
-|  $top | Returns only the first n results| 
-|  $skip | Used to skip the first n results| 
-|  $filter	| Filters the results based on a Boolean condition|
-
-> We can use other query options in order to perform the filtering in Northwind database. For demo purpose we have used <a href="http://services.odata.org/V3/Northwind/Northwind.svc/$metadata">Northwind database</a>. To know more about the query option click <a href="https://msdn.microsoft.com/en-us/library/dd728283(v=vs.110).aspx">here</a>
-
-### Response information 
-
-Code: 200
-
-Content-Type: application/json;odata=verbose;charset=utf-8
-
-Response (JSON):   
-
-```javascript
-
-{
-"__metadata":
-
-{"id":"http://js.syncfusion.com/demos/ejservices/Wcf/Northwind.svc/Orders(10248)",
-"uri":"http://js.syncfusion.com/demos/ejservices/Wcf/Northwind.svc/Orders(10248)",
-"type":"EJServices.Models.Order"},
-
-"Customer":
-{"__deferred":{"uri":"http://js.syncfusion.com/demos/ejservices/Wcf/Northwind.svc/Orders(10248)/Customer"}},
-
-"OrderID":10248,
-"CustomerID":"VINET",
-"EmployeeID":5,
-"OrderDate":"\/Date(836438400000)\/",
-"RequiredDate":"\/Date(838857600000)\/",
-"ShippedDate":"\/Date(837475200000)\/",
-"ShipVia":3,
-"Freight":"32.3800",
-"ShipName":"Vins et alcools Chevalier",
-"ShipAddress":"59 rue de l'Abbaye",
-"ShipCity":"Reims",
-"ShipRegion":null,
-"ShipPostalCode":"51100",
-"ShipCountry":"France"
-}, 	 //... 9 more records
-
-```
-> We can see that the first ten results from the `Orders` table of Northwind database in the above JSON reponse where it uses `$top` query option.   
-        
+       
 ## ExcelExport
 
 [POST&nbsp;&nbsp;/Api/Grid/ExcelExport](http://js.syncfusion.com/demos/ejservices/api/Grid/ExcelExport)
@@ -268,14 +213,6 @@ Response (JSON):
 }, 	 //... 9 more records
 
 ```
-
-### Code example 
-
-
-```javascript
-
-```
-
 > We can see that the first ten results from the `Orders` table of Northwind database in the above JSON reponse where it uses `$top` query option.   
 
 
