@@ -15,7 +15,7 @@ documentation: ug
 	
 
 
-Electron (Previously known as Atom Shell) is used create a cross platform desktop application for different OS like Linux, Windows and OS X by using JavaScript and able to achieve native API supports.
+Electron (Previously known as Atom Shell) is used create a cross platform desktop application for different OS like Linux, Windows and OS X by using JavaScript and able to access platform specific native API's.
 
 
 
@@ -62,40 +62,30 @@ This step by step guide is used to create a combination of Essential JS UI contr
 
 Step1:
 
-To clone and run this repository need[Git](https://git-scm.com/) and [Node.js](https://nodejs.org/en/download/)(which comes with[npm](http://npmjs.com/)) installed on your system, then enter the below command line using terminal (Mac OS) or Command Prompt (Windows).
+To clone and run this repository need[Git](https://git-scm.com/) and [Node.js](https://nodejs.org/en/download/)(which comes with[npm](http://npmjs.com/)) installed on your system, then enter the below command using terminal (Mac OS) or Command Prompt (Windows).
 
 
-N> For Mac OS run the command in administrator mode($sudo prefix)
+N> For Mac OS run the command in administrator mode with $sudo as prefix
 
-1. **Clone the Quick Start repository**
+1. Clone the Quick Start repository
 
+        {% highlight bash %}
 
+        $ git clone <a href=https://github.com/electron/electron-quick-start>https://github.com/electron/electron-quick-start</a> 
 
-    {% highlight bash %}
-
-    $ git clone <a href=https://github.com/electron/electron-quick-start>https://github.com/electron/electron-quick-start</a> 
-
-    {% endhighlight %}
-
-
-
-
+        {% endhighlight %}
 
 ![](Electron-Getting-started\steps-to-add-the-sample-and-runthe-application_img1.png)
 
 
 
-2. **Go into the repository**
+2. Go into the repository
 
+        {% highlight bash %}
 
+        $ cd electron-quick-start 
 
-
-
-    {% highlight bash %}
-
-    $ cd electron-quick-start 
-
-    {% endhighlight %}
+        {% endhighlight %}
 
 
 
@@ -103,15 +93,13 @@ N> For Mac OS run the command in administrator mode($sudo prefix)
 
 
 
-3. **Install the dependencies**
+3. Install the dependencies
 
+        {% highlight bash %}
 
+        $ npm install 
 
-    {% highlight bash %}
-
-    $ npm install 
-
-    {% endhighlight %}
+        {% endhighlight %}
 
 
 
@@ -177,7 +165,7 @@ Initialize Accordion in the script.
 Step4:
 
 
-Run the Electron Application using the below command line.
+Run the Electron Application using the below command.
 
 
 
