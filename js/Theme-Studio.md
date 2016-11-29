@@ -19,7 +19,7 @@ Essential [Theme Studio](http://js.syncfusion.com/themestudio/) for JavaScript a
 
 You can apply Flat-Azure theme as shown below,
 
-![](/js/ThemeStudio_images/Built-In-Themes.png)
+![](ThemeStudio_images/Built-In-Themes.png)
 
 
 **Step 2:**
@@ -38,7 +38,7 @@ The following options of the control can be customized.
 
 * Miscellaneous
 
-![](/js/ThemeStudio_images/Customization.png)
+![](ThemeStudio_images/Customization.png)
 
 **Step 3:**
 
@@ -46,11 +46,11 @@ Essential Theme Studio for JavaScript provides a `Filter` option to customize th
 
 You can find the filter option in theme studio as shown below:
 
-![](/js/ThemeStudio_images/Filter-01.png)
+![](ThemeStudio_images/Filter-01.png)
 
-![](/js/ThemeStudio_images/Filter-02.png)
+![](ThemeStudio_images/Filter-02.png)
 
-![](/js/ThemeStudio_images/Filter-03.png)
+![](ThemeStudio_images/Filter-03.png)
 
 **Step 4:**
 
@@ -58,9 +58,9 @@ Once you customize the theme for the Dialog control, then you can download the c
  
 You can find the Download option in theme studio as shown below:
 
-![](/js/ThemeStudio_images/Download-01.png)
+![](ThemeStudio_images/Download-01.png)
 
-![](/js/ThemeStudio_images/Download-02.png)
+![](ThemeStudio_images/Download-02.png)
 
 In the Download dialog popup provide a name to the file to be generated. Once the Download button is clicked, it will download the customized theme files. The downloaded theme files consist as follows:
 
@@ -92,7 +92,7 @@ You can manually change the color code in this less file and generate the CSS by
 
 Downloaded theme file is in the below structure:
 
-![](/js/ThemeStudio_images/Download-03.png)
+![](ThemeStudio_images/Download-03.png)
 
 You can refer these customized unminified/minified theme files to display the Dialog control in your application.
 
@@ -106,37 +106,37 @@ Our own customized theme of the Dialog control can be again customized by using 
 
 You can find the import option in theme studio as shown below:
 
-![](/js/ThemeStudio_images/Import-01.png)
+![](ThemeStudio_images/Import-01.png)
 
-![](/js/ThemeStudio_images/Import-02.png)
+![](ThemeStudio_images/Import-02.png)
 
 **Step 2:**
 
 Import **properties.json** file which is customized theme of Dialog control earlier as shown below:
 
-![](/js/ThemeStudio_images/Import-03.png)
+![](ThemeStudio_images/Import-03.png)
 
 **Step 3:**
 
 You can display the Dialog control which is applied the customized theme of Dialog control by importing the properties.json file.
 
-![](/js/ThemeStudio_images/Import-04.png)
+![](ThemeStudio_images/Import-04.png)
 
 Now, you can customize the Dialog control with your desired theme as shown below:
 
-![](/js/ThemeStudio_images/Import-05.png)
+![](ThemeStudio_images/Import-05.png)
 
 **Step 4:**
 
 After customizing theme, you can export or download the customized theme files.
 
-![](/js/ThemeStudio_images/Import-06.png)
+![](ThemeStudio_images/Import-06.png)
 
 ## How to use the generated CSS in your web application?
 
 Once download the customized theme from the theme studio, you can find the customized unminified/minified theme files in the downloaded folder as like below structure.
 
-![](/js/ThemeStudio_images/Generated-01.png)
+![](ThemeStudio_images/Generated-01.png)
  
 Refer these customized unminified/minified theme files into your application. The below section explains what are all the files required to refer and the steps to apply the customized theme in your application.
 
@@ -162,7 +162,7 @@ Now refer the both files (**ej.widgets.core.min.css & ej.theme.min.css**) direct
 
 You can find the customized theme less files in the downloaded folder under below location. 
 
-![](/js/ThemeStudio_images/Less-01.png)
+![](ThemeStudio_images/Less-01.png)
 
 You can choose any compiler which is available in local/online to generate the CSS from LESS such as dotless compiler, less2css etc. The below section explains how to generate the CSS from LESS using less2css compiler.
 
@@ -173,7 +173,7 @@ Install less with global access using npm
    **npm install -g less**
 
 
-![](/js/ThemeStudio_images/Less-02.png)
+![](ThemeStudio_images/Less-02.png)
  
 **Step 2:**
 
@@ -188,12 +188,12 @@ Open command prompt and run the below command.
    ** For example: lessc ej.theme.less output.css **
    
    
-![](/js/ThemeStudio_images/Less-03.png)
+![](ThemeStudio_images/Less-03.png)
 
 **Step 4:**
 
 This will generate the CSS file with the given name “output.css”.
 
-![](/js/ThemeStudio_images/Less-04.png)
+![](ThemeStudio_images/Less-04.png)
 
 You can manually edit the color code variables in this less (ej.theme.less) file to add more styling and compiled to CSS files.
