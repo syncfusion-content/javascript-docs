@@ -161,7 +161,7 @@ Now the editor type for the duration and predecessor offset fields in the add an
 
 Grid height responsiveness will works only if the scrollSettings->height property is set as ‘100%’
 
-Restore old resizing behaviour, in which adjusting all the other columns while resizing a particular column
+Restore old resizing behavior, in which adjusting all the other columns while resizing a particular column
 
 **Default column resizing mode**
 
