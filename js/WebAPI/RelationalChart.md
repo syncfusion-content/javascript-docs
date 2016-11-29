@@ -30,9 +30,12 @@ Response: serialized JSON string
 
 ### Code example 
 
-```javascript
-
-
+```csharp
+public Dictionary<string, object> Initialize(Dictionary<string, object> jsonResult)
+{
+    BindData();
+    return pivotChart.GetJsonData(jsonResult["action"].ToString(), ProductSales.GetSalesData());
+}
 
 ```
 
@@ -61,9 +64,12 @@ Response: serialized JSON string
 
 ### Code example 
 
-```javascript
-
-
+```csharp
+public Dictionary<string, object> Drill(Dictionary<string, object> jsonResult)
+{
+    BindData();
+    return pivotChart.GetJsonData(jsonResult["action"].ToString(), ProductSales.GetSalesData(), jsonResult["drilledSeries"].ToString());
+}
 
 ```
 
@@ -89,8 +95,12 @@ Response: file
 
 ### Code example 
 
-```javascript
-
-
-
+```csharp
+public void Export()
+{
+    string args = HttpContext.Current.Request.Form.GetValues(0)[0];
+    string fileName = "Sample";
+    pivotChart.ExportPivotChart(args, fileName, System.Web.HttpContext.Current.Response);
+}
+        
 ```

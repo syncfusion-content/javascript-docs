@@ -31,8 +31,13 @@ Response: serialized JSON string
 
 ### Code example 
 
-```javascript
-
+```csharp
+public Dictionary<string, object> Initialize(Dictionary<string, object> jsonResult)
+{
+    OlapDataManager DataManager = new OlapDataManager(connectionString);
+    DataManager.SetCurrentReport(CreateOlapReport());
+    return olapClientHelper.GetJsonData(jsonResult["action"].ToString(), DataManager, jsonResult["clientParams"].ToString())
+}
 
 ```
 
@@ -61,20 +66,10 @@ Response: serialized JSON string
 
 ### Code example 
 
-```javascript
-
-
-```
 ```csharp
-
 public Dictionary<string, object> InitializeGrid(Dictionary<string, object> jsonResult)
 {
     OlapDataManager DataManager = new OlapDataManager(connectionString);
-    if (DataManager.ConnectionString.ToLower().Replace(" ", String.Empty).Split(';', '=').Contains("localeidentifier"))
-    {
-        DataManager.Culture = new System.Globalization.CultureInfo(cultureIDInfoval);
-        DataManager.OverrideDefaultFormatStrings = true;
-    }
     DataManager.SetCurrentReport(Syncfusion.JavaScript.Olap.Utils.DeserializeOlapReport(jsonResult["currentReport"].ToString()));
     return jsonResult.ContainsKey("gridLayout") ? olapClientHelper.GetJsonData(jsonResult["action"].ToString(), DataManager, jsonResult["gridLayout"].ToString()) : olapClientHelper.GetJsonData(jsonResult["action"].ToString(), DataManager);
 }
@@ -105,11 +100,6 @@ Response: serialized JSON string
 
 ### Code example 
 
-```javascript
-
-
-
-```
 ```csharp
 public Dictionary<string, object> InitializeChart(Dictionary<string, object> jsonResult)
 {
@@ -144,12 +134,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-```javascript
-
-
-```
 ```csharp
-
 public Dictionary<string, object> InitializeTreeMap(Dictionary<string, object> jsonResult)
 {
     OlapDataManager DataManager = new OlapDataManager(connectionString);
@@ -185,9 +170,6 @@ Response: serialized JSON string
 
 ### Code example 
 
-```javascript
-
-```
 ```csharp
 public Dictionary<string, object> DrillChart(Dictionary<string, object> jsonResult)
 {
@@ -222,8 +204,9 @@ Content-Type: application/json
 
 Response: serialized JSON string
 
-```csharp
+### Code example 
 
+```csharp
 public Dictionary<string, object> DrillTreeMap(Dictionary<string, object> jsonResult)
 {
     OlapDataManager DataManager = new OlapDataManager(connectionString);
@@ -231,13 +214,6 @@ public Dictionary<string, object> DrillTreeMap(Dictionary<string, object> jsonRe
     DataManager.Reports = olapClientHelper.DeserializedReports(jsonResult["clientReports"].ToString());
     return treeMapHelper.GetJsonData(jsonResult["action"].ToString(), DataManager, jsonResult["drillInfo"].ToString());
 }
-
-```
-
-### Code example 
-
-```javascript
-
 
 ```
 
@@ -268,19 +244,10 @@ Response: serialized JSON string
 
 ### Code example 
 
-```javascript
-
-```
 ```csharp
-
 public Dictionary<string, object> DrillGrid(Dictionary<string, object> jsonResult)
 {
     OlapDataManager DataManager = new OlapDataManager(connectionString);
-    if (DataManager.ConnectionString.ToLower().Replace(" ", String.Empty).Split(';', '=').Contains("localeidentifier"))
-    {
-        DataManager.Culture = new System.Globalization.CultureInfo(cultureIDInfoval);
-        DataManager.OverrideDefaultFormatStrings = true;
-    }
     DataManager.SetCurrentReport(Syncfusion.JavaScript.Olap.Utils.DeserializeOlapReport(jsonResult["currentReport"].ToString()));
     DataManager.Reports = olapClientHelper.DeserializedReports(jsonResult["clientReports"].ToString());
     return olapClientHelper.GetJsonData(jsonResult["action"].ToString(), DataManager, jsonResult["cellPosition"].ToString(), jsonResult["headerInfo"].ToString(), jsonResult["layout"].ToString());
@@ -313,12 +280,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-```javascript
-
-
-```
 ```csharp
-
 public Dictionary<string, object> FilterElement(Dictionary<string, object> jsonResult)
 {
     OlapDataManager DataManager = new OlapDataManager(connectionString);
@@ -354,10 +316,6 @@ Response: serialized JSON string
 
 ### Code example 
 
-```javascript
-
-
-```
 ```csharp
 public Dictionary<string, object> RemoveSplitButton(Dictionary<string, object> jsonResult)
 {
@@ -366,6 +324,7 @@ public Dictionary<string, object> RemoveSplitButton(Dictionary<string, object> j
     DataManager.Reports = olapClientHelper.DeserializedReports(jsonResult["clientReports"].ToString());
     return olapClientHelper.GetJsonData(jsonResult["action"].ToString(), DataManager, jsonResult["clientParams"].ToString());
 }
+
 ```
 
 ## FetchMemberTreeNodes
@@ -392,12 +351,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-```javascript
-
-
-```
 ```csharp
-
 public Dictionary<string, object> FetchMemberTreeNodes(Dictionary<string, object> jsonResult)
 {
     OlapDataManager DataManager = new OlapDataManager(connectionString);
@@ -433,12 +387,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-```javascript
-
-
-```
 ```csharp
-
 public Dictionary<string, object> DropNode(Dictionary<string, object> jsonResult)
 {
     OlapDataManager DataManager = new OlapDataManager(connectionString);
@@ -473,22 +422,10 @@ Response: serialized JSON string
 
 ### Code example 
 
-```javascript
-
-
-```
 ```csharp
-
 public Dictionary<string, object> CubeChange(Dictionary<string, object> jsonResult)
 {
     OlapDataManager DataManager = new OlapDataManager(connectionString);
-    dynamic customData = serializer.Deserialize<dynamic>(jsonResult["customObject"].ToString());
-    if (customData is Dictionary<string, object> && customData.ContainsKey("isPaging"))
-    {
-        DataManager.CurrentReport.EnablePaging = true;
-        DataManager.CurrentReport.PagerOptions.SeriesPageSize = 5;
-        DataManager.CurrentReport.PagerOptions.CategorialPageSize = 3;
-    }
     return olapClientHelper.GetJsonData(jsonResult["action"].ToString(), DataManager, jsonResult["cubeName"].ToString(), jsonResult["clientParams"].ToString());
 }
 
@@ -515,20 +452,14 @@ Content-Type: application/json
 
 Response: serialized JSON string
 
-```csharp
+### Code example 
 
+```csharp
 public Dictionary<string, object> MeasureGroup(Dictionary<string, object> jsonResult)
 {
     OlapDataManager DataManager = new OlapDataManager(connectionString);
     return olapClientHelper.GetJsonData(jsonResult["action"].ToString(), DataManager, jsonResult["measureGroupName"].ToString());
 }
-
-```
-
-### Code example 
-
-```javascript
-
 
 ```
 
@@ -543,7 +474,7 @@ It fetches the data required to render the control on performing toolbar operati
 |  Parameter |  Description | 
 |---|---|
 |action|It holds the current action name as string|
-|toolbarOperation|It contains the operation performed|
+|toolbarOperation|It contains name of the operation performed|
 |clientInfo|It contains the information about the operation performed|
 |olapReport|It contains the current report as compressed string|
 |clientReports|It contains the report collection at that instant|
@@ -558,8 +489,18 @@ Response: serialized JSON string
 
 ### Code example 
 
-```javascript
-
+```csharp
+public Dictionary<string, object> ToolbarOperations(Dictionary<string, object> jsonResult)
+{
+    var toolbarOperation = "";
+    OlapDataManager DataManager = new OlapDataManager(connectionString);
+    if ((jsonResult["olapReport"]) != null && !string.IsNullOrEmpty(jsonResult["olapReport"].ToString()))
+        DataManager.SetCurrentReport(Syncfusion.JavaScript.Olap.Utils.DeserializeOlapReport(jsonResult["olapReport"].ToString()));
+    if ((jsonResult["clientReports"]) != null && !string.IsNullOrEmpty(jsonResult["clientReports"].ToString()))
+        DataManager.Reports = olapClientHelper.DeserializedReports(jsonResult["clientReports"].ToString());
+    toolbarOperation = jsonResult["toolbarOperation"] == null ? null : jsonResult["toolbarOperation"].ToString();
+    return olapClientHelper.GetJsonData(jsonResult["action"].ToString(), DataManager, toolbarOperation, jsonResult["clientInfo"].ToString());
+}
 
 ```
 
@@ -590,8 +531,9 @@ Content-Type: application/json
 
 Response: serialized JSON string
 
-```csharp
+### Code example 
 
+```csharp
 public Dictionary<string, object> ExpandMember(Dictionary<string, object> jsonResult)
 {
     OlapDataManager DataManager = new OlapDataManager(connectionString);
@@ -601,12 +543,6 @@ public Dictionary<string, object> ExpandMember(Dictionary<string, object> jsonRe
         DataManager.Reports = olapClientHelper.DeserializedReports(jsonResult["clientReports"].ToString());
     return olapClientHelper.GetJsonData(jsonResult["action"].ToString(), DataManager, Convert.ToBoolean(jsonResult["checkedStatus"].ToString()), jsonResult["parentNode"].ToString(), jsonResult["tag"].ToString(), jsonResult["dimensionName"].ToString(), jsonResult["cubeName"].ToString());
 }
-
-```
-### Code example 
-
-```javascript
-
 
 ```
 
@@ -635,12 +571,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-```javascript
-
-
-```
 ```csharp
-
 public Dictionary<string, object> UpdateReport(Dictionary<string, object> jsonResult)
 {
     return olapClientHelper.GetJsonData(jsonResult["action"].ToString(), jsonResult["clientParams"].ToString(), jsonResult["olapReport"].ToString(), jsonResult["clientReports"].ToString());
@@ -673,8 +604,36 @@ Response: None
 
 ### Code example 
 
-```javascript
-
+```csharp
+public Dictionary<string, object> SaveReportToDB(Dictionary<string, object> jsonResult)
+{
+    string operationalMode = jsonResult["operationalMode"].ToString(), analysisMode = jsonResult["analysisMode"].ToString(), reportName = string.Empty;
+    bool isDuplicate = true;
+    SqlCeConnection con = new SqlCeConnection() { ConnectionString = conStringforDB };
+    con.Open();
+    reportName = jsonResult["reportName"].ToString() + "##" + operationalMode.ToLower() + "#>>#" + analysisMode.ToLower();
+    SqlCeCommand cmd1 = null;
+    foreach (DataRow row in GetDataTable().Rows)
+    {
+        if ((row.ItemArray[0] as string).Equals(reportName))
+        {
+            isDuplicate = false;
+            cmd1 = new SqlCeCommand("update ReportsTable set Report=@Reports where ReportName like @ReportName", con);
+        }
+    }
+    if (isDuplicate)
+    {
+        cmd1 = new SqlCeCommand("insert into ReportsTable Values(@ReportName,@Reports)", con);
+    }
+    cmd1.Parameters.Add("@ReportName", reportName);
+    if (operationalMode.ToLower() == "servermode" && analysisMode == "olap")
+        cmd1.Parameters.Add("@Reports", Syncfusion.JavaScript.Olap.Utils.GetReportStream(jsonResult["clientReports"].ToString()).ToArray());
+    else
+        cmd1.Parameters.Add("@Reports", Encoding.UTF8.GetBytes(jsonResult["clientReports"].ToString()).ToArray());
+    cmd1.ExecuteNonQuery();
+    con.Close();
+    return null;
+}
 
 ```
 
@@ -701,8 +660,23 @@ Response: serialized JSON string
 
 ### Code example 
 
-```javascript
-
+```csharp
+public Dictionary<string, object> FetchReportListFromDB(Dictionary<string, object> jsonResult)
+{
+    string reportNames = string.Empty, currentRptName = string.Empty, operationalMode = jsonResult["operationalMode"].ToString(), analysisMode = jsonResult["analysisMode"].ToString();
+    foreach (System.Data.DataRow row in GetDataTable().Rows)
+    {
+        currentRptName = (row.ItemArray[0] as string);
+        if (currentRptName.IndexOf("##" + operationalMode + "#>>#" + analysisMode) >= 0)
+        {
+            currentRptName = currentRptName.Replace("##" + operationalMode + "#>>#" + analysisMode, "");
+            reportNames = reportNames == "" ? currentRptName : reportNames + "__" + currentRptName;
+        }
+    }
+    Dictionary<string, object> dictionary = new Dictionary<string, object>();
+    dictionary.Add("ReportNameList", reportNames);
+    return dictionary;
+}
 
 ```
 ## LoadReportFromDB
@@ -731,12 +705,42 @@ Response: serialized JSON string
 
 ### Code example 
 
-```javascript
-
-
-```
 ```csharp
-
+public Dictionary<string, object> LoadReportFromDB(Dictionary<string, object> jsonResult)
+{
+    PivotReport report = new PivotReport();
+    string operationalMode = jsonResult["operationalMode"].ToString(), analysisMode = jsonResult["analysisMode"].ToString();
+    Dictionary<string, object> dictionary = new Dictionary<string, object>();
+    string currentRptName = string.Empty;
+    foreach (DataRow row in GetDataTable().Rows)
+    {
+        currentRptName = (row.ItemArray[0] as string).Replace("##" + operationalMode.ToLower() + "#>>#" + analysisMode.ToLower(), "");
+        if (currentRptName.Equals(jsonResult["reportName"].ToString()))
+        {
+            if (operationalMode.ToLower() == "servermode" && analysisMode == "olap")
+            {
+                var reportString = "";
+                OlapDataManager DataManager = new OlapDataManager(connectionString);
+                reportString = Syncfusion.JavaScript.Olap.Utils.CompressData(row.ItemArray[1] as byte[]);
+                DataManager.Reports = olapClientHelper.DeserializedReports(reportString);
+                DataManager.SetCurrentReport(DataManager.Reports[0]);
+                return olapClientHelper.GetJsonData("toolbarOperation", DataManager, "Load Report", jsonResult["reportName"].ToString());
+            }
+            else
+            {
+                byte[] reportString = new byte[2 * 1024];
+                reportString = (row.ItemArray[1] as byte[]);
+                if (analysisMode.ToLower() == "pivot" && operationalMode.ToLower() == "servermode")
+                    dictionary = olapClientHelper.GetJsonData("LoadReport", ProductSales.GetSalesData(), Encoding.UTF8.GetString(reportString));
+                else
+                    dictionary.Add("report", Encoding.UTF8.GetString(reportString));
+                break;
+            }
+        }
+    }
+    return dictionary;
+}
+        
 ```
 ## Export
 
@@ -760,10 +764,6 @@ Response: file
 
 ### Code example 
 
-```javascript
-
-
-```
 ```csharp
 
 public void Export()
@@ -796,12 +796,7 @@ Response: file
 
 ### Code example 
 
-```javascript
-
-
-```
 ```csharp
-
 public void ExportOlapClient()
 {
     string args = HttpContext.Current.Request.Form.GetValues(0)[0];
@@ -833,12 +828,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-```javascript
-
-
-```
 ```csharp
-
 public string GetMDXQuery(Dictionary<string, object> jsonResult)
 {
     OlapDataManager DataManager = new OlapDataManager(connectionString);
@@ -847,6 +837,7 @@ public string GetMDXQuery(Dictionary<string, object> jsonResult)
 }
 
 ```
+
 ## ToggleAxis
 
 [POST&nbsp;&nbsp;/Api/OlapClient/ToggleAxis](http://js.syncfusion.com/demos/ejServices/api/OlapClient/ToggleAxis)
@@ -871,12 +862,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-```javascript
-
-
-```
 ```csharp
-
 public Dictionary<string, object> ToggleAxis(Dictionary<string, object> jsonResult)
 {
     OlapDataManager DataManager = new OlapDataManager(connectionString);
@@ -912,12 +898,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-```javascript
-
-
-```
 ```csharp
-
 public Dictionary<string, object> Paging(Dictionary<string, object> jsonResult)
 {
     OlapDataManager DataManager = new OlapDataManager(connectionString);

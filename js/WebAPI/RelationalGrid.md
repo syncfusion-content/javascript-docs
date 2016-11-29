@@ -30,9 +30,12 @@ Response: serialized JSON string
 
 ### Code example 
 
-```javascript
-
-
+```csharp
+public Dictionary<string, object> Initialize(Dictionary<string, object> jsonResult)
+{
+    htmlHelper.PivotReport = BindDefaultData(); 
+    return htmlHelper.GetJsonData(jsonResult["action"].ToString(), ProductSales.GetSalesData());
+}
 
 ```
 
@@ -61,9 +64,12 @@ Response: serialized JSON string
 
 ### Code example 
 
-```javascript
-
-
+```csharp
+public Dictionary<string, object> FetchMembers(Dictionary<string, object> jsonResult)
+{
+    htmlHelper.PopulateData(jsonResult["currentReport"].ToString());
+    return htmlHelper.GetJsonData(jsonResult["action"].ToString(), ProductSales.GetSalesData(), jsonResult["headerTag"].ToString(), jsonResult["sortedHeaders"].ToString());
+}
 
 ```
 
@@ -92,9 +98,12 @@ Response: serialized JSON string
 
 ### Code example 
 
-```javascript
-
-
+```csharp
+public Dictionary<string, object> Filtering(Dictionary<string, object> jsonResult)
+{
+    htmlHelper.PopulateData(jsonResult["currentReport"].ToString());
+    return htmlHelper.GetJsonData(jsonResult["action"].ToString(), ProductSales.GetSalesData(), jsonResult["filterParams"].ToString(), jsonResult["sortedHeaders"].ToString());
+}
 
 ```
 
@@ -126,9 +135,12 @@ Response: serialized JSON string
 
 ### Code example 
 
-```javascript
-
-
+```csharp
+public Dictionary<string, object> ModifyNodeState(Dictionary<string, object> jsonResult)
+{
+    htmlHelper.PopulateData(jsonResult["currentReport"].ToString());
+    return htmlHelper.GetJsonData(jsonResult["action"].ToString(), ProductSales.GetSalesData(), jsonResult["headerTag"].ToString(), jsonResult["dropAxis"].ToString(), jsonResult["filterParams"].ToString(), jsonResult["sortedHeaders"].ToString());
+}
 
 ```
 
@@ -159,9 +171,12 @@ Response: serialized JSON string
 
 ### Code example 
 
-```javascript
-
-
+```csharp
+public Dictionary<string, object> DropNode(Dictionary<string, object> jsonResult)
+{
+    htmlHelper.PopulateData(jsonResult["currentReport"].ToString());
+    return htmlHelper.GetJsonData(jsonResult["action"].ToString(), ProductSales.GetSalesData(), jsonResult["dropAxis"].ToString(), jsonResult["headerTag"].ToString(), jsonResult.ContainsKey("filterParams") ? jsonResult["filterParams"].ToString() : null, jsonResult["sortedHeaders"].ToString());
+}
 
 ```
 
@@ -189,9 +204,12 @@ Response: serialized JSON string
 
 ### Code example 
 
-```javascript
-
-
+```csharp
+public Dictionary<string, object> Sorting(Dictionary<string, object> jsonResult)
+{
+    htmlHelper.PopulateData(jsonResult["currentReport"].ToString());
+    retun htmlHelper.GetJsonData(jsonResult["action"].ToString(), ProductSales.GetSalesData(), jsonResult["sortedHeaders"].ToString());
+}
 
 ```
 
@@ -219,9 +237,12 @@ Response: serialized JSON string
 
 ### Code example 
 
-```javascript
-
-
+```csharp
+public Dictionary<string, object> CalculatedField(Dictionary<string, object> jsonResult)
+{
+    htmlHelper.PopulateData(jsonResult["currentReport"].ToString());
+    return htmlHelper.GetJsonData(jsonResult["action"].ToString(), ProductSales.GetSalesData(), null, jsonResult["headerTag"].ToString());
+}
 
 ```
 
@@ -247,9 +268,15 @@ Response: file
 
 ### Code example 
 
-```javascript
-
-
+```csharp
+public void Export()
+{
+    string args = HttpContext.Current.Request.Form.GetValues(0)[0];
+    Dictionary<string, string> gridParams = serializer.Deserialize<Dictionary<string, string>>(args);
+    htmlHelper.PopulateData(gridParams["currentReport"]);
+    string fileName = "Sample";
+    htmlHelper.ExportPivotGrid(ProductSales.GetSalesData(), args, fileName, System.Web.HttpContext.Current.Response);
+}
 
 ```
 
@@ -278,9 +305,35 @@ Response: None
 
 ### Code example 
 
-```javascript
-
-
+```csharp
+public Dictionary<string, object> SaveReport(Dictionary<string, object> jsonResult)
+{
+    string mode = jsonResult["operationalMode"].ToString();
+    bool isDuplicate = true;
+    SqlCeConnection con = new SqlCeConnection() { ConnectionString = conStringforDB };
+    con.Open();
+    SqlCeCommand cmd1 = null;
+    foreach (DataRow row in GetDataTable().Rows)
+    {
+        if ((row.ItemArray[0] as string).Equals(jsonResult["reportName"].ToString()))
+        {
+            isDuplicate = false;
+            cmd1 = new SqlCeCommand("update ReportsTable set Report=@Reports where ReportName like @ReportName", con);
+        }
+    }
+    if (isDuplicate)
+    {
+        cmd1 = new SqlCeCommand("insert into ReportsTable Values(@ReportName,@Reports)", con);
+    }
+    cmd1.Parameters.Add("@ReportName", jsonResult["reportName"].ToString());
+    if (mode == "serverMode")
+        cmd1.Parameters.Add("@Reports", Syncfusion.JavaScript.Olap.Utils.GetReportStream(jsonResult["clientReports"].ToString()).ToArray());
+    else if (mode == "clientMode")
+        cmd1.Parameters.Add("@Reports", Encoding.UTF8.GetBytes(jsonResult["clientReports"].ToString()).ToArray());
+    cmd1.ExecuteNonQuery();
+    con.Close();
+    return null;
+}
 
 ```
 
@@ -313,8 +366,36 @@ Response: serialized JSON string
 
 ### Code example 
 
-```javascript
-
+```csharp
+public Dictionary<string, object> LoadReportFromDB(Dictionary<string, object> jsonResult)
+{
+    byte[] reportString = new byte[2 * 1024];
+    PivotReport report = new PivotReport();
+    var reports = "";
+    string mode = jsonResult["operationalMode"].ToString();
+    Dictionary<string, object> dictionary = new Dictionary<string, object>();
+    foreach (DataRow row in GetDataTable().Rows)
+    {
+        if ((row.ItemArray[0] as string).Equals(jsonResult["reportName"].ToString()))
+        {
+            if (mode == "clientMode")
+            {
+                reportString = (row.ItemArray[1] as byte[]);
+                dictionary.Add("report", Encoding.UTF8.GetString(reportString));
+                break;
+            }
+            else if (mode == "serverMode")
+            {
+                reports = Syncfusion.JavaScript.Olap.Utils.CompressData(row.ItemArray[1] as byte[]);
+                report = htmlHelper.DeserializedReports(reports);
+                htmlHelper.PivotReport = report;
+                dictionary = htmlHelper.GetJsonData("loadOperation", ProductSales.GetSalesData(), "Load Report", jsonResult["reportName"].ToString());
+                break;
+            }
+        }
+    }
+    return dictionary;
+}
 
 
 ```
@@ -343,9 +424,12 @@ Response: serialized JSON string
 
 ### Code example 
 
-```javascript
-
-
+```csharp
+public Dictionary<string, object> DeferUpdate(Dictionary<string, object> jsonResult)
+{
+    htmlHelper.PopulateData(jsonResult["currentReport"].ToString());
+    return htmlHelper.GetJsonData(jsonResult["action"].ToString(), ProductSales.GetSalesData(), null, null, null, jsonResult["sortedHeaders"].ToString(), jsonResult["filterParams"].ToString());
+}
 
 ```
 
@@ -375,8 +459,11 @@ Response: serialized JSON string
 
 ### Code example 
 
-```javascript
-
-
+```csharp
+public Dictionary<string, object> CellEditing(Dictionary<string, object> jsonResult)
+{
+    htmlHelper.PopulateData(jsonResult["currentReport"].ToString());
+    return htmlHelper.GetJsonData(jsonResult["action"].ToString(), ProductSales.GetSalesData(), jsonResult["index"].ToString(), jsonResult["summaryValues"].ToString(), jsonResult["valueHeaders"].ToString());
+}
 
 ```

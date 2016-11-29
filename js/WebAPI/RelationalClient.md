@@ -30,9 +30,12 @@ Response: serialized JSON string
 
 ### Code example 
 
-```javascript
-
-
+```csharp
+public Dictionary<string, object> Initialize(Dictionary<string, object> jsonResult)
+{
+    this.BindData();
+    return pivotClient.GetJsonData(jsonResult["action"].ToString(), ProductSales.GetSalesData(), null);
+}
 
 ```
 
@@ -61,9 +64,12 @@ Response: serialized JSON string
 
 ### Code example 
 
-```javascript
-
-
+```csharp
+public Dictionary<string, object> FetchMembers(Dictionary<string, object> jsonResult)
+{
+    pivotClient.PopulateData(jsonResult["currentReport"].ToString());
+    return pivotClient.GetJsonData(jsonResult["action"].ToString(), ProductSales.GetSalesData(), jsonResult["headerTag"].ToString());
+}
 
 ```
 
@@ -90,9 +96,16 @@ Response: serialized JSON string
 
 ### Code example 
 
-```javascript
-
-
+```csharp
+public Dictionary<string, object> DrillChart(Dictionary<string, object> jsonResult)
+{
+    pivotClient.PopulateData(jsonResult["currentReport"].ToString());
+    this.pivotChart.PivotEngine.PivotRows = this.pivotClient.PivotReport.PivotRows;
+    this.pivotChart.PivotEngine.PivotColumns = this.pivotClient.PivotReport.PivotColumns;
+    this.pivotChart.PivotEngine.PivotCalculations = this.pivotClient.PivotReport.PivotCalculations;
+    this.pivotChart.PivotEngine.Filters = this.pivotClient.PivotReport.Filters;
+    return pivotChart.GetJsonData(jsonResult["action"].ToString(), ProductSales.GetSalesData(), jsonResult["drilledSeries"].ToString());
+}
 
 ```
 
@@ -121,9 +134,12 @@ Response: serialized JSON string
 
 ### Code example 
 
-```javascript
-
-
+```csharp
+public Dictionary<string, object> Filtering(Dictionary<string, object> jsonResult)
+{
+    pivotClient.PopulateData(jsonResult["currentReport"].ToString());
+    return pivotClient.GetJsonData(jsonResult["action"].ToString(), ProductSales.GetSalesData(), jsonResult["filterParams"].ToString());
+}
 
 ```
 
@@ -150,9 +166,12 @@ Response: serialized JSON string
 
 ### Code example 
 
-```javascript
-
-
+```csharp
+public Dictionary<string, object> DropNode(Dictionary<string, object> jsonResult)
+{
+    Dictionary<string, object> dict = pivotClient.GetJsonData(jsonResult["action"].ToString(), ProductSales.GetSalesData(), jsonResult["args"].ToString());
+    return dict;
+}
 
 ```
 
@@ -179,9 +198,12 @@ Response: serialized JSON string
 
 ### Code example 
 
-```javascript
-
-
+```csharp
+public Dictionary<string, object> ToolbarOperations(Dictionary<string, object> jsonResult)
+{
+    Dictionary<string, object> dict = pivotClient.GetJsonData(jsonResult["action"].ToString(), ProductSales.GetSalesData(), jsonResult["args"].ToString());
+    return dict;
+}
 
 ```
 
@@ -211,9 +233,33 @@ Response: None
 
 ### Code example 
 
-```javascript
-
-
+```csharp
+public Dictionary<string, object> SaveReportToDB(Dictionary<string, object> jsonResult)
+{
+    string operationalMode = jsonResult["operationalMode"].ToString(), analysisMode = jsonResult["analysisMode"].ToString(), reportName = string.Empty;
+    bool isDuplicate = true;
+    SqlCeConnection con = new SqlCeConnection() { ConnectionString = conStringforDB };
+    con.Open();
+    reportName = jsonResult["reportName"].ToString() + "##" + operationalMode.ToLower() + "#>>#" + analysisMode.ToLower();
+    SqlCeCommand cmd1 = null;
+    foreach (DataRow row in GetDataTable().Rows)
+    {
+        if ((row.ItemArray[0] as string).Equals(reportName))
+        {
+            isDuplicate = false;
+            cmd1 = new SqlCeCommand("update ReportsTable set Report=@Reports where ReportName like @ReportName", con);
+        }
+    }
+    if (isDuplicate)
+    {
+        cmd1 = new SqlCeCommand("insert into ReportsTable Values(@ReportName,@Reports)", con);
+    }
+    cmd1.Parameters.Add("@ReportName", reportName);
+    cmd1.Parameters.Add("@Reports", Encoding.UTF8.GetBytes(jsonResult["clientReports"].ToString()).ToArray());
+    cmd1.ExecuteNonQuery();
+    con.Close();
+    return null;
+}
 
 ```
 
@@ -239,9 +285,15 @@ Response: file
 
 ### Code example 
 
-```javascript
-
-
+```csharp
+public void Export()
+{
+    string args = HttpContext.Current.Request.Form.GetValues(0)[0];
+    Dictionary<string, string> gridParams = serializer.Deserialize<Dictionary<string, string>>(args);
+    pivotClient.PopulateData(gridParams["currentReport"]);
+    string fileName = "Sample";
+    pivotClient.ExportPivotClient(ProductSales.GetSalesData(), args, fileName, System.Web.HttpContext.Current.Response);
+}
 
 ```
 
@@ -268,9 +320,23 @@ Response: serialized JSON string
 
 ### Code example 
 
-```javascript
-
-
+```csharp
+public Dictionary<string, object> FetchReportListFromDB(Dictionary<string, object> jsonResult)
+{
+    string reportNames = string.Empty, currentRptName = string.Empty, operationalMode = jsonResult["operationalMode"].ToString(), analysisMode = jsonResult["analysisMode"].ToString();
+    foreach (System.Data.DataRow row in GetDataTable().Rows)
+    {
+        currentRptName = (row.ItemArray[0] as string);
+        if (currentRptName.IndexOf("##" + operationalMode + "#>>#" + analysisMode) >= 0)
+        {
+            currentRptName = currentRptName.Replace("##" + operationalMode + "#>>#" + analysisMode, "");
+            reportNames = reportNames == "" ? currentRptName : reportNames + "__" + currentRptName;
+        }
+    }
+    Dictionary<string, object> dictionary = new Dictionary<string, object>();
+    dictionary.Add("ReportNameList", reportNames);
+    return dictionary;
+}
 
 ```
 
@@ -300,8 +366,28 @@ Response: serialized JSON string
 
 ### Code example 
 
-```javascript
-
-
+```csharp
+public Dictionary<string, object> LoadReportFromDB(Dictionary<string, object> jsonResult)
+{
+    PivotReport report = new PivotReport();
+    string operationalMode = jsonResult["operationalMode"].ToString(), analysisMode = jsonResult["analysisMode"].ToString();
+    Dictionary<string, object> dictionary = new Dictionary<string, object>();
+    string currentRptName = string.Empty;
+    foreach (DataRow row in GetDataTable().Rows)
+    {
+        currentRptName = (row.ItemArray[0] as string).Replace("##" + operationalMode.ToLower() + "#>>#" + analysisMode.ToLower(), "");
+        if (currentRptName.Equals(jsonResult["reportName"].ToString()))
+        {
+            byte[] reportString = new byte[2 * 1024];
+            reportString = (row.ItemArray[1] as byte[]);
+            if (analysisMode.ToLower() == "pivot" && operationalMode.ToLower() == "servermode")
+                dictionary = pivotClient.GetJsonData("LoadReport", ProductSales.GetSalesData(), Encoding.UTF8.GetString(reportString));
+            else
+                dictionary.Add("report", Encoding.UTF8.GetString(reportString));
+            break;
+        }
+    }
+    return dictionary;
+}
 
 ```
