@@ -183,7 +183,7 @@ Go to the less folder present in the custom theme downloaded folder.
 
 Open command prompt and run the below command. 
 
-   ** lessc {source less file name} {output css file name} **
+   ** lessc {source less file name} {output CSS file name} **
     
    ** For example: lessc ej.theme.less output.css **
    
