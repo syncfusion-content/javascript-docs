@@ -15,7 +15,7 @@ documentation: ug
 	
 
 
-Electron (Previously known as Atom Shell) is used create a cross platform desktop application for different OS like Linux, Windows and OS X by using JavaScript and able to access platform sepcific native API's.
+Electron (Previously known as Atom Shell) is used create a cross platform desktop application for different OS like Linux, Windows and OS X by using JavaScript and able to access platform specific native API's.
 
 
 
@@ -67,35 +67,25 @@ To clone and run this repository need[Git](https://git-scm.com/) and [Node.js](h
 
 N> For Mac OS run the command in administrator mode with $sudo as prefix
 
-1. **Clone the Quick Start repository**
+1. Clone the Quick Start repository
 
+        {% highlight bash %}
 
+        $ git clone <a href=https://github.com/electron/electron-quick-start>https://github.com/electron/electron-quick-start</a> 
 
-    {% highlight shell %}
-
-    $ git clone <a href=https://github.com/electron/electron-quick-start>https://github.com/electron/electron-quick-start</a> 
-
-    {% endhighlight %}
-
-
-
-
+        {% endhighlight %}
 
 ![](Electron-Getting-started\steps-to-add-the-sample-and-runthe-application_img1.png)
 
 
 
-2. **Go into the repository**
+2. Go into the repository
 
+        {% highlight bash %}
 
+        $ cd electron-quick-start 
 
-
-
-    {% highlight shell %}
-
-    $ cd electron-quick-start 
-
-    {% endhighlight %}
+        {% endhighlight %}
 
 
 
@@ -103,15 +93,13 @@ N> For Mac OS run the command in administrator mode with $sudo as prefix
 
 
 
-3. **Install the dependencies**
+3. Install the dependencies
 
+        {% highlight bash %}
 
+        $ npm install 
 
-    {% highlight shell %}
-
-    $ npm install 
-
-    {% endhighlight %}
+        {% endhighlight %}
 
 
 
@@ -177,11 +165,11 @@ Initialize Accordion in the script.
 Step4:
 
 
-Run the Electron Application using the below command line.
+Run the Electron Application using the below command.
 
 
 
-{% highlight shell %}
+{% highlight bash %}
 
 $ npm start 
 
@@ -218,7 +206,7 @@ Use the below CLI to create Electron package for windows.
  1. Install Electron packager
 
 
-    {% highlight shell %}
+    {% highlight bash %}
 
     $ npm install electron-packager –g
 
@@ -228,7 +216,7 @@ Use the below CLI to create Electron package for windows.
 2. Package the application
 
 
-    {% highlight shell %}
+    {% highlight bash %}
 
     $ electron-packager ./ JS_Electron --platform=win32 --arch=ia32 ./JS_Electron
 
@@ -248,7 +236,7 @@ Use the below CLI to create Electron package for windows.
 1. Install Electron packager
 
 
-    {% highlight shell %}
+    {% highlight bash %}
 
     $ npm install electron-packager –g
 
@@ -260,7 +248,7 @@ Use the below CLI to create Electron package for windows.
 2. Package the application
 
 
-    {% highlight shell %}
+    {% highlight bash %}
 
     $ electron-packager ./ JS_Electron --platform=win32 --arch=ia32 ./JS_Electron
 
@@ -281,7 +269,7 @@ Use the below CLI to create Electron package in Mac OS(OS X).
 
 1. Install npm
 
-    {% highlight shell %}
+    {% highlight bash %}
 
     sudo npm install
 
@@ -291,7 +279,7 @@ Use the below CLI to create Electron package in Mac OS(OS X).
 
 2. Install electron packager
 
-    {% highlight shell %}
+    {% highlight bash %}
 
     sudo npm install electron-packager -g
 
@@ -300,7 +288,7 @@ Use the below CLI to create Electron package in Mac OS(OS X).
 
 3. Package the application
 
-    {% highlight shell %}
+    {% highlight bash %}
 
     sudo electron-packager ./ JS_Electron --platform=darwin ./JS_Electron
 

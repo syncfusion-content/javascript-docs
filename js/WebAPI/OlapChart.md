@@ -17,26 +17,26 @@ It fetches the OLAP data required to initialize the PivotChart from server-end.
 
 |  Parameter |  Description | 
 |---|---|
-|action|It holds the current action name as string.|
-|customObject|It contains the custom object passed from client side.|
+|action|It holds the current action name as string|
+|customObject|It contains the custom object passed from client side|
 
 ### Response information 
 
-Code: 
+Code: 200
 
 Content-Type: application/json;
 
-Response(JSON):
-
-```javascript
-
-
-```
+Response: serialized JSON string
 
 ### Code example 
 
-```javascript
-
+```csharp
+public Dictionary<string, object> Initialize(Dictionary<string, object> jsonResult)
+{
+    OlapDataManager DataManager = new OlapDataManager(connectionString);
+    DataManager.SetCurrentReport(CreateOlapReport());
+    return htmlHelper.GetJsonData(jsonResult["action"].ToString(), DataManager);
+}
 
 ```
 
@@ -50,28 +50,28 @@ It fetches the drilled OLAP data required to render the PivotChart control from 
 
 |  Parameter |  Description | 
 |---|---|
-|action|It holds the current action name as string.|
-|drilledSeries|It contains the name of the drilled member.|
-|olapReport|It contains the current report as compressed string.|
-|customObject|It contains the custom object passed from client side.|
+|action|It holds the current action name as string|
+|drilledSeries|It contains the name of the drilled member|
+|olapReport|It contains the current report as compressed string|
+|customObject|It contains the custom object passed from client side|
 
 ### Response information 
 
-Code: 
+Code: 200
 
 Content-Type: application/json;
 
-Response(JSON):
-
-```javascript
-
-
-```
+Response: serialized JSON string
 
 ### Code example 
 
-```javascript
-
+```csharp
+public Dictionary<string, object> Drill(Dictionary<string, object> jsonResult)
+{
+    OlapDataManager DataManager = new OlapDataManager(connectionString);
+    DataManager.SetCurrentReport(Syncfusion.JavaScript.Olap.Utils.DeserializeOlapReport(jsonResult["olapReport"].ToString()));
+    return htmlHelper.GetJsonData(jsonResult["action"].ToString(), DataManager, jsonResult["drilledSeries"].ToString());
+}
 
 ```
 
@@ -85,28 +85,24 @@ It exports the PivotChart control at the instant to the specified format.
 
 |  Parameter |  Description | 
 |---|---|
-|chartData |It contains the information required to export the control.|
+|chartData |It contains the information required to export the control|
 
 ### Response information 
 
 Code: 200
 
-Content-Type: application/octet-stream	
+Content-Type: application/json	
+
+Response: file
 
 ### Code example 
 
-```javascript
-
-
-```
-
 ```csharp
-
 public void Export()
 {
-	string args = HttpContext.Current.Request.Form.GetValues(0)[0];
-	string fileName = "Sample";
-	htmlHelper.ExportPivotChart(args, fileName, System.Web.HttpContext.Current.Response);
+    string args = HttpContext.Current.Request.Form.GetValues(0)[0];
+    string fileName = "Sample";
+    htmlHelper.ExportPivotChart(args, fileName, System.Web.HttpContext.Current.Response);
 }
 
 ```
@@ -120,28 +116,25 @@ It exports the PivotChart control at the instant to an Excel document.
 
 |  Parameter |  Description | 
 |---|---|
-|chartData |It contains the information required to export the control to an excel sheet.|
+|chartData |It contains the information required to export the control to an Excel sheet|
 
 ### Response information 
 
 Code: 200
 
-Content-Type: application/octet-stream
+Content-Type: application/json
+
+Response: Excel document
 
 ### Code example 
 
-```javascript
-
-
-```
 ```csharp
-
 public void ExcelExport()
 {
-	PivotChartExcelExport pivotChartExcelExport = new PivotChartExcelExport();
-	string args = HttpContext.Current.Request.Form.GetValues(0)[0];
-	Dictionary<string, string> chartParams = serializer.Deserialize<Dictionary<string, string>>(args);
-	pivotChartExcelExport.ExportToExcel(chartParams);
+    PivotChartExcelExport pivotChartExcelExport = new PivotChartExcelExport();
+    string args = HttpContext.Current.Request.Form.GetValues(0)[0];
+    Dictionary<string, string> chartParams = serializer.Deserialize<Dictionary<string, string>>(args);
+    pivotChartExcelExport.ExportToExcel(chartParams);
 }
 
 ```
@@ -149,34 +142,31 @@ public void ExcelExport()
 
 [POST&nbsp;&nbsp;/Api/OlapChart/WordExport](http://js.syncfusion.com/demos/ejServices/api/OlapChart/WordExport)
 
-It exports the PivotChart control at the instant to an Word document.
+It exports the PivotChart control at the instant to a Word document.
 
 ### URL parameters
 
 |  Parameter |  Description | 
 |---|---|
-|chartData |It contains the information required to export the control to Word document.|
+|chartData |It contains the information required to export the control to a Word document|
 
 ### Response information 
 
 Code: 200
 
-Content-Type: application/octet-stream
+Content-Type: application/json
+
+Response: Word document
 
 ### Code example 
 
-```javascript
-
-
-```
 ```csharp
-
 public void WordExport()
 {
-	PivotChartWordExport pivotChartWordExport = new PivotChartWordExport();
-	string args = HttpContext.Current.Request.Form.GetValues(0)[0];
-	Dictionary<string, string> chartParams = serializer.Deserialize<Dictionary<string, string>>(args);
-	pivotChartWordExport.ExportToWord(chartParams);
+    PivotChartWordExport pivotChartWordExport = new PivotChartWordExport();
+    string args = HttpContext.Current.Request.Form.GetValues(0)[0];
+    Dictionary<string, string> chartParams = serializer.Deserialize<Dictionary<string, string>>(args);
+    pivotChartWordExport.ExportToWord(chartParams);
 }
 
 ```
@@ -184,34 +174,31 @@ public void WordExport()
 
 [POST&nbsp;&nbsp;/Api/OlapChart/PdfExport](http://js.syncfusion.com/demos/ejServices/api/OlapChart/PdfExport)
 
-It exports the PivotChart control at the instant to an PDF document.
+It exports the PivotChart control at the instant to a PDF document.
 
 ### URL parameters
 
 |  Parameter |  Description | 
 |---|---|
-|chartData |It contains the information required to export the control to PDF document.|
+|chartData |It contains the information required to export the control to a PDF document|
 
 ### Response information 
 
 Code: 200
 
-Content-Type: application/octet-stream
+Content-Type: application/json
+
+Response: PDF document
 
 ### Code example 
 
-```javascript
-
-
-```
 ```csharp
-
 public void PdfExport()
 {
-	PivotChartPDFExport pivotChartPDFExport = new PivotChartPDFExport();
-	string args = HttpContext.Current.Request.Form.GetValues(0)[0];
-	Dictionary<string, string> chartParams = serializer.Deserialize<Dictionary<string, string>>(args);
-	pivotChartPDFExport.ExportToPDF(chartParams);
+    PivotChartPDFExport pivotChartPDFExport = new PivotChartPDFExport();
+    string args = HttpContext.Current.Request.Form.GetValues(0)[0];
+    Dictionary<string, string> chartParams = serializer.Deserialize<Dictionary<string, string>>(args);
+    pivotChartPDFExport.ExportToPDF(chartParams);
 }
 
 ```
@@ -225,28 +212,25 @@ It exports the PivotChart control at the instant as an Image in specified format
 
 |  Parameter |  Description | 
 |---|---|
-|chartData |It contains the information required to export the control to an image file.|
+|chartData |It contains the information required to export the control to an image file|
 
 ### Response information 
 
 Code: 200
 
-Content-Type: application/octet-stream
+Content-Type: application/json
+
+Response: Image file
 
 ### Code example 
 
-```javascript
-
-
-```
 ```csharp
-
 public void ImageExport()
 {
-	PivotChartImageExport pivotChartImageExport = new PivotChartImageExport();
-	string args = HttpContext.Current.Request.Form.GetValues(0)[0];
-	Dictionary<string, string> chartParams = serializer.Deserialize<Dictionary<string, string>>(args);
-	pivotChartImageExport.ExportToImage(chartParams);
-}  
+    PivotChartImageExport pivotChartImageExport = new PivotChartImageExport();
+    string args = HttpContext.Current.Request.Form.GetValues(0)[0];
+    Dictionary<string, string> chartParams = serializer.Deserialize<Dictionary<string, string>>(args);
+    pivotChartImageExport.ExportToImage(chartParams);
+}
 
 ```

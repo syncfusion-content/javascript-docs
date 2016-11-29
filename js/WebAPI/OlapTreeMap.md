@@ -23,21 +23,21 @@ It fetches the OLAP data required to render the PivotTreeMap control from server
 
 ### Response information 
 
-Code: 
+Code: 200
 
 Content-Type: application/json;
 
-Response(JSON):
-
-```javascript
-
-
-```
+Response: serialized JSON string
 
 ### Code example 
 
-```javascript
-
+```csharp
+public Dictionary<string, object> Initialize(Dictionary<string, object> jsonResult)
+{
+    OlapDataManager DataManager = new OlapDataManager(connectionString);
+    DataManager.SetCurrentReport(CreateOlapReport());
+    return htmlHelper.GetJsonData(jsonResult["action"].ToString(), DataManager);
+}
 
 ```
 
@@ -51,27 +51,27 @@ It fetches the OLAP data required to render the drilled PivotTreeMap.
 
 |  Parameter |  Description | 
 |---|---|
-|action|It holds the current action name as string.|
-|drillInfo|It contains the information about the drilled member.|
-|olapReport|It contains the current report as compressed string.|
-|customObject|It contains the custom object passed from client side.|
+|action|It holds the current action name as string|
+|drillInfo|It contains the information about the drilled member|
+|olapReport|It contains the current report as serialized string|
+|customObject|It contains the custom object passed from client side|
 
 ### Response information 
 
-Code: 
+Code: 200
 
 Content-Type: application/json;
 
-Response(JSON):
-
-```javascript
-
-
-```
+Response: serialized JSON string
 
 ### Code example 
 
-```javascript
-
+```csharp
+public Dictionary<string, object> Drill(Dictionary<string, object> jsonResult)
+{
+    OlapDataManager DataManager = new OlapDataManager(connectionString);
+    DataManager.SetCurrentReport(Syncfusion.JavaScript.Olap.Utils.DeserializeOlapReport(jsonResult["olapReport"].ToString()));
+    return htmlHelper.GetJsonData(jsonResult["action"].ToString(), DataManager, jsonResult["drillInfo"].ToString());
+}
 
 ```

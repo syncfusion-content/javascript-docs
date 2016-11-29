@@ -17,25 +17,25 @@ It fetches the OLAP data required to render the PivotGauge control from server-e
 
 |  Parameter |  Description | 
 |---|---|
-|action|It holds the current action name as string.|
-|customObject|It contains the custom object passed from client side.|
+|action|It holds the current action name as string|
+|customObject|It contains the custom object passed from client side|
 
 ### Response information 
 
-Code: 
+Code: 200
 
 Content-Type: application/json;
 
-Response(JSON):
-
-```javascript
-
-
-```
+Response: serialized JSON string
 
 ### Code example 
 
-```javascript
-
+```csharp
+public Dictionary<string, object> Initialize(Dictionary<string, object> jsonResult)
+{
+    OlapDataManager DataManager = new OlapDataManager(connectionString);
+    DataManager.SetCurrentReport(CreateOlapReport());
+    return htmlHelper.GetJsonData(jsonResult["action"].ToString(), DataManager);
+}
 
 ```
