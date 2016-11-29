@@ -63,7 +63,6 @@ The details of WebAPI has been shown in the below table.
 ### Grid
 |  WebAPI | Description  |
 |---|---|
-|[Northwind Data Service](WebAPI\Grid#NorthwindDataService)|It is used to retrieve the records from “Orders” table in Remote Data Service.|
 |[PdfExport](WebAPI\Grid#PdfExport)|It is used to export the Grid data in PDF.|  
 |[ExcelExport](WebAPI\Grid#ExcelExport)|It is used to export the Grid data in Excel.|
 |[WordExport](WebAPI\Grid#WordExport)|It is used to export the Grid data in Word.|  
