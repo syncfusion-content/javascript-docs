@@ -764,80 +764,108 @@ All the CRUD operations in Kanban are done through DataManager. DataManager have
 
 ### URL Adaptor
 
-You can use the `UrlAdaptor` of [`ejDataManger`](https://help.syncfusion.com/api/js/ejdatamanager) when binding `dataSource` from remote data. At initial load of Kanban, using URL property of DataManager, data are fetched from remote data and bound to Kanban. You can map CRUD operation in Kanban to Server-Side Controller action using the properties `insertUrl`, `removeUrl`, `updateUrl` and `crudUrl`.
+You can use the `UrlAdaptor` of [`ejDataManger`](https://help.syncfusion.com/api/js/ejdatamanager) when binding `dataSource` from remote data. At initial load of Kanban, using `url` property of DataManager, data are fetched from remote data and bound to Kanban. You can map CRUD operation in Kanban to Server-Side Controller action using the property `crudUrl`.
 
 The following code example describes the above behavior.
 
 {% highlight html %}
 
     <div id='Kanban'></div>
+    
+    <script id="Delete" type="text/x-jsrender">
+        <a class="e-customdelete  e-icon" />
+    </script>
+    <style type="text/css" class="cssStyles">
+        .e-customdelete:before {
+            content: "\e800";
+            line-height: 26px;
+            min-height: 26px;
+            min-width: 14px;
+            display: inline-block;
+        }
+    </style>
 
 {% endhighlight %}
 
 {% highlight javascript %}
 
-    $(function () {
-    
-        $("#Kanban").ejKanban(
+   <script type="text/javascript">
+        $(function () {
+          var dataManager = ej.DataManager({
+              url: "Kanban/GetData",
+              crudUrl: "Kanban/Crud",
+              adaptor: "UrlAdaptor"
+          });
+          $("#Kanban").ejKanban(
             {
-                dataSource: ej.DataManager({
-                    url: "Home/DataSource",
-                    updateUrl: "Home/Update",
-                    insertUrl: "Home/Insert",
-                    removeUrl: "Home/Remove",
-                    adaptor: "UrlAdaptor"
-                }),
+                dataSource: dataManager,
                 columns: [
-                    { headerText: "Backlog", key: "Open" },
+                    { headerText: "Backlog", key: "Open", showAddButton: true },
                     { headerText: "In Progress", key: "InProgress" },
                     { headerText: "Done", key: "Close" }
                 ],
                 keyField: "Status",
+                customToolbarItems: [
+                 {
+                     template: "#Delete"
+                 }
+                ],
+                fields: {
+                    content: "Summary",
+                    primaryKey: "Id",
+                    priority:"RankId"
+                },
+                toolbarClick: function (args) {
+                    if (args.itemName == "Delete" && this.element.find(".e-kanbancard").hasClass("e-cardselection")) {
+                        var selectedcard = this.element.find(".e-cardselection");
+                        this.KanbanEdit.deleteCard(selectedcard.attr("id"));
+                    }
+
+                },
                 editSettings: {
                     editItems: [
                         { field: "Id" },
                         { field: "Status" },
+                        { field: "Assignee"},
                         { field: "Estimate"},
                         { field: "Summary"}
                     ],
                     allowEditing: true,
                     allowAdding: true
                 },
-                fields: {
-                    primaryKey: "Id",
-                    content: "Summary"
-                }
-            });
+            }
+        );
     });
+    </script>
 
 {% endhighlight %}
 
-Also when you use `UrlAdaptor`, you need to return the data as JSON and the JSON object must contain a properties result & count. The`result` holds the `dataSource` as its value and `count` holds the total cards count as its value.
+Also when you use `UrlAdaptor`, you need to return the data as JSON and the JSON object must contain a properties result & count. The `result` holds the `dataSource` as its value and `count` holds the total cards count as its value.
 
 The following code example describes the above behavior.
 
 {% highlight c# %}
-
-    public ActionResult DataSource(DataManager dm)
-            {
-                IEnumerable DataSource = OrderRepository.GetAllRecords();
-                DataResult result = new DataResult();
-                DataOperations operation = new DataOperations();
-                result1.result = DataSource;
-                result1.count = DataSource.AsQueryable().Count();
-                if (dm.Take > 0)
-                    result1.result = operation.PerformTake(result1.result, dm.Take);
-                if (dm.Select != null)
-                    return Json(result1.result, JsonRequestBehavior.AllowGet);
-                return Json(result1, JsonRequestBehavior.AllowGet);       
-            }
-            public class DataResult
-            {
-                public IEnumerable result { get; set; }
-                public int count { get; set; }
-            }
-
-{% endhighlight %} 
+     
+    public ActionResult GetData(Syncfusion.JavaScript.DataManager value)
+        {
+           var DataSource = db.Tasks.ToList();
+           DataResult result1 = new DataResult();
+           DataOperations operation = new DataOperations();
+           result1.result = DataSource;
+           result1.count = DataSource.AsQueryable().Count();
+           if (value.Skip > 0)
+               result1.result = operation.PerformSkip(result1.result, value.Skip);
+           if (value.Take > 0)
+               result1.result = operation.PerformTake(result1.result, value.Take);
+           return Json(result1, JsonRequestBehavior.AllowGet);
+       }
+     public class DataResult
+      {
+        public IEnumerable result { get; set; }
+        public int count { get; set; }
+    }
+         
+{% endhighlight  %}
 
 Please refer to the below screenshot.
 
@@ -851,185 +879,120 @@ Using `DataOperations` helper class you can perform Kanban action at server side
 
 ### Accessing CRUD action request details in server side
 
-The `Server-Side` function must be declared with the following parameter name for each editing functionality.
+The Server-Side function must be declared with the following parameter name for each editing functionality.
 
 #### Parameters Table
 
 <table>
 <tr>
-<th>
-Action</th><th>
-Parameter Name</th><th>
-Example</th></tr>
-<tr>
-<td>
-Update, Insert</td><td>value</td>
-<td>
-public ActionResult Insert(TaskList value){ }, 
-
-public ActionResult Update(TaskList value){ } 
-</td>
+<th>Action</th>
+<th>Parameter Name</th>
+<th>Example</th>
 </tr>
 <tr>
 <td>
-Remove</td><td>key</td>
-<td>
-public ActionResult Remove(int key){ } 
+Update, Insert, Remove, Bulk Update, Bulk Insert
 </td>
-</tr>
-<tr>
 <td>
-Crud Update, Crud Remove, Crud Insert </td><td>value, action </td>
+Changed values,
+Added values,
+Deleted value
+</td>
 <td>
-public ActionResult CrudUrl(TaskList value, string action){ } 
+public ActionResult Crud(List<Task> `changed`, List<Task> `added`, List<Task> `deleted`)
 </td>
 </tr>
 </table>
 
 ### Insert Card
 
-Using `insertUrl` property, you can specify the controller action mapping URL to perform `insert` operation at server side.
+Using `crudUrl` property, you can specify the controller action mapping URL to perform `insert` operation at server side.
 
 The following code example describes the above behavior.
 
-{% highlight javascript %}
+{% highlight c# %}
 
-    public ActionResult Insert(TaskList value)
-    {
-        //Insert card in database
-    }
+    public ActionResult Crud(List<Task> changed, List<Task> `added`, List<Task> deleted)
+        {
+            // Insert card in the database.
+            if (added != null && added.Count() > 0)
+            {
+                foreach (var temp in added)
+                {
+                    db.Tasks.Add(temp);
+                }
+            }
+            db.SaveChanges();
+            var data = db.Tasks.ToList();
+            return Json(data, JsonRequestBehavior.AllowGet);
+        }
 
 {% endhighlight %}
 
-The newly added card details are bound to the `value` parameter. Please refer the below image.
+The newly added card details are bound to the `added` parameter. Please refer the below image.
 
 ![](Editing_images/editing_img7.png)
 
 ### Update Card
 
-Using `updateUrl` property, you can specify the controller action mapping URL to perform `save/update` operation at server side.
+Using `crudUrl` property, you can specify the controller action mapping URL to perform `save/update` operation at server side. 
 
 The following code example describes the above behavior.
 
-{% highlight javascript %}
+{% highlight  c# %}
 
-    public ActionResult Update(TaskList value)
-    {
-        //Update card in database
-    }
+        public ActionResult Crud(List<Task> `changed`, List<Task> added, List<Task> deleted)
+        {
+            //Update card in the database.
+            if (changed != null && changed.Count() > 0)
+            {
+                foreach (var temp in changed)
+                {
+                    Task old = db.Tasks.Where(o => o.Id == temp.Id).SingleOrDefault();
+                    if (old != null)
+                    {
+                        db.Entry(old).CurrentValues.SetValues(temp);
+                    }
+                }
+            }
+            
+            db.SaveChanges();
+            var data = db.Tasks.ToList();
+            return Json(data, JsonRequestBehavior.AllowGet);
+        }
 
 {% endhighlight %}
 
-The updated card details are bound to the `value` parameter. Please refer the below image.
+The updated card details are bound to the `changed` parameter. Please refer the below image.
 
 ![](Editing_images/editing_img8.png)
 
 ### Delete Card
 
-Using `removeUrl` property, you can specify the controller action mapping URL to perform `delete` operation at server side.
+Using `crudUrl` property, you can specify the controller action mapping URL to perform `delete` operation at server side.
 
 The following code example describes the above behavior.
-
-{% highlight javascript %}
-
-    public ActionResult Remove(int key)
-            {
-                //Delete record in database
-            }
-
-{% endhighlight %}
-
-The deleted card primary key value is bound to the `key` parameter. Please refer the below image.
-
-![](Editing_images/editing_img9.png)
-
-### CRUD URL
-
-Instead of specifying separate controller action method for CRUD (insert, update and delete) operation, using `crudUrl` property you can specify the controller action mapping URL to perform all the CRUD operation at server side using single method.
-
-The action parameter of `crudUrl` is used to get the corresponding CRUD action.
-
-The following code example describes the above behavior.
-
-{% highlight html %}
-
-    <div id='Kanban'></div>
-
-{% endhighlight %}
-
-{% highlight javascript %}
-
-    $(function () {
-    
-    $("#Kanban").ejKanban(
-            {
-                dataSource: ej.DataManager({
-                    url: "Home/DataSource",
-                    crudUrl: "Home/CrudUpdate",
-                    adaptor: "UrlAdaptor"
-                }),
-                columns: [
-                    { headerText: "Backlog", key: "Open" },
-                    { headerText: "In Progress", key: "InProgress" },
-                    { headerText: "Done", key: "Close" }
-                ],
-                keyField: "Status",
-                editSettings: {
-                    editItems: [
-                        { field: "Id" },
-                        { field: "Status" },
-                        { field: "Estimate"},
-                        { field: "Summary" }
-                    ],
-                    allowEditing: true,
-                    allowAdding: true
-                },
-                fields: {
-                    primaryKey: "Id",
-                    content: "Summary"
-                }
-            });
-    });  
-
-{% endhighlight %}
 
 {% highlight c# %}
 
-    public ActionResult CrudUpdate(TaskList value, string action,int key)
+    public ActionResult Crud(List<Task> changed, List<Task> added, List<Task> deleted)
+        {
+            //Delete card in the database.
+            if (deleted != null && deleted.Count() > 0)
             {
-                if (action == "update")
+                foreach (var temp in deleted)
                 {
-                    //Update record in database
-                    OrderRepository.Update(value); 
-                    var data = OrderRepository.GetAllRecords(); 
-                    return Json(data, JsonRequestBehavior.AllowGet);
-                }
-                if (action == "insert")
-                {
-                    //Insert record in database
-                    OrderRepository.Add(value); 
-                    var data = OrderRepository.GetAllRecords(); 
-                    return Json(data, JsonRequestBehavior.AllowGet);
-                }
-
-                if (action == "remove")
-                {
-                    //Delete record in database
-                    OrderRepository.Delete(key);
-                    var data = OrderRepository.GetAllRecords();
-                    return Json(data, JsonRequestBehavior.AllowGet);
-                }
-                else
-                {
-                    var data = OrderRepository.GetAllRecords(); 
-                    return Json(data, JsonRequestBehavior.AllowGet);
+                    db.Tasks.Remove(db.Tasks.Where(o => o.Id == temp.Id).SingleOrDefault());
                 }
             }
 
-{% endhighlight %} 
+            db.SaveChanges();
+            var data = db.Tasks.ToList();
+            return Json(data, JsonRequestBehavior.AllowGet);
+        }
 
-Please refer the below image to know about the action parameter
+{% endhighlight %}
 
-![](Editing_images/editing_img10.png)
+The deleted card details are bound to the `deleted` parameter. Please refer the below image.
 
-N> If you specify `insertUrl` along with `crudUrl` then while adding `insertUrl` only called
+![](Editing_images/editing_img9.png)
