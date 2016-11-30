@@ -9,7 +9,7 @@ keywords: fileexplorer, ejfileexplorer, syncfusion, fileexplorer webapi
 
 ## FileOperations
 
-[POST&nbsp;&nbsp;/Api/FileExplorer/FileOperations](http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations)
+[POST/Api/FileExplorer/FileOperations](http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations)
 
 It helps to handle the FileExplorer operations like Read, Upload, Download, GetDetails, Rename, Remove etc.
 
@@ -44,7 +44,7 @@ Content-Type: application/json;odata=verbose;charset=utf-8
 
 Response (JSON):   
 
-```javascript
+~~~ javascript
 {
     "cwd":{
         "name":"FileBrowser",
@@ -82,12 +82,12 @@ Response (JSON):
     "error":null
 }
 
-```
+~~~ 
 
 
 ### Code example 
 
-```javascript
+~~~ javascript
 
 URL: http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations   
 
@@ -115,11 +115,11 @@ $.ajax({
     dataType: "json"
 })
 
-```
+~~~ 
 
 ## FileOperationsCors
 
-[GET&nbsp;&nbsp;/Api/FileExplorer/FileOperationsCors](http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperationsCors)
+[GET/Api/FileExplorer/FileOperationsCors](http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperationsCors)
 
 It helps to handle the FileExplorer operations in cross origin.
 
@@ -140,7 +140,7 @@ Content-Type: application/json;odata=verbose;charset=utf-8
 
 Response (JSON):   
 
-```javascript
+~~~ javascript
 
 {
     "cwd":{
@@ -179,11 +179,11 @@ Response (JSON):
     "error":null
 }
 
-```
+~~~ 
 
 ### Code example 
 
-```javascript
+~~~ javascript
 
 URL: http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperationsCors    
 
@@ -214,4 +214,4 @@ $.ajax({
     jsonpCallback: "MyCallbackFunction"
 })
 
-```
+~~~ 

@@ -9,7 +9,7 @@ keywords: PivotChart , syncfusion, PivotChart wcf
 
 ## Initialize
 
-[POST&nbsp;&nbsp;/WCF/PivotChart/Initialize](http://js.syncfusion.com/demos/ejServices/wcf/PivotChart/Olap.svc)
+[POST/WCF/PivotChart/Initialize](http://js.syncfusion.com/demos/ejServices/wcf/PivotChart/Olap.svc)
 
 It fetches the OLAP data which is required to initialize the PivotChart from server-end.
 
@@ -30,12 +30,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-```csharp
-
-JavaScriptSerializer serializer = new JavaScriptSerializer();
-PivotChart htmlHelper = new PivotChart();
-int cultureIDInfovalval = 1033;
-string connectionString = ConfigurationManager.ConnectionStrings["Adventure Works"].ConnectionString + "locale identifier=1033;";
+~~~ csharp
 
 public Dictionary<string, object> Initialize(string action, string customObject)
 {
@@ -54,11 +49,11 @@ public Dictionary<string, object> Initialize(string action, string customObject)
     return htmlHelper.GetJsonData(action, DataManager);
 }
 
-```
+~~~ 
 
 ## Drill
 
-[POST&nbsp;&nbsp;/WCF/PivotChart/Drill](http://js.syncfusion.com/demos/ejServices/wcf/PivotChart/Olap.svc)
+[POST/WCF/PivotChart/Drill](http://js.syncfusion.com/demos/ejServices/wcf/PivotChart/Olap.svc)
 
 It fetches the drilled OLAP data which is required to render the PivotChart control from server-end.
 
@@ -81,12 +76,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-```csharp
-
-JavaScriptSerializer serializer = new JavaScriptSerializer();
-PivotChart htmlHelper = new PivotChart();
-int cultureIDInfovalval = 1033;
-string connectionString = ConfigurationManager.ConnectionStrings["Adventure Works"].ConnectionString + "locale identifier=1033;";
+~~~ csharp
 
 public Dictionary<string, object> Drill(string action, string drilledSeries, string olapReport, string customObject)
 {
@@ -106,11 +96,11 @@ public Dictionary<string, object> Drill(string action, string drilledSeries, str
     return htmlHelper.GetJsonData(action, DataManager, drilledSeries);
 }
 
-```
+~~~ 
 
 ## Export
 
-[POST&nbsp;&nbsp;/WCF/PivotChart/Export](http://js.syncfusion.com/demos/ejServices/wcf/PivotChart/Olap.svc)
+[POST/WCF/PivotChart/Export](http://js.syncfusion.com/demos/ejServices/wcf/PivotChart/Olap.svc)
 
 It exports the PivotChart control at the instant to the specified format.
 
@@ -130,10 +120,7 @@ Response: file
 
 ### Code example 
 
-```csharp
-
-PivotChart htmlHelper = new PivotChart();
-string connectionString = ConfigurationManager.ConnectionStrings["Adventure Works"].ConnectionString + "locale identifier=1033;";
+~~~ csharp
 
 public void Export(Stream stream)
 {
@@ -144,4 +131,4 @@ public void Export(Stream stream)
     htmlHelper.ExportPivotChart(args, fileName, System.Web.HttpContext.Current.Response);
 }
 
-```
+~~~ 

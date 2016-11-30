@@ -9,7 +9,7 @@ keywords: PivotClient, syncfusion, PivotClient WCF
 
 ## Initialize
 
-[POST&nbsp;&nbsp;/WCF/PivotClient/Initialize](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc)
+[POST/WCF/PivotClient/Initialize](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc)
 
 It fetches the data required to render the PivotClient control initially.
 
@@ -31,7 +31,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-```csharp
+~~~ csharp
 
 public Dictionary<string, object> Initialize(string action, string customObject, string clientParams)
 {
@@ -50,11 +50,11 @@ public Dictionary<string, object> Initialize(string action, string customObject,
     return olapClientHelper.GetJsonData(action, DataManager, clientParams);
 }
 
-```
+~~~ 
 
 ## InitializeGrid
 
-[POST&nbsp;&nbsp;/WCF/PivotClient/InitializeGrid](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc)
+[POST/WCF/PivotClient/InitializeGrid](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc)
 
 It fetches the data required to render the PivotGrid control inside PivotClient.
 
@@ -77,7 +77,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-```csharp
+~~~ csharp
 
 public Dictionary<string, object> InitializeGrid(string action, string currentReport, string gridLayout, string customObject)
 {
@@ -91,11 +91,11 @@ public Dictionary<string, object> InitializeGrid(string action, string currentRe
     return olapClientHelper.GetJsonData(action, DataManager, gridLayout);
 }
 
-```
+~~~ 
 
 ## InitializeChart
 
-[POST&nbsp;&nbsp;/WCF/PivotClient/InitializeChart](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc)
+[POST/WCF/PivotClient/InitializeChart](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc)
 
 It fetches the data required to render the PivotChart control inside PivotClient.
 
@@ -117,7 +117,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-```csharp
+~~~ csharp
 
 public Dictionary<string, object> InitializeChart(string action, string currentReport, string customObject)
 {
@@ -126,11 +126,11 @@ public Dictionary<string, object> InitializeChart(string action, string currentR
     return chartHelper.GetJsonData(action, DataManager);
 }
 
-```
+~~~ 
 
 ## InitializeTreeMap
 
-[POST&nbsp;&nbsp;/WCF/PivotClient/InitializeTreeMap](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc)
+[POST/WCF/PivotClient/InitializeTreeMap](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc)
 
 It fetches the data required to render the PivotTreeMap control inside PivotClient.
 
@@ -153,7 +153,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-```csharp
+~~~ csharp
 
 public Dictionary<string, object> InitializeTreeMap(string action, string currentReport, string customObject)
 {
@@ -162,12 +162,12 @@ public Dictionary<string, object> InitializeTreeMap(string action, string curren
     return treemapHelper.GetJsonData(action, DataManager);
 }
 
-```
+~~~ 
 
 
 ## DrillChart
 
-[POST&nbsp;&nbsp;/WCF/PivotClient/DrillChart](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc)
+[POST/WCF/PivotClient/DrillChart](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc)
 
 It fetches the drilled data required to render the PivotChart on drilling.
 
@@ -191,7 +191,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-```csharp
+~~~ csharp
 
 public Dictionary<string, object> DrillChart(string action, string drilledSeries, string olapReport, string clientReports)
 {
@@ -201,11 +201,11 @@ public Dictionary<string, object> DrillChart(string action, string drilledSeries
     return chartHelper.GetJsonData(action, DataManager, drilledSeries);
 }
 
-```
+~~~ 
 
 ## DrillTreeMap
 
-[POST&nbsp;&nbsp;/WCF/PivotClient/DrillTreeMap](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc)
+[POST/WCF/PivotClient/DrillTreeMap](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc)
 
 It fetches the drilled data required to render the PivotTreeMap on drilling.
 
@@ -228,7 +228,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-```csharp
+~~~ csharp
 
 public Dictionary<string, object> DrillTreeMap(string action, string drillInfo, string olapReport, string clientReports)
 {
@@ -238,11 +238,11 @@ public Dictionary<string, object> DrillTreeMap(string action, string drillInfo, 
     return treemapHelper.GetJsonData(action, DataManager, drillInfo);
 }
 
-```
+~~~ 
 
 ## DrillGrid
 
-[POST&nbsp;&nbsp;/WCF/PivotClient/DrillGrid](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc)
+[POST/WCF/PivotClient/DrillGrid](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc)
 
 It fetches the drilled data required to render the PivotGrid on drilling.
 
@@ -267,7 +267,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-```csharp
+~~~ csharp
 
 public Dictionary<string, object> DrillGrid(string action, string cellPosition, string currentReport, string clientReports, string headerInfo, string layout)
 {
@@ -282,11 +282,11 @@ public Dictionary<string, object> DrillGrid(string action, string cellPosition, 
     return olapClientHelper.GetJsonData(action, DataManager, cellPosition, headerInfo, layout);
 }
 
-```
+~~~ 
 
 ## FilterElement
 
-[POST&nbsp;&nbsp;/WCF/PivotClient/FilterElement](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc)
+[POST/WCF/PivotClient/FilterElement](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc)
 
 It fetches the filtered data required to render the control after performing filtering.
 
@@ -309,7 +309,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-```csharp
+~~~ csharp
 
 public Dictionary<string, object> FilterElement(string action, string clientParams, string olapReport, string clientReports)
 {
@@ -319,11 +319,11 @@ public Dictionary<string, object> FilterElement(string action, string clientPara
     return olapClientHelper.GetJsonData(action, DataManager, clientParams);
 }
 
-```
+~~~ 
 
 ## RemoveSplitButton
 
-[POST&nbsp;&nbsp;/WCF/PivotClient/RemoveSplitButton](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc)
+[POST/WCF/PivotClient/RemoveSplitButton](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc)
 
 It fetches the drilled data required to render the PivotChart on removing an item from report.
 
@@ -346,7 +346,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-```csharp
+~~~ csharp
 
 public Dictionary<string, object> RemoveSplitButton(string action, string clientParams, string olapReport, string clientReports)
 {
@@ -356,11 +356,11 @@ public Dictionary<string, object> RemoveSplitButton(string action, string client
     return olapClientHelper.GetJsonData(action, DataManager, clientParams);
 }
 
-```
+~~~ 
 
 ## FetchMemberTreeNodes
 
-[POST&nbsp;&nbsp;/WCF/PivotClient/FetchMemberTreeNodes](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc)
+[POST/WCF/PivotClient/FetchMemberTreeNodes](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc)
 
 It fetches the details of the members to render the member editor dialog.
 
@@ -382,7 +382,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-```csharp
+~~~ csharp
 
 public Dictionary<string, object> FetchMemberTreeNodes(string action, string dimensionName, string olapReport)
 {
@@ -391,11 +391,11 @@ public Dictionary<string, object> FetchMemberTreeNodes(string action, string dim
     return olapClientHelper.GetJsonData(action, DataManager, dimensionName);
 }
 
-```
+~~~ 
 
 ## DropNode
 
-[POST&nbsp;&nbsp;/WCF/PivotClient/DropNode](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc)
+[POST/WCF/PivotClient/DropNode](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc)
 
 It fetches the data required to render the control after drag and drop action.
 
@@ -419,7 +419,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-```csharp
+~~~ csharp
 
 public Dictionary<string, object> DropNode(string action, string dropType, string nodeInfo, string olapReport, string clientReports)
 {
@@ -429,11 +429,11 @@ public Dictionary<string, object> DropNode(string action, string dropType, strin
     return olapClientHelper.GetJsonData(action, DataManager, dropType, nodeInfo);
 }
 
-```
+~~~ 
 
 ## CubeChange
 
-[POST&nbsp;&nbsp;/WCF/PivotClient/CubeChange](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc)
+[POST/WCF/PivotClient/CubeChange](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc)
 
 It fetches the data required to render the control on changing the cube.
 
@@ -455,7 +455,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-```csharp
+~~~ csharp
 
 public Dictionary<string, object> CubeChange(string action, string cubeName, string clientParams)
 {
@@ -463,11 +463,11 @@ public Dictionary<string, object> CubeChange(string action, string cubeName, str
     return olapClientHelper.GetJsonData(action, DataManager, cubeName, clientParams);
 }
 
-```
+~~~ 
 
 ## MeasureGroup
 
-[POST&nbsp;&nbsp;/WCF/PivotClient/MeasureGroup](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc)
+[POST/WCF/PivotClient/MeasureGroup](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc)
 
 It fetches the data required to render the control on changing the measure group.
 
@@ -488,7 +488,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-```csharp
+~~~ csharp
 
 public Dictionary<string, object> MeasureGroup(string action, string measureGroupName)
 {
@@ -496,11 +496,11 @@ public Dictionary<string, object> MeasureGroup(string action, string measureGrou
     return olapClientHelper.GetJsonData(action, DataManager, measureGroupName);
 }
 
-```
+~~~ 
 
 ## ToolbarOperations
 
-[POST&nbsp;&nbsp;/WCF/PivotClient/ToolbarOperations](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc)
+[POST/WCF/PivotClient/ToolbarOperations](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc)
 
 It fetches the data required to render the control on performing toolbar operations.
 
@@ -524,7 +524,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-```csharp
+~~~ csharp
 
 public Dictionary<string, object> ToolbarOperations(string action, string toolbarOperation, string clientInfo, string olapReport, string clientReports)
 {
@@ -536,11 +536,11 @@ public Dictionary<string, object> ToolbarOperations(string action, string toolba
     return olapClientHelper.GetJsonData(action, DataManager, toolbarOperation, clientInfo);
 }
 
-```
+~~~ 
 
 ## ExpandMember
 
-[POST&nbsp;&nbsp;/WCF/PivotClient/ExpandMember](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc)
+[POST/WCF/PivotClient/ExpandMember](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc)
 
 It fetches the children nodes on expanding a node in Member Editor.
 
@@ -567,7 +567,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-```csharp
+~~~ csharp
 
 public Dictionary<string, object> ExpandMember(string action, bool checkedStatus, string parentNode, string tag, string dimensionName, string cubeName, string olapReport, string clientReports)
 {
@@ -579,11 +579,11 @@ public Dictionary<string, object> ExpandMember(string action, bool checkedStatus
     return olapClientHelper.GetJsonData(action, DataManager, checkedStatus, parentNode, tag, dimensionName, cubeName);
 }
 
-```
+~~~ 
 
 ## UpdateReport
 
-[POST&nbsp;&nbsp;/WCF/PivotClient/UpdateReport](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc)
+[POST/WCF/PivotClient/UpdateReport](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc)
 
 It updates the report in server side.
 
@@ -606,17 +606,17 @@ Response: serialized JSON string
 
 ### Code example 
 
-```csharp
+~~~ csharp
 
 public Dictionary<string, object> UpdateReport(string action, string clientParams, string olapReport, string clientReports)
 {
     return olapClientHelper.GetJsonData(action, clientParams, olapReport, clientReports);
 }
 
-```
+~~~ 
 ## SaveReportToDB
 
-[POST&nbsp;&nbsp;/WCF/PivotClient/SaveReportToDB](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc)
+[POST/WCF/PivotClient/SaveReportToDB](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc)
 
 It saves the current report to database with the specified name.
 
@@ -640,7 +640,7 @@ Response: None
 
 ### Code example 
 
-```csharp
+~~~ csharp
 
 public Dictionary<string, object> SaveReportToDB(string reportName, string operationalMode, string analysisMode, string olapReport, string clientReports)
 {
@@ -671,11 +671,11 @@ public Dictionary<string, object> SaveReportToDB(string reportName, string opera
     return null;
 }
 
-```
+~~~ 
 
 ## FetchReportListFromDB
 
-[POST&nbsp;&nbsp;/WCF/PivotClient/FetchReportListFromDB](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc)
+[POST/WCF/PivotClient/FetchReportListFromDB](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc)
 
 It fetches the list of names of reports stored in database.
 
@@ -696,7 +696,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-```csharp
+~~~ csharp
 
 public Dictionary<string, object> FetchReportListFromDB(string operationalMode, string analysisMode)
 {
@@ -716,10 +716,10 @@ public Dictionary<string, object> FetchReportListFromDB(string operationalMode, 
     return dictionary;
 }
 
-```
+~~~ 
 ## LoadReportFromDB
 
-[POST&nbsp;&nbsp;/WCF/PivotClient/LoadReportFromDB](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc)
+[POST/WCF/PivotClient/LoadReportFromDB](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc)
 
 It loads the report with specified name from the database to the control.
 
@@ -743,7 +743,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-```csharp
+~~~ csharp
 
 public Dictionary<string, object> LoadReportFromDB(string reportName, string operationalMode, string analysisMode, string olapReport, string clientReports)
 {
@@ -779,10 +779,10 @@ public Dictionary<string, object> LoadReportFromDB(string reportName, string ope
     return dictionary;
 }
         
-```
+~~~ 
 ## GetMDXQuery
 
-[POST&nbsp;&nbsp;/WCF/PivotClient/GetMDXQuery](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc)
+[POST/WCF/PivotClient/GetMDXQuery](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc)
 
 It retrieves the MDX query formed to fetch the data at that instant.
 
@@ -802,7 +802,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-```csharp
+~~~ csharp
 
 public string GetMDXQuery(string olapReport)
 {
@@ -811,11 +811,11 @@ public string GetMDXQuery(string olapReport)
     return DataManager.GetMDXQuery();
 }
 
-```
+~~~ 
 
 ## ToggleAxis
 
-[POST&nbsp;&nbsp;/WCF/PivotClient/ToggleAxis](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc)
+[POST/WCF/PivotClient/ToggleAxis](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc)
 
 It fetches the data after interchanging the elements in row and column axes.
 
@@ -837,7 +837,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-```csharp
+~~~ csharp
 
 public Dictionary<string, object> ToggleAxis(string action, string currentReport, string clientReports)
 {
@@ -848,4 +848,4 @@ public Dictionary<string, object> ToggleAxis(string action, string currentReport
     return olapClientHelper.GetJsonData(action, DataManager, clientReports);
 }
 
-```
+~~~ 

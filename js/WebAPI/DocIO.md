@@ -9,7 +9,7 @@ keywords: DocIO, syncfusion,DocIO webapi
 
 ## ConvertToPDF
 
-[POST&nbsp;&nbsp;/Api/DocIO/ConvertToPDF](http://js.syncfusion.com/demos/ejservices/api/DocIO/ConvertToPDF)
+[POST/Api/DocIO/ConvertToPDF](http://js.syncfusion.com/demos/ejservices/api/DocIO/ConvertToPDF)
 
 It is used to generate the PDF document.
 
@@ -23,7 +23,7 @@ Content-Type: application/pdf
 
 ### Code example
 
-```html
+~~~ html
 
 URL: http://js.syncfusion.com/demos/ejServices/api/DocIO/ConvertToPDF
 <form name="form1" method="post" action="http://js.syncfusion.com/demos/ejservices/api/DocIO/ConvertToPDF" enctype="multipart/form-data">
@@ -53,6 +53,6 @@ URL: http://js.syncfusion.com/demos/ejServices/api/DocIO/ConvertToPDF
 	</div>
 </form>
 
-```
+~~~ 
 
 >Using the above code example we can convert the Word to PDF Document.

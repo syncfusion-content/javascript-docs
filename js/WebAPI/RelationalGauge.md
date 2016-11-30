@@ -9,7 +9,7 @@ keywords: RelationalGauge, syncfusion, RelationalGauge webapi
 
 ## Initialize
 
-[POST&nbsp;&nbsp;/Api/RelationalGauge/Initialize](http://js.syncfusion.com/demos/ejServices/api/RelationalGauge/Initialize)
+[POST/Api/RelationalGauge/Initialize](http://js.syncfusion.com/demos/ejServices/api/RelationalGauge/Initialize)
 
 It fetches the Relational data required to render the PivotGauge control from server-end.
 
@@ -30,11 +30,11 @@ Response: serialized JSON string
 
 ### Code example 
 
-```csharp
+~~~ csharp
 public Dictionary<string, object> Initialize(Dictionary<string, object> jsonResult)
 {
     htmlHelper.PivotReport = BindDefaultData();
     return htmlHelper.GetJsonData(jsonResult["action"].ToString(), ProductSales.GetSalesData());
 }
 
-```
+~~~ 

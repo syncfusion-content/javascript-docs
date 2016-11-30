@@ -9,14 +9,14 @@ keywords: Northwind, syncfusion, Northwind wcf
 
 ## NorthwindDataService
 
-[GET&nbsp;&nbsp;/wcf/Northwind.svc](http://js.syncfusion.com/demos/ejservices/Wcf/Northwind.svc)
+[GET/wcf/Northwind.svc](http://js.syncfusion.com/demos/ejservices/Wcf/Northwind.svc)
 
 This is an [OData](http://www.odata.org/) endpoint for Microsoft Northwind sample database with limited data tables like `Orders` and `Customers`.
 
 ## Grid
 
-[GET&nbsp;&nbsp;/wcf/Northwind.svc/Orders](http://js.syncfusion.com/demos/ejServices/wcf/NorthWind.svc/Orders)<br>
-[GET&nbsp;&nbsp;/wcf/Northwind.svc/Customers](http://js.syncfusion.com/demos/ejServices/wcf/NorthWind.svc/Customers)
+[GET/wcf/Northwind.svc/Orders](http://js.syncfusion.com/demos/ejServices/wcf/NorthWind.svc/Orders)<br>
+[GET/wcf/Northwind.svc/Customers](http://js.syncfusion.com/demos/ejServices/wcf/NorthWind.svc/Customers)
 
 We have used Northwind services for Grid control where it has the data tables like "Orders" and "Customers".
 
@@ -24,9 +24,10 @@ We have used Northwind services for Grid control where it has the data tables li
 
 |  Parameter |  Description | 
 |---|---|
-|  $top | Returns only the first n results| 
-|  $skip | Used to skip the first n results| 
-> We can use other query options in order to perform the filtering in Northwind database. For demo purpose we have used <a href="http://services.odata.org/V3/Northwind/Northwind.svc/$metadata">Northwind database</a>. To know more about the query option click <a href="https://msdn.microsoft.com/en-us/library/dd728283(v=vs.110).aspx">here</a>
+|$top|Returns only the first n results.| 
+|$skip|Used to skip the first n results.| 
+
+> We can use other query options in order to perform the filtering in Northwind database. For demo purpose we have used [Northwind database](http://services.odata.org/V3/Northwind/Northwind.svc/$metadata). To know more about the query option click [here](https://msdn.microsoft.com/en-us/library/dd728283(v=vs.110).aspx)
 
 ### Response information 
 
@@ -36,7 +37,7 @@ Content-Type: application/json;odata=verbose;charset=utf-8
 
 Response (JSON):   
 
-```javascript
+~~~ javascript
 
 {
 "__metadata":
@@ -64,12 +65,12 @@ Response (JSON):
 "ShipCountry":"France"
 }, 	 //... 9 more records
 
-```
+~~~ 
 > We can see that the first ten results from the `Orders` table of Northwind database in the above JSON reponse where it uses `$top` query option.   
 
 ## Kanban
 
-[GET&nbsp;&nbsp;/wcf/Northwind.svc/Tasks](http://js.syncfusion.com/demos/ejServices/wcf/NorthWind.svc/Tasks)
+[GET/wcf/Northwind.svc/Tasks](http://js.syncfusion.com/demos/ejServices/wcf/NorthWind.svc/Tasks)
 
 For Kanban control we have added the custom table along with the Northwind service.
 
@@ -81,7 +82,7 @@ Content-Type: application/json;odata=verbose;charset=utf-8
 
 Response (JSON):   
 
-```javascript
+~~~ javascript
 
 {
 
@@ -99,5 +100,5 @@ Response (JSON):
 
 }, 	 //... 9 more records
 
-```
+~~~ 
 > We can see that the first ten results from the `Tasks` table of Northwind database in the above JSON reponse where it uses `$top` query option.   
