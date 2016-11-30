@@ -58,7 +58,7 @@ N> Refer the **ej.culture.fr-FR.min.js** file in your HTML application and also 
 
 For further information on – how to refer the required culture scripts into your application, refer [here](/js/localization).
 
-### Localizing Specific Words
+### Localizing specific words
 
 To customize or localize only some specific words in the default `ej.SpellCheck.Locale["en-US"]` collection, the words to be localized/customized can be defined in a separate variable and then extended to the original collection as depicted in the following code example.
 

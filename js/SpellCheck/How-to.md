@@ -6,7 +6,7 @@ control: spellcheck
 documentation: ug
 keywords: spellcheck provider, NHunspell , ASpell, provider
 ---
-# How To
+# How to
 
 ## Using the nHunspell provider with SpellCheck control
 
@@ -35,7 +35,7 @@ The following code example depicts the way to use the SpellCheck with ASpell pro
 
 {% endhighlight %}
 
-### NHunspell Provider
+### NHunspell provider
 
 The EJ SpellCheck supports the NHunspell provider to perform the spellcheck operations. For this, need to follow the below steps.
 
