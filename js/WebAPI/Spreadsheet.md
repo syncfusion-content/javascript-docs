@@ -29,11 +29,13 @@ Content-Type: application/octet-stream
 
 ### Code example 
 
-~~~ javascript
+{% highlight js %}
 
 
-~~~ 
-~~~ csharp
+{% endhighlight %}
+
+{% highlight c# %}
+
 public void ExcelExport()
 {
 	string sheetModel = HttpContext.Current.Request.Params["sheetModel"], sheetData = HttpContext.Current.Request.Params["sheetData"], password = HttpContext.Current.Request.Params["password"];
@@ -42,7 +44,8 @@ public void ExcelExport()
 	else
 		Spreadsheet.Save(sheetModel, sheetData, "sample", ExportFormat.XLSX, ExcelVersion.Excel2013);
 }
-~~~ 
+{% endhighlight %}
+
 >The above example will export the Spreadsheet as an Excel file.
 
 ## CsvExport
@@ -66,12 +69,13 @@ Content-Type: application/octet-stream
 
 ### Code example 
 
-~~~ javascript
+{% highlight js %}
 
 
 
-~~~ 
-~~~ csharp
+{% endhighlight %}
+
+{% highlight c# %}
 
 public void CsvExport()
 {
@@ -79,7 +83,7 @@ public void CsvExport()
 	Spreadsheet.Save(sheetModel, sheetData, "sample", ExportFormat.CSV);
 }
 
-~~~ 
+{% endhighlight %}
 
 >The above example will export the Spreadsheet as Csv file.
 
@@ -104,12 +108,12 @@ Content-Type: application/octet-stream
 
 ### Code example 
 
-~~~ javascript
+{% highlight js %}
 
 
-~~~ 
+{% endhighlight %}
 
-~~~ csharp
+{% highlight c# %}
 
 public void PdfExport()
 {
@@ -117,7 +121,8 @@ public void PdfExport()
 	Spreadsheet.Save(sheetModel, sheetData, "sample", ExportFormat.PDF);
 }
 
-~~~ 
+{% endhighlight %}
+
 >The above example will export the Spreadsheet as PDF file.
 
 ## Import
@@ -143,9 +148,9 @@ Content-Type:  application/json; charset=utf-8
 
 ### Code example 
 
-~~~ javascript
+{% highlight js %}
 
-~~~ 
+{% endhighlight %}
 
 
 

@@ -44,7 +44,7 @@ Content-Type: application/json;odata=verbose;charset=utf-8
 
 Response (JSON):   
 
-~~~ javascript
+{% highlight js %}
 {
     "cwd":{
         "name":"FileBrowser",
@@ -82,12 +82,12 @@ Response (JSON):
     "error":null
 }
 
-~~~ 
+{% endhighlight %}
 
 
 ### Code example 
 
-~~~ javascript
+{% highlight js %}
 
 URL: http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations   
 
@@ -115,7 +115,7 @@ $.ajax({
     dataType: "json"
 })
 
-~~~ 
+{% endhighlight %}
 
 ## FileOperationsCors
 
@@ -140,7 +140,7 @@ Content-Type: application/json;odata=verbose;charset=utf-8
 
 Response (JSON):   
 
-~~~ javascript
+{% highlight js %}
 
 {
     "cwd":{
@@ -179,11 +179,11 @@ Response (JSON):
     "error":null
 }
 
-~~~ 
+{% endhighlight %}
 
 ### Code example 
 
-~~~ javascript
+{% highlight js %}
 
 URL: http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperationsCors    
 
@@ -214,4 +214,4 @@ $.ajax({
     jsonpCallback: "MyCallbackFunction"
 })
 
-~~~ 
+{% endhighlight %}

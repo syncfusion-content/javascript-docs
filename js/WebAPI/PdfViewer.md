@@ -34,7 +34,7 @@ Content-Type:  application/json; charset=utf-8
 
 Response (JSON):   
 
-~~~ javascript
+{% highlight js %}
 {
   imagestream,
   pagesize,
@@ -49,12 +49,12 @@ Response (JSON):
   pageContents,
   restrictionSummary
 }
-~~~ 
+{% endhighlight %}
 
 
 ### Code example 
 
-~~~ javascript
+{% highlight js %}
 
 URL: http://js.syncfusion.com/demos/ejServices/api/PdfViewer/Load
 
@@ -67,8 +67,8 @@ $.ajax({
 		traditional: true
 })
 
+{% endhighlight %}
 
-~~~ 
 >The above example is used to load the PDF document in the PdfViewer.
 
 ## FileUpload
@@ -99,7 +99,7 @@ Content-Type:  application/json; charset=utf-8
 
 Response (JSON):   
 
-~~~ javascript
+{% highlight js %}
 {
   imagestream,
   pagesize,
@@ -114,10 +114,11 @@ Response (JSON):
   pageContents,
   restrictionSummary
 }
-~~~ 
+{% endhighlight %}
+
 ### Code example 
 
-~~~ javascript
+{% highlight js %}
 
 URL: http://js.syncfusion.com/demos/ejServices/api/PdfViewer/FileUpload
 
@@ -130,7 +131,8 @@ $.ajax({
 		traditional: true
 })
 
-~~~ 
+{% endhighlight %}
+
 >The above code example is used to upload the PDF file.
 
 
@@ -152,19 +154,19 @@ Response: DocumentStream
 
 ### Code example 
 
-~~~ javascript
+{% highlight js %}
 
 http://js.syncfusion.com/demos/ejServices/api/PdfViewer/Download
 
 $.ajax({
-        type: "POST",
-        url: "http://js.syncfusion.com/demos/ejServices/api/PdfViewer/Download",
-        crossDomain: true,
-        contentType: "application/json; charset=utf-8",
-        dataType: "json",
-        traditional: true,
-        aync: false
+    type: "POST",
+    url: "http://js.syncfusion.com/demos/ejServices/api/PdfViewer/Download",
+    crossDomain: true,
+    contentType: "application/json; charset=utf-8",
+    dataType: "json",
+    traditional: true,
+    aync: false
 })
 
-~~~ 
+{% endhighlight %}
 >The above example shows that it will download the PDF doccument.

@@ -30,14 +30,15 @@ Response: serialized JSON string
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
+
 public Dictionary<string, object> Initialize(Dictionary<string, object> jsonResult)
 {
     htmlHelper.PivotReport = BindDefaultData(); 
     return htmlHelper.GetJsonData(jsonResult["action"].ToString(), ProductSales.GetSalesData());
 }
 
-~~~ 
+{% endhighlight %}
 
 ## FetchMembers
 
@@ -64,14 +65,15 @@ Response: serialized JSON string
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
+
 public Dictionary<string, object> FetchMembers(Dictionary<string, object> jsonResult)
 {
     htmlHelper.PopulateData(jsonResult["currentReport"].ToString());
     return htmlHelper.GetJsonData(jsonResult["action"].ToString(), ProductSales.GetSalesData(), jsonResult["headerTag"].ToString(), jsonResult["sortedHeaders"].ToString());
 }
 
-~~~ 
+{% endhighlight %}
 
 ## Filtering
 
@@ -98,14 +100,15 @@ Response: serialized JSON string
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
+
 public Dictionary<string, object> Filtering(Dictionary<string, object> jsonResult)
 {
     htmlHelper.PopulateData(jsonResult["currentReport"].ToString());
     return htmlHelper.GetJsonData(jsonResult["action"].ToString(), ProductSales.GetSalesData(), jsonResult["filterParams"].ToString(), jsonResult["sortedHeaders"].ToString());
 }
 
-~~~ 
+{% endhighlight %}
 
 ## ModifyNodeState
 
@@ -135,14 +138,15 @@ Response: serialized JSON string
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
+
 public Dictionary<string, object> ModifyNodeState(Dictionary<string, object> jsonResult)
 {
     htmlHelper.PopulateData(jsonResult["currentReport"].ToString());
     return htmlHelper.GetJsonData(jsonResult["action"].ToString(), ProductSales.GetSalesData(), jsonResult["headerTag"].ToString(), jsonResult["dropAxis"].ToString(), jsonResult["filterParams"].ToString(), jsonResult["sortedHeaders"].ToString());
 }
 
-~~~ 
+{% endhighlight %}
 
 ## DropNode
 
@@ -171,14 +175,15 @@ Response: serialized JSON string
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
+
 public Dictionary<string, object> DropNode(Dictionary<string, object> jsonResult)
 {
     htmlHelper.PopulateData(jsonResult["currentReport"].ToString());
     return htmlHelper.GetJsonData(jsonResult["action"].ToString(), ProductSales.GetSalesData(), jsonResult["dropAxis"].ToString(), jsonResult["headerTag"].ToString(), jsonResult.ContainsKey("filterParams") ? jsonResult["filterParams"].ToString() : null, jsonResult["sortedHeaders"].ToString());
 }
 
-~~~ 
+{% endhighlight %}
 
 ## Sorting
 
@@ -204,14 +209,14 @@ Response: serialized JSON string
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 public Dictionary<string, object> Sorting(Dictionary<string, object> jsonResult)
 {
     htmlHelper.PopulateData(jsonResult["currentReport"].ToString());
     retun htmlHelper.GetJsonData(jsonResult["action"].ToString(), ProductSales.GetSalesData(), jsonResult["sortedHeaders"].ToString());
 }
 
-~~~ 
+{% endhighlight %}
 
 ## CalculatedField
 
@@ -237,14 +242,15 @@ Response: serialized JSON string
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
+
 public Dictionary<string, object> CalculatedField(Dictionary<string, object> jsonResult)
 {
     htmlHelper.PopulateData(jsonResult["currentReport"].ToString());
     return htmlHelper.GetJsonData(jsonResult["action"].ToString(), ProductSales.GetSalesData(), null, jsonResult["headerTag"].ToString());
 }
 
-~~~ 
+{% endhighlight %}
 
 ## Export
 
@@ -268,7 +274,8 @@ Response: file
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
+
 public void Export()
 {
     string args = HttpContext.Current.Request.Form.GetValues(0)[0];
@@ -278,7 +285,7 @@ public void Export()
     htmlHelper.ExportPivotGrid(ProductSales.GetSalesData(), args, fileName, System.Web.HttpContext.Current.Response);
 }
 
-~~~ 
+{% endhighlight %}
 
 ## SaveReport
 
@@ -305,7 +312,8 @@ Response: None
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
+
 public Dictionary<string, object> SaveReport(Dictionary<string, object> jsonResult)
 {
     string mode = jsonResult["operationalMode"].ToString();
@@ -335,7 +343,7 @@ public Dictionary<string, object> SaveReport(Dictionary<string, object> jsonResu
     return null;
 }
 
-~~~ 
+{% endhighlight %}
 
 ## LoadReportFromDB
 
@@ -366,7 +374,8 @@ Response: serialized JSON string
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
+
 public Dictionary<string, object> LoadReportFromDB(Dictionary<string, object> jsonResult)
 {
     byte[] reportString = new byte[2 * 1024];
@@ -398,7 +407,7 @@ public Dictionary<string, object> LoadReportFromDB(Dictionary<string, object> js
 }
 
 
-~~~ 
+{% endhighlight %}
 
 ## DeferUpdate
 
@@ -424,14 +433,15 @@ Response: serialized JSON string
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
+
 public Dictionary<string, object> DeferUpdate(Dictionary<string, object> jsonResult)
 {
     htmlHelper.PopulateData(jsonResult["currentReport"].ToString());
     return htmlHelper.GetJsonData(jsonResult["action"].ToString(), ProductSales.GetSalesData(), null, null, null, jsonResult["sortedHeaders"].ToString(), jsonResult["filterParams"].ToString());
 }
 
-~~~ 
+{% endhighlight %}
 
 ## CellEditing
 
@@ -459,11 +469,12 @@ Response: serialized JSON string
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
+
 public Dictionary<string, object> CellEditing(Dictionary<string, object> jsonResult)
 {
     htmlHelper.PopulateData(jsonResult["currentReport"].ToString());
     return htmlHelper.GetJsonData(jsonResult["action"].ToString(), ProductSales.GetSalesData(), jsonResult["index"].ToString(), jsonResult["summaryValues"].ToString(), jsonResult["valueHeaders"].ToString());
 }
 
-~~~ 
+{% endhighlight %}

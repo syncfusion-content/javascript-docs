@@ -30,14 +30,14 @@ Response: serialized JSON string
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 public Dictionary<string, object> Initialize(Dictionary<string, object> jsonResult)
 {
     this.BindData();
     return pivotClient.GetJsonData(jsonResult["action"].ToString(), ProductSales.GetSalesData(), null);
 }
 
-~~~ 
+{% endhighlight %}
 
 ## FetchMembers
 
@@ -64,14 +64,14 @@ Response: serialized JSON string
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 public Dictionary<string, object> FetchMembers(Dictionary<string, object> jsonResult)
 {
     pivotClient.PopulateData(jsonResult["currentReport"].ToString());
     return pivotClient.GetJsonData(jsonResult["action"].ToString(), ProductSales.GetSalesData(), jsonResult["headerTag"].ToString());
 }
 
-~~~ 
+{% endhighlight %}
 
 ## DrillChart
 
@@ -96,7 +96,8 @@ Response: serialized JSON string
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
+
 public Dictionary<string, object> DrillChart(Dictionary<string, object> jsonResult)
 {
     pivotClient.PopulateData(jsonResult["currentReport"].ToString());
@@ -107,7 +108,7 @@ public Dictionary<string, object> DrillChart(Dictionary<string, object> jsonResu
     return pivotChart.GetJsonData(jsonResult["action"].ToString(), ProductSales.GetSalesData(), jsonResult["drilledSeries"].ToString());
 }
 
-~~~ 
+{% endhighlight %}
 
 ## Filtering
 
@@ -134,14 +135,15 @@ Response: serialized JSON string
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
+
 public Dictionary<string, object> Filtering(Dictionary<string, object> jsonResult)
 {
     pivotClient.PopulateData(jsonResult["currentReport"].ToString());
     return pivotClient.GetJsonData(jsonResult["action"].ToString(), ProductSales.GetSalesData(), jsonResult["filterParams"].ToString());
 }
 
-~~~ 
+{% endhighlight %}
 
 ## DropNode
 
@@ -166,14 +168,15 @@ Response: serialized JSON string
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
+
 public Dictionary<string, object> DropNode(Dictionary<string, object> jsonResult)
 {
     Dictionary<string, object> dict = pivotClient.GetJsonData(jsonResult["action"].ToString(), ProductSales.GetSalesData(), jsonResult["args"].ToString());
     return dict;
 }
 
-~~~ 
+{% endhighlight %}
 
 ## ToolbarOperations
 
@@ -198,14 +201,15 @@ Response: serialized JSON string
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
+
 public Dictionary<string, object> ToolbarOperations(Dictionary<string, object> jsonResult)
 {
     Dictionary<string, object> dict = pivotClient.GetJsonData(jsonResult["action"].ToString(), ProductSales.GetSalesData(), jsonResult["args"].ToString());
     return dict;
 }
 
-~~~ 
+{% endhighlight %}
 
 ## SaveReportToDB
 
@@ -233,7 +237,8 @@ Response: None
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
+
 public Dictionary<string, object> SaveReportToDB(Dictionary<string, object> jsonResult)
 {
     string operationalMode = jsonResult["operationalMode"].ToString(), analysisMode = jsonResult["analysisMode"].ToString(), reportName = string.Empty;
@@ -261,7 +266,7 @@ public Dictionary<string, object> SaveReportToDB(Dictionary<string, object> json
     return null;
 }
 
-~~~ 
+{% endhighlight %}
 
 ## Export
 
@@ -285,7 +290,7 @@ Response: file
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 public void Export()
 {
     string args = HttpContext.Current.Request.Form.GetValues(0)[0];
@@ -295,7 +300,7 @@ public void Export()
     pivotClient.ExportPivotClient(ProductSales.GetSalesData(), args, fileName, System.Web.HttpContext.Current.Response);
 }
 
-~~~ 
+{% endhighlight %}
 
 ## FetchReportListFromDB
 
@@ -320,7 +325,8 @@ Response: serialized JSON string
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
+
 public Dictionary<string, object> FetchReportListFromDB(Dictionary<string, object> jsonResult)
 {
     string reportNames = string.Empty, currentRptName = string.Empty, operationalMode = jsonResult["operationalMode"].ToString(), analysisMode = jsonResult["analysisMode"].ToString();
@@ -338,7 +344,7 @@ public Dictionary<string, object> FetchReportListFromDB(Dictionary<string, objec
     return dictionary;
 }
 
-~~~ 
+{% endhighlight %}
 
 ## LoadReportFromDB
 
@@ -366,7 +372,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 public Dictionary<string, object> LoadReportFromDB(Dictionary<string, object> jsonResult)
 {
     PivotReport report = new PivotReport();
@@ -390,4 +396,4 @@ public Dictionary<string, object> LoadReportFromDB(Dictionary<string, object> js
     return dictionary;
 }
 
-~~~ 
+{% endhighlight %}

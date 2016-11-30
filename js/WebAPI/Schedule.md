@@ -29,17 +29,17 @@ Content-Type: application/json; charset=utf-8
 
 Response (JSON):   
 
-~~~ javascript
+{% highlight js %}
 
 {
 "Id":100,"Subject":"Bering Sea Gold","Location":"chn","StartTime":"2014-05-02T09:00:00","EndTime":"2014-05-02T10 :30:00","Description":null,"Owner":1,"Priority":null,"Recurrence":1,"RecurrenceType":null,"RecurrenceTypeCount" :null,"Reminder":null,"Categorize":"1,2","CustomStyle":null,"AllDay":false,"RecurrenceStartDate":null ,"RecurrenceEndDate":null,"RecurrenceRule":"FREQ=DAILY;INTERVAL=2;COUNT=10","StartTimeZone":null,"EndTimeZone" :null}, {"Id":101,"Subject":"Bering Sea Gold","Location":"mum","StartTime":"2014-05-02T04:00:00","EndTime" :"2014-05-02T05:00:00","Description":null,"Owner":1,"Priority":null,"Recurrence":0,"RecurrenceType":null ,"RecurrenceTypeCount":null,"Reminder":null,"Categorize":"2","CustomStyle":null,"AllDay":false,"RecurrenceStartDate" :null,"RecurrenceEndDate":null,"RecurrenceRule":null,"StartTimeZone":null,"EndTimeZone":null
 }, //... 14 more records 
 
-~~~ 
+{% endhighlight %}
 
 ### Code example 
 
-~~~ javascript
+{% highlight js %}
 
 $(function() {
     var dataManager = ej.DataManager({
@@ -59,7 +59,8 @@ $(function() {
     });
 });	
 
-~~~ 
+{% endhighlight %}
+
 ## PdfExport
 
 [POST/Api/Schedule/PdfExport](http://js.syncfusion.com/demos/ejservices/api/Schedule/PDFExport)
@@ -84,7 +85,7 @@ Content-Type: application/pdf
 
 ### Code example 
 
-~~~ javascript
+{% highlight js %}
 
 $("#btnExport").ejButton({
     width: "80px",
@@ -97,7 +98,8 @@ function onExportClick(e) {
     e.cancel = true;
 }
 
-~~~ 
+{% endhighlight %}
+
 >Add the above code along with the load data sample and the result of this code is used to save the Scheduler in a PDF file format.
 
 ## IcsExport
@@ -125,7 +127,7 @@ Content-Type: text/Calendar
 ### Code example 
 
 
-~~~ javascript
+{% highlight js %}
 
 $("#btnExport").ejButton({
     width: "80px",
@@ -138,7 +140,8 @@ function onExportClick(e) {
     e.cancel = true;
 }
 
-~~~ 
+{% endhighlight %}
+
 >Add the above code along with the load data sample and the result of this code is used to save the Scheduler in a ICS file format.
 
 
@@ -156,7 +159,7 @@ Content-Type: application/xml; charset=utf-8
 
 Response (JSON):   
 
-~~~ javascript
+{% highlight js %}
 
 {
 "Id":100,"Subject":"Bering Sea Gold","Location":"chn","StartTime":"2014-05-02T09:00:00",
@@ -173,11 +176,11 @@ Response (JSON):
 "StartTimeZone":null,"EndTimeZone":null
 }, //... 29 more records 
 
-~~~ 
+{% endhighlight %}
+
 ### Code example 
 
-
-~~~ javascript
+{% highlight js %}
 
   $("#UploadDefault").ejUploadbox({
 		saveUrl: "http://js.syncfusion.com/demos/ejservices/api/Schedule/Save",
@@ -194,5 +197,6 @@ Response (JSON):
 		},
     });
 
-~~~ 
+{% endhighlight %}
+
 >Add the above code along with the load data sample and the result of this code is used to import the appointment data generated from external calendar into Scheduler.

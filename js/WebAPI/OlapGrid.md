@@ -32,7 +32,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 public Dictionary<string, object> Initialize(Dictionary<string, object> jsonResult)
 {
     OlapDataManager DataManager = new OlapDataManager(connectionString);
@@ -40,7 +40,7 @@ public Dictionary<string, object> Initialize(Dictionary<string, object> jsonResu
     return htmlHelper.GetJsonData(jsonResult["action"].ToString(), DataManager, jsonResult.ContainsKey("gridLayout") ? jsonResult["gridLayout"].ToString() : null, Convert.ToBoolean(jsonResult["enablePivotFieldList"].ToString()));
 }
 
-~~~ 
+{% endhighlight %}
 
 ## Drill
 
@@ -69,7 +69,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 public Dictionary<string, object> Drill(Dictionary<string, object> jsonResult)
 {
     OlapDataManager DataManager = new OlapDataManager(connectionString);
@@ -77,7 +77,7 @@ public Dictionary<string, object> Drill(Dictionary<string, object> jsonResult)
     return htmlHelper.GetJsonData(jsonResult["action"].ToString(), connectionString, DataManager, jsonResult["cellPosition"].ToString(), jsonResult["headerInfo"].ToString(), jsonResult["layout"].ToString());
 }
 
-~~~ 
+{% endhighlight %}
 
 ## DropNode
 
@@ -106,7 +106,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 public Dictionary<string, object> DropNode(Dictionary<string, object> jsonResult)
 {
 	OlapDataManager DataManager = new OlapDataManager(connectionString);
@@ -114,7 +114,8 @@ public Dictionary<string, object> DropNode(Dictionary<string, object> jsonResult
 	return htmlHelper.GetJsonData(jsonResult["action"].ToString(), DataManager, jsonResult["dropType"].ToString(), jsonResult["nodeInfo"].ToString(), jsonResult.ContainsKey("filterParams") ? jsonResult["filterParams"].ToString() : null, jsonResult["gridLayout"].ToString(), true);
 }
 
-~~~ 
+{% endhighlight %}
+
 ## Filtering
 
 [POST/Api/OlapGrid/Filtering](http://js.syncfusion.com/demos/ejServices/api/OlapGrid/Filtering)
@@ -140,7 +141,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 public Dictionary<string, object> Filtering(Dictionary<string, object> jsonResult)
 {
 	OlapDataManager DataManager = new OlapDataManager(connectionString);
@@ -148,7 +149,7 @@ public Dictionary<string, object> Filtering(Dictionary<string, object> jsonResul
 	return htmlHelper.GetJsonData(jsonResult["action"].ToString(), connectionString, DataManager, null, jsonResult["filterParams"].ToString(), jsonResult["gridLayout"].ToString());
 }
 
-~~~ 
+{% endhighlight %}
 
 ## FetchMembers
 
@@ -174,7 +175,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 public Dictionary<string, object> FetchMembers(Dictionary<string, object> jsonResult)
 {
 	OlapDataManager DataManager = new OlapDataManager(connectionString);
@@ -182,7 +183,7 @@ public Dictionary<string, object> FetchMembers(Dictionary<string, object> jsonRe
 	return htmlHelper.GetJsonData(jsonResult["action"].ToString(), DataManager, null, jsonResult["headerTag"].ToString());
 }
 
-~~~ 
+{% endhighlight %}
 
 
 ## Paging
@@ -211,7 +212,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 public Dictionary<string, object> Paging(Dictionary<string, object> jsonResult)
 {
 	OlapDataManager DataManager = new OlapDataManager(connectionString);
@@ -219,7 +220,7 @@ public Dictionary<string, object> Paging(Dictionary<string, object> jsonResult)
 	return htmlHelper.GetJsonData(jsonResult["action"].ToString(), DataManager, jsonResult["layout"].ToString());
 }
 
-~~~ 
+{% endhighlight %}
 
 ## RemoveButton
 
@@ -246,7 +247,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 public Dictionary<string, object> RemoveButton(Dictionary<string, object> jsonResult)
 {
 	OlapDataManager DataManager = new OlapDataManager(connectionString);
@@ -254,7 +255,7 @@ public Dictionary<string, object> RemoveButton(Dictionary<string, object> jsonRe
 	return htmlHelper.GetJsonData(jsonResult["action"].ToString(), connectionString, DataManager, null, jsonResult["headerInfo"].ToString(), jsonResult["gridLayout"].ToString());
 }
 
-~~~ 
+{% endhighlight %}
 
 ## ExpandMember
 
@@ -283,7 +284,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 public Dictionary<string, object> ExpandMember(Dictionary<string, object> jsonResult)
 {
 	OlapDataManager DataManager = new OlapDataManager(connectionString);
@@ -291,7 +292,7 @@ public Dictionary<string, object> ExpandMember(Dictionary<string, object> jsonRe
 	return htmlHelper.GetJsonData(jsonResult["action"].ToString(), DataManager, Convert.ToBoolean(jsonResult["checkedStatus"].ToString()), jsonResult["parentNode"].ToString(), jsonResult["tag"].ToString(), jsonResult["cubeName"].ToString());
 }
 
-~~~ 
+{% endhighlight %}
 
 ## Export
 
@@ -315,7 +316,7 @@ Response: file
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 public void Export()
 {
 	string args = HttpContext.Current.Request.Form.GetValues(0)[0];
@@ -324,7 +325,7 @@ public void Export()
 	htmlHelper.ExportPivotGrid(DataManager, args, fileName, System.Web.HttpContext.Current.Response);
 }
 
-~~~ 
+{% endhighlight %}
 
 ## SaveReport
 
@@ -352,7 +353,7 @@ Response: None
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 public Dictionary<string, object> SaveReport(Dictionary<string, object> jsonResult)
 {
     string mode = jsonResult["operationalMode"].ToString();
@@ -382,7 +383,8 @@ public Dictionary<string, object> SaveReport(Dictionary<string, object> jsonResu
     return null;
 }
 
-~~~ 
+{% endhighlight %}
+
 ## LoadReportFromDB
 
 [POST/Api/OlapGrid/LoadReportFromDB](http://js.syncfusion.com/demos/ejServices/api/OlapGrid/LoadReportFromDB)
@@ -412,7 +414,8 @@ Response: serialized JSON string
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
+
 public Dictionary<string, object> LoadReportFromDB(Dictionary<string, object> jsonResult)
 {
     string mode = jsonResult["operationalMode"].ToString();
@@ -454,7 +457,7 @@ public Dictionary<string, object> LoadReportFromDB(Dictionary<string, object> js
     return dictionary;
 }
 
-~~~ 
+{% endhighlight %}
 
 ## DeferUpdate
 
@@ -480,7 +483,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 public Dictionary<string, object> DeferUpdate(Dictionary<string, object> jsonResult)
 {
     OlapDataManager DataManager = new OlapDataManager(connectionString);
@@ -488,7 +491,7 @@ public Dictionary<string, object> DeferUpdate(Dictionary<string, object> jsonRes
     return htmlHelper.GetJsonData(jsonResult["action"].ToString(), DataManager, null, jsonResult["filterParams"].ToString());
 }
 
-~~~ 
+{% endhighlight %}
 
 ## ExcelExport
 
@@ -512,7 +515,8 @@ Response: Excel document
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
+
 public void ExcelExport()
 {
 	PivotGridExcelExport pGrid = new PivotGridExcelExport();
@@ -520,7 +524,7 @@ public void ExcelExport()
 	pGrid.ExportToExcel(string.Empty, args, HttpContext.Current.Response);
 }
 
-~~~ 
+{% endhighlight %}
 
 ## PdfExport
 
@@ -544,7 +548,8 @@ Response: PDF document
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
+
 public void PdfExport()
 {
 	PivotGridPDFExport pGrid = new PivotGridPDFExport();
@@ -552,7 +557,7 @@ public void PdfExport()
 	pGrid.ExportToPDF(string.Empty, args, HttpContext.Current.Response);
 }
 
-~~~ 
+{% endhighlight %}
 
 ## WordExport
 
@@ -576,7 +581,7 @@ Response: Word document
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 public void WordExport()
 {
 	PivotGridWordExport pGrid = new PivotGridWordExport();
@@ -584,7 +589,7 @@ public void WordExport()
 	pGrid.ExportToWord(string.Empty, args, HttpContext.Current.Response);
 }
 
-~~~ 
+{% endhighlight %}
 
 ## CsvExport
 
@@ -608,7 +613,7 @@ Response: CSV document
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 public void CsvExport()
 {
 	PivotGridCSVExport pGrid = new PivotGridCSVExport();
@@ -616,4 +621,4 @@ public void CsvExport()
 	pGrid.ExportToCSV(string.Empty, args, HttpContext.Current.Response);
 }
 
-~~~ 
+{% endhighlight %}

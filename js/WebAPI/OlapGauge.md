@@ -30,7 +30,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 public Dictionary<string, object> Initialize(Dictionary<string, object> jsonResult)
 {
     OlapDataManager DataManager = new OlapDataManager(connectionString);
@@ -38,4 +38,4 @@ public Dictionary<string, object> Initialize(Dictionary<string, object> jsonResu
     return htmlHelper.GetJsonData(jsonResult["action"].ToString(), DataManager);
 }
 
-~~~ 
+{% endhighlight %}

@@ -31,7 +31,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 
 public Dictionary<string, object> Initialize(string action, string customObject, string clientParams)
 {
@@ -50,7 +50,7 @@ public Dictionary<string, object> Initialize(string action, string customObject,
     return olapClientHelper.GetJsonData(action, DataManager, clientParams);
 }
 
-~~~ 
+{% endhighlight %} 
 
 ## InitializeGrid
 
@@ -77,7 +77,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 
 public Dictionary<string, object> InitializeGrid(string action, string currentReport, string gridLayout, string customObject)
 {
@@ -91,7 +91,7 @@ public Dictionary<string, object> InitializeGrid(string action, string currentRe
     return olapClientHelper.GetJsonData(action, DataManager, gridLayout);
 }
 
-~~~ 
+{% endhighlight %} 
 
 ## InitializeChart
 
@@ -117,7 +117,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 
 public Dictionary<string, object> InitializeChart(string action, string currentReport, string customObject)
 {
@@ -126,7 +126,7 @@ public Dictionary<string, object> InitializeChart(string action, string currentR
     return chartHelper.GetJsonData(action, DataManager);
 }
 
-~~~ 
+{% endhighlight %} 
 
 ## InitializeTreeMap
 
@@ -153,7 +153,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 
 public Dictionary<string, object> InitializeTreeMap(string action, string currentReport, string customObject)
 {
@@ -162,8 +162,7 @@ public Dictionary<string, object> InitializeTreeMap(string action, string curren
     return treemapHelper.GetJsonData(action, DataManager);
 }
 
-~~~ 
-
+{% endhighlight %} 
 
 ## DrillChart
 
@@ -191,7 +190,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 
 public Dictionary<string, object> DrillChart(string action, string drilledSeries, string olapReport, string clientReports)
 {
@@ -201,7 +200,7 @@ public Dictionary<string, object> DrillChart(string action, string drilledSeries
     return chartHelper.GetJsonData(action, DataManager, drilledSeries);
 }
 
-~~~ 
+{% endhighlight %} 
 
 ## DrillTreeMap
 
@@ -228,7 +227,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 
 public Dictionary<string, object> DrillTreeMap(string action, string drillInfo, string olapReport, string clientReports)
 {
@@ -238,7 +237,7 @@ public Dictionary<string, object> DrillTreeMap(string action, string drillInfo, 
     return treemapHelper.GetJsonData(action, DataManager, drillInfo);
 }
 
-~~~ 
+{% endhighlight %} 
 
 ## DrillGrid
 
@@ -267,7 +266,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 
 public Dictionary<string, object> DrillGrid(string action, string cellPosition, string currentReport, string clientReports, string headerInfo, string layout)
 {
@@ -282,7 +281,7 @@ public Dictionary<string, object> DrillGrid(string action, string cellPosition, 
     return olapClientHelper.GetJsonData(action, DataManager, cellPosition, headerInfo, layout);
 }
 
-~~~ 
+{% endhighlight %} 
 
 ## FilterElement
 
@@ -309,7 +308,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 
 public Dictionary<string, object> FilterElement(string action, string clientParams, string olapReport, string clientReports)
 {
@@ -319,7 +318,7 @@ public Dictionary<string, object> FilterElement(string action, string clientPara
     return olapClientHelper.GetJsonData(action, DataManager, clientParams);
 }
 
-~~~ 
+{% endhighlight %} 
 
 ## RemoveSplitButton
 
@@ -346,7 +345,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 
 public Dictionary<string, object> RemoveSplitButton(string action, string clientParams, string olapReport, string clientReports)
 {
@@ -356,7 +355,7 @@ public Dictionary<string, object> RemoveSplitButton(string action, string client
     return olapClientHelper.GetJsonData(action, DataManager, clientParams);
 }
 
-~~~ 
+{% endhighlight %} 
 
 ## FetchMemberTreeNodes
 
@@ -382,7 +381,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 
 public Dictionary<string, object> FetchMemberTreeNodes(string action, string dimensionName, string olapReport)
 {
@@ -391,7 +390,7 @@ public Dictionary<string, object> FetchMemberTreeNodes(string action, string dim
     return olapClientHelper.GetJsonData(action, DataManager, dimensionName);
 }
 
-~~~ 
+{% endhighlight %} 
 
 ## DropNode
 
@@ -419,7 +418,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 
 public Dictionary<string, object> DropNode(string action, string dropType, string nodeInfo, string olapReport, string clientReports)
 {
@@ -429,7 +428,7 @@ public Dictionary<string, object> DropNode(string action, string dropType, strin
     return olapClientHelper.GetJsonData(action, DataManager, dropType, nodeInfo);
 }
 
-~~~ 
+{% endhighlight %} 
 
 ## CubeChange
 
@@ -455,7 +454,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 
 public Dictionary<string, object> CubeChange(string action, string cubeName, string clientParams)
 {
@@ -463,7 +462,7 @@ public Dictionary<string, object> CubeChange(string action, string cubeName, str
     return olapClientHelper.GetJsonData(action, DataManager, cubeName, clientParams);
 }
 
-~~~ 
+{% endhighlight %} 
 
 ## MeasureGroup
 
@@ -488,7 +487,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 
 public Dictionary<string, object> MeasureGroup(string action, string measureGroupName)
 {
@@ -496,7 +495,7 @@ public Dictionary<string, object> MeasureGroup(string action, string measureGrou
     return olapClientHelper.GetJsonData(action, DataManager, measureGroupName);
 }
 
-~~~ 
+{% endhighlight %} 
 
 ## ToolbarOperations
 
@@ -524,7 +523,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 
 public Dictionary<string, object> ToolbarOperations(string action, string toolbarOperation, string clientInfo, string olapReport, string clientReports)
 {
@@ -536,7 +535,7 @@ public Dictionary<string, object> ToolbarOperations(string action, string toolba
     return olapClientHelper.GetJsonData(action, DataManager, toolbarOperation, clientInfo);
 }
 
-~~~ 
+{% endhighlight %} 
 
 ## ExpandMember
 
@@ -567,7 +566,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 
 public Dictionary<string, object> ExpandMember(string action, bool checkedStatus, string parentNode, string tag, string dimensionName, string cubeName, string olapReport, string clientReports)
 {
@@ -579,7 +578,7 @@ public Dictionary<string, object> ExpandMember(string action, bool checkedStatus
     return olapClientHelper.GetJsonData(action, DataManager, checkedStatus, parentNode, tag, dimensionName, cubeName);
 }
 
-~~~ 
+{% endhighlight %} 
 
 ## UpdateReport
 
@@ -606,14 +605,15 @@ Response: serialized JSON string
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 
 public Dictionary<string, object> UpdateReport(string action, string clientParams, string olapReport, string clientReports)
 {
     return olapClientHelper.GetJsonData(action, clientParams, olapReport, clientReports);
 }
 
-~~~ 
+{% endhighlight %} 
+
 ## SaveReportToDB
 
 [POST/WCF/PivotClient/SaveReportToDB](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc)
@@ -640,7 +640,7 @@ Response: None
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 
 public Dictionary<string, object> SaveReportToDB(string reportName, string operationalMode, string analysisMode, string olapReport, string clientReports)
 {
@@ -671,7 +671,7 @@ public Dictionary<string, object> SaveReportToDB(string reportName, string opera
     return null;
 }
 
-~~~ 
+{% endhighlight %} 
 
 ## FetchReportListFromDB
 
@@ -696,7 +696,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 
 public Dictionary<string, object> FetchReportListFromDB(string operationalMode, string analysisMode)
 {
@@ -716,7 +716,8 @@ public Dictionary<string, object> FetchReportListFromDB(string operationalMode, 
     return dictionary;
 }
 
-~~~ 
+{% endhighlight %} 
+
 ## LoadReportFromDB
 
 [POST/WCF/PivotClient/LoadReportFromDB](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc)
@@ -743,7 +744,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 
 public Dictionary<string, object> LoadReportFromDB(string reportName, string operationalMode, string analysisMode, string olapReport, string clientReports)
 {
@@ -779,7 +780,8 @@ public Dictionary<string, object> LoadReportFromDB(string reportName, string ope
     return dictionary;
 }
         
-~~~ 
+{% endhighlight %} 
+
 ## GetMDXQuery
 
 [POST/WCF/PivotClient/GetMDXQuery](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc)
@@ -802,7 +804,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 
 public string GetMDXQuery(string olapReport)
 {
@@ -811,7 +813,7 @@ public string GetMDXQuery(string olapReport)
     return DataManager.GetMDXQuery();
 }
 
-~~~ 
+{% endhighlight %} 
 
 ## ToggleAxis
 
@@ -837,7 +839,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 
 public Dictionary<string, object> ToggleAxis(string action, string currentReport, string clientReports)
 {
@@ -848,4 +850,4 @@ public Dictionary<string, object> ToggleAxis(string action, string currentReport
     return olapClientHelper.GetJsonData(action, DataManager, clientReports);
 }
 
-~~~ 
+{% endhighlight %} 

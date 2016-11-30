@@ -30,7 +30,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 public Dictionary<string, object> Initialize(Dictionary<string, object> jsonResult)
 {
     OlapDataManager DataManager = new OlapDataManager(connectionString);
@@ -38,7 +38,7 @@ public Dictionary<string, object> Initialize(Dictionary<string, object> jsonResu
     return htmlHelper.GetJsonData(jsonResult["action"].ToString(), DataManager);
 }
 
-~~~ 
+{% endhighlight %}
 
 ## Drill
 
@@ -65,7 +65,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 public Dictionary<string, object> Drill(Dictionary<string, object> jsonResult)
 {
     OlapDataManager DataManager = new OlapDataManager(connectionString);
@@ -73,7 +73,7 @@ public Dictionary<string, object> Drill(Dictionary<string, object> jsonResult)
     return htmlHelper.GetJsonData(jsonResult["action"].ToString(), DataManager, jsonResult["drilledSeries"].ToString());
 }
 
-~~~ 
+{% endhighlight %}
 
 ## Export
 
@@ -97,7 +97,7 @@ Response: file
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 public void Export()
 {
     string args = HttpContext.Current.Request.Form.GetValues(0)[0];
@@ -105,7 +105,8 @@ public void Export()
     htmlHelper.ExportPivotChart(args, fileName, System.Web.HttpContext.Current.Response);
 }
 
-~~~ 
+{% endhighlight %}
+
 ## ExcelExport
 
 [POST/Api/OlapChart/ExcelExport](http://js.syncfusion.com/demos/ejServices/api/OlapChart/ExcelExport)
@@ -128,7 +129,7 @@ Response: Excel document
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 public void ExcelExport()
 {
     PivotChartExcelExport pivotChartExcelExport = new PivotChartExcelExport();
@@ -137,7 +138,8 @@ public void ExcelExport()
     pivotChartExcelExport.ExportToExcel(chartParams);
 }
 
-~~~ 
+{% endhighlight %}
+
 ## WordExport
 
 [POST/Api/OlapChart/WordExport](http://js.syncfusion.com/demos/ejServices/api/OlapChart/WordExport)
@@ -160,7 +162,7 @@ Response: Word document
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 public void WordExport()
 {
     PivotChartWordExport pivotChartWordExport = new PivotChartWordExport();
@@ -169,7 +171,8 @@ public void WordExport()
     pivotChartWordExport.ExportToWord(chartParams);
 }
 
-~~~ 
+{% endhighlight %}
+
 ## PdfExport
 
 [POST/Api/OlapChart/PdfExport](http://js.syncfusion.com/demos/ejServices/api/OlapChart/PdfExport)
@@ -192,7 +195,7 @@ Response: PDF document
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 public void PdfExport()
 {
     PivotChartPDFExport pivotChartPDFExport = new PivotChartPDFExport();
@@ -201,7 +204,8 @@ public void PdfExport()
     pivotChartPDFExport.ExportToPDF(chartParams);
 }
 
-~~~ 
+{% endhighlight %}
+
 ## ImageExport
 
 [POST/Api/OlapChart/ImageExport](http://js.syncfusion.com/demos/ejServices/api/OlapChart/ImageExport)
@@ -224,7 +228,7 @@ Response: Image file
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 public void ImageExport()
 {
     PivotChartImageExport pivotChartImageExport = new PivotChartImageExport();
@@ -233,4 +237,4 @@ public void ImageExport()
     pivotChartImageExport.ExportToImage(chartParams);
 }
 
-~~~ 
+{% endhighlight %}
