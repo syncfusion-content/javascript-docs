@@ -6,7 +6,7 @@ control: spellcheck
 documentation: ug
 keywords: customization, spellcheck customization, misspell word appearance, restrict suggestion count 
 ---
-# SpellCheck Customization
+# SpellCheck customization
 
 The Essential JavaScript SpellCheck provides option to customize for the following scenarios.
 

@@ -6,14 +6,14 @@ control: spellcheck
 documentation: ug
 keywords: operations, spellcheck modes, dialog mode, context menu mode,  custom menu, handling menu actions, handling dialog actions
 ---
-# SpellCheck Operations
+# SpellCheck operations
 
 Essential SpellCheck provides two ways to perform the spellcheck operation(error correction). They are,
 
 * Dialog Mode 
 * Context Menu Mode  
 
-## Dialog Mode
+## Dialog mode
 
 ### Description
 
@@ -49,7 +49,7 @@ $(function () {
 
 {% endhighlight %}
 
-### Handling Dialog Actions
+### Handling dialog actions
 
 To define the specific actions before the dialog window open, the client-side event [dialogBeforeOpen](/api/js/ejspellcheck#events:dialogbeforeopen) can be used as depicted in the below code example.
 
@@ -184,7 +184,7 @@ You can get the corrected text content details before updating it into target el
 
 {% endhighlight %}
 
-### Context Menu mode
+### Context menu mode
 
 SpellCheck provides default context menu options to perform the spellcheck operations. It also allows to define additional custom context menu options.
 
@@ -193,7 +193,7 @@ The options that are available under [contextMenuSettings](/api/js/ejspellcheck#
 * [**enable**](/api/js/ejspellcheck#members:contextmenusettings-enable) - Enables/disables the context menu option in SpellCheck.
 * [**menuItems**](/api/js/ejspellcheck#members:contextmenusettings-menuitems) - Contains the options to perform spellcheck operations.
 
-## Default Menu Options
+## Default menu options
 
 The menu items contains the following options to perform the spellcheck operation.
 
@@ -227,7 +227,7 @@ The following code snippet shows how to enable the context menu settings in Spel
 
 N> For default menu items, the id must be defined the same as mentioned in the above code example – as we have processed the menus based on this id within our source.
 
-## Custom Menu Options
+## Custom menu options
 
 Apart from the default available options, it is also possible to add custom menu options to the context-menu list.
 
@@ -260,7 +260,7 @@ The following code example depicts how **to add the custom menu items** into the
 
 N> The **id** given for the custom menu items **must be unique**.
 
-## Handling Menu Actions
+## Handling menu actions
 
 The client-side event [contextClick](/api/js/ejspellcheck#events:contextClick) can be used to define specific actions when a click made on the custom menu items. The following code example describes the above behavior.
 
