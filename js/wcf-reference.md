@@ -12,6 +12,7 @@ platform: js-WCF
 The details of WCF Service reference has been shown in the below table.
 
 ### Northwind Data Service
+
 |  WCF | Description  |
 |---|---|
 |[Northwind Data Service for Grid](WCF\Northwind#Grid)|It is used to retrieve the records from “Orders” and "Customers" table in Remote Data Service.|

@@ -9,7 +9,7 @@ keywords: Chart,ejChart , syncfusion, ejChart webapi
 
 ## Export
 
-[POST&nbsp;&nbsp;/Api/Chart/Export](http://js.syncfusion.com/demos/ejServices/api/Chart/Export)
+[POST/Api/Chart/Export](http://js.syncfusion.com/demos/ejServices/api/Chart/Export)
 
 It is used to export the Chart control to the specified format.
 
@@ -28,19 +28,19 @@ Content-Type: application/octet-stream
 
 ### Code example 
 
-```javascript
+~~~ javascript
 
 $("#chartcontainer").ejChart(
 	 { exportSettings: { angle: 180, action: "http://js.syncfusion.com/demos/ejServices/api/Chart/Export" },
 });
 
-```
+~~~ 
 
 >The above example will export the Chart into specified file format.
 
 ## SvgExport
 
-[POST&nbsp;&nbsp;/Api/Chart/SvgExport](http://js.syncfusion.com/demos/ejServices/api/Chart/SvgExport)
+[POST/Api/Chart/SvgExport](http://js.syncfusion.com/demos/ejServices/api/Chart/SvgExport)
 
 It is used to export the Chart control as an SVG image.
 
@@ -59,18 +59,18 @@ Content-Type: application/octet-stream
 
 ### Code example 
 
-```javascript
+~~~ javascript
 
 $("#chartcontainer").ejChart(
 	 {exportSettings: { type: "svg", angle: 180, action: "http://js.syncfusion.com/demos/ejServices/api/Chart/SvgExport" },
 });
 
-```
+~~~ 
 >The above example will export the Chart as an SVG image.
 
 ## ExcelExport
 
-[POST&nbsp;&nbsp;/Api/Chart/ExcelExport](http://js.syncfusion.com/demos/ejServices/api/Chart/ExcelExport)
+[POST/Api/Chart/ExcelExport](http://js.syncfusion.com/demos/ejServices/api/Chart/ExcelExport)
 
 It is used to export the Chart control as an Excel document.
 
@@ -89,18 +89,18 @@ Content-Type: application/octet-stream
 
 ### Code example 
 
-```javascript
+~~~ javascript
 
 $("#chartcontainer").ejChart(
 	 {exportSettings: { type: "xlsx", angle: 180, action: "http://js.syncfusion.com/demos/ejServices/api/Chart/ExcelExport" },
 });
 
-```
+~~~ 
 >The above example will export the Chart as an Excel file.
 
 ## WordExport
 
-[POST&nbsp;&nbsp;/Api/Chart/WordExport](http://js.syncfusion.com/demos/ejServices/api/Chart/WordExport)
+[POST/Api/Chart/WordExport](http://js.syncfusion.com/demos/ejServices/api/Chart/WordExport)
 
 It is used to export the Chart control as a Word document.
 
@@ -119,18 +119,18 @@ Content-Type: application/octet-stream
 
 ### Code example 
 
-```javascript
+~~~ javascript
 
 $("#chartcontainer").ejChart(
 	 {exportSettings: { type: "docx", angle: 180, action: "http://js.syncfusion.com/demos/ejServices/api/Chart/WordExport" },
 });
 
-```
+~~~ 
 >The above example will export the Chart as an Word file.
 
 ## PdfExport
 
-[POST&nbsp;&nbsp;/Api/Chart/PdfExport](http://js.syncfusion.com/demos/ejServices/api/Chart/PdfExport)
+[POST/Api/Chart/PdfExport](http://js.syncfusion.com/demos/ejServices/api/Chart/PdfExport)
 
 It is used to export the Chart control as a PDF document.
 
@@ -149,18 +149,18 @@ Content-Type: application/octet-stream
 
 ### Code example 
 
-```javascript
+~~~ javascript
 
 $("#chartcontainer").ejChart(
 	 {exportSettings: { type: "pdf", angle: 180, action: "http://js.syncfusion.com/demos/ejServices/api/Chart/PdfExport" },
 });
 
-```
+~~~ 
 >The above example will export the Chart as PDF file.
 
 ## ImageExport
 
-[POST&nbsp;&nbsp;/Api/Chart/ImageExport](http://js.syncfusion.com/demos/ejServices/api/Chart/ImageExport)
+[POST/Api/Chart/ImageExport](http://js.syncfusion.com/demos/ejServices/api/Chart/ImageExport)
 
 It is used to export the chart control as an image (PNG/JPG).
 
@@ -179,13 +179,13 @@ Content-Type: application/octet-stream
 
 ### Code example 
 
-```javascript
+~~~ javascript
 
 $("#chartcontainer").ejChart(
 	 {exportSettings: { type: "jpg", angle: 180, action: "http://js.syncfusion.com/demos/ejServices/api/Chart/ImageExport" },
 });
 
-```
+~~~ 
 >The above example will export the Chart as JPG Image.
 
 

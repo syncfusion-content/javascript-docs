@@ -9,7 +9,7 @@ keywords: PivotTreeMAp , syncfusion, PivotTreeMAp WCF
 
 ## Initialize
 
-[POST&nbsp;&nbsp;/WCF/PivotTreeMAp/Initialize](http://js.syncfusion.com/demos/ejServices/wcf/PivotTreeMAp/Olap.svc)
+[POST/WCF/PivotTreeMAp/Initialize](http://js.syncfusion.com/demos/ejServices/wcf/PivotTreeMAp/Olap.svc)
 
 It fetches the OLAP data required to render the PivotTreeMap control from server-end.
 
@@ -31,7 +31,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-```csharp
+~~~ csharp
 
 public Dictionary<string, object> Initialize(string action, string currentReport, string customObject)
 {
@@ -48,11 +48,11 @@ public Dictionary<string, object> Initialize(string action, string currentReport
     return htmlHelper.GetJsonData(action, DataManager);
 }
 
-```
+~~~ 
 
 ## Drill
 
-[POST&nbsp;&nbsp;/WCF/PivotTreeMAp/Drill](http://js.syncfusion.com/demos/ejServices/wcf/PivotTreeMAp/Olap.svc)
+[POST/WCF/PivotTreeMAp/Drill](http://js.syncfusion.com/demos/ejServices/wcf/PivotTreeMAp/Olap.svc)
 
 It fetches the OLAP data required to render the drilled PivotTreeMap.
 
@@ -75,7 +75,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-```csharp
+~~~ csharp
 
 public Dictionary<string, object> Drill(string action, string drillInfo, string olapReport, string customObject)
 {
@@ -95,4 +95,4 @@ public Dictionary<string, object> Drill(string action, string drillInfo, string 
     return htmlHelper.GetJsonData(action, DataManager, drillInfo);
 }
 
-```
+~~~ 

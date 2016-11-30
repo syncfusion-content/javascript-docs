@@ -9,7 +9,7 @@ keywords: PivotChart , syncfusion, PivotChart WCF
 
 ## Initialize
 
-[POST&nbsp;&nbsp;/WCF/PivotChart/Initialize](http://js.syncfusion.com/demos/ejServices/wcf/PivotChart/Relational.svc)
+[POST/WCF/PivotChart/Initialize](http://js.syncfusion.com/demos/ejServices/wcf/PivotChart/Relational.svc)
 
 It fetches the OLAP data which is required to initialize the PivotChart from server-end.
 
@@ -31,7 +31,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-```csharp
+~~~ csharp
 
 public Dictionary<string, object> Initialize(string action, string currentReport, string customObject)
 {
@@ -39,11 +39,11 @@ public Dictionary<string, object> Initialize(string action, string currentReport
     return PivotChart.GetJsonData(action, ProductSales.GetSalesData());
 }
 
-```
+~~~ 
 
 ## Drill
 
-[POST&nbsp;&nbsp;/WCF/PivotChart/Drill](http://js.syncfusion.com/demos/ejServices/wcf/PivotChart/Relational.svc)
+[POST/WCF/PivotChart/Drill](http://js.syncfusion.com/demos/ejServices/wcf/PivotChart/Relational.svc)
 
 It fetches the drilled OLAP data which is required to render the PivotChart control from server-end.
 
@@ -64,7 +64,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-```csharp
+~~~ csharp
 
 public Dictionary<string, object> Drill(string action, string drilledSeries)
 {
@@ -72,4 +72,4 @@ public Dictionary<string, object> Drill(string action, string drilledSeries)
     return PivotChart.GetJsonData(action, ProductSales.GetSalesData(), drilledSeries);
 }
 
-```
+~~~ 

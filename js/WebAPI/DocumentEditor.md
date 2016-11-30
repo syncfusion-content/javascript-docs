@@ -9,7 +9,7 @@ keywords: documenteditor,syncfusion,documenteditor webapi
 
 ## Import
 
-[POST&nbsp;&nbsp;/Api/DocumentEditor/Import](http://js.syncfusion.com/demos/ejServices/api/DocumentEditor/Import)
+[POST/Api/DocumentEditor/Import](http://js.syncfusion.com/demos/ejServices/api/DocumentEditor/Import)
 
 It loads the document from specified path in DocumentEditor.
 
@@ -31,19 +31,19 @@ Content-Type:  application/json; charset=utf-8
 
 Response (JSON):   
 
-```javascript
+~~~ javascript
 {
 AbstractLists,
 BackgroundColor,
 Lists,
 Sections
 }
-```
+~~~ 
 
 ### Code example 
 
 
-```javascript
+~~~ javascript
 
 URL: http://js.syncfusion.com/demos/ejServices/api/DocumentEditor/Import
 
@@ -55,15 +55,15 @@ $.ajax({
         crossDomain: true,
         data: formData,
         dataType: "JSON",
-        url: “http://js.syncfusion.com/demos/ejServices/api/DocumentEditor/Import”,
+        url: "http://js.syncfusion.com/demos/ejServices/api/DocumentEditor/Import",
 })
 
-```
+~~~ 
 
 
 ## LoadDefault
 
-[POST&nbsp;&nbsp;/Api/DocumentEditor/LoadDefault](http://js.syncfusion.com/demos/ejServices/api/DocumentEditor/LoadDefaul)
+[POST/Api/DocumentEditor/LoadDefault](http://js.syncfusion.com/demos/ejServices/api/DocumentEditor/LoadDefaul)
 
 It loads the default document in DocumentEditor.
 
@@ -79,18 +79,18 @@ Content-Type:  application/json; charset=utf-8
 
 Response (JSON):   
 
-```javascript
+~~~ javascript
 {
 AbstractLists,
 BackgroundColor,
 Lists,
 Sections
 }
-```
+~~~ 
 
 ### Code example 
 
-```javascript
+~~~ javascript
 
 URL: http://js.syncfusion.com/demos/ejServices/api/DocumentEditor/LoadDefault 
 
@@ -102,7 +102,7 @@ $.ajax({
         crossDomain: true,
         data: formData,
         dataType: "JSON",
-        url: “http://js.syncfusion.com/demos/ejServices/api/DocumentEditor/LoadDefault”,
+        url: "http://js.syncfusion.com/demos/ejServices/api/DocumentEditor/LoadDefault",
 })
 
-```
+~~~ 

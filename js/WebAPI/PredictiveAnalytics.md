@@ -9,7 +9,7 @@ keywords: ejPredictiveAnalytics,PredictiveAnalytics, syncfusion, PredictiveAnaly
 
 ## Load
 
-[POST&nbsp;&nbsp;/Api/PredictiveAnalytics/Load](http://js.syncfusion.com/demos/ejServices/api/PredictiveAnalytics/Load)
+[POST/Api/PredictiveAnalytics/Load](http://js.syncfusion.com/demos/ejServices/api/PredictiveAnalytics/Load)
 
 This section explains the usage of Predictive Analytics API in JavaScript. This consumes the PMML and input data to retrieve the predicted result.
 
@@ -28,7 +28,7 @@ Content-Type: application/json;odata=verbose;charset=utf-8
 
 Response (JSON):   
 
-```javascript
+~~~ javascript
 
 [{
     "transactionID":1,
@@ -38,13 +38,13 @@ Response (JSON):
     "Rule_Association":"[]"
 }]
 
-```
+~~~ 
 
 
 ### Code example 
 
 
-```javascript
+~~~ javascript
 
 $.ajax({
         type: "POST",
@@ -55,4 +55,4 @@ $.ajax({
         processdata: true,
  });
 
-```
+~~~ 

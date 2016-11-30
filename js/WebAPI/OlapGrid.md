@@ -9,7 +9,7 @@ keywords: PivotGrid , syncfusion, PivotGrid webapi
 
 ## Initialize
 
-[POST&nbsp;&nbsp;/Api/OlapGrid/Initialize](http://js.syncfusion.com/demos/ejServices/api/OlapGrid/Initialize)
+[POST/Api/OlapGrid/Initialize](http://js.syncfusion.com/demos/ejServices/api/OlapGrid/Initialize)
 
 It fetches the OLAP data required to render the PivotGrid initially from server-end.
 
@@ -32,7 +32,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-```csharp
+~~~ csharp
 public Dictionary<string, object> Initialize(Dictionary<string, object> jsonResult)
 {
     OlapDataManager DataManager = new OlapDataManager(connectionString);
@@ -40,11 +40,11 @@ public Dictionary<string, object> Initialize(Dictionary<string, object> jsonResu
     return htmlHelper.GetJsonData(jsonResult["action"].ToString(), DataManager, jsonResult.ContainsKey("gridLayout") ? jsonResult["gridLayout"].ToString() : null, Convert.ToBoolean(jsonResult["enablePivotFieldList"].ToString()));
 }
 
-```
+~~~ 
 
 ## Drill
 
-[POST&nbsp;&nbsp;/Api/OlapGrid/Drill](http://js.syncfusion.com/demos/ejServices/api/OlapGrid/Drill)
+[POST/Api/OlapGrid/Drill](http://js.syncfusion.com/demos/ejServices/api/OlapGrid/Drill)
 
 It fetches the OLAP data required to render the PivotGrid control after drilling it.
 
@@ -69,7 +69,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-```csharp
+~~~ csharp
 public Dictionary<string, object> Drill(Dictionary<string, object> jsonResult)
 {
     OlapDataManager DataManager = new OlapDataManager(connectionString);
@@ -77,11 +77,11 @@ public Dictionary<string, object> Drill(Dictionary<string, object> jsonResult)
     return htmlHelper.GetJsonData(jsonResult["action"].ToString(), connectionString, DataManager, jsonResult["cellPosition"].ToString(), jsonResult["headerInfo"].ToString(), jsonResult["layout"].ToString());
 }
 
-```
+~~~ 
 
 ## DropNode
 
-[POST&nbsp;&nbsp;/Api/OlapGrid/DropNode](http://js.syncfusion.com/demos/ejServices/api/OlapGrid/DropNode)
+[POST/Api/OlapGrid/DropNode](http://js.syncfusion.com/demos/ejServices/api/OlapGrid/DropNode)
 
 It fetches the data required to render the control after performing node drop operation.
 
@@ -106,7 +106,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-```csharp
+~~~ csharp
 public Dictionary<string, object> DropNode(Dictionary<string, object> jsonResult)
 {
 	OlapDataManager DataManager = new OlapDataManager(connectionString);
@@ -114,10 +114,10 @@ public Dictionary<string, object> DropNode(Dictionary<string, object> jsonResult
 	return htmlHelper.GetJsonData(jsonResult["action"].ToString(), DataManager, jsonResult["dropType"].ToString(), jsonResult["nodeInfo"].ToString(), jsonResult.ContainsKey("filterParams") ? jsonResult["filterParams"].ToString() : null, jsonResult["gridLayout"].ToString(), true);
 }
 
-```
+~~~ 
 ## Filtering
 
-[POST&nbsp;&nbsp;/Api/OlapGrid/Filtering](http://js.syncfusion.com/demos/ejServices/api/OlapGrid/Filtering)
+[POST/Api/OlapGrid/Filtering](http://js.syncfusion.com/demos/ejServices/api/OlapGrid/Filtering)
 
 It fetches the OLAP data required to render the control after performing filtering.
 
@@ -140,7 +140,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-```csharp
+~~~ csharp
 public Dictionary<string, object> Filtering(Dictionary<string, object> jsonResult)
 {
 	OlapDataManager DataManager = new OlapDataManager(connectionString);
@@ -148,11 +148,11 @@ public Dictionary<string, object> Filtering(Dictionary<string, object> jsonResul
 	return htmlHelper.GetJsonData(jsonResult["action"].ToString(), connectionString, DataManager, null, jsonResult["filterParams"].ToString(), jsonResult["gridLayout"].ToString());
 }
 
-```
+~~~ 
 
 ## FetchMembers
 
-[POST&nbsp;&nbsp;/Api/OlapGrid/FetchMembers](http://js.syncfusion.com/demos/ejServices/api/OlapGrid/FetchMembers)
+[POST/Api/OlapGrid/FetchMembers](http://js.syncfusion.com/demos/ejServices/api/OlapGrid/FetchMembers)
 
 It fetches the members of the selected hierarchy to render the member editor.
 
@@ -174,7 +174,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-```csharp
+~~~ csharp
 public Dictionary<string, object> FetchMembers(Dictionary<string, object> jsonResult)
 {
 	OlapDataManager DataManager = new OlapDataManager(connectionString);
@@ -182,12 +182,12 @@ public Dictionary<string, object> FetchMembers(Dictionary<string, object> jsonRe
 	return htmlHelper.GetJsonData(jsonResult["action"].ToString(), DataManager, null, jsonResult["headerTag"].ToString());
 }
 
-```
+~~~ 
 
 
 ## Paging
 
-[POST&nbsp;&nbsp;/Api/OlapGrid/Paging](http://js.syncfusion.com/demos/ejServices/api/OlapGrid/Paging)
+[POST/Api/OlapGrid/Paging](http://js.syncfusion.com/demos/ejServices/api/OlapGrid/Paging)
 
 It fetches the OLAP data required to render the specific page of PivotGrid with paging enabled.
 
@@ -211,7 +211,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-```csharp
+~~~ csharp
 public Dictionary<string, object> Paging(Dictionary<string, object> jsonResult)
 {
 	OlapDataManager DataManager = new OlapDataManager(connectionString);
@@ -219,11 +219,11 @@ public Dictionary<string, object> Paging(Dictionary<string, object> jsonResult)
 	return htmlHelper.GetJsonData(jsonResult["action"].ToString(), DataManager, jsonResult["layout"].ToString());
 }
 
-```
+~~~ 
 
 ## RemoveButton
 
-[POST&nbsp;&nbsp;/Api/OlapGrid/RemoveButton](http://js.syncfusion.com/demos/ejServices/api/OlapGrid/RemoveButton)
+[POST/Api/OlapGrid/RemoveButton](http://js.syncfusion.com/demos/ejServices/api/OlapGrid/RemoveButton)
 
 It fetches the data required to render the control after removing a button.
 
@@ -246,7 +246,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-```csharp
+~~~ csharp
 public Dictionary<string, object> RemoveButton(Dictionary<string, object> jsonResult)
 {
 	OlapDataManager DataManager = new OlapDataManager(connectionString);
@@ -254,11 +254,11 @@ public Dictionary<string, object> RemoveButton(Dictionary<string, object> jsonRe
 	return htmlHelper.GetJsonData(jsonResult["action"].ToString(), connectionString, DataManager, null, jsonResult["headerInfo"].ToString(), jsonResult["gridLayout"].ToString());
 }
 
-```
+~~~ 
 
 ## ExpandMember
 
-[POST&nbsp;&nbsp;/Api/OlapGrid/ExpandMember](http://js.syncfusion.com/demos/ejServices/api/OlapGrid/ExpandMember)
+[POST/Api/OlapGrid/ExpandMember](http://js.syncfusion.com/demos/ejServices/api/OlapGrid/ExpandMember)
 
 It fetches the data to render children nodes of a member in Member Editor Tree.
 
@@ -283,7 +283,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-```csharp
+~~~ csharp
 public Dictionary<string, object> ExpandMember(Dictionary<string, object> jsonResult)
 {
 	OlapDataManager DataManager = new OlapDataManager(connectionString);
@@ -291,11 +291,11 @@ public Dictionary<string, object> ExpandMember(Dictionary<string, object> jsonRe
 	return htmlHelper.GetJsonData(jsonResult["action"].ToString(), DataManager, Convert.ToBoolean(jsonResult["checkedStatus"].ToString()), jsonResult["parentNode"].ToString(), jsonResult["tag"].ToString(), jsonResult["cubeName"].ToString());
 }
 
-```
+~~~ 
 
 ## Export
 
-[POST&nbsp;&nbsp;/Api/OlapGrid/Export](http://js.syncfusion.com/demos/ejServices/api/OlapGrid/Export)
+[POST/Api/OlapGrid/Export](http://js.syncfusion.com/demos/ejServices/api/OlapGrid/Export)
 
 It is used to export the PivotGrid data to specified format.
 
@@ -315,7 +315,7 @@ Response: file
 
 ### Code example 
 
-```csharp
+~~~ csharp
 public void Export()
 {
 	string args = HttpContext.Current.Request.Form.GetValues(0)[0];
@@ -324,11 +324,11 @@ public void Export()
 	htmlHelper.ExportPivotGrid(DataManager, args, fileName, System.Web.HttpContext.Current.Response);
 }
 
-```
+~~~ 
 
 ## SaveReport
 
-[POST&nbsp;&nbsp;/Api/OlapGrid/SaveReport](http://js.syncfusion.com/demos/ejServices/api/OlapGrid/SaveReport)
+[POST/Api/OlapGrid/SaveReport](http://js.syncfusion.com/demos/ejServices/api/OlapGrid/SaveReport)
 
 It saves the current report to database with the specified name.
 
@@ -352,7 +352,7 @@ Response: None
 
 ### Code example 
 
-```csharp
+~~~ csharp
 public Dictionary<string, object> SaveReport(Dictionary<string, object> jsonResult)
 {
     string mode = jsonResult["operationalMode"].ToString();
@@ -382,10 +382,10 @@ public Dictionary<string, object> SaveReport(Dictionary<string, object> jsonResu
     return null;
 }
 
-```
+~~~ 
 ## LoadReportFromDB
 
-[POST&nbsp;&nbsp;/Api/OlapGrid/LoadReportFromDB](http://js.syncfusion.com/demos/ejServices/api/OlapGrid/LoadReportFromDB)
+[POST/Api/OlapGrid/LoadReportFromDB](http://js.syncfusion.com/demos/ejServices/api/OlapGrid/LoadReportFromDB)
 
 It loads a report from the database and refreshes the control with it.
 
@@ -412,7 +412,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-```csharp
+~~~ csharp
 public Dictionary<string, object> LoadReportFromDB(Dictionary<string, object> jsonResult)
 {
     string mode = jsonResult["operationalMode"].ToString();
@@ -454,11 +454,11 @@ public Dictionary<string, object> LoadReportFromDB(Dictionary<string, object> js
     return dictionary;
 }
 
-```
+~~~ 
 
 ## DeferUpdate
 
-[POST&nbsp;&nbsp;/Api/OlapGrid/DeferUpdate](http://js.syncfusion.com/demos/ejServices/api/OlapGrid/DeferUpdate)
+[POST/Api/OlapGrid/DeferUpdate](http://js.syncfusion.com/demos/ejServices/api/OlapGrid/DeferUpdate)
 
 It fetches the data with respect to the report available at that instant (i.e) updates the control with current report.
 
@@ -480,7 +480,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-```csharp
+~~~ csharp
 public Dictionary<string, object> DeferUpdate(Dictionary<string, object> jsonResult)
 {
     OlapDataManager DataManager = new OlapDataManager(connectionString);
@@ -488,11 +488,11 @@ public Dictionary<string, object> DeferUpdate(Dictionary<string, object> jsonRes
     return htmlHelper.GetJsonData(jsonResult["action"].ToString(), DataManager, null, jsonResult["filterParams"].ToString());
 }
 
-```
+~~~ 
 
 ## ExcelExport
 
-[POST&nbsp;&nbsp;/Api/OlapGrid/ExcelExport](http://js.syncfusion.com/demos/ejServices/api/OlapGrid/ExcelExport)
+[POST/Api/OlapGrid/ExcelExport](http://js.syncfusion.com/demos/ejServices/api/OlapGrid/ExcelExport)
 
 It exports the PivotGrid control at that instant to the Excel format.
 
@@ -512,7 +512,7 @@ Response: Excel document
 
 ### Code example 
 
-```csharp
+~~~ csharp
 public void ExcelExport()
 {
 	PivotGridExcelExport pGrid = new PivotGridExcelExport();
@@ -520,11 +520,11 @@ public void ExcelExport()
 	pGrid.ExportToExcel(string.Empty, args, HttpContext.Current.Response);
 }
 
-```
+~~~ 
 
 ## PdfExport
 
-[POST&nbsp;&nbsp;/Api/OlapGrid/PdfExport](http://js.syncfusion.com/demos/ejServices/api/OlapGrid/PdfExport)
+[POST/Api/OlapGrid/PdfExport](http://js.syncfusion.com/demos/ejServices/api/OlapGrid/PdfExport)
 
 It exports the PivotGrid control at the instant to PDF document.
 
@@ -544,7 +544,7 @@ Response: PDF document
 
 ### Code example 
 
-```csharp
+~~~ csharp
 public void PdfExport()
 {
 	PivotGridPDFExport pGrid = new PivotGridPDFExport();
@@ -552,11 +552,11 @@ public void PdfExport()
 	pGrid.ExportToPDF(string.Empty, args, HttpContext.Current.Response);
 }
 
-```
+~~~ 
 
 ## WordExport
 
-[POST&nbsp;&nbsp;/Api/OlapGrid/WordExport](http://js.syncfusion.com/demos/ejServices/api/OlapGrid/WordExport)
+[POST/Api/OlapGrid/WordExport](http://js.syncfusion.com/demos/ejServices/api/OlapGrid/WordExport)
 
 It exports the PivotGrid control at the instant to Word document.
 
@@ -576,7 +576,7 @@ Response: Word document
 
 ### Code example 
 
-```csharp
+~~~ csharp
 public void WordExport()
 {
 	PivotGridWordExport pGrid = new PivotGridWordExport();
@@ -584,11 +584,11 @@ public void WordExport()
 	pGrid.ExportToWord(string.Empty, args, HttpContext.Current.Response);
 }
 
-```
+~~~ 
 
 ## CsvExport
 
-[POST&nbsp;&nbsp;/Api/OlapGrid/CsvExport](http://js.syncfusion.com/demos/ejServices/api/OlapGrid/CsvExport)
+[POST/Api/OlapGrid/CsvExport](http://js.syncfusion.com/demos/ejServices/api/OlapGrid/CsvExport)
 
 It exports the PivotGrid control at the instant to CSV document.
 
@@ -608,7 +608,7 @@ Response: CSV document
 
 ### Code example 
 
-```csharp
+~~~ csharp
 public void CsvExport()
 {
 	PivotGridCSVExport pGrid = new PivotGridCSVExport();
@@ -616,4 +616,4 @@ public void CsvExport()
 	pGrid.ExportToCSV(string.Empty, args, HttpContext.Current.Response);
 }
 
-```
+~~~ 

@@ -9,7 +9,7 @@ keywords: RelationalGrid, syncfusion, RelationalGrid webapi
 
 ## Initialize
 
-[POST&nbsp;&nbsp;/Api/RelationalGrid/Initialize](http://js.syncfusion.com/demos/ejServices/api/RelationalGrid/Initialize)
+[POST/Api/RelationalGrid/Initialize](http://js.syncfusion.com/demos/ejServices/api/RelationalGrid/Initialize)
 
 It fetches the data required to render the PivotGrid initially.
 
@@ -30,18 +30,18 @@ Response: serialized JSON string
 
 ### Code example 
 
-```csharp
+~~~ csharp
 public Dictionary<string, object> Initialize(Dictionary<string, object> jsonResult)
 {
     htmlHelper.PivotReport = BindDefaultData(); 
     return htmlHelper.GetJsonData(jsonResult["action"].ToString(), ProductSales.GetSalesData());
 }
 
-```
+~~~ 
 
 ## FetchMembers
 
-[POST&nbsp;&nbsp;/Api/RelationalGrid/FetchMembers](http://js.syncfusion.com/demos/ejServices/api/RelationalGrid/FetchMembers)
+[POST/Api/RelationalGrid/FetchMembers](http://js.syncfusion.com/demos/ejServices/api/RelationalGrid/FetchMembers)
 
 It fetches the members of the selected field to render the member editor tree.
 
@@ -64,18 +64,18 @@ Response: serialized JSON string
 
 ### Code example 
 
-```csharp
+~~~ csharp
 public Dictionary<string, object> FetchMembers(Dictionary<string, object> jsonResult)
 {
     htmlHelper.PopulateData(jsonResult["currentReport"].ToString());
     return htmlHelper.GetJsonData(jsonResult["action"].ToString(), ProductSales.GetSalesData(), jsonResult["headerTag"].ToString(), jsonResult["sortedHeaders"].ToString());
 }
 
-```
+~~~ 
 
 ## Filtering
 
-[POST&nbsp;&nbsp;/Api/RelationalGrid/Filtering](http://js.syncfusion.com/demos/ejServices/api/RelationalGrid/Filtering)
+[POST/Api/RelationalGrid/Filtering](http://js.syncfusion.com/demos/ejServices/api/RelationalGrid/Filtering)
 
 It fetches the data required to render the PivotGrid control on performing filtering action.
 
@@ -98,18 +98,18 @@ Response: serialized JSON string
 
 ### Code example 
 
-```csharp
+~~~ csharp
 public Dictionary<string, object> Filtering(Dictionary<string, object> jsonResult)
 {
     htmlHelper.PopulateData(jsonResult["currentReport"].ToString());
     return htmlHelper.GetJsonData(jsonResult["action"].ToString(), ProductSales.GetSalesData(), jsonResult["filterParams"].ToString(), jsonResult["sortedHeaders"].ToString());
 }
 
-```
+~~~ 
 
 ## ModifyNodeState
 
-[POST&nbsp;&nbsp;/Api/RelationalGrid/ModifyNodeState](http://js.syncfusion.com/demos/ejServices/api/RelationalGrid/ModifyNodeState)
+[POST/Api/RelationalGrid/ModifyNodeState](http://js.syncfusion.com/demos/ejServices/api/RelationalGrid/ModifyNodeState)
 
 It fetches the relational data required to render the PivotGrid control on selecting/unselecting nodes in Field list.
 
@@ -135,18 +135,18 @@ Response: serialized JSON string
 
 ### Code example 
 
-```csharp
+~~~ csharp
 public Dictionary<string, object> ModifyNodeState(Dictionary<string, object> jsonResult)
 {
     htmlHelper.PopulateData(jsonResult["currentReport"].ToString());
     return htmlHelper.GetJsonData(jsonResult["action"].ToString(), ProductSales.GetSalesData(), jsonResult["headerTag"].ToString(), jsonResult["dropAxis"].ToString(), jsonResult["filterParams"].ToString(), jsonResult["sortedHeaders"].ToString());
 }
 
-```
+~~~ 
 
 ## DropNode
 
-[POST&nbsp;&nbsp;/Api/RelationalGrid/DropNode](http://js.syncfusion.com/demos/ejServices/api/RelationalGrid/DropNode)
+[POST/Api/RelationalGrid/DropNode](http://js.syncfusion.com/demos/ejServices/api/RelationalGrid/DropNode)
 
 It fetches the relational data required to render the PivotGrid control on node drop action.
 
@@ -171,18 +171,18 @@ Response: serialized JSON string
 
 ### Code example 
 
-```csharp
+~~~ csharp
 public Dictionary<string, object> DropNode(Dictionary<string, object> jsonResult)
 {
     htmlHelper.PopulateData(jsonResult["currentReport"].ToString());
     return htmlHelper.GetJsonData(jsonResult["action"].ToString(), ProductSales.GetSalesData(), jsonResult["dropAxis"].ToString(), jsonResult["headerTag"].ToString(), jsonResult.ContainsKey("filterParams") ? jsonResult["filterParams"].ToString() : null, jsonResult["sortedHeaders"].ToString());
 }
 
-```
+~~~ 
 
 ## Sorting
 
-[POST&nbsp;&nbsp;/Api/RelationalGrid/Sorting](http://js.syncfusion.com/demos/ejServices/api/RelationalGrid/Sorting)
+[POST/Api/RelationalGrid/Sorting](http://js.syncfusion.com/demos/ejServices/api/RelationalGrid/Sorting)
 
 It fetches the sorted data to render the PivotGrid control on performing sorting.
 
@@ -204,18 +204,18 @@ Response: serialized JSON string
 
 ### Code example 
 
-```csharp
+~~~ csharp
 public Dictionary<string, object> Sorting(Dictionary<string, object> jsonResult)
 {
     htmlHelper.PopulateData(jsonResult["currentReport"].ToString());
     retun htmlHelper.GetJsonData(jsonResult["action"].ToString(), ProductSales.GetSalesData(), jsonResult["sortedHeaders"].ToString());
 }
 
-```
+~~~ 
 
 ## CalculatedField
 
-[POST&nbsp;&nbsp;/Api/RelationalGrid/CalculatedField](http://js.syncfusion.com/demos/ejServices/api/RelationalGrid/CalculatedField)
+[POST/Api/RelationalGrid/CalculatedField](http://js.syncfusion.com/demos/ejServices/api/RelationalGrid/CalculatedField)
 
 It forms a calculated field in values area and fetches the data along with it to render the PivotGrid control.
 
@@ -237,18 +237,18 @@ Response: serialized JSON string
 
 ### Code example 
 
-```csharp
+~~~ csharp
 public Dictionary<string, object> CalculatedField(Dictionary<string, object> jsonResult)
 {
     htmlHelper.PopulateData(jsonResult["currentReport"].ToString());
     return htmlHelper.GetJsonData(jsonResult["action"].ToString(), ProductSales.GetSalesData(), null, jsonResult["headerTag"].ToString());
 }
 
-```
+~~~ 
 
 ## Export
 
-[POST&nbsp;&nbsp;/Api/RelationalGrid/Export](http://js.syncfusion.com/demos/ejServices/api/RelationalGrid/Export)
+[POST/Api/RelationalGrid/Export](http://js.syncfusion.com/demos/ejServices/api/RelationalGrid/Export)
 
 It is used to export the PivotGrid data to specified format.
 
@@ -268,7 +268,7 @@ Response: file
 
 ### Code example 
 
-```csharp
+~~~ csharp
 public void Export()
 {
     string args = HttpContext.Current.Request.Form.GetValues(0)[0];
@@ -278,11 +278,11 @@ public void Export()
     htmlHelper.ExportPivotGrid(ProductSales.GetSalesData(), args, fileName, System.Web.HttpContext.Current.Response);
 }
 
-```
+~~~ 
 
 ## SaveReport
 
-[POST&nbsp;&nbsp;/Api/RelationalGrid/SaveReport](http://js.syncfusion.com/demos/ejServices/api/RelationalGrid/SaveReport)
+[POST/Api/RelationalGrid/SaveReport](http://js.syncfusion.com/demos/ejServices/api/RelationalGrid/SaveReport)
 
 It saves the current report to database with the specified name.
 
@@ -305,7 +305,7 @@ Response: None
 
 ### Code example 
 
-```csharp
+~~~ csharp
 public Dictionary<string, object> SaveReport(Dictionary<string, object> jsonResult)
 {
     string mode = jsonResult["operationalMode"].ToString();
@@ -335,11 +335,11 @@ public Dictionary<string, object> SaveReport(Dictionary<string, object> jsonResu
     return null;
 }
 
-```
+~~~ 
 
 ## LoadReportFromDB
 
-[POST&nbsp;&nbsp;/Api/RelationalGrid/LoadReportFromDB](http://js.syncfusion.com/demos/ejServices/api/RelationalGrid/LoadReportFromDB)
+[POST/Api/RelationalGrid/LoadReportFromDB](http://js.syncfusion.com/demos/ejServices/api/RelationalGrid/LoadReportFromDB)
 
 It loads a report from the database and refreshes the control with it.
 
@@ -366,7 +366,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-```csharp
+~~~ csharp
 public Dictionary<string, object> LoadReportFromDB(Dictionary<string, object> jsonResult)
 {
     byte[] reportString = new byte[2 * 1024];
@@ -398,11 +398,11 @@ public Dictionary<string, object> LoadReportFromDB(Dictionary<string, object> js
 }
 
 
-```
+~~~ 
 
 ## DeferUpdate
 
-[POST&nbsp;&nbsp;/Api/RelationalGrid/DeferUpdate](http://js.syncfusion.com/demos/ejServices/api/RelationalGrid/DeferUpdate)
+[POST/Api/RelationalGrid/DeferUpdate](http://js.syncfusion.com/demos/ejServices/api/RelationalGrid/DeferUpdate)
 
 It fetches the data with respect to the report available at that instant (i.e) updates the control with current report.
 
@@ -424,18 +424,18 @@ Response: serialized JSON string
 
 ### Code example 
 
-```csharp
+~~~ csharp
 public Dictionary<string, object> DeferUpdate(Dictionary<string, object> jsonResult)
 {
     htmlHelper.PopulateData(jsonResult["currentReport"].ToString());
     return htmlHelper.GetJsonData(jsonResult["action"].ToString(), ProductSales.GetSalesData(), null, null, null, jsonResult["sortedHeaders"].ToString(), jsonResult["filterParams"].ToString());
 }
 
-```
+~~~ 
 
 ## CellEditing
 
-[POST&nbsp;&nbsp;/Api/RelationalGrid/CellEditing](http://js.syncfusion.com/demos/ejServices/api/RelationalGrid/CellEditing)
+[POST/Api/RelationalGrid/CellEditing](http://js.syncfusion.com/demos/ejServices/api/RelationalGrid/CellEditing)
 
 It rewrites the content of database on editing a cell.
 
@@ -459,11 +459,11 @@ Response: serialized JSON string
 
 ### Code example 
 
-```csharp
+~~~ csharp
 public Dictionary<string, object> CellEditing(Dictionary<string, object> jsonResult)
 {
     htmlHelper.PopulateData(jsonResult["currentReport"].ToString());
     return htmlHelper.GetJsonData(jsonResult["action"].ToString(), ProductSales.GetSalesData(), jsonResult["index"].ToString(), jsonResult["summaryValues"].ToString(), jsonResult["valueHeaders"].ToString());
 }
 
-```
+~~~ 

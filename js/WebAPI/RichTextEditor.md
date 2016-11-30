@@ -9,7 +9,7 @@ keywords: RTE, ejRTE, syncfusion, RTE webapi
 
 ## Import
 
-[POST&nbsp;&nbsp;/Api/RTE/Import](http://js.syncfusion.com/demos/ejservices/api/RTE/Import)
+[POST/Api/RTE/Import](http://js.syncfusion.com/demos/ejservices/api/RTE/Import)
 
 It is used to Import a Word document into RTE 
 
@@ -32,7 +32,7 @@ Response:  Returns the string containing the contents of the imported document.
 ### Code example 
 
 
-```javascript
+~~~ javascript
 
   $(function () {
             $("#rteExport").ejRTE({
@@ -45,13 +45,13 @@ Response:  Returns the string containing the contents of the imported document.
             });
    });
 
-```
+~~~ 
 
 >In the above example we have used the import option to import the Word document into RTE.
 
 ## WordExport
 
-[POST&nbsp;&nbsp;/Api/RTE/WordExport](http://js.syncfusion.com/demos/ejservices/api/RTE/WordExport)
+[POST/Api/RTE/WordExport](http://js.syncfusion.com/demos/ejservices/api/RTE/WordExport)
 
 It is used for exporting the contents of RTE into a Word document.
 
@@ -71,7 +71,7 @@ Content-Type: application/json; charset=utf-8
 ### Code example 
 
 
-```javascript
+~~~ javascript
 
   $(function () {
             $("#rteExport").ejRTE({
@@ -84,12 +84,12 @@ Content-Type: application/json; charset=utf-8
             });
    });
 
-```
+~~~ 
 >The above example shows that the RTE content has been exported in Word file.
 
 ## PdfExport
 
-[POST&nbsp;&nbsp;/Api/RTE/PdfExport](http://js.syncfusion.com/demos/ejservices/api/RTE/PdfExport)
+[POST/Api/RTE/PdfExport](http://js.syncfusion.com/demos/ejservices/api/RTE/PdfExport)
 
 It is used for exporting the contents of RTE into a PDF document.
 
@@ -109,7 +109,7 @@ Content-Type: application/json; charset=utf-8
 ### Code example 
 
 
-```javascript
+~~~ javascript
 
   $(function () {
             $("#rteExport").ejRTE({
@@ -121,6 +121,6 @@ Content-Type: application/json; charset=utf-8
                 }
             });
    });
-```
+~~~ 
 
 >The above example shows that the RTE content has been exported in PDF file.

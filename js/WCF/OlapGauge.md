@@ -9,7 +9,7 @@ keywords: PivotGauge , syncfusion, PivotGauge WCF
 
 ## Initialize
 
-[POST&nbsp;&nbsp;/WCF/PivotGauge/Initialize](http://js.syncfusion.com/demos/ejServices/wcf/PivotGauge/Olap.svc)
+[POST/WCF/PivotGauge/Initialize](http://js.syncfusion.com/demos/ejServices/wcf/PivotGauge/Olap.svc)
 
 It fetches the OLAP data required to render the PivotGauge control from server-end.
 
@@ -30,7 +30,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-```csharp
+~~~ csharp
 
 public Dictionary<string, object> Initialize(string action, string customObject)
 {
@@ -49,4 +49,4 @@ public Dictionary<string, object> Initialize(string action, string customObject)
     return htmlHelper.GetJsonData(action, DataManager);
 }
 
-```
+~~~ 
