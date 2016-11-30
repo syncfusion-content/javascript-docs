@@ -103,6 +103,8 @@ The client-side event [dialogOpen](/api/js/ejspellcheck#events:dialogopen) can b
 
 </script>
 
+{% endhighlight %}
+
 The following code example used to define some actions after the dialog close using the client-side event [dialogClose](/api/js/ejspellcheck#events:dialogclose).
 
 {% highlight html %}
