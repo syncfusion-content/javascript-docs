@@ -1,15 +1,15 @@
 ---
 layout: post
-title: webAPI reference for PivotClient
-description: webAPI reference for PivotClient
+title: WCF reference for PivotClient
+description: WCF reference for PivotClient
 documentation: API
-platform: js-webapi
-keywords: PivotClient, syncfusion, PivotClient webapi
+platform: js-wcf
+keywords: PivotClient, syncfusion, PivotClient WCF
 ---
 
 ## Initialize
 
-[POST/Api/OlapClient/Initialize](http://js.syncfusion.com/demos/ejServices/api/OlapClient/Initialize)
+[POST/WCF/PivotClient/Initialize](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc)
 
 It fetches the data required to render the PivotClient control initially.
 
@@ -32,18 +32,29 @@ Response: serialized JSON string
 ### Code example 
 
 ~~~ csharp
-public Dictionary<string, object> Initialize(Dictionary<string, object> jsonResult)
+
+public Dictionary<string, object> Initialize(string action, string customObject, string clientParams)
 {
-    OlapDataManager DataManager = new OlapDataManager(connectionString);
+    OlapDataManager DataManager = null;
+    dynamic customData = serializer.Deserialize<dynamic>(customObject.ToString());
+    var cultureIDInfo = new System.Globalization.CultureInfo("en-US").LCID;
+    if (customData is Dictionary<string, object> && customData.ContainsKey("Language"))
+    {
+        cultureIDInfo = new System.Globalization.CultureInfo((customData["Language"])).LCID;
+    }
+    connectionString = connectionString.Replace("" + cultureIDInfoval + "", "" + cultureIDInfo + "");
+    cultureIDInfoval = cultureIDInfo;
+    DataManager = new OlapDataManager(connectionString);
+    DataManager.Culture = new System.Globalization.CultureInfo(cultureIDInfo);
     DataManager.SetCurrentReport(CreateOlapReport());
-    return olapClientHelper.GetJsonData(jsonResult["action"].ToString(), DataManager, jsonResult["clientParams"].ToString())
+    return olapClientHelper.GetJsonData(action, DataManager, clientParams);
 }
 
 ~~~ 
 
 ## InitializeGrid
 
-[POST/Api/OlapClient/InitializeGrid](http://js.syncfusion.com/demos/ejServices/api/OlapClient/InitializeGrid)
+[POST/WCF/PivotClient/InitializeGrid](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc)
 
 It fetches the data required to render the PivotGrid control inside PivotClient.
 
@@ -67,18 +78,24 @@ Response: serialized JSON string
 ### Code example 
 
 ~~~ csharp
-public Dictionary<string, object> InitializeGrid(Dictionary<string, object> jsonResult)
+
+public Dictionary<string, object> InitializeGrid(string action, string currentReport, string gridLayout, string customObject)
 {
     OlapDataManager DataManager = new OlapDataManager(connectionString);
-    DataManager.SetCurrentReport(Syncfusion.JavaScript.Olap.Utils.DeserializeOlapReport(jsonResult["currentReport"].ToString()));
-    return jsonResult.ContainsKey("gridLayout") ? olapClientHelper.GetJsonData(jsonResult["action"].ToString(), DataManager, jsonResult["gridLayout"].ToString()) : olapClientHelper.GetJsonData(jsonResult["action"].ToString(), DataManager);
+    if (DataManager.ConnectionString.ToLower().Replace(" ", String.Empty).Split(';', '=').Contains("localeidentifier"))
+    {
+        DataManager.Culture = new System.Globalization.CultureInfo(cultureIDInfoval);
+        DataManager.OverrideDefaultFormatStrings = true;
+    }
+    DataManager.SetCurrentReport(OLAPUTILS.Utils.DeserializeOlapReport(currentReport));
+    return olapClientHelper.GetJsonData(action, DataManager, gridLayout);
 }
 
 ~~~ 
 
 ## InitializeChart
 
-[POST/Api/OlapClient/InitializeChart](http://js.syncfusion.com/demos/ejServices/api/OlapClient/InitializeChart)
+[POST/WCF/PivotClient/InitializeChart](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc)
 
 It fetches the data required to render the PivotChart control inside PivotClient.
 
@@ -101,17 +118,19 @@ Response: serialized JSON string
 ### Code example 
 
 ~~~ csharp
-public Dictionary<string, object> InitializeChart(Dictionary<string, object> jsonResult)
+
+public Dictionary<string, object> InitializeChart(string action, string currentReport, string customObject)
 {
     OlapDataManager DataManager = new OlapDataManager(connectionString);
-    DataManager.SetCurrentReport(Syncfusion.JavaScript.Olap.Utils.DeserializeOlapReport(jsonResult["currentReport"].ToString()));
-    return chartHelper.GetJsonData(jsonResult["action"].ToString(), DataManager);
+    DataManager.SetCurrentReport(OLAPUTILS.Utils.DeserializeOlapReport(currentReport));
+    return chartHelper.GetJsonData(action, DataManager);
 }
+
 ~~~ 
 
 ## InitializeTreeMap
 
-[POST/Api/OlapClient/InitializeTreeMap](http://js.syncfusion.com/demos/ejServices/api/OlapClient/InitializeTreeMap)
+[POST/WCF/PivotClient/InitializeTreeMap](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc)
 
 It fetches the data required to render the PivotTreeMap control inside PivotClient.
 
@@ -135,18 +154,20 @@ Response: serialized JSON string
 ### Code example 
 
 ~~~ csharp
-public Dictionary<string, object> InitializeTreeMap(Dictionary<string, object> jsonResult)
+
+public Dictionary<string, object> InitializeTreeMap(string action, string currentReport, string customObject)
 {
     OlapDataManager DataManager = new OlapDataManager(connectionString);
-    DataManager.SetCurrentReport(Syncfusion.JavaScript.Olap.Utils.DeserializeOlapReport(jsonResult["currentReport"].ToString()));
-    return treeMapHelper.GetJsonData(jsonResult["action"].ToString(), DataManager);
+    DataManager.SetCurrentReport(OLAPUTILS.Utils.DeserializeOlapReport(currentReport));
+    return treemapHelper.GetJsonData(action, DataManager);
 }
 
 ~~~ 
 
+
 ## DrillChart
 
-[POST/Api/OlapClient/DrillChart](http://js.syncfusion.com/demos/ejServices/api/OlapClient/DrillChart
+[POST/WCF/PivotClient/DrillChart](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc)
 
 It fetches the drilled data required to render the PivotChart on drilling.
 
@@ -171,19 +192,20 @@ Response: serialized JSON string
 ### Code example 
 
 ~~~ csharp
-public Dictionary<string, object> DrillChart(Dictionary<string, object> jsonResult)
+
+public Dictionary<string, object> DrillChart(string action, string drilledSeries, string olapReport, string clientReports)
 {
     OlapDataManager DataManager = new OlapDataManager(connectionString);
-    DataManager.SetCurrentReport(Syncfusion.JavaScript.Olap.Utils.DeserializeOlapReport(jsonResult["olapReport"].ToString()));
-    DataManager.Reports = olapClientHelper.DeserializedReports(jsonResult["clientReports"].ToString());
-    return chartHelper.GetJsonData(jsonResult["action"].ToString(), DataManager, jsonResult["drilledSeries"].ToString());
+    DataManager.SetCurrentReport(OLAPUTILS.Utils.DeserializeOlapReport(olapReport));
+    DataManager.Reports = olapClientHelper.DeserializedReports(clientReports);
+    return chartHelper.GetJsonData(action, DataManager, drilledSeries);
 }
 
 ~~~ 
 
 ## DrillTreeMap
 
-[POST/Api/OlapClient/DrillTreeMap](http://js.syncfusion.com/demos/ejServices/api/OlapClient/DrillTreeMap)
+[POST/WCF/PivotClient/DrillTreeMap](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc)
 
 It fetches the drilled data required to render the PivotTreeMap on drilling.
 
@@ -207,19 +229,20 @@ Response: serialized JSON string
 ### Code example 
 
 ~~~ csharp
-public Dictionary<string, object> DrillTreeMap(Dictionary<string, object> jsonResult)
+
+public Dictionary<string, object> DrillTreeMap(string action, string drillInfo, string olapReport, string clientReports)
 {
     OlapDataManager DataManager = new OlapDataManager(connectionString);
-    DataManager.SetCurrentReport(Syncfusion.JavaScript.Olap.Utils.DeserializeOlapReport(jsonResult["olapReport"].ToString()));
-    DataManager.Reports = olapClientHelper.DeserializedReports(jsonResult["clientReports"].ToString());
-    return treeMapHelper.GetJsonData(jsonResult["action"].ToString(), DataManager, jsonResult["drillInfo"].ToString());
+    DataManager.SetCurrentReport(OLAPUTILS.Utils.DeserializeOlapReport(olapReport));
+    DataManager.Reports = olapClientHelper.DeserializedReports(clientReports);
+    return treemapHelper.GetJsonData(action, DataManager, drillInfo);
 }
 
 ~~~ 
 
 ## DrillGrid
 
-[POST/Api/OlapClient/DrillGrid](http://js.syncfusion.com/demos/ejServices/api/OlapClient/DrillGrid)
+[POST/WCF/PivotClient/DrillGrid](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc)
 
 It fetches the drilled data required to render the PivotGrid on drilling.
 
@@ -245,19 +268,25 @@ Response: serialized JSON string
 ### Code example 
 
 ~~~ csharp
-public Dictionary<string, object> DrillGrid(Dictionary<string, object> jsonResult)
+
+public Dictionary<string, object> DrillGrid(string action, string cellPosition, string currentReport, string clientReports, string headerInfo, string layout)
 {
     OlapDataManager DataManager = new OlapDataManager(connectionString);
-    DataManager.SetCurrentReport(Syncfusion.JavaScript.Olap.Utils.DeserializeOlapReport(jsonResult["currentReport"].ToString()));
-    DataManager.Reports = olapClientHelper.DeserializedReports(jsonResult["clientReports"].ToString());
-    return olapClientHelper.GetJsonData(jsonResult["action"].ToString(), DataManager, jsonResult["cellPosition"].ToString(), jsonResult["headerInfo"].ToString(), jsonResult["layout"].ToString());
+    if (DataManager.ConnectionString.ToLower().Replace(" ", String.Empty).Split(';', '=').Contains("localeidentifier"))
+    {
+        DataManager.Culture = new System.Globalization.CultureInfo(cultureIDInfoval);
+        DataManager.OverrideDefaultFormatStrings = true;
+    }
+    DataManager.SetCurrentReport(OLAPUTILS.Utils.DeserializeOlapReport(currentReport));
+    DataManager.Reports = olapClientHelper.DeserializedReports(clientReports);
+    return olapClientHelper.GetJsonData(action, DataManager, cellPosition, headerInfo, layout);
 }
 
 ~~~ 
 
 ## FilterElement
 
-[POST/Api/OlapClient/FilterElement](http://js.syncfusion.com/demos/ejServices/api/OlapClient/FilterElement)
+[POST/WCF/PivotClient/FilterElement](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc)
 
 It fetches the filtered data required to render the control after performing filtering.
 
@@ -281,19 +310,20 @@ Response: serialized JSON string
 ### Code example 
 
 ~~~ csharp
-public Dictionary<string, object> FilterElement(Dictionary<string, object> jsonResult)
+
+public Dictionary<string, object> FilterElement(string action, string clientParams, string olapReport, string clientReports)
 {
     OlapDataManager DataManager = new OlapDataManager(connectionString);
-    DataManager.SetCurrentReport(Syncfusion.JavaScript.Olap.Utils.DeserializeOlapReport(jsonResult["olapReport"].ToString()));
-    DataManager.Reports = olapClientHelper.DeserializedReports(jsonResult["clientReports"].ToString());
-    return olapClientHelper.GetJsonData(jsonResult["action"].ToString(), DataManager, jsonResult["clientParams"].ToString());
+    DataManager.SetCurrentReport(OLAPUTILS.Utils.DeserializeOlapReport(olapReport));
+    DataManager.Reports = olapClientHelper.DeserializedReports(clientReports);
+    return olapClientHelper.GetJsonData(action, DataManager, clientParams);
 }
 
 ~~~ 
 
 ## RemoveSplitButton
 
-[POST/Api/OlapClient/RemoveSplitButton](http://js.syncfusion.com/demos/ejServices/api/OlapClient/RemoveSplitButton)
+[POST/WCF/PivotClient/RemoveSplitButton](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc)
 
 It fetches the drilled data required to render the PivotChart on removing an item from report.
 
@@ -317,19 +347,20 @@ Response: serialized JSON string
 ### Code example 
 
 ~~~ csharp
-public Dictionary<string, object> RemoveSplitButton(Dictionary<string, object> jsonResult)
+
+public Dictionary<string, object> RemoveSplitButton(string action, string clientParams, string olapReport, string clientReports)
 {
     OlapDataManager DataManager = new OlapDataManager(connectionString);
-    DataManager.SetCurrentReport(Syncfusion.JavaScript.Olap.Utils.DeserializeOlapReport(jsonResult["olapReport"].ToString()));
-    DataManager.Reports = olapClientHelper.DeserializedReports(jsonResult["clientReports"].ToString());
-    return olapClientHelper.GetJsonData(jsonResult["action"].ToString(), DataManager, jsonResult["clientParams"].ToString());
+    DataManager.SetCurrentReport(OLAPUTILS.Utils.DeserializeOlapReport(olapReport));
+    DataManager.Reports = olapClientHelper.DeserializedReports(clientReports);
+    return olapClientHelper.GetJsonData(action, DataManager, clientParams);
 }
 
 ~~~ 
 
 ## FetchMemberTreeNodes
 
-[POST/Api/OlapClient/FetchMemberTreeNodes](http://js.syncfusion.com/demos/ejServices/api/OlapClient/FetchMemberTreeNodes)
+[POST/WCF/PivotClient/FetchMemberTreeNodes](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc)
 
 It fetches the details of the members to render the member editor dialog.
 
@@ -352,18 +383,19 @@ Response: serialized JSON string
 ### Code example 
 
 ~~~ csharp
-public Dictionary<string, object> FetchMemberTreeNodes(Dictionary<string, object> jsonResult)
+
+public Dictionary<string, object> FetchMemberTreeNodes(string action, string dimensionName, string olapReport)
 {
     OlapDataManager DataManager = new OlapDataManager(connectionString);
-    DataManager.SetCurrentReport(Syncfusion.JavaScript.Olap.Utils.DeserializeOlapReport(jsonResult["olapReport"].ToString()));
-    return olapClientHelper.GetJsonData(jsonResult["action"].ToString(), DataManager, jsonResult["dimensionName"].ToString());
+    DataManager.SetCurrentReport(OLAPUTILS.Utils.DeserializeOlapReport(olapReport));
+    return olapClientHelper.GetJsonData(action, DataManager, dimensionName);
 }
 
 ~~~ 
 
 ## DropNode
 
-[POST/Api/OlapClient/DropNode](http://js.syncfusion.com/demos/ejServices/api/OlapClient/DropNode)
+[POST/WCF/PivotClient/DropNode](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc)
 
 It fetches the data required to render the control after drag and drop action.
 
@@ -388,19 +420,20 @@ Response: serialized JSON string
 ### Code example 
 
 ~~~ csharp
-public Dictionary<string, object> DropNode(Dictionary<string, object> jsonResult)
+
+public Dictionary<string, object> DropNode(string action, string dropType, string nodeInfo, string olapReport, string clientReports)
 {
     OlapDataManager DataManager = new OlapDataManager(connectionString);
-    DataManager.SetCurrentReport(Syncfusion.JavaScript.Olap.Utils.DeserializeOlapReport(jsonResult["olapReport"].ToString()));
-    DataManager.Reports = olapClientHelper.DeserializedReports(jsonResult["clientReports"].ToString());
-    return olapClientHelper.GetJsonData(jsonResult["action"].ToString(), DataManager, jsonResult["dropType"].ToString(), jsonResult["nodeInfo"].ToString());
+    DataManager.SetCurrentReport(OLAPUTILS.Utils.DeserializeOlapReport(olapReport));
+    DataManager.Reports = olapClientHelper.DeserializedReports(clientReports);
+    return olapClientHelper.GetJsonData(action, DataManager, dropType, nodeInfo);
 }
 
 ~~~ 
 
 ## CubeChange
 
-[POST/Api/OlapClient/CubeChange](http://js.syncfusion.com/demos/ejServices/api/OlapClient/CubeChange)
+[POST/WCF/PivotClient/CubeChange](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc)
 
 It fetches the data required to render the control on changing the cube.
 
@@ -423,17 +456,18 @@ Response: serialized JSON string
 ### Code example 
 
 ~~~ csharp
-public Dictionary<string, object> CubeChange(Dictionary<string, object> jsonResult)
+
+public Dictionary<string, object> CubeChange(string action, string cubeName, string clientParams)
 {
     OlapDataManager DataManager = new OlapDataManager(connectionString);
-    return olapClientHelper.GetJsonData(jsonResult["action"].ToString(), DataManager, jsonResult["cubeName"].ToString(), jsonResult["clientParams"].ToString());
+    return olapClientHelper.GetJsonData(action, DataManager, cubeName, clientParams);
 }
 
 ~~~ 
 
 ## MeasureGroup
 
-[POST/Api/OlapClient/MeasureGroup](http://js.syncfusion.com/demos/ejServices/api/OlapClient/MeasureGroup)
+[POST/WCF/PivotClient/MeasureGroup](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc)
 
 It fetches the data required to render the control on changing the measure group.
 
@@ -455,17 +489,18 @@ Response: serialized JSON string
 ### Code example 
 
 ~~~ csharp
-public Dictionary<string, object> MeasureGroup(Dictionary<string, object> jsonResult)
+
+public Dictionary<string, object> MeasureGroup(string action, string measureGroupName)
 {
     OlapDataManager DataManager = new OlapDataManager(connectionString);
-    return olapClientHelper.GetJsonData(jsonResult["action"].ToString(), DataManager, jsonResult["measureGroupName"].ToString());
+    return olapClientHelper.GetJsonData(action, DataManager, measureGroupName);
 }
 
 ~~~ 
 
 ## ToolbarOperations
 
-[POST/Api/OlapClient/ToolbarOperations](http://js.syncfusion.com/demos/ejServices/api/OlapClient/ToolbarOperations)
+[POST/WCF/PivotClient/ToolbarOperations](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc)
 
 It fetches the data required to render the control on performing toolbar operations.
 
@@ -490,23 +525,22 @@ Response: serialized JSON string
 ### Code example 
 
 ~~~ csharp
-public Dictionary<string, object> ToolbarOperations(Dictionary<string, object> jsonResult)
+
+public Dictionary<string, object> ToolbarOperations(string action, string toolbarOperation, string clientInfo, string olapReport, string clientReports)
 {
-    var toolbarOperation = "";
     OlapDataManager DataManager = new OlapDataManager(connectionString);
-    if ((jsonResult["olapReport"]) != null && !string.IsNullOrEmpty(jsonResult["olapReport"].ToString()))
-        DataManager.SetCurrentReport(Syncfusion.JavaScript.Olap.Utils.DeserializeOlapReport(jsonResult["olapReport"].ToString()));
-    if ((jsonResult["clientReports"]) != null && !string.IsNullOrEmpty(jsonResult["clientReports"].ToString()))
-        DataManager.Reports = olapClientHelper.DeserializedReports(jsonResult["clientReports"].ToString());
-    toolbarOperation = jsonResult["toolbarOperation"] == null ? null : jsonResult["toolbarOperation"].ToString();
-    return olapClientHelper.GetJsonData(jsonResult["action"].ToString(), DataManager, toolbarOperation, jsonResult["clientInfo"].ToString());
+    if (!string.IsNullOrEmpty(olapReport))
+        DataManager.SetCurrentReport(OLAPUTILS.Utils.DeserializeOlapReport(olapReport));
+    if (!string.IsNullOrEmpty(clientReports))
+        DataManager.Reports = olapClientHelper.DeserializedReports(clientReports);
+    return olapClientHelper.GetJsonData(action, DataManager, toolbarOperation, clientInfo);
 }
 
 ~~~ 
 
 ## ExpandMember
 
-[POST/Api/OlapClient/ExpandMember](http://js.syncfusion.com/demos/ejServices/api/OlapClient/ExpandMember)
+[POST/WCF/PivotClient/ExpandMember](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc)
 
 It fetches the children nodes on expanding a node in Member Editor.
 
@@ -534,21 +568,22 @@ Response: serialized JSON string
 ### Code example 
 
 ~~~ csharp
-public Dictionary<string, object> ExpandMember(Dictionary<string, object> jsonResult)
+
+public Dictionary<string, object> ExpandMember(string action, bool checkedStatus, string parentNode, string tag, string dimensionName, string cubeName, string olapReport, string clientReports)
 {
     OlapDataManager DataManager = new OlapDataManager(connectionString);
-    if (!string.IsNullOrEmpty(jsonResult["olapReport"].ToString()))
-        DataManager.SetCurrentReport(Syncfusion.JavaScript.Olap.Utils.DeserializeOlapReport(jsonResult["olapReport"].ToString()));
-    if (!string.IsNullOrEmpty(jsonResult["clientReports"].ToString()))
-        DataManager.Reports = olapClientHelper.DeserializedReports(jsonResult["clientReports"].ToString());
-    return olapClientHelper.GetJsonData(jsonResult["action"].ToString(), DataManager, Convert.ToBoolean(jsonResult["checkedStatus"].ToString()), jsonResult["parentNode"].ToString(), jsonResult["tag"].ToString(), jsonResult["dimensionName"].ToString(), jsonResult["cubeName"].ToString());
+    if (!string.IsNullOrEmpty(olapReport))
+        DataManager.SetCurrentReport(OLAPUTILS.Utils.DeserializeOlapReport(olapReport));
+    if (!string.IsNullOrEmpty(clientReports))
+        DataManager.Reports = olapClientHelper.DeserializedReports(clientReports);
+    return olapClientHelper.GetJsonData(action, DataManager, checkedStatus, parentNode, tag, dimensionName, cubeName);
 }
 
 ~~~ 
 
 ## UpdateReport
 
-[POST/Api/OlapClient/UpdateReport](http://js.syncfusion.com/demos/ejServices/api/OlapClient/UpdateReport)
+[POST/WCF/PivotClient/UpdateReport](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc)
 
 It updates the report in server side.
 
@@ -572,15 +607,16 @@ Response: serialized JSON string
 ### Code example 
 
 ~~~ csharp
-public Dictionary<string, object> UpdateReport(Dictionary<string, object> jsonResult)
+
+public Dictionary<string, object> UpdateReport(string action, string clientParams, string olapReport, string clientReports)
 {
-    return olapClientHelper.GetJsonData(jsonResult["action"].ToString(), jsonResult["clientParams"].ToString(), jsonResult["olapReport"].ToString(), jsonResult["clientReports"].ToString());
+    return olapClientHelper.GetJsonData(action, clientParams, olapReport, clientReports);
 }
 
 ~~~ 
 ## SaveReportToDB
 
-[POST/Api/OlapClient/SaveReportToDB](http://js.syncfusion.com/demos/ejServices/api/OlapClient/SaveReportToDB)
+[POST/WCF/PivotClient/SaveReportToDB](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc)
 
 It saves the current report to database with the specified name.
 
@@ -605,13 +641,13 @@ Response: None
 ### Code example 
 
 ~~~ csharp
-public Dictionary<string, object> SaveReportToDB(Dictionary<string, object> jsonResult)
+
+public Dictionary<string, object> SaveReportToDB(string reportName, string operationalMode, string analysisMode, string olapReport, string clientReports)
 {
-    string operationalMode = jsonResult["operationalMode"].ToString(), analysisMode = jsonResult["analysisMode"].ToString(), reportName = string.Empty;
+    reportName = reportName + "##" + operationalMode.ToLower() + "#>>#" + analysisMode.ToLower();
     bool isDuplicate = true;
     SqlCeConnection con = new SqlCeConnection() { ConnectionString = conStringforDB };
     con.Open();
-    reportName = jsonResult["reportName"].ToString() + "##" + operationalMode.ToLower() + "#>>#" + analysisMode.ToLower();
     SqlCeCommand cmd1 = null;
     foreach (DataRow row in GetDataTable().Rows)
     {
@@ -627,9 +663,9 @@ public Dictionary<string, object> SaveReportToDB(Dictionary<string, object> json
     }
     cmd1.Parameters.Add("@ReportName", reportName);
     if (operationalMode.ToLower() == "servermode" && analysisMode == "olap")
-        cmd1.Parameters.Add("@Reports", Syncfusion.JavaScript.Olap.Utils.GetReportStream(jsonResult["clientReports"].ToString()).ToArray());
+        cmd1.Parameters.Add("@Reports", OLAPUTILS.Utils.GetReportStream(clientReports).ToArray());
     else
-        cmd1.Parameters.Add("@Reports", Encoding.UTF8.GetBytes(jsonResult["clientReports"].ToString()).ToArray());
+        cmd1.Parameters.Add("@Reports", Encoding.UTF8.GetBytes(clientReports).ToArray());
     cmd1.ExecuteNonQuery();
     con.Close();
     return null;
@@ -639,7 +675,7 @@ public Dictionary<string, object> SaveReportToDB(Dictionary<string, object> json
 
 ## FetchReportListFromDB
 
-[POST/Api/OlapClient/FetchReportListFromDB](http://js.syncfusion.com/demos/ejServices/api/OlapClient/FetchReportListFromDB)
+[POST/WCF/PivotClient/FetchReportListFromDB](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc)
 
 It fetches the list of names of reports stored in database.
 
@@ -661,9 +697,11 @@ Response: serialized JSON string
 ### Code example 
 
 ~~~ csharp
-public Dictionary<string, object> FetchReportListFromDB(Dictionary<string, object> jsonResult)
+
+public Dictionary<string, object> FetchReportListFromDB(string operationalMode, string analysisMode)
 {
-    string reportNames = string.Empty, currentRptName = string.Empty, operationalMode = jsonResult["operationalMode"].ToString(), analysisMode = jsonResult["analysisMode"].ToString();
+    string reportNames = string.Empty;
+    string currentRptName = string.Empty;
     foreach (System.Data.DataRow row in GetDataTable().Rows)
     {
         currentRptName = (row.ItemArray[0] as string);
@@ -681,7 +719,7 @@ public Dictionary<string, object> FetchReportListFromDB(Dictionary<string, objec
 ~~~ 
 ## LoadReportFromDB
 
-[POST/Api/OlapClient/LoadReportFromDB](http://js.syncfusion.com/demos/ejServices/api/OlapClient/LoadReportFromDB)
+[POST/WCF/PivotClient/LoadReportFromDB](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc)
 
 It loads the report with specified name from the database to the control.
 
@@ -706,25 +744,25 @@ Response: serialized JSON string
 ### Code example 
 
 ~~~ csharp
-public Dictionary<string, object> LoadReportFromDB(Dictionary<string, object> jsonResult)
+
+public Dictionary<string, object> LoadReportFromDB(string reportName, string operationalMode, string analysisMode, string olapReport, string clientReports)
 {
     PivotReport report = new PivotReport();
-    string operationalMode = jsonResult["operationalMode"].ToString(), analysisMode = jsonResult["analysisMode"].ToString();
     Dictionary<string, object> dictionary = new Dictionary<string, object>();
     string currentRptName = string.Empty;
     foreach (DataRow row in GetDataTable().Rows)
     {
         currentRptName = (row.ItemArray[0] as string).Replace("##" + operationalMode.ToLower() + "#>>#" + analysisMode.ToLower(), "");
-        if (currentRptName.Equals(jsonResult["reportName"].ToString()))
+        if (currentRptName.Equals(reportName))
         {
             if (operationalMode.ToLower() == "servermode" && analysisMode == "olap")
             {
                 var reportString = "";
                 OlapDataManager DataManager = new OlapDataManager(connectionString);
-                reportString = Syncfusion.JavaScript.Olap.Utils.CompressData(row.ItemArray[1] as byte[]);
+                reportString = OLAPUTILS.Utils.CompressData(row.ItemArray[1] as byte[]);
                 DataManager.Reports = olapClientHelper.DeserializedReports(reportString);
                 DataManager.SetCurrentReport(DataManager.Reports[0]);
-                return olapClientHelper.GetJsonData("toolbarOperation", DataManager, "Load Report", jsonResult["reportName"].ToString());
+                return olapClientHelper.GetJsonData("toolbarOperation", DataManager, "Load Report", reportName);
             }
             else
             {
@@ -742,73 +780,9 @@ public Dictionary<string, object> LoadReportFromDB(Dictionary<string, object> js
 }
         
 ~~~ 
-## Export
-
-[POST/Api/OlapClient/Export](http://js.syncfusion.com/demos/ejServices/api/OlapClient/Export)
-
-It exports the PivotGrid or PivotChart or both to the selected format.
-
-### URL parameters
-
-|  Parameter |  Description | 
-|---|---|
-|args|It contains necessary information to export the PivotClient control to the specified format|
-
-### Response information 
-
-Code: 200
-
-Content-Type: application/json
-
-Response: file
-
-### Code example 
-
-~~~ csharp
-
-public void Export()
-{
-    PivotClientExport olapClient = new PivotClientExport();
-    string args = HttpContext.Current.Request.Form.GetValues(0)[0];
-    olapClient.ExportPivotClient(string.Empty, args, HttpContext.Current.Response);
-}
-
-~~~ 
-## ExportOlapClient
-
-[POST/Api/OlapClient/ExportOlapClient](http://js.syncfusion.com/demos/ejServices/api/OlapClient/ExportOlapClient)
-
-It exports the PivotGrid or PivotChart or both with OLAP data to the selected format.
-
-### URL parameters
-
-|  Parameter |  Description | 
-|---|---|
-|args|It contains the current report as serialized string for exporting process|
-
-### Response information 
-
-Code: 200
-
-Content-Type: application/json
-
-Response: file
-
-### Code example 
-
-~~~ csharp
-public void ExportOlapClient()
-{
-    string args = HttpContext.Current.Request.Form.GetValues(0)[0];
-    OlapDataManager DataManager = new OlapDataManager(connectionString);
-    string fileName = "Sample";
-    olapClientHelper.ExportPivotClient(DataManager, args, fileName, System.Web.HttpContext.Current.Response);
-}
-
-~~~ 
 ## GetMDXQuery
 
-[POST/Api/OlapClient/GetMDXQuery](http://js.syncfusion.com/demos/ejServices/api/OlapClient/GetMDXQuery)
+[POST/WCF/PivotClient/GetMDXQuery](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc)
 
 It retrieves the MDX query formed to fetch the data at that instant.
 
@@ -829,10 +803,11 @@ Response: serialized JSON string
 ### Code example 
 
 ~~~ csharp
-public string GetMDXQuery(Dictionary<string, object> jsonResult)
+
+public string GetMDXQuery(string olapReport)
 {
     OlapDataManager DataManager = new OlapDataManager(connectionString);
-    DataManager.SetCurrentReport(Syncfusion.JavaScript.Olap.Utils.DeserializeOlapReport(jsonResult["olapReport"].ToString()));
+    DataManager.SetCurrentReport(OLAPUTILS.Utils.DeserializeOlapReport(olapReport));
     return DataManager.GetMDXQuery();
 }
 
@@ -840,7 +815,7 @@ public string GetMDXQuery(Dictionary<string, object> jsonResult)
 
 ## ToggleAxis
 
-[POST/Api/OlapClient/ToggleAxis](http://js.syncfusion.com/demos/ejServices/api/OlapClient/ToggleAxis)
+[POST/WCF/PivotClient/ToggleAxis](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc)
 
 It fetches the data after interchanging the elements in row and column axes.
 
@@ -863,47 +838,14 @@ Response: serialized JSON string
 ### Code example 
 
 ~~~ csharp
-public Dictionary<string, object> ToggleAxis(Dictionary<string, object> jsonResult)
+
+public Dictionary<string, object> ToggleAxis(string action, string currentReport, string clientReports)
 {
     OlapDataManager DataManager = new OlapDataManager(connectionString);
-    DataManager.SetCurrentReport(Syncfusion.JavaScript.Olap.Utils.DeserializeOlapReport(jsonResult["currentReport"].ToString()));
-    DataManager.Reports = olapClientHelper.DeserializedReports(jsonResult["clientReports"].ToString());
+    DataManager.SetCurrentReport(OLAPUTILS.Utils.DeserializeOlapReport(currentReport));
+    DataManager.Reports = olapClientHelper.DeserializedReports(clientReports);
     DataManager.ToggleAxis(DataManager.CurrentReport);
-    return olapClientHelper.GetJsonData(jsonResult["action"].ToString(), DataManager, jsonResult["clientReports"].ToString());
-}
-
-~~~ 
-## Paging
-
-[POST/Api/OlapClient/Paging](http://js.syncfusion.com/demos/ejServices/api/OlapClient/Paging)
-
-It fetches the data on navigating between pages in PivotClient with OLAP data.
-
-### URL parameters
-
-|  Parameter |  Description | 
-|---|---|
-|action|It contains the current action as string|
-|currentReport|It contains the report at that instant as serialized string|
-|layout|It holds the layout of the PivotGrid control|
-|pagingInfo|It contains the page number to which the control needs to be moved|
-
-### Response information 
-
-Code: 200
-
-Content-Type: application/json
-
-Response: serialized JSON string
-
-### Code example 
-
-~~~ csharp
-public Dictionary<string, object> Paging(Dictionary<string, object> jsonResult)
-{
-    OlapDataManager DataManager = new OlapDataManager(connectionString);
-    DataManager.SetCurrentReport(Syncfusion.JavaScript.Olap.Utils.SetPaging(jsonResult["currentReport"].ToString(), jsonResult["pagingInfo"].ToString()));
-    return olapClientHelper.GetJsonData(jsonResult["action"].ToString(), DataManager, jsonResult["layout"].ToString());
+    return olapClientHelper.GetJsonData(action, DataManager, clientReports);
 }
 
 ~~~ 

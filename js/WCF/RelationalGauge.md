@@ -1,15 +1,15 @@
 ---
 layout: post
-title: webAPI reference for RelationalGauge
-description: webAPI reference for RelationalGauge
+title: WCF reference for RelationalGauge
+description: WCF reference for RelationalGauge
 documentation: API
-platform: js-webapi
-keywords: RelationalGauge, syncfusion, RelationalGauge webapi
+platform: js-wcf
+keywords: RelationalGauge, syncfusion, RelationalGauge WCF
 ---
 
 ## Initialize
 
-[POST/Api/RelationalGauge/Initialize](http://js.syncfusion.com/demos/ejServices/api/RelationalGauge/Initialize)
+[POST/WCF/PivotGauge/Initialize](http://js.syncfusion.com/demos/ejServices/wcf/PivotGauge/Relational.svc)
 
 It fetches the Relational data required to render the PivotGauge control from server-end.
 
@@ -31,10 +31,11 @@ Response: serialized JSON string
 ### Code example 
 
 ~~~ csharp
-public Dictionary<string, object> Initialize(Dictionary<string, object> jsonResult)
+
+public Dictionary<string, object> Initialize(string action, string customObject)
 {
     htmlHelper.PivotReport = BindDefaultData();
-    return htmlHelper.GetJsonData(jsonResult["action"].ToString(), ProductSales.GetSalesData());
+    return htmlHelper.GetJsonData(action, ProductSales.GetSalesData());
 }
 
 ~~~ 

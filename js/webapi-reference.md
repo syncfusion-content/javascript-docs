@@ -10,9 +10,10 @@ platform: js-webapi
 # WebAPI reference for ej Controls
 
 The details of WebAPI has been shown in the below table.
+
 ### Chart
 
-| WebAPI | Description  |
+| WebAPI | Description |
 |---|---|
 |[Export](WebAPI\Chart#Export)|It is used to export the Chart control to the specified format.|
 |[SvgExport](WebAPI\Chart#SvgExport)|It is used to export the Chart control as an SVG image.|
@@ -23,7 +24,7 @@ The details of WebAPI has been shown in the below table.
 
 ### Diagram
 
-|  WebAPI | Description  |
+| WebAPI | Description |
 |---|---|
 |[GetNodes](WebAPI\Diagram#GetNodes)|It fetches the collection of records from database and further it will be used to generate the shapes.|
 |[GetConnectors](WebAPI\Diagram#GetConnectors)|It fetches the collection of records from database and also it will be used to generate the connectors.|
@@ -36,45 +37,45 @@ The details of WebAPI has been shown in the below table.
 
 ### DocIO
 
-|  WebAPI | Description  |
+| WebAPI | Description |
 |---|---|
 |[ConvertToPDF](WebAPI\DocIO#ConvertToPDF)|It is used to generate the PDF document.|
 
 ### DocumentEditor
 
-|  WebAPI | Description  |
+| WebAPI | Description |
 |---|---|
 |[Import](WebAPI\DocumentEditor#Import)|It loads the document from specified path in DocumentEditor.|
 |[FileUpload](WebAPI\DocumentEditor#FileUpload)|It loads the default document in DocumentEditor.|
 
 ### FileExplorer
 
-|  WebAPI | Description  |
+| WebAPI | Description |
 |---|---|
 |[FileOperations](WebAPI\FileExplorer#FileOperations)|It helps to handle the FileExplorer operations like Read, Upload, Download, GetDetails, Rename, Remove etc.|
 |[FileOperationsCors](WebAPI\FileExplorer#FileOperationsCors)|It helps to handle the FileExplorer operations in cross origin.|
 
 ### Gantt
 
-|  WebAPI | Description  |
+| WebAPI | Description |
 |---|---|
-|[ExcelExport](WebAPI\Gantt#ExcelExport)|It is used to export the Gantt data to PDF file.
+|[ExcelExport](WebAPI\Gantt#ExcelExport)|It is used to export the Gantt data to PDF file.|
 
 ### Grid
-|  WebAPI | Description  |
+
+| WebAPI | Description |
 |---|---|
-|[Northwind Data Service](WebAPI\Grid#NorthwindDataService)|It is used to retrieve the records from “Orders” table in Remote Data Service.|
 |[PdfExport](WebAPI\Grid#PdfExport)|It is used to export the Grid data in PDF.|  
 |[ExcelExport](WebAPI\Grid#ExcelExport)|It is used to export the Grid data in Excel.|
 |[WordExport](WebAPI\Grid#WordExport)|It is used to export the Grid data in Word.|  
 |[Get](WebAPI\Grid#Get)|It is used to get the dataSource from Northwind dataSource.|  
-|[Post](WebAPI\Grid#Post)|It is used to add the data to the grid column. .|  
+|[Post](WebAPI\Grid#Post)|It is used to add the data to the grid column.|  
 |[Put](WebAPI\Grid#Put)|It is used to update the Grid data.|  
 |[Delete](WebAPI\Grid#Delete)|It is used to delete the data which is present in Grid column.| 
 
 ### PivotChart (Relational)
 
-|  WebAPI | Description  |
+| WebAPI | Description |
 |---|---|
 |[Initialize](WebAPI\RelationalChart#Initialize)|It fetches the Relational data required to initialize the PivotChart from server-end.|
 |[Drill](WebAPI\RelationalChart#Drill)|It fetches the drilled Relational data required to render the PivotChart control from server-end.|
@@ -82,7 +83,7 @@ The details of WebAPI has been shown in the below table.
 
 ### PivotChart (OLAP)
 
-|  WebAPI | Description  |
+| WebAPI | Description |
 |---|---|
 |[Initialize](WebAPI\OlapChart#Initialize)|It fetches the OLAP data required to initialize the PivotChart from server-end.|
 |[Drill](WebAPI\OlapChart#Drill)|It fetches the drilled OLAP data required to render the PivotChart control from server-end.|
@@ -94,7 +95,7 @@ The details of WebAPI has been shown in the below table.
 
 ### PivotClient (Relational)
 
-|  WebAPI | Description  |
+| WebAPI | Description |
 |---|---|
 |[Initialize](WebAPI\RelationalClient#Initialize)|It fetches the data required to initialize the control.|
 |[FetchMembers](WebAPI\RelationalClient#FetchMembers)|It fetches the details of the members in the selected field on opening member editor.|
@@ -109,7 +110,7 @@ The details of WebAPI has been shown in the below table.
 
 ### PivotClient (OLAP)
 
-|  WebAPI | Description  |
+| WebAPI | Description |
 |---|---|
 |[Initialize](WebAPI\OlapClient#Initialize)|It fetches the data required to render the PivotClient control initially.|
 |[InitializeGrid](WebAPI\OlapClient#InitializeGrid)|It fetches the data required to render the PivotGrid control inside PivotClient.|
@@ -138,19 +139,19 @@ The details of WebAPI has been shown in the below table.
 
 ### PivotGauge (Relational)
 
-|  WebAPI | Description  |
+| WebAPI | Description |
 |---|---|
 |[Initialize](WebAPI\RelationalGauge#Initialize)|It fetches the Relational data required to render the PivotGauge control from server-end.|
 
 ### PivotGauge (OLAP)
 
-|  WebAPI | Description  |
+| WebAPI | Description |
 |---|---|
 |[Initialize](WebAPI\OlapGauge#Initialize)|It fetches the OLAP data required to render the PivotGauge control from server-end.|
 
 ### PivotGrid (Relational)
 
-|  WebAPI | Description  |
+| WebAPI | Description |
 |---|---|
 |[Initialize](WebAPI\RelationalGrid#Initialize)|It fetches the data required to render the PivotGrid initially.|
 |[FetchMembers](WebAPI\RelationalGrid#FetchMembers)|It fetches the members of the selected field to render the member editor tree.|
@@ -167,7 +168,7 @@ The details of WebAPI has been shown in the below table.
 
 ### PivotGrid (OLAP)
 
-|  WebAPI | Description  |
+| WebAPI | Description |
 |---|---|
 |[Initialize](WebAPI\OlapGrid#Initialize)|It fetches the OLAP data required to render the PivotGrid initially from server-end.|
 |[Drill](WebAPI\OlapGrid#Drill)|It fetches the OLAP data required to render the PivotGrid control after drilling it.|
@@ -188,7 +189,7 @@ The details of WebAPI has been shown in the below table.
 
 ### PivotTreeMap (OLAP)
 
-|  WebAPI | Description  |
+| WebAPI | Description |
 |---|---|
 |[Initialize](WebAPI\OlapTreeMap#Initialize)|It fetches the OLAP data required to render the PivotTreeMap control from server-end.|
 |[Drill](WebAPI\OlapTreeMap#Drill)|It fetches the OLAP data required to render the drilled PivotTreeMap.|
@@ -196,7 +197,7 @@ The details of WebAPI has been shown in the below table.
 
 ### PDF
 
-|  WebAPI | Description  |
+| WebAPI | Description |
 |---|---|
 |[GeneratePdfDocument](WebAPI\PDF#GeneratePdfDocument)||
 |[GetFormFillTemplate](WebAPI\PDF#GetFormFillTemplate)||
@@ -207,7 +208,7 @@ The details of WebAPI has been shown in the below table.
 
 ### PdfViewer
 
-|  WebAPI | Description  |
+| WebAPI | Description |
 |---|---|
 |[Load](WebAPI\PdfViewer#Load)|It loads the PDF document in the PDF viewer control and process the PDF document for each request.|
 |[FileUpload](WebAPI\PdfViewer#FileUpload)|It uploads and loads the PDF document to the PDF viewer control.|
@@ -215,13 +216,13 @@ The details of WebAPI has been shown in the below table.
 
 ### Predictive Analytics
 
-|  WebAPI | Description  |
+| WebAPI | Description |
 |---|---|
 |[Load](WebAPI\PredictiveAnalytics#Load)|It is used to the load the data.|
 
 ### RichTextEditor
 
-|  WebAPI | Description  |
+| WebAPI | Description |
 |---|---|
 |[Import](WebAPI\RichTextEdtior#Import)|It is used to Import a Word document into RTE.|
 |[WordExport](WebAPI\RichTextEdtior#WordExport)|It is used for exporting the contents of RTE into a Word document.|
@@ -229,7 +230,7 @@ The details of WebAPI has been shown in the below table.
 
 ### Schedule
 
-|  WebAPI | Description  |
+| WebAPI | Description |
 |---|---|
 |[LoadData](WebAPI\Schedule#LoadData)|It fetches the records from Default Schedule table and binding it to the Scheduler.|
 |[PdfExport](WebAPI\Schedule#PdfExport)|It exports the entire Scheduler content into a PDF file format.|
@@ -238,14 +239,14 @@ The details of WebAPI has been shown in the below table.
 
 ### SpellCheck
 
-| WebAPI | Description  |
+| WebAPI | Description |
 |---|---|
 |[CheckWords](WebAPI\SpellCheck#CheckWords)|It is used for splitting the input string into separate words and checking whether it is an erroneous word or not. Also, it forms a list of error words and its corresponding suggestions as a collection.|   
 |[AddToDictionary](WebAPI\SpellCheck#AddToDictionary)|It is used to add the custom word into the custom dictionary file.|   
 
 ### Spreadsheet
 
-|  WebAPI | Description  |
+| WebAPI | Description |
 |---|---|
 |[ExcelExport](WebAPI\Spreadsheet#ExcelExport)|It is used to export the Spreadsheet data as an Excel document.|
 |[CsvExport](WebAPI\Spreadsheet#CsvExport)|It is used to export the Spreadsheet data to Csv file.|
@@ -254,14 +255,14 @@ The details of WebAPI has been shown in the below table.
 
 ### TreeGrid
 
-|  WebAPI | Description  |
+| WebAPI | Description |
 |---|---|
 |[PdfExport](WebAPI\TreeGrid#PdfExport)|It is used to export the TreeGrid data to PDF file.|
 |[ExcelExport](WebAPI\TreeGrid#ExcelExport)|It is used to export the TreeGrid data to Excel file.|
 
 ### UploadBox
 
-|  WebAPI | Description  |
+| WebAPI | Description |
 |---|---|
 |[Save](WebAPI\UploadBox#Save)|It is used for storing the uploaded file.|
 |[Remove](WebAPI\UploadBox#Remove)|It is used for removing the stored files from server.|

@@ -9,7 +9,7 @@ keywords: ejDiagram, Diagram, syncfusion, ejDiagram webapi
 
 ## GetNodes
 
-[GET&nbsp;&nbsp;/Api/Diagram/GetNodes](http://js.syncfusion.com/demos/ejServices/api/Diagram/GetNodes)
+[GET/Api/Diagram/GetNodes](http://js.syncfusion.com/demos/ejServices/api/Diagram/GetNodes)
 
 It fetches the collection of records from database and further it will be used to generate the shapes.
 
@@ -21,7 +21,7 @@ Content-Type: application/json;
 
 Response (JSON):   
 
-```javascript
+~~~ javascript
 [{
         "Id": 4,
         "Name": "orgchart",
@@ -34,13 +34,13 @@ Response (JSON):
         "Color": "#916DAF"
 }]
 
-```
+~~~ 
 
 
 ### Code example 
 
 
-```javascript
+~~~ javascript
 
 $.ajax({
 
@@ -49,10 +49,10 @@ $.ajax({
     url: 'http://js.syncfusion.com/demos/ejServices/api/Diagram/GetNodes',
 });
 
-```
+~~~ 
 
 
-```csharp
+~~~ csharp
 
 public List<HierarchicalData> GetNodes()
 {
@@ -60,11 +60,11 @@ public List<HierarchicalData> GetNodes()
     return context.HierarchicalDatas.ToList();
 }
 
-```
+~~~ 
 
 ## GetConnectors
 
-[GET&nbsp;&nbsp;/Api/Diagram/GetNodes](http://js.syncfusion.com/demos/ejServices/api/Diagram/GetConnectors)
+[GET/Api/Diagram/GetNodes](http://js.syncfusion.com/demos/ejServices/api/Diagram/GetConnectors)
 
 It fetches the collection of records from database and further it will be used to generate the connectors.
 
@@ -76,7 +76,7 @@ Content-Type: application/json;
 
 Response (JSON):   
 
-```javascript
+~~~ javascript
 [{
     "Id": 22,
     "Name": "nodeHsI1",
@@ -84,12 +84,12 @@ Response (JSON):
     "TargetNode": "layout"
 }]
 
-```
+~~~ 
 
 ### Code example 
 
 
-```javascript
+~~~ javascript
 
 $.ajax({
 
@@ -98,10 +98,10 @@ $.ajax({
     url: 'http://js.syncfusion.com/demos/ejServices/api/Diagram/GetConnectors',
 });
 
-```
+~~~ 
 
 
-```csharp
+~~~ csharp
 
 public List<HierarchicalDetails> GetConnectors()
 {
@@ -109,11 +109,11 @@ public List<HierarchicalDetails> GetConnectors()
     return context.HierarchicalDetails.ToList();
 }
 
-```
+~~~ 
 
 ## AddNodes
 
-[GET&nbsp;&nbsp;/Api/Diagram/AddNodes](http://js.syncfusion.com/demos/ejServices/api/Diagram/AddNodes)
+[GET/Api/Diagram/AddNodes](http://js.syncfusion.com/demos/ejServices/api/Diagram/AddNodes)
 
 It is used to send one or more shapes which needs to be inserted into database.
 
@@ -131,7 +131,7 @@ Content-Type: application/json;
 
 Response (JSON):   
 
-```javascript
+~~~ javascript
 [{
     "Id": 22,
     "Name": "nodeHsI1",
@@ -139,12 +139,12 @@ Response (JSON):
     "TargetNode": "layout"
 }]
 
-```
+~~~ 
 
 ### Code example 
 
 
-```javascript
+~~~ javascript
 
 $.ajax({
 
@@ -161,10 +161,10 @@ $.ajax({
         "Color": "red"
     }])
 });
-```
+~~~ 
 
 
-```csharp
+~~~ csharp
 
 public void AddNodes(List<HierarchicalData> data)
 {
@@ -176,11 +176,11 @@ public void AddNodes(List<HierarchicalData> data)
     }
 }
 
-```
+~~~ 
 
 ## UpdateNodes
 
-[GET&nbsp;&nbsp;/Api/Diagram/UpdateNodes](http://js.syncfusion.com/demos/ejServices/api/Diagram/UpdateNodes)
+[GET/Api/Diagram/UpdateNodes](http://js.syncfusion.com/demos/ejServices/api/Diagram/UpdateNodes)
 
 It is used to one or more shapes which needs to be modified into database.
 
@@ -196,7 +196,7 @@ Code: 204
 
 ### Code example 
 
-```javascript
+~~~ javascript
 
 $.ajax({
 
@@ -214,9 +214,9 @@ $.ajax({
     }])
 });
 
-```
+~~~ 
 
-```csharp
+~~~ csharp
 
 public void UpdateNodes(List<HierarchicalData> data)
 {
@@ -231,11 +231,11 @@ public void UpdateNodes(List<HierarchicalData> data)
 
 }
 
-```
+~~~ 
 
 ## DeleteNodes
 
-[GET&nbsp;&nbsp;/Api/Diagram/DeleteNodes](http://js.syncfusion.com/demos/ejServices/api/Diagram/DeleteNodes)
+[GET/Api/Diagram/DeleteNodes](http://js.syncfusion.com/demos/ejServices/api/Diagram/DeleteNodes)
 
 It is used to one or more shapes which needs to be deleted from database.
 
@@ -251,7 +251,7 @@ Code: 204
 
 ### Code example 
 
-```javascript
+~~~ javascript
 
 $.ajax({
 
@@ -269,9 +269,9 @@ $.ajax({
     }])
 });
 
-```
+~~~ 
 
-```csharp
+~~~ csharp
 
 public void DeleteNodes(List<HierarchicalData> data)
 {
@@ -284,11 +284,11 @@ public void DeleteNodes(List<HierarchicalData> data)
     }
 }
 
-```
+~~~ 
 
 ## AddConnectors
 
-[GET&nbsp;&nbsp;/Api/Diagram/AddConnectors](http://js.syncfusion.com/demos/ejServices/api/Diagram/AddConnectors)
+[GET/Api/Diagram/AddConnectors](http://js.syncfusion.com/demos/ejServices/api/Diagram/AddConnectors)
 
 It is used to one or more connectors which needs to be inserted into database.
 
@@ -304,7 +304,7 @@ Code: 204
 
 ### Code example 
 
-```javascript
+~~~ javascript
 
 $.ajax({
 
@@ -322,9 +322,9 @@ $.ajax({
     }])
 });
 
-```
+~~~ 
 
-```csharp
+~~~ csharp
 
 public void AddConnectors(List<HierarchicalDetails> data)
 {
@@ -336,12 +336,12 @@ public void AddConnectors(List<HierarchicalDetails> data)
     }
 }
 
-```
+~~~ 
 
 
 ## UpdateConnectors
 
-[GET&nbsp;&nbsp;/Api/Diagram/UpdateConnectors](http://js.syncfusion.com/demos/ejServices/api/Diagram/UpdateConnectors)
+[GET/Api/Diagram/UpdateConnectors](http://js.syncfusion.com/demos/ejServices/api/Diagram/UpdateConnectors)
 
 It is used to one or more connectors which needs to be modified into database.
 
@@ -357,7 +357,7 @@ Code: 204
 
 ### Code example 
 
-```javascript
+~~~ javascript
 
 $.ajax({
 
@@ -375,9 +375,9 @@ $.ajax({
     }])
 });
 
-```
+~~~ 
 
-```csharp
+~~~ csharp
 
 public void UpdateConnectors(List<HierarchicalDetails> data)
 {
@@ -391,11 +391,11 @@ public void UpdateConnectors(List<HierarchicalDetails> data)
     }
 }
 
-```
+~~~ 
 
 ## DeleteConnectors
 
-[GET&nbsp;&nbsp;/Api/Diagram/UpdateConnectors](http://js.syncfusion.com/demos/ejServices/api/Diagram/DeleteConnectors)
+[GET/Api/Diagram/UpdateConnectors](http://js.syncfusion.com/demos/ejServices/api/Diagram/DeleteConnectors)
 
 It is used to one or more connectors which needs to be deleted from database.
 
@@ -411,7 +411,7 @@ Code: 204
 
 ### Code example 
 
-```javascript
+~~~ javascript
 
 $.ajax({
 
@@ -429,9 +429,9 @@ $.ajax({
     }])
 });
 
-```
+~~~ 
 
-```csharp
+~~~ csharp
 
 public void DeleteConnectors(List<HierarchicalDetails> data)
 {
@@ -444,6 +444,6 @@ public void DeleteConnectors(List<HierarchicalDetails> data)
     }
 }
 
-```
+~~~ 
 
 

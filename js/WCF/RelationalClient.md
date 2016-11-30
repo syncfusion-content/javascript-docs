@@ -1,23 +1,96 @@
 ---
 layout: post
-title: webAPI reference for RelationalClient
-description: webAPI reference for RelationalClient
+title: WCF reference for PivotClient
+description: WCF reference for PivotClient
 documentation: API
-platform: js-webapi
-keywords: RelationalClient, syncfusion, RelationalClient webapi
+platform: js-wcf
+keywords: PivotClient, syncfusion, PivotClient WCF
 ---
 
 ## Initialize
 
-[POST/Api/RelationalClient/Initialize](http://js.syncfusion.com/demos/ejServices/api/RelationalClient/Initialize)
+[POST/WCF/PivotClient/Initialize](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Relational.svc)
 
-It fetches the data required to initialize the control.
+It fetches the data required to render the PivotClient control initially.
 
 ### URL parameters
 
 |  Parameter |  Description | 
 |---|---|
 |action|It holds the current action name as string|
+
+### Response information 
+
+Code: 200
+
+Content-Type: application/json
+
+Response: serialized JSON string
+
+### Code example 
+
+~~~ csharp
+
+public Dictionary<string, object> Initialize(string action)
+{
+    BindData();
+    return pivotClient.GetJsonData(action, ProductSales.GetSalesData(), null);
+}
+
+
+~~~ 
+
+## DrillChart
+
+[POST/WCF/PivotClient/DrillChart](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Relational.svc)
+
+It fetches the drilled data required to render the PivotChart on drilling.
+
+### URL parameters
+
+|  Parameter |  Description | 
+|---|---|
+|action|It holds the current action name as string|
+|drilledSeries|It contains the name of the drilled member|
+|currentReport|It contains the current report as compressed string|
+
+### Response information 
+
+Code: 200
+
+Content-Type: application/json
+
+Response: serialized JSON string
+
+### Code example 
+
+~~~ csharp
+
+public Dictionary<string, object> DrillChart(string action, string drilledSeries, string currentReport)
+{
+    pivotClient.PopulateData(currentReport);
+    pivotChart.PivotEngine.PivotRows = this.pivotClient.PivotReport.PivotRows;
+    pivotChart.PivotEngine.PivotColumns = this.pivotClient.PivotReport.PivotColumns;
+    pivotChart.PivotEngine.PivotCalculations = this.pivotClient.PivotReport.PivotCalculations;
+    pivotChart.PivotEngine.Filters = this.pivotClient.PivotReport.Filters;
+    return pivotChart.GetJsonData(action, ProductSales.GetSalesData(), drilledSeries);
+}
+
+~~~ 
+
+## Filtering
+
+[POST/WCF/PivotClient/Filtering](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Relational.svc)
+
+It fetches the filtered data required to render the control after performing filtering.
+
+### URL parameters
+
+|  Parameter |  Description | 
+|---|---|
+|action|It holds the current action name as string|
+|filterParams|It contains the information about the filter action performed|
+|currentReport|It contains the current report as compressed string|
 |customObject|It contains the custom object passed from client side|
 
 ### Response information 
@@ -26,24 +99,25 @@ Code: 200
 
 Content-Type: application/json
 
-Response: serialized JSON string	
+Response: serialized JSON string
 
 ### Code example 
 
 ~~~ csharp
-public Dictionary<string, object> Initialize(Dictionary<string, object> jsonResult)
+
+public Dictionary<string, object> Filtering(string action, string filterParams, string currentReport, string customObject)
 {
-    this.BindData();
-    return pivotClient.GetJsonData(jsonResult["action"].ToString(), ProductSales.GetSalesData(), null);
+    pivotClient.PopulateData(currentReport);
+    return pivotClient.GetJsonData(action, ProductSales.GetSalesData(), filterParams);
 }
 
 ~~~ 
 
 ## FetchMembers
 
-[POST/Api/RelationalClient/FetchMembers](http://js.syncfusion.com/demos/ejServices/api/RelationalClient/FetchMembers)
+[POST/WCF/PivotClient/FetchMembers](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Relational.svc)
 
-It fetches the details of the members in the selected field on opening member editor.
+It fetches the details of the members to render the member editor dialog.
 
 ### URL parameters
 
@@ -60,94 +134,25 @@ Code: 200
 
 Content-Type: application/json
 
-Response: serialized JSON string	
+Response: serialized JSON string
 
 ### Code example 
 
 ~~~ csharp
-public Dictionary<string, object> FetchMembers(Dictionary<string, object> jsonResult)
+
+public Dictionary<string, object> FetchMembers(string action, string currentReport, string customObject, string headerTag)
 {
-    pivotClient.PopulateData(jsonResult["currentReport"].ToString());
-    return pivotClient.GetJsonData(jsonResult["action"].ToString(), ProductSales.GetSalesData(), jsonResult["headerTag"].ToString());
-}
-
-~~~ 
-
-## DrillChart
-
-[POST/Api/RelationalClient/DrillChart](http://js.syncfusion.com/demos/ejServices/api/RelationalClient/DrillChart)
-
-It fetches the drilled data required to render the control on performing drilldown in PivotChart.
-
-### URL parameters
-
-|  Parameter |  Description | 
-|---|---|
-|action|It holds the current action name as string|
-|drilledSeries|It contains the name of the drilled member|
-
-### Response information 
-
-Code: 200
-
-Content-Type: application/json
-
-Response: serialized JSON string	
-
-### Code example 
-
-~~~ csharp
-public Dictionary<string, object> DrillChart(Dictionary<string, object> jsonResult)
-{
-    pivotClient.PopulateData(jsonResult["currentReport"].ToString());
-    this.pivotChart.PivotEngine.PivotRows = this.pivotClient.PivotReport.PivotRows;
-    this.pivotChart.PivotEngine.PivotColumns = this.pivotClient.PivotReport.PivotColumns;
-    this.pivotChart.PivotEngine.PivotCalculations = this.pivotClient.PivotReport.PivotCalculations;
-    this.pivotChart.PivotEngine.Filters = this.pivotClient.PivotReport.Filters;
-    return pivotChart.GetJsonData(jsonResult["action"].ToString(), ProductSales.GetSalesData(), jsonResult["drilledSeries"].ToString());
-}
-
-~~~ 
-
-## Filtering
-
-[POST/Api/RelationalClient/Filtering](http://js.syncfusion.com/demos/ejServices/api/RelationalClient/Filtering)
-
-It fetches the data required to render the control on performing filtering.
-
-### URL parameters
-
-|  Parameter |  Description | 
-|---|---|
-|action|It holds the current action name as string|
-|filterParams|It contains the filter information applied to the field|
-|currentReport|It contains the current report as compressed string|
-|customObject|It contains the custom object passed from client side|
-
-### Response information 
-
-Code: 200
-
-Content-Type: application/json
-
-Response: serialized JSON string	
-
-### Code example 
-
-~~~ csharp
-public Dictionary<string, object> Filtering(Dictionary<string, object> jsonResult)
-{
-    pivotClient.PopulateData(jsonResult["currentReport"].ToString());
-    return pivotClient.GetJsonData(jsonResult["action"].ToString(), ProductSales.GetSalesData(), jsonResult["filterParams"].ToString());
+    pivotClient.PopulateData(currentReport);
+    return pivotClient.GetJsonData(action, ProductSales.GetSalesData(), headerTag);
 }
 
 ~~~ 
 
 ## DropNode
 
-[POST/Api/RelationalClient/DropNode](http://js.syncfusion.com/demos/ejServices/api/RelationalClient/DropNode)
+[POST/WCF/PivotClient/DropNode](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Relational.svc)
 
-It fetches the data required to render the control on performing node drop action.
+It fetches the data required to render the control after drag and drop action.
 
 ### URL parameters
 
@@ -162,22 +167,22 @@ Code: 200
 
 Content-Type: application/json
 
-Response: serialized JSON string	
+Response: serialized JSON string
 
 ### Code example 
 
 ~~~ csharp
-public Dictionary<string, object> DropNode(Dictionary<string, object> jsonResult)
+
+public Dictionary<string, object> DropNode(string action, string args)
 {
-    Dictionary<string, object> dict = pivotClient.GetJsonData(jsonResult["action"].ToString(), ProductSales.GetSalesData(), jsonResult["args"].ToString());
-    return dict;
+    return pivotClient.GetJsonData(action, ProductSales.GetSalesData(), args);
 }
 
 ~~~ 
 
 ## ToolbarOperations
 
-[POST/Api/RelationalClient/ToolbarOperations](http://js.syncfusion.com/demos/ejServices/api/RelationalClient/ToolbarOperations)
+[POST/WCF/PivotClient/ToolbarOperations](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Relational.svc)
 
 It fetches the data required to render the control on performing toolbar operations.
 
@@ -199,17 +204,17 @@ Response: serialized JSON string
 ### Code example 
 
 ~~~ csharp
-public Dictionary<string, object> ToolbarOperations(Dictionary<string, object> jsonResult)
+
+public Dictionary<string, object> ToolbarOperations(string action, string args)
 {
-    Dictionary<string, object> dict = pivotClient.GetJsonData(jsonResult["action"].ToString(), ProductSales.GetSalesData(), jsonResult["args"].ToString());
-    return dict;
+    return pivotClient.GetJsonData(action, ProductSales.GetSalesData(), args);
 }
 
 ~~~ 
 
 ## SaveReportToDB
 
-[POST/Api/RelationalClient/SaveReportToDB](http://js.syncfusion.com/demos/ejServices/api/RelationalClient/SaveReportToDB)
+[POST/WCF/PivotClient/SaveReportToDB](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Relational.svc)
 
 It saves the current report to database with the specified name.
 
@@ -234,13 +239,13 @@ Response: None
 ### Code example 
 
 ~~~ csharp
-public Dictionary<string, object> SaveReportToDB(Dictionary<string, object> jsonResult)
+
+public Dictionary<string, object> SaveReportToDB(string reportName, string operationalMode, string analysisMode, string olapReport, string clientReports)
 {
-    string operationalMode = jsonResult["operationalMode"].ToString(), analysisMode = jsonResult["analysisMode"].ToString(), reportName = string.Empty;
+    reportName = reportName + "##" + operationalMode.ToLower() + "#>>#" + analysisMode.ToLower();
     bool isDuplicate = true;
     SqlCeConnection con = new SqlCeConnection() { ConnectionString = conStringforDB };
     con.Open();
-    reportName = jsonResult["reportName"].ToString() + "##" + operationalMode.ToLower() + "#>>#" + analysisMode.ToLower();
     SqlCeCommand cmd1 = null;
     foreach (DataRow row in GetDataTable().Rows)
     {
@@ -255,7 +260,7 @@ public Dictionary<string, object> SaveReportToDB(Dictionary<string, object> json
         cmd1 = new SqlCeCommand("insert into ReportsTable Values(@ReportName,@Reports)", con);
     }
     cmd1.Parameters.Add("@ReportName", reportName);
-    cmd1.Parameters.Add("@Reports", Encoding.UTF8.GetBytes(jsonResult["clientReports"].ToString()).ToArray());
+    cmd1.Parameters.Add("@Reports", Encoding.UTF8.GetBytes(clientReports).ToArray());
     cmd1.ExecuteNonQuery();
     con.Close();
     return null;
@@ -265,7 +270,7 @@ public Dictionary<string, object> SaveReportToDB(Dictionary<string, object> json
 
 ## Export
 
-[POST/Api/RelationalClient/Export](http://js.syncfusion.com/demos/ejServices/api/RelationalClient/Export)
+[POST/WCF/PivotClient/Export](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Relational.svc)
 
 It exports the PivotGrid or PivotChart or both to the selected format.
 
@@ -286,9 +291,11 @@ Response: file
 ### Code example 
 
 ~~~ csharp
-public void Export()
+
+public void Export(Stream stream)
 {
-    string args = HttpContext.Current.Request.Form.GetValues(0)[0];
+    System.IO.StreamReader sReader = new System.IO.StreamReader(stream);
+    string args = System.Web.HttpContext.Current.Server.UrlDecode(sReader.ReadToEnd()).Remove(0, 5);
     Dictionary<string, string> gridParams = serializer.Deserialize<Dictionary<string, string>>(args);
     pivotClient.PopulateData(gridParams["currentReport"]);
     string fileName = "Sample";
@@ -299,7 +306,7 @@ public void Export()
 
 ## FetchReportListFromDB
 
-[POST/Api/RelationalClient/FetchReportListFromDB](http://js.syncfusion.com/demos/ejServices/api/RelationalClient/FetchReportListFromDB)
+[POST/WCF/PivotClient/FetchReportListFromDB](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Relational.svc)
 
 It fetches the list of names of reports stored in database.
 
@@ -321,9 +328,11 @@ Response: serialized JSON string
 ### Code example 
 
 ~~~ csharp
-public Dictionary<string, object> FetchReportListFromDB(Dictionary<string, object> jsonResult)
+
+public Dictionary<string, object> FetchReportListFromDB(string operationalMode, string analysisMode)
 {
-    string reportNames = string.Empty, currentRptName = string.Empty, operationalMode = jsonResult["operationalMode"].ToString(), analysisMode = jsonResult["analysisMode"].ToString();
+    string reportNames = string.Empty;
+    string currentRptName = string.Empty;
     foreach (System.Data.DataRow row in GetDataTable().Rows)
     {
         currentRptName = (row.ItemArray[0] as string);
@@ -342,7 +351,7 @@ public Dictionary<string, object> FetchReportListFromDB(Dictionary<string, objec
 
 ## LoadReportFromDB
 
-[POST/Api/RelationalClient/LoadReportFromDB](http://js.syncfusion.com/demos/ejServices/api/RelationalClient/LoadReportFromDB)
+[POST/WCF/PivotClient/LoadReportFromDB](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Relational.svc)
 
 It loads the report with specified name from the database to the control.
 
@@ -367,24 +376,37 @@ Response: serialized JSON string
 ### Code example 
 
 ~~~ csharp
-public Dictionary<string, object> LoadReportFromDB(Dictionary<string, object> jsonResult)
+
+public Dictionary<string, object> LoadReportFromDB(string reportName, string operationalMode, string analysisMode, string olapReport, string clientReports)
 {
     PivotReport report = new PivotReport();
-    string operationalMode = jsonResult["operationalMode"].ToString(), analysisMode = jsonResult["analysisMode"].ToString();
     Dictionary<string, object> dictionary = new Dictionary<string, object>();
     string currentRptName = string.Empty;
     foreach (DataRow row in GetDataTable().Rows)
     {
         currentRptName = (row.ItemArray[0] as string).Replace("##" + operationalMode.ToLower() + "#>>#" + analysisMode.ToLower(), "");
-        if (currentRptName.Equals(jsonResult["reportName"].ToString()))
+        if (currentRptName.Equals(reportName))
         {
-            byte[] reportString = new byte[2 * 1024];
-            reportString = (row.ItemArray[1] as byte[]);
-            if (analysisMode.ToLower() == "pivot" && operationalMode.ToLower() == "servermode")
-                dictionary = pivotClient.GetJsonData("LoadReport", ProductSales.GetSalesData(), Encoding.UTF8.GetString(reportString));
+            if (operationalMode.ToLower() == "servermode" && analysisMode == "olap")
+            {
+                var reportString = "";
+                OlapDataManager DataManager = new OlapDataManager();
+                reportString = OLAPUTILS.Utils.CompressData(row.ItemArray[1] as byte[]);
+                DataManager.Reports = pivotClient.DeserializedReports(reportString);
+                DataManager.SetCurrentReport(DataManager.Reports[0]);
+                return pivotClient.GetJsonData("toolbarOperation", DataManager, "Load Report", reportName);
+            }
             else
-                dictionary.Add("report", Encoding.UTF8.GetString(reportString));
-            break;
+            {
+                byte[] reportString = new byte[2 * 1024];
+                reportString = (row.ItemArray[1] as byte[]);
+                if (analysisMode.ToLower() == "pivot" && operationalMode.ToLower() == "servermode")
+                    dictionary = pivotClient.GetJsonData("LoadReport", ProductSales.GetSalesData(), Encoding.UTF8.GetString(reportString));
+                else
+                    dictionary.Add("report", Encoding.UTF8.GetString(reportString));
+                break;
+            }
+
         }
     }
     return dictionary;

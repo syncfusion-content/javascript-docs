@@ -9,7 +9,7 @@ keywords: Spreadsheet,ejSpreadsheet , syncfusion, ejSpreadsheet webapi
 
 ## ExcelExport
 
-[POST&nbsp;&nbsp;/Api/Spreadsheet/ExcelExport](http://js.syncfusion.com/demos/ejServices/api/Spreadsheet/ExcelExport)
+[POST/Api/Spreadsheet/ExcelExport](http://js.syncfusion.com/demos/ejServices/api/Spreadsheet/ExcelExport)
 
 It is used to export the Spreadsheet data as an Excel document.
 
@@ -29,11 +29,11 @@ Content-Type: application/octet-stream
 
 ### Code example 
 
-```javascript
+~~~ javascript
 
 
-```
-```csharp
+~~~ 
+~~~ csharp
 public void ExcelExport()
 {
 	string sheetModel = HttpContext.Current.Request.Params["sheetModel"], sheetData = HttpContext.Current.Request.Params["sheetData"], password = HttpContext.Current.Request.Params["password"];
@@ -42,14 +42,14 @@ public void ExcelExport()
 	else
 		Spreadsheet.Save(sheetModel, sheetData, "sample", ExportFormat.XLSX, ExcelVersion.Excel2013);
 }
-```
+~~~ 
 >The above example will export the Spreadsheet as an Excel file.
 
 ## CsvExport
 
-[POST&nbsp;&nbsp;/Api/Spreadsheet/CsvExport](http://js.syncfusion.com/demos/ejServices/api/Spreadsheet/CsvExport)
+[POST/Api/Spreadsheet/CsvExport](http://js.syncfusion.com/demos/ejServices/api/Spreadsheet/CsvExport)
 
-It is used to export the Spreadsheet data to Csv file.
+It is used to export the Spreadsheet data to CSV file.
 
 ### URL parameters
 
@@ -66,12 +66,12 @@ Content-Type: application/octet-stream
 
 ### Code example 
 
-```javascript
+~~~ javascript
 
 
 
-```
-```csharp
+~~~ 
+~~~ csharp
 
 public void CsvExport()
 {
@@ -79,13 +79,13 @@ public void CsvExport()
 	Spreadsheet.Save(sheetModel, sheetData, "sample", ExportFormat.CSV);
 }
 
-```
+~~~ 
 
 >The above example will export the Spreadsheet as Csv file.
 
 ## PdfExport
 
-[POST&nbsp;&nbsp;/Api/Spreadsheet/PdfExport](http://js.syncfusion.com/demos/ejServices/api/Spreadsheet/PdfExport)
+[POST/Api/Spreadsheet/PdfExport](http://js.syncfusion.com/demos/ejServices/api/Spreadsheet/PdfExport)
 
 It is used to export the Spreadsheet data as a PDF document.
 
@@ -104,12 +104,12 @@ Content-Type: application/octet-stream
 
 ### Code example 
 
-```javascript
+~~~ javascript
 
 
-```
+~~~ 
 
-```csharp
+~~~ csharp
 
 public void PdfExport()
 {
@@ -117,12 +117,12 @@ public void PdfExport()
 	Spreadsheet.Save(sheetModel, sheetData, "sample", ExportFormat.PDF);
 }
 
-```
+~~~ 
 >The above example will export the Spreadsheet as PDF file.
 
 ## Import
 
-[POST&nbsp;&nbsp;/Api/Spreadsheet/Import](http://js.syncfusion.com/demos/ejServices/api/Spreadsheet/Import)
+[POST/Api/Spreadsheet/Import](http://js.syncfusion.com/demos/ejServices/api/Spreadsheet/Import)
 
 It loads the document from specified path in Spreadsheet.
 
@@ -143,9 +143,9 @@ Content-Type:  application/json; charset=utf-8
 
 ### Code example 
 
-```javascript
+~~~ javascript
 
-```
+~~~ 
 
 
 
