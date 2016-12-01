@@ -31,7 +31,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 
 public Dictionary<string, object> Initialize(string action, string currentReport, string customObject)
 {
@@ -48,7 +48,7 @@ public Dictionary<string, object> Initialize(string action, string currentReport
     return htmlHelper.GetJsonData(action, DataManager);
 }
 
-~~~ 
+{% endhighlight %} 
 
 ## Drill
 
@@ -75,7 +75,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 
 public Dictionary<string, object> Drill(string action, string drillInfo, string olapReport, string customObject)
 {
@@ -95,4 +95,4 @@ public Dictionary<string, object> Drill(string action, string drillInfo, string 
     return htmlHelper.GetJsonData(action, DataManager, drillInfo);
 }
 
-~~~ 
+{% endhighlight %} 

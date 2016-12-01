@@ -37,7 +37,7 @@ Content-Type: application/json;odata=verbose;charset=utf-8
 
 Response (JSON):   
 
-~~~ javascript
+{% highlight js %}
 
 {
 "__metadata":
@@ -65,7 +65,8 @@ Response (JSON):
 "ShipCountry":"France"
 }, 	 //... 9 more records
 
-~~~ 
+{% endhighlight %} 
+
 > We can see that the first ten results from the `Orders` table of Northwind database in the above JSON reponse where it uses `$top` query option.   
 
 ## Kanban
@@ -82,7 +83,7 @@ Content-Type: application/json;odata=verbose;charset=utf-8
 
 Response (JSON):   
 
-~~~ javascript
+{% highlight js %}
 
 {
 
@@ -100,5 +101,6 @@ Response (JSON):
 
 }, 	 //... 9 more records
 
-~~~ 
+{% endhighlight %} 
+
 > We can see that the first ten results from the `Tasks` table of Northwind database in the above JSON reponse where it uses `$top` query option.   

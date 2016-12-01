@@ -30,7 +30,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 
 public Dictionary<string, object> Initialize(string action)
 {
@@ -39,7 +39,7 @@ public Dictionary<string, object> Initialize(string action)
     return dict;
 }
 
-~~~ 
+{% endhighlight %} 
 
 ## FetchMembers
 
@@ -66,7 +66,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 
 public Dictionary<string, object> FetchMembers(string action, string headerTag, string sortedHeaders, string currentReport)
 {
@@ -75,7 +75,7 @@ public Dictionary<string, object> FetchMembers(string action, string headerTag, 
     return dict;
 }
 
-~~~ 
+{% endhighlight %} 
 
 ## Filtering
 
@@ -102,7 +102,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 
 public Dictionary<string, object> Filtering(string action, string filterParams, string sortedHeaders, string currentReport)
 {
@@ -111,7 +111,7 @@ public Dictionary<string, object> Filtering(string action, string filterParams, 
     return dict;
 }
 
-~~~ 
+{% endhighlight %} 
 
 ## ModifyNodeState
 
@@ -141,7 +141,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 
 public Dictionary<string, object> ModifyNodeState(string action, string headerTag, string dropAxis, string sortedHeaders, string filterParams, string currentReport)
 {
@@ -150,7 +150,7 @@ public Dictionary<string, object> ModifyNodeState(string action, string headerTa
     return dict;
 }
 
-~~~ 
+{% endhighlight %} 
 
 ## DropNode
 
@@ -179,7 +179,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 
 public Dictionary<string, object> DropNode(string action, string dropAxis, string headerTag, string sortedHeaders, string filterParams, string currentReport)
 {
@@ -188,7 +188,7 @@ public Dictionary<string, object> DropNode(string action, string dropAxis, strin
     return dict;
 }
 
-~~~ 
+{% endhighlight %} 
 
 ## Sorting
 
@@ -214,7 +214,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 
 public Dictionary<string, object> Sorting(string action, string sortedHeaders, string currentReport)
 {
@@ -223,7 +223,7 @@ public Dictionary<string, object> Sorting(string action, string sortedHeaders, s
     return dict;
 }
 
-~~~ 
+{% endhighlight %} 
 
 ## CalculatedField
 
@@ -249,7 +249,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 
 public Dictionary<string, object> CalculatedField(string action, string headerTag, string currentReport)
 {
@@ -258,7 +258,7 @@ public Dictionary<string, object> CalculatedField(string action, string headerTa
     return dict;
 }
 
-~~~ 
+{% endhighlight %} 
 
 ## Export
 
@@ -282,7 +282,7 @@ Response: file
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 
 public void Export(Stream stream)
 {
@@ -294,7 +294,7 @@ public void Export(Stream stream)
     htmlHelper.ExportPivotGrid(ProductSales.GetSalesData(), args, fileName, System.Web.HttpContext.Current.Response);
 }
 
-~~~ 
+{% endhighlight %} 
 
 ## SaveReport
 
@@ -321,7 +321,7 @@ Response: None
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 
 public Dictionary<string, object> SaveReport(string reportName, string operationalMode, string olapReport, string clientReports)
 {
@@ -353,7 +353,7 @@ public Dictionary<string, object> SaveReport(string reportName, string operation
     return null;
 }
 
-~~~ 
+{% endhighlight %} 
 
 ## LoadReportFromDB
 
@@ -384,7 +384,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 
 public Dictionary<string, object> LoadReportFromDB(string reportName, string operationalMode, string olapReport, string clientReports)
 {
@@ -426,7 +426,7 @@ public Dictionary<string, object> LoadReportFromDB(string reportName, string ope
     return dictionary;
 }
 
-~~~ 
+{% endhighlight %} 
 
 ## DeferUpdate
 
@@ -452,7 +452,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 
 public Dictionary<string, object> DeferUpdate(string action, string filterParams, string sortedHeaders, string currentReport)
 {
@@ -461,7 +461,7 @@ public Dictionary<string, object> DeferUpdate(string action, string filterParams
     return dict;
 }
 
-~~~ 
+{% endhighlight %} 
 
 ## CellEditing
 
@@ -489,7 +489,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 
 public Dictionary<string, object> CellEditing(string action, string index, string valueHeaders, string summaryValues, string currentReport)
 {
@@ -498,4 +498,4 @@ public Dictionary<string, object> CellEditing(string action, string index, strin
     return dict;
 }
 
-~~~ 
+{% endhighlight %} 

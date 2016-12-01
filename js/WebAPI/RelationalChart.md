@@ -30,14 +30,14 @@ Response: serialized JSON string
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 public Dictionary<string, object> Initialize(Dictionary<string, object> jsonResult)
 {
     BindData();
     return pivotChart.GetJsonData(jsonResult["action"].ToString(), ProductSales.GetSalesData());
 }
 
-~~~ 
+{% endhighlight %}
 
 ## Drill
 
@@ -64,14 +64,14 @@ Response: serialized JSON string
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 public Dictionary<string, object> Drill(Dictionary<string, object> jsonResult)
 {
     BindData();
     return pivotChart.GetJsonData(jsonResult["action"].ToString(), ProductSales.GetSalesData(), jsonResult["drilledSeries"].ToString());
 }
 
-~~~ 
+{% endhighlight %}
 
 ## Export
 
@@ -95,7 +95,7 @@ Response: file
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 public void Export()
 {
     string args = HttpContext.Current.Request.Form.GetValues(0)[0];
@@ -103,4 +103,4 @@ public void Export()
     pivotChart.ExportPivotChart(args, fileName, System.Web.HttpContext.Current.Response);
 }
         
-~~~ 
+{% endhighlight %}

@@ -28,7 +28,7 @@ Content-Type: multipart/form-data;
 
 ### Code example 
 
-~~~ javascript
+{% highlight js %}
 
 $(function () {
 	$("#UploadDefault").ejUploadbox({
@@ -36,7 +36,8 @@ $(function () {
 	});
 });
 
-~~~ 
+{% endhighlight %}
+
 >In the above example we have used webAPI named as Save in order to save the uploaded file.
 
 ## Remove
@@ -59,7 +60,7 @@ Content-Type: application/x-www-form-urlencoded; charset=UTF-8
 
 ### Code example 
 
-~~~ javascript
+{% highlight js %}
 
 $(function () {
 	$("#UploadDefault").ejUploadbox({
@@ -68,6 +69,6 @@ $(function () {
 	});
 });
 
-~~~ 
+{% endhighlight %}
 
 >In the above example we have used webAPI named as Remove in order to remove the saved file.

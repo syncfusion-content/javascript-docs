@@ -27,7 +27,7 @@ Content-Type: application/octet-stream
 
 ### Code example 
 
-~~~ javascript
+{% highlight js %}
 
 $(function () {
       var dateFormat = "{0:" + ej.preferredCulture()["calendars"]["standard"]["patterns"]["d"] + "}";
@@ -58,7 +58,7 @@ function toolbarclick(args) {
 
 }
 
-~~~ 
+{% endhighlight %}
 
 ## ExcelExport
 
@@ -78,7 +78,7 @@ Code: 200
 
 Content-Type: application/octet-stream	
 
-~~~ javascript
+{% highlight js %}
 
 $(function () {
       var dateFormat = "{0:" + ej.preferredCulture()["calendars"]["standard"]["patterns"]["d"] + "}";
@@ -109,4 +109,4 @@ function toolbarclick(args) {
 
 }
 
-~~~ 
+{% endhighlight %}

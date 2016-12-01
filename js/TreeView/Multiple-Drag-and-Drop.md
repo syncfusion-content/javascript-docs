@@ -108,5 +108,5 @@ TreeView supports to drag and drop multiple nodes by specifying [allowMultiSelec
 	
 {% endhighlight %}
 
-For more details about multiple drag and drop in TreeView, refer the sample [here](http://jsplayground.syncfusion.com/viezjvcc).
+For more details about multiple drag and drop in TreeView, refer the sample [here](http://jsplayground.syncfusion.com/Sync_1mo2awgk).
 

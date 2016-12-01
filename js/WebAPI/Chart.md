@@ -28,13 +28,13 @@ Content-Type: application/octet-stream
 
 ### Code example 
 
-~~~ javascript
+{% highlight js %}
 
 $("#chartcontainer").ejChart(
 	 { exportSettings: { angle: 180, action: "http://js.syncfusion.com/demos/ejServices/api/Chart/Export" },
 });
 
-~~~ 
+{% endhighlight %}
 
 >The above example will export the Chart into specified file format.
 
@@ -59,13 +59,14 @@ Content-Type: application/octet-stream
 
 ### Code example 
 
-~~~ javascript
+{% highlight js %}
 
 $("#chartcontainer").ejChart(
 	 {exportSettings: { type: "svg", angle: 180, action: "http://js.syncfusion.com/demos/ejServices/api/Chart/SvgExport" },
 });
 
-~~~ 
+{% endhighlight %}
+
 >The above example will export the Chart as an SVG image.
 
 ## ExcelExport
@@ -89,13 +90,14 @@ Content-Type: application/octet-stream
 
 ### Code example 
 
-~~~ javascript
+{% highlight js %}
 
 $("#chartcontainer").ejChart(
 	 {exportSettings: { type: "xlsx", angle: 180, action: "http://js.syncfusion.com/demos/ejServices/api/Chart/ExcelExport" },
 });
 
-~~~ 
+{% endhighlight %}
+
 >The above example will export the Chart as an Excel file.
 
 ## WordExport
@@ -119,13 +121,14 @@ Content-Type: application/octet-stream
 
 ### Code example 
 
-~~~ javascript
+{% highlight js %}
 
 $("#chartcontainer").ejChart(
 	 {exportSettings: { type: "docx", angle: 180, action: "http://js.syncfusion.com/demos/ejServices/api/Chart/WordExport" },
 });
 
-~~~ 
+{% endhighlight %}
+
 >The above example will export the Chart as an Word file.
 
 ## PdfExport
@@ -149,13 +152,14 @@ Content-Type: application/octet-stream
 
 ### Code example 
 
-~~~ javascript
+{% highlight js %}
 
 $("#chartcontainer").ejChart(
 	 {exportSettings: { type: "pdf", angle: 180, action: "http://js.syncfusion.com/demos/ejServices/api/Chart/PdfExport" },
 });
 
-~~~ 
+{% endhighlight %}
+
 >The above example will export the Chart as PDF file.
 
 ## ImageExport
@@ -179,13 +183,14 @@ Content-Type: application/octet-stream
 
 ### Code example 
 
-~~~ javascript
+{% highlight js %}
 
 $("#chartcontainer").ejChart(
 	 {exportSettings: { type: "jpg", angle: 180, action: "http://js.syncfusion.com/demos/ejServices/api/Chart/ImageExport" },
 });
 
-~~~ 
+{% endhighlight %}
+
 >The above example will export the Chart as JPG Image.
 
 

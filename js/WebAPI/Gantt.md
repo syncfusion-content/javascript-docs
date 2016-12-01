@@ -27,7 +27,7 @@ Content-Type: application/octet-stream
 
 ### Code example 
 
-~~~ javascript
+{% highlight js %}
 
 $(function () {
       $("#GanttContainer").ejGantt({
@@ -51,4 +51,4 @@ if (id == "GanttContainer_excelExport") {
 }
 }
 
-~~~ 
+{% endhighlight %}

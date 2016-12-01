@@ -30,11 +30,12 @@ Response: serialized JSON string
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
+
 public Dictionary<string, object> Initialize(Dictionary<string, object> jsonResult)
 {
     htmlHelper.PivotReport = BindDefaultData();
     return htmlHelper.GetJsonData(jsonResult["action"].ToString(), ProductSales.GetSalesData());
 }
 
-~~~ 
+{% endhighlight %}

@@ -17,7 +17,7 @@ This section explains the usage of Predictive Analytics API in JavaScript. This 
 
 |  Parameter |  Data Type |  Description | 
 |---|---|---|
-| model  | PredictiveModel (Array)  | Send the data, PMML file and model name to retrieve the predicted result. <br/><br/> List of PMML files shipped within the EJ services are Groceries.pmml, Glass.pmml, Bfeed.pmml, Audit.pmml, Cars.pmml, Wine.pmml, BreastCancer.pmml, Imports.pmml, Iris.pmml, Tips.pmml, Ozone.pmml, Titanic.pmml. <br/><br/> List of model names supported within the EJ services are AssociationRules, Clustering, CoxRegression, GeneralRegression, GradientBoosting, MultinomialRegression, NaiveBayes, NeuralNetworks, RandomForest, Regression, SupportVectorMachine, TreeModel.  |  
+| model  | PredictiveModel (Array)  | Send the data, PMML file and model name to retrieve the predicted result. <br><br> List of PMML files shipped within the EJ services are Groceries.pmml, Glass.pmml, Bfeed.pmml, Audit.pmml, Cars.pmml, Wine.pmml, BreastCancer.pmml, Imports.pmml, Iris.pmml, Tips.pmml, Ozone.pmml, Titanic.pmml. <br><br> List of model names supported within the EJ services are AssociationRules, Clustering, CoxRegression, GeneralRegression, GradientBoosting, MultinomialRegression, NaiveBayes, NeuralNetworks, RandomForest, Regression, SupportVectorMachine, TreeModel.  |  
 
 
 ### Response information 
@@ -28,7 +28,7 @@ Content-Type: application/json;odata=verbose;charset=utf-8
 
 Response (JSON):   
 
-~~~ javascript
+{% highlight js %}
 
 [{
     "transactionID":1,
@@ -38,13 +38,13 @@ Response (JSON):
     "Rule_Association":"[]"
 }]
 
-~~~ 
+{% endhighlight %}
 
 
 ### Code example 
 
 
-~~~ javascript
+{% highlight js %}
 
 $.ajax({
         type: "POST",
@@ -55,4 +55,4 @@ $.ajax({
         processdata: true,
  });
 
-~~~ 
+{% endhighlight %}
