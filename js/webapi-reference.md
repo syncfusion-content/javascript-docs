@@ -39,7 +39,13 @@ The details of WebAPI has been shown in the below table.
 
 | WebAPI | Description |
 |---|---|
-|[ConvertToPDF](WebAPI\DocIO#ConvertToPDF)|It is used to generate the PDF document.|
+|[GenerateWordDocument](WebAPI\DocIO#GenerateWordDocument)|It is used to generate the Word document or PDF.|
+|[ApplyTextFormat](WebAPI\DocIO#ApplyTextFormat)|It is used to generate the Word document or PDF with applied Text format.|
+|[GetInvoiceTemplate](WebAPI\DocIO#GetInvoiceTemplate)|It is used to get sales invoice template Word document.|
+|[GenerateInvoice](WebAPI\DocIO#GenerateInvoice)|It is used to generate sales invoice Word document or PDF.|
+|[GetMailmergeTemplate](WebAPI\DocIO#GetMailmergeTemplate)|It is used to  get Mail merge template Word document.|
+|[ExecuteNestedMailmerge](WebAPI\DocIO#ExecuteNestedMailmerge)|It is used to execute nested Mail merge in Word document or PDF.|
+|[ConvertToPDF](WebAPI\DocIO#ConvertToPDF)|It is used to convert the Word document to PDF.|
 
 ### DocumentEditor
 
