@@ -1,0 +1,265 @@
+---
+layout: post
+title: webAPI reference for Presentation
+description: webAPI reference for Presentation
+documentation: API
+platform: js-webapi
+keywords: Presentation, syncfusion, Presentation webapi
+---
+
+## CreatePresentation
+
+[POST&nbsp;&nbsp;/Api/Presentation/CreatePresentation](http://js.syncfusion.com/demos/ejservices/api/Presentation/CreatePresentation)
+
+It is used to create PowerPoint presentation with texts, images and tables.
+
+### Response information 
+
+Code: 200
+
+Content-Type: data:attachment/pptx
+
+### Code example 
+
+```javascript
+
+URL: http://js.syncfusion.com/demos/ejServices/api/Presentation/CreatePresentation
+
+  $(function () {
+        $('#slidespresentation').click(function () {
+		var formdata = new FormData();
+		var req = new XMLHttpRequest();
+		req.open("POST", window.baseurl + "/api/Presentation/CreatePresentation", true);
+		req.send(formdata);
+		req.responseType = "blob";
+		
+		req.onload = function (event) {
+		if (req.response != null && navigator.msSaveBlob)
+			return navigator.msSaveBlob(new Blob([req.response], { type: "data:attachment/powerpoint" }), "Sample.pptx");
+		var a = document.createElement('a');
+		var url = window.URL.createObjectURL(new Blob([req.response], {type: "data:attachment/powerpoint"}));
+		a.href = url;
+		a.download = "Sample.pptx";
+		document.body.appendChild(a);
+		a.click();
+		window.URL.revokeObjectURL(url);
+		a.remove();};
+       });
+   });
+
+```
+> The above sample demonstrates adding slides to a PowerPoint presentation and adding contents to the PowerPoint slide.
+
+## ManipulateSmartArt
+
+[POST&nbsp;&nbsp;/Api/Presentation/ManipulateSmartArt](http://js.syncfusion.com/demos/ejservices/api/Presentation/ManipulateSmartArt)
+
+It is used to manipulate SmartArt in PowerPoint slides.
+
+### Response information 
+
+Code: 200
+
+Content-Type: data:attachment/pptx
+
+### Code example 
+
+```javascript
+
+URL: http://js.syncfusion.com/demos/ejServices/api/Presentation/ManipulateSmartArt
+
+  $(function () {
+        $('#smartartpresentation').click(function () {
+		var formdata = new FormData();
+		var req = new XMLHttpRequest();
+		req.open("POST", window.baseurl + "/api/Presentation/ManipulateSmartArt", true);
+		req.send(formdata);
+		req.responseType = "blob";
+		
+		req.onload = function (event) {
+		if (req.response != null && navigator.msSaveBlob)
+			return navigator.msSaveBlob(new Blob([req.response], { type: "data:attachment/powerpoint" }), "Sample.pptx");
+		var a = document.createElement('a');
+		var url = window.URL.createObjectURL(new Blob([req.response], {type: "data:attachment/powerpoint"}));
+		a.href = url;
+		a.download = "Sample.pptx";
+		document.body.appendChild(a);
+		a.click();
+		window.URL.revokeObjectURL(url);
+		a.remove();};
+       });
+   });
+
+```
+> The above sample demonstrates adding and removing the nodes in a SmartArt diagram.
+
+## MergePresentations
+
+[POST&nbsp;&nbsp;/Api/Presentation/MergePresentations](http://js.syncfusion.com/demos/ejservices/api/Presentation/MergePresentations)
+
+It is used to merge PowerPoint presentations.
+
+| Parameter | Data Type | Description |
+|---|---|---|
+|MergingType|String|It specifies the paste option for merging presentations.|
+
+### Response information 
+
+Code: 200
+
+Content-Type: data:attachment/pptx
+
+### Code example 
+
+```javascript
+
+URL: http://js.syncfusion.com/demos/ejServices/api/Presentation/MergePresentations
+
+  $(function () {
+        $('#mergingpresentation').click(function () {
+		var formdata = new FormData();
+		var destinationtheme = document.getElementById("destinationtheme").checked;
+        var sourceformatting = document.getElementById("sourceformatting").checked;
+		var contenttype = "data:attachment/powerpoint";
+        var filename = "Sample.pptx";
+        if (sourceformatting) {
+            formdata.append("MergingType", "SourceFormatting");
+        }
+        else if(destinationtheme)
+        {
+            formdata.append("MergingType", "DestinationTheme");
+        }
+		var req = new XMLHttpRequest();
+		req.open("POST", window.baseurl + "/api/Presentation/MergePresentations", true);
+		req.send(formdata);
+		req.responseType = "blob";
+		
+		req.onload = function (event) {
+		if (req.response != null && navigator.msSaveBlob)
+			return navigator.msSaveBlob(new Blob([req.response], { type: contenttype }), filename);
+		var a = document.createElement('a');
+		var url = window.URL.createObjectURL(new Blob([req.response], {type: contenttype}));
+		a.href = url;
+		a.download = filename;
+		document.body.appendChild(a);
+		a.click();
+		window.URL.revokeObjectURL(url);
+		a.remove();};
+	 });
+   });
+
+```
+> The above sample demonstrates merging two PowerPoint documents with paste options - use destination theme and source formatting using Essential Presentation. 
+
+## CreateNotes
+
+[POST&nbsp;&nbsp;/Api/Presentation/CreateNotes](http://js.syncfusion.com/demos/ejservices/api/Presentation/CreateNotes)
+
+It is used to add notes page in PowerPoint slides and converts the notes page to PDF document. 
+
+### URL parameters
+
+| Parameter | Data Type | Description |
+|---|---|---|
+|FormatType|String|It contains format type to save.|
+
+### Response information
+
+Code: 200
+
+Content-Type: data:attachment/filetype
+
+### Code example 
+
+```javascript
+
+URL: http://js.syncfusion.com/demos/ejServices/api/Presentation/CreateNotes
+
+  $(function () {
+        $('#notespresentation').click(function () {
+		var formdata = new FormData();
+		var rdButtonPPTX = document.getElementById("rdButtonPPTX").checked;
+        var rdButtonPDF = document.getElementById("rdButtonPDF").checked;
+		var contenttype;
+        var filename;
+        if (rdButtonPPTX) {
+            formdata.append("FormatType", "PPTX");
+            contenttype = "data:attachment/powerpoint";
+            filename = "Sample.pptx";
+        }
+        else if(rdButtonPDF)
+        {
+            formdata.append("FormatType", "PDF");
+            contenttype = "data:attachment/pdf";
+            filename = "Sample.pdf";
+        }
+		var req = new XMLHttpRequest();
+		req.open("POST", window.baseurl + "/api/Presentation/CreateNotes", true);
+		req.send(formdata);
+		req.responseType = "blob";
+		
+		req.onload = function (event) {
+		if (req.response != null && navigator.msSaveBlob)
+			return navigator.msSaveBlob(new Blob([req.response], { type: contenttype }), filename);
+		var a = document.createElement('a');
+		var url = window.URL.createObjectURL(new Blob([req.response], {type: contenttype}));
+		a.href = url;
+		a.download = filename;
+		document.body.appendChild(a);
+		a.click();
+		window.URL.revokeObjectURL(url);
+		a.remove();};
+     });
+   });
+
+```
+> The above sample demonstrates adding the Notes pages to a Presentation slide and how to convert the Notes pages in the PowerPoint Presentation as PDF document. 
+
+## ConvertToPDF
+
+[POST&nbsp;&nbsp;/Api/Presentation/ConvertToPDF](http://js.syncfusion.com/demos/ejservices/api/Presentation/ConvertToPDF)
+
+It is used to convert the PowerPoint presentation to PDF document
+
+### URL parameters
+
+| Parameter | Data Type | Description |
+|---|---|---|
+|UploadedFile|File|It contains uploaded file to oonvert as PDF.|
+
+### Response information 
+
+Code: 200
+
+Content-Type: data:attachment/pdf
+
+### Code example 
+
+```javascript
+
+URL: http://js.syncfusion.com/demos/ejServices/api/Presentation/ConvertToPDF
+
+  $(function () {
+        $('#pptxtopdfpresentation').click(function () {
+		var formdata = new FormData();
+		var req = new XMLHttpRequest();
+		req.open("POST", window.baseurl + "/api/Presentation/ConvertToPDF", true);
+		req.send(formdata);
+		req.responseType = "blob";
+		
+		req.onload = function (event) {
+		if (req.response != null && navigator.msSaveBlob)
+			return navigator.msSaveBlob(new Blob([req.response], { type: "data:attachment/pdf" }), "Sample.pdf");
+		var a = document.createElement('a');
+		var url = window.URL.createObjectURL(new Blob([req.response], {type: "data:attachment/pdf"}));
+		a.href = url;
+		a.download = "Sample.pdf";
+		document.body.appendChild(a);
+		a.click();
+		window.URL.revokeObjectURL(url);
+		a.remove();};
+    });
+   });
+
+```
+> The above sample demonstrates converting a PowerPoint presentation to PDF document. 

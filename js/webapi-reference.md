@@ -48,6 +48,16 @@ The details of WebAPI has been shown in the below table.
 |[Import](WebAPI\DocumentEditor#Import)|It loads the document from specified path in DocumentEditor.|
 |[FileUpload](WebAPI\DocumentEditor#FileUpload)|It loads the default document in DocumentEditor.|
 
+### Presentation
+
+|  WebAPI | Description  |
+|---|---|
+|[CreatePresentation](WebAPI\Presentation#CreatePresentation)|It is used to generate a PowerPoint presentation.|
+|[ManipulateSmartArt](WebAPI\Presentation#ManipulateSmartArt)|It is used to manipulate SmartArt in PowerPoint slides.|
+|[MergePresentations](WebAPI\Presentation#MergePresentations)|It is used to merge PowerPoint presentations.|
+|[CreateNotes](WebAPI\Presentation#CreateNotes)|It is used to add notes page in PowerPoint slides and converts the notes page to PDF document.|
+|[ConvertToPDF](WebAPI\Presentation#ConvertToPDF)|It is used to convert the PowerPoint presentation to PDF.|
+
 ### FileExplorer
 
 | WebAPI | Description |
