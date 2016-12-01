@@ -26,17 +26,17 @@ Content-Type:
 
 Response(JSON):
 
-~~~ javascript
+{% highlight js %}
 
 
-~~~ 
+{% endhighlight %}
 
 ### Code example 
 
-~~~ javascript
+{% highlight js %}
 
 
-~~~ 
+{% endhighlight %}
 
 ## GetFormFillTemplate
 
@@ -57,17 +57,17 @@ Content-Type:
 
 Response(JSON):
 
-~~~ javascript
+{% highlight js %}
 
 
-~~~ 
+{% endhighlight %}
 
 ### Code example 
 
-~~~ javascript
+{% highlight js %}
 
 
-~~~ 
+{% endhighlight %}
 ## GenerateFormFillTemplate
 
 [POST/Api/PDF/GenerateFormFillTemplate](http://js.syncfusion.com/demos/ejServices/api/PDF/GenerateFormFillTemplate)
@@ -87,17 +87,18 @@ Content-Type:
 
 Response(JSON):
 
-~~~ javascript
+{% highlight js %}
 
 
-~~~ 
+{% endhighlight %}
 
 ### Code example 
 
-~~~ javascript
+{% highlight js %}
 
 
-~~~ 
+{% endhighlight %}
+
 ## GenerateInteractiveFeature
 
 [POST/Api/PDF/GenerateInteractiveFeature](http://js.syncfusion.com/demos/ejServices/api/PDF/GenerateInteractiveFeature)
@@ -117,17 +118,18 @@ Content-Type:
 
 Response(JSON):
 
-~~~ javascript
+{% highlight js %}
 
 
-~~~ 
+{% endhighlight %}
 
 ### Code example 
 
-~~~ javascript
+{% highlight js %}
 
 
-~~~ 
+{% endhighlight %}
+
 ## GenerateEncryptDocument
 
 [POST/Api/PDF/GenerateEncryptDocument](http://js.syncfusion.com/demos/ejServices/api/PDF/GenerateEncryptDocument)
@@ -147,17 +149,17 @@ Content-Type:
 
 Response(JSON):
 
-~~~ javascript
+{% highlight js %}
 
 
-~~~ 
+{% endhighlight %}
 
 ### Code example 
 
-~~~ javascript
+{% highlight js %}
 
 
-~~~ 
+{% endhighlight %}
 
 ## GenerateTableFeature
 
@@ -178,14 +180,14 @@ Content-Type:
 
 Response(JSON):
 
-~~~ javascript
+{% highlight js %}
 
 
-~~~ 
+{% endhighlight %}
 
 ### Code example 
 
-~~~ javascript
+{% highlight js %}
 
 
-~~~ 
+{% endhighlight %}

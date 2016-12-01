@@ -30,7 +30,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 
 public Dictionary<string, object> Initialize(string action, string customObject)
 {
@@ -49,7 +49,7 @@ public Dictionary<string, object> Initialize(string action, string customObject)
     return htmlHelper.GetJsonData(action, DataManager);
 }
 
-~~~ 
+{% endhighlight %} 
 
 ## Drill
 
@@ -76,7 +76,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 
 public Dictionary<string, object> Drill(string action, string drilledSeries, string olapReport, string customObject)
 {
@@ -96,7 +96,7 @@ public Dictionary<string, object> Drill(string action, string drilledSeries, str
     return htmlHelper.GetJsonData(action, DataManager, drilledSeries);
 }
 
-~~~ 
+{% endhighlight %} 
 
 ## Export
 
@@ -120,7 +120,7 @@ Response: file
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 
 public void Export(Stream stream)
 {
@@ -131,4 +131,4 @@ public void Export(Stream stream)
     htmlHelper.ExportPivotChart(args, fileName, System.Web.HttpContext.Current.Response);
 }
 
-~~~ 
+{% endhighlight %} 

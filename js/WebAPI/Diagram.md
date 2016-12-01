@@ -21,26 +21,27 @@ Content-Type: application/json;
 
 Response (JSON):   
 
-~~~ javascript
+{% highlight js %}
 [{
-        "Id": 4,
-        "Name": "orgchart",
-        "Description": "Organizational Chart",
-        "Color": "#88C600"
-    }, {
-        "Id": 18,
-        "Name": "layout",
-        "Description": "Layout",
-        "Color": "#916DAF"
+    "Id": 4,
+    "Name": "orgchart",
+    "Description": "Organizational Chart",
+    "Color": "#88C600"
+ }, 
+ {
+    "Id": 18,
+    "Name": "layout",
+    "Description": "Layout",
+    "Color": "#916DAF"
 }]
 
-~~~ 
+{% endhighlight %}
 
 
 ### Code example 
 
 
-~~~ javascript
+{% highlight js %}
 
 $.ajax({
 
@@ -49,10 +50,10 @@ $.ajax({
     url: 'http://js.syncfusion.com/demos/ejServices/api/Diagram/GetNodes',
 });
 
-~~~ 
+{% endhighlight %}
 
 
-~~~ csharp
+{% highlight c# %}
 
 public List<HierarchicalData> GetNodes()
 {
@@ -60,7 +61,7 @@ public List<HierarchicalData> GetNodes()
     return context.HierarchicalDatas.ToList();
 }
 
-~~~ 
+{% endhighlight %}
 
 ## GetConnectors
 
@@ -76,7 +77,7 @@ Content-Type: application/json;
 
 Response (JSON):   
 
-~~~ javascript
+{% highlight js %}
 [{
     "Id": 22,
     "Name": "nodeHsI1",
@@ -84,12 +85,12 @@ Response (JSON):
     "TargetNode": "layout"
 }]
 
-~~~ 
+{% endhighlight %}
 
 ### Code example 
 
 
-~~~ javascript
+{% highlight js %}
 
 $.ajax({
 
@@ -98,10 +99,10 @@ $.ajax({
     url: 'http://js.syncfusion.com/demos/ejServices/api/Diagram/GetConnectors',
 });
 
-~~~ 
+{% endhighlight %}
 
 
-~~~ csharp
+{% highlight c# %}
 
 public List<HierarchicalDetails> GetConnectors()
 {
@@ -109,7 +110,7 @@ public List<HierarchicalDetails> GetConnectors()
     return context.HierarchicalDetails.ToList();
 }
 
-~~~ 
+{% endhighlight %}
 
 ## AddNodes
 
@@ -131,7 +132,7 @@ Content-Type: application/json;
 
 Response (JSON):   
 
-~~~ javascript
+{% highlight js %}
 [{
     "Id": 22,
     "Name": "nodeHsI1",
@@ -139,12 +140,12 @@ Response (JSON):
     "TargetNode": "layout"
 }]
 
-~~~ 
+{% endhighlight %}
 
 ### Code example 
 
 
-~~~ javascript
+{% highlight js %}
 
 $.ajax({
 
@@ -161,10 +162,10 @@ $.ajax({
         "Color": "red"
     }])
 });
-~~~ 
+{% endhighlight %}
 
 
-~~~ csharp
+{% highlight c# %}
 
 public void AddNodes(List<HierarchicalData> data)
 {
@@ -176,7 +177,7 @@ public void AddNodes(List<HierarchicalData> data)
     }
 }
 
-~~~ 
+{% endhighlight %}
 
 ## UpdateNodes
 
@@ -196,7 +197,7 @@ Code: 204
 
 ### Code example 
 
-~~~ javascript
+{% highlight js %}
 
 $.ajax({
 
@@ -214,9 +215,9 @@ $.ajax({
     }])
 });
 
-~~~ 
+{% endhighlight %}
 
-~~~ csharp
+{% highlight c# %}
 
 public void UpdateNodes(List<HierarchicalData> data)
 {
@@ -231,7 +232,7 @@ public void UpdateNodes(List<HierarchicalData> data)
 
 }
 
-~~~ 
+{% endhighlight %}
 
 ## DeleteNodes
 
@@ -251,7 +252,7 @@ Code: 204
 
 ### Code example 
 
-~~~ javascript
+{% highlight js %}
 
 $.ajax({
 
@@ -269,9 +270,9 @@ $.ajax({
     }])
 });
 
-~~~ 
+{% endhighlight %}
 
-~~~ csharp
+{% highlight c# %}
 
 public void DeleteNodes(List<HierarchicalData> data)
 {
@@ -284,7 +285,7 @@ public void DeleteNodes(List<HierarchicalData> data)
     }
 }
 
-~~~ 
+{% endhighlight %}
 
 ## AddConnectors
 
@@ -304,7 +305,7 @@ Code: 204
 
 ### Code example 
 
-~~~ javascript
+{% highlight js %}
 
 $.ajax({
 
@@ -322,9 +323,9 @@ $.ajax({
     }])
 });
 
-~~~ 
+{% endhighlight %}
 
-~~~ csharp
+{% highlight c# %}
 
 public void AddConnectors(List<HierarchicalDetails> data)
 {
@@ -336,7 +337,7 @@ public void AddConnectors(List<HierarchicalDetails> data)
     }
 }
 
-~~~ 
+{% endhighlight %}
 
 
 ## UpdateConnectors
@@ -357,7 +358,7 @@ Code: 204
 
 ### Code example 
 
-~~~ javascript
+{% highlight js %}
 
 $.ajax({
 
@@ -375,9 +376,9 @@ $.ajax({
     }])
 });
 
-~~~ 
+{% endhighlight %}
 
-~~~ csharp
+{% highlight c# %}
 
 public void UpdateConnectors(List<HierarchicalDetails> data)
 {
@@ -391,7 +392,7 @@ public void UpdateConnectors(List<HierarchicalDetails> data)
     }
 }
 
-~~~ 
+{% endhighlight %}
 
 ## DeleteConnectors
 
@@ -411,7 +412,7 @@ Code: 204
 
 ### Code example 
 
-~~~ javascript
+{% highlight js %}
 
 $.ajax({
 
@@ -429,9 +430,9 @@ $.ajax({
     }])
 });
 
-~~~ 
+{% endhighlight %}
 
-~~~ csharp
+{% highlight c# %}
 
 public void DeleteConnectors(List<HierarchicalDetails> data)
 {
@@ -444,6 +445,6 @@ public void DeleteConnectors(List<HierarchicalDetails> data)
     }
 }
 
-~~~ 
+{% endhighlight %}
 
 

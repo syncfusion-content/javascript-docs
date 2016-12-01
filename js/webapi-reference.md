@@ -224,9 +224,9 @@ The details of WebAPI has been shown in the below table.
 
 | WebAPI | Description |
 |---|---|
-|[Import](WebAPI\RichTextEdtior#Import)|It is used to Import a Word document into RTE.|
-|[WordExport](WebAPI\RichTextEdtior#WordExport)|It is used for exporting the contents of RTE into a Word document.|
-|[PdfExport](WebAPI\RichTextEdtior#PdfExport)|It is used for exporting the contents of RTE into a PDF document.|
+|[Import](WebAPI\RichTextEditor#Import)|It is used to Import a Word document into RTE.|
+|[WordExport](WebAPI\RichTextEditor#WordExport)|It is used for exporting the contents of RTE into a Word document.|
+|[PdfExport](WebAPI\RichTextEditor#PdfExport)|It is used for exporting the contents of RTE into a PDF document.|
 
 ### Schedule
 

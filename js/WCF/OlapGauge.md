@@ -30,7 +30,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 
 public Dictionary<string, object> Initialize(string action, string customObject)
 {
@@ -49,4 +49,4 @@ public Dictionary<string, object> Initialize(string action, string customObject)
     return htmlHelper.GetJsonData(action, DataManager);
 }
 
-~~~ 
+{% endhighlight %} 

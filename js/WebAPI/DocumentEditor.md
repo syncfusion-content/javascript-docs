@@ -31,19 +31,19 @@ Content-Type:  application/json; charset=utf-8
 
 Response (JSON):   
 
-~~~ javascript
+{% highlight js %}
 {
 AbstractLists,
 BackgroundColor,
 Lists,
 Sections
 }
-~~~ 
+{% endhighlight %}
 
 ### Code example 
 
 
-~~~ javascript
+{% highlight js %}
 
 URL: http://js.syncfusion.com/demos/ejServices/api/DocumentEditor/Import
 
@@ -58,7 +58,7 @@ $.ajax({
         url: "http://js.syncfusion.com/demos/ejServices/api/DocumentEditor/Import",
 })
 
-~~~ 
+{% endhighlight %}
 
 
 ## LoadDefault
@@ -79,18 +79,18 @@ Content-Type:  application/json; charset=utf-8
 
 Response (JSON):   
 
-~~~ javascript
+{% highlight js %}
 {
 AbstractLists,
 BackgroundColor,
 Lists,
 Sections
 }
-~~~ 
+{% endhighlight %}
 
 ### Code example 
 
-~~~ javascript
+{% highlight js %}
 
 URL: http://js.syncfusion.com/demos/ejServices/api/DocumentEditor/LoadDefault 
 
@@ -105,4 +105,4 @@ $.ajax({
         url: "http://js.syncfusion.com/demos/ejServices/api/DocumentEditor/LoadDefault",
 })
 
-~~~ 
+{% endhighlight %}
