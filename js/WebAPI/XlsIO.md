@@ -200,7 +200,7 @@ URL: http://js.syncfusion.com/demos/ejservices/api/XlsIO/ImportDataObject
 
 [POST&nbsp;&nbsp;/Api/XlsIO/ApplyTemplateMarker](http://js.syncfusion.com/demos/ejservices/api/XlsIO/ApplyTemplateMarker)
 
-Import data to an Excel document using template marker.
+Import data to an Excel document using [template marker](https://help.syncfusion.com/file-formats/xlsio/working-with-template-markers).
 
 ### URL parameters
 
@@ -245,7 +245,7 @@ URL: http://js.syncfusion.com/demos/ejservices/api/XlsIO/ApplyTemplateMarker
 
 [POST&nbsp;&nbsp;/Api/XlsIO/InputTemplate](http://js.syncfusion.com/demos/ejservices/api/XlsIO/InputTemplate)
 
-To generate an Excel template document used for various template marker types.
+To get an Excel template document used for various template marker types.
 
 ### URL parameters
 
