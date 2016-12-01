@@ -11,7 +11,7 @@ keywords: Presentation, syncfusion, Presentation webapi
 
 [POST&nbsp;&nbsp;/Api/Presentation/CreatePresentation](http://js.syncfusion.com/demos/ejservices/api/Presentation/CreatePresentation)
 
-It is used to create PowerPoint presentation with texts, images and tables.
+It is used to create simple PowerPoint presentation with texts, images and tables.
 
 ### Response information 
 
@@ -97,7 +97,7 @@ URL: http://js.syncfusion.com/demos/ejServices/api/Presentation/ManipulateSmartA
 
 [POST&nbsp;&nbsp;/Api/Presentation/MergePresentations](http://js.syncfusion.com/demos/ejservices/api/Presentation/MergePresentations)
 
-It is used to merge PowerPoint presentations.
+It is used to merge two PowerPoint presentations.
 
 | Parameter | Data Type | Description |
 |---|---|---|
