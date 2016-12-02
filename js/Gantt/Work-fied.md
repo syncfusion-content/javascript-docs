@@ -30,7 +30,7 @@ Note:
 * Work will be displayed as __0__ __hours__ if there is no resource assigned to the task.
 * A resource will work __8__ __hours__ a day on the task assigned.
 
-Task type 
+# Task type 
 
 The work, duration and resource unit fields of a task depends upon each other values and will change automatically on editing any one of these fields. But we can also set these field’s values as constant using the taskType property. The following values can be set to the type property,
 
@@ -87,7 +87,7 @@ Note:
 * __Fixed__ __Unit__ is the default taskType in Gantt.
 * The above calculations are not applicable for Milestones.
 
-Effort driven
+# Effort driven tasks
 
 The effortDriven field is used to define whether the total labor hours or the work need to split or to be extended among the resources when adding or removing a resource to a task.
 
