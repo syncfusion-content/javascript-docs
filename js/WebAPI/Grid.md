@@ -21,7 +21,7 @@ Content-Type: application/octet-stream
 
 ### Code example 
 
-Essential Grid Excel-Exporting in javascript
+Essential Grid Excel-Exporting in JavaScript
 
 {% highlight js %}
 
@@ -74,7 +74,7 @@ Content-Type: application/octet-stream
 
 ### Code example 
 
-Essential Grid PDF-Exporting in javascript
+Essential Grid PDF-Exporting in JavaScript
 
 {% highlight js %}
 
@@ -129,7 +129,7 @@ Content-Type: application/octet-stream
 
 ### Code example
 
-Essential Grid Word-Exporting in javascript
+Essential Grid Word-Exporting in JavaScript
 
 {% highlight js %}
 
