@@ -284,7 +284,7 @@ The details of WebAPI has been shown in the below table.
 |[CreateDocument](WebAPI\XlsIO#CreateDocument)|To generate an Excel document format like XLS, XLSX, CSV, Excel Template, Excel Macro Enabled Template.|
 |[WriteFormula](WebAPI\XlsIO#WriteFormula)|This method will generate an Excel document with different formulae.|
 |[ReadFormula](WebAPI\XlsIO#ReadFormula)|To read the formula string as well as value from the Excel document.|
-|[CreateChart](WebAPI\XlsIO#CreateChart)|To generate an embedded chart Excel document with different file formats.|
+|[CreateChart](WebAPI\XlsIO#CreateChart)|To create an embedded chart in Excel document.|
 |[ImportDataObject](WebAPI\XlsIO#ImportDataObject)|To import data directly from various objects like DataTable, Business Objects, etc to an Excel document.|
 |[ApplyTemplateMarker](WebAPI\XlsIO#ApplyTemplateMarker)|Import data to an Excel document using [template marker](https://help.syncfusion.com/file-formats/xlsio/working-with-template-markers). |
 [InputTemplate](WebAPI\XlsIO#InputTemplate)|To get an Excel template document used for various template marker types.|
