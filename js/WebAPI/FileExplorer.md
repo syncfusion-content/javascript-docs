@@ -2,8 +2,8 @@
 layout: post
 title: webAPI reference for ejFileExplorer
 description: webAPI reference for ejFileExplorer
-documentation: API
-platform: js-webapi
+documentation: ug
+platform: js
 keywords: fileexplorer, ejfileexplorer, syncfusion, fileexplorer webapi
 ---
 
@@ -29,8 +29,7 @@ It helps to handle the FileExplorer operations like Read, Upload, Download, GetD
 |Names|String[]|Specifies the selected item names.|
 |NewName|String|Specifies the new file name for renaming the file.These details will be send to the parameter through AJAX request while performing rename operation.|
 |Path|String|Specifies the path of selected folder.|
-|SearchString|String|Specifies the search string for filtering the matched files.|
-These details will be send to the parameter through AJAX request while performing search operation.|
+|SearchString|String|Specifies the search string for filtering the matched files.These details will be send to the parameter through AJAX request while performing search operation.|
 |SelectedItems| IEnumerable<object>|It contains the details of selected folder.|
 
 

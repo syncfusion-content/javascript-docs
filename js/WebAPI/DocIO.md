@@ -2,8 +2,8 @@
 layout: post
 title: webAPI reference for DocIO
 description: webAPI reference for DocIO
-documentation: API
-platform: js-webapi
+documentation: ug
+platform: js
 keywords: DocIO, syncfusion,DocIO webapi
 ---
 

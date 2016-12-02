@@ -2,8 +2,8 @@
 layout: post
 title: webAPI reference for ejSpellCheck
 description: webAPI reference for ejSpellCheck
-documentation: API
-platform: js-webapi
+documentation: ug
+platform: js
 keywords: spellcheck, ejspellcheck, syncfusion, spellcheck api
 ---
 
@@ -33,7 +33,7 @@ Response (JSON):
 {% highlight js %}
 
 [
-	{"ErrorWord":"Facebook","SuggestedWords":[]},{"ErrorWord":"Zuckerberg","SuggestedWords":[]},{"ErrorWord":"fouders","SuggestedWords":["founders","fodders","folders","fosters","fouler","founder","founder\u0027s","fodder","fodder\u0027s","folder","folder\u0027s","fonder","footers","forgers","formers","foundered","founds","focuser","fondues","fondue\u0027s"]},{"ErrorWord":"membrship","SuggestedWords":["membership","memberships","membership\u0027s","members"]},{"ErrorWord":"collges","SuggestedWords":["collages","colleges","collies","collagen","collage\u0027s","collars","collates","colleens","college","college\u0027s","collides","collie","collied","collier","colliers","collie\u0027s","colludes","colognes","collagen\u0027s","collapse","collapses","collects","collier\u0027s","collapsed","collegian","collegians","collegiate"]},{"ErrorWord":"Univrsity","SuggestedWords":["University","University\u0027s","Univariate","Universities","Unvisited"]},{"ErrorWord":"graually","SuggestedWords":["gradually","gravelly","gradual","graduals","granularly"]}
+{"ErrorWord":"Facebook","SuggestedWords":[]},{"ErrorWord":"Zuckerberg","SuggestedWords":[]},{"ErrorWord":"fouders","SuggestedWords":["founders","fodders","folders","fosters","fouler","founder","founder\u0027s","fodder","fodder\u0027s","folder","folder\u0027s","fonder","footers","forgers","formers","foundered","founds","focuser","fondues","fondue\u0027s"]},{"ErrorWord":"membrship","SuggestedWords":["membership","memberships","membership\u0027s","members"]},{"ErrorWord":"collges","SuggestedWords":["collages","colleges","collies","collagen","collage\u0027s","collars","collates","colleens","college","college\u0027s","collides","collie","collied","collier","colliers","collie\u0027s","colludes","colognes","collagen\u0027s","collapse","collapses","collects","collier\u0027s","collapsed","collegian","collegians","collegiate"]},{"ErrorWord":"Univrsity","SuggestedWords":["University","University\u0027s","Univariate","Universities","Unvisited"]},{"ErrorWord":"graually","SuggestedWords":["gradually","gravelly","gradual","graduals","granularly"]}
 ]
 
 {% endhighlight %}
@@ -43,17 +43,17 @@ Response (JSON):
 {% highlight js %}
 
 $(function () {
-	$("#TextArea").ejSpellCheck({
-		dictionarySettings: {
-			dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/CheckWords"
-		}
-	});
-	$("#SpellCheck").ejButton({ width: "200px", height: "25px", click: "showDialog", text: "Spell check using dialog" });
+$("#TextArea").ejSpellCheck({
+dictionarySettings: {
+	dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/CheckWords"
+}
+});
+$("#SpellCheck").ejButton({ width: "200px", height: "25px", click: "showDialog", text: "Spell check using dialog" });
 });
 
 function showDialog() {
-	var spellObj = $("#TextArea").data("ejSpellCheck");
-	spellObj.showInDialog();
+var spellObj = $("#TextArea").data("ejSpellCheck");
+spellObj.showInDialog();
 }
 
 {% endhighlight %}
@@ -93,18 +93,18 @@ Output:
 {% highlight js %}
 
 $(function () {
-	$("#TextArea").ejSpellCheck({
-		dictionarySettings: {
-			dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/CheckWords",
-			customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/AddToDictionary"
-		}
-	});
-	$("#SpellCheck").ejButton({ width: "200px", height: "25px", click: "showDialog", text: "Spell check using dialog" });
+$("#TextArea").ejSpellCheck({
+dictionarySettings: {
+	dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/CheckWords",
+	customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/AddToDictionary"
+}
+});
+$("#SpellCheck").ejButton({ width: "200px", height: "25px", click: "showDialog", text: "Spell check using dialog" });
 });
 
 function showDialog() {
-	var spellObj = $("#TextArea").data("ejSpellCheck");
-	spellObj.showInDialog();
+var spellObj = $("#TextArea").data("ejSpellCheck");
+spellObj.showInDialog();
 }
 
 {% endhighlight %}
