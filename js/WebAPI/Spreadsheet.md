@@ -85,7 +85,7 @@ public void CsvExport()
 
 {% endhighlight %}
 
->The above example will export the Spreadsheet as Csv file.
+>The above example will export the Spreadsheet as CSV file.
 
 ## PdfExport
 
