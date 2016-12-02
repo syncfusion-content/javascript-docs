@@ -14,8 +14,7 @@ The EJ SpellCheck supports the nHunspell and ASpell provider dictionary files to
 
 ### ASpell provider
 
-The ASpell provider support process similar to the Syncfusion base assembly reference process and the only difference is the dictionary file. While using the Syncfusion base assembly need to refer the default.dic file where as 
-need to refer the ASpell.txt file to support the ASpell provider.
+The ASpell provider support process similar to the Syncfusion base assembly reference process and the only difference is the dictionary file. While using the Syncfusion base assembly need to refer the default.dic file where as need to refer the ASpell.txt file to support the ASpell provider.
 
 The following code example depicts the way to use the SpellCheck with ASpell provider dictionary file.
 
@@ -42,7 +41,7 @@ The EJ SpellCheck supports the NHunspell provider to perform the spellcheck oper
 Step 1: Load the required dictionary files by using the following code example in the controller page.
 
 {% highlight c# %}
-
+        
         private const string VirtualDictionaryPath = "~/ProviderDictionary/";
         private string _language;
         private readonly Hunspell _spell = new Hunspell();
@@ -126,7 +125,7 @@ Step 2: Define the CheckWords, SplitWords and GetItems method with the following
 Step 3: Define the below methods to check the word erroneous and get an error words suggestions
 
 {% highlight c# %}
-
+        
         // Here passing the word to NHunspell method to check its erroneous
         private bool CheckWord(string word)
         {
@@ -144,7 +143,7 @@ Step 3: Define the below methods to check the word erroneous and get an error wo
 Step 4: To perform the add to dictionary operations define the method "AddToDictionary" with the following code example.
 
 {% highlight c# %}
-
+        
         [AcceptVerbs("Get")]
         [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
         public object AddToDictionary(string callback, string data)
