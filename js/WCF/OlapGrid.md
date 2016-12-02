@@ -2,8 +2,8 @@
 layout: post
 title: WCF reference for PivotGrid
 description: WCF reference for PivotGrid
-documentation: API
-platform: js-wcf
+documentation: ug
+platform: js
 keywords: PivotGrid , syncfusion, PivotGrid WCF
 ---
 

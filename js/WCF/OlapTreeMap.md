@@ -2,8 +2,8 @@
 layout: post
 title: WCF reference for PivotTreeMAp
 description: WCF reference for OlapTreeMap
-documentation: API
-platform: js-wcf
+documentation: ug
+platform: js
 keywords: PivotTreeMAp , syncfusion, PivotTreeMAp WCF
 ---
 

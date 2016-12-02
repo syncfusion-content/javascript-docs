@@ -2,8 +2,8 @@
 layout: post
 title: webAPI reference for PivotClient
 description: webAPI reference for PivotClient
-documentation: API
-platform: js-webapi
+documentation: ug
+platform: js
 keywords: PivotClient, syncfusion, PivotClient webapi
 ---
 

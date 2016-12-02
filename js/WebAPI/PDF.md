@@ -2,8 +2,8 @@
 layout: post
 title: webAPI reference for PDF
 description: webAPI reference for PDF
-documentation: API
-platform: js-webapi
+documentation: ug
+platform: js
 keywords: pdf, syncfusion, pdf webapi
 ---
 

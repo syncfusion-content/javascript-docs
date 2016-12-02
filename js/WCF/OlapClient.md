@@ -2,8 +2,8 @@
 layout: post
 title: WCF reference for PivotClient
 description: WCF reference for PivotClient
-documentation: API
-platform: js-wcf
+documentation: ug
+platform: js
 keywords: PivotClient, syncfusion, PivotClient WCF
 ---
 

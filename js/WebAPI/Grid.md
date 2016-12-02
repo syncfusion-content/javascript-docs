@@ -2,8 +2,8 @@
 layout: post
 title: webAPI reference for ejGrid
 description: webAPI reference for ejGrid
-documentation: API
-platform: js-webapi
+documentation: ug
+platform: js
 keywords: grid, ejGrid, syncfusion, grid webapi
 ---
        

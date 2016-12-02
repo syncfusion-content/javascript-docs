@@ -2,8 +2,8 @@
 layout: post
 title: webAPI reference for RelationalClient
 description: webAPI reference for RelationalClient
-documentation: API
-platform: js-webapi
+documentation: ug
+platform: js
 keywords: RelationalClient, syncfusion, RelationalClient webapi
 ---
 

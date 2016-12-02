@@ -16,25 +16,25 @@ Tree nodes can be customized by using [template](http://help.syncfusion.com/api/
 
     <script id="treeTemplate" type="text/x-jsrender">        
 
-      {{if hasChild}}
+      {{"{{"}}if hasChild{{}}}}
 
-         <div class={{>cls}}>{{>name}}</div>
+         <div class={{"{{"}}>cls{{}}}}>{{"{{"}}>name{{}}}}</div>
 
-      {{else}}
+      {{"{{"}}else{{}}}}
 
          <div class="cont-list">
 
-            <img class="con-img" src="13.3.0.7/themes/web/images/treeview/template-image-{{>imgId}}.png" />
+            <img class="con-img" src="13.3.0.7/themes/web/images/treeview/template-image-{{"{{"}}>imgId{{}}}}.png" />
 
             <div class="cont-del"></div>
 
-            <b>{{>name}}</b><br />
+            <b>{{"{{"}}>name{{}}}}</b><br />
 
-            <span>{{>city}}</span>
+            <span>{{"{{"}}>city{{}}}}</span>
 
             <br />
 
-            <span>{{>phone}}</span>
+            <span>{{"{{"}}>phone{{}}}}</span>
 
          </div>
 
@@ -42,7 +42,7 @@ Tree nodes can be customized by using [template](http://help.syncfusion.com/api/
 
          </div>
 
-     {{/if}}
+     {{"{{"}}/if{{}}}}
 
     </script>
 

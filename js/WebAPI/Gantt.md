@@ -2,8 +2,8 @@
 layout: post
 title: webAPI reference for ejGantt
 description: webAPI reference for ejGantt
-documentation: API
-platform: js-webapi
+documentation: ug
+platform: js
 keywords: ejGantt,Gantt, syncfusion,ejGantt webapi
 ---
 

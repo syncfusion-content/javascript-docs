@@ -2,8 +2,8 @@
 layout: post
 title: WCF reference for RelationalGauge
 description: WCF reference for RelationalGauge
-documentation: API
-platform: js-wcf
+documentation: ug
+platform: js
 keywords: RelationalGauge, syncfusion, RelationalGauge WCF
 ---
 

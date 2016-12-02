@@ -2,8 +2,8 @@
 layout: post
 title: webAPI reference for ejUploadbox
 description: webAPI reference for ejUploadbox
-documentation: API
-platform: js-webapi
+documentation: ug
+platform: js
 keywords: uploadbox, ejUploadbox, syncfusion, uploadbox webapi
 ---
 

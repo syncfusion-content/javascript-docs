@@ -2,8 +2,8 @@
 layout: post
 title: WCF reference for Northwind services
 description: WCF reference for Northwind services
-documentation: API
-platform: js-WCF
+documentation: ug
+platform: js
 keywords: Northwind, syncfusion, Northwind wcf
 ---
 

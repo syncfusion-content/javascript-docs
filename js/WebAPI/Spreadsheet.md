@@ -2,8 +2,8 @@
 layout: post
 title: webAPI reference for ejSpreadsheet
 description: webAPI reference for ejSpreadsheet
-documentation: API
-platform: js-webapi
+documentation: ug
+platform: js
 keywords: Spreadsheet,ejSpreadsheet , syncfusion, ejSpreadsheet webapi
 ---
 
@@ -38,12 +38,13 @@ Content-Type: application/octet-stream
 
 public void ExcelExport()
 {
-	string sheetModel = HttpContext.Current.Request.Params["sheetModel"], sheetData = HttpContext.Current.Request.Params["sheetData"], password = HttpContext.Current.Request.Params["password"];
-	if (!string.IsNullOrEmpty(password))
-		Spreadsheet.Save(sheetModel, sheetData, "sample", ExportFormat.XLSX, ExcelVersion.Excel2013, password);
-	else
-		Spreadsheet.Save(sheetModel, sheetData, "sample", ExportFormat.XLSX, ExcelVersion.Excel2013);
+string sheetModel = HttpContext.Current.Request.Params["sheetModel"], sheetData = HttpContext.Current.Request.Params["sheetData"], password = HttpContext.Current.Request.Params["password"];
+if (!string.IsNullOrEmpty(password))
+	Spreadsheet.Save(sheetModel, sheetData, "sample", ExportFormat.XLSX, ExcelVersion.Excel2013, password);
+else
+	Spreadsheet.Save(sheetModel, sheetData, "sample", ExportFormat.XLSX, ExcelVersion.Excel2013);
 }
+
 {% endhighlight %}
 
 >The above example will export the Spreadsheet as an Excel file.
@@ -79,13 +80,13 @@ Content-Type: application/octet-stream
 
 public void CsvExport()
 {
-	string sheetModel = HttpContext.Current.Request.Params["sheetModel"], sheetData = HttpContext.Current.Request.Params["sheetData"];
-	Spreadsheet.Save(sheetModel, sheetData, "sample", ExportFormat.CSV);
+string sheetModel = HttpContext.Current.Request.Params["sheetModel"], sheetData = HttpContext.Current.Request.Params["sheetData"];
+Spreadsheet.Save(sheetModel, sheetData, "sample", ExportFormat.CSV);
 }
 
 {% endhighlight %}
 
->The above example will export the Spreadsheet as Csv file.
+>The above example will export the Spreadsheet as CSV file.
 
 ## PdfExport
 
@@ -117,8 +118,8 @@ Content-Type: application/octet-stream
 
 public void PdfExport()
 {
-	string sheetModel = HttpContext.Current.Request.Params["sheetModel"], sheetData = HttpContext.Current.Request.Params["sheetData"];
-	Spreadsheet.Save(sheetModel, sheetData, "sample", ExportFormat.PDF);
+string sheetModel = HttpContext.Current.Request.Params["sheetModel"], sheetData = HttpContext.Current.Request.Params["sheetData"];
+Spreadsheet.Save(sheetModel, sheetData, "sample", ExportFormat.PDF);
 }
 
 {% endhighlight %}

@@ -2,8 +2,8 @@
 layout: post
 title: webAPI reference for ejDiagram
 description: webAPI reference for ejDiagram
-documentation: API
-platform: js-webapi
+documentation: ug
+platform: js
 keywords: ejDiagram, Diagram, syncfusion, ejDiagram webapi
 ---
 

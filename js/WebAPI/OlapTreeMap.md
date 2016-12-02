@@ -2,8 +2,8 @@
 layout: post
 title: webAPI reference for PivotTreeMAp
 description: webAPI reference for OlapTreeMap
-documentation: API
-platform: js-webapi
+documentation: ug
+platform: js
 keywords: PivotTreeMAp , syncfusion, PivotTreeMAp webapi
 ---
 

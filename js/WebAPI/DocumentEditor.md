@@ -1,9 +1,9 @@
 ---
 layout: post
 title: webAPI reference for DocumentEditor
-description: webAPI reference for DocumentEditor
-documentation: webAPI
-platform: js-webapi
+description: webAPI reference for 
+documentation: ug
+platform: js
 keywords: documenteditor,syncfusion,documenteditor webapi
 ---
 

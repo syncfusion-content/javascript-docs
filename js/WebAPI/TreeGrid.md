@@ -2,8 +2,8 @@
 layout: post
 title: webAPI reference for ejTreeGrid
 description: webAPI reference for ejTreeGrid
-documentation: API
-platform: js-webapi
+documentation: ug
+platform: js
 keywords: ejTreeGrid,TreeGrid, syncfusion,ejTreeGrid webapi
 ---
 

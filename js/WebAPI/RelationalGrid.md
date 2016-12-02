@@ -2,8 +2,8 @@
 layout: post
 title: webAPI reference for RelationalGrid
 description: webAPI reference for RelationalGrid
-documentation: API
-platform: js-webapi
+documentation: ug
+platform: js
 keywords: RelationalGrid, syncfusion, RelationalGrid webapi
 ---
 
