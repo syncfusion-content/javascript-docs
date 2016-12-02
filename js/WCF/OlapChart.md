@@ -2,8 +2,8 @@
 layout: post
 title: WCF reference for PivotChart
 description: WCF reference for PivotChart
-documentation: API
-platform: js-wcf
+documentation: ug
+platform: js
 keywords: PivotChart , syncfusion, PivotChart wcf
 ---
 

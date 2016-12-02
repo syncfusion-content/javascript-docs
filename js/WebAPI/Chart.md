@@ -2,9 +2,9 @@
 layout: post
 title: webAPI reference for ejChart
 description: webAPI reference for ejChart
-documentation: API
-platform: js-webapi
-keywords: Chart,ejChart , syncfusion, ejChart webapi
+documentation: ug
+platform: js
+keywords: Chart, ejChart, syncfusion, ejChart webapi
 ---
 
 ## Export

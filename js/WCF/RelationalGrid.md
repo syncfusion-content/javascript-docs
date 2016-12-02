@@ -2,8 +2,8 @@
 layout: post
 title: WCF reference for RelationalGrid
 description: WCF reference for RelationalGrid
-documentation: API
-platform: js-wcf
+documentation: ug
+platform: js
 keywords: RelationalGrid, syncfusion, RelationalGrid WCF
 ---
 

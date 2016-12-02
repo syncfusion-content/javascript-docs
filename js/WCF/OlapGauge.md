@@ -2,8 +2,8 @@
 layout: post
 title: WCF reference for PivotGauge
 description: WCF reference for OlapGauge
-documentation: API
-platform: js-WCF
+documentation: ug
+platform: js
 keywords: PivotGauge , syncfusion, PivotGauge WCF
 ---
 

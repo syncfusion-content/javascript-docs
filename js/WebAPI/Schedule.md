@@ -2,8 +2,8 @@
 layout: post
 title: webAPI reference for ejSchedule
 description: webAPI reference for ejSchedule
-documentation: API
-platform: js-webapi
+documentation: ug
+platform: js
 keywords: Schedule, ejSchedule, syncfusion, ejSchedule webapi
 ---
 

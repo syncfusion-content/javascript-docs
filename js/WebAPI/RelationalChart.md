@@ -2,8 +2,8 @@
 layout: post
 title: webAPI reference for RelationalChart
 description: webAPI reference for RelationalChart
-documentation: API
-platform: js-webapi
+documentation: ug
+platform: js
 keywords: RelationalChart, syncfusion, RelationalChart webapi
 ---
 

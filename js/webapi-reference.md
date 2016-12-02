@@ -2,9 +2,8 @@
 layout: post
 title: webAPI reference for ejService related controls
 description: webAPI reference for ejService related controls
-documentation: WebAPI
-platform: js-webapi
-
+documentation: ug
+platform: js
 ---
 
 # WebAPI reference for ej Controls

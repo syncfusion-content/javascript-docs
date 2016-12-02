@@ -2,8 +2,8 @@
 layout: post
 title: webAPI reference for PivotGrid
 description: webAPI reference for PivotGrid
-documentation: API
-platform: js-webapi
+documentation: ug
+platform: js
 keywords: PivotGrid , syncfusion, PivotGrid webapi
 ---
 
@@ -317,12 +317,13 @@ Response: file
 ### Code example 
 
 {% highlight c# %}
+
 public void Export()
 {
-	string args = HttpContext.Current.Request.Form.GetValues(0)[0];
-	OlapDataManager DataManager = new OlapDataManager(connectionString);
-	string fileName = "Sample";
-	htmlHelper.ExportPivotGrid(DataManager, args, fileName, System.Web.HttpContext.Current.Response);
+    string args = HttpContext.Current.Request.Form.GetValues(0)[0];
+    OlapDataManager DataManager = new OlapDataManager(connectionString);
+    string fileName = "Sample";
+    htmlHelper.ExportPivotGrid(DataManager, args, fileName, System.Web.HttpContext.Current.Response);
 }
 
 {% endhighlight %}
@@ -516,14 +517,12 @@ Response: Excel document
 ### Code example 
 
 {% highlight c# %}
-
 public void ExcelExport()
 {
 	PivotGridExcelExport pGrid = new PivotGridExcelExport();
 	string args = HttpContext.Current.Request.Form.GetValues(0)[0];
 	pGrid.ExportToExcel(string.Empty, args, HttpContext.Current.Response);
 }
-
 {% endhighlight %}
 
 ## PdfExport
@@ -549,14 +548,12 @@ Response: PDF document
 ### Code example 
 
 {% highlight c# %}
-
 public void PdfExport()
 {
 	PivotGridPDFExport pGrid = new PivotGridPDFExport();
 	string args = HttpContext.Current.Request.Form.GetValues(0)[0];
 	pGrid.ExportToPDF(string.Empty, args, HttpContext.Current.Response);
 }
-
 {% endhighlight %}
 
 ## WordExport

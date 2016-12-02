@@ -2,9 +2,8 @@
 layout: post
 title: WCF reference for ejService related controls
 description: WCF reference for ejService related controls
-documentation: WCF
-platform: js-WCF
-
+documentation: ug
+platform: js
 ---
 
 # WCF reference for ej Controls

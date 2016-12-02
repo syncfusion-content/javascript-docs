@@ -2,8 +2,8 @@
 layout: post
 title: webAPI reference for ejRTE
 description: webAPI reference for ejRTE
-documentation: API
-platform: js-webapi
+documentation: ug
+platform: js
 keywords: RTE, ejRTE, syncfusion, RTE webapi
 ---
 

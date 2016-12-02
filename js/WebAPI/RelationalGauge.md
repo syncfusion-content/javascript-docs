@@ -2,8 +2,8 @@
 layout: post
 title: webAPI reference for RelationalGauge
 description: webAPI reference for RelationalGauge
-documentation: API
-platform: js-webapi
+documentation: ug
+platform: js
 keywords: RelationalGauge, syncfusion, RelationalGauge webapi
 ---
 

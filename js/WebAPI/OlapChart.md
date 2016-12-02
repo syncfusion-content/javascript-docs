@@ -2,8 +2,8 @@
 layout: post
 title: webAPI reference for PivotChart
 description: webAPI reference for PivotChart
-documentation: API
-platform: js-webapi
+documentation: ug
+platform: js
 keywords: PivotChart , syncfusion, PivotChart webapi
 ---
 

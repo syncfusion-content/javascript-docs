@@ -2,8 +2,8 @@
 layout: post
 title: webAPI reference for ejPredictiveAnalytics
 description: webAPI reference for ejPredictiveAnalytics
-documentation: API
-platform: js-webapi
+documentation: ug
+platform: js
 keywords: ejPredictiveAnalytics,PredictiveAnalytics, syncfusion, PredictiveAnalytics webapi
 ---
 

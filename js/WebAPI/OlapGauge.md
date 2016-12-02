@@ -2,8 +2,8 @@
 layout: post
 title: webAPI reference for PivotGauge
 description: webAPI reference for OlapGauge
-documentation: API
-platform: js-webapi
+documentation: ug
+platform: js
 keywords: PivotGauge , syncfusion, PivotGauge webapi
 ---
 

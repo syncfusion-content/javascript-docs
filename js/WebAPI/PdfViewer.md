@@ -2,8 +2,8 @@
 layout: post
 title: webAPI reference for PdfViewer
 description: webAPI reference for PdfViewer
-documentation: API
-platform: js-webapi
+documentation: ug
+platform: js
 keywords: pdfviewer,ejpdfviewer, syncfusion, pdfviewer webapi
 ---
 
@@ -116,19 +116,19 @@ Response (JSON):
 }
 {% endhighlight %}
 
+
 ### Code example 
 
 {% highlight js %}
 
 URL: http://js.syncfusion.com/demos/ejServices/api/PdfViewer/FileUpload
-
 $.ajax({
-		type: "POST",
-		url: "http://js.syncfusion.com/demos/ejServices/api/PdfViewer/FileUpload",
-		crossDomain: true,
-		contentType: "application/json; charset=utf-8",
-		dataType: "json",
-		traditional: true
+    type: "POST",
+    url: "http://js.syncfusion.com/demos/ejServices/api/PdfViewer/FileUpload",
+    crossDomain: true,
+    contentType: "application/json; charset=utf-8",
+    dataType: "json",
+    traditional: true
 })
 
 {% endhighlight %}
