@@ -11,7 +11,7 @@ keywords: DocIO, syncfusion,DocIO webapi
 
 [POST&nbsp;&nbsp;/Api/DocIO/GenerateWordDocument](http://js.syncfusion.com/demos/ejServices/api/DocIO/GenerateWordDocument)
 
-It is used to create a Word document with text, image and tables.
+It is used to create a simple Word document with text, image and tables.
 
 ### URL parameters
 
@@ -147,7 +147,7 @@ $('#converttopdf').click(function () {
 
 [POST&nbsp;&nbsp;/Api/DocIO/ApplyTextFormat](http://js.syncfusion.com/demos/ejServices/api/DocIO/ApplyTextFormat)
 
-It is used to generate Word Document with formatting text with various formats such as character/text level formatting, paragraph level formatting and list level formatting.
+It is used to generate Word Document with various text formats such as character/text level formatting, paragraph level formatting and list level formatting.
 
 ### URL parameters
 
@@ -221,7 +221,7 @@ $('#generatedocument').click(function () {
 </script>
 
 ```
->The above example will generate Word documen or PDF.
+>The above example will generate Word document or PDF.
 
 ## GetInvoiceTemplate
 
@@ -271,7 +271,7 @@ $('#viewtemplate').click(function () {
 
 [POST&nbsp;&nbsp;/Api/DocIO/GenerateInvoice](http://js.syncfusion.com/demos/ejServices/api/DocIO/GenerateInvoice)
 
-It is used to generate sales invoice using Mail merge functionality.
+It is used to generate sales invoice report using Mail merge functionality.
 
 ### URL parameters
 
@@ -347,7 +347,7 @@ $('#generate').click(function () {
 </script>
 
 ```
->The above example will generate Word documen or PDF.
+>The above example will generate Word document or PDF.
 
 ## GetMailmergeTemplate
 
