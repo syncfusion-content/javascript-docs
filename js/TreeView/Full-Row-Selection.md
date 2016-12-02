@@ -75,10 +75,10 @@ You can customize the TreeView full row selection for template support by using 
 
 <script id="treeTemplate" type="text/x-jsrender">
 
-    {{if !hasChild}}
-    <span class="con-img {{>cls}}"></span>
-    {{/if}}
-    {{>name}}
+    {{"{{"}}if !hasChild{{}}}}
+    <span class="con-img {{"{{"}}>cls{{}}}}"></span>
+    {{"{{"}}/if{{}}}}
+    {{"{{"}}>name{{}}}}
 
 </script>
 
