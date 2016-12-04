@@ -9,7 +9,7 @@ keywords: ejDiagram, Diagram, syncfusion, ejDiagram webapi
 
 ## GetNodes
 
-[GET/Api/Diagram/GetNodes](http://js.syncfusion.com/demos/ejServices/api/Diagram/GetNodes)
+[GET] [/Api/Diagram/GetNodes](http://js.syncfusion.com/demos/ejServices/api/Diagram/GetNodes)
 
 It fetches the collection of records from database and further it will be used to generate the shapes.
 
@@ -65,7 +65,7 @@ public List<HierarchicalData> GetNodes()
 
 ## GetConnectors
 
-[GET/Api/Diagram/GetNodes](http://js.syncfusion.com/demos/ejServices/api/Diagram/GetConnectors)
+[GET] [/Api/Diagram/GetNodes](http://js.syncfusion.com/demos/ejServices/api/Diagram/GetConnectors)
 
 It fetches the collection of records from database and further it will be used to generate the connectors.
 
@@ -114,7 +114,7 @@ public List<HierarchicalDetails> GetConnectors()
 
 ## AddNodes
 
-[GET/Api/Diagram/AddNodes](http://js.syncfusion.com/demos/ejServices/api/Diagram/AddNodes)
+[POST] [/Api/Diagram/AddNodes](http://js.syncfusion.com/demos/ejServices/api/Diagram/AddNodes)
 
 It is used to send one or more shapes which needs to be inserted into database.
 
@@ -181,7 +181,7 @@ public void AddNodes(List<HierarchicalData> data)
 
 ## UpdateNodes
 
-[GET/Api/Diagram/UpdateNodes](http://js.syncfusion.com/demos/ejServices/api/Diagram/UpdateNodes)
+[POST] [/Api/Diagram/UpdateNodes](http://js.syncfusion.com/demos/ejServices/api/Diagram/UpdateNodes)
 
 It is used to one or more shapes which needs to be modified into database.
 
@@ -236,7 +236,7 @@ public void UpdateNodes(List<HierarchicalData> data)
 
 ## DeleteNodes
 
-[GET/Api/Diagram/DeleteNodes](http://js.syncfusion.com/demos/ejServices/api/Diagram/DeleteNodes)
+[POST] [/Api/Diagram/DeleteNodes](http://js.syncfusion.com/demos/ejServices/api/Diagram/DeleteNodes)
 
 It is used to one or more shapes which needs to be deleted from database.
 
@@ -289,7 +289,7 @@ public void DeleteNodes(List<HierarchicalData> data)
 
 ## AddConnectors
 
-[GET/Api/Diagram/AddConnectors](http://js.syncfusion.com/demos/ejServices/api/Diagram/AddConnectors)
+[POST] [/Api/Diagram/AddConnectors](http://js.syncfusion.com/demos/ejServices/api/Diagram/AddConnectors)
 
 It is used to one or more connectors which needs to be inserted into database.
 
@@ -342,7 +342,7 @@ public void AddConnectors(List<HierarchicalDetails> data)
 
 ## UpdateConnectors
 
-[GET/Api/Diagram/UpdateConnectors](http://js.syncfusion.com/demos/ejServices/api/Diagram/UpdateConnectors)
+[POST] [/Api/Diagram/UpdateConnectors](http://js.syncfusion.com/demos/ejServices/api/Diagram/UpdateConnectors)
 
 It is used to one or more connectors which needs to be modified into database.
 
@@ -396,7 +396,7 @@ public void UpdateConnectors(List<HierarchicalDetails> data)
 
 ## DeleteConnectors
 
-[GET/Api/Diagram/UpdateConnectors](http://js.syncfusion.com/demos/ejServices/api/Diagram/DeleteConnectors)
+[POST] [/Api/Diagram/UpdateConnectors](http://js.syncfusion.com/demos/ejServices/api/Diagram/DeleteConnectors)
 
 It is used to one or more connectors which needs to be deleted from database.
 

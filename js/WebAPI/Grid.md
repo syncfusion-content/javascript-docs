@@ -9,7 +9,7 @@ keywords: grid, ejGrid, syncfusion, grid webapi
        
 ## ExcelExport
 
-[POST/Api/Grid/ExcelExport](http://js.syncfusion.com/demos/ejservices/api/Grid/ExcelExport)
+ [POST] [/Api/Grid/ExcelExport](http://js.syncfusion.com/demos/ejservices/api/Grid/ExcelExport)
 
 It is used to export the Grid data in Excel.
 
@@ -21,7 +21,7 @@ Content-Type: application/octet-stream
 
 ### Code example 
 
-Essential Grid Excel-Exporting in JavaScript
+Essential Grid Excel-Exporting in javascript
 
 {% highlight js %}
 
@@ -62,7 +62,7 @@ public void ExportToExcel(string GridModel)
         
 ## PdfExport
 
-[POST/Api/Grid/PdfExport](http://js.syncfusion.com/demos/ejservices/api/Grid/PdfExport)
+ [POST] [/Api/Grid/PdfExport](http://js.syncfusion.com/demos/ejservices/api/Grid/PdfExport)
 
 It is used to export the Grid data in PDF.
 
@@ -74,7 +74,7 @@ Content-Type: application/octet-stream
 
 ### Code example 
 
-Essential Grid PDF-Exporting in JavaScript
+Essential Grid PDF-Exporting in javascript
 
 {% highlight js %}
 
@@ -117,7 +117,7 @@ public void ExportToPdf(string GridModel)
         
 ## WordExport
 
-[POST/Api/Grid/WordExport](http://js.syncfusion.com/demos/ejservices/api/Grid/WordExport)
+ [POST] [/Api/Grid/WordExport](http://js.syncfusion.com/demos/ejservices/api/Grid/WordExport)
 
 It is used to export the Grid data in Word.
 
@@ -129,7 +129,7 @@ Content-Type: application/octet-stream
 
 ### Code example
 
-Essential Grid Word-Exporting in JavaScript
+Essential Grid Word-Exporting in javascript
 
 {% highlight js %}
 
@@ -172,7 +172,7 @@ public void ExportToWord(string GridModel)
 
 ## Get
 
-[GET/Api/Grid/Get](http://js.syncfusion.com/demos/ejservices/api/Grid/Get)
+ [GET] [/Api/Grid/Get](http://js.syncfusion.com/demos/ejservices/api/Grid/Get)
 
 It is used to get the dataSource from Northwind dataSource.
 
@@ -225,7 +225,7 @@ Response (JSON):
 
 ## Post
 
-[POST/Api/Grid/Post](http://js.syncfusion.com/demos/ejservices/api/Grid/Post)
+ [POST] [/Api/Grid/Post](http://js.syncfusion.com/demos/ejservices/api/Grid/Post)
 
 It is used to add the data to the grid column. 
 
@@ -250,7 +250,7 @@ Content-Type: application/json;odata=verbose;charset=utf-8
 
 ## Put
 
-[POST/Api/Grid/Put](http://js.syncfusion.com/demos/ejservices/api/Grid/Put)
+ [POST] [/Api/Grid/Put](http://js.syncfusion.com/demos/ejservices/api/Grid/Put)
 
 It is used to update the Grid data. 
 
@@ -273,7 +273,7 @@ Content-Type: application/json;odata=verbose;charset=utf-8
 
 ## Delete
 
-[POST/Api/Grid/Delete](http://js.syncfusion.com/demos/ejservices/api/Grid/Delete)
+ [POST] [/Api/Grid/Delete](http://js.syncfusion.com/demos/ejservices/api/Grid/Delete)
 
 It is used to delete the data which is present in Grid column. 
 

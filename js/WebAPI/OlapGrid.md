@@ -9,7 +9,7 @@ keywords: PivotGrid , syncfusion, PivotGrid webapi
 
 ## Initialize
 
-[POST/Api/OlapGrid/Initialize](http://js.syncfusion.com/demos/ejServices/api/OlapGrid/Initialize)
+ [POST] [/Api/OlapGrid/Initialize](http://js.syncfusion.com/demos/ejServices/api/OlapGrid/Initialize)
 
 It fetches the OLAP data required to render the PivotGrid initially from server-end.
 
@@ -44,7 +44,7 @@ public Dictionary<string, object> Initialize(Dictionary<string, object> jsonResu
 
 ## Drill
 
-[POST/Api/OlapGrid/Drill](http://js.syncfusion.com/demos/ejServices/api/OlapGrid/Drill)
+ [POST] [/Api/OlapGrid/Drill](http://js.syncfusion.com/demos/ejServices/api/OlapGrid/Drill)
 
 It fetches the OLAP data required to render the PivotGrid control after drilling it.
 
@@ -81,7 +81,7 @@ public Dictionary<string, object> Drill(Dictionary<string, object> jsonResult)
 
 ## DropNode
 
-[POST/Api/OlapGrid/DropNode](http://js.syncfusion.com/demos/ejServices/api/OlapGrid/DropNode)
+ [POST] [/Api/OlapGrid/DropNode](http://js.syncfusion.com/demos/ejServices/api/OlapGrid/DropNode)
 
 It fetches the data required to render the control after performing node drop operation.
 
@@ -118,7 +118,7 @@ public Dictionary<string, object> DropNode(Dictionary<string, object> jsonResult
 
 ## Filtering
 
-[POST/Api/OlapGrid/Filtering](http://js.syncfusion.com/demos/ejServices/api/OlapGrid/Filtering)
+ [POST] [/Api/OlapGrid/Filtering](http://js.syncfusion.com/demos/ejServices/api/OlapGrid/Filtering)
 
 It fetches the OLAP data required to render the control after performing filtering.
 
@@ -153,7 +153,7 @@ public Dictionary<string, object> Filtering(Dictionary<string, object> jsonResul
 
 ## FetchMembers
 
-[POST/Api/OlapGrid/FetchMembers](http://js.syncfusion.com/demos/ejServices/api/OlapGrid/FetchMembers)
+ [POST] [/Api/OlapGrid/FetchMembers](http://js.syncfusion.com/demos/ejServices/api/OlapGrid/FetchMembers)
 
 It fetches the members of the selected hierarchy to render the member editor.
 
@@ -188,7 +188,7 @@ public Dictionary<string, object> FetchMembers(Dictionary<string, object> jsonRe
 
 ## Paging
 
-[POST/Api/OlapGrid/Paging](http://js.syncfusion.com/demos/ejServices/api/OlapGrid/Paging)
+ [POST] [/Api/OlapGrid/Paging](http://js.syncfusion.com/demos/ejServices/api/OlapGrid/Paging)
 
 It fetches the OLAP data required to render the specific page of PivotGrid with paging enabled.
 
@@ -224,7 +224,7 @@ public Dictionary<string, object> Paging(Dictionary<string, object> jsonResult)
 
 ## RemoveButton
 
-[POST/Api/OlapGrid/RemoveButton](http://js.syncfusion.com/demos/ejServices/api/OlapGrid/RemoveButton)
+ [POST] [/Api/OlapGrid/RemoveButton](http://js.syncfusion.com/demos/ejServices/api/OlapGrid/RemoveButton)
 
 It fetches the data required to render the control after removing a button.
 
@@ -259,7 +259,7 @@ public Dictionary<string, object> RemoveButton(Dictionary<string, object> jsonRe
 
 ## ExpandMember
 
-[POST/Api/OlapGrid/ExpandMember](http://js.syncfusion.com/demos/ejServices/api/OlapGrid/ExpandMember)
+ [POST] [/Api/OlapGrid/ExpandMember](http://js.syncfusion.com/demos/ejServices/api/OlapGrid/ExpandMember)
 
 It fetches the data to render children nodes of a member in Member Editor Tree.
 
@@ -296,7 +296,7 @@ public Dictionary<string, object> ExpandMember(Dictionary<string, object> jsonRe
 
 ## Export
 
-[POST/Api/OlapGrid/Export](http://js.syncfusion.com/demos/ejServices/api/OlapGrid/Export)
+ [POST] [/Api/OlapGrid/Export](http://js.syncfusion.com/demos/ejServices/api/OlapGrid/Export)
 
 It is used to export the PivotGrid data to specified format.
 
@@ -330,7 +330,7 @@ public void Export()
 
 ## SaveReport
 
-[POST/Api/OlapGrid/SaveReport](http://js.syncfusion.com/demos/ejServices/api/OlapGrid/SaveReport)
+ [POST] [/Api/OlapGrid/SaveReport](http://js.syncfusion.com/demos/ejServices/api/OlapGrid/SaveReport)
 
 It saves the current report to database with the specified name.
 
@@ -388,7 +388,7 @@ public Dictionary<string, object> SaveReport(Dictionary<string, object> jsonResu
 
 ## LoadReportFromDB
 
-[POST/Api/OlapGrid/LoadReportFromDB](http://js.syncfusion.com/demos/ejServices/api/OlapGrid/LoadReportFromDB)
+ [POST] [/Api/OlapGrid/LoadReportFromDB](http://js.syncfusion.com/demos/ejServices/api/OlapGrid/LoadReportFromDB)
 
 It loads a report from the database and refreshes the control with it.
 
@@ -462,7 +462,7 @@ public Dictionary<string, object> LoadReportFromDB(Dictionary<string, object> js
 
 ## DeferUpdate
 
-[POST/Api/OlapGrid/DeferUpdate](http://js.syncfusion.com/demos/ejServices/api/OlapGrid/DeferUpdate)
+ [POST] [/Api/OlapGrid/DeferUpdate](http://js.syncfusion.com/demos/ejServices/api/OlapGrid/DeferUpdate)
 
 It fetches the data with respect to the report available at that instant (i.e) updates the control with current report.
 
@@ -496,7 +496,7 @@ public Dictionary<string, object> DeferUpdate(Dictionary<string, object> jsonRes
 
 ## ExcelExport
 
-[POST/Api/OlapGrid/ExcelExport](http://js.syncfusion.com/demos/ejServices/api/OlapGrid/ExcelExport)
+ [POST] [/Api/OlapGrid/ExcelExport](http://js.syncfusion.com/demos/ejServices/api/OlapGrid/ExcelExport)
 
 It exports the PivotGrid control at that instant to the Excel format.
 
@@ -527,7 +527,7 @@ public void ExcelExport()
 
 ## PdfExport
 
-[POST/Api/OlapGrid/PdfExport](http://js.syncfusion.com/demos/ejServices/api/OlapGrid/PdfExport)
+ [POST] [/Api/OlapGrid/PdfExport](http://js.syncfusion.com/demos/ejServices/api/OlapGrid/PdfExport)
 
 It exports the PivotGrid control at the instant to PDF document.
 
@@ -558,7 +558,7 @@ public void PdfExport()
 
 ## WordExport
 
-[POST/Api/OlapGrid/WordExport](http://js.syncfusion.com/demos/ejServices/api/OlapGrid/WordExport)
+ [POST] [/Api/OlapGrid/WordExport](http://js.syncfusion.com/demos/ejServices/api/OlapGrid/WordExport)
 
 It exports the PivotGrid control at the instant to Word document.
 
@@ -590,7 +590,7 @@ public void WordExport()
 
 ## CsvExport
 
-[POST/Api/OlapGrid/CsvExport](http://js.syncfusion.com/demos/ejServices/api/OlapGrid/CsvExport)
+ [POST] [/Api/OlapGrid/CsvExport](http://js.syncfusion.com/demos/ejServices/api/OlapGrid/CsvExport)
 
 It exports the PivotGrid control at the instant to CSV document.
 

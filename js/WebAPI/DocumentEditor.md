@@ -9,7 +9,7 @@ keywords: documenteditor,syncfusion,documenteditor webapi
 
 ## Import
 
-[POST/Api/DocumentEditor/Import](http://js.syncfusion.com/demos/ejServices/api/DocumentEditor/Import)
+ [POST] [/Api/DocumentEditor/Import](http://js.syncfusion.com/demos/ejServices/api/DocumentEditor/Import)
 
 It loads the document from specified path in DocumentEditor.
 
@@ -63,7 +63,7 @@ $.ajax({
 
 ## LoadDefault
 
-[POST/Api/DocumentEditor/LoadDefault](http://js.syncfusion.com/demos/ejServices/api/DocumentEditor/LoadDefaul)
+ [POST] [/Api/DocumentEditor/LoadDefault](http://js.syncfusion.com/demos/ejServices/api/DocumentEditor/LoadDefaul)
 
 It loads the default document in DocumentEditor.
 

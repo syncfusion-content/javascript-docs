@@ -9,7 +9,7 @@ keywords: RelationalGauge, syncfusion, RelationalGauge WCF
 
 ## Initialize
 
-[POST/WCF/PivotGauge/Initialize](http://js.syncfusion.com/demos/ejServices/wcf/PivotGauge/Relational.svc)
+ [POST] [/WCF/PivotGauge/Initialize](http://js.syncfusion.com/demos/ejServices/wcf/PivotGauge/Relational.svc)
 
 It fetches the Relational data required to render the PivotGauge control from server-end.
 

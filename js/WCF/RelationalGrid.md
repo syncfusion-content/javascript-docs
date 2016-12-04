@@ -9,7 +9,7 @@ keywords: RelationalGrid, syncfusion, RelationalGrid WCF
 
 ## Initialize
 
-[POST/WCF/PivotGrid/Initialize](http://js.syncfusion.com/demos/ejServices/wcf/PivotGrid/Relational.svc)
+ [POST] [/WCF/PivotGrid/Initialize](http://js.syncfusion.com/demos/ejServices/wcf/PivotGrid/Relational.svc)
 
 It fetches the data required to render the PivotGrid initially.
 
@@ -43,7 +43,7 @@ public Dictionary<string, object> Initialize(string action)
 
 ## FetchMembers
 
-[POST/WCF/PivotGrid/FetchMembers](http://js.syncfusion.com/demos/ejServices/wcf/PivotGrid/Relational.svc)
+ [POST] [/WCF/PivotGrid/FetchMembers](http://js.syncfusion.com/demos/ejServices/wcf/PivotGrid/Relational.svc)
 
 It fetches the members of the selected field to render the member editor tree.
 
@@ -79,7 +79,7 @@ public Dictionary<string, object> FetchMembers(string action, string headerTag, 
 
 ## Filtering
 
-[POST/WCF/PivotGrid/Filtering](http://js.syncfusion.com/demos/ejServices/wcf/PivotGrid/Relational.svc)
+ [POST] [/WCF/PivotGrid/Filtering](http://js.syncfusion.com/demos/ejServices/wcf/PivotGrid/Relational.svc)
 
 It fetches the data required to render the PivotGrid control on performing filtering action.
 
@@ -115,7 +115,7 @@ public Dictionary<string, object> Filtering(string action, string filterParams, 
 
 ## ModifyNodeState
 
-[POST/WCF/PivotGrid/ModifyNodeState](http://js.syncfusion.com/demos/ejServices/wcf/PivotGrid/Relational.svc)
+ [POST] [/WCF/PivotGrid/ModifyNodeState](http://js.syncfusion.com/demos/ejServices/wcf/PivotGrid/Relational.svc)
 
 It fetches the relational data required to render the PivotGrid control on selecting/unselecting nodes in Field list.
 
@@ -154,7 +154,7 @@ public Dictionary<string, object> ModifyNodeState(string action, string headerTa
 
 ## DropNode
 
-[POST/WCF/PivotGrid/DropNode](http://js.syncfusion.com/demos/ejServices/wcf/PivotGrid/Relational.svc)
+ [POST] [/WCF/PivotGrid/DropNode](http://js.syncfusion.com/demos/ejServices/wcf/PivotGrid/Relational.svc)
 
 It fetches the relational data required to render the PivotGrid control on node drop action.
 
@@ -192,7 +192,7 @@ public Dictionary<string, object> DropNode(string action, string dropAxis, strin
 
 ## Sorting
 
-[POST/WCF/PivotGrid/Sorting](http://js.syncfusion.com/demos/ejServices/wcf/PivotGrid/Relational.svc)
+ [POST] [/WCF/PivotGrid/Sorting](http://js.syncfusion.com/demos/ejServices/wcf/PivotGrid/Relational.svc)
 
 It fetches the sorted data to render the PivotGrid control on performing sorting.
 
@@ -227,7 +227,7 @@ public Dictionary<string, object> Sorting(string action, string sortedHeaders, s
 
 ## CalculatedField
 
-[POST/WCF/PivotGrid/CalculatedField](http://js.syncfusion.com/demos/ejServices/wcf/PivotGrid/Relational.svc)
+ [POST] [/WCF/PivotGrid/CalculatedField](http://js.syncfusion.com/demos/ejServices/wcf/PivotGrid/Relational.svc)
 
 It forms a calculated field in values area and fetches the data along with it to render the PivotGrid control.
 
@@ -262,7 +262,7 @@ public Dictionary<string, object> CalculatedField(string action, string headerTa
 
 ## Export
 
-[POST/WCF/PivotGrid/Export](http://js.syncfusion.com/demos/ejServices/wcf/PivotGrid/Relational.svc)
+ [POST] [/WCF/PivotGrid/Export](http://js.syncfusion.com/demos/ejServices/wcf/PivotGrid/Relational.svc)
 
 It is used to export the PivotGrid data to specified format.
 
@@ -298,7 +298,7 @@ public void Export(Stream stream)
 
 ## SaveReport
 
-[POST/WCF/PivotGrid/SaveReport](http://js.syncfusion.com/demos/ejServices/wcf/PivotGrid/Relational.svc)
+ [POST] [/WCF/PivotGrid/SaveReport](http://js.syncfusion.com/demos/ejServices/wcf/PivotGrid/Relational.svc)
 
 It saves the current report to database with the specified name.
 
@@ -357,7 +357,7 @@ public Dictionary<string, object> SaveReport(string reportName, string operation
 
 ## LoadReportFromDB
 
-[POST/WCF/PivotGrid/LoadReportFromDB](http://js.syncfusion.com/demos/ejServices/wcf/PivotGrid/Relational.svc)
+ [POST] [/WCF/PivotGrid/LoadReportFromDB](http://js.syncfusion.com/demos/ejServices/wcf/PivotGrid/Relational.svc)
 
 It loads a report from the database and refreshes the control with it.
 
@@ -430,7 +430,7 @@ public Dictionary<string, object> LoadReportFromDB(string reportName, string ope
 
 ## DeferUpdate
 
-[POST/WCF/PivotGrid/DeferUpdate](http://js.syncfusion.com/demos/ejServices/wcf/PivotGrid/Relational.svc)
+ [POST] [/WCF/PivotGrid/DeferUpdate](http://js.syncfusion.com/demos/ejServices/wcf/PivotGrid/Relational.svc)
 
 It fetches the data with respect to the report available at that instant (i.e) updates the control with current report.
 
@@ -465,7 +465,7 @@ public Dictionary<string, object> DeferUpdate(string action, string filterParams
 
 ## CellEditing
 
-[POST/WCF/PivotGrid/CellEditing](http://js.syncfusion.com/demos/ejServices/wcf/PivotGrid/Relational.svc)
+ [POST] [/WCF/PivotGrid/CellEditing](http://js.syncfusion.com/demos/ejServices/wcf/PivotGrid/Relational.svc)
 
 It rewrites the content of database on editing a cell.
 

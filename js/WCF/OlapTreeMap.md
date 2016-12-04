@@ -9,7 +9,7 @@ keywords: PivotTreeMAp , syncfusion, PivotTreeMAp WCF
 
 ## Initialize
 
-[POST/WCF/PivotTreeMAp/Initialize](http://js.syncfusion.com/demos/ejServices/wcf/PivotTreeMAp/Olap.svc)
+ [POST] [/WCF/PivotTreeMAp/Initialize](http://js.syncfusion.com/demos/ejServices/wcf/PivotTreeMAp/Olap.svc)
 
 It fetches the OLAP data required to render the PivotTreeMap control from server-end.
 
@@ -52,7 +52,7 @@ public Dictionary<string, object> Initialize(string action, string currentReport
 
 ## Drill
 
-[POST/WCF/PivotTreeMAp/Drill](http://js.syncfusion.com/demos/ejServices/wcf/PivotTreeMAp/Olap.svc)
+ [POST] [/WCF/PivotTreeMAp/Drill](http://js.syncfusion.com/demos/ejServices/wcf/PivotTreeMAp/Olap.svc)
 
 It fetches the OLAP data required to render the drilled PivotTreeMap.
 

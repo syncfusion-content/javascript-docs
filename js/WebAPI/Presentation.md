@@ -2,14 +2,14 @@
 layout: post
 title: webAPI reference for Presentation
 description: webAPI reference for Presentation
-documentation: API
-platform: js-webapi
+documentation: ug
+platform: js
 keywords: Presentation, syncfusion, Presentation webapi
 ---
 
 ## CreatePresentation
 
-[POST&nbsp;&nbsp;/Api/Presentation/CreatePresentation](http://js.syncfusion.com/demos/ejservices/api/Presentation/CreatePresentation)
+[POST] [/Api/Presentation/CreatePresentation](http://js.syncfusion.com/demos/ejservices/api/Presentation/CreatePresentation)
 
 It is used to create simple PowerPoint presentation with texts, images and tables.
 
@@ -21,7 +21,7 @@ Content-Type: data:attachment/pptx
 
 ### Code example 
 
-```javascript
+{% highlight js %}
 
 URL: http://js.syncfusion.com/demos/ejServices/api/Presentation/CreatePresentation
 
@@ -47,12 +47,13 @@ URL: http://js.syncfusion.com/demos/ejServices/api/Presentation/CreatePresentati
        });
    });
 
-```
+{% endhighlight %}
+
 > The above sample demonstrates adding slides to a PowerPoint presentation and adding contents to the PowerPoint slide.
 
 ## ManipulateSmartArt
 
-[POST&nbsp;&nbsp;/Api/Presentation/ManipulateSmartArt](http://js.syncfusion.com/demos/ejservices/api/Presentation/ManipulateSmartArt)
+[POST] [/Api/Presentation/ManipulateSmartArt](http://js.syncfusion.com/demos/ejservices/api/Presentation/ManipulateSmartArt)
 
 It is used to manipulate SmartArt in PowerPoint slides.
 
@@ -64,7 +65,7 @@ Content-Type: data:attachment/pptx
 
 ### Code example 
 
-```javascript
+{% highlight js %}
 
 URL: http://js.syncfusion.com/demos/ejServices/api/Presentation/ManipulateSmartArt
 
@@ -90,12 +91,13 @@ URL: http://js.syncfusion.com/demos/ejServices/api/Presentation/ManipulateSmartA
        });
    });
 
-```
+{% endhighlight %}
+
 > The above sample demonstrates adding and removing the nodes in a SmartArt diagram.
 
 ## MergePresentations
 
-[POST&nbsp;&nbsp;/Api/Presentation/MergePresentations](http://js.syncfusion.com/demos/ejservices/api/Presentation/MergePresentations)
+[POST] [/Api/Presentation/MergePresentations](http://js.syncfusion.com/demos/ejservices/api/Presentation/MergePresentations)
 
 It is used to merge two PowerPoint presentations.
 
@@ -111,7 +113,7 @@ Content-Type: data:attachment/pptx
 
 ### Code example 
 
-```javascript
+{% highlight js %}
 
 URL: http://js.syncfusion.com/demos/ejServices/api/Presentation/MergePresentations
 
@@ -148,12 +150,13 @@ URL: http://js.syncfusion.com/demos/ejServices/api/Presentation/MergePresentatio
 	 });
    });
 
-```
+{% endhighlight %}
+
 > The above sample demonstrates merging two PowerPoint documents with paste options - use destination theme and source formatting using Essential Presentation. 
 
 ## CreateNotes
 
-[POST&nbsp;&nbsp;/Api/Presentation/CreateNotes](http://js.syncfusion.com/demos/ejservices/api/Presentation/CreateNotes)
+[POST] [/Api/Presentation/CreateNotes](http://js.syncfusion.com/demos/ejservices/api/Presentation/CreateNotes)
 
 It is used to add notes page in PowerPoint slides and converts the notes page to PDF document. 
 
@@ -171,7 +174,7 @@ Content-Type: data:attachment/filetype
 
 ### Code example 
 
-```javascript
+{% highlight js %}
 
 URL: http://js.syncfusion.com/demos/ejServices/api/Presentation/CreateNotes
 
@@ -212,12 +215,13 @@ URL: http://js.syncfusion.com/demos/ejServices/api/Presentation/CreateNotes
      });
    });
 
-```
+{% endhighlight %}
+
 > The above sample demonstrates adding the Notes pages to a Presentation slide and how to convert the Notes pages in the PowerPoint Presentation as PDF document. 
 
 ## ConvertToPDF
 
-[POST&nbsp;&nbsp;/Api/Presentation/ConvertToPDF](http://js.syncfusion.com/demos/ejservices/api/Presentation/ConvertToPDF)
+[POST] [/Api/Presentation/ConvertToPDF](http://js.syncfusion.com/demos/ejservices/api/Presentation/ConvertToPDF)
 
 It is used to convert the PowerPoint presentation to PDF document
 
@@ -235,7 +239,7 @@ Content-Type: data:attachment/pdf
 
 ### Code example 
 
-```javascript
+{% highlight js %}
 
 URL: http://js.syncfusion.com/demos/ejServices/api/Presentation/ConvertToPDF
 
@@ -261,5 +265,6 @@ URL: http://js.syncfusion.com/demos/ejServices/api/Presentation/ConvertToPDF
     });
    });
 
-```
+{% endhighlight %}
+
 > The above sample demonstrates converting a PowerPoint presentation to PDF document. 

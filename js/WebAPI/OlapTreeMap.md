@@ -9,7 +9,7 @@ keywords: PivotTreeMAp , syncfusion, PivotTreeMAp webapi
 
 ## Initialize
 
-[POST/Api/OlapTreeMap/Initialize](http://js.syncfusion.com/demos/ejServices/api/OlapTreeMap/Initialize)
+ [POST] [/Api/OlapTreeMap/Initialize](http://js.syncfusion.com/demos/ejServices/api/OlapTreeMap/Initialize)
 
 It fetches the OLAP data required to render the PivotTreeMap control from server-end.
 
@@ -43,7 +43,7 @@ public Dictionary<string, object> Initialize(Dictionary<string, object> jsonResu
 
 ## Drill
 
-[POST/Api/OlapTreeMap/Drill](http://js.syncfusion.com/demos/ejServices/api/OlapTreeMap/Drill)
+ [POST] [/Api/OlapTreeMap/Drill](http://js.syncfusion.com/demos/ejServices/api/OlapTreeMap/Drill)
 
 It fetches the OLAP data required to render the drilled PivotTreeMap.
 

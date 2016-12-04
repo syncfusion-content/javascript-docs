@@ -9,7 +9,7 @@ keywords: ejGantt,Gantt, syncfusion,ejGantt webapi
 
 ## ExcelExport
 
-[POST/Api/Gantt/ExcelExport](http://js.syncfusion.com/demos/ejServices/api/Gantt/ExcelExport)
+ [POST] [/Api/Gantt/ExcelExport](http://js.syncfusion.com/demos/ejServices/api/Gantt/ExcelExport)
 
 It is used to export the Gantt data to PDF file.
 

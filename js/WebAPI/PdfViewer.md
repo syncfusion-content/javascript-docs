@@ -9,7 +9,7 @@ keywords: pdfviewer,ejpdfviewer, syncfusion, pdfviewer webapi
 
 ## Load
 
-[POST/Api/PdfViewer/Load](http://js.syncfusion.com/demos/ejServices/api/PdfViewer/Load)
+ [POST] [/Api/PdfViewer/Load](http://js.syncfusion.com/demos/ejServices/api/PdfViewer/Load)
 
 Loads the PDF document into the PDF viewer control and parse the PDF document content on the server side, then return the necessary details for rendering PDF document content to the client side as JSON data.
 
@@ -73,7 +73,7 @@ $.ajax({
 
 ## FileUpload
 
-[POST/Api/PdfViewer/FileUpload](http://js.syncfusion.com/demos/ejServices/api/PdfViewer/FileUpload)
+ [POST] [/Api/PdfViewer/FileUpload](http://js.syncfusion.com/demos/ejServices/api/PdfViewer/FileUpload)
 
 Uploads and loads the PDF document into the PDF viewer control.
 
@@ -138,7 +138,7 @@ $.ajax({
 
 ## Download
 
-[POST/Api/PdfViewer/Download](http://js.syncfusion.com/demos/ejServices/api/PdfViewer/Download)
+ [POST] [/Api/PdfViewer/Download](http://js.syncfusion.com/demos/ejServices/api/PdfViewer/Download)
 
 Downloads the PDF document being displayed in the PDF viewer control.
 
