@@ -9,7 +9,7 @@ keywords: Schedule, ejSchedule, syncfusion, ejSchedule webapi
 
 ## LoadData
 
-[POST/Api/Schedule/LoadData](http://js.syncfusion.com/demos/ejservices/api/Schedule/LoadData)
+ [POST] [/Api/Schedule/LoadData](http://js.syncfusion.com/demos/ejservices/api/Schedule/LoadData)
 
 It fetches the records from Default Schedule table and binding it to the Scheduler.
 
@@ -63,7 +63,7 @@ $(function() {
 
 ## PdfExport
 
-[POST/Api/Schedule/PdfExport](http://js.syncfusion.com/demos/ejservices/api/Schedule/PDFExport)
+ [POST] [/Api/Schedule/PdfExport](http://js.syncfusion.com/demos/ejservices/api/Schedule/PDFExport)
 
 It exports the entire Scheduler content into a PDF file format.
 
@@ -104,7 +104,7 @@ function onExportClick(e) {
 
 ## IcsExport
 
-[POST/Api/Schedule/IcsExport](http://js.syncfusion.com/demos/ejservices/api/Schedule/ICSExport)
+ [POST] [/Api/Schedule/IcsExport](http://js.syncfusion.com/demos/ejservices/api/Schedule/ICSExport)
 
 It exports the complete appointment data from Scheduler into an ICS file format.
 
@@ -147,7 +147,7 @@ function onExportClick(e) {
 
 ## Save
 
-[POST/Api/Schedule/Save](http://js.syncfusion.com/demos/ejservices/api/Schedule/Save)
+ [POST] [/Api/Schedule/Save](http://js.syncfusion.com/demos/ejservices/api/Schedule/Save)
 
 It imports the appointment data generated from external calendar into Scheduler.
 

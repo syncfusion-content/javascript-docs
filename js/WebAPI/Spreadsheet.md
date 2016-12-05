@@ -9,7 +9,7 @@ keywords: Spreadsheet,ejSpreadsheet , syncfusion, ejSpreadsheet webapi
 
 ## ExcelExport
 
-[POST/Api/Spreadsheet/ExcelExport](http://js.syncfusion.com/demos/ejServices/api/Spreadsheet/ExcelExport)
+ [POST] [/Api/Spreadsheet/ExcelExport](http://js.syncfusion.com/demos/ejServices/api/Spreadsheet/ExcelExport)
 
 It is used to export the Spreadsheet data as an Excel document.
 
@@ -51,7 +51,7 @@ else
 
 ## CsvExport
 
-[POST/Api/Spreadsheet/CsvExport](http://js.syncfusion.com/demos/ejServices/api/Spreadsheet/CsvExport)
+ [POST] [/Api/Spreadsheet/CsvExport](http://js.syncfusion.com/demos/ejServices/api/Spreadsheet/CsvExport)
 
 It is used to export the Spreadsheet data to CSV file.
 
@@ -86,11 +86,11 @@ Spreadsheet.Save(sheetModel, sheetData, "sample", ExportFormat.CSV);
 
 {% endhighlight %}
 
->The above example will export the Spreadsheet as CSV file.
+>The above example will export the Spreadsheet as Csv file.
 
 ## PdfExport
 
-[POST/Api/Spreadsheet/PdfExport](http://js.syncfusion.com/demos/ejServices/api/Spreadsheet/PdfExport)
+ [POST] [/Api/Spreadsheet/PdfExport](http://js.syncfusion.com/demos/ejServices/api/Spreadsheet/PdfExport)
 
 It is used to export the Spreadsheet data as a PDF document.
 
@@ -128,7 +128,7 @@ Spreadsheet.Save(sheetModel, sheetData, "sample", ExportFormat.PDF);
 
 ## Import
 
-[POST/Api/Spreadsheet/Import](http://js.syncfusion.com/demos/ejServices/api/Spreadsheet/Import)
+ [POST] [/Api/Spreadsheet/Import](http://js.syncfusion.com/demos/ejServices/api/Spreadsheet/Import)
 
 It loads the document from specified path in Spreadsheet.
 

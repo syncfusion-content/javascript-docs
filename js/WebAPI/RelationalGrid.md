@@ -9,7 +9,7 @@ keywords: RelationalGrid, syncfusion, RelationalGrid webapi
 
 ## Initialize
 
-[POST/Api/RelationalGrid/Initialize](http://js.syncfusion.com/demos/ejServices/api/RelationalGrid/Initialize)
+ [POST] [/Api/RelationalGrid/Initialize](http://js.syncfusion.com/demos/ejServices/api/RelationalGrid/Initialize)
 
 It fetches the data required to render the PivotGrid initially.
 
@@ -42,7 +42,7 @@ public Dictionary<string, object> Initialize(Dictionary<string, object> jsonResu
 
 ## FetchMembers
 
-[POST/Api/RelationalGrid/FetchMembers](http://js.syncfusion.com/demos/ejServices/api/RelationalGrid/FetchMembers)
+ [POST] [/Api/RelationalGrid/FetchMembers](http://js.syncfusion.com/demos/ejServices/api/RelationalGrid/FetchMembers)
 
 It fetches the members of the selected field to render the member editor tree.
 
@@ -77,7 +77,7 @@ public Dictionary<string, object> FetchMembers(Dictionary<string, object> jsonRe
 
 ## Filtering
 
-[POST/Api/RelationalGrid/Filtering](http://js.syncfusion.com/demos/ejServices/api/RelationalGrid/Filtering)
+ [POST] [/Api/RelationalGrid/Filtering](http://js.syncfusion.com/demos/ejServices/api/RelationalGrid/Filtering)
 
 It fetches the data required to render the PivotGrid control on performing filtering action.
 
@@ -112,7 +112,7 @@ public Dictionary<string, object> Filtering(Dictionary<string, object> jsonResul
 
 ## ModifyNodeState
 
-[POST/Api/RelationalGrid/ModifyNodeState](http://js.syncfusion.com/demos/ejServices/api/RelationalGrid/ModifyNodeState)
+ [POST] [/Api/RelationalGrid/ModifyNodeState](http://js.syncfusion.com/demos/ejServices/api/RelationalGrid/ModifyNodeState)
 
 It fetches the relational data required to render the PivotGrid control on selecting/unselecting nodes in Field list.
 
@@ -150,7 +150,7 @@ public Dictionary<string, object> ModifyNodeState(Dictionary<string, object> jso
 
 ## DropNode
 
-[POST/Api/RelationalGrid/DropNode](http://js.syncfusion.com/demos/ejServices/api/RelationalGrid/DropNode)
+ [POST] [/Api/RelationalGrid/DropNode](http://js.syncfusion.com/demos/ejServices/api/RelationalGrid/DropNode)
 
 It fetches the relational data required to render the PivotGrid control on node drop action.
 
@@ -187,7 +187,7 @@ public Dictionary<string, object> DropNode(Dictionary<string, object> jsonResult
 
 ## Sorting
 
-[POST/Api/RelationalGrid/Sorting](http://js.syncfusion.com/demos/ejServices/api/RelationalGrid/Sorting)
+ [POST] [/Api/RelationalGrid/Sorting](http://js.syncfusion.com/demos/ejServices/api/RelationalGrid/Sorting)
 
 It fetches the sorted data to render the PivotGrid control on performing sorting.
 
@@ -220,7 +220,7 @@ public Dictionary<string, object> Sorting(Dictionary<string, object> jsonResult)
 
 ## CalculatedField
 
-[POST/Api/RelationalGrid/CalculatedField](http://js.syncfusion.com/demos/ejServices/api/RelationalGrid/CalculatedField)
+ [POST] [/Api/RelationalGrid/CalculatedField](http://js.syncfusion.com/demos/ejServices/api/RelationalGrid/CalculatedField)
 
 It forms a calculated field in values area and fetches the data along with it to render the PivotGrid control.
 
@@ -254,7 +254,7 @@ public Dictionary<string, object> CalculatedField(Dictionary<string, object> jso
 
 ## Export
 
-[POST/Api/RelationalGrid/Export](http://js.syncfusion.com/demos/ejServices/api/RelationalGrid/Export)
+ [POST] [/Api/RelationalGrid/Export](http://js.syncfusion.com/demos/ejServices/api/RelationalGrid/Export)
 
 It is used to export the PivotGrid data to specified format.
 
@@ -289,7 +289,7 @@ public void Export()
 
 ## SaveReport
 
-[POST/Api/RelationalGrid/SaveReport](http://js.syncfusion.com/demos/ejServices/api/RelationalGrid/SaveReport)
+ [POST] [/Api/RelationalGrid/SaveReport](http://js.syncfusion.com/demos/ejServices/api/RelationalGrid/SaveReport)
 
 It saves the current report to database with the specified name.
 
@@ -347,7 +347,7 @@ public Dictionary<string, object> SaveReport(Dictionary<string, object> jsonResu
 
 ## LoadReportFromDB
 
-[POST/Api/RelationalGrid/LoadReportFromDB](http://js.syncfusion.com/demos/ejServices/api/RelationalGrid/LoadReportFromDB)
+ [POST] [/Api/RelationalGrid/LoadReportFromDB](http://js.syncfusion.com/demos/ejServices/api/RelationalGrid/LoadReportFromDB)
 
 It loads a report from the database and refreshes the control with it.
 
@@ -411,7 +411,7 @@ public Dictionary<string, object> LoadReportFromDB(Dictionary<string, object> js
 
 ## DeferUpdate
 
-[POST/Api/RelationalGrid/DeferUpdate](http://js.syncfusion.com/demos/ejServices/api/RelationalGrid/DeferUpdate)
+ [POST] [/Api/RelationalGrid/DeferUpdate](http://js.syncfusion.com/demos/ejServices/api/RelationalGrid/DeferUpdate)
 
 It fetches the data with respect to the report available at that instant (i.e) updates the control with current report.
 
@@ -445,7 +445,7 @@ public Dictionary<string, object> DeferUpdate(Dictionary<string, object> jsonRes
 
 ## CellEditing
 
-[POST/Api/RelationalGrid/CellEditing](http://js.syncfusion.com/demos/ejServices/api/RelationalGrid/CellEditing)
+ [POST] [/Api/RelationalGrid/CellEditing](http://js.syncfusion.com/demos/ejServices/api/RelationalGrid/CellEditing)
 
 It rewrites the content of database on editing a cell.
 

@@ -9,7 +9,7 @@ keywords: PivotClient, syncfusion, PivotClient WCF
 
 ## Initialize
 
-[POST/WCF/PivotClient/Initialize](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Relational.svc)
+ [POST] [/WCF/PivotClient/Initialize](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Relational.svc)
 
 It fetches the data required to render the PivotClient control initially.
 
@@ -42,7 +42,7 @@ public Dictionary<string, object> Initialize(string action)
 
 ## DrillChart
 
-[POST/WCF/PivotClient/DrillChart](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Relational.svc)
+ [POST] [/WCF/PivotClient/DrillChart](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Relational.svc)
 
 It fetches the drilled data required to render the PivotChart on drilling.
 
@@ -80,7 +80,7 @@ public Dictionary<string, object> DrillChart(string action, string drilledSeries
 
 ## Filtering
 
-[POST/WCF/PivotClient/Filtering](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Relational.svc)
+ [POST] [/WCF/PivotClient/Filtering](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Relational.svc)
 
 It fetches the filtered data required to render the control after performing filtering.
 
@@ -115,7 +115,7 @@ public Dictionary<string, object> Filtering(string action, string filterParams, 
 
 ## FetchMembers
 
-[POST/WCF/PivotClient/FetchMembers](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Relational.svc)
+ [POST] [/WCF/PivotClient/FetchMembers](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Relational.svc)
 
 It fetches the details of the members to render the member editor dialog.
 
@@ -150,7 +150,7 @@ public Dictionary<string, object> FetchMembers(string action, string currentRepo
 
 ## DropNode
 
-[POST/WCF/PivotClient/DropNode](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Relational.svc)
+ [POST] [/WCF/PivotClient/DropNode](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Relational.svc)
 
 It fetches the data required to render the control after drag and drop action.
 
@@ -182,7 +182,7 @@ public Dictionary<string, object> DropNode(string action, string args)
 
 ## ToolbarOperations
 
-[POST/WCF/PivotClient/ToolbarOperations](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Relational.svc)
+ [POST] [/WCF/PivotClient/ToolbarOperations](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Relational.svc)
 
 It fetches the data required to render the control on performing toolbar operations.
 
@@ -214,7 +214,7 @@ public Dictionary<string, object> ToolbarOperations(string action, string args)
 
 ## SaveReportToDB
 
-[POST/WCF/PivotClient/SaveReportToDB](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Relational.svc)
+ [POST] [/WCF/PivotClient/SaveReportToDB](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Relational.svc)
 
 It saves the current report to database with the specified name.
 
@@ -270,7 +270,7 @@ public Dictionary<string, object> SaveReportToDB(string reportName, string opera
 
 ## Export
 
-[POST/WCF/PivotClient/Export](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Relational.svc)
+ [POST] [/WCF/PivotClient/Export](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Relational.svc)
 
 It exports the PivotGrid or PivotChart or both to the selected format.
 
@@ -306,7 +306,7 @@ public void Export(Stream stream)
 
 ## FetchReportListFromDB
 
-[POST/WCF/PivotClient/FetchReportListFromDB](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Relational.svc)
+ [POST] [/WCF/PivotClient/FetchReportListFromDB](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Relational.svc)
 
 It fetches the list of names of reports stored in database.
 
@@ -351,7 +351,7 @@ public Dictionary<string, object> FetchReportListFromDB(string operationalMode, 
 
 ## LoadReportFromDB
 
-[POST/WCF/PivotClient/LoadReportFromDB](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Relational.svc)
+ [POST] [/WCF/PivotClient/LoadReportFromDB](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Relational.svc)
 
 It loads the report with specified name from the database to the control.
 

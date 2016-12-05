@@ -9,14 +9,14 @@ keywords: Northwind, syncfusion, Northwind wcf
 
 ## NorthwindDataService
 
-[GET/wcf/Northwind.svc](http://js.syncfusion.com/demos/ejservices/Wcf/Northwind.svc)
+ [GET] [/WCF/Northwind.svc](http://js.syncfusion.com/demos/ejservices/Wcf/Northwind.svc)
 
 This is an [OData](http://www.odata.org/) endpoint for Microsoft Northwind sample database with limited data tables like `Orders` and `Customers`.
 
 ## Grid
 
-[GET/wcf/Northwind.svc/Orders](http://js.syncfusion.com/demos/ejServices/wcf/NorthWind.svc/Orders)<br>
-[GET/wcf/Northwind.svc/Customers](http://js.syncfusion.com/demos/ejServices/wcf/NorthWind.svc/Customers)
+ [GET] [/WCF/Northwind.svc/Orders](http://js.syncfusion.com/demos/ejServices/wcf/NorthWind.svc/Orders)<br>
+ [GET] [/WCF/Northwind.svc/Customers](http://js.syncfusion.com/demos/ejServices/wcf/NorthWind.svc/Customers)
 
 We have used Northwind services for Grid control where it has the data tables like "Orders" and "Customers".
 
@@ -71,7 +71,7 @@ Response (JSON):
 
 ## Kanban
 
-[GET/wcf/Northwind.svc/Tasks](http://js.syncfusion.com/demos/ejServices/wcf/NorthWind.svc/Tasks)
+ [GET] [/WCF/Northwind.svc/Tasks](http://js.syncfusion.com/demos/ejServices/wcf/NorthWind.svc/Tasks)
 
 For Kanban control we have added the custom table along with the Northwind service.
 

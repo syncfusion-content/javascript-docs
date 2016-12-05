@@ -4,12 +4,12 @@ title: webAPI reference for DocIO
 description: webAPI reference for DocIO
 documentation: ug
 platform: js
-keywords: DocIO, syncfusion,DocIO webapi
+keywords: DocIO, syncfusion, DocIO webapi
 ---
 
 ## GenerateWordDocument
 
-[POST&nbsp;&nbsp;/Api/DocIO/GenerateWordDocument](http://js.syncfusion.com/demos/ejServices/api/DocIO/GenerateWordDocument)
+[POST] [/Api/DocIO/GenerateWordDocument](http://js.syncfusion.com/demos/ejServices/api/DocIO/GenerateWordDocument)
 
 It is used to create a simple Word document with text, image and tables.
 
@@ -29,7 +29,7 @@ Content-Type: data:attachment/filetype
 
 ### Code example
 
-```javascript
+{% highlight js %}
 
 URL: http://js.syncfusion.com/demos/ejServices/api/DocIO/GenerateWordDocument
 
@@ -84,12 +84,13 @@ $('#generatedocument').click(function () {
 });
 </script>
 
-```
+{% endhighlight %}
+
 >The above example will generate Word document or PDF.
 
 ## ConvertToPDF
 
-[POST&nbsp;&nbsp;/Api/DocIO/ConvertToPDF](http://js.syncfusion.com/demos/ejServices/api/DocIO/ConvertToPDF)
+[POST] [/Api/DocIO/ConvertToPDF](http://js.syncfusion.com/demos/ejServices/api/DocIO/ConvertToPDF)
 
 It is used to convert Word document to PDF.
 
@@ -109,7 +110,7 @@ Content-Type: data:attachment/pdf
 
 ### Code example
 
-```javascript
+{% highlight js %}
 
 URL: http://js.syncfusion.com/demos/ejServices/api/DocIO/ConvertToPDF
 
@@ -140,12 +141,13 @@ $('#converttopdf').click(function () {
 });
 </script>
 
-```
+{% endhighlight %}
+
 >The above example will result PDF document being converted from Word document.
 
 ## ApplyTextFormat
 
-[POST&nbsp;&nbsp;/Api/DocIO/ApplyTextFormat](http://js.syncfusion.com/demos/ejServices/api/DocIO/ApplyTextFormat)
+[POST] [P/Api/DocIO/ApplyTextFormat](http://js.syncfusion.com/demos/ejServices/api/DocIO/ApplyTextFormat)
 
 It is used to generate Word Document with various text formats such as character/text level formatting, paragraph level formatting and list level formatting.
 
@@ -165,7 +167,7 @@ Content-Type: data:attachment/filetype
 
 ### Code example
 
-```javascript
+{% highlight js %}
 
 URL: http://js.syncfusion.com/demos/ejServices/api/DocIO/ApplyTextFormat
 
@@ -220,12 +222,13 @@ $('#generatedocument').click(function () {
 });
 </script>
 
-```
+{% endhighlight %}
+
 >The above example will generate Word document or PDF.
 
 ## GetInvoiceTemplate
 
-[POST&nbsp;&nbsp;/Api/DocIO/GetInvoiceTemplate](http://js.syncfusion.com/demos/ejServices/api/DocIO/GetInvoiceTemplate)
+[POST] [/Api/DocIO/GetInvoiceTemplate](http://js.syncfusion.com/demos/ejServices/api/DocIO/GetInvoiceTemplate)
 
 It is used to get invoice template Word document.
 
@@ -239,7 +242,7 @@ Content-Type: data:attachment/doc
 
 ### Code example
 
-```javascript
+{% highlight js %}
 
 URL: http://js.syncfusion.com/demos/ejServices/api/DocIO/GetInvoiceTemplate
 
@@ -264,12 +267,13 @@ $('#viewtemplate').click(function () {
 });
 </script>
 
-```
+{% endhighlight %}
+
 >The above example will generate invoice template Word document.
 
 ## GenerateInvoice
 
-[POST&nbsp;&nbsp;/Api/DocIO/GenerateInvoice](http://js.syncfusion.com/demos/ejServices/api/DocIO/GenerateInvoice)
+[POST] [Api/DocIO/GenerateInvoice](http://js.syncfusion.com/demos/ejServices/api/DocIO/GenerateInvoice)
 
 It is used to generate sales invoice report using Mail merge functionality.
 
@@ -289,7 +293,7 @@ Content-Type: data:attachment/filetype
 
 ### Code example
 
-```javascript
+{% highlight js %}
 
 URL: http://js.syncfusion.com/demos/ejServices/api/DocIO/GenerateInvoice
 
@@ -346,12 +350,13 @@ $('#generate').click(function () {
 });
 </script>
 
-```
+{% endhighlight %}
+
 >The above example will generate Word document or PDF.
 
 ## GetMailmergeTemplate
 
-[POST&nbsp;&nbsp;/Api/DocIO/GetMailmergeTemplate](http://js.syncfusion.com/demos/ejServices/api/DocIO/GetMailmergeTemplate)
+[POST] [/Api/DocIO/GetMailmergeTemplate](http://js.syncfusion.com/demos/ejServices/api/DocIO/GetMailmergeTemplate)
 
 It is used to get Mail merge template Word Document.
 
@@ -371,7 +376,7 @@ Content-Type: data:attachment/doc
 
 ### Code example
 
-```javascript
+{% highlight js %}
 
 URL: http://js.syncfusion.com/demos/ejServices/api/DocIO/GetMailmergeTemplate
 
@@ -406,12 +411,13 @@ $('#viewtemplate').click(function () {
 });
 </script>
 
-```
+{% endhighlight %}
+
 >The above example will generate Mail merge template Word document.
 
 ## ExecuteNestedMailmerge
 
-[POST&nbsp;&nbsp;/Api/DocIO/ExecuteNestedMailmerge](http://js.syncfusion.com/demos/ejServices/api/DocIO/ExecuteNestedMailmerge)
+[[POST] /Api/DocIO/ExecuteNestedMailmerge](http://js.syncfusion.com/demos/ejServices/api/DocIO/ExecuteNestedMailmerge)
 
 It is used to perform Mail merge for nested groups in Word Document.
 
@@ -433,7 +439,7 @@ Content-Type: data:attachment/doc
 
 ### Code example
 
-```javascript
+{% highlight js %}
 
 URL: http://js.syncfusion.com/demos/ejServices/api/DocIO/ExecuteNestedMailmerge
 
@@ -503,5 +509,6 @@ $('#generate').click(function () {
 });
 </script>
 
-```
+{% endhighlight %}
+
 >The above example will generate Word document or PDF.

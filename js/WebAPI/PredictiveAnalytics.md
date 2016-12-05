@@ -9,7 +9,7 @@ keywords: ejPredictiveAnalytics,PredictiveAnalytics, syncfusion, PredictiveAnaly
 
 ## Load
 
-[POST/Api/PredictiveAnalytics/Load](http://js.syncfusion.com/demos/ejServices/api/PredictiveAnalytics/Load)
+ [POST] [/Api/PredictiveAnalytics/Load](http://js.syncfusion.com/demos/ejServices/api/PredictiveAnalytics/Load)
 
 This section explains the usage of Predictive Analytics API in JavaScript. This consumes the PMML and input data to retrieve the predicted result.
 

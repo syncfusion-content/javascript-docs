@@ -9,7 +9,7 @@ keywords: pdf, syncfusion, pdf webapi
 
 ## GeneratePdfDocument
 
-[POST/Api/PDF/GeneratePdfDocument](http://js.syncfusion.com/demos/ejServices/api/PDF/GeneratePdfDocument)
+ [POST] [/Api/PDF/GeneratePdfDocument](http://js.syncfusion.com/demos/ejServices/api/PDF/GeneratePdfDocument)
 
 
 ### URL parameters
@@ -40,7 +40,7 @@ Response(JSON):
 
 ## GetFormFillTemplate
 
-[POST/Api/PDF/GetFormFillTemplate](http://js.syncfusion.com/demos/ejServices/api/PDF/GetFormFillTemplate)
+ [POST] [/Api/PDF/GetFormFillTemplate](http://js.syncfusion.com/demos/ejServices/api/PDF/GetFormFillTemplate)
 
 
 ### URL parameters
@@ -70,7 +70,7 @@ Response(JSON):
 {% endhighlight %}
 ## GenerateFormFillTemplate
 
-[POST/Api/PDF/GenerateFormFillTemplate](http://js.syncfusion.com/demos/ejServices/api/PDF/GenerateFormFillTemplate)
+ [POST] [/Api/PDF/GenerateFormFillTemplate](http://js.syncfusion.com/demos/ejServices/api/PDF/GenerateFormFillTemplate)
 
 
 ### URL parameters
@@ -101,7 +101,7 @@ Response(JSON):
 
 ## GenerateInteractiveFeature
 
-[POST/Api/PDF/GenerateInteractiveFeature](http://js.syncfusion.com/demos/ejServices/api/PDF/GenerateInteractiveFeature)
+ [POST] [/Api/PDF/GenerateInteractiveFeature](http://js.syncfusion.com/demos/ejServices/api/PDF/GenerateInteractiveFeature)
 
 
 ### URL parameters
@@ -132,7 +132,7 @@ Response(JSON):
 
 ## GenerateEncryptDocument
 
-[POST/Api/PDF/GenerateEncryptDocument](http://js.syncfusion.com/demos/ejServices/api/PDF/GenerateEncryptDocument)
+ [POST] [/Api/PDF/GenerateEncryptDocument](http://js.syncfusion.com/demos/ejServices/api/PDF/GenerateEncryptDocument)
 
 
 ### URL parameters
@@ -163,7 +163,7 @@ Response(JSON):
 
 ## GenerateTableFeature
 
-[POST/Api/PDF/GenerateTableFeature](http://js.syncfusion.com/demos/ejServices/api/PDF/GenerateTableFeature)
+ [POST] [/Api/PDF/GenerateTableFeature](http://js.syncfusion.com/demos/ejServices/api/PDF/GenerateTableFeature)
 
 
 ### URL parameters

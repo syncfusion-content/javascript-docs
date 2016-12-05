@@ -9,7 +9,7 @@ keywords: RelationalGauge, syncfusion, RelationalGauge webapi
 
 ## Initialize
 
-[POST/Api/RelationalGauge/Initialize](http://js.syncfusion.com/demos/ejServices/api/RelationalGauge/Initialize)
+ [POST] [/Api/RelationalGauge/Initialize](http://js.syncfusion.com/demos/ejServices/api/RelationalGauge/Initialize)
 
 It fetches the Relational data required to render the PivotGauge control from server-end.
 

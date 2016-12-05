@@ -9,7 +9,7 @@ keywords: spellcheck, ejspellcheck, syncfusion, spellcheck api
 
 ## CheckWords
 
-[GET/Api/SpellCheck/CheckWords](http://js.syncfusion.com/demos/ejservices/api/SpellCheck/CheckWords)
+ [GET] [/Api/SpellCheck/CheckWords](http://js.syncfusion.com/demos/ejservices/api/SpellCheck/CheckWords)
 
 It is used for splitting the input string into separate words and checking whether it is an erroneous word or not. Also, it forms a list of error words and its corresponding suggestions as a collection.  
 
@@ -60,7 +60,7 @@ spellObj.showInDialog();
 
 ## AddToDictionary
 
-[GET/Api/SpellCheck/AddToDictionary](http://js.syncfusion.com/demos/ejservices/api/SpellCheck/CheckWords)
+ [GET] [/Api/SpellCheck/AddToDictionary](http://js.syncfusion.com/demos/ejservices/api/SpellCheck/CheckWords)
 
 It is used to add the custom word into the custom dictionary file.
 

@@ -40,7 +40,7 @@ $("#chartcontainer").ejChart(
 
 ## SvgExport
 
-[POST/Api/Chart/SvgExport](http://js.syncfusion.com/demos/ejServices/api/Chart/SvgExport)
+[POST] [/Api/Chart/SvgExport](http://js.syncfusion.com/demos/ejServices/api/Chart/SvgExport)
 
 It is used to export the Chart control as an SVG image.
 
@@ -71,7 +71,7 @@ $("#chartcontainer").ejChart(
 
 ## ExcelExport
 
-[POST/Api/Chart/ExcelExport](http://js.syncfusion.com/demos/ejServices/api/Chart/ExcelExport)
+ [POST][/Api/Chart/ExcelExport](http://js.syncfusion.com/demos/ejServices/api/Chart/ExcelExport)
 
 It is used to export the Chart control as an Excel document.
 
@@ -102,7 +102,7 @@ $("#chartcontainer").ejChart(
 
 ## WordExport
 
-[POST/Api/Chart/WordExport](http://js.syncfusion.com/demos/ejServices/api/Chart/WordExport)
+[POST] [/Api/Chart/WordExport](http://js.syncfusion.com/demos/ejServices/api/Chart/WordExport)
 
 It is used to export the Chart control as a Word document.
 
@@ -133,7 +133,7 @@ $("#chartcontainer").ejChart(
 
 ## PdfExport
 
-[POST/Api/Chart/PdfExport](http://js.syncfusion.com/demos/ejServices/api/Chart/PdfExport)
+[POST] [/Api/Chart/PdfExport](http://js.syncfusion.com/demos/ejServices/api/Chart/PdfExport)
 
 It is used to export the Chart control as a PDF document.
 
@@ -164,7 +164,7 @@ $("#chartcontainer").ejChart(
 
 ## ImageExport
 
-[POST/Api/Chart/ImageExport](http://js.syncfusion.com/demos/ejServices/api/Chart/ImageExport)
+[POST] [/Api/Chart/ImageExport](http://js.syncfusion.com/demos/ejServices/api/Chart/ImageExport)
 
 It is used to export the chart control as an image (PNG/JPG).
 
