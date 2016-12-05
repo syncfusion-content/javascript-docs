@@ -9,7 +9,7 @@ keywords: fileexplorer, ejfileexplorer, syncfusion, fileexplorer webapi
 
 ## FileOperations
 
-[POST/Api/FileExplorer/FileOperations](http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations)
+ [POST] [/Api/FileExplorer/FileOperations](http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations)
 
 It helps to handle the FileExplorer operations like Read, Upload, Download, GetDetails, Rename, Remove etc.
 
@@ -118,7 +118,7 @@ $.ajax({
 
 ## FileOperationsCors
 
-[GET/Api/FileExplorer/FileOperationsCors](http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperationsCors)
+ [GET] [/Api/FileExplorer/FileOperationsCors](http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperationsCors)
 
 It helps to handle the FileExplorer operations in cross origin.
 

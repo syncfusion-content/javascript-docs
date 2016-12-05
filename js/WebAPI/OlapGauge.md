@@ -9,7 +9,7 @@ keywords: PivotGauge , syncfusion, PivotGauge webapi
 
 ## Initialize
 
-[POST/Api/OlapGauge/Initialize](http://js.syncfusion.com/demos/ejServices/api/OlapGauge/Initialize)
+ [POST] [/Api/OlapGauge/Initialize](http://js.syncfusion.com/demos/ejServices/api/OlapGauge/Initialize)
 
 It fetches the OLAP data required to render the PivotGauge control from server-end.
 

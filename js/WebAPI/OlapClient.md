@@ -9,7 +9,7 @@ keywords: PivotClient, syncfusion, PivotClient webapi
 
 ## Initialize
 
-[POST/Api/OlapClient/Initialize](http://js.syncfusion.com/demos/ejServices/api/OlapClient/Initialize)
+ [POST] [/Api/OlapClient/Initialize](http://js.syncfusion.com/demos/ejServices/api/OlapClient/Initialize)
 
 It fetches the data required to render the PivotClient control initially.
 
@@ -43,7 +43,7 @@ public Dictionary<string, object> Initialize(Dictionary<string, object> jsonResu
 
 ## InitializeGrid
 
-[POST/Api/OlapClient/InitializeGrid](http://js.syncfusion.com/demos/ejServices/api/OlapClient/InitializeGrid)
+ [POST] [/Api/OlapClient/InitializeGrid](http://js.syncfusion.com/demos/ejServices/api/OlapClient/InitializeGrid)
 
 It fetches the data required to render the PivotGrid control inside PivotClient.
 
@@ -78,7 +78,7 @@ public Dictionary<string, object> InitializeGrid(Dictionary<string, object> json
 
 ## InitializeChart
 
-[POST/Api/OlapClient/InitializeChart](http://js.syncfusion.com/demos/ejServices/api/OlapClient/InitializeChart)
+ [POST] [/Api/OlapClient/InitializeChart](http://js.syncfusion.com/demos/ejServices/api/OlapClient/InitializeChart)
 
 It fetches the data required to render the PivotChart control inside PivotClient.
 
@@ -111,7 +111,7 @@ public Dictionary<string, object> InitializeChart(Dictionary<string, object> jso
 
 ## InitializeTreeMap
 
-[POST/Api/OlapClient/InitializeTreeMap](http://js.syncfusion.com/demos/ejServices/api/OlapClient/InitializeTreeMap)
+ [POST] [/Api/OlapClient/InitializeTreeMap](http://js.syncfusion.com/demos/ejServices/api/OlapClient/InitializeTreeMap)
 
 It fetches the data required to render the PivotTreeMap control inside PivotClient.
 
@@ -146,7 +146,7 @@ public Dictionary<string, object> InitializeTreeMap(Dictionary<string, object> j
 
 ## DrillChart
 
-[POST/Api/OlapClient/DrillChart](http://js.syncfusion.com/demos/ejServices/api/OlapClient/DrillChart
+ [POST] [/Api/OlapClient/DrillChart](http://js.syncfusion.com/demos/ejServices/api/OlapClient/DrillChart
 
 It fetches the drilled data required to render the PivotChart on drilling.
 
@@ -183,7 +183,7 @@ public Dictionary<string, object> DrillChart(Dictionary<string, object> jsonResu
 
 ## DrillTreeMap
 
-[POST/Api/OlapClient/DrillTreeMap](http://js.syncfusion.com/demos/ejServices/api/OlapClient/DrillTreeMap)
+ [POST] [/Api/OlapClient/DrillTreeMap](http://js.syncfusion.com/demos/ejServices/api/OlapClient/DrillTreeMap)
 
 It fetches the drilled data required to render the PivotTreeMap on drilling.
 
@@ -219,7 +219,7 @@ public Dictionary<string, object> DrillTreeMap(Dictionary<string, object> jsonRe
 
 ## DrillGrid
 
-[POST/Api/OlapClient/DrillGrid](http://js.syncfusion.com/demos/ejServices/api/OlapClient/DrillGrid)
+ [POST] [/Api/OlapClient/DrillGrid](http://js.syncfusion.com/demos/ejServices/api/OlapClient/DrillGrid)
 
 It fetches the drilled data required to render the PivotGrid on drilling.
 
@@ -257,7 +257,7 @@ public Dictionary<string, object> DrillGrid(Dictionary<string, object> jsonResul
 
 ## FilterElement
 
-[POST/Api/OlapClient/FilterElement](http://js.syncfusion.com/demos/ejServices/api/OlapClient/FilterElement)
+ [POST] [/Api/OlapClient/FilterElement](http://js.syncfusion.com/demos/ejServices/api/OlapClient/FilterElement)
 
 It fetches the filtered data required to render the control after performing filtering.
 
@@ -293,7 +293,7 @@ public Dictionary<string, object> FilterElement(Dictionary<string, object> jsonR
 
 ## RemoveSplitButton
 
-[POST/Api/OlapClient/RemoveSplitButton](http://js.syncfusion.com/demos/ejServices/api/OlapClient/RemoveSplitButton)
+ [POST] [/Api/OlapClient/RemoveSplitButton](http://js.syncfusion.com/demos/ejServices/api/OlapClient/RemoveSplitButton)
 
 It fetches the drilled data required to render the PivotChart on removing an item from report.
 
@@ -329,7 +329,7 @@ public Dictionary<string, object> RemoveSplitButton(Dictionary<string, object> j
 
 ## FetchMemberTreeNodes
 
-[POST/Api/OlapClient/FetchMemberTreeNodes](http://js.syncfusion.com/demos/ejServices/api/OlapClient/FetchMemberTreeNodes)
+ [POST] [/Api/OlapClient/FetchMemberTreeNodes](http://js.syncfusion.com/demos/ejServices/api/OlapClient/FetchMemberTreeNodes)
 
 It fetches the details of the members to render the member editor dialog.
 
@@ -363,7 +363,7 @@ public Dictionary<string, object> FetchMemberTreeNodes(Dictionary<string, object
 
 ## DropNode
 
-[POST/Api/OlapClient/DropNode](http://js.syncfusion.com/demos/ejServices/api/OlapClient/DropNode)
+ [POST] [/Api/OlapClient/DropNode](http://js.syncfusion.com/demos/ejServices/api/OlapClient/DropNode)
 
 It fetches the data required to render the control after drag and drop action.
 
@@ -400,7 +400,7 @@ public Dictionary<string, object> DropNode(Dictionary<string, object> jsonResult
 
 ## CubeChange
 
-[POST/Api/OlapClient/CubeChange](http://js.syncfusion.com/demos/ejServices/api/OlapClient/CubeChange)
+ [POST] [/Api/OlapClient/CubeChange](http://js.syncfusion.com/demos/ejServices/api/OlapClient/CubeChange)
 
 It fetches the data required to render the control on changing the cube.
 
@@ -433,7 +433,7 @@ public Dictionary<string, object> CubeChange(Dictionary<string, object> jsonResu
 
 ## MeasureGroup
 
-[POST/Api/OlapClient/MeasureGroup](http://js.syncfusion.com/demos/ejServices/api/OlapClient/MeasureGroup)
+ [POST] [/Api/OlapClient/MeasureGroup](http://js.syncfusion.com/demos/ejServices/api/OlapClient/MeasureGroup)
 
 It fetches the data required to render the control on changing the measure group.
 
@@ -465,7 +465,7 @@ public Dictionary<string, object> MeasureGroup(Dictionary<string, object> jsonRe
 
 ## ToolbarOperations
 
-[POST/Api/OlapClient/ToolbarOperations](http://js.syncfusion.com/demos/ejServices/api/OlapClient/ToolbarOperations)
+ [POST] [/Api/OlapClient/ToolbarOperations](http://js.syncfusion.com/demos/ejServices/api/OlapClient/ToolbarOperations)
 
 It fetches the data required to render the control on performing toolbar operations.
 
@@ -506,7 +506,7 @@ public Dictionary<string, object> ToolbarOperations(Dictionary<string, object> j
 
 ## ExpandMember
 
-[POST/Api/OlapClient/ExpandMember](http://js.syncfusion.com/demos/ejServices/api/OlapClient/ExpandMember)
+ [POST] [/Api/OlapClient/ExpandMember](http://js.syncfusion.com/demos/ejServices/api/OlapClient/ExpandMember)
 
 It fetches the children nodes on expanding a node in Member Editor.
 
@@ -548,7 +548,7 @@ public Dictionary<string, object> ExpandMember(Dictionary<string, object> jsonRe
 
 ## UpdateReport
 
-[POST/Api/OlapClient/UpdateReport](http://js.syncfusion.com/demos/ejServices/api/OlapClient/UpdateReport)
+ [POST] [/Api/OlapClient/UpdateReport](http://js.syncfusion.com/demos/ejServices/api/OlapClient/UpdateReport)
 
 It updates the report in server side.
 
@@ -581,7 +581,7 @@ public Dictionary<string, object> UpdateReport(Dictionary<string, object> jsonRe
 
 ## SaveReportToDB
 
-[POST/Api/OlapClient/SaveReportToDB](http://js.syncfusion.com/demos/ejServices/api/OlapClient/SaveReportToDB)
+ [POST] [/Api/OlapClient/SaveReportToDB](http://js.syncfusion.com/demos/ejServices/api/OlapClient/SaveReportToDB)
 
 It saves the current report to database with the specified name.
 
@@ -640,7 +640,7 @@ public Dictionary<string, object> SaveReportToDB(Dictionary<string, object> json
 
 ## FetchReportListFromDB
 
-[POST/Api/OlapClient/FetchReportListFromDB](http://js.syncfusion.com/demos/ejServices/api/OlapClient/FetchReportListFromDB)
+ [POST] [/Api/OlapClient/FetchReportListFromDB](http://js.syncfusion.com/demos/ejServices/api/OlapClient/FetchReportListFromDB)
 
 It fetches the list of names of reports stored in database.
 
@@ -683,7 +683,7 @@ public Dictionary<string, object> FetchReportListFromDB(Dictionary<string, objec
 
 ## LoadReportFromDB
 
-[POST/Api/OlapClient/LoadReportFromDB](http://js.syncfusion.com/demos/ejServices/api/OlapClient/LoadReportFromDB)
+ [POST] [/Api/OlapClient/LoadReportFromDB](http://js.syncfusion.com/demos/ejServices/api/OlapClient/LoadReportFromDB)
 
 It loads the report with specified name from the database to the control.
 
@@ -746,7 +746,7 @@ public Dictionary<string, object> LoadReportFromDB(Dictionary<string, object> js
 {% endhighlight %}
 ## Export
 
-[POST/Api/OlapClient/Export](http://js.syncfusion.com/demos/ejServices/api/OlapClient/Export)
+ [POST] [/Api/OlapClient/Export](http://js.syncfusion.com/demos/ejServices/api/OlapClient/Export)
 
 It exports the PivotGrid or PivotChart or both to the selected format.
 
@@ -779,7 +779,7 @@ public void Export()
 
 ## ExportOlapClient
 
-[POST/Api/OlapClient/ExportOlapClient](http://js.syncfusion.com/demos/ejServices/api/OlapClient/ExportOlapClient)
+ [POST] [/Api/OlapClient/ExportOlapClient](http://js.syncfusion.com/demos/ejServices/api/OlapClient/ExportOlapClient)
 
 It exports the PivotGrid or PivotChart or both with OLAP data to the selected format.
 
@@ -812,7 +812,7 @@ public void ExportOlapClient()
 
 ## GetMDXQuery
 
-[POST/Api/OlapClient/GetMDXQuery](http://js.syncfusion.com/demos/ejServices/api/OlapClient/GetMDXQuery)
+ [POST] [/Api/OlapClient/GetMDXQuery](http://js.syncfusion.com/demos/ejServices/api/OlapClient/GetMDXQuery)
 
 It retrieves the MDX query formed to fetch the data at that instant.
 
@@ -844,7 +844,7 @@ public string GetMDXQuery(Dictionary<string, object> jsonResult)
 
 ## ToggleAxis
 
-[POST/Api/OlapClient/ToggleAxis](http://js.syncfusion.com/demos/ejServices/api/OlapClient/ToggleAxis)
+ [POST] [/Api/OlapClient/ToggleAxis](http://js.syncfusion.com/demos/ejServices/api/OlapClient/ToggleAxis)
 
 It fetches the data after interchanging the elements in row and column axes.
 
@@ -880,7 +880,7 @@ public Dictionary<string, object> ToggleAxis(Dictionary<string, object> jsonResu
 
 ## Paging
 
-[POST/Api/OlapClient/Paging](http://js.syncfusion.com/demos/ejServices/api/OlapClient/Paging)
+ [POST] [/Api/OlapClient/Paging](http://js.syncfusion.com/demos/ejServices/api/OlapClient/Paging)
 
 It fetches the data on navigating between pages in PivotClient with OLAP data.
 

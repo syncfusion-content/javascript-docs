@@ -9,7 +9,7 @@ keywords: uploadbox, ejUploadbox, syncfusion, uploadbox webapi
 
 ## Save
 
-[POST/Api/UploadBox/Save](http://js.syncfusion.com/demos/ejservices/api/UploadBox/Save)
+ [POST] [/Api/UploadBox/Save](http://js.syncfusion.com/demos/ejservices/api/UploadBox/Save)
 
 It is used for storing the uploaded file.
 
@@ -42,7 +42,7 @@ $(function () {
 
 ## Remove
 
-[POST/Api/UploadBox/Remove](http://js.syncfusion.com/demos/ejservices/api/UploadBox/Remove)
+ [POST] [/Api/UploadBox/Remove](http://js.syncfusion.com/demos/ejservices/api/UploadBox/Remove)
 
 It is used for removing the stored files from server.
 

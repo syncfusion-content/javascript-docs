@@ -9,7 +9,7 @@ keywords: PivotChart , syncfusion, PivotChart webapi
 
 ## Initialize
 
-[POST/Api/OlapChart/Initialize](http://js.syncfusion.com/demos/ejServices/api/OlapChart/Initialize)
+ [POST] [/Api/OlapChart/Initialize](http://js.syncfusion.com/demos/ejServices/api/OlapChart/Initialize)
 
 It fetches the OLAP data required to initialize the PivotChart from server-end.
 
@@ -42,7 +42,7 @@ public Dictionary<string, object> Initialize(Dictionary<string, object> jsonResu
 
 ## Drill
 
-[POST/Api/OlapChart/Drill](http://js.syncfusion.com/demos/ejServices/api/OlapChart/Drill)
+ [POST] [/Api/OlapChart/Drill](http://js.syncfusion.com/demos/ejServices/api/OlapChart/Drill)
 
 It fetches the drilled OLAP data required to render the PivotChart control from server-end.
 
@@ -77,7 +77,7 @@ public Dictionary<string, object> Drill(Dictionary<string, object> jsonResult)
 
 ## Export
 
-[POST/Api/OlapChart/Export](http://js.syncfusion.com/demos/ejServices/api/OlapChart/Export)
+ [POST] [/Api/OlapChart/Export](http://js.syncfusion.com/demos/ejServices/api/OlapChart/Export)
 
 It exports the PivotChart control at the instant to the specified format.
 
@@ -109,7 +109,7 @@ public void Export()
 
 ## ExcelExport
 
-[POST/Api/OlapChart/ExcelExport](http://js.syncfusion.com/demos/ejServices/api/OlapChart/ExcelExport)
+ [POST] [/Api/OlapChart/ExcelExport](http://js.syncfusion.com/demos/ejServices/api/OlapChart/ExcelExport)
 
 It exports the PivotChart control at the instant to an Excel document.
 
@@ -142,7 +142,7 @@ public void ExcelExport()
 
 ## WordExport
 
-[POST/Api/OlapChart/WordExport](http://js.syncfusion.com/demos/ejServices/api/OlapChart/WordExport)
+ [POST] [/Api/OlapChart/WordExport](http://js.syncfusion.com/demos/ejServices/api/OlapChart/WordExport)
 
 It exports the PivotChart control at the instant to a Word document.
 
@@ -175,7 +175,7 @@ public void WordExport()
 
 ## PdfExport
 
-[POST/Api/OlapChart/PdfExport](http://js.syncfusion.com/demos/ejServices/api/OlapChart/PdfExport)
+ [POST] [/Api/OlapChart/PdfExport](http://js.syncfusion.com/demos/ejServices/api/OlapChart/PdfExport)
 
 It exports the PivotChart control at the instant to a PDF document.
 
@@ -208,7 +208,7 @@ public void PdfExport()
 
 ## ImageExport
 
-[POST/Api/OlapChart/ImageExport](http://js.syncfusion.com/demos/ejServices/api/OlapChart/ImageExport)
+ [POST] [/Api/OlapChart/ImageExport](http://js.syncfusion.com/demos/ejServices/api/OlapChart/ImageExport)
 
 It exports the PivotChart control at the instant as an Image in specified format.
 

@@ -20,7 +20,7 @@ The SpellCheck control provides the support to ignore the words from an error wo
 
 ### Ignore
 
-The [ignore](/js/api/ejspellcheck#methods:ignore) option is used to ignore a specific word once from the given input string. 
+The [ignore](/api/js/ejspellcheck#methods:ignore) option is used to ignore a specific word once from the given input string. 
 
 The following code example describes the above method implementation.
 
@@ -45,7 +45,7 @@ The following code example describes the above method implementation.
 
 ### Ignore all
 
-The [ignore all](/js/api/ejspellcheck#methods:ignoreall) option is used to ignore all the error word occurrences from the given input string.
+The [ignore all](/api/js/ejspellcheck#methods:ignoreall) option is used to ignore all the error word occurrences from the given input string.
 
 The following code example describes the way of using ignore all method.
 
@@ -70,7 +70,7 @@ The following code example describes the way of using ignore all method.
 
 ### Word collection to ignore
 
-The [ignore words](/js/api/ejspellcheck#members:ignorewords) option is used to ignore the collection of words from an error word checking. You can pass the technical terms, brand names which is not present in the dictionary file to this property "ignoreWords" as shown in the following code example and then while checking the spelling these passed words are considered as a correct word.
+The [ignore words](/api/js/ejspellcheck#members:ignorewords) option is used to ignore the collection of words from an error word checking. You can pass the technical terms, brand names which is not present in the dictionary file to this property "ignoreWords" as shown in the following code example and then while checking the spelling these passed words are considered as a correct word.
 
 {% highlight html %}
 
@@ -93,14 +93,14 @@ The [ignore words](/js/api/ejspellcheck#members:ignorewords) option is used to i
 
 ## Ignore settings
 
-The [ignore settings](/js/api/ejspellcheck#members:ignoresettings) helps to ignore the uppercase, mixed case words, alphanumeric words, file path and email addresses from the error word checking. Ignore settings contains the following options to ignore the words based on their category.
+The [ignore settings](/api/js/ejspellcheck#members:ignoresettings) helps to ignore the uppercase, mixed case words, alphanumeric words, file path and email addresses from the error word checking. Ignore settings contains the following options to ignore the words based on their category.
 
-* [ignoreAlphaNumericWords](/js/api/ejspellcheck#members:ignoresettings-ignorealphanumericwords) - ignoring the alpha numeric words from an error word consideration.
-* [ignoreUpperCase](/js/api/ejspellcheck#members:ignoresettings-ignoreuppercase) - ignoring the upper case words from an error word consideration.
-* [ignoreMixedCaseWords](/js/api/ejspellcheck#members:ignoresettings-ignoremixedcasewords) - ignoring the mixed case words from an error word consideration.
-* [ignoreFileNames](/js/api/ejspellcheck#members:ignoresettings-ignorefilenames) - ignoring the file address path from an error word consideration.
-* [ignoreUrl](/js/api/ejspellcheck#members:ignoresettings-ignoreurl) - ignoring the url links from an error word consideration.
-* [ignoreEmailAddress]((/js/api/ejspellcheck#members:ignoresettings-ignoreemailaddress)) - ignoring the email address from an error word consideration.
+* [ignoreAlphaNumericWords](/api/js/ejspellcheck#members:ignoresettings-ignorealphanumericwords) - ignoring the alpha numeric words from an error word consideration.
+* [ignoreUpperCase](/api/js/ejspellcheck#members:ignoresettings-ignoreuppercase) - ignoring the upper case words from an error word consideration.
+* [ignoreMixedCaseWords](/api/js/ejspellcheck#members:ignoresettings-ignoremixedcasewords) - ignoring the mixed case words from an error word consideration.
+* [ignoreFileNames](/api/js/ejspellcheck#members:ignoresettings-ignorefilenames) - ignoring the file address path from an error word consideration.
+* [ignoreUrl](/api/js/ejspellcheck#members:ignoresettings-ignoreurl) - ignoring the url links from an error word consideration.
+* [ignoreEmailAddress]((/api/js/ejspellcheck#members:ignoresettings-ignoreemailaddress)) - ignoring the email address from an error word consideration.
 
 The following code example uses to enable the checking of all the words formed with alphanumeric, uppercase, mixed case words and file paths and email addresses.  
 
@@ -136,7 +136,7 @@ The SpellCheck control provides the support to change an error words from its po
 
 ### Change
 
-The [change](/js/api/ejspellcheck#methods:change) option is used to replace an error word occurrences once from the given input string with the correct word.
+The [change](/api/js/ejspellcheck#methods:change) option is used to replace an error word occurrences once from the given input string with the correct word.
 
 The following code example describes the behavior of change method.
 
@@ -162,7 +162,7 @@ The following code example describes the behavior of change method.
 
 ### Change all
 
-The [change all](/js/api/ejspellcheck#methods:changeall) option is used to replace all the occurrences of an error word with the correct word(selected from the suggestions list) from the given inputs string.
+The [change all](/api/js/ejspellcheck#methods:changeall) option is used to replace all the occurrences of an error word with the correct word(selected from the suggestions list) from the given inputs string.
 
 The following code example uses to change all the error word occurrences.
 

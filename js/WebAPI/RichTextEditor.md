@@ -9,7 +9,7 @@ keywords: RTE, ejRTE, syncfusion, RTE webapi
 
 ## Import
 
-[POST/Api/RTE/Import](http://js.syncfusion.com/demos/ejservices/api/RTE/Import)
+ [POST] [/Api/RTE/Import](http://js.syncfusion.com/demos/ejservices/api/RTE/Import)
 
 It is used to Import a Word document into RTE 
 
@@ -50,7 +50,7 @@ $("#rteExport").ejRTE({
 
 ## WordExport
 
-[POST/Api/RTE/WordExport](http://js.syncfusion.com/demos/ejservices/api/RTE/WordExport)
+ [POST] [/Api/RTE/WordExport](http://js.syncfusion.com/demos/ejservices/api/RTE/WordExport)
 
 It is used for exporting the contents of RTE into a Word document.
 
@@ -88,7 +88,7 @@ $("#rteExport").ejRTE({
 
 ## PdfExport
 
-[POST/Api/RTE/PdfExport](http://js.syncfusion.com/demos/ejservices/api/RTE/PdfExport)
+ [POST] [/Api/RTE/PdfExport](http://js.syncfusion.com/demos/ejservices/api/RTE/PdfExport)
 
 It is used for exporting the contents of RTE into a PDF document.
 

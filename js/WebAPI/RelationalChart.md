@@ -9,7 +9,7 @@ keywords: RelationalChart, syncfusion, RelationalChart webapi
 
 ## Initialize
 
-[POST/Api/RelationalChart/Initialize](http://js.syncfusion.com/demos/ejServices/api/RelationalChart/Initialize)
+ [POST] [/Api/RelationalChart/Initialize](http://js.syncfusion.com/demos/ejServices/api/RelationalChart/Initialize)
 
 It fetches the Relational data required to initialize the PivotChart from server-end.
 
@@ -41,7 +41,7 @@ public Dictionary<string, object> Initialize(Dictionary<string, object> jsonResu
 
 ## Drill
 
-[POST/Api/RelationalChart/Drill](http://js.syncfusion.com/demos/ejServices/api/RelationalChart/Drill)
+ [POST] [/Api/RelationalChart/Drill](http://js.syncfusion.com/demos/ejServices/api/RelationalChart/Drill)
 
 It fetches the drilled Relational data required to render the PivotChart control from server-end.
 
@@ -75,7 +75,7 @@ public Dictionary<string, object> Drill(Dictionary<string, object> jsonResult)
 
 ## Export
 
-[POST/Api/RelationalChart/Export](http://js.syncfusion.com/demos/ejServices/api/RelationalChart/Export)
+ [POST] [/Api/RelationalChart/Export](http://js.syncfusion.com/demos/ejServices/api/RelationalChart/Export)
 
 It exports the PivotChart control at the instant to the specified format.
 

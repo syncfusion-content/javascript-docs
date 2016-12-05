@@ -9,7 +9,7 @@ keywords: ejTreeGrid,TreeGrid, syncfusion,ejTreeGrid webapi
 
 ## PdfExport
 
-[POST/Api/TreeGrid/PdfExport](http://js.syncfusion.com/demos/ejServices/api/TreeGrid/PdfExport)
+ [POST] [/Api/TreeGrid/PdfExport](http://js.syncfusion.com/demos/ejServices/api/TreeGrid/PdfExport)
 
 It is used to export the TreeGrid data to PDF file.
 
@@ -62,7 +62,7 @@ function toolbarclick(args) {
 
 ## ExcelExport
 
-[POST/Api/TreeGrid/ExcelExport](http://js.syncfusion.com/demos/ejServices/api/TreeGrid/ExcelExport)
+ [POST] [/Api/TreeGrid/ExcelExport](http://js.syncfusion.com/demos/ejServices/api/TreeGrid/ExcelExport)
 
 It is used to export the TreeGrid data to Excel file.
 
