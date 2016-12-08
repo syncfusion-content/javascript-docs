@@ -9,7 +9,7 @@ keywords: Chart, ejChart, syncfusion, ejChart webapi
 
 ## Export
 
-[POST/Api/Chart/Export](http://js.syncfusion.com/demos/ejServices/api/Chart/Export)
+[POST] [/Api/Chart/Export](http://js.syncfusion.com/demos/ejServices/api/Chart/Export)
 
 It is used to export the Chart control to the specified format.
 
