@@ -15,7 +15,7 @@ The details of WCF Service reference has been shown in the below table.
 |  WCF | Description  |
 |---|---|
 |[Northwind Data Service for Grid](WCF/Northwind#grid)|It is used to retrieve the records from “Orders” and "Customers" table in Remote Data Service.|
-|[Northwind Data Service for Kanban](/WCF/Northwind#kanban)|It is used to retrieve the records from “Tasks” table in Remote Data Service.|
+|[Northwind Data Service for Kanban](wcf/northwind#kanban)|It is used to retrieve the records from “Tasks” table in Remote Data Service.|
 
 ### PivotChart (Relational)
 

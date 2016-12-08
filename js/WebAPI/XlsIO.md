@@ -2,14 +2,14 @@
 layout: post
 title: webAPI reference for XlsIO
 description: webAPI reference for XlsIO
-documentation: API
-platform: js-webapi
+documentation: ug
+platform: js
 keywords: XlsIO, syncfusion, excel webapi
 ---
 
 ## CreateDocument
 
-[POST&nbsp;&nbsp;/Api/XlsIO/CreateDocument](http://js.syncfusion.com/demos/ejservices/api/XlsIO/CreateDocument)
+[POST] [/Api/XlsIO/CreateDocument](http://js.syncfusion.com/demos/ejservices/api/XlsIO/CreateDocument)
 
 To generate an Excel document format like XLS, XLSX, CSV, Excel Template, Excel Macro Enabled Template.
 
@@ -29,7 +29,7 @@ Content-Type: Application/x-msexcel
 
 ### Code example 
 
-```javascript
+{% highlight js %}
 
 URL: http://js.syncfusion.com/demos/ejservices/api/XlsIO/CreateDocument
 
@@ -44,13 +44,14 @@ URL: http://js.syncfusion.com/demos/ejservices/api/XlsIO/CreateDocument
             form.submit();
          }
 
-```
+{% endhighlight %}
+
 > Using the above code example we can generate the Excel document with different formats.
 
 
 ## WriteFormula
 
-[POST&nbsp;&nbsp;/Api/XlsIO/WriteFormula](http://js.syncfusion.com/demos/ejservices/api/XlsIO/WriteFormula)
+[POST] [/Api/XlsIO/WriteFormula](http://js.syncfusion.com/demos/ejservices/api/XlsIO/WriteFormula)
 
 Formulas are entries in Excel that have an equation that calculates the value to be displayed. This method will generate an Excel document with different formulae.  
 
@@ -62,7 +63,7 @@ Content-Type: Application/x-msexcel
 
 ### Code example 
 
-```javascript
+{% highlight js %}
 
 URL: http://js.syncfusion.com/demos/ejservices/api/XlsIO/WriteFormula
 
@@ -74,13 +75,14 @@ URL: http://js.syncfusion.com/demos/ejservices/api/XlsIO/WriteFormula
          }
          }
 
-```
+{% endhighlight %}
+
 > Using the above code example we can generate the Excel document with different formulae.
 
 
 ## ReadFormula
 
-[POST&nbsp;&nbsp;/Api/XlsIO/ReadFormula](http://js.syncfusion.com/demos/ejservices/api/XlsIO/ReadFormula)
+[POST] [/Api/XlsIO/ReadFormula](http://js.syncfusion.com/demos/ejservices/api/XlsIO/ReadFormula)
 
 To read the formula string as well as value from the Excel document.
 
@@ -94,7 +96,7 @@ Response:  Returns the string combination of value and formula with comma.
 
 ### Code example 
 
-```javascript
+{% highlight js %}
 
 URL: http://js.syncfusion.com/demos/ejservices/api/XlsIO/ReadFormula
 
@@ -110,13 +112,14 @@ URL: http://js.syncfusion.com/demos/ejservices/api/XlsIO/ReadFormula
                     },
             });     
 
-```
+{% endhighlight %}
+
 > Using the above code we can get the string combination of value and formula with comma.
 
 
 ## CreateChart
 
-[POST&nbsp;&nbsp;/Api/XlsIO/CreateChart](http://js.syncfusion.com/demos/ejservices/api/XlsIO/CreateChart)
+[POST] [/Api/XlsIO/CreateChart](http://js.syncfusion.com/demos/ejservices/api/XlsIO/CreateChart)
 
 To generate an embedded chart Excel document with different formats.
 
@@ -136,7 +139,7 @@ Content-Type: Application/x-msexcel
 
 ### Code example 
 
-```javascript
+{% highlight js %}
 
 URL: http://js.syncfusion.com/demos/ejservices/api/XlsIO/CreateChart
 
@@ -151,13 +154,14 @@ URL: http://js.syncfusion.com/demos/ejservices/api/XlsIO/CreateChart
             form.submit();
          }
 
-```
+{% endhighlight %}
+
 > Using the above code example we can generate an embedded chart Excel document with different formats.
 
 
 ## ImportDataObject
 
-[POST&nbsp;&nbsp;/Api/XlsIO/ImportDataObject](http://js.syncfusion.com/demos/ejservices/api/XlsIO/ImportDataObject)
+[POST] [/Api/XlsIO/ImportDataObject](http://js.syncfusion.com/demos/ejservices/api/XlsIO/ImportDataObject)
 
 To import data directly from various objects like DataTable, Business Objects, etc to an Excel document.
 
@@ -177,7 +181,7 @@ Content-Type: Application/x-msexcel
 
 ### Code example 
 
-```javascript
+{% highlight js %}
 
 URL: http://js.syncfusion.com/demos/ejservices/api/XlsIO/ImportDataObject
 
@@ -192,13 +196,14 @@ URL: http://js.syncfusion.com/demos/ejservices/api/XlsIO/ImportDataObject
             form.submit();
          }
 
-```
+{% endhighlight %}
+
 > Using the above code example we can generate an Excel document with imported data.
 
 
 ## ApplyTemplateMarker
 
-[POST&nbsp;&nbsp;/Api/XlsIO/ApplyTemplateMarker](http://js.syncfusion.com/demos/ejservices/api/XlsIO/ApplyTemplateMarker)
+[POST] [/Api/XlsIO/ApplyTemplateMarker](http://js.syncfusion.com/demos/ejservices/api/XlsIO/ApplyTemplateMarker)
 
 Import data to an Excel document using [template marker](https://help.syncfusion.com/file-formats/xlsio/working-with-template-markers).
 
@@ -218,7 +223,7 @@ Content-Type: Application/x-msexcel
 
 ### Code example 
 
-```javascript
+{% highlight js %}
 
 URL: http://js.syncfusion.com/demos/ejservices/api/XlsIO/ApplyTemplateMarker
 
@@ -237,13 +242,14 @@ URL: http://js.syncfusion.com/demos/ejservices/api/XlsIO/ApplyTemplateMarker
             form.submit();
          }
 
-```
+{% endhighlight %}
+
 > Using the above code example we can generate an Excel document with imported data using template marker.
 
 
 ## InputTemplate
 
-[POST&nbsp;&nbsp;/Api/XlsIO/InputTemplate](http://js.syncfusion.com/demos/ejservices/api/XlsIO/InputTemplate)
+[POST] [/Api/XlsIO/InputTemplate](http://js.syncfusion.com/demos/ejservices/api/XlsIO/InputTemplate)
 
 To get an Excel template document used for various template marker types.
 
@@ -263,7 +269,7 @@ Content-Type: Application/x-msexcel
 
 ### Code example 
 
-```javascript
+{% highlight js %}
 
 URL: http://js.syncfusion.com/demos/ejservices/api/XlsIO/ApplyInputTemplate
 
@@ -278,5 +284,6 @@ URL: http://js.syncfusion.com/demos/ejservices/api/XlsIO/ApplyInputTemplate
             form.submit();
          }
 
-```
+{% endhighlight %}
+
 > Using the above code example we can generate an Excel template document for various template marker.
