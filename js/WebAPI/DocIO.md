@@ -417,7 +417,7 @@ $('#viewtemplate').click(function () {
 
 ## ExecuteNestedMailmerge
 
-[[POST] /Api/DocIO/ExecuteNestedMailmerge](http://js.syncfusion.com/demos/ejServices/api/DocIO/ExecuteNestedMailmerge)
+[POST] [/Api/DocIO/ExecuteNestedMailmerge](http://js.syncfusion.com/demos/ejServices/api/DocIO/ExecuteNestedMailmerge)
 
 It is used to perform Mail merge for nested groups in Word Document.
 
