@@ -140,6 +140,7 @@ public Dictionary<string, object> DropNode(string action, string dropType, strin
 }
 
 {% endhighlight %} 
+
 ## Filtering
 
  [POST] [/WCF/PivotGrid/Filtering](http://js.syncfusion.com/demos/ejServices/wcf/PivotGrid/Olap.svc)
@@ -418,6 +419,7 @@ public Dictionary<string, object> SaveReport(string reportName, string operation
 }
 
 {% endhighlight %} 
+
 ## LoadReportFromDB
 
  [POST] [/WCF/PivotGrid/LoadReportFromDB](http://js.syncfusion.com/demos/ejServices/wcf/PivotGrid/Olap.svc)

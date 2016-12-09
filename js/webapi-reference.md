@@ -38,14 +38,21 @@ The details of WebAPI has been shown in the below table.
 
 | WebAPI | Description |
 |---|---|
+|[GenerateWordDocument](WebAPI\DocIO#generateworddocument)|It is used to create a simple Word document with text, image and tables.|
 |[ConvertToPDF](WebAPI\DocIO#converttopdf)|It is used to generate the PDF document.|
+|[ApplyTextFormat](WebAPI\DocIO#applytextformat)|It is used to generate Word Document with various text formats such as character/text level formatting, paragraph level formatting and list level formatting.|
+|[GetInvoiceTemplate](WebAPI\DocIO#getinvoicetemplate)|It is used to get invoice template Word document.|
+|[GenerateInvoice](WebAPI\DocIO#generateinvoice)|It is used to generate sales invoice report using Mail merge functionality.|
+|[GetMailmergeTemplate](WebAPI\DocIO#getmailmergetemplate)|It is used to get Mail merge template Word Document.|
+|[ExecuteNestedMailmerge](WebAPI\DocIO#executenestedmailmerge)|It is used to perform Mail merge for nested groups in Word Document.|
+
 
 ### DocumentEditor
 
 | WebAPI | Description |
 |---|---|
 |[Import](WebAPI\DocumentEditor#import)|It loads the document from specified path in DocumentEditor.|
-|[FileUpload](WebAPI\DocumentEditor#fileupload)|It loads the default document in DocumentEditor.|
+|[LoadDefault](WebAPI\DocumentEditor#loaddefault)|It loads the default document in DocumentEditor.|
 
 ### FileExplorer
 
@@ -120,7 +127,7 @@ The details of WebAPI has been shown in the below table.
 |[FetchMembers](WebAPI\RelationalClient#fetchmembers)|It fetches the details of the members in the selected field on opening member editor.|
 |[DrillChart](WebAPI\RelationalClient#drillchart)|It fetches the drilled data required to render the control on performing drilldown in PivotChart.|
 |[Filtering](WebAPI\RelationalClient#filtering)|It fetches the data required to render the control on performing filtering.|
-|[DropNode](WebAPI\RelationalClient#dropNode)|It fetches the data required to render the control on performing node drop action.|
+|[DropNode](WebAPI\RelationalClient#dropnode)|It fetches the data required to render the control on performing node drop action.|
 |[ToolbarOperations](WebAPI\RelationalClient#toolbaroperations)|It fetches the data required to render the control on performing toolbar operations.|
 |[SaveReportToDB](WebAPI\RelationalClient#savereporttodb)|It saves the current report to database with the specified name.|
 |[Export](WebAPI\RelationalClient#export)|It exports the PivotGrid or PivotChart or both to the selected format.|
@@ -134,7 +141,7 @@ The details of WebAPI has been shown in the below table.
 |[Initialize](WebAPI\OlapClient#initialize)|It fetches the data required to render the PivotClient control initially.|
 |[InitializeGrid](WebAPI\OlapClient#initializegrid)|It fetches the data required to render the PivotGrid control inside PivotClient.|
 |[InitializeChart](WebAPI\OlapClient#initializechart)|It fetches the data required to render the PivotChart control inside PivotClient.|
-|[InitializeTreeMap](WebAPI\OlapClient#initializetreeMap)|It fetches the data required to render the PivotTreeMap control inside PivotClient.|
+|[InitializeTreeMap](WebAPI\OlapClient#initializetreemap)|It fetches the data required to render the PivotTreeMap control inside PivotClient.|
 |[DrillChart](WebAPI\OlapClient#drillchart)|It fetches the drilled data required to render the PivotChart on drilling.|
 |[DrillTreeMap](WebAPI\OlapClient#drilltreemap)|It fetches the drilled data required to render the PivotTreeMap on drilling.|
 |[DrillGrid](WebAPI\OlapClient#drillgrid)|It fetches the drilled data required to render the PivotGrid on drilling.|
@@ -147,7 +154,7 @@ The details of WebAPI has been shown in the below table.
 |[ToolbarOperations](WebAPI\OlapClient#toolbaroperations)|It fetches the data required to render the control on performing toolbar operations.|
 |[ExpandMember](WebAPI\OlapClient#expandmember)|It fetches the children nodes on expanding a node in Member Editor.|
 |[UpdateReport](WebAPI\OlapClient#updatereport)|It updates the report in server side.|
-|[SaveReportToDB](WebAPI\OlapClient#savereportodb)|It saves the current report to database with the specified name.|
+|[SaveReportToDB](WebAPI\OlapClient#savereporttodb)|It saves the current report to database with the specified name.|
 |[FetchReportListFromDB](WebAPI\OlapClient#fetchreportlistfromdb)|It fetches the list of names of reports stored in database.|
 |[LoadReportFromDB](WebAPI\OlapClient#loadreportfromdb)|It loads the report with specified name from the database to the control.|
 |[Export](WebAPI\OlapClient#export)|It exports the PivotGrid or PivotChart or both to the selected format.|
@@ -191,12 +198,12 @@ The details of WebAPI has been shown in the below table.
 |---|---|
 |[Initialize](WebAPI\OlapGrid#initialize)|It fetches the OLAP data required to render the PivotGrid initially from server-end.|
 |[Drill](WebAPI\OlapGrid#drill)|It fetches the OLAP data required to render the PivotGrid control after drilling it.|
-|[DropNode](WebAPI\OlapGrid#dropNode)|It fetches the data required to render the control after performing node drop operation.|
+|[DropNode](WebAPI\OlapGrid#dropnode)|It fetches the data required to render the control after performing node drop operation.|
 |[Filtering](WebAPI\OlapGrid#filtering)|It fetches the OLAP data required to render the control after performing filtering.|
 |[FetchMembers](WebAPI\OlapGrid#fetchmembers)|It fetches the members of the selected hierarchy to render the member editor.|
 |[Paging](WebAPI\OlapGrid#paging)|It fetches the OLAP data required to render the specific page of PivotGrid with paging enabled.|
 |[RemoveButton](WebAPI\OlapGrid#removebutton)|It fetches the data required to render the control after removing a button.|
-|[ExpandMember](WebAPI\OlapGrid#expandmmber)|It fetches the data to render children nodes of a member in Member Editor Tree.|
+|[ExpandMember](WebAPI\OlapGrid#expandmember)|It fetches the data to render children nodes of a member in Member Editor Tree.|
 |[Export](WebAPI\OlapGrid#export)|It is used to export the PivotGrid data to specified format.|
 |[SaveReport](WebAPI\OlapGrid#savereport)|It saves the current report to database with the specified name.|
 |[LoadReportFromDB](WebAPI\OlapGrid#loadreportfromdb)|It loads a report from the database and refreshes the control with it.|
