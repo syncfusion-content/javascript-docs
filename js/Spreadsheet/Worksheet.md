@@ -189,7 +189,7 @@ The following output is displayed as a result of the above code example.
 
 Headers in the spreadsheet are numbered rows and lettered columns in worksheets. It makes ease of view and reference your data. You can dynamically show/hide worksheet header by using one of the following ways,
 
-* Select PAGE LAYOUT tab in the ribbon and uncheck Headings in the Show group.
+* Select PAGE LAYOUT tab in the ribbon and then check or uncheck Headings in the Show group.
 * Show/Hide the worksheet headers using [`showHeadings`](http://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-showheadings "showHeadings") property and [`showHeadings`](http://help.syncfusion.com/api/js/ejspreadsheet#methods:showheadings "showHeadings") method.
 
 The following code example describes the above behavior.
@@ -201,13 +201,9 @@ The following code example describes the above behavior.
 {% highlight javascript %}
 $(function () {
     $("#Spreadsheet").ejSpreadsheet({               
-        loadComplete: "loadComplete"
+        sheets: [{ showHeadings: false }]
     });
 });
-function loadComplete(args) {
-    if (!this.isImport)
-        this.showHeadings(false);
-}
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
@@ -250,7 +246,7 @@ The following output is displayed as a result of the above code example.
 
 Gridlines act as a border like appearance of cells. They are used to distinguish cells on the worksheet. You can dynamically show/hide gridlines by using one of the following ways,
 
-* Select PAGE LAYOUT tab in the ribbon and uncheck Gridlines in the Show group.
+* Select PAGE LAYOUT tab in the ribbon and then check or uncheck Gridlines in the Show group.
 * Show/Hide gridlines in a worksheet using [`showGridlines`](http://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-showgridlines "showGridlines") property and [`showGridlines`](http://help.syncfusion.com/api/js/ejspreadsheet#methods:showgridlines "showGridlines") method.
 
 The following code example describes the above behavior.
