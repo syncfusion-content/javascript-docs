@@ -9,7 +9,7 @@ documentation: ug
 
 # Rows and Columns
 
-Spreadsheet is a tabular format consisting of rows and columns. Rows and columns are used to represent the editing area in Spreadsheet. The intersection point of rows and columns are called as Cells. In that you can perform editing. You have [`rowCount`](http://help.syncfusion.com/api/js/ejspreadsheet#members:rowcount "rowCount") and [`columnCount`](http://help.syncfusion.com/api/js/ejspreadsheet#members:columncount "columnCount") in sheets property for defining the rows and columns count. By default Spreadsheet creates `20` rows and `21` columns. Based on this grid content will be created.
+Spreadsheet is a tabular format consisting of rows and columns. Rows and columns are used to represent the editing area in Spreadsheet. The intersection point of rows and columns are called as cells. In that you can perform editing. You have [`rowCount`](http://help.syncfusion.com/api/js/ejspreadsheet#members:rowcount "rowCount") and [`columnCount`](http://help.syncfusion.com/api/js/ejspreadsheet#members:columncount "columnCount") in sheets property for defining the rows and columns count. By default Spreadsheet creates `20` rows and `21` columns. Based on this grid content will be created.
 
 ## Rows 
 
