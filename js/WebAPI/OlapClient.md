@@ -744,6 +744,7 @@ public Dictionary<string, object> LoadReportFromDB(Dictionary<string, object> js
 }
         
 {% endhighlight %}
+
 ## Export
 
  [POST] [/Api/OlapClient/Export](http://js.syncfusion.com/demos/ejServices/api/OlapClient/Export)
