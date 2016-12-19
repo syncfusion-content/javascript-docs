@@ -1,15 +1,15 @@
 ---
 layout: post
 title: webAPI reference for DocumentEditor
-description: webAPI reference for DocumentEditor
-documentation: webAPI
-platform: js-webapi
+description: webAPI reference for 
+documentation: ug
+platform: js
 keywords: documenteditor,syncfusion,documenteditor webapi
 ---
 
 ## Import
 
-[POST/Api/DocumentEditor/Import](http://js.syncfusion.com/demos/ejServices/api/DocumentEditor/Import)
+ [POST] [/Api/DocumentEditor/Import](http://js.syncfusion.com/demos/ejServices/api/DocumentEditor/Import)
 
 It loads the document from specified path in DocumentEditor.
 
@@ -31,19 +31,19 @@ Content-Type:  application/json; charset=utf-8
 
 Response (JSON):   
 
-~~~ javascript
+{% highlight js %}
 {
 AbstractLists,
 BackgroundColor,
 Lists,
 Sections
 }
-~~~ 
+{% endhighlight %}
 
 ### Code example 
 
 
-~~~ javascript
+{% highlight js %}
 
 URL: http://js.syncfusion.com/demos/ejServices/api/DocumentEditor/Import
 
@@ -58,12 +58,12 @@ $.ajax({
         url: "http://js.syncfusion.com/demos/ejServices/api/DocumentEditor/Import",
 })
 
-~~~ 
+{% endhighlight %}
 
 
 ## LoadDefault
 
-[POST/Api/DocumentEditor/LoadDefault](http://js.syncfusion.com/demos/ejServices/api/DocumentEditor/LoadDefaul)
+ [POST] [/Api/DocumentEditor/LoadDefault](http://js.syncfusion.com/demos/ejServices/api/DocumentEditor/LoadDefaul)
 
 It loads the default document in DocumentEditor.
 
@@ -79,18 +79,18 @@ Content-Type:  application/json; charset=utf-8
 
 Response (JSON):   
 
-~~~ javascript
+{% highlight js %}
 {
 AbstractLists,
 BackgroundColor,
 Lists,
 Sections
 }
-~~~ 
+{% endhighlight %}
 
 ### Code example 
 
-~~~ javascript
+{% highlight js %}
 
 URL: http://js.syncfusion.com/demos/ejServices/api/DocumentEditor/LoadDefault 
 
@@ -105,4 +105,4 @@ $.ajax({
         url: "http://js.syncfusion.com/demos/ejServices/api/DocumentEditor/LoadDefault",
 })
 
-~~~ 
+{% endhighlight %}

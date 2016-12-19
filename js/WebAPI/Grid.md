@@ -2,14 +2,14 @@
 layout: post
 title: webAPI reference for ejGrid
 description: webAPI reference for ejGrid
-documentation: API
-platform: js-webapi
+documentation: ug
+platform: js
 keywords: grid, ejGrid, syncfusion, grid webapi
 ---
        
 ## ExcelExport
 
-[POST/Api/Grid/ExcelExport](http://js.syncfusion.com/demos/ejservices/api/Grid/ExcelExport)
+ [POST] [/Api/Grid/ExcelExport](http://js.syncfusion.com/demos/ejservices/api/Grid/ExcelExport)
 
 It is used to export the Grid data in Excel.
 
@@ -23,46 +23,46 @@ Content-Type: application/octet-stream
 
 Essential Grid Excel-Exporting in javascript
 
-~~~ javascript
+{% highlight js %}
 
-     $(function () {
-         $("#Grid").ejGrid({
-         dataSource: window.gridData,
-         allowPaging: true,
-         toolbarSettings: {
-         showToolbar: true,
-         toolbarItems: [ej.Grid.ToolBarItems.ExcelExport]
-         },
-         toolbarClick: function (e) {
-         this.exportGrid = this["export"];
-         if (e.itemName == "Excel Export") {              
-         this.exportGrid('http://js.syncfusion.com/demos/ejservices/api/Grid/ExcelExport')
-         e.cancel = true;
-         }
-         },
-         })
+$(function () {
+    $("#Grid").ejGrid({
+    dataSource: window.gridData,
+    allowPaging: true,
+    toolbarSettings: {
+    showToolbar: true,
+    toolbarItems: [ej.Grid.ToolBarItems.ExcelExport]
+    },
+    toolbarClick: function (e) {
+    this.exportGrid = this["export"];
+    if (e.itemName == "Excel Export") {              
+    this.exportGrid('http://js.syncfusion.com/demos/ejservices/api/Grid/ExcelExport')
+    e.cancel = true;
+    }
+    },
     })
-    
-~~~ 
+})
+
+{% endhighlight %}
 
 Essential Grid Excel-Exporting in C# 
 
-~~~ csharp
+{% highlight c# %}
 
-        public void ExportToExcel(string GridModel)
-        {
-            ExcelExport exp = new ExcelExport();
-            var DataSource = new NorthwindDataContext().OrdersViews.Take(100).ToList();
-            GridProperties obj = ConvertGridObject(GridModel);
-            exp.Export(obj, DataSource, "Export.xlsx", ExcelVersion.Excel2010, false, false, "flat-saffron");
-        }    
-        
-~~~ 
+public void ExportToExcel(string GridModel)
+{
+    ExcelExport exp = new ExcelExport();
+    var DataSource = new NorthwindDataContext().OrdersViews.Take(100).ToList();
+    GridProperties obj = ConvertGridObject(GridModel);
+    exp.Export(obj, DataSource, "Export.xlsx", ExcelVersion.Excel2010, false, false, "flat-saffron");
+}    
+
+{% endhighlight %}
 > The above example shows that the Grid data has been exported in Excel file.
         
 ## PdfExport
 
-[POST/Api/Grid/PdfExport](http://js.syncfusion.com/demos/ejservices/api/Grid/PdfExport)
+ [POST] [/Api/Grid/PdfExport](http://js.syncfusion.com/demos/ejservices/api/Grid/PdfExport)
 
 It is used to export the Grid data in PDF.
 
@@ -76,45 +76,48 @@ Content-Type: application/octet-stream
 
 Essential Grid PDF-Exporting in javascript
 
-~~~ javascript
-        $(function () {
-            $("#Grid").ejGrid({
-                dataSource: window.gridData,
-                allowPaging: true,
-                toolbarSettings: {
-                    showToolbar: true,
-                    toolbarItems: [ej.Grid.ToolBarItems.PdfExport]
-                },
-                toolbarClick: function (e) {
-                    this.exportGrid = this["export"];
-                    if (e.itemName == "PDF Export") {
-                        this.exportGrid('http://js.syncfusion.com/demos/ejservices/api/Grid/PdfExport')
-                        e.cancel = true;
-                    }
-                },
-            })
+{% highlight js %}
 
-        })
-~~~ 
+$(function () {
+    $("#Grid").ejGrid({
+        dataSource: window.gridData,
+        allowPaging: true,
+        toolbarSettings: {
+            showToolbar: true,
+            toolbarItems: [ej.Grid.ToolBarItems.PdfExport]
+        },
+        toolbarClick: function (e) {
+            this.exportGrid = this["export"];
+            if (e.itemName == "PDF Export") {
+                this.exportGrid('http://js.syncfusion.com/demos/ejservices/api/Grid/PdfExport')
+                e.cancel = true;
+            }
+        },
+    })
+
+})
+
+{% endhighlight %}
 
 Essential Grid PDF-Exporting in C# 
 
-~~~ csharp
+{% highlight c# %}
 
 public void ExportToPdf(string GridModel)
-        {
-            PdfExport exp = new PdfExport();
-            var DataSource = new NorthwindDataContext().OrdersViews.Take(100).ToList();
-            GridProperties obj = ConvertGridObject(GridModel);
-            exp.Export(obj, DataSource, "Export.pdf", false, false, "flat-saffron");
-        }
-~~~ 
+{
+    PdfExport exp = new PdfExport();
+    var DataSource = new NorthwindDataContext().OrdersViews.Take(100).ToList();
+    GridProperties obj = ConvertGridObject(GridModel);
+    exp.Export(obj, DataSource, "Export.pdf", false, false, "flat-saffron");
+}
+
+{% endhighlight %}
 > The above example shows that the Grid data has been exported in PDF file.
 
         
 ## WordExport
 
-[POST/Api/Grid/WordExport](http://js.syncfusion.com/demos/ejservices/api/Grid/WordExport)
+ [POST] [/Api/Grid/WordExport](http://js.syncfusion.com/demos/ejservices/api/Grid/WordExport)
 
 It is used to export the Grid data in Word.
 
@@ -128,45 +131,48 @@ Content-Type: application/octet-stream
 
 Essential Grid Word-Exporting in javascript
 
-~~~ javascript
+{% highlight js %}
 
-        $(function () {
-            $("#Grid").ejGrid({
-                dataSource: window.gridData,
-                allowPaging: true,
-                toolbarSettings: {
-                    showToolbar: true,
-                    toolbarItems: [ej.Grid.ToolBarItems.WordExport, ]
-                },
-                toolbarClick: function (e) {
-                    this.exportGrid = this["export"];
-                    if (e.itemName == "Word Export") {
-                        this.exportGrid('http://js.syncfusion.com/demos/ejservices/api/Grid/WordExport')
-                        e.cancel = true;
-                    }
-                },
-            })
-        })
- ~~~ 
-        
-Essential Grid Word-Exporting in C# 
+$(function () {
+    $("#Grid").ejGrid({
+        dataSource: window.gridData,
+        allowPaging: true,
+        toolbarSettings: {
+            showToolbar: true,
+            toolbarItems: [ej.Grid.ToolBarItems.WordExport, ]
+        },
+        toolbarClick: function (e) {
+            this.exportGrid = this["export"];
+            if (e.itemName == "Word Export") {
+                this.exportGrid('http://js.syncfusion.com/demos/ejservices/api/Grid/WordExport')
+                e.cancel = true;
+            }
+        },
+    })
+});
 
-  ~~~ csharp
+{% endhighlight %}
+
+Essential Grid Word-Exporting in C#
+
+{% highlight c# %}
   
-  public void ExportToWord(string GridModel)
-        {
-            WordExport exp = new WordExport();
-            var DataSource = new NorthwindDataContext().OrdersViews.Take(100).ToList();
-            GridProperties obj = ConvertGridObject(GridModel);
-            exp.Export(obj, DataSource, "Export.docx", false, false, "flat-saffron");
-        }
- ~~~ 
+public void ExportToWord(string GridModel)
+{
+    WordExport exp = new WordExport();
+    var DataSource = new NorthwindDataContext().OrdersViews.Take(100).ToList();
+    GridProperties obj = ConvertGridObject(GridModel);
+    exp.Export(obj, DataSource, "Export.docx", false, false, "flat-saffron");
+}
+
+ {% endhighlight %}
 
 > The above example shows that the Grid data has been exported in Word file.
 
+
 ## Get
 
-[GETApi/Grid/Get](http://js.syncfusion.com/demos/ejservices/api/Grid/Get)
+ [GET] [/Api/Grid/Get](http://js.syncfusion.com/demos/ejservices/api/Grid/Get)
 
 It is used to get the dataSource from Northwind dataSource.
 
@@ -174,8 +180,8 @@ It is used to get the dataSource from Northwind dataSource.
 
 |  Parameter |  Description | 
 |---|---|
-|  $top | Returns only the first n results| 
-|  $skip | Used to skip the first n results| 
+|$top|Returns only the first n results| 
+|$skip|Used to skip the first n results| 
 
 ### Response information 
 
@@ -185,7 +191,7 @@ Content-Type: application/json;odata=verbose;charset=utf-8
 
 Response (JSON):   
 
-~~~ javascript
+{% highlight js %}
 {
 "__metadata":
 
@@ -212,13 +218,14 @@ Response (JSON):
 "ShipCountry":"France"
 }, 	 //... 9 more records
 
-~~~ 
+{% endhighlight %}
+
 > We can see that the first ten results from the `Orders` table of Northwind database in the above JSON reponse where it uses `$top` query option.   
 
 
 ## Post
 
-[POST/Api/Grid/Post](http://js.syncfusion.com/demos/ejservices/api/Grid/Post)
+ [POST] [/Api/Grid/Post](http://js.syncfusion.com/demos/ejservices/api/Grid/Post)
 
 It is used to add the data to the grid column. 
 
@@ -237,13 +244,13 @@ Content-Type: application/json;odata=verbose;charset=utf-8
 ### Code example 
 
 
-~~~ javascript
+{% highlight js %}
 
-~~~ 
+{% endhighlight %}
 
 ## Put
 
-[POST/Api/Grid/Put](http://js.syncfusion.com/demos/ejservices/api/Grid/Put)
+ [POST] [/Api/Grid/Put](http://js.syncfusion.com/demos/ejservices/api/Grid/Put)
 
 It is used to update the Grid data. 
 
@@ -260,13 +267,13 @@ Content-Type: application/json;odata=verbose;charset=utf-8
 ### Code example 
 
 
-~~~ javascript
+{% highlight js %}
 
-~~~ 
+{% endhighlight %}
 
 ## Delete
 
-[POST/Api/Grid/Delete](http://js.syncfusion.com/demos/ejservices/api/Grid/Delete)
+ [POST] [/Api/Grid/Delete](http://js.syncfusion.com/demos/ejservices/api/Grid/Delete)
 
 It is used to delete the data which is present in Grid column. 
 
@@ -283,8 +290,8 @@ Content-Type: application/json;odata=verbose;charset=utf-8
 ### Code example 
 
 
-~~~ javascript
+{% highlight js %}
 
-~~~ 
+{% endhighlight %}
 
 

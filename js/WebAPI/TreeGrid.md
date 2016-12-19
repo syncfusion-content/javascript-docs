@@ -2,14 +2,14 @@
 layout: post
 title: webAPI reference for ejTreeGrid
 description: webAPI reference for ejTreeGrid
-documentation: API
-platform: js-webapi
+documentation: ug
+platform: js
 keywords: ejTreeGrid,TreeGrid, syncfusion,ejTreeGrid webapi
 ---
 
 ## PdfExport
 
-[POST/Api/TreeGrid/PdfExport](http://js.syncfusion.com/demos/ejServices/api/TreeGrid/PdfExport)
+ [POST] [/Api/TreeGrid/PdfExport](http://js.syncfusion.com/demos/ejServices/api/TreeGrid/PdfExport)
 
 It is used to export the TreeGrid data to PDF file.
 
@@ -27,7 +27,7 @@ Content-Type: application/octet-stream
 
 ### Code example 
 
-~~~ javascript
+{% highlight js %}
 
 $(function () {
       var dateFormat = "{0:" + ej.preferredCulture()["calendars"]["standard"]["patterns"]["d"] + "}";
@@ -58,11 +58,11 @@ function toolbarclick(args) {
 
 }
 
-~~~ 
+{% endhighlight %}
 
 ## ExcelExport
 
-[POST/Api/TreeGrid/ExcelExport](http://js.syncfusion.com/demos/ejServices/api/TreeGrid/ExcelExport)
+ [POST] [/Api/TreeGrid/ExcelExport](http://js.syncfusion.com/demos/ejServices/api/TreeGrid/ExcelExport)
 
 It is used to export the TreeGrid data to Excel file.
 
@@ -78,7 +78,7 @@ Code: 200
 
 Content-Type: application/octet-stream	
 
-~~~ javascript
+{% highlight js %}
 
 $(function () {
       var dateFormat = "{0:" + ej.preferredCulture()["calendars"]["standard"]["patterns"]["d"] + "}";
@@ -109,4 +109,4 @@ function toolbarclick(args) {
 
 }
 
-~~~ 
+{% endhighlight %}

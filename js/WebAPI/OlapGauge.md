@@ -2,14 +2,14 @@
 layout: post
 title: webAPI reference for PivotGauge
 description: webAPI reference for OlapGauge
-documentation: API
-platform: js-webapi
+documentation: ug
+platform: js
 keywords: PivotGauge , syncfusion, PivotGauge webapi
 ---
 
 ## Initialize
 
-[POST/Api/OlapGauge/Initialize](http://js.syncfusion.com/demos/ejServices/api/OlapGauge/Initialize)
+ [POST] [/Api/OlapGauge/Initialize](http://js.syncfusion.com/demos/ejServices/api/OlapGauge/Initialize)
 
 It fetches the OLAP data required to render the PivotGauge control from server-end.
 
@@ -30,7 +30,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 public Dictionary<string, object> Initialize(Dictionary<string, object> jsonResult)
 {
     OlapDataManager DataManager = new OlapDataManager(connectionString);
@@ -38,4 +38,4 @@ public Dictionary<string, object> Initialize(Dictionary<string, object> jsonResu
     return htmlHelper.GetJsonData(jsonResult["action"].ToString(), DataManager);
 }
 
-~~~ 
+{% endhighlight %}

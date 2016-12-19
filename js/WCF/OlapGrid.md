@@ -2,14 +2,14 @@
 layout: post
 title: WCF reference for PivotGrid
 description: WCF reference for PivotGrid
-documentation: API
-platform: js-wcf
+documentation: ug
+platform: js
 keywords: PivotGrid , syncfusion, PivotGrid WCF
 ---
 
 ## Initialize
 
-[POST/WCF/PivotGrid/Initialize](http://js.syncfusion.com/demos/ejServices/wcf/PivotGrid/Olap.svc)
+ [POST] [/WCF/PivotGrid/Initialize](http://js.syncfusion.com/demos/ejServices/wcf/PivotGrid/Olap.svc)
 
 It fetches the OLAP data required to render the PivotGrid initially from server-end.
 
@@ -32,7 +32,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 
 public Dictionary<string, object> Initialize(string action, string gridLayout, bool enablePivotFieldList, object customObject)
 {
@@ -51,11 +51,11 @@ public Dictionary<string, object> Initialize(string action, string gridLayout, b
     return htmlHelper.GetJsonData(action, DataManager, gridLayout, enablePivotFieldList);
 }
 
-~~~ 
+{% endhighlight %} 
 
 ## Drill
 
-[POST/WCF/PivotGrid/Drill](http://js.syncfusion.com/demos/ejServices/wcf/PivotGrid/Olap.svc)
+ [POST] [/WCF/PivotGrid/Drill](http://js.syncfusion.com/demos/ejServices/wcf/PivotGrid/Olap.svc)
 
 It fetches the OLAP data required to render the PivotGrid control after drilling it.
 
@@ -80,7 +80,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 
 public Dictionary<string, object> Drill(string action, string cellPosition, string currentReport, string headerInfo, string layout, object customObject)
 {
@@ -101,11 +101,11 @@ public Dictionary<string, object> Drill(string action, string cellPosition, stri
     return htmlHelper.GetJsonData(action, connectionString, DataManager, cellPosition, headerInfo, layout);
 }
 
-~~~ 
+{% endhighlight %} 
 
 ## DropNode
 
-[POST/WCF/PivotGrid/DropNode](http://js.syncfusion.com/demos/ejServices/wcf/PivotGrid/Olap.svc)
+ [POST] [/WCF/PivotGrid/DropNode](http://js.syncfusion.com/demos/ejServices/wcf/PivotGrid/Olap.svc)
 
 It fetches the data required to render the control after performing node drop operation.
 
@@ -130,7 +130,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 
 public Dictionary<string, object> DropNode(string action, string dropType, string nodeInfo, string filterParams, string gridLayout, string currentReport)
 {
@@ -139,10 +139,11 @@ public Dictionary<string, object> DropNode(string action, string dropType, strin
     return htmlHelper.GetJsonData(action, DataManager, dropType, nodeInfo, filterParams, gridLayout, true);
 }
 
-~~~ 
+{% endhighlight %} 
+
 ## Filtering
 
-[POST/WCF/PivotGrid/Filtering](http://js.syncfusion.com/demos/ejServices/wcf/PivotGrid/Olap.svc)
+ [POST] [/WCF/PivotGrid/Filtering](http://js.syncfusion.com/demos/ejServices/wcf/PivotGrid/Olap.svc)
 
 It fetches the OLAP data required to render the control after performing filtering.
 
@@ -165,7 +166,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 
 public Dictionary<string, object> Filtering(string action, string filterParams, string gridLayout, string currentReport)
 {
@@ -174,11 +175,11 @@ public Dictionary<string, object> Filtering(string action, string filterParams, 
     return htmlHelper.GetJsonData(action, connectionString, DataManager, null, filterParams, gridLayout);
 }
 
-~~~ 
+{% endhighlight %} 
 
 ## FetchMembers
 
-[POST/WCF/PivotGrid/FetchMembers](http://js.syncfusion.com/demos/ejServices/wcf/PivotGrid/Olap.svc)
+ [POST] [/WCF/PivotGrid/FetchMembers](http://js.syncfusion.com/demos/ejServices/wcf/PivotGrid/Olap.svc)
 
 It fetches the members of the selected hierarchy to render the member editor.
 
@@ -200,7 +201,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 
 public Dictionary<string, object> FetchMembers(string action, string headerTag, string currentReport)
 {
@@ -209,12 +210,12 @@ public Dictionary<string, object> FetchMembers(string action, string headerTag, 
     return htmlHelper.GetJsonData(action, DataManager, null, headerTag);
 }
 
-~~~ 
+{% endhighlight %} 
 
 
 ## Paging
 
-[POST/WCF/PivotGrid/Paging](http://js.syncfusion.com/demos/ejServices/wcf/PivotGrid/Olap.svc)
+ [POST] [/WCF/PivotGrid/Paging](http://js.syncfusion.com/demos/ejServices/wcf/PivotGrid/Olap.svc)
 
 It fetches the OLAP data required to render the specific page of PivotGrid with paging enabled.
 
@@ -238,7 +239,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 
 public Dictionary<string, object> Paging(string action, string pagingInfo, string currentReport, string gridLayout, object customObject)
 {
@@ -247,11 +248,11 @@ public Dictionary<string, object> Paging(string action, string pagingInfo, strin
     return htmlHelper.GetJsonData(action, DataManager, gridLayout);
 }
 
-~~~ 
+{% endhighlight %} 
 
 ## RemoveButton
 
-[POST/WCF/PivotGrid/RemoveButton](http://js.syncfusion.com/demos/ejServices/wcf/PivotGrid/Olap.svc)
+ [POST] [/WCF/PivotGrid/RemoveButton](http://js.syncfusion.com/demos/ejServices/wcf/PivotGrid/Olap.svc)
 
 It fetches the data required to render the control after removing a button.
 
@@ -274,7 +275,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 
 public Dictionary<string, object> RemoveButton(string action, string headerInfo, string gridLayout, string currentReport)
 {
@@ -283,11 +284,11 @@ public Dictionary<string, object> RemoveButton(string action, string headerInfo,
     return htmlHelper.GetJsonData(action, connectionString, DataManager, null, headerInfo, gridLayout);
 }
 
-~~~ 
+{% endhighlight %} 
 
 ## ExpandMember
 
-[POST/WCF/PivotGrid/ExpandMember](http://js.syncfusion.com/demos/ejServices/wcf/PivotGrid/Olap.svc)
+ [POST] [/WCF/PivotGrid/ExpandMember](http://js.syncfusion.com/demos/ejServices/wcf/PivotGrid/Olap.svc)
 
 It fetches the data to render children nodes of a member in Member Editor Tree.
 
@@ -312,7 +313,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 
 public Dictionary<string, object> ExpandMember(string action, bool checkedStatus, string parentNode, string tag, string cubeName, string currentReport)
 {
@@ -322,11 +323,11 @@ public Dictionary<string, object> ExpandMember(string action, bool checkedStatus
     return htmlHelper.GetJsonData(action, DataManager, checkedStatus, parentNode, tag, cubeName);
 }
 
-~~~ 
+{% endhighlight %} 
 
 ## Export
 
-[POST/WCF/PivotGrid/Export](http://js.syncfusion.com/demos/ejServices/wcf/PivotGrid/Olap.svc)
+ [POST] [/WCF/PivotGrid/Export](http://js.syncfusion.com/demos/ejServices/wcf/PivotGrid/Olap.svc)
 
 It is used to export the PivotGrid data to specified format.
 
@@ -346,7 +347,7 @@ Response: file
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 
 public void Export(Stream stream)
 {
@@ -357,11 +358,11 @@ public void Export(Stream stream)
     htmlHelper.ExportPivotGrid(DataManager, args, fileName, System.Web.HttpContext.Current.Response);
 }
 
-~~~ 
+{% endhighlight %} 
 
 ## SaveReport
 
-[POST/WCF/PivotGrid/SaveReport](http://js.syncfusion.com/demos/ejServices/wcf/PivotGrid/Olap.svc)
+ [POST] [/WCF/PivotGrid/SaveReport](http://js.syncfusion.com/demos/ejServices/wcf/PivotGrid/Olap.svc)
 
 It saves the current report to database with the specified name.
 
@@ -385,7 +386,7 @@ Response: None
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 
 public Dictionary<string, object> SaveReport(string reportName, string operationalMode, string olapReport, string clientReports)
 {
@@ -417,10 +418,11 @@ public Dictionary<string, object> SaveReport(string reportName, string operation
     return null;
 }
 
-~~~ 
+{% endhighlight %} 
+
 ## LoadReportFromDB
 
-[POST/WCF/PivotGrid/LoadReportFromDB](http://js.syncfusion.com/demos/ejServices/wcf/PivotGrid/Olap.svc)
+ [POST] [/WCF/PivotGrid/LoadReportFromDB](http://js.syncfusion.com/demos/ejServices/wcf/PivotGrid/Olap.svc)
 
 It loads a report from the database and refreshes the control with it.
 
@@ -447,7 +449,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-~~~ csharp  
+{% highlight c# %}  
 public Dictionary<string, object> LoadReportFromDB(string action, string layout, bool enablePivotFieldList, object customObject, string reportName, string operationalMode, string olapReport, string clientReports)
 {
     string mode = operationalMode;
@@ -497,11 +499,11 @@ public Dictionary<string, object> LoadReportFromDB(string action, string layout,
     return dictionary;
 }
 
-~~~ 
+{% endhighlight %} 
 
 ## DeferUpdate
 
-[POST/WCF/PivotGrid/DeferUpdate](http://js.syncfusion.com/demos/ejServices/wcf/PivotGrid/Olap.svc)
+ [POST] [/WCF/PivotGrid/DeferUpdate](http://js.syncfusion.com/demos/ejServices/wcf/PivotGrid/Olap.svc)
 
 It fetches the data with respect to the report available at that instant (i.e) updates the control with current report.
 
@@ -523,7 +525,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 
 public Dictionary<string, object> DeferUpdate(string action, string filterParams, string currentReport)
 {
@@ -532,4 +534,4 @@ public Dictionary<string, object> DeferUpdate(string action, string filterParams
     return htmlHelper.GetJsonData(action, DataManager, null, filterParams);
 }
 
-~~~ 
+{% endhighlight %} 

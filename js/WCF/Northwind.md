@@ -2,21 +2,21 @@
 layout: post
 title: WCF reference for Northwind services
 description: WCF reference for Northwind services
-documentation: API
-platform: js-WCF
+documentation: ug
+platform: js
 keywords: Northwind, syncfusion, Northwind wcf
 ---
 
 ## NorthwindDataService
 
-[GET/wcf/Northwind.svc](http://js.syncfusion.com/demos/ejservices/Wcf/Northwind.svc)
+ [GET] [/WCF/Northwind.svc](http://js.syncfusion.com/demos/ejservices/Wcf/Northwind.svc)
 
 This is an [OData](http://www.odata.org/) endpoint for Microsoft Northwind sample database with limited data tables like `Orders` and `Customers`.
 
 ## Grid
 
-[GET/wcf/Northwind.svc/Orders](http://js.syncfusion.com/demos/ejServices/wcf/NorthWind.svc/Orders)<br>
-[GET/wcf/Northwind.svc/Customers](http://js.syncfusion.com/demos/ejServices/wcf/NorthWind.svc/Customers)
+ [GET] [/WCF/Northwind.svc/Orders](http://js.syncfusion.com/demos/ejServices/wcf/NorthWind.svc/Orders)<br>
+ [GET] [/WCF/Northwind.svc/Customers](http://js.syncfusion.com/demos/ejServices/wcf/NorthWind.svc/Customers)
 
 We have used Northwind services for Grid control where it has the data tables like "Orders" and "Customers".
 
@@ -37,7 +37,7 @@ Content-Type: application/json;odata=verbose;charset=utf-8
 
 Response (JSON):   
 
-~~~ javascript
+{% highlight js %}
 
 {
 "__metadata":
@@ -65,12 +65,13 @@ Response (JSON):
 "ShipCountry":"France"
 }, 	 //... 9 more records
 
-~~~ 
+{% endhighlight %} 
+
 > We can see that the first ten results from the `Orders` table of Northwind database in the above JSON reponse where it uses `$top` query option.   
 
 ## Kanban
 
-[GET/wcf/Northwind.svc/Tasks](http://js.syncfusion.com/demos/ejServices/wcf/NorthWind.svc/Tasks)
+ [GET] [/WCF/Northwind.svc/Tasks](http://js.syncfusion.com/demos/ejServices/wcf/NorthWind.svc/Tasks)
 
 For Kanban control we have added the custom table along with the Northwind service.
 
@@ -82,7 +83,7 @@ Content-Type: application/json;odata=verbose;charset=utf-8
 
 Response (JSON):   
 
-~~~ javascript
+{% highlight js %}
 
 {
 
@@ -100,5 +101,6 @@ Response (JSON):
 
 }, 	 //... 9 more records
 
-~~~ 
+{% endhighlight %} 
+
 > We can see that the first ten results from the `Tasks` table of Northwind database in the above JSON reponse where it uses `$top` query option.   

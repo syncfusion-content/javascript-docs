@@ -27,7 +27,7 @@ SpellCheck provides the dialog mode option to perform the following spellcheck o
 
 ### Open dialog mode
 
-The following code snippet shows how to open the dialog mode.
+The following code snippet shows how to open the dialog to spell check the content.
 
 {% highlight html %}
  

@@ -204,7 +204,7 @@ Custom context menu is used to create your own menu item and its action. To add 
                 if (args.text == "Clear Selection")
                     this.clearSelection();
             },
-            contextMenuSettings: { enableContextMenu: true, contextMenuItems: [], customContextMenuItems: ["Clear Selection"] },
+            contextMenuSettings: { enableContextMenu: true, contextMenuItems: [], customContextMenuItems: [{ id: 'clear', text: "Clear Selection" }] },
             allowPaging: true,
             columns: [
                 { field: "OrderID", headerText: 'Order ID', textAlign: ej.TextAlign.Right, width: 90 },
@@ -241,7 +241,7 @@ Sub context menu is used to add customized sub menu to the custom context menu i
                 else if (args.text != "Hide Column")
                     this.hideColumns(args.text);
             },
-            contextMenuSettings: { enableContextMenu: true, contextMenuItems: [], customContextMenuItems: ["Clear Selection", "Hide Column"], subContextMenu: [{ contextMenuItem: "Hide Column", subMenu: ["Order ID", "Customer ID", "Employee ID"] }]  },
+            contextMenuSettings: { enableContextMenu: true, contextMenuItems: [], customContextMenuItems: [{ id: 'clear', text: "Clear Selection" }, { id: 'hide', text: "Hide column" }], subContextMenu: [{ contextMenuItem: "hide", subMenu: ["OrderID", "CustomerID", "EmployeeID"] }] },
             allowPaging: true,
             columns: [
                 { field: "OrderID", headerText: 'Order ID', textAlign: ej.TextAlign.Right, width: 90 },

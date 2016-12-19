@@ -2,14 +2,14 @@
 layout: post
 title: webAPI reference for PDF
 description: webAPI reference for PDF
-documentation: API
-platform: js-webapi
+documentation: ug
+platform: js
 keywords: pdf, syncfusion, pdf webapi
 ---
 
 ## GeneratePdfDocument
 
-[POST/Api/PDF/GeneratePdfDocument](http://js.syncfusion.com/demos/ejServices/api/PDF/GeneratePdfDocument)
+ [POST] [/Api/PDF/GeneratePdfDocument](http://js.syncfusion.com/demos/ejServices/api/PDF/GeneratePdfDocument)
 
 
 ### URL parameters
@@ -26,21 +26,21 @@ Content-Type:
 
 Response(JSON):
 
-~~~ javascript
+{% highlight js %}
 
 
-~~~ 
+{% endhighlight %}
 
 ### Code example 
 
-~~~ javascript
+{% highlight js %}
 
 
-~~~ 
+{% endhighlight %}
 
 ## GetFormFillTemplate
 
-[POST/Api/PDF/GetFormFillTemplate](http://js.syncfusion.com/demos/ejServices/api/PDF/GetFormFillTemplate)
+ [POST] [/Api/PDF/GetFormFillTemplate](http://js.syncfusion.com/demos/ejServices/api/PDF/GetFormFillTemplate)
 
 
 ### URL parameters
@@ -57,20 +57,20 @@ Content-Type:
 
 Response(JSON):
 
-~~~ javascript
+{% highlight js %}
 
 
-~~~ 
+{% endhighlight %}
 
 ### Code example 
 
-~~~ javascript
+{% highlight js %}
 
 
-~~~ 
+{% endhighlight %}
 ## GenerateFormFillTemplate
 
-[POST/Api/PDF/GenerateFormFillTemplate](http://js.syncfusion.com/demos/ejServices/api/PDF/GenerateFormFillTemplate)
+ [POST] [/Api/PDF/GenerateFormFillTemplate](http://js.syncfusion.com/demos/ejServices/api/PDF/GenerateFormFillTemplate)
 
 
 ### URL parameters
@@ -87,20 +87,21 @@ Content-Type:
 
 Response(JSON):
 
-~~~ javascript
+{% highlight js %}
 
 
-~~~ 
+{% endhighlight %}
 
 ### Code example 
 
-~~~ javascript
+{% highlight js %}
 
 
-~~~ 
+{% endhighlight %}
+
 ## GenerateInteractiveFeature
 
-[POST/Api/PDF/GenerateInteractiveFeature](http://js.syncfusion.com/demos/ejServices/api/PDF/GenerateInteractiveFeature)
+ [POST] [/Api/PDF/GenerateInteractiveFeature](http://js.syncfusion.com/demos/ejServices/api/PDF/GenerateInteractiveFeature)
 
 
 ### URL parameters
@@ -117,20 +118,21 @@ Content-Type:
 
 Response(JSON):
 
-~~~ javascript
+{% highlight js %}
 
 
-~~~ 
+{% endhighlight %}
 
 ### Code example 
 
-~~~ javascript
+{% highlight js %}
 
 
-~~~ 
+{% endhighlight %}
+
 ## GenerateEncryptDocument
 
-[POST/Api/PDF/GenerateEncryptDocument](http://js.syncfusion.com/demos/ejServices/api/PDF/GenerateEncryptDocument)
+ [POST] [/Api/PDF/GenerateEncryptDocument](http://js.syncfusion.com/demos/ejServices/api/PDF/GenerateEncryptDocument)
 
 
 ### URL parameters
@@ -147,21 +149,21 @@ Content-Type:
 
 Response(JSON):
 
-~~~ javascript
+{% highlight js %}
 
 
-~~~ 
+{% endhighlight %}
 
 ### Code example 
 
-~~~ javascript
+{% highlight js %}
 
 
-~~~ 
+{% endhighlight %}
 
 ## GenerateTableFeature
 
-[POST/Api/PDF/GenerateTableFeature](http://js.syncfusion.com/demos/ejServices/api/PDF/GenerateTableFeature)
+ [POST] [/Api/PDF/GenerateTableFeature](http://js.syncfusion.com/demos/ejServices/api/PDF/GenerateTableFeature)
 
 
 ### URL parameters
@@ -178,14 +180,14 @@ Content-Type:
 
 Response(JSON):
 
-~~~ javascript
+{% highlight js %}
 
 
-~~~ 
+{% endhighlight %}
 
 ### Code example 
 
-~~~ javascript
+{% highlight js %}
 
 
-~~~ 
+{% endhighlight %}

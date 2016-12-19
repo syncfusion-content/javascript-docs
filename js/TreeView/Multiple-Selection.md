@@ -63,7 +63,7 @@ TreeView supports to select the multiple nodes by specifying [allowMultiSelectio
 	
 {% endhighlight %}
 
-For more details about multiple selection in TreeView, refer the sample [here](http://jsplayground.syncfusion.com/crwu15n4).
+For more details about multiple selection in TreeView, refer the sample [here](http://jsplayground.syncfusion.com/Sync_wuoxgu3q).
 
 ## Select Nodes
 

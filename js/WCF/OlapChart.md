@@ -2,14 +2,14 @@
 layout: post
 title: WCF reference for PivotChart
 description: WCF reference for PivotChart
-documentation: API
-platform: js-wcf
+documentation: ug
+platform: js
 keywords: PivotChart , syncfusion, PivotChart wcf
 ---
 
 ## Initialize
 
-[POST/WCF/PivotChart/Initialize](http://js.syncfusion.com/demos/ejServices/wcf/PivotChart/Olap.svc)
+ [POST] [/WCF/PivotChart/Initialize](http://js.syncfusion.com/demos/ejServices/wcf/PivotChart/Olap.svc)
 
 It fetches the OLAP data which is required to initialize the PivotChart from server-end.
 
@@ -30,7 +30,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 
 public Dictionary<string, object> Initialize(string action, string customObject)
 {
@@ -49,11 +49,11 @@ public Dictionary<string, object> Initialize(string action, string customObject)
     return htmlHelper.GetJsonData(action, DataManager);
 }
 
-~~~ 
+{% endhighlight %} 
 
 ## Drill
 
-[POST/WCF/PivotChart/Drill](http://js.syncfusion.com/demos/ejServices/wcf/PivotChart/Olap.svc)
+ [POST] [/WCF/PivotChart/Drill](http://js.syncfusion.com/demos/ejServices/wcf/PivotChart/Olap.svc)
 
 It fetches the drilled OLAP data which is required to render the PivotChart control from server-end.
 
@@ -76,7 +76,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 
 public Dictionary<string, object> Drill(string action, string drilledSeries, string olapReport, string customObject)
 {
@@ -96,11 +96,11 @@ public Dictionary<string, object> Drill(string action, string drilledSeries, str
     return htmlHelper.GetJsonData(action, DataManager, drilledSeries);
 }
 
-~~~ 
+{% endhighlight %} 
 
 ## Export
 
-[POST/WCF/PivotChart/Export](http://js.syncfusion.com/demos/ejServices/wcf/PivotChart/Olap.svc)
+ [POST] [/WCF/PivotChart/Export](http://js.syncfusion.com/demos/ejServices/wcf/PivotChart/Olap.svc)
 
 It exports the PivotChart control at the instant to the specified format.
 
@@ -120,7 +120,7 @@ Response: file
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 
 public void Export(Stream stream)
 {
@@ -131,4 +131,4 @@ public void Export(Stream stream)
     htmlHelper.ExportPivotChart(args, fileName, System.Web.HttpContext.Current.Response);
 }
 
-~~~ 
+{% endhighlight %} 

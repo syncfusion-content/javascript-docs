@@ -2,14 +2,14 @@
 layout: post
 title: WCF reference for PivotClient
 description: WCF reference for PivotClient
-documentation: API
-platform: js-wcf
+documentation: ug
+platform: js
 keywords: PivotClient, syncfusion, PivotClient WCF
 ---
 
 ## Initialize
 
-[POST/WCF/PivotClient/Initialize](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Relational.svc)
+ [POST] [/WCF/PivotClient/Initialize](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Relational.svc)
 
 It fetches the data required to render the PivotClient control initially.
 
@@ -29,7 +29,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 
 public Dictionary<string, object> Initialize(string action)
 {
@@ -38,11 +38,11 @@ public Dictionary<string, object> Initialize(string action)
 }
 
 
-~~~ 
+{% endhighlight %} 
 
 ## DrillChart
 
-[POST/WCF/PivotClient/DrillChart](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Relational.svc)
+ [POST] [/WCF/PivotClient/DrillChart](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Relational.svc)
 
 It fetches the drilled data required to render the PivotChart on drilling.
 
@@ -64,7 +64,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 
 public Dictionary<string, object> DrillChart(string action, string drilledSeries, string currentReport)
 {
@@ -76,11 +76,11 @@ public Dictionary<string, object> DrillChart(string action, string drilledSeries
     return pivotChart.GetJsonData(action, ProductSales.GetSalesData(), drilledSeries);
 }
 
-~~~ 
+{% endhighlight %} 
 
 ## Filtering
 
-[POST/WCF/PivotClient/Filtering](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Relational.svc)
+ [POST] [/WCF/PivotClient/Filtering](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Relational.svc)
 
 It fetches the filtered data required to render the control after performing filtering.
 
@@ -103,7 +103,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 
 public Dictionary<string, object> Filtering(string action, string filterParams, string currentReport, string customObject)
 {
@@ -111,11 +111,11 @@ public Dictionary<string, object> Filtering(string action, string filterParams, 
     return pivotClient.GetJsonData(action, ProductSales.GetSalesData(), filterParams);
 }
 
-~~~ 
+{% endhighlight %} 
 
 ## FetchMembers
 
-[POST/WCF/PivotClient/FetchMembers](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Relational.svc)
+ [POST] [/WCF/PivotClient/FetchMembers](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Relational.svc)
 
 It fetches the details of the members to render the member editor dialog.
 
@@ -138,7 +138,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 
 public Dictionary<string, object> FetchMembers(string action, string currentReport, string customObject, string headerTag)
 {
@@ -146,11 +146,11 @@ public Dictionary<string, object> FetchMembers(string action, string currentRepo
     return pivotClient.GetJsonData(action, ProductSales.GetSalesData(), headerTag);
 }
 
-~~~ 
+{% endhighlight %} 
 
 ## DropNode
 
-[POST/WCF/PivotClient/DropNode](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Relational.svc)
+ [POST] [/WCF/PivotClient/DropNode](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Relational.svc)
 
 It fetches the data required to render the control after drag and drop action.
 
@@ -171,18 +171,18 @@ Response: serialized JSON string
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 
 public Dictionary<string, object> DropNode(string action, string args)
 {
     return pivotClient.GetJsonData(action, ProductSales.GetSalesData(), args);
 }
 
-~~~ 
+{% endhighlight %} 
 
 ## ToolbarOperations
 
-[POST/WCF/PivotClient/ToolbarOperations](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Relational.svc)
+ [POST] [/WCF/PivotClient/ToolbarOperations](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Relational.svc)
 
 It fetches the data required to render the control on performing toolbar operations.
 
@@ -203,18 +203,18 @@ Response: serialized JSON string
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 
 public Dictionary<string, object> ToolbarOperations(string action, string args)
 {
     return pivotClient.GetJsonData(action, ProductSales.GetSalesData(), args);
 }
 
-~~~ 
+{% endhighlight %} 
 
 ## SaveReportToDB
 
-[POST/WCF/PivotClient/SaveReportToDB](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Relational.svc)
+ [POST] [/WCF/PivotClient/SaveReportToDB](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Relational.svc)
 
 It saves the current report to database with the specified name.
 
@@ -238,7 +238,7 @@ Response: None
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 
 public Dictionary<string, object> SaveReportToDB(string reportName, string operationalMode, string analysisMode, string olapReport, string clientReports)
 {
@@ -266,11 +266,11 @@ public Dictionary<string, object> SaveReportToDB(string reportName, string opera
     return null;
 }
 
-~~~ 
+{% endhighlight %} 
 
 ## Export
 
-[POST/WCF/PivotClient/Export](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Relational.svc)
+ [POST] [/WCF/PivotClient/Export](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Relational.svc)
 
 It exports the PivotGrid or PivotChart or both to the selected format.
 
@@ -290,7 +290,7 @@ Response: file
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 
 public void Export(Stream stream)
 {
@@ -302,11 +302,11 @@ public void Export(Stream stream)
     pivotClient.ExportPivotClient(ProductSales.GetSalesData(), args, fileName, System.Web.HttpContext.Current.Response);
 }
 
-~~~ 
+{% endhighlight %} 
 
 ## FetchReportListFromDB
 
-[POST/WCF/PivotClient/FetchReportListFromDB](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Relational.svc)
+ [POST] [/WCF/PivotClient/FetchReportListFromDB](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Relational.svc)
 
 It fetches the list of names of reports stored in database.
 
@@ -327,7 +327,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 
 public Dictionary<string, object> FetchReportListFromDB(string operationalMode, string analysisMode)
 {
@@ -347,11 +347,11 @@ public Dictionary<string, object> FetchReportListFromDB(string operationalMode, 
     return dictionary;
 }
 
-~~~ 
+{% endhighlight %} 
 
 ## LoadReportFromDB
 
-[POST/WCF/PivotClient/LoadReportFromDB](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Relational.svc)
+ [POST] [/WCF/PivotClient/LoadReportFromDB](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Relational.svc)
 
 It loads the report with specified name from the database to the control.
 
@@ -375,7 +375,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 
 public Dictionary<string, object> LoadReportFromDB(string reportName, string operationalMode, string analysisMode, string olapReport, string clientReports)
 {
@@ -412,4 +412,4 @@ public Dictionary<string, object> LoadReportFromDB(string reportName, string ope
     return dictionary;
 }
 
-~~~ 
+{% endhighlight %} 

@@ -2,14 +2,14 @@
 layout: post
 title: webAPI reference for PivotTreeMAp
 description: webAPI reference for OlapTreeMap
-documentation: API
-platform: js-webapi
+documentation: ug
+platform: js
 keywords: PivotTreeMAp , syncfusion, PivotTreeMAp webapi
 ---
 
 ## Initialize
 
-[POST/Api/OlapTreeMap/Initialize](http://js.syncfusion.com/demos/ejServices/api/OlapTreeMap/Initialize)
+ [POST] [/Api/OlapTreeMap/Initialize](http://js.syncfusion.com/demos/ejServices/api/OlapTreeMap/Initialize)
 
 It fetches the OLAP data required to render the PivotTreeMap control from server-end.
 
@@ -31,7 +31,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 public Dictionary<string, object> Initialize(Dictionary<string, object> jsonResult)
 {
     OlapDataManager DataManager = new OlapDataManager(connectionString);
@@ -39,11 +39,11 @@ public Dictionary<string, object> Initialize(Dictionary<string, object> jsonResu
     return htmlHelper.GetJsonData(jsonResult["action"].ToString(), DataManager);
 }
 
-~~~ 
+{% endhighlight %}
 
 ## Drill
 
-[POST/Api/OlapTreeMap/Drill](http://js.syncfusion.com/demos/ejServices/api/OlapTreeMap/Drill)
+ [POST] [/Api/OlapTreeMap/Drill](http://js.syncfusion.com/demos/ejServices/api/OlapTreeMap/Drill)
 
 It fetches the OLAP data required to render the drilled PivotTreeMap.
 
@@ -66,7 +66,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 public Dictionary<string, object> Drill(Dictionary<string, object> jsonResult)
 {
     OlapDataManager DataManager = new OlapDataManager(connectionString);
@@ -74,4 +74,4 @@ public Dictionary<string, object> Drill(Dictionary<string, object> jsonResult)
     return htmlHelper.GetJsonData(jsonResult["action"].ToString(), DataManager, jsonResult["drillInfo"].ToString());
 }
 
-~~~ 
+{% endhighlight %}

@@ -2,14 +2,14 @@
 layout: post
 title: webAPI reference for ejGantt
 description: webAPI reference for ejGantt
-documentation: API
-platform: js-webapi
+documentation: ug
+platform: js
 keywords: ejGantt,Gantt, syncfusion,ejGantt webapi
 ---
 
 ## ExcelExport
 
-[POST/Api/Gantt/ExcelExport](http://js.syncfusion.com/demos/ejServices/api/Gantt/ExcelExport)
+ [POST] [/Api/Gantt/ExcelExport](http://js.syncfusion.com/demos/ejServices/api/Gantt/ExcelExport)
 
 It is used to export the Gantt data to PDF file.
 
@@ -27,7 +27,7 @@ Content-Type: application/octet-stream
 
 ### Code example 
 
-~~~ javascript
+{% highlight js %}
 
 $(function () {
       $("#GanttContainer").ejGantt({
@@ -51,4 +51,4 @@ if (id == "GanttContainer_excelExport") {
 }
 }
 
-~~~ 
+{% endhighlight %}

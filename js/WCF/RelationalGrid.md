@@ -2,14 +2,14 @@
 layout: post
 title: WCF reference for RelationalGrid
 description: WCF reference for RelationalGrid
-documentation: API
-platform: js-wcf
+documentation: ug
+platform: js
 keywords: RelationalGrid, syncfusion, RelationalGrid WCF
 ---
 
 ## Initialize
 
-[POST/WCF/PivotGrid/Initialize](http://js.syncfusion.com/demos/ejServices/wcf/PivotGrid/Relational.svc)
+ [POST] [/WCF/PivotGrid/Initialize](http://js.syncfusion.com/demos/ejServices/wcf/PivotGrid/Relational.svc)
 
 It fetches the data required to render the PivotGrid initially.
 
@@ -30,7 +30,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 
 public Dictionary<string, object> Initialize(string action)
 {
@@ -39,11 +39,11 @@ public Dictionary<string, object> Initialize(string action)
     return dict;
 }
 
-~~~ 
+{% endhighlight %} 
 
 ## FetchMembers
 
-[POST/WCF/PivotGrid/FetchMembers](http://js.syncfusion.com/demos/ejServices/wcf/PivotGrid/Relational.svc)
+ [POST] [/WCF/PivotGrid/FetchMembers](http://js.syncfusion.com/demos/ejServices/wcf/PivotGrid/Relational.svc)
 
 It fetches the members of the selected field to render the member editor tree.
 
@@ -66,7 +66,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 
 public Dictionary<string, object> FetchMembers(string action, string headerTag, string sortedHeaders, string currentReport)
 {
@@ -75,11 +75,11 @@ public Dictionary<string, object> FetchMembers(string action, string headerTag, 
     return dict;
 }
 
-~~~ 
+{% endhighlight %} 
 
 ## Filtering
 
-[POST/WCF/PivotGrid/Filtering](http://js.syncfusion.com/demos/ejServices/wcf/PivotGrid/Relational.svc)
+ [POST] [/WCF/PivotGrid/Filtering](http://js.syncfusion.com/demos/ejServices/wcf/PivotGrid/Relational.svc)
 
 It fetches the data required to render the PivotGrid control on performing filtering action.
 
@@ -102,7 +102,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 
 public Dictionary<string, object> Filtering(string action, string filterParams, string sortedHeaders, string currentReport)
 {
@@ -111,11 +111,11 @@ public Dictionary<string, object> Filtering(string action, string filterParams, 
     return dict;
 }
 
-~~~ 
+{% endhighlight %} 
 
 ## ModifyNodeState
 
-[POST/WCF/PivotGrid/ModifyNodeState](http://js.syncfusion.com/demos/ejServices/wcf/PivotGrid/Relational.svc)
+ [POST] [/WCF/PivotGrid/ModifyNodeState](http://js.syncfusion.com/demos/ejServices/wcf/PivotGrid/Relational.svc)
 
 It fetches the relational data required to render the PivotGrid control on selecting/unselecting nodes in Field list.
 
@@ -141,7 +141,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 
 public Dictionary<string, object> ModifyNodeState(string action, string headerTag, string dropAxis, string sortedHeaders, string filterParams, string currentReport)
 {
@@ -150,11 +150,11 @@ public Dictionary<string, object> ModifyNodeState(string action, string headerTa
     return dict;
 }
 
-~~~ 
+{% endhighlight %} 
 
 ## DropNode
 
-[POST/WCF/PivotGrid/DropNode](http://js.syncfusion.com/demos/ejServices/wcf/PivotGrid/Relational.svc)
+ [POST] [/WCF/PivotGrid/DropNode](http://js.syncfusion.com/demos/ejServices/wcf/PivotGrid/Relational.svc)
 
 It fetches the relational data required to render the PivotGrid control on node drop action.
 
@@ -179,7 +179,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 
 public Dictionary<string, object> DropNode(string action, string dropAxis, string headerTag, string sortedHeaders, string filterParams, string currentReport)
 {
@@ -188,11 +188,11 @@ public Dictionary<string, object> DropNode(string action, string dropAxis, strin
     return dict;
 }
 
-~~~ 
+{% endhighlight %} 
 
 ## Sorting
 
-[POST/WCF/PivotGrid/Sorting](http://js.syncfusion.com/demos/ejServices/wcf/PivotGrid/Relational.svc)
+ [POST] [/WCF/PivotGrid/Sorting](http://js.syncfusion.com/demos/ejServices/wcf/PivotGrid/Relational.svc)
 
 It fetches the sorted data to render the PivotGrid control on performing sorting.
 
@@ -214,7 +214,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 
 public Dictionary<string, object> Sorting(string action, string sortedHeaders, string currentReport)
 {
@@ -223,11 +223,11 @@ public Dictionary<string, object> Sorting(string action, string sortedHeaders, s
     return dict;
 }
 
-~~~ 
+{% endhighlight %} 
 
 ## CalculatedField
 
-[POST/WCF/PivotGrid/CalculatedField](http://js.syncfusion.com/demos/ejServices/wcf/PivotGrid/Relational.svc)
+ [POST] [/WCF/PivotGrid/CalculatedField](http://js.syncfusion.com/demos/ejServices/wcf/PivotGrid/Relational.svc)
 
 It forms a calculated field in values area and fetches the data along with it to render the PivotGrid control.
 
@@ -249,7 +249,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 
 public Dictionary<string, object> CalculatedField(string action, string headerTag, string currentReport)
 {
@@ -258,11 +258,11 @@ public Dictionary<string, object> CalculatedField(string action, string headerTa
     return dict;
 }
 
-~~~ 
+{% endhighlight %} 
 
 ## Export
 
-[POST/WCF/PivotGrid/Export](http://js.syncfusion.com/demos/ejServices/wcf/PivotGrid/Relational.svc)
+ [POST] [/WCF/PivotGrid/Export](http://js.syncfusion.com/demos/ejServices/wcf/PivotGrid/Relational.svc)
 
 It is used to export the PivotGrid data to specified format.
 
@@ -282,7 +282,7 @@ Response: file
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 
 public void Export(Stream stream)
 {
@@ -294,11 +294,11 @@ public void Export(Stream stream)
     htmlHelper.ExportPivotGrid(ProductSales.GetSalesData(), args, fileName, System.Web.HttpContext.Current.Response);
 }
 
-~~~ 
+{% endhighlight %} 
 
 ## SaveReport
 
-[POST/WCF/PivotGrid/SaveReport](http://js.syncfusion.com/demos/ejServices/wcf/PivotGrid/Relational.svc)
+ [POST] [/WCF/PivotGrid/SaveReport](http://js.syncfusion.com/demos/ejServices/wcf/PivotGrid/Relational.svc)
 
 It saves the current report to database with the specified name.
 
@@ -321,7 +321,7 @@ Response: None
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 
 public Dictionary<string, object> SaveReport(string reportName, string operationalMode, string olapReport, string clientReports)
 {
@@ -353,11 +353,11 @@ public Dictionary<string, object> SaveReport(string reportName, string operation
     return null;
 }
 
-~~~ 
+{% endhighlight %} 
 
 ## LoadReportFromDB
 
-[POST/WCF/PivotGrid/LoadReportFromDB](http://js.syncfusion.com/demos/ejServices/wcf/PivotGrid/Relational.svc)
+ [POST] [/WCF/PivotGrid/LoadReportFromDB](http://js.syncfusion.com/demos/ejServices/wcf/PivotGrid/Relational.svc)
 
 It loads a report from the database and refreshes the control with it.
 
@@ -384,7 +384,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 
 public Dictionary<string, object> LoadReportFromDB(string reportName, string operationalMode, string olapReport, string clientReports)
 {
@@ -426,11 +426,11 @@ public Dictionary<string, object> LoadReportFromDB(string reportName, string ope
     return dictionary;
 }
 
-~~~ 
+{% endhighlight %} 
 
 ## DeferUpdate
 
-[POST/WCF/PivotGrid/DeferUpdate](http://js.syncfusion.com/demos/ejServices/wcf/PivotGrid/Relational.svc)
+ [POST] [/WCF/PivotGrid/DeferUpdate](http://js.syncfusion.com/demos/ejServices/wcf/PivotGrid/Relational.svc)
 
 It fetches the data with respect to the report available at that instant (i.e) updates the control with current report.
 
@@ -452,7 +452,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 
 public Dictionary<string, object> DeferUpdate(string action, string filterParams, string sortedHeaders, string currentReport)
 {
@@ -461,11 +461,11 @@ public Dictionary<string, object> DeferUpdate(string action, string filterParams
     return dict;
 }
 
-~~~ 
+{% endhighlight %} 
 
 ## CellEditing
 
-[POST/WCF/PivotGrid/CellEditing](http://js.syncfusion.com/demos/ejServices/wcf/PivotGrid/Relational.svc)
+ [POST] [/WCF/PivotGrid/CellEditing](http://js.syncfusion.com/demos/ejServices/wcf/PivotGrid/Relational.svc)
 
 It rewrites the content of database on editing a cell.
 
@@ -489,7 +489,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 
 public Dictionary<string, object> CellEditing(string action, string index, string valueHeaders, string summaryValues, string currentReport)
 {
@@ -498,4 +498,4 @@ public Dictionary<string, object> CellEditing(string action, string index, strin
     return dict;
 }
 
-~~~ 
+{% endhighlight %} 

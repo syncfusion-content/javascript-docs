@@ -2,14 +2,14 @@
 layout: post
 title: WCF reference for RelationalGauge
 description: WCF reference for RelationalGauge
-documentation: API
-platform: js-wcf
+documentation: ug
+platform: js
 keywords: RelationalGauge, syncfusion, RelationalGauge WCF
 ---
 
 ## Initialize
 
-[POST/WCF/PivotGauge/Initialize](http://js.syncfusion.com/demos/ejServices/wcf/PivotGauge/Relational.svc)
+ [POST] [/WCF/PivotGauge/Initialize](http://js.syncfusion.com/demos/ejServices/wcf/PivotGauge/Relational.svc)
 
 It fetches the Relational data required to render the PivotGauge control from server-end.
 
@@ -30,7 +30,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 
 public Dictionary<string, object> Initialize(string action, string customObject)
 {
@@ -38,4 +38,4 @@ public Dictionary<string, object> Initialize(string action, string customObject)
     return htmlHelper.GetJsonData(action, ProductSales.GetSalesData());
 }
 
-~~~ 
+{% endhighlight %} 

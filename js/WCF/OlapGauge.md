@@ -2,14 +2,14 @@
 layout: post
 title: WCF reference for PivotGauge
 description: WCF reference for OlapGauge
-documentation: API
-platform: js-WCF
+documentation: ug
+platform: js
 keywords: PivotGauge , syncfusion, PivotGauge WCF
 ---
 
 ## Initialize
 
-[POST/WCF/PivotGauge/Initialize](http://js.syncfusion.com/demos/ejServices/wcf/PivotGauge/Olap.svc)
+ [POST] [/WCF/PivotGauge/Initialize](http://js.syncfusion.com/demos/ejServices/wcf/PivotGauge/Olap.svc)
 
 It fetches the OLAP data required to render the PivotGauge control from server-end.
 
@@ -30,7 +30,7 @@ Response: serialized JSON string
 
 ### Code example 
 
-~~~ csharp
+{% highlight c# %}
 
 public Dictionary<string, object> Initialize(string action, string customObject)
 {
@@ -49,4 +49,4 @@ public Dictionary<string, object> Initialize(string action, string customObject)
     return htmlHelper.GetJsonData(action, DataManager);
 }
 
-~~~ 
+{% endhighlight %} 
