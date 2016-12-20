@@ -43,8 +43,8 @@ Map the column name to use as image to cards.</td></tr>
 Map the column name to use as primary key to cards.</td></tr>
 <tr>
 <td>
-{{ '[priorityKey](https://help.syncfusion.com/api/js/ejkanban#members:fields-prioritykey)' | markdownify }} </td><td>
-Map the column name to use as priority key to cards.</td></tr>
+{{ '[priority](https://help.syncfusion.com/api/js/ejkanban#members:fields-priority)' | markdownify }} </td><td>
+Map the column name to use as priority to cards.</td></tr>
 <tr>
 <td>
 {{ '[title](https://help.syncfusion.com/api/js/ejkanban#members:fields-title)' | markdownify }} </td><td>
@@ -81,7 +81,7 @@ The following code example describes the above behavior.
                 fields: {
                     content: "Summary",
                     primaryKey: "Id",
-                    priorityKey: "RankId",
+                    priority: "RankId",
                     tag: "Tags",
                     color: "Type",
                     imageUrl: "ImgUrl"
