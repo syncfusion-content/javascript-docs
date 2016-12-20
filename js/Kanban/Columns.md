@@ -64,7 +64,8 @@ The following code example describes the above behavior.
             ],        
             keyField: "Status",
             fields: {
-                content: "Summary"
+                content: "Summary",
+                primaryKey: "Id"
             }
         });
     }); 
@@ -155,7 +156,8 @@ The following code example describes the above behavior.
             ],
                 keyField: "Status",
                 fields: {
-                    content: "Summary"
+                    content: "Summary",
+                    primaryKey: "Id"
                 }
             });
     });
@@ -211,7 +213,8 @@ The following code example describes the above behavior.
                 ],
                 keyField: "Status",
                 fields: {
-                    content: "Summary"
+                    content: "Summary",
+                    primaryKey: "Id"
                 }
             });
     });
@@ -251,7 +254,8 @@ The following code example describes the above behavior.
                 ],
                 keyField: "Status",
                 fields: {
-                    content: "Summary"
+                    content: "Summary",
+                    primaryKey: "Id"
                 }
             });
     });
