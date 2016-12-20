@@ -190,7 +190,7 @@ The following code example uses to change all the error word occurrences.
 
 The SpellCheck control provides the support to add the custom words into the custom dictionary file.
 
-The [addToDictionary](/js/api/ejspellcheck#methods:addToDictionary) option is used to add the custom words into the custom dictionary file.
+The [addToDictionary](/api/js/ejspellcheck#methods:addToDictionary) option is used to add the custom words into the custom dictionary file.
 
 The following code example uses to add the custom word into the custom dictionary file.
 
