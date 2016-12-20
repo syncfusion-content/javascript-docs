@@ -9,7 +9,7 @@ keywords: PivotChart , syncfusion, PivotChart wcf
 
 ## Initialize
 
- [POST] [/WCF/PivotChart/Initialize](http://js.syncfusion.com/demos/ejServices/wcf/PivotChart/Olap.svc)
+ [POST] [/WCF/PivotChart/Initialize](http://js.syncfusion.com/demos/ejServices/wcf/PivotChart/Olap.svc/Initialize)
 
 It fetches the OLAP data which is required to initialize the PivotChart from server-end.
 
@@ -53,7 +53,7 @@ public Dictionary<string, object> Initialize(string action, string customObject)
 
 ## Drill
 
- [POST] [/WCF/PivotChart/Drill](http://js.syncfusion.com/demos/ejServices/wcf/PivotChart/Olap.svc)
+ [POST] [/WCF/PivotChart/Drill](http://js.syncfusion.com/demos/ejServices/wcf/PivotChart/Olap.svc/Drill)
 
 It fetches the drilled OLAP data which is required to render the PivotChart control from server-end.
 
@@ -100,7 +100,7 @@ public Dictionary<string, object> Drill(string action, string drilledSeries, str
 
 ## Export
 
- [POST] [/WCF/PivotChart/Export](http://js.syncfusion.com/demos/ejServices/wcf/PivotChart/Olap.svc)
+ [POST] [/WCF/PivotChart/Export](http://js.syncfusion.com/demos/ejServices/wcf/PivotChart/Olap.svc/Export)
 
 It exports the PivotChart control at the instant to the specified format.
 
