@@ -56,7 +56,7 @@ $(function() {
 
 N> Refer the **ej.culture.fr-FR.min.js** file in your HTML application and also define the **locale** property for the SpellCheck control with the appropriate **culture-code** [**fr-FR**].
 
-For further information on – how to refer the required culture scripts into your application, refer [here](/js/localization).
+For further information on how to refer the required culture scripts into your application, refer [here](/js/localization).
 
 ### Localizing specific words
 
