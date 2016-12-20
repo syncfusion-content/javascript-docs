@@ -27,7 +27,7 @@ User can export the contents of PivotGrid to an Excel document for future archiv
 
 #### URL
 
-[http://js.syncfusion.com/ejservices/api/JSPivotGridExport/ExcelExport](http://js.syncfusion.com/ejservices/api/JSPivotGridExport/ExcelExport)
+[http://js.syncfusion.com/ejservices/api/PivotGrid/Olap/ExcelExport](http://js.syncfusion.com/ejservices/api/PivotGrid/Olap/ExcelExport)
 
 #### Parameter
 
@@ -37,7 +37,7 @@ User can export the contents of PivotGrid to an Excel document for future archiv
    <th>MultipleExport </th>
    <tr>
       <td>Excel</td>
-      <td>http://js.syncfusion.com/ejservices/api/JSPivotGridExport/ExcelExport</td>
+      <td>http://js.syncfusion.com/ejservices/api/PivotGrid/Olap/ExcelExport</td>
       <td>False</td>
    </tr>
 </table>
@@ -82,7 +82,7 @@ To achieve Excel export, service URL and file name is sent as the parameter.
       function exportBtnClick(args)
       {
         var pGridObj = $('#PivotGrid1').data("ejPivotGrid");
-        pGridObj.exportPivotGrid("http://js.syncfusion.com/ejservices/api/JSPivotGridExport/ExcelExport","fileName");
+        pGridObj.exportPivotGrid("http://js.syncfusion.com/ejservices/api/PivotGrid/Olap/ExcelExport","fileName");
       }
 
      </script>
@@ -95,14 +95,14 @@ To achieve Excel export, service URL and file name is sent as the parameter.
 
 {% highlight c# %}
 
-        [System.Web.Http.ActionName("ExcelExport")]
-        [System.Web.Http.HttpPost]
-        public void ExcelExport()
-        {
-            PivotGridExcelExport pGrid = new PivotGridExcelExport();
-            string args = HttpContext.Current.Request.Form.GetValues(0)[0];
-            pGrid.ExportToExcel(string.Empty, args, HttpContext.Current.Response);
-        }
+[System.Web.Http.ActionName("ExcelExport")]
+[System.Web.Http.HttpPost]
+public void ExcelExport()
+{
+    PivotGridExcelExport pGrid = new PivotGridExcelExport();
+    string args = HttpContext.Current.Request.Form.GetValues(0)[0];
+    pGrid.ExportToExcel(string.Empty, args, HttpContext.Current.Response);
+}
 
 {% endhighlight %}
  
@@ -122,7 +122,7 @@ User can export the contents of PivotGrid to a Word document for future archival
 
 #### URL
 
-[http://js.syncfusion.com/ejservices/api/JSPivotGridExport/WordExport](http://js.syncfusion.com/ejservices/api/JSPivotGridExport/WordExport)
+[http://js.syncfusion.com/ejservices/api/PivotGrid/Olap/WordExport](http://js.syncfusion.com/ejservices/api/PivotGrid/Olap/WordExport)
 
 #### Parameter
 
@@ -132,7 +132,7 @@ User can export the contents of PivotGrid to a Word document for future archival
    <th>MultipleExport </th>
    <tr>
       <td>Word</td>
-      <td>http://js.syncfusion.com/ejservices/api/JSPivotGridExport/WordExport</td>
+      <td>http://js.syncfusion.com/ejservices/api/PivotGrid/Olap/WordExport</td>
       <td>False</td>
    </tr>
 </table>
@@ -177,7 +177,7 @@ To achieve Word export, service URL and file name is sent as the parameter.
       function exportBtnClick(args)
       {
         var pGridObj = $('#PivotGrid1').data("ejPivotGrid");
-        pGridObj.exportPivotGrid("http://js.syncfusion.com/ejservices/api/JSPivotGridExport/WordExport","fileName");
+        pGridObj.exportPivotGrid("http://js.syncfusion.com/ejservices/api/PivotGrid/Olap/WordExport","fileName");
       }
 
      </script>
@@ -190,14 +190,14 @@ To achieve Word export, service URL and file name is sent as the parameter.
 
 {% highlight c# %}
 
-        [System.Web.Http.ActionName("WordExport")]
-        [System.Web.Http.HttpPost]
-        public void WordExport()
-        {
-            PivotGridWordExport pGrid = new PivotGridWordExport();
-            string args = HttpContext.Current.Request.Form.GetValues(0)[0];
-            pGrid.ExportToWord(string.Empty, args, HttpContext.Current.Response);
-        }
+[System.Web.Http.ActionName("WordExport")]
+[System.Web.Http.HttpPost]
+public void WordExport()
+{
+    PivotGridWordExport pGrid = new PivotGridWordExport();
+    string args = HttpContext.Current.Request.Form.GetValues(0)[0];
+    pGrid.ExportToWord(string.Empty, args, HttpContext.Current.Response);
+}
 
 {% endhighlight %}
  
@@ -216,7 +216,7 @@ User can export the contents of PivotGrid to a PDF document for future archival,
 
 #### URL
 
-[http://js.syncfusion.com/ejservices/api/JSPivotGridExport/PDFExport](http://js.syncfusion.com/ejservices/api/JSPivotGridExport/PDFExport)
+[http://js.syncfusion.com/ejservices/api/PivotGrid/Olap/PDFExport](http://js.syncfusion.com/ejservices/api/PivotGrid/Olap/PDFExport)
 
 #### Parameter
 
@@ -226,7 +226,7 @@ User can export the contents of PivotGrid to a PDF document for future archival,
    <th>MultipleExport </th>
    <tr>
       <td>PDF</td>
-      <td>http://js.syncfusion.com/ejservices/api/JSPivotGridExport/PDFExport</td>
+      <td>http://js.syncfusion.com/ejservices/api/PivotGrid/Olap/PDFExport</td>
       <td>False</td>
    </tr>
 </table>
@@ -271,7 +271,7 @@ To achieve PDF export, service URL and file name is sent as the parameter.
       function exportBtnClick(args)
       {
         var pGridObj = $('#PivotGrid1').data("ejPivotGrid");
-        pGridObj.exportPivotGrid("http://js.syncfusion.com/ejservices/api/JSPivotGridExport/PDFExport","fileName");
+        pGridObj.exportPivotGrid("http://js.syncfusion.com/ejservices/api/PivotGrid/Olap/PDFExport","fileName");
       }
 
      </script>
@@ -284,14 +284,14 @@ To achieve PDF export, service URL and file name is sent as the parameter.
 
 {% highlight c# %}
 
-        [System.Web.Http.ActionName("PDFExport")]
-        [System.Web.Http.HttpPost]
-        public void PDFExport()
-        {
-            PivotGridPDFExport pGrid = new PivotGridPDFExport();
-            string args = HttpContext.Current.Request.Form.GetValues(0)[0];
-            pGrid.ExportToPDF(string.Empty, args, HttpContext.Current.Response);
-        }
+[System.Web.Http.ActionName("PDFExport")]
+[System.Web.Http.HttpPost]
+public void PDFExport()
+{
+    PivotGridPDFExport pGrid = new PivotGridPDFExport();
+    string args = HttpContext.Current.Request.Form.GetValues(0)[0];
+    pGrid.ExportToPDF(string.Empty, args, HttpContext.Current.Response);
+}
 
 {% endhighlight %}
  
@@ -310,7 +310,7 @@ User can export the contents of PivotGrid to a CSV document for future archival,
 
 #### URL
 
-[http://js.syncfusion.com/ejservices/api/JSPivotGridExport/CSVExport](http://js.syncfusion.com/ejservices/api/JSPivotGridExport/CSVExport)
+[http://js.syncfusion.com/ejservices/api/PivotGrid/Olap/CSVExport](http://js.syncfusion.com/ejservices/api/PivotGrid/Olap/CSVExport)
 
 #### Parameter
 
@@ -320,7 +320,7 @@ User can export the contents of PivotGrid to a CSV document for future archival,
    <th>MultipleExport </th>
    <tr>
       <td>CSV</td>
-      <td>http://js.syncfusion.com/ejservices/api/JSPivotGridExport/CSVExport</td>
+      <td>http://js.syncfusion.com/ejservices/api/PivotGrid/Olap/CSVExport</td>
       <td>False</td>
    </tr>
 </table>
@@ -365,7 +365,7 @@ To achieve CSV export, service URL and file name is sent as the parameter.
       function exportBtnClick(args)
       {
         var pGridObj = $('#PivotGrid1').data("ejPivotGrid");
-        pGridObj.exportPivotGrid("http://js.syncfusion.com/ejservices/api/JSPivotGridExport/CSVExport","fileName");
+        pGridObj.exportPivotGrid("http://js.syncfusion.com/ejservices/api/PivotGrid/Olap/CSVExport","fileName");
       }
 
      </script>
@@ -378,14 +378,14 @@ To achieve CSV export, service URL and file name is sent as the parameter.
 
 {% highlight c# %}
 
-        [System.Web.Http.ActionName("CSVExport")]
-        [System.Web.Http.HttpPost]
-        public void CSVExport()
-        {
-            PivotGridCSVExport pGrid = new PivotGridCSVExport();
-            string args = HttpContext.Current.Request.Form.GetValues(0)[0];
-            pGrid.ExportToCSV(string.Empty, args, HttpContext.Current.Response);
-        }
+[System.Web.Http.ActionName("CSVExport")]
+[System.Web.Http.HttpPost]
+public void CSVExport()
+{
+    PivotGridCSVExport pGrid = new PivotGridCSVExport();
+    string args = HttpContext.Current.Request.Form.GetValues(0)[0];
+    pGrid.ExportToCSV(string.Empty, args, HttpContext.Current.Response);
+}
 
 {% endhighlight %}
  

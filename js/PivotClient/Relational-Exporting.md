@@ -36,7 +36,7 @@ In order to perform exporting with the use of a custom service method, the servi
         });
         
         function Export(args) {
-            args.url = "http://js.syncfusion.com/ejservices/api/JSPivotClientExport/ExportPivotClient";
+            args.url = "http://js.syncfusion.com/ejservices/api/PivotClient/Olap/Export";
         }
 
 {% endhighlight %}
@@ -54,7 +54,7 @@ The name of the document to be exported could be customized. Following code samp
         });
         
         function Export(args) {
-            args.url = "http://js.syncfusion.com/ejservices/api/JSPivotClientExport/ExportPivotClient";
+            args.url = "http://js.syncfusion.com/ejservices/api/PivotClient/Olap/Export";
             args.fileName="File name is customized here";
         }
 
@@ -64,7 +64,7 @@ The name of the document to be exported could be customized. Following code samp
 
 I> This feature is applicable only at server mode operation.
  
-In order to perform exporting with the use of PivotEngine available in server-side, the 'url' property obtained in the “beforeExport” event is set to empty as shown below.
+In order to perform exporting with the use of PivotEngine available in server-side, the 'exportMode' property obtained in the “beforeExport” event is set to "ej.PivotClient.ExportMode.PivotEngine" as shown below.
 
 {% highlight javascript %}
 
@@ -75,7 +75,7 @@ In order to perform exporting with the use of PivotEngine available in server-si
         });
         
         function Export(args) {
-            args.url = "";
+            args.exportMode = ej.PivotClient.ExportMode.PivotEngine;
         }
 
  {% endhighlight %}
