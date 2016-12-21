@@ -10,14 +10,14 @@ keywords: customization, spellcheck customization, misspell word appearance, res
 
 The Essential JavaScript SpellCheck provides option to customize for the following scenarios.
 
-    * Misspell word appearance
-    * Restrict suggestion count
+* Misspell word appearance
+* Restrict suggestion count
     
 ## Misspell word appearance
 
 The SpellCheck control provide the support([misspellWordCss](/js/api/ejspellcheck#members:misspellwordcss)) to display the error word in user defined style. By default displaying the error words with the red underline. 
 
-The following code example depicts the way to customize the error word highlight (displaying error word font in green color).
+The following code example depicts the way to customize the error word highlight (displaying error word with red color font and lightblue background).
 
 {% highlight html %}
     <div id="SpellCheck"></div>
@@ -35,7 +35,8 @@ The following code example depicts the way to customize the error word highlight
     </script>
     <style>
         .highlight {
-            color: green;
+            background-color: lightblue;
+            color: red;
         }
     </style> 
 

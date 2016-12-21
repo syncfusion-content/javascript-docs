@@ -9,7 +9,7 @@ keywords: PivotClient, syncfusion, PivotClient WCF
 
 ## Initialize
 
- [POST] [/WCF/PivotClient/Initialize](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc)
+ [POST] [/WCF/PivotClient/Initialize](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc/Initialize)
 
 It fetches the data required to render the PivotClient control initially.
 
@@ -54,7 +54,7 @@ public Dictionary<string, object> Initialize(string action, string customObject,
 
 ## InitializeGrid
 
- [POST] [/WCF/PivotClient/InitializeGrid](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc)
+ [POST] [/WCF/PivotClient/InitializeGrid](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc/InitializeGrid)
 
 It fetches the data required to render the PivotGrid control inside PivotClient.
 
@@ -95,7 +95,7 @@ public Dictionary<string, object> InitializeGrid(string action, string currentRe
 
 ## InitializeChart
 
- [POST] [/WCF/PivotClient/InitializeChart](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc)
+ [POST] [/WCF/PivotClient/InitializeChart](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc/InitializeChart)
 
 It fetches the data required to render the PivotChart control inside PivotClient.
 
@@ -130,7 +130,7 @@ public Dictionary<string, object> InitializeChart(string action, string currentR
 
 ## InitializeTreeMap
 
- [POST] [/WCF/PivotClient/InitializeTreeMap](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc)
+ [POST] [/WCF/PivotClient/InitializeTreeMap](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc/InitializeTreeMap)
 
 It fetches the data required to render the PivotTreeMap control inside PivotClient.
 
@@ -166,7 +166,7 @@ public Dictionary<string, object> InitializeTreeMap(string action, string curren
 
 ## DrillChart
 
- [POST] [/WCF/PivotClient/DrillChart](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc)
+ [POST] [/WCF/PivotClient/DrillChart](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc/DrillChart)
 
 It fetches the drilled data required to render the PivotChart on drilling.
 
@@ -204,7 +204,7 @@ public Dictionary<string, object> DrillChart(string action, string drilledSeries
 
 ## DrillTreeMap
 
- [POST] [/WCF/PivotClient/DrillTreeMap](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc)
+ [POST] [/WCF/PivotClient/DrillTreeMap](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc/DrillTreeMap)
 
 It fetches the drilled data required to render the PivotTreeMap on drilling.
 
@@ -241,7 +241,7 @@ public Dictionary<string, object> DrillTreeMap(string action, string drillInfo, 
 
 ## DrillGrid
 
- [POST] [/WCF/PivotClient/DrillGrid](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc)
+ [POST] [/WCF/PivotClient/DrillGrid](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc/DrillGrid)
 
 It fetches the drilled data required to render the PivotGrid on drilling.
 
@@ -285,7 +285,7 @@ public Dictionary<string, object> DrillGrid(string action, string cellPosition, 
 
 ## FilterElement
 
- [POST] [/WCF/PivotClient/FilterElement](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc)
+ [POST] [/WCF/PivotClient/FilterElement](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc/FilterElement)
 
 It fetches the filtered data required to render the control after performing filtering.
 
@@ -322,7 +322,7 @@ public Dictionary<string, object> FilterElement(string action, string clientPara
 
 ## RemoveSplitButton
 
- [POST] [/WCF/PivotClient/RemoveSplitButton](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc)
+ [POST] [/WCF/PivotClient/RemoveSplitButton](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc/RemoveSplitButton)
 
 It fetches the drilled data required to render the PivotChart on removing an item from report.
 
@@ -359,7 +359,7 @@ public Dictionary<string, object> RemoveSplitButton(string action, string client
 
 ## FetchMemberTreeNodes
 
- [POST] [/WCF/PivotClient/FetchMemberTreeNodes](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc)
+ [POST] [/WCF/PivotClient/FetchMemberTreeNodes](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc/FetchMemberTreeNodes)
 
 It fetches the details of the members to render the member editor dialog.
 
@@ -394,7 +394,7 @@ public Dictionary<string, object> FetchMemberTreeNodes(string action, string dim
 
 ## DropNode
 
- [POST] [/WCF/PivotClient/DropNode](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc)
+ [POST] [/WCF/PivotClient/DropNode](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc/DropNode)
 
 It fetches the data required to render the control after drag and drop action.
 
@@ -432,7 +432,7 @@ public Dictionary<string, object> DropNode(string action, string dropType, strin
 
 ## CubeChange
 
- [POST] [/WCF/PivotClient/CubeChange](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc)
+ [POST] [/WCF/PivotClient/CubeChange](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc/CubeChange)
 
 It fetches the data required to render the control on changing the cube.
 
@@ -466,7 +466,7 @@ public Dictionary<string, object> CubeChange(string action, string cubeName, str
 
 ## MeasureGroup
 
- [POST] [/WCF/PivotClient/MeasureGroup](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc)
+ [POST] [/WCF/PivotClient/MeasureGroup](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc/MeasureGroup)
 
 It fetches the data required to render the control on changing the measure group.
 
@@ -499,7 +499,7 @@ public Dictionary<string, object> MeasureGroup(string action, string measureGrou
 
 ## ToolbarOperations
 
- [POST] [/WCF/PivotClient/ToolbarOperations](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc)
+ [POST] [/WCF/PivotClient/ToolbarOperations](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc/ToolbarOperations)
 
 It fetches the data required to render the control on performing toolbar operations.
 
@@ -539,7 +539,7 @@ public Dictionary<string, object> ToolbarOperations(string action, string toolba
 
 ## ExpandMember
 
- [POST] [/WCF/PivotClient/ExpandMember](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc)
+ [POST] [/WCF/PivotClient/ExpandMember](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc/ExpandMember)
 
 It fetches the children nodes on expanding a node in Member Editor.
 
@@ -582,7 +582,7 @@ public Dictionary<string, object> ExpandMember(string action, bool checkedStatus
 
 ## UpdateReport
 
- [POST] [/WCF/PivotClient/UpdateReport](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc)
+ [POST] [/WCF/PivotClient/UpdateReport](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc/UpdateReport)
 
 It updates the report in server side.
 
@@ -616,7 +616,7 @@ public Dictionary<string, object> UpdateReport(string action, string clientParam
 
 ## SaveReportToDB
 
- [POST] [/WCF/PivotClient/SaveReportToDB](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc)
+ [POST] [/WCF/PivotClient/SaveReportToDB](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc/SaveReportToDB)
 
 It saves the current report to database with the specified name.
 
@@ -675,7 +675,7 @@ public Dictionary<string, object> SaveReportToDB(string reportName, string opera
 
 ## FetchReportListFromDB
 
- [POST] [/WCF/PivotClient/FetchReportListFromDB](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc)
+ [POST] [/WCF/PivotClient/FetchReportListFromDB](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc/FetchReportListFromDB)
 
 It fetches the list of names of reports stored in database.
 
@@ -720,7 +720,7 @@ public Dictionary<string, object> FetchReportListFromDB(string operationalMode, 
 
 ## LoadReportFromDB
 
- [POST] [/WCF/PivotClient/LoadReportFromDB](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc)
+ [POST] [/WCF/PivotClient/LoadReportFromDB](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc/LoadReportFromDB)
 
 It loads the report with specified name from the database to the control.
 
@@ -784,7 +784,7 @@ public Dictionary<string, object> LoadReportFromDB(string reportName, string ope
 
 ## GetMDXQuery
 
- [POST] [/WCF/PivotClient/GetMDXQuery](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc)
+ [POST] [/WCF/PivotClient/GetMDXQuery](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc/GetMDXQuery)
 
 It retrieves the MDX query formed to fetch the data at that instant.
 
@@ -817,7 +817,7 @@ public string GetMDXQuery(string olapReport)
 
 ## ToggleAxis
 
- [POST] [/WCF/PivotClient/ToggleAxis](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc)
+ [POST] [/WCF/PivotClient/ToggleAxis](http://js.syncfusion.com/demos/ejServices/wcf/PivotClient/Olap.svc/ToggleAxis)
 
 It fetches the data after interchanging the elements in row and column axes.
 

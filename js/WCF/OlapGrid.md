@@ -9,7 +9,7 @@ keywords: PivotGrid , syncfusion, PivotGrid WCF
 
 ## Initialize
 
- [POST] [/WCF/PivotGrid/Initialize](http://js.syncfusion.com/demos/ejServices/wcf/PivotGrid/Olap.svc)
+ [POST] [/WCF/PivotGrid/Initialize](http://js.syncfusion.com/demos/ejServices/wcf/PivotGrid/Olap.svc/Initialize)
 
 It fetches the OLAP data required to render the PivotGrid initially from server-end.
 
@@ -55,7 +55,7 @@ public Dictionary<string, object> Initialize(string action, string gridLayout, b
 
 ## Drill
 
- [POST] [/WCF/PivotGrid/Drill](http://js.syncfusion.com/demos/ejServices/wcf/PivotGrid/Olap.svc)
+ [POST] [/WCF/PivotGrid/Drill](http://js.syncfusion.com/demos/ejServices/wcf/PivotGrid/Olap.svc/Drill)
 
 It fetches the OLAP data required to render the PivotGrid control after drilling it.
 
@@ -105,7 +105,7 @@ public Dictionary<string, object> Drill(string action, string cellPosition, stri
 
 ## DropNode
 
- [POST] [/WCF/PivotGrid/DropNode](http://js.syncfusion.com/demos/ejServices/wcf/PivotGrid/Olap.svc)
+ [POST] [/WCF/PivotGrid/DropNode](http://js.syncfusion.com/demos/ejServices/wcf/PivotGrid/Olap.svc/DropNode)
 
 It fetches the data required to render the control after performing node drop operation.
 
@@ -143,7 +143,7 @@ public Dictionary<string, object> DropNode(string action, string dropType, strin
 
 ## Filtering
 
- [POST] [/WCF/PivotGrid/Filtering](http://js.syncfusion.com/demos/ejServices/wcf/PivotGrid/Olap.svc)
+ [POST] [/WCF/PivotGrid/Filtering](http://js.syncfusion.com/demos/ejServices/wcf/PivotGrid/Olap.svc/Filtering)
 
 It fetches the OLAP data required to render the control after performing filtering.
 
@@ -179,7 +179,7 @@ public Dictionary<string, object> Filtering(string action, string filterParams, 
 
 ## FetchMembers
 
- [POST] [/WCF/PivotGrid/FetchMembers](http://js.syncfusion.com/demos/ejServices/wcf/PivotGrid/Olap.svc)
+ [POST] [/WCF/PivotGrid/FetchMembers](http://js.syncfusion.com/demos/ejServices/wcf/PivotGrid/Olap.svc/FetchMembers)
 
 It fetches the members of the selected hierarchy to render the member editor.
 
@@ -215,7 +215,7 @@ public Dictionary<string, object> FetchMembers(string action, string headerTag, 
 
 ## Paging
 
- [POST] [/WCF/PivotGrid/Paging](http://js.syncfusion.com/demos/ejServices/wcf/PivotGrid/Olap.svc)
+ [POST] [/WCF/PivotGrid/Paging](http://js.syncfusion.com/demos/ejServices/wcf/PivotGrid/Olap.svc/Paging)
 
 It fetches the OLAP data required to render the specific page of PivotGrid with paging enabled.
 
@@ -252,7 +252,7 @@ public Dictionary<string, object> Paging(string action, string pagingInfo, strin
 
 ## RemoveButton
 
- [POST] [/WCF/PivotGrid/RemoveButton](http://js.syncfusion.com/demos/ejServices/wcf/PivotGrid/Olap.svc)
+ [POST] [/WCF/PivotGrid/RemoveButton](http://js.syncfusion.com/demos/ejServices/wcf/PivotGrid/Olap.svc/RemoveButton)
 
 It fetches the data required to render the control after removing a button.
 
@@ -288,7 +288,7 @@ public Dictionary<string, object> RemoveButton(string action, string headerInfo,
 
 ## ExpandMember
 
- [POST] [/WCF/PivotGrid/ExpandMember](http://js.syncfusion.com/demos/ejServices/wcf/PivotGrid/Olap.svc)
+ [POST] [/WCF/PivotGrid/ExpandMember](http://js.syncfusion.com/demos/ejServices/wcf/PivotGrid/Olap.svc/ExpandMember)
 
 It fetches the data to render children nodes of a member in Member Editor Tree.
 
@@ -327,7 +327,7 @@ public Dictionary<string, object> ExpandMember(string action, bool checkedStatus
 
 ## Export
 
- [POST] [/WCF/PivotGrid/Export](http://js.syncfusion.com/demos/ejServices/wcf/PivotGrid/Olap.svc)
+ [POST] [/WCF/PivotGrid/Export](http://js.syncfusion.com/demos/ejServices/wcf/PivotGrid/Olap.svc/Export)
 
 It is used to export the PivotGrid data to specified format.
 
@@ -362,7 +362,7 @@ public void Export(Stream stream)
 
 ## SaveReport
 
- [POST] [/WCF/PivotGrid/SaveReport](http://js.syncfusion.com/demos/ejServices/wcf/PivotGrid/Olap.svc)
+ [POST] [/WCF/PivotGrid/SaveReport](http://js.syncfusion.com/demos/ejServices/wcf/PivotGrid/Olap.svc/SaveReport)
 
 It saves the current report to database with the specified name.
 
@@ -422,7 +422,7 @@ public Dictionary<string, object> SaveReport(string reportName, string operation
 
 ## LoadReportFromDB
 
- [POST] [/WCF/PivotGrid/LoadReportFromDB](http://js.syncfusion.com/demos/ejServices/wcf/PivotGrid/Olap.svc)
+ [POST] [/WCF/PivotGrid/LoadReportFromDB](http://js.syncfusion.com/demos/ejServices/wcf/PivotGrid/Olap.svc/LoadReportFromDB)
 
 It loads a report from the database and refreshes the control with it.
 
@@ -503,7 +503,7 @@ public Dictionary<string, object> LoadReportFromDB(string action, string layout,
 
 ## DeferUpdate
 
- [POST] [/WCF/PivotGrid/DeferUpdate](http://js.syncfusion.com/demos/ejServices/wcf/PivotGrid/Olap.svc)
+ [POST] [/WCF/PivotGrid/DeferUpdate](http://js.syncfusion.com/demos/ejServices/wcf/PivotGrid/Olap.svc/DeferUpdate)
 
 It fetches the data with respect to the report available at that instant (i.e) updates the control with current report.
 
