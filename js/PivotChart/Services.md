@@ -27,7 +27,7 @@ User can export contents of the PivotChart to Excel document for future archival
 
 #### URL
 
-[http://js.syncfusion.com/ejservices/api/JSPivotChartExport/ExcelExport](http://js.syncfusion.com/ejservices/api/JSPivotChartExport/ExcelExport)
+[http://js.syncfusion.com/ejservices/api/PivotChart/Olap/ExcelExport](http://js.syncfusion.com/ejservices/api/PivotChart/Olap/ExcelExport)
 
 #### Parameter
 <table>
@@ -36,7 +36,7 @@ User can export contents of the PivotChart to Excel document for future archival
    <th>MultipleExport </th>
    <tr>
       <td>Excel</td>
-      <td>http://js.syncfusion.com/ejservices/api/JSPivotChartExport/ExcelExport</td>
+      <td>http://js.syncfusion.com/ejservices/api/PivotChart/Olap/ExcelExport</td>
       <td>False</td>
    </tr>
 </table>
@@ -81,7 +81,7 @@ To achieve Excel export, service URL and file name is sent as the parameter.
        function exportBtnClick(args)
        {
           var pChartObj = $('#PivotChart1').data("ejPivotChart");
-          pChartObj.exportPivotChart("http://js.syncfusion.com/ejservices/api/JSPivotChartExport/ExcelExport","fileName"); 
+          pChartObj.exportPivotChart("http://js.syncfusion.com/ejservices/api/PivotChart/Olap/ExcelExport","fileName"); 
        }
        
      </script>
@@ -94,15 +94,15 @@ To achieve Excel export, service URL and file name is sent as the parameter.
 
 {% highlight c# %}
 
-        [System.Web.Http.ActionName("ExcelExport")]
-        [System.Web.Http.HttpPost]
-        public void ExcelExport()
-        {
-            PivotChartExcelExport pivotChartExcelExport = new PivotChartExcelExport();
-            string args = HttpContext.Current.Request.Form.GetValues(0)[0];
-            Dictionary<string, string> chartParams = serializer.Deserialize<Dictionary<string, string>>(args);
-            pivotChartExcelExport.ExportToExcel(chartParams);
-        }
+[System.Web.Http.ActionName("ExcelExport")]
+[System.Web.Http.HttpPost]
+public void ExcelExport()
+{
+    PivotChartExcelExport pivotChartExcelExport = new PivotChartExcelExport();
+    string args = HttpContext.Current.Request.Form.GetValues(0)[0];
+    Dictionary<string, string> chartParams = serializer.Deserialize<Dictionary<string, string>>(args);
+    pivotChartExcelExport.ExportToExcel(chartParams);
+}
 
 {% endhighlight %}
  
@@ -121,7 +121,7 @@ User can export contents of the PivotChart to Word document for future archival,
 
 #### URL
 
-[http://js.syncfusion.com/ejservices/api/JSPivotChartExport/WordExport](http://js.syncfusion.com/ejservices/api/JSPivotChartExport/WordExport)
+[http://js.syncfusion.com/ejservices/api/PivotChart/Olap/WordExport](http://js.syncfusion.com/ejservices/api/PivotChart/Olap/WordExport)
 
 #### Parameter
 <table>
@@ -130,7 +130,7 @@ User can export contents of the PivotChart to Word document for future archival,
    <th>MultipleExport </th>
    <tr>
       <td>Word</td>
-      <td>http://js.syncfusion.com/ejservices/api/JSPivotChartExport/WordExport</td>
+      <td>http://js.syncfusion.com/ejservices/api/PivotChart/Olap/WordExport</td>
       <td>False</td>
    </tr>
 </table>
@@ -175,7 +175,7 @@ To achieve Word export, service URL and file name is sent as the parameter.
        function exportBtnClick(args)
        {
           var pChartObj = $('#PivotChart1').data("ejPivotChart");
-          pChartObj.exportPivotChart("http://js.syncfusion.com/ejservices/api/JSPivotChartExport/WordExport","fileName");
+          pChartObj.exportPivotChart("http://js.syncfusion.com/ejservices/api/PivotChart/Olap/WordExport","fileName");
        }
        
      </script>
@@ -188,15 +188,15 @@ To achieve Word export, service URL and file name is sent as the parameter.
 
 {% highlight c# %}
 
-        [System.Web.Http.ActionName("WordExport")]
-        [System.Web.Http.HttpPost]
-        public void WordExport()
-        {
-            PivotChartWordExport pivotChartWordExport = new PivotChartWordExport();
-            string args = HttpContext.Current.Request.Form.GetValues(0)[0];
-            Dictionary<string, string> chartParams = serializer.Deserialize<Dictionary<string, string>>(args);
-            pivotChartWordExport.ExportToWord(chartParams);
-        }
+[System.Web.Http.ActionName("WordExport")]
+[System.Web.Http.HttpPost]
+public void WordExport()
+{
+    PivotChartWordExport pivotChartWordExport = new PivotChartWordExport();
+    string args = HttpContext.Current.Request.Form.GetValues(0)[0];
+    Dictionary<string, string> chartParams = serializer.Deserialize<Dictionary<string, string>>(args);
+    pivotChartWordExport.ExportToWord(chartParams);
+}
 
 {% endhighlight %}
  
@@ -215,7 +215,7 @@ User can export contents of the PivotChart to PDF document for future archival, 
 
 #### URL
 
-[http://js.syncfusion.com/ejservices/api/JSPivotChartExport/PDFExport](http://js.syncfusion.com/ejservices/api/JSPivotChartExport/PDFExport)
+[http://js.syncfusion.com/ejservices/api/PivotChart/Olap/PDFExport](http://js.syncfusion.com/ejservices/api/PivotChart/Olap/PDFExport)
 
 #### Parameter
 <table>
@@ -224,7 +224,7 @@ User can export contents of the PivotChart to PDF document for future archival, 
    <th>MultipleExport </th>
    <tr>
       <td>PDF</td>
-      <td>http://js.syncfusion.com/ejservices/api/JSPivotChartExport/PDFExport</td>
+      <td>http://js.syncfusion.com/ejservices/api/PivotChart/Olap/PDFExport</td>
       <td>False</td>
    </tr>
 </table>
@@ -269,7 +269,7 @@ To achieve PDF export, service URL and file name is sent as the parameter.
        function exportBtnClick(args)
        {
           var pChartObj = $('#PivotChart1').data("ejPivotChart");
-          pChartObj.exportPivotChart("http://js.syncfusion.com/ejservices/api/JSPivotChartExport/PDFExport","fileName");   
+          pChartObj.exportPivotChart("http://js.syncfusion.com/ejservices/api/PivotChart/Olap/PDFExport","fileName");   
        }
        
      </script>
@@ -282,15 +282,15 @@ To achieve PDF export, service URL and file name is sent as the parameter.
 
 {% highlight c# %}
 
-        [System.Web.Http.ActionName("PDFExport")]
-        [System.Web.Http.HttpPost]
-        public void PDFExport()
-        {
-            PivotChartPDFExport pivotChartPDFExport = new PivotChartPDFExport();
-            string args = HttpContext.Current.Request.Form.GetValues(0)[0];
-            Dictionary<string, string> chartParams = serializer.Deserialize<Dictionary<string, string>>(args);
-            pivotChartPDFExport.ExportToPDF(chartParams);
-        }
+[System.Web.Http.ActionName("PDFExport")]
+[System.Web.Http.HttpPost]
+public void PDFExport()
+{
+    PivotChartPDFExport pivotChartPDFExport = new PivotChartPDFExport();
+    string args = HttpContext.Current.Request.Form.GetValues(0)[0];
+    Dictionary<string, string> chartParams = serializer.Deserialize<Dictionary<string, string>>(args);
+    pivotChartPDFExport.ExportToPDF(chartParams);
+}
 
 {% endhighlight %}
  
@@ -315,7 +315,7 @@ User can export contents of the PivotChart to image format for future archival, 
 
 #### URL
 
-[http://js.syncfusion.com/ejservices/api/JSPivotChartExport/ImageExport](http://js.syncfusion.com/ejservices/api/JSPivotChartExport/ImageExport)
+[http://js.syncfusion.com/ejservices/api/PivotChart/Olap/ImageExport](http://js.syncfusion.com/ejservices/api/PivotChart/Olap/ImageExport)
 
 #### Parameter
 <table>
@@ -324,7 +324,7 @@ User can export contents of the PivotChart to image format for future archival, 
    <th>MultipleExport </th>
    <tr>
       <td>Image</td>
-      <td>http://js.syncfusion.com/ejservices/api/JSPivotChartExport/ImageExport</td>
+      <td>http://js.syncfusion.com/ejservices/api/PivotChart/Olap/ImageExport</td>
       <td>False</td>
    </tr>
 </table>
@@ -369,11 +369,11 @@ To export PivotChart in PNG format, service URL, file name and **“ej.PivotChar
        function exportBtnClick(args)
        {
           var pChartObj = $('#PivotChart1').data("ejPivotChart");
-          pChartObj.exportPivotChart("http://js.syncfusion.com/ejservices/api/JSPivotChartExport/ImageExport","fileName", ej.PivotChart.ExportOptions.PNG); //PNG Export
-          pChartObj.exportPivotChart("http://js.syncfusion.com/ejservices/api/JSPivotChartExport/ImageExport","fileName", ej.PivotChart.ExportOptions.EMF); //EMF Export
-          pChartObj.exportPivotChart("http://js.syncfusion.com/ejservices/api/JSPivotChartExport/ImageExport","fileName", ej.PivotChart.ExportOptions.JPG); //JPG Export
-          pChartObj.exportPivotChart("http://js.syncfusion.com/ejservices/api/JSPivotChartExport/ImageExport","fileName", ej.PivotChart.ExportOptions.GIF); //GIF Export
-          pChartObj.exportPivotChart("http://js.syncfusion.com/ejservices/api/JSPivotChartExport/ImageExport","fileName", ej.PivotChart.ExportOptions.BMP); //BMP Export
+          pChartObj.exportPivotChart("http://js.syncfusion.com/ejservices/api/PivotChart/Olap/ImageExport","fileName", ej.PivotChart.ExportOptions.PNG); //PNG Export
+          pChartObj.exportPivotChart("http://js.syncfusion.com/ejservices/api/PivotChart/Olap/ImageExport","fileName", ej.PivotChart.ExportOptions.EMF); //EMF Export
+          pChartObj.exportPivotChart("http://js.syncfusion.com/ejservices/api/PivotChart/Olap/ImageExport","fileName", ej.PivotChart.ExportOptions.JPG); //JPG Export
+          pChartObj.exportPivotChart("http://js.syncfusion.com/ejservices/api/PivotChart/Olap/ImageExport","fileName", ej.PivotChart.ExportOptions.GIF); //GIF Export
+          pChartObj.exportPivotChart("http://js.syncfusion.com/ejservices/api/PivotChart/Olap/ImageExport","fileName", ej.PivotChart.ExportOptions.BMP); //BMP Export
        }
        
      </script>
@@ -386,15 +386,15 @@ To export PivotChart in PNG format, service URL, file name and **“ej.PivotChar
 
 {% highlight c# %}
 
-        [System.Web.Http.ActionName("ImageExport")]
-        [System.Web.Http.HttpPost]
-        public void ImageExport()
-        {
-            PivotChartImageExport pivotChartImageExport = new PivotChartImageExport();
-            string args = HttpContext.Current.Request.Form.GetValues(0)[0];
-            Dictionary<string, string> chartParams = serializer.Deserialize<Dictionary<string, string>>(args);
-            pivotChartImageExport.ExportToImage(chartParams);
-        }  
+[System.Web.Http.ActionName("ImageExport")]
+[System.Web.Http.HttpPost]
+public void ImageExport()
+{
+    PivotChartImageExport pivotChartImageExport = new PivotChartImageExport();
+    string args = HttpContext.Current.Request.Form.GetValues(0)[0];
+    Dictionary<string, string> chartParams = serializer.Deserialize<Dictionary<string, string>>(args);
+    pivotChartImageExport.ExportToImage(chartParams);
+}  
 
 {% endhighlight %}
  
