@@ -44,7 +44,7 @@ The PivotChart control can be exported by invoking **“exportPivotChart”** me
             var chartObj = $('#PivotChart1').data("ejPivotChart");
             
             //If you render PivotChart in Client Mode, set the export option like below.
-            chartObj.exportPivotChart("http://js.syncfusion.com/ejservices/api/JSPivotChartExport/ExcelExport","fileName");
+            chartObj.exportPivotChart("http://js.syncfusion.com/ejservices/api/PivotChart/Olap/ExcelExport","fileName");
             
             //If you render PivotChart in Server Mode, set the export option like below.
             chartObj.exportPivotChart(ej.PivotChart.ExportOptions.Excel);
@@ -97,7 +97,7 @@ To achieve Excel export, service URL and file name is sent as the parameter.
 function exportBtnClick(args)
 {
     var chartObj = $('#PivotChart1').data("ejPivotChart ");
-    chartObj.exportPivotChart("http://js.syncfusion.com/ejservices/api/JSPivotChartExport/ExcelExport","fileName");
+    chartObj.exportPivotChart("http://js.syncfusion.com/ejservices/api/PivotChart/Olap/ExcelExport","fileName");
 }
 
 {% endhighlight %}  
@@ -137,7 +137,7 @@ To achieve Word export, service URL and file name is sent as the parameter.
 function exportBtnClick(args)
 {
     var chartObj = $('#PivotChart1').data("ejPivotChart ");
-    chartObj.exportPivotChart("http://js.syncfusion.com/ejservices/api/JSPivotChartExport/WordExport","fileName");
+    chartObj.exportPivotChart("http://js.syncfusion.com/ejservices/api/PivotChart/Olap/WordExport","fileName");
 }
 
 {% endhighlight %}  
@@ -177,7 +177,7 @@ To achieve PDF export, service URL and file name is sent as the parameter.
 function exportBtnClick(args)
 {
     var chartObj = $('#PivotChart1').data("ejPivotChart ");
-    chartObj.exportPivotChart("http://js.syncfusion.com/ejservices/api/JSPivotChartExport/PDFExport","fileName");
+    chartObj.exportPivotChart("http://js.syncfusion.com/ejservices/api/PivotChart/Olap/PDFExport","fileName");
 }
 
 {% endhighlight %}  
@@ -223,7 +223,7 @@ To export PivotChart in PNG format, service URL, file name and **“ej.PivotChar
 function exportBtnClick(args)
 {
     var chartObj = $('#PivotChart1').data("ejPivotChart ");
-    chartObj.exportPivotChart("http://js.syncfusion.com/ejservices/api/JSPivotChartExport/ImageExport","fileName", ej.PivotChart.ExportOptions.PNG);
+    chartObj.exportPivotChart("http://js.syncfusion.com/ejservices/api/PivotChart/Olap/ImageExport","fileName", ej.PivotChart.ExportOptions.PNG);
 }
 
 {% endhighlight %}  
@@ -256,7 +256,7 @@ For customizing file name, we need to send file name as parameter to the **“ex
 function exportBtnClick(args)
 {
     var chartObj = $('#PivotChart1').data("ejPivotChart ");
-    chartObj.exportPivotChart("http://js.syncfusion.com/ejservices/api/JSPivotChartExport/ExcelExport","fileName");
+    chartObj.exportPivotChart("http://js.syncfusion.com/ejservices/api/PivotChart/Olap/ExcelExport","fileName");
 }
 {% endhighlight %}    
 
