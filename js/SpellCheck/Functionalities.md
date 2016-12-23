@@ -29,7 +29,7 @@ The following code example describes the above method implementation.
 <div id="SpellCheck"></div> 
  
 <script>
-            var targetSentence = "The first textarea sampeel uses a dialog textarea to display the sampeel spell textarea errrors".
+            var targetSentence = 'The <span class="errorspan e-errorword">textarea</span> sample uses a dialog to display the spell errors.';
 
             $("#SpellCheck").ejSpellCheck({
                 dictionarySettings: {
@@ -54,7 +54,7 @@ The following code example describes the way of using ignore all method.
 <div id="SpellCheck"></div> 
  
 <script>
-            var targetSentence = "The first textarea sampeel uses a dialog textarea to display the sampeel spell textarea errrors".
+            var targetSentence = 'This <span class="errorspan e-errorword">textarea</span> sample uses a dialog to display all the <span class="errorspan e-errorword">textarea</span> spell errors.';
 
             $("#SpellCheck").ejSpellCheck({
                 dictionarySettings: {
@@ -145,7 +145,7 @@ The following code example describes the behavior of change method.
 <div id="SpellCheck"></div> 
  
 <script>
-            var targetSentence = "The first textarea sampeel uses a dialog textarea to display the sampeel spell textarea errrors".
+            var targetSentence = 'The <span class="errorspan e-errorword">textarea</span> sample uses a dialog to display the spell errors.';
 
             $("#SpellCheck").ejSpellCheck({
                 dictionarySettings: {
@@ -171,7 +171,7 @@ The following code example uses to change all the error word occurrences.
 <div id="SpellCheck"></div> 
  
 <script>
-            var targetSentence = "The first textarea sampeel uses a dialog textarea to display the sampeel spell textarea errrors".
+            var targetSentence = 'This <span class="errorspan e-errorword">textarea</span> sample uses a dialog to display all the <span class="errorspan e-errorword">textarea</span> spell errors.';
 
             $("#SpellCheck").ejSpellCheck({
                 dictionarySettings: {

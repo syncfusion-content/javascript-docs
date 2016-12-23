@@ -49,7 +49,7 @@ $(function () {
 
 {% endhighlight %}
 
-### Handling dialog actions
+## Handling dialog actions
 
 To define the specific actions before the dialog window open, the client-side event [dialogBeforeOpen](/api/js/ejspellcheck#events:dialogbeforeopen) can be used as depicted in the below code example.
 
@@ -105,7 +105,7 @@ The client-side event [dialogOpen](/api/js/ejspellcheck#events:dialogopen) can b
 
 {% endhighlight %}
 
-The following code example used to define some actions after the dialog close using the client-side event [dialogClose](/api/js/ejspellcheck#events:dialogclose).
+The following code example used to define some actions after the dialog closing by using the client-side event [dialogClose](/api/js/ejspellcheck#events:dialogclose).
 
 {% highlight html %}
 
