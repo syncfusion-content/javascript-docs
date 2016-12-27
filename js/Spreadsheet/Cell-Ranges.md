@@ -51,7 +51,7 @@ $(function () {
     $("#Spreadsheet").ejSpreadsheet({
         // the datasource "window.defaultData" is referred from 'http://js.syncfusion.com/demos/web/scripts/xljsondata.min.js'
         sheets: [{
-            rangeSettings: [{ dataSource: window.defaultData, showHeader: true }],                               
+            rangeSettings: [{ dataSource: window.defaultData }],                               
         }],
         loadComplete: "loadComplete"
     });
@@ -126,7 +126,7 @@ $(function () {
     $("#Spreadsheet").ejSpreadsheet({
         // the datasource "window.defaultData" is referred from 'http://js.syncfusion.com/demos/web/scripts/xljsondata.min.js'
         sheets: [{
-            rangeSettings: [{ dataSource: window.defaultData, showHeader: true }],                               
+            rangeSettings: [{ dataSource: window.defaultData }],                               
         }],
         loadComplete: "loadComplete"
     });
@@ -156,7 +156,7 @@ $(function () {
     $("#Spreadsheet").ejSpreadsheet({
         // the datasource "window.defaultData" is referred from 'http://js.syncfusion.com/demos/web/scripts/xljsondata.min.js'
         sheets: [{
-            rangeSettings: [{ dataSource: window.defaultData, showHeader: true }],                               
+            rangeSettings: [{ dataSource: window.defaultData }],                               
         }],
         loadComplete: "loadComplete"
     });
@@ -187,7 +187,7 @@ $(function () {
     $("#Spreadsheet").ejSpreadsheet({
         // the datasource "window.defaultData" is referred from 'http://js.syncfusion.com/demos/web/scripts/xljsondata.min.js'
         sheets: [{
-            rangeSettings: [{ dataSource: window.defaultData, showHeader: true }],                               
+            rangeSettings: [{ dataSource: window.defaultData }],                               
         }],
         loadComplete: "loadComplete"
     });
@@ -223,7 +223,7 @@ $(function () {
     $("#Spreadsheet").ejSpreadsheet({
         // the datasource "window.defaultData" is referred from 'http://js.syncfusion.com/demos/web/scripts/xljsondata.min.js'
         sheets: [{
-            rangeSettings: [{ dataSource: window.defaultData, showHeader: true }],                               
+            rangeSettings: [{ dataSource: window.defaultData }],                               
         }],
         loadComplete: "loadComplete"
     });
@@ -241,7 +241,7 @@ The following output is displayed as a result of the above code example.
 
 Auto Fill is used to fill the cells with data based on adjacent cells. It also follows a pattern from adjacent cells if available. There is no need to enter the repeated data manually. You can use [`allowAutoFill`](http://help.syncfusion.com/api/js/ejspreadsheet#members:allowautofill "allowAutoFill") property to enable/disable the auto fill support. You can also use [`showFillOptions`](http://help.syncfusion.com/api/js/ejspreadsheet#members:autofillsettings-showfilloptions "showFillOptions") property to enable/disable the fill option and [`fillType`](http://help.syncfusion.com/api/js/ejspreadsheet#members:autofillsettings-filltype "fillType") property to change the default auto fill option which is available in [`autoFillSettings`](http://help.syncfusion.com/api/js/ejspreadsheet#members:autofillsettings "autoFillSettings"). 
 
-You can do this by one of the following ways.
+You can do this by one of the following ways,
 
 * Using “AutoFillOptions” menu which is open, while drag and drop the cell using fill handle element.
 * Using [`autoFill`](http://help.syncfusion.com/api/js/ejspreadsheet#methods:xldragfill-autofill "autoFill") method.
@@ -258,7 +258,7 @@ N> The default auto fill option is "fillSeries" which can be referred from [`fil
 
 #### Copy Cells
 
-To copy the selected cell content to the adjacent cells. You can do this by one of the following ways.
+To copy the selected cell content to the adjacent cells. You can do this by one of the following ways,
 
 * Using fill handle to select the adjacent cell range and "Copy Cells" option in "AutoFillOptions" menu to fill the adjacent cells.
 * Using "copyCells" as fill type in [`autoFill`](http://help.syncfusion.com/api/js/ejspreadsheet#methods:xldragfill-autofill "autoFill") method to fill the adjacent cells.
@@ -310,7 +310,7 @@ $(function () {
     $("#Spreadsheet").ejSpreadsheet({
         // the datasource "window.defaultData" is referred from 'http://js.syncfusion.com/demos/web/scripts/xljsondata.min.js'
         sheets: [{
-            rangeSettings: [{ dataSource: window.defaultData, showHeader: true },
+            rangeSettings: [{ dataSource: window.defaultData },
                 { dataSource: [{i : 1, j: 1, k : 1, l : 1}, {i : 2, j: 2, k : 2, l : 2}, {i : 3, j: 3, k : 3, l : 3}, {i : 4, j: 4, k : 4, l : 4}], startCell: "I2"}
             ],                               
         }],
@@ -369,7 +369,7 @@ $(function () {
     $("#Spreadsheet").ejSpreadsheet({
         // the datasource "window.defaultData" is referred from 'http://js.syncfusion.com/demos/web/scripts/xljsondata.min.js'
         sheets: [{
-            rangeSettings: [{ dataSource: window.defaultData, showHeader: true }],                               
+            rangeSettings: [{ dataSource: window.defaultData }],                               
         }],
         loadComplete: "loadComplete"
     });
@@ -415,8 +415,7 @@ You can combine two or more cells located in the same row or column into a singl
 
 * Using Merge & Center button under Alignment group of HOME Tab in ribbon.
 * Using "Merge & Center" option in Merge & Center button under Alignment group of HOME Tab in ribbon.
-* Using [`mergeCells`](http://help.syncfusion.com/api/js/ejspreadsheet#methods:mergecells "mergeCells") method.
-* Using `mergeCenter` property to enable/disable the center alignment.
+* Using [`mergeCells`](http://help.syncfusion.com/api/js/ejspreadsheet#methods:mergecells "mergeCells") method with `mergeCenter` property as `true` to enable the center alignment.
 
 ### Merge Across
 
@@ -427,7 +426,7 @@ You can do this by one of the following ways,
 * Using "Merge Across" option in Merge & Center button under Alignment group of HOME Tab in ribbon.
 * Using [`mergeAcrossCells`](http://help.syncfusion.com/api/js/ejspreadsheet#methods:mergeacrosscells "mergeAcrossCells") method.
 
-The following code example describes the behavior of Merge Cells, Merge & Center and Merge Across.
+The following code example describes the behavior of merge Cells, merge & center and merge Across.
 {% highlight html %}
 <div id="Spreadsheet"></div>
 {% endhighlight %}
@@ -437,7 +436,7 @@ $(function () {
     $("#Spreadsheet").ejSpreadsheet({
         // the datasource "window.defaultData" is referred from 'http://js.syncfusion.com/demos/web/scripts/xljsondata.min.js'
         sheets: [{
-            rangeSettings: [{ dataSource: window.defaultData, showHeader: true }],                               
+            rangeSettings: [{ dataSource: window.defaultData }],                               
         }],
         loadComplete: "loadComplete"
     });
@@ -472,7 +471,7 @@ $(function () {
     $("#Spreadsheet").ejSpreadsheet({
         // the datasource "window.defaultData" is referred from 'http://js.syncfusion.com/demos/web/scripts/xljsondata.min.js'
         sheets: [{
-            rangeSettings: [{ dataSource: window.defaultData, showHeader: true }],                               
+            rangeSettings: [{ dataSource: window.defaultData }],                               
         }],
         loadComplete: "loadComplete"
     });
