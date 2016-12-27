@@ -9,7 +9,7 @@ keywords: PivotGauge , syncfusion, PivotGauge WCF
 
 ## Initialize
 
- [POST] [/WCF/PivotGauge/Initialize](http://js.syncfusion.com/demos/ejServices/wcf/PivotGauge/Olap.svc)
+ [POST] [/WCF/PivotGauge/Initialize](http://js.syncfusion.com/demos/ejServices/wcf/PivotGauge/Olap.svc/Initialize)
 
 It fetches the OLAP data required to render the PivotGauge control from server-end.
 

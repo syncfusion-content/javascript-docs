@@ -38,7 +38,7 @@ I> By default JSON export mode will be applied for server and client mode.
         });
         function exportBtnClick(args) {
             var pGridObj = $('#PivotGrid1').data("ejPivotGrid");
-            pGridObj.exportPivotGrid("http://js.syncfusion.com/ejservices/api/JSPivotGridExport/ExcelExport", "fileName");
+            pGridObj.exportPivotGrid("http://js.syncfusion.com/ejservices/api/PivotGrid/Olap/ExcelExport", "fileName");
         }
     </script>                                        
 
@@ -55,7 +55,7 @@ To achieve Excel export, service URL and file name is sent as the parameter.
     function exportBtnClick(args)
     {
         var pGridObj = $('#PivotGrid1').data("ejPivotGrid");
-        pGridObj.exportPivotGrid("http://js.syncfusion.com/ejservices/api/JSPivotGridExport/ExcelExport", "fileName");
+        pGridObj.exportPivotGrid("http://js.syncfusion.com/ejservices/api/PivotGrid/Olap/ExcelExport", "fileName");
     }
 
 {% endhighlight %}
@@ -71,7 +71,7 @@ To achieve Word export, service URL and file name is sent as the parameter.
     function exportBtnClick(args)
     {
         var pGridObj = $('#PivotGrid1').data("ejPivotGrid");
-        pGridObj.exportPivotGrid("http://js.syncfusion.com/ejservices/api/JSPivotGridExport/WordExport", "fileName");
+        pGridObj.exportPivotGrid("http://js.syncfusion.com/ejservices/api/PivotGrid/Olap/WordExport", "fileName");
     }
 
 {% endhighlight %}  
@@ -87,7 +87,7 @@ To achieve PDF export, service URL and file name is sent as the parameter.
     function exportBtnClick(args)
     {
         var pGridObj = $('#PivotGrid1').data("ejPivotGrid");
-        pGridObj.exportPivotGrid("http://js.syncfusion.com/ejservices/api/JSPivotGridExport/PDFExport", "fileName");
+        pGridObj.exportPivotGrid("http://js.syncfusion.com/ejservices/api/PivotGrid/Olap/PDFExport", "fileName");
     }
 
 {% endhighlight %}  
@@ -103,7 +103,7 @@ To achieve CSV export, service URL and file name is sent as the parameter.
     function exportBtnClick(args)
     {
         var pGridObj = $('#PivotGrid1').data("ejPivotGrid");
-        pGridObj.exportPivotGrid("http://js.syncfusion.com/ejservices/api/JSPivotGridExport/CSVExport", "fileName");
+        pGridObj.exportPivotGrid("http://js.syncfusion.com/ejservices/api/PivotGrid/Olap/CSVExport", "fileName");
     }
 
 {% endhighlight %}  
@@ -117,7 +117,7 @@ For customizing file name, we need to send file name as parameter to the **expor
     function exportBtnClick(args)
     {
         var pGridObj = $('#PivotGrid1').data("ejPivotGrid");
-        pGridObj.exportPivotGrid("http://js.syncfusion.com/ejservices/api/JSPivotGridExport/ExcelExport", "File name is customized here");
+        pGridObj.exportPivotGrid("http://js.syncfusion.com/ejservices/api/PivotGrid/Olap/ExcelExport", "File name is customized here");
     }
     
 {% endhighlight %}
@@ -126,7 +126,7 @@ For customizing file name, we need to send file name as parameter to the **expor
 
 I> This feature is applicable only at server mode operation.
 
-In order to perform exporting with the use of PivotEngine available in server-side, the 'url' property obtained in the “beforeExport” event is set to the value "server" as shown below.
+In order to perform exporting with the use of PivotEngine available in server-side, the 'exportMode' property obtained in the “beforeExport” event is set to the value "ej.PivotGrid.ExportMode.PivotEngine" as shown below.
 
 {% highlight html %}
 
@@ -150,7 +150,7 @@ In order to perform exporting with the use of PivotEngine available in server-si
         }
         
         function Export(args) {
-            args.url = "server"; 
+            args.exportMode = ej.PivotGrid.ExportMode.PivotEngine; 
         }
     </script>
 </html>                                            

@@ -62,19 +62,4 @@ N> The custom words will be displayed within the custom dictionary file line by 
 
 You can directly add the necessary words in the custom dictionary file or else by using the SpellCheck control public method [addToDictionary](/api/js/ejspellcheck#methods:addtodictionary) to add the custom words one by one.
 
-The following code example describes the above behavior.
-
-{% highlight html %}
-<div id="SpellCheck"></div> 
- 
-<script>
-            $("#SpellCheck").ejSpellCheck({
-                dictionarySettings: {
-                    dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/CheckWords",
-                    customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/AddToDictionary"
-                }
-            });
-            var schObj = $("#SpellCheck").data("ejSpellCheck");
-            schObj.addToDictionary("textarea");
-</script>
-{% endhighlight %}
+Refer to the [custom words](/functionalities#custom-words) section under the functionalities block to know about this feature.

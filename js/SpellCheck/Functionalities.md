@@ -29,12 +29,12 @@ The following code example describes the above method implementation.
 <div id="SpellCheck"></div> 
  
 <script>
-            var targetSentence = "The first textarea sampeel uses a dialog textarea to display the sampeel spell textarea errrors".
+            var targetSentence = 'The <span class="errorspan e-errorword">textarea</span> sample uses a dialog to display the spell errors.';
 
             $("#SpellCheck").ejSpellCheck({
                 dictionarySettings: {
-                    dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/GetWords",
-                    customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/GetCustomDictionary"
+                    dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/CheckWords",
+                    customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/AddToDictionary"
                 }
             });
             var schObj = $("#SpellCheck").data("ejSpellCheck");
@@ -54,12 +54,12 @@ The following code example describes the way of using ignore all method.
 <div id="SpellCheck"></div> 
  
 <script>
-            var targetSentence = "The first textarea sampeel uses a dialog textarea to display the sampeel spell textarea errrors".
+            var targetSentence = 'This <span class="errorspan e-errorword">textarea</span> sample uses a dialog to display all the <span class="errorspan e-errorword">textarea</span> spell errors.';
 
             $("#SpellCheck").ejSpellCheck({
                 dictionarySettings: {
-                    dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/GetWords",
-                    customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/GetCustomDictionary"
+                    dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/CheckWords",
+                    customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/AddToDictionary"
                 }
             });
             var schObj = $("#SpellCheck").data("ejSpellCheck");
@@ -83,7 +83,7 @@ The [ignore words](/api/js/ejspellcheck#members:ignorewords) option is used to i
                     dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/CheckWords",
                     customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/AddToDictionary"
                 },
-                ignoreWords:["Syncfusion", "JavaScript"]
+                ignoreWords:["TypeScript", "JavaScript"]
             });
         });      
 
@@ -145,12 +145,12 @@ The following code example describes the behavior of change method.
 <div id="SpellCheck"></div> 
  
 <script>
-            var targetSentence = "The first textarea sampeel uses a dialog textarea to display the sampeel spell textarea errrors".
+            var targetSentence = 'The <span class="errorspan e-errorword">textarea</span> sample uses a dialog to display the spell errors.';
 
             $("#SpellCheck").ejSpellCheck({
                 dictionarySettings: {
-                    dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/GetWords",
-                    customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/GetCustomDictionary"
+                    dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/CheckWords",
+                    customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/AddToDictionary"
                 }
             });
             var schObj = $("#SpellCheck").data("ejSpellCheck");
@@ -171,12 +171,12 @@ The following code example uses to change all the error word occurrences.
 <div id="SpellCheck"></div> 
  
 <script>
-            var targetSentence = "The first textarea sampeel uses a dialog textarea to display the sampeel spell textarea errrors".
+            var targetSentence = 'This <span class="errorspan e-errorword">textarea</span> sample uses a dialog to display all the <span class="errorspan e-errorword">textarea</span> spell errors.';
 
             $("#SpellCheck").ejSpellCheck({
                 dictionarySettings: {
-                    dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/GetWords",
-                    customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/GetCustomDictionary"
+                    dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/CheckWords",
+                    customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/AddToDictionary"
                 }
             });
             var schObj = $("#SpellCheck").data("ejSpellCheck");
@@ -185,3 +185,34 @@ The following code example uses to change all the error word occurrences.
 </script>
 
 {% endhighlight %}
+
+## Custom Words
+
+The SpellCheck control provides the support to add the custom words into the custom dictionary file.
+
+The [addToDictionary](/api/js/ejspellcheck#methods:addToDictionary) option is used to add the custom words into the custom dictionary file.
+
+The following code example uses to add the custom word into the custom dictionary file.
+
+{% highlight html %}
+
+<div id="SpellCheck"></div> 
+ 
+<script>
+            $("#SpellCheck").ejSpellCheck({
+                dictionarySettings: {
+                    dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/CheckWords",
+                    customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/AddToDictionary"
+                }
+            });
+            var schObj = $("#SpellCheck").data("ejSpellCheck");
+            schObj.addToDictionary("textarea");
+
+</script>
+
+{% endhighlight %}
+
+You can also add the custom words into the custom dictionary file through the dialog mode or context menu mode add to dictionary option.
+
+* Dialog Mode - Add To Dictionary button will be available in the dialog window, while checking the error in the given input string and clicking this button then the word will be added into the custom dictionary file.
+* Context Menu Mode - Add To Dictionary option will be available in the context menu while right click on the error word in the target area and clicking this option then the word will be added into the custom dictionary file.
