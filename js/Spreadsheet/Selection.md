@@ -9,17 +9,17 @@ documentation: ug
 
 Selection provides an interactive support to highlight cell, row, or column that you select. Selection can be done through Mouse, Touch or Keyboard interaction. To enable selection, set [`allowSelection`](http://help.syncfusion.com/api/js/ejspreadsheet#members:allowselection "allowSelection") as `true`.
 
-## Selection modes
+## Selection Modes
 
 The mode of selection can be single or range selection. The default selection mode can be set using [`selectionUnit`](http://help.syncfusion.com/api/js/ejspreadsheet#members:selectionsettings-selectionunit "selectionUnit") in [`selectionSettings`](http://help.syncfusion.com/api/js/ejspreadsheet#members:selectionsettings "selectionSettings").
-The two types of selection mode are as follows
+The two types of selection mode are as follows,
 
 * Single - `ej.Spreadsheet.SelectionUnit.Single`
 * Range - `ej.Spreadsheet.SelectionUnit.Range`
 
 ## Selection Type
 
-There are four types of selection in Spreadsheet
+There are four types of selection in Spreadsheet,
 
 1. Cell Selection
 2. Row Selection
