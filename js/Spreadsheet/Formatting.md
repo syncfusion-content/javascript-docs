@@ -8,7 +8,7 @@ documentation: UG
 
 # Formatting
 
-Spreadsheet supports many formatting options to make your data easier to view and understand. Use [`allowCellFormatting`](https://help.syncfusion.com/api/js/ejspreadsheet#members:allowcellformatting "allowCellFormatting") API to enable / disable formatting option in Spreadsheet. Following are the different types of formatting supported in Spreadsheet,
+Spreadsheet supports many formatting options to make your data easier to view and understand. Use [`allowCellFormatting`](https://help.syncfusion.com/api/js/ejspreadsheet#members:allowcellformatting "allowCellFormatting") API to enable / disable formatting option in Spreadsheet. The different types of formatting supported in Spreadsheet are,
     
 1) Number Formatting
 
@@ -18,7 +18,7 @@ Spreadsheet supports many formatting options to make your data easier to view an
 
 ## Number Formatting
 
-Number formatting is used to represent what type of data you are using in Spreadsheet. Following are the different type of number formatting supported in Spreadsheet, 
+Number formatting is used to represent type for your data in Spreadsheet. The different types of number formatting supported in Spreadsheet are, 
     
 1) Number
 
@@ -125,7 +125,7 @@ To organize and easier to follow your financial, statistical or scientific data,
 
 To distinguish your data from built-in font formats, you can apply different font formats like bold, italic, strike-through, color, font-family and size etc.
 
-### Text alignment
+### Text Alignment
 
 To enhance the visual presentation of your data, you can align text in a cell vertically or horizontally. To align text vertically pick top, middle or bottom align and to align text horizontally pick left, center or right align.
 
@@ -207,7 +207,7 @@ The following output is displayed as a result of the above code example.
 
 You can apply text format for a cell through text formatting options in ribbon `HOME` tab.
 
-### Wrap text 
+### Wrap Text 
 
 To make text appearance on multiple lines in a cell, you can apply wrap text to the cell. So, that the text wraps automatically or you can enter a manual line break using `ALT + ENTER` key in edit mode. Use [`allowWrap`](https://help.syncfusion.com/api/js/ejspreadsheet#members:allowwrap "allowWrap") API to enable/disable wrap text. You can apply wrap text for a cell in following ways,
 
@@ -239,6 +239,7 @@ You can wrap, text in a cell using [`wrapText`](https://help.syncfusion.com/api/
 
     function loadComplete() {
         this.wrapText("A1");
+        //this.unWrapText("A1");
     }
 </script>
 
@@ -257,7 +258,7 @@ To highlight particular cell or section of cells from whole workbook you can use
 
 ### Borders 
 
-You can add border around a cell or range of cells to define a section of worksheet or table. Following are the different types of borders supported in Spreadsheet,
+You can add border around a cell or range of cells to define a section of worksheet or table. The different types of borders supported in Spreadsheet are,
     
 1) Bottom Border
 

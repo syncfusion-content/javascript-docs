@@ -9,7 +9,7 @@ documentation: ug
 
 # Print
 
-This feature is used for produce text and graphics from a computer screen or file onto a sheet of paper. You can use [`printSettings.allowPrinting`](https://help.syncfusion.com/api/js/ejspreadsheet#members:printsettings-allowprinting "printSettings.allowPrinting") property to enable/disable the print operation.
+This feature is used for produce text and graphics from a computer screen or file onto a sheet of paper. You can use [`allowPrinting`](https://help.syncfusion.com/api/js/ejspreadsheet#members:printsettings-allowprinting "allowPrinting") property in [`printsettings`](https://help.syncfusion.com/api/js/ejspreadsheet#members:printsettings "printsettings") to enable/disable the print operation.
 
 You have following options in printing.
 
@@ -37,7 +37,7 @@ $(function () {
     $("#Spreadsheet").ejSpreadsheet({
         // the datasource "window.defaultData" is referred from 'http://js.syncfusion.com/demos/web/scripts/xljsondata.min.js'
         sheets: [{
-            rangeSettings: [{ dataSource: window.defaultData, startCell: "A1" }],                               
+            rangeSettings: [{ dataSource: window.defaultData }],                               
         }],
         printSettings: {
             allowPrinting: true
@@ -88,12 +88,9 @@ $(function () {
     $("#Spreadsheet").ejSpreadsheet({
         // the datasource "window.defaultData" is referred from 'http://js.syncfusion.com/demos/web/scripts/xljsondata.min.js'
         sheets: [{
-            rangeSettings: [{ dataSource: window.defaultData, startCell: "A1"}], 
+            rangeSettings: [{ dataSource: window.defaultData }], 
             showGridlines: false                             
         }],
-        printSettings: {
-            allowPrinting: true,
-        },
     });
 });
 {% endhighlight %}
@@ -122,12 +119,9 @@ $(function () {
         // the datasource "window.defaultData" is referred from   
         'http://js.syncfusion.com/demos/web/scripts/xljsondata.min.js'
         sheets: [{
-            rangeSettings: [{ dataSource: window.defaultData, startCell: "A1" }],
+            rangeSettings: [{ dataSource: window.defaultData }],
             showHeadings: false                               
         }],
-        printSettings: {
-            allowPrinting: true,
-        }
     });
 });
 {% endhighlight %}
