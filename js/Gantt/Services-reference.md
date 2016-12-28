@@ -440,19 +440,19 @@ headerText is to specify the title for export workbook.</td></tr>
 
 $("#Gantt").ejGantt({
 
-toolbarClick: function (args) {
+    toolbarClick: function(args) {
 
-this.exportGrid = this["export"];
+        this.exportGrid = this["export"];
 
-if (args.itemName == "Excel Export") {                            
+        if (args.itemName == "Excel Export") {
 
-this.exportGrid('http://js.syncfusion.com/ejServices/api/JSGanttExport/ExcelExport', "", false);
+            this.exportGrid('http://js.syncfusion.com/ejServices/api/JSGanttExport/ExcelExport', "", false);
 
-args.cancel = true;
+            args.cancel = true;
 
-}
+        }
 
-}
+    }
 
 });
 

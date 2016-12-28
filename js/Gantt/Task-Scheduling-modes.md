@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Task-scheduleing-modes
-description: Task scheduleing modes
+title: Task-scheduling-modes
+description: Task scheduling modes
 platform: js
 control: Gantt
 documentation: ug
@@ -23,9 +23,9 @@ In this scheduling mode, all the tasks in the project will be rendered as automa
 
 $("#GanttContainer").ejGantt({
 
-//...
+    //...
 
-taskSchedulingMode: ej.Gantt.TaskSchedulingMode.Auto
+    taskSchedulingMode: ej.Gantt.TaskSchedulingMode.Auto
 
 });
 
@@ -38,17 +38,16 @@ N> Automatic scheduling mode is the default task scheduling mode in Gantt.
 In this mode, all the tasks in the project will be rendered as manually scheduled tasks. The tasks will not get rescheduled and dates will not be recalculated automatically based on the factors such as task dependencies and non-working days. Manual scheduled tasks will lie on weekends and holidays, but we can restrict this mode in predecessor calculation using the property **validateManualTasksOnLinking****.** By enabling this property, the dates of the manual tasks will recalculate automatically, while its predecessor tasks have been affected.
 
 {% highlight javascript %}
-[JS]
 
 $("#GanttContainer").ejGantt({
 
-//...
+    //...
 
-taskSchedulingMode: ej.Gantt.TaskSchedulingMode.Manual,
+    taskSchedulingMode: ej.Gantt.TaskSchedulingMode.Manual,
 
-validateManualTasksOnLinking: false,
+    validateManualTasksOnLinking: false,
 
-//
+    //...
 
 });
 
@@ -62,11 +61,11 @@ Tasks can be either automatically scheduled or manually scheduled and we can map
 
 $("#GanttContainer").ejGantt({
 
-dataSource: data,
+    dataSource: data,
 
-//...
+    //...
 
-taskSchedulingModeMapping: "isManual", //MAPPING TYPE OF TASK MODE TO GANTT
+    taskSchedulingModeMapping: "isManual", //MAPPING TYPE OF TASK MODE TO GANTT
 
 });
 
