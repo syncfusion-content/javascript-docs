@@ -41,7 +41,7 @@ The following code example depicts the way to mention the default dictionary pat
 
 ### Description
 
-The custom dictionary is a collection of custom words that are used for spell checking (i.e. technical terms/words, company names, etc.,). 
+The custom dictionary is a collection of custom words used for spell checking (i.e. technical terms/words, company names, etc.,). 
 
 The following code example describes the way to mention the custom dictionary path to read its content.
 
@@ -56,10 +56,10 @@ The following code example describes the way to mention the custom dictionary pa
 
 {% endhighlight %}
 
-N> The custom words will be displayed within the custom dictionary file line by line (i.e. one word per line). 
+N> The custom words are displaying within the custom dictionary file line by line (i.e. one word per line). 
 
 #### Add a word to custom dictionary
 
 You can directly add the necessary words in the custom dictionary file or else by using the SpellCheck control public method [addToDictionary](/api/js/ejspellcheck#methods:addtodictionary) to add the custom words one by one.
 
-Refer to the [custom words](/functionalities#custom-words) section under the functionalities block to know about this feature.
+Refer to the [custom words](js/spellcheck/functionalities#custom-words) section under the functionalities block to know about this feature.
