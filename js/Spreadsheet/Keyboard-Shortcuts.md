@@ -367,6 +367,30 @@ documentation: ug
     </tr>
     <tr>
         <td>
+            Delete
+        </td>
+        <td>
+            Delete selected cells
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Esc
+        </td>
+        <td>
+            Cancel edit mode and discard changes.
+        </td>
+    </tr>
+    <tr>
+        <td>
+            F2
+        </td>
+        <td>
+            Start edit
+        </td>
+    </tr>
+    <tr>
+        <td>
             Shift + F2
         </td>
         <td>
