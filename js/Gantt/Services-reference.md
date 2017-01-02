@@ -422,7 +422,7 @@ It specifies in case of multiple exporting, in which workbook the file export sh
 <td>
 MultipleExportType </td><td>
 Object</td><td>
-It specifies in case of multiple export, it returs the exporting type whether the file should append to the sheet or it should export in new sheet</td></tr>
+It specifies in case of multiple export, it returns the exporting type whether the file should append to the sheet or it should export in new sheet</td></tr>
 <tr>
 <td>
 headerText</td><td>
