@@ -24,7 +24,7 @@ Data presentation is helpful for proper representation of data in Spreadsheet. Y
 
 You can insert the controls like Button, Checkbox, Dropdown list and Date picker. You can use [`allowCellType`](http://help.syncfusion.com/api/js/ejspreadsheet#members:allowcelltype "allowCellType") property to enable/disable cell type operations.
 
-### To Insert a Cell Type.
+### To insert a Cell Type.
 
 You can insert the cell type to the selected range of cells by using [`addCellTypes`](http://help.syncfusion.com/api/js/ejspreadsheet#methods:xlcelltype-addcelltypes "addCellTypes") method.
 
@@ -43,7 +43,7 @@ $(function () {
     $("#Spreadsheet").ejSpreadsheet({
         // the datasource "window.defaultData" is referred from 'http://js.syncfusion.com/demos/web/scripts/xljsondata.min.js'
         sheets: [{
-            rangeSettings: [{ dataSource: window.defaultData, showHeader: true }],                               
+            rangeSettings: [{ dataSource: window.defaultData }],                               
         }],
         allowCellType: true,
         loadComplete: "loadComplete"
@@ -70,7 +70,7 @@ The following output is displayed as a result of the above code example.
 
 Chart is a graphical representation of data, that organizes and represents a set of numerical or qualitative data. It mostly displays the selected range of data in terms of x axis and y axis. You can use [`allowCharts`](http://help.syncfusion.com/api/js/ejspreadsheet#members:allowcharts "allowCharts") property to enable/disable chart operations.
 
-### Type of Charts
+### Types of Chart
 
 The following types of charts are available in Spreadsheet.
 
@@ -112,7 +112,7 @@ $(function () {
     $("#Spreadsheet").ejSpreadsheet({
         // the datasource "window.defaultData" is referred from 'http://js.syncfusion.com/demos/web/scripts/xljsondata.min.js'
         sheets: [{
-            rangeSettings: [{ dataSource: window.defaultData, showHeader: true }],                               
+            rangeSettings: [{ dataSource: window.defaultData }],                               
         }],
         allowCharting: true,
         loadComplete: "loadComplete"
@@ -135,7 +135,7 @@ The following output is displayed as a result of the above code example.
 
 Conditional formatting helps you to apply formats to a cell or range with certain color based on the cells values. You can use [`allowConditionalFormats`](http://help.syncfusion.com/api/js/ejspreadsheet#members:allowconditionalformats "allowConditionalFormats") property to enable/disable Conditional formats.
 
-### Condition definition
+### Condition Definition
 
 You can define conditions such as greater than, less than, between, equal to, text contains and date occurring for selected cells and defining value for condition. It highlights the specified cell. 
 You can do this by one of the following ways,
@@ -176,7 +176,7 @@ The following output is displayed as a result of the above code example.
 
 ![](Data-Presentation_images/Data-Presentation_img3.png)
 
-### Clear rules
+### Clear Rules
 
 You can clear the defined rules by using one of the following ways,
 
@@ -250,7 +250,7 @@ $(function () {
     $("#Spreadsheet").ejSpreadsheet({
         // the datasource "window.defaultData" is referred from 'http://js.syncfusion.com/demos/web/scripts/xljsondata.min.js'
         sheets: [{
-            rangeSettings: [{ dataSource: window.defaultData, showHeader: true }],
+            rangeSettings: [{ dataSource: window.defaultData }],
         }],
         loadComplete: "loadComplete"
     });
@@ -296,7 +296,7 @@ $(function () {
     $("#Spreadsheet").ejSpreadsheet({
         // the datasource "window.defaultData" is referred from 'http://js.syncfusion.com/demos/web/scripts/xljsondata.min.js'
         sheets: [{
-            rangeSettings: [{ dataSource: window.defaultData, showHeader: true }],                               
+            rangeSettings: [{ dataSource: window.defaultData }],                               
         }],
         loadComplete: "loadComplete"
     });
@@ -352,7 +352,7 @@ $(function () {
     $("#Spreadsheet").ejSpreadsheet({
         // the datasource "window.pivot" is referred from 'http://js.syncfusion.com/demos/web/scripts/xljsondata.min.js'
         sheets: [{
-            rangeSettings: [{ dataSource: window.pivot, showHeader: true }],                               
+            rangeSettings: [{ dataSource: window.pivot }],                               
         }],
         enablePivotTable: true,
         loadComplete: "loadComplete"
@@ -407,7 +407,7 @@ $(function () {
     $("#Spreadsheet").ejSpreadsheet({
         // the datasource "window.defaultData" is referred from 'http://js.syncfusion.com/demos/web/scripts/xljsondata.min.js'
         sheets: [{
-            rangeSettings: [{ dataSource: window.defaultData, showHeader: true }],                               
+            rangeSettings: [{ dataSource: window.defaultData }],                               
         }],
         loadComplete: "loadComplete"
     });
@@ -469,7 +469,7 @@ $(function () {
     $("#Spreadsheet").ejSpreadsheet({
         // the datasource "window.bill" is referred from 'http://js.syncfusion.com/demos/web/scripts/xljsondata.min.js'
         sheets: [{
-            rangeSettings: [{ dataSource: window.bill, showHeader: true }],                               
+            rangeSettings: [{ dataSource: window.bill }],                               
         }],
         allowFormatAsTable: true,
         loadComplete: "loadComplete"
