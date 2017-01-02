@@ -13,7 +13,7 @@ You can edit the contents of a cell directly in the cell. You can also do this b
 
 N> By default [`allowEditing`](http://help.syncfusion.com/api/js/ejspreadsheet#members:allowediting "allowEditing") property is set to true.
 
-## Edit the cell
+## Edit cell content
 
 You can perform this by one of the following ways,
 
@@ -24,7 +24,7 @@ You can perform this by one of the following ways,
 * Use "Alt + Enter" keys to perform multi line editing.
 * Using [`editCell`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xledit-editcell "editCell") method.
 
-## Save the edited cell
+## Save cell content
 
 You can do this by one of the following ways,
 
@@ -45,7 +45,7 @@ $(function () {
     $("#Spreadsheet").ejSpreadsheet({
         // the datasource "window.defaultData" is referred from 'http://js.syncfusion.com/demos/web/scripts/xljsondata.min.js'
         sheets: [{
-            rangeSettings: [{ dataSource: window.defaultData, showHeader: true }],                               
+            rangeSettings: [{ dataSource: window.defaultData }],                               
         }],
         loadComplete: "loadComplete"
     });
@@ -80,7 +80,7 @@ $(function () {
     $("#Spreadsheet").ejSpreadsheet({
         // the datasource "window.defaultData" is referred from 'http://js.syncfusion.com/demos/web/scripts/xljsondata.min.js'
         sheets: [{
-            rangeSettings: [{ dataSource: window.defaultData, showHeader: true }],                               
+            rangeSettings: [{ dataSource: window.defaultData }],                               
         }],
         allowLockCell: true,
         loadComplete: "loadComplete"
@@ -124,7 +124,7 @@ $(function () {
     });
     $("#Spreadsheet").ejSpreadsheet({
         sheets: [{
-            rangeSettings: [{ dataSource: dataManager, showHeader: true }],                               
+            rangeSettings: [{ dataSource: dataManager }],                               
         }],
         loadComplete: "loadComplete"
     });
