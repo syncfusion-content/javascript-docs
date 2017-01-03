@@ -10,7 +10,121 @@ keywords: spellcheck localize, localize, localization, localize specific words
 
 SpellCheck dialog mode comes with default localization support which allows it to customize the display of text within the SpellCheck dialog in a user-specific culture and locale. The SpellCheck control can be localized in specific culture using the common API [locale](/api/js/ejspellcheck#members:locale) along with the collection of localized words defined for that culture using the ej.SpellCheck.Locale [**culture-code**].
 
-N> By default, the SpellCheck control is localized in **en-US** culture.
+By default, the SpellCheck control is localized in **en-US** culture. Please find the following table lists the default keywords and its localized text values for en-US culture.
+
+<table>
+        <tr>
+            <th>
+                Locale key words </th>
+            <th>
+                Text
+            </th>
+        </tr>
+        <tr>
+            <td>
+                SpellCheckButtonText
+            </td>
+            <td>
+                SpellCheck
+            </td>
+        </tr>
+        <tr>
+            <td>
+                NotInDictionary
+            </td>
+            <td>
+                Not In Dictionary
+            </td>
+        </tr>
+        <tr>
+            <td>
+                SuggestionLabel
+            </td>
+            <td>
+                Suggestions
+            </td>
+        </tr>
+        <tr>
+            <td>
+                IgnoreOnceButtonText
+            </td>
+            <td>
+                Ignore Once
+            </td>
+        </tr>
+        <tr>
+            <td>
+                IgnoreAllButtonText
+            </td>
+            <td>
+                Ignore All
+            </td>
+        </tr>
+        <tr>
+            <td>
+                AddToDictionary
+            </td>
+            <td>
+                Add to Dictionary
+            </td>
+        </tr>
+        <tr>
+            <td>
+                ChangeButtonText
+            </td>
+            <td>
+                Change
+            </td>
+        </tr>
+        <tr>
+            <td>
+                ChangeAllButtonText
+            </td>
+            <td>
+                Change All
+            </td>
+        </tr>
+        <tr>
+            <td>
+                CloseButtonText
+            </td>
+            <td>
+                Close
+            </td>
+        </tr>
+        <tr>
+            <td>
+                CompletionPopupMessage
+            </td>
+            <td>
+                Spell check is complete
+            </td>
+        </tr>
+        <tr>
+            <td>
+                CompletionPopupTitle
+            </td>
+            <td>
+                Spell check alert
+            </td>
+        </tr>
+        <tr>
+            <td>
+                OK
+            </td>
+            <td>
+                OK
+            </td>
+        </tr>
+        <tr>
+            <td>
+                NoSuggestionMessage
+            </td>
+            <td>
+                No suggestions available
+            </td>
+        </tr>
+</table>
 
 To localize SpellCheck into any particular culture, it is necessary to refer the culture-specific script files in your application after the reference of **ej.web.all.min.js** file, which are available under the following location.                   
 

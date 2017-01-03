@@ -15,7 +15,7 @@ More than 350 culture specific files are available to localize the date. To know
 
 [http://help.syncfusion.com/js/localization](http://help.syncfusion.com/js/localization)
 
-Also we have added Localized text files to DateRangePicker for 28 standard culture in below git hub location,
+Also we have added Localized text files to DateRangePicker for 28 standard culture in below GitHub location,
 
 [https://github.com/syncfusion/ej-global](https://github.com/syncfusion/ej-global)
 
