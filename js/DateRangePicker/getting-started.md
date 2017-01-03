@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started
 
-## New Html Document and required codes:
+## New HTML Document and required codes:
 
 To get start with **DateRangePicker**, create a new HTML file and refer the below specified dependent CSS file as well as scripts files.
 
