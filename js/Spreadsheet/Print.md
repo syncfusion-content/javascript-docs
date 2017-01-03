@@ -102,7 +102,7 @@ Print dialog without gridlines in chrome browser
 
 ## Print with Headings
 
-You have an option to print the spreadsheet with gridlines or without headers. You can do this by one of the following ways,
+You have an option to print the spreadsheet with headers or without headers. You can do this by one of the following ways,
 
 * Check the Headings option under Show group of PAGE LAYOUT tab in ribbon. 
 * Using [`showHeadings`](https://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-showheadings "showHeadings") property to enable / disable headings.
