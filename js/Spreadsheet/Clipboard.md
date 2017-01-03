@@ -9,7 +9,8 @@ documentation: ug
 
 # Clipboard
 
-The Spreadsheet provides support for the clipboard operations (cut, copy, and paste).
+The Spreadsheet provides support for the clipboard operations (cut, copy, and paste). Clipboard operations can be enabled or disabled by setting [`allowClipboard`](https://help.syncfusion.com/api/js/ejspreadsheet#members:allowclipboard "allowClipboard") property in Spreadsheet.
+By default [`allowClipboard`](https://help.syncfusion.com/api/js/ejspreadsheet#members:allowclipboard "allowClipboard") property is `true`.  
 
 ## Cut
 
@@ -62,18 +63,18 @@ $(function () {
     $("#Spreadsheet").ejSpreadsheet({
         // the datasource "window.defaultData" is referred from 'http://js.syncfusion.com/demos/web/scripts/xljsondata.min.js'
         sheets: [{
-            rangeSettings: [{ dataSource: window.defaultData, startCell: "A1" }],                               
+            rangeSettings: [{ dataSource: window.defaultData }],                               
         }],
         allowClipboard: true,
         loadComplete: "loadComplete"
     });
 });
 function loadComplete() {
-    var xlClip = this.XLObj.XLClipboard;
-    this.XLObj.performSelection("G1:H3");
+    var xlClip = this.XLClipboard;
+    this.performSelection("G1:H3");
     xlClip.cut(); // Cut the selected cells
     //xlClip.copy();//Copy the selected cells.
-    this.XLObj.performSelection("J4");
+    this.performSelection("J4");
     xlClip.paste();
 }
 {% endhighlight %}

@@ -48,7 +48,7 @@ You can set formula for a cell by specifying [`value`](https://help.syncfusion.c
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
-![](Formula_images/Formula_img1.png)
+![](Formulas_images/Formula_img1.png)
 
 ### Method
 
@@ -85,7 +85,7 @@ You can set formula for a cell using [`updateCellValue`](https://help.syncfusion
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
-![](Formula_images/Formula_img1.png)
+![](Formulas_images/Formula_img1.png)
 
 ### User Interface
 
@@ -116,10 +116,10 @@ You can set formula for a cell by edit and save a cell through user interface us
 
 {% endhighlight %}
 
-![](Formula_images/Formula_img2.png)
+![](Formulas_images/Formula_img2.png)
 
 The following output is displayed while saving edited cell with above code example.
-![](Formula_images/Formula_img1.png)
+![](Formulas_images/Formula_img1.png)
 
 N> 1. The list of supported formulas can be find in following [`link`](https://help.syncfusion.com/js/calculate/supported-formulas/supported-formulas "link")
 N> 2. Constant values, cell references, formulas and named ranges can be passed as argument to formulas
@@ -171,7 +171,7 @@ You can add named ranges at initial load with `nameManager` API. The following c
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
-![](Formula_images/Formula_img3.png)
+![](Formulas_images/Formula_img3.png)
 
 ### Method
 
@@ -209,14 +209,15 @@ You can add named range to Spreadsheet with [`addNamedRange`](https://help.syncf
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
-![](Formula_images/Formula_img3.png)
+![](Formulas_images/Formula_img3.png)
 
 ### User Interface
 
 You can define name for range of cells through user interface using `Define Name` option in `OTHERS` tab. The following screenshot describes the above behavior,
-![](Formula_images/Formula_img4.png)
+![](Formulas_images/Formula_img4.png)
 
-N> Defining name for cell reference or table will be accessible across all sheets
+N> Defining name for cell reference or table will be accessible across all sheets.
+N> Named Ranges will be displayed in Name Manger dialog box.
 
 ## Formula Bar
 
