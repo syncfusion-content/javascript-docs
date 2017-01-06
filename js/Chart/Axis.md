@@ -16,6 +16,7 @@ Vertical axis always uses numerical or logarithmic scale. Horizontal(x) axis sup
 * Category
 * Numeric
 * DateTime
+* DateTime Category
 * Logarithmic
 
 ## Category Axis
