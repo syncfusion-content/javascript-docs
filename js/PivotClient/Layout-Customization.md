@@ -143,31 +143,6 @@ Toggle panel option lets the user to toggle the visibility of Axis Element Build
 
 ![](Layout-Customization_images/toggle-panel.png)
 
-## ToolbarIcon settings:
-
-ToolbarIcon settings helps to disable the toolbar icons inside report toolbar. This can be achieved by setting the properties under [`toolbarIconSettings`](/api/js/ejpivotclient#members:toolbariconsettings)  option to false. The value is true by default.
-
-{% highlight javascript %}
-
-    $("#PivotClient1").ejPivotClient({
-        //...
-        //Disable toolbar icon in PivotClient
-        toolbarIconSettings: {
-            enableAddReport: false,
-            enableNewReport: false,
-            enableRemoveReport: false
-        }
-    });
-
-{% endhighlight %}
-
-
-![](Layout-Customization_images/toolbarIconSettings1.png)
-
-The following screenshot shows after disabling the toolbar icons.
-
-![](Layout-Customization_images/toolbarIconSettings2.png)
-
 ## Maximized/Full Screen View
 Full screen view helps to visualize the PivotGrid and PivotChart controls inside PivotClient precisely according to the browser window size.  By selecting full screen icon in the toolbar, the control which is in the view gets maximized.  Drilldown action can also be performed in both PivotGrid and PivotChart in the maximized view.  This option is enabled by setting the [`enableFullScreen`](/api/js/ejpivotclient#members:displaysettings-enablefullscreen) property under [`displaySettings`](/api/js/ejpivotclient#members:displaysettings)  option to true.  The value is false by default.
 
@@ -208,3 +183,27 @@ The Chart Type can also be changed dynamically through the toolbar icon.
 ![](Layout-Customization_images/chart-type.png)
 
 ![](Layout-Customization_images/chart-type-changed.png)
+
+## Report Toolbar
+
+Icons can be either enabled/disabled inside the report toolbar. This can be achieved by setting the properties under [`toolbarIconSettings`](/api/js/ejpivotclient#members:toolbariconsettings) option to false. The value is true by default.
+
+{% highlight javascript %}
+
+    $("#PivotClient1").ejPivotClient({
+        //...
+        //Disable toolbar icon in PivotClient.
+        toolbarIconSettings: {
+            enableAddReport: false,
+            enableNewReport: false,
+            enableRemoveReport: false
+        }
+    });
+
+{% endhighlight %}
+
+![](Layout-Customization_images/toolbarIconSettings1.png)
+
+The following screenshot shows after disabling the toolbar icons.
+
+![](Layout-Customization_images/toolbarIconSettings2.png)

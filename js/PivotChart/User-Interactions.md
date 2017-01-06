@@ -196,7 +196,7 @@ $(function()
 
 ### Enable Scrollbar
 
-* When [`zooming.enableScrollbar`](/api/js/ejpivotchart#members:zooming-enablescrollbar) option is set to true, you can scroll through chart using scrollbar or mouse whell.
+* When [`zooming.enableScrollbar`](/api/js/ejpivotchart#members:zooming-enablescrollbar) option is set to true, the PivotChart is rendered along with the scroll bars for precise view of data. The data can be viewed by using scroll bar or by using mouse whell scrolling.
 
 {% highlight javascript %}
 
