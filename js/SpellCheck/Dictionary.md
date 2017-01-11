@@ -10,10 +10,10 @@ keywords: dictionary, spellcheck dictionary, custom dictionary, adding a word
 
 Essential JavaScript SpellCheck uses two different types of dictionary.
 
- * Default dictionary 
- * Custom dictionary
+ * Default Dictionary 
+ * Custom Dictionary
 
-## Default dictionary 
+## Default Dictionary 
 
 ### Description
 
@@ -37,7 +37,7 @@ The following code example depicts the way to mention the default dictionary pat
 
 {% endhighlight %}
 
-## Custom dictionary 
+## Custom Dictionary 
 
 ### Description
 

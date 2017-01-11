@@ -6,14 +6,14 @@ control: spellcheck
 documentation: ug
 keywords: customization, spellcheck customization, misspell word appearance, restrict suggestion count 
 ---
-# SpellCheck customization
+# SpellCheck Customization
 
 The Essential JavaScript SpellCheck provides option to customize for the following scenarios.
 
-* Misspell word appearance
-* Restrict suggestion count
+* Misspell Word Appearance
+* Restrict Suggestion Count
     
-## Misspell word appearance
+## Misspell Word Appearance
 
 The SpellCheck control provide the support([misspellWordCss](/js/api/ejspellcheck#members:misspellwordcss)) to display the error word in user defined style. By default displaying the error words with the red underline. 
 
@@ -42,7 +42,7 @@ The following code example depicts the way to customize the error word highlight
 
 {% endhighlight %}
 
-## Restrict suggestion count
+## Restrict Suggestion Count
 
 The SpellCheck control provides option ([maxSuggestionCount](/js/api/ejspellcheck#members:maxsuggestioncount)) to restrict the count that the number of items displayed in the suggestion list.
 

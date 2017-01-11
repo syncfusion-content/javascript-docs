@@ -8,13 +8,13 @@ keywords: spellcheck functionalities, check spelling, ignore words, change words
 ---
 # Functionalities
 
-## Check spelling
+## Check Spelling
 
 The main functionality of the SpellCheck control is checking the spelling of a word and returns the suggestions for an error word.
 
 For example, if you pass the sentence that contains misspell words as input, you can know the error words in this sentence and its suggestions (apt words to replace).
 
-## Ignore words
+## Ignore Words
 
 The SpellCheck control provides the support to ignore the words from an error word consideration and also to ignore an error words whenever needed. Please refer the following options to ignore the words.
 
@@ -43,7 +43,7 @@ The following code example describes the above method implementation.
 
 {% endhighlight %} 
 
-### Ignore all
+### Ignore All
 
 The [ignore all](/api/js/ejspellcheck#methods:ignoreall) option is used to ignore all the error word occurrences from the given input string.
 
@@ -68,7 +68,7 @@ The following code example describes the way of using ignore all method.
 
 {% endhighlight %}
 
-### Word collection to ignore
+### Word Collection to Ignore
 
 The [ignore words](/api/js/ejspellcheck#members:ignorewords) option is used to ignore the collection of words from an error word checking. You can pass the technical terms, brand names which is not present in the dictionary file to this property "ignoreWords" as shown in the following code example and then while checking the spelling these passed words are considered as a correct word.
 
@@ -91,7 +91,7 @@ The [ignore words](/api/js/ejspellcheck#members:ignorewords) option is used to i
 
 {% endhighlight %}
 
-## Ignore settings
+## Ignore Settings
 
 The [ignore settings](/api/js/ejspellcheck#members:ignoresettings) helps to ignore the uppercase, mixed case words, alphanumeric words, file path and email addresses from the error word checking. Ignore settings contains the following options to ignore the words based on their category.
 
@@ -130,7 +130,7 @@ The following code example uses to enable the checking of all the words formed w
 
 {% endhighlight %}
 
-## Change words
+## Change Words
 
 The SpellCheck control provides the support to change an error words from its possible suggestions. Please refer the following options to change an error word.
 
@@ -160,7 +160,7 @@ The following code example describes the behavior of change method.
 
 {% endhighlight %}
 
-### Change all
+### Change All
 
 The [change all](/api/js/ejspellcheck#methods:changeall) option is used to replace all the occurrences of an error word with the correct word(selected from the suggestions list) from the given inputs string.
 
