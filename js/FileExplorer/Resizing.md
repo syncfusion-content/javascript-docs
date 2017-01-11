@@ -17,9 +17,9 @@ The resize behavior can be enabled through the [enableResize](http://help.syncfu
 
         $(function () {
 
-            var fileSystemPath = "http://mvc.syncfusion.com/ODataServices/FileBrowser/";
+            var fileSystemPath = "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/";
 
-            var ajaxActionHandler = "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/PerformAction";
+            var ajaxActionHandler = "http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations";
 
             $("#fileExplorer").ejFileExplorer({
 
@@ -47,9 +47,9 @@ By enabling the [isResponsive](http://help.syncfusion.com/api/js/ejfileexplorer#
 
         $(function () {
 
-            var fileSystemPath = "http://mvc.syncfusion.com/ODataServices/FileBrowser/";
+            var fileSystemPath = "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/";
 
-            var ajaxActionHandler = "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/PerformAction";
+            var ajaxActionHandler = "http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations";
 
             $("#fileExplorer").ejFileExplorer({
 
@@ -80,9 +80,9 @@ You can restrict the dimension of the FileExplorer by setting the [minHeight](ht
 
         $(function () {
 
-            var fileSystemPath = "http://mvc.syncfusion.com/ODataServices/FileBrowser/";
+            var fileSystemPath = "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/";
 
-            var ajaxActionHandler = "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/PerformAction";
+            var ajaxActionHandler = "http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations";
 
             $("#fileExplorer").ejFileExplorer({
 

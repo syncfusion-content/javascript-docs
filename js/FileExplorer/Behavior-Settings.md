@@ -21,9 +21,9 @@ By default it having the value “*.*”, so it allows all the file types. In ca
 
     $(function () {
 
-        var fileSystemPath = "http://mvc.syncfusion.com/ODataServices/FileBrowser/";
+        var fileSystemPath = "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/";
 
-        var ajaxActionHandler = "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/PerformAction";
+        var ajaxActionHandler = "http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations";
 
         $("#fileExplorer").ejFileExplorer({
 
@@ -71,11 +71,11 @@ If you want to customize read action alone, the AJAX **url** and **dataType** ar
 
         $(function () {
 
-            var fileSystemPath = "http://mvc.syncfusion.com/ODataServices/FileBrowser/";
+            var fileSystemPath = "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/";
 
-            var ajaxActionHandler = "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/PerformAction";
+            var ajaxActionHandler = "http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations";
 
-            var ajaxJSONPActionHandler = "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/ PerformJSONPAction ";
+            var ajaxJSONPActionHandler = "http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperationsCors";
 
             $("#fileExplorer").ejFileExplorer({
 

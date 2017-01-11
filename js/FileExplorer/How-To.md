@@ -37,8 +37,8 @@ Using JSONP data type, you can perform cross origin-request. To enable cross-ori
     {% highlight javascript %}
     
         $("#fileExplorer").ejFileExplorer({
-            path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",
-            ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONPAction",
+            path: "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/",
+            ajaxAction:  "http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations",
             ajaxDataType: "jsonp"
         });
         
