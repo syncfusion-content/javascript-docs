@@ -1167,3 +1167,46 @@ We can able to select the point/series programmatically on chart load, by settin
 {% endhighlight %}
 
 ![](/js/Chart/User-Interactions_images/User-Interactions_img29.png)
+
+
+## Data Editing
+
+EjChart provides support to change the location of the rendered points. This can be done by dragging the point and dropping it on another location in chart. To enable the data editing, set the [`enable`] (../api/ejchart#members:series-dragSettings-enable) property to true in the [`dragSettings`](../api/ejchart#members:series-dragSettings) of the series.
+
+{% highlight javascript %}
+
+$("#container").ejChart(
+  {	  
+      //Initializing Series
+      series:[{     
+              dragSettings:{     
+		        enable: true
+		}
+           }]   
+     });
+
+{% endhighlight %}
+
+![](/js/Chart/User-Interactions_images/User-Interactions_img31.png)
+
+[Click](http://js.syncfusion.com/demos/web/#!/bootstrap/chart/UserInteraction/DataEditing) here to view the data editing online demo sample.
+
+### Customize Dragging direction
+
+To drag the point along x and y axes, you can specify [`type`] (../api/ejchart#members:series-dragSettings-type) as xy in dragSettings. And to drag along x axis alone, specify the type as x and to drag along y axis, specify type as y.
+
+{% highlight javascript %}
+
+$("#container").ejChart(
+  {	  
+      //Initializing Series
+      series:[{     
+              dragSettings:{     
+		        type: 'y'
+		}
+           }]   
+     });
+
+{% endhighlight %}
+
+![](/js/Chart/User-Interactions_images/User-Interactions_img32.png)
