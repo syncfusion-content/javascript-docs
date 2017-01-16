@@ -168,7 +168,7 @@ The following code example describes the above behavior.
                         keyField: "Status", 
                         fields: {
                         primaryKey: "Id",
-                        content: "Text",
+                        content: "Summary",
                         },
                         contextMenuSettings: {
                         enable: true,
@@ -208,7 +208,7 @@ The following code example describes the above behavior.
             dataSource: data,
             contextClick: function (args) {
                 if (args.text == "Clear Selection")
-                    this.clearSelection();
+                    this.KanbanSelection.clear();
             },
             columns: [
                 { headerText: "Backlog", key: "Open" },
@@ -271,7 +271,7 @@ The following code example describes the above behavior.
             dataSource: data,
             contextClick: function (args) {
                 if (args.text == "Clear Selection")
-                    this.clearSelection();
+                    this.KanbanSelection.clear();
                 else if (args.text != "Move to Column")
                     this.updateCard(args.data.id, args.data);
             },

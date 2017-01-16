@@ -380,9 +380,9 @@ You can customize built-in text and messages based on your culture. The below ex
 
         $(function () {
 
-            var fileSystemPath = "http://mvc.syncfusion.com/ODataServices/FileBrowser/";
+            var fileSystemPath = "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/";
 
-            var ajaxActionHandler = "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/PerformAction";
+            var ajaxActionHandler = "http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations";
 
             $("#fileExplorer").ejFileExplorer({
 

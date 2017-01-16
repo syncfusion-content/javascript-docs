@@ -17,9 +17,9 @@ The dimension of the FileExplorer can be customized through [height](http://help
 
         $(function () {
 
-            var fileSystemPath = "http://mvc.syncfusion.com/ODataServices/FileBrowser/";
+            var fileSystemPath = "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/";
 
-            var ajaxActionHandler = "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/PerformAction";
+            var ajaxActionHandler = "http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations";
 
             $("#fileExplorer").ejFileExplorer({
 
@@ -47,9 +47,9 @@ The visibility of the navigation pane can be controlled by the [showNavigationPa
 
         $(function () {
 
-            var fileSystemPath = "http://mvc.syncfusion.com/ODataServices/FileBrowser/";
+            var fileSystemPath = "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/";
 
-            var ajaxActionHandler = "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/PerformAction";
+            var ajaxActionHandler = "http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations";
 
             $("#fileExplorer").ejFileExplorer({
 
@@ -91,9 +91,9 @@ Also the layout views can be changed through the [layout](http://help.syncfusion
 
         $(function () {
 
-            var fileSystemPath = "http://mvc.syncfusion.com/ODataServices/FileBrowser/";
+            var fileSystemPath = "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/";
 
-            var ajaxActionHandler = "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/PerformAction";
+            var ajaxActionHandler = "http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations";
 
             $("#fileExplorer").ejFileExplorer({
 
@@ -121,9 +121,9 @@ The behavior of the columns can be customized through the [columns](http://help.
 
         $(function () {
 
-            var fileSystemPath = "http://mvc.syncfusion.com/ODataServices/FileBrowser/";
+            var fileSystemPath = "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/"
 
-            var ajaxActionHandler = "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/PerformAction";
+            var ajaxActionHandler = "http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations";
 
             $("#fileExplorer").ejFileExplorer({
 
@@ -167,9 +167,9 @@ The footer displays the details of the current selected files and folders, and t
 
         $(function () {
 
-            var fileSystemPath = "http://mvc.syncfusion.com/ODataServices/FileBrowser/";
+            var fileSystemPath = "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/";
 
-            var ajaxActionHandler = "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/PerformAction";
+            var ajaxActionHandler = "http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations";
 
             $("#fileExplorer").ejFileExplorer({
 

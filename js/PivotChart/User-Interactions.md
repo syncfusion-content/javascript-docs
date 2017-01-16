@@ -12,7 +12,7 @@ documentation: ug
 ## Tooltip
 
 ### Enable Tooltip for Data Points
-Tooltip for the data points can be enabled using the **"visible"** option of the [`tooltip`](/api/js/ejchart#members:commonseriesoptions-tooltip-visible) property under **"commonSeriesOptions"** of the PivotChart.
+Tooltip for the data points can be enabled by using the **"visible"** option of the [`tooltip`](/api/js/ejchart#members:commonseriesoptions-tooltip-visible) property under **"commonSeriesOptions"** of PivotChart.
 
 {% highlight javascript %}
 $(function()
@@ -193,6 +193,30 @@ $(function()
     });
 });
 {% endhighlight %}
+
+### Enable Scrollbar
+
+* When [`zooming.enableScrollbar`](/api/js/ejpivotchart#members:zooming-enablescrollbar) option is set to true, the PivotChart is rendered along with the scroll bars for precise view of data. The data can be viewed by using scroll bar or by using mouse whell scrolling.
+
+{% highlight javascript %}
+
+$(function()
+{
+    $("#PivotChart1").ejPivotChart(
+    {
+        ....
+        //Enable zooming in Chart
+        zooming:
+        {
+            enableScrollbar: true
+        }
+        //....
+    });
+});
+
+{% endhighlight %} 
+
+![](User-Interactions_images/scrollbar.png)
 
 ## Marker and Crosshair
 

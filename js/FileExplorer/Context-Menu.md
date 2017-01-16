@@ -94,9 +94,9 @@ The presence of the context menu can be controlled by the [showContextMenu](http
 
         $(function () {
 
-            var fileSystemPath = "http://mvc.syncfusion.com/ODataServices/FileBrowser/";
+            var fileSystemPath = "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/";
 
-            var ajaxActionHandler = "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/PerformAction";
+            var ajaxActionHandler = "http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations";
 
             $("#fileExplorer").ejFileExplorer({
 
@@ -205,8 +205,8 @@ $(function () {
                 }, ]
             }, ]
         },
-        path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",
-        ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction",
+        path: "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/",
+        ajaxAction: "http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations",
         layoutChange: "onLayoutChange",
         menuOpen: "onMenuOpen"
     });

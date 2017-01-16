@@ -230,13 +230,10 @@ While using template, you can change the elements that are defined in the `templ
             $("#Estimate").ejNumericTextbox({ value: parseFloat($("#Estimate").val()), width: "175px", height: "34px", decimalPlaces: 2 });
             $("#Assignee").ejDropDownList({ width: '175px' });
             $("#Status").ejDropDownList({ width: '175px' });
-            $("#Priority").ejDropDownList({ width: '175px' });
             if (args.requestType == "beginedit" || args.requestType == "add") {
                 $("#Assignee").ejDropDownList("setSelectedValue", args.data['Assignee']);
-                $("#Priority").ejDropDownList("setSelectedValue", args.data['Priority']);
                 $("#Status").ejDropDownList("setSelectedValue", args.data['Status']);
-            }
-        
+            }        
         }
     }
 
