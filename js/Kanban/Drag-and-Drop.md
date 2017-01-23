@@ -11,7 +11,7 @@ keywords: drag and drop,kanban drag and drop
 
 By default [`allowDragAndDrop`](https://help.syncfusion.com/api/js/ejkanban#members:allowdraganddrop) is true.Cards can be transited from one column to another column, by dragging and dropping. And it has drop position indicator which enables easier positioning of cards
 
-N> It is not possible transit cards to other swim lanes through Drag and Drop.
+N> To transit cards to other swim lanes through Drag and Drop, please refer [here](https://help.syncfusion.com/js/kanban/swimlanes#drag-and-drop-between-swim-lanes).
 
 ## Prioritization of cards
 
