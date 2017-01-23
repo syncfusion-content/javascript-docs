@@ -19,7 +19,7 @@ documentation: ug
 
 Here, you can learn when and how each adaptor is used.
 
-##JSON Adaptor
+## JSON Adaptor
 
 **JSONAdaptor** is used to process **JSON** data. It contains methods to process the given **JSON** data based on the queries. The following code example illustrates on how to use **JSONAdaptor**.
 
@@ -70,7 +70,7 @@ The result of above code example is illustrated as follows.
 
 ![](/js/DataManager/Data-Adaptors_images/Data-Adaptors_img1.png) 
 
-##URL Adaptor
+## URL Adaptor
 
 URL Adaptor of **DataManager** can be used when you are required to use remote service to retrieve data. It interacts with server-side for all **DataManager** Queries and **CRUD** operations. Now, in the following code example the data is retrieved data from **MVC** **Controller**. 
 
@@ -137,7 +137,7 @@ The result of the above code example is illustrated as follows.
 
 ![](/js/DataManager/Data-Adaptors_images/Data-Adaptors_img2.png) 
 
-##OData Adaptor
+## OData Adaptor
 
 **OData** Adaptor that is extended from URL Adaptor, is used for consuming data through OData Service. You can use the following code example to use **OData** adaptor.
 
@@ -195,7 +195,7 @@ The result of the above code example is illustrated as follows.
 
 ![](/js/DataManager/Data-Adaptors_images/Data-Adaptors_img3.png) 
 
-##WebAPI Adaptor
+## WebAPI Adaptor
 
 **WebApi** Adaptor, extended from UrlAdaptor, of **DataManager** is used for retrieving data from WebApi service. Refer to the following code example.
 
@@ -248,7 +248,7 @@ Result of the above code example is illustrated as follows.
 
 ![](/js/DataManager/Data-Adaptors_images/Data-Adaptors_img4.png) 
 
-##RemoteSave Adaptor
+## RemoteSave Adaptor
 
 **RemoteSaveAdaptor**, extended from **JsonAdaptor** of **DataManager**, is used for binding local data and performs all **DataManager** queries in client-side. It interacts with server-side only for **CRUD** operations to pass the modified records. Refer to the following code example.
 
@@ -423,7 +423,7 @@ Result of the above code example is illustrated as follows.
 
 
 
-##Custom Adaptor
+## Custom Adaptor
 
 Custom adaptor is a key technique to customize adaptors in **DataManager**. It is useful to write own adaptor. Normally **ej.Adaptor** is base class for all adaptors. Therefore you first inherit **ej.Adaptor** to develop customized one and then you override functionality in custom adaptor with base class. The following code example illustrates you on how to create custom adaptor.
 
@@ -497,7 +497,7 @@ Result of above code example is as follows.
 
 ![](/js/DataManager/Data-Adaptors_images/Data-Adaptors_img6.png) 
 
-##Cache Adaptor
+## Cache Adaptor
 
 Cache Adaptor is used to cache the data of the visited pages. It prevents new requests for the previously visited pages. It can be enabled by using the `enableCaching` property. You can configure cache page size and duration of caching by using `cachingPageSize` and `timeTillExpiration` properties of the [`ej.DataManager`](http://help.syncfusion.com/api/js/ejdatamanager# "DataManager"). 
 
@@ -527,4 +527,7 @@ columns: ["OrderID", "CustomerID", "EmployeeID", "Freight", "ShipCity"] }); });
 
 {% endhighlight %}
 
-![](/js/DataManager/Data-Adaptors_images/Data-Adaptors_img7.png)
+![](Data-Adaptors_images/Data-Adaptors_img7.png)
+
+N> The unit for timeTillExpiration is in milliseconds <BR>
+1000 ms = 1 second.
