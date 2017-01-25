@@ -128,10 +128,11 @@ N> 3. Selection can be used to mention cell references within formula
 ## User Defined Functions
 
 The list of formulas supported in Spreadsheet is sufficient for most of your calculations. If not, you can create and use your own function using user defined function option. You can add user defined function to Spreadsheet in following ways,
-    
-    1) Initial Load
 
-    2) Method
+1. Initial Load
+
+2. Method
+
 
 ### Initial Load
 
@@ -180,7 +181,7 @@ You can add your own function to Spreadsheet at initial load with [`customFormul
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
-![](Formula_images/Formula_img3.png)
+![](Formulas_images/Formula_img5.png)
 
 ### Method
 
@@ -228,7 +229,7 @@ You can add your own function to Spreadsheet using [`addCustomFormula`](https://
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
-![](Formula_images/Formula_img3.png)
+![](Formulas_images/Formula_img5.png)
 
 To remove user defined function from Spreadsheet use [`removeCustomFormula`](https://help.syncfusion.com/js/api/ejspreadsheet#methods:removecustomformula "removeCustomFormula") method.
 
