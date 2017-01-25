@@ -125,6 +125,114 @@ N> 1. The list of supported formulas can be find in following [`link`](https://h
 N> 2. Constant values, cell references, formulas and named ranges can be passed as argument to formulas
 N> 3. Selection can be used to mention cell references within formula
 
+## User Defined Functions
+
+The list of formulas supported in Spreadsheet is sufficient for most of your calculations. If not, you can create and use your own function using user defined function option. You can add user defined function to Spreadsheet in following ways,
+
+1. Initial Load
+
+2. Method
+
+
+### Initial Load
+
+You can add your own function to Spreadsheet at initial load with [`customFormulas`](https://help.syncfusion.com/js/api/ejspreadsheet#members:customformulas "customFormulas") API. The following code example describes the above behaviour,
+
+{% highlight html %}
+
+<div id="Spreadsheet"></div>
+
+<script>
+    $(function () {
+        $("#Spreadsheet").ejSpreadsheet({
+            sheets: [{
+                rows: [{
+                    cells: [{
+                        value: 1
+                    }]
+                    },
+                    {
+                    cells: [{
+                        value: 2
+                    }]
+                    },                    
+                    {
+                    cells: [{
+                        value: "=CUSTOMTOTAL(A1,A2,3)"
+                    }]
+                }]
+            }],
+            customFormulas: [{"formulaName":"CUSTOMTOTAL", "functionName":"customTotal"}]
+        });
+    });
+
+    function customTotal(args) {
+        var param1, param2, param3, value, xlObj = $('#Spreadsheet').data("ejSpreadsheet"),
+        argument = xlObj.getValueFromFormulaArg(args);
+        param1 = argument["arg1"];
+        param2 = argument["arg2"];
+        param3 = argument["arg3"];
+        value = param1 * param2 + param3;
+        return value;
+    }
+
+</script>
+
+{% endhighlight %}
+
+The following output is displayed as a result of the above code example.
+![](Formulas_images/Formula_img5.png)
+
+### Method
+
+You can add your own function to Spreadsheet using [`addCustomFormula`](https://help.syncfusion.com/js/api/ejspreadsheet#methods:addcustomformula "addCustomFormula") method. The following code example describes the above behaviour,
+
+{% highlight html %}
+
+<div id="Spreadsheet"></div>
+
+<script>
+    $(function () {
+        $("#Spreadsheet").ejSpreadsheet({                
+            sheets: [{
+                rows: [{
+                    cells: [{
+                        value: 1
+                    }]
+                    },
+                    {
+                    cells: [{
+                        value: 2
+                    }]
+                }]                                       
+            }],
+            loadComplete: "loadComplete"
+        });
+    });
+
+    function loadComplete() {
+        this.addCustomFormula("CUSTOMTOTAL", "customTotal");
+        this.XLEdit.updateCellValue({ rowIndex: 2, colIndex: 0 }, "=CUSTOMTOTAL(A1,A2,3)");
+    }
+
+    function customTotal(args) {
+        var param1, param2, param3, value, xlObj = $('#Spreadsheet').data("ejSpreadsheet"),
+        argument = xlObj.getValueFromFormulaArg(args);
+        param1 = argument["arg1"];
+        param2 = argument["arg2"];
+        param3 = argument["arg3"];
+        value = param1 * param2 + param3;
+        return value;
+    }
+</script>
+
+{% endhighlight %}
+
+The following output is displayed as a result of the above code example.
+![](Formulas_images/Formula_img5.png)
+
+To remove user defined function from Spreadsheet use [`removeCustomFormula`](https://help.syncfusion.com/js/api/ejspreadsheet#methods:removecustomformula "removeCustomFormula") method.
+
 ## Named Ranges
 
 To understand the purpose of cell reference or table, you can define a meaningful name using named ranges support. By using names, you can make your formula much easier to understand and maintain. You can add named ranges to Spreadsheet in following ways,
