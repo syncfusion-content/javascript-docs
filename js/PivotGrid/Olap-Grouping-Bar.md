@@ -64,6 +64,12 @@ $(function() {
 
 ![](Grouping-Bar_images/olapgroupingbar.png)
 
+## Searching Values
+Search option available in Grouping Bar allows you to search a specific value that needs to be filtered from the list of values inside the filter pop-up window.
+
+![](Grouping-Bar_images/OlapClntFiltering.png)
+
+![](Grouping-Bar_images/olapclientsearching.png)
 
 ## Filtering Values
 Filtering option available in Grouping Bar allows you to select a specific set of values that needs to be displayed in the PivotGrid control. At least one value needed to be in checked state while filtering otherwise “Ok” button will be disabled.

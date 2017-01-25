@@ -132,9 +132,9 @@ The visibility of the toolbar can be customized through the [showToolbar](http:/
 
         $(function () {
 
-            var fileSystemPath = "http://mvc.syncfusion.com/ODataServices/FileBrowser/";
+            var fileSystemPath = "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/";
 
-            var ajaxActionHandler = "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/PerformAction";
+            var ajaxActionHandler = "http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations";
 
             $("#fileExplorer").ejFileExplorer({
 
@@ -160,9 +160,9 @@ As you can see the available toolbar items from [here](#toolbar-items). From the
 
         $(function () {
 
-            var fileSystemPath = "http://mvc.syncfusion.com/ODataServices/FileBrowser/";
+            var fileSystemPath = "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/";
 
-            var ajaxActionHandler = "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/PerformAction";
+            var ajaxActionHandler = "http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations";
 
             $("#fileExplorer").ejFileExplorer({
 
@@ -236,9 +236,9 @@ So you can configure the filter type with case sensitivity like below:
 
         $(function () {
 
-            var fileSystemPath = "http://mvc.syncfusion.com/ODataServices/FileBrowser/";
+            var fileSystemPath = "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/";
 
-            var ajaxActionHandler = "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/PerformAction";
+            var ajaxActionHandler = "http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations";
 
             $("#fileExplorer").ejFileExplorer({
 
@@ -274,9 +274,9 @@ You can find an online demo sample of FileExplorer with custom tool from [here](
 
         $(function () {
 
-            var fileSystemPath = "http://mvc.syncfusion.com/ODataServices/FileBrowser/";
+            var fileSystemPath = "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/";
 
-            var ajaxActionHandler = "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/PerformAction";
+            var ajaxActionHandler = "http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations";
 
             $("#fileExplorer").ejFileExplorer({
 
@@ -402,9 +402,9 @@ This property has the below sub properties with the default values:
 
         $(function () {
 
-            var fileSystemPath = "http://mvc.syncfusion.com/ODataServices/FileBrowser/";
+            var fileSystemPath = "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/";
 
-            var ajaxActionHandler = "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/PerformAction";
+            var ajaxActionHandler = "http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations";
 
             $("#fileExplorer").ejFileExplorer({
 

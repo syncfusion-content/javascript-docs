@@ -183,3 +183,27 @@ The Chart Type can also be changed dynamically through the toolbar icon.
 ![](Layout-Customization_images/chart-type.png)
 
 ![](Layout-Customization_images/chart-type-changed.png)
+
+## Report Toolbar
+
+Icons can be either enabled/disabled inside the report toolbar. This can be achieved by setting the properties under [`toolbarIconSettings`](/api/js/ejpivotclient#members:toolbariconsettings) option to false. The value is true by default.
+
+{% highlight javascript %}
+
+    $("#PivotClient1").ejPivotClient({
+        //...
+        //Disable toolbar icon in PivotClient.
+        toolbarIconSettings: {
+            enableAddReport: false,
+            enableNewReport: false,
+            enableRemoveReport: false
+        }
+    });
+
+{% endhighlight %}
+
+![](Layout-Customization_images/toolbarIconSettings1.png)
+
+The following screenshot shows after disabling the toolbar icons.
+
+![](Layout-Customization_images/toolbarIconSettings2.png)

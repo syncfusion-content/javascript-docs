@@ -19,7 +19,7 @@ Create an HTML page and add the scripts references in the order mentioned in the
 <html>
     <head>
         <!-- Essential Studio for JavaScript  theme reference -->
-        <link rel="stylesheet" href="http://cdn.syncfusion.com/14.2.0.26/js/web/flat-azure/ej.web.all.min.css" />
+        <link rel="stylesheet" href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" />
         <!--  jquery script  -->
         <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
         <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"></script>
@@ -27,7 +27,7 @@ Create an HTML page and add the scripts references in the order mentioned in the
         <!--  jsrender script  -->
         <script src="http://cdn.syncfusion.com/js/assets/external/jsrender.min.js"></script>
         <!-- Essential JS UI widget -->    
-        <script src="http://cdn.syncfusion.com/14.2.0.26/js/web/ej.web.all.min.js"></script>
+        <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"></script>
         <!--Add custom scripts here -->
     </head>
     <body>
@@ -55,7 +55,7 @@ Add a `div` container to render the Spreadsheet.
 
 {% endhighlight %}
 
-Initialize the Spreadsheet by using the ejSpreadsheet method. The Spreadsheet is rendered based on default `width` and `height`. You can also customize the Spreadsheet dimension by setting the [`width`](http://help.syncfusion.com/api/js/ejspreadsheet#members:scrollsettings-width "width") and [`height`](http://help.syncfusion.com/api/js/ejspreadsheet#members:scrollsettings-height "height") property in [`scrollSettings`](http://help.syncfusion.com/api/js/ejspreadsheet#members:scrollsettings "scrollSettings").
+Initialize the Spreadsheet by using the ejSpreadsheet method. The Spreadsheet is rendered based on default width and height. You can also customize the Spreadsheet dimension by setting the [`width`](http://help.syncfusion.com/api/js/ejspreadsheet#members:scrollsettings-width "width") and [`height`](http://help.syncfusion.com/api/js/ejspreadsheet#members:scrollsettings-height "height") property in [`scrollSettings`](http://help.syncfusion.com/api/js/ejspreadsheet#members:scrollsettings "scrollSettings").
 
 {% highlight html %}
 
@@ -113,7 +113,7 @@ $("#Spreadsheet").ejSpreadsheet({
 });
 
 function loadComplete() {                
-    this.XLCFormat.setCFRule({ "action": "greaterthan", "input1": "100", "color": "redft", "range": "D1:F4" });
+    this.XLCFormat.setCFRule({ "action": "greaterthan", "input1": "10", "color": "redft", "range": "D2:D8" });
 }
 
 {% endhighlight %}
@@ -131,7 +131,7 @@ The Spreadsheet can save its data, style, format into an excel file. To enable s
 $("#Spreadsheet").ejSpreadsheet({
     // ...                    
     exportSettings: {                        
-        excelUrl: "http://js.syncfusion.com/demos/ejservices/api/JSXLExport/ExportToExcel"
+        excelUrl: "http://js.syncfusion.com/demos/ejservices/api/Spreadsheet/ExcelExport"
     }                    
     // ...
 });
