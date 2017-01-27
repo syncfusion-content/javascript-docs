@@ -132,3 +132,31 @@ var options = {
 diagram.exportDiagram(options);
 
 {% endhighlight %}
+
+### Export Diagram With Stretch option
+
+Diagram provides support to export the diagram as image for stretch option. The exported images will be clearer but larger in file size.
+
+{% highlight javascript %}
+
+var diagram = $("#diagram").ejDiagram("instance");
+var options = {
+	fileName: "diagram",
+	region: "content",
+	pageWidth: 400, 
+	pageHeight: 400,
+	//Stretch Option for Exporting the Image
+
+	stretch: "fill",
+	multiplePage: false
+	};
+diagram.exportDiagram(options);
+
+{% endhighlight %}
+
+By default, Diagram is exported with stretch option as "none". You can export Diagram with following stretch options.
+
+* Fill
+* Uniform
+* UniformToFill
+* None
