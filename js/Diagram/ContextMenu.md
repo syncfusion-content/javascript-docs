@@ -51,10 +51,13 @@ $("#DiagramContent").ejDiagram({
 			// Defines the sub items
 			subItems: [{
 				name: "zoomIn",
-				text: "ZoomIn"
+				text: "ZoomIn",
+				// Sets the image src for the item
+				imageUrl: "Images/zoomin.png"
 			},{
 				name: "zoomOut",
-				text: "ZoomOut"
+				text: "ZoomOut",
+				imageUrl: "Images/zoomout.png"
 			}]
 		}],
 		// Hides the default context menu items

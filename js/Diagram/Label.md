@@ -666,6 +666,21 @@ $("#diagram").ejDiagram({
 
 ![](/js/Diagram/Label_images/Label_img28.png)
 
+## LabelRendering Mode
+
+Labels can be rendered in separate layer as svg or html. 
+
+{% highlight javascript %}
+
+ $("#diagram").ejDiagram({
+	 
+    //renders label in same layer
+    labelRenderingMode: "svg"
+ 
+ });
+
+{% endhighlight %}
+
 ## Limitation
 
 * To enable faster rendering, labels are rendered in a separate layer because of this, all the labels always stay on top. When two nodes are overlapped, text of underlying node is not hidden by the overlapped node. 
