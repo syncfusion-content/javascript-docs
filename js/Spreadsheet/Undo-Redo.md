@@ -18,11 +18,11 @@ N> Default value of [`undoRedoStep`](https://help.syncfusion.com/api/js/ejspread
 Undo reverses the last action you performed with spreadsheet. You can do this by following ways.
 
 * Use Undo button of HOME tab in ribbon.
-* Use Ctrl + Z key.
+* Use "Ctrl + Z" key.
 
 ## Redo the action
 
 Redo reverses the last undo action you performed with spreadsheet. You can do this by following ways.
 
 * Use Redo button of HOME tab in ribbon.
-* Use Ctrl + Y key.
+* Use "Ctrl + Y" key.

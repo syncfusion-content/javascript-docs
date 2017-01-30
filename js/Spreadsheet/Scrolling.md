@@ -45,7 +45,7 @@ The following output is displayed as a result of the above code example.
 
 ## Responsive
 
-Spreadsheet has support for responsive behavior based on client browser's width and height. To enable responsive, [`isResponsive`](https://help.syncfusion.com/api/js/ejspreadsheet#members:scrollsettings-isresponsive "isResponsive") property in [`scrollSettings`](https://help.syncfusion.com/api/js/ejspreadsheet#members:scrollsettings "scrollSettings") should be true. The three modes of responsive layout available in grid based on client width. They are.
+Spreadsheet has support for responsive behavior based on client browser's width and height. To enable responsive, set [`isResponsive`](https://help.syncfusion.com/api/js/ejspreadsheet#members:scrollsettings-isresponsive "isResponsive") property in [`scrollSettings`](https://help.syncfusion.com/api/js/ejspreadsheet#members:scrollsettings "scrollSettings") as true. The three modes of responsive layout available in grid based on client width. They are.
 
 * Mobile(<420px)
 * Tablet (420px to 617px)
