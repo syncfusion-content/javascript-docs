@@ -119,12 +119,11 @@ The following code example describes the above behavior.
 {% highlight javascript %}
 $(function () {
     var dataManager = ej.DataManager({
-        url: "http://js.syncfusion.com/demos/ejServices/wcf/Grid/GridService.svc/Orders",
-        crossDomain: true
+        url: Home/Default , adaptor: new ej.remoteSaveAdaptor(), batchUrl: "Home/BatchUpdate"
     });
     $("#Spreadsheet").ejSpreadsheet({
         sheets: [{
-            rangeSettings: [{ dataSource: dataManager }],                               
+            rangeSettings: [{ dataSource: dataManager, primaryKey: "ItemName" }],                               
         }],
         loadComplete: "loadComplete"
     });
@@ -136,4 +135,13 @@ function loadComplete(args) {
         this.saveBatchChanges(this.getActiveSheetIndex());
     }
 }
+{% endhighlight %}
+
+{% highlight c# %}
+
+public ActionResult BatchUpdate( List<ItemDetail> changed,  List<ItemDetail> added,  List<ItemDetail> deleted, string action, string key)
+{
+    //Save the batch changes
+}
+
 {% endhighlight %}
