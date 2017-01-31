@@ -119,7 +119,7 @@ The following code example describes the above behavior.
 {% highlight javascript %}
 $(function () {
     var dataManager = ej.DataManager({
-        url: Home/Default , adaptor: new ej.remoteSaveAdaptor(), batchUrl: "Home/BatchUpdate"
+        url: "Home/Default" , adaptor: "UrlAdaptor", batchUrl: "Home/BatchUpdate"
     });
     $("#Spreadsheet").ejSpreadsheet({
         sheets: [{
