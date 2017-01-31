@@ -21,18 +21,11 @@ Set the list for **DropDown control** inside a list tag and define this tag as a
          <div>
             <input type="radio" name="small" id="Radio1" />
          </div>
-         option
+         Option 1
       </li>
       <li id="Dropdown" title="Dropdown Control">
          <input id="selectcar" type="text" />
-         <div id="cars">
-            <ul>
-               <li>Audi A4</li>
-               <li>Audi A5</li>
-               <li>Audi A6</li>
-               <li>Audi A7</li>
-            </ul>
-         </div>
+        
       </li>
    </ul>
 </div>
@@ -43,8 +36,14 @@ Set the list for **DropDown control** inside a list tag and define this tag as a
 
     $(function () {
         // declaration
-        $("#Radio1").ejRadioButton({ checked: false });
-        $('#selectcar').ejDropDownList({ height: "23px", width: "100px", targetID: "cars", selectedItemIndex: 0 });
+          var skillset = [
+                { skill: "ASP.NET" }, { skill: "ActionScript" }, { skill: "Basic" },
+                { skill: "C++" }, { skill: "C#" }, { skill: "dBase" }, { skill: "Delphi" },
+                { skill: "ESPOL" }, { skill: "F#" }, { skill: "FoxPro" }, { skill: "Java" },
+                { skill: "J#" }, { skill: "Lisp" }, { skill: "Logo" }, { skill: "PHP" }
+            ];
+        $("#Radio1").ejRadioButton({ size:"medium" });
+        $('#selectcar').ejDropDownList({ dataSource: skillset, fields: { text: "skill" },watermarkText: "Select your skill",});
         $("#toolbarcontent").ejToolbar({ width: "250px", height: "28px" });
     });
 
@@ -52,6 +51,96 @@ Set the list for **DropDown control** inside a list tag and define this tag as a
 {% endhighlight %}
 
 
+##Through Items API:
+
+{% highlight html %}
+
+    <div id="toolbarcontent"></div>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+    $(function () {
+        
+          var skillset = [
+                { skill: "ASP.NET" }, { skill: "ActionScript" }, { skill: "Basic" },
+                { skill: "C++" }, { skill: "C#" }, { skill: "dBase" }, { skill: "Delphi" },
+                { skill: "ESPOL" }, { skill: "F#" }, { skill: "FoxPro" }, { skill: "Java" },
+                { skill: "J#" }, { skill: "Lisp" }, { skill: "Logo" }, { skill: "PHP" }
+            ];
+        $("#toolbarcontent").ejToolbar({
+        
+			 Items:[
+                    {id:"item1",group:"group1",template:"<input type='radio' id='Radio1' name='radio'>Option 1</input>"},
+					{id: "item2",group:"group2",template:"<input type='text' id='dropdown1' />"}
+					],
+
+             
+			  });
+               $("#Radio1").ejRadioButton({size:"medium"});
+                $('#dropdown1').ejDropDownList({
+                dataSource: skillset,
+                fields: { text: "skill" },
+                watermarkText: "Select your skill",
+               
+            });
+    });
+
+
+{% endhighlight %}
+
+##Through template field in dataSource API:
+
+{% highlight html %}
+
+    <div id="toolbarcontent"></div>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+    $(function () {
+      var skillset = [
+                { skill: "ASP.NET" }, { skill: "ActionScript" }, { skill: "Basic" },
+                { skill: "C++" }, { skill: "C#" }, { skill: "dBase" }, { skill: "Delphi" },
+                { skill: "ESPOL" }, { skill: "F#" }, { skill: "FoxPro" }, { skill: "Java" },
+                { skill: "J#" }, { skill: "Lisp" }, { skill: "Logo" }, { skill: "PHP" }
+            ];
+     toolbaritems = [
+		  {
+               tid: "1",
+               title:"radio",
+			   template:"<input type='radio' id='radio1'>Option 1</input>",
+			   groups:"group1"
+
+            },
+			 {
+			         tid:"2",
+					 title:"dropdown",
+					 template:"<input type='text' id='dropdown2'></div>",
+					 group:"group2"
+			 }],
+        
+        $("#toolbarcontent").ejToolbar({
+			  dataSource: toolbaritems,
+              fields: { id: "tid",tooltipText:"title",group:"group",template:"template"},
+
+             
+			  });
+              $("#radio1").ejRadioButton({size:"medium"});
+              $('#dropdown2').ejDropDownList({
+                dataSource: skillset,
+                fields: { text: "skill" },
+                watermarkText: "Select your skill",
+              
+                
+            });
+    });
+
+
+{% endhighlight %}
+
 The following screenshot displays a Toolbar with embedded controls.
 
-![](/js/Toolbar/Template-Support_images/Template-Support_img1.png)
+![](Template-Support_images/Template.JPG)
