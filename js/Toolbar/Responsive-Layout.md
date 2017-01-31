@@ -180,7 +180,7 @@ Add the following code example in your **HTML** page.
 
     $(function () {
         $("#ToolbarItem").ejToolbar({
-            width: "50%", // width of the Toolbar
+            width: "600px", // width of the Toolbar
             height: "33px", // height of the Toolbar
             isResponsive: true // responsive support for toolbar
         });
@@ -197,5 +197,51 @@ Add the following code example in your **HTML** page.
 
 Execute the above code to render the following output.
 
-![](/js/Toolbar/Responsive-Layout_images/Responsive-Layout_img1.png)
+![](Responsive-Layout_images/Responsive-Layout.png)
 
+
+##responsiveType:Inline
+
+We can set the responsiveType property to inline to display the overflown toolbar items as inline toolbar.
+
+{% highlight js %}
+
+    $(function () {
+        $("#ToolbarItem").ejToolbar({
+            width: "600px", // width of the Toolbar
+            height: "33px", // height of the Toolbar
+            isResponsive: true // responsive support for toolbar
+            responsiveType:"inline"//responsive Type API to display overflow items as inline toolbar.
+        });
+      
+    });
+
+{% endhighlight %}
+
+
+While setting inline responsiveType the following output will be displayed.
+
+![](Responsive-Layout_images/Responsive-Layout-img2.png)
+
+##responsiveType:Popup
+
+We can set the responsiveType property to popup to display the overflown toolbar items as popup.
+
+{% highlight js %}
+
+    $(function () {
+        $("#ToolbarItem").ejToolbar({
+            width: "600px", // width of the Toolbar
+            height: "33px", // height of the Toolbar
+            isResponsive: true // responsive support for toolbar
+            responsiveType:"popup"//responsive Type API to display overflow items as popup.
+        });
+      
+    });
+
+{% endhighlight %}
+
+
+While setting popup as responsiveType the  following output will be displayed.
+
+![](Responsive-Layout_images/Responsive-Layout.png)
