@@ -26,7 +26,10 @@ You can insert the controls like Button, Checkbox, Dropdown list and Date picker
 
 ### To insert a Cell Type.
 
-You can insert the cell type to the selected range of cells by using [`addCellTypes`](http://help.syncfusion.com/api/js/ejspreadsheet#methods:xlcelltype-addcelltypes "addCellTypes") method.
+You can insert the cell type to the selected range of cells by one of the following ways
+
+* Using `cellTypes` property in sheets.
+* Using [`addCellTypes`](http://help.syncfusion.com/api/js/ejspreadsheet#methods:xlcelltype-addcelltypes "addCellTypes") method. 
 
 ### To remove Cell Type
 
@@ -43,7 +46,10 @@ $(function () {
     $("#Spreadsheet").ejSpreadsheet({
         // the datasource "window.defaultData" is referred from 'http://js.syncfusion.com/demos/web/scripts/xljsondata.min.js'
         sheets: [{
-            rangeSettings: [{ dataSource: window.defaultData }],                               
+            rangeSettings: [{ dataSource: window.defaultData }], 
+            cellTypes: [{ 'range': 'A1', 'settings': { 'type': ej.Spreadsheet.CustomCellType.DropDownList, 'dataSourceRange': 'A2:A11' } },
+                        { 'range': 'D1', 'settings': {"type" : ej.Spreadsheet.CustomCellType.Button, "text" : "Button1", "background-color" : "green" } }
+                        { 'range': 'C1', 'settings': { 'type': ej.Spreadsheet.CustomCellType.DropDownList, 'dataSourceRange': 'A2:A11' } }]                           
         }],
         allowCellType: true,
         loadComplete: "loadComplete"
@@ -52,10 +58,7 @@ $(function () {
 function loadComplete() {
     var xlCellType = this.XLCellType;
     if (!this.isImport) {
-        xlCellType.addCellTypes("D1", {"type" : ej.Spreadsheet.CustomCellType.Button, "text" : "Button1", "background-color" : "green" },  1);
         xlCellType.addCellTypes("B1", {"type" : ej.Spreadsheet.CustomCellType.DatePicker, 'value' : '2/12/2016'},  1);
-        xlCellType.addCellTypes("A1", {"type" : ej.Spreadsheet.CustomCellType.DropDownList, 'dataSourceRange': 'A2:A11'},  1);
-        xlCellType.addCellTypes("C1", {"type" : ej.Spreadsheet.CustomCellType.DropDownList, 'dataSourceRange': 'A2:A11'},  1);
         xlCellType.addCellTypes("E1", {"type" : ej.Spreadsheet.CustomCellType.CheckBox, "isChecked" : true },  1);
         xlCellType.removeCellTypes("C1");
     }
@@ -476,12 +479,10 @@ $(function () {
     });
 });
 function loadComplete() {
-    var i, format = [], formatObj = [],xlFormat = this.XLFormat, formatName = ["TableStyleLight8", "TableStyleLight10"];
+    var xlFormat = this.XLFormat;
     if (!this.isImport) {
-        for (i = 0; i < formatName.length; i++)
-	        formatObj[i] = { "header": true, "name": formatName[i].substr(10), "formatName": formatName[i] };
-        xlFormat.createTable(formatObj[0], "A1:B4");
-        xlFormat.createTable(formatObj[1], "D1:E4");
+        xlFormat.createTable({ "header": true, "formatName": "TableStyleLight8" }, "A1:B4");
+        xlFormat.createTable({ "header": true, "formatName": "TableStyleLight10" }, "D1:E4");
     }
 }
 {% endhighlight %}
