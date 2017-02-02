@@ -9,7 +9,7 @@ documentation: ug
 
 # Print
 
-This feature is used for produce text and graphics from a computer screen or file onto a sheet of paper. You can use [`allowPrinting`](https://help.syncfusion.com/api/js/ejspreadsheet#members:printsettings-allowprinting "allowPrinting") property in [`printsettings`](https://help.syncfusion.com/api/js/ejspreadsheet#members:printsettings "printsettings") to enable/disable the print operation.
+This feature is used for produce text and graphics from a computer screen or file onto a sheet of paper. You can use [`allowPrinting`](https://help.syncfusion.com/api/js/ejspreadsheet#members:printsettings-allowprinting "allowPrinting") property in [`printSettings`](https://help.syncfusion.com/api/js/ejspreadsheet#members:printsettings "printSettings") to enable/disable the print operation.
 
 You have following options in printing.
 

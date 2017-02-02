@@ -82,7 +82,37 @@ Add the following code in your **HTML** page.
 
 {% endhighlight %}
 
-The following screenshot displays the output for the above code. 
 
-![](/js/Menu/Responsive-Layout_images/Responsive-Layout_img2.png)
+The following screenshot displays the output on executing the above code
+
+![](Responsive-Layout_images/Responsive.png)
+
+##Responsive in Desktop:
+
+When menu width is small and window width is normal as desktop ,only the  overflown menu  items will be moved  inside menu popup.You can also set width and height for popup menu using **overflowHeight** and **overflowWidth** API
+
+{% highlight javascript %}
+
+
+    // Add the following code in your script section.
+    jQuery(function ($) {
+        $("#menucontrol").ejMenu({width:"300px"});
+    });
+
+
+{% endhighlight %}
+
+The following output shows the output of the above code
+
+![](Responsive-Layout_images/Responsive-img1.png)
+
+##Responsive in Mobile or Tablet:
+
+Menu will be displayed  in mobile or Tablet as shown in the below image:
+
+![](Responsive-Layout_images/responsivemenu.png)
+
+N> Window width below  767px is considered as Mobile or Tablet mode in our menu.
+
+
 

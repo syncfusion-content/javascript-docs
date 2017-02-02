@@ -45,7 +45,7 @@ The following output is displayed as a result of the above code example which sh
 This is used to search the contents of a cell. You can do this by one of the following ways,
 
 * Using "Find" option in Find and Select button of OTHERS tab in ribbon to open the Find and Replace dialog.
-* Using `findNext` and `findPrevious` methods to search the given value in workbook.
+* Using [`findNext`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlsearch-findnext "findNext") and [`findPrevious`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlsearch-findprevious "findPrevious") methods to search the given value in workbook.
 * Using Ctrl + F key to open the Find and Replace dialog with Find tab enabled.
 
 The following output is displayed as a result of Find and Replace dialog with Find tab enabled.
@@ -62,9 +62,9 @@ You can customize the following settings in find option.
 * Replace Direction - You can replace the contents by up or down direction.
 
 ![](Searching_images/Searching_img3.png)
-{:caption}
 
 Find and Replace dialog with Settings tab enabled.
+{:.caption}
 
 ## Replace
 
@@ -75,9 +75,9 @@ This is used to replace the contents of a cell. You can do this by one of the fo
 * Using Ctrl + R key to open the Find and Replace dialog with Replace tab enabled.
 
 ![](Searching_images/Searching_img4.png)
-{:caption}
 
 Find and Replace dialog with Replace tab enabled
+{:.caption}
 
 The following code example describes the above behavior.
 {% highlight html %}
@@ -117,9 +117,10 @@ You can do this by one of the following ways,
 * Using "Go To" option in Find and Select button of OTHERS tab in ribbon to open the Go To dialog.
 * Using Ctrl + G key to open the Go To dialog.
 
-The following output is displayed the Go To dialog.
-
 ![](Searching_images/Searching_img6.png)
+
+Go To dialog
+{:.caption}
 
 The following output is displayed as a result of goto to cell "F10".
 
