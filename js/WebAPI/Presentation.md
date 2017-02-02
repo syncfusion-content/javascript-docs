@@ -170,7 +170,7 @@ It is used to add notes page in PowerPoint slides and converts the notes page to
 
 Code: 200
 
-Content-Type: data:attachment/filetype
+Content-Type: data:attachment/pptx
 
 ### Code example 
 
