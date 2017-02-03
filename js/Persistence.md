@@ -8,6 +8,7 @@ documentation: ug
 ---
 
 ## State Maintenance
+
 We have provided the State Maintenance support for Essential JS components.You can sustain the user intractable widget model in browser’s local storage even after form post or browser refresh by defining **enablePersistence** property as true.   
 
 {% highlight javascript %}
