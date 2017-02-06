@@ -1,4 +1,4 @@
---
+---
 layout: post
 title: Customization of _addToPersist Array in JS widgets
 description: Customization of _addToPersist Array in Syncfusion Essential JS widgets.
