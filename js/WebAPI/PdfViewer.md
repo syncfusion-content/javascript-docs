@@ -169,4 +169,4 @@ $.ajax({
 })
 
 {% endhighlight %}
->The above example shows that it will download the PDF doccument.
+>The above example shows that it will download the PDF document.
