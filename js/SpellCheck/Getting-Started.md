@@ -138,7 +138,7 @@ $(function() { // Document is ready
 
 ## Spell Checking
 
-To spell check the content of the target element, you need to add one button and calling any one of the spellcheck method [showInDialog](/api/js/ejspellcheck#methods:showindialog) or [validate](/api/js/ejspellcheck#methods:validate) by clicking the button to highlight the error words.
+To spell check the content of the target element, you need to add one button and calling any one of the SpellCheck method [showInDialog](/api/js/ejspellcheck#methods:showindialog) or [validate](/api/js/ejspellcheck#methods:validate) by clicking the button to highlight the error words.
 
 The following code example depicts that checking the spelling of the target element through the "validate" method.
 
