@@ -13,9 +13,9 @@ This section explains you briefly on how to create a **Button** in your applicat
 
 The following screenshot illustrates the functionality of a Button control in Media Player and Office Ribbon Application.
 
-![](/js/Button/Getting-Started_images/Getting-Started_img1.png)
+![](Getting-Started_images/Getting-Started_img1.png)
 
-##Create Button Widget
+## Create Button Widget
 
 Essential JavaScript Button control has different functionalities such as Display as Only Image Content or Image Content with Text.
 
@@ -39,17 +39,14 @@ Create an HTML file and add the following code template to the HTML file.
    </body>
 </html>
 
-
 {% endhighlight %}
-
-
 
 Add &lt;Button&gt; element to create a Button control.
 
 {% highlight html %}
 
 <div class="case1">
-    <table>
+   <table>
         <tr>
             <td>
                 <input type="checkbox" id="play" />
@@ -72,13 +69,10 @@ Add &lt;Button&gt; element to create a Button control.
                 </ul>
             </td>
         </tr>
-    </table>
+   </table>
 </div>      
 
-
 {% endhighlight %}
-
-
 
 Initialize Button in the script with properties.
 
@@ -94,41 +88,37 @@ Initialize Button in the script with properties.
             click: "playpause",
             contentType: "textandimage",
             defaultPrefixIcon: "e-icon e-mediaplay",
-            activePrefixIcon: "e-icon e-mediapause",
+            activePrefixIcon: "e-icon e-mediapause"
         });
-
 
         $("#start").ejButton({
             size: "large",
             showRoundedCorner: true,
-            click: "start",
+            click: "start"
 
         });
 
         $("#stop").ejButton({
             showRoundedCorner: true,
             size: "large",
-            click: "stop",
+            click: "stop"
         });
 
         $("#open").ejButton({
             showRoundedCorner: true,
-            size: "large",
+            size: "large"
 
         });
         $("#save").ejSplitButton({
             size: "large",
             showRoundedCorner: true,
             targetID: "menu1",
-            create: "spltbtnLoad",
+            create: "spltbtnLoad"
 
         });
     });
 
-
 {% endhighlight %}
-
-
 
 Add the following styles to show the Button control in the center of a webpage.
 
@@ -160,23 +150,22 @@ Add the following styles to show the Button control in the center of a webpage.
     }
 </style>
 
-
 {% endhighlight %}
 
-##Create Multimedia Player
+## Create Multimedia Player
 
 Add the following code inside the **&lt;body&gt;** tag.
 
 {% highlight html %}
 
 <div class="audiodiv">
-    <audio controls id="demo">
+     <audio controls id="demo">
         <source src="song.ogg" type="audio/ogg"/>
         <source src="song.mp3" type="audio/mpeg"/>
-    </audio>
+     </audio>
 </div>
 <div class="case1">
-    <table>
+     <table>
         <tr>
             <td>
                 <input type="checkbox" id="play" />
@@ -199,13 +188,10 @@ Add the following code inside the **&lt;body&gt;** tag.
                 </ul>
             </td>
         </tr>
-    </table>
+     </table>
 </div>
 
-
 {% endhighlight %}
-
-
 
 Add the following code in the **&lt;script&gt;** tag.
 
@@ -223,33 +209,33 @@ Add the following code in the **&lt;script&gt;** tag.
             click: "playpause",
             contentType: "textandimage",
             defaultPrefixIcon: "e-icon e-mediaplay",
-            activePrefixIcon: "e-icon e-mediapause",
+            activePrefixIcon: "e-icon e-mediapause"
         });
-
 
         $("#start").ejButton({
             size: "large",
             showRoundedCorner: true,
-            click: "start",
+            click: "start"
 
         });
 
         $("#stop").ejButton({
             showRoundedCorner: true,
             size: "large",
-            click: "stop",
+            click: "stop"
         });
 
         $("#open").ejButton({
             showRoundedCorner: true,
-            size: "large",
+            size: "large"
 
         });
+
         $("#save").ejSplitButton({
             size: "large",
             showRoundedCorner: true,
             targetID: "menu1",
-            create: "spltbtnLoad",
+            create: "spltbtnLoad"
         });
     });
 
@@ -276,12 +262,11 @@ Add the following function in **&lt;script&gt;** tag.
 
 {% endhighlight %}
 
-
 The following screenshot displays the output.
 
-![](/js/Button/Getting-Started_images/Getting-Started_img2.png) 
+![](Getting-Started_images/Getting-Started_img2.png) 
 
-##Create Office Ribbon Control
+## Create Office Ribbon Control
 
 In a real-time scenario, MS Office Bold and Italic options work as **Toggle Button** and Underline option works as a **Split Button**. Here, you can learn how to use **Button** control feature using Office Ribbon options.
 
@@ -289,7 +274,7 @@ Add **&lt;Button&gt;** element using the following code example.
 
 {% highlight html %}
 
-    <div class="case1">
+   <div class="case1">
         <table>
             <tr>
                 <td>
@@ -308,17 +293,13 @@ Add **&lt;Button&gt;** element using the following code example.
                 </td>
             </tr>
         </table>
-    </div>
-
+   </div>
 
 {% endhighlight %}
-
-
 
 Initialize &lt;Button&gt; script with required properties.
 
 {% highlight javascript %}
-
 
     $(function () {
         $("#bold").ejToggleButton({
@@ -326,13 +307,13 @@ Initialize &lt;Button&gt; script with required properties.
             activeText: "Bold",
             showRoundedCorner: true,
             size: "small",
-            click: "boldsetunset",
+            click: "boldsetunset"
         });
 
         $("#italic").ejButton({
             showRoundedCorner: true,
             size: "small",
-            click: "italicsetunset",
+            click: "italicsetunset"
         });
 
         $("#Underline").ejSplitButton({
@@ -340,14 +321,11 @@ Initialize &lt;Button&gt; script with required properties.
             showRoundedCorner: true,
             targetID: "menu11",
             create: "spltbtnLoad",
-            click: "underlinesetunset",
+            click: "underlinesetunset"
         });
     });
 
-
 {% endhighlight %}
-
-
 
 Add Function Definition from click event to Button function.
 
@@ -379,13 +357,11 @@ Add Function Definition from click event to Button function.
 
 {% endhighlight %}
 
-
-
 The following screenshot displays Office Ribbon Application.
 
-![](/js/Button/Getting-Started_images/Getting-Started_img3.png) 
+![](Getting-Started_images/Getting-Started_img3.png) 
 
 The following screenshot displays **Office Ribbon** **Bold** Option.	
 
-![](/js/Button/Getting-Started_images/Getting-Started_img4.png)
+![](Getting-Started_images/Getting-Started_img4.png)
 

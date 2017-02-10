@@ -56,38 +56,22 @@ A simple HTML file with required CSS and script reference added to create DatePi
 {% highlight html %}
 
     <!DOCTYPE html>
-
     <html>
-
     <head>
-
         <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8" />
-
         <!-- style sheet for default theme(flat azure) -->
-
         <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css"
               rel="stylesheet" />
-
         <!--scripts-->
-
         <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.11.3.min.js"></script>
-
         <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"></script>
-
     </head>
-
     <body>
-
         <!--Place input element to create DatePicker-->
-
         <script>
-
             // Place your script code here to initialize DatePicker
-
         </script>
-
     </body>
-
     </html>
 
 {% endhighlight %}
@@ -98,9 +82,8 @@ DatePicker can be created using ‘input’ element
 
 {% highlight html %}
 
-    <!--input element to create DatePicker-->
-
-    <input id="datePicker" />
+   <!--input element to create DatePicker-->
+   <input id="datePicker" />
 
 {% endhighlight %}
 

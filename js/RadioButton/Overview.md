@@ -13,9 +13,9 @@ The **Essential JavaScript** **RadioButton** control allows you to choose an opt
 
 **Key Features**
 
-* **Trendy Look :** Rich Appearance with Theme Support
-* **RTL :** Supports for Right to Left alignment
-* **Easy Customization:** The customization of **RadioButton**  is made simple
+* **Trendy Look :** Rich Appearance with Theme Support.
+* **RTL :** Supports for Right to Left alignment.
+* **Easy Customization:** The customization of **RadioButton**  is made simple.
 
 
 

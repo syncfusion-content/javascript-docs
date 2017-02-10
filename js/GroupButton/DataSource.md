@@ -17,7 +17,7 @@ Refer the below table to know about the available fields
 <tr>
 <td>
 text<br/><br/></td><td>
-Text to be displayed in button<br/><br/></td></tr>
+Text to be displayed in button.<br/><br/></td></tr>
 <tr>
 <td>
 prefixIcon<br/><br/></td><td>
@@ -29,19 +29,19 @@ Icon class name – suffixIcon will be displayed from the left margin of the but
 <tr>
 <td>
 contentType<br/><br/></td><td>
-Specifies content type of button item<br/><br/></td></tr>
+Specifies content type of button item.<br/><br/></td></tr>
 <tr>
 <td>
 imagePosition<br/><br/></td><td>
-Specifies position of the image in a button item<br/><br/></td></tr>
+Specifies position of the image in a button item.<br/><br/></td></tr>
 <tr>
 <td>
 Selected<br/><br/></td><td>
-Specifies the selection state of button item<br/><br/></td></tr>
+Specifies the selection state of button item.<br/><br/></td></tr>
 <tr>
 <td>
 URL<br/><br/></td><td>
-Used to include the URL tag to the button item<br/><br/></td></tr>
+Used to include the URL tag to the button item.<br/><br/></td></tr>
 <tr>
 <td>
 htmlAttribute<br/><br/></td><td>
@@ -51,7 +51,6 @@ It defines the HTML attributes such as class and styles for an button item.<br/>
 linkAttribute<br/><br/></td><td>
 It defines the image attributes such as height, width, styles, etc.<br/><br/></td></tr>
 </table>
-
 
 ## Local Data
 
@@ -64,34 +63,23 @@ Below is the sample to code to render the GroupButton JSON dataSource,
 {% highlight html %}
 
         <div id="groupButton">
-
         </div>
 
 {% endhighlight %}
 
-{% highlight js %}
-
+{% highlight javascript %}
 
         <script>
 
             $("#groupButton").ejGroupButton({
-
                 groupButtonMode: "radiobutton",
-
                 dataSource: [
-
                 { text: "Day", contentType: "textonly" },
-
                 { text: "Week", contentType: "textonly" },
-
                 { text: "Work Week", contentType: "textonly" },
-
                 { text: "Month", contentType: "textonly", selected: "selected" },
-
                 { text: "Agenda", contentType: "textonly" }],
-
                 showRoundedCorner: true
-
             });
 
         </script>
@@ -100,39 +88,27 @@ Below is the sample to code to render the GroupButton JSON dataSource,
 
 ![](DataSource_images/DataSoruce_img1.jpeg)
 
-
 ## Remote Data
 
 To bind remote data to the GroupButton, you can assign a service data as an instance of `ejDataManager` to the `dataSource` property along with the fields mapping.
 
-{% highlight js %}
+{% highlight javascript %}
 
         <script>
 
             var dataManger = ej.DataManager({
-
                 url: "http://mvc.syncfusion.com/Services/Northwnd.svc/"
-
             });
 
             // Query creation
-
             var query = ej.Query().from("Orders").take(6);
-
             $(function () {
-
                 //  declaration 
-
                 $("#groupButton").ejGroupButton({
-
                     dataSource: dataManger,
-
                     fields: { text: "CustomerID" },
-
                     query: query,
-
                 });
-
             });
 
         </script>

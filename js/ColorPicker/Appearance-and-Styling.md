@@ -68,13 +68,11 @@ In the **HTML** page, add a **&lt;input&gt;** element to render **ColorPicker** 
 
 {% highlight html %}
 
-
 <input type="text" id="colorPicker" />    
 
 {% endhighlight %}
 
 {% highlight javascript %}
-
  
     jQuery(function ($) {
         $("#colorPicker").ejColorPicker({ modelType: "palette", value: "#278787" });
@@ -84,7 +82,7 @@ In the **HTML** page, add a **&lt;input&gt;** element to render **ColorPicker** 
 
 The following screenshot displays the output of the above code example.
 
-![](/js/ColorPicker/Appearance-and-Styling_images/Appearance-and-Styling_img1.png)
+![](Appearance-and-Styling_images/Appearance-and-Styling_img1.png)
 
 ## palette
 
@@ -258,13 +256,11 @@ In the **HTML** page, add a **&lt;input&gt;** element to render **ColorPicker** 
 
 {% highlight html %}
 
-
 <input type="text" id="colorPicker" />    
 
 {% endhighlight %}
 
 {% highlight javascript %}
-
  
     jQuery(function ($) {
         $("#colorPicker").ejColorPicker({ modelType: "palette", value: "#278787", presetType: "flatcolors" });
@@ -275,7 +271,7 @@ In the **HTML** page, add a **&lt;input&gt;** element to render **ColorPicker** 
 
 The following screenshot displays the output of the above code example.
 
-![](/js/ColorPicker/Appearance-and-Styling_images/Appearance-and-Styling_img2.png) 
+![](Appearance-and-Styling_images/Appearance-and-Styling_img2.png) 
 
 ## custompalette
 
@@ -287,13 +283,11 @@ In the **HTML** page, add a **&lt;input&gt;** element to render **ColorPicker** 
 
 {% highlight html %}
 
-
 <input type="text" id="colorPicker" />    
 
 {% endhighlight %}
 
 {% highlight javascript %}
-
  
     jQuery(function ($) {
         $("#colorPicker").ejColorPicker({
@@ -306,7 +300,7 @@ In the **HTML** page, add a **&lt;input&gt;** element to render **ColorPicker** 
 
 The following screenshot displays the output of the above code example.
 
-![](/js/ColorPicker/Appearance-and-Styling_images/Appearance-and-Styling_img3.png) 
+![](Appearance-and-Styling_images/Appearance-and-Styling_img3.png) 
 
 ## displayInline
 
@@ -320,13 +314,11 @@ In the **HTML** page, add a **&lt;div&gt;** element to render **ColorPicker** wi
 
 {% highlight html %}
 
-
  <div id="colorPicker" ></div>    
 
 {% endhighlight %}
 
 {% highlight javascript %}
-
  
     jQuery(function ($) {
         $('#colorPicker').ejColorPicker({ value: "#278787", displayInline: true });
@@ -336,7 +328,7 @@ In the **HTML** page, add a **&lt;div&gt;** element to render **ColorPicker** wi
 
 The following screenshot displays the output of the above code example.
 
-![](/js/ColorPicker/Appearance-and-Styling_images/Appearance-and-Styling_img4.png) 
+![](Appearance-and-Styling_images/Appearance-and-Styling_img4.png) 
 
 ## Theme Support
 
@@ -361,12 +353,9 @@ The following list is the twelve themes supported by ColorPicker:
 * gradient-saffron
 * gradient-saffron-dark
 
-
 In the **HTML** page, add a **&lt;input&gt;** element to render **ColorPicker** widget.
 
-
 {% highlight html %}
-
 
 <!doctype html>
 <html>
@@ -389,14 +378,12 @@ In the **HTML** page, add a **&lt;input&gt;** element to render **ColorPicker** 
 </body>
 </html>
 
-
 {% endhighlight %}
 
 N> jQuery.easing external dependency has been removed from version 14.3.0.49 onwards. Kindly include this jQuery.easing dependency for versions lesser than 14.3.0.49 in order to support animation effects.
 The following screenshot displays the output of the above code example.
 
-
-![](/js/ColorPicker/Appearance-and-Styling_images/Appearance-and-Styling_img5.png)
+![](Appearance-and-Styling_images/Appearance-and-Styling_img5.png)
 
 ## CustomCss
 
@@ -408,14 +395,12 @@ In the **HTML** page, add a **&lt;input&gt;** element to render **ColorPicker** 
 
 {% highlight html %}
 
-
 <input type="text" id="colorPicker" />    
 
 {% endhighlight %}
 
 {% highlight javascript %}
 
- 
     jQuery(function ($) {
         $("#colorPicker").ejColorPicker({
             value: "#278787", cssClass: "Light-Blue"
@@ -424,10 +409,7 @@ In the **HTML** page, add a **&lt;input&gt;** element to render **ColorPicker** 
 
 {% endhighlight %}
 
-
 Custom CSS Styles.
-
-
 
 {% highlight css %}
 
@@ -441,12 +423,9 @@ Custom CSS Styles.
     }
 </style>
 
-
 {% endhighlight %}
-
-
 
 The following screenshot displays the output of above steps.
 
-![](/js/ColorPicker/Appearance-and-Styling_images/Appearance-and-Styling_img6.png)
+![](Appearance-and-Styling_images/Appearance-and-Styling_img6.png)
 

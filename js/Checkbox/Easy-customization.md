@@ -17,22 +17,19 @@ The following steps explains you the details about rendering the Checkbox with a
 
 In the **HTML** page, add the following input elements to configure Checkbox widget.
 
-
-  {% highlight html %}
-
+{% highlight html %}
 
 <div class="align">
-    <input type="checkbox" class="nodetext" id="checkbox_nonchecked" />
-    <label for="checkbox_nonchecked" class="clslab">Music</label>
-    <br />
-    <input type="checkbox" class="nodetext" id="checkbox_checked" />
-    <label for="checkbox_checked" class="clslab">Music</label>
+   <input type="checkbox" class="nodetext" id="checkbox_nonchecked" />
+   <label for="checkbox_nonchecked" class="clslab">Music</label>
+   <br />
+   <input type="checkbox" class="nodetext" id="checkbox_checked" />
+   <label for="checkbox_checked" class="clslab">Music</label>
 </div>
 
-  {% endhighlight %}
+{% endhighlight %}
   
-  {% highlight javascript %}
-
+{% highlight javascript %}
   
     $(function () {
         //Disables the checked status
@@ -41,19 +38,15 @@ In the **HTML** page, add the following input elements to configure Checkbox wid
         $("#checkbox_checked").ejCheckBox({ checked: true });
     });
 
-  {% endhighlight %}
-
+{% endhighlight %}
 
 Execute the above code to render the following output.
 
-
-
-![](/js/Checkbox/Easy-customization_images/Easy-customization_img1.png) 
-
+![](Easy-customization_images/Easy-customization_img1.png) 
 
 ## Enable Tri-State
 
-Sometimes, it is essential for you to represent the answer in partially true state. To represent the partially true types, an indeterminate state option is present. The state between checked and unchecked state is called indeterminate state. For example, a **Checkbox** presented to select files to send via [FTP](http://en.wikipedia.org/wiki/File_Transfer_Protocol) can use a [tree view](http://en.wikipedia.org/wiki/Tree_view) so that files can be selected one at a time, or by folder. When only some of the files in a folder are selected, then the checkbox for that folder could be in indeterminate state.
+Sometimes, it is essential for you to represent the answer in partially true state. To represent the partially true types, an indeterminate state option is present. The state between checked and unchecked state is called indeterminate state. For example, a **Checkbox** presented to select files to send via [FTP](https://en.wikipedia.org/wiki/File_Transfer_Protocol) can use a [tree view](https://en.wikipedia.org/wiki/Tree_view) so that files can be selected one at a time, or by folder. When only some of the files in a folder are selected, then the checkbox for that folder could be in indeterminate state.
 
 When you enable Tri-state, then the **Checkbox** includes the indeterminate state. The Checkbox has three states. **enableTriState** property specifies to enable or disable the Tri-State option for Checkbox. 
 
@@ -61,21 +54,19 @@ The following steps explains you the details about rendering the Checkbox with T
 
 In the **HTML** page, add the following input elements to configure Checkbox widget.
 
-
-  {% highlight html %}
+{% highlight html %}
  
 <div class="align">
-    <input type="checkbox" class="nodetext" id="checkbox_nonTriState" />
-    <label for="checkbox_nonTriState" class="clslab">Music</label>
-    <br />
-    <input type="checkbox" class="nodetext" id="checkbox_triState" />
-    <label for="checkbox_triState" class="clslab">Music</label>
+   <input type="checkbox" class="nodetext" id="checkbox_nonTriState" />
+   <label for="checkbox_nonTriState" class="clslab">Music</label>
+   <br />
+   <input type="checkbox" class="nodetext" id="checkbox_triState" />
+   <label for="checkbox_triState" class="clslab">Music</label>
 </div>
 
-  {% endhighlight %}
+{% endhighlight %}
 
-
-  {% highlight javascript %}
+{% highlight javascript %}
 
     $(function () {
         //Disables the Tri- state for checkbox
@@ -84,18 +75,15 @@ In the **HTML** page, add the following input elements to configure Checkbox wid
         $("#checkbox_triState").ejCheckBox({ enableTriState: true, checkState:"indeterminate" });
     });
 
-  {% endhighlight %}
+{% endhighlight %}
 
 Execute the above code to render the following output.
 
-
-![](/js/Checkbox/Easy-customization_images/Easy-customization_img2.png) 
-
-
+![](Easy-customization_images/Easy-customization_img2.png) 
 
 ## Check State
 
-You require an option to set indeterminate state for Checkbox. By using Checkbox property, you can set any state that is illustrated in following table. Before using this property, enable the Tri-state for Checkbox. **enableTriState** property is set true.
+You require an option to set indeterminate state for Checkbox. By using checkState property, you can set any state that is illustrated in following table. Before using this property, enable the Tri-state for Checkbox. **enableTriState** property is set true.
 
 List of check states
 
@@ -140,26 +128,22 @@ The following steps explains you the details about rendering the **Checkbox** wi
 In the **HTML** page, add the following input elements to configure **Checkbox** widget.
 
 
-  {% highlight html %}
-
+{% highlight html %}
   
 <div class="align">
-    <input type="checkbox" class="nodetext" id="check" />
-    <label for="check" class="clslab">Checked state</label>
-    <br />
-    <input type="checkbox" class="nodetext" id="uncheck" />
-    <label for="uncheck" class="clslab">Unchecked state</label>
-    <br />
-    <input type="checkbox" class="nodetext" id="indeterminate" />
-    <label for="indeterminate" class="clslab">Indeterminate state</label>
+   <input type="checkbox" class="nodetext" id="check" />
+   <label for="check" class="clslab">Checked state</label>
+   <br />
+   <input type="checkbox" class="nodetext" id="uncheck" />
+   <label for="uncheck" class="clslab">Unchecked state</label>
+   <br />
+   <input type="checkbox" class="nodetext" id="indeterminate" />
+   <label for="indeterminate" class="clslab">Indeterminate state</label>
 </div>
 
+{% endhighlight %}
 
-  {% endhighlight %}
-
-
-  {% highlight javascript %}
-
+{% highlight javascript %}
 
     $(function () {
         //checkState property used to mention the state of checkbox
@@ -168,16 +152,11 @@ In the **HTML** page, add the following input elements to configure **Checkbox**
         $("#indeterminate").ejCheckBox({ enableTriState: true, checkState: "indeterminate" });
     });
 
-
-  {% endhighlight %}
-
+{% endhighlight %}
 
 Execute the above code to render the following output.
 
-
-![](/js/Checkbox/Easy-customization_images/Easy-customization_img3.png) 
-
-
+![](Easy-customization_images/Easy-customization_img3.png) 
 
 ## Checkbox Size
 
@@ -197,28 +176,23 @@ medium</td><td>
 Creates checkbox with Built-in medium size height, width specified.</td></tr>
 </table>
 
-
 The following steps explains you the details about rendering the **Checkbox** with different size.
 
 In the **HTML** page, add the following input elements to configure **Checkbox** widget.
 
-
-
 {% highlight html %}
   
 <div class="align">
-    <input type="checkbox" class="nodetext" id="checkbox_small" />
-    <label for="checkbox_small" class="clslab">Small size</label>
-    <br />
-    <input type="checkbox" class="nodetext" id="checkbox_medium" />
-    <label for="checkbox_medium" class="clslab">Medium size</label>
+   <input type="checkbox" class="nodetext" id="checkbox_small" />
+   <label for="checkbox_small" class="clslab">Small size</label>
+   <br />
+   <input type="checkbox" class="nodetext" id="checkbox_medium" />
+   <label for="checkbox_medium" class="clslab">Medium size</label>
 </div>
-
 
 {% endhighlight %}
 
-
-  {% highlight javascript %}
+{% highlight javascript %}
 
     $(function () {
         //size property is used to specify the checkbox size
@@ -226,15 +200,11 @@ In the **HTML** page, add the following input elements to configure **Checkbox**
         $("#checkbox_medium").ejCheckBox({ size: "medium" });
     });
 
-
-  {% endhighlight %}
+{% endhighlight %}
 
 Execute the above code to render the following output.
 
-
-![](/js/Checkbox/Easy-customization_images/Easy-customization_img4.png) 
-
-
+![](Easy-customization_images/Easy-customization_img4.png) 
 
 ## Text
 
@@ -244,37 +214,26 @@ The following steps explains you the details about rendering the Checkbox with t
 
 In the **HTML** page, add the following input elements to configure **Checkbox** widget.
 
-
-
-  {% highlight html %}
-
+{% highlight html %}
   
 <div class="align">
-    <input type="checkbox" class="nodetext" id="checkbox_text" />
+   <input type="checkbox" class="nodetext" id="checkbox_text" />
 </div>
 
+{% endhighlight %}
 
-  {% endhighlight %}
-
-
-  {% highlight javascript %}
-
+{% highlight javascript %}
  
     $(function () {
         //size property is used to set text for checkbox
         $("#checkbox_text").ejCheckBox({ text: "Music" });
     });
 
-
-  {% endhighlight %}
-
+{% endhighlight %}
 
 Execute the above code to render the following output.
 
-
-![](/js/Checkbox/Easy-customization_images/Easy-customization_img5.png) 
-
-
+![](Easy-customization_images/Easy-customization_img5.png) 
 
 ## Rounded corner 
 
@@ -284,39 +243,29 @@ The following steps explains you the details about rendering the **Checkbox** wi
 
 In the **HTML** page, add the following input elements to configure **Checkbox** widget.
 
-
-
-  {% highlight html %}
-
+{% highlight html %}
 
 <div class="align">
-    <input type="checkbox" class="nodetext" id="checkbox_normalCorner" />
-    <br />
-    <br />
-    <input type="checkbox" class="nodetext" id="checkbox_roundedCorner" />
+   <input type="checkbox" class="nodetext" id="checkbox_normalCorner" />
+   <br />
+   <br />
+   <input type="checkbox" class="nodetext" id="checkbox_roundedCorner" />
 </div>
 
+{% endhighlight %}
 
-  {% endhighlight %}
-
-
-  {% highlight javascript %}
-
+{% highlight javascript %}
 
     $(function () {
         $("#checkbox_normalCorner").ejCheckBox({ showRoundedCorner: false });
         $("#checkbox_roundedCorner").ejCheckBox({ showRoundedCorner: true });
     });
 
-
-  {% endhighlight %}
-
-
+{% endhighlight %}
 
 Execute the above code to render the following output.
 
-
-![](/js/Checkbox/Easy-customization_images/Easy-customization_img6.png) 
+![](Easy-customization_images/Easy-customization_img6.png) 
 
 
 

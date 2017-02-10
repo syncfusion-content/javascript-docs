@@ -26,10 +26,7 @@ For more information about **Knockout** binding, you can refer to the online doc
 
 The following example depicts how you can bind data to the **ColorPicker** widget through **knockout** support that enables and populates data to a **ColorPicker** widget based on the value set to the other **ColorPicker** widget.
 
-
-
 {% highlight html %}
-
 
 <!doctype html>
 <html>
@@ -85,15 +82,11 @@ The following example depicts how you can bind data to the **ColorPicker** widge
 </body>
 </html>
 
-
 {% endhighlight %}
-
 
 N> jQuery.easing external dependency has been removed from version 14.3.0.49 onwards. Kindly include this jQuery.easing dependency for versions lesser than 14.3.0.49 in order to support animation effects.
 
 The following screenshot displays the output of the above code example.
 
-
-
-![](/js/ColorPicker/Knockout-Binding_images/Knockout-Binding_img1.png) 
+![](Knockout-Binding_images/Knockout-Binding_img1.png) 
 

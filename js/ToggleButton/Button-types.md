@@ -17,25 +17,22 @@ Toggle Button Types
 <tr>
 <th>Button Type</th><th>Description</th></tr><tr><td>
 button</td><td>
-The button is a click able button </td></tr>
+The button is a click able button. </td></tr>
 <tr>
 <td>
 submit</td><td>
-The button is a submit button (submits form-data)</td></tr>
+The button is a submit button (submits form-data).</td></tr>
 <tr>
 <td>
 reset</td><td>
-The button is a reset button (resets the form-data to its initial values)</td></tr>
+The button is a reset button (resets the form-data to its initial values).</td></tr>
 </table>
-
 
 The following steps explains you the details about rendering the **Toggle Button** with above mentioned types. 
 
 In the **HTML** page, add the following button elements to configure **Toggle Button** widget.
 
-
 {% highlight html %}
-
 
 <table>
     <tr>
@@ -59,7 +56,6 @@ In the **HTML** page, add the following button elements to configure **Toggle Bu
 {% endhighlight %}
 
 {% highlight javascript %}
-
 
       //Initialize the control in JavaScript
       
@@ -90,7 +86,6 @@ In the **HTML** page, add the following button elements to configure **Toggle Bu
 
       });
     
-
 {% endhighlight %}
 
 Execute the above code to render the following output.

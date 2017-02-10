@@ -19,20 +19,15 @@ The following steps explains you the details about rendering the **Toggle Button
 
 In the **HTML** page, add the following button elements to configure **Toggle Button** widget.
 
-
-
 {% highlight html %}
-
 
 <input type="checkbox" id="toggle_default" />    
 <br />
 <input type="checkbox" id="toggle_active" />
-
 	
 {% endhighlight %}
 
 {% highlight javascript %}
-
 
         $(function () {
             $("#toggle_default").ejToggleButton({
@@ -58,17 +53,11 @@ In the **HTML** page, add the following button elements to configure **Toggle Bu
         });
 
 
-
 {% endhighlight %}
-
 
 Execute the above code to render the following output.
 
 ![](/js/ToggleButton/Easy-Customization_images/Easy-Customization_img1.png) 
-
-
-
-
 
 ## Toggle state with icons
 
@@ -80,14 +69,14 @@ You can add icons in prefix and suffix position of **Toggle Button**. Location o
 
 For example the following mentioned Built-in CSS class are used to show the font icons that are used by media player.
 
-* e-mediaback
-* e-mediaforward
-* e-medianext
-* e-mediaprev
-* e-mediaeject
-* e-mediaclose
-* e-mediapause
-* e-mediaplay
+* e-mediaback.
+* e-mediaforward.
+* e-medianext.
+* e-mediaprev.
+* e-mediaeject.
+* e-mediaclose.
+* e-mediapause.
+* e-mediaplay.
 
 ### Prefix Icon
 
@@ -107,15 +96,15 @@ Property Table
 <tr>
 <td>
 activeText</td><td>
-Specifies the text of toggle button in active state</td></tr>
+Specifies the text of toggle button in active state.</td></tr>
 <tr>
 <td>
     activePrefixIcon</td><td>
-Specifies the prefix icon of toggle button in active state</td></tr>
+Specifies the prefix icon of toggle button in active state.</td></tr>
 <tr>
 <td>
 activeSuffixIcon</td><td>
-Specifies the suffix icon of toggle button in active state</td></tr>
+Specifies the suffix icon of toggle button in active state.</td></tr>
 <tr>
 <td>
 defaultText</td><td>
@@ -123,11 +112,11 @@ Specifies the text of toggle button in default state.</td></tr>
 <tr>
 <td>
 defaultPrefixIcon</td><td>
-Specifies the prefix icon of toggle button in default state</td></tr>
+Specifies the prefix icon of toggle button in default state.</td></tr>
 <tr>
 <td>
 defaultSuffixIcon</td><td>
-Specifies the suffix icon of toggle button in default state</td></tr>
+Specifies the suffix icon of toggle button in default state.</td></tr>
 </table>
 
 
@@ -139,14 +128,12 @@ In the **HTML** page, add the following button elements to configure **Toggle Bu
 
 {% highlight html %}
 
-
 <input type="checkbox" id="toggle_content" />
 <label for="toggle_content">Toggle</label>
 	
 {% endhighlight %}
 
 {% highlight javascript %}
-
 
         $(function () {
             $("#toggle_content").ejToggleButton({
@@ -164,21 +151,14 @@ In the **HTML** page, add the following button elements to configure **Toggle Bu
                 activeSuffixIcon: "e-icon e-redo"
             });
         });
-
     
-
 {% endhighlight %}
-
 
 Execute the above code to render the following output.
 
 ![](/js/ToggleButton/Easy-Customization_images/Easy-Customization_img2.png) 
 
-
-
 ![](/js/ToggleButton/Easy-Customization_images/Easy-Customization_img3.png) 
-
-
 
 ## Toggle button size
 
@@ -219,7 +199,6 @@ In the **HTML** page, add the following button elements to configure **Toggle Bu
 
 {% highlight html %}
 
-
 <table>
     <tr>
         <td class="btnsht">
@@ -258,12 +237,10 @@ In the **HTML** page, add the following button elements to configure **Toggle Bu
         </td>
     </tr>
 </table>
-
 	
 {% endhighlight %}
 
 {% highlight javascript %}
-
 
     //Here use size property to render the toggle button in different sizes
     $(function () {
@@ -319,16 +296,9 @@ In the **HTML** page, add the following button elements to configure **Toggle Bu
         });
     });
 
-
-    
-
 {% endhighlight %}
 
-
-
 Configure the styles 
-
-
 
 {% highlight css %}
 
@@ -338,18 +308,11 @@ Configure the styles
     }
 </style>
 
-
 {% endhighlight %}
-
-
 
 Execute the above code to render the following output.
 
-
-
 ![](/js/ToggleButton/Easy-Customization_images/Easy-Customization_img4.png) 
-
-
 
 ## Content type
 
@@ -366,7 +329,7 @@ Supports only for text content only.</td></tr>
 <tr>
 <td>
 imageonly</td><td>
-Supports only for image content only</td></tr>
+Supports only for image content only.</td></tr>
 <tr>
 <td>
 imageboth</td><td>
@@ -381,13 +344,11 @@ imagetextimage</td><td>
 Supports image with both ends and middle in text.</td></tr>
 </table>
 
-
 The following steps explains you the details about rendering the **Toggle Button** with above mentioned **content type** options.
 
 In the **HTML** page, add the following button elements to configure **Toggle Button** widget.
 
 {% highlight html %}
-
 
 <table>
     <tr>
@@ -439,12 +400,10 @@ In the **HTML** page, add the following button elements to configure **Toggle Bu
         </td>
     </tr>
 </table>
-
 	
 {% endhighlight %}
 
 {% highlight javascript %}
-
 
       // Here use contentType property to render the toggle button with different contents
       $(function () {
@@ -535,15 +494,10 @@ In the **HTML** page, add the following button elements to configure **Toggle Bu
               activeSuffixIcon: "e-icon e-redo"
           });
       });
-
-    
-
+ 
 {% endhighlight %}
 
-
 Configure the styles 
-
-
 
 {% highlight css %}
 
@@ -557,16 +511,11 @@ Configure the styles
     }
 </style>
 
-
 {% endhighlight %}
-
-
 
 Execute the above code to render the following output.
 
 ![](/js/ToggleButton/Easy-Customization_images/Easy-Customization_img5.png) 
-
-
 
 ## Image position
 
@@ -594,13 +543,11 @@ imagebottom</td><td>
 Support for aligning text in top and image in bottom.</td></tr>
 </table>
 
-
 The following steps explains you the details about rendering the **Toggle Button** with above mentioned image Position options.
 
 In the **HTML** page, add the following button elements to configure **Toggle Button** widget.
 
 {% highlight html %}
-
 
  <table>
     <tr>
@@ -670,7 +617,6 @@ In the **HTML** page, add the following button elements to configure **Toggle Bu
 {% endhighlight %}
 
 {% highlight javascript %}
-
 
     //It explains how to render the toggle button images with different position
     $(function () {
@@ -795,16 +741,12 @@ In the **HTML** page, add the following button elements to configure **Toggle Bu
             width: 60
         });
     });
-    
 
 {% endhighlight %}
 
 Configure the styles 
 
-
-
 {% highlight css %}
-
 
 <style>
     .one {
@@ -816,16 +758,11 @@ Configure the styles
     }
 </style>
 
-
 {% endhighlight %}
-
-
 
 Execute the above code to render the following output.
 
 ![](/js/ToggleButton/Easy-Customization_images/Easy-Customization_img6.png) 
-
-
 
 ## Theme support
 
@@ -833,18 +770,18 @@ You can control the style and appearance of **Toggle Button** based on CSS class
 
 By default, there are 12 themes support available for **Toggle Button** control namely,
 
-* default-theme
-* flat-azure-dark
-* fat-lime
-* flat-lime-dark
-* flat-saffron
-* flat-saffron-dark
-* gradient-azure
-* gradient-azure-dark
-* gradient-lime
-* gradient-lime-dark
-* gradient-saffron
-* gradient-saffron-dark
+* default-theme.
+* flat-azure-dark.
+* fat-lime.
+* flat-lime-dark.
+* flat-saffron.
+* flat-saffron-dark.
+* gradient-azure.
+* gradient-azure-dark.
+* gradient-lime.
+* gradient-lime-dark.
+* gradient-saffron.
+* gradient-saffron-dark.
 
 ## Custom CSS
 
@@ -855,7 +792,6 @@ The following steps explains you the details about rendering the **Toggle Button
 In the **HTML** page, add the following button elements to configure **Toggle Button** widget.
 
 {% highlight html %}
-
 
 <table>
     <tr>
@@ -885,7 +821,6 @@ In the **HTML** page, add the following button elements to configure **Toggle Bu
 {% endhighlight %}
 
 {% highlight javascript %}
-
 
     //implement custom CSS for each toggle button
     $(function () {
@@ -945,12 +880,10 @@ In the **HTML** page, add the following button elements to configure **Toggle Bu
 
         });
     });
-    
-
+ 
 {% endhighlight %}
 
 Configure the CSS styles to apply on buttons.
-
 
 {% highlight css %}
 
@@ -986,10 +919,7 @@ Configure the CSS styles to apply on buttons.
     }
 </style>
 
-
 {% endhighlight %}
-
-
 
 Execute the above code to render the following output.
 

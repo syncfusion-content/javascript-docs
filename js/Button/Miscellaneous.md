@@ -39,7 +39,7 @@ In the above code, the content of button “button” is replaced by the text va
 
 Execute the above code to render the following output.
 
-![](/js/Button/Miscellaneous_images/Miscellaneous_img1.png) 
+![](Miscellaneous_images/Miscellaneous_img1.png) 
 
 ## Show Rounded Corner
 
@@ -69,7 +69,7 @@ In the **HTML** page, add the following button elements to configure **Button** 
 
 Execute the above code to render the following output.
 
-![](/js/Button/Miscellaneous_images/Miscellaneous_img2.png) 
+![](Miscellaneous_images/Miscellaneous_img2.png) 
 
 
 

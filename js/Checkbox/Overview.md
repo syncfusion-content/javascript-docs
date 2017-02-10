@@ -13,7 +13,7 @@ The **Checkbox** control allows you to check an option to perform an action. Thi
 
 **Key Features**
 
-* **Trendy Look :** Rich Appearance with Theme Support
-* **RTL :** Supports for Right to Left alignment
+* **Trendy Look :** Rich Appearance with Theme Support.
+* **RTL :** Supports for Right to Left alignment.
 * **Tri-State:** Supports **Checkbox** with three states.
-* **Easy Customization:** The customization of **Checkbox** is made simple
+* **Easy Customization:** The customization of **Checkbox** is made simple.

@@ -64,46 +64,26 @@ You can make use of ‘ej.web.all.min.js’ file which encapsulates all ‘ej’
 
 {% highlight html %}
 
-
-
 <!DOCTYPE html>
-
 <html>
-
 <head>
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8" />
-
     <!-- style sheet for default theme(flat azure) -->
-
     <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
-
     <!--scripts-->
-
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.11.3.min.js"></script>
-
     <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"></script>
-
 </head>
 
 <body>
-
     <!--Place input element to create DateRangePicker-->
-
     <script>
-
             // Place your script code here to initialize DateRangePicker
-
     </script>
-
 </body>
-
 </html>
 
-
 {% endhighlight %}
-
-
 
 ## DateRangePicker Initialization
 
@@ -113,18 +93,15 @@ DateRangePicker can be created using “input” tag.
 
 <!--input element to create DateRangePicker-->
 
-    <input id="dateRangePicker" />
+   <input id="dateRangePicker" />
  
 $(function () {
 
             // initialize DateRangePicker component
-
             $("#dateRangePicker").ejDateRangePicker();
-
         });
 
 {% endhighlight %}
-
 
 ## Get/Set Value
 
@@ -134,71 +111,28 @@ DateRangePicker provides an options to configure all its properties and to get i
 
 $(function () {
 
-
-
             // initialize DateRangePicker component with Value API
-
-
-
             $("#dateRangePicker").ejDateRangePicker({
-
-                value: "11/1/2013 - 12/3/2019", // sets the date range
-
-
-
+                value: "11/1/2013 - 12/3/2019" // sets the date range
             });
-
-
-
         });
 
 {% endhighlight %}
 
-
 You can assign values after initialization in DateRangePicker (‘it helps to get or set value at run time). Let’s consider that going to set date range at button click.
-
 
 {% highlight html %}
 
-
 //bind below onClick action to button
-
-
-
         function onClick() {
-
-
-
             //create instance for dateRangePicker.
-
-
-
             // create instance only after control creation, to get dateRangeObj otherwise it throws exception.
-
-
-
             var dateRangeObj = $("#dateRangePicker").ejDateRangePicker('instance');
-
-
-
             //set value using date range picker object
-
-
-
             dateRangeObj.option('value', "11/1/2013 - 12/3/2019");
-
-
-
             //get value using date range object and displays in alert box
-
-
-
             alert(dateRangeObj.option('value'));
-
-
-
         }
-
 
 {% endhighlight %}
 
