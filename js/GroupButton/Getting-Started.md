@@ -82,7 +82,7 @@ GroupButton can be created using **&lt;DIV&gt;** tag or **&lt;SPAN&gt;** tag and
 
 {% endhighlight %}
 
-{% highlight javascript %}
+{% highlight js %}
 
          <script>
 

@@ -67,7 +67,7 @@ Below is the sample to code to render the GroupButton JSON dataSource,
 
 {% endhighlight %}
 
-{% highlight javascript %}
+{% highlight js %}
 
         <script>
 
@@ -92,7 +92,7 @@ Below is the sample to code to render the GroupButton JSON dataSource,
 
 To bind remote data to the GroupButton, you can assign a service data as an instance of `ejDataManager` to the `dataSource` property along with the fields mapping.
 
-{% highlight javascript %}
+{% highlight js %}
 
         <script>
 
