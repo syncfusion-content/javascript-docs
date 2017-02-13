@@ -713,3 +713,58 @@ In above example, while expanding/collapsing a node, it is set as fixed node in 
 ### Refresh layout
 
 Diagram allows to refresh the layout at runtime. To refresh the layout, refer to [Refresh layout](/api/js/ejDiagram#methods:layout "Refresh layout").
+
+### nodeTemplate
+
+In nodeTemplate function, we can bind the custom JSONData with node properties.
+
+{% highlight javascript %}
+
+<div id="diagramcontent"></div>
+<script>
+   var data = [
+        { "Id": "E1", "Name": "Maria Anders", "Designation": "Managing Director" },
+        { "Id": "E2" , "Name": "Ana Trujillo", "Designation": "Project Manager", "ReportingPerson": "E1" } ];
+		
+   $("#diagramcontent").ejDiagram({
+	   dataSourceSettings: { id: "Id", parent: "ReportingPerson", dataSource: data },
+	   //Sets the method name to node template 
+	   nodeTemplate :"nodeTemplate"
+   });
+   
+   //Binds the custom properties with node properties and sets the styles
+    function nodeTemplate(diagram, node) {
+         node.labels[0].text = node.Name;
+     }
+   
+</script>
+
+{% endhighlight %}
+
+### connectorTemplate
+
+In connectorTemplate function, we can bind the custom JSONData with connector properties.
+
+{% highlight javascript %}
+
+<div id="diagramcontent"></div>
+<script>
+   var data = [
+        { "Id": "E1", "Name": "Maria Anders", "Designation": "Managing Director" },
+        { "Id": "E2" , "Name": "Ana Trujillo", "Designation": "Project Manager", "ReportingPerson": "E1" } ];
+		
+   $("#diagramcontent").ejDiagram({
+	   dataSourceSettings: { id: "Id", parent: "ReportingPerson", dataSource: data },
+	   //Sets the method name to connector template 
+	   connectorTemplate :"connectorTemplate"
+   });
+   
+   //Sets the default styles and binds custom data with connector
+    function connectorTemplate(diagram, connector) {
+         if(connector.sourceNode && connector.targetNode){
+			 connector.linecolor = "green";
+		 }
+     }
+</script>
+
+{% endhighlight %}
