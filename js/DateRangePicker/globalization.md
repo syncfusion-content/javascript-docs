@@ -29,40 +29,27 @@ Also it is necessary to add the corresponding culture file with application and 
 
 To get the localized text, it is necessary to add localized text file, else you can also set the localized text as your own like below code example. Adding Localized text, will make completely localized UI to DateRangePicker.
 
-{% highlight js %}
+{% highlight javascript %}
 
         ej.DateRangePicker.Locale['fr-FR'] = {
-
             ButtonText: {
-
                 apply: "Appliqer",
-
                 cancel: "Annuler",
-
                 reset: "Réinitialiser",
-
             },
 
             watermarkText: "Sélectionnez l'intervalle de date",
-
             customPicker: "sélecteur personnalisé"
-
         };
 
         ej.DateRangePicker.Locale['de-DE'] = {
-
-            ButtonText: {
-                
+            ButtonText: {        
                 apply: "anwenden",
-
                 cancel: "stornieren",
-
                 reset: "zurückstellen",
-
             },
 
             watermarkText: "Datumbereik selecteren",
-
             customPicker: "benutzerdefinierte Picker"
         };
 

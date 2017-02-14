@@ -19,7 +19,6 @@ In the **HTML** page, add the following input elements to configure **RadioButto
 
 {% highlight html %}
 
-
 <div class="page-align">
     <table>
         <tr>
@@ -45,7 +44,6 @@ In the **HTML** page, add the following input elements to configure **RadioButto
 
 {% highlight javascript %}
 
-
     // Initializes the control in JavaScript
     $(function () {
         // Here we render checked and unchecked type of radio buttons in same group
@@ -57,10 +55,7 @@ In the **HTML** page, add the following input elements to configure **RadioButto
     
 {% endhighlight %}
 
-
 Configure the CSS styles to align the radio buttons.
-
-
 
 {% highlight css %}
 
@@ -70,13 +65,9 @@ Configure the CSS styles to align the radio buttons.
     }
 </style>
 
-
 {% endhighlight %}
 
-
 The following image is displayed as the output for the above steps.
-
-
 
 ![](/js/RadioButton/Easy-Customization_images/Easy-Customization_img1.png) 
 
@@ -89,7 +80,6 @@ The following steps explain the details about rendering the **RadioButton** with
 In the **HTML** page, add the following input elements to configure the **RadioButton** widget.
 
 {% highlight html %}
-
 
 <div class="page-align">
     <table>
@@ -108,11 +98,9 @@ In the **HTML** page, add the following input elements to configure the **RadioB
     </table>
 </div>
 
-
 {% endhighlight %}
 
 {% highlight javascript %}
-
 
     // Initializes the control in JavaScript
     $(function () {
@@ -123,10 +111,7 @@ In the **HTML** page, add the following input elements to configure the **RadioB
 
 {% endhighlight %}
 
-
 Configure the CSS styles to align the radio buttons.
-
-
 
 {% highlight css %}
 
@@ -136,10 +121,7 @@ Configure the CSS styles to align the radio buttons.
     }
 </style>
 
-
 {% endhighlight %}
-
-
 
 The following image is displayed as the output for the above steps.
 
@@ -164,13 +146,11 @@ medium</td><td>
 Creates radio button with Built-in medium size height, width specified.</td></tr>
 </table>
 
-
 The following steps explain the details about rendering **RadioButton** with different size options.
 
 In the HTML page, add the following input elements to configure RadioButton widget.
 
 {% highlight html %}
-
 
 <div class="page-align">
     <table>
@@ -228,9 +208,7 @@ In the HTML page, add the following input elements to configure RadioButton widg
 
 {% endhighlight %}
 
-
 Configure the CSS styles to align the radio buttons.
-
 
 {% highlight css %}
 
@@ -240,14 +218,9 @@ Configure the CSS styles to align the radio buttons.
     }
 </style>
 
-
 {% endhighlight %}
 
-
-
 The following image is displayed as the output for the above steps.
-
-
 
 ![](/js/RadioButton/Easy-Customization_images/Easy-Customization_img3.png) 
 
@@ -260,7 +233,6 @@ The following steps explain the details about rendering the **RadioButton** with
 In the HTML page, add the following button elements to configure RadioButton widget.
 
 {% highlight html %}
-
 
 <div class="page-align">
     <table class="rightAlign">
@@ -290,12 +262,9 @@ In the HTML page, add the following button elements to configure RadioButton wid
 
 {% endhighlight %}
 
-
 In the above mentioned code, the **text** property has been used. In **LTR** format, the **RadioButton** is on the left side. In **RTL** format, the **RadioButton** appears on the right side. Here the **text** property is used and the **enableRTL** property is set as “**True**”**.** It changes the alignment to right-to-left.
 
 Configure the CSS styles to align the RadioButtons.
-
-
 
 {% highlight css %}
 
@@ -308,14 +277,9 @@ Configure the CSS styles to align the RadioButtons.
     }
 </style>
 
-
 {% endhighlight %}
 
-
-
 The following image is displayed as the output for the above steps.
-
-
 
 ![](/js/RadioButton/Easy-Customization_images/Easy-Customization_img4.png) 
 

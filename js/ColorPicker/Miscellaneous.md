@@ -13,7 +13,7 @@ documentation: ug
 
 The **getValue**() method in **ColorPicker** returns the hexadecimal value.
 
-In the **HTML** page, add a **&lt;input&gt;** element to render **ColorPicker** widget
+In the **HTML** page, add a **&lt;input&gt;** element to render **ColorPicker** widget.
 
 {% highlight html %}
 
@@ -23,7 +23,6 @@ In the **HTML** page, add a **&lt;input&gt;** element to render **ColorPicker** 
 
 {% highlight javascript %}
 
- 
     var ColorObj;
     jQuery(function ($) {
         ColorObj = $("#colorPicker").ejColorPicker({ value: "#278787" }).data('ejColorPicker');
@@ -32,15 +31,13 @@ In the **HTML** page, add a **&lt;input&gt;** element to render **ColorPicker** 
 
 {% endhighlight %}
 
-
 ## setValue
 
 The **setValue**() method in **ColorPicker** is used to set the color value. The given value is in hexadecimal form.
 
-In the **HTML** page, add a **&lt;input&gt;** element to render **ColorPicker** widget
+In the **HTML** page, add a **&lt;input&gt;** element to render **ColorPicker** widget.
 
 {% highlight html %}
-
 
 <input type="text" id="colorPicker" />    
 
@@ -56,22 +53,19 @@ In the **HTML** page, add a **&lt;input&gt;** element to render **ColorPicker** 
 
 {% endhighlight %}
 
-
 ## getColor
 
 The **getColor**() method in **ColorPicker** control returns the color value in r,g,b,a form.
 
-In the **HTML** page, add a **&lt;input&gt;** element to render **ColorPicker** widget
+In the **HTML** page, add a **&lt;input&gt;** element to render **ColorPicker** widget.
 
 {% highlight html %}
-
 
 <input type="text" id="colorPicker" />    
 
 {% endhighlight %}
 
 {% highlight javascript %}
-
  
     var ColorObj;
     jQuery(function ($) {

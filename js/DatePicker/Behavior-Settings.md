@@ -140,7 +140,7 @@ You can make use of ‘div’ element to create DatePicker when you going for in
 
 Strict mode in DatePicker allows you to enter valid or invalid date in input textbox, but an error class will get added to exhibit if it’s an invalid date. When you set [enableStrictMode](http://help.syncfusion.com/api/js/ejdatepicker#members:enablestrictmode) to false, DatePicker allows you to enter only the valid date or else it will resets with previous value. 
 
-Also the valid date should be defined in specified range or else it resets to min or maximum date when the entered date is out of range
+Also the valid date should be defined in specified range or else it resets to min or maximum date when the entered date is out of range.
 
 By default “**enableStrictMode**” is true, so you can enter any value other than date too, but an **error** class (**‘.** **e** **-** **error’**) will get added to wrapper to highlight the invalid date.
 

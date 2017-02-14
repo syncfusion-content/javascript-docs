@@ -49,8 +49,6 @@ In the **HTML** page, add the following button elements to configure **Split But
 
 {% endhighlight %}
 
-
-
 Execute the above code to render the following output.
 
 ![](/js/SplitButton/Easy-customization_images/Easy-customization_img1.png) 
@@ -84,7 +82,6 @@ Creates split button with Built-in medium size height, width specified.</td></tr
 Large</td><td>
 Creates split button with Built-in large size height, width specified.</td></tr>
 </table>
-
 
 Apart from the above mentioned predefined size option, you can set your own width and height for **Split Button** using **height** and **width** property.
 
@@ -159,7 +156,6 @@ In the **HTML** page, add the following button elements to configure **Split But
 
 {% highlight javascript %}
 
-
         // Initialize the control in JavaScript
         $(function () {
             //Here we used size property to render the split button in different sizes
@@ -213,7 +209,6 @@ In the **HTML** page, add the following button elements to configure **Split But
             });
 
         });
-    
 
 {% endhighlight %}
 
@@ -234,7 +229,6 @@ Configure the styles.
 
 {% endhighlight %}
 
-
 Execute the above code to render the following output.
 
 ![](/js/SplitButton/Easy-customization_images/Easy-customization_img2.png) 
@@ -254,7 +248,7 @@ Supports only for text content only.</td></tr>
 <tr>
 <td>
 imageonly</td><td>
-Supports only for image content only</td></tr>
+Supports only for image content only.</td></tr>
 <tr>
 <td>
 imageboth</td><td>
@@ -277,14 +271,14 @@ Icons inside the **Split Button** is added easily using **prefixIcon and suffixI
 
 For example the following Built-in CSS class are used to display the font icons that is used by media player.
 
-* e-mediaback
-* e-mediaforward
-* e-medianext
-* e-mediaprev
-* e-mediaeject
-* e-mediaclose
-* e-mediapause
-* e-mediaplay
+* e-mediaback.
+* e-mediaforward.
+* e-medianext.
+* e-mediaprev.
+* e-mediaeject.
+* e-mediaclose.
+* e-mediapause.
+* e-mediaplay.
 
 **Prefix Icon**
 
@@ -299,7 +293,6 @@ The following steps explains you the details on rendering the **Split Button** w
 In the **HTML** page, add the following button elements to configure **Split Button** widget.
 
 {% highlight html %}
-
 
 <table>
     <tr>
@@ -349,7 +342,6 @@ In the **HTML** page, add the following button elements to configure **Split But
 {% endhighlight %}
 
 {% highlight javascript %}
-
  
      // Initialize the control in JavaScript   
      // Here we used contentType property to render the split button with different contents
@@ -399,8 +391,7 @@ In the **HTML** page, add the following button elements to configure **Split But
              suffixIcon: "e-icon e-palette",
              targetID: "Ul51",
          });
-     });
-    
+     });   
 
 {% endhighlight %}
 
@@ -419,9 +410,7 @@ Configure the styles.
     }
 </style>
 
-
 {% endhighlight %}
-
 
 Execute the above code to render the following output.
 
@@ -458,7 +447,6 @@ The following steps explains you the details on rendering the **Split Button** w
 In the **HTML** page, add the following button elements to configure **Split Button** widget.
 
 {% highlight html %}
-
 
 <table>
 <tr>
@@ -554,7 +542,6 @@ In the **HTML** page, add the following button elements to configure **Split But
 
 {% highlight javascript %}
 
-
     // Initialize the control in JavaScript
     //Using imagePosition property we can render the split button images with different position
     $(function () {
@@ -639,15 +626,12 @@ In the **HTML** page, add the following button elements to configure **Split But
         });
 
     });
-    
-
+ 
 {% endhighlight %}
-
 
 Configure the styles.
 
 {% highlight css %}
-
 
 <style>
     .control {
@@ -659,10 +643,7 @@ Configure the styles.
     }
 </style>
 
-
 {% endhighlight %}
-
-
 
 Execute the above code to render the following output.
 
@@ -674,18 +655,18 @@ You can control the style and appearance of **Split Button** based on **CSS** cl
 
 By default, there are 12 themes support available for **Split Button** control namely
 
-* default-theme
-* flat-azure-dark
-* fat-lime
-* flat-lime-dark
-* flat-saffron
-* flat-saffron-dark
-* gradient-azure
-* gradient-azure-dark
-* gradient-lime
-* gradient-lime-dark
-* gradient-saffron
-* gradient-saffron-dark
+* default-theme.
+* flat-azure-dark.
+* fat-lime.
+* flat-lime-dark.
+* flat-saffron.
+* flat-saffron-dark.
+* gradient-azure.
+* gradient-azure-dark.
+* gradient-lime.
+* gradient-lime-dark.
+* gradient-saffron.
+* gradient-saffron-dark.
 
 ## Custom CSS
 
@@ -754,7 +735,6 @@ In the **HTML** page, add the following button elements to configure **Split But
 
 {% highlight javascript %}
 
-
     // Initialize the control in JavaScript
     $(function () {
         //implement custom CSS for each split button
@@ -804,14 +784,12 @@ In the **HTML** page, add the following button elements to configure **Split But
         });
 
     });
-    
 
 {% endhighlight %}
 
 Configure the **CSS** styles to apply on buttons.
 
 {% highlight css %}
-
 
 <style type="text/css">
     /* Customize the button background */
@@ -849,10 +827,7 @@ Configure the **CSS** styles to apply on buttons.
     }
 </style>
 
-
 {% endhighlight %}
-
-
 
 Execute the above code to render the following output.
 

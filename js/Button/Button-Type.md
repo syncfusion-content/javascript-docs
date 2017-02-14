@@ -17,6 +17,7 @@ List of Button types
    <tr>
       <th>Button Types</th>
       <th>Description</th>
+   </tr>
    <tr>
       <td>
          button
@@ -89,5 +90,5 @@ In the HTML page, add the following button elements to configure Button widget.
 
 Execute the above code to render the following output.
 
-![](/js/Button/Button-Type_images/Button-Type_img1.png) 
+![](Button-Type_images/Button-Type_img1.png) 
 

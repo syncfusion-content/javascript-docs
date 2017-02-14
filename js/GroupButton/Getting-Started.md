@@ -49,38 +49,22 @@ A simple HTML file with required CSS and script reference added to create GroupB
 {% highlight html %}
 
     <!DOCTYPE html>
-
     <html>
-
     <head>
-
         <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8" /> <!-- style sheet for default theme(flat azure) -->
-
         <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" /> <!--scripts-->
-
         <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.11.3.min.js"></script>
-
         <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"> </script>
-
     </head>
-
     <body>
         <!--Place input element to create GroupButton-->
-
         <script>
-
             // Place your script code here to initialize GroupButton
-
         </script>
-
     </body>
-
     </html>
 
-
 {% endhighlight %}
-
-
 
 ## GroupButton initialization
 
@@ -89,17 +73,11 @@ GroupButton can be created using **&lt;DIV&gt;** tag or **&lt;SPAN&gt;** tag and
 {% highlight html %}
 
         <div id="groupButton">
-
             <ul>
-
                 <li> Save </li>
-
                 <li> Open </li>
-
                 <li> Delete </li>
-
             </ul>
-
         </div>
 
 {% endhighlight %}

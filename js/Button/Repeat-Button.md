@@ -18,17 +18,17 @@ In the **HTML** page, add the following button elements to configure **Button** 
 
 {% highlight html %}
 
-   <div class="control">    
-        <div class="align">                        
-            <button id="button_repeat">Click
-                </button>                       
+   <div class="control">
+        <div class="align">
+            <button id="button_repeat">
+                Click
+            </button>
         </div>
-
         <div class="align">
             <div><b>Event Trace</b></div>
             <div class="eventTrace"></div>
         </div>
-    </div>
+   </div>
 
 {% endhighlight %}
 
@@ -66,9 +66,7 @@ Configure the **CSS** styles to apply on button
 
 {% endhighlight %}
 
-
-
 Execute the above code to render the following output.
 
-![](/js/Button/Repeat-Button_images/Repeat-Button_img1.png) 
+![](Repeat-Button_images/Repeat-Button_img1.png) 
 

@@ -9,8 +9,7 @@ documentation: ug
 
 # Getting Started
 
-This section briefly describes you on how to create a QuizApp and RegistrationApp using Essential JavaScript RadioButton control and use the features available in it.**Essential JavaScript** **RadioButton** supports RTL, custom skins and events to display customized RadioButtons. In this example, you can learn how to use RadioButtons in a Quiz application. The following guidelines show you how to use the **RadioButton** to select the answers in the application and get the selected items. The following screenshot displays a sample Quiz application.
-
+This section briefly describes you on how to create a QuizApp and RegistrationApp using Essential JavaScript RadioButton control and use the features available in it. **Essential JavaScript** **RadioButton** supports RTL, custom skins and events to display customized RadioButtons. In this example, you can learn how to use RadioButtons in a Quiz application. The following guidelines show you how to use the **RadioButton** to select the answers in the application and get the selected items. The following screenshot displays a sample Quiz application.
 
 ![](/js/RadioButton/Getting-Started_images/Getting-Started_img1.png) 
 
@@ -40,7 +39,6 @@ Create an HTML file and add the following template to the HTML file to create Ra
 {% endhighlight %}
 
 Add input element to render a **RadioButton**.
-
 
 {% highlight html %}
 
@@ -86,14 +84,9 @@ Add input element to render a **RadioButton**.
    
 {% endhighlight %}
 
-
-
 Initializes the RadioButton in script.
 
-
-
 {% highlight javascript %}
-
 
     $(function () {
         // declaration
@@ -118,14 +111,9 @@ Initializes the RadioButton in script.
         alert(checkeditem);
     }
 
-
-
 {% endhighlight %}
 
-
-
- Add the following styles
-
+Add the following styles
 
 {% highlight css %}
 
@@ -140,13 +128,8 @@ Initializes the RadioButton in script.
     }
 </style>
 
-
 {% endhighlight %}
-
 
 The following screenshot displays the output for the above code.
 
-
-
 ![](/js/RadioButton/Getting-Started_images/Getting-Started_img2.png) 
-

@@ -21,81 +21,49 @@ Setting a ButtonMode to radio, we can perform the only single action with all re
 
 {% highlight html %}
 
-
         <div id="groupButton">
-
             <ul>
-
                 <li>
-
                     Daily
-
                 </li>
-
                 <li>
-
                     Weekly
-
                 </li>
-
                 <li>
-
                     Monthly
-
                 </li>
-
             </ul>
-
         </div>
 
 {% endhighlight %}
 
 {% highlight js %}
     
-
             $("#groupButton").ejGroupButton({
-
                 groupButtonMode: "checkbox",
-
                 width: "215px"
-
             });
-
        
 {% endhighlight %}
 
 ![](Behavior-Settings_images/Behavior-Settings_img1.jpeg)
 
-
 ** Radio Button Mode:** Here, single button only can be selected, Please check with the below use case
 
 {% highlight html %}
 
-
         <div id="groupButton">
-
             <ul>
-
                 <li>
-
                     Credi Card
-
                 </li>
-
                 <li>
-
                     Debit Card
-
                 </li>
-
                 <li>
-
                     Net Banking
-
                 </li>
-
             </ul>
-
         </div>
 
 {% endhighlight %}
@@ -105,11 +73,8 @@ Setting a ButtonMode to radio, we can perform the only single action with all re
         <script>
 
             $("#groupButton").ejGroupButton({
-
                 groupButtonMode: "radiobutton",
-
                 width: "215px"
-
             });
 
         </script>
@@ -117,7 +82,6 @@ Setting a ButtonMode to radio, we can perform the only single action with all re
 {% endhighlight %}
 
 ![](Behavior-Settings_images/Behavior-Settings_img2.jpeg)
-
 
 ## SelectedItemIndex
 
@@ -130,29 +94,17 @@ This property will accept the array values and its value will be differ based on
 {% highlight html %}
 
         <div id="groupButton">
-
             <ul>
-
                 <li>
-
                     Credi Card
-
                 </li>
-
                 <li>
-
                     Debit Card
-
                 </li>
-
                 <li>
-
                     Net Banking
-
                 </li>
-
             </ul>
-
         </div>
 
 {% endhighlight %}
@@ -164,13 +116,9 @@ This property will accept the array values and its value will be differ based on
         <script>
 
             $("#groupButton").ejGroupButton({
-
                 groupButtonMode: "radiobutton",
-
                 width: "215px",
-
                 selectedItemIndex: [1]
-
             });
 
         </script>
@@ -178,7 +126,6 @@ This property will accept the array values and its value will be differ based on
 {% endhighlight %}
 
 ![](Behavior-Settings_images/Behavior-Settings_img3.jpeg)
-
 
 ## Select and deselect the button items using public method 
 
@@ -189,29 +136,17 @@ Button items in GroupButton can be selected or deselected using available public
 {% highlight html %}
 
         <div id="groupButton">
-
             <ul>
-
                 <li>
-
                     Credi Card
-
                 </li>
-
                 <li>
-
                     Debit Card
-
                 </li>
-
                 <li>
-
                     Net Banking
-
                 </li>
-
             </ul>
-
         </div>
 
 {% endhighlight %}
@@ -221,17 +156,12 @@ Button items in GroupButton can be selected or deselected using available public
         <script>
 
             $("#groupButton").ejGroupButton({
-
                 groupButtonMode: "radiobutton",
-
                 width: "300px",
-
                 selectedItemIndex: [1]
-
             });
 
             grpbtnObj = $("#groupButton").data("ejGroupButton");
-
             grpbtnObj.selectItem(0);
 
         </script>
@@ -245,7 +175,6 @@ Button items in GroupButton can be selected or deselected using available public
         <script>
 
             grpbtnObj = $("#groupButton").data("ejGroupButton");
-
             grpbtnObj.deselectItem(0);
 
         </script>
@@ -259,29 +188,17 @@ You can select or deselect the button items based on id of the button items also
 {% highlight html %}
 
         <div id="groupButton">
-
             <ul>
-
                 <li id="payment_option_1">
-
                     Credi Card
-
                 </li>
-
                 <li id="payment_option_2">
-
                     Debit Card
-
                 </li>
-
                 <li id="payment_option_3">
-
                     Net Banking
-
                 </li>
-
             </ul>
-
         </div>
 
 {% endhighlight %}
@@ -291,15 +208,11 @@ You can select or deselect the button items based on id of the button items also
         <script>
 
             $("#groupButton").ejGroupButton({
-
                 groupButtonMode: "checkbox",
-
                 width: "300px",
-
             });
 
             grpbtnObj = $("#groupButton").data("ejGroupButton");
-
             grpbtnObj.selectItem("payment_option_2");
 
         </script>

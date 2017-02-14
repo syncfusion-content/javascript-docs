@@ -9,7 +9,7 @@ documentation: ug
 
 # Easy Customization
 
-Button is used in all applications. Button size, content and content location is varied according to each application. Here you can see some customizable option for button that can perform easily. 
+Button is used in all applications. Button size, content and content location is varied according to each application. Here you can see some customizable options for button that can be performed easily. 
 
 ## Button Size	
 
@@ -65,7 +65,6 @@ List of predefined button size
         </td>
     </tr>
 </table>
-
 
 Apart from the above mentioned predefined size option, you can set your own width and height for button using **height** and **width** property.
 
@@ -132,7 +131,6 @@ In the **HTML** page, add the following button elements to configure button widg
 Execute the above code to render the following output.
 
 ![](/js/Button/Easy-Customization_images/Easy-Customization_img1.png)
-
 
 ## Content Type
 
@@ -220,7 +218,6 @@ In the **HTML** page, add the following button elements to configure **Button** 
 
 {% highlight html %}
 
-  
 <button id="button_imageonly">login</button>
 <button id="button_textonly">login</button>
 <button id="button_imageboth">login</button>
@@ -232,13 +229,11 @@ In the **HTML** page, add the following button elements to configure **Button** 
 <button id="button_textonly_small">login</button>
 <button id="button_imageboth_small">login</button>
 <button id="button_textandimage_small">login</button>
-<button id="button_imagetextimage_small">login</button>
-
+<button id="button_imagetextimage_small">login</button> 
 
 {% endhighlight %}
 
 {% highlight javascript %}
-
 
     // Here use contentType property to render the button with different contents
     $(function () {
@@ -251,7 +246,7 @@ In the **HTML** page, add the following button elements to configure **Button** 
         $("#button_textonly").ejButton({
             //only text is used as content
             contentType: "textonly",
-            showRoundedCorner: true,
+            showRoundedCorner: true
         });
         $("#button_imageboth").ejButton({
             //only images in both end is used as content
@@ -273,7 +268,6 @@ In the **HTML** page, add the following button elements to configure **Button** 
             prefixIcon: "e-icon e-handup",
             suffixIcon: "e-icon e-palette"
         });
-
         $("#button_imageonly_small").ejButton({
             size: "small",
             //only image is used as content
@@ -285,7 +279,7 @@ In the **HTML** page, add the following button elements to configure **Button** 
             size: "small",
             //only text is used as content
             contentType: "textonly",
-            showRoundedCorner: true,
+            showRoundedCorner: true
         });
         $("#button_imageboth_small").ejButton({
             size: "small",
@@ -320,7 +314,6 @@ In the **HTML** page, add the following button elements to configure **Button** 
 Execute the above code to render the following output.
 
 ![](/js/Button/Easy-Customization_images/Easy-Customization_img2.png) 
-
 
 ## Image Position
 
@@ -406,70 +399,70 @@ In the **HTML** page, add the following button elements to configure **Button** 
             imagePosition: "imageleft",
             contentType: "textandimage",
             showRoundedCorner: true,
-            prefixIcon: "e-icon e-handup",
+            prefixIcon: "e-icon e-handup"
         });
         $("#button_imageleft_mini").ejButton({
             size: "mini",
             imagePosition: "imageleft",
             contentType: "textandimage",
             showRoundedCorner: true,
-            prefixIcon: "e-icon e-handup",
+            prefixIcon: "e-icon e-handup"
         });
         $("#button_imageleft_small").ejButton({
             size: "small",
             imagePosition: "imageleft",
             contentType: "textandimage",
             showRoundedCorner: true,
-            prefixIcon: "e-icon e-handup",
+            prefixIcon: "e-icon e-handup"
         });
         $("#button_imageleft_medium").ejButton({
             size: "medium",
             imagePosition: "imageleft",
             contentType: "textandimage",
             showRoundedCorner: true,
-            prefixIcon: "e-icon e-handup",
+            prefixIcon: "e-icon e-handup"
         });
         $("#button_imageleft_large").ejButton({
             size: "large",
             imagePosition: "imageleft",
             contentType: "textandimage",
             showRoundedCorner: true,
-            prefixIcon: "e-icon e-handup",
+            prefixIcon: "e-icon e-handup"
         });
         $("#button_imageright_normal").ejButton({
             size: "normal",
             imagePosition: "imageright",
             contentType: "textandimage",
             showRoundedCorner: true,
-            prefixIcon: "e-icon e-handup",
+            prefixIcon: "e-icon e-handup"
         });
         $("#button_imageright_mini").ejButton({
             size: "mini",
             imagePosition: "imageright",
             contentType: "textandimage",
             showRoundedCorner: true,
-            prefixIcon: "e-icon e-handup",
+            prefixIcon: "e-icon e-handup"
         });
         $("#button_imageright_small").ejButton({
             size: "small",
             imagePosition: "imageright",
             contentType: "textandimage",
             showRoundedCorner: true,
-            prefixIcon: "e-icon e-handup",
+            prefixIcon: "e-icon e-handup"
         });
         $("#button_imageright_medium").ejButton({
             size: "medium",
             imagePosition: "imageright",
             contentType: "textandimage",
             showRoundedCorner: true,
-            prefixIcon: "e-icon e-handup",
+            prefixIcon: "e-icon e-handup"
         });
         $("#button_imageright_large").ejButton({
             size: "large",
             imagePosition: "imageright",
             contentType: "textandimage",
             showRoundedCorner: true,
-            prefixIcon: "e-icon e-handup",
+            prefixIcon: "e-icon e-handup"
         });
         $("#button_imagetop").ejButton({
             imagePosition: "imagetop",
@@ -492,7 +485,6 @@ In the **HTML** page, add the following button elements to configure **Button** 
 Execute the above code to render the following output.
 
 ![](/js/Button/Easy-Customization_images/Easy-Customization_img3.png)
-
 
 ## Theme support
 
@@ -540,7 +532,7 @@ In the **HTML** page, add the following button elements to configure **Button** 
             size: "small",
             showRoundedCorner: true,
             contentType: "textandimage",
-            prefixIcon: "e-icon e-handup",
+            prefixIcon: "e-icon e-handup"
         });
         $("#button_customCss2").ejButton({
             cssClass: "customCss2",
@@ -571,7 +563,6 @@ In the **HTML** page, add the following button elements to configure **Button** 
             prefixIcon: "e-icon e-handup"
         });
     });
-
 
 {% endhighlight %}
 
@@ -611,9 +602,7 @@ Configure the **CSS** styles to apply on buttons.
     }
 </style>
 
-
 {% endhighlight %}
-
 
 Execute the above code to render the following output.
 

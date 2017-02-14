@@ -9,11 +9,9 @@ documentation: ug
 
 # Getting Started
 
-This section explains briefly about how to create a **Checkbox** in your application with **JavaScript**.**Essential JavaScript Checkbox** provides support for multiple selections, within your web page and allows you to specify an option from the list. From the following guidelines, you can select Multiple or Single Selection List Receiving App using **Checkbox**. The following screenshot demonstrates the functionality with Checkbox button action.
+This section explains briefly about how to create a **Checkbox** in your application with **JavaScript**. **Essential JavaScript Checkbox** provides support for multiple selections, within your web page and allows you to specify an option from the list. From the following guidelines, you can select Multiple or Single Selection List Receiving App using **Checkbox**. The following screenshot demonstrates the functionality with Checkbox button action.
 
-
-
-![](/js/Checkbox/Getting-Started_images/Getting-Started_img1.png) 
+![](Getting-Started_images/Getting-Started_img1.png) 
 
 In the above screenshot, you can select Hobbies, Interests list and Social networks Receiving App using Checkbox, **Tri-state** **Checkbox** and perform the action to render the checked values when the button is clicked.
 
@@ -22,8 +20,6 @@ In the above screenshot, you can select Hobbies, Interests list and Social netwo
 **Essential JavaScript** **Checkbox** widget has built-in features like intermediate selections. You can easily create the Checkbox widget by using a simple input Checkbox element as follows.
 
 Create an **HTML** file and add the following template to the **HTML** file.
-
-
 
 {% highlight html %}
 
@@ -48,12 +44,11 @@ Create an **HTML** file and add the following template to the **HTML** file.
 
 Add input element to render the **Checkbox.**
 
-
 {% highlight html %}
 
 <div class="frame">
-    Hobbies <br /><br />
-    <table>
+   Hobbies <br /><br />
+   <table>
         <tr>
             <td class="chkrad">
                 <input type="checkbox" id="check1" value="Music" />
@@ -68,9 +63,9 @@ Add input element to render the **Checkbox.**
                 <label for="Checkbox4" class="clslab">Bike Riding</label>
             </td>
         </tr>
-    </table><br /><br />
-    Favorite Search Engines<br /><br />
-    <table>
+   </table><br /><br />
+   Favorite Search Engines<br /><br />
+   <table>
         <tr>
             <td class="chkrad">
                 <input type="checkbox" id="Checkbox1" value="playing Games" />
@@ -85,9 +80,9 @@ Add input element to render the **Checkbox.**
                 <label for="Checkbox6">Watching Tv</label>
             </td>
         </tr>
-    </table><br /><br />
-    Media Player<br /><br />
-    <table>
+   </table><br /><br />
+   Media Player<br /><br />
+   <table>
         <tr>
             <td class="chkrad">
                 <input type="checkbox" id="Checkbox2" value="Video" />
@@ -102,21 +97,16 @@ Add input element to render the **Checkbox.**
                 <label for="Checkbox8">Picture</label>
             </td>
         </tr>
-    </table>
+   </table>
    <br />
    <div>
       <button id="button11">SUBMIT</button>
    </div>
 </div>
 
-
 {% endhighlight %}
 
-
-
 Add the following styles to show the **Checkbox** control in an order.
-
-
 
 {% highlight css %}
 
@@ -133,17 +123,11 @@ Add the following styles to show the **Checkbox** control in an order.
 
 </style>
 
-
 {% endhighlight %}
-
-
 
 Initialize **Checkbox** in script.
 
-
-
 {% highlight javascript %}
-
     
     // Simple checkbox creation    
     $(function () {
@@ -160,7 +144,7 @@ Initialize **Checkbox** in script.
         $("#button11").ejButton({
             size: "normal",
             width:"60px",
-            showRoundedCorner: true,
+            showRoundedCorner: true
     });
     $(document).ready(function () {      //Document ready
         $("button").click(function () {
@@ -173,23 +157,18 @@ Initialize **Checkbox** in script.
          });
      });
 
-
 {% endhighlight %}
-
-
 
 The following screenshot displays a **Checkbox** control.
 
 
-![](/js/Checkbox/Getting-Started_images/Getting-Started_img3.png) 
+![](Getting-Started_images/Getting-Started_img3.png) 
 
 ## File Selection in Media Player
 
 You can get the file type of Media player applications such as video, audio and picture using **Checkbox.** Follow the given steps to get media player file types.
 
 Add the following code in the **&lt;body&gt;** element of the corresponding view page.
-
-
 
 {% highlight html %}
 
@@ -241,14 +220,9 @@ Add the following code in the **&lt;body&gt;** element of the corresponding view
    </div>
 </div>
 
-
 {% endhighlight %}
 
-
-
  Initialize **Checkbox** in the script.
-
-
 
 {% highlight javascript %}
 
@@ -263,7 +237,7 @@ Add the following code in the **&lt;body&gt;** element of the corresponding view
        $("#button11").ejButton({
            size: "normal",
            width:"60px",
-           showRoundedCorner: true,
+           showRoundedCorner: true
        });
     });
     $(document).ready(function () {
@@ -277,11 +251,9 @@ Add the following code in the **&lt;body&gt;** element of the corresponding view
        });
     });
 
-
 {% endhighlight %}
-
 
 Execute the code to render the resultant output.
 
-![](/js/Checkbox/Getting-Started_images/Getting-Started_img4.png) 
+![](Getting-Started_images/Getting-Started_img4.png) 
 
