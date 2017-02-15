@@ -16,8 +16,8 @@ We have provided the State Maintenance support for Essential JS components.You c
 //Example
 
 $("#fileExplorer").ejFileExplorer({ 
-    path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/", 
-    ajaxAction:” http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction”, 
+    path: "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/", 
+    ajaxAction:”http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations”, 
     enablePersistence:true  
 });
 
@@ -43,4 +43,4 @@ Please refer the below code block:
 
 We have prepared a sample based on that and you can get it from following location. 
 
-[Sample Location](http://jsplayground.syncfusion.com/lmkn0ncv) 
+[Sample Location](http://jsplayground.syncfusion.com/v2steydg) 
