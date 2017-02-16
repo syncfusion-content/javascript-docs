@@ -59,7 +59,7 @@ To get the localized string based on different cultures, from OLAP Cube, we need
     $("#PivotGauge1").ejPivotGauge({
         //....
         dataSource: {
-            data: "http://bi.syncfusion.com/olap/msmdpump.dll;LocaleIdentifier=1036;"
+            data: "http://bi.syncfusion.com/olap/msmdpump.dll;Locale Identifier=1036;"
         }
     });
 
