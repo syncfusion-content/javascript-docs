@@ -101,3 +101,29 @@ If you want to customize read action alone, the AJAX **url** and **dataType** ar
 
 {% endhighlight %}
 
+
+For following file actions, you have to make the custom request in URL format only, not able to use jQuery AJAX configurations as like "dataType", "contentType", "async", etc..
+
+* upload
+* download 
+* getImage
+
+Also its compulsory to add "{0}" in the end of "upload, download and getImage" URL's. That helps to pass the internal parameters with the action request.
+
+{% highlight javascript %}
+
+       ajaxSettings: {
+            upload: {
+                url: ajaxActionHandler + "/upload{0}"
+            },
+            download: {
+                url: ajaxActionHandler + "/download{0}"
+            },
+            getImage: {
+                url: ajaxActionHandler + "/getImage{0}"
+            }
+      }
+                
+{% endhighlight %}
+
+N> **ajaxActionHandler** - prefix URL of AJAX handling method
