@@ -27,8 +27,10 @@ Also hyperlink option provides separate events for row header, column header, va
 {% highlight html %}
 
 $(function() {
+
     $("#PivotGrid1").ejPivotGrid({
-        hyperlinkSettings: {
+        //...
+		hyperlinkSettings: {
             enableValueCellHyperlink: true,
             enableRowHeaderHyperlink: true,
             enableColumnHeaderHyperlink: true,
@@ -38,13 +40,12 @@ $(function() {
         rowHeaderHyperlinkClick: "CellClickEvent",
         columnHeaderHyperlinkClick: "CellClickEvent",
         summaryCellHyperlinkClick: "CellClickEvent",
-    url: "/OLAPService",
-        layout: ej.PivotGrid.Layout.Normal
     });
 
     CellClickEvent = function(evt) {
         alert("Cell click event is fired.");
     }
+
 });
 
 {% endhighlight %}
@@ -59,8 +60,9 @@ The [`cellSelection`](/api/js/ejpivotgrid#events:cellselection) event would be t
 {% highlight html %}
 
 $(function() {
+
     $("#PivotGrid1").ejPivotGrid({
-        url: "/OLAPService",
+        //...
         enableCellSelection: true,
         cellSelection: "valueCellClick"
     });
@@ -85,8 +87,9 @@ Cell context is enabled by setting the [`enableCellContext`](/api/js/ejpivotgrid
 {% highlight html %}
 
 $(function() {
+
     $("#PivotGrid1").ejPivotGrid({
-    url: "/OLAPService",
+    	//...
         enableCellContext: true,
         cellContext: "cell_RightClick"
     });

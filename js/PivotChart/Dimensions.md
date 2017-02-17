@@ -74,7 +74,7 @@ PivotChart widget supports responsive rendering based on the target device (desk
 {% highlight javascript %}
 
 <body>
-    <div id="PivotChart1" style="min-width: 950px; min-height: 460px" ></div>
+    <div id="PivotChart1" style="min-width: 950px; min-height: 460px;width: 100%" ></div>
     <script type="text/javascript">
                 //Datasource
                 ....

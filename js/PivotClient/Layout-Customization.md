@@ -9,6 +9,54 @@ documentation: ug
 
 # Layout Customization
 
+## Size
+
+Allows you to render PivotClient in different sizes. You can set height and width under ['size'] property. 
+
+## Set size in Pixels
+
+{% highlight html %}
+
+<div id="PivotClient1"></div>
+<script>
+    $(function() {    
+        $("#PivotClient1").ejPivotClient({
+            //...
+            size: { width: "1000px" , height: "685px" }
+        });
+    });
+</script>
+
+{% endhighlight %}
+
+PivotClient with decreased size from Default size
+
+![](Layout-Customization_images/small-size.png)
+
+## Set size in percentage
+
+You can set the PivotClient size in percentage also.
+
+N> Size of the parent container should be set in Pixels.
+
+{% highlight html %}
+
+<div id="control" style="width:1000px; height:800px">
+  <div id="PivotClient1">
+    <script>
+        $(function() {    
+            $("#PivotClient1").ejPivotClient({
+                //...
+                size:{ width: "50%" , height: "80%" }
+            });
+        });
+    </script>
+  </div>
+</div>
+
+{% endhighlight %}
+
+N> PivotClient set with minimum height and width to show decent UI.
 ## Control Placement
 
 ### Tab View
@@ -16,12 +64,12 @@ In Tab View representation, both Grid and Chart will be displayed in separate ta
 
 {% highlight javascript %}
 
-    $("#PivotClient1").ejPivotClient({
-        //...
-        displaySettings: {
-            controlPlacement: ej.PivotClient.ControlPlacement.Tab
-        }
-    });
+$("#PivotClient1").ejPivotClient({
+    //...
+    displaySettings: {
+        controlPlacement: ej.PivotClient.ControlPlacement.Tab
+    }
+});
 
 {% endhighlight %}
 
@@ -32,12 +80,12 @@ In Tile View representation, both Grid and Chart will be displayed one above the
 
 {% highlight javascript %}
 
-    $("#PivotClient1").ejPivotClient({
-        //...
-        displaySettings: {
-            controlPlacement: ej.PivotClient.ControlPlacement.Tile
-        }
-    });
+$("#PivotClient1").ejPivotClient({
+    //...
+    displaySettings: {
+        controlPlacement: ej.PivotClient.ControlPlacement.Tile
+    }
+});
 
 {% endhighlight %}
 
@@ -184,9 +232,28 @@ The Chart Type can also be changed dynamically through the toolbar icon.
 
 ![](Layout-Customization_images/chart-type-changed.png)
 
+### PivotTreeMap
+
+I> This feature is applicable only for OLAP data source bound from server-side.
+
+You can include the PivotTreeMap component as one of the chart types by setting [`enablePivotTreeMap`](/api/js/ejPivotClient#members:enablepivottreemap) property to true.
+
+{% highlight javascript %}
+
+    $("#PivotClient1").ejPivotClient({ 
+        //...
+        enablePivotTreeMap: true 
+    });
+
+{% endhighlight %} 
+
+![](Layout-Customization_images/TreeMap1.png)
+
+![](Layout-Customization_images/TreeMap2.png)
+
 ## Report Toolbar
 
-Icons can be either enabled/disabled inside the report toolbar. This can be achieved by setting the properties under [`toolbarIconSettings`](/api/js/ejpivotclient#members:toolbariconsettings) option to false. The value is true by default.
+You can customize the display of toolbar by enabling/disabling the visibility of each of the icons.  This can be achieved by setting the properties under [`toolbarIconSettings`](/api/js/ejpivotclient#members:toolbariconsettings) option to false. The values are true by default.
 
 {% highlight javascript %}
 
