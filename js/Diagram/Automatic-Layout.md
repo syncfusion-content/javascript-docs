@@ -713,3 +713,97 @@ In above example, while expanding/collapsing a node, it is set as fixed node in 
 ### Refresh layout
 
 Diagram allows to refresh the layout at runtime. To refresh the layout, refer to [Refresh layout](/api/js/ejDiagram#methods:layout "Refresh layout").
+
+### nodeTemplate
+
+The nodeTemplate function is provided for the purpose of customizing nodes.It will be called for each node on node iniitialization. In this function, we can customize the node style and its properties and can bind the custom JSON with node.  
+
+{% highlight javascript %}
+
+<div id="diagramcontent"></div>
+
+<script>
+
+//Initialize data source
+var data = [
+	{ "Id": "parent", "Function": "Project Management", "Color": "blue" },
+	{ "Id": "1", "Function": "R&D Team", "Phase": "parent", "Color": "blue" },
+	{ "Id": "2", "Function": "HR Team", "Phase": "parent", "Color": "blue" },
+	{ "Id": "3", "Function": "Sales Team", "Phase": "parent", "Color": "blue" }
+];
+
+//Binds Custom JSON with node
+function nodeTemplate(diagram, node) {
+	node.fillColor = node.Color;
+}
+
+
+//Initialize Diagram control
+$("#diagramcontent").ejDiagram(
+{
+	height: "450px",
+	layout: { type: "organizationalchart", marginX: 3, marginY: 3 },
+	defaultSettings: {
+		node: { width: 100, height: 40, borderColor: "black" },
+		connector: {
+			segments: [{ type: "orthogonal" }], targetDecorator: { shape: "none" },
+			constraints: ej.datavisualization.Diagram.ConnectorConstraints.None
+		}
+	},
+	nodeTemplate: nodeTemplate,
+	dataSourceSettings: {
+		id: "Id", parent: "Phase", dataSource: data
+	},
+});
+
+</script>
+	
+{% endhighlight %}
+
+### connectorTemplate
+
+The connectorTemplate function is provided for the purpose of customizing connectors.It will be called for each connector on connector iniitialization. In this function, we can customize the connector style and its properties and can bind the custom JSON with connector.
+
+{% highlight javascript %}
+
+<div id="diagramcontent"></div>
+            
+<script>
+
+	//Initialize data source
+	var data = [
+		{ "Id": "parent", "Function": "Project Management","Color":"blue" },
+		{ "Id": "1", "Function": "R&D Team", "Phase": "parent","Color":"blue" },
+		{ "Id": "2", "Function": "HR Team", "Phase": "parent","Color":"blue" },
+		{ "Id": "3", "Function": "Sales Team", "Phase": "parent","Color":"blue" }                 
+	];
+	
+	//Binds Custom JSON with node
+	function connectorTemplate(diagram, connector) {               
+		if(connector.sourceNode && connector.targetNode){
+			connector.lineColor = "green";
+		}
+	}
+	
+		
+	//Initialize Diagram control
+	$("#diagramcontent").ejDiagram(
+	{
+		height: "450px",  
+		layout: { type: "organizationalchart", marginX:3,marginY:3},
+		defaultSettings: {
+			node: { width: 100, height: 40, borderColor: "black"},
+			connector: {
+				segments: [{ type: "orthogonal" }], targetDecorator: { shape: "none" },
+				constraints: ej.datavisualization.Diagram.ConnectorConstraints.None
+			}
+		},
+		connectorTemplate: connectorTemplate,
+		dataSourceSettings: {
+			id: "Id", parent: "Phase", dataSource: data
+		},              
+	});
+
+</script>
+
+{% endhighlight %}
