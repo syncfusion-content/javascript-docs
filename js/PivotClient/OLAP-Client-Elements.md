@@ -229,14 +229,14 @@ Rename Report option lets the user to rename the current/active report.  On clic
 
 After giving a name and clicking OK, the active report gets refreshed with the new name. On clicking Cancel button, the operation gets canceled.
 
-![](OLAP-Client-Elements_images/Rename Report1.png)
+![](OLAP-Client-Elements_images/RenameReport1.png)
 
 ### Save
 Save option saves the entire report collection by only one name to a database. The database is connected to the application through a connection string provided in the service.
 
 On clicking the Save icon, the Save dialog is opened prompting for a name with which the report collection needs to be stored.
 
-![](OLAP-Client-Elements_images/save report.png)
+![](OLAP-Client-Elements_images/savereport.png)
 
 After providing appropriate name and clicking OK, the report collection will get saved to the connected database. Clicking Cancel button, withdraws the saving operation.
 
@@ -245,14 +245,14 @@ Save As option saves the entire report collection by two or more name to a datab
 
 On clicking the Save As icon, the Save As dialog is opened prompting for a name with which the report collection needs to be stored.
 
-![](OLAP-Client-Elements_images/save as report.png)
+![](OLAP-Client-Elements_images/saveasreport.png)
 
 After providing appropriate name and clicking OK, the report collection will get saved to the connected database. Clicking Cancel button, withdraws the saving operation.
 
 ### Load
 Load option loads a saved report collection from the database via service.  Clicking the respective icon at toolbar, the Load dialog opens.
 
-![](OLAP-Client-Elements_images/Load report.png)
+![](OLAP-Client-Elements_images/Loadreport.png)
 
 Any one of the report from the report collection could be selected from the drop-down list and OK button is clicked for loading the selected report collection. Cancel button is used for to abort the report loading operation.
 
@@ -261,14 +261,14 @@ Any one of the report from the report collection could be selected from the drop
 ### Remove
 Remove option removes the saved report from the report collection.  On clicking the icon at toolbar, a dialog will open prompting for user’s confirmation on removal of report as shown below.
 
-![](OLAP-Client-Elements_images/Remove record 1.png)
+![](OLAP-Client-Elements_images/Removerecord.png)
 
 On clicking OK button, the report gets removed from the collection. On clicking Cancel button, the operation gets aborted.
 
 ### Rename
 Rename option lets the user to rename the saved report.  On clicking the corresponding icon at toolbar, the below dialog opens prompting the new name.
 
-![](OLAP-Client-Elements_images/Rename Record.png)
+![](OLAP-Client-Elements_images/RenameRecord.png)
 
 After giving a name and clicking OK, the active report gets refreshed with the new name. On clicking Cancel button, the operation gets canceled.
 
