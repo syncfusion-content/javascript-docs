@@ -73,6 +73,6 @@ $("#GanttContainer").ejGantt({
 {% endhighlight %}
 
 
-The following screen shot depicts a project with both automatically and manually scheduled tasks.
+The following screen shot depicts a project with custom scheduling mode, where both automatic and manual scheduling modes are mapped to the tasks.
 
 ![](/js/Gantt/Task-Scheduling-modes_images/Task-Scheduling-modes_img1.png)
