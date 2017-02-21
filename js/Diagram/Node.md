@@ -332,33 +332,6 @@ $("#diagram").ejDiagram({
 
 ![](/js/Diagram/Node_images/Node_img10.png)
 
-## Hyperlink
-
-**Diagram** provides a support to add a hyperlink for the nodes. It can also be customized.
-
-{% highlight javascript %}
-
-// Defines JSON to create a node
-var nodes = [{
-	name: "hyperlinknode", 
-	fillColor: "white",
-	width: 150, height: 60,
-	offsetX: 100, offsetY: 100,
-	// Sets the hyperlink for the node label
-	labels: [{ "hyperText": "https://www.syncfusion.com" }]
-	}];
-
-//Initializes Diagram
-$("#diagram").ejDiagram({
-	width: "100%", height: "100%",
-	//Initializes nodes collection
-	nodes: nodes
-});
-
-{% endhighlight %}
-
-![](/js/Diagram/Node_images/Node_img11.png)
-
 ## Interaction
 
 Diagram provides support to drag, resize, or rotate the node interactively. For more information about editing a node at runtime, refer to [Edit Nodes](/js/Diagram/Interaction "Interaction").

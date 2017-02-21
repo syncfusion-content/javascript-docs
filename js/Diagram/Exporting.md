@@ -145,8 +145,8 @@ var options = {
 	region: "content",
 	pageWidth: 400, 
 	pageHeight: 400,
-	//Stretch Option for Exporting the Image
 
+	//Stretch Option for exporting the Image
 	stretch: "fill",
 	multiplePage: false
 	};
@@ -156,7 +156,7 @@ diagram.exportDiagram(options);
 
 By default, Diagram is exported with stretch option as "none". You can export Diagram with following stretch options.
 
-* Fill
-* Uniform
-* UniformToFill
-* None
+* fill
+* uniform
+* uniformtofill
+* none
