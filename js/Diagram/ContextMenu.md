@@ -35,6 +35,15 @@ $("#DiagramContent").ejDiagram({
 Apart from the default context menu items, you can define some additional context menu items. Those additional items have to be defined and added to `contextMenu.items`. Sub menu items for context menu can set using `contextMenu.items.subItems`
 The following code example illustrate how to add custom context menu items.
 
+{% highlight html %}
+<style>
+	.menuplace{
+            background-size:14px 14px;
+			}
+</style>
+
+{% endhighlight %}
+
 {% highlight javascript %}
 
 $("#DiagramContent").ejDiagram({
@@ -51,10 +60,15 @@ $("#DiagramContent").ejDiagram({
 			// Defines the sub items
 			subItems: [{
 				name: "zoomIn",
-				text: "ZoomIn"
+				text: "ZoomIn",
+				// Sets the image src for the item
+				imageUrl: "Images/zoomin.png",
+				// Sets the cssClass for the item
+				 cssClass:"menuplace",
 			},{
 				name: "zoomOut",
-				text: "ZoomOut"
+				text: "ZoomOut",
+				imageUrl: "Images/zoomout.png"
 			}]
 		}],
 		// Hides the default context menu items
