@@ -22,6 +22,8 @@ Baseline is used to describe the original plan of the task and it can be the sam
 
 {% endhighlight %}
 
+[Click](http://js.syncfusion.com/demos/web/#!/bootstrap/gantt/schedulingconcepts/baseline) here to view the online demo sample for baselines in Gantt.
+
 The following screenshot shows the baseline in Gantt control.
 
 ![](/js/Gantt/Baseline_images/Baseline_img1.png)
