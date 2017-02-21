@@ -605,9 +605,22 @@ namespace PivotGridDemo
         public Dictionary<string, object> SaveReport(Dictionary<string, object> jsonResult)
         {
             string mode = jsonResult["operationalMode"].ToString();
+            bool isDuplicate = true;
             SqlCeConnection con = new SqlCeConnection() { ConnectionString = conStringforDB };
             con.Open();
-            SqlCeCommand cmd1 = new SqlCeCommand("insert into ReportsTable Values(@ReportName,@Reports)", con);
+            SqlCeCommand cmd1 = null;
+            foreach (DataRow row in GetDataTable().Rows)
+            {
+                if ((row.ItemArray[0] as string).Equals(jsonResult["reportName"].ToString()))
+                {
+                    isDuplicate = false;
+                    cmd1 = new SqlCeCommand("update ReportsTable set Report=@Reports where ReportName like @ReportName", con);
+                }
+            }
+            if (isDuplicate)
+            {
+                cmd1 = new SqlCeCommand("insert into ReportsTable Values(@ReportName,@Reports)", con);
+            }
             cmd1.Parameters.Add("@ReportName", jsonResult["reportName"].ToString());
             if (mode == "serverMode")
                 cmd1.Parameters.Add("@Reports", OLAPUTILS.Utils.GetReportStream(jsonResult["clientReports"].ToString()).ToArray());
@@ -660,7 +673,6 @@ namespace PivotGridDemo
             return dictionary;
         }
 
-
         private DataTable GetDataTable()
         {
             SqlCeConnection con = new SqlCeConnection() { ConnectionString = conStringforDB };
@@ -670,7 +682,6 @@ namespace PivotGridDemo
             con.Close();
             return dSet.Tables[0];
         }
-
 
         [System.Web.Http.ActionName("DeferUpdate")]
         [System.Web.Http.HttpPost]

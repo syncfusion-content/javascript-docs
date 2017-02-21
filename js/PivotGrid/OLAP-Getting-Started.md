@@ -144,7 +144,7 @@ In-order to initialize a PivotGrid widget, first you need to define a “div” 
 </head>
 
 <body>
-    <form id="form1" runat="server">
+
         <div>
             <!--Create a tag which acts as a container for ejPivotGrid widget.-->
             <div id="PivotGrid1" style="height: 350px; width: 100%; overflow: auto"> </div>
@@ -159,7 +159,7 @@ In-order to initialize a PivotGrid widget, first you need to define a “div” 
                 });
             </script>
         </div>
-    </form>
+
 </body>
 
 </html>
@@ -280,6 +280,7 @@ namespace PivotGridDemo
     public class OlapController : ApiController
     {
         Syncfusion.JavaScript.PivotGrid htmlHelper = new Syncfusion.JavaScript.PivotGrid();
+        public static int cultureIDInfoval = 1033;
         string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
         JavaScriptSerializer serializer = new JavaScriptSerializer();
         string conStringforDB = ""; //Enter appropriate connection string to connect database for saving and loading operation of reports
@@ -361,14 +362,28 @@ namespace PivotGridDemo
             htmlHelper.ExportPivotGrid(DataManager, args, fileName, System.Web.HttpContext.Current.Response);
         }
 
+
         [System.Web.Http.ActionName("SaveReport")]
         [System.Web.Http.HttpPost]
         public Dictionary<string, object> SaveReport(Dictionary<string, object> jsonResult)
         {
             string mode = jsonResult["operationalMode"].ToString();
+            bool isDuplicate = true;
             SqlCeConnection con = new SqlCeConnection() { ConnectionString = conStringforDB };
             con.Open();
-            SqlCeCommand cmd1 = new SqlCeCommand("insert into ReportsTable Values(@ReportName,@Reports)", con);
+            SqlCeCommand cmd1 = null;
+            foreach (DataRow row in GetDataTable().Rows)
+            {
+                if ((row.ItemArray[0] as string).Equals(jsonResult["reportName"].ToString()))
+                {
+                    isDuplicate = false;
+                    cmd1 = new SqlCeCommand("update ReportsTable set Report=@Reports where ReportName like @ReportName", con);
+                }
+            }
+            if (isDuplicate)
+            {
+                cmd1 = new SqlCeCommand("insert into ReportsTable Values(@ReportName,@Reports)", con);
+            }
             cmd1.Parameters.Add("@ReportName", jsonResult["reportName"].ToString());
             if (mode == "clientMode")
                 cmd1.Parameters.Add("@Reports", Encoding.UTF8.GetBytes(jsonResult["clientReports"].ToString()).ToArray());
@@ -440,7 +455,7 @@ namespace PivotGridDemo
             con.Close();
             return dSet.Tables[0];
         }
-
+        
         [System.Web.Http.ActionName("DeferUpdate")]
         [System.Web.Http.HttpPost]
         public Dictionary<string, object> DeferUpdate(Dictionary<string, object> jsonResult)
@@ -449,7 +464,7 @@ namespace PivotGridDemo
             DataManager.SetCurrentReport(Utils.DeserializeOlapReport(jsonResult["currentReport"].ToString()));
             return htmlHelper.GetJsonData(jsonResult["action"].ToString(), DataManager, null, jsonResult["filterParams"].ToString());
         }
-
+        
         [System.Web.Http.ActionName("Paging")]
         [System.Web.Http.HttpPost]
         public Dictionary<string, object> Paging(Dictionary<string, object> jsonResult)

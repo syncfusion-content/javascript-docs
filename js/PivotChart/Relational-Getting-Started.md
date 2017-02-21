@@ -74,7 +74,7 @@ Now set the JSON data to the **"data"** property available inside the **"dataSou
 
     //....
     <body>
-        <div id="PivotChart1"></div>
+        <div id="PivotChart1" style="width: 800px; height: 350px"></div>
         <script type="text/javascript">
 
             //Datasource

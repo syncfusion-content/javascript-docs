@@ -87,12 +87,12 @@ Initialize the OLAP data source for PivotTreeMap widget as shown below.
     }); 
 </script>
 
-<! --Tooltip labels can be localized here-->
-<script id="tooltipTemplate" type="application/jsrender">
+    <!--Tooltip labels can be localized here-->
+    <script id="tooltipTemplate" type="application/jsrender">
         <div style="background:White; color:black; font-size:12px; font-weight:normal; border: 1px solid #4D4D4D; white-space: nowrap;border-radius: 2px; margin-right: 25px; min-width: 110px;padding-right: 5px; padding-left: 5px; padding-bottom: 2px ;width: auto; height: auto;">
             <div>Measure(s) : {{:~Measures(#data)}}</div><div>Row : {{:~Row(#data)}}</div><div>Column : {{:~Column(#data)}}</div><div>Value : {{:~Value(#data)}}</div>
         </div>
-</script>  
+    </script>   
 </body> 
 </html>
 
@@ -161,12 +161,12 @@ In-order to initialize a PivotTreeMap widget, first you need to define a â€œdivâ
                 }); 
             </script>
 
-            <! --Tooltip labels can be localized here-->
-            <script id="tooltipTemplate" type="application/jsrender">
-                <div style="background:White; color:black; font-size:12px; font-weight:normal; border: 1px solid #4D4D4D; white-space: nowrap;border-radius: 2px; margin-right: 25px; min-width: 110px;padding-right: 5px; padding-left: 5px; padding-bottom: 2px ;width: auto; height: auto;">
-                    <div>Measure(s) : {{:~Measures(#data)}}</div><div>Row : {{:~Row(#data)}}</div><div>Column : {{:~Column(#data)}}</div><div>Value : {{:~Value(#data)}}</div>
-                </div>
-            </script>  
+        <!--Tooltip labels can be localized here-->
+        <script id="tooltipTemplate" type="application/jsrender">
+            <div style="background:White; color:black; font-size:12px; font-weight:normal; border: 1px solid #4D4D4D; white-space: nowrap;border-radius: 2px; margin-right: 25px; min-width: 110px;padding-right: 5px; padding-left: 5px; padding-bottom: 2px ;width: auto; height: auto;">
+                <div>Measure(s) : {{:~Measures(#data)}}</div><div>Row : {{:~Row(#data)}}</div><div>Column : {{:~Column(#data)}}</div><div>Value : {{:~Value(#data)}}</div>
+            </div>
+        </script>   
         </div> 
     </form>
 </body> 
@@ -241,9 +241,6 @@ N> When you have installed any version of SQL Server Analysis Service (SSAS) or 
 * Syncfusion.Linq.Base
 * Syncfusion.Olap.Base
 * Syncfusion.PivotAnalysis.Base
-* Syncfusion.XlsIO.Base
-* Syncfusion.Pdf.Base
-* Syncfusion.DocIO.Base
 * Syncfusion.EJ
 * Syncfusion.EJ.Pivot
 
