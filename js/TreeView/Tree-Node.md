@@ -70,7 +70,7 @@ Selected state of the node<br/><br/></td></tr>
 
 TreeView provides a set of options to configure all its properties by setting and getting values at initialization or dynamically.
 
-To get the node value, you can use [getNode](http://help.syncfusion.com/api/js/ejtreeview#methods:getnode) method as shown in the below code example, in which on button click action the node value has retrieved.
+To get the node value, you can use [getNode](https://help.syncfusion.com/api/js/ejtreeview#methods:getnode) method as shown in the below code example, in which on button click action the node value has retrieved.
 
 {% highlight js %}
 
@@ -129,7 +129,7 @@ To get the node value, you can use [getNode](http://help.syncfusion.com/api/js/e
 
 N>  Existing TreeView instance can be created by [jQuery.data()](http://api.jquery.com/jQuery.data/#) and you can control the API’s of TreeView behavior.
 
-To edit the node text, you can use [updateText](http://help.syncfusion.com/api/js/ejtreeview#methods:updatetext) method as shown below code example. 
+To edit the node text, you can use [updateText](https://help.syncfusion.com/api/js/ejtreeview#methods:updatetext) method as shown below code example. 
 
 {% highlight js %}
 
@@ -151,7 +151,7 @@ To edit the node text, you can use [updateText](http://help.syncfusion.com/api/j
 
 ## Get Parent Node
 
-To get current parent node of a particular node, you can use the [getParent](http://help.syncfusion.com/api/js/ejtreeview#methods:getparent) method as shown in below code example 
+To get current parent node of a particular node, you can use the [getParent](https://help.syncfusion.com/api/js/ejtreeview#methods:getparent) method as shown in below code example 
 
 {% highlight js %}
 
@@ -170,7 +170,7 @@ To get current parent node of a particular node, you can use the [getParent](htt
 
 ## Get Node Index
 
-To get node index you can use the [getNodeIndex](http://help.syncfusion.com/api/js/ejtreeview#methods:getnodeindex) as shown in below code example 
+To get node index you can use the [getNodeIndex](https://help.syncfusion.com/api/js/ejtreeview#methods:getnodeindex) as shown in below code example 
 
 {% highlight js %}
 
@@ -196,7 +196,7 @@ You can perform following operation in tree nodes and the modified node values c
 
 ### Add or Remove nodes
 
-To add/remove nodes programmatically, use [addNode](http://help.syncfusion.com/api/js/ejtreeview#methods:addnode) and [removeNode](http://help.syncfusion.com/api/js/ejtreeview#methods:removenode) methods of the TreeView.
+To add/remove nodes programmatically, use [addNode](https://help.syncfusion.com/api/js/ejtreeview#methods:addnode) and [removeNode](https://help.syncfusion.com/api/js/ejtreeview#methods:removenode) methods of the TreeView.
 
 {% highlight js %}
 
@@ -218,7 +218,7 @@ To add/remove nodes programmatically, use [addNode](http://help.syncfusion.com/a
 
 {% endhighlight %}
 
-You can able to add a new node after or before specific TreeView node by using [insertAfter](http://help.syncfusion.com/api/js/ejtreeview#methods:insertafter) and [insertBefore](http://help.syncfusion.com/api/js/ejtreeview#methods:insertbefore) methods.
+You can able to add a new node after or before specific TreeView node by using [insertAfter](https://help.syncfusion.com/api/js/ejtreeview#methods:insertafter) and [insertBefore](https://help.syncfusion.com/api/js/ejtreeview#methods:insertbefore) methods.
 
 {% highlight js %}
 
@@ -248,7 +248,7 @@ You can able to add a new node after or before specific TreeView node by using [
 
 ### Move node
 
-You can also achieve cut and paste operation by using [moveNode](http://help.syncfusion.com/api/js/ejtreeview#methods:movenode) methods.
+You can also achieve cut and paste operation by using [moveNode](https://help.syncfusion.com/api/js/ejtreeview#methods:movenode) methods.
 
 {% highlight js %}
 
@@ -277,26 +277,26 @@ Methods</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{'[expandNode](http://help.syncfusion.com/api/js/ejtreeview#methods:expandnode)'| markdownify }} <br/><br/></td><td>
+{{'[expandNode](https://help.syncfusion.com/api/js/ejtreeview#methods:expandnode)'| markdownify }} <br/><br/></td><td>
 Expands the node with specified id<br/><br/></td></tr>
 <tr>
 <td>
-{{'[collapseNode](http://help.syncfusion.com/api/js/ejtreeview#methods:collapsenode)'| markdownify }}<br/><br/></td><td>
+{{'[collapseNode](https://help.syncfusion.com/api/js/ejtreeview#methods:collapsenode)'| markdownify }}<br/><br/></td><td>
 Collapse the node with specified id <br/><br/></td></tr>
 <tr>
 <td>
-{{'[expandAll](http://help.syncfusion.com/api/js/ejtreeview#methods:expandall)'| markdownify }}<br/><br/></td><td>
+{{'[expandAll](https://help.syncfusion.com/api/js/ejtreeview#methods:expandall)'| markdownify }}<br/><br/></td><td>
 Expands all the node<br/><br/></td></tr>
 <tr>
 <td>
-{{'[collapseAll](http://help.syncfusion.com/api/js/ejtreeview#methods:collapseall)'| markdownify }}<br/><br/></td><td>
+{{'[collapseAll](https://help.syncfusion.com/api/js/ejtreeview#methods:collapseall)'| markdownify }}<br/><br/></td><td>
 Collapse all the node<br/><br/></td></tr>
 </table>
-Also you can get all the expanded nodes index in tree by using [getExpandedNodesIndex](http://help.syncfusion.com/api/js/ejtreeview#methods:getexpandednodesindex) method, which returns the array of expanded node indices. 
+Also you can get all the expanded nodes index in tree by using [getExpandedNodesIndex](https://help.syncfusion.com/api/js/ejtreeview#methods:getexpandednodesindex) method, which returns the array of expanded node indices. 
 
 ### Prevent multiple node expand
 
-You can able to prevent multiple expand of TreeView nodes by specifying [enableMultipleExpand](http://help.syncfusion.com/api/js/ejtreeview#members:enablemultipleexpand) as false.
+You can able to prevent multiple expand of TreeView nodes by specifying [enableMultipleExpand](https://help.syncfusion.com/api/js/ejtreeview#members:enablemultipleexpand) as false.
 
 For example, if you want to allow only one node to be expanded in TreeView at a time. Refer the sample [here](http://jsplayground.syncfusion.com/zdtud5yw#).
 
@@ -332,7 +332,7 @@ For example, if you want to allow only one node to be expanded in TreeView at a 
 
 ### Get updated node collection
 
-You can get the updated node values after manipulating or editing the node of TreeView to save at server end using [getTreeData](http://help.syncfusion.com/api/js/ejtreeview#methods:gettreedata) method. It returns the JSON data represented as in tree with modified structure.
+You can get the updated node values after manipulating or editing the node of TreeView to save at server end using [getTreeData](https://help.syncfusion.com/api/js/ejtreeview#methods:gettreedata) method. It returns the JSON data represented as in tree with modified structure.
 
 {% highlight js %}
 
@@ -352,7 +352,7 @@ You can get the updated node values after manipulating or editing the node of Tr
 
 ## Editing
 
-You can directly edit the tree node’s text in-place by double-click on the tree node or select the tree node and press F2 key. The editing works only if the [allowEditing](http://help.syncfusion.com/api/js/ejtreeview#members:allowediting) property is true in TreeView control. When editing is completed by focus out or “enter” key press, the modified node’s text is saved automatically.
+You can directly edit the tree node’s text in-place by double-click on the tree node or select the tree node and press F2 key. The editing works only if the [allowEditing](https://help.syncfusion.com/api/js/ejtreeview#members:allowediting) property is true in TreeView control. When editing is completed by focus out or “enter” key press, the modified node’s text is saved automatically.
 
 {% highlight js %}
 
@@ -386,7 +386,7 @@ You can directly edit the tree node’s text in-place by double-click on the tre
 
 ## Selection
 
-You can select a specific node by setting index value in [selectedNode](http://help.syncfusion.com/api/js/ejtreeview#members:selectednode) property or passing node’s id/element to [selectNode](http://help.syncfusion.com/api/js/ejtreeview#methods:selectnode) method. 
+You can select a specific node by setting index value in [selectedNode](https://help.syncfusion.com/api/js/ejtreeview#members:selectednode) property or passing node’s id/element to [selectNode](https://help.syncfusion.com/api/js/ejtreeview#methods:selectnode) method. 
 
 {% highlight js %}
 
@@ -432,7 +432,7 @@ You can select a specific node by setting index value in [selectedNode](http://h
 
 ## Ensure Visibility
 
-You can ensure the specified tree node is visible by using [ensureVisible](http://help.syncfusion.com/api/js/ejtreeview#methods:ensurevisible) method, which expands tree nodes and scrolls the TreeView control as necessary. 
+You can ensure the specified tree node is visible by using [ensureVisible](https://help.syncfusion.com/api/js/ejtreeview#methods:ensurevisible) method, which expands tree nodes and scrolls the TreeView control as necessary. 
 
 {% highlight js %}
 

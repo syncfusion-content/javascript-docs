@@ -10,7 +10,7 @@ documentation: ug
 
 # Keyboard Interaction
 
-TreeView support all possible keyboard interaction and it can be allowed by specifying [allowKeyboardNavigation](http://help.syncfusion.com/api/js/ejtreeview#members:allowkeyboardnavigation) as true.
+TreeView support all possible keyboard interaction and it can be allowed by specifying [allowKeyboardNavigation](https://help.syncfusion.com/api/js/ejtreeview#members:allowkeyboardnavigation) as true.
 
 You can use the keyboard short cut keys as an alternative to the mouse and interact with TreeView.
 

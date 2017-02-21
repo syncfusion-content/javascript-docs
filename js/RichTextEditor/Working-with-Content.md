@@ -14,7 +14,7 @@ The editor creates the iframe element as the content area on control initializat
 
 ## Iframe Attributes
 
-The editor allows you to passing an additional attributes to body tag of a &lt; iframe &gt; element using [iframeAttributes](http://help.syncfusion.com/api/js/ejrte#members:iframeattributes) property. The property contains name/value pairs in string format, it is used to override the default appearance of the content area. 
+The editor allows you to passing an additional attributes to body tag of a &lt; iframe &gt; element using [iframeAttributes](https://help.syncfusion.com/api/js/ejrte#members:iframeattributes) property. The property contains name/value pairs in string format, it is used to override the default appearance of the content area. 
 
 N> the content area’s font, color, margins, and background can be overridden using iframeAttributes property. You can specifies the editable behavior (content editable) of the content also in this property.
 
@@ -91,7 +91,7 @@ N> Our RTE control editor section is an iframe. An iframe has another scope, so 
 
 ## Content Editable
 
-The editor provides option to control the editable behavior using [allowEditing](http://help.syncfusion.com/api/js/ejrte#members:allowediting) property. When the allowEditing property is set to false, the editor disables its editing functionality. 
+The editor provides option to control the editable behavior using [allowEditing](https://help.syncfusion.com/api/js/ejrte#members:allowediting) property. When the allowEditing property is set to false, the editor disables its editing functionality. 
 
 {% highlight html %}
 
@@ -173,7 +173,7 @@ This example shows how to encode the HTML content before form submit event.
 
 ## Refresh
 
-When you move the editor’s wrapper element into another DOM element, the editor needs to be reinitialized by the [refresh](http://help.syncfusion.com/api/js/ejrte#methods:refresh) method to retain its content. The method reload the content area and rebind the events of the editor. 
+When you move the editor’s wrapper element into another DOM element, the editor needs to be reinitialized by the [refresh](https://help.syncfusion.com/api/js/ejrte#methods:refresh) method to retain its content. The method reload the content area and rebind the events of the editor. 
 
 {% highlight html %}
 
@@ -205,7 +205,7 @@ When you move the editor’s wrapper element into another DOM element, the edito
 
 ## Persistence
 
-The editor is capable to persist its content with HTML format. By default, the persistence support is disabled in the editor. When you set the [enablePersistence](http://help.syncfusion.com/api/js/ejrte#members:enablepersistence) property to true, the persistence will be enabled in the editor.
+The editor is capable to persist its content with HTML format. By default, the persistence support is disabled in the editor. When you set the [enablePersistence](https://help.syncfusion.com/api/js/ejrte#members:enablepersistence) property to true, the persistence will be enabled in the editor.
 
 N>  [local storage](http://www.w3schools.com/html/html5_webstorage.asp#) is not supported below ie9 version, therefore persistence support is fallback to [cookie](http://www.w3schools.com/js/js_cookies.asp#).
 

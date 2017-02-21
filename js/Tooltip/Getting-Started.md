@@ -64,9 +64,9 @@ To get started, you can use the `ej.web.all.min.js` file that encapsulates all t
 {% endhighlight %}
 
 
-N> In production, we highly recommend you to use our [custom script generator](http://helpjs.syncfusion.com/js/include-only-the-needed-widgets)  to create custom script file with required controls and its dependencies only. Also to reduce the file size further please use [GZip compression](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/optimize-encoding-and-transfer?hl=en) in your server.
+N> In production, we highly recommend you to use our [custom script generator](https://help.syncfusion.com/js/include-only-the-needed-widgets)  to create custom script file with required controls and its dependencies only. Also to reduce the file size further please use [GZip compression](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/optimize-encoding-and-transfer?hl=en) in your server.
 
-For themes, you can use the `ej.web.all.min.css` CDN link from the code example given. To add the themes in your application, please refer to [this link](http://help.syncfusion.com/js/theming-in-essential-javascript-components).
+For themes, you can use the `ej.web.all.min.css` CDN link from the code example given. To add the themes in your application, please refer to [this link](https://help.syncfusion.com/js/theming-in-essential-javascript-components).
 
 ## Create a Tooltip
 
@@ -121,7 +121,7 @@ Apply the following style sheet
 
 ## Setting Dimensions
 
-Tooltip dimensions can be set using [width](http://help.syncfusion.com/api/js/ejtooltip#members:width) and [height](http://help.syncfusion.com/api/js/ejtooltip#members:height) API.
+Tooltip dimensions can be set using [width](https://help.syncfusion.com/api/js/ejtooltip#members:width) and [height](https://help.syncfusion.com/api/js/ejtooltip#members:height) API.
 
 {% highlight html %}
  

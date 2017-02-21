@@ -15,27 +15,27 @@ The ListBox widget has a field property (object) which holds the properties to m
 
 The field object contains the following properties.
 
-* [text](http://help.syncfusion.com/api/js/ejlistbox#members:fields)
+* [text](https://help.syncfusion.com/api/js/ejlistbox#members:fields)
 
-* [toolTipText](http://helpjs.syncfusion.com/api/js/ejlistbox#members:fields)
+* [toolTipText](https://help.syncfusion.com/api/js/ejlistbox#members:fields)
 
-* [id](http://help.syncfusion.com/api/js/ejlistbox#members:fields)
+* [id](https://help.syncfusion.com/api/js/ejlistbox#members:fields)
 
-* [selectBy](http://help.syncfusion.com/api/js/ejlistbox#members:fields)
+* [selectBy](https://help.syncfusion.com/api/js/ejlistbox#members:fields)
 
-* [groupBy](http://help.syncfusion.com/api/js/ejlistbox#members:fields)
+* [groupBy](https://help.syncfusion.com/api/js/ejlistbox#members:fields)
 
-* [checkBy](http://help.syncfusion.com/api/js/ejlistbox#members:fields)
+* [checkBy](https://help.syncfusion.com/api/js/ejlistbox#members:fields)
 
-* [tableName](http://help.syncfusion.com/api/js/ejlistbox#members:fields)
+* [tableName](https://help.syncfusion.com/api/js/ejlistbox#members:fields)
 
-* [imageUrl](http://help.syncfusion.com/api/js/ejlistbox#members:fields)
+* [imageUrl](https://help.syncfusion.com/api/js/ejlistbox#members:fields)
 
-* [imageAttributes](http://help.syncfusion.com/api/js/ejlistbox#members:fields)
+* [imageAttributes](https://help.syncfusion.com/api/js/ejlistbox#members:fields)
 
-* [spriteCssClass](http://help.syncfusion.com/api/js/ejlistbox#members:fields)
+* [spriteCssClass](https://help.syncfusion.com/api/js/ejlistbox#members:fields)
 
-* [htmlAttributes](http://help.syncfusion.com/api/js/ejlistbox#members:fields)
+* [htmlAttributes](https://help.syncfusion.com/api/js/ejlistbox#members:fields)
 
 
 ## Local data
@@ -80,9 +80,9 @@ jQuery(function ($)
 
 ### OData
 
-[OData](http://helpjs.syncfusion.com/js/datamanager/data-binding) is a standardized protocol for creating and consuming the data. You can retrieve data from OData service by using [ej.DataManager](http://helpjs.syncfusion.com/js/datamanager/getting-started).
+[OData](https://help.syncfusion.com/js/datamanager/data-binding) is a standardized protocol for creating and consuming the data. You can retrieve data from OData service by using [ej.DataManager](https://help.syncfusion.com/js/datamanager/getting-started).
 
-Here the CustomerID field is mapped with text property of the field object. The queries can be created using [ej.Query()](http://helpjs.syncfusion.com/js/datamanager/query).
+Here the CustomerID field is mapped with text property of the field object. The queries can be created using [ej.Query()](https://help.syncfusion.com/js/datamanager/query).
 
 {% highlight html %}
 
@@ -116,7 +116,7 @@ Here the CustomerID field is mapped with text property of the field object. The 
 
 
 
-[ASP.NET Web API](https://msdn.microsoft.com/en-us/library/hh833994%28v=vs.108%29.aspx) is a Framework for building HTTP services. You can retrieve data from ASP.NET Web API by using [ej.DataManager](http://helpjs.syncfusion.com/js/datamanager/getting-started).
+[ASP.NET Web API](https://msdn.microsoft.com/en-us/library/hh833994%28v=vs.108%29.aspx) is a Framework for building HTTP services. You can retrieve data from ASP.NET Web API by using [ej.DataManager](https://help.syncfusion.com/js/datamanager/getting-started).
 
 
 
@@ -146,7 +146,7 @@ Here the CustomerID field is mapped with text property of the field object. The 
 
 N>  In the above data manager configuration, “crossDomain” must be set to true to access the data from Web API.
 
- {% seealso %} [Cross domain](http://help.syncfusion.com/js/grid/data-binding) {% endseealso %}
+ {% seealso %} [Cross domain](https://help.syncfusion.com/js/grid/data-binding) {% endseealso %}
 
 ![Alt text](Databinding_images\Databinding_img3.png)
 
@@ -252,7 +252,7 @@ N> The “itemRequestCount” property will work only when “virtualScrollMode�
 
  In remote binding, the server might not return data sometimes due to various reasons. In such cases we need to handle the error properly. We can handle it using the “actionFailure” event. 
 
-{% seealso %} [actionComplete](http://help.syncfusion.com/api/js/ejlistbox#events:actioncomplete) and [actionSuccess](http://help.syncfusion.com/api/js/ejlistbox#events:actionsuccess) {% endseealso %}
+{% seealso %} [actionComplete](https://help.syncfusion.com/api/js/ejlistbox#events:actioncomplete) and [actionSuccess](https://help.syncfusion.com/api/js/ejlistbox#events:actionsuccess) {% endseealso %}
 
 
 

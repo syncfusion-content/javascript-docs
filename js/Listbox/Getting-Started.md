@@ -34,7 +34,7 @@ Create a new HTML file and include the below code
 
 
 
-Add link to the CSS file from the specific [theme](http://help.syncfusion.com/js/theming-in-essential-javascript-components) folder to your HTML file within the head section. Refer the built-in theme which is mentioned [here](http://help.syncfusion.com/js/theming-in-essential-javascript-components). 
+Add link to the CSS file from the specific [theme](https://help.syncfusion.com/js/theming-in-essential-javascript-components) folder to your HTML file within the head section. Refer the built-in theme which is mentioned [here](https://help.syncfusion.com/js/theming-in-essential-javascript-components). 
 
 {% highlight html %}
 
@@ -47,7 +47,7 @@ Add link to the CSS file from the specific [theme](http://help.syncfusion.com/js
 
 
 
-Add links to the [CDN](http://help.syncfusion.com/js/cdn) Script files with dependencies to the head section.
+Add links to the [CDN](https://help.syncfusion.com/js/cdn) Script files with dependencies to the head section.
 
 {% highlight html %}
 
@@ -62,7 +62,7 @@ Add links to the [CDN](http://help.syncfusion.com/js/cdn) Script files with depe
 
 ### See Also
 
-[Custom Script Generator](http://help.syncfusion.com/js/include-only-the-needed-widgets)
+[Custom Script Generator](https://help.syncfusion.com/js/include-only-the-needed-widgets)
 
 
  N> To reduce the file size further please use  [GZip](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/optimize-encoding-and-transfer?hl=en) compression in your server.
@@ -115,7 +115,7 @@ Initialize the ListBox widget as below.
 
 We can populate data in the ListBox widget using “datasource” and “fields” properties. 
 
-{% seealso %} [Data binding](http://help.syncfusion.com/js/listbox/databinding). {% endseealso %}
+{% seealso %} [Data binding](https://help.syncfusion.com/js/listbox/databinding). {% endseealso %}
 
 {% highlight html %}
 
@@ -161,7 +161,7 @@ We can populate data in the ListBox widget using “datasource” and “fields�
 
 The ListBox widget supports item selection. 
 
-{% seealso %} [Selection](http://help.syncfusion.com/js/listbox/selection) {% endseealso %}
+{% seealso %} [Selection](https://help.syncfusion.com/js/listbox/selection) {% endseealso %}
 
 {% highlight javascript %}
 

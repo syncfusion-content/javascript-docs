@@ -91,6 +91,8 @@ The following code example shows how to define template for taskbars in Gantt.
 
 The DOM structure and class names mentioned in the above code snippet is mandatory for providing the editing support in custom templates.
 
+[Click](http://js.syncfusion.com/demos/web/#!/bootstrap/gantt/customizations/taskbartemplate) here to view the online demo sample for Taskbar templates in Gantt.
+
 The following screenshot shows the template for taskbars in Gantt.
 
 ![](/js/Gantt/Customization_images/Customization_img1.png)
@@ -182,6 +184,8 @@ The following code example explains how to map custom templates to task labels.
     });
 </script>
 {% endhighlight %}
+
+You can find the online demo sample for task label templates in Gantt [here](http://js.syncfusion.com/demos/web/#!/bootstrap/gantt/customizations/tasklabeltemplate)
 
 The following screenshot shows Gantt with task label templates.
 
@@ -305,3 +309,4 @@ TreeGrid part tooltip can also be customized using [cellTooltipTemplate](/api/js
 {% endhighlight %}
 ![](/js/Gantt/Customization_images/Customization_img5.png)
 
+You can find the online demo sample for tooltip templates for taskbars [here](http://js.syncfusion.com/demos/web/#!/bootstrap/gantt/customizations/tooltiptemplate)

@@ -10,9 +10,9 @@ documentation: ug
 
 ## Auto wrap 
 
-Auto wrap enables the Grid to wrap cell content or header content to next line when the content exceeds the boundary of the cell width. To enable auto wrap, set [`allowTextWrap`](http://help.syncfusion.com/api/js/ejgrid#members:allowtextwrap "allowTextWrap") property as `true`. 
+Auto wrap enables the Grid to wrap cell content or header content to next line when the content exceeds the boundary of the cell width. To enable auto wrap, set [`allowTextWrap`](https://help.syncfusion.com/api/js/ejgrid#members:allowtextwrap "allowTextWrap") property as `true`. 
 
-We can specify the mode of auto wrap using [`wrapMode`](http://help.syncfusion.com/api/js/ejgrid#members:textwrapsettings-wrapmode "wrapMode") property of the [`textWrapSettings`](http://help.syncfusion.com/api/js/ejgrid#members:textWrapSettings "textWrapSettings"). 
+We can specify the mode of auto wrap using [`wrapMode`](https://help.syncfusion.com/api/js/ejgrid#members:textwrapsettings-wrapmode "wrapMode") property of the [`textWrapSettings`](https://help.syncfusion.com/api/js/ejgrid#members:textWrapSettings "textWrapSettings"). 
 
 Three types of wrapMode are available and they are,
   
@@ -20,15 +20,15 @@ Three types of wrapMode are available and they are,
  2. Header
  3. Content 
  
-N> 1. By default the [`wrapMode`](http://help.syncfusion.com/api/js/ejgrid#members:textwrapsettings-wrapmode "wrapMode") will be set as `both`. 
+N> 1. By default the [`wrapMode`](https://help.syncfusion.com/api/js/ejgrid#members:textwrapsettings-wrapmode "wrapMode") will be set as `both`. 
 
-N> 2. While using [`textWrapSettings`](http://help.syncfusion.com/api/js/ejgrid#members:textWrapSettings "textWrapSettings") then it is must to set [`allowTextWrap`](http://help.syncfusion.com/api/js/ejgrid#members:allowtextwrap "allowTextWrap") as `true`.
+N> 2. While using [`textWrapSettings`](https://help.syncfusion.com/api/js/ejgrid#members:textWrapSettings "textWrapSettings") then it is must to set [`allowTextWrap`](https://help.syncfusion.com/api/js/ejgrid#members:allowtextwrap "allowTextWrap") as `true`.
 
-N> 3. For [`wrapMode`](http://help.syncfusion.com/api/js/ejgrid#members:textwrapsettings-wrapmode "wrapMode") property you can assign either `string` value (`both`) or `enum` value (`ej.Grid.WrapMode.Both`).
+N> 3. For [`wrapMode`](https://help.syncfusion.com/api/js/ejgrid#members:textwrapsettings-wrapmode "wrapMode") property you can assign either `string` value (`both`) or `enum` value (`ej.Grid.WrapMode.Both`).
  
 ## Both
 
-When [`wrapMode`](http://help.syncfusion.com/api/js/ejgrid#members:textwrapsettings-wrapmode "wrapMode") of [`textWrapSettings`](http://help.syncfusion.com/api/js/ejgrid#members:textWrapSettings "textWrapSettings") property set as `both` then the auto wrap will be enable for both grid content and header. 
+When [`wrapMode`](https://help.syncfusion.com/api/js/ejgrid#members:textwrapsettings-wrapmode "wrapMode") of [`textWrapSettings`](https://help.syncfusion.com/api/js/ejgrid#members:textWrapSettings "textWrapSettings") property set as `both` then the auto wrap will be enable for both grid content and header. 
 
 The following code example describes the above behavior.
 
@@ -63,7 +63,7 @@ The following output is displayed as a result of the above code example.
 
 ## Header
 
-When [`wrapMode`](http://help.syncfusion.com/api/js/ejgrid#members:textwrapsettings-wrapmode "wrapMode") of [`textWrapSettings`](http://help.syncfusion.com/api/js/ejgrid#members:textWrapSettings "textWrapSettings") property set as `header` then the auto wrap will be enable only for grid header alone. 
+When [`wrapMode`](https://help.syncfusion.com/api/js/ejgrid#members:textwrapsettings-wrapmode "wrapMode") of [`textWrapSettings`](https://help.syncfusion.com/api/js/ejgrid#members:textWrapSettings "textWrapSettings") property set as `header` then the auto wrap will be enable only for grid header alone. 
 
 The following code example describes the above behavior.
 
@@ -98,7 +98,7 @@ The following output is displayed as a result of the above code example.
 
 ## Content
 
-When [`wrapMode`](http://help.syncfusion.com/api/js/ejgrid#members:textwrapsettings-wrapmode "wrapMode") of [`textWrapSettings`](http://help.syncfusion.com/api/js/ejgrid#members:textWrapSettings "textWrapSettings") property set as `content` then the auto wrap will be enable only for grid content alone. 
+When [`wrapMode`](https://help.syncfusion.com/api/js/ejgrid#members:textwrapsettings-wrapmode "wrapMode") of [`textWrapSettings`](https://help.syncfusion.com/api/js/ejgrid#members:textWrapSettings "textWrapSettings") property set as `content` then the auto wrap will be enable only for grid content alone. 
 
 The following code example describes the above behavior.
 
@@ -133,9 +133,9 @@ The following output is displayed as a result of the above code example.
 
 ## Cell Merging
 
-The Grid has options to merge the Grid cells based on the required conditions. This can be enabled by setting [`allowCellMerging`](http://help.syncfusion.com/api/js/ejgrid#members:allowcellmerging "allowCellMerging") property as `true` and the merge conditions can be defined in [`mergeCellInfo`](http://help.syncfusion.com/api/js/ejgrid#events:mergecellinfo "mergeCellInfo") event. In this event, you can get the column details and data of that particular row and column which is helpful in defining conditions. 
+The Grid has options to merge the Grid cells based on the required conditions. This can be enabled by setting [`allowCellMerging`](https://help.syncfusion.com/api/js/ejgrid#members:allowcellmerging "allowCellMerging") property as `true` and the merge conditions can be defined in [`mergeCellInfo`](https://help.syncfusion.com/api/js/ejgrid#events:mergecellinfo "mergeCellInfo") event. In this event, you can get the column details and data of that particular row and column which is helpful in defining conditions. 
 
-You can merge the rows and cells of grid, using `rowMerge`, `colMerge` and `merge` functions available in [`mergeCellInfo`](http://help.syncfusion.com/api/js/ejgrid#events:mergecellinfo "mergeCellInfo") event's argument.
+You can merge the rows and cells of grid, using `rowMerge`, `colMerge` and `merge` functions available in [`mergeCellInfo`](https://help.syncfusion.com/api/js/ejgrid#events:mergecellinfo "mergeCellInfo") event's argument.
 
 The following code example describes the above behavior.
 
@@ -172,7 +172,7 @@ The following output is displayed as a result of the above code example.
 
 ## Custom Attribute
 
-You can add [custom attribute](http://help.syncfusion.com/api/js/ejgrid#members:columns-customattributes "custom attribute") for particular column `td` element by using [`customAttributes`](http://help.syncfusion.com/api/js/ejgrid#members:columns-customattributes "customAttributes") property of the column.
+You can add [custom attribute](https://help.syncfusion.com/api/js/ejgrid#members:columns-customattributes "custom attribute") for particular column `td` element by using [`customAttributes`](https://help.syncfusion.com/api/js/ejgrid#members:columns-customattributes "customAttributes") property of the column.
 
 Based on custom attribute you can customize the style and appearance of the `td` element or handling jQuery functionalities. 
 
@@ -208,7 +208,7 @@ The following output is displayed as a result of the above code example.
 
 ## Displaying HTML content
 
-This will helps you to show actual [HTML](http://help.syncfusion.com/api/js/ejgrid#members:columns-disablehtmlencode "HTML") value in grid content and header. To disable HTML code, set [`disableHtmlEncode`](http://help.syncfusion.com/api/js/ejgrid#members:columns-disablehtmlencode "disableHtmlEncode") property of [`columns`](http://help.syncfusion.com/api/js/ejgrid#members:columns "columns") as true. 
+This will helps you to show actual [HTML](https://help.syncfusion.com/api/js/ejgrid#members:columns-disablehtmlencode "HTML") value in grid content and header. To disable HTML code, set [`disableHtmlEncode`](https://help.syncfusion.com/api/js/ejgrid#members:columns-disablehtmlencode "disableHtmlEncode") property of [`columns`](https://help.syncfusion.com/api/js/ejgrid#members:columns "columns") as true. 
 
 The following code example describes the above behavior.
 

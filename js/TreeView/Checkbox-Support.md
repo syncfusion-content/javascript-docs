@@ -9,11 +9,11 @@ documentation: ug
 
 # Checkboxes
 
-TreeView consists of in-build checkbox option and it can be displayed to the left of the tree node by setting the [showCheckbox](http://help.syncfusion.com/api/js/ejtreeview#members:showcheckbox) property as true. It allows you to select more than one node at a time. 
+TreeView consists of in-build checkbox option and it can be displayed to the left of the tree node by setting the [showCheckbox](https://help.syncfusion.com/api/js/ejtreeview#members:showcheckbox) property as true. It allows you to select more than one node at a time. 
 
 ## Indeterminate Checkboxes
 
-TreeView supports tristate checkboxes in addition with standard two state checkboxes. By default TreeView has been enabled with tristate in checkboxes. You can enable 2-state checkboxes by using [autoCheckParentNode](http://help.syncfusion.com/api/js/ejtreeview#members:autocheckparentnode) as false.
+TreeView supports tristate checkboxes in addition with standard two state checkboxes. By default TreeView has been enabled with tristate in checkboxes. You can enable 2-state checkboxes by using [autoCheckParentNode](https://help.syncfusion.com/api/js/ejtreeview#members:autocheckparentnode) as false.
 
 {% highlight html %}
 
@@ -68,7 +68,7 @@ TreeView supports tristate checkboxes in addition with standard two state checkb
 
 ## Auto Checkable
 
-By default checkbox state of child nodes depends up on parent node checkbox state and also parent node state gets updated based on child nodes state. You can turn off this option by setting [autoCheck](http://help.syncfusion.com/api/js/ejtreeview#members:autocheck) as false to make independent parent and child nodes checkboxes.
+By default checkbox state of child nodes depends up on parent node checkbox state and also parent node state gets updated based on child nodes state. You can turn off this option by setting [autoCheck](https://help.syncfusion.com/api/js/ejtreeview#members:autocheck) as false to make independent parent and child nodes checkboxes.
 
 {% highlight html %}
 
@@ -123,7 +123,7 @@ By default checkbox state of child nodes depends up on parent node checkbox stat
 
 ## Check or Uncheck Node
 
-Tree node can be checked or unchecked using [checkNode](http://help.syncfusion.com/api/js/ejtreeview#methods:checknode) and [uncheckNode](http://help.syncfusion.com/api/js/ejtreeview#methods:unchecknode) methods while [showCheckbox](http://help.syncfusion.com/api/js/ejtreeview#members:showcheckbox) property is enabled in TreeView. [nodeCheck](http://help.syncfusion.com/api/js/ejtreeview#events:nodecheck) and [nodeUncheck](http://help.syncfusion.com/api/js/ejtreeview#events:nodeuncheck) event occurs based on checkbox state.
+Tree node can be checked or unchecked using [checkNode](https://help.syncfusion.com/api/js/ejtreeview#methods:checknode) and [uncheckNode](https://help.syncfusion.com/api/js/ejtreeview#methods:unchecknode) methods while [showCheckbox](https://help.syncfusion.com/api/js/ejtreeview#members:showcheckbox) property is enabled in TreeView. [nodeCheck](https://help.syncfusion.com/api/js/ejtreeview#events:nodecheck) and [nodeUncheck](https://help.syncfusion.com/api/js/ejtreeview#events:nodeuncheck) event occurs based on checkbox state.
 
 {% highlight js %}
 
@@ -146,7 +146,7 @@ Tree node can be checked or unchecked using [checkNode](http://help.syncfusion.c
 
 ## Get Checked Nodes
 
-To get checked nodes of TreeView, you can use [getCheckedNodes](http://help.syncfusion.com/api/js/ejtreeview#methods:getcheckednodes) method. It returns the collection of tree node.
+To get checked nodes of TreeView, you can use [getCheckedNodes](https://help.syncfusion.com/api/js/ejtreeview#methods:getcheckednodes) method. It returns the collection of tree node.
 
 {% highlight html %}
 

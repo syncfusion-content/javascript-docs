@@ -40,12 +40,12 @@ And the internal script dependencies of the RadialSlider widget are:
 
 For getting started you can use the ‘ej.web.all.min.js’ file, which encapsulates all the 'ej' controls and frameworks in one single file.<br/> 
 
-For themes, you can use the ‘ej.web.all.min.css’ CDN link from the snippet given. To add the themes in your application, please refer [this link](http://help.syncfusion.com/js/theming-in-essential-javascript-components#adding-specific-theme-to-your-application).
+For themes, you can use the ‘ej.web.all.min.css’ CDN link from the snippet given. To add the themes in your application, please refer [this link](https://help.syncfusion.com/js/theming-in-essential-javascript-components#adding-specific-theme-to-your-application).
 
 
 ## Preparing HTML document
 
-Create a new HTML file and add [CDN](http://help.syncfusion.com/js/cdn) links to the [JavaScript](http://help.syncfusion.com/js/dependencies) and [CSS](http://help.syncfusion.com/js/theming-in-essential-javascript-components) dependencies to your project.
+Create a new HTML file and add [CDN](https://help.syncfusion.com/js/cdn) links to the [JavaScript](https://help.syncfusion.com/js/dependencies) and [CSS](https://help.syncfusion.com/js/theming-in-essential-javascript-components) dependencies to your project.
 
 {% highlight html %}
 
@@ -88,7 +88,7 @@ Create a new HTML file and add [CDN](http://help.syncfusion.com/js/cdn) links to
 
 {% endhighlight %}
 
- N>  In production, we highly recommend you to use our [custom script generator](http://help.syncfusion.com/js/include-only-the-needed-widgets#) to create a custom script file with required controls and its dependencies only. Also to reduce the file size further please use [GZip compression](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/optimize-encoding-and-transfer?hl=en#text-compression-with-gzip) on your server. 
+ N>  In production, we highly recommend you to use our [custom script generator](https://help.syncfusion.com/js/include-only-the-needed-widgets#) to create a custom script file with required controls and its dependencies only. Also to reduce the file size further please use [GZip compression](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/optimize-encoding-and-transfer?hl=en#text-compression-with-gzip) on your server. 
 
 ## Create your first Radial Slider control in JavaScript
 

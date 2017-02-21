@@ -79,7 +79,7 @@ Syncfusion JavaScript NuGet can install once configured the package source. The 
 
 2. The NuGet Packages are listed which are available in package source location. Install the required packages to your application by clicking `Install` button.
 
-   N> NuGet packages can be install directly through the **command line** (Package Manager Console). Further details click [here](http://help.syncfusion.com/extension/syncfusion-nuget-packages/nuget-install-and-configuration#install-from-package-manager-console)
+   N> NuGet packages can be install directly through the **command line** (Package Manager Console). Further details click [here](https://help.syncfusion.com/extension/syncfusion-nuget-packages/nuget-install-and-configuration#install-from-package-manager-console)
    
 3. Now you can proceed with the installation. The steps involved in usage within your application is explained in the [Control Initialization](/js/control-initialization#configuring-and-installing-nuget-into-your-project) section.
 

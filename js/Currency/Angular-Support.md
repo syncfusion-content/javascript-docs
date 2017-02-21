@@ -22,7 +22,7 @@ Apply the plugin and property assigning to the CurrencyTextBox widget element th
 
 To know more details about the **Angular binding**, refer the following link location,
 
-<http://help.syncfusion.com/js/angularjs>
+<https://help.syncfusion.com/js/angularjs>
 
 The following example depicts the way to bind data to the **CurrencyTextBox** widget through **angular support**.
 

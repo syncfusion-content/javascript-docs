@@ -8,7 +8,7 @@ documentation: ug
 
 # Open and Save
 
-The native data format for Spreadsheet is JSON. You can load and store JSON data with Spreadsheet. In Spreadsheet we have [`saveAsJSON`](http://help.syncfusion.com/api/js/ejspreadsheet#methods:saveasjson "saveAsJSON") and [`loadFromJSON`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:loadfromjson "loadFromJSON") method which is used to save Spreadsheet as JSON and same JSON used to render Spreadsheet.
+The native data format for Spreadsheet is JSON. You can load and store JSON data with Spreadsheet. In Spreadsheet we have [`saveAsJSON`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:saveasjson "saveAsJSON") and [`loadFromJSON`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:loadfromjson "loadFromJSON") method which is used to save Spreadsheet as JSON and same JSON used to render Spreadsheet.
 
 {% highlight javascript %}
 
@@ -29,7 +29,7 @@ When you open an excel file, it needs to be read and converted to client side Sp
 
 ## Open 
 
-The Spreadsheet can open excel documents as like excel application with its data, style, format. To enable open option in Spreadsheet set [`allowImport`](http://help.syncfusion.com/api/js/ejspreadsheet#members:allowimport "allowImport") option as `true`. Since Spreadsheet uses a server side helper to open document, set [`importMapper`](http://help.syncfusion.com/api/js/ejspreadsheet#members:importsettings-importmapper "importMapper") in [`importSettings`](http://help.syncfusion.com/api/js/ejspreadsheet#members:importsettings "importSettings") to map server action.
+The Spreadsheet can open excel documents as like excel application with its data, style, format. To enable open option in Spreadsheet set [`allowImport`](https://help.syncfusion.com/api/js/ejspreadsheet#members:allowimport "allowImport") option as `true`. Since Spreadsheet uses a server side helper to open document, set [`importMapper`](https://help.syncfusion.com/api/js/ejspreadsheet#members:importsettings-importmapper "importMapper") in [`importSettings`](https://help.syncfusion.com/api/js/ejspreadsheet#members:importsettings "importSettings") to map server action.
 
 {% highlight html %}
 
@@ -64,7 +64,7 @@ You can open excel documents in following ways,
 ### Initial settings
 
 The Spreadsheet can load excel documents initially. The document can be specified either from client side or in server side.
-To load excel documents initially from client side, set [`importUrl`](http://help.syncfusion.com/api/js/ejspreadsheet#members:importsettings-importurl "importUrl") as excel file URL in [`importSettings`](http://help.syncfusion.com/api/js/ejspreadsheet#members:importsettings "importSettings"). The code snippets for document initial load on client side are as follows,
+To load excel documents initially from client side, set [`importUrl`](https://help.syncfusion.com/api/js/ejspreadsheet#members:importsettings-importurl "importUrl") as excel file URL in [`importSettings`](https://help.syncfusion.com/api/js/ejspreadsheet#members:importsettings "importSettings"). The code snippets for document initial load on client side are as follows,
 
 {% highlight html %}
 
@@ -84,7 +84,7 @@ $(function () {
 
 {% endhighlight %}
 
-To load excel documents initially from server side, set [`importOnLoad`](http://help.syncfusion.com/api/js/ejspreadsheet#members:importonload "importOnLoad") as `true` and assign document stream or URL in the server. The code snippets for document initial load from server side are as follows,
+To load excel documents initially from server side, set [`importOnLoad`](https://help.syncfusion.com/api/js/ejspreadsheet#members:importonload "importOnLoad") as `true` and assign document stream or URL in the server. The code snippets for document initial load from server side are as follows,
 
 {% highlight html %}
 
@@ -126,7 +126,7 @@ public class JSXLExportController : ApiController
 
 ### Methods
 
-To open an excel document, [`import`](http://help.syncfusion.com/api/js/ejspreadsheet#methods:import "import") method should be called with import options as a parameter. The Spreadsheet can open excel document as a stream or file URL.
+To open an excel document, [`import`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:import "import") method should be called with import options as a parameter. The Spreadsheet can open excel document as a stream or file URL.
 
 #### Stream
 Spreadsheet can open excel document as a stream and the document stream was either from the client side or it can be specified in server side. The code snippets to open excel document as a stream from client side are as follows,
@@ -196,7 +196,7 @@ You can dynamically open excel document by clicking the file menu in ribbon and 
 
 ## Save
 
-The Spreadsheet can save its data, style, format into an excel file. To enable save option in Spreadsheet set [`allowExporting`](http://help.syncfusion.com/api/js/ejspreadsheet#members:exportsettings-allowexporting "allowExporting") option in [`exportSettings`](http://help.syncfusion.com/api/js/ejspreadsheet#members:exportsettings "exportSettings") as `true`. Since Spreadsheet uses server side helper to save documents set [`excelUrl`](http://help.syncfusion.com/api/js/ejspreadsheet#members:exportsettings-excelurl "excelUrl") in [`exportSettings`](http://help.syncfusion.com/api/js/ejspreadsheet#members:exportsettings "exportSettings") option.
+The Spreadsheet can save its data, style, format into an excel file. To enable save option in Spreadsheet set [`allowExporting`](https://help.syncfusion.com/api/js/ejspreadsheet#members:exportsettings-allowexporting "allowExporting") option in [`exportSettings`](https://help.syncfusion.com/api/js/ejspreadsheet#members:exportsettings "exportSettings") as `true`. Since Spreadsheet uses server side helper to save documents set [`excelUrl`](https://help.syncfusion.com/api/js/ejspreadsheet#members:exportsettings-excelurl "excelUrl") in [`exportSettings`](https://help.syncfusion.com/api/js/ejspreadsheet#members:exportsettings "exportSettings") option.
 
 {% highlight html %}
 
@@ -233,7 +233,7 @@ You can save excel documents in following ways
 
 ### Methods
 
-To save Spreadsheet document as excel file, [`export`](http://help.syncfusion.com/api/js/ejspreadsheet#methods:xlexport-export "export") method should be called with file type as parameter. The code snippets to save Spreadsheet document are as follows,
+To save Spreadsheet document as excel file, [`export`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlexport-export "export") method should be called with file type as parameter. The code snippets to save Spreadsheet document are as follows,
 
 {% highlight javascript %}
 

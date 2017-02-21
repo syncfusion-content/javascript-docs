@@ -13,7 +13,7 @@ DateRangePicker, has built in support with Localization so that you can make use
 
 More than 350 culture specific files are available to localize the date. To know more about EJ globalize support, please refer the below link 
 
-[http://help.syncfusion.com/js/localization](http://help.syncfusion.com/js/localization)
+[https://help.syncfusion.com/js/localization](https://help.syncfusion.com/js/localization)
 
 Also we have added Localized text files to DateRangePicker for 28 standard culture in below GitHub location,
 

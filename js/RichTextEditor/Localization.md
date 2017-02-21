@@ -329,7 +329,7 @@ ej.RTE.Locale["de-DE"] = {
     ];
 {% endhighlight %}
 
-You can set the [locale](http://help.syncfusion.com/api/js/ejrte#members:locale) property of the editor to the new language. 
+You can set the [locale](https://help.syncfusion.com/api/js/ejrte#members:locale) property of the editor to the new language. 
 
 {% highlight html %}
 

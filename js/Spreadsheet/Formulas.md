@@ -136,7 +136,7 @@ The list of formulas supported in Spreadsheet is sufficient for most of your cal
 
 ### Initial Load
 
-You can add your own function to Spreadsheet at initial load with [`customFormulas`](https://help.syncfusion.com/js/api/ejspreadsheet#members:customformulas "customFormulas") API. The following code example describes the above behavior,
+You can add your own function to Spreadsheet at initial load with [`customFormulas`](https://help.syncfusion.com/api/js/ejspreadsheet#members:customformulas "customFormulas") API. The following code example describes the above behavior,
 
 {% highlight html %}
 
@@ -185,7 +185,7 @@ The following output is displayed as a result of the above code example.
 
 ### Method
 
-You can add your own function to Spreadsheet using [`addCustomFormula`](https://help.syncfusion.com/js/api/ejspreadsheet#methods:addcustomformula "addCustomFormula") method. The following code example describes the above behavior,
+You can add your own function to Spreadsheet using [`addCustomFormula`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:addcustomformula "addCustomFormula") method. The following code example describes the above behavior,
 
 {% highlight html %}
 
@@ -231,7 +231,7 @@ You can add your own function to Spreadsheet using [`addCustomFormula`](https://
 The following output is displayed as a result of the above code example.
 ![](Formulas_images/Formula_img5.png)
 
-To remove user defined function from Spreadsheet use [`removeCustomFormula`](https://help.syncfusion.com/js/api/ejspreadsheet#methods:removecustomformula "removeCustomFormula") method.
+To remove user defined function from Spreadsheet use [`removeCustomFormula`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:removecustomformula "removeCustomFormula") method.
 
 ## Named Ranges
 

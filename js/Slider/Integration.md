@@ -17,7 +17,7 @@ AngularJS is structural Framework to create dynamic web apps. It is distributed 
 
 **Slider** widget is provided with AngularJS support. The support is achieved by including the “**ej.widget.angular.min.js**” file. Refer the following link to know more about the AngularJS support.
 
-<http://help.syncfusion.com/js/angularjs>
+<https://help.syncfusion.com/js/angularjs>
 
 **Slider** widget is defined using the directive **slider**. The properties of the **Slider** widget can be included as inline **HTML** attributes by prefixing the properties with “**e-**“. The properties are not case sensitive when defining it. AngularJS provides two types of data binding “one way binding” and “two way binding”. 
 
@@ -98,7 +98,7 @@ KnockoutJS is a **JavaScript** library that follows the MVVM pattern to build so
 
 **Slider** widget includes support to use it with KnockoutJS. The support is achieved by integration of the JS library **ej.widget.ko.min.js file.** Refer the following link to know more about the KnockoutJS support
 
-<http://help.syncfusion.com/js/knockoutjs>
+<https://help.syncfusion.com/js/knockoutjs>
 
 The binding handler name for **Slider** component is **Slider**. Both one way binding and two way binding support is included. All properties of the **Slider** component supports one way binding. In the **HTML** markup, specify the property using the binding handler. 
 

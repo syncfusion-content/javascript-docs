@@ -9,7 +9,7 @@ documentation: ug
 
 # State Persistence
 
-TreeView state can be persisted by using [enablePersistence](http://help.syncfusion.com/api/js/ejtreeview#members:enablepersistence). In which entire modal has been persisted excluding data source in order to maintain performance. 
+TreeView state can be persisted by using [enablePersistence](https://help.syncfusion.com/api/js/ejtreeview#members:enablepersistence). In which entire modal has been persisted excluding data source in order to maintain performance. 
 
 The model values of below are maintained through Id basis of tree node.
 

@@ -24,7 +24,7 @@ Two-way binding supports both the processes – it applies the observable values
 
 For more information about the Knockout binding, refer the following link location,
 
-<http://help.syncfusion.com/js/knockoutjs>
+<https://help.syncfusion.com/js/knockoutjs>
 
 The following example depicts the way to bind data to the **TimePicker** widget through the Knockout support that enables and populate data to **TimePicker** widget based on the value set to another **TimePicker** widget.
 

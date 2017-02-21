@@ -150,7 +150,7 @@ The **Menu** control also provides support for Remote data binding. Here the rem
 
 DataManager is used to manage relational data in **JavaScript**. DataManager uses two different classes, **ej.DataManager** for processing, and **ej.Query** for serving data. **ej.DataManager** communicates with data source and **ej.Query** generates data queries that are to be read by DataManager. To know more about DataManager and Query refer the following link location.
 
-<http://help.syncfusion.com/js/datamanager>
+<https://help.syncfusion.com/js/datamanager>
 
 In the following example, [http://mvc.syncfusion.com/Services/Northwnd.svc/](http://mvc.syncfusion.com/Services/Northwnd.svc/) is used as the **URL**. This acts as web service that is located in the **Syncfusion** server. The web service with the name Northwind.svc is used here.
 

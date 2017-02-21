@@ -25,7 +25,7 @@ For example, you can render the desired icon in the button by using the followin
 
 Refer to the following link to know what are the values passed in the “**ContentType**” property
 
-<http://help.syncfusion.com/api/js/global#members:contenttype>
+<https://help.syncfusion.com/api/js/global#members:contenttype>
 
 
 Also in the button sample, you can use the icon class names as follows,
