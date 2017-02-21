@@ -24,7 +24,7 @@ Apply the plugin and property assigning to the **NumericTextBox** widget element
 
 To know more details about the **AngularJS binding**, refer the following link location,
 
-<http://help.syncfusion.com/js/angularjs>
+<https://help.syncfusion.com/js/angularjs>
 
 The following example depicts the way to bind data to the **NumericTextBox** widget through **angularJS support**.
 

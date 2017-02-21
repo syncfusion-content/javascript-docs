@@ -34,7 +34,7 @@ Create a new HTML file and include the below code
 
 
 
-Add link to the CSS file from the specific [theme](http://helpjs.syncfusion.com/js/theming-in-essential-javascript-components) folder to your HTML file within the head section. 
+Add link to the CSS file from the specific [theme](https://help.syncfusion.com/js/theming-in-essential-javascript-components) folder to your HTML file within the head section. 
 
 {% highlight html %}
 
@@ -49,7 +49,7 @@ Add link to the CSS file from the specific [theme](http://helpjs.syncfusion.com/
 
 
 
-Add links to the [CDN](http://helpjs.syncfusion.com/js/cdn) Script files with dependencies.
+Add links to the [CDN](https://help.syncfusion.com/js/cdn) Script files with dependencies.
 
 {% highlight html %}
 
@@ -69,7 +69,7 @@ Add links to the [CDN](http://helpjs.syncfusion.com/js/cdn) Script files with de
 
 
 N>To reduce the file size further please use [GZip](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/optimize-encoding-and-transfer?hl=en) compression in your server. 
-{%seealso%}[custom script generator](http://helpjs.syncfusion.com/js/include-only-the-needed-widgets) {%endseealso%}
+{%seealso%}[custom script generator](https://help.syncfusion.com/js/include-only-the-needed-widgets) {%endseealso%}
 
 ## Create Dialog
 

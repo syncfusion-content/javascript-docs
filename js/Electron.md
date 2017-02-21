@@ -112,7 +112,7 @@ N> Learn more about Electron and its API in the [documentation](http://electron.
 
 Step2:
 
-Add the Syncfusion JS and CSS file reference in index.html file as mentioned on this [link](http://help.syncfusion.com/js/control-initialization), Refer the index.html location in the below image. 
+Add the Syncfusion JS and CSS file reference in index.html file as mentioned on this [link](https://help.syncfusion.com/js/control-initialization), Refer the index.html location in the below image. 
 
 
 

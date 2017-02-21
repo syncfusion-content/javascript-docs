@@ -13,7 +13,7 @@ documentation: ug
 
 AngularJS is an open-source web application Framework. AngularJS extends **HTML** with new attributes. AngularJS is a **JavaScript** Framework. You can add it to an **HTML** page with a **&lt;script&gt;** tag. AngularJS extends **HTML** attributes with Directives, and binds data to **HTML** with Expressions. The support is achieved by an integration JS library file. You can know more about the AngularJS support in the following link location. 
 
-<http://help.syncfusion.com/js/angularjs>
+<https://help.syncfusion.com/js/angularjs>
 
 Sometime you can use menu value for retrieving information from the database by performing related action that is selected in menu. You can achieve this after the selected menu action is performed in the server side.
 

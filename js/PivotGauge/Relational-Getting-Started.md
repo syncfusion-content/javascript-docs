@@ -215,11 +215,11 @@ The scripts and style sheets that are mandatorily required to render a PivotGaug
 
 The scripts and style sheets listed above could be found in any of the following locations:
 
-Local Disk: [Click here](http://helpjs.syncfusion.com/js/installation-and-deployment) to know more about script and style sheets installed in local machine.
+Local Disk: [Click here](https://help.syncfusion.com/js/installation-and-deployment) to know more about script and style sheets installed in local machine.
  
-CDN Link: [Click here](http://helpjs.syncfusion.com/js/cdn) to know more about script and style sheets available online.
+CDN Link: [Click here](https://help.syncfusion.com/js/cdn) to know more about script and style sheets available online.
 
-NuGet Package: [Click here](http://helpjs.syncfusion.com/js/installation-and-deployment#configuring-syncfusion-nuget-packages) to know more about script and style sheets available in NuGet package.
+NuGet Package: [Click here](https://help.syncfusion.com/js/installation-and-deployment#configuring-syncfusion-nuget-packages) to know more about script and style sheets available in NuGet package.
 
 ### Control Initialization
 
@@ -564,7 +564,7 @@ Now, PivotGauge is rendered with sales amount as shown in below image.
 
 ### WCF
 
-This section demonstrates the utilization of WCF service as endpoint binding Relational datasource to a simple PivotGauge. For more details on this topic, [click here](http://help.syncfusion.com/js/pivotgauge/relational-connectivity#wcf-1).
+This section demonstrates the utilization of WCF service as endpoint binding Relational datasource to a simple PivotGauge. For more details on this topic, [click here](https://help.syncfusion.com/js/pivotgauge/relational-connectivity#wcf-1).
   
 
 

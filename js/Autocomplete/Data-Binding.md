@@ -18,13 +18,13 @@ The AutoComplete widget has a field property (object) which holds the properties
 
 The field object contains the following properties.
 
-* [text](http://help.syncfusion.com/api/js/ejautocomplete)
+* [text](https://help.syncfusion.com/api/js/ejautocomplete)
 
-* [key](http://help.syncfusion.com/api/js/ejautocomplete)
+* [key](https://help.syncfusion.com/api/js/ejautocomplete)
 
-* [groupBy](http://help.syncfusion.com/api/js/ejautocomplete)
+* [groupBy](https://help.syncfusion.com/api/js/ejautocomplete)
 
-* [htmlAttributes](http://help.syncfusion.com/api/js/ejautocomplete)
+* [htmlAttributes](https://help.syncfusion.com/api/js/ejautocomplete)
 
 
 
@@ -70,9 +70,9 @@ Here the name and index fields are mapped with text and key properties of the fi
 
 #### OData
 
-[OData](http://help.syncfusion.com/js/datamanager/data-binding) is a standardized protocol for creating and consuming the data. You can retrieve data from OData service by using [ej.DataManager](http://help.syncfusion.com/js/datamanager/getting-started).
+[OData](https://help.syncfusion.com/js/datamanager/data-binding) is a standardized protocol for creating and consuming the data. You can retrieve data from OData service by using [ej.DataManager](https://help.syncfusion.com/js/datamanager/getting-started).
 
-Here the ContactName and SupplierID fields are mapped with text and key properties respectively, of the field object. The queries can be created using [ej.Query()](http://helpjs.syncfusion.com/js/datamanager/query).
+Here the ContactName and SupplierID fields are mapped with text and key properties respectively, of the field object. The queries can be created using [ej.Query()](https://help.syncfusion.com/js/datamanager/query).
 
 {% highlight html %}
 
@@ -106,7 +106,7 @@ Here the ContactName and SupplierID fields are mapped with text and key properti
 
 
 
-[ASP.NET Web API](https://msdn.microsoft.com/en-us/library/hh833994(v=vs.108).aspx) is a Framework for building HTTP services. You can retrieve data from ASP.NET Web API by using [ej.DataManager](http://helpjs.syncfusion.com/js/datamanager/getting-started).
+[ASP.NET Web API](https://msdn.microsoft.com/en-us/library/hh833994(v=vs.108).aspx) is a Framework for building HTTP services. You can retrieve data from ASP.NET Web API by using [ej.DataManager](https://help.syncfusion.com/js/datamanager/getting-started).
 
 Here the ContactName field is mapped with text property of the field object. 
 
@@ -132,7 +132,7 @@ Here the ContactName field is mapped with text property of the field object.
 
 
 
-N> In the above data manager configuration, “crossDomain” must be set to true to access the data from Web API. [Cross domain](http://helpjs.syncfusion.com/js/grid/data-binding) requests can be possible using ej.DataManager.
+N> In the above data manager configuration, “crossDomain” must be set to true to access the data from Web API. [Cross domain](https://help.syncfusion.com/js/grid/data-binding) requests can be possible using ej.DataManager.
 
 ![AutoComplete-APIData](webapi_images\webapi_img1.png)
 
@@ -141,12 +141,12 @@ N> In the above data manager configuration, “crossDomain” must be set to tru
 
 #### Handling errors
 
- In remote binding, the server might not return data sometimes due to various reasons. In such cases we need to handle the error properly. We can handle this using the “[actionFailure](http://help.syncfusion.com/api/js/ejautocomplete)” event. 
+ In remote binding, the server might not return data sometimes due to various reasons. In such cases we need to handle the error properly. We can handle this using the “[actionFailure](https://help.syncfusion.com/api/js/ejautocomplete)” event. 
 
 {%seealso%} 
-* [actionComplete](http://help.syncfusion.com/api/js/ejautocomplete) event
+* [actionComplete](https://help.syncfusion.com/api/js/ejautocomplete) event
 
-* [actionSuccess](http://help.syncfusion.com/api/js/ejautocomplete) event
+* [actionSuccess](https://help.syncfusion.com/api/js/ejautocomplete) event
 {%endseealso%}
 
 {% highlight html %}

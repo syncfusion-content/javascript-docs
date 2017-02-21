@@ -10,7 +10,7 @@ keywords: DropDownList, dropdown, data binding, REStFul Binding, WebAPI, Web Met
 
 # Data Binding
 
-To populate data in the DropDownList widget, define [dataSource](http://help.syncfusion.com/api/js/ejdropdownlist#members:datasource) property with associated fields. In DropDownList, can bind either local array or OData, WebApi and other [RESTful](https://en.wikipedia.org/wiki/Representational_state_transfer) services.
+To populate data in the DropDownList widget, define [dataSource](https://help.syncfusion.com/api/js/ejdropdownlist#members:datasource) property with associated fields. In DropDownList, can bind either local array or OData, WebApi and other [RESTful](https://en.wikipedia.org/wiki/Representational_state_transfer) services.
 
 ## Fields
 
@@ -161,7 +161,7 @@ The below listed fields are the data collection fields which maps fields for the
 
 ## Local Data
 
-Define a JSON array and initialize the widget with [dataSource](http://help.syncfusion.com/api/js/ejdropdownlist#members:datasource) property. Specify the column names in the [fields](#Fields) property.
+Define a JSON array and initialize the widget with [dataSource](https://help.syncfusion.com/api/js/ejdropdownlist#members:datasource) property. Specify the column names in the [fields](#Fields) property.
 
 N> The columns are bounded automatically when the fields are specified with the default names like id, text, etc...
 
@@ -240,7 +240,7 @@ N> The columns are bounded automatically when the fields are specified with the 
 N> Images for this sample are available in (installed location)\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\samples\web\themes\images<br/>
 I> htmlAttributes and imageAttributes should have JSON type value and sample for spriteCSSClass field is available in [here](http://jsplayground.syncfusion.com/Sync_px3jew3i) 
 	
-The JSON array to the [dataSource](http://help.syncfusion.com/api/js/ejdropdownlist#members:datasource) property can also be provided as an instance of the [ej.DataManager](http://help.syncfusion.com/api/js/ejdatamanager). When the JSON array is passed as an instance of [ej.DataManager](http://help.syncfusion.com/api/js/ejdatamanager), the [ej.JsonAdaptor](http://help.syncfusion.com/js/datamanager/data-adaptors#json-adaptor) will be used to manipulate the DropDownList data source. The following code explains this behavior,
+The JSON array to the [dataSource](https://help.syncfusion.com/api/js/ejdropdownlist#members:datasource) property can also be provided as an instance of the [ej.DataManager](https://help.syncfusion.com/api/js/ejdatamanager). When the JSON array is passed as an instance of [ej.DataManager](https://help.syncfusion.com/api/js/ejdatamanager), the [ej.JsonAdaptor](https://help.syncfusion.com/js/datamanager/data-adaptors#json-adaptor) will be used to manipulate the DropDownList data source. The following code explains this behavior,
 
 {% highlight html %}
 
@@ -340,11 +340,11 @@ By using URL property of “ej.DataManager” bind OData Version 4 Service link 
            
 ![](DataBinding_images/DataBinding_img2.jpeg)
 
-N> Events associated with remote data bind is listed [here](http://help.syncfusion.com/api/js/ejdropdownlist#events). 
+N> Events associated with remote data bind is listed [here](https://help.syncfusion.com/api/js/ejdropdownlist#events). 
 
 ## WebAPI Binding
 
-Using [ej.WebApiAdaptor](http://help.syncfusion.com/js/datamanager/data-adaptors#webapi-adaptor), bind WebApi service’s data to DropDownList. The data from WebApi service must be returned as an object that has property “Items” with its value as data source and another property “Count” with its value as dataSource’s total records count.
+Using [ej.WebApiAdaptor](https://help.syncfusion.com/js/datamanager/data-adaptors#webapi-adaptor), bind WebApi service’s data to DropDownList. The data from WebApi service must be returned as an object that has property “Items” with its value as data source and another property “Count” with its value as dataSource’s total records count.
 
 {% highlight html %}
 
@@ -393,7 +393,7 @@ Using [ej.WebApiAdaptor](http://help.syncfusion.com/js/datamanager/data-adaptors
 The data can retrieve data from ASP.NET Web methods by making use of the WebMethod Adaptor of ejDataManager.
 
 The WebMethod Adaptor is used to bind data source from remote services and code behind methods. 
-By using “[WebMethodAdaptor](http://help.syncfusion.com/js/datamanager/getting-started)” we can bind data from WebService to the DropDownList control and also we need to include “ScriptService” Attribute to WebService in order to enable request from client-side.
+By using “[WebMethodAdaptor](https://help.syncfusion.com/js/datamanager/getting-started)” we can bind data from WebService to the DropDownList control and also we need to include “ScriptService” Attribute to WebService in order to enable request from client-side.
 
 {% highlight html %}
 
@@ -524,7 +524,7 @@ Defines the List of Employee Data and converted into JSON object.
     
 {% endhighlight %}
 
-In client side, specify the URL of Data to url property and specify the type of Adaptor in adaptor property of DataManager and initialize the DropDownList with [dataSource](http://help.syncfusion.com/api/js/ejdropdownlist#members:datasource) property. Specify the column names in the [fields](http://help.syncfusion.com/api/js/ejdropdownlist#members:fields) property.
+In client side, specify the URL of Data to url property and specify the type of Adaptor in adaptor property of DataManager and initialize the DropDownList with [dataSource](https://help.syncfusion.com/api/js/ejdropdownlist#members:datasource) property. Specify the column names in the [fields](https://help.syncfusion.com/api/js/ejdropdownlist#members:fields) property.
 
 {% highlight javascript %}
 
@@ -552,7 +552,7 @@ In client side, specify the URL of Data to url property and specify the type of 
 
 ## Other Restful web services
 
-The [Custom Adaptor](http://help.syncfusion.com/js/datamanager/data-adaptors#custom-adaptor) concept of "ej.DataManager" allows to customize or generate your own adaptor which is used to process "query" and "result" data. 
+The [Custom Adaptor](https://help.syncfusion.com/js/datamanager/data-adaptors#custom-adaptor) concept of "ej.DataManager" allows to customize or generate your own adaptor which is used to process "query" and "result" data. 
 When using remote data binding, the adaptor of "ej.DataManager" plays vital role in processing queries to make them suitable to sends along with data request and also process the response data from the server.
 
 {% highlight html %}
@@ -613,7 +613,7 @@ When using remote data binding, the adaptor of "ej.DataManager" plays vital role
 
 ## Virtual Scrolling 
 
-To improve the performance when displaying large data set, you can use “allowVirtualScrolling” and [virtualScrollMode](http://help.syncfusion.com/api/js/ejdropdownlist#members:virtualscrollmode) property. This retrieves only a fixed amount of list items and loads remaining data on scrolling. The items will be fetched via AJAX request.
+To improve the performance when displaying large data set, you can use “allowVirtualScrolling” and [virtualScrollMode](https://help.syncfusion.com/api/js/ejdropdownlist#members:virtualscrollmode) property. This retrieves only a fixed amount of list items and loads remaining data on scrolling. The items will be fetched via AJAX request.
 
 This supports two modes of virtualization. They are,
 
@@ -625,7 +625,7 @@ I> 2. “virtualScrollMode” property accepts both the string and ej.VirtualScr
 
 ### Normal Mode
 
-It loads the data on scrolling the list of items. This can be achieved by setting [normal](http://help.syncfusion.com/api/js/ejdropdownlist#members:virtualscrollmode) value to the "virtualScrollMode" property.
+It loads the data on scrolling the list of items. This can be achieved by setting [normal](https://help.syncfusion.com/api/js/ejdropdownlist#members:virtualscrollmode) value to the "virtualScrollMode" property.
 
 {% highlight html %}
 
@@ -656,9 +656,9 @@ It loads the data on scrolling the list of items. This can be achieved by settin
 
 ### Continuous Mode
 
-It loads the set of items when the scroller reaches at the end. This behaves like infinity scrolling. So when scroll reaches the end, it will fetch the remaining set of items and bind with your DropDownList. This can be achieved by setting [continuous](http://help.syncfusion.com/api/js/ejdropdownlist#members:virtualscrollmode) value to the "virtualScrollMode" property.
+It loads the set of items when the scroller reaches at the end. This behaves like infinity scrolling. So when scroll reaches the end, it will fetch the remaining set of items and bind with your DropDownList. This can be achieved by setting [continuous](https://help.syncfusion.com/api/js/ejdropdownlist#members:virtualscrollmode) value to the "virtualScrollMode" property.
 
-N> In both modes, set of items will be fetched based on the count specified in the [itemsCount](http://help.syncfusion.com/api/js/ejdropdownlist#members:itemscount) property and next set of items will be loaded on scrolling.
+N> In both modes, set of items will be fetched based on the count specified in the [itemsCount](https://help.syncfusion.com/api/js/ejdropdownlist#members:itemscount) property and next set of items will be loaded on scrolling.
 
 {% highlight html %}
 

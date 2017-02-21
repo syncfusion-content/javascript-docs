@@ -46,11 +46,11 @@ keywords: DropDownList, dropdown, Adding Items, Set Focus, custommization
 
 ## Clear the text of DropDownList input?
 
-To clear the text of the DropDownList input, you can use [clearText](http://help.syncfusion.com/api/js/ejdropdownlist#methods:cleartext) method.
+To clear the text of the DropDownList input, you can use [clearText](https://help.syncfusion.com/api/js/ejdropdownlist#methods:cleartext) method.
 
 ## Add an item dynamically to the DropDownList?
 
-You can use [addItem](http://help.syncfusion.com/api/js/ejdropdownlist#methods:additem) method to add single or multiple items dynamically to the popup list. You can define all the possible values that is supported by field property such as text, value, id, HTML attributes, selected, image and its associated attributes such as alt, width, and height etc..,
+You can use [addItem](https://help.syncfusion.com/api/js/ejdropdownlist#methods:additem) method to add single or multiple items dynamically to the popup list. You can define all the possible values that is supported by field property such as text, value, id, HTML attributes, selected, image and its associated attributes such as alt, width, and height etc..,
 
 Adding text and value is demonstrated in the below given sample,
 
@@ -87,7 +87,7 @@ You can enable or disable the DropDownList widget using "enabled" property or me
 
 ## Control the popup visibility via methods in script showPopup ()/hidePopup ()?
 
-By default popup list is shown on DropDownList button click but you can display the list initially by enabling the [showPopupOnLoad](http://help.syncfusion.com/api/js/ejdropdownlist#members:showpopuponload) property. You can also use [showPopup ()](http://help.syncfusion.com/api/js/ejdropdownlist#methods:showpopup) or [hidePopup ()](http://help.syncfusion.com/api/js/ejdropdownlist#methods:hidepopup) methods at run time to display or hide the popup list.
+By default popup list is shown on DropDownList button click but you can display the list initially by enabling the [showPopupOnLoad](https://help.syncfusion.com/api/js/ejdropdownlist#members:showpopuponload) property. You can also use [showPopup ()](https://help.syncfusion.com/api/js/ejdropdownlist#methods:showpopup) or [hidePopup ()](https://help.syncfusion.com/api/js/ejdropdownlist#methods:hidepopup) methods at run time to display or hide the popup list.
 
 ## Retrieve the selected item data from select event via arguments?
 
@@ -130,7 +130,7 @@ Create a custom HTML element and insert it after popup wrapper. Detailed sample 
 
 ## Add check all option in popup list?
 
-You can use [headerTemplate](http://help.syncfusion.com/api/js/ejdropdownlist#members:headertemplate) property to add any HTML element. Code snippet to add check all option is given below,
+You can use [headerTemplate](https://help.syncfusion.com/api/js/ejdropdownlist#members:headertemplate) property to add any HTML element. Code snippet to add check all option is given below,
 
 {% highlight html %}
 
@@ -189,7 +189,7 @@ The following screenshot exhibits the output of the above code,
 ![](HowTo_images/HowTo_img2.jpeg)
 
 ## To Cascade DropDownLists with different field names
-By default cascading is performed based on the Value field, so that it needs to be same with cascaded DropDownList. If you need to cascade 2 DropDownLists with different field names and same values in it, you can achieve it using cascadeQuery and [cascade](http://help.syncfusion.com/api/js/ejdropdownlist#events:cascade "") event. Define the cascade event for the DropDownList from which you need to filter the datasource for the other DropDownList. 
+By default cascading is performed based on the Value field, so that it needs to be same with cascaded DropDownList. If you need to cascade 2 DropDownLists with different field names and same values in it, you can achieve it using cascadeQuery and [cascade](https://help.syncfusion.com/api/js/ejdropdownlist#events:cascade "") event. Define the cascade event for the DropDownList from which you need to filter the datasource for the other DropDownList. 
 Refer the following code blocks below
 
 

@@ -85,7 +85,7 @@ Run the above code to render the following output.
 To add the priority value to the **ListBox**, the text value is received from the input element and color for each priority is received by the **ColorPicker** control. To add each new priority value to the **ListBox** control click the **Add** button.
 
 You can refer the following link for more information on creation of **ListBox**.
-<http://help.syncfusion.com/js/listbox/overview>
+<https://help.syncfusion.com/js/listbox/overview>
 
 The following code example is used to create the Priority form using **ListBox** control and **ColorPicker** control.
 

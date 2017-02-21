@@ -13,7 +13,7 @@ The editor control provides option to select all the content and in addition to 
 
 ## Select All 
 
-The [selectAll](http://help.syncfusion.com/api/js/ejrte#methods:selectall) method enables you to select the entire content including images in the editor by programmatically.
+The [selectAll](https://help.syncfusion.com/api/js/ejrte#methods:selectall) method enables you to select the entire content including images in the editor by programmatically.
 
 N> the selection highlight is invisible if the editor does not have focus. So, if you want to call the selectAll method, focus the editor before.
 
@@ -79,8 +79,8 @@ You can programmatically select a range of content in the editor using the selec
 
 The following public methods helps you to retrieve the selected content from the editor:
 
-* [getText](http://help.syncfusion.com/api/js/ejrte#methods:gettext) method is used to get the currently selected content as raw text.
-* [getSelectedHtml](http://help.syncfusion.com/api/js/ejrte#methods:getselectedhtml) method is used to get the HTML source of currently selected content.
+* [getText](https://help.syncfusion.com/api/js/ejrte#methods:gettext) method is used to get the currently selected content as raw text.
+* [getSelectedHtml](https://help.syncfusion.com/api/js/ejrte#methods:getselectedhtml) method is used to get the HTML source of currently selected content.
 
 {% highlight html %}
 

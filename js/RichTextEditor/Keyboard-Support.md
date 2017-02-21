@@ -337,7 +337,7 @@ Clears the entire editor content.
 </tr>
 </table>
 
-To disable the keyboard navigation, set the [allowKeyboardNavigation](http://help.syncfusion.com/api/js/ejrte#members:allowkeyboardnavigation) property of the editor to false (its default value is true). It will disable all the keyboard navigation shortcuts except for the UP/DOWN keys and PAGE UP/PAGE DOWN keys.
+To disable the keyboard navigation, set the [allowKeyboardNavigation](https://help.syncfusion.com/api/js/ejrte#members:allowkeyboardnavigation) property of the editor to false (its default value is true). It will disable all the keyboard navigation shortcuts except for the UP/DOWN keys and PAGE UP/PAGE DOWN keys.
 
 {% highlight html %}
 
