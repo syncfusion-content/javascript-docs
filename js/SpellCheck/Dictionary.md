@@ -62,4 +62,4 @@ N> The custom words are displaying within the custom dictionary file line by lin
 
 You can directly add the necessary words in the custom dictionary file or else by using the SpellCheck control public method [addToDictionary](/api/js/ejspellcheck#methods:addtodictionary) to add the custom words one by one.
 
-Refer to the [custom words](js/spellcheck/functionalities#custom-words) section under the functionalities block to know about this feature.
+Refer to the [custom words](/functionalities#custom-words) section under the functionalities block to know about this feature.
