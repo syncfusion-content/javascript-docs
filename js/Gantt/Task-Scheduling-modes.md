@@ -59,6 +59,33 @@ When the **taskSchedulingMode** property is set as `custom`, the scheulding mode
 
 {% highlight javascript %}
 
+ var data = [{
+         "TaskID": 1,
+         "TaskName": "Parent Task 1",
+         "StartDate": new Date("02/23/2014"),
+         "EndDate": new Date("02/27/2014"),
+         "Progress": "40",
+         `"isManual": true,`
+         "Children": [{
+                 "TaskID": 2,
+                 "TaskName": "Child Task 1",
+                 "StartDate": new Date("02/23/2014"),
+                 "EndDate": new Date("02/27/2014"),
+                 "Progress": "40"
+             },
+             {
+                 "TaskID": 3,
+                 "TaskName": "Child Task 2",
+                 "StartDate": new Date("02/23/2014"),
+                 "EndDate": new Date("02/27/2014"),
+                 "Progress": "40",
+                 `"isManual": true`
+             }
+         ]
+     },
+     //...
+ ]
+
 $("#GanttContainer").ejGantt({
 
     dataSource: data,
@@ -72,6 +99,7 @@ $("#GanttContainer").ejGantt({
 
 {% endhighlight %}
 
+[Click](http://js.syncfusion.com/demos/web/#!/bootstrap/gantt/schedulingconcepts/taskschedulemodes) here to view the online demo sample for task scheduling modes.
 
 The following screen shot depicts a project with custom scheduling mode, where both automatic and manual scheduling modes are mapped to the tasks.
 
