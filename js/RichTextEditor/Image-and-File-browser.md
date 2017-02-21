@@ -72,7 +72,7 @@ Configure the imageBrowser and fileBrowser property to insert an image from your
 ![](ImageandFilebrowser_images/ImageandFilebrowser_img2.png)
 
 
-N> FileExplorer component has been implemented and integrated with the editor in Volume 1, 2015 release. For more information about FileExplorer component, see [here](http://helpjs.syncfusion.com/js/fileexplorer/overview#).
+N> FileExplorer component has been implemented and integrated with the editor in Volume 1, 2015 release. For more information about FileExplorer component, see [here](https://help.syncfusion.com/js/fileexplorer/overview#).
 
 ## Image Properties
 
@@ -95,7 +95,7 @@ N> Set the default height and width of the Images which was inserted into the RT
 
 ### Set Width and Height
 
-The editor provides you to set the width and height properties to change the size of an image (rather than forcing you to set in style attributes) using [showDimensions](http://help.syncfusion.com/api/js/ejrte#members:showdimensions) property. By default, the Constrain Proportion checkbox is selected to resize an image to an exact proportion. To apply the exact width and height that you specify into the Height and Width textboxes, uncheck the Constrain Proportions checkbox.
+The editor provides you to set the width and height properties to change the size of an image (rather than forcing you to set in style attributes) using [showDimensions](https://help.syncfusion.com/api/js/ejrte#members:showdimensions) property. By default, the Constrain Proportion checkbox is selected to resize an image to an exact proportion. To apply the exact width and height that you specify into the Height and Width textboxes, uncheck the Constrain Proportions checkbox.
 
 {% highlight html %}
 

@@ -117,11 +117,11 @@ The scripts and style sheets that are mandatorily required to render a PivotChar
 
 The scripts and style sheets listed above could be found in any of the following locations:
 
-Local Disk: [Click here](http://helpjs.syncfusion.com/js/installation-and-deployment) to know more about script and style sheets installed in local machine.
+Local Disk: [Click here](https://help.syncfusion.com/js/installation-and-deployment) to know more about script and style sheets installed in local machine.
 
-CDN Link: [Click here](http://helpjs.syncfusion.com/js/cdn) to know more about script and style sheets available online.
+CDN Link: [Click here](https://help.syncfusion.com/js/cdn) to know more about script and style sheets available online.
 
-NuGet Package: [Click here](http://helpjs.syncfusion.com/js/installation-and-deployment#configuring-syncfusion-nuget-packages) to know more about script and style sheets available in NuGet package. 
+NuGet Package: [Click here](https://help.syncfusion.com/js/installation-and-deployment#configuring-syncfusion-nuget-packages) to know more about script and style sheets available in NuGet package. 
 
 ### Control Initialization
 In-order to initialize a PivotChart widget, first you need to define a “div” tag with an appropriate “id” attribute which acts as a container for PivotChart widget. Then you need to initialize the widget using `ejPivotChart` method.
@@ -357,7 +357,7 @@ Now, PivotChart will be rendered with Customer Count over a period of fiscal yea
 ![](Olap-Getting-Started_images/ServerMode.png)
 
 ### WCF
-This section demonstrates the utilization of WCF service as endpoint binding OLAP datasource to a simple PivotChart. For more details on this topic, [click here](http://help.syncfusion.com/js/pivotchart/olap-connectivity#wcf).
+This section demonstrates the utilization of WCF service as endpoint binding OLAP datasource to a simple PivotChart. For more details on this topic, [click here](https://help.syncfusion.com/js/pivotchart/olap-connectivity#wcf).
 
 
 

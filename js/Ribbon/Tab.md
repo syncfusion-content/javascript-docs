@@ -9,7 +9,7 @@ keywords: ribbon tab
 
 # Tab
 
-Tab is a collection of control [`groups`](http://help.syncfusion.com/api/js/ejribbon#members:tabs-groups) which enables you to organize related commands into single view.  Tabs can be added to Ribbon using [`tabs`](http://help.syncfusion.com/api/js/ejribbon#members:tabs) property. [`id`](http://help.syncfusion.com/api/js/ejribbon#members:tabs-id) & [`text`](http://help.syncfusion.com/api/js/ejribbon#members:tabs-text) properties are used to set unique ID and header text to Tab. 
+Tab is a collection of control [`groups`](https://help.syncfusion.com/api/js/ejribbon#members:tabs-groups) which enables you to organize related commands into single view.  Tabs can be added to Ribbon using [`tabs`](https://help.syncfusion.com/api/js/ejribbon#members:tabs) property. [`id`](https://help.syncfusion.com/api/js/ejribbon#members:tabs-id) & [`text`](https://help.syncfusion.com/api/js/ejribbon#members:tabs-text) properties are used to set unique ID and header text to Tab. 
 
 {% highlight html %}
 

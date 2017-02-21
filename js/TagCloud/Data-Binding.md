@@ -180,7 +180,7 @@ Two-way binding supports both the processes – it applies the observable values
 
 For more information about the KnockoutJS binding, refer the following link location,
 
-<http://help.syncfusion.com/js/knockoutjs>
+<https://help.syncfusion.com/js/knockoutjs>
 
 The following code example depicts you the way to bind data to the **TagCloud** widget using Knockout support,
 
@@ -264,7 +264,7 @@ Apply the plugin and property assigning to the **TagCloud** widget element throu
 
 To know more detail about the AngularJS binding, refer the following link location,
 
-<http://help.syncfusion.com/js/angularjs>
+<https://help.syncfusion.com/js/angularjs>
 
 The following example depicts you the way to bind data to the **TagCloud** widget using AngularJS support,
 

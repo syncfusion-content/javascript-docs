@@ -9,7 +9,7 @@ keywords: application tab,ribbon application tab
 
 # Application Tab
 
-The Application Tab is used to represent a `Menu` that do some operations, such as File menu to create, open, and print documents. Application Tab classified by [`type`](http://help.syncfusion.com/api/js/ejribbon#members:applicationtab-type) property with the following:
+The Application Tab is used to represent a `Menu` that do some operations, such as File menu to create, open, and print documents. Application Tab classified by [`type`](https://help.syncfusion.com/api/js/ejribbon#members:applicationtab-type) property with the following:
 
 *  menu
 *  backstage
@@ -17,11 +17,11 @@ The Application Tab is used to represent a `Menu` that do some operations, such 
 
 ## Application Menu
 
-The Application Menu is similar to traditional file menu options and Syncfusion `ejMenu` control is used internally to render this. To show Application Menu in Ribbon, set the [`type`](http://help.syncfusion.com/api/js/ejribbon#members:applicationtab-type) as `menu` and [`menuSettings`](http://help.syncfusion.com/api/js/ejmenu) to customize properties of `ejMenu`.
+The Application Menu is similar to traditional file menu options and Syncfusion `ejMenu` control is used internally to render this. To show Application Menu in Ribbon, set the [`type`](https://help.syncfusion.com/api/js/ejribbon#members:applicationtab-type) as `menu` and [`menuSettings`](https://help.syncfusion.com/api/js/ejmenu) to customize properties of `ejMenu`.
 
 ### _Create Using Template_
 
-Set the UL element `id` to [`menuItemID`](http://help.syncfusion.com/api/js/ejribbon#members:applicationtab-menuitemid) property to create Application Menu and it will acts as template to render menu.
+Set the UL element `id` to [`menuItemID`](https://help.syncfusion.com/api/js/ejribbon#members:applicationtab-menuitemid) property to create Application Menu and it will acts as template to render menu.
 
 {% highlight html %}
     
@@ -69,7 +69,7 @@ Set the UL element `id` to [`menuItemID`](http://help.syncfusion.com/api/js/ejri
 
 ### _Binding Data Source_
 
-Application Menu can be rendered using JSON Data Source. Please refer [`this`](http://help.syncfusion.com/js/menu/data-binding) page to set data source to `ejMenu`.
+Application Menu can be rendered using JSON Data Source. Please refer [`this`](https://help.syncfusion.com/js/menu/data-binding) page to set data source to `ejMenu`.
 
 {% highlight html %}
     
@@ -147,9 +147,9 @@ The Backstage page is where documents and related data of those can be managed, 
 
 The Backstage page has a feature to add custom Control in left side of the page which contains menu items and the right side contains corresponding user controls. 
 
-You can set Application Tab [`type`](http://help.syncfusion.com/api/js/ejribbon#members:applicationtab-type) as `backstage` and set [`id`](http://help.syncfusion.com/api/js/ejribbon#members:applicationtab-backstagesettings-pages-id) , [`text`](http://help.syncfusion.com/api/js/ejribbon#members:applicationtab-backstagesettings-pages-text) to backstage items. Backstage [`pages`](http://help.syncfusion.com/api/js/ejribbon#members:applicationtab-backstagesettings-pages) can be added with required [`itemType`](http://help.syncfusion.com/api/js/ejribbon#members:applicationtab-backstagesettings-pages-itemtype) and [`contentID`](http://help.syncfusion.com/api/js/ejribbon#members:applicationtab-backstagesettings-pages-contentid) as template id to render template into Backstage. 
+You can set Application Tab [`type`](https://help.syncfusion.com/api/js/ejribbon#members:applicationtab-type) as `backstage` and set [`id`](https://help.syncfusion.com/api/js/ejribbon#members:applicationtab-backstagesettings-pages-id) , [`text`](https://help.syncfusion.com/api/js/ejribbon#members:applicationtab-backstagesettings-pages-text) to backstage items. Backstage [`pages`](https://help.syncfusion.com/api/js/ejribbon#members:applicationtab-backstagesettings-pages) can be added with required [`itemType`](https://help.syncfusion.com/api/js/ejribbon#members:applicationtab-backstagesettings-pages-itemtype) and [`contentID`](https://help.syncfusion.com/api/js/ejribbon#members:applicationtab-backstagesettings-pages-contentid) as template id to render template into Backstage. 
 
-Separator between Backstage items can be enabled by setting [`enableSeparator`](http://help.syncfusion.com/api/js/ejribbon#members:applicationtab-backstagesettings-pages-enableseparator) as true. Width of back stage side header can be customized using [`headerWidth`](http://help.syncfusion.com/api/js/ejribbon#members:applicationtab-backstagesettings-headerwidth), If not set based on content given width will be considered.
+Separator between Backstage items can be enabled by setting [`enableSeparator`](https://help.syncfusion.com/api/js/ejribbon#members:applicationtab-backstagesettings-pages-enableseparator) as true. Width of back stage side header can be customized using [`headerWidth`](https://help.syncfusion.com/api/js/ejribbon#members:applicationtab-backstagesettings-headerwidth), If not set based on content given width will be considered.
 
 To render the Ribbon with the Backstage page, refer to the following code snippet. 
 
@@ -263,4 +263,4 @@ To render the Ribbon with the Backstage page, refer to the following code snippe
 
 ![](/js/Ribbon/Application-Tab_images/Application-Tab_img3.png)
 
-N> Height & width of backstage can be set using [`height`](http://help.syncfusion.com/api/js/ejribbon#members:applicationtab-backstagesettings-height) and `width`, if these are not set, Ribbon’s height & width will be considered.
+N> Height & width of backstage can be set using [`height`](https://help.syncfusion.com/api/js/ejribbon#members:applicationtab-backstagesettings-height) and `width`, if these are not set, Ribbon’s height & width will be considered.

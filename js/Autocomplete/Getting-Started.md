@@ -35,7 +35,7 @@ Create a new HTML file and include the below code
 
 
 
-Add link to the CSS file from the specific [theme](http://helpjs.syncfusion.com/js/theming-in-essential-javascript-components) folder to your HTML file within the head section. Refer the built-in theme which is mentioned [here](http://helpjs.syncfusion.com/js/theming-in-essential-javascript-components). 
+Add link to the CSS file from the specific [theme](https://help.syncfusion.com/js/theming-in-essential-javascript-components) folder to your HTML file within the head section. Refer the built-in theme which is mentioned [here](https://help.syncfusion.com/js/theming-in-essential-javascript-components). 
 
 {% highlight html %}
         
@@ -50,7 +50,7 @@ Add link to the CSS file from the specific [theme](http://helpjs.syncfusion.com/
 
 
 
-Add links to the [CDN](http://helpjs.syncfusion.com/js/cdn) Script files with dependencies.
+Add links to the [CDN](https://help.syncfusion.com/js/cdn) Script files with dependencies.
 
 {% highlight html %}
 
@@ -69,7 +69,7 @@ Add links to the [CDN](http://helpjs.syncfusion.com/js/cdn) Script files with de
 
 
 
-N> In production, we highly recommend you to use our [custom script generator](http://helpjs.syncfusion.com/js/include-only-the-needed-widgets) to create custom script file with required controls and its dependencies only. Also to reduce the file size further please use [GZip](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/optimize-encoding-and-transfer?hl=en) compression in your server.
+N> In production, we highly recommend you to use our [custom script generator](https://help.syncfusion.com/js/include-only-the-needed-widgets) to create custom script file with required controls and its dependencies only. Also to reduce the file size further please use [GZip](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/optimize-encoding-and-transfer?hl=en) compression in your server.
 
 
 
@@ -108,7 +108,7 @@ Initialize the AutoComplete widget by adding the following code in script sectio
 
 The data for the suggestion list can be populated using the dataSource property. 
 
-{%seealso%}[Data Binding](http://help.syncfusion.com/js/autocomplete/data-binding){%endseealso%}
+{%seealso%}[Data Binding](https://help.syncfusion.com/js/autocomplete/data-binding){%endseealso%}
 
 
 {% highlight javascript %}

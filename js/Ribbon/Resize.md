@@ -15,7 +15,7 @@ As the window is narrowed, controls in the Ribbon will be combined as group butt
 
 ## Tablet Layout 
 
-Set [`isResponsive`](http://help.syncfusion.com/api/js/ejribbon#members:isresponsive) as true to enable responsive layout in Ribbon.If client width is above  420px or control content exceeds the page then, the ribbon will render in Tablet mode.
+Set [`isResponsive`](https://help.syncfusion.com/api/js/ejribbon#members:isresponsive) as true to enable responsive layout in Ribbon.If client width is above  420px or control content exceeds the page then, the ribbon will render in Tablet mode.
 
 {% highlight html %}
 
@@ -103,7 +103,7 @@ The customized features includes responsive tab & group rendering, backstage, ga
 
 ### Responsive Tab and group
 
-Set [`isResponsive`](http://help.syncfusion.com/api/js/ejribbon#members:isresponsive) as true to enable responsive mode in Ribbon.
+Set [`isResponsive`](https://help.syncfusion.com/api/js/ejribbon#members:isresponsive) as true to enable responsive mode in Ribbon.
    
 
 {% highlight html %}

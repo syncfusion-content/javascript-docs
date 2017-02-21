@@ -194,5 +194,5 @@ Item reordering can be done within a ListBox widget by enabling both “allowDra
 
 ![](Drag-and-drop_images\Drag-and-drop_img4.png)
 
-N> The item reordering can be done dynamically without mouse interaction. For that we have provided two APIs namely “[moveUp](http://help.syncfusion.com/api/js/ejlistbox#methods:moveup)” and “[moveDown](http://help.syncfusion.com/api/js/ejlistbox#methods:movedown)”.
+N> The item reordering can be done dynamically without mouse interaction. For that we have provided two APIs namely “[moveUp](https://help.syncfusion.com/api/js/ejlistbox#methods:moveup)” and “[moveDown](https://help.syncfusion.com/api/js/ejlistbox#methods:movedown)”.
 

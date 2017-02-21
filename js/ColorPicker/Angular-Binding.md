@@ -22,7 +22,7 @@ Apply the plugin and property assigning to the **ColorPicker** widget element th
 
 To know more about the **Angular** binding, you can refer to the online documentation in the following link location,
 
-<http://help.syncfusion.com/js/angularjs>
+<https://help.syncfusion.com/js/angularjs>
 
 The following code example depicts the way to bind data to the **ColorPicker** widget through **angular** support.
 

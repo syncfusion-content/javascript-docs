@@ -54,7 +54,7 @@ In the HTML page, add a **&lt;div&gt;** element to enable the drag and drop in U
 
 {% endhighlight %}
 
-To know about file action, refer to the following link: <http://help.syncfusion.com/js/uploadbox/file-actions>
+To know about file action, refer to the following link: <https://help.syncfusion.com/js/uploadbox/file-actions>
 
 In CSS, configure the custom styles for drag and drop.
 

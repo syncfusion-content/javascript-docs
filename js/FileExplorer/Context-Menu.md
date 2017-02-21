@@ -88,7 +88,7 @@ It's used to sorting the files and folders from the current directory.The sortin
 </table>
 ## Context menu Visibility
 
-The presence of the context menu can be controlled by the [showContextMenu](http://help.syncfusion.com/api/js/ejfileexplorer#members:showcontextmenu) property. This was enabled by default, and by disabling this property you can prevent our built-in context menu.
+The presence of the context menu can be controlled by the [showContextMenu](https://help.syncfusion.com/api/js/ejfileexplorer#members:showcontextmenu) property. This was enabled by default, and by disabling this property you can prevent our built-in context menu.
 
 {% highlight javascript %}
 
@@ -120,8 +120,8 @@ The context menu items can be enabled or disabled through the client side public
 
 For example, if you disable the “Upload” item, it disables in all places wherever it appears such as open the context menu on treeview, open on file/folder, and open on layout.
 
-* [enableMenuItem](http://help.syncfusion.com/api/js/ejfileexplorer#methods:enablemenuitem)
-* [disableMenuItem](http://help.syncfusion.com/api/js/ejfileexplorer#methods:disablemenuitem)
+* [enableMenuItem](https://help.syncfusion.com/api/js/ejfileexplorer#methods:enablemenuitem)
+* [disableMenuItem](https://help.syncfusion.com/api/js/ejfileexplorer#methods:disablemenuitem)
 
 These methods only accepts the context menu item name as the parameter. 
 

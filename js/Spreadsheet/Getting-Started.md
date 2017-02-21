@@ -38,7 +38,7 @@ Create an HTML page and add the scripts references in the order mentioned in the
 
 In the above code, `ej.web.all.min.js` script reference has been added for demonstration purpose. It is not recommended to use this for deployment purpose, as its file size is larger since it contains all the widgets. Instead, you can use [`CSG`](http://csg.syncfusion.com "CSG") utility to generate a custom script file with the required widgets for deployment purpose.
 
-N> For details about Spreadsheet internal and external dependencies refer following [`link`](http://help.syncfusion.com/js/spreadsheet/dependencies "link")
+N> For details about Spreadsheet internal and external dependencies refer following [`link`](https://help.syncfusion.com/js/spreadsheet/dependencies "link")
 
 ## Initialize Spreadsheet
 
@@ -55,7 +55,7 @@ Add a `div` container to render the Spreadsheet.
 
 {% endhighlight %}
 
-Initialize the Spreadsheet by using the ejSpreadsheet method. The Spreadsheet is rendered based on default width and height. You can also customize the Spreadsheet dimension by setting the [`width`](http://help.syncfusion.com/api/js/ejspreadsheet#members:scrollsettings-width "width") and [`height`](http://help.syncfusion.com/api/js/ejspreadsheet#members:scrollsettings-height "height") property in [`scrollSettings`](http://help.syncfusion.com/api/js/ejspreadsheet#members:scrollsettings "scrollSettings").
+Initialize the Spreadsheet by using the ejSpreadsheet method. The Spreadsheet is rendered based on default width and height. You can also customize the Spreadsheet dimension by setting the [`width`](https://help.syncfusion.com/api/js/ejspreadsheet#members:scrollsettings-width "width") and [`height`](https://help.syncfusion.com/api/js/ejspreadsheet#members:scrollsettings-height "height") property in [`scrollSettings`](https://help.syncfusion.com/api/js/ejspreadsheet#members:scrollsettings "scrollSettings").
 
 {% highlight html %}
 
@@ -78,7 +78,7 @@ Now, the Spreadsheet is rendered with default row and column count.
 
 ## Populate Spreadsheet with data
 
-Now, this section explains how to populate JSON data to the Spreadsheet. You can set [`dataSource`](http://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-datasource "dataSource") property in [`sheet`](http://help.syncfusion.com/api/js/ejspreadsheet#members:sheets "sheet") settings to populate JSON data in Spreadsheet.
+Now, this section explains how to populate JSON data to the Spreadsheet. You can set [`dataSource`](https://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-datasource "dataSource") property in [`sheet`](https://help.syncfusion.com/api/js/ejspreadsheet#members:sheets "sheet") settings to populate JSON data in Spreadsheet.
 
 {% highlight javascript %}
 
@@ -96,13 +96,13 @@ $("#Spreadsheet").ejSpreadsheet({
 
 ![](Getting-Started_images/Getting-Started_img2.png)
 
-N> For more details about `data binding` refer following [`link`](http://help.syncfusion.com/js/spreadsheet/data-binding "link")
+N> For more details about `data binding` refer following [`link`](https://help.syncfusion.com/js/spreadsheet/data-binding "link")
 
 ## Apply Conditional Formatting
 
-Conditional formatting helps you to apply formats to a cell or range with certain color based on the cells values. You can use [`allowConditionalFormats`](http://help.syncfusion.com/api/js/ejspreadsheet#members:allowconditionalformats "allowConditionalFormats") property to enable/disable Conditional formats.
+Conditional formatting helps you to apply formats to a cell or range with certain color based on the cells values. You can use [`allowConditionalFormats`](https://help.syncfusion.com/api/js/ejspreadsheet#members:allowconditionalformats "allowConditionalFormats") property to enable/disable Conditional formats.
 
-To apply conditional formats for a range use [`setCFRule`](http://help.syncfusion.com/api/js/ejspreadsheet#methods:xlcformat-setcfrule "setCFRule") method. The following code example illustrates this,
+To apply conditional formats for a range use [`setCFRule`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlcformat-setcfrule "setCFRule") method. The following code example illustrates this,
 
 {% highlight javascript %}
 
@@ -120,11 +120,11 @@ function loadComplete() {
 
 ![](Getting-Started_images/Getting-Started_img3.png)
 
-N> For more details about `Conditional Formatting` refer following [`link`](http://help.syncfusion.com/js/spreadsheet/data-presentation#conditional-formatting "link")
+N> For more details about `Conditional Formatting` refer following [`link`](https://help.syncfusion.com/js/spreadsheet/data-presentation#conditional-formatting "link")
 
 ## Export Spreadsheet as Excel File
 
-The Spreadsheet can save its data, style, format into an excel file. To enable save option in Spreadsheet set [`allowExporting`](http://help.syncfusion.com/api/js/ejspreadsheet#members:exportsettings-allowexporting "allowExporting") option in [`exportSettings`](http://help.syncfusion.com/api/js/ejspreadsheet#members:exportsettings "exportSettings") as `true`. Since Spreadsheet uses server side helper to save documents set [`excelUrl`](http://help.syncfusion.com/api/js/ejspreadsheet#members:exportsettings-excelurl "excelUrl") in [`exportSettings`](http://help.syncfusion.com/api/js/ejspreadsheet#members:exportsettings "exportSettings") option. The following code example illustrates this,
+The Spreadsheet can save its data, style, format into an excel file. To enable save option in Spreadsheet set [`allowExporting`](https://help.syncfusion.com/api/js/ejspreadsheet#members:exportsettings-allowexporting "allowExporting") option in [`exportSettings`](https://help.syncfusion.com/api/js/ejspreadsheet#members:exportsettings "exportSettings") as `true`. Since Spreadsheet uses server side helper to save documents set [`excelUrl`](https://help.syncfusion.com/api/js/ejspreadsheet#members:exportsettings-excelurl "excelUrl") in [`exportSettings`](https://help.syncfusion.com/api/js/ejspreadsheet#members:exportsettings "exportSettings") option. The following code example illustrates this,
 
 {% highlight javascript %}
 
@@ -138,9 +138,9 @@ $("#Spreadsheet").ejSpreadsheet({
 
 {% endhighlight %}
 
-Use shortcut [`Ctrl + S`](http://help.syncfusion.com/js/spreadsheet/keyboard-shortcuts "Ctrl + S") to save Spreadsheet as excel file.
+Use shortcut [`Ctrl + S`](https://help.syncfusion.com/js/spreadsheet/keyboard-shortcuts "Ctrl + S") to save Spreadsheet as excel file.
 
-N> 1. For more details about `Export` refer following [`link`](http://help.syncfusion.com/js/spreadsheet/open-and-save#save "link")
-N> 2. For more details about `Server Configuration` refer following [`link`](http://help.syncfusion.com/js/spreadsheet/open-and-save#server-configuration "link")
+N> 1. For more details about `Export` refer following [`link`](https://help.syncfusion.com/js/spreadsheet/open-and-save#save "link")
+N> 2. For more details about `Server Configuration` refer following [`link`](https://help.syncfusion.com/js/spreadsheet/open-and-save#server-configuration "link")
 
 

@@ -156,7 +156,7 @@ Member Editor is a dialog which displays the members of the current hierarchy in
 
 ![](OLAP-Client-Elements_images/Member editor.png)
 
-The “Check All” and “Uncheck All” option in the dialog lets the user to select and unselect entire nodes for filtering. For more details, about filtering, [click here](http://help.syncfusion.com/js/pivotclient/olap-data-exploration#filtering-by-member).
+The “Check All” and “Uncheck All” option in the dialog lets the user to select and unselect entire nodes for filtering. For more details, about filtering, [click here](https://help.syncfusion.com/js/pivotclient/olap-data-exploration#filtering-by-member).
 
 ## Toolbar
 
@@ -282,4 +282,4 @@ On selecting the required report from the report list, the selected report will 
 ![](OLAP-Client-Elements_images/report list 2.png)
 
 ## PivotGrid and PivotChart
-The [PivotGrid](http://help.syncfusion.com/js/pivotgrid/overview) and [PivotChart](http://help.syncfusion.com/js/pivotchart/overview) controls will be rendered with respect to the operations done at axis element builder.
+The [PivotGrid](https://help.syncfusion.com/js/pivotgrid/overview) and [PivotChart](https://help.syncfusion.com/js/pivotchart/overview) controls will be rendered with respect to the operations done at axis element builder.

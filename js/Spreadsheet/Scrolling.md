@@ -19,7 +19,7 @@ You can scroll through worksheet using one of the following ways,
 
 ## Set height and width for Scrolling
 
-To set height and width in spreadsheet use [`height`](https://help.syncfusion.com/api/js/ejspreadsheet#members:scrollsettings-height "height") and [`width`](https://help.syncfusion.com/api/js/ejspreadsheet#members:scrollsettings-width "width") property in [`scrollSettings`](https://help.syncfusion.com/api/js/ejspreadsheet#members:scrollsettings "scrollSettings"). The default value for [`height`](http://help.syncfusion.com/api/js/ejspreadsheet#members:scrollsettings-height "height") and [`width`](http://help.syncfusion.com/api/js/ejspreadsheet#members:scrollsettings-width "width") is `100%`. The height and width can be set in percentage and pixel. 
+To set height and width in spreadsheet use [`height`](https://help.syncfusion.com/api/js/ejspreadsheet#members:scrollsettings-height "height") and [`width`](https://help.syncfusion.com/api/js/ejspreadsheet#members:scrollsettings-width "width") property in [`scrollSettings`](https://help.syncfusion.com/api/js/ejspreadsheet#members:scrollsettings "scrollSettings"). The default value for [`height`](https://help.syncfusion.com/api/js/ejspreadsheet#members:scrollsettings-height "height") and [`width`](https://help.syncfusion.com/api/js/ejspreadsheet#members:scrollsettings-width "width") is `100%`. The height and width can be set in percentage and pixel. 
 
 The following code example describes the above behavior.
 

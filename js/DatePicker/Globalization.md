@@ -11,7 +11,7 @@ documentation: ug
 DatePicker has been provided with Built-in localization support, so that it will be able adapt based on culture specific locale defined for it. 
 
 More than 350 culture specific files are available to localize the date. To know more about EJ globalize support, please refer the below link      
- [http://help.syncfusion.com/js/localization](http://help.syncfusion.com/js/localization) 
+ [https://help.syncfusion.com/js/localization](https://help.syncfusion.com/js/localization) 
 
 N> Seven culture-specific script files are available in the below specified location. For all other culture files, please download from the [GitHub](https://github.com/syncfusion/ej-global/tree/master/i18n) location.
 
@@ -60,7 +60,7 @@ Set German culture to DatePicker at initialization.
 
 ## Watermark and Today Button Text
 
-By default DatePicker input has **“select date”** as watermark text, you can also change this value by using [watermarkText](http://help.syncfusion.com/api/js/ejdatepicker#members:watermarktext) property. Also there’s a today button in DatePicker calendar which allows you to quick select the current date and its value can be changed by using **‘buttonText’** property.
+By default DatePicker input has **“select date”** as watermark text, you can also change this value by using [watermarkText](https://help.syncfusion.com/api/js/ejdatepicker#members:watermarktext) property. Also there’s a today button in DatePicker calendar which allows you to quick select the current date and its value can be changed by using **‘buttonText’** property.
 
 {% highlight javascript %}
 

@@ -12,7 +12,7 @@ DatePicker provides more flexible way to customize the below listed properties.
 
 ## Set Dimension 
 
-By default DatePicker has standard height and width (height: ‘30px’ and width: ’143px’). You can change this height and width by using [height](http://help.syncfusion.com/api/js/ejdatepicker#members:height) and [width](http://help.syncfusion.com/api/js/ejdatepicker#members:width) property respectively.
+By default DatePicker has standard height and width (height: ‘30px’ and width: ’143px’). You can change this height and width by using [height](https://help.syncfusion.com/api/js/ejdatepicker#members:height) and [width](https://help.syncfusion.com/api/js/ejdatepicker#members:width) property respectively.
 
 {% highlight javascript %}
 
@@ -52,7 +52,7 @@ Mostly dimension plays a vital role in web application to get responsive layout 
 
 ## Show Footer
 
-You can show or hide the footer of DatePicker calendar by using [showFooter](http://help.syncfusion.com/api/js/ejdatepicker#members:showfooter) property. 
+You can show or hide the footer of DatePicker calendar by using [showFooter](https://help.syncfusion.com/api/js/ejdatepicker#members:showfooter) property. 
 
 {% highlight javascript %}
 
@@ -74,7 +74,7 @@ N>  Footer contains the today button to quickly navigate to the current date. By
 
 ## Show Popup Button
 
-DatePicker textbox contains a button to open the DatePicker calendar. You can hide this DatePicker calendar button using [showPopupButton](http://help.syncfusion.com/api/js/ejdatepicker#members:showpopupbutton) value as false.
+DatePicker textbox contains a button to open the DatePicker calendar. You can hide this DatePicker calendar button using [showPopupButton](https://help.syncfusion.com/api/js/ejdatepicker#members:showpopupbutton) value as false.
 
 By hiding this button, you can open the DatePicker by focusing the input textbox element itself.
 
@@ -96,7 +96,7 @@ By hiding this button, you can open the DatePicker by focusing the input textbox
 
 ## Show Other Months
 
-You can show or hide the other month days from DatePicker calendar by using [showOtherMonths](http://help.syncfusion.com/api/js/ejdatepicker#members:showothermonths) property.
+You can show or hide the other month days from DatePicker calendar by using [showOtherMonths](https://help.syncfusion.com/api/js/ejdatepicker#members:showothermonths) property.
 
 {% highlight javascript %}
 
@@ -116,7 +116,7 @@ You can show or hide the other month days from DatePicker calendar by using [sho
 
 ## Highlight Special Date
 
-DatePicker allows you to highlight the special dates in DatePicker calendar by using [specialDates](http://help.syncfusion.com/api/js/ejdatepicker#members:specialdates) property. It receives the array of JSON data, in which the data should contain the date value, icon CSS class and tooltip as field values with any names.
+DatePicker allows you to highlight the special dates in DatePicker calendar by using [specialDates](https://help.syncfusion.com/api/js/ejdatepicker#members:specialdates) property. It receives the array of JSON data, in which the data should contain the date value, icon CSS class and tooltip as field values with any names.
 
 {% highlight javascript %}
 
@@ -124,7 +124,7 @@ DatePicker allows you to highlight the special dates in DatePicker calendar by u
 
 {% endhighlight %}
 
-And you can map those above field names to DatePicker by using [fields](http://help.syncfusion.com/api/js/ejdatepicker#members:fields) property, which holds following members.
+And you can map those above field names to DatePicker by using [fields](https://help.syncfusion.com/api/js/ejdatepicker#members:fields) property, which holds following members.
 
 <table>
 <tr>

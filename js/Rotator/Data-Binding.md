@@ -101,7 +101,7 @@ Two types of **Knockout** binding are supported,
 
 For more information about the **Knockout** binding, you can refer the online documentation in the following link location,
 
-<http://help.syncfusion.com/js/knockoutjs>
+<https://help.syncfusion.com/js/knockoutjs>
 
 Add the following script files along with the given code to access KnockoutJS binding. They have JS library for KnockoutJS binding.
 
@@ -168,7 +168,7 @@ Rotator is availed with two types of AngularJS support namely,
 
 To know more details about the **Angular** **binding**, you can refer the following link location,
 
-<http://help.syncfusion.com/js/angularjs>
+<https://help.syncfusion.com/js/angularjs>
 
 Add the following script files as given in the following example to access AngularJS binding. They have JS library for AngularJS binding.
 

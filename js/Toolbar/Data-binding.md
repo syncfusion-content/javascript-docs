@@ -202,7 +202,7 @@ Two-way binding supports both the processes – it applies the observable values
 
 For more information about the KnockoutJS binding, refer the following link location,
 
-<http://help.syncfusion.com/js/knockoutjs>
+<https://help.syncfusion.com/js/knockoutjs>
 
 
 N> Add the following script files along with the specified code to access KnockoutJS binding. It contains JS library for KnockoutJS binding.
@@ -256,7 +256,7 @@ Two-way binding supports both the processes – it applies the scope values to t
 
 To know more detail about the AngularJS binding, refer the following link location,
 
-<http://help.syncfusion.com/js/angularjs>
+<https://help.syncfusion.com/js/angularjs>
 
 
 Add the following script files as given in the below example to access KnockoutJS binding. It contains JS library for AngularJS binding.

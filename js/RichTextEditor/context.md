@@ -74,7 +74,7 @@ N> We have given support to own context menu by restricting the default browser 
 However we can disable the context menu by using ShowContextMenu API and it needs to be set as false, if you wish to continue with default browser context menu.
 
 ## Adding an item with the context menu:
-  To add a new item to the editor contextmenu, you need to use the ‘[insertMenuOption’](http://help.syncfusion.com/api/js/ejrte#methods:insertMenuOption "") method and in order to handle the contextmenu item click using the ‘[contextMenuClick](http://help.syncfusion.com/api/js/ejrte#events:contextMenuClick "")’ client side-event.
+  To add a new item to the editor contextmenu, you need to use the ‘[insertMenuOption’](https://help.syncfusion.com/api/js/ejrte#methods:insertMenuOption "") method and in order to handle the contextmenu item click using the ‘[contextMenuClick](https://help.syncfusion.com/api/js/ejrte#events:contextMenuClick "")’ client side-event.
 
 {% highlight html %}
 
@@ -99,7 +99,7 @@ spriteCssClass:"e-rte-toolbar-icon tableProperties"});
 
 
 ## Removing an item from the context menu:
-  To remove a menu-item from the editor contextmenu, you have to use the ‘removeMenuOption’ method from the ejRTE object and find the method and parameter details with the [API-document](http://help.syncfusion.com/api/js/ejrte#methods:removeMenuOption "").
+  To remove a menu-item from the editor contextmenu, you have to use the ‘removeMenuOption’ method from the ejRTE object and find the method and parameter details with the [API-document](https://help.syncfusion.com/api/js/ejrte#methods:removeMenuOption "").
 
 {% highlight html %}
 <textarea id="texteditor">     

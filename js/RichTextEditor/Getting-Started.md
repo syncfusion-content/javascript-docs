@@ -29,7 +29,7 @@ Create a new HTML file and include the below code
 </html>
 {% endhighlight %}
 
-Add link to the CSS file from the specific theme folder to your HTML file within the head section. Refer the built-in available themes from [here](http://helpjs.syncfusion.com/js/theming-in-essential-javascript-components#). 
+Add link to the CSS file from the specific theme folder to your HTML file within the head section. Refer the built-in available themes from [here](https://help.syncfusion.com/js/theming-in-essential-javascript-components#). 
 
 {% highlight html %}
 <head>
@@ -39,7 +39,7 @@ Add link to the CSS file from the specific theme folder to your HTML file within
 </head>
 {% endhighlight %}
 
-Also add links to the [CDN](http://helpjs.syncfusion.com/js/cdn#) Script files along with the other external dependencies as depicted below,
+Also add links to the [CDN](https://help.syncfusion.com/js/cdn#) Script files along with the other external dependencies as depicted below,
 
 {% highlight html %}
 <head>
