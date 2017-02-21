@@ -716,7 +716,7 @@ Diagram allows to refresh the layout at runtime. To refresh the layout, refer to
 
 ### nodeTemplate
 
-The nodeTemplate function is provided for the purpose of customizing nodes.It will be called for each node on node iniitialization. In this function, we can customize the node style and its properties and can bind the custom JSON with node.  
+The nodeTemplate function is provided for the purpose of customizing nodes.It will be called for each node on node initialization. In this function, we can customize the node style and its properties and can bind the custom JSON with node.  
 
 {% highlight javascript %}
 
@@ -762,7 +762,7 @@ $("#diagramcontent").ejDiagram(
 
 ### connectorTemplate
 
-The connectorTemplate function is provided for the purpose of customizing connectors.It will be called for each connector on connector iniitialization. In this function, we can customize the connector style and its properties and can bind the custom JSON with connector.
+The connectorTemplate function is provided for the purpose of customizing connectors.It will be called for each connector on connector initialization. In this function, we can customize the connector style and its properties and can bind the custom JSON with connector.
 
 {% highlight javascript %}
 

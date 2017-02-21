@@ -383,7 +383,7 @@ $("#diagram").ejDiagram({
 
 {% endhighlight %}
 
-![](/js/Diagram/Node_images/Label_img33.png)
+![](/js/Diagram/Label_images/Label_img33.png)
 
 ## Wrapping
 
