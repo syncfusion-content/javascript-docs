@@ -129,3 +129,4 @@ Notes:
 The following screen shot depicts the work, task type and effort driven fields in Gantt.
 
 ![](WorkField_images/WorkField_img1.png)
+
