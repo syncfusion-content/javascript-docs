@@ -336,3 +336,4 @@ The following screenshot shows Gantt with French culture.
 
 ![](/js/Gantt/Localization_images/Localization_img1.png)
 
+[Click](http://js.syncfusion.com/demos/web/#!/bootstrap/gantt/localization) here to view the online demo sample for localization support in Gantt.

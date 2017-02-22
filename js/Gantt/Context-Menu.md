@@ -144,3 +144,4 @@ The screenshot of the custom context menu items in Gantt control is as follows.
 
 ![](/js/Gantt/Context-Menu_images/Context-Menu_img3.png)
 
+[Click](http://js.syncfusion.com/demos/web/#!/bootstrap/gantt/contextmenu/customcontextmenu) here to view the online demo sample for custom context menu in Gantt.
