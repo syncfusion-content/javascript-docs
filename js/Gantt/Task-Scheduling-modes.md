@@ -55,7 +55,7 @@ $("#GanttContainer").ejGantt({
 
 ## **Custom**
 
-When the **taskSchedulingMode** property is set as `custom`, the scheulding mode for each tasks will be mapped form the data source field. The property **taskSchedulingModeMapping** is used to map the scheduling mode field from the data source.
+When the **taskSchedulingMode** property is set as `custom`, the scheduling mode for each tasks will be mapped form the data source field. The property **taskSchedulingModeMapping** is used to map the scheduling mode field from the data source.
 
 {% highlight javascript %}
 
