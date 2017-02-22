@@ -149,14 +149,13 @@ var options = {
 	//Stretch Option for exporting the Image
 	stretch: "fill",
 	multiplePage: false
-	};
+};
 diagram.exportDiagram(options);
 
-{% endhighlight %}
-
-By default, Diagram is exported with stretch option as "none". You can export Diagram with following stretch options.
-
+//By default, Diagram is exported with stretch option as "none". You can export Diagram with following stretch options.
 * fill
 * uniform
 * uniformtofill
 * none
+
+{% endhighlight %}

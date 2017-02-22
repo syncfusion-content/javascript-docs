@@ -12,7 +12,7 @@ documentation: ug
 UML activity Shapes used to draw a behavior diagram which shows flow of control or object flow with emphasis on the sequence and conditions of the flow.
 These diagrams are useful for analyzing a use case by describing what actions need to take place and when they should occur, describing a complicates sequential algorithm and modeling applications with parallel processes. 
 
-To create a UMLActivity shape, the “type” of the node should be set as “umlactivity” and its “shape” should be set as any one of the built-in shape.
+To create a UMLActivity shape, the “type” of the node should be set as "UMLActivity" and its “shape” should be set as any one of the built-in shape.
 The following code example illustrates how to create a simple behavior diagram.
  
  {% highlight javascript %}
