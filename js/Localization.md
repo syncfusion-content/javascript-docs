@@ -11,17 +11,14 @@ documentation: ug
 
 ## Globalization
 
-Syncfusion Components has been provided with the built-in globalization support, so that it will be able to adapt based on the culture-specific number format, date format based on the **locale** defined for it.Globalization values will be automatically used when locale property is set with locale value (e.g.) en-US.The **en-US** locale is currently being used in all the Syncfusion components by default. 
+Syncfusion Components has been provided with the built-in globalization support, so that it will be able to adapt for the culture-specific number and date format based on the defined **locale** property. Globalization values will be automatically used when locale property is set with locale value (e.g.) en-US. The **en-US** locale is currently being used in all the Syncfusion components by default. 
 
 To globalize the Syncfusion components into a particular culture, it is necessary to refer the below specified scripts in your application,
 
-* Other culture-specific script files, to which contains globalization contents , to which specific culture you need to adapt any of our Syncfusion control.
+* **ej.globalize.min.js** is mandatory for processing specific source-side actions globally, in this we are having methods to set the culture.
+* Culture-specific script files(eg: ej.culture.de-DE.min.js ), which contains specific culture that you need to adapt any of our Syncfusion control.
 
 I> **ej.globalize.min.js** library avails as built-in within ej.web.all.min.js file, therefore it is not necessary to externally refer it in your application (applicable for version 13.4.0.53 and higher). For version lower than 13.4.0.53, refer jQuery.globalize.min.js along with ej.web.all.min.js
-
-N> **ej.globalize.min.js** (Mandatory for processing specific source-side actions globally, in this we are having methods to set the culture).
-
-N> Seven culture-specific script files are available in the below specified location. For all other culture files, please download from the [GitHub](https://github.com/syncfusion/ej-global/tree/master/i18n) location.
 
 <table>
 <tr>
@@ -38,11 +35,11 @@ N> Seven culture-specific script files are available in the below specified loca
 </tr>
 </table>
 
-N>   To translate our control content from default English to any of the culture, say For example - German language, then you need to refer the **ej.culture.de-DE.min.js** file in your application, after the reference of ej.web.all.min.js file. 
-
+N>   To translate our control content from default English to any of the culture, say For example - German language, then you need to refer the **ej.culture.de-DE.min.js** file in your application, after the reference of ej.web.all.min.js file.
+N>   Seven culture-specific script files are available in the below specified location. For all other culture files, please download from the [GitHub](https://github.com/syncfusion/ej-global/tree/master/i18n) location.
 
 ### Globalizing the Syncfusion components
-Syncfusion components like DatePicker which supports globalization to display day name, month name, format for each culture.For this we need to specify locale property. Usually, the culture codes are defined in short forms like en-US for English culture, de-DE for German culture, fr-FR for French culture and so on. DatePicker has been provided with Built-in localization support, so that it will be able adapt based on culture specific locale defined for it .The below sample code shows how to define the locale property for DatePicker control,
+Syncfusion components like DatePicker which supports globalization to display day name, month name, date format for each culture, based on the specified **locale** property. Usually, the culture codes are defined in short forms like **en-US** for English culture, **de-DE** for German culture, **fr-FR** for French culture and so on. The below sample code shows how to define the locale property for **DatePicker** control,
 
 {% highlight javascript %}
 
@@ -56,12 +53,12 @@ $("#MyDatePicker").ejDatePicker({
 
 ### Use of Built-in localized words in the DatePicker control
 
-The date formats, day names and month names are automatically translated into the specific culture based on the culture-code assigned to the **locale** property, as these dates related common conversions are processed as built-in within the source. Here, the above code will render the DatePicker control in **German** culture, as shown below,
+The date formats, day names and month names are automatically translated into the specific culture based on the culture-code assigned to the **locale** property, as these dates related common conversions are processed as built-in within the source based on ej.globalize and the culture specific file. Here, the above code will render the DatePicker control in **German** culture, as shown below,
 ![](/js/Localization_images/Localization_img1.png) 
 
 #### Example 1: Defining locale property in the DatePicker control
 
-Refer the same steps mentioned in the previous example – as it is applicable for this **DataPicker** sample too, where only the control initialization needs to be done for **DataPicker** control and **locale** with the appropriate **culture-code [de-DE]** as shown below,
+Refer the **JavaScript Control Initialization** document for creating a HTML page with Syncfusion components from the link [here](/js/control-initialization), where only the control initialization needs to be done for **DataPicker** control and **locale** with the appropriate **culture-code [de-DE]** as shown below,
 
 {% highlight html %}
 
@@ -102,12 +99,12 @@ Browse your HTML page in any of the web browser and now the screen will display 
 
 Define a dropdownlist control additionally in your HTML page along with the DatePicker control, to hold the required culture codes. When the user selects a particular culture code option from the dropdownlist, the datepicker will get localized appropriately based on the dynamic selection made – which is depicted in the below code.
 
-N>   In the below example, copy the culture files of **vi-VN** and **fr-FR** into the **Scripts** folder of your application and refer it in the head section along with the other CSS and script references, so that the **locale** of the datepicker switches between the selected culture appropriately.
+N> In the below example, copy the culture files of **vi-VN** and **fr-FR** into the **scripts** folder of your application and refer it in the head section along with the other CSS and script references, so that the **locale** of the datepicker switches between the selected culture appropriately.
 
 
 {% highlight html %}
 
-   <!DOCTYPE html>
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>My first HTML page</title>
@@ -168,17 +165,13 @@ N>   In the below example, copy the culture files of **vi-VN** and **fr-FR** int
 
 ## Localization
 
-All our Syncfusion Components has been provided with the built-in localization support, so that it will be able to adapt based on the culture-specific **locale** defined for it.The **en-US** locale is currently being used in all the Syncfusion components by default. 
+All our Syncfusion Components has been provided with the built-in localization support, so that it will be able to adapt based on the defined **locale** value.The **en-US** locale is currently being used in all the Syncfusion components by default. 
 
 To localize the Syncfusion components into a particular culture, it is necessary to refer the below specified scripts in your application,
 
-* Other culture-specific script files which contains localized texts, to which specific culture you need to adapt any of our Syncfusion control.
+* Culture-specific script files which contains localized texts that you need to adapt any of our Syncfusion control.
 
 I> **ej.globalize.min.js** library avails as built-in within ej.web.all.min.js file, therefore it is not necessary to externally refer it in your application (applicable for version 13.4.0.53 and higher). For version lower than 13.4.0.53, refer jQuery.globalize.min.js along with ej.web.all.min.js
-
-N> **ej.globalize.min.js** (this file used to set the culture using setCulture method.).
-
-N> Seven culture-specific script files are available in the below specified location. For all other culture files, please download from the [GitHub](https://github.com/syncfusion/ej-global/tree/master/l10n) location.
 
 <table>
 <tr>
@@ -196,10 +189,11 @@ N> Seven culture-specific script files are available in the below specified loca
 </table>
 
 N>   To translate our control content from default English to any of the culture, say For example - German language, then you need to refer the **ej.localetexts.de-DE.min.js** file in your application, after the reference of ej.web.all.min.js file. 
-
+N>   Seven culture-specific script files are available in the below specified location. For all other culture files, please download from the [GitHub](https://github.com/syncfusion/ej-global/tree/master/l10n) location.
+N>   **ej.globalize.min.js** file contains methods to set the culture.
 
 ### Localizing the Syncfusion components 
-Syncfusion components like Grid, Gantt, File Explorer and Schedule which defines a collection of custom localized-text for each culture. For this we need to specify locale property.
+Syncfusion components like Grid, Gantt, File Explorer and Schedule which defines a collection of custom localized-text for each culture based on the **locale** property.
 
 ### Use of custom localized words in Grid control
 To apply custom localized label collections appropriately for each custom-texts, we need to define separate collection of culture based translated words for each culture as shown below,
@@ -213,7 +207,7 @@ N>               **ej.Grid.Locale["fr-FR"] = { … };**
 
 #### Example 1: Defining locale property in the Grid control
 
-Refer the **JavaScript Control Initialization** document for creating a HTML page with Syncfusion components from the link[here](/js/control-initialization). The very first requirement to localize the Grid control into **de-DE** culture is to refer the **ej.localetexts.de-DE.min.js** file in your HTML application, which will be available in the location mentioned in the above note section.
+Refer the same steps mentioned in the previous example – as it is applicable for this **Grid** sample too. The very first requirement to localize the Grid control into **de-DE** culture is to refer the **ej.localetexts.de-DE.min.js** file for localization content and **ej.culture.de-DE.min.js** file for globalize number and date format in your HTML application, which will be available in the location mentioned in the above note section.
 
 {% highlight html %}
 
