@@ -103,3 +103,4 @@ The following screen shot shows the predecessor editing in Gantt control.
 
 ![](/js/Gantt/Editing_images/Editing_img3.png)
 
+[Click](http://js.syncfusion.com/demos/web/#!/bootstrap/gantt/editing) here to view the online demo sample for editing in Gantt.

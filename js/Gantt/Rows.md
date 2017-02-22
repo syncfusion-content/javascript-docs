@@ -150,6 +150,8 @@ The following screenshot depicts a row drag and drop in the Gantt widget.
 
 ![](/js/Gantt/Rows_images/Rows_img4.png)
 
+[Click](http://js.syncfusion.com/demos/web/#!/bootstrap/gantt/rowdraganddrop) here to view the online demo sample for row drag and drop in Gantt
+
 ### Customizing Drag tooltip
 
 The [tooltipItems](/api/js/ejgantt#members:dragtooltip-tooltipitems) property is used to customize the tooltip items. By using this property, specific fields can be rendered in the tooltip. By default this property value is `null`, and all the defined field items are rendered in the tooltip.

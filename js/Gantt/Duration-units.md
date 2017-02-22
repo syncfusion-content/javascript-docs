@@ -97,3 +97,5 @@ ej.Gantt.Locale["en-US"] = {
 
 N> **durationUnitTexts** property is used to display the unit of duration in columns and taskbar tooltips.
 N> **durationUnitEditText** property is used to save the edited duration unit value on editing action.
+
+[Click](http://js.syncfusion.com/demos/web/#!/bootstrap/gantt/schedulingconcepts/durationunits) here to view the online demo sample for mapping the duration units.

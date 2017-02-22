@@ -49,3 +49,4 @@ The following screenshot shows Gantt control with Resources.
 
 ![](/js/Gantt/Resources_images/Resources_img1.png)
 
+You can find the online demo sample for allocating resources in Gantt [here](http://js.syncfusion.com/demos/web/#!/bootstrap/gantt/schedulingconcepts/resourceallocation)

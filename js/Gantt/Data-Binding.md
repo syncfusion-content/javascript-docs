@@ -228,6 +228,8 @@ The following screenshot shows the output of the above steps.
 
 ![](/js/Gantt/Data-Binding_images/Data-Binding_img2.png)
 
+You can find the online demo sample for binding self-referential data [here](http://js.syncfusion.com/demos/web/#!/bootstrap/gantt/databinding/selfreference)
+
 ## Remote data
 
 It is possible to load remote data in Gantt by using ej.DataManager. You can assign the web service data as an ej.DataManager instance to the datasource property. The following example explains how to load the remote data in Gantt.
