@@ -9,21 +9,13 @@ documentation: ug
 
 # Overview  
 
-**DataManager** helps in managing relational data in **JavaScript**. Its rich features make querying data sources easier. **JavaScript** **OData** **Client** fully supports **oData** queries that are enabled in **Web API** & **WCF** data services.
-
-**DataManager** supports different type of data binding, such as:
-
-1. JSON
-
-2. Web Services
-
-3. OData
+The Syncfusion **DataManager** plays a central role in practically all web applications built with Syncfusion UI. It is an abstraction for using local data—arrays of JavaScript objects—or remote data—web services returning **JSON**, **JSONP**, **oData** or **XML**.
 
 Basically, all services that have **JSON** acts as a transport.
 
-##Key Features
+## Key Features
 
-Some important features of the **DataManager** for **JavaScript** are:
+DataManager has many abilities and responsibilities, among which to:
 
 1. **DataManager** - Communicates with data source and returns the desired result based on the Query provided.
 
@@ -34,4 +26,8 @@ Some important features of the **DataManager** for **JavaScript** are:
 4. **Adaptors** – **Adaptors** are specific dataSource type aware interfaces that are used by **DataManager** to communicate with DataSource. Three adaptors are created. They are, ODataAdaptor, JsonAdaptor and UrlAdaptor
 
 5. **Model binding** – Simple model binding is made using **DataManager**. You can directly bind Query result to **HTML** element.
+
+6. Calculate and maintain aggregates, sorting order and paging
+
+In other words, the DataManager fully supports CRUD (Create, Read, Update, Destroy) data operations, and provides both client-side and server-side support for sorting, paging, filtering, grouping, and aggregates.
 
