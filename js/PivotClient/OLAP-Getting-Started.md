@@ -463,13 +463,26 @@ namespace PivotClientDemo
         public Dictionary<string, object> SaveReportToDB(Dictionary<string, object> jsonResult)
         {
             string operationalMode = jsonResult["operationalMode"].ToString(), analysisMode = jsonResult["analysisMode"].ToString(), reportName = string.Empty;
+            bool isDuplicate = true;
             SqlCeConnection con = new SqlCeConnection() { ConnectionString = conStringforDB };
             con.Open();
             reportName = jsonResult["reportName"].ToString() + "##" + operationalMode.ToLower() + "#>>#" + analysisMode.ToLower();
-            SqlCeCommand cmd1 = new SqlCeCommand("insert into ReportsTable Values(@ReportName,@Reports)", con);
+            SqlCeCommand cmd1 = null;
+            foreach (DataRow row in GetDataTable().Rows)
+            {
+                if ((row.ItemArray[0] as string).Equals(reportName))
+                {
+                    isDuplicate = false;
+                    cmd1 = new SqlCeCommand("update ReportsTable set Report=@Reports where ReportName like @ReportName", con);
+                }
+            }
+            if (isDuplicate)
+            {
+                cmd1 = new SqlCeCommand("insert into ReportsTable Values(@ReportName,@Reports)", con);
+            }
             cmd1.Parameters.Add("@ReportName", reportName);
             if (operationalMode.ToLower() == "servermode" && analysisMode == "olap")
-                cmd1.Parameters.Add("@Reports", OLAPUTILS.Utils.GetReportStream(jsonResult["clientReports"].ToString()).ToArray());
+                cmd1.Parameters.Add("@Reports", Syncfusion.JavaScript.Olap.Utils.GetReportStream(jsonResult["clientReports"].ToString()).ToArray());
             else
                 cmd1.Parameters.Add("@Reports", Encoding.UTF8.GetBytes(jsonResult["clientReports"].ToString()).ToArray());
             cmd1.ExecuteNonQuery();
@@ -558,20 +571,10 @@ namespace PivotClientDemo
                     {
                         var reportString = "";
                         OlapDataManager DataManager = new OlapDataManager(connectionString);
-                        reportString = OLAPUTILS.Utils.CompressData(row.ItemArray[1] as byte[]);
+                        reportString = Syncfusion.JavaScript.Olap.Utils.CompressData(row.ItemArray[1] as byte[]);
                         DataManager.Reports = pivotClientHelper.DeserializedReports(reportString);
                         DataManager.SetCurrentReport(DataManager.Reports[0]);
                         return pivotClientHelper.GetJsonData("toolbarOperation", DataManager, "Load Report", jsonResult["reportName"].ToString());
-                    }
-                    else
-                    {
-                        byte[] reportString = new byte[2 * 1024];
-                        reportString = (row.ItemArray[1] as byte[]);
-                        if (analysisMode.ToLower() == "pivot" && operationalMode.ToLower() == "servermode")
-                            dictionary = pivotClientHelper.GetJsonData("LoadReport", ProductSales.GetSalesData(), Encoding.UTF8.GetString(reportString));
-                        else
-                            dictionary.Add("report", Encoding.UTF8.GetString(reportString));
-                        break;
                     }
                 }
             }
