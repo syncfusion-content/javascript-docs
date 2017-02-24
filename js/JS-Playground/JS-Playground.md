@@ -10,7 +10,7 @@ keywords: liveeditor,
 
 # Overview
 
-Syncfusion JS Playground acts as editor for all JavaScript developers to get started with our controls. Using this, customers can save and share their own code with anyone.
+Syncfusion [JS Playground](http://jsplayground.syncfusion.com/) acts as editor for all JavaScript developers to get started with our controls. Using this, customers can save and share their own code with anyone.
 
 Playground shown as below.
 
