@@ -141,7 +141,9 @@ Conditional formatting is enabled by setting [`enableConditionalFormatting`](/ap
 
 {% endhighlight %}
 
-![](PivotGrid-Elements_images/conditional.png)
+![](PivotGrid-Elements_images/FormatDialog.png)
+
+![](PivotGrid-Elements_images/FormattedGrid.png)
 
 ### Export
 
