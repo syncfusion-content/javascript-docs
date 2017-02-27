@@ -557,6 +557,9 @@ Please find the code
 ![](Globalizationandlocalization._images/Globalizationandlocalization._img2.png)
 
 
+I> We have uploaded the predefined language packs for some commonly used cultures in [`this`](https://github.com/syncfusion/ej-global/tree/master/localetexts "culture files") github location. Refer to the github location for getting the predefined language packs for the corresponding culture. The culture file has localized texts for all the Syncfusion controls.
+
+
 ## Globalization
 
 `ej.globalize` library is used to globalize numeric values in Grid control using [`format`](https://help.syncfusion.com/api/js/ejgrid#members:columns-format "format") property in [`columns`](https://help.syncfusion.com/api/js/ejgrid#members:columns "columns"). Globalize values will be automatically used when [`locale`](https://help.syncfusion.com/api/js/ejgrid#members:locale "locale") property is set with locale string value for example `en-US`.
