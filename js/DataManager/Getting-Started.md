@@ -13,7 +13,7 @@ documentation: ug
 
 **DataManager** is used to manage relational data in **JavaScript**. It supports **CRUD** (Create, Read, Update, and Destroy) in individual requests and Batch. **DataManager** uses two different classes, **ej.DataManager** for processing, and **ej.Query** for serving data. **ej.DataManager** communicates with data source and **ej.Query** generates data queries that are read by **DataManager**. 
 
-##Configure Demo Application
+## Configure Demo Application
 
 This section briefly describes how to make a connection to **WCF “Northwind” OData** service and generate a report with top five orders from customer **HANAR** with higher “Freight” charges.  In this application scenario, you can learn how to do paging, filtering and sorting in **DataManager** using **ej.Query**.
 
@@ -50,9 +50,7 @@ Create an **HTML** file. Add the following reference code to the required librar
 
 {% endhighlight %}
 
-
-
-##Create Connection
+## Create Connection
 
 To define connection to data source, you can use **ej.DataManager** class. The data source can be local or remote. Local data source is the local **JavaScript** array and remote data source is any web services. 
 
@@ -81,7 +79,7 @@ var dataManager = ej.DataManager({
 
 You can use **ej.Query** to generate the report from web service.
 
-##Filter
+## Filter
 
 You can generate the **Filter** query to filter the **CustomerID** column based on **VINET** value and it is executed using the **DataManager.**
 
@@ -379,7 +377,7 @@ When you execute the filter query and binding the result to the table, the follo
    </tr>
 </table>
 
-##Sort
+## Sort
 
 You can generate the **Sort** query to sort the **Freight** column in descending order and that is executed using the **DataManager**. 
 
@@ -671,10 +669,12 @@ When you execute the sort query and binding the result to the table, the followi
 
 
 
-##Page
+## Page
 You can generate the **Paging** query to get the top four orders and it is executed using the **DataManager**.  
 The **Page** property of **ejQuery** is used to retrieve the records based on the given **pageIndex** and **pageSize**.
+
 {% highlight html %}
+
 <body>
    <script type="text/javascript">
       var dataManager = ej.DataManager({
@@ -694,7 +694,9 @@ The **Page** property of **ejQuery** is used to retrieve the records based on th
       });
    </script>
 </body>
+
 {% endhighlight %}
+
 When you execute the paging query and binding the result to the table, the following table is displayed.
 <table>
    <tr>
@@ -801,4 +803,57 @@ When you execute the paging query and binding the result to the table, the follo
    </tr>
 </table>
 
+## Widget Binding 
+
+Many Syncfusion UI widgets support data binding, and the Syncfusion DataManager is an ideal binding source for both local and remote data.
+
+### Local DataSource
+
+A DataSource can be created in-line with other Syncfusion UI widget configuration settings, as demonstrated in the example below.
+
+{% highlight html %}
+
+<div id="Grid"></div>
+<script type="text/javascript">
+    $(function () {
+        var data = [  { OrderID: 10248, CustomerID: "VINET", EmployeeID: 5 },
+                        { OrderID: 10249, CustomerID: "AANAR", EmployeeID: 9 },
+                        { OrderID: 10250, CustomerID: "VICTE", EmployeeID: 2 },
+                        { OrderID: 10251, CustomerID: "TOMSP", EmployeeID: 7 },
+                        { OrderID: 10252, CustomerID: "SUPRD", EmployeeID: 6 }];
+        $("#Grid").ejGrid({
+            dataSource: ej.DataManager(data).executeLocal(ej.Query().take(3)),
+            allowPaging: true,
+            columns: [
+                        { field: "OrderID", headerText: "Order ID", width: 75 , textAlign: ej.TextAlign.Right },
+                        { field: "CustomerID", headerText: "Customer ID", width: 80 },
+                        { field: "EmployeeID", headerText: "Employee ID", width: 75, textAlign: ej.TextAlign.Right }
+                    
+            ]
+        });
+    });
+</script>
+
+{% endhighlight %}
+
+### Remote DataSource
+
+To bind remote data to Grid Control, you can assign a service data as an instance of ej.DataManager to the dataSource property.
+
+{% highlight html %}
+
+<div id="Grid"></div>
+<script type="text/javascript">
+    $(function () {
+        $("#Grid").ejGrid({
+            dataSource: ej.DataManager("http://mvc.syncfusion.com/Services/Northwnd.svc/Orders"),
+            allowPaging: true,
+            columns: ["OrderID", "EmployeeID", "CustomerID", "ShipCountry", "Freight"]
+        });
+    });
+</script>
+
+{% endhighlight %}
+
+![](GettingStarted_images/Binding1.png) 
 

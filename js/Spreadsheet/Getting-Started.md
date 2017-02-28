@@ -113,7 +113,7 @@ $("#Spreadsheet").ejSpreadsheet({
 });
 
 function loadComplete() {                
-    this.XLCFormat.setCFRule({ "action": "greaterthan", "input1": "10", "color": "redft", "range": "D2:D8" });
+    this.XLCFormat.setCFRule({ action: "greaterthan", inputs: ["10"], color: "redft", range: "D2:D8" });
 }
 
 {% endhighlight %}

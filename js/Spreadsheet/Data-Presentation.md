@@ -439,7 +439,7 @@ You can do this by one of the following ways,
 
 ## Table
 
-A table is a data structure that organizes information into rows and columns. You can use [`allowFormatAsTable`](https://help.syncfusion.com/api/js/ejspreadsheet#members:allowformatastable "allowFormatAsTable") property enable/disable table operations. 
+A table is a data structure that organizes information into rows and columns. You can use [`allowFormatAsTable`](https://help.syncfusion.com/api/js/ejspreadsheet#members:allowformatastable "allowFormatAsTable") property to enable/disable table operations. 
 
 You can do this by one of the following ways,
 
