@@ -54,6 +54,14 @@ documentation: ug
    </tr>
    <tr>
       <td>
+         ej.waitingpopup.min.js
+      </td>
+      <td>
+        This file is used to render waiting popup when on-demand functionality is enabled in ribbon.
+      </td>
+   </tr>
+   <tr>
+      <td>
          ej.menu.min.js
       </td>
       <td>
