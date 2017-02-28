@@ -358,6 +358,33 @@ $("#diagram").ejDiagram({
 | Center | ![](/js/Diagram/Label_images/Label_img17.png) |
 | Justify | ![](/js/Diagram/Label_images/Label_img18.png) |
 
+## Hyperlink
+
+**Diagram** provides a support to add a hyperlink for the nodes label. It can also be customized.
+
+{% highlight javascript %}
+
+// Defines JSON to create a node
+var nodes = [{
+	name: "hyperlinknode", 
+	fillColor: "white",
+	width: 150, height: 60,
+	offsetX: 100, offsetY: 100,
+	// Sets the hyperlink for the node label
+	labels: [{ "hyperText": "https://www.syncfusion.com" }]
+	}];
+
+//Initializes Diagram
+$("#diagram").ejDiagram({
+	width: "100%", height: "100%",
+	//Initializes nodes collection
+	nodes: nodes
+});
+
+{% endhighlight %}
+
+![](/js/Diagram/Label_images/Label_img33.png)
+
 ## Wrapping
 
 When text overflows node boundaries, you can control it by using text wrapping. So, it is wrapped into multiple lines. The `wrapping` property of label defines how the text should be wrapped. The following code illustrates how to wrap a text in a node.
@@ -665,6 +692,21 @@ $("#diagram").ejDiagram({
 {% endhighlight %}
 
 ![](/js/Diagram/Label_images/Label_img28.png)
+
+## LabelRendering Mode
+
+Labels can be rendered in separate layer as svg or html. 
+
+{% highlight javascript %}
+
+ $("#diagram").ejDiagram({
+	 
+    //renders label in same layer
+    labelRenderingMode: "svg"
+ 
+ });
+
+{% endhighlight %}
 
 ## Limitation
 

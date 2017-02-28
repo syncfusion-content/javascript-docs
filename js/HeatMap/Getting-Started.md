@@ -150,7 +150,49 @@ $("#heatmap").ejHeatMap({
 * This will show the grid data with color based on the range given.
 
 ![](Getting-Started_images/Getting-Started_img2.png)
- 
+
+## Tooltip
+
+HeatMap provides support to show tooltip when mouse hovers over any rows/columns. 
+To show tooltip on mouse over, the toolTipSettings property of model needs to be set with the toolTipSettings templateId and position as shown in the following example.
+
+{% highlight html %}
+
+<!--Define tooltip template-->
+<script type="text/x-jsrender" id="mouseovertoolTipId">
+    <div class="tooltip-style">Custom Tooltip
+        <div style="height:0px;width:100%;border:1px solid white;"></div>
+            <table>
+                <tr>
+                    <td style="width:50px;">Year  </td>
+                    <td>{{:data.Year}}</td>
+                </tr>
+                <tr>
+                    <td>Value  </td>
+                    <td>{{:cellValue}}</td>
+                </tr>
+            </table>
+    </div>
+</script>
+{% endhighlight %}
+
+{% highlight js %}
+
+$("#heatmap").ejHeatMap({
+    //Defines mouse over tooltip
+    toolTipSettings: {
+        templateId:"mouseovertoolTipId",
+        associate:"mouseFollow",
+        position: {
+            stem: { horizontal: "left", vertical: "top" }
+            };
+         }
+    });
+            
+{% endhighlight %}
+
+![](Getting-Started_images/Getting-Started_img4.png)
+
 # Legend
 
 A legend control is used to represent range value in a gradient, create a legend with the same color mapping as shown below.
