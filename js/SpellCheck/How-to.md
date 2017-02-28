@@ -1,194 +1,73 @@
 ---
 title: How-to
-description: Custom Configuration with SpellCheck control
+description: Customizations in SpellCheck control
 platform: js
 control: spellcheck
 documentation: ug
-keywords: spellcheck provider, NHunspell , ASpell, provider
+keywords: target element customizations, target style change
 ---
 # How to
 
-## Using the nHunspell provider with SpellCheck control
+## Target Customization
 
-The EJ SpellCheck supports the nHunspell and ASpell provider dictionary files to find and highlight misspell  words.
+You can customize the target elements styles (ex: background color, font style) using the “targetUpdating” event. Also, this event will be triggered when spell checking through the dialog mode.
 
-### ASpell provider
+This event is triggered before updating the target text into the SpellCheck dialog content/sentence area. You can apply the target element styles within the targetUpdating event.
 
-The ASpell provider support process similar to the Syncfusion base assembly reference process and the only difference is the dictionary file. While using the Syncfusion base assembly need to refer the default.dic file where as need to refer the ASpell.txt file to support the ASpell provider.
+The following code example helps you to customize (to highlight the current spell checking target element with the blue background color) the target element style.
 
-The following code example depicts the way to use the SpellCheck with ASpell provider dictionary file.
+{% highlight html %}
 
-{% highlight c# %}
+<div id="control1">
+        London, one of the most popular touist destinations in the world for a reason. A cultural and hisorical hub, London has an excellent public transportation system that allows visitors to see all the fantatic sights without spending a ton of money on a rental car.
+        London contains four World Heritage Sites.
+</div>
+<textarea id="control2">
+        Paris, the city of lihts and love - this short guide is full of ideas for how to make the most of the romnticism that oozes from every one of its beautiful corners.You couldn't possibly visit Paris without seeing the Eiffel Tower.
+        Even if you do not want to visit this world famous structure, you will see its top from all over Paris.
+</textarea>
+<span id="control3">
+        Rome, one of the world's most facinating cities. The old adage that Rome was not built in a day - and that you won't see it in one or even in three - is true. For the intrepid traveler who can keep pace, here is a list of must-sees.
+        But reember what the Romans say: Even a lifetime isn't enough to see Rome.
+</span>
 
-        SpellCheckController()
-        {
-            if (baseDictionary == null)
-            {
-                // Here we need to specify the corresponding file name
-                string filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"Dictionary\", "ASpell.txt");
-                Stream stream = new FileStream(filePath, FileMode.Open, FileAccess.Read);
-                baseDictionary = new SpellCheckerBase(stream);
-            }
-            this.CustomFileRead();
-        }
+<div id="SpellCheck"></div>
+<div>
+    <input type="button" id="SpellDialog" />
+</div>
 
-{% endhighlight %}
-
-### NHunspell provider
-
-The EJ SpellCheck supports the NHunspell provider to perform the spellcheck operations. For this, need to follow the below steps.
-
-Step 1: Load the required dictionary files by using the following code example in the controller page.
-
-{% highlight c# %}
-        
-        private const string VirtualDictionaryPath = "~/ProviderDictionary/";
-        private string _language;
-        private readonly Hunspell _spell = new Hunspell();
-        SpellCheckProviderController()
-        {
-            if (_spell.IsDisposed)
-            {
-                // culture name of the dictionary file
-                Language = "en-US";
-                string path = System.Web.HttpContext.Current.Server.MapPath(VirtualDictionaryPath + Language.Replace("-", "_"));
-                // calling the load method with the dictionary files as arguments
-                _spell.Load(path + ".aff", path + ".dic");
-            }
-        }
-
-
-{% endhighlight %}
-
-Step 2: Define the CheckWords, SplitWords and GetItems method with the following code examples.
-
-{% highlight c# %}
-
-        [AcceptVerbs("Get")]
-        [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
-        public object CheckWords(string callback, string data)
-        {
-            var serializer = new JavaScriptSerializer();
-            Actions args = (Actions)serializer.Deserialize(data, typeof(Actions));
-            // Here calling the SplitWords method to separate the text and checking its erroneous
-            var errorWordsCollection = this.SplitWords(args.text); 
-            HttpContext.Current.Response.Write(string.Format("{0}({1});", callback, serializer.Serialize(errorWordsCollection)));
-            return string.Empty;
-        }
-
-
-        private readonly List<SuggestionList> _items = new List<SuggestionList>();
-        // Split words method to split the input string and checking the erroneous
-        private List<SuggestionList> SplitWords(string text)
-        {
-            var words = text.Split(null);
-            foreach (var word in words)
-            {
-                string textWord;
-                if (word.EndsWith(".") || word.EndsWith(","))
-                {
-                    textWord = word.Remove(word.Length - 1);
+<script type="text/javascript">
+        $(function () {
+            $("#SpellCheck").ejSpellCheck({
+                dictionarySettings: {
+                    dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/CheckWords",
+                    customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/AddToDictionary"
+                },
+                controlsToValidate: "control1, control2, control3",
+                targetUpdating: function (args) {
+                    if (!ej.isNullOrUndefined(args.previousElement))
+                        $(args.previousElement)[0].style.background = "white"; // updating the style to the previous target element
+                    $(args.currentElement)[0].style.background = "yellow"; // adding the style to the current target element
+                },
+                complete: function (args) {
+                    if (!ej.isNullOrUndefined(args.targetElement))
+                        $(args.targetElement)[0].style.background = "white";  // updating the style to the previous target element
                 }
-                else if (word.Contains('\t') || word.Contains('\n') || word.Contains('\r'))
-                {
-                    textWord = Regex.Replace(word, @"\t|\n|\r", "");
-                }
-                else
-                {
-                    textWord = word;
-                }
-                this.GetItems(textWord);
-            }
+            });
 
-            return _items;
-        }
-        
-        // Private method to form the error word collection list
-        private List<SuggestionList> GetItems(string textWord)
-        {
-            var splitWords = Regex.Replace(textWord, @"[^0-9a-zA-Z\'_]", " ").Split(null);
-            foreach (var inputWord in splitWords)
-            {
-                if (!this.CheckWord(inputWord))
-                {
-                    _items.Add(new SuggestionList
-                    {
-                        ErrorWord = inputWord,
-                        SuggestedWords = this.GetSuggestions(inputWord)
-                    });
-                }
-            }
-            return _items;
-        }
-{% endhighlight %}
+        $("#SpellMenu").ejButton({ 
+            width: 100, 
+            height: 25, 
+            click: "showDialog", 
+            text: "Spell check" 
+        });
+    });
 
-Step 3: Define the below methods to check the word erroneous and get an error words suggestions
+    function showDialog() {
+        var spellObj = $("#SpellCheck").data("ejSpellCheck");
+        spellObj.showInDialog();
+    }
 
-{% highlight c# %}
-        
-        // Here passing the word to NHunspell method to check its erroneous
-        private bool CheckWord(string word)
-        {
-            return _spell.Spell(word);
-        }
-        // Here passing the word to NHunspell method to check its suggestions
-        private string[] GetSuggestions(string word)
-        {
-            return _spell.Suggest(word).ToArray();
-        }
-
+</script>
 
 {% endhighlight %}
-
-Step 4: To perform the add to dictionary operations define the method "AddToDictionary" with the following code example.
-
-{% highlight c# %}
-        
-        [AcceptVerbs("Get")]
-        [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
-        public object AddToDictionary(string callback, string data)
-        {
-            var serializer = new JavaScriptSerializer();
-            Actions args = (Actions)serializer.Deserialize(data, typeof(Actions));
-            if (args.CustomWord != null)
-            {
-                // Here calling the NHunspell add method to include custom word into the dictionary
-                _spell.Add(args.CustomWord);
-            }
-            HttpContext.Current.Response.Write(string.Format("{0}({1});", callback, serializer.Serialize(args.customWord)));
-            return string.Empty;
-        }
-
-{% endhighlight %}
-
-Step 5: Add the following property definition code example to avoid the method accessibility errors.
-
-{% highlight c# %}
-
-        private string Language
-        {
-            get
-            {
-                return _language;
-            }
-            set
-            {
-                _language = value;
-            }
-        }
-        
-        public class SuggestionList
-        {
-            public string ErrorWord { get; set; }
-            public string[] SuggestedWords { get; set; }
-        }
-
-        public class Actions
-        {
-            public string Text { get; set; }
-            public string CustomWord { get; set; }
-        }
-
-{% endhighlight %}
-
-N> Add the above code example changes in the server side file. For example, ejservices ->webapi->SpellChecker-> SpellCheckController 
