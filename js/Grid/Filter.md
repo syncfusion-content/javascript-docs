@@ -537,3 +537,110 @@ List of Column type and Filter operators
             </td>
         </tr>
     </table>
+
+## FilterBar Template
+
+Usually enabling allowFiltering, will create default textbox in Grid FilterBar. So, Using [`filterBarTemplate`] property of `columns` we can render any other controls like autoComplete, DropDownList etc to filter the grid data for the particular column.  
+It has three functions. They are    
+
+1. `create` - It is used to create the control at time of initialize.
+2. `read` - It is used to read the input value at end of typing.
+3. `write` - It is used to assign the value to control at time of filtering.
+
+
+The following code example describes the above behavior.
+
+{% highlight html %}
+<div id="Grid"></div>
+{% endhighlight %}
+
+{% highlight javascript %}
+$(function () {
+            $("#Grid").ejGrid({
+                // the datasource "window.gridData" is referred from jsondata.min.js
+                dataSource: ej.DataManager(window.gridData),
+                allowPaging: true,
+                allowFiltering: true,                
+                columns: [
+                            { field: "OrderID", isPrimaryKey: true, headerText: "Order ID", textAlign: ej.TextAlign.Right, width: 75 },
+                            { field: "CustomerID", width: 100, filterBarTemplate: {
+                                    create: function (args) {
+                                            return "<input>"
+                                    },
+                                    write: function (args) {
+                                           var data = ej.DataManager(window.gridData).executeLocal(new ej.Query().select("CustomerID"));
+                                           args.element.ejAutocomplete({ width: "100%", dataSource: data, enableDistinct: true, focusOut: ej.proxy(args.column.filterBarTemplate.read, this, args) });
+                                    },
+                                    read: function (args) {
+                                          this.filterColumn(args.column.field, "equal", args.element.val(), "and", true)
+                                    },
+                                 },
+                            },
+                            { field: "EmployeeID", width: 100, filterBarTemplate: {
+                                       write: function (args) {
+                                              var data = [{ text: "clear", value: "clear" }, { text: "1", value: 1 }, { text: "2", value: 2 }, { text: "3", value: 3 }, { text: "4", value: 4 },
+                                                        { text: "5", value: 5 }, { text: "6", value: 6 }, { text: "7", value: 7 }, { text: "8", value: 8 }, { text: "9", value: 9 }
+                                                        ]
+                                              args.element.ejDropDownList({ width: "100%", dataSource: data, change: ej.proxy(args.column.filterBarTemplate.read, this, args) })
+                                            },
+                                       read: function (args) {
+                                             if (args.element.val() == "clear") {
+                                                  this.clearFiltering(args.column.field);
+                                                  args.element.val("")
+                                                 }
+                                             this.filterColumn(args.column.field, "equal", args.element.val(), "and", true)
+                                            },
+                                     }
+                             },
+                             { field: "Freight", width: 100, filterBarTemplate: {
+                                       write: function (args) {
+                                              args.element.ejNumericTextbox({ width: "100%",decimalPlaces: 2, focusOut: ej.proxy(args.column.filterBarTemplate.read, this, args) });
+                                           },
+                                       read: function (args) {
+                                             this.filterColumn(args.column.field, "equal", args.element.val(), "and", true)
+                                               },
+                                         }
+                              },
+                              { field: "ShipCountry", headerText: "Ship Country", width: 90 },
+                              { field: "Verified", textAlign:ej.TextAlign.Center, headerText: "Verified", width: 80, filterBarTemplate: {
+                                        write: function (args) {
+                                               args.element.ejCheckBox({ change: ej.proxy(args.column.filterBarTemplate.read, this, args) });
+                                         },
+                                        read: function (args) {
+                                              this.filterColumn(args.column.field, "equal", args.element.parent().attr('aria-checked'), "and", true)
+                                         },
+                                     }
+                               }
+                ] 
+            });
+			 var data = [{value:"Freight",text:"Freight"},{value:"Verified",text:"Verified"}];
+			 $('#autoDefault').ejDropDownList({
+                dataSource: data,           
+                width: "120px",
+				change : function(args){
+					var obj = $("#Grid").ejGrid("instance");
+					obj.clearFiltering(args.text)
+					if(args.text == "Verified")
+					$("#ej" +args.text+ "_filterBarcell").find('.e-icon').removeClass('e-checkmark');
+					if(args.text == "Freight")
+					{
+						var numObj = $("#Freight_filterBarcell").ejNumericTextbox('instance');
+						numObj.option("value"," ")
+					}
+					$("#autoDefault").ejDropDownList("model.selectedIndex",-1);
+				},
+				
+            });
+            $("#sampleProperties").ejPropertiesPanel();
+        });
+{% endhighlight %}
+
+The following output is displayed as a result of the above code example.
+
+![](filtering_images/filtering_img11.png)
+{:caption}
+FilterBar Template
+
+![](filtering_images/filtering_img12.png)
+{:caption}
+After Filtering
