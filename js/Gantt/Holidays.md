@@ -16,7 +16,7 @@ Holidays in Gantt control is used to highlight the non-working days in Gantt con
     $("#GanttContainer").ejGantt({
         //...
         holidays: [{
-            day: "2/11/2014",
+            day: "2/03/2014",
             label: " Public holiday",
             background: "yellowgreen "
         }]

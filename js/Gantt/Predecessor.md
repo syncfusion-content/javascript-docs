@@ -23,13 +23,13 @@ We can define offset with various offset duration units for predecessors by usin
 
 var data = [
     //...
-    Predecessor: "4FS+2d" { 
+    Predecessor: "3FS+2d" { 
         //...
-        Predecessor: "4FS+16h"
+        Predecessor: "3FS+16h"
     },
     { 
         //...
-        Predecessor: "4FS+960m"
+        Predecessor: "3FS+960m"
     }
 ];
 $("#GanttContainer").ejGantt({

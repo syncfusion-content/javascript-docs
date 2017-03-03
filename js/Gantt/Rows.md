@@ -197,13 +197,13 @@ The following code shows how to render row drag tooltip with tooltip template.
 
         <td class="border" style='height:30px;'>
 
-            <div>{{“{{“}}:#data['TaskId'] {{}}}}</div>
+            <div>{{"{{"}}:#data['TaskId'] {{}}}}</div>
 
         </td>
 
         <td class="border" style='height:30px;'>
 
-            <div>{{“{{“}}:#data['TaskName'] {{}}}}</div>
+            <div>{{"{{"}}:#data['TaskName'] {{}}}}</div>
 
         </td>
 
