@@ -28,8 +28,6 @@ Gantt control contains toolbar options for editing, searching, expanding and col
                 ej.Gantt.ToolbarItems.ExpandAll, //TO EXPAND ALL THE TASKS IN GANTT
                 ej.Gantt.ToolbarItems.CollapseAll, //TO COLLAPSE ALL THE TASK IN GANTT
                 ej.Gantt.ToolbarItems.Search, //TO FIND THE TASK
-                ej.Gantt.ToolbarItems.PrevTimeSpan, //TO SHIFT THE PROJECT TO PREVIOUS TIME SCALE
-                ej.Gantt.ToolbarItems.NextTimeSpan //TO SHIFT THE PROJECT TO NEXT TIME SCALE
             ],
         }
     });

@@ -62,17 +62,17 @@ The following code example shows you how to display a column with resource image
 {% highlight javascript %}
 <script type="text/x-jsrender" id="columnTemplate">
 
-    {{if #data['resourceNames']}}
+    {{"{{"}}if #data['resourceNames']{{}}}}
 
     <div style="display:inline-block;position:relative;left:10px;top:1px">
 
-        <img src="images/gantt/{{:#data['resourceNames']}}.png" height="40px" />
+        <img src="images/gantt/{{'{{'}}:#data['resourceNames']{{}}}}.png" height="40px" />
 
     </div>
 
-    <div style='display:inline-block;width:100%;position:relative;left:10px;top:2px'>{{:#data['resourceNames']}}</div>
+    <div style='display:inline-block;width:100%;position:relative;left:10px;top:2px'>{{:#data['resourceNames']{{}}}}</div>
 
-    {{/if}}
+    {{"{{"}}/if{{}}}}
 </script>
 
 var columnTemplateData = [{
