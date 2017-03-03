@@ -43,7 +43,7 @@ SaveButton</td><td>
 Save</td></tr>
 <tr>
 <td>
-OkButton</td><td>
+OKButton</td><td>
 OK</td></tr>
 <tr>
 <td>
@@ -57,14 +57,6 @@ Details of</td></tr>
 <td>
 AddFormTitle</td><td>
 Add New Record</td></tr>
-<tr>
-<td>
-Notactionkeyalert</td><td>
-This Key-Combination is not available </td></tr>
-<tr>
-<td>
-Keyconfigalerttext</td><td>
-This Key-Combination has already been assigned to</td></tr>
 <tr>
 <td>
 GroupCaptionFormat</td><td>
@@ -464,7 +456,7 @@ PredicateAnd</td><td>
 AND</td></tr>
 <tr>
 <td>
-Ok</td><td>
+OK</td><td>
 OK</td></tr>
 <tr>
 <td>
