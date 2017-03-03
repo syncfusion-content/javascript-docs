@@ -34,7 +34,7 @@ JS Playground with new option looks like as below.
 
 ## Save
 
-This option helps to save your code in our database which can be accessible via an URL. So if you want to share your code with someone you can provide him the generated URL which can be accessible by everyone. You can save by clicking save icon or press <b> Ctrl + S </b>.
+The code will be automatically saved into our database whenever we type in code section and also unique URL will be generated for the same code section. So if you want to share your code with someone you can provide the generated URL which can be accessible by everyone.
 
 ## Download
 

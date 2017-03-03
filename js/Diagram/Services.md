@@ -19,7 +19,7 @@ control: ejDiagram
 Fetch the collection of records from database and further it will be used to generate the shapes.
 
 ### URL 
-[http://js.syncfusion.com/demos/ejservices/api/JSDiagram/GetShapeData](http://js.syncfusion.com/demos/ejservices/api/JSDiagram/GetShapeData)
+[http://js.syncfusion.com/demos/ejservices/api/Diagram/GetNodes](http://js.syncfusion.com/demos/ejservices/api/Diagram/GetNodes)
 
 ### Parameter
 Empty
@@ -32,7 +32,7 @@ $.ajax({
 
     type: 'GET',
 
-    url: 'http://js.syncfusion.com/demos/ejservices/api/JSDiagram/GetShapeData',
+    url: 'http://js.syncfusion.com/demos/ejservices/api/Diagram/GetNodes',
 });
 
 {% endhighlight %}
@@ -41,7 +41,7 @@ $.ajax({
 
 {% highlight c# %}
 
-public List<HierarchicalData> GetShapeData()
+public List<HierarchicalData> GetNodes()
 {
     DiagramContextDataContext context = new DiagramContextDataContext();
     return context.HierarchicalDatas.ToList();
@@ -78,7 +78,7 @@ public List<HierarchicalData> GetShapeData()
 Send one or more shapes which needs to be inserted into database.
 
 ### URL 
-[http://js.syncfusion.com/demos/ejservices/api/JSDiagram/InsertShape](http://js.syncfusion.com/demos/ejservices/api/JSDiagram/InsertShape)
+[http://js.syncfusion.com/demos/ejservices/api/Diagram/AddNodes](http://js.syncfusion.com/demos/ejservices/api/Diagram/AddNodes)
 
 ### Parameter
 
@@ -104,7 +104,7 @@ $.ajax({
 
     contentType: 'application/json',
 
-    url: 'http://js.syncfusion.com/demos/ejservices/api/JSDiagram/InsertShape',
+    url: 'http://js.syncfusion.com/demos/ejservices/api/Diagram/AddNodes',
 
     dataType: "json",
     data: JSON.stringify([{
@@ -148,7 +148,7 @@ public void InsertShape(List<HierarchicalData> data)
 Send one or more shapes which needs to be modified into database.
 
 ### URL 
-[http://js.syncfusion.com/demos/ejservices/api/JSDiagram/UpdateShape](http://js.syncfusion.com/demos/ejservices/api/JSDiagram/UpdateShape)
+[http://js.syncfusion.com/demos/ejservices/api/Diagram/UpdateNodes](http://js.syncfusion.com/demos/ejservices/api/Diagram/UpdateNodes)
 
 ### Parameter
 
@@ -175,7 +175,7 @@ $.ajax({
 
     contentType: 'application/json',
 
-    url: 'http://js.syncfusion.com/demos/ejservices/api/JSDiagram/UpdateShape',
+    url: 'http://js.syncfusion.com/demos/ejservices/api/Diagram/UpdateNodes',
 
     dataType: "json",
     data: JSON.stringify([{
@@ -221,7 +221,7 @@ public void UpdateShape(List<HierarchicalData> data)
 Send one or more shapes which needs to be deleted from database.
 
 ### URL 
-[http://js.syncfusion.com/demos/ejservices/api/JSDiagram/DeleteShape](http://js.syncfusion.com/demos/ejservices/api/JSDiagram/DeleteShape)
+[http://js.syncfusion.com/demos/ejservices/api/Diagram/DeleteNodes](http://js.syncfusion.com/demos/ejservices/api/Diagram/DeleteNodes)
 
 ### Parameter
 
@@ -248,7 +248,7 @@ $.ajax({
 
     contentType: 'application/json',
 
-    url: 'http://js.syncfusion.com/demos/ejservices/api/JSDiagram/DeleteShape',
+    url: 'http://js.syncfusion.com/demos/ejservices/api/Diagram/DeleteNodes',
 
     dataType: "json",
     data: JSON.stringify([{
@@ -292,7 +292,7 @@ public void DeleteShape(List<HierarchicalData> data)
 Fetch the collection of records from database and further it will be used to generate the connectors.
 
 ### URL 
-[http://js.syncfusion.com/demos/ejservices/api/JSDiagram/GetConnectorData](http://js.syncfusion.com/demos/ejservices/api/JSDiagram/GetConnectorData)
+[http://js.syncfusion.com/demos/ejservices/api/Diagram/GetConnectors](http://js.syncfusion.com/demos/ejservices/api/Diagram/GetConnectors)
 
 ### Parameter
 Empty
@@ -305,7 +305,7 @@ $.ajax({
 
     type: 'GET',
 
-    url: 'http://js.syncfusion.com/demos/ejservices/api/JSDiagram/GetConnectorData',
+    url: 'http://js.syncfusion.com/demos/ejservices/api/Diagram/GetConnectors',
 });
 
 {% endhighlight %}
@@ -346,7 +346,7 @@ public List<HierarchicalDetails> GetConnectorData()
 Send one or more connectors which needs to be inserted into database.
 
 ### URL 
-[http://js.syncfusion.com/demos/ejservices/api/JSDiagram/InsertConnector](http://js.syncfusion.com/demos/ejservices/api/JSDiagram/InsertConnector)
+[http://js.syncfusion.com/demos/ejservices/api/Diagram/AddConnectors](http://js.syncfusion.com/demos/ejservices/api/Diagram/AddConnectors)
 
 ### Parameter
 
@@ -373,7 +373,7 @@ $.ajax({
 
     contentType: 'application/json',
 
-    url: 'http://js.syncfusion.com/demos/ejservices/api/JSDiagram/InsertConnector',
+    url: 'http://js.syncfusion.com/demos/ejservices/api/Diagram/AddConnectors',
 
     dataType: "json",
     data: JSON.stringify([{
@@ -416,7 +416,7 @@ public void InsertConnector(List<HierarchicalDetails> data)
 Send one or more connectors which needs to be modified into database.
 
 ### URL 
-[http://js.syncfusion.com/demos/ejservices/api/JSDiagram/UpdateConnector](http://js.syncfusion.com/demos/ejservices/api/JSDiagram/UpdateConnector)
+[http://js.syncfusion.com/demos/ejservices/api/Diagram/UpdateConnectors](http://js.syncfusion.com/demos/ejservices/api/Diagram/UpdateConnectors)
 
 ### Parameter
 
@@ -443,7 +443,7 @@ $.ajax({
 
     contentType: 'application/json',
 
-    url: 'http://js.syncfusion.com/demos/ejservices/api/JSDiagram/UpdateConnector',
+    url: 'http://js.syncfusion.com/demos/ejservices/api/Diagram/UpdateConnectors',
 
     dataType: "json",
     data: JSON.stringify([{
@@ -488,7 +488,7 @@ public void UpdateConnector(List<HierarchicalDetails> data)
 Send one or more connectors which needs to be deleted from database.
 
 ### URL 
-[http://js.syncfusion.com/demos/ejservices/api/JSDiagram/DeleteConnector](http://js.syncfusion.com/demos/ejservices/api/JSDiagram/DeleteConnector)
+[http://js.syncfusion.com/demos/ejservices/api/Diagram/DeleteConnectors](http://js.syncfusion.com/demos/ejservices/api/Diagram/DeleteConnectors)
 
 ### Parameter
 
@@ -515,7 +515,7 @@ $.ajax({
 
     contentType: 'application/json',
 
-    url: 'http://js.syncfusion.com/demos/ejservices/api/JSDiagram/DeleteConnector',
+    url: 'http://js.syncfusion.com/demos/ejservices/api/Diagram/DeleteConnectors',
 
     dataType: "json",
     data: JSON.stringify([{
