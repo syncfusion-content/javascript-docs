@@ -59,8 +59,6 @@ Add links to the [CDN](https://help.syncfusion.com/js/cdn) Script files with dep
             <title>Getting Started - Dialog</title>
             <link href="http://cdn.syncfusion.com/{{site.releaseversion}}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
             <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
-            <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"></script>
-            <script src="http://cdn.syncfusion.com/js/assets/external/jsrender.min.js"></script>
             <script src="http://cdn.syncfusion.com/{{site.releaseversion}}/js/web/ej.web.all.min.js"></script>
         </head>
 
@@ -75,7 +73,7 @@ N> In production, we highly recommend you to use our [custom script generator](h
 
 ## Create an AutoComplete
 
-Add an input element in the &lt;body&gt; tag as below.
+Add an input element in the HTML file for rendering Autocomplete widget 
 
 
 
@@ -135,7 +133,7 @@ The data for the suggestion list can be populated using the dataSource property.
 
 ## Enable Popup Button
 
-This button helps you to show all the available suggestions on clicking it.
+This button helps you to show all the available suggestions on clicking it instead of the search text.
 
 {% highlight javascript %}
 

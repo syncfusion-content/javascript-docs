@@ -11,11 +11,10 @@ keywords: ejautocomplete, autocomplete widget, autocomplete ui, js autocomplete,
 # MultiSelection
 
 The AutoComplete widget helps you to select multiple values from the suggestion list using the multiSelect property.
-{%seealso%}[MultiSelection](https://help.syncfusion.com/api/js/ejautocomplete){%endseealso%}
 
 There are two types of multi-selection mode.
 
-1. VisualMode – Selection values are displayed in separate box with close button.
+1. VisualMode – Selection values are displayed in separate box with close like button.
 
 2. Delimiter – Selection values are separated using the delimiter character which can be specified using delimiterChar API. 
 
