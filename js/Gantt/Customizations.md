@@ -291,7 +291,7 @@ TreeGrid part tooltip can also be customized using [cellTooltipTemplate](/api/js
 
             <td>Id:</td>
 
-            <td>{{:~_TaskID()}}</td>
+            <td>{{"{{"}}:~_TaskID(){{}}}}</td>
 
         </tr>
 
@@ -299,7 +299,7 @@ TreeGrid part tooltip can also be customized using [cellTooltipTemplate](/api/js
 
             <td>Name:</td>
 
-            <td>{{:~_TaskName()}}</td>
+            <td>{{"{{"}}:~_TaskName(){{}}}}</td>
 
         </tr>
 
