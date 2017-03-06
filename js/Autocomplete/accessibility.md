@@ -12,7 +12,9 @@ keywords: ejautocomplete, autocomplete widget, autocomplete ui, js autocomplete,
 
 ## Keyboard Interaction
 
-You can use Keyboard shortcut keys as an alternative for mouse actions to interact with the Autocomplete widget. The keyboard interaction will be enabled by default in the Autocomplete widget. Please refer the below table for details about short cut keys and its corresponding usage.
+Autocomplete widget is completely compatible to work with Keyboard  asKeyboard as an alternative for mouse. The keyboard interaction will be enabled by default in the Autocomplete widget. Press Alt+J to focus the Autocomplete element.
+
+Please refer the below table for details about short cut keys and its corresponding usage.
 
 <table>
 <tr>
@@ -39,4 +41,24 @@ Opens the suggestion list</td></tr>
 <td>
 <kbd>ESC</kbd></td><td>
 Closes the suggestion list</td></tr>
+<tr>
+<td>
+<kbd>Page Down</kbd></td><td>
+Moves to the item in next page (i.e.,) scrolls down to next set of items when the popup is opened/closed </td></tr>
+<tr>
+<td>
+<kbd>Page Up</kbd></td><td>
+Moves to the item in previous page (i.e.,) scrolls up to previous set of items when the popup is opened/closed </td></tr>
+<tr>
+<td>
+<kbd>Left Arrow, Right Arrow, Home, End, Number lock</kbd></td><td>
+No actions</td></tr>
+<tr>
+<td>
+<kbd>Tab</kbd></td><td>
+Close the popup if it is opened and focuses to next DOM element</td></tr>
+<tr>
+<td>
+<kbd>Shift + Tab</kbd></td><td>
+Focuses the previous DOM element </td></tr>
 </table>
