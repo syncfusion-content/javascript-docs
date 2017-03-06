@@ -74,3 +74,4 @@ In the **HTML** page, add the **&lt;div&gt;** element to configure the **Uploadb
 
 For **JS**, configure **saveFiles.ashx** and **removeFiles.ashx** files as mentioned in the Save file action and Remove file action respectively. 
 
+N> When **extensionsDeny** and **extensionsAllow** properties have same file extension, the extension will be allowed.
