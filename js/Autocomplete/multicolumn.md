@@ -10,19 +10,24 @@ keywords: ejautocomplete, autocomplete widget, autocomplete ui, js autocomplete,
 
 # Multiple Columns
 
-The Autocomplete allows list of data to be displayed in several columns and column collection can be defined and customized through the [MultiColumnSettings](https://help.syncfusion.com/api/js/ejautocomplete#members:multiColumnSettings) property.
+The Autocomplete adds support for selecting multiple columns in the dropdown list. This mutliplemultiple column options can be enabled and customized through the [MultiColumnSettings](https://help.syncfusion.com/api/js/ejautocomplete#members:multiColumnSettings) property.
  
 In AutoComplete Multiple Column search is based on [stringFormat](https://help.syncfusion.com/api/js/ejautocomplete#members:multiColumnSettings-stringFormat) property which specifies column indices. 
 
-N> [stringFormat](https://help.syncfusion.com/api/js/ejautocomplete#members:multiColumnSettings-stringFormat) as “{0} ({1}) ({2})” means search based on 0, 1 and 2 columns data.
 
 <table><tr><th>Name</th><th>Description</th></tr>
 <tr><td>multiColumnSettings.enable</td><td>Allow list of data to be displayed in several columns.</td></tr>
 <tr><td>multiColumnSettings.showHeader</td><td>Allow header text to be displayed in corresponding columns.</td></tr>
-<tr><td>multiColumnSettings.stringFormat</td><td>Displayed selected value and autocomplete search is based on mentioned column value specified in that format.</td></tr>
+<tr><td>multiColumnSettings.stringFormat</td><td>Specifies the format for displaying a selected value and columns to be searched.</td></tr>
 <tr><td>multiColumnSettings.columns</td><td>Field and Header Text collections can be defined and customized through this field.</td></tr>
-<tr><td>multiColumnSettings.columns.field</td><td>Get or set a value that indicates to display the columns in the autocomplete mapping with column name of the dataSource. </td></tr>
-<tr><td>multiColumnSettings.columns.headerText</td><td>Get or set a value that indicates to display the title of that particular column.</td></tr></table>
+<tr><td>multiColumnSettings.columns.field</td><td>Field to be mapped from the dataSource to the columns in Autocomplete suggestion list.</td></tr>
+<tr><td>multiColumnSettings.columns.headerText</td><td>Get or set a value that indicates to display the title of that particular column.</td></tr>
+<tr><td>multiColumnSettings.columns.cssClass</td><td>Field to be mapped for to add user defined CSS class for the specific column.</td></tr>
+<tr><td>multiColumnSettings.columns.type</td><td>Get or set the data type for a individual column.</td></tr>
+<tr><td>multiColumnSettings.columns.filterType</td><td>Get or set the search filter type for the column.</td></tr>
+<tr><td>multiColumnSettings.columns.headerTextAlign</td><td>Used to align or position the header value in the column.</td></tr>
+<tr><td>multiColumnSettings.columns.textAlign</td><td>Used to align or position all the values in a column.</td></tr>
+</table>
 
 
 ## Example 
@@ -67,6 +72,7 @@ N> [stringFormat](https://help.syncfusion.com/api/js/ejautocomplete#members:mult
 
 {% endhighlight %}
 
+N> Here [stringFormat](https://help.syncfusion.com/api/js/ejautocomplete#members:multiColumnSettings-stringFormat) is “{0} ({1}) ({2})” so the search will be based on column indices 0, 1 and 2.
 
 
 ![AutoComplete-MultiColumn](multicolumn_images\multicolumn_img1.png)
