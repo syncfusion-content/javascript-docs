@@ -10,29 +10,44 @@ keywords: ejautocomplete, autocomplete widget, autocomplete ui, js autocomplete,
 
 # Data Binding
 
-In order to render the AutoComplete control, the data needs to be bound to it in a proper way. The below sections explains about how to bind either the local or remote data to the AutoComplete widget. 
+In order to render the Autocomplete widget, the data needs to be bound to it in a proper way. The below sections explain about binding local or remote data to the Autocomplete widget.
 
 ## Fields
 
-The AutoComplete widget has a field property (object) which holds the properties to map with datasource fields. For example, the field object has a text property which is necessary to map with specific field in the datasource to render the suggestion items in the AutoComplete widget.
+The Autocomplete widget has a field property (object) which holds the properties to map with dataSource fields. Whenever we bind a data to Autocomplete, corresponding fields must be mapped using this property.
 
 The field object contains the following properties.
 
-* [text](https://help.syncfusion.com/api/js/ejautocomplete)
-
-* [key](https://help.syncfusion.com/api/js/ejautocomplete)
-
-* [groupBy](https://help.syncfusion.com/api/js/ejautocomplete)
-
-* [htmlAttributes](https://help.syncfusion.com/api/js/ejautocomplete)
+<table>
+<tr>
+<th>Fields property</th>
+<th>Description</th>
+</tr>
+<tr>
+<td> <a href="https://help.syncfusion.com/api/js/ejautocomplete#members:fields-text">text</a> </td>
+<td>Maps the display text in the suggestion list </td>
+</tr>
+<tr>
+<td> <a href="https://help.syncfusion.com/api/js/ejautocomplete#members:fields-key">key</a> </td>
+<td>Maps to the unique key field in the data source</td>
+</tr>
+<tr>
+<td> <a href="https://help.syncfusion.com/api/js/ejautocomplete#members:fields-groupBy">groupBy</a> </td>
+<td>Allows to enable grouping based on the assigned field</td>
+</tr>
+<tr>
+<td> <a href="https://help.syncfusion.com/api/js/ejautocomplete#members:fields-htmlAttributes">htmlAttributes</a> </td>
+<td>Maps to set the HTML attribute for the list items</td>
+</tr>
+</table>
 
 
 
 ### Local data
 
-The local data can be an array of JSON objects which is assigned for the Autocomplete widget’s datasource property. Refer the below example.
+The local data must be an array of JSON objects which is assigned for the Autocomplete widget dataSource property. 
 
-Here the name and index fields are mapped with text and key properties of the field object respectively.
+In the below example name and index fields are mapped with text and key properties of the field object respectively.
 
 {% highlight html %}
 
@@ -70,9 +85,9 @@ Here the name and index fields are mapped with text and key properties of the fi
 
 #### OData
 
-[OData](https://help.syncfusion.com/js/datamanager/data-binding) is a standardized protocol for creating and consuming the data. You can retrieve data from OData service by using [ej.DataManager](https://help.syncfusion.com/js/datamanager/getting-started).
+[OData](https://help.syncfusion.com/js/datamanager/data-binding) is a standardized protocol for creating and consuming the data. You can retrieve data from OData service by using [ej.DataManager](https://help.syncfusion.com/js/datamanager/getting-started) and the queries can be added using [ej.Query()](https://help.syncfusion.com/js/datamanager/query).
 
-Here the ContactName and SupplierID fields are mapped with text and key properties respectively, of the field object. The queries can be created using [ej.Query()](https://help.syncfusion.com/js/datamanager/query).
+Here ContactName and SupplierID fields are mapped with text and key properties respective to the field object.
 
 {% highlight html %}
 
@@ -132,7 +147,7 @@ Here the ContactName field is mapped with text property of the field object.
 
 
 
-N> In the above data manager configuration, “crossDomain” must be set to true to access the data from Web API. [Cross domain](https://help.syncfusion.com/js/grid/data-binding) requests can be possible using ej.DataManager.
+N> In the above data manager configuration, “crossDomain” must be set to true to access the data from Web API. Cross origin requests can be possible using ej.DataManager.
 
 ![AutoComplete-APIData](webapi_images\webapi_img1.png)
 
@@ -141,13 +156,23 @@ N> In the above data manager configuration, “crossDomain” must be set to tru
 
 #### Handling errors
 
- In remote binding, the server might not return data sometimes due to various reasons. In such cases we need to handle the error properly. We can handle this using the “[actionFailure](https://help.syncfusion.com/api/js/ejautocomplete)” event. 
+ In remote binding, the server actions can be handled for adding client side purpose. 
+ 
+<table>
+<tr>
+<td> <a href="https://help.syncfusion.com/api/js/ejautocomplete#members:fields-actionFailure">actionFailure</a> </td>
+<td>Event get triggered when remote server does not return data. We can handle the error properly in client side in this event</td>
+</tr>
+<tr>
+<td> <a href="https://help.syncfusion.com/api/js/ejautocomplete#members:fields-actionComplete">actionComplete</a> </td>
+<td>Event gets triggered when the server action is completed, whether it may be success or failure</td>
+</tr>
+<tr>
+<td> <a href="https://help.syncfusion.com/api/js/ejautocomplete#members:fields-actionSuccess">actionSuccess</a> </td>
+<td>Event gets triggered when the remote server action returns data successfully</td>
+</tr>
+</table> 
 
-{%seealso%} 
-* [actionComplete](https://help.syncfusion.com/api/js/ejautocomplete) event
-
-* [actionSuccess](https://help.syncfusion.com/api/js/ejautocomplete) event
-{%endseealso%}
 
 {% highlight html %}
 
