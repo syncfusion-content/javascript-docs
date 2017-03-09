@@ -11,6 +11,8 @@ keywords: context menu ,kanban context menu
 
 Context menu is used to improve user action with Kanban using popup menu. It can be shown by defining [`contextMenuSettings.enable`](https://help.syncfusion.com/api/js/ejkanban#members:contextmenusettings-enable) as true. Context menu has option to add default items in [`contextMenuSettings.menuItems`](https://help.syncfusion.com/api/js/ejkanban#members:contextmenusettings-menuitems) and customized items in [`contextMenuSettings.customMenuItems`](https://help.syncfusion.com/api/js/ejkanban#members:contextmenusettings-custommenuitems).
 
+N> For using event handling in context menu , please refer this [API](https://help.syncfusion.com/api/js/ejkanban#events:contextclick).
+
 ## Default Context Menu items
 
 Please find the below table for default context menu items and its actions.
