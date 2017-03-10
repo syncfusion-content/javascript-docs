@@ -60,7 +60,7 @@ Create an **HTML** file and add the following template to the **HTML** file.
 
 {% endhighlight %}
 
-N> ID attribute is must for rendering and proper working of uploadbox control. You can render upload box control without using id attribute but you need to set **_requiresID** method to true, which adds a default id attribute to the control during rendering of control.
+N> ID attribute is must for rendering and proper working of uploadbox control.
 
 Add the given styles to display the **Uploadbox** with margin alignments.
 
