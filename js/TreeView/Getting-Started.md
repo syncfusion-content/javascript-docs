@@ -211,9 +211,9 @@ Initialize TreeView with remote data source
 {% highlight js %}
 
 
-       var parentData = ej.DataManager("http://mvc.syncfusion.com/Services/Northwnd.svc/Categories"),
+       var parentData = ej.DataManager("//js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/Categories"),
 
-       childData = ej.DataManager("http://mvc.syncfusion.com/Services/Northwnd.svc/Products");
+       childData = ej.DataManager("//js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/Products");
 
 
         $(function () {
