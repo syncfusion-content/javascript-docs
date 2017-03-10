@@ -60,6 +60,8 @@ Create an **HTML** file and add the following template to the **HTML** file.
 
 {% endhighlight %}
 
+N> ID attribute is must for rendering and proper working of uploadbox control.
+
 Add the given styles to display the **Uploadbox** with margin alignments.
 
 
