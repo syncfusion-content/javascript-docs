@@ -254,9 +254,9 @@ You can provide the OData service URL directly to the [ej.DataManager](https://h
 
 {% highlight js %}
 
-        var parentData = ej.DataManager("http://mvc.syncfusion.com/Services/Northwnd.svc/Categories"),
+        var parentData = ej.DataManager("//js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/Categories"),
 
-        childData = ej.DataManager("http://mvc.syncfusion.com/Services/Northwnd.svc/Products");
+        childData = ej.DataManager("//js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/Products");
 
         $(function () {
 
@@ -306,7 +306,7 @@ We can provide adaptor value either as string value (“ODataAdaptor”) or by c
 
         var dataManager = ej.DataManager({
 
-            url: "http://mvc.syncfusion.com/Services/Northwnd.svc/Categories",
+            url: "//js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/Categories",
 
             adaptor: new ej.ODataAdaptor()
 
@@ -330,7 +330,7 @@ We can provide adaptor value either as string value (“ODataAdaptor”) or by c
 
                         dataSource: ej.DataManager({
 
-                            url: "http://mvc.syncfusion.com/Services/Northwnd.svc/Products"
+                            url: "//js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/Products"
 
                         }),
 
@@ -362,7 +362,7 @@ N>  We can use above code until OData service version 3. For OData Service versi
 
         var dataManager = ej.DataManager({
 
-            url: "http://mvc.syncfusion.com/Services/Northwnd.svc/Categories",
+            url: "//js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/Categories",
 
             adaptor: new ej.ODataV4Adaptor()
 
@@ -386,7 +386,7 @@ N>  We can use above code until OData service version 3. For OData Service versi
 
                         dataSource: ej.DataManager({
 
-                            url: "http://mvc.syncfusion.com/Services/Northwnd.svc/Products"
+                            url: "//js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/Products"
 
                         }),
 
@@ -594,7 +594,7 @@ Refer below code example to load data on demand from remote data source.
 $(function () {
     // DataManager creation
     var dataManger = ej.DataManager({
-        url: "http://mvc.syncfusion.com/Services/Northwnd.svc/"
+        url: "//js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/"
     });
     // Query creation
     var query = ej.Query().from("Categories").select("CategoryID,CategoryName").take(3);

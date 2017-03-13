@@ -374,3 +374,5 @@ The following code example describes the tooltip template.
 The following output is displayed as a result of the above code example.
 
 ![](Cards_images/cards_img4.png)
+
+N> For cards event handling , please refer this [API](https://help.syncfusion.com/api/js/ejkanban#events:cardclick).

@@ -59,11 +59,11 @@ Grouping technique is also supported in **DataManager**. When you want to analyz
 </script>
 <script id="tableTemplate" type="text/x-jsrender">
    <tr>
-       <td>{{>OrderID}}</td>
-       <td>{{>CustomerID}}</td>
-       <td>{{>EmployeeID}}</td>
-       <td>{{>Freight}}</td>
-       <td>{{>ShipCountry}}</td>         
+        <td>{{"{{"}}>OrderID{{}}}}</td>
+        <td>{{"{{"}}>CustomerID{{}}}}</td>
+        <td>{{"{{"}}>EmployeeID{{}}}}</td>
+        <td>{{"{{"}}>Freight{{}}}}</td>
+        <td>{{"{{"}}>ShipCountry{{}}}}</td>       
    </tr>
 </script>
 

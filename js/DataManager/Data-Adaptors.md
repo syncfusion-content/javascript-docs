@@ -123,9 +123,9 @@ The following code example illustrates on how to use **JSONAdaptor**.
     </script>
     <script id="tableTemplate" type="text/x-jsrender">
         <tr>
-            <td>{{>OrderID}}</td>
-            <td>{{>CustomerID}}</td>
-            <td>{{>EmployeeID)}}</td>
+            <td>{{"{{"}}>OrderID{{}}}}</td>
+            <td>{{"{{"}}>CustomerID{{}}}}</td>
+            <td>{{"{{"}}>EmployeeID{{}}}}</td>
         </tr>
     </script>
 
@@ -139,7 +139,7 @@ The result of above code example is illustrated as follows.
 
 URL Adaptor of **DataManager** can be used when you are required to use remote service to retrieve data. It interacts with server-side for all **DataManager** Queries and **CRUD** operations. 
 
-**UrlAdaptor** has the following unique unique in-built methods, 
+**UrlAdaptor** has the following unique in-built methods, 
 
 <table>
     <tr>
@@ -240,9 +240,9 @@ Now, in the following code example the data is retrieved from **MVC** **Controll
     </script>
     <script id="tableTemplate" type="text/x-jsrender">
         <tr>
-            <td>{{>OrderID}}</td>
-            <td>{{>CustomerID}}</td>
-            <td>{{>EmployeeID)}}</td>
+            <td>{{"{{"}}>OrderID{{}}}}</td>
+            <td>{{"{{"}}>CustomerID{{}}}}</td>
+            <td>{{"{{"}}>EmployeeID{{}}}}</td>
         </tr>
     </script>
 
@@ -276,7 +276,7 @@ The result of the above code example is illustrated as follows.
 
 ## OData Adaptor
 
-**OData** Adaptor that is extended from URL Adaptor, is used for consuming data through OData Service. You can use the following code example to use **OData** adaptor.
+**OData** Adaptor that is extended from **UrlAdaptor**, is used for consuming data through OData Service. You can use the following code example to use **OData** adaptor.
 
 **ODataAdaptor** has the following unique in-built methods, 
 
@@ -371,11 +371,11 @@ The result of the above code example is illustrated as follows.
     </script>
     <script id="tableTemplate" type="text/x-jsrender">
         <tr>
-            <td>{{>OrderID}}</td>
-            <td>{{>CustomerID}}</td>
-            <td>{{>EmployeeID)}}</td>
-            <td>{{>Freight}}</td>
-            <td>{{>ShipCountry}}</td>
+            <td>{{"{{"}}>OrderID{{}}}}</td>
+            <td>{{"{{"}}>CustomerID{{}}}}</td>
+            <td>{{"{{"}}>EmployeeID{{}}}}</td>
+            <td>{{"{{"}}>Freight{{}}}}</td>
+            <td>{{"{{"}}>ShipCountry{{}}}}</td>
         </tr>
     </script>
 
@@ -388,7 +388,7 @@ The result of the above code example is illustrated as follows.
 
 ## WebAPI Adaptor
 
-**WebApi** Adaptor, extended from ODataAdaptor, of **DataManager** is used for retrieving data from WebApi service. 
+**WebApi** Adaptor, extended from **ODataAdaptor**, of **DataManager** is used for retrieving data from WebApi service. 
 
 **WebApiAdaptor** has the following unique in-built methods, 
 
@@ -481,9 +481,9 @@ Refer to the following code example.
     </script>
     <script id="tableTemplate" type="text/x-jsrender">
         <tr>
-            <td>{{>OrderID}}</td>
-            <td>{{>CustomerID}}</td>
-            <td>{{>EmployeeID)}}</td>
+            <td>{{"{{"}}>OrderID{{}}}}</td>
+            <td>{{"{{"}}>CustomerID{{}}}}</td>
+            <td>{{"{{"}}>EmployeeID{{}}}}</td>
         </tr>
     </script>
 
@@ -647,9 +647,9 @@ Refer to the following code example.
     </script>
     <script id="tableTemplate" type="text/x-jsrender">
         <tr>
-            <td>{{>OrderID}}</td>
-            <td>{{>CustomerID}}</td>
-            <td>{{>EmployeeID)}}</td>
+            <td>{{"{{"}}>OrderID{{}}}}</td>
+            <td>{{"{{"}}>CustomerID{{}}}}</td>
+            <td>{{"{{"}}>EmployeeID{{}}}}</td>
         </tr>
     </script>
 
@@ -759,9 +759,9 @@ The following code example illustrates you on how to create custom adaptor.
 
     <script id="tableTemplate" type="text/x-jsrender">
         <tr>
-            <td>{{>FirstName}}</td>
-            <td>{{>LastName}}</td>
-            <td>{{>Email)}}</td>
+            <td>{{"{{"}}>FirstName{{}}}}</td>
+            <td>{{"{{"}}>LastName{{}}}}</td>
+            <td>{{"{{"}}>Email{{}}}}</td>
         </tr>
     </script>
 

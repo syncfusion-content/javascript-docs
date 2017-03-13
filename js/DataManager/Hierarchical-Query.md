@@ -87,17 +87,17 @@ The following code example illustrates the hierarchical query and foreignkey met
 
     <script id="hierTemplate" type="text/x-jsrender">
         <tr>
-            <td class="e-rowcell">{{>ProductID}}</td>
-            <td class="e-rowcell">{{>Quantity}}</td>
-            <td class="e-rowcell">{{>UnitPrice}}</td>
+            <td class="e-rowcell">{{"{{"}}>ProductID{{}}}}</td>
+            <td class="e-rowcell">{{"{{"}}>Quantity{{}}}}</td>
+            <td class="e-rowcell">{{"{{"}}>UnitPrice{{}}}}</td>
         </tr>
     </script>
     <script id="tableTemplate" type="text/x-jsrender">
         <tr>
-            <td class="e-rowcell">{{>OrderID}}</td>
-            <td class="e-rowcell">{{>CustomerID}}</td>
-            <td class="e-rowcell">{{>OrderDate.toDateString()}}</td>
-            <td class="e-rowcell">{{>Employee.FirstName}}</td>
+            <td class="e-rowcell">{{"{{"}}>OrderID{{}}}}{{>OrderID}}</td>
+            <td class="e-rowcell">{{"{{"}}>CustomerID{{}}}}{{>CustomerID}}</td>
+            <td class="e-rowcell">{{"{{"}}>OrderDate.toDateString{{}}}}</td>
+            <td class="e-rowcell">{{"{{"}}>Employee.FirstName{{}}}}</td>
         </tr>
         {{if Order_Details && Order_Details.length}}
         <tr class="childgrid">

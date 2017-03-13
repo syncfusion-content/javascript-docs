@@ -13,7 +13,6 @@ Searching is a basic query technique in data manager. It is used to filter the r
 
 {% highlight html %}
 
-
 <div class="datatable">
    <table id="table1" class=" table table-striped table-bordered" style="width:700px">
       <thead>
@@ -47,9 +46,9 @@ Searching is a basic query technique in data manager. It is used to filter the r
 </script>
 <script id="tableTemplate" type="text/x-jsrender">
    <tr>
-       <td>{{>OrderID}}</td>
-       <td>{{>CustomerID}}</td>
-       <td>{{>EmployeeID}}</td>
+        <td>{{"{{"}}>OrderID{{}}}}</td>
+        <td>{{"{{"}}>CustomerID{{}}}}</td>
+        <td>{{"{{"}}>EmployeeID{{}}}}</td>
    </tr>
 </script>
 

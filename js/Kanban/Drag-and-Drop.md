@@ -54,3 +54,5 @@ The following code example describes the above behavior.
 The following output is displayed as a result of the above code example.
 
 ![](Drag_and_Drop_images/drag_and_drop_img1.png)
+
+N> For Drag and Drop event handling , please refer this [API](https://help.syncfusion.com/api/js/ejkanban#events:carddrag).
