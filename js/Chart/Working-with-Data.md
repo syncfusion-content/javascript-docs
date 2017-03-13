@@ -164,4 +164,4 @@ N> All the properties in EjChart supports one way AngularJS binding except inner
 
 ![](/js/Chart/Working-with-Data_images/Working-with-Data_img4.png)
 
-[Click](http://js.syncfusion.com/demos/web/#!/azure/angularsupport/chart) here to view the AngularJS data binding online demo sample.	
+[Click](http://ngjq.syncfusion.com/#/chart/line) here to view the AngularJS data binding online demo sample.	
