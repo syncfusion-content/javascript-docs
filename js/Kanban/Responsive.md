@@ -14,7 +14,9 @@ The Kanban control has support for responsive behavior based on client browserâ€
 * Mobile(<480px)
 * Desktop(>480px)
 
-N> For before using touch action you can follow this image ![](Responsive_images/KanbanOverlayImage.png)
+You can check the image respresentation of touch actions from the below image.
+
+![](Responsive_images/KanbanOverlayImage.png)
 
 ## Mobile Layout
 
