@@ -97,7 +97,7 @@ List of Tooltip elements
     </tr>
     <tr>
         <td>
-            addbutton
+            addButton
         </td>
         <td>
             Add Color
@@ -113,7 +113,7 @@ List of Tooltip elements
     </tr>
     <tr>
         <td>
-            monochrome
+            monoChrome
         </td>
         <td>
             Mono Chrome
@@ -121,7 +121,7 @@ List of Tooltip elements
     </tr>
     <tr>
         <td>
-            flatcolors
+            flatColors
         </td>
         <td>
             Flat Colors
@@ -129,7 +129,7 @@ List of Tooltip elements
     </tr>
     <tr>
         <td>
-            seawolf
+            seaWolf
         </td>
         <td>
             Sea Wolf
@@ -137,7 +137,7 @@ List of Tooltip elements
     </tr>
     <tr>
         <td>
-            webcolors
+            webColors
         </td>
         <td>
             Web Colors
@@ -153,7 +153,7 @@ List of Tooltip elements
     </tr>
     <tr>
         <td>
-            pinkshades
+            pinkShades
         </td>
         <td>
             Pink Shades
@@ -177,7 +177,7 @@ List of Tooltip elements
     </tr>
     <tr>
         <td>
-            moonlight
+            moonLight
         </td>
         <td>
             Moon Light
@@ -185,7 +185,7 @@ List of Tooltip elements
     </tr>
     <tr>
         <td>
-            candycrush
+            candyCrush
         </td>
         <td>
             Candy Crush
@@ -193,7 +193,7 @@ List of Tooltip elements
     </tr>
     <tr>
         <td>
-            currentcolor
+            currentColor
         </td>
         <td>
             Current Color
@@ -201,7 +201,7 @@ List of Tooltip elements
     </tr>
     <tr>
         <td>
-            selectedcolor
+            selectedColor
         </td>
         <td>
             Selected Color
