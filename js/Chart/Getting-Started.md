@@ -24,7 +24,7 @@ Create an **HTML** page and add the scripts references in the order mentioned in
     <!--  jquery script  -->
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
     <!-- Essential JS UI widget -->
-    <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"></script>
+    <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"></script>
 </head>
 <body>
 </body>
@@ -33,6 +33,8 @@ Create an **HTML** page and add the scripts references in the order mentioned in
 
 
 {% endhighlight %}
+
+N> If you are using the Essential Studio below 13.4.0.53 version, then you need to refer **jQuery.globalize.js** script file along with the above references to render the Chart control.
 
 In the above code, ej.web.all.min.js script reference has been added for demonstration purpose. It is not recommended to use this for deployment purpose, as its file size is larger since it contains all the widgets. Instead, you can use [`CSG`](http://csg.syncfusion.com/) utility to generate a custom script file with the required widgets for deployment purpose.
 
