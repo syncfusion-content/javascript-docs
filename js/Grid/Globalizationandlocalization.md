@@ -549,7 +549,7 @@ Please find the code
 ![](Globalizationandlocalization._images/Globalizationandlocalization._img2.png)
 
 
-I> We have uploaded the predefined language packs for some commonly used cultures in [`this`](https://github.com/syncfusion/ej-global/tree/master/localetexts "culture files") github location. Refer to the github location for getting the predefined language packs for the corresponding culture. The culture file has localized texts for all the Syncfusion controls.
+I> We have uploaded the predefined language packs for some commonly used cultures in [`this`](https://github.com/syncfusion/ej-global/tree/master/l10n) github location. Refer to the github location for getting the predefined language packs for the corresponding culture. The culture file has localized texts for all the Syncfusion controls.
 
 
 ## Globalization
