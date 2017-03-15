@@ -311,3 +311,86 @@ It should return data in JSON format with key name as ‘files’ and JSON field
 It used to search all the matched files and sub-folders in the given folder path also it filters the specified files using it types.<br/><br/><br/><br/>
 </td></tr>
 </table>
+
+## Create a Web API service for FileExplorer using “Syncfusion.EJ” assembly 
+
+Please refer following steps to create a Web API service for FileExplorer using “**Syncfusion.EJ**” assembly. 
+
+Step 1: Create a new ASP.NET Web API project using Visual Studio. 
+
+Reference [link](https://docs.microsoft.com/en-us/aspnet/web-api/overview/getting-started-with-aspnet-web-api/tutorial-your-first-web-api#)  
+
+Step 2: Add "**Syncfusion.EJ**" assembly reference, which is available at following location of your system. 
+
+(Installed location)\Syncfusion\Essential Studio\\{15.1.0.33}\Assemblies
+
+For example, If you have installed the Essential Studio package within C:\Program Files(x86), then navigate to the below location,
+
+C:\Program Files (x86)\Syncfusion\Essential Studio\\{15.1.0.33}\Assemblies\4.5
+
+This assembly contain built-in file handling methods such as (Read, Search, Download, Upload, Remove, Rename etc.) and it will be available in "FileExplorerOperations" class.
+
+Step 3: Add “[FileExplorerController.cs](http://www.syncfusion.com/downloads/support/directtrac/general/ze/FileExplorerController-2059296017#)” file in the controller part of Web API project.
+This file, contains action handler methods. Based on the request parameters, it helps to call the built-in file handling methods of **Syncfusion.EJ** assembly.
+
+Step 4: Add following content in the “**WebApiApplication**” class of “**Global.asax.cs**” file.
+
+
+
+  {% highlight c# %}
+
+    protected void Application_Start()
+    {
+        RouteTable.Routes.MapHttpRoute(
+        name: "Action",
+        routeTemplate: "api/{controller}/{action}/{id}",
+        defaults: new { id = System.Web.Http.RouteParameter.Optional }
+        );
+    }
+    protected void Application_BeginRequest(object sender, EventArgs e)
+    {
+        if (Request.Headers.AllKeys.Contains("Origin") && Request.HttpMethod == "OPTIONS")
+        {
+            Response.StatusCode = 200;
+            Response.End();
+        }
+    }
+
+  {% endhighlight %}
+
+
+
+Step 5: In “**Web.config**” add following code under **&lt;system.webServer&gt;** tag
+
+
+{% highlight c# %}
+
+    <httpProtocol>
+      <customHeaders>
+        <add name="Access-Control-Allow-Headers" value="accept, maxdataserviceversion, origin, x-requested-with, dataserviceversion,content-type" />
+        <add name="Access-Control-Allow-Origin" value="*" />
+        <add name="Access-Control-Max-Age" value="1728000" />
+      </customHeaders>
+    </httpProtocol>
+
+{% endhighlight %}
+
+
+Step 6: Add “**FileBrowser**” directory and it contains a files that is viewed by FileExplorer.
+
+Now the Web API service for FileExplorer component is created. After running that service, you will get a base URL like "http://localhost:64218/". (Port number may vary)
+
+After that, you can use this service for your FileExplorer component as shown in below code block.
+
+
+  {% highlight javascript %}
+
+    $("#fileExplorer").ejFileExplorer({
+      //Path of the folder that you want to view in FileExplorer.
+      path: "http://localhost:64218/FileBrowser/",	
+      //Path of file handling operation method					
+      ajaxAction: "http://localhost:64218/api/FileExplorer/FileOperations"
+    });
+  
+  {% endhighlight %}
+
