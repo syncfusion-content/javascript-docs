@@ -15,6 +15,8 @@ This section explains briefly about how to create a **Scroller** in your applica
 
 **Essential JavaScript Scroller** control can be rendered based on the target panel height and width, and includes more customization options.
 
+N> create an immediate div element to the scroller wrapper and append the contents to that div element. also, this is necessary  to add the inner div element for render the scroller
+
 **Add Scroller Control to your JavaScript Application**
 
 Create a HTML file and paste the following template to the HTML file to create the ejScroller.
@@ -38,7 +40,7 @@ Create a HTML file and paste the following template to the HTML file to create t
             <div class="cols-sample-area">
                <div class="control">
                   <div id="scrollcontent">
-                     <div>
+                     <div><!--Add the immediate div element -->
                         <div class="sampleContent">
                            <h3 style="font-size: 20px;">MVC</h3>
                            <div>
