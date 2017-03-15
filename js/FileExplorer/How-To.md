@@ -347,6 +347,14 @@ Step 4: Add following content in the “**WebApiApplication**” class of “**G
         defaults: new { id = System.Web.Http.RouteParameter.Optional }
         );
     }
+    protected void Application_BeginRequest(object sender, EventArgs e)
+    {
+        if (Request.Headers.AllKeys.Contains("Origin") && Request.HttpMethod == "OPTIONS")
+        {
+            Response.StatusCode = 200;
+            Response.End();
+        }
+    }
 
   {% endhighlight %}
 
