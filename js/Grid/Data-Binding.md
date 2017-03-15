@@ -91,7 +91,7 @@ The following code example describes the above behavior.
 {% highlight javascript %}
 	$(function () {
 
-		var dm =ej.DataManager("http://mvc.syncfusion.com/Services/Northwnd.svc/Orders");
+		var dm =ej.DataManager("http://js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/Orders/");
 		$("#Grid").ejGrid({
 			dataSource: dm,
 			allowPaging:true,
@@ -285,7 +285,7 @@ The following code example describes the above behavior.
 $(function() {
 
 	var dataManager = ej.DataManager({
-		url: "http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",
+		url: "http://js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/Orders/",
 		adaptor: new ej.ODataAdaptor(),
 		offline: true
 	});
@@ -325,7 +325,7 @@ The following code example describes the above behavior.
 $(function() {
 
 	var dataManger = ej.DataManager({
-		url: "http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",
+		url: "http://js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/Orders/",
 		enableCaching: true,
 		cachingPageSize: 10,
 		timeTillExpiration: 120000
@@ -362,7 +362,7 @@ The following code example describes the above behavior.
 $(function() {
 	$("#Grid").ejGrid({
 		dataSource: ej.DataManager({
-			url: "http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/"
+			url: "http://js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/Orders/"
 		}),
 		allowPaging: true,
 		query: new ej.Query().addParams("Syncfusion", true),
@@ -423,7 +423,7 @@ The following code example describes the above behavior.
 {% highlight javascript %}
 $(function() {
 	var dataManger = ej.DataManager({
-		url: "http://mvc.syncfusion.com/Services/Northwnd.svc/Order",
+		url: "http://js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/Orders/",
 		adaptor: "ODataAdaptor"
 	});
 
