@@ -12,6 +12,7 @@ keywords: Freeze, unfreeze, freezePanes, freezeleftcolumn, freezetoprow
 Freeze pane allows you to keep a portion of the sheet visible, while scrolling through the rest of the worksheet. 
 
 The freeze pane can be applied in a following ways,
+
 1. User Interface
 2. Initial Load
 3. Method
@@ -40,7 +41,7 @@ $(function () {
         sheets: [{
             dataSource: window.personList, 
             frozenRows:5,
-			frozenColumns:2
+		    frozenColumns:2
         }],
     });
 });
@@ -82,6 +83,7 @@ N> When we apply freeze pane by selecting cell “A1”, rows and columns are fr
 It allows you to keep the certain number of rows visible while scrolling through the rest of the worksheet.
 
 The freeze rows can be applied in a following ways,
+
 1. Initial Load
 2. Method
 
@@ -140,6 +142,7 @@ N> On OTHERS tab click Freeze Top Row in FreezePanes dropdown list, to freeze to
 It allows you to keep the certain number of column visible while scrolling through the rest of the work sheet.
 
 The freeze columns can be applied in a following ways,
+
 1. Initial Load
 2. Method
 
@@ -197,6 +200,7 @@ N> On OTHERS tab click Freeze First Column in FreezePanes dropdown list, to free
 Unfreeze all the rows and columns to scroll through entire sheet.
 
 The unfreeze pane can be applied in a following ways,
+
 1. User Interface
 2. Method
 
@@ -205,7 +209,7 @@ On OTHERS tab click Unfreeze Panes in Freeze Panes dropdown list.
 ![](Freeze-Pane_images/Freeze-Pane_img5.png)
 
 ### Method
-You can unfreeze rows or columns using [`unfreezePanes`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlfreeze-unfreezePanes "unfreezePanes") method. 
+You can unfreeze rows or columns using [`unfreezePanes`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlfreeze-unfreezepanes "unfreezePanes") method. 
 
 The following code example describes the above behavior,
 
