@@ -39,8 +39,8 @@ Create a HTML file and paste the following template to the HTML file to create t
          <div class="row">
             <div class="cols-sample-area">
                <div class="control">
-                  <div id="scrollcontent"> <!--first leval wraper div element -->
-                        <div class="sampleContent"><!--second leval wraper div element -->
+                  <div id="scrollcontent"> <!--first level wrapper div element -->
+                        <div class="sampleContent"><!--second level wrapper div element -->
                            <h3 style="font-size: 20px;">MVC</h3>
                            <div>
                               <p>Model–view–controller (MVC) is a software architecture pattern which separates the
