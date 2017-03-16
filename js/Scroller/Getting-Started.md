@@ -15,7 +15,7 @@ This section explains briefly about how to create a **Scroller** in your applica
 
 **Essential JavaScript Scroller** control can be rendered based on the target panel height and width, and includes more customization options.
 
-N> To render the scroller control, it is necessary to have two level of wrapper (div) element.
+N> To render the scroller control, it is necessary to have two level of wrapper (div) element for the scroll content. 
 
 **Add Scroller Control to your JavaScript Application**
 
