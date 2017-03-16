@@ -15,6 +15,8 @@ This section explains briefly about how to create a **Scroller** in your applica
 
 **Essential JavaScript Scroller** control can be rendered based on the target panel height and width, and includes more customization options.
 
+N> To render the scroller control, it is necessary to have two level of wrapper (div) element for the scroll content. 
+
 **Add Scroller Control to your JavaScript Application**
 
 Create a HTML file and paste the following template to the HTML file to create the ejScroller.
@@ -37,9 +39,8 @@ Create a HTML file and paste the following template to the HTML file to create t
          <div class="row">
             <div class="cols-sample-area">
                <div class="control">
-                  <div id="scrollcontent">
-                     <div>
-                        <div class="sampleContent">
+                  <div id="scrollcontent"> <!--first level wrapper div element -->
+                        <div class="sampleContent"><!--second level wrapper div element -->
                            <h3 style="font-size: 20px;">MVC</h3>
                            <div>
                               <p>Model–view–controller (MVC) is a software architecture pattern which separates the
@@ -66,7 +67,6 @@ Create a HTML file and paste the following template to the HTML file to create t
                               </ul>
                            </div>
                         </div>
-                     </div>
                   </div>
                </div>
             </div>
