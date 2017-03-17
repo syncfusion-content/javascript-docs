@@ -342,6 +342,30 @@ If you want to add additional font names and font sizes to font drop-down, pass 
 
 {% endhighlight %}
 
+## Apply Font color and Background color
+
+If you want to apply font  color or background color for a selected content of RTE you can use font color and background color tools. These tools contains a color palette with basic colors along with an option called **"More colors.."** in order to choose custom colors from color picker dialog.You can apply transparent background color for selected text through **transparent** button available in background color palette.
+
+{% highlight html %}
+
+    <textarea id="texteditor"></textarea>
+
+    <script type="text/javascript">
+        
+        $(function () {
+            $("#texteditor").ejRTE({
+              value: "The RichTextEditor (RTE) control enables you to edit the contents with insert table and images, it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.",
+              tools: {
+                font: ["fontName", "fontSize", "fontColor", "backgroundColor"]
+            }
+              });
+
+         });
+
+    </script>
+
+{% endhighlight %}
+
 ## Insert the content at cursor
 
 If you want to insert/paste the content at the current cursor position (or) to replace the selected content with some formatting, you can use pasteContent method in the editor.

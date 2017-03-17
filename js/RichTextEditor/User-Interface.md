@@ -318,3 +318,25 @@ N> The CSS class that defined for custom tool is directly applies to the newly a
 
 I> The custom buttons get a `insert-special-character` CSS class to allow styling, where name is the name specified in the custom tool configuration.
 
+## Types of responsive toolbar
+
+Two types of toolbar modes are available for RTE in responsive mode. This includes "inline" and "popup". Toolbar Type can be set through API [toolbarOverflowMode](https://help.syncfusion.com/api/js/ejrte#members:toolbarOverflowMode)  whose default value is "popup".
+
+{% highlight html %}
+
+     <textarea id="texteditor"></textarea>
+
+     <script type="text/javascript">
+       $(function (){
+         $("#texteditor").ejRTE({
+            isResponsive:true,
+			toolbarOverflowMode:"inline",
+            }
+        });
+
+     });
+   </script>
+
+{% endhighlight %}
+
+N> If you are not specifying toolbarOverflowMode, responsive RTE will be rendered with default popup toolbar.
