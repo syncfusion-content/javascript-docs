@@ -451,7 +451,7 @@ namespace PivotClientDemo
         }
     }
     .....
-    ..... // Initialize the datasourse
+    ..... // Initialize the datasource
     .....
 }
 
