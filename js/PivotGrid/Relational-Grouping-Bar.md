@@ -18,7 +18,7 @@ Grouping Bar allows user to dynamically alter the report by filter, sort and rem
 
   <script type="text/javascript">
 
-  // Deatasourse
+  // Datasource
   
     $(function() {
         $("#PivotGrid1").ejPivotGrid({
