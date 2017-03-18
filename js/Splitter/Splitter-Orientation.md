@@ -30,7 +30,7 @@ In the **HTML** page set the **&lt;div&gt;** element for rendering **Splitter** 
     <div>
         <div style="padding: 0px 15px;">
             <h3 class="h3">Grid </h3>
-            Essential Mvc Grid offers full featured a Grid control with extensive support for
+            Essential MVC Grid offers full featured a Grid control with extensive support for
             Grouping and the display of hierarchical data.
         </div>
     </div>

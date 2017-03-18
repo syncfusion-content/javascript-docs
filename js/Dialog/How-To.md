@@ -184,7 +184,7 @@ Add the below script to render the Dialog widget.
                 showFooter: true,
                 footerTemplateId: "sample"
             });
-			$("#check1").ejCheckBox({text:"Dont ask me this again"})
+			$("#check1").ejCheckBox({text:"Don't ask me this again"})
             $("#btnOpen").ejButton({ size: "medium", click: "onOpen", type: "button", height: 30, width: 150 });           
 			$("#btn1").ejButton({ size:"mini",height: 30, width: 70});
 			$("#btn2").ejButton({ size:"mini",height: 30, width: 70});

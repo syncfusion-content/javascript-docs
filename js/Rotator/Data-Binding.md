@@ -166,7 +166,7 @@ Rotator is availed with two types of AngularJS support namely,
 
 **Two-way binding** supports both the processes – it applies the scope values to the **Rotator** properties as well as the changes made in the **Rotator** widget are also reflected back and triggered within the AngularJS scope change function.
 
-To know more details about the **Angular** **binding**, you can refer the following link location,
+To know more details about the **AngularJS** **binding**, you can refer the following link location,
 
 <https://help.syncfusion.com/js/angularjs>
 
@@ -177,14 +177,14 @@ Add the following script files as given in the following example to access Angul
 * angular-min.js
 * ej.widget.angular.min.js
 
-The following code example depicts the way to bind data to the **Rotator** widget through **angular** support.
+The following code example depicts the way to bind data to the **Rotator** widget through **AngularJS** support.
 
 {% highlight html %}
 
 <!DOCTYPE html>
 <html lang="en" ng-app="rotatApp">
    <head>
-      <title>Essential Studio for JavaScript :Angular JS Support for Toolbar</title>
+      <title>Essential Studio for JavaScript :AngularJS Support for Toolbar</title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8" />
       <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
       <!--scripts-->

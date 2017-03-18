@@ -26,7 +26,7 @@ This settings can be specified through `contentType` property.
 
             $("#dialog").ejDialog({
                 title: "Dialog",
-               //create a html file (dialogcontent.html) which contains the content for the dialog                        
+               //create a HTML file (dialogcontent.html) which contains the content for the dialog                        
                 contentUrl: "dialogcontent.html",
                 contentType: "ajax"
             });
@@ -60,7 +60,7 @@ The previous example is modified as below to handle the success and failure even
 
             $("#dialog").ejDialog({
                 title: "Dialog",
-               //create a html file (dialogcontent.html) which contains the content for the dialog                        
+               //create a HTML file (dialogcontent.html) which contains the content for the dialog                        
                 contentUrl: "dialogcontent.html",
                 contentType: "ajax",
                 ajaxSuccess: "onSuccess",
