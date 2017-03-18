@@ -42,7 +42,7 @@ Required field and min value validation is demonstrated in the below given examp
 	
     $.validator.setDefaults({
         ignore: [],
-        errorClass: 'e-validation-error', // to get the error message on jquery validation
+        errorClass: 'e-validation-error', // to get the error message on jQuery validation
         errorPlacement: function (error, element) {
             $(error).insertAfter(element.closest(".e-widget"));
         }
