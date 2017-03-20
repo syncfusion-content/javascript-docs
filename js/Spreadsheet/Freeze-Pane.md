@@ -24,7 +24,7 @@ Select any cell and on OTHERS tab click Freeze Panes in Freeze Panes dropdown li
 
 ### Initial Load
 You can use [`allowFreezing`](https://help.syncfusion.com/api/js/ejspreadsheet#members:allowfreezing "allowFreezing") property to enable or disable freeze pane in Spreadsheet.
-To specify number of rows and columns to be frozen, use [`frozenRows`](https://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-frozenRows "frozenRows") and [`frozenColumns`](https://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-frozenColumns "frozenColumns") property in sheets.
+To specify number of rows and columns to be frozen, use [`frozenRows`](https://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-frozenrows "frozenRows") and [`frozenColumns`](https://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-frozencolumns "frozenColumns") property in sheets.
 
 The following code example describes the above behavior,
 
@@ -88,7 +88,7 @@ The freeze rows can be applied in a following ways,
 2. Method
 
 ### Initial Load
-You can freeze rows using [`frozenRows`](https://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-frozenRows "frozenRows") property in sheets. 
+You can freeze rows using [`frozenRows`](https://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-frozenrows "frozenRows") property in sheets. 
 
 The following code example describes the above behavior,
 
@@ -109,7 +109,7 @@ $(function () {
 {% endhighlight %}
 
 ### Method
-You can freeze rows using [`freezeRows`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlfreeze-freezeRows "freezeRows") method. 
+You can freeze rows using [`freezeRows`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlfreeze-freezerows "freezeRows") method. 
 
 The following code example describes the above behavior,
 
@@ -147,7 +147,7 @@ The freeze columns can be applied in a following ways,
 2. Method
 
 ### Initial Load
-You can apply freeze columns using [`frozenColumns`](https://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-frozenColumns "frozenColumns") property in sheets.
+You can apply freeze columns using [`frozenColumns`](https://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-frozencolumns "frozenColumns") property in sheets.
 The following code example describes the above behavior
 
 {% highlight html %}
@@ -168,7 +168,7 @@ $(function () {
 {% endhighlight %}
 
 ### Method
-You can apply freeze columns using [`freezeColumns`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlfreeze-freezeColumns "freezeColumns") method. 
+You can apply freeze columns using [`freezeColumns`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlfreeze-freezecolumns "freezeColumns") method. 
 The following code example describes the above behavior
 
 {% highlight html %}
