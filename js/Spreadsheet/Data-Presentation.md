@@ -28,7 +28,7 @@ You can insert the controls like Button, Checkbox, Dropdown list and Date picker
 
 You can insert the cell type to the selected range of cells by one of the following ways
 
-* Using `cellTypes` property in sheets.
+* Using [`cellTypes`](https://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-celltypes "cellTypes") property in sheets.
 * Using [`addCellTypes`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlcelltype-addcelltypes "addCellTypes") method. 
 
 ### To remove Cell Type
