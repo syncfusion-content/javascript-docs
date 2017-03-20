@@ -545,7 +545,7 @@ It has three functions. They are
 
 1. `create` - It is used to create the control at time of initialize.
 2. `read`   - It is used to read the Filter value selected.
-3. `write`  - It is used to assign the value selected for filtering.
+3. `write`  - It is used to render the control and assign the value selected for filtering.
 
 
 The following code example describes the above behavior.
