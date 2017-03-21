@@ -32,11 +32,11 @@ The following code example describes the above behavior.
 {% highlight javascript %}
 
     var kanbanData = [
-        { Id: 1, Status: "Open", Summary: "Analyze the new requirements gathered from the customer.", Assignee: "Nancy Davloio" },
-        { Id: 2, Status: "InProgress", Summary: "Improve application performance", Assignee: "Andrew Fuller" },
-        { Id: 3, Status: "Open", Summary: "Arrange a web meeting with the customer to get new requirements.", Assignee: "Janet Leverling" },
-        { Id: 4, Status: "InProgress", Summary: "Fix the issues reported in the IE browser.", Assignee: "Janet Leverling" },
-        { Id: 5, Status: "Testing", Summary: "Fix the issues reported by the customer.", Assignee: "Steven walker" }
+        { Id: 1, Status: "Open", Summary: "Analyze the new requirements gathered from the customer.", Assignee: "Nancy" },
+        { Id: 2, Status: "InProgress", Summary: "Improve application performance", Assignee: "Andrew" },
+        { Id: 3, Status: "Open", Summary: "Arrange a web meeting with the customer to get new requirements.", Assignee: "Janet" },
+        { Id: 4, Status: "InProgress", Summary: "Fix the issues reported in the IE browser.", Assignee: "Janet" },
+        { Id: 5, Status: "Testing", Summary: "Fix the issues reported by the customer.", Assignee: "Steven" }
     ];
 
     $("#Kanban").ejKanban(
