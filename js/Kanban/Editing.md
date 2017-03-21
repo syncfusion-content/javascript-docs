@@ -174,14 +174,14 @@ The following code example describes the above behavior.
                                 </td>
                                 <td style="text-align: left">
                                     <select id="Assignee" name="Assignee">
-                                        <option value="Nancy Davloio">Nancy Davloio</option>
-                                        <option value="Andrew Fuller">Andrew Fuller</option>
-                                        <option value="Janet Leverling">Janet Leverling</option>
-                                        <option value="Margaret hamilt">Margaret hamilt</option>
-                                        <option value="Steven walker">Steven walker</option>
-                                        <option value="Michael Suyama">Michael Suyama</option>
-                                        <option value="Robert King">Robert King</option>
-                                        <option value="Laura Callahan">Laura Callahan</option>
+                                        <option value="Nancy">Nancy</option>
+                                        <option value="Andrew">Andrew</option>
+                                        <option value="Janet">Janet</option>
+                                        <option value="Margaret">Margaret</option>
+                                        <option value="Steven">Steven</option>
+                                        <option value="Michael">Michael</option>
+                                        <option value="Robert">Robert</option>
+                                        <option value="Laura">Laura</option>
                                     </select>
                                 </td>
                             </tr>
@@ -816,8 +816,8 @@ The following code example describes the above behavior.
                 },
                 toolbarClick: function (args) {
                     if (args.itemName == "Delete" && this.element.find(".e-kanbancard").hasClass("e-cardselection")) {
-                        var selectedcard = this.element.find(".e-cardselection");
-                        this.KanbanEdit.deleteCard(selectedcard.attr("id"));
+                        var selected= this.element.find(".e-cardselection");
+                        this.KanbanEdit.deleteCard(selected.attr("id"));
                     }
 
                 },

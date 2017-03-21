@@ -337,7 +337,7 @@ Filters allows to filter the collection of cards from `dataSource` which meets t
                         },
                         keyField: "Status",
                         filterSettings: [                             
-                                { text: "Janet Issues", query: new ej.Query().where("Assignee", "equal", "Janet Leverling") },
+                                { text: "Janet Issues", query: new ej.Query().where("Assignee", "equal", "Janet") },
                                 { text: "Closed Issues", query: new ej.Query().where("Status", "equal", "Close") }
                         ]       
                     });
