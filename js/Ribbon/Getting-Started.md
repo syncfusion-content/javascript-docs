@@ -59,7 +59,7 @@ Define the Application Tab with [`type`](https://help.syncfusion.com/api/js/ejri
 {% highlight html %}
 
 	  <div id="Ribbon"></div>
-      <ul id="ribbonmenu">
+      <ul id="ribbon">
          <li>
             <a>FILE</a>
             <ul>
@@ -77,7 +77,7 @@ Define the Application Tab with [`type`](https://help.syncfusion.com/api/js/ejri
                   // application tab item defined here
                   applicationTab: {
                       type: ej.Ribbon.applicationTabType.menu,
-                      menuItemID: "ribbonmenu"
+                      menuItemID: "ribbon"
                   }
               });
           });
@@ -96,7 +96,7 @@ Tab is a set of related groups which are combined into single item. For creating
 {% highlight html %}
 
 	<div id="Ribbon"></div>
-      <ul id="ribbonmenu">
+      <ul id="ribbon">
          <li>
             <a>FILE</a>
             <ul>
@@ -112,7 +112,7 @@ Tab is a set of related groups which are combined into single item. For creating
                   // application tab item defined here
                   applicationTab: {
                       Type: ej.Ribbon.applicationTabType.menu,
-                      menuItemID: "ribbonmenu"
+                      menuItemID: "ribbon"
                   },
                   // tab item defined here
                   tabs: [{
@@ -138,7 +138,7 @@ Create group item with [`text`](https://help.syncfusion.com/api/js/ejribbon#memb
 {% highlight html %}
 
 	<div id="Ribbon"></div>
-      <ul id="ribbonmenu">
+      <ul id="ribbon">
          <li>
             <a>FILE</a>
             <ul>
@@ -152,7 +152,7 @@ Create group item with [`text`](https://help.syncfusion.com/api/js/ejribbon#memb
                 width: "500px",
                 applicationTab: {
                     type: ej.Ribbon.applicationTabType.menu,
-                    menuItemID: "ribbonmenu"
+                    menuItemID: "ribbon"
                 },
                 // tab item defined here
                 tabs: [{
@@ -188,7 +188,7 @@ Syncfusion JavaScript Controls can be added to group’s content with correspond
 {% highlight html %}
 
     <div id="Ribbon"></div>
-    <ul id="ribbonmenu">
+    <ul id="ribbon">
         <li>
           <a>FILE</a>
           <ul>
@@ -212,7 +212,7 @@ Syncfusion JavaScript Controls can be added to group’s content with correspond
                     width: 500,
                     applicationTab: {
                         type: ej.Ribbon.applicationTabType.menu,
-                        menuItemID: "ribbonmenu"
+                        menuItemID: "ribbon"
                     },
                     tabs: [{
                         id: "home",

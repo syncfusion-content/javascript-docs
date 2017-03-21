@@ -50,7 +50,7 @@ For further information on – how to refer the required culture scripts into yo
 {% highlight html %}
 
     <div id="defaultRibbon"></div>
-              <ul id="ribbonmenu">
+              <ul id="ribbon">
                 <li><a>FILE</a>
                  <ul>
                  <li><a>New</a></li>
@@ -74,7 +74,7 @@ For further information on – how to refer the required culture scripts into yo
 			showQAT: true,
 			applicationTab: {
 				type: ej.Ribbon.applicationTabType.menu,
-				menuItemID: "ribbonmenu",
+				menuItemID: "ribbon",
 				menuSettings: {
 					openOnClick: false
 				}
@@ -123,7 +123,7 @@ By default, Ribbon render its content and layout from left to right. To customiz
 {% highlight html %}
 
     <div id="defaultRibbon"></div>
-    <ul id="ribbonmenu">
+    <ul id="ribbon">
     <li>
         <a>FILE</a>
         <ul>
@@ -139,7 +139,7 @@ By default, Ribbon render its content and layout from left to right. To customiz
         $("#defaultRibbon").ejRibbon({
             width: "40%",
             enableRTL: true,
-            applicationTab: { type: ej.Ribbon.ApplicationTabType.Menu, menuItemID: "ribbonmenu", menuSettings: { openOnClick: false } },
+            applicationTab: { type: ej.Ribbon.ApplicationTabType.Menu, menuItemID: "ribbon", menuSettings: { openOnClick: false } },
             tabs: [{
                 id: "home", text: "HOME", groups: [{
                     text: "New", alignType: ej.Ribbon.AlignType.Rows, content: [{

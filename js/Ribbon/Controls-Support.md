@@ -77,7 +77,7 @@ N> 2. For [`type`](https://help.syncfusion.com/api/js/ejribbon#members:tabs-grou
 {% highlight html %}
 
 	<div id="Ribbon"></div>
-    <ul id="ribbonmenu">
+    <ul id="ribbon">
                     <li><a>FILE</a>
                         <ul>
                             <li><a>New</a></li>
@@ -92,7 +92,7 @@ N> 2. For [`type`](https://help.syncfusion.com/api/js/ejribbon#members:tabs-grou
         $(function() {
             $("#Ribbon").ejRibbon({
                 width: "100%",
-                applicationTab: { Type: ej.Ribbon.applicationTabType.menu, menuItemID: "ribbonmenu", menuSettings: { openOnClick: false } },
+                applicationTab: { Type: ej.Ribbon.applicationTabType.menu, menuItemID: "ribbon", menuSettings: { openOnClick: false } },
                 tabs: [
                     {
                         id: "home",
@@ -230,7 +230,7 @@ You can set [`type`](https://help.syncfusion.com/api/js/ejribbon#members:tabs-gr
 {% highlight html %}
 
     <div id="Ribbon"></div>
-    <ul id="ribbonmenu">
+    <ul id="ribbon">
         <li>
             <a>FILE </a>
             <ul>
@@ -260,7 +260,7 @@ You can set [`type`](https://help.syncfusion.com/api/js/ejribbon#members:tabs-gr
                 width: "600",
                 applicationTab: {
                     type: ej.Ribbon.applicationTabType.menu,
-                    menuItemID: "ribbonmenu"
+                    menuItemID: "ribbon"
                 },
                 tabs: [{
                     id: "home",
