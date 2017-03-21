@@ -59,7 +59,7 @@ If client width is less than 480px, the Kanban will render in mobile mode. In wh
                     keyField: "Status",
                     allowSearching: true,
                     filterSettings: [
-                             { text: "Janet Issues", query: new ej.Query().where("Assignee", "equal", "Janet Leverling"), description: "Displays issues which matches the assignee as 'Janet Leverling'" },
+                             { text: "Janet Issues", query: new ej.Query().where("Assignee", "equal", "Janet"), description: "Displays issues which matches the assignee as 'Janet'" },
                              { text: "Testing Issues", query: new ej.Query().where("Status", "equal", "Testing"), description: "Display the issues of 'Testing'" }
 
                     ],
