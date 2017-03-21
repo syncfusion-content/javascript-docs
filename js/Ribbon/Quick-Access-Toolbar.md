@@ -24,7 +24,7 @@ The client side event for Quick Access Toolbar menu click is [`qatMenuItemClick`
 {% highlight html %}
 
 	  <div id="Ribbon"></div>
-		<ul id="ribbonmenu">
+		<ul id="ribbon">
 			<li>
 				<a>FILE</a>
 				<ul>
@@ -42,7 +42,7 @@ The client side event for Quick Access Toolbar menu click is [`qatMenuItemClick`
 					showQAT: true,
 					applicationTab: {
 						type: ej.Ribbon.applicationTabType.menu,
-						menuItemID: "ribbonmenu"
+						menuItemID: "ribbon"
 					},
 					tabs: [{
 						id: "home",

@@ -37,7 +37,7 @@ Custom controls or items (such as table, div etc.) can be added when the [`type`
 {% highlight html %}
 	
 	<div id="Ribbon"></div>
-	<ul id="ribbonmenu">
+	<ul id="ribbon">
 		<li>
 			<a>FILE</a>
 			<ul>
@@ -57,7 +57,7 @@ Custom controls or items (such as table, div etc.) can be added when the [`type`
 				width: "500px",
 				applicationTab: {
 					type: ej.Ribbon.applicationTabType.menu,
-					menuItemID: "ribbonmenu"
+					menuItemID: "ribbon"
 				},
 				//tab collection
 				tabs: [{
@@ -69,7 +69,7 @@ Custom controls or items (such as table, div etc.) can be added when the [`type`
 						// content collection of group
 						content: [{
 							groups: [{
-								// contentgroup with splitbutton id , text & button settings
+								// content group with splitbutton id , text & button settings
 								id: "paste",
 								text: "Paste",
 								toolTip: "Paste",
@@ -84,11 +84,11 @@ Custom controls or items (such as table, div etc.) can be added when the [`type`
 						}]
 					}, {
 						text: "Font",
-						//group aligntype as columns
+						//group align type as columns
 						alignType: ej.Ribbon.alignType.columns,
 						content: [{
 							groups: [{
-								// contentgroup with toggle button settings
+								// content group with toggle button settings
 								id: "cut",
 								toggleButtonSettings: {
 									defaultText: "Cut",
@@ -126,7 +126,7 @@ Separates the control from the next control in the group when group `alignType` 
 {% highlight html %}
 
 	<div id="Ribbon"></div>
-    <ul id="ribbonmenu">
+    <ul id="ribbon">
         <li><a>FILE </a>
             <ul>
                 <li><a>New</a></li>
@@ -140,7 +140,7 @@ Separates the control from the next control in the group when group `alignType` 
                 width: "500",
                 applicationTab: {
                     type: ej.Ribbon.applicationTabType.menu,
-                    menuItemID: "ribbonmenu"
+                    menuItemID: "ribbon"
                 },
                 tabs: [{
                     id: "home",
@@ -195,7 +195,7 @@ Set group [`type`](https://help.syncfusion.com/api/js/ejribbon#members:tabs-grou
 {% highlight html %}
 
 	<div id="Ribbon"></div>
-	<ul id="ribbonmenu">
+	<ul id="ribbon">
 		<li><a>FILE </a>
 			<ul>
 				<li><a>New</a></li>
@@ -209,7 +209,7 @@ Set group [`type`](https://help.syncfusion.com/api/js/ejribbon#members:tabs-grou
 				width: "500",
 				applicationTab: {
 					type: ej.Ribbon.applicationTabType.menu,
-					menuItemID: "ribbonmenu"
+					menuItemID: "ribbon"
 				},
 				tabs: [{
 					id: "home",
@@ -239,7 +239,7 @@ Set [`enableGroupExpander`](https://help.syncfusion.com/api/js/ejribbon#members:
 {% highlight html %}
 
     <div id="Ribbon"></div>
-    <ul id="ribbonmenu">
+    <ul id="ribbon">
         <li><a>FILE </a>
             <ul>
                 <li><a>New</a></li>
@@ -253,7 +253,7 @@ Set [`enableGroupExpander`](https://help.syncfusion.com/api/js/ejribbon#members:
                 width: "500",
                 applicationTab: {
                     type: ej.Ribbon.applicationTabType.menu,
-                    menuItemID: "ribbonmenu"
+                    menuItemID: "ribbon"
                 },
                 tabs: [{
                     id: "home",
