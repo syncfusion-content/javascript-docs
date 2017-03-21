@@ -43,7 +43,7 @@ The following code example describes the above behavior.
                 tag: "Tags"
             },
             filterSettings: [
-                { text: "Janet Issues", query: new ej.Query().where("Assignee", "equal", "Janet Leverling"), description: "Displays issues which matches the asssignee as 'Janet Leverling'" },
+                { text: "Janet Issues", query: new ej.Query().where("Assignee", "equal", "Janet"), description: "Displays issues which matches the assignee as 'Janet'" },
                 { text: "Closed Issues", query: new ej.Query().where("Status", "equal", "Close"), description: "Display the 'Closed' issues" }
             ]
         });
