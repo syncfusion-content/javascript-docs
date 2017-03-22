@@ -141,7 +141,7 @@ For demo purpose, remote data URL is used here and the code example is as follow
 
 <script type="text/javascript">
 $(function() { // document ready function.
-    //oData Adaptor with DataManager
+    //DataManager with remote URL
     var dataManager = new ej.DataManager("http://js.syncfusion.com/demos/ejServices/api/Schedule/LoadData");
     $("#schedule").ejSchedule({
         width: "100%",
@@ -170,7 +170,7 @@ The appointment fields are needed to be mapped with the appropriate column names
 
 <script type="text/javascript">
 $(function() { // Document is ready
-    //oData Adaptor with DataManager
+    //DataManager with remote URL
     var dataManager = new ej.DataManager("http://js.syncfusion.com/demos/ejServices/api/Schedule/LoadData");
     $("#schedule").ejSchedule({
         width: "100%",
