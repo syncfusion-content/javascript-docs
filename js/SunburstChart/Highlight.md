@@ -37,9 +37,9 @@ $("#chart").ejSunburstChart({
 
           //..         
           highlightSettings: { enable: true, type:"color",color:"red" },         
-//..
+         //..
 
-});
+ });
 
  {% endhighlight %}
 
@@ -48,12 +48,14 @@ $("#chart").ejSunburstChart({
 ## Highlight Mode
 
 Sunburst chart provides multiple options to represent the highlighted categories. You can highlight the segment categories by using the [`mode`](../api/ejsunburstchart#members:highlightsettings-mode) property in highlightSettings
+
 *	Child – To highlight the child of selected parent.
 *	All – To highlight the entire categories in group.
 *	Parent – To highlight the parent of selected child.
 *	Single - To highlight single item in the category.
 
 ### Child
+
 The following code shows how to set the highlight type as child 
 
 {% highlight js %}
@@ -79,7 +81,7 @@ $("#chart").ejSunburstChart({
 
           //..         
           highlightSettings: { enable: true,mode:"parent"},         
-//..
+          //..
 
 });
 {% endhighlight %}
@@ -96,7 +98,7 @@ $("#chart").ejSunburstChart({
 
           //..         
           highlightSettings: { enable: true,mode:"point"},         
-//..
+         //..
 
 });
  {% endhighlight %}
@@ -112,7 +114,7 @@ $("#chart").ejSunburstChart({
 
           //..         
           highlightSettings: { enable: true,mode:"all"},         
-//..
+         //..
 
 });
 

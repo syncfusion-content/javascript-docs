@@ -22,6 +22,7 @@ $("#chart"). ejSunburstChart ({
 
 ## Animation Types 
 Sunburst chart provide options to animate the chart segments in different ways using [`animationType`](../api/ejsunburstchart#members:animationtype) property.
+
 FadeIn – It gradually changes opacity of the chart segment.
 Rotation – During an animation, control rotate from 0 to 360 angle.
 

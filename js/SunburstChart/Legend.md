@@ -122,7 +122,7 @@ Used to highlight specific category while clicking on legend item
 
 {% highlight js %}
 
-$("#chart"). ejSunburstChart ({
+$("#chart").ejSunburstChart ({
 
     legend: {clickAction:"toggleSegmentSelection"},
    });
@@ -137,7 +137,7 @@ Used to disable the specific category while clicking on legend item.
 
 {% highlight js %}
 
-$("#chart"). ejSunburstChart ({
+$("#chart").ejSunburstChart ({
 
     legend: {clickAction:"toggleSegmentVisibility"},
    });

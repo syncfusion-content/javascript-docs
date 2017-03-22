@@ -95,6 +95,7 @@ var default_data = [
 {% endhighlight %}
 
 ### Initialize Sunburst Chart with data
+
 Now, bind the default_Datasource to [`datasource`](../api/ejsunburstchart#members:datasource) property of the Sunburst Chart. The[`levels`](../api/ejsunburstchart#members:levels) property determines the number of hierarchical levels. Each hierarchy level is formed based on the property specified in [`groupMemberPath`](../api/ejsunburstchart#members:groupMemeberPath) property, and each arc segment size is calculated using [`valueMemberPath`](../api/ejsunburstchart#members:valueMemberPath).
 
 2. Add a script tag anywhere in the web page and add the following code.
@@ -156,7 +157,7 @@ The title of the Sunburst chart is used to provide quick information to the user
 
 {% highlight js %}
 
- $("#chart"). ejSunburstChart ({
+ $("#chart").ejSunburstChart ({
 
   title: {text: "Employees Count"},
 
@@ -170,7 +171,7 @@ You can enable or disable the legend by using the [`visible`](../api/ejsunburstc
 
 {% highlight js %}
 
- $("#chart"). ejSunburstChart ({
+ $("#chart").ejSunburstChart ({
 
   legend: { visible:true, position: "left" }
   
@@ -184,7 +185,7 @@ The data labels are used to improve the readability of the Sunburst chart. This 
 
 {% highlight js %}
 
- $("#chart"). ejSunburstChart ({
+ $("#chart").ejSunburstChart ({
 
   datalabelSettings: { visible:true}
   

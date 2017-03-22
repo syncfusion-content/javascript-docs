@@ -37,7 +37,7 @@ $("#chart").ejSunburstChart({
 
           //..         
           selectionSettings: { enable: true, type:"color",color:"red" },         
-//..
+          //..
 
 });
 
@@ -54,6 +54,7 @@ Sunburst chart provides multiple options to represent the selected categories. Y
 *	Single - To selection single item in the category.
 
 ### Child
+
 The following code shows how to set the selection type as child 
 
 {% highlight js %}
@@ -62,7 +63,7 @@ $("#chart").ejSunburstChart({
 
           //..         
           selectionSettings: { enable: true,mode:"child"},         
-//..
+          //..
 
 });
 {% endhighlight %}
@@ -79,7 +80,7 @@ $("#chart").ejSunburstChart({
 
           //..         
           selectionSettings: { enable: true,mode:"parent"},         
-//..
+         //..
 
 });
 {% endhighlight %}
@@ -96,7 +97,7 @@ $("#chart").ejSunburstChart({
 
           //..         
           selectionSettings: { enable: true,mode:"point"},         
-//..
+         //..
 
 });
  {% endhighlight %}
@@ -112,7 +113,7 @@ $("#chart").ejSunburstChart({
 
           //..         
           selectionSettings: { enable: true,mode:"all"},         
-//..
+          //..
 
 });
 

@@ -13,7 +13,7 @@ documentation: ug
 
 {% highlight js %}
 
-$("#chart"). ejSunburstChart ({
+$("#chart").ejSunburstChart ({
     //...
 	tooltip: {visible: true},
     //.. 
@@ -42,7 +42,7 @@ HTML elements can be displayed in the tooltip by using the [`template`](../api/e
         </div>
     </div>
 
-$("#chart"). ejSunburstChart ({
+$("#chart").ejSunburstChart ({
 	tooltip: { visible: true,
     template:"Tooltip"},
    });

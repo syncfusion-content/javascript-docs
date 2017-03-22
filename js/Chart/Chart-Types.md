@@ -2499,7 +2499,7 @@ The feild y requires n number of data or it should  contains minimum of five val
 
 ### BoxPlotMode
 
-You can change the rendering mode of the  Box and Whisker series using the  [`boxPlotMode`](../api/ejchart.html#members:series-boxPlotMode) property. The default  [`boxPlotMode`](../api/ejchart.html#members:series-boxPlotMode) is **"exclusive"**.The other boxPlotModes available are [`inclusive`](../api/ejchart.html#members:series-close) and *normal*.
+You can change the rendering mode of the  Box and Whisker series using the  [`boxPlotMode`](../api/ejchart.html#members:series-boxPlotMode) property. The default  [`boxPlotMode`](../api/ejchart.html#members:series-boxPlotMode) is **"exclusive"**.The other boxPlotModes available are `inclusive`and `normal`.
 
 
 {% highlight javascript %}
@@ -2518,7 +2518,7 @@ You can change the rendering mode of the  Box and Whisker series using the  [`bo
 
 ### ShowMedian
 
-Box and Whisker [`showMedian`](../api/ejchart.html#members:series-showMedian) property is used to show the box and whisker average value. The default value of [`boxandwhisker`](../api/ejchart.html#members:series-showMedian) is **"false"**.  
+Box and Whisker [`showMedian`](../api/ejchart.html#members:series-showMedian) property is used to show the box and whisker average value. The default value of [`showMedian`](../api/ejchart.html#members:series-showMedian) is **"false"**.  
 
 {% highlight javascript %}
 
@@ -2538,7 +2538,7 @@ Box and Whisker [`showMedian`](../api/ejchart.html#members:series-showMedian) pr
 
 ###  Customize the Outlier
 
-Outlier symbol, width and height can be  customized using outlierSettings through outlierSettings property. By default Outlier symbol is displayed as circle with a height and width of 6 pixels.
+Outlier symbol, width and height can be  customized using outlierSettings through [`outlierSettings`](../api/js/ejchart#members:series-outliersettings) property. By default Outlier symbol is displayed as circle with a height and width of 6 pixels.
 
 {% highlight javascript %}
 

@@ -3,7 +3,7 @@ layout: post
 title: Sunburst Zooming
 description: Learn how to Zoom the SunburstChart for better data visualization
 platform: ts
-control: Sparkline
+control: SunburstChart
 documentation: ug
 ---
 
