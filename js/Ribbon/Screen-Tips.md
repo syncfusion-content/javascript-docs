@@ -18,7 +18,7 @@ Standard `html tooltip` can be set using [`tooltip`](https://help.syncfusion.com
 {% highlight html %}
 
     <div id="Ribbon"></div>
-    <ul id="ribbonmenu">
+    <ul id="ribbon">
         <li><a>FILE</a>
             <ul>
                 <li><a>New</a></li>
@@ -33,7 +33,7 @@ Standard `html tooltip` can be set using [`tooltip`](https://help.syncfusion.com
                 allowResizing: true,
                 applicationTab: {
                     type: ej.Ribbon.applicationTabType.menu,
-                    menuItemID: "ribbonmenu",
+                    menuItemID: "ribbon",
                 },
                 tabs: [{
                     id: "home",
@@ -91,7 +91,7 @@ Custom Tooltip is used to set detailed help to the user about the controls. You 
                 width: "450",
                 applicationTab: {
                     type: ej.Ribbon.applicationTabType.menu,
-                    menuItemID: "ribbonmenu",
+                    menuItemID: "ribbon",
                 },
                 tabs: [{
                     id: "home",
@@ -143,7 +143,7 @@ Custom Tooltip is used to set detailed help to the user about the controls. You 
             width: 64px;
         }
     </style>
-    <ul id="ribbonmenu">
+    <ul id="ribbon">
         <li><a>FILE</a>
             <ul>
                 <li><a>New</a></li>
@@ -165,7 +165,7 @@ N> Custom gallery item `menu` is not supported to Custom tooltip.
 {% highlight html %}
 
     <div id="Ribbon"></div>    
-    <ul id="ribbonmenu">
+    <ul id="ribbon">
         <li><a>FILE</a> </li>
     </ul>
     <ul id="custommenu">
@@ -182,7 +182,7 @@ N> Custom gallery item `menu` is not supported to Custom tooltip.
                 width: "500",
                 applicationTab: {
                     type: ej.Ribbon.applicationTabType.menu,
-                    menuItemID: "ribbonmenu"
+                    menuItemID: "ribbon"
                 },
                 tabs: [{
                     id: "home",
@@ -311,7 +311,7 @@ Specifies the [`custom tooltip`](https://help.syncfusion.com/api/js/ejribbon#mem
 {% highlight html %}
 
     <div id="defaultRibbon"></div>
-                 <ul id="ribbonmenu">
+                 <ul id="ribbon">
 				    <li><a>FILE</a>
                        <ul>
                          <li><a>New</a></li>
@@ -332,7 +332,7 @@ Specifies the [`custom tooltip`](https://help.syncfusion.com/api/js/ejribbon#mem
             },
             applicationTab: {
                 type: ej.Ribbon.applicationTabType.menu,
-                menuItemID: "ribbonmenu",
+                menuItemID: "ribbon",
                 menuSettings: {
                     openOnClick: false
                 }
@@ -378,7 +378,7 @@ Specifies the [`custom tooltip`](https://help.syncfusion.com/api/js/ejribbon#mem
 {% highlight html %}
 
     <div id="defaultRibbon"></div>
-                 <ul id="ribbonmenu">
+                 <ul id="ribbon">
 				    <li><a>FILE</a>
                        <ul>
                          <li><a>New</a></li>
@@ -399,7 +399,7 @@ Specifies the [`custom tooltip`](https://help.syncfusion.com/api/js/ejribbon#mem
             },
             applicationTab: {
                 type: ej.Ribbon.applicationTabType.menu,
-                menuItemID: "ribbonmenu",
+                menuItemID: "ribbon",
                 menuSettings: {
                     openOnClick: false
                 }
@@ -445,7 +445,7 @@ Specifies the [`custom tooltip`](https://help.syncfusion.com/api/js/ejribbon#mem
 {% highlight html %}
 
     <div id="defaultRibbon"></div>
-               <ul id="ribbonmenu">
+               <ul id="ribbon">
 				  <li><a>FILE</a>
                     <ul>
                     <li><a>New</a></li>
@@ -460,7 +460,7 @@ Specifies the [`custom tooltip`](https://help.syncfusion.com/api/js/ejribbon#mem
             width: "300",
             applicationTab: {
                 type: ej.Ribbon.applicationTabType.menu,
-                menuItemID: "ribbonmenu",
+                menuItemID: "ribbon",
                 menuSettings: {
                     openOnClick: false
                 }

@@ -22,7 +22,7 @@ N> The [`itemHeight`](https://help.syncfusion.com/api/js/ejribbon#members:tabs-g
 {% highlight html %}
 
     <div id="Ribbon"></div>
-    <ul id="ribbonmenu">
+    <ul id="ribbon">
         <li><a>FILE</a>
             <ul>
                 <li><a>Open</a></li>
@@ -35,7 +35,7 @@ N> The [`itemHeight`](https://help.syncfusion.com/api/js/ejribbon#members:tabs-g
                 width: "500",
                 applicationTab: {
                     type:ej.Ribbon.applicationTabType.menu,
-                    menuItemID: "ribbonmenu"
+                    menuItemID: "ribbon"
                 },
                 tabs: [{
                     id: "home",
@@ -139,7 +139,7 @@ You can also set [`text`](https://help.syncfusion.com/api/js/ejribbon#members:ta
 {% highlight html %}
 
     <div id="Ribbon"></div>
-    <ul id="ribbonmenu">
+    <ul id="ribbon">
         <li><a>FILE</a> </li>
     </ul>
     <ul id="custommenu">
@@ -156,7 +156,7 @@ You can also set [`text`](https://help.syncfusion.com/api/js/ejribbon#members:ta
                 width: "500",
                 applicationTab: {
                     type: ej.Ribbon.applicationTabType.menu,
-                    menuItemID: "ribbonmenu"
+                    menuItemID: "ribbon"
                 },
                 tabs: [{
                     id: "home",

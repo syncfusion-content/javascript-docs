@@ -14,7 +14,7 @@ keywords: contextual tab and tab set
 {% highlight html %}
 
     <div id="Ribbon"></div>
-    <ul id="ribbonmenu">
+    <ul id="ribbon">
             <li>
                 <a>FILE</a>
                 <ul>
@@ -55,7 +55,7 @@ keywords: contextual tab and tab set
                     width: "500px",
                     applicationTab: {
                         type: ej.Ribbon.applicationTabType.menu,
-                        menuItemID: "ribbonmenu"
+                        menuItemID: "ribbon"
                     },
                     tabs: [{
                         id: "home",

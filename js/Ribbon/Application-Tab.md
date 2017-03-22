@@ -27,7 +27,7 @@ Set the UL element `id` to [`menuItemID`](https://help.syncfusion.com/api/js/ejr
     
         <div id="Ribbon"></div>
         <!--UL template to render menu-->
-        <ul id="ribbonmenu">
+        <ul id="ribbon">
         <li>
             <a>FILE</a>
             <ul>
@@ -44,7 +44,7 @@ Set the UL element `id` to [`menuItemID`](https://help.syncfusion.com/api/js/ejr
                     applicationTab: {
                         type: ej.Ribbon.applicationTabType.menu,
                         // menuItemID mapped to UL with id of “menu”                                         
-                        menuItemID: "ribbonmenu",
+                        menuItemID: "ribbon",
                         // menu properties defined in menusetttings 
                         menuSettings: {
                             openOnClick: false
@@ -74,7 +74,7 @@ Application Menu can be rendered using JSON Data Source. Please refer [`this`](h
 {% highlight html %}
     
     <div id="Ribbon"></div>
-    <ul id="ribbonmenu">
+    <ul id="ribbon">
     </ul>
     <script type="text/javascript">
         var data = [{
@@ -103,7 +103,7 @@ Application Menu can be rendered using JSON Data Source. Please refer [`this`](h
                 width: 500,
                 applicationTab: {
                     type:ej.Ribbon.applicationTabType.menu,
-                    menuItemID: "ribbonmenu",
+                    menuItemID: "ribbon",
                     menuSettings: {
                         // data source to menu
                         fields: {
