@@ -132,7 +132,7 @@ Initialize the Schedule control by adding the following script code to the body 
 
 Scheduler uses [ejDataManager](/js/datamanager/overview) which supports both RESTful JSON data services binding and local JSON array binding. The **dataSource** property of the Scheduler can be assigned either with the instance of `ejDataManger` or JSON data array collection. 
 
-For demo purpose, [Northwind OData Service](http://mvc.syncfusion.com/OdataServices/Northwnd.svc) is used here and the code example is as follows.
+For demo purpose, remote data URL is used here and the code example is as follows.
 
 {% highlight html %}
 
@@ -141,8 +141,8 @@ For demo purpose, [Northwind OData Service](http://mvc.syncfusion.com/OdataServi
 
 <script type="text/javascript">
 $(function() { // document ready function.
-    //oData Adaptor with DataManager
-    var dataManager = new ej.DataManager("http://mvc.syncfusion.com/OdataServices/Northwnd.svc/Events");
+    //DataManager with remote URL
+    var dataManager = new ej.DataManager("http://js.syncfusion.com/demos/ejServices/api/Schedule/LoadData");
     $("#schedule").ejSchedule({
         width: "100%",
         height: "600px",
@@ -156,7 +156,7 @@ $(function() { // document ready function.
 
 {% endhighlight %}
 
-N> ODataAdaptor is the default adaptor used within DataManager. While binding to other web services, proper [data adaptor](/js/datamanager/data-adaptors) needs to be set for `adaptor` option of DataManager.
+N> While binding Scheduler dataSource to other web services, proper [data adaptor](/js/datamanager/data-adaptors) needs to be set for `adaptor` option of DataManager.
 
 
 ## Mapper Fields
@@ -170,8 +170,8 @@ The appointment fields are needed to be mapped with the appropriate column names
 
 <script type="text/javascript">
 $(function() { // Document is ready
-    //oData Adaptor with DataManager
-    var dataManager = new ej.DataManager("http://mvc.syncfusion.com/OdataServices/Northwnd.svc/Events");
+    //DataManager with remote URL
+    var dataManager = new ej.DataManager("http://js.syncfusion.com/demos/ejServices/api/Schedule/LoadData");
     $("#schedule").ejSchedule({
         width: "100%",
         height: "600px",
