@@ -613,7 +613,7 @@ $(function () {
                                }
                 ] 
             });
-			 var data = [{value:"Freight",text:"Freight"},{value:"Verified",text:"Verified"}];
+			 
            });
 {% endhighlight %}
 
