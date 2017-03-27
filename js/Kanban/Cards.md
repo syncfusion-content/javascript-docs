@@ -120,7 +120,7 @@ The following code example describes the above behavior.
             <table>
             <tr>
                 <td class="photo">
-                    <img src="{{:Priority}}.png">
+                    <img src="{{"{{"}}:Priority{{}}}}.png">
                 </td>            
                 <td class="details">
                     <table>
@@ -131,11 +131,11 @@ The following code example describes the above behavior.
                         <tbody>
                             <tr>
                                 <td class="CardHeader">   Name: </td>
-                                <td>{{:Assignee}}</td>
+                                <td>{{"{{"}}:Assignee{{}}}}</td>
                             </tr>
                             <tr>
                                 <td class="CardHeader">   Task: </td>
-                                <td>{{:Type}}</td>
+                                <td>{{"{{"}}:Type{{}}}}</td>
                             </tr>
                         </tbody>
                     </table>
@@ -276,7 +276,7 @@ The following code example describes the tooltip template.
                 <table>
                     <tr>
                         <td class="photo">
-                            <img src="{{:ImgUrl}}">
+                            <img src="{{"{{"}}:ImgUrl{{}}}}">
                         </td>
                         <td class="details">
                             <table>
@@ -287,19 +287,19 @@ The following code example describes the tooltip template.
                                 <tbody>
                                     <tr>
                                         <td class="CardHeader">Assignee:</td>
-                                        <td>{{:Assignee}}</td>
+                                        <td>{{"{{"}}:Assignee{{}}}}</td>
                                     </tr>
                                     <tr>
                                         <td class="CardHeader">Type:</td>
-                                        <td>{{:Type}}</td>
+                                        <td>{{"{{"}}:Type{{}}}}</td>
                                     </tr>                                
                                     <tr>
                                         <td class="CardHeader">Estimate:</td>
-                                        <td>{{:Estimate}}</td>
+                                        <td>{{"{{"}}:Estimate{{}}}}</td>
                                     </tr>                                
                                     <tr>
                                         <td class="CardHeader">Summary:</td>
-                                        <td>{{:Summary}}</td>
+                                        <td>{{"{{"}}:Summary{{}}}}</td>
                                     </tr>
                                 </tbody>
                             </table>
