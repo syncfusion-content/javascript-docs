@@ -422,7 +422,7 @@ Using [ej.WebApiAdaptor](https://help.syncfusion.com/js/datamanager/data-adaptor
 
             var dataManager = ej.DataManager({
 
-                url: "http://mvc.syncfusion.com/OdataServices/treeView/TreeViewData/GetAllData",
+                url: "http://js.syncfusion.com/demos/ejServices/api/TreeViewData/GetAllData",
 
                 crossDomain: true,
 

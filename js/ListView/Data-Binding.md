@@ -9,7 +9,7 @@ documentation: ug
 
 # Data Binding
 
-**Local Data Binding**
+## Local Data Binding
 
 **Essential Studio Web JS ListView** provides support for **Data Binding**. **Data Binding** provides a simple and consistent way for applications to present and interact with data. Elements can be bounded to data from a variety of data sources. In local data binding, the data source is written inside the program. Then it is handled by the **ListView** control. **DataSource** is used to get the **data source** that holds the list items.
 
@@ -65,7 +65,159 @@ Run the code to get the following output
 
 ![](/js/ListView/Data-Binding_images/Data-Binding_img1.png) 
 
-**FieldSettings**
+##  Remote Data Binding
+
+**Essential Studio Web JS ListView** provides support for **Data Binding**.
+
+### OData
+
+OData is a standardized protocol for creating and consuming the data. You can retrieve data from [OData service](http://www.odata.org/) by using **ej.DataManager**.
+Here the **CustomerID** field is mapped with text property of the field object. The queries can be created using **ej.Query()**.
+
+
+{% highlight html %}
+
+<div id="listview"></div>
+
+{% endhighlight %}
+
+{% highlight javascript %}
+
+  var dataManger = ej.DataManager({ url: "http://js.syncfusion.com/ejservices/Wcf/Northwind.svc/", crossDomain: true
+        });   
+        var query = ej.Query().from('Customers').take(10);
+
+        $(function () {
+            $("#listview").ejListView({
+                datasource: dataManger,
+                fieldsettings: { "text": "CustomerID" },
+                query: query,
+            
+            });
+        });
+
+{% endhighlight %}
+
+Run the code to get the following output
+
+
+![](/js/ListView/Data-Binding_images/Odata-img.png)
+
+### URL Adaptor
+
+URL Adaptor of **DataManager** can be used when you are required to use remote service to retrieve data. It interacts with server-side for all **DataManager** Queries and **CRUD** operations.
+Now, in the following code example the data is retrieved from **MVC Controller**.
+
+{% highlight html %}
+
+<div id="listview"></div>
+
+{% endhighlight %}
+
+{% highlight javascript %}
+
+   var dataManager = ej.DataManager({ url: "Home/Data", adaptor: new ej.UrlAdaptor() });
+        var query = ej.Query().take(10);
+
+        $(function () {
+            $("#listview").ejListView({
+                datasource: dataManager,
+                fieldsettings: { "text": "caption" },
+                query: query,
+            
+            });
+        });
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+public partial class ListviewController : Controller
+    {
+
+        public JsonResult DataSource()
+        {
+
+            IEnumerable Data = setListSource();
+            return Json(Data, JsonRequestBehavior.AllowGet);
+        }
+
+        public static List<ListLocalData> setListSource()
+        {
+            List<ListLocalData> listSource = new List<ListLocalData>();
+
+            listSource.Add(new ListLocalData { caption = "Hot Singles" });
+
+            listSource.Add(new ListLocalData { caption = "Rising Artists" });
+
+            listSource.Add(new ListLocalData { caption = "Live Music" });
+
+            listSource.Add(new ListLocalData { caption = "Best of 2013 So Far" });
+
+            listSource.Add(new ListLocalData { caption = "100 Albums - $5 Each" });
+
+            listSource.Add(new ListLocalData { caption = "Hip-Hop and R&B Sale" });
+
+            listSource.Add(new ListLocalData { caption = "CD Deals" });
+
+            listSource.Add(new ListLocalData { caption = "Songs" });
+
+            listSource.Add(new ListLocalData { caption = "Bestselling Albums" });
+
+            listSource.Add(new ListLocalData { caption = "New Releases" });
+
+            return listSource;
+
+        }
+
+{% endhighlight %}
+
+Run the code to get the following output
+
+
+![](/js/ListView/Data-Binding_images/url-img.png)
+
+### WebAPI
+
+WebApi Adaptor, extended from ODataAdaptor, of DataManager is used for retrieving data from WebApi service.ASP.NET Web API is a Framework for building HTTP services. You can retrieve data from ASP.NET Web API by using **ej.DataManager**.
+
+{% highlight html %}
+
+<div id="listview"></div>
+
+{% endhighlight %}
+
+{% highlight javascript %}
+
+      <script>
+        var dataManger = ej.DataManager({
+            url: "http://js.syncfusion.com/ejservices/Wcf/Northwind.svc/Customers",
+            crossDomain: true,
+          adaptor: new ej.WebApiAdaptor()
+        });
+
+        var query = ej.Query();
+
+        $(function () {
+            $("#listview").ejListView({
+                datasource: dataManger,
+                fieldsettings: { "text": "CustomerID" },
+                query: query,
+            });
+        });
+
+    </script>
+
+{% endhighlight %}
+
+
+Run the code to get the following output
+
+
+![](/js/ListView/Data-Binding_images/webapi-img.png)
+
+
+## FieldSettings
 
 The **data-ej-FieldSettings** attribute is used to map the **DataSource** field with the list item fields. In addition to the list [item specific properties](/js/listview/grouped-list), the following fields are available while mapping.
 
