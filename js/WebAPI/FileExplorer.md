@@ -118,7 +118,9 @@ $.ajax({
 
 ## FileOperationsCors
 
- [GET] [/Api/FileExplorer/FileOperationsCors](http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperationsCors)
+ [GET] /Api/FileExplorer/FileOperationsCors
+ 
+ URL: //js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperationsCors
 
 It helps to handle the FileExplorer operations in cross origin.
 
