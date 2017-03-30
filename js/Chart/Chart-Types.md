@@ -2538,7 +2538,7 @@ Box and Whisker [`showMedian`](../api/ejchart.html#members:series-showMedian) pr
 
 ###  Customize the Outlier
 
-Outlier symbol, width and height can be  customized using outlierSettings through [`outlierSettings`](../api/js/ejchart#members:series-outliersettings) property. By default Outlier symbol is displayed as circle with a height and width of 6 pixels.
+Outlier symbol, width and height can be  customized using outlierSettings through [`outlierSettings`](../api/js/ejchart.html#members:series-outliersettings) property. By default Outlier symbol is displayed as circle with a height and width of 6 pixels.
 
 {% highlight javascript %}
 
