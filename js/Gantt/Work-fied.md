@@ -9,7 +9,33 @@ documentation: ug
 
 # Work
 
-Work is the total labor hours necessary to complete a task, and its value depends on the number of resources assigned to the task and the duration of the task. Work can be measured in hours, days and minutes, and it is measured in ‘hours’ scale by default and this can be changed by using the workUnit property.
+Work is the total labor hours necessary to complete a task. Work can be mapped from the data source field using the property `workMapping` and when the work value is mapped from the data source the end date and duration of the task will be calculated automatically based on the work and resource unit values from the data source. 
+The below code snippet explains mapping the work value from the data source
+
+
+{% highlight javascript %}
+
+$("#GanttContainer").ejGantt({              
+    //...
+    workMapping: "estimatedWork"
+    //...
+});
+
+{% endhighlight %}
+
+Note: 
+
+* When the work is mapped from the data source and if the resource unit is not defined for a task, the work will be calculated as 0 and task will be displayed as a milestone.
+* When the work field is mapped from the data source, the default task type will be `fixed work`
+
+When the work value for a task is not mapped from the data source using the `workMapping` property, it will be calculated internally based on the number of resources assigned to the task and the duration of the task.
+
+Note:	
+
+* By Default, the work field value for a task will be calculated based on the duration and assigned resource unit.
+* If an assinged resource has resoruce unit value of 100% for a task, i.e. if a resoruce is dedicatedly assigned to a task, the work per day will be __8__ __hours__.
+
+Work can be measured in hours, days and minutes, and it is measured in 'hours' scale by default and this can be changed by using the `workUnit` property.
 
 The below code snippet explains how to change work unit property in Gantt.
 
@@ -25,10 +51,6 @@ workUnit: ej.Gantt.WorkUnit.Minute,
 
 {% endhighlight %}
 
-Note: 
-
-* Work will be displayed as __0__ __hours__ if there is no resource assigned to the task.
-* A resource will work __8__ __hours__ a day on the task assigned.
 
 # Task type 
 
