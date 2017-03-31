@@ -563,7 +563,7 @@ $(function () {
                 allowFiltering: true,                
                 columns: [
                             { field: "OrderID", isPrimaryKey: true, headerText: "Order ID", textAlign: ej.TextAlign.Right, width: 75 },
-                            { field: "CustomerID", width: 100, filterBarTemplate: {
+                            { field: "CustomerID",headerText: "CustomerID", width: 100, filterBarTemplate: {
                                     create: function (args) {
                                             return "<input>"
                                     },
@@ -576,7 +576,7 @@ $(function () {
                                     },
                                  },
                             },
-                            { field: "EmployeeID", width: 100, filterBarTemplate: {
+                            { field: "EmployeeID", headerText: "EmployeeID", width: 100, filterBarTemplate: {
                                        write: function (args) {
                                               var data = [{ text: "clear", value: "clear" }, { text: "1", value: 1 }, { text: "2", value: 2 }, { text: "3", value: 3 }, { text: "4", value: 4 },
                                                         { text: "5", value: 5 }, { text: "6", value: 6 }, { text: "7", value: 7 }, { text: "8", value: 8 }, { text: "9", value: 9 }
@@ -592,7 +592,7 @@ $(function () {
                                             },
                                      }
                              },
-                             { field: "Freight", width: 100, filterBarTemplate: {
+                             { field: "Freight", headerText: "Freight", width: 100, filterBarTemplate: {
                                        write: function (args) {
                                               args.element.ejNumericTextbox({ width: "100%",decimalPlaces: 2, focusOut: ej.proxy(args.column.filterBarTemplate.read, this, args) });
                                            },
