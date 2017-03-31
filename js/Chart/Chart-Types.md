@@ -726,7 +726,7 @@ To render a Stacked Column Chart, set the [`type`](../api/ejchart.html#members:s
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/stackedcolumn) here to view our Stacked Column Chart online demo.
 
 
-### Group stacked columns
+### Cluster / Group stacked columns
 
 You can use the [`stackingGroup`](../api/ejchart.html#members:series-stackinggroup) property to group the stacked columns. Columns with same group name are stacked on top of each other.
 
@@ -810,7 +810,7 @@ To render a 100% Stacked Column Chart, set the [`type`](../api/ejchart.html#memb
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/100%stackedcolumn) here to view our 100% Stacked Column Chart online demo.
 
 
-### Group 100% stacked columns
+### Cluster / Group 100% stacked columns
 
 By using the [`stackingGroup`](../api/ejchart.html#members:series-stackinggroup) property, you can group the 100% stacking columns. Columns with same group name are stacked on top of each other. 
 
@@ -949,7 +949,7 @@ To render a Stacked Bar Chart, set the [`type`](../api/ejchart.html#members:seri
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/stackedbar) here to view our Stacked Bar Chart online demo.
 
 
-### Group stacked bars
+### Cluster / Group stacked bars
 
 You can use the [`stackingGroup`](../api/ejchart.html#members:series-stackinggroup) property to group the stacking bars with the same group name. 
 
@@ -2538,7 +2538,7 @@ Box and Whisker [`showMedian`](../api/ejchart.html#members:series-showMedian) pr
 
 ###  Customize the Outlier
 
-Outlier symbol, width and height can be  customized using outlierSettings through [`outlierSettings`](../api/js/ejchart#members:series-outliersettings) property. By default Outlier symbol is displayed as circle with a height and width of 6 pixels.
+Outlier symbol, width and height can be  customized using outlierSettings through [`outlierSettings`](../api/js/ejchart.html#members:series-outliersettings) property. By default Outlier symbol is displayed as circle with a height and width of 6 pixels.
 
 {% highlight javascript %}
 
