@@ -11,7 +11,7 @@ documentation: ug
 
 Column definitions, specified in the **columns** option, define how the data in the **dataSource** have to be displayed, formatted and edited in TreeGrid. The values in the **dataSource** can be mapped to the appropriate column using the **‘field’** property of the corresponding column object.
 
-### Formatting
+## Formatting
 
 The values in each column can be formatted using the **‘format’** property of the column object.
 
@@ -37,9 +37,9 @@ Note: For more numeric format strings, please refer this [link](https://msdn.mic
 
 For more date format strings, please refer this [link](https://msdn.microsoft.com/library/az4se3k1(v=vs.100).aspx).
 
-### Headers
+## Headers
 
-#### Header text
+### Header text
 
 Using **columns.headerText** property, you can provide the title for a specific column. The below code snippet is shows how to set header text for the columns,
 
@@ -59,7 +59,7 @@ Using **columns.headerText** property, you can provide the title for a specific 
 
 {% endhighlight %}
 
-#### Text wrapping
+### Text wrapping
 
 It is possible to wrap the header text or the title for the column, when the content exceeds the column width using the **headerTextOverflow** property. By default this property is set to **none**. To enable wrapping of header text, you have to set **headerTextOverflow** property to **‘wrap’**. The below code snippet demonstrates this,
 
@@ -72,7 +72,7 @@ It is possible to wrap the header text or the title for the column, when the con
 
 {% endhighlight %}
 
-#### Header Template
+### Header Template
 
 Using **columns.headerTemplateID** property, you can specify the Id of the script element, which contains the JsRender template, to the specific column.
 
@@ -134,7 +134,7 @@ The below screenshot depicts column headers with custom templates,
 
 ![](/js/TreeGrid/Columns_images/Columns_img1.png)
 
-### Frozen Columns
+## Frozen Columns
 
 Specific columns can be frozen by enabling **columns.isFrozen** property of the respective column object. The columns which are frozen remain static while scrolling the content horizontally. You can also freeze or unfreeze a column during runtime, by selecting Freeze or Unfreeze menu item in the column menu. These set of menu options will be displayed in all the columns when **columns.isFrozen** property is enabled in any of the columns. However you can control the visibility of these menu options in a particular column by enabling/disabling the **columns.allowFreezing** property of that specific column.
 
@@ -164,7 +164,7 @@ It is also possible to freeze all the preceding columns by choosing *Freeze Prec
 
 ![](/js/TreeGrid/Columns_images/Columns_img3.png)
 
-### Resizing
+## Resizing
 
 You can resize the column width to view the hidden text of the cell. This feature can be enabled by setting **allowColumnResize** property to true.
 
@@ -178,7 +178,7 @@ You can resize the column width to view the hidden text of the cell. This featur
 
 {% endhighlight %}
 
-### Column Template
+## Column Template
 
 Columns can be customized either by using JsRender templates or by AngularJS templates,
 
@@ -220,7 +220,7 @@ Following code example show how to define template for the column,
 
 ![](/js/TreeGrid/Columns_images/Columns_img4.png)
 
-### Column Menu
+## Column Menu
 
 Column menu can be displayed in column header by enabling **‘showColumnChooser’**.
 
@@ -250,7 +250,7 @@ Following are the items displayed in the column menu,
 
 ![](/js/TreeGrid/Columns_images/Columns_img5.png)
 
-### Changing position of expander column
+## Changing position of expander column
 
 The position of the expander column, which acts as tree column, can be changed using the **‘treeColumnIndex’** property,
 
@@ -265,7 +265,7 @@ Following code example shows how to change the position of the expander column,
 
 {% endhighlight %}
 
-### Visibility
+## Visibility
 
 Columns can be hidden on loading by setting the **‘columns.visible’** property as false,
 
@@ -290,7 +290,7 @@ Following code example explains how to hide the fourth column,
 
 ![](/js/TreeGrid/Columns_images/Columns_img6.png)
 
-### Read-only
+## Read-only
 
 A column can be made read-only by setting the **columns.allowEditing** property as false,
 
