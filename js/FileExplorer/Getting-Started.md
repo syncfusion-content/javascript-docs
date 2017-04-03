@@ -193,6 +193,8 @@ Here [path](https://help.syncfusion.com/api/js/ejfileexplorer#members:path) and 
         </tr>
     </table>
 	
+To perform the server side actions using local web API service, please refer the [link](https://help.syncfusion.com/js/fileexplorer/how-to#service-for-fileexplorer)
+
 Once you have completed the above steps, you get an output like below
 
 ![](Getting-Started_images/Getting-Started_img1.png)

@@ -151,7 +151,80 @@ N> In the above data manager configuration, “crossDomain” must be set to tru
 
 ![AutoComplete-APIData](webapi_images\webapi_img1.png)
 
+#### URL Adaptor
 
+URL Adaptor of **DataManager** can be used when you are required to use remote service to retrieve data. It interacts with server-side for all **DataManager** Queries and **CRUD** operations.
+
+Now, in the following code example the data is retrieved from **MVC****Controller**.
+
+{% highlight html %}
+
+<input type="text" id="autocomplete" />
+
+
+{% endhighlight %}
+
+
+
+{% highlight js %}
+
+   var dataManager = ej.DataManager({ url: "Home/Data", adaptor: new ej.UrlAdaptor() });
+        var query = ej.Query().take(10);
+
+    $(function () {
+            $("#autocomplete").ejAutocomplete({
+        datasource: dataManager,
+        fields: { "text": "text","key":"uniqueKey " },
+        query: query,
+        }); 
+
+
+{% endhighlight %}
+
+
+
+**Controller:**
+
+{% highlight c# %}
+
+
+public partial class AutocompleteController : Controller
+    {
+
+        public JsonResult DataSource()
+        {
+
+            IEnumerable Data = setListSource();
+            return Json(Data, JsonRequestBehavior.AllowGet);
+        }
+
+        public static List<CarsList> setListSource()
+        {
+            List<CarsList> cars = new List<CarsList>();
+
+            cars.Add(new CarsList { uniqueKey = 1, text = "Audi S6", company = "Audi" });
+            cars.Add(new CarsList { uniqueKey = 2, text = "Austin-žHealey", company = "Austin" });
+            cars.Add(new CarsList { uniqueKey = 3, text = "BMW š7", company = "BMW" });
+            cars.Add(new CarsList { uniqueKey = 4, text = "Chevrolet Camarož", company = "Chevrolet" });
+            cars.Add(new CarsList { uniqueKey = 6, text = "Ferrari š360", company = "Ferrari" });
+            cars.Add(new CarsList { uniqueKey = 7, text = "Honda S2000", company = "Honda" });
+            cars.Add(new CarsList { uniqueKey = 8, text = "Hyundai Santroš", company = "Hyundai" });
+            cars.Add(new CarsList { uniqueKey = 9, text = "Isuzu Swift", company = "Isuzu" });
+            cars.Add(new CarsList { uniqueKey = 10, text = "Jaguar XJS", company = "Jaguar" });
+            cars.Add(new CarsList { uniqueKey = 11, text = "iLotus Esprit", company = "Lotus" });
+            cars.Add(new CarsList { uniqueKey = 12, text = "Mercedes-Benz", company = "Mercedes" });
+            cars.Add(new CarsList { uniqueKey = 13, text = "Toyota ž2000GT", company = "Toyota" });
+            cars.Add(new CarsList { uniqueKey = 14, text = "Volvo P1800", company = "Volvo" });
+            ViewBag.datasource = cars;
+            return View();
+        }
+
+
+
+
+{% endhighlight %}
+
+![AutoComplete-Url](odata_images\url_img.png)
 
 
 #### Handling errors
