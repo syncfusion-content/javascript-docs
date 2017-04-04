@@ -149,16 +149,17 @@ N> ODataAdaptor is the default adaptor for DataManager. On binding to other web 
 	
 	{% highlight javascript %}	
 	
-	$(function () {
-		
-		// DataManager creation
-			
-		var dataManager = ej.DataManager("http://mvc.syncfusion.com/Services/Northwnd.svc");
-			
-		$('#dropdown1').ejDropDownList({
-			dataSource: dataManager,
-			fields: { text: "CustomerID", tableName:"Customers" }
-		});
+	 $(function () {
+            // declaration
+            Customers = [
+                 { id: "1", text: "ALFKI" }, { id: "2", text: "ANATR" }, { id: "3", text: "ANTON" },
+                 { id: "4", text: "AROUT" }, { id: "5", text: "BERGS" }, { id: "6", text: "BLAUS" }
+            ];
+            $('#dropdown1').ejDropDownList({
+                dataSource: ej.DataManager(Customers),
+                fields: { id: "id", text: "text", value: "text" }
+            });
+        });
 	});		
 	
 
