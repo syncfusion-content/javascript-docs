@@ -234,3 +234,25 @@ It is possible to change the default index of the checkbox column and we can dis
 The output of the TreeGrid with checkbox enabled in task name column.
 
 ![](/js/TreeGrid/Selection_images/Selection_img7.png)
+
+## MultiSelection – Touch Option
+
+While using TreeGrid in touch device environment, there is an option for multi selection support. When we tap on TreeGrid cell element multiple selection icon will be opened. we can enable multiple selection by tap on this icon. After that we will select multiple rows/cell by tap action.
+
+The following code example describes how to enable multiple selection in TreeGrid.
+
+{% highlight js %}
+
+            $("#TreeGridContainer"). ejTreeGrid ({
+                //..
+             selectionSettings: {
+                    selectionType: "ej.TreeGrid.SelectionType.Multiple"
+                    },
+               //..
+           });
+           
+{% endhighlight %}
+
+The following output is displayed the result of multiple selection in touch device environment.
+
+![](/js/TreeGrid/Selection_images/multiselection.png)
