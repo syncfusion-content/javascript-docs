@@ -50,7 +50,7 @@ $("#TreeGridContainer").ejTreeGrid({
 });
 {% endhighlight %}
 
-You can also find the demo for pageSettings [here](http://js.syncfusion.com/demos/web/#!/bootstrap/treegrid/paging/pagingapi)
+You can also find the demo for pageSettings [here](ttp://js.syncfusion.com/demos/web/#!/bootstrap/treegrid/paging/pagingapi)
 
 ## Pager Template
 
@@ -123,7 +123,21 @@ $("#currentPage").keydown(function(e) {
 
 {% endhighlight %}
 
-You can also find the demo for TreeGrid with pager template [here](http://js.syncfusion.com/demos/web/#!/bootstrap/treegrid/paging/pagertemplate)
+You can also find the demo for TreeGrid with pager template [here]( http://js.syncfusion.com/demos/web/#!/bootstrap/treegrid/paging/pagertemplate)
 
 The below image displays TreeGrid with paging template.
 ![](/js/TreeGrid/Paging_images/Paging_img2.png)
+
+## Pagging - Touch Option
+
+With paging and responsive mode enabled in TreeGrid, it is possible to change the current page using swipe action.
+
+The following code example describes how to enable multiple selection in TreeGrid.	
+
+{% highlight js %}
+$("#TreeGridContainer").ejTreeGrid({
+    //...
+    allowPaging: true,
+    isResponsive: true,
+});
+{% endhighlight %}
