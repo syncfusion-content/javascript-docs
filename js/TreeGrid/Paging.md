@@ -130,11 +130,7 @@ The below image displays TreeGrid with paging template.
 
 ## Pagging - Touch Option
 
-While using TreeGrid in touch device environment, there is an swipe option to turn the page when paging is enable.
-
-Swipe Left -  When we perform swipe action towards left on TreeGrid cell element the next page get display.
-
-Swipe Right – Similarly, when we perform swipe action towards right on TreeGrid cell element the previous page get display.
+With paging and responsive mode enabled in TreeGrid, it is possible to change the current page using swipe action.
 
 The following code example describes how to enable multiple selection in TreeGrid.	
 

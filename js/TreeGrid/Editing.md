@@ -11,7 +11,7 @@ documentation: ug
 
 ## Editing Modes
 
-The TreeGrid control provides built-in support to add, insert and update the tasks. The following are the types of edit modes available in TreeGrid. 
+TreeGrid provides support to add, edit and delete the records and the folllowing are the types of editing modes available, 
 
 * Cell Editing
 * Row Editing
@@ -19,7 +19,7 @@ The TreeGrid control provides built-in support to add, insert and update the tas
 
 ### Cell Editing
 
-Update the task details through cell editing by setting `editMode` as `cellEditing`.
+Update the record through editing a cell by setting editMode as cellEditing
 
 The following code example shows you how to enable `cellEditing` in TreeGrid control.
 
@@ -42,7 +42,7 @@ The output of the TreeGrid with `cellEditing` is as follows.
 
 ### Row Editing
 
-Update the task details through row editing by setting editMode as rowEditing.
+It is possible to make the entire row to editable state and to update a record by setting editMode as rowEditing.
 
 The following code example shows you how to enable rowEditing in TreeGrid control.
 
@@ -65,7 +65,7 @@ The following output is displayed as a result of the above code example.
 
 ### Dialog Editing
 
-Set `editMode` as `dialogEditing` to edit/add record using a dialog box, which displays the fields associated with the records.
+Set editMode as dialogEditing to edit/add a record using dialog.
 
 The following code example shows you how to enable `dialogEditing` in TreeGrid control.
 
@@ -157,23 +157,21 @@ The following output is displayed as a result of the above code example.
 
 ![](/js/TreeGrid/Editing_images/dialogTemplate.png)
 
-#### Public Method
+#### Using methods to open dialog
 
-You can open the add dialog box dynamically by using public method called `showAddDialog()`.
+It is possible to open the add dialog dynamically with a custom using the method showAddDialog
 
-You can open the edit dialog box dynamically by using public method called `showEditDialog(index)` by passing the row index as an argument.
+And similarly you can open the edit dialog dynamically using the method showEditDilog(index), with the index of the row to be edited as parameter.
 
 {% highlight js %}
 <script>
-
 $("#add").click(function (args) {
-                treegridObj = $("# TreeGridContainer ").data("ejTreeGrid");
-                treegridObj.showAddDialog();
-            })
+    treegridObj = $("# TreeGridContainer ").data("ejTreeGrid");
+    treegridObj.showAddDialog();
+    })
 $("#edit").click(function (args) {
-                treegridObj = $("# TreeGridContainer ").data("ejTreeGrid ");
-                treegridObj.showEditDialog(3);
-            })
-
+    treegridObj = $("# TreeGridContainer ").data("ejTreeGrid ");
+    treegridObj.showEditDialog(3);
+    })
 </script>
 {% endhighlight %}

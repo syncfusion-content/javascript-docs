@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Responsive
 
-The TreeGrid control has support for responsive behavior based on client browser's width and height. To enable responsive support in TreeGrid, `isResponsive` property should be true.
+The TreeGrid control has support for responsive behavior based on client browser's width and height. To enable responsive support in TreeGrid, `isResponsive` property must be enabled.
 
 Please find the example describes the above behavior.
 
@@ -35,7 +35,7 @@ Responsive TreeGrid in tablet layout.
 
 ## Layout
 
-There are three modes of responsive layout is available in TreeGrid based on client width. They are.
+Below are the modes of responsive layout available in TreeGrid based on client width,
 
 * Mobile(<321px)
 * Tablet(321px to 768px)
@@ -43,7 +43,7 @@ There are three modes of responsive layout is available in TreeGrid based on cli
 
 ## Mobile Layout
 
-The customized layout for filtering, column chooser operations and add/edit operations in mobile device can be seen following screen shots.
+The customized layout for filtering, column chooser operations and add/edit operations in mobile device can be seen in the following screen shots.
 
 ![](Responsive/adaptive-mob-filter.png)
 {:caption}
@@ -63,7 +63,7 @@ Insert column options in mobile layout
 
 ## Tablet Layout
 
-The customized layout for filtering, column chooser operations and add/edit operations in tablet device can be seen following screen shots.
+The customized layout for filtering, column chooser operations and add/edit operations in tablet device can be seen in the following screen shots.
 
 ![](Responsive/adaptive-filter.png)
 {:caption}
@@ -81,9 +81,9 @@ Column chooser in tablet layout
 {:caption}
 Insert column options in tablet layout
 
-## Public Method
+## Changing responsive width using method
 
-You can change the minimum responsive width dynamically by using public method called `updateResponsiveMinWidth(width)` by passing the width as an argument.
+You can change the minimum responsive width dynamically by using public method `updateResponsiveMinWidth(width)` by passing the width as an argument.
 The TreeGrid control get works in responsive mode only when the window width is below the minimum responsive width.
 
 Please find the example describes the above behavior.
