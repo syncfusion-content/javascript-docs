@@ -562,7 +562,7 @@ $(function () {
                 allowPaging: true,
                 allowFiltering: true,                
                 columns: [
-                            { field: "OrderID", isPrimaryKey: true, headerText: "Order ID", textAlign: ej.TextAlign.Right, width: 75 },
+                            { field: "OrderID", headerText: "Order ID", textAlign: ej.TextAlign.Right, width: 75 },
                             { field: "CustomerID",headerText: "CustomerID", width: 100, filterBarTemplate: {
                                     create: function (args) {
                                             return "<input>"
