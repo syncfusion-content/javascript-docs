@@ -120,6 +120,7 @@ The following code example describes the above behavior.
 $(function () {
     var dataManager = ej.DataManager({
         url: "Home/Default" , adaptor: new ej.UrlAdaptor(), batchUrl: "Home/BatchUpdate"
+        //  "Home/Default" and "Home/BatchUpdate" referred from the service.
     });
     $("#Spreadsheet").ejSpreadsheet({
         sheets: [{
@@ -136,6 +137,8 @@ function loadComplete(args) {
     }
 }
 {% endhighlight %}
+
+The code snippets to specify the BatchUpdate in server side are as follows,
 
 {% highlight c# %}
 
