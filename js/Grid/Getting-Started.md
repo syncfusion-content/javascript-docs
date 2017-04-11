@@ -182,17 +182,17 @@ The grid can be created from a HTML `DIV` element with the HTML `id` attribute s
 
 ## Data binding
 
-[`Data binding`](https://help.syncfusion.com/js/grid/data-binding) in the grid is achieved by using the [`ej.DataManager`](https://help.syncfusion.com/js/datamanager/overview) that supports both RESTful JSON data services binding and local JSON array binding.  To set the data source to the grid, the [`dataSource`](https://help.syncfusion.com/api/js/ejgrid#members:columns-datasource) property is assigned with the instance of the `ej.DataManger`. For demonstration purpose, [Northwind OData service](http://mvc.syncfusion.com/Services/Northwnd.svc/) is used in this tutorial. Refer to the following code example.
+[`Data binding`](https://help.syncfusion.com/js/grid/data-binding) in the grid is achieved by assigning a JSON array to the [`dataSource`](https://help.syncfusion.com/api/js/ejgrid#members:columns-datasource) property.
 
 {% highlight html %}
 
 <div id="Grid"></div>
 <script type="text/javascript">
     $(function () {// Document is ready.
-        //oData Adaptor with DataManager
-        var dataManager = new ej.DataManager("http://mvc.syncfusion.com/Services/Northwnd.svc/Foods");
         $("#Grid").ejGrid({
-            dataSource: dataManager
+        //The datasource "window.employeeView" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+		dataSource : window.employeeView,
+		columns : ["EmployeeID", "FirstName", "LastName", "City", "Country"]
         });
     });
 </script>
@@ -202,8 +202,6 @@ The grid can be created from a HTML `DIV` element with the HTML `id` attribute s
 ![](Getting-started_images/Getting-started_img2.png)
 {:.image }
 
-
-N> ODataAdaptor is the default adaptor for the DataManager. On binding to other web services, proper_ [data adaptor](https://help.syncfusion.com/js/datamanager/data-adaptors) needs _to be set on `adaptor` option of the DataManager.
 
 
 ## Enable Paging
@@ -215,11 +213,12 @@ N> ODataAdaptor is the default adaptor for the DataManager. On binding to other 
 <div id="Grid"></div>
 <script type="text/javascript">
    $(function () {
-        var dataManager = new ej.DataManager("http://mvc.syncfusion.com/Services/Northwnd.svc/Foods");
         $("#Grid").ejGrid({
-            dataSource: dataManager,
+            //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+            dataSource: window.gridData,
             allowPaging: true,
-            pageSettings: { pageSize: 8 }
+            pageSettings: { pageSize: 8 },
+            columns : ["OrderID", "EmployeeID", "CustomerID", "ShipCountry", "Freight"]
        });
    });
 </script>
@@ -242,12 +241,13 @@ N> Pager settings can be customized by using the [`pageSettings.pageSize`](https
 <script type="text/javascript">
     
     $(function () {
-        var dataManager = new ej.DataManager("http://mvc.syncfusion.com/Services/Northwnd.svc/Foods");
+        //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
         $("#Grid").ejGrid({
-             dataSource: dataManager,
+             dataSource: window.gridData,
              allowPaging: true,
              pageSettings: { pageSize: 8 },
-             allowFiltering: true
+             allowFiltering: true,
+             columns : ["OrderID", "EmployeeID", "CustomerID", "ShipCountry", "Freight"]
          });
     });
     </script>
@@ -266,12 +266,13 @@ N> Pager settings can be customized by using the [`pageSettings.pageSize`](https
 
 <script type="text/javascript">
     $(function () {
-        var dataManager = new ej.DataManager("http://mvc.syncfusion.com/Services/Northwnd.svc/Foods");
+        //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
         $("#Grid").ejGrid({
-            dataSource: dataManager,
+            dataSource: window.gridData,
             allowPaging: true,
             pageSettings: { pageSize: 8 },
-            allowGrouping: true
+            allowGrouping: true,
+            columns : ["OrderID", "EmployeeID", "CustomerID", "ShipCountry", "Freight"]
         });
     });
 </script>
@@ -288,13 +289,14 @@ Refer to the following code example for initial grouping.
 <script type="text/javascript">
     
     $(function () {
-      var dataManager = new ej.DataManager("http://mvc.syncfusion.com/Services/Northwnd.svc/Foods");
         $("#Grid").ejGrid({
-            dataSource: dataManager,
+            //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+            dataSource: window.gridData,
             allowPaging: true,
             pageSettings: { pageSize: 8 },
             allowGrouping: true,
-            groupSettings: { groupedColumns: ["ItemType"] }
+            groupSettings: { groupedColumns: ["ShipCountry", "CustomerID"] },
+            columns : ["OrderID", "EmployeeID", "CustomerID", "ShipCountry", "Freight"]
          });
     });
 
@@ -314,22 +316,23 @@ Refer to the following code example for initial grouping.
 <div id="Grid"></div>
 <script type="text/javascript">
     $(function () {
-        var dataManager = new ej.DataManager("http://mvc.syncfusion.com/Services/Northwnd.svc/Foods");
         $("#Grid").ejGrid({
-            dataSource: dataManager,
+            //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+            dataSource: window.gridData,
             allowPaging: true,
             pageSettings: { pageSize: 8 },
             allowGrouping: true,
-            groupSettings: { groupedColumns: ["ItemType"] },
+            groupSettings: { groupedColumns: ["CustomerID"] },
             showSummary: true,
             summaryRows: [
                 {
                   	title: "Sum",
                   	summaryColumns: [
-                    { summaryType: ej.Grid.SummaryType.Sum, displayColumn: "Stock", dataMember: "Stock" }
+                    { summaryType: ej.Grid.SummaryType.Sum, displayColumn: "Freight", dataMember: "Freight" }
               	  ]
               }
-           ]
+           ],
+           columns : ["OrderID", "EmployeeID", "CustomerID", "ShipCountry", "Freight"]
         });
     })
 
