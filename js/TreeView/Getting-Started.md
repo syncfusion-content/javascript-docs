@@ -145,7 +145,7 @@ Initialize TreeView from unordered list
 
 ## TreeView Using Data Binding
 
-Another way of creating TreeView is binding with the data source, you can bind local data or remote data source to create a TreeView as shown below code example.
+Another way of creating TreeView is binding with the data source, you can bind local data source to create a TreeView as shown below code example.
 
 Create the TreeView wrapper. 
 
@@ -197,52 +197,3 @@ Initialize TreeView with local data source
         });
 
 {% endhighlight %}
-
-Initialize TreeView with remote data source
-
-{% highlight html %}
-
-    <!--create the TreeView wrapper-->
-
-    <div id="treeView"></div>
-
-{% endhighlight %}
-
-{% highlight js %}
-
-
-       var parentData = ej.DataManager("//js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/Categories"),
-
-       childData = ej.DataManager("//js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/Products");
-
-
-        $(function () {
-
-            // initialize and bind the TreeView with Remote data
-
-            $("#treeView").ejTreeView({
-
-                fields: {
-
-                    dataSource: parentData,
-
-                    id: "CategoryID", text: "CategoryName",
-
-                    child: {
-
-                        dataSource: childData,
-
-                        id: "ProductID", parentId: "CategoryID", text: "ProductName"
-
-                    }
-
-                }
-
-            });
-
-        });
-
-{% endhighlight %}
-
-N>  In remote data source, [ej.DataManager](https://help.syncfusion.com/api/js/ejdatamanager#) is used to process the data from services and the value has been assigned to dataSource. 
-
