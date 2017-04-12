@@ -179,6 +179,32 @@ You can resize the column width to view the hidden text of the cell. This featur
 
 {% endhighlight %}
 
+## Checkbox column 
+
+It is possible to display a column as checkbox column in TreeGrid by enabling `columns.displayAsCheckbox` property and by setting `editType` property as `Boolean` for the column .  If the `columns.displayAsCheckbox` property is set as false, then the column will be displayed as string column with the value mapped from the data source.
+The following code snippet explains how to display a checkbox column in TreeGrid
+
+{% highlight js %}
+
+   $("#TreeGridContainer").ejTreeGrid({
+    //...
+    columns: [
+        //...
+        {
+            field: "approved",
+            headerText: "Approved",
+            editType: "booleanedit",
+            displayAsCheckbox: true
+        }
+    ],
+});
+
+{% endhighlight %}
+
+The below screen shot depicts the `Approved` column in TreeGrid displayed as a checkbox column
+
+![](/js/TreeGrid/Columns_images/Columns_img8.png)
+
 ## Column Template
 
 Columns can be customized either by using JsRender templates or by AngularJS templates,
