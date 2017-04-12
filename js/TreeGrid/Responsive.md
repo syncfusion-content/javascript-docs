@@ -25,11 +25,11 @@ $("#TreeGridContainer").ejTreeGrid({
 
 The following output is displayed as a result of the above code example
 
-![](Responsive/adaptive-mob.png)
+![](Responsive_images/adaptive-mob.png)
 {:caption}
 Responsive TreeGrid in Mobile layout.
 
-![](Responsive/adaptive.png)
+![](Responsive_images/adaptive.png)
 {:caption}
 Responsive TreeGrid in tablet layout.
 
@@ -45,19 +45,19 @@ Below are the modes of responsive layout available in TreeGrid based on client w
 
 The customized layout for filtering, column chooser operations and add/edit operations in mobile device can be seen in the following screen shots.
 
-![](Responsive/adaptive-mob-filter.png)
+![](Responsive_images/adaptive-mob-filter.png)
 {:caption}
 filtering in mobile layout.
 
-![](Responsive/adaptive-mob-edit.png)
+![](Responsive_images/adaptive-mob-edit.png)
 {:caption}
 Add/edit in mobile layout
 
-![](Responsive/adaptive-mob-colchooser.png)
+![](Responsive_images/adaptive-mob-colchooser.png)
 {:caption}
 Column chooser in mobile layout
 
-![](Responsive/adaptive-mob-insert.png)
+![](Responsive_images/adaptive-mob-insert.png)
 {:caption}
 Insert column options in mobile layout
 
@@ -65,19 +65,19 @@ Insert column options in mobile layout
 
 The customized layout for filtering, column chooser operations and add/edit operations in tablet device can be seen in the following screen shots.
 
-![](Responsive/adaptive-filter.png)
+![](Responsive_images/adaptive-filter.png)
 {:caption}
 filtering in tablet layout.
 
-![](Responsive/adaptive-edit.png)
+![](Responsive_images/adaptive-edit.png)
 {:caption}
 Add/edit in tablet layout
 
-![](Responsive/adaptive-colchooser.png)
+![](Responsive_images/adaptive-colchooser.png)
 {:caption}
 Column chooser in tablet layout
 
-![](Responsive/adaptive-insert.png)
+![](Responsive_images/adaptive-insert.png)
 {:caption}
 Insert column options in tablet layout
 
@@ -113,4 +113,4 @@ $("#minResponsiveWidth").click(function (args) {
 
 The following output is displayed as a result of the above code example
 
-![](Responsive/adaptive-publicmethod.png)
+![](Responsive_images/adaptive-publicmethod.png)
