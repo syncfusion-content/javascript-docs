@@ -33,12 +33,12 @@ function toolbarclick(args) {
     this.exportGantt = this["export"];
 
     if (id == "GanttContainer_pdfExport") {
-        this. exportGantt(”http: //js.syncfusion.com/demos/ejServices/api/Gantt/PdfExport", "", false);
+        this. exportGantt("http://js.syncfusion.com/demos/ejServices/api/Gantt/PdfExport", "", false);
             args.cancel = true;
         }
 
         if (id == "GanttContainer_excelExport") {
-            this. exportGantt(”http: //js.syncfusion.com/demos/ejServices/api/Gantt/ExcelExport", "", false);
+            this. exportGantt("http://js.syncfusion.com/demos/ejServices/api/Gantt/ExcelExport", "", false);
                 args.cancel = true;
         }
 }
@@ -53,6 +53,7 @@ The below screen shot shows Gantt with excel and Pdf exporting enabled.
 ## Server Configuration
 Gantt data can be converted to PDF and excel file formats in server side only, through EJ’s helper functions in .NET. 
 To use Gantt pdf export in projects, it is required to create a server with any of the following web services. 
+
 * Web API
 * WCF Service
 * ASP.NET MVC Controller Action
