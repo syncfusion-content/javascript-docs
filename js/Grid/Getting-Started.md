@@ -182,7 +182,7 @@ The grid can be created from a HTML `DIV` element with the HTML `id` attribute s
 
 ## Data binding
 
-[`Data binding`](https://help.syncfusion.com/js/grid/data-binding) in the grid is achieved by assigning a array of JavaScript Objects to the [`dataSource`](https://help.syncfusion.com/api/js/ejgrid#members:columns-datasource) property.
+[`Data binding`](https://help.syncfusion.com/js/grid/data-binding) in the grid is achieved by assigning a array of JavaScript objects to the [`dataSource`](https://help.syncfusion.com/api/js/ejgrid#members:columns-datasource) property.
 
 {% highlight html %}
 
