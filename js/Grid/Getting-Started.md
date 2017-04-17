@@ -190,9 +190,9 @@ The grid can be created from a HTML `DIV` element with the HTML `id` attribute s
 <script type="text/javascript">
     $(function () {// Document is ready.
         $("#Grid").ejGrid({
-        //The datasource "window.employeeView" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
-		dataSource : window.employeeView,
-		columns : ["EmployeeID", "FirstName", "LastName", "City", "Country"]
+        //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+		dataSource : window.gridData,
+		columns : ["OrderID", "EmployeeID", "CustomerID", "ShipCountry", "Freight"]
         });
     });
 </script>
