@@ -5,6 +5,7 @@ description: header customization
 platform: js
 control: Accordion 
 documentation: ug
+api: /api/js/ejaccordion
 ---
 
 # Header customization

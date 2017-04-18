@@ -5,6 +5,7 @@ description: accordion panel enabler
 platform: js
 control: Accordion 
 documentation: ug
+api: /api/js/ejaccordion
 ---
 
 # Accordion Panel enabler
