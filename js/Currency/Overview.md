@@ -5,6 +5,7 @@ description: overview
 platform: js
 control: CurrencyTextBox  
 documentation: ug
+api: /api/js/
 ---
 
 # Overview

@@ -5,6 +5,7 @@ description: sub gauges
 platform: js
 control: Circular Gauge
 documentation: ug
+api: /api/js/ejcirculargauge
 ---
 
 # Sub Gauges

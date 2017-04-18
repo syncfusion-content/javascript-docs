@@ -5,6 +5,7 @@ description: appearance and styling
 platform: js
 control: ColorPicker
 documentation: ug
+api: /api/js/ejcolorpicker
 ---
 
 # Appearance and Styling

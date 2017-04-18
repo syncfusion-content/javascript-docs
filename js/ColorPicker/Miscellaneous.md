@@ -5,6 +5,7 @@ description: miscellaneous
 platform: js
 control: ColorPicker
 documentation: ug
+api: /api/js/ejcolorpicker
 ---
 
 # Miscellaneous

@@ -5,6 +5,7 @@ description: globalization support
 platform: js
 control: CurrencyTextBox  
 documentation: ug
+api: /api/js/
 ---
 
 # Globalization Support

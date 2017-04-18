@@ -5,6 +5,7 @@ description: angular support
 platform: js
 control: CurrencyTextBox  
 documentation: ug
+api: /api/js/
 ---
 
 # AngularJS Support

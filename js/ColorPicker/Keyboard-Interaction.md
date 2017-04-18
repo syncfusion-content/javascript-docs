@@ -5,6 +5,7 @@ description: keyboard interaction
 platform: js
 control: ColorPicker
 documentation: ug
+api: /api/js/ejcolorpicker
 ---
 
 # Keyboard Interaction

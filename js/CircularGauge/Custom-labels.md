@@ -5,6 +5,7 @@ description: custom labels
 platform: js
 control: Circular Gauge
 documentation: ug
+api: /api/js/ejcirculargauge
 ---
 
 # Custom labels

@@ -5,6 +5,7 @@ description: configure values
 platform: js
 control: ColorPicker
 documentation: ug
+api: /api/js/ejcolorpicker
 ---
 
 # Configure Values
