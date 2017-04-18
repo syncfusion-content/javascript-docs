@@ -5,6 +5,7 @@ description: miscellaneous
 platform: js
 control: Button
 documentation: ug
+api : /api/js/ejbutton
 ---
 
 # Miscellaneous

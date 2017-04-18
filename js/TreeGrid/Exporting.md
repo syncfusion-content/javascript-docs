@@ -47,8 +47,6 @@ The below screen shot shows Gantt with excel and Pdf exporting enabled
 ![](/js/TreeGrid/Export_images/Export_img1.png)
 
 ## Server Configuration
-
-## Server Configuration
 TreeGrid data can be converted to PDF and excel file formats in server side only, through EJ’s helper functions in .NET. 
 To use TreeGrid pdf export in projects, it is required to create a server with any of the following web services. 
 

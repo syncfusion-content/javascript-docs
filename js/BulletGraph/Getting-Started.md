@@ -5,6 +5,7 @@ description: getting started
 platform: js
 control: BulletGraph	
 documentation: ug
+api: /api/js/ejbulletgraph
 ---
 
 # Getting Started

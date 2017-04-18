@@ -5,6 +5,7 @@ description: two dimensional barcodes
 platform: js
 control: Barcode
 documentation: ug
+api: /api/js/ejbarcode
 ---
 
 # Two Dimensional Barcodes

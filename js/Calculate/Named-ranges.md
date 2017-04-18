@@ -5,6 +5,7 @@ description: named ranges
 platform: JS
 control: Calculate
 documentation: ug
+api : /api/js/ejcalculate
 ---
 
 # Named Ranges

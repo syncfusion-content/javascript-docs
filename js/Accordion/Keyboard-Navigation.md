@@ -5,6 +5,7 @@ description: keyboard navigation
 platform: js
 control: Accordion 
 documentation: ug
+api: /api/js/ejaccordion
 ---
 
 # Keyboard Navigation

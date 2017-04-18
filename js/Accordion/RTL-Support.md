@@ -5,6 +5,7 @@ description: rtl support
 platform: js
 control: Accordion 
 documentation: ug
+api: /api/js/ejaccordion
 ---
 
 # RTL Support

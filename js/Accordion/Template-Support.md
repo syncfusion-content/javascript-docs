@@ -5,6 +5,7 @@ description: template support
 platform: js
 control: Accordion 
 documentation: ug
+api: /api/js/ejaccordion
 ---
 
 # Template Support
