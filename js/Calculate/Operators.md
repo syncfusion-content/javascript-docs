@@ -5,6 +5,7 @@ description: operators
 platform: JS
 control: Calculate
 documentation: ug
+api : /api/js/ejcalculate
 ---
 
 # Operators

@@ -5,6 +5,7 @@ description: getting started
 platform: js
 control: Button
 documentation: ug
+api : /api/js/ejbutton
 ---
 
 # Getting Started

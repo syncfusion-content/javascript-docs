@@ -5,6 +5,7 @@ description: custom functions
 platform: JS
 control: Calculate
 documentation: ug
+api : /api/js/ejcalculate
 ---
 
 # Custom Functions

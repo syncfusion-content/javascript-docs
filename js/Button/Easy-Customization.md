@@ -5,6 +5,7 @@ description: easy customization
 platform: js
 control: Button
 documentation: ug
+api : /api/js/ejbutton
 ---
 
 # Easy Customization

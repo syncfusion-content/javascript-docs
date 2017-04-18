@@ -5,6 +5,7 @@ description: formula parsing and evaluation
 platform: JS
 control: Calculate
 documentation: ug
+api : /api/js/ejcalculate
 ---
 
 # Formula Parsing and Evaluation

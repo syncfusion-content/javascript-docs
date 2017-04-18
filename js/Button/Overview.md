@@ -5,6 +5,7 @@ description: overview
 platform: js
 control: Button
 documentation: ug
+api : /api/js/ejbutton
 ---
 
 # Overview

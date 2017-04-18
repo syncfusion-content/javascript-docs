@@ -5,6 +5,7 @@ description: getting started
 platform: JS
 control: Calculate
 documentation: ug
+api : /api/js/ejcalculate
 ---
 
 # Getting Started 

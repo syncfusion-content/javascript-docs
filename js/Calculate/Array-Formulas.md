@@ -5,6 +5,7 @@ description: array formulas
 platform: JS
 control: Calculate
 documentation: ug
+api : /api/js/ejcalculate
 ---
 
 # Array Formulas
