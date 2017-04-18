@@ -5,6 +5,7 @@ description: scales
 platform: js
 control: Circular Gauge
 documentation: ug
+api: /api/js/ejcirculargauge
 ---
 
 # Scales

@@ -5,6 +5,7 @@ description: overview
 platform: js
 control: ColorPicker
 documentation: ug
+api: /api/js/ejcolorpicker
 ---
 
 # Overview

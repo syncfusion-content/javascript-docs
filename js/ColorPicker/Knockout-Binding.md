@@ -5,6 +5,7 @@ description: knockout binding
 platform: js
 control: ColorPicker
 documentation: ug
+api: /api/js/ejcolorpicker
 ---
 
 # Knockout Binding

@@ -5,6 +5,7 @@ description: Learn how to localize chart based on a specific culture.
 platform: js
 control: Chart
 documentation: ug
+api : /api/js/ejchart
 ---
 
 # Localization

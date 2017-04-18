@@ -5,6 +5,7 @@ description: pointers
 platform: js
 control: Circular Gauge
 documentation: ug
+api: /api/js/ejcirculargauge
 ---
 
 # Pointers

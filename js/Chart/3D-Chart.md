@@ -5,6 +5,7 @@ description: Learn about the different types of 3D charts supported by Syncfusio
 platform: js
 control: Chart
 documentation: ug
+api : /api/js/ejchart
 ---
 
 # 3D Chart

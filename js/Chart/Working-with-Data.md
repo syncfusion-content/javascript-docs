@@ -5,6 +5,7 @@ description: Learn how to bind Chart with JSON data from a remote server or loca
 platform: js
 control: Chart
 documentation: ug
+api : /api/js/ejchart
 ---
 
 # Working with Data

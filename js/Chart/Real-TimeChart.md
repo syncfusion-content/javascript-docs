@@ -5,6 +5,7 @@ description: Learn how to update the chart dynamically with real-time data.
 platform: js
 control: Chart
 documentation: ug
+api : /api/js/ejchart
 ---
 
 # Real-Time Chart 

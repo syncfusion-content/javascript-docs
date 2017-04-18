@@ -5,6 +5,7 @@ description: getting started
 platform: js
 control: Circular Gauge
 documentation: ug
+api: /api/js/ejcirculargauge
 ---
 
 # Getting Started

@@ -5,6 +5,7 @@ description: interaction and animation
 platform: js
 control: Circular Gauge
 documentation: ug
+api: /api/js/ejcirculargauge
 ---
 
 # Interaction and Animation

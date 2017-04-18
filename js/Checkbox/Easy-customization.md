@@ -5,6 +5,7 @@ description: easy customization
 platform: js
 control: Checkbox
 documentation: ug
+api : /api/js/ejcheckbox
 ---
 
 # Easy customization

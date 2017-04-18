@@ -5,6 +5,7 @@ description: ranges and frames
 platform: js
 control: Circular Gauge
 documentation: ug
+api: /api/js/ejcirculargauge
 ---
 
 # Ranges and Frames

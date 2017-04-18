@@ -5,6 +5,7 @@ description: Learn how to split chart area into multiple plot areas and render d
 platform: js
 control: Chart
 documentation: ug
+api : /api/js/ejchart
 ---
 
 # Multiple panes

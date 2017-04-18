@@ -5,6 +5,7 @@ description: Learn how to render different types of series in chart.
 platform: js
 control: Chart
 documentation: ug
+api : /api/js/ejchart
 ---
 
 # Chart Series

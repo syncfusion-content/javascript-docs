@@ -5,6 +5,7 @@ description: What are the different types of technical indicators supported in E
 platform: js
 control: Chart
 documentation: ug
+api : /api/js/ejchart
 ---
 
 # Technical Indicators

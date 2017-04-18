@@ -5,6 +5,7 @@ description: How to improve the performance of Essential JavaScript Chart
 platform: js
 control: Chart
 documentation: ug
+api : /api/js/ejchart
 ---
 
 # Performance 

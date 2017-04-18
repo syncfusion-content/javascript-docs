@@ -5,6 +5,7 @@ description: knockout support
 platform: js
 control: CurrencyTextBox  
 documentation: ug
+api: /api/js/
 ---
 
 # Knockout Support

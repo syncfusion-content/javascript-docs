@@ -5,6 +5,7 @@ description: mvvm
 platform: js
 control: Circular Gauge
 documentation: ug
+api: /api/js/ejcirculargauge
 ---
 
 # MVVM

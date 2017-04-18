@@ -5,6 +5,7 @@ description: keyboard interaction
 platform: js
 control: CurrencyTextBox  
 documentation: ug
+api: /api/js/
 ---
 
 # Keyboard Interaction

@@ -5,6 +5,7 @@ description: How to customize the chart title.
 platform: js
 control: Chart
 documentation: ug
+api : /api/js/ejchart
 ---
 
 # Chart Title & Subtitle

@@ -5,6 +5,7 @@ description: Learn how to set Chart size and make it responsive.
 platform: js
 control: Chart
 documentation: ug
+api : /api/js/ejchart
 ---
 
 # Chart Dimensions
