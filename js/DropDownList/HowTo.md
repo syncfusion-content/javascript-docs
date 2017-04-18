@@ -6,6 +6,7 @@ platform: js
 control: DropDownList
 documentation: ug
 keywords: DropDownList, dropdown, Adding Items, Set Focus, custommization
+api: /api/js/ejdropdownlist
 ---
 
 # How To

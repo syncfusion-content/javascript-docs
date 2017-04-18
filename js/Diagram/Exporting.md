@@ -5,6 +5,7 @@ description: How to export the Diagram as image/svg?
 platform: js
 control: Diagram
 documentation: ug
+api: /api/js/ejdiagram
 ---
 
 # Exporting

@@ -5,6 +5,7 @@ description: How to select and edit nodes and connectors during runtime?
 platform: js
 control: Diagram
 documentation: ug
+api: /api/js/ejdiagram
 ---
 
 # Interaction

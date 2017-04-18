@@ -5,6 +5,7 @@ description: Validate the date using jQuery
 platform: js
 control: DatePicker
 documentation: ug
+api: /api/js/ejdatepicker
 ---
 # Validation
 

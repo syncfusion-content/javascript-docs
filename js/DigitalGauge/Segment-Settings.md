@@ -5,6 +5,7 @@ description: segment settings
 platform: js
 control: Digital Gauge
 documentation: ug
+api : /api/js/ejdigitalgauge
 ---
 
 # Segment Settings

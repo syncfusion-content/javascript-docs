@@ -5,6 +5,7 @@ description: Formatting - Date and Time, Headers.
 platform: js
 control: DatePicker
 documentation: ug
+api: /api/js/ejdatepicker
 ---
 # Formatting
 

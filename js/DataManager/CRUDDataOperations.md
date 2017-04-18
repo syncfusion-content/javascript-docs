@@ -6,7 +6,7 @@ platform: js
 control: DataManager
 documentation: ug
 keywords: Insert of Records, Delete, Update, Read, Remove, Add Fields
-
+api: /api/js/ejdatamanager
 ---
 
 # CRUD Data Operations

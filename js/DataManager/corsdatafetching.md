@@ -6,7 +6,7 @@ platform: js
 control: DataManager
 documentation: ug
 keywords: CORS Data Fetching, SAME-ORIGIN POLICY, Access-Control-Allow-Origin, Access-Control-Request-Method, Access-Control-Request-Headers
-
+api: /api/js/ejdatamanager
 ---
 # CORS Data Fetching
 

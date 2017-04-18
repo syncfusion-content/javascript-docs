@@ -5,6 +5,7 @@ description: How to add gridlines behind nodes and connectors?
 platform: js
 control: Diagram
 documentation: ug
+api: /api/js/ejdiagram
 ---
 
 # Gridlines

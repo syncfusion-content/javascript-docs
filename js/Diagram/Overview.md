@@ -5,6 +5,7 @@ description: What are all the main features of the Diagram control?
 platform: js
 control: Diagram
 documentation: ug
+api: /api/js/ejdiagram
 ---
 
 # Overview

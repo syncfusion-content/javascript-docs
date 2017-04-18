@@ -5,6 +5,7 @@ description: Explore the features of the HeatMap control.
 platform: js
 control: HeatMap
 documentation: ug
+api: /api/js/ejheatmap
 ---
 
 # Overview

@@ -5,6 +5,7 @@ description: display format
 platform: js
 control: DateTimePicker
 documentation: ug
+api: /api/js/ejdatetimepicker
 ---
 
 # Display format

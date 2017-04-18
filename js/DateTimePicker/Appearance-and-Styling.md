@@ -4,7 +4,8 @@ title: Appearance-and-Styling
 description: appearance and styling
 platform: js
 control: DateTimePicker
-documentation: ug
+documentation: ug 
+api: /api/js/ejdatetimepicker
 ---
 
 # Appearance and Styling

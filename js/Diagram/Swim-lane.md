@@ -5,6 +5,7 @@ description: How to visually represent a business process and the relationships 
 platform: js
 control: Control Name undefined
 documentation: ug
+api: /api/js/ejdiagram
 ---
 
 # Swim lane

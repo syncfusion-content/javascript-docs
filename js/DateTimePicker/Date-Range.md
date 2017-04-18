@@ -5,6 +5,7 @@ description: date range
 platform: js
 control: DateTimePicker
 documentation: ug
+api: /api/js/ejdatetimepicker
 ---
 
 # Date Range

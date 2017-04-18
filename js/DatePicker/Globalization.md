@@ -5,6 +5,7 @@ description: Globalize formatting and Localize strings in DatePicker
 platform: js
 control: DatePicker
 documentation: ug
+api: /api/js/ejdatepicker
 ---
 # Globalization
 

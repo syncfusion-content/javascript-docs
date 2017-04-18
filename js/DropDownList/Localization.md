@@ -6,6 +6,7 @@ platform: js
 control: DropDownList
 documentation: ug
 keywords: Localization, DropDownList, dropdown
+api: /api/js/ejdropdownlist
 ---
 # Localization
 

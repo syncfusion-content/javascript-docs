@@ -5,6 +5,7 @@ description: How to customize the size and appearance of the Diagram pages?
 platform: js
 control: Diagram
 documentation: ug
+api: /api/js/ejdiagram
 ---
 
 

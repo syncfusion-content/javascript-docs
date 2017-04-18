@@ -4,7 +4,8 @@ title: Right-to-Left
 description: right-to-left
 platform: js
 control: DateTimePicker
-documentation: ug
+documentation: ug 
+api: /api/js/ejdatetimepicker
 ---
 
 # Right-to-Left

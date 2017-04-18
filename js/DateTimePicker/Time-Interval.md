@@ -4,7 +4,8 @@ title: Time-Interval
 description: time interval
 platform: js
 control: DateTimePicker
-documentation: ug
+documentation: ug 
+api: /api/js/ejdatetimepicker
 ---
 
 # Time Interval

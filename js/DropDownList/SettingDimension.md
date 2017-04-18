@@ -6,6 +6,7 @@ platform: js
 control: DropDownList
 documentation: ug
 keywords: Auto Sizing, DropDownList, dropdown, popup size, 
+api: /api/js/ejdropdownlist
 ---
 
 # Setting dimensions 

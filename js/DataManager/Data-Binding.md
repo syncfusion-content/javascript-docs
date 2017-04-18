@@ -5,6 +5,7 @@ description: data binding
 platform: js
 control: DataManager
 documentation: ug
+api: /api/js/ejdatamanager
 ---
 
 # Data Binding

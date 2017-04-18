@@ -6,6 +6,7 @@ platform: js
 control: Dialog
 documentation: ug
 keywords : ejdialog, js dialog, jquery dialog, dialog, dialog ui, web dialog, ej dialog, essential javascript dialog, dialog widget,
+api: /api/js/ejdialog
 ---
 
 # Action Buttons

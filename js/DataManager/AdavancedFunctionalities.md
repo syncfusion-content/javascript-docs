@@ -6,7 +6,7 @@ platform: js
 control: DataManager
 documentation: ug
 keywords: Offline Support, Load on Demand, Customer Request Headers, HTML Table, Cross domain & JSONP
-
+api: /api/js/ejdatamanager
 ---
 # Advanced Functionalities
 

@@ -6,6 +6,7 @@ platform: js
 control: DataManager
 documentation: ug
 keywords: select, clone, expand, from
+api: /api/js/ejdatamanager
 ---
 
 # Query

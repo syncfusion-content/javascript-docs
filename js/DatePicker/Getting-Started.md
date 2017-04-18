@@ -5,6 +5,7 @@ description: To get start with DatePicker by adding references.
 platform: js
 control: DatePicker
 documentation: ug
+api: /api/js/ejdatepicker
 ---
 # Getting Started
 

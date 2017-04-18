@@ -5,6 +5,7 @@ description: getting started
 platform: js
 control: DateTimePicker
 documentation: ug
+api: /api/js/ejdatetimepicker
 ---
 
 # Getting Started

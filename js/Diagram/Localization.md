@@ -5,6 +5,7 @@ description: How to globalize and localize the Diagram control?
 platform: js
 control: Diagram
 documentation: ug
+api: /api/js/ejdiagram
 ---
 
 # Localization

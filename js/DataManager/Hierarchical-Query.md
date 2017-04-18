@@ -6,6 +6,7 @@ platform: js
 control: DataManager
 documentation: ug
 keywords: Hierarchical Query, Complex query processing
+api: /api/js/ejdatamanager
 ---
 
 # Hierarchical Query

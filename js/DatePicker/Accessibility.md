@@ -5,6 +5,7 @@ description: Accessibility using keyboard shortcuts
 platform: js
 control: DatePicker
 documentation: ug
+api: /api/js/ejdatepicker
 ---
 # Accessibility
 

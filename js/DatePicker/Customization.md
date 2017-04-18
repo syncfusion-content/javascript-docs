@@ -5,6 +5,7 @@ description: DatePicker customization such as dimension, highlight dates, other 
 platform: js
 control: DatePicker
 documentation: ug
+api: /api/js/ejdatepicker
 ---
 # Customization
 
