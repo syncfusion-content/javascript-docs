@@ -5,6 +5,7 @@ description: frames
 platform: js
 control: Digital Gauge
 documentation: ug
+api : /api/js/ejdigitalgauge
 ---
 
 # Frames

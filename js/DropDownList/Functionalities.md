@@ -6,6 +6,7 @@ platform: js
 control: DropDownList
 documentation: ug
 keywords: DropDownList, dropdown, Selection, Grouping, Sorting
+api: /api/js/ejdropdownlist
 ---
 # Functionalities
 

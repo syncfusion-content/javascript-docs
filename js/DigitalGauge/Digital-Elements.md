@@ -5,6 +5,7 @@ description: digital elements
 platform: js
 control: Digital Gauge
 documentation: ug
+api : /api/js/ejdigitalgauge
 ---
 
 # Digital Elements

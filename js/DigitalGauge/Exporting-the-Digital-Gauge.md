@@ -5,6 +5,7 @@ description: exporting the digital gauge
 platform: js
 control: Digital Gauge
 documentation: ug
+api : /api/js/ejdigitalgauge
 ---
 
 # Exporting the Digital Gauge

@@ -6,6 +6,7 @@ platform: js
 control: DropDownList
 documentation: ug
 keywords: Checkbox, dropdown, Selection Modes, Visual Mode, Delimiter
+api: /api/js/ejdropdownlist
 ---
 
 # Checkbox

@@ -5,6 +5,7 @@ description: character settings
 platform: js
 control: Digital Gauge
 documentation: ug
+api : /api/js/ejdigitalgauge
 ---
 
 # Character Settings
