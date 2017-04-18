@@ -11,7 +11,7 @@ keywords: ejGantt,Gantt, syncfusion,ejGantt webapi
 
  [POST] [/Api/Gantt/ExcelExport](http://js.syncfusion.com/demos/ejServices/api/Gantt/ExcelExport)
 
-It is used to export the Gantt data to PDF file.
+It is used to export the Gantt data to excel file.
 
 ### URL parameters
 
