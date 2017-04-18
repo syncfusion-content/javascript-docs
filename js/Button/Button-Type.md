@@ -5,6 +5,7 @@ description: button type
 platform: js
 control: Button
 documentation: ug
+api : /api/js/ejbutton
 ---
 
 # Button Type

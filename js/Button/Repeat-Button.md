@@ -5,6 +5,7 @@ description: repeat button
 platform: js
 control: Button
 documentation: ug
+api : /api/js/ejbutton
 ---
 
 # Repeat Button

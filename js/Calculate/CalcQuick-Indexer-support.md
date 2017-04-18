@@ -5,6 +5,7 @@ description: calcquick (indexer) support
 platform: JS
 control: Calculate
 documentation: ug
+api : /api/js/ejcalculate
 ---
 
 # CalcQuick (Indexer) Support

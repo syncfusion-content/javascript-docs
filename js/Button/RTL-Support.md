@@ -5,6 +5,7 @@ description: rtl support
 platform: js
 control: Button
 documentation: ug
+api : /api/js/ejbutton
 ---
 
 # RTL Support
