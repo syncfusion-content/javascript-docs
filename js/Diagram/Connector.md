@@ -5,6 +5,7 @@ description: How to draw a line to connect points, nodes, or ports?
 platform: js
 control: Diagram
 documentation: ug
+api: /api/js/ejdiagram
 ---
 
 # Connector

@@ -5,6 +5,7 @@ description: How to draw shapes or pan Diagram by clicking and dragging over the
 platform: js
 control: Diagram
 documentation: ug
+api: /api/js/ejdiagram
 ---
 
 # Tools

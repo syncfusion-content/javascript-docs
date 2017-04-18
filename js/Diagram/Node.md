@@ -5,6 +5,7 @@ description: How to visually represent the geometrical information and process f
 platform: js
 control: Diagram
 documentation: ug
+api: /api/js/ejdiagram
 ---
 
 # Node

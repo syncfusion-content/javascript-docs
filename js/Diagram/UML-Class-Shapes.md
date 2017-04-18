@@ -5,6 +5,7 @@ description: How to visually represent the business logic as class diagram?
 platform: js
 control: Diagram
 documentation: ug
+api: /api/js/ejdiagram
 ---
 
 ### UML Class Diagram Shapes

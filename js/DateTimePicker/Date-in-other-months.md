@@ -5,6 +5,7 @@ description: date in other months
 platform: js
 control: DateTimePicker
 documentation: ug
+api: /api/js/ejdatetimepicker
 ---
 
 # Date in other months

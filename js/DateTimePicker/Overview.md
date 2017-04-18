@@ -5,6 +5,7 @@ description: overview
 platform: js
 control: DateTimePicker
 documentation: ug
+api: /api/js/ejdatetimepicker
 ---
 
 # Overview

@@ -5,6 +5,7 @@ description: How to save and load the Diagram?
 platform: js
 control: Diagram
 documentation: ug
+api: /api/js/ejdiagram
 ---
 
 # Serialization

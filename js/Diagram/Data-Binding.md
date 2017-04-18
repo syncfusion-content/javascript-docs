@@ -5,6 +5,7 @@ description: How to populate the Diagram from the local data, remote data, or ht
 platform: js
 control: Diagram
 documentation: ug
+api: /api/js/ejdiagram
 ---
 
 # Data Binding

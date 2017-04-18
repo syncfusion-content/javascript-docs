@@ -5,6 +5,7 @@ description: How to enable/disable the optional features?
 platform: js
 control: Diagram
 documentation: ug
+api: /api/js/ejdiagram
 ---
 
 # Constraints

@@ -5,6 +5,7 @@ description: How to choose the type of the node with respect to the requirement?
 platform: js
 control: Diagram
 documentation: ug
+api: /api/js/ejdiagram
 ---
 
 # Shapes

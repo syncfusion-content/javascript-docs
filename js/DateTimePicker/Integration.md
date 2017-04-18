@@ -5,6 +5,7 @@ description: integration
 platform: js
 control: DateTimePicker
 documentation: ug
+api: /api/js/ejdatetimepicker
 ---
 
 # Integration

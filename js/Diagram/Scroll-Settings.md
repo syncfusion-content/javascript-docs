@@ -5,6 +5,7 @@ description: How to read/modify the scroll status of the Diagram?
 platform: js
 control: Diagram
 documentation: ug
+api: /api/js/ejdiagram
 ---
 
 # Scroll Settings

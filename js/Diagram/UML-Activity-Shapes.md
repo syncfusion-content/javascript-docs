@@ -5,6 +5,7 @@ description: How to visually represent the behavior process of a system?
 platform: js
 control: Diagram
 documentation: ug
+api: /api/js/ejdiagram
 ---
 
 ### UML Activity Shapes

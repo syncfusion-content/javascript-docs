@@ -5,6 +5,7 @@ description: How to see the preview of the large Diagrams and to ease navigation
 platform: js
 control: Diagram
 documentation: ug
+api: /api/js/ejdiagram
 ---
 
 
