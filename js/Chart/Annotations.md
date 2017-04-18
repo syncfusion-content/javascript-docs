@@ -5,6 +5,7 @@ description: How to add annotations in Essential JavaScript Chart and the differ
 platform: js
 control: Chart
 documentation: ug
+api : /api/js/ejchart
 ---
 
 # Annotations

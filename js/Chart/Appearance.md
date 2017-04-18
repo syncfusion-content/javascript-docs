@@ -5,6 +5,7 @@ description: Learn how to customize the appearance of Chart using palettes, them
 platform: js
 control: Chart
 documentation: ug
+api : /api/js/ejchart
 ---
 
 # Appearance

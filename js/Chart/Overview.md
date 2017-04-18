@@ -5,6 +5,7 @@ description: What are the key features available in chart.
 platform: js
 control: Chart
 documentation: ug
+api : /api/js/ejchart
 ---
 
 # Overview

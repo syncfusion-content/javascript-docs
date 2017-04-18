@@ -5,6 +5,7 @@ description: How to create a chart, add series, enable tooltip and other feature
 platform: js
 control: Chart
 documentation: ug
+api : /api/js/ejchart
 ---
 
 # Getting Started

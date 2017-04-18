@@ -5,6 +5,7 @@ description: getting started
 platform: js
 control: Checkbox
 documentation: ug
+api : /api/js/ejcheckbox
 ---
 
 # Getting Started

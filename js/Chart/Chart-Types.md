@@ -5,6 +5,7 @@ description: What are the different types of Charts available in Essential JavaS
 platform: js
 control: Chart
 documentation: ug
+api : /api/js/ejchart
 ---
 
 # ChartTypes

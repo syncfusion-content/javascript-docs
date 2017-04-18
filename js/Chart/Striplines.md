@@ -5,6 +5,7 @@ description: Learn how to add horizontal or vertical lines in Chart.
 platform: js
 control: Chart
 documentation: ug
+api : /api/js/ejchart
 ---
 
 # Striplines

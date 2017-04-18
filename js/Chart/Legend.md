@@ -5,6 +5,7 @@ description: How to cutomize the legend in Essential JavaScript Chart.
 platform: js
 control: Chart
 documentation: ug
+api : /api/js/ejchart
 ---
 
 # Legend

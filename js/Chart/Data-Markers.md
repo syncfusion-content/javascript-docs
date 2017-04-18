@@ -5,6 +5,7 @@ description: Learn how to add markers and data point labels to a Chart series.
 platform: js
 control: Chart
 documentation: ug
+api : /api/js/ejchart
 ---
 
 # Data Markers

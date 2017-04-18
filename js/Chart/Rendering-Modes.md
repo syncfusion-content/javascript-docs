@@ -5,6 +5,7 @@ description: How Essential Chart renders in IE7 and IE8. How to render Essential
 platform: js
 control: Chart
 documentation: ug
+api : /api/js/ejchart
 ---
 
 # Rendering Modes

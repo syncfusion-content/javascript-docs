@@ -8,6 +8,7 @@ metaname:
 metacontent:
 control: Chart
 documentation: ug
+api : /api/js/ejchart
 ---
 
 ## Exporting Service

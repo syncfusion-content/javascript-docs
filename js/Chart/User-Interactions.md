@@ -5,6 +5,7 @@ description: What are the interactions available in Chart like tooltip, crosshai
 platform: js
 control: Chart
 documentation: ug
+api : /api/js/ejchart
 ---
 
 # User Interactions
