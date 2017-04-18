@@ -5,6 +5,7 @@ description: view multiple contents
 platform: js
 control: Accordion 
 documentation: ug
+api: /api/js/ejaccordion
 ---
 
 # View multiple contents

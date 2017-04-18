@@ -5,6 +5,7 @@ description: state persistence
 platform: js
 control: Accordion 
 documentation: ug
+api: /api/js/ejaccordion
 ---
 
 # State Persistence

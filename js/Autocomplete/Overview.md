@@ -6,6 +6,7 @@ platform: js
 control: AutoComplete
 documentation: ug
 keywords: ejautocomplete, autocomplete widget, autocomplete ui, js autocomplete, jquery autocomplete, web autocomplete, ej autocomplete, essential javascript autocomplete,
+api: /api/js/ejautocomplete
 ---
 
 # Overview

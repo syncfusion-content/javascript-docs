@@ -4,7 +4,8 @@ title: Overview
 description: overview
 platform: js
 control: Accordion 
-documentation: ug
+documentation: ug 
+api: /api/js/ejaccordion
 ---
 
 # Overview

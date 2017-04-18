@@ -5,6 +5,7 @@ description: quantitative scale
 platform: js
 control: BulletGraph	
 documentation: ug
+api: /api/js/ejbulletgraph
 ---
 
 # Quantitative Scale

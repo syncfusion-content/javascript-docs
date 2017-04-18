@@ -5,6 +5,7 @@ description: bullet graph dimensions
 platform: js
 control: BulletGraph	
 documentation: ug
+api: /api/js/ejbulletgraph
 ---
 
 # Bullet Graph Dimensions

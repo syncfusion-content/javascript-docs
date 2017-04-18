@@ -5,6 +5,7 @@ description: supported barcode types
 platform: js
 control: Barcode
 documentation: ug
+api: /api/js/ejbarcode
 ---
 
 # Supported Barcode types

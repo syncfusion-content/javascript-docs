@@ -5,6 +5,7 @@ description: one dimensional barcodes
 platform: js
 control: Barcode
 documentation: ug
+api: /api/js/ejbarcode
 ---
 
 # One Dimensional Barcodes

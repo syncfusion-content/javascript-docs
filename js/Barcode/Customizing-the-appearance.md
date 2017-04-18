@@ -5,6 +5,7 @@ description: customizing the appearance
 platform: js
 control: Barcode
 documentation: ug
+api: /api/js/ejbarcode
 ---
 
 # Customizing the appearance
