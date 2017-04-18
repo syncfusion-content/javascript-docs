@@ -5,6 +5,7 @@ description: Configure start day of week, step month, and enable/disable
 platform: js
 control: DatePicker
 documentation: ug
+api: /api/js/ejdatepicker
 ---
 # Miscellaneous 
 

@@ -4,7 +4,8 @@ title: state persistence
 description: state persistence
 platform: js
 control: DateRangePicker
-documentation: ug
+documentation: ug 
+api: /api/js/ejdaterangepicker
 ---
 
 ## State Persistence

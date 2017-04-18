@@ -6,6 +6,7 @@ platform: js
 control: DataManager
 documentation: ug
 keywords: sorting, multi sorting, dynamic sorting, SortBy
+api: /api/js/ejdatamanager
 ---
 
 # Sorting

@@ -5,6 +5,7 @@ description: DatePicker - State persistence properties
 platform: js
 control: DatePicker
 documentation: ug
+api: /api/js/ejdatepicker
 ---
 # State Persistence
 

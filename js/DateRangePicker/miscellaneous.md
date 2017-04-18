@@ -5,6 +5,7 @@ description: miscellaneous
 platform: js
 control: DateRangePicker
 documentation: ug
+api: /api/js/ejdaterangepicker
 ---
 
 ## Miscellaneous 

@@ -5,6 +5,7 @@ description: DatePicker introduction with key features
 platform: js
 control: DatePicker
 documentation: ug
+api: /api/js/ejdatepicker
 ---
 # Overview 
 

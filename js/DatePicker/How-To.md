@@ -5,6 +5,7 @@ description: How-to section
 platform: js
 control: DatePicker
 documentation: ug
+api: /api/js/ejdatepicker
 ---
 # How to?
 

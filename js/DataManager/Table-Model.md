@@ -6,6 +6,7 @@ platform: js
 control: DataManager
 documentation: ug
 keywords : Table Model, getTableModel
+api: /api/js/ejdatamanager
 ---
 
 # Table Model

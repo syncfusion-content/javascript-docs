@@ -6,7 +6,7 @@ platform: js
 control: DataManager
 documentation: ug
 keywords: JSON Adaptor, URL Adaptor, OData Adaptor, Odata4 Adaptor, WebApi Adaptor, Cache Adaptor, Custom Adaptor, RemoteSave Adaptor
-
+api: /api/js/ejdatamanager
 ---
 
 # Data Adaptors

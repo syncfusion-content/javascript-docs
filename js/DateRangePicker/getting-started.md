@@ -5,6 +5,7 @@ description: getting started
 platform: js
 control: DateRangePicker
 documentation: ug
+api: /api/js/ejdaterangepicker
 ---
 
 # Getting Started

@@ -6,6 +6,7 @@ platform: js
 control: DataManager
 documentation: ug
 keywords: filter Operators, lessThan, lessThanOrEqual, less, contains
+api: /api/js/ejdatamanager
 ---
 
 # Filtering

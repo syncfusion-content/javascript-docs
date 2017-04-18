@@ -5,6 +5,7 @@ description: Configure DatePicker Behaviour settings
 platform: js
 control: DatePicker
 documentation: ug
+api: /api/js/ejdatepicker
 ---
 # Behavior Settings
 

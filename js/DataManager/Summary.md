@@ -6,6 +6,7 @@ platform: js
 control: DataManager
 documentation: ug
 keywords: Sum, Average, Minimum, Maximum, Distinct
+api: /api/js/ejdatamanager
 ---
 
 # Summary 

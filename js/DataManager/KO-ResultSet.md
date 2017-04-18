@@ -6,6 +6,7 @@ platform: js
 control: DataManager
 documentation: ug
 keywords : KO ResultSet
+api: /api/js/ejdatamanager
 ---
 
 # KO ResultSet
