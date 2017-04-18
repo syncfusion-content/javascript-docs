@@ -5,6 +5,7 @@ description: What are the different types of trendlines available in chart.
 platform: js
 control: Chart
 documentation: ug
+api : /api/js/ejchart
 ---
 
 # Trendlines

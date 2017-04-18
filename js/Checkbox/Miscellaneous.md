@@ -5,6 +5,7 @@ description: miscellaneous
 platform: js
 control: Checkbox
 documentation: ug
+api : /api/js/ejcheckbox
 ---
 
 # Miscellaneous

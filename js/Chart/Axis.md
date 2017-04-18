@@ -5,6 +5,7 @@ description: How to customize the grid lines, tick lines, labels and title of ch
 platform: js
 control: Chart
 documentation: ug
+api : /api/js/ejchart
 ---
 
 # Axis

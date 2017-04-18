@@ -5,6 +5,7 @@ description: overview
 platform: js
 control: Checkbox
 documentation: ug
+api : /api/js/ejcheckbox
 ---
 
 # Overview

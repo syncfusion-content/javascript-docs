@@ -5,6 +5,7 @@ description: Learn how to export Chart as excel file or image.
 platform: js
 control: Chart
 documentation: ug
+api : /api/js/ejchart
 ---
 
 # Exporting Chart
