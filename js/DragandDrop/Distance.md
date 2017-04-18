@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Setting distance for mouse move 
-description: Setting distance for mouse moveS
+description: Setting distance for mouse move
 platform: js
 control: Draggable,Droppable
 documentation: ug
