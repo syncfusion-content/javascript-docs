@@ -5,6 +5,7 @@ description: data binding
 platform: js
 control: BulletGraph	
 documentation: ug
+api: /api/js/ejbulletgraph
 ---
 
 # Data Binding

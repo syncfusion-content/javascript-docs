@@ -5,6 +5,7 @@ description: How to create one dimensional, two dimensional barcode and customiz
 platform: js
 control: Barcode
 documentation: ug
+api: /api/js/ejbarcode
 ---
 
 # Getting Started

@@ -5,6 +5,7 @@ description: qualitative range
 platform: js
 control: BulletGraph	
 documentation: ug
+api: /api/js/ejbulletgraph
 ---
 
 # Qualitative Range

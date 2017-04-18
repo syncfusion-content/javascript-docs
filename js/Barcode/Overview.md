@@ -5,6 +5,7 @@ description: Syncfusion Essential JS barcode widget has more than 10 different t
 platform: js
 control: Barcode
 documentation: ug
+api: /api/js/ejbarcode
 ---
 
 # Overview
