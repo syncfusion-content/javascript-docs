@@ -5,6 +5,7 @@ description: knockout support
 platform: js
 control: TimePicker
 documentation: ug
+api: /api/js/ejtimepicker
 ---
 
 # Knockout Support

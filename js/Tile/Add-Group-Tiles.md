@@ -5,6 +5,7 @@ description: add group tiles
 platform: js
 control: Tile
 documentation: ug
+api: /api/js/ejtile
 ---
 
 # Add Group Tiles

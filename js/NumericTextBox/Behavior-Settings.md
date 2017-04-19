@@ -5,6 +5,7 @@ description: behavior settings
 platform: js
 control: NumericTextbox
 documentation: ug
+api: /api/js/
 ---
 
 # Behavior Settings

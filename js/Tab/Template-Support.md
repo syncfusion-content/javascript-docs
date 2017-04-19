@@ -5,6 +5,7 @@ description: template support
 platform: js
 control: Tab Control
 documentation: ug
+api: /api/js/ejtab
 ---
 
 # Template Support

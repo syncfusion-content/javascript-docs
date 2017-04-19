@@ -5,6 +5,7 @@ description: rtl support
 platform: js
 control: Toggle Button
 documentation: ug
+api: /api/js/ejtogglebutton
 ---
 
 # RTL support

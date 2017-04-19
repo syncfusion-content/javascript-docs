@@ -5,6 +5,7 @@ description: behaviour settings
 platform: js
 control: TimePicker
 documentation: ug
+api: /api/js/ejtimepicker
 ---
 
 # Behavior Settings

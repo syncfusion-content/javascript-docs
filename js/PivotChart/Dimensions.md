@@ -5,6 +5,7 @@ description: dimensions
 platform: js
 control: PivotChart
 documentation: ug
+api: /api/js/ejpivotchart
 ---
 
 # Dimensions

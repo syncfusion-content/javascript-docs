@@ -5,6 +5,7 @@ description: integration with other widgets
 platform: js
 control: Tab Control
 documentation: ug
+api: /api/js/ejtab
 ---
 
 # Integration with other widgets

@@ -5,6 +5,7 @@ description: look and feel
 platform: js
 control: Menu
 documentation: ug
+api: /api/js/ejmenu
 ---
 
 # Look and feel

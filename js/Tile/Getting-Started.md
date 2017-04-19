@@ -5,6 +5,7 @@ description: getting started
 platform: js
 control: Tile
 documentation: ug
+api: /api/js/ejtile
 ---
 
 # Getting Started

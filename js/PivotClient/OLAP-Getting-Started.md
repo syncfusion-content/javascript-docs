@@ -5,6 +5,7 @@ description: olap-getting started
 platform: js
 control: PivotClient
 documentation: ug
+api: /api/js/ejpivotclient
 ---
 
 # Getting Started

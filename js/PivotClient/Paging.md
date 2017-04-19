@@ -5,6 +5,7 @@ description: paging
 platform: js
 control: PivotClient
 documentation: ug
+api: /api/js/ejpivotclient
 ---
 
 # Paging

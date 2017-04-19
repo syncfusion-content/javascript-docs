@@ -5,6 +5,7 @@ description: overview
 platform: js
 control: PivotClient
 documentation: ug
+api: /api/js/ejpivotclient
 ---
 
 # Overview

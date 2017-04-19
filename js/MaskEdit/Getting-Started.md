@@ -5,6 +5,7 @@ description: getting started
 platform: js
 control: MaskEdit
 documentation: ug
+api: /api/js/ejmaskedit
 ---
 
 # Getting Started

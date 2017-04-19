@@ -5,6 +5,7 @@ description: separators
 platform: js
 control: Menu
 documentation: ug
+api: /api/js/ejmenu
 ---
 
 # Separators

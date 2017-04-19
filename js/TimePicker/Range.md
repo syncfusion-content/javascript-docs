@@ -5,6 +5,7 @@ description: range
 platform: js
 control: TimePicker
 documentation: ug
+api: /api/js/ejtimepicker
 ---
 
 # Range

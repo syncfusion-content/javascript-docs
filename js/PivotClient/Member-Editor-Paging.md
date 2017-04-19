@@ -5,6 +5,7 @@ description: memebr editor paging
 platform: js
 control: PivotClient
 documentation: ug
+api: /api/js/ejpivotclient
 ---
 
 # Member Editor Paging

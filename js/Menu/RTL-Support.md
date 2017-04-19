@@ -5,6 +5,7 @@ description: rtl support
 platform: js
 control: Menu
 documentation: ug
+api: /api/js/ejmenu
 ---
 
 # RTL Support

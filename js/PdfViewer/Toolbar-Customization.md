@@ -6,6 +6,7 @@ platform: js
 control: PDF viewer
 documentation: ug
 keywords: ejPdfViewer
+api: /api/js/ejpdfviewer
 ---
 
 ## Toolbar Customization

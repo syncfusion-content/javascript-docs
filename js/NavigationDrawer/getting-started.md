@@ -5,6 +5,7 @@ description: getting started
 platform: js
 control: Navigation Drawer
 documentation: ug
+api: /api/js/ejnavigationdrawer
 ---
 
 # Getting Started

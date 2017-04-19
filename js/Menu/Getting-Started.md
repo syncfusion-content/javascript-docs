@@ -5,6 +5,7 @@ description: getting started
 platform: js
 control: Menu
 documentation: ug
+api: /api/js/ejmenu
 ---
 
 # Getting Started 

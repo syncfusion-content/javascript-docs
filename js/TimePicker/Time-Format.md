@@ -5,6 +5,7 @@ description: time format
 platform: js
 control: TimePicker
 documentation: ug
+api: /api/js/ejtimepicker
 ---
 
 # Time Format

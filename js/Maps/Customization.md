@@ -5,6 +5,7 @@ description: customization
 platform: js
 control: Maps
 documentation: ug
+api: /api/js/ejmap
 ---
 
 # Customization

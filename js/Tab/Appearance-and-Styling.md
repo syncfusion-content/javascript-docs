@@ -5,6 +5,7 @@ description: appearance and styling
 platform: js
 control: Tab Control
 documentation: ug
+api: /api/js/ejtab
 ---
 
 # Appearance and Styling

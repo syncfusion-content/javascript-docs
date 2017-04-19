@@ -5,6 +5,7 @@ description: rtl support
 platform: js
 control: TagCloud
 documentation: ug
+api: /api/js/ejtagcloud
 ---
 
 # RTL Support

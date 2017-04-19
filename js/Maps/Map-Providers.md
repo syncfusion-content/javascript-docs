@@ -5,6 +5,7 @@ description: map providers
 platform: js
 control: Maps
 documentation: ug
+api: /api/js/ejmap
 ---
 
 # Map Providers

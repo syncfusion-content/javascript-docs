@@ -5,6 +5,7 @@ description: rtl
 platform: js
 control: TimePicker
 documentation: ug
+api: /api/js/ejtimepicker
 ---
 
 # RTL

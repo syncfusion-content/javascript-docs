@@ -5,6 +5,7 @@ description: appearance
 platform: js
 control: MaskEdit
 documentation: ug
+api: /api/js/ejmaskedit
 ---
 
 # Appearance

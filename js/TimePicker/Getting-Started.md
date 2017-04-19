@@ -5,6 +5,7 @@ description: getting started
 platform: js
 control: TimePicker
 documentation: ug
+api: /api/js/ejtimepicker
 ---
 
 # Getting Started
