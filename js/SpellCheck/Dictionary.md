@@ -5,6 +5,7 @@ control: spellcheck
 documentation: ug
 platform: js
 keywords: dictionary, spellcheck dictionary, custom dictionary, adding a word
+api: /api/js/ejspellcheck
 ---
 # Dictionary
 

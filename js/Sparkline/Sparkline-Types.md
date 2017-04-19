@@ -5,6 +5,7 @@ description: What are the different types of Sparkline available in Essential Ja
 platform: ts
 control: Sparkline
 documentation: ug
+api: /api/js/ejsparkline
 ---
 
 # Sparkline Types

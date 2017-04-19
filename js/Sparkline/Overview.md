@@ -5,6 +5,7 @@ description: What are the key features available in sparkline.
 platform: ts
 control: Sparkline
 documentation: ug
+api: /api/js/ejsparkline
 ---
 # Overview
 

@@ -5,6 +5,7 @@ description: miscellaneous
 platform: js
 control: Split Button
 documentation: ug
+api: /api/js/ejsplitbutton
 ---
 
 # Miscellaneous

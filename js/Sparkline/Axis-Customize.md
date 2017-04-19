@@ -5,6 +5,7 @@ description: Learn how to customize axis in Sparkline.
 platform: ts
 control: Sparkline
 documentation: ug
+api: /api/js/ejsparkline
 ---
 
 ## Axis Customize 

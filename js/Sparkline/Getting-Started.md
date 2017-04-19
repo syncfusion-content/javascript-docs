@@ -5,6 +5,7 @@ description: How to create a sparkline.
 platform: ts
 control: Sparkline
 documentation: ug
+api: /api/js/ejsparkline
 ---
 
 # Getting Started

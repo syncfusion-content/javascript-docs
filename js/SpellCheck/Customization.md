@@ -4,7 +4,8 @@ description: SpellCheck Customization
 platform: js
 control: spellcheck
 documentation: ug
-keywords: customization, spellcheck customization, misspell word appearance, restrict suggestion count 
+keywords: customization, spellcheck customization, misspell word appearance, restrict suggestion count
+api: /api/js/ejspellcheck 
 ---
 # SpellCheck Customization
 

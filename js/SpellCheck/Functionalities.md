@@ -5,6 +5,7 @@ platform: js
 control: spellcheck
 documentation: ug
 keywords: spellcheck functionalities, check spelling, ignore words, change words, change, ignore, ignore settings,
+api: /api/js/ejspellcheck
 ---
 # Functionalities
 

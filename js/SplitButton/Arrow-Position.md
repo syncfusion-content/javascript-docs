@@ -5,6 +5,7 @@ description: arrow position
 platform: js
 control: Split Button
 documentation: ug
+api: /api/js/ejsplitbutton
 ---
 
 # Arrow Position

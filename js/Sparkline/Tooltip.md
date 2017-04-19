@@ -5,6 +5,7 @@ description: Learn how to add Tooltip to Sparkline .
 platform: ts
 control: Sparkline
 documentation: ug
+api: /api/js/ejsparkline
 ---
 
 ## Tooltip  
