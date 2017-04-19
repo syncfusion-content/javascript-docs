@@ -5,6 +5,7 @@ description: customize position
 platform: js
 control: Navigation Drawer
 documentation: ug
+api: /api/js/ejnavigationdrawer
 ---
 
 ## Customize Position

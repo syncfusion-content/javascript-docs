@@ -6,6 +6,7 @@ platform: js
 control: PDF viewer
 documentation: ug
 keywords: ejPdfViewer, PDF Viewer
+api: /api/js/ejpdfviewer
 ---
 
 ## Overview
