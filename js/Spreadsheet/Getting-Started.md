@@ -4,6 +4,7 @@ description: How to create a Spreadsheet with data source, apply format and expo
 platform: JS
 control: Spreadsheet
 documentation: ug
+api: /api/js/ejspreadsheet
 ---
 # Getting started
 

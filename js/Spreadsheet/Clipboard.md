@@ -5,6 +5,7 @@ description: How to use the Spreadsheet Clipboard
 platform: js
 control: Spreadsheet
 documentation: ug
+api: /api/js/ejspreadsheet
 ---
 
 # Clipboard

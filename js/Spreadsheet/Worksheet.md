@@ -5,6 +5,7 @@ description: How to use and customize the Spreadsheet Worksheet
 platform: js
 control: Spreadsheet
 documentation: ug
+api: /api/js/ejspreadsheet
 --- 
 
 # Worksheet

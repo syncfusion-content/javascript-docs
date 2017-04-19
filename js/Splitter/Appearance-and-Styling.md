@@ -5,6 +5,7 @@ description: appearance and styling
 platform: js
 control: Splitter
 documentation: ug
+api: /api/js/ejsplitter
 ---
 
 # Appearance and Styling 

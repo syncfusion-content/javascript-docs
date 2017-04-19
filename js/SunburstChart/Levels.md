@@ -5,6 +5,7 @@ description: Learn how to customize various levels in SunburstChart
 platform: ts
 control: SunburstChart
 documentation: ug
+api: /api/js/ejsunburstchart
 ---
 
 ## Levels

@@ -5,6 +5,7 @@ description: How to use the Spreadsheet Context Menu
 platform: js
 control: Spreadsheet
 documentation: ug
+api: /api/js/ejspreadsheet
 ---
 
 # Context Menu

@@ -5,6 +5,7 @@ description: overview
 platform: js
 control: Splitter
 documentation: ug
+api: /api/js/ejsplitter
 ---
 
 # Overview

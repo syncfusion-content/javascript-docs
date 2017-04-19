@@ -5,6 +5,7 @@ description: serverconfiguration
 platform: JS
 control: Spreadsheet
 documentation: ug
+api: /api/js/ejspreadsheet
 ---
 
 # Server Configuration

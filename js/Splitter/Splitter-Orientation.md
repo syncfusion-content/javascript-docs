@@ -5,6 +5,7 @@ description: splitter orientation
 platform: js
 control: Splitter
 documentation: ug
+api: /api/js/ejsplitter
 ---
 
 # Splitter Orientation

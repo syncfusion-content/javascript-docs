@@ -5,6 +5,7 @@ description: How to Edit the Spreadsheet
 platform: js
 control: Spreadsheet
 documentation: ug
+api: /api/js/ejspreadsheet
 ---
 
 # Editing 

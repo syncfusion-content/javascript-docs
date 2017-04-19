@@ -5,6 +5,7 @@ description: How to use and customize the Spreadsheet rows and columns
 platform: js
 control: Spreadsheet
 documentation: ug
+api: /api/js/ejspreadsheet
 --- 
 
 # Rows and Columns

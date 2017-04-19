@@ -5,6 +5,7 @@ description: configure collapsible and expandable properties
 platform: js
 control: Splitter
 documentation: ug
+api: /api/js/ejsplitter
 ---
 
 # Configure Collapsible and Expandable properties

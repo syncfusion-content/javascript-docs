@@ -5,6 +5,7 @@ description: How to perform Spreadsheet Data presentation.
 platform: js
 control: Spreadsheet
 documentation: ug
+api: /api/js/ejspreadsheet
 --- 
 
 # Data Presentation

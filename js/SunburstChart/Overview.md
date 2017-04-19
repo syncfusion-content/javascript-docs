@@ -5,6 +5,7 @@ description: What are the key features available in SunburstChart.
 platform: ts
 control: SunburstChart
 documentation: ug
+api: /api/js/ejsunburstchart
 ---
 # Overview
 

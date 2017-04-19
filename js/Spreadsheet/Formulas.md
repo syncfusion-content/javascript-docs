@@ -4,6 +4,7 @@ description: How to use formulas in Spreadsheet with cell references, named rang
 platform: Js
 control: Spreadsheet
 documentation: Ug
+api: /api/js/ejspreadsheet
 ---
 # Formulas
 

@@ -5,6 +5,7 @@ description: How to use the Spreadsheet Cell Range
 platform: js
 control: Spreadsheet
 documentation: ug
+api: /api/js/ejspreadsheet
 --- 
 
 # Cell Range
