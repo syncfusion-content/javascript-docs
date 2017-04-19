@@ -5,6 +5,7 @@ description: button types
 platform: js
 control: Toggle Button
 documentation: ug
+api: /api/js/ejtogglebutton
 ---
 
 # Button types

@@ -5,6 +5,7 @@ description: data-binding
 platform: js
 control: TagCloud
 documentation: ug
+api: /api/js/ejtagcloud
 ---
 
 # Data-Binding

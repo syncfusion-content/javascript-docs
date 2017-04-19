@@ -5,6 +5,7 @@ description: angular support
 platform: js
 control: TimePicker
 documentation: ug
+api: /api/js/ejtimepicker
 ---
 
 # AngularJS Support

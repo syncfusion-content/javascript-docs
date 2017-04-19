@@ -5,6 +5,7 @@ description: customize size
 platform: js
 control: Tile
 documentation: ug
+api: /api/js/ejtile
 ---
 
 # Customize size

@@ -5,6 +5,7 @@ description: timepicker customization
 platform: js
 control: TimePicker
 documentation: ug
+api: /api/js/ejtimepicker
 ---
 
 # TimePicker Customization

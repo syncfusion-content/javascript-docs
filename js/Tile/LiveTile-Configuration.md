@@ -5,6 +5,7 @@ description: livetile configuration
 platform: js
 control: Tile
 documentation: ug
+api: /api/js/ejtile
 ---
 
 # LiveTile Configuration

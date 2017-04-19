@@ -5,6 +5,7 @@ description: image configuration
 platform: js
 control: Tile
 documentation: ug
+api: /api/js/ejtile
 ---
 
 # Image Configuration

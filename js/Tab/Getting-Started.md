@@ -5,6 +5,7 @@ description: getting started
 platform: js
 control: Tab Control
 documentation: ug
+api: /api/js/ejtab
 ---
 
 # Getting Started 

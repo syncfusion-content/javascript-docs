@@ -5,6 +5,7 @@ description: scroll support
 platform: js
 control: Tab Control
 documentation: ug
+api: /api/js/ejtab
 ---
 
 # Scroll Support

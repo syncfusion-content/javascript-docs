@@ -5,6 +5,7 @@ description: easy customization
 platform: js
 control: Toggle Button
 documentation: ug
+api: /api/js/ejtogglebutton
 ---
 
 # Easy Customization

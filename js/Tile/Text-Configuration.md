@@ -5,6 +5,7 @@ description: text configuration
 platform: js
 control: Tile
 documentation: ug
+api: /api/js/ejtile
 ---
 
 # Text Configuration
