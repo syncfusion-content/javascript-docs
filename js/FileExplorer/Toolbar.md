@@ -5,6 +5,7 @@ description: Toolbar support
 platform: js
 control: File Explorer
 documentation: ug
+api: /api/js/ejfileexplorer
 ---
 
 # Toolbar

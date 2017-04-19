@@ -5,6 +5,7 @@ description: How to define the columns and its features
 platform: js
 control: Grid
 documentation: ug
+api: /api/js/ejgrid
 --- 
 # Columns
 

@@ -5,6 +5,7 @@ description: How to apply styling and appearance
 platform: js
 control: Grid
 documentation: ug
+api: /api/js/ejgrid
 ---
 # Styling
 

@@ -5,6 +5,7 @@ description: holidays
 platform: js
 control: Gantt
 documentation: ug
+api: /api/js/ejgantt
 ---
 
 # Holidays

@@ -5,6 +5,7 @@ description: How to export the Grid to Microsoft Word,Microsoft Excel and PDF fi
 platform: js
 control: Grid
 documentation: ug
+api: /api/js/ejgrid
 ---
 # Export
 

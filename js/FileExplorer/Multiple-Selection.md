@@ -5,6 +5,7 @@ description: FileExplorer allows the user to select multiple files
 platform: js
 control: File Explorer
 documentation: ug
+api: /api/js/ejfileexplorer
 ---
 
 

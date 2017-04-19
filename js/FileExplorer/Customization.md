@@ -5,6 +5,7 @@ description: FileExplorer Customization.
 platform: js
 control: FileExplorer
 documentation: ug
+api: /api/js/ejfileexplorer
 ---
 
 # Customization

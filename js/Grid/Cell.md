@@ -5,6 +5,7 @@ description: How to define the cells and its features
 platform: js
 control: ejGrid
 documentation: ug
+api: /api/js/ejgrid
 --- 
 # Cell
 

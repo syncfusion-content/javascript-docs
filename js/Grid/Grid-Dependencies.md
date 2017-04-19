@@ -5,6 +5,7 @@ description: What is the need for Grid rendering
 platform: js
 control: Grid
 documentation: ug
+api: /api/js/ejgrid
 ---
 # Grid Dependencies
 

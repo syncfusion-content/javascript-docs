@@ -5,6 +5,7 @@ platform: js
 control: FileExplorer
 documentation: UG
 keywords: Thumbnail compression, image compression, reduce image size
+api: /api/js/ejfileexplorer
 ---
 
 # Thumbnail Compression

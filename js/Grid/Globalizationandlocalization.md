@@ -5,6 +5,7 @@ description: How to use globalization and localization
 platform: js
 control: Grid
 documentation: ug
+api: /api/js/ejgrid
 ---
 # Globalization and Localization
 

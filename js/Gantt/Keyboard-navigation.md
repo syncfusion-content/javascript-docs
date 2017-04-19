@@ -5,6 +5,7 @@ description: Keyboard-navigation
 platform: Js
 control: Gantt
 documentation: ug
+api: /api/js/ejgantt
 ---
 # Keyboard navigation
 

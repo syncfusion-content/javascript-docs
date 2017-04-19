@@ -5,6 +5,7 @@ description: Critical-feature
 platform: js
 control: Gantt
 documentation: ug
+api: /api/js/ejgantt
 ---
 # Critical Path
 

@@ -5,6 +5,7 @@ description: FileExplorer provides the support for file and folder related opera
 platform: js
 control: FileExplorer
 documentation: ug
+api: /api/js/ejfileexplorer
 ---
 
 # File Actions

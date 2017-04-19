@@ -5,6 +5,7 @@ description: How to stack column Header and customize it
 platform: js
 control: Grid
 documentation: ug
+api: /api/js/ejgrid
 ---
 # Stacked Headers
 

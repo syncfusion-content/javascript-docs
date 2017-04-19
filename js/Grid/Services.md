@@ -8,6 +8,7 @@ keywords: ejGrid, Services, Essential JS Grid, Grid, Northwind Service, Excel Ex
 metaname: 
 metacontent:
 control: ejGrid
+api: /api/js/ejgrid
 ---
 
 #ejGrid

@@ -5,6 +5,7 @@ description: Customize the behavior of FileExplorer.
 platform: js
 control: FileExplorer
 documentation: ug
+api: /api/js/ejfileexplorer
 ---
 
 # Behavior Settings

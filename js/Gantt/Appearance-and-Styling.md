@@ -5,6 +5,7 @@ description: appearance and styling
 platform: js
 control: Gantt
 documentation: ug
+api: /api/js/ejgantt
 ---
 
 # Appearance and Styling

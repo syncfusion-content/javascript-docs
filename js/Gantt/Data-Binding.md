@@ -5,6 +5,7 @@ description: data binding
 platform: js
 control: Gantt
 documentation: ug
+api: /api/js/ejgantt
 ---
 # Data Binding
 
