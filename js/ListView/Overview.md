@@ -5,6 +5,7 @@ description: overview
 platform: js
 control: ListView
 documentation: ug
+api: /api/js/ejlistview
 ---
 
 # Overview

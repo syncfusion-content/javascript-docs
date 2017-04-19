@@ -5,6 +5,7 @@ platform: js
 control: spellcheck
 documentation: ug
 keywords: multiple target, target element check
+api: /api/js/ejspellcheck
 ---
 # Multiple Target
 

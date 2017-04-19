@@ -5,6 +5,7 @@ description: Overview for Grid
 platform: js
 control: Grid
 documentation: ug
+api: /api/js/ejgrid
 ---
 # Overview
 

@@ -5,6 +5,7 @@ description: Task scheduling modes
 platform: js
 control: Gantt
 documentation: ug
+api: /api/js/ejgantt
 ---
 
 # Task Scheduling Modes

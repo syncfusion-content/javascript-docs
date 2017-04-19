@@ -5,6 +5,7 @@ description: basic settings
 platform: js
 control: Linear Gauge
 documentation: ug
+api: /api/js/ejlineargauge
 ---
 
 # Basic Settings

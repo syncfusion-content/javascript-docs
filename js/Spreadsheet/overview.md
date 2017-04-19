@@ -5,6 +5,7 @@ description: overview
 platform: JS
 control: Spreadsheet
 documentation: ug
+api: /api/js/ejspreadsheet
 ---
 # Overview
 

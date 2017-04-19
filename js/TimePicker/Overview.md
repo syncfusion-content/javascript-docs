@@ -5,6 +5,7 @@ description: overview
 platform: js
 control: TimePicker
 documentation: ug
+api: /api/js/ejtimepicker
 ---
 
 # Overview

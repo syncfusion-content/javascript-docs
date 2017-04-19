@@ -5,6 +5,7 @@ description: overview
 platform: js
 control: MaskEdit
 documentation: ug
+api: /api/js/ejmaskedit
 ---
 
 # Overview

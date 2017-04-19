@@ -5,6 +5,7 @@ description: keyboard interaction
 platform: js
 control: TimePicker
 documentation: ug
+api: /api/js/ejtimepicker
 ---
 
 # Keyboard Interaction

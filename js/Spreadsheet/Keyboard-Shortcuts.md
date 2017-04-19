@@ -4,6 +4,7 @@ description: Keyboard shortcuts support for Spreadsheet widget
 platform: js
 control: Spreadsheet
 documentation: ug
+api: /api/js/ejspreadsheet
 ---
 # Keyboard Shortcuts
 

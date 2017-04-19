@@ -5,6 +5,7 @@ description: miscellaneous
 platform: js
 control: Toggle Button
 documentation: ug
+api: /api/js/ejtogglebutton
 ---
 
 # Miscellaneous

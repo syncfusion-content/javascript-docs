@@ -5,6 +5,7 @@ description: getting started
 platform: js
 control: Maps
 documentation: ug
+api: /api/js/ejmap
 ---
 
 # Getting Started

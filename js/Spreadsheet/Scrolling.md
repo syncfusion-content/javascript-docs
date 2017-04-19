@@ -5,6 +5,7 @@ description: How to enable Scrolling and its functionalities
 platform: js
 control: Spreadsheet
 documentation: ug
+api: /api/js/ejspreadsheet
 --- 
 
 # Scrolling

@@ -5,6 +5,7 @@ description: selection
 platform: js
 control: ListView
 documentation: ug
+api: /api/js/ejlistview
 ---
 
 # Selection

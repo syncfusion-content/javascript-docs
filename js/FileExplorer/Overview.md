@@ -5,6 +5,7 @@ description: overview
 platform: js
 control: File Explorer
 documentation: ug
+api: /api/js/ejfileexplorer
 ---
 
 # Overview

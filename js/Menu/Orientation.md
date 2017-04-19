@@ -5,6 +5,7 @@ description: orientation
 platform: js
 control: Menu
 documentation: ug
+api: /api/js/ejmenu
 ---
 
 # Orientation

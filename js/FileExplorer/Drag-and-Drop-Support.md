@@ -5,6 +5,7 @@ platform: js
 control: FileExplorer
 documentation: UG
 keywords: Drag and drop option
+api: /api/js/ejfileexplorer
 ---
 
 # Drag and Drop Support

@@ -5,6 +5,7 @@ description: Learn how to bind Sparkline with local data.
 platform: ts
 control: Sparkline
 documentation: ug
+api: /api/js/ejsparkline
 ---
 
 # Working with Data

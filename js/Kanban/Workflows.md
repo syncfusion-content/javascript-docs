@@ -5,6 +5,7 @@ description: Workflows
 documentation: ug
 platform: js
 keywords: Workflows,kanban Workflows
+api : /api/js/ejkanban
 ---
 
 # Workflows 

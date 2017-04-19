@@ -5,6 +5,7 @@ platform: js
 control: FileExplorer
 documentation: UG
 keywords: Accessing shared folder
+api: /api/js/ejfileexplorer
 ---
 
 # Accessing shared folder

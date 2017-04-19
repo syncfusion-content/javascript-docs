@@ -5,6 +5,7 @@ description: keyboard navigation
 platform: js
 control: Splitter
 documentation: ug
+api: /api/js/ejsplitter
 ---
 
 # Keyboard Navigation

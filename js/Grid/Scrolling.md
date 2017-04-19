@@ -5,6 +5,7 @@ description: How to enable scrolling and its functionalities
 platform: js
 control: Grid
 documentation: ug
+api: /api/js/ejgrid
 --- 
 # Scrolling
 

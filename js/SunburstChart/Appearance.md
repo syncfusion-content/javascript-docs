@@ -5,6 +5,7 @@ description: What are the different ways to customize the SunburstChart
 platform: ts
 control: SunburstChart
 documentation: ug
+api: /api/js/ejsunburstchart
 ---
 
 # Appearance

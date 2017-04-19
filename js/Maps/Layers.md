@@ -5,6 +5,7 @@ description: layers
 platform: js
 control: Maps
 documentation: ug
+api: /api/js/ejmap
 ---
 
 # Layers

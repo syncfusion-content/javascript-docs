@@ -4,7 +4,8 @@ description: SpellCheck Introduction
 platform: js
 control: spellcheck
 documentation: ug
-keywords: overview, key features, usage 
+keywords: overview, key features, usage
+api: /api/js/ejspellcheck 
 ---
 # Overview
 

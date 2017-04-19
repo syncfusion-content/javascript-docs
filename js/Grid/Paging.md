@@ -5,6 +5,7 @@ description: How to enable paging and its functionalites.
 platform: js
 control: Grid
 documentation: ug
+api: /api/js/ejgrid
 --- 
 # Paging
 

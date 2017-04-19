@@ -5,6 +5,7 @@ description: custom labels
 platform: js
 control: Linear Gauge
 documentation: ug
+api: /api/js/ejlineargauge
 ---
 
 # Custom labels

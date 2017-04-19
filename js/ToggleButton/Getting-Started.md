@@ -5,6 +5,7 @@ description: getting started
 platform: js
 control: Toggle Button
 documentation: ug
+api: /api/js/ejtogglebutton
 ---
 
 # Getting Started

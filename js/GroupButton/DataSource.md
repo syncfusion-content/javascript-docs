@@ -5,6 +5,7 @@ description: datasource
 platform: js
 control: GroupButton
 documentation: ug
+api: /api/js/ejgroupbutton
 ---
 
 # DataSource

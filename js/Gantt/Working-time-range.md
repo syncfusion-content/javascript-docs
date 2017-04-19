@@ -5,6 +5,7 @@ description: working time range
 platform: js
 control: Gantt
 documentation: ug
+api: /api/js/ejgantt
 ---
 
 # Working Time Range

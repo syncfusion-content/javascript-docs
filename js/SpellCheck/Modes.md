@@ -5,6 +5,7 @@ platform: js
 control: spellcheck
 documentation: ug
 keywords: operations, spellcheck modes, dialog mode, context menu mode,  custom menu, handling menu actions, handling dialog actions
+api: /api/js/ejspellcheck
 ---
 # SpellCheck Operations
 

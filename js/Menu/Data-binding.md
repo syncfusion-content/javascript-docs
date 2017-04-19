@@ -5,6 +5,7 @@ description: data binding
 platform: js
 control: Menu
 documentation: ug
+api: /api/js/ejmenu
 ---
 
 # Data binding

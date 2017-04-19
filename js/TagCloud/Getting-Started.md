@@ -5,6 +5,7 @@ description: getting started
 platform: js
 control: TagCloud
 documentation: ug
+api: /api/js/ejtagcloud
 ---
 
 # Getting Started

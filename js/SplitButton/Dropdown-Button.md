@@ -5,6 +5,7 @@ description: dropdown button
 platform: js
 control: Split Button
 documentation: ug
+api: /api/js/ejsplitbutton
 ---
 
 # Dropdown Button

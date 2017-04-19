@@ -5,6 +5,7 @@ description: keyboard navigation
 platform: js
 control: Tab Control
 documentation: ug
+api: /api/js/ejtab
 ---
 
 # Keyboard Navigation

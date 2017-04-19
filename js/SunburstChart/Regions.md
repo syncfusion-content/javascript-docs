@@ -5,6 +5,7 @@ description: Learn how to customize the sunburst segments
 platform: ts
 control: SunburstChart
 documentation: ug
+api: /api/js/ejsunburstchart
 ---
  
 # Sunburst Elements

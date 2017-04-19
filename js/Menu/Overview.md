@@ -5,6 +5,7 @@ description: overview
 platform: js
 control: Menu
 documentation: ug
+api: /api/js/ejmenu
 ---
 
 # Overview

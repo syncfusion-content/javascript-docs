@@ -5,6 +5,7 @@ description: What are the different modes of selection present in the Sunburst C
 platform: ts
 control: SunburstChart
 documentation: ug
+api: /api/js/ejsunburstchart
 ---
 
 # Selection 

@@ -5,6 +5,7 @@ description: keyboard navigation
 platform: js
 control: Menu
 documentation: ug
+api: /api/js/ejmenu
 ---
 
 # Keyboard Navigation

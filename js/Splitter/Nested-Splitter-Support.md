@@ -5,6 +5,7 @@ description: nested splitter support
 platform: js
 control: Splitter
 documentation: ug
+api: /api/js/ejsplitter
 ---
 
 # Nested Splitter Support

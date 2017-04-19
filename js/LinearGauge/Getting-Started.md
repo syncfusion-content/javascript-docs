@@ -5,6 +5,7 @@ description: getting started
 platform: js
 control: Linear Gauge
 documentation: ug
+api: /api/js/ejlineargauge
 ---
 
 # Getting Started

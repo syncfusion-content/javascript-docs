@@ -5,6 +5,7 @@ description: How to bind the hierarchical data
 platform: js
 control: Grid
 documentation: ug
+api: /api/js/ejgrid
 ---
 # Hierarchical Bindings
 

@@ -5,6 +5,7 @@ description: Web accessibilties standard used in ejGrid
 platform: js
 control: Grid
 documentation: ug
+api: /api/js/ejgrid
 ---
 # Web Accessibility
 

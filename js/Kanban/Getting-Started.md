@@ -5,6 +5,7 @@ description: Getting-Started
 documentation: ug
 platform: js
 keywords: getting started,kanban getting started
+api : /api/js/ejkanban
 ---
 
 # Getting Started

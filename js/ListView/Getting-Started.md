@@ -5,6 +5,7 @@ description: getting started
 platform: js
 control: ListView
 documentation: ug
+api: /api/js/ejlistview
 ---
 
 # Getting Started

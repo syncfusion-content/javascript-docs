@@ -5,6 +5,7 @@ description: miscellaneous
 platform: js
 control: GroupButton
 documentation: ug
+api: /api/js/ejgroupbutton
 ---
 
 # Miscellaneous

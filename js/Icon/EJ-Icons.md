@@ -5,6 +5,7 @@ description: Essential Studio for JavaScript:Icon Package
 platform: js
 control: General Topics 
 documentation: ug
+api : /api/js/
 ---
 
 # EJ Icon Package

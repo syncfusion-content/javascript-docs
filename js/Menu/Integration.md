@@ -5,6 +5,7 @@ description: integration
 platform: js
 control: Menu
 documentation: ug
+api: /api/js/ejmenu
 ---
 
 # Integration

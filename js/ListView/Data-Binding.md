@@ -5,6 +5,7 @@ description: data binding
 platform: js
 control: ListView
 documentation: ug
+api: /api/js/ejlistview
 ---
 
 # Data Binding

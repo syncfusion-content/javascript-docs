@@ -5,6 +5,7 @@ description: How to enable Undo Redo and its functionalities
 platform: js
 control: Spreadsheet
 documentation: ug
+api: /api/js/ejspreadsheet
 --- 
 
 # Undo and Redo

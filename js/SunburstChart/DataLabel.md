@@ -5,6 +5,7 @@ description: Learn how to customize datalabels in Sunburst Chart.
 platform: ts
 control: SunburstChart
 documentation: ug
+api: /api/js/ejsunburstchart
 ---
 
 # Data Labels 

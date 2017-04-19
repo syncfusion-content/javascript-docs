@@ -5,6 +5,7 @@ description: Editing
 documentation: ug
 platform: js
 keywords: editing,kanban editing
+api : /api/js/ejkanban
 ---
 
 # Editing

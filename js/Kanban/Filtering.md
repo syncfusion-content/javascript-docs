@@ -5,6 +5,7 @@ description: Filtering
 documentation: ug
 platform: js
 keywords: filtering,kanban filtering
+api : /api/js/ejkanban
 ---
 
 # Filtering

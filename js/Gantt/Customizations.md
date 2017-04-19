@@ -5,6 +5,7 @@ description: Customization
 platform: Js
 control: Gantt
 documentation: ug
+api: /api/js/ejgantt
 ---
 # Customizations 
 

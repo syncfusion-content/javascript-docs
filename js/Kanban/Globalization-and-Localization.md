@@ -5,6 +5,7 @@ description: Globalization and Localization
 documentation: ug
 platform: js
 keywords: globalization and localization,kanban globalization and localizationards
+api : /api/js/ejkanban
 ---
 
 # Localization

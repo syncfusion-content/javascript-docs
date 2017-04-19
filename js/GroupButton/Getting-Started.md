@@ -5,6 +5,7 @@ description: getting started
 platform: js
 control: GroupButton
 documentation: ug
+api: /api/js/ejgroupbutton
 ---
 
 

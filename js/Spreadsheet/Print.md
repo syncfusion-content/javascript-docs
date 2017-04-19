@@ -5,6 +5,7 @@ description: How to use the Spreadsheet Print
 platform: js
 control: Spreadsheet
 documentation: ug
+api: /api/js/ejspreadsheet
 ---
 
 # Print

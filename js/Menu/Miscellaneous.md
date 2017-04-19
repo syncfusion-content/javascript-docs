@@ -5,6 +5,7 @@ description: miscellaneous
 platform: js
 control: Menu
 documentation: ug
+api: /api/js/ejmenu
 ---
 
 # Miscellaneous

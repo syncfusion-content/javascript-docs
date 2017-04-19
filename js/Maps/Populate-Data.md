@@ -5,6 +5,7 @@ description: populate data
 platform: js
 control: Maps
 documentation: ug
+api: /api/js/ejmap
 ---
 
 # Populate Data

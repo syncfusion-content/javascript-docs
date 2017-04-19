@@ -5,6 +5,7 @@ description: icons and navigation
 platform: js
 control: Menu
 documentation: ug
+api: /api/js/ejmenu
 ---
 
 # Icons and navigation

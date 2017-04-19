@@ -5,6 +5,7 @@ description: rtl support
 platform: js
 control: Splitter
 documentation: ug
+api: /api/js/ejsplitter
 ---
 
 # RTL Support

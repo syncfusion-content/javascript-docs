@@ -5,6 +5,7 @@ description: Swimlanes
 documentation: ug
 platform: js
 keywords: swimlanes,kanban swimlanes
+api : /api/js/ejkanban
 ---
 
 # Swim lanes

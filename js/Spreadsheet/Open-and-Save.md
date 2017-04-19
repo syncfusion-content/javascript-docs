@@ -4,6 +4,7 @@ description: How to perform Open and Save and configure its functionalities like
 platform: js
 control: Spreadsheet
 documentation: ug
+api: /api/js/ejspreadsheet
 ---
 
 # Open and Save

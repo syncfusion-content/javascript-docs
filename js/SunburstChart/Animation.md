@@ -5,6 +5,7 @@ description: Learn how to animate the SunburstChart .
 platform: ts
 control: SunburstChart
 documentation: ug
+api: /api/js/ejsunburstchart
 ---
 
 # Animation

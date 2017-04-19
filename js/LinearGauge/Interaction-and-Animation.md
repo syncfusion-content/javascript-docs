@@ -5,6 +5,7 @@ description: interaction and animation
 platform: js
 control: Linear Gauge
 documentation: ug
+api: /api/js/ejlineargauge
 ---
 
 # Interaction and Animation

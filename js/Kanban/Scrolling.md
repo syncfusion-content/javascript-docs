@@ -5,6 +5,7 @@ description: Scrolling
 documentation: ug
 platform: js
 keywords: scrolling,kanban scrolling
+api : /api/js/ejkanban
 ---
 
 # Scrolling
