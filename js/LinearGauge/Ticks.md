@@ -5,6 +5,7 @@ description: ticks
 platform: js
 control: Linear Gauge
 documentation: ug
+api: /api/js/ejlineargauge
 ---
 
 # Ticks

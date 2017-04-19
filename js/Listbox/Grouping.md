@@ -5,6 +5,7 @@ description: grouping
 platform: js
 control: ListBox
 documentation: ug
+api: /api/js/ejlistbox
 ---
 
 # Grouping

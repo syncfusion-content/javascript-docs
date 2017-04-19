@@ -5,6 +5,7 @@ description: scales
 platform: js
 control: Linear Gauge
 documentation: ug
+api: /api/js/ejlineargauge
 ---
 
 # Scales
