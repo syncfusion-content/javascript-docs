@@ -5,6 +5,7 @@ description: responsive layout
 platform: js
 control: Menu
 documentation: ug
+api: /api/js/ejmenu
 ---
 
 # Responsive Layout

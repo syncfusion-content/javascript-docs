@@ -5,6 +5,7 @@ description: Maps Overview
 platform: js
 control: Maps
 documentation: ug
+api: /api/js/ejmap
 ---
 
 # Maps

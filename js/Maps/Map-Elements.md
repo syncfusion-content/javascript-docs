@@ -5,6 +5,7 @@ description: map elements
 platform: js
 control: Maps
 documentation: ug
+api: /api/js/ejmap
 ---
 
 # Map Elements

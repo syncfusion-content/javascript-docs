@@ -5,6 +5,7 @@ description: maskedit properties
 platform: js
 control: MaskEdit
 documentation: ug
+api: /api/js/ejmaskedit
 ---
 
 # MaskEdit Properties

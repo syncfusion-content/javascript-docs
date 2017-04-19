@@ -5,6 +5,7 @@ description: center menu
 platform: js
 control: Menu
 documentation: ug
+api: /api/js/ejmenu
 ---
 
 # Center Menu

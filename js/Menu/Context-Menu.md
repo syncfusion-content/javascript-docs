@@ -5,6 +5,7 @@ description: context menu
 platform: js
 control: Menu
 documentation: ug
+api: /api/js/ejmenu
 ---
 
 # Context Menu

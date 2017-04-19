@@ -5,6 +5,7 @@ description: customizing the submenu direction
 platform: js
 control: Menu
 documentation: ug
+api: /api/js/ejmenu
 ---
 
 # Customizing the Submenu direction

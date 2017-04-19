@@ -5,6 +5,7 @@ description: behavior settings
 platform: js
 control: MaskEdit
 documentation: ug
+api: /api/js/ejmaskedit
 ---
 
 # Behavior Settings
