@@ -23,6 +23,8 @@ documentation: ug
 
 * **Column Template** - To display custom columns along with customized expand-collapse icon.
 
+* **Row drag and drop** - Allows you to drag any row and drop it at any desired position.
+
 * **Paging** - Paginated view of records.
 
 * **Summary rows** - To summarize the rows at each heirarchical levels.
