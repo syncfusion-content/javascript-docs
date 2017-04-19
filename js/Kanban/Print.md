@@ -4,6 +4,7 @@ title:  Print with Kanban widget for Syncfusion Essential JS
 description: How to enable print option in Kanban
 documentation: ug
 platform: js
+api : /api/js/ejkanban
 ---
 
 # Print

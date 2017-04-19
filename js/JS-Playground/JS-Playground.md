@@ -6,6 +6,7 @@ platform: js
 control: General
 documentation: ug
 keywords: liveeditor,
+api : /api/js/
 ---
 
 # Overview

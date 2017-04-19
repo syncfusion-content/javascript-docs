@@ -5,6 +5,7 @@ description: Kanban Introduction
 documentation: ug
 platform: js
 keywords: overview
+api : /api/js/ejkanban
 ---
 
 # Overview

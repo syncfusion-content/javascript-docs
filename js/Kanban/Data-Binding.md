@@ -5,6 +5,7 @@ description: Data Binding
 documentation: ug
 platform: js
 keywords: data binding ,kanban data binding
+api : /api/js/ejkanban
 ---
 
 # Data Binding  

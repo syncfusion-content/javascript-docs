@@ -5,6 +5,7 @@ description: Styling
 documentation: ug
 platform: js
 keywords: styling,kanban styling
+api : /api/js/ejkanban
 ---
 
 # Styling

@@ -5,6 +5,7 @@ description: Stacked Headers
 documentation: ug
 platform: js
 keywords: stacked headers,kanban stacked headers
+api : /api/js/ejkanban
 ---
 # Stacked Headers
 
