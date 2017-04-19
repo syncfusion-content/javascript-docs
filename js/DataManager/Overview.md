@@ -5,6 +5,7 @@ description: overview
 platform: js
 control: DataManager
 documentation: ug
+api: /api/js/ejdatamanager
 ---
 
 # Overview  

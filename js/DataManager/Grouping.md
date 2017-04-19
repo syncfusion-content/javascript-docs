@@ -5,6 +5,7 @@ description: grouping
 platform: js
 control: DataManager
 documentation: ug
+api: /api/js/ejdatamanager
 ---
 
 # Grouping

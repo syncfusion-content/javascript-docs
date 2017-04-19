@@ -5,6 +5,7 @@ description: How to group two or more nodes and connectors?
 platform: js
 control: Diagram
 documentation: ug
+api: /api/js/ejdiagram
 ---
 
 # Group

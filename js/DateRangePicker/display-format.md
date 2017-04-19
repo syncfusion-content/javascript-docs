@@ -5,6 +5,7 @@ description: display format
 platform: js
 control: DateRangePicker
 documentation: ug
+api: /api/js/ejdaterangepicker
 ---
 
 ## Display Format

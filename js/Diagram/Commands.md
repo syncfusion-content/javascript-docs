@@ -5,6 +5,7 @@ description: How to explore and use the built-in commands?
 platform: js
 control: Diagram
 documentation: ug
+api: /api/js/ejdiagram
 ---
 
 # Commands

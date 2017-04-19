@@ -5,6 +5,7 @@ description: OverView of the DropDownList widget for Syncfusion Essential JS
 platform: js
 control: DropDownList
 documentation: ug
+api: /api/js/ejdropdownlist
 ---
 # DropDownList
 

@@ -5,6 +5,7 @@ description: How to show/hide tooltips when mouse hovers over objects or during 
 platform: js
 control: Diagram
 documentation: ug
+api: /api/js/ejdiagram
 ---
 
 # Tooltip

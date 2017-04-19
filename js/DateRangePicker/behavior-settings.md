@@ -5,6 +5,7 @@ description: behavior settings
 platform: js
 control: DateRangePicker
 documentation: ug
+api: /api/js/ejdaterangepicker
 ---
 
 ## Behavior Settings

@@ -5,6 +5,7 @@ description: webAPI reference for
 documentation: ug
 platform: js
 keywords: documenteditor,syncfusion,documenteditor webapi
+api: /api/js/ejdocumenteditor
 ---
 
 ## Import

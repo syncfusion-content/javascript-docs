@@ -6,6 +6,7 @@ platform: js
 control: DropDownList
 documentation: ug
 keywords: Customization, DropDownList, dropdown, watermark text
+api: /api/js/ejdropdownlist
 ---
 
 # Customization

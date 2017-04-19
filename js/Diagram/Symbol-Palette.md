@@ -5,6 +5,7 @@ description: How to add shapes to the symbol palette and drag and drop them over
 platform: js
 control: Diagram
 documentation: ug
+api: /api/js/ejdiagram
 ---
 
 # Symbol Palette

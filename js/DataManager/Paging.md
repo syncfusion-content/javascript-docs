@@ -6,6 +6,7 @@ platform: js
 control: DataManager
 documentation: ug
 keywords: custom paging, paging, skip, take, range, requiresCount
+api: /api/js/ejdatamanager
 ---
 
 # Paging

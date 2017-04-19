@@ -5,6 +5,7 @@ description: How to execute frequently used commands by using context menu items
 platform: js
 control: Diagram
 documentation: ug
+api: /api/js/ejdiagram
 ---
 
 # Context Menu

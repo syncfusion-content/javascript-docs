@@ -5,6 +5,7 @@ description: basic settings
 platform: js
 control: Digital Gauge
 documentation: ug
+api : /api/js/ejdigitalgauge
 ---
 
 # Basic Settings

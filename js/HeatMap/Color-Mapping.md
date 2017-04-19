@@ -5,6 +5,7 @@ description: How to configure colors codes for heatmap?
 platform: js
 control: ejHeatMap
 documentation: ug
+api: /api/js/ejheatmap
 ---
 
 # Color Mapping

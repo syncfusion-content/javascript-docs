@@ -5,6 +5,7 @@ description: How to populate data for heatmap?
 platform: JS
 control: HeatMap
 documentation: ug
+api: /api/js/ejheatmap
 ---
 
 #Items Mapping

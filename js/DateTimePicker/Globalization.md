@@ -5,6 +5,7 @@ description: localization
 platform: js
 control: DateTimePicker
 documentation: ug
+api: /api/js/ejdatetimepicker
 ---
 
 # Globalization

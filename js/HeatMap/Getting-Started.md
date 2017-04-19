@@ -5,6 +5,7 @@ description: Getting started walk through to create your first Heat map.
 platform: js
 control: ejHeatMap
 documentation: ug
+api: /api/js/ejheatmap
 ---
 
 # Getting Started

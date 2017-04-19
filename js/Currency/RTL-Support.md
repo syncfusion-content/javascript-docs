@@ -5,6 +5,7 @@ description: rtl support
 platform: js
 control: CurrencyTextBox  
 documentation: ug
+api: /api/js/
 ---
 
 # RTL Support

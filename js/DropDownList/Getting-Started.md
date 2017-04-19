@@ -6,6 +6,7 @@ platform: js
 control: DropDownList
 documentation: ug
 keywords: DropDownList, dropdown, Populating data
+api: /api/js/ejdropdownlist
 ---
 
 # Getting Started

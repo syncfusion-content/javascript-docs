@@ -6,6 +6,7 @@ platform: js
 control: DataManager
 documentation: ug
 keywords: WebService, ESRI Rest Web Services, WCF-RESTful Service
+api: /api/js/ejdatamanager
 ---
 
 # How To

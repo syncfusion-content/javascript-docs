@@ -6,6 +6,7 @@ platform: js
 control: DropDownList
 documentation: ug
 keywords: Rendering, DropDownList, dropdown, Rendering Mode
+api: /api/js/ejdropdownlist
 ---
 
 # Rendering Mode

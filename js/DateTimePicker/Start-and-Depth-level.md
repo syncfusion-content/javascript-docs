@@ -4,7 +4,8 @@ title: Start-and-Depth-level
 description: start and depth level
 platform: js
 control: DateTimePicker
-documentation: ug
+documentation: ug 
+api: /api/js/ejdatetimepicker
 ---
 
 # Start and Depth level

@@ -5,6 +5,7 @@ description: How to graphically notate the internal business procedure?
 platform: js
 control: Diagram
 documentation: ug
+api: /api/js/ejdiagram
 ---
 
 ### BPMN Shapes

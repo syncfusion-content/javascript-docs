@@ -6,6 +6,7 @@ platform: js
 control: DropDownList
 documentation: ug
 keywords: Keyboard Navigation, DropDownList, Accessibility
+api: /api/js/ejdropdownlist
 ---
 
 # Accessibility 

@@ -5,6 +5,7 @@ description: How to arrange nodes by using the automatic layouts?
 platform: js
 control: Diagram
 documentation: ug
+api: /api/js/ejdiagram
 ---
 
 # Automatic Layout

@@ -5,6 +5,7 @@ description: How to textually describe nodes and connectors?
 platform: js
 control: Diagram
 documentation: ug
+api: /api/js/ejdiagram
 ---
 
 # Label

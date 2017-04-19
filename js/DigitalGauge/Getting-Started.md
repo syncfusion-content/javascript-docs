@@ -5,6 +5,7 @@ description: getting started
 platform: js
 control: Digital Gauge
 documentation: ug
+api : /api/js/ejdigitalgauge
 ---
 
 # Getting Started

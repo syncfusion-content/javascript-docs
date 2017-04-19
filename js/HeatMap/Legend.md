@@ -5,6 +5,7 @@ description: How to create and configure legend for HeatMap
 platform: js
 control: HeatMapLegend
 documentation: ug
+api: /api/js/ejheatmaplegend
 ---
 
 # Legend

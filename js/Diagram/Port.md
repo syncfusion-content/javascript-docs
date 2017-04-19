@@ -5,6 +5,7 @@ description: How to draw connections with specific points of node?
 platform: js
 control: Diagram
 documentation: ug
+api: /api/js/ejdiagram
 ---
 
 # Port

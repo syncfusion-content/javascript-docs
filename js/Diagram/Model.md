@@ -5,6 +5,7 @@ description: How to represent the data to render the Diagram control?
 platform: js
 control: Diagram
 documentation: ug
+api: /api/js/ejdiagram
 ---
 
 # Model

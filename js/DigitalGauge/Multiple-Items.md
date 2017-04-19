@@ -5,6 +5,7 @@ description: multiple items
 platform: js
 control: Digital Gauge
 documentation: ug
+api : /api/js/ejdigitalgauge
 ---
 
 # Multiple Items 

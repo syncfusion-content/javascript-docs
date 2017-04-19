@@ -5,6 +5,7 @@ description: angular binding
 platform: js
 control: ColorPicker
 documentation: ug
+api: /api/js/ejcolorpicker
 ---
 
 # AngularJS Binding

@@ -5,6 +5,7 @@ description: exporting
 platform: js
 control: Circular Gauge
 documentation: ug
+api: /api/js/ejcirculargauge
 ---
 
 # Exporting

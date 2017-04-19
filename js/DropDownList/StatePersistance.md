@@ -6,6 +6,7 @@ platform: js
 control: DropDownList
 documentation: ug
 keywords: Persistence, DropDownList, dropdown, State Persistence
+api: /api/js/ejdropdownlist
 ---
 
 # State Persistence

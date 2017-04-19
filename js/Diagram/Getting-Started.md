@@ -5,6 +5,7 @@ description: Getting started walk through to create your first Flow Diagram and 
 platform: js
 control: Diagram
 documentation: ug
+api: /api/js/ejdiagram
 ---
 
 # Getting Started

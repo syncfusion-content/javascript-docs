@@ -6,6 +6,7 @@ platform: js
 control: DropDownList
 documentation: ug
 keywords: Template Support, DropDownList, dropdown, Header Template
+api: /api/js/ejdropdownlist
 ---
 
 # Template Support

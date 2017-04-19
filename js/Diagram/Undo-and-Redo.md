@@ -5,6 +5,7 @@ description: How to revert/restore the changes?
 platform: js
 control: Diagram
 documentation: ug
+api: /api/js/ejdiagram
 ---
 
 # History Manager
