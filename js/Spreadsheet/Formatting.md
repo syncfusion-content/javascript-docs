@@ -4,6 +4,7 @@ description: How to use different types of formatting in Spreadsheet and configu
 platform: JS
 control: Spreadsheet
 documentation: UG
+api: /api/js/ejspreadsheet
 ---
 
 # Formatting

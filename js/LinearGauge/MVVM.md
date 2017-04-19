@@ -5,6 +5,7 @@ description: mvvm
 platform: js
 control: Linear Gauge
 documentation: ug
+api: /api/js/ejlineargauge
 ---
 
 # MVVM

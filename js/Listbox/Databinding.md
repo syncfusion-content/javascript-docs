@@ -5,6 +5,7 @@ description: databinding
 platform: js
 control: ListBox
 documentation: ug
+api: /api/js/ejlistbox
 ---
 
 # Data binding

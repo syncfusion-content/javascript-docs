@@ -5,6 +5,7 @@ description: Drag and Drop
 documentation: ug
 platform: js
 keywords: drag and drop,kanban drag and drop
+api : /api/js/ejkanban
 ---
 
 # Drag and Drop

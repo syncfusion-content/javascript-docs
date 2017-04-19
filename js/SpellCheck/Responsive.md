@@ -5,6 +5,7 @@ platform: js
 control: spellcheck
 documentation: ug
 keywords: Responsive, Responsive spellcheck dialog, Resize spellcheck dialog
+api: /api/js/ejspellcheck
 ---
 # Responsive
 

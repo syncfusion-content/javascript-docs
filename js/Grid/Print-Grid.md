@@ -5,6 +5,7 @@ description: How to enable print option in Grid
 platform: js
 control: Grid
 documentation: ug
+api: /api/js/ejgrid
 ---
 # Print
 

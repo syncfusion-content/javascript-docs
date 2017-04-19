@@ -5,6 +5,7 @@ description: How to perform editing and configure edit time functionalities like
 platform: js
 control: Grid
 documentation: ug
+api: /api/js/ejgrid
 --- 
 # Editing
 

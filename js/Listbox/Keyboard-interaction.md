@@ -5,6 +5,7 @@ description: Keyboard-interaction
 platform: js
 control: ListBox
 documentation: ug
+api: /api/js/ejlistbox
 ---
 
 # Keyboard interaction

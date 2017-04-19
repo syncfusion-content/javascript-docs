@@ -5,6 +5,7 @@ description: grouped list
 platform: js
 control: ListView
 documentation: ug
+api: /api/js/ejlistview
 ---
 
 # Grouped List

@@ -4,7 +4,8 @@ description: Rendering a basic SpellCheck
 platform: js
 control: spellcheck
 documentation: ug
-keywords: ejSpellCheck, spellcheck, spellcheck widget, js spellcheck, getting started, initialization, service reference 
+keywords: ejSpellCheck, spellcheck, spellcheck widget, js spellcheck, getting started, initialization, service reference
+api: /api/js/ejspellcheck 
 ---
 # Getting Started
 

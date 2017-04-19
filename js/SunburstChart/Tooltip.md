@@ -5,6 +5,7 @@ description: Learn how to add Tooltip to Sunburstchart .
 platform: ts
 control: Sunburst Chart
 documentation: ug
+api: /api/js/ejsunburstchart
 ---
 
 ## Tooltip  

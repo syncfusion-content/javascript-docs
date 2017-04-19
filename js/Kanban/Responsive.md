@@ -5,6 +5,7 @@ description: Responsive
 documentation: ug
 platform: js
 keywords: responsive,kanban responsive
+api : /api/js/ejkanban
 ---
 
 # Responsive

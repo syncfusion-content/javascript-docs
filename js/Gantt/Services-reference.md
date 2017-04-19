@@ -8,6 +8,7 @@ keywords: ejGantt, Services, Essential JS Gantt, Gantt, Excel Exporting Service,
 metaname: 
 metacontent:
 control: ejGantt
+api: /api/js/ejgantt
 ---
 # Gantt Exporting services
 

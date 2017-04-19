@@ -5,6 +5,7 @@ description: overview
 platform: js
 control: Linear Gauge
 documentation: ug
+api: /api/js/ejlineargauge
 ---
 
 # Overview

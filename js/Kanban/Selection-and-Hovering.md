@@ -5,6 +5,7 @@ description: Selection and Hovering
 documentation: ug
 platform: js
 keywords: selection, hovering,kanban selection, hovering
+api : /api/js/ejkanban
 ---
 
 # Selection and Hovering

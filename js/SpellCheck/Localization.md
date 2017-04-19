@@ -5,6 +5,7 @@ platform: js
 control: spellcheck
 documentation: ug
 keywords: spellcheck localize, localize, localization, localize specific words
+api: /api/js/ejspellcheck
 ---
 # Localization
 

@@ -5,6 +5,7 @@ description: Learn how to set Sparkline size and make it responsive.
 platform: ts
 control: Sparkline
 documentation: ug
+api: /api/js/ejsparkline
 ---
 
 ##Sparkline Dimensions

@@ -5,6 +5,7 @@ description: Learn how to Zoom the SunburstChart for better data visualization
 platform: ts
 control: SunburstChart
 documentation: ug
+api: /api/js/ejsunburstchart
 ---
 
 # Zooming

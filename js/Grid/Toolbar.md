@@ -5,6 +5,7 @@ description: How to enable toolbar and its actions.
 platform: js
 control: Grid
 documentation: ug
+api: /api/js/ejgrid
 ---
 # Toolbar
 

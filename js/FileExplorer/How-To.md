@@ -5,6 +5,7 @@ platform: JS
 control: FileExplorer
 documentation: UG
 keywords: FileExplorer,  Syncfusion, FileExplorer UG Doc, How To
+api: /api/js/ejfileexplorer
 ---
 
 # How To

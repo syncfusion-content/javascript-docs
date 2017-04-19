@@ -5,6 +5,7 @@ description: Web Accessibility
 documentation: ug
 platform: js
 keywords: web accessibility,kanban web accessibility
+api : /api/js/ejkanban
 ---
 
 # Web Accessibility

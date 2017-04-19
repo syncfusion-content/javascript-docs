@@ -5,6 +5,7 @@ description: overview
 platform: js
 control: ListBox
 documentation: ug
+api: /api/js/ejlistbox
 ---
 
 # Overview

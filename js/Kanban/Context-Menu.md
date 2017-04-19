@@ -5,6 +5,7 @@ description: context menu
 documentation: ug
 platform: js
 keywords: context menu ,kanban context menu 
+api : /api/js/ejkanban
 ---
 
 # Context Menu  

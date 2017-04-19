@@ -8,6 +8,7 @@ metaname:
 metacontent:
 control: ejSpreadsheet
 documentation: ug
+api: /api/js/ejspreadsheet
 ---
 
 ## Importing service

@@ -5,6 +5,7 @@ description: getting started
 platform: js
 control: ListBox
 documentation: ug
+api: /api/js/ejlistbox
 ---
 
 # Getting Started

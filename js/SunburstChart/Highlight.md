@@ -5,6 +5,7 @@ description: What are the different modes of highlight present in the Sunburst C
 platform: ts
 control: Sunburst Chart
 documentation: ug
+api: /api/js/ejsunburstchart
 ---
 
 # Highlight 

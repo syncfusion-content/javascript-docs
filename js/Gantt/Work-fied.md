@@ -5,6 +5,7 @@ description: work field
 platform: js
 control: Gantt
 documentation: ug
+api: /api/js/ejgantt
 ---
 
 # Work

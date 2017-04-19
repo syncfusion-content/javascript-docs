@@ -5,6 +5,7 @@ description: overview
 platform: js
 control: Split Button
 documentation: ug
+api: /api/js/ejsplitbutton
 ---
 
 # Overview

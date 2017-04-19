@@ -6,6 +6,7 @@ platform: js
 control: Spreadsheet
 documentation: ug
 keywords: Freeze, unfreeze, freezePanes, freezeleftcolumn, freezetoprow
+api: /api/js/ejspreadsheet
 --- 
 
 # Freeze Pane 

@@ -5,6 +5,7 @@ description: Columns
 documentation: ug
 platform: js
 keywords: columns,kanban columns
+api : /api/js/ejkanban
 ---
 
 # Columns 

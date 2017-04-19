@@ -5,6 +5,7 @@ description: time options
 platform: js
 control: Gantt
 documentation: ug
+api: /api/js/ejgantt
 ---
 
 # Time Options

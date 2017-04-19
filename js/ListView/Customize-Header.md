@@ -5,6 +5,7 @@ description: customize header
 platform: js
 control: ListView
 documentation: ug
+api: /api/js/ejlistview
 ---
 
 # Customize Header

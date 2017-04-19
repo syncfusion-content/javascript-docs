@@ -5,6 +5,7 @@ description: templates
 platform: js
 control: ListBox
 documentation: ug
+api: /api/js/ejlistbox
 ---
 
 # Templates

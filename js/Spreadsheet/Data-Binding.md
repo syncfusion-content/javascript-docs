@@ -4,6 +4,7 @@ description: How to perform Data Binding and configure its properties like dataS
 platform: js
 control: Spreadsheet
 documentation: ug
+api: /api/js/ejspreadsheet
 ---
 # Data Binding
 

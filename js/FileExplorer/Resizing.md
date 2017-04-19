@@ -5,6 +5,7 @@ description: resize support
 platform: js
 control: File Explorer
 documentation: ug
+api: /api/js/ejfileexplorer
 ---
 
 # Resizing 

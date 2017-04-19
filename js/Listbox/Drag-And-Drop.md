@@ -5,6 +5,7 @@ description: drag and drop
 platform: js
 control: ListBox
 documentation: ug
+api: /api/js/ejlistbox
 ---
 
 # Drag and drop

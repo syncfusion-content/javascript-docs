@@ -5,6 +5,7 @@ description: Selection
 platform: Js
 control: Gantt
 documentation: ug
+api: /api/js/ejgantt
 ---
 # Selection
 

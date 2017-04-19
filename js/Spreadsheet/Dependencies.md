@@ -4,6 +4,7 @@ description: Listed Spreadsheet internal and external dependencies
 platform: JS
 control: Spreadsheet
 documentation: ug
+api: /api/js/ejspreadsheet
 ---
 # Dependencies
 

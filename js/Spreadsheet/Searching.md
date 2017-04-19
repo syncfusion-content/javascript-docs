@@ -5,6 +5,7 @@ description: How to enable Searching and its functionalities
 platform: js
 control: Spreadsheet
 documentation: ug
+api: /api/js/ejspreadsheet
 --- 
 
 # Searching

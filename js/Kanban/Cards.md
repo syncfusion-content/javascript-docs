@@ -5,6 +5,7 @@ description: Cards
 documentation: ug
 platform: js
 keywords: cards,kanban cards
+api : /api/js/ejkanban
 ---
 
 # Cards

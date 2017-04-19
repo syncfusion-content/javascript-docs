@@ -5,6 +5,7 @@ description: easy customization
 platform: js
 control: Split Button
 documentation: ug
+api: /api/js/ejsplitbutton
 ---
 
 # Easy customization

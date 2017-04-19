@@ -4,6 +4,7 @@ description: How to perform Selection and configure its properties like selectio
 platform: js
 control: Spreadsheet
 documentation: ug
+api: /api/js/ejspreadsheet
 ---
 # Selection
 
