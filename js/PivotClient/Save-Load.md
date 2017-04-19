@@ -5,6 +5,7 @@ description: save and load report
 platform: js
 control: PivotClient
 documentation: ug
+api: /api/js/ejpivotclient
 ---
 
 # Save and Load Report

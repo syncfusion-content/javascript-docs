@@ -5,6 +5,7 @@ description: series
 platform: js
 control: PivotChart
 documentation: ug
+api: /api/js/ejpivotchart
 ---
 
 # Series

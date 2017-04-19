@@ -5,6 +5,7 @@ description: relational-getting started
 platform: js
 control: PivotChart
 documentation: ug
+api: /api/js/ejpivotchart
 ---
 
 # Getting Started

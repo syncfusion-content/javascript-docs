@@ -4,7 +4,8 @@ title: Data-Exploration
 description: data exploration
 platform: js
 control: PivotClient
-documentation: ug
+documentation: ug 
+api: /api/js/ejpivotclient
 ---
 
 # Data Exploration

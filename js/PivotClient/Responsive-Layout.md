@@ -5,6 +5,7 @@ description: responsive layout
 platform: js
 control: PivotClient
 documentation: ug
+api: /api/js/ejpivotclient
 ---
 
 # Responsive Layout

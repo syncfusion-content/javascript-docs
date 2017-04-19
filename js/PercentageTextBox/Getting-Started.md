@@ -5,6 +5,7 @@ description: getting started
 platform: js
 control: PercentageTextBox 
 documentation: ug
+api: /api/js/
 ---
 
 # Getting Started

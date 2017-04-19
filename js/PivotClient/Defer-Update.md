@@ -5,6 +5,7 @@ description: defer update
 platform: js
 control: PivotClient
 documentation: ug
+api: /api/js/ejpivotclient
 ---
 
 # Defer Update

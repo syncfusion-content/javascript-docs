@@ -5,6 +5,7 @@ description: PivotClient Elements
 platform: js
 control: PivotClient
 documentation: ug
+api: /api/js/ejpivotclient
 ---
 
 # PivotClient: Elements

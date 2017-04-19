@@ -5,6 +5,7 @@ description:  drill through
 platform: js
 control: PivotClient
 documentation: ug
+api: /api/js/ejpivotclient
 ---
 
 # Drill Through

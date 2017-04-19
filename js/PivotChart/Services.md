@@ -6,6 +6,7 @@ platform: js
 control: ejPivotChart
 documentation: api
 keywords: ejPivotChart, Services, JS PivotChart, PivotChart, PivotChart Exporting, Image Exporting
+api: /api/js/ejpivotchart
 ---
 
 # ejPivotChart
