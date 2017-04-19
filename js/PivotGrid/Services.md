@@ -6,6 +6,7 @@ platform: js
 control: ejPivotGrid
 documentation: api
 keywords: ejPivotGrid, Services, JS PivotGrid, PivotGrid, PivotGrid Exporting
+api: /api/js/ejpivotgrid
 ---
 
 # ejPivotGrid

@@ -5,6 +5,7 @@ description: OLAP Connection Types
 platform: js
 control: PivotGauge
 documentation: ug
+api: /api/js/ejpivotgauge
 ---
 
 # DataBinding 

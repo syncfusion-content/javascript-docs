@@ -5,6 +5,7 @@ description: labels
 platform: js
 control: PivotGauge
 documentation: ug
+api: /api/js/ejpivotgauge
 ---
 
 # Labels

@@ -5,6 +5,7 @@ description: getting started
 platform: js
 control: PivotTreeMap
 documentation: ug
+api: /api/js/ejpivottreemap
 ---
 
 # Getting Started

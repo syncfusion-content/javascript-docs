@@ -5,6 +5,7 @@ description: frame type
 platform: js
 control: PivotGauge
 documentation: ug
+api: /api/js/ejpivotgauge
 ---
 
 # Frame Type

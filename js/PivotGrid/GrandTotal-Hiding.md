@@ -5,6 +5,7 @@ description: GrandTotal Hiding
 platform: js
 control: PivotGrid
 documentation: ug
+api: /api/js/ejpivotgrid
 ---
 
 # Grand Total Hiding

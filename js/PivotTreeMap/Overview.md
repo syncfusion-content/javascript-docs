@@ -5,6 +5,7 @@ description: overview
 platform: js
 control: PivotTreeMap
 documentation: ug
+api: /api/js/ejpivottreemap
 ---
 
 # Overview

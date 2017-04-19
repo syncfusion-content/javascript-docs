@@ -5,6 +5,7 @@ description:  Write-back
 platform: js
 control: PivotGrid
 documentation: ug
+api: /api/js/ejpivotgrid
 ---
 
 # Write-back

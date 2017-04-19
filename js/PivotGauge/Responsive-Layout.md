@@ -5,6 +5,7 @@ description: responsive layout
 platform: js
 control: PivotGauge
 documentation: ug
+api: /api/js/ejpivotgauge
 ---
 
 # Responsive Layout
