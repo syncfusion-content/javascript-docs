@@ -5,6 +5,7 @@ description: overview
 platform: js
 control: Radial Menu
 documentation: ug
+api: /api/js/ejradialmenu
 ---
 
 # Overview

@@ -5,6 +5,7 @@ description: appearance and styling
 platform: js
 control: RadialSlider
 documentation: ug
+api: /api/js/ejradialslider
 ---
 
 # Appearance and Styling

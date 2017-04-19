@@ -5,6 +5,7 @@ description: rtl support
 platform: js
 control: ProgressBar
 documentation: ug
+api: /api/js/ejprogressbar
 ---
 
 # RTL Support

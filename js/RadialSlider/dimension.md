@@ -5,6 +5,7 @@ description: width
 platform: js
 control: Radial Slider
 documentation: ug
+api: /api/js/ejradialslider
 ---
 
 # Dimension 

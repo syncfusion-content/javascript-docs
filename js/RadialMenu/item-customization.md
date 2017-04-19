@@ -5,6 +5,7 @@ description: item customization
 platform: js
 control: Radial Menu
 documentation: ug
+api: /api/js/ejradialmenu
 ---
 
 ## Item Customization

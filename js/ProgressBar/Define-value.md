@@ -5,6 +5,7 @@ description: define value
 platform: js
 control: ProgressBar
 documentation: ug
+api: /api/js/ejprogressbar
 ---
 
 # Define value

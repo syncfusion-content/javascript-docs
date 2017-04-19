@@ -5,6 +5,7 @@ description: Animation
 platform: js
 control: Radial slider
 documentation: ug
+api: /api/js/ejradialslider
 ---
 
 ## Animation Effect

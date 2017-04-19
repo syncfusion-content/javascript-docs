@@ -5,6 +5,7 @@ description: appearance and styling
 platform: js
 control: ProgressBar
 documentation: ug
+api: /api/js/ejprogressbar
 ---
 
 # Appearance and Styling

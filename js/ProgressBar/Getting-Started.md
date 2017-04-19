@@ -5,6 +5,7 @@ description: getting started
 platform: js
 control: ProgressBar
 documentation: ug
+api: /api/js/ejprogressbar
 ---
 
 # Getting Started

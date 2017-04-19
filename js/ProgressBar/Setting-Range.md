@@ -5,6 +5,7 @@ description: setting range
 platform: js
 control: ProgressBar
 documentation: ug
+api: /api/js/ejprogressbar
 ---
 
 # Setting Range
