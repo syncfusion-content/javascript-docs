@@ -5,6 +5,7 @@ description: How to persist grid state across page refresh
 platform: js
 control: Grid
 documentation: ug
+api: /api/js/ejgrid
 ---
 # State Persistence 
 

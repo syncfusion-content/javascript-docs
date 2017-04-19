@@ -5,6 +5,7 @@ description: Tooltip
 platform: Js
 control: Gantt
 documentation: Ug
+api: /api/js/ejgantt
 ---
 # Tooltip
 

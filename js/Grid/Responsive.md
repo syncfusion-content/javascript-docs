@@ -5,6 +5,7 @@ description: How to set the grid, responsive to screen resolutions
 platform: js
 control: Grid
 documentation: ug
+api: /api/js/ejgrid
 ---
 # Responsive
 

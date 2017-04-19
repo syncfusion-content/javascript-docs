@@ -5,6 +5,7 @@ description: Context Menu support in FileExplorer.
 platform: js
 control: FileExplorer
 documentation: ug
+api: /api/js/ejfileexplorer
 ---
 
 # Context Menu
@@ -25,17 +26,17 @@ Screenshot</th></tr>
 <td>
 While right click on treeview nodes (from navigation pane)<br/><br/></td><td>
 * New folder<br/>* Upload<br/>* Delete<br/>* Rename<br/>* Cut<br/>* Copy<br/>* Paste<br/><br/><br/><br/></td><td>
-<br/><br/><br/><br/></td></tr>
+<br/><br/><br/><br/></td></tr>
 <tr>
 <td>
 While right click on File / Folder<br/><br/></td><td>
 * Open<br/>* Download<br/>* Upload<br/>* Delete<br/>* Rename<br/>* Cut<br/>* Copy<br/>* Paste<br/>* Get info<br/><br/><br/><br/></td><td>
-<br/><br/><br/><br/></td></tr>
+<br/><br/><br/><br/></td></tr>
 <tr>
 <td>
 While right click on layout (content pane)<br/><br/></td><td>
 * Refresh<br/>* Paste<br/>* Sort By<br/>* New folder<br/>* Upload <br/>* Get info <br/><br/><br/><br/></td><td>
-<br/><br/><br/><br/></td></tr>
+<br/><br/><br/><br/></td></tr>
 </table>
 The below table explains the behavior of each context menu item:
 

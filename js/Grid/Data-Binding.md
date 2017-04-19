@@ -5,6 +5,7 @@ description: How to bind in-memory JSON and remote web services in Grid
 platform: js
 control: Grid
 documentation: ug
+api: /api/js/ejgrid
 --- 
 # Data binding
 

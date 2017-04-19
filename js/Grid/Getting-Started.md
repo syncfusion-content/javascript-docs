@@ -5,6 +5,7 @@ description: How to create the Grid, data bind, enable paging, grouping, filteri
 platform: JS
 control: Grid
 documentation: ug
+api: /api/js/ejgrid
 ---
 # Getting started
 

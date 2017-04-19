@@ -5,6 +5,7 @@ description: How to use and customize the grid row
 platform: js
 control: Grid
 documentation: ug
+api: /api/js/ejgrid
 --- 
 # Row
 

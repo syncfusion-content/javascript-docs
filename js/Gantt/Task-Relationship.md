@@ -5,6 +5,7 @@ description: task relationship
 platform: js
 control: Gantt
 documentation: ug
+api: /api/js/ejgantt
 ---
 
 # Task Relationship

@@ -5,6 +5,7 @@ description: validating schedule dates
 platform: js
 control: Gantt
 documentation: ug
+api: /api/js/ejgantt
 ---
 
 # Validating Schedule Dates

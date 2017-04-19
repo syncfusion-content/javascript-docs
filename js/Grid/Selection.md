@@ -5,6 +5,7 @@ description: How to enable selection and its functionalities
 platform: js
 control: Grid
 documentation: ug
+api: /api/js/ejgrid
 --- 
 # Selection
 
