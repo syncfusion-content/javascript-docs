@@ -5,6 +5,7 @@ description: enable or disable the uploadbox
 platform: js
 control: Uploadbox
 documentation: ug
+api: /js/ejuploadbox
 ---
 
 # Enables or Disables the Uploadbox 

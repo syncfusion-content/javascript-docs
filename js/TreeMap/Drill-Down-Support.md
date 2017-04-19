@@ -5,6 +5,7 @@ description: drill down support
 platform: js
 control: TreeMap
 documentation: ug
+api: /api/js/ejtreemap
 ---
 
 # Drill Down Support

@@ -5,6 +5,7 @@ description: drag and drop
 platform: js
 control: TreeView
 documentation: ug
+api: /api/js/ejtreeview
 ---
 
 # Drag and drop 

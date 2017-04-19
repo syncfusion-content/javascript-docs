@@ -5,6 +5,7 @@ description: scale settings
 platform: js
 control: Slider
 documentation: ug
+api: /api/js/ejslider
 ---
 
 # Scale Settings

@@ -5,6 +5,7 @@ description: appearance and styling
 platform: js
 control: TreeGrid
 documentation: ug
+api: /api/js/ejtreegrid
 ---
 
 # Appearance and Styling

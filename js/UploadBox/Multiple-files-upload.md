@@ -5,6 +5,7 @@ description: multiple files upload
 platform: js
 control: Uploadbox
 documentation: ug
+api: /js/ejuploadbox
 ---
 
 # Multiple files upload

@@ -5,6 +5,7 @@ description: keyboard navigation
 platform: js
 control: Toolbar
 documentation: ug
+api: /api/js/ejtoolbar
 ---
 
 # Keyboard Navigation

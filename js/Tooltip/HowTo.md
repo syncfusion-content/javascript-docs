@@ -6,6 +6,7 @@ platform: JS
 control: Tooltip
 documentation: ug
 keywords : ejTooltip, Tooltip, js Tooltip, Tooltip widget
+api: /api/js/ejtooltip
 ---
 
 # How To

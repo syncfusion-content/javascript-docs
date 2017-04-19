@@ -4,7 +4,8 @@ description: Handling multiple resources in Scheduler
 platform: js
 control: schedule
 documentation: ug
-keywords: resource, resources, multiple resources, grouping 
+keywords: resource, resources, multiple resources, grouping
+api: /api/js/ejschedule 
 ---
 # Resources
 

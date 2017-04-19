@@ -4,7 +4,8 @@ description: Globalizing and localizing Scheduler
 platform: js
 control: schedule
 documentation: ug
-keywords: globalize, localize, localization, globalization 
+keywords: globalize, localize, localization, globalization
+api: /api/js/ejschedule 
 ---
 # Globalization and Localization
 

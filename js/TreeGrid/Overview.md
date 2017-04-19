@@ -5,6 +5,7 @@ description: overview
 platform: js
 control: TreeGrid
 documentation: ug
+api: /api/js/ejtreegrid
 ---
 
 # Overview

@@ -5,6 +5,7 @@ description: appearance and styling
 platform: js
 control: Toolbar
 documentation: ug
+api: /api/js/ejtoolbar
 ---
 
 # Appearance and Styling 

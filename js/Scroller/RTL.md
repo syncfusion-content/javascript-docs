@@ -5,6 +5,7 @@ description: rtl
 platform: js
 control: Scroller
 documentation: ug
+api: /api/js/ejscroller
 ---
 
 # RTL

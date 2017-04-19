@@ -5,6 +5,7 @@ description: synchronous upload
 platform: js
 control: Uploadbox
 documentation: ug
+api: /js/ejuploadbox
 ---
 
 # Synchronous Upload 

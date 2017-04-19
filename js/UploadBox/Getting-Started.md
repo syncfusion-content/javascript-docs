@@ -5,6 +5,7 @@ description: getting started
 platform: js
 control: Uploadbox
 documentation: ug
+api: /js/ejuploadbox
 ---
 
 # Getting Started

@@ -4,7 +4,8 @@ description: Display Scheduler with responsiveness
 platform: js
 control: schedule
 documentation: ug
-keywords: responsive, responsiveness, auto size 
+keywords: responsive, responsiveness, auto size
+api: /api/js/ejschedule 
 ---
 # Responsiveness
 

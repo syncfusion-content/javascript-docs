@@ -5,6 +5,7 @@ platform: js
 control: Recurrence Editor
 documentation: ug
 keywords: recurrence editor, recurrence widget, ejRecurrenceEditor, js recurrence editor
+api: /api/js/ejschedule
 ---
 # Recurrence Editor
 

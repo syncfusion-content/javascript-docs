@@ -4,7 +4,8 @@ description: Setting dimension for Schedule control
 platform: js
 control: schedule
 documentation: ug
-keywords: dimension, cell dimension, cell width, cell height 
+keywords: dimension, cell dimension, cell width, cell height
+api: /api/js/ejschedule 
 ---
 # Setting Dimension
 

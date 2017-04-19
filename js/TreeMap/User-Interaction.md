@@ -5,6 +5,7 @@ description: user interaction
 platform: js
 control: TreeMap
 documentation: ug
+api: /api/js/ejtreemap
 ---
 
 # User Interaction

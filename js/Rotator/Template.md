@@ -5,6 +5,7 @@ description: template
 platform: js
 control: Rotator
 documentation: ug
+api: /api/js/ejrotator
 ---
 
 # Template 

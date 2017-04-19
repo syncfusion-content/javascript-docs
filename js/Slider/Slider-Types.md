@@ -5,6 +5,7 @@ description: slider types
 platform: js
 control: Slider
 documentation: ug
+api: /api/js/ejslider
 ---
 
 # Slider Types

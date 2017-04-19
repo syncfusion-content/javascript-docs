@@ -4,7 +4,8 @@ description: Rendering a basic Scheduler with remote data
 platform: js
 control: schedule
 documentation: ug
-keywords: ejschedule, schedule, schedule widget, js schedule 
+keywords: ejschedule, schedule, schedule widget, js schedule
+api: /api/js/ejschedule 
 ---
 # Getting Started
 

@@ -4,7 +4,8 @@ description: Schedule Introduction
 platform: js
 control: schedule
 documentation: ug
-keywords: overview 
+keywords: overview
+api: /api/js/ejschedule 
 ---
 # Overview
 

@@ -5,6 +5,7 @@ description: behavior settings
 platform: js
 control: Toolbar
 documentation: ug
+api: /api/js/ejtoolbar
 ---
 
 # Behavior settings

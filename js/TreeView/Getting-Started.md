@@ -5,6 +5,7 @@ description: getting started
 platform: js
 control: TreeView
 documentation: ug
+api: /api/js/ejtreeview
 ---
 
 # Getting Started	

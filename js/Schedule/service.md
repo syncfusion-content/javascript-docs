@@ -6,6 +6,7 @@ control: schedule
 documentation: ug
 platform: js
 keywords: schedule services, schedule exporting services
+api: /api/js/ejschedule
 ---
 # Scheduler Services
 

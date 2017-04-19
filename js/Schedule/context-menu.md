@@ -5,6 +5,7 @@ platform: js
 control: schedule
 documentation: ug
 keywords: context-menu
+api: /api/js/ejschedule
 ---
 # Context Menu
 
