@@ -5,6 +5,7 @@ description: miscellaneous
 platform: js
 control: RadioButton
 documentation: ug
+api: /api/js/ejradiobutton
 ---
 
 # Miscellaneous

@@ -5,6 +5,7 @@ description: Appearance And Styling
 platform: js
 control: RangeNavigator
 documentation: ug
+api: /api/js/ejrangenavigator
 ---
 
 ### Appearance and Styling

@@ -5,6 +5,7 @@ description: easy customization
 platform: js
 control: RadioButton
 documentation: ug
+api: /api/js/ejradiobutton
 ---
 
 # Easy Customization

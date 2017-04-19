@@ -5,6 +5,7 @@ description: overview
 platform: js
 control: Rating
 documentation: ug
+api: /api/js/ejrating
 ---
 
 # Overview

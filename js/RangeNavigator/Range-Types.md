@@ -5,6 +5,7 @@ description: Range Types
 platform: js
 control: RangeNavigator
 documentation: ug
+api: /api/js/ejrangenavigator
 ---
 
 ### Range Types

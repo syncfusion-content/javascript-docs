@@ -5,6 +5,7 @@ description: How to enable and cutomize the scrollbar, selection and highlightin
 platform: js
 control: RangeNavigator
 documentation: ug
+api: /api/js/ejrangenavigator
 ---
 
 # User Interactions

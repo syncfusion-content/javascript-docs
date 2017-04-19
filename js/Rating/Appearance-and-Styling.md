@@ -5,6 +5,7 @@ description: appearance and styling
 platform: js
 control: Rating
 documentation: ug
+api: /api/js/ejrating
 ---
 
 # Appearance and Styling
