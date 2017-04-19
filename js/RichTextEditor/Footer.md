@@ -6,6 +6,7 @@ platform: js
 control: RTE
 documentation: ug
 keywords: RichTextEditor, Footer, Clear Format, Re-sizer, HTML Tag info, Characters Count, Word Count
+api: /api/js/ejrte
 ---
 
 # Footer

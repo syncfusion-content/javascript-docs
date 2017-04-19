@@ -6,6 +6,7 @@ platform: js
 control: RTE
 documentation: ug
 keywords: RichTextEditor, Keyboard Support
+api: /api/js/ejrte
 ---
 # Keyboard Support
 

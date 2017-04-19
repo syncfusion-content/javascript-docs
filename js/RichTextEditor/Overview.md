@@ -5,7 +5,7 @@ description: Overview for the RichTextEditor
 platform: js
 control: RTE
 documentation: ug
-
+api: /api/js/ejrte
 ---
 # Overview
 

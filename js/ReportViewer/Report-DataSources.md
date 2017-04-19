@@ -5,6 +5,7 @@ description: report datasources
 platform: js
 control: ReportViewer
 documentation: ug
+api: /api/js/ejreportviewer
 ---
 
 # Report DataSources

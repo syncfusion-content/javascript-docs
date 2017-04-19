@@ -5,6 +5,7 @@ description: group
 documentation: ug
 platform: js
 keywords: group,ribbon group
+api: /api/js/ejribbon
 ---
 
 # Group

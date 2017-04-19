@@ -5,6 +5,7 @@ description: get ribbon object
 documentation: ug
 platform: js
 keywords: get ribbon object,ribbon get ribbon object
+api: /api/js/ejribbon
 ---
 
 # How to

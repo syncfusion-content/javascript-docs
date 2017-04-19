@@ -5,6 +5,7 @@ description: appearance and styling
 documentation: ug
 platform: js
 keywords: appearance and styling,ribbon appearance and styling
+api: /api/js/ejribbon
 ---
 
 # Appearance and Styling

@@ -5,6 +5,7 @@ description: onDemand
 documentation: ug
 platform: js
 keywords: onDemand
+api: /api/js/ejribbon
 ---
 
 # Load on Demand

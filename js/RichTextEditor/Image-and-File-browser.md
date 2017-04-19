@@ -6,7 +6,7 @@ platform: js
 control: RTE
 documentation: ug
 keywords: RichTextEditor, File browser, Image, Image Browser
-
+api: /api/js/ejrte
 ---
 
 # Image and File browser

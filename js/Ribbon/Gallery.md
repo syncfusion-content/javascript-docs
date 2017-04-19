@@ -5,6 +5,7 @@ description: gallery
 documentation: ug
 platform: js
 keywords: gallery,ribbon gallery
+api: /api/js/ejribbon
 ---
 
 # Gallery
