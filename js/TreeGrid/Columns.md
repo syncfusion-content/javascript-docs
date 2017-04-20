@@ -34,7 +34,8 @@ The following example shows how to specify the numeric format string to display 
 
 {% endhighlight %}
 
-Note: For more numeric format strings, please refer this [link](https://msdn.microsoft.com/library/dwhawy9k(v=vs.100).aspx).
+N>
+For more numeric format strings, please refer this [link](https://msdn.microsoft.com/library/dwhawy9k(v=vs.100).aspx).
 
 For more date format strings, please refer this [link](https://msdn.microsoft.com/library/az4se3k1(v=vs.100).aspx).
 
@@ -179,6 +180,32 @@ You can resize the column width to view the hidden text of the cell. This featur
 
 {% endhighlight %}
 
+## Checkbox column 
+
+It is possible to display a column as checkbox column in TreeGrid by enabling `columns.displayAsCheckbox` property and by setting `editType` property as `Boolean` for the column .  If the `columns.displayAsCheckbox` property is set as false, then the column will be displayed as string column with the value mapped from the data source.
+The following code snippet explains how to display a checkbox column in TreeGrid
+
+{% highlight js %}
+
+   $("#TreeGridContainer").ejTreeGrid({
+    //...
+    columns: [
+        //...
+        {
+            field: "approved",
+            headerText: "Approved",
+            editType: "booleanedit",
+            displayAsCheckbox: true
+        }
+    ],
+});
+
+{% endhighlight %}
+
+The below screen shot depicts the `Approved` column in TreeGrid displayed as a checkbox column
+
+![](/js/TreeGrid/Columns_images/Columns_img8.png)
+
 ## Column Template
 
 Columns can be customized either by using JsRender templates or by AngularJS templates,
@@ -295,7 +322,8 @@ Following code example explains how to hide the fourth column,
 
 A column can be made read-only by setting the **columns.allowEditing** property as false,
 
-Note: By setting columns.allowEditing as false, that specific column alone is made as read only, and by setting editSettings.allowEditing as false, the entire TreeGrid is made read only.
+N>
+By setting columns.allowEditing as false, that specific column alone is made as read only, and by setting editSettings.allowEditing as false, the entire TreeGrid is made read only.
 
 The below code snippet demonstrates this,
 
@@ -314,3 +342,98 @@ The below code snippet demonstrates this,
     });
 
 {% endhighlight %}
+
+## Validation Rules
+
+At some occasions, we will need to validate the data before updating it to the database. In TreeGrid it is possible to validate the data while performing adding and editing actions. The validation rules must be provided in the column definition. TreeGrid has built-in support for the below validation rules,
+
+* **maxlength** – Makes the value require a given maximum text length.
+* **minlength** – Makes the value require a given minimum text length.
+* **required** – Makes the value required 
+* **number** – Makes the value require a decimal number
+* **range** – Makes the value require a given value range
+
+The below code example explains defining the validation rules for the column.
+
+{% highlight js %}
+
+ $("#TreeGridContainer").ejTreeGrid({
+            //...
+            columns: [{
+                    field: "taskID",
+                    headerText: "Task Id",
+                    validationRules: {
+                        number: true,
+                        required: true
+                    }
+                },
+                {
+                    field: "taskName",
+                    headerText: "Task Name",
+                    allowEditing: false,
+                    validationRules: {
+                        maxlength: 5,
+                        minlength: 2
+                    }
+                },
+                {
+                    field: "progress",
+                    headerText: "Progress",
+                    validationRules: {
+                        range: [0, 100]
+                    }
+                },
+
+                //...
+            ]
+        });
+
+{% endhighlight %}
+
+Custom validation error messages can also be defined in the column object. The below code example explains defining the custom error message. 
+
+{% highlight js %}
+
+        $("#TreeGridContainer").ejTreeGrid({
+            //...
+            columns: [{
+                field: "taskID",
+                headerText: "Task Id",
+                validationRules: {
+                    number: true,
+                    required: true,
+                    messages: {
+                        "required": "This field should not left blank"
+                    }
+                }
+            }, ]
+        });
+
+{% endhighlight %}
+
+### Custom Validation rules
+Apart by the built-in validation rules, any custom validation rules can also be defined for the column. The below code example explains defining custom validation rule for a column.
+
+{% highlight js %}
+
+   // Custom validation rule definition
+   $.validator.addMethod("customCompare", function(value, element, params) {
+       return element.value > params[0] && element.value < params[1]
+   }, "progress value must be between 0 and 100");
+
+
+   $("#TreeGridContainer").ejTreeGrid({
+       //...
+       columns: [{
+           field: "progress",
+           headerText: "Progress",
+           validationRules: {
+               customCompare: [0, 100]
+           }
+       }]
+   })
+
+{% endhighlight %}
+
+The below image displays the TreeGrid with validation rule applied for a date column.
+![](/js/TreeGrid/Columns_images/Columns_img7.png)

@@ -22,7 +22,7 @@ Find the Gantt exporting type below,
 
 ### URL
 
-[http://js.syncfusion.com/ejServices/api/JSGanttExport/ExcelExport](http://js.syncfusion.com/ejServices/api/JSGanttExport/ExcelExport)
+`http://js.syncfusion.com/ejServices/api/JSGanttExport/ExcelExport`
 
 ### Parameter
 
