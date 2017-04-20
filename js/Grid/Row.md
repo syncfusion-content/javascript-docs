@@ -373,3 +373,57 @@ The following output is displayed after dropping the rows on Form.
 
 ![](Row_images/Row_img10.png)
 {:After Drop}
+
+### Copy And Paste
+
+To copy and paste rows between two Grid, enable the Grid property [`allowRowDragAndDrop`](https://help.syncfusion.com/api/js/ejgrid#members:allowrowdraganddrop "allowRowDragAndDrop") and specify the target Grid ID in [`dropTargetID`](https://help.syncfusion.com/api/js/ejgrid#members:rowdropsettings-droptargetid "dropTargetID") property of Grid and specify the drag behaviour in [`dragBehaviour`](https://help.syncfusion.com/api/js/ejgrid#members:rowdropsettings-dragbehaviour "dragBehaviour") property of Grid [`rowDropSettings`](https://help.syncfusion.com/api/js/ejgrid#members:rowdropsettings "rowDropSettings").
+
+The following code example describes the above behavior.
+
+{% highlight html %}
+<div id="Grid" style="float:left;width:49%"></div>
+<div id="DestGrid" style="float:right;width:49%"></div>
+{% endhighlight %}
+
+{% highlight javascript %}
+$(function () {
+                $("#Grid").ejGrid({
+                    // the datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js' 
+                    dataSource: window.gridData,
+                    allowPaging: true,
+                    allowRowDragAndDrop: true,
+                    selectionType: "multiple",
+                    rowDropSettings: { dropTargetID: "#DestGrid" ,dragBehaviour:ej.Grid.DragBehaviour.Copy },
+                    columns: [
+                                  { field: "OrderID", headerText: "Order ID", isPrimaryKey: true, textAlign: ej.TextAlign.Right, width: 80 },
+                                  { field: "CustomerID", headerText: "Customer ID", width: 90 },
+                                  { field: "Freight", headerText: "Freight", textAlign: ej.TextAlign.Right, width: 75, format: "{0:C}" },
+                                  { field: "ShipCountry", headerText: "Ship Country", width: 110 }
+                    ],
+                });
+                $("#DestGrid").ejGrid({
+                    dataSource: [],
+                    allowPaging: true,
+                    allowRowDragAndDrop: true,
+                    rowDropSettings: { dropTargetID: "#Grid" ,dragBehaviour:ej.Grid.DragBehaviour.Copy },
+                    selectionType: "multiple",
+                    columns: [
+                                  { field: "OrderID", headerText: "Order ID", isPrimaryKey: true, textAlign: ej.TextAlign.Right, width: 80 },
+                                  { field: "CustomerID", headerText: "Customer ID", width: 90 },
+                                  { field: "Freight", headerText: "Freight", textAlign: ej.TextAlign.Right, width: 75, format: "{0:C}" },
+                                  { field: "ShipCountry", headerText: "Ship Country", width: 110 }
+                    ],
+                });
+});
+
+{% endhighlight %}
+
+The following output is displayed before dropping Grid rows.
+
+![](Row_images/Row_img11.png)
+{:Before Drop}
+
+The following output is displayed after dropping Grid rows.
+
+![](Row_images/Row_img12.png)
+{:After Drop}
