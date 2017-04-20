@@ -6,6 +6,7 @@ platform: js
 control: RTE
 documentation: ug
 keywords: RichTextEditor, Find and Replace
+api: /api/js/ejrte
 ---
 
 # Find and Replace

@@ -5,6 +5,7 @@ description: drag and drop support
 platform: js
 control: Uploadbox
 documentation: ug
+api: /js/ejuploadbox
 ---
 
 # Drag and Drop Support

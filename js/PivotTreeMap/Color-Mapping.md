@@ -5,6 +5,7 @@ description: color mapping
 platform: js
 control: PivotTreeMap
 documentation: ug
+api: /api/js/ejpivottreemap
 ---
 
 # Color Mapping

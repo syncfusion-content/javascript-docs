@@ -5,6 +5,7 @@ description: orientation
 platform: js
 control: Toolbar
 documentation: ug
+api: /api/js/ejtoolbar
 ---
 
 # Orientation

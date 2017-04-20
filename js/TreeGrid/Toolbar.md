@@ -4,7 +4,8 @@ title: Toolbar
 description: toolbar
 platform: js
 control: TreeGrid
-documentation: ug 
+documentation: ug
+api: /api/js/ejtreegrid
 ---
 # Toolbar
 

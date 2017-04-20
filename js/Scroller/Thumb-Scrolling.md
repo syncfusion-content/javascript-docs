@@ -5,6 +5,7 @@ description: thumb scrolling
 platform: js
 control: Scroller
 documentation: ug
+api: /api/js/ejscroller
 ---
 
 # Thumb Scrolling

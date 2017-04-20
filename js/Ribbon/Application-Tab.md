@@ -5,6 +5,7 @@ description: application tab
 documentation: ug
 platform: js
 keywords: application tab,ribbon application tab
+api: /api/js/ejribbon
 ---
 
 # Application Tab

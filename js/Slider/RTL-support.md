@@ -5,6 +5,7 @@ description: rtl support
 platform: js
 control: Slider
 documentation: ug
+api: /api/js/ejslider
 ---
 
 # RTL support

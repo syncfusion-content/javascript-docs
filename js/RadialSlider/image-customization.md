@@ -5,6 +5,7 @@ description: image customization
 platform: js
 control: Radial Slider
 documentation: ug
+api: /api/js/ejradialslider
 ---
 
 # Image customization

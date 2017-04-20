@@ -5,6 +5,7 @@ description: localization
 platform: js
 control: PivotGauge
 documentation: ug
+api: /api/js/ejpivotgauge
 ---
 
 # Localization

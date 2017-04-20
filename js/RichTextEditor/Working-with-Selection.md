@@ -6,6 +6,7 @@ platform: js
 control: RTE
 documentation: ug
 keywords: RichTextEditor, Selection, Select a Range
+api: /api/js/ejrte
 ---
 # Working with Selection
 

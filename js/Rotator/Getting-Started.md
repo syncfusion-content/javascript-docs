@@ -5,6 +5,7 @@ description: getting started
 platform: js
 control: Rotator
 documentation: ug
+api: /api/js/ejrotator
 ---
 
 # Getting Started

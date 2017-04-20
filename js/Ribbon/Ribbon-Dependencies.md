@@ -5,6 +5,7 @@ description: ribbon dependencies
 platform: js
 control: Ribbon
 documentation: ug
+api: /api/js/ejribbon
 ---
 
 # Ribbon Dependencies

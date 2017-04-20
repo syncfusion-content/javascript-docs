@@ -5,6 +5,7 @@ description: file size
 platform: js
 control: Uploadbox
 documentation: ug
+api: /js/ejuploadbox
 ---
 
 # File Size 

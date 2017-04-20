@@ -5,6 +5,7 @@ description: drill operation
 platform: js
 control: PivotChart
 documentation: ug
+api: /api/js/ejpivottreemap
 ---
 
 # Drill Operation

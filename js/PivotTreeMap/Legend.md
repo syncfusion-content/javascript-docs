@@ -5,6 +5,7 @@ description: legend
 platform: js
 control: PivotTreeMap
 documentation: ug
+api: /api/js/ejpivottreemap
 ---
 
 #Legend

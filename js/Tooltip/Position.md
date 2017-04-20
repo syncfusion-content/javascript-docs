@@ -6,6 +6,7 @@ platform: js
 control: Tooltip
 documentation: ug
 keywords : ejTooltip, Tooltip, js Tooltip, Tooltip widget, Tooltip position, Tooltip collision
+api: /api/js/ejtooltip
 ---
 
 # Position

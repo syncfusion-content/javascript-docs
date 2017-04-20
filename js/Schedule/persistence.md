@@ -4,7 +4,8 @@ description: Persisting Schedule Properties
 platform: js
 control: schedule
 documentation: ug
-keywords: persist, state persist, persistence, state persistence 
+keywords: persist, state persist, persistence, state persistence
+api: /api/js/ejschedule 
 ---
 # Persistence
 

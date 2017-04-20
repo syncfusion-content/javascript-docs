@@ -5,6 +5,7 @@ description: state maintenance
 platform: js
 control: ProgressBar
 documentation: ug
+api: /api/js/ejprogressbar
 ---
 
 # State Maintenance

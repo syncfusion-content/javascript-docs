@@ -5,6 +5,7 @@ description: tab
 documentation: ug
 platform: js
 keywords: ribbon tab
+api: /api/js/ejribbon
 ---
 
 # Tab

@@ -5,6 +5,7 @@ description: keyboard interaction
 platform: js
 control: Rotator
 documentation: ug
+api: /api/js/ejrotator
 ---
 
 # Keyboard interaction

@@ -5,6 +5,7 @@ platform: js
 control: ejReportViewer
 documentation: api
 keywords: ejReportViewer, Services, Essential JS ReportViewer, ReportViewer
+api: /api/js/ejreportviewer
 ---
 ## ReportViewer services
 

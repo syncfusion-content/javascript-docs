@@ -5,6 +5,7 @@ description: data binding
 platform: js
 control: Toolbar
 documentation: ug
+api: /api/js/ejtoolbar
 ---
 
 # Data binding

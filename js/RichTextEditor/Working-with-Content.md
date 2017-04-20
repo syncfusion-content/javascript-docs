@@ -6,7 +6,7 @@ platform: js
 control: RTE
 documentation: ug
 keywords: RichTextEditor, IFrame Attributes, Editing and Formatting 
-
+api: /api/js/ejrte
 ---
 # Working with Content
 

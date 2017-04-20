@@ -5,6 +5,7 @@ description: events
 platform: js
 control: ReportViewer
 documentation: ug
+api: /api/js/ejreportviewer
 ---
 
 # Events

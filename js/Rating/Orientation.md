@@ -5,6 +5,7 @@ description: orientation
 platform: js
 control: Rating
 documentation: ug
+api: /api/js/ejrating
 ---
 
 # Orientation

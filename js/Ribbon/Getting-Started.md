@@ -5,6 +5,7 @@ description: Getting-Started
 documentation: ug
 platform: js
 keywords: getting started,ribbon getting started
+api: /api/js/ejribbon
 ---
 
 # Getting Started

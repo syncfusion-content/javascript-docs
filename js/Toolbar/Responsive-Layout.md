@@ -5,6 +5,7 @@ description: responsive layout
 platform: js
 control: Toolbar
 documentation: ug
+api: /api/js/ejtoolbar
 ---
 
 # Responsive Layout

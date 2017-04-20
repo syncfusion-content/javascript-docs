@@ -4,7 +4,8 @@ description: Custom Configuration with Schedule control
 platform: js
 control: schedule
 documentation: ug
-keywords: validation and customization of appointment window fields, highlight different work-hours, Appointment filters 
+keywords: validation and customization of appointment window fields, highlight different work-hours, Appointment filters
+api: /api/js/ejschedule 
 ---
 # How To
 

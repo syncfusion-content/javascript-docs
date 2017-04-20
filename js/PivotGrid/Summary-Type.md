@@ -5,6 +5,7 @@ description: summary type
 platform: js
 control: PivotGrid
 documentation: ug
+api: /api/js/ejpivotgrid
 ---
 
 # Summary Type

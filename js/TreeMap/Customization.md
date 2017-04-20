@@ -5,6 +5,7 @@ description: customization
 platform: js
 control: TreeMap
 documentation: ug
+api: /api/js/ejtreemap
 ---
 
 # Customization

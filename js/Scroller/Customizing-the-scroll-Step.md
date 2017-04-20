@@ -5,6 +5,7 @@ description: customizing the scroll step
 platform: js
 control: Scroller
 documentation: ug
+api: /api/js/ejscroller
 ---
 
 # Customizing the scroll Step

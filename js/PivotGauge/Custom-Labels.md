@@ -5,6 +5,7 @@ description: custom labels
 platform: js
 control: PivotGauge
 documentation: ug
+api: /api/js/ejpivotgauge
 ---
 
 # Custom labels

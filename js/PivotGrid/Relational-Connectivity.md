@@ -5,6 +5,7 @@ description: Relational Connection Types
 platform: js
 control: PivotGrid
 documentation: ug
+api: /api/js/ejpivotgrid
 ---
 
 # DataBinding 

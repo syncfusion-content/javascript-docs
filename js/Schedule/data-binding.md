@@ -4,7 +4,8 @@ description: Binding local and remote data to Scheduler
 platform: js
 control: schedule
 documentation: ug
-keywords: data binding, local data, remote data 
+keywords: data binding, local data, remote data
+api: /api/js/ejschedule 
 ---
 # Data Binding
 

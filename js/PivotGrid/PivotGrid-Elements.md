@@ -5,6 +5,7 @@ description: pivotGrid elements
 platform: js
 control: PivotGrid
 documentation: ug
+api: /api/js/ejpivotgrid
 ---
 
 # PivotGrid: Elements

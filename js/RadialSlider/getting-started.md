@@ -5,6 +5,7 @@ description: getting started
 platform: js
 control: Radial Slider
 documentation: ug
+api: /api/js/ejradialslider
 ---
 
 # Getting Started

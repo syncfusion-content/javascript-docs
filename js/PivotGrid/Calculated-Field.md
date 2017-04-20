@@ -5,6 +5,7 @@ description: calculated field
 platform: js
 control: PivotGrid
 documentation: ug
+api: /api/js/ejpivotgrid
 ---
 
 # Calculated Field

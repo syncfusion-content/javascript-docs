@@ -5,6 +5,7 @@ description: template support
 platform: js
 control: Toolbar
 documentation: ug
+api: /api/js/ejtoolbar
 ---
 
 # Template Support

@@ -5,6 +5,7 @@ description: getting started
 platform: js
 control: Slider
 documentation: ug
+api: /api/js/ejslider
 ---
 
 # Getting Started 

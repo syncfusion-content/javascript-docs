@@ -6,6 +6,7 @@ platform: js
 control: RTE
 documentation: ug
 keywords: RichTextEditor, XHTML Validation
+api: /api/js/ejrte
 ---
 # XHTML Validation
 

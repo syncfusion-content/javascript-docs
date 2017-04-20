@@ -5,6 +5,7 @@ description: tree node
 platform: js
 control: TreeView
 documentation: ug
+api: /api/js/ejtreeview
 ---
 
 

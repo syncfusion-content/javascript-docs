@@ -5,6 +5,7 @@ description: overview
 platform: js
 control: Uploadbox
 documentation: ug
+api: /js/ejuploadbox
 ---
 
 # Overview

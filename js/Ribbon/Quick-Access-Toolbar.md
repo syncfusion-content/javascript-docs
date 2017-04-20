@@ -5,6 +5,7 @@ description: quick access toolbar
 documentation: ug
 platform: js
 keywords: quick access toolbar,ribbon quick access toolbar
+api: /api/js/ejribbon
 ---
 
 # Quick Access Toolbar

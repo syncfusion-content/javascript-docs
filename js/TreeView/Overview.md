@@ -5,6 +5,7 @@ description: overview
 platform: js
 control: TreeView
 documentation: ug
+api: /api/js/ejtreeview
 ---
 
 

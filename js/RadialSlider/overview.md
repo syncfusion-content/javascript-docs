@@ -5,6 +5,7 @@ description: overview
 platform: js
 control: Radial Slider
 documentation: ug
+api: /api/js/ejradialslider
 ---
 
 # Overview

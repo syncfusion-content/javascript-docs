@@ -5,6 +5,7 @@ description: appearance and styling
 platform: js
 control: Slider
 documentation: ug
+api: /api/js/ejslider
 ---
 
 # Appearance and Styling	

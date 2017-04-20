@@ -5,6 +5,7 @@ description: restricting uploading files based on its extension
 platform: js
 control: Uploadbox
 documentation: ug
+api: /js/ejuploadbox
 ---
 
 # Restricting uploading files based on its extension

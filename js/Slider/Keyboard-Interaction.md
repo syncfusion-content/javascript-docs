@@ -5,6 +5,7 @@ description: keyboard interaction
 platform: js
 control: Slider
 documentation: ug
+api: /api/js/ejslider
 ---
 
 # Keyboard Interaction

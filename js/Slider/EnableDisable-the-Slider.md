@@ -5,6 +5,7 @@ description: enable/disable the slider
 platform: js
 control: Slider
 documentation: ug
+api: /api/js/ejslider
 ---
 
 # Enable/Disable the Slider

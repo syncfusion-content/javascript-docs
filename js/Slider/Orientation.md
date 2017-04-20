@@ -5,6 +5,7 @@ description: orientation
 platform: js
 control: Slider
 documentation: ug
+api: /api/js/ejslider
 ---
 
 # Orientation

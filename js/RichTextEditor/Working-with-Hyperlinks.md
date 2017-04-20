@@ -6,7 +6,7 @@ platform: js
 control: RTE
 documentation: ug
 keywords: RichTextEditor, Hyperlinks, Add/Edit a hyperlink
-
+api: /api/js/ejrte
 ---
 # Working with Hyperlinks
 

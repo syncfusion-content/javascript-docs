@@ -5,6 +5,7 @@ description: save and load report
 platform: js
 control: PivotGrid
 documentation: ug
+api: /api/js/ejpivotgrid
 ---
 
 # Save and Load Report

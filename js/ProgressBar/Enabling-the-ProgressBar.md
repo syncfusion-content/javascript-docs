@@ -5,6 +5,7 @@ description: enabling the progressbar
 platform: js
 control: ProgressBar
 documentation: ug
+api: /api/js/ejprogressbar
 ---
 
 # Enabling the ProgressBar

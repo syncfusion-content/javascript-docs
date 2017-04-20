@@ -5,6 +5,7 @@ description: How to use globalization and localization
 platform: js
 control: Ribbon
 documentation: ug
+api: /api/js/ejribbon
 ---
 # Globalization and Localization
 

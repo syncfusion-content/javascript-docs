@@ -5,6 +5,7 @@ description: State Persistence
 platform: js
 control: TreeView
 documentation: ug
+api: /api/js/ejtreeview
 ---
 
 # State Persistence

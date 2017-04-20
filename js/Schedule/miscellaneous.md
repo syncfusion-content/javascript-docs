@@ -4,7 +4,8 @@ description: Show or hide time indicator, all day row, header, timescale
 platform: js
 control: schedule
 documentation: ug
-keywords: time indicator, all day, header, timescale 
+keywords: time indicator, all day, header, timescale
+api: /api/js/ejschedule 
 ---
 # Miscellaneous
 

@@ -4,7 +4,8 @@ description: Customize Scheduler with various available template options
 platform: js
 control: schedule
 documentation: ug
-keywords: appointment template, template, cell template, resource header 
+keywords: appointment template, template, cell template, resource header
+api: /api/js/ejschedule 
 ---
 # Template
 

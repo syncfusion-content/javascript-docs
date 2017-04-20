@@ -6,6 +6,7 @@ platform: js
 control: RTE
 documentation: ug
 keywords: RichTextEditor, Context Menu, Adding Items, Removing Items
+api: /api/js/ejrte
 ---
 
 # How To

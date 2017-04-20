@@ -5,6 +5,7 @@ description: getting started
 platform: js
 control: TreeMap
 documentation: ug
+api: /api/js/ejtreemap
 ---
 
 # Getting Started

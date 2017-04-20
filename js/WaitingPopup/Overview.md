@@ -5,6 +5,7 @@ description: overview
 platform: js
 control: WaitingPopup
 documentation: ug
+api: /api/js/ejwaitingpopup
 ---
 
 # Overview

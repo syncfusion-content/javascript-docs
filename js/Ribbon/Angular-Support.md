@@ -5,6 +5,7 @@ description: angular-support
 documentation: ug
 platform: js
 keywords: angular support,ribbon angular support
+api: /api/js/ejribbon
 ---
 
 # AngularJS Support 

@@ -5,6 +5,7 @@ description: controls support
 documentation: ug
 platform: js
 keywords: controls support,ribbon controls support
+api: /api/js/ejribbon
 ---
 
 # Controls Support

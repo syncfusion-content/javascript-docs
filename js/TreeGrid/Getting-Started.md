@@ -5,6 +5,7 @@ description: getting started
 platform: js
 control: TreeGrid
 documentation: ug
+api: /api/js/ejtreegrid
 ---
 
 # Getting Started
