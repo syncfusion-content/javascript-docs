@@ -5,6 +5,7 @@ description: overview
 platform: js
 control: ProgressBar
 documentation: ug
+api: /api/js/ejprogressbar
 ---
 
 # Overview

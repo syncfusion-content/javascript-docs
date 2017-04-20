@@ -5,6 +5,7 @@ description: scale
 platform: js
 control: PivotGauge
 documentation: ug
+api: /api/js/ejpivotgauge
 ---
 
 # Scale

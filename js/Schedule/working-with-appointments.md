@@ -4,7 +4,8 @@ description: Working with Scheduler appointments and its related options like Re
 platform: js
 control: schedule
 documentation: ug
-keywords: appointments, recurrence, recurring appointment, resize, drag and drop, search, categorize, priority, occurrence, reminder, filter and CRUD 
+keywords: appointments, recurrence, recurring appointment, resize, drag and drop, search, categorize, priority, occurrence, reminder, filter and CRUD
+api: /api/js/ejschedule 
 ---
 
 # Working with Appointments

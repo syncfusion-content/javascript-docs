@@ -5,6 +5,7 @@ description: keyboard interaction
 platform: js
 control: TreeView
 documentation: ug
+api: /api/js/ejtreeview
 ---
 
 

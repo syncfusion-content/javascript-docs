@@ -5,6 +5,7 @@ description: chart types
 platform: js
 control: PivotChart
 documentation: ug
+api: /api/js/ejpivotchart
 ---
 
 # Chart Types

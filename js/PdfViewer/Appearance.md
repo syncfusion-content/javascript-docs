@@ -5,6 +5,7 @@ description: Altering apperance of Syncfusion Essential JS PDF viewer.
 platform: js
 control: PDF viewer
 documentation: ug
+api: /api/js/ejpdfviewer
 ---
 
 ## Appearance

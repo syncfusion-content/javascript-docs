@@ -5,6 +5,7 @@ description: Ribbon Introduction
 documentation: ug
 platform: js
 keywords: overview
+api: /api/js/ejribbon
 ---
 
 # Overview

@@ -5,6 +5,7 @@ description: appearance and styling
 platform: js
 control: WaitingPopup
 documentation: ug
+api: /api/js/ejwaitingpopup
 ---
 
 # Appearance and Styling 

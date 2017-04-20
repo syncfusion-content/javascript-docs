@@ -5,6 +5,7 @@ description: thumbnail
 platform: js
 control: Rotator
 documentation: ug
+api: /api/js/ejrotator
 ---
 
 # Thumbnail 

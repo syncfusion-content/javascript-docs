@@ -5,6 +5,7 @@ description: sorting
 platform: js
 control: TreeGrid
 documentation: ug
+api: /api/js/ejtreegrid
 ---
 
 # Sorting

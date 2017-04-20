@@ -5,6 +5,7 @@ description: data-binding
 platform: js
 control: Rating
 documentation: ug
+api: /api/js/ejrating
 ---
 
 # Data-binding

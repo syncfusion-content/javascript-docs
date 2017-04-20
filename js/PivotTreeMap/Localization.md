@@ -5,6 +5,7 @@ description: localization
 platform: js
 control: PivotTreeMap
 documentation: ug
+api: /api/js/ejpivottreemap
 ---
 
 # Localization

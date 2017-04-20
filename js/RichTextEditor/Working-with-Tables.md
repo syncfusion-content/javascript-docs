@@ -6,6 +6,7 @@ platform: js
 control: RTE
 documentation: ug
 keywords: RichTextEditor, Tables, Insert a Table, Delete a table
+api: /api/js/ejrte
 
 ---
 # Working with Tables

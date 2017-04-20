@@ -5,6 +5,7 @@ description: behavior settings
 platform: js
 control: RadialSlider
 documentation: ug
+api: /api/js/ejradialslider
 ---
 
 # Behavior settings

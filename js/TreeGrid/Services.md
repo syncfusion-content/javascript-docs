@@ -8,6 +8,7 @@ keywords: ejTreeGrid, Services, Essential JS TreeGrid, TreeGrid, Excel Exporting
 metaname: 
 metacontent:
 control: ejTreeGrid
+api: /api/js/ejtreegrid
 ---
 # TreeGrid Exporting services
 

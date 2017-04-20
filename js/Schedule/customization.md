@@ -5,6 +5,7 @@ platform: js
 control: schedule
 documentation: ug
 keywords: customization, work hours, appointment window, display hours, Query cell info
+api: /api/js/ejschedule
 ---
 # Customization
 

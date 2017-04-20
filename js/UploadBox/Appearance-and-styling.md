@@ -5,6 +5,7 @@ description: appearance and styling
 platform: js
 control: Uploadbox
 documentation: ug
+api: /js/ejuploadbox
 ---
 
 # Appearance and styling 

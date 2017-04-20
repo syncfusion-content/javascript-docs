@@ -5,6 +5,7 @@ description: animation
 platform: js
 control: PivotGauge
 documentation: ug
+api: /api/js/ejpivotgauge
 ---
 
 # Animation

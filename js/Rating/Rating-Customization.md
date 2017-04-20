@@ -5,6 +5,7 @@ description: rating customization
 platform: js
 control: Rating
 documentation: ug
+api: /api/js/ejrating
 ---
 
 # Rating Customization

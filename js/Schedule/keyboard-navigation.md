@@ -4,7 +4,8 @@ description: Accessing Scheduler actions through Keyboard shortcuts
 platform: js
 control: schedule
 documentation: ug
-keywords: keyboard, shortcuts 
+keywords: keyboard, shortcuts
+api: /api/js/ejschedule 
 ---
 # Keyboard Navigation
 

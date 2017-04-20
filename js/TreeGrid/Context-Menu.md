@@ -5,6 +5,7 @@ description: context menu
 platform: js
 control: TreeGrid
 documentation: ug
+api: /api/js/ejtreegrid
 ---
 
 # Context Menu

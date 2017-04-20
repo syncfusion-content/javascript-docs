@@ -5,6 +5,7 @@ description: keyboard interaction
 platform: js
 control: PercentageTextBox 
 documentation: ug
+api: /api/js/
 ---
 
 # Keyboard Interaction

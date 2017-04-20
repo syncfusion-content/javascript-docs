@@ -6,6 +6,7 @@ platform: js
 control: RTE
 documentation: ug
 keywords: RichTextEditor, Control Initialization, Setting and Getting Content
+api: /api/js/ejrte
 ---
 # Getting Started
 

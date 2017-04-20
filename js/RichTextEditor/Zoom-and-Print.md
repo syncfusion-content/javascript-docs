@@ -6,6 +6,7 @@ platform: js
 control: RTE
 documentation: ug
 keywords: RichTextEditor, Zoom, Print
+api: /api/js/ejrte
 ---
 # Zoom
 

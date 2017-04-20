@@ -5,6 +5,7 @@ description: getting started
 platform: js
 control: RadioButton
 documentation: ug
+api: /api/js/ejradiobutton
 ---
 
 # Getting Started

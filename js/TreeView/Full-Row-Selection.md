@@ -5,6 +5,7 @@ description: full row selection
 platform: js
 control: TreeView
 documentation: ug
+api: /api/js/ejtreeview
 ---
 
 

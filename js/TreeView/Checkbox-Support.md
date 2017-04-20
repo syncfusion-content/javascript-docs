@@ -5,6 +5,7 @@ description: checkboxes
 platform: js
 control: TreeView
 documentation: ug
+api: /api/js/ejtreeview
 ---
 
 # Checkboxes

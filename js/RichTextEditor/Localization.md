@@ -6,6 +6,7 @@ platform: js
 control: RTE
 documentation: ug
 keywords: RichTextEditor, Localization
+api: /api/js/ejrte
 ---
 # Localization
 

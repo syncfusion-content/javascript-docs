@@ -5,6 +5,7 @@ description: report controller
 platform: js
 control: ReportViewer
 documentation: ug
+api: /api/js/ejreportviewer
 ---
 
 # Report Controller

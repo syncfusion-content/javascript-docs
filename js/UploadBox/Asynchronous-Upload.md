@@ -5,6 +5,7 @@ description: asynchronous upload
 platform: js
 control: Uploadbox
 documentation: ug
+api: /js/ejuploadbox
 ---
 
 # Asynchronous Upload

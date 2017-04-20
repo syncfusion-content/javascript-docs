@@ -5,6 +5,7 @@ description: toggle axis
 platform: js
 control: PivotClient
 documentation: ug
+api: /api/js/ejpivotclient
 ---
 
 # Toggle Axis

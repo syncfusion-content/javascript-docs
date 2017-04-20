@@ -5,6 +5,7 @@ description:  how to
 platform: js
 control: Signature
 documentation: ug
+api: /api/js/ejsignature
 ---
 
 ##  How To

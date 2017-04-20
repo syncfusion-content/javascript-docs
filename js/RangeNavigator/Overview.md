@@ -5,6 +5,7 @@ description: overview
 platform: js
 control: RangeNavigator
 documentation: ug
+api: /api/js/ejrangenavigator
 ---
 
 # Overview

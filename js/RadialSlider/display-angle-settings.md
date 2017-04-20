@@ -5,6 +5,7 @@ description: AngleSupport
 platform: js
 control: Radial Slider
 documentation: ug
+api: /api/js/ejradialslider
 ---
 
 # Display Angle Support

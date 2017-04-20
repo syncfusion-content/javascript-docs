@@ -5,6 +5,7 @@ description: label format
 platform: js
 control: PivotGauge
 documentation: ug
+api: /api/js/ejpivotgauge
 ---
 
 # Label Format

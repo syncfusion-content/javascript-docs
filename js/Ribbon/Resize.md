@@ -5,6 +5,7 @@ description: resize
 documentation: ug
 platform: js
 keywords: resize,ribbon resize,responsive
+api: /api/js/ejribbon
 ---
 
 # Resize 

@@ -5,6 +5,7 @@ description: advanced filtering and sorting
 platform: js
 control: PivotClient
 documentation: ug
+api: /api/js/ejpivotclient
 ---
 
 # Advanced Filtering & Sorting

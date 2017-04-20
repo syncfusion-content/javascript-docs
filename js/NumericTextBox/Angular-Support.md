@@ -5,6 +5,7 @@ description: angular support
 platform: js
 control: NumericTextbox
 documentation: ug
+api: /api/js/
 ---
 
 # AngularJS Support

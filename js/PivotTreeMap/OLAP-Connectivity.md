@@ -5,6 +5,7 @@ description: OLAP Connection Types
 platform: js
 control: PivotTreeMap
 documentation: ug
+api: /api/js/ejpivottreemap
 ---
 
 # DataBinding 

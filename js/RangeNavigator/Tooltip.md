@@ -5,6 +5,7 @@ description: Tooltip
 platform: js
 control: RangeNavigator
 documentation: ug
+api: /api/js/ejrangenavigator
 ---
 
 

@@ -5,6 +5,7 @@ description: OLAP Connection Types
 platform: js
 control: PivotClient
 documentation: ug
+api: /api/js/ejpivotclient
 ---
 
 # DataBinding 

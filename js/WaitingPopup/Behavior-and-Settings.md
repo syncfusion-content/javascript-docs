@@ -5,6 +5,7 @@ description: behavior and settings
 platform: js
 control: WaitingPopup
 documentation: ug
+api: /api/js/ejwaitingpopup
 ---
 
 # Behavior and Settings

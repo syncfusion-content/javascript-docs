@@ -5,6 +5,7 @@ description: olap-getting started
 platform: js
 control: PivotGauge
 documentation: ug
+api: /api/js/ejpivotgauge
 ---
 
 # Getting Started

@@ -5,6 +5,7 @@ description: how to
 platform: js
 control: NumericTextbox
 documentation: ug
+api: /api/js/
 ---
 
 # How To

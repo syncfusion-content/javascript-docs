@@ -5,6 +5,7 @@ description: contextual tab and tab set
 documentation: ug
 platform: js
 keywords: contextual tab and tab set
+api: /api/js/ejribbon
 ---
 
 # Contextual Tabs

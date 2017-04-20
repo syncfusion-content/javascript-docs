@@ -5,6 +5,7 @@ description: overview
 platform: js
 control: Scroller
 documentation: ug
+api: /api/js/ejscroller
 ---
 
 # Overview

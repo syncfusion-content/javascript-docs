@@ -5,6 +5,7 @@ description: appearance and styling
 platform: aspnet
 control: AutoComplete
 documentation: ug
+api: /api/js/ejradialmenu
 ---
 
 # Appearance and Styling

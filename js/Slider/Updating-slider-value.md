@@ -5,6 +5,7 @@ description: updating slider value
 platform: js
 control: Slider
 documentation: ug
+api: /api/js/ejslider
 ---
 
 # Updating slider value

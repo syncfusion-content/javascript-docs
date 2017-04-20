@@ -5,6 +5,7 @@ description: named set
 platform: js
 control: PivotTreeMap
 documentation: ug
+api: /api/js/ejpivottreemap
 ---
 
 # Named Sets

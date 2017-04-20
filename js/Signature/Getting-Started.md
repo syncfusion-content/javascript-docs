@@ -5,6 +5,7 @@ description:  getting started
 platform: js
 control: Signature
 documentation: ug
+api: /api/js/ejsignature
 ---
 
 # Getting Started

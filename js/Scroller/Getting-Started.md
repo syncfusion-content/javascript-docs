@@ -5,6 +5,7 @@ description: getting started
 platform: js
 control: Scroller
 documentation: ug
+api: /api/js/ejscroller
 ---
 
 # Getting Started

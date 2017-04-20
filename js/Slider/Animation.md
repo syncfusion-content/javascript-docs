@@ -5,6 +5,7 @@ description: animation
 platform: js
 control: Slider
 documentation: ug
+api: /api/js/ejslider
 ---
 
 # Animation

@@ -5,6 +5,7 @@ description: Collapse by default
 platform: js
 control: PivotGrid
 documentation: ug
+api: /api/js/ejpivotgrid
 ---
 
 # Collapse by default

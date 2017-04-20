@@ -5,6 +5,7 @@ description: selection
 platform: js
 control: TreeGrid
 documentation: ug
+api: /api/js/ejtreegrid
 ---
 
 # Selection

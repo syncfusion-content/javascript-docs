@@ -6,6 +6,7 @@ platform: js
 control: RTE
 documentation: ug
 keywords: RichTextEditor, Lists, Custom Lists
+api: /api/js/ejrte
 
 ---
 # Working with Lists

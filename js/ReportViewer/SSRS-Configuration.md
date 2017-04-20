@@ -5,6 +5,7 @@ description: ssrs configuration
 platform: js
 control: ReportViewer
 documentation: ug
+api: /api/js/ejreportviewer
 ---
 
 # SSRS Configuration

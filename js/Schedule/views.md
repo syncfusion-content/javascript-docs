@@ -4,7 +4,8 @@ description: View options available in Scheduler
 platform: js
 control: schedule
 documentation: ug
-keywords: day, week, workweek, month, timeline, horizontal, custom  
+keywords: day, week, workweek, month, timeline, horizontal, custom
+api: /api/js/ejschedule  
 ---
 # Views
 

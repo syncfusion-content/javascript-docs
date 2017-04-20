@@ -5,6 +5,7 @@ description: screen tips
 documentation: ug
 platform: js
 keywords: screen tips,ribbon screen tips
+api: /api/js/ejribbon
 ---
 
 # Screen Tips

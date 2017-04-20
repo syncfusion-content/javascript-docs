@@ -5,6 +5,7 @@ description: getting started
 platform: js
 control: Radial Menu
 documentation: ug
+api: /api/js/ejradialmenu
 ---
 
 # Getting Started

@@ -6,6 +6,7 @@ platform: js
 control: RTE
 documentation: ug
 keywords: RichTextEditor, Toolbar Configuration, Custom Tool, Tool items
+api: /api/js/ejrte
 ---
 
 # Toolbar Configuration

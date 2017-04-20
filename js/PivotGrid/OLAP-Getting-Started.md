@@ -5,6 +5,7 @@ description: olap-getting started
 platform: js
 control: PivotGrid
 documentation: ug
+api: /api/js/ejpivotgrid
 ---
 
 # Getting Started

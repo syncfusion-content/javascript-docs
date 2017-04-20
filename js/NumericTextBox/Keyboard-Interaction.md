@@ -5,6 +5,7 @@ description: keyboard interaction
 platform: js
 control: NumericTextbox
 documentation: ug
+api: /api/js/
 ---
 
 # Keyboard Interaction

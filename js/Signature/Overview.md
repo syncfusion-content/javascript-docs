@@ -5,6 +5,7 @@ description: overview
 platform: js
 control: Signature
 documentation: ug
+api: /api/js/ejsignature
 ---
 
 # Overview

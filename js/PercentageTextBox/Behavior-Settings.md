@@ -5,6 +5,7 @@ description: behavior settings
 platform: js
 control: PercentageTextBox 
 documentation: ug
+api: /api/js/
 ---
 
 # Behavior Settings

@@ -5,6 +5,7 @@ description: state persistence
 platform: js
 control: PivotGrid
 documentation: ug
+api: /api/js/ejpivotgrid
 ---
 
 # State persistence

@@ -5,6 +5,7 @@ description: measure groups
 platform: js
 control: PivotClient
 documentation: ug
+api: /api/js/ejpivotclient
 ---
 
 # Measure Groups 

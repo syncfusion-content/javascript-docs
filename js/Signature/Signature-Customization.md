@@ -5,6 +5,7 @@ description:  signature customization
 platform: js
 control: Signature
 documentation: ug
+api: /api/js/ejsignature
 ---
 
 # Signature Customization

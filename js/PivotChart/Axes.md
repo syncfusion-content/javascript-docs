@@ -5,6 +5,7 @@ description: axes
 platform: js
 control: PivotChart
 documentation: ug
+api: /api/js/ejpivotchart
 ---
 
 # Axes 

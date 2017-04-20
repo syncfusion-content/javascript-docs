@@ -4,7 +4,8 @@ description: Navigation between views, appointments, and date
 platform: js
 control: schedule
 documentation: ug
-keywords: view navigation, date navigation, appointment navigation 
+keywords: view navigation, date navigation, appointment navigation
+api: /api/js/ejschedule 
 ---
 # Navigation
 

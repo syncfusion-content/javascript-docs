@@ -5,6 +5,7 @@ description: advance filtering and sorting
 platform: js
 control: PivotGrid
 documentation: ug
+api: /api/js/ejpivotgrid
 ---
 
 # Advanced Filtering & Sorting

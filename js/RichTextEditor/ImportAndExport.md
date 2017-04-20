@@ -6,6 +6,7 @@ platform: js
 control: RTE
 documentation: ug
 keywords: RichTextEditor, server side XHTML Validation, RTE import, RTE export, export to PDF, export to Word
+api: /api/js/ejrte
 ---
 # Import 
 

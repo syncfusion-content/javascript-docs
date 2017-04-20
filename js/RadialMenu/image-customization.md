@@ -5,6 +5,7 @@ description: image customization
 platform: js
 control: Radial Menu
 documentation: ug
+api: /api/js/ejradialmenu
 ---
 
 ## Image Customization

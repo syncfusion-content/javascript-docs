@@ -5,6 +5,7 @@ description: 3d visualization
 platform: js
 control: PivotChart
 documentation: ug
+api: /api/js/ejpivotchart
 ---
 
 # 3D Visualization

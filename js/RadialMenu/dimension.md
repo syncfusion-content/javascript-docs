@@ -5,6 +5,7 @@ description: radius
 platform: js
 control: Radial Menu
 documentation: ug
+api: /api/js/ejradialmenu
 ---
 
 ## Dimension

@@ -5,6 +5,7 @@ description: layout customization
 platform: js
 control: PivotClient
 documentation: ug
+api: /api/js/ejpivotclient
 ---
 
 # Layout Customization
