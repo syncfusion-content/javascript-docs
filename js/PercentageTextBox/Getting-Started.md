@@ -12,7 +12,7 @@ api: /api/js/
 
 This section explains briefly about how to create a **Editors** control in your application with **JavaScript**. From the following steps you can learn how to create and use **PercentageTextBox** in your application. Here we have showcased, a small Electric bill calculator application using **Editors** widgets. The **Essential JavaScript Editors** control includes Numeric, Percentage and Currency textbox controls. You will learn how to use our JS textboxes widgets in the Electric bill calculator Application from the following documentation. This will guide you to use the wide range functionalities of textbox widgets features to complete this application. 
 
-![](/js/PercentageTextBox/Getting-Started_images/Getting-Started_img1.png) 
+![](Getting-Started_images/Getting-Started_img1.png) 
 
 ## Create Textboxes Widgets
 
@@ -47,7 +47,6 @@ Add necessary input elements to render **Textbox widget**.
 {% highlight html %}
 
 
-<div class="ele-icon"></div>
 <div class="ele-txt" style="">Electricity Bill Calculator</div>
 <br />
 <table class="editors">
@@ -125,8 +124,6 @@ Initialize the **Textboxes widget** as shown in the following section.
             $("#cbill").ejButton({
                 width: "100px",
                 height: "30px",
-                contentType: "textandimage",
-                prefixIcon: "e-calender"
             });
         });
 
@@ -135,9 +132,6 @@ Initialize the **Textboxes widget** as shown in the following section.
 
 
 
-You can add the following  **URL** for the background image and to apply styling. 
-
-[http://js.syncfusion.com/UG/Web/Content/electricity.png](http://js.syncfusion.com/UG/Web/Content/electricity.png)
 
 
 
@@ -146,15 +140,6 @@ You can add the following  **URL** for the background image and to apply styling
 
 <style type="text/css" class="cssStyles">
 
-         .ele-icon
-        {
-            display: inline-block;
-            background-image: url(http://js.syncfusion.com/UG/Web/Content/electricity.png);
-            background-repeat: no-repeat;
-            background-size: contain;
-            height: 50px;
-            width: 50px;
-        }
         .ele-txt
         {
             display: inline-block;
@@ -190,7 +175,7 @@ You can add the following  **URL** for the background image and to apply styling
 
 The following screenshot displays the output when the above code is executed. 
 
-![](/js/PercentageTextBox/Getting-Started_images/Getting-Started_img2.png) 
+![](Getting-Started_images/Getting-Started_img2.png) 
 
 
 ## Set the MinValue, MaxValue and value in Textboxes
@@ -234,8 +219,6 @@ You can set the **“MinValue”,** **“MaxValue”** and **“Value”** in Nu
             $("#cbill").ejButton({
                 width: "100px",
                 height: "30px",
-                contentType: "textandimage",
-                prefixIcon: "e-calender"
             });
         });
 
@@ -248,7 +231,7 @@ The following screenshot illustrates the output of the above code examples.
 
 
 
-![](/js/PercentageTextBox/Getting-Started_images/Getting-Started_img3.png) 
+![](Getting-Started_images/Getting-Started_img3.png) 
 
 
 ## Set the Strict Mode Option
@@ -291,8 +274,6 @@ You can set the “**enableStrictMode” option** to restrict entering values de
             $("#cbill").ejButton({
                 width: "100px",
                 height: "30px",
-                contentType: "textandimage",
-                prefixIcon: "e-calender"
             });
         });
 
@@ -319,8 +300,6 @@ You can use events to calculate the total and display the value. You can achieve
                 click: "calculateBill",
                 width: "100px",
                 height: "30px",
-                contentType: "textandimage",
-                prefixIcon: "e-calender"
             });
             umcalc = $("#unitmcalc").data("ejNumericTextbox");// Object of Numeric 
             servtax = $("#servTax").data("ejPercentageTextbox");// Object of Perentage
@@ -344,5 +323,5 @@ You can use events to calculate the total and display the value. You can achieve
 
 Run the above code example, fill the required Textbox fields and click the Calculate button. The values are displayed and an alert message is shown. The following screenshot illustrates the final output of the Electricity bill calculator. 
 
-![](/js/PercentageTextBox/Getting-Started_images/Getting-Started_img4.png) 
+![](Getting-Started_images/Getting-Started_img4.png) 
 
