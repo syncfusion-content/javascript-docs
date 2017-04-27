@@ -17,6 +17,7 @@ TreeGrid provides support for the following filtering modes,
 * Menu
 
 Also, the following filtering types are available in TreeGrid
+
 * String
 * Boolean
 * Date
