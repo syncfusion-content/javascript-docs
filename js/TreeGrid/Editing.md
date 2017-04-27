@@ -18,9 +18,11 @@ TreeGrid provides support to add, edit and delete the records and the folllowing
 * Row Editing
 * Dialog Editing
 
+You can enable editing in TreeGrid by enabling the property `EditSettings.AllowEditing`.
+
 ### Cell Editing
 
-Update the record through editing a cell by setting editMode as cellEditing
+Update the record through editing a cell by setting editMode as `cellEditing`
 
 The following code example shows you how to enable `cellEditing` in TreeGrid control.
 
