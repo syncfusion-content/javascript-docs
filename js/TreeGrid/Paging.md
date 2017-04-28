@@ -10,7 +10,9 @@ api: /api/js/ejtreegrid
 
 # Paging
 
-The TreeGrid control provides support for row and cell selections. 
+The TreeGrid control provides support for displaying records in paginated view. Paging can be enabled in TreeGrid by setting the `allowPaging` property as `true`.
+
+The below code snippet explains enabling paging in TreeGrid.
 
 {% highlight html %}
 <div id="TreeGridContainer"/>

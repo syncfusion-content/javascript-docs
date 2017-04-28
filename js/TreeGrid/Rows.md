@@ -12,7 +12,7 @@ api: /api/js/ejtreegrid
 
 The **TreeGrid** rows displays the information of each row from the bounded data source.
 
-### Row Template
+## Row Template
 
 Row template is used to customize the **TreeGrid** rows based on requirements. In TreeGrid, [`rowTemplateID`](/api/js/ejtreegrid#rowtemplateidspan-classtype-signature-type-stringstringspan "rowTemplateID") and [`altRowTemplateID`](/api/js/ejtreegrid#altrowtemplateidspan-classtype-signature-type-stringstringspan "altRowTemplateID") properties are used for customizing the row.
 
@@ -155,7 +155,7 @@ The output of TreeGrid with **Row Template** is as follows.
 
 ![](/js/TreeGrid/Rows_images/Rows_img1.png)
 
-### Row Drag and Drop
+## Row Drag and Drop
 
 It is possible to dynamically re-arrange the rows in the TreeGrid control by using the [`allowDragAndDrop`](/api/js/ejtreegrid#allowdraganddropspan-classtype-signature-type-booleanbooleanspan "allowDragAndDrop") property. With this property, row drag and drop can be enabled or disabled. Rows can be inserted above, below as a sibling or as a child to the existing row with the help of this feature. A default tooltip is rendered while dragging the TreeGrid row and this tooltip can be customized by the [`dragTooltip`](/api/js/ejtreegrid#dragtooltipspan-classtype-signature-type-objectobjectspan "dragTooltip") property. This property has inner properties such as [`showTooltip`](/api/js/ejtreegrid#dragtooltipshowtooltipspan-classtype-signature-type-booleanbooleanspan "dragTooltip.showTooltip"), [`tooltipItems`](/api/js/ejtreegrid#dragtooltiptooltipitemsspan-classtype-signature-type-arrayarrayspan "dragTooltip.tooltipItems") and [`tooltipTemplate`](/api/js/ejtreegrid#dragtooltiptooltiptemplatespan-classtype-signature-type-stringstringspan "dragTooltip.tooltipTemplate").
 
@@ -189,7 +189,7 @@ The following screenshot depicts a row drag and drop in the TreeGrid widget.
 
 ![](/js/TreeGrid/Rows_images/Rows_img2.png)
 
-#### Customizing Drag tooltip
+### Customizing Drag tooltip
 
 The `tooltipItems` property is used to customize the tooltip items. By using this property, specific fields can be rendered in the tooltip. By default this property value is `null`, and all the defined field items are rendered in the tooltip.
 
