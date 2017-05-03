@@ -518,8 +518,8 @@ Defines the List of Employee Data and converted into JSON object.
                 Name = "Lawrence",
                 Role = "Executive"
             });
-            var jsonSerialiser = new JavaScriptSerializer();
-            return Json(jsonSerialiser.Serialize(EmpData));
+            var jsonSerializer = new JavaScriptSerializer();
+            return Json(jsonSerializer.Serialize(EmpData));
         }
     }
     

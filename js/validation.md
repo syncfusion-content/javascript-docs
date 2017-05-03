@@ -53,7 +53,7 @@ Up to 13.4.0.58 version, above specified jQuery validation settings were configu
 
     {% highlight javascript %}
     
-        $("#datepick").ejDatePicker({
+        $("#datepicker").ejDatePicker({
             validationRules: {
                 required: true
             },

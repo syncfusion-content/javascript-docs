@@ -108,7 +108,7 @@ Add a &lt;div&gt; element. It is a container for Accordion control.
         </ul>
     </div>
     <h3>
-        <a href="#">Essential Studio Javascript</a>
+        <a href="#">Essential Studio JavaScript</a>
     </h3>
     <div>
         <!-- add accordion contents here to load contents under this header -->

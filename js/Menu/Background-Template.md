@@ -63,12 +63,12 @@ Add the following code in your **HTML** page.
                 </li>
 
                 <li>
-                    <a>Favourites </a>
+                    <a>Favorites </a>
                     <ul>
                         <li>
                             <div class="temp temp3">
                                 <div>
-                                    <span>Favourites</span>
+                                    <span>Favorites</span>
                                     <ul>
                                         <li><a>Downloads</a></li>
                                         <li><a>Recent Places</a></li>

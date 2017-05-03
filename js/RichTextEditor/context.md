@@ -89,8 +89,8 @@ However we can disable the context menu by using ShowContextMenu API and it need
 <script>
 $("#texteditor").ejRTE({ contextMenuClick: function(args){//handle menu-item click action.
  } });
-var rteeObj = $("#texteditor").data("ejRTE");// Inserts new item to the contextmenu 
-rteeObj.insertMenuOption({newItem:"Show Table Details",                                                 
+var rteObj = $("#texteditor").data("ejRTE");// Inserts new item to the contextmenu 
+rteObj.insertMenuOption({newItem:"Show Table Details",                                                 
 targetItem: "Table Properties",
 insertType:("insertAfter"),
 menuType:{text:false,image:false,hyperlink:false,table:true},                             
@@ -111,8 +111,8 @@ spriteCssClass:"e-rte-toolbar-icon tableProperties"});
         that helps them to apply rich text formats to the text entered in the text
         area. </p></textarea>
 <script>
-var rteeObj = $("#texteditor").data("ejRTE"); 
-rteeObj.removeMenuOption("Table-Details");
+var rteObj = $("#texteditor").data("ejRTE"); 
+rteObj.removeMenuOption("Table-Details");
 </script> 
 {% endhighlight %}
 
