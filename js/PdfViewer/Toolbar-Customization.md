@@ -115,7 +115,7 @@ The below code snippet shows how to create a customer toolbar by using the clien
                 $("#container").ejPdfViewer({serviceUrl: "/api/PdfViewerAPI", pageChange: "pageChange" }).data("ejPdfViewer").showToolbar(false);
             });
             var isTextFieldInFocus = false;
-            var mousePosX, mousePosY, heigth, width;
+            var mousePosX, mousePosY, height, width;
             var currentPage = 1;
             var toolbarInView = false;
             height = parseInt(document.getElementById("container").style.height);
