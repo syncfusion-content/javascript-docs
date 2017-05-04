@@ -12,7 +12,7 @@ api: /api/js/ejsignature
 
 ### Save signature image with user defined format
 
-By default, the downloaded image form the signature canvas will be in **png** format. We can define our own format to download the image with **saveImageFormat** property. And we can also save the image along with the background by using the **saveWithBackground** property.
+By default, the downloaded image from the signature canvas will be in **png** format. We can define our own format to download the image with **saveImageFormat** property. And we can also save the image along with the background by using the **saveWithBackground** property.
 
 The following code example is used to download drawn image on the Signature control.
 
@@ -20,7 +20,7 @@ The following code example is used to download drawn image on the Signature cont
 
 <div id="signature"></div>
 
-<a id="download"><input id="save" type="button" value="save" /></a>
+<input id="save" type="button" value="save" />
 
 {% endhighlight %}
 
@@ -34,24 +34,21 @@ Add the following script to define the download format for the canvas
                 height: "500px",
                 saveWithBackground: true,
                 strokeWidth: 3,
+                saveImageFormat :"jpg",
                 backgroundImage: "../content/images/progressbar/water.png",
 
             });
-            var client = document.getElementById('download');
-            if (client.addEventListener)
-                client.addEventListener('click', downloadClient, false);
-            else
-                client.attachEvent('onclick', downloadClient, false);
-
-            function downloadClient(e) {
-                var sign = $("signature").ejSignature("instance");
-                sign.option("saveImageFormat", "jpg")                   // set the save image format dynamically
-                this.download = "Signature." + sign.model.saveImageFormat + "";
-                var div = $("signature");
-                var canvas = div["children"]()[0];
-                this.href = canvas.toDataURL("image/" + sign.model.saveImageFormat + "", 1.0);
-            }
+            $("#signsave").ejButton({
+                size: "normal", width: "70px",
+                showRoundedCorner: true,
+                click: onsave
+            });  
         });
+
+      function onsave(args) {
+            var sig = $("#signature").ejSignature("instance");
+            sig.save("MySignature");
+        }
 
     </script>
 
