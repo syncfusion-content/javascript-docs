@@ -59,7 +59,7 @@ The local array is set as data source using the following code example.
 
 {% highlight javascript %}
 
-//jsonArray is local javascript array reference
+//jsonArray is local JavaScript array reference
 var dataManager = ej.DataManager(window.jsonArray);
 
 

@@ -62,7 +62,7 @@ Add the following **HTML** to render sub **Tab** with **AJAX** content.
 
 {% highlight javascript %}
 
-        // Add the following script to render sub Tab with Ajax content.
+        // Add the following script to render sub Tab with AJAX content.
         $(function () {
             $("#dishtype").ejTab();
             $("#pizzaType").ejTab({ dataType: "html", contentType: "html", async: true });

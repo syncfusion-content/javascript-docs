@@ -23,7 +23,7 @@ A data source can be bound to a table through **JavaScript**. The **DataManager*
                <th>Order ID</th>
                <th>Customer ID</th>
                <th>Employee ID</th>
-               <th>Frieght</th>
+               <th>Freight</th>
             </tr>
          </thead>
          <tbody></tbody>

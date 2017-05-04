@@ -27,7 +27,7 @@ All the Syncfusion widget’s control directives are prefixed with `ej-` to avoi
 
 <html xmlns="http://www.w3.org/1999/xhtml" ng-app="DateCtrl">
   <head>
-    <title>Essential Studio for JavaScript : DatePicker - Angular</title>
+    <title>Essential Studio for JavaScript : DatePicker - AngularJS</title>
   </head>
   <body ng-controller="DatePickerCtrl">
     <input id="datepick" ej-datepicker e-value="dateValue" e-enableStrictMode="true" />
@@ -244,7 +244,7 @@ Model binding has been demonstrated in the below code,
 
 <html xmlns="http://www.w3.org/1999/xhtml" ng-app="DateCtrl">
   <head>
-    <title>Essential Studio for JavaScript : DatePicker - Angular</title>
+    <title>Essential Studio for JavaScript : DatePicker - AngularJS</title>
     <!-- SCRIPT & CSS REFERENCE SECTION -->
   </head>
   <body ng-controller="DatePickerCtrl">
@@ -269,7 +269,7 @@ Events can be bind to controls using the prefix `e-` and particular event name. 
 
 <html xmlns="http://www.w3.org/1999/xhtml" ng-app="DateCtrl">
   <head>
-    <title>Essential Studio for JavaScript : DatePicker - Angular</title>
+    <title>Essential Studio for JavaScript : DatePicker - AngularJS</title>
     <!-- SCRIPT & CSS REFERENCE SECTION -->
   </head>
   <body ng-controller="DatePickerCtrl">
