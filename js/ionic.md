@@ -29,7 +29,7 @@ First install the latest Cordova and Ionic command-line tools in your terminal. 
 
 {% highlight html %}
 
-npm install -g Cordova ionic
+npm install -g cordova ionic
 
 {% endhighlight %}
 
@@ -37,7 +37,7 @@ npm install -g Cordova ionic
 
 {% highlight html %}
 
-$ sudo npm install -g Cordova ionic
+$ sudo npm install -g cordova ionic
 
 {% endhighlight %}
 
@@ -63,7 +63,7 @@ npm install
 
 This step by step guide is used to create a combination of Essential JS UI controls with Ionic Framework.
 
-After install npm, add the Syncfusion JS and CSS file reference in index.html file from WWW folder location
+After install npm, add the Syncfusion JS and CSS file reference in index.html file from www folder location
 
 #### Adding the required style sheets into CSS folder
 
@@ -140,7 +140,7 @@ Add the Syncfusion grid control sample inside the ion-content in index.html file
 
 {% endhighlight %}
 
-### Declare AngularJS dependency
+### Declare angular dependency
 
 Essential JS includes AngularJS directives for all controls in ej.widget.angular.min.js script file. In the below specified location, you can find required script file
 
@@ -166,7 +166,7 @@ angular.module('starter', ['ejangular', 'ionic'])
 
 ### Initializing controller
 
-In app.js file, you can create separate controller for each control used in that project. Control properties declared inside the corresponding controller
+In app.js file, you can create seperate controller for each control used in that project. Control properties declared inside the corresponding controller
 
 {% highlight javascript %}
 
