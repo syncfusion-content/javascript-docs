@@ -1,5 +1,4 @@
 ---
----
 layout: post
 title: Getting Started for Electron
 description: How to use Essential JS with Electron.
