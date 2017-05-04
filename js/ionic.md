@@ -243,11 +243,11 @@ ionic run android
 
 {% endhighlight %}
 
-#### iOS
+#### IOS
 
-##### Requirements for iOS
+##### Requirements for IOS
 
-Deploying app into iOS device, checkout this system requirements
+Deploying app into ios device, checkout this system requirements
 
 * Xcode 7 or higher
 
@@ -259,11 +259,11 @@ Deploying app into iOS device, checkout this system requirements
 
 {% highlight html %}
 
-$ ionic platform add iOS
+$ ionic platform add ios
 
-$ ionic build iOS
+$ ionic build ios
 
-$ ionic emulate iOS
+$ ionic emulate ios
 
 {% endhighlight %}
 
