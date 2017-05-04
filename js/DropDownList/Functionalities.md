@@ -416,7 +416,7 @@ The below given example explains the behavior of grouping with JSON array bindin
 	        skill: "Spinach",
 	        category: "Leafy and Salad"
 	    }, {
-	        skill: "Wheatgrass",
+	        skill: "Wheat grass",
 	        category: "Leafy and Salad"
 	    }, {
 	        skill: "Yarrow",
@@ -867,7 +867,7 @@ The below scenario can be explained with three DropDownList for the multi-level 
            { value: 17, text: "Helsinki" },
            { value: 18, text: "Havana" },
            { value: 19, text: "Washington, D.C." },
-           { value: 20, text: "Brasília" },
+           { value: 20, text: "Brasilia" },
            { value: 21, text: "Lima" },
            { value: 22, text: "Canberra" },
            { value: 23, text: "Wellington" },

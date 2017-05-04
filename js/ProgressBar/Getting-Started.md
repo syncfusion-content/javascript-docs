@@ -98,8 +98,8 @@ Initialize **ProgressBar** in script.
             value: 30,  /*Specify the initial value of the progress in percentage*/  
             width: 200,
         });
-        progresObj = $("#progressBar").data("ejProgressBar");
-        progresObj.option("text", "weak");
+        progressObj = $("#progressBar").data("ejProgressBar");
+        progressObj.option("text", "weak");
         $(".e-progress").css({ "background-color": "#DE0909", "border-radius":"10px" });          
         $(".e-progressbar").css({ "border-radius": "10px", "border": "1px solid black" });
     });
@@ -163,7 +163,7 @@ Add the following code example inside the **&lt;script&gt;** tag of your **HTML*
 
 {% highlight javascript %}
 
-    var progresObj, buttonObj, k = 10, timer = window.clearInterval(timer), i = 0, obj;
+    var progressObj, buttonObj, k = 10, timer = window.clearInterval(timer), i = 0, obj;
     $(document).keypress(function () {    //To capture the keypress inside the document           
         i = $("#password").val().length;
         if (i < 5) 
@@ -176,20 +176,20 @@ Add the following code example inside the **&lt;script&gt;** tag of your **HTML*
             very_strong();
     });
     function Strong() {     //Change the width and text of the progress ... called when the length is greater than 5
-        progresObj.option("text", "strong");
-        progresObj.option("percentage", k + 50);
+        progressObj.option("text", "strong");
+        progressObj.option("percentage", k + 50);
         $(".e-progress").css("background-color", "#0055FF");
         $(".e-progressbar").css("color", "#000000");       
     }
     function very_strong() {     //Change the width and text of the progress ... called when the length is greater than 7
-        progresObj.option("text", "Very strong");
-        progresObj.option("percentage", k + 90);
+        progressObj.option("text", "Very strong");
+        progressObj.option("percentage", k + 90);
         $(".e-progress").css("background-color", "Green");
         $(".e-progressbar").css("color", "#000000");   
     }
     function weak() {     //Change the width and text of the progress... called when the length is less than 5
-        progresObj.option("text", "Weak");
-        progresObj.option("percentage", k+20 );
+        progressObj.option("text", "Weak");
+        progressObj.option("percentage", k+20 );
         $(".e-progress").css("background-color", "#DE0909");
         $(".e-progressbar").css("border-radius", "10px");      
     }

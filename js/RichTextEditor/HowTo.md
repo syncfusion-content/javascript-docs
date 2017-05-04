@@ -199,7 +199,7 @@ Yes, we can capture the ctrl + s keypress inside Rich Text Editor. To achieve th
     rteObj = $("#rteSample").data("ejRTE");
     $("#" + rteObj.element[0].id + "_Iframe").contents().on("keydown", function (e){
 
-        //Capure the "ctrl + s" inside RTE
+        //Capture the "ctrl + s" inside RTE
         if (e.ctrlKey && e.keyCode === 83) { 
             //Prevent the default browser action
             e.preventDefault();
