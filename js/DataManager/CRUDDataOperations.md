@@ -208,7 +208,7 @@ The insert method of the data manager is used to add a new record to the table. 
             var query = ej.Query()
                 .sortBy("ItemID", "descending", false)
                     .select("ItemID", "ItemName", "ItemType")
-            var record = { ItemID: 15, ItemName: "Oragne Pie", ItemType: "Veg" };
+            var record = { ItemID: 15, ItemName: "Orange Pie", ItemType: "Veg" };
             dataManager.insert(record);
             // executing query
             var dataSource = dataManager.executeQuery(query).done(function (args) {
@@ -264,7 +264,7 @@ The update method is used to update the modified changes made to a record in the
             var query = ej.Query()
                 .sortBy("ItemID", "descending", false)
                     .select("ItemID", "ItemName", "ItemType")
-            var updateData = { ItemID: 14, ItemName: "Graphes Juice", ItemType: "Veg" };
+            var updateData = { ItemID: 14, ItemName: "Grapes Juice", ItemType: "Veg" };
             dataManager.update("ItemID", updateData);
             // executing query
             var dataSource = dataManager.executeQuery(query).done(function (args) {

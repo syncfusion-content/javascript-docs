@@ -104,7 +104,7 @@ The following example depicts the way to bind data to the **Rating** control by 
 <!doctype html>
 <html xmlns="http://www.w3.org/1999/xhtml" ng-app="syncApp">
    <head>
-      <title>Essential Studio for JavaScript :  Angular</title>
+      <title>Essential Studio for JavaScript :  AngularJS</title>
       <!-- style sheet for default theme(flat azure) -->
       <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
       <!--scripts-->
