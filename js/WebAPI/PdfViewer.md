@@ -165,7 +165,7 @@ $.ajax({
     contentType: "application/json; charset=utf-8",
     dataType: "json",
     traditional: true,
-    aync: false
+    async: false
 })
 
 {% endhighlight %}
