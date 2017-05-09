@@ -376,7 +376,7 @@ The following output is displayed after dropping the rows on Form.
 
 ### Copy And Paste
 
-To copy and paste rows between two Grid, enable the Grid property [`allowRowDragAndDrop`](https://help.syncfusion.com/api/js/ejgrid#members:allowrowdraganddrop "allowRowDragAndDrop") and specify the target Grid ID in [`dropTargetID`](https://help.syncfusion.com/api/js/ejgrid#members:rowdropsettings-droptargetid "dropTargetID") property of Grid and specify the drag behaviour in [`dragBehaviour`](https://help.syncfusion.com/api/js/ejgrid#members:rowdropsettings-dragbehaviour "dragBehaviour") property of Grid [`rowDropSettings`](https://help.syncfusion.com/api/js/ejgrid#members:rowdropsettings "rowDropSettings").
+To copy and paste rows between two Grid, enable the Grid property [`allowRowDragAndDrop`](https://help.syncfusion.com/api/js/ejgrid#members:allowrowdraganddrop "allowRowDragAndDrop") and specify the target Grid ID in [`dropTargetID`](https://help.syncfusion.com/api/js/ejgrid#members:rowdropsettings-droptargetid "dropTargetID") property of Grid and specify the drag behavior in [`dragBehavior`](https://help.syncfusion.com/api/js/ejgrid#members:rowdropsettings-dragbehavior "dragBehavior") property of Grid [`rowDropSettings`](https://help.syncfusion.com/api/js/ejgrid#members:rowdropsettings "rowDropSettings").
 
 The following code example describes the above behavior.
 
@@ -393,7 +393,7 @@ $(function () {
                     allowPaging: true,
                     allowRowDragAndDrop: true,
                     selectionType: "multiple",
-                    rowDropSettings: { dropTargetID: "#DestGrid" ,dragBehaviour:ej.Grid.DragBehaviour.Copy },
+                    rowDropSettings: { dropTargetID: "#DestGrid" ,dragBehavior:ej.Grid.DragBehavior.Copy },
                     columns: [
                                   { field: "OrderID", headerText: "Order ID", isPrimaryKey: true, textAlign: ej.TextAlign.Right, width: 80 },
                                   { field: "CustomerID", headerText: "Customer ID", width: 90 },
@@ -405,7 +405,7 @@ $(function () {
                     dataSource: [],
                     allowPaging: true,
                     allowRowDragAndDrop: true,
-                    rowDropSettings: { dropTargetID: "#Grid" ,dragBehaviour:ej.Grid.DragBehaviour.Copy },
+                    rowDropSettings: { dropTargetID: "#Grid" ,dragBehavior:ej.Grid.DragBehavior.Copy },
                     selectionType: "multiple",
                     columns: [
                                   { field: "OrderID", headerText: "Order ID", isPrimaryKey: true, textAlign: ej.TextAlign.Right, width: 80 },
