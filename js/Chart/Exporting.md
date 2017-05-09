@@ -50,7 +50,7 @@ In client-side rendered chart can be exported as PNG image or as SVG file.
 
 {% endhighlight %}
 
-[Click](http://js.syncfusion.com/demos/web/#!/azure/chart/export) here to view the Export chart online demo sample.
+[Click](http://js.syncfusion.com/demos/web/#!/bootstrap/chart/exportandprint) here to view the Export chart online demo sample.
 
 ## Server-side Exporting
 
