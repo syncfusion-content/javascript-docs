@@ -11,321 +11,454 @@ api: /api/js/ejgantt
 
 Localization is the process of customizing the User Interface (UI) based on a culture, specific to a particular country or region, in order to display regional data. The culture is represented by a unique string like `en``-``US` for US English and `fr``-``FR` for French.
 
-Localization is the key feature that provides solutions to global customers with the help of localized control. 
+Localization is the key feature that provides solutions to global customers with the help of localized control. It is necessary to include the specific culture script files (ej.culture.fr-FR.min.js file for French culture) in the reference section, which is available in the following location.
 
-The following UIs are provided to localize based on culture. The default English Localization UIs are listed as follows:
+`(installed location)\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets\scripts\i18n`
 
-<table>
-<tr>
-<td>
-Localized string value for en-US culture</td><td></td></tr>
-<tr>
-<td>
-Empty Record</td><td>
-emptyRecord: "No records to display"</td></tr>
-<tr>
-<td>
-Column Header Texts:<br/>
-taskId<br/>
-taskName<br/>
-startDate<br/>
-endDate<br/>
-resourceInfo<br/>
-duration<br/>
-status<br/>
-predecessor<br/>
-baselineStartDate<br/>
-baselineEndDate<br/>
-WBS<br/>
-WBSPredecessor</td><td>
-{% highlight javascript %}
-columnHeaderTexts: {   taskId: "ID",
-      taskName: "Task Name",
-      startDate: "Start Date",
-      endDate: "End Date",
-      resourceInfo: "Resources",
-      duration: "Duration",
-      status: "Progress",
-      predecessor: "Predecessors",
-      baselineStartDate: "Baseline Start Date",
-      baselineEndDate: "Baseline End Date",
-      WBS: "WBS",
-      WBSPredecessor: "WBS Predecessor"  
-},    
-{% endhighlight %}    
- </td></tr>
-<tr>
-<td>
-Edit Dialog Texts:<br/>
-addFormTitle<br/>
-editFormTitle<br/>
-saveButton<br/>
-deleteButton<br/>
-cancelButton<br/>
-addPredecessor<br/>
-removePredecessor</td><td>
-{% highlight javascript %}
-editDialogTexts: {   addFormTitle: "New Task",
-      editFormTitle: "Edit Task",
-      saveButton: "Save",
-      deleteButton: "Delete",
-      cancelButton: "Cancel",
-      addPredecessor: "Add New",
-      removePredecessor: "Remove"  
-},
-{% endhighlight %}
-</td></tr>
-<tr>
-<td>
-alertTexts:<br/>
-indentAlert<br/>
-outdentAlert<br/>
-predecessorEditingValidationAlert<br/>
-predecessorAddingValidationAlert<br/>
-idValidationAlert<br/>
-dateValidationAlert</td><td>
-{% highlight javascript %}
-alertTexts: {   indentAlert: "There is no gantt record is selected to perform the Indent",
-      outdentAlert: "There is no gantt record is selected to perform the Outdent",
-      predecessorEditingValidationAlert: "Cyclic Dependency Occured, Please Check The Predecessor",
-      predecessorAddingValidationAlert: "Fill all the columns in predecessor table",
-      idValidationAlert: "Duplicate ID",
-      dateValidationAlert: "Invalid End date"  
-},     {% endhighlight %}   
-</td></tr>
-<tr>
-<td>
-columnDialogTexts:<br/>
-field<br/>
-editType<br/>
-filterEditType<br/>
-allowFiltering<br/>
-allowFilteringBlankContent<br/>
-allowSorting<br/>
-visible<br/>
-width<br/>
-textAlign<br/>
-headerTextAlign<br/>
-isFrozen<br/>
-allowFreezing<br/>
-columnsDropdownData<br/>
-dropdownTableText<br/>
-dropdownTableValue<br/>
-addData<br/>
-deleteData<br/>
-allowCellSelection</td><td>
-{% highlight javascript %}
-columnDialogTexts: {   field: "Field",
-      headerText: "Header Text",
-      editType: "Edit Type",
-      filterEditType: "Filter Edit Type",
-      allowFiltering: "Allow Filtering",
-      allowFilteringBlankContent: "Allow Filtering Blank Content",
-      allowSorting: "Allow Sorting",
-      visible: "Visible",
-      width: "Width",
-      textAlign: "Text Alignment",
-      headerTextAlign: "Header Text Alignment",
-      isFrozen: "Is Frozen",
-      allowFreezing: "Allow Freezing",
-      columnsDropdownData: "Column Dropdown Data",
-      dropdownTableText: "Text",
-      dropdownTableValue: "Value",
-      addData: "Add",
-      deleteData: "Remove",
-      allowCellSelection: "Allow Cell Selection"  
-},
-{% endhighlight %}
-</td></tr>
-<tr>
-<td>
-toolboxTooltipTexts:<br/>
-addTool<br/>
-editTool<br/>
-saveTool<br/>
-deleteTool<br/>
-cancelTool<br/>
-searchTool<br/>
-indentTool<br/>
-outdentTool<br/>
-expandAllTool<br/>
-collapseAllTool<br/>
-nextTimeSpanTool<br/>
-prevTimeSpanTool</td><td>
-{% highlight javascript %}
-toolboxTooltipTexts: {   addTool: "Add",
-      editTool: "Edit",
-      saveTool: "Update",
-      deleteTool: "Delete",
-      cancelTool: "Cancel",
-      searchTool: "Search",
-      indentTool: "Indent",
-      outdentTool: "Outdent",
-      expandAllTool: "ExpandAll",
-      collapseAllTool: "CollapseAll",
-      nextTimeSpanTool: "Next Timespan",
-      prevTimeSpanTool: "Previous Timespan"  
-},
-{% endhighlight %}
-</td></tr>
-<tr>
-<td>
-contextMenuTexts:<br/>
-taskDetailsText<br/>
-addNewTaskText<br/>
-indentText<br/>
-outdentText<br/>
-deleteText<br/>
-aboveText<br/>
-belowText</td><td>
-{% highlight javascript %}
-contextMenuTexts: {   taskDetailsText: "Task Details...",
-      addNewTaskText: "Add New Task",
-      indentText: "Indent",
-      outdentText: "Outdent",
-      deleteText: "Delete",
-      aboveText: "Above",
-      belowText: "Below"  
-},{% endhighlight %}
-</td></tr>
-<tr>
-<td>
-newTaskTexts:
-newTaskName</td><td>
-{% highlight javascript %}
-newTaskTexts: {
-    newTaskName: "New Task"
-},
-{% endhighlight %}
-</td></tr>
-<tr>
-<td>
-columnMenuTexts:<br/>
-sortAscendingText<br/>
-sortDescendingText<br/>
-columnsText<br/>
-insertColumnLeft<br/>
-insertColumnRight<br/>
-deleteColumn<br/>
-renameColumn</td><td>
-{% highlight javascript %}
-columnMenuTexts: {   sortAscendingText: "Sort Ascending",
-      sortDescendingText: "Sort Descending",
-      columnsText: "Columns",
-      insertColumnLeft: "Insert Column Left",
-      insertColumnRight: "Insert Column Right",
-      deleteColumn: "Delete Column",
-      renameColumn: "Rename Column"  
-},
-{% endhighlight %}
-</td></tr>
-<tr>
-<td>
-columnDialogTitle:<br/>
-insertColumn<br/>
-deleteColumn<br/>
-renameColumn</td><td>
-{% highlight javascript %}
-columnDialogTitle: {   insertColumn: "Insert Column",
-      deleteColumn: "Delete Column",
-      renameColumn: "Rename Column"  
-},
-{% endhighlight %}
-</td></tr>
-<tr>
-<td>
-deleteColumnText</td><td>
-"Are you sure you want to delete this column?"</td></tr>
-<tr>
-<td>
-okButtonText</td><td>
-"OK"</td></tr>
-<tr>
-<td>
-cancelButtonText</td><td>
-"Cancel"</td></tr>
-<tr>
-<td>
-confirmDeleteText</td><td>
-"Confirm Delete"</td></tr>
-<tr>
-<td>
-predecessorEditingTexts:<br/>
-fromText<br/>
-toText</td><td>
-{% highlight javascript %}
-predecessorEditingTexts: {
-    fromText: "From",
-    toText: "To"
-}
-{% endhighlight %}
-</td></tr>
-</table>
-To localize the Column Header Texts based on French culture, refer to the following code example.
+Also it is possible to localize all the texts in the Gantt control with specific culture by referring the ej.localetexts.fr-FR.min.js file which is available in the following location.
 
-Refer the external dependency to support localization
+`(installed location)\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets\scripts\i10n`
 
-{% highlight html %}
-<!--Need to add for localize the date Time object based on the culture settings-->
+The following code example explains on how to localize the control in French culture
 
-<script src="Scripts/ej.culture.fr.min.js"></script>
+{% highlight javascript %}
+
+<head>
+
+    //…
+
+    <script src="Scripts/ej.culture.fr-FR.min.js"></script>
+
+    <script src="Scripts/ej.localetexts.fr-FR.js"></script>
+
+</head>
+
+<script type="text/javascript">
+    $(function() {
+
+        $("#GanttContainer").ejGantt({
+
+            //... 
+
+            locale: "fr-FR"
+
+        });
+
+    });
+</script>
 
 {% endhighlight %}
 
+![](Localization_images/Localization_img2.png)
+
+Which will localize all the text and date formats to French culture. If we still need to customize the localized text, we can define them locally in the sample as explained below.
+
 {% highlight javascript %}
-ej.Gantt.Locale["fr-FR"] = {
+ 
+<script type = "text/javascript">
 
-    //headerText to be displayed in TreeGrid
+    ej.Gantt.Locale["fr-FR"] = {
 
-    columnHeaderTexts: {
+        emptyRecord: "Aucun enregistrement à afficher",
 
-        taskId: "Tâche Ia",
+        alertTexts: {
 
-        taskName: "Tâche Tâche",
+            indentAlert: "Il n'y a aucune trace de Gantt est sélectionné pour effectuer le retrait",
 
-        startDate: "Démarrer Date",
+            outdentAlert: "Il n'y a aucune trace de Gantt est sélectionné pour effectuer le retrait négatif",
 
-        endDate: "Fin Date",
+            predecessorEditingValidationAlert: "Cyclique dépendance survenu, S'il vous plaît Consultez le prédécesseur",
 
-        resourceInfo: "Resources",
+            predecessorAddingValidationAlert: "Remplissez toutes les colonnes dans la table prédécesseur",
 
-        duration: "Durée",
+            idValidationAlert: "Duplicate ID",
 
-        status: "Progrès",
+            dateValidationAlert: "Invalid Date de fin",
 
-        predecessor: "Prédécesseur",
+            dialogResourceAlert: "Remplissez toutes les colonnes du tableau des ressources"
 
-        baselineStartDate: "Baseline Démarrer Date",
+        },
 
-        baselineEndDate: "Baseline Fin Date"
+        //headerText to be displayed in TreeGrid 
 
-    },
+        columnHeaderTexts: {
 
-    //string to display in dialog 
+            taskId: "Tâche Ia",
 
-    editDialogTexts: {
+            taskName: "Tâche Tâche",
 
-        addFormTitle: "Nouveau Tâche",
+            startDate: "Démarrer Date",
 
-        editFormTitle: "Modifier Tâche",
+            endDate: "Fin Date",
 
-        saveButton: "Sauver",
+            resourceInfo: "Ressources",
 
-        cancelButton: "Annuler"
+            duration: "Durée",
 
-    },
+            status: "Progrès",
 
-}
+            predecessor: "Prédécesseur",
 
+            baselineStartDate: "Baseline Démarrer Date",
 
+            baselineEndDate: "Baseline Fin Date"
+
+        },
+
+        //string to display in dialog 
+
+        editDialogTexts: {
+
+            addFormTitle: "Nouveau Tâche",
+
+            editFormTitle: "Modifier Tâche",
+
+            saveButton: "Sauver",
+
+            cancelButton: "Annuler"
+
+        },
+
+        columnDialogTexts: {
+
+            field: "Champ",
+
+            headerText: "En-tête",
+
+            editType: "Modifier le type",
+
+            filterEditType: "Modifier le type de filtre",
+
+            allowFiltering: "Autoriser le filtrage",
+
+            allowFilteringBlankContent: "Autoriser le filtrage du contenu Blank",
+
+            allowSorting: "Autoriser tri",
+
+            visible: "Visible",
+
+            width: "Largeur",
+
+            textAlign: "Alignement du texte",
+
+            headerTextAlign: "Alignement du texte en-tête",
+
+            columnsDropdownData: "Colonne Chute de données vers le bas",
+
+            dropdownTableText: "Texte",
+
+            dropdownTableValue: "Valeur",
+
+            addData: "Ajouter",
+
+            deleteData: "Retirer",
+
+            allowCellSelection: "Autoriser la sélection de cellules",
+
+            clipMode: "Mode Clip",
+
+            tooltip: "Info-bulle",
+
+            headerTooltip: "Header Tooltip"
+
+        },
+
+        editTypeTexts: {
+
+            string: "Chaîne",
+
+            numeric: "Numérique",
+
+            datePicker: "Sélecteur de date",
+
+            dateTimePicker: "Date Time Picker",
+
+            dropdown: "Menu déroulant",
+
+            boolean: "Boolean"
+
+        },
+
+        textAlignTypes: {
+
+            right: "Droite",
+
+            left: "La gauche",
+
+            center: "centre"
+
+        },
+
+        clipModeTexts: {
+
+            clip: "Agrafe",
+
+            ellipsis: "Ellipse"
+
+        },
+
+        toolboxTooltipTexts: {
+
+            addTool: "Ajouter",
+
+            editTool: "modifier",
+
+            saveTool: "Mettre à jour",
+
+            deleteTool: "Effacer",
+
+            cancelTool: "Annuler",
+
+            searchTool: "Chercher",
+
+            indentTool: "tiret",
+
+            outdentTool: "Retrait négatif",
+
+            expandAllTool: "Développer tout",
+
+            collapseAllTool: "Réduire tout",
+
+            nextTimeSpanTool: "Suivant Timespan",
+
+            prevTimeSpanTool: "Précédent Timespan",
+
+            criticalPathTool: "Chemin critique",
+
+            excelExportTool: "Exportation Excel",
+
+            pdfExportTool: "Exportation PDF"
+
+        },
+
+        durationUnitTexts: {
+
+            days: "journées",
+
+            hours: "heures",
+
+            minutes: "minutes",
+
+            day: "journée",
+
+            hour: "heure",
+
+            minute: "minute"
+
+        },
+
+        durationUnitEditText: {
+
+            minute: ["m", "min", "minute", "minutes"],
+
+            hour: ["h", "heure", "heure", "heures"],
+
+            day: ["ré", "dy", "journée", "journées"]
+
+        },
+
+        workUnitTexts: {
+
+            days: "journées",
+
+            hours: "heures",
+
+            minutes: "minutes"
+
+        },
+
+        taskTypeTexts: {
+
+            fixedWork: "travail fixe",
+
+            fixedUnit: "Unités fixes",
+
+            fixedDuration: "Durée fixe"
+
+        },
+
+        effortDrivenTexts: {
+
+            yes: "Oui",
+
+            no: "Non"
+
+        },
+
+        contextMenuTexts: {
+
+            taskDetailsText: "Détails de la tâche ...",
+
+            addNewTaskText: "Ajouter une nouvelle tâche",
+
+            indentText: "tiret",
+
+            outdentText: "Retrait négatif",
+
+            deleteText: "Effacer",
+
+            aboveText: "Au dessus de",
+
+            belowText: "Au dessous de"
+
+        },
+
+        newTaskTexts: {
+
+            newTaskName: "Nouvelle tâche"
+
+        },
+
+        columnMenuTexts: {
+
+            sortAscendingText: "Trier par ordre croissant",
+
+            sortDescendingText: "Trier par ordre décroissant",
+
+            columnsText: "colonnes",
+
+            insertColumnLeft: "Insérez la colonne de gauche",
+
+            insertColumnRight: "Insérez la colonne de droite",
+
+            deleteColumn: "Supprimer la colonne",
+
+            renameColumn: "Renommer la colonne"
+
+        },
+
+        taskModeTexts: {
+
+            manual: "Manuel",
+
+            auto: "Auto"
+
+        },
+
+        columnDialogTitle: {
+
+            insertColumn: "Insérer une colonne",
+
+            deleteColumn: "Supprimer la colonne",
+
+            renameColumn: "Renommer la colonne"
+
+        },
+
+        deleteColumnText: "Êtes-vous sûr de vouloir supprimer cette colonne?",
+
+        okButtonText: "D'accord",
+
+        cancelButtonText: "Annuler",
+
+        confirmDeleteText: "Confirmation de la suppression",
+
+        predecessorEditingTexts: {
+
+            fromText: "De",
+
+            toText: "À"
+
+        },
+
+        dialogTabTitleTexts: {
+
+            generalTabText: "Général",
+
+            predecessorsTabText: "Prédécesseurs",
+
+            resourcesTabText: "Ressources",
+
+            customFieldsTabText: "Les champs personnalisés",
+
+            notesTabText: "Remarques"
+
+        },
+
+        predecessorCollectionText: [{
+
+                id: "SS",
+
+                text: "Démarrer-Démarrer",
+
+                value: "Démarrer-Démarrer"
+
+            },
+
+            {
+
+                id: "SF",
+
+                text: "Démarrer-terminer",
+
+                value: "Démarrer-terminer"
+
+            },
+
+            {
+
+                id: "FS",
+
+                text: "terminer-Démarrer",
+
+                value: "terminer-Démarrer"
+
+            },
+
+            {
+
+                id: "FF",
+
+                text: "terminer-terminer",
+
+                value: "terminer-terminer"
+
+            }
+
+        ],
+
+    }
 
 $(function() {
 
     $("#GanttContainer").ejGantt({
 
-        //...
+        //... 
 
         locale: "fr-FR"
+
+    });
+
+});
+</script>
+
+{% endhighlight %}
+
+![](Localization_images/Localization_img1.png)
+
+## Date format
+
+The default date format used in the Gantt control is “MM/dd/yyyy”. Date formats will be changed based on the culture referred in the control. But if you still need to change the date format we can define the desired format using the dateFormat property. The same have been explained in the following code example.
+
+{% highlight javascript %}
+
+$(function() {
+
+    $("#GanttContainer").ejGantt({
+
+        //... 
+
+        locale: "fr-FR",
+
+        dateFormat: "dd/MM/yyyy",
+
+        //To change the date format in Chart side
+
+        scheduleHeaderSettings: {
+
+            weekHeaderFormat: "dd/MM/yyyy"
+
+        },
 
     });
 
@@ -333,8 +466,5 @@ $(function() {
 
 {% endhighlight %}
 
-The following screenshot shows Gantt with French culture.
+![](Localization_images/Localization_img3.png)
 
-![](/js/Gantt/Localization_images/Localization_img1.png)
-
-[Click](http://js.syncfusion.com/demos/web/#!/bootstrap/gantt/localization) here to view the online demo sample for localization support in Gantt.
