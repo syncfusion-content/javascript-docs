@@ -311,7 +311,7 @@ When the value of the [`rangePadding`](../api/ejchart#members:primaryyaxis-range
 ![](/js/Chart/Axis_images/axis_img11.png)
 
 
-####Customizing the starting range of the axis
+#### Customizing the starting range of the axis
 
 By default the Y axis will be always calculated from the value 0 for column, bar, stacking column and stacking bar series types. You can modify this behavior by setting false to the property [`startFromZero`](../api/ejchart#members:primaryyaxis-startfromzero) in the axis. On setting this the axis minimum value will be calculated based on the value for the data points.
 
@@ -965,6 +965,28 @@ W> String value provided for [`crossesAt`](../api/ejchart#members:primaryxaxis-c
 
 ![](/js/Chart/Axis_images/axis_img56.png)
 
+#### Positioning the axis elements while crossing
+The [`showNextToAxisLine`](../api/ejchart#members:primaryxaxis-shownexttoaxisline) property is used for controlling the axis elements movement along with the axis line while axis crossing is performed. When the showNextToAxisLine is set as false only the axis line and the tick lines are placed at the crossing Value and the axis elements will be placed outside the chart area. The default value of [`showNextToAxisLine`](../api/ejchart#members:primaryxaxis-shownexttoaxisline) is **true**.  
+
+{% highlight javascript %}
+
+    $("#container").ejChart({
+
+		primaryXAxis:
+		{
+            //Crosses primary Y axis at 0
+			crossesAt: 0,
+            showNextToAxisLine:false,
+			//...
+		}
+		//...
+	});
+
+{% endhighlight %}
+
+The axis is placed at the crossing value without the axis elements 
+
+![](/js/Chart/Axis_images/axis_img67.png)
 
 ### Axis Visibility
 
