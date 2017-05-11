@@ -18,7 +18,7 @@ Add the following code in your **&lt;script&gt;** section.
 
     
 <div>
-    <ul id="menucontrol">
+    <ul id="menu">
         <li id="home">
             <a href="#">Home</a>
             <ul>
@@ -70,7 +70,7 @@ Add the following code in your **&lt;script&gt;** section.
 
    
         jQuery(function ($) {
-            $("#menucontrol").ejMenu({
+            $("#menu").ejMenu({
                 width: 500,
                 enableCenterAlign: true
             });

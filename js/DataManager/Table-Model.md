@@ -94,9 +94,9 @@ Then the model is bound with the element using the **bindTo.**
             var empId = parseInt($("#empId").val(), 10);
             var fName = $("#first").val();
             var lName = $("#last").val();          
-            emp = employees.get(empId - 1);
-            emp.set("FirstName",fName);
-            emp.set("LastName",lName);
+            employ = employees.get(empId - 1);
+            employ.set("FirstName",fName);
+            employ.set("LastName",lName);
         });               
     </script>
 

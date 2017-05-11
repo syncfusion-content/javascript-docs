@@ -224,7 +224,7 @@ In the **HTML** page, add the **&lt;div&gt;** element to configure the **Uploadb
         $("#uploadbox").ejUploadbox({
             saveUrl: "saveFiles.ashx",
             removeUrl: "removeFiles.ashx",
-            cssClass: "customcss"
+            cssClass: "custom"
         });
     });
 
@@ -236,7 +236,7 @@ In the **HTML** page, add the **&lt;div&gt;** element to configure the **Uploadb
 
 
 <style class="cssStyles">
-  .customcss.e-uploadbox.e-widget .e-selectpart.e-select{
+  .custom.e-uploadbox.e-widget .e-selectpart.e-select{
         background-color: #FFFFCC;
         font-weight: bold; 
         font-family: sans-serif;

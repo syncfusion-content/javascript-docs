@@ -21,7 +21,7 @@ Add the following **&lt;script&gt;** in the above code sample to display the **M
 
     
 <div>
-    <ul id="menucontrol">
+    <ul id="menu">
         <li id="home">
             <a href="#">Home</a>
             <ul>
@@ -73,7 +73,7 @@ Add the following **&lt;script&gt;** in the above code sample to display the **M
 
 
     jQuery(function ($) {
-        $("#menucontrol").ejMenu({
+        $("#menu").ejMenu({
             width: 500,
             enableSeparator: false
         });

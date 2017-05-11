@@ -173,9 +173,9 @@ You can use [headerTemplate](https://help.syncfusion.com/api/js/ejdropdownlist#m
                 showCheckbox: true,
                 headerTemplate: "<div class='temp' ><input id ='check' type='checkbox'  />   </div>"
             });
-            $("#check").ejCheckBox({ text: "Check All", change: "onallChange" });
+            $("#check").ejCheckBox({ text: "Check All", change: "Change" });
         });
-        function onallChange(args) {
+        function Change(args) {
             window.flag = true;
             var obj = $("#dropdown1").ejDropDownList("instance");
             if (args.isChecked) obj.checkAll();
@@ -275,17 +275,17 @@ Initialize a DropDownList control with allowVirtualScrolling, enableFilterSearch
 {% highlight javascript %}
 
     var BikeList = [
-       { bkid: "bk1", text: "Apache RTR" }, { bkid: "bk2", text: "CBR 150-R" }, { bkid: "bk3", text: "CBZ Xtreme" }, { bkid: "bk4", text: "Discover" }, { bkid: "bk5", text: "Dazzler" }, { bkid: "bk6", text: "Flame" }, { bkid: "bk7", text: "Fazzer" }, { bkid: "bk8", text: "FZ-S" }, { bkid: "bk9", text: "Pulsar" }, { bkid: "bk10", text: "Shine" }, { bkid: "bk11", text: "R15" }, { bkid: "bk12", text: "Unicorn" }, { bkid: "bk14", text: "Kawasaki Ninja" }, { bkid: "bk15", text: "Ducati Streetfighter" }, { bkid: "bk16", text: "Aprilia TUONO" } ];   
+       { id: "bk1", text: "Apache RTR" }, { id: "bk2", text: "CBR 150-R" }, { id: "bk3", text: "CBZ Xtreme" }, { id: "bk4", text: "Discover" }, { id: "bk5", text: "Dazzler" }, { id: "bk6", text: "Flame" }, { id: "bk7", text: "Fazzer" }, { id: "bk8", text: "FZ-S" }, { id: "bk9", text: "Pulsar" }, { id: "bk10", text: "Shine" }, { id: "bk11", text: "R15" }, { id: "bk12", text: "Unicorn" }, { id: "bk14", text: "Kawasaki Ninja" }, { id: "bk15", text: "Ducati Streetfighter" }, { id: "bk16", text: "Aprilia TUONO" } ];   
             $(function () {
                 obj = $("#dropdown1").ejDropDownList({
-                    fields: { id: "bkid", text: "text", value: "text" },
+                    fields: { id: "id", text: "text", value: "text" },
                     dataSource: BikeList,
                     enableFilterSearch: true,
                     allowVirtualScrolling: true,
                     virtualScrollMode:"continuous",
                     itemsCount: 10,
                     showCheckbox: true,
-                    popupHide: "onpopupclose",
+                    popupHide: "close",
                     popupHeight: "200px",
                     width: "250px",
                 }).data("ejDropDownList");
@@ -298,8 +298,8 @@ In the popupHide event, get the DropDownList control object and reorder the sele
 
 {% highlight javascript %}
 
-    function onpopupclose(args) {
-        //Followed below steps to reorder the selecteditem at top of the list
+    function close(args) {
+        //Followed below steps to reorder the selected item at top of the list
         var obj = $("#dropdown1").data("ejDropDownList");
         var items = obj.model.selectedItems.slice(0); // get the selected items
         items.sort(function (a, b) { return a - b; }); // numeric sorting for selected indices
@@ -348,7 +348,7 @@ Initialize a DropDownList control with allowVirtualScrolling, enableFilterSearch
             virtualScrollMode: "continuous",
             itemsCount: 10,
             showCheckbox: true,
-            popupHide: "onpopupclose",
+            popupHide: "close",
             popupHeight: "200px",
             width: "250px",
             search: "onSearch",
@@ -416,7 +416,7 @@ In the begin event for loading data items from remote source, modify the query f
         }
     }
     /*
-    In this method, appending the items directly to ultag of popuplist items dynamcially when searching and do virtual scrolling. 
+    In this method, appending the items directly to ultag of popup list items dynamcially when searching and do virtual scrolling. 
     */
     function dynamicItems(proxy, itemTag) {
 
@@ -444,7 +444,7 @@ When performing search, define the event to change the query string for filterin
     
     /*
     In search event, we just filter out the querystring according the search string from remote and append it to popuplist items. 
-    Maintaining the selected items on searching in selectedItemOnSelect varible and append those items once search input have empty string. 
+    Maintaining the selected items on searching in selectedItemOnSelect variable and append those items once search input have empty string. 
     */
 
     function onSearch(args) {
@@ -549,10 +549,10 @@ Removing an entry from DropdownList is demonstrated in the below given sample.
                 dataSource: data
             });
             $("#remove").click(function () {
-                ddl = $("#dropdown1").data("ejDropDownList");
-                data1 = ddl.model.dataSource.splice(0);
+                object = $("#dropdown1").data("ejDropDownList");
+                data1 = object.model.dataSource.splice(0);
                 data1.splice(0, 1);
-                ddl.setModel({ dataSource: data1 });
+                object.setModel({ dataSource: data1 });
             });
         });
 {% endhighlight %}  
@@ -572,21 +572,21 @@ Initialize the DropDownList as follows
 
 {% highlight javascript %}
 
-    <input type="text" id="empList " />
+    <input type="text" id="List " />
 
     //DataSource
-    var empList = [
-    { text: "Erik Linden", eimg: "3", desig: "Representative", country: "England" }, 
-    { text: "John Linden", eimg: "6", desig: "Representative", country: "Norway" },
-    { text: "Louis", eimg: "7", desig: "Representative", country: "Australia" }, 
-    { text: "Lawrence", eimg: "8", desig: "Representative", country: "India" }];
+    var List = [
+    { text: "Erik Linden", image: "3", designation: "Representative", country: "England" }, 
+    { text: "John Linden", image: "6", designation: "Representative", country: "Norway" },
+    { text: "Louis", image: "7", designation: "Representative", country: "Australia" }, 
+    { text: "Lawrence", image: "8", designation: "Representative", country: "India" }];
 
     //DropDownList Initialization
 
     $(function () {
-        $('#empList').ejDropDownList({
-            dataSource: empList,
-            fields: { text: "text", value: "eimg" },
+        $('#List').ejDropDownList({
+            dataSource: List,
+            fields: { text: "text", value: "image" },
             width : "80px"
             popupWidth: 200 ,
             watermarkText: "Select an employee",
@@ -607,11 +607,11 @@ function onSelect(args){
     if(!args.model.showCheckbox && args.model.multiSelectMode == "none"){
          var imgLocation = "http://js.syncfusion.com/demos/web/images/Employee/" + args.value + ".png";
          if($("#myImg").length != 1){
-             var targetEle = $("#selectCar");
-             $(targetEle).css({display : "none"});
+             var target = $("#selectCar");
+             $(target).css({display : "none"});
              var dateSpan = document.createElement('span');
              dateSpan.innerHTML = '<img id="myImg" class="eimg" src=' + imgLocation + ' alt="employee"/>';
-              $(dateSpan).insertBefore(targetEle);
+              $(dateSpan).insertBefore(target);
           }
           else{
 
@@ -639,7 +639,7 @@ Apply the following styles
             font-weight: bold;
             padding: 6px 3px 1px 3px;
         }
-        .desig, .cont {
+        .designation, .cont {
             font-size: smaller;
             padding: 3px 3px -1px 0px;
         }
@@ -663,7 +663,7 @@ This can be achieved, by adding the attributes directly to the input element if 
 
     <script>
         //Data Source
-        var empList = [
+        var List = [
             { text: "Erik Linden", role: "Representative", country: "England" },
             { text: "John Linden", role: "Representative", country: "Norway" },
             { text: "Louis", role: "Representative", country: "Australia" },
@@ -671,7 +671,7 @@ This can be achieved, by adding the attributes directly to the input element if 
         ];
         //DropDownList Initialization
         var data = $('#dropdown1').ejDropDownList({
-            dataSource: empList,
+            dataSource: List,
             fields: { text: "text", value: "country" },
             width: "200px"
         }).data("ejDropDownList");
@@ -698,22 +698,22 @@ This can be achieved, by adding the attributes directly to the input element if 
     $(function () {
         // declaration
         BikeList = [
-            { empid: "bk1", text: "Apache RTR", tooltip: { title: "Apache RTR" } },
-            { empid: "bk2", text: "CBR 150-R", tooltip: { title: "CBR 150-R" } },
-            { empid: "bk3", text: "CBZ Xtreme", tooltip: { title: "CBZ Xtreme" } },
-            { empid: "bk4", text: "Discover", tooltip: { title: "Discover" } },
-            { empid: "bk5", text: "Dazzler", tooltip: { title: "Dazzler" } },
-            { empid: "bk6", text: "Flame", tooltip: { title: "Flame" } },
-            { empid: "bk7", text: "Fazzer", tooltip: { title: "Fazzer" } },
-            { empid: "bk8", text: "FZ-S", tooltip: { title: "FZ-S" } },
-            { empid: "bk9", text: "Pulsar", tooltip: { title: "Pulsar" } },
-            { empid: "bk10", text: "Shine", tooltip: { title: "Shine" } },
-            { empid: "bk11", text: "R15", tooltip: { title: "R15" } },
-            { empid: "bk12", text: "Unicorn", tooltip: { title: "Unicorn" } }
+            { id: "bk1", text: "Apache RTR", tooltip: { title: "Apache RTR" } },
+            { id: "bk2", text: "CBR 150-R", tooltip: { title: "CBR 150-R" } },
+            { id: "bk3", text: "CBZ Xtreme", tooltip: { title: "CBZ Xtreme" } },
+            { id: "bk4", text: "Discover", tooltip: { title: "Discover" } },
+            { id: "bk5", text: "Dazzler", tooltip: { title: "Dazzler" } },
+            { id: "bk6", text: "Flame", tooltip: { title: "Flame" } },
+            { id: "bk7", text: "Fazzer", tooltip: { title: "Fazzer" } },
+            { id: "bk8", text: "FZ-S", tooltip: { title: "FZ-S" } },
+            { id: "bk9", text: "Pulsar", tooltip: { title: "Pulsar" } },
+            { id: "bk10", text: "Shine", tooltip: { title: "Shine" } },
+            { id: "bk11", text: "R15", tooltip: { title: "R15" } },
+            { id: "bk12", text: "Unicorn", tooltip: { title: "Unicorn" } }
         ];
         $('#bikeList').ejDropDownList({
             dataSource: BikeList,
-            fields: { id: "empid", text: "text", value: "text", htmlAttributes: "tooltip" }
+            fields: { id: "id", text: "text", value: "text", htmlAttributes: "tooltip" }
         });
     });
 
@@ -781,7 +781,7 @@ Initialize the DropDownList as follows
 {% highlight javascript %}
 
     <div class="dropdown">
-        <input type="text" id="drpdwn" />
+        <input type="text" id="dropdown" />
         <div class="btn">
             <button type="button" onclick="dataPrepend()">PREPEND</button>
             <button type="button" onclick="dataAppend()">POSTPOND</button>
@@ -797,7 +797,7 @@ Initialize the DropDownList as follows
         ];
 
         // Creates the DropDownList
-        $('#drpdwn').ejDropDownList(
+        $('#dropdown').ejDropDownList(
         {
             dataSource: window.countries,
             field: { text: "text" }
@@ -812,7 +812,7 @@ Upon clicking to the Prepend button, which will insert the items at index of “
 {% highlight javascript %}
 
     function dataPrepend() {
-        var prepend = $('#drpdwn').data("ejDropDownList");
+        var prepend = $('#dropdown').data("ejDropDownList");
         if (prepend.model.dataSource != null) {
             prepend.model.dataSource.splice(0, 0, { text: "India", value: "-1" });
             var b = prepend.model.dataSource;
@@ -828,7 +828,7 @@ If you click the postpone button, which insert items at the last index in the Dr
 {% highlight javascript %}
 
     function dataAppend() {
-        $('#drpdwn').ejDropDownList("addItem", { text: "India" });
+        $('#dropdown').ejDropDownList("addItem", { text: "India" });
     }
 
 {% endhighlight %}
@@ -843,19 +843,19 @@ Method 1: Setting custom delimiter Character
 
 {% highlight javascript %}
 
-    <input type="text" id="empList” />
+    <input type="text" id="List” />
     <script type="text/javascript">
-        var empList = [
-               { text: "Erik, Linden", desig: "Representative" },
-               { text: "John, Linden",desig: "Dancer"},
-               { text: "Louis, John", desig: "Professor"},
-               { text: "Lawrence, Joseph", desig: "Software Engineer" }
+        var List = [
+               { text: "Erik, Linden", designation: "Representative" },
+               { text: "John, Linden",designation: "Dancer"},
+               { text: "Louis, John", designation: "Professor"},
+               { text: "Lawrence, Joseph", designation: "Software Engineer" }
         ];
         $(function () {
-            $(“#empList”).ejDropDownList({
-                dataSource: empList,
+            $(“#List”).ejDropDownList({
+                dataSource: List,
                 width: "100%",
-                fields: { text: "text", value :"desig" },
+                fields: { text: "text", value :"designation" },
                 watermarkText: "Select an employee",
                 multiSelectMode: "delimiter",
                 delimiterChar : ";",
@@ -872,19 +872,19 @@ Method 2: Using Visual Mode
 
 {% highlight javascript %}
 
-    <input type="text" id=" empList " />
+    <input type="text" id=" List " />
     <script type="text/javascript">
-    var empList = [
-            { text: "Erik, Linden", desig: "Representative" },
-            { text: "John, Linden", desig: "Dancer" },
-            { text: "Louis, John", desig: "Professor" },
-            { text: "Lawrence, Joseph", desig: "Software Engineer" }
+    var List = [
+            { text: "Erik, Linden", designation: "Representative" },
+            { text: "John, Linden", designation: "Dancer" },
+            { text: "Louis, John", designation: "Professor" },
+            { text: "Lawrence, Joseph", designation: "Software Engineer" }
     ];
     $(function () {
-        $('# empList).ejDropDownList({
-            dataSource: empList,
+        $('# List).ejDropDownList({
+            dataSource: List,
             width: "100%",
-            fields: { text: "text", value: "desig" },
+            fields: { text: "text", value: "designation" },
             watermarkText: "Select an employee",
             multiSelectMode: "visualmode",
             showCheckbox: true

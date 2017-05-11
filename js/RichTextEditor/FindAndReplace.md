@@ -15,7 +15,7 @@ RTE provides find and replace support, which is used to search for a keyword in 
 
 {% highlight html %}
 
-<textarea id="texteditor">     
+<textarea id="editor">     
 <p><b>Description:</b></p>
         <p>The Rich Text Editor (RTE) control is easy to render in the
         client side. Customers can easily edit the contents and get the HTML content for
@@ -23,7 +23,7 @@ RTE provides find and replace support, which is used to search for a keyword in 
         that helps them to apply rich text formats to the text entered in the text
         area. </p></textarea>
 <script>
-$("#texteditor").ejRTE({ tools: {edit: ["findAndReplace"]}});
+$("#editor").ejRTE({ tools: {edit: ["findAndReplace"]}});
 </script>
 {% endhighlight %}
 

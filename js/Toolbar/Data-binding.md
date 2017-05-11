@@ -85,7 +85,7 @@ And also you can add image, image styles, sprite CSS class, query and HTML attri
 {% highlight html %}
 
     <div class="cols-sample-area">
-        <div id="toolbarcontent"></div>
+        <div id="toolbar"></div>
     </div>
     
 {% endhighlight %}
@@ -159,7 +159,7 @@ To bind Remote data to **Toolbar**, use the following code example.
 
 {% highlight html %}
 
-<div id="toolbarcontent"></div>
+<div id="toolbar"></div>
 
 {% endhighlight %}
 
@@ -174,7 +174,7 @@ To bind Remote data to **Toolbar**, use the following code example.
         var query = ej.Query()
              .from("Orders").take(6);
 
-        $("#toolbarcontent").ejToolbar({
+        $("#toolbar").ejToolbar({
             dataSource: dataManger,
             fields: { text: "CustomerID" },
             query: query,
@@ -233,7 +233,7 @@ The following code example depicts you the way to bind data to the **Toolbar** t
    </head>
    <body>
       <div class="cols-sample-area">
-         <div id="toolbarcontent" data-bind="ejToolbar:{ dataSource:dataList, fields:{ id:'iconid', spriteCssClass:'spriteCss', text:'text'}, width:width }"></div>
+         <div id="toolbar" data-bind="ejToolbar:{ dataSource:dataList, fields:{ id:'id', spriteCssClass:'spriteCss', text:'text'}, width:width }"></div>
       </div>
    </body>
 </html>
@@ -286,8 +286,8 @@ The following code example depicts you the way to bind data to the **Toolbar** w
    </head>
    <body ng-controller="ToolCtrl">
       <div class="cols-sample-area">
-         <div id="toolbarcontent" ej-toolbar e-datasource="dataList" e-width="230px"
-            e-fields-id="iconid" e-fields-spritecssclass="spriteCss">
+         <div id="toolbar" ej-toolbar e-datasource="dataList" e-width="230px"
+            e-fields-id="id" e-fields-spritecssclass="spriteCss">
          </div>
       </div>
    </body>
@@ -300,30 +300,30 @@ The following code example depicts you the way to bind data to the **Toolbar** w
 {% highlight javascript %}
 
     var list = [{
-        iconid: "1",
+        id: "1",
         spriteCss: "ToolbarItems LeftAlign_tool",
 
     }, {
-        iconid: "2",
+        id: "2",
         spriteCss: "ToolbarItems CenterAlign_tool",
     }, {
-        iconid: "3",
+        id: "3",
         spriteCss: "ToolbarItems RightAlign_tool",
     }, {
-        iconid: "4",
+        id: "4",
         spriteCss: "ToolbarItems Justify_tool",
 
     }, {
-        iconid: "5",
+        id: "5",
         spriteCss: "ToolbarItems Bold_tool",
     }, {
-        iconid: "6",
+        id: "6",
         spriteCss: "ToolbarItems Italic_tool",
     }, {
-        iconid: "7",
+        id: "7",
         spriteCss: "ToolbarItems StrikeThrough_tool",
     }, {
-        iconid: "8",
+        id: "8",
         spriteCss: "ToolbarItems Underline_tool",
     }
     ];

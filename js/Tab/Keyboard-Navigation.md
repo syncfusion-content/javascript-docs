@@ -52,7 +52,7 @@ Add the following **HTML** to render **Tab** with **keyboard** navigation.
 
 
 
-<div id="dishtype" style="width: 650px">
+<div id="dish" style="width: 650px">
     <ul>
         <li><a href="#pizza">Pizza Menu</a></li>
         <li><a href="#sandwich">Sandwich Menu</a></li>
@@ -74,13 +74,13 @@ Add the following **HTML** to render **Tab** with **keyboard** navigation.
 
         // Add the following script to render Tab with keyboard navigation.
         $(function () {
-            $("#dishtype").ejTab({ allowKeyboardNavigation: true });
+            $("#dish").ejTab({ allowKeyboardNavigation: true });
 
             //Control focus key
             $(document).on("keydown", function (e) {
                 if (e.altKey && e.keyCode === 74) {
                     // j- key code.
-                    $("#dishtype ul a").focus();
+                    $("#dish ul a").focus();
                 }
             });
         });

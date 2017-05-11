@@ -46,7 +46,7 @@ In the **HTML** page, add a **&lt;div&gt;** element to configure **TagCloud** wi
 
 {% highlight html %}
 
-<div id="techweblist"></div>
+<div id="website"></div>
 
 {% endhighlight %}
 
@@ -84,7 +84,7 @@ Map Local datasource to corresponding fields in **TagCloud** control as follows,
 
 {% highlight javascript %}
 
-    $("#techweblist").ejTagCloud({
+    $("#website").ejTagCloud({
         dataSource: websiteCollection
     });
 
@@ -115,7 +115,7 @@ In the **HTML** page, add a **&lt;div&gt;** element to configure **TagCloud** wi
 
 {% highlight html %}
 
- <div id="techweblist"></div>
+ <div id="website"></div>
 
 
 {% endhighlight %}
@@ -149,7 +149,7 @@ Assign datasource and query property values to bind the remote data. Map the cor
 
 
  
-    $("#techweblist").ejTagCloud({
+    $("#website").ejTagCloud({
         dataSource: dataManager,
         query: query,
         fields: { text: "CustomerID", frequency: "EmployeeID" }
@@ -204,12 +204,12 @@ The following code example depicts you the way to bind data to the **TagCloud** 
    <body>
       <div class="content-container-fluid">
          <div class="row">
-            <div id="techweblist" data-bind="ejTagCloud: { dataSource: dataList, titleText: title }"></div>
+            <div id="website" data-bind="ejTagCloud: { dataSource: dataList, titleText: title }"></div>
          </div>
       </div>
       <script>
          $(function () { 
-         var tagview = [
+         var view = [
          { text: "Google", url: "http://www.google.com", frequency: 12 },
                { text: "a2zwebhelp", url: "http://www.a2zwebhelp.com", frequency: 3 },
                { text: "Arts Technica", url: "http://arstechnica.com/", frequency: 8 },
@@ -230,7 +230,7 @@ The following code example depicts you the way to bind data to the **TagCloud** 
                { text: "W3schools", url: "http://www.w3schools.com/", frequency: 2 }
            ];	
          	window.viewModel = { 
-                       dataList: ko.observableArray(tagview),
+                       dataList: ko.observableArray(view),
                        title: ko.observable("Popular Sites"),
                    };	        		
                    ko.applyBindings(viewModel);
@@ -286,7 +286,7 @@ The following example depicts you the way to bind data to the **TagCloud** widge
       <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/ej.widget.angular.min.js"></script>
    </head>
    <body ng-controller="TagCtrl">
-      <div id="techweblist" ej-tagcloud e-datasource="dataList" e-title="popular sites" />
+      <div id="website" ej-tagcloud e-datasource="dataList" e-title="popular sites" />
       <script>
          var list = [
          { text: "Google", url: "http://www.google.co.in", frequency: 12 },

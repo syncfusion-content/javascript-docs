@@ -22,7 +22,7 @@ Add the following code in your **HTML** page.
 <div class="content-container-fluid">
     <div class="row">
         <div class="cols-sample-area">
-            <ul id="menujson"></ul>
+            <ul id="menu"></ul>
         </div>
     </div>
 </div>
@@ -58,7 +58,7 @@ Add the following code in your **HTML** page.
             { id: 26, parentId: 5, text: "Ukraine", sprite: "flag-ua" },            
         ];
     jQuery(function ($) {
-        $("#menujson").ejMenu({
+        $("#menu").ejMenu({
             width: 425,
             fields: { dataSource: data, id: "id", parentId: "parentId", text: "text", spriteCssClass: "sprite" }
         });
@@ -76,7 +76,7 @@ Add the following code in your style section.
 
 
 <style type="text/css">
-        #menujson {
+        #menu {
             margin-left: 50px;
         }
         .e-menu li > ul > li > a {
@@ -130,7 +130,7 @@ Add the following code in your **HTML** page.
 
         
 <div>
-    <ul id="weblink">
+    <ul id="link">
         <li id="searchengine">
             <a href="#">Search engine</a>
             <ul>
@@ -169,7 +169,7 @@ Add the following code in your **HTML** page.
  
     // Add the following code in your script section.
     jQuery(function ($) {
-        $("#weblink").ejMenu({ width: 612 });
+        $("#link").ejMenu({ width: 612 });
     });
 
 

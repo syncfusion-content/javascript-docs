@@ -23,7 +23,7 @@ In the **HTML** page, add a **&lt;div&gt;** element to configure **TagCloud** wi
 {% highlight html %}
 
 
- <div id="techweblist"></div>
+ <div id="website"></div>
 
 {% endhighlight %}
 
@@ -32,7 +32,7 @@ In the **HTML** page, add a **&lt;div&gt;** element to configure **TagCloud** wi
 
     // Disable the Title element of TagCloud control as follows.
     
-    $("#techweblist").ejTagCloud({
+    $("#website").ejTagCloud({
         showTitle:false, 
         dataSource: websiteCollection
     });
@@ -59,7 +59,7 @@ In the **HTML** page, add a **&lt;div&gt;** element to configure **TagCloud** wi
 {% highlight html %}
 
 
- <div id="techweblist"></div>
+ <div id="website"></div>
 
 {% endhighlight %}
 
@@ -69,7 +69,7 @@ In the **HTML** page, add a **&lt;div&gt;** element to configure **TagCloud** wi
 
     // Disable the Title element of TagCloud control as follows.
     
-    $("#techweblist").ejTagCloud({
+    $("#website").ejTagCloud({
         showTitle:true, 
         titleText: "Tech Sites",
         dataSource: websiteCollection
@@ -98,7 +98,7 @@ In the **HTML** page, add a **&lt;div&gt;** element to configure **TagCloud** wi
 
 {% highlight html %}
 
- <div id="techweblist"></div>
+ <div id="website"></div>
 
 {% endhighlight %}
 
@@ -107,7 +107,7 @@ In the **HTML** page, add a **&lt;div&gt;** element to configure **TagCloud** wi
 
     // Disable the Title element of TagCloud control as follows.
     
-    $("#techweblist").ejTagCloud({
+    $("#website").ejTagCloud({
         titleImage: "http://js.syncfusion.com/demos/web/images/waitingpopup/js_logo.png",
         titleText: "Tech Sites",
         dataSource: websiteCollection

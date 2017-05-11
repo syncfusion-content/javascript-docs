@@ -166,23 +166,23 @@ Here, you can set the **TagCloud** events such as create, mouseover, mouseout, c
             $("#tagcloud").ejTagCloud({
                 dataSource: websiteCollection,
                 titleText: "Tech Sites",
-                create: "oncreate",
-                mouseover: "onmouseover",
-                mouseout: "onmouseout",
-                click: "onclick",
+                create: "create",
+                mouseover: "mouseover",
+                mouseout: "mouseout",
+                click: "click",
                 width: "auto"
             });
     });
-    function oncreate(args) {
+    function create(args) {
         alert();
     }
-    function onmouseover(args) {
+    function mouseover(args) {
         alert();
     }
-    function onmouseout(args) {
+    function mouseout(args) {
         alert();
     }
-    function onclick(args) {
+    function click(args) {
         alert();
     }
 

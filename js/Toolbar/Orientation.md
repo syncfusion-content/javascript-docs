@@ -29,7 +29,7 @@ Add the following script in your **HTML** page.
 
     $(function () {
         // declaration
-        $("#toolbarcontent").ejToolbar({ width: "290px", orientation: ej.Orientation.Horizontal });
+        $("#toolbar").ejToolbar({ width: "290px", orientation: ej.Orientation.Horizontal });
     });
 
 {% endhighlight %}
@@ -40,7 +40,7 @@ OR
 
     $(function () {
         // declaration            
-        $("#toolbarcontent").ejToolbar({ width: "290px", orientation: "Horizontal" });
+        $("#toolbar").ejToolbar({ width: "290px", orientation: "Horizontal" });
     });
 
 {% endhighlight %}
@@ -64,7 +64,7 @@ Add the following script in your **HTML** page.
 
     $(function () {
         // declaration
-        $("#toolbarcontent").ejToolbar({ orientation: ej.Orientation.Vertical });
+        $("#toolbar").ejToolbar({ orientation: ej.Orientation.Vertical });
     });
 
 {% endhighlight %}
@@ -75,7 +75,7 @@ OR
 
     $(function () {
         // declaration
-        $("#toolbarcontent").ejToolbar({ orientation: "Vertical" });
+        $("#toolbar").ejToolbar({ orientation: "Vertical" });
     });
 
 {% endhighlight %}

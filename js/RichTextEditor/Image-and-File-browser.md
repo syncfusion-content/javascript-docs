@@ -19,10 +19,10 @@ If you want to insert an image from online source like Google, Ping, etc., you n
 
 {% highlight html %}
 
-<textarea id="texteditor"></textarea>
+<textarea id="editor"></textarea>
 <script type="text/javascript">
     $(function () {
-        $("#texteditor").ejRTE({
+        $("#editor").ejRTE({
             toolsList: ["images"],
             tools: {
                 images: ["image"]
@@ -41,14 +41,14 @@ Configure the imageBrowser and fileBrowser property to insert an image from your
 
 {% highlight html %}
 
-<textarea id="texteditor"></textarea>
+<textarea id="editor"></textarea>
 <script type="text/javascript">
 
     var fileService = "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction";
 
     $(function () {
 
-        $("#texteditor").ejRTE({
+        $("#editor").ejRTE({
             toolsList: ["images"],
             tools: { images: ["image"] },
             imageBrowser: {
@@ -99,12 +99,12 @@ The editor provides you to set the width and height properties to change the siz
 
 {% highlight html %}
 
-<textarea id="texteditor"></textarea>
+<textarea id="editor"></textarea>
 <script type="text/javascript">
 
     $(function () {
 
-        $("#texteditor").ejRTE({
+        $("#editor").ejRTE({
             toolsList: ["images"],
             tools: { images: ["image"] },
             showDimensions: true
@@ -164,7 +164,7 @@ The General and Advanced tabs in the RTE Image browser can be removed by setting
 
 {% highlight html %}
 
-    <textarea id="texteditor">
+    <textarea id="editor">
         <p><b>Description:</b></p>
         <p>
             The Rich Text Editor (RTE) control is easy to render in the
@@ -176,7 +176,7 @@ The General and Advanced tabs in the RTE Image browser can be removed by setting
     </textarea>
     <script>
         $(function () {
-            $("#texteditor").ejRTE({
+            $("#editor").ejRTE({
                 toolsList: ["images"],
                 tools: { images: ["image"] },
                 width: "100%",
