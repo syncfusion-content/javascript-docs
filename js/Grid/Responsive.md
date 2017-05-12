@@ -235,7 +235,7 @@ $("#Grid").ejGrid({
 
 MinWidth set to Grid
 
-N> We can render the Grid with hieght responsive by setting the scroll `height`as `100%`. If the grid height is greater than its parent container's height then the vertical scrollbar will be displayed to view the content.
+N> We can render the Grid with height responsive by setting the scrollSettings `height`as `100%`. If the grid height is greater than its parent container's height then the vertical scrollbar will be displayed to view the content.
 
 ## Priority for Columns
 
