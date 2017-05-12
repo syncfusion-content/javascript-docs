@@ -374,4 +374,4 @@ The following output is displayed after dropping the rows on Form.
 ![](Row_images/Row_img10.png)
 {:After Drop}
 
-N>   The default behaviour of drag and drop between Grid or any other controls is as cut and paste. For copy and paste behaviour specify the drag behavior in [`dragBehavior`](https://help.syncfusion.com/api/js/ejgrid#members:rowdropsettings-dragbehavior "dragBehavior") property of Grid as ej.Grid.DragBehavior.Copy.
+N>   The default behavior of drag and drop between Grid or any other controls is as cut and paste. For copy and paste behavior specify the drag behavior in [`dragBehavior`](https://help.syncfusion.com/api/js/ejgrid#members:rowdropsettings-dragbehavior "dragBehavior") property of Grid as ej.Grid.DragBehavior.Copy.
