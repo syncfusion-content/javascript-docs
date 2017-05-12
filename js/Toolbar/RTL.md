@@ -16,7 +16,7 @@ This feature allows you to change the left-to-right alignment of the **Toolbar**
 
     $(function () {
         // declaration
-        $("#toolbarcontent").ejToolbar({ width: "290px", enableRTL: true });
+        $("#toolbar").ejToolbar({ width: "290px", enableRTL: true });
     });
 
 {% endhighlight %}

@@ -161,11 +161,11 @@ The group can be rearranged on customization using the **[toolsList](https://hel
 
 {% highlight html %}
 
-<textarea id="texteditor"></textarea>
+<textarea id="editor"></textarea>
 
 <script type="text/javascript">
     $(function (){
-        $("#texteditor").ejRTE({
+        $("#editor").ejRTE({
             toolsList:["links","lists","doAction","style","images"],
             tools:{
                 style:["bold","italic"],
@@ -196,11 +196,11 @@ To undo and redo operations, do one of the following:
 
 {% highlight html %}
 
-<textarea id ="texteditor"></textarea>
+<textarea id ="editor"></textarea>
 
 <script type ="text/javascript">
 $(function () {
-        $("#texteditor").ejRTE({
+        $("#editor").ejRTE({
             value: "The RichTextEditor (RTE) control enables you to edit the contents with insert table and images," +
             " it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.",
             toolsList: ["doAction"],
@@ -227,13 +227,13 @@ N> Some browsers block the clipboard access from JavaScript. If you want to use 
 
 {% highlight html %}
 
-<textarea id="texteditor"></textarea>
+<textarea id="editor"></textarea>
 
 <script type="text/javascript">
 
        $(function () {
 
-            $("#texteditor").ejRTE({
+            $("#editor").ejRTE({
                 value: "The RichTextEditor (RTE) control enables you to edit the contents with insert table and images," +
                 " it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.",
                 toolsList: ["clipboard"],
@@ -255,12 +255,12 @@ The example below demonstrates how to add a custom tool button
 
 {% highlight html %}
 
-<textarea id="texteditor"></textarea>
+<textarea id="editor"></textarea>
 
 <script type="text/javascript">
 
 $(function () {
-    $("#texteditor").ejRTE({
+    $("#editor").ejRTE({
         toolsList: ["customTools"],
         width:"100%", 
         minWidth:"100px",
@@ -276,7 +276,7 @@ $(function () {
             }]
         },isResponsive:true
     });
-    rteObj = $("#texteditor").data("ejRTE");
+    rteObj = $("#editor").data("ejRTE");
     $(".insert-special-character").ejButton();
     $("#specialcharacter").ejDialog({ enableResize: false, enableModal: true, showOnInit: false, width: "auto", position: { X: 218, Y: 38 } });
     $(".specialtbl tbody tr td" ).addClass("specialtd").on( "click", customTdClick);
@@ -325,11 +325,11 @@ Two types of toolbar modes are available for RTE in responsive mode. This includ
 
 {% highlight html %}
 
-     <textarea id="texteditor"></textarea>
+     <textarea id="editor"></textarea>
 
      <script type="text/javascript">
        $(function (){
-         $("#texteditor").ejRTE({
+         $("#editor").ejRTE({
             isResponsive:true,
 			toolbarOverflowMode:"inline",
             }

@@ -19,7 +19,7 @@ The **Toolbar** property **enabled** is used to enable or disable the **Toolbar*
 {% highlight html %}
 
 <div class="cols-sample-area">
-   <div id="toolbarcontent">
+   <div id="toolbar">
       <ul>
          <li id="Left" title="Left">
             <div class="ToolbarItems LeftAlign_tool"></div>
@@ -57,7 +57,7 @@ The **Toolbar** property **enabled** is used to enable or disable the **Toolbar*
 
     $(function () {
         // declaration
-        $("#toolbarcontent").ejToolbar({ enabled: true });
+        $("#toolbar").ejToolbar({ enabled: true });
     });
 
 {% endhighlight %}
@@ -125,7 +125,7 @@ The **Toolbar** property **hide** is used to show or hide the **Toolbar**. Set t
 
     $(function () {
         // declaration
-        $("#toolbarcontent").ejToolbar({ hide: true });
+        $("#toolbar").ejToolbar({ hide: true });
     });
 
 {% endhighlight %}

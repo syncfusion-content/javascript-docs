@@ -40,7 +40,7 @@ Add the following code in your **HTML** page.
 
 <div>
     <div>
-        <ul id="menucontrol">
+        <ul id="menu">
             <li id="home">
                 <a href="#">Home</a>
                 <ul>
@@ -97,7 +97,7 @@ Add the following code in your **HTML** page.
 
     // Add the following code in your script section.
     jQuery(function ($) {
-        $("#menucontrol").ejMenu({
+        $("#menu").ejMenu({
             width: 500,
             cssClass: "Purple-dark"
         });

@@ -53,7 +53,7 @@ Add the following code for Keyboard navigation in your **Menu** control.
 
 <div>
     <div>
-        <ul id="menucontrol">
+        <ul id="menu">
             <li id="home">
                 <a href="#">Home</a>
                 <ul>
@@ -114,11 +114,11 @@ Add the following code for Keyboard navigation in your **Menu** control.
 
         // Add the following code in your script section.
         jQuery(function($) {
-            $("#menucontrol").ejMenu();
+            $("#menu").ejMenu();
             //Control focus key
             $(document).on("keydown", function(e) {
                 if (e.altKey && e.keyCode === 74) { // j- key code.
-                    $("#menucontrol").focus();
+                    $("#menu").focus();
                 }
             });
         });

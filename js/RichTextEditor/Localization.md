@@ -334,11 +334,11 @@ You can set the [locale](https://help.syncfusion.com/api/js/ejrte#members:locale
 
 {% highlight html %}
 
-<textarea id="texteditor"></textarea>
+<textarea id="editor"></textarea>
 
 <script type="text/javascript">
 
-    $("#texteditor").ejRTE({
+    $("#editor").ejRTE({
         value: "Das Richtexteditor (RTE) Steuerung ermöglicht Ihnen, den Inhalt mit Einsatz Tisch und Bilder zu bearbeiten ," +
         " sondern bietet auch eine Werkzeugleiste , die Rich-Text- Format ," +
         " um die in der Textarea eingegeben Gehalt gelten können.",

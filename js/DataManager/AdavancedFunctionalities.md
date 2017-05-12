@@ -47,7 +47,7 @@ In the following code example, the offline property of the DataManager is set as
         var promise = dataManager.executeQuery(query);
 
         promise.done(function (e) {
-            renderTable(e.result); // the json data is get from the result
+            renderTable(e.result); // the JSON data is get from the result
         });
         function renderTable(data) {
             var tbody = "", row;
@@ -103,7 +103,7 @@ You can use the following code example for implementing load on demand using Dat
             </div>
             <div class="form-group">
                 <div class="col-sm-offset-4 col-sm-4">
-                <button type="button" id="formsubmit" class="btn btn-default">
+                <button type="button" id="submit" class="btn btn-default">
                     Load data on demand
                 </button>
                 </div>
@@ -130,7 +130,7 @@ You can use the following code example for implementing load on demand using Dat
             }
             $(".table tbody").html(tbody);
         }
-        $("#formsubmit").click(function (e) {
+        $("#submit").click(function (e) {
             var from = parseInt($("#from").val());
             var to = parseInt($("#to").val());
             tempQuery = new ej.Query();

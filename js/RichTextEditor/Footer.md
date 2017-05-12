@@ -21,11 +21,11 @@ This option allows you to specify which footer elements should display at the bo
 
 {% highlight html %}
 
-<textarea id="texteditor"></textarea>
+<textarea id="editor"></textarea>
 
 <script type="text/javascript">
 
-    $("#texteditor").ejRTE({
+    $("#editor").ejRTE({
         showFooter: true
     });
     
@@ -41,11 +41,11 @@ You can paste HTML text into Source view. If you cut or copy from HTML source su
 
 {% highlight html %}
 
-<textarea id="texteditor"></textarea>
+<textarea id="editor"></textarea>
 
 <script type="text/javascript">
 
-    $("#texteditor").ejRTE({
+    $("#editor").ejRTE({
         showFooter:true,
         showHtmlSource:true
     });
@@ -62,11 +62,11 @@ The HTML tag info tool that shows the path of currently selected tag along with 
 
 {% highlight html %}
 
-<textarea id="texteditor"></textarea>
+<textarea id="editor"></textarea>
 
 <script type="text/javascript">
 
-    $("#texteditor").ejRTE({
+    $("#editor").ejRTE({
         showFooter:true,
         showHtmlTagInfo:true
     });
@@ -83,11 +83,11 @@ The editor automatically counts the number of characters and words in the conten
 
 {% highlight html %}
 
-<textarea id="texteditor"></textarea>
+<textarea id="editor"></textarea>
 <script type="text/javascript">
     $(function () {
 
-        $("#texteditor").ejRTE({
+        $("#editor").ejRTE({
             showFooter: true,
             showWordCount: true,
             showCharCount: true,
@@ -107,11 +107,11 @@ The clear format tool is useful to remove all formatting styles (such as bold, i
 
 {% highlight javascript %}
 
-<textarea id="texteditor"></textarea>
+<textarea id="editor"></textarea>
 
 <script type="text/javascript">
 
-    $("#texteditor").ejRTE({
+    $("#editor").ejRTE({
         showFooter:true,
         showClearFormat:true
     });
@@ -126,11 +126,11 @@ When you set the [enableResize](https://help.syncfusion.com/api/js/ejrte#members
 
 {% highlight html %}
 
-<textarea id="texteditor"></textarea>
+<textarea id="editor"></textarea>
 
 <script type="text/javascript">
 
-    $("#texteditor").ejRTE({
+    $("#editor").ejRTE({
         showFooter:true,
         enableResize:true,
         width:600,minWidth:250,maxWidth:750,
@@ -151,11 +151,11 @@ The editor automatically counts the number of characters and words in the conten
 
 {% highlight html %}
 
-    <textarea id="texteditor"></textarea>
+    <textarea id="editor"></textarea>
     <script type="text/javascript">
         $(function () {
 
-            $("#texteditor").ejRTE({
+            $("#editor").ejRTE({
                 showFooter: true,
                 showWordCount: true,
                 showCharCount: true,

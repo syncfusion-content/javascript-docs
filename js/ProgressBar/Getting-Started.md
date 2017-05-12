@@ -171,8 +171,8 @@ Add the following code example inside the **&lt;script&gt;** tag of your **HTML*
         else if (i > 5 && i < 7) 
             Strong();
         else if(i>7) 
-        var pwd = $("#password").val();
-        if(/^[a-zA-Z0-9- ]*$/.test(pwd) == false);
+        var password= $("#password").val();
+        if(/^[a-zA-Z0-9- ]*$/.test(password) == false);
             very_strong();
     });
     function Strong() {     //Change the width and text of the progress ... called when the length is greater than 5

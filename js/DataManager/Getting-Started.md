@@ -108,7 +108,7 @@ The **executeQuery** property is used to process the data based on the query.
         var promise = dataManager.executeQuery(query);
 
         promise.done(function (e) {
-            renderTable(e.result); // the json data is get from the result
+            renderTable(e.result); // the JSON data is get from the result
         });
     </script>
 </body>
@@ -399,7 +399,7 @@ The **sortBy** property of **ejQuery** is used to sort the records based on the 
       // executing query
       var promise = dataManager.executeQuery(query);
       promise.done(function (e) {
-          renderTable(e.result); // the json data is get from the result
+          renderTable(e.result); // the JSON data is get from the result
       });
    </script>
 </body>
@@ -691,7 +691,7 @@ The **Page** property of **ejQuery** is used to retrieve the records based on th
       // executing query
       var promise = dataManager.executeQuery(query);
       promise.done(function (e) {
-          renderTable(e.result); // the json data is get from the result
+          renderTable(e.result); // the JSON data is get from the result
       });
    </script>
 </body>

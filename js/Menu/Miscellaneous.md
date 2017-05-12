@@ -21,7 +21,7 @@ You can specify the height of the **Menu** control in the script as follows.
 
 
     jQuery(function($) {
-        $("#menucontrol").ejMenu({
+        $("#menu").ejMenu({
             height: 50
         });
     });
@@ -39,7 +39,7 @@ You can specify the width of the **Menu** control in the script as follows.
 
 
     jQuery(function($) {
-        $("#menucontrol").ejMenu({
+        $("#menu").ejMenu({
             width: 700
         });
     });
@@ -60,7 +60,7 @@ Add the following **&lt;script&gt;** in the above code sample.
 
 
     jQuery(function($) {
-        $("#menucontrol").ejMenu({
+        $("#menu").ejMenu({
             width: 612,
             openOnClick: true
         });
@@ -89,7 +89,7 @@ Add the following **&lt;script&gt;** in the above sample code.
 
 
     jQuery(function ($) {
-        $("#menucontrol").ejMenu({
+        $("#menu").ejMenu({
             width: 612,
             animationType: ej.AnimationType.Default
         });
@@ -117,7 +117,7 @@ You can specify the title of the **Menu** control in the script as follows.
 
 
     jQuery(function ($) {
-        $("#menucontrol").ejMenu({
+        $("#menu").ejMenu({
             titleText: "Title of the Menu"
         });
     });
@@ -146,7 +146,7 @@ Add the following **&lt;script&gt;** in the above code sample.
 
 
         jQuery(function($) {
-            $("#menucontrol").ejMenu({
+            $("#menu").ejMenu({
                 width: 500,
                 showRootLevelArrows: false
             });
@@ -175,7 +175,7 @@ Add the following **&lt;script&gt;** in the sample code.
 
 
         jQuery(function($) {
-            $("#menucontrol").ejMenu({
+            $("#menu").ejMenu({
                 width: 500,
                 showSubLevelArrows: false
             });

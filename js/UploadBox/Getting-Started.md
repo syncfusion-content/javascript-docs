@@ -110,10 +110,10 @@ SaveFiles.ashx
                 if (uploadedFiles[i].FileName != null && uploadedFiles[i].FileName != "")
                 {
                     string fileName = uploadedFiles[i].FileName;
-                    int indx = fileName.LastIndexOf("\\");
-                    if (indx > -1)
+                    int index = fileName.LastIndexOf("\\");
+                    if (index > -1)
                     {
-                        fileName = fileName.Substring(indx + 1);
+                        fileName = fileName.Substring(index + 1);
                     }
                     uploadedFiles[i].SaveAs(targetFolder + "\\" + fileName);
                 }
@@ -213,14 +213,14 @@ N> Add the following input elements and two button elements to give file extensi
         </tr>
         <tr>
             <td>
-                <input type="text" id="fileallow" class="ejinputtext" placeholder="Format" />
+                <input type="text" id="Allow" class="ejinputtext" placeholder="Format" />
                 <input type="button" class="e-btn" id="upbutton1" value="Allow" />
             </td>
             <td></td>
         </tr>
         <tr>
             <td>
-                <input type="text" id="filedeny" class="ejinputtext" placeholder="Format" />
+                <input type="text" id="Deny" class="ejinputtext" placeholder="Format" />
                 <input type="button" class="e-btn" id="upbutton2" value="Deny" />
             </td>
             <td>
@@ -240,27 +240,27 @@ N> Add the following input elements and two button elements to give file extensi
 {% highlight js %}
 
 
-    var uploadobject;
+    var object;
     $(function () {
         $("#UploadDefault").ejUploadbox({
             saveUrl: "saveFiles.ashx",
             removeUrl: "removeFiles.ashx"
         });
-        uploadobject = $("#UploadDefault").data("ejUploadbox");
+        object = $("#UploadDefault").data("ejUploadbox");
         $("#upbutton1").ejButton({
-            click: "allowfiletype",
+            click: "allow",
         });
         $("#upbutton2").ejButton({
-            click: "denyfiletype",
+            click: "deny",
         });
     });
-    function allowfiletype() {
-        uploadobject.option('extensionsAllow', $("#fileallow").val());
-        uploadobject.option('extensionsDeny', "");
+    function allow() {
+        object.option('extensionsAllow', $("#Allow").val());
+        object.option('extensionsDeny', "");
     }
-    function denyfiletype() {
-        uploadobject.option('extensionsAllow', "");
-        uploadobject.option('extensionsDeny', $("#filedeny").val());
+    function deny() {
+        object.option('extensionsAllow', "");
+        object.option('extensionsDeny', $("#Deny").val());
     }
 
 
@@ -287,7 +287,7 @@ Add the given styles to display the **Uploadbox** with margin alignments.
     #uploadTable {
         width: 100%;
     }
-    #fileallow, #filedeny {
+    #Allow, #Deny {
         width: 150px;
         height: 20px;
         padding: 5px;

@@ -24,7 +24,7 @@ Add the following code in your **HTML** page.
 
 
 <div>
-    <ul id="menucontrol">
+    <ul id="menu">
         <li id="home">
             <a href="#">Home</a>
             <ul>
@@ -77,7 +77,7 @@ Add the following code in your **HTML** page.
 
     // Add the following code in your script section.
     jQuery(function ($) {
-        $("#menucontrol").ejMenu();
+        $("#menu").ejMenu();
     });
 
 
@@ -97,7 +97,7 @@ When menu width is small and window width is normal as desktop ,only the  overfl
 
     // Add the following code in your script section.
     jQuery(function ($) {
-        $("#menucontrol").ejMenu({width:"300px"});
+        $("#menu").ejMenu({width:"300px"});
     });
 
 
