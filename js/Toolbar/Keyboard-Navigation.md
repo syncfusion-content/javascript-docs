@@ -68,11 +68,11 @@ The following code example illustrates shortcuts associated with the **Toolbar**
 
     $(function () {
         // declaration
-        $("#toolbarcontent").ejToolbar({ width: "290px" });
+        $("#toolbar").ejToolbar({ width: "290px" });
         //Control focus key
         $(document).on("keydown", function (e) {
             if (e.altKey && e.keyCode === 74) { // j- key code.
-                $("#toolbarcontent").focus();
+                $("#toolbar").focus();
             }
         });
     });

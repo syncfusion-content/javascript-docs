@@ -24,7 +24,7 @@ In an **HTML** page, add the **&lt;UL&gt;** and **&lt;LI&gt;** to configure **Me
 
    
 <div>
-    <ul id="menucontrol">
+    <ul id="menu">
         <li id="home">
             <a href="#">Home</a>
             <ul>
@@ -77,7 +77,7 @@ In an **HTML** page, add the **&lt;UL&gt;** and **&lt;LI&gt;** to configure **Me
      
     // Initialize the control in JavaScript.
     jQuery(function ($) {
-        $("#menucontrol").ejMenu({ width: 500 });
+        $("#menu").ejMenu({ width: 500 });
     });
 
 
@@ -101,7 +101,7 @@ Add the following code in your **&lt;script&gt;** section.
 
 
     jQuery(function ($) {
-        $("#menucontrol").ejMenu({
+        $("#menu").ejMenu({
             orientation: ej.Orientation.Vertical
         });
     });

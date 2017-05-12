@@ -20,11 +20,11 @@ N> the content area’s font, color, margins, and background can be overridden u
 
 {% highlight html %}
 
-<textarea id="texteditor"></textarea>
+<textarea id="editor"></textarea>
  
 <script type="text/javascript">
     $(function () {
-        $("#texteditor").ejRTE({
+        $("#editor").ejRTE({
             value: "The RichTextEditor (RTE) control enables you to edit the contents with insert table and images," +
             " it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.",
             iframeAttributes:{style: "background-color:#e0ffff;color:#6495ed;"}
@@ -44,17 +44,17 @@ The editor offers you to add external CSS file to style the &lt; iframe &gt; ele
 
 {% highlight javascript %}
 
- <textarea id="texteditor"></textarea>
+ <textarea id="editor"></textarea>
  
  <script type="text/javascript">
     $(function () {
-        $("#texteditor").ejRTE({
+        $("#editor").ejRTE({
         value: "The RichTextEditor (RTE) control enables you to edit the contents with insert table and images," +
         " it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea." 
         });
     });
     function addCssToIframe() {
-        var editor = $("#texteditor").ejRTE("instance");
+        var editor = $("#editor").ejRTE("instance");
         var iframeDoc = editor.getDocument();
         var linkTag = document.createElement("link");
         linkTag.type = "text/css";
@@ -95,13 +95,13 @@ The editor provides option to control the editable behavior using [allowEditing]
 
 {% highlight html %}
 
-<textarea id ="texteditor"></textarea>
+<textarea id ="editor"></textarea>
 
 <script type ="text/javascript">
 
    $(function () {
 
-            $("#texteditor").ejRTE({
+            $("#editor").ejRTE({
                 value: "The RichTextEditor (RTE) control enables you to edit the contents with insert table and images," +
                 " it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.",
                 allowEditing: false
@@ -116,18 +116,18 @@ The contentEditable attribute allows you to make any element of HTML content to 
 
 {% highlight html %}
 
-<textarea id ="texteditor"></textarea>
+<textarea id ="editor"></textarea>
 
 <script type ="text/javascript">
 
  $(function () {
 
-            $("#texteditor").ejRTE({
+            $("#editor").ejRTE({
                 value: "<p>The RichTextEditor (RTE) control enables you to edit the contents with insert table and images,</p>" +
                 "<p> it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.</p>",
             });
 
-            var editor = $("#texteditor").ejRTE("instance");
+            var editor = $("#editor").ejRTE("instance");
             var iframeDoc = editor.getDocument();
             var paragraph = $("p", iframeDoc.body);
             $($(paragraph)[1]).attr("contenteditable", "false");
@@ -148,13 +148,13 @@ This example shows how to encode the HTML content before form submit event.
 {% highlight html %}
 
     <form>
-        <textarea id ="texteditor"></textarea>
+        <textarea id ="editor"></textarea>
         <button type ="submit">Submit</button>
     </form>
     <script type ="text/javascript">
 
             $(function () {
-            $("#texteditor").ejRTE({
+            $("#editor").ejRTE({
                 value: "The RichTextEditor (RTE) control enables you to edit the contents with insert table and images," +
                 " it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.",
             });
@@ -162,9 +162,9 @@ This example shows how to encode the HTML content before form submit event.
 
         $("form").on("submit", function () {
 
-            var editor = $("#texteditor").data("ejRTE");
+            var editor = $("#editor").data("ejRTE");
             var encoded = $('<div />').text(editor.model.value).html();
-            $("#texteditor").val(encoded);
+            $("#editor").val(encoded);
 
         });
     </script>
@@ -177,7 +177,7 @@ When you move the editor’s wrapper element into another DOM element, the edito
 
 {% highlight html %}
 
-    <textarea id="texteditor"></textarea>
+    <textarea id="editor"></textarea>
 
     <div id="target"></div>
 
@@ -187,11 +187,11 @@ When you move the editor’s wrapper element into another DOM element, the edito
     <script type="text/javascript">
             var editor = null;
             $(function () {
-                $("#texteditor").ejRTE({
+                $("#editor").ejRTE({
                     value: "The RichTextEditor (RTE) control enables you to edit the contents with insert table and images," +
                     " it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.",
                 });
-                editor = $("#texteditor").ejRTE("instance");
+                editor = $("#editor").ejRTE("instance");
             });
             function appendTo() {
                 editor._rteWapper.appendTo($("#target"))
@@ -211,11 +211,11 @@ N>  [local storage](http://www.w3schools.com/html/html5_webstorage.asp#) is not 
 
 {% highlight html %}
 
-    <textarea id="texteditor"></textarea>
+    <textarea id="editor"></textarea>
 
     <script type="text/javascript">
         $(function () {
-            $("#texteditor").ejRTE({
+            $("#editor").ejRTE({
                 enablePersistence: true
             });
         });
@@ -235,10 +235,10 @@ N> <BR>
 
 {% highlight html %}
 
-<textarea id="texteditor"></textarea>
+<textarea id="editor"></textarea>
  
 <script>
-    $("#texteditor").ejRTE({
+    $("#editor").ejRTE({
         value: "The RichTextEditor (RTE) control enables you to edit the contents with insert table and images, it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.",
         tools: {
             font: ["fontName", "fontSize", "fontColor", "backgroundColor"]
@@ -247,7 +247,7 @@ N> <BR>
         isResponsive:true
     });
 
-    var editor = $("#texteditor").ejRTE("instance");
+    var editor = $("#editor").ejRTE("instance");
     var ddl = editor._fontStyleDDL.ejDropDownList("instance");
     ddl.selectItemByIndex(7);
     var ddlSize = editor._fontSizeDDL.ejDropDownList("instance");
@@ -260,13 +260,13 @@ N> <BR>
 
 {% highlight html %}
 
-<textarea id="texteditor"></textarea>
+<textarea id="editor"></textarea>
   
 <script type="text/javascript">
 
     $(function () {
 
-        $("#texteditor").ejRTE({
+        $("#editor").ejRTE({
             value: "The RichTextEditor (RTE) control enables you to edit the contents with insert table and images," +
             " it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.",
             iframeAttributes: { style: "font-family:Arial;font-size:14px" }
@@ -281,19 +281,19 @@ N> <BR>
 
 {% highlight html %}
 
-<textarea id="texteditor"></textarea>
+<textarea id="editor"></textarea>
 
 <script type="text/javascript">
 
         $(function () {
 
-            $("#texteditor").ejRTE({
+            $("#editor").ejRTE({
                 value: "The RichTextEditor (RTE) control enables you to edit the contents with insert table and images," +
                 " it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.",
             });
 
             var css = "html,body{font-family:sans-serif;font-size:14px; }";
-            var editorDoc = $("#texteditor").ejRTE("instance").getDocument();
+            var editorDoc = $("#editor").ejRTE("instance").getDocument();
             var styleTag = document.createElement("style");
             styleTag.type = "text/css";
             if (styleTag.styleSheet) {
@@ -315,19 +315,19 @@ If you want to add additional font names and font sizes to font drop-down, pass 
 
 {% highlight html %}
 
-<textarea id="texteditor"></textarea>
+<textarea id="editor"></textarea>
 
 <script type="text/javascript">
         
     $(function () {
-        $("#texteditor").ejRTE({
+        $("#editor").ejRTE({
             value: "The RichTextEditor (RTE) control enables you to edit the contents with insert table and images, it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.",
             tools: {
                 font: ["fontName", "fontSize", "fontColor", "backgroundColor"]
             }
         });
 
-        var editor = $("#texteditor").ejRTE("instance");
+        var editor = $("#editor").ejRTE("instance");
         editor.defaults.fontName.push({ text: "Calibri Light", value: "CalibriLight" }, { text: "Calibri", value: "Calibri" });
         editor.defaults.fontSize.push({ text: "8 (42pt)", value: "8" });
 		var ddl = editor._fontStyleDDL.ejDropDownList("instance");
@@ -348,12 +348,12 @@ If you want to apply font  color or background color for a selected content of R
 
 {% highlight html %}
 
-    <textarea id="texteditor"></textarea>
+    <textarea id="editor"></textarea>
 
     <script type="text/javascript">
         
         $(function () {
-            $("#texteditor").ejRTE({
+            $("#editor").ejRTE({
               value: "The RichTextEditor (RTE) control enables you to edit the contents with insert table and images, it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.",
               tools: {
                 font: ["fontName", "fontSize", "fontColor", "backgroundColor"]
@@ -372,18 +372,18 @@ If you want to insert/paste the content at the current cursor position (or) to r
 
 {% highlight html %}
 
-<textarea id="texteditor"></textarea>
+<textarea id="editor"></textarea>
 
 <script type="text/javascript">
 
     $(function () {
-        $("#texteditor").ejRTE({
+        $("#editor").ejRTE({
             value:"The RichTextEditor (RTE) control enables you to edit the contents with insert table and images,"+
             " it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.",
         });
     });
     function pasteContent() {
-        var editor = $("#texteditor").ejRTE("instance");
+        var editor = $("#editor").ejRTE("instance");
         var selectedHtml = editor.getSelectedHtml();
         editor.pasteContent("<p style ='background-color:yellow;color:skyblue'>" + selectedHtml + "</p>");
     }

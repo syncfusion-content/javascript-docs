@@ -16,7 +16,7 @@ Set the list for **DropDown control** inside a list tag and define this tag as a
 
 {% highlight html %}
 
-<div id="toolbarcontent">
+<div id="toolbar">
    <ul>
       <li>
          <div>
@@ -37,15 +37,15 @@ Set the list for **DropDown control** inside a list tag and define this tag as a
 
     $(function () {
         // declaration
-          var skillset = [
+          var skills = [
                 { skill: "ASP.NET" }, { skill: "ActionScript" }, { skill: "Basic" },
                 { skill: "C++" }, { skill: "C#" }, { skill: "dBase" }, { skill: "Delphi" },
                 { skill: "ESPOL" }, { skill: "F#" }, { skill: "FoxPro" }, { skill: "Java" },
                 { skill: "J#" }, { skill: "Lisp" }, { skill: "Logo" }, { skill: "PHP" }
             ];
         $("#Radio1").ejRadioButton({ size:"medium" });
-        $('#selectcar').ejDropDownList({ dataSource: skillset, fields: { text: "skill" },watermarkText: "Select your skill",});
-        $("#toolbarcontent").ejToolbar({ width: "250px", height: "28px" });
+        $('#selectcar').ejDropDownList({ dataSource: skills, fields: { text: "skill" },watermarkText: "Select your skill",});
+        $("#toolbar").ejToolbar({ width: "250px", height: "28px" });
     });
 
 
@@ -56,7 +56,7 @@ Set the list for **DropDown control** inside a list tag and define this tag as a
 
 {% highlight html %}
 
-    <div id="toolbarcontent"></div>
+    <div id="toolbar"></div>
 
 {% endhighlight %}
 
@@ -64,13 +64,13 @@ Set the list for **DropDown control** inside a list tag and define this tag as a
 
     $(function () {
         
-          var skillset = [
+          var skills = [
                 { skill: "ASP.NET" }, { skill: "ActionScript" }, { skill: "Basic" },
                 { skill: "C++" }, { skill: "C#" }, { skill: "dBase" }, { skill: "Delphi" },
                 { skill: "ESPOL" }, { skill: "F#" }, { skill: "FoxPro" }, { skill: "Java" },
                 { skill: "J#" }, { skill: "Lisp" }, { skill: "Logo" }, { skill: "PHP" }
             ];
-        $("#toolbarcontent").ejToolbar({
+        $("#toolbar").ejToolbar({
         
 			 Items:[
                     {id:"item1",group:"group1",template:"<input type='radio' id='Radio1' name='radio'>Option 1</input>"},
@@ -81,7 +81,7 @@ Set the list for **DropDown control** inside a list tag and define this tag as a
 			  });
                $("#Radio1").ejRadioButton({size:"medium"});
                 $('#dropdown1').ejDropDownList({
-                dataSource: skillset,
+                dataSource: skills,
                 fields: { text: "skill" },
                 watermarkText: "Select your skill",
                
@@ -95,14 +95,14 @@ Set the list for **DropDown control** inside a list tag and define this tag as a
 
 {% highlight html %}
 
-    <div id="toolbarcontent"></div>
+    <div id="toolbar"></div>
 
 {% endhighlight %}
 
 {% highlight js %}
 
     $(function () {
-      var skillset = [
+      var skills = [
                 { skill: "ASP.NET" }, { skill: "ActionScript" }, { skill: "Basic" },
                 { skill: "C++" }, { skill: "C#" }, { skill: "dBase" }, { skill: "Delphi" },
                 { skill: "ESPOL" }, { skill: "F#" }, { skill: "FoxPro" }, { skill: "Java" },
@@ -110,28 +110,28 @@ Set the list for **DropDown control** inside a list tag and define this tag as a
             ];
      toolbaritems = [
 		  {
-               tid: "1",
+               id: "1",
                title:"radio",
 			   template:"<input type='radio' id='radio1'>Option 1</input>",
 			   groups:"group1"
 
             },
 			 {
-			         tid:"2",
+			         id:"2",
 					 title:"dropdown",
 					 template:"<input type='text' id='dropdown2'></div>",
 					 group:"group2"
 			 }],
         
-        $("#toolbarcontent").ejToolbar({
+        $("#toolbar").ejToolbar({
 			  dataSource: toolbaritems,
-              fields: { id: "tid",tooltipText:"title",group:"group",template:"template"},
+              fields: { id: "id",tooltipText:"title",group:"group",template:"template"},
 
              
 			  });
               $("#radio1").ejRadioButton({size:"medium"});
               $('#dropdown2').ejDropDownList({
-                dataSource: skillset,
+                dataSource: skills,
                 fields: { text: "skill" },
                 watermarkText: "Select your skill",
               

@@ -19,7 +19,7 @@ Add the following **HTML** to render **Tab** with **RTL** format.
 {% highlight html %}
 
 
-<div id="dishtype" style="width: 650px">
+<div id="dish" style="width: 650px">
     <ul>
         <li><a href="#pizza">Pizza Menu</a></li>
         <li><a href="#sandwich">Sandwich Menu</a></li>
@@ -41,7 +41,7 @@ Add the following **HTML** to render **Tab** with **RTL** format.
    
         // Add the following script to render Tab with RTL format.
         $(function () {
-            $("#dishtype").ejTab({ enableRTL:true });
+            $("#dish").ejTab({ enableRTL:true });
         });
 
 

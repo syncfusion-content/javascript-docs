@@ -188,7 +188,7 @@ N> The columns are bounded automatically when the fields are specified with the 
 {% highlight javascript %}
 	
     $(function() {
-        var empList = [{
+        var List = [{
             text: "Erik Linden",
             role: "Representative",
             country: "England",
@@ -222,7 +222,7 @@ N> The columns are bounded automatically when the fields are specified with the 
             }
         }];
         $('#dropdown1').ejDropDownList({
-            dataSource: empList,
+            dataSource: List,
             fields: {
                 text: "text",
                 value: "country",
@@ -379,9 +379,9 @@ Using [ej.WebApiAdaptor](https://help.syncfusion.com/js/datamanager/data-adaptor
         // GET api/<controller>       
         public PageResult<EmployeePhoto> Get(ODataQueryOptions opts)
         {
-            List<EmployeePhoto> emp = db.EmployeePhotos.ToList();            
+            List<EmployeePhoto> photo = db.EmployeePhotos.ToList();            
 
-            return new PageResult<EmployeePhoto>(emp as IEnumerable<EmployeePhoto>, null, emp.Count);
+            return new PageResult<EmployeePhoto>(photo as IEnumerable<EmployeePhoto>, null, photo.Count);
         }
     } 
 
@@ -413,35 +413,35 @@ By using “[WebMethodAdaptor](https://help.syncfusion.com/js/datamanager/gettin
         public object Get()
         {
 
-            List<Employee> EmpData = new List<Employee>();
-            EmpData.Add(new Employee
+            List<Employee> Data = new List<Employee>();
+            Data.Add(new Employee
             {
                 Name = "Erik Linden",
                 Role = "Executive"
                 
             });
-            EmpData.Add(new Employee
+            Data.Add(new Employee
             {
                 Name = "John Linden",
                 Role = "Representative"
                 
             });
-            EmpData.Add(new Employee
+            Data.Add(new Employee
             {
                 Name = "Louis",
                 Role = "Representative"
                 
             });
-            EmpData.Add(new Employee
+            Data.Add(new Employee
             {
                 Name = "Lawrence",
                 Role = "Executive"
                 
             });
-            dynamic count = EmpData.Count;
+            dynamic count = Data.Count;
             return new
             {
-                result = EmpData,
+                result = Data,
                 count = count
             };
 
@@ -497,29 +497,29 @@ Defines the List of Employee Data and converted into JSON object.
         }
         public JsonResult getData()
         {
-            List<Employee> EmpData = new List<Employee>();
-            EmpData.Add(new Employee
+            List<Employee> Data = new List<Employee>();
+            Data.Add(new Employee
             {
                 Name = "Erik Linden",
                 Role = "Executive"
             });
-            EmpData.Add(new Employee
+            Data.Add(new Employee
             {
                 Name = "John Linden",
                 Role = "Representative"
             });
-            EmpData.Add(new Employee
+            Data.Add(new Employee
             {
                 Name = "Louis",
                 Role = "Representative"
             });
-            EmpData.Add(new Employee
+            Data.Add(new Employee
             {
                 Name = "Lawrence",
                 Role = "Executive"
             });
             var jsonSerializer = new JavaScriptSerializer();
-            return Json(jsonSerializer.Serialize(EmpData));
+            return Json(jsonSerializer.Serialize(Data));
         }
     }
     
@@ -530,7 +530,7 @@ In client side, specify the URL of Data to url property and specify the type of 
 {% highlight javascript %}
 
     <div class="ctrllabel"> Select an Employee</div>
-    <input id="empList"/>
+    <input id="List"/>
     
     <script>
         $(function() {
@@ -540,7 +540,7 @@ In client side, specify the URL of Data to url property and specify the type of 
                 adaptor: new ej.UrlAdaptor()
             });
         
-            $("#empList").ejDropDownList({
+            $("#List").ejDropDownList({
             
                 dataSource: dataManager,
                 fields: { text: "Name", value: "Role" }
@@ -572,7 +572,7 @@ When using remote data binding, the adaptor of "ej.DataManager" plays vital role
                 return dm.dataSource.json.push(data);
             },
             processQuery: ej.JsonAdaptor.prototype.processQuery
-                // reused process query from json adaptor
+                // reused process query from JSON adaptor
         });
   
         window.dropdownData = [{

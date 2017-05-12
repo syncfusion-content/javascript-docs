@@ -68,7 +68,7 @@ In the demo, a JSON array is created with text, imgId, role and country which is
 
 {% highlight javascript %}
     
-    var empList = [{
+    var List = [{
         text: "Erik Linden",
         imgId: "3",
         role: "Representative",
@@ -92,7 +92,7 @@ In the demo, a JSON array is created with text, imgId, role and country which is
     $(function() {
         $('#dropdown1').ejDropDownList({
             width: 200,
-            dataSource: empList,
+            dataSource: List,
             headerTemplate: "<div class='eheader'><span>PHOTO</span> <span>DETAILS</span></div>",
             template: '<div><img class="imgId" src="Employee/${imgId}.png" alt="employee"/>' + '<div class="ename"> ${text} </div><div class="role"> ${role} </div><div class="cont"> ${country} </div></div>'
         });

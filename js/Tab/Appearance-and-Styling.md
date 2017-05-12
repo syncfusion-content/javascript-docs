@@ -23,7 +23,7 @@ Add the following **HTML** to render **Tab** with header image.
 {% highlight html %}
 
 
- <div id="dishtype" style="width: 650px">
+ <div id="dish" style="width: 650px">
     <ul>
         <li><span class="dish pizzaImg"></span><a href="#pizza">Pizza Menu</a></li>
         <li><span class="dish sandwichImg"></span><a href="#sandwich">Sandwich Menu</a></li>
@@ -45,7 +45,7 @@ Add the following **HTML** to render **Tab** with header image.
    
         // Add the following script for Tab render with customizes header image.
         $(function () {         
-             $("#dishtype").ejTab();    
+             $("#dish").ejTab();    
         });
 
 
@@ -98,7 +98,7 @@ Add the following **HTML** to render **Tab** with rounder corner.
 {% highlight html %}
 
 
-<div id="dishtype" style="width: 650px">
+<div id="dish" style="width: 650px">
     <ul>
         <li><a href="#pizza">Pizza Menu</a></li>
         <li><a href="#sandwich">Sandwich Menu</a></li>
@@ -119,7 +119,7 @@ Add the following **HTML** to render **Tab** with rounder corner.
 
         // Add the following script to render Tab with rounded corner.
         $(function () {         
-             $("#dishtype").ejTab({ showRoundedCorner: true });
+             $("#dish").ejTab({ showRoundedCorner: true });
         });
 
 
@@ -141,7 +141,7 @@ Add the following **HTML** to render **Tab** with enable/disable.
 {% highlight html %}
 
 
-<div id="dishtype" style="width: 650px">
+<div id="dish" style="width: 650px">
     <ul>
         <li><a href="#pizza">Pizza Menu</a></li>
         <li><a href="#sandwich">Sandwich Menu</a></li>
@@ -163,7 +163,7 @@ Add the following **HTML** to render **Tab** with enable/disable.
   
         // Add the following script to render Tab with disabled format.
         $(function () {
-            $("#dishtype").ejTab({ enabled: false });
+            $("#dish").ejTab({ enabled: false });
         });
 
 
@@ -186,7 +186,7 @@ Add the following **HTML** to render **Tab** with **Reload** icon.
 {% highlight html %}
 
         
-<div id="dishtype" style="width: 650px">
+<div id="dish" style="width: 650px">
     <ul>
         <li><a href="#pizza">Pizza Menu</a></li>
         <li><a href="#sandwich">Sandwich Menu</a></li>
@@ -207,7 +207,7 @@ Add the following **HTML** to render **Tab** with **Reload** icon.
 
         // Add the following script to render Tab with Reload icon.
         $(function () {         
-             $("#dishtype").ejTab({ showReloadIcon: true });
+             $("#dish").ejTab({ showReloadIcon: true });
         });
 
 {% endhighlight %}
@@ -228,7 +228,7 @@ Add the following **HTML** to render **Tab** with customized collapsible mode.
 {% highlight html %}
 
 
-<div id="dishtype" style="width: 650px">
+<div id="dish" style="width: 650px">
     <ul>
         <li><a href="#pizza">Pizza Menu</a></li>
         <li><a href="#sandwich">Sandwich Menu</a></li>
@@ -249,7 +249,7 @@ Add the following **HTML** to render **Tab** with customized collapsible mode.
 
         // Add the following script to render Tab with customized collapsible mode.
         $(function () {         
-             $("#dishtype").ejTab({ collapsible: true });
+             $("#dish").ejTab({ collapsible: true });
         });
 
 
@@ -274,7 +274,7 @@ Add the following **HTML** to render **Tab** with customized height and height a
 {% highlight html %}
 
 
-<div id="dishtype" style="width: 650px">
+<div id="dish" style="width: 650px">
     <ul>
         <li><a href="#pizza">Pizza Menu</a></li>
         <li><a href="#sandwich">Sandwich Menu</a></li>
@@ -297,7 +297,7 @@ Add the following **HTML** to render **Tab** with customized height and height a
     
            // Add the following script to render Tab with customized height and height adjust mode.
            $(function () {         
-               $("#dishtype").ejTab({ heightAdjustMode:"fill", height:"300px"}); 
+               $("#dish").ejTab({ heightAdjustMode:"fill", height:"300px"}); 
            });
 
 {% endhighlight %}
@@ -321,7 +321,7 @@ Add the following **HTML** to render **Tab** with customized width.
 {% highlight html %}
 
 
-<div id="dishtype" style="width: 650px">
+<div id="dish" style="width: 650px">
     <ul>
         <li><a href="#pizza">Pizza Menu</a></li>
         <li><a href="#sandwich">Sandwich Menu</a></li>
@@ -343,7 +343,7 @@ Add the following **HTML** to render **Tab** with customized width.
 
         // Add the following script to render Tab with customized width.
         $(function () {         
-             $("#dishtype").ejTab({ width:"450px" });
+             $("#dish").ejTab({ width:"450px" });
         });   
 
 
@@ -385,7 +385,7 @@ Add the following **HTML** to render **Tab** with customized style.
 {% highlight html %}
 
 
-<div id="dishtype" style="width: 650px">
+<div id="dish" style="width: 650px">
     <ul>
         <li><a href="#pizza">Pizza Menu</a></li>
         <li><a href="#sandwich">Sandwich Menu</a></li>
@@ -406,7 +406,7 @@ Add the following **HTML** to render **Tab** with customized style.
 
     
         $(function () {         
-             $("#dishtype").ejTab({ cssClass: "custom" });
+             $("#dish").ejTab({ cssClass: "custom" });
         });
 
 

@@ -406,7 +406,7 @@ The below given example explains the behavior of grouping with JSON array bindin
 {% highlight javascript %}
 
 	$(function() {
-	    var skillset = [{
+	    var skills = [{
 	        skill: "Cabbage",
 	        category: "Leafy and Salad"
 	    }, {
@@ -477,7 +477,7 @@ The below given example explains the behavior of grouping with JSON array bindin
 	        width: 150,
 	        popupHeight: 300,
 	        watermarkText: "Select a vegetable",
-	        dataSource: skillset,
+	        dataSource: skills,
 	        fields: {
 	            text: "skill",
 	            groupBy: "category"
@@ -580,12 +580,12 @@ Configuring the data items for cascading to the series of DropDownList is demons
     <div style="width: 400px;">
     	<div style="float: left;">
         	<span>Select Group</span>
-        	<input id="groupslist" type="text" />
+        	<input id="groups" type="text" />
     	</div>
 
     	<div style="float: right;">
         	<span>Select Country</span>
-        	<input id="countrylist" type="text" />
+        	<input id="countries" type="text" />
     	</div>
 	</div>
                 
@@ -677,15 +677,15 @@ Configuring the data items for cascading to the series of DropDownList is demons
             parentId: 'e',
             text: "Ukraine"
         }];
-        $('#groupslist').ejDropDownList({
+        $('#groups').ejDropDownList({
             dataSource: groups,
             fields: {
                 text: "text",
                 value: "parentId"
             },
-            cascadeTo: 'countrylist'
+            cascadeTo: 'countries'
         });
-        $('#countrylist').ejDropDownList({
+        $('#countries').ejDropDownList({
             dataSource: countries,
             enabled: false
         });
@@ -706,17 +706,17 @@ Bind the data source to the cascading DropDownList dynamically using [cascade](h
     <div style="width: 530px;">
     <div style="float: left;">
         <span>Select Group</span>
-        <input id="groupslist" type="text" />
+        <input id="groups" type="text" />
     </div>
 
     <div style="float: left; padding-left: 50px;">
         <span>Select Country</span>
-        <input id="countrylist" type="text" />
+        <input id="countries" type="text" />
     </div>
 
     <div style="float: right;">
         <span>Select Players</span>
-        <input id="playerslist" type="text" />
+        <input id="players" type="text" />
     </div>
 	</div>
                 
@@ -733,19 +733,19 @@ Bind the data source to the cascading DropDownList dynamically using [cascade](h
             parentId: 'b',
             text: "Group B"
         }];
-        $('#groupslist').ejDropDownList({
+        $('#groups').ejDropDownList({
             dataSource: groups,
             fields: {
                 text: "text",
                 value: "parentId"
             },
-            cascadeTo: "countrylist,playerslist",
+            cascadeTo: "countries,players",
             cascade: 'onChange'
         });
-        $('#countrylist').ejDropDownList({
+        $('#countries').ejDropDownList({
             enabled: false
         });
-        $('#playerslist').ejDropDownList({
+        $('#players').ejDropDownList({
             enabled: false
         });
     });
@@ -785,13 +785,13 @@ Bind the data source to the cascading DropDownList dynamically using [cascade](h
             text: "James"
         }];
 
-        var obj2 = $('#countrylist').data("ejDropDownList");
+        var obj2 = $('#countries').data("ejDropDownList");
         obj2.option({
             "dataSource": countries,
             "enabled": true
         });
 
-        var obj3 = $('#playerslist').data("ejDropDownList");
+        var obj3 = $('#players').data("ejDropDownList");
         obj3.option({
             "dataSource": players,
             "enabled": true
@@ -811,11 +811,11 @@ The below scenario can be explained with three DropDownList for the multi-level 
     <div class="frame">
         <div class="control" style="float: left; padding:10px;">
             <span class="txt">Select Continent</span>
-            <input id="groupsList" type="text" />
+            <input id="groups" type="text" />
         </div>
         <div class="control" style="float: left; padding:10px;">
             <span class="txt">Select Country</span>
-            <input id="countryList" type="text" />
+            <input id="countries" type="text" />
         </div>
         <div class="control" style="float: left; padding:10px;">
             <span class="txt">Select State</span>
@@ -873,12 +873,12 @@ The below scenario can be explained with three DropDownList for the multi-level 
            { value: 23, text: "Wellington" },
            { value: 24, text: "Alfred Faure" },
            { value: 25, text: "King Edward Point" }]
-           $('#groupsList').ejDropDownList({
+           $('#groups').ejDropDownList({
                dataSource: groups,
                fields: { value: "parentId" },
-               cascadeTo: 'countryList'
+               cascadeTo: 'countries'
            });
-           $('#countryList').ejDropDownList({
+           $('#countries').ejDropDownList({
                dataSource: countries,
                fields: { value: "value" },
                cascadeTo: 'capitalList',
@@ -1033,7 +1033,7 @@ Required field and min value validation is demonstrated in the below given examp
 	
     $.validator.setDefaults({
         ignore: [],
-        errorClass: 'e-validation-error', // to get the error message on jquery validation
+        errorClass: 'e-validation-error', // to get the error message on jQuery validation
         errorPlacement: function (error, element) {
             $(error).insertAfter(element.closest(".e-widget"));
         }

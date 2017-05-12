@@ -22,7 +22,7 @@ In the **HTML** page, add a **&lt;div&gt;** element to configure **TagCloud** wi
 
 {% highlight html %}
 
-<div id="techweblist"></div>
+<div id="website"></div>
 
 {% endhighlight %}
 
@@ -30,7 +30,7 @@ In the **HTML** page, add a **&lt;div&gt;** element to configure **TagCloud** wi
 
     // Assign the values for minFontSize  and maxFontSize properties below.
     
-    $("#techweblist").ejTagCloud({
+    $("#website").ejTagCloud({
         minFontSize: "20px",
         maxFontSize: "50px",
         titleText: "Tech Sites",
@@ -67,7 +67,7 @@ In the **HTML** page, add a **&lt;div&gt;** element to configure **TagCloud** wi
       </td>
       <td>
          <span>Tag format list</span>
-         <div id="techweblist"></div>
+         <div id="website"></div>
       </td>
    </tr>
 </table>
@@ -79,7 +79,7 @@ In the **HTML** page, add a **&lt;div&gt;** element to configure **TagCloud** wi
 
 
      // Assign the values for format property in TagCloud.
-    $("#techweblist").ejTagCloud({
+    $("#website").ejTagCloud({
         format: "list",
         titleText: "Tech Sites List",
         dataSource: websiteCollection
@@ -130,7 +130,7 @@ In the **HTML** page, add a **&lt;div&gt;** element to configure **TagCloud** wi
 
 {% highlight html %}
 
-<div id="techweblist"></div>
+<div id="website"></div>
 
 {% endhighlight %}
 
@@ -139,7 +139,7 @@ In the **HTML** page, add a **&lt;div&gt;** element to configure **TagCloud** wi
 
      // Add the cssClass property to TagCloud.
     
-     $("#techweblist").ejTagCloud({
+     $("#website").ejTagCloud({
         titleText: "Tech Sites",
         dataSource: websiteCollection,
         cssClass:"CustomCss"

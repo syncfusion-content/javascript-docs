@@ -62,7 +62,7 @@ Create a **TextArea** element within the body of the HTML document where the wid
 
 {% highlight html %}
 <body>
-   <textarea id ="texteditor"></textarea>
+   <textarea id ="editor"></textarea>
 </body>
 {% endhighlight %}
 
@@ -70,11 +70,11 @@ Initialize the editor by adding the following script to the HTML document.
 
 {% highlight html %}
 <body>
-   <textarea id="texteditor"></textarea>
+   <textarea id="editor"></textarea>
    
    <script type="text/javascript">
         $(function () {
-            $("#texteditor").ejRTE();
+            $("#editor").ejRTE();
         });
    </script>
 </body>
@@ -86,7 +86,7 @@ You can configure a toolbar with the tools as your application requires.
 
 {% highlight javascript %}
 $(function () {
-$("#texteditor").ejRTE({
+$("#editor").ejRTE({
 toolsList: ["style", "lists", "doAction", "links", "images"],
 tools: {
 style: ["bold", "italic"],
@@ -105,10 +105,10 @@ You can set the content of the editor as follows.
 
 {% highlight javascript %}
 
-<textarea id="texteditor"></textarea>
+<textarea id="editor"></textarea>
    
 <script type="text/javascript">
-    $("#texteditor").ejRTE({
+    $("#editor").ejRTE({
         value: "The RichTextEditor (RTE) control enables you to edit the contents with insert table and images," +
         " it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.",
     });
@@ -118,7 +118,7 @@ You can set the content of the editor as follows.
 To retrieve the editor contents,
 
 {% highlight javascript %}
-var currentValue = $("#texteditor").ejRTE("model.value");
+var currentValue = $("#editor").ejRTE("model.value");
 {% endhighlight %}
 
 You can find sample to quick start with the editor [here](http://jsplayground.syncfusion.com/Sync_nenmojvz#).
