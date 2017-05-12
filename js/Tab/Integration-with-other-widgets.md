@@ -23,22 +23,22 @@ Add the following **HTML** to render **Tab** with other widget.
 {% highlight html %}
 
 
-<div id="dishtype" style="width: 650px">
+<div id="dish" style="width: 650px">
     <ul>
         <li><a href="#pizza">Pizza Menu</a></li>
         <li><a href="#sandwich">Sandwich Menu</a></li>
     </ul>
     <div id="pizza" style="background-color: #F5F5F5">
         <p>Rating:</p>
-        <div class="dishRating">
-            <input id="pizzarating" type="text" class="rating" /><br />
+        <div class="dish">
+            <input id="pizza" type="text" class="rating" /><br />
         </div>
         <p>Pizza cooked to perfection tossed with milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
     </div>
     <div id="sandwich" style="background-color: #F5F5F5">
         <p>Rating:</p>
         <div class="dishRating">
-            <input id="sandwichrating" type="text" class="rating" />
+            <input id="sandwich" type="text" class="rating" />
         </div>
         <p>Sandwich cooked to perfection tossed with bread, milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
     </div>
@@ -50,9 +50,9 @@ Add the following **HTML** to render **Tab** with other widget.
 
     // Add the following script to render Tab with other widget.  
     $(function () {
-        $("#dishtype").ejTab();
-        $("#pizzarating").ejRating({ precision: ej.Rating.Precision.Exact, value: 4.8 });
-        $("#snadwichrating").ejRating({ precision: ej.Rating.Precision.Exact, value: 4.8 });
+        $("#dish").ejTab();
+        $("#pizza").ejRating({ precision: ej.Rating.Precision.Exact, value: 4.8 });
+        $("#sandwich").ejRating({ precision: ej.Rating.Precision.Exact, value: 4.8 });
     });
 </script>
 

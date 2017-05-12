@@ -21,7 +21,7 @@ Add the following **HTML** for simple **Tab** creation with **Close** **Button**
 {% highlight html %}
 
 
-<div id="dishtype" style="width: 650px">
+<div id="dish" style="width: 650px">
     <ul>
         <li><a href="#pizza">Pizza Menu</a></li>
         <li><a href="#sandwich">Sandwich Menu</a></li>
@@ -43,7 +43,7 @@ Add the following **HTML** for simple **Tab** creation with **Close** **Button**
 
 
         $(function () {
-            $("#dishtype").ejTab({ showCloseButton: true });
+            $("#dish").ejTab({ showCloseButton: true });
         });
 
 
@@ -64,7 +64,7 @@ Add the following **HTML** for **Tab** orientation.
 {% highlight html %}
 
  
-<div id="dishtype" style="width: 650px">
+<div id="dish" style="width: 650px">
     <ul>
         <li><a href="#pizza">Pizza Menu</a></li>
         <li><a href="#sandwich">Sandwich Menu</a></li>
@@ -86,7 +86,7 @@ Add the following **HTML** for **Tab** orientation.
 
         // Add the following script for Tab render with customized orientation.
         $(function () {         
-             $("#dishtype").ejTab({ headerPosition: "left", height: "220px" });                                          
+             $("#dish").ejTab({ headerPosition: "left", height: "220px" });                                          
         });   
 
 
@@ -108,7 +108,7 @@ Add the following **HTML** for **Tab** **state** **maintenance**.
 {% highlight html %}
 
 
-<div id="dishtype" style="width: 650px">
+<div id="dish" style="width: 650px">
     <ul>
         <li><a href="#pizza">Pizza Menu</a></li>
         <li><a href="#sandwich">Sandwich Menu</a></li>
@@ -130,7 +130,7 @@ Add the following **HTML** for **Tab** **state** **maintenance**.
    
         // Add the following script for Tab state maintenance.
         $(function () {         
-             $("#dishtype").ejTab({ enablePersistence: true });     
+             $("#dish").ejTab({ enablePersistence: true });     
         });
 
 

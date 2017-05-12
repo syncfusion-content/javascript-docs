@@ -24,7 +24,7 @@ Add the following **HTML** code to create a simple Tab with scroll button.
 
 
 <div style="width: 500px; padding: 50px;">
-    <div id="dishtype">
+    <div id="dish">
         <ul>
             <li><a href="#pizza">Pizza Menu</a></li>
             <li><a href="#pasta">Pasta Menu</a></li>
@@ -73,7 +73,7 @@ Add the following **HTML** code to create a simple Tab with scroll button.
 
         // Add the following script to render Tab control        
         $(function () {
-            $("#dishtype").ejTab({
+            $("#dish").ejTab({
                 enableTabScroll: true
             });
         });		

@@ -19,7 +19,7 @@ The following code depicts you on how to enable the **rtl** property of the **Me
 
     
 <div>
-    <ul id="menucontrol">
+    <ul id="menu">
         <li id="home">
             <a href="#">Home</a>
             <ul>
@@ -71,7 +71,7 @@ The following code depicts you on how to enable the **rtl** property of the **Me
 {% highlight javascript %}
 
     jQuery(function ($) {
-        $("#menucontrol").ejMenu({ enableRTL: true });
+        $("#menu").ejMenu({ enableRTL: true });
     });
 
 

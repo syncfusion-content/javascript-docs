@@ -25,14 +25,14 @@ Add the following **HTML** to render sub **Tab** with **AJAX** content.
 {% highlight html %}
 
 
-<div id="dishtype" style="width: 650px">
+<div id="dish" style="width: 650px">
     <ul>
         <li><a href="#pizza">Pizza Menu</a></li>
         <li><a href="#sandwich">Sandwich Menu</a></li>
     </ul>
     <div id="pizza" style="background-color: #F5F5F5">
         <p>Pizza cooked to perfection tossed with milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
-        <div id="pizzaType">
+        <div id="pizza">
             <ul>
                 <li>
                     <a href="content/cornSpinach.html">Corn & Spinach </a></li>
@@ -43,7 +43,7 @@ Add the following **HTML** to render sub **Tab** with **AJAX** content.
     </div>
     <div id="sandwich" style="background-color: #F5F5F5">
         <p>Sandwich cooked to perfection tossed with bread, milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
-        <div id="sandwichType">
+        <div id="sandwich">
             <ul>
                 <li>
                     <a href="Content/gardenVeggie.html">Garden Veggie </a></li>
@@ -64,9 +64,9 @@ Add the following **HTML** to render sub **Tab** with **AJAX** content.
 
         // Add the following script to render sub Tab with AJAX content.
         $(function () {
-            $("#dishtype").ejTab();
-            $("#pizzaType").ejTab({ dataType: "html", contentType: "html", async: true });
-            $("#sandwichType").ejTab({ dataType: "html", contentType: "html", async: true });
+            $("#dish").ejTab();
+            $("#pizza").ejTab({ dataType: "html", contentType: "html", async: true });
+            $("#sandwich").ejTab({ dataType: "html", contentType: "html", async: true });
         });
 
 

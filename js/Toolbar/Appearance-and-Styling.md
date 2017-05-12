@@ -20,7 +20,7 @@ The **height** property is used to set height of the **Toolbar**. Set the value 
 
     $(function () {
         // declaration
-        $("#toolbarcontent").ejToolbar({ height: 300 });
+        $("#toolbar").ejToolbar({ height: 300 });
     });
     
 {% endhighlight %}
@@ -33,7 +33,7 @@ The **width** property is used to set width of the **Toolbar**. Set the value to
 
     $(function () {
         // declaration
-        $("#toolbarcontent").ejToolbar({ height: "300px" });
+        $("#toolbar").ejToolbar({ height: "300px" });
     });
 
 {% endhighlight %}
@@ -47,7 +47,7 @@ The **showRoundedCorner** property is used to enable rounded corner for **Toolba
 
     $(function () {
         // declaration
-        $("#toolbarcontent").ejToolbar({ showRoundedCorner: true });
+        $("#toolbar").ejToolbar({ showRoundedCorner: true });
     });
 
 {% endhighlight %}
@@ -65,7 +65,7 @@ The **enableSeparator** property is used to set separator between **Toolbar** it
 
     $(function () {
         // declaration
-        $("#toolbarcontent").ejToolbar({ enableSeparator: true });
+        $("#toolbar").ejToolbar({ enableSeparator: true });
     });
 
 {% endhighlight %}
@@ -103,7 +103,7 @@ The **cssClass** property is used to set root class for **Toolbar** control them
 
     $(function () {
         // declaration
-        $("#toolbarcontent").ejToolbar({ width: "290px", cssClass: "gradient-lime" });
+        $("#toolbar").ejToolbar({ width: "290px", cssClass: "gradient-lime" });
     });
 
 {% endhighlight %}

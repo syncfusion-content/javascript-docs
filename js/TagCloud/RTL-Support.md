@@ -20,7 +20,7 @@ The following steps explains you the enabling of right-to-left property in **Tag
 
 {% highlight html %}
 
- <div id="techweblist"></div>
+ <div id="website"></div>
 
 {% endhighlight %}
 
@@ -28,7 +28,7 @@ The following steps explains you the enabling of right-to-left property in **Tag
 
 
     // Enable RTL property for TagCloud.  
-    $("#techweblist").ejTagCloud({
+    $("#website").ejTagCloud({
        enableRTL:true,
         titleText: "Tech Sites",
         dataSource: websiteCollection

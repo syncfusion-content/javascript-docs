@@ -368,7 +368,7 @@ First insert the text to the RTE using “executeCommand” in the RTE.
 {% highlight javascript %}
 
     editor = $("#rteSample").ejRTE("instance");
-    editor.executeCommand("inserthtml", TmpTxt);
+    editor.executeCommand("inserthtml", text);
 
 {% endhighlight %}
 
@@ -393,12 +393,12 @@ Second manually set the cursor location using “_getRange” method. Please ref
 
     function SpecificText() {
         if (!ej.isNullOrUndefined(rte)) {
-            var TmpTxt = " ";
-            var AttName = "New-Text"
+            var text = " ";
+            var Name = "New-Text"
             var editor, txt, loc, el;
-            TmpTxt = ' ' + AttName + ' ';
+            text = ' ' + Name + ' ';
             editor = $("#rteSample").ejRTE("instance");
-            editor.executeCommand("inserthtml", TmpTxt); //insert the content
+            editor.executeCommand("inserthtml", text); //insert the content
             loc = editor._getRange();//manually set the cursor
             range = editor.createRange();
             txt = range.commonAncestorContainer.parentElement;

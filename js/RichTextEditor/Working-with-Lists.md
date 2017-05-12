@@ -19,13 +19,13 @@ By default, [Insert Lists](https://help.syncfusion.com/api/js/ejrte#members:tool
 
 {% highlight html %}
 
-    <textarea id="texteditor"></textarea>
+    <textarea id="editor"></textarea>
 
     <script type="text/javascript">
 
             $(function () {
 
-                $("#texteditor").ejRTE({
+                $("#editor").ejRTE({
                     value: "The RichTextEditor (RTE) control enables you to edit the contents with insert table and images," +
                     " it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.",
                     toolsList: ["lists"],
@@ -69,13 +69,13 @@ Summary<br/><br/></th></tr>
 
 {% highlight html %}
 
-    <textarea id="texteditor"></textarea>
+    <textarea id="editor"></textarea>
 
     <script type="text/javascript">
 
         $(function () {
 
-            $("#texteditor").ejRTE({
+            $("#editor").ejRTE({
                 value: "The RichTextEditor (RTE) control enables you to edit the contents with insert table and images," +
                 " it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.",
                 toolsList: ["lists"],
@@ -123,13 +123,13 @@ Summary<br/><br/></th></tr>
 
 {% highlight html %}
 
-    <textarea id="texteditor"></textarea>
+    <textarea id="editor"></textarea>
 
     <script type="text/javascript">
 
         $(function () {
 
-            $("#texteditor").ejRTE({
+            $("#editor").ejRTE({
                 value: "The RichTextEditor (RTE) control enables you to edit the contents with insert table and images," +
                 " it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.",
                 toolsList: ["lists"],

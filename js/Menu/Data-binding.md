@@ -79,7 +79,7 @@ Add the following code in your **HTML** page.
 <div class="content-container-fluid">
     <div class="row">
         <div class="cols-sample-area">
-            <ul id="menujson"></ul>
+            <ul id="menu"></ul>
         </div>
     </div>
 </div>
@@ -131,7 +131,7 @@ Add the following code in your **HTML** page.
         { id: 122, parentId: 26, text: "Third place" }
     ];
     jQuery(function ($) {
-        $("#menujson").ejMenu({
+        $("#menu").ejMenu({
             fields: { dataSource: data, id: "id", parentId: "parentId", text: "text" }
         });
     });

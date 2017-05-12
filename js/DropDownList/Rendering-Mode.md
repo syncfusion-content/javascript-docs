@@ -72,7 +72,7 @@ Create a div with UL-LI elements and assign that div id into [targetID](https://
 
 	<input type="text" id="dropdown1" />
 
-	<div id="mailtoolslist">
+	<div id="tools">
 
     	<ul>
 
@@ -181,7 +181,7 @@ Create a div with UL-LI elements and assign that div id into [targetID](https://
 		
         	$('#dropdown1').ejDropDownList({
 			
-            	targetID: "mailtoolslist"
+            	targetID: "tools"
 				
         	});
 			

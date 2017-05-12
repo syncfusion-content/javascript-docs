@@ -38,10 +38,10 @@ Initialize the **Uploadbox** using the following code example.
     $("#UploadDefault").ejUploadbox({
         saveUrl: "save.ashx",
         removeUrl: "removeFiles.ashx",
-        error: "fileuploaderror",
+        error: "error",
         fileSize: 1048576 //bytes
     });
-    function fileuploaderror(e, ui) {
+    function error(e, ui) {
         alert(e.error);
     }
 

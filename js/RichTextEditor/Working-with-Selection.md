@@ -20,7 +20,7 @@ N> the selection highlight is invisible if the editor does not have focus. So, i
 
 {% highlight html %}
 
-    <textarea id="texteditor"></textarea>
+    <textarea id="editor"></textarea>
 
     <button onclick="selectAll()">Select All</button>
 
@@ -28,7 +28,7 @@ N> the selection highlight is invisible if the editor does not have focus. So, i
 
         $(function () {
 
-            $("#texteditor").ejRTE({
+            $("#editor").ejRTE({
                 value: "The RichTextEditor (RTE) control enables you to edit the contents with insert table and images," +
                 " it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.",
             });
@@ -36,7 +36,7 @@ N> the selection highlight is invisible if the editor does not have focus. So, i
         });
 
         function selectAll() {
-            var editor = $("#texteditor").ejRTE("instance");
+            var editor = $("#editor").ejRTE("instance");
             editor.selectAll();
         }
 
@@ -49,17 +49,17 @@ You can programmatically select a range of content in the editor using the selec
 
 {% highlight html %}
 
-<textarea id="texteditor"></textarea>
+<textarea id="editor"></textarea>
 
 <script type="text/javascript">
 
         $(function () {
 
-            $("#texteditor").ejRTE({
+            $("#editor").ejRTE({
                 value: "<ul>" + "<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>" + "<li>Aliquam tincidunt mauris eu risus.</li>" + "<li>Vestibulum auctor dapibus neque.</li>" + "</ul>"
             });
 
-            var editor = $("#texteditor").ejRTE("instance");
+            var editor = $("#editor").ejRTE("instance");
             range = editor.createRange();
             var liTag = $(editor.getDocument().body).find("li");        
             if (!editor._isIE8()) {
@@ -85,7 +85,7 @@ The following public methods helps you to retrieve the selected content from the
 
 {% highlight html %}
 
-    <textarea id="texteditor"></textarea>
+    <textarea id="editor"></textarea>
 
     <button onclick="getSelection()">get Selection</button>
 
@@ -93,7 +93,7 @@ The following public methods helps you to retrieve the selected content from the
 
         $(function () {
 
-            $("#texteditor").ejRTE({
+            $("#editor").ejRTE({
                 value: "The RichTextEditor (RTE) control enables you to edit the contents with insert table and images," +
                 " it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.",
             });
@@ -101,7 +101,7 @@ The following public methods helps you to retrieve the selected content from the
         });
 
         function getSelection() {
-            var editor = $("#texteditor").ejRTE("instance");
+            var editor = $("#editor").ejRTE("instance");
             var selectedText = editor.getText();
             var selectedHtml = editor.getSelectedHtml();
         }
