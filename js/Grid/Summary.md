@@ -303,6 +303,44 @@ To show summaries in each Group's Caption row, particular [summary row](https://
 
 W> Minimum one column should be grouped to show summary details.
 
+## Summary Template
+
+Using `template` property of `summaryColumns` you can render any type of JsRender templates or customizing the summary value.
+
+The following code example describes the above behavior.
+
+{% highlight html %}
+<div id="Grid"></div>
+<script id="templateData" type="text/x-jsrender">
+     Freight has Average of {{:summaryValue}} in  dollars
+</script>
+{% endhighlight %}
+
+{% highlight javascript %}
+$(function () {
+	$("#Grid").ejGrid({
+    	 dataSource: ej.DataManager(window.gridData).executeLocal(new ej.Query().take(5)),
+         showSummary: true,
+         summaryRows: [{ 
+             title: "Average",
+             summaryColumns: [{ 
+                 summaryType: ej.Grid.SummaryType.Average, 
+                 displayColumn: "Freight", 
+                 dataMember: "Freight",  
+                 template: "#templateData",
+                 format: "{0:C2}"
+             }]
+          }],
+         columns: [{ field: "OrderID" },{ field: "EmployeeID" },{ field: "Freight", format: "{0:C}" }]
+	});
+});
+
+{% endhighlight %}
+
+The following output is displayed as a result of the above code example.
+
+![](Summary_images/summaryGrid_img8.png)
+
 ## Format
 
 To format Summary values, [`format`](https://help.syncfusion.com/api/js/ejgrid#members:summaryrows-summarycolumns-format "format") property needs to be assigned in [`summaryColumns`](https://help.syncfusion.com/api/js/ejgrid#members:summaryrows-summarycolumns "summaryColumns") collection object.  To know more about formatting options. Please refer [**globalize.js**](https://github.com/jquery/globalize/tree/v0.1.1#)
