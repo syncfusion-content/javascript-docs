@@ -9,7 +9,7 @@ keywords: spellcheck, ejspellcheck, syncfusion, spellcheck api
 
 ## CheckWords
 
- [GET] [/Api/SpellCheck/CheckWords](http://js.syncfusion.com/demos/ejservices/api/SpellCheck/CheckWords)
+[GET] [/Api/SpellCheck/CheckWords](http://js.syncfusion.com/demos/ejservices/api/SpellCheck/CheckWords)
 
 It is used for splitting the input string into separate words and checking whether it is an erroneous word or not. Also, it forms a list of error words and its corresponding suggestions as a collection.  
 
@@ -43,38 +43,47 @@ Response (JSON):
 {% highlight js %}
 
 $(function () {
-$("#TextArea").ejSpellCheck({
-dictionarySettings: {
-	dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/CheckWords"
-}
-});
-$("#SpellCheck").ejButton({ width: "200px", height: "25px", click: "showDialog", text: "Spell check using dialog" });
+    $("#TextArea").ejSpellCheck({
+        dictionarySettings: {
+	        dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/CheckWords"
+        }
+    });
+    
+    $("#SpellCheck").ejButton({ width: "200px", height: "25px", click: "showDialog", text: "Spell check using dialog" });
 });
 
 function showDialog() {
-var spellObj = $("#TextArea").data("ejSpellCheck");
-spellObj.showInDialog();
+    var spellObj = $("#TextArea").data("ejSpellCheck");
+    spellObj.showInDialog();
 }
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-        [AcceptVerbs("Get")]
+        [AcceptVerbs("Get","Post")]
         [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
         public object CheckWords(string callback, string data)
         {
             var serializer = new JavaScriptSerializer();
             Actions args = (Actions)serializer.Deserialize(data, typeof(Actions));
-            baseDictionary.IgnoreAlphaNumericWords = args.Model.IgnoreAlphaNumericWords;
-            baseDictionary.IgnoreEmailAddress = args.Model.IgnoreEmailAddress;
-            baseDictionary.IgnoreMixedCaseWords = args.Model.IgnoreMixedCaseWords;
-            baseDictionary.IgnoreUpperCaseWords = args.Model.IgnoreUpperCase;
-            baseDictionary.IgnoreUrl = args.Model.IgnoreUrl;
-            baseDictionary.IgnoreFileNames = args.Model.IgnoreFileNames;
-            var errorWordsCollection = this.SplitWords(args.Text);
-            HttpContext.Current.Response.Write(string.Format("{0}({1});", callback, serializer.Serialize(errorWordsCollection)));
-            return string.Empty;
+            if (args.RequestType == "checkWords")
+            {
+                baseDictionary.IgnoreAlphaNumericWords = args.Model.IgnoreAlphaNumericWords;
+                baseDictionary.IgnoreEmailAddress = args.Model.IgnoreEmailAddress;
+                baseDictionary.IgnoreMixedCaseWords = args.Model.IgnoreMixedCaseWords;
+                baseDictionary.IgnoreUpperCaseWords = args.Model.IgnoreUpperCase;
+                baseDictionary.IgnoreUrl = args.Model.IgnoreUrl;
+                baseDictionary.IgnoreFileNames = args.Model.IgnoreFileNames;
+                var errorWords = this.SplitWords(args.Text);
+                HttpContext.Current.Response.Write(string.Format("{0}({1});", callback, serializer.Serialize(errorWords)));
+            }
+            else if (args.RequestType == "getSuggestions")
+            {
+                var suggestions = baseDictionary.GetSuggestions(args.ErrorWord);                
+                HttpContext.Current.Response.Write(string.Format("{0}({1});", callback, serializer.Serialize(suggestions)));
+            }
+            return string.Empty;                        
         }
 
 {% endhighlight %}
@@ -114,25 +123,26 @@ Output:
 {% highlight js %}
 
 $(function () {
-$("#TextArea").ejSpellCheck({
-dictionarySettings: {
-	dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/CheckWords",
-	customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/AddToDictionary"
-}
-});
-$("#SpellCheck").ejButton({ width: "200px", height: "25px", click: "showDialog", text: "Spell check using dialog" });
+    $("#TextArea").ejSpellCheck({
+        dictionarySettings: {
+	        dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/CheckWords",
+	        customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/AddToDictionary"
+        }
+    });
+    
+    $("#SpellCheck").ejButton({ width: "200px", height: "25px", click: "showDialog", text: "Spell check using dialog" });
 });
 
 function showDialog() {
-var spellObj = $("#TextArea").data("ejSpellCheck");
-spellObj.showInDialog();
+    var spellObj = $("#TextArea").data("ejSpellCheck");
+    spellObj.showInDialog();
 }
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-        [AcceptVerbs("Get")]
+        [AcceptVerbs("Get","Post")]
         [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
         public object AddToDictionary(string callback, string data)
         {
@@ -177,22 +187,7 @@ Helper Classes:
                 }
             }
             return flag;
-        }
-
-        private ObservableCollection<string> GetSuggestions(string word)
-        {
-            var suggestions = baseDictionary.GetSuggestions(word);
-            var suggest = new ObservableCollection<string>();
-            foreach (KeyValuePair<string, List<string>> pair in suggestions)
-            {
-                foreach (string suggestedWord in pair.Value)
-                {
-                    suggest.Add(suggestedWord);
-                }
-            }
-            return suggest;
-        }
-
+        }        
         private void AddToCustomDictionary(string word)
         {
             using (System.IO.StreamWriter file = new System.IO.StreamWriter(_customFilePath, true))
@@ -201,8 +196,7 @@ Helper Classes:
             }
             this.CustomFileRead();
         }
-
-        private List<SuggestionList> SplitWords(string text)
+        private List<Status> SplitWords(string text)
         {
             var words = text.Split(null);
             foreach (var word in words)
@@ -216,7 +210,7 @@ Helper Classes:
                     textWord = word;
                     if (this.CheckWord(textWord))
                     {
-                        this.GetItems(textWord);
+                        this.GetStatus(textWord);
                     }
                 }
                 else if (Regex.IsMatch(word,
@@ -227,7 +221,7 @@ Helper Classes:
                     textWord = word;
                     if (this.CheckWord(textWord))
                     {
-                        this.GetItems(textWord);
+                        this.GetStatus(textWord);
                     }
                 }
                 else if(Regex.IsMatch(word, @"[a-zA-Z0-9_$\-\.\\]*\\[a-zA-Z0-9_$\-\.\\]+"))
@@ -235,7 +229,7 @@ Helper Classes:
                     textWord = word;
                     if (this.CheckWord(textWord))
                     {
-                        this.GetItems(textWord);
+                        this.GetStatus(textWord);
                     }
                 }
                 else
@@ -252,27 +246,25 @@ Helper Classes:
                     {
                         textWord = word;
                     }
-                    this.GetItems(textWord);
+                    this.GetStatus(textWord);
                 }
             }
-            return items;
+            return errorWords;
         }
-
-        private List<SuggestionList> GetItems(string textWord)
+        private List<Status> GetStatus(string textWord)
         {
             var splitWords = Regex.Replace(textWord, @"[^0-9a-zA-Z\'_]", " ").Split(null);
-            foreach (string inputWord in splitWords)
+            foreach (var inputWord in splitWords)
             {
                 if (this.CheckWord(inputWord))
                 {
-                    items.Add(new SuggestionList
+                    errorWords.Add(new Status
                     {
-                        ErrorWord = inputWord,
-                        SuggestedWords = this.GetSuggestions(inputWord)
+                        ErrorWord = inputWord
                     });
                 }
             }
-            return items;
+            return errorWords;
         }       
 
 {% endhighlight %}
@@ -296,11 +288,13 @@ SpellModel Class Definition :
         public string Text { get; set; }
         public string CustomWord { get; set; }
         public SpellModel Model { get; set; }
+        public string RequestType { get; set; }
+        public string ErrorWord { get; set; }
     }
-    public class SuggestionList
+    
+    public class Status
     {
         public string ErrorWord { get; set; }
-        public ObservableCollection<string> SuggestedWords { get; set; }
     }
 
 {% endhighlight %}
