@@ -26,7 +26,7 @@ By default, the SpellCheck control is localized in **en-US** culture. Please fin
                 SpellCheckButtonText
             </td>
             <td>
-                SpellCheck
+                Spelling
             </td>
         </tr>
         <tr>
@@ -34,7 +34,7 @@ By default, the SpellCheck control is localized in **en-US** culture. Please fin
                 NotInDictionary
             </td>
             <td>
-                Not In Dictionary
+                Not in Dictionary
             </td>
         </tr>
         <tr>
@@ -106,12 +106,12 @@ By default, the SpellCheck control is localized in **en-US** culture. Please fin
                 CompletionPopupTitle
             </td>
             <td>
-                Spell check alert
+                Spell check
             </td>
         </tr>
         <tr>
             <td>
-                OK
+                Ok
             </td>
             <td>
                 OK
@@ -123,6 +123,14 @@ By default, the SpellCheck control is localized in **en-US** culture. Please fin
             </td>
             <td>
                 No suggestions available
+            </td>
+        </tr>
+		 <tr>
+            <td>
+                NotValidElement
+            </td>
+            <td>
+                Specify the valid control id or class name to spell check
             </td>
         </tr>
 </table>
