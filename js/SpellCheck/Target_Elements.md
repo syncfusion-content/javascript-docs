@@ -51,7 +51,7 @@ The following code example describes the spell checking of HTML element’s.
 
 {% endhighlight %}
 
-## IFrame Elements
+## IFrame Element
 
 {% highlight html %}
 
@@ -109,7 +109,7 @@ You can append the styles of error word from the application side, while perform
 {% endhighlight %}
 
 
-# Multiple Target
+## Multiple Target
 
 The SpellCheck control has support for multiple target HTML element’s texts spelling and correct its error words. This can be achieved by passing the target HTML elements “id” values or “CSS Class Name” or combination of both id and class names to the property “controlsToValidate”.
 
@@ -197,7 +197,7 @@ The following code example describes the spell checking of HTML element’s.
 
 The spellcheck component iterates through the target elements which specified in the “controlsToValidate” property, and process the element’s content one by one in the order of CSS elements, and id specified elements.
 
-## IFrame Element
+IFrame Element
 
 {% highlight html %}
 
