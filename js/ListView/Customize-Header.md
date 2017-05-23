@@ -21,7 +21,7 @@ Refer the following code example.
 {% highlight html %}
 
 
-        <div id="defaultlistbox">
+        <div id="defaultlistview">
         <ul>
             <li data-ej-text="Artwork"></li>
             <li data-ej-text="Abstract"></li>
@@ -43,7 +43,7 @@ Add the following script in your code.
 {% highlight javascript %}
  
         $(function () {
-            $("#defaultlistbox").ejListView({showHeader:true, **showHeaderBackButton:true, headerBackButtonText :"Menu"**, width:400});
+            $("#defaultlistview").ejListView({showHeader:true, **showHeaderBackButton:true, headerBackButtonText :"Menu"**, width:400});
         });
 
 {% endhighlight %}

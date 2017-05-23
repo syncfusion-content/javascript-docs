@@ -91,7 +91,7 @@ Here the CustomerID field is mapped with text property of the field object. The 
 </ul>
     <script type="text/javascript">
         jQuery(function ($) {
-            //create datamanager
+            //create data manager
             var dataManager = ej.DataManager({
                 //OData service
                 url: "http://mvc.syncfusion.com/Services/Northwnd.svc/"
@@ -125,7 +125,7 @@ Here the CustomerID field is mapped with text property of the field object. The 
 
 
         jQuery(function ($) {
-            //create datamanager
+            //create data manager
             var dataManager = ej.DataManager({
                 //ASP.NET Web API
                 url: "http://mvc.syncfusion.com/UGService/api/Orders",
@@ -169,7 +169,7 @@ This mode allows you to load the list box data while scrolling i.e. each time th
 
 
         jQuery(function ($) {
-            //create datamanager
+            //create data manager
             var dataManager = ej.DataManager({
                 //OData service
                 url: "http://mvc.syncfusion.com/Services/Northwnd.svc/"
@@ -210,7 +210,7 @@ The number of items to be loaded per request can be specified using the “itemR
 
 
         jQuery(function ($) {
-            //create datamanager
+            //create data manager
             var dataManager = ej.DataManager({
                 //OData service
                 url: "http://mvc.syncfusion.com/Services/Northwnd.svc/"
@@ -261,7 +261,7 @@ N> The “itemRequestCount” property will work only when “virtualScrollMode�
 
 
      jQuery(function ($) {
-            //create datamanager
+            //create data manager
             var dataManager = ej.DataManager({
                 //OData service
                 url: "http://mvc.syncfusion.com/Services/Northwnd.svc/"
