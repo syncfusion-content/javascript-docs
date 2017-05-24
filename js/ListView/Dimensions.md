@@ -19,7 +19,7 @@ Refer to the following code examples.
 {% highlight html %}
 
 
-    <div id="defaultlistbox">
+    <div id="defaultlistview">
         <ul>
             <li data-ej-text="Artwork"></li>
             <li data-ej-text="Abstract"></li>
@@ -40,7 +40,7 @@ Add the following script in your code.
 {% highlight javascript %}
 
         $(function () {
-            $("#defaultlistbox").ejListView({ width: 300, height: 600 });
+            $("#defaultlistview").ejListView({ width: 300, height: 600 });
         });
 
 {% endhighlight %}

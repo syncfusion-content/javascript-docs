@@ -103,7 +103,7 @@ Both the ListBox widgets are bound to a remote data source.
     </div>    
     <script type="text/javascript">
         jQuery(function ($) {
-            //create datamanager
+            //create data manager
             var dataManager1 = ej.DataManager({
                 //ASP.NET Web API
                 url: "http://mvc.syncfusion.com/UGService/api/Orders",
@@ -116,7 +116,7 @@ Both the ListBox widgets are bound to a remote data source.
                 allowDrag: true
             });
 
-            //create datamanager
+            //create data manager
             var dataManager2 = ej.DataManager({
                 //OData service
                 url: "http://mvc.syncfusion.com/Services/Northwnd.svc/"

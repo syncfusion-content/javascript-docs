@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Validation in AutoComplete widget for Essential JS
-description: How to use jquery validation for the AutoComplete.
+description: How to use jQuery validation for the AutoComplete.
 platform: js
 control: AutoComplete
 documentation: ug
-keywords: ejautocomplete, autocomplete widget, autocomplete ui, js autocomplete, jquery autocomplete, web autocomplete, ej autocomplete, essential javascript autocomplete,
+keywords: ejautocomplete, autocomplete widget, autocomplete ui, js autocomplete, jQuery autocomplete, web autocomplete, ej autocomplete, essential javascript autocomplete,
 api: /api/js/ejautocomplete
 ---
 

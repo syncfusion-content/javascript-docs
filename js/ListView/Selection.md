@@ -21,7 +21,7 @@ Refer the following code examples.
 {% highlight html %}
 
 
-    <div id="defaultlistbox">
+    <div id="defaultlistview">
         <ul>
             <li data-ej-text="Artwork"></li>
             <li data-ej-text="Abstract"></li>
@@ -43,7 +43,7 @@ Add the following script in your code.
 {% highlight javascript %}
 
         $(function () {
-            $("#defaultlistbox").ejListView({ enableCheckMark: true, width: 400 });
+            $("#defaultlistview").ejListView({ enableCheckMark: true, width: 400 });
         });
 
 {% endhighlight %}
@@ -67,7 +67,7 @@ Refer the following code examples.
 {% highlight html %}
 
 
-    <div id="defaultlistbox">
+    <div id="defaultlistview">
         <ul>
             <li data-ej-text="Artwork"></li>
             <li data-ej-text="Abstract"></li>
@@ -89,7 +89,7 @@ Add the following script in your code.
 {% highlight javascript %}
 
         $(function () {
-            $("#defaultlistbox").ejListView({ preventSelection: true, width: 400 });
+            $("#defaultlistview").ejListView({ preventSelection: true, width: 400 });
         });
 
 {% endhighlight %}
@@ -107,7 +107,7 @@ Refer the following code examples.
 {% highlight html %}
 
 
-    <div id="defaultlistbox">
+    <div id="defaultlistview">
         <ul>
             <li data-ej-text="Artwork"></li>
             <li data-ej-text="Abstract"></li>
@@ -129,7 +129,7 @@ Add the following script in your code.
 {% highlight javascript %}
     
         $(function () {
-            $("#defaultlistbox").ejListView({ persistSelection: true, width: 400 });
+            $("#defaultlistview").ejListView({ persistSelection: true, width: 400 });
         });
 
 {% endhighlight %}
