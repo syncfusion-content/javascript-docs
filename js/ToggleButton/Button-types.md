@@ -79,7 +79,7 @@ In the **HTML** page, add the following button elements to configure **Toggle Bu
               type: "submit",
               showRoundedCorner: true,
               defaultText: "submit",
-              activeText: "submited",
+              activeText: "submitted",
           });
           $("#type_mini").ejToggleButton({
               size: "large",
