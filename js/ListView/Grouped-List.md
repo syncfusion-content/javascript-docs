@@ -21,7 +21,7 @@ Refer the following code example.
 {% highlight html %}
 
 
-    <div id="defaultlistbox" >
+    <div id="defaultlistview" >
         <ul data-ej-grouplisttitle="Network">
             <li data-ej-text="Airplane Mode"></li>
             <li data-ej-text="Wi-Fi"></li>
@@ -48,7 +48,7 @@ Add the following script in your code.
 {% highlight javascript %}
 
         $(function () {
-            $("#defaultlistbox").ejListView({ width:400, enableGroupList:true });
+            $("#defaultlistview").ejListView({ width:400, enableGroupList:true });
         });
 
 {% endhighlight %}
@@ -71,7 +71,7 @@ Refer the following code examples.
 {% highlight html %}
 
 
-    <div id="defaultlistbox" >
+    <div id="defaultlistview" >
         <ul data-ej-grouplisttitle="Network">
             <li data-ej-text="Airplane Mode"></li>
             <li data-ej-text="Wi-Fi"></li>
@@ -104,7 +104,7 @@ Add the following script in your code.
 {% highlight javascript %}
 
         $(function () {
-            $("#defaultlistbox").ejListView({showHeader: true, headerTitle: "Favourite", width:400, enableGroupList:true});
+            $("#defaultlistview").ejListView({showHeader: true, headerTitle: "Favourite", width:400, enableGroupList:true});
         });
 
 {% endhighlight %}
