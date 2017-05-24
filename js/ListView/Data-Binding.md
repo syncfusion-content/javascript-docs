@@ -21,7 +21,7 @@ Create div element to render the ListView sample.
 {% highlight html %}
 
 
-    <div id="defaultlistbox" ></div>
+    <div id="defaultlistview" ></div>
     
 {% endhighlight %}
 
@@ -52,7 +52,7 @@ Add the following script in your code.
                  { "text": "Web MVC" }];
                  
         $(function () {
-            $("#defaultlistbox").ejListView({dataSource:window.dbitem, width:400});
+            $("#defaultlistview").ejListView({dataSource:window.dbitem, width:400});
         });
 
 

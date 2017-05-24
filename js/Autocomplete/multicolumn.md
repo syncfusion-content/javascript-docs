@@ -11,7 +11,7 @@ api: /api/js/ejautocomplete
 
 # Multiple Columns
 
-The Autocomplete adds support for selecting multiple columns in the dropdown list. This mutliplemultiple column options can be enabled and customized through the [MultiColumnSettings](https://help.syncfusion.com/api/js/ejautocomplete#members:multiColumnSettings) property.
+The Autocomplete adds support for selecting multiple columns in the dropdown list. This multiple column options can be enabled and customized through the [MultiColumnSettings](https://help.syncfusion.com/api/js/ejautocomplete#members:multiColumnSettings) property.
  
 In AutoComplete Multiple Column search is based on [stringFormat](https://help.syncfusion.com/api/js/ejautocomplete#members:multiColumnSettings-stringFormat) property which specifies column indices. 
 
