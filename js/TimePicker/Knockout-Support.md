@@ -33,7 +33,7 @@ The following example depicts the way to bind data to the **TimePicker** widget 
 
 <html>
 <head>
-    <title>Essential Studio for JavaScript : Timepicker KnockOut</title>
+    <title>Essential Studio for JavaScript : Timepicker Knockout</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8" />
     <!-- Style sheet for default theme (flat azure) -->
     <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />

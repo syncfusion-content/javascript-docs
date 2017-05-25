@@ -79,7 +79,7 @@ Setting a ButtonMode to radio, we can perform the only single action with all re
 
                 <li>
 
-                    Credi Card
+                    Credit Card
 
                 </li>
 

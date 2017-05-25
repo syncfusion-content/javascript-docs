@@ -35,7 +35,7 @@ The following code example depicts the way to bind data to the **ColorPicker** w
 <html lang="en" ng-app="PickerCtrl">
 <head>
     <meta charset="utf-8">
-    <title>Essential Studio for JavaScript : ColorPicker - Angular support</title>
+    <title>Essential Studio for JavaScript : ColorPicker - AngularJS support</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8"   />
     <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
     <!--scripts-->
@@ -56,7 +56,7 @@ The following code example depicts the way to bind data to the **ColorPicker** w
                         <div class="element" style="margin-left: 234px">
                             <input id="custom" ej-colorpicker e-value="colorValue" e-modeltype="picker" />
                         </div>
-                        <h6><span style="font-style: italic; font-weight: normal; position: absolute; margin-top: 5px;margin-left: 45px;">Note:Two Way Angular Support</span></h6>
+                        <h6><span style="font-style: italic; font-weight: normal; position: absolute; margin-top: 5px;margin-left: 45px;">Note:Two Way AngularJS Support</span></h6>
                     </div>
                 </div>
             </div>
