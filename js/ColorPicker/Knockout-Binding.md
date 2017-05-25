@@ -35,7 +35,7 @@ The following example depicts how you can bind data to the **ColorPicker** widge
 <!doctype html>
 <html>
 <head>
-    <title>Essential Studio for JavaScript : ColorPicker - KnockOut</title>
+    <title>Essential Studio for JavaScript : ColorPicker - Knockout</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8"   />
     <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
