@@ -1,0 +1,183 @@
+---
+layout: post
+title: Custom Buttons
+description: Custom Buttons
+platform: JS
+control: Button
+documentation: ug
+---
+# Custom Buttons
+
+Essential JavaScript Button control has an option of using normal ejButton as **Custom Button** to give visual weight to ejButton which helps user interface to notify and differentiate the priority action button with the other normal buttons.
+
+Custom Buttons includes six predefined button styles and each button indicates unique sign of action to the user.
+
+List of Custom Buttons
+
+<table>
+   <tr>
+      <th>Button Types</th>
+      <th>Class</th>
+      <th>Description</th>
+   <tr>
+      <td>Primary Button</td>
+      <td>e-primary</td>
+      <td>Provides extra visual weight and identifies the primary action in a set of buttons</td>
+  </tr>
+   <tr>
+      <td>Link Button</td>
+      <td>e-link</td>
+      <td>Deemphasize a button by making it look like a link while maintaining button behavior.</td>
+  </tr>
+   <tr>
+     <td> Success Button</td>
+      <td>e-success</td>
+      <td>Indicates a successful or positive action.</td>
+   </tr>
+   <tr>
+      <td> Information Button</td>
+      <td>e-info</td>
+      <td>Indicates a informative sign action to user</td>
+   </tr>
+   <tr>
+   <td>Warning Button</td>
+   <td>e-warning</td>
+   <td>Indicates the warning action.</td>
+   </tr>
+   <tr>
+   <td>Danger Button</td>
+   <td>e-danger</td>
+   <td>Indicates the danger sign action to user.</td>
+   </tr>
+</table>
+
+To customize ejButton as anyone type of custom Buttons ,assign CSS class name of the custom button (For Ex:**e-success**) to cssClass property of ejButton.
+
+The following steps explains you the details about customizing normal ejButton with above mentioned button types.
+
+{% highlight html %}
+
+    <div class="content-container-fluid">
+        <div class="row">
+            <div class="cols-sample-area">
+                <div class="frame">
+                    <div class="control">
+                        <div class="btnsht">
+                            <button id="PrimaryBtn">Primary</button>
+                        </div>
+                        <div class="btnsht">
+                            <button id="DangerBtn">Danger</button>
+                        </div>
+                        <div class="btnsht">
+                            <button id="InfoBtn">Information</button>
+                        </div>
+                        <div class="btnsht">
+                            <button id="WarningBtn">Warning</button>
+                        </div>
+                        <div class="btnsht">
+                            <button id="SuccessBtn">Success</button>
+                        </div>
+                        <div class="btnsht">
+                            <button id="LinkBtn">Link</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     
+{% endhighlight %}
+
+{% highlight javascript %}
+
+     $(function () {
+            //  declaration
+            $("#PrimaryBtn").ejButton({
+                size: "medium",
+                showRoundedCorner: true,
+                cssClass: 'e-primary'
+            });
+            $("#DangerBtn").ejButton({
+                showRoundedCorner: true,
+                size: "medium",
+                cssClass: 'e-danger'
+            });
+            $("#InfoBtn").ejButton({
+                showRoundedCorner: true,
+                size: "medium",
+                cssClass: 'e-info'
+            });
+            $("#WarningBtn").ejButton({
+                showRoundedCorner: true,
+                size: "medium",
+                cssClass: 'e-warning'
+            });
+            $("#LinkBtn").ejButton({
+                size: "medium",
+                showRoundedCorner: true,
+                cssClass: 'e-link'
+            });
+            $("#SuccessBtn").ejButton({
+                size: "medium",
+                showRoundedCorner: true,
+                cssClass: 'e-success'
+            });
+        });
+    
+{% endhighlight %}
+
+{% highlight css %}
+
+      .frame {
+            margin: auto;
+            width: 400px;
+        }
+
+        .control .btnsht {
+            width: 125px;
+            display: inline-block;
+        }
+        .e-btn.e-select.e-btn-medium{
+            width:115px;
+        }
+
+{% endhighlight %}
+
+Execute the above code to render the following output.
+
+![](/js/Button/Custom-Buttons_images/custom_buttons.png) 
+
+## Image in Button  
+
+The **Essential Studio for JavaScript** has an option of using custom image in a button by assigning a CSS class with background-image to prefixIcon or suffixIcon property of ejButton.Please,refer the following below steps.
+
+Create a custom CSS class with background-image property. Use the following syntax to apply class names.  
+
+**Syntax**: .e-icon .e-[icon name]
+
+{% highlight html %}
+
+.e-icon .e-syncfusion{
+    background-image: url('syncfusion.jpg');
+}
+
+{% endhighlight %}
+
+Now,assign this custom CSS class name to prefixIcon or suffixIcon property of the ejButton.
+
+{% highlight javascript %}
+
+    $("#buttonid").ejButton({
+        contentType: "imagetext",
+        prefixIcon: "e-icon e-syncfusion"
+        text:"Syncfusion"
+    });
+
+{% endhighlight %}
+
+Execute the above code to render the following output.
+
+![](/js/Button/Custom-Buttons_images/syncfusion.jpg)
+
+
+
