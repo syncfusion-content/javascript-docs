@@ -10,7 +10,7 @@ api: /api/js/ejtimepicker
 
 # AngularJS Support
 
-**TimePicker** widget is availed with two types of **angular JS** support namely, 
+**TimePicker** widget is availed with two types of **AngularJS** support namely, 
 
 * One way binding
 * Two way binding 
@@ -35,7 +35,7 @@ The following code example depicts you the way to bind data to the **TimePicker*
 
 <html ng-app="TimeCtrl">
 <head>
-    <title>Essential Studio for JavaScript : Timepicker angular</title>
+    <title>Essential Studio for JavaScript : Timepicker AngularJS</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8" />
     <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
     <!--scripts-->
@@ -52,7 +52,7 @@ The following code example depicts you the way to bind data to the **TimePicker*
                 <div class="frame" style="width: 30%; height: 17px;">
                     <div id="control" style="float: left;width: 45%;">
                         <input id="time" type="text" ej-timepicker e-value="tvalue" />
-                        <h6><span style="font-style: italic; font-weight: normal; position: absolute; margin-top: 5px;">Note:Two Way Angular Support</span></h6>
+                        <h6><span style="font-style: italic; font-weight: normal; position: absolute; margin-top: 5px;">Note:Two Way AngularJS Support</span></h6>
                     </div>
                     <div id="binding" style=" float: right;width: 45%;">
                         <input id="timectrl" type="text" ej-timepicker e-value="tvalue" e-interval="10" />

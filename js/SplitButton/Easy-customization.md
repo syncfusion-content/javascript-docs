@@ -375,9 +375,9 @@ In the **HTML** page, add the following button elements to configure **Split But
              //only images in both end is used as content
              contentType: "imageboth",
              showRoundedCorner: true,
-             //e-handup is a build in class, which specify font icon
+             //e-handup is a built-in class, which specify font icon
              prefixIcon: "e-icon e-handup",
-             //e-palette is a build in class, which specify font icon
+             //e-palette is a built-in class, which specify font icon
              suffixIcon: "e-icon e-palette",
              targetID: "Ul31",
          });

@@ -149,11 +149,11 @@ Initialize the element in **&lt;script&gt;** tag.
 
     var listBoxObj, colorObj;
     jQuery(function ($) {
-        //initliaze the listbox with object creation
+        //initialize the listbox with object creation
         listBoxObj = $("#selectcheck").ejListBox().data('ejListBox');
-        //initliaze the colorpicker with object creation
+        //initialize the colorpicker with object creation
         colorObj = $("#CategoryColor").ejColorPicker({ value: "#278787" }).data('ejColorPicker');
-        //initliaze the button
+        //initialize the button
         $("#AddCategory").ejButton({ text: "Add", width: "82px", height: "21px" });
     });
 
@@ -259,7 +259,7 @@ Initialize the click event for the button element in **&lt;script&gt;** tag.
 
     jQuery(function ($) {
         //reuse the previous section script block
-        //initliaze the button with click event
+        //initialize the button with click event
         $("#AddCategory").ejButton({ text: "Add", click: "addCategoryValue", width: "82px", height: "21px" });
     });
     //The following function used to add the new value to the listbox control

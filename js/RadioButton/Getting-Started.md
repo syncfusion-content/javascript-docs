@@ -58,7 +58,7 @@ Add input element to render a **RadioButton**.
         </tr>
     </table>
     <br/><br/><br/>
-    2.  What is the Expanson for USB ?<br />
+    2.  What is the Expansion for USB ?<br />
     <table>
         <tr>
             <td >
@@ -70,7 +70,7 @@ Add input element to render a **RadioButton**.
         </tr>
     </table>
     <br/><br/><br/>
-    3.   What is the Expanson for HTML ?<br />
+    3.   What is the Expansion for HTML ?<br />
     <table>
         <tr>
             <td>
