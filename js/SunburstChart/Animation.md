@@ -40,7 +40,7 @@ $("#chart"). ejSunburstChart ({
 
 {% endhighlight %}
 
-![](/js/SunburstChart/Animation_images/Animation_img1.gif)
+![](/js/SunburstChart/Animation_images/Animation_img2.gif)
 
 ### Rotation
 
@@ -55,6 +55,6 @@ $("#chart"). ejSunburstChart ({
 
 {% endhighlight %}
 
-![](/js/SunburstChart/Animation_images/Animation_img2.gif)
+![](/js/SunburstChart/Animation_images/Animation_img1.gif)
 
 [Click](http://js.syncfusion.com/demos/web/#!/bootstrap/sunburst/animation) here to view the online demo sample of  Animation in  the Sunburst Chart.
