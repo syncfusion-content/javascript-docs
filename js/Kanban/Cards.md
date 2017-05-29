@@ -117,7 +117,7 @@ The following code example describes the above behavior.
 {% highlight html %}
 
     <div id='Kanban'></div>
-    <script id="cardtemplate" type="text/x-jsrender">        
+    <script id="template" type="text/x-jsrender">        
             <table>
             <tr>
                 <td class="photo">
@@ -166,7 +166,7 @@ The following code example describes the above behavior.
             color: "Type",
         },
             cardSettings: {
-                template: "#cardtemplate",                    
+                template: "#template",                    
                 colorMapping: {
                     "#cb2027": "Bug,Story",
                     "#67ab47": "Improvement",
