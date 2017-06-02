@@ -10,6 +10,91 @@ api: /api/js/ejribbon
 
 # Appearance and Styling
 
+## CssClass 
+
+When you want to display the **Ribbon** widget in a different style based on the appearance of your application, you can use this **cssClass** property to apply custom theme for the **Ribbon**. Specify a class name as the value for **cssClass** property. The specified class is added to the wrapper of the **Slider** widget. Now, you can easily override the styles of the **Ribbon** widget by accessing the styles from the root level (using the cssClass specified).
+
+The following steps explains you on how to configure the **Ribbon** with custom theme using the **cssClass** property. Here, a class name “custom” is specified for the **cssClass**.
+
+In an **HTML** page, specify the **&lt;div&gt;** elements to render the “Ribbon”.
+
+{% highlight html %}
+
+<div id="Ribbon"></div>
+<ul id="ribbon">
+    <li>
+        <a>FILE</a>
+        <ul>
+            <li><a>New</a></li>
+        </ul>
+    </li>
+</ul>
+
+{% endhighlight %}
+
+
+{% highlight javascript %}
+
+$("#Ribbon").ejRibbon({
+    width: "500px",
+    cssClass: "custom",
+    applicationTab: {
+        type: ej.Ribbon.applicationTabType.menu,
+        menuItemID: "ribbon"
+    },
+    // tab item defined here
+    tabs: [{
+        id: "home",
+        text: "HOME",
+        // group with content & button settings
+        groups: [{
+            text: "New",
+            content: [{
+                groups: [{
+                    id: "new",
+                    text: "New",
+                    buttonSettings: {
+                        contentType: ej.ContentType.ImageOnly,
+                        prefixIcon: "e-ribbon e-new",
+                    }
+                }]
+            }]
+        }]
+    }]
+});
+
+{% endhighlight %}
+
+{% highlight css %}
+
+<style>
+
+.custom.e-js .e-header {
+    background: #179bd7;
+}
+
+.custom.e-js .e-content {
+   background: #ddd;
+}
+
+.custom .e-rbn-button.e-btn.e-select {
+    background: #f5f5f5;
+    color: #333;
+}
+
+</style>
+
+
+
+{% endhighlight %}
+
+
+Execute the above code example to render the following output.
+
+![](Appearance-and-Styling_images/Appearance-and-Styling_img1.png) 
+
+
+
 ## Themes
 
 Ribbon control’s style and appearance are controlled based on CSS classes and it has support of 12 default themes. You can check List of themes available for JavaScript’s control which is mentioned in [`this`](https://help.syncfusion.com/js/theming-in-essential-javascript-components) page.
