@@ -18,7 +18,7 @@ The following code example from request.html page illustrates this,
 {% highlight html %}
 
 <form id="myForm" action="response.html">
-        Enter Text : <textarea name="txtValue"><script>alert('attackers script that gather user information');</script>Original Input</textarea>
+        Enter Text : <textarea name="txtValue"><script>alert('Attackers script that gather user information');</script>Original Input</textarea>
         <input type="button" onclick="myFunction()" value="Submit form"></input>
     </form>
 
