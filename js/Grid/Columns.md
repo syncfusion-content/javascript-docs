@@ -898,4 +898,44 @@ The following output is displayed as a result of the above code example.
 
 ![](columns_images/columns_img24.png)
 
+## Column Layout
+
+You can set the Grid's columns layout based on either Grid width or its columns width using [`columnLayout`](https://help.syncfusion.com/api/js/ejgrid#members:columnlayout "columnLayout") property of Grid. There are two ways to set the column layout, they are 
+
+1. Auto
+2. Fixed
+
+N> 1. For [`columnLayout`](https://help.syncfusion.com/api/js/ejgrid#members:columnlayout "columnLayout") property you can assign either `string` value ("fixed") or `enum` value (`ej.Grid.ColumnLayout.Fixed`).
+N> 2. Default [`columnLayout`](https://help.syncfusion.com/api/js/ejgrid#members:columnlayout "columnLayout") is `auto` which is set the columns layout based on the Grid's width.
+
+The following code example describes the above behavior.
+
+{% highlight html %}
+<div id="Grid"></div>
+{% endhighlight %}
+
+{% highlight javascript %}
+$(function () {
+	$("#Grid").ejGrid({
+		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+		dataSource : window.gridData,
+		allowPaging : true,
+        columnLayout:ej.Grid.ColumnLayout.Fixed,
+		columns : [
+			{ field: "OrderID", width: 80 },
+            { field: "EmployeeID", width: 80 },
+            { field: "ShipCity", width: 90 },
+            { field: "ShipName", width: 110 },
+            { field: "ShipCountry", width: 100 },
+            { field: "Freight", headerText: "Freight", width: 80 }
+		]
+	});
+});
+{% endhighlight %}
+
+The following output is displayed as a result of the above code example.
+
+![](columns_images/columns_img25.png)
+
+
 
