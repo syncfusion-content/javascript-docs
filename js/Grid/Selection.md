@@ -144,7 +144,7 @@ $(function () {
 		allowPaging : true,
 		allowSelection : true,
 		selectionType : "multiple",
-		selectionSettings: {selectionMode: ["cell"], cellSelectionMode: "box" },
+		selectionSettings: {selectionMode: ["cell"], cellSelectionMode: ej.Grid.CellSelectionMode.Box },
 		columns : ["OrderID", "EmployeeID", "ShipCity", "ShipCountry", "Freight"]
 	});
 });
