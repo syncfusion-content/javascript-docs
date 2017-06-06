@@ -25,7 +25,7 @@ You can set the required distance the mouse should travel in order to initiate a
         background: #eee;
         padding: 10px;
         border: 1px solid black;
-      }
+        }
 
      #draggable-item {
         width: 30px;
@@ -35,7 +35,7 @@ You can set the required distance the mouse should travel in order to initiate a
         margin: 5px;
         background: #666;
         color: white;
-       }
+        }
     </style> 
  
 {% endhighlight %}

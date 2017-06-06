@@ -26,10 +26,6 @@ And the internal script dependencies of the Drag and Drop are:
 		<td>Must be referred always before using all the JS controls.</td>
 	</tr>
 	<tr>
-		<td>ej.data.min.js</td>
-		<td>Used to handle data operation and should be used while binding data to JS controls.</td>
-	</tr>
-	<tr>
 		<td>ej.draggable.min.js</td>
 		<td>Main file for Drag and Drop</td>
 	</tr>
@@ -87,7 +83,7 @@ Create a new HTML file and add [CDN](https://help.syncfusion.com/js/cdn) links t
 
  N>  In production, we highly recommend you to use our [custom script generator](https://help.syncfusion.com/js/include-only-the-needed-widgets#) to create custom script file with required controls and its dependencies only. Also to reduce the file size further please use [GZip compression](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/optimize-encoding-and-transfer?hl=en#text-compression-with-gzip) in your server. 
 
-## Initialize Drag and Drop
+## Initialize Drag And Drop
 
 You can make any Html elements to be draggable or droppable by using ejDraggable and ejDroppable.This section explains how to perform drag and drop using html elements
 
@@ -220,5 +216,20 @@ The below code explains how to make the movement constrained to the container bo
             }
 			});
     }); 
+
+{% endhighlight %}
+
+## Helper
+
+Helper can be used for the purpose of cloning. Helper will return the object of corresponding draggable element. You can drag the element by using helper. 
+
+{% highlight javascript %}	
+      $("#draggable-item").ejDraggable({
+	      helper:function (event) {
+	           return $(event.element);
+                   },
+	      clone:true
+	     });
+
 
 {% endhighlight %}

@@ -41,7 +41,8 @@ You can drag an element from list view and drop this into another element. The b
             height: 200px;
             border:1px solid #c8c8c8;
            }
-	     .contents {
+	     .contents
+		    {
              display: inline-block;
              padding:5px;
              position:absolute;
@@ -53,19 +54,20 @@ You can drag an element from list view and drop this into another element. The b
 	
      $(function () {
           $("#defaultlistbox").ejListView();
-	      $(".drag").ejDraggable({helper: function (event) {
-                    return $(event.element); // Object of the Draggable element.	
-                }
-            });
+	      $(".drag").ejDraggable({helper: function (event)
+		   {
+             return $(event.element); // Object of the Draggable element.	
+            }
+          });
 			
 	      $("#listitem").ejDroppable({
-              drop: function (event, ui) {
+             drop: function (event, ui) {
                 event.dropTarget.append(event.dragElement);
                 event.dropTarget.ejListView();
                 $("#listitem").find("li").attr("style","position:relative;left:0px;top:0px;list-style-type:none");
                 $("#listitem").find("li").removeClass("e-state-active").addClass("e-state-default");
-                }
-            });
+               }
+           });
         });
 
 {% endhighlight %}

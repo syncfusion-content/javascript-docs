@@ -25,7 +25,7 @@ You can get the dragged element from the args of [drag](https://help.syncfusion.
         background: #eee;
         padding: 10px;
         border: 1px solid black;
-      }
+        }
 
      #draggable-item {
         width: 30px;
@@ -35,7 +35,7 @@ You can get the dragged element from the args of [drag](https://help.syncfusion.
         margin: 5px;
         background: #666;
         color: white;
-      }
+        }
     </style>
      
 {% endhighlight %}
@@ -51,8 +51,8 @@ You can get the dragged element from the args of [drag](https://help.syncfusion.
 	      {
 	       console.log(args.element);
 	      }
-			});
-        }); 
+	   });
+    }); 
 
 
 {% endhighlight %}
