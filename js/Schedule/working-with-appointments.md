@@ -41,6 +41,7 @@ Appointments play a dynamic role within the Schedule control with which the user
 The appointments can be added/edited in the Scheduler using any one of the following ways,
 
 * Quick window
+* Inline Appointment creation/editing
 * Default appointment window
 * [Context menu](/js/schedule/context-menu)
 * Through programmatically
@@ -127,6 +128,83 @@ function onCellClick(args) {
 
 {% endhighlight %}
 
+#### Inline Appointment creation/editing
+
+Another easier way, alternative to quick window for adding or editing the appointment’s subject alone on the Scheduler in a quicker manner can be achieved using inline Add/Edit support. It allows the user to add and edit the appointments inline.
+To get familiar with inline adding mode, single click on any of the Scheduler cells or press `enter` key on the selected cells. When the inline adding mode is ON, a text box will get created within the clicked Scheduler cells with a blinking cursor in it requiring the user to enter the subject of the appointment. Once the subject is typed, the appointment will be saved on pressing the `enter` key. 
+To enable the inline edit mode, single click on any of the existing appointment’s subject, so that the user can edit the subject of that appointment. The edited subject of that appointment is then updated on pressing the `enter` key.
+
+The inline option can be enabled/disabled on Scheduler by using the [allowInline](/api/js/ejschedule#members:allowinline) API, whereas its default value is set to **false**.  
+
+
+{% highlight html %}
+
+<!--Container for ejScheduler widget-->
+<div id="schedule"></div>
+
+<script>
+$(function() {
+    $("#schedule").ejSchedule({
+        //enables the inline adding/editing on Scheduler 
+        allowInline: true, 
+        currentDate: new Date(2015, 11, 7),
+        appointmentSettings: {
+            //Array of JSON data configure in dataSource
+            dataSource: [{
+                Id: 1,
+                Subject: "Music Class",
+                StartTime: new Date("2015/11/7 06:00 AM"),
+                EndTime: new Date("2015/11/7 07:00 AM")
+            }, {
+                Id: 2,
+                Subject: "School",
+                StartTime: new Date("2015/11/7 9:00 AM"),
+                EndTime: new Date("2015/11/7 02:30 PM")
+            }]
+        }
+    });
+});
+</script>
+
+{% endhighlight %}
+#### Enabling Inline Edit alone
+A workaround can be done with Scheduler to disable the inline appointment creation and enabling only the editing mode of inline by making use of the cellClick event. The below code example shows the way to disable the inline appointment creation while clicking on the cells, but appointments can be edited while clicking on the appointment’s subject.
+
+
+{% highlight html %}
+
+<!--Container for ejScheduler widget-->
+<div id="schedule"></div>
+
+<script>
+$(function() {
+    $("#schedule").ejSchedule({
+        currentDate: new Date(2015, 11, 7),
+        showQuickWindow: true,
+        appointmentSettings: {
+            //Array of JSON data configure in dataSource
+            dataSource: [{
+                Id: 1,
+                Subject: "Music Class",
+                StartTime: new Date("2015/11/7 06:00 AM"),
+                EndTime: new Date("2015/11/7 07:00 AM")
+            }, {
+                Id: 2,
+                Subject: "School",
+                StartTime: new Date("2015/11/7 9:00 AM"),
+                EndTime: new Date("2015/11/7 02:30 PM")
+            }]
+        },
+        cellClick: "onCellClick"
+    });
+});
+
+function onCellClick(args) {
+    args.cancel = true; // Prevents inline appointment creation on clicking the cells.
+}	
+</script>
+
+{% endhighlight %}
 
 #### Default Appointment Window
 
