@@ -16,7 +16,7 @@ The FileExplorer provides the support for file and folder related operations and
 
 The toolbar element is placed in the Header section, and it having the list of tools to perform the file, navigation and search related operations.
 
-For more details about file action through toolbar, please refer [here](#toolbar).
+For more details about file action through toolbar, please refer [here](https://help.syncfusion.com/js/fileexplorer/toolbar).
 
 ## File action through Context menu
 
@@ -28,5 +28,5 @@ In FileExplorer, in the following places the context menu appears.
 * While right click on File / Folder
 * While right click on layout (content pane)
 
-For more details about file action through context menu, please refer [here](#context-menu).
+For more details about file action through context menu, please refer [here](https://help.syncfusion.com/js/fileexplorer/context-menu).
 
