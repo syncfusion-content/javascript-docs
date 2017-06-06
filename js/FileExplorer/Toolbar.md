@@ -116,7 +116,7 @@ It displays the details of the current selected file or folder.<br/><br/><br/><b
 <tr>
 <td>
 Search bar<br/><br/></td><td>
-The Search bar is the textbox which is used to search the files from the current directory. It list the files based on the user search.<br/><br/>The search behavior of the Search bar can be customize, for details check {{'[here](https://help.syncfusion.com/js/fileexplorer/toolbar#search-bar)'| markdownify }} <br/><br/><br/><br/></td></tr>
+The Search bar is the textbox which is used to search the files from the current directory. It list the files based on the user search.<br/><br/>The search behavior of the Search bar can be customize, for details check {{'[here](https://help.syncfusion.com/js/fileexplorer/toolbar#search-bar)'| markdownify }}.<br/><br/><br/><br/></td></tr>
 <tr>
 <td>Sort By<br/><br/></td>
 <td>
