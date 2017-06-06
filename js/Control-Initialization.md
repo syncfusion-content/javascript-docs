@@ -199,7 +199,7 @@ Add the `<input>` element within the `<body>` section, which acts as a container
 Open your HTML page in the web browser and the screen will display the DatePicker widget as shown below,
 ![](/js/Control-Initialization_images/Control-Initialization_img4.png)
 
-### Using different jquery version into your HTML page
+### Using different jquery versions into your HTML page
 
 If the different versions of jQuery is used into your HTML page `$.noConflict` method is used to resolve the conflict. 
 
@@ -226,9 +226,11 @@ The following code example illustrates this for `ej controls` with different ver
         <input id="startDate" type="text" /> 
 
 <script type="text/javascript">
+
     (function($){  
             $jqueryold("#startDate").ejDatePicker();
       })($jqueryold);
+
 </script>
 </body>
 </html>
