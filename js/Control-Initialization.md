@@ -199,6 +199,49 @@ Add the `<input>` element within the `<body>` section, which acts as a container
 Open your HTML page in the web browser and the screen will display the DatePicker widget as shown below,
 ![](/js/Control-Initialization_images/Control-Initialization_img4.png)
 
+### Using different jquery versions into your HTML page
+
+If the different versions of jQuery is used into your HTML page `$.noConflict` method is used to resolve the conflict. 
+
+The following code example illustrates this for `ej controls` with different version of jquery is used.
+
+{% highlight html %}
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>My first HTML page</title>
+        <link href="Content/ej/web/default-theme/ej.web.all.min.css" rel="stylesheet" />
+        <script src="Scripts/jquery-1.5.1.min.js"></script>
+        <script src="Scripts/jquery-1.7.1.min.js"></script>
+        <script src="Scripts/jsrender.min.js"></script>
+        <script src="Scripts/ej/ej.web.all.min.js"></script>
+        <script>
+           var $jqueryNew = jQuery.noConflict(true); // $jqueryNew refers the version 1.7.1
+        </script>
+    </head>
+    <body>     
+        <!--Container for ejDatePicker widget-->
+        <input id="startDate" type="text" /> 
+
+<script type="text/javascript">
+
+    (function($){  
+            $jqueryNew("#startDate").ejDatePicker();
+      })($jqueryNew);
+
+</script>
+</body>
+</html>
+
+
+{% endhighlight %}
+
+The following output is displayed as a result of the above code example.
+![](/js/Control-Initialization_images/Control-Initialization_img4.png)
+
+
 ## Using Syncfusion NuGet Package in Visual Studio for Scripts and style sheet reference
 
 Using the NuGet Package method in Visual Studio automates the process of copying the required Script files and style sheets directly into your application.
