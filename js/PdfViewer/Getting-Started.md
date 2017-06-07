@@ -85,6 +85,22 @@ To handle data operation and should be used while binding data to JS widgets.
 </tr>
 <tr>
 <td>
+ej.globalize.min.js
+</td>
+<td>
+To support the globalization.
+</td>
+</tr>
+<tr>
+<td>
+ej.draggable.js
+</td>
+<td>
+Used for drag and drop an element in JS controls.
+</td>
+</tr>
+<tr>
+<td>
 ej.pdfviewer.min.js
 </td>
 <td>
@@ -129,6 +145,63 @@ ej.waitingpopup.min.js
 </td>
 <td>
 To show waiting popups on loading and rendering.
+</td>
+</tr>
+<tr>
+<td>
+ej.checkbox.min.js
+</td>
+<td>
+To add checkboxes in the text search toolbar and annotation properties window.
+</td>
+</tr>
+<tr>
+<td>
+ej.tooltip.min.js
+</td>
+<td>
+To add tooltip in the widget.
+</td>
+</tr>
+<tr>
+<td>
+ej.colorpicker.min.js
+</td>
+<td rowspan="2">
+To add colorpicker in the text markup annotation tools and the annotation properties window.
+</td>
+</tr>
+<tr>
+<td>
+ej.splitbutton.min.js
+</td>
+</tr>
+<tr>
+<td>
+ej.maskedit.min.js
+</td>
+<td rowspan="5">
+To add properties window for annotations in the widget.
+</td>
+</tr>
+<tr>
+<td>
+ej.dialog.min.js
+</td>
+</tr>
+<tr>
+<td>
+ej.tab.min.js
+</td>
+</tr>
+<tr>
+<td>
+ej.menu.min.js
+</td>
+</tr>
+<tr>
+<td>
+ej.slider.min.js
 </td>
 </tr>
 </table>
