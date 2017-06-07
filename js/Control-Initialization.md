@@ -218,7 +218,7 @@ The following code example illustrates this for `ej controls` with different ver
         <script src="Scripts/jsrender.min.js"></script>
         <script src="Scripts/ej/ej.web.all.min.js"></script>
         <script>
-           var $jqueryold = jQuery.noConflict(true); 
+           var $jqueryNew = jQuery.noConflict(true); // $jqueryNew refers the version 1.7.1
         </script>
     </head>
     <body>     
@@ -228,8 +228,8 @@ The following code example illustrates this for `ej controls` with different ver
 <script type="text/javascript">
 
     (function($){  
-            $jqueryold("#startDate").ejDatePicker();
-      })($jqueryold);
+            $jqueryNew("#startDate").ejDatePicker();
+      })($jqueryNew);
 
 </script>
 </body>
