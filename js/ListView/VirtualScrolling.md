@@ -10,7 +10,7 @@ api: /api/js/ejlistview
 
 # Virtual Scrolling
 
-We can load large data on demand using [allowVirtualScrolling]("https://help.syncfusion.com/api/js/ejlistview#members:allowvirtualscrolling") property. By default, "allowVirtualScrolling" set as boolean value of **"false"**. When it is set true, list items will be loaded on every scroll action. The number of items to be loaded per request can be specified using the [itemRequestCount]("https://help.syncfusion.com/api/js/ejlistview#members:itemrequestcount")  property. By default “itemRequestCount” value will be 5. We have provided two type of option for virtualScrolling,
+We can load large data on demand using <a href="https://help.syncfusion.com/api/js/ejlistview#members:allowvirtualscrolling">allowVirtualScrolling</a> property. By default, "allowVirtualScrolling" set as boolean value of **"false"**. When it is set true, list items will be loaded on every scroll action. The number of items to be loaded per request can be specified using the <a href="https://help.syncfusion.com/api/js/ejlistview#members:itemrequestcount">itemRequestCount</a>  property. By default “itemRequestCount” value will be 5. We have provided two type of option for virtualScrolling,
  
  ## Normal Mode 
  This mode allows you to load the list view data while scrolling i.e. each time the scroll bar is scrolled, it will send request to the server to load the data.
