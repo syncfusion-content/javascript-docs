@@ -16,5 +16,4 @@ documentation: ug
 * **Drag Area** - The drag area is used to restrict the dragging element bounds. 
 * **Scope** - Used to group sets of draggable and droppable items. A draggable with the same scope value will be accepted by the droppable.
 * **Cursor At** - Sets the offset of the dragging helper relative to the mouse cursor.
-* **Helper** -Returns the draggable element object
-* **Accept**- Used to accept the specified draggable items. 
+* **Helper** -Returns the draggable element object.
