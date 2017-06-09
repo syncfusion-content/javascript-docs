@@ -197,6 +197,22 @@ After Dragging:
 
 ![](Getting-Started_images/Getting-Started-img3.png)
 
+### Helper
+
+Helper can be used for the purpose of cloning. Helper will return the object of corresponding draggable element. You can drag the element by using helper. 
+
+{% highlight javascript %}	
+
+      $("#draggable-item").ejDraggable({
+	      helper:function (event) {
+	           return $(event.element);
+                   },
+	      clone:true
+	     });
+
+
+{% endhighlight %}
+
 ## Set Boundaries 
 
 You can restrict the movement of draggable element within a specified area using dragArea property. 
@@ -248,19 +264,3 @@ The below code explains how to make the movement constrained to the container bo
 The drag element cannot be moved outside this boundary.
 
 ![](Getting-Started_images/Container.png)
-
-## Helper
-
-Helper can be used for the purpose of cloning. Helper will return the object of corresponding draggable element. You can drag the element by using helper. 
-
-{% highlight javascript %}	
-
-      $("#draggable-item").ejDraggable({
-	      helper:function (event) {
-	           return $(event.element);
-                   },
-	      clone:true
-	     });
-
-
-{% endhighlight %}

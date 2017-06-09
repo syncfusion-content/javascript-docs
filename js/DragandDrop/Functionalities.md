@@ -136,64 +136,68 @@ The below code illustrates how to use scope for grouping elements
         <div id="draggable"><span class="text3">Drag</span></div>
     </div>
     <style>
-         #draggable {
-                width: 55px;
-                height: 30px;
-                float: right;
-                line-height: 27px;
-                font-size: 11px;
-                display: inline-block;
-                background-color: #666;
-            }
+        #draggable {
+            width: 55px;
+            height: 26px;
+            float: right;
+            line-height: 27px;
+            font-size: 11px;
+            color: white;
+            display: inline-block;
+            background-color: #666;
+        }
 
-            .scope1, .scope2 {
-                font-size: 11px;
-                width: 70px;
-                height: 80px;
-                margin: 10px;
-            }
+        .scope1, .scope2 {
+            font-size: 11px;
+            width: 70px;
+            height: 80px;
+            margin: 10px;
+        }
 
-            .scope1 {
-                background-color: #eee;
-            }
+        .scope1 {
+            background-color: #eee;
+            margin-top: 10px;
+        }
 
-            .scope2 {
-                background-color: lightgray;
-            }
+        .scope2 {
+            background-color: lightgray;
+        }
 
-            #area {
-                width: 200px;
-                height: 240px;
-                border: grey 1px solid;
-            }
+        #area {
+            width: 200px;
+            height: 240px;
+            border: grey 1px solid;
+        }
 
-            .text1 {
-                margin-left: 6px;
-            }
+        .text1 {
+            margin-top: 22px;
+            padding: 6px;
+        }
 
-            .text2 {
-                margin-left: 2px;
-            }
+        .text2 {
+            margin-left: 2px;
+            margin-top: 10px;
+            padding: 11px;
+        }
 
-            .text1, .text2 {
-                font-size: 11px;
-                text-align: center;
-                line-height: 70px;
-                display: inline-block;
-            }
+        .text1, .text2 {
+            font-size: 12px;
+            text-align: center;
+            display: inline-block;
+        }
 
-            .text3 {
-                font-size: 11px;
-                color: white;
-                line-height: 26px;
-                margin-left: 16px;
-                display: inline-block;
-            }
+        .text3 {
+            font-size: 11px;
+            color: white;
+            line-height: 26px;
+            margin-left: 16px;
+            display: inline-block;
+        }
 
-            body {
-                font-family: -webkit-pictograph;
-            }
-  
+        body {
+            font-family: -webkit-pictograph;
+        }
+    
 		  
 	</style>
 {% endhighlight %}
@@ -215,21 +219,21 @@ The below code illustrates how to use scope for grouping elements
     $(".scope1").ejDroppable({
         scope: "scope1",
         over: function (event, ui) {
-            event.target.textContent = "You can Drop here";
+            $(".text1")[0].innerText = "You can drop here"
         },
         drop: function (event, ui) {
             event.dropTarget.text("");
-            event.dragElement.text("Dropped...!");
+            $(".text3")[0].innerText = "Dropped!"
             $("#draggable").css("color", "white");
+            $("#draggable").css("background", "#666");
         }
     });
 
     $(".scope2").ejDroppable({
         over: function (event, ui) {
-            event.target.textContent = "You can't Drop here";
+            $(".text2")[0].innerText = "You can't drop here"
         }
-    });
-		  
+    });		  
 {% endhighlight %}
 
 Before Drag:

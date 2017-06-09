@@ -13,7 +13,7 @@ api: /api/js/ejdraggable
 # How To
 
 
-## Move Between Lists:
+## Move Between Lists
 
 You can drag an element from list view and drop this into another element. The below code illustrates how to drag element from list view 
 
@@ -58,24 +58,30 @@ You can drag an element from list view and drop this into another element. The b
             
            }
         
-     .contents {
+      .contents {
             display: inline-block;
             padding: 5px;
             position: absolute;
           }
+     .clone
+		{
+         padding: 5px 5px 5px 0.857em;
+         list-style: none;
+		 opacity: 1; 
+		}
 	</style>
 {% endhighlight %}
 
 {% highlight javascript %}
 	
        $(function () {
-            var _clonedElement;
+            var cloneElement;
             $("#defaultlistbox").ejListView();
             $(".drag").ejDraggable({
                 helper: function (event) {
                     proxy = $(event.element).closest('.e-lv.e-js').data('ejListView');
-                    _clonedElement = $(event.element);
-                    _clonedElement.css({ "padding": "5px 5px 5px 0.857em", "list-style": "none", "opacity": "1" });
+                    cloneElement = $(event.element);
+                    cloneElement.addClass("clone");
                     return _clonedElement.appendTo($("body"));
 
                 },
@@ -160,10 +166,6 @@ You can get the dragged element from the args of [drag](https://help.syncfusion.
 
 
 {% endhighlight %}
-
-The output of above code will be as shown below:
-
-![](HowTo_images/dragelement.png)
 
 ## Order of Events 
 
