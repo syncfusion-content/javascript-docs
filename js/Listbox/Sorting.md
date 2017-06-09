@@ -10,7 +10,7 @@ api: /api/js/ejlistbox
 
 # Sorting
 
- We can change ListBox items rendering order either as ascending or descending, by using [ej.SortOrder]("https://help.syncfusion.com/api/js/ejlistbox#members:sortorder") property. By default ej.SortOrder will be "None". Please use code as like in below,
+ We can change ListBox items rendering order either as ascending or descending, by using [ej.SortOrder](https://help.syncfusion.com/api/js/ejlistbox#members:sortorder) property. By default ej.SortOrder will be "None". Please use code as like in below,
 
  {% tabs %} 
  {% highlight html %}
