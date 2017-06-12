@@ -25,16 +25,16 @@ Create an **HTML** file and paste the following template for web layout.
 <html>
 <head>
 <title>Navigation Drawer</title>
-<link href="[http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css](http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css)"rel="stylesheet"/>
-<script src="[http://code.jquery.com/jquery-1.10.2.min.js](http://code.jquery.com/jquery-1.10.2.min.js)"></script>
-<script src="[http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js](http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js)"></script>
+<link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet"/>
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="http://cdn.syncfusion.com/js/assets/external/jsrender.min.js" type="text/javascript"></script>
+<script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"></script>
 </head>
 <body>
         <!-- Add Navigation Drawer control Here -->
         <!-- Add Page Content content Here -->
 </body>
 </html>
-
 
 {% endhighlight %}
 
