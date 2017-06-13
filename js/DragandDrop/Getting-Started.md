@@ -6,6 +6,8 @@ platform: js
 control: Draggable,Droppable
 documentation: ug
 keywords: Draggable,Drop,draganddrop
+api: /api/js/ejdraggable
+
 ---
 
 # Getting Started
@@ -26,10 +28,6 @@ And the internal script dependencies of the Drag and Drop are:
 		<td>Must be referred always before using all the JS controls.</td>
 	</tr>
 	<tr>
-		<td>ej.data.min.js</td>
-		<td>Used to handle data operation and should be used while binding data to JS controls.</td>
-	</tr>
-	<tr>
 		<td>ej.draggable.min.js</td>
 		<td>Main file for Drag and Drop</td>
 	</tr>
@@ -40,7 +38,7 @@ For getting started you can use the ‘ej.web.all.min.js’ file, which encapsul
 For themes, you can use the ‘ej.web.all.min.css’ CDN link from the snippet given. To add the themes in your application, please refer [this link](https://help.syncfusion.com/js/theming-in-essential-javascript-components#adding-specific-theme-to-your-application).
 
 
-## Preparing HTML document
+## Configure the sample
 
 Create a new HTML file and add [CDN](https://help.syncfusion.com/js/cdn) links to the [JavaScript](https://help.syncfusion.com/js/dependencies) and [CSS](https://help.syncfusion.com/js/theming-in-essential-javascript-components) dependencies to your project.
 
@@ -63,8 +61,6 @@ Create a new HTML file and add [CDN](https://help.syncfusion.com/js/cdn) links t
 
         <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.11.3.min.js"></script>
 
-        <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"></script>
-
         <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"></script>
 
     </head>
@@ -85,84 +81,105 @@ Create a new HTML file and add [CDN](https://help.syncfusion.com/js/cdn) links t
 
 {% endhighlight %}
 
- N>  In production, we highly recommend you to use our [custom script generator](https://help.syncfusion.com/js/include-only-the-needed-widgets#) to create custom script file with required controls and its dependencies only. Also to reduce the file size further please use [GZip compression](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/optimize-encoding-and-transfer?hl=en#text-compression-with-gzip) in your server. 
+N>  In production, we highly recommend you to use our [custom script generator](https://help.syncfusion.com/js/include-only-the-needed-widgets#) to create custom script file with required controls and its dependencies only. Also to reduce the file size further please use [GZip compression](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/optimize-encoding-and-transfer?hl=en#text-compression-with-gzip) in your server. 
 
-## Initialize Drag and Drop
+## Initialize Drag And Drop
 
 You can make any Html elements to be draggable or droppable by using ejDraggable and ejDroppable.This section explains how to perform drag and drop using html elements
 
  {% highlight html %}
 	
-	<div id="leftContainer">
+	 <div id="leftContainer">
         <!-- draggable element-->
         <div id="dragElement" class="drag">
-            <span>Drag Me</span>
+            <span class="dragtext">Drag</span>
         </div>
+		
     </div>
 
     <div id="rightContainer">
         <!-- droppable target element-->
         <div id="dropContainer" class="drop">
-            <span>Drop Here</span>
+            <span class="droptext">Drop Here</span>
         </div>
     </div>
     <style>
-        #leftContainer {
-            width: 150px;
-            height: 150px;
+         #leftContainer {
+            width: 100px;
+            height: 100px;
             padding: 30px;
             float: left;
         }
 
         #rightContainer {
-            width: 150px;
-            height: 150px;
+            width: 100px;
+            height: 100px;
             padding: 30px;
             float: left;
         }
 
         .drag {
-            width: 100px;
-            height: 100px;
-            border: 1px solid #bbccbb;
+            width: 60px;
+            height: 40px;
             float: left;
-            padding: 8px;
+            font-size: 14px;
+            line-height: 37px;
+            color: white;
+            text-align: center;
             z-index: 100002;
-          background-color:mintcream;
+            background-color: #666;
         }
 
         .drop {
-            width: 150px;
-            height: 150px;
-            border: 1px solid #bbccbb;
+            width: 80px;
+            height: 80px;
             float: left;
             position: relative;
             padding: 8px;
-            background-color:antiquewhite;
+            background-color: #eee;
+        }
+
+        .dragtext, .droptext {
+            font-size: 12px;
+            line-height: 40px;
+            display: inline-block;
+        }
+
+        .dragtext {
+            color: white;
+        }
+
+        .droptext {
+            margin: 12px;
+        }
+
+        body {
+            font-family: -webkit-pictograph;
         }
     </style>
 		
 {% endhighlight %}
 	
 {% highlight javascript %}	
-		
-	 <script>
-          jQuery(function ($){
+	
+           jQuery(function ($){
             $("#dragElement").ejDraggable({
                 helper: function (event) {
                     return $(event.element); // Object of the Draggable element.
-                }
+                },
+                drag:function(event)
+				{
+                event.target.textContent="Dragging";
+				}
             });
 
             $("#dropContainer").ejDroppable({
                 // Drop event for change the container text while dropping element.
                 drop: function (event, ui) {
-                    event.dropTarget.text("Element Dropped..!");
+                    event.dropTarget.text("Dropped..!");
                 }
             });
-        });
-
-    </script>		
+         });	
 			
 {% endhighlight %}
 
@@ -172,11 +189,31 @@ Before Dragging:
 
 ![](Getting-Started_images/Getting-Started-img1.png)
 
-After Dragging:
+During Drag:
 
 ![](Getting-Started_images/Getting-Started-img2.png)
 
-## Set Boundaries for Draggable 
+After Dragging:
+
+![](Getting-Started_images/Getting-Started-img3.png)
+
+### Helper
+
+Helper can be used for the purpose of cloning. Helper will return the object of corresponding draggable element. You can drag the element by using helper. 
+
+{% highlight javascript %}	
+
+      $("#draggable-item").ejDraggable({
+	      helper:function (event) {
+	           return $(event.element);
+                   },
+	      clone:true
+	     });
+
+
+{% endhighlight %}
+
+## Set Boundaries 
 
 You can restrict the movement of draggable element within a specified area using dragArea property. 
 
@@ -205,6 +242,7 @@ The below code explains how to make the movement constrained to the container bo
         margin: 5px;
         background: #666;
         color: white;
+        cursor:default;
       }
     </style>
 
@@ -222,3 +260,7 @@ The below code explains how to make the movement constrained to the container bo
     }); 
 
 {% endhighlight %}
+
+The drag element cannot be moved outside this boundary.
+
+![](Getting-Started_images/Container.png)
