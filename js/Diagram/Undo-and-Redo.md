@@ -128,3 +128,24 @@ for (var i = 0; i < group.children.length; i++) {
 diagram.model.historyManager.closeGroupAction();
 
 {% endhighlight %}
+
+## UndoStack,redoStack and stackLimit
+
+The historyManager undoStack property stores the collection of objects which is used to perform undo operation.
+The historyManager redoStack property stores the collection of undo objects which is used to perform redo operation.
+The historyManager stackLimit property limits the number of actions to be stored on the historyManager.
+
+{% highlight javascript %}
+
+var diagram = $("#diagram").ejDiagram("instance");
+//get the collection of undoStack objects
+var undoStack = diagram.model.historyManager.undoStack;
+//get the collection of redoStack objects
+var redoStack = diagram.model.historyManager.redoStack;
+
+$("#diagram").ejDiagram({
+	//define historyManager stacklimit property which limits the number of actions to be stored on the historyManager.
+	historyManager: { stackLimit: 5 }
+});
+
+{% endhighlight %}
