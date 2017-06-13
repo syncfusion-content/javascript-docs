@@ -129,21 +129,22 @@ diagram.model.historyManager.closeGroupAction();
 
 {% endhighlight %}
 
-## UndoStack,redoStack and stackLimit
+## Track Undo/Redo actions
 
-The historyManager undoStack property stores the collection of objects which is used to perform undo operation.
-The historyManager redoStack property stores the collection of undo objects which is used to perform redo operation.
+The historyManager undoStack property is used to get the collection of undo objects which needs to be performed in the diagram.
+The historyManager redoStack property is used to get the collection of redo objects which needs to be performed in the diagram.
 The historyManager stackLimit property limits the number of actions to be stored on the historyManager.
 
 {% highlight javascript %}
-
-var diagram = $("#diagram").ejDiagram("instance");
-//get the collection of undoStack objects
-var undoStack = diagram.model.historyManager.undoStack;
-//get the collection of redoStack objects
-var redoStack = diagram.model.historyManager.redoStack;
-
+ 
 $("#diagram").ejDiagram({
+    //define historyChange event
+	historyChange: function (args) {
+		//get the collection of undoStack objects
+		var undoStack = args.model.historyManager.undoStack;
+		//get the collection of redoStack objects
+		var redoStack = args.model.historyManager.redoStack;
+	},
 	//define historyManager stacklimit property which limits the number of actions to be stored on the historyManager.
 	historyManager: { stackLimit: 5 }
 });
