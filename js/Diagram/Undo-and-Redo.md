@@ -134,6 +134,7 @@ diagram.model.historyManager.closeGroupAction();
 The historyManager undoStack property is used to get the collection of undo objects which needs to be performed in the diagram.
 The historyManager redoStack property is used to get the collection of redo objects which needs to be performed in the diagram.
 The historyManager stackLimit property limits the number of actions to be stored on the historyManager.
+By default, the undoStack/redoStack property is an read only.
 
 {% highlight javascript %}
  
