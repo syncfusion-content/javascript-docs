@@ -1,6 +1,6 @@
 ---
 layout: post
-title: WebAPI Batch Edit | DataManager | ASP.NET MVC | Syncfusion
+title: WebAPI Batch Edit
 description: WebAPI Batch Edit
 platform: ejmvc
 control: DataManager
@@ -293,10 +293,10 @@ In the view, configure the Datamanager to use the Post/Put/Delete methods create
 
         var dataManger = ej.DataManager({
             batchUrl: "/api/batch",
-            url:"api/Employee",
-            insertUrl: "/post1",
-            updateUrl: "/put1",
-            removeUrl: "/delete1",
+            url:"/api/Employee",
+            insertUrl: "/post",
+            updateUrl: "/put",
+            removeUrl: "/delete",
             adaptor: new ej.WebApiAdaptor()
         });
         var query = ej.Query()
