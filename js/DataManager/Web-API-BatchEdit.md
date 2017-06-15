@@ -283,7 +283,7 @@ namespace Sample.Controllers
 
 In the view, configure the Datamanager to use the Post/Put/Delete methods created in the previous steps.
 
-{% highlight html %}
+{% highlight HTML %}
 
 <div id="Grid"></div>
 
