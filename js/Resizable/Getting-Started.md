@@ -165,7 +165,7 @@ During Resize:
 
 ### Helper
 
- Helper will return the object of corresponding resizable element. You can resize  the element by using helper. 
+ We can resize an element by using helper which will return the object of corresponding resizable element. . 
 
 {% highlight javascript %}	
 

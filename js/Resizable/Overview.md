@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Resizable
 
- ejResizable widget allows you to resize any DOM element using mouse. Resize can be restricted by setting minHeight , maxHeight, minWidth and maxWidth 
+ Resizable widget allows you to resize any DOM element using mouse. Resize can be restricted by setting minHeight , maxHeight, minWidth and maxWidth 
 
 ## Key Features
 

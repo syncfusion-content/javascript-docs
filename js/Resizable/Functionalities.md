@@ -14,7 +14,7 @@ api: /api/js/ejresizable
 
 ## Delay Resize
 
-You can set the required distance the mouse should travel in order to initiate resize using [distance](https://help.syncfusion.com/api/js/ejresizable#members:distance) property.
+We can set the required distance the mouse should travel in order to initiate resize using [distance](https://help.syncfusion.com/api/js/ejresizable#members:distance) property.
 
 {% highlight html %}
 
@@ -83,7 +83,7 @@ You can set the required distance the mouse should travel in order to initiate r
 
 ## Cursor Distance
 
-You can set the offset for resize helper with respect to the mouse cursor using [cursorAt](https://help.syncfusion.com/api/js/ejresizable#members:cursorat) property.
+We can set the offset for resize helper with respect to the mouse cursor using [cursorAt](https://help.syncfusion.com/api/js/ejresizable#members:cursorat) property.
 
 {% highlight html %}
 
@@ -146,7 +146,7 @@ You can set the offset for resize helper with respect to the mouse cursor using 
 
 ## Restrict Resize Height and Width:
 
-[minHeight](https://help.syncfusion.com/api/js/ejresizable#members:minheight), [minWidth](https://help.syncfusion.com/api/js/ejresizable#members:minwidth), [maxHeight](https://help.syncfusion.com/api/js/ejresizable#members:maxheight) and [maxWidth](https://help.syncfusion.com/api/js/ejresizable#members:maxwidth) can be used to restrict the height and width below or above which the element cannot be resized.
+We have some properties [minHeight](https://help.syncfusion.com/api/js/ejresizable#members:minheight), [minWidth](https://help.syncfusion.com/api/js/ejresizable#members:minwidth), [maxHeight](https://help.syncfusion.com/api/js/ejresizable#members:maxheight) and [maxWidth](https://help.syncfusion.com/api/js/ejresizable#members:maxwidth) which can be used to restrict the height and width below or above which the element cannot be resized.
 
 
 {% highlight html %}
