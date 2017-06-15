@@ -115,7 +115,6 @@ HTML elements can be resized  by using ejResizable widget. This section explains
             text-align: center;
             z-index: 100002;
             background-color: #666;
-            cursor: nw-resize;
         }
 
 
@@ -144,7 +143,8 @@ HTML elements can be resized  by using ejResizable widget. This section explains
               },
             resize: function(event)
               {
-                  $(".Resizetext")[0].innerText ="Resizing"
+                  $(".Resizetext")[0].innerText ="Resizing";
+                   $(".Resize").css("cursor","nw-resize");
               }
 
           });

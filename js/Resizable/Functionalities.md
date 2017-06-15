@@ -205,16 +205,16 @@ We have some properties [minHeight](https://help.syncfusion.com/api/js/ejresizab
               minWidth: 90,
               maxHeight: 130,
               maxWidth: 150,
+             scope:"Container",
+              minHeight: 80,
+              minWidth: 90,
+              maxHeight: 130,
+              maxWidth: 150,
               resizeStop:function(event)
               {
-                  if (event.element.height() == 130)
-                      $(".Resizetext")[0].innerText = "Cannot exceed maxHeight";
-                  if (event.element.width() == 150)
-                      $(".Resizetext")[0].innerText = "Cannot exceed maxWidth"
-                  if(event.element.height() == 80)
-                      $(".Resizetext")[0].innerText = "Below minHeight";
-                  if (event.element.width() == 90)
-                      $(".Resizetext")[0].innerText = "Below minWidth";
+                  if ((event.element.height() == 130)||(event.element.width() == 150)||(event.element.height() == 80)||(event.element.width() == 90))
+                      $(".Resizetext")[0].innerText = "Resize Restricted.Out of scope!";
+                  
               }
           });
 
@@ -226,18 +226,6 @@ Before Resize:
 
 ![](Functionalities_images/Resize.png)
 
-When resize beyond maxWidth:
+When resize done out of these limits:
 
-![](Functionalities_images/maxWidth.png)
-
-When resize beyond maxHeight:
-
-![](Functionalities_images/maxHeight.png)
-
-When resize below minWidth:
-
-![](Functionalities_images/minWidth.png)
-
-When resize below minHeight:
-
-![](Functionalities_images/minHeight.png)
+![](Functionalities_images/Exceed.png)
