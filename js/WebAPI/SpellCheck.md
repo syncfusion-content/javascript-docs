@@ -30,13 +30,29 @@ The fouders had initially limited the websites membrship to Harvard students, bu
 
 Response (JSON):   
 
+Error Word Check and Highlight:
+
 {% highlight js %}
 
-[
-{"ErrorWord":"Facebook","SuggestedWords":[]},{"ErrorWord":"Zuckerberg","SuggestedWords":[]},{"ErrorWord":"fouders","SuggestedWords":["founders","fodders","folders","fosters","fouler","founder","founder\u0027s","fodder","fodder\u0027s","folder","folder\u0027s","fonder","footers","forgers","formers","foundered","founds","focuser","fondues","fondue\u0027s"]},{"ErrorWord":"membrship","SuggestedWords":["membership","memberships","membership\u0027s","members"]},{"ErrorWord":"collges","SuggestedWords":["collages","colleges","collies","collagen","collage\u0027s","collars","collates","colleens","college","college\u0027s","collides","collie","collied","collier","colliers","collie\u0027s","colludes","colognes","collagen\u0027s","collapse","collapses","collects","collier\u0027s","collapsed","collegian","collegians","collegiate"]},{"ErrorWord":"Univrsity","SuggestedWords":["University","University\u0027s","Univariate","Universities","Unvisited"]},{"ErrorWord":"graually","SuggestedWords":["gradually","gravelly","gradual","graduals","granularly"]}
-]
+[{"ErrorWord":"Facebook"},{"ErrorWord":"Zuckerberg"},{"ErrorWord":"fouders"},{"ErrorWord":"membrship"},{"ErrorWord":"collges"},{"ErrorWord":"Univrsity"},{"ErrorWord":"graually"}]
 
 {% endhighlight %}
+
+Suggestions for an Error Word:
+
+{% highlight js %}
+
+{"Facebook":[]}, 
+{"Zuckerberg":[]},
+{"fouders":["founders","fodders","folders","fosters","fouler","founder","founder\u0027s","fodder","fodder\u0027s","folder","folder\u0027s","fonder","footers","forgers","formers","foundered","founds","focuser","fondues","fondue\u0027s"]},
+{"membrship":["membership","memberships","membership\u0027s","members"]},
+{"collges":["collages","colleges","collies","collagen","collage\u0027s","collars","collates","colleens","college","college\u0027s","collides","collie","collied","collier","colliers","collie\u0027s","colludes","colognes","collagen\u0027s","collapse","collapses","collects","collier\u0027s","collapsed","collegian","collegians","collegiate"]},
+{"Univrsity":["University","University\u0027s","Univariate","Universities","Unvisited"]},
+{"graually":["gradually","gravelly","gradual","graduals","granularly"]}
+
+{% endhighlight %}
+
+The error word suggestion request will be sending for each word and getting its result as shown in the above response respectively for each error word.
 
 ### Code example 
 
