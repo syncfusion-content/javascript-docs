@@ -4,7 +4,7 @@ description: SpellCheck Functionalities
 platform: js
 control: spellcheck
 documentation: ug
-keywords: spellcheck functionalities, check spelling, ignore words, change words, change, ignore, ignore settings,
+keywords: spellcheck functionalities, check spelling, ignore words, change words, change, ignore, ignore settings, SpellCheck on typing,
 api: /api/js/ejspellcheck
 ---
 # Functionalities
@@ -217,3 +217,40 @@ You can also add the custom words into the custom dictionary file through the di
 
 * Dialog Mode - Add To Dictionary button is available in the dialog window, while highlighting the error word in the given input string and clicking this button then the word will be adding into the custom dictionary file.
 * Context Menu Mode - Add To Dictionary option is available while right click on the error word and selecting this option, the word will be adding into the custom dictionary file.
+
+
+## SpellCheck on typing
+
+SpellCheck control support for spell check the content on press the Enter and Space key. The cursor position also properly retained while processing the spellcheck operations. If you enable “enableValidateOnType” property, the spellcheck operation will be performed on type. 
+
+The following code example describes the above behavior.
+
+
+{% highlight html %}
+
+<div id="SpellCheck" contenteditable="true">
+
+It is a concept vehicle with Liuid Silver body colour, 20-inch wheels, fabric foding roof, electrically-controlled hood, 4-cylinder 2.0 TDI engine rated 204 PS (150 kW; 201 hp)and 400  (295.02 lbf ft), diesel particulate filter and 
+Bluetec emission control system, quattro permanent four-wheel drve system,Audi S tronic dual-clutch gearbox, McPherson-strut front axle and a four-link rear axle, Audi drive select system with 3 modes (dynamic, sport, efficiency),
+MMI control panel with touch pad and dual-view technology, sound system with the proinent extending tweeters.
+
+</div> 
+<script type="text/javascript">
+
+$(function () { 
+$("#SpellCheck").ejSpellCheck({ dictionarySettings: { dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/CheckWords", customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/AddToDictionary" },
+contextMenuSettings: {enable: true},
+enableValidateOnType: true,
+}); 
+});
+ </script>
+
+{% endhighlight %}
+
+The following screenshot displays the output for the above code
+
+![](/js/SpellCheck/ValidateOnType_images/validateontype.png)
+
+
+You can also validate spell check content the IFrame element or IFrame element target text by passing the IFrame element id or class name value to the controlsToValidate property. 
+Detailed information is given [here](https://help.syncfusion.com/js/spellcheck/multiple-target)
