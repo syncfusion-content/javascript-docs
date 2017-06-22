@@ -87,6 +87,7 @@ It displays the details of the current selected file or folder.<br/><br/></td></
 It's used to sorting the files and folders from the current directory.The sorting can be done based on the columns available from grid,in both ascending and descending order.<br/><br/>
 </td></tr>
 </table>
+
 ## Context menu Visibility
 
 The presence of the context menu can be controlled by the [showContextMenu](https://help.syncfusion.com/api/js/ejfileexplorer#members:showcontextmenu) property. This was enabled by default, and by disabling this property you can prevent our built-in context menu.
