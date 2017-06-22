@@ -22,17 +22,17 @@ By default, Internet Explorer 9 and earlier prohibits cross-origin requests for
 
 **Option 1: Enabling cross-origin in IE through browser settings**
 
-To enable cross-origin access using settings of IE browser, go to Tools->Internet Options->Security tab, click on “Custom Level” button. Find the Miscellaneous and select “Enable” option, which is available under “Access data sources across domains” settings.
+To enable cross-origin access using settings of IE browser, go to **Tools->Internet Options->Security** tab, click on “**Custom Level**” button. Find the Miscellaneous and select “**Enable**” option, which is available under “**Access data sources across domains**” settings.
 
-If your server is located in Intranet Zone, In IE Browser, confirmation dialog will be popped during first cross-domain request as “*This page is accessing information that is not under its control. This poses a security risk. Do you want to continue*?”
+If your server is located in Intranet Zone, In IE Browser, confirmation dialog will be popped during first cross-domain request as “**This page is accessing information that is not under its control. This poses a security risk. Do you want to continue?**”
 
-To suppress this warning, you need to specify the "*Access data sources across domains*" setting to “allow”.
+To suppress this warning, you need to specify the "**Access data sources across domains**" setting to “**allow**”.
 
 ![](How-To_images/How-To_img1.jpeg)
 
 **Option 2: Using JSONP for cross-origin request**
 
-Using JSONP data type, you can perform cross origin-request. To enable cross-origin request, in your FileExplorer, you have to specify **ajaxDataType** as “**JSONP**”. And we have provided “**doJSONPAction**” method to handle “JSONP” type AJAX request on server side.  Please refer below code snippet to specify **ajaxDataType** as “JSONP”.
+Using JSONP data type, you can perform cross origin-request. To enable cross-origin request, in your FileExplorer, you have to specify **ajaxDataType** as “**JSONP**”. And we have provided “**doJSONPAction**” method to handle “**JSONP**” type AJAX request on server side.  Please refer below code snippet to specify **ajaxDataType** as “**JSONP**”.
 
     
     {% highlight javascript %}
@@ -45,7 +45,7 @@ Using JSONP data type, you can perform cross origin-request. To enable cross-ori
         
     {% endhighlight %}
     
-If we specify “ajaxDataType” as “JSONP”, data will be received in string format while calling “doJSONPAction” method of Web API Controller, here you need to deserialize the received “json” data into FileExplorerParams object. After performing corresponding operations, you have to specify the response data in serialized format with wrapped callback function. Please refer below code snippet to handle “JSONP” operations on server.
+If we specify “**ajaxDataType**” as “**JSONP**”, data will be received in string format while calling “**doJSONPAction**” method of Web API Controller, here you need to deserialize the received “**json**” data into FileExplorerParams object. After performing corresponding operations, you have to specify the response data in serialized format with wrapped callback function. Please refer below code snippet to handle “**JSONP**” operations on server.
 
     
     {% highlight c# %}
@@ -118,25 +118,25 @@ In IE8 and IE9 Browser, These options helps to render our FileExplorer control w
 
 ## Service for FileExplorer
 
-Generally web based file explorer needs a service for handling the file related operations in server end.  In same way, our “FileExplorer” control uses server side functionalities for handling the file operations in flexible way, that means you can implement this server side functions in any languages (like C#, VB, Java, PHP, etc.) and can customize it as per your requirement. 
+Generally web based file explorer needs a service for handling the file related operations in server end.  In same way, our “**FileExplorer**” control uses server side functionalities for handling the file operations in flexible way, that means you can implement this server side functions in any languages (like C#, VB, Java, PHP, etc.) and can customize it as per your requirement. 
 
-By default, we have provided these server side AJAX handling functionalities in “C#” for managing physical filesystem and you can check it with “FileExplorerOperations” file, which is available at following Web API service application.
+By default, we have provided these server side AJAX handling functionalities in “**C#**” for managing physical filesystem and you can check it with “**FileExplorerOperations**” file, which is available at following Web API service application.
 
-Web API service: [http://www.syncfusion.com/downloads/support/directtrac/general/ze/FileExplorer_WebAPI1406113770.zip](http://www.syncfusion.com/downloads/support/directtrac/general/ze/FileExplorer_WebAPI1406113770.zip#) 
+**Web API service**: [http://www.syncfusion.com/downloads/support/directtrac/general/ze/FileExplorer_WebAPI1406113770.zip](http://www.syncfusion.com/downloads/support/directtrac/general/ze/FileExplorer_WebAPI1406113770.zip#) 
 
-Note: In this Web API application, we have provided “FileOperationController” file, which contains “doJSONAction” action method. When you make AJAX request, “doJSONAction” method will be called with AJAX request parameters then it calls the corresponding built-in file handling methods (Read, Search, Download, Upload, Remove, Rename etc.) that are available in our “FileExplorerOperations” class based on the “ActionType” parameter value.
+**Note**: In this Web API application, we have provided “**FileOperationController**” file, which contains “**doJSONAction**” action method. When you make AJAX request, “**doJSONAction**” method will be called with AJAX request parameters then it calls the corresponding built-in file handling methods (Read, Search, Download, Upload, Remove, Rename etc.) that are available in our “**FileExplorerOperations**” class based on the “**ActionType**” parameter value.
 
 For your convenience, we have prepared a sample based on this and you can find it under following location.
 
 Sample: [http://jsplayground.syncfusion.com/gysvwdcp](http://jsplayground.syncfusion.com/gysvwdcp#) 
 
-Note: First run the provided Web API service, then you will get an URL like ”[http://localhost:51460/](http://localhost:51460/#)“ (Here port number may change). As per port number, replace the specified URL in “path” and “ajaxAction” of “FileExplorer” sample.
+**Note**: First run the provided Web API service, then you will get an URL like ”[http://localhost:51460/](http://localhost:51460/#)“ (Here port number may change). As per port number, replace the specified URL in “**path**” and “**ajaxAction**” of “**FileExplorer**” sample.
 
 Here we have created the file handling service using Web API application (.NET). If you want to use any other languages or platform for implementing this file handling service, you can achieve this. Please refer following table, this may be helpful to you to create your own service for FileExplorer.
 
 ### Parameter list for AJAX request and response of FileExplorer
 
-By default, we send following parameters in AJAX request. Using this details, you can perform the file handling operations of FileExplorer. After performing the file operations, you have to return the response data in proper format. This response data and request parameters are explained in following table. By referring to below table, you can create your custom functions to perform server side operations of “FileExplorer”. 
+By default, we send following parameters in AJAX request. Using this details, you can perform the file handling operations of FileExplorer. After performing the file operations, you have to return the response data in proper format. This response data and request parameters are explained in following table. By referring to below table, you can create your custom functions to perform server side operations of “**FileExplorer**”. 
 
 <table>
 <tr>
@@ -317,11 +317,11 @@ It used to search all the matched files and sub-folders in the given folder path
 
 Please refer following steps to create a Web API service for FileExplorer using “**Syncfusion.EJ**” assembly. 
 
-Step 1: Create a new ASP.NET Web API project using Visual Studio. 
+**Step 1**: Create a new ASP.NET Web API project using Visual Studio. 
 
 Reference [link](https://docs.microsoft.com/en-us/aspnet/web-api/overview/getting-started-with-aspnet-web-api/tutorial-your-first-web-api#)  
 
-Step 2: Add "**Syncfusion.EJ**" assembly reference, which is available at following location of your system. 
+**Step 2**: Add "**Syncfusion.EJ**" assembly reference, which is available at following location of your system. 
 
 (Installed location)\Syncfusion\Essential Studio\\{15.1.0.33}\Assemblies
 
@@ -329,12 +329,12 @@ For example, If you have installed the Essential Studio package within C:\Progra
 
 C:\Program Files (x86)\Syncfusion\Essential Studio\\{15.1.0.33}\Assemblies\4.5
 
-This assembly contain built-in file handling methods such as (Read, Search, Download, Upload, Remove, Rename etc.) and it will be available in "FileExplorerOperations" class.
+This assembly contain built-in file handling methods such as (Read, Search, Download, Upload, Remove, Rename etc.) and it will be available in "**FileExplorerOperations**" class.
 
-Step 3: Add “[FileExplorerController.cs](http://www.syncfusion.com/downloads/support/directtrac/general/ze/FileExplorerController-2059296017#)” file in the controller part of Web API project.
+**Step 3**: Add “[FileExplorerController.cs](http://www.syncfusion.com/downloads/support/directtrac/general/ze/FileExplorerController-2059296017#)” file in the controller part of Web API project.
 This file, contains action handler methods. Based on the request parameters, it helps to call the built-in file handling methods of **Syncfusion.EJ** assembly.
 
-Step 4: Add following content in the “**WebApiApplication**” class of “**Global.asax.cs**” file.
+**Step 4**: Add following content in the “**WebApiApplication**” class of “**Global.asax.cs**” file.
 
 
 
@@ -361,7 +361,7 @@ Step 4: Add following content in the “**WebApiApplication**” class of “**G
 
 
 
-Step 5: In “**Web.config**” add following code under **&lt;system.webServer&gt;** tag
+**Step 5**: In “**Web.config**” add following code under **&lt;system.webServer&gt;** tag
 
 
 {% highlight c# %}
@@ -377,7 +377,7 @@ Step 5: In “**Web.config**” add following code under **&lt;system.webServer&
 {% endhighlight %}
 
 
-Step 6: Add “**FileBrowser**” directory and it contains a files that is viewed by FileExplorer.
+**Step 6**: Add “**FileBrowser**” directory and it contains a files that is viewed by FileExplorer.
 
 Now the Web API service for FileExplorer component is created. After running that service, you will get a base URL like "http://localhost:64218/". (Port number may vary)
 
