@@ -199,7 +199,7 @@ After Dragging:
 
 ### Helper
 
-Helper can be used for the purpose of cloning. Helper will return the object of corresponding draggable element. You can drag the element by using helper. 
+Helper will return the object of corresponding draggable element. You can drag the element by using helper. 
 
 {% highlight javascript %}	
 
