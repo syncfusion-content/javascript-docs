@@ -14,15 +14,15 @@ api: /api/js/ejslider
 
 ## Value
 
-This property is used to set the value in the “Default” and “Min-Range” Sliders. By default its value is null when no value is specified. Data type of this property is “number”.
+This property is used to set the value in the “**Default**” and “**Min-Range**” Sliders. By default its value is null when no value is specified. Data type of this property is “**number**”.
 
 ## Values
 
-This property is used to set the value in “Range Slider”. By default range values is from 0 to 100. This property is of “Array” data type.
+This property is used to set the value in “**Range Slider**”. By default range values is from 0 to 100. This property is of “**Array**” data type.
 
-The following steps explains you the configuration of “value” and “values” property.
+The following steps explains you the configuration of “**value**” and “**values**” property.
 
-In an **HTML** page, specify the **&lt;div&gt;** elements to render the “Range Slider” and “Default Slider”.
+In an **HTML** page, specify the **&lt;div&gt;** elements to render the “**Range Slider**” and “**Default Slider**”.
 
 
 
@@ -63,11 +63,11 @@ Execute the above code example to render the following output.
 
 ## MinValue
 
-To set the minimum/starting value of the Slider, you can use the minValue property. By default its value is 0. Data type of this property is “number”.
+To set the minimum/starting value of the Slider, you can use the minValue property. By default its value is 0. Data type of this property is “**number**”.
 
 ## MaxValue
 
-To set the maximum/ending value of the Slider, you can use the maxValue property. By default its value is 100. Data type of this property is “number”.
+To set the maximum/ending value of the Slider, you can use the maxValue property. By default its value is 100. Data type of this property is “**number**”.
 
 The following steps explains you on how to configure minValue and maxValue property.
 
