@@ -58,10 +58,36 @@ The following screenshot illustrates the Signature with saving (downloading) the
 
 ![](How_To_images\savesignatureimagewithuserdefinedformat_img1.png)
 
+### To clear the Siganture
 
-###  Make signature as responsive
+To clear the signature, you can simply use the **clear()** method. This method will clear all the drawn strokes in the signature canvas and leaves it empty.
 
-When the signature control is resized or even the window is resized the strokes drawn in the signature will be disappeared. To make the strokes visible even after resizing the window, we must set the **i****sResponsive**property as true.
+<script type="text/javascript">
+        $(function () {
+            $("signature").ejSignature({
+                height: "500px",
+                strokeWidth: 3
+
+            });
+            $("#signclear").ejButton({
+                size: "normal", width: "70px",
+                showRoundedCorner: true,
+                click: "onclear"
+            });  
+        });
+
+      function onclear(args) {
+            var sig = $("#signature").ejSignature("instance");
+            sig.clear();
+        }
+
+    </script>
+
+{% endhighlight %}
+
+### Make signature as responsive
+
+When the signature control is resized or even the window is resized the strokes drawn in the signature will be disappeared. To make the strokes visible even after resizing the window, we must set the **isResponsive**property as true.
 
 The following code example is used to render the Signature control with responsive support.
 
@@ -87,5 +113,26 @@ After giving the Responsiveness:
 ![](How_To_images\makesignatureasresponsive_img2.png)
 
 
+### To check whether any input to the signature control since render
+
+We can detect whether not there has been any input to the signature control since render. To detect we can use the storeSnap public variable, which is an array that stores all the canvas inputs. At initial rendering this array is empty and we can use this variable to check for the drwan strokes.
+
+
+{% highlight js %}
+
+   <script type="text/javascript">
+      var sign = $("#signature").ejSignature("instance");
+
+            if (ej.isNullOrUndefined(sign.storeSnap)) {
+               
+                //Something
+
+            }
+    </script>   
+
+{% endhighlight %}
+
+  
+ 
 
 
