@@ -178,6 +178,63 @@ $(function () {
 
 {% include image.html url="/js/PivotGrid/Getting-Started_images/purejssorting.png" %}
 
+### Sort Row/Column by Date
+
+You can sort a field either to ascending or descending order acording to date by using the **sortOrder** property. Sorting is applicable only for Row and Column fields. By default, fields are arranged in ascending order.
+
+N> To apply sorting by date, you need to specify the require `format` and `formatString` to the field.
+
+{% highlight html %}
+
+<!DOCTYPE html>
+<html>
+//……
+<body>
+    <div id="PivotGrid1" style="height: 350px; width: 100%; overflow: auto">
+    </div>
+    <script type="text/javascript">
+        //Datasource
+        var pivotData = [
+            { Amount: 100, Date: "5-1-2017", Day: "Wednesday" },
+            { Amount: 200, Date: "1-2-2017", Day: "Sunday" },
+            { Amount: 300, Date: "1-1-2018", Day: "Thursday" },
+            { Amount: 150, Date: "5-1-2018", Day: "Wednesday" },
+            { Amount: 200, Date: "1-2-2017", Day: "Thursday" },
+            { Amount: 100, Date: "1-1-2018", Day: "Sunday" },
+            { Amount: 200, Date: "5-1-2017", Day: "Wednesday" },
+            { Amount: 250, Date: "1-2-2017", Day: "Sunday" }
+            //....
+        ];
+        $(function () {
+            $("#PivotGrid1").ejPivotGrid({
+                dataSource: {
+                    //Datasource bound to PivotGrid control.
+                    data: pivotData,
+                    rows: [{
+                                fieldName: "Date",
+                                fieldCaption: "Date",
+                                format: "date",
+                                formatString: "dd-MM-yyy",
+                                sortOrder: ej.PivotAnalysis.SortOrder.Descending
+                        }],
+                        columns: [{
+                                fieldName: "Day",
+                                fieldCaption: "Day",
+                                format: "date",
+                                formatString: "ddd",
+                                sortOrder: ej.PivotAnalysis.SortOrder.Ascending
+                         }],
+                    //..
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+
+{% endhighlight %}
+
+{% include image.html url="/js/PivotGrid/Getting-Started_images/sortbydate.png" %}
 
 ### Apply Filtering
 
@@ -353,6 +410,8 @@ namespace PivotGridDemo
 Next you need to add the below mentioned dependency libraries into your Web Application. These libraries could be found in GAC (Global Assembly Cache) as well.
 
 To add them to your Web Application, right-click on **References** in Solution Explorer and select **Add Reference.** Now in the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries are found. 
+
+N> If you have installed any version of Essential Studio, then the location of Syncfusion libraries is [system drive:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\Assemblies].
 
 * Syncfusion.Compression.Base
 * Syncfusion.Linq.Base
