@@ -3,22 +3,22 @@ layout: post
 title: Member Editor Paging
 description: memebr editor paging
 platform: js
-control: PivotClient
+control: PivotGrid
 documentation: ug
-api: /api/js/ejpivotclient
+api: /api/js/ejpivotgrid
 ---
 
 # Member Editor Paging
 
 Member editor paging helps to improve the rendering performance of the dialog by dividing large amount of data into sections and displaying them.
 
-You can enable member editor paging and set member editor page size in PivotClient control by setting the [`enableMemberEditorPaging`](/api/js/ejpivotclient#members:enableMemberEditorPaging) and [`memberEditorPageSize`](/api/js/ejpivotclient#members:memberEditorPageSize) properties.
+You can enable member editor paging and set member editor page size in PivotGrid control by setting the [`enableMemberEditorPaging`](/api/js/ejpivotgrid#members:enableMemberEditorPaging) and [`memberEditorPageSize`](/api/js/ejpivotgrid#members:memberEditorPageSize) properties.
 
 {% highlight html %}
 
-<div id="PivotClient1"></div>
+<div id="PivotGrid1"></div>
 <script>
-    $("#PivotClient1").ejPivotClient({
+    $("#PivotGrid1").ejPivotGrid({
         //...
         enableMemberEditorPaging : true, 
         memberEditorPageSize : 100
