@@ -192,6 +192,20 @@ Toggle panel option lets the user to toggle the visibility of Axis Element Build
 
 ![](Layout-Customization_images/toggle-panel.png)
 
+## Collapse Toggle Panel By Default
+Allows the user to hide PivotClient's Cube Browser and Axis Element Builder panels while initiate the widget. You can enable this option in PivotClient by setting [`collapseCubeBrowserByDefault`](/api/js/ejpivotclient#members:collapsecubebrowserbydefault) property to true.  
+
+{% highlight javascript %}
+
+    $("#PivotClient1").ejPivotClient({
+        //...
+        collapseCubeBrowserByDefault: true
+    });
+
+{% endhighlight %}
+
+![](Layout-Customization_images/collapse-cube-browser-by-default.png)
+
 ## Maximized/Full Screen View
 Full screen view helps to visualize the PivotGrid and PivotChart controls inside PivotClient precisely according to the browser window size.  By selecting full screen icon in the toolbar, the control which is in the view gets maximized.  Drilldown action can also be performed in both PivotGrid and PivotChart in the maximized view.  This option is enabled by setting the [`enableFullScreen`](/api/js/ejpivotclient#members:displaysettings-enablefullscreen) property under [`displaySettings`](/api/js/ejpivotclient#members:displaysettings)  option to true.  The value is false by default.
 
