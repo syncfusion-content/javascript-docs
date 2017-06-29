@@ -62,6 +62,8 @@ The following screenshot illustrates the Signature with saving (downloading) the
 
 To clear the signature, you can simply use the **clear()** method. This method will clear all the drawn strokes in the signature canvas and leaves it empty.
 
+{% highlight js %}
+
 <script type="text/javascript">
         $(function () {
             $("signature").ejSignature({
@@ -82,7 +84,7 @@ To clear the signature, you can simply use the **clear()** method. This method w
         }
 
     </script>
-
+    
 {% endhighlight %}
 
 ### Make signature as responsive
