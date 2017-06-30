@@ -193,7 +193,8 @@ Toggle panel option lets the user to toggle the visibility of Axis Element Build
 ![](Layout-Customization_images/toggle-panel.png)
 
 ## Collapse Toggle Panel By Default
-Allows the user to hide PivotClient's Cube Browser and Axis Element Builder panels while initiate the widget. You can enable this option in PivotClient by setting [`collapseCubeBrowserByDefault`](/api/js/ejpivotclient#members:collapsecubebrowserbydefault) property to true.  
+
+Allows the user to hide “Cube Browser” and “Axis Element Builder” panels while initiating the widget. You can enable this option in PivotClient by setting the [`collapseCubeBrowserByDefault`](/api/js/ejpivotclient#members:collapsecubebrowserbydefault) property to true.
 
 {% highlight javascript %}
 
