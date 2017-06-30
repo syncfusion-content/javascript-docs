@@ -1416,6 +1416,70 @@ $(function() {
 
 N> You can parse the **RecurrenceRule** of an appointment from the server-side by making use of a new generic utility class **RecurrenceHelper**. Refer this [KB document](https://www.syncfusion.com/kb/5390/how-to-parse-the-recurrencerule-in-server-side).
 
+### Recurrence Edit and delete options
+
+The recurring appointments can be edit or delete in three ways as below:
+
+* Only this appointment
+* Following events
+* Entire series
+
+#### Only this appointment
+
+The single occurrence can be edit or delete in two ways
+* Using Appointment Details Dialog
+* Using Recurrence Edit / Delete Dialog
+
+##### Using Appointment Details Dialog
+
+To edit the single occurrence appointment from recurrence series, click the appointment to show appointment details dialog. Click Edit appointment option from this dialog to open the appointment window to edit.
+
+To delete the single occurrence appointment from recurrence series, click the appointment to show appointment details dialog. Click delete icon option from this dialog. Now the Recurrence Appointment Delete option dialog will appears. Now choose the Only this appointment button to delete this appointment.
+
+##### Using Recurrence Edit / Delete Dialog
+
+To edit the single occurrence appointment from recurrence series, double click the appointment to show recurrence edit option dialog. Click Only this appointment button from this dialog to open the appointment window to edit.
+
+To delete the single occurrence appointment from recurrence series, hover the appointment to show X icon from top right corner of the appointment. Click this icon to open the Recurrence Appointment Delete option dialog will appears. Now choose the Only this appointment button to delete this appointment.
+
+#### Following events
+
+The following events can be edit or delete in two ways
+
+* Using Appointment Details Dialog
+* Using Recurrence Edit / Delete Dialog
+
+##### Using Appointment Details Dialog
+
+To edit the following events from the recurrence appointment series, click any occurrence appointment to show appointment details dialog. Click Future Events option from this dialog to open the appointment window to edit the future appointments.
+
+To delete the following events from recurrence appointment series, click the appointment to show appointment details dialog. Click delete icon option from this dialog. Now the Recurrence Appointment Delete option dialog will appears. Now choose the Following Events button to delete future appointments.
+
+##### Using Recurrence Edit / Delete Dialog
+
+To edit the following events from the recurrence appointment series, double click the appointment to show recurrence edit option dialog. Click Following Events button from this dialog to open the appointment window to edit the future appointments.
+
+To delete the following events from recurrence appointment series, hover the appointment to show X icon from top right corner of the appointment. Click this icon to open the Recurrence Appointment Delete option dialog will appears. Now choose the Only this appointment button to delete this appointment.
+
+#### Entire series
+
+The entire series can be edit / delete in two ways
+
+* Using Appointment Details Dialog
+* Using Recurrence Edit / Delete Dialog
+
+##### Using Appointment Details Dialog
+
+To edit the entire series of recurrence appointment, click any occurrence appointment to show appointment details dialog. Click Entire series option from this dialog to open the appointment window to edit the entire series. All edited occurrences are get refreshed based on the edited value.
+
+To delete the entire series of recurrence appointment, click any occurrence appointment to show appointment details dialog. Click delete icon option from this dialog. Now the Recurrence Appointment Delete option dialog will appears. Now choose the Entire series button to delete recurrence appointments. All edited occurrences are also deleted, if any.
+
+##### Using Recurrence Edit / Delete Dialog
+
+To edit the entire series of the recurrence appointment, double click any occurrence appointment to show recurrence edit option dialog. Click Entire series button from this dialog to open the appointment window to edit the entire series. All edited occurrences are get refreshed based on the edited value. To prevent the edited occurrences is not get refresh while editing the whole recurrence series, use the “beforeAppointmentChange” event to set the ignoreEditedOccurrences field as true.
+
+To delete the entire series of recurrence appointment, hover the appointment to show X icon from top right corner of the appointment. Click this icon to open the Recurrence Appointment Delete option dialog will appears. Now choose the Entire series button to delete this appointment. All edited occurrences are also deleted, if any.
+
 ## Reminder
 
 Reminder option notifies all the appointments before some specific time. By default, it notifies before 5 minutes. Each and every appointment triggers the [reminder](/api/js/ejschedule#events:reminder) event and can utilize this event for other user actions like mailing particular event to someone or to do any kind of manipulations with the reminder appointments and so on. The `reminderSettings` includes the following 2 properties namely,
