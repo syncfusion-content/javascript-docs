@@ -76,7 +76,7 @@ $(function () {
 
 function detailGridData(e) {
 	// Here you can get the parent details from "data". EmployeeID is the unique column value in parent row.
-	var filteredData = e.data["EmployeeID"];
+	var filteredData = e.rowData["EmployeeID"];
 	// the datasource "window.ordersView" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
 	var data = ej.DataManager(window.ordersView).executeLocal(ej.Query().where("EmployeeID", "equal", parseInt(filteredData), true).take(5)); // form the query to filter the detail row data by using EmplooyeeID column value.
 	//detailsElement contains all the elements which are mentioned in the template.
@@ -359,8 +359,8 @@ $(function () {
             });
 });
         function rowDropHandler(args) {
-            for (var key in args.data[0]) {
-                $('#dropForm input[name=' + key + ']').val(args.data[0][key]);
+            for (var key in args.rowData[0]) {
+                $('#dropForm input[name=' + key + ']').val(args.rowData[0][key]);
             }
         }
 {% endhighlight %}
@@ -374,3 +374,5 @@ The following output is displayed after dropping the rows on Form.
 
 ![](Row_images/Row_img10.png)
 {:After Drop}
+
+N>   The default behavior of drag and drop between Grid or any other controls is as cut and paste. For copy and paste behavior specify the drag behavior in [`dragBehavior`](https://help.syncfusion.com/api/js/ejgrid#members:rowdropsettings-dragbehavior "dragBehavior") property of [`rowDropSettings`](https://help.syncfusion.com/api/js/ejgrid#members:rowdropsettings "rowDropSettings")  as ej.Grid.DragBehavior.Copy.
