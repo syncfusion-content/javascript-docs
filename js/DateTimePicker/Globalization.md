@@ -101,7 +101,7 @@ Add the following code in your **HTML** page.
     // Add the code in your script section to render the DateTimePicker with Spanish culture
     $("#dateTime").ejDateTimePicker({
        locale: "es-ES",
-       buttonText: { today: "hoy", now: "ahora", done: "hecho", timeTitle: "tiempo" },
+       buttonText: { today: "hoy", timeNow: "ahora", done: "hecho", timeTitle: "tiempo" },
     });
 
 {% endhighlight %}
