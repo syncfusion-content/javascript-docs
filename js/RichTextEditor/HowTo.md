@@ -525,3 +525,70 @@ Apply the following style and In the below sample, the sprite image has been use
     </style>
     
 {% endhighlight %}
+
+## RTE - Spellcheck Integration
+
+We have integrated spellcheck with RTE component. This spellchecker will validate the text present in RTE and provide suggestion in both context menu and dialog mode. 
+
+This can be achieved application side using RTE custom tools. We have rendered spellcheck control in RTE iframe element and using custom tool spellcheck dialog mode rendered. 
+
+N> We have prevent the spellcheck context menu using "contextBeforeOpen" event and get the spellcheck suggestion list merge to RTE context menu. 
+
+{% highlight html %}
+
+    <textarea id="rteSample" rows="10" cols="30" style="width: 740px; height: 440px">
+        The RichTextEditor (RTE) control enables you to edit the contents with insert table and images
+        It also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.
+    </textarea>
+
+    <script type="text/javascript" class="jsScript">
+        var rteObj, target;
+        $(function () { 
+            $("#rteSample").ejRTE({
+                toolsList: ["customTools"],
+                width: "100%",
+                minWidth: "150px",
+                tools: {
+                    customTools: [{
+                        name: "dialog",
+                        tooltip: "Click to SpellCheck",
+                        css: "RTESpellcheck e-rte-toolbar-icon e-spell",
+                        action: function(){ 
+                            var spellObj = rteObj._rteIframe.data("ejSpellCheck");
+                            spellObj.showInDialog();
+                        }
+                    }]
+                },
+                externalCSS: "../content/default.css"
+            });
+            rteObj = $("#rteSample").data("ejRTE");
+            rteObj._rteIframe.ejSpellCheck({
+                dictionarySettings: {
+                    dictionaryUrl: "http://js.syncfusion.com/ejServices/api/SpellCheck/CheckWords",
+                    customDictionaryUrl: "http://js.syncfusion.com/ejServices/api/SpellCheck/AddToDictionary"
+                },
+                contextMenuSettings: { enable: true },
+                enableValidateOnType: true,
+                enableAsync: false,
+                ajaxDataType: "json",
+                contextBeforeOpen: function (args) {
+                    args.cancel = true;
+                },
+                dialogBeforeOpen: function (args) {
+                    if (args.requestType === "alertBeforeOpen") {
+                        args.cancel = true;
+                    }
+                }
+            });
+        });
+    </script>
+
+{% endhighlight %}
+
+## RTE - Spellcheck Integration ContextMenu Mode
+
+![](RTESpellcheck_images/spellcheck_contextmode.png)
+
+## RTE - Spellcheck Integration Dialog Mode
+
+![](RTESpellcheck_images/spellcheck_dialogmode.png)
