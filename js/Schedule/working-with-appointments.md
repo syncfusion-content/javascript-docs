@@ -128,7 +128,7 @@ function onCellClick(args) {
 
 {% endhighlight %}
 
-#### Inline Appointment creation/editing
+#### Inline Appointment Creation/Editing
 
 Another easier way, for adding or editing the appointment’s subject alone can be achieved using inline Add/Edit support. It allows the user to add and edit the appointments inline.
 
