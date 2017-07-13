@@ -1626,7 +1626,7 @@ Contains the collections of Sub Report model items.
 ### Request
 
 ~~~csharp
-            if (reportOption.ReportModel.IsDrillhroughReport)            
+            if (reportOption.ReportModel.IsDrillthroughReport)            
                 return;
             var reportName = reportOption.ReportModel.ReportPath;
             reportOption.ReportModel.ReportPath = ReportViewerHelper.GetReportPath(reportOption.ReportModel.ReportPath);
