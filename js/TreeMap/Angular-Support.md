@@ -97,6 +97,7 @@ Apply the plugin and property assigning the **Treemap** element through the di
 
 ![](/js/TreeMap/Angular-Support_images/Angular-Support_img1.png)
 
+Try it: [Treemap Angular Support](http://jsplayground.syncfusion.com/q5e4wf5f)
 
 
 
