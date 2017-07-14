@@ -48,7 +48,7 @@ You can use `groupGap` property to separate the items from every flat level and
 
 ![](TreeMapLevels_images/TreeMapLevels_img1.png)
 
-[Click](http://jsplayground.syncfusion.com/plnqu1fu) here to view our online demo sample with flat levels.
+Try it: [FlatLevel](http://jsplayground.syncfusion.com/plnqu1fu)
 
 ## Hierarchical Level
 
@@ -94,4 +94,4 @@ You can use `groupGap` property to separate the items from every flat level and
 
 ![](TreeMapLevels_images/TreeMapLevels_img2.png)
 
-[Click](http://jsplayground.syncfusion.com/Sync_cbabthf1) here to view our online demo sample with Hierarchical levels.
+[Click](http://js.syncfusion.com/demos/web/#!/bootstrap/treemap/hierarchical) here to view our online demo sample with Hierarchical levels.

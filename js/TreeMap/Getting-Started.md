@@ -180,7 +180,7 @@ The following screenshot displays a TreeMap control that is rendered after execu
 
 ![](/js/TreeMap/Getting-Started_images/Getting-Started_img2.png)
 
-[Click](http://jsplayground.syncfusion.com/lxhlxr0m) here to view our online demo sample with weightValuePath.
+Try it: [WeightValuePath](http://jsplayground.syncfusion.com/lxhlxr0m)
 
 ## Group with Levels
 
@@ -219,7 +219,7 @@ The following screenshot displays grouping of **TreeMap****Items** using **Level
 
 ![](/js/TreeMap/Getting-Started_images/Getting-Started_img3.png)
 
-[Click](http://jsplayground.syncfusion.com/mngx4smn) here to view our online demo sample with grouping levels.
+Try it: [Grouping Levels](http://jsplayground.syncfusion.com/mngx4smn)
 
 ## Customize TreeMap by Range
 
@@ -261,7 +261,7 @@ The following screenshot displays a customized **TreeMap** control.
 
 ![](/js/TreeMap/Getting-Started_images/Getting-Started_img4.png)
 
-[Click](http://jsplayground.syncfusion.com/dzkekv33) here to view our online demo sample with color value path.
+Try it: [ColorValuePath](http://jsplayground.syncfusion.com/dzkekv33)
 
 ## Enable Tooltip
 
@@ -303,7 +303,7 @@ The following screenshot displays a ToolTip in a **TreeMap** control.
 
 ![](/js/TreeMap/Getting-Started_images/Getting-Started_img5.png)
 
-[Click](http://jsplayground.syncfusion.com/apibaesy) here to view our online demo sample with leafItemSettings.
+Try it: [LeafItemSettings](http://jsplayground.syncfusion.com/apibaesy)
 
 ## Enable Legend
 
@@ -353,7 +353,7 @@ The following screenshot displays labels in a **TreeMap** control.
 
 ![](/js/TreeMap/Getting-Started_images/Getting-Started_img6.png)
 
-[Click](http://jsplayground.syncfusion.com/lhtvawqv) here to view our online demo sample with legendLabel.
+Try it: [Legend Label](http://jsplayground.syncfusion.com/lhtvawqv)
 
 N> Population data is referred from [List of continents by population](http://en.wikipedia.org/wiki/List_of_continents_by_population).
 

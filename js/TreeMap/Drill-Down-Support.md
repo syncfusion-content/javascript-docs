@@ -75,4 +75,4 @@ _Before Drill Down_
 
 _After Drill Down_
 
-[Click](http://jsplayground.syncfusion.com/Sync_mrof3n0r) here to view our online demo sample with drilldown levels.
+Try it: [DrillDown](http://jsplayground.syncfusion.com/Sync_mrof3n0r)

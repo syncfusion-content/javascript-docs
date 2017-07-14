@@ -62,7 +62,7 @@ You can customize the labels of the **legend item** using `legendLabel` property
 
 ![](/js/TreeMap/TreeMap-Elements_images/TreeMap-Elements_img1.png)
 
-[Click](http://jsplayground.syncfusion.com/yaaqbnna) here to view our online demo sample with legendLabel.
+Try it: [Legend Label](http://jsplayground.syncfusion.com/yaaqbnna)
 
 
 ### Interactive Legend
@@ -101,7 +101,7 @@ You can provide the left and right labels to interactive legend by using `leftLa
 
 ![](/js/TreeMap/TreeMap-Elements_images/Interactive_Legend.png)
 
-[Click](http://jsplayground.syncfusion.com/0mfsg1pp) here to view our online demo sample with Interactive Legend.
+Try it: [Interactive_Legend](http://jsplayground.syncfusion.com/0mfsg1pp)
 
 
 ## Header
@@ -137,7 +137,7 @@ You can set headers for each level by setting the `showHeader` property of the e
 
 ![](/js/TreeMap/TreeMap-Elements_images/TreeMap-Elements_img2.png)
 
-[Click](http://jsplayground.syncfusion.com/vaas20hr) here to view our online demo sample with Header.
+Try it: [Treemap Header](http://jsplayground.syncfusion.com/vaas20hr)
 
 ## Label
 
@@ -176,4 +176,4 @@ You can also set labels for the leaf nodes by setting the `showLabels` property 
 
 ![](/js/TreeMap/TreeMap-Elements_images/TreeMap-Elements_img3.png)
 
-[Click](http://jsplayground.syncfusion.com/ms0n0uuk) here to view our online demo sample with Labels.
+Try it: [Treemap Label](http://jsplayground.syncfusion.com/ms0n0uuk)

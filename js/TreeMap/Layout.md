@@ -45,7 +45,7 @@ There are four different **TreeMap** layouts such as
 
 ![](/js/TreeMap/Layout_images/Layout_img1.png)
 
-[Click](http://jsplayground.syncfusion.com/q1pc13k3) here to view our online demo sample with Squarified Layout.
+Try it: [Squarified](http://jsplayground.syncfusion.com/q1pc13k3)
 
 ## SliceAndDiceAuto
 
@@ -70,7 +70,7 @@ There are four different **TreeMap** layouts such as
 
 ![](/js/TreeMap/Layout_images/Layout_img2.png)
 
-[Click](http://jsplayground.syncfusion.com/eotkjoag) here to view our online demo sample with SliceAndDiceAuto Layout.
+Try it: [SliceAndDiceAuto](http://jsplayground.syncfusion.com/eotkjoag)
 
 ## SliceAndDiceHorizontal
 
@@ -95,7 +95,7 @@ There are four different **TreeMap** layouts such as
 
 ![](/js/TreeMap/Layout_images/Layout_img3.png)
 
-[Click](http://jsplayground.syncfusion.com/hrvachsi) here to view our online demo sample with SliceAndDiceHorizontal Layout.
+Try it: [SliceAndDiceHorizontal](http://jsplayground.syncfusion.com/hrvachsi)
 
 ## SliceAndDiceVertical
 
@@ -120,4 +120,4 @@ There are four different **TreeMap** layouts such as
 
 ![](/js/TreeMap/Layout_images/Layout_img4.png)
 
-[Click](http://jsplayground.syncfusion.com/brtks3m2) here to view our online demo sample with SliceAndDiceVertical Layout.
+Try it: [SliceAndDiceVertical](http://jsplayground.syncfusion.com/brtks3m2)
