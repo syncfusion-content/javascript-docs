@@ -17,6 +17,12 @@ TreeView allow you to get the updated tree data after performing such operation 
 
 Refer the sample from the link [Updated tree data](http://jsplayground.syncfusion.com/3f1qqqm1#) to know how to get updated data from TreeView.
 
+You can also get the updated data source for remote data binding after performing the operation like editing, selecting/unselecting, expanding/collapsing, checking/unchecking and removing node. You cannot get the updated data source when you perform operation like drag and drop, adding node for remote data binding.
+
+The updated data source also contains custom attributes ("ContactTitle", "OrderID", "EmployeeID", "Freight") if you return these from server.
+
+Refer the sample from the [link](http://jsplayground.syncfusion.com/Sync_aeirbejs) to know more about how to get updated data with custom attributes from TreeView for remote data binding.
+
 ## TreeView context menu to process node operations
 
 TreeView allow you to perform some tree operation like add, remove, update, move, check, uncheck, select node dynamically by using built-in methods and properties. Using those methods and properties, you can trigger it through context menu item click action to manipulate node. 
