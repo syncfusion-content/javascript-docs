@@ -538,3 +538,88 @@ List of Column type and Filter operators
             </td>
         </tr>
     </table>
+
+## FilterBar Template
+
+Usually enabling allowFiltering, will create default textbox in Grid FilterBar. So, Using [`filterBarTemplate`](https://help.syncfusion.com/api/js/ejgrid#members:columns-filterbartemplate "filterBarTemplate") property of `columns` we can render any other controls like AutoComplete, DropDownList etc in filterbar to filter the grid data for the particular column.
+It has three functions. They are    
+
+1. `create` - It is used to create the control at time of initialize.
+2. `read`   - It is used to read the Filter value selected.
+3. `write`  - It is used to render the control and assign the value selected for filtering.
+
+
+The following code example describes the above behavior.
+
+{% highlight html %}
+<div id="Grid"></div>
+{% endhighlight %}
+
+{% highlight javascript %}
+$(function () {
+            $("#Grid").ejGrid({
+                // the datasource "window.gridData" is referred from jsondata.min.js
+                dataSource: ej.DataManager(window.gridData),
+                allowPaging: true,
+                allowFiltering: true,                
+                columns: [
+                            { field: "OrderID", headerText: "Order ID", textAlign: ej.TextAlign.Right, width: 75 },
+                            { field: "CustomerID",headerText: "CustomerID", width: 100, filterBarTemplate: {
+                                    create: function (args) {
+                                            return "<input>"
+                                    },
+                                    write: function (args) {
+                                           var data = ej.DataManager(window.gridData).executeLocal(new ej.Query().select("CustomerID"));
+                                           args.element.ejAutocomplete({ width: "100%", dataSource: data, enableDistinct: true, focusOut: ej.proxy(args.column.filterBarTemplate.read, this, args) });
+                                    },
+                                    read: function (args) {
+                                          this.filterColumn(args.column.field, "equal", args.element.val(), "and", true)
+                                    },
+                                 },
+                            },
+                            { field: "EmployeeID", headerText: "EmployeeID", width: 100, filterBarTemplate: {
+                                       write: function (args) {
+                                              var data = [{ text: "clear", value: "clear" }, { text: "1", value: 1 }, { text: "2", value: 2 }, { text: "3", value: 3 }, { text: "4", value: 4 },
+                                                        { text: "5", value: 5 }, { text: "6", value: 6 }, { text: "7", value: 7 }, { text: "8", value: 8 }, { text: "9", value: 9 }
+                                                        ]
+                                              args.element.ejDropDownList({ width: "100%", dataSource: data, change: ej.proxy(args.column.filterBarTemplate.read, this, args) })
+                                            },
+                                       read: function (args) {
+                                             if (args.element.val() == "clear") {
+                                                  this.clearFiltering(args.column.field);
+                                                  args.element.val("")
+                                                 }
+                                             this.filterColumn(args.column.field, "equal", args.element.val(), "and", true)
+                                            },
+                                     }
+                             },
+                             { field: "Freight", headerText: "Freight", width: 100, filterBarTemplate: {
+                                       write: function (args) {
+                                              args.element.ejNumericTextbox({ width: "100%",decimalPlaces: 2, focusOut: ej.proxy(args.column.filterBarTemplate.read, this, args) });
+                                           },
+                                       read: function (args) {
+                                             this.filterColumn(args.column.field, "equal", args.element.val(), "and", true)
+                                               },
+                                         }
+                              },
+                              { field: "ShipCountry", headerText: "Ship Country", width: 90 },
+                              { field: "Verified", textAlign:ej.TextAlign.Center, headerText: "Verified", width: 80, filterBarTemplate: {
+                                        write: function (args) {
+                                               args.element.ejCheckBox({ change: ej.proxy(args.column.filterBarTemplate.read, this, args) });
+                                         },
+                                        read: function (args) {
+                                              this.filterColumn(args.column.field, "equal", args.element.parent().attr('aria-checked'), "and", true)
+                                         },
+                                     }
+                               }
+                ] 
+            });
+			 
+           });
+{% endhighlight %}
+
+The following output is displayed as a result of the above code example.
+
+![](filtering_images/filtering_img11.png)
+{:caption}
+After Filtering
