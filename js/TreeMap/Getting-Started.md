@@ -180,6 +180,8 @@ The following screenshot displays a TreeMap control that is rendered after execu
 
 ![](/js/TreeMap/Getting-Started_images/Getting-Started_img2.png)
 
+[Click](http://jsplayground.syncfusion.com/lxhlxr0m) here to view our online demo sample with weightValuePath.
+
 ## Group with Levels
 
 You can group TreeMap items using the levels in it.
@@ -216,6 +218,8 @@ The following code sample explains how to group TreeMap Items using ‘Levels’
 The following screenshot displays grouping of **TreeMap****Items** using **Levels**.
 
 ![](/js/TreeMap/Getting-Started_images/Getting-Started_img3.png)
+
+[Click](http://jsplayground.syncfusion.com/mngx4smn) here to view our online demo sample with grouping levels.
 
 ## Customize TreeMap by Range
 
@@ -257,6 +261,8 @@ The following screenshot displays a customized **TreeMap** control.
 
 ![](/js/TreeMap/Getting-Started_images/Getting-Started_img4.png)
 
+[Click](http://jsplayground.syncfusion.com/dzkekv33) here to view our online demo sample with color value path.
+
 ## Enable Tooltip
 
 You can enable the tooltip by setting `showTooltip` property to “True”. By default, it takes the property of the bound object that is referred in the `weightValuePath` and displays its content when the corresponding node is hovered. You can customize the template for tooltip using `tooltipTemplate` property.
@@ -296,6 +302,8 @@ You can customize the Leaf level TreeMap items using `leafItemSettings`. The Lab
 The following screenshot displays a ToolTip in a **TreeMap** control.
 
 ![](/js/TreeMap/Getting-Started_images/Getting-Started_img5.png)
+
+[Click](http://jsplayground.syncfusion.com/apibaesy) here to view our online demo sample with leafItemSettings.
 
 ## Enable Legend
 
@@ -344,6 +352,8 @@ The following code sample illustrates how to add labels for legend in a TreeMap.
 The following screenshot displays labels in a **TreeMap** control. 
 
 ![](/js/TreeMap/Getting-Started_images/Getting-Started_img6.png)
+
+[Click](http://jsplayground.syncfusion.com/lhtvawqv) here to view our online demo sample with legendLabel.
 
 N> Population data is referred from [List of continents by population](http://en.wikipedia.org/wiki/List_of_continents_by_population).
 

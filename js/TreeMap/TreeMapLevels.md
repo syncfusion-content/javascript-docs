@@ -48,6 +48,8 @@ You can use `groupGap` property to separate the items from every flat level and
 
 ![](TreeMapLevels_images/TreeMapLevels_img1.png)
 
+[Click](http://jsplayground.syncfusion.com/plnqu1fu) here to view our online demo sample with flat levels.
+
 ## Hierarchical Level
 
 **TreeMap** Hierarchical level is used to define levels for hierarchical data collection that contains tree-structured data.
@@ -92,3 +94,4 @@ You can use `groupGap` property to separate the items from every flat level and
 
 ![](TreeMapLevels_images/TreeMapLevels_img2.png)
 
+[Click](http://jsplayground.syncfusion.com/Sync_cbabthf1) here to view our online demo sample with Hierarchical levels.

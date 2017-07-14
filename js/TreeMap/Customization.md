@@ -47,6 +47,8 @@ You can color, all the leaf nodes with the same color by setting the `color` val
 
 ![](/js/TreeMap/Customization_images/Customization_img1.png)
 
+[Click](http://jsplayground.syncfusion.com/2v542ver) here to view our online demo sample with uniColorMapping.
+
 ### Range Color Mapping
 
 You can group the leaf nodes based on the range of the data’s color values. You can set a unique color for every ranges. To achieve this, specify the `to` and `from` values as range bound and `color` value to fill the leaf nodes of the particular range, through the `rangeColorMapping` property of the **TreeMap**.
@@ -75,6 +77,8 @@ You can group the leaf nodes based on the range of the data’s color values. Yo
 
 ![](/js/TreeMap/Customization_images/Customization_img2.png)
 
+[Click](http://jsplayground.syncfusion.com/cbcyugjn) here to view our online demo sample with rangeColorMapping.
+
 ### Desaturation Color Mapping
 
 You can differentiate all the leaf nodes using the `desaturationColorMapping` property of the **TreeMap**. Differentiation is achieved, even though same color is applied for all the leaf nodes by varying the opacity of the leaf nodes based on the color value specified in the color value range using `rangeMinimum` and `rangeMaximum` value of the data collection. You can also bound the opacity range by setting `from` and `to` property of the `desaturationColorMapping`.
@@ -100,6 +104,8 @@ You can differentiate all the leaf nodes using the `desaturationColorMapping` pr
 
 
 ![](/js/TreeMap/Customization_images/Customization_img3.png)
+
+[Click](http://jsplayground.syncfusion.com/qoh2upwr) here to view our online demo sample with desaturationColorMapping.
 
 ## Tooltip
 
@@ -155,3 +161,4 @@ You can customize the **Leaf level TreeMap items** using `leafItemSettings`. The
 
 ![](/js/TreeMap/Customization_images/Customization_img4.png)
 
+[Click](http://jsplayground.syncfusion.com/gec0w4gb) here to view our online demo sample with leafItemSettings.
