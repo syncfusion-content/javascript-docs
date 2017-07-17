@@ -197,7 +197,7 @@ After Dragging:
 
 ![](Getting-Started_images/Getting-Started-img3.png)
 
-### Helper
+## Helper
 
 Helper will return the object of corresponding draggable element. You can drag the element by using helper. 
 

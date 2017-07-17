@@ -122,7 +122,7 @@ In order to drag an element during tapHold in mobile devices set the dragOnTapho
 
 {% endhighlight %}
 
-## Restrict Vs Group
+## Restrict Drop
 
 You can group draggable and droppable elements using [scope](https://help.syncfusion.com/api/js/ejdraggable#members:scope) property. You can define a scope value for both drag and drop elements and the elements will be dragged and dropped based on that.The draggable element with a different scope value will not be accepted by the droppable element
 
