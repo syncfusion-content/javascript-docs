@@ -332,6 +332,40 @@ $("#container").ejChart({
 ![](/js/Chart/Data-Markers_images/Data-Markers_img13.png)
 
 
+## Binding label from the datasource
+
+You can bind the text value to the datalabel from the datasource and then you need to map the text value field with the **textMappingName** properties respectively.
+
+{% highlight javascript %}
+
+//data source for chart with label 
+var chartData = [ 
+          { month: 'Jan', sales: 35, Text: "January" },  
+          { month: 'Feb', sales: 28, Text: "February" }, 
+          //... 
+        ]; 
+
+     $("#chartcontainer").ejChart({
+            // ...      
+            series: [{
+                // ...
+                marker: {
+                        dataLabel: {
+                      //Mapping the text name 
+                            visible : true,
+                            textMappingName : "Text",                            
+                        }
+                    }
+            }],
+           // ...
+    });
+
+
+{% endhighlight %}
+
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/vkziijnc)
+
+
 ## Customize specific points
 
 By using the ejChart, you can also customize the individual/specific markers with different colors, shapes and also with different images.
