@@ -103,7 +103,7 @@ You can set the offset for dragging helper with respect to the mouse cursor usin
  
 {% endhighlight %}
 
-## Drag on tapHold 
+## Drag On Tap Hold 
 
 In order to drag an element during tapHold in mobile devices set the dragOnTaphold to true 
 
@@ -122,7 +122,7 @@ In order to drag an element during tapHold in mobile devices set the dragOnTapho
 
 {% endhighlight %}
 
-## Restrict Drag and Drop
+## Restrict Drop
 
 You can group draggable and droppable elements using [scope](https://help.syncfusion.com/api/js/ejdraggable#members:scope) property. You can define a scope value for both drag and drop elements and the elements will be dragged and dropped based on that.The draggable element with a different scope value will not be accepted by the droppable element
 
