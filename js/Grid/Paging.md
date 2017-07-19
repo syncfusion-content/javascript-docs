@@ -116,7 +116,7 @@ The following output is displayed as a result of the above code example.
 
 ## Pager with pageSize drop down
 
-There is an option to set the size of page by means selecting the pageSize you wish from the options available in the drop down. To render drop down in pager, provide the pageSize values you wish to display in drop down as array to [`pageSizeList`](https://help.syncfusion.com/api/js/ejgrid#members:pagesettings-pagesizelist "pageSizeList") property of [`pageSettings`](https://help.syncfusion.com/api/js/ejgrid#members:pagesettings "pageSettings").
+There is an option to set the size of page by means selecting the pageSize you wish from the options available in the drop down. To render drop down in pager, provide the pageSize values you wish to display in drop down as `array` values to [`pageSizeList`](https://help.syncfusion.com/api/js/ejgrid#members:pagesettings-pagesizelist "pageSizeList") property of [`pageSettings`](https://help.syncfusion.com/api/js/ejgrid#members:pagesettings "pageSettings").
 
 The following code example describes the above behavior.
 
