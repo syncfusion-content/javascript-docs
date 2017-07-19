@@ -114,3 +114,28 @@ The following output is displayed as a result of the above code example.
 ![](paging_images/paging_img3.png)
 
 
+## Pager with pageSize drop down
+
+There is an option to set the size of page by means selecting the pageSize you wish from the options available in the drop down. To render drop down in pager, provide the pageSize values you wish to display in drop down as array to [`pageSizeList`](https://help.syncfusion.com/api/js/ejgrid#members:pagesettings-enabletemplates "pageSizeList") property of [`pageSettings`](https://help.syncfusion.com/api/js/ejgrid#members:pagesettings "pageSettings").
+
+The following code example describes the above behavior.
+
+{% highlight html %}
+<div id="Grid"></div>
+{% endhighlight %}
+
+{% highlight javascript %}
+$(function () {
+	$("#Grid").ejGrid({
+		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+        dataSource: window.gridData,
+        allowPaging: true,
+        pageSettings: { pageSize: 14, pageSizeList: [8,12,9,5] }
+    });
+});
+{% endhighlight %}
+
+The following output is displayed as a result of the above code example.
+
+![](paging_images/paging_img4.png)
+
