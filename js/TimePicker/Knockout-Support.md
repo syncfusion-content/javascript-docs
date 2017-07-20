@@ -41,8 +41,8 @@ The following example depicts the way to bind data to the **TimePicker** widget 
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
     <script src="http://cdn.syncfusion.com/js/assets/external/knockout.min.js"></script>
     <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"></script>
-    <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.unobtrusive.min.js"></script>
-    <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/ej.widget.ko.min.js"></script>
+    <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/common/ej.unobtrusive.min.js"></script>
+    <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/common/ej.widget.ko.min.js"></script>
     <!--Add custom scripts here -->
 </head>
 <body>
