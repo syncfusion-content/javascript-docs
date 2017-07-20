@@ -77,7 +77,7 @@ The output of the above steps is as follows:
 
 ![](/js/TreeGrid/Data-Binding_images/Data-Binding_img1.png)
 
-###Self-Referential Data Binding (Flat Data)
+### Self-Referential Data Binding (Flat Data)
 
 TreeGrid is rendered from Self-Referential data structures by providing two fields: **ID** field and **parent ID** field.
 
