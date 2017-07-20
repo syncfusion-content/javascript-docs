@@ -129,7 +129,7 @@ var PortConstraints = ej.datavisualization.Diagram.PortConstraints;
 var nodes = [{
 	name: "node",
 	ports: [{
-		//Sets the port as not connectable
+		//Sets the port as not getting connected
 		constraints: PortConstraints.None
 	}]
 }];

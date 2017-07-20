@@ -629,7 +629,7 @@ Bridging can be enabled/disabled either with the `connector.constraints` or `dia
 {% highlight javascript %}
 
 var Diagram = ej.datavisualization.Diagram;
-//Enables briding for a single connector
+//Enables bridging for a single connector
 var connector = {
 	name: "connector1",
 	sourcePoint: { x: 100, y: 100 },
