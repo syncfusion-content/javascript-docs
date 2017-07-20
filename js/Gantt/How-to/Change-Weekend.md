@@ -8,11 +8,11 @@ documentation: ug
 ---
 
 # Change Week end/Non-working day
-Non-working days/weekends are used to represent the non-productive days in a project. It is possible to change the non-working days in a week using the `workWeek` property in Gantt.
+Non-working days/weekend are used to represent the non-productive days in a project. It is possible to change the non-working days in a week using the `workWeek` property in Gantt.
 
-By default, Saturdays and Sundays are considered as non-working days/weekends in a project. 
+By default, Saturdays and Sundays are considered as non-working days/weekend in a project. 
 
-The following code example explains how to change weekends/non-workdays
+The following code example explains how to change weekend/non-workingdays
 
 {% highlight javascript %}
 
