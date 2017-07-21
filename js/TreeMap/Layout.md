@@ -45,6 +45,8 @@ There are four different **TreeMap** layouts such as
 
 ![](/js/TreeMap/Layout_images/Layout_img1.png)
 
+Try it: [Squarified](http://jsplayground.syncfusion.com/q1pc13k3)
+
 ## SliceAndDiceAuto
 
 **SliceAndDiceAuto** layout creates rectangles with high aspect ratio and displays them sorted both horizontally and vertically.
@@ -67,6 +69,8 @@ There are four different **TreeMap** layouts such as
 
 
 ![](/js/TreeMap/Layout_images/Layout_img2.png)
+
+Try it: [SliceAndDiceAuto](http://jsplayground.syncfusion.com/eotkjoag)
 
 ## SliceAndDiceHorizontal
 
@@ -91,6 +95,8 @@ There are four different **TreeMap** layouts such as
 
 ![](/js/TreeMap/Layout_images/Layout_img3.png)
 
+Try it: [SliceAndDiceHorizontal](http://jsplayground.syncfusion.com/hrvachsi)
+
 ## SliceAndDiceVertical
 
 **SliceAndDiceVertical** layout creates rectangles with high aspect ratio and displays them sorted vertical.
@@ -114,3 +120,4 @@ There are four different **TreeMap** layouts such as
 
 ![](/js/TreeMap/Layout_images/Layout_img4.png)
 
+Try it: [SliceAndDiceVertical](http://jsplayground.syncfusion.com/brtks3m2)

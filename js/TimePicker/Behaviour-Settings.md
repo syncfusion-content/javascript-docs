@@ -173,7 +173,7 @@ Execute the above code to render the following output.
 
 ### Changing TimePicker PopupHeight and PopupWidth
 
-You can use **popupHeight** and **popupWidth** property to customize **TimePicker** width and height.
+You can use **popupHeight** and **popupWidth** property to customize **TimePicker popup** width and height.
 
 In the **HTML** page, add a **&lt;input&gt;** element to configure **TimePicker** widget.
 

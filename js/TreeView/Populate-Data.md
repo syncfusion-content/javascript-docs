@@ -17,7 +17,7 @@ In TreeView, you should use “**fields**” property to go with data source. It
 
 ## Fields
 
-Below table is list outs the field members with description.  
+The following table contains the list of members with description for **fields** property.
 
 <table>
 <tr>
@@ -59,7 +59,7 @@ It specifies the tree node to be in expanded state<br/><br/></td></tr>
 <tr>
 <td>
 {{'[selected](https://help.syncfusion.com/api/js/ejtreeview#members:fields-selected)'| markdownify }}<br/><br/></td><td>
-It specifies the select node at initialize. N> only one node get selected <br/><br/></td></tr>
+It specifies the select node at initialize. N> only one node get selected by default. If you enable multiple selection in TreeView then you can able to select one or more nodes at initialize.<br/><br/></td></tr>
 <tr>
 <td>
 {{'[isChecked](https://help.syncfusion.com/api/js/ejtreeview#members:fields-ischecked)'| markdownify }} <br/><br/></td><td>
@@ -85,7 +85,7 @@ It defines the HTML attributes such as class and styles for a node ("li" tag).<b
 {{'[linkAttribute](https://help.syncfusion.com/api/js/ejtreeview#members:fields-linkattribute)'| markdownify }}<br/><br/></td><td>
 It defines the HTML attributes such as class and styles for a link tag, which is child of node.<br/><br/></td></tr>
 </table>
-Mapping all fields with data source
+Mapping all fields members with corresponding key from the array of JSON data.
 
 {% highlight js %}
 
