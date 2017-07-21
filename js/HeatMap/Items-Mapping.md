@@ -29,22 +29,22 @@ Let us see the difference between two types of mapping. Following table represen
                     { Year: "2010", ProductName: "Veggie-spread", Value: 64 },
                     { Year: "2010", ProductName: "Tofu", Value: 26 },
                     { Year: "2010", ProductName: "Alice Mutton", Value: 47 },
-                    { Year: "2010", ProductName: "Konbu", Value: 67 },
+                    { Year: "2010", ProductName: "Donut", Value: 67 },
 
                     { Year: "2011", ProductName: "Veggie-spread", Value: 56 },
                     { Year: "2011", ProductName: "Tofu", Value: 93 },
                     { Year: "2011", ProductName: "Alice Mutton", Value: 67 },
-                    { Year: "2011", ProductName: "Konbu", Value: 36 },
+                    { Year: "2011", ProductName: "Donut", Value: 36 },
 
                     { Year: "2012", ProductName: "Veggie-spread", Value: 15 },
                     { Year: "2012", ProductName: "Tofu", Value: 34 },
                     { Year: "2012", ProductName: "Alice Mutton", Value: 12 },
-                    { Year: "2012", ProductName: "Konbu", Value: 39 },
+                    { Year: "2012", ProductName: "Donut", Value: 39 },
 
                     { Year: "2013", ProductName: "Veggie-spread", Value: 24 },
                     { Year: "2013", ProductName: "Tofu", Value: 73 },
                     { Year: "2013", ProductName: "Alice Mutton", Value: 56 },
-                    { Year: "2013", ProductName: "Konbu", Value: 10 }
+                    { Year: "2013", ProductName: "Donut", Value: 10 }
                 ];
             {% endhighlight %}
         </td>
@@ -55,7 +55,7 @@ Let us see the difference between two types of mapping. Following table represen
                     { ProductName: "Veggie-spread", Y2010: 10, Y2011: 15, Y2012: 56, Y2013: 75 },
                     { ProductName: "Tofu", Y2010: 56, Y2011: 34, Y2012: 93, Y2013: 26 },
                     { ProductName: "Alice Mutton", Y2010: 73, Y2011: 12, Y2012: 67, Y2013: 47 },
-                    { ProductName: "Konbu", Y2010: 24, Y2011: 39, Y2012: 36, Y2013: 67 }
+                    { ProductName: "Donut", Y2010: 24, Y2011: 39, Y2012: 36, Y2013: 67 }
                 ];
         
             {% endhighlight %}

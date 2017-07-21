@@ -182,7 +182,7 @@ The following code illustrates how to convert HTML table to the Diagram.
 
 {% highlight html %}
 <!-- HTML Table -->
-<table id="htmlbinding">
+<table id="Binding">
 	<thead>
 		<tr>
 			<th>Id</th>
@@ -295,7 +295,7 @@ $(function() {
 			id: "Id",
 			parent: "ReportingPerson",
 			//Defines data source with html table
-			dataSource: ej.DataManager($("#htmlbinding")),
+			dataSource: ej.DataManager($("#Binding")),
 		}
 	});
 });
