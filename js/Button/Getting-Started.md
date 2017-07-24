@@ -16,7 +16,7 @@ The following screenshot illustrates the functionality of a Button control in Me
 
 ![](/js/Button/Getting-Started_images/Getting-Started_img1.png)
 
-##Create Button Widget
+## Create Button Widget
 
 Essential JavaScript Button control has different functionalities such as Display as Only Image Content or Image Content with Text.
 
@@ -164,7 +164,7 @@ Add the following styles to show the Button control in the center of a webpage.
 
 {% endhighlight %}
 
-##Create Multimedia Player
+## Create Multimedia Player
 
 Add the following code inside the **&lt;body&gt;** tag.
 
@@ -282,7 +282,7 @@ The following screenshot displays the output.
 
 ![](/js/Button/Getting-Started_images/Getting-Started_img2.png) 
 
-##Create Office Ribbon Control
+## Create Office Ribbon Control
 
 In a real-time scenario, MS Office Bold and Italic options work as **Toggle Button** and Underline option works as a **Split Button**. Here, you can learn how to use **Button** control feature using Office Ribbon options.
 
