@@ -64,7 +64,7 @@ $.ajax({
 
 ## LoadDefault
 
- [POST] [/Api/DocumentEditor/LoadDefault](http://js.syncfusion.com/demos/ejServices/api/DocumentEditor/LoadDefaul)
+ [POST] [/Api/DocumentEditor/LoadDefault](http://js.syncfusion.com/demos/ejServices/api/DocumentEditor/LoadDefault)
 
 It loads the default document in DocumentEditor.
 
