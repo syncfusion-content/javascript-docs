@@ -57,7 +57,7 @@ Context menu can be customized by adding a new custom menu item to it. In TreeGr
             args.contextMenuItems.push({
                 headerText: "Custom Menu",
                 menuId: "customMenu",
-                iconPath: "url(.../images/custommenu.png)",
+                iconPath: "url(.../images/customMenu.png)",
                 eventHandler: customMenuClick,
             });
         }

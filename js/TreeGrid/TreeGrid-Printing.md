@@ -72,7 +72,7 @@ beforePrint event will be triggered once after printing initiated in TreeGrid. T
             ]
         },
         beforePrint: function(args) {
-            // willbe triggered before printing the TreeGrid
+            // will be triggered before printing the TreeGrid
         },
     })
 

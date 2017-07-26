@@ -215,7 +215,7 @@ $("#GanttContainer").ejGantt({
     //...
     dragTooltip: {
         showTooltip: true,
-        tooltipTemplate: "#customtooltip"
+        tooltipTemplate: "#customTooltip"
     },
 });
 {% endhighlight %}

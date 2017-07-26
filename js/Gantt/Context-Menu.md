@@ -104,7 +104,7 @@ $("#GanttContainer").ejGantt({
 
             headerText: "ExpandAll",
 
-            menuId: "expandall",
+            menuId: "expandAll",
 
             parentMenuId: "expand",
 
@@ -122,7 +122,7 @@ $("#GanttContainer").ejGantt({
 
             headerText: "CollapseAll",
 
-            menuId: "collapseall",
+            menuId: "collapseAll",
 
             parentMenuId: "expand",
 
