@@ -28,7 +28,7 @@ api: /api/js/ejtreegrid
 
 * **Paging** - Paginated view of records.
 
-* **Summary rows** - To summarize the rows at each heirarchical levels.
+* **Summary rows** - To summarize the rows at each hierarchical levels.
 
 * **Details template** - To display the detailed view of a record.
 

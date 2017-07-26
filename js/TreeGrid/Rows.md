@@ -117,8 +117,8 @@ Row template is used to customize the **TreeGrid** rows based on requirements. I
             "DOB": "2/15/1963",
 
             "Children": [{
-                "Name": "David william",
-                "Full Name": "David william",
+                "Name": "David William",
+                "Full Name": "David William",
                 "Designation": "Vice President",
                 "EmployeeID": "EMP004",
                 "Address": "722 Moss Bay Blvd., Kirkland",
@@ -239,7 +239,7 @@ The following code shows how to render row drag tooltip with tooltip template.
             //...     
             dragTooltip: {
                 showTooltip: true,
-                tooltipTemplate: "#customtooltip",
+                tooltipTemplate: "#customTooltip",
             },
             //...             
         });

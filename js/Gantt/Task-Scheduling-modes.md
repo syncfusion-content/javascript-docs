@@ -94,7 +94,7 @@ $("#GanttContainer").ejGantt({
     //...
     taskSchedulingMode: ej.Gantt.TaskSchedulingMode.Custom,
     
-    taskSchedulingModeMapping: "isManual", //MAPPING TYPE OF TASK MODE TO GANTT
+    taskSchedulingModeMapping: "isManual", //Mapping type of task mode to Gantt
 
 });
 

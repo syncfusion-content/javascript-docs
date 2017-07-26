@@ -25,10 +25,10 @@ $("#TreeGridContainer").ejTreeGrid({
         ej.TreeGrid.ToolbarItems.ExcelExport
     ]
 },
-toolbarClick: toolbarclick,
+toolbarClick: toolbarClick,
 });
 
-function toolbarclick(args) {
+function toolbarClick(args) {
     var id = $(args.currentTarget).attr("id");
     this.exportGrid = this["export"];
     if (id == "TreeGridContainer_pdfExport") {
@@ -69,8 +69,8 @@ public class TreeGridController : ApiController
             string treeGridModel = HttpContext.Current.Request.Params["TreeGridModel"];
             TreeGridProperties treeGridProperty = ConvertGridObject(treeGridModel);
             PdfExport exp = new PdfExport();
-            TaskDetailsCollection tc = new TaskDetailsCollection();
-            IEnumerable<TaskDetails> data = tc.GetDataSource();
+            TaskDetailsCollection task = new TaskDetailsCollection();
+            IEnumerable<TaskDetails> data = task.GetDataSource();
             TreeGridExportSettings settings = new TreeGridExportSettings();
             settings.Theme = ExportTheme.FlatAzure;
             exp.Export(treeGridProperty, data, settings, "Export");
@@ -82,8 +82,8 @@ public class TreeGridController : ApiController
             string treeGridModel = HttpContext.Current.Request.Params["TreeGridModel"];
             TreeGridProperties treeGridProperty = ConvertGridObject(treeGridModel);
             ExcelExport exp = new ExcelExport();
-            TaskDetailsCollection tc = new TaskDetailsCollection();
-            IEnumerable<TaskDetails> data = tc.GetDataSource();
+            TaskDetailsCollection task = new TaskDetailsCollection();
+            IEnumerable<TaskDetails> data = task.GetDataSource();
             exp.Export(treeGridProperty, data, "ExcelExport.xlsx", ExcelVersion.Excel2010, new TreeGridExportSettings() { Theme = ExportTheme.FlatAzure });
         }
 
@@ -92,13 +92,13 @@ public class TreeGridController : ApiController
             JavaScriptSerializer serializer = new JavaScriptSerializer();
             IEnumerable div = (IEnumerable)serializer.Deserialize(treeGridProperty, typeof(IEnumerable));
             TreeGridProperties treeGridProp = new TreeGridProperties();
-            foreach (KeyValuePair<string, object> ds in div)
+            foreach (KeyValuePair<string, object> dataSource in div)
             {
-                var property = treeGridProp.GetType().GetProperty(ds.Key, BindingFlags.Instance | BindingFlags.Public | BindingFlags.IgnoreCase);
+                var property = treeGridProp.GetType().GetProperty(dataSource.Key, BindingFlags.Instance | BindingFlags.Public | BindingFlags.IgnoreCase);
                 if (property != null)
                 {
                     Type type = property.PropertyType;
-                    string serialize = serializer.Serialize(ds.Value);
+                    string serialize = serializer.Serialize(dataSource.Value);
                     object value = serializer.Deserialize(serialize, type);
                     property.SetValue(treeGridProp, value, null);
                 }
@@ -148,8 +148,8 @@ public void ExcelExport()
   string treeGridModel = HttpContext.Current.Request.Params["TreeGridModel"];
   TreeGridProperties treeGridProperty = ConvertGridObject(treeGridModel);
   ExcelExport exp = new ExcelExport();
-  TaskDetailsCollection tc = new TaskDetailsCollection();
-  IEnumerable<TaskDetails> data = tc.GetDataSource();
+  TaskDetailsCollection task = new TaskDetailsCollection();
+  IEnumerable<TaskDetails> data = task.GetDataSource();
   exp.Export(gridProperty, data, "ExcelExport.xlsx", ExcelVersion.Excel2010, new TreeGridExportSettings() { Theme = ExportTheme.FlatAzure });
 } 
 

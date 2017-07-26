@@ -453,9 +453,9 @@ TreeGridProperties gridProperty = ConvertGridObject(gridModel);
 
 PdfExport exp = new PdfExport();
 
-TaskDetailsCollection tc = new TaskDetailsCollection();
+TaskDetailsCollection task = new TaskDetailsCollection();
 
-IEnumerable<TaskDetails> result = tc.GetDataSource(); // datasource to be exported
+IEnumerable<TaskDetails> result = task.GetDataSource(); // datasource to be exported
 
 TreeGridExportSettings settings = new TreeGridExportSettings();
 
@@ -640,9 +640,9 @@ TreeGridProperties gridProperty = ConvertGridObject(gridModel);
 
 ExcelExport exp = new ExcelExport();
 
-TaskDetailsCollection tc = new TaskDetailsCollection();
+TaskDetailsCollection task = new TaskDetailsCollection();
 
-IEnumerable<TaskDetails> result = tc.GetDataSource();
+IEnumerable<TaskDetails> result = task.GetDataSource();
 
 exp.Export(gridProperty, result, "ExcelExport.xlsx", ExcelVersion.Excel2010, new TreeGridExportSettings() { Theme = ExportTheme.FlatAzure });
 

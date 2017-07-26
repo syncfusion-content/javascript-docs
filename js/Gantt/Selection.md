@@ -110,7 +110,7 @@ You can select the cells programmatically using [selectCells](/api/js/ejgantt#me
 {% highlight html %}
 <body>
 
-    <button id="selectcells">SelectCells</button> //…
+    <button id="selectCells">SelectCells</button> //…
 
 </body>
 {% endhighlight %}
@@ -122,7 +122,7 @@ $("#GanttContainer").ejGantt({
 
 });
 
-$("#selectcells").click(function(args) {
+$("#selectCells").click(function(args) {
 
     //create Gantt object
 
