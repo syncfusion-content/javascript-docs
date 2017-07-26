@@ -234,16 +234,17 @@ It is a concept vehicle with Liuid Silver body colour, 20-inch wheels, fabric fo
 Bluetec emission control system, quattro permanent four-wheel drve system,Audi S tronic dual-clutch gearbox, McPherson-strut front axle and a four-link rear axle, Audi drive select system with 3 modes (dynamic, sport, efficiency),
 MMI control panel with touch pad and dual-view technology, sound system with the proinent extending tweeters.
 
-</div> 
-<script type="text/javascript">
-
-$(function () { 
-$("#SpellCheck").ejSpellCheck({ dictionarySettings: { dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/CheckWords", customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/AddToDictionary" },
-contextMenuSettings: {enable: true},
-enableValidateOnType: true,
-}); 
-});
- </script>
+</div>
+<script>
+            $("#SpellCheck").ejSpellCheck({
+                dictionarySettings: {
+                    dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/CheckWords",
+                    customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/AddToDictionary"
+                },
+                contextMenuSettings: {enable: true},
+                enableValidateOnType: true
+            });
+</script>
 
 {% endhighlight %}
 
@@ -254,3 +255,68 @@ The following screenshot displays the output for the above code
 
 You can also validate spell check content the IFrame element or IFrame element target text by passing the IFrame element id or class name value to the controlsToValidate property. 
 Detailed information is given [here](https://help.syncfusion.com/js/spellcheck/multiple-target)
+
+## Suggestion Words
+
+The [getSuggestionWords](/api/js/ejspellcheck#methods:getSuggestionWords) option is used to get the possible suggestion words to an error word to the correct the spelling.
+
+The following code example describes the above behavior.
+
+
+{% highlight html %}
+
+<div id="SpellCheck" contenteditable="true">
+
+It is a concept vehicle with Liuid Silver body colour, 20-inch wheels, fabric foding roof, electrically-controlled hood, 4-cylinder 2.0 TDI engine rated 204 PS (150 kW; 201 hp)and 400  (295.02 lbf ft), diesel particulate filter and 
+Bluetec emission control system, quattro permanent four-wheel drve system,Audi S tronic dual-clutch gearbox, McPherson-strut front axle and a four-link rear axle, Audi drive select system with 3 modes (dynamic, sport, efficiency),
+MMI control panel with touch pad and dual-view technology, sound system with the proinent extending tweeters.
+
+</div>
+<script>
+            $("#SpellCheck").ejSpellCheck({
+                dictionarySettings: {
+                    dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/CheckWords",
+                    customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/AddToDictionary"
+                }
+            });
+            var schObj = $("#SpellCheck").data("ejSpellCheck");
+            schObj.getSuggestionWords("textarea");
+            setTimeout(function () {
+				alert(spellObj._suggestedWords);
+			}, 800);
+</script>
+
+{% endhighlight %}
+
+N> You can get the suggestion words after some time interval once the method called. Since, ajax request processing in the background.
+
+## Synchronous request
+
+The [enableAsync](/api/js/ejspellcheck#members:enableAsync) option is used to send the Synchronous request to perform the SpellCheck operations.
+
+The following code example describes the above behavior.
+
+
+{% highlight html %}
+
+<div id="SpellCheck" contenteditable="true">
+
+It is a concept vehicle with Liuid Silver body colour, 20-inch wheels, fabric foding roof, electrically-controlled hood, 4-cylinder 2.0 TDI engine rated 204 PS (150 kW; 201 hp)and 400  (295.02 lbf ft), diesel particulate filter and 
+Bluetec emission control system, quattro permanent four-wheel drve system,Audi S tronic dual-clutch gearbox, McPherson-strut front axle and a four-link rear axle, Audi drive select system with 3 modes (dynamic, sport, efficiency),
+MMI control panel with touch pad and dual-view technology, sound system with the proinent extending tweeters.
+
+</div>
+<script>
+            $("#SpellCheck").ejSpellCheck({
+                dictionarySettings: {
+                    dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/CheckWords",
+                    customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/AddToDictionary"
+                },
+                enableAsync: false,
+                ajaxDataType: "json"
+            });            
+</script>
+
+{% endhighlight %}
+
+N> You need to set the ajaxDataType value as json to get the Synchronous request result properly.
