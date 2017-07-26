@@ -647,6 +647,25 @@ $("#diagram").ejDiagram({
 
 {% endhighlight %}
 
+### Drag Limit
+
+The diagram control now supports defining the drag limit to the label while dragging from the connector and also update the postion to the nearest segment offset.
+
+{% highlight javascript %}
+
+//Initializes Diagram
+$("#diagram").ejDiagram({
+	connectors:[
+		{
+		name:"connector1",
+		constraints: ej.datavisualization.Diagram.ConnectorConstraints.Default | ej.datavisualization.Diagram.ConnectorConstraints.DragLimit | ej.datavisualization.Diagram.ConnectorConstraints.DragLabel
+		}
+	]
+});
+
+{% endhighlight %}
+
+
 ## Multiple labels
 
 You can add any number of labels to a node or connector. The following code illustrates how to add multiple labels to a node. 
