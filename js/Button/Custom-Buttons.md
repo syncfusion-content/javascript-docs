@@ -157,15 +157,15 @@ Create a custom CSS class with background-image property. Use the following synt
 
 {% highlight css %}
 
-    .e-icon .e-bug{
-        background-image: url('bug.jpg');
+    .e-icon .e-profile{
+        background-image: url('profile.png');
     }
 
 {% endhighlight %}
 
 {% highlight html %}
 
-    <button id="button">Bugs</button>
+    <button id="button">Profile</button>
 
 {% endhighlight %}
 Now,assign this custom CSS class name to prefixIcon or suffixIcon property of the ejButton.
@@ -174,7 +174,7 @@ Now,assign this custom CSS class name to prefixIcon or suffixIcon property of th
 
     $("#button").ejButton({
         contentType: "textandimage",
-        prefixIcon: "e-icon e-bug",
+        prefixIcon: "e-icon e-profile",
         size: "large",
         showRoundedCorner: true
     });
@@ -183,7 +183,7 @@ Now,assign this custom CSS class name to prefixIcon or suffixIcon property of th
 
 Execute the above code to render the following output.
 
-![](/js/Button/Custom-Buttons_images/bug.PNG)
+![](/js/Button/Custom-Buttons_images/profile.png)
 
 
 
