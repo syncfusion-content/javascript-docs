@@ -155,29 +155,35 @@ Create a custom CSS class with background-image property. Use the following synt
 
 **Syntax**: .e-icon .e-[icon name]
 
-{% highlight html %}
+{% highlight css %}
 
-.e-icon .e-syncfusion{
-    background-image: url('syncfusion.jpg');
-}
+    .e-icon .e-profile{
+        background-image: url('profile.png');
+    }
 
 {% endhighlight %}
 
+{% highlight html %}
+
+    <button id="button">Profile</button>
+
+{% endhighlight %}
 Now,assign this custom CSS class name to prefixIcon or suffixIcon property of the ejButton.
 
 {% highlight javascript %}
 
-    $("#buttonid").ejButton({
-        contentType: "imagetext",
-        prefixIcon: "e-icon e-syncfusion"
-        text:"Syncfusion"
+    $("#button").ejButton({
+        contentType: "textandimage",
+        prefixIcon: "e-icon e-profile",
+        size: "large",
+        showRoundedCorner: true
     });
 
 {% endhighlight %}
 
 Execute the above code to render the following output.
 
-![](/js/Button/Custom-Buttons_images/syncfusion.jpg)
+![](/js/Button/Custom-Buttons_images/profile.png)
 
 
 
