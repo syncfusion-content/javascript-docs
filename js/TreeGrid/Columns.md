@@ -278,6 +278,66 @@ Following are the items displayed in the column menu,
 
 ![](/js/TreeGrid/Columns_images/Columns_img5.png)
 
+## Command Column
+
+### Default action buttons
+
+Using command columns in TreeGrid, we can display a separate column to perform CRUD operations.It is also possible to perform any custom actions by using custom command buttons. Command column can be defined in TreeGrid using `columns.commands` property.
+A command column can be customized by using `type` and `buttonOptions` properties.
+
+* **type** – Using this property we can add required action buttons in TreeGrid command column such as edit,delete,save and cancel.
+* **buttonOptions** - Using this property we can customize the button in the command column with the properties available in [ejButton](https://help.syncfusion.com/api/js/ejbutton#members "ejButton").
+
+{% highlight js %} 
+	$("#TreeGrid").ejTreeGrid({
+		editSettings : {
+			allowEditing : true,
+			allowAdding : true,
+			allowDeleting : true
+		},
+		columns : [{
+				headerText : "Command Column",
+				commands : [
+					{ type : "edit", buttonOptions : { text : "Edit" } },
+					{ type : "delete", buttonOptions : { text : "Delete" } },
+					{ type : "save", buttonOptions : { text : "Save" } }, 
+					{ type : "cancel", buttonOptions : { text : "Cancel" } }
+				],
+				width : 150
+			}
+		]
+	});
+
+{% endhighlight %}
+
+![](/js/TreeGrid/Columns_images/Columns_img9.png)
+
+### Custom buttons
+
+We can also add custom buttons to the command column by specifying text value other than default buttons to the type property. We can also bind actions to the custom button using [click](https://help.syncfusion.com/api/js/ejbutton#events:click "click") client side event of ejButton.
+
+{% highlight javascript %}
+$(function () {
+	$("#TreeGrid").ejTreeGrid({
+		columns : [{
+               headerText: "Details",
+               commands: [
+                            { type: "details", buttonOptions: { text: "Details", click:"onClick"} }]}]
+	});
+});
+
+function onClick(args) {
+            var $tr = $(args.e.target).closest('tr'),
+                treeObj = $("#TreeGrid").data("ejTreeGrid"),
+                rowIndex = treeObj.getIndexByRow($tr),
+                record = treeObj.model.currentViewData[rowIndex];
+            alert("Task Name: " + record.item.taskName);
+        }
+{% endhighlight %}
+
+![](/js/TreeGrid/Columns_images/Columns_img10.png)
+
+
 ## Changing position of expander column
 
 The position of the expander column, which acts as tree column, can be changed using the **‘treeColumnIndex’** property,
