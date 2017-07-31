@@ -38,7 +38,7 @@ The following code example illustrate how to add custom context menu items.
 
 {% highlight html %}
 <style>
-	.menuPlace{
+	.menuBackgroundSize{
             background-size:14px 14px;
 			}
 </style>
