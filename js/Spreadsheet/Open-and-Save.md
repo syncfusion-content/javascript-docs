@@ -41,7 +41,7 @@ $(function () {
     $("#Spreadsheet").ejSpreadsheet({
         allowImport: true,
         importSettings: {
-            importMapper: "http://js.syncfusion.com/demos/ejservices/api/JSXLExport/Import"
+            importMapper: "http://js.syncfusion.com/demos/ejservices/api/Spreadsheet/Import"
         }
     });
 });
@@ -76,7 +76,7 @@ $(function () {
     $("#Spreadsheet").ejSpreadsheet({
         allowImport: true,
         importSettings: {
-            importMapper: "http://js.syncfusion.com/demos/ejservices/api/JSXLExport/Import",
+            importMapper: "http://js.syncfusion.com/demos/ejservices/api/Spreadsheet/Import",
             importUrl: "http://mvc.syncfusion.com/Spreadsheet/LargeData.xlsx"
         }
     });
@@ -96,7 +96,7 @@ $(function () {
     $("#Spreadsheet").ejSpreadsheet({        
         importSettings: {
             importOnLoad: true,
-            importMapper: "http://js.syncfusion.com/demos/ejservices/api/JSXLExport/Import"
+            importMapper: "http://js.syncfusion.com/demos/ejservices/api/Spreadsheet/Import"
         }           
     });
 });    
@@ -106,7 +106,7 @@ $(function () {
 
 {% highlight c# %}
 
-public class JSXLExportController : ApiController
+public class SpreadSheetController : ApiController
 {
     [OperationContract]
     [WebGet(BodyStyle = WebMessageBodyStyle.Bare)]
@@ -209,9 +209,9 @@ $(function () {
         exportSettings:
         {
             allowExporting: true,
-            excelUrl: "http://js.syncfusion.com/demos/ejservices/api/JSXLExport/ExportToExcel",
-            csvUrl: "http://js.syncfusion.com/demos/ejservices/api/JSXLExport/ExportToCsv",
-            pdfUrl: "http://js.syncfusion.com/demos/ejservices/api/JSXLExport/ExportToPdf"
+            excelUrl: "http://js.syncfusion.com/demos/ejservices/api/Spreadsheet/ExcelExport",
+            csvUrl: "http://js.syncfusion.com/demos/ejservices/api/Spreadsheet/CsvExport",
+            pdfUrl: "http://js.syncfusion.com/demos/ejservices/api/Spreadsheet/PdfExport"
         }           
     });
 });
@@ -261,7 +261,7 @@ Following code snippets demonstrate open option using WebAPI controller.
 
 {% highlight c# %}
 
-public class JSXLExportController : ApiController
+public class SpreadSheetController : ApiController
 {
     [OperationContract]
     [WebGet(BodyStyle = WebMessageBodyStyle.Bare)]
@@ -275,28 +275,28 @@ public class JSXLExportController : ApiController
         return new HttpResponseMessage() { Content = new StringContent(str, Encoding.UTF8, "text/plain") };
     }
 
-    [System.Web.Http.ActionName("ExportToExcel")]
     [AcceptVerbs("POST")]
-    public void ExportToExcel()
+    public void ExcelExport()
     {
-        string sheetModel = HttpContext.Current.Request.Params["sheetModel"], sheetData = HttpContext.Current.Request.Params["sheetData"];
-        Spreadsheet.Save(sheetModel, sheetData, "sample", ExportFormat.XLSX, ExcelVersion.Excel2013);
+        string sheetModel = HttpContext.Current.Request.Params["sheetModel"], sheetData = HttpContext.Current.Request.Params["sheetData"], password = HttpContext.Current.Request.Params["password"], fileName = HttpContext.Current.Request.Params["fileName"];
+            if (!string.IsNullOrEmpty(password))
+                Spreadsheet.Save(sheetModel, sheetData, fileName, ExportFormat.XLSX, ExcelVersion.Excel2013, password);
+            else
+                Spreadsheet.Save(sheetModel, sheetData, fileName, ExportFormat.XLSX, ExcelVersion.Excel2013);
     }
 
-    [System.Web.Http.ActionName("ExportToCsv")]
     [AcceptVerbs("Post")]
-    public void ExportToCsv()
+    public void CsvExport()
     {
-        string sheetModel = HttpContext.Current.Request.Params["sheetModel"], sheetData = HttpContext.Current.Request.Params["sheetData"];
-        Spreadsheet.Save(sheetModel, sheetData, "sample", ExportFormat.CSV);
+        string sheetModel = HttpContext.Current.Request.Params["sheetModel"], sheetData = HttpContext.Current.Request.Params["sheetData"], fileName = HttpContext.Current.Request.Params["fileName"];
+        Spreadsheet.Save(sheetModel, sheetData, fileName, ExportFormat.CSV);
     }
 
-    [System.Web.Http.ActionName("ExportToPdf")]
     [AcceptVerbs("Post")]
-    public void ExportToPdf()
+    public void PdfExport()
     {
-        string sheetModel = HttpContext.Current.Request.Params["sheetModel"], sheetData = HttpContext.Current.Request.Params["sheetData"];
-        Spreadsheet.Save(sheetModel, sheetData, "sample", ExportFormat.PDF);
+        string sheetModel = HttpContext.Current.Request.Params["sheetModel"], sheetData = HttpContext.Current.Request.Params["sheetData"], fileName = HttpContext.Current.Request.Params["fileName"];
+        Spreadsheet.Save(sheetModel, sheetData, fileName, ExportFormat.PDF);
     }
 }
 
