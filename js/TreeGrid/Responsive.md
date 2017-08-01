@@ -114,3 +114,31 @@ $("#minResponsiveWidth").click(function (args) {
 The following output is displayed as a result of the above code example
 
 ![](Responsive_images/adaptive-publicmethod.png)
+
+## Priority for columns
+
+Column priorities are used to show or hide the columns based on priority values and browser width to best accommodate the possible columns. Priority value of the column is set by `columns.priority` property and the value ranges from one to six.
+
+The following code example explains how to set priority for column
+
+{% highlight js %}
+
+$("#Treegrid ").ejTreeGrid ({
+      //...
+      columns: [
+                { field: "taskID", headerText: "Task Id", width: "45", editType: "numericedit" },
+                { field: "taskName", headerText: "Task Name", width: "90", editType: "stringedit" },
+                { field: "startDate", headerText: "Start Date", editType: "datepicker", format: dateFormat },
+                { field: "endDate", headerText: "End Date", format: dateFormat, editType: "datepicker", priority:5 },
+                { field: "duration", headerText: "Duration", editType: "numericedit", priority: 6 },
+                { field: "progress", headerText: "Progress", editType: "numericedit",priority:6 }
+            ],
+     //...
+});
+
+{% endhighlight %}
+
+![](Responsive_images/priority-column.png)
+
+The above screen shot show TreeGrid rendered in browser width of 640 pixels.
+{:.caption}
