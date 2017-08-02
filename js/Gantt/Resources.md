@@ -14,8 +14,8 @@ Resources are represented by staff, equipment and materials etc. In Gantt contro
 
 ## Resource Collection
 
-Resource collection contains details about the resources that are used in the project. Resources are `JSON` object that contains id and name of the resources and assign it to `resources` property.
-Id and name field of the resources are identified by the `resourceIdMapping` and `resourceNameMapping` properties.
+Resource collection contains details about the resources that are used in the project. Resources are `JSON` object that contains id and name of the resources and this collection is mapped to the Gantt control using `resources` property.
+Id and name field of the resources are mapped by using the `resourceIdMapping` and `resourceNameMapping` properties.
 The following code snippets shows resource collection object and how it assinged to Gantt control.
 
 {% highlight javascript %}
@@ -44,7 +44,7 @@ The following code snippets shows resource collection object and how it assinged
 {% endhighlight %}
 
 ## Assign Resource
-We can specify the resources for a particular task as collection of resource id values in `dataSource` and this values are identified by using `resourceInfoMapping` property.
+We can assign resources for a task at initial load, using the resource id value of the resources as a collection. This collection is mapped  from the `dataSource` to the Gantt control using the `resourceInfoMapping` property.
 The following code snippet shows how to assign the resource for each task and map to Gantt control.
 {% highlight javascript %}
 
@@ -71,8 +71,8 @@ The following screenshot shows Gantt control with resources.
 ![](/js/Gantt/Resources_images/Resources_img1.png)
 
 ## Assign Resources with Unit
-Resource units are used to indicate the percentage of working time assinged to task. We can specify the resource unit for each resource assinged for a particular task.
-Resource unit value is assigned in `dataSource` and it is mapped by using `resourceUnitMapping` property.
+Resource units indicates the amount of work done by a resource for the task. We can specify the resource unit for the each assigned resource for a particular task.
+Resource unit value is mapped to the Gantt tasks from the datasource using `resourceUnitMapping` property.
 The below code snippets shows how to assign resource unit value.
 
 {% highlight javascript %}
@@ -104,7 +104,7 @@ The following screenshot shows Gantt control with resource units.
 
 ## Edit Resource Collection
 By using cell edit option we can add/remove the resource for particular task and by using dialog edit support we can modify the resource unit value also.
-Refer this [link](editing) to know more about editing in Gantt control.
+Refer this [link](/js/gantt/editing) to know more about editing in Gantt control.
 The following screenshot shows the resource edit option in Gantt.
 
 ![](/js/Gantt/Resources_images/Resources_img4.png)
@@ -131,5 +131,5 @@ N> When resource unit is 100%, resource value is stored with ID only.
 	    "resourceId": [2]
     }
 {% endhighlight %}
-N> Resource unit values are updated in datasource only when we provide the value for `resourceUnitMapping` property.
-N> Resource unit will be changed on editing duration and work field with respective of [Task Type](/js/gantt/work-fied "Task types available in Gantt") value.
+N> The unit values are updated to the resources assigned to the Gantt tasks, only when mapping resource units data source field using the `resourceUnitMapping` property.
+N> Resource unit will be updated while editing the duration and work fields with respective to [task type](/js/gantt/work-fied "Task types available in Gantt").
