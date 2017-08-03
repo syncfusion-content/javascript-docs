@@ -132,13 +132,15 @@ The **Toolbar** property **hide** is used to show or hide the **Toolbar**. Set t
 
 ## Disable Or Enable Separate Toolbar Item
 
+The following are some methods which can be used to disable or enable separate toolbar item.
+
 ### Disable Item
 
-The **Toolbar** property **disableItem** and **disableItemByID** can be used to disable separate toolbar item. 
+The **Toolbar** method **disableItem** and **disableItemByID** can be used to disable separate toolbar item. In the below code we have disabled the third toolbar item by using these two methods
 
 {% highlight html %}
 
-<div class="cols-sample-area">
+    <div class="cols-sample-area">
        <div id="editingToolbar">
             <ul>
                 <li id="cut" class="e-icon e-cut_01" title="Cut"></li>
@@ -157,7 +159,7 @@ The **Toolbar** property **disableItem** and **disableItemByID** can be used to 
                <li id="Justify" class="e-icon e-align-justify_01" title="Justify"></li>
             </ul>
        </div>
-</div>
+    </div>
 
 {% endhighlight %}
 
@@ -187,11 +189,11 @@ OR
 
 ### Enable Item
 
-The **Toolbar** property **enableItem** and **enableItemByID** can be used to enable separate toolbar item. 
+The **Toolbar** method **enableItem** and **enableItemByID** can be used to enable separate toolbar item. In the below code we have disbaled the first five items initially and enabled the third toolbar item by using these two methods
 
 {% highlight html %}
 
-<div class="cols-sample-area">
+    <div class="cols-sample-area">
        <div id="editingToolbar">
             <ul>
                 <li id="cut" class="e-icon e-cut_01" title="Cut"></li>
@@ -210,14 +212,14 @@ The **Toolbar** property **enableItem** and **enableItemByID** can be used to en
                <li id="Justify" class="e-icon e-align-justify_01" title="Justify"></li>
             </ul>
        </div>
-</div>
+    </div>
 
 {% endhighlight %}
 
 {% highlight javascript %}
         $(function () {
                     // declaration
-                    $("#editingToolbar").ejToolbar();
+                   $("#editingToolbar").ejToolbar({disabledItemIndices: [0,1,2,3,4]});
                    $("#editingToolbar").ejToolbar("enableItem",$("li")[2]);
                     
                 });
@@ -228,9 +230,11 @@ OR
 {% highlight javascript %}
         $(function () {
                     // declaration
-                    $("#editingToolbar").ejToolbar();
+                   $("#editingToolbar").ejToolbar({disabledItemIndices: [0,1,2,3,4]});
                     $("#editingToolbar").ejToolbar("enableItemByID","paste");
                     
                 });
 
 {% endhighlight %}
+
+![](Behaviour-settings_images/Behaviour-settings2.jpg)
