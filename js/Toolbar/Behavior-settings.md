@@ -132,7 +132,7 @@ The **Toolbar** property **hide** is used to show or hide the **Toolbar**. Set t
 
 ## Disable Or Enable Separate Toolbar Item
 
-The following are some methods which can be used to disable or enable separate toolbar item.
+We can enable or disable a separate toolbar item by using the following methods.
 
 ### Disable Item
 
