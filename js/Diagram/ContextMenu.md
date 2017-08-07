@@ -65,7 +65,7 @@ $("#DiagramContent").ejDiagram({
 				// Sets the image src for the item
 				imageUrl: "Images/zoom.png",
 				// Sets the cssClass for the item
-				 cssClass:"menuPlace",
+				 cssClass:"menuBackgroundSize",
 			},{
 				name: "zoomOut",
 				text: "Zoom Out",
