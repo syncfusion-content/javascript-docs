@@ -40,7 +40,7 @@ Header Tooltip
 
 ### Tooltip Template
 
-It is possible to display a custom tooltip accross all the TreeGrid cells using the property `cellTooltipTemplate` with the property `showGridCellTooltip` enabled. We need to set the template of the custom tooltip to this property.
+It is possible to display a custom tooltip across all the TreeGrid cells using the property `cellTooltipTemplate` with the property `showGridCellTooltip` enabled. We need to set the template of the custom tooltip to this property.
 
 Please find code example describes the cell tooltip template support.
 
@@ -247,4 +247,51 @@ $("#TreeGridContainer").ejTreeGrid({
 
 The following output is shows the result of the above code example.
 
-![](/js/TreeGrid/Cell/ecllipsismode.png)
+![](/js/TreeGrid/Cell/ellipsisMode.png)
+
+## Text Wrap
+Text wrap enables the TreeGrid to wrap cell content or header content to next line when the content exceeds the cell width.
+
+### Header Text Wrap
+
+To enable header cell text wrap, set `headerTextOverflow` property as `wrap`.
+
+N> By default the `headerTextOverflow` will be set as `none`.
+
+The following code example describes the above behavior.
+
+{% highlight js %}
+
+$("#TreeGridContainer").ejTreeGrid({
+    //...
+    headerTextOverflow: 'wrap',
+});
+
+{% endhighlight %}
+
+The following output shows the result of above code example.
+
+![](/js/TreeGrid/Cell/headerTextOverflow.png)
+
+### Content Text Wrap
+
+To enable cell text wrap, set `allowTextWrap` property as `true`.
+
+N> 1.By default the `allowTextWrap` will be set as `false`.
+
+N> 2.The text wrap feature provide only limited support in virtualization mode.
+
+The following code example describes the above behavior.
+
+{% highlight js %}
+
+$("#TreeGridContainer").ejTreeGrid({
+    //...
+    allowTextWrap: true,
+});
+
+{% endhighlight %}
+
+The following output shows the result of above code example.
+
+![](/js/TreeGrid/Cell/textWrap.png)

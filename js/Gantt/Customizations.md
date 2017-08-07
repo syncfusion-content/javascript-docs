@@ -141,7 +141,7 @@ The following code example explains how to map custom templates to task labels.
 {% endhighlight %}
 
 {% highlight javascript %}
-<script id="rightlabelTemplate" type="text/x-jsrender">
+<script id="rightLabelTemplate" type="text/x-jsrender">
 
     {{"{{"}}if #data['resourceNames']{{}}}}
 
@@ -159,7 +159,7 @@ The following code example explains how to map custom templates to task labels.
 
 </script>
 
-<script id="leftlabelTemplate" type="text/x-jsrender">
+<script id="leftLabelTemplate" type="text/x-jsrender">
 
     <div style="padding-top:5px;">
 
@@ -176,9 +176,9 @@ The following code example explains how to map custom templates to task labels.
 
             //...
 
-            rightTaskLabelTemplate: "#rightlabelTemplate",
+            rightTaskLabelTemplate: "#rightLabelTemplate",
 
-            leftTaskLabelTemplate: "#leftlabelTemplate",
+            leftTaskLabelTemplate: "#leftLabelTemplate",
 
         });
 
@@ -268,7 +268,7 @@ TreeGrid part tooltip can also be customized using [cellTooltipTemplate](/api/js
 
     $.views.helpers({
         _TaskID: getTaskID,
-        _TaskName: getTaskname
+        _TaskName: getTaskName
     });
 
     function getTaskID() {
@@ -277,7 +277,7 @@ TreeGrid part tooltip can also be customized using [cellTooltipTemplate](/api/js
 
     }
 
-    function getTaskname() {
+    function getTaskName() {
 
         return this.data.record["taskName"];
 

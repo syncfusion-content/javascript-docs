@@ -148,7 +148,7 @@ You can select the cells programmatically using `selectCells` public method. Fin
 
     <html>
         <body>
-         <button id="selectcells">SelectCells</button>
+         <button id="selectCells">SelectCells</button>
          //...
         </body> 
     </html>
@@ -161,7 +161,7 @@ You can select the cells programmatically using `selectCells` public method. Fin
         //...
      });
      
-     $("#selectcells").click(function (args) {
+     $("#selectCells").click(function (args) {
             //create TreeGrid object
             var TreeGridObj = $("#TreeGridContainer").data("ejTreeGrid");
             cellIndex = [{ rowIndex: 2, cellIndex: 1 }, {rowIndex:3,cellIndex:1}];

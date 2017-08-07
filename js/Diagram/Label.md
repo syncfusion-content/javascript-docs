@@ -367,7 +367,7 @@ $("#diagram").ejDiagram({
 
 // Defines JSON to create a node
 var nodes = [{
-	name: "hyperlinknode", 
+	name: "hyperLinkNode", 
 	fillColor: "white",
 	width: 150, height: 60,
 	offsetX: 100, offsetY: 100,

@@ -34,7 +34,7 @@ When the work value for a task is not mapped from the data source using the `wor
 Note:	
 
 * By Default, the work field value for a task will be calculated based on the duration and assigned resource unit.
-* If an assinged resource has resoruce unit value of 100% for a task, i.e. if a resoruce is dedicatedly assigned to a task, the work per day will be __8__ __hours__.
+* If an assigned resource has resource unit value of 100% for a task, i.e. if a resource is dedicatedly assigned to a task, the work per day will be __8__ __hours__.
 
 Work can be measured in hours, days and minutes, and it is measured in 'hours' scale by default and this can be changed by using the `workUnit` property.
 

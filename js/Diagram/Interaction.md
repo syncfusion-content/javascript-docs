@@ -246,9 +246,9 @@ The following code example illustrates how to insert a child to a group interact
 {% highlight javascript %}
 $("#diagram").ejDiagram({
 	//Defines drop event
-	drop: ondrop
+	drop: onDrop
 }
-function ondrop(args) {
+function onDrop(args) {
 	if (args.target && args.element) {
 		//Element that is being dropped
 		var node = args.element;

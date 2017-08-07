@@ -355,7 +355,7 @@ $("#diagram").ejDiagram({
 		type: ej.datavisualization.Diagram.Shapes.BPMN,
 		shape: ej.datavisualization.Diagram.BPMNShapes.Activity,
 		activity: ej.datavisualization.Diagram.BPMNActivity.SubProcess,
-		//Creates tranaction subprocess
+		//Creates transaction subprocess
 		subProcess: {
 			type: ej.datavisualization.Diagram.BPMNSubProcessTypes.Transaction,
 			// Defines a collection of events to be attached 
@@ -886,7 +886,7 @@ The `sequence` property allows you to define the type of sequence.The following 
            shape: {
                   type: "bpmn",
                   flow: "sequence",
-				  //Sets the type of srquence flow
+				  //Sets the type of sequence flow
                   sequence: "conditional"
               }
 	}]

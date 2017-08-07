@@ -12,7 +12,7 @@ api: /api/js/ejtreegrid
 
 ## Editing Modes
 
-TreeGrid provides support to add, edit and delete the records and the folllowing are the types of editing modes available, 
+TreeGrid provides support to add, edit and delete the records and the following are the types of editing modes available, 
 
 * Cell Editing
 * Row Editing
@@ -164,7 +164,7 @@ The following output is displayed as a result of the above code example.
 
 It is possible to open the add dialog dynamically with a custom using the method showAddDialog
 
-And similarly you can open the edit dialog dynamically using the method showEditDilog(index), with the index of the row to be edited as parameter.
+And similarly you can open the edit dialog dynamically using the method showEditDialog(index), with the index of the row to be edited as parameter.
 
 {% highlight js %}
 <script>
@@ -223,7 +223,7 @@ The following code example describes edit template behavior
             width: "100%",
             dataSource: autocompleteData,
             enableDistinct: true,
-            value: args.rowdata !== undefined ? args.rowdata["taskName"] : ""
+            value: args.rowData !== undefined ? args.rowData["taskName"] : ""
         });
     }
 

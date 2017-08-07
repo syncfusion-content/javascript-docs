@@ -16,9 +16,9 @@ Baseline is used to describe the original plan of the task and it can be the sam
 
     $("#GanttContainer").ejGantt({
         //...
-        baselineStartDateMapping: "baselineStartDate", //MAPPING BASELINESTARTDATE TO GANTT
-        baselineEndDateMapping: "baselineEndDate", //MAPPING BASELINEENDDATE TO GANTT
-        renderBaseline: true //SHOW/HIDE THE BASELINE IN GANTT
+        baselineStartDateMapping: "baselineStartDate", //Mapping BaselineStartDate to Gantt
+        baselineEndDateMapping: "baselineEndDate", //Mapping BaselineEndDate to Gantt
+        renderBaseline: true //Show/Hide the baseline in Gantt
     });
 
 {% endhighlight %}
