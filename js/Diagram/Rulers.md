@@ -28,7 +28,7 @@ $("#diagram").ejDiagram({
 
 {% endhighlight %}
 
-![](/js/Diagram/Rulers_images/Rulers_images1.png)
+![](/js/Diagram/Rulers_images/Rulers_image1.png)
 
 ## Customizing the Ruler
 
@@ -106,7 +106,7 @@ $("#diagram").ejDiagram({
 }); 
 {% endhighlight %}
 
-![](/js/Diagram/Rulers_images/Rulers_images2.png)
+![](/js/Diagram/Rulers_images/Rulers_image2.png)
 
 
 
