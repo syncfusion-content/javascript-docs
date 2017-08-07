@@ -146,7 +146,7 @@ $("#diagram").ejDiagram({
 		//get the collection of redoStack objects
 		var redoStack = args.model.historyManager.redoStack;
 	},
-	//define historyManager stacklimit property which limits the number of actions to be stored on the historyManager.
+	//define historyManager stack limit property which limits the number of actions to be stored on the historyManager.
 	historyManager: { stackLimit: 5 }
 });
 //We can get the undoStack/redoStack objects by taking instance of diagram. 

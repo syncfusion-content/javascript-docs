@@ -41,7 +41,7 @@ diagram.update({
 
 //To draw an object multiple times, activate continuous draw tool
 diagram.update({
-	tool: ej.datavisualization.Diagram.Tool.ContinousDraw,
+	tool: ej.datavisualization.Diagram.Tool.ContinuesDraw,
 });
 
 {% endhighlight %}

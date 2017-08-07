@@ -25,14 +25,14 @@ The following code example illustrates how to create a simple behavior diagram.
 		scrollLimit: "diagram"
 	},
 	nodes: [{
-		name: "initialnode",
+		name: "initialNode",
 		offsetX: 100,
 		offsetY: 100,
         width: 80, 
         height: 50,
         //Sets type of shape
          type: "umlactivity",
-         //Sets the activity shape as initialnode
+         //Sets the activity shape as initial node
          shape: ej.datavisualization.Diagram.UMLActivityShapes.InitialNode,
             }]
  }];
