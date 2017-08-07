@@ -102,7 +102,7 @@ $("#diagram").ejDiagram({
         interface: {
              name: "Bank Account", 
              attributes: [{
-                   name: "ownar", 
+                   name: "owner", 
                    type: "String[*]" 
                            }, 
                            {

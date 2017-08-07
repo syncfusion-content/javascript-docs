@@ -94,7 +94,7 @@ var nodes = [{
 	offsetX: 40, 
 	offsetY: 40,
 	type: ej.datavisualization.Diagram.Shapes.Image,
-	source: "sample/emlpoyee.png"
+	source: "sample/employee.png"
 	borderWidth:3,
 	borderColor:"white",
 }];
@@ -308,7 +308,7 @@ var nodes = [{
 	//Sets shape as Path
 	shape: Diagram.BasicShapes.Path,
 
-	//Defines svg pathdata
+	//Defines svg path data
 	pathData: "M35.2441,25 L22.7161,49.9937 L22.7161,0.00657536 L35.2441,25 z M22.7167,25 L-0.00131226,25 M35.2441,49.6337 L35.2441,0.368951 M35.2441,25 L49.9981,25"
 }];
 

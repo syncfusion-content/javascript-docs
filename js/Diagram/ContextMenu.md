@@ -38,7 +38,7 @@ The following code example illustrate how to add custom context menu items.
 
 {% highlight html %}
 <style>
-	.menuplace{
+	.menuBackgroundSize{
             background-size:14px 14px;
 			}
 </style>
@@ -63,12 +63,12 @@ $("#DiagramContent").ejDiagram({
 				name: "zoomIn",
 				text: "ZoomIn",
 				// Sets the image src for the item
-				imageUrl: "Images/zoomin.png",
+				imageUrl: "Images/zoom.png",
 				// Sets the cssClass for the item
-				 cssClass:"menuplace",
+				 cssClass:"menuBackgroundSize",
 			},{
 				name: "zoomOut",
-				text: "ZoomOut",
+				text: "Zoom Out",
 				imageUrl: "Images/zoomout.png"
 			}]
 		}],
