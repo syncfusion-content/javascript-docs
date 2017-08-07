@@ -658,7 +658,8 @@ $("#diagram").ejDiagram({
 	connectors:[
 		{
 		name:"connector1",
-		constraints: ej.datavisualization.Diagram.ConnectorConstraints.Default | ej.datavisualization.Diagram.ConnectorConstraints.DragLimit | ej.datavisualization.Diagram.ConnectorConstraints.DragLabel
+        constraints: ej.datavisualization.Diagram.ConnectorConstraints.Default | ej.datavisualization.Diagram.ConnectorConstraints.DragLimit | ej.datavisualization.Diagram.ConnectorConstraints.DragLabel,
+        dragLimit: { left: 30, top: 30, right: 30, bottom: 30 }
 		}
 	]
 });
