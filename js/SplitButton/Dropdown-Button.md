@@ -18,7 +18,7 @@ In the **HTML** page, add the following button elements to configure **Button
 
 {% highlight html %}
 
-<button id="dropdownbtn">login</button>
+<button id="dropdownButton">login</button>
 <ul id="menu">
     <li><span>User</span></li>
     <li><span>Guest</span></li>
@@ -31,7 +31,7 @@ In the **HTML** page, add the following button elements to configure **Button
 
     // Initialize the control in JavaScript
     $(function () {
-        $("#dropdownbtn").ejSplitButton({
+        $("#dropdownButton").ejSplitButton({
             size: "medium",
             showRoundedCorner: true,
             buttonMode: ej.ButtonMode.Dropdown,

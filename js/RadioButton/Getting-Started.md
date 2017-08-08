@@ -112,11 +112,11 @@ Initializes the RadioButton in script.
     
     function button()
     {
-        var checkeditem = [];
+        var checkedItem = [];
         $(".e-radiobtn:checked").each(function () {
-            checkeditem.push($(this).parent().siblings().html());
+            checkedItem.push($(this).parent().siblings().html());
         });
-        alert(checkeditem);
+        alert(checkedItem);
     }
 
 

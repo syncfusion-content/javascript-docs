@@ -22,7 +22,7 @@ In the HTML page, add a &lt;div&gt; element to configure Scroller widget.
     <div class="row">
         <div class="cols-sample-area">
             <div class="control">
-                <div id="scrollcontent">
+                <div id="scrollerContent">
                     <div>
                         <div class="sampleContent">
                             <h3 style="font-size: 20px;">MVC</h3>
@@ -33,7 +33,7 @@ In the HTML page, add a &lt;div&gt; element to configure Scroller widget.
                                 output representation of data, such as a chart or a diagram. Multiple views of the same data 
                                 are possible, such as a bar chart for management and a tabular view for accountants. 
                                 The controller mediates input, converting it to commands for the model or view.The central 
-                                ideas behind MVC are code reusability and n addition to dividing the application into three 
+                                ideas behind MVC are code reusable and n addition to dividing the application into three 
                                 kinds of components, the MVC design defines the interactions between them.</p>
                                 <ul>
                                        <li>
@@ -62,7 +62,7 @@ In the HTML page, add a &lt;div&gt; element to configure Scroller widget.
 {% highlight javascript %}
 	
         $(function () {
-            $("#scrollcontent").ejScroller({
+            $("#scrollerContent").ejScroller({
                 height: 300,
                 width: 600,
                 scrollOneStepBy: 50

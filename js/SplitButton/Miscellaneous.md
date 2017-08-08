@@ -24,7 +24,7 @@ In the **HTML** page, add the following button elements to configure **Split But
 
 
 <div class="spltspan">
-    <button id="spltbutton_text">login</button>
+    <button id="splitButton_text">login</button>
     <ul id="Ul11">
         <li><span>User</span></li>
         <li><span>Guest</span></li>
@@ -40,9 +40,9 @@ In the **HTML** page, add the following button elements to configure **Split But
     // Initialize the control in JavaScript
     
     $(function () {
-        $("#spltbutton_text").ejSplitButton({
+        $("#splitButton_text").ejSplitButton({
             //used to set the text content for split button
-            text: "signin",
+            text: "signIn",
             size: "small",                                
             targetID: "Ul11"            
         });

@@ -61,7 +61,7 @@ Add input element to render a **TimePicker**.
     <tr>
         <td class="tdclass">
             <span class="innerdp">
-                <input id="datepick" type="text" />
+                <input id="datePicker" type="text" />
             </span>
         </td>
         <td class="tdclass">
@@ -102,7 +102,7 @@ Initialize **TimePicker** using the following code example.
     $(function () {
         // document ready
         // simple time picker creation
-        $("#datepick").ejDatePicker();
+        $("#datePicker").ejdatePicker();
         $("#time").ejTimePicker();
     });
 
@@ -140,25 +140,25 @@ The following screenshot displays a **TimePicker** control.
 
 ## Set the Min and Max Values
 
-In a real-time hotel table booking scenario, the booking is open only for a limited time and limited number of days. You have to select a time and date from the given range. This is achieved by using the properties **minTime** and **maxTime**, **minDate** and **maxDate**. By this way, only times ranging between **minTime** and **maxTime**, **minDate** and **maxDate** are enabled in the **TimePicker**.
+In a real-time hotel table booking scenario, the booking is open only for a limited time and limited number of days. You have to select a time and date from the given range. This is achieved by using the properties **minimumTime** and **maximumTime**, **minDate** and **maxDate**. By this way, only times ranging between **minimumTime** and **maximumTime**, **minDate** and **maxDate** are enabled in the **TimePicker**.
 
 {% highlight javascript %}
 
-    var curdate = new Date();// mentions the current date.
-    var mintime = "9:00 AM"; // mentions the start time.
-    var maxtime = "6:00 PM"; // mentions the start time.
+    var currentDate = new Date();// mentions the current date.
+    var minimumTime = "9:00 AM"; // mentions the start time.
+    var maximumTime = "6:00 PM"; // mentions the start time.
     // the following code sets the date range to 30 days from the current date.
-    var rangeDate = new Date(curdate.getFullYear(), curdate.getMonth(), curdate.getDate() + 30);
+    var rangeDate = new Date(currentDate.getFullYear(), currentDate.getMonth(), currentDate.getDate() + 30);
     $(function () {
         // declaration
-        $("#datepick").ejDatePicker({
-            value: curdate, // the current date is used as default value
-            minDate: curdate,// Default date as mindate.
+        $("#datePicker").ejdatePicker({
+            value: currentDate, // the current date is used as default value
+            minDate: currentDate,// Default date as mindate.
             maxDate: rangeDate // 30 –days of interval from min date.
         });
         $("#time").ejTimePicker({
-            minTime: mintime, // Start time as mintime.
-            maxTime: maxtime // End time as maxtime.
+            minimumTime: minimumTime, // Start time as minimumTime.
+            maximumTime: maximumTime // End time as maximumTime.
         });
     });
 
@@ -179,21 +179,21 @@ The following code example shows how to set **Time interval**.
 
 {% highlight javascript %}
 
-    var curdate = new Date();// mentions the current date.
-    var mintime = "9:00 AM"; // mentions the start time.
-    var maxtime = "6:00 PM"; // mentions the start time.
+    var currentDate = new Date();// mentions the current date.
+    var minimumTime = "9:00 AM"; // mentions the start time.
+    var maximumTime = "6:00 PM"; // mentions the start time.
     // the following code sets the date range to 30 days from the current date.
-    var rangeDate = new Date(curdate.getFullYear(), curdate.getMonth(), curdate.getDate() + 30);
+    var rangeDate = new Date(currentDate.getFullYear(), currentDate.getMonth(), currentDate.getDate() + 30);
     $(function () {
         // declaration
-        $("#datepick").ejDatePicker({
-            value: curdate, // the current date is used as default value
-            minDate: curdate,// Default date as mindate.
+        $("#datePicker").ejdatePicker({
+            value: currentDate, // the current date is used as default value
+            minDate: currentDate,// Default date as mindate.
             maxDate: rangeDate // 30 –days of interval from min date.
         });
         $("#time").ejTimePicker({
-            minTime: mintime, // Start time as mintime.
-            maxTime: maxtime, // End time as maxtime.
+            minimumTime: minimumTime, // Start time as minimumTime.
+            maximumTime: maximumTime, // End time as maximumTime.
             interval: 60
         });
     });
@@ -216,27 +216,27 @@ The following code example shows how to display the **acknowledgment message**.
 
 {% highlight javascript %}
 
-    var curdate = new Date();// mentions the current date.
-    var mintime = "9:00 AM"; // mentions the start time.
-    var maxtime = "6:00 PM"; // mentions the start time.
+    var currentDate = new Date();// mentions the current date.
+    var minimumTime = "9:00 AM"; // mentions the start time.
+    var maximumTime = "6:00 PM"; // mentions the start time.
     // the following code sets the date range to 30 days from the current date.
-    var rangeDate = new Date(curdate.getFullYear(), curdate.getMonth(), curdate.getDate() + 30);
+    var rangeDate = new Date(currentDate.getFullYear(), currentDate.getMonth(), currentDate.getDate() + 30);
     $(function () {
         // declaration
-        $("#datepick").ejDatePicker({
-            value: curdate, // the current date is used as default value
-            minDate: curdate,// Default date as mindate.
+        $("#datePicker").ejdatePicker({
+            value: currentDate, // the current date is used as default value
+            minDate: currentDate,// Default date as mindate.
             maxDate: rangeDate // 30 –days of interval from min date.
         });
         $("#time").ejTimePicker({
-            minTime: mintime, // Start time as mintime.
-            maxTime: maxtime, // End time as maxtime.
+            minimumTime: minimumTime, // Start time as minimumTime.
+            maximumTime: maximumTime, // End time as maximumTime.
             interval: 60
         });
     });
     $(document).ready(function () {
         $('.book').click(function () {
-            var a = $('#datepick').val();
+            var a = $('#datePicker').val();
             var b = $('#time').val();
             var c = $('select').val();
             alert("You are booked the table with date " + a + " time " + b + " Party_size is " + c);
@@ -270,7 +270,7 @@ Add input element to render **Two TimePickers**.
     <tr>
         <td class="tdclass">
             <span class="innerdp">
-                <input id="datepick" type="text" />
+                <input id="datePicker" type="text" />
             </span>
         </td>
         <td class="tdclass">
@@ -280,7 +280,7 @@ Add input element to render **Two TimePickers**.
         </td>
         <td class="tdclass">
             <span class="innerdp">
-                <input id="timeend" type="text" />
+                <input id="timeEnd" type="text" />
             </span>
         </td>
         <td class="tdclass">
@@ -312,39 +312,39 @@ Initialize **Two TimePickers** using the following code example.
 {% highlight javascript %}
 
 
-    var curdate = new Date();// mentions the current date.
-    var mintime = "9:00 AM"; // mentions the start time.
-    var maxtime = "6:00 PM"; // mentions the start time.
-    var minTimepicker;
+    var currentDate = new Date();// mentions the current date.
+    var minimumTime = "9:00 AM"; // mentions the start time.
+    var maximumTime = "6:00 PM"; // mentions the start time.
+    var minimumTimepicker;
     // the following code sets the date range to 30 days from the current date.
-    var rangeDate = new Date(curdate.getFullYear(), curdate.getMonth(), curdate.getDate() + 30);
+    var rangeDate = new Date(currentDate.getFullYear(), currentDate.getMonth(), currentDate.getDate() + 30);
     $(function () {
         // declaration
-        $("#datepick").ejDatePicker({
-            value: curdate, // the current date is used as default value
-            minDate: curdate,// Default date as mindate.
+        $("#datePicker").ejdatePicker({
+            value: currentDate, // the current date is used as default value
+            minDate: currentDate,// Default date as mindate.
             maxDate: rangeDate // 30 –days of interval from min date.
         });
         $("#time").ejTimePicker({
-            minTime: mintime, // Start time as mintime.
-            maxTime: maxtime, // End time as maxtime.
+            minimumTime: minimumTime, // Start time as minimumTime.
+            maximumTime: maximumTime, // End time as maximumTime.
             interval: 60,
             select: "selectedStartTime"
         });
-        $('#timeend').ejTimePicker({
-            minTime: mintime,
-            maxTime: maxtime,
+        $('#timeEnd').ejTimePicker({
+            minimumTime: minimumTime,
+            maximumTime: maximumTime,
             interval: 60,
         });
     });
     function selectedStartTime(sender) {
         var selDate = sender.value; // mentions the selected time.
-        minTimepicker = $("#timeend").data("ejTimePicker");// creating TimePicker object
-        minTimepicker.setModel({ "minTime": selDate });// setting minTime property through setModel of TimePicker object.
+        minimumTimepicker = $("#timeEnd").data("ejTimePicker");// creating TimePicker object
+        minimumTimepicker.setModel({ "minimumTime": selDate });// setting minimumTime property through setModel of TimePicker object.
     }
     $(document).ready(function () {
         $('.book').click(function () {
-            var a = $('#datepick').val();
+            var a = $('#datePicker').val();
             var b = $('#time').val();
             var c = $('select').val();
             alert("You are booked the table with date " + a + " time " + b + " Party_size is " + c);

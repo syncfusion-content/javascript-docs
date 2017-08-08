@@ -59,8 +59,8 @@ Adding input Checkbox element for Toggle Button rendering.
 
 {% highlight html %}
 
-<input type="checkbox" id="tbutton"/>
-<label for="tbutton">Play</label>
+<input type="checkbox" id="toggleButton"/>
+<label for="toggleButton">Play</label>
 
 
 {% endhighlight %}
@@ -91,7 +91,7 @@ Initialization of **ToggleButton** in script
 
     $(function () {
         // simple control creation
-        $("#tbutton").ejToggleButton({
+        $("#toggleButton").ejToggleButton({
             size: "large"
         });
     });

@@ -100,7 +100,7 @@ The following code example is used to create the Priority form using **ListBox**
         <div class="element-area">
             <div class="frameWrapper">
                 <div id="control">
-                    <ul id="selectcheck">
+                    <ul id="selectCheck">
                         <li><span class="color high"></span>High</li>
                         <li><span class="color normal"></span>Normal</li>
                         <li><span class="color low"></span>Low</li>
@@ -150,7 +150,7 @@ Initialize the element in **&lt;script&gt;** tag.
     var listBoxObj, colorObj;
     jQuery(function ($) {
         //initialize the listbox with object creation
-        listBoxObj = $("#selectcheck").ejListBox().data('ejListBox');
+        listBoxObj = $("#selectCheck").ejListBox().data('ejListBox');
         //initialize the colorpicker with object creation
         colorObj = $("#CategoryColor").ejColorPicker({ value: "#278787" }).data('ejColorPicker');
         //initialize the button
