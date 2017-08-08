@@ -129,3 +129,112 @@ The **Toolbar** property **hide** is used to show or hide the **Toolbar**. Set t
     });
 
 {% endhighlight %}
+
+## Disable Or Enable Separate Toolbar Item
+
+We can enable or disable a separate toolbar item by using the following methods.
+
+### Disable Item
+
+The **Toolbar** method **disableItem** and **disableItemByID** can be used to disable separate toolbar item. In the below code we have disabled the third toolbar item by using these two methods
+
+{% highlight html %}
+
+    <div class="cols-sample-area">
+       <div id="editingToolbar">
+            <ul>
+                <li id="cut" class="e-icon e-cut_01" title="Cut"></li>
+                <li id="copy" class="e-icon e-copy_02" title="Copy"></li>
+                <li id="paste" class="e-icon e-paste_01" title="Paste"></li>
+            </ul>
+            <ul>
+                <li id="Bold" class="e-icon e-bold_01" title="Bold"> </li>
+                <li id="UndeLine" class="e-icon e-underline_01" title="UnderLine"></li>
+                <li id="StrikeThrough" class="e-icon e-strikethrough_01" title="Strike Through"></li>
+           </ul>
+           <ul>
+               <li id="Left" class="e-icon e-align-left_01" title="Left"></li>
+               <li id="Center" class="e-icon e-align-center_01" title="Center"></li>
+               <li id="Right" class="e-icon e-align-right_01" title="Right"></li>
+               <li id="Justify" class="e-icon e-align-justify_01" title="Justify"></li>
+            </ul>
+       </div>
+    </div>
+
+{% endhighlight %}
+
+{% highlight javascript %}
+        $(function () {
+                    // declaration
+                    $("#editingToolbar").ejToolbar();
+                   $("#editingToolbar").ejToolbar("disableItem",$("li")[2]);
+                    
+                });
+
+{% endhighlight %}
+
+OR
+{% highlight javascript %}
+        $(function () {
+                    // declaration
+                    $("#editingToolbar").ejToolbar();
+                    $("#editingToolbar").ejToolbar("disableItemByID","paste");
+                    
+                });
+
+{% endhighlight %}
+
+
+![](Behaviour-settings_images/Behaviour-settings1.jpg)
+
+### Enable Item
+
+The **Toolbar** method **enableItem** and **enableItemByID** can be used to enable separate toolbar item. In the below code we have disbaled the first five items initially and enabled the third toolbar item by using these two methods
+
+{% highlight html %}
+
+    <div class="cols-sample-area">
+       <div id="editingToolbar">
+            <ul>
+                <li id="cut" class="e-icon e-cut_01" title="Cut"></li>
+                <li id="copy" class="e-icon e-copy_02" title="Copy"></li>
+                <li id="paste" class="e-icon e-paste_01" title="Paste"></li>
+            </ul>
+            <ul>
+                <li id="Bold" class="e-icon e-bold_01" title="Bold"> </li>
+                <li id="UndeLine" class="e-icon e-underline_01" title="UnderLine"></li>
+                <li id="StrikeThrough" class="e-icon e-strikethrough_01" title="Strike Through"></li>
+           </ul>
+           <ul>
+               <li id="Left" class="e-icon e-align-left_01" title="Left"></li>
+               <li id="Center" class="e-icon e-align-center_01" title="Center"></li>
+               <li id="Right" class="e-icon e-align-right_01" title="Right"></li>
+               <li id="Justify" class="e-icon e-align-justify_01" title="Justify"></li>
+            </ul>
+       </div>
+    </div>
+
+{% endhighlight %}
+
+{% highlight javascript %}
+        $(function () {
+                    // declaration
+                   $("#editingToolbar").ejToolbar({disabledItemIndices: [0,1,2,3,4]});
+                   $("#editingToolbar").ejToolbar("enableItem",$("li")[2]);
+                    
+                });
+
+{% endhighlight %}
+
+OR
+{% highlight javascript %}
+        $(function () {
+                    // declaration
+                   $("#editingToolbar").ejToolbar({disabledItemIndices: [0,1,2,3,4]});
+                    $("#editingToolbar").ejToolbar("enableItemByID","paste");
+                    
+                });
+
+{% endhighlight %}
+
+![](Behaviour-settings_images/Behaviour-settings2.jpg)
