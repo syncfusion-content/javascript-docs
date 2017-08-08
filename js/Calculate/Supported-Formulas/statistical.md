@@ -2374,3 +2374,143 @@ _ZTEST(a1,T_value,sigma)_
 
 
 * sigma  is the population (known) standard deviation.
+
+
+
+## NORMDIST
+
+
+
+Returns the normal cumulative distribution
+
+
+
+**Syntax:**
+
+
+
+_NORMDIST(x,mean,standard_dev,cumulative)_
+
+
+
+**where:**
+
+
+
+* **x** is the value for which you want the distribution.
+
+
+
+* **mean** is the arithmetic mean of the distribution.
+
+
+
+* **standard_dev**is the standard deviation of the distribution.
+
+
+
+* **cumulative** is a logical value that determines the form of the function. If cumulative is TRUE, NORMDIST returns the cumulative distribution function; if FALSE, it returns the probability mass function.
+
+
+
+**Remarks:**
+
+
+
+* `#VALUE!` Occurs when mean or standard_dev is nonnumeric.
+
+
+
+* `#NUM!` Occurs when standard_dev ≤ 0.
+
+
+
+* If mean = 0, standard_dev = 1, and cumulative = TRUE, NORMDIST returns the standard normal distribution, NORMSDIST.
+
+
+
+## NORMSDIST
+
+
+
+Returns the standard normal cumulative distribution.
+
+
+
+**Syntax:**
+
+
+
+_NORMSDIST(z)_
+
+
+
+**where:**
+
+
+
+* **z** is the value for which you want the distribution.
+
+
+
+**Remarks:**
+
+
+
+* `#VALUE!` Occurs when z is nonnumeric.
+
+
+
+## STDEV
+
+
+
+Returns the standard deviation of a supplied set of values (which represent a sample of a population).
+
+
+
+**Syntax:**
+
+
+
+_STDEV(number1,[number2],...)_
+
+
+
+**where:**
+
+
+
+* **number1** is the first number argument corresponding to a sample of a population.
+
+
+
+* **number2…**is the number arguments 2 to 255 corresponding to a sample of a population. You can also use a single array or a reference to an array instead of arguments separated by commas.
+
+
+
+## COUNTIF
+
+
+
+Returns the number of cells (of a supplied range), that satisfy a given criteria.
+
+
+
+**Syntax:**
+
+
+
+_COUNTIF (range, criteria)_
+
+
+
+**where:**
+
+
+
+* **range** is the range of cells to count.
+
+
+
+* **criteria** is the criteria that controls which cells should be counted.
