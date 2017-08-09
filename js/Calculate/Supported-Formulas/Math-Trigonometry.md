@@ -1394,11 +1394,11 @@ _SUMPRODUCT(array1, [array2], [array3], ...)_
 
 
 
-* **array1** is an argument whose components you want to multiply and then add.
+* array1 is an argument whose components you want to multiply and then add.
 
 
 
-* **array2**, **array3**… are array arguments 2 to 255 whose components you want to multiply and then add.
+* array2, array3… are array arguments 2 to 255 whose components you want to multiply and then add.
 
 
 
@@ -1434,11 +1434,11 @@ _ROUND(number, num_digits)_
 
 
 
-* **number** is the numeric value that you want to round.
+* number is the numeric value that you want to round.
 
 
 
-* **num_digits** is the number of digits to which you want to round the number argument.
+* num_digits is the number of digits to which you want to round the number argument.
 
 
 
@@ -1478,11 +1478,11 @@ _ROUNDUP(number, num_digits)_
 
 
 
-* **number** is any real number that you want rounded up.
+* number is any real number that you want rounded up.
 
 
 
-* **num_digits** is the number of digits to which you want to round number.
+* num_digits is the number of digits to which you want to round number.
 
 
 
@@ -1527,11 +1527,11 @@ _ROUNDDOWN(number, num_digits)_
 
 
 
-* **number** is any real number that you want rounded down.
+* number is any real number that you want rounded down.
 
 
 
-* **num_digits**is the number of digits to which you want to round number.
+* num_digits is the number of digits to which you want to round number.
 
 
 

@@ -455,16 +455,16 @@ _VLOOKUP (value, table, col_index, [range_lookup])_
 
 
 
-* **value** - The value to look for in the first column of a table.
+* value - The value to look for in the first column of a table.
 
 
 
-* **table** - The table from which to retrieve a value.
+* table - The table from which to retrieve a value.
 
 
 
-* **col_index**- The column in the table from which to retrieve a value.
+* col_index - The column in the table from which to retrieve a value.
 
 
 
-* **range_lookup**- TRUE = approximate match (default). FALSE = exact match.
+* range_lookup- TRUE = approximate match (default). FALSE = exact match.

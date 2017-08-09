@@ -99,20 +99,20 @@ _PV(rate, nper, pmt, [fv], [type])_
 
 
 
-* **rate** is the interest rate per period.
+* rate is the interest rate per period.
 
 
 
-* **nper** is the total number of payment periods in an annuity.
+* nper is the total number of payment periods in an annuity.
 
 
 
-* **pmt** is the payment made each period and cannot change over the life of the annuity.
+* pmt is the payment made each period and cannot change over the life of the annuity.
 
 
 
-* **fv** is the future value, or a cash balance you want to attain after the last payment is made.
+* fv is the future value, or a cash balance you want to attain after the last payment is made.
 
 
 
-* **type** is the number 0 or 1 and indicates when payments are due.
+* type is the number 0 or 1 and indicates when payments are due.
