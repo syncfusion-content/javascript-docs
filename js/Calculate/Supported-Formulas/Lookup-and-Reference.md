@@ -432,3 +432,39 @@ _TRANSPOSE(array)_
 
 
 * array argument is a range of spreadsheet cells.
+
+
+
+## VLOOKUP
+
+
+
+Looks up a supplied value in the first column of a table, and returns the corresponding value from another column.
+
+
+
+**Syntax:**
+
+
+
+_VLOOKUP (value, table, col_index, [range_lookup])_
+
+
+
+**where:**
+
+
+
+* value - The value to look for in the first column of a table.
+
+
+
+* table - The table from which to retrieve a value.
+
+
+
+* col_index - The column in the table from which to retrieve a value.
+
+
+
+* range_lookup- TRUE = approximate match (default). FALSE = exact match.
