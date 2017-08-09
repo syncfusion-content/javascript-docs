@@ -920,6 +920,54 @@ _LOG10(number)_
 
 
 
+## MMULT
+
+
+
+Returns the matrix product of two arrays.
+
+
+
+**Syntax:**
+
+
+
+_MMULT(array1, array2)_
+
+
+
+**where:**
+
+
+
+* array1, array 2 are required arrays that needs to be multiplied.
+
+
+
+**Remarks:**
+
+
+
+* The number of columns in array1 must be the same as the number of rows in array2, and both arrays must contain only numbers.
+
+
+
+* array1 and array2 can be given as cell ranges, array constants, or references.
+
+
+
+* MMULT returns the #VALUE! error when:
+
+
+
+  * Any cells are empty or contain text.
+
+
+
+  * The number of columns in array1 is different from the number of rows in array2.
+
+
+
 ## SIN
 
 
@@ -1174,246 +1222,6 @@ _PRODUCT(number1, number2, ...)_
 
 
 
-## SQRT
-
-
-
-The `SQRT` function returns a positive square root.
-
-
-
-**Syntax:**
-
-
-
-_SQRT(number)_
-
-
-
-**where:**
-
-
-
-* number is the number for which you want the square root.
-
-
-
-**Remarks:**
-
-
-
-* Number must be >= 0.
-
-
-
-## SUMIF
-
-
-
-Adds the cells specified by a given criteria.
-
-
-
-**Syntax:**
-
-
-
-_SUMIF(range, criteria, sum_range)_ 
-
-
-
-**where:**
-
-
-
-* range is the range of cells you want evaluated.
-
-
-
-* criteria is the criteria in the form of a number, expression, or text that defines the cells to be added. For example, criteria can be expressed as ">32" or some other logical expression.
-
-
-
-* Sum_range is the actual cells to sum.
-
-
-
-**Remarks:**
-
-
-
-* The cells in sum_range are summed only if their corresponding cells in range match the criteria.
-
-
-
-* If sum_range is omitted, the cells in range are summed.
-
-
-
-## TAN
-
-
-
-Returns the tangent of a number.
-
-
-
-**Syntax:**
-
-
-
-_TAN(number)_
-
-
-
-**where:**
-
-
-
-* number is the tangent of the angle that you want.
-
-
-
-## TRUNC
-
-
-
-The `Trunc` function truncates a supplied number to a specified number of decimal places.
-
-
-
-**Syntax:**
-
-
-
-_TRUNC( number, [num_digits] )_
-
-
-
-**where:**
-
-
-
-* number is the initial number that is truncated.
-
-
-
-* [num_digits] is an optional argument that specifies the number of decimal places to truncate the supplied number to. The default value is 0.
-
-
-
-## ISTEXT
-
-
-
-The `IsText` function returns a Boolean value after determining that the provided value is a string.
-
-
-
-**Syntax:**
-
-
-
-_ISTEXT(text)_
-
-
-
-**where:**
-
-
-
-* text is the value you want to test if it is a string or not.
-
-
-
-## MMULT
-
-
-
-Returns the matrix product of two arrays.
-
-
-
-**Syntax:**
-
-
-
-_MMULT(array1, array2)_
-
-
-
-**where:**
-
-
-
-* array1, array 2 are required arrays that needs to be multiplied.
-
-
-
-**Remarks:**
-
-
-
-* The number of columns in array1 must be the same as the number of rows in array2, and both arrays must contain only numbers.
-
-
-
-* array1 and array2 can be given as cell ranges, array constants, or references.
-
-
-
-* MMULT returns the #VALUE! error when:
-
-
-
-  * Any cells are empty or contain text.
-
-
-
-  * The number of columns in array1 is different from the number of rows in array2.
-
-
-
-## SUMPRODUCT
-
-
-
-Returns the sum of the products of corresponding array components in given arrays.
-
-
-
-**Syntax:**
-
-
-
-_SUMPRODUCT(array1, [array2], [array3], ...)_
-
-
-
-**where:**
-
-
-
-* array1 is an argument whose components you want to multiply and then add.
-
-
-
-* array2, array3… are array arguments 2 to 255 whose components you want to multiply and then add.
-
-
-
-**Remarks:**
-
-
-
-* `#VALUE!` Occurs when the array arguments are not in the same dimensions.
-
-
-
-* SUMPRODUCT treats array entries that are not numeric as if they were zeros.
-
-
-
 ## ROUND
 
 
@@ -1552,3 +1360,195 @@ _ROUNDDOWN(number, num_digits)_
 
 
 * If num_digits is less than 0, then number is rounded down to the left of the decimal point.
+
+
+
+## SQRT
+
+
+
+The `SQRT` function returns a positive square root.
+
+
+
+**Syntax:**
+
+
+
+_SQRT(number)_
+
+
+
+**where:**
+
+
+
+* number is the number for which you want the square root.
+
+
+
+**Remarks:**
+
+
+
+* Number must be >= 0.
+
+
+
+## SUMIF
+
+
+
+Adds the cells specified by a given criteria.
+
+
+
+**Syntax:**
+
+
+
+_SUMIF(range, criteria, sum_range)_ 
+
+
+
+**where:**
+
+
+
+* range is the range of cells you want evaluated.
+
+
+
+* criteria is the criteria in the form of a number, expression, or text that defines the cells to be added. For example, criteria can be expressed as ">32" or some other logical expression.
+
+
+
+* Sum_range is the actual cells to sum.
+
+
+
+**Remarks:**
+
+
+
+* The cells in sum_range are summed only if their corresponding cells in range match the criteria.
+
+
+
+* If sum_range is omitted, the cells in range are summed.
+
+
+
+## SUMPRODUCT
+
+
+
+Returns the sum of the products of corresponding array components in given arrays.
+
+
+
+**Syntax:**
+
+
+
+_SUMPRODUCT(array1, [array2], [array3], ...)_
+
+
+
+**where:**
+
+
+
+* array1 is an argument whose components you want to multiply and then add.
+
+
+
+* array2, array3… are array arguments 2 to 255 whose components you want to multiply and then add.
+
+
+
+**Remarks:**
+
+
+
+* `#VALUE!` Occurs when the array arguments are not in the same dimensions.
+
+
+
+* SUMPRODUCT treats array entries that are not numeric as if they were zeros.
+
+
+
+## TAN
+
+
+
+Returns the tangent of a number.
+
+
+
+**Syntax:**
+
+
+
+_TAN(number)_
+
+
+
+**where:**
+
+
+
+* number is the tangent of the angle that you want.
+
+
+
+## TRUNC
+
+
+
+The `Trunc` function truncates a supplied number to a specified number of decimal places.
+
+
+
+**Syntax:**
+
+
+
+_TRUNC( number, [num_digits] )_
+
+
+
+**where:**
+
+
+
+* number is the initial number that is truncated.
+
+
+
+* [num_digits] is an optional argument that specifies the number of decimal places to truncate the supplied number to. The default value is 0.
+
+
+
+## ISTEXT
+
+
+
+The `IsText` function returns a Boolean value after determining that the provided value is a string.
+
+
+
+**Syntax:**
+
+
+
+_ISTEXT(text)_
+
+
+
+**where:**
+
+
+
+* text is the value you want to test if it is a string or not.
