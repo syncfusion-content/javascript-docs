@@ -137,11 +137,11 @@ $(function() {
 
 {% endhighlight %}
 
-## Hide Weekend
+## Hide Weekend days
 
-The Scheduler can be render based on the customized days. The customized days can be render based on the [workWeek](/api/js/ejschedule#members:workweek) days. To customize the days, use the [showWeekend](/api/js/ejschedule#members:showweekend) property.
+The Scheduler can be customized to display only the working days, thus hiding the weekend days from it. The working days render based on the values given in the [workWeek](/api/js/ejschedule#members:workweek) property. The days that are not mentioned in the `workWeek` collection is considered to be the weekend days and it can be hidden from the Scheduler by setting `false` to the [showWeekend](/api/js/ejschedule#members:showweekend) property.
 
-The following code example renders the scheduler with hiding weekend.
+The following code example renders the Scheduler by hiding the weekend days.
 
 {% highlight html %}
 
