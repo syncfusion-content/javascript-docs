@@ -219,9 +219,9 @@ You can also add the custom words into the custom dictionary file through the di
 * Context Menu Mode - Add To Dictionary option is available while right click on the error word and selecting this option, the word will be adding into the custom dictionary file.
 
 
-## SpellCheck on typing
+## Checking content on typing
 
-SpellCheck control support for spell check the content on press the Enter and Space key. The cursor position also properly retained while processing the spellcheck operations. If you enable “enableValidateOnType” property, the spellcheck operation will be performed on type. 
+SpellCheck control provides support for checking the content, on pressing the `Enter` and `Space` key. The cursor position will also be properly retained, while processing the SpellCheck operations. If you enable “enableValidateOnType” property, the spellcheck operation will be carried out on typing.
 
 The following code example describes the above behavior.
 
@@ -253,12 +253,12 @@ The following screenshot displays the output for the above code
 ![](/js/SpellCheck/ValidateOnType_images/validateontype.png)
 
 
-You can also validate spell check content the IFrame element or IFrame element target text by passing the IFrame element id or class name value to the controlsToValidate property. 
+You can also validate the content within the IFrame element or IFrame element target text, by passing the IFrame element id or class name value to the `controlsToValidate` property. 
 Detailed information is given [here](https://help.syncfusion.com/js/spellcheck/multiple-target)
 
 ## Suggestion Words
 
-The [getSuggestionWords](/api/js/ejspellcheck#methods:getSuggestionWords) option is used to get the possible suggestion words to an error word to the correct the spelling.
+The `getSuggestionWords` option is used to retrieve the possible suggestion words for an error word which is provided to correct that spelling.
 
 The following code example describes the above behavior.
 
@@ -288,11 +288,11 @@ MMI control panel with touch pad and dual-view technology, sound system with the
 
 {% endhighlight %}
 
-N> You can get the suggestion words after some time interval once the method called. Since, ajax request processing in the background.
+N> You can get the suggestion words after some time interval once this method is called. Since, ajax request processing takes place in the background.
 
 ## Synchronous request
 
-The [enableAsync](/api/js/ejspellcheck#members:enableAsync) option is used to send the Synchronous request to perform the SpellCheck operations.
+On setting `enableAsync` option to false, enables the synchronous request to the server to perform SpellCheck operations.
 
 The following code example describes the above behavior.
 
@@ -319,4 +319,4 @@ MMI control panel with touch pad and dual-view technology, sound system with the
 
 {% endhighlight %}
 
-N> You need to set the ajaxDataType value as json to get the Synchronous request result properly.
+N> You need to set the `ajaxDataType` value as `json` to retrieve the synchronous request result properly.
