@@ -169,7 +169,7 @@ N> Custom gallery item `menu` is not supported to Custom tooltip.
     <ul id="ribbon">
         <li><a>FILE</a> </li>
     </ul>
-    <ul id="custommenu">
+    <ul id="customMenu">
         <li>
             <a>New Quick Step</a>
             <ul>
@@ -261,7 +261,7 @@ N> Custom gallery item `menu` is not supported to Custom tooltip.
                                     }
                                 }, {
                                     customItemType: ej.Ribbon.customItemType.menu,
-                                    menuId: "custommenu",
+                                    menuId: "customMenu",
                                     menuSettings: {
                                         openOnClick: false
                                     }

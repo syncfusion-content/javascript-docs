@@ -663,7 +663,7 @@ The following code example lets you drag and drop the external items from the tr
                 <tr>
                     <td>Description:</td>
                     <td colspan="2">
-                        <textarea id="customdescription" name="Description" rows="3" cols="50" style="width: 100%; resize: vertical"></textarea>
+                        <textarea id="customDescription" name="Description" rows="3" cols="50" style="width: 100%; resize: vertical"></textarea>
                     </td>
                 </tr>
                 <tr>
@@ -694,8 +694,8 @@ The following code example lets you drag and drop the external items from the tr
         </table>
     </form>
     <div>
-        <button type="submit" onclick="cancel()" id="btncancel" style="float:right;margin-right:20px;margin-bottom:10px;">Cancel</button>
-        <button type="submit" onclick="save()" id="btnsubmit" style="float:right;margin-right:20px;margin-bottom:10px;">Save</button>
+        <button type="submit" onclick="cancel()" id="buttonCancel" style="float:right;margin-right:20px;margin-bottom:10px;">Cancel</button>
+        <button type="submit" onclick="save()" id="buttonSubmit" style="float:right;margin-right:20px;margin-bottom:10px;">Save</button>
     </div>
 </div>
 
@@ -749,12 +749,11 @@ The following code example lets you drag and drop the external items from the tr
                     recurrence: "Recurrence",
                     recurrenceRule: "RecurrenceRule",
                     resourceFields: "ownerId"
-
                 },
                 dragStop: "onDragStop",
             });
-            $("#btncancel").ejButton({ width: '85px' });
-            $("#btnsubmit").ejButton({ width: '85px' });
+            $("#buttonCancel").ejButton({ width: '85px' });
+            $("#buttonSubmit").ejButton({ width: '85px' });
             $("#StartTime").ejDateTimePicker({ width: "150px" });
             $("#EndTime").ejDateTimePicker({ width: "150px" });
             $("#customWindow").ejDialog({
@@ -792,8 +791,8 @@ function onDropped(e) {
         var _target = $($(e.target).context);
         if ($(_target).hasClass("e-workcells") && (scheduleObj.model.showTimeScale) && scheduleObj.currentView() !== "month" && !(scheduleObj._isCustomView())) {
             var time = scheduleObj.model.orientation == "vertical" ? scheduleObj.model.startHour + ($(e.event.target).parent().index() / 2) : scheduleObj.model.startHour + (($(e.event.target).index() - (((scheduleObj.model.endHour - scheduleObj.model.startHour) * 2) * index)) / 2);
-            var timemin = time.toString().split(".");
-            var cur_StartTime = new Date(curDate).setHours(parseInt(timemin[0]), parseInt(timemin[1]) == 5 ? 30 : 00);
+            var timeMin = time.toString().split(".");
+            var cur_StartTime = new Date(curDate).setHours(parseInt(timeMin[0]), parseInt(timeMin[1]) == 5 ? 30 : 00);
             var min = (parseInt(new Date(cur_StartTime).getHours()) == 23 && parseInt(new Date(cur_StartTime).getMinutes()) == 30) ? new Date(cur_StartTime).getMinutes() + 29 : new Date(cur_StartTime).getMinutes() + 30;
             var cur_EndTime = new Date(new Date(cur_StartTime).setMinutes(min));
         }
@@ -814,9 +813,9 @@ function onDropped(e) {
         // To find the resource details
         var resource = scheduleObj._getResourceValue($($(e.target).context));
        
-        // custom appointmnt window
+        // custom appointment window
         $("#subject").val(e.droppedElementData.text);
-        $("#customdescription").val(e.droppedElementData.text);
+        $("#customDescription").val(e.droppedElementData.text);
         $("#StartTime").ejDateTimePicker({ value: new Date(StartTime) });
         $("#EndTime").ejDateTimePicker({ value: new Date(endTime) });
         $("#resource").val(resource.text);
@@ -827,15 +826,15 @@ function onDropped(e) {
 
 function save() {
     var obj = {};
-    var formelement = $("#customWindow").find("#custom").get(0);
-    for (var index = 0; index < formelement.length; index++) {
-        var columnName = formelement[index].name, $element = $(formelement[index]);
+    var formElement = $("#customWindow").find("#custom").get(0);
+    for (var index = 0; index < formElement.length; index++) {
+        var columnName = formElement[index].name, $element = $(formElement[index]);
         if (columnName != undefined) {
-            if (columnName == "Subject") var value = formelement[index].value;
-            if (columnName == "Desctiption") value = formelement[index].value;
-            if (columnName == "StartTime") value = new Date(formelement[index].value);
-            if (columnName == "EndTime") value = new Date(formelement[index].value);
-            if (columnName == "ownerId") value = parseInt(formelement[index].value);
+            if (columnName == "Subject") var value = formElement[index].value;
+            if (columnName == "Description") value = formElement[index].value;
+            if (columnName == "StartTime") value = new Date(formElement[index].value);
+            if (columnName == "EndTime") value = new Date(formElement[index].value);
+            if (columnName == "ownerId") value = parseInt(formElement[index].value);
             if (columnName != "Resource") obj[columnName] = value;
         }
     }
@@ -1517,7 +1516,7 @@ $(function() {
         reminderSettings: {
             //enable the reminder options 
             enable: true,
-            //notify before 10 mins
+            //notify before 10 minutes
             alertBefore: 10
         },
         timeZone: "UTC 00:00",
@@ -1699,7 +1698,7 @@ The [blockoutSettings](/api/js/ejschedule#members:blockoutsettings) holds the be
 <div id="schedule"></div>
 
 <!--Template to apply block intervals-->
-<script id="blocktemplate" type="text/x-jsrender">
+<script id="blockTemplate" type="text/x-jsrender">
    <div style="height:100%">
       <div>{{:BlockSubject}}</div>
    </div>
@@ -1711,7 +1710,7 @@ The [blockoutSettings](/api/js/ejschedule#members:blockoutsettings) holds the be
                 currentDate: new Date(2014, 4, 5),
                 blockoutSettings: {
                     enable: true,
-                    templateId: "#blocktemplate",
+                    templateId: "#blockTemplate",
                     dataSource: [{
                         BlockId: 101,
                         BlockStartTime: new Date(2014, 4, 5, 10, 00),

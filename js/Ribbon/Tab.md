@@ -15,7 +15,7 @@ Tab is a collection of control [`groups`](https://help.syncfusion.com/api/js/ejr
 {% highlight html %}
 
     <div id="Ribbon"></div>
-    <ul id="ribbonmenu">
+    <ul id="ribbonMenu">
         <li>
             <a>FILE</a>
             <ul>
@@ -32,7 +32,7 @@ Tab is a collection of control [`groups`](https://help.syncfusion.com/api/js/ejr
                 width: "500px",
                 applicationTab: {
                     type: ej.Ribbon.applicationTabType.menu,
-                    menuItemID: "ribbonmenu"
+                    menuItemID: "ribbonMenu"
                 },
                 tabs: [{
                     id: "home",
@@ -67,7 +67,7 @@ Tab is a collection of control [`groups`](https://help.syncfusion.com/api/js/ejr
                         }]
                     }]
                 }, {
-                    id: "sendrec",
+                    id: "sendRec",
                     text: "Send/Receive",
                     groups: [{
                         type: "custom",

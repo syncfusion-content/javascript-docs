@@ -42,7 +42,7 @@ Usually, the appointments are displayed with its **Subject** and **Start/End tim
 <!--Container for ejScheduler widget-->
 <div id="Schedule1"></div>
 
-<script id="apptemplate" type="text/x-jsrender">
+<script id="appTemplate" type="text/x-jsrender">
     {{"{{"}}if View !== "agenda"{{}}}}
         <div style="height:100%; background-color:orange; margin-left: 5px;">
             <div style="margin-left: 2px;">{{"{{"}}:Subject{{}}}}</div>
@@ -57,7 +57,7 @@ Usually, the appointments are displayed with its **Subject** and **Start/End tim
 $(function() {
     $("#Schedule1").ejSchedule({
         currentDate: new Date(2015, 11, 2),
-        appointmentTemplateId: "#apptemplate",
+        appointmentTemplateId: "#appTemplate",
         appointmentSettings: {
             dataSource: [{
                 Id: 100,
@@ -89,7 +89,7 @@ The cells can be customized with the following code example.
 <div id="Schedule1"></div>
 
 <!-- Template for All-day cells -->
-<script id="alldayTemplate" type="text/x-jsrender">
+<script id="allDayTemplate" type="text/x-jsrender">
     <div class="e-icon e-scheduleallday" style="opacity:0.5"></div>
     <span style="opacity:0.5">AllDay</span>
 </script>
@@ -111,7 +111,7 @@ The cells can be customized with the following code example.
             {{"{{"}}else view == 'month' && resource.text == 'Party Hall-B' && date.getDay() == 5{{}}}}
                 <div style="background-color:lightblue">Conf.</div>
             {{"{{"}}else resource.text == 'Party Hall-B' && date.getDate() == 16{{}}}}
-                <div style="background-color:darkkhaki">Happyday</div>
+                <div style="background-color:darkkhaki">HappyDay</div>
             {{"{{"}}else view != 'month' && resource.text == 'Party Hall-B' && date.getDay() == 5 && date.getHours() == 12{{}}}}
                 <div style="background-color:goldenrod">Conf.</div>
             {{"{{"}}else date.getDate() == 10 && date.getMonth() == 11{{}}}}
@@ -127,7 +127,7 @@ The cells can be customized with the following code example.
 $(function() {
     $("#Schedule1").ejSchedule({
         currentDate: new Date(2015, 11, 2),
-        allDayCellsTemplateId: "#alldayTemplate",
+        allDayCellsTemplateId: "#allDayTemplate",
         workCellsTemplateId: "#workTemplate",
         appointmentSettings: {
             dataSource: [{
@@ -400,7 +400,7 @@ When template is applied for the [prioritySettings](/api/js/ejschedule#members:p
 
 <style type="text/css">
 	.critical,
-	.ultracritical,
+	.ultraCritical,
 	.none {
 		height: 13px;
 		width: 13px;
@@ -417,7 +417,7 @@ When template is applied for the [prioritySettings](/api/js/ejschedule#members:p
 		background-position: -13px;
 	}
 
-	.ultracritical {
+	.ultraCritical {
 		background-color: #56ca85;
 		background-position: -59px;
 	}
@@ -442,7 +442,7 @@ $(function() {
             }, {
                 text: "Ultra Critical",
                 id: 3,
-                value: "ultracritical"
+                value: "ultraCritical"
             }]
         },
         appointmentSettings: {
@@ -527,7 +527,7 @@ The following code snippet shows how to customize the content of the date, time 
 <div id="Schedule1"></div>
 
 // Template for date column
-<script id="datetemplate" type="text/x-jsrender">
+<script id="dateTemplate" type="text/x-jsrender">
     <div style="height:100%">
         <div>
             <div>{{"{{"}}:~dateDisplay(StartTime){{}}}}</div>
@@ -536,7 +536,7 @@ The following code snippet shows how to customize the content of the date, time 
 </script>
 
 // Template for time column
-<script id="timetemplate" type="text/x-jsrender">
+<script id="timeTemplate" type="text/x-jsrender">
     <div style="height:100%">
         <div>
             <div>{{"{{"}}:~timeDisplay(StartTime){{}}}}</div>
@@ -545,7 +545,7 @@ The following code snippet shows how to customize the content of the date, time 
 </script>
 
 // Template for appointment which applies for event column in agenda view.
-<script id="apptemplate" type="text/x-jsrender">
+<script id="appTemplate" type="text/x-jsrender">
     {{"{{"}}if View !== "agenda"{{}}}}
         <div style="height:100%; background-color:orange; margin-left: 5px;">
             <div style="margin-left: 2px;">{{"{{"}}:Subject{{}}}}</div>
@@ -576,10 +576,10 @@ $.views.helpers({
 $(function() {
     $("#Schedule1").ejSchedule({
         currentDate: new Date(2015, 11, 2),
-        appointmentTemplateId: "#apptemplate",
+        appointmentTemplateId: "#appTemplate",
         agendaViewSettings: {
-            dateColumnTemplateId: "#datetemplate",
-            timeColumnTemplateId: "#timetemplate"
+            dateColumnTemplateId: "#dateTemplate",
+            timeColumnTemplateId: "#timeTemplate"
         },
         appointmentSettings: {
             dataSource: [{
