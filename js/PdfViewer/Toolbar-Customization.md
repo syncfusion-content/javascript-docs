@@ -82,11 +82,11 @@ Contains selection tool
 </table>
 
 The ejPdfViewer has an option to show or hide these grouped items in the default toolbar.  You can hide/display any of these tools by using the toolbarSettings property.
-The below code snippet describes how to hide the magnification tools in the widget.
+The below code snippet describes how to show only the magnification tools in the widget.
 
 {% highlight javascript %}
 $(function () {
-            var obj = $("#container").ejPdfViewer({serviceUrl: "/api/PdfViewerAPI", toolbarSettings: {toolbarItems : ~ej.PdfViewer.ToolbarItems.MagnificationTools}});
+            var obj = $("#container").ejPdfViewer({serviceUrl: "/api/PdfViewerAPI", toolbarSettings: {toolbarItems : ej.PdfViewer.ToolbarItems.MagnificationTools}});
         });
 {% endhighlight %}
 
