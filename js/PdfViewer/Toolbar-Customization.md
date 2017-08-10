@@ -28,7 +28,7 @@ Contains ZoomIn, ZoomOut, Zoom, FitPage and FitWidth tools
 {{'**NavigationTools**'| markdownify }}
 </td>
 <td>
-Contains GoToFirst, GoToLast, GoToNext and GoToLast tools
+Contains GoToNext and GoToLast tools
 </td>
 </tr>
 <tr>
@@ -45,6 +45,38 @@ Contains print tool.
 </td>
 <td>
 Contains download tool
+</td>
+</tr>
+<tr>
+<td>
+{{'**TextSearchTool**'| markdownify }}
+</td>
+<td>
+Contains text search tool
+</td>
+</tr>
+<tr>
+<td>
+{{'**TextMarkupAnnotationTools**'| markdownify }}
+</td>
+<td>
+Contains text markup annotation tools
+</td>
+</tr>
+<tr>
+<td>
+{{'**SignatureTool**'| markdownify }}
+</td>
+<td>
+Contains signature tool
+</td>
+</tr>
+<tr>
+<td>
+{{'**SelectionTool**'| markdownify }}
+</td>
+<td>
+Contains selection tool
 </td>
 </tr>
 </table>
