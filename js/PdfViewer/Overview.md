@@ -34,6 +34,12 @@ The key features of the **PDF viewer** control are listed as follows:
 
 * Supports downloading the PDF document being displayed.
 
+* Supports text selection and search.
+
+* Supports text markup annotations.
+
+* Supports including hand written signatures in the PDF document.
+
 * Compatible with all the modern browsers that provides support for HTML5/CSS3/JavaScript.
 
 

@@ -28,7 +28,7 @@ Contains ZoomIn, ZoomOut, Zoom, FitPage and FitWidth tools
 {{'**NavigationTools**'| markdownify }}
 </td>
 <td>
-Contains GoToFirst, GoToLast, GoToNext and GoToLast tools
+Contains GoToNext and GoToLast tools
 </td>
 </tr>
 <tr>
@@ -47,14 +47,46 @@ Contains print tool.
 Contains download tool
 </td>
 </tr>
+<tr>
+<td>
+{{'**TextSearchTool**'| markdownify }}
+</td>
+<td>
+Contains text search tool
+</td>
+</tr>
+<tr>
+<td>
+{{'**TextMarkupAnnotationTools**'| markdownify }}
+</td>
+<td>
+Contains text markup annotation tools
+</td>
+</tr>
+<tr>
+<td>
+{{'**SignatureTool**'| markdownify }}
+</td>
+<td>
+Contains signature tool
+</td>
+</tr>
+<tr>
+<td>
+{{'**SelectionTool**'| markdownify }}
+</td>
+<td>
+Contains selection tool
+</td>
+</tr>
 </table>
 
 The ejPdfViewer has an option to show or hide these grouped items in the default toolbar.  You can hide/display any of these tools by using the toolbarSettings property.
-The below code snippet describes how to hide the magnification tools in the widget.
+The below code snippet describes how to show only the magnification tools in the widget.
 
 {% highlight javascript %}
 $(function () {
-            var obj = $("#container").ejPdfViewer({serviceUrl: "/api/PdfViewerAPI", toolbarSettings: {toolbarItems : ~ej.PdfViewer.ToolbarItems.MagnificationTools}});
+            var obj = $("#container").ejPdfViewer({serviceUrl: "/api/PdfViewerAPI", toolbarSettings: {toolbarItems : ej.PdfViewer.ToolbarItems.MagnificationTools}});
         });
 {% endhighlight %}
 
