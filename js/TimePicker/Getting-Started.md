@@ -157,8 +157,8 @@ In a real-time hotel table booking scenario, the booking is open only for a limi
             maxDate: rangeDate // 30 –days of interval from min date.
         });
         $("#time").ejTimePicker({
-            minimumTime: minimumTime, // Start time as minimumTime.
-            maximumTime: maximumTime // End time as maximumTime.
+            minTime: minimumTime, // Start time as minimumTime.
+            maxTime: maximumTime // End time as maximumTime.
         });
     });
 
@@ -192,8 +192,8 @@ The following code example shows how to set **Time interval**.
             maxDate: rangeDate // 30 –days of interval from min date.
         });
         $("#time").ejTimePicker({
-            minimumTime: minimumTime, // Start time as minimumTime.
-            maximumTime: maximumTime, // End time as maximumTime.
+            minTime: minimumTime, // Start time as minimumTime.
+            maxTime: maximumTime, // End time as maximumTime.
             interval: 60
         });
     });
@@ -229,8 +229,8 @@ The following code example shows how to display the **acknowledgment message**.
             maxDate: rangeDate // 30 –days of interval from min date.
         });
         $("#time").ejTimePicker({
-            minimumTime: minimumTime, // Start time as minimumTime.
-            maximumTime: maximumTime, // End time as maximumTime.
+            minTime: minimumTime, // Start time as minimumTime.
+            maxTime: maximumTime, // End time as maximumTime.
             interval: 60
         });
     });
@@ -326,21 +326,21 @@ Initialize **Two TimePickers** using the following code example.
             maxDate: rangeDate // 30 –days of interval from min date.
         });
         $("#time").ejTimePicker({
-            minimumTime: minimumTime, // Start time as minimumTime.
-            maximumTime: maximumTime, // End time as maximumTime.
+            minTime: minimumTime, // Start time as minimumTime.
+            maxTime: maximumTime, // End time as maximumTime.
             interval: 60,
             select: "selectedStartTime"
         });
         $('#timeEnd').ejTimePicker({
-            minimumTime: minimumTime,
-            maximumTime: maximumTime,
+            minTime: minimumTime,
+            maxTime: maximumTime,
             interval: 60,
         });
     });
     function selectedStartTime(sender) {
         var selDate = sender.value; // mentions the selected time.
         minimumTimepicker = $("#timeEnd").data("ejTimePicker");// creating TimePicker object
-        minimumTimepicker.setModel({ "minimumTime": selDate });// setting minimumTime property through setModel of TimePicker object.
+        minimumTimepicker.setModel({ "minTime": selDate });// setting minimumTime property through setModel of TimePicker object.
     }
     $(document).ready(function () {
         $('.book').click(function () {

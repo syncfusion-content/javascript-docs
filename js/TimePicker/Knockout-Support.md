@@ -82,7 +82,7 @@ The following example depicts the way to bind data to the **TimePicker** widget 
             ko.applyBindings(viewModel);
             var timeObj = $('#time').data("ejTimePicker");
             $("#getTime").click(function () {
-                alert("Selected time is : " + timeObj.getimePickerValue());
+                alert("Selected time is : " + timeObj.getValue());
             });
             $("#sampleProperties").ejPropertiesPanel();
         });
