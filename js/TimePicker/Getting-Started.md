@@ -140,7 +140,7 @@ The following screenshot displays a **TimePicker** control.
 
 ## Set the Min and Max Values
 
-In a real-time hotel table booking scenario, the booking is open only for a limited time and limited number of days. You have to select a time and date from the given range. This is achieved by using the properties **minimumTime** and **maximumTime**, **minDate** and **maxDate**. By this way, only times ranging between **minimumTime** and **maximumTime**, **minDate** and **maxDate** are enabled in the **TimePicker**.
+In a real-time hotel table booking scenario, the booking is open only for a limited time and limited number of days. You have to select a time and date from the given range. This is achieved by using the properties **minTime** and **maxTime**, **minDate** and **maxDate**. By this way, only times ranging between **minTime** and **maxTime**, **minDate** and **maxDate** are enabled in the **TimePicker**.
 
 {% highlight javascript %}
 
