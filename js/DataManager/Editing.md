@@ -50,9 +50,9 @@ Last Name
 <script type="text/javascript">
    $(function () {
        window.gridData = [
-       { FirstName: "john", EmployeeID: 1, LastName: "Paul"},
-       { FirstName: "ben", EmployeeID: 2, LastName: "Parker"},
-       { FirstName: "andrew", EmployeeID:3, LastName: "Becket"}];
+       { FirstName: "John", EmployeeID: 1, LastName: "Paul"},
+       { FirstName: "Ben", EmployeeID: 2, LastName: "Parker"},
+       { FirstName: "Andrew", EmployeeID:3, LastName: "Becket"}];
        window.change = function (args) {
            if (args.value) {
                data = window.DataManager.executeLocal(ej.Query().where("EmployeeID", ej.FilterOperators.equal, parseInt(args.value, 10)));

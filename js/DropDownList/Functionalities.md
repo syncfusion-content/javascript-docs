@@ -515,7 +515,7 @@ N> Grouping has restrictions in the following scenarios,<BR>
 
 	$(function() {
 	    $('#dropdown1').ejDropDownList({
-	        targetID: "dropdownitems"
+	        targetID: "dropDownItems"
 	    });
 	});         
     
@@ -931,7 +931,7 @@ Selects the item in the popup list based on the keyed in value. If the time take
             text: "Jessica",
             value: "emp4"
         }, {
-            text: "jenneth",
+            text: "Jenneth",
             value: "emp5"
         }];
         $('#dropdown1').ejDropDownList({
@@ -981,7 +981,7 @@ N> Items are filtered based on “contains” filter type by default.
             text: "Jessica",
             value: "emp4"
         }, {
-            text: "jenneth",
+            text: "Jenneth",
             value: "emp5"
         }];
         $('#dropdown1').ejDropDownList({

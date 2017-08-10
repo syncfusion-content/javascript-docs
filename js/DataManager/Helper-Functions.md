@@ -81,9 +81,9 @@ Please refer the online (link)[https://en.wikipedia.org/wiki/Time_zone#List_of_U
         var clientSideTimeZoneDiff = new Date().getTimezoneOffset() / 60; // get client time zone difference and convert it to hours;
         ej.serverTimezoneOffset = serverTimeZoneDiff + clientSideTimeZoneDiff;
         $(function () {
-            var dm = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" });
+            var dataManager = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" });
             $("#Grid").ejGrid({
-                dataSource: dm,
+                dataSource: dataManager,
                 allowPaging: true,
                 columns: ["OrderID", "EmployeeID", "CustomerID", "OrderDate", "Freight"]
             });
@@ -114,9 +114,9 @@ Let see an example, when they observe the Daylight saving time.
         var clientSideTimeZoneDiff = new Date().getTimezoneOffset() / 60; // get client time zone difference and convert it to hours;
         ej.serverTimezoneOffset = serverTimeZoneDiff + clientSideTimeZoneDiff;
         $(function () {
-            var dm = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" });
+            var dataManager = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" });
             $("#Grid").ejGrid({
-                dataSource: dm,
+                dataSource: dataManager,
                 allowPaging: true,
                 columns: ["OrderID", "EmployeeID", "CustomerID", "OrderDate", "Freight"]
             });

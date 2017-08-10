@@ -493,12 +493,12 @@ So far, you have added the required toolbar items and configured its appearance.
             width: "auto",
             height: "33px",
             enableSeparator: true,
-            click: "onItemclick" // Binds click event to onclick function
+            click: "onItemClick" // Binds click event to onclick function
         });
     
     });
     
-    function onItemclick(args) {    
+    function onItemClick(args) {    
         //Finds Out the Item that was Clicked in Toolbar    
         //args.currentTarget returns the clicked Toolbar element    
         var option = args.currentTarget.id; //Finds Out the Id of Clicked item.    

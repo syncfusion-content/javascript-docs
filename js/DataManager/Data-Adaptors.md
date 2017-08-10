@@ -34,21 +34,21 @@ Here, you can learn when and how each adaptor is used.
         <th> Description <br/> </th>
     </tr>
      <tr>
-        <td> processQuery(ds, query) </td>
+        <td> processQuery(dataObj, query) </td>
         <td> 
             <table>
-                <tr>  <td> dm </td> <td> Object </td> <td> ej.DataManager object </td> </tr>
+                <tr>  <td> dataObj </td> <td> Object </td> <td> ej.DataManager object </td> </tr>
                 <tr>  <td> query </td> <td> ej.Query </td> <td>  Sets the default query for the data source </td> </tr>
             </table>
         </td>
         <td> Used to prepare query string for the request data </td>
     </tr>
     <tr>
-        <td> processResponse(data, ds, query, xhr) </td>
+        <td> processResponse(data, dataManagerObj, query, xhr) </td>
          <td> 
             <table>
                 <tr>  <td> data </td> <td> Object </td> <td>  JSON data or JSON array </td> </tr>
-                <tr>  <td> ds </td> <td> Object </td> <td> ej.DataManager object </td> </tr>
+                <tr>  <td> dataManagerObj </td> <td> Object </td> <td> ej.DataManager object </td> </tr>
                 <tr>  <td> query </td> <td> ej.Query </td> <td>  Sets the default query for the data source </td> </tr>
                 <tr>  <td> xhr </td> <td> Object </td> <td> XMLHTTPRequest object </td> </tr>
             </table>
@@ -56,20 +56,20 @@ Here, you can learn when and how each adaptor is used.
         <td> Used to precess the response which is return from the Data Source </td>
     </tr>
     <tr>
-        <td> insert(dm, data) </td>
+        <td> insert(dataObj, data) </td>
         <td> 
             <table>
                 <tr>  <td> data </td> <td> Object </td> <td>  JSON data or JSON array </td> </tr>
-                <tr>  <td> dm </td> <td> Object </td> <td> ej.DataManager object </td> </tr>
+                <tr>  <td> dataObj </td> <td> Object </td> <td> ej.DataManager object </td> </tr>
             </table>
         </td>
         <td> Inserts a data item in the data table. </td>
     </tr>
     <tr>
-        <td> remove(dm, keyField, value, tableName) </td>
+        <td> remove(dataObj, keyField, value, tableName) </td>
         <td> 
             <table>
-                <tr>  <td> dm </td> <td> Object </td> <td>  ej.DataManager object </td> </tr>
+                <tr>  <td> dataObj </td> <td> Object </td> <td>  ej.DataManager object </td> </tr>
                 <tr>  <td> keyField </td> <td> String </td> <td> KeyColumn to find the data </td> </tr>
                 <tr>  <td> String </td> <td> Object </td> <td> Specified value for the keyField</td> </tr>
                 <tr>  <td> tableName </td> <td> String </td> <td> Name of the source table </td> </tr>
@@ -78,10 +78,10 @@ Here, you can learn when and how each adaptor is used.
         <td> It is used to remove the data from the dataSource </td>
     </tr>
     <tr>
-        <td> update(dm, keyField, value, tableName) </td>
+        <td> update(dataObj, keyField, value, tableName) </td>
         <td> 
             <table>
-                <tr>  <td> dm </td> <td> Object </td> <td>  ej.DataManager object </td> </tr>
+                <tr>  <td> dataObj </td> <td> Object </td> <td>  ej.DataManager object </td> </tr>
                 <tr>  <td> keyField </td> <td> String </td> <td> KeyColumn to find the data </td> </tr>
                 <tr>  <td> String </td> <td> Object </td> <td> Specified value for the keyField</td> </tr>
                 <tr>  <td> tableName </td> <td> String </td> <td> Name of the source table </td> </tr>
@@ -148,10 +148,10 @@ URL Adaptor of **DataManager** can be used when you are required to use remote s
         <th> Description <br/> </th>
     </tr>
      <tr>
-        <td> processQuery(dm, query, hierarchyFilters) </td>
+        <td> processQuery(dataObj, query, hierarchyFilters) </td>
         <td> 
             <table>
-                <tr>  <td> dm </td> <td> Object </td> <td> ej.DataManager object </td> </tr>
+                <tr>  <td> dataObj </td> <td> Object </td> <td> ej.DataManager object </td> </tr>
                 <tr>  <td> query </td> <td> ej.Query </td> <td>  Sets the default query for the data source </td> </tr>
                 <tr>  <td> hierarchyFilters </td> <td> ej.Query </td> <td> The hierarchical query can be provided by using the hierarchical function.  </td> </tr>
             </table>
@@ -159,11 +159,11 @@ URL Adaptor of **DataManager** can be used when you are required to use remote s
         <td> Used to prepare query string for the request data </td>
     </tr>
     <tr>
-        <td> processResponse(data, ds, query, xhr, request, changes) </td>
+        <td> processResponse(data, dataManagerObj, query, xhr, request, changes) </td>
          <td> 
             <table>
                 <tr>  <td> data </td> <td> Object </td> <td>  JSON data or JSON array of Result</td> </tr>
-                <tr>  <td> ds </td> <td> Object </td> <td> ej.DataManager object </td> </tr>
+                <tr>  <td> dataManagerObj </td> <td> Object </td> <td> ej.DataManager object </td> </tr>
                 <tr>  <td> query </td> <td> ej.Query </td> <td>  Sets the default query for the data source </td> </tr>
                 <tr>  <td> xhr </td> <td> Object </td> <td> XMLHTTPRequest object </td> </tr>
                 <tr>  <td> request </td> <td> Object </td> <td>  request object to the Data Source </td> </tr>
@@ -173,11 +173,11 @@ URL Adaptor of **DataManager** can be used when you are required to use remote s
         <td> Used to precess the response which is return from the Data Source </td>
     </tr>
     <tr>
-        <td> insert(dm, data, tableName, query) </td>
+        <td> insert(dataObj, data, tableName, query) </td>
         <td> 
             <table>
                 <tr>  <td> data </td> <td> Object </td> <td>  JSON data or JSON array </td> </tr>
-                <tr>  <td> dm </td> <td> Object </td> <td> ej.DataManager object </td> </tr>
+                <tr>  <td> dataObj </td> <td> Object </td> <td> ej.DataManager object </td> </tr>
                 <tr>  <td> tableName </td> <td> String </td> <td> Name of the source table </td> </tr>
                 <tr>  <td> query </td> <td> ej.Query </td> <td>  Sets the default query for the data source </td> </tr>
             </table>
@@ -185,10 +185,10 @@ URL Adaptor of **DataManager** can be used when you are required to use remote s
         <td> Inserts a data item in the data table. </td>
     </tr>
     <tr>
-        <td> remove(dm, keyField, value, tableName, query) </td>
+        <td> remove(dataObj, keyField, value, tableName, query) </td>
         <td> 
             <table>
-                <tr>  <td> dm </td> <td> Object </td> <td>  ej.DataManager object </td> </tr>
+                <tr>  <td> dataObj </td> <td> Object </td> <td>  ej.DataManager object </td> </tr>
                 <tr>  <td> keyField </td> <td> String </td> <td> KeyColumn to find the data </td> </tr>
                 <tr>  <td> String </td> <td> Object </td> <td> Specified value for the keyField</td> </tr>
                 <tr>  <td> tableName </td> <td> String </td> <td> Name of the source table </td> </tr>
@@ -198,10 +198,10 @@ URL Adaptor of **DataManager** can be used when you are required to use remote s
         <td> It is used to remove the data from the dataSource </td>
     </tr>
     <tr>
-        <td> update(dm, keyField, value, tableName, query) </td>
+        <td> update(dataObj, keyField, value, tableName, query) </td>
         <td> 
             <table>
-                <tr>  <td> dm </td> <td> Object </td> <td>  ej.DataManager object </td> </tr>
+                <tr>  <td> dataObj </td> <td> Object </td> <td>  ej.DataManager object </td> </tr>
                 <tr>  <td> keyField </td> <td> String </td> <td> KeyColumn to find the data </td> </tr>
                 <tr>  <td> String </td> <td> Object </td> <td> Specified value for the keyField</td> </tr>
                 <tr>  <td> tableName </td> <td> String </td> <td> Name of the source table </td> </tr>
@@ -253,14 +253,14 @@ Now, in the following code example the data is retrieved from **MVC** **Controll
 
     public class HomeController : Controller
     {
-        public JsonResult Data(DataManager dm)
+        public JsonResult Data(DataManager dataObj)
         {
             List<Object> data = new List<object>();
             for (int i = 1; i <= 10; i++)
             {
                 data.Add(new { OrderID = 10240 + i, CustomerID = "Customer" + i, EmployeeID = i });
             }
-            var records = data.Take(dm.Take); // take query of Data Manager
+            var records = data.Take(dataObj.Take); // take query of Data Manager
 
             return Json(records, JsonRequestBehavior.AllowGet);
         }
@@ -287,11 +287,11 @@ The result of the above code example is illustrated as follows.
         <th> Description <br/> </th>
     </tr>
     <tr>
-        <td> processResponse(data, ds, query, xhr, request, changes) </td>
+        <td> processResponse(data, dataManagerObj, query, xhr, request, changes) </td>
          <td> 
             <table>
                 <tr>  <td> data </td> <td> Object </td> <td>  JSON data or JSON array </td> </tr>
-                <tr>  <td> ds </td> <td> Object </td> <td> ej.DataManager object </td> </tr>
+                <tr>  <td> dataManagerObj </td> <td> Object </td> <td> ej.DataManager object </td> </tr>
                 <tr>  <td> query </td> <td> ej.Query </td> <td>  Sets the default query for the data source </td> </tr>
                 <tr>  <td> xhr </td> <td> Object </td> <td> XMLHTTPRequest object </td> </tr>
                 <tr>  <td> request </td> <td> Object </td> <td>  request object to the Data Source </td> </tr>
@@ -301,21 +301,21 @@ The result of the above code example is illustrated as follows.
         <td> Used to precess the response which is return from the Data Source </td>
     </tr>
      <tr>
-        <td> insert(dm, data, tableName) </td>
+        <td> insert(dataObj, data, tableName) </td>
         <td> 
             <table>
                 <tr>  <td> data </td> <td> Object </td> <td>  JSON data or JSON array </td> </tr>
-                <tr>  <td> dm </td> <td> Object </td> <td> ej.DataManager object </td> </tr>
+                <tr>  <td> dataObj </td> <td> Object </td> <td> ej.DataManager object </td> </tr>
                 <tr>  <td> tableName </td> <td> String </td> <td> Name of the source table </td> </tr>
             </table>
         </td>
         <td> Inserts a data item in the data table. </td>
     </tr>
     <tr>
-        <td> remove(dm, keyField, value, tableName) </td>
+        <td> remove(dataObj, keyField, value, tableName) </td>
         <td> 
             <table>
-                <tr>  <td> dm </td> <td> Object </td> <td>  ej.DataManager object </td> </tr>
+                <tr>  <td> dataObj </td> <td> Object </td> <td>  ej.DataManager object </td> </tr>
                 <tr>  <td> keyField </td> <td> String </td> <td> KeyColumn to find the data </td> </tr>
                 <tr>  <td> String </td> <td> Object </td> <td> Specified value for the keyField</td> </tr>
                 <tr>  <td> tableName </td> <td> String </td> <td> Name of the source table </td> </tr>
@@ -324,10 +324,10 @@ The result of the above code example is illustrated as follows.
         <td> It is used to remove the data from the dataSource </td>
     </tr>
     <tr>
-        <td> update(dm, keyField, value, tableName) </td>
+        <td> update(dataObj, keyField, value, tableName) </td>
         <td> 
             <table>
-                <tr>  <td> dm </td> <td> Object </td> <td>  ej.DataManager object </td> </tr>
+                <tr>  <td> dataObj </td> <td> Object </td> <td>  ej.DataManager object </td> </tr>
                 <tr>  <td> keyField </td> <td> String </td> <td> KeyColumn to find the data </td> </tr>
                 <tr>  <td> String </td> <td> Object </td> <td> Specified value for the keyField</td> </tr>
                 <tr>  <td> tableName </td> <td> String </td> <td> Name of the source table </td> </tr>
@@ -399,11 +399,11 @@ The result of the above code example is illustrated as follows.
         <th> Description <br/> </th>
     </tr>
     <tr>
-        <td> processResponse(data, ds, query, xhr, request, changes) </td>
+        <td> processResponse(data, dataManagerObj, query, xhr, request, changes) </td>
          <td> 
             <table>
                 <tr>  <td> data </td> <td> Object </td> <td>  JSON data or JSON array </td> </tr>
-                <tr>  <td> ds </td> <td> Object </td> <td> ej.DataManager object </td> </tr>
+                <tr>  <td> dataManagerObj </td> <td> Object </td> <td> ej.DataManager object </td> </tr>
                 <tr>  <td> query </td> <td> ej.Query </td> <td>  Sets the default query for the data source </td> </tr>
                 <tr>  <td> xhr </td> <td> Object </td> <td> XMLHTTPRequest object </td> </tr>
                 <tr>  <td> request </td> <td> Object </td> <td>  request object to the Data Source </td> </tr>
@@ -413,21 +413,21 @@ The result of the above code example is illustrated as follows.
         <td> Used to precess the response which is return from the Data Source </td>
     </tr>
      <tr>
-        <td> insert(dm, data, tableName) </td>
+        <td> insert(dataObj, data, tableName) </td>
         <td> 
             <table>
                 <tr>  <td> data </td> <td> Object </td> <td>  JSON data or JSON array </td> </tr>
-                <tr>  <td> dm </td> <td> Object </td> <td> ej.DataManager object </td> </tr>
+                <tr>  <td> dataObj </td> <td> Object </td> <td> ej.DataManager object </td> </tr>
                 <tr>  <td> tableName </td> <td> String </td> <td> Name of the source table </td> </tr>
             </table>
         </td>
         <td> Inserts a data item in the data table. </td>
     </tr>
     <tr>
-        <td> remove(dm, keyField, value, tableName) </td>
+        <td> remove(dataObj, keyField, value, tableName) </td>
         <td> 
             <table>
-                <tr>  <td> dm </td> <td> Object </td> <td>  ej.DataManager object </td> </tr>
+                <tr>  <td> dataObj </td> <td> Object </td> <td>  ej.DataManager object </td> </tr>
                 <tr>  <td> keyField </td> <td> String </td> <td> KeyColumn to find the data </td> </tr>
                 <tr>  <td> String </td> <td> Object </td> <td> Specified value for the keyField</td> </tr>
                 <tr>  <td> tableName </td> <td> String </td> <td> Name of the source table </td> </tr>
@@ -436,10 +436,10 @@ The result of the above code example is illustrated as follows.
         <td> It is used to remove the data from the dataSource </td>
     </tr>
     <tr>
-        <td> update(dm, keyField, value, tableName) </td>
+        <td> update(dataObj, keyField, value, tableName) </td>
         <td> 
             <table>
-                <tr>  <td> dm </td> <td> Object </td> <td>  ej.DataManager object </td> </tr>
+                <tr>  <td> dataObj </td> <td> Object </td> <td>  ej.DataManager object </td> </tr>
                 <tr>  <td> keyField </td> <td> String </td> <td> KeyColumn to find the data </td> </tr>
                 <tr>  <td> String </td> <td> Object </td> <td> Specified value for the keyField</td> </tr>
                 <tr>  <td> tableName </td> <td> String </td> <td> Name of the source table </td> </tr>
@@ -506,11 +506,11 @@ Result of the above code example is illustrated as follows.
         <th> Description <br/> </th>
     </tr>
     <tr>
-        <td> insert(dm, data, tableName, query) </td>
+        <td> insert(dataObj, data, tableName, query) </td>
         <td> 
             <table>
                 <tr>  <td> data </td> <td> Object </td> <td>  JSON data or JSON array </td> </tr>
-                <tr>  <td> dm </td> <td> Object </td> <td> ej.DataManager object </td> </tr>
+                <tr>  <td> dataObj </td> <td> Object </td> <td> ej.DataManager object </td> </tr>
                 <tr>  <td> tableName </td> <td> String </td> <td> Name of the source table </td> </tr>
                 <tr>  <td> query </td> <td> ej.Query </td> <td>  Sets the default query for the data source </td> </tr>
             </table>
@@ -518,10 +518,10 @@ Result of the above code example is illustrated as follows.
         <td> Inserts a data item in the data table. </td>
     </tr>
     <tr>
-        <td> remove(dm, keyField, value, tableName, query) </td>
+        <td> remove(dataObj, keyField, value, tableName, query) </td>
         <td> 
             <table>
-                <tr>  <td> dm </td> <td> Object </td> <td>  ej.DataManager object </td> </tr>
+                <tr>  <td> dataObj </td> <td> Object </td> <td>  ej.DataManager object </td> </tr>
                 <tr>  <td> keyField </td> <td> String </td> <td> KeyColumn to find the data </td> </tr>
                 <tr>  <td> String </td> <td> Object </td> <td> Specified value for the keyField</td> </tr>
                 <tr>  <td> tableName </td> <td> String </td> <td> Name of the source table </td> </tr>
@@ -531,10 +531,10 @@ Result of the above code example is illustrated as follows.
         <td> It is used to remove the data from the dataSource </td>
     </tr>
     <tr>
-        <td> update(dm, keyField, value, tableName, query) </td>
+        <td> update(dataObj, keyField, value, tableName, query) </td>
         <td> 
             <table>
-                <tr>  <td> dm </td> <td> Object </td> <td>  ej.DataManager object </td> </tr>
+                <tr>  <td> dataObj </td> <td> Object </td> <td>  ej.DataManager object </td> </tr>
                 <tr>  <td> keyField </td> <td> String </td> <td> KeyColumn to find the data </td> </tr>
                 <tr>  <td> String </td> <td> Object </td> <td> Specified value for the keyField</td> </tr>
                 <tr>  <td> tableName </td> <td> String </td> <td> Name of the source table </td> </tr>
@@ -733,23 +733,23 @@ The following code example illustrates you on how to create custom adaptor.
             //new custom adaptor implementation
             //able to implement more option in custom adaptor other than insert
             var customAdaptor = new ej.Adaptor().extend({
-                insert: function (dm, data) {
-                    return dm.dataSource.json.push(data);
+                insert: function (dataObj, data) {
+                    return dataObj.dataSource.json.push(data);
                 },
                 processQuery: ej.JsonAdaptor.prototype.processQuery // reused process query from json adaptor
             });
             window.gridData = [
         
-                { FirstName: "john", LastName: "beckett", Email: "john@syncfusion.com" },
-                { FirstName: "ben", LastName: "beckett", Email: "ben@syncfusion.com" },
-                { FirstName: "andrew", LastName: "beckett", Email: "andrew@syncfusion.com" }
+                { FirstName: "John", LastName: "Beckett", Email: "john@syncfusion.com" },
+                { FirstName: "Ben", LastName: "Beckett", Email: "ben@syncfusion.com" },
+                { FirstName: "Andrew", LastName: "Beckett", Email: "andrew@syncfusion.com" }
             ];
         
             var dataManager = new ej.DataManager(window.gridData);
             // assigning custom adaptor to datamanager
             dataManager.adaptor = new customAdaptor();
             // insert from custom adaptor usage
-            dataManager.insert({ FirstName: "joel", LastName: "beckett", Email: "joel@syncfusion.com" });
+            dataManager.insert({ FirstName: "Joel", LastName: "Beckett", Email: "joel@syncfusion.com" });
             
             $("#table1 tbody").html($("#tableTemplate")
                 .render(dataManager.executeLocal(new ej.Query())));
@@ -817,10 +817,10 @@ Cache Adaptor is used to cache the data of the visited pages. It prevents new re
         <th> Description <br/> </th>
     </tr>
      <tr>
-        <td> processQuery(dm, query, hierarchyFilters) </td>
+        <td> processQuery(dataObj, query, hierarchyFilters) </td>
         <td> 
             <table>
-                <tr>  <td> dm </td> <td> Object </td> <td> ej.DataManager object </td> </tr>
+                <tr>  <td> dataObj </td> <td> Object </td> <td> ej.DataManager object </td> </tr>
                 <tr>  <td> query </td> <td> ej.Query </td> <td>  Sets the default query for the data source </td> </tr>
                 <tr>  <td> hierarchyFilters </td> <td> ej.Query </td> <td> The hierarchical query can be provided by using the hierarchical function.  </td> </tr>
             </table>
@@ -828,11 +828,11 @@ Cache Adaptor is used to cache the data of the visited pages. It prevents new re
         <td> Used to prepare query string for the request data </td>
     </tr>
     <tr>
-        <td> processResponse(data, ds, query, xhr, request, changes) </td>
+        <td> processResponse(data, dataManagerObj, query, xhr, request, changes) </td>
          <td> 
             <table>
                 <tr>  <td> data </td> <td> Object </td> <td>  JSON data or JSON array </td> </tr>
-                <tr>  <td> ds </td> <td> Object </td> <td> ej.DataManager object </td> </tr>
+                <tr>  <td> dataManagerObj </td> <td> Object </td> <td> ej.DataManager object </td> </tr>
                 <tr>  <td> query </td> <td> ej.Query </td> <td>  Sets the default query for the data source </td> </tr>
                 <tr>  <td> xhr </td> <td> Object </td> <td> XMLHTTPRequest object </td> </tr>
                 <tr>  <td> request </td> <td> Object </td> <td>  Sets the default query for the data source </td> </tr>
@@ -842,21 +842,21 @@ Cache Adaptor is used to cache the data of the visited pages. It prevents new re
         <td> Used to precess the response which is return from the Data Source </td>
     </tr>
     <tr>
-        <td> insert(dm, data, tableName) </td>
+        <td> insert(dataObj, data, tableName) </td>
         <td> 
             <table>
                 <tr>  <td> data </td> <td> Object </td> <td>  JSON data or JSON array </td> </tr>
-                <tr>  <td> dm </td> <td> Object </td> <td> ej.DataManager object </td> </tr>
+                <tr>  <td> dataObj </td> <td> Object </td> <td> ej.DataManager object </td> </tr>
                 <tr>  <td> tableName </td> <td> String </td> <td> Name of the source table </td> </tr>
             </table>
         </td>
         <td> Inserts a data item in the data table. </td>
     </tr>
     <tr>
-        <td> remove(dm, keyField, value, tableName) </td>
+        <td> remove(dataObj, keyField, value, tableName) </td>
         <td> 
             <table>
-                <tr>  <td> dm </td> <td> Object </td> <td>  ej.DataManager object </td> </tr>
+                <tr>  <td> dataObj </td> <td> Object </td> <td>  ej.DataManager object </td> </tr>
                 <tr>  <td> keyField </td> <td> String </td> <td> KeyColumn to find the data </td> </tr>
                 <tr>  <td> String </td> <td> Object </td> <td> Specified value for the keyField</td> </tr>
                 <tr>  <td> tableName </td> <td> String </td> <td> Name of the source table </td> </tr>
@@ -865,10 +865,10 @@ Cache Adaptor is used to cache the data of the visited pages. It prevents new re
         <td> It is used to remove the data from the dataSource </td>
     </tr>
     <tr>
-        <td> update(dm, keyField, value, tableName) </td>
+        <td> update(dataObj, keyField, value, tableName) </td>
         <td> 
             <table>
-                <tr>  <td> dm </td> <td> Object </td> <td>  ej.DataManager object </td> </tr>
+                <tr>  <td> dataObj </td> <td> Object </td> <td>  ej.DataManager object </td> </tr>
                 <tr>  <td> keyField </td> <td> String </td> <td> KeyColumn to find the data </td> </tr>
                 <tr>  <td> String </td> <td> Object </td> <td> Specified value for the keyField</td> </tr>
                 <tr>  <td> tableName </td> <td> String </td> <td> Name of the source table </td> </tr>

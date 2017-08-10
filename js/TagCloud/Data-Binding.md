@@ -274,7 +274,7 @@ The following example depicts you the way to bind data to the **TagCloud** widge
 <!doctype html>
 <html lang="en" ng-app="tagApp">
    <head>
-      <title>Essential Studio for JavaScript : Angular JS Support for Tagcloud </title>
+      <title>Essential Studio for JavaScript : AngularJS Support for Tagcloud </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8" />
       <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet"/>
       <!--scripts-->

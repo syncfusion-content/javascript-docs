@@ -53,10 +53,10 @@ The following example depicts the way to bind data to the **NumericTextBox** wid
                         <label for="numeric">Numeric</label>
                     </td>
                     <td>
-                        <input id="numeric" type="text" ej-numerictextbox e-value="nvalue" />
+                        <input id="numeric" type="text" ej-numerictextbox e-value="numericValue" />
                     </td>
                     <td>
-                        <input type="text" class="input ejinputtext" ng-model="nvalue" />
+                        <input type="text" class="input ejinputtext" ng-model="numericValue" />
                     </td>
                 </tr>
 
@@ -66,7 +66,7 @@ The following example depicts the way to bind data to the **NumericTextBox** wid
     <script type="text/javascript">
         angular.module('TextCtrl', ['ejangular'])
            .controller('TextboxCtrl', function ($scope) {
-               $scope.nvalue = 600;
+               $scope.numericValue = 600;
            });
     </script>
     <style>
@@ -79,10 +79,7 @@ The following example depicts the way to bind data to the **NumericTextBox** wid
 </body>
 </html>
 
-
 {% endhighlight %}
-
-
 
 The output of **NumericTextBox** controls with **two-way AngularJS binding** is as follows.
 
@@ -95,4 +92,3 @@ NumericTextBox at initial load
 
 NumericTextBox with AngularJS Binding
 {:.caption}
-

@@ -106,7 +106,7 @@ The presence of the context menu can be controlled by the [showContextMenu](http
 
                 ajaxAction: ajaxActionHandler,
 
-                // hides our inbuilt context menu
+                // hides our built-in context menu
 
                 showContextMenu: false
 
@@ -200,7 +200,7 @@ $(function () {
                     action: "onLayout"
                 },
                 {
-                    id: "largeicons",
+                    id: "largeIcons",
                     text: "Large icons view",
                     //specify the action for this menu item
                     action: "onLayout"
@@ -215,8 +215,8 @@ $(function () {
 });
 function onLayout(args) {
     //perform actions while click custom menu items
-    var feObj = $('#fileExplorer').data("ejFileExplorer");
-    feObj && feObj.option("layout", args.ID);
+    var explorerObj = $('#fileExplorer').data("ejFileExplorer");
+    explorerObj && explorerObj.option("layout", args.ID);
 }
 function onMenuOpen(args) {
     //customize the custom menu items
@@ -226,7 +226,7 @@ function onMenuOpen(args) {
     }
 }
 function onLayoutChange(args) {
-    $(".fe-context-menu .View").removeClass("custom-grid custom-tile custom-largeicons");
+    $(".fe-context-menu .View").removeClass("custom-grid custom-tile custom-largeIcons");
     $(".fe-context-menu .View").addClass("custom-" + this.model.layout);
 }
 
@@ -241,7 +241,7 @@ Icons of context menu items can be customized by overriding the default context 
         content: "\e7b9";
     }
 
-    .fe-context-menu .custom-largeicons:before {
+    .fe-context-menu .custom-largeIcons:before {
         content: "\e7bb";
     }
 
@@ -271,14 +271,14 @@ $("#fileExplorer").ejFileExplorer({
         args.dataSource.pop();
     },
     menuOpen: function (args) {
-        //you can also idendify which context menu is opened by 
+        //you can also identify which context menu is opened by 
         if (args.contextMenu == "cwd") {
             //do your custom action here.
         }
     },
     menuClick: function (args) {
         switch (args.text) {
-            case "largeicons":
+            case "largeIcons":
                 //do your custom action here.
                 break;
         }

@@ -30,7 +30,7 @@ Content-Type: application/octet-stream
 
 {% highlight js %}
 
-$("#chartcontainer").ejChart(
+$("#chartContainer").ejChart(
 	 { exportSettings: { angle: 180, action: "http://js.syncfusion.com/demos/ejServices/api/Chart/Export" },
 });
 
@@ -61,7 +61,7 @@ Content-Type: application/octet-stream
 
 {% highlight js %}
 
-$("#chartcontainer").ejChart(
+$("#chartContainer").ejChart(
 	 {exportSettings: { type: "svg", angle: 180, action: "http://js.syncfusion.com/demos/ejServices/api/Chart/SvgExport" },
 });
 
@@ -92,7 +92,7 @@ Content-Type: application/octet-stream
 
 {% highlight js %}
 
-$("#chartcontainer").ejChart(
+$("#chartContainer").ejChart(
 	 {exportSettings: { type: "xlsx", angle: 180, action: "http://js.syncfusion.com/demos/ejServices/api/Chart/ExcelExport" },
 });
 
@@ -123,7 +123,7 @@ Content-Type: application/octet-stream
 
 {% highlight js %}
 
-$("#chartcontainer").ejChart(
+$("#chartContainer").ejChart(
 	 {exportSettings: { type: "docx", angle: 180, action: "http://js.syncfusion.com/demos/ejServices/api/Chart/WordExport" },
 });
 
@@ -154,7 +154,7 @@ Content-Type: application/octet-stream
 
 {% highlight js %}
 
-$("#chartcontainer").ejChart(
+$("#chartContainer").ejChart(
 	 {exportSettings: { type: "pdf", angle: 180, action: "http://js.syncfusion.com/demos/ejServices/api/Chart/PdfExport" },
 });
 
@@ -185,7 +185,7 @@ Content-Type: application/octet-stream
 
 {% highlight js %}
 
-$("#chartcontainer").ejChart(
+$("#chartContainer").ejChart(
 	 {exportSettings: { type: "jpg", angle: 180, action: "http://js.syncfusion.com/demos/ejServices/api/Chart/ImageExport" },
 });
 

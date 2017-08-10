@@ -271,15 +271,15 @@ $(function () {
                 css: "insert-special-character",
                 text: "Insert - O",
                 action: function () {
-                    $("#specialcharacter").ejDialog("open");   
+                    $("#specialCharacter").ejDialog("open");   
                 }
             }]
         },isResponsive:true
     });
     rteObj = $("#editor").data("ejRTE");
     $(".insert-special-character").ejButton();
-    $("#specialcharacter").ejDialog({ enableResize: false, enableModal: true, showOnInit: false, width: "auto", position: { X: 218, Y: 38 } });
-    $(".specialtbl tbody tr td" ).addClass("specialtd").on( "click", customTdClick);
+    $("#specialCharacter").ejDialog({ enableResize: false, enableModal: true, showOnInit: false, width: "auto", position: { X: 218, Y: 38 } });
+    $(".specialtbl tbody tr td" ).addClass("specialTable").on( "click", customTdClick);
 });
 
 </script>
@@ -292,7 +292,7 @@ Upon clicking the "Insert" button, the special character will be added to the RT
 
     function customTdClick(args) {
         rteObj.executeCommand("inserthtml", args.currentTarget.innerText);
-        $("#specialcharacter").ejDialog("close");
+        $("#specialCharacter").ejDialog("close");
     }  
     
 {% endhighlight %}
@@ -305,7 +305,7 @@ Define the CSS that will be applied to the custom tool.
 {
     border:1px solid #c8c8c8;
 }
-.specialtd:hover
+.specialTable:hover
 {
     background-color:#86bcea;
     cursor:pointer;

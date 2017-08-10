@@ -142,20 +142,20 @@ N> In the below example, copy the culture files of **vi-VN** and **fr-FR** into 
         // event handler – when the dropdown selection option changes
         function onChange(args) {
 
-            var datebject = $("#startDate").data("ejDatePicker");
+            var dateObject = $("#startDate").data("ejDatePicker");
             // localizable text
             if (args.value == "vi-VN") {
-                datebject.option({ watermarkText: "Chọn ngày", buttonText: "Hôm nay" });
+                dateObject.option({ watermarkText: "Chọn ngày", buttonText: "Hôm nay" });
             }
             else if (args.value == "fr-FR") {
-                datebject.option({ watermarkText: "Sélectionner une date", buttonText: "aujourd'hui" });
+                dateObject.option({ watermarkText: "Sélectionner une date", buttonText: "aujourd'hui" });
             }
             else {
-                datebject.option({ watermarkText: "Select date", buttonText: "Today" });
+                dateObject.option({ watermarkText: "Select date", buttonText: "Today" });
             }
 
             // Setting the locale value dynamically for the datePicker
-            datebject.setModel({ locale: args.value });
+            dateObject.setModel({ locale: args.value });
         }
      </script>
 </body>
@@ -451,7 +451,7 @@ N> Add and refer the necessary **Scripts** and **Stylesheets** to your sample ap
 
         <script type="text/javascript">
             $(function () {
-                // initialization of ejDatePicker control with enableRTL property (Since the arabic script is the most widespread RTL writing system, therefore here we have showcased our datepicker control localized in one of the Arabic language.)
+                // initialization of ejDatePicker control with enableRTL property (Since the Arabic script is the most widespread RTL writing system, therefore here we have showcased our datepicker control localized in one of the Arabic language.)
                 $("#startDate").ejDatePicker({ locale: "ar-DZ", 
                       enableRTL: true,
                       watermarkText: "حدد تاريخ",

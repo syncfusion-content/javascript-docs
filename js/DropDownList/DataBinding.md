@@ -376,7 +376,7 @@ Using [ej.WebApiAdaptor](https://help.syncfusion.com/js/datamanager/data-adaptor
     {
         NorthwindDataContext db = new NorthwindDataContext();
         
-        // GET api/<controller>       
+        // GET API/<controller>       
         public PageResult<EmployeePhoto> Get(ODataQueryOptions opts)
         {
             List<EmployeePhoto> photo = db.EmployeePhotos.ToList();            
@@ -568,8 +568,8 @@ When using remote data binding, the adaptor of "ej.DataManager" plays vital role
         //custom adaptor
 
         var customAdaptor = new ej.Adaptor().extend({
-            insert: function(dm, data) {
-                return dm.dataSource.json.push(data);
+            insert: function(dataObj, data) {
+                return dataObj.dataSource.json.push(data);
             },
             processQuery: ej.JsonAdaptor.prototype.processQuery
                 // reused process query from JSON adaptor
