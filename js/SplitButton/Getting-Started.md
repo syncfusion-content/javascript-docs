@@ -48,7 +48,7 @@ Adding button element and **&lt;UL&gt;, &lt;LI&gt;** element for **Split** **But
 {% highlight html %}
 
 
-<button id="splitbutton">Save</button>
+<button id="splitButton">Save</button>
 <ul id="target">
     <li><a href="#">Open..</a></li>
     <li><a href="#">Save</a></li>
@@ -67,7 +67,7 @@ Initialization of **ejSplitButton** in script
 
         $(function () {
             // simple control creation
-            $("#splitbutton").ejSplitButton({
+            $("#splitButton").ejSplitButton({
                 width: "120px",
                 height: "50px",
                 showRoundedCorner: true,
