@@ -200,7 +200,7 @@ $(function () {
                     action: "onLayout"
                 },
                 {
-                    id: "largeIcons",
+                    id: "largeicons",
                     text: "Large icons view",
                     //specify the action for this menu item
                     action: "onLayout"
@@ -226,7 +226,7 @@ function onMenuOpen(args) {
     }
 }
 function onLayoutChange(args) {
-    $(".fe-context-menu .View").removeClass("custom-grid custom-tile custom-largeIcons");
+    $(".fe-context-menu .View").removeClass("custom-grid custom-tile custom-largeicons");
     $(".fe-context-menu .View").addClass("custom-" + this.model.layout);
 }
 
@@ -241,7 +241,7 @@ Icons of context menu items can be customized by overriding the default context 
         content: "\e7b9";
     }
 
-    .fe-context-menu .custom-largeIcons:before {
+    .fe-context-menu .custom-largeicons:before {
         content: "\e7bb";
     }
 
@@ -278,7 +278,7 @@ $("#fileExplorer").ejFileExplorer({
     },
     menuClick: function (args) {
         switch (args.text) {
-            case "largeIcons":
+            case "largeicons":
                 //do your custom action here.
                 break;
         }
