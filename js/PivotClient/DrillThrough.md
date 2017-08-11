@@ -60,7 +60,7 @@ By Dragging and dropping the respective hierarchies and finally clicking â€œOKâ€
         this.element.find(".clientDialog").ejDialog({ width: "70%", content: "#" + this._id, enableResize: false, close: ej.proxy(ej.Pivot.closePreventPanel, this) });
         var pivotClient = $("#" + this._id).data("ejPivotClient");
         $("#btnOK").click(function () {
-            ej.Pivot.createHierarchySelector(pivotClient);
+            ej.Pivot.openHierarchySelector(pivotClient);
         });
     }
 </script>
@@ -84,7 +84,7 @@ By Dragging and dropping the respective hierarchies and finally clicking â€œOKâ€
 
     function drilledData(args) {
         $(".e-dialog, .clientDialog, .tableDlg").remove();
-        gridData = JSON.parse(args.data.d[1].Value);
+        gridData = ej.isNullOrUndefined(args.data.d) ? JSON.parse(args.data.DrillDataTable) : JSON.parse(args.data.d[1].Value);
         var dialogContent = ej.buildTag("div#" + this._id + "_tableDlg.tableDlg", $("<div id=\"Grid1\"></div>"))[0].outerHTML;
         var dialogFooter = ej.buildTag("div", ej.buildTag("button#btnOK.dialogBtnOK", "Hierarchy Selector")[0].outerHTML, { "float": "right", "margin": "-5px 0 6px" })[0].outerHTML
         ejDialog = ej.buildTag("div#clientDialog.clientDialog", dialogContent + dialogFooter, { "opacity": "1" }).attr("title", "Drill Through Information")[0].outerHTML;
@@ -103,7 +103,7 @@ By Dragging and dropping the respective hierarchies and finally clicking â€œOKâ€
             if (pivotClient.model.operationalMode == ej.PivotGrid.OperationalMode.ServerMode) {
                 pivotClient._waitingPopup.show()
                 pivotClient.doAjaxPost("POST", pivotClient.model.url + "/" + pivotClient.model.serviceMethodSettings.drillThroughHierarchies, JSON.stringify({ "currentReport": pivotClient.currentReport, "layout": pivotClient.model.layout, "cellPos": "", "customObject": JSON.stringify(pivotClient.model.customObject) }), function (args) {
-                    ej.Pivot.createHierarchySelector(pivotClient, args);
+                    ej.Pivot.openHierarchySelector(pivotClient, args);
                 })
             }
         });
