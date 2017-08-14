@@ -418,7 +418,7 @@ Initialize the content area and header as specified in the code table.
     
   <!-- control class used for aligns the pdf reader in center of a page. -->
 <div class="control">
- <div class="ctrllabel"></div>
+ <div class="ctrl-label"></div>
    <!-- Here Initialize the Toolbar items as like above code sample -->    
    <div id="contentSection">
       <textarea id="content" rows="10" cols="30"> 
@@ -456,7 +456,7 @@ You can apply the following styles with the above styles to design the **PDF hea
             position: relative;
         }
 
-        .ctrllabel {
+        .ctrl-label {
             background-image: url("http://js.syncfusion.com/UG/Web/Content/pdf-header.png");
             background-repeat: no-repeat;
             width: 634px;
@@ -493,12 +493,12 @@ So far, you have added the required toolbar items and configured its appearance.
             width: "auto",
             height: "33px",
             enableSeparator: true,
-            click: "onItemclick" // Binds click event to onclick function
+            click: "onItemClick" // Binds click event to onclick function
         });
     
     });
     
-    function onItemclick(args) {    
+    function onItemClick(args) {    
         //Finds Out the Item that was Clicked in Toolbar    
         //args.currentTarget returns the clicked Toolbar element    
         var option = args.currentTarget.id; //Finds Out the Id of Clicked item.    

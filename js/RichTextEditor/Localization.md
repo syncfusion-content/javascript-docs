@@ -339,7 +339,7 @@ You can set the [locale](https://help.syncfusion.com/api/js/ejrte#members:locale
 <script type="text/javascript">
 
     $("#editor").ejRTE({
-        value: "Das Richtexteditor (RTE) Steuerung ermöglicht Ihnen, den Inhalt mit Einsatz Tisch und Bilder zu bearbeiten ," +
+        value: "Das RichTextEditor (RTE) Steuerung ermöglicht Ihnen, den Inhalt mit Einsatz Tisch und Bilder zu bearbeiten ," +
         " sondern bietet auch eine Werkzeugleiste , die Rich-Text- Format ," +
         " um die in der Textarea eingegeben Gehalt gelten können.",
         locale: "de-DE", format: format_DE

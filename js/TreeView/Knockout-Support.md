@@ -42,7 +42,7 @@ The following example depicts the way to bind data to the **TreeView** widgets t
     </div>
     <script type="text/javascript">
         $(function () {
-            var tview = [
+            var treeData = [
                         { id: 1, name: "Discover Music", hasChild: true, expanded: true },
                        { id: 2, pid: 1, name: "Hot Singles" },
                        { id: 3, pid: 1, name: "Rising Artists" },
@@ -68,7 +68,7 @@ The following example depicts the way to bind data to the **TreeView** widgets t
                        { id: 24, pid: 21, name: "Band T-Shirts" },
                        { id: 25, pid: 21, name: "Mobile MVC" }];
             window.employeeView = {
-                dataSource: ko.observableArray(tview),
+                dataSource: ko.observableArray(treeData),
             };
             ko.applyBindings(employeeView);
         });

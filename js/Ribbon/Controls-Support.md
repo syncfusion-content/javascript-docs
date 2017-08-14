@@ -89,7 +89,7 @@ N> 2. For [`type`](https://help.syncfusion.com/api/js/ejribbon#members:tabs-grou
                     <li><a>Paste</a></li>
                 </ul>
      <script type="text/javascript">
-        var fontfamily = ["Segoe UI", "Arial", "Times New Roman", "Tahoma", "Helvetica"], fontsize = ["1pt", "2pt", "3pt", "4pt", "5pt"], action1 = ["New", "Clear"], action2 = ["Bold", "Italic", "Underline", "strikethrough", "superscript", "subscript", "JustifyLeft", "JustifyCenter", "JustifyRight", "JustifyFull", "Undo", "Redo"];
+        var fontFamily = ["Segoe UI", "Arial", "Times New Roman", "Tahoma", "Helvetica"], fontSize = ["1pt", "2pt", "3pt", "4pt", "5pt"], action1 = ["New", "Clear"], action2 = ["Bold", "Italic", "Underline", "strikethrough", "superscript", "subscript", "JustifyLeft", "JustifyCenter", "JustifyRight", "JustifyFull", "Undo", "Redo"];
         $(function() {
             $("#Ribbon").ejRibbon({
                 width: "100%",
@@ -158,19 +158,19 @@ N> 2. For [`type`](https://help.syncfusion.com/api/js/ejribbon#members:tabs-grou
                                     {
                                         groups: [
                                             {
-                                                id: "fontfamily",
+                                                id: "fontFamily",
                                                 toolTip: "Font",
                                                 dropdownSettings: {
-                                                    dataSource: fontfamily,
+                                                    dataSource: fontFamily,
                                                     text: "Segoe UI",
                                                     width: 150
                                                 }
                                             },
                                             {
-                                                id: "fontsize",
+                                                id: "fontSize",
                                                 toolTip: "FontSize",
                                                 dropdownSettings: {
-                                                    dataSource: fontsize,
+                                                    dataSource: fontSize,
                                                     text: "1pt",
                                                     width: 65
                                                 }
@@ -240,7 +240,7 @@ You can set [`type`](https://help.syncfusion.com/api/js/ejribbon#members:tabs-gr
             </ul>
         </li>
     </ul>
-    <input id="fontcolor" />
+    <input id="fontColor" />
     <table id="design" class="e-designtablestyle">
         <tr>
             <td>
@@ -270,9 +270,9 @@ You can set [`type`](https://help.syncfusion.com/api/js/ejribbon#members:tabs-gr
                         text: "Font",
                         content: [{
                             groups: [{
-                                id: "fontcolor",
+                                id: "fontColor",
                                 toolTip: "Font Color",
-                                contentID: "fontcolor"
+                                contentID: "fontColor"
                             }],
                             // defaults settings to controls
                             defaults: {
@@ -297,7 +297,7 @@ You can set [`type`](https://help.syncfusion.com/api/js/ejribbon#members:tabs-gr
         });
         function createControl(args) {
             var ribbon = $("#Ribbon").data("ejRibbon");
-            $("#fontcolor").ejColorPicker({ value: "#FFFF00", modelType: "palette", cssClass: "e-ribbon", toolIcon: "e-fontcoloricon" });
+            $("#fontColor").ejColorPicker({ value: "#FFFF00", modelType: "palette", cssClass: "e-ribbon", toolIcon: "e-fontcoloricon" });
         }
     </script>
 

@@ -17,7 +17,7 @@ The TreeView control provides the option to highlight a full row of tree view no
 
 <!--create the TreeView wrapper-->
 	
-<div id="fullrowtree"></div>
+<div id="fullRowTree"></div>
 
 {% endhighlight %}
 
@@ -52,7 +52,7 @@ var localData = [
 
 $(function () {
     // initialize and bind the TreeView with local data
-    $("#fullrowtree").ejTreeView({
+    $("#fullRowTree").ejTreeView({
         fullRowSelect: true, //enable full row selection in TreeView
         fields: {
             dataSource: localData, id: "id", parentId: "pid", text: "name",
@@ -72,12 +72,12 @@ You can customize the TreeView full row selection for template support by using 
 {% highlight html %}
 
 <!--create the TreeView wrapper-->
-<div id="fullrowtree"></div>
+<div id="fullRowTree"></div>
 
 <script id="treeTemplate" type="text/x-jsrender">
 
     {{"{{"}}if !hasChild{{}}}}
-    <span class="con-img {{"{{"}}>cls{{}}}}"></span>
+    <span class="con-img {{"{{"}}>className{{}}}}"></span>
     {{"{{"}}/if{{}}}}
     {{"{{"}}>name{{}}}}
 
@@ -88,17 +88,17 @@ You can customize the TreeView full row selection for template support by using 
 {% highlight js %}
 
 var localData = [
-    { id: 1, name: "Browsers", cls: "browser", hasChild: true, expanded: true },
-    { id: 2, pid: 1, name: "Internet Explorer", cls: "ieb", selected: true },
-    { id: 3, pid: 1, name: "Chrome", cls: "chromeb" },
-    { id: 4, pid: 1, name: "Firefox", cls: "firefoxb" },
-    { id: 6, pid: 1, name: "Bitty", cls: "bittyb" },
-    { id: 7, pid: 1, name: "Opera", cls: "operab" }
+    { id: 1, name: "Browsers", className: "browser", hasChild: true, expanded: true },
+    { id: 2, pid: 1, name: "Internet Explorer", className: "ieb", selected: true },
+    { id: 3, pid: 1, name: "Chrome", className: "chromeb" },
+    { id: 4, pid: 1, name: "Firefox", className: "firefoxb" },
+    { id: 6, pid: 1, name: "Bitty", className: "bittyb" },
+    { id: 7, pid: 1, name: "Opera", className: "operab" }
 ];
 
 $(function () {
     // initialize and bind the TreeView with local data
-    $("#fullrowtree").ejTreeView({
+    $("#fullRowTree").ejTreeView({
         fullRowSelect: true, //enable full row selection in TreeView
         fields: {
             dataSource: localData, id: "id", parentId: "pid", text: "name",

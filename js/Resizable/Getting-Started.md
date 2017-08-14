@@ -92,7 +92,7 @@ HTML elements can be resized  by using ejResizable widget. This section explains
 	 <div id="Container">
         <!-- Resizable element-->
         <div id="resizeElement" class="Resize">
-            <span class="Resizetext">Resize</span>
+            <span class="ResizeText">Resize</span>
         </div>
 
     </div>
@@ -118,7 +118,7 @@ HTML elements can be resized  by using ejResizable widget. This section explains
         }
 
 
-        .Resizetext {
+        .ResizeText {
             font-size: 15px;
             line-height: 80px;
             display: inline-block;
@@ -143,7 +143,7 @@ HTML elements can be resized  by using ejResizable widget. This section explains
               },
             resize: function(event)
               {
-                  $(".Resizetext")[0].innerText ="Resizing";
+                  $(".ResizeText")[0].innerText ="Resizing";
                    $(".Resize").css("cursor","nw-resize");
               }
 

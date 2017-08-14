@@ -193,10 +193,10 @@ Render the slider control and finds its handle to render the Tooltip as follows
         Details of Loan
     </div>
 
-    <span class="ColumnLeft">
+    <span class="column-left">
         <span class="loan">Loan Amount</span>
     </span>
-    <span class="ColumnRight">
+    <span class="column-right">
         <span class="value">1000</span><span id="loantext">$ </span>
     </span>
     <div id="loanSlider">

@@ -44,11 +44,11 @@ The following example depicts the way to bind data to the **Rating** control thr
    </head>
    <body>
       <div class="control" style="float: left">
-         <div class="ctrllabel"></div>
+         <div class="ctrl-label"></div>
          <input id="apiRating" type="text" class="rating" data-bind="ejRating: { value: ratingValue, width: '161px', precision: 'exact' }" />
       </div>
       <div class="control" style="float: left; margin-left: 20px; height: 30px">
-         <div class="ctrllabel"></div>
+         <div class="ctrl-label"></div>
          <input type="text" name="rating" class="input ejinputtext" value="" data-bind="value: ratingValue" />
       </div>
       <script type="text/javascript">

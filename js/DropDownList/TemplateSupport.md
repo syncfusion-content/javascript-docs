@@ -42,13 +42,13 @@ In the demo, a JSON array is created with text, imgId, role and country which is
         float: left;
     }
     
-    .eheader {
+    .e-header {
         font-weight: bold;
         border-bottom: 1px solid #c8c8c8;
         background: #c8c8c8;
     }
     
-    .eheader > span {
+    .e-header > span {
         display: inline-block;
         padding: 10px;
     }
@@ -93,7 +93,7 @@ In the demo, a JSON array is created with text, imgId, role and country which is
         $('#dropdown1').ejDropDownList({
             width: 200,
             dataSource: List,
-            headerTemplate: "<div class='eheader'><span>PHOTO</span> <span>DETAILS</span></div>",
+            headerTemplate: "<div class='e-header'><span>PHOTO</span> <span>DETAILS</span></div>",
             template: '<div><img class="imgId" src="Employee/${imgId}.png" alt="employee"/>' + '<div class="ename"> ${text} </div><div class="role"> ${role} </div><div class="cont"> ${country} </div></div>'
         });
     });

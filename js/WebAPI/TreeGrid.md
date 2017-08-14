@@ -34,7 +34,7 @@ $(function () {
       $("#TreeGridContainer").ejTreeGrid({
       dataSource: sampleData,
       childMapping: "subtasks",
-      toolbarClick: toolbarclick,
+      toolbarClick: toolbarClickEvent,
       toolbarSettings: {
       showToolbar: true,
       toolbarItems: [
@@ -49,7 +49,7 @@ $(function () {
       })
  });
 
-function toolbarclick(args) {
+function toolbarClickEvent(args) {
       var id= $(args.currentTarget).attr("id");
       this.exportGrid = this["export"];
       if (id == "TreeGridContainer_pdfExport") { this.exportGrid("http://js.syncfusion.com/demos/ejServices/api/TreeGrid/PdfExport", "", false);
@@ -85,7 +85,7 @@ $(function () {
       $("#TreeGridContainer").ejTreeGrid({
       dataSource: sampleData,
       childMapping: "subtasks",
-      toolbarClick: toolbarclick,
+      toolbarClick: toolbarClickEvent,
       toolbarSettings: {
       showToolbar: true,
       toolbarItems: [
@@ -100,7 +100,7 @@ $(function () {
       })
  });
 
-function toolbarclick(args) {
+function toolbarClickEvent(args) {
       var id= $(args.currentTarget).attr("id");
       this.exportGrid = this["export"];
       if (id == "TreeGridContainer_pdfExport") { this.exportGrid("http://js.syncfusion.com/demos/ejServices/api/TreeGrid/ExcelExport", "", false);

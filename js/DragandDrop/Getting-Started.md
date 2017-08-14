@@ -92,7 +92,7 @@ You can make any Html elements to be draggable or droppable by using ejDraggable
 	 <div id="leftContainer">
         <!-- draggable element-->
         <div id="dragElement" class="drag">
-            <span class="dragtext">Drag</span>
+            <span class="dragText">Drag</span>
         </div>
 		
     </div>
@@ -100,7 +100,7 @@ You can make any Html elements to be draggable or droppable by using ejDraggable
     <div id="rightContainer">
         <!-- droppable target element-->
         <div id="dropContainer" class="drop">
-            <span class="droptext">Drop Here</span>
+            <span class="dropText">Drop Here</span>
         </div>
     </div>
     <style>
@@ -139,17 +139,17 @@ You can make any Html elements to be draggable or droppable by using ejDraggable
             background-color: #eee;
         }
 
-        .dragtext, .droptext {
+        .dragText, .dropText {
             font-size: 12px;
             line-height: 40px;
             display: inline-block;
         }
 
-        .dragtext {
+        .dragText {
             color: white;
         }
 
-        .droptext {
+        .dropText {
             margin: 12px;
         }
 

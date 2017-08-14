@@ -48,10 +48,10 @@ The following example depicts the way to bind data to the CurrencyTextBox widget
                         <label for="currency">Currency</label>
                     </td>
                     <td>
-                        <input id="currency" type="text" data-bind="ejCurrencyTextbox: { value: cvalue }" />
+                        <input id="currency" type="text" data-bind="ejCurrencyTextbox: { value: currencyValue }" />
                     </td>
                     <td>
-                        <input type="text" class="input ejinputtext" data-bind="value: cvalue" />
+                        <input type="text" class="input ejinputtext" data-bind="value: currencyValue" />
                     </td>
                 </tr>
             </tbody>
@@ -60,7 +60,7 @@ The following example depicts the way to bind data to the CurrencyTextBox widget
     
      <script type="text/javascript">  
         window.viewModel = {
-            cvalue: ko.observable(80),
+            currencyValue: ko.observable(80),
         }
         jQuery(function ($) {
             ko.applyBindings(viewModel);

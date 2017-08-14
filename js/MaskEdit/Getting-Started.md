@@ -108,7 +108,7 @@ Add input element to create a **Textbox**.
                 </tr>
             </tbody>
         </table>
-        <div class="paybill">
+        <div class="pay-bill">
             <button class="e-btn" id="pbill">Pay Bill</button>
         </div>
     </div>
@@ -134,7 +134,7 @@ Add the following style code to format the textbox.
         max-width: 400px;
     }
 
-    .control .paybill {
+    .control .pay-bill {
         margin-left: 208px;
         margin-top: 15px;
     }
@@ -223,7 +223,7 @@ Add the following code example in **&lt;body&gt;** tag.
                 </tr>
             </tbody>
         </table>
-        <div class="paybill">
+        <div class="pay-bill">
             <button class="e-btn" id="pbill">submit</button>
         </div>
     </div>
@@ -275,7 +275,7 @@ Add the following style code to format the textbox.
     .editors {
         max-width: 400px;
     }
-    .control .paybill {
+    .control .pay-bill {
         margin-left: 200px;
         margin-top: 15px;
     }

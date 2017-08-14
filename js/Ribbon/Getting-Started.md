@@ -201,7 +201,7 @@ Syncfusion JavaScript Controls can be added to group’s content with correspond
         <li><span>Paste</span></li>
     </ul>
     <script type="text/javascript">
-            var fontfamily = [{
+            var fontFamily = [{
                 value: 1,
                 text: "Segoe UI"
             }, {
@@ -241,11 +241,11 @@ Syncfusion JavaScript Controls can be added to group’s content with correspond
                                 }
                             }, {
                                 groups: [{
-                                    id: "fontfamily",
+                                    id: "fontFamily",
                                     // dropdown list settings
                                     type: ej.Ribbon.type.dropDownList,
                                     dropdownSettings: {
-                                        dataSource: fontfamily,
+                                        dataSource: fontFamily,
                                         value: "1",
                                         width: 100
                                     }

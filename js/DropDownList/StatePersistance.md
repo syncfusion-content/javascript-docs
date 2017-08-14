@@ -52,7 +52,7 @@ The following properties are not included while maintaining DropDownList’s sta
 	        text: "Jessica",
 	        value: "emp4"
 	    }, {
-	        text: "jenneth",
+	        text: "Jenneth",
 	        value: "emp5"
 	    }];
 

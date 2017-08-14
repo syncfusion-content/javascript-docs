@@ -25,7 +25,7 @@ Set the list for **DropDown control** inside a list tag and define this tag as a
          Option 1
       </li>
       <li id="Dropdown" title="Dropdown Control">
-         <input id="selectcar" type="text" />
+         <input id="selectCar" type="text" />
         
       </li>
    </ul>
@@ -44,7 +44,7 @@ Set the list for **DropDown control** inside a list tag and define this tag as a
                 { skill: "J#" }, { skill: "Lisp" }, { skill: "Logo" }, { skill: "PHP" }
             ];
         $("#Radio1").ejRadioButton({ size:"medium" });
-        $('#selectcar').ejDropDownList({ dataSource: skills, fields: { text: "skill" },watermarkText: "Select your skill",});
+        $('#selectCar').ejDropDownList({ dataSource: skills, fields: { text: "skill" },watermarkText: "Select your skill",});
         $("#toolbar").ejToolbar({ width: "250px", height: "28px" });
     });
 
@@ -108,7 +108,7 @@ Set the list for **DropDown control** inside a list tag and define this tag as a
                 { skill: "ESPOL" }, { skill: "F#" }, { skill: "FoxPro" }, { skill: "Java" },
                 { skill: "J#" }, { skill: "Lisp" }, { skill: "Logo" }, { skill: "PHP" }
             ];
-     toolbaritems = [
+     toolbarItems = [
 		  {
                id: "1",
                title:"radio",
@@ -124,7 +124,7 @@ Set the list for **DropDown control** inside a list tag and define this tag as a
 			 }],
         
         $("#toolbar").ejToolbar({
-			  dataSource: toolbaritems,
+			  dataSource: toolbarItems,
               fields: { id: "id",tooltipText:"title",group:"group",template:"template"},
 
              

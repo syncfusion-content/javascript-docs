@@ -106,7 +106,7 @@ The presence of the context menu can be controlled by the [showContextMenu](http
 
                 ajaxAction: ajaxActionHandler,
 
-                // hides our inbuilt context menu
+                // hides our built-in context menu
 
                 showContextMenu: false
 
@@ -215,8 +215,8 @@ $(function () {
 });
 function onLayout(args) {
     //perform actions while click custom menu items
-    var feObj = $('#fileExplorer').data("ejFileExplorer");
-    feObj && feObj.option("layout", args.ID);
+    var explorerObj = $('#fileExplorer').data("ejFileExplorer");
+    explorerObj && explorerObj.option("layout", args.ID);
 }
 function onMenuOpen(args) {
     //customize the custom menu items
@@ -271,7 +271,7 @@ $("#fileExplorer").ejFileExplorer({
         args.dataSource.pop();
     },
     menuOpen: function (args) {
-        //you can also idendify which context menu is opened by 
+        //you can also identify which context menu is opened by 
         if (args.contextMenu == "cwd") {
             //do your custom action here.
         }
