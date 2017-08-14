@@ -138,7 +138,7 @@ Summary<br/><br/></th></tr>
                     customUnorderedList: [{
                         name: "UnorderedInsert",
                         tooltip: "Custom UnorderedList",
-                        css: "e-rte-toolbar-icon e-rte-unlistitems customunOrdered",
+                        css: "e-rte-toolbar-icon e-rte-unlistitems customUnOrdered",
 	                    text: "Smiley",
                         listImage:"url('../content/images/rte/Smiley-GIF.gif')"                   
                    }]    

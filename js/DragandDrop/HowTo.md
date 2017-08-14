@@ -25,7 +25,7 @@ You can drag an element from list view and drop this into another element. The b
                 <div class="frame" style="height: 300px;">
                     <div class="contents">
                         <h4>Drag elements</h4>
-                        <div id="defaultlistbox">
+                        <div id="defaultListBox">
                             <ul id="draggable">
                                 <li data-ej-text="Hot Singles" class="drag"></li>
                                 <li data-ej-text="Rising Artists" class="drag"></li>
@@ -37,7 +37,7 @@ You can drag an element from list view and drop this into another element. The b
                     </div>
                     <div class="contents" style="margin-left:200px">
                         <h4>Drop elements</h4>
-                        <div id="listitem"></div>
+                        <div id="listItem"></div>
                     </div>
 
                 </div>
@@ -51,7 +51,7 @@ You can drag an element from list view and drop this into another element. The b
 {% highlight css %}
 
 	 <style>
-	  #listitem {
+	  #listItem {
             width: 150px;
             height: 205px;
             border: 1px solid #c8c8c8;
@@ -76,7 +76,7 @@ You can drag an element from list view and drop this into another element. The b
 	
        $(function () {
             var cloneElement;
-            $("#defaultlistbox").ejListView();
+            $("#defaultListBox").ejListView();
             $(".drag").ejDraggable({
                 helper: function (event) {
                     proxy = $(event.element).closest('.e-lv.e-js').data('ejListView');
@@ -88,16 +88,16 @@ You can drag an element from list view and drop this into another element. The b
 
             });
 
-            $("#listitem").ejDroppable({
+            $("#listItem").ejDroppable({
                 drop: function (event, ui) {
-                    if (event.target.id == "listitem") {
+                    if (event.target.id == "listItem") {
                         event.dropTarget.append(event.dragElement);
                         event.dropTarget.ejListView();
                     }
                     else
                         ui.draggable[0].remove();
-                    $("#listitem").find("li").attr("style", "position:relative;left:0px;top:0px;list-style-type:none");
-                    $("#listitem").find("li").removeClass("e-state-active").addClass("e-state-default");
+                    $("#listItem").find("li").attr("style", "position:relative;left:0px;top:0px;list-style-type:none");
+                    $("#listItem").find("li").removeClass("e-state-active").addClass("e-state-default");
                     if ($('.e-list-container').find('ul li').length == 0) $('.e-list-container').css('border-top', '0px')
                 }
             });
@@ -188,7 +188,7 @@ The events will be triggered in the following order during Drag and Drop
     <div id="leftContainer">
         <!-- draggable element-->
         <div id="dragElement" class="drag">
-            <span class="dragtext">Drag</span>
+            <span class="dragText">Drag</span>
         </div>
 		
     </div>
@@ -196,7 +196,7 @@ The events will be triggered in the following order during Drag and Drop
     <div id="rightContainer">
         <!-- droppable target element-->
         <div id="dropContainer" class="drop">
-            <span class="droptext">Drop Here</span>
+            <span class="dropText">Drop Here</span>
         </div>
     </div>
 
@@ -240,7 +240,7 @@ The events will be triggered in the following order during Drag and Drop
         }
 
 		
-	   .dragtext,.droptext
+	   .dragText,.dropText
 		 {
 		  font-size:17px;
 		  margin:20px;

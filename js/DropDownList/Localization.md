@@ -29,12 +29,12 @@ Set the locale property of the DropDownList to the new language.
 
 {% highlight javascript %}
 
-    <input type="text" id="selectcompany" />
+    <input type="text" id="selectCompany" />
 
     $(function () {
-        var datalist = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Customers" });
-        $('#selectcompany').ejDropDownList({
-            dataSource: datalist,
+        var dataList = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Customers" });
+        $('#selectCompany').ejDropDownList({
+            dataSource: dataList,
             fields: { text: "CompanyName", value: 'ContactName' },
             width: 260,
             showCheckbox: true,

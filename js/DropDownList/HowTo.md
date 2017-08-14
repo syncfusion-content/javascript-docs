@@ -250,7 +250,7 @@ In the cascade event arguments, modify the cascadeQuery which has the filtering 
         });
 
         function cascadeEvent(args) {
-            args.requiresDefaultFilter = false; // restrict the inbuilt mapping for cascading dropdown
+            args.requiresDefaultFilter = false; // restrict the built-in mapping for cascading dropdown
 
             args.cascadeQuery = ej.Query().where("id", "equal", args.cascadeValue); // query to filter value based id 
         }
@@ -275,7 +275,7 @@ Initialize a DropDownList control with allowVirtualScrolling, enableFilterSearch
 {% highlight javascript %}
 
     var BikeList = [
-       { id: "bk1", text: "Apache RTR" }, { id: "bk2", text: "CBR 150-R" }, { id: "bk3", text: "CBZ Xtreme" }, { id: "bk4", text: "Discover" }, { id: "bk5", text: "Dazzler" }, { id: "bk6", text: "Flame" }, { id: "bk7", text: "Fazzer" }, { id: "bk8", text: "FZ-S" }, { id: "bk9", text: "Pulsar" }, { id: "bk10", text: "Shine" }, { id: "bk11", text: "R15" }, { id: "bk12", text: "Unicorn" }, { id: "bk14", text: "Kawasaki Ninja" }, { id: "bk15", text: "Ducati Streetfighter" }, { id: "bk16", text: "Aprilia TUONO" } ];   
+       { id: "bk1", text: "Apache RTR" }, { id: "bk2", text: "CBR 150-R" }, { id: "bk3", text: "CBZ Xtreme" }, { id: "bk4", text: "Discover" }, { id: "bk5", text: "Dazzler" }, { id: "bk6", text: "Flame" }, { id: "bk7", text: "Fazzer" }, { id: "bk8", text: "FZ-S" }, { id: "bk9", text: "Pulsar" }, { id: "bk10", text: "Shine" }, { id: "bk11", text: "R15" }, { id: "bk12", text: "Unicorn" }, { id: "bk14", text: "Kawasaki Ninja" }, { id: "bk15", text: "Ducati StreetFighter" }, { id: "bk16", text: "Aprilia TUONO" } ];   
             $(function () {
                 obj = $("#dropdown1").ejDropDownList({
                     fields: { id: "id", text: "text", value: "text" },
@@ -335,12 +335,12 @@ Initialize a DropDownList control with allowVirtualScrolling, enableFilterSearch
 {% highlight javascript %}
    
     var query1 = ej.Query().select("ContactName");
-    var dm = ej.DataManager({ "url": "http://mvc.syncfusion.com/services/Northwnd.svc/Customers" });
+    var dataObj = ej.DataManager({ "url": "http://mvc.syncfusion.com/services/Northwnd.svc/Customers" });
     var selectedItemsOnSearch = [];
 
     $(function () {
-        window.dropObj = $("#databind_remote").ejDropDownList({
-            dataSource: dm,
+        window.dropObj = $("#dataBind_remote").ejDropDownList({
+            dataSource: dataObj,
             query: query1,
             fields: { "text": "ContactName", "value": "ContactName" },
             enableFilterSearch: true,
@@ -374,7 +374,7 @@ Now override the addItem method which will be redefined based on this scenario t
         }
     }
     /*
-    In this method, we just override the functionalities of inbuilt addItem method to avoid the duplicate from remote to get append into ultag. 
+    In this method, we just override the functionalities of built-in addItem method to avoid the duplicate from remote to get append into <ul> tag. 
     */
     function appendList(proxy, selectedList) {
         var alreadyPushed = false;
@@ -416,7 +416,7 @@ In the begin event for loading data items from remote source, modify the query f
         }
     }
     /*
-    In this method, appending the items directly to ultag of popup list items dynamcially when searching and do virtual scrolling. 
+    In this method, appending the items directly to <ul> tag of popup list items dynamically when searching and do virtual scrolling. 
     */
     function dynamicItems(proxy, itemTag) {
 
@@ -443,7 +443,7 @@ When performing search, define the event to change the query string for filterin
 {% highlight javascript %}
     
     /*
-    In search event, we just filter out the querystring according the search string from remote and append it to popuplist items. 
+    In search event, we just filter out the query string according the search string from remote and append it to popup list items. 
     Maintaining the selected items on searching in selectedItemOnSelect variable and append those items once search input have empty string. 
     */
 
@@ -690,7 +690,7 @@ This can be achieved, by adding the attributes directly to the input element if 
  {% highlight javascript %}
  
     <div class="control">
-        <div class="ctrllabel">Select a bike</div>
+        <div class="ctrl-label">Select a bike</div>
         <input type="text" id="bikeList" />
     </div>
     <script type="text/javascript">
@@ -724,7 +724,7 @@ This can be achieved, by adding the attributes directly to the input element if 
             margin-left: 20px;
         }
 
-        .ctrllabel {
+        .ctrl-label {
             padding-bottom: 3px;
         }
     </style>
@@ -737,7 +737,7 @@ The client side events such as “select” or “change” can be prevented in 
 
 {% highlight javascript %}
 
-    <div class="ctrllabel">Select a car</div>
+    <div class="ctrl-label">Select a car</div>
         <input type="text" id="selectCar" />
     <div id="carsList">
     <ul>

@@ -21,7 +21,7 @@ We can set the required distance the mouse should travel in order to initiate re
    <div id="Container">
         <!-- Resizable element-->
         <div id="resizeElement" class="Resize">
-            <span class="Resizetext">Resize</span>
+            <span class="ResizeText">Resize</span>
         </div>
 
     </div>
@@ -48,7 +48,7 @@ We can set the required distance the mouse should travel in order to initiate re
         }
 
 
-        .Resizetext {
+        .ResizeText {
             font-size: 15px;
             line-height: 80px;
             display: inline-block;
@@ -90,7 +90,7 @@ We can set the offset for resize helper with respect to the mouse cursor using [
     <div id="Container">
         <!-- Resizable element-->
         <div id="resizeElement" class="Resize">
-            <span class="Resizetext">Resize</span>
+            <span class="ResizeText">Resize</span>
         </div>
 
     </div>
@@ -117,7 +117,7 @@ We can set the offset for resize helper with respect to the mouse cursor using [
         }
 
 
-        .Resizetext {
+        .ResizeText {
             font-size: 15px;
             line-height: 80px;
             display: inline-block;
@@ -154,7 +154,7 @@ We have some properties [minHeight](https://help.syncfusion.com/api/js/ejresizab
      <div id="Container">
         <!-- Resizable element-->
         <div id="resizeElement" class="Resize">
-            <span class="Resizetext">Resize</span>
+            <span class="ResizeText">Resize</span>
         </div>
 
     </div>
@@ -180,7 +180,7 @@ We have some properties [minHeight](https://help.syncfusion.com/api/js/ejresizab
         }
 
 
-        .Resizetext {
+        .ResizeText {
             font-size: 15px;
             margin-top:30px;
             display: inline-block;
@@ -213,7 +213,7 @@ We have some properties [minHeight](https://help.syncfusion.com/api/js/ejresizab
               resizeStop:function(event)
               {
                   if ((event.element.height() == 130)||(event.element.width() == 150)||(event.element.height() == 80)||(event.element.width() == 90))
-                      $(".Resizetext")[0].innerText = "Resize Restricted.Out of scope!";
+                      $(".ResizeText")[0].innerText = "Resize Restricted.Out of scope!";
                   
               }
           });

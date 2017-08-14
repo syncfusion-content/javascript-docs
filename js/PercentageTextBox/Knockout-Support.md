@@ -49,10 +49,10 @@ The following example depicts the way to bind data to the **PercentageTextBox** 
                         <label for="percent">Percent</label>
                     </td>
                     <td>
-                        <input id="percent" type="text" data-bind="ejPercentageTextbox: { value: pvalue }" />
+                        <input id="percent" type="text" data-bind="ejPercentageTextbox: { value: percentValue }" />
                     </td>
                     <td>
-                        <input type="text" class="e-input" style="border:1px solid #bdbcbd" data-bind="value: pvalue" />
+                        <input type="text" class="e-input" style="border:1px solid #bdbcbd" data-bind="value: percentValue" />
                     </td>
                 </tr>
             </tbody>
@@ -60,7 +60,7 @@ The following example depicts the way to bind data to the **PercentageTextBox** 
     </div>
     <script type="text/javascript">
         window.viewModel = {
-            pvalue: ko.observable(50),
+            percentValue: ko.observable(50),
         }
         jQuery(function ($) {
             ko.applyBindings(viewModel);
@@ -69,26 +69,17 @@ The following example depicts the way to bind data to the **PercentageTextBox** 
 </body>
 </html>
 
-
 {% endhighlight %}
 
 
-
-
-
 The output of **Knockout binding** in **PercentageTextBox** .
-
-
 
 ![](/js/PercentageTextBox/Knockout-Support_images/Knockout-Support_img1.png)
 
 PercentageTextBox at initial load
 {:.caption}
 
-
-
 ![](/js/PercentageTextBox/Knockout-Support_images/Knockout-Support_img2.png)
 
 PercentageTextBox with KnockoutJS binding
 {:.caption}
-

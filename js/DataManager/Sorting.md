@@ -225,8 +225,3 @@ Multi sorting is a special technique, where you can sort multiple fields by addi
 Result of above code example is illustrated as follows.
 
 ![](Sorting_images/Sorting_img4.png) 
-
-
-
-
-

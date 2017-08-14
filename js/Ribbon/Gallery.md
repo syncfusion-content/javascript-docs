@@ -143,7 +143,7 @@ You can also set [`text`](https://help.syncfusion.com/api/js/ejribbon#members:ta
     <ul id="ribbon">
         <li><a>FILE</a> </li>
     </ul>
-    <ul id="custommenu">
+    <ul id="customMenu">
         <li>
             <a>New Quick Step</a>
             <ul>
@@ -208,7 +208,7 @@ You can also set [`text`](https://help.syncfusion.com/api/js/ejribbon#members:ta
                                 }],
                                 customGalleryItems: [{
                                     customItemType: ej.Ribbon.customItemType.menu,
-                                    menuId: "custommenu",
+                                    menuId: "customMenu",
                                     menuSettings: {
                                         openOnClick: false
                                     }

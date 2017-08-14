@@ -31,17 +31,17 @@ Create a sample using ASP.NET Web Services
             getData.Connection = con;
             if (con.State != ConnectionState.Open)
                 con.Open();
-            DataTable sqldata = new DataTable();
-            SqlDataAdapter sqladapter = new SqlDataAdapter(getData);
-            sqldata.TableName = "Suppliers";
-            sqladapter.Fill(sqldata);
-            return sqldata;
+            DataTable sqlData = new DataTable();
+            SqlDataAdapter sqlAdapter = new SqlDataAdapter(getData);
+            sqlData.TableName = "Suppliers";
+            sqlAdapter.Fill(sqlData);
+            return sqlData;
         }
     }
 
 {% endhighlight %}
 
-In the above code snippet, we have created webservices by using the ASP.NET web service and bound dataSource to Grid, in code behind GetDataSource method.
+In the above code snippet, we have created web services by using the ASP.NET web service and bound dataSource to Grid, in code behind GetDataSource method.
 
 {% highlight html %}
 
@@ -50,9 +50,9 @@ In the above code snippet, we have created webservices by using the ASP.NET web 
     public static object GetDataSource()
     {
         CRUD_Service.WebService1 service = new CRUD_Service.WebService1();
-        var sqldata = service.Get();   // Get data from webservices
+        var sqlData = service.Get();   // Get data from web services
         DataResult result = new DataResult();
-        List<EditableCustomer> data = (from ord in sqldata.AsEnumerable() // Perform skip take for on demand load paging
+        List<EditableCustomer> data = (from ord in sqlData.AsEnumerable() // Perform skip take for on demand load paging
                                         select new EditableCustomer
                                         {
                                             SupplierID = ord.ItemArray[0].ToString(),
@@ -156,8 +156,8 @@ To request the web service without parameter using DataManager, please refer the
     var data1 = ej.DataManager({ url: "/Order.svc/Orders" });
 
                 var query = new ej.Query();
-                var dm = data1.executeQuery(query); //Request the webservice
-                dm.done(function (e) {
+                var dataObj = data1.executeQuery(query); //Request the webservice
+                dataObj.done(function (e) {
 
                     $("#Grid").ejGrid({
                         dataSource: e.result
@@ -175,11 +175,11 @@ To request the WCF service with parameter, please refer the following code snipp
 
             data2.adaptor = new ej.UrlAdaptor();
 
-            var query1 = new ej.Query().skip(5).take(30); //Adding parameter to be send to the webservice
+            var query1 = new ej.Query().skip(5).take(30); //Adding parameter to be send to the web service
 
-            var dm1 = data2.executeQuery(query1) //Request the webservice
+            var dataManagerObj = data2.executeQuery(query1) //Request the web service
 
-            dm1.done(function (e) {
+            dataManagerObj.done(function (e) {
 
                 $("#Grid1").ejGrid({
                     dataSource: e.result
@@ -189,7 +189,7 @@ To request the WCF service with parameter, please refer the following code snipp
 
 {% endhighlight %}
 
-Now the request will have made to the webservice with parameter value skip as 5 and take as 30.
+Now the request will have made to the web service with parameter value skip as 5 and take as 30.
 
 For getting started with WCF OData service please refer [link](http://msdn.microsoft.com/en-us/data/odata.aspx).
 
@@ -199,5 +199,3 @@ Yes, you can use ESRI Rest web services in url of DataManager. We have used a de
 Refer to the following link for the sample: 
 
 Playground sample : [Demo](http://jsplayground.syncfusion.com/jr2cgadj)
-
-

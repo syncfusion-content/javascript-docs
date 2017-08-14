@@ -166,7 +166,7 @@ angular.module('starter', ['ejangular', 'ionic'])
 
 ### Initializing controller
 
-In app.js file, you can create seperate controller for each control used in that project. Control properties declared inside the corresponding controller
+In app.js file, you can create separate controller for each control used in that project. Control properties declared inside the corresponding controller
 
 {% highlight javascript %}
 

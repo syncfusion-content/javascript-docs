@@ -50,10 +50,10 @@ The following example depicts the way to bind data to the **PercentageTextBox** 
                         <label for="percent">Percent</label>
                     </td>
                     <td>
-                        <input id="percent" type="text" ej-percentagetextbox e-value="pvalue" />
+                        <input id="percent" type="text" ej-percentagetextbox e-value="percentValue" />
                     </td>
                     <td>
-                        <input type="text" class="e-input" style="border:1px solid #bdbcbd" ng-model="pvalue" />
+                        <input type="text" class="e-input" style="border:1px solid #bdbcbd" ng-model="percentValue" />
                     </td>
                 </tr>
             </tbody>
@@ -62,7 +62,7 @@ The following example depicts the way to bind data to the **PercentageTextBox** 
     <script type="text/javascript">
         angular.module('TextCtrl', ['ejangular'])
            .controller('TextboxCtrl', function ($scope) {
-               $scope.pvalue = 400;
+               $scope.percentValue = 400;
            });
     </script>
 </body>

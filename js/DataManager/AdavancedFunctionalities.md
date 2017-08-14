@@ -50,12 +50,12 @@ In the following code example, the offline property of the DataManager is set as
             renderTable(e.result); // the JSON data is get from the result
         });
         function renderTable(data) {
-            var tbody = "", row;
+            var tableBody = "", row;
             for (var i = 0; i < data.length; i++) {
                 row = data[i];
-                tbody += String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td><td>{3}</td><td>{4}</td></tr>", row.OrderID, row.CustomerID, row.ShipName, row.ShipCity, row.Freight);
+                tableBody += String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td><td>{3}</td><td>{4}</td></tr>", row.OrderID, row.CustomerID, row.ShipName, row.ShipCity, row.Freight);
             }
-            $(".table tbody").html(tbody);
+            $(".table tbody").html(tableBody);
         }
     </script>
 
@@ -123,12 +123,12 @@ You can use the following code example for implementing load on demand using Dat
         });
         // This function can be better replaced with any template engine. We used this for simplicity in demo.
         function renderTable(data) {
-            var tbody = "", row;
+            var tableBody = "", row;
             for (var i = 0; i < data.length; i++) {
                 row = data[i];
-                tbody += String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td></tr>", row.OrderID, row.CustomerID, row.EmployeeID);
+                tableBody += String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td></tr>", row.OrderID, row.CustomerID, row.EmployeeID);
             }
-            $(".table tbody").html(tbody);
+            $(".table tbody").html(tableBody);
         }
         $("#submit").click(function (e) {
             var from = parseInt($("#from").val());
@@ -192,12 +192,12 @@ You can add custom request headers to every request made by the **DataManager** 
         });
         // This function can be better replaced with any template engine. We used this for simplicity in demo.
         function renderTable(data) {
-            var tbody = "", row;
+            var tableBody = "", row;
             for (var i = 0; i < data.length; i++) {
                 row = data[i];
-                tbody += String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td></tr>", row.OrderID, row.CustomerID, row.EmployeeID);
+                tableBody += String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td></tr>", row.OrderID, row.CustomerID, row.EmployeeID);
             }
-            $(".table tbody").html(tbody);
+            $(".table tbody").html(tableBody);
         }
     </script>
 
@@ -281,12 +281,12 @@ You can use the addParams method of ej.Query class, to add custom parameter to t
         });
         // This function can be better replaced with any template engine. We used this for simplicity in demo.
         function renderTable(data) {
-            var tbody = "", row;
+            var tableBody = "", row;
             for (var i = 0; i < data.length; i++) {
                 row = data[i];
-                tbody += String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td></tr>", row.OrderID, row.CustomerID, row.EmployeeID);
+                tableBody += String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td></tr>", row.OrderID, row.CustomerID, row.EmployeeID);
             }
-            $(".table tbody").html(tbody);
+            $(".table tbody").html(tableBody);
         }
     </script>
 
@@ -327,12 +327,12 @@ The **DataManager** contains support for creating cross domain request, you can 
         });
         // This function can be better replaced with any template engine. We used this for simplicity in demo.
         function renderTable(data) {
-            var tbody = "", row;
+            var tableBody = "", row;
             for (var i = 0; i < data.length; i++) {
                 row = data[i];
-                tbody += String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td></tr>", row.OrderID, row.CustomerID, row.EmployeeID);
+                tableBody += String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td></tr>", row.OrderID, row.CustomerID, row.EmployeeID);
             }
-            $(".table tbody").html(tbody);
+            $(".table tbody").html(tableBody);
         }
     </script>
 
@@ -409,12 +409,12 @@ Refer to the following code example for the **HTML** element binding using **Dat
 
         });
         function renderTable(data) {
-            var tbody = "", row;
+            var tableBody = "", row;
             for (var i = 0; i < data.length; i++) {
                 row = data[i];
-                tbody += String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td></tr>", row.OrderID, row.CustomerID, row.EmployeeID);
+                tableBody += String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td></tr>", row.OrderID, row.CustomerID, row.EmployeeID);
             }
-            $(".table tbody").html(tbody);
+            $(".table tbody").html(tableBody);
         }
    </script>
 

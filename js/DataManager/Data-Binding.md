@@ -337,14 +337,14 @@ Consuming data from the MVC controller`s action is as follows. Now the data from
 
     public class HomeController : Controller
     {
-       public JsonResult Data(DataManager dm)
+       public JsonResult Data(DataManager dataObj)
         {
             List<Object> data = new List<object>();
             for (int i = 1; i <= 10; i++)
             {
                 data.Add(new { OrderID = 10240 + i, CustomerID = “Customer” + i, EmployeeID = i });
             }
-            var records = data.Take(dm.Take); // take query of Data Manager
+            var records = data.Take(dataObj.Take); // take query of Data Manager
             return Json(records, JsonRequestBehavior.AllowGet);
         }
     }

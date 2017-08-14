@@ -39,12 +39,12 @@ Create an **HTML** file. Add the following reference code to the required librar
    <script type="text/javascript">
       // This function can be better replaced with any template engine. We used this for simplicity in demo.
       function renderTable(data) {
-          var tbody = "", row;
+          var tableBody = "", row;
           for (var i = 0; i < data.length; i++) {
               row = data[i];
-              tbody += String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td><td>{3}</td><td>{4}</td></tr>", row.OrderID, row.CustomerID, row.ShipName, row.ShipCity, row.Freight);
+              tableBody += String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td><td>{3}</td><td>{4}</td></tr>", row.OrderID, row.CustomerID, row.ShipName, row.ShipCity, row.Freight);
           }
-          $(".table tbody").html(tbody);
+          $(".table tbody").html(tableBody);
       }
    </script>
 </body>
@@ -856,5 +856,4 @@ To bind remote data to Grid Control, you can assign a service data as an instanc
 
 {% endhighlight %}
 
-![](GettingStarted_images/Binding1.png) 
-
+![](GettingStarted_images/Binding1.png)

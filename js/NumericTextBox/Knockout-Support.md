@@ -15,8 +15,6 @@ api: /api/js/
 * One-way binding
 * Two-way binding
 
-
-
 **One-way binding** refers to the process of applying observable values to all the available properties of the **NumericTextBox** widget, but the changes made in **NumericTextBox** widget are not reflected and triggered in turn to the observable collection. This kind of binding applies to all the properties of the **NumericTextBox** widget.
 
 **Two-way binding** supports both the processes; it applies the observable values to the **NumericTextBox** widget properties as well as the changes made in the **NumericTextBox** widget are also reflected back and triggered within the observable collections. 
@@ -49,10 +47,10 @@ The following example depicts the way to bind data to the **NumericTextBox** wid
                         <label for="numeric">Numeric</label>
                     </td>
                     <td>
-                        <input id="numeric" type="text" data-bind="ejNumericTextbox: { value: nvalue }" />
+                        <input id="numeric" type="text" data-bind="ejNumericTextbox: { value: numericValue }" />
                     </td>
                     <td>
-                        <input type="text" class="input ejinputtext" data-bind="value: nvalue" />
+                        <input type="text" class="input ejinputtext" data-bind="value: numericValue" />
                     </td>
                 </tr>              
             </tbody>
@@ -60,7 +58,7 @@ The following example depicts the way to bind data to the **NumericTextBox** wid
     </div>
     <script type="text/javascript">
         window.viewModel = {
-            nvalue: ko.observable(100)
+            numericValue: ko.observable(100)
         }
         jQuery(function ($) {
             ko.applyBindings(viewModel);          
@@ -76,17 +74,9 @@ The following example depicts the way to bind data to the **NumericTextBox** wid
 </body>
 </html>
 
-
-
 {% endhighlight %}
 
-
-
-
-
 The output of Knockout binding in NumericTextBox .
-
-
 
 ![](/js/NumericTextBox/Knockout-Support_images/Knockout-Support_img1.png)
 
@@ -97,4 +87,3 @@ NumericTextBox at initial load
 
 NumericTextBox with KnockoutJS binding
 {:.caption}
-

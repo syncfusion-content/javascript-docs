@@ -19,7 +19,7 @@ Tree nodes can be customized by using [template](https://help.syncfusion.com/api
 
       {{"{{"}}if hasChild{{}}}}
 
-         <div class={{"{{"}}>cls{{}}}}>{{"{{"}}>name{{}}}}</div>
+         <div class={{"{{"}}>className{{}}}}>{{"{{"}}>name{{}}}}</div>
 
       {{"{{"}}else{{}}}}
 
@@ -55,11 +55,11 @@ Tree nodes can be customized by using [template](https://help.syncfusion.com/api
 
             var treeData = [
 
-            { id: 1, name: "UK", cls: "uk-style", hasChild: true, expanded: true },
+            { id: 1, name: "UK", className: "uk-style", hasChild: true, expanded: true },
 
             { id: 2, pid: 1, imgId: "1", name: "Steven John", city: "London", phone: "555-5665-2323" },
 
-            { id: 3, name: "USA", cls: "usa-style", hasChild: true, expanded: true },
+            { id: 3, name: "USA", className: "usa-style", hasChild: true, expanded: true },
 
             { id: 5, pid: 3, imgId: "3", name: "Andrew", city: "Capital way", phone: "934-8374-2455" },
 
@@ -87,4 +87,3 @@ Tree nodes can be customized by using [template](https://help.syncfusion.com/api
 {% endhighlight %}
 
 For more details about node template, refer the sample [here](http://jsplayground.syncfusion.com/ncztbhc3#). 
-

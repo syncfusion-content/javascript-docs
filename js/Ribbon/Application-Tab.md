@@ -46,7 +46,7 @@ Set the UL element `id` to [`menuItemID`](https://help.syncfusion.com/api/js/ejr
                         type: ej.Ribbon.applicationTabType.menu,
                         // menuItemID mapped to UL with id of “menu”                                         
                         menuItemID: "ribbon",
-                        // menu properties defined in menusetttings 
+                        // menu properties defined in menu setttings 
                         menuSettings: {
                             openOnClick: false
                         }

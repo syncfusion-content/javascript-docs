@@ -36,7 +36,7 @@ The below code snippet injects the malicious script in to the user's browser thr
 
 ## XSS protection
 
-`EJ Controls` does not have inbuilt support for the XSS protection. So before giving data into `ej controls`,the user can check whether the malicious script is present in the request or not by using [`HTML Sanitizer`](https://www.npmjs.com/package/sanitize-html "HTML Sanitizer").
+`EJ Controls` does not have built-in support for the XSS protection. So before giving data into `ej controls`,the user can check whether the malicious script is present in the request or not by using [`HTML Sanitizer`](https://www.npmjs.com/package/sanitize-html "HTML Sanitizer").
 
 The following code example from response.html page illustrates this,
 
