@@ -10,8 +10,6 @@ api: /api/js/ejpivotgrid
 
 # Paging
 
-I> This feature is applicable only for OLAP data source.
-
 ## Pager 
 
 Paging helps to improve the rendering performance of the PivotGrid control by dividing large amount of data into sections and displaying one section at a time. You can enable Paging option in PivotGrid by setting the [`enablePaging`](/api/js/ejpivotgrid#members:enablePaging) property to true. You can provide the page size and current page details for each axis in [`pagerOptions`](/api/js/ejpivotgrid#members:pagerOptions) property.
@@ -113,7 +111,21 @@ $("#PivotGrid1").ejPivotGrid({
 
 {% endhighlight %}
 
-For server mode, the page settings for categorical and series axes are done only through OlapReport object, created inside WebAPI or WCF file.
+For server mode, the page settings for categorical and series axes are done only through report object, created inside WebAPI or WCF file.
+
+For Relational data source
+
+{% highlight c# %}
+
+PivotReport pivotReport = new PivotReport();
+pivotReport.PagerOptions.SeriesPageSize = 4;
+pivotReport.PagerOptions.CategoricalPageSize = 5;
+pivotReport.PagerOptions.SeriesCurrentPage = 1;
+pivotReport.PagerOptions.CategoricalCurrentPage = 1;
+
+{% endhighlight %}
+
+For OLAP data source
 
 {% highlight c# %}
 
@@ -122,5 +134,7 @@ olapReport.CurrentCubeName = "Adventure Works";
 olapReport.EnablePaging = true;
 olapReport.PagerOptions.SeriesPageSize = 4;
 olapReport.PagerOptions.CategorialPageSize = 5;
+olapReport.PagerOptions.CategorialCurrentPage = 1;
+olapReport.PagerOptions.SeriesCurrentPage = 1;
 
 {% endhighlight %}
