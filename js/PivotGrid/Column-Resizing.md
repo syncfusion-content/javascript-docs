@@ -8,11 +8,11 @@ documentation: ug
 api: /api/js/ejpivotgrid
 ---
 
-# Column Resizing
+# Resizing Column
 
-Allows you to resize the column by changing its width while holding and dragging the column border using the mouse.
+Allows the user to change the column width by holding and dragging the column border using the mouse pointer.
 
-You can enable column resizing option in PivotGrid by setting the [`enableColumnResizing`](/api/js/ejpivotgrid#members:enablecolumnresizing) property to true.
+You can enable the resizing option in PivotGrid by setting the [`enableColumnResizing`](/api/js/ejpivotgrid#members:enablecolumnresizing) property to true.
 
 {% highlight html %}
 
@@ -30,3 +30,22 @@ You can enable column resizing option in PivotGrid by setting the [`enableColumn
 {% endhighlight %} 
 
 ![](Column-Resizing_images/columnresizing.png)
+
+
+Additionally, the property [`resizeColumnsToFit`](/api/js/ejpivotgrid#members:resizecolumnstofit) automatically adjusts the width of each column based on the maximum content length available in the respective column.
+
+{% highlight html %}
+
+<div id="PivotGrid1"></div>
+
+<script>
+    $(function() {    
+        $("#PivotGrid1").ejPivotGrid({
+            //...
+            enableColumnResizing : true,
+            resizeColumnsToFit: true
+        });
+    });
+</script>
+
+{% endhighlight %} 
