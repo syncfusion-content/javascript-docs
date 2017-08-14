@@ -82,7 +82,7 @@ Font option is also available on the labels. The basic three properties of fonts
                     angle: 10,
                     // For setting label opacity
                     opacity: 0.8,
-                    // For disable the include first value prperty
+                    // For disable the include first value property
                     includeFistValue: false,
                     // For setting label color
                     color: "Yellow",

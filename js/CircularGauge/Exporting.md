@@ -17,7 +17,7 @@ api: /api/js/ejcirculargauge
 <input type="submit" value="Export Image" id="btnExportImage">
     <div id=" circulargauge "></div>
     <div id="txtFileName">FileName </div>
-    <div id="ddlFileType">FileFormat </div>
+    <div id="ddFileType">FileFormat </div>
 </input>
 <select id="Select1">
     <option value="JPEG">JPEG</option>
@@ -30,11 +30,11 @@ api: /api/js/ejcirculargauge
 
 $(function () {
         $("#circulargauge").ejCircularGauge();
-        $("#btnExportImage").ejButton({ width: "100px", click: "buttonclickevent", });
+        $("#btnExportImage").ejButton({ width: "100px", click: "buttonClickEvent", });
     });
-    function buttonclickevent() {
+    function buttonClickEvent() {
         var FileName = $("#txtFileName").val();
-        var FileFormat = $("#ddlFileType").val();
+        var FileFormat = $("#ddFileType").val();
         $("#circulargauge").ejCircularGauge("exportImage", FileName, FileFormat);
     }
 

@@ -54,37 +54,37 @@ Apply the plugin and property assigning the **Treemap** element through the di
     
     //Initializes controller
     
-        <div ng-controller="TreeMapcontroller">
+        <div ng-controller="TreeMapController">
 
     //Initializes TreeMap
-        <div id="treemap" ej-treemap e-datasource="ndatasource" e-unicolormapping-color="ncolor" e-weightvaluepath="nweightValuePath" e-colorvaluepath="ncolorValuePath" e-leafitemsettings-labelpath="nlabelPath" style="width: 700px;height:370px;">
+        <div id="treemap" ej-treemap e-datasource="datasource" e-unicolormapping-color="color" e-weightvaluepath="weightValuePath" e-colorvaluepath="colorValuePath" e-leafitemsettings-labelpath="labelPath" style="width: 700px;height:370px;">
             <e-levels>
-                <e-level e-grouppath="ngroupPath" e-groupgap="ngroupGap"                    e-showheader="nshowHeader">          
+                <e-level e-grouppath="groupPath" e-groupgap="groupGap"                    e-showheader="showHeader">          
                 </e-level>
             </e-levels>
         </div>
      
     //Renders a checkbox to change the header visibility
         <div>
-            Show Header:  <input type="checkbox" ng-model="nshowHeader" style="outline: none;"/>   
+            Show Header:  <input type="checkbox" ng-model="showHeader" style="outline: none;"/>   
         </div>
     
     //Renders a textbox to change the groupGap value 
         <div>
-            Group Gap:  <input type="text" id="Text11" ng-model="ngroupGap" style="width: 110px" />
+            Group Gap:  <input type="text" id="Text11" ng-model="groupGap" style="width: 110px" />
         </div> 
         
         <script>
             angular.module('syncApp', ['ejangular'])
-                .controller('TreeMapcontroller', function ($scope) {
-                    $scope.ndatasource = population_data;
-                    $scope.ncolorValuePath = "Growth";
-                    $scope.nweightValuePath = "Growth";
-                    $scope.nlabelPath = "Country";                       
-                    $scope.ngroupPath = "Continent";
-                    $scope.ngroupGap = 5;
-                    $scope.nshowHeader = true;
-                    $scope.ncolor = "#2380BB";
+                .controller('TreeMapController', function ($scope) {
+                    $scope.datasource = population_data;
+                    $scope.colorValuePath = "Growth";
+                    $scope.weightValuePath = "Growth";
+                    $scope.labelPath = "Country";                       
+                    $scope.groupPath = "Continent";
+                    $scope.groupGap = 5;
+                    $scope.showHeader = true;
+                    $scope.color = "#2380BB";
                 });
         </script> 
     </div>

@@ -14,7 +14,7 @@ The Data points that uses the **null** or **undefined** as value are considered 
 
 {% highlight javascript %}
 
-      $("#chartcontainer").ejChart({
+      $("#container").ejChart({
                 
                series:[ {
                      //Using empty points 
@@ -46,7 +46,7 @@ You can customize the empty points visibility and change its [`displayMode`](../
 
 {% highlight javascript %}
 
-      $("#chartcontainer").ejChart({
+      $("#container").ejChart({
                 
             series:[ {
                    //...
@@ -75,7 +75,7 @@ Empty points color and border can be customized using [`style`](../api/ejchart.h
 
 {% highlight javascript %}
 
-      $("#chartcontainer").ejChart({
+      $("#container").ejChart({
                 
             series:[{
                    //...

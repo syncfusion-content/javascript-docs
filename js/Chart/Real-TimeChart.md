@@ -17,7 +17,7 @@ N> You can get the chart **instance** using instance method.
 {% highlight javascript %}
 
      //Rendering empty Chart without data
-     $("#chartcontainer").ejChart({
+     $("#container").ejChart({
             
              series: [ 
                      {  points: [ ] }
@@ -32,18 +32,18 @@ N> You can get the chart **instance** using instance method.
     function updateChart(){
 
         //Creating chart instance
-        var chart =  $("#chartcontainer").ejChart("instance");      
+        var chart =  $("#container").ejChart("instance");      
         
         if (chart.model.series[0].points.length > 10)
                chart.model.series[0].points.splice(0, 1);
         
         var point = chart.model.series[0].points;
         var xValue = point.length > 0 ? point[point.length - 1].x + 1 : 1;
-        point[point.length] = { x:  xValue, y: getRandomNum( 1000 ) }
+        point[point.length] = { x:  xValue, y: getRandomNumber( 1000 ) }
                 
         //Update Chart dynamically using redraw option
         //chart.redraw() can also be used here instead of redraw option
-        $("#chartcontainer").ejChart("redraw");      
+        $("#container").ejChart("redraw");      
        }
 
 {% endhighlight %}

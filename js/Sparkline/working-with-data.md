@@ -16,7 +16,7 @@ api: /api/js/ejsparkline
 
 {% highlight javascript %}
 
-var sparklinedata = [
+var sparkLineData = [
 { employeeId: 1, sales: 25 },
 { employeeId: 2, sales: 28 },
 { employeeId: 3, sales: 34 },
@@ -29,7 +29,7 @@ var sparklinedata = [
 { employeeId: 10, sales: 30 }];
     
 $("#container").ejSparkline({	
-     dataSource: sparklinedata,
+     dataSource: sparkLineData,
      xName: "employeeId",
      yName: "sales",
 });
@@ -67,12 +67,12 @@ Typically, you will assign data directly to Sparkline using [`dataSource`](../ap
          <script src="https://cdn.syncfusion.com/14.2.0.26/js/common/ej.widget.angular.min.js"></script>
      </head>
 <body ng-controller="sparkline">
-<div id="column" ej-sparkline e-datasource="sparklinedata"></div>
+<div id="column" ej-sparkline e-datasource="sparkLineData"></div>
 <script>
     var data = [2, 6, -1, 1, 12, 5, -2, 7, -3, 5, 8, 10, ];	 
   
    angular.module('syncApp',['ejangular']).controller("sparkline",function($scope){    
-    $scope.sparklinedata = data;
+    $scope.sparkLineData = data;
 });
 </script>
 </body>

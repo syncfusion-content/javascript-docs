@@ -29,9 +29,9 @@ Apply the plugin and property assigning the Map element through the directive 
 
     //Initializes Map
     
-        <div id="map" style="height: inherit; min-height: 356px;" ej-map e-zoomsettings- enablezoom="nenablezoom">
+        <div id="map" style="height: inherit; min-height: 356px;" ej-map e-zoomsettings- enablezoom="enablezoom">
             <div e-layers>
-                <div e-layer e-shapedata="nshapedata" e-shapesettings-fill="nfill" e-shapesettings-strokeThickness="nstrokeThickness" e-shapesettings-stroke="nstroke">                                   
+                <div e-layer e-shapedata="shapedata" e-shapesettings-fill="fill" e-shapesettings-strokeThickness="strokeThickness" e-shapesettings-stroke="stroke">                                   
                 </div>
             </div>
         </div>
@@ -39,17 +39,17 @@ Apply the plugin and property assigning the Map element through the directive 
     //Renders a textbox to change the color value
     
     <div>
-        Shape Color:  <input type="text" id="Text11" ng-model="nfill" style="width: 110px">
+        Shape Color:  <input type="text" id="Text11" ng-model="fill" style="width: 110px">
     </div> 
 
     <script>
         angular.module('syncApp', ['ejangular'])
         .controller('Map', function ($scope) {                       
-            $scope.nenablezoom = true,
-            $scope.nshapedata = usMap;                    
-            $scope.nfill = "#9CBF4E"; 
-            $scope.nstrokeThickness ="0.5";
-            $scope.nstroke = "White";
+            $scope.enablezoom = true,
+            $scope.shapedata = usMap;                    
+            $scope.fill = "#9CBF4E"; 
+            $scope.strokeThickness ="0.5";
+            $scope.stroke = "White";
         });
     </script>     
 

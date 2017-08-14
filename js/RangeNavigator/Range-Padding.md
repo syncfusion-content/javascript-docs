@@ -19,7 +19,7 @@ The **rangePadding** property allows you to customize the automatic range calcul
 {% highlight javascript %}
 
 
-$("#rangecontainer").ejRangeNavigator({
+$("#container").ejRangeNavigator({
    //...
         valueType: "numeric",
         rangePadding: 'none ',
@@ -72,7 +72,7 @@ Using the default range calculation for **RangeNavigator**, the **rangePadding**
 {% highlight javascript %}
 
 
-$("#rangecontainer").ejRangeNavigator({
+$("#container").ejRangeNavigator({
    //...
         rangePadding: 'none ',
    //...	
@@ -106,7 +106,7 @@ The following code example renders a RangeNavigator with a range from 2010 Janua
 {% highlight javascript %}
 
 
-$("#rangecontainer").ejRangeNavigator({
+$("#container").ejRangeNavigator({
    //...
          rangeSettings: {
                     start: "2010/1/1", end: "2012/13/1"

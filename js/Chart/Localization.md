@@ -21,12 +21,12 @@ EjChart supports localization for its axis labels and tooltip. To render the cha
 </head>
 
 <body>
-    <div id="chartcontainer"></div>
+    <div id="container"></div>
    
 <script>
-      $("#chartcontainer").ejChart({
+      $("#container").ejChart({
                   //  ...
-                  //Render chart in french locale
+                  //Render chart in French locale
                   locale: 'fr-FR',
       });
   </script>

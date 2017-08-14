@@ -21,7 +21,7 @@ The **Series** property provides access to a collection of all series that are d
 {% highlight javascript %}
 
 
-$("#rangecontainer").ejRangeNavigator({
+$("#container").ejRangeNavigator({
    //...
     // Adding series
      series: [

@@ -44,7 +44,7 @@ The following code example shows how to enable HTML5 Canvas rendering in chart.
 {% highlight javascript %}
 
 
-       $("#chartcontainer").ejChart({
+       $("#container").ejChart({
                     
              //Rendering chart in canvas mode
              enableCanvasRendering: true

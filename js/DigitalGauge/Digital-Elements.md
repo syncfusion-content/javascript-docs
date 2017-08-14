@@ -33,7 +33,7 @@ api : /api/js/ejdigitalgauge
         // For Digital Gauge rendering
         $("#DigitalGauge1").ejDigitalGauge({
             items: [{
-                // For setting alingment
+                // For setting alignment
                 textAlign: "right",
                 // For setting text
                 value: "STOP",

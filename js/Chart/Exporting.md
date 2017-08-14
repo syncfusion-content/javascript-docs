@@ -24,9 +24,9 @@ In client-side rendered chart can be exported as PNG image or as SVG file.
 <body>
     <!--Chart download link-->
     <a id="download" style="cursor: pointer; position: absolute;right: 150px;">ExportChart</a>
-    <div id="chartcontainer"></div>
+    <div id="container"></div>
     <script>
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
 
             // ...
             //Enable Canvas mode to export chart as image
@@ -37,7 +37,7 @@ In client-side rendered chart can be exported as PNG image or as SVG file.
         });
 
         function download() {
-            var canvas = $("#chartcontainer").ejChart("export");
+            var canvas = $("#container").ejChart("export");
             this.href = canvas;
         }
         if (document.getElementById('download').addEventListener)
@@ -71,11 +71,11 @@ Server-side operation can be done by using the server-side frameworks such as We
     <a id="download" style="cursor: pointer; position:absolute;">
         <button onclick="download()" value="Export">Export</button>
     </a>
-    <div id="chartcontainer"></div>
+    <div id="container"></div>
 
     <script>
         //Render Chart
-        $("#chartcontainer").ejChart(
+        $("#container").ejChart(
          {
              enableCanvasRendering: true,
              exportSettings: { type: "jpg", action: "http://js.syncfusion.com/ExportingServices/api/JSChartExport/Export" },
@@ -83,7 +83,7 @@ Server-side operation can be done by using the server-side frameworks such as We
 
         //Export chart to excel
         function download() {
-            $("#chartcontainer").ejChart("export");
+            $("#container").ejChart("export");
         }
 
     </script>
@@ -278,7 +278,7 @@ We can also rotate the chart and can export it. Possible angles of rotation are 
 {% highlight javascript %}
 
         //Exporting the chart after rotating
-        $("#chartcontainer").ejChart(
+        $("#container").ejChart(
          {
              exportSettings: { angle: 180, action: "http://js.syncfusion.com/ExportingServices/api/JSChartExport/Export" },
          });
