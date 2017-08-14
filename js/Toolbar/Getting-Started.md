@@ -418,7 +418,7 @@ Initialize the content area and header as specified in the code table.
     
   <!-- control class used for aligns the pdf reader in center of a page. -->
 <div class="control">
- <div class="ctrllabel"></div>
+ <div class="ctrl-label"></div>
    <!-- Here Initialize the Toolbar items as like above code sample -->    
    <div id="contentSection">
       <textarea id="content" rows="10" cols="30"> 
@@ -456,7 +456,7 @@ You can apply the following styles with the above styles to design the **PDF hea
             position: relative;
         }
 
-        .ctrllabel {
+        .ctrl-label {
             background-image: url("http://js.syncfusion.com/UG/Web/Content/pdf-header.png");
             background-repeat: no-repeat;
             width: 634px;

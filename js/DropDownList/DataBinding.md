@@ -529,7 +529,7 @@ In client side, specify the URL of Data to url property and specify the type of 
 
 {% highlight javascript %}
 
-    <div class="ctrllabel"> Select an Employee</div>
+    <div class="ctrl-label"> Select an Employee</div>
     <input id="List"/>
     
     <script>

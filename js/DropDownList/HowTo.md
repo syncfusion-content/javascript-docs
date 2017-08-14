@@ -690,7 +690,7 @@ This can be achieved, by adding the attributes directly to the input element if 
  {% highlight javascript %}
  
     <div class="control">
-        <div class="ctrllabel">Select a bike</div>
+        <div class="ctrl-label">Select a bike</div>
         <input type="text" id="bikeList" />
     </div>
     <script type="text/javascript">
@@ -724,7 +724,7 @@ This can be achieved, by adding the attributes directly to the input element if 
             margin-left: 20px;
         }
 
-        .ctrllabel {
+        .ctrl-label {
             padding-bottom: 3px;
         }
     </style>
@@ -737,7 +737,7 @@ The client side events such as “select” or “change” can be prevented in 
 
 {% highlight javascript %}
 
-    <div class="ctrllabel">Select a car</div>
+    <div class="ctrl-label">Select a car</div>
         <input type="text" id="selectCar" />
     <div id="carsList">
     <ul>

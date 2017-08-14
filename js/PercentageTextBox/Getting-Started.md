@@ -42,7 +42,7 @@ Add necessary input elements to render **Textbox widget**.
 
 {% highlight html %}
 
-<div class="elementText" style="">Electricity Bill Calculator</div>
+<div class="element-text" style="">Electricity Bill Calculator</div>
 <br />
 <table class="editors">
     <tbody>
@@ -80,7 +80,7 @@ Add necessary input elements to render **Textbox widget**.
         </tr>
     </tbody>
 </table>
-<div class="payBill">
+<div class="pay-bill">
     <button class="e-btn" id="calcBill">Calculate</button>
 </div>
 
@@ -126,7 +126,7 @@ Initialize the **Textboxes widget** as shown in the following section.
 
 <style type="text/css" class="cssStyles">
 
-        .elementText
+        .element-text
         {
             display: inline-block;
             font-size: 20px;
@@ -140,7 +140,7 @@ Initialize the **Textboxes widget** as shown in the following section.
         {
             max-width: 400px;
         }
-        .payBill
+        .pay-bill
         {
             margin-left: 180px;
             margin-top: 15px;

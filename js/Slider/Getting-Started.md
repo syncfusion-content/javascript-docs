@@ -73,19 +73,19 @@ Add input element to render a **Slider**.
                   </ul>
                </div>
             </div>
-            <span class="ColumnLeft">
+            <span class="column-left">
             <span class="price">Price</span>
             </span>
-            <span class="ColumnRight">
+            <span class="column-right">
             <span id="priceText"> </span>
             <span class="value"></span>
             </span>
             <div id="priceSlider">
             </div>
-            <span class="ColumnLeft">
+            <span class="column-left">
             <span class="price">Count</span>
             </span>
-            <span class="ColumnRight">
+            <span class="column-right">
             <span id="counttext"></span><span class="value"></span>
             </span>
             <div id="countSlider">
@@ -136,14 +136,14 @@ Add the following styles to show the **Mobile Rate Slider** widget in horizontal
         margin-top: 40px;
     }
 
-    .ColumnLeft {
+    .column-left {
         width: 35%;
         float: left;
         font-weight: 400;
         margin-top: 10px;
     }
 
-    .ColumnRight {
+    .column-right {
         width: 65%;
         float: right;
         font-weight: 600;
@@ -241,28 +241,28 @@ Add input element to render a **Slider.**
                     Details of Loan
                 </div>
 
-                <span class="ColumnLeft">
+                <span class="column-left">
                     <span class="loan">Loan Amount</span>
                 </span>
-                <span class="ColumnRight">
+                <span class="column-right">
                     <span class="value"></span><span id="loanText">Rs </span>
                 </span>
                 <div id="loanSlider">
                 </div>
 
-                <span class="ColumnLeft">
+                <span class="column-left">
                     <span class="interest">Interest Rate</span>
                 </span>
-                <span class="ColumnRight">
+                <span class="column-right">
                     <span id="interestText">% pa</span><span class="value"></span>
                 </span>
                 <div id="interestSlider">
                 </div>
 
-                <span class="ColumnLeft">
+                <span class="column-left">
                     <span class="tenure">Tenure</span>
                 </span>
-                <span class="ColumnRight">
+                <span class="column-right">
                     <span id="tenuretext">Years</span><span class="value"></span>
                 </span>
                 <div id="tenureSlider">
@@ -319,14 +319,14 @@ Add the following styles to show the **EMI Calculation Slider widget** in horizo
         margin-top: 40px;
     }
 
-    .ColumnLeft {
+    .column-left {
         width: 35%;
         float: left;
         font-weight: 400;
         margin-top: 10px;
     }
 
-    .ColumnRight {
+    .column-right {
         width: 65%;
         float: right;
         font-weight: 600;

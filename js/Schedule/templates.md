@@ -400,7 +400,7 @@ When template is applied for the [prioritySettings](/api/js/ejschedule#members:p
 
 <style type="text/css">
 	.critical,
-	.ultraCritical,
+	.ultra-critical,
 	.none {
 		height: 13px;
 		width: 13px;
@@ -417,7 +417,7 @@ When template is applied for the [prioritySettings](/api/js/ejschedule#members:p
 		background-position: -13px;
 	}
 
-	.ultraCritical {
+	.ultra-critical {
 		background-color: #56ca85;
 		background-position: -59px;
 	}
@@ -442,7 +442,7 @@ $(function() {
             }, {
                 text: "Ultra Critical",
                 id: 3,
-                value: "ultraCritical"
+                value: "ultra-critical"
             }]
         },
         appointmentSettings: {
