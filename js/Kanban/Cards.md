@@ -378,9 +378,9 @@ The following output is displayed as a result of the above code example.
 
 ## Collapsible Cards
 
-You can set particular cards collapsed state in Kanban by defining the [`collapsibleCards`](https://help.syncfusion.com/api/js/ejkanban#members:fields-collapsiblecards) property. Based on the [`collapsibleCards`](https://help.syncfusion.com/api/js/ejkanban#members:fields-collapsiblecards) object value, it maps the cards to the collapsible area. 
+You can set particular cards to the collapsed state in Kanban by defining the [`collapsibleCards`](https://help.syncfusion.com/api/js/ejkanban#members:fields-collapsiblecards) property. Based on the [`collapsibleCards`](https://help.syncfusion.com/api/js/ejkanban#members:fields-collapsiblecards) object value, it maps the cards to the collapsible area. 
 
-You can set [`collapsibleCards`](https://help.syncfusion.com/api/js/ejkanban#members:fields-collapsiblecards) as object which consists of [`field`](https://help.syncfusion.com/api/js/ejkanban#members:fields-collapsiblecards-field) and [`key`](https://help.syncfusion.com/api/js/ejkanban#members:fields-collapsiblecards-key) properties. The [`field`](https://help.syncfusion.com/api/js/ejkanban#members:fields-collapsiblecards-field) property map the datasource field to be used in [`collapsibleCards`](https://help.syncfusion.com/api/js/ejkanban#members:fields-collapsiblecards). The [`key`](https://help.syncfusion.com/api/js/ejkanban#members:fields-collapsiblecards-key) property map the specific column key to be in collapsed state.
+You can set [`collapsibleCards`](https://help.syncfusion.com/api/js/ejkanban#members:fields-collapsiblecards) as object which consists of [`field`](https://help.syncfusion.com/api/js/ejkanban#members:fields-collapsiblecards-field) and [`key`](https://help.syncfusion.com/api/js/ejkanban#members:fields-collapsiblecards-key) properties. The [`field`](https://help.syncfusion.com/api/js/ejkanban#members:fields-collapsiblecards-field) property map the datasource field to be used in [`collapsibleCards`](https://help.syncfusion.com/api/js/ejkanban#members:fields-collapsiblecards). The [`key`](https://help.syncfusion.com/api/js/ejkanban#members:fields-collapsiblecards-key) property map the specific column key which is to be in collapsed state.
 
 <table>
 <tr>
@@ -398,7 +398,6 @@ Map the collapsible card's key mapping which is available in datasource value of
 </table>
 
 N> 1. If the `collapsibleCards` with `field` is in the dataSource and `key` values specified will available in column values, then the cards will be rendered inside the collapsible card's division.
-N> 2. If the `collapsibleCards` with `field` is not in the dataSource and `key` values specified will not available in column values, then the cards will not be rendered inside the collapsible card's division. The cards will render before the division.
 
 The following code example describes the collapsible cards.
 
