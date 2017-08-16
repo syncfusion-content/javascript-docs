@@ -102,7 +102,7 @@ Initialize **TimePicker** using the following code example.
     $(function () {
         // document ready
         // simple time picker creation
-        $("#datePicker").ejdatePicker();
+        $("#datePicker").ejDatePicker();
         $("#time").ejTimePicker();
     });
 
@@ -151,7 +151,7 @@ In a real-time hotel table booking scenario, the booking is open only for a limi
     var rangeDate = new Date(currentDate.getFullYear(), currentDate.getMonth(), currentDate.getDate() + 30);
     $(function () {
         // declaration
-        $("#datePicker").ejdatePicker({
+        $("#datePicker").ejDatePicker({
             value: currentDate, // the current date is used as default value
             minDate: currentDate,// Default date as mindate.
             maxDate: rangeDate // 30 –days of interval from min date.
@@ -186,7 +186,7 @@ The following code example shows how to set **Time interval**.
     var rangeDate = new Date(currentDate.getFullYear(), currentDate.getMonth(), currentDate.getDate() + 30);
     $(function () {
         // declaration
-        $("#datePicker").ejdatePicker({
+        $("#datePicker").ejDatePicker({
             value: currentDate, // the current date is used as default value
             minDate: currentDate,// Default date as mindate.
             maxDate: rangeDate // 30 –days of interval from min date.
@@ -223,7 +223,7 @@ The following code example shows how to display the **acknowledgment message**.
     var rangeDate = new Date(currentDate.getFullYear(), currentDate.getMonth(), currentDate.getDate() + 30);
     $(function () {
         // declaration
-        $("#datePicker").ejdatePicker({
+        $("#datePicker").ejDatePicker({
             value: currentDate, // the current date is used as default value
             minDate: currentDate,// Default date as mindate.
             maxDate: rangeDate // 30 –days of interval from min date.
@@ -320,7 +320,7 @@ Initialize **Two TimePickers** using the following code example.
     var rangeDate = new Date(currentDate.getFullYear(), currentDate.getMonth(), currentDate.getDate() + 30);
     $(function () {
         // declaration
-        $("#datePicker").ejdatePicker({
+        $("#datePicker").ejDatePicker({
             value: currentDate, // the current date is used as default value
             minDate: currentDate,// Default date as mindate.
             maxDate: rangeDate // 30 –days of interval from min date.
