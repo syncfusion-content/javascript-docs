@@ -376,4 +376,68 @@ The following output is displayed as a result of the above code example.
 
 ![](Cards_images/cards_img4.png)
 
+## Collapsible Cards
+
+You can set particular cards to the collapsed state in Kanban by defining the [`collapsibleCards`](https://help.syncfusion.com/api/js/ejkanban#members:fields-collapsiblecards) property. Based on the [`collapsibleCards`](https://help.syncfusion.com/api/js/ejkanban#members:fields-collapsiblecards) object value, it maps the cards to the collapsible area. 
+
+You can set [`collapsibleCards`](https://help.syncfusion.com/api/js/ejkanban#members:fields-collapsiblecards) as object which consists of [`field`](https://help.syncfusion.com/api/js/ejkanban#members:fields-collapsiblecards-field) and [`key`](https://help.syncfusion.com/api/js/ejkanban#members:fields-collapsiblecards-key) properties. The [`field`](https://help.syncfusion.com/api/js/ejkanban#members:fields-collapsiblecards-field) property map the datasource field to be used in [`collapsibleCards`](https://help.syncfusion.com/api/js/ejkanban#members:fields-collapsiblecards). The [`key`](https://help.syncfusion.com/api/js/ejkanban#members:fields-collapsiblecards-key) property map the specific column key which is to be in collapsed state.
+
+<table>
+<tr>
+<th>
+Mapping Fields</th><th>
+Description</th></tr>
+<tr>
+<td>
+{{ '[collapsibleCards.field](https://help.syncfusion.com/api/js/ejkanban#members:fields-collapsiblecards-field) ' | markdownify }} </td><td>
+ Map the collapsible card's field mapping.</td></tr>
+<tr>
+<td>
+{{ '[collapsibleCards.key](https://help.syncfusion.com/api/js/ejkanban#members:fields-collapsiblecards-key)' | markdownify }} </td><td>
+Map the collapsible card's key mapping which is available in datasource value of field mapped in {{ '[collapsibleCards.field](https://help.syncfusion.com/api/js/ejkanban#members:fields-collapsiblecards-field) ' | markdownify }}.</td></tr>
+</table>
+
+N> 1. If the `collapsibleCards` with `field` is in the dataSource and `key` values specified will available in column values, then the cards will be rendered inside the collapsible card's division.
+
+The following code example describes the collapsible cards.
+
+{% highlight html %}
+
+    <div id='Kanban'></div>
+
+{% endhighlight %}
+
+{% highlight javascript %}
+
+    $(function() {
+        var data = ej.DataManager(window.kanbanData).executeLocal(ej.Query().take(20));
+
+        $("#Kanban").ejKanban(
+            {
+                dataSource: data,
+                columns: [
+                    { headerText: "Andrew", key: "Andrew Fuller"},
+                    { headerText: "Janet", key: "Janet Leverling"},
+					{ headerText: "Nancy", key: "Nancy Davloio"}
+				],                                                           			
+                keyField: "Assignee",
+                allowTitle: true,
+                fields: {
+                content: "Summary",
+                primaryKey: "Id",
+				tag: "Status",
+				collapsibleCards: { field:"Status", key:"Close"}
+            },
+			allowSelection: false,
+        });
+    });
+
+
+{% endhighlight %}
+
+
+The following output is displayed as a result of the above code example.
+
+![](Cards_images/cards_img5.png)
+
 N> For cards event handling , please refer this [API](https://help.syncfusion.com/api/js/ejkanban#events:cardclick).

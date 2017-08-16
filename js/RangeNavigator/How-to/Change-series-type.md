@@ -16,7 +16,7 @@ The **type** property in **series** is used to change the type of the series ren
 {% highlight javascript %}
 
 
-$("#rangecontainer").ejRangeNavigator({
+$("#container").ejRangeNavigator({
                {   
                    // ...              
                    series: [{
@@ -41,7 +41,7 @@ When using multiple series in **RangeNavigator**, **type** property in **seriesS
 {% highlight javascript %}
 
 
-$("#rangecontainer").ejRangeNavigator({
+$("#container").ejRangeNavigator({
                {   
                    // Using a common series type for all the series              
                    seriesSettings: {

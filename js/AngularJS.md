@@ -294,14 +294,14 @@ In controller, you can get the reference to the `ej` widgets using the `ID` of p
  
 {% highlight html %}
   <body ng-controller="DatePickerCtrl">
-    <input id="mydatepicker" ej-datepicker e-value="dateValue" e-enableStrictMode="true" e-change="dateChanged" />
+    <input id="myDatePicker" ej-datepicker e-value="dateValue" e-enableStrictMode="true" e-change="dateChanged" />
 
     <script type="text/javascript">
         angular.module('DateCtrl', ['ejangular'])
            .controller('DatePickerCtrl',["$scope", function ($scope) {
                $scope.dateValue = "01/01/2015";
                $scope.dateChanged = function(e){
-                  alert($scope.mydatepicker.model.value)
+                  alert($scope.myDatePicker.model.value)
                }
         }]);
     </script>

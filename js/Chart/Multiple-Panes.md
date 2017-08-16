@@ -26,7 +26,7 @@ To split the chart area vertically into a number of rows, use [`rowDefinitions`]
 {% highlight javascript %}
 
 
-       $("#chartcontainer").ejChart({
+       $("#container").ejChart({
                     
                //  Splitting chart area into multiple rows
                 rowDefinitions: [{
@@ -74,7 +74,7 @@ For spanning the vertical axis along multiple panes vertically, you can use [`ro
 {% highlight javascript %}
 
 
-       $("#chartcontainer").ejChart({
+       $("#container").ejChart({
                     
             rowDefinitions: [{
 
@@ -116,7 +116,7 @@ To split the chart area horizontally into a number of columns, use [`columnDefin
 {% highlight javascript %}
 
  
-       $("#chartcontainer").ejChart({
+       $("#container").ejChart({
                     
                //  Splitting chart area into multiple columns
                 columnDefinitions: [{
@@ -157,7 +157,7 @@ For spanning the horizontal axis along multiple panes horizontally, you can use 
 {% highlight javascript %}
 
  
-       $("#chartcontainer").ejChart({
+       $("#container").ejChart({
                     
                columnDefinitions: [{
 

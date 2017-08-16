@@ -62,7 +62,7 @@ Add input element to render a **Slider**.
          <div class="frame">
             <div id="priceheading">
                <h3>Mobile Purchase</h3>
-               <input type="text" id="selectmobile" />
+               <input type="text" id="selectMobile" />
                <div id="mobileList">
                   <ul>
                      <li>Moto X</li>
@@ -73,19 +73,19 @@ Add input element to render a **Slider**.
                   </ul>
                </div>
             </div>
-            <span class="ColumnLeft">
+            <span class="column-left">
             <span class="price">Price</span>
             </span>
-            <span class="ColumnRight">
-            <span id="pricetext"> </span>
+            <span class="column-right">
+            <span id="priceText"> </span>
             <span class="value"></span>
             </span>
             <div id="priceSlider">
             </div>
-            <span class="ColumnLeft">
+            <span class="column-left">
             <span class="price">Count</span>
             </span>
-            <span class="ColumnRight">
+            <span class="column-right">
             <span id="counttext"></span><span class="value"></span>
             </span>
             <div id="countSlider">
@@ -116,13 +116,13 @@ Add the following styles to show the **Mobile Rate Slider** widget in horizontal
         font-weight: 400;
     }
 
-    .value, #pricetext, #counttext {
+    .value, #priceText, #counttext {
         float: right;
         position: relative;
         width: auto;
         padding-left: 3px;
     }
-    #pricetext, #counttext {
+    #priceText, #counttext {
         width: auto;
     }
     #result {
@@ -136,14 +136,14 @@ Add the following styles to show the **Mobile Rate Slider** widget in horizontal
         margin-top: 40px;
     }
 
-    .ColumnLeft {
+    .column-left {
         width: 35%;
         float: left;
         font-weight: 400;
         margin-top: 10px;
     }
 
-    .ColumnRight {
+    .column-right {
         width: 65%;
         float: right;
         font-weight: 600;
@@ -171,21 +171,21 @@ Initialize **Slider** using the following code example.
 
         var priceObj, countObj, priceValue = 0,target;                
         $(function() {
-            $('#selectmobile').ejDropDownList({
+            $('#selectMobile').ejDropDownList({
                 targetID: "mobileList",
                 width: "150px"
             });
-            var pricevalue = 25,
-                interestvalue = 4,
+            var priceValue = 25,
+                interestValue = 4,
                 priceValue = 1;
             $("#priceSlider").ejSlider({
                 height: 16,
-                value: pricevalue,
+                value: priceValue,
                 minValue: 10000,
                 maxValue: 50000,
                 incrementStep: 1,
-                change: "onchange",
-                slide: "onchange"
+                change: "onChange",
+                slide: "onChange"
             });
             $("#countSlider").ejSlider({
                 height: 16,
@@ -193,16 +193,16 @@ Initialize **Slider** using the following code example.
                 minValue: 1,
                 maxValue: 20,
                 incrementStep: 1,
-                change: "onchange",
-                slide: "onchange"
+                change: "onChange",
+                slide: "onChange"
             });
-            mobObj = $("#selectmobile").data('ejDropDownList');
+            mobObj = $("#selectMobile").data('ejDropDownList');
             priceObj = $('#priceSlider').data('ejSlider');
             countObj = $('#countSlider').data('ejSlider');
             calculate();
         });
     
-        function onchange(args) {
+        function onChange(args) {
             this.wrapper.prev().children('span.value').html(args.value);
             calculate();
         }
@@ -241,28 +241,28 @@ Add input element to render a **Slider.**
                     Details of Loan
                 </div>
 
-                <span class="ColumnLeft">
+                <span class="column-left">
                     <span class="loan">Loan Amount</span>
                 </span>
-                <span class="ColumnRight">
-                    <span class="value"></span><span id="loantext">Rs </span>
+                <span class="column-right">
+                    <span class="value"></span><span id="loanText">Rs </span>
                 </span>
                 <div id="loanSlider">
                 </div>
 
-                <span class="ColumnLeft">
+                <span class="column-left">
                     <span class="interest">Interest Rate</span>
                 </span>
-                <span class="ColumnRight">
-                    <span id="interesttext">% pa</span><span class="value"></span>
+                <span class="column-right">
+                    <span id="interestText">% pa</span><span class="value"></span>
                 </span>
                 <div id="interestSlider">
                 </div>
 
-                <span class="ColumnLeft">
+                <span class="column-left">
                     <span class="tenure">Tenure</span>
                 </span>
-                <span class="ColumnRight">
+                <span class="column-right">
                     <span id="tenuretext">Years</span><span class="value"></span>
                 </span>
                 <div id="tenureSlider">
@@ -297,14 +297,14 @@ Add the following styles to show the **EMI Calculation Slider widget** in horizo
         font-weight: 400;
     }
 
-    .value, #loantext, #interesttext, #tenuretext {
+    .value, #loanText, #interestText, #tenuretext {
         float: right;
         position: relative;
         width: auto;
         padding-left: 3px;
     }
 
-    #loantext, #interesttext, #tenuretext {
+    #loanText, #interestText, #tenuretext {
         width: auto;
     }
 
@@ -319,14 +319,14 @@ Add the following styles to show the **EMI Calculation Slider widget** in horizo
         margin-top: 40px;
     }
 
-    .ColumnLeft {
+    .column-left {
         width: 35%;
         float: left;
         font-weight: 400;
         margin-top: 10px;
     }
 
-    .ColumnRight {
+    .column-right {
         width: 65%;
         float: right;
         font-weight: 600;
@@ -356,28 +356,28 @@ Initialize **Slider** using the following code example.
     tenureValue = 0;
     $(function() {
 
-        var loanvalue = 25000,
-            interestvalue = 4,
+        var loanValue = 25000,
+            interestValue = 4,
             tenurevalue = 3;
     
         $("#loanSlider").ejSlider({
             height: 16,
-            value: loanvalue,
+            value: loanValue,
             minValue: 10000,
             maxValue: 1000000,
             incrementStep: 10,
-            change: "onchange",
-            slide: "onchange"
+            change: "onChange",
+            slide: "onChange"
         });
     
         $("#interestSlider").ejSlider({
             height: 16,
-            value: interestvalue,
+            value: interestValue,
             minValue: 1,
             maxValue: 20,
             incrementStep: 1,
-            change: "onchange",
-            slide: "onchange"
+            change: "onChange",
+            slide: "onChange"
     
         });
         $("#tenureSlider").ejSlider({
@@ -386,8 +386,8 @@ Initialize **Slider** using the following code example.
             minValue: 1,
             maxValue: 20,
             incrementStep: 1,
-            change: "onchange",
-            slide: "onchange"
+            change: "onChange",
+            slide: "onChange"
     
         });
     
@@ -397,7 +397,7 @@ Initialize **Slider** using the following code example.
         calculate();
     });
 
-    function onchange(args) {
+    function onChange(args) {
         this.wrapper.prev().children('span.value').html(args.value);
         calculate();
     }
@@ -409,10 +409,10 @@ Initialize **Slider** using the following code example.
     
         var P = loan;
         var y = interest / 1200;
-        var tenureamt = tenure * 12;
+        var tenureAmount = tenure * 12;
         //actual processing
-        var top = y * (Math.pow((1 + y), tenureamt));
-        var bottom = (Math.pow((1 + y), tenureamt)) - 1;
+        var top = y * (Math.pow((1 + y), tenureAmount));
+        var bottom = (Math.pow((1 + y), tenureAmount)) - 1;
         var ans = top / bottom;
         var final = P * ans;
         var z = Math.round(final);

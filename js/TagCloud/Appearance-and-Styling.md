@@ -63,7 +63,7 @@ In the **HTML** page, add a **&lt;div&gt;** element to configure **TagCloud** wi
    <tr>
       <td>
          <span>Tag format cloud</span>
-         <div id="techwebcloud"></div>
+         <div id="techWebCloud"></div>
       </td>
       <td>
          <span>Tag format list</span>
@@ -84,7 +84,7 @@ In the **HTML** page, add a **&lt;div&gt;** element to configure **TagCloud** wi
         titleText: "Tech Sites List",
         dataSource: websiteCollection
     });
-    $("#techwebcloud").ejTagCloud({
+    $("#techWebCloud").ejTagCloud({
         format: "cloud",
         titleText: "Tech Sites Cloud",
         dataSource: websiteCollection

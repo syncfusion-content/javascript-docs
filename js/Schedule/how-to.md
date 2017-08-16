@@ -42,9 +42,9 @@ $("#subject").focusout(function() {
 })
 
 // To Validate the Description field.
-$("#customdescription").focusout(function() {
-    if ($.trim($("#customdescription").val()) == "") {
-        $("#customdescription").addClass("validation");
+$("#customDescription").focusout(function() {
+    if ($.trim($("#customDescription").val()) == "") {
+        $("#customDescription").addClass("validation");
         return false;
     }
 })
@@ -145,12 +145,12 @@ function onCreate(args) {
 
         this.option("workHours.highlight", (this.currentView() != "month") ? false : true);
 
-        // Get the Scheduler workcell rows
+        // Get the Scheduler work cell rows
         var trElements = this.$WorkCellDiv.find("tr");
 
         for (var i = 0; i < trElements.length; i++) {
 
-            // Get the Scheduler workcell columns
+            // Get the Scheduler work cell columns
             var tdElements = $(trElements[i]).find("td");
 
             for (var j = 0; j < tdElements.length; j++) {
@@ -396,16 +396,16 @@ $(function() {
 function onAppointmentOpen(args) {
     // to add custom element in default appointment window
     if (this._appointmentAddWindow.find(".customfields").length == 0) {
-	    var customDesign = "<tr class='customfields'><td class='e-textlabel'>Event Type</td><td><input class='apptype' type='text'/></td><td class='e-textlabel'>Event Status </td><td><input class='status' type='text'/></td></tr>";
+	    var customDesign = "<tr class='customfields'><td class='e-textlabel'>Event Type</td><td><input class='app-type' type='text'/></td><td class='e-textlabel'>Event Status </td><td><input class='status' type='text'/></td></tr>";
 		$(customDesign).insertAfter(this._appointmentAddWindow.find("." + this._id + "parrow"));
     }
             
 	if (!ej.isNullOrUndefined(args.appointment)) {
-	    // if double clicked on the appointments, retrieve the custom field values from the appointment object and fills it in the appropriate fields.               this._appointmentAddWindow.find(".apptype").val(args.appointment.AppointmentType);
+	    // if double clicked on the appointments, retrieve the custom field values from the appointment object and fills it in the appropriate fields.               this._appointmentAddWindow.find(".app-type").val(args.appointment.AppointmentType);
 		this._appointmentAddWindow.find(".status").val(args.appointment.Status);
 	} else {
 	    // if double clicked on the cells, clears the field values.               
-		this._appointmentAddWindow.find(".apptype").val("");
+		this._appointmentAddWindow.find(".app-type").val("");
 		this._appointmentAddWindow.find(".status").val("");
 	}
 }
@@ -475,7 +475,7 @@ using System.ComponentModel;
 using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
-using Microsoft.Office.Interop.Outlook; // required Microsoft DLL 
+using Microsoft.Office.Interop.Outlook; // required Microsoft Assembly 
 using System.Web.Script.Serialization;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -501,26 +501,26 @@ namespace ScheduleCRUDJS.Controllers
         public List<MultipleResource> GetData() // function to return the outlook appointments
         {
             Microsoft.Office.Interop.Outlook.Application oApp = new Microsoft.Office.Interop.Outlook.Application();
-            Microsoft.Office.Interop.Outlook.NameSpace mapiNamespace = oApp.GetNamespace("MAPI");
-            Microsoft.Office.Interop.Outlook.MAPIFolder CalendarFolder = mapiNamespace.GetDefaultFolder(Microsoft.Office.Interop.Outlook.OlDefaultFolders.olFolderCalendar);
+            Microsoft.Office.Interop.Outlook.NameSpace mapNamespace = oApp.GetNamespace("MAPI");
+            Microsoft.Office.Interop.Outlook.MAPIFolder CalendarFolder = mapNamespace.GetDefaultFolder(Microsoft.Office.Interop.Outlook.OlDefaultFolders.olFolderCalendar);
             Microsoft.Office.Interop.Outlook.Items outlookCalendarItems = CalendarFolder.Items;
-            List<Microsoft.Office.Interop.Outlook.AppointmentItem> lst = new List<Microsoft.Office.Interop.Outlook.AppointmentItem>();
+            List<Microsoft.Office.Interop.Outlook.AppointmentItem> appointmentList = new List<Microsoft.Office.Interop.Outlook.AppointmentItem>();
 
             foreach (Microsoft.Office.Interop.Outlook.AppointmentItem item in outlookCalendarItems)
             {
-                lst.Add(item);
+                appointmentList.Add(item);
             }
 
             List<MultipleResource> newApp = new List<MultipleResource>();
             // converting COM object into IEnumerable object
-            for (var i = 0; i < lst.Count; i++)
+            for (var i = 0; i < appointmentList.Count; i++)
             {
                 MultipleResource app = new MultipleResource();
                 app.Id = i;
-                app.Subject = lst[i].Subject;
-                app.AllDay = lst[i].AllDayEvent;
-                app.StartTime = Convert.ToDateTime(lst[i].Start.ToString());
-                string endTime = lst[i].End.ToString();
+                app.Subject = appointmentList[i].Subject;
+                app.AllDay = appointmentList[i].AllDayEvent;
+                app.StartTime = Convert.ToDateTime(appointmentList[i].Start.ToString());
+                string endTime = appointmentList[i].End.ToString();
                 DateTime appEndDate = Convert.ToDateTime(endTime);
                 if (endTime.Contains("12:00:00 AM") && app.AllDay == true)
                     app.EndTime = appEndDate.AddMinutes(-1);

@@ -68,7 +68,7 @@ The following code example renders a **RangeNavigator** with a range from 2010, 
 
     <script type="text/javascript" language="javascript">
         $(function () {
-            $("#rangecontainer").ejRangeNavigator({
+            $("#container").ejRangeNavigator({
                 rangeSettings: {
                     start: "2010/1/1", end: "2010/12/31"
                 },
@@ -111,7 +111,7 @@ Now, add the **dataSource** to the **RangeNavigator** and provide the field name
 {% highlight javascript %}
 
     $(function () {
-            $("#rangecontainer").ejRangeNavigator({
+            $("#container").ejRangeNavigator({
               dataSource: window.chartData, xName: "xDate", yName: "yValue"      
             });
         });
@@ -136,10 +136,10 @@ The following code sample shows how to enable a Tooltip.
 
 
        $(function () {
-          $("#rangecontainer").ejRangeNavigator({
+          $("#container").ejRangeNavigator({
             //…
             tooltipSettings: {
-            visible: true, labelFormat: "MMM/yyy", tooltipDisplayMode: "always",
+            visible: true, labelFormat: "MMM/YYYY", tooltipDisplayMode: "always",
           },
           //...         
          });
@@ -212,16 +212,16 @@ You can update the chart with the selected data using the **rangeChanged** event
 
 {% highlight javascript %}
 
-    $("#rangecontainer").ejRangeNavigator({
+    $("#container").ejRangeNavigator({
     //...
       dataSource: window.chartData, xName: "xDate", yName: "yValue" ,
-      rangeChanged: "onrangechanged",
+      rangeChanged: "onRangeChanged",
     //...
     });
-    function onrangechanged(sender) {
-    var chartobj = $("#chartContent").data("ejChart");
-    if (chartobj != null) {
-           chartobj.model.series[0].dataSource = sender.selectedData;
+    function onRangeChanged(sender) {
+    var chartObj = $("#chartContent").data("ejChart");
+    if (chartObj != null) {
+           chartObj.model.series[0].dataSource = sender.selectedData;
            $("#chartContent").ejChart("redraw");
        }
    }
@@ -262,7 +262,7 @@ Now, you can set the **dataSource** for Chart Series and **valueType** property 
 {% highlight javascript %}
 
 $(function () {
-          $("#rangecontainer").ejRangeNavigator({
+          $("#container").ejRangeNavigator({
             series: [
             {
               type: 'line',

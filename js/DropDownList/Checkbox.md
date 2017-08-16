@@ -243,7 +243,7 @@ You can check/uncheck all the list items at run time by using [checkAll](https:/
         
         target = $('#dropdown1').data("ejDropDownList");
         
-        $("#btnchkunchk").ejToggleButton({
+        $("#toggle").ejToggleButton({
             "change": "onCheckUncheckAll",
             "defaultText": "Check All",
             "activeText": "Uncheck All"
@@ -256,5 +256,3 @@ You can check/uncheck all the list items at run time by using [checkAll](https:/
     }
 
 {% endhighlight %}
-
-

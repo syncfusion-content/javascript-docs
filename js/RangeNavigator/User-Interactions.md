@@ -16,7 +16,7 @@ EjRangeNavigator provides highlighting supports to the intervals on mouse hover.
 
 {% highlight javascript %}
 
-    $("#rangecontainer").ejRangeNavigator({   
+    $("#container").ejRangeNavigator({   
      
          //...   
          navigatorStyleSettings:{
@@ -44,7 +44,7 @@ To customize the highlighted intervals, use color, border and opacity options in
 
 {% highlight javascript %}
 
-    $("#rangecontainer").ejRangeNavigator({   
+    $("#container").ejRangeNavigator({   
      
          //...   
          navigatorStyleSettings:{
@@ -75,7 +75,7 @@ EjRangeNavigator provides selection supports to the intervals by, clicking and d
 
 {% highlight javascript %}
 
-    $("#rangecontainer").ejRangeNavigator({   
+    $("#container").ejRangeNavigator({   
      
          //...   
          navigatorStyleSettings:{
@@ -103,7 +103,7 @@ To customize the selected intervals, use color, border and opacity options in th
 
 {% highlight javascript %}
 
-    $("#rangecontainer").ejRangeNavigator({   
+    $("#container").ejRangeNavigator({   
      
          //...   
          navigatorStyleSettings:{
@@ -139,7 +139,7 @@ To customize the selected intervals, use color, border and opacity options in th
 
 {% highlight javascript %}
 
-    $("#scrollcontent").ejRangeNavigator({
+    $("#scroll").ejRangeNavigator({
           
          //...
          //Enable scrollbar option in the rangenavigator

@@ -52,7 +52,7 @@ You can increment the progress percentage and show case the movement by using th
 
 {% highlight javascript %}
 
-       var progresObj, buttonObj, k = 10, timer = window.clearInterval(timer),showComplete=true ;
+       var progressObj, buttonObj, k = 10, timer = window.clearInterval(timer),showComplete=true ;
         $(function () {
             // declaration
             $("#progressBar").ejProgressBar({
@@ -62,8 +62,8 @@ You can increment the progress percentage and show case the movement by using th
                 change: "onchange",
                 complete: "completed"
             });
-            progresObj = $("#progressBar").data("ejProgressBar");
-            progresObj.option("text", progresObj.getPercentage() + " %");
+            progressObj = $("#progressBar").data("ejProgressBar");
+            progressObj.option("text", progressObj.getPercentage() + " %");
 
             $("#startButton").ejToggleButton({
                 defaultText: "Start",
@@ -74,18 +74,18 @@ You can increment the progress percentage and show case the movement by using th
             buttonObj = $("#startButton").data("ejToggleButton");
 
             $("#selectControls").ejDropDownList({
-                popupShown: "adjustpopupposition",
+                popupShown: "adjustPopUpPosition",
                 showCheckbox: true,
                 checkAll: true,
-                change: "evtpropscheckedevent"
+                change: "propCheckEvent"
             });
         });
 
-        function evtpropscheckedevent(args) {
+        function propCheckEvent(args) {
             if (args.isChecked) {
                 switch (args.value) {
-                    case "start": progresObj.option(args.value, "onstart"); break;
-                    case "change": progresObj.option(args.value, "onchange"); break;
+                    case "start": progressObj.option(args.value, "onstart"); break;
+                    case "change": progressObj.option(args.value, "onchange"); break;
                     case "complete": showComplete=true; break;
                 }
             }
@@ -94,7 +94,7 @@ You can increment the progress percentage and show case the movement by using th
                  showComplete=false; 
             }
             else
-			   progresObj.option(args.value, null)            
+			   progressObj.option(args.value, null)            
         }
 
         function startProcess(args) {
@@ -106,11 +106,11 @@ You can increment the progress percentage and show case the movement by using th
             }
         }
         function draw() {
-            progresObj.option("text", ++k + " %");
-            progresObj.option("percentage", k);
+            progressObj.option("text", ++k + " %");
+            progressObj.option("percentage", k);
         }
         function completed(args) {
-            progresObj.option("text", "Completed");
+            progressObj.option("text", "Completed");
             timer = window.clearInterval(timer);
             k = 0;
             if(showComplete)

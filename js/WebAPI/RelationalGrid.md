@@ -213,7 +213,7 @@ Response: serialized JSON string
 public Dictionary<string, object> Sorting(Dictionary<string, object> jsonResult)
 {
     htmlHelper.PopulateData(jsonResult["currentReport"].ToString());
-    retun htmlHelper.GetJsonData(jsonResult["action"].ToString(), ProductSales.GetSalesData(), jsonResult["sortedHeaders"].ToString());
+    return htmlHelper.GetJsonData(jsonResult["action"].ToString(), ProductSales.GetSalesData(), jsonResult["sortedHeaders"].ToString());
 }
 
 {% endhighlight %}

@@ -137,7 +137,7 @@ $(function() {
                 StartTimeZone: "UTC +05:30",
                 EndTime: new Date("2015/11/7 07:00 AM"),
                 EndTimeZone: "UTC +05:30",
-                Description: "Never Giveup on Obstacles",
+                Description: "Never Give up on Obstacles",
                 location: "US",
                 AllDay: false,
                 Recurrence: true,
@@ -169,8 +169,8 @@ Refer the appointment fields specified with validation rules from the following 
 <script type="text/javascript">
     $(function () {
         $.validator.addMethod("customRule", function (value, element, options) {
-            var ptn = /^[a-zA-Z0-9- ]*$/; //new RegExp(options);
-            return ptn.test(value);
+            var expression = /^[a-zA-Z0-9- ]*$/; //new RegExp(options);
+            return expression.test(value);
         }, "Special character(s) not allowed in Location field");
         var dManager = ej.DataManager(window.Default).executeLocal(ej.Query().take(10));
         $("#Schedule1").ejSchedule({
@@ -380,7 +380,7 @@ $(function() {
             startTimeZone: "StartTimeZone",
             endTimeZone: "EndTimeZone",
             description: "Description",
-            allday: "AllDay",
+            allDay: "AllDay",
             recurrence: "Recurrence",
             recurrenceRule: "RecurrenceRule"
         }
@@ -619,22 +619,22 @@ public class ScheduleAppointmentsObjDatum
     public List<ScheduleAppointmentsObjData> GetRecords()
     {
         List<ScheduleAppointmentsObjData> list = new List<ScheduleAppointmentsObjData>();
-        list.Add(new ScheduleAppointmentsObjData(100, "Bering Sea Gold", "chn", "05/02/2014 09:00:00 AM", "05/02/2014 10:30:00 AM", "", "1", "", true, "", "", "", "", false, "", "", "FREQ=DAILY;INTERVAL=2;COUNT=10"));
+        list.Add(new ScheduleAppointmentsObjData(100, "Bering Sea Gold", "chennai", "05/02/2014 09:00:00 AM", "05/02/2014 10:30:00 AM", "", "1", "", true, "", "", "", "", false, "", "", "FREQ=DAILY;INTERVAL=2;COUNT=10"));
         list.Add(new ScheduleAppointmentsObjData(101, "Bering Sea Gold", "mum", "05/02/2014 04:00:00 AM", "05/02/2014 05:00:00 AM", "", "1", "", false, "", "", "", "", false, "", "", ""));
         list.Add(new ScheduleAppointmentsObjData(102, "Bering Sea Gold", "trcy", "05/02/2014 04:00:00 PM", "05/02/2014 05:30:00 PM", "", "1", "", false, "", "", "", "", false, "", "", ""));
-        list.Add(new ScheduleAppointmentsObjData(103, "What Happened Next?", "chn", "05/04/2014 03:00:00 AM", "05/04/2014 04:30:00 AM", "", "1", "", false, "", "", "", "", false, "", "", ""));
+        list.Add(new ScheduleAppointmentsObjData(103, "What Happened Next?", "chennai", "05/04/2014 03:00:00 AM", "05/04/2014 04:30:00 AM", "", "1", "", false, "", "", "", "", false, "", "", ""));
         list.Add(new ScheduleAppointmentsObjData(104, "Bering Sea Gold", "trcy", "05/04/2014 05:00:00 AM", "05/04/2014 05:40:00 AM", "", "1", "", false, "", "", "", "", false, "", "", ""));
-        list.Add(new ScheduleAppointmentsObjData(105, "Daily Planet", "chn", "05/03/2014 01:00:00 AM", "05/03/2014 02:00:00 AM", "", "1", "", false, "", "", "", "", false, "", "", ""));
-        list.Add(new ScheduleAppointmentsObjData(106, "Alaska: The Last Frontier", "chn", "05/03/2014 08:00:00 AM", "05/03/2014 09:00:00 AM", "", "1", "", false, "", "", "", "", false, "", "", ""));
-        list.Add(new ScheduleAppointmentsObjData(107, "How It's Made", "chn", "05/01/2014 06:00:00 AM", "05/01/2014 06:30:00 AM", "", "1", "", true, "", "", "", "", false, "", "", "FREQ=WEEKLY;BYDAY=MO,TU;INTERVAL=1;COUNT=15"));
-        list.Add(new ScheduleAppointmentsObjData(108, "Deadest Catch", "chn", "05/03/2014 04:00:00 PM", "05/03/2014 05:00:00 PM", "", "1", "", false, "", "", "", "", false, "", "", ""));
-        list.Add(new ScheduleAppointmentsObjData(109, "MayDay", "chn", "04/30/2014 06:30:00 AM", "04/30/2014 07:30:00 AM", "", "1", "", false, "", "", "", "", false, "", "", ""));
-        list.Add(new ScheduleAppointmentsObjData(110, "MoonShiners", "chn", "05/02/2014 02:00:00 AM", "05/02/2014 02:30:00 AM", "", "1", "", true, "", "", "", "", false, "", "", "FREQ=DAILY;INTERVAL=1;COUNT=5"));
-        list.Add(new ScheduleAppointmentsObjData(111, "Close Encounters", "chn", "04/30/2014 02:00:00 PM", "04/30/2014 03:00:00 PM", "", "1", "", true, "", "", "", "", false, "", "", "FREQ=WEEKLY;BYDAY=MO,TH;INTERVAL=1;COUNT=5"));
+        list.Add(new ScheduleAppointmentsObjData(105, "Daily Planet", "chennai", "05/03/2014 01:00:00 AM", "05/03/2014 02:00:00 AM", "", "1", "", false, "", "", "", "", false, "", "", ""));
+        list.Add(new ScheduleAppointmentsObjData(106, "Alaska: The Last Frontier", "chennai", "05/03/2014 08:00:00 AM", "05/03/2014 09:00:00 AM", "", "1", "", false, "", "", "", "", false, "", "", ""));
+        list.Add(new ScheduleAppointmentsObjData(107, "How It's Made", "chennai", "05/01/2014 06:00:00 AM", "05/01/2014 06:30:00 AM", "", "1", "", true, "", "", "", "", false, "", "", "FREQ=WEEKLY;BYDAY=MO,TU;INTERVAL=1;COUNT=15"));
+        list.Add(new ScheduleAppointmentsObjData(108, "Deadest Catch", "chennai", "05/03/2014 04:00:00 PM", "05/03/2014 05:00:00 PM", "", "1", "", false, "", "", "", "", false, "", "", ""));
+        list.Add(new ScheduleAppointmentsObjData(109, "MayDay", "chennai", "04/30/2014 06:30:00 AM", "04/30/2014 07:30:00 AM", "", "1", "", false, "", "", "", "", false, "", "", ""));
+        list.Add(new ScheduleAppointmentsObjData(110, "MoonShiners", "chennai", "05/02/2014 02:00:00 AM", "05/02/2014 02:30:00 AM", "", "1", "", true, "", "", "", "", false, "", "", "FREQ=DAILY;INTERVAL=1;COUNT=5"));
+        list.Add(new ScheduleAppointmentsObjData(111, "Close Encounters", "chennai", "04/30/2014 02:00:00 PM", "04/30/2014 03:00:00 PM", "", "1", "", true, "", "", "", "", false, "", "", "FREQ=WEEKLY;BYDAY=MO,TH;INTERVAL=1;COUNT=5"));
         list.Add(new ScheduleAppointmentsObjData(112, "Close Encounters", "mum", "04/30/2014 03:00:00 AM", "04/30/2014 03:30:00 AM", "", "1", "", true, "", "", "", "", false, "", "", "FREQ=WEEKLY;BYDAY=WE;INTERVAL=1;COUNT=3"));
-        list.Add(new ScheduleAppointmentsObjData(113, "Highway Thru Hell", "chn", "05/01/2014 03:00:00 AM", "05/01/2014 07:00:00 AM", "", "1", "", true, "", "", "", "", false, "", "", "FREQ=DAILY;INTERVAL=2;COUNT=10"));
-        list.Add(new ScheduleAppointmentsObjData(114, "Moon Shiners", "chn", "05/02/2014 04:20:00 AM", "05/02/2014 05:50:00 AM", "", "1", "", false, "", "", "", "", false, "", "", ""));
-        list.Add(new ScheduleAppointmentsObjData(115, "Cash Cab", "chn", "04/30/2014 03:00:00 PM", "04/30/2014 04:30:00 PM", "", "1", "", true, "", "", "", "", false, "", "", "FREQ=DAILY;INTERVAL=1;COUNT=5"));
+        list.Add(new ScheduleAppointmentsObjData(113, "Highway Through Hell", "chennai", "05/01/2014 03:00:00 AM", "05/01/2014 07:00:00 AM", "", "1", "", true, "", "", "", "", false, "", "", "FREQ=DAILY;INTERVAL=2;COUNT=10"));
+        list.Add(new ScheduleAppointmentsObjData(114, "Moon Shiners", "chennai", "05/02/2014 04:20:00 AM", "05/02/2014 05:50:00 AM", "", "1", "", false, "", "", "", "", false, "", "", ""));
+        list.Add(new ScheduleAppointmentsObjData(115, "Cash Cab", "chennai", "04/30/2014 03:00:00 PM", "04/30/2014 04:30:00 PM", "", "1", "", true, "", "", "", "", false, "", "", "FREQ=DAILY;INTERVAL=1;COUNT=5"));
         return list;
     }
 }
@@ -890,26 +890,26 @@ public static ScheduleAppointmentsObjData GetObjectValue(Dictionary<string, obje
 {
     Dictionary<string, object> KeyVal = objValue;
     ScheduleAppointmentsObjData appointValue = new ScheduleAppointmentsObjData();
-    foreach (KeyValuePair<string, object> keyval in KeyVal)
+    foreach (KeyValuePair<string, object> keyValue in KeyVal)
     {
-        if (keyval.Key == "ID")
-            appointValue.ID = Convert.ToInt32(keyval.Value);
-        else if (keyval.Key == "Subject")
-            appointValue.Subject = Convert.ToString(keyval.Value);
-        else if (keyval.Key == "Location")
-            appointValue.Location = Convert.ToString(keyval.Value);
-        else if (keyval.Key == "StartTime")
-            appointValue.StartTime = Convert.ToDateTime(keyval.Value).ToString("MM'/'dd'/'yyyy hh:mm:ss tt");
-        else if (keyval.Key == "EndTime")
-            appointValue.EndTime = Convert.ToDateTime(keyval.Value).ToString("MM'/'dd'/'yyyy hh:mm:ss tt");
-        else if (keyval.Key == "Description")
-            appointValue.Description = Convert.ToString(keyval.Value);
-        else if (keyval.Key == "AllDay")
-            appointValue.AllDay = Convert.ToBoolean(keyval.Value);
-        else if (keyval.Key == "Recurrence")
-            appointValue.Recurrence = Convert.ToBoolean(keyval.Value);
-        else if (keyval.Key == "RecurrenceRule")
-            appointValue.RecurrenceRule = Convert.ToString(keyval.Value);
+        if (keyValue.Key == "ID")
+            appointValue.ID = Convert.ToInt32(keyValue.Value);
+        else if (keyValue.Key == "Subject")
+            appointValue.Subject = Convert.ToString(keyValue.Value);
+        else if (keyValue.Key == "Location")
+            appointValue.Location = Convert.ToString(keyValue.Value);
+        else if (keyValue.Key == "StartTime")
+            appointValue.StartTime = Convert.ToDateTime(keyValue.Value).ToString("MM'/'dd'/'yyyy hh:mm:ss tt");
+        else if (keyValue.Key == "EndTime")
+            appointValue.EndTime = Convert.ToDateTime(keyValue.Value).ToString("MM'/'dd'/'yyyy hh:mm:ss tt");
+        else if (keyValue.Key == "Description")
+            appointValue.Description = Convert.ToString(keyValue.Value);
+        else if (keyValue.Key == "AllDay")
+            appointValue.AllDay = Convert.ToBoolean(keyValue.Value);
+        else if (keyValue.Key == "Recurrence")
+            appointValue.Recurrence = Convert.ToBoolean(keyValue.Value);
+        else if (keyValue.Key == "RecurrenceRule")
+            appointValue.RecurrenceRule = Convert.ToString(keyValue.Value);
     }
     return appointValue;
 }
@@ -979,9 +979,9 @@ public static void Crud(List<object> added, List<object> changed, List<object> d
     }
     if (deleted != null && deleted.Count > 0)
     {
-        foreach (var dele in deleted)
+        foreach (var del in deleted)
         {
-            ScheduleAppointmentsObjData value = GetObjectValue(dele as Dictionary<string, object>);
+            ScheduleAppointmentsObjData value = GetObjectValue(del as Dictionary<string, object>);
             ScheduleAppointmentsObjData removeApp = GetAllRecords().Where(c => c.ID == value.ID).FirstOrDefault();
             if (removeApp != null)
                 GetAllRecords().Remove(removeApp);

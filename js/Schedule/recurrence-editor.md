@@ -92,22 +92,22 @@ The following code example depicts the way to generate the recurrence rule.
 <!--Container for ejRecurrenceEditor widget-->
 <div id="RecurrenceEditor"></div>
 
-<button type="donerecur" onclick="closerecurrence()" id="donerecur1" class='recurbutton' style="float:right;margin-right:20px;margin-bottom:10px;">Recurrence String</button>
+<button type="donerecur" onclick="closeRecurrence()" id="donerecur1" class='recurbutton' style="float:right;margin-right:20px;margin-bottom:10px;">Recurrence String</button>
 
 <script type="text/javascript">
         $(function () {
             $("#RecurrenceEditor").ejRecurrenceEditor({
                 selectedRecurrenceType: 0,
-                create:"oncreate"
+                create:"onCreate"
             });
             
         });
         $("#donerecur1").ejButton({ width: '155px', height: '35px', showRoundedCorner: true });
        $("#RecurrenceEditor").after($("#donerecur1"));
-         function oncreate() {
+         function onCreate() {
              this.element.find("#recurrencetype_wrapper").css("width", "33%");
          }
-        function closerecurrence() {
+        function closeRecurrence() {
             var obj = $("#RecurrenceEditor").data("ejRecurrenceEditor")            
             alert(obj.getRecurrenceRule());
         }

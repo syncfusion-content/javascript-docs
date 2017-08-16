@@ -48,7 +48,7 @@ Add a *div* container to render the chart.
 <!DOCTYPE html>
 <html>
 <body>
-      <div id="chartcontainer" style="width: 820px; height: 500px;"></div>
+      <div id="container" style="width: 820px; height: 500px;"></div>
 </body>
 </html>
 
@@ -65,7 +65,7 @@ Initialize the chart by using the ejChart method. The chart is rendered to the s
       <script type="text/javascript" language="javascript ">
 
             $(function () {
-                $("#chartcontainer").ejChart();
+                $("#container").ejChart();
             });
       </script>
 </body>
@@ -108,7 +108,7 @@ Add a series object to the chart by using the [`series`](../api/ejchart.html#mem
 {% highlight javascript %}
 
 
-     $("#chartcontainer").ejChart({
+     $("#container").ejChart({
             // ...      
             series: [{
 		           // ...
@@ -128,7 +128,7 @@ Now, map the month and sales values in the data source to the line series by set
 {% highlight javascript %}
 
 
-     $("#chartcontainer").ejChart({
+     $("#container").ejChart({
             // ...      
             series: [{
 		           // ...
@@ -153,7 +153,7 @@ The following code example illustrates this,
 {% highlight javascript %}
 
 
-     $("#chartcontainer").ejChart({
+     $("#container").ejChart({
             // ... 
 	        primaryYAxis:{
                 //Customize the axis label format.
@@ -181,7 +181,7 @@ The following code example illustrates this,
 {% highlight javascript %}
 
 
-     $("#chartcontainer").ejChart({
+     $("#container").ejChart({
             // ...      
             series: [{
 		           // ....
@@ -223,7 +223,7 @@ The following code example shows how to set the id of the above template to [`te
 {% highlight javascript %}
 
 
-     $("#chartcontainer").ejChart({
+     $("#container").ejChart({
             // ...      
             series: [{
 		         // ...
@@ -253,7 +253,7 @@ You can enable or disable the legend by using the [`visible`](../api/ejchart#mem
 {% highlight javascript %}
 
 
-     $("#chartcontainer").ejChart({
+     $("#container").ejChart({
             // ...      
             //Initializing Series	
             series: [{
@@ -286,7 +286,7 @@ The following code example illustrates this,
 {% highlight javascript %}
 
 
-     $("#chartcontainer").ejChart({
+     $("#container").ejChart({
             // ...      
             //Initializing Series	
             series: [{
@@ -312,7 +312,7 @@ You need to add a title to the chart to provide quick information to the user ab
 {% highlight javascript %}
 
 
-     $("#chartcontainer").ejChart({
+     $("#container").ejChart({
             // ...      
             title: {
 	           //Add chart title

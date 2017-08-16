@@ -21,7 +21,7 @@ Set [`isResponsive`](https://help.syncfusion.com/api/js/ejribbon#members:isrespo
 {% highlight html %}
 
     <div id="Ribbon"></div>
-    <ul id="ribbonmenu">
+    <ul id="ribbonMenu">
         <li><a>FILE </a>
             <ul>
                 <li><a>New</a></li>
@@ -37,7 +37,7 @@ Set [`isResponsive`](https://help.syncfusion.com/api/js/ejribbon#members:isrespo
                 isResponsive: true,
                 applicationTab: {
                     type: ej.Ribbon.applicationTabType.menu,
-                    menuItemID: "ribbonmenu",
+                    menuItemID: "ribbonMenu",
                 },
                 tabs: [{
                     id: "home",
@@ -324,7 +324,7 @@ For each group shirked for resizing, Custom Class will be added based on group t
 {% highlight html %}
 
     <div id="Ribbon"></div>    
-    <ul id="ribbonmenu">
+    <ul id="ribbonMenu">
         <li>
             <a>FILE</a>
             <ul>
@@ -335,8 +335,8 @@ For each group shirked for resizing, Custom Class will be added based on group t
     </ul>
     <script type="text/javascript">
         $(function () {
-            var fontfamily = ["Segoe UI", "Arial"],
-                fontsize = ["1pt", "2pt"];
+            var fontFamily = ["Segoe UI", "Arial"],
+                fontSize = ["1pt", "2pt"];
             $("#Ribbon").ejRibbon({
                 width: "36%",
 
@@ -344,7 +344,7 @@ For each group shirked for resizing, Custom Class will be added based on group t
                 allowResizing: true,
                 applicationTab: {
                     type: ej.Ribbon.applicationTabType.menu,
-                    menuItemID: "ribbonmenu"
+                    menuItemID: "ribbonMenu"
                 },
                 tabs: [{
                     id: "home",
@@ -397,18 +397,18 @@ For each group shirked for resizing, Custom Class will be added based on group t
                         alignType: "rows",
                         content: [{
                             groups: [{
-                                id: "fontfamily",
+                                id: "fontFamily",
                                 toolTip: "Font",
                                 dropdownSettings: {
-                                    dataSource: fontfamily,
+                                    dataSource: fontFamily,
                                     text: "Segoe UI",
                                     width: 150
                                 }
                             }, {
-                                id: "fontsize",
+                                id: "fontSize",
                                 toolTip: "FontSize",
                                 dropdownSettings: {
-                                    dataSource: fontsize,
+                                    dataSource: fontSize,
                                     text: "1pt",
                                     width: 65
                                 }
@@ -476,7 +476,7 @@ For each group shirked for resizing, Custom Class will be added based on group t
                         alignType: ej.Ribbon.alignType.rows,
                         content: [{
                             groups: [{
-                                id: "printlayout",
+                                id: "printLayout",
                                 text: "Print Layout",
                                 toolTip: "Print Layout",
                                 buttonSettings: {

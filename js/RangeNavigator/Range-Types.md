@@ -22,7 +22,7 @@ api: /api/js/ejrangenavigator
 {% highlight javascript %}
 
 
-    $("#rangecontainer").ejRangeNavigator({
+    $("#container").ejRangeNavigator({
       //...
         valueType: "numeric",
       //...	
@@ -45,7 +45,7 @@ By default the **valueType** of the **RangeNavigator** is “**datetime**” and
 {% highlight javascript %}
 
 
-$("#rangecontainer").ejRangeNavigator({
+$("#container").ejRangeNavigator({
       //...
         valueType: "datetime",
       //...	
@@ -75,7 +75,7 @@ By default **intervalType** for higher level labels are **years** and for lower 
 {% highlight javascript %}
 
 
-$("#rangecontainer").ejRangeNavigator({
+$("#container").ejRangeNavigator({
    //...
      labelSettings:
       { 

@@ -38,7 +38,7 @@ ej.datavisualization.RangeNavigator.locale["fr-FR"] = {
 {% highlight javascript %}
 
 
-               $("#rangecontainer").ejRangeNavigator({
+               $("#container").ejRangeNavigator({
                {   
                    // ...              
                    locale: 'fr-FR',
@@ -59,7 +59,7 @@ ej.datavisualization.RangeNavigator.locale["fr-FR"] = {
 {% highlight javascript %}
 
 
-               $("#rangecontainer").ejRangeNavigator({
+               $("#container").ejRangeNavigator({
                {   
                    // ...              
                    enableRTL:true,

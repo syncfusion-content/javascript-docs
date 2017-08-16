@@ -17,16 +17,16 @@ You can add annotations to the chart by using the [`annotations`](../api/ejchart
 {% highlight html %}
 
 <body>
-  <div id="chartcontainer"></div> 
+  <div id="container"></div> 
               
-  <div id= "watermark" style="font-size:100px; display:none">2014</div>
+  <div id= "water" style="font-size:100px; display:none">2014</div>
   <script>
-   $("#chartcontainer").ejChart({
+   $("#container").ejChart({
 
             //  ...
             annotations: [
                 //Add Annotation content here
-	              { visible: true, content: "watermark", opacity: 0.2, region: "series" }
+	              { visible: true, content: "water", opacity: 0.2, region: "series" }
                 //  ...
            ],             
         //  ...
@@ -52,10 +52,10 @@ To rotate the annotation template, you can use the [`angle`](../api/ejchart#memb
 {% highlight javascript %}
 
 
-    $("#chartcontainer").ejChart({
+    $("#container").ejChart({
             //  ...
             annotations: [{  visible: true, 
-                    content: "watermark", 
+                    content: "water", 
                     //Rotate the Annotation template
                     angle: 270,
                   },
@@ -87,10 +87,10 @@ N> By using the [`region`](../api/ejchart#members:annotations-region) option, yo
 {% highlight javascript %}
 
 
-    $("#chartcontainer").ejChart({
+    $("#container").ejChart({
             //  ...
              annotations: [{  visible: true, 
-                  content: "lowtemp", 
+                  content: "lowtemperature", 
                   //Change coordinateUnit type to pixels
                   coordinateUnit: "pixels",  x: 170, y: 350,   
                   //  ...
@@ -114,10 +114,10 @@ When the coordinateUnit is set to pixels or points, you can align the annotation
 {% highlight javascript %}
 
 
-    $("#chartcontainer").ejChart({
+    $("#container").ejChart({
             //  ...
              annotations: [{  visible: true, 
-                     content: "hightemp", 
+                     content: "hightemperature", 
                      //Change alignment of annotation template
                      verticalAlignment: "middle",
                      horizontalAlignment: "near",

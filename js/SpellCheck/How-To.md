@@ -40,11 +40,11 @@ The following code example describes the above behavior.
             },
             actionSuccess: function (args) {
                 var spellObj = $("#SpellCheck").data("ejSpellCheck");
-                spellObj.setCursorPosition(pos);
+                spellObj.setCursorPosition(position);
             }
         });
     });
-    var pos;
+    var position;
     function onValidateTimeDelay() {
         var spellObj = $("#SpellCheck").data("ejSpellCheck");
         var proxy = spellObj;
@@ -52,15 +52,11 @@ The following code example describes the above behavior.
             clearInterval(proxy.setTimeObj);
         // 2000 milliseconds is customizable and it’s to wait before executing the code. If omitted, the value 0 is used
         proxy.setTimeObj = setTimeout(function () {
-            pos = proxy.getCursorPosition();
+            position = proxy.getCursorPosition();
             proxy.validate();
         }, 2000);
     }
 </script>
 
     
-
 {% endhighlight %}
-
-
-

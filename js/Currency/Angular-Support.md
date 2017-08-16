@@ -51,10 +51,10 @@ The following example depicts the way to bind data to the **CurrencyTextBox** wi
                         <label for="currency">Currency</label>
                     </td>
                     <td>
-                        <input id="currency" type="text" ej-currencytextbox e-value="cvalue" />
+                        <input id="currency" type="text" ej-currencytextbox e-value="currencyValue" />
                     </td>
                     <td>
-                        <input type="text" class="input ejinputtext" ng-model="cvalue" />
+                        <input type="text" class="input ejinputtext" ng-model="currencyValue" />
                     </td>
                 </tr>
 
@@ -64,7 +64,7 @@ The following example depicts the way to bind data to the **CurrencyTextBox** wi
     <script type="text/javascript">
         angular.module('TextCtrl', ['ejangular'])
            .controller('TextboxCtrl', function ($scope) {
-               $scope.cvalue = 400;
+               $scope.currencyValue = 400;
            });
     </script>
     <style>

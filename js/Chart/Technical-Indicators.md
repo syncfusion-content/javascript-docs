@@ -18,7 +18,7 @@ You can bind the series [`dataSource`](../api/ejchart#members:indicators-datasou
 
 {% highlight javascript %}
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
               //  ...
               //Initializing Series
               series:[{
@@ -50,7 +50,7 @@ Also, you can add data to the indicator directly by using the [`dataSource`](../
 {% highlight javascript %}
 
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
             //  ...
             //Initializing Indicators    
             indicators: [{
@@ -78,7 +78,7 @@ To create an Accumulation Distribution indicator, set the [`indicators.type`](..
 {% highlight javascript %}
 
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
              // Initializing Series
               series:[{
                        name: "Hilo",
@@ -117,7 +117,7 @@ You can create an ATR indicator by setting the [`indicators.type`](../api/ejchar
 {% highlight javascript %}
 
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
             // ...
             //Initializing Indicators    
             indicators: [{
@@ -143,7 +143,7 @@ Bollinger Band indicator is created by setting the [`indicators.type`](../api/ej
 {% highlight javascript %}
 
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
              // ...             
              //Initializing Indicators    
               indicators: [{
@@ -169,7 +169,7 @@ To render an EMA indicator, you have to set the [`indicators.type`](../api/ejcha
 {% highlight javascript %}
 
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
             // ...             
              //Initializing Indicators    
               indicators: [{
@@ -195,7 +195,7 @@ Momentum Technical indicator is created by setting the [`indicators.type`](../ap
 {% highlight javascript %}
 
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
             // ...             
              //Initializing Indicators    
               indicators: [{
@@ -221,7 +221,7 @@ To render an MACD indicator, you have to set the [`indicators.type`](../api/ejch
 {% highlight javascript %}
 
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
             // ...             
              //Initializing Indicators    
               indicators: [{
@@ -248,7 +248,7 @@ By using the [`macdType`](../api/ejchart#members:indicators-macdtype) enumeratio
 {% highlight javascript %}
 
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
             // ...             
              //Initializing Indicators    
               indicators: [{
@@ -273,7 +273,7 @@ To render the RSI indicator, set the [`indicators.type`](../api/ejchart#members:
 {% highlight javascript %}
 
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
             // ...             
              //Initializing Indicators    
               indicators: [{
@@ -301,7 +301,7 @@ To render the SMA indicator, you should specify the [`indicators.type`](../api/e
 {% highlight javascript %}
 
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
             // ...             
              //Initializing Indicators    
               indicators: [{
@@ -328,7 +328,7 @@ For the Stochastic indicator, you need to set the [`indicators.type`](../api/ejc
 {% highlight javascript %}
 
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
             // ...            
              //Initializing Indicators    
               indicators: [{
@@ -355,7 +355,7 @@ To render the TMA indicator, you should specify the [`indicators.type`](../api/e
 {% highlight javascript %}
 
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
             // ...             
              //Initializing Indicators    
               indicators: [{
@@ -382,7 +382,7 @@ To display the indicator tooltip, use [`visible`](../api/ejchart#members:indicat
 {% highlight javascript %}
 
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
             // ...             
              //Initializing Indicators    
               indicators: [{

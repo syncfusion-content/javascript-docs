@@ -58,12 +58,12 @@ The insert method of the data manager is used to add a new record to the table. 
 
         // This function can be better replaced with any template engine. We used this for simplicity in demo.
         function renderTable(data) {
-            var tbody = "", row;
+            var tableBody = "", row;
             for (var i = 0; i < data.length; i++) {
                 row = data[i];
-                tbody += String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td></tr>", row.OrderID, row.CustomerID, row.EmployeeID);
+                tableBody += String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td></tr>", row.OrderID, row.CustomerID, row.EmployeeID);
             }
-            $(".table tbody").html(tbody);
+            $(".table tbody").html(tableBody);
         }
     </script>
 
@@ -107,12 +107,12 @@ The update method is used to update the modified changes made to a record in the
         });
 
         function renderTable(data) {
-            var tbody = "", row;
+            var tableBody = "", row;
             for (var i = 0; i < data.length; i++) {
                 row = data[i];
-                tbody += String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td></tr>", row.OrderID, row.CustomerID, row.EmployeeID);
+                tableBody += String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td></tr>", row.OrderID, row.CustomerID, row.EmployeeID);
             }
-            $(".table tbody").html(tbody);
+            $(".table tbody").html(tableBody);
         }
     </script>
 
@@ -156,12 +156,12 @@ The remove function receives the items to be deleted in the Data Table. The func
         });
 
         function renderTable(data) {
-            var tbody = "", row;
+            var tableBody = "", row;
             for (var i = 0; i < data.length; i++) {
                 row = data[i];
-                tbody += String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td></tr>", row.OrderID, row.CustomerID, row.EmployeeID);
+                tableBody += String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td></tr>", row.OrderID, row.CustomerID, row.EmployeeID);
             }
-            $(".table tbody").html(tbody);
+            $(".table tbody").html(tableBody);
         }
     </script>
 
@@ -222,12 +222,12 @@ The insert method of the data manager is used to add a new record to the table. 
 
     // This function can be better replaced with any template engine. We used this for simplicity in demo.
     function renderTable(data) {
-        var tbody = "", row;
+        var tableBody = "", row;
         for (var i = 0; i < data.length; i++) {
             row = data[i];
-            tbody += String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td></tr>", row.ItemID, row.ItemName, row.ItemType);
+            tableBody += String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td></tr>", row.ItemID, row.ItemName, row.ItemType);
         }
-        $(".table tbody").html(tbody);
+        $(".table tbody").html(tableBody);
     }
     </script>
 
@@ -277,12 +277,12 @@ The update method is used to update the modified changes made to a record in the
 
         // This function can be better replaced with any template engine. We used this for simplicity in demo.
         function renderTable(data) {
-            var tbody = "", row;
+            var tableBody = "", row;
             for (var i = 0; i < data.length; i++) {
                 row = data[i];
-                tbody += String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td></tr>", row.ItemID, row.ItemName, row.ItemType);
+                tableBody += String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td></tr>", row.ItemID, row.ItemName, row.ItemType);
             }
-            $(".table tbody").html(tbody);
+            $(".table tbody").html(tableBody);
         }
     </script>
 
@@ -330,12 +330,12 @@ The remove action submits the data items that should be deleted, or just its IDs
 
         // This function can be better replaced with any template engine. We used this for simplicity in demo.
         function renderTable(data) {
-            var tbody = "", row;
+            var tableBody = "", row;
             for (var i = 0; i < data.length; i++) {
                 row = data[i];
-                tbody += String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td></tr>", row.ItemID, row.ItemName, row.ItemType);
+                tableBody += String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td></tr>", row.ItemID, row.ItemName, row.ItemType);
             }
-            $(".table tbody").html(tbody);
+            $(".table tbody").html(tableBody);
         }
 
     </script>
@@ -375,9 +375,9 @@ Batch Editing is a unique feature, where requests to add, remove and change are 
     <script type="text/javascript">
         $(function () {
             window.gridData = [
-            { FirstName: "john", EmployeeID: 1, LastName: "Paul"},
-            { FirstName: "ben", EmployeeID: 2, LastName: "Parker"},
-            { FirstName: "andrew", EmployeeID:3, LastName: "Becket"}];
+            { FirstName: "John", EmployeeID: 1, LastName: "Paul"},
+            { FirstName: "Ben", EmployeeID: 2, LastName: "Parker"},
+            { FirstName: "Andrew", EmployeeID:3, LastName: "Becket"}];
    
             window.DataManager = ej.DataManager(window.gridData);
             window.changes = { changed: [], added: [], deleted: [] };
@@ -412,19 +412,19 @@ Batch Editing is a unique feature, where requests to add, remove and change are 
                             window.changes.deleted.push(data[0]);
                     }
                     else {
-                        var dm = ej.DataManager(window.gridData).saveChanges(window.changes);
-                        renderTable(dm);
+                        var tableData = ej.DataManager(window.gridData).saveChanges(window.changes);
+                        renderTable(tableData);
                     }
                 }
             });
         });
         function renderTable(data) {
-            var tbody = "", row;
+            var tableBody = "", row;
             for (var i = 0; i < data.length; i++) {
                 row = data[i];
-                tbody += String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td></tr>", row.EmployeeID, row.FirstName, row.LastName);
+                tableBody += String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td></tr>", row.EmployeeID, row.FirstName, row.LastName);
             }
-            $(".table tbody").html(tbody);
+            $(".table tbody").html(tableBody);
         }
     </script>
 
@@ -432,7 +432,4 @@ Batch Editing is a unique feature, where requests to add, remove and change are 
 
 Result of the above code example is illustrated as follows.
 
-![](Editing_images/Editing_img1.png) 
-
-
-
+![](Editing_images/Editing_img1.png)

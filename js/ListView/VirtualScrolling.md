@@ -23,7 +23,7 @@ Refer the following code example.
 {% highlight html %}
 
     <div class="cols-sample-area">               
-                    <div class="ctrllabel">Select a customer</div>
+                    <div class="ctrl-label">Select a customer</div>
                       <div id="defaultlistbox">              
                       </div>
             </div>

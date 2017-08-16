@@ -45,7 +45,7 @@ Add necessary input elements to render **Textboxes widget**.
 {% highlight html %}
 
 
-<div class="ele-txt" style="">Electricity Bill Calculator</div>
+<div class="element-text" style="">Electricity Bill Calculator</div>
 <br />
 <table class="editors">
      <tbody>
@@ -54,7 +54,7 @@ Add necessary input elements to render **Textboxes widget**.
               <label>Unit meters</label>
            </td>
            <td>
-              <input id="unitmcalc" type="text" />
+              <input id="unitCalc" type="text" />
            </td>
         </tr>
         <tr>
@@ -70,7 +70,7 @@ Add necessary input elements to render **Textboxes widget**.
                <label>Fare</label>
             </td>
             <td>
-                <input id="amountperum" type="text" />
+                <input id="amountPerUnit" type="text" />
             </td>
         </tr>
         <tr>
@@ -78,13 +78,13 @@ Add necessary input elements to render **Textboxes widget**.
                <label>Mobile No</label>
             </td>
             <td>
-               <input id="mobiNo" type="text" />
+               <input id="mobileNo" type="text" />
             </td>
        </tr>
      </tbody>
 </table>
-  <div class="paybill">
-      <button class="e-btn" id="cbill">Calculate</button>
+  <div class="pay-bill">
+      <button class="e-btn" id="calcBill">Calculate</button>
   </div>
 
 
@@ -92,20 +92,16 @@ Add necessary input elements to render **Textboxes widget**.
 {% endhighlight %}
 
 
-
 Initializes the **Textboxes widget** as shown in the following section.
 
 {% highlight javascript %}
 
-
-
     // Declares Necessary variable creation 
     
-    var kmcalc, servtax, amuntperkm;
     $(function () {
         // document ready
         // simple Numeric creation
-        $("#unitmcalc").ejNumericTextbox({
+        $("#unitCalc").ejNumericTextbox({
           watermarkText: "Units" // set watermark in numeric
          });
         // simple Percentage creation
@@ -113,16 +109,16 @@ Initializes the **Textboxes widget** as shown in the following section.
             watermarkText: "Service Tax" // sets watermark in percentage
         });
          // simple Currency creation
-        $("#amountperum").ejCurrencyTextbox({
+        $("#amountPerUnit").ejCurrencyTextbox({
             watermarkText: "Amount per unit" // sets watermark in currency                       
         });
         // simple MaskEdit creation
-        $("#mobiNo").ejMaskEdit({
+        $("#mobileNo").ejMaskEdit({
             watermarkText: "Mobile No" // sets watermark in maskedit
         });
     
         // simple Button creation
-        $("#cbill").ejButton({
+        $("#calcBill").ejButton({
           width: "100px",
           height: "30px",
       });
@@ -133,13 +129,12 @@ Initializes the **Textboxes widget** as shown in the following section.
 {% endhighlight %}
 
 
-
 {% highlight css %}
 
 
 <style type="text/css" class="cssStyles">
 
-        .ele-txt
+        .element-text
         {
             display: inline-block;
             font-size: 20px;
@@ -153,7 +148,7 @@ Initializes the **Textboxes widget** as shown in the following section.
         {
             max-width: 400px;
         }
-        .paybill
+        .pay-bill
         {
             margin-left: 208px;
             margin-top: 15px;
@@ -183,14 +178,11 @@ You can set the **“minValue”,** **“maxValue”** and **“value”** in Nu
 
 {% highlight javascript %}
 
-
-
           // Declares the Necessary variable creation 
-          var kmcalc, servtax, amuntperkm;
           $(function () {
               // document ready
               // simple Numeric creation
-             $("#unitmcalc").ejNumericTextbox({
+             $("#unitCalc").ejNumericTextbox({
                 watermarkText: "Units", // sets watermark in numeric
                 value: 35, // sets value in the numeric
                 minValue: 1, // sets min value for range 
@@ -204,19 +196,19 @@ You can set the **“minValue”,** **“maxValue”** and **“value”** in Nu
                 maxValue: 100// sets max value for calculation
             });
               // simple Currency creation
-              $("#amountperum").ejCurrencyTextbox({
+              $("#amountPerUnit").ejCurrencyTextbox({
                 watermarkText: " Amount per unit", //sets watermark in currency
                 value: 55, // sets value by default
                 minValue: 5, // sets min value for amount
                 maxValue: 55// sets max value for amount
             });
               // simple MaskEdit creation
-              $("#mobiNo").ejMaskEdit({
+              $("#mobileNo").ejMaskEdit({
                  watermarkText: "Mobile No", // sets watermark in maskedit
                  maskFormat: "99-999-99999"// sets the mask format in maskedit
             });
               // simple Button creation
-              $("#cbill").ejButton({
+              $("#calcBill").ejButton({
                 width: "100px",
                 height: "30px",
             });
@@ -226,11 +218,7 @@ You can set the **“minValue”,** **“maxValue”** and **“value”** in Nu
 
 {% endhighlight %}
 
-
-
 The following screenshot illustrates the output of the above code examples.
-
-
 
 ![](Getting-Started_images/Getting-Started_img3.png) 
  
@@ -241,14 +229,11 @@ You can set the “**StrictMode” option** to restrict entering values defined 
 
 {% highlight javascript %}
 
-
-
           // Declares Necessary variable creation
     
-          var kmcalc, servtax, amuntperkm;
           $(function () {
               // simple Numeric creation
-              $("#unitmcalc").ejNumericTextbox({
+              $("#unitCalc").ejNumericTextbox({
                 watermarkText: "Units", // sets watermark in numeric
                 value: 35, // sets value in the numeric
                 minValue: 1, // sets min value for range 
@@ -262,7 +247,7 @@ You can set the “**StrictMode” option** to restrict entering values defined 
                 maxValue: 100// sets max value for calculation
             });
               // simple Currency creation
-              $("#amountperum").ejCurrencyTextbox({
+              $("#amountPerUnit").ejCurrencyTextbox({
                 watermarkText: " Amount per unit", // sets watermark in currency
                 value: 55, // sets value by default
                 minValue: 5, // sets min value for amount
@@ -270,22 +255,18 @@ You can set the “**StrictMode” option** to restrict entering values defined 
                 enableStrictMode:true // sets strict mode to True will set the value 
             });
               // simple MaskEdit creation
-              $("#mobiNo").ejMaskEdit({
+              $("#mobileNo").ejMaskEdit({
                 watermarkText: "Mobile No", // sets watermark in Maskedit
                 maskFormat: "99-999-99999"// sets the mask format
             });
               // Simple Button creation
-              $("#cbill").ejButton({
+              $("#calcBill").ejButton({
                 width: "100px",
                 height: "30px",
             });
           });
 
-
-
 {% endhighlight %}
-
-
 
 Run the above code example and you can see that it restricts entering a value exceeding the **minValue** and **maxValue** ranges mentioned in the CurrencyTextBox. 
 
@@ -297,31 +278,29 @@ You can use events to calculate the total and display the value. You can achieve
 
           // Declares Necessary variable creation 
    
-          var kmcalc, servtax, amuntperkm;
+          var unitMetre, serviceTax, amountPerKm;
           $(function () {
                // Refers to the Textboxes customization section
               // Simple Button creation
-              $("#cbill").ejButton({
+              $("#calcBill").ejButton({
                 click: "calculateBill",
                 width: "100px",
                 height: "30px",
             });
-            umcalc = $("#unitmcalc").data("ejNumericTextbox");// Object of Numeric 
-            servtax = $("#servTax").data("ejPercentageTextbox");// Object of Perentage
-            amuntperkm = $("#amountperum").data("ejCurrencyTextbox"); // Object of Currency
-            cusmob = $("#mobiNo").data("ejMaskEdit"); // Object of MaskEdit
+            unitMetre = $("#unitCalc").data("ejNumericTextbox");// Object of Numeric 
+            serviceTax = $("#servTax").data("ejPercentageTextbox");// Object of Perentage
+            amountPerKm = $("#amountPerUnit").data("ejCurrencyTextbox"); // Object of Currency
+            mobileNumber = $("#mobileNo").data("ejMaskEdit"); // Object of MaskEdit
           });
           // Simple Bill amount calculation.
           function calculateBill() {
             // This is used to calculate the Net amount
-            var netamunt = umcalc.model.value * amuntperkm.model.value;
+            var netAmount = unitMetre.model.value * amountPerKm.model.value;
             // This is used to calculate the service tax amount
-            var sTax = (netamunt * servtax.model.value) / 100;
+            var sTax = (netAmount * serviceTax.model.value) / 100;
             // This shows the calculated amount for the units
-            alert("The amount $" + (netamunt + sTax) + " has been sent as message to " + cusmob.model.value + ".");
+            alert("The amount $" + (netAmount + sTax) + " has been sent as message to " + mobileNumber.model.value + ".");
           }
-
-
 
 
 {% endhighlight %}
@@ -329,4 +308,3 @@ You can use events to calculate the total and display the value. You can achieve
 Run the above code example, fill the required Textbox fields and click the Calculate button. The values are displayed and an alert message is shown. The following screenshot illustrates the final output of the Electricity bill calculator. 
 
 ![](Getting-Started_images/Getting-Started_img4.png) 
-

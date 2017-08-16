@@ -14,7 +14,7 @@ api : /api/js/ejchart
 
 {% highlight javascript %}
 
-      $("#chartcontainer").ejChart({
+      $("#container").ejChart({
             
             //  ...
             //Enable Canvas rendering mode

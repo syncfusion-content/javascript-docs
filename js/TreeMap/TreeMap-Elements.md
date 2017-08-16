@@ -117,14 +117,14 @@ You can set headers for each level by setting the `showHeader` property of the e
             $("#treemapContainer").ejTreeMap({
                 // ...             
                 levels: [
-                    {groupPath: "Continent", groupGap: 2, headerHeight: 25,  headerTemplate: 'headertemplate' }
+                    {groupPath: "Continent", groupGap: 2, headerHeight: 25,  headerTemplate: 'Template' }
                 ],
                 // ...             
             });
         }); 
     </script>     
 
-    <script  id="headertemplate" type="application/jsrender">
+    <script  id="Template" type="application/jsrender">
         <div style="background-color: white; margin:5px">
             <label style="color:black;font-size:large;" >{{:header}}</label><br />            
         </div>                        
@@ -152,7 +152,7 @@ The text in the header can be customized by triggering the event [`headerTemplat
             $("#treemapContainer").ejTreeMap({
                 // ...             
                 levels: [
-                    {groupPath: "Continent", headerHeight: 25,  headerTemplate: 'headertemplate' }
+                    {groupPath: "Continent", headerHeight: 25,  headerTemplate: 'Template' }
                 ],
                 headerTemplateRendering:'loadTemplate',
                 // ...             
@@ -160,7 +160,7 @@ The text in the header can be customized by triggering the event [`headerTemplat
         }); 
     </script>     
 
-    <script  id="headertemplate" type="application/jsrender">
+    <script  id="Template" type="application/jsrender">
         <div style="background-color: white; margin:5px">
             <label style="color:black;font-size:large;" >{{:header}}</label><br />            
         </div>                        
@@ -203,7 +203,7 @@ You can also set labels for the leaf nodes by setting the `showLabels` property 
         }); 
     </script>     
 
-    <script  id="headertemplate" type="application/jsrender">
+    <script  id="Template" type="application/jsrender">
         <div style="background-color: white; margin:5px">
             <label style="color:black;font-size:medium;" >{{:header}}</label><br />            
         </div>                        
@@ -237,7 +237,7 @@ You can handle the label overflow, by specifying any one of the following values
             $("#treemapContainer").ejTreeMap({
                 // ...                 
                 levels: [
-                  {groupPath: "Continent", showLabels: true, headerTemplate: 'headertemplate' }
+                  {groupPath: "Continent", showLabels: true, headerTemplate: 'Template' }
                 ],  
                 leafItemSettings: { showLabels: true , textOverFlow: "wrap"},                          
             });

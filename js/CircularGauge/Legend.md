@@ -262,13 +262,13 @@ $("#CircularGauge1").ejCircularGauge({
 
 ### Legend Item Click
 
-You can get the legend item details such as *Rangeindex, bounds and shape* by subscribing the [`legendItemClick`](../api/ejcirculargauge#events:legenditemclick) event of the circular gauge. When the legend item is clicked, it triggers the event and returns the legend information 
+You can get the legend item details such as *RangeIndex, bounds and shape* by subscribing the [`legendItemClick`](../api/ejcirculargauge#events:legenditemclick) event of the circular gauge. When the legend item is clicked, it triggers the event and returns the legend information 
 
 {% highlight javascript %}
 
 $("#CircularGauge1").ejCircularGauge({
            
-            //Subscribe the legenditem click event
+            //Subscribe the legend item click event
             legendItemClick: "onLegendClicked",
 
             //...

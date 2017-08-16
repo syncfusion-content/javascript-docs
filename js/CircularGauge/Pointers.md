@@ -396,7 +396,7 @@ In this type, marker pointer is completely replaced by image. We can implement i
             },
             // To set scale options
             scales: [{
-                // set basic apperance
+                // set basic appearance
                 showRanges: true,
                 showLabels: false,
                 startAngle: 180,
@@ -468,7 +468,7 @@ $(function () {
             frame: { frameType: "halfcircle" },
             // To set scale options
             scales: [{
-                // set basic apperance
+                // set basic appearance
                 showRanges: true, showLabels: false,
                 startAngle: 180, sweepAngle: 180, radius: 130,
                 showScaleBar: false,
@@ -545,7 +545,7 @@ Execute the above code to render the following output.
                 },
                 // For setting pointer2
                 {
-                    distancFromScale: 20,
+                    distanceFromScale: 20,
                     placement: "near",
                     type: "marker",
                     markerType: "triangle",
