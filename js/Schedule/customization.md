@@ -138,6 +138,37 @@ $(function() {
 
 {% endhighlight %}
 
+## Hide Weekend days
+
+The Scheduler can be customized to display only the working days, thus hiding the weekend days from it. The working days render based on the values given in the [workWeek](/api/js/ejschedule#members:workweek) property. The days that are not mentioned in the `workWeek` collection is considered to be the weekend days and it can be hidden from the Scheduler by setting `false` to the [showWeekend](/api/js/ejschedule#members:showweekend) property.
+
+The following code example renders the Scheduler by hiding the weekend days.
+
+{% highlight html %}
+
+<!--Container for ejScheduler widget-->
+<div id="Schedule1"></div>
+
+<script type="text/javascript">
+$(function() {
+    $("#Schedule1").ejSchedule({
+        width: "100%",
+        currentDate: new Date(2015, 04, 05),
+        showWeekend: false,
+        appointmentSettings: {
+            dataSource: [{
+                Id: 101,
+                Subject: "Talk with Nature",
+                StartTime: new Date(2015, 11, 5, 10, 00),
+                EndTime: new Date(2015, 11, 5, 11, 00)
+            }]
+        }
+    });
+});
+</script>
+
+{% endhighlight %}
+
 ## Date Customization
 
 The date in the Scheduler can be customized by setting specific minimum and maximum date ranges and also defining various date formats to it.

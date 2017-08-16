@@ -219,9 +219,9 @@ You can also add the custom words into the custom dictionary file through the di
 * Context Menu Mode - Add To Dictionary option is available while right click on the error word and selecting this option, the word will be adding into the custom dictionary file.
 
 
-## SpellCheck on typing
+## Checking content on typing
 
-SpellCheck control support for spell check the content on press the Enter and Space key. The cursor position also properly retained while processing the spellcheck operations. If you enable “enableValidateOnType” property, the spellcheck operation will be performed on type. 
+SpellCheck control provides support for checking the content, on pressing the `Enter` and `Space` key. The cursor position will also be properly retained, while processing the SpellCheck operations. If you enable “enableValidateOnType” property, the spellcheck operation will be carried out on typing.
 
 The following code example describes the above behavior.
 
@@ -234,16 +234,17 @@ It is a concept vehicle with Liuid Silver body colour, 20-inch wheels, fabric fo
 Bluetec emission control system, quattro permanent four-wheel drve system,Audi S tronic dual-clutch gearbox, McPherson-strut front axle and a four-link rear axle, Audi drive select system with 3 modes (dynamic, sport, efficiency),
 MMI control panel with touch pad and dual-view technology, sound system with the proinent extending tweeters.
 
-</div> 
-<script type="text/javascript">
-
-$(function () { 
-$("#SpellCheck").ejSpellCheck({ dictionarySettings: { dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/CheckWords", customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/AddToDictionary" },
-contextMenuSettings: {enable: true},
-enableValidateOnType: true,
-}); 
-});
- </script>
+</div>
+<script>
+            $("#SpellCheck").ejSpellCheck({
+                dictionarySettings: {
+                    dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/CheckWords",
+                    customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/AddToDictionary"
+                },
+                contextMenuSettings: {enable: true},
+                enableValidateOnType: true
+            });
+</script>
 
 {% endhighlight %}
 
@@ -252,5 +253,70 @@ The following screenshot displays the output for the above code
 ![](/js/SpellCheck/ValidateOnType_images/validateontype.png)
 
 
-You can also validate spell check content the IFrame element or IFrame element target text by passing the IFrame element id or class name value to the controlsToValidate property. 
+You can also validate the content within the IFrame element or IFrame element target text, by passing the IFrame element id or class name value to the `controlsToValidate` property. 
 Detailed information is given [here](https://help.syncfusion.com/js/spellcheck/multiple-target)
+
+## Suggestion Words
+
+The `getSuggestionWords` option is used to retrieve the possible suggestion words for an error word which is provided to correct that spelling.
+
+The following code example describes the above behavior.
+
+
+{% highlight html %}
+
+<div id="SpellCheck" contenteditable="true">
+
+It is a concept vehicle with Liuid Silver body colour, 20-inch wheels, fabric foding roof, electrically-controlled hood, 4-cylinder 2.0 TDI engine rated 204 PS (150 kW; 201 hp)and 400  (295.02 lbf ft), diesel particulate filter and 
+Bluetec emission control system, quattro permanent four-wheel drve system,Audi S tronic dual-clutch gearbox, McPherson-strut front axle and a four-link rear axle, Audi drive select system with 3 modes (dynamic, sport, efficiency),
+MMI control panel with touch pad and dual-view technology, sound system with the proinent extending tweeters.
+
+</div>
+<script>
+            $("#SpellCheck").ejSpellCheck({
+                dictionarySettings: {
+                    dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/CheckWords",
+                    customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/AddToDictionary"
+                }
+            });
+            var schObj = $("#SpellCheck").data("ejSpellCheck");
+            schObj.getSuggestionWords("textarea");
+            setTimeout(function () {
+				alert(spellObj._suggestedWords);
+			}, 800);
+</script>
+
+{% endhighlight %}
+
+N> You can get the suggestion words after some time interval once this method is called. Since, ajax request processing takes place in the background.
+
+## Synchronous request
+
+On setting `enableAsync` option to false, enables the synchronous request to the server to perform SpellCheck operations.
+
+The following code example describes the above behavior.
+
+
+{% highlight html %}
+
+<div id="SpellCheck" contenteditable="true">
+
+It is a concept vehicle with Liuid Silver body colour, 20-inch wheels, fabric foding roof, electrically-controlled hood, 4-cylinder 2.0 TDI engine rated 204 PS (150 kW; 201 hp)and 400  (295.02 lbf ft), diesel particulate filter and 
+Bluetec emission control system, quattro permanent four-wheel drve system,Audi S tronic dual-clutch gearbox, McPherson-strut front axle and a four-link rear axle, Audi drive select system with 3 modes (dynamic, sport, efficiency),
+MMI control panel with touch pad and dual-view technology, sound system with the proinent extending tweeters.
+
+</div>
+<script>
+            $("#SpellCheck").ejSpellCheck({
+                dictionarySettings: {
+                    dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/CheckWords",
+                    customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/AddToDictionary"
+                },
+                enableAsync: false,
+                ajaxDataType: "json"
+            });            
+</script>
+
+{% endhighlight %}
+
+N> You need to set the `ajaxDataType` value as `json` to retrieve the synchronous request result properly.
