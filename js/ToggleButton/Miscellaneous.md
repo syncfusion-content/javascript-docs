@@ -21,7 +21,7 @@ In the **HTML** page, add the following button elements to configure **Toggle Bu
 {% highlight html %}
 
 
-<input type="checkbox" id="toggle_roundedCorenr" />  
+<input type="checkbox" id="toggle_roundedCorner" />  
 
 {% endhighlight %}
 
@@ -30,7 +30,7 @@ In the **HTML** page, add the following button elements to configure **Toggle Bu
 
    
         $(function () {
-            $("#toggle_roundedCorenr").ejToggleButton({
+            $("#toggle_roundedCorner").ejToggleButton({
                 width: "100px",
                 height: "30px",
                 contentType: "textandimage",
