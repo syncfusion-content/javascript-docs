@@ -39,7 +39,7 @@ The possible enum values for the gaugePosition are as follows:
 {% highlight html %}
 
 <div style="float: left" id="gauge1"></div>
-<div id=" CoreCircularGaugehalfright "></div>
+<div id=" CoreCircularGauge "></div>
 
 {% endhighlight %}
 
@@ -47,7 +47,7 @@ The possible enum values for the gaugePosition are as follows:
 {% highlight javascript %}
 
  $(function() {
-     $("#CoreCircularGaugehalfright").ejCircularGauge({
+     $("#CoreCircularGauge").ejCircularGauge({
          backgroundColor: "transparent",
          // To set dimension of the canvas.
          width: 800,

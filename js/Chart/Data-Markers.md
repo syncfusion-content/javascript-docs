@@ -23,7 +23,7 @@ The following code example explains on how to enable series marker and add shape
 {% highlight javascript %}
 
 
-     $("#chartcontainer").ejChart({
+     $("#container").ejChart({
             // ...
             //Adding shapes to series	
             series: [{
@@ -67,7 +67,7 @@ The following code example illustrates this,
 {% highlight javascript %}
 
 
-     $("#chartcontainer").ejChart({
+     $("#container").ejChart({
             // ...      
             series: [{
                 // ...
@@ -98,7 +98,7 @@ The following code example shows how to enable data label and set its horizontal
 {% highlight javascript %}
 
 
-     $("#chartcontainer").ejChart({
+     $("#container").ejChart({
             // ...      
             series: [{
                 // ...
@@ -143,7 +143,7 @@ The following code example shows how to add background shapes and set template t
 {% highlight javascript %}
 
 
-     $("#chartcontainer").ejChart({
+     $("#container").ejChart({
             // ...      
             series: [{
                // ...
@@ -186,7 +186,7 @@ The following code example shows how to rotate datalabel text and customize the 
 {% highlight javascript %}
 
 
-     $("#chartcontainer").ejChart({
+     $("#container").ejChart({
             // ...      
             series: [{
              // ...
@@ -216,14 +216,14 @@ The following code example shows how to set textPosition to display data label i
 {% highlight javascript %}
 
 
-     $("#chartcontainer").ejChart({
+     $("#container").ejChart({
             // ... 
 	        series:[{
                   // ....
                    marker: {
                        dataLabel: {
                            visible: true,
-                         // Place the datalabel text position in the centre of the rectangle
+                         // Place the datalabel text position in the center of the rectangle
                            textPosition: "middle"
                           // ...
                        } } 
@@ -245,7 +245,7 @@ The following code example shows how to set the *labelPosition*,
 {% highlight javascript %}
 
 
-     $("#chartcontainer").ejChart({
+     $("#container").ejChart({
             // ... 
 	        series:[{
                    points: [{ x: 'India', y: 24, text: 'India 24%' },
@@ -345,7 +345,7 @@ var chartData = [
           //... 
         ]; 
 
-     $("#chartcontainer").ejChart({
+     $("#container").ejChart({
             // ...      
             series: [{
                 // ...
@@ -377,7 +377,7 @@ If the data label is placed inside the data points segment, then that particular
 {% highlight javascript %}
 
 
-     $("#chartcontainer").ejChart({
+     $("#container").ejChart({
             // ...      
             series: [{
                 // ...
@@ -408,7 +408,7 @@ When the data is provided by using the [`points`](../api/ejchart#members:series-
 {% highlight javascript %}
 
 
-     $("#chartcontainer").ejChart({
+     $("#container").ejChart({
             // ...     
             series: [{
                     // ...
@@ -452,7 +452,7 @@ When the data is bound to the series by using the [`dataSource`](../api/ejchart#
 {% highlight javascript %}
 
 
-     $("#chartcontainer").ejChart({
+     $("#container").ejChart({
            // ...
             series: [{
                          //Add datasource and set xName and yName 
@@ -510,7 +510,7 @@ This feature is used to connect label and data point by using a line. It can be 
 {% highlight javascript %}
 
 
-     $("#chartcontainer").ejChart({
+     $("#container").ejChart({
             // ...      
             series: [{
 		      // ...
@@ -543,11 +543,11 @@ The following code example shows how to enable smart labels,
 {% highlight javascript %}
 
 
-     $("#chartcontainer").ejChart({
+     $("#container").ejChart({
             // ...      
             //Initializing Series	
             series: [{
-                points: [{ x: 'Other Personnal', y: 94658, text: 'Other Personal, 88.47%' },
+                points: [{ x: 'Other Personal', y: 94658, text: 'Other Personal, 88.47%' },
                              { x: 'Medical care', y: 9090, text: 'Medical care, 8.49%' },
 		                     { x: 'Housing', y: 2577, text: 'Housing, 2.40%' },
                              { x: 'Transportation', y: 473, text: 'Transportation, 0.44%' },

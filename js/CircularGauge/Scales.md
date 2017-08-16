@@ -123,7 +123,7 @@ Execute the above code to render the following output.
             borderWidth: 4,
                 // For setting pointer cap border color
             borderColor: "Blue",
-                // Fors etting pointer cap background color
+                // For setting pointer cap background color
             backgroundColor: "Red"
             }}]
         })
@@ -174,7 +174,7 @@ Execute the above code to render the following output.
                 // For setting scale background color
                 backgroundColor:"red",
                 // For setting scale bar opacity
-                opcity:0.5,
+                opacity:0.5,
                 // For setting scale bar shadow offset
                 shadowOffset: 20
             }]
@@ -230,7 +230,7 @@ $(function () {
                 scaleRadius: 80,
                 majorIntervalValue: 10,
                 direction:ej.datavisualization.CircularGauge.Directions.CounterClockwise,
-                opcity:0.5,
+                opacity:0.5,
                 shadowOffset: 5,
                 pointers:[{value:40,length:50}],
                 ticks:[{color:"red",distanceFromScale:80}],

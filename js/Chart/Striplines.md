@@ -19,7 +19,7 @@ You can create horizontal stripline by adding the [`stripline`](../api/ejchart#m
 
 {% highlight javascript %}
 
-     $("#chartcontainer").ejChart({
+     $("#container").ejChart({
           // ...
 
           //Initializing Primary Y Axis
@@ -55,7 +55,7 @@ You can create vertical stripline by adding the [`stripline`](../api/ejchart#mem
 
 {% highlight javascript %}
 
-     $("#chartcontainer").ejChart({
+     $("#container").ejChart({
           // ...
 
           //Initializing Primary X Axis
@@ -88,7 +88,7 @@ To customize the stripLine text, use the [`text`](../api/ejchart#members:primary
 
 {% highlight javascript %}
 
-     $("#chartcontainer").ejChart({
+     $("#container").ejChart({
           // ...
 
           //Initializing Primary Y Axis
@@ -116,7 +116,7 @@ Stripline text can be aligned by using the [`textAlignment`](../api/ejchart#memb
 
 {% highlight javascript %}
 
-     $("#chartcontainer").ejChart({
+     $("#container").ejChart({
           // ...
 
           //Initializing Primary Y Axis
@@ -143,7 +143,7 @@ To customize the stripLine styles, use the [`color`](../api/ejchart#members:prim
 
 {% highlight javascript %}
 
-     $("#chartcontainer").ejChart({
+     $("#container").ejChart({
           // ...
 
         //Initializing Primary Y Axis
@@ -173,7 +173,7 @@ Stripline [`zIndex`](../api/ejchart#members:primaryyaxis-stripline-zindex) prope
 
 {% highlight javascript %}
 
-     $("#chartcontainer").ejChart({
+     $("#container").ejChart({
           // ...
 
         //Initializing Primary Y Axis

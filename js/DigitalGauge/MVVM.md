@@ -33,7 +33,7 @@ api : /api/js/ejdigitalgauge
          <!—binding the value to the scope variables in application controller-->
          angular.module('syncApp', ['ejangular'])
          .controller('DigitalGauge', function ($scope) {
-             $scope.nvalue = “text”;
+             $scope.number = “text”;
          });
       </script>
    </body>
@@ -88,19 +88,19 @@ Finally while running the above codes, the following output will be rendered.
       <!—Refer the necessary script here-->
    </head>
    <body ng-controller="DigitalGauge">
-      Type here <input type="text" id="txtValue" **ng-model="nvalue"** Style="width:110px"/>
+      Type here <input type="text" id="txtValue" **ng-model="number"** Style="width:110px"/>
       <ej-digitalgauge id="digitalCore" e-height="200" e-load="loadGaugeTheme">
          <e-items>
             <e-item e-segmentSettings-width="1" e-segmentSettings-spacing="0"
                e-characterSetting-opacity="0.8" e-position-x="52"
-               e-value="nvalue" e-position-y="52"></e-item>
+               e-value="number" e-position-y="52"></e-item>
          </e-items>
       </ej-digitalgauge>
       <script type="text/javascript">
          <!--binding the value to the scope variables in application controller-->
          angular.module('syncApp', ['ejangular'])
          .controller('DigitalGauge', function ($scope) {
-             $scope.nvalue = "Syncfusion";
+             $scope.number = "Syncfusion";
          });
       </script>
    </body>

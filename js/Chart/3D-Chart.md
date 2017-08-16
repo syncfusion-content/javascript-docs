@@ -19,7 +19,7 @@ For rendering a 3D Column Chart, specify the series [`type`](../api/ejchart#memb
 
 {% highlight javascript %}
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
              // ...             
              series: [{
                 //Set chart type to series
@@ -48,7 +48,7 @@ You can create a 3D Bar Chart by setting the series [`type`](../api/ejchart#memb
 
 {% highlight javascript %}
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
              // ...             
              series: [{
                 //Set chart type to series
@@ -77,7 +77,7 @@ Stacking Column 3DChart is rendered by specifying the series [`type`](../api/ejc
 
 {% highlight javascript %}
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
              // ...             
             series: [{
                 //Set chart type to series1
@@ -109,7 +109,7 @@ Stacking Column 3DChart is rendered by specifying the series [`type`](../api/ejc
 
 {% highlight javascript %}
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
              // ...             
             series: [{
                 //Set chart type to series1
@@ -142,7 +142,7 @@ To create Stacking Bar 3DChart, set the series [`type`](../api/ejchart#members:s
 
 {% highlight javascript %}
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
              // ...             
             series: [{
                 //Set chart type to series1
@@ -174,7 +174,7 @@ You can create 100% Stacking Bar 3DChart by setting the series [`type`](../api/e
 
 {% highlight javascript %}
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
              // ...             
             series: [{
                 //Set chart type to series1
@@ -206,7 +206,7 @@ To render the Pie Chart in 3D view, enable the **enbel3D** option in the chart a
 
 {% highlight javascript %}
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
              // ...             
             series: [{
                 //Set chart type to series
@@ -234,7 +234,7 @@ To render the Doughnut Chart in 3D view, enable the **enbel3D** option in the ch
 
 {% highlight javascript %}
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
              // ...             
             series: [{
                 //Set chart type to series
@@ -265,7 +265,7 @@ To render the EjChart in 3D view, set the [`enable3D`](../api/ejchart#members:en
  
 {% highlight javascript %}
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
              // ...             
                //Enable 3DChart
                enable3D: true,    
@@ -287,7 +287,7 @@ To render the EjChart in 3D view, set the [`enable3D`](../api/ejchart#members:en
  
 {% highlight javascript %}
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
              // ...             
                //Enable SideBySideSeriesPlacement for 3DChart
                 sideBySideSeriesPlacement: true,	
@@ -307,7 +307,7 @@ In 3DChart, Cartesian axes lines are represented as walls and it defines the wid
 
 {% highlight javascript %}
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
              // ...           
               //Change 3DChart axis wall size
                wallSize: 10,
@@ -327,7 +327,7 @@ By using the [`depth`](../api/ejchart#members:depth) property, you can view the 
 
 {% highlight javascript %}
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
              // ...             
              //Change 3DChart depth value
              depth: 120,
@@ -347,7 +347,7 @@ To spin the 3D Chart on mouse dragging, enable [`enableRotation`](../api/ejchart
 
 {% highlight javascript %}
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
              // ...     
                      
              //Change 3DChart tilt value
@@ -375,7 +375,7 @@ The [`perspectiveAngle`](../api/ejchart#members:perspectiveangle) specifies the 
 
 {% highlight javascript %}
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
              // ...          
                 
               //Change 3DChart perspective angle

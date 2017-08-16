@@ -300,11 +300,11 @@ Execute the above code to render the following output.
                 //Adding custom label collection
                 customLabels: [
                 {
-                    value: "Mathematics Mark Comparision",
+                    value: "Mathematics Mark Comparison",
                     position: { x: 55, y: 97 }
                 },
-                { value: "Halfyearly", position: { x: 72, y: 87 }, textAngle: 90 },
-                { value: "Quaterly", position: { x: 56, y: 87 }, textAngle: 90 },
+                { value: "Half yearly", position: { x: 72, y: 87 }, textAngle: 90 },
+                { value: "Quarterly", position: { x: 56, y: 87 }, textAngle: 90 },
                 { value: "Annual", position: { x: 87, y: 87 }, textAngle: 90 }]
             }]
         });

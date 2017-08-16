@@ -17,7 +17,7 @@ To render a Line Chart, set the series [`type`](../api/ejchart.html#members:seri
 {% highlight javascript %}
 
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
               // ...
             series: [{
                 //Change type and color of the series.
@@ -43,7 +43,7 @@ To change the width of the line segment, you can use the [`width`](../api/ejchar
 {% highlight javascript %}
 
 
-       $("#chartcontainer").ejChart({
+       $("#container").ejChart({
             //...
             series: [{
                 //Change the width of line series
@@ -65,7 +65,7 @@ To render the line series with dotted lines, you can use the [`dashArray`](../ap
 
 {% highlight javascript %}
 
-      $("#chartcontainer").ejChart({
+      $("#container").ejChart({
             // ...
             series: [{
                  //Change dash array to display dotted or dashed lines
@@ -88,7 +88,7 @@ For customizing the start and end caps of the line segment, you can use the [`li
 {% highlight javascript %}
 
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
             // ...
             series: [{
                  //Change line cap
@@ -111,7 +111,7 @@ You can use the [`lineJoin`](../api/ejchart.html#members:series-linejoin) proper
 {% highlight javascript %}
 
 
-       $("#chartcontainer").ejChart({
+       $("#container").ejChart({
             //...
             series: [{
                  //Change line join
@@ -134,7 +134,7 @@ You can change the color of the line segments by using the [`fill`](../api/ejcha
 {% highlight javascript %}
 
 
-       $("#chartcontainer").ejChart({
+       $("#container").ejChart({
             //   ...
             series: [{
                //  Change the color of a line 
@@ -163,7 +163,7 @@ To render a Step Line Chart, set the series [`type`](../api/ejchart.html#members
 {% highlight javascript %}
 
 
-     $("#chartcontainer").ejChart({
+     $("#container").ejChart({
               // ...
             series: [{
                 //Change type and color of the series.
@@ -189,7 +189,7 @@ To change the line width, you can use the **width** property.
 {% highlight javascript %}
 
 
-       $("#chartcontainer").ejChart({
+       $("#container").ejChart({
             //...
             series: [{
                 //Change the width of step line series
@@ -210,7 +210,7 @@ To render the step line series with dotted lines, you can use the [`dashArray`](
 
 {% highlight javascript %}
 
-      $("#chartcontainer").ejChart({
+      $("#container").ejChart({
             // ...
             series: [{
                  //Change dash array to display dotted or dashed lines
@@ -232,7 +232,7 @@ For customizing the start and end caps of the line segment, you can use the [`li
 {% highlight javascript %}
 
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
             // ...
             series: [{
                  //Change line cap
@@ -255,7 +255,7 @@ You can use the [`lineJoin`](../api/ejchart.html#members:series-linejoin) proper
 {% highlight javascript %}
 
 
-       $("#chartcontainer").ejChart({
+       $("#container").ejChart({
             //...
             series: [{
                  //Change line join
@@ -279,7 +279,7 @@ To render an Area chart, you can specify the series [`type`](../api/ejchart.html
 {% highlight javascript %}
 
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
               
             //   ...
             series: [{
@@ -314,7 +314,7 @@ Since the RangeArea series requires two y values for a point, you have to add th
 {% highlight javascript %}
 
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
         
              //  ...
              series: [{
@@ -346,7 +346,7 @@ To render a Step Area Chart, set the [`type`](../api/ejchart.html#members:series
 {% highlight javascript %}
 
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
             // ...
              series: [{
                // Change the series type and fill color
@@ -374,7 +374,7 @@ To render a Spline Area Chart, set the [`type`](../api/ejchart.html#members:seri
 {% highlight javascript %}
 
  
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
         
             // ...
             series: [{
@@ -403,7 +403,7 @@ To render a Stacked Area Chart, set the [`type`](../api/ejchart.html#members:ser
 {% highlight javascript %}
 
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
         
              // ...
              series: [{
@@ -433,7 +433,7 @@ To render a 100% Stacked Area Chart, set the [`type`](../api/ejchart.html#member
 {% highlight javascript %}
 
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
         
            //  ...        
             series: [{
@@ -461,7 +461,7 @@ To render a Stacked Spline Area Chart, set the [`type`](../api/ejchart.html#memb
 {% highlight javascript %}
 
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
         
              // ...
              series: [{
@@ -487,7 +487,7 @@ To render a 100% Stacked Spline Area Chart, set the [`type`](../api/ejchart.html
 {% highlight javascript %}
 
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
         
            //  ...        
             series: [{
@@ -511,7 +511,7 @@ To render a Column Chart, set the [`type`](../api/ejchart.html#members:series-ty
 {% highlight javascript %}
 
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
             //   ...
             series: [{
                 //Change type and fill color of the series
@@ -540,7 +540,7 @@ You can change the color of a column by using the [`fill`](../api/ejchart.html#m
 {% highlight javascript %}
 
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
             //   ...
             series: [{
                //  Change the color of a column
@@ -666,7 +666,7 @@ The following chart types can be rendered as cylinder in both 2D and in 3D view.
 
 {% highlight javascript %}
 
-    $("#chartcontainer").ejChart({
+    $("#container").ejChart({
        //   ...
        series: [{
            //To change the shape of the series
@@ -694,7 +694,7 @@ Since, the RangeColumn series requires two y values for a point, add the [`high`
 {% highlight javascript %}
 
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
         
             // ...
             
@@ -728,7 +728,7 @@ To change the color of a range column, you can use the [`fill`](../api/ejchart.h
 {% highlight javascript %}
 
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
             //   ...
             series: [{
                //  Change the color of a range column
@@ -754,7 +754,7 @@ To render a Stacked Column Chart, set the [`type`](../api/ejchart.html#members:s
 {% highlight javascript %}
 
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
             
             // ...
             
@@ -784,7 +784,7 @@ You can use the [`stackingGroup`](../api/ejchart.html#members:series-stackinggro
 {% highlight javascript %}
 
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
             
             // ...
             
@@ -814,7 +814,7 @@ To change the color of a stacking column, you can use the [`fill`](../api/ejchar
 
 {% highlight javascript %}
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
             //   ...
             series: [{
                //  Change the color of a stacking column
@@ -839,7 +839,7 @@ To render a 100% Stacked Column Chart, set the [`type`](../api/ejchart.html#memb
 
 {% highlight javascript %}
 
-        $("#chartcontainer").ejChart({             
+        $("#container").ejChart({             
             // ...
              
             series: [{
@@ -868,7 +868,7 @@ By using the [`stackingGroup`](../api/ejchart.html#members:series-stackinggroup)
 {% highlight javascript %}
 
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
             
             // ...
             
@@ -898,7 +898,7 @@ To change the color of a 100% stacking column, you can use the [`fill`](../api/e
 
 {% highlight javascript %}
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
             //   ...
             series: [{
                //  Change the color of a 100% stacking column
@@ -925,7 +925,7 @@ To render a bar Chart, set the [`type`](../api/ejchart.html#members:series-type)
 {% highlight javascript %}
 
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
             //  ...
             series: [{
                 //Change type and color of the series
@@ -952,7 +952,7 @@ By using the [`fill`](../api/ejchart.html#members:series-points-fill) property o
 
 {% highlight javascript %}
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
             //   ...
             series: [{
                //  Change the color of a bar
@@ -979,7 +979,7 @@ To render a Stacked Bar Chart, set the [`type`](../api/ejchart.html#members:seri
 {% highlight javascript %}
 
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
             //   ...
             series: [{
                 //Change type and color of the series.
@@ -1007,7 +1007,7 @@ You can use the [`stackingGroup`](../api/ejchart.html#members:series-stackinggro
 {% highlight javascript %}
 
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
             
             // ...
             
@@ -1037,7 +1037,7 @@ You can change the color of a stacking bar by using the [`fill`](../api/ejchart.
 
 {% highlight javascript %}
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
             //   ...
             series: [{
                //  Change the color of a stacking bar
@@ -1063,7 +1063,7 @@ To render a 100% Stacked Bar Chart, set the [`type`](../api/ejchart.html#members
 {% highlight javascript %}
 
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
         
            // ...
            series: [{
@@ -1088,7 +1088,7 @@ By using the [`stackingGroup`](../api/ejchart.html#members:series-stackinggroup)
 {% highlight javascript %}
 
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
             
             // ...
             
@@ -1118,7 +1118,7 @@ To change the color of a 100% stacking bar, you can use the [`fill`](../api/ejch
 
 {% highlight javascript %}
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
             //   ...
             series: [{
                //  Change the color of a 100% stacking bar
@@ -1145,7 +1145,7 @@ To render a Spline Chart, set the [`type`](../api/ejchart.html#members:series-ty
 {% highlight javascript %}
 
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
         
             //  ...
             series: [{
@@ -1174,7 +1174,7 @@ Spline series supports four types of curves, namely natural, monotonic, cardinal
 {% highlight javascript %}
 
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
         
             //  ...
             series: [{
@@ -1195,7 +1195,7 @@ To change cardinal spline tension, you can use the [`cardinalSplineTension`](../
 {% highlight javascript %}
 
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
         
             //  ...
             series: [{
@@ -1219,7 +1219,7 @@ To change the spline segment width, you can use the [`width`](../api/ejchart.htm
 {% highlight javascript %}
 
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
         
             //  ...
             series: [{
@@ -1244,7 +1244,7 @@ To render the spline series with dotted lines, you can use the [`dashArray`](../
 {% highlight javascript %}
 
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
         
             //  ...
             series: [{
@@ -1270,7 +1270,7 @@ You can create a pie chart by setting the series [`type`](../api/ejchart.html#me
 {% highlight javascript %}
 
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
         
             //  ...
             series: [{
@@ -1298,7 +1298,7 @@ You can use the [`pieCoefficient`](../api/ejchart.html#members:series-piecoeffic
 {% highlight javascript %}
 
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
         
             //  ...
             series: [{
@@ -1323,7 +1323,7 @@ You can explode a pie segment on the chart load by using the [`explodeIndex`](..
 {% highlight javascript %}
 
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
         
             //  ...
             series: [{
@@ -1348,7 +1348,7 @@ To explode all the segments of the Pie chart, you can enable the [`explodeAll`](
 {% highlight javascript %}
 
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
         
             //  ...
             series: [{
@@ -1373,7 +1373,7 @@ To explode a pie segment on a mouse over, you can enable the [`explode`](../api/
 {% highlight javascript %}
 
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
         
             //  ...
             series: [{
@@ -1398,7 +1398,7 @@ EjChart allows you to render all the data points/segments in the semi-pie, quart
 {% highlight javascript %}
 
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
         
             //  ...
             series: [{
@@ -1427,7 +1427,7 @@ To create a Doughnut chart, you can specify the series [`type`](../api/ejchart.h
 {% highlight javascript %}
 
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
         
             // ...
             series: [{
@@ -1455,7 +1455,7 @@ You can change the doughnut chart inner radius by using the [`doughnutCoefficien
 {% highlight javascript %}
 
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
         
             // ...
             series: [{
@@ -1480,7 +1480,7 @@ You can use the [`doughnutSize`](../api/ejchart.html#members:series-doughnutsize
 {% highlight javascript %}
 
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
         
             // ...
             series: [{
@@ -1505,7 +1505,7 @@ To explode a specific doughnut segment, set the index to be exploded by using th
 {% highlight javascript %}
 
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
         
             // ...
             series: [{
@@ -1530,7 +1530,7 @@ To explode all the segments, you can enable the [`explodeAll`](../api/ejchart.ht
 {% highlight javascript %}
 
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
         
             // ...
             series: [{
@@ -1555,7 +1555,7 @@ To explode a doughnut segment on a mouse over, you can enable the [`explode`](..
 {% highlight javascript %}
 
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
         
             // ...
             series: [{
@@ -1580,7 +1580,7 @@ EjChart allows you to render all the data points/segments in the semi-doughnut, 
 {% highlight javascript %}
 
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
         
             // ...
             series: [{
@@ -1609,7 +1609,7 @@ EjChart provides support to render more than one series in pie and in doughnut c
 
 {% highlight javascript %}
 
-    $("#chartcontainer").ejChart({
+    $("#container").ejChart({
          // ...             
                
          series:[{
@@ -1656,7 +1656,7 @@ To create a Pyramid chart, you can specify the series [`type`](../api/ejchart.ht
 {% highlight javascript %}
 
 
-        $("#chartcontainer").ejChart( {
+        $("#container").ejChart( {
         
             //...
             series: [{
@@ -1684,7 +1684,7 @@ Pyramid mode has two types, *linear* and *surface* respectively. The default **"
 {% highlight javascript %}
 
 
-        $("#chartcontainer").ejChart( {
+        $("#container").ejChart( {
         
             //...
             series: [{
@@ -1709,7 +1709,7 @@ You can control the gap between the segments by using the [`gapRatio`](../api/ej
 {% highlight javascript %}
 
 
-        $("#chartcontainer").ejChart( {
+        $("#container").ejChart( {
         
             //...
             series: [{
@@ -1734,7 +1734,7 @@ You can explode a pyramid segment on the chart load by using the [`explodeIndex`
 {% highlight javascript %}
 
 
-        $("#chartcontainer").ejChart( {
+        $("#container").ejChart( {
         
             //...
             series: [{
@@ -1759,7 +1759,7 @@ You can create a funnel chart by setting the series [`type`](../api/ejchart.html
 {% highlight javascript %}
 
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
         
             // ...
             series: [{
@@ -1787,7 +1787,7 @@ Funnel segments height and width is calculated from the chart size, by default. 
 {% highlight javascript %}
 
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
         
             // ...
             series: [{
@@ -1813,7 +1813,7 @@ You can explode a funnel segment on the chart load by using the [`explodeIndex`]
 {% highlight javascript %}
 
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
         
             // ...
             series: [{
@@ -1845,7 +1845,7 @@ To create a Bubble chart, you can set the series [`type`](../api/ejchart.html#me
                // ...     
         ];
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
             // ...      
             series: [{
                    //Set chart type to series
@@ -1875,7 +1875,7 @@ To create a Scatter chart, you can set the series [`type`](../api/ejchart.html#m
 {% highlight javascript %}
 
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
             
             // ...
             series: [{
@@ -1902,7 +1902,7 @@ You can change the scatter size by using the [`size`](../api/ejchart.html#member
 {% highlight javascript %}
 
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
             // ...
             series: [{
             
@@ -1939,7 +1939,7 @@ To create a HiLoOpenClose chart, you can set the series [`type`](../api/ejchart.
             // ...    
          ];
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
             // ...
             series: [{
                    //Set chart type to series
@@ -1972,7 +1972,7 @@ You can change the HiLoOpenClose chart [`drawMode`](../api/ejchart.html#members:
 {% highlight javascript %}
 
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
             // ...
             series: [{
                   // ...
@@ -1996,7 +1996,7 @@ HiLoOpenClose chart [`bullFillColor`](../api/ejchart.html#members:series-bullfil
 {% highlight javascript %}
 
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
         
             // ...
             series: [{
@@ -2028,7 +2028,7 @@ You can create a Candle chart by specifying the series [`type`](../api/ejchart.h
             // .......     
        ];
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
 
              // ...
              series: [{
@@ -2060,7 +2060,7 @@ Candle chart [`bullFillColor`](../api/ejchart.html#members:series-bullfillcolor)
 
 {% highlight javascript %}
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
 
              // ...
              series: [{
@@ -2093,7 +2093,7 @@ HiLo chart is created by setting the series [`type`](../api/ejchart.html#members
               // ...     
         ];
 
-       $("#chartcontainer").ejChart({
+       $("#container").ejChart({
             // ...     
             series: [{
                    //Set chart type to series
@@ -2123,7 +2123,7 @@ Polar chart is created by setting the series [`type`](../api/ejchart.html#member
 {% highlight javascript %}
 
 
-       $("#chartcontainer").ejChart({
+       $("#container").ejChart({
             // ...     
             series: [{
                    //Set chart type to series
@@ -2149,7 +2149,7 @@ Polar [`drawType`](../api/ejchart.html#members:series-drawtype) property is used
 {% highlight javascript %}
 
 
-       $("#chartcontainer").ejChart({
+       $("#container").ejChart({
             // ...     
             series: [{
                    //Change polar series drawType
@@ -2173,7 +2173,7 @@ By using the [`isStacking`](../api/ejchart.html#members:series-isstacking) prope
 {% highlight javascript %}
 
 
-       $("#chartcontainer").ejChart({
+       $("#container").ejChart({
             // ...     
             series: [{
                    //Enable isStacking property for stacked column polar chart
@@ -2200,7 +2200,7 @@ To create a Radar chart, you can specify the series [`type`](../api/ejchart.html
 {% highlight javascript %}
 
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
         
            // ...
            series: [{
@@ -2228,7 +2228,7 @@ Radar [`drawType`](../api/ejchart.html#members:series-drawtype) property is used
 {% highlight javascript %}
 
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
         
            // ...
            series: [{
@@ -2253,7 +2253,7 @@ By using the [`isStacking`](../api/ejchart.html#members:series-isstacking) prope
 {% highlight javascript %}
 
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
         
            // ...
            series: [{
@@ -2280,7 +2280,7 @@ N> The inline property of the **series.positiveFill** has the first priority and
 {% highlight javascript %}
 
 
-  $("#chartcontainer").ejChart({
+  $("#container").ejChart({
         
            // ...
            series: [{
@@ -2311,7 +2311,7 @@ To display the summary of values since the last intermediate point of the waterf
 {% highlight javascript %}
 
 
-   $("#chartcontainer").ejChart({
+   $("#container").ejChart({
         
            // ...
             series: [{
@@ -2338,7 +2338,7 @@ The sum of all previous point in the waterfall series is displayed on enabling t
 {% highlight javascript %}
 
 
-   $("#chartcontainer").ejChart({
+   $("#container").ejChart({
         
            // ...
             series: [{
@@ -2365,7 +2365,7 @@ To customize the connector line color, width, opacity and dashArray of the water
 {% highlight javascript %}
 
 
-   $("#chartcontainer").ejChart({
+   $("#container").ejChart({
         
            // ...
            series: [{
@@ -2393,7 +2393,7 @@ EjChart can generate Error bar for Cartesian type series *(Line, Column, Bar, Sc
 {% highlight javascript %}
 
 
-   $("#chartcontainer").ejChart({
+   $("#container").ejChart({
         
        // ...
        series:[{
@@ -2423,7 +2423,7 @@ You can change the error bar rendering type using [`type`](../api/ejchart.html#m
 {% highlight javascript %}
 
 
-   $("#chartcontainer").ejChart({
+   $("#container").ejChart({
         
         // ...
         series:[{
@@ -2451,7 +2451,7 @@ To customize the error bar type, set error bar [`type`](../api/ejchart.html#memb
 {% highlight javascript %}
 
 
-   $("#chartcontainer").ejChart({
+   $("#container").ejChart({
         
          // ...
          series:[{
@@ -2483,7 +2483,7 @@ Error bar mode is used to define whether the error bar line has to be drawn *hor
 {% highlight javascript %}
 
 
-   $("#chartcontainer").ejChart({
+   $("#container").ejChart({
         
            // ...
            series:[{
@@ -2511,7 +2511,7 @@ You can change the error bar direction to plus, minus or both side using [`error
 {% highlight javascript %}
 
 
-   $("#chartcontainer").ejChart({
+   $("#container").ejChart({
         
          // ...
          series:[{
@@ -2540,7 +2540,7 @@ To customize the error bar cap *visibility, length, width* and *fill* color, you
 {% highlight javascript %}
 
 
-   $("#chartcontainer").ejChart({
+   $("#container").ejChart({
         
         // ...
          series:[{
@@ -2567,7 +2567,7 @@ To customize the error bar cap *visibility, length, width* and *fill* color, you
 
 To render a Box and Whisker Chart, set the series [`type`](../api/ejchart.html#members:series-type) as **"boxandwhisker"**.
 Box and Whisker chart requires 2 fields (x and y) to plot a segment. 
-The feild y requires n number of data or it should  contains minimum of five values to plot a segment.
+The field y requires n number of data or it should  contains minimum of five values to plot a segment.
 
 {% highlight javascript %}
 

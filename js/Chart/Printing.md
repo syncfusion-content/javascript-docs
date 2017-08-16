@@ -15,17 +15,17 @@ The rendered chart can be printed directly from the browser by calling the publi
 
 <body>
    <button type="button" onclick="print()" ></button> 
-<div id="chartcontainer"></div>
+<div id="container"></div>
 <script>
         //Render Chart
-        $("#chartcontainer").ejChart(
+        $("#container").ejChart(
          {
            
          });
 
 function print() {
-var chartObj = $("#chartcontainer").ejChart("instance");
-chartObj.print("chartcontainer");
+var chartObj = $("#container").ejChart("instance");
+chartObj.print("container");
         }
 
 </script>

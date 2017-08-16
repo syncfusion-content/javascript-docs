@@ -20,7 +20,7 @@ If you set **enableDeferredUpdate**to true, the **rangeChanged** event gets fire
 {% highlight javascript %}
 
 
-$("#rangecontainer").ejRangeNavigator(
+$("#container").ejRangeNavigator(
    //...
         enableDeferredUpdate: true,
    //...	
@@ -42,7 +42,7 @@ This event is handled when the **RangeNavigator** gets loaded. A parameter **sen
 {% highlight javascript %}
 
 
-    $("#rangecontainer").ejRangeNavigator({
+    $("#container").ejRangeNavigator({
     // ...             
     loaded: function(sender) {
         sender.model.isResponsive = false;
@@ -62,7 +62,7 @@ This event gets fired whenever the selected range changes in **RangeNavigator**.
 {% highlight javascript %}
 
 
-    $("#rangecontainer").ejRangeNavigator({
+    $("#container").ejRangeNavigator({
     // ...             
     rangeChanged: function(sender) {
         console.log(sender.selectedRangeSettings.start);
@@ -83,18 +83,18 @@ You can easily update the data for chart by assigning the **zoomFactor** and **z
 {% highlight javascript %}
 
 
-    $("#rangecontainer").ejRangeNavigator({
+    $("#container").ejRangeNavigator({
     // ...             
-    rangeChanged: onchartloaded
+    rangeChanged: onChartLoaded
         // ...             
     });
     });
     // setting zoom factor and position for chart axis in rangeChanged event.
-    function onchartloaded(sender) {
-        var chartobj = $("#container").data("ejChart");
-        if (chartobj != null) {
-            chartobj.model.axes[0].zoomPosition = sender.zoomPosition;
-            chartobj.model.axes[0].zoomFactor = sender.zoomFactor;
+    function onChartLoaded(sender) {
+        var chartObj = $("#container").data("ejChart");
+        if (chartObj != null) {
+            chartObj.model.axes[0].zoomPosition = sender.zoomPosition;
+            chartObj.model.axes[0].zoomFactor = sender.zoomFactor;
         }
         $("#container").ejChart("redraw");
     }
@@ -125,7 +125,7 @@ You can customize Thumb template by using **leftThumbTemplate** and **rightThumb
 </script>
 <script type="text/javascript" language="javascript">
            $(function () {
-                $("#scrollcontent").ejRangeNavigator({
+                $("#scroll").ejRangeNavigator({
                // ...             
                     navigatorStyleSettings: {
                           leftThumbTemplate: 'left',

@@ -74,7 +74,7 @@ The number of text to be displayed can be limited by the attribute called **coun
             items: [{
                 // For setting text
                 value: "1234567890",
-                segemntSettings: {
+                segmentSettings: {
                     // For setting segment length
                     length: 8,
                     // For setting segment width
