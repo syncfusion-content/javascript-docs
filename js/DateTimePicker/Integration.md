@@ -114,7 +114,7 @@ Add the following code in your **HTML** page.
          </th>
       </table>
       <script type="text/javascript">
-         // Add the code in your script section to render the DateTimePicker with knockout binding
+         // Add the code in your script section to render the DateTimePicker with Knockout binding
          
          window.viewModel = {
              value: ko.observable("3/18/2014 2:47 AM")

@@ -52,7 +52,7 @@ The following example depicts the way to bind data to the **TimePicker** widget 
                 <div class="frame">
                     <div class="control" style="width: 136px;">
                         <label style="width: 130px;">Select Show Time </label>
-                        <input id="time" type="text" data-bind="ejTimePicker:{value:tvalue }" />
+                        <input id="time" type="text" data-bind="ejTimePicker:{value:timePickerValue }" />
                     </div>
                 </div>
             </div>
@@ -61,11 +61,11 @@ The following example depicts the way to bind data to the **TimePicker** widget 
                     <div class="row">
                         <div class="col-md-3">Time Value</div>
                         <div class="col-md-3">
-                            <input type="text" id="timeValue" class="input ejinputtext" value="" data-bind="value: tvalue" />
+                            <input type="text" id="timeValue" class="input ejinputtext" value="" data-bind="value: timePickerValue" />
                         </div>
                         <div class="col-md-3">Selected time</div>
                         <div class="col-md-3">
-                            <input type="button" class="e-btn inputBtn" id="gettime" value="Get Time" />
+                            <input type="button" class="e-btn inputBtn" id="getTime" value="Get Time" />
                         </div>
                     </div>
                 </div>
@@ -75,13 +75,13 @@ The following example depicts the way to bind data to the **TimePicker** widget 
     <script type="text/javascript">
         window.viewModel = {
             //timepicker
-            tvalue: ko.observable("11:30 AM")
+            timePickerValue: ko.observable("11:30 AM")
         }
         $(function () {
             // declaration
             ko.applyBindings(viewModel);
             var timeObj = $('#time').data("ejTimePicker");
-            $("#gettime").click(function () {
+            $("#getTime").click(function () {
                 alert("Selected time is : " + timeObj.getValue());
             });
             $("#sampleProperties").ejPropertiesPanel();
