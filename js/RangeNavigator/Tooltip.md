@@ -21,7 +21,7 @@ api: /api/js/ejrangenavigator
 {% highlight javascript %}
 
 
-$("#rangecontainer").ejRangeNavigator(
+$("#container").ejRangeNavigator(
                {   
                    // ...              
                 tooltipSettings: {
@@ -66,7 +66,7 @@ Some of the **labelFormat** for **DateTime** data area as follows:
 {% highlight javascript %}
 
 
-$("#rangecontainer").ejRangeNavigator({
+$("#container").ejRangeNavigator({
                {   
                    // ...              
                  tooltipSettings: {
@@ -106,7 +106,7 @@ Tooltip get displayed only when we move the slider.</td></tr>
 {% highlight javascript %}
 
 
-$("#rangecontainer").ejRangeNavigator({
+$("#container").ejRangeNavigator({
                {   
                    // ...              
                  tooltipSettings: {

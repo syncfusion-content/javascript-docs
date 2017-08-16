@@ -54,9 +54,9 @@ Gets or sets a color for highlighting tree map item during drill down.</td></tr>
                 uniColorMapping: { color: "#CCDFE3" },
                 weightValuePath: "Population",
                 levels: [
-                    { groupPath: "Continent", showLabels: true, groupGap: 5, headerHeight: 25, showHeader: true, headerTemplate: 'headertemplate' },
-                    { groupPath: "Country", showLabels: true, groupGap: 0, headerHeight: 25, showHeader: true, headerTemplate: 'headertemplate' },
-                    { groupPath: "Name", showLabels: true, groupGap: 0, headerHeight: 25, showHeader: true, headerTemplate: 'headertemplate' }
+                    { groupPath: "Continent", showLabels: true, groupGap: 5, headerHeight: 25, showHeader: true, headerTemplate: 'Template' },
+                    { groupPath: "Country", showLabels: true, groupGap: 0, headerHeight: 25, showHeader: true, headerTemplate: 'Template' },
+                    { groupPath: "Name", showLabels: true, groupGap: 0, headerHeight: 25, showHeader: true, headerTemplate: 'Template' }
                 ]
 
             });

@@ -35,9 +35,9 @@ Circular Gauge contains AngularJS support. You can add object as well as array o
          <!--binding the value to the scope variables in application controller-->
          angular.module('syncApp', ['ejangular'])
          .controller('CircularGauge', function ($scope) {
-         $scope.nvalue = 50;
-         $scope.nminimum = 0;
-         $scope.nmaximum = 120;
+         $scope.number = 50;
+         $scope.minimum = 0;
+         $scope.maximum = 120;
          });
       </script>
    </body>
@@ -241,21 +241,21 @@ Execute the above code to render the following output.
    </head>
    <body ng-controller="CircularGauge">
       <div id="linearframe">
-         <ej-circulargauge id="CircularGauge1" e-backgroundcolor="transparent" e-value="nvalue" e-width="500" e-readonly="false" e-load="loadGaugeTheme" e-enableanimation="false">
+         <ej-circulargauge id="CircularGauge1" e-backgroundcolor="transparent" e-value="number" e-width="500" e-readonly="false" e-load="loadGaugeTheme" e-enableanimation="false">
             <e-scales>
                <e-scale e-showRanges="true" e-startAngle="122" e-sweepAngle="296"
                e-radius="130" e-showScaleBar="true" e-size="1"
                <!--binding maximum value using angular JS -->
-               e-maximum="nmaximum"
+               e-maximum="maximum"
                <!--binding minimum value using angular JS -->
-               e-minimum="nminimum"
+               e-minimum="minimum"
                e-majorIntervalValue="20"
                e-minorIntervalValue="10" e-border-width="0.5">
                <e-pointers>
                   <e-pointer e-showBackNeedle="true" e-backNeedleLength="20"
                   e-length="95" e-width="7"
                   <!--binding pointer value using angular JS -->
-                  e-value="nvalue"
+                  e-value="number"
                   e-pointerCap-radius="12">
                   </e-pointer>
                </e-pointers>
@@ -281,14 +281,14 @@ Execute the above code to render the following output.
             </e-scales>
          </ej-circulargauge>
       </div>
-      <input type="text" id="txtMax" e-value="nvalue" ej-numerictextbox **ng-model="nvalue"**  e-decimalplaces="2" e-showspinbutton="false" Style="width:110px"/>
+      <input type="text" id="txtMax" e-value="number" ej-numerictextbox **ng-model="number"**  e-decimalplaces="2" e-showspinbutton="false" Style="width:110px"/>
       <script type="text/javascript">
          <!--binding the value to the scope variables in application controller-->
          angular.module('syncApp', ['ejangular'])
          .controller('CircularGauge', function ($scope) {
-             $scope.nvalue = 50;
-             $scope.nminimum = 0;
-             $scope.nmaximum = 120;
+             $scope.number = 50;
+             $scope.minimum = 0;
+             $scope.maximum = 120;
          });
       </script>
    </body>
@@ -333,7 +333,7 @@ KnockoutJS support allows you to bind the **HTML** elements against any of the a
    <body>
       <div id="CircularGauge1"
          data-bind="ejCircularGauge: {
-         value: samplevalue,
+         value: sampleValue,
          minimum: minimumValue,
          maximum: maximumValue
          }">

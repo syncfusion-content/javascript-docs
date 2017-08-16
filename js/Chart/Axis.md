@@ -26,7 +26,7 @@ Category axis displays the text labels instead of numbers. To use the categorica
 
 {% highlight js %}
 
-$("#chartcontainer").ejChart({
+$("#container").ejChart({
     primaryXAxis: {
 
         //Use categorical scale in primary X axis
@@ -54,7 +54,7 @@ Labels in the category axis can be placed on the ticks by setting the [`labelPla
 
 {% highlight javascript %}
 
-$("#chartcontainer").ejChart({
+$("#container").ejChart({
     primaryXAxis: {
 
         //Placing X-axis labels on the ticks
@@ -77,7 +77,7 @@ To display the labels after a fixed interval n, you can set the [`interval`](../
 
 {% highlight javascript %}
 
-$("#chartcontainer").ejChart({
+$("#container").ejChart({
     primaryXAxis: {
 
         //Displaying labels after 2 intervals
@@ -100,7 +100,7 @@ Category axis can also plot points based on index value of data points. Index ba
 
 {% highlight javascript %}
 
-    $("#chartcontainer").ejChart({
+    $("#container").ejChart({
          // ...             
          primaryXAxis: {                                  
              isIndexed: true
@@ -130,7 +130,7 @@ Numeric axis uses numerical scale and displays numbers as labels. To use numeric
 
 {% highlight javascript %}
 
-$("#chartcontainer").ejChart({
+$("#container").ejChart({
     // ...             
     primaryYAxis: {
         //Use numerical scale in primary Y axis
@@ -153,7 +153,7 @@ To customize the range of an axis, you can use the [`range`](../api/ejchart#memb
 
 {% highlight javascript %}
 
-$("#chartcontainer").ejChart({
+$("#container").ejChart({
     // ...             
     primaryYAxis: {
 
@@ -177,7 +177,7 @@ Axis interval can be customized by using the [`interval`](../api/ejchart#members
 
 {% highlight javascript %}
 
-$("#chartcontainer").ejChart({
+$("#container").ejChart({
     // ...             
     primaryYAxis: {
               
@@ -210,7 +210,7 @@ When the value of the [`rangePadding`](../api/ejchart#members:primaryxaxis-range
 
 {% highlight javascript %}
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
               // ...             
                primaryYAxis: {
                
@@ -235,7 +235,7 @@ When the value of [`rangePadding`](../api/ejchart#members:primaryxaxis-rangepadd
 
 {% highlight javascript %}
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
               // ...             
                primaryYAxis: {
                
@@ -267,7 +267,7 @@ When the value of the [`rangePadding`](../api/ejchart#members:primaryxaxis-range
 
 {% highlight javascript %}
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
               // ...             
                primaryYAxis: {
                
@@ -292,7 +292,7 @@ When the value of the [`rangePadding`](../api/ejchart#members:primaryyaxis-range
 
 {% highlight javascript %}
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
               // ...             
                primaryYAxis: {
                
@@ -340,7 +340,7 @@ Date time axis uses date time scale and displays the date time values as axis la
 
 {% highlight javascript %}
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
               // ...             
             primaryXAxis: {
 
@@ -367,7 +367,7 @@ Date time axis uses date time scale and displays the date time values as axis la
  
  {% highlight javascript %}
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
               // ...             
             primaryXAxis: {
 
@@ -404,7 +404,7 @@ Essential Chart supports the following types of interval for date time axis.
 
 {% highlight javascript %}
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
             primaryXAxis: {
 
                 //Customizing X-axis date time range
@@ -439,7 +439,7 @@ When the value of the [`rangePadding`](../api/ejchart#members:primaryxaxis-range
 
 {% highlight javascript %}
 
-     $("#chartcontainer").ejChart({
+     $("#container").ejChart({
             primaryXAxis: {
 
                 //Applying none as range padding
@@ -459,7 +459,7 @@ When the value of the [`rangePadding`](../api/ejchart#members:primaryxaxis-range
 
 {% highlight javascript %}
 
-     $("#chartcontainer").ejChart({
+     $("#container").ejChart({
             primaryXAxis: {
 
                 //Applying round as range padding
@@ -486,7 +486,7 @@ When the value of the [`rangePadding`](../api/ejchart#members:primaryxaxis-range
 
 {% highlight javascript %}
 
-     $("#chartcontainer").ejChart({
+     $("#container").ejChart({
             primaryXAxis: {
 
                 //Applying additional as range padding
@@ -507,7 +507,7 @@ DateTime category axis takes date time value as input but behaves like category 
 
 {% highlight javascript %}
 
-$("#chartcontainer").ejChart({ 
+$("#container").ejChart({ 
 	primaryXAxis: { 
 		valueType: 'datetimeCategory', 
 		// ... 
@@ -527,7 +527,7 @@ Axis range can be customized by using the [`range`](../api/ejchart#members:prima
 
 {% highlight javascript %}
 
-$("#chartcontainer").ejChart({
+$("#container").ejChart({
             primaryXAxis: {
 
                 range: {  //Customizing X-axis date time category range
@@ -560,7 +560,7 @@ Essential Chart supports the following types of interval for date time category 
 
 {% highlight javascript %}
 
-$("#chartcontainer").ejChart({
+$("#container").ejChart({
             primaryXAxis: {
 			
                 intervalType: "months"        
@@ -580,7 +580,7 @@ Logarithmic axis uses logarithmic scale and it is very useful in visualizing whe
 
 {% highlight javascript %}
 
-      $("#chartcontainer").ejChart({
+      $("#container").ejChart({
             primaryXAxis: {
 
                 //Use logarithmic scale in primary X axis
@@ -606,7 +606,7 @@ Logarithmic range can be customized by using the [`range`](../api/ejchart#member
 
 {% highlight javascript %}
 
-     $("#chartcontainer").ejChart({
+     $("#container").ejChart({
             primaryYAxis: {
 
                 //Customizing logarithmic range
@@ -627,7 +627,7 @@ Logarithmic base can be customized by using the [`logBase`](../api/ejchart#membe
 
 {% highlight javascript %}
 
-     $("#chartcontainer").ejChart({
+     $("#container").ejChart({
            primaryYAxis: {
 
                 //Customizing logarithmic base
@@ -649,7 +649,7 @@ Logarithmic axis interval can be customized by using the [`interval`](../api/ejc
 
 {% highlight javascript %}
 
-     $("#chartcontainer").ejChart({
+     $("#container").ejChart({
            primaryYAxis: {
 
                 //Customizing logarithmic interval
@@ -673,7 +673,7 @@ Numeric labels can be formatted by using the [`labelFormat`](../api/ejchart#memb
 
 {% highlight javascript %}
 
-     $("#chartcontainer").ejChart({
+     $("#container").ejChart({
      
            primaryXAxis: {
 
@@ -755,7 +755,7 @@ Date time labels can be formatted by using the [`labelFormat`](../api/ejchart#me
 
 {% highlight javascript %}
 
-     $("#chartcontainer").ejChart({
+     $("#container").ejChart({
             primaryXAxis: {
 
                 //Formatting date time labels in date/Month name/Year format
@@ -823,7 +823,7 @@ Prefix and suffix can be added to the category labels by using the [`labelFormat
 
 {% highlight javascript %}
 
-$("#chartcontainer").ejChart({
+$("#container").ejChart({
     primaryXAxis: {
         //...
         //Adding prefix and suffix to axis labels
@@ -994,7 +994,7 @@ Axis visibility can be controlled by using the [`visible`](../api/ejchart#member
 
 {% highlight javascript %}
 
-     $("#chartcontainer").ejChart({
+     $("#container").ejChart({
 
            primaryYAxis: {
                    
@@ -1017,7 +1017,7 @@ The [`title`](../api/ejchart#members:primaryxaxis-title) property in the axis pr
 
 {% highlight javascript %}
 
-     $("#chartcontainer").ejChart({
+     $("#container").ejChart({
 
            primaryXAxis: {
                       
@@ -1047,7 +1047,7 @@ You can modify the position of the axis title either inside or outside the chart
 
 {% highlight javascript %}
 
-     $("#chartcontainer").ejChart({
+     $("#container").ejChart({
 
            primaryXAxis: {
                       
@@ -1074,7 +1074,7 @@ The [`font`](../api/ejchart#members:primaryxaxis-font) property of the axis prov
 
 {% highlight javascript %}
 
-     $("#chartcontainer").ejChart({
+     $("#container").ejChart({
 
           primaryXAxis: {
 
@@ -1102,7 +1102,7 @@ Axis labels and ticks can be positioned inside or outside the chart area by usin
  
 {% highlight javascript %}
 
-     $("#chartcontainer").ejChart({
+     $("#container").ejChart({
 
              primaryXAxis: {
 
@@ -1126,7 +1126,7 @@ Labels with long text at the edges of an axis may appear partially outside the c
 
 {% highlight javascript %}
 
-     $("#chartcontainer").ejChart({
+     $("#container").ejChart({
 
              primaryXAxis: {
 
@@ -1155,7 +1155,7 @@ The [`majorGridLines`](../api/ejchart#members:primaryxaxis-majorgridlines) and [
 
 {% highlight javascript %}
 
-     $("#chartcontainer").ejChart({
+     $("#container").ejChart({
 
           primaryXAxis: {
 
@@ -1186,7 +1186,7 @@ The [`majorTickLines`](../api/ejchart#members:primaryxaxis-majorticklines) and [
 
 {% highlight javascript %}
 
-     $("#chartcontainer").ejChart({
+     $("#container").ejChart({
 
            primaryXAxis: {
 
@@ -1220,7 +1220,7 @@ Axis can be inversed by using the [`isInversed`](../api/ejchart#members:primaryx
 
 {% highlight javascript %}
 
-     $("#chartcontainer").ejChart({
+     $("#container").ejChart({
 
            primaryXAxis: {
 
@@ -1251,7 +1251,7 @@ The [`opposedPosition`](../api/ejchart#members:primaryxaxis-opposedposition) pro
 
 {% highlight javascript %}
 
-     $("#chartcontainer").ejChart({
+     $("#container").ejChart({
 
             primaryXAxis: {
 
@@ -1281,7 +1281,7 @@ A maximum of 3 labels are displayed for each 100 pixels in the axis, by default.
 
 {% highlight javascript %}
 
-     $("#chartcontainer").ejChart({
+     $("#container").ejChart({
 
          primaryXAxis: {
 
@@ -1315,7 +1315,7 @@ An additional horizontal or vertical axis can be added to the chart by adding an
 
 {% highlight javascript %}
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
             // ...             
            //  Creating a secondary horizontal axis
             axes: [{
@@ -1358,7 +1358,7 @@ When the Axis labels overlap with each other based on the chart dimensions and l
 
 {% highlight javascript %}
 
-       $("#chartcontainer").ejChart({
+       $("#container").ejChart({
 
             // Avoid overlapping of x-axis labels
             primaryXAxis: {

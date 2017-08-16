@@ -127,7 +127,7 @@ N> All the properties in EjChart supports one way AngularJS binding except inner
     <e-series>              
       <e-series e-name="John" e-dataSource=dataSource e-xName="Day" e-yName="John">					 
 	  </e-series>
-    <e-series e-name="Hendry"  e-dataSource=dataSource e-xName="Day" e-yName="Hendry">					   
+    <e-series e-name="Henry"  e-dataSource=dataSource e-xName="Day" e-yName="Henry">					   
 	  </e-series>
     </e-series>
  </div>            
@@ -141,16 +141,16 @@ N> All the properties in EjChart supports one way AngularJS binding except inner
 
        //Data source for chart.
         var obj = [
-                { "Day": 1, "John": 57, "Hendry": 43 },
-                { "Day": 2, "John": 73, "Hendry": 27 },
-                { "Day": 3, "John": 49, "Hendry": 51 },
-                { "Day": 4, "John": 63, "Hendry": 37 },
-                { "Day": 5, "John": 44, "Hendry": 56 },
-                { "Day": 6, "John": 49, "Hendry": 51 },
-                { "Day": 7, "John": 61, "Hendry": 39 },
-                { "Day": 8, "John": 35, "Hendry": 65 },
-                { "Day": 9, "John": 45, "Hendry": 55 },
-                { "Day": 10, "John": 37, "Hendry": 63 }
+                { "Day": 1, "John": 57, "Henry": 43 },
+                { "Day": 2, "John": 73, "Henry": 27 },
+                { "Day": 3, "John": 49, "Henry": 51 },
+                { "Day": 4, "John": 63, "Henry": 37 },
+                { "Day": 5, "John": 44, "Henry": 56 },
+                { "Day": 6, "John": 49, "Henry": 51 },
+                { "Day": 7, "John": 61, "Henry": 39 },
+                { "Day": 8, "John": 35, "Henry": 65 },
+                { "Day": 9, "John": 45, "Henry": 55 },
+                { "Day": 10, "John": 37, "Henry": 63 }
         ];
         
         

@@ -16,7 +16,7 @@ The Chart displays different series in different colors by default. You can cust
 
 {% highlight javascript %}
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
             
             //Providing a custom palette
             palette: [ "grey", "skyblue", "orange", ],         
@@ -58,7 +58,7 @@ You can set your desired theme by using the [`theme`](../api/ejchart#members:the
 
 {% highlight javascript %}
 
-       $("#chartcontainer").ejChart({
+       $("#container").ejChart({
             
             //Using gradient theme
             theme: "gradientlight",         
@@ -78,7 +78,7 @@ Marker, data label and fill color of each point in a series can be customized in
 
 {% highlight javascript %}
 
-       $("#chartcontainer").ejChart({
+       $("#container").ejChart({
             
            series: [{
                 //Customizing marker and fill color of a point
@@ -113,7 +113,7 @@ N> Series border can be applied to all the series (except Line, Spline, HiLo, Hi
 
 {% highlight javascript %}
 
-  $("#chartcontainer").ejChart({
+  $("#container").ejChart({
 
             //...
             series: [{
@@ -139,7 +139,7 @@ The Chart background can be customized by using the [`background`](../api/ejchar
 
 {% highlight javascript %}
 
-       $("#chartcontainer").ejChart({
+       $("#container").ejChart({
        
             // ...
             
@@ -165,7 +165,7 @@ The Chart [`margin`](../api/ejchart#members:margin) property is used to add the 
 
 {% highlight javascript %}
 
-       $("#chartcontainer").ejChart({
+       $("#container").ejChart({
        
             // ...
             
@@ -187,7 +187,7 @@ Background image can be added to the chart by using the [`backGroundImageUrl`](.
 
 {% highlight javascript %}
 
-       $("#chartcontainer").ejChart({
+       $("#container").ejChart({
        
             // ...
             
@@ -212,7 +212,7 @@ The Chart area background can be customized by using the [`background`](../api/e
 
 {% highlight javascript %}
 
-       $("#chartcontainer").ejChart({
+       $("#container").ejChart({
        
             // ...
             
@@ -237,7 +237,7 @@ You can provide different color for alternate grid rows and columns formed by th
 
 {% highlight javascript %}
 
-       $("#chartcontainer").ejChart({
+       $("#container").ejChart({
        
             // ...
        
@@ -270,7 +270,7 @@ You can enable animation by using the [`enableAnimation`](../api/ejchart#members
 
 {% highlight javascript %}
 
-       $("#chartcontainer").ejChart({
+       $("#container").ejChart({
        
             // ...
        
@@ -292,7 +292,7 @@ However, you can force the chart to animate series by calling the animate method
 
 {% highlight javascript %}
 
-       $("#chartcontainer").ejChart({
+       $("#container").ejChart({
             series : [{
 
                  //Enabling animation of series
@@ -320,7 +320,7 @@ To control the speed of animation, you can use the [`animationDuration`](../api/
 
 {% highlight javascript %}
 
-       $("#chartcontainer").ejChart({
+       $("#container").ejChart({
        
             // ...
        

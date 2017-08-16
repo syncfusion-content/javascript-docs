@@ -14,7 +14,7 @@ EjChart can generate Trendlines for Cartesian type series *(Line, Column, Scatte
 
 {% highlight javascript %}
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
             series:[{
                   trendlines: [{
                        //Enable Trendline to chart series
@@ -40,7 +40,7 @@ A trendline can be customized by using the properties such as [`fill`](../api/ej
 
 {% highlight javascript %}
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
             series:[{
                   trendlines: [{
                          //...
@@ -76,7 +76,7 @@ To render Linear Trendline, you have to set the [`type`](../api/ejchart#members:
 
 {% highlight javascript %}
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
             series:[{
                   trendlines: [{
                        //Change Trendline type
@@ -99,7 +99,7 @@ Exponential Trendline can be rendered by setting the [`type`](../api/ejchart#mem
 
 {% highlight javascript %}
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
             series:[{
                   trendlines: [{
                        //Change Trendline type
@@ -122,7 +122,7 @@ Logarithmic Trendline can be rendered by setting the [`type`](../api/ejchart#mem
 
 {% highlight javascript %}
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
             series:[{
                   trendlines: [{
                        //Change Trendline type
@@ -145,7 +145,7 @@ Power Trendline can be rendered by setting the [`type`](../api/ejchart#members:s
 
 {% highlight javascript %}
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
             series:[{
                   trendlines: [{
                        //Change Trendline type
@@ -168,7 +168,7 @@ Polynomial Trendline can be rendered by setting the trendline [`type`](../api/ej
 
 {% highlight javascript %}
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
             series:[{
                   trendlines: [{
                        //Change Trendline type
@@ -192,7 +192,7 @@ MovingAverage Trendline can be rendered by setting the [`type`](../api/ejchart#m
 
 {% highlight javascript %}
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
             series:[{
                   trendlines: [{
                        //Change Trendline type and set [`period`](../api/ejchart#members:series-trendlines-period) for moving average
@@ -221,7 +221,7 @@ The value set for [`forwardForecast`](../api/ejchart#members:series-trendlines-f
 
 {% highlight javascript %}
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
             series:[{
                   trendlines: [{
                        //...
@@ -246,7 +246,7 @@ The value set for the [`backwardForecast`](../api/ejchart#members:series-trendli
 
 {% highlight javascript %}
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
             series:[{
                   trendlines: [{
                        //...
@@ -270,7 +270,7 @@ To display the legend item for trendline, use the [`name`](../api/ejchart#member
 
 {% highlight javascript %}
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
             series:[{
                   trendlines: [{
                        //...

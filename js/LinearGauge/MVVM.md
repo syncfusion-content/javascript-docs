@@ -37,7 +37,7 @@ api: /api/js/ejlineargauge
          <!--binding the value to the scope variables in application controller-->
          angular.module('syncApp', ['ejangular'])
          .controller('LinearGauge', function ($scope) {
-             $scope.nvalue = 0;
+             $scope.number = 0;
          });
       </script>
    </body>
@@ -232,15 +232,15 @@ Finally while running the above codes, the resultant gauge appears as follows.
    </head>
    <body ng-controller="LinearGauge">
       <div id="linearframe">
-         <ej-lineargauge id="linearCore" e-value="nvalue" e-readonly="false" e-load="loadGaugeTheme" e-enableanimation="false" e-labelcolor="#8c8c8c">
+         <ej-lineargauge id="linearCore" e-value="number" e-readonly="false" e-load="loadGaugeTheme" e-enableanimation="false" e-labelcolor="#8c8c8c">
          </ej-lineargauge>
       </div>
-      <input type="text" id="txtMax" e-value="nvalue" ej-numerictextbox ng-model="nvalue" e-decimalplaces="2" e-showspinbutton="false" style="width: 110px" />
+      <input type="text" id="txtMax" e-value="number" ej-numerictextbox ng-model="number" e-decimalplaces="2" e-showspinbutton="false" style="width: 110px" />
       <script type="text/javascript">
          <!--binding the value to the scope variables in application controller-->
          angular.module('syncApp', ['ejangular'])
          .controller('LinearGauge', function ($scope) {
-             $scope.nvalue = 50;
+             $scope.number = 50;
          });
       </script>
    </body>
@@ -286,7 +286,7 @@ KnockoutJS support allows you to bind the HTML elements against any of the avail
    <body>
       <div id="LinearGauge1"
          data-bind="ejLinearGauge: {
-         value: samplevalue,
+         value: sampleValue,
          minimum: minimumValue,
          maximum: maximumValue
          }">

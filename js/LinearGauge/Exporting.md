@@ -30,7 +30,7 @@ api: /api/js/ejlineargauge
 
 $(function () {
         // declaration
-        $("#btnSubmit").ejButton({ width: "50px", click: "buttonclickevent", });
+        $("#btnSubmit").ejButton({ width: "50px", click: "buttonClickEvent", });
         $("#fileFormat").ejDropDownList({ selectedItemIndex: 0, width: "115" });
         //For rendering linear gauge
         $("#LinearGauge1").ejLinearGauge({
@@ -60,7 +60,7 @@ $(function () {
             }]
         });
     });
-    function buttonclickevent() {
+    function buttonClickEvent() {
         var FileName = $("#fileName").val();
         var FileFormat = $("#fileFormat").ejDropDownList("option", "value");
         $("#LinearGauge1").ejLinearGauge("exportImage", FileName, FileFormat);

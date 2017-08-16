@@ -19,7 +19,7 @@ Tooltip for the data points can be enabled by using the [`visible`](../api/ejcha
 {% highlight javascript %}
 
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
            
             // ...           
             series: [{
@@ -48,7 +48,7 @@ You can also use * **#series.<optionname>#** * as placeholder to display the val
 {% highlight javascript %}
 
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
             // ...
             series: [{
                  tooltip: {
@@ -75,7 +75,7 @@ You can also use * **#series.<optionname>#** * as place holder to display the va
 {% highlight html %}
 
 <body>
-   <div id="chartcontainer"></div>
+   <div id="container"></div>
     <!-- Create Tooltip template here -->
     <div id="Tooltip" style="display: none;">
               <div id="icon"> <div id="eficon"> </div>  </div>
@@ -87,7 +87,7 @@ You can also use * **#series.<optionname>#** * as place holder to display the va
         </div>
     </div>
 <script>
-   $("#chartcontainer").ejChart({   
+   $("#container").ejChart({   
      	// ...             
 	    series: [{
               tooltip: {
@@ -118,13 +118,13 @@ N> Tooltip is animated only if the template is specified for tooltip.
 {% highlight javascript %}
 
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
             
             // ...
             series: [{
                   tooltip: {
                     //Enable tooltip template animation and set duration time
-                    enableAnimation: true, duaration: "1000ms",                                      
+                    enableAnimation: true, duration: "1000ms",                                      
                     // ...
                  }
              }],
@@ -143,7 +143,7 @@ The [`fill`](../api/ejchart#members:series-tooltip-fill) and [`border`](../api/e
 {% highlight javascript %}
 
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
             // ...
             series: [{
                  tooltip: {
@@ -168,7 +168,7 @@ The options [`rx`](../api/ejchart#members:series-tooltip-rx) and [`ry`](../api/e
 {% highlight javascript %}
 
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
            
 	        // ...             
 	        series: [{
@@ -205,7 +205,7 @@ N> Pinch zooming is supported only in browsers that support multi-touch gestures
 {% highlight javascript %}
 
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
              //  ...             
 	         //Enable zooming in chart
              zooming: {enable: true}
@@ -233,7 +233,7 @@ The [`type`](../api/ejchart#members:zooming-type) option in zooming specifies wh
 {% highlight javascript %}
 
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
              //  ...             
 	         zooming: {
                     enable: true,
@@ -254,7 +254,7 @@ You can choose the items displayed in the zooming toolbar by specifying the prop
 {% highlight javascript %}
 
 
-    $("#chartcontainer").ejChart({
+    $("#container").ejChart({
              //  ...             
 	         //Customizing zooming toolbar
 	         zooming:{	
@@ -278,7 +278,7 @@ EjChart provides scrollbar support to view the other portions of chart area whic
 {% highlight javascript %}
 
 
-    $("#chartcontainer").ejChart({
+    $("#container").ejChart({
              //  ...             
 	         //Enable zooming scrollbar  in chart
              zooming: {enable:true, enableScrollbar: true}
@@ -302,7 +302,7 @@ Crosshair can be enabled by using the [`visible`](../api/ejchart#members:series-
 {% highlight javascript %}
 
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
             // ...             
             primaryXAxis:{
                 //Enable crosshairLabel to X-Axis
@@ -337,7 +337,7 @@ The [`fill`](../api/ejchart#members:crosshair-fill) and [`border`](../api/ejchar
 {% highlight javascript %}
 
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
              // ...             
              primaryXAxis: {
                      //...
@@ -377,7 +377,7 @@ Trackball can be enabled by setting the [`visible`](../api/ejchart#members:cross
 {% highlight javascript %}
 
 
-       $("#chartcontainer").ejChart({   
+       $("#container").ejChart({   
 	
              crosshair: {
                    visible: true,
@@ -403,7 +403,7 @@ Shape and size of the trackball marker can be customized by using the [`shape`](
 {% highlight javascript %}
 
 
-       $("#chartcontainer").ejChart({   
+       $("#container").ejChart({   
 	
              // ...
              crosshair: {
@@ -438,7 +438,7 @@ X and Y values displayed in the trackball tooltip are formatted based on its axi
 {% highlight javascript %}
 
 
-       $("#chartcontainer").ejChart({   
+       $("#container").ejChart({   
 	
               // ...
               primaryXAxis: {
@@ -472,7 +472,7 @@ You can able to show the trackball tooltip in two modes, using trackballTooltipS
 {% highlight javascript %}
 
 
-            $("#chartcontainer").ejChart({
+            $("#container").ejChart({
                 // ... 
                     crosshair: {
                         visible: true,
@@ -508,7 +508,7 @@ N> When hovering mouse on the data points, the corresponding series legend also 
 {% highlight javascript %}
 
 
-       $("#chartcontainer").ejChart({   
+       $("#container").ejChart({   
 	
               // ...
               series:[{
@@ -546,7 +546,7 @@ To highlight all the data points of the specified series, you can set the **"ser
 {% highlight javascript %}
 
 
-       $("#chartcontainer").ejChart({   
+       $("#container").ejChart({   
 	
               // ...
               series:[{
@@ -577,7 +577,7 @@ To highlight a single point, you can set the **"point"** value to the [`mode`](.
 {% highlight javascript %}
 
 
-       $("#chartcontainer").ejChart({   
+       $("#container").ejChart({   
 	
               // ...
               series:[{
@@ -608,7 +608,7 @@ To highlight the points that corresponds to the same index in all the series, se
 {% highlight javascript %}
 
 
-       $("#chartcontainer").ejChart({   
+       $("#container").ejChart({   
 	
               // ...
               series:[{
@@ -638,7 +638,7 @@ To customize the highlighted series, use the [`color`](../api/ejchart#members:se
 {% highlight javascript %}
 
 
-       $("#chartcontainer").ejChart({   
+       $("#container").ejChart({   
 	
               // ...
               series:[{
@@ -689,7 +689,7 @@ EjChart provides pattern support for highlighting the data by setting the value 
 {% highlight javascript %}
 
 
-       $("#chartcontainer").ejChart({   
+       $("#container").ejChart({   
 	
               // ...
               series:[{
@@ -757,7 +757,7 @@ N> When mouse is clicked on the data points, the corresponding series legend als
 {% highlight javascript %}
 
 
-       $("#chartcontainer").ejChart({   
+       $("#container").ejChart({   
 	
               // ...
               series:[{
@@ -794,7 +794,7 @@ To select all the data points of the specified series, you can set the **"series
 {% highlight javascript %}
 
 
-       $("#chartcontainer").ejChart({   
+       $("#container").ejChart({   
 	
               // ...
               series:[{
@@ -824,7 +824,7 @@ To highlight a single point, you can set the **"point"** value to the [`mode`](.
 {% highlight javascript %}
 
 
-       $("#chartcontainer").ejChart({   
+       $("#container").ejChart({   
 	
               // ...
               series:[{
@@ -855,7 +855,7 @@ To select the points that corresponds to the same index in all the series, set t
 {% highlight javascript %}
 
 
-       $("#chartcontainer").ejChart({   
+       $("#container").ejChart({   
 	
               // ...
               series:[{
@@ -887,7 +887,7 @@ To fetch the selected area data points value, you can set the selectionSettings 
 {% highlight javascript %}
 
 
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
                     // ...
                     series:[{
                   
@@ -938,7 +938,7 @@ To select a data point or a series on mouse click based on the [`selectionSettin
 {% highlight javascript %}
 
 
-       $("#chartcontainer").ejChart({   
+       $("#container").ejChart({   
 	
               // ...
               commonSeriesOptions:{
@@ -967,7 +967,7 @@ For selecting multiple data points or series on mouse click, set [`selectionSett
 {% highlight javascript %}
 
 
-       $("#chartcontainer").ejChart({   
+       $("#container").ejChart({   
 	
               // ...
               commonSeriesOptions:{
@@ -997,7 +997,7 @@ To customize the selection styles, use the [`color`](../api/ejchart#members:seri
 {% highlight javascript %}
 
 
-       $("#chartcontainer").ejChart({   
+       $("#container").ejChart({   
 	
               // ...
               series:[{
@@ -1049,7 +1049,7 @@ EjChart provides pattern support for the data selection by setting the value to 
 {% highlight javascript %}
 
 
-       $("#chartcontainer").ejChart({   
+       $("#container").ejChart({   
 	
               // ...
               series:[{
@@ -1119,7 +1119,7 @@ To get the series information when selecting the specific series, subscribe to t
 {% highlight javascript %}
 
 
-       $("#chartcontainer").ejChart({   
+       $("#container").ejChart({   
 	
              // ... 
               series:[{
@@ -1150,7 +1150,7 @@ We can able to select the point/series programmatically on chart load, by settin
 {% highlight javascript %}
 
 
-       $("#chartcontainer").ejChart({   
+       $("#container").ejChart({   
 	
              // ... 
            

@@ -17,7 +17,7 @@ In EjChart, you can add multiple series object in the [`series`](../api/ejchart.
 {% highlight javascript %}
 
 
-    $("#chartcontainer").ejChart({
+    $("#container").ejChart({
           // ...  
           //Adding Multiple Series
           series: [{   // Add first series
@@ -65,7 +65,7 @@ The following code example explains on how to enable marker, tooltip and animati
 {% highlight javascript %}
 
 
-    $("#chartcontainer").ejChart({
+    $("#container").ejChart({
           //  ...
           
            //Initializing Common Properties for all the series
@@ -109,7 +109,7 @@ EjChart allows you to render the combination of different series in the chart.
 {% highlight javascript %}
 
 
-    $("#chartcontainer").ejChart({
+    $("#container").ejChart({
           //  ...
           
            series: [{
@@ -147,7 +147,7 @@ When the combination of Cartesian and accumulation series types are added to the
 {% highlight javascript %}
 
 
-    $("#chartcontainer").ejChart({
+    $("#container").ejChart({
           //  ...
           
           //Adding Multiple Series

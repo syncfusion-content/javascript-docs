@@ -66,7 +66,7 @@ $(function() {
          value: "RADAR",
          height: 300,
          frame: {
-             // For setting backgroung image
+             // For setting background image
              backgroundImageUrl: "board3.jpg",
          },
          items: [{

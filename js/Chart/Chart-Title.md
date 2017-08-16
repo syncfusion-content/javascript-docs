@@ -16,7 +16,7 @@ By using the title option, you can add the [`text`](../api/ejchart.html#members:
 
 {% highlight javascript %}
 
-$("#chartcontainer").ejChart({ 
+$("#container").ejChart({ 
 
              // ... 
              title: { 
@@ -90,7 +90,7 @@ You can change the title alignment to *center*, *far* and *near* by using the [`
 {% highlight javascript %}
 
 
-    $("#chartcontainer").ejChart({
+    $("#container").ejChart({
            
           //  ...
           
@@ -115,7 +115,7 @@ By using the subTitle option, you can add the [`subTitle`](../api/ejchart.html#m
 
 {% highlight javascript %}
 
-$("#chartcontainer").ejChart({
+$("#container").ejChart({
                
               // ... 
             title: {
@@ -189,13 +189,13 @@ You can change the subtitle alignment to *center*, *far* and *near* by using the
 {% highlight javascript %}
 
 
-    $("#chartcontainer").ejChart({
+    $("#container").ejChart({
     
         //  ...  
         title: {                
              // ...
              subTitle:{
-                 //Change subtitle to text aligment
+                 //Change subtitle to text alignment
                  textAlignment: "center",		
                  // ...
                }

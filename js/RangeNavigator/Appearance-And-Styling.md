@@ -18,7 +18,7 @@ The labels are found along the range, displaying the value of the data it corres
 
 {% highlight javascript %}
 
-        $("#rangecontainer").ejRangeNavigator({
+        $("#container").ejRangeNavigator({
         // ...             
         labelSettings: {
             // customizing higher level labels.
@@ -65,7 +65,7 @@ The following screen shot illustrates both the lower and higher level labels tha
 
 {% highlight javascript %}
 
-        $("#rangecontainer").ejRangeNavigator({
+        $("#container").ejRangeNavigator({
         // ...             
         labelSettings: {
             higherLevel: {
@@ -95,7 +95,7 @@ RangeNavigator is customized using **navigatorStyleSettings** properties. You ca
 
 {% highlight javascript %}
 
-        $("#rangecontainer").ejRangeNavigator({
+        $("#container").ejRangeNavigator({
         // ...    
         //  To customize the navigator element     
         navigatorStyleSettings: {
@@ -182,7 +182,7 @@ RangeNavigator is customized using **navigatorStyleSettings** properties. You ca
 {% highlight javascript %}
 
 
-               $("#rangecontainer").ejRangeNavigator(
+               $("#container").ejRangeNavigator(
                {   
                    // ...              
                       theme: 'azuredark',

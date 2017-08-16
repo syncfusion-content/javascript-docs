@@ -188,7 +188,7 @@ $(function () {
             height: 145,
             width: 260,
             items: [{
-                //For Diplaying Farenheit value
+                //For Diplaying Fahrenheit value
                 segmentSettings: { width: 2, length: 20 },
                 characterSettings: { type: "sevensegment", spacing: 12, },
                 value: "102", position: { x: 15, y: 40 }
@@ -214,7 +214,7 @@ You can add **Items collection** to display the temperature value as used in the
         $("#DigitalGauge1").ejDigitalGauge({
             height: 145, width: 260,
             items: [{
-                //For Diplaying fahrenheit value
+                //For Displaying Fahrenheit value
                 segmentSettings: { width: 2, length: 20, spacing: 0 },
                 characterSettings: { type: "sevensegment", spacing: 12, },
                 value: "102",
@@ -228,7 +228,7 @@ You can add **Items collection** to display the temperature value as used in the
                 position: { x: 70, y: 28 }
             },
             {
-                //For displaying fahrenheit symbol
+                //For Displaying Fahrenheit symbol
                 segmentSettings: { width: 2, length: 20, spacing: 0 },
                 characterSettings: { type: "sevensegment", spacing: 12, },
                 value: "F",

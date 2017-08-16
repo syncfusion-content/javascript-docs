@@ -188,7 +188,7 @@ Execute the above code to render the following output.
                 //Adding ranges collection
                 ranges: [{
                     endValue: 50,  // For setting range end value
-                    startValue: 0,  // For setting renge start value
+                    startValue: 0,  // For setting range start value
                     backgroundColor: "#F6B53F",
                     border: { color: "black" },
                     startWidth: 3,
@@ -258,7 +258,7 @@ Execute the above code to render the following output.
                 //Adding ranges collection
                 ranges: [{
                     endValue: 50,  // For setting range end value
-                    startValue: 0,  // For setting renge start value
+                    startValue: 0,  // For setting range start value
                     backgroundColor: "#F6B53F",
                     border: { color: "black" },
                     startWidth: 3,
