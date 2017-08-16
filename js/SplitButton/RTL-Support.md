@@ -19,7 +19,7 @@ In the **HTML** page, add the following button elements to configure **Split But
 {% highlight html %}
 
 <div class="spltspan">
-    <button id="spltbutton_rtl">login</button>
+    <button id="splitButton_rtl">login</button>
     <ul id="Ul11">
         <li><span>User</span></li>
         <li><span>Guest</span></li>
@@ -35,7 +35,7 @@ In the **HTML** page, add the following button elements to configure **Split But
     // Initialize the control in JavaScript
      
     $(function () {
-        $("#spltbutton_rtl").ejSplitButton({
+        $("#splitButton_rtl").ejSplitButton({
             //used to enable or disable RTL support for split button
             enableRTL: true,
             size: "large",

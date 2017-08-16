@@ -68,7 +68,7 @@ In the HTML page, add the following button elements to configure Button widget.
     $(function () {
         $("#buttonType_button").ejButton({
             size: "mini",
-            //this type specifes the normal click able button
+            //this type specifies the normal click able button
             type: "button",
             showRoundedCorner: true
         });

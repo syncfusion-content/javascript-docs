@@ -23,8 +23,8 @@ In the **HTML** page, add the following input elements to configure Checkbox wid
 
 
 <div class="align">
-    <input type="checkbox" class="nodetext" id="checkbox_nonchecked" />
-    <label for="checkbox_nonchecked" class="clslab">Music</label>
+    <input type="checkbox" class="nodetext" id="checkbox_nonChecked" />
+    <label for="checkbox_nonChecked" class="clslab">Music</label>
     <br />
     <input type="checkbox" class="nodetext" id="checkbox_checked" />
     <label for="checkbox_checked" class="clslab">Music</label>
@@ -37,7 +37,7 @@ In the **HTML** page, add the following input elements to configure Checkbox wid
   
     $(function () {
         //Disables the checked status
-        $("#checkbox_nonchecked").ejCheckBox({ checked: false });
+        $("#checkbox_nonChecked").ejCheckBox({ checked: false });
         //Enables the checked status
         $("#checkbox_checked").ejCheckBox({ checked: true });
     });

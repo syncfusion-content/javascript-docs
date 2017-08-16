@@ -56,15 +56,15 @@ Add input element to render the **Checkbox.**
     Hobbies <br /><br />
     <table>
         <tr>
-            <td class="chkrad">
+            <td class="checkbox">
                 <input type="checkbox" id="check1" value="Music" />
                 <label for="check1">Music</label>
             </td>
-            <td class="chkrad">
+            <td class="checkbox">
                 <input type="checkbox" id="Checkbox3" value="Sports" />
                 <label for="Checkbox3">Sports</label>
             </td>
-            <td class="chkrad">
+            <td class="checkbox">
                 <input type="checkbox" id="Checkbox4" value="Bike riding" />
                 <label for="Checkbox4" class="clslab">Bike Riding</label>
             </td>
@@ -73,32 +73,32 @@ Add input element to render the **Checkbox.**
     Favorite Search Engines<br /><br />
     <table>
         <tr>
-            <td class="chkrad">
+            <td class="checkbox">
                 <input type="checkbox" id="Checkbox1" value="playing Games" />
                 <label for="Checkbox1">Playing Games</label>
             </td>
-            <td class="chkrad">
+            <td class="checkbox">
                 <input type="checkbox" id="Checkbox5" value="Hearing Songs" />
                 <label for="Checkbox5">Hearing Songs</label>
             </td>
-            <td class="chkrad">
-                <input type="checkbox" id="Checkbox6" value="Watching tv" />
-                <label for="Checkbox6">Watching Tv</label>
+            <td class="checkbox">
+                <input type="checkbox" id="Checkbox6" value="Watching TV" />
+                <label for="Checkbox6">Watching TV</label>
             </td>
         </tr>
     </table><br /><br />
     Media Player<br /><br />
     <table>
         <tr>
-            <td class="chkrad">
+            <td class="checkbox">
                 <input type="checkbox" id="Checkbox2" value="Video" />
                 <label for="Checkbox2">Video</label>
             </td>
-            <td class="chkrad">
+            <td class="checkbox">
                 <input type="checkbox" id="Checkbox7" value="Audio" />
                 <label for="Checkbox7">Audio</label>
             </td>
-            <td class="chkrad">
+            <td class="checkbox">
                 <input type="checkbox" id="Checkbox8" value="Picture" />
                 <label for="Checkbox8">Picture</label>
             </td>
@@ -127,7 +127,7 @@ Add the following styles to show the **Checkbox** control in an order.
     {
         width: 80%;
     }
-    .chkrad 
+    .checkbox 
     {
         width: 150px;
     }
@@ -165,12 +165,12 @@ Initialize **Checkbox** in script.
     });
     $(document).ready(function () {      //Document ready
         $("button").click(function () {
-             var checkeditem = [];               
+             var checkedItem = [];               
              $("input[type=checkbox]").each(function () {
                  if ($("#" + $(this)[0].id).ejCheckBox("option", "checked"))
-                    checkeditem.push($(this).val());
+                    checkedItem.push($(this).val());
               });
-              alert(checkeditem);
+              alert(checkedItem);
          });
      });
 
@@ -203,8 +203,8 @@ Add the following code in the **&lt;body&gt;** element of the corresponding view
             <label for="Checkbox1"  >*.Mp3</label>
          </td>
          <td >
-            <input type="checkbox"  id="Checkbox2"value= "Wav" />
-            <label for="Checkbox2"  >*.Wav</label>
+            <input type="checkbox"  id="Checkbox2"value= "WAV" />
+            <label for="Checkbox2"  >*.WAV</label>
          </td>
       </tr>
    </table>
@@ -213,8 +213,8 @@ Add the following code in the **&lt;body&gt;** element of the corresponding view
    <table>
       <tr>
          <td >
-            <input type="checkbox" id="Checkbox3" value="Avi" />
-            <label for="Checkbox3"  >*.Avi</label>
+            <input type="checkbox" id="Checkbox3" value="AVI" />
+            <label for="Checkbox3"  >*.AVI</label>
          </td>
          <td >
             <input type="checkbox" id="Checkbox4" value="MP4" />
@@ -269,12 +269,12 @@ Add the following code in the **&lt;body&gt;** element of the corresponding view
     });
     $(document).ready(function () {
        $("button").click(function () {
-    	    var checkeditem = []; 
+    	    var checkedItem = []; 
             $("input[type=checkbox]").each(function () {
                  if ($("#" + $(this)[0].id).ejCheckBox("option", "checked"))
-                    checkeditem.push($(this).val());
+                    checkedItem.push($(this).val());
              });
-             alert(checkeditem);
+             alert(checkedItem);
        });
     });
 

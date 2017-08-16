@@ -51,11 +51,11 @@ The following code example depicts you the way to bind data to the **TimePicker*
             <div class="cols-sample-area">
                 <div class="frame" style="width: 30%; height: 17px;">
                     <div id="control" style="float: left;width: 45%;">
-                        <input id="time" type="text" ej-timepicker e-value="tvalue" />
+                        <input id="time" type="text" ej-timepicker e-value="timePickerValue" />
                         <h6><span style="font-style: italic; font-weight: normal; position: absolute; margin-top: 5px;">Note:Two Way AngularJS Support</span></h6>
                     </div>
                     <div id="binding" style=" float: right;width: 45%;">
-                        <input id="timectrl" type="text" ej-timepicker e-value="tvalue" e-interval="10" />
+                        <input id="timectrl" type="text" ej-timepicker e-value="timePickerValue" e-interval="10" />
                     </div>
                 </div>
             </div>
@@ -65,7 +65,7 @@ The following code example depicts you the way to bind data to the **TimePicker*
     <script type="text/javascript">
         angular.module('TimeCtrl', ['ejangular'])
                .controller('TimePickerCtrl', function ($scope) {
-                   $scope.tvalue = "12:50 AM";
+                   $scope.timePickerValue = "12:50 AM";
                });
     </script>
     <style type="text/css" class="cssStyles">
@@ -74,7 +74,7 @@ The following code example depicts you the way to bind data to the **TimePicker*
             width: 136px;
         }
 
-        #time_timewidget, #timectrl_timewidget {
+        #time_timeWidget, #timectrl_timeWidget {
             width: 84%;
         }
 

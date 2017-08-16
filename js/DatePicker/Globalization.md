@@ -71,7 +71,7 @@ By default DatePicker input has **“select date”** as watermark text, you can
 
             $("#datePicker").ejDatePicker({
 
-                watermarkText: "enter date value",// sets watermart text in input
+                watermarkText: "enter date value",// sets watermark text in input
 
                 buttonText: "current date" // sets button text in DatePicker calendar
 

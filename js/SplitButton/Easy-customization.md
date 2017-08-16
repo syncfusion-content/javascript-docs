@@ -23,7 +23,7 @@ In the **HTML** page, add the following button elements to configure **Split But
 {% highlight html %}
 
 <div class="spltspan">
-    <button id="spltbutton">login</button>
+    <button id="splitButton">login</button>
     <ul id="Ul11">
         <li><span>User</span></li>
         <li><span>Guest</span></li>
@@ -37,7 +37,7 @@ In the **HTML** page, add the following button elements to configure **Split But
 
         // Initialize the control in JavaScript   
         $(function () {
-            $("#spltbutton").ejSplitButton({
+            $("#splitButton").ejSplitButton({
                 size: "small",
                 contentType: "textandimage",
                 showRoundedCorner: true,
@@ -100,7 +100,7 @@ In the **HTML** page, add the following button elements to configure **Split But
         <tr>                
             <td class="btnsht">
                 <div class="spltspan">
-                    <button id="spltbutton_normal">login</button>
+                    <button id="splitButton_normal">login</button>
                     <ul id="Ul11">
                         <li><span>User</span></li>
                         <li><span>Guest</span></li>
@@ -110,7 +110,7 @@ In the **HTML** page, add the following button elements to configure **Split But
             </td>
          
             <td>
-                <button id="spltbutton_mini">login</button>
+                <button id="splitButton_mini">login</button>
                 <ul id="Ul21">
                     <li><span>User</span></li>
                     <li><span>Guest</span></li>
@@ -119,7 +119,7 @@ In the **HTML** page, add the following button elements to configure **Split But
             </td>
                
             <td class="btnsht">
-                <button id="spltbutton_small">login</button>
+                <button id="splitButton_small">login</button>
                 <ul id="Ul31">
                     <li><span>User</span></li>
                     <li><span>Guest</span></li>
@@ -128,7 +128,7 @@ In the **HTML** page, add the following button elements to configure **Split But
             </td>
              
             <td class="btnsht">
-                <button id="spltbutton_medium">login</button>
+                <button id="splitButton_medium">login</button>
                 <ul id="Ul41">
                     <li><span>User</span></li>
                     <li><span>Guest</span></li>
@@ -137,7 +137,7 @@ In the **HTML** page, add the following button elements to configure **Split But
             </td>
    
             <td class="btnsht">
-                <button id="spltbutton_large">login</button>
+                <button id="splitButton_large">login</button>
                 <ul id="Ul51">
                     <li><span>User</span></li>
                     <li><span>Guest</span></li>
@@ -145,7 +145,7 @@ In the **HTML** page, add the following button elements to configure **Split But
                 </ul>
             </td>
              <td class="btnsht">
-                <button id="spltbutton_customsize">login</button>
+                <button id="splitButton_customSize">login</button>
                 <ul id="Ul61">
                     <li><span>User</span></li>
                     <li><span>Guest</span></li>
@@ -164,7 +164,7 @@ In the **HTML** page, add the following button elements to configure **Split But
         // Initialize the control in JavaScript
         $(function () {
             //Here we used size property to render the split button in different sizes
-            $("#spltbutton_normal").ejSplitButton({
+            $("#splitButton_normal").ejSplitButton({
                 //normal size type is used
                 size: "normal",
                 showRoundedCorner: true,
@@ -173,28 +173,28 @@ In the **HTML** page, add the following button elements to configure **Split But
                 prefixIcon: "e-icon e-login"
             });
 
-            $("#spltbutton_mini").ejSplitButton({
+            $("#splitButton_mini").ejSplitButton({
                 //mini size type is used
                 size: "mini",
                 showRoundedCorner: true,
                 targetID: "Ul21",
             });
 
-            $("#spltbutton_small").ejSplitButton({
+            $("#splitButton_small").ejSplitButton({
                 //small size type is used
                 size: "small",
                 showRoundedCorner: true,
                 targetID: "Ul31",
             });
 
-            $("#spltbutton_medium").ejSplitButton({
+            $("#splitButton_medium").ejSplitButton({
                 //medium size type is used
                 size: "medium",
                 showRoundedCorner: true,
                 targetID: "Ul41",
             });
 
-            $("#spltbutton_large").ejSplitButton({
+            $("#splitButton_large").ejSplitButton({
                 //large size type is used
                 size: "large",
                 showRoundedCorner: true,
@@ -203,7 +203,7 @@ In the **HTML** page, add the following button elements to configure **Split But
                 prefixIcon: "e-login e-icon",
             });
 
-            $("#spltbutton_customsize").ejSplitButton({
+            $("#splitButton_customSize").ejSplitButton({
                 //user given height and width
                 height: 50,
                 width: 150,
@@ -305,7 +305,7 @@ In the **HTML** page, add the following button elements to configure **Split But
 <table>
     <tr>
         <td class="btnsht">
-            <button id="spltbutton_imageonly">login</button>
+            <button id="splitButton_imageonly">login</button>
             <ul id="Ul11">
                 <li><span>User</span></li>
                 <li><span>Guest</span></li>
@@ -313,7 +313,7 @@ In the **HTML** page, add the following button elements to configure **Split But
             </ul>
         </td>
         <td>
-            <button id="spltbutton_textonly">login</button>
+            <button id="splitButton_textonly">login</button>
             <ul id="Ul21">
                 <li><span>User</span></li>
                 <li><span>Guest</span></li>
@@ -321,7 +321,7 @@ In the **HTML** page, add the following button elements to configure **Split But
             </ul>
         </td>
         <td class="btnsht">
-            <button id="spltbutton_imageboth">login</button>
+            <button id="splitButton_imageboth">login</button>
             <ul id="Ul31">
                 <li><span>User</span></li>
                 <li><span>Guest</span></li>
@@ -329,7 +329,7 @@ In the **HTML** page, add the following button elements to configure **Split But
             </ul>
         </td>
         <td class="btnsht">
-            <button id="spltbutton_textandimage">login</button>
+            <button id="splitButton_textandimage">login</button>
             <ul id="Ul41">
                 <li><span>User</span></li>
                 <li><span>Guest</span></li>
@@ -337,7 +337,7 @@ In the **HTML** page, add the following button elements to configure **Split But
             </ul>
         </td>
         <td class="btnsht">
-            <button id="spltbutton_imagetextimage">login</button>
+            <button id="splitButton_imagetextimage">login</button>
             <ul id="Ul51">
                 <li><span>User</span></li>
                 <li><span>Guest</span></li>
@@ -355,7 +355,7 @@ In the **HTML** page, add the following button elements to configure **Split But
      // Initialize the control in JavaScript   
      // Here we used contentType property to render the split button with different contents
      $(function () {
-         $("#spltbutton_imageonly").ejSplitButton({
+         $("#splitButton_imageonly").ejSplitButton({
              size: "medium",
              //only image is used as content
              contentType: "imageonly",
@@ -363,14 +363,14 @@ In the **HTML** page, add the following button elements to configure **Split But
              prefixIcon: "e-icon e-handup",
              targetID: "Ul11",
          });
-         $("#spltbutton_textonly").ejSplitButton({
+         $("#splitButton_textonly").ejSplitButton({
              size: "medium",
              //only text is used as content
              contentType: "textonly",
              showRoundedCorner: true,
              targetID: "Ul21",
          });
-         $("#spltbutton_imageboth").ejSplitButton({
+         $("#splitButton_imageboth").ejSplitButton({
              size: "medium",
              //only images in both end is used as content
              contentType: "imageboth",
@@ -381,7 +381,7 @@ In the **HTML** page, add the following button elements to configure **Split But
              suffixIcon: "e-icon e-palette",
              targetID: "Ul31",
          });
-         $("#spltbutton_textandimage").ejSplitButton({
+         $("#splitButton_textandimage").ejSplitButton({
              size: "medium",
              //text and image is used as content
              contentType: "textandimage",
@@ -389,7 +389,7 @@ In the **HTML** page, add the following button elements to configure **Split But
              prefixIcon: "e-icon e-handup",
              targetID: "Ul41",
          });
-         $("#spltbutton_imagetextimage").ejSplitButton({
+         $("#splitButton_imagetextimage").ejSplitButton({
              size: "medium",
              //images in both end and text in center is used as content
              contentType: "imagetextimage",
@@ -464,7 +464,7 @@ In the **HTML** page, add the following button elements to configure **Split But
 <table>
 <tr>
     <td class="btnsht">
-        <button id="spltbutton_imageleft_normal">login</button>
+        <button id="splitButton_imageleft_normal">login</button>
         <ul id="Ul11">
             <li><span>User</span></li>
             <li><span>Guest</span></li>
@@ -472,7 +472,7 @@ In the **HTML** page, add the following button elements to configure **Split But
         </ul>
     </td>
     <td>
-        <button id="spltbutton_imageleft_small">login</button>
+        <button id="splitButton_imageleft_small">login</button>
         <ul id="Ul21">
             <li><span>User</span></li>
             <li><span>Guest</span></li>
@@ -480,7 +480,7 @@ In the **HTML** page, add the following button elements to configure **Split But
         </ul>
     </td>
     <td class="btnsht">
-        <button id="spltbutton_imageleft_medium">login</button>
+        <button id="splitButton_imageleft_medium">login</button>
         <ul id="Ul31">
             <li><span>User</span></li>
             <li><span>Guest</span></li>
@@ -488,7 +488,7 @@ In the **HTML** page, add the following button elements to configure **Split But
         </ul>
     </td>
     <td class="btnsht">
-        <button id="spltbutton_imageleft_large">login</button>
+        <button id="splitButton_imageleft_large">login</button>
         <ul id="Ul41">
             <li><span>User</span></li>
             <li><span>Guest</span></li>
@@ -498,7 +498,7 @@ In the **HTML** page, add the following button elements to configure **Split But
 </tr>
 <tr>
     <td class="btnsht">
-        <button id="spltbutton_imageright_normal">login</button>
+        <button id="splitButton_imageright_normal">login</button>
         <ul id="Ul1">
             <li><span>User</span></li>
             <li><span>Guest</span></li>
@@ -506,7 +506,7 @@ In the **HTML** page, add the following button elements to configure **Split But
         </ul>
     </td>
     <td>
-        <button id="spltbutton_imageright_small">login</button>
+        <button id="splitButton_imageright_small">login</button>
         <ul id="Ul2">
             <li><span>User</span></li>
             <li><span>Guest</span></li>
@@ -514,7 +514,7 @@ In the **HTML** page, add the following button elements to configure **Split But
         </ul>
     </td>
     <td class="btnsht">
-        <button id="spltbutton_imageright_medium">login</button>
+        <button id="splitButton_imageright_medium">login</button>
         <ul id="Ul3">
             <li><span>User</span></li>
             <li><span>Guest</span></li>
@@ -522,7 +522,7 @@ In the **HTML** page, add the following button elements to configure **Split But
         </ul>
     </td>
     <td class="btnsht">
-        <button id="spltbutton_imageright_large">login</button>
+        <button id="splitButton_imageright_large">login</button>
         <ul id="Ul4">
             <li><span>User</span></li>
             <li><span>Guest</span></li>
@@ -533,7 +533,7 @@ In the **HTML** page, add the following button elements to configure **Split But
 </tr>
 <tr>
     <td class="btnsht">
-        <button id="spltbutton_imagetop">login</button>
+        <button id="splitButton_imagetop">login</button>
         <ul id="Ul5">
             <li><span>User</span></li>
             <li><span>Guest</span></li>
@@ -541,7 +541,7 @@ In the **HTML** page, add the following button elements to configure **Split But
         </ul>
     </td>
     <td>
-        <button id="spltbutton_imagebottom">login</button>
+        <button id="splitButton_imagebottom">login</button>
         <ul id="Ul6">
             <li><span>User</span></li>
             <li><span>Guest</span></li>
@@ -559,14 +559,14 @@ In the **HTML** page, add the following button elements to configure **Split But
     // Initialize the control in JavaScript
     //Using imagePosition property we can render the split button images with different position
     $(function () {
-        $("#spltbutton_imageleft_normal").ejSplitButton({
+        $("#splitButton_imageleft_normal").ejSplitButton({
             imagePosition: "imageleft",
             contentType: "textandimage",
             showRoundedCorner: true,
             prefixIcon: "e-icon e-handup",
             targetID: "Ul11",
         });
-        $("#spltbutton_imageleft_small").ejSplitButton({
+        $("#splitButton_imageleft_small").ejSplitButton({
             size: "small",
             imagePosition: "imageleft",
             contentType: "textandimage",
@@ -574,7 +574,7 @@ In the **HTML** page, add the following button elements to configure **Split But
             prefixIcon: "e-icon e-handup",
             targetID: "Ul21",
         });
-        $("#spltbutton_imageleft_medium").ejSplitButton({
+        $("#splitButton_imageleft_medium").ejSplitButton({
             size: "medium",
             imagePosition: "imageleft",
             contentType: "textandimage",
@@ -582,7 +582,7 @@ In the **HTML** page, add the following button elements to configure **Split But
             prefixIcon: "e-icon e-handup",
             targetID: "Ul31",
         });
-        $("#spltbutton_imageleft_large").ejSplitButton({
+        $("#splitButton_imageleft_large").ejSplitButton({
             size: "large",
             imagePosition: "imageleft",
             contentType: "textandimage",
@@ -591,14 +591,14 @@ In the **HTML** page, add the following button elements to configure **Split But
             targetID: "Ul1",
         });
 
-        $("#spltbutton_imageright_normal").ejSplitButton({
+        $("#splitButton_imageright_normal").ejSplitButton({
             imagePosition: "imageright",
             contentType: "textandimage",
             showRoundedCorner: true,
             prefixIcon: "e-icon e-handup",
             targetID: "Ul2",
         });
-        $("#spltbutton_imageright_small").ejSplitButton({
+        $("#splitButton_imageright_small").ejSplitButton({
             size: "small",
             imagePosition: "imageright",
             contentType: "textandimage",
@@ -606,7 +606,7 @@ In the **HTML** page, add the following button elements to configure **Split But
             prefixIcon: "e-icon e-handup",
             targetID: "Ul3",
         });
-        $("#spltbutton_imageright_medium").ejSplitButton({
+        $("#splitButton_imageright_medium").ejSplitButton({
             size: "medium",
             imagePosition: "imageright",
             contentType: "textandimage",
@@ -614,7 +614,7 @@ In the **HTML** page, add the following button elements to configure **Split But
             prefixIcon: "e-icon e-handup",
             targetID: "Ul4",
         });
-        $("#spltbutton_imageright_large").ejSplitButton({
+        $("#splitButton_imageright_large").ejSplitButton({
             size: "large",
             imagePosition: "imageright",
             contentType: "textandimage",
@@ -622,7 +622,7 @@ In the **HTML** page, add the following button elements to configure **Split But
             prefixIcon: "e-icon e-handup",
             targetID: "Ul41",
         });
-        $("#spltbutton_imagetop").ejSplitButton({
+        $("#splitButton_imagetop").ejSplitButton({
             imagePosition: "imagetop",
             contentType: "textandimage",
             showRoundedCorner: true,
@@ -630,7 +630,7 @@ In the **HTML** page, add the following button elements to configure **Split But
             targetID: "Ul5",
             height: 60
         });
-        $("#spltbutton_imagebottom").ejSplitButton({
+        $("#splitButton_imagebottom").ejSplitButton({
             imagePosition: "imagebottom",
             contentType: "textandimage",
             showRoundedCorner: true,
@@ -703,7 +703,7 @@ In the **HTML** page, add the following button elements to configure **Split But
         <tr>
             <td class="btnsht">
                 <div class="spltspan">
-                    <button id="spltbutton_customCss1">login</button>
+                    <button id="splitButton_customCss1">login</button>
                     <ul id="Ul11">
                         <li><span>User</span></li>
                         <li><span>Guest</span></li>
@@ -713,7 +713,7 @@ In the **HTML** page, add the following button elements to configure **Split But
             </td>
 
             <td>
-                <button id="spltbutton_customCss2">login</button>
+                <button id="splitButton_customCss2">login</button>
                 <ul id="Ul21">
                     <li><span>User</span></li>
                     <li><span>Guest</span></li>
@@ -722,7 +722,7 @@ In the **HTML** page, add the following button elements to configure **Split But
             </td>
 
             <td class="btnsht">
-                <button id="spltbutton_customCss3">login</button>
+                <button id="splitButton_customCss3">login</button>
                 <ul id="Ul31">
                     <li><span>User</span></li>
                     <li><span>Guest</span></li>
@@ -731,7 +731,7 @@ In the **HTML** page, add the following button elements to configure **Split But
             </td>
 
             <td class="btnsht">
-                <button id="spltbutton_customCss4">login</button>
+                <button id="splitButton_customCss4">login</button>
                 <ul id="Ul41">
                     <li><span>User</span></li>
                     <li><span>Guest</span></li>
@@ -740,7 +740,7 @@ In the **HTML** page, add the following button elements to configure **Split But
             </td>
 
             <td class="btnsht">
-                <button id="spltbutton_customCss5">login</button>
+                <button id="splitButton_customCss5">login</button>
                 <ul id="Ul51">
                     <li><span>User</span></li>
                     <li><span>Guest</span></li>
@@ -759,7 +759,7 @@ In the **HTML** page, add the following button elements to configure **Split But
     // Initialize the control in JavaScript
     $(function () {
         //implement custom CSS for each split button
-        $("#spltbutton_customCss1").ejSplitButton({
+        $("#splitButton_customCss1").ejSplitButton({
             cssClass: "customCss1",
             size: "small",
             showRoundedCorner: true,
@@ -768,7 +768,7 @@ In the **HTML** page, add the following button elements to configure **Split But
             targetID: "Ul11",
         });
 
-        $("#spltbutton_customCss2").ejSplitButton({
+        $("#splitButton_customCss2").ejSplitButton({
             cssClass: "customCss2",
             size: "small",
             showRoundedCorner: true,
@@ -777,7 +777,7 @@ In the **HTML** page, add the following button elements to configure **Split But
             targetID: "Ul21",
         });
 
-        $("#spltbutton_customCss3").ejSplitButton({
+        $("#splitButton_customCss3").ejSplitButton({
             cssClass: "customCss3",
             size: "small",
             showRoundedCorner: true,
@@ -786,7 +786,7 @@ In the **HTML** page, add the following button elements to configure **Split But
             targetID: "Ul31",
         });
 
-        $("#spltbutton_customCss4").ejSplitButton({
+        $("#splitButton_customCss4").ejSplitButton({
             cssClass: "customCss4",
             size: "small",
             showRoundedCorner: true,
@@ -795,7 +795,7 @@ In the **HTML** page, add the following button elements to configure **Split But
             targetID: "Ul41",
         });
 
-        $("#spltbutton_customCss5").ejSplitButton({
+        $("#splitButton_customCss5").ejSplitButton({
             cssClass: "customCss5",
             size: "small",
             showRoundedCorner: true,

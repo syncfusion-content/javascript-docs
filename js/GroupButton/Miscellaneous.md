@@ -20,9 +20,9 @@ Particular currently showing button items can be hided. Also it provides the opt
 
         <script>
 
-            grpbtnObj = $("#groupButton").data("ejGroupButton");
+            groupButtonObj = $("#groupButton").data("ejGroupButton");
 
-            grpbtnObj.hideItem(1);
+            groupButtonObj.hideItem(1);
 
         </script>
 
@@ -34,9 +34,9 @@ Particular currently showing button items can be hided. Also it provides the opt
 
         <script>
 
-            grpbtnObj = $("#groupButton").data("ejGroupButton");
+            groupButtonObj = $("#groupButton").data("ejGroupButton");
 
-            grpbtnObj.showItem(1);
+            groupButtonObj.showItem(1);
 
         </script>
 
@@ -54,9 +54,9 @@ Also entire GroupButton can be enabled or disabled using enable (), disable publ
 
         <script>
 
-            grpbtnObj = $("#groupButton").data("ejGroupButton");
+            groupButtonObj = $("#groupButton").data("ejGroupButton");
 
-            grpbtnObj.disableItem(1);
+            groupButtonObj.disableItem(1);
 
         </script>
 
@@ -73,9 +73,9 @@ By passing the jQuery element of the required button to **getIndex** public meth
 
         <script>
 
-            grpbtnObj = $("#groupButton").data("ejGroupButton");
+            groupButtonObj = $("#groupButton").data("ejGroupButton");
 
-            grpbtnObj.getIndex(id); // id of the element
+            groupButtonObj.getIndex(id); // id of the element
 
         </script>
 
@@ -90,11 +90,11 @@ You can get the selection state of required button by passing that button jQuery
 
         <script>
 
-            grpbtnObj = $("#groupButton").data("ejGroupButton");
+            groupButtonObj = $("#groupButton").data("ejGroupButton");
 
-            grpbtnObj.selectItem(1);
+            groupButtonObj.selectItem(1);
 
-            alert(grpbtnObj.isSelected(1));
+            alert(groupButtonObj.isSelected(1));
 
         </script>
 
@@ -106,11 +106,11 @@ Also you can get the active / disabled state required button by passing that but
 
         <script>
 
-            grpbtnObj = $("#groupButton").data("ejGroupButton");
+            groupButtonObj = $("#groupButton").data("ejGroupButton");
 
-            grpbtnObj.disableItem(1);
+            groupButtonObj.disableItem(1);
 
-            alert(grpbtnObj.isDisabled(1));
+            alert(groupButtonObj.isDisabled(1));
 
         </script>
 

@@ -136,7 +136,7 @@ This property will accept the array values and its value will be differ based on
 
                 <li>
 
-                    Credi Card
+                    Credit Card
 
                 </li>
 
@@ -195,7 +195,7 @@ Button items in GroupButton can be selected or deselected using available public
 
                 <li>
 
-                    Credi Card
+                    Credit Card
 
                 </li>
 
@@ -231,9 +231,9 @@ Button items in GroupButton can be selected or deselected using available public
 
             });
 
-            grpbtnObj = $("#groupButton").data("ejGroupButton");
+            groupButtonObj = $("#groupButton").data("ejGroupButton");
 
-            grpbtnObj.selectItem(0);
+            groupButtonObj.selectItem(0);
 
         </script>
 
@@ -245,9 +245,9 @@ Button items in GroupButton can be selected or deselected using available public
 
         <script>
 
-            grpbtnObj = $("#groupButton").data("ejGroupButton");
+            groupButtonObj = $("#groupButton").data("ejGroupButton");
 
-            grpbtnObj.deselectItem(0);
+            groupButtonObj.deselectItem(0);
 
         </script>
 
@@ -265,7 +265,7 @@ You can select or deselect the button items based on id of the button items also
 
                 <li id="payment_option_1">
 
-                    Credi Card
+                    Credit Card
 
                 </li>
 
@@ -299,9 +299,9 @@ You can select or deselect the button items based on id of the button items also
 
             });
 
-            grpbtnObj = $("#groupButton").data("ejGroupButton");
+            groupButtonObj = $("#groupButton").data("ejGroupButton");
 
-            grpbtnObj.selectItem("payment_option_2");
+            groupButtonObj.selectItem("payment_option_2");
 
         </script>
 
