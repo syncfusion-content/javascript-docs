@@ -89,11 +89,11 @@ You can customize the TreeView full row selection for template support by using 
 
 var localData = [
     { id: 1, name: "Browsers", className: "browser", hasChild: true, expanded: true },
-    { id: 2, pid: 1, name: "Internet Explorer", className: "ieb", selected: true },
-    { id: 3, pid: 1, name: "Chrome", className: "chromeb" },
-    { id: 4, pid: 1, name: "Firefox", className: "firefoxb" },
-    { id: 6, pid: 1, name: "Bitty", className: "bittyb" },
-    { id: 7, pid: 1, name: "Opera", className: "operab" }
+    { id: 2, pid: 1, name: "Internet Explorer", className: "ieBroswer", selected: true },
+    { id: 3, pid: 1, name: "Chrome", className: "chromeBroswer" },
+    { id: 4, pid: 1, name: "Firefox", className: "firefoxBroswer" },
+    { id: 6, pid: 1, name: "Bitty", className: "bittyBroswer" },
+    { id: 7, pid: 1, name: "Opera", className: "operaBroswer" }
 ];
 
 $(function () {
@@ -134,23 +134,23 @@ $(function () {
 		background-image: url("http://js.syncfusion.com/demos/web/images/toolbar/browserl.png");
 	}
 	
-	.custom .ieb {
+	.custom .ieBroswer {
 		background-position: -84px 0px;
 	}
 	
-	.custom .chromeb {
+	.custom .chromeBroswer {
 		background-position: -42px 0px;
 	}
 	
-	.custom .firefoxb {
+	.custom .firefoxBroswer {
 		background-position: 0px 0px;
 	}
 	
-	.custom .bittyb {
+	.custom .bittyBroswer {
 		background-position: -126px 0px;
 	}
 	
-	.custom .operab {
+	.custom .operaBroswer {
 		background-position: -168px 0px;
 	}
 

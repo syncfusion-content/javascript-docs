@@ -358,7 +358,7 @@ Initialize **Slider** using the following code example.
 
         var loanValue = 25000,
             interestValue = 4,
-            tenurevalue = 3;
+            tenureValue = 3;
     
         $("#loanSlider").ejSlider({
             height: 16,
@@ -382,7 +382,7 @@ Initialize **Slider** using the following code example.
         });
         $("#tenureSlider").ejSlider({
             height: 16,
-            value: tenurevalue,
+            value: tenureValue,
             minValue: 1,
             maxValue: 20,
             incrementStep: 1,
