@@ -109,7 +109,7 @@ Add input element to create a **Textbox**.
             </tbody>
         </table>
         <div class="pay-bill">
-            <button class="e-btn" id="pbill">Pay Bill</button>
+            <button class="e-btn" id="payBill">Pay Bill</button>
         </div>
     </div>
 </div>
@@ -179,7 +179,7 @@ Initialize **textbox** in the **&lt;script&gt;** tag.
                 name: "currency",
                 value: 555
             });
-            $("#pbill").ejButton({
+            $("#payBill").ejButton({
                 width: "80px",
                 height: "25px",
             });
@@ -224,7 +224,7 @@ Add the following code example in **&lt;body&gt;** tag.
             </tbody>
         </table>
         <div class="pay-bill">
-            <button class="e-btn" id="pbill">submit</button>
+            <button class="e-btn" id="payBill">submit</button>
         </div>
     </div>
 </div>
@@ -249,7 +249,7 @@ The **&lt;script&gt;** tag defines the mask value for product key.
                 //mask value for product key validation
                 maskFormat: "aaaa-aaaa-aaaa-aaaa"
             });
-            $("#pbill").ejButton({
+            $("#payBill").ejButton({
                 width: "80px",
                 height: "25px",
             });
