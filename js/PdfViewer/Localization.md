@@ -416,7 +416,7 @@ googleSearch
 contentText
 </td>
 <td>
-Search google
+Search Google
 </td>
 </tr>
 <tr>
