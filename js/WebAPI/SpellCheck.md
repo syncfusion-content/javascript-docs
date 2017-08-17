@@ -34,13 +34,21 @@ Error Word Check and Highlight:
 
 {% highlight js %}
 
+// Response while requesting the jsonp type
+
 [{"ErrorWord":"Facebook"},{"ErrorWord":"Zuckerberg"},{"ErrorWord":"fouders"},{"ErrorWord":"membrship"},{"ErrorWord":"collges"},{"ErrorWord":"Univrsity"},{"ErrorWord":"graually"}]
+
+// Response while requesting the json type
+
+"[{\"ErrorWord\":\"Facebook\"},{\"ErrorWord\":\"Zuckerberg\"},{\"ErrorWord\":\"fouders\"},{\"ErrorWord\":\"membrship\"},{\"ErrorWord\":\"collges\"},{\"ErrorWord\":\"Univrsity\"},{\"ErrorWord\":\"graually\"}]"
 
 {% endhighlight %}
 
 Suggestions for an Error Word:
 
 {% highlight js %}
+
+// Response while requesting the jsonp type
 
 {"Facebook":[]}, 
 {"Zuckerberg":[]},
@@ -49,6 +57,16 @@ Suggestions for an Error Word:
 {"collges":["collages","colleges","collies","collagen","collage\u0027s","collars","collates","colleens","college","college\u0027s","collides","collie","collied","collier","colliers","collie\u0027s","colludes","colognes","collagen\u0027s","collapse","collapses","collects","collier\u0027s","collapsed","collegian","collegians","collegiate"]},
 {"Univrsity":["University","University\u0027s","Univariate","Universities","Unvisited"]},
 {"graually":["gradually","gravelly","gradual","graduals","granularly"]}
+
+// Response while requesting the json type
+
+"{\"Facebook\":[]}"
+"{\"Zuckerberg\":[]}"
+"{\"fouders\":[\"founders\",\"fodders\",\"folders\",\"fosters\",\"fouler\",\"founder\",\"founder's\",\"fodder\",\"fodder's\",\"folder\",\"folder's\",\"fonder\",\"footers\",\"forgers\",\"formers\",\"foundered\",\"founds\",\"focuser\",\"fondues\",\"fondue's\"]}"
+"{\"membrship\":[\"membership\",\"memberships\",\"membership's\",\"members\"]}"
+"{\"collges\":[\"collages\",\"colleges\",\"collies\",\"collagen\",\"collage's\",\"collars\",\"collates\",\"colleens\",\"college\",\"college's\",\"collides\",\"collie\",\"collied\",\"collier\",\"colliers\",\"collie's\",\"colludes\",\"colognes\",\"collagen's\",\"collapse\",\"collapses\",\"collects\",\"collier's\",\"collapsed\",\"collegian\",\"collegians\",\"collegiate\"]}"
+"{\"Univrsity\":[\"University\",\"University's\",\"Univariate\",\"Universities\",\"Unvisited\"]}"
+"{\"graually\":[\"gradually\",\"gravelly\",\"gradual\",\"graduals\",\"granularly\"]}"
 
 {% endhighlight %}
 
@@ -76,7 +94,7 @@ function showDialog() {
 {% endhighlight %}
 
 {% highlight c# %}
-
+        // Triggers while requesting the jsonp type
         [AcceptVerbs("Get","Post")]
         [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
         public object CheckWords(string callback, string data)
@@ -102,6 +120,30 @@ function showDialog() {
             return string.Empty;                        
         }
 
+        // Triggers while requesting the json type
+        [AcceptVerbs("Get", "Post")]
+        public object CheckWords(string data)
+        {
+            var serializer = new JavaScriptSerializer();
+            Actions args = (Actions)serializer.Deserialize(data, typeof(Actions));
+            if (args.RequestType == "checkWords")
+            {
+                baseDictionary.IgnoreAlphaNumericWords = args.Model.IgnoreAlphaNumericWords;
+                baseDictionary.IgnoreEmailAddress = args.Model.IgnoreEmailAddress;
+                baseDictionary.IgnoreMixedCaseWords = args.Model.IgnoreMixedCaseWords;
+                baseDictionary.IgnoreUpperCaseWords = args.Model.IgnoreUpperCase;
+                baseDictionary.IgnoreUrl = args.Model.IgnoreUrl;
+                baseDictionary.IgnoreFileNames = args.Model.IgnoreFileNames;
+                var errorWordsCollection = this.SplitWords(args.Text);
+                return JsonConvert.SerializeObject(errorWordsCollection);
+            }
+            else if (args.RequestType == "getSuggestions")
+            {
+                var arr = baseDictionary.GetSuggestions(args.ErrorWord);
+                return JsonConvert.SerializeObject(arr);
+            }
+            return "";
+        }
 {% endhighlight %}
 
 ## AddToDictionary
@@ -131,7 +173,11 @@ Input:
 Output:   
 
 {% highlight js %}
+// Response while requesting the jsonp type
 “textarea”
+
+// Response while requesting the json type
+"\"textarea\""
 {% endhighlight %}
 
 ### Code example 
@@ -157,7 +203,7 @@ function showDialog() {
 {% endhighlight %}
 
 {% highlight c# %}
-
+        // Triggers while requesting the jsonp type
         [AcceptVerbs("Get","Post")]
         [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
         public object AddToDictionary(string callback, string data)
@@ -170,6 +216,19 @@ function showDialog() {
             }
             HttpContext.Current.Response.Write(string.Format("{0}({1});", callback, serializer.Serialize(args.CustomWord)));
             return string.Empty;
+        }
+
+        // Triggers while requesting the json type
+        [AcceptVerbs("Get", "Post")]
+        public object AddToDictionary(string data)
+        {
+            var serializer = new JavaScriptSerializer();
+            var args = (Actions)serializer.Deserialize(data, typeof(Actions));
+            if (args.CustomWord != null)
+            {
+                AddToCustomDictionary(args.CustomWord);
+            }
+            return JsonConvert.SerializeObject(args.CustomWord);
         }
 
 {% endhighlight %}

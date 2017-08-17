@@ -920,6 +920,54 @@ _LOG10(number)_
 
 
 
+## MMULT
+
+
+
+Returns the matrix product of two arrays.
+
+
+
+**Syntax:**
+
+
+
+_MMULT(array1, array2)_
+
+
+
+**where:**
+
+
+
+* array1, array 2 are required arrays that needs to be multiplied.
+
+
+
+**Remarks:**
+
+
+
+* The number of columns in array1 must be the same as the number of rows in array2, and both arrays must contain only numbers.
+
+
+
+* array1 and array2 can be given as cell ranges, array constants, or references.
+
+
+
+* MMULT returns the #VALUE! error when:
+
+
+
+  * Any cells are empty or contain text.
+
+
+
+  * The number of columns in array1 is different from the number of rows in array2.
+
+
+
 ## SIN
 
 
@@ -1174,6 +1222,147 @@ _PRODUCT(number1, number2, ...)_
 
 
 
+## ROUND
+
+
+
+Rounds a number to a specified number of digits.
+
+
+
+**Syntax:**
+
+
+
+_ROUND(number, num_digits)_
+
+
+
+**where:**
+
+
+
+* number is the numeric value that you want to round.
+
+
+
+* num_digits is the number of digits to which you want to round the number argument.
+
+
+
+**Remarks:**
+
+
+
+* If num_digits is greater than 0 (zero), then number is rounded to the specified number of decimal places.
+
+
+
+* If num_digits is 0, the number is rounded to the nearest integer.
+
+
+
+* If num_digits is less than 0, the number is rounded to the left of the decimal point.
+
+
+
+## ROUNDUP
+
+
+
+Rounds a number up, away from zero.
+
+
+
+**Syntax:**
+
+
+
+_ROUNDUP(number, num_digits)_
+
+
+
+**where:**
+
+
+
+* number is any real number that you want rounded up.
+
+
+
+* num_digits is the number of digits to which you want to round number.
+
+
+
+**Remarks:**
+
+
+
+* ROUNDUP behaves like ROUND, except that it always rounds a number up.
+
+
+
+* If num_digits is greater than 0 (zero), then number is rounded up to the specified number of decimal places.
+
+
+
+* If num_digits is 0, then number is rounded up to the nearest integer.
+
+
+
+* If num_digits is less than 0, then number is rounded up to the left of the decimal point.
+
+
+
+
+## ROUNDDOWN
+
+
+
+Rounds a number down, toward zero.
+
+
+
+**Syntax:**
+
+
+
+_ROUNDDOWN(number, num_digits)_
+
+
+
+**where:**
+
+
+
+* number is any real number that you want rounded down.
+
+
+
+* num_digits is the number of digits to which you want to round number.
+
+
+
+**Remarks:**
+
+
+
+* ROUNDDOWN behaves like ROUND, except that it always rounds a number down.
+
+
+
+* If num_digits is greater than 0 (zero), then number is rounded down to the specified number of decimal places.
+
+
+
+* If num_digits is 0, then number is rounded down to the nearest integer.
+
+
+
+* If num_digits is less than 0, then number is rounded down to the left of the decimal point.
+
+
+
 ## SQRT
 
 
@@ -1247,6 +1436,46 @@ _SUMIF(range, criteria, sum_range)_
 
 
 * If sum_range is omitted, the cells in range are summed.
+
+
+
+## SUMPRODUCT
+
+
+
+Returns the sum of the products of corresponding array components in given arrays.
+
+
+
+**Syntax:**
+
+
+
+_SUMPRODUCT(array1, [array2], [array3], ...)_
+
+
+
+**where:**
+
+
+
+* array1 is an argument whose components you want to multiply and then add.
+
+
+
+* array2, array3… are array arguments 2 to 255 whose components you want to multiply and then add.
+
+
+
+**Remarks:**
+
+
+
+* `#VALUE!` Occurs when the array arguments are not in the same dimensions.
+
+
+
+* SUMPRODUCT treats array entries that are not numeric as if they were zeros.
 
 
 

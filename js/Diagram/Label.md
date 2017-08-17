@@ -647,34 +647,6 @@ $("#diagram").ejDiagram({
 
 {% endhighlight %}
 
-### Drag Limit
-
-Diagram label dragging can be restricted by enabling/disabling `DragLimit` constraints of the connectors. Also we can define the drag limit in all direction using `DragLimit` property of the connector. Drag limit only applicable for connector labels.
-
-{% highlight javascript %}
-
-//Initializes Diagram
-$("#diagram").ejDiagram({
-	connectors: [
-		{
-			name: "connector1",
-			// Enable DragLimit constraints to the connector.
-			constraints: ej.datavisualization.Diagram.ConnectorConstraints.Default | ej.datavisualization.Diagram.ConnectorConstraints.DragLimit | ej.datavisualization.Diagram.ConnectorConstraints.DragLabel,
-			labels: [
-				{
-					text: "Connector",
-					// Defines the drag limit property in all direction
-					dragLimit: { left: 30, top: 30, right: 30, bottom: 30 }
-				}
-			]
-		}
-	]
-});
-
-
-{% endhighlight %}
-
-
 ## Multiple labels
 
 You can add any number of labels to a node or connector. The following code illustrates how to add multiple labels to a node. 
