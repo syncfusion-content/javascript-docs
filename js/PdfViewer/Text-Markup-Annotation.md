@@ -52,4 +52,4 @@ The text markup annotation in the PDF document can also be deleted from the PDF 
 
 **Saving the text markup annotation**
 
-When the download tool is selected in the toolbar, the text markup annotations will be saved in the PDF document.
+When the download tool is selected in the toolbar, the text markup annotations will be saved in the PDF document. This action will not affect the original document.
