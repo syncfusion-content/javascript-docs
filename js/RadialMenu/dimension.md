@@ -20,7 +20,7 @@ You can customize the **Radial Menu** size by using the **radius** property. By 
 
     <!-- RTE code for setting target for Radial menu -->
 
-    <div id="defaultradialmenu">
+    <div id="defaultRadialMenu">
         <ul>
             <li data-ej-imageurl="http://js.syncfusion.com/UG/web/Content/radial/font.png" data-ej-text="Bold"></li>
             <li data-ej-imageurl="http://js.syncfusion.com/UG/web/Content/radial/f1.png" data-ej-text="Italic"></li>
@@ -36,11 +36,11 @@ Add the following script in your code.
 {% highlight javascript %}
 
         $(function () {
-            $('#defaultradialmenu').ejRadialMenu({ radius: "200"});
+            $('#defaultRadialMenu').ejRadialMenu({ radius: "200"});
         });
         
-        $("#rteSampleone").select(function (e) {
-            $('#defaultradialmenu').ejRadialMenu("show");
+        $("#rteSampleOne").select(function (e) {
+            $('#defaultRadialMenu').ejRadialMenu("show");
         });
 
 {% endhighlight %}
@@ -74,11 +74,11 @@ Add the following script in your code.
 {% highlight javascript %}
 
         $(function () {
-            $('#defaultradialmenu').ejRadialMenu({ radius: "200",position:{x:10,y:10}});
+            $('#defaultRadialMenu').ejRadialMenu({ radius: "200",position:{x:10,y:10}});
         });
         
-        $("#rteSampleone").select(function (e) {
-            $('#defaultradialmenu').ejRadialMenu("show");
+        $("#rteSampleOne").select(function (e) {
+            $('#defaultRadialMenu').ejRadialMenu("show");
         $
         });
 

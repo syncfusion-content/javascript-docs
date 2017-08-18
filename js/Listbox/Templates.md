@@ -61,7 +61,7 @@ Define the styles for the template as below.
              font-weight:bold;
              padding:6px 3px 1px 3px;
         }
-        .desig,.country{
+        .designation,.country{
             font-size:smaller;
             padding:3px 3px 0px 0px;
         }

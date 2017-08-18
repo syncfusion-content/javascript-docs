@@ -16,7 +16,7 @@ api: /api/js/ejlistbox
  {% highlight html %}
 
      <div class="contents">
-          <ul id="selectsection"></ul> 
+          <ul id="selectSection"></ul> 
     </div>
 
  {% endhighlight %}
@@ -28,7 +28,7 @@ api: /api/js/ejlistbox
             var skills = [{ skill: "F#" }, { skill: "ActionScript" }, { skill: "Delphi" }, { skill: "Basic" },
             { skill: "C++" }, { skill: "ESPOL" }, { skill: "C#" }, { skill: "DBase" }, { skill: "ASP.NET" }
             ];
-            $("#selectsection").ejListBox({
+            $("#selectSection").ejListBox({
                 width: "220", dataSource: skills,
                 fields: { text: "skill" },
                 sortOrder:ej.SortOrder.Descending

@@ -19,7 +19,7 @@ The **data-ej-imageUrl** property specifies the URL of the image for the items. 
 {% highlight html %}
 
 
-    <div id="defaultradialmenu">
+    <div id="defaultRadialMenu">
         <ul>
             <li data-ej-imageurl="http://js.syncfusion.com/UG/web/Content/radial/copy.png" data-ej-text="Copy"></li>
             <li data-ej-imageurl="http://js.syncfusion.com/UG/web/Content/radial/paste.png" data-ej-text="Paste"></li>
@@ -35,11 +35,11 @@ Add the following script in your code.
 {% highlight javascript %}
 
         $(function () {
-            $('#defaultradialmenu').ejRadialMenu({ radius: "150" });
+            $('#defaultRadialMenu').ejRadialMenu({ radius: "150" });
         });
 
-        $("#rteSampleone").select(function (e) {
-            $('#defaultradialmenu').ejRadialMenu("show");
+        $("#rteSampleOne").select(function (e) {
+            $('#defaultRadialMenu').ejRadialMenu("show");
         });
 
 
@@ -59,7 +59,7 @@ You can specify the click event to corresponding image/text of **Radial Menu** i
 {% highlight html %}
 
 
-    <div id="defaultradialmenu">
+    <div id="defaultRadialMenu">
 
           <ul>
                <li data-ej-imageurl="http://js.syncfusion.com/UG/web/Content/radial/copy.png" data-ej-text="Copy" data-ej-click="copy"></li>
@@ -101,11 +101,11 @@ Add the following script in your code.
 {% highlight javascript %}
 
         $(function () {
-            $('#defaultradialmenu').ejRadialMenu({ radius: "150" });
+            $('#defaultRadialMenu').ejRadialMenu({ radius: "150" });
         });
 
-        $("#rteSampleone").select(function (e) {
-            $('#defaultradialmenu').ejRadialMenu("show");
+        $("#rteSampleOne").select(function (e) {
+            $('#defaultRadialMenu').ejRadialMenu("show");
         });
         function italic(e) {
             rteObj.executeCommand("italic");
@@ -134,7 +134,7 @@ The **data-ej-badge-enabled** property to enable or disable badges. **data-ej-ba
 
 {% highlight html %}
 
-  <div id="defaultradialmenu">
+  <div id="defaultRadialMenu">
             
             <ul>
             <li data-ej-imageurl="http://js.syncfusion.com/UG/web/Content/radial/copy.png" data-ej-text="Copy" data-ej-click="copyevent" data-ej-enabled="true" data-ej-badge-enabled="true" data-ej-badge-value="3"></li>
@@ -150,11 +150,11 @@ Add the following script in your code.
 {% highlight javascript %}
 
         $(function () {
-            $('#defaultradialmenu').ejRadialMenu();
+            $('#defaultRadialMenu').ejRadialMenu();
         });
 
-        $("#rteSampleone").select(function (e) {
-            $('#defaultradialmenu').ejRadialMenu("show");
+        $("#rteSampleOne").select(function (e) {
+            $('#defaultRadialMenu').ejRadialMenu("show");
         });       
 
 
@@ -175,7 +175,7 @@ Refer to the following code example.
 
 {% highlight html %}
 
-        <div id="radialslidermenu">
+        <div id="radialSliderMenu">
 
             <ul>
                 <li data-ej-imageurl="http://js.syncfusion.com/UG/web/Content/radial/copy.png" data-ej-text="Copy" data-ej-click="copy"></li>
@@ -217,11 +217,11 @@ Add the following script in your code.
 {% highlight javascript %}
 
         $(function () {
-            $('#radialslidermenu').ejRadialMenu({ radius: "150" });
+            $('#radialSliderMenu').ejRadialMenu({ radius: "150" });
         });
 
-        $("#rteSampleone").select(function (e) {
-            $('#radialslidermenu').ejRadialMenu("show");
+        $("#rteSampleOne").select(function (e) {
+            $('#radialSliderMenu').ejRadialMenu("show");
         });       
 
 

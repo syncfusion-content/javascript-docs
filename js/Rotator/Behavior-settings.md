@@ -18,7 +18,7 @@ The **“enabled”** property enables or disables the **Rotator** control. The 
 
   
 <div class="cols-sample-area">
-   <ul id="slidercontent" accesskey="e">
+   <ul id="sliderContent" accesskey="e">
       <li>
          <img class="image" src="../images/rotator/nature.jpg" title="Nature" />
       </li>
@@ -51,7 +51,7 @@ The **“enabled”** property enables or disables the **Rotator** control. The 
 
     $(function () {
         // declaration
-        $("#slidercontent").ejRotator({ enabled: true });
+        $("#sliderContent").ejRotator({ enabled: true });
     });
 
   {% endhighlight %}
@@ -65,7 +65,7 @@ The “isResponsive” property resizes the Rotator when the browser window is r
 
     $(function () {
         // declaration
-        $("#slidercontent").ejRotator({ isResponsive : true });
+        $("#sliderContent").ejRotator({ isResponsive : true });
     });
 
 {% endhighlight %}
@@ -78,7 +78,7 @@ The **Rotator** Items continuously rotate without user interference by enable th
 
     $(function () {
         // declaration
-        $("#slidercontent").ejRotator({ enableAutoPlay: true });
+        $("#sliderContent").ejRotator({ enableAutoPlay: true });
     });
 
 {% endhighlight %}
@@ -91,7 +91,7 @@ The **stopOnHover** property pauses the **auto play** while hover on the **Rotat
 
     $(function () {
         // declaration
-        $("#slidercontent").ejRotator({ enableAutoPlay: true, stopOnHover: true });
+        $("#sliderContent").ejRotator({ enableAutoPlay: true, stopOnHover: true });
     });
 
 
@@ -117,7 +117,7 @@ This property specifies the position of the **showPager** in the **Rotator** Ite
     
     $(function () {
         // declaration
-        $("#slidercontent").ejRotator({
+        $("#sliderContent").ejRotator({
             pagerPosition: ej.Rotator.PagerPosition.BottomLeft,
             slideWidth: "630px",
             slideHeight: "350px"
@@ -138,7 +138,7 @@ The **“showPager”** property turns on or off the **pager** support in the **
 
     $(function () {
         // declaration
-        $("#slidercontent").ejRotator({ showPager: false });
+        $("#sliderContent").ejRotator({ showPager: false });
     });
 
 {% endhighlight %}
@@ -157,7 +157,7 @@ The “**showPlayButton**” property enables play / pause button on **Rotator**
 
     $(function () {
         // declaration
-        $("#slidercontent").ejRotator({ slideWidth: "600px", showPlayButton: true });
+        $("#sliderContent").ejRotator({ slideWidth: "600px", showPlayButton: true });
     });
 
 {% endhighlight %}
@@ -174,7 +174,7 @@ The “**showNavigateButton**” property turns on or off the slide buttons (nex
 
     $(function () {
         // declaration
-        $("#slidercontent").ejRotator({ slideWidth: "500px", showNavigateButton: true });
+        $("#sliderContent").ejRotator({ slideWidth: "500px", showNavigateButton: true });
     });
 
 {% endhighlight %}
@@ -191,7 +191,7 @@ When the **Rotator** Item is an image, you can specify a caption for the **Rotat
 
     $(function () {
         // declaration
-        $("#slidercontent").ejRotator({ slideWidth: "500px", showCaption: true });
+        $("#sliderContent").ejRotator({ slideWidth: "500px", showCaption: true });
     });
 
 {% endhighlight %}
