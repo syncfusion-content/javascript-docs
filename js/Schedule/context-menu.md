@@ -93,7 +93,7 @@ $(function() {
                     id: "today",
                     text: "Today"
                 }, {
-                    id: "gotodate",
+                    id: "goToDate",
                     text: "Go to date"
                 }, {
                     id: "settings",
@@ -103,7 +103,7 @@ $(function() {
                     text: "View",
                     parentId: "settings"
                 }, {
-                    id: "timemode",
+                    id: "timeMode",
                     text: "TimeMode",
                     parentId: "settings"
                 }, {
@@ -123,13 +123,13 @@ $(function() {
                     text: "Month",
                     parentId: "view"
                 }, {
-                    id: "timemode_Hour12",
+                    id: "timeMode_Hour12",
                     text: "12 Hours",
-                    parentId: "timemode"
+                    parentId: "timeMode"
                 }, {
-                    id: "timemode_Hour24",
+                    id: "timeMode_Hour24",
                     text: "24 Hours",
-                    parentId: "timemode"
+                    parentId: "timeMode"
                 }, {
                     id: "workhours",
                     text: "Work Hours",
