@@ -67,7 +67,7 @@ The following code example shows you how to display a column with resource image
 
     <div style="display:inline-block;position:relative;left:10px;top:1px">
 
-        <img src="images/gantt/{{'{{'}}:#data['resourceNames']{{}}}}.png" height="40px" />
+        <img src="images/Gantt/{{'{{'}}:#data['resourceNames']{{}}}}.png" height="40px" />
 
     </div>
 
@@ -101,7 +101,7 @@ var columnTemplateData = [{
 }];
 $(function() {
 
-    $("#gantt").ejGantt({
+    $("#Gantt").ejGantt({
 
         //…
 
@@ -121,9 +121,9 @@ $(function() {
 
         load: function(args) {
 
-            var gantt = $("#gantt").ejGantt("instance");
+            var Gantt = $("#Gantt").ejGantt("instance");
 
-            var columns = gantt.getColumns();
+            var columns = Gantt.getColumns();
 
             columns[2].visible = columns[3].visible = false;
 
@@ -164,7 +164,7 @@ The column menu provides the following options:
 Sort Ascending and Sort Descending options can be enabled or disabled with the [allowSorting](/api/js/ejgantt#members:allowsorting "allowSorting") property. Single level sorting can be performed with these options. To perform multilevel sorting, [allowMultiSorting](/api/js/ejgantt#members:allowmultisorting "allowMultiSorting") property should be enabled. You can also disable the visibility of a particular column in the column collection manually by setting the `visible` property to `false`.
 
 {% highlight javascript %}
-$("#gantt").ejGantt({
+$("#Gantt").ejGantt({
         // ...     
         showColumnChooser: true,
         allowSorting: true,
@@ -201,7 +201,7 @@ These fields can be customized with [columnDialogFields](/api/js/ejgantt#members
 
 {% highlight javascript %}
 
-$("#gantt").ejGantt({
+$("#Gantt").ejGantt({
         // ...     
         showColumnChooser: true,
         showColumnOptions: true,
