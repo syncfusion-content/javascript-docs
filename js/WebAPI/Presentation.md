@@ -122,7 +122,7 @@ URL: http://js.syncfusion.com/demos/ejServices/api/Presentation/MergePresentatio
 		var formdata = new FormData();
 		var destinationtheme = document.getElementById("destinationtheme").checked;
         var sourceformatting = document.getElementById("sourceformatting").checked;
-		var contenttype = "data:attachment/powerpoint";
+		var contentType = "data:attachment/powerpoint";
         var filename = "Sample.pptx";
         if (sourceformatting) {
             formdata.append("MergingType", "SourceFormatting");
@@ -138,9 +138,9 @@ URL: http://js.syncfusion.com/demos/ejServices/api/Presentation/MergePresentatio
 		
 		req.onload = function (event) {
 		if (req.response != null && navigator.msSaveBlob)
-			return navigator.msSaveBlob(new Blob([req.response], { type: contenttype }), filename);
+			return navigator.msSaveBlob(new Blob([req.response], { type: contentType }), filename);
 		var a = document.createElement('a');
-		var url = window.URL.createObjectURL(new Blob([req.response], {type: contenttype}));
+		var url = window.URL.createObjectURL(new Blob([req.response], {type: contentType}));
 		a.href = url;
 		a.download = filename;
 		document.body.appendChild(a);
@@ -183,17 +183,17 @@ URL: http://js.syncfusion.com/demos/ejServices/api/Presentation/CreateNotes
 		var formdata = new FormData();
 		var rdButtonPPTX = document.getElementById("rdButtonPPTX").checked;
         var rdButtonPDF = document.getElementById("rdButtonPDF").checked;
-		var contenttype;
+		var contentType;
         var filename;
         if (rdButtonPPTX) {
             formdata.append("FormatType", "PPTX");
-            contenttype = "data:attachment/powerpoint";
+            contentType = "data:attachment/powerpoint";
             filename = "Sample.pptx";
         }
         else if(rdButtonPDF)
         {
             formdata.append("FormatType", "PDF");
-            contenttype = "data:attachment/pdf";
+            contentType = "data:attachment/pdf";
             filename = "Sample.pdf";
         }
 		var req = new XMLHttpRequest();
@@ -203,9 +203,9 @@ URL: http://js.syncfusion.com/demos/ejServices/api/Presentation/CreateNotes
 		
 		req.onload = function (event) {
 		if (req.response != null && navigator.msSaveBlob)
-			return navigator.msSaveBlob(new Blob([req.response], { type: contenttype }), filename);
+			return navigator.msSaveBlob(new Blob([req.response], { type: contentType }), filename);
 		var a = document.createElement('a');
-		var url = window.URL.createObjectURL(new Blob([req.response], {type: contenttype}));
+		var url = window.URL.createObjectURL(new Blob([req.response], {type: contentType}));
 		a.href = url;
 		a.download = filename;
 		document.body.appendChild(a);
