@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Text markup annotation support of Syncfusion Essential JS PDF viewer.
-description: Text markup annotation support of Syncfusion Essential JS PDF viewer.
+title: Text markup annotation of Syncfusion Essential JS PDF viewer.
+description: Text markup annotation of Syncfusion Essential JS PDF viewer.
 platform: js
 control: PDF viewer
 documentation: ug
