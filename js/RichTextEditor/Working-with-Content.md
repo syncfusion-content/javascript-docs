@@ -250,8 +250,8 @@ N> <BR>
     var editor = $("#editor").ejRTE("instance");
     var dropdownObj = editor._fontStyleDDL.ejDropDownList("instance");
     dropdownObj.selectItemByIndex(7);
-    var ddlSize = editor._fontSizeDDL.ejDropDownList("instance");
-    ddlSize.selectItemByIndex(5);
+    var dropdownSize = editor._fontSizeDDL.ejDropDownList("instance");
+    dropdownSize.selectItemByIndex(5);
 </script>
 
 {% endhighlight %}
@@ -331,11 +331,11 @@ If you want to add additional font names and font sizes to font drop-down, pass 
         editor.defaults.fontName.push({ text: "Calibri Light", value: "CalibriLight" }, { text: "Calibri", value: "Calibri" });
         editor.defaults.fontSize.push({ text: "8 (42pt)", value: "8" });
 		var dropdownObj = editor._fontStyleDDL.ejDropDownList("instance");
-		var ddlSize = editor._fontSizeDDL.ejDropDownList("instance");
+		var dropdownSize = editor._fontSizeDDL.ejDropDownList("instance");
         dropdownObj.option({ "dataSource": editor.defaults.fontName });
-		ddlSize.option({ "dataSource": editor.defaults.fontSize });
+		dropdownSize.option({ "dataSource": editor.defaults.fontSize });
         dropdownObj.selectItemByValue("CalibriLight");
-		ddlSize.selectItemByValue("8");
+		dropdownSize.selectItemByValue("8");
     });
 
 </script>

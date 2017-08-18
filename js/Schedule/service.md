@@ -65,7 +65,7 @@ var dataManger = new ej.DataManager(
 
 {% highlight js %}
 
-[ {"Id":100,"Subject":"Bering Sea Gold","Location":"chn","StartTime":"2014-05-02T09:00:00","EndTime":"2014-05-02T10
+[ {"Id":100,"Subject":"Bering Sea Gold","Location":"chennai","StartTime":"2014-05-02T09:00:00","EndTime":"2014-05-02T10
 :30:00","Description":null,"Owner":1,"Priority":null,"Recurrence":1,"RecurrenceType":null,"RecurrenceTypeCount"
 :null,"Reminder":null,"Categorize":"1,2","CustomStyle":null,"AllDay":false,"RecurrenceStartDate":null
 ,"RecurrenceEndDate":null,"RecurrenceRule":"FREQ=DAILY;INTERVAL=2;COUNT=10","StartTimeZone":null,"EndTimeZone"
