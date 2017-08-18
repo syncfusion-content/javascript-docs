@@ -153,7 +153,7 @@ In a real-time hotel table booking scenario, the booking is open only for a limi
         // declaration
         $("#datePicker").ejDatePicker({
             value: currentDate, // the current date is used as default value
-            minDate: currentDate,// Default date as mindate.
+            minDate: currentDate,// Default date as minDate.
             maxDate: rangeDate // 30 –days of interval from min date.
         });
         $("#time").ejTimePicker({
@@ -188,7 +188,7 @@ The following code example shows how to set **Time interval**.
         // declaration
         $("#datePicker").ejDatePicker({
             value: currentDate, // the current date is used as default value
-            minDate: currentDate,// Default date as mindate.
+            minDate: currentDate,// Default date as minDate.
             maxDate: rangeDate // 30 –days of interval from min date.
         });
         $("#time").ejTimePicker({
@@ -225,7 +225,7 @@ The following code example shows how to display the **acknowledgment message**.
         // declaration
         $("#datePicker").ejDatePicker({
             value: currentDate, // the current date is used as default value
-            minDate: currentDate,// Default date as mindate.
+            minDate: currentDate,// Default date as minDate.
             maxDate: rangeDate // 30 –days of interval from min date.
         });
         $("#time").ejTimePicker({
@@ -322,7 +322,7 @@ Initialize **Two TimePickers** using the following code example.
         // declaration
         $("#datePicker").ejDatePicker({
             value: currentDate, // the current date is used as default value
-            minDate: currentDate,// Default date as mindate.
+            minDate: currentDate,// Default date as minDate.
             maxDate: rangeDate // 30 –days of interval from min date.
         });
         $("#time").ejTimePicker({
