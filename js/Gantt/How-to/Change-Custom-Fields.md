@@ -17,7 +17,7 @@ The following code example explains how to display custom fields in general tab
 
 {% highlight javascript %}
 
-$("#gantt ").ejGantt ({
+$("#Gantt ").ejGantt ({
        //...
    
       addDialogFields: [{ field: "taskID" }, { field: "taskName" }, { field: "startDate" }, { field: "endDate" }, { field: "duration" }, { field: "notes" }, { field: "expectedDate", displayInGeneralTab: true }],
