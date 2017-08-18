@@ -21,7 +21,7 @@ Create div element to render the ListView sample.
 {% highlight html %}
 
 
-    <div id="defaultlistview" ></div>
+    <div id="defaultListView" ></div>
     
 {% endhighlight %}
 
@@ -29,7 +29,7 @@ Add the following script in your code.
     
 {% highlight javascript %}
 
-        window.dbitem =
+        window.dataSourceItem =
             [
                  { "text": "Hot Singles" },
                  { "text": "Rising Artists" },
@@ -52,7 +52,7 @@ Add the following script in your code.
                  { "text": "Web MVC" }];
                  
         $(function () {
-            $("#defaultlistview").ejListView({dataSource:window.dbitem, width:400});
+            $("#defaultListView").ejListView({dataSource:window.dataSourceItem, width:400});
         });
 
 
@@ -91,7 +91,7 @@ Here the **CustomerID** field is mapped with text property of the field object. 
         $(function () {
             $("#listview").ejListView({
                 datasource: dataManger,
-                fieldsettings: { "text": "CustomerID" },
+                fieldSettings: { "text": "CustomerID" },
                 query: query,
             
             });
@@ -123,7 +123,7 @@ Now, in the following code example the data is retrieved from **MVC Controller**
         $(function () {
             $("#listview").ejListView({
                 datasource: dataManager,
-                fieldsettings: { "text": "caption" },
+                fieldSettings: { "text": "caption" },
                 query: query,
             
             });
@@ -202,7 +202,7 @@ WebApi Adaptor, extended from ODataAdaptor, of DataManager is used for retrievin
         $(function () {
             $("#listview").ejListView({
                 datasource: dataManger,
-                fieldsettings: { "text": "CustomerID" },
+                fieldSettings: { "text": "CustomerID" },
                 query: query,
             });
         });
@@ -254,41 +254,41 @@ Add the following script in your code.
     
 {% highlight javascript %}
  
-        window.dbitem =
+        window.dataSourceItem =
             [{ "Texts": "Discover Music", "PrimaryKeys": "1", "Title": "Discover Music", "BackIconText": "back" },
-                 { "Texts": "Hot Singles", "ParentPrimaryKeyss": "1" },
-                 { "Texts": "Rising Artists", "PrimaryKeyss": null, "ParentPrimaryKeyss": "1" },
-                 { "Texts": "Live Music", "ParentPrimaryKeyss": "1" },
-                 { "Texts": "Best of 2013 So Far", "ParentPrimaryKeyss": "1" },
+                 { "Texts": "Hot Singles", "ParentPrimaryKeys": "1" },
+                 { "Texts": "Rising Artists", "PrimaryKeys": null, "ParentPrimaryKeys": "1" },
+                 { "Texts": "Live Music", "ParentPrimaryKeys": "1" },
+                 { "Texts": "Best of 2013 So Far", "ParentPrimaryKeys": "1" },
             { "Texts": "Sales and Events", "PrimaryKeys": "2", "Title": "Sales and Events", "BackIconText": "back" },
-                 { "Texts": "100 Albums - $5 Each", "ParentPrimaryKeyss": "2" },
-                 { "Texts": "Hip-Hop and R&B Sale", "ParentPrimaryKeyss": "2" },
-                 { "Texts": "CD Deals", "ParentPrimaryKeyss": "2" },
+                 { "Texts": "100 Albums - $5 Each", "ParentPrimaryKeys": "2" },
+                 { "Texts": "Hip-Hop and R&B Sale", "ParentPrimaryKeys": "2" },
+                 { "Texts": "CD Deals", "ParentPrimaryKeys": "2" },
             { "Texts": "Categories", "PrimaryKeys": "3", "Title": "Categories", "BackIconText": "back" },
-                 { "Texts": "Songs", "ParentPrimaryKeyss": "3" },
-                 { "Texts": "Bestselling Albums", "ParentPrimaryKeyss": "3" },
-                 { "Texts": "New Releases", "ParentPrimaryKeyss": "3" },
-                 { "Texts": "Bestselling Songs", "ParentPrimaryKeyss": "3" },
+                 { "Texts": "Songs", "ParentPrimaryKeys": "3" },
+                 { "Texts": "Bestselling Albums", "ParentPrimaryKeys": "3" },
+                 { "Texts": "New Releases", "ParentPrimaryKeys": "3" },
+                 { "Texts": "Bestselling Songs", "ParentPrimaryKeys": "3" },
             { "Texts": "MP3 Albums", "PrimaryKeys": "4", "Title": "MP3 Albums", "BackIconText": "back" },
-                 { "Texts": "Rock", "ParentPrimaryKeyss": "4" },
-                 { "Texts": "Gospel", "ParentPrimaryKeyss": "4" },
-                 { "Texts": "Latin Music", "ParentPrimaryKeyss": "4" },
-                 { "Texts": "Jazz", "ParentPrimaryKeyss": "4" },
+                 { "Texts": "Rock", "ParentPrimaryKeys": "4" },
+                 { "Texts": "Gospel", "ParentPrimaryKeys": "4" },
+                 { "Texts": "Latin Music", "ParentPrimaryKeys": "4" },
+                 { "Texts": "Jazz", "ParentPrimaryKeys": "4" },
             { "Texts": "More in Music", "PrimaryKeys": "5", "Title": "More in Music", "BackIconText": "back" },
-                 { "Texts": "Music Trade-In", "ParentPrimaryKeyss": "5" },
-                 { "Texts": "Redeem a Gift Card", "ParentPrimaryKeyss": "5" },
-                 { "Texts": "Band T-Shirts", "ParentPrimaryKeyss": "5" },
-                 { "Texts": "Web MVC", "ParentPrimaryKeyss": "5" }];
+                 { "Texts": "Music Trade-In", "ParentPrimaryKeys": "5" },
+                 { "Texts": "Redeem a Gift Card", "ParentPrimaryKeys": "5" },
+                 { "Texts": "Band T-Shirts", "ParentPrimaryKeys": "5" },
+                 { "Texts": "Web MVC", "ParentPrimaryKeys": "5" }];
         window.musicFields = {
             "text": "Texts",
             "primaryKey": "PrimaryKeys",
-            "parentPrimaryKey": "ParentPrimaryKeyss",
+            "parentPrimaryKey": "ParentPrimaryKeys",
             "childHeaderTitle": "Title",
             "childHeaderBackButtonText": "BackIconText"
         };
         
         $(function () {
-            $("#defaultlistbox").ejListView({ fieldSettings: window.musicFields, dataSource:window.dbitem, width: 400,showHeader:true,headerTitle:"ListView" });
+            $("#defaultlistbox").ejListView({ fieldSettings: window.musicFields, dataSource:window.dataSourceItem, width: 400,showHeader:true,headerTitle:"ListView" });
         });
 
 

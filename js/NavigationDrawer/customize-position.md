@@ -15,7 +15,7 @@ api: /api/js/ejnavigationdrawer
 {% highlight html %}
 
     <div id="main" style="height:700px;">
-        <div id="navpane">
+        <div id="navigationPane">
             <ul>
                 <li>Settings</li>
                 <li>Read</li>
@@ -30,7 +30,7 @@ Add the following code in the **script** tag.
     
 {% highlight javascript %}   
 
-        $("#navpane").ejNavigationDrawer({ position: "fixed", enableListView: true, listViewSettings: { width: 300 } });
+        $("#navigationPane").ejNavigationDrawer({ position: "fixed", enableListView: true, listViewSettings: { width: 300 } });
 
 {% endhighlight %}
 

@@ -16,7 +16,7 @@ This feature supports to change the left-to-right alignment of the **Rotator** t
 
     $(function () {
         // declaration
-        $("#slidercontent").ejRotator({ slideWidth: 500, enableRTL: true });
+        $("#sliderContent").ejRotator({ slideWidth: 500, enableRTL: true });
     });
 
 {% endhighlight %}

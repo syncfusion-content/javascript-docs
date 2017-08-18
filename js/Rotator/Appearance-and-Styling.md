@@ -21,7 +21,7 @@ This property sets the **width** of a **Rotator** Item. The value set to this pr
   
     $(function () {
         // declaration
-        $("#slidercontent").ejRotator({ slideWidth: "500px" });
+        $("#sliderContent").ejRotator({ slideWidth: "500px" });
     });
 
   {% endhighlight %}
@@ -31,7 +31,7 @@ This property sets the **width** of a **Rotator** Item. The value set to this pr
 
     $(function () {
         // declaration
-        $("#slidercontent").ejRotator({ slideWidth: 500 });
+        $("#sliderContent").ejRotator({ slideWidth: 500 });
     });
 
   {% endhighlight %}
@@ -46,7 +46,7 @@ This property sets the **height** of a **Rotator** Item. The value set to this p
 
     $(function () {
         // declaration
-        $("#slidercontent").ejRotator({ slideHeight: "500px" });
+        $("#sliderContent").ejRotator({ slideHeight: "500px" });
     });
 
   {% endhighlight %}
@@ -56,7 +56,7 @@ This property sets the **height** of a **Rotator** Item. The value set to this p
   	
     $(function () {
         // declaration
-        $("#slidercontent").ejRotator({ slideHeight: 500 });
+        $("#sliderContent").ejRotator({ slideHeight: 500 });
     });
 
 
