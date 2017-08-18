@@ -9,7 +9,7 @@ keywords: ejPdfViewer
 api: /api/js/ejpdfviewer
 ---
 
-## Text Markup Annotation Support
+## Text Markup Annotation
 
 ejPdfViewer control supports adding text markup annotations in the PDF documents. The widget also renders the existing text markup annotations from the PDF document when the document is loaded in it.
 
