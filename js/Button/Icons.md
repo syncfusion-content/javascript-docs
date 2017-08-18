@@ -33,7 +33,7 @@ Also in the button sample, you can use the icon class names as follows,
 
 {% highlight javascript %}
 
-    $("#buttonid").ejButton({
+    $("#buttonId").ejButton({
         contentType: "imageonly",
         prefixIcon: "e-icon e-handup"
     });

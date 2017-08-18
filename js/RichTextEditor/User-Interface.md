@@ -279,7 +279,7 @@ $(function () {
     rteObj = $("#editor").data("ejRTE");
     $(".insert-special-character").ejButton();
     $("#specialCharacter").ejDialog({ enableResize: false, enableModal: true, showOnInit: false, width: "auto", position: { X: 218, Y: 38 } });
-    $(".specialtbl tbody tr td" ).addClass("specialTable").on( "click", customTdClick);
+    $(".specialtbl tbody tr td" ).addClass("special-table").on( "click", customTdClick);
 });
 
 </script>
@@ -305,7 +305,7 @@ Define the CSS that will be applied to the custom tool.
 {
     border:1px solid #c8c8c8;
 }
-.specialTable:hover
+.special-table:hover
 {
     background-color:#86bcea;
     cursor:pointer;

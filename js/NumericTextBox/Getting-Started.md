@@ -58,7 +58,7 @@ Add necessary input elements to render **Textboxes widget**.
                 <label>Service Tax</label>
             </td>
             <td>
-                <input id="servTax" type="text" />
+                <input id="service" type="text" />
             </td>
         </tr>
         <tr>
@@ -97,7 +97,7 @@ Initialize the **Textboxes widget** as shown in the following section.
                 watermarkText: "Units" // set watermark in numeric
             });
             // simple Percentage creation
-            $("#servTax").ejPercentageTextbox({
+            $("#service").ejPercentageTextbox({
                 watermarkText: "Service Tax" // sets watermark in percentage
             });
             // simple Currency creation
@@ -174,7 +174,7 @@ You can set the **“minValue”**,**“maxValue”** and **“value”** in Num
                 maxValue: 10000 // sets max value
             });
             // simple Percentage creation
-            $("#servTax").ejPercentageTextbox({
+            $("#service").ejPercentageTextbox({
                 watermarkText: " Service Tax", // sets watermark in percentage
                 value: 3,// sets value  
                 minValue: 5, // sets min value 
@@ -225,7 +225,7 @@ You can set the “**strict mode” option** to restrict entering values defined
                 enableStrictMode: true // sets strict mode to True  
             });
             // simple Percentage creation
-            $("#servTax").ejPercentageTextbox({
+            $("#service").ejPercentageTextbox({
                 watermarkText: " Service Tax", // sets watermark in percentage
                 value: 3, // sets value   
                 minValue: 5, // sets min value  
@@ -262,7 +262,7 @@ You can use events to calculate the total and display the value. You can achieve
 {% highlight javascript %}
 
         // Declares Necessary variable to create the Application 
-        var unitMetre, serviceTax, amountPerKm;
+        var unitMeter, serviceTax, amountPerKm;
         $(function () {
             // Refers to the Textboxes customization section
             // Simple Button creation
@@ -271,15 +271,15 @@ You can use events to calculate the total and display the value. You can achieve
                 width: "100px",
                 height: "30px",
             });
-            unitMetre = $("#unitCalc").data("ejNumericTextbox");// Object of Numeric 
-            serviceTax = $("#servTax").data("ejPercentageTextbox");// Object of Percentage
+            unitMeter = $("#unitCalc").data("ejNumericTextbox");// Object of Numeric 
+            serviceTax = $("#service").data("ejPercentageTextbox");// Object of Percentage
             amountPerKm = $("#amountPerUnit").data("ejCurrencyTextbox"); // Object of Currency
             mobileNumber = $("#mobileNo").data("ejMaskEdit"); // Object of MaskEdit
         });
         // Simple Bill amount calculation.
         function calculateBill() {
             // This is used to calculate the Net amount
-            var netAmount = unitMetre.model.value * amountPerKm.model.value;
+            var netAmount = unitMeter.model.value * amountPerKm.model.value;
             // This is used to calculate the service tax amount
             var sTax = (netAmount * serviceTax.model.value) / 100;
             // This shows the calculated amount for the units

@@ -58,8 +58,8 @@ You can increment the progress percentage and show case the movement by using th
             $("#progressBar").ejProgressBar({
                 height: 22,
                 value: 10,
-                start: "onstart",
-                change: "onchange",
+                start: "onStart",
+                change: "onChange",
                 complete: "completed"
             });
             progressObj = $("#progressBar").data("ejProgressBar");
@@ -84,8 +84,8 @@ You can increment the progress percentage and show case the movement by using th
         function propCheckEvent(args) {
             if (args.isChecked) {
                 switch (args.value) {
-                    case "start": progressObj.option(args.value, "onstart"); break;
-                    case "change": progressObj.option(args.value, "onchange"); break;
+                    case "start": progressObj.option(args.value, "onStart"); break;
+                    case "change": progressObj.option(args.value, "onChange"); break;
                     case "complete": showComplete=true; break;
                 }
             }
@@ -114,17 +114,17 @@ You can increment the progress percentage and show case the movement by using th
             timer = window.clearInterval(timer);
             k = 0;
             if(showComplete)
-            oncomplete(args);
+            onComplete(args);
             buttonObj.setModel({ "toggleState": false, "defaultText": "Restart" });
         }
 
-        function oncomplete(args) {
+        function onComplete(args) {
                 jQuery.addEventLog("The process has been <span class='eventTitle'>completed</span> successfully.</br>");
         }
-        function onstart(args) {
+        function onStart(args) {
             jQuery.addEventLog("Progressbar has been <span class='eventTitle'>started</span>.</br>");
         }
-        function onchange(args) {
+        function onChange(args) {
             jQuery.addEventLog("Progressbar value has been <span class='eventTitle'>changed</span> to " + args.percentage + "%.</br>");
         }
         function onClear() {

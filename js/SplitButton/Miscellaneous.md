@@ -84,7 +84,7 @@ In the **HTML** page, add the following button elements to configure **Split But
 
 
 <div class="spltspan">
-    <button id="spltbutton_roundedCorner">login</button>
+    <button id="splitButton_roundedCorner">login</button>
     <ul id="Ul11">
         <li><span>User</span></li>
         <li><span>Guest</span></li>
@@ -101,7 +101,7 @@ In the **HTML** page, add the following button elements to configure **Split But
     // Initialize the control in JavaScript
     
     $(function () {
-        $("#spltbutton_roundedCorner").ejSplitButton({               
+        $("#splitButton_roundedCorner").ejSplitButton({               
             size: "small",    
             //Enable or disable the rounded corner for split button            
             showRoundedCorner: true,
