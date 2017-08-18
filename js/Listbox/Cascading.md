@@ -118,7 +118,7 @@ Create the UL elements to render the parent and the child ListBox widgets as bel
 
         <div class="controlitem">
             <!--third level child listbox element-->
-            <ul id="subproductList"></ul>
+            <ul id="subProductList"></ul>
         </div>
 
 
@@ -144,33 +144,33 @@ Create the ListBox widgets as below.
             ];
 
             //datasource for second level child
-            var secondLevelChildData = [{ productid: 101, subCategoryId: 11, text: "men shirts" },
-                { productid: 102, subCategoryId: 11, text: "men pants" },
-                { productid: 103, subCategoryId: 12, text: "Women shirts" },
-                { productid: 104, subCategoryId: 12, text: "Women pants" },
-                { productid: 105, subCategoryId: 13, text: "sofa" },
-                { productid: 106, subCategoryId: 13, text: "chairs" },
-                { productid: 107, subCategoryId: 14, text: "bedsheets" },
-                { productid: 108, subCategoryId: 14, text: "pillows" },
+            var secondLevelChildData = [{ productId: 101, subCategoryId: 11, text: "men shirts" },
+                { productId: 102, subCategoryId: 11, text: "men pants" },
+                { productId: 103, subCategoryId: 12, text: "Women shirts" },
+                { productId: 104, subCategoryId: 12, text: "Women pants" },
+                { productId: 105, subCategoryId: 13, text: "sofa" },
+                { productId: 106, subCategoryId: 13, text: "chairs" },
+                { productId: 107, subCategoryId: 14, text: "bedsheets" },
+                { productId: 108, subCategoryId: 14, text: "pillows" },
             ];
 
             //datasource for third level child
-            var thirdLevelChildData = [{ productid: 101, text: "red men shirts" },
-                { productid: 101, text: "blue men shirts" },
-                { productid: 102, text: "red men pants" },
-                { productid: 102, text: "blue men pants" },
-                { productid: 103, text: "blueWomen shirts" },
-                { productid: 103, text: "red Women shirts" },
-                { productid: 104, text: "red women pants" },
-                { productid: 104, text: "blue women pants" },
-                { productid: 105, text: "red sofa" },
-                { productid: 105, text: "blue sofa" },
-                { productid: 106, text: "red chairs" },
-                { productid: 106, text: "blue chairs" },
-                { productid: 107, text: "red bedsheets" },
-                { productid: 107, text: "blue bedsheets" },
-                { productid: 108, text: "red pillows" },
-                { productid: 108, text: "blue pillows" }
+            var thirdLevelChildData = [{ productId: 101, text: "red men shirts" },
+                { productId: 101, text: "blue men shirts" },
+                { productId: 102, text: "red men pants" },
+                { productId: 102, text: "blue men pants" },
+                { productId: 103, text: "blueWomen shirts" },
+                { productId: 103, text: "red Women shirts" },
+                { productId: 104, text: "red women pants" },
+                { productId: 104, text: "blue women pants" },
+                { productId: 105, text: "red sofa" },
+                { productId: 105, text: "blue sofa" },
+                { productId: 106, text: "red chairs" },
+                { productId: 106, text: "blue chairs" },
+                { productId: 107, text: "red bedsheets" },
+                { productId: 107, text: "blue bedsheets" },
+                { productId: 108, text: "red pillows" },
+                { productId: 108, text: "blue pillows" }
             ]
 
             //create parent listbox
@@ -194,13 +194,13 @@ Create the ListBox widgets as below.
             //cascadeTo property specifies the id of the child listbox (third level)
             $('#productList').ejListBox({
                 dataSource: secondLevelChildData,
-                fields: { value: "productid" },
+                fields: { value: "productId" },
                 loadDataOnInit: false,
-                cascadeTo: 'subproductList'
+                cascadeTo: 'subProductList'
             });
 
             //create third level child listbox
-            $('#subproductList').ejListBox({
+            $('#subProductList').ejListBox({
                 dataSource: thirdLevelChildData,
                 loadDataOnInit: false,
             });

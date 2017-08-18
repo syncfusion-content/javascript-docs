@@ -25,7 +25,7 @@ The suggestion list can be customized based on different needs using templates. 
                         { pName: "Galaxy Grand 2", quantity: "3" },
                 { pName: "Galaxy S6", quantity: "5" },
                 { pName: "IPhone S6", quantity: "8" },
-                { pName: "Ipod Mini", quantity: "3" }, ];
+                { pName: "IPod Mini", quantity: "3" }, ];
         
         
                 $('#autocomplete').ejAutocomplete({

@@ -89,7 +89,7 @@ Create a div element to render the child Dialog widget and use it as a content o
         <!— button to open the nested dialog -->
         <button id="button2" class="ejButton">Open Nested Dialog</button>
         <!—nested dialog-->
-        <div id="nesteddialog">
+        <div id="nestedDialog">
                 This is a nested Dialog
          </div>
       </div>
@@ -112,7 +112,7 @@ Initialize both the Dialog widgets by adding the script section as below.
                 width: 500, height: 400,
                 actionButtons: ["close", "collapsible", "maximize", "minimize", "pin"]
             });
-            $("#nesteddialog").ejDialog({
+            $("#nestedDialog").ejDialog({
                 title: "Nested Dialog",
                 showOnInit: false,
                 width: 300, height: 200
@@ -123,7 +123,7 @@ Initialize both the Dialog widgets by adding the script section as below.
             $("#dialog").ejDialog("open");
         }
         function openNestedDialog(args) {
-            $("#nesteddialog").ejDialog("open");
+            $("#nestedDialog").ejDialog("open");
         }   
 
 
@@ -163,7 +163,7 @@ Initialize Footer in Dialog widgets by adding the script section in JsRender as 
 
     <script id="sample" type="text/x-jsrender">
     <div class="footerspan" style="float:right">
-      <button id='btn1'>Ok</button>
+      <button id='btn1'>OK</button>
       <button id='btn2'>Cancel</button>
     </div>
     <div class="condition" style="float:left; margin-left:15px">
