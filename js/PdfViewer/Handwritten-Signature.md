@@ -19,7 +19,7 @@ The below code snippet describes how to disable the signature tool in the widget
 
 {% highlight javascript %}
 $(function () {
-            var obj = $("#container").ejPdfViewer({serviceUrl: "/api/PdfViewerAPI", toolbarSettings: {toolbarItems : ~ej.PdfViewer.ToolbarItems.SignatureTool}});
+            var pdfViewerObject = $("#container").ejPdfViewer({serviceUrl: "/api/PdfViewerAPI", toolbarSettings: {toolbarItems : ~ej.PdfViewer.ToolbarItems.SignatureTool}});
         });
 {% endhighlight %}
 
