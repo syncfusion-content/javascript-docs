@@ -43,7 +43,7 @@ This property retrieves data from remote data. This property is applicable only 
   {% highlight html %}
 
 <div class="cols-sample-area">
-  <ul id="slidercontent"></ul>
+  <ul id="sliderContent"></ul>
 </div>
 
   {% endhighlight %}
@@ -62,7 +62,7 @@ This property retrieves data from remote data. This property is applicable only 
       { text: "Credit Card", url: "../images/rotator/card.jpg" },
       { text: "Amazing Sculptures", url: "../images/rotator/sculpture.jpg" }
         ];
-        $("#slidercontent").ejRotator({
+        $("#sliderContent").ejRotator({
             slideWidth: "600px",
             frameSpace: "0px",
             displayItemsCount: "1",
@@ -123,7 +123,7 @@ The following code example depicts the way to bind data to the **Rotator** throu
   
 <body data-autoinit="false">
   <div class="cols-sample-area">
-      <ul id="slidercontent" data-bind="ejRotator :{dataSource:dataList,slideWidth:width,slideHeight:height}" />
+      <ul id="sliderContent" data-bind="ejRotator :{dataSource:dataList,slideWidth:width,slideHeight:height}" />
   </div>
 </body>
 
@@ -183,7 +183,7 @@ The following code example depicts the way to bind data to the **Rotator** widge
 {% highlight html %}
 
 <!DOCTYPE html>
-<html lang="en" ng-app="rotatApp">
+<html lang="en" ng-app="rotatorApp">
    <head>
       <title>Essential Studio for JavaScript :AngularJS Support for Toolbar</title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8" />
@@ -196,9 +196,9 @@ The following code example depicts the way to bind data to the **Rotator** widge
       <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.unobtrusive.min.js"></script>
       <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/common/ej.widget.angular.min.js"></script>
    </head>
-   <body ng-controller="RotatCtrl">
+   <body ng-controller="RotatorCtrl">
       <div class="cols-sample-area">
-         <ul id="slidercontent" ej-rotator e-datasource="dataList" e-slidewidth="600px" e-slideheight="350px" />
+         <ul id="sliderContent" ej-rotator e-datasource="dataList" e-slidewidth="600px" e-slideheight="350px" />
       </div>
    </body>
 </html>
@@ -220,7 +220,7 @@ The following code example depicts the way to bind data to the **Rotator** widge
       { text: "wheat", url: "../images/rotator/wheat.jpg" },
       { text: "night", url: "../images/rotator/night.jpg" }];
     
-    angular.module('rotatApp', ['ejangular']).controller('RotatCtrl', function ($scope) {
+    angular.module('rotatApp', ['ejangular']).controller('RotatorCtrl', function ($scope) {
         $scope.dataList = list;
     });
 

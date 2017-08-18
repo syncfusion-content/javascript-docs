@@ -16,7 +16,7 @@ This property is used to define the target Id for **Navigation Drawer**. The dra
 
         <button id="drawerTarget" style="top:200px;left:600px;position:absolute"></button>
         
-        <div id="navpane">
+        <div id="navigationPane">
                 <ul>
                     <li>Settings</li>
                     <li>Read</li>
@@ -31,7 +31,7 @@ Add the following code in the **script** tag.
 
 {% highlight javascript %}
     
-        $("#navpane").ejNavigationDrawer({ position: "fixed", targetId: "drawerTarget", enableListView: true, listViewSettings: { width: 300 }});
+        $("#navigationPane").ejNavigationDrawer({ position: "fixed", targetId: "drawerTarget", enableListView: true, listViewSettings: { width: 300 }});
         $("#drawerTarget").ejButton({text:"Open Drawer"});
  
 {% endhighlight %}

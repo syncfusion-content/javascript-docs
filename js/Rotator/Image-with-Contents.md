@@ -17,7 +17,7 @@ This feature allows you to add text along with the **image** in **Rotator** cont
 <html>
    <body>
       <div class="cols-sample-area">
-         <ul id="slidercontent">
+         <ul id="sliderContent">
             <li>
                <div class="leftPanel">
                   <img src="../images/rotator/tablet.jpg" />
@@ -93,7 +93,7 @@ This feature allows you to add text along with the **image** in **Rotator** cont
 
     $(function () {
         // declaration    
-        $("#slidercontent").ejRotator({
+        $("#sliderContent").ejRotator({
             slideWidth: "600px",
             displayItemsCount: "1",
             slideHeight: "300px",
@@ -117,23 +117,23 @@ This feature allows you to add text along with the **image** in **Rotator** cont
 {% highlight css %}
 
 <style type="text/css" class="cssStyles">
-    #slidercontent > li {
+    #sliderContent > li {
         background-color: #9ee8d8;
     }
 
-    #slidercontent > li .leftPanel {
+    #sliderContent > li .leftPanel {
         float: left;
         width: 700px;
         height: 300px;
         padding-right: 0px;
     }
 
-    #slidercontent > li .leftPanel img {
+    #sliderContent > li .leftPanel img {
         width: 700px;
         height: 300px;
     }
 
-    #slidercontent .rightPanel {
+    #sliderContent .rightPanel {
         background-color: #FFFFFF;
         height: 259px;
         margin-left: 410px;
@@ -144,26 +144,26 @@ This feature allows you to add text along with the **image** in **Rotator** cont
         width: 260px;
     }
 
-    #slidercontent .rightPanel.credit {
+    #sliderContent .rightPanel.credit {
         opacity: 0.6;
     }
 
-    #slidercontent .rightPanel.blck {
+    #sliderContent .rightPanel.blck {
         background-color: black;
     }
 
-    #slidercontent .rightPanel.blck li {
+    #sliderContent .rightPanel.blck li {
         color: white;
         list-style: none;
         line-height: 2;
     }
 
-    #slidercontent .rightPanel.blck .contentPanel {
+    #sliderContent .rightPanel.blck .contentPanel {
         padding-top: 30px;
         color: white;
     }
 
-    #slidercontent .rightPanel .contentPanel {
+    #sliderContent .rightPanel .contentPanel {
         color: #000000;
         font-size: large;
         font-weight: bold;
@@ -172,24 +172,24 @@ This feature allows you to add text along with the **image** in **Rotator** cont
         position: relative;
     }
 
-    #slidercontent .rightPanel li {
+    #sliderContent .rightPanel li {
         color: black;
         list-style: none;
         line-height: 2;
     }
 
-    #slidercontent .rightPanel.rightSide {
+    #sliderContent .rightPanel.rightSide {
         margin-left: 20px;
         background-color: black;
     }
 
-    #slidercontent .rightPanel.rightSide li {
+    #sliderContent .rightPanel.rightSide li {
         color: white;
         list-style: none;
         line-height: 2;
     }
 
-    #slidercontent .rightPanel.rightSide .contentPanel {
+    #sliderContent .rightPanel.rightSide .contentPanel {
         padding-top: 30px;
         color: white;
     }
@@ -217,7 +217,7 @@ This property specifies the number of **Rotator** Items to be displayed. The def
 
     $(function () {
        // declaration
-        $("#slidercontent").ejRotator({ slideWidth: "200px", displayItemsCount: 3,
+        $("#sliderContent").ejRotator({ slideWidth: "200px", displayItemsCount: 3,
           slideHeight: "165px"
         });
     });
@@ -229,7 +229,7 @@ This property specifies the number of **Rotator** Items to be displayed. The def
 {% highlight css %}
 
 <style type="text/css" class="cssStyles">
-    #slidercontent > li .image {
+    #sliderContent > li .image {
         width:200px;
         height:165px;
     }
@@ -250,7 +250,7 @@ This property specifies the number of **Rotator** Items to **navigate** on a sin
 
     $(function () {
         // declaration
-        $("#slidercontent").ejRotator({ slideWidth: 200, slideHeight: 165, displayItemsCount: 2, **navigateSteps: 2** });
+        $("#sliderContent").ejRotator({ slideWidth: 200, slideHeight: 165, displayItemsCount: 2, **navigateSteps: 2** });
     });
 
 
@@ -261,7 +261,7 @@ This property specifies the number of **Rotator** Items to **navigate** on a sin
 
 
 <style type="text/css" class="cssStyles">
-    #slidercontent > li .image {
+    #sliderContent > li .image {
         width:200px;
         height:165px;
     }
@@ -282,7 +282,7 @@ This property sets the **index** of the slide that is displayed first. The defau
 
     $(function () {
         // declaration
-        $("#slidercontent").ejRotator({ slideWidth: 500, startIndex: 4 });
+        $("#sliderContent").ejRotator({ slideWidth: 500, startIndex: 4 });
     });
 
 
@@ -301,7 +301,7 @@ This property sets the space between the **Rotator** Items. The value set to thi
 
     $(function () {
         // declaration
-        $("#slidercontent").ejRotator({ slideWidth: "500px", slideHeight: "300px", displayItemsCount: 2, frameSpace: "30px" });
+        $("#sliderContent").ejRotator({ slideWidth: "500px", slideHeight: "300px", displayItemsCount: 2, frameSpace: "30px" });
     });
 
 {% endhighlight %}
@@ -315,7 +315,7 @@ This property sets the space between the **Rotator** Items. The value set to thi
 
     $(function () {
         // declaration
-        $("#slidercontent").ejRotator({ slideWidth: "500px", animationType: "slowSlide" });
+        $("#sliderContent").ejRotator({ slideWidth: "500px", animationType: "slowSlide" });
     });
 
 
@@ -332,7 +332,7 @@ This property sets the **speed** of slide transition. The default value is ‘**
 
     $(function () {
         // declaration
-        $("#slidercontent").ejRotator({ slideWidth: "500px", animationSpeed: 3000 });
+        $("#sliderContent").ejRotator({ slideWidth: "500px", animationSpeed: 3000 });
     });
 
 
@@ -349,7 +349,7 @@ This property sets the **delay** between the **Rotator** Items to move after the
 
     $(function () {
         // declaration
-        $("#slidercontent").ejRotator({ slideWidth: "500px", delay: 5000 });
+        $("#sliderContent").ejRotator({ slideWidth: "500px", delay: 5000 });
     });
 
 
@@ -385,7 +385,7 @@ This property is used to set **root** **class** for **Rotator** control theme. T
 
     $(function () {
         // declaration
-        $("#slidercontent").ejRotator({ slideWidth: 500, slideHeight: 300, cssClass: "flat-lime" });
+        $("#sliderContent").ejRotator({ slideWidth: 500, slideHeight: 300, cssClass: "flat-lime" });
     });
 
 

@@ -10,7 +10,7 @@ api: /api/js/ejradialmenu
 
 ## Template Support
 
- Template support for RadialMenu items will allow you to use any type of [\<svg\>](https://developer.mozilla.org/en-US/docs/Web/SVG/Element#SVG_elements) permittable tags inside our template. Here for example, using this template support you can use the SVG icons in Radial Menu instead of image tags. To use SVG icons in RadialMenu, you need to use [prependTo](https://help.syncfusion.com/api/js/ejradialmenu#members:items-prependTo) property.
+ Template support for RadialMenu items will allow you to use any type of [\<svg\>](https://developer.mozilla.org/en-US/docs/Web/SVG/Element#SVG_elements) Permittable tags inside our template. Here for example, using this template support you can use the SVG icons in Radial Menu instead of image tags. To use SVG icons in RadialMenu, you need to use [prependTo](https://help.syncfusion.com/api/js/ejradialmenu#members:items-prependTo) property.
 
  ### Add SVG to item Icon
 
@@ -38,7 +38,7 @@ Using SVG icon will optimize the icons quality and to reduce space occupation by
                 </div>
             </div>
         </div>
-        <div id="defaultradialmenu">
+        <div id="defaultRadialMenu">
         <ul>
             <li data-ej-prependTo="#template1" data-ej-text="Bold" data-ej-click="bold"></li>
             <li data-ej-prependTo="#template2" data-ej-text="Italic" data-ej-click="italic"></li>
@@ -67,12 +67,12 @@ Now add the following in your Script section,
 {% highlight javascript %}
 
     <script type="text/javascript">
-        var rteObj, rteEle = $("#rteSample1"), radialEle = $('#defaultradialmenu'), action = 0, forRedo = 0;
+        var rteObj, rteElement = $("#rteSample1"), radialElement = $('#defaultRadialMenu'), action = 0, forRedo = 0;
         $(function () {
-            rteEle.ejRTE({ width: "100%", minWidth: "10px", change: "rteChange", select: "radialShow", showToolbar: false, showContextMenu: false });
-            rteObj = rteEle.data("ejRTE");
+            rteElement.ejRTE({ width: "100%", minWidth: "10px", change: "rteChange", select: "radialShow", showToolbar: false, showContextMenu: false });
+            rteObj = rteElement.data("ejRTE");
             if (!(ej.browserInfo().name == "msie" && ej.browserInfo().version < 9)) {
-                radialEle.ejRadialMenu({ imageClass: "imageclass", backImageClass: "backimageclass", targetElementId: "radialtarget1" });
+                radialElementment.ejRadialMenu({ imageClass: "image-class", backimageClass: "backimage-class", targetElementId: "radialtarget1" });
 				$("#radialtarget1").parent().css("position", "relative");
             }
             else {
@@ -80,7 +80,7 @@ Now add the following in your Script section,
             }
 			$(window).resize(function(){
 				if(ej.isMobile() && ej.isPortrait())
-					$('#defaultradialmenu').css({"left":25})
+					$('#defaultRadialMenu').css({"left":25})
 			});
         });
         function radialShow(e) {
@@ -90,41 +90,41 @@ Now add the following in your Script section,
                 // To set Radial Menu position within target
                 x = iframeX > target.width() - radialRadius ? target.width() - radialDiameter : (iframeX > radialRadius ? iframeX - radialRadius : 0),
                 y = iframeY > target.height() - radialRadius ? target.height() - radialDiameter : (iframeY > radialRadius ? iframeY - radialRadius : 0);
-            radialEle.ejRadialMenu("setPosition", x, y);
-            radialEle.focus();
+            radialElement.ejRadialMenu("setPosition", x, y);
+            radialElement.focus();
 			$('iframe').contents().find('body').blur();
         }
         function rteChange(e) {
-            radialEle.ejRadialMenu("enableItem", "Undo");
+            radialElement.ejRadialMenu("enableItem", "Undo");
         }
         function bold(e) {
             rteObj.executeCommand("bold");
             data = rteObj._getSelectedHtmlString() ? true : false;
             if (data) action += 1;
             forRedo = action;
-            radialEle.focus();
+            radialElement.focus();
         }
         function italic(e) {
             rteObj.executeCommand("italic");
             data = rteObj._getSelectedHtmlString() ? true : false;
             if (data) action += 1;
             forRedo = action;
-            radialEle.focus();
+            radialElement.focus();
         }
         function undo(e) {
             rteObj.executeCommand("undo");
             action -= 1;
             if (action == 0)
-                radialEle.ejRadialMenu("disableItem", "Undo");
-            radialEle.ejRadialMenu("enableItem", "Redo");
-            radialEle.focus();
+                radialElement.ejRadialMenu("disableItem", "Undo");
+            radialElement.ejRadialMenu("enableItem", "Redo");
+            radialElement.focus();
         }
         function redo(e) {
             rteObj.executeCommand("redo");
             action += 1;
-            if (forRedo == action) radialEle.ejRadialMenu("disableItem", "Redo");
-            radialEle.ejRadialMenu("enableItem", "Undo");
-            radialEle.focus();
+            if (forRedo == action) radialElement.ejRadialMenu("disableItem", "Redo");
+            radialElement.ejRadialMenu("enableItem", "Undo");
+            radialElement.focus();
         }
     </script>
 
@@ -135,7 +135,7 @@ Add the following in style section,
 {% highlight css %}
 
     <style>
-         .e-radialmenu .imageclass {
+         .e-radialmenu .image-class {
             background-image: url(../content/images/RadialMenu/settings.png);
         }
         @font-face {

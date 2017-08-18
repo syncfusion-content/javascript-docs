@@ -21,7 +21,7 @@ You can refer the following code example of Thumbnail in Rotator.
   {% highlight html %}
   
 <div class="cols-sample-area">
-   <ul id="slidercontent">
+   <ul id="sliderContent">
       <li>
          <img class="image" src="../images/rotator/green.jpg" title="green" />
       </li>
@@ -79,7 +79,7 @@ You can refer the following code example of Thumbnail in Rotator.
 
     $(function () {
         // declaration
-        $("#slidercontent").ejRotator({
+        $("#sliderContent").ejRotator({
             slideWidth: "600px",
             frameSpace: "0px",
             displayItemsCount: "1",

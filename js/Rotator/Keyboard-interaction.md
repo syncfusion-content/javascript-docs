@@ -63,7 +63,7 @@ You can refer the following code example for **keyboard** navigation.
 
   
 <div class="cols-sample-area">
-   <ul id="slidercontent" accesskey="e">
+   <ul id="sliderContent" accesskey="e">
       <li>
          <img class="image" src="../images/rotator/nature.jpg" title="Nature" />
       </li>
@@ -121,7 +121,7 @@ You can refer the following code example for **keyboard** navigation.
   	
     $(function () {
         // declaration
-        $("#slidercontent").ejRotator({
+        $("#sliderContent").ejRotator({
             slideWidth: "550px",
             frameSpace: "0px",
             displayItemsCount: "1",
@@ -155,7 +155,7 @@ Add the following code in your **JavaScript** to focus the control.
     //Control focus key
     $(document).on("keydown", function (e) {
         if (e.altKey && e.keyCode === 74) { // j- key code.
-            $("#slidercontent")[0].focus();
+            $("#sliderContent")[0].focus();
         }
     });
 

@@ -20,7 +20,7 @@ Refer the following code examples.
 
 
 
-    <div id="defaultlistview">
+    <div id="defaultListView">
         <ul>
             <li data-ej-text="Artwork"></li>
             <li data-ej-text="Abstract"></li>
@@ -42,7 +42,7 @@ Add the following script in your code.
 {% highlight javascript %}
 
         $(function () {
-            $("#defaultlistview").ejListView({ width: 300, enableFiltering: true });
+            $("#defaultListView").ejListView({ width: 300, enableFiltering: true });
         });
 
 

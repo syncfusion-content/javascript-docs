@@ -135,7 +135,7 @@ Refer to the following code example to add target content to the **Radial Menu**
 {% highlight html %}
 
 
-    <div id="radialtarget">
+    <div id="radialTarget">
         <textarea id="textarea">
           <p>Model–view–controller (MVC) is a software architecture pattern which separates the representation of information from the user's interaction with it.
              The model consists of application data, business rules, logic, and functions. A view can be any output representation of data, such as a chart or a diagram.
@@ -175,7 +175,7 @@ Initialize **Radial Menu** control with the **div** element and set its target c
 {% highlight javascript %}
   
         $(function () {
-            $('#radialmenu').ejRadialMenu({ targetElementId: "radialtarget" });
+            $('#radialmenu').ejRadialMenu({ targetElementId: "radialTarget" });
         });
 
 {% endhighlight %}

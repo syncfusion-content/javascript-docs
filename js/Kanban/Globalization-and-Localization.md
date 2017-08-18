@@ -10,8 +10,8 @@ api : /api/js/ejkanban
 
 # Localization
 
-## Localization
 
+## Localization
 All text in Kanban can be localized using `ej.Kanban.Locale` object. Please find the table with list of properties and its value in locale object.
 
 <table>

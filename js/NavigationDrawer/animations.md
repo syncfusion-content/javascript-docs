@@ -22,7 +22,7 @@ The default value is Overlay.
 {% highlight html %}
 
     <div id="main" style="height:1000px;">
-        <div id="navpane">
+        <div id="navigationPane">
             <ul>
                 <li>Settings</li>
                 <li>Read</li>
@@ -38,7 +38,7 @@ The default value is Overlay.
  
  {% highlight javascript %}
  
-        $("#navpane").ejNavigationDrawer({ type: "slide", position: "fixed", targetId: "drawerTarget", enableListView: true, listViewSettings: { width: 300 }});
+        $("#navigationPane").ejNavigationDrawer({ type: "slide", position: "fixed", targetId: "drawerTarget", enableListView: true, listViewSettings: { width: 300 }});
         $("#drawerTarget").ejButton({ text: "OpenDrawer" });
   
 {% endhighlight %}
