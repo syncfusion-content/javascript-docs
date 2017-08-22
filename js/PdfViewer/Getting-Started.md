@@ -263,31 +263,56 @@ namespace PDFViewerDemo.Api
     public class PdfViewerAPIController : ApiController
     {
         //Post action for processing the PDF file
-        public object PostViewerAction(Dictionary<string, string> jsonResult)
+        public object Load(Dictionary<string, string> jsonResult)
         {
-            PdfViewerHelper helper = new PdfViewerHelper();     
-            helper.Load(Helper.GetFilePath ("JavaScript_Succinctly.pdf"));       
+            PdfViewerHelper helper = new PdfViewerHelper();
+            //load the multiple document from client side 
+            if (jsonResult.ContainsKey("newFileName"))
+            {
+                var name = jsonResult["newFileName"];
+                var pdfName = name.ToString() + ".pdf";
+                helper.Load(HttpContext.Current.Server.MapPath("~/Data/" + pdfName));
+            }
+			else
+            {
+                if (jsonResult.ContainsKey("isInitialLoading"))
+                {
+                    if (jsonResult.ContainsKey("file"))
+                    {
+                        var name = jsonResult["file"];
+                        var pdfName = name.ToString();
+                        helper.Load(pdfName);
+                    }
+                    else
+                    {
+                        helper.Load(HttpContext.Current.Server.MapPath("~/Data/JavaScript_Succinctly.pdf")); 
+                    }
+                }
+            }
             object output = helper.ProcessPdf(jsonResult);
             string response = JsonConvert.SerializeObject(output);
             return response;
         }
-    }
-    public class Helper
-    {
-        public static string GetFilePath(string path)
+
+        public object FileUpload(Dictionary<string, string> jsonResult)
         {
-            string _dataPath = GetCommonFolder(new DirectoryInfo(HttpContext.Current.Request.PhysicalApplicationPath));
-            _dataPath += @"\" + path;
-            return _dataPath;
-        }
-        static string GetCommonFolder(DirectoryInfo directoryInfo)
-        {
-            var _folderNames = directoryInfo.GetDirectories("Data");
-            if (_folderNames.Length > 0)
+            PdfViewerHelper helper = new PdfViewerHelper();
+
+            if (jsonResult.ContainsKey("uploadedFile"))
             {
-                return _folderNames[0].FullName;
+                var fileurl = jsonResult["uploadedFile"];
+                byte[] byteArray = Convert.FromBase64String(fileurl);
+                MemoryStream stream = new MemoryStream(byteArray);
+                helper.Load(stream);
             }
-            return directoryInfo.Parent != null ? GetCommonFolder(directoryInfo.Parent) : string.Empty;
+            string output = JsonConvert.SerializeObject(helper.ProcessPdf(jsonResult));
+            return output;
+        }
+		
+        public object Download(Dictionary<string, string> jsonResult)
+        {
+            PdfViewerHelper helper = new PdfViewerHelper();
+            return helper.GetDocumentData(jsonResult);
         }
     }
 }
