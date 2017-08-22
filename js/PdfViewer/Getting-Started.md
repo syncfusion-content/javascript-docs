@@ -266,7 +266,7 @@ namespace PDFViewerDemo.Api
         public object Load(Dictionary<string, string> jsonResult)
         {
             PdfViewerHelper helper = new PdfViewerHelper();
-			helper.Load(HttpContext.Current.Server.MapPath("~/Data/JavaScript_Succinctly.pdf"));
+            helper.Load(HttpContext.Current.Server.MapPath("~/Data/JavaScript_Succinctly.pdf"));
             object output = helper.ProcessPdf(jsonResult);
             string response = JsonConvert.SerializeObject(output);
             return response;
