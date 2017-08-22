@@ -266,29 +266,7 @@ namespace PDFViewerDemo.Api
         public object Load(Dictionary<string, string> jsonResult)
         {
             PdfViewerHelper helper = new PdfViewerHelper();
-            //load the multiple document from client side 
-            if (jsonResult.ContainsKey("newFileName"))
-            {
-                var name = jsonResult["newFileName"];
-                var pdfName = name.ToString() + ".pdf";
-                helper.Load(HttpContext.Current.Server.MapPath("~/Data/" + pdfName));
-            }
-			else
-            {
-                if (jsonResult.ContainsKey("isInitialLoading"))
-                {
-                    if (jsonResult.ContainsKey("file"))
-                    {
-                        var name = jsonResult["file"];
-                        var pdfName = name.ToString();
-                        helper.Load(pdfName);
-                    }
-                    else
-                    {
-                        helper.Load(HttpContext.Current.Server.MapPath("~/Data/JavaScript_Succinctly.pdf")); 
-                    }
-                }
-            }
+			helper.Load(HttpContext.Current.Server.MapPath("~/Data/JavaScript_Succinctly.pdf"));
             object output = helper.ProcessPdf(jsonResult);
             string response = JsonConvert.SerializeObject(output);
             return response;
