@@ -20,7 +20,7 @@ Stripline in Gantt control is used to highlight the important event in Gantt cha
             day: "01/02/2014",
             label: "Project Release",
             lineStyle: "dotted",
-            lineColor: "Darkblue",
+            lineColor: "blue",
             lineWidth: 2
         }]
     });
