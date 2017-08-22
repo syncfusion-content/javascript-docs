@@ -268,14 +268,13 @@ namespace PDFViewerDemo.Api
             PdfViewerHelper helper = new PdfViewerHelper();
             helper.Load(HttpContext.Current.Server.MapPath("~/Data/JavaScript_Succinctly.pdf"));
             object output = helper.ProcessPdf(jsonResult);
-            string response = JsonConvert.SerializeObject(output);
-            return response;
+            return JsonConvert.SerializeObject(output);
         }
 
+        //Post action for uploading the PDF document.
         public object FileUpload(Dictionary<string, string> jsonResult)
         {
             PdfViewerHelper helper = new PdfViewerHelper();
-
             if (jsonResult.ContainsKey("uploadedFile"))
             {
                 var fileurl = jsonResult["uploadedFile"];
@@ -283,10 +282,10 @@ namespace PDFViewerDemo.Api
                 MemoryStream stream = new MemoryStream(byteArray);
                 helper.Load(stream);
             }
-            string output = JsonConvert.SerializeObject(helper.ProcessPdf(jsonResult));
-            return output;
+            return JsonConvert.SerializeObject(helper.ProcessPdf(jsonResult));
         }
-		
+
+        //Post action for downloading the PDF document from the ejPdfviewer widget.
         public object Download(Dictionary<string, string> jsonResult)
         {
             PdfViewerHelper helper = new PdfViewerHelper();
