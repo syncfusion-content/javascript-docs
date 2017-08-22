@@ -262,32 +262,34 @@ namespace PDFViewerDemo.Api
 {
     public class PdfViewerAPIController : ApiController
     {
-        //Post action for processing the PDF file
-        public object PostViewerAction(Dictionary<string, string> jsonResult)
+        //Post action for processing the PDF documents.
+        public object Load(Dictionary<string, string> jsonResult)
         {
-            PdfViewerHelper helper = new PdfViewerHelper();     
-            helper.Load(Helper.GetFilePath ("JavaScript_Succinctly.pdf"));       
+            PdfViewerHelper helper = new PdfViewerHelper();
+            helper.Load(HttpContext.Current.Server.MapPath("~/Data/JavaScript_Succinctly.pdf"));
             object output = helper.ProcessPdf(jsonResult);
-            string response = JsonConvert.SerializeObject(output);
-            return response;
+            return JsonConvert.SerializeObject(output);
         }
-    }
-    public class Helper
-    {
-        public static string GetFilePath(string path)
+
+        //Post action for processing the PDF documents when uploading to the ejPdfviewer widget.
+        public object FileUpload(Dictionary<string, string> jsonResult)
         {
-            string _dataPath = GetCommonFolder(new DirectoryInfo(HttpContext.Current.Request.PhysicalApplicationPath));
-            _dataPath += @"\" + path;
-            return _dataPath;
-        }
-        static string GetCommonFolder(DirectoryInfo directoryInfo)
-        {
-            var _folderNames = directoryInfo.GetDirectories("Data");
-            if (_folderNames.Length > 0)
+            PdfViewerHelper helper = new PdfViewerHelper();
+            if (jsonResult.ContainsKey("uploadedFile"))
             {
-                return _folderNames[0].FullName;
+                var fileurl = jsonResult["uploadedFile"];
+                byte[] byteArray = Convert.FromBase64String(fileurl);
+                MemoryStream stream = new MemoryStream(byteArray);
+                helper.Load(stream);
             }
-            return directoryInfo.Parent != null ? GetCommonFolder(directoryInfo.Parent) : string.Empty;
+            return JsonConvert.SerializeObject(helper.ProcessPdf(jsonResult));
+        }
+
+        //Post action for downloading the PDF documents from the ejPdfviewer widget.
+        public object Download(Dictionary<string, string> jsonResult)
+        {
+            PdfViewerHelper helper = new PdfViewerHelper();
+            return helper.GetDocumentData(jsonResult);
         }
     }
 }
