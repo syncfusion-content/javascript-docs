@@ -262,7 +262,7 @@ namespace PDFViewerDemo.Api
 {
     public class PdfViewerAPIController : ApiController
     {
-        //Post action for processing the PDF file
+        //Post action for processing the PDF documents.
         public object Load(Dictionary<string, string> jsonResult)
         {
             PdfViewerHelper helper = new PdfViewerHelper();
@@ -271,7 +271,7 @@ namespace PDFViewerDemo.Api
             return JsonConvert.SerializeObject(output);
         }
 
-        //Post action for uploading the PDF document.
+        //Post action for processing the PDF documents when uploading to the ejPdfviewer widget.
         public object FileUpload(Dictionary<string, string> jsonResult)
         {
             PdfViewerHelper helper = new PdfViewerHelper();
@@ -285,7 +285,7 @@ namespace PDFViewerDemo.Api
             return JsonConvert.SerializeObject(helper.ProcessPdf(jsonResult));
         }
 
-        //Post action for downloading the PDF document from the ejPdfviewer widget.
+        //Post action for downloading the PDF documents from the ejPdfviewer widget.
         public object Download(Dictionary<string, string> jsonResult)
         {
             PdfViewerHelper helper = new PdfViewerHelper();
