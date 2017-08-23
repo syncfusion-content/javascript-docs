@@ -85,63 +85,90 @@ And also you can add image, image styles, sprite CSS class, query and HTML attri
 {% highlight html %}
 
     <div class="cols-sample-area">
-        <div id="toolbar"></div>
+        <div id="toolbarJson"></div>
     </div>
     
+{% endhighlight %}
+
+{% highlight javascript %}
+
+    $(function () {
+        BrowserItems = [{
+            empid: "1",
+            spriteCss: "Browsers ieb",
+            title: "Internet Explorer",
+
+        }, {
+            empid: "2",
+            spriteCss: "Browsers chromeb",
+            title: "Chrome",
+        }, {
+            empid: "3",
+            spriteCss: "Browsers firefoxb",
+            title: "Firefox",
+
+        }, {
+            empid: "4",
+            spriteCss: "Browsers bittyb",
+            title: "Bitty",
+
+        }, {
+            empid: "5",
+            spriteCss: "Browsers operab",
+            title: "Opera",
+
+        }
+        ];
+        $("#toolbarJson").ejToolbar({
+            dataSource: BrowserItems,
+            fields: { id: "empid", spriteCssClass: "spriteCss", tooltipText:"title" },
+            orientation: ej.Orientation.Horizontal,
+            width: "100%"
+        });
+    });
+
 {% endhighlight %}
 
 {% highlight css %}
 
 <style type="text/css" class="cssStyles">
-    .darktheme .cols-sample-area .e-tooltxt .ToolbarItems {
-        background-image: url('../images/toolbar/ui-icons-metro.png');
+    .darktheme .cols-sample-area .e-tooltxt .Browsers {
+        background-image: url('../content/images/toolbar/browserd.png');
     }
 
-    .cols-sample-area .e-tooltxt .ToolbarItems {
+    .cols-sample-area .e-tooltxt .Browsers {
         display: block;
-        background-image: url('../images/toolbar/ui-icons-dark.png');
-        height: 22px;
-        width: 22px;
+        background-image: url('../content/images/toolbar/browserl.png');
+        height: 32px;
+        width: 32px;
+        background-repeat: no-repeat;
     }
 
-    .e-tooltxt:hover .ToolbarItems, .darktheme .cols-sample-area .e-tooltxt:hover .ToolbarItems {
-        background-image: url('../images/toolbar/ui-icons-light.png');
+    .e-tooltxt:hover .Browsers, .darktheme .cols-sample-area .e-tooltxt:hover .Browsers {
+        background-image: url('../content/images/toolbar/browserh.png');
     }
 
-    .ToolbarItems.LeftAlign_tool {
-        background-position: -26px -39px;
+    .Browsers.ieb {
+        background-position: -84px 0px;
     }
 
-    .ToolbarItems.CenterAlign_tool {
-        background-position: -55px -39px;
+    .Browsers.chromeb {
+        background-position: -42px 0px;
     }
 
-    .ToolbarItems.RightAlign_tool {
-        background-position: -89px -39px;
+    .Browsers.firefoxb {
+        background-position: 0px 0px;
     }
 
-    .ToolbarItems.Justify_tool {
-        background-position: -123px -39px;
+    .Browsers.bittyb {
+        background-position: -126px 0px;
     }
 
-    .ToolbarItems.Bold_tool {
-        background-position: -159px -39px;
+    .Browsers.operab {
+        background-position: -168px 0px;
     }
-
-    .ToolbarItems.Italic_tool {
-        background-position: -196px -39px;
-    }
-
-    .ToolbarItems.StrikeThrough_tool {
-        background-position: -55px -70px;
-    }
-
-    .ToolbarItems.Underline_tool {
-        background-position: -23px -68px;
-    }
-
-    .html {
-        background-color: yellowgreen;
+    .material .frame{
+        width: 360px;
     }
 </style>
 
