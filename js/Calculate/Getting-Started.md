@@ -158,16 +158,16 @@ And, the grid will be configured with `dataSource`.
 
         $(function () {
 
-        var griddata = [{ sno: 1, a: 6, b: 58, c: 35, d: 0.01, e: "7/18/2011 7:45:05 AM", f: 7500, g:-120000 },
-        { sno: 2, a: 10, b: 11, c: 25, d: 6, e: 1, f: 4, g:39000 },
-        { sno: 3, a: 0.5, b: 10, c: 23, d: 4, e: 4, f: 3.5, g:30000 },
-        { sno: 4, a: 0.75, b: 45.35, c: 47.65, d: 0.06, e: 8, f: 1.2, g:21000 },
-        { sno: 5, a: 0.05, b: 17.56, c: 18.44, d: 10, e: 20, f: 0.908789, g:37000 },
-        { sno: 6, a: 2.5, b: 16.09, c: 16.91, d: -200, e: 10, f: 40, g:46000 },
-        { sno: 7, a: 50, b: 2400, c: 15.20, d: -500, e: 3, f: 1.5, g:0.1 },
-        { sno: 8, a: 0.09, b: 300, c: 6, d: 0.068094, e: 8000, f: 10, g:0.12 },
-        { sno: 9, a: 30, b: 10, c: 4, d: 0.01, e: "FLUId:FLOW", f: 2, g:42 },
-        { sno: 10, a: 125000, b: "STREET", c: -200, d: 2, e: "$1000", f: 2000, g:122}]
+        var griddata = [{ serialNumber: 1, a: 6, b: 58, c: 35, d: 0.01, e: "7/18/2011 7:45:05 AM", f: 7500, g:-120000 },
+        { serialNumber: 2, a: 10, b: 11, c: 25, d: 6, e: 1, f: 4, g:39000 },
+        { serialNumber: 3, a: 0.5, b: 10, c: 23, d: 4, e: 4, f: 3.5, g:30000 },
+        { serialNumber: 4, a: 0.75, b: 45.35, c: 47.65, d: 0.06, e: 8, f: 1.2, g:21000 },
+        { serialNumber: 5, a: 0.05, b: 17.56, c: 18.44, d: 10, e: 20, f: 0.908789, g:37000 },
+        { serialNumber: 6, a: 2.5, b: 16.09, c: 16.91, d: -200, e: 10, f: 40, g:46000 },
+        { serialNumber: 7, a: 50, b: 2400, c: 15.20, d: -500, e: 3, f: 1.5, g:0.1 },
+        { serialNumber: 8, a: 0.09, b: 300, c: 6, d: 0.068094, e: 8000, f: 10, g:0.12 },
+        { serialNumber: 9, a: 30, b: 10, c: 4, d: 0.01, e: "FLUId:FLOW", f: 2, g:42 },
+        { serialNumber: 10, a: 125000, b: "STREET", c: -200, d: 2, e: "$1000", f: 2000, g:122}]
 
 var element = $("#Grid");
 element.ejGrid({
@@ -177,7 +177,7 @@ element.ejGrid({
 editMode: ej.Grid.EditMode.Batch,
 },
 columns: [
- { field: "sno", headerText: "sno", isPrimaryKey: true, visible: false },
+ { field: "serialNumber", headerText: "serialNumber", isPrimaryKey: true, visible: false },
  { field: "a", headerText: "A", type: "string" },
  { field: "b", headerText: "B", type: "string" },
  { field: "c", headerText: "C", type: "string" },
@@ -226,12 +226,12 @@ The methods `SetValueRowCol` and `GetValueRowCol` act as intermediate to transfe
 <script type="text/javascript">
 <!--- other codes --->
 calcObj.getValueRowCol = function (sheetID,row, col) {
-            var girdData = $("#Grid").data("ejGrid");
+            var gridData = $("#Grid").data("ejGrid");
             var rowData = $("#Grid").data("ejGrid").model.dataSource[Number(row) - 1];
-            if (girdData.batchChanges.changed.length > 0) {
-                for (var i in girdData.batchChanges.changed) {
-                    if (girdData.batchChanges.changed[i].sno == rowData.sno) {
-                        rowData = girdData.batchChanges.changed[i];
+            if (gridData.batchChanges.changed.length > 0) {
+                for (var i in gridData.batchChanges.changed) {
+                    if (gridData.batchChanges.changed[i].serialNumber == rowData.serialNumber) {
+                        rowData = gridData.batchChanges.changed[i];
                         break;
                     }
                 }
