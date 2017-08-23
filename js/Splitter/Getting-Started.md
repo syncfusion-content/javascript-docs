@@ -55,7 +55,7 @@ Add **&lt;input&gt;** element to create **Splitter**. Save the images in the cor
     <div class="row">
         <div class="cols-sample-area">
             <!----------------Splitter Control---------------->
-            <div id="outterSplitter">
+            <div id="outerSplitter">
                 <div>
                     <div class="cont">
                         <h3 class="h3">JavaScript</h3>
@@ -72,7 +72,7 @@ Add **&lt;input&gt;** element to create **Splitter**. Save the images in the cor
                             <img src="galaxy.jpg" />
                         </div>
                         <div class="chart des">
-                            <h3>Harddisk</h3>
+                            <h3>Hard Disk</h3>
                             <img src="harddisk.jpg" />
                         </div>
                         <div class="grid des">
@@ -94,7 +94,7 @@ Add the following styles to show the **Splitter** control in horizontal order.
 {% highlight css %}
 
 <style type="text/css" class="cssStyles">
-   #outterSplitter {
+   #outerSplitter {
        margin: 0 auto;
    }
    .cont {
@@ -132,7 +132,7 @@ Add the following code example in **HTML** file to configure Tree View.
     <li>
         Harddisk
         <ul>
-            <li id="chart" class="_child">Segate </li>
+            <li id="chart" class="_child">Seagate </li>
         </ul>
     </li>
     <li>
@@ -153,7 +153,7 @@ Add the following code example in the view page to set the action to view the im
 
     $(function () {
         $("#treeView").ejTreeView({ nodeSelect: "treeClicked" });
-        $("#outterSplitter").ejSplitter({
+        $("#outerSplitter").ejSplitter({
             height: 280, width: 501,
             properties: [{ paneSize: 200 }]
         });
