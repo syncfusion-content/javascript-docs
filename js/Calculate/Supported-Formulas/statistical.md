@@ -1351,7 +1351,7 @@ _NORMDIST(x,mean,standard_dev,cumulative)_
 
 
 
-* `#VALUE!` Occurs when mean or standard_dev is nonnumeric.
+* `#VALUE!` Occurs when mean or standard_dev is non-numeric.
 
 
 
@@ -1391,7 +1391,7 @@ _NORMSDIST(z)_
 
 
 
-* `#VALUE!` Occurs when z is nonnumeric.
+* `#VALUE!` Occurs when z is non-numeric.
 
 
 
