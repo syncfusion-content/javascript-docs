@@ -245,7 +245,7 @@ Please refer the following code examples.
 {% highlight html %}
 
 
-    <div id="defaultlistbox"></div> 
+    <div id="defaultListView"></div> 
 
   
 {% endhighlight %}
@@ -288,7 +288,7 @@ Add the following script in your code.
         };
         
         $(function () {
-            $("#defaultlistbox").ejListView({ fieldSettings: window.musicFields, dataSource:window.dataSourceItem, width: 400,showHeader:true,headerTitle:"ListView" });
+            $("#defaultListView").ejListView({ fieldSettings: window.musicFields, dataSource:window.dataSourceItem, width: 400,showHeader:true,headerTitle:"ListView" });
         });
 
 
