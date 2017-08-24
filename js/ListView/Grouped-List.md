@@ -104,7 +104,7 @@ Add the following script in your code.
 {% highlight javascript %}
 
         $(function () {
-            $("#defaultListView").ejListView({showHeader: true, headerTitle: "favourite", width:400, enableGroupList:true});
+            $("#defaultListView").ejListView({showHeader: true, headerTitle: "favorite", width:400, enableGroupList:true});
         });
 
 {% endhighlight %}

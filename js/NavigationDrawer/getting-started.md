@@ -44,7 +44,7 @@ Create a **div** element that acts as a container for **Navigation Drawer**. Ref
 
 {% highlight html %}
 
-    <div id="navpane">
+    <div id="navigationPane">
         <ul>
             <li data-ej-text="Home"></li>
             <li data-ej-text="Profile"></li>
@@ -112,7 +112,7 @@ Add the following code in the **script** tag.
 {% highlight javascript %}
 
     $(function () {
-        $("#navpane").ejNavigationDrawer({ enableListView: true, targetId: "target" });
+        $("#navigationPane").ejNavigationDrawer({ enableListView: true, targetId: "target" });
     });
     
 {% endhighlight %}
@@ -127,7 +127,7 @@ You can set the images for Navigation Drawer by using the **data-ej-imageClass**
 
 {% highlight html %}
 
-    <div id="navpane">
+    <div id="navigationPane">
         <ul>
             <li data-ej-imageclass="icon-home" data-ej-text="Home"></li>
             <li data-ej-imageclass="icon-profile" data-ej-text="Profile"></li>
@@ -145,7 +145,7 @@ You can define the image classes specified for the list items as follows.
 {% highlight css %}
 
     <style>
-            #navpane [class*="icon-"]
+            #navigationPane [class*="icon-"]
             {
                 width: 35px;
                 height: 35px;
@@ -210,7 +210,7 @@ Add the following code in the **script** tag.
 {% highlight javascript %}
 
       $(function () {
-           $("#navpane").ejNavigationDrawer({ enableListView: true, targetId: "target", listViewSettings: { mouseDown: 'slideMenuClick', persistSelection: true } });
+           $("#navigationPane").ejNavigationDrawer({ enableListView: true, targetId: "target", listViewSettings: { mouseDown: 'slideMenuClick', persistSelection: true } });
       });
 
 {% endhighlight %}
@@ -224,7 +224,7 @@ In the mouse down handler, you can hide the other content and display the respec
     function slideMenuClick(e) {
             $('#Home, #Profile, #Photos, #Location').hide(); //Hiding all other contents
             $('#' + e.text).show(); //Displaying the content based on the text of item selected
-            $("#navpane").ejNavigationDrawer("close");
+            $("#navigationPane").ejNavigationDrawer("close");
         }
 
 {% endhighlight %}

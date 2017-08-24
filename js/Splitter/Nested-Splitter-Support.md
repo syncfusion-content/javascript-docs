@@ -20,13 +20,13 @@ In the **HTML** page set the corresponding **&lt;div&gt;** elements for outer an
 
 {% highlight html %}
 
-<div id="outersplitter">
+<div id="outerSplitter">
     <div>
         <div style="padding: 0px 15px;">
             <h3 class="h3"> JavaScript </h3>
         </div>
     </div>
-    <div id="innersplitter">
+    <div id="innerSplitter">
         <div>
             <div style="padding: 0px 15px;">
                 <h3 class="h3">Tools </h3>
@@ -54,13 +54,13 @@ In the **HTML** page set the corresponding **&lt;div&gt;** elements for outer an
 
 {% highlight javascript %}
 
-    $("#outersplitter").ejSplitter({
+    $("#outerSplitter").ejSplitter({
         height: 280, width: 600,
         orientation: ej.Orientation.Vertical,
         properties: [{ paneSize: 60 }]
     });
     
-    $("#innersplitter").ejSplitter({
+    $("#innerSplitter").ejSplitter({
         width: 600,
         properties: [{ paneSize: 200 }, { paneSize: 170 }]
     });
