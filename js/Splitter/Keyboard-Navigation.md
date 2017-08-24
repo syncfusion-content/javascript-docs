@@ -93,7 +93,7 @@ In the **HTML** page set the corresponding **&lt;div&gt;** element for rendering
 {% highlight javascript %}
 
 
-    $("#spliter").ejSplitter({
+    $("#splitter").ejSplitter({
         height: 280, 
         width: 600
     });
@@ -101,7 +101,7 @@ In the **HTML** page set the corresponding **&lt;div&gt;** element for rendering
     //Control focus key
     $(document).on("keydown", function (e) {
         if (e.altKey && e.keyCode === 74) { // j- key code.
-            $("#spliter .e-splitbar")[0].focus();
+            $("#splitter .e-splitbar")[0].focus();
         }
     });
 
