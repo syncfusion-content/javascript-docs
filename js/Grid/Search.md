@@ -55,7 +55,7 @@ $(function () {
 		dataSource : window.gridData,
 		allowPaging : true,
 		allowSearching : true,
-		searchSettings: { fields: ["CustomerID"], operator: "contains", key: "ra", ignoreCase: false },
+		searchSettings: { fields: ["CustomerID"], operator: "contains", key: "frank", ignoreCase: false },
 		columns : ["OrderID", "EmployeeID", "CustomerID", "ShipCountry", "Freight"]
 	});
 });
