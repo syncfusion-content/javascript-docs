@@ -91,9 +91,9 @@ Custom toolbar is used to create your own toolbar items in toolbar. It can add b
 </script>
 <script type="text/javascript">
   function onToolBarClick(args) {
-      var tbarObj = $(args.target),
+      var toolBarObject = $(args.target),
         grid = this;
-      if (tbarObj.hasClass("Collapse")) grid.collapseAll(); //collapse Grid using grid instance, `this` is grid instance
+      if (toolBarObject.hasClass("Collapse")) grid.collapseAll(); //collapse Grid using grid instance, `this` is grid instance
       else grid.refreshContent(); //refresh content using grid instance
   }
   $("#Grid").ejGrid({
