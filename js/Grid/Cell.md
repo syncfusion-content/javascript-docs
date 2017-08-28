@@ -195,7 +195,7 @@ $(function () {
 			{ field: "OrderID" },
 			{ field: "CustomerID" },
 			{ field: "EmployeeID"}, // JsRender syntax usage in custom Attribute
-			{ field: "ShipCity", customAttributes: { "title": "{{"{{"}}:shipcity {{}}}}" } },
+			{ field: "ShipCity", customAttributes: { "title": "{{"{{"}}:ShipCity {{}}}}" } },
 			{ field: "ShipCountry" }
 		]
 	});
