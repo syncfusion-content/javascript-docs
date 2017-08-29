@@ -188,7 +188,7 @@ $(function () {
             height: 145,
             width: 260,
             items: [{
-                //For Diplaying Fahrenheit value
+                //For Displaying Fahrenheit value
                 segmentSettings: { width: 2, length: 20 },
                 characterSettings: { type: "sevensegment", spacing: 12, },
                 value: "102", position: { x: 15, y: 40 }
