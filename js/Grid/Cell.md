@@ -194,8 +194,8 @@ $(function () {
 		columns : [
 			{ field: "OrderID" },
 			{ field: "CustomerID" },
-			{ field: "EmployeeID"}, // jsrender syntax usage in custom Attribute
-			{ field: "ShipCity", customAttributes: { "title": "{{"{{"}}:shipcity {{}}}}" } },
+			{ field: "EmployeeID"}, // JsRender syntax usage in custom Attribute
+			{ field: "ShipCity", customAttributes: { "title": "{{"{{"}}:ShipCity {{}}}}" } },
 			{ field: "ShipCountry" }
 		]
 	});
@@ -225,7 +225,7 @@ $(function () {
 		allowPaging : true,
 		columns : [
 			{ field: "OrderID" },
-			{ field: "CustomerID", headerText: "<div>Cust ID</div>", disableHtmlEncode: true },
+			{ field: "CustomerID", headerText: "<div>Customer ID</div>", disableHtmlEncode: true },
 			{ field: "EmployeeID", headerText: "<div>Employee ID</div>", disableHtmlEncode: false },
 			{ field: "ShipCountry" }
 		]

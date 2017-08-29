@@ -92,9 +92,9 @@ The following code example describes the above behavior.
 {% highlight javascript %}
 	$(function () {
 
-		var dm =ej.DataManager("http://js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/Orders/");
+		var dataManager =ej.DataManager("http://js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/Orders/");
 		$("#Grid").ejGrid({
-			dataSource: dm,
+			dataSource: dataManager,
 			allowPaging:true,
 			columns: ["OrderID", "EmployeeID", "CustomerID", "ShipCountry", "Freight"]
 		});
@@ -220,10 +220,10 @@ The following code example describes the above behavior.
 $(function() {
 
 	var customAdaptor = new ej.Adaptor().extend({
-		insert: function(dm, data) {
+		insert: function(dataManager, data) {
 			//Auto-increment `id` field value on insert
-			data["id"] = dm.dataSource.json[dm.dataSource.json.length - parseInt(1, 10)].id + 1;
-			return dm.dataSource.json.push(data);
+			data["id"] = dataManager.dataSource.json[dataManager.dataSource.json.length - parseInt(1, 10)].id + 1;
+			return dataManager.dataSource.json.push(data);
 		},
 		processQuery: ej.JsonAdaptor.prototype.processQuery //Reusing JsonAdaptor`s processQuery
 	});
