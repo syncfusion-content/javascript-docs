@@ -98,10 +98,10 @@ public class OrdersController: ApiController
 	public void WordExport()
 	{
 		string gridModel = HttpContext.Current.Request.Params["GridModel"];
-		GridProperties gridPropert = ConvertGridObject(gridModel);
+		GridProperties gridProperties = ConvertGridObject(gridModel);
 		WordExport exp = new WordExport();
 		IEnumerable < Order > data = db.Orders.ToList();
-		exp.Export(gridPropert, (IEnumerable) data, "Export.docx");
+		exp.Export(gridProperties, (IEnumerable) data, "Export.docx");
 	}
 	
 	private GridProperties ConvertGridObject(string gridProperty)
@@ -109,14 +109,14 @@ public class OrdersController: ApiController
 		JavaScriptSerializer serializer = new JavaScriptSerializer();
 		IEnumerable div = (IEnumerable) serializer.Deserialize(gridProperty, typeof(IEnumerable));
 		GridProperties gridProp = new GridProperties();
-		foreach(KeyValuePair < string, object > ds in div)
+		foreach(KeyValuePair < string, object > datasource in div)
 		{
 			var property = gridProp.GetType()
-				.GetProperty(ds.Key, BindingFlags.Instance ' BindingFlags.Public ' BindingFlags.IgnoreCase);
+				.GetProperty(datasource.Key, BindingFlags.Instance ' BindingFlags.Public ' BindingFlags.IgnoreCase);
 			if (property != null)
 			{
 				Type type = property.PropertyType;
-				string serialize = serializer.Serialize(ds.Value);
+				string serialize = serializer.Serialize(datasource.Value);
 				object value = serializer.Deserialize(serialize, type);
 				property.SetValue(gridProp, value, null);
 			}
@@ -306,24 +306,24 @@ public void ExportToPdf(string GridModel)
 {
 	PdfExport exp = new PdfExport();
 	var DataSource = new NorthwindDataContext().OrdersViews.ToList();
-	GridProperties properties = ConvertGridpropertiesect(GridModel);
+	GridProperties properties = ConvertGridProperties(GridModel);
 	var dataSource = new DataOperations().Execute(GridModel, DataSource);
 	exp.Export(properties, dataSource, "Export.pdf", false, false, "flat-saffron");
 }
 
-private GridProperties ConvertGridpropertiesect(string gridProperty)
+private GridProperties ConvertGridProperties(string gridProperty)
 {
 	JavaScriptSerializer serializer = new JavaScriptSerializer();
 	IEnumerable div = (IEnumerable) serializer.Deserialize(gridProperty, typeof(IEnumerable));
 	GridProperties gridProp = new GridProperties();
-	foreach(KeyValuePair < string, propertiesect > ds in div)
+	foreach(KeyValuePair < string, propertiesSection > datasource in div)
 	{
-		var property = gridProp.GetType().GetProperty(ds.Key, BindingFlags.Instance ' BindingFlags.Public ' BindingFlags.IgnoreCase);
+		var property = gridProp.GetType().GetProperty(datasource.Key, BindingFlags.Instance ' BindingFlags.Public ' BindingFlags.IgnoreCase);
 		if (property != null)
 		{
 			Type type = property.PropertyType;
-			string serialize = serializer.Serialize(ds.Value);
-			propertiesect value = serializer.Deserialize(serialize, type);
+			string serialize = serializer.Serialize(datasource.Value);
+			propertiesSection value = serializer.Deserialize(serialize, type);
 			property.SetValue(gridProp, value, null);
 		}
 	}

@@ -433,12 +433,12 @@ $(function () {
 			{ field: "CustomerID" },
 			{ field: "EmployeeID" },
 			{ field: "Freight" },
-			{ headerText: "",format: "<a onclick =\"clk(this)\" href=#>Delete</a>" }
+			{ headerText: "",format: "<a onclick =\"click(this)\" href=#>Delete</a>" }
 		]
 	});
 });
 
-function clk(e) {
+function click(e) {
 	var obj = $("#Grid").data("ejGrid");
 	obj.deleteRecord("OrderID", obj.getSelectedRecords()[0]);
 }
@@ -784,14 +784,14 @@ The following code example describes the above behavior.
 {% endhighlight %}
 
 {% highlight css %}
-.customcss.e-headercell {
+.customCSS.e-headercell {
 	background-color: #2382c3;
 	color: white;
 	font-family: 'Bell MT';
 	font-size: 20px;
 }
 
-.customcss.e-rowcell {
+.customCSS.e-rowcell {
 	background-color: #ecedee;
 	font-family: 'Bell MT';
 	color: red;
@@ -808,7 +808,7 @@ $(function () {
 		columns : [
 			{ field: "OrderID" },
 			{ field: "CustomerID" },
-			{ field: "EmployeeID", cssClass: "customcss" },
+			{ field: "EmployeeID", cssClass: "customCSS" },
 			{ field: "Freight" }
 		]
 	});

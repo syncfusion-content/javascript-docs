@@ -177,7 +177,7 @@ Custom Summary can be used to create summary values based on your required custo
   function currency() {
       //to get grid instance
       var gridObj = $("#Grid").ejGrid("instance");
-      //ej.sum is aggreagte to add datas of freight from datasource
+      //ej.sum is aggregate to add data of freight from datasource
       return ej.sum(gridObj.model.dataSource, "Freight");
   }
   $("#Grid").ejGrid({
