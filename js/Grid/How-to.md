@@ -144,7 +144,7 @@ Using [`search`](https://help.syncfusion.com/api/js/ejgrid#methods:search “sea
             <div class="prop-grid">
                 <div class="row">
                     <div class="col-md-3">
-                        <input type="text" id="srchstr" class="e-ejinputtext" />
+                        <input type="text" id="searchString" class="e-ejinputtext" />
                         <input type="button" id="search" value="Searching" />
                     </div>
                 </div>
@@ -179,7 +179,7 @@ Using [`search`](https://help.syncfusion.com/api/js/ejgrid#methods:search “sea
     });
     function onSearching(args) {
         var obj = $("#Grid").ejGrid("instance");
-        var val = $("#srchstr").val();
+        var val = $("#searchString").val();
         obj.search(val);
     }
 </script>

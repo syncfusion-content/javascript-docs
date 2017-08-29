@@ -78,7 +78,7 @@ function detailGridData(e) {
 	// Here you can get the parent details from "data". EmployeeID is the unique column value in parent row.
 	var filteredData = e.rowData["EmployeeID"];
 	// the datasource "window.ordersView" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
-	var data = ej.DataManager(window.ordersView).executeLocal(ej.Query().where("EmployeeID", "equal", parseInt(filteredData), true).take(5)); // form the query to filter the detail row data by using EmplooyeeID column value.
+	var data = ej.DataManager(window.ordersView).executeLocal(ej.Query().where("EmployeeID", "equal", parseInt(filteredData), true).take(5)); // form the query to filter the detail row data by using EmployeeID column value.
 	//detailsElement contains all the elements which are mentioned in the template.
 	// Here the detailGrid element is changed as ejGrid control
 	e.detailsElement.find("#detailGrid").ejGrid({
@@ -256,7 +256,7 @@ The following code example describes the above behavior.
 
 {% highlight html %}
 <div id="Grid" style="float:left;width:49%"></div>
-<div id="DestGrid" style="float:right;width:49%"></div>
+<div id="DestinationGrid" style="float:right;width:49%"></div>
 {% endhighlight %}
 
 {% highlight javascript %}
@@ -267,7 +267,7 @@ $(function () {
                     allowPaging: true,
                     allowRowDragAndDrop: true,
                     selectionType: "multiple",
-                    rowDropSettings: { dropTargetID: "#DestGrid" },
+                    rowDropSettings: { dropTargetID: "#DestinationGrid" },
                     columns: [
                                   { field: "OrderID", headerText: "Order ID", isPrimaryKey: true, textAlign: ej.TextAlign.Right, width: 80 },
                                   { field: "CustomerID", headerText: "Customer ID", width: 90 },
@@ -275,7 +275,7 @@ $(function () {
                                   { field: "ShipCountry", headerText: "Ship Country", width: 110 }
                     ],
                 });
-                $("#DestGrid").ejGrid({
+                $("#DestinationGrid").ejGrid({
                     dataSource: [],
                     allowPaging: true,
                     allowRowDragAndDrop: true,
