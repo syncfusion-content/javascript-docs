@@ -69,7 +69,7 @@ $("#DiagramContent").ejDiagram({
 			},{
 				name: "zoomOut",
 				text: "Zoom Out",
-				imageUrl: "Images/zoomout.png"
+				imageUrl: "Images/zoomOut.png"
 			}]
 		}],
 		// Hides the default context menu items
