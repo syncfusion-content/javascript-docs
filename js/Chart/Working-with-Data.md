@@ -27,7 +27,7 @@ N> For the **OHLC** type series, you have to map four dataSource fields ([`high`
           { month: 'Jul', sales: 35 },  { month: 'Aug', sales: 55 }, { month: 'Sep', sales: 38 },
           { month: 'Oct', sales: 30 }, { month: 'Nov', sales: 25 }, { month: 'Dec', sales: 32 }];
 
-       $("#chartcontainer").ejChart({
+       $("#container").ejChart({
                     
           series: [{
                 // ... 
@@ -52,7 +52,7 @@ N> For the **OHLC** type series, you have to map four dataSource fields ([`high`
 
 {% highlight javascript %}
 
-    $("#chartcontainer").ejChart({
+    $("#container").ejChart({
 
             // ...
 
@@ -85,7 +85,7 @@ You can bind the remote data to the chart by using the DataManager and you can u
         });
         // Query creation
         var query = ej.Query().from("Orders").take(6);
-        $("#chartcontainer").ejChart({
+        $("#container").ejChart({
             series: [{
                 type: 'column',
                 dataSource: dataManger,

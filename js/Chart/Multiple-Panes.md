@@ -34,13 +34,13 @@ To split the chart area vertically into a number of rows, use [`rowDefinitions`]
                     unit : 'percentage',                 
                     lineColor : 'Gray',
                     rowHeight : 50,
-                    linewidth : 0
+                    lineWidth : 0
                 }, {
                     //  Split second row of the chart area
                     unit : 'percentage',                 
                     lineColor : 'green',
                     rowHeight : 50,
-                    linewidth : 0
+                    lineWidth : 0
                 }],
 
                 axes: [{
