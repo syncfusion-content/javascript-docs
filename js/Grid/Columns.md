@@ -784,14 +784,14 @@ The following code example describes the above behavior.
 {% endhighlight %}
 
 {% highlight css %}
-.customCss.e-headercell {
+.customCSS.e-headercell {
 	background-color: #2382c3;
 	color: white;
 	font-family: 'Bell MT';
 	font-size: 20px;
 }
 
-.customCss.e-rowcell {
+.customCSS.e-rowcell {
 	background-color: #ecedee;
 	font-family: 'Bell MT';
 	color: red;
@@ -808,7 +808,7 @@ $(function () {
 		columns : [
 			{ field: "OrderID" },
 			{ field: "CustomerID" },
-			{ field: "EmployeeID", cssClass: "customCss" },
+			{ field: "EmployeeID", cssClass: "customCSS" },
 			{ field: "Freight" }
 		]
 	});
