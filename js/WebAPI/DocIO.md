@@ -73,12 +73,12 @@ $('#generatedocument').click(function () {
     if (req.response != null && navigator.msSaveBlob)
         return navigator.msSaveBlob(new Blob([req.response], { type: contenttype}), filename);
     var a = document.createElement('a');
-    var url = window.URL.createObjectURL(new Blob([req.response], {type: contenttype}));
-    a.href = url;
+    var fileLink = window.URL.createObjectURL(new Blob([req.response], {type: contenttype}));
+    a.href = fileLink;
     a.download = filename;
     document.body.appendChild(a);
     a.click();
-    window.URL.revokeObjectURL(url);
+    window.URL.revokeObjectURL(fileLink);
     a.remove();
     };
 });
@@ -130,12 +130,12 @@ $('#converttopdf').click(function () {
     if (req.response != null && navigator.msSaveBlob)
         return navigator.msSaveBlob(new Blob([req.response], { type: "data:attachment/pdf" }), "Sample.pdf");
     var a = document.createElement('a');
-    var URL = window.URL.createObjectURL(new Blob([req.response], {type: "data:attachment/pdf"}));
-    a.href = URL;
+    var fileLink = window.URL.createObjectURL(new Blob([req.response], {type: "data:attachment/pdf"}));
+    a.href = fileLink;
     a.download = "Sample.pdf";
     document.body.appendChild(a);
     a.click();
-    window.URL.revokeObjectURL(URL);
+    window.URL.revokeObjectURL(fileLink);
     a.remove();
     };
 });
@@ -211,12 +211,12 @@ $('#generatedocument').click(function () {
     if (req.response != null && navigator.msSaveBlob)
         return navigator.msSaveBlob(new Blob([req.response], { type: contentType}), fileName);
     var a = document.createElement('a');
-    var URL = window.URL.createObjectURL(new Blob([req.response], {type: contentType}));
-    a.href = URL;
+    var fileLink = window.URL.createObjectURL(new Blob([req.response], {type: contentType}));
+    a.href = fileLink;
     a.download = fileName;
     document.body.appendChild(a);
     a.click();
-    window.URL.revokeObjectURL(URL);
+    window.URL.revokeObjectURL(fileLink);
     a.remove();
     };
 });
@@ -256,12 +256,12 @@ $('#viewtemplate').click(function () {
     if (req.response != null && navigator.msSaveBlob)
         return navigator.msSaveBlob(new Blob([req.response], { type: "data:attachment/doc"}), "SalesInvoiceTemplate.doc");
     var a = document.createElement('a');
-    var URL = window.URL.createObjectURL(new Blob([req.response], {type: "data:attachment/doc"}));
-    a.href = URL;
+    var fileLink = window.URL.createObjectURL(new Blob([req.response], {type: "data:attachment/doc"}));
+    a.href = fileLink;
     a.download = "SalesInvoiceTemplate.doc";
     document.body.appendChild(a);
     a.click();
-    window.URL.revokeObjectURL(URL);
+    window.URL.revokeObjectURL(fileLink);
     a.remove();
     };
 });
@@ -339,12 +339,12 @@ $('#generate').click(function () {
     if (req.response != null && navigator.msSaveBlob)
         return navigator.msSaveBlob(new Blob([req.response], { type: contentType }), fileName);
     var a = document.createElement('a');
-    var URL = window.URL.createObjectURL(new Blob([req.response], {type: contentType}));
-    a.href = URL;
+    var fileLink = window.URL.createObjectURL(new Blob([req.response], {type: contentType}));
+    a.href = fileLink;
     a.download = fileName;
     document.body.appendChild(a);
     a.click();
-    window.URL.revokeObjectURL(URL);
+    window.URL.revokeObjectURL(fileLink);
     a.remove();
     };
 });
@@ -400,12 +400,12 @@ $('#viewtemplate').click(function () {
     if (req.response != null && navigator.msSaveBlob)
         return navigator.msSaveBlob(new Blob([req.response], { type: "data:attachment/doc"}), "Template.doc");
     var a = document.createElement('a');
-    var url = window.URL.createObjectURL(new Blob([req.response], {type: "data:attachment/doc"}));
-    a.href = url;
+    var fileLink = window.URL.createObjectURL(new Blob([req.response], {type: "data:attachment/doc"}));
+    a.href = fileLink;
     a.download = "Template.doc";
     document.body.appendChild(a);
     a.click();
-    window.URL.revokeObjectURL(url);
+    window.URL.revokeObjectURL(fileLink);
     a.remove();
     };
 });
@@ -498,12 +498,12 @@ $('#generate').click(function () {
     if (req.response != null && navigator.msSaveBlob)
         return navigator.msSaveBlob(new Blob([req.response], { type: contentType}), fileName);
     var a = document.createElement('a');
-    var URL = window.URL.createObjectURL(new Blob([req.response], {type: contentType}));
-    a.href = URL;
+    var fileLink = window.URL.createObjectURL(new Blob([req.response], {type: contentType}));
+    a.href = fileLink;
     a.download = fileName;
     document.body.appendChild(a);
     a.click();
-    window.URL.revokeObjectURL(URL);
+    window.URL.revokeObjectURL(fileLink);
     a.remove();
     };
 });
