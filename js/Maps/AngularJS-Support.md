@@ -29,9 +29,9 @@ Apply the plugin and property assigning the Map element through the directive 
 
     //Initializes Map
     
-        <div id="map" style="height: inherit; min-height: 356px;" ej-map e-zoomsettings- enablezoom="enablezoom">
+        <div id="map" style="height: inherit; min-height: 356px;" ej-map e-zoomsettings- enablezoom="enableZoom">
             <div e-layers>
-                <div e-layer e-shapedata="shapedata" e-shapesettings-fill="fill" e-shapesettings-strokeThickness="strokeThickness" e-shapesettings-stroke="stroke">                                   
+                <div e-layer e-shapedata="shapeData" e-shapesettings-fill="fill" e-shapesettings-strokeThickness="strokeThickness" e-shapesettings-stroke="stroke">                                   
                 </div>
             </div>
         </div>
@@ -45,8 +45,8 @@ Apply the plugin and property assigning the Map element through the directive 
     <script>
         angular.module('syncApp', ['ejangular'])
         .controller('Map', function ($scope) {                       
-            $scope.enablezoom = true,
-            $scope.shapedata = usMap;                    
+            $scope.enableZoom = true,
+            $scope.shapeData = usMap;                    
             $scope.fill = "#9CBF4E"; 
             $scope.strokeThickness ="0.5";
             $scope.stroke = "White";

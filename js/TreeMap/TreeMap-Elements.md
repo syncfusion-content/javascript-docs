@@ -192,7 +192,7 @@ You can also set labels for the leaf nodes by setting the `showLabels` property 
             $("#treemapContainer").ejTreeMap({
                 // ...                 
                 levels: [
-                  {groupPath: "Continent", showLabels: true, groupGap: 2, headerHeight: 20,  headerTemplate: 'headertemplate', labelPosition:"topleft", }
+                  {groupPath: "Continent", showLabels: true, groupGap: 2, headerHeight: 20,  headerTemplate: 'Template', labelPosition:"topleft", }
                 ],  
                 leafItemSettings: { labelPath: "Region", showLabels: true},
                 legendSettings:{					

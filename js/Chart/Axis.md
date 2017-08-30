@@ -1520,7 +1520,7 @@ You can trim, wrap or wrapAndTrim the text if it exceeds the maximum text width 
                         { 
                           // customizing the text overflow  
                             textOverflow: “trim", 
-                            maximumtextWidth: 40                                                                   
+                            maximumTextWidth: 40                                                                   
                       }]
                      }  
               });            

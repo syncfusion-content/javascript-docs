@@ -307,7 +307,7 @@ However, you can force the chart to animate series by calling the animate method
       function animateChart(){
 
            //Calling the animate method for dynamic animation
-           $("#chartcontainer").ejChart("animate");      
+           $("#container").ejChart("animate");      
         
       }
 
