@@ -90,7 +90,7 @@ N> By using the [`region`](../api/ejchart#members:annotations-region) option, yo
     $("#container").ejChart({
             //  ...
              annotations: [{  visible: true, 
-                  content: "lowtemperature", 
+                  content: "lowTemperature", 
                   //Change coordinateUnit type to pixels
                   coordinateUnit: "pixels",  x: 170, y: 350,   
                   //  ...
@@ -117,7 +117,7 @@ When the coordinateUnit is set to pixels or points, you can align the annotation
     $("#container").ejChart({
             //  ...
              annotations: [{  visible: true, 
-                     content: "hightemperature", 
+                     content: "highTemperature", 
                      //Change alignment of annotation template
                      verticalAlignment: "middle",
                      horizontalAlignment: "near",
