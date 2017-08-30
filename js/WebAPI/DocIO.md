@@ -98,7 +98,7 @@ It is used to convert Word document to PDF.
 
 | Parameter | Data Type | Data Type | Description |
 |---|---|---|
-|UploadedFile|File|It contains uploaded file to oonvert as PDF.|
+|UploadedFile|File|It contains uploaded file to convert as PDF.|
 
 ### Response information
 
@@ -116,26 +116,26 @@ URL: http://js.syncfusion.com/demos/ejServices/api/DocIO/ConvertToPDF
 
 <script>
 $('#converttopdf').click(function () {
-    var formdata = new FormData();
+    var formData = new FormData();
     var files = $("#inputfile").get(0).files;
     // Add the uploaded image content to the form data collection
     if (files.length > 0) {
-        formdata.append("UploadedFile", files[0]);
+        formData.append("UploadedFile", files[0]);
     }
     var req = new XMLHttpRequest();
     req.open("POST", window.baseurl + "api/DocIO/ConvertToPDF", true);
-    req.send(formdata);
+    req.send(formData);
     req.responseType = "blob";
     req.onload = function (event) {
     if (req.response != null && navigator.msSaveBlob)
         return navigator.msSaveBlob(new Blob([req.response], { type: "data:attachment/pdf" }), "Sample.pdf");
     var a = document.createElement('a');
-    var url = window.URL.createObjectURL(new Blob([req.response], {type: "data:attachment/pdf"}));
-    a.href = url;
+    var URL = window.URL.createObjectURL(new Blob([req.response], {type: "data:attachment/pdf"}));
+    a.href = URL;
     a.download = "Sample.pdf";
     document.body.appendChild(a);
     a.click();
-    window.URL.revokeObjectURL(url);
+    window.URL.revokeObjectURL(URL);
     a.remove();
     };
 });
@@ -173,50 +173,50 @@ URL: http://js.syncfusion.com/demos/ejServices/api/DocIO/ApplyTextFormat
 
 <script>
 $('#generatedocument').click(function () {
-    var formdata = new FormData();
+    var formData = new FormData();
     var rdButtonDoc = document.getElementById("rdButtonDoc").checked;
     var rdButtonDocx = document.getElementById("rdButtonDocx").checked;
     var rdButtonWordML = document.getElementById("rdButtonWordML").checked;
     var rdButtonPdf = document.getElementById("rdButtonPdf").checked;
-    var contenttype;
-    var filename;
+    var contentType;
+    var fileName;
     if (rdButtonDoc) {
-        formdata.append("FormatType", "WordDoc");
-        contenttype = "data:attachment/doc";
-        filename = "Sample.doc";
+        formData.append("FormatType", "WordDoc");
+        contentType = "data:attachment/doc";
+        fileName = "Sample.doc";
     }
     else if(rdButtonDocx)
     {
-        formdata.append("FormatType", "WordDocx");
-        contenttype = "data:attachment/docx";
-        filename = "Sample.docx";
+        formData.append("FormatType", "WordDocx");
+        contentType = "data:attachment/docx";
+        fileName = "Sample.docx";
     }
     else if(rdButtonWordML)
     {
-        formdata.append("FormatType", "WordML");
-        contenttype = "data:attachment/xml";
-        filename = "Sample.xml";
+        formData.append("FormatType", "WordML");
+        contentType = "data:attachment/xml";
+        fileName = "Sample.xml";
     }
     else if(rdButtonPdf)
     {
-        formdata.append("FormatType", "Pdf");
-        contenttype = "data:attachment/pdf";
-        filename = "Sample.pdf";
+        formData.append("FormatType", "Pdf");
+        contentType = "data:attachment/pdf";
+        fileName = "Sample.pdf";
     }
     var req = new XMLHttpRequest();
     req.open("POST", window.baseurl + "api/DocIO/ApplyTextFormat", true);
-    req.send(formdata);
+    req.send(formData);
     req.responseType = "blob";
     req.onload = function (event) {
     if (req.response != null && navigator.msSaveBlob)
-        return navigator.msSaveBlob(new Blob([req.response], { type: contenttype}), filename);
+        return navigator.msSaveBlob(new Blob([req.response], { type: contentType}), fileName);
     var a = document.createElement('a');
-    var url = window.URL.createObjectURL(new Blob([req.response], {type: contenttype}));
-    a.href = url;
-    a.download = filename;
+    var URL = window.URL.createObjectURL(new Blob([req.response], {type: contentType}));
+    a.href = URL;
+    a.download = fileName;
     document.body.appendChild(a);
     a.click();
-    window.URL.revokeObjectURL(url);
+    window.URL.revokeObjectURL(URL);
     a.remove();
     };
 });
@@ -256,12 +256,12 @@ $('#viewtemplate').click(function () {
     if (req.response != null && navigator.msSaveBlob)
         return navigator.msSaveBlob(new Blob([req.response], { type: "data:attachment/doc"}), "SalesInvoiceTemplate.doc");
     var a = document.createElement('a');
-    var url = window.URL.createObjectURL(new Blob([req.response], {type: "data:attachment/doc"}));
-    a.href = url;
+    var URL = window.URL.createObjectURL(new Blob([req.response], {type: "data:attachment/doc"}));
+    a.href = URL;
     a.download = "SalesInvoiceTemplate.doc";
     document.body.appendChild(a);
     a.click();
-    window.URL.revokeObjectURL(url);
+    window.URL.revokeObjectURL(URL);
     a.remove();
     };
 });
@@ -299,52 +299,52 @@ URL: http://js.syncfusion.com/demos/ejServices/api/DocIO/GenerateInvoice
 
 <script>
 $('#generate').click(function () {
-    var formdata = new FormData();
+    var formData = new FormData();
     var id = document.getElementById('order');
-    formdata.append("Id", id.options[id.selectedIndex].value);
+    formData.append("Id", id.options[id.selectedIndex].value);
     var rdButtonDoc = document.getElementById("rdButtonDoc").checked;
     var rdButtonDocx = document.getElementById("rdButtonDocx").checked;
     var rdButtonWordML = document.getElementById("rdButtonWordML").checked;
     var rdButtonPdf = document.getElementById("rdButtonPdf").checked;
-    var contenttype;
-    var filename;
+    var contentType;
+    var fileName;
     if (rdButtonDoc) {
-        formdata.append("FormatType", "WordDoc");
-        contenttype = "data:attachment/doc";
-        filename = "Sample.doc";
+        formData.append("FormatType", "WordDoc");
+        contentType = "data:attachment/doc";
+        fileName = "Sample.doc";
     }
     else if(rdButtonDocx)
     {
-        formdata.append("FormatType", "WordDocx");
-        contenttype = "data:attachment/docx";
-        filename = "Sample.docx";
+        formData.append("FormatType", "WordDocx");
+        contentType = "data:attachment/docx";
+        fileName = "Sample.docx";
     }
     else if(rdButtonWordML)
     {
-        formdata.append("FormatType", "WordML");
-        contenttype = "data:attachment/xml";
-        filename = "Sample.xml";
+        formData.append("FormatType", "WordML");
+        contentType = "data:attachment/xml";
+        fileName = "Sample.xml";
     }
     else
     {
-        formdata.append("FormatType", "Pdf");
-        contenttype = "data:attachment/pdf";
-        filename = "Sample.pdf";
+        formData.append("FormatType", "Pdf");
+        contentType = "data:attachment/pdf";
+        fileName = "Sample.pdf";
     }
     var req = new XMLHttpRequest();
     req.open("POST", window.baseurl + "api/DocIO/GenerateInvoice", true);
     req.responseType = "blob";
-    req.send(formdata);
+    req.send(formData);
     req.onload = function (event) {
     if (req.response != null && navigator.msSaveBlob)
-        return navigator.msSaveBlob(new Blob([req.response], { type: contenttype }), filename);
+        return navigator.msSaveBlob(new Blob([req.response], { type: contentType }), fileName);
     var a = document.createElement('a');
-    var url = window.URL.createObjectURL(new Blob([req.response], {type: contenttype}));
-    a.href = url;
-    a.download = filename;
+    var URL = window.URL.createObjectURL(new Blob([req.response], {type: contentType}));
+    a.href = URL;
+    a.download = fileName;
     document.body.appendChild(a);
     a.click();
-    window.URL.revokeObjectURL(url);
+    window.URL.revokeObjectURL(URL);
     a.remove();
     };
 });
@@ -426,7 +426,7 @@ It is used to perform Mail merge for nested groups in Word Document.
 | Parameter | Data Type | Description | 
 |---|---|---|
 |Template|String|It contains type of Template document.|
-|Data|String|It contatins type of Data.|
+|Data|String|It contains type of Data.|
 |FormatType|String|It contains format type to save.|
 
 ### Response information
@@ -444,9 +444,9 @@ Content-Type: data:attachment/doc
 URL: http://js.syncfusion.com/demos/ejServices/api/DocIO/ExecuteNestedMailmerge
 
 <script>
-var formdata;
+var formData;
 $('#generate').click(function () {
-    formdata = new FormData();
+    formData = new FormData();
     var rdButtonReport = document.getElementById("rdButtonReport").checked;
     var rdButtonLetter = document.getElementById("rdButtonLetter").checked;
     var template;
@@ -454,56 +454,56 @@ $('#generate').click(function () {
         template = "Report";
     else
         template = "Letter";
-    formdata.append("Template", template);
+    formData.append("Template", template);
     var rdImplicit = document.getElementById("rdImplicit").checked;
-    var rdExplict = document.getElementById("rdExplict").checked;
+    var rdExplicit = document.getElementById("rdExplict").checked;
     if(rdImplicit)
-        formdata.append("Data", "Implicit");
-    else if(rdExplict)
-        formdata.append("Data", "Explict");
+        formData.append("Data", "Implicit");
+    else if(rdExplicit)
+        formData.append("Data", "Explict");
     var rdButtonDoc = document.getElementById("rdButtonDoc").checked;
     var rdButtonDocx = document.getElementById("rdButtonDocx").checked;
     var rdButtonWordML = document.getElementById("rdButtonWordML").checked;
     var rdButtonPdf = document.getElementById("rdButtonPdf").checked;
-    var contenttype;
-    var filename;
+    var contentType;
+    var fileName;
     if (rdButtonDoc) {
-        formdata.append("FormatType", "WordDoc");
-        contenttype = "data:attachment/doc";
-        filename = "Sample.doc";
+        formData.append("FormatType", "WordDoc");
+        contentType = "data:attachment/doc";
+        fileName = "Sample.doc";
     }
     else if(rdButtonDocx)
     {
-        formdata.append("FormatType", "WordDocx");
-        contenttype = "data:attachment/docx";
-        filename = "Sample.docx";
+        formData.append("FormatType", "WordDocx");
+        contentType = "data:attachment/docx";
+        fileName = "Sample.docx";
     }
     else if(rdButtonWordML)
     {
-        formdata.append("FormatType", "WordML");
-        contenttype = "data:attachment/xml";
-        filename = "Sample.xml";
+        formData.append("FormatType", "WordML");
+        contentType = "data:attachment/xml";
+        fileName = "Sample.xml";
     }
     else
     {
-        formdata.append("FormatType", "Pdf");
-        contenttype = "data:attachment/pdf";
-        filename = "Sample.pdf";
+        formData.append("FormatType", "Pdf");
+        contentType = "data:attachment/pdf";
+        fileName = "Sample.pdf";
     }
     var req = new XMLHttpRequest();
     req.open("POST", window.baseurl + "api/DocIO/ExecuteNestedMailmerge", true);
-    req.send(formdata);
+    req.send(formData);
     req.responseType = "blob";
     req.onload = function (event) {
     if (req.response != null && navigator.msSaveBlob)
-        return navigator.msSaveBlob(new Blob([req.response], { type: contenttype}), filename);
+        return navigator.msSaveBlob(new Blob([req.response], { type: contentType}), fileName);
     var a = document.createElement('a');
-    var url = window.URL.createObjectURL(new Blob([req.response], {type: contenttype}));
-    a.href = url;
-    a.download = filename;
+    var URL = window.URL.createObjectURL(new Blob([req.response], {type: contentType}));
+    a.href = URL;
+    a.download = fileName;
     document.body.appendChild(a);
     a.click();
-    window.URL.revokeObjectURL(url);
+    window.URL.revokeObjectURL(URL);
     a.remove();
     };
 });
