@@ -16,7 +16,7 @@ Resources are represented by staff, equipment and materials etc. In Gantt contro
 
 Resource collection contains details about the resources that are used in the project. Resources are `JSON` object that contains id and name of the resources and this collection is mapped to the Gantt control using `resources` property.
 Id and name field of the resources are mapped by using the `resourceIdMapping` and `resourceNameMapping` properties.
-The following code snippets shows resource collection object and how it assinged to Gantt control.
+The following code snippets shows resource collection object and how it assigned to Gantt control.
 
 {% highlight javascript %}
 
@@ -92,7 +92,7 @@ The below code snippets shows how to assign resource unit value.
         resourceInfoMapping: "resourceId",
         resourceIdMapping: "resourceId",
         resourceNameMapping: "resourceName",
-        resourceUnitMapping: "unit", //Field name wihich contains resource unit value in data source
+        resourceUnitMapping: "unit", //Field name which contains resource unit value in data source
         dataSource: dataSource
     });
 

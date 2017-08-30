@@ -19,7 +19,7 @@ Holidays in Gantt control is used to highlight the non-working days in Gantt con
         holidays: [{
             day: "2/03/2014",
             label: " Public holiday",
-            background: "yellowgreen "
+            background: "yellow"
         }]
     });
 

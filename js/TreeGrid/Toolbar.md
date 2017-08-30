@@ -34,7 +34,7 @@ Using TreeGrid default toolbar items we can perform below operations.
 
 We can enable TreeGrid toolbar by using below code example:
 {% highlight js %}
-    $("#TreeGridcontainer").ejTreeGrid(
+    $("#TreeGridContainer").ejTreeGrid(
     //...
     toolbarSettings: {
         showToolbar: true,

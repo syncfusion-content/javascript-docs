@@ -195,7 +195,7 @@ $(function() {
         url: "http://js.syncfusion.com/demos/ejServices/Wcf/TreeGridGantt/TreeGantt.svc/SelfReferenceDatas"
     });
     $("#TreeGridContainer").ejTreeGrid({
-        enableLoadonDemand: true,
+        enableLoadOnDemand: true,
         //...         
     })
 });
