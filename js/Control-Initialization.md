@@ -380,5 +380,10 @@ With this tool, you can create a single file that packs only the required script
 
 For more reference on usage of this tool, please click [here](/js/custom-script-generator).
 
-After downloading the necessary files from this tool, refer this [section](/js/control-initialization#html-file-creation) for HTML File creation and referrence of scripts and css in it.
+After downloading the necessary files from this tool, the folder structure will look like below and you need to create a HTML file inside it.
+![](/js/Control-Initialization_images/Control-Initialization_img1.png) 
+
+The folder will contain the scripts and content folder by default which will hold the required scripts and css respectively. Inside the HTML file, refer the scripts and css from the downloaded folders.
+
+Refer this [section](/js/control-initialization#adding-reference-to-the-required-style-sheets) for css reference inside the HTML file and this [section](/js/control-initialization#adding-reference-to-the-required-javascript-files) for script refernce inside the HTML file. After referring the scripts and css files, refer this [section](/js/control-initialization#adding-syncfusion-widget-into-your-html-page) to create the Syncfusion widget.
 
