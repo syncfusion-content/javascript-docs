@@ -65,7 +65,7 @@ We can trim, wrap and wrapAndTrim to the chart title using textOverflow property
 
             title: {
                 text: 'Efficiency of oil-fired power production ',
-                 //To enable the title trim, wrap and wrapandtrim
+                 //To enable the title trim, wrap and wrapAndTrim
                 enableTrim: true,
                  //Setting maximum width to the title
                 maximumWidth: 150,

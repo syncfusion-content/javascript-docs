@@ -253,7 +253,7 @@ By using the [`macdType`](../api/ejchart#members:indicators-macdtype) enumeratio
              //Initializing Indicators    
               indicators: [{
                    type: "macd", 
-                   //Set macd draw type
+                   //Set MACD draw type
                    macdType: "histogram", 
                    //  ...
 	         }],

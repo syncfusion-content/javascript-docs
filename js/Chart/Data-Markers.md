@@ -563,7 +563,7 @@ The following code example shows how to enable smart labels,
                	       border: { width: 2, color: 'white' },
 		               type: 'pie',
                        labelPosition: "outsideExtended",
-                       //Display data label outside position and enable smartlabels
+                       //Display data label outside position and enable smartLabels
                        enableSmartLabels: true
                  }],
            // ...
