@@ -334,7 +334,7 @@ $("#container").ejChart({
 
 ## Binding label from the datasource
 
-You can bind the text value to the datalabel from the datasource and then you need to map the text value field with the **textMappingName** properties respectively.
+You can bind the text value to the datalabel from the datasource and then you need to map the text value field with the [`textMappingName`](../api/ejchart#members:commonseriesoptions-marker-datalabel-textmappingname) properties respectively.
 
 {% highlight javascript %}
 
@@ -343,22 +343,22 @@ var chartData = [
           { month: 'Jan', sales: 35, Text: "January" },  
           { month: 'Feb', sales: 28, Text: "February" }, 
           //... 
-        ]; 
+]; 
 
-     $("#container").ejChart({
-            // ...      
-            series: [{
-                // ...
-                marker: {
-                        dataLabel: {
-                      //Mapping the text name 
-                            visible : true,
-                            textMappingName : "Text",                            
-                        }
-                    }
-            }],
-           // ...
-    });
+$("#container").ejChart({
+    // ...      
+        series: [{
+            // ...
+            marker: {
+                dataLabel: {
+                    //Mapping the text name 
+                    visible : true,
+                    textMappingName : "Text",                            
+                }
+            }
+        }],
+        // ...
+});
 
 
 {% endhighlight %}
@@ -369,7 +369,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/vkziijnc)
 
 ## Binding fill color to the points from the datasource
 
-You can bind the color value to the points from the datasource and then you need to map the color value field to the **pointColorMappingName** property respectively.
+You can bind the color value to the points from the datasource and then you need to map the color value field to the [`pointColorMappingName`](../api/ejchart#members:commonseriesoptions-pointcolormappingname) property respectively.
 
 {% highlight javascript %}
 
@@ -378,17 +378,17 @@ var chartData = [
           { month: 'Jan', sales: 35, color: "red" },  
           { month: 'Feb', sales: 28, color: "blue" }, 
           //... 
-        ]; 
+]; 
 
-     $("#container").ejChart({
-            // ...      
-            series: [{
-                // ...
-                //Mapping the color values to the points
-                pointColorMappingName:"color",                
-            }],
-           // ...
-    });
+$("#container").ejChart({
+    // ...      
+        series: [{
+            // ...
+            //Mapping the color values to the points
+            pointColorMappingName:"color",                
+        }],
+    // ...
+});
 
 
 {% endhighlight %}
