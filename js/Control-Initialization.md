@@ -14,6 +14,7 @@ The Syncfusion controls can be initialized by using either of the following ways
 * Manual reference of scripts and style sheets in a HTML page.
 * Using Syncfusion NuGet Package in Visual Studio for scripts and style sheet reference.
 * Using CDN link for script and style sheet reference.
+* Using Custom Script Generator (CSG) for specific scripts and style sheet reference.
 
 ## Manual reference of scripts and style sheets in a HTML page
 
@@ -372,3 +373,12 @@ Open your HTML page in the web browser and the screen will display the DatePicke
 ![](/js/Control-Initialization_images/Control-Initialization_img9.png) 
 
 The DatePicker control is rendered with its default appearance now. You can then use its various available properties to set its value and also make use of its available events to trigger when necessary.
+
+## Using Custom Script Generator (CSG) for specific scripts and style sheet reference
+
+With this tool, you can create a single file that packs only the required scripts and css files. Both minified and unminified versions of the scripts and css can be downloaded from this tool.
+
+For more reference on usage of this tool, please click [here](/js/custom-script-generator).
+
+After downloading the necessary files from this tool, refer this [section](/js/control-initialization#html-file-creation) for HTML File creation and referrence of scripts and css in it.
+
