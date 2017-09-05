@@ -181,7 +181,7 @@ Stripline [`zIndex`](../api/ejchart#members:primaryyaxis-stripline-zindex) prope
                // ...
                 stripLine: [{
                         //Change stripLine zIndex
-                        zindex: 'over',
+                        zIndex: 'over',
                         // ...
                        }],
            },
