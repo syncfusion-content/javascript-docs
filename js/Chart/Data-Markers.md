@@ -366,6 +366,36 @@ var chartData = [
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/vkziijnc)
 
 
+
+## Binding fill color to the points from the datasource
+
+You can bind the color value to the points from the datasource and then you need to map the color value field to the **pointColorMappingName** property respectively.
+
+{% highlight javascript %}
+
+//data source for chart with fill color
+var chartData = [ 
+          { month: 'Jan', sales: 35, color: "red" },  
+          { month: 'Feb', sales: 28, color: "blue" }, 
+          //... 
+        ]; 
+
+     $("#container").ejChart({
+            // ...      
+            series: [{
+                // ...
+                //Mapping the color values to the points
+                pointColorMappingName:"color",                
+            }],
+           // ...
+    });
+
+
+{% endhighlight %}
+
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/ham4a1b2)
+
+
 ## Contrast Color for the data label
 
  
