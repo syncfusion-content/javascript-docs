@@ -180,13 +180,13 @@ public void ExportChart(string Data, string ChartModel)
             JavaScriptSerializer serializer = new JavaScriptSerializer();
             IEnumerable div = (IEnumerable)serializer.Deserialize(ChartModel, typeof(IEnumerable));
             ChartProperties chartProp = new ChartProperties();
-            foreach (KeyValuePair<string, object> ds in div)
+            foreach (KeyValuePair<string, object> d in div)
             {
-                var property = chartProp.GetType().GetProperty(ds.Key, BindingFlags.Instance | BindingFlags.Public | BindingFlags.IgnoreCase);
+                var property = chartProp.GetType().GetProperty(d.Key, BindingFlags.Instance | BindingFlags.Public | BindingFlags.IgnoreCase);
                 if (property != null)
                 {
                     Type type = property.PropertyType;
-                    string serialize = serializer.Serialize(ds.Value);
+                    string serialize = serializer.Serialize(d.Value);
                     object value = serializer.Deserialize(serialize, type);
                    property.SetValue(chartProp, value, null);
                 }
