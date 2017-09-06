@@ -456,7 +456,7 @@ To render a 100% Stacked Area Chart, set the [`type`](../api/ejchart.html#member
 
 ## Stacked Spline Area Chart
 
-To render a Stacked Spline Area Chart, set the [`type`](../api/ejchart.html#members:series-type) as **"stackingsplinearea"** in the chart series. 
+To render a Stacked Spline Area Chart, set the [`type`](../api/ejchart.html#members:series-type) as **"stackingSplineArea"** in the chart series. 
 
 {% highlight javascript %}
 
@@ -466,7 +466,7 @@ To render a Stacked Spline Area Chart, set the [`type`](../api/ejchart.html#memb
              // ...
              series: [{
                  //Change series type 
-                 type: 'stackingsplinearea',                         
+                 type: 'stackingSplineArea',                         
                  //  ...         
             }],
 
@@ -482,7 +482,7 @@ To render a Stacked Spline Area Chart, set the [`type`](../api/ejchart.html#memb
 
 ## 100% Stacked Spline Area Chart  
 
-To render a 100% Stacked Spline Area Chart, set the [`type`](../api/ejchart.html#members:series-type) as **"stackingsplinearea100"** in the chart series. 
+To render a 100% Stacked Spline Area Chart, set the [`type`](../api/ejchart.html#members:series-type) as **"stackingSplineArea100"** in the chart series. 
 
 {% highlight javascript %}
 
@@ -492,7 +492,7 @@ To render a 100% Stacked Spline Area Chart, set the [`type`](../api/ejchart.html
            //  ...        
             series: [{
                  //Change type 
-                 type: 'stackingsplinearea100',                          
+                 type: 'stackingSplineArea100',                          
                  //  ...       
             }],
            //  ...
@@ -2565,7 +2565,7 @@ To customize the error bar cap *visibility, length, width* and *fill* color, you
 
 ## Box and Whisker Chart 
 
-To render a Box and Whisker Chart, set the series [`type`](../api/ejchart.html#members:series-type) as **"boxandwhisker"**.
+To render a Box and Whisker Chart, set the series [`type`](../api/ejchart.html#members:series-type) as **"boxAndWhisker"**.
 Box and Whisker chart requires 2 fields (x and y) to plot a segment. 
 The field y requires n number of data or it should  contains minimum of five values to plot a segment.
 
@@ -2583,7 +2583,7 @@ The field y requires n number of data or it should  contains minimum of five val
                              { x: "Finance", y: [26,27,28,30,32,34,35,37,35,37,45]},
                              { x: "R&D", y: [26,27,29,32,34,35,36,37,38,39,41,43,58] }
                            ],                    	
-	                type: 'boxandwhisker',                     
+	                type: 'boxAndWhisker',                     
             }] 
             //...         
         });
@@ -2662,7 +2662,7 @@ Outlier symbol, width and height can be  customized using outlierSettings throug
 
 ## Pie Of Pie Chart
 
-To render the pie of pie chart, set the series [`type`](../api/ejchart.html#members:series-type) as **pieofpie**. Pie of pie chart is used for displaying the data of a pie slice as another pie chart. The values in the second pie is displayed based on the **splitMode**  property.
+To render the pie of pie chart, set the series [`type`](../api/ejchart.html#members:series-type) as **pieOfPie**. Pie of pie chart is used for displaying the data of a pie slice as another pie chart. The values in the second pie is displayed based on the **splitMode**  property.
 
 {% highlight javascript %}
 
@@ -2678,7 +2678,7 @@ series: [{
            {x: 'Russia', y: 2, text: '2%'},
 	    {x: 'Miscellaneous', y: 1, text: '1%'}
            ],	
-	type: 'pieofpie',
+	type: 'pieOfPie',
  	splitValue:"10"
              ]   //..       
 });
