@@ -233,22 +233,31 @@ You can find the online demo sample for binding self-referential data [here](htt
 
 ## Remote data
 
-It is possible to load remote data in Gantt by using ej.DataManager. You can assign the web service data as an ej.DataManager instance to the datasource property. The following example explains how to load the remote data in Gantt.
+### OData
+
+OData is a standardized protocol for creating and consuming data. You can provide the OData service URL directly to the ej.DataManager class and then you can assign it to Gantt dataSource.
+
+The following code example describes the above behavior.
 
 {% highlight javascript %}
+
 $(function() {
 
-    var dataManger = ej.DataManager({
-
-        url: "http://mvc.syncfusion.com/Services/Northwnd.svc/Orders",
-
-        offline: true
-
-    });
+    var dataManger = ej.DataManager("http://js.syncfusion.com/demos/ejServices/Wcf/TreeGridGantt/TreeGantt.svc/SelfReferenceDatas");
 
     $("#gantt").ejGantt({
 
         dataSource: dataManger,
+
+        taskIdMapping: "TaskID",
+
+        taskNameMapping: "TaskName",
+
+        parentTaskIdMapping: "ParentID",
+
+        startDateMapping: "StartDate",
+
+        endDateMapping: "EndDate",
 
         //...
 
@@ -257,4 +266,60 @@ $(function() {
 });
 
 {% endhighlight %}
+
+The following output is displayed for the code above,
+
+![](Data-Binding_images/Data-Binding_img3.png)
+![](Data-Binding_images/Data-Binding_img4.png)
+
+### WebAPI
+
+You can bind WebApi service data to Gantt. The data from WebApi service must be returned as object that has property Items with its value as datasource and this object can be pass to dataSource property of Gantt control.
+
+The following code example describes the above behavior.
+
+{% highlight javascript %}
+
+<div id="GanttContainer"></div>
+
+$(function() {
+    var dataManger = ej.DataManager("api/Home/GetGanttData");
+    $("#GanttContainer").ejGantt({
+        dataSource: dataManger,
+        taskIdMapping: "TaskID",
+        taskNameMapping: "TaskName",
+        parentTaskIdMapping: "ParentID",
+        startDateMapping: "StartDate",
+        endDateMapping: "EndDate",
+        //...
+    });
+});
+
+{% endhighlight %}
+
+{% highlight cs %}
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Net;
+using System.Net.Http;
+using System.Web.Http;
+using GanttExportService.Models;
+namespace GanttExportService {
+    public class HomeController: ApiController {
+        GanttDataEntities data = new GanttDataEntities();
+        public object GetGanttData() {
+            var Data = data.Table1.ToList();
+            return Data;
+        }
+    }
+}
+
+{% endhighlight %}
+
+The following output is displayed as a result of the above code example.
+
+![](Data-Binding_images/Data-Binding_img5.png)
+![](Data-Binding_images/Data-Binding_img6.png)
 
