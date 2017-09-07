@@ -168,8 +168,8 @@ You can add your own function to Spreadsheet at initial load with [`customFormul
     });
 
     function customTotal(args) {
-        var param1, param2, param3, value, xlObj = $('#Spreadsheet').data("ejSpreadsheet"),
-        argument = xlObj.getValueFromFormulaArg(args);
+        var param1, param2, param3, value, excelObj = $('#Spreadsheet').data("ejSpreadsheet"),
+        argument = excelObj.getValueFromFormulaArg(args);
         param1 = argument["arg1"];
         param2 = argument["arg2"];
         param3 = argument["arg3"];
@@ -217,8 +217,8 @@ You can add your own function to Spreadsheet using [`addCustomFormula`](https://
     }
 
     function customTotal(args) {
-        var param1, param2, param3, value, xlObj = $('#Spreadsheet').data("ejSpreadsheet"),
-        argument = xlObj.getValueFromFormulaArg(args);
+        var param1, param2, param3, value, excelObj = $('#Spreadsheet').data("ejSpreadsheet"),
+        argument = excelObj.getValueFromFormulaArg(args);
         param1 = argument["arg1"];
         param2 = argument["arg2"];
         param3 = argument["arg3"];

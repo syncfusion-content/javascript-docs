@@ -446,7 +446,7 @@ The below given example explains the behavior of grouping with JSON array bindin
 	        skill: "Lotus root",
 	        category: "Bulb and Stem"
 	    }, {
-	        skill: "Nopal",
+	        skill: "Parsnip",
 	        category: "Bulb and Stem"
 	    }, {
 	        skill: "Onion",

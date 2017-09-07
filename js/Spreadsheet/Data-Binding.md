@@ -296,7 +296,7 @@ $(function () {
             },
             {
                 cells: [
-                { value: "Casual Shoes", comment: { value: "Casual Footwears with wide variety of colors." } },
+                { value: "Casual Shoes", comment: { value: "Casual FootWears with wide variety of colors." } },
                 { value: "20", index: 2, format: { type: "currency" } },
                 { value: "=B2*C2" },
                 { value: "OUT OF STOCK" },
@@ -315,7 +315,7 @@ $(function () {
             },
             {
                 cells: [
-                { value: "Formal Shoes", comment: { value: "Formal Footwears with wide range of sizes." } },
+                { value: "Formal Shoes", comment: { value: "Formal FootWears with wide range of sizes." } },
                 { value: "20" },
                 { value: "15", format: { type: "currency" } },
                 { value: "=B4*C4" },

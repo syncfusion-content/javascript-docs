@@ -48,12 +48,12 @@ $(function () {
     $("#btnPrintSel").ejButton({ showRoundedCorner: true, click: "printSelClick"});
 });
 function printClick(args) {
-    var xlObj = $("#Spreadsheet").ejSpreadsheet("instance");
-    xlObj.XLPrint.printSheet();
+    var excelObj = $("#Spreadsheet").ejSpreadsheet("instance");
+    excelObj.XLPrint.printSheet();
 }
 function printSelClick(args) {
-    var xlObj = $("#Spreadsheet").ejSpreadsheet("instance");
-    xlObj.XLPrint.printSelection();
+    var excelObj = $("#Spreadsheet").ejSpreadsheet("instance");
+    excelObj.XLPrint.printSelection();
 }
 {% endhighlight %}
 

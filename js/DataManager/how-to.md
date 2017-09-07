@@ -26,7 +26,7 @@ Create a sample using ASP.NET Web Services
         public DataTable Get()
         {
             SqlCommand getData = new SqlCommand();
-            getData.CommandText = "usp_DEV_ChangeLog_Select"; // Stored procedure for retrieve data from suppliers table
+            getData.CommandText = "USP_DEV_ChangeLog_Select"; // Stored procedure for retrieve data from suppliers table
             getData.CommandType = CommandType.StoredProcedure;
             getData.Connection = con;
             if (con.State != ConnectionState.Open)
@@ -52,14 +52,14 @@ In the above code snippet, we have created web services by using the ASP.NET web
         CRUD_Service.WebService1 service = new CRUD_Service.WebService1();
         var sqlData = service.Get();   // Get data from web services
         DataResult result = new DataResult();
-        List<EditableCustomer> data = (from ord in sqlData.AsEnumerable() // Perform skip take for on demand load paging
+        List<EditableCustomer> data = (from onDemand in sqlData.AsEnumerable() // Perform skip take for on demand load paging
                                         select new EditableCustomer
                                         {
-                                            SupplierID = ord.ItemArray[0].ToString(),
-                                            CompanyName = ord.ItemArray[1].ToString(),
-                                            City = ord.ItemArray[5].ToString(),
-                                            PostalCode = ord.ItemArray[7].ToString(),
-                                            Country = ord.ItemArray[8].ToString()
+                                            SupplierID = onDemand.ItemArray[0].ToString(),
+                                            CompanyName = onDemand.ItemArray[1].ToString(),
+                                            City = onDemand.ItemArray[5].ToString(),
+                                            PostalCode = onDemand.ItemArray[7].ToString(),
+                                            Country = onDemand.ItemArray[8].ToString()
                                         }).ToList();
 
         con.Close();
@@ -156,7 +156,7 @@ To request the web service without parameter using DataManager, please refer the
     var data1 = ej.DataManager({ url: "/Order.svc/Orders" });
 
                 var query = new ej.Query();
-                var dataObj = data1.executeQuery(query); //Request the webservice
+                var dataObj = data1.executeQuery(query); //Request the webService
                 dataObj.done(function (e) {
 
                     $("#Grid").ejGrid({

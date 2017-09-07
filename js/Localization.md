@@ -287,9 +287,9 @@ Now define the **locale** property for the Grid control with the appropriate **c
             UnGroup: "Klicken Sie hier, um die Gruppierung aufheben"
         };
         $(function () {
-            var localServ = "http://mvc.syncfusion.com/Services/Northwnd.svc/Orders";
+            var localService = "http://mvc.syncfusion.com/Services/Northwnd.svc/Orders";
             var dataManger = ej.DataManager({
-                url: localServ
+                url: localService
             });
 
             $("#Grid").ejGrid({
@@ -382,9 +382,9 @@ N>   In the below example, copy the culture files of **de-DE** and **es-ES** int
 
         $(function () {
 
-            var localServ = "http://mvc.syncfusion.com/Services/Northwnd.svc/Orders";
+            var localService = "http://mvc.syncfusion.com/Services/Northwnd.svc/Orders";
             var dataManger = ej.DataManager({
-                url: localServ
+                url: localService
             });
 
             // declaration of ejGrid
