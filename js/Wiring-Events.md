@@ -38,7 +38,7 @@ $("#myDate").ejDatePicker("model.destroy" , function () {
 // Second way
 $("jquery-selector").on("ej-plugin-nameEventName", "eventhandler");
 //Example
-$("#myDate").on("ejDatePickerdestroy", function () {
+$("#myDate").on("ejDatePickerDestroy", function () {
       // event handler
 }); 
 

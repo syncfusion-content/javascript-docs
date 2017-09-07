@@ -220,7 +220,7 @@ The following code example depicts the way to bind data to the **Rotator** widge
       { text: "wheat", url: "../images/rotator/wheat.jpg" },
       { text: "night", url: "../images/rotator/night.jpg" }];
     
-    angular.module('rotatApp', ['ejangular']).controller('RotatorCtrl', function ($scope) {
+    angular.module('rotatorApp', ['ejangular']).controller('RotatorCtrl', function ($scope) {
         $scope.dataList = list;
     });
 

@@ -979,9 +979,9 @@ public static void Crud(List<object> added, List<object> changed, List<object> d
     }
     if (deleted != null && deleted.Count > 0)
     {
-        foreach (var del in deleted)
+        foreach (var delete in deleted)
         {
-            ScheduleAppointmentsObjData value = GetObjectValue(del as Dictionary<string, object>);
+            ScheduleAppointmentsObjData value = GetObjectValue(delete as Dictionary<string, object>);
             ScheduleAppointmentsObjData removeApp = GetAllRecords().Where(c => c.ID == value.ID).FirstOrDefault();
             if (removeApp != null)
                 GetAllRecords().Remove(removeApp);

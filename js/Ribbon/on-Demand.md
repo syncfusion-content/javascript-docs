@@ -31,7 +31,7 @@ Set [`enableOnDemand`](https://help.syncfusion.com/api/js/ejribbon#members:enabl
                             <div class="e-accuser e-newpageicon"></div>
                             <div class="e-userCon">
                                 <div>user</div>
-                                <div>xyz@syncfusion.com</div>
+                                <div>any@syncfusion.com</div>
                             </div>
                         </div>
                     </div>
@@ -196,7 +196,7 @@ While using initially collapsible ribbon with [`enableOnDemand`](https://help.sy
                             <div class="e-accuser e-newpageicon"></div>
                             <div class="e-userCon">
                                 <div>user</div>
-                                <div>xyz@syncfusion.com</div>
+                                <div>any@syncfusion.com</div>
                             </div>
                         </div>
                     </div>

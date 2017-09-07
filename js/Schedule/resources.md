@@ -378,7 +378,7 @@ $(function() {
                 ownerId: 2
             }, {
                 Id: 101,
-                Subject: "Discovery of Exo-planets",
+                Subject: "Discovery of Exoplanets",
                 StartTime: new Date(2015, 04, 07, 6, 00),
                 EndTime: new Date(2015, 04, 07, 9, 30),
                 ownerId: 1

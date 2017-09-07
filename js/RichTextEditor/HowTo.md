@@ -30,7 +30,7 @@ To use web fonts in EJ RTE, it is not needed for the web fonts to be present in 
          var fonts = [
                 { text: "Segoe UI", value: "Segoe UI" },
                 //Added from Google web fonts
-                { text: "Tauri", value: "Tauri" },
+                { text: "Noto Sans", value: "Noto Sans" },
                 { text: "Roboto", value: "Roboto" },
                 { text: "Great vibes", value: "Great Vibes,cursive" }
          ];
