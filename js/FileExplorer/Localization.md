@@ -27,7 +27,7 @@ The below table lists out the keys with corresponding texts in English culture.
 
             Refresh: "Refresh",
 
-            Addressbar: "Address bar",
+            AddressBar: "Address bar",
 
             Upload: "Upload",
 
@@ -47,7 +47,7 @@ The below table lists out the keys with corresponding texts in English culture.
 
             Details: "Details",
 
-            Searchbar: "Search bar",
+            SearchBar: "Search bar",
 
             Open: "Open",
 
@@ -211,7 +211,7 @@ You can customize built-in text and messages based on your culture. The below ex
 
             Refresh: "erfrischen",
 
-            Addressbar: "Adressleiste",
+            AddressBar: "Adressleiste",
 
             Upload: "hochladen",
 
@@ -231,7 +231,7 @@ You can customize built-in text and messages based on your culture. The below ex
 
             Details: "Einzelheiten",
 
-            Searchbar: "Searchbar",
+            SearchBar: "Search bar",
 
             Open: "geöffnet",
 

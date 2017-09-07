@@ -130,7 +130,7 @@ Add the following code example in **HTML** file to configure Tree View.
         </ul>
     </li>
     <li>
-        Harddisk
+        Hard Disk
         <ul>
             <li id="chart" class="_child">Seagate </li>
         </ul>

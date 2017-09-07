@@ -115,7 +115,7 @@ The cells can be customized with the following code example.
             {{"{{"}}else view != 'month' && resource.text == 'Party Hall-B' && date.getDay() == 5 && date.getHours() == 12{{}}}}
                 <div style="background-color:goldenrod">Conf.</div>
             {{"{{"}}else date.getDate() == 10 && date.getMonth() == 11{{}}}}
-                <div style="background-color:palegreen">Day Spl</div>
+                <div style="background-color:palegreen">Day Special</div>
             {{"{{"}}else date.getDate() == 25 && date.getMonth() == 11{{}}}}
                 <div style="background-color:sandybrown">Christmas</div>
             {{"{{"}}/if{{}}}}

@@ -704,7 +704,7 @@ This can be achieved, by adding the attributes directly to the input element if 
             { id: "bk4", text: "Discover", tooltip: { title: "Discover" } },
             { id: "bk5", text: "Dazzler", tooltip: { title: "Dazzler" } },
             { id: "bk6", text: "Flame", tooltip: { title: "Flame" } },
-            { id: "bk7", text: "Fazzer", tooltip: { title: "Fazzer" } },
+            { id: "bk7", text: "Fazer", tooltip: { title: "Fazer" } },
             { id: "bk8", text: "FZ-S", tooltip: { title: "FZ-S" } },
             { id: "bk9", text: "Pulsar", tooltip: { title: "Pulsar" } },
             { id: "bk10", text: "Shine", tooltip: { title: "Shine" } },

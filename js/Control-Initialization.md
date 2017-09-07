@@ -385,5 +385,5 @@ After downloading the necessary files from this tool, the folder structure will 
 
 The folder will contain the scripts and content folder by default which will hold the required scripts and css respectively. Inside the HTML file, refer the scripts and css from the downloaded folders.
 
-Refer this [section](/js/control-initialization#adding-reference-to-the-required-style-sheets) for css reference inside the HTML file and this [section](/js/control-initialization#adding-reference-to-the-required-javascript-files) for script refernce inside the HTML file. After referring the scripts and css files, refer this [section](/js/control-initialization#adding-syncfusion-widget-into-your-html-page) to create the Syncfusion widget.
+Refer this [section](/js/control-initialization#adding-reference-to-the-required-style-sheets) for css reference inside the HTML file and this [section](/js/control-initialization#adding-reference-to-the-required-javascript-files) for script reference inside the HTML file. After referring the scripts and css files, refer this [section](/js/control-initialization#adding-syncfusion-widget-into-your-html-page) to create the Syncfusion widget.
 

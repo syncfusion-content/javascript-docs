@@ -230,9 +230,9 @@ The following code example describes the above behavior.
 
 <div id="SpellCheck" contenteditable="true">
 
-It is a concept vehicle with Liuid Silver body colour, 20-inch wheels, fabric foding roof, electrically-controlled hood, 4-cylinder 2.0 TDI engine rated 204 PS (150 kW; 201 hp)and 400  (295.02 lbf ft), diesel particulate filter and 
-Bluetec emission control system, quattro permanent four-wheel drve system,Audi S tronic dual-clutch gearbox, McPherson-strut front axle and a four-link rear axle, Audi drive select system with 3 modes (dynamic, sport, efficiency),
-MMI control panel with touch pad and dual-view technology, sound system with the proinent extending tweeters.
+It is a concept vehicle with Liquid Silver body color, 20-inch wheels, fabric folding roof, electrically-controlled hood, 4-cylinder 2.0 TDI engine rated 204 PS (150 kW; 201 hp)and 400  (295.02 lbf ft), diesel particulate filter and 
+BlueTec emission control system, quattro permanent four-wheel drive system,Audi S tronic dual-clutch gearbox, McPherson-strut front axle and a four-link rear axle, Audi drive select system with 3 modes (dynamic, sport, efficiency),
+MMI control panel with touch pad and dual-view technology, sound system with the prominent extending tweeters.
 
 </div>
 <script>
@@ -267,9 +267,9 @@ The following code example describes the above behavior.
 
 <div id="SpellCheck" contenteditable="true">
 
-It is a concept vehicle with Liuid Silver body colour, 20-inch wheels, fabric foding roof, electrically-controlled hood, 4-cylinder 2.0 TDI engine rated 204 PS (150 kW; 201 hp)and 400  (295.02 lbf ft), diesel particulate filter and 
-Bluetec emission control system, quattro permanent four-wheel drve system,Audi S tronic dual-clutch gearbox, McPherson-strut front axle and a four-link rear axle, Audi drive select system with 3 modes (dynamic, sport, efficiency),
-MMI control panel with touch pad and dual-view technology, sound system with the proinent extending tweeters.
+It is a concept vehicle with Liquid Silver body color, 20-inch wheels, fabric folding roof, electrically-controlled hood, 4-cylinder 2.0 TDI engine rated 204 PS (150 kW; 201 hp)and 400  (295.02 lbf ft), diesel particulate filter and 
+BlueTec emission control system, quattro permanent four-wheel drive system,Audi S tronic dual-clutch gearbox, McPherson-strut front axle and a four-link rear axle, Audi drive select system with 3 modes (dynamic, sport, efficiency),
+MMI control panel with touch pad and dual-view technology, sound system with the prominent extending tweeters.
 
 </div>
 <script>
@@ -301,9 +301,9 @@ The following code example describes the above behavior.
 
 <div id="SpellCheck" contenteditable="true">
 
-It is a concept vehicle with Liuid Silver body colour, 20-inch wheels, fabric foding roof, electrically-controlled hood, 4-cylinder 2.0 TDI engine rated 204 PS (150 kW; 201 hp)and 400  (295.02 lbf ft), diesel particulate filter and 
-Bluetec emission control system, quattro permanent four-wheel drve system,Audi S tronic dual-clutch gearbox, McPherson-strut front axle and a four-link rear axle, Audi drive select system with 3 modes (dynamic, sport, efficiency),
-MMI control panel with touch pad and dual-view technology, sound system with the proinent extending tweeters.
+It is a concept vehicle with Liquid Silver body color, 20-inch wheels, fabric folding roof, electrically-controlled hood, 4-cylinder 2.0 TDI engine rated 204 PS (150 kW; 201 hp)and 400  (295.02 lbf ft), diesel particulate filter and 
+BlueTec emission control system, quattro permanent four-wheel drive system,Audi S tronic dual-clutch gearbox, McPherson-strut front axle and a four-link rear axle, Audi drive select system with 3 modes (dynamic, sport, efficiency),
+MMI control panel with touch pad and dual-view technology, sound system with the prominent extending tweeters.
 
 </div>
 <script>

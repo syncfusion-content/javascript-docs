@@ -17,7 +17,7 @@ Create the UL elements to render both the parent and the child ListBox widget as
 {% highlight html %}
 
         <style>
-         .parentlistbox, .childlistbox {
+         .e-parent-listbox, .childlistbox {
              padding: 10px;
              float: left;
          }

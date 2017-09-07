@@ -83,7 +83,7 @@ The following code example illustrates this,
 {% highlight c# %}
 
         [HttpPost]
-        public ActionResult RichTextEditorFeatures(RTEval model)
+        public ActionResult RichTextEditorFeatures(RTEVal model)
         {
             model.val = Sanitizer.GetSafeHtmlFragment(model.val);
             return View(model);

@@ -70,7 +70,7 @@ Add the following script in your code.
 {% highlight javascript %}
 
         $(function () {
-            $('#nestedRadialMenu').ejRadialMenu({ imageClass: "image-class", backImageClass: "backimage-class" });
+            $('#nestedRadialMenu').ejRadialMenu({ imageClass: "image-class", backImageClass: "back-image-class" });
         });
         
         $("#rteSampleOne").select(function (e) {
@@ -88,7 +88,7 @@ Add the following styles in your code.
             background-image: url(http://js.syncfusion.com/UG/web/Content/radial/main.png);
         }
 
-        .e-radialmenu .backimage-class {
+        .e-radialmenu .back-image-class {
             background-image: url(http://js.syncfusion.com/UG/web/Content/radial/Back_button.png);
         }
     </style>
