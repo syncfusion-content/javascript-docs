@@ -395,9 +395,9 @@ $(function() {
 // This function executes before the appointment window gets opened.
 function onAppointmentOpen(args) {
     // to add custom element in default appointment window
-    if (this._appointmentAddWindow.find(".customfields").length == 0) {
-	    var customDesign = "<tr class='customfields'><td class='e-textlabel'>Event Type</td><td><input class='app-type' type='text'/></td><td class='e-textlabel'>Event Status </td><td><input class='status' type='text'/></td></tr>";
-		$(customDesign).insertAfter(this._appointmentAddWindow.find("." + this._id + "parrow"));
+    if (this._appointmentAddWindow.find(".custom-fields").length == 0) {
+	    var customDesign = "<tr class='custom-fields'><td class='e-textlabel'>Event Type</td><td><input class='app-type' type='text'/></td><td class='e-textlabel'>Event Status </td><td><input class='status' type='text'/></td></tr>";
+		$(customDesign).insertAfter(this._appointmentAddWindow.find("." + this._id + "parow"));
     }
             
 	if (!ej.isNullOrUndefined(args.appointment)) {

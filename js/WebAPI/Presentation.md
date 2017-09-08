@@ -70,7 +70,7 @@ Content-Type: data:attachment/pptx
 URL: http://js.syncfusion.com/demos/ejServices/api/Presentation/ManipulateSmartArt
 
   $(function () {
-        $('#smartartpresentation').click(function () {
+        $('#SmartPresentation').click(function () {
 		var formData = new FormData();
 		var req = new XMLHttpRequest();
 		req.open("POST", window.baseurl + "/api/Presentation/ManipulateSmartArt", true);
@@ -179,7 +179,7 @@ Content-Type: data:attachment/pptx
 URL: http://js.syncfusion.com/demos/ejServices/api/Presentation/CreateNotes
 
   $(function () {
-        $('#notespresentation').click(function () {
+        $('#NotesPresentation').click(function () {
 		var formData = new FormData();
 		var rdButtonPPTX = document.getElementById("rdButtonPPTX").checked;
         var rdButtonPDF = document.getElementById("rdButtonPDF").checked;

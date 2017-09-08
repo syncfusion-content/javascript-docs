@@ -42,20 +42,20 @@ Add the following code in your **HTML** page.
             //first level child
             { id: 11, parentId: 1, text: "Algeria", sprite: "flag-dz" },
             { id: 12, parentId: 1, text: "Armenia", sprite: "flag-am" },
-            { id: 13, parentId: 1, text: "Bangladesh", sprite: "flag-bd" },
+            { id: 13, parentId: 1, text: "Bangladesh", sprite: "flag-bangladesh" },
             { id: 14, parentId: 1, text: "Cuba", sprite: "flag-cu" },
-            { id: 15, parentId: 2, text: "Denmark", sprite: "flag-dk" },
+            { id: 15, parentId: 2, text: "Denmark", sprite: "flag-denmark" },
             { id: 16, parentId: 2, text: "Egypt", sprite: "flag-eg" },
             { id: 17, parentId: 3, text: "Finland", sprite: "flag-fi" },
             { id: 18, parentId: 3, text: "India", sprite: "flag-in" },
             { id: 19, parentId: 3, text: "Malaysia", sprite: "flag-my" },
-            { id: 20, parentId: 4, text: "New Zealand", sprite: "flag-nz" },
+            { id: 20, parentId: 4, text: "New Zealand", sprite: "flag-new-zealand" },
             { id: 21, parentId: 4, text: "Norway", sprite: "flag-no" },
             { id: 22, parentId: 4, text: "Poland", sprite: "flag-pl" },
             { id: 23, parentId: 5, text: "Romania", sprite: "flag-ro" },
-            { id: 24, parentId: 5, text: "Singapore", sprite: "flag-sg" },
+            { id: 24, parentId: 5, text: "Singapore", sprite: "flag-singapore" },
             { id: 25, parentId: 5, text: "Thailand", sprite: "flag-th" },
-            { id: 26, parentId: 5, text: "Ukraine", sprite: "flag-ua" },            
+            { id: 26, parentId: 5, text: "Ukraine", sprite: "flag-ukraine" },            
         ];
     jQuery(function ($) {
         $("#menu").ejMenu({
@@ -91,9 +91,9 @@ Add the following code in your style section.
             width: 24px;
         }
         .flag-am {background-position: -25px 0;}
-        .flag-bd {background-position: -75px 0;}
+        .flag-bangladesh {background-position: -75px 0;}
         .flag-cu {background-position: -25px -15px;}
-        .flag-dk {background-position: -50px -15px;}
+        .flag-denmark {background-position: -50px -15px;}
         .flag-dz {background-position: -75px -15px;}
         .flag-eg {background-position: -125px -15px;}
         .flag-fi {background-position: -25px -30px;}
@@ -101,12 +101,12 @@ Add the following code in your style section.
         .flag-in {background-position: -125px -30px;}
         .flag-my {background-position: -25px -45px;}
         .flag-no {background-position: -75px -45px;}
-        .flag-nz {background-position: -100px -45px;}
+        .flag-new-zealand {background-position: -100px -45px;}
         .flag-pl {background-position: -125px -45px;}
         .flag-ro {background-position: -50px -60px;}
-        .flag-sg {background-position: -100px -60px;}
+        .flag-singapore {background-position: -100px -60px;}
         .flag-th {background-position: -125px -60px;}
-        .flag-ua {background-position: -25px -75px;}
+        .flag-ukraine {background-position: -25px -75px;}
     </style>
 
 

@@ -200,7 +200,7 @@ $(function () {
                     action: "onLayout"
                 },
                 {
-                    id: "largeicons",
+                    id: "largeIcons",
                     text: "Large icons view",
                     //specify the action for this menu item
                     action: "onLayout"
