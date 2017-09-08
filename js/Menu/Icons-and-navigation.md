@@ -148,7 +148,7 @@ Add the following code in your **HTML** page.
                     <a href="http://www.engadget.com/">Engadget</a>
                 </li>
                 <li><a href="http://www.electronista.com/">Electronista</a></li>
-                <li><a href="http://www.gearlog.com/">Gearlog</a></li>
+                <li><a href="http://www.gearlog.com/">Gear Log</a></li>
             </ul>
         </li>
 

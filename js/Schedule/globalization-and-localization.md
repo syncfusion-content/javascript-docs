@@ -64,7 +64,7 @@ $(function() {
         EveryWeekDay: "chaque jour de la semaine",
         Never: "jamais",
         After: "après",
-        Occurence: "apparition",
+        Occurrence: "apparition",
         On: "sur",
         Edit: "Modifier",
         RecurrenceDay: "Jour (s)",

@@ -25,7 +25,7 @@ Refer following code block to load the shared folder in our FileExplorer compone
 
     (function () {
         var fileSystemPath = "//Server/SharedFolder";
-        var ajaxActionHandler = "/Fileoperations";
+        var ajaxActionHandler = "/FileOperations";
         $("#fileExplorer").ejFileExplorer({
             path: fileSystemPath,
             ajaxAction: ajaxActionHandler,
