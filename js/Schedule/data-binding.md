@@ -1217,8 +1217,8 @@ public IEnumerable<Event> GetData(String CurrentDate, String CurrentView, String
         dateString = string.Concat(dateSplit[0], ' ', dateSplit[1], ' ', dateSplit[2], ' ', dateSplit[dateSplit.Length - 1]);
         dateTimeValue = DateTime.ParseExact(dateString, format, CultureInfo.InvariantCulture);
     }
-	// AppointmentReposit is a user-defined class within which the FilterAppointment method is defined. 
-    AppointmentReposit rep = new AppointmentReposit();
+	// AppointmentDeposit is a user-defined class within which the FilterAppointment method is defined. 
+    AppointmentDeposit rep = new AppointmentDeposit();
     var data = rep.FilterAppointment(dateTimeValue, CurrentAction, CurrentView); 
     return data;
 }

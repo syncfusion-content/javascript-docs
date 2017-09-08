@@ -17,7 +17,7 @@ It is used to Import a Word document into RTE
 
 |  Parameter |  Description | 
 |---|---|
-|rteid|RTE ID will send to server as query string and it is used in server side to extract fileName.| 
+|RTEId|RTE ID will send to server as query string and it is used in server side to extract fileName.| 
 
 
 ### Response information 
@@ -58,7 +58,7 @@ It is used for exporting the contents of RTE into a Word document.
 
 |  Parameter |  Description | 
 |---|---|
-|rteid|RTE ID will send to server as query string and it is used in server side to extract fileName and contents of RTE. | 
+|RTEId|RTE ID will send to server as query string and it is used in server side to extract fileName and contents of RTE. | 
 
 
 ### Response information 
@@ -96,7 +96,7 @@ It is used for exporting the contents of RTE into a PDF document.
 
 |  Parameter |  Description | 
 |---|---|
-|rteid|RTE ID will send to server as query string and it is used in server side to extract fileName and contents of RTE. | 
+|RTEId|RTE ID will send to server as query string and it is used in server side to extract fileName and contents of RTE. | 
 
 ### Response information 
 

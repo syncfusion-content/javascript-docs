@@ -115,9 +115,9 @@ Content-Type: data:attachment/pdf
 URL: http://js.syncfusion.com/demos/ejServices/api/DocIO/ConvertToPDF
 
 <script>
-$('#converttopdf').click(function () {
+$('#ConvertToPDF').click(function () {
     var formData = new FormData();
-    var files = $("#inputfile").get(0).files;
+    var files = $("#InputFile").get(0).files;
     // Add the uploaded image content to the form data collection
     if (files.length > 0) {
         formData.append("UploadedFile", files[0]);
