@@ -74,7 +74,7 @@ It exports the entire Scheduler content into a PDF file format.
 |ScheduleApps|It is the appointment field which holds the appropriate column names from the schedule dataSource.|
 |ScheduleProcessedApps|It contains appointment collection of the schedule.|
 |ScheduleModel|It has the model values of schedule.|
-|ScheduleProcesedIntervalsApps|Block intervals collection of schedule.| 
+|ScheduleProcessedIntervalsApps|Block intervals collection of schedule.| 
 |ScheduleBlockedApps|Block intervals fields which holds the appropriate column names from the block intervals dataSource.| 
 
 ### Response information 
@@ -115,7 +115,7 @@ It exports the complete appointment data from Scheduler into an ICS file format.
 |ScheduleApps|It is the appointment field which holds the appropriate column names from the schedule dataSource.|
 |ScheduleProcessedApps|It contains appointments collection of the schedule.|
 |ScheduleModel|It has the model values of schedule.|
-|ScheduleProcesedIntervalsApps|Block intervals collection of schedule.| 
+|ScheduleProcessedIntervalsApps|Block intervals collection of schedule.| 
 |ScheduleBlockedApps|Block intervals fields which holds the appropriate column names from the block intervals dataSource.| 
 
 ### Response information 

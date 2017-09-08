@@ -36,15 +36,15 @@ Response (JSON):
 
 {% highlight js %}
 {
-  imagestream,
-  pagesize,
-  currentpage,
-  filename,
-  pagecount,
-  pageheight,
-  pagewidth,
-  linkannotation,
-  annotpagenum,
+  imageStream,
+  pageSize,
+  currentPage,
+  fileName,
+  pageCount,
+  pageHeight,
+  pageWidth,
+  linkAnnotation,
+  annotPageNumber,
   selection,
   pageContents,
   restrictionSummary
@@ -101,15 +101,15 @@ Response (JSON):
 
 {% highlight js %}
 {
-  imagestream,
-  pagesize,
-  currentpage,
-  filename,
-  pagecount,
-  pageheight,
-  pagewidth,
-  linkannotation,
-  annotpagenum,
+  imageStream,
+  pageSize,
+  currentPage,
+  fileName,
+  pageCount,
+  pageHeight,
+  pageWidth,
+  linkAnnotation,
+  annotPageNumer,
   selection,
   pageContents,
   restrictionSummary

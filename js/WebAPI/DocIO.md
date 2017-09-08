@@ -456,11 +456,11 @@ $('#generate').click(function () {
         template = "Letter";
     formData.append("Template", template);
     var rdImplicit = document.getElementById("rdImplicit").checked;
-    var rdExplicit = document.getElementById("rdExplict").checked;
+    var rdExplicit = document.getElementById("rdExplicit").checked;
     if(rdImplicit)
         formData.append("Data", "Implicit");
     else if(rdExplicit)
-        formData.append("Data", "Explict");
+        formData.append("Data", "Explicit");
     var rdButtonDoc = document.getElementById("rdButtonDoc").checked;
     var rdButtonDocx = document.getElementById("rdButtonDocx").checked;
     var rdButtonWordML = document.getElementById("rdButtonWordML").checked;

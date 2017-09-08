@@ -94,34 +94,34 @@ And also you can add image, image styles, sprite CSS class, query and HTML attri
 
     $(function () {
         BrowserItems = [{
-            empid: "1",
-            spriteCss: "Browsers ieb",
+            employeeId: "1",
+            spriteCss: "Browsers ie-browser",
             title: "Internet Explorer",
 
         }, {
-            empid: "2",
-            spriteCss: "Browsers chromeb",
+            employeeId: "2",
+            spriteCss: "Browsers chrome-browser",
             title: "Chrome",
         }, {
-            empid: "3",
-            spriteCss: "Browsers firefoxb",
+            employeeId: "3",
+            spriteCss: "Browsers firefox-browser",
             title: "Firefox",
 
         }, {
-            empid: "4",
-            spriteCss: "Browsers bittyb",
+            employeeId: "4",
+            spriteCss: "Browsers bitty-browser",
             title: "Bitty",
 
         }, {
-            empid: "5",
-            spriteCss: "Browsers operab",
+            employeeId: "5",
+            spriteCss: "Browsers opera-browser",
             title: "Opera",
 
         }
         ];
         $("#toolbarJson").ejToolbar({
             dataSource: BrowserItems,
-            fields: { id: "empid", spriteCssClass: "spriteCss", tooltipText:"title" },
+            fields: { id: "employeeId", spriteCssClass: "spriteCss", tooltipText:"title" },
             orientation: ej.Orientation.Horizontal,
             width: "100%"
         });
@@ -148,23 +148,23 @@ And also you can add image, image styles, sprite CSS class, query and HTML attri
         background-image: url('../content/images/toolbar/browserh.png');
     }
 
-    .Browsers.ieb {
+    .Browsers.ie-browser {
         background-position: -84px 0px;
     }
 
-    .Browsers.chromeb {
+    .Browsers.chrome-browser {
         background-position: -42px 0px;
     }
 
-    .Browsers.firefoxb {
+    .Browsers.firefox-browser {
         background-position: 0px 0px;
     }
 
-    .Browsers.bittyb {
+    .Browsers.bitty-browser {
         background-position: -126px 0px;
     }
 
-    .Browsers.operab {
+    .Browsers.opera-browser {
         background-position: -168px 0px;
     }
     .material .frame{
