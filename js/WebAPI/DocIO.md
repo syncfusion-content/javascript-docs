@@ -115,9 +115,9 @@ Content-Type: data:attachment/pdf
 URL: http://js.syncfusion.com/demos/ejServices/api/DocIO/ConvertToPDF
 
 <script>
-$('#converttopdf').click(function () {
+$('#ConvertToPDF').click(function () {
     var formData = new FormData();
-    var files = $("#inputfile").get(0).files;
+    var files = $("#InputFile").get(0).files;
     // Add the uploaded image content to the form data collection
     if (files.length > 0) {
         formData.append("UploadedFile", files[0]);
@@ -456,11 +456,11 @@ $('#generate').click(function () {
         template = "Letter";
     formData.append("Template", template);
     var rdImplicit = document.getElementById("rdImplicit").checked;
-    var rdExplicit = document.getElementById("rdExplict").checked;
+    var rdExplicit = document.getElementById("rdExplicit").checked;
     if(rdImplicit)
         formData.append("Data", "Implicit");
     else if(rdExplicit)
-        formData.append("Data", "Explict");
+        formData.append("Data", "Explicit");
     var rdButtonDoc = document.getElementById("rdButtonDoc").checked;
     var rdButtonDocx = document.getElementById("rdButtonDocx").checked;
     var rdButtonWordML = document.getElementById("rdButtonWordML").checked;
