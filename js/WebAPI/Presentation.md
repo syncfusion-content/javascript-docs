@@ -27,10 +27,10 @@ URL: http://js.syncfusion.com/demos/ejServices/api/Presentation/CreatePresentati
 
   $(function () {
         $('#slidespresentation').click(function () {
-		var formdata = new FormData();
+		var formData = new FormData();
 		var req = new XMLHttpRequest();
 		req.open("POST", window.baseurl + "/api/Presentation/CreatePresentation", true);
-		req.send(formdata);
+		req.send(formData);
 		req.responseType = "blob";
 		
 		req.onload = function (event) {
@@ -71,10 +71,10 @@ URL: http://js.syncfusion.com/demos/ejServices/api/Presentation/ManipulateSmartA
 
   $(function () {
         $('#smartartpresentation').click(function () {
-		var formdata = new FormData();
+		var formData = new FormData();
 		var req = new XMLHttpRequest();
 		req.open("POST", window.baseurl + "/api/Presentation/ManipulateSmartArt", true);
-		req.send(formdata);
+		req.send(formData);
 		req.responseType = "blob";
 		
 		req.onload = function (event) {
@@ -119,21 +119,21 @@ URL: http://js.syncfusion.com/demos/ejServices/api/Presentation/MergePresentatio
 
   $(function () {
         $('#mergingpresentation').click(function () {
-		var formdata = new FormData();
+		var formData = new FormData();
 		var destinationtheme = document.getElementById("destinationtheme").checked;
         var sourceformatting = document.getElementById("sourceformatting").checked;
 		var contentType = "data:attachment/powerpoint";
         var filename = "Sample.pptx";
         if (sourceformatting) {
-            formdata.append("MergingType", "SourceFormatting");
+            formData.append("MergingType", "SourceFormatting");
         }
         else if(destinationtheme)
         {
-            formdata.append("MergingType", "DestinationTheme");
+            formData.append("MergingType", "DestinationTheme");
         }
 		var req = new XMLHttpRequest();
 		req.open("POST", window.baseurl + "/api/Presentation/MergePresentations", true);
-		req.send(formdata);
+		req.send(formData);
 		req.responseType = "blob";
 		
 		req.onload = function (event) {
@@ -180,25 +180,25 @@ URL: http://js.syncfusion.com/demos/ejServices/api/Presentation/CreateNotes
 
   $(function () {
         $('#notespresentation').click(function () {
-		var formdata = new FormData();
+		var formData = new FormData();
 		var rdButtonPPTX = document.getElementById("rdButtonPPTX").checked;
         var rdButtonPDF = document.getElementById("rdButtonPDF").checked;
 		var contentType;
         var filename;
         if (rdButtonPPTX) {
-            formdata.append("FormatType", "PPTX");
+            formData.append("FormatType", "PPTX");
             contentType = "data:attachment/powerpoint";
             filename = "Sample.pptx";
         }
         else if(rdButtonPDF)
         {
-            formdata.append("FormatType", "PDF");
+            formData.append("FormatType", "PDF");
             contentType = "data:attachment/pdf";
             filename = "Sample.pdf";
         }
 		var req = new XMLHttpRequest();
 		req.open("POST", window.baseurl + "/api/Presentation/CreateNotes", true);
-		req.send(formdata);
+		req.send(formData);
 		req.responseType = "blob";
 		
 		req.onload = function (event) {
@@ -245,10 +245,10 @@ URL: http://js.syncfusion.com/demos/ejServices/api/Presentation/ConvertToPDF
 
   $(function () {
         $('#pptxtopdfpresentation').click(function () {
-		var formdata = new FormData();
+		var formData = new FormData();
 		var req = new XMLHttpRequest();
 		req.open("POST", window.baseurl + "/api/Presentation/ConvertToPDF", true);
-		req.send(formdata);
+		req.send(formData);
 		req.responseType = "blob";
 		
 		req.onload = function (event) {

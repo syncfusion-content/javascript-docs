@@ -490,7 +490,7 @@ Add third **Tab** contents in &lt;div&gt; element during initialization.
     <div id="pastaType">
         <ul>
             <li>
-                <a href="http://js.syncfusion.com/UG/Web/Tab-Content/khemmaPasta.html">Kheema Pasta </a></li>
+                <a href="http://js.syncfusion.com/UG/Web/Tab-Content/khemmaPasta.html">Keema Pasta </a></li>
             <li>
                 <a href="http://js.syncfusion.com/UG/Web/Tab-Content/tunaPasta.html">Tuna Pasta</a></li>
             <li>
