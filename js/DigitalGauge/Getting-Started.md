@@ -249,7 +249,7 @@ You can add **Items collection** to display the temperature value as used in the
                 position: { x: 90, y: 80 }
             },
             {
-                //For displaying celsius symbol
+                //For displaying Celsius symbol
                 segmentSettings: { width: 1, length: 9, spacing: 0, color: "#F5b43f" },
                 characterSettings: { type: "sevensegment", spacing: 12, },
                 value: "c",
