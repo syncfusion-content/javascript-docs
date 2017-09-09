@@ -222,10 +222,10 @@ Try it: [Treemap Label](http://jsplayground.syncfusion.com/ms0n0uuk)
 
 You can handle the label overflow, by specifying any one of the following values to the property `textOverflow`as
 
-**None**       - By specifying textOverflow as “none”, it displays the default label text.
-**Hide**       - By specifying textOverflow as “hide”, You can hide the label, when it exceeds the header width.
-**Wrap**       - By specifying textOverflow as “wrap”, you can wrap the label text.
-**Wrapbyword** - By specifying textOverflow as “wrapbyword”, you can wrap the label text by word.
+**None**       - It displays the default label text.
+**Hide**       - You can hide the label, when it exceeds the header width.
+**Wrap**       - You can wrap the label text by letter.
+**WrapByWord** - You can wrap the label text by word.
 
 
 {% highlight js %}

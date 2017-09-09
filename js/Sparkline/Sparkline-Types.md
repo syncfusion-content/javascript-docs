@@ -69,7 +69,7 @@ WinLoss Sparkline render as a column segment and it show the positive, negative 
 
 $("#container").ejSparkline({
             // ...
-            type: 'winloss',
+            type: 'winLoss',
             fill: '#69D2E7'
             // ...
         });
