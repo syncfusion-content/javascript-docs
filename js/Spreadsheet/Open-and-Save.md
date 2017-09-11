@@ -245,6 +245,8 @@ function saveAsFile() {
 
 {% endhighlight %}
 
+N> Import / Export operations can be processed in server side only.
+
 ### User Interface
 
 You can dynamically save spreadsheet by clicking file menu in ribbon and choose SaveAs option.
