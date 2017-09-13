@@ -44,7 +44,7 @@ Response (JSON):
   pageHeight,
   pageWidth,
   linkAnnotation,
-  annotPageNumber,
+  annotationPageNumber,
   selection,
   pageContents,
   restrictionSummary
@@ -109,7 +109,7 @@ Response (JSON):
   pageHeight,
   pageWidth,
   linkAnnotation,
-  annotPageNumer,
+  annotationPageNumber,
   selection,
   pageContents,
   restrictionSummary
