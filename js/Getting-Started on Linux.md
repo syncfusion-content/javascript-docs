@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started on Linux
-description: How to develope the essential studio javascript application on Linux.
+description: How to develop the essential studio javascript application on Linux.
 platform: js
 control: Introduction
 documentation: ug
