@@ -25,7 +25,7 @@ $(function () {
 
 **Drawing and adding signature in the PDF document**
 
-The handwritten signature can be added by drawing the signature content in the signature panel and on clicking the button labelled ADD, the signature will be added in the PDF documents. The following screenshots are pictorial representation of this.
+The handwritten signature can be added by drawing the signature content in the signature panel and on clicking the button labeled ADD, the signature will be added in the PDF documents. The following screenshots are pictorial representation of this.
 
 ![](Signature_images/Signature_img1.png)
 
