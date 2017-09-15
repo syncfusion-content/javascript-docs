@@ -15,14 +15,14 @@ Open your terminal window and execute the following commands to create the sampl
 
 {% highlight html %}
 
-mkdir samplelocation
+mkdir sample
 
  {% endhighlight %}
 
-The above command create the directory name called samplelocation.In this directory create the html page called sample.html by using the below command.
+The above command create the directory name called sample.In this directory create the html page called sample.html by using the below command.
 
 {% highlight html %}
-cd samplelocation
+cd sample
 cat > sample.html
 
  {% endhighlight %}
@@ -31,10 +31,10 @@ cat > sample.html
 
 The sample can be edited by using one of the following ways,
 
-* Using default linux editors like gedit.
+* Using default Linux editors like gedit.
 * Using terminal window.
         
-## Using default linux editors like gedit.
+## Using default Linux editors like gedit.
 
 In the sample HTML file refer all the required CDN links for the [scripts](/js/cdn#cdn-script-links) and [style sheets](/js/cdn#cdn-stylesheet-links) within the `<head>` section as shown below, 
 
@@ -90,7 +90,7 @@ Add the `<input>` element within the `<body>` section, which acts as a container
 
 ## Using terminal window.
 
-Create a sample using the command `cat > sample.html` and edit the sample in the terminal window itself by pressing `enter`key. To Add the syncfusion widget into your HTML page, refer the [`link`](https://help.syncfusion.com/js/control-initialization)
+Create a sample using the command `cat > sample.html` and edit the sample in the terminal window itself by pressing `enter`key. To Add the Syncfusion widget into your HTML page, refer the [`link`](https://help.syncfusion.com/js/control-initialization)
 and press `ctrl + D` to save and exit.
 
 ![](/js/Getting-Started on Linux_images/terminal.png)

@@ -275,7 +275,7 @@ Initialize a DropDownList control with allowVirtualScrolling, enableFilterSearch
 {% highlight javascript %}
 
     var BikeList = [
-       { id: "bk1", text: "Apache RTR" }, { id: "bk2", text: "CBR 150-R" }, { id: "bk3", text: "CBZ Xtreme" }, { id: "bk4", text: "Discover" }, { id: "bk5", text: "Dazzler" }, { id: "bk6", text: "Flame" }, { id: "bk7", text: "Fazzer" }, { id: "bk8", text: "FZ-S" }, { id: "bk9", text: "Pulsar" }, { id: "bk10", text: "Shine" }, { id: "bk11", text: "R15" }, { id: "bk12", text: "Unicorn" }, { id: "bk14", text: "Kawasaki Ninja" }, { id: "bk15", text: "Ducati StreetFighter" }, { id: "bk16", text: "Aprilia TUONO" } ];   
+       { id: "bk1", text: "Apache RTR" }, { id: "bk2", text: "CBR 150-R" }, { id: "bk3", text: "CBZ Xtreme" }, { id: "bk4", text: "Discover" }, { id: "bk5", text: "Dazzler" }, { id: "bk6", text: "Flame" }, { id: "bk7", text: "Fazer" }, { id: "bk8", text: "FZ-S" }, { id: "bk9", text: "Pulsar" }, { id: "bk10", text: "Shine" }, { id: "bk11", text: "R15" }, { id: "bk12", text: "Unicorn" }, { id: "bk14", text: "Kawasaki Ninja" }, { id: "bk15", text: "Ducati StreetFighter" }, { id: "bk16", text: "Aprilia TUONO" } ];   
             $(function () {
                 obj = $("#dropdown1").ejDropDownList({
                     fields: { id: "id", text: "text", value: "text" },
