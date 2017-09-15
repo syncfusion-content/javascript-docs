@@ -72,7 +72,7 @@ Now add the following in your Script section,
             rteElement.ejRTE({ width: "100%", minWidth: "10px", change: "rteChange", select: "radialShow", showToolbar: false, showContextMenu: false });
             rteObj = rteElement.data("ejRTE");
             if (!(ej.browserInfo().name == "msie" && ej.browserInfo().version < 9)) {
-                radialElement.ejRadialMenu({ imageClass: "image-class", backimageClass: "back-image-class", targetElementId: "radialtarget1" });
+                radialElement.ejRadialMenu({ imageClass: "image-class", backImageClass: "back-image-class", targetElementId: "radialtarget1" });
 				$("#radialtarget1").parent().css("position", "relative");
             }
             else {
