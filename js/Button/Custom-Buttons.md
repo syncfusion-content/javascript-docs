@@ -19,6 +19,7 @@ List of Custom Buttons
       <th>Button Types</th>
       <th>Class</th>
       <th>Description</th>
+     </tr>
    <tr>
       <td>Primary Button</td>
       <td>e-primary</td>
