@@ -15,7 +15,7 @@ Essential JS widgets events can be wired the same way as jQuery events are bound
 
 {% highlight js %}
 
-$("jquery-selector").ej-plugin-name({ eventName : "eventhandler" });
+$("jquery-selector").ej-plugin-name({ eventName : "eventHandler" });
 //Example
 $("#myDate").ejDatePicker({ select: function () { 
           // event handler 
@@ -29,14 +29,14 @@ $("#myDate").ejDatePicker({ select: function () {
 {% highlight js %}
 
 // First way
-$("jquery-selector").ej-plugin-name("model.eventName", "eventhandler");
+$("jquery-selector").ej-plugin-name("model.eventName", "eventHandler");
 //Example
 $("#myDate").ejDatePicker("model.destroy" , function () {
       // event handler
 });
 
 // Second way
-$("jquery-selector").on("ej-plugin-nameEventName", "eventhandler");
+$("jquery-selector").on("ej-plugin-nameEventName", "eventHandler");
 //Example
 $("#myDate").on("ejDatePickerDestroy", function () {
       // event handler
