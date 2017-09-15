@@ -24,7 +24,7 @@ public class JSXLExportController: ApiController
 
 {
 
-	// GET api/
+	// GET API /
 
 	[System.Web.Http.ActionName("ExportToExcel")]
 

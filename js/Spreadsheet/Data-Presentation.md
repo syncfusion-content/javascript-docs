@@ -306,11 +306,11 @@ $(function () {
     });
 });
 function loadComplete() {
-    var xlFilter = this.XLFilter;
+    var excelFilter = this.XLFilter;
     if (!this.isImport) {
         this.performSelection("E2");
-        xlFilter.filterByActiveCell();
-        xlFilter.clearFilter();
+        excelFilter.filterByActiveCell();
+        excelFilter.clearFilter();
     }
 }
 {% endhighlight %}
@@ -417,7 +417,7 @@ $(function () {
     });
 });
 function loadComplete() {
-    var excelSort = this.XLSort, xlFormat = this.XLFormat;
+    var excelSort = this.XLSort, excelFormat = this.XLFormat;
     if (!this.isImport) {
         excelSort.sortByRange("A2:A10", "A", "ascending");
         excelSort.sortByRange("E2:E10", "E", "descending");     
