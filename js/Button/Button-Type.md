@@ -18,6 +18,7 @@ List of Button types
    <tr>
       <th>Button Types</th>
       <th>Description</th>
+   </tr> 
    <tr>
       <td>
          button
@@ -51,13 +52,13 @@ In the HTML page, add the following button elements to configure Button widget.
 
 {% highlight html %}
 
-<button id="buttonType_button">button</button>
-<br />
-<br />
-<button id="buttonType_submit">submit</button>
-<br />
-<br />
-<button id="buttonType_reset">reset</button>
+    <button id="buttonType_button">button</button>
+    <br />
+    <br />
+    <button id="buttonType_submit">submit</button>
+    <br />
+    <br />
+    <button id="buttonType_reset">reset</button>
 	
 {% endhighlight %}
 
