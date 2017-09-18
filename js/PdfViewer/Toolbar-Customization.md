@@ -105,7 +105,7 @@ The below code snippet shows how to create a customer toolbar by using the clien
 
 {% highlight html %}
 <body>
-  <div id="container" onmousemove="mousemovefunction(event)" style="width: 100%; height: 680px;"></div>
+  <div id="container" onmousemove="mouseMoveFunction(event)" style="width: 100%; height: 680px;"></div>
         <!--"-->
         <div id="magnificationDiv" class="toolbarclass" role="toolbar">
             <div class="round-button-circle" style=" position:absolute;top:20px;">
@@ -115,16 +115,16 @@ The below code snippet shows how to create a customer toolbar by using the clien
                 <div class=" e-pdfviewer-customtoolbar-download "onclick=" callClientSideMethod('download')"></div>
             </div>
             <div class="round-button-circle" style=" position:absolute;top:120px;">
-                <div class=" e-pdfviewer-customtoolbar-zoomin "  onclick=" callClientSideMethod('zoomin')"></div>
+                <div class=" e-pdfviewer-customtoolbar-zoomin "  onclick=" callClientSideMethod('zoomIn')"></div>
             </div>
             <div class="round-button-circle" style="position:absolute;top:170px;">
-                <div class="  e-pdfviewer-customtoolbar-zoomout "  onclick="callClientSideMethod('zoomout')"></div>
+                <div class="  e-pdfviewer-customtoolbar-zoomout "  onclick="callClientSideMethod('zoomOut')"></div>
             </div>
             <div class="round-button-circle" style="position:absolute;top:220px;">
-                <div class=" e-pdfviewer-customtoolbar-fitpage "  onclick="callClientSideMethod('fitpage')"></div>
+                <div class=" e-pdfviewer-customtoolbar-fitpage "  onclick="callClientSideMethod('fitPage')"></div>
             </div>
             <div class="round-button-circle" style="position:absolute;top:270px;">
-                <div class=" e-pdfviewer-customtoolbar-fitwidth "  onclick="callClientSideMethod('fitwidth')"></div>
+                <div class=" e-pdfviewer-customtoolbar-fitwidth "  onclick="callClientSideMethod('fitWidth')"></div>
             </div>
         </div>
         <div id="toolbarDiv" class="toolbarclass " role="toolbar" style="background-color:#c8c8c8;width:98.5%;">
@@ -153,7 +153,7 @@ The below code snippet shows how to create a customer toolbar by using the clien
             height = parseInt(document.getElementById("container").style.height);
             width = window.innerWidth;
             showCustomToolbar();
-            function mousemovefunction(args) {
+            function mouseMoveFunction(args) {
                mousePosX = args.clientX;
                mousePosY = args.clientY;
                 if (!toolbarInView) {
@@ -186,16 +186,16 @@ The below code snippet shows how to create a customer toolbar by using the clien
             function callClientSideMethod(apiName) {
                 var obj = $("#container").data("ejPdfViewer");
                 switch (apiName) {
-                    case 'zoomin':
+                    case 'zoomIn':
                         obj.zoomIn();
                         break;
-                    case 'zoomout':
+                    case 'zoomOut':
                         obj.zoomOut();
                         break;
-                    case 'fitpage':
+                    case 'fitPage':
                         obj.fitToPage();
                         break;
-                    case 'fitwidth':
+                    case 'fitWidth':
                         obj.fitToWidth();
                         break;
                     case 'previous':
@@ -218,8 +218,8 @@ The below code snippet shows how to create a customer toolbar by using the clien
             }
             $(function () {
                 var obj = $("#container").data("ejPdfViewer");
-                var pagecount = obj.pageCount;
-                $("#totalPageCount").html("/" + pagecount);
+                var pageCount = obj.pageCount;
+                $("#totalPageCount").html("/" + pageCount);
                 var filename = (obj.fileName).split("\\");
                 var pdf = filename[filename.length - 1];
                 $("#pdfName").html(pdf);
