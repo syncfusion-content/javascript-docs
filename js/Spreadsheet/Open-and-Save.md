@@ -15,12 +15,12 @@ The native data format for Spreadsheet is JSON. You can load and store JSON data
 
 function SaveAsJSON() {
     var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
-    window.xlData = excelObj.saveAsJSON();
+    window.excelData = excelObj.saveAsJSON();
 }
 
 function loadFromJSON() {
     var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
-    excelObj.loadFromJSON(window.xlData);
+    excelObj.loadFromJSON(window.excelData);
 }
 
 {% endhighlight %}
