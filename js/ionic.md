@@ -253,7 +253,7 @@ Deploying app into ios device, checkout this system requirements
 
 * iOS 9
 
-* A free [Apple ID](https://appleid.apple.com/)or paid Apple Developer account
+* A free [Apple ID](https://appleid.apple.com/) or paid Apple Developer account
 
 ##### Commands
 
