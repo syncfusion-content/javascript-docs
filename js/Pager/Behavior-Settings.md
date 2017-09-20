@@ -14,7 +14,7 @@ api: /api/js/ejpager
 
 The **pageSizeList** property of the pager control allows an option to have multiple options of page size values. By defining **pageSizeList**, a dropdown will render in a pager with given values along with the current pageSize as selected value in dropdown.
 
-Selected value in a dropdown will be set to pageSize api and pager will refersh based on this new pageSize.
+Selected value in a dropdown will be set to pageSize API and pager will refresh based on this new pageSize.
 
 {% highlight javascript %}
 
@@ -61,7 +61,7 @@ The **pageSizeMessage** property allows to show a message along with the dropdow
 
                 pageSizeList: [1,2,3],
 
-                pageSizeSelected: "pageSizeInfo", // sets handler to change in pagesizeList dropdown. 
+                pageSizeSelected: "pageSizeInfo", // sets handler to change in pageSizeList dropdown. 
 
                 pageSizeMessage: "PageSize value: 1" // sets pageSizeMessage for the pager.
 
