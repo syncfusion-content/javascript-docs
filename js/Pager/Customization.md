@@ -18,7 +18,7 @@ The **showGoToPage** property of pager renders a textbox within the pager elemen
 
         $(function () {
 
-            // creates pager control with shoGoToPage textbox
+            // creates pager control with showGoToPage textbox
 
             $("#pager").ejPager({
 
@@ -104,7 +104,7 @@ Run the above code to get the below output.
 
 ## External Message
 
-The pager control also allows to define a external message using externalMessage API to dispaly an additional information. To use external message, we need to enable it using enableExternalMessage API. In the sample below, the externalMessage of pager is used to show the current active page of the pager control. Whenever the current page value of the pager changes, the externalMessage will be updated with the current page value.
+The pager control also allows to define a external message using externalMessage API to display an additional information. To use external message, we need to enable it using enableExternalMessage API. In the sample below, the externalMessage of pager is used to show the current active page of the pager control. Whenever the current page value of the pager changes, the externalMessage will be updated with the current page value.
 
 
 {% highlight javascript %}
@@ -125,12 +125,12 @@ The pager control also allows to define a external message using externalMessage
 
                 enableExternalMessage: true, // enabling external message
 
-                externalMessage: "CurrentPage: 1" // sets ecternal message for pager control
+                externalMessage: "CurrentPage: 1" // sets external message for pager control
             });
 
         });
 
-function onchange(e) {
+function onChange(e) {
 
                    // Creating a instance of pager.
                    var a = $("#Pager").ejPager("instance");
