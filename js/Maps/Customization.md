@@ -348,9 +348,19 @@ The tooltip is displayed only when you set `showTooltip` to “True” in the sh
                 ShapeSettings: {
                     // ...
                     valuePath: "name",
+                    fill: '#9CBF4E',
+                    strokeThickness: "0.5",
+                    stroke: "White",
+                    highlightStroke: "White",
+                    highlightColor: "#BC5353",
+                    highlightBorderWidth: "1"
                     // ...
                 }
-                showTooltip: true
+                showTooltip: true,
+                shapeDataPath: "name",
+                shapePropertyPath: "name",
+                dataSource: USA_State_PopulationData,
+                enableMouseHover: true
             }]
         });
     });
@@ -377,10 +387,20 @@ The `tooltipTemplate` property is used for customizing the template for tooltip.
                         ShapeSettings: {
                             // ...
                             valuePath: "name",
+                            fill: '#9CBF4E',
+                            strokeThickness: "0.5",
+                            stroke: "White",
+                            highlightStroke: "White",
+                            highlightColor: "#BC5353",
+                            highlightBorderWidth: "1"
                             // ...
                         }
                         showTooltip: true,
-                        toolTipTemplate: 'myTooltip'
+                        toolTipTemplate: 'myTooltip',
+                        shapeDataPath: "name",
+                        shapePropertyPath: "name",
+                        dataSource: USA_State_PopulationData,
+                        enableMouseHover: true
                     }]
             });
         });
@@ -390,11 +410,11 @@ The `tooltipTemplate` property is used for customizing the template for tooltip.
         <div >
             <div style="height:60px;width:120px;background:#4586a0;border-radius:3px;">
                 <div style="margin-top:-20px;margin-left:9px;padding-top:3px">
-                    <label style="margin-top:-20px;font-weight:normal;font-size:12px;color:white;font-family:Segoe UI;">{{:name}}</label>
+                    <label style="margin-top:-20px;font-weight:normal;font-size:12px;color:white;font-family:Segoe UI;">{{"{{"}}:name{{}}}}</label>
                 </div>
                 <div style="height:10px;"></div>
                 <div style="margin-top:-10px;margin-left:9px;">
-                    <label style="margin-top:-10px;font-weight:normal;font-size:14px;color:white;font-family:segoe ui light;">{{:population}}</label>
+                    <label style="margin-top:-10px;font-weight:normal;font-size:14px;color:white;font-family:segoe ui light;">{{"{{"}}:population{{}}}}</label>
                 </div>
             </div>
         </div>
