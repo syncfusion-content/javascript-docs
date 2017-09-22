@@ -348,9 +348,19 @@ The tooltip is displayed only when you set `showTooltip` to “True” in the sh
                 ShapeSettings: {
                     // ...
                     valuePath: "name",
+                    fill: '#9CBF4E',
+                    strokeThickness: "0.5",
+                    stroke: "White",
+                    highlightStroke: "White",
+                    highlightColor: "#BC5353",
+                    highlightBorderWidth: "1"
                     // ...
                 }
-                showTooltip: true
+                showTooltip: true,
+                shapeDataPath: "name",
+                shapePropertyPath: "name",
+                dataSource: USA_State_PopulationData,
+                enableMouseHover: true
             }]
         });
     });
@@ -377,10 +387,20 @@ The `tooltipTemplate` property is used for customizing the template for tooltip.
                         ShapeSettings: {
                             // ...
                             valuePath: "name",
+                            fill: '#9CBF4E',
+                            strokeThickness: "0.5",
+                            stroke: "White",
+                            highlightStroke: "White",
+                            highlightColor: "#BC5353",
+                            highlightBorderWidth: "1"
                             // ...
                         }
                         showTooltip: true,
-                        toolTipTemplate: 'myTooltip'
+                        toolTipTemplate: 'myTooltip',
+                        shapeDataPath: "name",
+                        shapePropertyPath: "name",
+                        dataSource: USA_State_PopulationData,
+                        enableMouseHover: true
                     }]
             });
         });
