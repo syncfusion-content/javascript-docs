@@ -129,10 +129,10 @@ You can set the images for Navigation Drawer by using the **data-ej-imageClass**
 
     <div id="navigationPane">
         <ul>
-            <li data-ej-imageclass="icon-home" data-ej-text="Home"></li>
-            <li data-ej-imageclass="icon-profile" data-ej-text="Profile"></li>
-            <li data-ej-imageclass="icon-photo" data-ej-text="Photos"></li>
-            <li data-ej-imageclass="icon-locations" data-ej-text="Location"></li>
+            <li data-ej-imageclass="e-icon e-home" data-ej-text="Home"></li>
+            <li data-ej-imageclass="e-icon e-profile" data-ej-text="Profile"></li>
+            <li data-ej-imageclass="e-icon e-photo" data-ej-text="Photos"></li>
+            <li data-ej-imageclass="e-icon e-location" data-ej-text="Location"></li>
         </ul>
     </div>
     
@@ -145,27 +145,48 @@ You can define the image classes specified for the list items as follows.
 {% highlight css %}
 
     <style>
-            #navigationPane [class*="icon-"]
-            {
-                width: 35px;
-                height: 35px;
-            }
-            .icon-home
-            {
-                background-position: 0 0;
-            }
-            .icon-profile
-            {
-                background-position: 0 -173px;
-            }
-            .icon-photo
-            {
-                background-position: 0 -117px;
-            }
-            .icon-locations
-            {
-                background-position: 0 -55px;
-            }   
+    @font-face { 
+        font-family: 'ej-xlfont'; 
+        src: url('../../common-images/tools/icons.eot'); 
+        src: url('../../common-images/tools/icons.eot') format('embedded-opentype'), url('../../common-images/tools/icons.woff') format('woff'),url('../../common-images/tools/icons.woff') format('woff'), url('../../common-images/tools/icons.ttf') format('truetype'), url('../../common-images/tools/icons.svg') format('svg'); 
+        font-weight: normal; 
+        font-style: normal; 
+    } 
+ 
+    .e-home:before { 
+        font-family: "ej-xlfont"; 
+        content: "\e900"; 
+    } 
+ 
+    .e-profile:before { 
+        font-family: "ej-xlfont"; 
+        content: "\e901"; 
+    } 
+ 
+    .e-photo:before { 
+        font-family: "ej-xlfont"; 
+        content: "\e903"; 
+    } 
+ 
+    .e-location:before { 
+        font-family: "ej-xlfont"; 
+        content: "\e905"; 
+    } 
+
+    .e-people:before { 
+        font-family: "ej-xlfont"; 
+        content: "\e902"; 
+    } 
+ 
+    .e-communities:before { 
+        font-family: "ej-xlfont"; 
+        content: "\e904"; 
+    }
+
+    .e-home, .e-profile, .e-people, .e-photo, .e-communities, .e-location { 
+        font-size: 24px; 
+        color: black; 
+    } 
     </style>
 
 {% endhighlight %}
