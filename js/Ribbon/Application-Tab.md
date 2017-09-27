@@ -127,7 +127,7 @@ Application Menu can be rendered using JSON Data Source. Please refer [`this`](h
                                 isBig: true,
                                 buttonSettings: {
                                     contentType: ej.ContentType.ImageOnly,
-                                    prefixIcon: "e-ribbon e-bold"
+                                    prefixIcon: "e-icon e-ribbon e-bold"
                                 }
                             }]
                         }]
@@ -186,7 +186,7 @@ To render the Ribbon with the Backstage page, refer to the following code snippe
             width: 205,
             contentType: "textandimage",
             imagePosition: "imagetop",
-            prefixIcon: "e-blank e-infopageicon"
+            prefixIcon: "e-icon e-blank e-infopageicon"
         });
         $(function () {
             $("#Ribbon").ejRibbon({

@@ -94,7 +94,7 @@ For further information on – how to refer the required culture scripts into yo
 							quickAccessMode: ej.Ribbon.quickAccessMode.toolBar,
 							splitButtonSettings: {
 								contentType: ej.ContentType.ImageOnly,
-								prefixIcon: "e-ribbon e-ribbonpaste",
+								prefixIcon: "e-icon e-ribbon e-ribbonpaste",
 								targetID: "pasteSplit",
 								buttonMode: "dropdown",
 								arrowPosition: ej.ArrowPosition.Bottom,
@@ -151,7 +151,7 @@ By default, Ribbon render its content and layout from left to right. To customiz
                             buttonSettings: {
                                 contentType: ej.ContentType.ImageOnly,
                                 imagePosition: ej.ImagePosition.ImageTop,
-                                prefixIcon: "e-ribbon e-new",
+                                prefixIcon: "e-icon e-ribbon e-new",
                                 click: "executeAction"
                             }
                         }
@@ -171,7 +171,7 @@ By default, Ribbon render its content and layout from left to right. To customiz
                             toolTip: "Paste",
                             splitButtonSettings: {
                                 contentType: ej.ContentType.ImageOnly,
-                                prefixIcon: "e-ribbon e-ribbonpaste",
+                                prefixIcon: "e-icon e-ribbon e-ribbonpaste",
                                 targetID: "pasteSplit",
                                 buttonMode: "dropdown",
                                 arrowPosition: ej.ArrowPosition.Bottom,

@@ -109,14 +109,14 @@ api: /api/js/ejribbon
                                             text: "Upper Case",
                                             buttonSettings: {
                                                 contentType: ej.ContentType.ImageOnly,
-                                                prefixIcon: "e-ribbon e-uppercase"
+                                                prefixIcon: "e-icon e-ribbon e-uppercase"
                                             }
                                         }, {
                                             id: "lowercase",
                                             text: "Lower Case",
                                             buttonSettings: {
                                                 contentType: ej.ContentType.ImageOnly,
-                                                prefixIcon: "e-ribbon e-lowercase"
+                                                prefixIcon: "e-icon e-ribbon e-lowercase"
                                             }
                                         }],
                                         defaults: {

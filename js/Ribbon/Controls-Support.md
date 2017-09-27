@@ -31,7 +31,7 @@ The following table describes about the built in controls [`type`](https://help.
     buttonSettings: {
 					width: 70,
 					contentType: ej.ContentType.ImageOnly,
-					prefixIcon: "e-ribbon e-new"
+					prefixIcon: "e-icon e-ribbon e-new"
 				    }                           
  </td>
 </tr>
@@ -112,7 +112,7 @@ N> 2. For [`type`](https://help.syncfusion.com/api/js/ejribbon#members:tabs-grou
                                                 buttonSettings: {
                                                     contentType: ej.ContentType.ImageOnly,
                                                     imagePosition: ej.ImagePosition.ImageTop,
-                                                    prefixIcon: "e-ribbon e-new"
+                                                    prefixIcon: "e-icon e-ribbon e-new"
                                                 }
                                             }
                                         ],
@@ -136,7 +136,7 @@ N> 2. For [`type`](https://help.syncfusion.com/api/js/ejribbon#members:tabs-grou
                                                 toolTip: "Paste",
                                                 splitButtonSettings: {
                                                     contentType: ej.ContentType.ImageOnly,
-                                                    prefixIcon: "e-ribbon e-ribbonpaste",
+                                                    prefixIcon: "e-icon e-ribbon e-ribbonpaste",
                                                     targetID: "pasteSplit",
                                                     buttonMode: "dropdown",
                                                     arrowPosition: ej.ArrowPosition.Bottom
@@ -190,8 +190,8 @@ N> 2. For [`type`](https://help.syncfusion.com/api/js/ejribbon#members:tabs-grou
                                                     contentType: ej.ContentType.ImageOnly,
                                                     defaultText: "Bold",
                                                     activeText: "Bold",
-                                                    defaultPrefixIcon: "e-ribbon bold",
-                                                    activePrefixIcon: "e-ribbon bold"
+                                                    defaultPrefixIcon: "e-icon e-ribbon bold",
+                                                    activePrefixIcon: "e-icon e-ribbon bold"
                                                 }
                                             },
                                             {
@@ -202,8 +202,8 @@ N> 2. For [`type`](https://help.syncfusion.com/api/js/ejribbon#members:tabs-grou
                                                     contentType: ej.ContentType.ImageOnly,
                                                     defaultText: "Italic",
                                                     activeText: "Italic",
-                                                    defaultPrefixIcon: "e-ribbon e-ribbonitalic",
-                                                    activePrefixIcon: "e-ribbon e-ribbonitalic"
+                                                    defaultPrefixIcon: "e-icon e-ribbon e-ribbonitalic",
+                                                    activePrefixIcon: "e-icon e-ribbon e-ribbonitalic"
                                                 }
                                             }
                                         ],

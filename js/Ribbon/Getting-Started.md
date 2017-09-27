@@ -168,7 +168,7 @@ Create group item with [`text`](https://help.syncfusion.com/api/js/ejribbon#memb
                                 text: "New",
                                 buttonSettings: {
                                     contentType: ej.ContentType.ImageOnly,
-                                    prefixIcon: "e-ribbon e-new",
+                                    prefixIcon: "e-icon e-ribbon e-new",
                                 }
                             }]
                         }]
@@ -229,7 +229,7 @@ Syncfusion JavaScript Controls can be added to group’s content with correspond
                                     splitButtonSettings: {
                                         contentType: ej.ContentType.ImageOnly,
                                         targetID: "split",
-                                        prefixIcon: "e-ribbon e-ribbonpaste",
+                                        prefixIcon: "e-icon e-ribbon e-ribbonpaste",
                                         buttonMode: "dropdown",
                                         arrowPosition: "bottom"
                                     }
