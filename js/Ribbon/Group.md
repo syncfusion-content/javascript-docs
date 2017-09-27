@@ -78,7 +78,7 @@ Custom controls or items (such as table, div etc.) can be added when the [`type`
 								type: ej.Ribbon.type.splitButton,
 								splitButtonSettings: {
 									contentType: ej.ContentType.ImageOnly,
-									prefixIcon: "e-ribbon e-ribbonpaste",
+									prefixIcon: "e-icon e-ribbon e-ribbonpaste",
 									targetID: "pasteSplit"
 								}
 							}]
