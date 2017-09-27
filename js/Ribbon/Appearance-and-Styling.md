@@ -55,7 +55,7 @@ $("#Ribbon").ejRibbon({
                     text: "New",
                     buttonSettings: {
                         contentType: ej.ContentType.ImageOnly,
-                        prefixIcon: "e-ribbon e-new",
+                        prefixIcon: "e-icon e-ribbon e-new",
                     }
                 }]
             }]

@@ -57,7 +57,7 @@ Standard `html tooltip` can be set using [`tooltip`](https://help.syncfusion.com
                                 toolTip: "Put a copy of selection on clipboard",
                                 buttonSettings: {
                                     contentType: ej.ContentType.TextAndImage,
-                                    prefixIcon: "e-ribbon e-ribboncopy"
+                                    prefixIcon: "e-icon e-ribbon e-ribboncopy"
                                 }
                             }],
                             defaults: {
@@ -110,7 +110,7 @@ Custom Tooltip is used to set detailed help to the user about the controls. You 
                                     content: "<h6>Paste the content.<br/><br/>Add content on the Clipboard to your document.</h6>",
 
                                     // class to set icon
-                                    prefixIcon: "e-pastetip"
+                                    prefixIcon: "e-icon e-pastetip"
                                 }
                             }, {
                                 id: "copy",
@@ -123,7 +123,7 @@ Custom Tooltip is used to set detailed help to the user about the controls. You 
                                 },
                                 buttonSettings: {
                                     contentType: ej.ContentType.TextAndImage,
-                                    prefixIcon: "e-ribbon e-ribboncopy"
+                                    prefixIcon: "e-icon e-ribbon e-ribboncopy"
                                 }
                             }],
                             defaults: {
@@ -209,7 +209,7 @@ N> Custom gallery item `menu` is not supported to Custom tooltip.
                                     },
                                     buttonSettings: {
                                         contentType: ej.ContentType.ImageOnly,
-                                        prefixIcon: "e-gallerycontent1 e-gbtnimg",
+                                        prefixIcon: "e-icon e-gallerycontent1 e-gbtnimg",
                                         cssClass: "e-gbtnposition"
                                     }
                                 }, {
@@ -220,7 +220,7 @@ N> Custom gallery item `menu` is not supported to Custom tooltip.
                                     },
                                     buttonSettings: {
                                         contentType: ej.ContentType.ImageOnly,
-                                        prefixIcon: "e-gallerycontent2 e-gbtnimg",
+                                        prefixIcon: "e-icon e-gallerycontent2 e-gbtnimg",
                                         cssClass: "e-gbtnposition"
                                     }
                                 }, {
@@ -231,7 +231,7 @@ N> Custom gallery item `menu` is not supported to Custom tooltip.
                                     },
                                     buttonSettings: {
                                         contentType: ej.ContentType.ImageOnly,
-                                        prefixIcon: "e-gallerycontent3 e-gbtnimg",
+                                        prefixIcon: "e-icon e-gallerycontent3 e-gbtnimg",
                                         cssClass: "e-gbtnposition"
                                     }
                                 }, {
@@ -242,7 +242,7 @@ N> Custom gallery item `menu` is not supported to Custom tooltip.
                                     },
                                     buttonSettings: {
                                         contentType: ej.ContentType.ImageOnly,
-                                        prefixIcon: "e-gallerycontent4 e-gbtnimg",
+                                        prefixIcon: "e-icon e-gallerycontent4 e-gbtnimg",
                                         cssClass: "e-gbtnposition"
                                     }
                                 }],
@@ -352,7 +352,7 @@ Specifies the [`custom tooltip`](https://help.syncfusion.com/api/js/ejribbon#mem
                             buttonSettings: {
                                 contentType: ej.ContentType.ImageOnly,
                                 imagePosition: ej.ImagePosition.ImageTop,
-                                prefixIcon: "e-ribbon e-new",
+                                prefixIcon: "e-icon e-ribbon e-new",
                                 click: "executeAction"
                             }
                         }],
@@ -419,7 +419,7 @@ Specifies the [`custom tooltip`](https://help.syncfusion.com/api/js/ejribbon#mem
                             buttonSettings: {
                                 contentType: ej.ContentType.ImageOnly,
                                 imagePosition: ej.ImagePosition.ImageTop,
-                                prefixIcon: "e-ribbon e-new",
+                                prefixIcon: "e-icon e-ribbon e-new",
                                 click: "executeAction"
                             }
                         }],
@@ -489,7 +489,7 @@ Specifies the [`custom tooltip`](https://help.syncfusion.com/api/js/ejribbon#mem
                             buttonSettings: {
                                 contentType: ej.ContentType.ImageOnly,
                                 imagePosition: ej.ImagePosition.ImageTop,
-                                prefixIcon: "e-ribbon e-new",
+                                prefixIcon: "e-icon e-ribbon e-new",
                                 click: "executeAction"
                             }
                         }],

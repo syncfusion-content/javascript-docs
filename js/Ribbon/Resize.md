@@ -360,7 +360,7 @@ For each group shirked for resizing, Custom Class will be added based on group t
                                 toolTip: "Paste",
                                 buttonSettings: {
                                     contentType: ej.ContentType.ImageOnly,
-                                    prefixIcon: "e-ribbon e-ribbonpaste"
+                                    prefixIcon: "e-icon e-ribbon e-ribbonpaste"
                                 }
                             }],
                             defaults: {
@@ -375,7 +375,7 @@ For each group shirked for resizing, Custom Class will be added based on group t
                                 toolTip: "Cut",
                                 buttonSettings: {
                                     contentType: ej.ContentType.TextAndImage,
-                                    prefixIcon: "e-ribbon e-ribboncut"
+                                    prefixIcon: "e-icon e-ribbon e-ribboncut"
                                 }
                             }, {
                                 id: "copy",
@@ -383,7 +383,7 @@ For each group shirked for resizing, Custom Class will be added based on group t
                                 toolTip: "Copy",
                                 buttonSettings: {
                                     contentType: ej.ContentType.TextAndImage,
-                                    prefixIcon: "e-ribbon e-ribboncopy"
+                                    prefixIcon: "e-icon e-ribbon e-ribboncopy"
                                 }
                             }],
                             defaults: {
@@ -431,7 +431,7 @@ For each group shirked for resizing, Custom Class will be added based on group t
                                 buttonSettings: {
                                     contentType: ej.ContentType.ImageOnly,
                                     imagePosition: ej.ImagePosition.ImageTop,
-                                    prefixIcon: "e-ribbon e-new"
+                                    prefixIcon: "e-icon e-ribbon e-new"
                                 }
                             }],
                             defaults: {
@@ -450,7 +450,7 @@ For each group shirked for resizing, Custom Class will be added based on group t
                                 buttonSettings: {
                                     contentType: ej.ContentType.TextAndImage,
                                     imagePosition: ej.ImagePosition.ImageTop,
-                                    prefixIcon: "e-ribbon e-undo"
+                                    prefixIcon: "e-icon e-ribbon e-undo"
                                 }
                             }, {
                                 id: "redo",
@@ -459,7 +459,7 @@ For each group shirked for resizing, Custom Class will be added based on group t
                                 buttonSettings: {
                                     contentType: ej.ContentType.TextAndImage,
                                     imagePosition: ej.ImagePosition.ImageTop,
-                                    prefixIcon: "e-ribbon e-redo"
+                                    prefixIcon: "e-icon e-ribbon e-redo"
                                 }
                             }],
                             defaults: {
@@ -482,7 +482,7 @@ For each group shirked for resizing, Custom Class will be added based on group t
                                 buttonSettings: {
                                     contentType: ej.ContentType.TextAndImage,
                                     imagePosition: ej.ImagePosition.ImageTop,
-                                    prefixIcon: "e-ribbon e-printlayout"
+                                    prefixIcon: "e-icon e-ribbon e-printlayout"
                                 }
                             }],
                             defaults: {
