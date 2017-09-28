@@ -136,7 +136,7 @@ Set [`enableOnDemand`](https://help.syncfusion.com/api/js/ejribbon#members:enabl
             width: 225,
             contentType: "textandimage",
             imagePosition: "imagetop",
-            prefixIcon: "e-blank e-infopageicon"
+            prefixIcon: "e-icon e-blank e-infopageicon"
         });
     </script>
     
@@ -302,7 +302,7 @@ While using initially collapsible ribbon with [`enableOnDemand`](https://help.sy
             width: 225,
             contentType: "textandimage",
             imagePosition: "imagetop",
-            prefixIcon: "e-blank e-infopageicon"
+            prefixIcon: "e-icon e-blank e-infopageicon"
         });
     </script>
     

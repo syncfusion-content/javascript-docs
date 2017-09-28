@@ -61,7 +61,7 @@ The client side event for Quick Access Toolbar menu click is [`qatMenuItemClick`
 									splitButtonSettings: {
 										contentType: ej.ContentType.ImageOnly,
 										targetID: "split",
-										prefixIcon: "e-ribbon e-ribbonpaste",
+										prefixIcon: "e-icon e-ribbon e-ribbonpaste",
 										buttonMode: "dropdown",
 										arrowPosition: "bottom"
 									}
@@ -86,7 +86,7 @@ The client side event for Quick Access Toolbar menu click is [`qatMenuItemClick`
 										contentType: ej.ContentType.ImageOnly,
 										defaultText: "Italic",
 										activeText: "Italic",
-										prefixIcon: "e-ribbon e-ribbonitalic"
+										prefixIcon: "e-icon e-ribbon e-ribbonitalic"
 									}
 								}]
 							}]
@@ -103,8 +103,8 @@ The client side event for Quick Access Toolbar menu click is [`qatMenuItemClick`
 										contentType: ej.ContentType.ImageOnly,
 										defaultText: "Bold",
 										activeText: "Bold",
-										defaultPrefixIcon: "e-ribbon bold",
-										activePrefixIcon: "e-ribbon bold"
+										defaultPrefixIcon: "e-icon e-ribbon bold",
+										activePrefixIcon: "e-icon e-ribbon bold"
 									}
 								}],
 	

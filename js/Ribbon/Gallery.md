@@ -57,7 +57,7 @@ N> The [`itemHeight`](https://help.syncfusion.com/api/js/ejribbon#members:tabs-g
                                     toolTip: "GalleryContent1",
                                     buttonSettings: {
                                         contentType: ej.ContentType.ImageOnly,
-                                        prefixIcon: "e-gallerycontent1 e-gbtnimg",
+                                        prefixIcon: "e-icon e-gallerycontent1 e-gbtnimg",
                                         cssClass: "e-gbtnposition"
                                     }
                                 }, {
@@ -65,7 +65,7 @@ N> The [`itemHeight`](https://help.syncfusion.com/api/js/ejribbon#members:tabs-g
                                     toolTip: "GalleryContent2",
                                     buttonSettings: {
                                         contentType: ej.ContentType.ImageOnly,
-                                        prefixIcon: "e-gallerycontent2 e-gbtnimg",
+                                        prefixIcon: "e-icon e-gallerycontent2 e-gbtnimg",
                                         cssClass: "e-gbtnposition"
                                     }
                                 }, {
@@ -73,7 +73,7 @@ N> The [`itemHeight`](https://help.syncfusion.com/api/js/ejribbon#members:tabs-g
                                     toolTip: "GalleryContent3",
                                     buttonSettings: {
                                         contentType: ej.ContentType.ImageOnly,
-                                        prefixIcon: "e-gallerycontent3 e-gbtnimg",
+                                        prefixIcon: "e-icon e-gallerycontent3 e-gbtnimg",
                                         cssClass: "e-gbtnposition"
                                     }
                                 }, {
@@ -81,7 +81,7 @@ N> The [`itemHeight`](https://help.syncfusion.com/api/js/ejribbon#members:tabs-g
                                     toolTip: "GalleryContent4",
                                     buttonSettings: {
                                         contentType: ej.ContentType.ImageOnly,
-                                        prefixIcon: "e-gallerycontent4 e-gbtnimg",
+                                        prefixIcon: "e-icon e-gallerycontent4 e-gbtnimg",
                                         cssClass: "e-gbtnposition"
                                     }
                                 }]
@@ -178,7 +178,7 @@ You can also set [`text`](https://help.syncfusion.com/api/js/ejribbon#members:ta
                                     toolTip: "GalleryContent1",
                                     buttonSettings: {
                                         contentType: ej.ContentType.ImageOnly,
-                                        prefixIcon: "e-gallerycontent1 e-gbtnimg",
+                                        prefixIcon: "e-icon e-gallerycontent1 e-gbtnimg",
                                         cssClass: "e-gbtnposition"
                                     }
                                 }, {
@@ -186,7 +186,7 @@ You can also set [`text`](https://help.syncfusion.com/api/js/ejribbon#members:ta
                                     toolTip: "GalleryContent2",
                                     buttonSettings: {
                                         contentType: ej.ContentType.ImageOnly,
-                                        prefixIcon: "e-gallerycontent2 e-gbtnimg",
+                                        prefixIcon: "e-icon e-gallerycontent2 e-gbtnimg",
                                         cssClass: "e-gbtnposition"
                                     }
                                 }, {
@@ -194,7 +194,7 @@ You can also set [`text`](https://help.syncfusion.com/api/js/ejribbon#members:ta
                                     toolTip: "GalleryContent3",
                                     buttonSettings: {
                                         contentType: ej.ContentType.ImageOnly,
-                                        prefixIcon: "e-gallerycontent3 e-gbtnimg",
+                                        prefixIcon: "e-icon e-gallerycontent3 e-gbtnimg",
                                         cssClass: "e-gbtnposition"
                                     }
                                 }, {
@@ -202,7 +202,7 @@ You can also set [`text`](https://help.syncfusion.com/api/js/ejribbon#members:ta
                                     toolTip: "GalleryContent4",
                                     buttonSettings: {
                                         contentType: ej.ContentType.ImageOnly,
-                                        prefixIcon: "e-gallerycontent4 e-gbtnimg",
+                                        prefixIcon: "e-icon e-gallerycontent4 e-gbtnimg",
                                         cssClass: "e-gbtnposition"
                                     }
                                 }],
