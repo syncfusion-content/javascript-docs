@@ -49,6 +49,8 @@ N>  Also, the exporting functionality available in some of the widgets like the 
 
 Syncfusion JavaScript NuGet packages are available [here](http://nuget.syncfusion.com/package/javascript).
 
+N> If you wish to use the JavaScript NuGet packages then Essential Studio or JavaScript platform installation not required to implement with Syncfusion JavaScript controls. 
+
 ### NuGet Configuration  
 
 Syncfusion NuGet Package feed links are configured in Visual Studio in the following ways,
