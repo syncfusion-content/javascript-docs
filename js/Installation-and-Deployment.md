@@ -341,3 +341,160 @@ jspm update npm:syncfusion-javascript
 ~~~
 jspm update syncfusion=github:syncfusion/JavaScript-Widgets
 ~~~
+
+## NuGet Packages Structure
+
+The following structure is maintained for the JavaScript platform NuGet packages from 2015 Volume 2.
+
+<table>
+   <tr>
+		<td colspan="1" rowspan="2">
+			Categories/Package Name<br/>
+		</td>
+		<td colspan="1" rowspan="2">
+			Supported Controls<br/>
+		</td>
+		<td colspan="1" rowspan="2">
+			Assemblies<br/>
+		</td>
+		<td colspan="2" rowspan="1">
+			Assets<br/>
+		</td>
+		<td>
+			Dependencies<br/>
+		</td>
+	</tr>
+    <tr>
+		<td>
+			Scripts<br/>
+		</td>
+		<td>
+			CSS<br/>
+		</td>
+		<td>
+			<br/>
+		</td>
+	</tr>
+  	<tr>
+		<td>
+			Syncfusion.JavaScript<br/>
+		</td>
+		<td>
+			Grid<br/>Data Visualization<br/>Business Intelligence<br/>Layout<br/>Editors<br/>Navigation<br/>Notification<br/>Framework<br/>Data Science<br/>Miscellaneous<br/>Integration<br/>Report Viewer<br/>To know more information about the controls for above categories navigate the below link.<br/>{{'<http://www.syncfusion.com/products/javascript>'| markdownify }} <br/><br/>
+		</td>
+		<td>
+			-<br/>
+		</td>
+		<td>
+			ej.mobile.all.min.js<br/>ej.unobtrusive.min.js<br/>ej.web.all.min.js<br/>ej.widget.angular.min.js<br/>ej.widget.ko.min.js<br/>ej.widgets.all.min.js<br/>canvg.js<br/>jquery.globalize.min.js<br/>jsrender.min.js<br/>rgbcolor.js <br/><br/>
+		</td>
+		<td>
+			Web and Mobile Themes.<br/>
+		</td>
+		<td>
+			-<br/>
+		</td>
+	</tr>
+    <tr>
+		<td>
+			Syncfusion.JavaScript.PdfViewer<br/>
+		</td>
+		<td>
+			Pdf Viewer<br/>
+		</td>
+		<td>
+			EJ.PdfViewer<br/>
+		</td>
+		<td>
+			-<br/>
+		</td>
+		<td>
+			-<br/>
+		</td>
+		<td>
+			Syncfusion.JavaScript<br/>
+            Syncfusion.Web.FileFormatsBase<br/>
+		</td>
+	</tr>
+    <tr>
+       <td>
+			Syncfusion.JavaScript.DocumentEditor<br/>
+		</td>
+		<td>
+			Document Editor<br/>
+		</td>
+		<td>
+			EJ.DocumentEditor<br/>
+		</td>
+		<td>
+			-<br/>
+		</td>
+		<td>
+			-<br/>
+		</td>
+		<td>
+			Syncfusion.JavaScript<br/>
+            Syncfusion.Web.FileFormatsBase<br/>
+		</td>
+	</tr>
+	<tr>
+       <td>
+			Syncfusion.Web.FileFormats<br/>
+		</td>
+		<td>
+			DocIO<br/>XlsIO<br/>PDF<br/>PDF Viewer<br/>Presentation<br/><br/>
+		</td>
+		<td>
+			DocToPDFConverter.Base<br/>ExcelToPDFConverter.Base<br/>PresentationToPDFConverter.Base<br/>HtmlConverter.Base<br/>OfficeChartToImageConverter.WPF<br/>ExcelChartToImageConverter.WPF<br/>SfChart.WPF<br/>Shared.WPF<br/>
+		</td>
+		<td>
+			-<br/>
+		</td>
+		<td>
+			-<br/>
+		</td>
+		<td>
+            Syncfusion.Web.FileFormatsBase<br/>
+		</td>
+	</tr>
+    <tr>
+		<td>
+			Syncfusion.Web.Base<br/>
+		</td>
+    <td>
+			-<br/>
+		</td>
+		<td>
+			Linq.Base<br/>EJ<br/>EJ.Export<br/>
+		</td>
+		<td>
+			-<br/>
+		</td>
+		<td>
+			-<br/>
+		</td>
+		<td>
+			Syncfusion.JavaScript<br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Syncfusion.Web.FileFormatsBase<br/>
+		</td>
+		<td>
+			-<br/>
+		</td>
+		<td>
+			Compression.Base<br/>XlsIO.Base<br/>Pdf.Base<br/>DocIO.Base<br/>OfficeChart.Base<br/>Presentation.Base<br/>
+		</td>
+		<td>
+			-<br/>
+		</td>
+		<td>
+			-<br/>
+		</td>
+		<td>
+			-<br/>
+		</td>
+	</tr>
+</table>
