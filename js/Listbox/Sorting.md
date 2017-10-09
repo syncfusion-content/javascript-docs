@@ -41,4 +41,4 @@ api: /api/js/ejlistbox
   
   ![Sorting image](Sorting_Images\Sorting_img1.png)
    
-
+Virtual scrolling is not supported with Sorting.

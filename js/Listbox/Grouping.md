@@ -116,3 +116,4 @@ The grouping will be defined based on the “groupBy” API in fields object.
 
 ![](Grouping_images\Grouping_img2.png)
 
+I> Virtual scrolling is not supported with Grouping.
