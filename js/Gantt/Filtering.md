@@ -60,12 +60,12 @@ $("#filterColumn").click(function (args) {
 
 ## Clear all filtering in Gantt
 
-You can clear all the filtering condition done in the Gantt by using `clearFiltering` publib method. 
+You can clear all the filtering condition done in the Gantt by using `clearFiltering` public method. 
 The below code snippet explains the above behavior
 
 {% highlight js %}
 
-<button id="clearFilter">Cleart Filter</button>
+<button id="clearFilter">Clear Filter</button>
 
 <script type="text/javascript">
 $("#GanttContainer").ejGantt({

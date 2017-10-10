@@ -53,7 +53,7 @@ we can customize the stacked header cells with more options as described below.
 
 ### CSS Class
 
-You can provide external css styles to the stacked header with the help of cssClass property.
+You can provide external CSS styles to the stacked header with the help of cssClass property.
 
 {% highlight html %}
 
@@ -119,7 +119,7 @@ $("#treeGrid").ejTreeGrid({
 
 ### Tooltip
 
-We can have the customized tooltip for the stackedHeader text with the help of tooltip property. jsRender template script id can be assigned to this property to get tooltip.
+We can have the customized tooltip for the stackedHeader text with the help of tooltip property. JsRender template script id can be assigned to this property to get tooltip.
 
 {% highlight html %}
 
