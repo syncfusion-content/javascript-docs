@@ -89,7 +89,7 @@ $("#treeGrid").ejTreeGrid({
 
 ### Text Align
 
-There is an option to locate the stacked header text inside the header cell with textAlign property as follows.
+There is an option to align the stacked header text inside the header cell using `textAlign` property as follows.
 
 {% highlight html %}
 
@@ -119,7 +119,7 @@ $("#treeGrid").ejTreeGrid({
 
 ### Tooltip
 
-We can have the customized tooltip for the stackedHeader text with the help of tooltip property. JsRender template script id can be assigned to this property to get tooltip.
+We can have the customized tooltip for the stacked header text with the help of `tooltip` property. JsRender template script id can be assigned to this property to get tooltip.
 
 {% highlight html %}
 
