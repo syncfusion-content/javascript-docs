@@ -217,7 +217,7 @@ ionic serve
 
 ### Quick start application
 
-Get Syncfusion blank ionic3 project from this [link.](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ionic3sample-518091584) Then extract the project, folder holds following files
+Get Syncfusion blank ionic3 project from this [link.](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ionic3sample205835827) Then extract the project, folder holds following files
 
 ![](ionic_images/blankionic3_img.png)
 
