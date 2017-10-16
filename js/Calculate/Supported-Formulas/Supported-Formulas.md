@@ -296,11 +296,9 @@ The following are the list of formulas supported in Calculate library,
 
 [NORM.INV](/js/calculate/supported-formulas/statistical#norminv)
 
-[NORM.S.DIST](/js/calculate/supported-formulas/statistical#normsdist-1)
+[NORM.S.DIST](/js/calculate/supported-formulas/statistical#normsdist)
 
 [NORM.S.INV](/js/calculate/supported-formulas/statistical#normsinv)
-
-[NORMSDIST](/js/calculate/supported-formulas/statistical#normsdist)
 
 [NOT](/js/calculate/supported-formulas/logical-formulas#not)
 
