@@ -48,7 +48,7 @@ $ sudo npm install -g cordova ionic
 To create an Ionic 3 latest project with Syncfusion components, we need to follow the below steps.
 
 
-**Step 1**:  Update to latest version of the ionic cli. Run the below commands.
+**Step 1**:  Update to latest version of the ionic CLI. Run the below commands.
 
 #### Windows
 
@@ -159,7 +159,7 @@ Then refer our scripts and CSS files in index.html file like below from the inst
 {% endhighlight %}
 
 
-**Note**: If you don’t want to install the references from npm, you can simply use the cdn links or local reference to refer Syncfusion references.
+**Note**: If you don’t want to install the references from npm, you can simply use the CDN links or local reference to refer Syncfusion references.
 
 **Step 6**:  Now you can initialize our component in the html,ts file.
 
