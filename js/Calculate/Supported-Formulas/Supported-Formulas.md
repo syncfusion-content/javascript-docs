@@ -110,6 +110,8 @@ The following are the list of formulas supported in Calculate library,
 
 [COUNTBLANK](/js/calculate/supported-formulas/statistical#countblank)
 
+[COUNTIF](/js/calculate/supported-formulas/statistical#countif)
+
 [CSC](/js/calculate/supported-formulas/math-trigonometry#csc)
 
 [CSCH](/js/calculate/supported-formulas/math-trigonometry#csch)
@@ -276,6 +278,8 @@ The following are the list of formulas supported in Calculate library,
 
 [MINUTE](/js/calculate/supported-formulas/date-time#minute)
 
+[MMULT](/js/calculate/supported-formulas/math-trigonometry#mmult)
+
 [MONTH](/js/calculate/supported-formulas/date-time#month)
 
 [N](/js/calculate/supported-formulas/information-formulas#n)
@@ -292,9 +296,11 @@ The following are the list of formulas supported in Calculate library,
 
 [NORM.INV](/js/calculate/supported-formulas/statistical#norminv)
 
-[NORM.S.DIST](/js/calculate/supported-formulas/statistical#normsdist)
+[NORM.S.DIST](/js/calculate/supported-formulas/statistical#normsdist-1)
 
 [NORM.S.INV](/js/calculate/supported-formulas/statistical#normsinv)
+
+[NORMSDIST](/js/calculate/supported-formulas/statistical#normsdist)
 
 [NOT](/js/calculate/supported-formulas/logical-formulas#not)
 
@@ -328,6 +334,8 @@ The following are the list of formulas supported in Calculate library,
 
 [PROPER](/js/calculate/supported-formulas/text-formulas#proper)
 
+[PV](/js/calculate/supported-formulas/financial-formulas#pv)
+
 [RANK.EQ](/js/calculate/supported-formulas/statistical#rankeq)
 
 [REPLACE](/js/calculate/supported-formulas/text-formulas#replace)
@@ -335,6 +343,12 @@ The following are the list of formulas supported in Calculate library,
 [REPT](/js/calculate/supported-formulas/text-formulas#rept)
 
 [RIGHT](/js/calculate/supported-formulas/text-formulas#right)
+
+[ROUND](/js/calculate/supported-formulas/math-trigonometry#round)
+
+[ROUNDDOWN](/js/calculate/supported-formulas/math-trigonometry#rounddown)
+
+[ROUNDUP](/js/calculate/supported-formulas/math-trigonometry#roundup)
 
 [ROW](/js/calculate/supported-formulas/information-formulas#row)
 
@@ -364,6 +378,8 @@ The following are the list of formulas supported in Calculate library,
 
 [STANDARDIZE](/js/calculate/supported-formulas/statistical#standardize)
 
+[STDEV](/js/calculate/supported-formulas/statistical#stdev)
+
 [STDEV.P](/js/calculate/supported-formulas/statistical#stdevp)
 
 [STDEV.S](/js/calculate/supported-formulas/statistical#stdevs)
@@ -379,6 +395,8 @@ The following are the list of formulas supported in Calculate library,
 [SUM](/js/calculate/supported-formulas/math-trigonometry#sum)
 
 [SUMIF](/js/calculate/supported-formulas/math-trigonometry#sumif)
+
+[SUMPRODUCT](/js/calculate/supported-formulas/math-trigonometry#sumproduct)
 
 [T](/js/calculate/supported-formulas/text-formulas#t)
 
@@ -421,6 +439,8 @@ The following are the list of formulas supported in Calculate library,
 [VARA](/js/calculate/supported-formulas/statistical#vara)
 
 [VARPA](/js/calculate/supported-formulas/statistical#varpa)
+
+[VLOOKUP](/js/calculate/supported-formulas/lookup-and-reference#vlookup)
 
 [WEEKDAY](/js/calculate/supported-formulas/date-time#weekday)
 
