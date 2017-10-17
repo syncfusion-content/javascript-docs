@@ -404,6 +404,8 @@ The following are the list of formulas supported in Calculate library,
 
 [TAN](/js/calculate/supported-formulas/math-trigonometry#tan)
 
+[TEXT](/js/calculate/supported-formulas/text-formulas#text)
+
 [TIME](/js/calculate/supported-formulas/date-time#time)
 
 [TIMEVALUE](/js/calculate/supported-formulas/date-time#timevalue)
