@@ -603,6 +603,34 @@ _T( value )_
 
 
 
+## TEXT
+
+
+
+The `Text` function converts the supplied value into text by using the user specified format.
+
+
+
+**Syntax**
+
+
+
+_TEXT(value, format_text)_
+
+
+
+**where:**
+
+
+
+* value is a numeric value to convert to text.
+
+
+
+* format_text is a format text to apply to the supplied value.
+
+
+
 ## TRIM
 
 
