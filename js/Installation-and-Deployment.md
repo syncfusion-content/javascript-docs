@@ -123,7 +123,7 @@ Using the `Manage NuGet Packages` in Visual Studio, NuGet packages can be update
 
 4. Select NuGet Package in the list and click `Update`. When the update is complete, close and re-open all open instances of Visual Studio.
 
-   N> By clicking `Update All` button, all NuGet packages are getting update. When the update is complete, close and re-open all open instances of Visual Studio.
+   N> By clicking `Update All` button, all NuGet packages are getting update. When the update is complete, close and re-open all open instances of Visual Studio. If we cannot get the latest package updates, because of the installed Syncfusion NuGet packages prior version of 2015 Volume 2(V13.2.0.29).  Syncfusion JavaScript NuGet package naming structure has changed from 2015 Volume 2(v13.2.0.29). Navigate below [NuGet Package Structure](https://help.syncfusion.com/js/installation-and-deployment#nuget-packages-structure) topic for more information about this.
 
 
 ## Configuring Syncfusion Bower Packages
@@ -344,7 +344,7 @@ jspm update syncfusion=github:syncfusion/JavaScript-Widgets
 
 ## NuGet Packages Structure
 
-The following structure is maintained for the JavaScript platform NuGet packages from 2015 Volume 2.
+The following structure is maintained for JavaScript platform NuGet packages from 2015 Volume 2(v13.2.0.29). If we cannot get the latest package updates, because of the installed Syncfusion NuGet packages prior version of 2015 Volume 2(V13.2.0.29). To update Syncfusion NuGet packages latest or above version of 2015 Volume 1 Service Pack-2(v13.1.0.30), uninstall the existing packages and install the following required package manually.
 
 <table>
    <tr>
