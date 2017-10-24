@@ -28,7 +28,7 @@ To disable the default tooltip, You need to set `selectedItems.tooltip` as `null
 $("#diagram").ejDiagram({
 	//Disable tooltip during interaction
 	selectedItems: {
-		tooltip: null
+		constraints:ej.datavisualization.Diagram.SelectorConstraints.All &~  ej.datavisualization.Diagram.SelectorConstraints.Tooltip
 	}
 });
 
