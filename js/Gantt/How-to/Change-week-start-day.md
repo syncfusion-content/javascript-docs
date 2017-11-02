@@ -7,21 +7,21 @@ control: Gantt
 documentation: ug
 ---
 
-#Change week start day in Time scale modes
+# Change week start day in month timescale mode
 
 ## In month timescaleStartDateMode
 
-By default week header in month schedule mode will be rendered with month start day in timescaleStartDateMode as month. Using below code example we can customize the week start day in month schedule mode
+When setting the `timescaleStartDateMode` property as month, the project will start from the first date of the same month of the first task in a project. Using below code example we can change the week start day of the project start date in month timescale mode.
 
 {% highlight javascript %}
 
 $("#Gantt").ejGantt ({
        scheduleHeaderSettings: {
-                    scheduleHeaderType: ej.Gantt.ScheduleHeaderType.Month,
-					timescaleStartDateMode: ej.Gantt.TimescaleRoundMode.Month,
-                    weekStartDay: 1,
-                    monthHeaderFormat: "MMM yyyy",
-                    weekHeaderFormat: "M/dd"
+                   scheduleHeaderType: ej.Gantt.ScheduleHeaderType.Month,
+				   timescaleStartDateMode: ej.Gantt.TimescaleRoundMode.Month,
+                   weekStartDay: 1,
+                   monthHeaderFormat: "MMM yyyy",
+                   weekHeaderFormat: "M/dd"
                 },
        load: function () {         
                     this._enableMonthStart = false;
@@ -34,7 +34,7 @@ $("#Gantt").ejGantt ({
 
 ## In year timescaleStartDateMode
 
-By default month header in month schedule mode will be rendered with year starting date in timescaleStartDateMode as year. Using below code example we can customize the week start day in month schedule mode
+When setting the `timescaleStartDateMode` property as Year, the project will start from the first date of the same year to which the first task in a project starts. Using below code example we can change the week start day of the project start date in year timescale mode.
 
 {% highlight javascript %}
 
