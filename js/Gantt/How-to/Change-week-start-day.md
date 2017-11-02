@@ -9,7 +9,7 @@ documentation: ug
 
 # Change week start day in month timescale mode
 
-## In month timescaleStartDateMode
+## Using start date mode as Month
 
 When setting the `timescaleStartDateMode` property as month, the project will start from the first date of the same month of the first task in a project. Using below code example we can change the week start day of the project start date in month timescale mode.
 
@@ -32,7 +32,7 @@ $("#Gantt").ejGantt ({
 
 ![](/js/Gantt/How-to/Change-Weekstart-Day-images/image-1.png)
 
-## In year timescaleStartDateMode
+## Using start date mode as Year
 
 When setting the `timescaleStartDateMode` property as Year, the project will start from the first date of the same year to which the first task in a project starts. Using below code example we can change the week start day of the project start date in year timescale mode.
 
