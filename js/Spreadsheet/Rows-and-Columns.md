@@ -196,14 +196,14 @@ You can show or hide the rows and columns in Spreadsheet using methods and conte
 You can hide the rows dynamically by using one of the following ways,
 
 * Click "Hide" option in row header context menu.
-* Hide the rows using [`hideRow`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:hiderow "hideRow") method.
+* Hide the rows using [`hideRow`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:hiderow "hideRow") method and [`hideRows`](https://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-hiderows "hideRows") option in [`sheets`](https://help.syncfusion.com/api/js/ejspreadsheet#members:sheets "sheets") property.
 
 #### Hide Column
 
 You can hide the columns dynamically by using one of the following ways,
 
 * Click "Hide" option in column header context menu.
-* Hide the columns using [`hideColumn`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:hidecolumn "hideColumn") method.
+* Hide the columns using [`hideColumn`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:hidecolumn "hideColumn") method and [`hideColumns`](https://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-hidecolumns "hideColumns") option in [`sheets`](https://help.syncfusion.com/api/js/ejspreadsheet#members:sheets "sheets") property.
 
 The following code example describes the above behavior.
 
@@ -285,8 +285,10 @@ You can change [`columnWidth`](https://help.syncfusion.com/api/js/ejspreadsheet#
 You can perform resizing using one of the following ways,
 
 * Resize option in column header and row header.
-* set the column width by using [`setColWidth`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlresize-setcolwidth "setColWidth") method or [`columnWidth`](https://help.syncfusion.com/api/js/ejspreadsheet#members:columnwidth "columnWidth") property.
-* set the row height by using [`setRowHeight`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlresize-setrowheight "setRowHeight") method or [`rowHeight`](https://help.syncfusion.com/api/js/ejspreadsheet#members:rowheight "rowHeight") property.
+* Set the column width by using [`setColWidth`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlresize-setcolwidth "setColWidth") method or [`columnWidth`](https://help.syncfusion.com/api/js/ejspreadsheet#members:columnwidth "columnWidth") property.
+* Set the row height by using [`setRowHeight`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlresize-setrowheight "setRowHeight") method or [`rowHeight`](https://help.syncfusion.com/api/js/ejspreadsheet#members:rowheight "rowHeight") property.
+* To fit the height of rows in the spreadsheet use[`fitHeight`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlresize-fitheight "fitHeight") method.
+* To fit the width of columns in the spreadsheet use[`fitWidth`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlresize-fitwidth "fitWidth") method.
 
 The following code example describes the above behavior.
 

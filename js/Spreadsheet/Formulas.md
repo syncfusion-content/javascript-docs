@@ -351,3 +351,5 @@ To Update the formula bar in Spreadsheet. Use  [`updateFormulaBar`](https://help
 
 To sum a row or column of numbers, select a cell next to the numbers you want to sum, click `AutoSum` on the `HOME` tab and press enter. To enable auto sum set [`allowAutoSum`](https://help.syncfusion.com/api/js/ejspreadsheet#members:allowautosum "allowAutoSum") API as `true`.
 The auto sum options in ribbon is used to perform basic operations like sum, average, count, minimum, maximum etc.
+
+You can also perform auto sum operations by using [`autoSum`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlribbon-autosum "autoSum")method.

@@ -85,7 +85,8 @@ $(function () {
 
 {% endhighlight %}
 
-To load excel documents initially from server side, set [`importOnLoad`](https://help.syncfusion.com/api/js/ejspreadsheet#members:importsettings-importonload "importOnLoad") as `true` and assign document stream or URL in the server, and also you can define password while importing in the spreadsheet by using [`password`](https://help.syncfusion.com/api/js/ejspreadsheet#members:importsettings-password "password") API. The code snippets for document initial load from server side are as follows,
+To load excel documents initially from server side, set [`importOnLoad`](https://help.syncfusion.com/api/js/ejspreadsheet#members:importsettings-importonload "importOnLoad") as `true` and assign document stream or URL in the server, and also you can define password while importing in the spreadsheet by using [`password`](https://help.syncfusion.com/api/js/ejspreadsheet#members:importsettings-password "password") API.
+The code snippets for document initial load from server side are as follows,
 
 {% highlight html %}
 

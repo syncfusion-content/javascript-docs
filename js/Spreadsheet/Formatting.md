@@ -301,11 +301,11 @@ Cell styles is a collection of pre-defined styles with multiple formatting chara
 
 ### Format painter
 
-The `format painter` lets you copy all of the formatting from a cell or range of cells and apply the same formatting to another cell or range of cells including font size, color, style etc.
+The `format painter` lets you copy all of the formatting from a cell or range of cells and apply the same formatting to another cell or range of cells including font size, color, style etc. Use [`allowFormatPainter`](https://help.syncfusion.com/api/js/ejspreadsheet#members:allowformatpainter "allowFormatPainter") API to enable/disable format painter option in spreadsheet.
 
 ### Clear	
 
-Clear option is used to clear cell contents, formats or any attached comments from a cell or range of cells in worksheet. Use `allowClear` API to enable/disable clear option in Spreadsheet.You have following clear options in Spreadsheet,
+Clear option is used to clear cell contents, formats or any attached comments from a cell or range of cells in worksheet. Use [`allowClear`](https://help.syncfusion.com/api/js/ejspreadsheet#members:allowclear "allowClear") API to enable/disable clear option in Spreadsheet.You have following clear options in Spreadsheet,
     
 1) Clear All 
 

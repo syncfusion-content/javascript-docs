@@ -25,6 +25,8 @@ Data presentation is helpful for proper representation of data in Spreadsheet. Y
 
 You can insert the controls like Button, Checkbox, Dropdown list and Date picker. You can use [`allowCellType`](https://help.syncfusion.com/api/js/ejspreadsheet#members:allowcelltype "allowCellType") property to enable/disable cell type operations.
 
+To enable or disable auto rendering of cell type in the Spreadsheet use [`allowAutoCellType`](https://help.syncfusion.com/api/js/ejspreadsheet#members:allowautocelltype "allowAutoCellType") property.
+
 ### To insert a Cell Type.
 
 You can insert the cell type to the selected range of cells by one of the following ways
@@ -97,13 +99,13 @@ You can perform the following customizations for chart. These are available in D
 
 <table>
     <colgroup><col width="180px" /></colgroup>
-    <tr><th>Feature</br></th><th>Description</br></th></tr>
-    <tr><td>Add Chart Elements</br></td><td>You can add a chart element like chart axes, legends, chart title, axis title, data labels and grid lines.</br></td></tr>
-    <tr><td>Switch Row/Column</br></td><td>You can switch the row of the chart to column of the chart and vice versa.</br></td></tr>
-    <tr><td>Select Data</br></td><td>You can modify the data source of Chart.</br></td></tr>
-    <tr><td>Chart Type</br></td><td>You can change the type of the chart using Chart Type dialog.</br></td></tr>
-    <tr><td>Height and Width</br></td><td>You can change the height and width of the chart.</br></td></tr>
-    <tr><td>Chart Themes</br></td><td>You can change the theme of the chart. The available themes are saffron, lemon and azure in dark, light themes.</br></td></tr>
+    <tr><th>Feature</br></th><th>API</br></th><th>Description</br></th></tr>
+    <tr><td>Add Chart Elements</br></td><td>{{'[`updateChartElement`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlchart-updatechartelement  "updateChartElement")'| markdownify }}</br></td><td>You can add a chart element like chart axes, legends, chart title, axis title, data labels and grid lines.</br></td></tr>
+    <tr><td>Switch Row/Column</br></td><td>{{'[`switchRowColumn`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlchart-switchrowcolumn  "switchRowColumn")'| markdownify }}</br></td><td>You can switch the row of the chart to column of the chart and vice versa.</br></td></tr>
+    <tr><td>Select Data</br></td><td>{{'[`changeDataRange`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlchart-changedatarange  "changeDataRange")'| markdownify }}</br></td><td>You can modify the data source of Chart.</br></td></tr>
+    <tr><td>Chart Type</br></td><td>{{'[`changeType`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlchart-changetype  "changeType")'| markdownify }}</br></td><td>You can change the type of the chart using Chart Type dialog.</br></td></tr>
+    <tr><td>Height and Width</br></td><td>{{'[`height`]((https://help.syncfusion.com/api/js/ejspreadsheet#members:chartsettings-height  "height")'| markdownify }} and {{'[`width`](https://help.syncfusion.com/api/js/ejspreadsheet#members:chartsettings-width  "width")'| markdownify }}</br></td><td>You can change the height and width of the chart.</br></td></tr>
+    <tr><td>Chart Themes</br></td><td>{{'[`changeTheme`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlchart-changetheme "changeTheme")'| markdownify }}</br></td><td>You can change the theme of the chart. The available themes are saffron, lemon and azure in dark, light themes.</br></td></tr>
 </table>
 
 The following code example describes the above behavior.
@@ -321,7 +323,10 @@ The following output is displayed as a result of the above code example.
 
 ## Picture
 
-You can insert a picture by selecting the "Pictures" button under Illustrations group of INSERT Tab in ribbon.
+You can insert a picture by selecting the "Pictures" button under Illustrations group of INSERT Tab in ribbon, To enable/disable picture operations in spreadsheet use [`allowPictures`](https://help.syncfusion.com/api/js/ejspreadsheet#members:picturesettings-allowpictures "allowPictures") option in [`pictureSettings`](https://help.syncfusion.com/api/js/ejspreadsheet#members:picturesettings "pictureSettings") 
+
+You can also insert a picture by using[`setPicture`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlshape-setpicture "setPicture") method.
+
 
 ### Picture Customization
 
@@ -329,11 +334,11 @@ You can perform the following customizations for picture. These are available in
 
 <table>
     <colgroup><col width="150px" /></colgroup>
-    <tr><th>Feature</br></th><th>Description</br></th></tr>
-    <tr><td>Change Picture</br></td><td>You can change the picture with existing picture.</br></td></tr>
-    <tr><td>Reset Picture</br></td><td>You can reset the changes done in the picture such as border changes, height and width changes.</br></td></tr>
-    <tr><td>Picture Border</br></td><td>You can add border to the picture. You have Border Color, Border Type and Border weight options to draw a border.</br></td></tr>
-    <tr><td>Height and Width</br></td><td>You can change the height and width of the picture.</br></td></tr>
+    <tr><th>Feature</br></th><th>API</br></th><th>Description</br></th></tr>
+    <tr><td>Change Picture</br></td><td> {{'[`changePicture`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlshape-changepicture  "changePicture")'| markdownify }}</br></td><td>You can change the picture with existing picture.</br></td></tr>
+    <tr><td>Reset Picture</br></td><td> {{'[`resetPicture`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlshape-resetpicture  "resetPicture")'| markdownify }}</br></td><td>You can reset the changes done in the picture such as border changes, height and width changes.</br></td></tr>
+    <tr><td>Picture Border</br></td><td> {{'[`changePictureBorder`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlshape-changepictureborder  "changePictureBorder")'| markdownify }}</br></td><td>You can add border to the picture. You have Border Color, Border Type and Border weight options to draw a border.</br></td></tr>
+    <tr><td>Height and Width</br></td><td> {{'[`height`](https://help.syncfusion.com/api/js/ejspreadsheet#members:picturesettings-height  "height")'| markdownify }} and {{'[`width`](https://help.syncfusion.com/api/js/ejspreadsheet#members:picturesettings-width  "width")'| markdownify }}</br></td><td>You can change the height and width of the picture.</br></td></tr>
 </table>
 
 ## Pivot Table
@@ -437,6 +442,7 @@ You can do this by one of the following ways,
 
 * Using "Sort By Color" option in filter dialog to perform sorting by cell color or font color.
 * Using context menu to select "Put Selected Cell Color To The Top" or "Put Selected Font Color To The Top" in Sort option.
+* Using [`sortByColor`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlsort-sortbycolor "sortByColor") method. 
 
 ## Table
 

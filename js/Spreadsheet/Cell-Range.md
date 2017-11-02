@@ -243,6 +243,13 @@ function loadComplete(args) {
 The following output is displayed as a result of the above code example.
 ![](Cell-Ranges_images/Cell-Ranges_img2.png)
 
+#### To clear formatted invalid data
+
+You can clear the highlighted invalid data by using following ways,
+
+* Using "Clear Formats" option in Data Validation button under Data Tools group of DATA Tab in ribbon.
+* Using [`clearHighlightedValData`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlvalidate-clearhighlightedvaldata "clearHighlightedValData") method.
+
 ## Drag and Drop
 
 Drag and drop is used to pick a selected cells and drop it into a new place on the worksheet. You can use [`allowDragAndDrop`](https://help.syncfusion.com/api/js/ejspreadsheet#members:allowdraganddrop "allowDragAndDrop") property to enable/disable drag and drop. 
@@ -447,6 +454,7 @@ You can do this by one of the following ways,
 
 * Using "Merge Cells" option in Merge & Center button under Alignment group of HOME Tab in ribbon.
 * Using [`mergeCells`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:mergecells "mergeCells") method.
+* Using [`mergeCells`](https://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-mergecells "mergeCells") option in [`sheets`](https://help.syncfusion.com/api/js/ejspreadsheet#members:sheets "sheets")property.
 
 ### Merge & Center
 
