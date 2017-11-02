@@ -22,6 +22,8 @@ You can scroll through worksheet using one of the following ways,
 
 To set height and width in spreadsheet use [`height`](https://help.syncfusion.com/api/js/ejspreadsheet#members:scrollsettings-height "height") and [`width`](https://help.syncfusion.com/api/js/ejspreadsheet#members:scrollsettings-width "width") property in [`scrollSettings`](https://help.syncfusion.com/api/js/ejspreadsheet#members:scrollsettings "scrollSettings"). The default value for [`height`](https://help.syncfusion.com/api/js/ejspreadsheet#members:scrollsettings-height "height") and [`width`](https://help.syncfusion.com/api/js/ejspreadsheet#members:scrollsettings-width "width") is `100%`. The height and width can be set in percentage and pixel. 
 
+You can also enable or disable sheet on demand by using [`allowSheetOnDemand`](https://help.syncfusion.com/api/js/ejspreadsheet#members:scrollsettings-allowsheetondemand "allowSheetOnDemand") property. It render only the active sheet element while paging remaining sheets are created one by one.
+
 The following code example describes the above behavior.
 
 {% highlight html %}
@@ -33,6 +35,7 @@ $(function () {
     $("#Spreadsheet").ejSpreadsheet({
         scrollSetting: {
             allowScrolling: true,
+            allowSheetOnDemand: true
             height: 400, // Height in pixel
             width: "50%" // Width in percentage
         }   

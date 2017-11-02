@@ -317,6 +317,15 @@ Clear option is used to clear cell contents, formats or any attached comments fr
 
 5) Clear Hyperlinks
 
+6) Clear Border
+
+7) Clear range
+
+8) Clear Range data
+
+9) Clear Undo Redo
+ 
+
 #### Clear All
 To clear content, format, comment, hyperlink etc. from a cell or range of cells, use clear all option in Spreadsheet. Use [`clearAll`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:clearall "clearAll") method to clear cells via code.
 
@@ -331,3 +340,15 @@ To clear [`comment`](https://help.syncfusion.com/js/spreadsheet/cell-range#comme
 
 #### Clear Hyperlinks
 To clear [`hyperlink`](https://help.syncfusion.com/js/spreadsheet/formatting#hyperlink "hyperlink") in a cell or range of cells use clear hyperlink option in Spreadsheet. Use `clearHyperlinks` method to clear hyperlinks via code.
+
+#### Clear Border
+To clear `border` in a cell or range of cells use clear border option in Spreadsheet. Use  [`clearBorder`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:clearborder "clearBorder") method to clear border via code.
+
+#### Clear Range
+To clear only the data in the range denoted by the specified range in Spreadsheet. Use  [`clearRange`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:clearrange "clearRange") method to clear range data via code.
+
+#### Clear Range Data
+To clear data in the specified range of cells based on the defined property in Spreadsheet. Use  [`clearRangeData`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:clearrangedata "clearRangeData") method to clear range data via code.
+
+#### Clear Undo Redo
+To clear undo and redo collections in the Spreadsheet. Use  [`clearUndoRedo`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:clearundoredo "clearUndoRedo") method to clear Undo and Redo collections via code.
