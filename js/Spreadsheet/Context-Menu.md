@@ -61,6 +61,35 @@ $(function () {
 });
 {% endhighlight %}
 
+## Context Menu Customization
+You can perform the following context menu customization options in spreadsheet.
+
+1) Add Item
+
+2) Change Data Source
+
+3) Disable Item
+
+4) Enable Item
+
+5) Remove Item
+
+
+#### Add Item
+To dynamically add items in the context menu. Use [`addItem`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlcmenu-additem "addItem") method to add items in context menu via code.
+
+#### Change Data Source
+To change data source in the context menu. Use [`changeDataSource`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlcmenu-changedatasource "changeDataSource") method to change data source in context menu via code.
+
+#### Disable Item
+To disable the items in the context menu. Use [`disableItem`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlcmenu-disableitem "disableItem") method to disable items in context menu via code.
+
+#### Enable Item
+To enable the items in the context menu. Use [`enableItem`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlcmenu-enableitem "enableItem") method to enable items in context menu via code.
+
+#### Remove Item
+To remove the items in the context menu. Use [`removeItem`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlcmenu-removeitem "removeItem") method to remove items in context menu via code.
+
 ![](Context-Menu_images/context-menu_img1.png)
 
 Contextmenu at Cell

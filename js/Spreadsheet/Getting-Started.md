@@ -58,6 +58,9 @@ Add a `div` container to render the Spreadsheet.
 
 Initialize the Spreadsheet by using the ejSpreadsheet method. The Spreadsheet is rendered based on default width and height. You can also customize the Spreadsheet dimension by setting the [`width`](https://help.syncfusion.com/api/js/ejspreadsheet#members:scrollsettings-width "width") and [`height`](https://help.syncfusion.com/api/js/ejspreadsheet#members:scrollsettings-height "height") property in [`scrollSettings`](https://help.syncfusion.com/api/js/ejspreadsheet#members:scrollsettings "scrollSettings").
 
+You can alse use [`showRibbon`](https://help.syncfusion.com/api/js/ejspreadsheet#members:showribbon "showRibbon")and [`showPager`](https://help.syncfusion.com/api/js/ejspreadsheet#members:showpager "showPager") property to show/hide ribbon and pager in the spreadsheet.
+
+
 {% highlight html %}
 
 <!DOCTYPE html>
