@@ -171,7 +171,7 @@ $("#GanttContainer").ejGantt({
 In Gantt, we can customize week start day by using [weekStartDay](/api/js/ejgantt#members:scheduleheadersettings-weekstartday) property.
 By default the weekStartDay will be assigned with 0 which specifies the start day of the week.
 
-In week schedule mode, week starts with sunday by default. But we can customize the week start day by using below code example
+In week schedule mode, week starts with Sunday by default. But we can customize the week start day by using below code example
  
 {% highlight javascript %}
 $("#GanttContainer").ejGantt({
