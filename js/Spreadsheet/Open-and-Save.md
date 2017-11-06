@@ -85,7 +85,8 @@ $(function () {
 
 {% endhighlight %}
 
-To load excel documents initially from server side, set [`importOnLoad`](https://help.syncfusion.com/api/js/ejspreadsheet#members:importonload "importOnLoad") as `true` and assign document stream or URL in the server. The code snippets for document initial load from server side are as follows,
+To load excel documents initially from server side, set [`importOnLoad`](https://help.syncfusion.com/api/js/ejspreadsheet#members:importsettings-importonload "importOnLoad") as `true` and assign document stream or URL in the server, and also you can define password while importing in the spreadsheet by using [`password`](https://help.syncfusion.com/api/js/ejspreadsheet#members:importsettings-password "password") API.
+The code snippets for document initial load from server side are as follows,
 
 {% highlight html %}
 
@@ -96,6 +97,7 @@ $(function () {
     $("#Spreadsheet").ejSpreadsheet({        
         importSettings: {
             importOnLoad: true,
+            password: "Spreadsheet" //It opens the excel file using this password.
             importMapper: "http://js.syncfusion.com/demos/ejservices/api/Spreadsheet/Import"
         }           
     });
@@ -197,7 +199,7 @@ You can dynamically open excel document by clicking the file menu in ribbon and 
 
 ## Save
 
-The Spreadsheet can save its data, style, format into an excel file. To enable save option in Spreadsheet set [`allowExporting`](https://help.syncfusion.com/api/js/ejspreadsheet#members:exportsettings-allowexporting "allowExporting") option in [`exportSettings`](https://help.syncfusion.com/api/js/ejspreadsheet#members:exportsettings "exportSettings") as `true`. Since Spreadsheet uses server side helper to save documents set [`excelUrl`](https://help.syncfusion.com/api/js/ejspreadsheet#members:exportsettings-excelurl "excelUrl") in [`exportSettings`](https://help.syncfusion.com/api/js/ejspreadsheet#members:exportsettings "exportSettings") option.
+The Spreadsheet can save its data, style, format into an excel file. To enable save option in Spreadsheet set [`allowExporting`](https://help.syncfusion.com/api/js/ejspreadsheet#members:exportsettings-allowexporting "allowExporting") option in [`exportSettings`](https://help.syncfusion.com/api/js/ejspreadsheet#members:exportsettings "exportSettings") as `true`. Since Spreadsheet uses server side helper to save documents set [`excelUrl`](https://help.syncfusion.com/api/js/ejspreadsheet#members:exportsettings-excelurl "excelUrl"),[`csvUrl`](https://help.syncfusion.com/api/js/ejspreadsheet#members:exportsettings-csvurl "csvUrl"),[`pdfUrl`](https://help.syncfusion.com/api/js/ejspreadsheet#members:exportsettings-pdfurl "pdfUrl") in [`exportSettings`](https://help.syncfusion.com/api/js/ejspreadsheet#members:exportsettings "exportSettings") option.
 
 {% highlight html %}
 
