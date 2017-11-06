@@ -117,6 +117,7 @@ You can do this by one of the following ways,
 
 * Using "Go To" option in Find and Select button of OTHERS tab in ribbon to open the Go To dialog.
 * Using Ctrl + G key to open the Go To dialog.
+* Using [`goTo`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlsearch-goto "goTo") method to perform Go To operation in spreadsheet. 
 
 ![](Searching_images/Searching_img6.png)
 
@@ -130,6 +131,8 @@ The following output is displayed as a result of goto to cell "F10".
 ## GoTo Special
 
 This feature is used to quickly select cells of a specified type within the worksheet. You can do this by following ways,
+
+* Using [`goToSpecial`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlsearch-gotospecial "goToSpecial") method to perform Go To special operation in spreadsheet. 
 
 * Using "Go to Special" option in Find and Select button of OTHERS tab in ribbon to open the Go To dialog.
 

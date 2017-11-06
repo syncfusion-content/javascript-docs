@@ -246,7 +246,7 @@ To understand the purpose of cell reference or table, you can define a meaningfu
 
 ### Initial Load
 
-You can add named ranges at initial load with `nameManager` API. The following code example describes the above behavior,
+To add named ranges at initial load by using [`nameManager`](https://help.syncfusion.com/api/js/ejspreadsheet#members:namemanager "nameManager") API, and also you can specify the name and address of the range by using [`name`](https://help.syncfusion.com/api/js/ejspreadsheet#members:namemanager-name "name") and [`refersto`](https://help.syncfusion.com/api/js/ejspreadsheet#members:namemanager-refersto "refersto") API. The following code example describes the above behavior,
 
 {% highlight html %}
 
@@ -330,9 +330,26 @@ N> Named Ranges will be displayed in Name Manger dialog box.
 
 ## Formula Bar
 
-Formula bar is used to edit or enter cell data in much easier way. To enable formula bar set [`allowFormulaBar`](https://help.syncfusion.com/api/js/ejspreadsheet#members:allowformulabar "allowFormulaBar") as `true`.
+Formula bar is used to edit or enter cell data in much easier way. To enable formula bar set [`allowFormulaBar`](https://help.syncfusion.com/api/js/ejspreadsheet#members:allowformulabar "allowFormulaBar") as `true`.You have following formula bar options in Spreadsheet.
+
+1) Hide Formula Bar
+
+2) Show Formula Bar
+
+3) Update Formula Bar
+
+#### Hide Formula Bar
+To hide the formula bar in Spreadsheet. Use  [`hideFormulaBar`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:hideformulabar "hideFormulaBar") method to hide formula bar via code.
+
+#### Show Formula Bar
+To show the formula bar in Spreadsheet. Use  [`showFormulaBar`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:showformulabar "showFormulaBar") method to show formula bar via code.
+
+#### Update Formula Bar
+To Update the formula bar in Spreadsheet. Use  [`updateFormulaBar`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:updateformulabar "updateFormulaBar") method to Update formula bar via code.
 
 ## Auto Sum
 
 To sum a row or column of numbers, select a cell next to the numbers you want to sum, click `AutoSum` on the `HOME` tab and press enter. To enable auto sum set [`allowAutoSum`](https://help.syncfusion.com/api/js/ejspreadsheet#members:allowautosum "allowAutoSum") API as `true`.
 The auto sum options in ribbon is used to perform basic operations like sum, average, count, minimum, maximum etc.
+
+You can also perform auto sum operations by using [`autoSum`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlribbon-autosum "autoSum")method.

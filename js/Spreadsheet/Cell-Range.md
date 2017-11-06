@@ -70,6 +70,44 @@ function loadComplete(args) {
 The following output is displayed as a result of the above code example.
 ![](Cell-Ranges_images/Cell-Ranges_img1.png)
 
+You have following Comment options in Spreadsheet.
+
+1) Edit Comment
+
+2) Find Next Comment
+
+3) Find Previous Comment
+
+4) Get Comment
+
+5) Show All Comments
+
+6) Show Hide Comment
+
+7) User Name
+
+#### Edit Comment
+To edit the comment in the Spreadsheet. Use  [`editComment`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlcomment-editcomment "editComment") method to edit comment via code.
+
+#### Find Next Comment
+To find the next comment in the Spreadsheet. Use  [`findNextComment`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlcomment-findnextcomment "findNextComment") method to find next comment via code.
+
+#### Find previous Comment
+To find the previous comment in the Spreadsheet. Use  [`findPrevComment`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlcomment-findprevcomment "findPrevComment") method to find previous comment via code.
+
+#### Get Comment
+To get the comment in the Spreadsheet. Use  [`getComment`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlcomment-getcomment "getComment") method to get the comment via code.
+
+#### Show All Comments
+To show all the comments in the Spreadsheet. Use  [`showAllComments`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlcomment-showallcomments "showAllComments") method to show all comments via code.
+
+#### Show Hide Comment
+To show or hide the specific comment in the Spreadsheet. Use  [`showHideComment`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlcomment-showhidecomments "showHideComment") method to show or hide the specified comment via code.
+
+#### User Name
+To define the username for the Spreadsheet which is displayed in comment. Use  [`userName`](https://help.syncfusion.com/api/js/ejspreadsheet#members:username "userName") member to define user name for a comment via code.
+
+
 ## Cell Navigation
 
 Cell navigation is used to navigate through the cells using keyboard. You can use [`allowKeyboardNavigation`](https://help.syncfusion.com/api/js/ejspreadsheet#members:allowkeyboardnavigation "allowKeyboardNavigation") property to enable/disable cell navigation. The following list of keys used for cell navigation are,
@@ -204,6 +242,13 @@ function loadComplete(args) {
 
 The following output is displayed as a result of the above code example.
 ![](Cell-Ranges_images/Cell-Ranges_img2.png)
+
+#### To clear formatted invalid data
+
+You can clear the highlighted invalid data by using following ways,
+
+* Using "Clear Formats" option in Data Validation button under Data Tools group of DATA Tab in ribbon.
+* Using [`clearHighlightedValData`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlvalidate-clearhighlightedvaldata "clearHighlightedValData") method.
 
 ## Drag and Drop
 
@@ -409,6 +454,7 @@ You can do this by one of the following ways,
 
 * Using "Merge Cells" option in Merge & Center button under Alignment group of HOME Tab in ribbon.
 * Using [`mergeCells`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:mergecells "mergeCells") method.
+* Using [`mergeCells`](https://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-mergecells "mergeCells") option in [`sheets`](https://help.syncfusion.com/api/js/ejspreadsheet#members:sheets "sheets")property.
 
 ### Merge & Center
 

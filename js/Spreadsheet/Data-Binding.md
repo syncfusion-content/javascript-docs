@@ -196,7 +196,7 @@ Spreadsheet can bind data for individual cells in a sheet. The data may contain 
     </tr>
     <tr>
         <td>
-            index
+            {{'[`index`](https://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-rows-cells-index "index")'| markdownify }}
         </td>
         <td>
             To specify particular cell
@@ -204,7 +204,7 @@ Spreadsheet can bind data for individual cells in a sheet. The data may contain 
     </tr>
     <tr>
         <td>
-            value
+            {{'[`value`](https://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-rows-cells-value "value")'| markdownify }}
         </td>
         <td>
             To specify value. It may be string, integer, formula etc.
@@ -212,7 +212,7 @@ Spreadsheet can bind data for individual cells in a sheet. The data may contain 
     </tr>
     <tr>
         <td>
-            style
+            {{'[`style`](https://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-rows-cells-style "style")'| markdownify }}
         </td>
         <td>
             To specify style in the cell
@@ -220,7 +220,7 @@ Spreadsheet can bind data for individual cells in a sheet. The data may contain 
     </tr>
     <tr>
         <td>
-            format
+            {{'[`format`](https://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-rows-cells-format "format")'| markdownify }}
         </td>
         <td>
             To specify number format in the cell
@@ -228,7 +228,7 @@ Spreadsheet can bind data for individual cells in a sheet. The data may contain 
     </tr>
     <tr>
         <td>
-            comment
+            {{'[`comment`](https://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-rows-cells-comment "comment")'| markdownify }}
         </td>
         <td>
             To specify comment in the cell
@@ -236,10 +236,18 @@ Spreadsheet can bind data for individual cells in a sheet. The data may contain 
     </tr>
     <tr>        
         <td>
-            hyperlink
+            {{'[`hyperlink`](https://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-rows-cells-hyperlink "hyperlink")'| markdownify }}
         </td>
         <td>
             To specify hyperlink in the cell
+        </td>
+    </tr>
+    <tr>        
+        <td>
+            {{'[`isLocked`](https://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-rows-cells-islocked "isLocked")'| markdownify }}
+        </td>
+        <td>
+            To lock or unlock a specified cell
         </td>
     </tr>
 </table>
@@ -257,7 +265,7 @@ The individual row properties are listed below,
     </tr>
     <tr>
         <td>
-            index
+            {{'[`index`](https://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-rows-cells-index "index")'| markdownify }}
         </td>
         <td>
             To specify particular row
@@ -265,7 +273,7 @@ The individual row properties are listed below,
     </tr>
     <tr>
         <td>
-            height
+             {{'[`height`](https://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-rows-height "height")'| markdownify }}
         </td>
         <td>
             To specify height in the row
@@ -502,6 +510,38 @@ Spreadsheet can bind data for a sheet. The individual sheet properties are liste
         </td>
         <td>
             To show data source fields in column header
+        </td>
+    </tr>
+    <tr>
+        <td>
+            {{'[`colCount`](https://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-colcount  "colCount")'| markdownify }}
+        </td>
+        <td>
+             To define column count in the Spreadsheet.
+        </td>
+    </tr>
+    <tr>
+        <td>
+            {{'[`columnWidth`](https://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-columnwidth  "columnWidth")'| markdownify }}
+        </td>
+        <td>
+             To define column width in the Spreadsheet.
+        </td>
+    </tr>
+     <tr>
+        <td>
+            {{'[`rowCount`](https://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-rowcount  "rowCount")'| markdownify }}
+        </td>
+        <td>
+             To define row count in the Spreadsheet.
+        </td>
+    </tr>
+    <tr>
+        <td>
+            {{'[`sheetName`](https://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-sheetname  "sheetName")'| markdownify }}
+        </td>
+        <td>
+            To specify the name for sheet in the Spreadsheet.
         </td>
     </tr>
 </table>

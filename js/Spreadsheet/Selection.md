@@ -31,7 +31,7 @@ You can set default [`selectionType`](https://help.syncfusion.com/api/js/ejsprea
 
 ### Cell Selection 
 
-Cell selection is used to select a single or multiple cells. It can be performed using [`selectRange`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlselection-selectrange "selectRange") method. 
+Cell selection is used to select a single or multiple cells. It can be performed using [`selectRange`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlselection-selectrange "selectRange") and [`performSelection`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:performselection "performSelection") method. 
 The following code example describes the above behavior,
 
 {% highlight html %}
@@ -58,7 +58,12 @@ The following output is displayed as a result of the above code example.
 
 ### Row Selection 
 
-Row selection is used to select a single or multiple rows. It can be performed using [`selectRows`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlselection-selectrows "selectRows") method.
+Row selection is used to select a single or multiple rows. 
+
+To select the multiple rows use [`selectRows`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlselection-selectrows "selectRows") method.
+
+To select a single row use  [`selectRow`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlselection-selectrow "selectRow") method.
+
 The following code example describes the above behavior,
 
 {% highlight html %}
@@ -87,7 +92,12 @@ N> This type can be set as default by setting [`selectionType`](https://help.syn
 
 ### Column Selection
 
-Column selection is used to select a single or multiple columns. It can be performed using [`selectColumns`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlselection-selectcolumns "selectColumns") method.
+Column selection is used to select a single or multiple columns.
+
+To select multiple columns use [`selectColumns`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlselection-selectcolumns "selectColumns") method.
+
+To select single column use [`selectColumn`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlselection-selectcolumn "selectColumn") method.
+
 The following code example describes the above behavior,
 
 {% highlight html %}
