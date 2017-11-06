@@ -229,6 +229,7 @@ You can apply filtering by one of the following ways,
 
 * Using "Filter" option in Sort & Filter button under Editing group of HOME Tab in ribbon.
 * Using "Filter" button under Sort and Filter group of DATA Tab in ribbon.
+* Using[`filter`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlfilter-filter "filter") method.
 
 You have following options in Filtering.
 

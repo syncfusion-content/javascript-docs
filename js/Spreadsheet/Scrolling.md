@@ -17,6 +17,7 @@ You can scroll through worksheet using one of the following ways,
 * Using the arrow keys
 * Using the scroll bars
 * Using the mouse
+* Using[`scrollToCell`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlscroll-scrolltocell "scrollToCell") method.
 
 ## Set height and width for Scrolling
 
