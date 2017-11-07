@@ -10,7 +10,7 @@ api: /api/js/ejsparkline
 
 ## Axis Customize 
 
-The Sparkline axis can be collapsed using visible property in [`axisLineSetting`](../api/ejsparkline#members:axisLineSettings) and this not applicable for win-loss. You can customize [`color`](../api/ejsparkline#members:axisLineSettings-color), [`width`](../api/ejsparkline#members:axisLineSettings-width) and [`dash array`](../api/ejsparkline#members:axisLineSettings-dashArray) of axis line.
+The Sparkline axis can be collapsed using visible property in [`axisLineSetting`](../api/ejsparkline#members:axislineSettings) and this not applicable for win-loss. You can customize [`color`](../api/ejsparkline#members:axislineSettings-color), [`width`](../api/ejsparkline#members:axisLineSettings-width) and [`dash array`](../api/ejsparkline#members:axisLineSettings-dashArray) of axis line.
 
  {% highlight js %}
  

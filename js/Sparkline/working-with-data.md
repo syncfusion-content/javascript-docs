@@ -53,7 +53,7 @@ $("#container").ejSparkline({
 
 ![](/js/Sparkline/Working-with-Data_images/Working-with-Data_img2.png); 
 
-##AngularJS Support
+## AngularJS Support
 
 Typically, you will assign data directly to Sparkline using [`dataSource`](../api/ejsparkline#members:datasource) property. In AngularJS, you need to bind the variable, which contains data in the AngularJS scope object, to the dataSource property as illustrated in the following code example.
 

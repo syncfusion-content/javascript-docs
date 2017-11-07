@@ -10,7 +10,7 @@ api: /api/js/ejsparkline
 
 ## Range Band  
 
-The range band feature is used to highlight a particular range along the y-axis using start and end range property. You can also customize the color and opacity of the range band. 
+The [`range band`](../api/ejsparkline#members:rangebandsettings) feature is used to highlight a particular range along the y-axis using [`start`](../api/ejsparkline#members:rangebandsettings-startrange) and [`end`](../api/ejsparkline#members:rangebandsettings-endrange) range property. You can also customize the color and opacity of the range band. 
 
 {% highlight js %}
 

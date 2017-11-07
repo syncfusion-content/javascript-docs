@@ -81,7 +81,7 @@ On executing the above code, sample renders a default **Digital Gauge** with def
 
 ## Set Height and Width values
 
-Basic attributes of each canvas elements are height and width. You can set the height and width of the gauge.
+Basic attributes of each canvas elements are height and width. You can set the [`height`](../api/ejdigitalgauge#members:height) and [`width`](../api/ejdigitalgauge#members:width) of the gauge.
 
 {% highlight javascript %}
 
@@ -109,7 +109,7 @@ You can customize the **Digital Gauge** using different properties.
 
 * In this example, the **Digital Gauge** uses a welcome board in which the text color must be distinctly visible in nature. In order to meet this requirement, you can give some segment properties such as segment spacing, segment width, segment color, segment length and segment opacity.
 
-* **Character** type is used to define the Digital representation of the character. Thee five types of character representation are as follows:
+* **Character** [`type`](../api/ejdigitalgauge#members:items-charactersettings-type) is used to define the Digital representation of the character. Thee five types of character representation are as follows:
 
   * EightCrossEightDotMatrix
 
