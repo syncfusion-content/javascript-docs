@@ -147,7 +147,7 @@ Here the CustomerID field is mapped with text property of the field object. The 
 
 N>  In the above data manager configuration, “crossDomain” must be set to true to access the data from Web API.
 
- {% seealso %} [Cross domain](https://help.syncfusion.com/js/grid/data-binding) {% endseealso %}
+ {% seealso %} [Cross domain](https://help.syncfusion.com/js/datamanager/corsdatafetching) {% endseealso %}
 
 ![Alt text](Databinding_images\Databinding_img3.png)
 
