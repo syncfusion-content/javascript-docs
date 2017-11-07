@@ -8,7 +8,7 @@ documentation: ug
 api: /api/js/ejsparkline
 ---
 
-##Sparkline Dimensions
+## Sparkline Dimensions
 
 You can set the size directly on the Sparkline or to the container of the sparkline. When you do not specify the size, it takes 30px as the height and 50px as its width, by default.
 
