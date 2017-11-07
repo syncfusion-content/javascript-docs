@@ -34,9 +34,9 @@ The following code example describes the above behavior.
 {% highlight javascript %}
 $(function () {
     $("#Spreadsheet").ejSpreadsheet({
-        scrollSetting: {
+        scrollSettings: {
             allowScrolling: true,
-            allowSheetOnDemand: true
+            allowSheetOnDemand: true,
             height: 400, // Height in pixel
             width: "50%" // Width in percentage
         }   
