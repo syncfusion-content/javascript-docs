@@ -12,7 +12,7 @@ api : /api/js/ejdigitalgauge
 
 ## Inner and Outer Width Customization
 
-**Frames** are space that enclose the **Digital Gauge**. The inner width of the **Frame** is the distance between the canvas element and the frame. The outer width is the distance from the frame. The code example to set frame’s **innerWidth** and **outerWidth** is as follow.
+[`Frames`](../api/ejdigitalgauge#members:frame) are space that enclose the **Digital Gauge**. The inner width of the [`Frame`](../api/ejdigitalgauge#members:frame) is the distance between the canvas element and the frame. The outer width is the distance from the frame. The code example to set frame’s [`innerWidth`](../api/ejdigitalgauge#members:frame-innerwidth) and [`outerWidth`](../api/ejdigitalgauge#members:frame-outerwidth) is as follow.
 
 {% highlight html %}
 
@@ -49,7 +49,7 @@ Execute the above code examples to render the **Digital****Gauge** as follows.
 
 ## Setting Background Image
 
-For a better appearance, you can set the **background****image** for the **Digital Gauge** using the property **backgroundImageUrl.** 
+For a better appearance, you can set the [`background image`](../api/ejdigitalgauge#members:frame-backgroundimageurl) for the **Digital Gauge** using the property **backgroundImageUrl.** 
 
 {% highlight html %}
 

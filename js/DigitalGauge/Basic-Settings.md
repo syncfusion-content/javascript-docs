@@ -12,7 +12,7 @@ api : /api/js/ejdigitalgauge
 
 ## Height and Width Customization
 
-The basic customization for any control is to set the dimension. Here dimension refers to two major attributes such as **height** and **width**. The **height** and **width** assigned in the control will render the canvas element in the given size. The code example to set **height** and **width** is as follow.
+The basic customization for any control is to set the dimension. Here dimension refers to two major attributes such as **height** and [`width`](../api/ejdigitalgauge#members:width). The **height** and **width** assigned in the control will render the canvas element in the given size. The code example to set **height** and **width** is as follow.
 
 {% highlight html %}
 
@@ -50,7 +50,7 @@ Execute the above code examples to render the **Digital****Gauge** as follows.
 
 * For any display devices, the control will be rendered based on the space available in that device. For this purpose, **resizing** property is given to the **Digital Gauge** control. The **Digital Gauge** renders with a given value. 
 
-* When the browser resize the canvas element checks the dimension with its parent element. If there are any changes in parent dimension, **Gauge** control will changes the dimension based on its parent element change. This feature is enabled by using the property **isResponsive.**
+* When the browser resize the canvas element checks the dimension with its parent element. If there are any changes in parent dimension, **Gauge** control will changes the dimension based on its parent element change. This feature is enabled by using the property [`isResponsive`](../api/ejdigitalgauge#members:isresponsive)
 
 
 {% highlight html %}
@@ -84,7 +84,7 @@ Execute the above code examples to render the **Digital****Gauge** as follows.
 
 ## Themes
 
-**Themes** give the good appearance to the control. There are two types of **Themes** available for **Digital****Gauge** as follows
+[`Themes`](../api/ejdigitalgauge#members:themes) give the good appearance to the control. There are two types of **Themes** available for **Digital****Gauge** as follows
 
 * flatlight
 
