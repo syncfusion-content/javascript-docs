@@ -12,7 +12,7 @@ api : /api/js/ejdigitalgauge
 
 ## Appearance
 
-The opacity of the character is adjustable with the help of **opacity** property. The space between two characters are adjusted with **spacing** property as like in the segment settings.
+You can customize the character using [`character settings`](../api/ejdigitalgauge#members:items-charactersettings)The opacity of the character is adjustable with the help of [`opacity`](../api/ejdigitalgauge#members:items-charactersettings-opacity) property. The space between two characters are adjusted with [`spacing`](../api/ejdigitalgauge#members:items-charactersettings-spacing) property as like in the segment settings.
 
 {% highlight html %}
 
@@ -46,7 +46,7 @@ Execute the above code examples to render the **Digital****Gauge** as follows.
 
 ## Count and Type
 
-The number of text to be displayed can be limited by the attribute called **count**. In **Digital Gauge** five different types of characters are supported. They are as follows, 
+The number of text to be displayed can be limited by the attribute called [`count`](../api/ejdigitalgauge#members:items-charactersettings-count). In **Digital Gauge** five different [`types`](../api/ejdigitalgauge#members:items-charactersettings-types) of characters are supported. They are as follows, 
 
   * EightCrossEightDotMatrix
 
@@ -102,7 +102,7 @@ Execute the above code examples to render the **Digital****Gauge** as follows.
 
 ## Text Positioning
 
-The text in the **Digital****Gauge** is positioned with position object. This object contains two attributes such as **x** and **y.** The **x** variable positions the text in the horizontal axis and the **y** variable positions the text in the vertical axis.
+The text in the **Digital****Gauge** is positioned with [`position`](../api/ejdigitalgauge#members:items-position) object. This object contains two attributes such as [`x`](../api/ejdigitalgauge#members:items-position-x) and [`y`](../api/ejdigitalgauge#members:items-position-y). The [`x`](../api/ejdigitalgauge#members:items-position-x) variable positions the text in the horizontal axis and the [`y`](../api/ejdigitalgauge#members:items-position-y) variable positions the text in the vertical axis.
 
 {% highlight html %}
 
@@ -145,7 +145,15 @@ Execute the above code examples to render the **Digital****Gauge** as follows.
 
 ## Shadow Effects
 
-The text in the **Digital Gauge** is positioned with position object. This object contains two attributes such as **x** and **y.** The **x** variable positions the text in the horizontal axis and **y** variable positions the text in the vertical axis.
+You can add the shadow effects for text using following properties.
+
+* You can enable/disable the blurring effect for the shadows of the text using [`shadow blur`](../api/ejdigitalgauge#members:items-shadowblur) property.
+
+* You can specify the color of the text shadow using [`shadow color`](../api/ejdigitalgauge#members:items-shadowcolor) property.
+
+* You can set the [`x-offset`](../api/ejdigitalgauge#members:items-shadowoffsetx) value for the shadow of the text, indicating the location where it needs to be displayed.
+
+* You can set the [`y-offset`](../api/ejdigitalgauge#members:items-shadowoffsety) value for the shadow of the text, indicating the location where it needs to be displayed.
 
 {% highlight html %}
 
@@ -185,3 +193,22 @@ Execute the above code examples to render the **Digital****Gauge** as follows.
 
 ![](/js/DigitalGauge/Character-Settings_images/Character-Settings_img4.png)
 
+## Font Customization
+
+You can customize the font(../api/ejdigitalgauge#members:items-font) of the text as per your requirement. To customize the font, you have to set [`enableCustomFont`](../api/ejdigitalgauge#members:enablecustomfont). Following font customization options are available.
+
+* [`Font-family`](../api/ejdigitalgauge#members:items-font-fontfamily)- used to set the font-family of the text.
+
+* [`Font-style`](../api/ejdigitalgauge#members:items-font-fontstyle)- used to set the font-style of the text.
+
+* [`Font-size`](../api/ejdigitalgauge#members:items-font-size)- used to set the font-size of the text.
+
+{% highlight html %}
+
+<div id="DigitalCore"></div> 
+ 
+<script>
+$("#DigitalCore").ejDigitalGauge({items: [{enableCustomFont: true ,font: { fontFamily: "Segou", fontStyle: "bold", size: "18px"}}]});
+</script>
+
+{% endhighlight %}

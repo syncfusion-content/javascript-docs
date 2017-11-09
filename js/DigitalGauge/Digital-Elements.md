@@ -12,9 +12,9 @@ api : /api/js/ejdigitalgauge
 
 **Text Customization**
 
-* The attribute **value** refers the text displayed in the **Digital Gauge**. This text is applicable only for that item instead of all items. Text color is changed by using the property **textColor.**
+* The attribute [`value`](../api/ejdigitalgauge#members:value) refers the text displayed in the **Digital Gauge**. This text is applicable only for that item instead of all items. Text color is changed by using the property [`textColor`](../api/ejdigitalgauge#members:items-textcolor)
 
-* It is possible to align the text inside the **Digital Gauge** control by using the property **textAlign**. Two possible values for text align are as follows
+* It is possible to align the text inside the **Digital Gauge** control by using the property [`textAlign`](../api/ejdigitalgauge#members:items-textalign). Two possible values for text align are as follows
 
   * left
 

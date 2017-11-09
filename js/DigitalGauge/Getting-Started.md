@@ -179,7 +179,7 @@ On executing the above code, sample renders a default **Digital Gauge** as follo
 
 ## Add Location
 
-You can position the digital letters inside the canvas element using **location** property.
+You can position the digital letters inside the canvas element using [`position`](../api/ejdigitalgauge#members:items-position) property.
 
 {% highlight javascript %}
 
@@ -206,7 +206,7 @@ On executing the above code, sample renders a default **Digital Gauge** as follo
 
 ## Add Items collection
 
-You can add **Items collection** to display the temperature value as used in the Digital thermometer.
+You can add [`Items collection`](../api/ejdigitalgauge#members:items) to display the temperature value as used in the Digital thermometer.
 
 {% highlight javascript %}
 

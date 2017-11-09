@@ -12,7 +12,7 @@ api: /api/js/ejsparkline
 
 ## Local Data
 
-1. You can bind the data to the Sparkline by using [`dataSource`](../api/ejsparkline#members:datasource) property and then you need to map the **X** and **Y** value with **xName** and **yName** properties respectively.
+1. You can bind the data to the Sparkline by using [`dataSource`](../api/ejsparkline#members:datasource) property and then you need to map the **X** and **Y** value with [`xName`](../api/ejsparkline#members:xname) and [`yName`](../api/ejsparkline#members:yname) properties respectively.
 
 {% highlight javascript %}
 
