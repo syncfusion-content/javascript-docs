@@ -10,7 +10,7 @@ api : /api/js/ejdigitalgauge
 
 # Exporting the Digital Gauge
 
-**Digital Gauge** has an exporting feature where **Gauge** control is converted into image format and then exported to client-side. The method API **exportImage** exports the **Digital Gauge**. It has two arguments such as **file****name** and **file format**. For exporting, you can refer the following code example.
+**Digital Gauge** has an exporting feature where **Gauge** control is converted into image format and then exported to client-side. The method API [`exportImage`](../api/ejdigitalgauge#methods:exportimage) exports the **Digital Gauge**. It has two arguments such as **file****name** and **file format**. For exporting, you can refer the following code example.
 
 {% highlight html %}
 

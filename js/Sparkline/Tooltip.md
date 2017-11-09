@@ -10,7 +10,7 @@ api: /api/js/ejsparkline
 
 ## Tooltip  
 
-A tooltip follows the pointer movement and is used to indicate the value of a point. This feature is applicable for line, column, pie, and area Sparkline. You can customize the tooltip [`fill color`](../api/ejsparkline#members:tooltip-fill), [`border`](../api/ejsparkline#members:tooltip-border) and [`font`](../api/ejsparkline#members:tooltip-font).
+A [`tooltip`](../api/ejsparkline#members:tooltip) follows the pointer movement and is used to indicate the value of a point. This feature is applicable for line, column, pie, and area Sparkline. You can enable the tooltip by setting it's [`visible`](../api/ejsparkline#members:tooltip-visible) property as **true**.
 
 {% highlight js %}
 
@@ -25,6 +25,35 @@ $("#container").ejSparkline({
 {% endhighlight %}
 
 ![](/js/Sparkline/Tooltip_images/Tooltip_img1.png)
+
+## Tooltip Customization
+
+You can customize the tooltip [`fill color`](../api/ejsparkline#members:tooltip-fill), [`border`][`border`](../api/ejsparkline#members:tooltip-border) properties [`border color`](../api/ejsparkline#members:tooltip-border-color), [`border width`](../api/ejsparkline#members:tooltip-border-width) and [`font`](../api/ejsparkline#members:tooltip-font) properties [`color`](../api/ejsparkline#members:tooltip-font-color), [`font family`](../api/ejsparkline#members:tooltip-font-fontfamily), [`font style`](../api/ejsparkline#members:tooltip-font-fontstyle), [`font weight`](../api/ejsparkline#members:tooltip-font-fontweight), [`opacity`](), [`size`](../api/ejsparkline#members:tooltip-font-size)
+
+{% highlight js %}
+
+$("#container").ejSparkline({
+            // ...
+            tooltip: {
+                fill: 'red',
+                border: {
+                    color: "green",
+                    width: 3
+                },
+                font: {
+                    size: "12px",
+                    fontFamily : "Algerian",
+                    fontStyle : "italic",
+                    fontWeight : "lighter",
+                    opacity : 0.5,
+                }
+            },
+            // ...
+});
+
+{% endhighlight %}
+
+![](/js/Sparkline/Tooltip_images/Tooltip_img3.png)
 
 ## Tooltip Template   
 

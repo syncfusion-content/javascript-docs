@@ -31,7 +31,7 @@ You can customize the Sparkline dimension by setting the width and height for th
 
 ## Set size in pixels 
 
-You can also set the Sparkline dimension by using the [`size`](../api/ejsparkline#members:size) property of the Sparkline.
+You can also set the [`width`](../api/ejsparkline#members:size-width) and [`height`](../api/ejsparkline#members:size-height) Sparkline by using the [`size`](../api/ejsparkline#members:size) property of the Sparkline.
 
 {% highlight html %}
 
