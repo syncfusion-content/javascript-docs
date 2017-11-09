@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Serial-Number
-description: serial number
+title: Sequencing Tasks
+description: sequencing tasks
 platform: js
 control: Gantt
 documentation: ug
@@ -12,8 +12,9 @@ api: /api/js/ejgantt
 
 ## How to enable Serial number column in Gantt?
 
-The Serial number support in Gantt control provides the sequential order structure for all the available collections of tasks in Gantt chart. The Serial number column can be enabled in Gantt control, with the help of enableSerialNumber property by assigning the “true” value to it. While enabling this property Serial number column will be included and Task Id column will be hidden as well as the default behavior of “Predecessor” column will be changed. In general Predecessor column will be rendered and updated with the value of “Task Id”. But on enabling Serial number support, it will be rendered and updated with the value of “Serial number” of corresponding tasks.
-Code snippets for enabling Serial number:
+The serial or sequence number support in Gantt is used to index the tasks in a project. The Serial number column can be rendered by enabling the `enableSerialNumber` property. On enabling this property the serial number column will be displayed and the Task Id column will be hidden, the tasks will be indentified using the serial numbers. Further the column values for task predecessors will also be displayed using the serial numbers of the corresponding tasks, instead of task IDs.
+
+Code snippets for enabling serial number
 
 {% highlight javascript %}
 
@@ -24,6 +25,8 @@ Code snippets for enabling Serial number:
 
 {% endhighlight %}
 
-The following screenshot displays the Serial number column in Gantt control.
+The following screenshot displays the serial number column in Gantt control.
 
 ![](/js/Gantt/Serial-Number_images/Serial_img1.png)
+
+The serial number column will be resequenced automatically on performing any actions which will change the row indexes of the tasks such as row drag and drop, deleting, adding.
