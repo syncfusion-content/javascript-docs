@@ -198,7 +198,7 @@ DigitalGaugeObj.setValue(0,"Welcome");
 
 ## init
 
-[`init`](../api/ejdigitalgauge#events:init) event triggers, when gague is initialized.
+[`init`](../api/ejdigitalgauge#events:init) event triggers, when gauge is initialized.
 
 {% highlight html %}
  

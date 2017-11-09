@@ -195,7 +195,7 @@ Execute the above code examples to render the **Digital****Gauge** as follows.
 
 ## Font Customization
 
-You can customize the font(../api/ejdigitalgauge#members:items-font) of the text as per your requirement. To customize the font, you have to set [`enableCustomFont`](../api/ejdigitalgauge#members:enablecustomfont). Following font customization options are available.
+You can customize the [`font`](../api/ejdigitalgauge#members:items-font) of the text as per your requirement. To customize the font, you have to set [`enableCustomFont`](../api/ejdigitalgauge#members:enablecustomfont). Following font customization options are available.
 
 * [`Font-family`](../api/ejdigitalgauge#members:items-font-fontfamily)- used to set the font-family of the text.
 
