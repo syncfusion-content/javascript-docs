@@ -12,9 +12,19 @@ api : /api/js/ejdigitalgauge
 
 ## Appearance
 
-* **Digital Gauge** consists of several digital segments. Segment is customized with some properties. Color of the segment is set by using **color** property. Color is either given as string or hexadecimal value. 
+* **Digital Gauge** consists of several digital segments. [`Segment`](../api/ejdigitalgauge#members:items-segmentsettings) is customized with following properties. 
 
-* You can add gradient effects to the segments with the help of **gradient** attribute. The **opacity** of the segment is also adjustable. The space between two segments are adjusted with **spacing** property.
+* [`Color`](../api/ejdigitalgauge#members:items-segmentsettings-color) of the segment is set by using **color** property. Color is either given as string or hexadecimal value. 
+
+* You can add gradient effects to the segments with the help of [`gradient`](../api/ejdigitalgauge#members:items-segmentsettings-gradient) attribute. 
+
+* The [`opacity`](../api/ejdigitalgauge#members:items-segmentsettings-opacity) of the segment is also adjustable. 
+
+* The space between two segments are adjusted with [`spacing`](../api/ejdigitalgauge#members:items-segmentsettings-spacing) property.
+
+* You can set the length of the text segments with [`length`](../api/ejdigitalgauge#members:items-segmentsettings-length) property.
+
+* The width for the text segments are adjusted with [`width`](../api/ejdigitalgauge#members:items-segmentsettings-width) property.
 
 {% highlight html %}
 
@@ -54,7 +64,7 @@ Execute the above code examples to render the **Digital****Gauge** as follows.
 
 * **Digital Gauge** consists of several digital segments. Segment is customized with some properties. Color of the segment is set by using **color** property. Color is either given as string or hexadecimal value. 
 
-* You can add gradient effects to the segments with the help of **gradient** attribute. The **opacity** of the segment is also adjustable. The space between two segments are adjusted with **spacing** property.
+* You can add gradient effects to the segments with the help of [`gradient`](../api/ejdigitalgauge#members:items-segmentsettings-gradient) attribute. The [`opacity`](../api/ejdigitalgauge#members:items-segmentsettings-opacity) of the segment is also adjustable. The space between two segments are adjusted with [`spacing`](../api/ejdigitalgauge#members:items-segmentsettings-spacing) property.
 
 
 {% highlight html %}
