@@ -304,7 +304,7 @@ You can specifies the selection mode of the treemap using [`groupSelectionMode`]
 // Set the selection mode during initialization.                                        
           $("#container").ejTreeMap({groupSelectionMode:'default'});
 
-{% enghighlight %}
+{% endhighlight %}
 
 ## Header
 
