@@ -10,9 +10,9 @@ api: /api/js/ejtreemap
 
 # DataBinding
 
-**TreeMap** control supports Data Binding and it can be achieved using `dataSource` property.
+**TreeMap** control supports Data Binding and it can be achieved using [`dataSource`](../api/ejtreemap#members:datasource) property.
 
-The `dataSource` property accepts the collection values as input. For example, you can provide the list of objects as input. The following code illustrates you on how to bind a flat collection as datasource for **TreeMap**.
+The [`dataSource`](../api/ejtreemap#members:datasource) property accepts the collection values as input. For example, you can provide the list of objects as input. The following code illustrates you on how to bind a flat collection as datasource for **TreeMap**.
 
 {% highlight js %}
 
