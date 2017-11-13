@@ -10,7 +10,7 @@ api: /api/js/ejtreemap
 
 # Layout
 
-You can decide on the visual representation of nodes belonging to all the treemap levels using the `itemsLayoutMode` property of the TreeMap.
+You can decide on the visual representation of nodes belonging to all the treemap levels using the [`itemsLayoutMode`](../api/ejtreemap#members:itemslayoutmode) property of the TreeMap.
 
 There are four different **TreeMap** layouts such as
 
