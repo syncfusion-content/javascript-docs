@@ -10,20 +10,46 @@ api: /api/js/ejtreemap
 
 # TreeMapLevels
 
-The levels of **TreeMap** can be categorized into two types as,
+The [`levels`](../api/ejtreemap#members:levels) of **TreeMap** can be categorized into two types as,
 
 * FlatLevel
 * Hierarchical Level
+
+Following customization options are available to customize the treemap level as per your requirements.
+
+* To specify the background color for the group, you can use [`groupBackground`](../api/ejtreemap#members:levels-groupbackground) property.
+
+* To specity the border color for the group, you can use [`groupBorderColor`](../api/ejtreemap#members:levels-groupbordercolor) property.
+
+* To maintain the border tickness for the group, you can use [`groupBorderThickness`](../api/ejtreemap#members:levels-groupborderthickness) property.
+
+* You can specify the gaps between groups using [`groupGap`](../api/ejtreemap#members:levels-groupgap) property.
+
+* You can specity the padding using [`groupPadding`](../api/ejtreemap#members:levels-grouppadding) property.
+
+* For speciying the header height, you can use [`headerHeight`](../api/ejtreemap#members:levels-headerheight) property.
+
+* You can customize the header template using [`headerTemplate`](../api/ejtreemap#members:levels-headertemplate) property.
+
+* To specify the label position, you can use [`labelPosition`](../api/ejtreemap#members:levels-labelposition) property.
+
+* To specify the label template for treemap, you can use [`labelTemplate`](../api/ejtreemap#members:levels-labeltemplate) property.
+
+* You can specify the label visibility using [`labelVisibilityMode`](../api/ejtreemap#members:levels-labelvisibilitymode) property.
+
+* You can control the label visibility using [`showLabels`](../api/ejtreemap#members:levels-showlabels) property.
+
+* For controlling text overflow, you can use [`textOverflow`](../api/ejtreemap#members:levels-textOverflow) property.
 
 ## Flat Level
 
 ### GroupPath
 
-You can use `groupPath` property for every flat level of the **TreeMap** control. It is a path to a field on the source object that serves as the **“Group”** for the level specified. You can group the data based on the `groupPath` in the **TreeMap** control. When the `groupPath` is not specified, then the items are not grouped and the data is displayed in the order specified in the `dataSource`.
+You can use [`groupPath`](../api/ejtreemap#members:levels-grouppath) property for every flat level of the **TreeMap** control. It is a path to a field on the source object that serves as the **“Group”** for the level specified. You can group the data based on the `groupPath` in the **TreeMap** control. When the `groupPath` is not specified, then the items are not grouped and the data is displayed in the order specified in the `dataSource`.
 
 ### GroupGap
 
-You can use `groupGap` property to separate the items from every flat level and to differentiate the levels mentioned in the **TreeMap** control.
+You can use [`groupGap`](../api/ejtreemap#members:levels-groupgap) property to separate the items from every flat level and to differentiate the levels mentioned in the **TreeMap** control.
 
 {% highlight js %}
 
