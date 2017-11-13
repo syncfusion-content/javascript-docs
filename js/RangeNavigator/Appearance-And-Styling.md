@@ -14,7 +14,11 @@ api: /api/js/ejrangenavigator
 
 #### Customize labels
 
-The labels are found along the range, displaying the value of the data it correspond, both on (higher level label) and below (lower level label) the **RangeNavigator**. **RangeNavigator** labels are further customized using "**font**" property in label Settings. 
+The labels are found along the range, displaying the value of the data it correspond, both on (higher level label) and below (lower level label) the **RangeNavigator**. **RangeNavigator** labels are further customized using higher level label [`style`](../api/js/ejrangenavigator#members:labelsettings-higherlevel-style) property of "[`font`](../api/js/ejrangenavigator#members:labelsettings-higherlevel-style-font)" and lower level label [`style`](../api/js/ejrangenavigator#members:labelsettings-lowerlevel-style) property of [`font`](../api/js/ejrangenavigator#members:labelsettings-lowerlevel-style-font) property in [`labelSettings`](../api/js/ejrangenavigator#members:labelsettings). 
+
+The higher level labels font [`color`](../api/js/ejrangenavigator#members:labelsettings-higherlevel-style-font-color), [`fontFamily`](../api/js/ejrangenavigator#members:labelsettings-higherlevel-style-font-fontfamily), [`fontStyle`](../api/js/ejrangenavigator#members:labelsettings-higherlevel-style-font-fontstyle), [`fontWeight`](../api/js/ejrangenavigator#members:labelsettings-higherlevel-style-font-fontweight), [`opacity`](../api/js/ejrangenavigator#members:labelsettings-higherlevel-style-font-opacity) and [`size`](../api/js/ejrangenavigator#members:labelsettings-higherlevel-style-font-size) can be customized using [`higherLevel`](../api/js/ejrangenavigator#members:labelsettings-higherlevel) property.
+
+The lower level labels font [`color`](../api/js/ejrangenavigator#members:labelsettings-lowerlevel-style-font-color), [`fontFamily`](../api/js/ejrangenavigator#members:labelsettings-lowerlevel-style-font-fontfamily), [`fontStyle`](../api/js/ejrangenavigator#members:labelsettings-lowerlevel-style-font-fontstyle), [`fontWeight`](../api/js/ejrangenavigator#members:labelsettings-lowerlevel-style-font-fontweight), [`opacity`](../api/js/ejrangenavigator#members:labelsettings-lowerlevel-style-font-opacity) and [`size`](../api/js/ejrangenavigator#members:labelsettings-lowerlevel-style-font-size) can be customized using [`lowerLevel`](../api/js/ejrangenavigator#members:labelsettings-lowerlevel) property.
 
 {% highlight javascript %}
 
@@ -59,9 +63,9 @@ The labels are found along the range, displaying the value of the data it corres
 
 ##### Label Placement
 
-Labels in **RangeNavigator** are placed inside or outside of the control. You can customize both the higher and lower level labels using **labelPlacement** property in label setting of **RangeNavigator**. By default **labelPlacement** is "outside" for the both higher and lower level labels.
+Labels in **RangeNavigator** are placed inside or outside of the control. You can customize both the higher and lower level labels using [`labelPlacement`](../api/js/ejrangenavigator#members:labelsettings-higherlevel-labelplacement) property in label setting of **labelPlacement**. By default **labelPlacement** is "outside" for the both higher and lower level labels.
 
-The following screen shot illustrates both the lower and higher level labels that are placed outside the control with **labelPlacement** specified as outside.
+The following screen shot illustrates both the lower and higher level labels that are placed outside the control with [`labelPlacement`](../api/js/ejrangenavigator#members:labelsettings-lowerlevel-labelplacement) specified as outside.
 
 {% highlight javascript %}
 
@@ -83,7 +87,7 @@ The following screen shot illustrates both the lower and higher level labels tha
 {% endhighlight %}
 
 
-The following screenshot illustrates a **RangeNavigator** with labels inside the control after specifying the **labelPlacement** as inside.
+The following screenshot illustrates a **RangeNavigator** with labels inside the control after specifying the labelPlacement as inside.
 
 
 
@@ -91,7 +95,17 @@ The following screenshot illustrates a **RangeNavigator** with labels inside the
 
 #### Customize RangeNavigator
 
-RangeNavigator is customized using **navigatorStyleSettings** properties. You can customize the selected and unselected region color using **selectedRegionColor**, **unselectedRegionColor** in **navigatorStyleSettings** and the thumb of the slider using **thumbColor, thumbRadius** and **thumbStroke** in **navigatorStyleSettings.  majorGridLineStyle** and **minorGridLineStyle**  are used to customize the grid line color and visibility.
+##### Customize NavigatorStyleSettings
+RangeNavigator is customized using [`navigatorStyleSettings`](../api/js/ejrangenavigator#members:navigatorstylesettings) properties. You can customize the selected and unselected region color, opacity using [`selectedRegionColor`](../api/js/ejrangenavigator#members:navigatorstylesettings-selectedregioncolor) and [`unselectedRegionColor`](../api/js/ejrangenavigator#members:navigatorstylesettings-unselectedregioncolor), [`selectedRegionOpacity`](../api/js/ejrangenavigator#members:navigatorstylesettings-selectedregionopacity) and [`unselectedRegionOpacity `](../api/js/ejrangenavigator#members:navigatorstylesettings-unselectedregionopacity) in **NavigatorStyleSettings** and the thumb of the slider using [`thumbColor`](../api/js/ejrangenavigator#members:navigatorstylesettings-thumbcolor), [`thumbRadius`](../api/js/ejrangenavigator#members:navigatorstylesettings-thumbradius) and [`thumbStroke`](../api/js/ejrangenavigator#members:navigatorstylesettings-thumbstroke) in **NavigatorStyleSettings**.  [`majorGridLineStyle`](../api/js/ejrangenavigator#members:navigatorstylesettings-majorgridlinestyle) and [`minorGridLineStyle`](../api/js/ejrangenavigator#members:navigatorstylesettings-minorgridlinestyle) are used to customize the major grid line [`color`](../api/js/ejrangenavigator#members:navigatorstylesettings-majorgridlinestyle-color), [`visible`](../api/js/ejrangenavigator#members:navigatorstylesettings-majorgridlinestyle-visible) property and minor gridline [`color`](../api/js/ejrangenavigator#members:navigatorstylesettings-minorgridlinestyle-color) and [`visible`](../api/js/ejrangenavigator#members:navigatorstylesettings-minorgridlinestyle-visible).
+
+You can customize the [`background`](../api/js/ejrangenavigator#members:navigatorstylesettings-background), [`opacity`](../api/js/ejrangenavigator#members:navigatorstylesettings-opacity) and [`border`](../api/js/ejrangenavigator#members:navigatorstylesettings-border) [`color`](../api/js/ejrangenavigator#members:navigatorstylesettings-border-color), [`dashArray`](../api/js/ejrangenavigator#members:navigatorstylesettings-border-dasharray) and [`width`](../api/js/ejrangenavigator#members:navigatorstylesettings-border-width) of navigatorStyleSettings.
+
+##### Customize Labels
+The visibility of labels are enabled by setting [`visible`](../api/js/ejrangenavigator#members:labelsettings-higherlevel-visible) in higher level and [`visible`](../api/js/ejrangenavigator#members:labelsettings-lowerlevel-visible) in lower level. The labels can be aligned by specifying [`horizontalAlignment`](../api/js/ejrangenavigator#members:labelsettings-higherlevel-style-horizontalalignment) of higher level style and [`horizontalAlignment`](../api/js/ejrangenavigator#members:labelsettings-lowerlevel-style-horizontalalignment) of lower level style. 
+
+You can customize the [`border`](../api/js/ejrangenavigator#members:labelsettings-higherlevel-border) [`color`](../api/js/ejrangenavigator#members:labelsettings-higherlevel-border-color) and [`width`](../api/js/ejrangenavigator#members:labelsettings-higherlevel-border-width), [`fill`](../api/js/ejrangenavigator#members:labelsettings-higherlevel-fill), [`gridLineStyle`](../api/js/ejrangenavigator#members:labelsettings-higherlevel-gridlinestyle) [`color`](../api/js/ejrangenavigator#members:labelsettings-higherlevel-gridlinestyle-color), [`dashArray`](../api/js/ejrangenavigator#members:labelsettings-higherlevel-gridlinestyle-dasharray) and [`width`](../api/js/ejrangenavigator#members:labelsettings-higherlevel-gridlinestyle-width), [`position`](../api/js/ejrangenavigator#members:labelsettings-higherlevel-position) property of higher level labels in labelSettings. 
+
+You can also customize the [`border`](../api/js/ejrangenavigator#members:labelsettings-lowerlevel-border) [`color`](../api/js/ejrangenavigator#members:labelsettings-lowerlevel-border-color) and [`width`](../api/js/ejrangenavigator#members:labelsettings-lowerlevel-border-width), [`fill`](../api/js/ejrangenavigator#members:labelsettings-lowerlevel-fill), [`gridLineStyle`](../api/js/ejrangenavigator#members:labelsettings-lowerlevel-gridlinestyle) [`color`](../api/js/ejrangenavigator#members:labelsettings-lowerlevel-gridlinestyle-color), [`dashArray`](../api/js/ejrangenavigator#members:labelsettings-lowerlevel-gridlinestyle-dasharray) and [`width`](../api/js/ejrangenavigator#members:labelsettings-lowerlevel-gridlinestyle-width), [`position`](../api/js/ejrangenavigator#members:labelsettings-lowerlevel-position) property for lower level labels of labelSettings. 
 
 {% highlight javascript %}
 
@@ -106,6 +120,7 @@ RangeNavigator is customized using **navigatorStyleSettings** properties. You ca
             thumbRadius: 10,
             thumbStroke: "#303030",
             background: "transparent",
+            opacity : 0.3,
             border: {
                 color: "black",
                 width: 3
@@ -121,6 +136,9 @@ RangeNavigator is customized using **navigatorStyleSettings** properties. You ca
         labelSettings: {
         
             higherLevel: {
+                visible: true,
+                border :{color:"#ff0000", width: 1},
+                gridLineStyle :{color:"#ff0000", dashArray:"20 10 5", width: 1},
                 style: {
                     font: {
                         color: 'black',
@@ -133,6 +151,9 @@ RangeNavigator is customized using **navigatorStyleSettings** properties. You ca
                 labelPlacement: "inside"
             },
             lowerLevel: {
+                visible: true,
+                border :{color:"#ff0000", width: 1},
+                gridLineStyle :{color:"#ff0000", dashArray:"20 10 5", width: 1},
                 style: {
                     font: {
                         color: 'black',
@@ -160,7 +181,7 @@ RangeNavigator is customized using **navigatorStyleSettings** properties. You ca
 
 #### Themes
 
-**RangeNavigator** theme is a set of pre-defined options that are applied to the control before each **RangeNavigator** is instantiated. Following predefined themes are available in JavaScript **RangeNavigator**.
+**RangeNavigator** [`theme`](../api/js/ejrangenavigator#members:theme) is a set of pre-defined options that are applied to the control before each **RangeNavigator** is instantiated. Following predefined themes are available in JavaScript **RangeNavigator**.
 
 1. flatlight
 2. flatdark
