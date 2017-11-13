@@ -24,7 +24,7 @@ ColorMapping is categorized into three different types such as,
 
 ### Uni Color Mapping
 
-You can color, all the leaf nodes with the same color by setting the `color`(../api/ejtreemap#members:unicolormapping-color) value of the `uniColorMapping`(../api/ejtreemap#members:unicolormapping) property of the **TreeMap**.
+You can color, all the leaf nodes with the same color by setting the [`color`](../api/ejtreemap#members:unicolormapping-color) value of the [`uniColorMapping`](../api/ejtreemap#members:unicolormapping) property of the **TreeMap**.
 
 {% highlight js %}
 
@@ -51,7 +51,7 @@ Try it: [UniColorMapping](http://jsplayground.syncfusion.com/2v542ver)
 
 ### Range Color Mapping
 
-You can group the leaf nodes based on the range of the data’s color values. You can set a unique color for every ranges. To achieve this, specify the [`to`](../api/ejtreemap#members:rangecolormapping-to) and [`from`](../api/ejtreemap#members:rangecolormapping-from) values as range bound and [`color`](../api/ejtreemap#members:rangecolormapping-color) or [`gradientcolor`](../api/ejtreemap#members:rangecolormapping-gradientcolors) values to fill the leaf nodes of the particular range, through the `rangeColorMapping`(../api/ejtreemap#members:rangecolormapping) property of the **TreeMap**.
+You can group the leaf nodes based on the range of the data’s color values. You can set a unique color for every ranges. To achieve this, specify the [`to`](../api/ejtreemap#members:rangecolormapping-to) and [`from`](../api/ejtreemap#members:rangecolormapping-from) values as range bound and [`color`](../api/ejtreemap#members:rangecolormapping-color) or [`gradient colors`](../api/ejtreemap#members:rangecolormapping-gradientcolors) values to fill the leaf nodes of the particular range, through the [`range color mapping`](../api/ejtreemap#members:rangecolormapping) property of the **TreeMap**.
 
 {% highlight js %}
 
@@ -81,7 +81,7 @@ Try it: [RangeColorMapping](http://jsplayground.syncfusion.com/cbcyugjn)
 
 ### Desaturation Color Mapping
 
-You can differentiate all the leaf nodes using the `desaturationColorMapping`(../api/ejtreemap#members:desaturationcolormapping) property of the **TreeMap**. Differentiation is achieved, even though same color is applied for all the leaf nodes by varying the opacity of the leaf nodes based on the color value specified in the color value range using [`rangeMinimum`](../api/ejtreemap#members:desaturationcolormapping-rangemaximum) and [`rangeMaximum`](../api/ejtreemap#members:desaturationcolormapping-rangeminimum) value of the data collection. You can also bound the opacity range by setting [`from`](../api/ejtreemap#members:desaturationcolormapping-from) and [`to`](../api/ejtreemap#members:desaturationcolormapping-t0) property of the `desaturationColorMapping`.
+You can differentiate all the leaf nodes using the [`desaturation color mapping`](../api/ejtreemap#members:desaturationcolormapping) property of the **TreeMap**. Differentiation is achieved, even though same color is applied for all the leaf nodes by varying the opacity of the leaf nodes based on the color value specified in the color value range using [`rangeMinimum`](../api/ejtreemap#members:desaturationcolormapping-rangemaximum) and [`rangeMaximum`](../api/ejtreemap#members:desaturationcolormapping-rangeminimum) value of the data collection. You can also bound the opacity range by setting [`from`](../api/ejtreemap#members:desaturationcolormapping-from) and [`to`](../api/ejtreemap#members:desaturationcolormapping-t0) property of the `desaturationColorMapping`.
 
 {% highlight js %}
 
@@ -119,17 +119,17 @@ You can customize the **Leaf level TreeMap items** using [`leafItemSettings`](..
 
 * For customizing border thickness, you can use [`border thickness`](../api/ejtreemap#members:leafitemsettings-borderthickness) property.
 
-* To cutomize the gap between the leaf items, you can use [`gap`](../api/ejtreemap#members:leafitemsettings-gap) property.
+* To customize the gap between the leaf items, you can use [`gap`](../api/ejtreemap#members:leafitemsettings-gap) property.
 
-* You can specify the label template for the leaf iteam using [`item template`](../api/ejtreemap#members:leafitemsettings-itemtemplate) property.
+* You can specify the label template for the leaf item using [`item template`](../api/ejtreemap#members:leafitemsettings-itemtemplate) property.
 
 * The Label and tooltip values take the property of bound object that is referred in the [`labelPath`](../api/ejtreemap#members:leafitemsettings-labelpath) when defined.
 
 * You can specify the position of the leaf labels using [`labelPosition`](../api/ejtreemap#members:leafitemsettings-labelposition) property.
 
-* You can control the mode of label visiblity of the labels using [`labelVisibilityMode`](../api/ejtreemap#members:leafitemsettings-labelvisibilitymode) property.
+* You can control the mode of label visibility of the labels using [`labelVisibilityMode`](../api/ejtreemap#members:leafitemsettings-labelvisibilitymode) property.
 
-* To show or hide the visibilty of the leaf item labels you can use [`showLabels`](../api/ejtreemap#members:leafitemsettings-showlabels) property.
+* To show or hide the visibility of the leaf item labels you can use [`showLabels`](../api/ejtreemap#members:leafitemsettings-showlabels) property.
 
 * For specifying over flow action of left item labels you can use [`textOverflow`](../api/ejtreemap#members:leafitemsettings-textOverflow) property.
 

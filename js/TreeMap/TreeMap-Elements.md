@@ -28,7 +28,7 @@ You can customize the treemap legend using following properties
 
 * For customizing the alignment of legend, you can use [`alignment`](../api/ejtreemap#members:legendsettings-alignment) property.
 
-* You can set the legend coloum count using [`columnCount`](../api/ejtreemap#members:legendsettings-columncount) property.
+* You can set the legend column count using [`column count`](../api/ejtreemap#members:legendsettings-columncount) property.
 
 * To set the dock position of the legend text, you can use [`dockPosition`]((../api/ejtreemap#members:legendsettings-dockposition)
 
@@ -40,7 +40,7 @@ You can customize the treemap legend using following properties
 
 * To set the legend mode as default or interactive, you can use [`mode`](../api/ejtreemap#members:legendsettings-mode) property.
 
-* Using the property [`template`](../api/ejtreemap#members:legendsettings-template), you can specify template for legendsettings.
+* Using the property [`template`](../api/ejtreemap#members:legendsettings-template), you can specify template for legend settings.
 
 * To set the legend title, you can use the[`title`](../api/ejtreemap#members:legendsettings-title) property of the `legendSettings`.
 
@@ -85,15 +85,15 @@ Try it: [Legend Label](http://jsplayground.syncfusion.com/yaaqbnna)
 
 ### Interactive Legend
 
-The legends can be made interactive with an arrow mark indicating the exact range color in the legend when the mouse hovers over the corresponding treemap items. You can enable this option by setting [`mode`](../api/ejtreemap#members:legendsettings-mode) property in [`legendSettings`](../api/ejtreemap#members:legendsettings) value as “interactive” and default value of `mode`(../api/ejtreemap#members:legendsettings-mode) property is “default” to enable the normal legend.
+The legends can be made interactive with an arrow mark indicating the exact range color in the legend when the mouse hovers over the corresponding treemap items. You can enable this option by setting [`mode`](../api/ejtreemap#members:legendsettings-mode) property in [`legend settings`](../api/ejtreemap#members:legendsettings) value as “interactive” and default value of [`mode`](../api/ejtreemap#members:legendsettings-mode) property is “default” to enable the normal legend.
 
 #### Title for Interactive Legend
 
-You can provide the title for interactive legend by using [`title`](../api/ejtreemap#members:legendsettings-title) property in [`legendSettings`](../api/ejtreemap#members:legendsettings).
+You can provide the title for interactive legend by using [`title`](../api/ejtreemap#members:legendsettings-title) property in [`legend settings`](../api/ejtreemap#members:legendsettings).
 
 #### Label for Interactive Legend
 
-You can provide the left and right labels to interactive legend by using [`leftLabel`](../api/ejtreemap#members:legendsettings-leftlabel) and [`rightLabel`](../api/ejtreemap#members:legendsettings-rightlabel) properties in [`legendSettings`](../api/ejtreemap#members:legendsettings). 
+You can provide the left and right labels to interactive legend by using [`leftLabel`](../api/ejtreemap#members:legendsettings-leftlabel) and [`rightLabel`](../api/ejtreemap#members:legendsettings-rightlabel) properties in [`legend settings`](../api/ejtreemap#members:legendsettings). 
 
 
 {% highlight js %}
@@ -124,7 +124,7 @@ Try it: [Interactive_Legend](http://jsplayground.syncfusion.com/0mfsg1pp)
 
 ## Header
 
-You can set headers for each level by setting the [`showHeader`](../api/ejtreemap#members:levels-showheader) property of the each **TreeMap** levels. The [`headerHeight`](../api/ejtreemap#members:levels-headerheight) property helps to set the height of the header and Group path value determines the header value. You can customize the default header appearance by setting the `headerTemplate`(../api/ejtreemap#members:levels-headertemplate) of the **TreeMap** levels.
+You can set headers for each level by setting the [`showHeader`](../api/ejtreemap#members:levels-showheader) property of the each **TreeMap** levels. The [`headerHeight`](../api/ejtreemap#members:levels-headerheight) property helps to set the height of the header and Group path value determines the header value. You can customize the default header appearance by setting the [`header template`](../api/ejtreemap#members:levels-headertemplate) of the **TreeMap** levels.
 
 {% highlight js %}
 
@@ -273,7 +273,7 @@ You can handle the label overflow, by specifying any one of the following values
 
 ## Palette Color Mapping
 
-Treemap is having support for [`palatteColorMapping`](../api/ejtreemap#members:levels-palatteColorMapping). You can set the color for [`palatteColorMapping`] using the property [`color`](../api/ejtreemap#members:levels-palatteColorMapping-color) in palatteColorMapping.
+Treemap is having support for [`palette color mapping`](../api/ejtreemap#members:levels-palatteColorMapping). You can set the color for [`palette color mapping`] using the property [`color`](../api/ejtreemap#members:levels-palatteColorMapping-color) in palette color mapping.
 
 {% highlight js %}
 

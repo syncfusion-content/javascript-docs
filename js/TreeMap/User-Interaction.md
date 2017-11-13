@@ -21,10 +21,8 @@ Selection support enables you to highlight the items on which the mouse tapping 
 
 ### Single Selection
 
-To enable the selection of the leaf nodes, the [`highlightOnSelection`](../api/ejtreemap#members:
-highlightOnSelection) property in `treemap` is set as **true**. When the selection occurs, the item is highlighted with a bounding rectangle around the selected leaf node.
-The border can be customized with the [`highlightBorderBrush`](../api/ejtreemap#members:
-highlightBorderBrush) and [`highlightBorderThickness`](../api/ejtreemap#members:highlightBorderThickness) properties.
+To enable the selection of the leaf nodes, the [`highlight on selection`](../api/ejtreemap#members:highlightOnSelection) property in `treemap` is set as **true**. When the selection occurs, the item is highlighted with a bounding rectangle around the selected leaf node.
+The border can be customized with the [`highlight border brush`](../api/ejtreemap#members:highlightBorderBrush) and [`highlight border thickness`](../api/ejtreemap#members:highlightBorderThickness) properties.
 
 
 {% highlight js %}
@@ -46,9 +44,7 @@ highlightBorderBrush) and [`highlightBorderThickness`](../api/ejtreemap#members:
 
 ### Group Selection
 
-To enable the selection of leaf nodes, the [`highlightGroupOnSelection`](../api/ejtreemap#members:
-highlightOnSelection) property in `treemap` is set as **true**. When the selection occurs, bounding rectangle highlights the selected group. The border can be customized with the [`highlightGroupBorderBrush`](../api/ejtreemap#members:
-highlightGroupBorderBrush) and [`highlightGroupBorderThickness`](../api/ejtreemap#members:highlightGroupBorderThickness) properties.
+To enable the selection of leaf nodes, the [`highlight group on selection`](../api/ejtreemap#members:highlightOnSelection) property in `treemap` is set as **true**. When the selection occurs, bounding rectangle highlights the selected group. The border can be customized with the [`highlight group border brush`](../api/ejtreemap#members:highlightGroupBorderBrush) and [`highlight group border thickness`](../api/ejtreemap#members:highlightGroupBorderThickness) properties.
 
 {% highlight js %}
 
@@ -70,7 +66,7 @@ highlightGroupBorderBrush) and [`highlightGroupBorderThickness`](../api/ejtreema
 ## MultiSelection
 
 This feature enables you to select multiple leaf nodes or groups simultaneously. To enable this feature for leaf nodes, set [`selectionMode`](../api/ejtreemap#members:
-selectionMode) as "**multiple**" and for groups, set [`groupSelectionMode`](../api/ejtreemap#members:groupSelectionMode) as "**multiple**"
+selectionMode) as "**multiple**" and for groups, set [`group selection mode`](../api/ejtreemap#members:groupSelectionMode) as "**multiple**"
 To select multiple items simultaneously, the mouse tap should be done along with a continuous press of the "**Control**" key.  
 
 ##### Selection (Multiple)
@@ -115,8 +111,7 @@ This feature enables you to highlight/select the leaf nodes or groups by the dra
 
 ### Dragging On Selection
 
-To enable this feature, set the [`draggingOnSelection`](../api/ejtreemap#members:
-draggingOnSelection) to "**true**".
+To enable this feature, set the [`draggingOnSelection`](../api/ejtreemap#members:draggingOnSelection) to "**true**".
 
 {% highlight js %}
 
@@ -135,8 +130,7 @@ draggingOnSelection) to "**true**".
 
 ### Dragging Group On Selection
 
-To enable this feature, set the [`draggingGroupOnSelection`](../api/ejtreemap#members:
-draggingGroupOnSelection) to "**true**".
+To enable this feature, set the [`draggingGroupOnSelection`](../api/ejtreemap#members:draggingGroupOnSelection) to "**true**".
 
 {% highlight js %}
 

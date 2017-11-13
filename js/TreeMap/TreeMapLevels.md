@@ -19,15 +19,15 @@ Following customization options are available to customize the treemap level as 
 
 * To specify the background color for the group, you can use [`groupBackground`](../api/ejtreemap#members:levels-groupbackground) property.
 
-* To specity the border color for the group, you can use [`groupBorderColor`](../api/ejtreemap#members:levels-groupbordercolor) property.
+* To specify the border color for the group, you can use [`groupBorderColor`](../api/ejtreemap#members:levels-groupbordercolor) property.
 
-* To maintain the border tickness for the group, you can use [`groupBorderThickness`](../api/ejtreemap#members:levels-groupborderthickness) property.
+* To maintain the border thickness for the group, you can use [`groupBorderThickness`](../api/ejtreemap#members:levels-groupborderthickness) property.
 
 * You can specify the gaps between groups using [`groupGap`](../api/ejtreemap#members:levels-groupgap) property.
 
-* You can specity the padding using [`groupPadding`](../api/ejtreemap#members:levels-grouppadding) property.
+* You can specify the padding using [`groupPadding`](../api/ejtreemap#members:levels-grouppadding) property.
 
-* For speciying the header height, you can use [`headerHeight`](../api/ejtreemap#members:levels-headerheight) property.
+* For specifying the header height, you can use [`headerHeight`](../api/ejtreemap#members:levels-headerheight) property.
 
 * You can customize the header template using [`headerTemplate`](../api/ejtreemap#members:levels-headertemplate) property.
 
