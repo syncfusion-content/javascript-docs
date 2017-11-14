@@ -96,7 +96,7 @@ The following screenshot displays **Bullet Graph** with **flatdark** theme
 
 ## Orientation
 
-Bullet Graph is oriented either horizontally or vertically using orientation(../api/ejbulletgraph#members:orientation) property. Default value of this property is horizontal.
+Bullet Graph is oriented either horizontally or vertically using [`orientation`](../api/ejbulletgraph#members:orientation) property. Default value of this property is horizontal.
 
 {% highlight javascript %}
 

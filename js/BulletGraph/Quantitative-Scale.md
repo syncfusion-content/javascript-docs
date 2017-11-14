@@ -40,7 +40,7 @@ The following screenshot displays a **Bullet Graph** with start range 0, end ran
 
 ## Quantitative scale location
 
-Bullet Graph does not position Quantitative scale automatically based on its size or space required for caption text, etc. By default Quantitative scale is positioned at 10 pixels from left and 10 pixels from top. Quantitative scale location is customized as per the requirement using the [`location`](../api/ejbulletgraph#members:quantitativescalesettings-location) property available in quantitativeScaleSettings. Using the this property you can set [`X`](../api/ejbulletgraph#members:quantitativescalesettings-x) and [`Y`](../api/ejbulletgraph#members:quantitativescalesettings-y) location of the qunatitative scale.
+Bullet Graph does not position Quantitative scale automatically based on its size or space required for caption text, etc. By default Quantitative scale is positioned at 10 pixels from left and 10 pixels from top. Quantitative scale location is customized as per the requirement using the [`location`](../api/ejbulletgraph#members:quantitativescalesettings-location) property available in quantitativeScaleSettings. Using the this property you can set [`X`](../api/ejbulletgraph#members:quantitativescalesettings-x) and [`Y`](../api/ejbulletgraph#members:quantitativescalesettings-y) location of the quantitative scale.
 
 {% highlight javascript %}
 

@@ -117,7 +117,7 @@ Using [`location`](../api/ejbulletgraph#members:captionsettings-indicator-locati
 
 ### Font
 
-Using [`font`](../api/ejbulletgraph#members:captionsettings-indicator-font) property, you can customize [`font color`](../api/ejbulletgraph#members:captionsettings-indicator-font-color), [`font family`](../api/ejbulletgraph#members:captionsettings-indicator-font-fontfamily), [`font style`](../api/ejbulletgraph#members:captionsettings-indicator-font-fontstyle), [`font weight`](../api/ejbulletgraph#members:captionsettings-indicator-font-fontweight), [`opacity`](../api/ejbulletgraph#members:captionsettings-indicator-font-opacity), [`size`](../api/ejbulletgraph#members:captionsettings-indicator-font-size) font properites of the indicator text.
+Using [`font`](../api/ejbulletgraph#members:captionsettings-indicator-font) property, you can customize [`font color`](../api/ejbulletgraph#members:captionsettings-indicator-font-color), [`font family`](../api/ejbulletgraph#members:captionsettings-indicator-font-fontfamily), [`font style`](../api/ejbulletgraph#members:captionsettings-indicator-font-fontstyle), [`font weight`](../api/ejbulletgraph#members:captionsettings-indicator-font-fontweight), [`opacity`](../api/ejbulletgraph#members:captionsettings-indicator-font-opacity), [`size`](../api/ejbulletgraph#members:captionsettings-indicator-font-size) font properties of the indicator text.
 
 ### Symbol
 

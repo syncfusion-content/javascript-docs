@@ -280,7 +280,7 @@ As you can see in the image above, the bullet graph without any ranges is displa
 
 **Add Qualitative Ranges**
 
-By default, 3 ranges are displayed in the **BulletGraph** control during the initial rendering of the control with its default values. In order to customize it, you need to set appropriate values for the [`range end`](../api/ejbulletgraph#members:qualitativeranges-rangeend),[`range opacity`](../api/ejbulletgraph#members:qualitativeranges-rangeopacity) and its [`rangeStroke`](../api/ejbulletgraph#members:qualitativeranges:rangestroke) properties.  Any number of [`qualitativeRanges`}(../api/ejbulletgraph#members:qualitativeranges) can be added to the control. 
+By default, 3 ranges are displayed in the **BulletGraph** control during the initial rendering of the control with its default values. In order to customize it, you need to set appropriate values for the [`range end`](../api/ejbulletgraph#members:qualitativeranges-rangeend),[`range opacity`](../api/ejbulletgraph#members:qualitativeranges-rangeopacity) and its [`rangeStroke`](../api/ejbulletgraph#members:qualitativeranges:rangestroke) properties.  Any number of [`qualitative ranges`](../api/ejbulletgraph#members:qualitativeranges) can be added to the control. 
 
 {% highlight javascript %}
 
