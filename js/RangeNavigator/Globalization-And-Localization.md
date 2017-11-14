@@ -15,7 +15,7 @@ api: /api/js/ejrangenavigator
 
 #### Localization
 
-**Localization** is the process of customizing the user interface based on a culture specific to a particular country or region in order to display regional data.  The culture is represented by a unique string, for example, ―en-US‖ for U.S. English and ―fr-FR‖ for French (common), this is achieved by creating a JavaScript file “**rangeNavigatorSource.fr-FR.js**” and setting the equivalent word as illustrated in the following code sample.
+The [`locale`](../api/js/ejrangenavigator#members:locale) property is used to specify the **Localization** of **RangeNavigator**. **Localization** is the process of customizing the user interface based on a culture specific to a particular country or region in order to display regional data.  The culture is represented by a unique string, for example, ―en-US‖ for U.S. English and ―fr-FR‖ for French (common), this is achieved by creating a JavaScript file “**rangeNavigatorSource.fr-FR.js**” and setting the equivalent word as illustrated in the following code sample.
 
 
 
@@ -54,7 +54,7 @@ ej.datavisualization.RangeNavigator.locale["fr-FR"] = {
 
 #### RTL
 
-**Right-to-Left** or **RTL** describes the ability of application to handle and responds you to communicate with a right-to-left language, like Arabic or Japanese. **enableRTL** property is used to change the rendering format  to **"Right to Left"**, by default it renders from **"Left to Right"** in **RangeNavigator**.
+**Right-to-Left** or **RTL** describes the ability of application to handle and responds you to communicate with a right-to-left language, like Arabic or Japanese. [`enableRTL`](../api/js/ejrangenavigator#members:enablertl) property is used to change the rendering format  to **"Right to Left"**, by default it renders from **"Left to Right"** in **RangeNavigator**.
 
 {% highlight javascript %}
 

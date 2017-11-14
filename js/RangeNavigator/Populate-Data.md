@@ -10,13 +10,13 @@ api: /api/js/ejrangenavigator
 
 ### Populate Data
 
-When you provide data to **RangeNavigator**, it produces limited set of data. You can populate the **RangeNavigator** with data using the **dataSource** and **series** properties.
+When you provide data to **RangeNavigator**, it produces limited set of data. You can populate the **RangeNavigator** with data using the [`dataSource`](../api/js/ejrangenavigator#members:datasource) and [`series`](../api/js/ejrangenavigator#members:series) properties.
 
 #### Add series to the RangeNavigator
 
-The **Series** property provides access to a collection of all series that are defined explicitly within a **RangeNavigator** control. Each series is assigned with type and name. It contains collection of data point, each point contains x value and y values. You can add data points to the series through **dataSource** property.
+The [`series`](../api/js/ejrangenavigator#members:series) property provides access to a collection of all series that are defined explicitly within a **RangeNavigator** control. Each series is assigned with [`type`](../api/js/ejrangenavigator#members:type) and name. It contains collection of data point, each point contains x value and y values. You can add data points to the series through [`dataSource`](../api/js/ejrangenavigator#members:datasource) property by providing field name to get the values from the dataSource in [`xName`](../api/js/ejrangenavigator#members:xname) and [`yName`](../api/js/ejrangenavigator#members:yname) options.
 
-
+Animation can be enabled by setting [`enableAnimation`](../api/js/ejrangenavigator#members:enableAnimation) property as true and the series color can be customized by using [`fill`](../api/js/ejrangenavigator#members:fill) property in series. 
 
 {% highlight javascript %}
 
@@ -29,6 +29,7 @@ $("#container").ejRangeNavigator({
                   type: 'line',
                   dataSource: data.Open, xName: "XValue", yName: "YValue",                     
                   opacity: 0.5, fill: '#69D2E7',
+                  enableAnimation: true,
                   border: { color: 'transparent', width: 2 }
                 },
              ],
