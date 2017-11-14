@@ -89,7 +89,7 @@ The following screen shot displays the **RangeNavigator** with a range from 2010
 
 **Add series**
 
-To add series to **ejRangeNavigator,** you need to set **dataSource** property of **ejRangeNavigator** as shown in the following code example. 
+To add series to **ejRangeNavigator,** you need to set [`dataSource`](../api/js/ejrangenavigator#members:datasource) property of **ejRangeNavigator** as shown in the following code example. 
 
 You can create data source for **RangeNavigator** as follows.
 
@@ -106,7 +106,7 @@ You can create data source for **RangeNavigator** as follows.
 {% endhighlight %}
 
 
-Now, add the **dataSource** to the **RangeNavigator** and provide the field name to get the values from the **dataSource** in **xName** and **yName** options.
+Now, add the [`dataSource`](../api/js/ejrangenavigator#members:datasource) to the **RangeNavigator** and provide the field name to get the values from the [`dataSource`](../api/js/ejrangenavigator#members:datasource) in [`xName`](../api/js/ejrangenavigator#members:xname) and [`yName`](../api/js/ejrangenavigator#members:yname) options.
 
 {% highlight javascript %}
 
@@ -128,7 +128,7 @@ The following screenshot displays a RangeNavigator with the default **"Line"** s
 
 **Enable tooltip**
 
-You can customize **Tooltip** for RangeNavigator using **tooltip** option. You can use **tooltipDisplayMode** option in **tooltip**,to display the tooltip "always" or "ondemand" (displays tooltip only while dragging the sliders). You can also specify label format for tooltip using **labelFormat**.
+You can customize **Tooltip** for RangeNavigator using [`tooltipSettings`](../api/js/ejrangenavigator#members:tooltipsettings) option. You can use [`tooltipDisplayMode`](../api/js/ejrangenavigator#members:tooltipsettings-tooltipdisplaymode) option in [`tooltipSettings`](../api/js/ejrangenavigator#members:tooltipsettings),to display the tooltip "always" or "ondemand" (displays tooltip only while dragging the sliders). You can also specify label format for tooltip using [`labelFormat`](../api/js/ejrangenavigator#members:tooltipsettings-labelformat).
 
 The following code sample shows how to enable a Tooltip.
 
@@ -149,7 +149,7 @@ The following code sample shows how to enable a Tooltip.
 
 {% endhighlight %}
 
-The following screenshot displays the label format **Tooltip** in RangeNavigator:
+The following screenshot displays the label format [`tooltipSettings`](../api/js/ejrangenavigator#members:tooltipsettings)* in RangeNavigator:
 
 ![](/js/RangeNavigator/Getting-Started_images/Getting-Started_img4.png) 
 
@@ -157,7 +157,7 @@ The following screenshot displays the label format **Tooltip** in RangeNavigator
 
 You can use **ejRangeNavigator** with controls such as **chart** and **grid** to view the range of data selected in **ejRangeNavigator**. 
 
-In order to update **chart**, whenever the selected range changes in **ejRangeNavigator**, you need to use **rangeChanged** event of **ejRangeNavigator** and then update the **chart** with the selected data in this event. 
+In order to update **chart**, whenever the selected range changes in **ejRangeNavigator**, you need to use [`rangeChanged`](../api/js/ejrangenavigator#events:rangechanged) event of **ejRangeNavigator** and then update the **chart** with the selected data in this event. 
 
 You can create a chart with line series using the following code sample.
 
@@ -208,7 +208,7 @@ $(function () {
 {% endhighlight %}
 
 
-You can update the chart with the selected data using the **rangeChanged** event of **ejRangeNavigator**.
+You can update the chart with the selected data using the [`rangeChanged`](../api/js/ejrangenavigator#events:rangechanged) event of **ejRangeNavigator**.
 
 {% highlight javascript %}
 
@@ -237,9 +237,9 @@ The following screenshot displays how a RangeNavigator is updated when a selecte
 
 **Set value type**
 
-**ejRangeNavigator** can also be used with numerical values. You can specify the data type using **valueType** option. 
+**ejRangeNavigator** can also be used with numerical values. You can specify the data type using [`valueType`](../api/js/ejrangenavigator#members:valuetype) option. 
 
-You can create a **dataSource** for Chart Series with integer Values using the following code sample.
+You can create a [`dataSource`](../api/js/ejrangenavigator#members:datasource) for Chart Series with integer Values using the following code sample.
 
 {% highlight javascript %}
 
@@ -257,7 +257,7 @@ You can create a **dataSource** for Chart Series with integer Values using the f
 
 {% endhighlight %}
 
-Now, you can set the **dataSource** for Chart Series and **valueType** property to "numeric" as given in the following code example.
+Now, you can set the [`dataSource`](../api/js/ejrangenavigator#members:datasource) for Chart Series and [`valueType`](../api/js/ejrangenavigator#members:valuetype) property to "numeric" as given in the following code example.
 
 {% highlight javascript %}
 

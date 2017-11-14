@@ -40,7 +40,9 @@ EjRangeNavigator provides highlighting supports to the intervals on mouse hover.
 
 ### Customize the highlight style
 
-To customize the highlighted intervals, use color, border and opacity options in the [`highlightSettings`](../api/ejrangenavigator#members:navigatorstylesettings-highlightsettings).
+To customize the highlighted intervals, use [`color`](../api/js/ejrangenavigator#members:navigatorstylesettings-highlightsettings-color), [`border`](../api/js/ejrangenavigator#members:navigatorstylesettings-highlightsettings-border) and [`opacity`](../api/js/ejrangenavigator#members:navigatorstylesettings-highlightsettings-opacity) options in the [`highlightSettings`](../api/ejrangenavigator#members:navigatorstylesettings-highlightsettings).
+
+To customize border of highlighted interval, use [`color`](../api/js/ejrangenavigator#members:navigatorstylesettings-highlightsettings-border-color) and [`width`](../api/js/ejrangenavigator#members:navigatorstylesettings-highlightsettings-border-width) options in border.
 
 {% highlight javascript %}
 
@@ -53,7 +55,8 @@ To customize the highlighted intervals, use color, border and opacity options in
                     // enable the highlight settings
                     enable: true,         
                     // customizing style
-                    color: '#006fa0',       
+                    color: '#006fa0',  
+                    opacity: 0.8,     
                     border:{
                         color: 'red' , width: 2
                       }        
@@ -99,7 +102,9 @@ EjRangeNavigator provides selection supports to the intervals by, clicking and d
 
 ### Customize the selection style
 
-To customize the selected intervals, use color, border and opacity options in the selectionSettings.
+To customize the selected intervals, use [`color`](../api/js/ejrangenavigator#members:navigatorstylesettings-selectionsettings-color), [`border`](../api/js/ejrangenavigator#members:navigatorstylesettings-selectionsettings-border) and [`opacity`](../api/js/ejrangenavigator#members:navigatorstylesettings-selectionsettings-opacity) options in the selectionSettings.
+
+To customize border of selected interval, use [`color`](../api/js/ejrangenavigator#members:navigatorstylesettings-selectionsettings-border-color) and [`width`](../api/js/ejrangenavigator#members:navigatorstylesettings-selectionsettings-border-width) options in border.
 
 {% highlight javascript %}
 
@@ -112,7 +117,8 @@ To customize the selected intervals, use color, border and opacity options in th
                     // enable the selection settings
                     enable: true,         
                     // customizing style
-                    color: '#27e8e5',       
+                    color: '#27e8e5',  
+                    opacity: 0.4,     
                     border:{
                          color: 'red' , width: 2
                        }
