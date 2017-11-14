@@ -46,7 +46,7 @@ $("#bulletGraph1").ejButton("destroy");
 
 #### Returns: void
 
-{ % highlight html %}
+{% highlight html %}
  
 <div id="bulletgraph1">Bullet Graph</div> 
  
