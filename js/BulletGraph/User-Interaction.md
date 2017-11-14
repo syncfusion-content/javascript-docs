@@ -12,7 +12,7 @@ api: /api/js/ejbulletgraph
 
 ## Animation
 
-**Bullet Graph** supports animation that makes the performance measure bar to animate when rendering the **Bullet Graph**. **Animation** is enabled or disabled using **enableAnimation** property. By default, **Animation** is enabled in **Bullet Graph**.
+**Bullet Graph** supports animation that makes the performance measure bar to animate when rendering the **Bullet Graph**. **Animation** is enabled or disabled using [`enable animation`](../api/ejbulletgraph#members:enableanimation) property. By default, **Animation** is enabled in **Bullet Graph**.
 
 {% highlight javascript %}
 
@@ -29,7 +29,7 @@ $("#BulletGraph1").ejBulletGraph({
 
 ## Responsiveness during browser resize
 
-**Bullet Graph** is made responsive when resizing the browser by using **isResponsive** property. By default the value of this property is **true** in **Bullet Graph**.
+**Bullet Graph** is made responsive when resizing the browser by using [`isResponsive`](../api/ejbulletgraph#members:isresponsive) property. By default the value of this property is **true** in **Bullet Graph**.
 
 {% highlight javascript %}
 
@@ -48,7 +48,7 @@ $("#BulletGraph1").ejBulletGraph({
 
 ## Applying same color to all ticks and labels in a range
 
-Background color for qualitative range is applied to major ticks and minor ticks of the **Bullet Graph** using **applyRangeStrokeToTicks** property. The range colors are applied to labels using **applyRangeStrokeToLabels** property. By default same colors are not applied to a qualitative range and its corresponding ticks or labels.
+Background color for qualitative range is applied to major ticks and minor ticks of the **Bullet Graph** using [`applyRangeStrokeToTicks`](../api/ejbulletgraph#members:applyrangestroketoticks) property. The range colors are applied to labels using [`applyRangeStrokeToLabels`](../api/ejbulletgraph#members:applyrangestroketolabels) property. By default same colors are not applied to a qualitative range and its corresponding ticks or labels.
 
 {% highlight javascript %}
 
@@ -76,11 +76,11 @@ $("#BulletGraph1").ejBulletGraph({
 
 ## Tooltip
 
-By default **Bullet Graph** displays **Tooltip** when mouse is hovered over feature measure bar. **Tooltip** is enabled or disabled using visible property in **tooltipSettings**.
+By default **Bullet Graph** displays **Tooltip** when mouse is hovered over feature measure bar. **Tooltip** is enabled or disabled using [`visible`](../api/ejbulletgraph#members:tooltipsettings-visible) property in [`tooltipSettings`](../api/ejbulletgraph#members:tooltipsettings).
 
 ![](/js/BulletGraph/User-Interaction_images/User-Interaction_img2.png) 
 
-Bullet Graph supports Tooltip template instead of default Tooltip to customize the appearance and contents of Tooltip. The Tooltip template should be a &lt;div&gt; element with display set to ‘none’, so it is displayed only when mouse is placed on feature measure bar. The id value of the &lt;div&gt; element should be provided as value to the template property in tooltipSettings of Bullet Graph to display the customized &lt;div&gt; element as Tooltip instead of default Tooltip. The values displayed in default Tooltip such as current value, target value and category are accessed in template &lt;div&gt; element by using {{currentValue}}, {{targetValue}} and {{category}} respectively.
+Bullet Graph supports Tooltip template instead of default Tooltip to customize the appearance and contents of Tooltip. The Tooltip template should be a &lt;div&gt; element with display set to ‘none’, so it is displayed only when mouse is placed on feature measure bar. The id value of the &lt;div&gt; element should be provided as value to the [`template`](../api/ejbulletgraph#members:tooltipsettings-template) property in tooltipSettings of Bullet Graph to display the customized &lt;div&gt; element as Tooltip instead of default Tooltip. The values displayed in default Tooltip such as current value, target value and category are accessed in template &lt;div&gt; element by using {{currentValue}}, {{targetValue}} and {{category}} respectively.
 
 {% highlight html %}
 

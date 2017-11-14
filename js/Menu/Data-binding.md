@@ -12,7 +12,7 @@ api: /api/js/ejmenu
 
 Data binding enables you to synchronize the elements with different sources of data. You can bind data using two ways, Local data and remote data. 
 
-##Field Members
+## Field Members
 
 Field is a property that includes the object type. Fields are used to bind the data source and it includes following field members to make binding easier.
 
@@ -67,7 +67,7 @@ imageUrl</td><td>
 Specifies the image URL to “img” tag inside item list. </td></tr>
 </table>
 
-##Local data
+## Local data
 
 To define the local data to the **Menu** control, map the user-defined **JSON** data names with its appropriate dataSource column names.
 
@@ -145,7 +145,7 @@ The following screenshot displays the output of the above code.
 ![](/js/Menu/Data-binding_images/Data-binding_img1.png) 
 
 
-##Remote data
+## Remote data
 
 The **Menu** control also provides support for Remote data binding. Here the remote data is placed in Web service and you can render the menu items from the web service using Service **URL**. The data is in **JSON** format. 
 
