@@ -10,7 +10,7 @@ api: /api/js/ejbulletgraph
 
 # Qualitative Range
 
-**Qualitative Range** represents the quality of a specific range in quantitative scale like good, bad and satisfactory. Color for each qualitative range is customized using **rangeStroke** property. The **rangeEnd** property specifies the ending point of the qualitative range. Minimum value of quantitative scale is considered as the starting point of first qualitative range and previous end points are considered as starting point for other qualitative ranges.
+[`Qualitative Range`](../api/ejbulletgraph#members:qualitativeranges) represents the quality of a specific range in quantitative scale like good, bad and satisfactory. Color for each qualitative range is customized using [`range stroke`](../api/ejbulletgraph#members:qualitativeranges-rangestroke) property. The [`range end`](../api/ejbulletgraph#members:qualitativeranges-rangeend) property specifies the ending point of the qualitative range. Minimum value of quantitative scale is considered as the starting point of first qualitative range and previous end points are considered as starting point for other qualitative ranges.
 
 {% highlight javascript %}
 
