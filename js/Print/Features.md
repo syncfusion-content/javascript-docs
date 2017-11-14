@@ -7,9 +7,9 @@ control: Print
 documentation: ug
 ---
 
-# Features
+# Print options
 
-The Print widget allows you to print a particular element or the entire web page. It also allows appearance customization to be applied on the printed page.
+The Print widget comes with other enhanced options to exclude specific elements on a page before printing, print the content on a new window and includes external styles to the page before printing, thus allowing appearance customization to be applied on the printed page.
 
 ## Printing specific elements
 
