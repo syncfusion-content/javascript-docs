@@ -9,7 +9,7 @@ documentation: ug
 
 # Features
 
-The Print widget allows you to print a particular element or the entire web page and also allows appearance customization to be applied on the printed page.
+The Print widget allows you to print a particular element or the entire web page. It also allows appearance customization to be applied on the printed page.
 
 ## Printing specific elements
 
@@ -62,7 +62,7 @@ It is possible to print a particular element alone from a page. For this, you ne
 
 ## Printing entire page
 
-It is possible to print the entire web page by passing the document body to it, which is depicted in the below code example.
+It is possible to print the entire web page by caling the `ejPrint` on the document body, which is depicted in the below code example.
 
 {% highlight javascript %}
 
