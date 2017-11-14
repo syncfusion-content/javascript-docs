@@ -15,7 +15,6 @@ The Print widget allows you to print a particular element or the entire web page
 
 It is possible to print a particular element alone from a page. For this, you need to pass that particular element into the `print` method.
 
-{% tabs %}
 {% highlight html %}
 
     <div id="control">
@@ -58,7 +57,6 @@ It is possible to print a particular element alone from a page. For this, you ne
         }
         
 {% endhighlight %}
-{% endtabs %}
 
 ![](Print-Features-Images\Features1.png)
 
@@ -127,9 +125,8 @@ It is possible to print the content in a new window by making use of the `printI
 
 It is possible to include other external styles on the printed page, by passing an URL of an external stylesheet to the `externalStyles` property.
 
-{% highlight html %}
+{% highlight javascript %}
 
-    <script type="text/javascript">
         function onPrint(e) {
             var ele = $("#Grid");
             if (!ele.hasClass("e-print")) {
@@ -140,7 +137,7 @@ It is possible to include other external styles on the printed page, by passing 
                 obj.print();
             }
         }
-    </script>
+    
 {% endhighlight %}
 
 printStyle.css file

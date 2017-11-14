@@ -14,7 +14,7 @@ This section explains briefly about how to use the **Print** widget on your appl
 
 ## Include Script and CSS
 
-To get start with Print, create a new html file and add the required dependent CSS as well as script files.
+To get start with Print, create a new HTML file and add the required dependent CSS as well as script files.
 
 CSS file
 
@@ -97,7 +97,6 @@ To Print a Grid control, first the grid control needs to be defined on the page 
 
 Keep a separate button on a page and on it's click action, call the `ejPrint` function as depicted in the below code example to print the entire grid control.
 
-{% tabs %}
 {% highlight html %}
 
     <div id="control">
@@ -135,8 +134,6 @@ Keep a separate button on a page and on it's click action, call the `ejPrint` fu
         }
         
 {% endhighlight %}
-{% endtabs %}
-
 
 ![Create Print](getting-started_images\getting-started_img1.png)
 
