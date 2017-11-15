@@ -12,7 +12,7 @@ api: /api/js/ejcirculargauge
 
 **Interaction**
 
-**Circular Gauge** control contains **Interaction** feature. You can use this interaction feature to change the pointer values manually. You can achieve this by clicking and dragging the pointer over the **Gauge** and you can see the value of pointer changes dynamically while dragging. To Enable/Disable the user interaction you can use the Boolean property called **readOnly**. The user interaction option is enabled when you set the value as false for the property **readOnly**.By default it holds the true value.That is by default it does not support interaction. 
+**Circular Gauge** control contains **Interaction** feature. You can use this interaction feature to change the pointer values manually. You can achieve this by clicking and dragging the pointer over the **Gauge** and you can see the value of pointer changes dynamically while dragging. To Enable/Disable the user interaction you can use the Boolean property called [`readOnly`](../api/js/ejcirculargauge#members:readonly). The user interaction option is enabled when you set the value as false for the property **readOnly**.By default it holds the true value.That is by default it does not support interaction. 
 
 {% highlight html %}
 
@@ -40,7 +40,7 @@ Execute the above code to render the following output.
 
 **Animations**
 
-**Circular Gauge** contains an attractive concept called **Animation**. The animation option enables the pointer to rotate from the minimum value to the current value with animation effects. By using this animation you can change the pointer value dynamically.You can apply the animation on  pointer either by clockwise or counterclockwise based on the scale direction. You can enable / disable it using the property **enableAnimation.** Animation is enabled when you set **enableAnimation** as ‘true’. By default it holds the true value. You can control the speed of the pointer during animating by using the property **animationSpeed**. It is a numerical value that holds the time in milliseconds. That is when the value is given as 1000, it is considered as 1 second.
+**Circular Gauge** contains an attractive concept called **Animation**. The animation option enables the pointer to rotate from the minimum value to the current value with animation effects. By using this animation you can change the pointer value dynamically.You can apply the animation on  pointer either by clockwise or counterclockwise based on the scale direction. You can enable / disable it using the property [`enableAnimation`](../api/js/ejcirculargauge#members:enableanimation). Animation is enabled when you set **enableAnimation** as ‘true’. By default it holds the true value. You can control the speed of the pointer during animating by using the property [`animationSpeed`](../api/js/ejcirculargauge#members:animationspeed). It is a numerical value that holds the time in milliseconds. That is when the value is given as 1000, it is considered as 1 second.
 
 {% highlight html %}
 
@@ -68,3 +68,148 @@ Execute the above code to render the following output.
 
 ![](/js/CircularGauge/Interaction-and-Animation_images/Interaction-and-Animation_img2.png)
 
+**Gradient**
+
+You can change the interior gradient of circular gauge by using [`interiorGradient`](../api/js/ejcirculargauge#members:interiorgradient) property. The [`isRadialGradient`](../api/js/ejcirculargauge#members:isradialgradient) property is used to check whether the gradient is circular or not.  
+
+{% highlight html %}
+
+<div id="CircularGauge1"></div>
+
+{% endhighlight %}
+
+
+{% highlight javascript %}
+
+$(function () {
+        $("#CircularGauge1").ejCircularGauge({          
+        interiorGradient: { colorInfo:[{colorStop : 0, color:"#FFFFFF"},{colorStop : 1, color:"#AAAAAA"}] },
+        isRadialGradient : true,
+        })
+    });
+
+{% endhighlight %}
+
+**Distance From Corner**
+
+You can display the circular gauge from distance apart from the corner by specifying value for [`distanceFromCorner`](../api/js/ejcirculargauge#members:distancefromcorner) property. 
+
+{% highlight html %}
+
+<div id="CircularGauge1"></div>
+
+{% endhighlight %}
+
+{% highlight javascript %}
+
+$(function () {
+        $("#CircularGauge1").ejCircularGauge({          
+        distanceFromCorner :25
+        })
+    });
+
+{% endhighlight %}
+
+**Resize**
+
+Circular gauge can be responsive while resizing by specifying [`enableResize`](../api/js/ejcirculargauge#members:enableresize) property as true. 
+
+{% highlight html %}
+
+<div id="CircularGauge1"></div>
+
+{% endhighlight %}
+
+
+{% highlight javascript %}
+
+$(function () {
+        $("#CircularGauge1").ejCircularGauge({          
+            enableResize: true
+        })
+    });
+
+{% endhighlight %}
+
+**Localization**
+
+The circular gauge can be localized based on name of culture specified in [`locale`](../api/js/ejcirculargauge#members:locale) property.
+
+{% highlight html %}
+
+<div id="CircularGauge1"></div>
+
+{% endhighlight %}
+
+
+{% highlight javascript %}
+
+$(function () {
+        $("#CircularGauge1").ejCircularGauge({          
+           locale : "en-US"
+        })
+    });
+
+{% endhighlight %}
+
+**Themes**
+
+**CircularGauge** theme is a set of pre-defined options that are applied to the control before **CircularGauge** is instantiated. Following predefined themes are available in JavaScript **CircularGauge**.
+
+1. flatlight
+2. flatdark
+3. gradientlight 
+4. gradientdark 
+5. azure                      
+6. azuredark               
+7. lime 
+8. limedark
+9. saffron
+10. saffrondark
+11. gradientazure
+12. gradientazuredark
+13. gradientlime
+14. gradientlimedark
+15. gradientsaffron
+16. gradientsaffrondark
+
+The theme for circular gauge can be specified using [`theme`](../api/js/ejcirculargauge#members:theme) property.
+
+{% highlight html %}
+
+<div id="CircularGauge1"></div>
+
+{% endhighlight %}
+
+{% highlight javascript %}
+
+$(function () {
+        $("#CircularGauge1").ejCircularGauge({          
+            theme : "flatlight"
+        })
+    });
+
+{% endhighlight %}
+
+**Circular Gauge Values**
+
+The [`minimum`](../api/js/ejcirculargauge#members:minimum), [`maximum`](../api/js/ejcirculargauge#members:maximum), [`radius`](../api/js/ejcirculargauge#members:radius) and [`value`](../api/js/ejcirculargauge#members:value) attributes of circular gauge are used to render the circular guage with specified location. 
+
+{% highlight html %}
+
+<div id="CircularGauge1"></div>
+
+{% endhighlight %}
+
+{% highlight javascript %}
+
+$(function () {
+        $("#CircularGauge1").ejCircularGauge({            
+            maximum: 120,
+            minimum: 10,
+            value: 30,
+            radius: 100
+        })
+    });
+
+{% endhighlight %}

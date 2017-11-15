@@ -14,7 +14,7 @@ Custom labels are the texts that you can use them in any location of the **Gauge
 
 ## Adding Custom Label Collection
 
-Custom labels collection is directly added to the scale object. Refer the following code to add custom labels collection in a **Gauge** control.
+Custom labels collection is directly added to the scale object. Refer the following code to add [`customLabels`](../api/js/ejcirculargauge#members:scales-customlabels) collection in a **Gauge** control.
 
 {% highlight html %}
 
@@ -41,11 +41,11 @@ Custom labels collection is directly added to the scale object. Refer the follow
 
 **Basic Customization**
 
-You can customize custom labels using the properties such as **textAngle**, **color** and **font**. **textAngle** attribute is used to display the custom labels in the specified angles and **color** attribute is used to display the custom labels in specified color. 
+You can customize custom labels using the properties such as [`textAngle`](../api/js/ejcirculargauge#members:scales-customlabels-textangle), [`color`](../api/js/ejcirculargauge#members:scales-customlabels-color) and [`font`](../api/js/ejcirculargauge#members:scales-customlabels-font).  **textAngle** attribute is used to display the custom labels in the specified angles and **color** attribute is used to display the custom labels in specified color. 
 
-You can use **Value** attribute to set the text value in the custom labels. To display the custom labels, set **showCustomLabels** as ‘true’. To set the location of the custom label in **Circular Gauge**, **location** property is used. By using **x** and **y** axis you can adjust the position of the custom labels.
+You can use [`value`](../api/js/ejcirculargauge#members:scales-customlabels-value) attribute to set the text value in the custom labels. To display the custom labels, set [`showCustomLabels`](../api/js/ejcirculargauge#members:scales-showcustomlabels) as ‘true’. To set the location of the custom label in **Circular Gauge**, [`position`](../api/js/ejcirculargauge#members:scales-customlabels-position) property is used. By using [`x`](../api/js/ejcirculargauge#members:scales-customlabels-position-x) and [`y`](../api/js/ejcirculargauge#members:scales-customlabels-position-y) axis you can adjust the position of the custom labels.
 
-Font option is also available on  custom labels. The basic three properties of fonts such as size, family and style can be achieved by **size**, **fontStyle** and **fontFamily** attributes. 
+Font option is also available on  custom labels. The basic three properties of fonts such as size, family and style can be achieved by [`size`](../api/js/ejcirculargauge#members:scales-customlabels-font-size), [`fontStyle`](../api/js/ejcirculargauge#members:scales-customlabels-font-fontstyle) and [`fontFamily`](../api/js/ejcirculargauge#members:scales-customlabels-font-fontfamily) attributes. 
 
 {% highlight html %}
 
@@ -156,7 +156,7 @@ Execute the above code to render the following output.
 
 ## Outer Custom Label
 
-**Outer Custom Label** is used to show custom labels outside the **gauge** control. The **Outer Custom Label** can be positioned with API called **outerCustomLabelPosition.** The value for this API is enumerable type and its possible values are,
+**Outer Custom Label** is used to show custom labels outside the **gauge** control. The **Outer Custom Label** can be positioned with API called [`outerCustomLabelPosition`](../api/js/ejcirculargauge#members:outercustomlabelposition). The value for this API is enumerable type and its possible values are,
 
 * Right
 
@@ -166,7 +166,7 @@ Execute the above code to render the following output.
 
 * Bottom
 
-When a custom label is to be displayed as an **Outer Custom Label**, set the API **customLabelType** as Outer. Refer to the following code example to get the **Outer Custom Label**.
+When a custom label is to be displayed as an **Outer Custom Label**, set the API [`positionType`](../api/js/ejcirculargauge#members:scales-customlabels-positionType) as Outer. Refer to the following code example to get the **Outer Custom Label**.
 
 
 {% highlight html %}
