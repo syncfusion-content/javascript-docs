@@ -137,7 +137,7 @@ Fires before rendering the datalabel, you can use [`dataLabelRendering`](../api/
 
 {% highlight js %}
  
-//datalabelrendering event for sunburst
+//data label rendering event for sunburst
 
 $("#container").ejSunburstChart({
 
@@ -160,7 +160,7 @@ Fires before rendering each segment, you can use [`segmentRendering`](../api/js/
 
 {% highlight js %}
  
-//segmentrendering event for sunburst
+//segment rendering event for sunburst
 
 $("#container").ejSunburstChart({
 
@@ -184,7 +184,7 @@ Fires before rendering sunburst title, you can use [`titleRendering`](../api/js/
 
 {% highlight js %}
  
-//titlerendering event for sunburst
+//title rendering event for sunburst
 
 $("#container").ejSunburstChart({
 
@@ -212,7 +212,7 @@ Fires during initialization of tooltip, you can use [`tooltipInitialize`](../api
 
 {% highlight js %}
  
-//tooltipinitialize event for sunburst
+//tooltip initialize event for sunburst
 
 $("#container").ejSunburstChart({
 
@@ -236,7 +236,7 @@ Fires after clicking the point in sunburst, you can use [`pointRegionClick`](../
 
 {% highlight js %}
  
-//pointregionclick event for sunburst
+//point region click event for sunburst
 
 $("#container").ejSunburstChart({
 
@@ -258,7 +258,7 @@ Fires while moving the mouse over sunburst points, you can use [`pointRegionMous
 
 {% highlight js %}
  
-//pointregionmousemove event for sunburst
+//point region mouse move event for sunburst
 
 $("#container").ejSunburstChart({
 
@@ -281,7 +281,7 @@ Fires when clicking the point to perform drilldown, you can use [`drillDownClick
 
 {% highlight js %}
  
-//drilldownclick event for sunburst
+//drill down click event for sunburst
 
 $("#container").ejSunburstChart({
 
@@ -304,7 +304,7 @@ Fires when resetting drilldown points, you can use [`drillDownBack`](../api/js/e
 
 {% highlight js %}
  
-//drilldownback event for sunburst
+//drill down back event for sunburst
 
 $("#container").ejSunburstChart({
 
@@ -329,7 +329,7 @@ Fires after resetting the sunburst points, you can use [`drillDownReset`](../api
 
 {% highlight js %}
  
-//drilldownreset event for sunburst
+//drill down reset event for sunburst
 
 $("#container").ejSunburstChart({
 
@@ -352,7 +352,7 @@ Fires before rendering the legend item, you can use [`legendItemRendering`](../a
 
 {% highlight js %}
  
-//drilldownreset event for sunburst
+//legend item rendering event for sunburst
 
 $("#container").ejSunburstChart({
 
@@ -376,7 +376,7 @@ Fires when clicking the legend item, you can use [`legendItemClick`](../api/js/e
 
 {% highlight js %}
  
-//drilldownreset event for sunburst
+//legend item click event for sunburst
 
 $("#container").ejSunburstChart({
 
