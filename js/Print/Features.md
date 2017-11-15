@@ -29,6 +29,8 @@ It is possible to print a particular element alone from a page. For this, you ne
 
 {% endhighlight %}
 
+To print the grid layout alone excluding other items from a web page, refer the below code example.
+
 {% highlight javascript %}
 
         $(function () {
@@ -48,8 +50,6 @@ It is possible to print a particular element alone from a page. For this, you ne
             var ele = $("#Grid");
             if (!ele.hasClass("e-print")) {
                 $("#Grid").ejPrint();
-                var obj = $("#Grid").ejPrint("instance");
-                obj.print(".control2");
             } else {
                 obj = $("#Grid").ejPrint("instance");
                 obj.print(".control2");
@@ -61,7 +61,7 @@ It is possible to print a particular element alone from a page. For this, you ne
 
 ## Printing entire page
 
-It is possible to print the entire web page by caling the `ejPrint` on the document body, which is depicted in the below code example.
+It is possible to print the entire web page by caling the `ejPrint` on the document body, which is depicted in the below code example. Here, the entire page including all the items on the page will be printed.
 
 {% highlight javascript %}
 
@@ -82,6 +82,8 @@ It is possible to print the entire web page by caling the `ejPrint` on the docum
 ## Excluding specific elements
 
 It is possible to exclude specific selectors from a page or from specific component before printing it. This can be achieved by using the `excludeSelector` property.
+
+The below code example depicts the way to print the grid control excluding specific elements with the class name 'e-row' from it.
 
 {% highlight javascript %}
 
@@ -120,7 +122,7 @@ It is possible to print the content in a new window by making use of the `printI
 
 ## Applying external styles
 
-It is possible to include other external styles on the printed page, by passing an URL of an external stylesheet to the `externalStyles` property.
+It is possible to include other external styles on the elements of a printed page, by passing an URL of an external stylesheet to the `externalStyles` property.
 
 {% highlight javascript %}
 
