@@ -193,7 +193,7 @@ $(function () {
 
 **Circular Gauge Values**
 
-The [`minimum`](../api/js/ejcirculargauge#members:minimum), [`maximum`](../api/js/ejcirculargauge#members:maximum), [`radius`](../api/js/ejcirculargauge#members:radius) and [`value`](../api/js/ejcirculargauge#members:value) attributes of circular gauge are used to render the circular guage with specified location. 
+The [`minimum`](../api/js/ejcirculargauge#members:minimum), [`maximum`](../api/js/ejcirculargauge#members:maximum), [`radius`](../api/js/ejcirculargauge#members:radius) and [`value`](../api/js/ejcirculargauge#members:value) attributes of circular gauge are used to render the circular gauge with specified location. 
 
 {% highlight html %}
 

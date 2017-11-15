@@ -542,7 +542,7 @@ The [`getStartAngle`](../api/js/ejcirculargauge#methods:getstartangle) method is
 
 ### Getting Sub Gauge Location
 
-The [`getSubGaugeLocation`](../api/js/ejcirculargauge#methods:getsubgaugelocation) method is used to get location of subgauge.
+The [`getSubGaugeLocation`](../api/js/ejcirculargauge#methods:getsubgaugelocation) method is used to get location of subGauge.
 
 {% highlight html %}
 
@@ -672,7 +672,7 @@ The [`getTickWidth`](../api/js/ejcirculargauge#methods:gettickwidth) method is u
 
 ### Setting IncludeFirstValue
 
-The [`includeFirstValue`](../api/js/ejcirculargauge#methods:includefirstvalue) method is used to set includefirstvalue.
+The [`includeFirstValue`](../api/js/ejcirculargauge#methods:includefirstvalue) method is used to set includeFirstValue.
 
 {% highlight html %}
 
@@ -1216,7 +1216,7 @@ The [`setStartAngle`](../api/js/ejcirculargauge#methods:setstartangle) method is
 
 ### Setting Sub Gauge Location
 
-The [`setSubGaugeLocation`](../api/js/ejcirculargauge#methods:setsubgaugelocation) method is used to set location of subgauge.
+The [`setSubGaugeLocation`](../api/js/ejcirculargauge#methods:setsubgaugelocation) method is used to set location of subGauge.
 
 {% highlight html %}
 
@@ -1457,7 +1457,7 @@ $("#CircularGauge1").ejCircularGauge({
 
 ### Draw Ticks
 
-The [`drawTicks`](../api/js/ejcirculargauge#events:drawticks) event is triggered when ticks aree being drawn on the gauge. 
+The [`drawTicks`](../api/js/ejcirculargauge#events:drawticks) event is triggered when ticks are being drawn on the gauge. 
 
 {% highlight javascript %}
 
