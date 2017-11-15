@@ -14,7 +14,7 @@ api: /api/js/ejcirculargauge
 
 **Positioning**
 
-Semi-circular Gauge can be positioned with the help of the attribute called gaugePosition. It is an enumerable value. You can position the gauge away from the corner with the help of the distanceFromCorner attribute. 
+Semi-circular Gauge can be positioned with the help of the attribute called [`gaugePosition`](../api/js/ejcirculargauge#members:gaugeposition). It is an enumerable value. You can position the gauge away from the corner with the help of the distanceFromCorner attribute. 
 
 The possible enum values for the gaugePosition are as follows:
 

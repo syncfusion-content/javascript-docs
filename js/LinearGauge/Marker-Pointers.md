@@ -10,7 +10,7 @@ api: /api/js/ejlineargauge
 
 # Marker Pointers
 
-**Marker Pointer** value points out the actual value set in the **Linear Gauge**. You can set values for various pointer attributes such as value, type, length, width, border and color in pointer collection. You can also customize the pointers to improve the appearance of gauge.
+**Marker Pointer** value points out the actual value set in the **Linear Gauge**. You can set values for various pointer attributes such as [`value`](../api/js/ejlineargauge#members:scales-markerpointers-value), [`type`](../api/js/ejlineargauge#members:scales-markerpointers-type), [`length`](../api/js/ejlineargauge#members:scales-markerpointers-length), [`width`](../api/js/ejlineargauge#members:scales-markerpointers-width), border and color in pointer collection. You can also customize the pointers to improve the appearance of gauge.
 
 ## Adding marker pointer collection
 
@@ -66,7 +66,7 @@ Execute the above code to render the following output.
 
 ## Add marker pointer value
 
-The **value** property is the important element in the marker pointer collection which indicates the gauge value. Real purpose of the **Linear Gauge** is based on the pointer value. You can set the pointer value either directly during rendering the control or it can be achieved by public method.
+The [`value`](../api/js/ejlineargauge#members:scales-markerpointers-value) property is the important element in the marker pointer collection which indicates the gauge value. Real purpose of the **Linear Gauge** is based on the pointer value. You can set the pointer value either directly during rendering the control or it can be achieved by public method.
 
 
 {% highlight html %}
@@ -131,9 +131,9 @@ Execute the above code to render the following output.
 
 **Appearance**
 
-* Based on the value, the **pointer** points out the label value. You can set the pointer length and width using **length** and **width** property respectively. You can also adjust the opacity of the pointer using the **opacity** property which holds the value between 0 and 1. You can add the gradient effects to the pointer using **gradient** object. 
+* Based on the value, the **pointer** points out the label value. You can set the pointer length and width using [`length`](../api/js/ejlineargauge#members:scales-length) and [`width`](../api/js/ejlineargauge#members:scales-markerpointers-width) property respectively. You can also adjust the opacity of the pointer using the [`opacity`](../api/js/ejlineargauge#members:scales-markerpointers-opacity) property which holds the value between 0 and 1. You can add the gradient effects to the pointer using [`gradient`](../api/js/ejlineargauge#members:scales-markerpointers-gradients) object. 
 
-* The marker pointer border is modified with the **border** object. It contains two border property namely **color** and **width** which are used to customize the border color of the scale and border width of the marker pointer. The background color can be customized with attribute **backgroundColor**.
+* The marker pointer border is modified with the **border** object. It contains two border property namely [`color`](../api/js/ejlineargauge#members:scales-markerpointers-border-color) and [`width`](../api/js/ejlineargauge#members:scales-markerpointers-border-width) which are used to customize the border color of the scale and border width of the marker pointer. The background color can be customized with attribute [`backgroundColor`](../api/js/ejlineargauge#members:scales-markerpointers-backgroundcolor).
 
 {% highlight html %}
 
@@ -204,9 +204,9 @@ Execute the above code to render the following output.
 
 ## Positioning the pointer
 
-* You can position the Pointer with two properties, **distanceFromScale** and **placement**. The **distanceFromScale** property defines the distance between the scale and pointer. 
+* You can position the Pointer with two properties, **distanceFromScale** and **placement**. The [`distanceFromScale`](../api/js/ejlineargauge#members:scales-markerpointers-distancefromscale) property defines the distance between the scale and pointer. 
 
-* The **Placement** property is used to locate the pointer with respect to scale either inside or outside the scale or along the scale. It is an enumerable data type.
+* The [`placement`](../api/js/ejlineargauge#members:scales-markerpointers-placement) property is used to locate the pointer with respect to scale either inside or outside the scale or along the scale. It is an enumerable data type.
 
 
 {% highlight html %}

@@ -76,9 +76,9 @@ Execute the above code to render the following output.
 
 **Appearance**
 
-* You can customize custom labels using the properties like **textAngle**, **color** and **font**. The API **textAngle** is used to display the custom labels in the specified angles and **color** attribute is used to display the custom labels in specified color. You can use **value** attribute to set the text value in the custom labels. 
+* You can customize custom labels using the properties like [`textAngle`](../api/js/ejlineargauge#members:scales-customlabels-textangle), [`color`](../api/js/ejlineargauge#members:scales-customlabels-color) and [`font`](../api/js/ejlineargauge#members:scales-customlabels-font). The API **textAngle** is used to display the custom labels in the specified angles and **color** attribute is used to display the custom labels in specified color. You can use [`value`](../api/js/ejlineargauge#members:scales-customlabels-value)attribute to set the text value in the custom labels. 
 
-* To display the custom labels, set **showCustomLabels** as ‘true’. Font option is also available on the custom labels. The basic three properties of fonts such as size, family and style can be achieved by **size**, **fontStyle** and **fontFamily**. You can adjust the opacity of the label with the property **opacity** and the value of opacity lies between 0 and 1.
+* To display the custom labels, set [`showCustomLabels`](../api/js/ejlineargauge#members:scales-showcustomlabels) as ‘true’. Font option is also available on the custom labels. The basic three properties of fonts such as [`size`](../api/js/ejlineargauge#members:scales-showcustomlabels), [`family`](../api/js/ejlineargauge#members:scales-customlabels-font-fontfamily) and [`style`](../api/js/ejlineargauge#members:scales-customlabels-font-fontstyle) can be achieved by **size**, **fontStyle** and **fontFamily**. You can adjust the opacity of the label with the property [`opacity`](../api/js/ejlineargauge#members:scales-customlabels-opacity) and the value of opacity lies between 0 and 1.
 
 
 {% highlight html %}
@@ -144,7 +144,7 @@ Execute the above code to render the following output.
 
 ## Locating the CustomLabels
 
-To set the location of the custom label in **Linear Gauge**, **position** property is used. You can position the custom labels in horizontal and vertical axis using **X** and **Y** axis respectively.
+To set the location of the custom label in **Linear Gauge**, [`position`](../api/js/ejlineargauge#members:scales-customlabels-position) property is used. You can position the custom labels in horizontal and vertical axis using [`x`](../api/js/ejlineargauge#members:scales-customlabels-position-x) and [`y`](../api/js/ejlineargauge#members:scales-customlabels-position-y) axis respectively.
 
 
 {% highlight html %}
