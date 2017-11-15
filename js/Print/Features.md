@@ -58,7 +58,6 @@ It is possible to print a particular element alone from a page. For this, you ne
         
 {% endhighlight %}
 
-![](Print-Features-Images\Features1.png)
 
 ## Printing entire page
 
@@ -79,8 +78,6 @@ It is possible to print the entire web page by caling the `ejPrint` on the docum
 
 {% endhighlight %}
 
-![](Print-Features-Images\Features2.png)
-
 
 ## Excluding specific elements
 
@@ -100,7 +97,6 @@ It is possible to exclude specific selectors from a page or from specific compon
         }
 {% endhighlight %}
 
-![](Print-Features-Images\Features3.png)
 
 ## Printing content in a new window
 
@@ -121,6 +117,7 @@ It is possible to print the content in a new window by making use of the `printI
 
 {% endhighlight %}
 
+
 ## Applying external styles
 
 It is possible to include other external styles on the printed page, by passing an URL of an external stylesheet to the `externalStyles` property.
@@ -140,7 +137,7 @@ It is possible to include other external styles on the printed page, by passing 
     
 {% endhighlight %}
 
-printStyle.css file
+The style that is defined within the `printStyle.css` file is depicted below.
 
 {% highlight html %}
 
@@ -153,3 +150,5 @@ printStyle.css file
 </style>
 
 {% endhighlight %}
+
+N> The CSS file can be placed in any of your system location, but its path needs to be provided accurately to the `externalStyles` property.
