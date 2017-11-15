@@ -10,11 +10,11 @@ api: /api/js/ejbulletgraph
 
 # Quantitative Scale
 
-The **Quantitative Scale** appearance is customized using **quantitativeScaleSettings** property. It has properties to customize labels, major ticks, minor ticks, comparative measure and performance measure of the bullet graph
+The **Quantitative Scale** appearance is customized using [`quantitativeScaleSettings`](../api/ejbulletgraph#members:quantitativescalesettings) property. It has properties to [`customize labels`](../api/ejbulletgraph#members:quantitativescalesettings-labelsettings), [`major ticks`](../api/ejbulletgraph#members:quantitativescalesettings-majorticksettings), [`minor ticks`](../api/ejbulletgraph#members:quantitativescalesettings-minorticksettings), [`comparative measure`](../api/ejbulletgraph#members:quantitativescalesettings-comparativemeasuresettings) and performance measure of the bullet graph
 
 ## Range for Quantitative Scale
 
-**Quantitative Scale** range is set using the properties **minimum**, **maximum** and **interval** of **quantitativeScaleSettings** property. **Minimum** specifies the start range of the scale, **maximum** specifies the end range of scale and **interval** specifies the number of intervals between start and end range. Default values of **minimum**, **maximum** and **interval** are 0, 10 and 1 respectively. The number of minor ticks (ticks between intervals) are specified using **minorTicksPerInterval** property.
+**Quantitative Scale** range is set using the properties [`minimum`](../api/ejbulletgraph#members:quantitativescalesettings-minimum), [`maximum`](../api/ejbulletgraph#members:quantitativescalesettings-maximum) and [`interval`](../api/ejbulletgraph#members:quantitativescalesettings-interval) of **quantitativeScaleSettings** property. **Minimum** specifies the start range of the scale, **maximum** specifies the end range of scale and **interval** specifies the number of intervals between start and end range. Default values of **minimum**, **maximum** and **interval** are 0, 10 and 1 respectively. The number of minor ticks (ticks between intervals) are specified using [`minorTicksPerInterval`](../api/ejbulletgraph#members:quantitativescalesettings-minorticksperinterval) property.
 
 {% highlight javascript %}
 
@@ -40,7 +40,7 @@ The following screenshot displays a **Bullet Graph** with start range 0, end ran
 
 ## Quantitative scale location
 
-Bullet Graph does not position Quantitative scale automatically based on its size or space required for caption text, etc. By default Quantitative scale is positioned at 10 pixels from left and 10 pixels from top. Quantitative scale location is customized as per the requirement using the location property available in quantitativeScaleSettings.
+Bullet Graph does not position Quantitative scale automatically based on its size or space required for caption text, etc. By default Quantitative scale is positioned at 10 pixels from left and 10 pixels from top. Quantitative scale location is customized as per the requirement using the [`location`](../api/ejbulletgraph#members:quantitativescalesettings-location) property available in quantitativeScaleSettings. Using the this property you can set [`X`](../api/ejbulletgraph#members:quantitativescalesettings-x) and [`Y`](../api/ejbulletgraph#members:quantitativescalesettings-y) location of the quantitative scale.
 
 {% highlight javascript %}
 
@@ -61,7 +61,7 @@ The following screenshot displays **Bullet Graph** with Quantitative scale at 20
 
 ## Major ticks
 
-Color, size and width of **Major tick** lines are customized using **majorTickSettings** property in **quantitativeScaleSettings**. Default value of **size** and **width** properties are 13 and 2 respectively. **Ticks** are drawn in black color by default. The property **size** represents the height of **tick** lines and **width** represents the width of **tick** lines and **ticks** color are customized using **stroke** property.
+Color, size and width of **Major tick** lines are customized using [`major tick settings`](../api/ejbulletgraph#members:quantitativescalesettings:majorticksettings) property in **quantitativeScaleSettings**. Default value of [`size`](../api/ejbulletgraph#members:quantitativescalesettings-majorticksettings-size) and [`width`](../api/ejbulletgraph#members:quantitativescalesettings-majorticksettings-width) properties are 13 and 2 respectively. **Ticks** are drawn in black color by default. The property **size** represents the height of **tick** lines and **width** represents the width of **tick** lines and **ticks** color are customized using [`stroke`](../api/ejbulletgraph#members:quantitativescalesettings-majorticksettings-stroke) property.
 
 {% highlight javascript %}
 
@@ -88,7 +88,7 @@ The following screenshot displays **Major ticks** in **gray** color with a width
 
 ## Minor ticks
 
-Minor ticks can also be customized similar to major ticks. The properties stroke, width and size of minorTickSettings are used to customize Minor ticks in quantitative scale. Stroke specifies the color of ticks, width specifies the width of ticks and size specifies the height of the ticks.
+[`Minor ticks`](../api/ejbulletgraph#members:quantitativescalesettings-minorticksettings) can also be customized similar to major ticks. The properties [`stroke`](../api/ejbulletgraph#members:quantitativescalesettings-minorticksettings-stroke), [`width`](../api/ejbulletgraph#members:quantitativescalesettings-minorticksettings-width) and [`size`](../api/ejbulletgraph#members:quantitativescalesettings-minorticksettings-size) of minorTickSettings are used to customize Minor ticks in quantitative scale. Stroke specifies the color of ticks, width specifies the width of ticks and size specifies the height of the ticks.
 
 {% highlight javascript %}
 
@@ -115,7 +115,7 @@ The following screenshot displays **Bullet Graph** with customized **Minor ticks
 
 ## Tick position
 
-**Ticks** are positioned below, above or inside the quantitative scale. By default **ticks** are positioned below the quantitative scale. The **tickPosition** property is used to customize the position of ticks in quantitative scale. **Ticks** can be placed inside the quantitative scale by setting **tickPosition** to **cross**.
+**Ticks** are positioned below, above or inside the quantitative scale. By default **ticks** are positioned below the quantitative scale. The [`tickPosition`](../api/ejbulletgraph#members:quantitativescalesettings-tickposition) property is used to customize the position of ticks in quantitative scale. **Ticks** can be placed inside the quantitative scale by setting **tickPosition** to **cross**.
 
 {% highlight javascript %}
 
@@ -138,7 +138,7 @@ The following screenshot displays **Bullet Graph** with ticks positioned above q
 
 ## Tick Placement
 
-**Quantitative****scale****ticks** can be placed either inside or outside the scale using “**tickPlacement**” property. By default ticks are placed outside the scale.
+**Quantitative****scale****ticks** can be placed either inside or outside the scale using [`tick placement`](../api/ejbulletgraph#members:quantitativescalesettings-tickplacement) property. By default ticks are placed outside the scale.
 
 
 
@@ -175,7 +175,21 @@ The following screenshot displays **Bullet Graph** ticks inside **Quantitative S
 
 ## Quantitative scale labels
 
-**Quantitative****scale****labels** are customized with prefix, suffix, font, color and size using **labelSettings** property. By default, label text is displayed in black color with 12 pixel ‘Segoe UI’ font and there is a padding of 20 pixels space between quantitative scale and labels.
+**Quantitative****scale****labels** are customized with prefix, suffix, font, color and size using **labelSettings** property. Following customization options are available in **labelSettings**.
+
+* You can place the label inside or outside of the bullet graph using [`label placement`](../api/ejbulletgraph#members:quantitativescalesettings-labelsettings-labelplacement) property.
+
+* Prefix and suffix to the label is added with [`label prefix`](../api/ejbulletgraph#members:quantitativescalesettings-labelsettings-labelprefix) and [`label suffix`](../api/ejbulletgraph#members:quantitativescalesettings-labelsettings-labelsuffix) property.
+
+* You can specify the horizontal or vertical padding of the labels using [`offset`](../api/ejbulletgraph#members:quantitativescalesettings-labelsettings-offset) property.
+
+* You can position the label either above or below the bulletgraph by using [`position`](../api/ejbulletgraph#members:quantitativescalesettings-labelsettings-position) property.
+
+* To specify the size of the label text, you can use [`size`](../api/ejbulletgraph#members:quantitativescalesettings-labelsettings-size) property.
+
+* You can customize the color the labels using [`stroke`](../api/ejbulletgraph#members:quantitativescalesettings-labelsettings-stroke) property.
+
+* Using [`font`](../api/ejbulletgraph#members:quantitativescalesettings-labelsettings-font) option in the label settings, you can customize the [`font family`](../api/ejbulletgraph#members:quantitativescalesettings-labelsettings-font-fontfamily), [`font style`](../api/ejbulletgraph#members:quantitativescalesettings-labelsettings-font-fontstyle), [`font weight`](../api/ejbulletgraph#members:quantitativescalesettings-labelsettings-font-fontweight) and [`opacity`](../api/ejbulletgraph#members:quantitativescalesettings-labelsettings-font-opacity) of the label text.
 
 {% highlight javascript %}
 
@@ -248,7 +262,7 @@ The following screenshot displays **Bullet Graph** labels inside **Quantitative 
 
 ## Performance measure bar
 
-Performance measure bar is customized using featuredMeasureSettings in quantitativeScaleSettings property. Color of the bar is customized using stroke property and width using width property. By default bar is drawn in black color with 6 pixels of width.
+Performance measure bar is customized using [`featuredMeasureSettings`](../api/ejbulletgraph#members:quantitativescalesettings-featuredmeasuresettings) in quantitativeScaleSettings property. Color of the bar is customized using [`stroke`](../api/ejbulletgraph#members:quantitativescalesettings-featuredmeasuresettings-stroke) property and [`width`](../api/ejbulletgraph#members:quantitativescalesettings-featuredmeasuresettings-width) using width property. By default bar is drawn in black color with 6 pixels of width.
 
 {% highlight javascript %}
 
@@ -275,7 +289,7 @@ The following screenshot displays **Bullet Graph** with customized **Performance
 
 ## Comparative measure symbol
 
-Comparative symbol color and width are customized using comparativeMeasureSettings through quantitativeScaleSettings property. Color of the symbol is customized using stroke property and width using width property. By default Comparative measure symbol is displayed in black color with a width of 5 pixels.
+Comparative symbol color and width are customized using [`comparativeMeasureSettings`](../api/ejbulletgraph#members:quantitativescalesettings-comparativemeasuresettings) through quantitativeScaleSettings property. Color of the symbol is customized using [`stroke`](../api/ejbulletgraph#members:quantitativescalesettings-comparativemeasuresettings-stroke) property and width using [`width`](../api/ejbulletgraph#members:quantitativescalesettings-comparativemeasuresettings-width) property. By default Comparative measure symbol is displayed in black color with a width of 5 pixels.
 
 {% highlight javascript %}
 
@@ -302,7 +316,7 @@ The following screenshot displays **Bullet Graph** with customized **Comparative
 
 ## Multiple performance measures comparison
 
-**Bullet Graph** supports comparing more than one performance at a time, given that all the comparisons are related using **featureMeasure** in **quantitativeScaleSettings** property.
+**Bullet Graph** supports comparing more than one performance at a time, given that all the comparisons are related using [`featureMeasure`](../api/ejbulletgraph#members:quantitativescalesettings-featuremeasures) in **quantitativeScaleSettings** property. In feature measures, you can specify [`category`](../api/ejbulletgraph#members:quantitativescalesettings-featuremeasures-category), [`comparative measure value`](../api/ejbulletgraph#members:quantitativescalesettings-featuremeasures-comparativemeasurevalue) and [`value`](../api/ejbulletgraph#members:quantitativescalesettings-featuremeasures-value) properties that are used to comparing performance.
 
 {% highlight javascript %}
 

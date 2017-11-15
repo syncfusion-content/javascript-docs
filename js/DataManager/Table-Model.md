@@ -29,7 +29,7 @@ Then the model is bound with the element using the **bindTo.**
                     </thead>
                     <tbody id="tbody1">
                         <tr>
-                            <td ej-observe="EmployeeID"></td>
+                            <td ej-observe="EmployeeID" ej-computed="EmployeeIndex"></td>
                             <td ej-computed="FullName"></td>
                         </tr>
                     </tbody>
@@ -84,6 +84,12 @@ Then the model is bound with the element using the **bindTo.**
                             return this.FirstName + ' ' + this.LastName;
                         },
                         deps: ["FirstName", "LastName"]
+                    },
+                    EmployeeIndex: {
+                        value: function () {
+                            return this.EmployeeID;
+                        },
+                        deps: ["EmployeeID"]
                     }
                 });
                 employees.bindTo($("#tbody1"));
@@ -108,5 +114,6 @@ The result for the above code example is illustrated as follows.
 
 ![](Table-Model_images/Table-Model_img1.png) 
 
+[Sample Link](http://jsplayground.syncfusion.com/2clbqjhr)
 
 
