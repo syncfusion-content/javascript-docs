@@ -9,7 +9,7 @@ api: /api/js/ejgrid
 ---
 # Context Menu
 
-Context menu is used to improve user action with Grid using popup menu. It can be shown by defining [`contextMenuSettings.enableContextMenu`](https://help.syncfusion.com/api/js/ejgrid#members:contextmenusettings-enablecontextmenu "contextMenuSettings.enableContextMenu") as true. Context menu has option to add default items in [`contextMenuSettings.contextMenuItems`](https://help.syncfusion.com/api/js/ejgrid#members:contextmenusettings-contextmenuitems "contextMenuSettings.contextMenuItems") and customized items in [`contextMenuSettings.customContextMenuItems`](https://help.syncfusion.com/api/js/ejgrid#members:contextmenusettings-customcontextmenuitems "contextMenuSettings.customContextMenuItems").
+Context menu is used to improve user action with Grid using the popup menu. It can be shown by defining [`contextMenuSettings.enableContextMenu`](https://help.syncfusion.com/api/js/ejgrid#members:contextmenusettings-enablecontextmenu "contextMenuSettings.enableContextMenu") as true. Context menu has option to add default items in [`contextMenuSettings.contextMenuItems`](https://help.syncfusion.com/api/js/ejgrid#members:contextmenusettings-contextmenuitems "contextMenuSettings.contextMenuItems") and customized items in [`contextMenuSettings.customContextMenuItems`](https://help.syncfusion.com/api/js/ejgrid#members:contextmenusettings-customcontextmenuitems "contextMenuSettings.customContextMenuItems").
 
 ## Default Context Menu items
 
@@ -21,7 +21,7 @@ Please find the below table for default context menu items and its actions.
                 Section
             </th>
             <th>
-                Context menu items
+                Context menu items.
             </th>
             <th>
                 Action
@@ -35,7 +35,7 @@ Please find the below table for default context menu items and its actions.
                 Sort in Ascending Order
             </td>
             <td>
-                Sort column in Ascending order
+                Sort column in Ascending order.
             </td>
         </tr>
         <tr>
@@ -43,7 +43,7 @@ Please find the below table for default context menu items and its actions.
                 Sort in Descending Order
             </td>
             <td>
-                Sort column in Descending order
+                Sort column in Descending order.
             </td>
         </tr>
         <tr>
@@ -51,7 +51,7 @@ Please find the below table for default context menu items and its actions.
                 Group
             </td>
             <td>
-                Group the current column
+                Group the current column.
             </td>
         </tr>
         <tr>
@@ -59,7 +59,7 @@ Please find the below table for default context menu items and its actions.
                 Ungroup
             </td>
             <td>
-                Ungroup the current column if already grouped
+                Ungroup the current column if already grouped.
             </td>
         </tr>
         <tr>
@@ -70,7 +70,7 @@ Please find the below table for default context menu items and its actions.
                 Add Record
             </td>
             <td>
-                Start Add new record
+                Start Add new record.
             </td>
         </tr>
         <tr>
@@ -78,7 +78,7 @@ Please find the below table for default context menu items and its actions.
                 Edit Record
             </td>
             <td>
-                Start Edit in current record
+                Start Edit in current record.
             </td>
         </tr>
         <tr>
@@ -86,7 +86,7 @@ Please find the below table for default context menu items and its actions.
                 Delete Record
             </td>
             <td>
-                Delete the current record
+                Delete the current record.
             </td>
         </tr>
         <tr>
@@ -94,7 +94,7 @@ Please find the below table for default context menu items and its actions.
                 Save
             </td>
             <td>
-                Save the record if Add/Edit record is started
+                Save the record if Add/Edit record is started.
             </td>
         </tr>
         <tr>
@@ -102,7 +102,7 @@ Please find the below table for default context menu items and its actions.
                 Cancel
             </td>
             <td>
-                Cancel Added/Edited state
+                Cancel Added/Edited state.
             </td>
         </tr>
         <tr>
@@ -113,7 +113,7 @@ Please find the below table for default context menu items and its actions.
                 Next Page
             </td>
             <td>
-                Go to Next Page
+                Go to Next Page.
             </td>
         </tr>
         <tr>            
@@ -129,7 +129,7 @@ Please find the below table for default context menu items and its actions.
                 Previous page
             </td>
             <td>
-                Go to previous page
+                Go to previous page.
             </td>
         </tr>
         <tr>
@@ -137,7 +137,7 @@ Please find the below table for default context menu items and its actions.
                 First page
             </td>
             <td>
-                Go to first page
+                Go to first page.
             </td>
         </tr>
     </table>
@@ -184,13 +184,13 @@ Contextmenu at body
 ![](Context-Menu_images/ContextMenu_img3.png)
 {:caption}
 
-Contextmenu at pager
+Context menu at pager
 
-N> `allowGrouping`, `allowSorting` should be enabled to perform default context menu actions in Grid header. `allowEditing`, `allowDeleting` and `allowAdding` should be enabled to perform default actions in body.
+N> `allowGrouping`, `allowSorting` should be enabled to perform default context menu actions in the Grid header. `allowEditing`, `allowDeleting` and `allowAdding` should be enabled to perform default actions in the body.
 
 ## Custom Context Menu
 
-Custom context menu is used to create your own menu item and its action. To add customized context menu items, you need to use [`contextMenuSettings.customContextMenuItems`](https://help.syncfusion.com/api/js/ejgrid#members:contextmenusettings-customcontextmenuitems "contextMenuSettings.customContextMenuItems") property and to bind required actions for this, use [`contextClick`](https://help.syncfusion.com/api/js/ejgrid#events:contextclick "contextClick") event.
+Custom context menu is used to create your own menu item and its action. To add customized context menu items, you need to use the [`contextMenuSettings.customContextMenuItems`](https://help.syncfusion.com/api/js/ejgrid#members:contextmenusettings-customcontextmenuitems "contextMenuSettings.customContextMenuItems") property and to bind required actions for this, use [`contextClick`](https://help.syncfusion.com/api/js/ejgrid#events:contextclick "contextClick") event.
 
 
 {% highlight html %}
@@ -226,7 +226,7 @@ Custom context menu is used to create your own menu item and its action. To add 
 
 ## Sub Context Menu
 
-Sub context menu is used to add customized sub menu to the custom context menu item. To add a sub context menu, you need to use [`contextMenuSettings.subContextMenu`](https://help.syncfusion.com/api/js/ejgrid#members:contextmenusettings-subcontextmenu "contextMenuSettings.subContextMenu") property and to bind required actions for this, use [`contextClick`](https://help.syncfusion.com/api/js/ejgrid#events:contextclick "contextClick") event.
+Sub context menu is used to add customized sub menu to the custom context menu item. To add a sub context menu, you need to use [`contextMenuSettings.subContextMenu`](https://help.syncfusion.com/api/js/ejgrid#members:contextmenusettings-subcontextmenu "contextMenuSettings.subContextMenu") property and to bind required actions for this, use the [`contextClick`](https://help.syncfusion.com/api/js/ejgrid#events:contextclick "contextClick") event.
 
 {% highlight html %}
 <div id="Grid"></div>
@@ -262,7 +262,7 @@ Sub context menu is used to add customized sub menu to the custom context menu i
 
 ## Sub Context Menu with Template
 
-On rendering the Sub context menu items, the customized sub menu items created by using [`contextMenuSettings.subContextMenu.template`](https://help.syncfusion.com/api/js/ejgrid#members:contextmenusettings-subcontextmenu "contextMenuSettings.subContextMenu.template") property.
+On rendering the Sub context menu items, the customized sub menu items are screated by using [`contextMenuSettings.subContextMenu.template`](https://help.syncfusion.com/api/js/ejgrid#members:contextmenusettings-subcontextmenu "contextMenuSettings.subContextMenu.template") property.
 
 {% highlight html %}
 <div id="Grid"></div>

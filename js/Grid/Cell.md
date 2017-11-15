@@ -11,11 +11,11 @@ api: /api/js/ejgrid
 
 ## Auto wrap 
 
-Auto wrap enables the Grid to wrap cell content or header content to next line when the content exceeds the boundary of the cell width. To enable auto wrap, set [`allowTextWrap`](https://help.syncfusion.com/api/js/ejgrid#members:allowtextwrap "allowTextWrap") property as `true`. 
+Auto wrap enables the Grid to wrap the cell content or header content to next line when the content exceeds the boundary of the cell width. To enable auto wrap, set the  [`allowTextWrap`](https://help.syncfusion.com/api/js/ejgrid#members:allowtextwrap "allowTextWrap") property as `true`. 
 
 We can specify the mode of auto wrap using [`wrapMode`](https://help.syncfusion.com/api/js/ejgrid#members:textwrapsettings-wrapmode "wrapMode") property of the [`textWrapSettings`](https://help.syncfusion.com/api/js/ejgrid#members:textWrapSettings "textWrapSettings"). 
 
-Three types of wrapMode are available and they are,
+Three types of `wrapMode` are available and they are,
   
  1. Both
  2. Header
@@ -29,7 +29,7 @@ N> 3. For [`wrapMode`](https://help.syncfusion.com/api/js/ejgrid#members:textwra
  
 ## Both
 
-When [`wrapMode`](https://help.syncfusion.com/api/js/ejgrid#members:textwrapsettings-wrapmode "wrapMode") of [`textWrapSettings`](https://help.syncfusion.com/api/js/ejgrid#members:textWrapSettings "textWrapSettings") property set as `both` then the auto wrap will be enable for both grid content and header. 
+When the [`wrapMode`](https://help.syncfusion.com/api/js/ejgrid#members:textwrapsettings-wrapmode "wrapMode") of [`textWrapSettings`](https://help.syncfusion.com/api/js/ejgrid#members:textWrapSettings "textWrapSettings") property is set as `both` then the auto wrap will be enabled for both the grid content and header.  
 
 The following code example describes the above behavior.
 
@@ -64,7 +64,7 @@ The following output is displayed as a result of the above code example.
 
 ## Header
 
-When [`wrapMode`](https://help.syncfusion.com/api/js/ejgrid#members:textwrapsettings-wrapmode "wrapMode") of [`textWrapSettings`](https://help.syncfusion.com/api/js/ejgrid#members:textWrapSettings "textWrapSettings") property set as `header` then the auto wrap will be enable only for grid header alone. 
+When the [`wrapMode`](https://help.syncfusion.com/api/js/ejgrid#members:textwrapsettings-wrapmode "wrapMode") of [`textWrapSettings`](https://help.syncfusion.com/api/js/ejgrid#members:textWrapSettings "textWrapSettings") property is set as `header` then the auto wrap will be enabled only for the grid header alone. 
 
 The following code example describes the above behavior.
 
@@ -99,7 +99,7 @@ The following output is displayed as a result of the above code example.
 
 ## Content
 
-When [`wrapMode`](https://help.syncfusion.com/api/js/ejgrid#members:textwrapsettings-wrapmode "wrapMode") of [`textWrapSettings`](https://help.syncfusion.com/api/js/ejgrid#members:textWrapSettings "textWrapSettings") property set as `content` then the auto wrap will be enable only for grid content alone. 
+When the [`wrapMode`](https://help.syncfusion.com/api/js/ejgrid#members:textwrapsettings-wrapmode "wrapMode") of [`textWrapSettings`](https://help.syncfusion.com/api/js/ejgrid#members:textWrapSettings "textWrapSettings") property is set as `content` then the auto wrap will be enable only for the grid content alone. 
 
 The following code example describes the above behavior.
 
@@ -173,11 +173,11 @@ The following output is displayed as a result of the above code example.
 
 ## Custom Attribute
 
-You can add [custom attribute](https://help.syncfusion.com/api/js/ejgrid#members:columns-customattributes "custom attribute") for particular column `td` element by using [`customAttributes`](https://help.syncfusion.com/api/js/ejgrid#members:columns-customattributes "customAttributes") property of the column.
+You can add the [custom attribute](https://help.syncfusion.com/api/js/ejgrid#members:columns-customattributes "custom attribute") for the particular column `td` element by using the [`customAttributes`](https://help.syncfusion.com/api/js/ejgrid#members:columns-customattributes "customAttributes") property of column.
 
 Based on custom attribute you can customize the style and appearance of the `td` element or handling jQuery functionalities. 
 
-You can use JsRender syntax in the template.For more information about JsRender syntax, please refer [the link](http://www.jsviews.com/#jsrapi "the link").
+You can use JsRender syntax in the template.For more information about JsRender syntax, please refer to [this link](http://www.jsviews.com/#jsrapi "the link").
 
 The following code example describes the above behavior.
 
@@ -209,7 +209,7 @@ The following output is displayed as a result of the above code example.
 
 ## Displaying HTML content
 
-This will helps you to show actual [HTML](https://help.syncfusion.com/api/js/ejgrid#members:columns-disablehtmlencode "HTML") value in grid content and header. To disable HTML code, set [`disableHtmlEncode`](https://help.syncfusion.com/api/js/ejgrid#members:columns-disablehtmlencode "disableHtmlEncode") property of [`columns`](https://help.syncfusion.com/api/js/ejgrid#members:columns "columns") as true. 
+This will helps you to show actual [HTML](https://help.syncfusion.com/api/js/ejgrid#members:columns-disablehtmlencode "HTML") value in the  grid content and header. To disable HTML code, set the [`disableHtmlEncode`](https://help.syncfusion.com/api/js/ejgrid#members:columns-disablehtmlencode "disableHtmlEncode") property of [`columns`](https://help.syncfusion.com/api/js/ejgrid#members:columns "columns") as true. 
 
 The following code example describes the above behavior.
 
@@ -244,7 +244,7 @@ When you move the cursor over the particular cell it provides an information abo
 
 **Template**
 
-HTML templates can be specified in the `tooltip` property of the particular column cell as a string (HTML element) or ID of the template's HTML element.You can use JsRender syntax in the template. For more information about JsRender syntax, please refer [this link](http://www.jsviews.com/#jsrapi "this link"). 
+HTML templates can be specified in the `tooltip` property of the particular column cell as a string (HTML element) or ID of the template's HTML element.You can use JsRender syntax in the template. For more information about JsRender syntax, please refer to [this link](http://www.jsviews.com/#jsrapi "this link"). 
 
 N> It's a standard way to enclose the template within the `script` tag with `type` as "text/x-jsrender".
  
@@ -281,9 +281,10 @@ The following output is displayed as a result of the above code example.
 
 ## ClipMode
 
-When the cell value contains a long text that is not fit into the grid column cell, the `clipMode` property is used. By using the `clipMode`, the cell value will be displayed with ellipsis or with clipped content when the text overflows inside a column cell.
+When the cell value contains a long text that will not fit into the grid column cell, the `clipMode` property is used. By using the `clipMode`, the cell value will be displayed with ellipsis or with clipped content when the text overflows inside a column cell.
 
 N> 1. By default the `clipMode` will be set as `clip`. 
+
 N> 2. For [`clipMode`] property you can assign either `string` value (`ellipsis`)  or `enum` value (`ej.Grid.ClipMode.Ellipsis`).
 
 
@@ -295,7 +296,7 @@ N> 2. For [`clipMode`] property you can assign either `string` value (`ellipsis`
  
 ### Clip
 
-When the content overflows, the remaining content will be hidden in the particular cell
+When the content overflows, the remaining content will be hidden in the particular cell.
 
 The following code example describes the above behavior.
 
@@ -355,7 +356,7 @@ The following output is displayed as a result of the above code example.
 
 ### Ellipsis With Tooltip
 
-Ellipsis will be displayed when the content overflows its column width. Here tooltip will be shown only for the corresponding column cells that shows ellipsis.
+Ellipsis will be displayed when the content overflows its column width. Here the tooltip will be shown only for the corresponding column cells that shows ellipsis.
 
 N> If `clipMode` is set as `EllipsisWithTooltip`, then `tooltip` must be given.
 
