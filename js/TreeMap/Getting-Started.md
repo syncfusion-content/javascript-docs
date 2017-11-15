@@ -56,11 +56,11 @@ Create a **&lt;div&gt;** tag with a specific id and set the height and width to 
 
 ### Populate DataSource
 
-The `dataSource` property accepts the collection values as input. For example, you can provide the list of objects as input.
+The [`dataSource`](../api/ejtreemap#members:datasource) property accepts the collection values as input. For example, you can provide the list of objects as input.
 
 ### Weight Value Path
 
-You can calculate the size of the object using `weightValuePath` of **TreeMap**.
+You can calculate the size of the object using [`weightValuePath`](../api/ejtreemap#members:weightvaluepath) of **TreeMap**.
 
 Add a **&lt;script&gt;** tag anywhere in a web page and initialize **TreeMap** as illustrated in the following code sample. 
 
@@ -184,15 +184,15 @@ Try it: [WeightValuePath](http://jsplayground.syncfusion.com/lxhlxr0m)
 
 ## Group with Levels
 
-You can group TreeMap items using the levels in it.
+You can group TreeMap items using the [`levels`](../api/ejtreemap#members:levels) in it.
 
 ### Group Path
 
-You can use `groupPath` property for every flat level of the TreeMap control. It is a path to a field on the source object that serves as the “Group” for the level specified. You can group the data based on the `groupPath` in the TreeMap control. When the `groupPath` is not specified, then the items are not grouped and the data is displayed in the order specified in the `dataSource`.
+You can use [`groupPath`](../api/ejtreemap#members:levels-grouppath) property for every flat level of the TreeMap control. It is a path to a field on the source object that serves as the “Group” for the level specified. You can group the data based on the [`groupPath`](../api/ejtreemap#members:levels-grouppath) in the TreeMap control. When the [`groupPath`](../api/ejtreemap#members:levels-grouppath) is not specified, then the items are not grouped and the data is displayed in the order specified in the [`dataSource`](../api/ejtreemap#members:datasource).
 
 ### Group Gap
 
-You can use `groupGap` property to separate the items from every flat level and to differentiate the levels mentioned in the TreeMap control.
+You can use [`groupGap`](../api/ejtreemap#members:levels-groupgap) property to separate the items from every flat level and to differentiate the levels mentioned in the TreeMap control.
 
 The following code sample explains how to group TreeMap Items using ‘Levels’.
 
@@ -223,11 +223,11 @@ Try it: [Grouping Levels](http://jsplayground.syncfusion.com/mngx4smn)
 
 ## Customize TreeMap by Range
 
-You can differentiate the nodes based on its value and color ranges using Range color. You can also define the color value range using from and to properties. 
+You can differentiate the nodes based on its value and color ranges using [`Range color`](../api/ejtreemap#members:rangecolormapping). You can also define the color value range using from and to properties. 
 
 ### Color Value Path
 
-The `colorValuePath` of TreeMap is a path to a field on the source object. You can determine the color for the object using `colorValuePath` of TreeMap.
+The [`colorValuePath`](../api/ejtreemap#members:colorvaluepath) of TreeMap is a path to a field on the source object. You can determine the color for the object using [`colorValuePath`](../api/ejtreemap#members:colorvaluepath) of TreeMap.
 
 The following code sample explains how to customize TreeMap appearance using Range.
 
@@ -265,11 +265,11 @@ Try it: [ColorValuePath](http://jsplayground.syncfusion.com/dzkekv33)
 
 ## Enable Tooltip
 
-You can enable the tooltip by setting `showTooltip` property to “True”. By default, it takes the property of the bound object that is referred in the `weightValuePath` and displays its content when the corresponding node is hovered. You can customize the template for tooltip using `tooltipTemplate` property.
+You can enable the tooltip by setting [`showTooltip`](../api/ejtreemap#members:showTooltip) property to “True”. By default, it takes the property of the bound object that is referred in the [`weightValuePath`](../api/ejtreemap#members:weightvaluepath) and displays its content when the corresponding node is hovered. You can customize the template for tooltip using [`tooltipTemplate`](../api/ejtreemap#members:tooltiptemplate) property.
 
 ## Leaf ItemSettings
 
-You can customize the Leaf level TreeMap items using `leafItemSettings`. The Label and tooltip values take the property of bound object that is referred in the `labelPath` when defined. The following code sample displays how the tooltip is enabled.
+You can customize the Leaf level TreeMap items using [`leafItemSettings`](../api/ejtreemap#members:leafitemsettings). The Label and tooltip values take the property of bound object that is referred in the [`labelPath`](../api/ejtreemap#members:leafitemsettings-labelpath) when defined. The following code sample displays how the tooltip is enabled.
 
 {% highlight html %}
 
@@ -307,11 +307,11 @@ Try it: [LeafItemSettings](http://jsplayground.syncfusion.com/apibaesy)
 
 ## Enable Legend
 
-You can set the color value of leaf nodes using TreeMap Legend. This legend is appropriate only for the TreeMap whose leaf nodes are colored using `rangeColorMapping`. You can set `showLegend` property value to “True” to make a legend visible.
+You can set the color value of leaf nodes using [`TreeMap Legend`](../api/ejtreemap#members:legendsettings). This legend is appropriate only for the TreeMap whose leaf nodes are colored using `rangeColorMapping`. You can set [`showLegend`](../api/ejtreemap#members:showlegend) property value to “True” to make a legend visible.
 
 ### Label for Legend
 
-You can customize the labels of the legend item using `legendLabel` property of `rangeColorMapping`. 
+You can customize the labels of the legend item using [`legendLabel`](../api/ejtreemap#members:rangecolormapping-legendlabel) property of [`rangeColorMapping`](../api/ejtreemap#members:rangecolormapping). 
 
 The following code sample illustrates how to add labels for legend in a TreeMap.
 

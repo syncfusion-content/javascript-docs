@@ -166,6 +166,26 @@ $("#GanttContainer").ejGantt({
 
 ![](/js/Gantt/Timescale-Modes_images/Timescale-Modes_img5.png)
 
+## Week start day customization
+
+In Gantt, we can customize week start day by using [weekStartDay](/api/js/ejgantt#members:scheduleheadersettings-weekstartday) property.
+By default the weekStartDay will be assigned with 0 which specifies the start day of the week.
+
+In week schedule mode, week starts with Sunday by default. But we can customize the week start day by using below code example
+ 
+{% highlight javascript %}
+$("#GanttContainer").ejGantt({
+    // ... 
+    scheduleHeaderSettings: {
+        scheduleHeaderType: ej.Gantt.ScheduleHeaderType.Week,
+		weekStartDay : 3
+		},
+    // ...
+
+});
+{% endhighlight %}
+
+
 ## Rounding off timescale (schedule) start date
 
 You can able to round off the schedule start date in a project by using the [timescaleStartDateMode](/api/js/ejgantt#members:scheduleheadersettings-timescalestartdatemode) property. It is possible to set the following values to the property,

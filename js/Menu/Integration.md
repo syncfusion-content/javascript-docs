@@ -10,7 +10,7 @@ api: /api/js/ejmenu
 
 # Integration
 
-##AngularJS binding
+## AngularJS binding
 
 AngularJS is an open-source web application Framework. AngularJS extends **HTML** with new attributes. AngularJS is a **JavaScript** Framework. You can add it to an **HTML** page with a **&lt;script&gt;** tag. AngularJS extends **HTML** attributes with Directives, and binds data to **HTML** with Expressions. The support is achieved by an integration JS library file. You can know more about the AngularJS support in the following link location. 
 
@@ -28,7 +28,7 @@ Add the following code in your **HTML** page.
 <!doctype html>
 <html xmlns="http://www.w3.org/1999/xhtml" ng-app="menuApp">
 <head>
-    <title>Essential Studio for JavaScript :  Angular</title>
+    <title>Essential Studio for JavaScript :  AngularJS</title>
     <!-- style sheet for default theme(flat azure) -->
     <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
     <!--scripts-->
@@ -157,7 +157,7 @@ The following screenshot displays the output of the above code example.
 ![](/js/Menu/Integration_images/Integration_img1.png) 
 
 
-##KnockoutJS binding
+## KnockoutJS binding
 
 **KnockoutJS** is a MVVM library that allows the separation of concerns. **Essential JavaScript** provides full support for KnockoutJS. The KnockoutJS support is achieved by an integration JS library file. Add the following code for KnockoutJS binding **Menu** rendering.
 
