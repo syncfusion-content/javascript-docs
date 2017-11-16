@@ -10,7 +10,7 @@ api: /api/js/ejcirculargauge
 
 # Ranges and Frames
 
-Ranges are used to specify or group the scale values. By using [`ranges`](../api/js/ejcirculargauge#members:scales-ranges), you can describe the values in the pointers. 
+Ranges are used to specify or group the scale values. By using [`ranges`](../api/ejcirculargauge#members:scales-ranges), you can describe the values in the pointers. 
 
 ## Adding Range Collection
 
@@ -45,9 +45,9 @@ Range collection is directly added to the scale object. Refer the following code
 
 **Appearance**
 
-The API [`size`](../api/js/ejcirculargauge#members:scales-ranges-size) is used to specify the width of the ranges.  The major attributes for ranges are [`startValue`](../api/js/ejcirculargauge#members:scales-ranges-startvalue) and [`endValue`](../api/js/ejcirculargauge#members:scales-ranges-endvalue). **startValue** defines the start position of the ranges and **endValue** defines the end position of the ranges.
+The API [`size`](../api/ejcirculargauge#members:scales-ranges-size) is used to specify the width of the ranges.  The major attributes for ranges are [`startValue`](../api/ejcirculargauge#members:scales-ranges-startvalue) and [`endValue`](../api/ejcirculargauge#members:scales-ranges-endvalue). **startValue** defines the start position of the ranges and **endValue** defines the end position of the ranges.
 
-[`startWidth`](../api/js/ejcirculargauge#members:scales-ranges-startwidth) and [`endWidth`](../api/js/ejcirculargauge#members:scales-ranges-endwidth) are used to specify the range width at the starting and ending position of the ranges. You can add the gradient effects and opacity to the ranges by using [`gradients`](../api/js/ejcirculargauge#members:scales-ranges-gradients) object and [`opacity`](../api/js/ejcirculargauge#members:scales-ranges-opacity) property.
+[`startWidth`](../api/ejcirculargauge#members:scales-ranges-startwidth) and [`endWidth`](../api/ejcirculargauge#members:scales-ranges-endwidth) are used to specify the range width at the starting and ending position of the ranges. You can add the gradient effects and opacity to the ranges by using [`gradients`](../api/ejcirculargauge#members:scales-ranges-gradients) object and [`opacity`](../api/ejcirculargauge#members:scales-ranges-opacity) property.
 
 {% highlight html %}
 
@@ -89,9 +89,9 @@ Execute the above code to render the following output.
 
 ## Colors and Border
 
-By customizing the ranges, the appearance of the **Gauge** can be improved. The range border is modified with the object called [`border`](../api/js/ejcirculargauge#members:scales-ranges-border). It has two border property such as [`color`](../api/js/ejcirculargauge#members:scales-ranges-border-color) and [`width`](../api/js/ejcirculargauge#members:scales-ranges-border-width). These are used to customize the border color of the ranges and border width of the ranges. 
+By customizing the ranges, the appearance of the **Gauge** can be improved. The range border is modified with the object called [`border`](../api/ejcirculargauge#members:scales-ranges-border). It has two border property such as [`color`](../api/ejcirculargauge#members:scales-ranges-border-color) and [`width`](../api/ejcirculargauge#members:scales-ranges-border-width). These are used to customize the border color of the ranges and border width of the ranges. 
 
-You can set the background color to improve the look and feel of the **Circular Gauge**. For customizing the background color of the ranges, [`backgroundColor`](../api/js/ejcirculargauge#members:scales-ranges-backgroundcolor) is used.
+You can set the background color to improve the look and feel of the **Circular Gauge**. For customizing the background color of the ranges, [`backgroundColor`](../api/ejcirculargauge#members:scales-ranges-backgroundcolor) is used.
 
 {% highlight html %}
 
@@ -133,7 +133,7 @@ Execute the above code to render the following output.
 
 ## Positioning the ranges
 
-You can position ranges using two properties such as [`distanceFromScale`](../api/js/ejcirculargauge#members:scales-ranges-distancefromscale) and [`placement`](../api/js/ejcirculargauge#members:scales-ranges-placement). **distanceFromScale** property defines the distance between the scale and range. **Placement** property is used to locate the pointer with respect to scale either inside the scale or outside the scale or along the scale. It is an enumerable data type.
+You can position ranges using two properties such as [`distanceFromScale`](../api/ejcirculargauge#members:scales-ranges-distancefromscale) and [`placement`](../api/ejcirculargauge#members:scales-ranges-placement). **distanceFromScale** property defines the distance between the scale and range. **Placement** property is used to locate the pointer with respect to scale either inside the scale or outside the scale or along the scale. It is an enumerable data type.
 
 {% highlight html %}
 
@@ -235,9 +235,9 @@ Execute the above code to render the following output.
 
 ## Frames
 
-Frame is the element that decides the appearance of the **Circular Gauge**. You can customize it using the object called [`frame`](../api/js/ejcirculargauge#members:frame).  It has the properties such as frameType, backGroundUrl, halfCircleFrameStartAngle and halfCircleFrameEndAngle.
+Frame is the element that decides the appearance of the **Circular Gauge**. You can customize it using the object called [`frame`](../api/ejcirculargauge#members:frame).  It has the properties such as frameType, backGroundUrl, halfCircleFrameStartAngle and halfCircleFrameEndAngle.
 
-[`frameType`](../api/js/ejcirculargauge#members:frame-frametype) is used to specify whether frame is a half circle frame or full circle frame. [`halfCircleFrameStartAngle`](../api/js/ejcirculargauge#members:frame-halfcircleframestartangle) and [`halfCircleFrameEndAngle`](../api/js/ejcirculargauge#members:frame-halfcircleframeendangle)** are used to specify the angle for **Gauge** with frame type as half circle. [`backgroundUrl`](../api/js/ejcirculargauge#members:frame-backgroundurl) is used to set the background image for the frame.
+[`frameType`](../api/ejcirculargauge#members:frame-frametype) is used to specify whether frame is a half circle frame or full circle frame. [`halfCircleFrameStartAngle`](../api/ejcirculargauge#members:frame-halfcircleframestartangle) and [`halfCircleFrameEndAngle`](../api/ejcirculargauge#members:frame-halfcircleframeendangle)** are used to specify the angle for **Gauge** with frame type as half circle. [`backgroundUrl`](../api/ejcirculargauge#members:frame-backgroundurl) is used to set the background image for the frame.
 
 {% highlight html %}
 
