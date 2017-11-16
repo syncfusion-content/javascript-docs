@@ -10,7 +10,7 @@ api: /api/js/ejcirculargauge
 
 # Legend
 
-The [`legend`](../api/js/ejcirculargauge#members:legend) contains the list of the ranges that appear in the circular gauge  
+The [`legend`](../api/ejcirculargauge#members:legend) contains the list of the ranges that appear in the circular gauge  
 
 ## Legend Visibility
 
@@ -35,7 +35,7 @@ $("#CircularGauge1").ejCircularGauge({
 
 ### Legend Text
 
-The text displayed in the legend can be customized by using the [`legendText`](../api/js/ejcirculargauge#members:scales-ranges-legendtext) property present in the ranges of the circular gauge. When the legendText is not specified in the ranges, then the legend item for that particular range will not displayed. By default the legendText value is **null** . 
+The text displayed in the legend can be customized by using the [`legendText`](../api/ejcirculargauge#members:scales-ranges-legendtext) property present in the ranges of the circular gauge. When the legendText is not specified in the ranges, then the legend item for that particular range will not displayed. By default the legendText value is **null** . 
 
 {% highlight javascript %}
 

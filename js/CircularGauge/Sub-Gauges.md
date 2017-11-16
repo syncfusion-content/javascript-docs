@@ -10,7 +10,7 @@ api: /api/js/ejcirculargauge
 
 # Sub Gauges
 
-A **Circular Gauge** containing another circular gauge is said to be [`subGauges`](../api/js/ejcirculargauge#members:scales-subgauges). In order to make a sample like watch that has second gauge, minute gauge and hour gauge, sub gauges are used.
+A **Circular Gauge** containing another circular gauge is said to be [`subGauges`](../api/ejcirculargauge#members:scales-subgauges). In order to make a sample like watch that has second gauge, minute gauge and hour gauge, sub gauges are used.
 
 ## Adding SubGauges
 
@@ -42,7 +42,7 @@ Sub gauge collection is directly added to the scale object. Refer the following 
 
 **Basic Customization**
 
-Basic attributes such as [`height`](../api/js/ejcirculargauge#members:scales-subgauges-height) and [`width`](../api/js/ejcirculargauge#members:scales-subgauges-width) property are used to set height and width of the sub gauge. You can easily position the gauge in another gauge using the [`position`](../api/js/ejcirculargauge#members:scales-subgauges-position) object and by giving the [`x`](../api/js/ejcirculargauge#members:scales-subgauges-position-x) and [`y`](../api/js/ejcirculargauge#members:scales-subgauges-position-y) Coordinates value. **controlID** attribute is used to specify the sub gauge ID.
+Basic attributes such as [`height`](../api/ejcirculargauge#members:scales-subgauges-height) and [`width`](../api/ejcirculargauge#members:scales-subgauges-width) property are used to set height and width of the sub gauge. You can easily position the gauge in another gauge using the [`position`](../api/ejcirculargauge#members:scales-subgauges-position) object and by giving the [`x`](../api/ejcirculargauge#members:scales-subgauges-position-x) and [`y`](../api/ejcirculargauge#members:scales-subgauges-position-y) Coordinates value. **controlID** attribute is used to specify the sub gauge ID.
 
 
 

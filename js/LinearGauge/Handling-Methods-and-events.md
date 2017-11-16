@@ -339,8 +339,8 @@ $("#LinearGauge1").ejLinearGauge({
  
 <script>
 $("#LinearGauge1").ejLinearGauge();
-var linearGaugeobj = $("#LinearGauge1").data("ejLinearGauge");
-linearGaugeobj.destroy();
+var linearGaugeObj = $("#LinearGauge1").data("ejLinearGauge");
+linearGaugeObj.destroy();
 </script>{% endhighlight %}
 
 
