@@ -78,9 +78,9 @@ Execute the above code to render the following output.
 
 **Appearance**
 
-* Height and width of the ticks can be applied by using the properties **height** and **width**. You can customize ticks with the properties like angle, color, etc. **angle** attribute is used to display the labels in the specified angles and **color** attribute is used to display the labels in specified color. 
+* Height and width of the ticks can be applied by using the properties [`height`](../api/js/ejlineargauge#members:scales-ticks-height) and [`width`](../api/js/ejlineargauge#members:scales-ticks-width). You can customize ticks with the properties like angle, color, etc. [`angle`](../api/js/ejlineargauge#members:scales-ticks-angle) attribute is used to display the labels in the specified angles and [`color`](../api/js/ejlineargauge#members:scales-ticks-color) attribute is used to display the labels in specified color. 
 
-* Ticks are two types such as major and minor. The opacity of the labels can be adjusted with the property **opacity.** The opacity values lies between 0 and 1.
+* Ticks are two types such as major and minor. The opacity of the labels can be adjusted with the property [`opacity`](../api/js/ejlineargauge#members:scales-ticks-opacity). The opacity values lies between 0 and 1.
 
 
 {% highlight html %}
@@ -145,7 +145,7 @@ Execute the above code to render the following output.
 
 ## Types
 
-Ticks are two types such as **majorInterval** and **minorInterval**. Major type ticks are for major interval values and minor type ticks are for minor interval values.
+Ticks are two [`types`](../api/js/ejlineargauge#members:scales-ticks-type) such as **majorInterval** and **minorInterval**. Major type ticks are for major interval values and minor type ticks are for minor interval values.
 
 
 {% highlight html %}
@@ -204,9 +204,9 @@ Execute the above code to render the following output.
 
 ## Positioning the ticks
 
-* You can position ticks with the help of two properties such as **distanceFromScale** and **placement**. The property **distanceFromScale** defines the distance between the scale and ticks. 
+* You can position ticks with the help of two properties such as **distanceFromScale** and **placement**. The property [`distanceFromScale`](../api/js/ejlineargauge#members:scales-ticks-distancefromscale) defines the distance between the scale and ticks. 
 
-* **Placement** property is used to locate the ticks with respect to scale either inside the scale or outside the scale or along the scale. It is an enumerable data type.
+* [`placement`](../api/js/ejlineargauge#members:scales-ticks-placement) property is used to locate the ticks with respect to scale either inside the scale or outside the scale or along the scale. It is an enumerable data type.
 
 
 {% highlight html %}
