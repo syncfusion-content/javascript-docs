@@ -16,7 +16,7 @@ N> To transit cards to other swim lanes through Drag and Drop, please refer [her
 
 ## Drag and Drop to external control
 
-Kanban is now provided support to drag and drop cards to external controls,  when ['allowExternalDragAndDrop'](https://help.syncfusion.com/api/js/ejkanban#members:allowexternaldraganddrop) is set to true.  Along with that you need to specify the ID of the component to which the card must be dropped in ['cardSettings'](https://help.syncfusion.com/api/js/ejkanban#members:cardSettings) property ['externalDropTarget'](https://help.syncfusion.com/api/js/ejkanban#members:cardsettings-externaldroptarget).
+Kanban is now provided support to drag and drop cards to external controls, when ['allowExternalDragAndDrop'](https://help.syncfusion.com/api/js/ejkanban#members:allowexternaldraganddrop) is set to true.  Along with that you need to specify the ID of the component to which the card must be dropped in ['cardSettings'](https://help.syncfusion.com/api/js/ejkanban#members:cardSettings) property ['externalDropTarget'](https://help.syncfusion.com/api/js/ejkanban#members:cardsettings-externaldroptarget).
 
 Here, in order to drag and drop cards between two Kanban, enable the Kanban property ['allowExternalDragAndDrop'](https://help.syncfusion.com/api/js/ejkanban#members:allowexternaldraganddrop) and specify the target Kanban ID in ['externalDropTarget'](https://help.syncfusion.com/api/js/ejkanban#members:cardsettings-externaldroptarget).
 
@@ -38,7 +38,7 @@ The following code example describes the above behavior.
      $(function () {
             var data = [
                  { Status: "Open", Id: "1", Summary: "Analyze the new requirements.", Assignee: "Andrew" },
-                 { Status: "Testing", Id: "2", Summary: "Arrange a web meeting.", ImgUrl:"image.png", Assignee: "Nancy"},
+                 { Status: "Testing", Id: "2", Summary: "Arrange a web meeting.", Assignee: "Nancy"},
                  { Status: "Open", Id: "3", Summary: "API improvements.", Assignee: "Andrew" },
                  { Status: "InProgress", Id: "4", Summary: "Improve application performance.", Assignee: "Nancy"},
                  { Status: "Close", Id: "5", Summary: "Fix the issues reported in the IE browser.", Assignee: "Andrew"},
@@ -48,7 +48,7 @@ The following code example describes the above behavior.
                  { Status: "Testing", Id: "7", Summary: "Fix the issues reported by the customer.", Assignee: "Mike" },
                  { Status: "Open", Id: "8", Summary: "Fix the issues reported in safari browser.", Assignee: "Andrew" },
                  { Status: "Testing", Id: "9", Summary: "Check login page validation.", Assignee: "Andrew" },
-                 { Status: "InProgress", Id: "10", Summary: "Arranage a web meeting with the customer to get the login page requirements.", Assignee: "Mike" },
+                 { Status: "InProgress", Id: "10", Summary: "Arrange a web meeting with the customer to get the login page requirements.", Assignee: "Mike" },
                  { Status: "Close", Id: "11", Summary: "Login page validation.", Assignee: "Andrew"},
                  ];
             $("#Kanban").ejKanban(
@@ -132,7 +132,7 @@ The following code example describes the above behavior.
     $(function () {
 		 var data = [
                  { Status: "Open", Id: 1, Summary: "Analyze the new requirements.", Assignee: "Andrew", RankId: 1 },
-                 { Status: "Testing", Id: 2, Summary: "Arrange a web meeting.", ImgUrl:"image.png", RankId: 1},
+                 { Status: "Testing", Id: 2, Summary: "Arrange a web meeting.", RankId: 1},
                  { Status: "Open", Id: 3, Summary: "API improvements.", Assignee: "Andrew", RankId: 2 },
                  { Status: "InProgress", Id: 4, Summary: "Improve application performance.", Assignee: "Nancy", RankId: 1},
                  { Status: "Close", Id: 5, Summary: "Fix the issues reported in the IE browser.", Assignee: "Andrew", RankId: 1},
@@ -142,7 +142,7 @@ The following code example describes the above behavior.
                     dataSource: data,
 					isResponsive:true,
                     columns: [
-                        { headerText: "Baklog", key: "Open" },
+                        { headerText: "Backlog", key: "Open" },
                         { headerText: "In Progress", key: "InProgress" },
 						{ headerText: "Close", key: "Close"}
                        
