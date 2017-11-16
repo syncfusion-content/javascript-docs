@@ -16,9 +16,9 @@ Options like zooming, panning, and map selection enables the effective interacti
 
 Each shape in the Map can be selected and deselected during interaction with the shapes. 
 
-The `selectionColor` property is used to get or set the selected shape color. The `selectionStroke` and `selectionStrokeWidth` properties are used to customize the selected shape border.
+The [`selectionColor`](../api/js/ejmap#members:layers-shapesettings-selectioncolor) property is used to get or set the selected shape color. The [`selectionStroke`](../api/js/ejmap#members:layers-shapesettings-selectionstroke) and [`selectionStrokeWidth`](../api/js/ejmap#members:layers-shapesettings-selectionstrokewidth) properties are used to customize the selected shape border.
 
-You can select the shape by tapping the shape. The Single selection is enabled by the `enableSelection` property of shape layer. When `enableSelection` is set to false, the shapes cannot be selected. 
+You can select the shape by tapping the shape. The Single selection is enabled by the [`enableSelection`](../api/js/ejmap#members:layers-enableselection) property of shape layer. When [`enableSelection`](../api/js/ejmap#members:layers-enableselection) is set to false, the shapes cannot be selected. 
 
 {% highlight javascript %}
 
@@ -44,12 +44,12 @@ You can select the shape by tapping the shape. The Single selection is enabled b
 
 {% endhighlight %}
 
-{% include image.html url="/js/Maps/User-Interaction_images/User-Interaction_img1.png"%}
+![](User-Interaction_images/User-Interaction_img1.png)
 
 ## MultiSelection
 
 
-This feature enables you to select multiple Map shapes on mouse taps accompanied by the "**Control**" key press. To enable this feature, set the `selectionMode` property as "**multiple**" along with the `enableSelection` property.
+This feature enables you to select multiple Map shapes on mouse taps accompanied by the "**Control**" key press. To enable this feature, set the [`selectionMode`](../api/js/ejmap#members:layers-selectionmode) property as "**multiple**" along with the [`enableSelection`](../api/js/ejmap#members:layers-enableselection) property.
 
 {% highlight javascript %}
 
@@ -70,13 +70,13 @@ This feature enables you to select multiple Map shapes on mouse taps accompanied
 
 {% endhighlight %}
 
-{% include image.html url="/js/Maps/User-Interaction_images/User-Interaction_img5.png"%}
+![](User-Interaction_images/User-Interaction_img5.png)
 
 
 ## Dragging On Selection
 
 This feature enables you to select the shapes by dragging over the shapes. While dragging over the shapes, a rectangle is generated and the shapes that comes within the rectangle is selected.
-You can enable this feature by setting the `draggingOnSelection` property in the `layers` to **True**.
+You can enable this feature by setting the [`draggingOnSelection`](../api/js/ejmap#members:draggingonselection) property in the [`layers`](../api/js/ejmap#members:layers) to **True**.
 
 {% highlight javascript %}
 
@@ -101,7 +101,7 @@ You can enable this feature by setting the `draggingOnSelection` property in the
 
 ## Zooming
 
-The zooming feature enables you to zoom in and out the Map to show in-depth information. It is controlled by the `level` property of the Map. When the zoom level of the Map control is increased, the Map is zoomed in. When the zoom level is decreased, then the Map is zoomed out.
+The zooming feature enables you to zoom in and out the Map to show in-depth information. It is controlled by the [`level`](../api/js/ejmap#members:zoomsettings-level) property of the Map. When the zoom level of the Map control is increased, the Map is zoomed in. When the zoom level is decreased, then the Map is zoomed out.
 
 ### Properties
 
@@ -117,21 +117,21 @@ The following properties are related to the zooming feature of the **Maps** cont
 
 ### Level
 
-The `level` property determines the Map’s scale size when zooming. The default value of `level` is 1. 
+The [`level`](../api/js/ejmap#members:zoomsettings-level) property determines the Map’s scale size when zooming. The default value of [`level`](../api/js/ejmap#members:zoomsettings-level) is 1. 
 
 N> level cannot be less than 1
 
 ### EnableZoom
 
-The `enableZoom` property enables or disables the zooming feature. 
+The [`enableZoom`](../api/js/ejmap#members:zoomsettings-enablezoom) property enables or disables the zooming feature. 
 
 ### MinValue
 
-The `minValue` property is used to set the minimum zoom level of the Map. 
+The [`minValue`](../api/js/ejmap#members:zoomsettings-minvalue) property is used to set the minimum zoom level of the Map. 
 
 ### MaxValue
 
-The `maxValue` property is used to set the maximum zoom level of the Map.
+The [`maxValue`](../api/js/ejmap#members:zoomsettings-maxvalue) property is used to set the maximum zoom level of the Map.
 
 {% highlight javascript %}
 
@@ -154,6 +154,31 @@ The `maxValue` property is used to set the maximum zoom level of the Map.
 
 
 {% endhighlight %}
+
+### Factor
+
+Specifies the zoom factor for map zoom value, you can use [`factor`](../api/js/ejmap#members:zoomsettings-factor) property.
+
+{% highlight javascript %}
+
+
+        jQuery(function($) {
+            $("#mapContainer").ejMap({
+                layers: [
+                    {
+                        shapeData: usMap
+                    }
+                ],
+                zoomSettings:{
+                    enableZoom: true,
+                    factor: 1
+                }
+            });
+        }); 	
+
+
+{% endhighlight %}
+
 
 ### Additional Options to Zoom the Map
 
@@ -188,11 +213,11 @@ When the Map is double-tapped by using mouse, the zoom in operation is performed
 
 ### Shape Selection
 
-Map shape is zoomed to the whole Map area on the shape selected. Animation can be applied for that zooming by using the `enableAnimation` property as true. 
+Map shape is zoomed to the whole Map area on the shape selected. Animation can be applied for that zooming by using the [`enableAnimation`](../api/js/ejmap#members:enableanimation) property as true. 
 
-You can enable this feature by setting `enableZoomOnSelection` property value as ‘_True_’. 
+You can enable this feature by setting [`enableZoomOnSelection`](../api/js/ejmap#members:zoomsettings-enablezoomonselection) property value as ‘_True_’. 
 
-When `enableZoomOnSelection` property is set to true, then zooming by double click is muted.
+When [`enableZoomOnSelection`](../api/js/ejmap#members:zoomsettings-enablezoomonselection) property is set to true, then zooming by double click is muted.
 
 {% highlight javascript %}
 
@@ -251,7 +276,7 @@ Zoom level of the map</td></tr>
 
 ## Panning
 
-The panning feature enables the Map navigation. The `enablePan` property is used to enable or disable the panning support.
+The panning feature enables the Map navigation. The [`enablePan`](../api/js/ejmap#members:enablepan) property is used to enable or disable the panning support.
 
 {% highlight javascript %}
 
@@ -267,7 +292,7 @@ The panning feature enables the Map navigation. The `enablePan` property is used
 
 ## Navigation Control
 
-**Navigation** control is built-in with **Maps** control. With Navigation control, **Maps** can be panned in any direction and zoomed. It is possible to show or hide the NavigationControl by `enableNavigation` property.
+**Navigation** control is built-in with **Maps** control. With Navigation control, **Maps** can be panned in any direction and zoomed. It is possible to show or hide the NavigationControl by [`enableNavigation`](../api/js/ejmap#members:navigationcontrol-enablenavigation) property.
 
 
 ![](User-Interaction_images/User-Interaction_img3.png)
@@ -296,7 +321,7 @@ The Navigation control can be positioned in two ways.
 
 #### Absolute Position
 
-Based on the margin values of X and Y-axes, the navigation control can be positioned with the help of the **x** and **y** properties available in `absolutePosition`. For positioning the navigation control based on margins corresponding to a Map, `dockPosition` value is set as ‘_none_’.
+Based on the margin values of X and Y-axes, the navigation control can be positioned with the help of the **x** and **y** properties available in [`absolutePosition`](../api/js/ejmap#members:navigationcontrol-absoluteposition). For positioning the navigation control based on margins corresponding to a Map, [`dockPosition`](../api/js/ejmap#members:navigationcontrol-dockposition) value is set as ‘_none_’.
 
 #### Dock Position
 
@@ -314,7 +339,7 @@ The navigation control can be positioned in the following locations within the c
 * bottomRight
 * none
 
-You can set this option by using `dockPosition` property in `navigationControl`.
+You can set this option by using [`dockPosition`](../api/js/ejmap#members:navigationcontrol-dockposition) property in [`navigationControl`](../api/js/ejmap#members:navigationcontrol).
 
 {% highlight javascript %}
 
@@ -328,6 +353,91 @@ You can set this option by using `dockPosition` property in `navigationControl`.
 
 
 {% endhighlight %}
+
+#### Orientation
+
+Set the [`orientation`](../api/js/ejmap#members:navigationcontrol-orientation) value for navigation control.
+
+<table class="params">
+	<thead>
+		<tr>
+			<th>Name </th>			
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="name">horizontal</td>			
+			<td class="description">specifies the horizontal position</td>
+		</tr>
+		<tr>
+			<td class="name">vertical</td>			
+			<td class="description">specifies the vertical position</td>
+		</tr>
+	</tbody>
+</table>
+
+
+{% highlight js %}
+ 
+//To set orientation value during initialization 
+   $("#container").ejMap(navigationControl:{orientation:'vertical'});
+   
+{% endhighlight %}
+
+#### Content
+
+
+Specifies the navigation control template for map, you can use [`content`](../api/js/ejmap#members:navigationcontrol-content) property.
+
+
+{% highlight js %}
+ 
+//To set navigation control template for map during initialization 
+   $("#container").ejMap(navigationControl:{content:null});
+
+{% endhighlight %}
+
+
+
+### Animation
+
+ **Animation** is enabled or disabled using [`enable animation`](../api/js/ejmap#members:enableanimation) property. 
+
+{% highlight javascript %}
+
+$("#Map").ejMap({
+        enableAnimation: true,                                       
+    });
+
+{% endhighlight %}
+
+
+#### Enable Layer Change Animation 
+
+Enables or Disables the animation for layer change in map, you can use [`enableLayerChangeAnimation`](../api/js/ejmap#members:enablelayerchangeanimation) properrty and the default value is false.
+
+
+{% highlight js %}
+ 
+//To set enableLayerChangeAnimation API value during initialization 
+   $("#container").ejMap({enableLayerChangeAnimation:true});       
+
+{% endhighlight %}
+
+
+### Responsiveness during browser resize
+
+**Map** is made responsive when resizing the browser by using [`isResponsive`](../api/js/ejmap#members:isresponsive) property.
+
+{% highlight javascript %}
+
+$("#Map").ejMap({
+        isResponsive: true,                                       
+});
+
+{% endhighlight %}
+
 
 
 

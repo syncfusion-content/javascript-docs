@@ -10,7 +10,7 @@ api: /api/js/ejmap
 
 # Layers
 
-Map is maintained through `layers` and it can accommodate one or more layers.
+Map is maintained through [`layers`](../api/js/ejmap#members:layers) and it can accommodate one or more layers.
 
 ## Multilayer
 
@@ -18,7 +18,7 @@ The Multilayer support allows you to load multiple shape files in a single conta
 
 ### Adding Multiple Layers in the Map
 
-The shape layers is the core layer of the map. The multiple layers can be added in the shape layers as `subLayers` within the shape layers.
+The shape layers is the core layer of the map. The multiple layers can be added in the shape layers as [`subLayers`](../api/js/ejmap#members:layers-sublayers) within the shape layers.
 
 ## SubLayer
 
@@ -67,4 +67,6 @@ You can assign the complete contents in “**WorldMap.json**” file to new JSON
 
 
 ![](/js/Maps/Layers_images/Layers_img1.png)
+
+
 
