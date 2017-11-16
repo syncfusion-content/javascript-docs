@@ -13,7 +13,7 @@ api: /api/js/ejmap
 
 ### navigateTo(latitude, longitude, level)
 
-Method for navigating to specific shape based on latitude, longitude and zoom level, you can use [`navigateTo`](../api/js/ejmap#methods:navigateto) method.
+Method for navigating to specific shape based on latitude, longitude and zoom level, you can use [`navigateTo`](../api/ejmap#methods:navigateto) method.
 
 
 {% highlight js %}
@@ -26,7 +26,7 @@ Method for navigating to specific shape based on latitude, longitude and zoom le
 
 ### pan(direction)
 
-Method to perform map panning, you can use [`pan`](../api/js/ejmap#methods:pan) method.
+Method to perform map panning, you can use [`pan`](../api/ejmap#methods:pan) method.
 
 
 {% highlight js %}
@@ -39,7 +39,7 @@ Method to perform map panning, you can use [`pan`](../api/js/ejmap#methods:pan) 
 
 ### refresh()
 
-Method to reload the map, you can use [`refresh`](../api/js/ejmap#methods:refresh) method.
+Method to reload the map, you can use [`refresh`](../api/ejmap#methods:refresh) method.
 
 
 {% highlight js %}
@@ -52,7 +52,7 @@ Method to reload the map, you can use [`refresh`](../api/js/ejmap#methods:refres
 
 ### refreshLayers()
 
-Method to reload the shapeLayers with updated values, you can use [`refreshLayers`](../api/js/ejmap#methods:refreshlayers) method.
+Method to reload the shapeLayers with updated values, you can use [`refreshLayers`](../api/ejmap#methods:refreshlayers) method.
 
 
 {% highlight js %}
@@ -65,7 +65,7 @@ Method to reload the shapeLayers with updated values, you can use [`refreshLayer
 
 ### refreshNavigationControl(navigation)
 
-Method to reload the navigation control with updated values, you can use [`refreshNavigationControl`](../api/js/ejmap#methods:refreshnavigationcontrol) method.
+Method to reload the navigation control with updated values, you can use [`refreshNavigationControl`](../api/ejmap#methods:refreshnavigationcontrol) method.
 
 
 {% highlight js %}
@@ -76,7 +76,7 @@ Method to reload the navigation control with updated values, you can use [`refre
 
 ### zoom(level, isAnimate)
 
-Method to perform map zooming, you can use [`zoom`](../api/js/ejmap#methods:zoom) method.
+Method to perform map zooming, you can use [`zoom`](../api/ejmap#methods:zoom) method.
 
 
 {% highlight js %}
@@ -92,7 +92,7 @@ Method to perform map zooming, you can use [`zoom`](../api/js/ejmap#methods:zoom
 
 ### markerSelected
 
-Triggered on selecting the map markers, you can use [`markerSelected`](../api/js/ejmap#events:markerselected) event.
+Triggered on selecting the map markers, you can use [`markerSelected`](../api/ejmap#events:markerselected) event.
 
 
 {% highlight js %}
@@ -108,7 +108,7 @@ Triggered on selecting the map markers, you can use [`markerSelected`](../api/js
 
 ### mouseleave
 
-Triggers while leaving the hovered map shape, you can use [`mouseleave`](../api/js/ejmap#events:mouseleave) event.
+Triggers while leaving the hovered map shape, you can use [`mouseleave`](../api/ejmap#events:mouseleave) event.
 
 
 {% highlight js %}
@@ -123,7 +123,7 @@ Triggers while leaving the hovered map shape, you can use [`mouseleave`](../api/
 
 ### mouseover
 
-Triggers while hovering the map shape, you can use [`mouseover`](../api/js/ejmap#events:mouseover) event.
+Triggers while hovering the map shape, you can use [`mouseover`](../api/ejmap#events:mouseover) event.
 
 
 {% highlight js %}
@@ -138,7 +138,7 @@ Triggers while hovering the map shape, you can use [`mouseover`](../api/js/ejmap
 
 ### onRenderComplete
 
-Triggers once map render completed, you can use [`onRenderComplete`](../api/js/ejmap#events:onrendercomplete) event.
+Triggers once map render completed, you can use [`onRenderComplete`](../api/ejmap#events:onrendercomplete) event.
 
 
 {% highlight js %}
@@ -153,7 +153,7 @@ Triggers once map render completed, you can use [`onRenderComplete`](../api/js/e
 
 ### panned
 
-Triggers when map panning ends, you can use [`panned`](../api/js/ejmap#events:panned) event.
+Triggers when map panning ends, you can use [`panned`](../api/ejmap#events:panned) event.
 
 
 {% highlight js %}
@@ -167,7 +167,7 @@ Triggers when map panning ends, you can use [`panned`](../api/js/ejmap#events:pa
 
 ### shapeSelected
 
-Triggered on selecting the map shapes, you can use [`shapeSelected`](../api/js/ejmap#events:shapeselected) event.
+Triggered on selecting the map shapes, you can use [`shapeSelected`](../api/ejmap#events:shapeselected) event.
 
 
 {% highlight js %}
@@ -182,7 +182,7 @@ Triggered on selecting the map shapes, you can use [`shapeSelected`](../api/js/e
 
 ### zoomedIn
 
-Triggered when map is zoomed-in, you can use [`zoomedIn`](../api/js/ejmap#events:zoomedin) event.
+Triggered when map is zoomed-in, you can use [`zoomedIn`](../api/ejmap#events:zoomedin) event.
 
 
 
@@ -198,7 +198,7 @@ Triggered when map is zoomed-in, you can use [`zoomedIn`](../api/js/ejmap#events
 
 ### zoomedOut
 
-Triggers when map is zoomed out, you can use [`zoomedOut`](../api/js/ejmap#events:zoomedout) event.
+Triggers when map is zoomed out, you can use [`zoomedOut`](../api/ejmap#events:zoomedout) event.
 
 
 

@@ -14,16 +14,16 @@ api: /api/js/ejmap
 
 ## Shape Settings
 
-The [`shapeSettings`](../api/js/ejmap#members:layers-shapesettings) defines the basic customization settings of shapes in the map. 
+The [`shapeSettings`](../api/ejmap#members:layers-shapesettings) defines the basic customization settings of shapes in the map. 
 
-The important property that makes an impact on shape colors is the [`autoFill`](../api/js/ejmap#members:layers-shapesettings-autofill). This `autoFill` property is available in the `shapeSettings`. 
+The important property that makes an impact on shape colors is the [`autoFill`](../api/ejmap#members:layers-shapesettings-autofill). This `autoFill` property is available in the `shapeSettings`. 
 
-* [`fill`](../api/js/ejmap#members:layers-shapesettings-fill) - It is used to set the fill color of the shapes in the map.
-* [`stroke`](../api/js/ejmap#members:layers-shapesettings-stroke) - It is used to set the border color of the shape in the map.
-* [`strokeThickness`](../api/js/ejmap#members:layers-shapesettings-strokethickness) - It is used to set the border thickness of the shape in the map.
-* [`highlightColor`](../api/js/ejmap#members:layers-shapesettings-highlightcolor) - It is used to set the mouse hover color for shapes in the map.
-* [`highlightBorderWidth`](../api/js/ejmap#members:layers-shapesettings-highlightborderwidth) - It is used to set the mouse hover border width for shapes in the map.
-* [`selectionColor`](../api/js/ejmap#members:layers-shapesettings-selectioncolor) - It is used to set the selection color for shapes in the map.
+* [`fill`](../api/ejmap#members:layers-shapesettings-fill) - It is used to set the fill color of the shapes in the map.
+* [`stroke`](../api/ejmap#members:layers-shapesettings-stroke) - It is used to set the border color of the shape in the map.
+* [`strokeThickness`](../api/ejmap#members:layers-shapesettings-strokethickness) - It is used to set the border thickness of the shape in the map.
+* [`highlightColor`](../api/ejmap#members:layers-shapesettings-highlightcolor) - It is used to set the mouse hover color for shapes in the map.
+* [`highlightBorderWidth`](../api/ejmap#members:layers-shapesettings-highlightborderwidth) - It is used to set the mouse hover border width for shapes in the map.
+* [`selectionColor`](../api/ejmap#members:layers-shapesettings-selectioncolor) - It is used to set the selection color for shapes in the map.
 
 The above properties of `shapeSettings` are applied only when the `autoFill` property value is set to false. By default, the `autoFill` property value is false.
 
@@ -62,9 +62,9 @@ The above properties of `shapeSettings` are applied only when the `autoFill` pro
 
 The **Color Mapping** support enables the customization of shape colors based on the underlying value of shape received from bounded data.
 
-* [`colorValuePath`](../api/js/ejmap#members:layers-shapesettings-colorvaluepath) - It renders the field value that is to be fetched from data for each shape used for determining the shape color.
-* [`valuePath`](../api/js/ejmap#members:layers-shapesettings-valuepath) - It renders the field value that is to be fetched from data for each shape. This support also provides a tree map-like impact on the map UI. The various types of Color Mapping supported in maps are listed as follows.
-* [`rangeColorMapping`](../api/js/ejmap#members:layers-shapesettings-colormappings) - It is used to differentiate the shape’s fill based on its underlying value and color ranges. The properties of rangeColorMapping are listed in the following table.
+* [`colorValuePath`](../api/ejmap#members:layers-shapesettings-colorvaluepath) - It renders the field value that is to be fetched from data for each shape used for determining the shape color.
+* [`valuePath`](../api/ejmap#members:layers-shapesettings-valuepath) - It renders the field value that is to be fetched from data for each shape. This support also provides a tree map-like impact on the map UI. The various types of Color Mapping supported in maps are listed as follows.
+* [`rangeColorMapping`](../api/ejmap#members:layers-shapesettings-colormappings) - It is used to differentiate the shape’s fill based on its underlying value and color ranges. The properties of rangeColorMapping are listed in the following table.
 
 <table>
 <tr>
@@ -86,7 +86,7 @@ Gets or sets end value</td></tr>
 <td>
 color</td><td>
 Color</td><td>
-Gets or sets the colors to be applied for specific range value containing shapes when [`enableGradient`](../api/js/ejmap#members:layers-shapesettings-enablegradient) property value is false.</td></tr>
+Gets or sets the colors to be applied for specific range value containing shapes when [`enableGradient`](../api/ejmap#members:layers-shapesettings-enablegradient) property value is false.</td></tr>
 <tr>
 <td>
 label</td><td>
@@ -96,7 +96,7 @@ Gets or sets the label for legend when mode property value is ‘default’.</td
 <td>
 gradientColors</td><td>
 Array</td><td>
-Gets or sets the start point and end point gradient colors to be applied for specific range value containing shapes when [`enableGradient`](../api/js/ejmap#members:layers-shapesettings-enablegradient) property value is set to true.</td></tr>
+Gets or sets the start point and end point gradient colors to be applied for specific range value containing shapes when [`enableGradient`](../api/ejmap#members:layers-shapesettings-enablegradient) property value is set to true.</td></tr>
 </table>
 
 
@@ -154,7 +154,7 @@ When the underlying value is below any of the given sorted range or above the so
 
 ![](/js/Maps/Customization_images/Customization_img2.png)
 
-* [`equalColorMapping`](../api/js/ejmap#members:layers-shapesettings-colormappings-equalcolormapping) - The equalColorMapping is used to differentiate the shape’s fill based on its underlying value and color. The properties of equalColorMapping is listed in the following table.
+* [`equalColorMapping`](../api/ejmap#members:layers-shapesettings-colormappings-equalcolormapping) - The equalColorMapping is used to differentiate the shape’s fill based on its underlying value and color. The properties of equalColorMapping is listed in the following table.
 
 <table>
 <tr>
@@ -273,7 +273,7 @@ Here USA election data is considered as input datasource and stored in “electi
 
 ### AutoFill
 
-When [`autoFill`](../api/js/ejmap#members:layers-shapesettings-autofill) property is set to true, shapes are filled with default colors from built-in palettes or custom palette.
+When [`autoFill`](../api/ejmap#members:layers-shapesettings-autofill) property is set to true, shapes are filled with default colors from built-in palettes or custom palette.
 
 {% highlight javascript %}
 
@@ -299,13 +299,13 @@ When [`autoFill`](../api/js/ejmap#members:layers-shapesettings-autofill) propert
 
 ### Color Palette
 
-The [`colorPalette`](../api/js/ejmap#members:layers-shapesettings-colorpalette) property determines whether the auto fill colors are fetched from built-in color palettes or custom palette.
+The [`colorPalette`](../api/ejmap#members:layers-shapesettings-colorpalette) property determines whether the auto fill colors are fetched from built-in color palettes or custom palette.
 
-The [`colorPalette`](../api/js/ejmap#members:layers-shapesettings-colorpalette) property can be set with palette1, palette2, palette3 and custompalette values where palette1, palette2 and palette3 are built-in color palettes and default value for this property is “palette1”.
+The [`colorPalette`](../api/ejmap#members:layers-shapesettings-colorpalette) property can be set with palette1, palette2, palette3 and custompalette values where palette1, palette2 and palette3 are built-in color palettes and default value for this property is “palette1”.
 
-The [`customPalette`](../api/js/ejmap#members:layers-shapesettings-colorpalette) property is used to set an array of colors to be auto filled in shapes.
+The [`customPalette`](../api/ejmap#members:layers-shapesettings-colorpalette) property is used to set an array of colors to be auto filled in shapes.
 
-This property is enabled only when [`colorPalette`](../api/js/ejmap#members:layers-shapesettings-colorpalette) property value is set to “custompalette”.
+This property is enabled only when [`colorPalette`](../api/ejmap#members:layers-shapesettings-colorpalette) property value is set to “custompalette”.
 
 {% highlight javascript %}
 
@@ -336,7 +336,7 @@ This property is enabled only when [`colorPalette`](../api/js/ejmap#members:laye
 
 ## Tooltip
 
-The tooltip is displayed only when you set [`showTooltip`](../api/js/ejmap#members:layers-showtooltip) to “True” in the shape layers. By default, it takes the property of the bound object that is referred in the [`valuePath`](../api/js/ejmap#members:layers-shapesettings-valuepath) and displays its content on hovering the corresponding shape. 
+The tooltip is displayed only when you set [`showTooltip`](../api/ejmap#members:layers-showtooltip) to “True” in the shape layers. By default, it takes the property of the bound object that is referred in the [`valuePath`](../api/ejmap#members:layers-shapesettings-valuepath) and displays its content on hovering the corresponding shape. 
 
 {% highlight javascript %}
 
@@ -374,7 +374,7 @@ The tooltip is displayed only when you set [`showTooltip`](../api/js/ejmap#membe
 
 ### Tooltip Template
 
-The [`tooltipTemplate`](../api/js/ejmap#members:layers-tooltiptemplate) property is used for customizing the template for tooltip.
+The [`tooltipTemplate`](../api/ejmap#members:layers-tooltiptemplate) property is used for customizing the template for tooltip.
 
 {% highlight html %}
 
@@ -430,7 +430,7 @@ The following screenshot illustrates a map control displaying a Tooltip with tem
 
 ### Customize map background
 
-The Map background can be customized by using the [`background`](../api/js/ejmap#members:background) property of the Map. 
+The Map background can be customized by using the [`background`](../api/ejmap#members:background) property of the Map. 
 
 {% highlight javascript %}
 
@@ -468,7 +468,7 @@ Specifies the index of the map to determine the shape layer to be displayed, you
 ### Center Position 
 
 
-Specify the [`centerPosition`](../api/js/ejmap#members:centerposition) where map should be displayed
+Specify the [`centerPosition`](../api/ejmap#members:centerposition) where map should be displayed
 
 
 {% highlight js %}
@@ -481,15 +481,15 @@ Specify the [`centerPosition`](../api/js/ejmap#members:centerposition) where map
 
 ### Label Settings
 
-The [`labelSettings`](../api/js/ejmap#members:layers-shapesettings) defines the basic customization settings of labels in the map. 
+The [`labelSettings`](../api/ejmap#members:layers-shapesettings) defines the basic customization settings of labels in the map. 
 
 The below properties are used for `labelSettings`
 
-* [`enableSmartLabel`](../api/js/ejmap#members:layers-labelsettings-enablesmartlabel) - enable or disable the enableSmartLabel property.
-* [`labelLength`](../api/js/ejmap#members:layers-labelsettings-labellength) - set the labelLength property.
-* [`labelPath`](../api/js/ejmap#members:layers-labelsettings-labelpath) - set the labelPath property.
-* [`showLabels`](../api/js/ejmap#members:layers-labelsettings-showlabels) - The property specifies whether to show labels or not
-* [`smartLabelSize`](../api/js/ejmap#members:layers-labelsettings-smartlabelsize) - set the smartLabelSize property.
+* [`enableSmartLabel`](../api/ejmap#members:layers-labelsettings-enablesmartlabel) - enable or disable the enableSmartLabel property.
+* [`labelLength`](../api/ejmap#members:layers-labelsettings-labellength) - set the labelLength property.
+* [`labelPath`](../api/ejmap#members:layers-labelsettings-labelpath) - set the labelPath property.
+* [`showLabels`](../api/ejmap#members:layers-labelsettings-showlabels) - The property specifies whether to show labels or not
+* [`smartLabelSize`](../api/ejmap#members:layers-labelsettings-smartlabelsize) - set the smartLabelSize property.
  
 {% highlight javascript %}
 
