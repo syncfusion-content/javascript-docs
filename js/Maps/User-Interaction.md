@@ -415,7 +415,7 @@ $("#Map").ejMap({
 
 #### Enable Layer Change Animation 
 
-Enables or Disables the animation for layer change in map, you can use [`enableLayerChangeAnimation`](../api/js/ejmap#members:enablelayerchangeanimation) properrty and the default value is false.
+Enables or Disables the animation for layer change in map, you can use [`enableLayerChangeAnimation`](../api/js/ejmap#members:enablelayerchangeanimation) property and the default value is false.
 
 
 {% highlight js %}

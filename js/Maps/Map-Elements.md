@@ -220,7 +220,7 @@ A legend is a key used on a map that contains swatches of symbols with descripti
 
 ### Visibility
 
-The Legends can be made visible by setting the [`showLegend`](../api/js/ejmap#members:layers-legendsettings-showlegend)(../api/js/ejmap#members:layers-legendsettings-showlegend) property of legendSettings to true. 
+The Legends can be made visible by setting the [`showLegend`](../api/js/ejmap#members:layers-legendsettings-showlegend) property of legendSettings to true. 
 
 ### Positioning of the Legend
 

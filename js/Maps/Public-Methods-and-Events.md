@@ -19,7 +19,7 @@ Method for navigating to specific shape based on latitude, longitude and zoom le
 {% highlight js %}
  
 //navigateTo method for map
-   $("#container").ejMap("navigateTo", lat, lon, level);
+   $("#container").ejMap("navigateTo", latitude, longitude, level);
    
 {% endhighlight %}
 
