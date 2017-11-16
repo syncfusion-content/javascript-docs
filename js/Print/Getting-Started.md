@@ -12,26 +12,26 @@ keywords : ejPrint, js print, print, web print, essential javascript print, prin
 
 This section explains briefly about how to use the **Print** widget on your application. It allows either printing of an entire page or specific elements alone from a page. 
 
-## Include Script and CSS
+## Including Script and CSS
 
-To get start with Print, create a new HTML file and add the required dependent CSS as well as script files.
+To get start with Print, create a new HTML file and add the required dependent CSS as well as script files to it.
 
-CSS file
+**CSS file**
 
 * [ej.web.all.min.css](http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css) – includes all the widgets styles.
 
-External script files
+**External script files**
 
 * [jQuery 1.7.1](http://jquery.com/#) and later versions.
 * [jQuery.easing.js](http://gsgd.co.uk/sandbox/jquery/easing/#) - to support the animation effects.
 
-Internal script files
+**Internal script files**
 
 <table>
 <tr>
 <th>
 File</th><th>
-Description/Usage</th></tr>
+Description</th></tr>
 <tr>
 <td>
 ej.core.min.js<br/><br/></td><td>
@@ -40,12 +40,12 @@ Must be referred always before using all the JS controls.<br/><br/></td></tr>
 <td>
 ej.print.min.js<br/><br/></td><td>
 The Print source file<br/><br/></td></tr>
-<tr>
 </table>
 
-The above mentioned internal script files can be individually referred on an application, if the Print control alone is going to be used. Otherwise, it is necessary to make use of the ‘ej.web.all.min.js’ file which encapsulates all the `ej` components and frameworks in a single file.
+The above mentioned internal script files can be individually referred on an application, if the Print control alone needs to be used. If in case, other controls also needs to be used on your application - then it is necessary to make use of the ‘ej.web.all.min.js’ file which encapsulates all the `ej` components and frameworks in a single file.
 
 [ej.web.all.min.js](http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js) – includes scripts of all widgets.
+
 
 N>  In production, we highly recommend you to use our [custom script generator](http://helpjs.syncfusion.com/js/include-only-the-needed-widgets) to create custom script file with required controls and its dependencies only. Also to reduce the file size further, please use [GZip compression](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/optimize-encoding-and-transfer?hl=en#text-compression-with-gzip) in your server. 
 
@@ -71,7 +71,7 @@ Add reference links of the [CDN](http://helpjs.syncfusion.com/js/cdn) for the sc
 
 ## Using Print widget
 
-To Print a Grid control, first the grid control needs to be defined on the page properly. Refer to the following code example.
+To Print a Grid control, first the grid control needs to be defined and rendered on the page properly. Refer to the following code example.
 
 
 {% highlight html %}
@@ -135,5 +135,4 @@ Keep a separate button on a page and on it's click action, call the `ejPrint` fu
         
 {% endhighlight %}
 
-![Create Print](getting-started_images\getting-started_img1.png)
 

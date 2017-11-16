@@ -58,7 +58,7 @@ You can provide external CSS styles to the stacked header with the help of cssCl
 {% highlight html %}
 
 <style>
-  .temp {
+  .stack {
             background-color: red; 
         }
 </style>
@@ -66,13 +66,12 @@ You can provide external CSS styles to the stacked header with the help of cssCl
 <div id="treeGrid"></div> 
 <script>
 $("#treeGrid").ejTreeGrid({
-   showStackedHeader:true,
-   stackedHeaderRows:
-   [{
-	   stackedHeaderRows: [{
+    showStackedHeader: true,
+    stackedHeaderRows: [{
             stackedHeaderColumns: [{
                     column: "ID,Name,category,units",
-                    headerText: "Shipment details", cssClass:"temp" 
+                    headerText: "Shipment details",
+		    cssClass: "stack"
                 },
                 {
                     column: "unitPrice,price",
@@ -80,42 +79,43 @@ $("#treeGrid").ejTreeGrid({
                 }
             ]
         ]
-    }, 
-   ]},  
+    },
 });
 </script> 
 
 {% endhighlight %}
+
+![](Stacked-header_images/Stacked-Header-img2.png)
 
 ### Text Align
 
 There is an option to align the stacked header text inside the header cell using `textAlign` property as follows.
 
 {% highlight html %}
-
 <div id="treeGrid"></div> 
 <script>
 $("#treeGrid").ejTreeGrid({
-   showStackedHeader:true,
-   stackedHeaderRows:
-   [{
-	   stackedHeaderRows: [{
+    showStackedHeader: true,
+    stackedHeaderRows: [{
             stackedHeaderColumns: [{
                     column: "ID,Name,category,units",
-                    headerText: "Shipment details", textAlign: ej.TextAlign.Center 
+                    headerText: "Shipment details",
+		    textAlign:ej.TextAlign.Left 
                 },
                 {
                     column: "unitPrice,price",
-                    headerText: "Price details"
+                    headerText: "Price details",
+		    textAlign: ej.TextAlign.Right 
                 }
             ]
         ]
-    },  
-   ]},  
+    },
 });
 </script> 
 
 {% endhighlight %}
+
+![](Stacked-header_images/Stacked-Header-img4.png)
 
 ### Tooltip
 
@@ -124,25 +124,34 @@ We can have the customized tooltip for the stacked header text with the help of 
 {% highlight html %}
 
 <div id="treeGrid"></div> 
+<script id="tooltip" type="text/x-jsrender">
+        <div>Custom Tooltip</div>
+</script>
 <script>
 $("#treeGrid").ejTreeGrid({
-   showStackedHeader:true,
-   stackedHeaderRows:
-   [{
-	   stackedHeaderRows: [{
+    showStackedHeader: true,
+    stackedHeaderRows: [{
             stackedHeaderColumns: [{
                     column: "ID,Name,category,units",
-                    headerText: "Shipment details", tooltip: "#tooltip"
+                    headerText: "Shipment details",
+		   
                 },
                 {
                     column: "unitPrice,price",
-                    headerText: "Price details"
+                    headerText: "Price details",
+		    tooltip: "#tooltip" 
                 }
             ]
         ]
-    },      
-   ]},  
+    },
 });
 </script> 
 
 {% endhighlight %}
+
+![](Stacked-header_images/Stacked-Header-img3.png)
+
+N>
+To enable stacked header tooltip we need to set `showGridCellTooltip` as `true`.
+
+[Click](http://js.syncfusion.com/demos/web/#!/bootstrap/treegrid/columns/stackedheader) here to view the demo sample for stacked header.
