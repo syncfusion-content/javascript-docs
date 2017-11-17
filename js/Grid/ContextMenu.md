@@ -262,7 +262,7 @@ Sub context menu is used to add customized sub menu to the custom context menu i
 
 ## Sub Context Menu with Template
 
-On rendering the Sub context menu items, the customized sub menu items are screated by using [`contextMenuSettings.subContextMenu.template`](https://help.syncfusion.com/api/js/ejgrid#members:contextmenusettings-subcontextmenu "contextMenuSettings.subContextMenu.template") property.
+On rendering the Sub context menu items, the customized sub menu items are created by using [`contextMenuSettings.subContextMenu.template`](https://help.syncfusion.com/api/js/ejgrid#members:contextmenusettings-subcontextmenu "contextMenuSettings.subContextMenu.template") property.
 
 {% highlight html %}
 <div id="Grid"></div>
