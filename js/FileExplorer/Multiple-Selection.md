@@ -31,7 +31,7 @@ N>  For selecting files by mouse down and drag set `allowMultiSelection` propert
 
                 ajaxAction: ajaxActionHandler,
 
-                allowMultiSelection: false  //allowMultiSelection property is true by default
+                allowMultiSelection: true  //allowMultiSelection property is true by default
 
             });
 
