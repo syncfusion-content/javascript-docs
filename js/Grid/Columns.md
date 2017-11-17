@@ -354,7 +354,7 @@ The following output is displayed as a result of the above code example.
 
 ## Reorder
 
-Reordering can be done by drag and drop of the particular column header from one index to another index within the Grid. Reordering can be enabled by setting the [`allowReordering`](https://help.syncfusion.com/api/js/ejgrid#members:allowreordering "allowReordering") property as `true`.
+Reordering can be done by drag and drop on the particular column header from one index to another index within the Grid. Reordering can be enabled by setting the [`allowReordering`](https://help.syncfusion.com/api/js/ejgrid#members:allowreordering "allowReordering") property as `true`.
 
 The following code example describes the above behavior.
 
