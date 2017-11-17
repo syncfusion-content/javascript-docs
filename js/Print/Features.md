@@ -61,7 +61,7 @@ To print the grid layout alone excluding other items from a web page, refer the 
 
 ## Printing entire page
 
-It is possible to print the entire web page by caling the `ejPrint` on the document body, which is depicted in the below code example. Here, the entire page including all the items on the page will be printed.
+It is possible to print the entire web page by calling the `ejPrint` on the document body, which is depicted in the below code example. Here, the entire page including all the items on the page will be printed.
 
 {% highlight javascript %}
 
