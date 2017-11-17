@@ -238,6 +238,32 @@ function exportBtnClick(args)
 
 {% endhighlight %}  
 
+## PivotChart - Exporting Format
+
+I> This option is applicable only for PivotChart specifically when exported to Excel document.
+
+You can set an option to export PivotChart to an Excel document, either as image or PivotChart format itself by setting the boolean property `exportChartAsImage`, inside the `beforeExport` event.
+
+N> By default PivotChart will be exported as image format to Excel document.
+
+{% highlight javascript %}
+
+        $("#PivotChart1").ejPivotChart(
+            {
+               //...
+               beforeExport:"Exporting",
+        });
+        
+        function Exporting(args) {
+            args.exportChartAsImage = false; //you can set the chart format here
+        }
+        
+ {% endhighlight %}
+
+The below screenshot shows the control exported to Excel document showing its own format (Pivoting Chart).
+
+![](Export_images/Export_ExcelChartClient.png)
+
 ## Exporting Customization
 
 You can add title and description to the exporting document by using title and description property obtained in the "beforeExport" event.
@@ -348,7 +374,7 @@ void pivotChartPDFExport_PDFExport(object sender, Syncfusion.Pdf.PdfDocument pdf
 
 void pivotChartPDFExport_AddPDFHeaderFooter(object sender, Syncfusion.Pdf.PdfDocument pdfDoc)
 {
-    //You can add header/footer information to the pdf document.
+    //You can add header/footer information to the PDF document.
 }
 
  //Following service method needs to be added in WCF/WebAPI for PivotEngine export.
@@ -373,7 +399,7 @@ void htmlHelper_PDFExport(object sender, Syncfusion.Pdf.PdfDocument pdfDoc)
 
 void htmlHelper_AddPDFHeaderFooter(object sender, Syncfusion.Pdf.PdfDocument pdfDoc)
 {
-    //You can add header/footer information to the pdf document.
+    //You can add header/footer information to the PDF document.
 }
 
 void htmlHelper_WordExport(object sender, Syncfusion.DocIO.DLS.WordDocument document)

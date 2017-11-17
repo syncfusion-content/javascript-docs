@@ -14,7 +14,7 @@ api: /api/js/ejcirculargauge
 
 ### Destroying the Circular Gauge
 
-The [`destroy`](../api/js/ejcirculargauge#methods:destroy) method is used to destroy the **CircularGauge** widget. All events bound using this._on will be unbind automatically and bring the control to pre-init state.
+The [`destroy`](../api/ejcirculargauge#methods:destroy) method is used to destroy the **CircularGauge** widget. All events bound using this._on will be unbind automatically and bring the control to pre-init state.
 
 {% highlight html %}
 
@@ -30,7 +30,7 @@ The [`destroy`](../api/js/ejcirculargauge#methods:destroy) method is used to des
 
 ### Getting Back Needle Length
 
-The [`getBackNeedleLength`](../api/js/ejcirculargauge#methods:getbackneedlelength) method is used to get the needle length of **CircularGauge**.
+The [`getBackNeedleLength`](../api/ejcirculargauge#methods:getbackneedlelength) method is used to get the needle length of **CircularGauge**.
 
 {% highlight html %}
 
@@ -46,7 +46,7 @@ The [`getBackNeedleLength`](../api/js/ejcirculargauge#methods:getbackneedlelengt
 
 ### Getting Custom Label Angle
 
-The [`getCustomLabelAngle`](../api/js/ejcirculargauge#methods:getcustomlabelangle) method is used to get the angle of custom label.
+The [`getCustomLabelAngle`](../api/ejcirculargauge#methods:getcustomlabelangle) method is used to get the angle of custom label.
 
 {% highlight html %}
 
@@ -62,7 +62,7 @@ The [`getCustomLabelAngle`](../api/js/ejcirculargauge#methods:getcustomlabelangl
 
 ### Getting Custom Label value
 
-The [`getCustomLabelValue`](../api/js/ejcirculargauge#methods:getcustomlabelvalue) method is used to get the value of custom label.
+The [`getCustomLabelValue`](../api/ejcirculargauge#methods:getcustomlabelvalue) method is used to get the value of custom label.
 
 {% highlight html %}
 
@@ -78,7 +78,7 @@ The [`getCustomLabelValue`](../api/js/ejcirculargauge#methods:getcustomlabelvalu
 
 ### Getting Label Angle
 
-The [`getLabelAngle`](../api/js/ejcirculargauge#methods:getlabelangle) method is used to get angle of label.
+The [`getLabelAngle`](../api/ejcirculargauge#methods:getlabelangle) method is used to get angle of label.
 
 {% highlight html %}
 
@@ -94,7 +94,7 @@ The [`getLabelAngle`](../api/js/ejcirculargauge#methods:getlabelangle) method is
 
 ### Getting Label Distance From Scale
 
-The [`getLabelDistanceFromScale`](../api/js/ejcirculargauge#methods:getlabeldistancefromscale) method is used to get the distance value from scale for label.
+The [`getLabelDistanceFromScale`](../api/ejcirculargauge#methods:getlabeldistancefromscale) method is used to get the distance value from scale for label.
 
 {% highlight html %}
 
@@ -110,7 +110,7 @@ The [`getLabelDistanceFromScale`](../api/js/ejcirculargauge#methods:getlabeldist
 
 ### Getting Label Placement
 
-The [`getLabelPlacement`](../api/js/ejcirculargauge#methods:getlabelplacement) method is used to get placement of label.
+The [`getLabelPlacement`](../api/ejcirculargauge#methods:getlabelplacement) method is used to get placement of label.
 
 {% highlight html %}
 
@@ -126,7 +126,7 @@ The [`getLabelPlacement`](../api/js/ejcirculargauge#methods:getlabelplacement) m
 
 ### Getting Label Style
 
-The [`getLabelStyle`](../api/js/ejcirculargauge#methods:getlabelstyle) method is used to get style of label.
+The [`getLabelStyle`](../api/ejcirculargauge#methods:getlabelstyle) method is used to get style of label.
 
 {% highlight html %}
 
@@ -142,7 +142,7 @@ The [`getLabelStyle`](../api/js/ejcirculargauge#methods:getlabelstyle) method is
 
 ### Getting Major Interval Value
 
-The [`getMajorIntervalValue`](../api/js/ejcirculargauge#methods:getmajorintervalvalue) method is used to get major interval value of CircularGauge.
+The [`getMajorIntervalValue`](../api/ejcirculargauge#methods:getmajorintervalvalue) method is used to get major interval value of CircularGauge.
 
 {% highlight html %}
 
@@ -158,7 +158,7 @@ The [`getMajorIntervalValue`](../api/js/ejcirculargauge#methods:getmajorinterval
 
 ### Getting Maker Distance From Scale
 
-The [`getMarkerDistanceFromScale`](../api/js/ejcirculargauge#methods:getmarkerdistancefromscale) method is used to get distance from scale value of marker.
+The [`getMarkerDistanceFromScale`](../api/ejcirculargauge#methods:getmarkerdistancefromscale) method is used to get distance from scale value of marker.
 
 {% highlight html %}
 
@@ -174,7 +174,7 @@ The [`getMarkerDistanceFromScale`](../api/js/ejcirculargauge#methods:getmarkerdi
 
 ### Getting Maker Style
 
-The [`getMarkerStyle`](../api/js/ejcirculargauge#methods:getmarkerstyle) method is used to get distance from scale value of marker.
+The [`getMarkerStyle`](../api/ejcirculargauge#methods:getmarkerstyle) method is used to get distance from scale value of marker.
 
 {% highlight html %}
 
@@ -190,7 +190,7 @@ The [`getMarkerStyle`](../api/js/ejcirculargauge#methods:getmarkerstyle) method 
 
 ### Getting Maximum Value
 
-The [`getMaximumValue`](../api/js/ejcirculargauge#methods:getmaximumvalue) method is used to get maximum value of CircularGauge.
+The [`getMaximumValue`](../api/ejcirculargauge#methods:getmaximumvalue) method is used to get maximum value of CircularGauge.
 
 {% highlight html %}
 
@@ -206,7 +206,7 @@ The [`getMaximumValue`](../api/js/ejcirculargauge#methods:getmaximumvalue) metho
 
 ### Getting Minimum Value
 
-The [`getMinimumValue`](../api/js/ejcirculargauge#methods:getminimumvalue) method is used to get minimum value of CircularGauge.
+The [`getMinimumValue`](../api/ejcirculargauge#methods:getminimumvalue) method is used to get minimum value of CircularGauge.
 
 {% highlight html %}
 
@@ -222,7 +222,7 @@ The [`getMinimumValue`](../api/js/ejcirculargauge#methods:getminimumvalue) metho
 
 ### Getting Minor Interval Value
 
-The [`getMinorIntervalValue`](../api/js/ejcirculargauge#methods:getminorintervalvalue) method is used to get minor interval value of CircularGauge.
+The [`getMinorIntervalValue`](../api/ejcirculargauge#methods:getminorintervalvalue) method is used to get minor interval value of CircularGauge.
 
 {% highlight html %}
 
@@ -238,7 +238,7 @@ The [`getMinorIntervalValue`](../api/js/ejcirculargauge#methods:getminorinterval
 
 ### Getting Needle Style
 
-The [`getNeedleStyle`](../api/js/ejcirculargauge#methods:getneedlestyle) method is used to get style of needle.
+The [`getNeedleStyle`](../api/ejcirculargauge#methods:getneedlestyle) method is used to get style of needle.
 
 {% highlight html %}
 
@@ -254,7 +254,7 @@ The [`getNeedleStyle`](../api/js/ejcirculargauge#methods:getneedlestyle) method 
 
 ### Getting Pointer Cap Border Width
 
-The [`getPointerCapBorderWidth`](../api/js/ejcirculargauge#methods:getpointercapborderwidth) method is used to get border width of pointer cap.
+The [`getPointerCapBorderWidth`](../api/ejcirculargauge#methods:getpointercapborderwidth) method is used to get border width of pointer cap.
 
 {% highlight html %}
 
@@ -270,7 +270,7 @@ The [`getPointerCapBorderWidth`](../api/js/ejcirculargauge#methods:getpointercap
 
 ### Getting Pointer Cap Radius
 
-The [`getPointerCapRadius`](../api/js/ejcirculargauge#methods:getpointercapradius) method is used to get radius of pointer cap.
+The [`getPointerCapRadius`](../api/ejcirculargauge#methods:getpointercapradius) method is used to get radius of pointer cap.
 
 {% highlight html %}
 
@@ -286,7 +286,7 @@ The [`getPointerCapRadius`](../api/js/ejcirculargauge#methods:getpointercapradiu
 
 ### Getting Pointer Length
 
-The [`getPointerLength`](../api/js/ejcirculargauge#methods:getpointerlength) method is used to get pointer length.
+The [`getPointerLength`](../api/ejcirculargauge#methods:getpointerlength) method is used to get pointer length.
 
 {% highlight html %}
 
@@ -302,7 +302,7 @@ The [`getPointerLength`](../api/js/ejcirculargauge#methods:getpointerlength) met
 
 ### Getting Pointer Needle Type
 
-The [`getPointerNeedleType`](../api/js/ejcirculargauge#methods:getpointerneedletype) method is used to get needle type of pointer.
+The [`getPointerNeedleType`](../api/ejcirculargauge#methods:getpointerneedletype) method is used to get needle type of pointer.
 
 {% highlight html %}
 
@@ -318,7 +318,7 @@ The [`getPointerNeedleType`](../api/js/ejcirculargauge#methods:getpointerneedlet
 
 ### Getting Pointer Placement
 
-The [`getPointerPlacement`](../api/js/ejcirculargauge#methods:getpointerplacement) method is used to get placement of pointer.
+The [`getPointerPlacement`](../api/ejcirculargauge#methods:getpointerplacement) method is used to get placement of pointer.
 
 {% highlight html %}
 
@@ -334,7 +334,7 @@ The [`getPointerPlacement`](../api/js/ejcirculargauge#methods:getpointerplacemen
 
 ### Getting Pointer Value
 
-The [`getPointerValue`](../api/js/ejcirculargauge#methods:getpointervalue) method is used to get pointer value.
+The [`getPointerValue`](../api/ejcirculargauge#methods:getpointervalue) method is used to get pointer value.
 
 {% highlight html %}
 
@@ -350,7 +350,7 @@ The [`getPointerValue`](../api/js/ejcirculargauge#methods:getpointervalue) metho
 
 ### Getting Pointer Value
 
-The [`getPointerWidth`](../api/js/ejcirculargauge#methods:getpointerwidth) method is used to get pointer width.
+The [`getPointerWidth`](../api/ejcirculargauge#methods:getpointerwidth) method is used to get pointer width.
 
 {% highlight html %}
 
@@ -366,7 +366,7 @@ The [`getPointerWidth`](../api/js/ejcirculargauge#methods:getpointerwidth) metho
 
 ### Getting Range Border Width
 
-The [`getRangeBorderWidth`](../api/js/ejcirculargauge#methods:getrangeborderwidth) method is used to get border width of range.
+The [`getRangeBorderWidth`](../api/ejcirculargauge#methods:getrangeborderwidth) method is used to get border width of range.
 
 {% highlight html %}
 
@@ -382,7 +382,7 @@ The [`getRangeBorderWidth`](../api/js/ejcirculargauge#methods:getrangeborderwidt
 
 ### Getting Range Distance From Scale
 
-The [`getRangeDistanceFromScale`](../api/js/ejcirculargauge#methods:getrangedistancefromscale) method is used to get range distance from scale.
+The [`getRangeDistanceFromScale`](../api/ejcirculargauge#methods:getrangedistancefromscale) method is used to get range distance from scale.
 
 {% highlight html %}
 
@@ -398,7 +398,7 @@ The [`getRangeDistanceFromScale`](../api/js/ejcirculargauge#methods:getrangedist
 
 ### Getting Range End Value
 
-The [`getRangeEndValue`](../api/js/ejcirculargauge#methods:getrangeendvalue) method is used to get end value of range.
+The [`getRangeEndValue`](../api/ejcirculargauge#methods:getrangeendvalue) method is used to get end value of range.
 
 {% highlight html %}
 
@@ -414,7 +414,7 @@ The [`getRangeEndValue`](../api/js/ejcirculargauge#methods:getrangeendvalue) met
 
 ### Getting Range Position
 
-The [`getRangePosition`](../api/js/ejcirculargauge#methods:getrangeposition) method is used to get range position.
+The [`getRangePosition`](../api/ejcirculargauge#methods:getrangeposition) method is used to get range position.
 
 {% highlight html %}
 
@@ -430,7 +430,7 @@ The [`getRangePosition`](../api/js/ejcirculargauge#methods:getrangeposition) met
 
 ### Getting Range Size
 
-The [`getRangeSize`](../api/js/ejcirculargauge#methods:getrangesize) method is used to get range size.
+The [`getRangeSize`](../api/ejcirculargauge#methods:getrangesize) method is used to get range size.
 
 {% highlight html %}
 
@@ -446,7 +446,7 @@ The [`getRangeSize`](../api/js/ejcirculargauge#methods:getrangesize) method is u
 
 ### Getting Range Start Value
 
-The [`getRangeStartValue`](../api/js/ejcirculargauge#methods:getrangestartvalue) method is used to get range start value.
+The [`getRangeStartValue`](../api/ejcirculargauge#methods:getrangestartvalue) method is used to get range start value.
 
 {% highlight html %}
 
@@ -462,7 +462,7 @@ The [`getRangeStartValue`](../api/js/ejcirculargauge#methods:getrangestartvalue)
 
 ### Getting Scale Bar Size
 
-The [`getScaleBarSize`](../api/js/ejcirculargauge#methods:getscalebarsize) method is used to get scale bar size.
+The [`getScaleBarSize`](../api/ejcirculargauge#methods:getscalebarsize) method is used to get scale bar size.
 
 {% highlight html %}
 
@@ -478,7 +478,7 @@ The [`getScaleBarSize`](../api/js/ejcirculargauge#methods:getscalebarsize) metho
 
 ### Getting Scale Border Width
 
-The [`getScaleBorderWidth`](../api/js/ejcirculargauge#methods:getscaleborderwidth) method is used to get border width of scale.
+The [`getScaleBorderWidth`](../api/ejcirculargauge#methods:getscaleborderwidth) method is used to get border width of scale.
 
 {% highlight html %}
 
@@ -494,7 +494,7 @@ The [`getScaleBorderWidth`](../api/js/ejcirculargauge#methods:getscaleborderwidt
 
 ### Getting Scale Direction
 
-The [`getScaleDirection`](../api/js/ejcirculargauge#methods:getscaledirection) method is used to get scale direction.
+The [`getScaleDirection`](../api/ejcirculargauge#methods:getscaledirection) method is used to get scale direction.
 
 {% highlight html %}
 
@@ -510,7 +510,7 @@ The [`getScaleDirection`](../api/js/ejcirculargauge#methods:getscaledirection) m
 
 ### Getting Scale Radius
 
-The [`getScaleRadius`](../api/js/ejcirculargauge#methods:getscaleradius) method is used to get scale radius.
+The [`getScaleRadius`](../api/ejcirculargauge#methods:getscaleradius) method is used to get scale radius.
 
 {% highlight html %}
 
@@ -526,7 +526,7 @@ The [`getScaleRadius`](../api/js/ejcirculargauge#methods:getscaleradius) method 
 
 ### Getting Start Angle
 
-The [`getStartAngle`](../api/js/ejcirculargauge#methods:getstartangle) method is used to get start angle.
+The [`getStartAngle`](../api/ejcirculargauge#methods:getstartangle) method is used to get start angle.
 
 {% highlight html %}
 
@@ -542,7 +542,7 @@ The [`getStartAngle`](../api/js/ejcirculargauge#methods:getstartangle) method is
 
 ### Getting Sub Gauge Location
 
-The [`getSubGaugeLocation`](../api/js/ejcirculargauge#methods:getsubgaugelocation) method is used to get location of subGauge.
+The [`getSubGaugeLocation`](../api/ejcirculargauge#methods:getsubgaugelocation) method is used to get location of subGauge.
 
 {% highlight html %}
 
@@ -560,7 +560,7 @@ The [`getSubGaugeLocation`](../api/js/ejcirculargauge#methods:getsubgaugelocatio
 
 ### Getting Sweep Angle
 
-The [`getSweepAngle`](../api/js/ejcirculargauge#methods:getsweepangle) method is used to get sweep angle.
+The [`getSweepAngle`](../api/ejcirculargauge#methods:getsweepangle) method is used to get sweep angle.
 
 {% highlight html %}
 
@@ -576,7 +576,7 @@ The [`getSweepAngle`](../api/js/ejcirculargauge#methods:getsweepangle) method is
 
 ### Getting Tick Angle
 
-The [`getTickAngle`](../api/js/ejcirculargauge#methods:gettickangle) method is used to get tick angle.
+The [`getTickAngle`](../api/ejcirculargauge#methods:gettickangle) method is used to get tick angle.
 
 {% highlight html %}
 
@@ -592,7 +592,7 @@ The [`getTickAngle`](../api/js/ejcirculargauge#methods:gettickangle) method is u
 
 ### Getting Tick Distance From Scale
 
-The [`getTickDistanceFromScale`](../api/js/ejcirculargauge#methods:gettickdistancefromscale) method is used to get tick distance from scale value.
+The [`getTickDistanceFromScale`](../api/ejcirculargauge#methods:gettickdistancefromscale) method is used to get tick distance from scale value.
 
 {% highlight html %}
 
@@ -608,7 +608,7 @@ The [`getTickDistanceFromScale`](../api/js/ejcirculargauge#methods:gettickdistan
 
 ### Getting Tick Height
 
-The [`getTickHeight`](../api/js/ejcirculargauge#methods:gettickheight) method is used to get tick height.
+The [`getTickHeight`](../api/ejcirculargauge#methods:gettickheight) method is used to get tick height.
 
 {% highlight html %}
 
@@ -624,7 +624,7 @@ The [`getTickHeight`](../api/js/ejcirculargauge#methods:gettickheight) method is
 
 ### Getting Tick Placement
 
-The [`getTickPlacement`](../api/js/ejcirculargauge#methods:gettickplacement) method is used to get tick placement.
+The [`getTickPlacement`](../api/ejcirculargauge#methods:gettickplacement) method is used to get tick placement.
 
 {% highlight html %}
 
@@ -640,7 +640,7 @@ The [`getTickPlacement`](../api/js/ejcirculargauge#methods:gettickplacement) met
 
 ### Getting Tick Style
 
-The [`getTickStyle`](../api/js/ejcirculargauge#methods:gettickstyle) method is used to get tick style.
+The [`getTickStyle`](../api/ejcirculargauge#methods:gettickstyle) method is used to get tick style.
 
 {% highlight html %}
 
@@ -656,7 +656,7 @@ The [`getTickStyle`](../api/js/ejcirculargauge#methods:gettickstyle) method is u
 
 ### Getting Tick Width
 
-The [`getTickWidth`](../api/js/ejcirculargauge#methods:gettickwidth) method is used to get tick width.
+The [`getTickWidth`](../api/ejcirculargauge#methods:gettickwidth) method is used to get tick width.
 
 {% highlight html %}
 
@@ -672,7 +672,7 @@ The [`getTickWidth`](../api/js/ejcirculargauge#methods:gettickwidth) method is u
 
 ### Setting IncludeFirstValue
 
-The [`includeFirstValue`](../api/js/ejcirculargauge#methods:includefirstvalue) method is used to set includeFirstValue.
+The [`includeFirstValue`](../api/ejcirculargauge#methods:includefirstvalue) method is used to set includeFirstValue.
 
 {% highlight html %}
 
@@ -688,7 +688,7 @@ The [`includeFirstValue`](../api/js/ejcirculargauge#methods:includefirstvalue) m
 
 ### Redrawing Circular Gauge
 
-The [`redraw`](../api/js/ejcirculargauge#methods:redraw) method is used to redraw the Circular Gauge widget.
+The [`redraw`](../api/ejcirculargauge#methods:redraw) method is used to redraw the Circular Gauge widget.
 
 {% highlight html %}
 
@@ -704,7 +704,7 @@ The [`redraw`](../api/js/ejcirculargauge#methods:redraw) method is used to redra
 
 ### Setting Back Needle Length
 
-The [`setBackNeedleLength`](../api/js/ejcirculargauge#methods:setbackneedlelength) method is used to set the needle length of **CircularGauge**.
+The [`setBackNeedleLength`](../api/ejcirculargauge#methods:setbackneedlelength) method is used to set the needle length of **CircularGauge**.
 
 {% highlight html %}
 
@@ -720,7 +720,7 @@ The [`setBackNeedleLength`](../api/js/ejcirculargauge#methods:setbackneedlelengt
 
 ### Setting Custom Label Angle
 
-The [`setCustomLabelAngle`](../api/js/ejcirculargauge#methods:setcustomlabelangle) method is used to set the angle of custom label.
+The [`setCustomLabelAngle`](../api/ejcirculargauge#methods:setcustomlabelangle) method is used to set the angle of custom label.
 
 {% highlight html %}
 
@@ -736,7 +736,7 @@ The [`setCustomLabelAngle`](../api/js/ejcirculargauge#methods:setcustomlabelangl
 
 ### Setting Custom Label value
 
-The [`setCustomLabelValue`](../api/js/ejcirculargauge#methods:setcustomlabelvalue) method is used to set the value of custom label.
+The [`setCustomLabelValue`](../api/ejcirculargauge#methods:setcustomlabelvalue) method is used to set the value of custom label.
 
 {% highlight html %}
 
@@ -752,7 +752,7 @@ The [`setCustomLabelValue`](../api/js/ejcirculargauge#methods:setcustomlabelvalu
 
 ### Setting Label Angle
 
-The [`setLabelAngle`](../api/js/ejcirculargauge#methods:setlabelangle) method is used to set angle of label.
+The [`setLabelAngle`](../api/ejcirculargauge#methods:setlabelangle) method is used to set angle of label.
 
 {% highlight html %}
 
@@ -768,7 +768,7 @@ The [`setLabelAngle`](../api/js/ejcirculargauge#methods:setlabelangle) method is
 
 ### Setting Label Distance From Scale
 
-The [`setLabelDistanceFromScale`](../api/js/ejcirculargauge#methods:setlabeldistancefromscale) method is used to set the distance value from scale for label.
+The [`setLabelDistanceFromScale`](../api/ejcirculargauge#methods:setlabeldistancefromscale) method is used to set the distance value from scale for label.
 
 {% highlight html %}
 
@@ -784,7 +784,7 @@ The [`setLabelDistanceFromScale`](../api/js/ejcirculargauge#methods:setlabeldist
 
 ### Setting Label Placement
 
-The [`setLabelPlacement`](../api/js/ejcirculargauge#methods:setlabelplacement) method is used to set placement of label.
+The [`setLabelPlacement`](../api/ejcirculargauge#methods:setlabelplacement) method is used to set placement of label.
 
 {% highlight html %}
 
@@ -800,7 +800,7 @@ The [`setLabelPlacement`](../api/js/ejcirculargauge#methods:setlabelplacement) m
 
 ### Setting Label Style
 
-The [`setLabelStyle`](../api/js/ejcirculargauge#methods:setlabelstyle) method is used to set style of label.
+The [`setLabelStyle`](../api/ejcirculargauge#methods:setlabelstyle) method is used to set style of label.
 
 {% highlight html %}
 
@@ -816,7 +816,7 @@ The [`setLabelStyle`](../api/js/ejcirculargauge#methods:setlabelstyle) method is
 
 ### Setting Major Interval Value
 
-The [`setMajorIntervalValue`](../api/js/ejcirculargauge#methods:setmajorintervalvalue) method is used to set major interval value of CircularGauge.
+The [`setMajorIntervalValue`](../api/ejcirculargauge#methods:setmajorintervalvalue) method is used to set major interval value of CircularGauge.
 
 {% highlight html %}
 
@@ -832,7 +832,7 @@ The [`setMajorIntervalValue`](../api/js/ejcirculargauge#methods:setmajorinterval
 
 ### Setting Maker Distance From Scale
 
-The [`setMarkerDistanceFromScale`](../api/js/ejcirculargauge#methods:setmarkerdistancefromscale) method is used to set distance from scale value of marker.
+The [`setMarkerDistanceFromScale`](../api/ejcirculargauge#methods:setmarkerdistancefromscale) method is used to set distance from scale value of marker.
 
 {% highlight html %}
 
@@ -848,7 +848,7 @@ The [`setMarkerDistanceFromScale`](../api/js/ejcirculargauge#methods:setmarkerdi
 
 ### Setting Maker Style
 
-The [`setMarkerStyle`](../api/js/ejcirculargauge#methods:setmarkerstyle) method is used to set distance from scale value of marker.
+The [`setMarkerStyle`](../api/ejcirculargauge#methods:setmarkerstyle) method is used to set distance from scale value of marker.
 
 {% highlight html %}
 
@@ -864,7 +864,7 @@ The [`setMarkerStyle`](../api/js/ejcirculargauge#methods:setmarkerstyle) method 
 
 ### Setting Maximum Value
 
-The [`setMaximumValue`](../api/js/ejcirculargauge#methods:setmaximumvalue) method is used to set maximum value of CircularGauge.
+The [`setMaximumValue`](../api/ejcirculargauge#methods:setmaximumvalue) method is used to set maximum value of CircularGauge.
 
 {% highlight html %}
 
@@ -880,7 +880,7 @@ The [`setMaximumValue`](../api/js/ejcirculargauge#methods:setmaximumvalue) metho
 
 ### Setting Minimum Value
 
-The [`setMinimumValue`](../api/js/ejcirculargauge#methods:setminimumvalue) method is used to set minimum value of CircularGauge.
+The [`setMinimumValue`](../api/ejcirculargauge#methods:setminimumvalue) method is used to set minimum value of CircularGauge.
 
 {% highlight html %}
 
@@ -896,7 +896,7 @@ The [`setMinimumValue`](../api/js/ejcirculargauge#methods:setminimumvalue) metho
 
 ### Setting Minor Interval Value
 
-The [`setMinorIntervalValue`](../api/js/ejcirculargauge#methods:setminorintervalvalue) method is used to set minor interval value of CircularGauge.
+The [`setMinorIntervalValue`](../api/ejcirculargauge#methods:setminorintervalvalue) method is used to set minor interval value of CircularGauge.
 
 {% highlight html %}
 
@@ -912,7 +912,7 @@ The [`setMinorIntervalValue`](../api/js/ejcirculargauge#methods:setminorinterval
 
 ### Setting Needle Style
 
-The [`setNeedleStyle`](../api/js/ejcirculargauge#methods:setneedlestyle) method is used to set style of needle.
+The [`setNeedleStyle`](../api/ejcirculargauge#methods:setneedlestyle) method is used to set style of needle.
 
 {% highlight html %}
 
@@ -928,7 +928,7 @@ The [`setNeedleStyle`](../api/js/ejcirculargauge#methods:setneedlestyle) method 
 
 ### Setting Pointer Cap Border Width
 
-The [`setPointerCapBorderWidth`](../api/js/ejcirculargauge#methods:setpointercapborderwidth) method is used to set border width of pointer cap.
+The [`setPointerCapBorderWidth`](../api/ejcirculargauge#methods:setpointercapborderwidth) method is used to set border width of pointer cap.
 
 {% highlight html %}
 
@@ -944,7 +944,7 @@ The [`setPointerCapBorderWidth`](../api/js/ejcirculargauge#methods:setpointercap
 
 ### Setting Pointer Cap Radius
 
-The [`setPointerCapRadius`](../api/js/ejcirculargauge#methods:setpointercapradius) method is used to set radius of pointer cap.
+The [`setPointerCapRadius`](../api/ejcirculargauge#methods:setpointercapradius) method is used to set radius of pointer cap.
 
 {% highlight html %}
 
@@ -960,7 +960,7 @@ The [`setPointerCapRadius`](../api/js/ejcirculargauge#methods:setpointercapradiu
 
 ### Setting Pointer Length
 
-The [`setPointerLength`](../api/js/ejcirculargauge#methods:setpointerlength) method is used to set pointer length.
+The [`setPointerLength`](../api/ejcirculargauge#methods:setpointerlength) method is used to set pointer length.
 
 {% highlight html %}
 
@@ -976,7 +976,7 @@ The [`setPointerLength`](../api/js/ejcirculargauge#methods:setpointerlength) met
 
 ### Setting Pointer Needle Type
 
-The [`setPointerNeedleType`](../api/js/ejcirculargauge#methods:setpointerneedletype) method is used to set needle type of pointer.
+The [`setPointerNeedleType`](../api/ejcirculargauge#methods:setpointerneedletype) method is used to set needle type of pointer.
 
 {% highlight html %}
 
@@ -992,7 +992,7 @@ The [`setPointerNeedleType`](../api/js/ejcirculargauge#methods:setpointerneedlet
 
 ### Setting Pointer Placement
 
-The [`setPointerPlacement`](../api/js/ejcirculargauge#methods:setpointerplacement) method is used to set placement of pointer.
+The [`setPointerPlacement`](../api/ejcirculargauge#methods:setpointerplacement) method is used to set placement of pointer.
 
 {% highlight html %}
 
@@ -1008,7 +1008,7 @@ The [`setPointerPlacement`](../api/js/ejcirculargauge#methods:setpointerplacemen
 
 ### Setting Pointer Value
 
-The [`setPointerValue`](../api/js/ejcirculargauge#methods:setpointervalue) method is used to set pointer value.
+The [`setPointerValue`](../api/ejcirculargauge#methods:setpointervalue) method is used to set pointer value.
 
 {% highlight html %}
 
@@ -1024,7 +1024,7 @@ The [`setPointerValue`](../api/js/ejcirculargauge#methods:setpointervalue) metho
 
 ### Setting Pointer Value
 
-The [`setPointerWidth`](../api/js/ejcirculargauge#methods:setpointerwidth) method is used to set pointer width.
+The [`setPointerWidth`](../api/ejcirculargauge#methods:setpointerwidth) method is used to set pointer width.
 
 {% highlight html %}
 
@@ -1040,7 +1040,7 @@ The [`setPointerWidth`](../api/js/ejcirculargauge#methods:setpointerwidth) metho
 
 ### Setting Range Border Width
 
-The [`setRangeBorderWidth`](../api/js/ejcirculargauge#methods:setrangeborderwidth) method is used to set border width of range.
+The [`setRangeBorderWidth`](../api/ejcirculargauge#methods:setrangeborderwidth) method is used to set border width of range.
 
 {% highlight html %}
 
@@ -1056,7 +1056,7 @@ The [`setRangeBorderWidth`](../api/js/ejcirculargauge#methods:setrangeborderwidt
 
 ### Setting Range Distance From Scale
 
-The [`setRangeDistanceFromScale`](../api/js/ejcirculargauge#methods:setrangedistancefromscale) method is used to set range distance from scale.
+The [`setRangeDistanceFromScale`](../api/ejcirculargauge#methods:setrangedistancefromscale) method is used to set range distance from scale.
 
 {% highlight html %}
 
@@ -1072,7 +1072,7 @@ The [`setRangeDistanceFromScale`](../api/js/ejcirculargauge#methods:setrangedist
 
 ### Setting Range End Value
 
-The [`setRangeEndValue`](../api/js/ejcirculargauge#methods:setrangeendvalue) method is used to set end value of range.
+The [`setRangeEndValue`](../api/ejcirculargauge#methods:setrangeendvalue) method is used to set end value of range.
 
 {% highlight html %}
 
@@ -1088,7 +1088,7 @@ The [`setRangeEndValue`](../api/js/ejcirculargauge#methods:setrangeendvalue) met
 
 ### Setting Range Position
 
-The [`setRangePosition`](../api/js/ejcirculargauge#methods:setrangeposition) method is used to set range position.
+The [`setRangePosition`](../api/ejcirculargauge#methods:setrangeposition) method is used to set range position.
 
 {% highlight html %}
 
@@ -1104,7 +1104,7 @@ The [`setRangePosition`](../api/js/ejcirculargauge#methods:setrangeposition) met
 
 ### Setting Range Size
 
-The [`setRangeSize`](../api/js/ejcirculargauge#methods:setrangesize) method is used to set range size.
+The [`setRangeSize`](../api/ejcirculargauge#methods:setrangesize) method is used to set range size.
 
 {% highlight html %}
 
@@ -1120,7 +1120,7 @@ The [`setRangeSize`](../api/js/ejcirculargauge#methods:setrangesize) method is u
 
 ### Setting Range Start Value
 
-The [`setRangeStartValue`](../api/js/ejcirculargauge#methods:setrangestartvalue) method is used to set range start value.
+The [`setRangeStartValue`](../api/ejcirculargauge#methods:setrangestartvalue) method is used to set range start value.
 
 {% highlight html %}
 
@@ -1136,7 +1136,7 @@ The [`setRangeStartValue`](../api/js/ejcirculargauge#methods:setrangestartvalue)
 
 ### Setting Scale Bar Size
 
-The [`setScaleBarSize`](../api/js/ejcirculargauge#methods:setscalebarsize) method is used to set scale bar size.
+The [`setScaleBarSize`](../api/ejcirculargauge#methods:setscalebarsize) method is used to set scale bar size.
 
 {% highlight html %}
 
@@ -1152,7 +1152,7 @@ The [`setScaleBarSize`](../api/js/ejcirculargauge#methods:setscalebarsize) metho
 
 ### Setting Scale Border Width
 
-The [`setScaleBorderWidth`](../api/js/ejcirculargauge#methods:setscaleborderwidth) method is used to set border width of scale.
+The [`setScaleBorderWidth`](../api/ejcirculargauge#methods:setscaleborderwidth) method is used to set border width of scale.
 
 {% highlight html %}
 
@@ -1168,7 +1168,7 @@ The [`setScaleBorderWidth`](../api/js/ejcirculargauge#methods:setscaleborderwidt
 
 ### Setting Scale Direction
 
-The [`setScaleDirection`](../api/js/ejcirculargauge#methods:setscaledirection) method is used to set scale direction.
+The [`setScaleDirection`](../api/ejcirculargauge#methods:setscaledirection) method is used to set scale direction.
 
 {% highlight html %}
 
@@ -1184,7 +1184,7 @@ The [`setScaleDirection`](../api/js/ejcirculargauge#methods:setscaledirection) m
 
 ### Setting Scale Radius
 
-The [`setScaleRadius`](../api/js/ejcirculargauge#methods:setscaleradius) method is used to set scale radius.
+The [`setScaleRadius`](../api/ejcirculargauge#methods:setscaleradius) method is used to set scale radius.
 
 {% highlight html %}
 
@@ -1200,7 +1200,7 @@ The [`setScaleRadius`](../api/js/ejcirculargauge#methods:setscaleradius) method 
 
 ### Setting Start Angle
 
-The [`setStartAngle`](../api/js/ejcirculargauge#methods:setstartangle) method is used to set start angle.
+The [`setStartAngle`](../api/ejcirculargauge#methods:setstartangle) method is used to set start angle.
 
 {% highlight html %}
 
@@ -1216,7 +1216,7 @@ The [`setStartAngle`](../api/js/ejcirculargauge#methods:setstartangle) method is
 
 ### Setting Sub Gauge Location
 
-The [`setSubGaugeLocation`](../api/js/ejcirculargauge#methods:setsubgaugelocation) method is used to set location of subGauge.
+The [`setSubGaugeLocation`](../api/ejcirculargauge#methods:setsubgaugelocation) method is used to set location of subGauge.
 
 {% highlight html %}
 
@@ -1234,7 +1234,7 @@ The [`setSubGaugeLocation`](../api/js/ejcirculargauge#methods:setsubgaugelocatio
 
 ### Setting Sweep Angle
 
-The [`setSweepAngle`](../api/js/ejcirculargauge#methods:setsweepangle) method is used to set sweep angle.
+The [`setSweepAngle`](../api/ejcirculargauge#methods:setsweepangle) method is used to set sweep angle.
 
 {% highlight html %}
 
@@ -1250,7 +1250,7 @@ The [`setSweepAngle`](../api/js/ejcirculargauge#methods:setsweepangle) method is
 
 ### Setting Tick Angle
 
-The [`setTickAngle`](../api/js/ejcirculargauge#methods:settickangle) method is used to set tick angle.
+The [`setTickAngle`](../api/ejcirculargauge#methods:settickangle) method is used to set tick angle.
 
 {% highlight html %}
 
@@ -1266,7 +1266,7 @@ The [`setTickAngle`](../api/js/ejcirculargauge#methods:settickangle) method is u
 
 ### Setting Tick Distance From Scale
 
-The [`setTickDistanceFromScale`](../api/js/ejcirculargauge#methods:settickdistancefromscale) method is used to set tick distance from scale value.
+The [`setTickDistanceFromScale`](../api/ejcirculargauge#methods:settickdistancefromscale) method is used to set tick distance from scale value.
 
 {% highlight html %}
 
@@ -1282,7 +1282,7 @@ The [`setTickDistanceFromScale`](../api/js/ejcirculargauge#methods:settickdistan
 
 ### Setting Tick Height
 
-The [`setTickHeight`](../api/js/ejcirculargauge#methods:settickheight) method is used to set tick height.
+The [`setTickHeight`](../api/ejcirculargauge#methods:settickheight) method is used to set tick height.
 
 {% highlight html %}
 
@@ -1298,7 +1298,7 @@ The [`setTickHeight`](../api/js/ejcirculargauge#methods:settickheight) method is
 
 ### Setting Tick Placement
 
-The [`setTickPlacement`](../api/js/ejcirculargauge#methods:settickplacement) method is used to set tick placement.
+The [`setTickPlacement`](../api/ejcirculargauge#methods:settickplacement) method is used to set tick placement.
 
 {% highlight html %}
 
@@ -1314,7 +1314,7 @@ The [`setTickPlacement`](../api/js/ejcirculargauge#methods:settickplacement) met
 
 ### Setting Tick Style
 
-The [`setTickStyle`](../api/js/ejcirculargauge#methods:settickstyle) method is used to set tick style.
+The [`setTickStyle`](../api/ejcirculargauge#methods:settickstyle) method is used to set tick style.
 
 {% highlight html %}
 
@@ -1330,7 +1330,7 @@ The [`setTickStyle`](../api/js/ejcirculargauge#methods:settickstyle) method is u
 
 ### Setting Tick Width
 
-The [`setTickWidth`](../api/js/ejcirculargauge#methods:settickwidth) method is used to set tick width.
+The [`setTickWidth`](../api/ejcirculargauge#methods:settickwidth) method is used to set tick width.
 
 {% highlight html %}
 
@@ -1349,7 +1349,7 @@ The [`setTickWidth`](../api/js/ejcirculargauge#methods:settickwidth) method is u
 
 ### Draw Custom Label
 
-The [`drawCustomLabel`](../api/js/ejcirculargauge#events:drawcustomlabel) event is triggered while custom labels are drawn on the gauge. 
+The [`drawCustomLabel`](../api/ejcirculargauge#events:drawcustomlabel) event is triggered while custom labels are drawn on the gauge. 
 
 {% highlight javascript %}
 
@@ -1367,7 +1367,7 @@ $("#CircularGauge1").ejCircularGauge({
 
 ### Draw Indicators
 
-The [`drawIndicators`](../api/js/ejcirculargauge#events:drawindicators) event is triggered while indicators are being drawn on the gauge. 
+The [`drawIndicators`](../api/ejcirculargauge#events:drawindicators) event is triggered while indicators are being drawn on the gauge. 
 
 {% highlight javascript %}
 
@@ -1385,7 +1385,7 @@ $("#CircularGauge1").ejCircularGauge({
 
 ### Draw Labels
 
-The [`drawLabels`](../api/js/ejcirculargauge#events:drawlabels) event is triggered while labels are being drawn on the gauge. 
+The [`drawLabels`](../api/ejcirculargauge#events:drawlabels) event is triggered while labels are being drawn on the gauge. 
 
 {% highlight javascript %}
 
@@ -1403,7 +1403,7 @@ $("#CircularGauge1").ejCircularGauge({
 
 ### Draw Pointer Cap
 
-The [`drawPointerCap`](../api/js/ejcirculargauge#events:drawpointercap) event is triggered while pointer cap is being drawn on the gauge. 
+The [`drawPointerCap`](../api/ejcirculargauge#events:drawpointercap) event is triggered while pointer cap is being drawn on the gauge. 
 
 {% highlight javascript %}
 
@@ -1421,7 +1421,7 @@ $("#CircularGauge1").ejCircularGauge({
 
 ### Draw Pointers
 
-The [`drawPointers`](../api/js/ejcirculargauge#events:drawpointers) event is triggered while pointer cap is being drawn on the gauge. 
+The [`drawPointers`](../api/ejcirculargauge#events:drawpointers) event is triggered while pointer cap is being drawn on the gauge. 
 
 {% highlight javascript %}
 
@@ -1439,7 +1439,7 @@ $("#CircularGauge1").ejCircularGauge({
 
 ### Draw Range
 
-The [`drawRange`](../api/js/ejcirculargauge#events:drawrange) event is triggered when ranges starts to be drawn on the gauge. 
+The [`drawRange`](../api/ejcirculargauge#events:drawrange) event is triggered when ranges starts to be drawn on the gauge. 
 
 {% highlight javascript %}
 
@@ -1457,7 +1457,7 @@ $("#CircularGauge1").ejCircularGauge({
 
 ### Draw Ticks
 
-The [`drawTicks`](../api/js/ejcirculargauge#events:drawticks) event is triggered when ticks are being drawn on the gauge. 
+The [`drawTicks`](../api/ejcirculargauge#events:drawticks) event is triggered when ticks are being drawn on the gauge. 
 
 {% highlight javascript %}
 
@@ -1475,7 +1475,7 @@ $("#CircularGauge1").ejCircularGauge({
 
 ### Load
 
-The [`load`](../api/js/ejcirculargauge#events:load) event is triggered when gauge starts to load. 
+The [`load`](../api/ejcirculargauge#events:load) event is triggered when gauge starts to load. 
 
 {% highlight javascript %}
 
@@ -1493,7 +1493,7 @@ $("#CircularGauge1").ejCircularGauge({
 
 ### Mouse Click
 
-The [`mouseClick`](../api/js/ejcirculargauge#events:mouseclick) event is triggered when left mouse button is clicked. 
+The [`mouseClick`](../api/ejcirculargauge#events:mouseclick) event is triggered when left mouse button is clicked. 
 
 {% highlight javascript %}
 
@@ -1511,7 +1511,7 @@ $("#CircularGauge1").ejCircularGauge({
 
 ### Mouse Click Move
 
-The [`mouseClickMove`](../api/js/ejcirculargauge#events:mouseclickmove) event is triggered when clicking and dragging the mouse pointer over the gauge pointer. 
+The [`mouseClickMove`](../api/ejcirculargauge#events:mouseclickmove) event is triggered when clicking and dragging the mouse pointer over the gauge pointer. 
 
 {% highlight javascript %}
 
@@ -1529,7 +1529,7 @@ $("#CircularGauge1").ejCircularGauge({
 
 ### Mouse Click Up
 
-The [`mouseClickUp`](../api/js/ejcirculargauge#events:mouseclickup) event is triggered when clicking and dragging the mouse pointer over the gauge pointer. 
+The [`mouseClickUp`](../api/ejcirculargauge#events:mouseclickup) event is triggered when clicking and dragging the mouse pointer over the gauge pointer. 
 
 {% highlight javascript %}
 
@@ -1547,7 +1547,7 @@ $("#CircularGauge1").ejCircularGauge({
 
 ### Render Complete
 
-The [`renderComplete`](../api/js/ejcirculargauge#events:rendercomplete) event is triggered when rendering of the gauge is completed.
+The [`renderComplete`](../api/ejcirculargauge#events:rendercomplete) event is triggered when rendering of the gauge is completed.
 
 {% highlight javascript %}
 
@@ -1565,7 +1565,7 @@ $("#CircularGauge1").ejCircularGauge({
 
 ### Range Mouse Move
 
-The [`rangeMouseMove`](../api/js/ejcirculargauge#events:rangemousemove) event is triggered when moving mouse on ranges.
+The [`rangeMouseMove`](../api/ejcirculargauge#events:rangemousemove) event is triggered when moving mouse on ranges.
 
 {% highlight javascript %}
 
