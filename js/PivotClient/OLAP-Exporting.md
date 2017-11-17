@@ -108,6 +108,28 @@ For WCF service, the below service method needs to be added to perform exporting
 
 {% endhighlight %}
 
+### File format selection
+
+I> This option is applicable only for PivotClient when exporting to Excel document.
+
+You can set the option for exporting the control to Excel document either in *.xls* or *.xlsx* format, using `fileFormat` property inside the `beforeExport` event.
+
+N> By default excel document will be exported to ".xls" format using PivotEngine export.
+
+{% highlight javascript %}
+
+        $("#PivotClient1").ejPivotClient({
+            url: "/OlapService",
+            beforeExport:"Export"
+        });
+        
+        function Export(args) {
+            args.exportMode = ej.PivotClient.ExportMode.PivotEngine;
+            args.fileFormat = ".xlsx"; //you can set the excel sheet format here
+        }
+        
+ {% endhighlight %}
+
 ### Customize the export document name
 
 The document name could be customized inside the method in WebAPI Controller. Following code sample illustrates the same.
@@ -138,6 +160,32 @@ For customizing name in WCF Service, below code snippet is used.
     }
 
 {% endhighlight %}
+
+## PivotChart - Exporting Format
+
+I> This option is applicable only for PivotChart in PivotClient specifically when exported to Excel document.
+
+You can set an option to export PivotChart to an Excel document, either as image or PivotChart format itself by setting the boolean property `exportChartAsImage`, inside the `beforeExport` event.
+
+N> By default PivotChart will be exported as image format to Excel document.
+
+{% highlight javascript %}
+
+        $("#PivotClient1").ejPivotClient({
+            //..         
+            beforeExport:"Export",
+            clientExportMode: ej.PivotClient.ClientExportMode.ChartOnly
+        });
+        
+        function Exporting(args) {
+            args.exportChartAsImage = false; //You can set the chart format here
+        }
+        
+ {% endhighlight %}
+
+The below screenshot shows the control exported to Excel document showing its own format (Pivoting Chart).
+
+![](Export_images/Export_ExcelChartClient.png)
 
 ## Exporting Customization
 
@@ -206,7 +254,7 @@ void pivotClient_PDFExport(object sender, Syncfusion.Pdf.PdfDocument pdfDoc)
 
 void pivotClient_AddPDFHeaderFooter(object sender, Syncfusion.Pdf.PdfDocument pdfDoc)
 {
-    //You can add header/footer information to the pdf document.
+    //You can add header/footer information to the PDF document.
 }
 
 void pivotClient_WordExport(object sender, Syncfusion.DocIO.DLS.WordDocument document)
@@ -241,7 +289,7 @@ void olapClientHelper_PDFExport(object sender, Syncfusion.Pdf.PdfDocument pdfDoc
 
 void olapClientHelper_AddPDFHeaderFooter(object sender, Syncfusion.Pdf.PdfDocument pdfDoc)
 {
-    //You can add header/footer information to the pdf document.
+    //You can add header/footer information to the PDF document.
 }
 
 void olapClientHelper_WordExport(object sender, Syncfusion.DocIO.DLS.WordDocument document)
