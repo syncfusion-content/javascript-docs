@@ -71,7 +71,7 @@ On executing the above code, sample renders a default **Circular Gauge** with de
 
 ## Set Height and Width values
 
-Pointers have different height and range. You can set the [`height`](../api/js/ejcirculargauge#members:height) and [`width`](../api/js/ejcirculargauge#members:width) of the gauge.
+Pointers have different height and range. You can set the [`height`](../api/ejcirculargauge#members:height) and [`width`](../api/ejcirculargauge#members:width) of the gauge.
 
 {% highlight javascript %}
 
@@ -91,7 +91,7 @@ The following screenshot displays a **Gauge** in which height and width are set.
 
 ## Set Background Color
 
-You can draw the speedometer with dark [`backgroundColor`](../api/js/ejcirculargauge#members:backgroundcolor) and to vary the speed of the pointer, set the [`readOnly`](../api/js/ejcirculargauge#members:readonly) option as **False** for user interaction. 
+You can draw the speedometer with dark [`backgroundColor`](../api/ejcirculargauge#members:backgroundcolor) and to vary the speed of the pointer, set the [`readOnly`](../api/ejcirculargauge#members:readonly) option as **False** for user interaction. 
 
 {% highlight javascript %}
 
@@ -112,13 +112,13 @@ The above code example renders a **Gauge** as shown in the following screen shot
 
 ## Provide scale values
 
-* The [`scales`](../api/js/ejcirculargauge#members:scales) values specifies the pointers, ticks, labels, indicators and ranges of **Circular Gauge**.
+* The [`scales`](../api/ejcirculargauge#members:scales) values specifies the pointers, ticks, labels, indicators and ranges of **Circular Gauge**.
 
-* You can customize the [`pointerCap`](../api/js/ejcirculargauge#members:scales-pointercap) using the following options- Cap [`radius`](../api/js/ejcirculargauge#members:scales-pointercap-radius), Cap [`borderColor`](../api/js/ejcirculargauge#members:scales-pointercap-bordercolor), cap [`backgroundColor`](../api/js/ejcirculargauge#members:scales-pointercap-backgroundcolor), pointer cap [`borderWidth`](../api/js/ejcirculargauge#members:scales-pointercap-borderwidth). 
+* You can customize the [`pointerCap`](../api/ejcirculargauge#members:scales-pointercap) using the following options- Cap [`radius`](../api/ejcirculargauge#members:scales-pointercap-radius), Cap [`borderColor`](../api/ejcirculargauge#members:scales-pointercap-bordercolor), cap [`backgroundColor`](../api/ejcirculargauge#members:scales-pointercap-backgroundcolor), pointer cap [`borderWidth`](../api/ejcirculargauge#members:scales-pointercap-borderwidth). 
 
-* Set the [`maximum`](../api/js/ejcirculargauge#members:scales-maximum) speed limit in the **Gauge** as 200KmpH.
+* Set the [`maximum`](../api/ejcirculargauge#members:scales-maximum) speed limit in the **Gauge** as 200KmpH.
 
-* Major Ticks and Minor Ticks have the [`majorIntervalValue`](../api/js/ejcirculargauge#members:scales-majorintervalvalue) 20 and [`minorIntervalValue`](../api/js/ejcirculargauge#members:scales-minorintervalvalue) 5 respectively. The [`showRanges`](../api/js/ejcirculargauge#members:scales-showranges) and [`showIndicators`](../api/js/ejcirculargauge#members:scales-showindicators) are used to display the ranges and indicators in their respective positions.
+* Major Ticks and Minor Ticks have the [`majorIntervalValue`](../api/ejcirculargauge#members:scales-majorintervalvalue) 20 and [`minorIntervalValue`](../api/ejcirculargauge#members:scales-minorintervalvalue) 5 respectively. The [`showRanges`](../api/ejcirculargauge#members:scales-showranges) and [`showIndicators`](../api/ejcirculargauge#members:scales-showindicators) are used to display the ranges and indicators in their respective positions.
 
 {% highlight javascript %}
 
@@ -159,7 +159,7 @@ On executing the above code, sample renders a **Circular Gauge** with customized
 
 ## Add Label Customization
 
-To display the values in the **Gauge,** scale [`labels`](../api/js/ejcirculargauge#members:scales-labels) are used. You can customize the label [`color`](../api/js/ejcirculargauge#members:scales-labels-color).  
+To display the values in the **Gauge,** scale [`labels`](../api/ejcirculargauge#members:scales-labels) are used. You can customize the label [`color`](../api/ejcirculargauge#members:scales-labels-color).  
 
 {% highlight javascript %}
 
@@ -193,7 +193,7 @@ On executing the above code, sample renders a default **Circular Gauge** with cu
 
 ## Add pointer data
 
-You can use three [`pointers`](../api/js/ejcirculargauge#members:scales-pointers) that denote kilometer value, rotation per minute value and torque value.The torque value pointer should not be similar to other two pointers. Set the torque pointer as marker pointer. You can set other attributes for pointer such as [`value`](../api/js/ejcirculargauge#members:scales-pointers-value), [`showBackNeedle`](../api/js/ejcirculargauge#members:scales-pointers-showbackneedle), [`type`](../api/js/ejcirculargauge#members:scales-pointers-type), [`markerType`](../api/js/ejcirculargauge#members:scales-pointers-markertype), [`needleType`](../api/js/ejcirculargauge#members:scales-pointers-needletype), [`backgroundColor`](../api/js/ejcirculargauge#members:scales-pointers-backgroundcolor), [`border`](../api/js/ejcirculargauge#members:scales-pointers-border) [`color`](../api/js/ejcirculargauge#members:scales-pointers-border-color), [`length`](../api/js/ejcirculargauge#members:scales-pointers-length), [`width`](../api/js/ejcirculargauge#members:scales-pointers-width), [`radius`](../api/js/ejcirculargauge#members:scales-pointers-radius) and [`distanceFromScale`](../api/js/ejcirculargauge#members:scales-pointers-distancefromscale).
+You can use three [`pointers`](../api/ejcirculargauge#members:scales-pointers) that denote kilometer value, rotation per minute value and torque value.The torque value pointer should not be similar to other two pointers. Set the torque pointer as marker pointer. You can set other attributes for pointer such as [`value`](../api/ejcirculargauge#members:scales-pointers-value), [`showBackNeedle`](../api/ejcirculargauge#members:scales-pointers-showbackneedle), [`type`](../api/ejcirculargauge#members:scales-pointers-type), [`markerType`](../api/ejcirculargauge#members:scales-pointers-markertype), [`needleType`](../api/ejcirculargauge#members:scales-pointers-needletype), [`backgroundColor`](../api/ejcirculargauge#members:scales-pointers-backgroundcolor), [`border`](../api/ejcirculargauge#members:scales-pointers-border) [`color`](../api/ejcirculargauge#members:scales-pointers-border-color), [`length`](../api/ejcirculargauge#members:scales-pointers-length), [`width`](../api/ejcirculargauge#members:scales-pointers-width), [`radius`](../api/ejcirculargauge#members:scales-pointers-radius) and [`distanceFromScale`](../api/ejcirculargauge#members:scales-pointers-distancefromscale).
 
 {% highlight javascript %}
 
@@ -259,7 +259,7 @@ On executing the above code, sample renders a customized **Circular Gauge** as f
 
 ## Add Tick Details
 
-You can display the tick value with customization as given in the following code example. You can set [`width`](../api/js/ejcirculargauge#members:scales-ticks-width) and [`height`](../api/js/ejcirculargauge#members:scales-ticks-height) of the Major ticks greater than the Minor [`ticks`](../api/js/ejcirculargauge#members:scales-ticks). You can set dark background for tick [`color`](../api/js/ejcirculargauge#members:scales-ticks-color) to have a better visibility. You can specify the tick [`type`](../api/js/ejcirculargauge#members:scales-ticks-type) either major or minor type tick and [`distanceFromScale`](../api/js/ejcirculargauge#members:scales-ticks-distancefromscale) values.
+You can display the tick value with customization as given in the following code example. You can set [`width`](../api/ejcirculargauge#members:scales-ticks-width) and [`height`](../api/ejcirculargauge#members:scales-ticks-height) of the Major ticks greater than the Minor [`ticks`](../api/ejcirculargauge#members:scales-ticks). You can set dark background for tick [`color`](../api/ejcirculargauge#members:scales-ticks-color) to have a better visibility. You can specify the tick [`type`](../api/ejcirculargauge#members:scales-ticks-type) either major or minor type tick and [`distanceFromScale`](../api/ejcirculargauge#members:scales-ticks-distancefromscale) values.
 
 {% highlight javascript %}
 
@@ -303,7 +303,7 @@ On executing the above code, sample renders a **Circular Gauge** with customized
 
 ## Add Range Values
 
-Ranges denote the property of scale value in the speedometer. The color values of the [`ranges`](../api/js/ejcirculargauge#members:scales-ranges) specify the speed variation. Set [`showRanges`](../api/js/ejcirculargauge#members:scales-showranges) property to **“True”** to show the ranges in the **Circular Gauge**. Select safe zone for low speed, caution zone for moderate speed and high zone for high speed.You can customize the range with the properties such as [`startValue`](../api/js/ejcirculargauge#members:scales-ranges-startvalue), [`endValue`](../api/js/ejcirculargauge#members:scales-ranges-endvalue), [`startWidth`](../api/js/ejcirculargauge#members:scales-ranges-startwidth), [`endWidth`](../api/js/ejcirculargauge#members:scales-ranges-endwidth), [`backgroundColor`](../api/js/ejcirculargauge#members:scales-ranges-backgroundcolor), [`border`](../api/js/ejcirculargauge#members:scales-ranges-border) [`color`](../api/js/ejcirculargauge#members:scales-ranges-border-color), [`distanceFromScale`](../api/js/ejcirculargauge#members:scales-ranges-distancefromscale) etc.,
+Ranges denote the property of scale value in the speedometer. The color values of the [`ranges`](../api/ejcirculargauge#members:scales-ranges) specify the speed variation. Set [`showRanges`](../api/ejcirculargauge#members:scales-showranges) property to **“True”** to show the ranges in the **Circular Gauge**. Select safe zone for low speed, caution zone for moderate speed and high zone for high speed.You can customize the range with the properties such as [`startValue`](../api/ejcirculargauge#members:scales-ranges-startvalue), [`endValue`](../api/ejcirculargauge#members:scales-ranges-endvalue), [`startWidth`](../api/ejcirculargauge#members:scales-ranges-startwidth), [`endWidth`](../api/ejcirculargauge#members:scales-ranges-endwidth), [`backgroundColor`](../api/ejcirculargauge#members:scales-ranges-backgroundcolor), [`border`](../api/ejcirculargauge#members:scales-ranges-border) [`color`](../api/ejcirculargauge#members:scales-ranges-border-color), [`distanceFromScale`](../api/ejcirculargauge#members:scales-ranges-distancefromscale) etc.,
 
 {% highlight javascript %}
 
@@ -359,7 +359,7 @@ On executing the above code, sample renders a **Circular Gauge** with customized
 
 ## Add Indicator Details
 
-Indicators denote whether the pointer values are placed in their respective zones. You can position the [`indicators`](../api/js/ejcirculargauge#members:scales-indicators) on the respective range value for the required changes. You can set the location of the indicator using [`position`](../api/js/ejcirculargauge#members:scales-indicators-position) property.You can also specify [`height`](../api/js/ejcirculargauge#members:scales-indicators-height), [`width`](../api/js/ejcirculargauge#members:scales-indicators-width) and [`type`](../api/js/ejcirculargauge#members:scales-indicators-type) for indicators. The [`stateRanges`](../api/js/ejcirculargauge#members:scales-indicators-stateranges) property defines how the indicator should behave when the pointer is in certain values. You can customize state ranges with properties like [`endValue`](../api/js/ejcirculargauge#members:scales-indicators-stateranges-endvalue), [`startValue`](../api/js/ejcirculargauge#members:scales-indicators-stateranges-startvalue), [`backgroundColor`](../api/js/ejcirculargauge#members:scales-indicators-stateranges-backgroundcolor), [`borderColor`](../api/js/ejcirculargauge#members:scales-indicators-stateranges-bordercolor), [`text`](../api/js/ejcirculargauge#members:scales-indicators-stateranges-text), [`textColor`](../api/js/ejcirculargauge#members:scales-indicators-stateranges-textcolor), etc. 
+Indicators denote whether the pointer values are placed in their respective zones. You can position the [`indicators`](../api/ejcirculargauge#members:scales-indicators) on the respective range value for the required changes. You can set the location of the indicator using [`position`](../api/ejcirculargauge#members:scales-indicators-position) property.You can also specify [`height`](../api/ejcirculargauge#members:scales-indicators-height), [`width`](../api/ejcirculargauge#members:scales-indicators-width) and [`type`](../api/ejcirculargauge#members:scales-indicators-type) for indicators. The [`stateRanges`](../api/ejcirculargauge#members:scales-indicators-stateranges) property defines how the indicator should behave when the pointer is in certain values. You can customize state ranges with properties like [`endValue`](../api/ejcirculargauge#members:scales-indicators-stateranges-endvalue), [`startValue`](../api/ejcirculargauge#members:scales-indicators-stateranges-startvalue), [`backgroundColor`](../api/ejcirculargauge#members:scales-indicators-stateranges-backgroundcolor), [`borderColor`](../api/ejcirculargauge#members:scales-indicators-stateranges-bordercolor), [`text`](../api/ejcirculargauge#members:scales-indicators-stateranges-text), [`textColor`](../api/ejcirculargauge#members:scales-indicators-stateranges-textcolor), etc. 
 
 {% highlight javascript %}
 
@@ -454,7 +454,7 @@ On executing the above code, sample renders a **Circular Gauge** with customized
 
 ## Add Custom Label Details
 
-You can specify the text in the **Gauge** using [`customLabels`](../api/js/ejcirculargauge#members:scales-customlabels) and you can customize it through various properties such as [`value`](../api/js/ejcirculargauge#members:scales-customlabels-value), [`position`](../api/js/ejcirculargauge#members:scales-customlabels-position), [`color`](../api/js/ejcirculargauge#members:scales-customlabels-color), [`font`](../api/js/ejcirculargauge#members:scales-customlabels-font) [`size`](../api/js/ejcirculargauge#members:scales-customlabels-font-size), [`fontFamily`](../api/js/ejcirculargauge#members:scales-customlabels-font-fontfamily) and [`fontStyle`](../api/js/ejcirculargauge#members:scales-customlabels-font-fontstyle). You can use custom texts to display the three range description.
+You can specify the text in the **Gauge** using [`customLabels`](../api/ejcirculargauge#members:scales-customlabels) and you can customize it through various properties such as [`value`](../api/ejcirculargauge#members:scales-customlabels-value), [`position`](../api/ejcirculargauge#members:scales-customlabels-position), [`color`](../api/ejcirculargauge#members:scales-customlabels-color), [`font`](../api/ejcirculargauge#members:scales-customlabels-font) [`size`](../api/ejcirculargauge#members:scales-customlabels-font-size), [`fontFamily`](../api/ejcirculargauge#members:scales-customlabels-font-fontfamily) and [`fontStyle`](../api/ejcirculargauge#members:scales-customlabels-font-fontstyle). You can use custom texts to display the three range description.
 
 {% highlight javascript %}
 

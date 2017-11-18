@@ -199,3 +199,170 @@ Yes, you can use ESRI Rest web services in url of DataManager. We have used a de
 Refer to the following link for the sample: 
 
 Playground sample : [Demo](http://jsplayground.syncfusion.com/jr2cgadj)
+
+## CRUD Operations using Stored Procedures
+
+By default, DataManager supports the CRUD (Create, Read, Update, Destroy) data operations with Syncfusion UI widgets such as Grid, ListView etc. This section explain about how to perform CRUD operations in Grid using Stored procedures 
+
+{% highlight html %}
+     
+    <div id="Grid"></div>
+     <script type="text/javascript">
+        var data = ej.DataManager({
+            url: "/Default.aspx/GetDataSource",
+            updateUrl: "/Default.aspx/Update",
+            insertUrl: "/Default.aspx/Insert",
+            removeUrl: "/Default.aspx/Remove",
+            adaptor: "UrlAdaptor"
+        });
+        $("#Grid").ejGrid({
+            dataSource: data,
+            allowPaging: true,
+            editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true },
+            toolbarSettings: { showToolbar: true, toolbarItems: [ej.Grid.ToolBarItems.Add, ej.Grid.ToolBarItems.Edit, ej.Grid.ToolBarItems.Delete, ej.Grid.ToolBarItems.Update, ej.Grid.ToolBarItems.Cancel] },
+            columns: [
+                { field:"SupplierID", headerText: "Supplier ID", isPrimaryKey: true, width: 100 },
+                { field: "CompanyName", headerText: "Company Name", width: 100 },
+                { field: "City", headerText: "City", width: 100 },
+                { field: "PostalCode", headerText: "Code", width: 100 },
+                { field: "Country", headerText: "Country", width: 100 }
+            ]
+        })
+    </script>
+
+{% endhighlight %}
+
+In the aspx page add the below code for CRUD Operations
+
+{% highlight c# %}
+
+    public partial class _Default : Page
+    {
+
+        static string cons = ConfigurationManager.ConnectionStrings["SQLConnectionString"].ConnectionString;
+        static SqlConnection con = new SqlConnection(cons);
+        protected void Page_Load(object sender, EventArgs e)
+        {
+
+        }
+        [WebMethod]
+        [ScriptMethod(ResponseFormat = ResponseFormat.Json)] // Return the JSON formatted result
+        public static object GetDataSource(int skip, int take)
+        {
+            SqlCommand getData = new SqlCommand();
+            getData.CommandText = "SP_GetData"; // Stored procedure for retrieve data from suppliers table
+            getData.CommandType = CommandType.StoredProcedure;
+            getData.Connection = con;
+            if (con.State != ConnectionState.Open)
+                con.Open();
+            DataTable sqldata = new DataTable();
+            SqlDataAdapter sqladapter = new SqlDataAdapter(getData);
+            sqladapter.Fill(sqldata);
+            DataResult result = new DataResult();
+            List<EditableCustomer> data = (from order in sqldata.AsEnumerable().Skip(skip).Take(take) // Perform skip take for on demand page load
+                                           select new EditableCustomer
+                                           {
+                                               SupplierID = order.ItemArray[0].ToString(),
+                                               CompanyName = order.ItemArray[1].ToString(),
+                                               City = order.ItemArray[5].ToString(),
+                                               PostalCode = order.ItemArray[7].ToString(),
+                                               Country = order.ItemArray[8].ToString()
+                                           }).ToList();
+
+            result.result = data;
+            result.count = sqldata.Rows.Count;
+            con.Close();
+            return result; // return value must have result, count object from DataResult class            
+        }
+        public class DataResult
+        {
+            public IEnumerable result { get; set; }
+            public int count { get; set; }
+        }
+        [WebMethod]
+        public static void Update(EditableCustomer value)
+        {
+            ExecuteToSQL("SP_Update", 0, value, "update");  // SP_Update stored procedure      
+        }
+        [WebMethod]
+        public static void Insert(EditableCustomer value)
+        {
+            ExecuteToSQL("SP_Insert", 0, value, "insert"); // SP_Insert stored procedure
+        }
+        [WebMethod]
+        public static void Remove(int key)
+        {
+            ExecuteToSQL("SP_Delete", key, null, "remove"); // SP_Delete stored procedure
+        }
+
+        public static void ExecuteToSQL(string commandText, int key, EditableCustomer customer, string requestType)
+        {
+            SqlCommand sqlCommand = new SqlCommand();
+            sqlCommand.CommandText = commandText; // Stored procedure for editing actions
+            sqlCommand.CommandType = CommandType.StoredProcedure;
+            if (requestType == "remove")
+            {
+                sqlCommand.Parameters.Add(new SqlParameter("@SupplierID", key)); // Pass parameter to SP_Remove stored procedure
+            }
+            // Pass parameter to SP_Insert and SP_Update stored procedures
+            else if (requestType == "insert" || requestType == "update")
+            {
+                sqlCommand.Parameters.Add(new SqlParameter("@SupplierID", customer.SupplierID));
+                sqlCommand.Parameters.Add(new SqlParameter("@CompanyName", customer.CompanyName));
+                sqlCommand.Parameters.Add(new SqlParameter("@City", customer.City));
+                sqlCommand.Parameters.Add(new SqlParameter("@PostalCode", customer.PostalCode));
+                sqlCommand.Parameters.Add(new SqlParameter("@Country", customer.Country));
+            }
+            sqlCommand.Connection = con;
+            if (con.State != ConnectionState.Open)
+                con.Open();
+            sqlCommand.ExecuteNonQuery();
+            con.Close();
+        }
+    }
+
+
+
+    public class EditableCustomer
+    {
+        public string SupplierID { get; set; }
+
+        public string CompanyName { get; set; }
+        
+        public string City { get; set; }
+        
+        public string PostalCode { get; set; }
+       
+        public string Country { get; set; }
+       
+    }
+
+{% endhighlight %}
+
+The output of above code will be as shown below 
+
+![](HowTo_images/Default.png) 
+
+Insert:
+
+![](HowTo_images/Add.png) 
+
+After Insertion:
+
+![](HowTo_images/Addedrow.png) 
+
+Edit:
+
+![](HowTo_images/Edit.png) 
+
+After Edit:
+
+![](HowTo_images/Editedrow.png) 
+
+Delete:
+
+![](HowTo_images/Delete.png) 
+
+After Deletion:
+
+![](HowTo_images/Deletedrow.png) 
