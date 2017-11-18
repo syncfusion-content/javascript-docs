@@ -64,7 +64,7 @@ The following output is displayed as a result of the above code example.
 
 Apart from default pager, there is an option to render a specific custom template in a grid pager. To render template in pager, set [`enableTemplates`](https://help.syncfusion.com/api/js/ejgrid#members:pagesettings-enabletemplates "enableTemplates") as true and [`template`](https://help.syncfusion.com/api/js/ejgrid#members:pagesettings-template "template") properties of [`pageSettings`](https://help.syncfusion.com/api/js/ejgrid#members:pagesettings "pageSettings").
 
-By enabling the pager [`template`](https://help.syncfusion.com/api/js/ejgrid#members:pagesettings-template "template") it prevents the display of default pager elements. You can display those with pager template by setting the [`showDefaults`](https://help.syncfusion.com/api/js/ejgrid#members:pagesettings-showdefaults "showDefaults") property of [`pageSettings`](https://help.syncfusion.com/api/js/ejgrid#members:pagesettings "pageSettings") as `false`.
+By enabling the pager [`template`](https://help.syncfusion.com/api/js/ejgrid#members:pagesettings-template "template") it prevents the display of default pager elements. You can display those with pager template by setting the [`showDefaults`](https://help.syncfusion.com/api/js/ejgrid#members:pagesettings-showdefaults "showDefaults") property of [`pageSettings`](https://help.syncfusion.com/api/js/ejgrid#members:pagesettings "pageSettings") as `true`.
 
 N> It's a standard way to enclose the [`template`](https://help.syncfusion.com/api/js/ejgrid#members:pagesettings-template "template") within the `script` tag with `type` as "text/x-jsrender".
 
