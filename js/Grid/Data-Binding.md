@@ -9,7 +9,7 @@ api: /api/js/ejgrid
 --- 
 # Data binding
 
-The Grid control uses [`ej.DataManager`](https://help.syncfusion.com/js/datamanager/overview# "ej.DataManager") which supports both RESTful JSON data services binding and local JSON array binding.  The [`dataSource`](https://help.syncfusion.com/api/js/ejgrid#members:datasource "dataSource") property can be assigned either with the instance of [`ej.DataManger`](https://help.syncfusion.com/api/js/ejdatamanager# "ej.DataManager") or JSON data array collection. It supports different kinds of data binding methods such as
+The Grid control uses [`ej.DataManager`](https://help.syncfusion.com/js/datamanager/overview# "ej.DataManager") which supports both RESTful JSON data services binding and local JSON array binding.  The [`dataSource`](https://help.syncfusion.com/api/js/ejgrid#members:datasource "dataSource") property can be assigned either with the instance of [`ej.DataManger`](https://help.syncfusion.com/api/js/ejdatamanager# "ej.DataManager") or JSON data array collection. It supports different kinds of data binding methods such as.
 
 1. Local data
 2. Remote data
@@ -72,6 +72,7 @@ The following output is displayed as a result of the above code example.
 
 
 N> 1. There is no in-built support to bind the XML data to the grid. But you can achieve this requirement with the help of [custom adaptor](https://help.syncfusion.com/js/datamanager/data-adaptors#custom-adaptor) concept. 
+
 N> 2. Refer this [Knowledge Base link](http://www.syncfusion.com/kb/3377/how-to-process-xml-data-from-server-using-datamanager-and-bound-to-grid#) for bounding XML data to grid using custom adaptor. 
 
 ## Remote Data
@@ -135,7 +136,7 @@ The following code example describes the above behavior.
 
 {% endhighlight %}
 
-{% seealso %}For further details about OData service please refer [the link](http://www.odata.org/#). {% endseealso %}
+{% seealso %}For further details about OData service please refer to [this link](http://www.odata.org/#). {% endseealso %}
 
 ### WebAPI
 
@@ -205,9 +206,9 @@ The following output is displayed as a result of the above code example.
 
 ### Other RESTful web services
 
-The [Custom Adaptor](https://help.syncfusion.com/js/datamanager/data-adaptors#custom-adaptor "CustomAdaptor") concept of [`ej.DataManager`](https://help.syncfusion.com/api/js/ejdatamanager# "DataManager") allows to customize or generate your own adaptor which is used to process `query` and `result` data. 
+The [Custom Adaptor](https://help.syncfusion.com/js/datamanager/data-adaptors#custom-adaptor "CustomAdaptor") concept of [`ej.DataManager`](https://help.syncfusion.com/api/js/ejdatamanager# "DataManager") allows to customize or generate your own adaptor which is used to process the `query` and `result` data. 
 
-When using remote data binding, the adaptor of [`ej.DataManager`](https://help.syncfusion.com/api/js/ejdatamanager# "DataManager") plays vital role in processing queries to make them suitable to sends along with data request and also in processing the response data from the server.
+When using remote data binding, the adaptor of the [`ej.DataManager`](https://help.syncfusion.com/api/js/ejdatamanager# "DataManager") plays vital role in processing queries to make them suitable to sends along with the data request and also in processing the response data from the server.
 
 The following code example describes the above behavior.
 
@@ -274,7 +275,7 @@ The following output is displayed as a result of the above code example.
 
 ### Load At Once
 
-On remote data binding, by default all the Grid actions will be processed on server-side such as paging, sorting, editing, grouping and filtering etc. To avoid post back to server on every action, you can set the grid to load all the data on initialization time and make the actions client-side. To enable this, you can use `offline` property of [`ej.DataManager`](https://help.syncfusion.com/api/js/ejdatamanager# "DataManager").
+On remote data binding, by default all the Grid actions will be processed on server-side such as paging, sorting, editing, grouping and filtering etc. To avoid post back to server on every action, you can set the grid to load all the data on initialization time and make the actions client-side. To enable this, you can use `offline` property of the [`ej.DataManager`](https://help.syncfusion.com/api/js/ejdatamanager# "DataManager").
 
 The following code example describes the above behavior.
 
@@ -301,7 +302,7 @@ $(function() {
 
 {% endhighlight %}
 
-Please refer the [link](https://help.syncfusion.com/js/datamanager/data-binding#offline-mode "offline") for further reference on `offline` property
+Please refer to this [link](https://help.syncfusion.com/js/datamanager/data-binding#offline-mode "offline") for further reference on `offline` property
 
 The following output is displayed as a result of the above code example.
 
@@ -310,7 +311,7 @@ The following output is displayed as a result of the above code example.
 
 ### Data Caching
 
-Date caching will help you prevent the request to server for already visited pages in Grid using `enableCaching` property of [`ej.DataManager`](https://help.syncfusion.com/api/js/ejdatamanager# "DataManager"). Also using `cachingPageSize` and `timeTillExpiration` properties of [`ej.DataManager`](https://help.syncfusion.com/api/js/ejdatamanager# "DataManager"), you can control the number of pages to be cached and duration it should be cached respectively.
+Date caching will help you prevent the request to server for already visited pages in Grid using the `enableCaching` property of [`ej.DataManager`](https://help.syncfusion.com/api/js/ejdatamanager# "DataManager"). Also using `cachingPageSize` and `timeTillExpiration` properties of [`ej.DataManager`](https://help.syncfusion.com/api/js/ejdatamanager# "DataManager"), you can control the number of pages to be cached and duration it should be cached respectively.
 
 N> The cached data will be stored in browser's HTML5 `localStorage`. 
 
@@ -380,9 +381,9 @@ The custom parameter will be passed along with the data request of the grid as f
 
 #### Handling HTTP Errors
 
-During server interaction from the Grid, there may occur some server-side exceptions and you can acquire those error messages or exception details in client-side using [`actionFailure`](https://help.syncfusion.com/api/js/ejgrid#events:actionfailure "actionFailure") event of Grid Control.
+During server interaction from the Grid, there may occur some server-side exceptions and you can acquire those error messages or exception details in client-side using the [`actionFailure`](https://help.syncfusion.com/api/js/ejgrid#events:actionfailure "actionFailure") event of Grid Control.
 
-The argument passed to the [`actionFailure`](https://help.syncfusion.com/api/js/ejgrid#events:actionfailure "actionFailure") Grid event contains the Error details returned from server. Please refer the following table for some error details that would be acquired in client-side event arguments.
+The argument passed to the [`actionFailure`](https://help.syncfusion.com/api/js/ejgrid#events:actionfailure "actionFailure") Grid event contains the Error details returned from server. Please refer to the following table for some error details that would be acquired in client-side event arguments.
 
  <table>
         <tr>
@@ -398,7 +399,7 @@ The argument passed to the [`actionFailure`](https://help.syncfusion.com/api/js/
                 argument.error.status
             </td>
             <td>
-                It returns the response error code
+                It returns the response error code.
             </td>
         </tr>
         <tr>
@@ -406,7 +407,7 @@ The argument passed to the [`actionFailure`](https://help.syncfusion.com/api/js/
                 argument.error.statusText
             </td>
             <td>
-                It returns the error message
+                It returns the error message.
             </td>
         </tr>
     </table>
@@ -528,5 +529,5 @@ The following output is displayed as a result of the above code example.
 ![](dataBinding_images/dataBinding_img9.png)
 
 
-I> The HTML Table element is the only valid element when using HTML Table binding. Using other elements will throw exception.
+I> The HTML Table element is the only valid element when using HTML Table binding. Using other elements will throws an exception.
 
