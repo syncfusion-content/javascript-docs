@@ -63,7 +63,7 @@ The ComboBox has support to load array of primitive data such as strings and num
 ### 2. Array of JSON data
 
 The ComboBox can generate its list items through an array of complex data. For this,
-the appropriate columns should be mapped to the [fields](/combo-box/api-comboBox.html#fields-fieldsettings) property.
+the appropriate columns should be mapped to the [fields](https://help.syncfusion.com/api/js/ejcombobox#members:fields) property.
 
 In the following example, `Id` column and `Game` column from complex data have been mapped to the `value` field and `text` field, respectively.
 
@@ -96,7 +96,7 @@ $(function () {
 
 ## Binding remote data
 
-The ComboBox supports retrieval of data from remote data services with the help of [DataManager](/data/api-dataManager.html) component. The [Query](/data/api-query.html) property is used to fetch
+The ComboBox supports retrieval of data from remote data services with the help of [DataManager](https://help.syncfusion.com/js/datamanager/getting-started) component. The [Query](https://help.syncfusion.com/api/js/ejquery) property is used to fetch
 data from the database and bind it to the ComboBox.
 
 In the following sample, displayed first 6 contacts from the `customer` table of `Northwind` Data Service.

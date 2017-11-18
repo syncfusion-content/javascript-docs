@@ -10,11 +10,11 @@ keywords: ComboBox, combobox, Filtering, minimum filter character, filter type
 
 # Filtering
 
-The ComboBox has built-in support to filter data items when `allowFiltering` is enabled. The filter
+The ComboBox has built-in support to filter data items when [allowFiltering](https://help.syncfusion.com/api/js/ejcombobox#members:allowfiltering) is enabled. The filter
 operation starts as soon as you start typing characters in the component.
 
 To display filtered items in the popup, filter the required data and return it to the ComboBox
-via [updateData](api-filteringEventArgs.html#updatedata) method by using the [filtering](/combo-box/api-comboBox.html#filtering--emittypefilteringeventargs) event.
+via [updateData](https://help.syncfusion.com/api/js/ejcombobox#members:fields) method by using the [filtering](https://help.syncfusion.com/api/js/ejcombobox#events:filtering) event.
 
 The following sample illustrates how to query the data source and pass the data to the ComboBox
 through the `updateData` method in `filtering` event.
@@ -167,7 +167,7 @@ In the following examples, data filtering is done with `endsWith` type.
 ## Case sensitive filtering
 
 Data items can be filtered either with or without case sensitivity using the DataManager. This can be done
-by passing the fourth optional parameter of the [where](/data/api-query.html#where) clause.
+by passing the fourth optional parameter of the [where](https://help.syncfusion.com/api/js/ejquery#methods:where) clause.
 
 The following example shows how to perform case-sensitive filter.
 

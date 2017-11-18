@@ -11,8 +11,8 @@ keywords: ComboBox, ComboBox, Localization
 # Localization
 
 The Localization library allows you to localize static text content of the
-[noRecordsTemplate](/combo-box/api-comboBox.html#norecordstemplate-string)
- and [actionFailureTemplate](/combo-box/api-comboBox.html#actionfailuretemplate-string)
+[noRecordsTemplate](https://help.syncfusion.com/api/js/ejcombobox#members:norecordstemplate)
+ and [actionFailureTemplate](https://help.syncfusion.com/api/js/ejcombobox#members:actionfailuretemplate)
 &nbsp;properties according to the culture currently assigned to the ComboBox.
 
 | Locale key | en-US (default)  |

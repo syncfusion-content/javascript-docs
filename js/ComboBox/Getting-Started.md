@@ -92,7 +92,7 @@ Create a new HTML file and add [CDN](https://help.syncfusion.com/js/cdn) links t
 
  N>  In production, we highly recommend you to use our [custom script generator](https://help.syncfusion.com/js/include-only-the-needed-widgets#) to create custom script file with required controls and its dependencies only. Also to reduce the file size further please use [GZip compression](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/optimize-encoding-and-transfer?hl=en#text-compression-with-gzip) in your server. 
 
-## Creating DropDownList
+## Creating ComboBox
 
 The ComboBox can be initialized through three different tags which described in [Initialize Tags](https://help.syncfusion.com/js/combobox/initialize-tags).
 
@@ -107,7 +107,7 @@ Add the HTML input element that needs to be initialized as ComboBox in sample.ht
 
 ## Binding data source
 
-After initializing, populate the ComboBox with data using the dataSource property. Here, employee list object is passed to the ComboBox component.	
+After initializing, populate the ComboBox with data using the [dataSource](https://help.syncfusion.com/api/js/ejcombobox#members:datasource) property. Here, employee list object is passed to the ComboBox component.	
 	
 {% highlight html %}
 	
@@ -142,7 +142,7 @@ After completing the configuration required to render a basic ComboBox, run the 
 
 ## Custom values
 
-The ComboBox allows the user to give input as custom value which is not required to present in predefined set of values. By default, this support is enabled by allowCustom property. In this case, both text field and value field considered as same. The custom value will be sent to post back handler when a form is about to be submitted.
+The ComboBox allows the user to give input as custom value which is not required to present in predefined set of values. By default, this support is enabled by [allowCustom](https://help.syncfusion.com/api/js/ejcombobox#members:allowcustom) property. In this case, both text field and value field considered as same. The custom value will be sent to post back handler when a form is about to be submitted.
 
 {% highlight html %}
 	
@@ -178,7 +178,7 @@ $(function () {
 
 By default, the width of the popup list automatically adjusts according to the ComboBox input element's width, and the height of the popup list has '300px'.
 
-The height and width of the popup list can also be customized using the popupHeight and popupWidth properties respectively.
+The height and width of the popup list can also be customized using the [popupHeight](https://help.syncfusion.com/api/js/ejcombobox#members:popupheight) and [popupWidth](https://help.syncfusion.com/api/js/ejcombobox#members:popupwidth) properties respectively.
 
 In the following sample, popup list's width and height are configured.
 
