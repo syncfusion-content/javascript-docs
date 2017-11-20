@@ -9,7 +9,7 @@ api: /api/js/ejgrid
 ---
 # Grid Dependencies
 
-ej.web.all.js is a bundle of all **Essential****JavaScript** controls. If you use ej.web.all.js in your application, you can leave this section or else you can try to render ejgrid in your application using **ej.grid.min.js** file. You can refer the following frameworks and controls in your project.
+The `ej.web.all.js` is a bundle of all **Essential****JavaScript** controls. If you use `ej.web.all.js` in your application, you can leave this section or else you can try to render `ejgrid` in your application using **ej.grid.min.js** file. You can refer to the following frameworks and controls in your project.
 
 _Grid Dependency_ 
 

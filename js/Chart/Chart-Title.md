@@ -12,7 +12,8 @@ api : /api/js/ejchart
 
 ## Title
 
-By using the title option, you can add the [`text`](../api/ejchart.html#members:title-text) as well as customize its [`border`](../api/ejchart.html#members:title-border),  [`background`](../api/ejchart.html#members:title-background) color and [`font`](../api/ejchart.html#members:title-font).
+By using the title option, you can add the [`text`](../api/ejchart#members:title-text) as well as customize its [`border`](../api/ejchart#members:title-border),  [`background`](../api/ejchart#members:title-background) color and [`font`](../api/ejchart#members:title-font).
+The visibility of the title is controlled by using the [`visible`](../api/ejchart#members:title-visible)property.
 
 {% highlight javascript %}
 
@@ -54,7 +55,9 @@ $("#container").ejChart({
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/chartcustomization/subtitle) here to view the Chart Title online demo sample.
 
 
-We can trim, wrap and wrapAndTrim to the chart title using textOverflow property. The original text will be displayed as tooltip on mouse hover.
+We can trim, wrap and wrapAndTrim to the chart title using [`textOverflow`](../api/ejchart#members:title-textoverflow) property. 
+To perform trim operation [`enableTrim`](../api/ejchart#members:title-enableTrim) property is used and text width is controlled by using the [`maximumWidth`](../api/ejchart#members:title-maximumwidth) property.
+The original text will be displayed as tooltip on mouse hover.
 
 
 {% highlight javascript %}
@@ -85,7 +88,7 @@ We can trim, wrap and wrapAndTrim to the chart title using textOverflow property
 
 ### Title Alignment
 
-You can change the title alignment to *center*, *far* and *near* by using the [`textAlignment`](../api/ejchart.html#members:title-textalignment) property of the chart title. 
+You can change the title alignment to *center*, *far* and *near* by using the [`textAlignment`](../api/ejchart#members:title-textalignment) property of the chart title. 
 
 {% highlight javascript %}
 
@@ -111,7 +114,7 @@ You can change the title alignment to *center*, *far* and *near* by using the [`
 
 ## Add Subtitle to the chart
 
-By using the subTitle option, you can add the [`subTitle`](../api/ejchart.html#members:title-subtitle) to the chart title and customize its [`border`](../api/ejchart.html#members:title-subtitle-border),  [`background`](../api/ejchart.html#members:title-subtitle-background) color and [`font`](../api/ejchart.html#members:title-subtitle-font). 
+By using the subTitle option, you can add the [`subTitle`](../api/ejchart#members:title-subtitle) to the chart title and customize its [`border`](../api/ejchart#members:title-subtitle-border),  [`background`](../api/ejchart#members:title-subtitle-background) color and [`font`](../api/ejchart#members:title-subtitle-font). 
 
 {% highlight javascript %}
 
@@ -151,7 +154,10 @@ $("#container").ejChart({
 
 ![](/js/Chart/Chart-Title_images/Chart-Title_img3.png)
 
-We can trim, wrap and wrapAndTrim to the chart subtitle using textOverflow property. The original text will be displayed as tooltip on mouse hover.
+
+We can trim, wrap and wrapAndTrim to the chart title using [`textOverflow`](../api/ejchart#members:title-subtitle-textoverflow) property. 
+To perform trim operation [`enableTrim`](../api/ejchart#members:title-subtitle-enableTrim) property is used and text width is controlled by using the [`maximumWidth`](../api/ejchart#members:title-subtitle-maximumwidth) property.
+The original text will be displayed as tooltip on mouse hover.
 
 {% highlight javascript %}
 
@@ -184,7 +190,7 @@ We can trim, wrap and wrapAndTrim to the chart subtitle using textOverflow prope
 
 ### Subtitle Alignment
 
-You can change the subtitle alignment to *center*, *far* and *near* by using the [`textAlignment`](../api/ejchart.html#members:title-subtitle-textalignment) property of the subTitle.
+You can change the subtitle alignment to *center*, *far* and *near* by using the [`textAlignment`](../api/ejchart#members:title-subtitle-textalignment) property of the subTitle.
 
 {% highlight javascript %}
 
