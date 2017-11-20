@@ -114,6 +114,8 @@ The complete list of EJ icons are listed in the following table. You have to use
       .txt{
 	    margin-top: 5px;
         text-align:center;
+        font-size: small;
+        word-wrap: break-word;
        }
 	  .spriteimage {
          background-image: url('IconLibrary_images/spritesheet.png');			
@@ -124,2294 +126,7695 @@ The complete list of EJ icons are listed in the following table. You have to use
          margin: 0 auto;
 	   }
 
-	  .spriteimage.shrink {
-	      background-position: -13px -6px;
-	   }
-	  .spriteimage.enlarge {
-	      background-position: -576px -389px;
-	   }
-	  .spriteimage.key {
-		  background-position: -859px -830px;
-	   }
-	  .spriteimage.list {
-		  background-position: -489px -54px;
-	   }
-	  .spriteimage.listnum {
-		  background-position: -890px -675px;
-	   }
+.icon-media-smallscreen {
+  background-position: 6px 10px;
+}
+.icon-media-backward {
+  background-position: -42px 8px;
+}
+.icon-media-download {
+  background-position: -88px 8px;
+}
+.icon-media-forward {
+  background-position: -132px 8px;
+}
+.icon-media-fullscreen {
+  background-position: -184px 8px;
+}
+.icon-media-mute {
+  background-position: -232px 8px;
+}
+.icon-media-next {
+  width: 32px;
+  height: 32px;
+  background-position: -288px 0;
+}
+.icon-media-next-item {
+  width: 32px;
+  height: 32px;
+  background-position: -336px 0;
+}
+.icon-media-pause {
+  width: 32px;
+  height: 32px;
+  background-position: -384px 0;
+}
+.icon-uniE109 {
+  width: 32px;
+  height: 32px;
+  background-position: -432px 0;
+}
+.icon-uniE10A {
+  width: 32px;
+  height: 32px;
+  background-position: -480px 0;
+}
+.icon-uniE10B {
+  width: 32px;
+  height: 32px;
+  background-position: -528px 0;
+}
+.icon-media-play {
+  width: 32px;
+  height: 32px;
+  background-position: -576px 0;
+}
+.icon-uniE111 {
+  width: 32px;
+  height: 32px;
+  background-position: -624px 0;
+}
+.icon-uniE112 {
+  width: 32px;
+  height: 32px;
+  background-position: -672px 0;
+}
+.icon-media-playlist {
+  width: 32px;
+  height: 32px;
+  background-position: -720px 0;
+}
+.icon-uniE115 {
+  width: 32px;
+  height: 32px;
+  background-position: 0 -48px;
+}
+.icon-uniE116 {
+  width: 32px;
+  height: 32px;
+  background-position: -48px -48px;
+}
+.icon-uniE117 {
+  width: 32px;
+  height: 32px;
+  background-position: -96px -48px;
+}
+.icon-uniE118 {
+  width: 32px;
+  height: 32px;
+  background-position: -144px -48px;
+}
+.icon-media-previous {
+  width: 32px;
+  height: 32px;
+  background-position: -192px -48px;
+}
+.icon-media-previous-item {
+  width: 32px;
+  height: 32px;
+  background-position: -240px -48px;
+}
+.icon-media-repeat {
+  width: 32px;
+  height: 32px;
+  background-position: -288px -48px;
+}
+.icon-media-select {
+  width: 32px;
+  height: 32px;
+  background-position: -336px -48px;
+}
+.icon-media-settings {
+  width: 32px;
+  height: 32px;
+  background-position: -384px -48px;
+}
+.icon-media-shuffle {
+  width: 32px;
+  height: 32px;
+  background-position: -432px -48px;
+}
+.icon-media-snapshot {
+  width: 32px;
+  height: 32px;
+  background-position: -480px -48px;
+}
+.icon-media-stop {
+  width: 32px;
+  height: 32px;
+  background-position: -528px -48px;
+}
+.icon-media-volume {
+  width: 32px;
+  height: 32px;
+  background-position: -576px -48px;
+}
+.icon-uniE128 {
+  width: 29px;
+  height: 32px;
+  background-position: -624px -48px;
+}
+.icon-uniE129 {
+  width: 29px;
+  height: 32px;
+  background-position: -672px -48px;
+}
+.icon-uniE12A {
+  width: 29px;
+  height: 32px;
+  background-position: -720px -48px;
+}
+.icon-media-repeat-updated {
+  width: 40px;
+  height: 32px;
+  background-position: 0 -96px;
+}
+.icon-uniE130 {
+  width: 24px;
+  height: 32px;
+  background-position: -48px -96px;
+}
+.icon-uniE131 {
+  width: 24px;
+  height: 32px;
+  background-position: -96px -96px;
+}
+.icon-media-next1 {
+  width: 29px;
+  height: 32px;
+  background-position: -144px -96px;
+}
+.icon-media-previous1 {
+  width: 29px;
+  height: 32px;
+  background-position: -192px -96px;
+}
+.icon-a-54 {
+  width: 24px;
+  height: 32px;
+  background-position: -240px -96px;
+}
+.icon-a-55 {
+  width: 28px;
+  height: 32px;
+  background-position: -288px -96px;
+}
+.icon-a-56 {
+  width: 49px;
+  height: 32px;
+  background-position: -336px -96px;
+}
+.icon-a-57 {
+  width: 49px;
+  height: 32px;
+  background-position: -432px -96px;
+}
+.icon-a-58 {
+  width: 28px;
+  height: 32px;
+  background-position: -528px -96px;
+}
+.icon-a-59 {
+  width: 44px;
+  height: 32px;
+  background-position: -576px -96px;
+}
+.icon-a-60 {
+  width: 40px;
+  height: 32px;
+  background-position: -672px -96px;
+}
+.icon-a-61 {
+  width: 46px;
+  height: 32px;
+  background-position: 0 -144px;
+}
+.icon-a-62 {
+  width: 36px;
+  height: 32px;
+  background-position: -96px -144px;
+}
+.icon-a-63 {
+  width: 19px;
+  height: 32px;
+  background-position: -144px -144px;
+}
+.icon-uniE150 {
+  width: 48px;
+  height: 32px;
+  background-position: -192px -144px;
+}
+.icon-uniE151 {
+  width: 48px;
+  height: 32px;
+  background-position: -288px -144px;
+}
+.icon-uniE152 {
+  width: 48px;
+  height: 32px;
+  background-position: -384px -144px;
+}
+.icon-uniE153 {
+  width: 48px;
+  height: 32px;
+  background-position: -480px -144px;
+}
+.icon-uniE600 {
+  width: 32px;
+  height: 32px;
+  background-position: -576px -144px;
+}
+.icon-uniE601 {
+  width: 32px;
+  height: 32px;
+  background-position: -624px -144px;
+}
+.icon-uniE602 {
+  width: 32px;
+  height: 32px;
+  background-position: -672px -144px;
+}
+.icon-uniE603 {
+  width: 32px;
+  height: 32px;
+  background-position: -720px -144px;
+}
+.icon-uniE604 {
+  width: 32px;
+  height: 32px;
+  background-position: 0 -192px;
+}
+.icon-uniE605 {
+  width: 32px;
+  height: 32px;
+  background-position: -48px -192px;
+}
+.icon-uniE606 {
+  width: 32px;
+  height: 32px;
+  background-position: -96px -192px;
+}
+.icon-uniE607 {
+  width: 32px;
+  height: 32px;
+  background-position: -144px -192px;
+}
+.icon-uniE608 {
+  width: 32px;
+  height: 32px;
+  background-position: -192px -192px;
+}
+.icon-uniE609 {
+  width: 32px;
+  height: 32px;
+  background-position: -240px -192px;
+}
+.icon-uniE60A {
+  width: 32px;
+  height: 32px;
+  background-position: -288px -192px;
+}
+.icon-uniE60B {
+  width: 32px;
+  height: 32px;
+  background-position: -336px -192px;
+}
+.icon-uniE60C {
+  width: 32px;
+  height: 32px;
+  background-position: -384px -192px;
+}
+.icon-uniE60D {
+  width: 32px;
+  height: 32px;
+  background-position: -432px -192px;
+}
+.icon-uniE60E {
+  width: 32px;
+  height: 32px;
+  background-position: -480px -192px;
+}
+.icon-uniE60F {
+  width: 32px;
+  height: 32px;
+  background-position: -528px -192px;
+}
+.icon-uniE610 {
+  width: 32px;
+  height: 32px;
+  background-position: -576px -192px;
+}
+.icon-uniE611 {
+  width: 32px;
+  height: 32px;
+  background-position: -624px -192px;
+}
+.icon-uniE612 {
+  width: 32px;
+  height: 32px;
+  background-position: -672px -192px;
+}
+.icon-uniE613 {
+  width: 32px;
+  height: 32px;
+  background-position: -720px -192px;
+}
+.icon-uniE614 {
+  width: 32px;
+  height: 32px;
+  background-position: 0 -240px;
+}
+.icon-uniE615 {
+  width: 32px;
+  height: 32px;
+  background-position: -48px -240px;
+}
+.icon-uniE616 {
+  width: 32px;
+  height: 32px;
+  background-position: -96px -240px;
+}
+.icon-uniE617 {
+  width: 32px;
+  height: 32px;
+  background-position: -144px -240px;
+}
+.icon-uniE618 {
+  width: 32px;
+  height: 32px;
+  background-position: -192px -240px;
+}
+.icon-uniE619 {
+  width: 32px;
+  height: 32px;
+  background-position: -240px -240px;
+}
+.icon-uniE61A {
+  width: 32px;
+  height: 32px;
+  background-position: -288px -240px;
+}
+.icon-uniE61B {
+  width: 32px;
+  height: 32px;
+  background-position: -336px -240px;
+}
+.icon-uniE61C {
+  width: 32px;
+  height: 32px;
+  background-position: -384px -240px;
+}
+.icon-uniE61D {
+  width: 32px;
+  height: 32px;
+  background-position: -432px -240px;
+}
+.icon-uniE61E {
+  width: 32px;
+  height: 32px;
+  background-position: -480px -240px;
+}
+.icon-uniE61F {
+  width: 32px;
+  height: 32px;
+  background-position: -528px -240px;
+}
+.icon-uniE620 {
+  width: 32px;
+  height: 32px;
+  background-position: -576px -240px;
+}
+.icon-uniE621 {
+  width: 32px;
+  height: 32px;
+  background-position: -624px -240px;
+}
+.icon-uniE622 {
+  width: 32px;
+  height: 32px;
+  background-position: -672px -240px;
+}
+.icon-uniE623 {
+  width: 32px;
+  height: 32px;
+  background-position: -720px -240px;
+}
+.icon-uniE624 {
+  width: 32px;
+  height: 32px;
+  background-position: 0 -288px;
+}
+.icon-uniE625 {
+  width: 32px;
+  height: 32px;
+  background-position: -48px -288px;
+}
+.icon-uniE626 {
+  width: 32px;
+  height: 32px;
+  background-position: -96px -288px;
+}
+.icon-uniE627 {
+  width: 32px;
+  height: 32px;
+  background-position: -144px -288px;
+}
+.icon-uniE628 {
+  width: 32px;
+  height: 32px;
+  background-position: -192px -288px;
+}
+.icon-uniE629 {
+  width: 32px;
+  height: 32px;
+  background-position: -240px -288px;
+}
+.icon-uniE62A {
+  width: 32px;
+  height: 32px;
+  background-position: -288px -288px;
+}
+.icon-uniE62B {
+  width: 32px;
+  height: 32px;
+  background-position: -336px -288px;
+}
+.icon-uniE62C {
+  width: 32px;
+  height: 32px;
+  background-position: -384px -288px;
+}
+.icon-uniE62D {
+  width: 32px;
+  height: 32px;
+  background-position: -432px -288px;
+}
+.icon-uniE62E {
+  width: 32px;
+  height: 32px;
+  background-position: -480px -288px;
+}
+.icon-uniE62F {
+  width: 32px;
+  height: 32px;
+  background-position: -528px -288px;
+}
+.icon-uniE630 {
+  width: 32px;
+  height: 32px;
+  background-position: -576px -288px;
+}
+.icon-uniE631 {
+  width: 32px;
+  height: 32px;
+  background-position: -624px -288px;
+}
+.icon-uniE632 {
+  width: 32px;
+  height: 32px;
+  background-position: -672px -288px;
+}
+.icon-uniE633 {
+  width: 32px;
+  height: 32px;
+  background-position: -720px -288px;
+}
+.icon-uniE634 {
+  width: 32px;
+  height: 32px;
+  background-position: 0 -336px;
+}
+.icon-uniE635 {
+  width: 32px;
+  height: 32px;
+  background-position: -48px -336px;
+}
+.icon-uniE636 {
+  width: 32px;
+  height: 32px;
+  background-position: -96px -336px;
+}
+.icon-uniE637 {
+  width: 32px;
+  height: 32px;
+  background-position: -144px -336px;
+}
+.icon-uniE638 {
+  width: 32px;
+  height: 32px;
+  background-position: -192px -336px;
+}
+.icon-uniE639 {
+  width: 32px;
+  height: 32px;
+  background-position: -240px -336px;
+}
+.icon-uniE63A {
+  width: 32px;
+  height: 32px;
+  background-position: -288px -336px;
+}
+.icon-uniE63B {
+  width: 32px;
+  height: 32px;
+  background-position: -336px -336px;
+}
+.icon-uniE63C {
+  width: 32px;
+  height: 32px;
+  background-position: -384px -336px;
+}
+.icon-uniE63D {
+  width: 32px;
+  height: 32px;
+  background-position: -432px -336px;
+}
+.icon-uniE63E {
+  width: 32px;
+  height: 32px;
+  background-position: -480px -336px;
+}
+.icon-uniE63F {
+  width: 32px;
+  height: 32px;
+  background-position: -528px -336px;
+}
+.icon-uniE640 {
+  width: 32px;
+  height: 32px;
+  background-position: -576px -336px;
+}
+.icon-uniE641 {
+  width: 32px;
+  height: 32px;
+  background-position: -624px -336px;
+}
+.icon-uniE642 {
+  width: 32px;
+  height: 32px;
+  background-position: -672px -336px;
+}
+.icon-uniE643 {
+  width: 32px;
+  height: 32px;
+  background-position: -720px -336px;
+}
+.icon-uniE644 {
+  width: 32px;
+  height: 32px;
+  background-position: 0 -384px;
+}
+.icon-uniE645 {
+  width: 32px;
+  height: 32px;
+  background-position: -48px -384px;
+}
+.icon-uniE646 {
+  width: 32px;
+  height: 32px;
+  background-position: -96px -384px;
+}
+.icon-uniE647 {
+  width: 32px;
+  height: 32px;
+  background-position: -144px -384px;
+}
+.icon-uniE648 {
+  width: 32px;
+  height: 32px;
+  background-position: -192px -384px;
+}
+.icon-uniE649 {
+  width: 32px;
+  height: 32px;
+  background-position: -240px -384px;
+}
+.icon-uniE64A {
+  width: 32px;
+  height: 32px;
+  background-position: -288px -384px;
+}
+.icon-uniE64B {
+  width: 32px;
+  height: 32px;
+  background-position: -336px -384px;
+}
+.icon-uniE64C {
+  width: 32px;
+  height: 32px;
+  background-position: -384px -384px;
+}
+.icon-uniE64D {
+  width: 32px;
+  height: 32px;
+  background-position: -432px -384px;
+}
+.icon-uniE64E {
+  width: 32px;
+  height: 32px;
+  background-position: -480px -384px;
+}
+.icon-uniE64F {
+  width: 32px;
+  height: 32px;
+  background-position: -528px -384px;
+}
+.icon-uniE650 {
+  width: 32px;
+  height: 32px;
+  background-position: -576px -384px;
+}
+.icon-uniE651 {
+  width: 32px;
+  height: 32px;
+  background-position: -624px -384px;
+}
+.icon-uniE652 {
+  width: 32px;
+  height: 32px;
+  background-position: -672px -384px;
+}
+.icon-uniE653 {
+  width: 32px;
+  height: 32px;
+  background-position: -720px -384px;
+}
+.icon-uniE654 {
+  width: 32px;
+  height: 32px;
+  background-position: 0 -432px;
+}
+.icon-uniE655 {
+  width: 32px;
+  height: 32px;
+  background-position: -48px -432px;
+}
+.icon-uniE656 {
+  width: 32px;
+  height: 32px;
+  background-position: -96px -432px;
+}
+.icon-uniE657 {
+  width: 32px;
+  height: 32px;
+  background-position: -144px -432px;
+}
+.icon-uniE658 {
+  width: 32px;
+  height: 32px;
+  background-position: -192px -432px;
+}
+.icon-uniE659 {
+  width: 32px;
+  height: 32px;
+  background-position: -240px -432px;
+}
+.icon-uniE65A {
+  width: 32px;
+  height: 32px;
+  background-position: -288px -432px;
+}
+.icon-uniE65B {
+  width: 32px;
+  height: 32px;
+  background-position: -336px -432px;
+}
+.icon-uniE65C {
+  width: 32px;
+  height: 32px;
+  background-position: -384px -432px;
+}
+.icon-uniE65D {
+  width: 32px;
+  height: 32px;
+  background-position: -432px -432px;
+}
+.icon-uniE65E {
+  width: 32px;
+  height: 32px;
+  background-position: -480px -432px;
+}
+.icon-uniE65F {
+  width: 32px;
+  height: 32px;
+  background-position: -528px -432px;
+}
+.icon-uniE660 {
+  width: 32px;
+  height: 32px;
+  background-position: -576px -432px;
+}
+.icon-uniE661 {
+  width: 32px;
+  height: 32px;
+  background-position: -624px -432px;
+}
+.icon-uniE662 {
+  width: 32px;
+  height: 32px;
+  background-position: -672px -432px;
+}
+.icon-uniE663 {
+  width: 32px;
+  height: 32px;
+  background-position: -720px -432px;
+}
+.icon-uniE664 {
+  width: 32px;
+  height: 32px;
+  background-position: 0 -480px;
+}
+.icon-uniE665 {
+  width: 32px;
+  height: 32px;
+  background-position: -48px -480px;
+}
+.icon-uniE666 {
+  width: 32px;
+  height: 32px;
+  background-position: -96px -480px;
+}
+.icon-uniE667 {
+  width: 32px;
+  height: 32px;
+  background-position: -144px -480px;
+}
+.icon-uniE668 {
+  width: 32px;
+  height: 32px;
+  background-position: -192px -480px;
+}
+.icon-uniE669 {
+  width: 32px;
+  height: 32px;
+  background-position: -240px -480px;
+}
+.icon-uniE66A {
+  width: 32px;
+  height: 32px;
+  background-position: -288px -480px;
+}
+.icon-uniE66B {
+  width: 32px;
+  height: 32px;
+  background-position: -336px -480px;
+}
+.icon-uniE66C {
+  width: 32px;
+  height: 32px;
+  background-position: -384px -480px;
+}
+.icon-uniE66D {
+  width: 32px;
+  height: 32px;
+  background-position: -432px -480px;
+}
+.icon-uniE66E {
+  width: 32px;
+  height: 32px;
+  background-position: -480px -480px;
+}
+.icon-uniE66F {
+  width: 32px;
+  height: 32px;
+  background-position: -528px -480px;
+}
+.icon-uniE670 {
+  width: 32px;
+  height: 32px;
+  background-position: -576px -480px;
+}
+.icon-uniE671 {
+  width: 32px;
+  height: 32px;
+  background-position: -624px -480px;
+}
+.icon-uniE672 {
+  width: 32px;
+  height: 32px;
+  background-position: -672px -480px;
+}
+.icon-uniE673 {
+  width: 32px;
+  height: 32px;
+  background-position: -720px -480px;
+}
+.icon-uniE674 {
+  width: 32px;
+  height: 32px;
+  background-position: 0 -528px;
+}
+.icon-uniE675 {
+  width: 32px;
+  height: 32px;
+  background-position: -48px -528px;
+}
+.icon-uniE676 {
+  width: 32px;
+  height: 32px;
+  background-position: -96px -528px;
+}
+.icon-uniE677 {
+  width: 32px;
+  height: 32px;
+  background-position: -144px -528px;
+}
+.icon-uniE678 {
+  width: 32px;
+  height: 32px;
+  background-position: -192px -528px;
+}
+.icon-uniE679 {
+  width: 32px;
+  height: 32px;
+  background-position: -240px -528px;
+}
+.icon-uniE67A {
+  width: 32px;
+  height: 32px;
+  background-position: -288px -528px;
+}
+.icon-uniE67B {
+  width: 32px;
+  height: 32px;
+  background-position: -336px -528px;
+}
+.icon-uniE67C {
+  width: 32px;
+  height: 32px;
+  background-position: -384px -528px;
+}
+.icon-uniE67D {
+  width: 32px;
+  height: 32px;
+  background-position: -432px -528px;
+}
+.icon-uniE67E {
+  width: 32px;
+  height: 32px;
+  background-position: -480px -528px;
+}
+.icon-uniE67F {
+  width: 32px;
+  height: 32px;
+  background-position: -528px -528px;
+}
+.icon-uniE680 {
+  width: 32px;
+  height: 32px;
+  background-position: -576px -528px;
+}
+.icon-uniE681 {
+  width: 32px;
+  height: 32px;
+  background-position: -624px -528px;
+}
+.icon-uniE682 {
+  width: 32px;
+  height: 32px;
+  background-position: -672px -528px;
+}
+.icon-uniE683 {
+  width: 32px;
+  height: 32px;
+  background-position: -720px -528px;
+}
+.icon-uniE684 {
+  width: 32px;
+  height: 32px;
+  background-position: 0 -576px;
+}
+.icon-uniE685 {
+  width: 33px;
+  height: 32px;
+  background-position: -48px -576px;
+}
+.icon-uniE686 {
+  width: 32px;
+  height: 32px;
+  background-position: -96px -576px;
+}
+.icon-uniE687 {
+  width: 32px;
+  height: 32px;
+  background-position: -144px -576px;
+}
+.icon-uniE688 {
+  width: 20px;
+  height: 32px;
+  background-position: -192px -576px;
+}
+.icon-uniE689 {
+  width: 20px;
+  height: 32px;
+  background-position: -240px -576px;
+}
+.icon-uniE68A {
+  width: 33px;
+  height: 32px;
+  background-position: -288px -576px;
+}
+.icon-uniE68B {
+  width: 17px;
+  height: 32px;
+  background-position: -336px -576px;
+}
+.icon-uniE68C {
+  width: 33px;
+  height: 32px;
+  background-position: -384px -576px;
+}
+.icon-uniE68D {
+  width: 33px;
+  height: 32px;
+  background-position: -432px -576px;
+}
+.icon-uniE68E {
+  width: 33px;
+  height: 32px;
+  background-position: -480px -576px;
+}
+.icon-uniE68F {
+  width: 33px;
+  height: 32px;
+  background-position: -528px -576px;
+}
+.icon-uniE690 {
+  width: 33px;
+  height: 32px;
+  background-position: -576px -576px;
+}
+.icon-uniE691 {
+  width: 33px;
+  height: 32px;
+  background-position: -624px -576px;
+}
+.icon-uniE692 {
+  width: 33px;
+  height: 32px;
+  background-position: -672px -576px;
+}
+.icon-uniE693 {
+  width: 33px;
+  height: 32px;
+  background-position: 0 -624px;
+}
+.icon-uniE694 {
+  width: 33px;
+  height: 32px;
+  background-position: -48px -624px;
+}
+.icon-uniE695 {
+  width: 33px;
+  height: 32px;
+  background-position: -96px -624px;
+}
+.icon-uniE696 {
+  width: 33px;
+  height: 32px;
+  background-position: -144px -624px;
+}
+.icon-uniE697 {
+  width: 33px;
+  height: 32px;
+  background-position: -192px -624px;
+}
+.icon-uniE698 {
+  width: 33px;
+  height: 32px;
+  background-position: -240px -624px;
+}
+.icon-uniE699 {
+  width: 33px;
+  height: 32px;
+  background-position: -288px -624px;
+}
+.icon-uniE69A {
+  width: 33px;
+  height: 32px;
+  background-position: -336px -624px;
+}
+.icon-uniE69B {
+  width: 17px;
+  height: 32px;
+  background-position: -384px -624px;
+}
+.icon-uniE69C {
+  width: 32px;
+  height: 32px;
+  background-position: -432px -624px;
+}
+.icon-uniE69D {
+  width: 26px;
+  height: 32px;
+  background-position: -480px -624px;
+}
+.icon-uniE69E {
+  width: 32px;
+  height: 32px;
+  background-position: -528px -624px;
+}
+.icon-uniE69F {
+  width: 32px;
+  height: 32px;
+  background-position: -576px -624px;
+}
+.icon-uniE6A0 {
+  width: 42px;
+  height: 32px;
+  background-position: -624px -624px;
+}
+.icon-uniE6A1 {
+  width: 32px;
+  height: 32px;
+  background-position: 0 -672px;
+}
+.icon-uniE6A2 {
+  width: 32px;
+  height: 32px;
+  background-position: -48px -672px;
+}
+.icon-uniE6A3 {
+  width: 26px;
+  height: 32px;
+  background-position: -96px -672px;
+}
+.icon-uniE6A4 {
+  width: 32px;
+  height: 32px;
+  background-position: -144px -672px;
+}
+.icon-uniE6A5 {
+  width: 32px;
+  height: 32px;
+  background-position: -192px -672px;
+}
+.icon-uniE6A6 {
+  width: 32px;
+  height: 32px;
+  background-position: -240px -672px;
+}
+.icon-uniE6A7 {
+  width: 32px;
+  height: 32px;
+  background-position: -288px -672px;
+}
+.icon-uniE6A8 {
+  width: 32px;
+  height: 32px;
+  background-position: -336px -672px;
+}
+.icon-uniE6A9 {
+  width: 32px;
+  height: 32px;
+  background-position: -384px -672px;
+}
+.icon-uniE6AA {
+  width: 32px;
+  height: 32px;
+  background-position: -432px -672px;
+}
+.icon-uniE6AB {
+  width: 32px;
+  height: 32px;
+  background-position: -480px -672px;
+}
+.icon-uniE6AC {
+  width: 32px;
+  height: 32px;
+  background-position: -528px -672px;
+}
+.icon-uniE6AD {
+  width: 32px;
+  height: 32px;
+  background-position: -576px -672px;
+}
+.icon-uniE6AE {
+  width: 32px;
+  height: 32px;
+  background-position: -624px -672px;
+}
+.icon-uniE6AF {
+  width: 32px;
+  height: 32px;
+  background-position: -672px -672px;
+}
+.icon-uniE6B0 {
+  width: 32px;
+  height: 32px;
+  background-position: -720px -672px;
+}
+.icon-uniE6B1 {
+  width: 32px;
+  height: 32px;
+  background-position: 0 -720px;
+}
+.icon-uniE6B2 {
+  width: 32px;
+  height: 32px;
+  background-position: -48px -720px;
+}
+.icon-uniE6B3 {
+  width: 32px;
+  height: 32px;
+  background-position: -96px -720px;
+}
+.icon-uniE6B4 {
+  width: 32px;
+  height: 32px;
+  background-position: -144px -720px;
+}
+.icon-uniE6B5 {
+  width: 32px;
+  height: 32px;
+  background-position: -192px -720px;
+}
+.icon-uniE6B6 {
+  width: 32px;
+  height: 32px;
+  background-position: -240px -720px;
+}
+.icon-uniE6B7 {
+  width: 32px;
+  height: 32px;
+  background-position: -288px -720px;
+}
+.icon-uniE6B8 {
+  width: 32px;
+  height: 32px;
+  background-position: -336px -720px;
+}
+.icon-uniE6B9 {
+  width: 32px;
+  height: 32px;
+  background-position: -384px -720px;
+}
+.icon-uniE6BA {
+  width: 32px;
+  height: 32px;
+  background-position: -432px -720px;
+}
+.icon-uniE6BB {
+  width: 32px;
+  height: 32px;
+  background-position: -480px -720px;
+}
+.icon-uniE6BC {
+  width: 32px;
+  height: 32px;
+  background-position: -528px -720px;
+}
+.icon-uniE6BD {
+  width: 32px;
+  height: 32px;
+  background-position: -576px -720px;
+}
+.icon-uniE6BE {
+  width: 32px;
+  height: 32px;
+  background-position: -624px -720px;
+}
+.icon-uniE6BF {
+  width: 32px;
+  height: 32px;
+  background-position: -672px -720px;
+}
+.icon-uniE6C0 {
+  width: 32px;
+  height: 32px;
+  background-position: -720px -720px;
+}
+.icon-uniE6C1 {
+  width: 32px;
+  height: 32px;
+  background-position: 0 -768px;
+}
+.icon-uniE6C2 {
+  width: 32px;
+  height: 32px;
+  background-position: -48px -768px;
+}
+.icon-uniE6C3 {
+  width: 32px;
+  height: 32px;
+  background-position: -96px -768px;
+}
+.icon-uniE6C4 {
+  width: 32px;
+  height: 32px;
+  background-position: -144px -768px;
+}
+.icon-uniE6C5 {
+  width: 32px;
+  height: 32px;
+  background-position: -192px -768px;
+}
+.icon-uniE6C6 {
+  width: 32px;
+  height: 32px;
+  background-position: -240px -768px;
+}
+.icon-uniE6C7 {
+  width: 32px;
+  height: 32px;
+  background-position: -288px -768px;
+}
+.icon-uniE6C8 {
+  width: 32px;
+  height: 32px;
+  background-position: -336px -768px;
+}
+.icon-uniE6C9 {
+  width: 32px;
+  height: 32px;
+  background-position: -384px -768px;
+}
+.icon-uniE6CA {
+  width: 32px;
+  height: 32px;
+  background-position: -432px -768px;
+}
+.icon-uniE6CB {
+  width: 32px;
+  height: 32px;
+  background-position: -480px -768px;
+}
+.icon-uniE6CC {
+  width: 32px;
+  height: 32px;
+  background-position: -528px -768px;
+}
+.icon-uniE6CD {
+  width: 32px;
+  height: 32px;
+  background-position: -576px -768px;
+}
+.icon-uniE6CE {
+  width: 32px;
+  height: 32px;
+  background-position: -624px -768px;
+}
+.icon-uniE6CF {
+  width: 32px;
+  height: 32px;
+  background-position: -672px -768px;
+}
+.icon-uniE6D0 {
+  width: 32px;
+  height: 32px;
+  background-position: -720px -768px;
+}
+.icon-uniE6D1 {
+  width: 32px;
+  height: 32px;
+  background-position: 0 -816px;
+}
+.icon-uniE6D2 {
+  width: 32px;
+  height: 32px;
+  background-position: -48px -816px;
+}
+.icon-uniE6D3 {
+  width: 32px;
+  height: 32px;
+  background-position: -96px -816px;
+}
+.icon-uniE6D4 {
+  width: 32px;
+  height: 32px;
+  background-position: -144px -816px;
+}
+.icon-uniE6D5 {
+  width: 32px;
+  height: 32px;
+  background-position: -192px -816px;
+}
+.icon-uniE6D6 {
+  width: 32px;
+  height: 32px;
+  background-position: -240px -816px;
+}
+.icon-uniE6D7 {
+  width: 32px;
+  height: 32px;
+  background-position: -288px -816px;
+}
+.icon-uniE6D8 {
+  width: 32px;
+  height: 32px;
+  background-position: -336px -816px;
+}
+.icon-uniE6D9 {
+  width: 32px;
+  height: 32px;
+  background-position: -384px -816px;
+}
+.icon-uniE6DA {
+  width: 32px;
+  height: 32px;
+  background-position: -432px -816px;
+}
+.icon-uniE6DB {
+  width: 32px;
+  height: 32px;
+  background-position: -480px -816px;
+}
+.icon-uniE6DC {
+  width: 32px;
+  height: 32px;
+  background-position: -528px -816px;
+}
+.icon-uniE6DD {
+  width: 32px;
+  height: 32px;
+  background-position: -576px -816px;
+}
+.icon-uniE6DE {
+  width: 32px;
+  height: 32px;
+  background-position: -624px -816px;
+}
+.icon-uniE6DF {
+  width: 32px;
+  height: 32px;
+  background-position: -672px -816px;
+}
+.icon-uniE6E0 {
+  width: 32px;
+  height: 32px;
+  background-position: -720px -816px;
+}
+.icon-uniE6E1 {
+  width: 32px;
+  height: 32px;
+  background-position: 0 -864px;
+}
+.icon-uniE6E2 {
+  width: 32px;
+  height: 32px;
+  background-position: -48px -864px;
+}
+.icon-uniE6E3 {
+  width: 32px;
+  height: 32px;
+  background-position: -96px -864px;
+}
+.icon-uniE6E4 {
+  width: 32px;
+  height: 32px;
+  background-position: -144px -864px;
+}
+.icon-uniE6E5 {
+  width: 32px;
+  height: 32px;
+  background-position: -192px -864px;
+}
+.icon-uniE6E6 {
+  width: 32px;
+  height: 32px;
+  background-position: -240px -864px;
+}
+.icon-uniE6E7 {
+  width: 32px;
+  height: 32px;
+  background-position: -288px -864px;
+}
+.icon-uniE6E8 {
+  width: 32px;
+  height: 32px;
+  background-position: -336px -864px;
+}
+.icon-uniE6E9 {
+  width: 32px;
+  height: 32px;
+  background-position: -384px -864px;
+}
+.icon-uniE6EA {
+  width: 32px;
+  height: 32px;
+  background-position: -432px -864px;
+}
+.icon-uniE6EB {
+  width: 32px;
+  height: 32px;
+  background-position: -480px -864px;
+}
+.icon-uniE6EC {
+  width: 32px;
+  height: 32px;
+  background-position: -528px -864px;
+}
+.icon-uniE6ED {
+  width: 32px;
+  height: 32px;
+  background-position: -576px -864px;
+}
+.icon-uniE6EE {
+  width: 32px;
+  height: 32px;
+  background-position: -624px -864px;
+}
+.icon-uniE6EF {
+  width: 32px;
+  height: 32px;
+  background-position: -672px -864px;
+}
+.icon-uniE6F0 {
+  width: 32px;
+  height: 32px;
+  background-position: -720px -864px;
+}
+.icon-uniE6F1 {
+  width: 32px;
+  height: 32px;
+  background-position: 0 -912px;
+}
+.icon-uniE6F2 {
+  width: 32px;
+  height: 32px;
+  background-position: -48px -912px;
+}
+.icon-uniE6F3 {
+  width: 32px;
+  height: 32px;
+  background-position: -96px -912px;
+}
+.icon-uniE6F4 {
+  width: 32px;
+  height: 32px;
+  background-position: -144px -912px;
+}
+.icon-uniE6F5 {
+  width: 32px;
+  height: 32px;
+  background-position: -192px -912px;
+}
+.icon-uniE6F6 {
+  width: 32px;
+  height: 32px;
+  background-position: -240px -912px;
+}
+.icon-uniE6F7 {
+  width: 32px;
+  height: 32px;
+  background-position: -288px -912px;
+}
+.icon-uniE6F8 {
+  width: 32px;
+  height: 32px;
+  background-position: -336px -912px;
+}
+.icon-uniE6F9 {
+  width: 32px;
+  height: 32px;
+  background-position: -384px -912px;
+}
+.icon-uniE6FA {
+  width: 11px;
+  height: 32px;
+  background-position: -432px -912px;
+}
+.icon-uniE6FB {
+  width: 11px;
+  height: 32px;
+  background-position: -480px -912px;
+}
+.icon-uniE6FC {
+  width: 32px;
+  height: 32px;
+  background-position: -528px -912px;
+}
+.icon-uniE6FD {
+  width: 32px;
+  height: 32px;
+  background-position: -576px -912px;
+}
+.icon-uniE6FE {
+  width: 32px;
+  height: 32px;
+  background-position: -624px -912px;
+}
+.icon-uniE6FF {
+  width: 34px;
+  height: 32px;
+  background-position: -672px -912px;
+}
+.icon-uniE700 {
+  width: 32px;
+  height: 32px;
+  background-position: 0 -960px;
+}
+.icon-uniE701 {
+  width: 32px;
+  height: 32px;
+  background-position: -48px -960px;
+}
+.icon-uniE702 {
+  width: 32px;
+  height: 32px;
+  background-position: -96px -960px;
+}
+.icon-uniE703 {
+  width: 32px;
+  height: 32px;
+  background-position: -144px -960px;
+}
+.icon-uniE704 {
+  width: 30px;
+  height: 32px;
+  background-position: -192px -960px;
+}
+.icon-uniE705 {
+  width: 32px;
+  height: 32px;
+  background-position: -240px -960px;
+}
+.icon-uniE706 {
+  width: 32px;
+  height: 32px;
+  background-position: -288px -960px;
+}
+.icon-uniE707 {
+  width: 32px;
+  height: 32px;
+  background-position: -336px -960px;
+}
+.icon-uniE708 {
+  width: 32px;
+  height: 32px;
+  background-position: -384px -960px;
+}
+.icon-uniE709 {
+  width: 32px;
+  height: 32px;
+  background-position: -432px -960px;
+}
+.icon-uniE70A {
+  width: 32px;
+  height: 32px;
+  background-position: -480px -960px;
+}
+.icon-uniE70B {
+  width: 32px;
+  height: 32px;
+  background-position: -528px -960px;
+}
+.icon-uniE70C {
+  width: 32px;
+  height: 32px;
+  background-position: -576px -960px;
+}
+.icon-uniE70D {
+  width: 32px;
+  height: 32px;
+  background-position: -624px -960px;
+}
+.icon-uniE70E {
+  width: 32px;
+  height: 32px;
+  background-position: -672px -960px;
+}
+.icon-uniE70F {
+  width: 32px;
+  height: 32px;
+  background-position: -720px -960px;
+}
+.icon-uniE710 {
+  width: 32px;
+  height: 32px;
+  background-position: 0 -1008px;
+}
+.icon-uniE711 {
+  width: 32px;
+  height: 32px;
+  background-position: -48px -1008px;
+}
+.icon-uniE712 {
+  width: 32px;
+  height: 32px;
+  background-position: -96px -1008px;
+}
+.icon-uniE713 {
+  width: 27px;
+  height: 32px;
+  background-position: -144px -1008px;
+}
+.icon-uniE714 {
+  width: 27px;
+  height: 32px;
+  background-position: -192px -1008px;
+}
+.icon-uniE715 {
+  width: 32px;
+  height: 32px;
+  background-position: -240px -1008px;
+}
+.icon-uniE716 {
+  width: 32px;
+  height: 32px;
+  background-position: -288px -1008px;
+}
+.icon-uniE717 {
+  width: 32px;
+  height: 32px;
+  background-position: -336px -1008px;
+}
+.icon-uniE718 {
+  width: 32px;
+  height: 32px;
+  background-position: -384px -1008px;
+}
+.icon-uniE719 {
+  width: 32px;
+  height: 32px;
+  background-position: -432px -1008px;
+}
+.icon-uniE71A {
+  width: 32px;
+  height: 32px;
+  background-position: -480px -1008px;
+}
+.icon-uniE71B {
+  width: 32px;
+  height: 32px;
+  background-position: -528px -1008px;
+}
+.icon-uniE71C {
+  width: 32px;
+  height: 32px;
+  background-position: -576px -1008px;
+}
+.icon-uniE71D {
+  width: 32px;
+  height: 32px;
+  background-position: -624px -1008px;
+}
+.icon-uniE71E {
+  width: 32px;
+  height: 32px;
+  background-position: -672px -1008px;
+}
+.icon-uniE71F {
+  width: 32px;
+  height: 32px;
+  background-position: -720px -1008px;
+}
+.icon-uniE720 {
+  width: 32px;
+  height: 32px;
+  background-position: 0 -1056px;
+}
+.icon-uniE721 {
+  width: 32px;
+  height: 32px;
+  background-position: -48px -1056px;
+}
+.icon-uniE722 {
+  width: 32px;
+  height: 32px;
+  background-position: -96px -1056px;
+}
+.icon-uniE723 {
+  width: 32px;
+  height: 32px;
+  background-position: -144px -1056px;
+}
+.icon-uniE724 {
+  width: 32px;
+  height: 32px;
+  background-position: -192px -1056px;
+}
+.icon-uniE725 {
+  width: 32px;
+  height: 32px;
+  background-position: -240px -1056px;
+}
+.icon-uniE726 {
+  width: 32px;
+  height: 32px;
+  background-position: -288px -1056px;
+}
+.icon-uniE727 {
+  width: 32px;
+  height: 32px;
+  background-position: -336px -1056px;
+}
+.icon-uniE728 {
+  width: 32px;
+  height: 32px;
+  background-position: -384px -1056px;
+}
+.icon-uniE729 {
+  width: 29px;
+  height: 32px;
+  background-position: -432px -1056px;
+}
+.icon-uniE72A {
+  width: 30px;
+  height: 32px;
+  background-position: -480px -1056px;
+}
+.icon-uniE72B {
+  width: 32px;
+  height: 32px;
+  background-position: -528px -1056px;
+}
+.icon-uniE72C {
+  width: 32px;
+  height: 32px;
+  background-position: -576px -1056px;
+}
+.icon-uniE72D {
+  width: 36px;
+  height: 32px;
+  background-position: -624px -1056px;
+}
+.icon-uniE72E {
+  width: 32px;
+  height: 32px;
+  background-position: -672px -1056px;
+}
+.icon-uniE72F {
+  width: 32px;
+  height: 32px;
+  background-position: -720px -1056px;
+}
+.icon-uniE730 {
+  width: 32px;
+  height: 32px;
+  background-position: 0 -1104px;
+}
+.icon-uniE731 {
+  width: 32px;
+  height: 32px;
+  background-position: -48px -1104px;
+}
+.icon-uniE732 {
+  width: 32px;
+  height: 32px;
+  background-position: -96px -1104px;
+}
+.icon-uniE733 {
+  width: 32px;
+  height: 32px;
+  background-position: -144px -1104px;
+}
+.icon-uniE734 {
+  width: 32px;
+  height: 32px;
+  background-position: -192px -1104px;
+}
+.icon-uniE735 {
+  width: 32px;
+  height: 32px;
+  background-position: -240px -1104px;
+}
+.icon-uniE736 {
+  width: 32px;
+  height: 32px;
+  background-position: -288px -1104px;
+}
+.icon-uniE737 {
+  width: 32px;
+  height: 32px;
+  background-position: -336px -1104px;
+}
+.icon-uniE738 {
+  width: 32px;
+  height: 32px;
+  background-position: -384px -1104px;
+}
+.icon-uniE739 {
+  width: 32px;
+  height: 32px;
+  background-position: -432px -1104px;
+}
+.icon-uniE73A {
+  width: 32px;
+  height: 32px;
+  background-position: -480px -1104px;
+}
+.icon-uniE73B {
+  width: 35px;
+  height: 32px;
+  background-position: -528px -1104px;
+}
+.icon-uniE73C {
+  width: 46px;
+  height: 32px;
+  background-position: -576px -1104px;
+}
+.icon-uniE73D {
+  width: 45px;
+  height: 32px;
+  background-position: -672px -1104px;
+}
+.icon-uniE73E {
+  width: 32px;
+  height: 32px;
+  background-position: 0 -1152px;
+}
+.icon-uniE73F {
+  width: 31px;
+  height: 32px;
+  background-position: -48px -1152px;
+}
+.icon-uniE740 {
+  width: 31px;
+  height: 32px;
+  background-position: -96px -1152px;
+}
+.icon-uniE741 {
+  width: 32px;
+  height: 32px;
+  background-position: -144px -1152px;
+}
+.icon-uniE742 {
+  width: 32px;
+  height: 32px;
+  background-position: -192px -1152px;
+}
+.icon-uniE743 {
+  width: 32px;
+  height: 32px;
+  background-position: -240px -1152px;
+}
+.icon-uniE744 {
+  width: 32px;
+  height: 32px;
+  background-position: -288px -1152px;
+}
+.icon-uniE745 {
+  width: 32px;
+  height: 32px;
+  background-position: -336px -1152px;
+}
+.icon-uniE746 {
+  width: 32px;
+  height: 32px;
+  background-position: -384px -1152px;
+}
+.icon-uniE747 {
+  width: 32px;
+  height: 32px;
+  background-position: -432px -1152px;
+}
+.icon-uniE748 {
+  width: 32px;
+  height: 32px;
+  background-position: -480px -1152px;
+}
+.icon-uniE749 {
+  width: 32px;
+  height: 32px;
+  background-position: -528px -1152px;
+}
+.icon-uniE74A {
+  width: 32px;
+  height: 32px;
+  background-position: -576px -1152px;
+}
+.icon-uniE74B {
+  width: 32px;
+  height: 32px;
+  background-position: -624px -1152px;
+}
+.icon-uniE74C {
+  width: 32px;
+  height: 32px;
+  background-position: -672px -1152px;
+}
+.icon-uniE74D {
+  width: 32px;
+  height: 32px;
+  background-position: -720px -1152px;
+}
+.icon-uniE74E {
+  width: 32px;
+  height: 32px;
+  background-position: 0 -1200px;
+}
+.icon-uniE74F {
+  width: 32px;
+  height: 32px;
+  background-position: -48px -1200px;
+}
+.icon-uniE750 {
+  width: 32px;
+  height: 32px;
+  background-position: -96px -1200px;
+}
+.icon-uniE751 {
+  width: 55px;
+  height: 32px;
+  background-position: -144px -1200px;
+}
+.icon-uniE752 {
+  width: 32px;
+  height: 32px;
+  background-position: -240px -1200px;
+}
+.icon-uniE753 {
+  width: 32px;
+  height: 32px;
+  background-position: -288px -1200px;
+}
+.icon-uniE754 {
+  width: 32px;
+  height: 32px;
+  background-position: -336px -1200px;
+}
+.icon-uniE755 {
+  width: 32px;
+  height: 32px;
+  background-position: -384px -1200px;
+}
+.icon-uniE756 {
+  width: 32px;
+  height: 32px;
+  background-position: -432px -1200px;
+}
+.icon-uniE757 {
+  width: 32px;
+  height: 32px;
+  background-position: -480px -1200px;
+}
+.icon-uniE758 {
+  width: 32px;
+  height: 32px;
+  background-position: -528px -1200px;
+}
+.icon-uniE759 {
+  width: 32px;
+  height: 32px;
+  background-position: -576px -1200px;
+}
+.icon-uniE75A {
+  width: 32px;
+  height: 32px;
+  background-position: -624px -1200px;
+}
+.icon-uniE75B {
+  width: 32px;
+  height: 32px;
+  background-position: -672px -1200px;
+}
+.icon-uniE75C {
+  width: 32px;
+  height: 32px;
+  background-position: -720px -1200px;
+}
+.icon-uniE75D {
+  width: 36px;
+  height: 32px;
+  background-position: 0 -1248px;
+}
+.icon-uniE75E {
+  width: 32px;
+  height: 32px;
+  background-position: -48px -1248px;
+}
+.icon-uniE75F {
+  width: 32px;
+  height: 32px;
+  background-position: -96px -1248px;
+}
+.icon-uniE760 {
+  width: 32px;
+  height: 32px;
+  background-position: -144px -1248px;
+}
+.icon-uniE761 {
+  width: 32px;
+  height: 32px;
+  background-position: -192px -1248px;
+}
+.icon-uniE762 {
+  width: 32px;
+  height: 32px;
+  background-position: -240px -1248px;
+}
+.icon-uniE763 {
+  width: 32px;
+  height: 32px;
+  background-position: -288px -1248px;
+}
+.icon-uniE764 {
+  width: 32px;
+  height: 32px;
+  background-position: -336px -1248px;
+}
+.icon-uniE765 {
+  width: 32px;
+  height: 32px;
+  background-position: -384px -1248px;
+}
+.icon-uniE766 {
+  width: 32px;
+  height: 32px;
+  background-position: -432px -1248px;
+}
+.icon-uniE767 {
+  width: 32px;
+  height: 32px;
+  background-position: -480px -1248px;
+}
+.icon-uniE768 {
+  width: 32px;
+  height: 32px;
+  background-position: -528px -1248px;
+}
+.icon-uniE769 {
+  width: 32px;
+  height: 32px;
+  background-position: -576px -1248px;
+}
+.icon-uniE76A {
+  width: 32px;
+  height: 32px;
+  background-position: -624px -1248px;
+}
+.icon-uniE76B {
+  width: 32px;
+  height: 32px;
+  background-position: -672px -1248px;
+}
+.icon-uniE76C {
+  width: 32px;
+  height: 32px;
+  background-position: -720px -1248px;
+}
+.icon-uniE76D {
+  width: 32px;
+  height: 32px;
+  background-position: 0 -1296px;
+}
+.icon-uniE76E {
+  width: 32px;
+  height: 32px;
+  background-position: -48px -1296px;
+}
+.icon-uniE76F {
+  width: 37px;
+  height: 32px;
+  background-position: -96px -1296px;
+}
+.icon-uniE770 {
+  width: 37px;
+  height: 32px;
+  background-position: -144px -1296px;
+}
+.icon-uniE771 {
+  width: 37px;
+  height: 32px;
+  background-position: -192px -1296px;
+}
+.icon-uniE772 {
+  width: 32px;
+  height: 32px;
+  background-position: -240px -1296px;
+}
+.icon-uniE773 {
+  width: 32px;
+  height: 32px;
+  background-position: -288px -1296px;
+}
+.icon-uniE774 {
+  width: 32px;
+  height: 32px;
+  background-position: -336px -1296px;
+}
+.icon-uniE775 {
+  width: 32px;
+  height: 32px;
+  background-position: -384px -1296px;
+}
+.icon-uniE776 {
+  width: 32px;
+  height: 32px;
+  background-position: -432px -1296px;
+}
+.icon-uniE777 {
+  width: 32px;
+  height: 32px;
+  background-position: -480px -1296px;
+}
+.icon-uniE778 {
+  width: 32px;
+  height: 32px;
+  background-position: -528px -1296px;
+}
+.icon-uniE779 {
+  width: 32px;
+  height: 32px;
+  background-position: -576px -1296px;
+}
+.icon-uniE77A {
+  width: 32px;
+  height: 32px;
+  background-position: -624px -1296px;
+}
+.icon-uniE77B {
+  width: 144px;
+  height: 32px;
+  background-position: 0 -1344px;
+}
+.icon-uniE77C {
+  width: 32px;
+  height: 32px;
+  background-position: -192px -1344px;
+}
+.icon-uniE77D {
+  width: 32px;
+  height: 32px;
+  background-position: -240px -1344px;
+}
+.icon-uniE77E {
+  width: 36px;
+  height: 32px;
+  background-position: -288px -1344px;
+}
+.icon-copy {
+  width: 32px;
+  height: 32px;
+  background-position: -336px -1344px;
+}
+.icon-jsplayground {
+  width: 32px;
+  height: 32px;
+  background-position: -384px -1344px;
+}
+.icon-agenda {
+  width: 32px;
+  height: 32px;
+  background-position: -432px -1344px;
+}
+.icon-allday {
+  width: 32px;
+  height: 32px;
+  background-position: -480px -1344px;
+}
+.icon-edit {
+  width: 32px;
+  height: 32px;
+  background-position: -528px -1344px;
+}
+.icon-repeat {
+  width: 32px;
+  height: 32px;
+  background-position: -576px -1344px;
+}
+.icon-uniE785 {
+  width: 40px;
+  height: 32px;
+  background-position: -624px -1344px;
+}
+.icon-uniE786 {
+  width: 32px;
+  height: 32px;
+  background-position: -672px -1344px;
+}
+.icon-uniE787 {
+  width: 32px;
+  height: 32px;
+  background-position: -720px -1344px;
+}
+.icon-uniE788 {
+  width: 32px;
+  height: 32px;
+  background-position: 0 -1392px;
+}
+.icon-uniE789 {
+  width: 32px;
+  height: 32px;
+  background-position: -48px -1392px;
+}
+.icon-uniE78A {
+  width: 32px;
+  height: 32px;
+  background-position: -96px -1392px;
+}
+.icon-uniE78B {
+  width: 32px;
+  height: 32px;
+  background-position: -144px -1392px;
+}
+.icon-uniE78C {
+  width: 32px;
+  height: 32px;
+  background-position: -192px -1392px;
+}
+.icon-uniE78D {
+  width: 32px;
+  height: 32px;
+  background-position: -240px -1392px;
+}
+.icon-uniE78E {
+  width: 32px;
+  height: 32px;
+  background-position: -288px -1392px;
+}
+.icon-uniE78F {
+  width: 32px;
+  height: 32px;
+  background-position: -336px -1392px;
+}
+.icon-uniE790 {
+  width: 32px;
+  height: 32px;
+  background-position: -384px -1392px;
+}
+.icon-uniE791 {
+  width: 32px;
+  height: 32px;
+  background-position: -432px -1392px;
+}
+.icon-uniE792 {
+  width: 32px;
+  height: 32px;
+  background-position: -480px -1392px;
+}
+.icon-uniE793 {
+  width: 32px;
+  height: 32px;
+  background-position: -528px -1392px;
+}
+.icon-uniE794 {
+  width: 32px;
+  height: 32px;
+  background-position: -576px -1392px;
+}
+.icon-uniE795 {
+  width: 32px;
+  height: 32px;
+  background-position: -624px -1392px;
+}
+.icon-uniE796 {
+  width: 32px;
+  height: 32px;
+  background-position: -672px -1392px;
+}
+.icon-uniE797 {
+  width: 32px;
+  height: 32px;
+  background-position: -720px -1392px;
+}
+.icon-uniE798 {
+  width: 32px;
+  height: 32px;
+  background-position: 0 -1440px;
+}
+.icon-uniE799 {
+  width: 32px;
+  height: 32px;
+  background-position: -48px -1440px;
+}
+.icon-uniE79A {
+  width: 32px;
+  height: 32px;
+  background-position: -96px -1440px;
+}
+.icon-uniE79B {
+  width: 32px;
+  height: 32px;
+  background-position: -144px -1440px;
+}
+.icon-uniE79C {
+  width: 32px;
+  height: 32px;
+  background-position: -192px -1440px;
+}
+.icon-uniE79D {
+  width: 32px;
+  height: 32px;
+  background-position: -240px -1440px;
+}
+.icon-uniE79E {
+  width: 32px;
+  height: 32px;
+  background-position: -288px -1440px;
+}
+.icon-uniE79F {
+  width: 32px;
+  height: 32px;
+  background-position: -336px -1440px;
+}
+.icon-uniE7A0 {
+  width: 32px;
+  height: 32px;
+  background-position: -384px -1440px;
+}
+.icon-uniE7A1 {
+  width: 32px;
+  height: 32px;
+  background-position: -432px -1440px;
+}
+.icon-uniE7A2 {
+  width: 32px;
+  height: 32px;
+  background-position: -480px -1440px;
+}
+.icon-uniE7A3 {
+  width: 32px;
+  height: 32px;
+  background-position: -528px -1440px;
+}
+.icon-uniE7A4 {
+  width: 32px;
+  height: 32px;
+  background-position: -576px -1440px;
+}
+.icon-uniE7A5 {
+  width: 32px;
+  height: 32px;
+  background-position: -624px -1440px;
+}
+.icon-uniE7A6 {
+  width: 32px;
+  height: 32px;
+  background-position: -672px -1440px;
+}
+.icon-uniE7A7 {
+  width: 32px;
+  height: 32px;
+  background-position: -720px -1440px;
+}
+.icon-uniE7A8 {
+  width: 32px;
+  height: 32px;
+  background-position: 0 -1488px;
+}
+.icon-uniE7A9 {
+  width: 32px;
+  height: 32px;
+  background-position: -48px -1488px;
+}
+.icon-uniE7AA {
+  width: 32px;
+  height: 32px;
+  background-position: -96px -1488px;
+}
+.icon-uniE7AB {
+  width: 32px;
+  height: 32px;
+  background-position: -144px -1488px;
+}
+.icon-uniE7AC {
+  width: 32px;
+  height: 32px;
+  background-position: -192px -1488px;
+}
+.icon-uniE7AD {
+  width: 32px;
+  height: 32px;
+  background-position: -240px -1488px;
+}
+.icon-uniE7AE {
+  width: 32px;
+  height: 32px;
+  background-position: -288px -1488px;
+}
+.icon-uniE7AF {
+  width: 32px;
+  height: 32px;
+  background-position: -336px -1488px;
+}
+.icon-uniE7B0 {
+  width: 32px;
+  height: 32px;
+  background-position: -384px -1488px;
+}
+.icon-uniE7B1 {
+  width: 32px;
+  height: 32px;
+  background-position: -432px -1488px;
+}
+.icon-uniE7B2 {
+  width: 32px;
+  height: 32px;
+  background-position: -480px -1488px;
+}
+.icon-uniE7B3 {
+  width: 32px;
+  height: 32px;
+  background-position: -528px -1488px;
+}
+.icon-uniE7B4 {
+  width: 32px;
+  height: 32px;
+  background-position: -576px -1488px;
+}
+.icon-uniE7B5 {
+  width: 32px;
+  height: 32px;
+  background-position: -624px -1488px;
+}
+.icon-uniE7B6 {
+  width: 32px;
+  height: 32px;
+  background-position: -672px -1488px;
+}
+.icon-Recurrence {
+  width: 43px;
+  height: 32px;
+  background-position: 0 -1536px;
+}
+.icon-RecurrenceEdit {
+  width: 43px;
+  height: 32px;
+  background-position: -96px -1536px;
+}
+.icon-uniE7B9 {
+  width: 32px;
+  height: 32px;
+  background-position: -192px -1536px;
+}
+.icon-uniE7BA {
+  width: 32px;
+  height: 32px;
+  background-position: -240px -1536px;
+}
+.icon-uniE7BB {
+  width: 32px;
+  height: 32px;
+  background-position: -288px -1536px;
+}
+.icon-uniE7BC {
+  width: 32px;
+  height: 32px;
+  background-position: -336px -1536px;
+}
+.icon-uniE7BD {
+  width: 32px;
+  height: 32px;
+  background-position: -384px -1536px;
+}
+.icon-uniE7BE {
+  width: 32px;
+  height: 32px;
+  background-position: -432px -1536px;
+}
+.icon-uniE781 {
+  width: 32px;
+  height: 32px;
+  background-position: -480px -1536px;
+}
+.icon-uniE782 {
+  width: 32px;
+  height: 32px;
+  background-position: -528px -1536px;
+}
+.icon-uniE783 {
+  width: 32px;
+  height: 32px;
+  background-position: -576px -1536px;
+}
+.icon-uniE784 {
+  width: 32px;
+  height: 32px;
+  background-position: -624px -1536px;
+}
+.icon-uniE7852 {
+  width: 32px;
+  height: 32px;
+  background-position: -672px -1536px;
+}
+.icon-uniE7862 {
+  width: 32px;
+  height: 32px;
+  background-position: -720px -1536px;
+}
+.icon-uniE7872 {
+  width: 32px;
+  height: 32px;
+  background-position: 0 -1584px;
+}
+.icon-uniE7882 {
+  width: 32px;
+  height: 32px;
+  background-position: -48px -1584px;
+}
+.icon-uniE7892 {
+  width: 32px;
+  height: 32px;
+  background-position: -96px -1584px;
+}
+.icon-uniE78A2 {
+  width: 32px;
+  height: 32px;
+  background-position: -144px -1584px;
+}
+.icon-uniE78B2 {
+  width: 32px;
+  height: 32px;
+  background-position: -192px -1584px;
+}
+.icon-uniE78C2 {
+  width: 32px;
+  height: 32px;
+  background-position: -240px -1584px;
+}
+.icon-uniE78D2 {
+  width: 32px;
+  height: 32px;
+  background-position: -288px -1584px;
+}
+.icon-downarrowicon {
+  width: 32px;
+  height: 32px;
+  background-position: -336px -1584px;
+}
+.icon-dropdown {
+  width: 40px;
+  height: 32px;
+  background-position: -384px -1584px;
+}
+.icon-qaticon {
+  width: 61px;
+  height: 32px;
+  background-position: -432px -1584px;
+}
+.icon-tick {
+  width: 42px;
+  height: 32px;
+  background-position: -528px -1584px;
+}
+.icon-Pdf_Print {
+  width: 32px;
+  height: 32px;
+  background-position: -624px -1584px;
+}
+.icon-Pdf_First {
+  width: 32px;
+  height: 32px;
+  background-position: -672px -1584px;
+}
+.icon-PDf_Previous {
+  width: 32px;
+  height: 32px;
+  background-position: -720px -1584px;
+}
+.icon-Pdf_Next {
+  width: 32px;
+  height: 32px;
+  background-position: 0 -1632px;
+}
+.icon-Pdf_Last {
+  width: 32px;
+  height: 32px;
+  background-position: -48px -1632px;
+}
+.icon-Pdf_ZoomIn {
+  width: 32px;
+  height: 32px;
+  background-position: -96px -1632px;
+}
+.icon-Pdf_ZoomOut {
+  width: 32px;
+  height: 32px;
+  background-position: -144px -1632px;
+}
+.icon-Pdf_FitPage {
+  width: 32px;
+  height: 32px;
+  background-position: -192px -1632px;
+}
+.icon-Pdf_FitWidth {
+  width: 32px;
+  height: 32px;
+  background-position: -240px -1632px;
+}
+.icon-X16ICONS_UnFreeze {
+  width: 32px;
+  height: 32px;
+  background-position: -288px -1632px;
+}
+.icon-X16ICONS_FREEZE_Freeze {
+  width: 32px;
+  height: 32px;
+  background-position: -336px -1632px;
+}
+.icon-X16ICONS_FreezeColumnsBefore {
+  width: 32px;
+  height: 32px;
+  background-position: -384px -1632px;
+}
+.icon-Chart_Bubble {
+  width: 32px;
+  height: 32px;
+  background-position: -432px -1632px;
+}
+.icon-Chart_Doughnut {
+  width: 32px;
+  height: 32px;
+  background-position: -480px -1632px;
+}
+.icon-Chart_radar {
+  width: 32px;
+  height: 32px;
+  background-position: -528px -1632px;
+}
+.icon-Chart_Scatter {
+  width: 32px;
+  height: 32px;
+  background-position: -576px -1632px;
+}
+.icon-Chart-07 {
+  width: 32px;
+  height: 32px;
+  background-position: -624px -1632px;
+}
+.icon-uniE7E1 {
+  width: 32px;
+  height: 32px;
+  background-position: -672px -1632px;
+}
+.icon-uniE7E2 {
+  width: 32px;
+  height: 32px;
+  background-position: -720px -1632px;
+}
+.icon-uniE7E3 {
+  width: 32px;
+  height: 32px;
+  background-position: 0 -1680px;
+}
+.icon-uniE7E4 {
+  width: 32px;
+  height: 32px;
+  background-position: -48px -1680px;
+}
+.icon-uniE7E5 {
+  width: 32px;
+  height: 32px;
+  background-position: -96px -1680px;
+}
+.icon-uniE7E6 {
+  width: 32px;
+  height: 32px;
+  background-position: -144px -1680px;
+}
+.icon-uniE7E7 {
+  width: 32px;
+  height: 32px;
+  background-position: -192px -1680px;
+}
+.icon-uniE7E8 {
+  width: 32px;
+  height: 32px;
+  background-position: -240px -1680px;
+}
+.icon-uniE7E9 {
+  width: 32px;
+  height: 32px;
+  background-position: -288px -1680px;
+}
+.icon-uniE7EA {
+  width: 32px;
+  height: 32px;
+  background-position: -336px -1680px;
+}
+.icon-uniE7EB {
+  width: 32px;
+  height: 32px;
+  background-position: -384px -1680px;
+}
+.icon-uniE7EC {
+  width: 32px;
+  height: 32px;
+  background-position: -432px -1680px;
+}
+.icon-uniE7ED {
+  width: 32px;
+  height: 32px;
+  background-position: -480px -1680px;
+}
+.icon-uniE7EE {
+  width: 32px;
+  height: 32px;
+  background-position: -528px -1680px;
+}
+.icon-uniE7EF {
+  width: 32px;
+  height: 32px;
+  background-position: -576px -1680px;
+}
+.icon-uniE7F0 {
+  width: 32px;
+  height: 32px;
+  background-position: -624px -1680px;
+}
+.icon-uniE7F1 {
+  width: 32px;
+  height: 32px;
+  background-position: -672px -1680px;
+}
+.icon-uniE7F2 {
+  width: 32px;
+  height: 32px;
+  background-position: -720px -1680px;
+}
+.icon-uniE7F3 {
+  width: 32px;
+  height: 32px;
+  background-position: 0 -1728px;
+}
+.icon-uniE7F4 {
+  width: 32px;
+  height: 32px;
+  background-position: -48px -1728px;
+}
+.icon-uniE7F5 {
+  width: 32px;
+  height: 32px;
+  background-position: -96px -1728px;
+}
+.icon-uniE7F6 {
+  width: 32px;
+  height: 32px;
+  background-position: -144px -1728px;
+}
+.icon-uniE7f7 {
+  width: 32px;
+  height: 32px;
+  background-position: -192px -1728px;
+}
+.icon-uniE7f8 {
+  width: 32px;
+  height: 32px;
+  background-position: -240px -1728px;
+}
+.icon-uniE7f9 {
+  width: 32px;
+  height: 32px;
+  background-position: -288px -1728px;
+}
+.icon-uniE7fa {
+  width: 32px;
+  height: 32px;
+  background-position: -336px -1728px;
+}
+.icon-uniE7fb {
+  width: 32px;
+  height: 32px;
+  background-position: -384px -1728px;
+}
+.icon-uniE7fc {
+  width: 32px;
+  height: 32px;
+  background-position: -432px -1728px;
+}
+.icon-uniE7fd {
+  width: 32px;
+  height: 32px;
+  background-position: -480px -1728px;
+}
+.icon-uniE7fe {
+  width: 32px;
+  height: 32px;
+  background-position: -528px -1728px;
+}
+.icon-uniE7ff {
+  width: 32px;
+  height: 32px;
+  background-position: -576px -1728px;
+}
+.icon-uniE800 {
+  width: 32px;
+  height: 32px;
+  background-position: -624px -1728px;
+}
+.icon-uniE801 {
+  width: 32px;
+  height: 32px;
+  background-position: -672px -1728px;
+}
+.icon-uniE802 {
+  width: 32px;
+  height: 32px;
+  background-position: -720px -1728px;
+}
+.icon-uniE803 {
+  width: 32px;
+  height: 32px;
+  background-position: 0 -1776px;
+}
+.icon-uniE804 {
+  width: 32px;
+  height: 32px;
+  background-position: -48px -1776px;
+}
+.icon-uniE805 {
+  width: 32px;
+  height: 32px;
+  background-position: -96px -1776px;
+}
+.icon-uniE806 {
+  width: 32px;
+  height: 32px;
+  background-position: -144px -1776px;
+}
+.icon-uniE807 {
+  width: 32px;
+  height: 32px;
+  background-position: -192px -1776px;
+}
+.icon-uniE808 {
+  width: 32px;
+  height: 32px;
+  background-position: -240px -1776px;
+}
+.icon-unie809 {
+  width: 32px;
+  height: 32px;
+  background-position: -288px -1776px;
+}
+.icon-uniE80a {
+  width: 32px;
+  height: 32px;
+  background-position: -336px -1776px;
+}
+.icon-uniE80b {
+  width: 32px;
+  height: 32px;
+  background-position: -384px -1776px;
+}
+.icon-uniE80c {
+  width: 32px;
+  height: 32px;
+  background-position: -432px -1776px;
+}
+.icon-uniE80d {
+  width: 32px;
+  height: 32px;
+  background-position: -480px -1776px;
+}
+.icon-uniE80e {
+  width: 32px;
+  height: 32px;
+  background-position: -528px -1776px;
+}
+.icon-printicon-02 {
+  width: 32px;
+  height: 32px;
+  background-position: -576px -1776px;
+}
+.icon-uniE810 {
+  width: 32px;
+  height: 32px;
+  background-position: -624px -1776px;
+}
+.icon-a-051 {
+  width: 59px;
+  height: 32px;
+  background-position: -672px -1776px;
+}
+.icon-a-061 {
+  width: 30px;
+  height: 32px;
+  background-position: 0 -1824px;
+}
+.icon-filter-031 {
+  width: 36px;
+  height: 32px;
+  background-position: -48px -1824px;
+}
+.icon-filter-042 {
+  width: 36px;
+  height: 32px;
+  background-position: -96px -1824px;
+}
+.icon-backarrow-08 {
+  width: 18px;
+  height: 32px;
+  background-position: -144px -1824px;
+}
+.icon-BurgerMenu_iOS {
+  width: 32px;
+  height: 32px;
+  background-position: -192px -1824px;
+}
+.icon-Icon-03 {
+  width: 32px;
+  height: 32px;
+  background-position: -240px -1824px;
+}
+.icon-Icon-04 {
+  width: 32px;
+  height: 32px;
+  background-position: -288px -1824px;
+}
+.icon-Icon-05 {
+  width: 32px;
+  height: 32px;
+  background-position: -336px -1824px;
+}
+.icon-Icon-06 {
+  width: 32px;
+  height: 32px;
+  background-position: -384px -1824px;
+}
+.icon-uniE81b {
+  width: 32px;
+  height: 32px;
+  background-position: -432px -1824px;
+}
+.icon-uniE81c {
+  width: 32px;
+  height: 32px;
+  background-position: -480px -1824px;
+}
+.icon-Adpt__Down-arrow {
+  width: 32px;
+  height: 32px;
+  background-position: -528px -1824px;
+}
+.icon-Adpt__up-arrow {
+  width: 32px;
+  height: 32px;
+  background-position: -576px -1824px;
+}
+.icon-download-pdf {
+  width: 32px;
+  height: 32px;
+  background-position: -624px -1824px;
+}
+.icon-arrow--down1 {
+  width: 64px;
+  height: 32px;
+  background-position: -672px -1824px;
+}
+.icon-arrow--up1 {
+  width: 64px;
+  height: 32px;
+  background-position: 0 -1872px;
+}
+.icon-CriticalTask_Taskbar_Icon_Solid {
+  width: 32px;
+  height: 32px;
+  background-position: -96px -1872px;
+}
+.icon-sort-by-icon-01 {
+  width: 32px;
+  height: 32px;
+  background-position: -144px -1872px;
+}
+.icon-Icon_descending {
+  width: 32px;
+  height: 32px;
+  background-position: -192px -1872px;
+}
+.icon-Icon_ascending {
+  width: 32px;
+  height: 32px;
+  background-position: -240px -1872px;
+}
+.icon-previouspage-pdfviewer {
+  width: 32px;
+  height: 32px;
+  background-position: -288px -1872px;
+}
+.icon-nextpage-pdfviewer {
+  width: 32px;
+  height: 32px;
+  background-position: -336px -1872px;
+}
+.icon-zoomout-pdfviewer {
+  width: 32px;
+  height: 32px;
+  background-position: -384px -1872px;
+}
+.icon-zoomin-pdfviewer {
+  width: 32px;
+  height: 32px;
+  background-position: -432px -1872px;
+}
+.icon-fitwidth-pdfviewer {
+  width: 32px;
+  height: 32px;
+  background-position: -480px -1872px;
+}
+.icon-fitpage-pdfviewer {
+  width: 32px;
+  height: 32px;
+  background-position: -528px -1872px;
+}
+.icon-print-pdfviewer {
+  width: 32px;
+  height: 32px;
+  background-position: -576px -1872px;
+}
+.icon-downloadpdf-pdfviewer {
+  width: 32px;
+  height: 32px;
+  background-position: -624px -1872px;
+}
+.icon-search-icon-pdfviewer {
+  width: 32px;
+  height: 32px;
+  background-position: -672px -1872px;
+}
+.icon-search-prev-pdfviewer {
+  width: 32px;
+  height: 32px;
+  background-position: -720px -1872px;
+}
+.icon-search-next-pdfviewer {
+  width: 32px;
+  height: 32px;
+  background-position: 0 -1920px;
+}
+.icon-uniE831 {
+  width: 36px;
+  height: 32px;
+  background-position: -48px -1920px;
+}
+.icon-uniE832 {
+  width: 36px;
+  height: 32px;
+  background-position: -96px -1920px;
+}
+.icon-uniE833 {
+  width: 32px;
+  height: 32px;
+  background-position: -144px -1920px;
+}
+.icon-uniE834 {
+  width: 32px;
+  height: 32px;
+  background-position: -192px -1920px;
+}
+.icon-uniE835 {
+  width: 32px;
+  height: 32px;
+  background-position: -240px -1920px;
+}
+.icon-uniE836 {
+  width: 32px;
+  height: 32px;
+  background-position: -288px -1920px;
+}
+.icon-search-close-pdfviewer {
+  width: 32px;
+  height: 32px;
+  background-position: -336px -1920px;
+}
+.icon-waterfall {
+  width: 32px;
+  height: 32px;
+  background-position: -384px -1920px;
+}
+.icon-Database {
+  width: 32px;
+  height: 32px;
+  background-position: -432px -1920px;
+}
+.icon-Remove-DB-report {
+  width: 32px;
+  height: 32px;
+  background-position: -480px -1920px;
+}
+.icon-Rename-DB-report {
+  width: 32px;
+  height: 32px;
+  background-position: -528px -1920px;
+}
+.icon-Save-As {
+  width: 32px;
+  height: 32px;
+  background-position: -576px -1920px;
+}
+.icon-backicon {
+  width: 32px;
+  height: 32px;
+  background-position: -624px -1920px;
+}
+.icon-uniE83e {
+  width: 32px;
+  height: 32px;
+  background-position: -672px -1920px;
+}
+.icon-uniE83f {
+  width: 32px;
+  height: 32px;
+  background-position: -720px -1920px;
+}
+.icon-uniE840 {
+  width: 32px;
+  height: 32px;
+  background-position: 0 -1968px;
+}
+.icon-uniE841 {
+  width: 32px;
+  height: 32px;
+  background-position: -48px -1968px;
+}
+.icon-ColumnFreeze {
+  width: 32px;
+  height: 32px;
+  background-position: -96px -1968px;
+}
+.icon-AdvancedFiltering {
+  width: 32px;
+  height: 32px;
+  background-position: -144px -1968px;
+}
+.icon-Cellcontext {
+  width: 32px;
+  height: 32px;
+  background-position: -192px -1968px;
+}
+.icon-ExcelExporting {
+  width: 32px;
+  height: 32px;
+  background-position: -240px -1968px;
+}
+.icon-PDFExporting {
+  width: 32px;
+  height: 32px;
+  background-position: -288px -1968px;
+}
+.icon-CSVExporting {
+  width: 32px;
+  height: 32px;
+  background-position: -336px -1968px;
+}
+.icon-FrozenHeaders {
+  width: 32px;
+  height: 32px;
+  background-position: -384px -1968px;
+}
+.icon-Summarytypes {
+  width: 32px;
+  height: 32px;
+  background-position: -432px -1968px;
+}
+.icon-ColumnheaderHyperlink {
+  width: 32px;
+  height: 32px;
+  background-position: -480px -1968px;
+}
+.icon-CalculatedFields {
+  width: 32px;
+  height: 32px;
+  background-position: -528px -1968px;
+}
+.icon-Hyperlink {
+  width: 32px;
+  height: 32px;
+  background-position: -576px -1968px;
+}
+.icon-RTL {
+  width: 32px;
+  height: 32px;
+  background-position: -624px -1968px;
+}
+.icon-WordExporting {
+  width: 32px;
+  height: 32px;
+  background-position: -672px -1968px;
+}
+.icon-Exporting {
+  width: 32px;
+  height: 32px;
+  background-position: -720px -1968px;
+}
+.icon-ConditionalFormatting {
+  width: 32px;
+  height: 32px;
+  background-position: 0 -2016px;
+}
+.icon-ColumnResizing {
+  width: 32px;
+  height: 32px;
+  background-position: -48px -2016px;
+}
+.icon-SummaryCustomization {
+  width: 32px;
+  height: 32px;
+  background-position: -96px -2016px;
+}
+.icon-RowFreeze {
+  width: 32px;
+  height: 32px;
+  background-position: -144px -2016px;
+}
+.icon-Paging {
+  width: 32px;
+  height: 32px;
+  background-position: -192px -2016px;
+}
+.icon-CellEditing {
+  width: 32px;
+  height: 32px;
+  background-position: -240px -2016px;
+}
+.icon-CellSelection {
+  width: 32px;
+  height: 32px;
+  background-position: -288px -2016px;
+}
+.icon-NumberFormats {
+  width: 32px;
+  height: 32px;
+  background-position: -336px -2016px;
+}
+.icon-Tooltip {
+  width: 32px;
+  height: 32px;
+  background-position: -384px -2016px;
+}
+.icon-ExcelLikeLayout {
+  width: 32px;
+  height: 32px;
+  background-position: -432px -2016px;
+}
+.icon-ValueCellHyperlink {
+  width: 32px;
+  height: 32px;
+  background-position: -480px -2016px;
+}
+.icon-SummaryCellHhyperlink {
+  width: 32px;
+  height: 32px;
+  background-position: -528px -2016px;
+}
+.icon-RowHeaderHyperlink {
+  width: 32px;
+  height: 32px;
+  background-position: -576px -2016px;
+}
+.icon-CollapseByDefault {
+  width: 32px;
+  height: 32px;
+  background-position: -624px -2016px;
+}
+.icon-15 {
+  width: 32px;
+  height: 32px;
+  background-position: -672px -2016px;
+}
+.icon-16 {
+  width: 32px;
+  height: 32px;
+  background-position: -720px -2016px;
+}
+.icon-17 {
+  width: 32px;
+  height: 32px;
+  background-position: 0 -2064px;
+}
+.icon-18 {
+  width: 32px;
+  height: 32px;
+  background-position: -48px -2064px;
+}
+.icon-19 {
+  width: 32px;
+  height: 32px;
+  background-position: -96px -2064px;
+}
+.icon-20 {
+  width: 32px;
+  height: 32px;
+  background-position: -144px -2064px;
+}
+.icon-uniE864 {
+  width: 32px;
+  height: 32px;
+  background-position: -192px -2064px;
+}
+.icon-uniE865 {
+  width: 32px;
+  height: 32px;
+  background-position: -240px -2064px;
+}
+.icon-22 {
+  width: 32px;
+  height: 32px;
+  background-position: -288px -2064px;
+}
+.icon-23 {
+  width: 32px;
+  height: 32px;
+  background-position: -336px -2064px;
+}
+.icon-24 {
+  width: 32px;
+  height: 32px;
+  background-position: -384px -2064px;
+}
+.icon-25 {
+  width: 32px;
+  height: 32px;
+  background-position: -432px -2064px;
+}
+.icon-D-disable-icon {
+  width: 32px;
+  height: 32px;
+  background-position: -480px -2064px;
+}
+.icon-Text-Selection {
+  width: 32px;
+  height: 32px;
+  background-position: -528px -2064px;
+}
+.icon-Text-Strick {
+  width: 32px;
+  height: 32px;
+  background-position: -576px -2064px;
+}
+.icon-Text-Underline {
+  width: 32px;
+  height: 32px;
+  background-position: -624px -2064px;
+}
+.icon-PDF-viewer-JS_Arrow {
+  width: 48px;
+  height: 32px;
+  background-position: -672px -2064px;
+}
+.icon-Calculated-member_-Toobar-Balck-Color-Icon {
+  width: 32px;
+  height: 32px;
+  background-position: 0 -2112px;
+}
+.icon-Calculated-member_-Tree-View-Balck-Color-Icon {
+  width: 32px;
+  height: 32px;
+  background-position: -48px -2112px;
+}
+.icon-Disable-Cross-Hair {
+  width: 32px;
+  height: 32px;
+  background-position: -96px -2112px;
+}
+.icon-Enable-Cross-Hair {
+  width: 32px;
+  height: 32px;
+  background-position: -144px -2112px;
+}
+.icon-Hide {
+  width: 32px;
+  height: 32px;
+  background-position: -192px -2112px;
+}
+.icon-Icon_Collapse {
+  width: 32px;
+  height: 32px;
+  background-position: -240px -2112px;
+}
+.icon-Icon_Drill-Through {
+  width: 32px;
+  height: 32px;
+  background-position: -288px -2112px;
+}
+.icon-Icon_Expand {
+  width: 32px;
+  height: 32px;
+  background-position: -336px -2112px;
+}
+.icon-Interaction {
+  width: 32px;
+  height: 32px;
+  background-position: -384px -2112px;
+}
+.icon-Layout {
+  width: 32px;
+  height: 32px;
+  background-position: -432px -2112px;
+}
+.icon-Legend {
+  width: 32px;
+  height: 32px;
+  background-position: -480px -2112px;
+}
+.icon-Marker {
+  width: 32px;
+  height: 32px;
+  background-position: -528px -2112px;
+}
+.icon-Multiple-Rows {
+  width: 32px;
+  height: 32px;
+  background-position: -576px -2112px;
+}
+.icon-No-Summary-Layout {
+  width: 32px;
+  height: 32px;
+  background-position: -624px -2112px;
+}
+.icon-Normal-Layout {
+  width: 32px;
+  height: 32px;
+  background-position: -672px -2112px;
+}
+.icon-Rotate-45 {
+  width: 32px;
+  height: 32px;
+  background-position: -720px -2112px;
+}
+.icon-Rotate-90 {
+  width: 32px;
+  height: 32px;
+  background-position: 0 -2160px;
+}
+.icon-Smart-Labels {
+  width: 32px;
+  height: 32px;
+  background-position: -48px -2160px;
+}
+.icon-Top-Summary-Layout {
+  width: 32px;
+  height: 32px;
+  background-position: -96px -2160px;
+}
+.icon-Track-Ball {
+  width: 32px;
+  height: 32px;
+  background-position: -144px -2160px;
+}
+.icon-Trim {
+  width: 32px;
+  height: 32px;
+  background-position: -192px -2160px;
+}
+.icon-Wrap-By-Word {
+  width: 32px;
+  height: 32px;
+  background-position: -240px -2160px;
+}
+.icon-Wrap {
+  width: 32px;
+  height: 32px;
+  background-position: -288px -2160px;
+}
+.icon-Zoom-In {
+  width: 32px;
+  height: 32px;
+  background-position: -336px -2160px;
+}
+.icon-Zoom-Out {
+  width: 32px;
+  height: 32px;
+  background-position: -384px -2160px;
+}
+.icon-uniE8d1 {
+  width: 32px;
+  height: 32px;
+  background-position: -432px -2160px;
+}
+.icon-uniE8d2 {
+  width: 32px;
+  height: 32px;
+  background-position: -480px -2160px;
+}
+.icon-Base-line_Hide {
+  width: 32px;
+  height: 32px;
+  background-position: -528px -2160px;
+}
+.icon-Base-line_Show {
+  width: 32px;
+  height: 32px;
+  background-position: -576px -2160px;
+}
+.icon-RTL_Dark {
+  width: 32px;
+  height: 32px;
+  background-position: -624px -2160px;
+}
+.icon-Signature-icon-03 {
+  width: 30px;
+  height: 32px;
+  background-position: -672px -2160px;
+}
+.icon-selection-icon-03 {
+  width: 32px;
+  height: 32px;
+  background-position: -720px -2160px;
+}
+.icon-selection-icon-05 {
+  width: 32px;
+  height: 32px;
+  background-position: 0 -2208px;
+}
+.icon-b-79 {
+  width: 32px;
+  height: 32px;
+  background-position: -48px -2208px;
+}
+.icon-b-80 {
+  width: 32px;
+  height: 32px;
+  background-position: -96px -2208px;
+}
+.icon-b-81 {
+  width: 32px;
+  height: 32px;
+  background-position: -144px -2208px;
+}
+.icon-b-82 {
+  width: 32px;
+  height: 32px;
+  background-position: -192px -2208px;
+}
+.icon-b-83 {
+  width: 32px;
+  height: 32px;
+  background-position: -240px -2208px;
+}
+.icon-b-84 {
+  width: 32px;
+  height: 32px;
+  background-position: -288px -2208px;
+}
+.icon-b-85 {
+  width: 32px;
+  height: 32px;
+  background-position: -336px -2208px;
+}
+.icon-b-86 {
+  width: 29px;
+  height: 32px;
+  background-position: -384px -2208px;
+}
+.icon-b-87 {
+  width: 32px;
+  height: 32px;
+  background-position: -432px -2208px;
+}
+.icon-b-88 {
+  width: 32px;
+  height: 32px;
+  background-position: -480px -2208px;
+}
+.icon-b-89 {
+  width: 32px;
+  height: 32px;
+  background-position: -528px -2208px;
+}
+.icon-uniE912 {
+  width: 32px;
+  height: 32px;
+  background-position: -576px -2208px;
+}
+.icon-uniE913 {
+  width: 32px;
+  height: 32px;
+  background-position: -624px -2208px;
+}
+.icon-a-70 {
+  width: 32px;
+  height: 32px;
+  background-position: -672px -2208px;
+}
+.icon-a-71 {
+  width: 32px;
+  height: 32px;
+  background-position: -720px -2208px;
+}
+.icon-v-92 {
+  width: 32px;
+  height: 32px;
+  background-position: 0 -2256px;
+}
+.icon-v-93 {
+  width: 32px;
+  height: 32px;
+  background-position: -48px -2256px;
+}
+.icon-xAxis-title {
+  width: 32px;
+  height: 32px;
+  background-position: -96px -2256px;
+}
+.icon-yAxis-title {
+  width: 32px;
+  height: 32px;
+  background-position: -144px -2256px;
+}
 
-	  .spriteimage.listnum_01 {
-            background-position: -213px -885px;
-        }
-		.spriteimage.indent {
-            background-position: -844px -896px;
-        }
-		.spriteimage.indent_01 {
-            background-position: -963px -501px;
-        }
-		.spriteimage.outdent {
-            background-position: -3px -950px;
-        }
-		.spriteimage.outdent_01 {
-            background-position: -76px 3px;
-        }
-		
-		.spriteimage.close {
-            background-position: -661px -2px;
-			float: none;
-			opacity: 3.2;
-        }
-		.spriteimage.close_01 {
-            background-position: 5px -103px;
-        }
-		.spriteimage.undo {
-            background-position: -650px -103px;
-        }
-		.spriteimage.undo_01 {
-            background-position: -337px -159px;
-        }
-		.spriteimage.redo {
-            background-position: -146px -216px;
-        }
-		
-		.spriteimage.redo_01 {
-            background-position: -638px -213px;
-        }
-		.spriteimage.video {
-            background-position: -800px -263px;
-        }
-		.spriteimage.video_01 {
-            background-position: -472px -320px;
-        }
-		.spriteimage.cross {
-            background-position: -197px -379px;
-        }
-		.spriteimage.brush {
-            background-position: -754px -380px;
-        }
-		
-		.spriteimage.dcol {
-            background-position: 0px -449px;
-        }
-		.spriteimage.dcol_01 {
-            background-position: -218px -495px;
-        }
-		.spriteimage.drow {
-            background-position: -720px -561px;
-        }
-		.spriteimage.drow_01 {
-            background-position: -379px -615px;
-        }
-		.spriteimage.icolleft {
-            background-position: -108px -658px;
-        }
-		
-		.spriteimage.icolleft_01 {
-            background-position: -171px -720px;
-        }
-		.spriteimage.icolleft_02 {
-            background-position: -3px -779px;
-        }
-		.spriteimage.icolright {
-            background-position: -652px -775px;
-        }
-		.spriteimage.icolright_01 {
-            background-position: -721px -831px;
-        }
-		.spriteimage.icolright_02 {
-            background-position: -912px 1px;
-        }
-		
-		.spriteimage.irowbelow {
-            background-position: -904px -45px;
-        }
-		.spriteimage.irowbelow_01 {
-            background-position: -908px -98px;
-        }
-		.spriteimage.irowbelow_2 {
-            background-position: -910px -157px;
-        }
-		.spriteimage.irowabove {
-            background-position: -66px -47px;
-        }
-		.spriteimage.irowabove_01 {
-            background-position: -910px -213px;
-        }
-		
-		.spriteimage.irowabove_02 {
-            background-position: -916px -274px;
-        }
-		.spriteimage.table {
-            background-position: -170px -58px;
-        }
-		.spriteimage.table_01 {
-            background-position: -911px -447px;
-        }
-		.spriteimage.table_02 {
-            background-position: -911px -341px;
-        }
-		.spriteimage.sigma {
-            background-position: -906px -504px;
-        }
-		
-		.spriteimage.sigma_01 {
-            background-position: -880px -557px;
-        }
-		.spriteimage.uppercase {
-            background-position: -264px -45px;
-        }
-		.spriteimage.uppercase_01 {
-            background-position: -486px -152px;
-        }
-		.spriteimage.lowercase {
-            background-position: -766px -45px;
-        }
-		.spriteimage.lowercase_01 {
-            background-position: -910px -389px;
-        }
-		
-		.spriteimage.bgcolor {
-            background-position: -323px -264px;
-        }
-		.spriteimage.superscript {
-            background-position: -880px -613px
-        }
-		.spriteimage.superscript_01 {
-            background-position: -153px -661px;
-        }
-		.spriteimage.subscript {
-            background-position: 1px -666px;
-        }
-		.spriteimage.subscript_01 {
-            background-position: -432px -724px;
-        }
-		
-		.spriteimage.restore {
-            background-position: -915px -837px;
-        }
-		.spriteimage.upload {
-            background-position: -267px -661px;
-        }
-		.spriteimage.download {
-            background-position: -490px -724px;
-        }
-		.spriteimage.save {
-            background-position: -914px -726px;
-        }
-		.spriteimage.save_01 {
-            background-position: -4px -893px;
-        }
-		
-		.spriteimage.save_02 {
-            background-position: -61px -893px;
-        }
-		.spriteimage.mail {
-            background-position: -316px -661px;
-        }
-		.spriteimage.arrowhead-right {
-            background-position: -367px -659px;
-        }
-		.spriteimage.arrowhead-right_01 {
-            background-position: -163px -886px;
-        }
-		.spriteimage.arrowhead-left {
-            background-position: -270px -893px;
-        }
-		
-		.spriteimage.arrowhead-left_01 {
-            background-position: -314px -886px;
-        }
-		.spriteimage.arrowhead-up {
-            background-position: -365px -896px;
-        }
-		.spriteimage.arrowhead-down {
-            background-position: -407px -888px;
-        }
-		.spriteimage.arrow-sans-right {
-            background-position: -455px -891px;
-        }
-		.spriteimage.arrow-sans-right_01 {
-            background-position: -203px -553px;
-        }
-		
-		.spriteimage.arrow-sans-left {
-            background-position: -624px -896px;
-        }
-		.spriteimage.arrow-sans-left_01 {
-            background-position: -673px -888px;
-        }
-		.spriteimage.arrow-sans-up {
-            background-position: -706px -616px;
-        }
-		.spriteimage.arrow-sans-down {
-            background-position: -485px -552px;
-        }
-		.spriteimage.datetime {
-            background-position: -723px -896px;
-        }
-		
-		.spriteimage.datetime_01 {
-            background-position: -911px -888px;
-        }
-		.spriteimage.calendar {
-            background-position: -967px 4px;
-        }
-		.spriteimage.calendar_01 {
-            background-position: -963px -51px;
-        }
-		.spriteimage.calendar-plus {
-            background-position: -966px -105px;
-        }
-		.spriteimage.calendar-edit {
-            background-position: -966px -156px;
-        }
-		
-		.spriteimage.chevron-right {
-            background-position: -966px -214px;
-        }
-		.spriteimage.chevron-right_01 {
-            background-position: -969px -331px;
-        }
-		.spriteimage.chevron-right_02 {
-            background-position: -969px -267px;
-        }
-		.spriteimage.chevron-left {
-            background-position: -969px -393px;
-        }
-		.spriteimage.chevron-left_01 {
-            background-position: -969px -446px;
-        }
-		
-		.spriteimage.chevron-left_02 {
-            background-position: -956px -550px;
-        }
-		.spriteimage.chevron-up {
-            background-position: -756px -608px;
-        }
-		.spriteimage.chevron-up_01 {
-            background-position: -570px -107px;
-        }
-		.spriteimage.chevron-down {
-            background-position: -936px -617px
-        }
-		.spriteimage.chevron-down_01 {
-            background-position: -946px -653px;
-        }
-		
-		.spriteimage.chevron-circle-right {
-            background-position: -117px -54px;
-        }
-		.spriteimage.chevron-circle-left {
-            background-position: -313px -53px;
-        }
-		.spriteimage.font {
-            background-position: -968px -715px;
-        }
-		.spriteimage.strikethrough {
-            background-position: -915px -788px;
-        }
-		.spriteimage.strikethrough_01 {
-            background-position: -67px -944px;
-        }
-		
-		.spriteimage.bold {
-            background-position: -969px -756px;
-        }
-		.spriteimage.bold_01 {
-            background-position: -969px -892px;
-        }
-		.spriteimage.italic {
-            background-position: -972px -811px;
-        }
-		.spriteimage.italic_01 {
-            background-position: -120px -954px;
-        }
-		.spriteimage.underline {
-            background-position: -178px -944px;
-        }
-		
-		.spriteimage.underline_01 {
-            background-position: -228px -951px;
-        }
-		.spriteimage.reply {
-            background-position: -697px -48px;
-        }
-		.spriteimage.forward {
-            background-position: -285px -946px;
-        }
-		.spriteimage.export {
-            background-position: -338px -946px;
-        }
-		.spriteimage.user {
-            background-position: -125px 1px;
-        }
-		
-		.spriteimage.clipboard {
-            background-position: -173px 1px;
-        }
-		.spriteimage.home {
-            background-position: -218px 3px;
-        }
-		.spriteimage.clear {
-            background-position: -268px -4px;
-        }
-		.spriteimage.resize-handle {
-            background-position: -325px 4px;
-        }
-		.spriteimage.link {
-            background-position: -385px 9px;
-        }
-		
-		.spriteimage.link_01 {
-            background-position: -438px 9px;
-        }
-		.spriteimage.unlink {
-            background-position: -494px 4px;
-        }
-		.spriteimage.unlink_01 {
-            background-position: -548px 11px;
-        }
-		.spriteimage.external-link {
-            background-position: -601px 10px;
-        }
-		.spriteimage.external-link_01 {
-            background-position: -712px 10px;
-        }
-		
-		.spriteimage.clock {
-            background-position: -770px 3px;
-        }
-		.spriteimage.settings {
-            background-position: -818px 3px;
-        }
-		.spriteimage.cut {
-            background-position: -219px -45px;
-        }
-		.spriteimage.cut_01 {
-            background-position: -379px -44px;
-        }
-		.spriteimage.copy {
-            background-position: -438px -44px;
-        }
-		
-		.spriteimage.copy_01 {
-            background-position: -541px -37px;
-        }
-		.spriteimage.copy_02 {
-            background-position: -594px -45px;
-        }
-		.spriteimage.paste {
-            background-position: -652px -43px;
-        }
-		.spriteimage.paste_01 {
-            background-position: -821px -43px;
-        }
-		.spriteimage.star {
-            background-position: -44px -93px;
-        }
-		
-		.spriteimage.pointer {
-            background-position: -96px -104px;
-        }
-		.spriteimage.sortdirect {
-            background-position: -149px -106px;
-        }
-		.spriteimage.shoppingcart {
-            background-position: -196px -103px;
-        }
-		.spriteimage.shoppingcart_01 {
-            background-position: -239px -94px;
-        }
-		.spriteimage.cursor {
-            background-position: -298px -107px;
-        }
-		
-		.spriteimage.warning {
-            background-position: -350px -98px;
-        }
-		.spriteimage.zoom-out {
-            background-position: -393px -98px;
-        }
-		.spriteimage.zoom-out_01 {
-            background-position: -455px -98px;
-        }
-		.spriteimage.zoom-out_02 {
-            background-position: -513px -98px;
-        }
-		.spriteimage.zoom-in {
-            background-position: -697px -97px;
-        }
-		
-		.spriteimage.zoom-in_01 {
-            background-position: -747px -108px;
-        }
-		.spriteimage.zoom-in_02 {
-            background-position: -800px -108px;
-        }
-		.spriteimage.arrow-circle-left {
-            background-position: -853px -108px;
-        }
-		.spriteimage.arrow-circle-left_01 {
-            background-position: -2px -153px;
-        }
-		.spriteimage.arrow-circle-left_02 {
-            background-position: -63px -153px;
-        }
-		
-		.spriteimage.arrow-circle-right {
-            background-position: -116px -153px;
-        }
-		.spriteimage.arrow-circle-right_01 {
-            background-position: -176px -156px;
-        }
-		.spriteimage.arrow-circle-right_02 {
-            background-position: -230px -156px;
-        }
-		.spriteimage.arrow-circle-up {
-            background-position: -281px -167px;
-        }
-		.spriteimage.arrow-circle-down {
-            background-position: -387px -159px;
-        }
-		
-		.spriteimage.edit {
-            background-position: -575px -158px;
-        }
-		.spriteimage.edit_01 {
-            background-position: -627px -158px;
-        }
-		.spriteimage.edit_02 {
-            background-position: -435px -158px;
-        }
-		.spriteimage.edit_03 {
-            background-position: -686px -158px;
-        }
-		.spriteimage.edit_04 {
-            background-position: -805px -158px;
-        }
-		
-		.spriteimage.edit_05 {
-            background-position: -857px -158px;
-        }
-		.spriteimage.notification {
-            background-position: 5px -211px;
-        }
-		.spriteimage.notification_01 {
-            background-position: -44px -216px;
-        }
-		.spriteimage.info {
-            background-position: -94px -219px;
-        }
-		.spriteimage.smiley {
-            background-position: -196px -210px;
-        }
-		
-		.spriteimage.checkmark {
-            background-position: -488px -202px;
-        }
-		.spriteimage.checkmark_01 {
-            background-position: -739px -206px;
-        }
-		.spriteimage.media-play {
-            background-position: -248px -214px;
-        }
-		.spriteimage.media-pause {
-            background-position: -793px -207px;
-        }
-		.spriteimage.media-eject {
-            background-position: -300px -212px;
-        }
-		
-		.spriteimage.media-next {
-            background-position: -351px -220px;
-        }
-		.spriteimage.media-previous {
-            background-position: -402px -219px;
-        }
-		.spriteimage.media-forward {
-            background-position: -537px -219px;
-        }
-		.spriteimage.media-forward_01 {
-            background-position: -589px -212px;
-        }
-		.spriteimage.media-forward_02 {
-            background-position: -843px -212px;
-        }
-		
-		.spriteimage.media-forward_03 {
-            background-position: -152px -264px;
-        }
-		.spriteimage.media-forward_04 {
-            background-position: -213px -270px;
-        }
-		.spriteimage.media-backward {
-            background-position: -268px -264px;
-        }
-		.spriteimage.media-backward_01 {
-            background-position: -402px -262px;
-        }
-		.spriteimage.media-backward_02 {
-            background-position: -458px -266px;
-        }
-		
-		.spriteimage.media-backward_03 {
-            background-position: -514px -266px;
-        }
-		.spriteimage.media-backward_04 {
-            background-position: -642px -266px;
-        }
-		.spriteimage.play-circle {
-            background-position: -692px -277px;
-        }
-		.spriteimage.full-screen-expand {
-            background-position: -745px -263px;
-        }
-		.spriteimage.full-screen-expand_01 {
-            background-position: -1px -317px;
-        }
-		
-		.spriteimage.full-screen-collapse {
-            background-position: -59px -317px;
-        }
-		.spriteimage.full-screen-collapse_01 {
-            background-position: -117px -317px;
-        }
-		.spriteimage.bullets {
-            background-position: -855px -277px;
-        }
-		.spriteimage.bullets_01 {
-            background-position: -173px -328px;
-        }
-		.spriteimage.filter {
-            background-position: -230px -335px;
-        }
-		
-		.spriteimage.filter_01 {
-            background-position: -283px -324px;
-        }
-		.spriteimage.filternone {
-            background-position: -325px -324px;
-        }
-		.spriteimage.filternone_01 {
-            background-position: -372px -324px;
-        }
-		.spriteimage.filter-settings {
-            background-position: -415px -324px;
-        }
-		.spriteimage.align-right {
-            background-position: -518px -324px;
-        }
-		
-		.spriteimage.align-right_01 {
-            background-position: -572px -316px;
-        }
-		.spriteimage.align-left {
-            background-position: -623px -321px;
-        }
-		.spriteimage.align-left_01 {
-            background-position: -752px -321px;
-        }
-		.spriteimage.align-justify {
-            background-position: -802px -321px;
-        }
-		.spriteimage.align-justify_01 {
-            background-position: -850px -325px;
-        }
-		
-		.spriteimage.align-center {
-            background-position: 4px -383px;
-        }
-		.spriteimage.align-center_01 {
-            background-position: -47px -383px
-        }
-		.spriteimage.align-none {
-            background-position: -99px -383px;
-        }
-		.spriteimage.search {
-            background-position: -146px -379px;
-        }
-		.spriteimage.search_01 {
-            background-position: -244px -382px;
-        }
-		
-		.spriteimage.image {
-            background-position: -296px -385px;
-        }
-		.spriteimage.image_01 {
-            background-position: -358px -375px;
-        }
-		.spriteimage.plus {
-            background-position: -469px -382px;
-        }
-		.spriteimage.plus_01 {
-            background-position: -691px -213px;
-        }
-		.spriteimage.minus {
-            background-position: -521px -373px;
-        }
-		
-		.spriteimage.minus_01 {
-            background-position: -860px 13px;
-        }
-		.spriteimage.code {
-            background-position: -421px -377px;
-        }
-		.spriteimage.code_01 {
-            background-position: 4px -264px;
-        }
-		.spriteimage.code-hexagon {
-            background-position: -683px -375px;
-        }
-		.spriteimage.file-code {
-            background-position: -802px -384px;
-        }
-		
-		.spriteimage.file-html {
-            background-position: -856px -389px;
-        }
-		.spriteimage.palette {
-            background-position: -101px -433px;
-        }
-		.spriteimage.reload {
-            background-position: -156px -438px;
-        }
-		.spriteimage.delete {
-            background-position: -623px -377px;
-        }
-		.spriteimage.delete_01 {
-            background-position: -206px -438px;
-        }
-		
-		.spriteimage.delete_02 {
-            background-position: -356px -442px;
-        }
-		.spriteimage.delete_03 {
-            background-position: -405px -442px;
-        }
-		.spriteimage.delete_04 {
-            background-position: -458px -439px;
-        }
-		.spriteimage.delete_05 {
-            background-position: -507px -443px;
-        }
-		.spriteimage.pin {
-            background-position: -554px -445px;
-        }
-		
-		.spriteimage.unpin {
-            background-position: -601px -439px;
-        }
-		.spriteimage.stop {
-            background-position: -653px -439px;
-        }
-		.spriteimage.power-cord {
-            background-position: -698px -443px;
-        }
-		.spriteimage.fullborders {
-            background-position: -853px -443px;
-        }
-		.spriteimage.threed {
-            background-position: 2px -503px;
-        }
-		
-		.spriteimage.file-excel {
-            background-position: -52px -499px;
-        }
-		.spriteimage.file-text {
-            background-position: -755px -441px;
-        }
-		.spriteimage.file-text_01 {
-            background-position: -94px -499px;
-        }
-		.spriteimage.file-mdx {
-            background-position: -159px -497px;
-        }
-		.spriteimage.file-empty {
-            background-position: -270px -499px;
-        }
-		
-		.spriteimage.file-list {
-            background-position: -329px -503px;
-        }
-		.spriteimage.file-delete_01 {
-            background-position: -383px -502px;
-        }
-		.spriteimage.file-settings {
-            background-position: -432px -503px;
-        }
-		.spriteimage.circle-square {
-            background-position: -485px -496px;
-        }
-		.spriteimage.diagonal-square {
-            background-position: -543px -493px;
-        }
-		
-		.spriteimage.hexagon-square {
-            background-position: -603px -496px;
-        }
-		.spriteimage.pentagon-square {
-            background-position: -659px -496px;
-        }
-		.spriteimage.globe {
-            background-position: -811px -502px;
-        }
-		.spriteimage.globe_01 {
-            background-position: -151px -557px;
-        }
-		.spriteimage.vertical-barchart {
-            background-position: -773px -550px;
-        }
-		
-		.spriteimage.vertical-barchart_01 {
-            background-position: -826px -550px;
-        }
-		.spriteimage.horizontal-barchart {
-            background-position: 2px -605px;
-        }
-		.spriteimage.horizontal-barchart_01 {
-            background-position: -50px -603px;
-        }
-		.spriteimage.pie-chart {
-            background-position: -101px -617px;
-        }
-		.spriteimage.triangle {
-            background-position: -153px -617px;
-        }
-		
-		.spriteimage.inverted-triangle {
-            background-position: -210px -600px;
-        }
-		.spriteimage.pyramid {
-            background-position: -268px -612px;
-        }
-		.spriteimage.inverted-pyramid {
-            background-position: -857px -494px;
-        }
-		.spriteimage.comments {
-            background-position: -323px -613px;
-        }
-		.spriteimage.folder {
-            background-position: -272px -555px;
-        }
-		
-		.spriteimage.folder_01 {
-            background-position: -432px -600px;
-        }
-		.spriteimage.folder-open {
-            background-position: -488px -600px;
-        }
-		.spriteimage.folder-open_01 {
-            background-position: -539px -600px;
-        }
-		.spriteimage.folder-add {
-            background-position: -601px -600px;
-        }
-		.spriteimage.signal {
-            background-position: -657px -600px;
-        }
-		
-		.spriteimage.sort-alpha-desc {
-            background-position: -820px -600px;
-        }
-		.spriteimage.sort-alpha-desc_01 {
-            background-position: -50px -661px;
-        }
-		.spriteimage.sort-alpha-asc {
-            background-position: -437px -668px;
-        }
-		.spriteimage.sort-alpha-asc_01 {
-            background-position: -492px -661px;
-        }
-		.spriteimage.print {
-            background-position: -212px -668px;
-        }
-		
-		.spriteimage.print_01 {
-            background-position: -551px -661px;
-        }
-		.spriteimage.print_02 {
-            background-position: -607px -661px;
-        }
-		.spriteimage.print_03 {
-            background-position: -664px -661px;
-        }
-		.spriteimage.word {
-            background-position: -721px -661px;
-        }
-		.spriteimage.word_01 {
-            background-position: -771px -661px;
-        }
-		
-		.spriteimage.word-export {
-            background-position: -827px -661px;
-        }
-		.spriteimage.pdf {
-            background-position: -2px -722px;
-        }
-		.spriteimage.pdf_01 {
-            background-position: -53px -722px;
-        }
-		.spriteimage.pdf-export {
-            background-position: -106px -722px;
-        }
-		.spriteimage.excel {
-            background-position: -226px -714px;
-        }
-		
-		.spriteimage.excel_01 {
-            background-position: -284px -733px;
-        }
-		.spriteimage.excel-export {
-            background-position: -338px -724px;
-        }
-		.spriteimage.powerpoint-export {
-            background-position: -548px -718px;
-        }
-		.spriteimage.ie {
-            background-position: -604px -727px;
-        }
-		.spriteimage.exit {
-            background-position: -661px -728px;
-        }
-		
-		.spriteimage.document {
-            background-position: -713px -723px;
-        }
-		.spriteimage.documents {
-            background-position: -766px -723px;
-        }
-		.spriteimage.question {
-            background-position: -381px -719px;
-        }
-		.spriteimage.film {
-            background-position: -818px -723px;
-        }
-		.spriteimage.volume-up {
-            background-position: -60px -775px;
-        }
-		
-		.spriteimage.circle-one {
-            background-position: -120px -782px;
-        }
-		.spriteimage.circle-two {
-            background-position: -174px -782px;
-        }
-		.spriteimage.circle-three {
-            background-position: -337px -782px;
-        }
-		.spriteimage.circle-four {
-            background-position: -393px -782px;
-        }
-		.spriteimage.arrow-right {
-            background-position: -449px -782px;
-        }
-		
-		.spriteimage.arrow-left {
-            background-position: -501px -782px;
-        }
-		.spriteimage.arrow-left_01 {
-            background-position: -559px -782px;
-        }
-		.spriteimage.arrow-up {
-            background-position: -231px -782px;
-        }
-		.spriteimage.arrow-down {
-            background-position: -607px -782px;
-        }
-		.spriteimage.arrow-down_01 {
-            background-position: -252px -442px;
-        }
-		
-		.spriteimage.sync {
-            background-position: -711px -782px;
-        }
-		.spriteimage.sync-disabled {
-            background-position: -759px -782px;
-        }
-		.spriteimage.paperclip {
-            background-position: -808px -782px;
-        }
-		.spriteimage.paperclip_01 {
-            background-position: -58px -837px;
-        }
-		.spriteimage.circle {
-            background-position: -857px -782px;
-        }
-		
-		.spriteimage.circle_01 {
-            background-position: -233px -833px;
-        }
-		.spriteimage.th-list {
-            background-position: -448px -832px;
-        }
-		.spriteimage.th-large {
-            background-position: -657px -829px;
-        }
-		.spriteimage.th {
-            background-position: -111px -838px;
-        }
-		.spriteimage.th-small {
-            background-position: -506px -838px;
-        }
-		
-		.spriteimage.view-details {
-            background-position: -558px -849px;
-        }
-		.spriteimage.file-resize-four-direction {
-            background-position: -781px -837px;
-        }
-		.spriteimage.file-resize-horizontal {
-            background-position: -281px -833px;
-        }
+
 	
 </style>  
 <table>
 <tr>
 <td>
-<div class="spriteimage shrink"></div>
- <div class="txt">shrink</div>
+<div class="spriteimage icon-media-smallscreen"></div>
+ <div class="txt">media-smallscreen</div>
+ <div class="txt">Unicode:"e100"</div>
 </td>
 <td>
-<div class="spriteimage enlarge"></div>
-<div class="txt">enlarge</div>
+<div class="spriteimage icon-media-backward"></div>
+<div class="txt">media-backward</div>
+<div class="txt">Unicode:"e101"</div>
 </td>
 <td>
-<div class="spriteimage key"></div>
-<div class="txt">key</div>
+<div class="spriteimage icon-media-download"></div>
+<div class="txt">media-download</div>
+<div class="txt">Unicode:"e102"</div>
 </td>
 <td>
-<div class="spriteimage list"></div>
-<div class="txt">list</div>
+<div class="spriteimage icon-media-forward"></div>
+<div class="txt">media-forward</div>
+<div class="txt">Unicode:"e103"</div>
 </td>
 <td>
-<div class="spriteimage listnum"></div>
-<div class="txt">list-numbered</div>
+<div class="spriteimage icon-media-fullscreen"></div>
+<div class="txt">media-fullscreen</div>
+<div class="txt">Unicode:"e104"</div>
 </td>
 </tr>
 
  <tr>
 <td>
- <div class="spriteimage listnum_01"></div>
-<div class="txt">list-numbered_01</div>
+ <div class="spriteimage icon-media-mute"></div>
+<div class="txt">media-mute</div>
+<div class="txt">Unicode:"e105"</div>
 </td>
 <td>
-<div class="spriteimage indent"></div>
-<div class="txt">indent</div>
+<div class="spriteimage icon-media-next"></div>
+<div class="txt">media-next</div>
+<div class="txt">Unicode:"e106"</div>
  </td>
  <td>
-<div class="spriteimage indent_01"></div>
-<div class="txt">indent_01</div>
+<div class="spriteimage icon-media-next-item"></div>
+<div class="txt">media-next-item</div>
+<div class="txt">Unicode:"e107"</div>
 </td>
 <td>
-<div class="spriteimage outdent"></div>
-<div class="txt">outdent</div>
+<div class="spriteimage icon-media-pause"></div>
+<div class="txt">media-pause</div>
+<div class="txt">Unicode:"e108"</div>
 </td>
 <td>
-<div class="spriteimage outdent_01"></div>
-<div class="txt">outdent_01</div>
+<div class="spriteimage icon-uniE109"></div>
+<div class="txt">uniE109</div>
+<div class="txt">Unicode:"e109"</div>
 </td>
 </tr>
 
 <tr>
  <td>
-<div class="spriteimage close"></div>
-<div class="txt">close</div>
+<div class="spriteimage icon-uniE10A"></div>
+<div class="txt">uniE10A</div>
+<div class="txt">Unicode:"e10a"</div>
 </td>
 <td>
-<div class="spriteimage close_01"></div>
-<div class="txt">close_01</div>
+<div class="spriteimage icon-uniE10B"></div>
+<div class="txt">uniE10B</div>
+<div class="txt">Unicode:"e10b"</div>
 </td>
 <td>
-<div class="spriteimage undo"></div>
-<div class="txt">undo</div>
+<div class="spriteimage icon-media-play"></div>
+<div class="txt">media-play</div>
+<div class="txt">Unicode:"e110"</div>
 </td>
 <td>
-<div class="spriteimage undo_01"></div>
-<div class="txt">undo_01</div>
+<div class="spriteimage icon-uniE111"></div>
+<div class="txt">uniE111</div>
+<div class="txt">Unicode:"e111"</div>
 </td>
 <td>
-<div class="spriteimage redo"></div>
-<div class="txt">redo</div>
+<div class="spriteimage icon-uniE112"></div>
+<div class="txt">uniE112</div>
+<div class="txt">Unicode:"e112"</div>
 </td>	
 </tr>
 
 <tr>
 <td>
-<div class="spriteimage redo_01"></div>
-<div class="txt">redo_01</div>
+<div class="spriteimage icon-media-playlist"></div>
+<div class="txt">media-playlist</div>
+<div class="txt">Unicode:"e113"</div>
 </td>
 <td>
-<div class="spriteimage video"></div>
-<div class="txt">video</div>
+<div class="spriteimage icon-uniE115"></div>
+<div class="txt">uniE115</div>
+<div class="txt">Unicode:"e115"</div>
 </td>
 <td>
-<div class="spriteimage video_01"></div>
-<div class="txt">video_01</div>
+<div class="spriteimage icon-uniE116"></div>
+<div class="txt">uniE116</div>
+<div class="txt">Unicode:"e116"</div>
 </td>
 <td>
-<div class="spriteimage cross"></div>
-<div class="txt">cross-circle</div>
+<div class="spriteimage icon-uniE117"></div>
+<div class="txt">uniE117</div>
+<div class="txt">Unicode:"e117"</div>
 </td>
 <td>
-<div class="spriteimage brush"></div>
-<div class="txt">clean-brush</div>
+<div class="spriteimage icon-uniE118"></div>
+<div class="txt">uniE118</div>
+<div class="txt">Unicode:"e118"</div>
 </td>
 </tr> 
 
 <tr>
  <td>
-<div class="spriteimage dcol"></div>
-<div class="txt">delete-column</div>
-</td>
- <td>
-<div class="spriteimage dcol_01"></div>
-<div class="txt">delete-column_01</div>
-</td>
- <td>
-<div class="spriteimage drow"></div>
-<div class="txt">delete-row</div>
-</td>
- <td>
-<div class="spriteimage drow_01"></div>
-<div class="txt">delete-row_01</div>
-</td>
- <td>
-<div class="spriteimage icolleft"></div>
-<div class="txt">insert-column-left</div>
-</td>
-</tr>
-
-<tr>
- <td>
-<div class="spriteimage icolleft_01"></div>
-<div class="txt">insert-column-left_01</div>
-</td>
- <td>
-<div class="spriteimage icolleft_02"></div>
-<div class="txt">insert-column-left_02</div>
-</td>
- <td>
-<div class="spriteimage icolright"></div>
-<div class="txt">insert-column-right</div>
-</td>
- <td>
-<div class="spriteimage icolright_01"></div>
-<div class="txt">insert-column-right_01</div>
-</td>
- <td>
-<div class="spriteimage icolright_02"></div>
-<div class="txt">insert-column-right_02</div>
-</td>
-</tr>
-
-<tr>
-<td>
-<div class="spriteimage irowbelow"></div>
-<div class="txt">insert-row-below</div>
-</td>
-<td>
-<div class="spriteimage irowbelow_01"></div>
-<div class="txt">insert-row-below_01</div>
-</td>
-<td>
-<div class="spriteimage irowbelow_2"></div>
-<div class="txt">insert-row-below_02</div>
-</td>
-<td>
-<div class="spriteimage irowabove"></div>
-<div class="txt">insert-row-above</div>
-</td>
-<td>
-<div class="spriteimage irowabove_01"></div>
-<div class="txt">insert-row-above_01</div>
-</td>
-</tr>
-
-<tr>
-<td>
-<div class="spriteimage irowabove_02"></div>
-<div class="txt">insert-row-above_02</div>
-</td>
-<td>
-<div class="spriteimage table"></div>
-<div class="txt">table</div>
-</td>
-<td>
-<div class="spriteimage table_01"></div>
-<div class="txt">table_01</div>
-</td>
-<td>
-<div class="spriteimage table_02"></div>
-<div class="txt">table_02</div>
-</td>
-<td>
-<div class="spriteimage sigma"></div>
-<div class="txt">sigma</div>
-</td>
-</tr>
-
-<tr>
-<td>
-<div class="spriteimage sigma_01"></div>
-<div class="txt">sigma_01</div>
-</td>
-<td>
-<div class="spriteimage uppercase"></div>
-<div class="txt">uppercase</div>
-</td>
-<td>
-<div class="spriteimage uppercase_01"></div>
-<div class="txt">uppercase_01</div>
-</td>
-<td>
-<div class="spriteimage lowercase"></div>
-<div class="txt">lowercase</div>
-</td>
-<td>
-<div class="spriteimage lowercase_01"></div>
-<div class="txt">lowercase_01</div>
-</td>
-</tr>
-
-<tr>
-<td>
-<div class="spriteimage bgcolor"></div>
-<div class="txt">background-color</div>
-</td>
-<td>
-<div class="spriteimage superscript"></div>
-<div class="txt">superscript</div>
-</td>
-<td>
-<div class="spriteimage superscript_01"></div>
-<div class="txt">superscript_01</div>
-</td>
-<td>
-<div class="spriteimage subscript"></div>
-<div class="txt">subscript</div>
-</td>
-<td>
-<div class="spriteimage subscript_01"></div>
-<div class="txt">subscript_01</div>
-</td>
-</tr>
-
-<tr>
-<td>
-<div class="spriteimage restore"></div>
-<div class="txt">restore</div>
-</td>
-<td>
-<div class="spriteimage upload"></div>
-<div class="txt">upload</div>
-</td>
-<td>
-<div class="spriteimage download"></div>
-<div class="txt">download</div>
-</td>
-<td>
-<div class="spriteimage save"></div>
-<div class="txt">save</div>
-</td>
-<td>
-<div class="spriteimage save_01"></div>
-<div class="txt">save_01</div>
-</td>
-</tr>
-
-<tr>
-<td>
-<div class="spriteimage save_02"></div>
-<div class="txt">save_02</div>
-</td>
-<td>
-<div class="spriteimage mail"></div>
-<div class="txt">mail/message</div>
-</td>
-<td>
-<div class="spriteimage arrowhead-right"></div>
-<div class="txt">arrowhead-right</div>
-</td>
-<td>
-<div class="spriteimage arrowhead-right_01"></div>
-<div class="txt">arrowhead-right_01</div>
-</td>
-<td>
-<div class="spriteimage arrowhead-left"></div>
-<div class="txt">arrowhead-left</div>
-</td>
-</tr>
-
-<tr>
-<td>
-<div class="spriteimage arrowhead-left_01"></div>
-<div class="txt">arrowhead-left_01</div>
-</td>
-<td>
-<div class="spriteimage arrowhead-up"></div>
-<div class="txt">arrowhead-up</div>
-</td>
-<td>
-<div class="spriteimage arrowhead-down"></div>
-<div class="txt">arrowhead-down</div>
-</td>
-<td>
-<div class="spriteimage arrow-sans-right"></div>
-<div class="txt">arrow-sans-right</div>
-</td>
-<td>
-<div class="spriteimage arrow-sans-right_01"></div>
-<div class="txt">arrow-sans-right_01</div>
-</td>
-</tr>
-
-<tr>
-<td>
-<div class="spriteimage arrow-sans-left"></div>
-<div class="txt">arrow-sans-left</div>
-</td>
-<td>
-<div class="spriteimage arrow-sans-left_01"></div>
-<div class="txt">arrow-sans-left_01</div>
-</td>
-<td>
-<div class="spriteimage arrow-sans-up"></div>
-<div class="txt">arrow-sans-up</div>
-</td>
-<td>
-<div class="spriteimage arrow-sans-down"></div>
-<div class="txt">arrow-sans-down</div>
-</td>
-<td>
-<div class="spriteimage datetime"></div>
-<div class="txt">datetime</div>
-</td>
-</tr>
-
-<tr>
-<td>
-<div class="spriteimage datetime_01"></div>
-<div class="txt">datetime_01</div>
-</td>
-<td>
-<div class="spriteimage calendar"></div>
-<div class="txt">calendar</div>
-</td>
-<td>
-<div class="spriteimage calendar_01"></div>
-<div class="txt">calendar_01</div>
-</td>
-<td>
-<div class="spriteimage calendar-plus"></div>
-<div class="txt">calendar-plus</div>
-</td>
-<td>
-<div class="spriteimage calendar-edit"></div>
-<div class="txt">calendar-edit</div>
-</td>
-</tr>
-
-<tr>
-<td>
-<div class="spriteimage chevron-right"></div>
-<div class="txt">chevron-right</div>
-</td>
-<td>
-<div class="spriteimage chevron-right_01"></div>
-<div class="txt">chevron-right_01</div>
-</td>
-<td>
-<div class="spriteimage chevron-right_02"></div>
-<div class="txt">chevron-right_02</div>
-</td>
-<td>
-<div class="spriteimage chevron-left"></div>
-<div class="txt">chevron-left</div>
-</td>
-<td>
-<div class="spriteimage chevron-left_01"></div>
-<div class="txt">chevron-left_01</div>
-</td>
-</tr>
-
-<tr>
-<td>
-<div class="spriteimage chevron-left_02"></div>
-<div class="txt">chevron-left_02</div>
-</td>
-<td>
-<div class="spriteimage chevron-up"></div>
-<div class="txt">chevron-up</div>
-</td>
-<td>
-<div class="spriteimage chevron-up_01"></div>
-<div class="txt">chevron-up_01</div>
-</td>
-<td>
-<div class="spriteimage chevron-down"></div>
-<div class="txt">chevron-down</div>
-</td>
-<td>
-<div class="spriteimage chevron-down_01"></div>
-<div class="txt">chevron-down_01</div>
-</td>
-</tr>
-
-<tr>
-<td>
-<div class="spriteimage chevron-circle-right"></div>
-<div class="txt">chevron-circle-right</div>
-</td>
-<td>
-<div class="spriteimage chevron-circle-left"></div>
-<div class="txt">chevron-circle-left</div>
-</td>
-<td>
-<div class="spriteimage font"></div>
-<div class="txt">font</div>
-</td>
-<td>
-<div class="spriteimage strikethrough"></div>
-<div class="txt">strikethrough</div>
-</td>
-<td>
-<div class="spriteimage strikethrough_01"></div>
-<div class="txt">strikethrough_01</div>
-</td>
-</tr>
-
-<tr>
-<td>
-<div class="spriteimage bold"></div>
-<div class="txt">bold</div>
-</td>
-<td>
-<div class="spriteimage bold_01"></div>
-<div class="txt">bold_01</div>
-</td>
-<td>
-<div class="spriteimage italic"></div>
-<div class="txt">italic</div>
-</td>
-<td>
-<div class="spriteimage italic_01"></div>
-<div class="txt">italic_01</div>
-</td>
-<td>
-<div class="spriteimage underline"></div>
-<div class="txt">underline</div>
-</td>
-</tr>
-
-<tr>
-<td>
-<div class="spriteimage underline_01"></div>
-<div class="txt">underline_01</div>
-</td>
-<td>
-<div class="spriteimage reply"></div>
-<div class="txt">reply</div>
-</td>
-<td>
-<div class="spriteimage forward"></div>
-<div class="txt">forward</div>
-</td>
-<td>
-<div class="spriteimage export"></div>
-<div class="txt">export</div>
-</td>
-<td>
-<div class="spriteimage user"></div>
-<div class="txt">user</div>
-</td>
-</tr>
-
-<tr>
-<td>
-<div class="spriteimage clipboard"></div>
-<div class="txt">clipboard</div>
-</td>
-<td>
-<div class="spriteimage home"></div>
-<div class="txt">home</div>
-</td>
-<td>
-<div class="spriteimage clear"></div>
-<div class="txt">clear</div>
-</td>
-<td>
-<div class="spriteimage resize-handle"></div>
-<div class="txt">resize-handle</div>
-</td>
-<td>
-<div class="spriteimage link"></div>
-<div class="txt">link</div>
-</td>
-</tr>
-
-<tr>
-<td>
-<div class="spriteimage link_01"></div>
-<div class="txt">link_01</div>
-</td>
-<td>
-<div class="spriteimage unlink"></div>
-<div class="txt">unlink</div>
-</td>
-<td>
-<div class="spriteimage unlink_01"></div>
-<div class="txt">unlink_01</div>
-</td>
-<td>
-<div class="spriteimage external-link"></div>
-<div class="txt">external-link</div>
-</td>
-<td>
-<div class="spriteimage external-link_01"></div>
-<div class="txt">external-link_01</div>
-</td>
-</tr>
-
-<tr>
-<td>
-<div class="spriteimage clock"></div>
-<div class="txt">clock</div>
-</td>
-<td>
-<div class="spriteimage settings"></div>
-<div class="txt">settings</div>
-</td>
-<td>
-<div class="spriteimage cut"></div>
-<div class="txt">cut</div>
-</td>
-<td>
-<div class="spriteimage cut_01"></div>
-<div class="txt">cut_01</div>
-</td>
-<td>
-<div class="spriteimage copy"></div>
-<div class="txt">copy</div>
-</td>
-</tr>
-
-<tr>
-<td>
-<div class="spriteimage copy_01"></div>
-<div class="txt">copy_01</div>
-</td>
-<td>
-<div class="spriteimage copy_02"></div>
-<div class="txt">copy_02</div>
-</td>
-<td>
-<div class="spriteimage paste"></div>
-<div class="txt">paste</div>
-</td>
-<td>
-<div class="spriteimage paste_01"></div>
-<div class="txt">paste_01</div>
-</td>
-<td>
-<div class="spriteimage star"></div>
-<div class="txt">star</div>
-</td>
-</tr>
-
-<tr>
-<td>
-<div class="spriteimage pointer"></div>
-<div class="txt">pointer</div>
-</td>
-<td>
-<div class="spriteimage sortdirect"></div>
-<div class="txt">sortdirect</div>
-</td>
-<td>
-<div class="spriteimage shoppingcart"></div>
-<div class="txt">shoppingcart</div>
-</td>
-<td>
-<div class="spriteimage shoppingcart_01"></div>
-<div class="txt">shoppingcart_01</div>
-</td>
-<td>
-<div class="spriteimage cursor"></div>
-<div class="txt">cursor</div>
-</td>
-</tr>
-
-<tr>
-<td>
-<div class="spriteimage warning"></div>
-<div class="txt">warning</div>
-</td>
-<td>
-<div class="spriteimage zoom-out"></div>
-<div class="txt">zoom-out</div>
-</td>
-<td>
-<div class="spriteimage zoom-out_01"></div>
-<div class="txt">zoom-out_01</div>
-</td>
-<td>
-<div class="spriteimage zoom-out_02"></div>
-<div class="txt">zoom-out_02</div>
-</td>
-<td>
-<div class="spriteimage zoom-in"></div>
-<div class="txt">zoom-in</div>
-</td>
-</tr>
-
-<tr>
-<td>
-<div class="spriteimage zoom-in_01"></div>
-<div class="txt">zoom-in_01</div>
-</td>
-<td>
-<div class="spriteimage zoom-in_02"></div>
-<div class="txt">zoom-in_02</div>
-</td>
-<td>
-<div class="spriteimage arrow-circle-left"></div>
-<div class="txt">arrow-circle-left</div>
-</td>
-<td>
-<div class="spriteimage arrow-circle-left_01"></div>
-<div class="txt">arrow-circle-left_01</div>
-</td>
-<td>
-<div class="spriteimage arrow-circle-left_02"></div>
-<div class="txt">arrow-circle-left_02</div>
-</td>
-</tr>
-
-<tr>
-<td>
-<div class="spriteimage arrow-circle-right"></div>
-<div class="txt">arrow-circle-right</div>
-</td>
-<td>
-<div class="spriteimage arrow-circle-right_01"></div>
-<div class="txt">arrow-circle-right_01</div>
-</td>
-<td>
-<div class="spriteimage arrow-circle-right_02"></div>
-<div class="txt">arrow-circle-right_02</div>
-</td>
-<td>
-<div class="spriteimage arrow-circle-up"></div>
-<div class="txt">arrow-circle-up</div>
-</td>
-<td>
-<div class="spriteimage arrow-circle-down"></div>
-<div class="txt">arrow-circle-down</div>
-</td>
-</tr>
-
-<tr>
-<td>
-<div class="spriteimage edit"></div>
-<div class="txt">edit</div>
-</td>
-<td>
-<div class="spriteimage edit_01"></div>
-<div class="txt">edit_01</div>
-</td>
-<td>
-<div class="spriteimage edit_02"></div>
-<div class="txt">edit_02</div>
-</td>
-<td>
-<div class="spriteimage edit_03"></div>
-<div class="txt">edit_03</div>
-</td>
-<td>
-<div class="spriteimage edit_04"></div>
-<div class="txt">edit_04</div>
-</td>
-</tr>
-
-<tr>
-<td>
-<div class="spriteimage edit_05"></div>
-<div class="txt">edit_05</div>
-</td>
-<td>
-<div class="spriteimage notification"></div>
-<div class="txt">notification</div>
-</td>
-<td>
-<div class="spriteimage notification_01"></div>
-<div class="txt">notification_01</div>
-</td>
-<td>
-<div class="spriteimage info"></div>
-<div class="txt">info</div>
-</td>
-<td>
-<div class="spriteimage smiley"></div>
-<div class="txt">smiley</div>
-</td>
-</tr>
-
-<tr>
-<td>
-<div class="spriteimage checkmark"></div>
-<div class="txt">checkmark</div>
-</td>
-<td>
-<div class="spriteimage checkmark_01"></div>
-<div class="txt">checkmark_01</div>
-</td>
-<td>
-<div class="spriteimage media-play"></div>
-<div class="txt">media-play</div>
-</td>
-<td>
-<div class="spriteimage media-pause"></div>
-<div class="txt">media-pause</div>
-</td>
-<td>
-<div class="spriteimage media-eject"></div>
-<div class="txt">media-eject</div>
-</td>
-</tr>
-
-<tr>
-<td>
-<div class="spriteimage media-next"></div>
-<div class="txt">media-next</div>
-</td>
-<td>
-<div class="spriteimage media-previous"></div>
+<div class="spriteimage icon-media-previous"></div>
 <div class="txt">media-previous</div>
+<div class="txt">Unicode:"e119"</div>
 </td>
-<td>
-<div class="spriteimage media-forward"></div>
-<div class="txt">media-forward</div>
+ <td>
+<div class="spriteimage icon-media-previous-item"></div>
+<div class="txt">media-previous-item</div>
+<div class="txt">Unicode:"e120"</div>
 </td>
-<td>
-<div class="spriteimage media-forward_01"></div>
-<div class="txt">media-forward_01</div>
+ <td>
+<div class="spriteimage icon-media-repeat"></div>
+<div class="txt">media-repeat</div>
+<div class="txt">Unicode:"e121"</div>
 </td>
-<td>
-<div class="spriteimage media-forward_02"></div>
-<div class="txt">media-forward_02</div>
+ <td>
+<div class="spriteimage icon-media-select"></div>
+<div class="txt">media-select</div>
+<div class="txt">Unicode:"e122"</div>
+</td>
+ <td>
+<div class="spriteimage icon-media-settings"></div>
+<div class="txt">media-settings</div>
+<div class="txt">Unicode:"e123"</div>
+</td>
+</tr>
+
+<tr>
+ <td>
+<div class="spriteimage icon-media-shuffle"></div>
+<div class="txt">media-shuffle</div>
+<div class="txt">Unicode:"e124"</div>
+</td>
+ <td>
+<div class="spriteimage icon-media-snapshot"></div>
+<div class="txt">media-snapshot</div>
+<div class="txt">Unicode:"e125"</div>
+</td>
+ <td>
+<div class="spriteimage icon-media-stop"></div>
+<div class="txt">media-stop</div>
+<div class="txt">Unicode:"e126"</div>
+</td>
+ <td>
+<div class="spriteimage icon-media-volume"></div>
+<div class="txt">media-volume</div>
+<div class="txt">Unicode:"e127"</div>
+</td>
+ <td>
+<div class="spriteimage icon-uniE128"></div>
+<div class="txt">uniE128</div>
+<div class="txt">Unicode:"e128"</div>
 </td>
 </tr>
 
 <tr>
 <td>
-<div class="spriteimage media-forward_03"></div>
-<div class="txt">media-forward_03</div>
+<div class="spriteimage icon-uniE129"></div>
+<div class="txt">uniE129</div>
+<div class="txt">Unicode:"e129"</div>
 </td>
 <td>
-<div class="spriteimage media-forward_04"></div>
-<div class="txt">media-forward_04</div>
+<div class="spriteimage icon-uniE12A"></div>
+<div class="txt">uniE12A</div>
+<div class="txt">Unicode:"e12a"</div>
 </td>
 <td>
-<div class="spriteimage media-backward"></div>
-<div class="txt">media-backward</div>
+<div class="spriteimage icon-media-repeat-updated"></div>
+<div class="txt">media-repeat-updated</div>
+<div class="txt">Unicode:"e12b"</div>
 </td>
 <td>
-<div class="spriteimage media-backward_01"></div>
-<div class="txt">media-backward_01</div>
+<div class="spriteimage icon-uniE130"></div>
+<div class="txt">uniE130</div>
+<div class="txt">Unicode:"e130"</div>
 </td>
 <td>
-<div class="spriteimage media-backward_02"></div>
-<div class="txt">media-backward_02</div>
-</td>
-</tr>
-
-<tr>
-<td>
-<div class="spriteimage media-backward_03"></div>
-<div class="txt">media-backward_03</div>
-</td>
-<td>
-<div class="spriteimage media-backward_04"></div>
-<div class="txt">media-backward_04</div>
-</td>
-<td>
-<div class="spriteimage play-circle"></div>
-<div class="txt">play-circle</div>
-</td>
-<td>
-<div class="spriteimage full-screen-expand"></div>
-<div class="txt">full-screen-expand</div>
-</td>
-<td>
-<div class="spriteimage full-screen-expand_01"></div>
-<div class="txt">full-screen-expand_01</div>
+<div class="spriteimage icon-uniE131"></div>
+<div class="txt">uniE131</div>
+<div class="txt">Unicode:"e131"</div>
 </td>
 </tr>
 
 <tr>
 <td>
-<div class="spriteimage full-screen-collapse"></div>
-<div class="txt">full-screen-collapse</div>
+<div class="spriteimage icon-media-next1"></div>
+<div class="txt">media-next1</div>
+<div class="txt">Unicode:"e132"</div>
 </td>
 <td>
-<div class="spriteimage full-screen-collapse_01"></div>
-<div class="txt">full-screen-collapse_01</div>
+<div class="spriteimage icon-media-previous1"></div>
+<div class="txt">media-previous1</div>
+<div class="txt">Unicode:"e134"</div>
 </td>
 <td>
-<div class="spriteimage bullets"></div>
-<div class="txt">bullets</div>
+<div class="spriteimage icon-a-54"></div>
+<div class="txt">a-54</div>
+<div class="txt">Unicode:"e135"</div>
 </td>
 <td>
-<div class="spriteimage bullets_01"></div>
-<div class="txt">bullets_01</div>
+<div class="spriteimage icon-a-55"></div>
+<div class="txt">a-55</div>
+<div class="txt">Unicode:"e136"</div>
 </td>
 <td>
-<div class="spriteimage filter"></div>
-<div class="txt">filter</div>
-</td>
-</tr>
-
-<tr>
-<td>
-<div class="spriteimage filter_01"></div>
-<div class="txt">filter_01</div>
-</td>
-<td>
-<div class="spriteimage filternone"></div>
-<div class="txt">filternone</div>
-</td>
-<td>
-<div class="spriteimage filternone_01"></div>
-<div class="txt">filternone_01</div>
-</td>
-<td>
-<div class="spriteimage filter-settings"></div>
-<div class="txt">filter-settings</div>
-</td>
-<td>
-<div class="spriteimage align-right"></div>
-<div class="txt">align-right</div>
+<div class="spriteimage icon-a-56"></div>
+<div class="txt">a-56</div>
+<div class="txt">Unicode:"e137"</div>
 </td>
 </tr>
 
 <tr>
 <td>
-<div class="spriteimage align-right_01"></div>
-<div class="txt">align-right_01</div>
+<div class="spriteimage icon-a-57"></div>
+<div class="txt">a-57</div>
+<div class="txt">Unicode:"e138"</div>
 </td>
 <td>
-<div class="spriteimage align-left"></div>
-<div class="txt">align-left</div>
+<div class="spriteimage icon-a-58"></div>
+<div class="txt">a-58</div>
+<div class="txt">Unicode:"e139"</div>
 </td>
 <td>
-<div class="spriteimage align-left_01"></div>
-<div class="txt">align-left_01</div>
+<div class="spriteimage icon-a-59"></div>
+<div class="txt">a-59</div>
+<div class="txt">Unicode:"e140"</div>
 </td>
 <td>
-<div class="spriteimage align-justify"></div>
-<div class="txt">align-justify</div>
+<div class="spriteimage icon-a-60"></div>
+<div class="txt">a-60</div>
+<div class="txt">Unicode:"e141"</div>
 </td>
 <td>
-<div class="spriteimage align-justify_01"></div>
-<div class="txt">align-justify_01</div>
-</td>
-</tr>
-
-<tr>
-<td>
-<div class="spriteimage align-center"></div>
-<div class="txt">align-center</div>
-</td>
-<td>
-<div class="spriteimage align-center_01"></div>
-<div class="txt">align-center_01</div>
-</td>
-<td>
-<div class="spriteimage align-none"></div>
-<div class="txt">align-none</div>
-</td>
-<td>
-<div class="spriteimage search"></div>
-<div class="txt">search</div>
-</td>
-<td>
-<div class="spriteimage search_01"></div>
-<div class="txt">search_01</div>
+<div class="spriteimage icon-a-61"></div>
+<div class="txt">a-61</div>
+<div class="txt">Unicode:"e142"</div>
 </td>
 </tr>
 
 <tr>
 <td>
-<div class="spriteimage image"></div>
-<div class="txt">image</div>
+<div class="spriteimage icon-a-62"></div>
+<div class="txt">a-62</div>
+<div class="txt">Unicode:"e143"</div>
 </td>
 <td>
-<div class="spriteimage image_01"></div>
-<div class="txt">image_01</div>
+<div class="spriteimage icon-a-63"></div>
+<div class="txt">a-63</div>
+<div class="txt">Unicode:"e144"</div>
 </td>
 <td>
-<div class="spriteimage plus"></div>
-<div class="txt">plus</div>
+<div class="spriteimage icon-uniE150"></div>
+<div class="txt">uniE150</div>
+<div class="txt">Unicode:"e150"</div>
 </td>
 <td>
-<div class="spriteimage plus_01"></div>
-<div class="txt">plus_01</div>
+<div class="spriteimage icon-uniE151"></div>
+<div class="txt">uniE151</div>
+<div class="txt">Unicode:"e151"</div>
 </td>
 <td>
-<div class="spriteimage minus"></div>
-<div class="txt">minus</div>
-</td>
-</tr>
-
-<tr>
-<td>
-<div class="spriteimage minus_01"></div>
-<div class="txt">minus_01</div>
-</td>
-<td>
-<div class="spriteimage code"></div>
-<div class="txt">code</div>
-</td>
-<td>
-<div class="spriteimage code_01"></div>
-<div class="txt">e-code_01</div>
-</td>
-<td>
-<div class="spriteimage code-hexagon"></div>
-<div class="txt">code-hexagon</div>
-</td>
-<td>
-<div class="spriteimage file-code"></div>
-<div class="txt">file-code</div>
+<div class="spriteimage icon-uniE152"></div>
+<div class="txt">uniE152</div>
+<div class="txt">Unicode:"e152"</div>
 </td>
 </tr>
 
 <tr>
 <td>
-<div class="spriteimage file-html"></div>
-<div class="txt">file-html</div>
+<div class="spriteimage icon-uniE153"></div>
+<div class="txt">uniE153</div>
+<div class="txt">Unicode:"e153"</div>
 </td>
 <td>
-<div class="spriteimage palette"></div>
-<div class="txt">palette</div>
+<div class="spriteimage icon-uniE600"></div>
+<div class="txt">uniE600</div>
+<div class="txt">Unicode:"e600"</div>
 </td>
 <td>
-<div class="spriteimage reload"></div>
-<div class="txt">reload</div>
+<div class="spriteimage icon-uniE601"></div>
+<div class="txt">uniE601</div>
+<div class="txt">Unicode:"e601"</div>
 </td>
 <td>
-<div class="spriteimage delete"></div>
-<div class="txt">delete</div>
+<div class="spriteimage icon-uniE602"></div>
+<div class="txt">uniE602</div>
+<div class="txt">Unicode:"e602"</div>
 </td>
 <td>
-<div class="spriteimage delete_01"></div>
-<div class="txt">delete_01</div>
-</td>
-</tr>
-
-<tr>
-<td>
-<div class="spriteimage delete_02"></div>
-<div class="txt">delete_02</div>
-</td>
-<td>
-<div class="spriteimage delete_03"></div>
-<div class="txt">delete_03</div>
-</td>
-<td>
-<div class="spriteimage delete_04"></div>
-<div class="txt">delete_04</div>
-</td>
-<td>
-<div class="spriteimage delete_05"></div>
-<div class="txt">delete_05</div>
-</td>
-<td>
-<div class="spriteimage pin"></div>
-<div class="txt">pin</div>
+<div class="spriteimage icon-uniE603"></div>
+<div class="txt">uniE603</div>
+<div class="txt">Unicode:"e603"</div>
 </td>
 </tr>
 
 <tr>
 <td>
-<div class="spriteimage unpin"></div>
-<div class="txt">unpin</div>
+<div class="spriteimage icon-uniE604"></div>
+<div class="txt">uniE604</div>
+<div class="txt">Unicode:"e604"</div>
 </td>
 <td>
-<div class="spriteimage stop"></div>
-<div class="txt">stop</div>
+<div class="spriteimage icon-uniE605"></div>
+<div class="txt">uniE605</div>
+<div class="txt">Unicode:"e605"</div>
 </td>
 <td>
-<div class="spriteimage power-cord"></div>
-<div class="txt">power-cord</div>
+<div class="spriteimage icon-uniE606"></div>
+<div class="txt">uniE606</div>
+<div class="txt">Unicode:"e606"</div>
 </td>
 <td>
-<div class="spriteimage fullborders"></div>
-<div class="txt">fullborders</div>
+<div class="spriteimage icon-uniE607"></div>
+<div class="txt">uniE607</div>
+<div class="txt">Unicode:"e607"</div>
 </td>
 <td>
-<div class="spriteimage threed"></div>
-<div class="txt">3d</div>
-</td>
-</tr>
-
-<tr>
-<td>
-<div class="spriteimage file-excel"></div>
-<div class="txt">file-excel</div>
-</td>
-<td>
-<div class="spriteimage file-text"></div>
-<div class="txt">file-text</div>
-</td>
-<td>
-<div class="spriteimage file-text_01"></div>
-<div class="txt">file-text_01</div>
-</td>
-<td>
-<div class="spriteimage file-mdx"></div>
-<div class="txt">file-mdx</div>
-</td>
-<td>
-<div class="spriteimage file-empty"></div>
-<div class="txt">file-empty</div>
+<div class="spriteimage icon-uniE608"></div>
+<div class="txt">uniE608</div>
+<div class="txt">Unicode:"e608"</div>
 </td>
 </tr>
 
 <tr>
 <td>
-<div class="spriteimage file-list"></div>
-<div class="txt">file-list</div>
+<div class="spriteimage icon-uniE609"></div>
+<div class="txt">uniE609</div>
+<div class="txt">Unicode:"e609"</div>
 </td>
 <td>
-<div class="spriteimage file-delete_01"></div>
-<div class="txt">file-delete_01</div>
+<div class="spriteimage icon-uniE60A"></div>
+<div class="txt">uniE60A</div>
+<div class="txt">Unicode:"e60a"</div>
 </td>
 <td>
-<div class="spriteimage file-settings"></div>
-<div class="txt">file-settings</div>
+<div class="spriteimage icon-uniE60B"></div>
+<div class="txt">uniE60B</div>
+<div class="txt">Unicode:"e60b"</div>
 </td>
 <td>
-<div class="spriteimage circle-square"></div>
-<div class="txt">circle-square</div>
+<div class="spriteimage icon-uniE60C"></div>
+<div class="txt">uniE60C</div>
+<div class="txt">Unicode:"e60c"</div>
 </td>
 <td>
-<div class="spriteimage diagonal-square"></div>
-<div class="txt">diagonal-square</div>
-</td>
-</tr>
-
-<tr>
-<td>
-<div class="spriteimage hexagon-square"></div>
-<div class="txt">hexagon-square</div>
-</td>
-<td>
-<div class="spriteimage pentagon-square"></div>
-<div class="txt">pentagon-square</div>
-</td>
-<td>
-<div class="spriteimage globe"></div>
-<div class="txt">globe</div>
-</td>
-<td>
-<div class="spriteimage globe_01"></div>
-<div class="txt">globe_01</div>
-</td>
-<td>
-<div class="spriteimage vertical-barchart"></div>
-<div class="txt">vertical-barchart</div>
+<div class="spriteimage icon-uniE60D"></div>
+<div class="txt">uniE60D</div>
+<div class="txt">Unicode:"e60d"</div>
 </td>
 </tr>
 
 <tr>
 <td>
-<div class="spriteimage vertical-barchart_01"></div>
-<div class="txt">vertical-barchart_01</div>
+<div class="spriteimage icon-uniE60E"></div>
+<div class="txt">uniE60E</div>
+<div class="txt">Unicode:"e60e"</div>
 </td>
 <td>
-<div class="spriteimage horizontal-barchart"></div>
-<div class="txt">horizontal-barchart</div>
+<div class="spriteimage icon-uniE60F"></div>
+<div class="txt">uniE60F</div>
+<div class="txt">Unicode:"e60f"</div>
 </td>
 <td>
-<div class="spriteimage horizontal-barchart_01"></div>
-<div class="txt">horizontal-barchart_01</div>
+<div class="spriteimage icon-uniE610"></div>
+<div class="txt">uniE610</div>
+<div class="txt">Unicode:"e610"</div>
 </td>
 <td>
-<div class="spriteimage pie-chart"></div>
-<div class="txt">pie-chart</div>
+<div class="spriteimage icon-uniE611"></div>
+<div class="txt">uniE611</div>
+<div class="txt">Unicode:"e611"</div>
 </td>
 <td>
-<div class="spriteimage triangle"></div>
-<div class="txt">triangle</div>
-</td>
-</tr>
-
-<tr>
-<td>
-<div class="spriteimage inverted-triangle"></div>
-<div class="txt">inverted-triangle</div>
-</td>
-<td>
-<div class="spriteimage pyramid"></div>
-<div class="txt">pyramid</div>
-</td>
-<td>
-<div class="spriteimage inverted-pyramid"></div>
-<div class="txt">inverted-pyramid</div>
-</td>
-<td>
-<div class="spriteimage comments"></div>
-<div class="txt">comments</div>
-</td>
-<td>
-<div class="spriteimage folder"></div>
-<div class="txt">folder</div>
+<div class="spriteimage icon-uniE612"></div>
+<div class="txt">uniE612</div>
+<div class="txt">Unicode:"e612"</div>
 </td>
 </tr>
 
 <tr>
 <td>
-<div class="spriteimage folder_01"></div>
-<div class="txt">folder_01</div>
+<div class="spriteimage icon-uniE613"></div>
+<div class="txt">uniE613</div>
+<div class="txt">Unicode:"e613"</div>
 </td>
 <td>
-<div class="spriteimage folder-open"></div>
-<div class="txt">folder-open</div>
+<div class="spriteimage icon-uniE614"></div>
+<div class="txt">uniE614</div>
+<div class="txt">Unicode:"e614"</div>
 </td>
 <td>
-<div class="spriteimage folder-open_01"></div>
-<div class="txt">folder-open_01</div>
+<div class="spriteimage icon-uniE615"></div>
+<div class="txt">uniE615</div>
+<div class="txt">Unicode:"e615"</div>
 </td>
 <td>
-<div class="spriteimage folder-add"></div>
-<div class="txt">folder-add</div>
+<div class="spriteimage icon-uniE616"></div>
+<div class="txt">uniE616</div>
+<div class="txt">Unicode:"e616"</div>
 </td>
 <td>
-<div class="spriteimage signal"></div>
-<div class="txt">signal</div>
-</td>
-</tr>
-
-<tr>
-<td>
-<div class="spriteimage sort-alpha-desc"></div>
-<div class="txt">sort-alpha-desc</div>
-</td>
-<td>
-<div class="spriteimage sort-alpha-desc_01"></div>
-<div class="txt">sort-alpha-desc_01</div>
-</td>
-<td>
-<div class="spriteimage sort-alpha-asc"></div>
-<div class="txt">sort-alpha-asc</div>
-</td>
-<td>
-<div class="spriteimage sort-alpha-asc_01"></div>
-<div class="txt">sort-alpha-asc_01</div>
-</td>
-<td>
-<div class="spriteimage print"></div>
-<div class="txt">print</div>
+<div class="spriteimage icon-uniE617"></div>
+<div class="txt">uniE617</div>
+<div class="txt">Unicode:"e617"</div>
 </td>
 </tr>
 
 <tr>
 <td>
-<div class="spriteimage print_01"></div>
-<div class="txt">print_01</div>
+<div class="spriteimage icon-uniE618"></div>
+<div class="txt">uniE618</div>
+<div class="txt">Unicode:"e618"</div>
 </td>
 <td>
-<div class="spriteimage print_02"></div>
-<div class="txt">print_02</div>
+<div class="spriteimage icon-uniE619"></div>
+<div class="txt">uniE619</div>
+<div class="txt">Unicode:"e619"</div>
 </td>
 <td>
-<div class="spriteimage print_03"></div>
-<div class="txt">print_03</div>
+<div class="spriteimage icon-uniE61A"></div>
+<div class="txt">uniE61A</div>
+<div class="txt">Unicode:"e61a"</div>
 </td>
 <td>
-<div class="spriteimage word"></div>
-<div class="txt">word</div>
+<div class="spriteimage icon-uniE61B"></div>
+<div class="txt">uniE61B</div>
+<div class="txt">Unicode:"e61b"</div>
 </td>
 <td>
-<div class="spriteimage word_01"></div>
-<div class="txt">word_01</div>
-</td>
-</tr>
-
-<tr>
-<td>
-<div class="spriteimage word-export"></div>
-<div class="txt">word-export</div>
-</td>
-<td>
-<div class="spriteimage pdf"></div>
-<div class="txt">pdf</div>
-</td>
-<td>
-<div class="spriteimage pdf_01"></div>
-<div class="txt">pdf_01</div>
-</td>
-<td>
-<div class="spriteimage pdf-export"></div>
-<div class="txt">pdf-export</div>
-</td>
-<td>
-<div class="spriteimage excel"></div>
-<div class="txt">excel</div>
+<div class="spriteimage icon-uniE61C"></div>
+<div class="txt">uniE61C</div>
+<div class="txt">Unicode:"e61c"</div>
 </td>
 </tr>
 
 <tr>
 <td>
-<div class="spriteimage excel_01"></div>
-<div class="txt">excel_01</div>
+<div class="spriteimage icon-uniE61D"></div>
+<div class="txt">uniE61D</div>
+<div class="txt">Unicode:"e61d"</div>
 </td>
 <td>
-<div class="spriteimage excel-export"></div>
-<div class="txt">excel-export</div>
+<div class="spriteimage icon-uniE61E"></div>
+<div class="txt">uniE61E</div>
+<div class="txt">Unicode:"e61e"</div>
 </td>
 <td>
-<div class="spriteimage powerpoint-export"></div>
-<div class="txt">powerpoint-export</div>
+<div class="spriteimage icon-uniE61F"></div>
+<div class="txt">uniE61F</div>
+<div class="txt">Unicode:"e61f"</div>
 </td>
 <td>
-<div class="spriteimage ie"></div>
-<div class="txt">ie</div>
+<div class="spriteimage icon-uniE620"></div>
+<div class="txt">icon-uniE620</div>
+<div class="txt">Unicode:"e620"</div>
 </td>
 <td>
-<div class="spriteimage exit"></div>
-<div class="txt">exit</div>
-</td>
-</tr>
-
-<tr>
-<td>
-<div class="spriteimage document"></div>
-<div class="txt">document</div>
-</td>
-<td>
-<div class="spriteimage documents"></div>
-<div class="txt">documents</div>
-</td>
-<td>
-<div class="spriteimage question"></div>
-<div class="txt">question</div>
-</td>
-<td>
-<div class="spriteimage film"></div>
-<div class="txt">film</div>
-</td>
-<td>
-<div class="spriteimage volume-up"></div>
-<div class="txt">volume-up</div>
+<div class="spriteimage icon-uniE621"></div>
+<div class="txt">uniE621</div>
+<div class="txt">Unicode:"e621"</div>
 </td>
 </tr>
 
 <tr>
 <td>
-<div class="spriteimage circle-one"></div>
-<div class="txt">circle-one</div>
+<div class="spriteimage icon-uniE622"></div>
+<div class="txt">uniE622</div>
+<div class="txt">Unicode:"e622"</div>
 </td>
 <td>
-<div class="spriteimage circle-two"></div>
-<div class="txt">circle-two</div>
+<div class="spriteimage icon-uniE623"></div>
+<div class="txt">uniE623</div>
+<div class="txt">Unicode:"e623"</div>
 </td>
 <td>
-<div class="spriteimage circle-three"></div>
-<div class="txt">circle-three</div>
+<div class="spriteimage icon-uniE624"></div>
+<div class="txt">uniE624</div>
+<div class="txt">Unicode:"e624"</div>
 </td>
 <td>
-<div class="spriteimage circle-four"></div>
-<div class="txt">circle-four</div>
+<div class="spriteimage icon-uniE625"></div>
+<div class="txt">uniE625</div>
+<div class="txt">Unicode:"e625"</div>
 </td>
 <td>
-<div class="spriteimage arrow-right"></div>
-<div class="txt">arrow-right</div>
-</td>
-</tr>
-
-<tr>
-<td>
-<div class="spriteimage arrow-left"></div>
-<div class="txt">arrow-left</div>
-</td>
-<td>
-<div class="spriteimage arrow-left_01"></div>
-<div class="txt">arrow-left_01</div>
-</td>
-<td>
-<div class="spriteimage arrow-up"></div>
-<div class="txt">arrow-up</div>
-</td>
-<td>
-<div class="spriteimage arrow-down"></div>
-<div class="txt">arrow-down</div>
-</td>
-<td>
-<div class="spriteimage arrow-down_01"></div>
-<div class="txt">arrow-down_01</div>
+<div class="spriteimage icon-uniE626"></div>
+<div class="txt">uniE626</div>
+<div class="txt">Unicode:"e626"</div>
 </td>
 </tr>
 
 <tr>
 <td>
-<div class="spriteimage sync"></div>
-<div class="txt">sync</div>
+<div class="spriteimage icon-uniE627"></div>
+<div class="txt">uniE627</div>
+<div class="txt">Unicode:"e627"</div>
 </td>
 <td>
-<div class="spriteimage sync-disabled"></div>
-<div class="txt">sync-disabled</div>
+<div class="spriteimage icon-uniE628"></div>
+<div class="txt">uniE628</div>
+<div class="txt">Unicode:"e628"</div>
 </td>
 <td>
-<div class="spriteimage paperclip"></div>
-<div class="txt">paperclip</div>
+<div class="spriteimage icon-uniE629"></div>
+<div class="txt">uniE629</div>
+<div class="txt">Unicode:"e629"</div>
 </td>
 <td>
-<div class="spriteimage paperclip_01"></div>
-<div class="txt">paperclip_01</div>
+<div class="spriteimage icon-uniE62A"></div>
+<div class="txt">uniE62A</div>
+<div class="txt">Unicode:"e62a"</div>
 </td>
 <td>
-<div class="spriteimage circle"></div>
-<div class="txt">circle</div>
-</td>
-</tr>
-
-<tr>
-<td>
-<div class="spriteimage circle_01"></div>
-<div class="txt">circle_01</div>
-</td>
-<td>
-<div class="spriteimage th-list"></div>
-<div class="txt">th-list</div>
-</td>
-<td>
-<div class="spriteimage th-large"></div>
-<div class="txt">th-large</div>
-</td>
-<td>
-<div class="spriteimage th"></div>
-<div class="txt">th</div>
-</td>
-<td>
-<div class="spriteimage th-small"></div>
-<div class="txt">th-small</div>
+<div class="spriteimage icon-uniE62B"></div>
+<div class="txt">uniE62B</div>
+<div class="txt">Unicode:"e62b"</div>
 </td>
 </tr>
 
 <tr>
 <td>
-<div class="spriteimage view-details"></div>
-<div class="txt">view-details</div>
+<div class="spriteimage icon-uniE62C"></div>
+<div class="txt">uniE62C</div>
+<div class="txt">Unicode:"e62c"</div>
 </td>
 <td>
-<div class="spriteimage file-resize-four-direction"></div>
-<div class="txt">file-resize-four-direction</div>
+<div class="spriteimage icon-uniE62D"></div>
+<div class="txt">uniE62D</div>
+<div class="txt">Unicode:"e62d"</div>
 </td>
 <td>
-<div class="spriteimage file-resize-horizontal"></div>
-<div class="txt">file-resize-horizontal</div>
+<div class="spriteimage icon-uniE62E"></div>
+<div class="txt">uniE62E</div>
+<div class="txt">Unicode:"e62e"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE62F"></div>
+<div class="txt">uniE62F</div>
+<div class="txt">Unicode:"e62f"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE630"></div>
+<div class="txt">uniE630</div>
+<div class="txt">Unicode:"e630"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-uniE631"></div>
+<div class="txt">uniE631</div>
+<div class="txt">Unicode:"e631"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE632"></div>
+<div class="txt">uniE632</div>
+<div class="txt">Unicode:"e632"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE633"></div>
+<div class="txt">uniE633</div>
+<div class="txt">Unicode:"e633"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE634"></div>
+<div class="txt">uniE634</div>
+<div class="txt">Unicode:"e634"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE635"></div>
+<div class="txt">uniE635</div>
+<div class="txt">Unicode:"e635"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-uniE636"></div>
+<div class="txt">uniE636</div>
+<div class="txt">Unicode:"e636"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE637"></div>
+<div class="txt">uniE637</div>
+<div class="txt">Unicode:"e637"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE638"></div>
+<div class="txt">uniE638</div>
+<div class="txt">Unicode:"e638"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE639"></div>
+<div class="txt">uniE639</div>
+<div class="txt">Unicode:"e639"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE63A"></div>
+<div class="txt">uniE63A</div>
+<div class="txt">Unicode:"e63a"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-uniE63B"></div>
+<div class="txt">uniE63B</div>
+<div class="txt">Unicode:"e63b"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE63C"></div>
+<div class="txt">uniE63C</div>
+<div class="txt">Unicode:"e63c"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE63D"></div>
+<div class="txt">uniE63D</div>
+<div class="txt">Unicode:"e63d"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE63E"></div>
+<div class="txt">uniE63E</div>
+<div class="txt">Unicode:"e63e"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE63F"></div>
+<div class="txt">uniE63F</div>
+<div class="txt">Unicode:"e63f"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-uniE640"></div>
+<div class="txt">uniE640</div>
+<div class="txt">Unicode:"e640"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE641"></div>
+<div class="txt">uniE641</div>
+<div class="txt">Unicode:"e641"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE642"></div>
+<div class="txt">uniE642</div>
+<div class="txt">Unicode:"e642"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE643"></div>
+<div class="txt">uniE643</div>
+<div class="txt">Unicode:"e643"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE644"></div>
+<div class="txt">uniE644</div>
+<div class="txt">Unicode:"e644"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-uniE645"></div>
+<div class="txt">uniE645</div>
+<div class="txt">Unicode:"e645"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE646"></div>
+<div class="txt">uniE646</div>
+<div class="txt">Unicode:"e646"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE647"></div>
+<div class="txt">uniE647</div>
+<div class="txt">Unicode:"e647"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE648"></div>
+<div class="txt">uniE648</div>
+<div class="txt">Unicode:"e648"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE649"></div>
+<div class="txt">uniE649</div>
+<div class="txt">Unicode:"e649"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-uniE64A"></div>
+<div class="txt">uniE64A</div>
+<div class="txt">Unicode:"e64a"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE64B"></div>
+<div class="txt">uniE64B</div>
+<div class="txt">Unicode:"e64b"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE64C"></div>
+<div class="txt">uniE64C</div>
+<div class="txt">Unicode:"e64c"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE64D"></div>
+<div class="txt">uniE64D</div>
+<div class="txt">Unicode:"e64d"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE64E"></div>
+<div class="txt">uniE64E</div>
+<div class="txt">Unicode:"e64e"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-uniE64F"></div>
+<div class="txt">uniE64F</div>
+<div class="txt">Unicode:"e64f"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE650"></div>
+<div class="txt">uniE650</div>
+<div class="txt">Unicode:"e650"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE651"></div>
+<div class="txt">uniE651</div>
+<div class="txt">Unicode:"e651"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE652"></div>
+<div class="txt">uniE652</div>
+<div class="txt">Unicode:"e652"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE653"></div>
+<div class="txt">uniE653</div>
+<div class="txt">Unicode:"e653"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-uniE654"></div>
+<div class="txt">uniE654</div>
+<div class="txt">Unicode:"e654"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE655"></div>
+<div class="txt">uniE655</div>
+<div class="txt">Unicode:"e655"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE656"></div>
+<div class="txt">uniE656</div>
+<div class="txt">Unicode:"e656"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE657"></div>
+<div class="txt">uniE657</div>
+<div class="txt">Unicode:"e657"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE658"></div>
+<div class="txt">uniE658</div>
+<div class="txt">Unicode:"e658"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-uniE659"></div>
+<div class="txt">uniE659</div>
+<div class="txt">Unicode:"e659"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE65A"></div>
+<div class="txt">uniE65A</div>
+<div class="txt">Unicode:"e65a"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE65B"></div>
+<div class="txt">uniE65B</div>
+<div class="txt">Unicode:"e65b"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE65C"></div>
+<div class="txt">uniE65C</div>
+<div class="txt">Unicode:"e65c"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE65D"></div>
+<div class="txt">uniE65D</div>
+<div class="txt">Unicode:"e65d"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-uniE65E"></div>
+<div class="txt">uniE65E</div>
+<div class="txt">Unicode:"e65e"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE65F"></div>
+<div class="txt">uniE65F</div>
+<div class="txt">Unicode:"e65f"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE660"></div>
+<div class="txt">uniE660</div>
+<div class="txt">Unicode:"e660"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE661"></div>
+<div class="txt">uniE661</div>
+<div class="txt">Unicode:"e661"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE662"></div>
+<div class="txt">uniE662</div>
+<div class="txt">Unicode:"e662"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-uniE663"></div>
+<div class="txt">uniE663</div>
+<div class="txt">Unicode:"e663"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE664"></div>
+<div class="txt">uniE664</div>
+<div class="txt">Unicode:"e664"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE665"></div>
+<div class="txt">uniE665</div>
+<div class="txt">Unicode:"e665"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE666"></div>
+<div class="txt">uniE666</div>
+<div class="txt">Unicode:"e666"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE667"></div>
+<div class="txt">uniE667</div>
+<div class="txt">Unicode:"e667"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-uniE668"></div>
+<div class="txt">uniE668</div>
+<div class="txt">Unicode:"e668"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE669"></div>
+<div class="txt">uniE669</div>
+<div class="txt">Unicode:"e669"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE66A"></div>
+<div class="txt">uniE66A</div>
+<div class="txt">Unicode:"e66a"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE66B"></div>
+<div class="txt">uniE66B</div>
+<div class="txt">Unicode:"e66b"</div>
+</td>
+<td>
+<div class="spriteimage icon-yAxis-title"></div>
+<div class="txt">yAxis-title</div>
+<div class="txt">Unicode:"e918"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-uniE66C"></div>
+<div class="txt">uniE66C</div>
+<div class="txt">Unicode:"e66c"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE66D"></div>
+<div class="txt">uniE66D</div>
+<div class="txt">Unicode:"e66d"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE66E"></div>
+<div class="txt">uniE66E</div>
+<div class="txt">Unicode:"e66e"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE66F"></div>
+<div class="txt">uniE66F</div>
+<div class="txt">Unicode:"e66f"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE670"></div>
+<div class="txt">uniE670</div>
+<div class="txt">Unicode:"e670"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-uniE671"></div>
+<div class="txt">uniE671</div>
+<div class="txt">Unicode:"e671"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE672"></div>
+<div class="txt">uniE672</div>
+<div class="txt">Unicode:"e672"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE673"></div>
+<div class="txt">uniE673</div>
+<div class="txt">Unicode:"e673"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE674"></div>
+<div class="txt">uniE674</div>
+<div class="txt">Unicode:"e674"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE675"></div>
+<div class="txt">uniE675</div>
+<div class="txt">Unicode:"e675"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-uniE676"></div>
+<div class="txt">uniE676</div>
+<div class="txt">Unicode:"e676"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE677"></div>
+<div class="txt">uniE677</div>
+<div class="txt">Unicode:"e677"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE678"></div>
+<div class="txt">uniE678</div>
+<div class="txt">Unicode:"e678"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE679"></div>
+<div class="txt">uniE679</div>
+<div class="txt">Unicode:"e679"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE67A"></div>
+<div class="txt">uniE67A</div>
+<div class="txt">Unicode:"e67a"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-uniE67B"></div>
+<div class="txt">uniE67B</div>
+<div class="txt">Unicode:"e67b"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE67C"></div>
+<div class="txt">uniE67C</div>
+<div class="txt">Unicode:"e67c"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE67D"></div>
+<div class="txt">uniE67D</div>
+<div class="txt">Unicode:"e67d"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE67E"></div>
+<div class="txt">uniE67E</div>
+<div class="txt">Unicode:"e67e"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE67F"></div>
+<div class="txt">uniE67F</div>
+<div class="txt">Unicode:"e67f"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-uniE680"></div>
+<div class="txt">uniE680</div>
+<div class="txt">Unicode:"e680"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE681"></div>
+<div class="txt">uniE681</div>
+<div class="txt">Unicode:"e681"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE682"></div>
+<div class="txt">uniE682</div>
+<div class="txt">Unicode:"e682"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE683"></div>
+<div class="txt">uniE683</div>
+<div class="txt">Unicode:"e683"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE684"></div>
+<div class="txt">uniE684</div>
+<div class="txt">Unicode:"e684"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-uniE685"></div>
+<div class="txt">uniE685</div>
+<div class="txt">Unicode:"e685"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE686"></div>
+<div class="txt">uniE686</div>
+<div class="txt">Unicode:"e686"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE687"></div>
+<div class="txt">uniE687</div>
+<div class="txt">Unicode:"e687"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE688"></div>
+<div class="txt">uniE688</div>
+<div class="txt">Unicode:"e688"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE689"></div>
+<div class="txt">uniE689</div>
+<div class="txt">Unicode:"e689"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-uniE68A"></div>
+<div class="txt">uniE68A</div>
+<div class="txt">Unicode:"e68a"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE68B"></div>
+<div class="txt">uniE68B</div>
+<div class="txt">Unicode:"e68b"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE68C"></div>
+<div class="txt">uniE68C</div>
+<div class="txt">Unicode:"e68c"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE68D"></div>
+<div class="txt">uniE68D</div>
+<div class="txt">Unicode:"e68d"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE68E"></div>
+<div class="txt">uniE68E</div>
+<div class="txt">Unicode:"e68e"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-uniE68F"></div>
+<div class="txt">uniE68F</div>
+<div class="txt">Unicode:"e68f"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE690"></div>
+<div class="txt">uniE690</div>
+<div class="txt">Unicode:"e690"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE691"></div>
+<div class="txt">uniE691</div>
+<div class="txt">Unicode:"e691"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE692"></div>
+<div class="txt">uniE692</div>
+<div class="txt">Unicode:"e692"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE693"></div>
+<div class="txt">uniE693</div>
+<div class="txt">Unicode:"e693"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-uniE694"></div>
+<div class="txt">uniE694</div>
+<div class="txt">Unicode:"e694"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE695"></div>
+<div class="txt">uniE695</div>
+<div class="txt">Unicode:"e695"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE696"></div>
+<div class="txt">uniE696</div>
+<div class="txt">Unicode:"e696"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE697"></div>
+<div class="txt">uniE697</div>
+<div class="txt">Unicode:"e697"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE698"></div>
+<div class="txt">uniE698</div>
+<div class="txt">Unicode:"e698"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-uniE699"></div>
+<div class="txt">uniE699</div>
+<div class="txt">Unicode:"e699"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE69A"></div>
+<div class="txt">uniE69A</div>
+<div class="txt">Unicode:"e69a"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE69B"></div>
+<div class="txt">uniE69B</div>
+<div class="txt">Unicode:"e69b"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE69C"></div>
+<div class="txt">uniE69C</div>
+<div class="txt">Unicode:"e69c"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE69D"></div>
+<div class="txt">uniE69D</div>
+<div class="txt">Unicode:"e69d"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-uniE69E"></div>
+<div class="txt">uniE69E</div>
+<div class="txt">Unicode:"e69e"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE69F"></div>
+<div class="txt">uniE69F</div>
+<div class="txt">Unicode:"e69f"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE6A0"></div>
+<div class="txt">uniE6A0</div>
+<div class="txt">Unicode:"e6a0"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE6A1"></div>
+<div class="txt">uniE6A1</div>
+<div class="txt">Unicode:"e6a1"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE6A2"></div>
+<div class="txt">uniE6A2</div>
+<div class="txt">Unicode:"e6a2"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-uniE6A3"></div>
+<div class="txt">uniE6A3</div>
+<div class="txt">Unicode:"e6a3"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE6A4"></div>
+<div class="txt">uniE6A4</div>
+<div class="txt">Unicode:"e6a4"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE6A5"></div>
+<div class="txt">uniE6A5</div>
+<div class="txt">Unicode:"e6a5"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE6A6"></div>
+<div class="txt">uniE6A6</div>
+<div class="txt">Unicode:"e6a6"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE6A7"></div>
+<div class="txt">uniE6A7</div>
+<div class="txt">Unicode:"e6a7"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-uniE6A8"></div>
+<div class="txt">uniE6A8</div>
+<div class="txt">Unicode:"e6a8"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE6A9"></div>
+<div class="txt">uniE6A9</div>
+<div class="txt">Unicode:"e6a9"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE6AA"></div>
+<div class="txt">uniE6AA</div>
+<div class="txt">Unicode:"e6aa"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE6AB"></div>
+<div class="txt">uniE6AB</div>
+<div class="txt">Unicode:"e6ab"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE6AC"></div>
+<div class="txt">uniE6AC</div>
+<div class="txt">Unicode:"e6ac"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-uniE6AD"></div>
+<div class="txt">uniE6AD</div>
+<div class="txt">Unicode:"e6ad"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE6AE"></div>
+<div class="txt">uniE6AE</div>
+<div class="txt">Unicode:"e6ae"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE6AF"></div>
+<div class="txt">uniE6AF</div>
+<div class="txt">Unicode:"e6af"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE6B0"></div>
+<div class="txt">uniE6B0</div>
+<div class="txt">Unicode:"e6b0"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE6B1"></div>
+<div class="txt">uniE6B1</div>
+<div class="txt">Unicode:"e6b1"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-uniE6B2"></div>
+<div class="txt">uniE6B2</div>
+<div class="txt">Unicode:"e6b2"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE6B3"></div>
+<div class="txt">uniE6B3</div>
+<div class="txt">Unicode:"e6b3"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE6B4"></div>
+<div class="txt">uniE6B4</div>
+<div class="txt">Unicode:"e6b4"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE6B5"></div>
+<div class="txt">uniE6B5</div>
+<div class="txt">Unicode:"e6b5"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE6B6"></div>
+<div class="txt">uniE6B6</div>
+<div class="txt">Unicode:"e6b6"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-uniE6B7"></div>
+<div class="txt">uniE6B7</div>
+<div class="txt">Unicode:"e6b7"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE6B8"></div>
+<div class="txt">uniE6B8</div>
+<div class="txt">Unicode:"e6b8"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE6B9"></div>
+<div class="txt">uniE6B9</div>
+<div class="txt">Unicode:"e6b9"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE6BA"></div>
+<div class="txt">uniE6BA</div>
+<div class="txt">Unicode:"e6ba"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE6BB"></div>
+<div class="txt">uniE6BB</div>
+<div class="txt">Unicode:"e6bb"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-uniE6BC"></div>
+<div class="txt">uniE6BC</div>
+<div class="txt">Unicode:"e6bc"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE6BD"></div>
+<div class="txt">uniE6BD</div>
+<div class="txt">Unicode:"e6bd"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE6BE"></div>
+<div class="txt">uniE6BE</div>
+<div class="txt">Unicode:"e6be"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE6BF"></div>
+<div class="txt">icon-uniE6BF</div>
+<div class="txt">Unicode:"e6bf"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE6C0"></div>
+<div class="txt">uniE6C0</div>
+<div class="txt">Unicode:"e6c0"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-uniE6C1"></div>
+<div class="txt">uniE6C1</div>
+<div class="txt">Unicode:"e6c1"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE6C2"></div>
+<div class="txt">uniE6C2</div>
+<div class="txt">Unicode:"e6c2"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE6C3"></div>
+<div class="txt">uniE6C3</div>
+<div class="txt">Unicode:"e6c3"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE6C4"></div>
+<div class="txt">uniE6C4</div>
+<div class="txt">Unicode:"e6c4"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE6C5"></div>
+<div class="txt">uniE6C5</div>
+<div class="txt">Unicode:"e6c5"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-uniE6C6"></div>
+<div class="txt">uniE6C6</div>
+<div class="txt">Unicode:"e6c6"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE6C7"></div>
+<div class="txt">uniE6C7</div>
+<div class="txt">Unicode:"e6c7"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE6C8"></div>
+<div class="txt">uniE6C8</div>
+<div class="txt">Unicode:"e6c8"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE6C9"></div>
+<div class="txt">uniE6C9</div>
+<div class="txt">Unicode:"e6c9"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE6CA"></div>
+<div class="txt">uniE6CA</div>
+<div class="txt">Unicode:"e6ca"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-uniE6CB"></div>
+<div class="txt">uniE6CB</div>
+<div class="txt">Unicode:"e6cb"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE6CC"></div>
+<div class="txt">uniE6CC</div>
+<div class="txt">Unicode:"e6cc"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE6CD"></div>
+<div class="txt">uniE6CD</div>
+<div class="txt">Unicode:"e6cd"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE6CE"></div>
+<div class="txt">uniE6CE</div>
+<div class="txt">Unicode:"e6ce"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE6CF"></div>
+<div class="txt">uniE6CF</div>
+<div class="txt">Unicode:"e6cf"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-uniE6D0"></div>
+<div class="txt">uniE6D0</div>
+<div class="txt">Unicode:"e6d0"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE6D1"></div>
+<div class="txt">uniE6D1</div>
+<div class="txt">Unicode:"e6d1"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE6D2"></div>
+<div class="txt">uniE6D2</div>
+<div class="txt">Unicode:"e6d2"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE6D3"></div>
+<div class="txt">uniE6D3</div>
+<div class="txt">Unicode:"e6d3"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE6D4"></div>
+<div class="txt">uniE6D4</div>
+<div class="txt">Unicode:"e6d4"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-uniE6D5"></div>
+<div class="txt">uniE6D5</div>
+<div class="txt">Unicode:"e6d5"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE6D6"></div>
+<div class="txt">uniE6D6</div>
+<div class="txt">Unicode:"e6d6"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE6D7"></div>
+<div class="txt">uniE6D7</div>
+<div class="txt">Unicode:"e6d7"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE6D8"></div>
+<div class="txt">uniE6D8</div>
+<div class="txt">Unicode:"e6d8"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE6D9"></div>
+<div class="txt">uniE6D9</div>
+<div class="txt">Unicode:"e6d9"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-uniE6DA"></div>
+<div class="txt">uniE6DA</div>
+<div class="txt">Unicode:"e6da"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE6DB"></div>
+<div class="txt">uniE6DB</div>
+<div class="txt">Unicode:"e6db"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE6DC"></div>
+<div class="txt">uniE6DC</div>
+<div class="txt">Unicode:"e6dc"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE6DD"></div>
+<div class="txt">uniE6DD</div>
+<div class="txt">Unicode:"e6dd"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE6DE"></div>
+<div class="txt">uniE6DE</div>
+<div class="txt">Unicode:"e6de"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-uniE6DF"></div>
+<div class="txt">uniE6DF</div>
+<div class="txt">Unicode:"e6df"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE6E0"></div>
+<div class="txt">uniE6E0</div>
+<div class="txt">Unicode:"e6e0"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE6E1"></div>
+<div class="txt">uniE6E1</div>
+<div class="txt">Unicode:"e6e1"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE6E2"></div>
+<div class="txt">uniE6E2</div>
+<div class="txt">Unicode:"e6e2"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE6E3"></div>
+<div class="txt">uniE6E3</div>
+<div class="txt">Unicode:"e6e3"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-uniE6E4"></div>
+<div class="txt">uniE6E4</div>
+<div class="txt">Unicode:"e6e4"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE6E5"></div>
+<div class="txt">uniE6E5</div>
+<div class="txt">Unicode:"e6e5"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE6E6"></div>
+<div class="txt">uniE6E6</div>
+<div class="txt">Unicode:"e6e6"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE6E7"></div>
+<div class="txt">uniE6E7</div>
+<div class="txt">Unicode:"e6e7"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE6E8"></div>
+<div class="txt">uniE6E8</div>
+<div class="txt">Unicode:"e6e8"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-uniE6E9"></div>
+<div class="txt">uniE6E9</div>
+<div class="txt">Unicode:"e6e9"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE6EA"></div>
+<div class="txt">uniE6EA</div>
+<div class="txt">Unicode:"e6ea"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE6EB"></div>
+<div class="txt">uniE6EB</div>
+<div class="txt">Unicode:"e6eb"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE6EC"></div>
+<div class="txt">uniE6EC</div>
+<div class="txt">Unicode:"e6ec"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE6ED"></div>
+<div class="txt">uniE6ED</div>
+<div class="txt">Unicode:"e6ed"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-uniE6EE"></div>
+<div class="txt">uniE6EE</div>
+<div class="txt">Unicode:"e6ee"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE6EF"></div>
+<div class="txt">uniE6EF</div>
+<div class="txt">Unicode:"e6ef"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE6F0"></div>
+<div class="txt">uniE6F0</div>
+<div class="txt">Unicode:"e6f0"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE6F1"></div>
+<div class="txt">uniE6F1</div>
+<div class="txt">Unicode:"e6f1"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE6F2"></div>
+<div class="txt">uniE6F2</div>
+<div class="txt">Unicode:"e6f2"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-uniE6F3"></div>
+<div class="txt">uniE6F3</div>
+<div class="txt">Unicode:"e6f3"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE6F4"></div>
+<div class="txt">uniE6F4</div>
+<div class="txt">Unicode:"e6f4"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE6F5"></div>
+<div class="txt">uniE6F5</div>
+<div class="txt">Unicode:"e6f5"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE6F6"></div>
+<div class="txt">uniE6F6</div>
+<div class="txt">Unicode:"e6f6"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE6F7"></div>
+<div class="txt">uniE6F7</div>
+<div class="txt">Unicode:"e6f7"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-uniE6F8"></div>
+<div class="txt">uniE6F8</div>
+<div class="txt">Unicode:"e6f8"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE6F9"></div>
+<div class="txt">uniE6F9</div>
+<div class="txt">Unicode:"e6f9"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE6FA"></div>
+<div class="txt">uniE6FA</div>
+<div class="txt">Unicode:"e6fa"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE6FB"></div>
+<div class="txt">uniE6FB</div>
+<div class="txt">Unicode:"e6fb"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE6FC"></div>
+<div class="txt">uniE6FC</div>
+<div class="txt">Unicode:"e6fc"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-uniE6FD"></div>
+<div class="txt">uniE6FD</div>
+<div class="txt">Unicode:"e6fd"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE6FE"></div>
+<div class="txt">uniE6FE</div>
+<div class="txt">Unicode:"e6fe"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE6FF"></div>
+<div class="txt">uniE6FF</div>
+<div class="txt">Unicode:"e6ff"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE700"></div>
+<div class="txt">uniE700</div>
+<div class="txt">Unicode:"e700"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE701"></div>
+<div class="txt">uniE701</div>
+<div class="txt">Unicode:"e701"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-uniE702"></div>
+<div class="txt">uniE702</div>
+<div class="txt">Unicode:"e702"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE703"></div>
+<div class="txt">uniE703</div>
+<div class="txt">Unicode:"e703"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE704"></div>
+<div class="txt">uniE704</div>
+<div class="txt">Unicode:"e704"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE705"></div>
+<div class="txt">uniE705</div>
+<div class="txt">Unicode:"e705"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE706"></div>
+<div class="txt">uniE706</div>
+<div class="txt">Unicode:"e706"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-uniE707"></div>
+<div class="txt">uniE707</div>
+<div class="txt">Unicode:"e707"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE708"></div>
+<div class="txt">uniE708</div>
+<div class="txt">Unicode:"e708"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE709"></div>
+<div class="txt">uniE709</div>
+<div class="txt">Unicode:"e709"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE70A"></div>
+<div class="txt">uniE70A</div>
+<div class="txt">Unicode:"e70a"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE70B"></div>
+<div class="txt">uniE70B</div>
+<div class="txt">Unicode:"e70b"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-uniE70C"></div>
+<div class="txt">uniE70C</div>
+<div class="txt">Unicode:"e70c"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE70D"></div>
+<div class="txt">uniE70D</div>
+<div class="txt">Unicode:"e70d"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE70E"></div>
+<div class="txt">uniE70E</div>
+<div class="txt">Unicode:"e70e"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE70F"></div>
+<div class="txt">uniE70F</div>
+<div class="txt">Unicode:"e70f"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE710"></div>
+<div class="txt">uniE710</div>
+<div class="txt">Unicode:"e710"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-uniE711"></div>
+<div class="txt">uniE711</div>
+<div class="txt">Unicode:"e711"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE712"></div>
+<div class="txt">uniE712</div>
+<div class="txt">Unicode:"e712"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE713"></div>
+<div class="txt">uniE713</div>
+<div class="txt">Unicode:"e713"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE714"></div>
+<div class="txt">uniE714</div>
+<div class="txt">Unicode:"e714"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE715"></div>
+<div class="txt">uniE715</div>
+<div class="txt">Unicode:"e715"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-uniE716"></div>
+<div class="txt">uniE716</div>
+<div class="txt">Unicode:"e716"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE717"></div>
+<div class="txt">uniE717</div>
+<div class="txt">Unicode:"e717"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE718"></div>
+<div class="txt">uniE718</div>
+<div class="txt">Unicode:"e718"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE719"></div>
+<div class="txt">uniE719</div>
+<div class="txt">Unicode:"e719"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE71A"></div>
+<div class="txt">uniE71A</div>
+<div class="txt">Unicode:"e71a"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-uniE71B"></div>
+<div class="txt">uniE71B</div>
+<div class="txt">Unicode:"e71b"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE71C"></div>
+<div class="txt">uniE71C</div>
+<div class="txt">Unicode:"e71c"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE71D"></div>
+<div class="txt">uniE71D</div>
+<div class="txt">Unicode:"e71d"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE71E"></div>
+<div class="txt">uniE71E</div>
+<div class="txt">Unicode:"e71e"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE71F"></div>
+<div class="txt">uniE71F</div>
+<div class="txt">Unicode:"e71f"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-uniE720"></div>
+<div class="txt">uniE720</div>
+<div class="txt">Unicode:"e720"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE721"></div>
+<div class="txt">uniE721</div>
+<div class="txt">Unicode:"e721"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE722"></div>
+<div class="txt">uniE722</div>
+<div class="txt">Unicode:"e722"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE723"></div>
+<div class="txt">uniE723</div>
+<div class="txt">Unicode:"e723"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE724"></div>
+<div class="txt">uniE724</div>
+<div class="txt">Unicode:"e724"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-uniE725"></div>
+<div class="txt">uniE725</div>
+<div class="txt">Unicode:"e725"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE726"></div>
+<div class="txt">uniE726</div>
+<div class="txt">Unicode:"e726"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE727"></div>
+<div class="txt">uniE727</div>
+<div class="txt">Unicode:"e727"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE728"></div>
+<div class="txt">uniE728</div>
+<div class="txt">Unicode:"e728"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE729"></div>
+<div class="txt">uniE729</div>
+<div class="txt">Unicode:"e729"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-uniE72A"></div>
+<div class="txt">uniE72A</div>
+<div class="txt">Unicode:"e72a"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE72B"></div>
+<div class="txt">uniE72B</div>
+<div class="txt">Unicode:"e72b"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE72C"></div>
+<div class="txt">uniE72C</div>
+<div class="txt">Unicode:"e72c"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE72D"></div>
+<div class="txt">uniE72D</div>
+<div class="txt">Unicode:"e72d"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE72E"></div>
+<div class="txt">uniE72E</div>
+<div class="txt">Unicode:"e72e"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-uniE72F"></div>
+<div class="txt">uniE72F</div>
+<div class="txt">Unicode:"e72f"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE730"></div>
+<div class="txt">uniE730</div>
+<div class="txt">Unicode:"e730"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE731"></div>
+<div class="txt">uniE731</div>
+<div class="txt">Unicode:"e731"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE732"></div>
+<div class="txt">uniE732</div>
+<div class="txt">Unicode:"e732"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE733"></div>
+<div class="txt">uniE733</div>
+<div class="txt">Unicode:"e733"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-uniE734"></div>
+<div class="txt">uniE734</div>
+<div class="txt">Unicode:"e734"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE735"></div>
+<div class="txt">uniE735</div>
+<div class="txt">Unicode:"e735"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE736"></div>
+<div class="txt">uniE736</div>
+<div class="txt">Unicode:"e736"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE737"></div>
+<div class="txt">uniE737</div>
+<div class="txt">Unicode:"e737"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE738"></div>
+<div class="txt">uniE738</div>
+<div class="txt">Unicode:"e738"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-uniE739"></div>
+<div class="txt">uniE739</div>
+<div class="txt">Unicode:"e739"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE73A"></div>
+<div class="txt">uniE73A</div>
+<div class="txt">Unicode:"e73a"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE73B"></div>
+<div class="txt">uniE73B</div>
+<div class="txt">Unicode:"e73b"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE73C"></div>
+<div class="txt">uniE73C</div>
+<div class="txt">Unicode:"e73c"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE73D"></div>
+<div class="txt">uniE73D</div>
+<div class="txt">Unicode:"e73d"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-uniE73E"></div>
+<div class="txt">uniE73E</div>
+<div class="txt">Unicode:"e73e"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE73F"></div>
+<div class="txt">uniE73F</div>
+<div class="txt">Unicode:"e73f"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE740"></div>
+<div class="txt">uniE740</div>
+<div class="txt">Unicode:"e740"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE741"></div>
+<div class="txt">uniE741</div>
+<div class="txt">Unicode:"e741"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE742"></div>
+<div class="txt">uniE742</div>
+<div class="txt">Unicode:"e742"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-uniE743"></div>
+<div class="txt">uniE743</div>
+<div class="txt">Unicode:"e743"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE744"></div>
+<div class="txt">uniE744</div>
+<div class="txt">Unicode:"e744"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE745"></div>
+<div class="txt">uniE745</div>
+<div class="txt">Unicode:"e745"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE746"></div>
+<div class="txt">uniE746</div>
+<div class="txt">Unicode:"e746"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE747"></div>
+<div class="txt">uniE747</div>
+<div class="txt">Unicode:"e747"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-uniE748"></div>
+<div class="txt">uniE748</div>
+<div class="txt">Unicode:"e748"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE749"></div>
+<div class="txt">uniE749</div>
+<div class="txt">Unicode:"e749"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE74A"></div>
+<div class="txt">uniE74A</div>
+<div class="txt">Unicode:"e74a"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE74B"></div>
+<div class="txt">uniE74B</div>
+<div class="txt">Unicode:"e74b"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE74C"></div>
+<div class="txt">uniE74C</div>
+<div class="txt">Unicode:"e74c"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-uniE74D"></div>
+<div class="txt">uniE74D</div>
+<div class="txt">Unicode:"e74d"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE74E"></div>
+<div class="txt">uniE74E</div>
+<div class="txt">Unicode:"e74e"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE74F"></div>
+<div class="txt">uniE74F</div>
+<div class="txt">Unicode:"e74f"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE750"></div>
+<div class="txt">uniE750</div>
+<div class="txt">Unicode:"e750"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE751"></div>
+<div class="txt">uniE751</div>
+<div class="txt">Unicode:"e751"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-uniE752"></div>
+<div class="txt">uniE752</div>
+<div class="txt">Unicode:"e752"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE753"></div>
+<div class="txt">uniE753</div>
+<div class="txt">Unicode:"e753"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE754"></div>
+<div class="txt">uniE754</div>
+<div class="txt">Unicode:"e754"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE755"></div>
+<div class="txt">uniE755</div>
+<div class="txt">Unicode:"e755"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE756"></div>
+<div class="txt">uniE756</div>
+<div class="txt">Unicode:"e756"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-uniE757"></div>
+<div class="txt">uniE757</div>
+<div class="txt">Unicode:"e757"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE758"></div>
+<div class="txt">uniE758</div>
+<div class="txt">Unicode:"e758"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE759"></div>
+<div class="txt">uniE759</div>
+<div class="txt">Unicode:"e759"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE75A"></div>
+<div class="txt">uniE75A</div>
+<div class="txt">Unicode:"e75a"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE75B"></div>
+<div class="txt">uniE75B</div>
+<div class="txt">Unicode:"e75b"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-uniE75C"></div>
+<div class="txt">uniE75C</div>
+<div class="txt">Unicode:"e75c"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE75D"></div>
+<div class="txt">uniE75D</div>
+<div class="txt">Unicode:"e75d"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE75E"></div>
+<div class="txt">uniE75E</div>
+<div class="txt">Unicode:"e75e"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE75F"></div>
+<div class="txt">uniE75F</div>
+<div class="txt">Unicode:"e75f"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE760"></div>
+<div class="txt">uniE760</div>
+<div class="txt">Unicode:"e760"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-uniE761"></div>
+<div class="txt">uniE761</div>
+<div class="txt">Unicode:"e761"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE762"></div>
+<div class="txt">uniE762</div>
+<div class="txt">Unicode:"e762"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE763"></div>
+<div class="txt">uniE763</div>
+<div class="txt">Unicode:"e763"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE764"></div>
+<div class="txt">uniE764</div>
+<div class="txt">Unicode:"e764"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE765"></div>
+<div class="txt">uniE765</div>
+<div class="txt">Unicode:"e765"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-uniE766"></div>
+<div class="txt">uniE766</div>
+<div class="txt">Unicode:"e766"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE767"></div>
+<div class="txt">uniE767</div>
+<div class="txt">Unicode:"e767"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE768"></div>
+<div class="txt">uniE768</div>
+<div class="txt">Unicode:"e768"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE769"></div>
+<div class="txt">uniE769</div>
+<div class="txt">Unicode:"e769"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE76A"></div>
+<div class="txt">uniE76A</div>
+<div class="txt">Unicode:"e76a"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-uniE76B"></div>
+<div class="txt">uniE76B</div>
+<div class="txt">Unicode:"e76b"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE76C"></div>
+<div class="txt">uniE76C</div>
+<div class="txt">Unicode:"e76c"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE76D"></div>
+<div class="txt">uniE76D</div>
+<div class="txt">Unicode:"e76d"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE76E"></div>
+<div class="txt">uniE76E</div>
+<div class="txt">Unicode:"e76e"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE76F"></div>
+<div class="txt">uniE76F</div>
+<div class="txt">Unicode:"e76f"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-uniE770"></div>
+<div class="txt">uniE770</div>
+<div class="txt">Unicode:"e770"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE771"></div>
+<div class="txt">uniE771</div>
+<div class="txt">Unicode:"e771"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE772"></div>
+<div class="txt">uniE772</div>
+<div class="txt">Unicode:"e772"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE773"></div>
+<div class="txt">uniE773</div>
+<div class="txt">Unicode:"e773"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE774"></div>
+<div class="txt">uniE774</div>
+<div class="txt">Unicode:"e774"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-uniE775"></div>
+<div class="txt">uniE775</div>
+<div class="txt">Unicode:"e775"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE776"></div>
+<div class="txt">uniE776</div>
+<div class="txt">Unicode:"e776"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE777"></div>
+<div class="txt">uniE777</div>
+<div class="txt">Unicode:"e777"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE778"></div>
+<div class="txt">uniE778</div>
+<div class="txt">Unicode:"e778"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE779"></div>
+<div class="txt">uniE779</div>
+<div class="txt">Unicode:"e779"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-uniE77A"></div>
+<div class="txt">uniE77A</div>
+<div class="txt">Unicode:"e77a"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE77B"></div>
+<div class="txt">uniE77B</div>
+<div class="txt">Unicode:"e77b"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE77C"></div>
+<div class="txt">uniE77C</div>
+<div class="txt">Unicode:"e77c"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE77D"></div>
+<div class="txt">uniE77D</div>
+<div class="txt">Unicode:"e77d"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE77E"></div>
+<div class="txt">uniE77E</div>
+<div class="txt">Unicode:"e77e"</div>
+</td>
+</tr>
+
+
+<tr>
+<td>
+<div class="spriteimage icon-copy"></div>
+<div class="txt">copy</div>
+<div class="txt">Unicode:"e77f"</div>
+</td>
+<td>
+<div class="spriteimage icon-jsplayground"></div>
+<div class="txt">jsplayground</div>
+<div class="txt">Unicode:"e780"</div>
+</td>
+<td>
+<div class="spriteimage icon-agenda"></div>
+<div class="txt">agenda</div>
+<div class="txt">Unicode:"e781"</div>
+</td>
+<td>
+<div class="spriteimage icon-allday"></div>
+<div class="txt">allday</div>
+<div class="txt">Unicode:"e782"</div>
+</td>
+<td>
+<div class="spriteimage icon-edit"></div>
+<div class="txt">edit</div>
+<div class="txt">Unicode:"e783"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-repeat"></div>
+<div class="txt">repeat</div>
+<div class="txt">Unicode:"e784"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE785"></div>
+<div class="txt">uniE785</div>
+<div class="txt">Unicode:"e785"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE786"></div>
+<div class="txt">uniE786</div>
+<div class="txt">Unicode:"e786"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE787"></div>
+<div class="txt">uniE787</div>
+<div class="txt">Unicode:"e787"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE788"></div>
+<div class="txt">uniE788</div>
+<div class="txt">Unicode:"e788"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-uniE789"></div>
+<div class="txt">uniE789</div>
+<div class="txt">Unicode:"e789"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE78A"></div>
+<div class="txt">uniE78A</div>
+<div class="txt">Unicode:"e78a"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE78B"></div>
+<div class="txt">uniE78B</div>
+<div class="txt">Unicode:"e78b"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE78C"></div>
+<div class="txt">uniE78C</div>
+<div class="txt">Unicode:"e78c"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE78D"></div>
+<div class="txt">uniE78D</div>
+<div class="txt">Unicode:"e78d"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-uniE78E"></div>
+<div class="txt">uniE78E</div>
+<div class="txt">Unicode:"e78e"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE78F"></div>
+<div class="txt">uniE78F</div>
+<div class="txt">Unicode:"e78f"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE790"></div>
+<div class="txt">uniE790</div>
+<div class="txt">Unicode:"e790"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE791"></div>
+<div class="txt">uniE791</div>
+<div class="txt">Unicode:"e791"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE792"></div>
+<div class="txt">uniE792</div>
+<div class="txt">Unicode:"e792"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-uniE793"></div>
+<div class="txt">uniE793</div>
+<div class="txt">Unicode:"e793"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE794"></div>
+<div class="txt">uniE794</div>
+<div class="txt">Unicode:"e794"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE795"></div>
+<div class="txt">uniE795</div>
+<div class="txt">Unicode:"e795"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE796"></div>
+<div class="txt">uniE796</div>
+<div class="txt">Unicode:"e796"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE797"></div>
+<div class="txt">uniE797</div>
+<div class="txt">Unicode:"e797"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-uniE798"></div>
+<div class="txt">uniE798</div>
+<div class="txt">Unicode:"e798"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE799"></div>
+<div class="txt">uniE799</div>
+<div class="txt">Unicode:"e799"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE79A"></div>
+<div class="txt">uniE79A</div>
+<div class="txt">Unicode:"e79a"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE79B"></div>
+<div class="txt">uniE79B</div>
+<div class="txt">Unicode:"e79b"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE79C"></div>
+<div class="txt">uniE79C</div>
+<div class="txt">Unicode:"e79c"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-uniE79D"></div>
+<div class="txt">uniE79D</div>
+<div class="txt">Unicode:"e79d"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE79E"></div>
+<div class="txt">uniE79E</div>
+<div class="txt">Unicode:"e79e"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE79F"></div>
+<div class="txt">uniE79F</div>
+<div class="txt">Unicode:"e79f"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE7A0"></div>
+<div class="txt">uniE7A0</div>
+<div class="txt">Unicode:"e7a0"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE7A1"></div>
+<div class="txt">uniE7A1</div>
+<div class="txt">Unicode:"e7a1"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-uniE7A2"></div>
+<div class="txt">uniE7A2</div>
+<div class="txt">Unicode:"e7a2"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE7A3"></div>
+<div class="txt">uniE7A3</div>
+<div class="txt">Unicode:"e7a3"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE7A4"></div>
+<div class="txt">uniE7A4</div>
+<div class="txt">Unicode:"e7a4"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE7A5"></div>
+<div class="txt">uniE7A5</div>
+<div class="txt">Unicode:"e7a5"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE7A6"></div>
+<div class="txt">uniE7A6</div>
+<div class="txt">Unicode:"e7a6"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-uniE7A7"></div>
+<div class="txt">uniE7A7</div>
+<div class="txt">Unicode:"e7a7"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE7A8"></div>
+<div class="txt">uniE7A8</div>
+<div class="txt">Unicode:"e7a8"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE7A9"></div>
+<div class="txt">uniE7A9</div>
+<div class="txt">Unicode:"e7a9"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE7AA"></div>
+<div class="txt">uniE7AA</div>
+<div class="txt">Unicode:"e7aa"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE7AB"></div>
+<div class="txt">uniE7AB</div>
+<div class="txt">Unicode:"e7ab"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-uniE7AC"></div>
+<div class="txt">uniE7AC</div>
+<div class="txt">Unicode:"e7ac"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE7AD"></div>
+<div class="txt">uniE7AD</div>
+<div class="txt">Unicode:"e7ad"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE7AE"></div>
+<div class="txt">uniE7AE</div>
+<div class="txt">Unicode:"e7ae"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE7AF"></div>
+<div class="txt">uniE7AF</div>
+<div class="txt">Unicode:"e7af"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE7B0"></div>
+<div class="txt">uniE7B0</div>
+<div class="txt">Unicode:"e7b0"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-uniE7B1"></div>
+<div class="txt">uniE7B1</div>
+<div class="txt">Unicode:"e7b1"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE7B2"></div>
+<div class="txt">uniE7B2</div>
+<div class="txt">Unicode:"e7b2"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE7B3"></div>
+<div class="txt">uniE7B3</div>
+<div class="txt">Unicode:"e7b3"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE7B4"></div>
+<div class="txt">uniE7B4</div>
+<div class="txt">Unicode:"e7b4"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE7B5"></div>
+<div class="txt">uniE7B5</div>
+<div class="txt">Unicode:"e7b5"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-uniE7B6"></div>
+<div class="txt">uniE7B6</div>
+<div class="txt">Unicode:"e7b6"</div>
+</td>
+<td>
+<div class="spriteimage icon-Recurrence"></div>
+<div class="txt">Recurrence</div>
+<div class="txt">Unicode:"e7b7"</div>
+</td>
+<td>
+<div class="spriteimage icon-RecurrenceEdit"></div>
+<div class="txt">RecurrenceEdit</div>
+<div class="txt">Unicode:"e7b8"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE7B9"></div>
+<div class="txt">uniE7B9</div>
+<div class="txt">Unicode:"e7b9"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE7BA"></div>
+<div class="txt">uniE7BA</div>
+<div class="txt">Unicode:"e7ba"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-uniE7BB"></div>
+<div class="txt">uniE7BB</div>
+<div class="txt">Unicode:"e7bb"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE7BC"></div>
+<div class="txt">uniE7BC</div>
+<div class="txt">Unicode:"e7bc"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE7BD"></div>
+<div class="txt">uniE7BD</div>
+<div class="txt">Unicode:"e7bd"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE7BE"></div>
+<div class="txt">uniE7BE</div>
+<div class="txt">Unicode:"e7be"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE781"></div>
+<div class="txt">uniE781</div>
+<div class="txt">Unicode:"e7bf"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-uniE782"></div>
+<div class="txt">uniE782</div>
+<div class="txt">Unicode:"e7c0"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE783"></div>
+<div class="txt">uniE783</div>
+<div class="txt">Unicode:"e7c1"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE784"></div>
+<div class="txt">uniE784</div>
+<div class="txt">Unicode:"e7c2"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE7852"></div>
+<div class="txt">uniE7852</div>
+<div class="txt">Unicode:"e7c3"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE7862"></div>
+<div class="txt">uniE7862</div>
+<div class="txt">Unicode:"e7c4"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-uniE7872"></div>
+<div class="txt">uniE7872</div>
+<div class="txt">Unicode:"e7c5"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE7882"></div>
+<div class="txt">uniE7882</div>
+<div class="txt">Unicode:"e7c6"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE7892"></div>
+<div class="txt">uniE7892</div>
+<div class="txt">Unicode:"e7c7"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE78A2"></div>
+<div class="txt">uniE78A2</div>
+<div class="txt">Unicode:"e7c8"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE78B2"></div>
+<div class="txt">uniE78B2</div>
+<div class="txt">Unicode:"e7c9"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-uniE78C2"></div>
+<div class="txt">uniE78C2</div>
+<div class="txt">Unicode:"e7ca"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE78D2"></div>
+<div class="txt">uniE78D2</div>
+<div class="txt">Unicode:"e7cb"</div>
+</td>
+<td>
+<div class="spriteimage icon-downarrowicon"></div>
+<div class="txt">downarrowicon</div>
+<div class="txt">Unicode:"e7cc"</div>
+</td>
+<td>
+<div class="spriteimage icon-dropdown"></div>
+<div class="txt">dropdown</div>
+<div class="txt">Unicode:"e7cd"</div>
+</td>
+<td>
+<div class="spriteimage icon-qaticon"></div>
+<div class="txt">qaticon</div>
+<div class="txt">Unicode:"e7ce"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-tick"></div>
+<div class="txt">tick</div>
+<div class="txt">Unicode:"e7cf"</div>
+</td>
+<td>
+<div class="spriteimage icon-Pdf_Print"></div>
+<div class="txt">Pdf_Print</div>
+<div class="txt">Unicode:"e7d0"</div>
+</td>
+<td>
+<div class="spriteimage icon-Pdf_First"></div>
+<div class="txt">Pdf_First</div>
+<div class="txt">Unicode:"e7d1"</div>
+</td>
+<td>
+<div class="spriteimage icon-PDf_Previous"></div>
+<div class="txt">PDf_Previous</div>
+<div class="txt">Unicode:"e7d2"</div>
+</td>
+<td>
+<div class="spriteimage icon-Pdf_Next"></div>
+<div class="txt">Pdf_Next</div>
+<div class="txt">Unicode:"e7d3"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-Pdf_Last"></div>
+<div class="txt">Pdf_Last</div>
+<div class="txt">Unicode:"e7d4"</div>
+</td>
+<td>
+<div class="spriteimage icon-Pdf_ZoomIn"></div>
+<div class="txt">Pdf_ZoomIn</div>
+<div class="txt">Unicode:"e7d5"</div>
+</td>
+<td>
+<div class="spriteimage icon-Pdf_ZoomOut"></div>
+<div class="txt">Pdf_ZoomOut</div>
+<div class="txt">Unicode:"e7d6"</div>
+</td>
+<td>
+<div class="spriteimage icon-Pdf_FitPage"></div>
+<div class="txt">Pdf_FitPage</div>
+<div class="txt">Unicode:"e7d7"</div>
+</td>
+<td>
+<div class="spriteimage icon-Pdf_FitWidth"></div>
+<div class="txt">Pdf_FitWidth</div>
+<div class="txt">Unicode:"e7d8"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-X16ICONS_UnFreeze"></div>
+<div class="txt">X16ICONS_UnFreeze</div>
+<div class="txt">Unicode:"e7d9"</div>
+</td>
+<td>
+<div class="spriteimage icon-X16ICONS_FREEZE_Freeze"></div>
+<div class="txt">X16ICONS_FREEZE_Freeze</div>
+<div class="txt">Unicode:"e7da"</div>
+</td>
+<td>
+<div class="spriteimage icon-X16ICONS_FreezeColumnsBefore"></div>
+<div class="txt">X16ICONS_FreezeColumnsBefore</div>
+<div class="txt">Unicode:"e7db"</div>
+</td>
+<td>
+<div class="spriteimage icon-Chart_Bubble"></div>
+<div class="txt">Chart_Bubble</div>
+<div class="txt">Unicode:"e7dc"</div>
+</td>
+<td>
+<div class="spriteimage icon-Chart_Doughnut"></div>
+<div class="txt">Chart_Doughnut</div>
+<div class="txt">Unicode:"e7dd"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-Chart_radar"></div>
+<div class="txt">Chart_radar</div>
+<div class="txt">Unicode:"e7de"</div>
+</td>
+<td>
+<div class="spriteimage icon-Chart_Scatter"></div>
+<div class="txt">Chart_Scatter</div>
+<div class="txt">Unicode:"e7df"</div>
+</td>
+<td>
+<div class="spriteimage icon-Chart-07"></div>
+<div class="txt">Chart-07</div>
+<div class="txt">Unicode:"e7e0"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE7E1"></div>
+<div class="txt">uniE7E1</div>
+<div class="txt">Unicode:"e7e1"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE7E2"></div>
+<div class="txt">uniE7E2</div>
+<div class="txt">Unicode:"e7e2"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-uniE7E3"></div>
+<div class="txt">uniE7E3</div>
+<div class="txt">Unicode:"e7e3"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE7E4"></div>
+<div class="txt">uniE7E4</div>
+<div class="txt">Unicode:"e7e4"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE7E5"></div>
+<div class="txt">uniE7E5</div>
+<div class="txt">Unicode:"e7e5"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE7E6"></div>
+<div class="txt">uniE7E6</div>
+<div class="txt">Unicode:"e7e6"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE7E7"></div>
+<div class="txt">uniE7E7</div>
+<div class="txt">Unicode:"e7e7"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-uniE7E8"></div>
+<div class="txt">uniE7E8</div>
+<div class="txt">Unicode:"e7e8"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE7E9"></div>
+<div class="txt">uniE7E9</div>
+<div class="txt">Unicode:"e7e9"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE7EA"></div>
+<div class="txt">uniE7EA</div>
+<div class="txt">Unicode:"e7ea"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE7EB"></div>
+<div class="txt">uniE7EB</div>
+<div class="txt">Unicode:"e7eb"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE7EC"></div>
+<div class="txt">uniE7EC</div>
+<div class="txt">Unicode:"e7ec"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-uniE7ED"></div>
+<div class="txt">uniE7ED</div>
+<div class="txt">Unicode:"e7ed"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE7EE"></div>
+<div class="txt">uniE7EE</div>
+<div class="txt">Unicode:"e7ee"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE7EF"></div>
+<div class="txt">uniE7EF</div>
+<div class="txt">Unicode:"e7ef"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE7F0"></div>
+<div class="txt">uniE7F0</div>
+<div class="txt">Unicode:"e7f0"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE7F1"></div>
+<div class="txt">uniE7F1</div>
+<div class="txt">Unicode:"e7f1"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-uniE7F2"></div>
+<div class="txt">uniE7F2</div>
+<div class="txt">Unicode:"e7f2"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE7F3"></div>
+<div class="txt">uniE7F3</div>
+<div class="txt">Unicode:"e7f3"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE7F4"></div>
+<div class="txt">uniE7F4</div>
+<div class="txt">Unicode:"e7f4"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE7F5"></div>
+<div class="txt">uniE7F5</div>
+<div class="txt">Unicode:"e7f5"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE7F6"></div>
+<div class="txt">uniE7F6</div>
+<div class="txt">Unicode:"e7f6"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-uniE7f7"></div>
+<div class="txt">uniE7f7</div>
+<div class="txt">Unicode:"e7f7"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE7f8"></div>
+<div class="txt">uniE7f8</div>
+<div class="txt">Unicode:"e7f8"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE7f9"></div>
+<div class="txt">uniE7f9</div>
+<div class="txt">Unicode:"e7f9"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE7fa"></div>
+<div class="txt">uniE7fa</div>
+<div class="txt">Unicode:"e7fa"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE7fb"></div>
+<div class="txt">uniE7fb</div>
+<div class="txt">Unicode:"e7fb"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-uniE7fc"></div>
+<div class="txt">uniE7fc</div>
+<div class="txt">Unicode:"e7fc"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE7fd"></div>
+<div class="txt">uniE7fd</div>
+<div class="txt">Unicode:"e7fd"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE7fe"></div>
+<div class="txt">uniE7fe</div>
+<div class="txt">Unicode:"e7fe"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE7ff"></div>
+<div class="txt">uniE7ff</div>
+<div class="txt">Unicode:"e7ff"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE800"></div>
+<div class="txt">uniE800</div>
+<div class="txt">Unicode:"e800"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-uniE801"></div>
+<div class="txt">uniE801</div>
+<div class="txt">Unicode:"e801"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE802"></div>
+<div class="txt">uniE802</div>
+<div class="txt">Unicode:"e802"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE803"></div>
+<div class="txt">uniE803</div>
+<div class="txt">Unicode:"e803"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE804"></div>
+<div class="txt">uniE804</div>
+<div class="txt">Unicode:"e804"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE805"></div>
+<div class="txt">uniE805</div>
+<div class="txt">Unicode:"e805"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-uniE806"></div>
+<div class="txt">uniE806</div>
+<div class="txt">Unicode:"e806"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE807"></div>
+<div class="txt">uniE807</div>
+<div class="txt">Unicode:"e807"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE808"></div>
+<div class="txt">uniE808</div>
+<div class="txt">Unicode:"e808"</div>
+</td>
+<td>
+<div class="spriteimage icon-unie809"></div>
+<div class="txt">unie809</div>
+<div class="txt">Unicode:"e809"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE80a"></div>
+<div class="txt">uniE80a</div>
+<div class="txt">Unicode:"e80a"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-uniE80b"></div>
+<div class="txt">uniE80b</div>
+<div class="txt">Unicode:"e80b"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE80c"></div>
+<div class="txt">uniE80c</div>
+<div class="txt">Unicode:"e80c"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE80d"></div>
+<div class="txt">uniE80d</div>
+<div class="txt">Unicode:"e80d"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE80e"></div>
+<div class="txt">uniE80e</div>
+<div class="txt">Unicode:"e80e"</div>
+</td>
+<td>
+<div class="spriteimage icon-printicon-02"></div>
+<div class="txt">printicon-02</div>
+<div class="txt">Unicode:"e80f"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-uniE810"></div>
+<div class="txt">uniE810</div>
+<div class="txt">Unicode:"e810"</div>
+</td>
+<td>
+<div class="spriteimage icon-a-051"></div>
+<div class="txt">a-051</div>
+<div class="txt">Unicode:"e811"</div>
+</td>
+<td>
+<div class="spriteimage icon-a-061"></div>
+<div class="txt">a-061</div>
+<div class="txt">Unicode:"e812"</div>
+</td>
+<td>
+<div class="spriteimage icon-filter-031"></div>
+<div class="txt">filter-031</div>
+<div class="txt">Unicode:"e813"</div>
+</td>
+<td>
+<div class="spriteimage icon-filter-042"></div>
+<div class="txt">filter-042</div>
+<div class="txt">Unicode:"e814"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-backarrow-08"></div>
+<div class="txt">backarrow-08</div>
+<div class="txt">Unicode:"e815"</div>
+</td>
+<td>
+<div class="spriteimage icon-BurgerMenu_iOS"></div>
+<div class="txt">BurgerMenu_iOS</div>
+<div class="txt">Unicode:"e816"</div>
+</td>
+<td>
+<div class="spriteimage icon-Icon-03"></div>
+<div class="txt">Icon-03</div>
+<div class="txt">Unicode:"e817"</div>
+</td>
+<td>
+<div class="spriteimage icon-Icon-04"></div>
+<div class="txt">Icon-04</div>
+<div class="txt">Unicode:"e818"</div>
+</td>
+<td>
+<div class="spriteimage icon-Icon-05"></div>
+<div class="txt">Icon-05</div>
+<div class="txt">Unicode:"e819"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-Icon-06"></div>
+<div class="txt">Icon-06</div>
+<div class="txt">Unicode:"e81a"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE81b"></div>
+<div class="txt">uniE81b</div>
+<div class="txt">Unicode:"e81b"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE81c"></div>
+<div class="txt">uniE81c</div>
+<div class="txt">Unicode:"e81c"</div>
+</td>
+<td>
+<div class="spriteimage icon-Adpt__Down-arrow"></div>
+<div class="txt">Adpt__Down-arrow</div>
+<div class="txt">Unicode:"e81d"</div>
+</td>
+<td>
+<div class="spriteimage icon-Adpt__up-arrow"></div>
+<div class="txt">Adpt__up-arrow</div>
+<div class="txt">Unicode:"e81e"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-download-pdf"></div>
+<div class="txt">download-pdf</div>
+<div class="txt">Unicode:"e81f"</div>
+</td>
+<td>
+<div class="spriteimage icon-arrow--down1"></div>
+<div class="txt">arrow--down1</div>
+<div class="txt">Unicode:"e820"</div>
+</td>
+<td>
+<div class="spriteimage icon-arrow--up1"></div>
+<div class="txt">arrow--up1</div>
+<div class="txt">Unicode:"e821"</div>
+</td>
+<td>
+<div class="spriteimage icon-CriticalTask_Taskbar_Icon_Solid"></div>
+<div class="txt">CriticalTask_Taskbar_Icon_Solid</div>
+<div class="txt">Unicode:"e822"</div>
+</td>
+<td>
+<div class="spriteimage icon-sort-by-icon-01"></div>
+<div class="txt">sort-by-icon-01</div>
+<div class="txt">Unicode:"e823"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-Icon_descending"></div>
+<div class="txt">Icon_descending</div>
+<div class="txt">Unicode:"e824"</div>
+</td>
+<td>
+<div class="spriteimage icon-Icon_ascending"></div>
+<div class="txt">Icon_ascending</div>
+<div class="txt">Unicode:"e825"</div>
+</td>
+<td>
+<div class="spriteimage icon-previouspage-pdfviewer"></div>
+<div class="txt">previouspage-pdfviewer</div>
+<div class="txt">Unicode:"e826"</div>
+</td>
+<td>
+<div class="spriteimage icon-nextpage-pdfviewer"></div>
+<div class="txt">nextpage-pdfviewer</div>
+<div class="txt">Unicode:"e827"</div>
+</td>
+<td>
+<div class="spriteimage icon-zoomout-pdfviewer"></div>
+<div class="txt">zoomout-pdfviewer</div>
+<div class="txt">Unicode:"e828"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-zoomin-pdfviewer"></div>
+<div class="txt">zoomin-pdfviewer</div>
+<div class="txt">Unicode:"e829"</div>
+</td>
+<td>
+<div class="spriteimage icon-fitwidth-pdfviewer"></div>
+<div class="txt">fitwidth-pdfviewer</div>
+<div class="txt">Unicode:"e82a"</div>
+</td>
+<td>
+<div class="spriteimage icon-fitpage-pdfviewer"></div>
+<div class="txt">fitpage-pdfviewer</div>
+<div class="txt">Unicode:"e82b"</div>
+</td>
+<td>
+<div class="spriteimage icon-print-pdfviewer"></div>
+<div class="txt">print-pdfviewer</div>
+<div class="txt">Unicode:"e82c"</div>
+</td>
+<td>
+<div class="spriteimage icon-downloadpdf-pdfviewer"></div>
+<div class="txt">downloadpdf-pdfviewer</div>
+<div class="txt">Unicode:"e82d"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-search-icon-pdfviewer"></div>
+<div class="txt">search-icon-pdfviewer</div>
+<div class="txt">Unicode:"e82e"</div>
+</td>
+<td>
+<div class="spriteimage icon-search-prev-pdfviewer"></div>
+<div class="txt">search-prev-pdfviewer</div>
+<div class="txt">Unicode:"e82f"</div>
+</td>
+<td>
+<div class="spriteimage icon-search-next-pdfviewer"></div>
+<div class="txt">search-next-pdfviewer</div>
+<div class="txt">Unicode:"e830"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE831"></div>
+<div class="txt">uniE831</div>
+<div class="txt">Unicode:"e831"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE832"></div>
+<div class="txt">uniE832</div>
+<div class="txt">Unicode:"e832"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-uniE833"></div>
+<div class="txt">uniE833</div>
+<div class="txt">Unicode:"e833"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE834"></div>
+<div class="txt">uniE834</div>
+<div class="txt">Unicode:"e834"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE835"></div>
+<div class="txt">uniE835</div>
+<div class="txt">Unicode:"e835"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE836"></div>
+<div class="txt">uniE836</div>
+<div class="txt">Unicode:"e836"</div>
+</td>
+<td>
+<div class="spriteimage icon-search-close-pdfviewer"></div>
+<div class="txt">search-close-pdfviewer</div>
+<div class="txt">Unicode:"e837"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-waterfall"></div>
+<div class="txt">waterfall</div>
+<div class="txt">Unicode:"e838"</div>
+</td>
+<td>
+<div class="spriteimage icon-Database"></div>
+<div class="txt">Database</div>
+<div class="txt">Unicode:"e839"</div>
+</td>
+<td>
+<div class="spriteimage icon-Remove-DB-report"></div>
+<div class="txt">Remove-DB-report</div>
+<div class="txt">Unicode:"e83a"</div>
+</td>
+<td>
+<div class="spriteimage icon-Rename-DB-report"></div>
+<div class="txt">Rename-DB-report</div>
+<div class="txt">Unicode:"e83b"</div>
+</td>
+<td>
+<div class="spriteimage icon-Save-As"></div>
+<div class="txt">Save-As</div>
+<div class="txt">Unicode:"e83c"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-backicon"></div>
+<div class="txt">backicon</div>
+<div class="txt">Unicode:"e83d"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE83e"></div>
+<div class="txt">uniE83e</div>
+<div class="txt">Unicode:"e83e"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE83f"></div>
+<div class="txt">uniE83f</div>
+<div class="txt">Unicode:"e83f"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE840"></div>
+<div class="txt">uniE840</div>
+<div class="txt">Unicode:"e840"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE841"></div>
+<div class="txt">uniE841</div>
+<div class="txt">Unicode:"e841"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-ColumnFreeze"></div>
+<div class="txt">ColumnFreeze</div>
+<div class="txt">Unicode:"e842"</div>
+</td>
+<td>
+<div class="spriteimage icon-AdvancedFiltering"></div>
+<div class="txt">AdvancedFiltering</div>
+<div class="txt">Unicode:"e843"</div>
+</td>
+<td>
+<div class="spriteimage icon-Cellcontext"></div>
+<div class="txt">Cellcontext</div>
+<div class="txt">Unicode:"e844"</div>
+</td>
+<td>
+<div class="spriteimage icon-ExcelExporting"></div>
+<div class="txt">ExcelExporting</div>
+<div class="txt">Unicode:"e845"</div>
+</td>
+<td>
+<div class="spriteimage icon-PDFExporting"></div>
+<div class="txt">PDFExporting</div>
+<div class="txt">Unicode:"e846"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-CSVExporting"></div>
+<div class="txt">CSVExporting</div>
+<div class="txt">Unicode:"e847"</div>
+</td>
+<td>
+<div class="spriteimage icon-FrozenHeaders"></div>
+<div class="txt">FrozenHeaders</div>
+<div class="txt">Unicode:"e848"</div>
+</td>
+<td>
+<div class="spriteimage icon-Summarytypes"></div>
+<div class="txt">Summarytypes</div>
+<div class="txt">Unicode:"e849"</div>
+</td>
+<td>
+<div class="spriteimage icon-ColumnheaderHyperlink"></div>
+<div class="txt">ColumnheaderHyperlink</div>
+<div class="txt">Unicode:"e84a"</div>
+</td>
+<td>
+<div class="spriteimage icon-CalculatedFields"></div>
+<div class="txt">CalculatedFields</div>
+<div class="txt">Unicode:"e84b"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-Hyperlink"></div>
+<div class="txt">Hyperlink</div>
+<div class="txt">Unicode:"e84c"</div>
+</td>
+<td>
+<div class="spriteimage icon-RTL"></div>
+<div class="txt">RTL</div>
+<div class="txt">Unicode:"e84d"</div>
+</td>
+<td>
+<div class="spriteimage icon-WordExporting"></div>
+<div class="txt">WordExporting</div>
+<div class="txt">Unicode:"e84e"</div>
+</td>
+<td>
+<div class="spriteimage icon-Exporting"></div>
+<div class="txt">Exporting</div>
+<div class="txt">Unicode:"e84f"</div>
+</td>
+<td>
+<div class="spriteimage icon-ConditionalFormatting"></div>
+<div class="txt">ConditionalFormatting</div>
+<div class="txt">Unicode:"e850"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-ColumnResizing"></div>
+<div class="txt">ColumnResizing</div>
+<div class="txt">Unicode:"e851"</div>
+</td>
+<td>
+<div class="spriteimage icon-SummaryCustomization"></div>
+<div class="txt">SummaryCustomization</div>
+<div class="txt">Unicode:"e852"</div>
+</td>
+<td>
+<div class="spriteimage icon-RowFreeze"></div>
+<div class="txt">RowFreeze</div>
+<div class="txt">Unicode:"e853"</div>
+</td>
+<td>
+<div class="spriteimage icon-Paging"></div>
+<div class="txt">Paging</div>
+<div class="txt">Unicode:"e854"</div>
+</td>
+<td>
+<div class="spriteimage icon-CellEditing"></div>
+<div class="txt">CellEditing</div>
+<div class="txt">Unicode:"e855"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-CellSelection"></div>
+<div class="txt">CellSelection</div>
+<div class="txt">Unicode:"e856"</div>
+</td>
+<td>
+<div class="spriteimage icon-NumberFormats"></div>
+<div class="txt">NumberFormats</div>
+<div class="txt">Unicode:"e857"</div>
+</td>
+<td>
+<div class="spriteimage icon-Tooltip"></div>
+<div class="txt">Tooltip</div>
+<div class="txt">Unicode:"e858"</div>
+</td>
+<td>
+<div class="spriteimage icon-ExcelLikeLayout"></div>
+<div class="txt">ExcelLikeLayout</div>
+<div class="txt">Unicode:"e859"</div>
+</td>
+<td>
+<div class="spriteimage icon-ValueCellHyperlink"></div>
+<div class="txt">CellEditing</div>
+<div class="txt">Unicode:"e85a"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-SummaryCellHhyperlink"></div>
+<div class="txt">SummaryCellHhyperlink</div>
+<div class="txt">Unicode:"e85b"</div>
+</td>
+<td>
+<div class="spriteimage icon-RowHeaderHyperlink"></div>
+<div class="txt">RowHeaderHyperlink</div>
+<div class="txt">Unicode:"e85c"</div>
+</td>
+<td>
+<div class="spriteimage icon-CollapseByDefault"></div>
+<div class="txt">CollapseByDefault</div>
+<div class="txt">Unicode:"e85d"</div>
+</td>
+<td>
+<div class="spriteimage icon-15"></div>
+<div class="txt">15</div>
+<div class="txt">Unicode:"e85e"</div>
+</td>
+<td>
+<div class="spriteimage icon-16"></div>
+<div class="txt">16</div>
+<div class="txt">Unicode:"e85f"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-17"></div>
+<div class="txt">17</div>
+<div class="txt">Unicode:"e860"</div>
+</td>
+<td>
+<div class="spriteimage icon-18"></div>
+<div class="txt">18</div>
+<div class="txt">Unicode:"e861"</div>
+</td>
+<td>
+<div class="spriteimage icon-19"></div>
+<div class="txt">19</div>
+<div class="txt">Unicode:"e862"</div>
+</td>
+<td>
+<div class="spriteimage icon-20"></div>
+<div class="txt">20</div>
+<div class="txt">Unicode:"e863"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE864"></div>
+<div class="txt">uniE864</div>
+<div class="txt">Unicode:"e864"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-uniE865"></div>
+<div class="txt">uniE865</div>
+<div class="txt">Unicode:"e865"</div>
+</td>
+<td>
+<div class="spriteimage icon-22"></div>
+<div class="txt">22</div>
+<div class="txt">Unicode:"e866"</div>
+</td>
+<td>
+<div class="spriteimage icon-23"></div>
+<div class="txt">23</div>
+<div class="txt">Unicode:"e867"</div>
+</td>
+<td>
+<div class="spriteimage icon-24"></div>
+<div class="txt">24</div>
+<div class="txt">Unicode:"e868"</div>
+</td>
+<td>
+<div class="spriteimage icon-25"></div>
+<div class="txt">25</div>
+<div class="txt">Unicode:"e869"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-D-disable-icon"></div>
+<div class="txt">D-disable-icon</div>
+<div class="txt">Unicode:"e86a"</div>
+</td>
+<td>
+<div class="spriteimage icon-Text-Selection"></div>
+<div class="txt">Text-Selection</div>
+<div class="txt">Unicode:"e86b"</div>
+</td>
+<td>
+<div class="spriteimage icon-Text-Strick"></div>
+<div class="txt">Text-Strick</div>
+<div class="txt">Unicode:"e86c"</div>
+</td>
+<td>
+<div class="spriteimage icon-Text-Underline"></div>
+<div class="txt">Text-Underline</div>
+<div class="txt">Unicode:"e86d"</div>
+</td>
+<td>
+<div class="spriteimage icon-PDF-viewer-JS_Arrow"></div>
+<div class="txt">PDF-viewer-JS_Arrow</div>
+<div class="txt">Unicode:"e86e"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-Calculated-member_-Toobar-Balck-Color-Icon"></div>
+<div class="txt">Calculated-member_-Toobar-Balck-Color-Icon</div>
+<div class="txt">Unicode:"e86f"</div>
+</td>
+<td>
+<div class="spriteimage icon-Calculated-member_-Tree-View-Balck-Color-Icon"></div>
+<div class="txt">Calculated-member_-Tree-View-Balck-Color-Icon</div>
+<div class="txt">Unicode:"e870"</div>
+</td>
+<td>
+<div class="spriteimage icon-Disable-Cross-Hair"></div>
+<div class="txt">Disable-Cross-Hair</div>
+<div class="txt">Unicode:"e871"</div>
+</td>
+<td>
+<div class="spriteimage icon-Enable-Cross-Hair"></div>
+<div class="txt">Enable-Cross-Hair</div>
+<div class="txt">Unicode:"e872"</div>
+</td>
+<td>
+<div class="spriteimage icon-Hide"></div>
+<div class="txt">Hide</div>
+<div class="txt">Unicode:"e873"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-Icon_Collapse"></div>
+<div class="txt">Icon_Collapse</div>
+<div class="txt">Unicode:"e874"</div>
+</td>
+<td>
+<div class="spriteimage icon-Icon_Drill-Through"></div>
+<div class="txt">Icon_Drill-Through</div>
+<div class="txt">Unicode:"e875"</div>
+</td>
+<td>
+<div class="spriteimage icon-Icon_Expand"></div>
+<div class="txt">Icon_Expand</div>
+<div class="txt">Unicode:"e876"</div>
+</td>
+<td>
+<div class="spriteimage icon-Interaction"></div>
+<div class="txt">Interaction</div>
+<div class="txt">Unicode:"e877"</div>
+</td>
+<td>
+<div class="spriteimage icon-Layout"></div>
+<div class="txt">Layout</div>
+<div class="txt">Unicode:"e878"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-Legend"></div>
+<div class="txt">Legend</div>
+<div class="txt">Unicode:"e879"</div>
+</td>
+<td>
+<div class="spriteimage icon-Marker"></div>
+<div class="txt">Marker</div>
+<div class="txt">Unicode:"e87a"</div>
+</td>
+<td>
+<div class="spriteimage icon-Multiple-Rows"></div>
+<div class="txt">Multiple-Rows</div>
+<div class="txt">Unicode:"e87b"</div>
+</td>
+<td>
+<div class="spriteimage icon-No-Summary-Layout"></div>
+<div class="txt">No-Summary-Layout</div>
+<div class="txt">Unicode:"e87c"</div>
+</td>
+<td>
+<div class="spriteimage icon-Normal-Layout"></div>
+<div class="txt">Normal-Layout</div>
+<div class="txt">Unicode:"e87d"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-Rotate-45"></div>
+<div class="txt">Rotate-45</div>
+<div class="txt">Unicode:"e87e"</div>
+</td>
+<td>
+<div class="spriteimage icon-Rotate-90"></div>
+<div class="txt">Rotate-90</div>
+<div class="txt">Unicode:"e87f"</div>
+</td>
+<td>
+<div class="spriteimage icon-Smart-Labels"></div>
+<div class="txt">Smart-Labels</div>
+<div class="txt">Unicode:"e880"</div>
+</td>
+<td>
+<div class="spriteimage icon-Top-Summary-Layout"></div>
+<div class="txt">Top-Summary-Layout</div>
+<div class="txt">Unicode:"e881"</div>
+</td>
+<td>
+<div class="spriteimage icon-Track-Ball"></div>
+<div class="txt">Track-Ball</div>
+<div class="txt">Unicode:"e882"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-Trim"></div>
+<div class="txt">Trim</div>
+<div class="txt">Unicode:"e883"</div>
+</td>
+<td>
+<div class="spriteimage icon-Wrap-By-Word"></div>
+<div class="txt">Wrap-By-Word</div>
+<div class="txt">Unicode:"e884"</div>
+</td>
+<td>
+<div class="spriteimage icon-Wrap"></div>
+<div class="txt">Wrap</div>
+<div class="txt">Unicode:"e885"</div>
+</td>
+<td>
+<div class="spriteimage icon-Zoom-In"></div>
+<div class="txt">Zoom-In</div>
+<div class="txt">Unicode:"e886"</div>
+</td>
+<td>
+<div class="spriteimage icon-Zoom-Out"></div>
+<div class="txt">Zoom-Out</div>
+<div class="txt">Unicode:"e887"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-uniE8d1"></div>
+<div class="txt">uniE8d1</div>
+<div class="txt">Unicode:"e8d1"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE8d2"></div>
+<div class="txt">uniE8d2</div>
+<div class="txt">Unicode:"e8d2"</div>
+</td>
+<td>
+<div class="spriteimage icon-Base-line_Hide"></div>
+<div class="txt">Base-line_Hide</div>
+<div class="txt">Unicode:"e900"</div>
+</td>
+<td>
+<div class="spriteimage icon-Base-line_Show"></div>
+<div class="txt">Base-line_Show</div>
+<div class="txt">Unicode:"e901"</div>
+</td>
+<td>
+<div class="spriteimage icon-RTL_Dark"></div>
+<div class="txt">RTL_Dark</div>
+<div class="txt">Unicode:"e902"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-Signature-icon-03"></div>
+<div class="txt">Signature-icon-03</div>
+<div class="txt">Unicode:"e903"</div>
+</td>
+<td>
+<div class="spriteimage icon-selection-icon-03"></div>
+<div class="txt">selection-icon-03</div>
+<div class="txt">Unicode:"e904"</div>
+</td>
+<td>
+<div class="spriteimage icon-selection-icon-05"></div>
+<div class="txt">selection-icon-05</div>
+<div class="txt">Unicode:"e905"</div>
+</td>
+<td>
+<div class="spriteimage icon-b-79"></div>
+<div class="txt">b-79</div>
+<div class="txt">Unicode:"e906"</div>
+</td>
+<td>
+<div class="spriteimage icon-b-80"></div>
+<div class="txt">b-80</div>
+<div class="txt">Unicode:"e907"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-b-81"></div>
+<div class="txt">b-81</div>
+<div class="txt">Unicode:"e908"</div>
+</td>
+<td>
+<div class="spriteimage icon-b-82"></div>
+<div class="txt">b-82</div>
+<div class="txt">Unicode:"e909"</div>
+</td>
+<td>
+<div class="spriteimage icon-b-83"></div>
+<div class="txt">b-83</div>
+<div class="txt">Unicode:"e90a"</div>
+</td>
+<td>
+<div class="spriteimage icon-b-84"></div>
+<div class="txt">b-84</div>
+<div class="txt">Unicode:"e90b"</div>
+</td>
+<td>
+<div class="spriteimage icon-b-85"></div>
+<div class="txt">b-85</div>
+<div class="txt">Unicode:"e90c"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-b-86"></div>
+<div class="txt">b-86</div>
+<div class="txt">Unicode:"e90d"</div>
+</td>
+<td>
+<div class="spriteimage icon-b-87"></div>
+<div class="txt">b-87</div>
+<div class="txt">Unicode:"e90e"</div>
+</td>
+<td>
+<div class="spriteimage icon-b-88"></div>
+<div class="txt">b-88</div>
+<div class="txt">Unicode:"e90f"</div>
+</td>
+<td>
+<div class="spriteimage icon-b-89"></div>
+<div class="txt">b-89</div>
+<div class="txt">Unicode:"e910"</div>
+</td>
+<td>
+<div class="spriteimage icon-uniE912"></div>
+<div class="txt">uniE912</div>
+<div class="txt">Unicode:"e911"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-uniE913"></div>
+<div class="txt">uniE913</div>
+<div class="txt">Unicode:"e912"</div>
+</td>
+<td>
+<div class="spriteimage icon-a-70"></div>
+<div class="txt">a-70</div>
+<div class="txt">Unicode:"e913"</div>
+</td>
+<td>
+<div class="spriteimage icon-a-71"></div>
+<div class="txt">a-71</div>
+<div class="txt">Unicode:"e914"</div>
+</td>
+<td>
+<div class="spriteimage icon-v-92"></div>
+<div class="txt">v-92</div>
+<div class="txt">Unicode:"e915"</div>
+</td>
+<td>
+<div class="spriteimage icon-v-93"></div>
+<div class="txt">v-93</div>
+<div class="txt">Unicode:"e916"</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="spriteimage icon-xAxis-title"></div>
+<div class="txt">xAxis-title</div>
+<div class="txt">Unicode:"e917"</div>
 </td>
 </tr>
 </table>
