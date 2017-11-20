@@ -32,7 +32,7 @@ You can assign the complete contents in “**United States of America.json**” 
 
 ## Data Binding
 
-The **Maps** control supports data binding with the `dataSource` property in the shape layers. 
+The **Maps** control supports data binding with the [`dataSource`](../api/ejmap#members:layers-datasource) property in the shape layers. 
 
 ### Properties
 
@@ -48,11 +48,11 @@ The `dataSource` property accepts the collection values as input. For example, y
 
 ### Shape Data Path
 
-The `shapeDataPath` property is used to refer the data ID in DataSource. For example, population MapData contains data ids ‘Name’ and ‘Population’. The `shapeDataPath` and the `shapePropertyPath` properties are related to each other (refer to `shapePropertyPath` for more details).
+The [`shapeDataPath`](../api/ejmap#members:layers-shapedata) property is used to refer the data ID in DataSource. For example, population MapData contains data ids ‘Name’ and ‘Population’. The `shapeDataPath` and the `shapePropertyPath` properties are related to each other (refer to `shapePropertyPath` for more details).
 
 ### Shape Property Path
 
-The `shapePropertyPath` property is similar to the `shapeDataPath` that refers to the column name in the `data` property of shape layers to identify the shape. When the values of the `shapeDataPath` property in the `dataSource` property and the value of `shapePropertyPath` in the `data` property match, then the associated object from the `dataSource` is bound to the corresponding shape.
+The [`shapePropertyPath`](../api/ejmap#members:layers-shapepropertypath) property is similar to the `shapeDataPath` that refers to the column name in the `data` property of shape layers to identify the shape. When the values of the `shapeDataPath` property in the `dataSource` property and the value of `shapePropertyPath` in the `data` property match, then the associated object from the `dataSource` is bound to the corresponding shape.
 
 The datasource is populated with JSON data relative to shape data and stored in JSON object. The USA population as datasource is used for better understanding. 
 
