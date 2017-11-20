@@ -45,7 +45,7 @@ You can bind the series [`dataSource`](../api/ejchart#members:indicators-datasou
 {% endhighlight %}
 
 
-Also, you can add data to the indicator directly by using the [`dataSource`](../api/ejchart#members:indicators-datasource) option of the indicator.  
+Also, you can add data to the indicator directly by using the [`dataSource`](../api/ejchart#members:indicators-datasource) option of the [`indicator`](../api/ejchart#members:indicators).  
 
 {% highlight javascript %}
 
@@ -323,7 +323,8 @@ To render the SMA indicator, you should specify the [`indicators.type`](../api/e
 
 ### Stochastic 
 
-For the Stochastic indicator, you need to set the [`indicators.type`](../api/ejchart#members:indicators-type) as **"stochastic"**. The Stochastic indicator renders four lines namely, upper line, lower line, stochastic line and the signal line. Upper line always rendered at value 80 and the lower line is rendered at value 20. Stochastic and Signal Lines are calculated based on the stochastic formula.
+For the Stochastic indicator, you need to set the [`indicators.type`](../api/ejchart#members:indicators-type) as **"stochastic"**. The Stochastic indicator renders four lines namely, [`upper line`](../api/ejchart#members:indicators-upperline),
+[`lower line`](../api/ejchart#members:indicators-lowerline), stochastic line and the signal line. Upper line always rendered at value 80 and the lower line is rendered at value 20. Stochastic and Signal Lines are calculated based on the stochastic formula.
 
 {% highlight javascript %}
 
@@ -377,7 +378,8 @@ To render the TMA indicator, you should specify the [`indicators.type`](../api/e
 
 ## Enable Tooltip 
 
-To display the indicator tooltip, use [`visible`](../api/ejchart#members:indicators-tooltip) option of the [`indicators.tooltip`](../api/ejchart#members:indicators-tooltip). Also, you can change and customize the tooltip color, border, format and font properties similar to the series tooltip.
+To display the indicator tooltip, use [`visible`](../api/ejchart#members:indicators-tooltip) option of the [`indicators-tooltip`](../api/ejchart#members:indicators-tooltip). 
+Also, you can change and customize the tooltip [`color`](../api/ejchart#members:indicators-tooltip-fill), [`border`](../api/ejchart#members:indicators-tooltip-border), [`format`](../api/ejchart#members:indicators-tooltip-format) and [`font`](api/js/ejchart#members:indicators-tooltip-font) properties similar to the series tooltip.
 
 {% highlight javascript %}
 

@@ -14,6 +14,8 @@ annotations are used to mark the specific area of interest in the chart area wit
 
 You can add annotations to the chart by using the [`annotations`](../api/ejchart#members:annotations) option. By using the [`content`](../api/ejchart#members:annotations-content) option of annotation object, you can specify the id of the element that needs to be displayed in the chart area.
 
+The visibility of the annotation is controlled by using the [`visible`](../api/ejchart#members:annotations-visible) property.The opacity of the annotation object displayed is customized by using the [`opacity`](../api/ejchart#members:annotations-opacity) property.
+
 {% highlight html %}
 
 <body>
@@ -110,6 +112,10 @@ N> By using the [`region`](../api/ejchart#members:annotations-region) option, yo
 ## Annotation alignments
 
 When the coordinateUnit is set to pixels or points, you can align the annotation relative to the coordinates by using the [`horizontalAlignment`](../api/ejchart#members:annotations-horizontalalignment) and [`verticalAlignment`](../api/ejchart#members:annotations-verticalalignment) options. 
+
+We can also place the annotation to the specified position by using the [`margin`](../api/ejchart#members:annotations-margin) property. 
+The margin property of the annotation can  further be customized in [`right`](../api/ejchart#members:annotations-margin-right),
+[`left`](../api/ejchart#members:annotations-margin-left),[`top`](../api/ejchart#members:annotations-margin-top) and [`bottom`](../api/ejchart#members:annotations-margin-bottom) directions.
 
 {% highlight javascript %}
 

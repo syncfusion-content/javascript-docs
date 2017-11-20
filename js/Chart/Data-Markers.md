@@ -93,7 +93,7 @@ The following code example illustrates this,
 
 Data label can be added to a chart series by enabling the [`visible`](../api/ejchart#members:series-marker-datalabel-visible) property in the [`dataLabel`](../api/ejchart#members:series-marker-datalabel) option. The labels appear at the top of the data point, by default.
 
-The following code example shows how to enable data label and set its horizontal and vertical text alignment. 
+The following code example shows how to enable data label and set its [`horizontalTextAlignment`](../api/ejchart#members:series-marker-datalabel-horizontaltextalignment) and [`vertical text alignment`](../api/ejchart#members:series-marker-datalabel-verticaltextalignment). 
 
 {% highlight javascript %}
 
@@ -124,7 +124,11 @@ Label content can be formatted by using the template option. Inside the template
 
 You can adorn the labels with background shapes by setting *shape* option.
 
+The color for the datalabel text is set by using the [`fill`](../api/ejchart#members:series-marker-datalabel-fill) property.
+
 The following code example shows how to add background shapes and set template to data label.
+
+The border for the marker is added by using the [`border`](../api/ejchart#members:series-marker-border) property.
 
 {% highlight html %}
 
@@ -179,7 +183,7 @@ The following code example shows how to add background shapes and set template t
 ![](/js/Chart/Data-Markers_images/Data-Markers_img4.png)
 
 
-The appearance of the labels can be customized by using the [`font`](../api/ejchart#members:series-marker-datalabel-font) and [`offset`](../api/ejchart#members:series-marker-datalabel-offset) options. The [`offset`](../api/ejchart#members:series-marker-datalabel-offset) option is used to move the labels vertically. Also, labels can be rotated by using the [`rotate`](../api/ejchart#members:series-marker-datalabel-rotate) option.
+The appearance of the labels can be customized by using the [`font`](../api/ejchart#members:series-marker-datalabel-font) and [`offset`](../api/ejchart#members:series-marker-datalabel-offset) options. The [`offset`](../api/ejchart#members:series-marker-datalabel-offset) option is used to move the labels vertically. Also, labels can be rotated by using the [`angle`](../api/ejchart#members:series-marker-datalabel-angle) option.
 
 The following code example shows how to rotate datalabel text and customize the font.
 
@@ -286,7 +290,7 @@ The following screenshot displays the labels when the [`labelPosition`](../api/e
 ![](/js/Chart/Data-Markers_images/Data-Markers_img9.png)
 
 
-The label can be wrapped for pie, doughnut, funnel, and pyramid series by setting the enableWrap property. 
+The label can be wrapped for pie, doughnut, funnel, and pyramid series by setting the [`enableWrap`](../api/ejchart#members:series-marker-datalabel-enablewrap) property. 
 
 {% highlight javascript %} 
 
@@ -334,7 +338,7 @@ $("#container").ejChart({
 
 ## Binding label from the datasource
 
-You can bind the text value to the datalabel from the datasource and then you need to map the text value field with the [`textMappingName`](../api/ejchart#members:commonseriesoptions-marker-datalabel-textmappingname) properties respectively.
+You can bind the text value to the datalabel from the datasource and then you need to map the text value field with the [`textMappingName`](../api/ejchart#members:series-marker-datalabel-textmappingname) properties respectively.
 
 {% highlight javascript %}
 
@@ -369,7 +373,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/vkziijnc)
 
 ## Binding fill color to the points from the datasource
 
-You can bind the color value to the points from the datasource and then you need to map the color value field to the [`pointColorMappingName`](../api/ejchart#members:commonseriesoptions-pointcolormappingname) property respectively.
+You can bind the color value to the points from the datasource and then you need to map the color value field to the [`pointColorMappingName`](../api/ejchart#members:series-pointcolormappingname) property respectively.
 
 {% highlight javascript %}
 
@@ -429,9 +433,13 @@ If the data label is placed inside the data points segment, then that particular
 
 ## Customize specific points
 
-By using the ejChart, you can also customize the individual/specific markers with different colors, shapes and also with different images.
+By using the ejChart, you can also customize the individual/specific markers with different colors, [`shape`](../api/ejchart#members:series-marker-datalabel-shape) and also with different images.
 
 There are two ways to achieve this based on how the data is fed to the series.
+
+The [`margin`](../api/ejchart#members:series-marker-datalabel-margin) property is used for providing the space in the left,right,top and bottom directions.
+
+The required space for the datalabel text can also be customized by using the [`offset`](../api/ejchart#members:series-marker-datalabel-offset) property.
 
 When the data is provided by using the [`points`](../api/ejchart#members:series-points) option, you can add marker for each data point or specific point by using the [`marker`](../api/ejchart#members:series-marker) option as illustrated in the following code example.
 
