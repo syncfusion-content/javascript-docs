@@ -12,7 +12,7 @@ api : /api/js/ejchart
 
 ## Multiple Series
 
-In EjChart, you can add multiple series object in the [`series`](../api/ejchart.html#members:series) options. The series are rendered in the order it is added to the [`series`](../api/ejchart.html#members:series) option, by default. You can change this order by using the [`zOrder`](../api/ejchart.html#members:series-zorder) option.  
+In EjChart, you can add multiple series object in the [`series`](../api/ejchart#members:series) options. The series are rendered in the order it is added to the [`series`](../api/ejchart.html#members:series) option, by default. You can change this order by using the [`zOrder`](../api/ejchart#members:series-zOrder) option.  
 
 {% highlight javascript %}
 
@@ -56,7 +56,7 @@ In EjChart, you can add multiple series object in the [`series`](../api/ejchart.
 
 ### Customizing all series together
 
-By using the [`commonSeriesOptions`](../api/ejchart.html#members:series-commonseriesoptions), you can customize the series options for all the series commonly, instead of setting the options directly on each series object. 
+By using the [`commonSeriesOptions`](../api/ejchart#members:commonseriesoptions), you can customize the series options for all the series commonly, instead of setting the options directly on each series object. 
 
 N> The inline properties of the series has the first priority and override the commonSeriesOptions.
 
@@ -173,4 +173,21 @@ When the combination of Cartesian and accumulation series types are added to the
 {% endhighlight %}
 
 ![](/js/Chart/Chart-Series_images/Chart-Series_img4.png)
+
+## Init Series render
+
+The [`initSeriesRender`](../api/ejchart#members:initseriesrender) property controls whether the series has to be rendered at initial loading of chart.
+This property will be useful in scenarios where chart is placed at the bottom of the web page and we need to render the series only when the chart is visible while scrolling to the top.
+
+{% highlight javascript %}
+
+
+    $("#container").ejChart({
+
+     initSeriesRender : false
+                  
+});
+
+
+{% endhighlight %}
 

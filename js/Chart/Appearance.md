@@ -133,9 +133,14 @@ N> Series border can be applied to all the series (except Line, Spline, HiLo, Hi
 
 ## Chart area customization
 
+
+The [`chartArea`](../api/ejchart#members:chartarea) is the plot area of the chart.
+
 ### Customize chart background
 
 The Chart background can be customized by using the [`background`](../api/ejchart#members:background) property of the Chart. To customize the chart border, use [`border`](../api/ejchart#members:border) option of the chart. 
+
+The Chart border can be customized by using the [`color`](../api/ejchart#members:border-color),[`width`](../api/ejchart#members:border-width) and [`opacity`](../api/ejchart#members:border-opacity) properties.
 
 {% highlight javascript %}
 
@@ -162,6 +167,8 @@ The Chart background can be customized by using the [`background`](../api/ejchar
 **Chart Margin**
 
 The Chart [`margin`](../api/ejchart#members:margin) property is used to add the margin to the chart area at the left, right, top and bottom position.
+The [`left`](../api/ejchart#members:margin-left),[`right`](../api/ejchart#members:margin-right),[`top`](../api/ejchart#members:margin-top),
+[`bottom`](../api/ejchart#members:margin-bottom) properties are used to add the margin space in respective positions.
 
 {% highlight javascript %}
 
@@ -229,6 +236,30 @@ The Chart area background can be customized by using the [`background`](../api/e
 {% endhighlight %} 
 
 ![](/js/Chart/Appearance_images/Appearance_img8.png)
+
+
+**Chart area border**
+
+The Chart area border can be customized by using the [`border`](../api/ejchart#members:chartarea-border) property in the chart area.
+The color,opacity and width of the borders can be customized using the [`color`](../api/ejchart#members:chartarea-border-color),[`width`](../api/ejchart#members:chartarea-border-width),[`opacity`](../api/ejchart#members:chartarea-border-opacity) properties present inside the border option of the chart area.
+
+{% highlight javascript %}
+
+       $("#container").ejChart({
+       
+            // ...
+            
+           chartArea: {            
+                 //Setting border for Chart area
+                 border:{ color: "red", width:5, opacity:0.4 }
+            },               
+                      
+            // ...
+
+        });
+
+
+{% endhighlight %} 
 
 
 ### Customize chart area grid bands

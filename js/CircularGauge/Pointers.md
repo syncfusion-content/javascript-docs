@@ -10,7 +10,7 @@ api: /api/js/ejcirculargauge
 
 # Pointers
 
-**Pointer** value points out the actual value set in the **Circular Gauge**. You can customize the [`pointers`](../api/js/ejcirculargauge#members:scales-pointers) to improve the appearance of **Gauge**.
+**Pointer** value points out the actual value set in the **Circular Gauge**. You can customize the [`pointers`](../api/ejcirculargauge#members:scales-pointers) to improve the appearance of **Gauge**.
 
 ## Adding Pointer Collection
 
@@ -46,7 +46,7 @@ Execute the above code to render the following output.
 
 ## Adding Pointer Value
 
-**Pointer value** is the important element in the **Circular Gauge** that indicates the **Gauge** value. Real purpose of the **Circular Gauge** is based on the pointer value. You can set the pointer [`value`](../api/js/ejcirculargauge#members:scales-pointers-value) either directly during rendering the control or it can be achieved by public method too.
+**Pointer value** is the important element in the **Circular Gauge** that indicates the **Gauge** value. Real purpose of the **Circular Gauge** is based on the pointer value. You can set the pointer [`value`](../api/ejcirculargauge#members:scales-pointers-value) either directly during rendering the control or it can be achieved by public method too.
 
 
 {% highlight html %}
@@ -89,7 +89,7 @@ Execute the above code to render the following output.
 
 **Colors and Border**
 
-The Pointers border is modified with the object called [`border`](../api/js/ejcirculargauge#members:scales-pointers-border) as in scales. It has two border property called [`color`](../api/js/ejcirculargauge#members:scales-pointers-border-color) and [`width`](../api/js/ejcirculargauge#members:scales-pointers-border-width) which are used to customize the border color of the pointer and border width of the pointer. You can set the background color to improve the look of the **Circular Gauge** and you can customize the background color of the scale using [`backgroundColor`](../api/js/ejcirculargauge#members:scales-pointers-backgroundcolor). The needle length of circular gauge can be customized using [`backNeedleLength`](../api/js/ejcirculargauge#members:scales-pointers-backneedlelength) property.
+The Pointers border is modified with the object called [`border`](../api/ejcirculargauge#members:scales-pointers-border) as in scales. It has two border property called [`color`](../api/ejcirculargauge#members:scales-pointers-border-color) and [`width`](../api/ejcirculargauge#members:scales-pointers-border-width) which are used to customize the border color of the pointer and border width of the pointer. You can set the background color to improve the look of the **Circular Gauge** and you can customize the background color of the scale using [`backgroundColor`](../api/ejcirculargauge#members:scales-pointers-backgroundcolor). The needle length of circular gauge can be customized using [`backNeedleLength`](../api/ejcirculargauge#members:scales-pointers-backneedlelength) property.
 
 {% highlight html %}
 
@@ -137,7 +137,7 @@ Execute the above code to render the following output.
 
 **Appearance**
 
-Based on the value, the**pointer** point out the label value. You can set the pointer length and width using [`length`](../api/js/ejcirculargauge#members:scales-pointers-length) and [`width`](../api/js/ejcirculargauge#members:scales-pointers-width) property respectively. And you can also adjust the opacity of the pointer using the property [`opacity`](../api/js/ejcirculargauge#members:scales-pointers-opacity) which holds the value between 0 and 1. You can add the gradient effects to the pointer using [`gradients`](../api/js/ejcirculargauge#members:scales-pointers-gradients) object.
+Based on the value, the**pointer** point out the label value. You can set the pointer length and width using [`length`](../api/ejcirculargauge#members:scales-pointers-length) and [`width`](../api/ejcirculargauge#members:scales-pointers-width) property respectively. And you can also adjust the opacity of the pointer using the property [`opacity`](../api/ejcirculargauge#members:scales-pointers-opacity) which holds the value between 0 and 1. You can add the gradient effects to the pointer using [`gradients`](../api/ejcirculargauge#members:scales-pointers-gradients) object.
 
 {% highlight html %}
 
@@ -184,7 +184,7 @@ Execute the above code to render the following output.
 
 **Position the pointer**
 
-Pointer can be positioned with the help of two properties such as **distanceFromScale** and **placement**. [`distanceFromScale`](../api/js/ejcirculargauge#members:scales-pointers-distancefromscale) property defines the distance between the scale and pointer.  [`placement`](../api/js/ejcirculargauge#members:scales-pointers-placement) property is used to locate the pointer with respect to scale either inside the scale or outside the scale or along the scale. It is an enumerable data type. Both the property is applied only if pointer [`type`](../api/js/ejcirculargauge#members:scales-pointers-type) is marker. For [`needleType`](../api/js/ejcirculargauge#members:scales-pointers-needletype) marker, it renders with default position that is unchangeable.
+Pointer can be positioned with the help of two properties such as **distanceFromScale** and **placement**. [`distanceFromScale`](../api/ejcirculargauge#members:scales-pointers-distancefromscale) property defines the distance between the scale and pointer.  [`placement`](../api/ejcirculargauge#members:scales-pointers-placement) property is used to locate the pointer with respect to scale either inside the scale or outside the scale or along the scale. It is an enumerable data type. Both the property is applied only if pointer [`type`](../api/ejcirculargauge#members:scales-pointers-type) is marker. For [`needleType`](../api/ejcirculargauge#members:scales-pointers-needletype) marker, it renders with default position that is unchangeable.
 
 {% highlight html %}
 
@@ -295,7 +295,7 @@ In JavaScript circular gauge, it is possible to replace the pointer with images.
 
 **Image with URL**
 
-* To implement the pointer image we need to give the API called [`imageUrl`](../api/js/ejcirculargauge#members:scales-pointers-imageurl). It is a string data type. 
+* To implement the pointer image we need to give the API called [`imageUrl`](../api/ejcirculargauge#members:scales-pointers-imageurl). It is a string data type. 
 * Image type pointer is applicable for both marker as well as needle type pointers and it is possible with combine the normal marker pointer type wit image type. The three possibilities are
  
   * Needle Image
@@ -306,7 +306,7 @@ In JavaScript circular gauge, it is possible to replace the pointer with images.
  
 **Needle Image**
 
-In [`needleType`](../api/js/ejcirculargauge#members:scales-pointers-needletype), needle pointer is completely replaced by image. We can implement it with the help of following snippet. 
+In [`needleType`](../api/ejcirculargauge#members:scales-pointers-needletype), needle pointer is completely replaced by image. We can implement it with the help of following snippet. 
  
 {% highlight html %}
 
@@ -379,7 +379,7 @@ Execute the above code to render the following output.
 
 **Marker Image**
 
-In [`markerType`](../api/js/ejcirculargauge#members:scales-pointers-markertype), marker pointer is completely replaced by image. We can implement it with the help of following snippet.
+In [`markerType`](../api/ejcirculargauge#members:scales-pointers-markertype), marker pointer is completely replaced by image. We can implement it with the help of following snippet.
 
 {% highlight html %}
 
@@ -571,11 +571,11 @@ Execute the above code to render the following output.
 
 ## Pointer Value Text
 
-Gauge [`pointerValueText`](../api/js/ejcirculargauge#members:scales-pointers-pointervaluetext) is used to display the current value of the pointer in the **Circular Gauge** control.
+Gauge [`pointerValueText`](../api/ejcirculargauge#members:scales-pointers-pointervaluetext) is used to display the current value of the pointer in the **Circular Gauge** control.
 
 **Positioning the text**
 
-You can position the **Circular Gauge** pointer value with the gauge as center by using the **API** called [`distance`](../api/js/ejcirculargauge#members:scales-pointers-pointervaluetext-distance). You can Disable/ Enable these pointers value by using the API [`showValue`](../api/js/ejcirculargauge#members:scales-pointers-pointervaluetext-showvalue).
+You can position the **Circular Gauge** pointer value with the gauge as center by using the **API** called [`distance`](../api/ejcirculargauge#members:scales-pointers-pointervaluetext-distance). You can Disable/ Enable these pointers value by using the API [`showValue`](../api/ejcirculargauge#members:scales-pointers-pointervaluetext-showvalue).
 
 {% highlight html %}
 
@@ -623,15 +623,15 @@ Run the above code to render the output as follows.
 
 ## Appearance
 
-Appearance of the **Circular Gauge** [`pointerValueText`](../api/js/ejcirculargauge#members:scales-pointers-pointervaluetext) is adjusted by using four properties. Such as **color, angle, autoAngle** and **opacity**.
+Appearance of the **Circular Gauge** [`pointerValueText`](../api/ejcirculargauge#members:scales-pointers-pointervaluetext) is adjusted by using four properties. Such as **color, angle, autoAngle** and **opacity**.
 
-* [`color`](../api/js/ejcirculargauge#members:scales-pointers-pointervaluetext-color) property is used to set the color of the pointer value text.
+* [`color`](../api/ejcirculargauge#members:scales-pointers-pointervaluetext-color) property is used to set the color of the pointer value text.
 
-* [`angle`](../api/js/ejcirculargauge#members:scales-pointers-pointervaluetext-angle) property is used to set the angle in which the text is displayed.
+* [`angle`](../api/ejcirculargauge#members:scales-pointers-pointervaluetext-angle) property is used to set the angle in which the text is displayed.
 
-* [`autoAngle`](../api/js/ejcirculargauge#members:scales-pointers-pointervaluetext-autoangle) is used to display the text in certain angle based on pointer position angle.
+* [`autoAngle`](../api/ejcirculargauge#members:scales-pointers-pointervaluetext-autoangle) is used to display the text in certain angle based on pointer position angle.
 
-* [`opacity`](../api/js/ejcirculargauge#members:scales-pointers-pointervaluetext-opacity) is used to customize the brightness of the text. 
+* [`opacity`](../api/ejcirculargauge#members:scales-pointers-pointervaluetext-opacity) is used to customize the brightness of the text. 
 
 
 
@@ -687,7 +687,7 @@ Run the above code to render the output as follows.
 
 ## Font Options
 
-Similar to other collection, [`font`](../api/js/ejcirculargauge#members:scales-pointers-pointervaluetext-font) option is also available in this pointer value text such as [`size`](../api/js/ejcirculargauge#members:scales-pointers-pointervaluetext-font-size), [`fontFamily`](../api/js/ejcirculargauge#members:scales-pointers-pointervaluetext-font-fontfamily) and [`fontStyle`](../api/js/ejcirculargauge#members:scales-pointers-pointervaluetext-font-fontstyle).
+Similar to other collection, [`font`](../api/ejcirculargauge#members:scales-pointers-pointervaluetext-font) option is also available in this pointer value text such as [`size`](../api/ejcirculargauge#members:scales-pointers-pointervaluetext-font-size), [`fontFamily`](../api/ejcirculargauge#members:scales-pointers-pointervaluetext-font-fontfamily) and [`fontStyle`](../api/ejcirculargauge#members:scales-pointers-pointervaluetext-font-fontstyle).
 
 {% highlight html %}
 

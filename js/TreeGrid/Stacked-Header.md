@@ -59,7 +59,7 @@ You can provide external CSS styles to the stacked header with the help of cssCl
 
 <style>
   .stack {
-            background-color: red; 
+            background-color: #ffb3b3; 
         }
 </style>
 

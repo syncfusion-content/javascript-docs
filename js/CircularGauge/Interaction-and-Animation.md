@@ -12,7 +12,7 @@ api: /api/js/ejcirculargauge
 
 **Interaction**
 
-**Circular Gauge** control contains **Interaction** feature. You can use this interaction feature to change the pointer values manually. You can achieve this by clicking and dragging the pointer over the **Gauge** and you can see the value of pointer changes dynamically while dragging. To Enable/Disable the user interaction you can use the Boolean property called [`readOnly`](../api/js/ejcirculargauge#members:readonly). The user interaction option is enabled when you set the value as false for the property **readOnly**.By default it holds the true value.That is by default it does not support interaction. 
+**Circular Gauge** control contains **Interaction** feature. You can use this interaction feature to change the pointer values manually. You can achieve this by clicking and dragging the pointer over the **Gauge** and you can see the value of pointer changes dynamically while dragging. To Enable/Disable the user interaction you can use the Boolean property called [`readOnly`](../api/ejcirculargauge#members:readonly). The user interaction option is enabled when you set the value as false for the property **readOnly**.By default it holds the true value.That is by default it does not support interaction. 
 
 {% highlight html %}
 
@@ -40,7 +40,7 @@ Execute the above code to render the following output.
 
 **Animations**
 
-**Circular Gauge** contains an attractive concept called **Animation**. The animation option enables the pointer to rotate from the minimum value to the current value with animation effects. By using this animation you can change the pointer value dynamically.You can apply the animation on  pointer either by clockwise or counterclockwise based on the scale direction. You can enable / disable it using the property [`enableAnimation`](../api/js/ejcirculargauge#members:enableanimation). Animation is enabled when you set **enableAnimation** as ‘true’. By default it holds the true value. You can control the speed of the pointer during animating by using the property [`animationSpeed`](../api/js/ejcirculargauge#members:animationspeed). It is a numerical value that holds the time in milliseconds. That is when the value is given as 1000, it is considered as 1 second.
+**Circular Gauge** contains an attractive concept called **Animation**. The animation option enables the pointer to rotate from the minimum value to the current value with animation effects. By using this animation you can change the pointer value dynamically.You can apply the animation on  pointer either by clockwise or counterclockwise based on the scale direction. You can enable / disable it using the property [`enableAnimation`](../api/ejcirculargauge#members:enableanimation). Animation is enabled when you set **enableAnimation** as ‘true’. By default it holds the true value. You can control the speed of the pointer during animating by using the property [`animationSpeed`](../api/ejcirculargauge#members:animationspeed). It is a numerical value that holds the time in milliseconds. That is when the value is given as 1000, it is considered as 1 second.
 
 {% highlight html %}
 
@@ -70,7 +70,7 @@ Execute the above code to render the following output.
 
 **Gradient**
 
-You can change the interior gradient of circular gauge by using [`interiorGradient`](../api/js/ejcirculargauge#members:interiorgradient) property. The [`isRadialGradient`](../api/js/ejcirculargauge#members:isradialgradient) property is used to check whether the gradient is circular or not.  
+You can change the interior gradient of circular gauge by using [`interiorGradient`](../api/ejcirculargauge#members:interiorgradient) property. The [`isRadialGradient`](../api/ejcirculargauge#members:isradialgradient) property is used to check whether the gradient is circular or not.  
 
 {% highlight html %}
 
@@ -92,7 +92,7 @@ $(function () {
 
 **Distance From Corner**
 
-You can display the circular gauge from distance apart from the corner by specifying value for [`distanceFromCorner`](../api/js/ejcirculargauge#members:distancefromcorner) property. 
+You can display the circular gauge from distance apart from the corner by specifying value for [`distanceFromCorner`](../api/ejcirculargauge#members:distancefromcorner) property. 
 
 {% highlight html %}
 
@@ -112,7 +112,7 @@ $(function () {
 
 **Resize**
 
-Circular gauge can be responsive while resizing by specifying [`enableResize`](../api/js/ejcirculargauge#members:enableresize) property as true. 
+Circular gauge can be responsive while resizing by specifying [`enableResize`](../api/ejcirculargauge#members:enableresize) property as true. 
 
 {% highlight html %}
 
@@ -133,7 +133,7 @@ $(function () {
 
 **Localization**
 
-The circular gauge can be localized based on name of culture specified in [`locale`](../api/js/ejcirculargauge#members:locale) property.
+The circular gauge can be localized based on name of culture specified in [`locale`](../api/ejcirculargauge#members:locale) property.
 
 {% highlight html %}
 
@@ -173,7 +173,7 @@ $(function () {
 15. gradientsaffron
 16. gradientsaffrondark
 
-The theme for circular gauge can be specified using [`theme`](../api/js/ejcirculargauge#members:theme) property.
+The theme for circular gauge can be specified using [`theme`](../api/ejcirculargauge#members:theme) property.
 
 {% highlight html %}
 
@@ -193,7 +193,7 @@ $(function () {
 
 **Circular Gauge Values**
 
-The [`minimum`](../api/js/ejcirculargauge#members:minimum), [`maximum`](../api/js/ejcirculargauge#members:maximum), [`radius`](../api/js/ejcirculargauge#members:radius) and [`value`](../api/js/ejcirculargauge#members:value) attributes of circular gauge are used to render the circular gauge with specified location. 
+The [`minimum`](../api/ejcirculargauge#members:minimum), [`maximum`](../api/ejcirculargauge#members:maximum), [`radius`](../api/ejcirculargauge#members:radius) and [`value`](../api/ejcirculargauge#members:value) attributes of circular gauge are used to render the circular gauge with specified location. 
 
 {% highlight html %}
 

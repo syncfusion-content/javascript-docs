@@ -11,7 +11,7 @@ api: /api/js/ejgrid
 
 ## Localization
 
-All text in Grid can be localized using `ej.Grid.Locale` object. Please find the table with list of properties and its value in locale object.
+All text in Grid can be localized using the `ej.Grid.Locale` object. Please find the table with list of properties and its value in locale object.
 
 <table>
 <tr>
@@ -21,23 +21,23 @@ Text</th></tr>
 <tr>
 <td>
 EmptyRecord</td><td>
-No records to display</td></tr>
+No records to display.</td></tr>
 <tr>
 <td>
 GroupDropArea</td><td>
-Drag a column header here to group its column</td></tr>
+Drag a column header here to group its column.</td></tr>
 <tr>
 <td>
 DeleteOperationAlert</td><td>
-No records selected for delete operation</td></tr>
+No records selected for delete operation.</td></tr>
 <tr>
 <td>
 EditOperationAlert</td><td>
-No records selected for edit operation</td></tr>
+No records selected for edit operation.</td></tr>
 <tr>
 <td>
 ForeignKeyAlert</td><td>
-The updated value should be a valid foreign key value</td></tr>
+The updated value should be a valid foreign key value.</td></tr>
 <tr>
 <td>
 SaveButton</td><td>
@@ -85,15 +85,15 @@ PagerInfo</td><td>
 <tr>
 <td>
 FrozenColumnsViewAlert</td><td>
-Frozen columns should be in grid view area</td></tr>
+Frozen columns should be in grid view area.</td></tr>
 <tr>
 <td>
 FrozenColumnsScrollAlert</td><td>
-Enable allowScrolling while using frozen Columns</td></tr>
+Enable allowScrolling while using frozen Columns.</td></tr>
 <tr>
 <td>
 FrozenNotSupportedException</td><td>
-Frozen Columns and Rows are not supported for Grouping, Row Template, Detail Template, Hierarchy Grid and Batch Editing</td></tr>
+Frozen Columns and Rows are not supported for Grouping, Row Template, Detail Template, Hierarchy Grid and Batch Editing.</td></tr>
 <tr>
 <td>
 Add</td><td>
@@ -205,7 +205,7 @@ Enter value</td></tr>
 <tr>
 <td>
 EmptyDataSource</td><td>
-DataSource must not be empty at initial load since columns are generated from dataSource in AutoGenerate Column Grid</td></tr>
+DataSource must not be empty at initial load since columns are generated from dataSource in AutoGenerate Column Grid.</td></tr>
 <tr>
 <td>
 EmptyRowValidationMessage</td><td>
@@ -221,7 +221,7 @@ False</td></tr>
 <tr>
 <td>
 UnGroup</td><td>
-Click here to ungroup</td></tr>
+Click here to ungroup.</td></tr>
 <tr>
 <td>
 AddRecord</td><td>
@@ -249,15 +249,15 @@ Ungroup</td></tr>
 <tr>
 <td>
 UnGroup</td><td>
-Click here to ungroup</td></tr>
+Click here to ungroup.</td></tr>
 <tr>
 <td>
 SortInAscendingOrder</td><td>
-Sort In Ascending Order</td></tr>
+Sort In Ascending Order.</td></tr>
 <tr>
 <td>
 SortInDescendingOrder</td><td>
-Sort In Descending Order</td></tr>
+Sort In Descending Order.</td></tr>
 <tr>
 <td>
 PagerInfo</td><td>
@@ -340,7 +340,7 @@ I> You need to change pager locale in `ej.Pager.Locale` object.
 ## Excel-Filter Localization
 
 
-All text in Excel-Filter can be localized using `ej.ExcelFilter.Locale` object. Please find the table with list of properties and its value in locale object.
+All text in Excel-Filter can be localized using the `ej.ExcelFilter.Locale` object. Please find the table with list of properties and its value in locale object.
 
 <table>
 <tr>
@@ -550,12 +550,12 @@ Please find the code
 ![](Globalizationandlocalization._images/Globalizationandlocalization._img2.png)
 
 
-I> We have uploaded the predefined language packs for some commonly used cultures in [`this`](https://github.com/syncfusion/ej-global/tree/master/l10n) github location. Refer to the github location for getting the predefined language packs for the corresponding culture. The culture file has localized texts for all the Syncfusion controls.
+I> We have uploaded the predefined language packs for some commonly used cultures in [`this`](https://github.com/syncfusion/ej-global/tree/master/l10n) GitHub location. Refer to GitHub location for getting the predefined language packs for the corresponding culture. The culture file has localized texts for all the Syncfusion controls.
 
 
 ## Globalization
 
-`ej.globalize` library is used to globalize numeric values in Grid control using [`format`](https://help.syncfusion.com/api/js/ejgrid#members:columns-format "format") property in [`columns`](https://help.syncfusion.com/api/js/ejgrid#members:columns "columns"). Globalize values will be automatically used when [`locale`](https://help.syncfusion.com/api/js/ejgrid#members:locale "locale") property is set with locale string value for example `en-US`.
+The `ej.globalize` library is used to globalize numeric values in Grid control using [`format`](https://help.syncfusion.com/api/js/ejgrid#members:columns-format "format") property in [`columns`](https://help.syncfusion.com/api/js/ejgrid#members:columns "columns"). Globalize values will be automatically used when [`locale`](https://help.syncfusion.com/api/js/ejgrid#members:locale "locale") property is set with locale string value for example `en-US`.
 
 {% highlight html %}
 
@@ -582,13 +582,13 @@ I> We have uploaded the predefined language packs for some commonly used culture
 
 ![](Globalizationandlocalization._images/Globalizationandlocalization._img3.png)
 
-I> In the above example, you need to use `globalize.culture.de-DE` script file to globalize values. 
+I> In the above example, you need to use the `globalize.culture.de-DE` script file to globalize values. 
 
 {% seealso %} [localization](https://help.syncfusion.com/js/localization) {% endseealso %}
 
 ## Right to Left - RTL
 
-By default, Grid render its text and layout from left to right. To customize Grid's direction, you can change direction from LTR to RTL by using [`enableRTL`](https://help.syncfusion.com/api/js/ejgrid#members:enablertl "enableRTL") as true.
+By default, Grid render its text and layout from left to right. To customize Grid's direction, you can change direction from LTR to RTL by setting [`enableRTL`](https://help.syncfusion.com/api/js/ejgrid#members:enablertl "enableRTL") as true.
 
 {% highlight html %}
 
