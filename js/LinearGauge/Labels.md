@@ -10,15 +10,15 @@ api: /api/js/ejlineargauge
 
 # Labels
 
-Labels are units that are used to display the values in the scales. You can customize Labels with the properties like [`angle`](../api/js/ejlineargauge#members:scales-labels-angle), [`color`](../api/js/ejlineargauge#members:scales-labels-textcolor), [`font`](../api/js/ejlineargauge#members:scales-labels-font), [`opacity`](../api/js/ejlineargauge#members:scales-labels-opacity), etc.
+Labels are units that are used to display the values in the scales. You can customize Labels with the properties like [`angle`](../api/ejlineargauge#members:scales-labels-angle), [`color`](../api/ejlineargauge#members:scales-labels-textcolor), [`font`](../api/ejlineargauge#members:scales-labels-font), [`opacity`](../api/ejlineargauge#members:scales-labels-opacity), etc.
 
 ## Label Customization
 
 **Appearance**
 
-* The attribute **angle** is used to display the labels in the specified angles and **color** attribute is used to display the labels in specified color. You can adjust the opacity of the label with the property **opacity** and the values of it lies between 0 and 1.The [`includeFirstValue`](../api/js/ejlineargauge#members:scales-labels-includefirstvalue) is a special property by enabling this property, the first value of the label is not rendered.
+* The attribute **angle** is used to display the labels in the specified angles and **color** attribute is used to display the labels in specified color. You can adjust the opacity of the label with the property **opacity** and the values of it lies between 0 and 1.The [`includeFirstValue`](../api/ejlineargauge#members:scales-labels-includefirstvalue) is a special property by enabling this property, the first value of the label is not rendered.
 
-* Font option is also available on the labels. The basic three properties of fonts such as [`size`](../api/js/ejlineargauge#members:scales-labels-font-size), [`family`](../api/js/ejlineargauge#members:scales-labels-font-fontfamily) and [`style`](../api/js/ejlineargauge#members:scales-labels-font-fontstyle) can be achieved by **size**, **fontStyle** and **fontFamily**. Labels are two types such as major and minor.Major type labels are for major interval values and minor type labels are for minor interval values.
+* Font option is also available on the labels. The basic three properties of fonts such as [`size`](../api/ejlineargauge#members:scales-labels-font-size), [`family`](../api/ejlineargauge#members:scales-labels-font-fontfamily) and [`style`](../api/ejlineargauge#members:scales-labels-font-fontstyle) can be achieved by **size**, **fontStyle** and **fontFamily**. Labels are two types such as major and minor.Major type labels are for major interval values and minor type labels are for minor interval values.
 
 
 {% highlight html %}
@@ -78,9 +78,9 @@ Execute the above code to render the following output.
 
 ## Unit text and Positioning
 
-* The [`unitText`](../api/js/ejlineargauge#members:scales-labels-unittext) property is used to add some text along with the labels. For example, in speedometer, you need to mention the units in kph. You can also add the unit text in front of the labels. To achieve this use the enumerable property [`unitTextPlacement`](../api/js/ejlineargauge#members:scales-labels-unittextplacement). 
+* The [`unitText`](../api/ejlineargauge#members:scales-labels-unittext) property is used to add some text along with the labels. For example, in speedometer, you need to mention the units in kph. You can also add the unit text in front of the labels. To achieve this use the enumerable property [`unitTextPlacement`](../api/ejlineargauge#members:scales-labels-unittextplacement). 
 
-* Labels can be positioned with the help of two properties such as **distanceFromScale** and **placement**. [`distanceFromScale`](../api/js/ejlineargauge#members:scales-labels-distancefromscale) property defines the distance between the scale and labels. [`placement`](../api/js/ejlineargauge#members:scales-labels-placement) property is used to locate the labels with respect to scale either inside the scale or outside the scale or along the scale. It is an enumerable data type.
+* Labels can be positioned with the help of two properties such as **distanceFromScale** and **placement**. [`distanceFromScale`](../api/ejlineargauge#members:scales-labels-distancefromscale) property defines the distance between the scale and labels. [`placement`](../api/ejlineargauge#members:scales-labels-placement) property is used to locate the labels with respect to scale either inside the scale or outside the scale or along the scale. It is an enumerable data type.
 
 
 {% highlight html %}
