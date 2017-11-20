@@ -281,7 +281,7 @@ Responsiveness of the linear gauge is controlled by using [`enableResize`](../ap
 
 **LinearGauge** supports localization for its axis labels and tooltip. To render the gauge with specific culture you have to refer the corresponding globalize culture script and need to specify the culture name in [`locale`](../api/ejlineargauge#members:locale) property of gauge.
 
-**Enable Group Seperator** is used to Convert the date object to string while using the locale settings, you can set [`enableGroupSeperator`](../api/ejlineargauge#members:enablegroupseparator) property as **true**.
+**Enable Group Separator** is used to Convert the date object to string while using the locale settings, you can set [`enableGroupSeparator`](../api/ejlineargauge#members:enablegroupseparator) property as **true**.
 
 {% highlight javascript %}
 
