@@ -10,7 +10,7 @@ api: /api/js/ejcirculargauge
 
 # Labels
 
-**Labels** are units that are used to display the values in the scales. You can customize [`labels`](../api/js/ejcirculargauge#members:scales-labels) with the properties like [`angle`](../api/js/ejcirculargauge#members:scales-labels-angle), [`color`](../api/js/ejcirculargauge#members:scales-labels-color), [`font`](../api/js/ejcirculargauge#members:scales-labels-font), [`opacity`](../api/js/ejcirculargauge#members:scales-labels-opacity), etc.
+**Labels** are units that are used to display the values in the scales. You can customize [`labels`](../api/ejcirculargauge#members:scales-labels) with the properties like [`angle`](../api/ejcirculargauge#members:scales-labels-angle), [`color`](../api/ejcirculargauge#members:scales-labels-color), [`font`](../api/ejcirculargauge#members:scales-labels-font), [`opacity`](../api/ejcirculargauge#members:scales-labels-opacity), etc.
 
 ## Adding Label Collection 
 
@@ -48,9 +48,9 @@ Execute the above code to render the following output.
 
 **Appearance**
 
-The **attribute** [`angle`](../api/js/ejcirculargauge#members:scales-labels-angle) is used to display the labels in the specified angles and [`color`](../api/js/ejcirculargauge#members:scales-labels-color) attribute is used to display the labels in specified color. You can adjust the opacity of the label with the property [`opacity`](../api/js/ejcirculargauge#members:scales-labels-opacity) and the values of it lies between 0 and 1. You can adjust the labels based on the tick’s direction by setting [`autoAngle`](../api/js/ejcirculargauge#members:scales-labels-autoangle) as true. [`includeFirstValue`](../api/js/ejcirculargauge#members:scales-labels-includefirstvalue) is an special property especially used in some special scenarios such as in clock, where the value 0 needs to be replaced with that of 12. By enabling this property the first value of the label is not rendered.
+The **attribute** [`angle`](../api/ejcirculargauge#members:scales-labels-angle) is used to display the labels in the specified angles and [`color`](../api/ejcirculargauge#members:scales-labels-color) attribute is used to display the labels in specified color. You can adjust the opacity of the label with the property [`opacity`](../api/ejcirculargauge#members:scales-labels-opacity) and the values of it lies between 0 and 1. You can adjust the labels based on the tick’s direction by setting [`autoAngle`](../api/ejcirculargauge#members:scales-labels-autoangle) as true. [`includeFirstValue`](../api/ejcirculargauge#members:scales-labels-includefirstvalue) is an special property especially used in some special scenarios such as in clock, where the value 0 needs to be replaced with that of 12. By enabling this property the first value of the label is not rendered.
 
-Font option is also available on the labels. The basic three properties of [`font`](../api/js/ejcirculargauge#members:scales-labels-font) such as size, family and style can be achieved by [`size`](../api/js/ejcirculargauge#members:scales-labels-font-size), [`fontStyle`](../api/js/ejcirculargauge#members:scales-labels-font-fontstyle) and [`fontFamily`](../api/js/ejcirculargauge#members:scales-labels-font-fontfamily). Labels are two types such as major and minor.Major types labels are for major interval values and minor types labels are for minor interval values.
+Font option is also available on the labels. The basic three properties of [`font`](../api/ejcirculargauge#members:scales-labels-font) such as size, family and style can be achieved by [`size`](../api/ejcirculargauge#members:scales-labels-font-size), [`fontStyle`](../api/ejcirculargauge#members:scales-labels-font-fontstyle) and [`fontFamily`](../api/ejcirculargauge#members:scales-labels-font-fontfamily). Labels are two types such as major and minor.Major types labels are for major interval values and minor types labels are for minor interval values.
 
 {% highlight html %}
 
@@ -109,9 +109,9 @@ Execute the above code to render the following output.
 
 **Unit text and Position**
 
-[`unitText`](../api/js/ejcirculargauge#members:scales-labels-unittext) is used to add some text along with the labels. For example, in speedometer, you need to mention the units in kph. You can also add the unit text in front of the labels. You can achieve this by using an enumerable property [`unitTextPosition`](../api/js/ejcirculargauge#members:scales-labels-unittextposition). With this you can position the unit text in front or back.
+[`unitText`](../api/ejcirculargauge#members:scales-labels-unittext) is used to add some text along with the labels. For example, in speedometer, you need to mention the units in kph. You can also add the unit text in front of the labels. You can achieve this by using an enumerable property [`unitTextPosition`](../api/ejcirculargauge#members:scales-labels-unittextposition). With this you can position the unit text in front or back.
 
-Labels can be positioned with the help of two properties such as [`distanceFromScale`](../api/js/ejcirculargauge#members:scales-labels-distancefromscale) and [`placement`](../api/js/ejcirculargauge#members:scales-labels-placement). **distanceFromScale** property defines the distance between the scale and labels.  Placement property is used to locate the labels with respect to scale either inside the scale or outside the scale or along the scale. It is an enumerable data type.
+Labels can be positioned with the help of two properties such as [`distanceFromScale`](../api/ejcirculargauge#members:scales-labels-distancefromscale) and [`placement`](../api/ejcirculargauge#members:scales-labels-placement). **distanceFromScale** property defines the distance between the scale and labels.  Placement property is used to locate the labels with respect to scale either inside the scale or outside the scale or along the scale. It is an enumerable data type.
 
 {% highlight html %}
 
@@ -158,7 +158,7 @@ Execute the above code to render the following output.
 
 ## Multiple Labels
 
-You can achieve multiple labels such as minor and major [`type`](../api/js/ejcirculargauge#members:scales-labels-type) in a **Gauge** sample scale. Refer the following code example for multiple labels variation.
+You can achieve multiple labels such as minor and major [`type`](../api/ejcirculargauge#members:scales-labels-type) in a **Gauge** sample scale. Refer the following code example for multiple labels variation.
 
 {% highlight html %}
 
