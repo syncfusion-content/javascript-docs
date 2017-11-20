@@ -126,7 +126,7 @@ The complete list of EJ icons are listed in the following table. You have to use
          margin: 0 auto;
 	   }
 
-.icon-media-smallscreen {
+.icon-media-small-screen {
   background-position: 6px 10px;
 }
 .icon-media-backward {
@@ -138,7 +138,7 @@ The complete list of EJ icons are listed in the following table. You have to use
 .icon-media-forward {
   background-position: -132px 8px;
 }
-.icon-media-fullscreen {
+.icon-media-full-screen {
   background-position: -184px 8px;
 }
 .icon-media-mute {
@@ -189,7 +189,7 @@ The complete list of EJ icons are listed in the following table. You have to use
   height: 32px;
   background-position: -672px 0;
 }
-.icon-media-playlist {
+.icon-media-Playlist {
   width: 32px;
   height: 32px;
   background-position: -720px 0;
@@ -2289,7 +2289,7 @@ The complete list of EJ icons are listed in the following table. You have to use
   height: 32px;
   background-position: -336px -1344px;
 }
-.icon-jsplayground {
+.icon-js-playground {
   width: 32px;
   height: 32px;
   background-position: -384px -1344px;
@@ -3751,8 +3751,8 @@ The complete list of EJ icons are listed in the following table. You have to use
 <table>
 <tr>
 <td>
-<div class="spriteimage icon-media-smallscreen"></div>
- <div class="txt">media-smallscreen</div>
+<div class="spriteimage icon-media-small-screen"></div>
+ <div class="txt">media-small-screen</div>
  <div class="txt">Unicode:"e100"</div>
 </td>
 <td>
@@ -3771,8 +3771,8 @@ The complete list of EJ icons are listed in the following table. You have to use
 <div class="txt">Unicode:"e103"</div>
 </td>
 <td>
-<div class="spriteimage icon-media-fullscreen"></div>
-<div class="txt">media-fullscreen</div>
+<div class="spriteimage icon-media-full-screen"></div>
+<div class="txt">media-full-screen</div>
 <div class="txt">Unicode:"e104"</div>
 </td>
 </tr>
@@ -3835,8 +3835,8 @@ The complete list of EJ icons are listed in the following table. You have to use
 
 <tr>
 <td>
-<div class="spriteimage icon-media-playlist"></div>
-<div class="txt">media-playlist</div>
+<div class="spriteimage icon-media-Playlist"></div>
+<div class="txt">media-Playlist</div>
 <div class="txt">Unicode:"e113"</div>
 </td>
 <td>
@@ -6193,8 +6193,8 @@ The complete list of EJ icons are listed in the following table. You have to use
 <div class="txt">Unicode:"e77f"</div>
 </td>
 <td>
-<div class="spriteimage icon-jsplayground"></div>
-<div class="txt">jsplayground</div>
+<div class="spriteimage icon-js-playground"></div>
+<div class="txt">js-playground</div>
 <div class="txt">Unicode:"e780"</div>
 </td>
 <td>
