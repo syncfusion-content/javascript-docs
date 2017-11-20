@@ -8,7 +8,7 @@ documentation: ug
 api: /api/js/ejcirculargauge
 ---
 
-#Methods and Events
+# Methods and Events
 
 ## Public Methods
 

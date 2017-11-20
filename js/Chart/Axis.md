@@ -1095,6 +1095,52 @@ The [`font`](../api/ejchart#members:primaryxaxis-font) property of the axis prov
 
 ![](/js/Chart/Axis_images/axis_img28.png)
 
+#### Axis Labels Line Break
+
+Axis Labels can be placed in multiple lines by specifying **<br>** for data points x value and in label format.
+
+For category value type, **<br>** can be specified in x value of data points.
+
+{% highlight javascript %}
+
+     $("#container").ejChart({
+        series: 
+			[ 
+				{
+				    points: [
+                             { x: "India", y: 61.3 },                       
+                             { x: "United<br>States<br>of<br>America", y: 31 },
+                             { x: "South<br>Korea", y: 39.4 },
+							 { x: "United<br>Arab<br>Emirates", y: 65.1 },
+							 { x: "United<br>Kingdom", y: 75.9 }
+                     ]
+				}
+			],
+     });
+
+{% endhighlight %}
+
+![](/js/Chart/Axis_images/axis_img68.png)
+
+[JS Playground Sample](http://jsplayground.syncfusion.com/zsaomrq5)
+
+For numeric, datetime and datetimeCategory value type, **<br>** can be specified in labelFormat.
+
+{% highlight javascript %}
+
+     $("#container").ejChart({
+        primaryXAxis:
+        {
+            labelFormat: 'MMM<br>dd<br>yyyy',
+            valueType: 'datetime'
+        }
+     });
+
+{% endhighlight %}
+
+![](/js/Chart/Axis_images/axis_img69.png)
+
+[JS Playground Sample](http://jsplayground.syncfusion.com/fllsqowe)
 
 ### Label and tick positioning
  
