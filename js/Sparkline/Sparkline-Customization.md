@@ -14,7 +14,7 @@ This section explains you the customization options available to make changes in
 
 ## Sparkline background
 
-You can specify the background color for the Sparkline using [`background`]() property. When you don't specify the [`background`](../api/ejsparkline#members:background), it takes "transparent" as background color. 
+You can specify the background color for the Sparkline using [`background`](../api/ejsparkline#members:background) property. When you don't specify the [`background`](../api/ejsparkline#members:background), it takes "transparent" as background color. 
 
 {% highlight javascript %}
 
@@ -27,7 +27,7 @@ $("#container").ejSparkline({
 
 {% endhighlight %} 
 
-![](/js/Sparkline/Sparkline-Customization_images/Sparkline-Customization_img1)
+![](/js/Sparkline/Sparkline-Customization_images/Sparkline-Customization_img1.png)
 
 ## Stroke color and width
 
@@ -45,7 +45,7 @@ $("#container").ejSparkline({
 
 {% endhighlight %} 
 
-![](/js/Sparkline/Sparkline-Customization_images/Sparkline-Customization_img2)
+![](/js/Sparkline/Sparkline-Customization_images/Sparkline-Customization_img2.png)
 
 ## Sparkline border
 
@@ -62,7 +62,7 @@ $("#container").ejSparkline({
 
 {% endhighlight %} 
 
-![](/js/Sparkline/Sparkline-Customization_images/Sparkline-Customization_img3)
+![](/js/Sparkline/Sparkline-Customization_images/Sparkline-Customization_img3.png)
 
 ## Opacity
 
@@ -79,7 +79,7 @@ $("#container").ejSparkline({
 
 {% endhighlight %} 
 
-![](/js/Sparkline/Sparkline-Customization_images/Sparkline-Customization_img4)
+![](/js/Sparkline/Sparkline-Customization_images/Sparkline-Customization_img4.png)
 
 ## Localization
 
@@ -111,7 +111,7 @@ $("#container").ejSparkline({
 
 {% endhighlight %} 
 
-![](/js/Sparkline/Sparkline-Customization_images/Sparkline-Customization_img5)
+![](/js/Sparkline/Sparkline-Customization_images/Sparkline-Customization_img5.png)
 
 ## Canvas support
 
@@ -143,4 +143,4 @@ $("#container").ejSparkline({
 
 {% endhighlight %} 
 
-![](/js/Sparkline/Sparkline-Customization_images/Sparkline-Customization_img6)
+![](/js/Sparkline/Sparkline-Customization_images/Sparkline-Customization_img6.png)
