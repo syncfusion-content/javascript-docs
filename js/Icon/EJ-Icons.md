@@ -2669,7 +2669,7 @@ The complete list of EJ icons are listed in the following table. You have to use
   height: 32px;
   background-position: -288px -1584px;
 }
-.icon-downarrowicon {
+.icon-down-arrow-icon {
   width: 32px;
   height: 32px;
   background-position: -336px -1584px;
@@ -2679,7 +2679,7 @@ The complete list of EJ icons are listed in the following table. You have to use
   height: 32px;
   background-position: -384px -1584px;
 }
-.icon-qaticon {
+.icon-qat-icon {
   width: 61px;
   height: 32px;
   background-position: -432px -1584px;
@@ -3004,7 +3004,7 @@ The complete list of EJ icons are listed in the following table. You have to use
   height: 32px;
   background-position: -528px -1776px;
 }
-.icon-printicon-02 {
+.icon-print-icon-02 {
   width: 32px;
   height: 32px;
   background-position: -576px -1776px;
@@ -3074,12 +3074,12 @@ The complete list of EJ icons are listed in the following table. You have to use
   height: 32px;
   background-position: -480px -1824px;
 }
-.icon-Adpt__Down-arrow {
+.icon-Adopt__Down-arrow {
   width: 32px;
   height: 32px;
   background-position: -528px -1824px;
 }
-.icon-Adpt__up-arrow {
+.icon-Adopt__up-arrow {
   width: 32px;
   height: 32px;
   background-position: -576px -1824px;
@@ -3119,12 +3119,12 @@ The complete list of EJ icons are listed in the following table. You have to use
   height: 32px;
   background-position: -240px -1872px;
 }
-.icon-previouspage-pdfviewer {
+.icon-previous-page-pdfviewer {
   width: 32px;
   height: 32px;
   background-position: -288px -1872px;
 }
-.icon-nextpage-pdfviewer {
+.icon-next-page-pdfviewer {
   width: 32px;
   height: 32px;
   background-position: -336px -1872px;
@@ -3154,7 +3154,7 @@ The complete list of EJ icons are listed in the following table. You have to use
   height: 32px;
   background-position: -576px -1872px;
 }
-.icon-downloadpdf-pdfviewer {
+.icon-download-pdf-pdfviewer {
   width: 32px;
   height: 32px;
   background-position: -624px -1872px;
@@ -3234,7 +3234,7 @@ The complete list of EJ icons are listed in the following table. You have to use
   height: 32px;
   background-position: -576px -1920px;
 }
-.icon-backicon {
+.icon-back-icon {
   width: 32px;
   height: 32px;
   background-position: -624px -1920px;
@@ -3269,7 +3269,7 @@ The complete list of EJ icons are listed in the following table. You have to use
   height: 32px;
   background-position: -144px -1968px;
 }
-.icon-Cellcontext {
+.icon-Cell-context {
   width: 32px;
   height: 32px;
   background-position: -192px -1968px;
@@ -3294,7 +3294,7 @@ The complete list of EJ icons are listed in the following table. You have to use
   height: 32px;
   background-position: -384px -1968px;
 }
-.icon-Summarytypes {
+.icon-Summary-types {
   width: 32px;
   height: 32px;
   background-position: -432px -1968px;
@@ -3384,7 +3384,7 @@ The complete list of EJ icons are listed in the following table. You have to use
   height: 32px;
   background-position: -480px -2016px;
 }
-.icon-SummaryCellHhyperlink {
+.icon-SummaryCellHyperlink {
   width: 32px;
   height: 32px;
   background-position: -528px -2016px;
@@ -3469,7 +3469,7 @@ The complete list of EJ icons are listed in the following table. You have to use
   height: 32px;
   background-position: -528px -2064px;
 }
-.icon-Text-Strick {
+.icon-Text-Strike {
   width: 32px;
   height: 32px;
   background-position: -576px -2064px;
@@ -3484,12 +3484,12 @@ The complete list of EJ icons are listed in the following table. You have to use
   height: 32px;
   background-position: -672px -2064px;
 }
-.icon-Calculated-member_-Toobar-Balck-Color-Icon {
+.icon-Calculated-member_-Toolbar-Black-Color-Icon {
   width: 32px;
   height: 32px;
   background-position: 0 -2112px;
 }
-.icon-Calculated-member_-Tree-View-Balck-Color-Icon {
+.icon-Calculated-member_-Tree-View-Black-Color-Icon {
   width: 32px;
   height: 32px;
   background-position: -48px -2112px;
@@ -6618,8 +6618,8 @@ The complete list of EJ icons are listed in the following table. You have to use
 <div class="txt">Unicode:"e7cb"</div>
 </td>
 <td>
-<div class="spriteimage icon-downarrowicon"></div>
-<div class="txt">downarrowicon</div>
+<div class="spriteimage icon-down-arrow-icon"></div>
+<div class="txt">down-arrow-icon</div>
 <div class="txt">Unicode:"e7cc"</div>
 </td>
 <td>
@@ -6628,8 +6628,8 @@ The complete list of EJ icons are listed in the following table. You have to use
 <div class="txt">Unicode:"e7cd"</div>
 </td>
 <td>
-<div class="spriteimage icon-qaticon"></div>
-<div class="txt">qaticon</div>
+<div class="spriteimage icon-qat-icon"></div>
+<div class="txt">qat-icon</div>
 <div class="txt">Unicode:"e7ce"</div>
 </td>
 </tr>
@@ -6992,8 +6992,8 @@ The complete list of EJ icons are listed in the following table. You have to use
 <div class="txt">Unicode:"e80e"</div>
 </td>
 <td>
-<div class="spriteimage icon-printicon-02"></div>
-<div class="txt">printicon-02</div>
+<div class="spriteimage icon-print-icon-02"></div>
+<div class="txt">print-icon-02</div>
 <div class="txt">Unicode:"e80f"</div>
 </td>
 </tr>
@@ -7071,13 +7071,13 @@ The complete list of EJ icons are listed in the following table. You have to use
 <div class="txt">Unicode:"e81c"</div>
 </td>
 <td>
-<div class="spriteimage icon-Adpt__Down-arrow"></div>
-<div class="txt">Adpt__Down-arrow</div>
+<div class="spriteimage icon-Adopt__Down-arrow"></div>
+<div class="txt">Adopt__Down-arrow</div>
 <div class="txt">Unicode:"e81d"</div>
 </td>
 <td>
-<div class="spriteimage icon-Adpt__up-arrow"></div>
-<div class="txt">Adpt__up-arrow</div>
+<div class="spriteimage icon-Adopt__up-arrow"></div>
+<div class="txt">Adopt__up-arrow</div>
 <div class="txt">Unicode:"e81e"</div>
 </td>
 </tr>
@@ -7122,13 +7122,13 @@ The complete list of EJ icons are listed in the following table. You have to use
 <div class="txt">Unicode:"e825"</div>
 </td>
 <td>
-<div class="spriteimage icon-previouspage-pdfviewer"></div>
-<div class="txt">previouspage-pdfviewer</div>
+<div class="spriteimage icon-previous-page-pdfviewer"></div>
+<div class="txt">previous-page-pdfviewer</div>
 <div class="txt">Unicode:"e826"</div>
 </td>
 <td>
-<div class="spriteimage icon-nextpage-pdfviewer"></div>
-<div class="txt">nextpage-pdfviewer</div>
+<div class="spriteimage icon-next-page-pdfviewer"></div>
+<div class="txt">next-page-pdfviewer</div>
 <div class="txt">Unicode:"e827"</div>
 </td>
 <td>
@@ -7160,8 +7160,8 @@ The complete list of EJ icons are listed in the following table. You have to use
 <div class="txt">Unicode:"e82c"</div>
 </td>
 <td>
-<div class="spriteimage icon-downloadpdf-pdfviewer"></div>
-<div class="txt">downloadpdf-pdfviewer</div>
+<div class="spriteimage icon-download-pdf-pdfviewer"></div>
+<div class="txt">download-pdf-pdfviewer</div>
 <div class="txt">Unicode:"e82d"</div>
 </td>
 </tr>
@@ -7252,8 +7252,8 @@ The complete list of EJ icons are listed in the following table. You have to use
 
 <tr>
 <td>
-<div class="spriteimage icon-backicon"></div>
-<div class="txt">backicon</div>
+<div class="spriteimage icon-back-icon"></div>
+<div class="txt">back-icon</div>
 <div class="txt">Unicode:"e83d"</div>
 </td>
 <td>
@@ -7290,8 +7290,8 @@ The complete list of EJ icons are listed in the following table. You have to use
 <div class="txt">Unicode:"e843"</div>
 </td>
 <td>
-<div class="spriteimage icon-Cellcontext"></div>
-<div class="txt">Cellcontext</div>
+<div class="spriteimage icon-Cell-context"></div>
+<div class="txt">Cell-context</div>
 <div class="txt">Unicode:"e844"</div>
 </td>
 <td>
@@ -7318,8 +7318,8 @@ The complete list of EJ icons are listed in the following table. You have to use
 <div class="txt">Unicode:"e848"</div>
 </td>
 <td>
-<div class="spriteimage icon-Summarytypes"></div>
-<div class="txt">Summarytypes</div>
+<div class="spriteimage icon-Summary-types"></div>
+<div class="txt">Summary-types</div>
 <div class="txt">Unicode:"e849"</div>
 </td>
 <td>
@@ -7420,8 +7420,8 @@ The complete list of EJ icons are listed in the following table. You have to use
 
 <tr>
 <td>
-<div class="spriteimage icon-SummaryCellHhyperlink"></div>
-<div class="txt">SummaryCellHhyperlink</div>
+<div class="spriteimage icon-SummaryCellHyperlink"></div>
+<div class="txt">SummaryCellHyperlink</div>
 <div class="txt">Unicode:"e85b"</div>
 </td>
 <td>
@@ -7514,8 +7514,8 @@ The complete list of EJ icons are listed in the following table. You have to use
 <div class="txt">Unicode:"e86b"</div>
 </td>
 <td>
-<div class="spriteimage icon-Text-Strick"></div>
-<div class="txt">Text-Strick</div>
+<div class="spriteimage icon-Text-Strike"></div>
+<div class="txt">Text-Strike</div>
 <div class="txt">Unicode:"e86c"</div>
 </td>
 <td>
@@ -7532,13 +7532,13 @@ The complete list of EJ icons are listed in the following table. You have to use
 
 <tr>
 <td>
-<div class="spriteimage icon-Calculated-member_-Toobar-Balck-Color-Icon"></div>
-<div class="txt">Calculated-member_-Toobar-Balck-Color-Icon</div>
+<div class="spriteimage icon-Calculated-member_-Toolbar-Black-Color-Icon"></div>
+<div class="txt">Calculated-member_-Toolbar-Black-Color-Icon</div>
 <div class="txt">Unicode:"e86f"</div>
 </td>
 <td>
-<div class="spriteimage icon-Calculated-member_-Tree-View-Balck-Color-Icon"></div>
-<div class="txt">Calculated-member_-Tree-View-Balck-Color-Icon</div>
+<div class="spriteimage icon-Calculated-member_-Tree-View-Black-Color-Icon"></div>
+<div class="txt">Calculated-member_-Tree-View-Black-Color-Icon</div>
 <div class="txt">Unicode:"e870"</div>
 </td>
 <td>
