@@ -9,7 +9,7 @@ api: /api/js/ejgrid
 ---
 # Export
 
-To export the grid, `export` method should  be called with export mapper as parameter. To make it work from the grid toolbar, `ExcelExport`, `WordExport` and `PdfExport` toolbar items needs to be added in [`toolbarSettings.toolbarItems`](https://help.syncfusion.com/api/js/ejgrid#members:toolbarsettings-toolbaritems) property and equivalent server action mapper should be defined in `exportToExcelAction`, `exportToWordAction`, and `exportToPdfAction` properties. The code snippet for this is
+To export the grid, `export` method should  be called with export mapper as a parameter. To make it work from the grid toolbar, `ExcelExport`, `WordExport` and `PdfExport` toolbar items needs to be added in [`toolbarSettings.toolbarItems`](https://help.syncfusion.com/api/js/ejgrid#members:toolbarsettings-toolbaritems) property and equivalent server action mapper should be defined in `exportToExcelAction`, `exportToWordAction`, and `exportToPdfAction` properties. The code snippet for this is
 
 {% highlight html %}
 <div id="Grid"></div>
@@ -46,7 +46,7 @@ $(function () {
 
 {% endhighlight %}
 
-![](Exporting_images/Exporting_img1.png)
+![](Exporting_images/Exporting_img1.png) 
 
 
 ## Server configuration
@@ -131,7 +131,7 @@ public class OrdersController: ApiController
 
 ### Server dependencies
 
-Export Helper functions are available in the Assembly `Syncfusion.EJ.Export`, which is available in the Essential Studio & Essential JavaScript builds. Full list of assemblies needed for grid Export as follows
+Export Helper functions are available in the Assembly `Syncfusion.EJ.Export`, which is available in the Essential Studio & Essential JavaScript builds. Full list of assemblies needed for the grid Export as follows.
 
 1. Syncfusion.EJ
 2. Syncfusion.EJ.Export
@@ -144,7 +144,7 @@ Export Helper functions are available in the Assembly `Syncfusion.EJ.Export`, wh
 ### Supported Export types
 
 
-Currently server helper functions allows following three types of exporting 
+Currently server helper functions allows the following three types of exporting.
 
 * Word
 * Excel
@@ -255,7 +255,7 @@ public void MultipleExportToPdf(string[] GridModel)
 
 ## List of properties ignored on export
 
-Following are the list of properties that are exclude during grid export, to reduce the unwanted data transfer to server.  
+Following are the list of properties that are excluded during grid export, to reduce the unwanted data transfer to server.  
 
 * dataSource
 * query
@@ -266,10 +266,10 @@ Following are the list of properties that are exclude during grid export, to red
 * cssClass
 
 
-##Export only visible records
+## Export only visible records
 
 
-By default `pageSettings` is ignored in export to facilitate all pages export. To achieve current visible page record export, `pageSettings` should be removed from ignore list using following code.
+By default `pageSettings` is ignored in export to facilitate all pages export. To achieve current visible page record export, `pageSettings` should be removed from ignore list using the following code.
 
 The snippet for this is.
 
@@ -336,7 +336,7 @@ private GridProperties ConvertGridProperties(string gridProperty)
 
 ## Local data 
 
-By default, client data source is not sent to server to prevent unwanted data transfer since all data origin is server. In case, if you don't want to query the data source again for exporting in server, the grid's client [`dataSource`](https://help.syncfusion.com/api/js/ejgrid#members:datasource) can be sent to server on export postback by removing the [`dataSource`](https://help.syncfusion.com/api/js/ejgrid#members:datasource) property in grid's ignore list. The code snippet for this as follows
+By default, client data source is not sent to the server to prevent unwanted data transfer since all the data origin is in server. In case, if you don't want to query the data source again for exporting in server, the grid's client [`dataSource`](https://help.syncfusion.com/api/js/ejgrid#members:datasource) can be sent to server on export postback by removing the [`dataSource`](https://help.syncfusion.com/api/js/ejgrid#members:datasource) property in grid's ignore list. The code snippet for this is as follows
 
 {% highlight javascript %}
 
@@ -346,7 +346,7 @@ grid.ignoreOnExport.splice(grid.ignoreOnExport.indexOf('dataSource'), 1);
 {% endhighlight %}
 
 
-##Theme
+## Theme
 
 The grid export have 13 theme option to match with our [built-in control themes](https://help.syncfusion.com/js/theming-in-essential-javascript-components#). They are
 
@@ -364,7 +364,7 @@ The grid export have 13 theme option to match with our [built-in control themes]
 * gradient-saffron-dark
 * bootstrap-theme
 
-Also, it has `none` option which will export the grid without any theme.  The desired theme name can be passed as a parameter to `Export` method and the code snippet for this as follows
+Also, it has `none` option which will export the grid without any theme.  The desired theme name can be passed as a parameter to `Export` method and the code snippet for this as follows.
 
 {% highlight c# %}
 
