@@ -30,10 +30,10 @@ In the following sample, each list item is split into two columns to display rel
 {% highlight javascript %}	
 	
 var empList = [
-    { text: 'Kapil Sharma', eimg: '7', status: 'Available', country: 'USA' },
+    { text: 'John Linden', eimg: '7', status: 'Available', country: 'USA' },
     { text: 'Erik Linden', eimg: '3', status: 'Available', country: 'England' },
-    { text: 'Kavi Tam', eimg: '6', status: 'Available', country: 'England' },
-    { text: "Harish Sree", eimg: "5", status: "Available", country: 'USA' }
+    { text: 'Louis', eimg: '6', status: 'Available', country: 'England' },
+    { text: "Lawrence", eimg: "5", status: "Available", country: 'USA' }
 ];
 $(function () {
     $('#list').ejComboBox({
@@ -125,10 +125,10 @@ similar to multiple columns of the grid.
 {% highlight javascript %}	
 	
 var empList = [
-    { text: 'Kapil Sharma', eimg: '7', status: 'Available', country: 'USA' },
+    { text: 'John Linden', eimg: '7', status: 'Available', country: 'USA' },
     { text: 'Erik Linden', eimg: '3', status: 'Available', country: 'England' },
-    { text: 'Kavi Tam', eimg: '6', status: 'Available', country: 'England' },
-    { text: "Harish Sree", eimg: "5", status: "Available", country: 'USA' }
+    { text: 'Louis', eimg: '6', status: 'Available', country: 'England' },
+    { text: "Lawrence", eimg: "5", status: "Available", country: 'USA' }
 ];
 $(function () {
     $('#list').ejComboBox({
