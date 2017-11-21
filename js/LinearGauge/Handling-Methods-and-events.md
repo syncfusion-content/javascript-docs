@@ -14,7 +14,7 @@ api: /api/js/ejlineargauge
 
 ### drawBarPointers
 
-Triggers while the bar pointer are being drawn on the gauge, you can use [`drawBarPointers`](../api/js/ejlineargauge#events:drawbarpointers) event.
+Triggers while the bar pointer are being drawn on the gauge, you can use [`drawBarPointers`](../api/ejlineargauge#events:drawbarpointers) event.
 
 #### Example
 
@@ -31,7 +31,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 ### drawCustomLabel
 
-Triggers while the customLabel are being drawn on the gauge, you can use [`drawCustomLabel`](../api/js/ejlineargauge#events:drawcustomlabel) event.
+Triggers while the customLabel are being drawn on the gauge, you can use [`drawCustomLabel`](../api/ejlineargauge#events:drawcustomlabel) event.
 
 
 
@@ -56,7 +56,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 ### drawIndicators
 
-Triggers while the Indicator are being drawn on the gauge, you can use [`drawIndicators`](../api/js/ejlineargauge#events:drawindicators) event.
+Triggers while the Indicator are being drawn on the gauge, you can use [`drawIndicators`](../api/ejlineargauge#events:drawindicators) event.
 
 
 
@@ -81,7 +81,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 ### drawLabels
 
-Triggers while the label are being drawn on the gauge, you can use [`drawLabels`](../api/js/ejlineargauge#events:drawlabels) event.
+Triggers while the label are being drawn on the gauge, you can use [`drawLabels`](../api/ejlineargauge#events:drawlabels) event.
 
 
 
@@ -103,7 +103,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 ### drawMarkerPointers
 
-Triggers while the marker are being drawn on the gauge, you can use [`drawMarkerPointers`](../api/js/ejlineargauge#events:drawmarkerpointers) event.
+Triggers while the marker are being drawn on the gauge, you can use [`drawMarkerPointers`](../api/ejlineargauge#events:drawmarkerpointers) event.
 
 
 
@@ -126,7 +126,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 ### drawRange
 
-Triggers while the range are being drawn on the gauge, you can use [`drawRange`](../api/js/ejlineargauge#events:drawrange) event.
+Triggers while the range are being drawn on the gauge, you can use [`drawRange`](../api/ejlineargauge#events:drawrange) event.
 
 
 
@@ -151,7 +151,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 ### drawTicks
 
-Triggers while the ticks are being drawn on the gauge, you can use [`drawTicks`](../api/js/ejlineargauge#events:drawticks) event.
+Triggers while the ticks are being drawn on the gauge, you can use [`drawTicks`](../api/ejlineargauge#events:drawticks) event.
 
 
 
@@ -176,7 +176,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 ### init
 
-Triggers when the gauge is initialized, you can use [`init`](../api/js/ejlineargauge#events:init)event.
+Triggers when the gauge is initialized, you can use [`init`](../api/ejlineargauge#events:init)event.
 
 
 
@@ -199,7 +199,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 ### load
 
-Triggers while the gauge start to Load, you can use [`load`](../api/js/ejlineargauge#events:load)event.
+Triggers while the gauge start to Load, you can use [`load`](../api/ejlineargauge#events:load)event.
 
 
 
@@ -222,7 +222,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 ### mouseClick
 
-Triggers when the left mouse button is clicked, you can use [`mouseClick`](../api/js/ejlineargauge#events:mouseclick) event.
+Triggers when the left mouse button is clicked, you can use [`mouseClick`](../api/ejlineargauge#events:mouseclick) event.
 
 
 
@@ -250,7 +250,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 ### mouseClickMove
 
-Triggers when clicking and dragging the mouse pointer over the gauge pointer, you can use [`mouseClickMove`](../api/js/ejlineargauge#events:mouseclickmove) event.
+Triggers when clicking and dragging the mouse pointer over the gauge pointer, you can use [`mouseClickMove`](../api/ejlineargauge#events:mouseclickmove) event.
 
 
 
@@ -277,7 +277,7 @@ $("#LinearGauge1").ejLinearGauge({
 ### mouseClickUp
 
 
-Triggers when the mouse click is released, you can use [`mouseClickUp`](../api/js/ejlineargauge#events:mouseclickup) event.
+Triggers when the mouse click is released, you can use [`mouseClickUp`](../api/ejlineargauge#events:mouseclickup) event.
 
 
 
@@ -304,7 +304,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 ### renderComplete
 
-Triggers while the rendering of the gauge completed, you can use [`renderComplete`](../api/js/ejlineargauge#events:rendercomplete) event.
+Triggers while the rendering of the gauge completed, you can use [`renderComplete`](../api/ejlineargauge#events:rendercomplete) event.
 
 
 
@@ -327,7 +327,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 ### destroy()
 
-[`Destroy`](../api/js/ejlineargauge#methods:destroy) the linear gauge all events bound using this._on will be unbind automatically and bring the control to pre-init state.
+[`Destroy`](../api/ejlineargauge#methods:destroy) the linear gauge all events bound using this._on will be unbind automatically and bring the control to pre-init state.
 
 
 #### Example
@@ -348,7 +348,7 @@ linearGaugeObj.destroy();
 
 ### getBarDistanceFromScale()
 
-To get bar distance from scale in number, you can use [`getBarDistanceFromScale`](../api/js/ejlineargauge#methods:getbardistancefromscale) method.
+To get bar distance from scale in number, you can use [`getBarDistanceFromScale`](../api/ejlineargauge#methods:getbardistancefromscale) method.
 
 
 #### Example
@@ -366,7 +366,7 @@ LinearGaugeObj.getBarDistanceFromScale(0,0);
 
 ### getBarPointerValue()
 
-To get Bar Pointer Value in number, you can use [`getBarPointerValue`](../api/js/ejlineargauge#methods:getbarpointervalue) method.
+To get Bar Pointer Value in number, you can use [`getBarPointerValue`](../api/ejlineargauge#methods:getbarpointervalue) method.
 
 
 #### Example
@@ -385,7 +385,7 @@ LinearGaugeObj.getBarPointerValue(0,0);
 
 ### getBarWidth()
 
-To get Bar Width in number, you can use [`getBarWidth`](../api/js/ejlineargauge#methods:getbarwidth) method.
+To get Bar Width in number, you can use [`getBarWidth`](../api/ejlineargauge#methods:getbarwidth) method.
 
 
 #### Example
@@ -406,7 +406,7 @@ LinearGaugeObj.getBarWidth(0,0);
 
 ### getCustomLabelAngle()
 
-To get CustomLabel Angle in number, you can use [`getCustomLabelAngle`](../api/js/ejlineargauge#methods:getcustomlabelangle) method.
+To get CustomLabel Angle in number, you can use [`getCustomLabelAngle`](../api/ejlineargauge#methods:getcustomlabelangle) method.
 
 
 #### Example
@@ -427,7 +427,7 @@ LinearGaugeObj.getCustomLabelAngle(0,0);
 
 ### getCustomLabelValue()
 
-To get CustomLabel Value in string, you can use [`getCustomLabelValue`](../api/js/ejlineargauge#methods:getcustomlabelvalue) method.
+To get CustomLabel Value in string, you can use [`getCustomLabelValue`](../api/ejlineargauge#methods:getcustomlabelvalue) method.
 
 
 
@@ -448,7 +448,7 @@ LinearGaugeObj.getCustomLabelValue(0,0);
 
 ### getLabelAngle()
 
-To get Label Angle in number, you can use [`getLabelAngle`](../api/js/ejlineargauge#methods:getlabelangle) method.
+To get Label Angle in number, you can use [`getLabelAngle`](../api/ejlineargauge#methods:getlabelangle) method.
 
 
 #### Example
@@ -470,7 +470,7 @@ LinearGaugeObj.getLabelAngle(0,0);
 
 ### getLabelPlacement()
 
-To get LabelPlacement in number, you can use [`getLabelPlacement`](../api/js/ejlineargauge#methods:getlabelplacement) method.
+To get LabelPlacement in number, you can use [`getLabelPlacement`](../api/ejlineargauge#methods:getlabelplacement) method.
 
 
 
@@ -493,7 +493,7 @@ LinearGaugeObj.getLabelPlacement(0,0);
 
 ### getLabelStyle()
 
-To get LabelStyle in number, you can use [`getLabelStyle`](../api/js/ejlineargauge#methods:getlabelstyle) method.
+To get LabelStyle in number, you can use [`getLabelStyle`](../api/ejlineargauge#methods:getlabelstyle) method.
 
 
 #### Example
@@ -514,7 +514,7 @@ LinearGaugeObj.getLabelStyle(0,0);
 
 ### getLabelXDistanceFromScale()
 
-To get Label XDistance From Scale in number, you can use [`getLabelXDistanceFromScale`](../api/js/ejlineargauge#methods:getlabelxdistancefromscale) method.
+To get Label XDistance From Scale in number, you can use [`getLabelXDistanceFromScale`](../api/ejlineargauge#methods:getlabelxdistancefromscale) method.
 
 
 
@@ -537,7 +537,7 @@ LinearGaugeObj.getLabelXDistanceFromScale(0,0);
 ### getLabelYDistanceFromScale()
 
 ### getLabelYDistanceFromScale()
-To get PointerValue in number, you can use [`getLabelXDistanceFromScale`](../api/js/ejlineargauge#methods:getlabelydistancefromscale) method.
+To get PointerValue in number, you can use [`getLabelXDistanceFromScale`](../api/ejlineargauge#methods:getlabelydistancefromscale) method.
 
 
 #### Example
@@ -561,7 +561,7 @@ LinearGaugeObj.getLabelYDistanceFromScale(0,0);
 
 ### getMajorIntervalValue()
 
-To get Major Interval Value in number, you can use [`getMajorIntervalValue`](../api/js/ejlineargauge#methods:getmajorintervalvalue) method.
+To get Major Interval Value in number, you can use [`getMajorIntervalValue`](../api/ejlineargauge#methods:getmajorintervalvalue) method.
 
 #### Example
 
@@ -578,7 +578,7 @@ LinearGaugeObj.getMajorIntervalValue(0);
 
 ### getMarkerStyle()
 
-To get MarkerStyle in number, you can use [`getMarkerStyle`](../api/js/ejlineargauge#methods:getmarkerstyle) method.
+To get MarkerStyle in number, you can use [`getMarkerStyle`](../api/ejlineargauge#methods:getmarkerstyle) method.
 
 
 #### Example
@@ -597,7 +597,7 @@ LinearGaugeObj.getMarkerStyle(0,0);
 
 ### getMaximumValue()
 
-To get Maximum Value in number, you can use [`getMaximumValue`](../api/js/ejlineargauge#methods:getmaximumvalue) method.
+To get Maximum Value in number, you can use [`getMaximumValue`](../api/ejlineargauge#methods:getmaximumvalue) method.
 
 
 #### Example
@@ -616,7 +616,7 @@ LinearGaugeObj.getMaximumValue(0);
 
 ### getMinimumValue()
 
-To get PointerValue in number, you can use [`getMinimumValue`](../api/js/ejlineargauge#methods:getminimumvalue) method.
+To get PointerValue in number, you can use [`getMinimumValue`](../api/ejlineargauge#methods:getminimumvalue) method.
 
 
 #### Example
@@ -634,7 +634,7 @@ LinearGaugeObj.getMinimumValue(0,0);
 
 ### getMinorIntervalValue()
 
-To get Minor Interval Value in number, you can use [`getMinorIntervalValue`](../api/js/ejlineargauge#methods:getminorintervalvalue) method.
+To get Minor Interval Value in number, you can use [`getMinorIntervalValue`](../api/ejlineargauge#methods:getminorintervalvalue) method.
 
 
 #### Example
@@ -652,7 +652,7 @@ LinearGaugeObj.getMinorIntervalValue(0);
 
 ### getPointerDistanceFromScale()
 
-To get Pointer Distance From Scale in number, you can use [`getPointerDistanceFromScale`](../api/js/ejlineargauge#methods:getpointerdistancefromscale) method.
+To get Pointer Distance From Scale in number, you can use [`getPointerDistanceFromScale`](../api/ejlineargauge#methods:getpointerdistancefromscale) method.
 
 
 #### Example
@@ -670,7 +670,7 @@ LinearGaugeObj.getPointerDistanceFromScale(0,0);
 
 ### getPointerHeight()
 
-To get PointerHeight in number, you can use [`getPointerHeight`](../api/js/ejlineargauge#methods:getpointerheight) method.
+To get PointerHeight in number, you can use [`getPointerHeight`](../api/ejlineargauge#methods:getpointerheight) method.
 
 
 #### Example
@@ -688,7 +688,7 @@ LinearGaugeObj.getPointerHeight(0,0);
 
 ### getPointerPlacement()
 
-To get Pointer Placement in String, you can use [`getPointerPlacement`](../api/js/ejlineargauge#methods:getpointerplacement) method.
+To get Pointer Placement in String, you can use [`getPointerPlacement`](../api/ejlineargauge#methods:getpointerplacement) method.
 
 
 #### Example
@@ -706,7 +706,7 @@ LinearGaugeObj.getPointerPlacement(0,0);
 
 ### getPointerValue()
 
-To get PointerValue in number, you can use [`getPointerValue`](../api/js/ejlineargauge#methods:getpointervalue) method.
+To get PointerValue in number, you can use [`getPointerValue`](../api/ejlineargauge#methods:getpointervalue) method.
 
 
 #### Example
@@ -726,7 +726,7 @@ LinearGaugeObj.getPointerValue(0,0);
 
 ### getPointerWidth()
 
-To get PointerWidth in number, you can use [`getPointerWidth`](../api/js/ejlineargauge#methods:getpointerwidth) method.
+To get PointerWidth in number, you can use [`getPointerWidth`](../api/ejlineargauge#methods:getpointerwidth) method.
 
 #### Example
 
@@ -744,7 +744,7 @@ LinearGaugeObj.getPointerWidth(0,0);
 
 ### getRangeBorderWidth()
 
-To get Range Border Width in number, you can use [`getRangeBorderWidth`](../api/js/ejlineargauge#methods:getrangeborderwidth) method.
+To get Range Border Width in number, you can use [`getRangeBorderWidth`](../api/ejlineargauge#methods:getrangeborderwidth) method.
 
 
 #### Example
@@ -764,7 +764,7 @@ LinearGaugeObj.getRangeBorderWidth(0,0);
 
 ### getRangeDistanceFromScale()
 
-To get Range Distance From Scale in number, you can use [`getRangeDistanceFromScale`](../api/js/ejlineargauge#methods:getrangedistancefromscale) method.
+To get Range Distance From Scale in number, you can use [`getRangeDistanceFromScale`](../api/ejlineargauge#methods:getrangedistancefromscale) method.
 
 #### Example
 
@@ -782,7 +782,7 @@ LinearGaugeObj.getRangeDistanceFromScale(0,0);
 
 ### getRangeEndValue()
 
-To get Range End Value in number, you can use [`getRangeEndValue`](../api/js/ejlineargauge#methods:getrangeendvalue) method.
+To get Range End Value in number, you can use [`getRangeEndValue`](../api/ejlineargauge#methods:getrangeendvalue) method.
 
 
 
@@ -803,7 +803,7 @@ LinearGaugeObj.getRangeEndValue(0,0);
 
 ### getRangeEndWidth()
 
-To get Range End Width in number, you can use [`getRangeEndWidth`](../api/js/ejlineargauge#methods:getrangeendwidth) method.
+To get Range End Width in number, you can use [`getRangeEndWidth`](../api/ejlineargauge#methods:getrangeendwidth) method.
 
 
 #### Example
@@ -824,7 +824,7 @@ LinearGaugeObj.getRangeEndWidth(0,0);
 
 ### getRangePosition()
 
-To get Range Position in number, you can use [`getRangePosition`](../api/js/ejlineargauge#methods:getrangeposition) method.
+To get Range Position in number, you can use [`getRangePosition`](../api/ejlineargauge#methods:getrangeposition) method.
 
 
 
@@ -845,7 +845,7 @@ LinearGaugeObj.getRangePosition(0,0);
 
 ### getRangeStartValue()
 
-To get Range Start Value in number, you can use [`getRangeStartValue`](../api/js/ejlineargauge#methods:getrangestartvalue) method.
+To get Range Start Value in number, you can use [`getRangeStartValue`](../api/ejlineargauge#methods:getrangestartvalue) method.
 
 
 
@@ -870,7 +870,7 @@ LinearGaugeObj.getRangeStartValue(0,0);
 
 ### getRangeStartWidth()
 
-To get Range Start Width in number, you can use [`getRangeStartWidth`](../api/js/ejlineargauge#methods:getrangestartwidth) method.
+To get Range Start Width in number, you can use [`getRangeStartWidth`](../api/ejlineargauge#methods:getrangestartwidth) method.
 
 
 
@@ -891,7 +891,7 @@ LinearGaugeObj.getRangeStartWidth(0,0);
 
 ### getScaleBarLength()
 
-To get ScaleBarLength in number, you can use [`getScaleBarLength`](../api/js/ejlineargauge#methods:getscalebarlength) method.
+To get ScaleBarLength in number, you can use [`getScaleBarLength`](../api/ejlineargauge#methods:getscalebarlength) method.
 
 #### Example
 
@@ -908,7 +908,7 @@ LinearGaugeObj.getScaleBarLength(0);
 
 ### getScaleBarSize()
 
-To get Scale Bar Size in number, you can use [`getScaleBarSize`](../api/js/ejlineargauge#methods:getscalebarsize) method.
+To get Scale Bar Size in number, you can use [`getScaleBarSize`](../api/ejlineargauge#methods:getscalebarsize) method.
 
 
 
@@ -928,7 +928,7 @@ LinearGaugeObj.getScaleBarSize(0,0);
 
 ### getScaleBorderWidth()
 
-To get Scale Border Width in number, you can use [`getScaleBorderWidth`](../api/js/ejlineargauge#methods:getscaleborderwidth) method.
+To get Scale Border Width in number, you can use [`getScaleBorderWidth`](../api/ejlineargauge#methods:getscaleborderwidth) method.
 
 #### Example
 
@@ -945,7 +945,7 @@ LinearGaugeObj.getScaleBorderWidth(0);
 
 ### getScaleDirection()
 
-To get Scale Direction in number, you can use [`getScaleDirection`](../api/js/ejlineargauge#methods:getscaledirection) method.
+To get Scale Direction in number, you can use [`getScaleDirection`](../api/ejlineargauge#methods:getscaledirection) method.
 
 
 #### Example
@@ -965,7 +965,7 @@ LinearGaugeObj.getScaleDirection(0,0);
 
 ### getScaleLocation()
 
-To get Scale Location in object, you can use [`getScaleLocation`](../api/js/ejlineargauge#methods:getscalelocation) method.
+To get Scale Location in object, you can use [`getScaleLocation`](../api/ejlineargauge#methods:getscalelocation) method.
 
 
 #### Example
@@ -986,7 +986,7 @@ LinearGaugeObj.getScaleLocation(0);
 
 ### getScaleStyle()
 
-To get Scale Style in string, you can use [`getScaleStyle`](../api/js/ejlineargauge#methods:getscalestyle) method.
+To get Scale Style in string, you can use [`getScaleStyle`](../api/ejlineargauge#methods:getscalestyle) method.
 
 
 #### Example
@@ -1006,7 +1006,7 @@ LinearGaugeObj.getScaleStyle(0);
 
 ### getTickAngle()
 
-To get Tick Angle in number, you can use [`getTickAngle`](../api/js/ejlineargauge#methods:gettickanglen) method.
+To get Tick Angle in number, you can use [`getTickAngle`](../api/ejlineargauge#methods:gettickanglen) method.
 
 
 #### Example
@@ -1026,7 +1026,7 @@ LinearGaugeObj.getTickAngle(0,0);
 
 ### getTickHeight()
 
-To get Tick Height in number, you can use [`getTickHeight`](../api/js/ejlineargauge#methods:gettickheight) method.
+To get Tick Height in number, you can use [`getTickHeight`](../api/ejlineargauge#methods:gettickheight) method.
 
 
 #### Example
@@ -1045,7 +1045,7 @@ LinearGaugeObj.getTickHeight(0,0);
 
 ### getTickPlacement()
 
-To get getTickPlacement in number, you can use [`getTickPlacement`](../api/js/ejlineargauge#methods:gettickplacement) method.
+To get getTickPlacement in number, you can use [`getTickPlacement`](../api/ejlineargauge#methods:gettickplacement) method.
 
 
 #### Example
@@ -1064,7 +1064,7 @@ LinearGaugeObj.getTickPlacement(0,0);
 
 ### getTickStyle()
 
-To get Tick Style in string, you can use [`getTickStyle`](../api/js/ejlineargauge#methods:gettickstyle) method.
+To get Tick Style in string, you can use [`getTickStyle`](../api/ejlineargauge#methods:gettickstyle) method.
 
 
 #### Example
@@ -1083,7 +1083,7 @@ LinearGaugeObj.getTickStyle(0,0);
 
 ### getTickWidth()
 
-To get Tick Width in number, you can use [`getTickWidth`](../api/js/ejlineargauge#methods:gettickwidth) method.
+To get Tick Width in number, you can use [`getTickWidth`](../api/ejlineargauge#methods:gettickwidth) method.
 
 #### Example
 
@@ -1100,7 +1100,7 @@ LinearGaugeObj.getTickWidth(0,0);
 
 ### getTickXDistanceFromScale()
 
-To get get Tick XDistance From Scale in number, you can use [`getTickXDistanceFromScale`](../api/js/ejlineargauge#methods:gettickxdistancefromscale) method.
+To get get Tick XDistance From Scale in number, you can use [`getTickXDistanceFromScale`](../api/ejlineargauge#methods:gettickxdistancefromscale) method.
 
 #### Example
 
@@ -1119,7 +1119,7 @@ LinearGaugeObj.getTickXDistanceFromScale(0,0);
 
 ### getTickYDistanceFromScale()
 
-To get Tick YDistance From Scale in number, you can use [`getTickYDistanceFromScale`](../api/js/ejlineargauge#methods:gettickydistancefromscale) method.
+To get Tick YDistance From Scale in number, you can use [`getTickYDistanceFromScale`](../api/ejlineargauge#methods:gettickydistancefromscale) method.
 
 
 #### Example
@@ -1139,7 +1139,7 @@ LinearGaugeObj.getTickYDistanceFromScale(0,0);
 
 ### scales()
 
-Specifies the scales, you can use [`scales`](../api/js/ejlineargauge#methods:scales) method.
+Specifies the scales, you can use [`scales`](../api/ejlineargauge#methods:scales) method.
 
 
 #### Example
@@ -1157,7 +1157,7 @@ Specifies the scales, you can use [`scales`](../api/js/ejlineargauge#methods:sca
 
 ### setBarDistanceFromScale()
 
-To set setBarDistanceFromScale, you can use [`setBarDistanceFromScale`](../api/js/ejlineargauge#methods:setbardistancefromscale) method.
+To set setBarDistanceFromScale, you can use [`setBarDistanceFromScale`](../api/ejlineargauge#methods:setbardistancefromscale) method.
 
 #### Example
 
@@ -1174,7 +1174,7 @@ LinearGaugeObj.setBarDistanceFromScale(0,0,30);
 
 ### setBarPointerValue()
 
-To set setBarPointerValue, you can use [`setBarPointerValue`](../api/js/ejlineargauge#methods:setbarpointervalue) method.
+To set setBarPointerValue, you can use [`setBarPointerValue`](../api/ejlineargauge#methods:setbarpointervalue) method.
 
 #### Example
 
@@ -1192,7 +1192,7 @@ LinearGaugeObj.setBarPointerValue(0,0,30);
 
 ### setBarWidth()
 
-To set setBarWidth, you can use [`setBarWidth`](../api/js/ejlineargauge#methods:setbarwidth) method.
+To set setBarWidth, you can use [`setBarWidth`](../api/ejlineargauge#methods:setbarwidth) method.
 
 #### Example
 
@@ -1209,7 +1209,7 @@ LinearGaugeObj.setBarWidth(0,0,30);
 
 ### setCustomLabelAngle()
 
-To set setCustomLabelAngle, you can use [`setCustomLabelAngle`](../api/js/ejlineargauge#methods:setcustomlabelangle) method.
+To set setCustomLabelAngle, you can use [`setCustomLabelAngle`](../api/ejlineargauge#methods:setcustomlabelangle) method.
 
 #### Example
 
@@ -1228,7 +1228,7 @@ LinearGaugeObj.setCustomLabelAngle(0,0,30);
 
 ### setCustomLabelValue()
 
-To set setCustomLabelValue, you can use [`setCustomLabelValue`](../api/js/ejlineargauge#methods:setcustomlabelvalue) method.
+To set setCustomLabelValue, you can use [`setCustomLabelValue`](../api/ejlineargauge#methods:setcustomlabelvalue) method.
 
 
 #### Example
@@ -1248,7 +1248,7 @@ LinearGaugeObj.setCustomLabelValue(0,0,"text");
 
 ### setLabelAngle()
 
-To set setLabelAngle, you can use [`setLabelAngle`](../api/js/ejlineargauge#methods:setlabelangle) method.
+To set setLabelAngle, you can use [`setLabelAngle`](../api/ejlineargauge#methods:setlabelangle) method.
 
 #### Example
 
@@ -1268,7 +1268,7 @@ LinearGaugeObj.setLabelAngle(0,0,20);
 
 ### setLabelPlacement()
 
-To set setLabelPlacement, you can use [`setLabelPlacement`](../api/js/ejlineargauge#methods:setlabelplacement) method.
+To set setLabelPlacement, you can use [`setLabelPlacement`](../api/ejlineargauge#methods:setlabelplacement) method.
 
 
 #### Example
@@ -1288,7 +1288,7 @@ LinearGaugeObj.setLabelPlacement(0,0,"far");
 
 ### setLabelStyle()
 
-To set setLabelStyle, you can use [`setLabelStyle`](../api/js/ejlineargauge#methods:setlabelstyle) method.
+To set setLabelStyle, you can use [`setLabelStyle`](../api/ejlineargauge#methods:setlabelstyle) method.
 
 
 #### Example
@@ -1308,7 +1308,7 @@ LinearGaugeObj.setLabelStyle(0,0,"major");
 
 ### setLabelXDistanceFromScale()
 
-To set setLabelXDistanceFromScale, you can use [`setLabelXDistanceFromScale`](../api/js/ejlineargauge#methods:setlabelxdistancefromscale) method.
+To set setLabelXDistanceFromScale, you can use [`setLabelXDistanceFromScale`](../api/ejlineargauge#methods:setlabelxdistancefromscale) method.
 
 
 #### Example
@@ -1328,7 +1328,7 @@ LinearGaugeObj.setLabelXDistanceFromScale(0,0,20);
 
 ### setLabelYDistanceFromScale()
 
-To set setLabelYDistanceFromScale, you can use [`setLabelYDistanceFromScale`](../api/js/ejlineargauge#methods:setlabelydistancefromscale) method.
+To set setLabelYDistanceFromScale, you can use [`setLabelYDistanceFromScale`](../api/ejlineargauge#methods:setlabelydistancefromscale) method.
 
 
 #### Example
@@ -1348,7 +1348,7 @@ LinearGaugeObj.setLabelYDistanceFromScale(0,0,20);
 
 ### setMajorIntervalValue()
 
-To set setMajorIntervalValue, you can use [`setMajorIntervalValue`](../api/js/ejlineargauge#methods:setmajorintervalvalue) method.
+To set setMajorIntervalValue, you can use [`setMajorIntervalValue`](../api/ejlineargauge#methods:setmajorintervalvalue) method.
 
 
 #### Example
@@ -1370,7 +1370,7 @@ LinearGaugeObj.setMajorIntervalValue(0,5);
 
 ### setMarkerStyle()
 
-To set setMarkerStyle, you can use [`setMarkerStyle`](../api/js/ejlineargauge#methods:setmarkerstyle) method.
+To set setMarkerStyle, you can use [`setMarkerStyle`](../api/ejlineargauge#methods:setmarkerstyle) method.
 
 #### Example
 
@@ -1390,7 +1390,7 @@ LinearGaugeObj.setMarkerStyle(0,0,"triangle");
 
 ### setMaximumValue()
 
-To set setMaximumValue, you can use [`setMaximumValue`](../api/js/ejlineargauge#methods:setmaximumvalue) method.
+To set setMaximumValue, you can use [`setMaximumValue`](../api/ejlineargauge#methods:setmaximumvalue) method.
 
 #### Example
 
@@ -1409,7 +1409,7 @@ LinearGaugeObj.setMaximumValue(0,20);
 
 ### setMinimumValue()
 
-To set setMinimumValue, you can use [`setMinimumValue`](../api/js/ejlineargauge#methods:setminimumvalue) method.
+To set setMinimumValue, you can use [`setMinimumValue`](../api/ejlineargauge#methods:setminimumvalue) method.
 
 #### Example
 
@@ -1427,7 +1427,7 @@ LinearGaugeObj.setMinimumValue(0,20);
 
 ### setMinorIntervalValue()
 
-To set setMinorIntervalValue, you can use [`setMinorIntervalValue`](../api/js/ejlineargauge#methods:setminorintervalvalue) method.
+To set setMinorIntervalValue, you can use [`setMinorIntervalValue`](../api/ejlineargauge#methods:setminorintervalvalue) method.
 
 
 #### Example
@@ -1447,7 +1447,7 @@ LinearGaugeObj.setMinorIntervalValue(0,2);
 
 ### setPointerDistanceFromScale()
 
-To set setPointerDistanceFromScale, you can use [`setPointerDistanceFromScale`](../api/js/ejlineargauge#methods:setpointerdistancefromscale) method.
+To set setPointerDistanceFromScale, you can use [`setPointerDistanceFromScale`](../api/ejlineargauge#methods:setpointerdistancefromscale) method.
 
 #### Example
 
@@ -1467,7 +1467,7 @@ LinearGaugeObj.setPointerDistanceFromScale(0,0,30);
 
 ### setPointerHeight()
 
-To set PointerHeight, you can use [`setPointerHeight`](../api/js/ejlineargauge#methods:setpointerheight) method.
+To set PointerHeight, you can use [`setPointerHeight`](../api/ejlineargauge#methods:setpointerheight) method.
 
 #### Example
 
@@ -1487,7 +1487,7 @@ LinearGaugeObj.setPointerHeight(0,0,30);
 
 ### setPointerPlacement()
 
-To set setPointerPlacement, you can use [`setPointerPlacement`](../api/js/ejlineargauge#methods:setpointerplacement) method.
+To set setPointerPlacement, you can use [`setPointerPlacement`](../api/ejlineargauge#methods:setpointerplacement) method.
 
 #### Example
 
@@ -1507,7 +1507,7 @@ LinearGaugeObj.setPointerPlacement(0,0,"far");
 
 ### setPointerValue()
 
-To set PointerValue, you can use [`setPointerValue`](../api/js/ejlineargauge#methods:setpointervalue) method.
+To set PointerValue, you can use [`setPointerValue`](../api/ejlineargauge#methods:setpointervalue) method.
 
 
 #### Example
@@ -1529,7 +1529,7 @@ LinearGaugeObj.setPointerValue(0,0,30);
 
 ### setPointerWidth()
 
-To set PointerWidth, you can use [`setPointerWidth`](../api/js/ejlineargauge#methods:setpointerwidth) method.
+To set PointerWidth, you can use [`setPointerWidth`](../api/ejlineargauge#methods:setpointerwidth) method.
 
 #### Example
 
@@ -1549,7 +1549,7 @@ LinearGaugeObj.setPointerWidth(0,0,30);
 
 ### setRangeBorderWidth()
 
-To set setRangeBorderWidth, you can use [`setRangeBorderWidth`](../api/js/ejlineargauge#methods:setrangeborderwidth) method.
+To set setRangeBorderWidth, you can use [`setRangeBorderWidth`](../api/ejlineargauge#methods:setrangeborderwidth) method.
 
 
 #### Example
@@ -1570,7 +1570,7 @@ LinearGaugeObj.setRangeBorderWidth(0,0,2);
 
 ### setRangeDistanceFromScale()
 
-To set setRangeDistanceFromScale, you can use [`setRangeDistanceFromScale`](../api/js/ejlineargauge#methods:setrangedistancefromscale) method.
+To set setRangeDistanceFromScale, you can use [`setRangeDistanceFromScale`](../api/ejlineargauge#methods:setrangedistancefromscale) method.
 
 #### Example
 
@@ -1590,7 +1590,7 @@ LinearGaugeObj.setRangeDistanceFromScale(0,0,20);
 
 ### setRangeEndValue()
 
-To set setRangeEndValue, you can use [`setRangeEndValue`](../api/js/ejlineargauge#methods:setrangeendvalue) method.
+To set setRangeEndValue, you can use [`setRangeEndValue`](../api/ejlineargauge#methods:setrangeendvalue) method.
 
 
 #### Example
@@ -1611,7 +1611,7 @@ LinearGaugeObj.setRangeEndValue(0,0,20);
 
 ### setRangeEndWidth()
 
-To set setRangeEndWidth, you can use [`setRangeEndWidth`](../api/js/ejlineargauge#methods:setrangeendwidth) method.
+To set setRangeEndWidth, you can use [`setRangeEndWidth`](../api/ejlineargauge#methods:setrangeendwidth) method.
 
 #### Example
 
@@ -1631,7 +1631,7 @@ LinearGaugeObj.setRangeEndWidth(0,0,20);
 
 ### setRangePosition()
 
-To set setRangePosition, you can use [`setRangePosition`](../api/js/ejlineargauge#methods:setrangeposition) method.
+To set setRangePosition, you can use [`setRangePosition`](../api/ejlineargauge#methods:setrangeposition) method.
 
 #### Example
 
@@ -1649,7 +1649,7 @@ LinearGaugeObj.setRangePosition(0,0,20);
 
 ### setRangeStartValue()
 
-To set setRangeStartValue, you can use [`setRangeStartValue`](../api/js/ejlineargauge#methods:setrangestartvalue) method.
+To set setRangeStartValue, you can use [`setRangeStartValue`](../api/ejlineargauge#methods:setrangestartvalue) method.
 
 #### Example
 
@@ -1668,7 +1668,7 @@ LinearGaugeObj.setRangeStartValue(0,0,20);
 
 ### setRangeStartWidth()
 
-To set setRangeStartWidth, you can use [`setRangeStartWidth`](../api/js/ejlineargauge#methods:setrangestartwidth) method.
+To set setRangeStartWidth, you can use [`setRangeStartWidth`](../api/ejlineargauge#methods:setrangestartwidth) method.
 
 #### Example
 
@@ -1689,7 +1689,7 @@ LinearGaugeObj.setRangeStartWidth(0,0,20);
 
 ### setScaleBarLength()
 
-To set setScaleBarLength, you can use [`setScaleBarLength`](../api/js/ejlineargauge#methods:setscalebarlength) method.
+To set setScaleBarLength, you can use [`setScaleBarLength`](../api/ejlineargauge#methods:setscalebarlength) method.
 
 #### Example
 
@@ -1708,7 +1708,7 @@ LinearGaugeObj.setScaleBarLength(0,150);
 
 ### setScaleBarSize()
 
-To set setScaleBarSize, you can use [`setScaleBarSize`](../api/js/ejlineargauge#methods:setscalebarsize) method.
+To set setScaleBarSize, you can use [`setScaleBarSize`](../api/ejlineargauge#methods:setscalebarsize) method.
 
 #### Example
 
@@ -1728,7 +1728,7 @@ LinearGaugeObj.setScaleBarSize(0,20);
 
 ### setScaleBorderWidth()
 
-To set setScaleBorderWidth, you can use [`setScaleBorderWidth`](../api/js/ejlineargauge#methods:setscaleborderwidth) method.
+To set setScaleBorderWidth, you can use [`setScaleBorderWidth`](../api/ejlineargauge#methods:setscaleborderwidth) method.
 
 #### Example
 
@@ -1747,7 +1747,7 @@ LinearGaugeObj.setScaleBorderWidth(0,10);
 
 ### setScaleDirection()
 
-To set setScaleDirection, you can use [`setScaleDirection`](../api/js/ejlineargauge#methods:setscaledirection) method.
+To set setScaleDirection, you can use [`setScaleDirection`](../api/ejlineargauge#methods:setscaledirection) method.
 
 #### Example
 
@@ -1765,7 +1765,7 @@ LinearGaugeObj.setScaleDirection(0,"counterclockwise");
 
 ### setScaleLocation()
 
-To set setScaleLocation, you can use [`setScaleLocation`](../api/js/ejlineargauge#methods:setscalelocation) method.
+To set setScaleLocation, you can use [`setScaleLocation`](../api/ejlineargauge#methods:setscalelocation) method.
 
 #### Example
 
@@ -1785,7 +1785,7 @@ LinearGaugeObj.setScaleLocation(0,{x:20,y:20});
 
 ### setScaleStyle()
 
-To set setScaleStyle, you can use [`setScaleStyle`](../api/js/ejlineargauge#methods:setscalestyle) method.
+To set setScaleStyle, you can use [`setScaleStyle`](../api/ejlineargauge#methods:setscalestyle) method.
 
 #### Example
 
@@ -1803,7 +1803,7 @@ LinearGaugeObj.setScaleStyle(0,"thermometer");
 
 ### setTickAngle()
 
-To set setTickAngle, you can use [`setTickAngle`](../api/js/ejlineargauge#methods:settickangle) method.
+To set setTickAngle, you can use [`setTickAngle`](../api/ejlineargauge#methods:settickangle) method.
 
 #### Example
 
@@ -1821,7 +1821,7 @@ LinearGaugeObj.setTickAngle(0,0,20);
 
 ### setTickHeight()
 
-To set setTickHeight, you can use [`setTickHeight`](../api/js/ejlineargauge#methods:settickheight) method.
+To set setTickHeight, you can use [`setTickHeight`](../api/ejlineargauge#methods:settickheight) method.
 
 #### Example
 
@@ -1840,7 +1840,7 @@ LinearGaugeObj.setTickHeight(0,0,10);
 
 ### setTickPlacement()
 
-To set setTickPlacement, you can use [`setTickPlacement`](../api/js/ejlineargauge#methods:settickplacement) method.
+To set setTickPlacement, you can use [`setTickPlacement`](../api/ejlineargauge#methods:settickplacement) method.
 
 #### Example
 
@@ -1858,7 +1858,7 @@ LinearGaugeObj.setTickPlacement(0,0,"far");
 
 ### setTickStyle()
 
-To set setTickStyle, you can use [`setTickStyle`](../api/js/ejlineargauge#methods:settickstyle) method.
+To set setTickStyle, you can use [`setTickStyle`](../api/ejlineargauge#methods:settickstyle) method.
 
 #### Example
 
@@ -1878,7 +1878,7 @@ LinearGaugeObj.setTickStyle(0,0,"major");
 
 ### setTickWidth()
 
-To set setTickWidth, you can use [`setTickWidth`](../api/js/ejlineargauge#methods:settickwidth) method.
+To set setTickWidth, you can use [`setTickWidth`](../api/ejlineargauge#methods:settickwidth) method.
 
 #### Example
 
@@ -1897,7 +1897,7 @@ LinearGaugeObj.setTickWidth(0,0,5);
 
 ### setTickXDistanceFromScale()
 
-To set setTickXDistanceFromScale, you can use [`setTickXDistanceFromScale`](../api/js/ejlineargauge#methods:settickxdistancefromscale) method.
+To set setTickXDistanceFromScale, you can use [`setTickXDistanceFromScale`](../api/ejlineargauge#methods:settickxdistancefromscale) method.
 
 #### Example
 
@@ -1916,7 +1916,7 @@ LinearGaugeObj.setTickXDistanceFromScale(0,0,20);
 
 ### setTickYDistanceFromScale()
 
-To set setTickYDistanceFromScale, you can use [`setTickYDistanceFromScale`](../api/js/ejlineargauge#methods:settickydistancefromscale) method.
+To set setTickYDistanceFromScale, you can use [`setTickYDistanceFromScale`](../api/ejlineargauge#methods:settickydistancefromscale) method.
 
 #### Example
 
