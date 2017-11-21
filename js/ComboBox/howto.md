@@ -129,7 +129,7 @@ In the following sample, icon classes are mapped with `iconCss` field.
 	
 var sortFormatData = [
     { class: 'asc-sort', type: 'Sort A to Z', id: '1' },
-    { class: 'dsc-sort', type: 'Sort Z to A ', id: '2' },
+    { class: 'desc-sort', type: 'Sort Z to A ', id: '2' },
     { class: 'filter', type: 'Filter', id: '3' },
     { class: 'clear', type: 'Clear', id: '4' }
 ];
@@ -169,7 +169,7 @@ $(function () {
             font-size: 20px;
 
         }
-        .dsc-sort:before {
+        .desc-sort:before {
             content: '\e721';
             font-family: 'e-icons';   
             font-size: 20px;
@@ -191,7 +191,7 @@ $(function () {
 
 ## Autofill supported with ComboBox
 
-The ComboBox supports the `autofill` behaviour with the help
+The ComboBox supports the `autofill` behavior with the help
 of [autofill](https://help.syncfusion.com/api/js/ejcombobox#members:autofill) property. Whenever you change the input value,
 the ComboBox will autocomplete your data by matching the typed character. Suppose, if no matches
 found then, comboBox doesn't suggest any item.
