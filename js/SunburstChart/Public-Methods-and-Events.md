@@ -13,7 +13,7 @@ api: /api/js/ejsunburstchart
 
 ### redraw()
 
-[`redraw`](../api/js/ejsunburstchart#methods:redraw) the entire sunburst. You can call this method whenever you update, add or remove points from the data source or whenever you want to refresh the UI.
+[`redraw`](../api/ejsunburstchart#methods:redraw) the entire sunburst. You can call this method whenever you update, add or remove points from the data source or whenever you want to refresh the UI.
 
 
 #### Example
@@ -33,7 +33,7 @@ $("#container").ejSparkline("redraw");
 
 ### destroy ()
 
-[`destroy`](../api/js/ejsunburstchart#methods:destroy) the sunburst
+[`destroy`](../api/ejsunburstchart#methods:destroy) the sunburst
 
 
 #### Example
@@ -60,7 +60,7 @@ $("#container").ejSunburstChart("destroy");
 
 ### load
 
-Fires before loading, you can use [`load`](../api/js/ejsunburstchart#events:load) event.
+Fires before loading, you can use [`load`](../api/ejsunburstchart#events:load) event.
 
 #### Example
 
@@ -82,7 +82,7 @@ $("#container").ejSunburstChart({
 
 ### preRender
 
-Fires before rendering sunburst, you can use [`preRender`](../api/js/ejsunburstchart#events:prerender) event. 
+Fires before rendering sunburst, you can use [`preRender`](../api/ejsunburstchart#events:prerender) event. 
 
 
 #### Example
@@ -106,7 +106,7 @@ $("#container").ejSunburstChart({
 
 ### loaded
 
-Fires after rendering sunburst, you can use [`loaded`](../api/js/ejsunburstchart#events:loaded) event.  
+Fires after rendering sunburst, you can use [`loaded`](../api/ejsunburstchart#events:loaded) event.  
 
 
 #### Example
@@ -129,7 +129,7 @@ $("#container").ejSunburstChart({
 
 ### dataLabelRendering
 
-Fires before rendering the datalabel, you can use [`dataLabelRendering`](../api/js/ejsunburstchart#events:datalabelrendering) event. 
+Fires before rendering the datalabel, you can use [`dataLabelRendering`](../api/ejsunburstchart#events:datalabelrendering) event. 
 
 
 #### Example
@@ -152,7 +152,7 @@ $("#container").ejSunburstChart({
 
 ### segmentRendering
 
-Fires before rendering each segment, you can use [`segmentRendering`](../api/js/ejsunburstchart#events:segmentrendering) event. 
+Fires before rendering each segment, you can use [`segmentRendering`](../api/ejsunburstchart#events:segmentrendering) event. 
 
 
 #### Example
@@ -176,7 +176,7 @@ $("#container").ejSunburstChart({
 
 ### titleRendering
 
-Fires before rendering sunburst title, you can use [`titleRendering`](../api/js/ejsunburstchart#events:titlerendering) event.  
+Fires before rendering sunburst title, you can use [`titleRendering`](../api/ejsunburstchart#events:titlerendering) event.  
 
 
 #### Example
@@ -204,7 +204,7 @@ $("#container").ejSunburstChart({
 
 
 
-Fires during initialization of tooltip, you can use [`tooltipInitialize`](../api/js/ejsunburstchart#events:tooltipinitialize) event.  
+Fires during initialization of tooltip, you can use [`tooltipInitialize`](../api/ejsunburstchart#events:tooltipinitialize) event.  
 
 
 #### Example
@@ -228,7 +228,7 @@ $("#container").ejSunburstChart({
 
 ### pointRegionClick
 
-Fires after clicking the point in sunburst, you can use [`pointRegionClick`](../api/js/ejsunburstchart#events:pointregionclick) event. 
+Fires after clicking the point in sunburst, you can use [`pointRegionClick`](../api/ejsunburstchart#events:pointregionclick) event. 
 
 
 #### Example
@@ -251,7 +251,7 @@ $("#container").ejSunburstChart({
 
 ### pointRegionMouseMove
 
-Fires while moving the mouse over sunburst points, you can use [`pointRegionMouseMove`](../api/js/ejsunburstchart#events:pointregionmousemove) event. 
+Fires while moving the mouse over sunburst points, you can use [`pointRegionMouseMove`](../api/ejsunburstchart#events:pointregionmousemove) event. 
 
 #### Example
 
@@ -273,7 +273,7 @@ $("#container").ejSunburstChart({
 
 ### drillDownClick
 
-Fires when clicking the point to perform drilldown, you can use [`drillDownClick`](../api/js/ejsunburstchart#events:drilldownclick) event.  
+Fires when clicking the point to perform drilldown, you can use [`drillDownClick`](../api/ejsunburstchart#events:drilldownclick) event.  
 
 
 #### Example
@@ -296,7 +296,7 @@ $("#container").ejSunburstChart({
 
 ### drillDownBack
 
-Fires when resetting drilldown points, you can use [`drillDownBack`](../api/js/ejsunburstchart#events:drilldownback) event.  
+Fires when resetting drilldown points, you can use [`drillDownBack`](../api/ejsunburstchart#events:drilldownback) event.  
 
 
 #### Example
@@ -321,7 +321,7 @@ $("#container").ejSunburstChart({
 ### drillDownReset
 
 
-Fires after resetting the sunburst points, you can use [`drillDownReset`](../api/js/ejsunburstchart#events:drilldownreset) event.  
+Fires after resetting the sunburst points, you can use [`drillDownReset`](../api/ejsunburstchart#events:drilldownreset) event.  
 
 
 #### Example
@@ -344,7 +344,7 @@ $("#container").ejSunburstChart({
 ### legendItemRendering
 
 
-Fires before rendering the legend item, you can use [`legendItemRendering`](../api/js/ejsunburstchart#events:legenditemrendering) event. 
+Fires before rendering the legend item, you can use [`legendItemRendering`](../api/ejsunburstchart#events:legenditemrendering) event. 
 
 
 #### Example
@@ -368,7 +368,7 @@ $("#container").ejSunburstChart({
 ### legendItemClick
 
 
-Fires when clicking the legend item, you can use [`legendItemClick`](../api/js/ejsunburstchart#events:legenditemclick) event.
+Fires when clicking the legend item, you can use [`legendItemClick`](../api/ejsunburstchart#events:legenditemclick) event.
 
 
 #### Example
