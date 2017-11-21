@@ -28,7 +28,7 @@ $("#container").ejSparkline({
 
 ## Tooltip Customization
 
-You can customize the tooltip [`fill color`](../api/ejsparkline#members:tooltip-fill), [`border`][`border`](../api/ejsparkline#members:tooltip-border) properties [`border color`](../api/ejsparkline#members:tooltip-border-color), [`border width`](../api/ejsparkline#members:tooltip-border-width) and [`font`](../api/ejsparkline#members:tooltip-font) properties [`color`](../api/ejsparkline#members:tooltip-font-color), [`font family`](../api/ejsparkline#members:tooltip-font-fontfamily), [`font style`](../api/ejsparkline#members:tooltip-font-fontstyle), [`font weight`](../api/ejsparkline#members:tooltip-font-fontweight), [`opacity`](), [`size`](../api/ejsparkline#members:tooltip-font-size)
+You can customize the tooltip [`fill color`](../api/ejsparkline#members:tooltip-fill), [`border`](../api/ejsparkline#members:tooltip-border) properties [`border color`](../api/ejsparkline#members:tooltip-border-color), [`border width`](../api/ejsparkline#members:tooltip-border-width) and [`font`](../api/ejsparkline#members:tooltip-font) properties [`color`](../api/ejsparkline#members:tooltip-font-color), [`font family`](../api/ejsparkline#members:tooltip-font-fontfamily), [`font style`](../api/ejsparkline#members:tooltip-font-fontstyle), [`font weight`](../api/ejsparkline#members:tooltip-font-fontweight), [`opacity`](../api/ejsparkline#members:tooltip-font-opacity), [`size`](../api/ejsparkline#members:tooltip-font-size)
 
 {% highlight js %}
 

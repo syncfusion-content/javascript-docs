@@ -11,6 +11,7 @@ api : /api/js/ejchart
 # Trendlines
 
 EjChart can generate Trendlines for Cartesian type series *(Line, Column, Scatter, Area, Candle, HiLo etc.)* except bar type series. You can add more than one trendline object to the [`trendlines`](../api/ejchart#members:series-trendlines) option.
+The visibility of the trendline is controlled by using the [`visibility`](../api/ejchart#members:series-trendlines-visibility) property.
 
 {% highlight javascript %}
 
@@ -36,7 +37,7 @@ EjChart can generate Trendlines for Cartesian type series *(Line, Column, Scatte
 
 ## Customize the trendline styles
 
-A trendline can be customized by using the properties such as [`fill`](../api/ejchart#members:series-trendlines-fill), [`width`](../api/ejchart#members:series-trendlines-width), **dashArray** and **opacity**. The default type of trendline is **"linear"**.
+A trendline can be customized by using the properties such as [`fill`](../api/ejchart#members:series-trendlines-fill), [`width`](../api/ejchart#members:series-trendlines-width), [`dashArray`](../api/ejchart#members:series-trendlines-dasharray) and [`opacity`](../api/ejchart#members:series-trendlines-opacity). The default type of trendline is **"linear"**.
 
 {% highlight javascript %}
 
@@ -164,7 +165,7 @@ Power Trendline can be rendered by setting the [`type`](../api/ejchart#members:s
 
 ### Polynomial
 
-Polynomial Trendline can be rendered by setting the trendline [`type`](../api/ejchart#members:series-trendlines-type) as **"polynomial"**.  You can change the polynomial order by using the **polynomialOrder** of the trendlines. It ranges from 2 to 6.
+Polynomial Trendline can be rendered by setting the trendline [`type`](../api/ejchart#members:series-trendlines-type) as **"polynomial"**.  You can change the polynomial order by using the [`polynomialOrder`](../api/ejchart#members:series-trendlines-polynomialorder) of the trendlines. It ranges from 2 to 6.
 
 {% highlight javascript %}
 
@@ -217,7 +218,7 @@ MovingAverage Trendline can be rendered by setting the [`type`](../api/ejchart#m
 
 ### Forward Forecasting
 
-The value set for [`forwardForecast`](../api/ejchart#members:series-trendlines-forwardForecast) is used to determine the distance moving towards the future trend.
+The value set for [`forwardForecast`](../api/ejchart#members:series-trendlines-forwardforecast) is used to determine the distance moving towards the future trend.
 
 {% highlight javascript %}
 
@@ -242,7 +243,7 @@ The value set for [`forwardForecast`](../api/ejchart#members:series-trendlines-f
 
 ### Backward Forecasting
 
-The value set for the [`backwardForecast`](../api/ejchart#members:series-trendlines-backwardForecast) is used to determine the past trends.
+The value set for the [`backwardForecast`](../api/ejchart#members:series-trendlines-backwardforecast) is used to determine the past trends.
 
 {% highlight javascript %}
 

@@ -14,7 +14,7 @@ The legend contains the list of chart series and Trendlines that appear in a cha
 
 ## Legend Visibility
 
-By default, the legend is enabled in the chart. You can enable or disable it by using the [`visible`](../api/ejchart#members:legend-visible) option of the legend.
+By default, the legend is enabled in the chart. You can enable or disable it by using the [`visible`](../api/ejchart#members:legend-visible) option of the [`legend`](../api/ejchart#members:legend).
 
 {% highlight javascript %}
 
@@ -38,7 +38,7 @@ By default, the legend is enabled in the chart. You can enable or disable it by 
 
 ## Legend title
 
-To add the title to the legend, you have to specify the [`legend.title.text`](../api/ejchart#members:legend-title-text) option.
+To add the title to the legend, you have to specify the [`text`](../api/ejchart#members:legend-title-text) option.
 
 {% highlight javascript %}
 
@@ -168,7 +168,7 @@ To change the legend icon shape, you have to specify the shape in the [`shape`](
 
 ### Legend items size and border
 
-You can change the size of the legend items by using the [`itemStyle.width`](../api/ejchart#members:legend-itemstyle-width) and [`itemStyle.height`](../api/ejchart#members:legend-itemstyle-height) options. To change the legend item border, use [`border`](../api/ejchart#members:legend-border) option of the legend itemStyle.
+You can change the size of the legend items by using the [`width`](../api/ejchart#members:legend-itemstyle-width) and [`height`](../api/ejchart#members:legend-itemstyle-height) options. To change the legend item border, use [`border`](../api/ejchart#members:legend-border) option of the legend [`itemStyle`](../api/ejchart#members:legend-itemstyle).
 
 {% highlight javascript %}
 
@@ -190,7 +190,7 @@ You can change the size of the legend items by using the [`itemStyle.width`](../
 
 ### Legend size
 
-By default, legend takes 20% of the **height** horizontally when it was placed on the top or bottom position and 20% of the **width** vertically while placing on the left or right position of the chart. You can change this default legend size by using the [`size`](../api/ejchart#members:legend-size) option of the legend.  
+By default, legend takes 20% of the [`height`](../api/ejchart#members:legend-size-height) horizontally when it was placed on the top or bottom position and 20% of the [`width`](../api/ejchart#members:legend-size-width) vertically while placing on the left or right position of the chart. You can change this default legend size by using the [`size`](../api/ejchart#members:legend-size) option of the legend.  
 
 {% highlight javascript %}
 
@@ -233,9 +233,53 @@ You can control the spacing between the legend items by using the [`itemPadding`
 
 ![](/js/Chart/Legend_images/Legend_img9.png)
 
+
+### Legend background
+
+You can customize the legend background by using the [`background`](../api/ejchart#members:legend-background) option in the legend. 
+
+{% highlight javascript %}
+
+
+        $("#container").ejChart({
+            // ...             
+            legend: {
+                //...
+                //Set background image for the legend
+                background : "green url('flower.png')"} 
+            }
+            // ...             
+        });
+
+
+{% endhighlight %}
+
+
+### Legend fill
+
+You can customize the legend item  shape color  by using the [`fill`](../api/ejchart#members:legend-fill) option in the legend. 
+By using this property, it displays all legend item shapes in same color.Legend items representing invisible series is displayed in gray color.
+
+{% highlight javascript %}
+
+
+        $("#container").ejChart({
+            // ...             
+            legend: {
+                //...
+                //Set fill color  for the legend
+                fill : "green "} 
+            }
+            // ...             
+        });
+
+
+{% endhighlight %}
+
 ### Legend border
 
 You can customize the legend border by using the [`border`](../api/ejchart#members:legend-border) option in the legend. 
+The color and width of the border are customized using the [`color`](../api/ejchart#members:legend-border-color) and [`width`](../api/ejchart#members:legend-border-width) properties.
 
 {% highlight javascript %}
 
@@ -254,6 +298,27 @@ You can customize the legend border by using the [`border`](../api/ejchart#membe
 {% endhighlight %}
 
 ![](/js/Chart/Legend_images/Legend_img10.png)
+
+### Legend opacity
+
+You can customize the legend opacity by using the [`opacity`](../api/ejchart#members:legend-opacity) option in the legend. 
+
+{% highlight javascript %}
+
+
+        $("#container").ejChart({
+            // ...             
+            legend: {
+                //...
+                //Set opacity for the  legend
+               opacity: 0.5,
+            }
+            // ...             
+        });
+
+
+{% endhighlight %}
+
 
 ### Scrollbar for legend
 
@@ -278,9 +343,33 @@ You can enable or disable the legend scrollbar by using the [`enableScrollbar`](
 
 ![](/js/Chart/Legend_images/Legend_img11.png)
 
+
+### Legend Location
+
+The [`location`](../api/ejchart#members:legend-location) property is used for customizing the position of the chart legend. 
+Legend is placed in provided location only when value of **position** property is **custom**. Both the [`x`](../api/ejchart#members:legend-location-x)and [`y`](../api/ejchart#members:legend-location-y) locations can be customized in the location property
+
+
+{% highlight javascript %}
+
+
+        $("#container").ejChart({
+            // ...             
+            legend: {
+                //...
+               
+                location :{x :20 ,y:100}  
+            }
+            // ...             
+        });
+
+
+{% endhighlight %}
+
+
 ### Customize the legend text
 
-To customize the legend item text and title you can use the [`legend.font`](../api/ejchart#members:legend-font) and [`legend.title`](../api/ejchart#members:legend-title) options. You can change the legend title alignment by using the [`textAlignment`](../api/ejchart#members:legend-title-textAlignment) option of the legend title.
+To customize the legend item text and title you can use the [`font`](../api/ejchart#members:legend-font) and [`title`](../api/ejchart#members:legend-title) options. You can change the legend title alignment by using the [`textAlignment`](../api/ejchart#members:legend-title-textalignment) option of the legend title.
 
 {% highlight javascript %}
 
@@ -311,7 +400,7 @@ To customize the legend item text and title you can use the [`legend.font`](../a
 
 **Trim**
 
-You can trim the legend item text when its width exceeds the [`legend.textWidth`](../api/ejchart#members:legend-textWidth), by specifying [`textOverflow`](../api/ejchart#members:legend-textOverflow) as **"trim"**. The original text will be displayed on mouse hover.
+You can trim the legend item text when its width exceeds the [`legend.textWidth`](../api/ejchart#members:legend-textwidth), by specifying [`textOverflow`](../api/ejchart#members:legend-textoverflow) as **"trim"**. The original text will be displayed on mouse hover.
 
 {% highlight javascript %}
 
@@ -376,7 +465,7 @@ You can get the legend item details such as *index*, *bounds*, *shape* and *seri
 
 ## Series selection on legend item click
 
-You can select a specific series or point while clicking on the corresponding legend item through disabling the [`toggleSeriesVisibility`](../api/ejchart#members:legend-toggleseriesvisibility) option of the legend. The default value of toggleSeriesVisibility option is **true**. To customize the series selection refer to the series [`selection`](../api/ejchart.html#members:series-selectionsettings).
+You can select a specific series or point while clicking on the corresponding legend item through disabling the [`toggleSeriesVisibility`](../api/ejchart#members:legend-toggleSeriesVisibility) option of the legend. The default value of toggleSeriesVisibility option is **true**. To customize the series selection refer to the series [`selection`](../api/ejchart.html#members:series-selectionsettings).
 
 {% highlight javascript %}
 
