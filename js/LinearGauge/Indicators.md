@@ -14,9 +14,9 @@ Indicators simply indicates the current status of the pointer. Indicators are in
 
 ## Setting Dimension
 
-* You can enable indicators by setting [`showIndicators`](../api/js/ejlineargauge#members:scales-showindicators) to ‘true’ in scale collection. The [`height`](../api/js/ejlineargauge#members:scales-indicators-height) and [`width`](../api/js/ejlineargauge#members:scales-indicators-width) property for the indicators are used to specify the area allocated to the indicator for the width and height respectively. 
+* You can enable indicators by setting [`showIndicators`](../api/ejlineargauge#members:scales-showindicators) to ‘true’ in scale collection. The [`height`](../api/ejlineargauge#members:scales-indicators-height) and [`width`](../api/ejlineargauge#members:scales-indicators-width) property for the indicators are used to specify the area allocated to the indicator for the width and height respectively. 
 
-* You can use the position collection to [`position`](../api/js/ejlineargauge#members:scales-indicators-position) the indicators along **X** and **Y** axis. [`x`](../api/js/ejlineargauge#members:scales-indicators-position-x) specifies horizontal position in indicators whereas [`y`](../api/js/ejlineargauge#members:scales-indicators-position-y) specifies vertical position in indicators. Indicators are of several types such as, dimensions like circle, rectangle, rounded rectangle, text and image. By using the [`type`](../api/js/ejlineargauge#members:scales-indicators-type) property it can be applied. For image type **imageUrl** property is used.
+* You can use the position collection to [`position`](../api/ejlineargauge#members:scales-indicators-position) the indicators along **X** and **Y** axis. [`x`](../api/ejlineargauge#members:scales-indicators-position-x) specifies horizontal position in indicators whereas [`y`](../api/ejlineargauge#members:scales-indicators-position-y) specifies vertical position in indicators. Indicators are of several types such as, dimensions like circle, rectangle, rounded rectangle, text and image. By using the [`type`](../api/ejlineargauge#members:scales-indicators-type) property it can be applied. For image type **imageUrl** property is used.
 
 
 {% highlight html %}
@@ -80,7 +80,7 @@ Execute the above code to render the following output.
 
 ## State Ranges
 
-State ranges are used to specify the indicator behavior in the certain region. [`startValue`](../api/js/ejlineargauge#members:scales-indicators-stateranges-startvalue) and [`endValue`](../api/js/ejlineargauge#members:scales-indicators-stateranges-endvalue) are used to set the range bound for the pointer. Whenever the pointer crosses the specified region, the indicator attributes are applied for the ranges.
+State ranges are used to specify the indicator behavior in the certain region. [`startValue`](../api/ejlineargauge#members:scales-indicators-stateranges-startvalue) and [`endValue`](../api/ejlineargauge#members:scales-indicators-stateranges-endvalue) are used to set the range bound for the pointer. Whenever the pointer crosses the specified region, the indicator attributes are applied for the ranges.
 
 
 {% highlight html %}
@@ -177,9 +177,9 @@ Linear Gauge with indicator state ranges
 
 ## Color and Appearance
 
-The [`backgroundColor`](../api/js/ejlineargauge#members:scales-indicators-stateranges-backgroundcolor) and [`borderColor`](../api/js/ejlineargauge#members:scales-indicators-stateranges-bordercolor) sets the appearance behavior for the indicators. You can apply this only if it lies within the state ranges. Otherwise default behavior will be applied.
+The [`backgroundColor`](../api/ejlineargauge#members:scales-indicators-stateranges-backgroundcolor) and [`borderColor`](../api/ejlineargauge#members:scales-indicators-stateranges-bordercolor) sets the appearance behavior for the indicators. You can apply this only if it lies within the state ranges. Otherwise default behavior will be applied.
 
-The indicator border is modified with the border object. It contains two [`border`](../api/js/ejlineargauge#members:scales-indicators-border) property namely [`color`](../api/js/ejlineargauge#members:scales-indicators-border-color) and [`width`](../api/js/ejlineargauge#members:scales-indicators-border-width) which are used to customize the border color of the indicator and border width of the indicator pointer.
+The indicator border is modified with the border object. It contains two [`border`](../api/ejlineargauge#members:scales-indicators-border) property namely [`color`](../api/ejlineargauge#members:scales-indicators-border-color) and [`width`](../api/ejlineargauge#members:scales-indicators-border-width) which are used to customize the border color of the indicator and border width of the indicator pointer.
 
 {% highlight html %}
 
@@ -245,9 +245,9 @@ Execute the above code to render the following output.
 
 ## Font options
 
-The basic font options available for the textual type indicators in the **Linear Gauge** such as Size, font style and font family are achieved by the properties [`size`](../api/js/ejlineargauge#members:scales-indicators-font-size), [`fontStyle`](../api/js/ejlineargauge#members:scales-indicators-font-fontstyle) and [`fontFamily`](../api/js/ejlineargauge#members:scales-indicators-font-fontfamily).
+The basic font options available for the textual type indicators in the **Linear Gauge** such as Size, font style and font family are achieved by the properties [`size`](../api/ejlineargauge#members:scales-indicators-font-size), [`fontStyle`](../api/ejlineargauge#members:scales-indicators-font-fontstyle) and [`fontFamily`](../api/ejlineargauge#members:scales-indicators-font-fontfamily).
 
-To specifies the textLocation in bar indicators, you can use the [`textLocation`](../api/js/ejlineargauge#members:scales-indicators-textlocation) property. 
+To specifies the textLocation in bar indicators, you can use the [`textLocation`](../api/ejlineargauge#members:scales-indicators-textlocation) property. 
 
 {% highlight html %}
 
