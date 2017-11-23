@@ -187,9 +187,14 @@ The following output is displayed as a result of the above code example.
 
 ### Frozen Columns alert Messages:
 
-1. If [`allowScrolling`](https://help.syncfusion.com/api/js/ejgrid#members:allowscrolling "allowScrolling") is false while using the [`frozenColumns`](https://help.syncfusion.com/api/js/ejgrid#members:scrollsettings-frozencolumns "frozenColumns") then "Enable [`allowScrolling`](https://help.syncfusion.com/api/js/ejgrid#members:allowscrolling "allowScrolling") while using frozen Columns" alert message is thrown.
+1. If [`allowScrolling`](https://help.syncfusion.com/api/js/ejgrid#members:allowscrolling "allowScrolling") is false while using [`frozenColumns`](https://help.syncfusion.com/api/js/ejgrid#members:scrollsettings-frozencolumns "frozenColumns") then "Enable [`allowScrolling`](https://help.syncfusion.com/api/js/ejgrid#members:allowscrolling "allowScrolling") while using frozen Columns" alert message is thrown.
 2. If [`frozenColumns`](https://help.syncfusion.com/api/js/ejgrid#members:scrollsettings-frozencolumns "frozenColumns") is specified out of the grid column view then "Frozen columns should be in grid view area" alert message is thrown.
-3. Frozen Rows and Columns are not supported by the following features Grouping, Row Template, Detail Template, Hierarchy, Grid, and Batch Editing.
+3. Frozen Rows and Columns are not supported by the following features.
+- Grouping
+- Row Template
+- Detail Template
+- Hierarchy Grid
+- Batch Editing
 
 If any one of the above feature is enabled along with Frozen Rows and Columns, then "Frozen Columns and Rows are not supported for Grouping, Row Template, Detail Template, Hierarchy Grid and Batch Editing" alert message is thrown.
 
