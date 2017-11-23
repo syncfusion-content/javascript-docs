@@ -10,7 +10,7 @@ api: /api/js/ejtab
 
 # Keyboard Navigation
 
-**Tab** control provides supports **keyboard** interaction. Using this functionality you can interact with control using keyboard. This is achieved by enabling ‘**allowKeyboardNavigation**’ to **‘true**’**.** By default this property value is set to ‘**true**’.
+**Tab** control provides supports **keyboard** interaction. Using this functionality you can interact with control using keyboard. This is achieved by enabling [allowKeyboardNavigation](https://help.syncfusion.com/api/js/ejtab#members:allowkeyboardnavigation) to **‘true**’**.** By default this property value is set to ‘**true**’.
 
 Following table illustrates the accessible key and their usage
 

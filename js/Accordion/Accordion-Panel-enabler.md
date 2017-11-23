@@ -12,7 +12,7 @@ api: /api/js/ejaccordion
 
 ## Enable/Disable widget
 
-**You can enable or disable the Accordion** widget on initial rendering using the **enabled** property. By default **enabled** property is set to true and the **Accordion** panels are active always. 
+**You can enable or disable the Accordion** widget on initial rendering using the [enabled](https://help.syncfusion.com/api/js/ejaccordion#members:enabled) property. By default **enabled** property is set to true and the **Accordion** panels are active always. 
 
  The following steps explain you on how to disable the **Accordion** widget
 
@@ -63,9 +63,9 @@ Output for disabled Accordion control is as follows.
 
 ## Enable panel items
 
-You can enable the **Accordion** widget items on initial loading using **enabledItems** property. This property takes array of indices whose panel needs to be enabled in **Accordion** widget. 
+You can enable the **Accordion** widget items on initial loading using [enabledItems](https://help.syncfusion.com/api/js/ejaccordion#members:enableditems) property. This property takes array of indices whose panel needs to be enabled in **Accordion** widget. 
 
-The **disabledItems** property disables the **Accordion** items based on the index. This takes array of indices whose panel is to be disabled. 
+The [disabledItems](https://help.syncfusion.com/api/js/ejaccordion#members:disableditems) property disables the **Accordion** items based on the index. This takes array of indices whose panel is to be disabled. 
 
 ### Enabling accordion panel items
 

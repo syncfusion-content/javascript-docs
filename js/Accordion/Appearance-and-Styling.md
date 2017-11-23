@@ -12,7 +12,7 @@ api: /api/js/ejaccordion
 
 ## Adjusting Accordion size
 
-You can customize the **Accordion** panel height using **heightAdjustMode** property. It can be set to **enum** values like content, fill or auto. By default **heightAdjustMode** is set to **content** so the panel height is adjusted to the content size.
+You can customize the **Accordion** panel height using [heightAdjustMode](https://help.syncfusion.com/api/js/ejaccordion#members:heightadjustmode) property. It can be set to **enum** values like content, fill or auto. By default **heightAdjustMode** is set to **content** so the panel height is adjusted to the content size.
 
 ### Configure Height of Accordion panel
 
@@ -68,7 +68,7 @@ Output for Accordion control when panel height is set to auto so that the maximu
 
 ## Rounded corner
 
-You can customize the shape of the **Accordion** widget from regular rectangular shape to rounded rectangle shape enabling **roundedCorner** property that is set to false by default.
+You can customize the shape of the **Accordion** widget from regular rectangular shape to rounded rectangle shape enabling [showroundedCorner](https://help.syncfusion.com/api/js/ejaccordion#members:showroundedcorner) property that is set to false by default.
 
 ### Enabling Rounded corner property
 
@@ -124,7 +124,7 @@ Output for accordion widget when “showRoundedCorner” is set to “true” is
 
 ## Customize Accordion icon
 
-**Accordion** widget allows you to customize the icons using **customIcon** option that has two properties **header** and **selectedHeader**. By default, the classes of header and selectedHeader are e-collapse and e-expand respectively. By setting the desired CSS class names for these properties as required overrides the default icons with customized icons.
+**Accordion** widget allows you to customize the icons using [customIcon](https://help.syncfusion.com/api/js/ejaccordion#members:customicon) option that has two properties **header** and **selectedHeader**. By default, the classes of header and selectedHeader are e-collapse and e-expand respectively. By setting the desired CSS class names for these properties as required overrides the default icons with customized icons.
 
 ### Configuring custom icon for Accordion
 
@@ -188,7 +188,7 @@ Output for Accordion widget with customized icons is as follows.
 
 ### Set animation
 
-By default the **Animation** for expanding and collapsing is enabled. To remove the Animation you can set the **enableAnimation** property to **false**. This restricts customizing animations as well. By default **enableAnimation** is set to **true**.
+By default the **Animation** for expanding and collapsing is enabled. To remove the Animation you can set the [enableAnimation](https://help.syncfusion.com/api/js/ejaccordion#members:enableanimation) property to **false**. This restricts customizing animations as well. By default **enableAnimation** is set to **true**.
 
 Following code disables **Animation** for **Accordion**.
 
@@ -205,7 +205,7 @@ Following code disables **Animation** for **Accordion**.
 
 This feature allows you to set the speed for expanding and collapsing the **Accordion** panels. By default it is set to 300 in milliseconds. By configuring the animation speed you can optimize the delay in loading the panel content.
 
-The following code sample sets value for **expandSpeed** and **collapseSpeed** properties,
+The following code sample sets value for [expandSpeed](https://help.syncfusion.com/api/js/ejaccordion#members:expandspeed) and [collapseSpeed](https://help.syncfusion.com/api/js/ejaccordion#members:collapsespeed) properties,
 
 {% highlight javascript %}
 
@@ -241,7 +241,7 @@ By default, there are 12 themes support available for **Accordion** control name
 
 ## CSS class
 
-**CSS** class can be used to customize the **Accordion** control appearance. Define a **CSS** class as you’re your requirement and assign the class name to **cssClass** property.
+**CSS** class can be used to customize the **Accordion** control appearance. Define a **CSS** class as you’re your requirement and assign the class name to [cssClass](https://help.syncfusion.com/api/js/ejaccordion#members:cssclass) property.
 
 ### Configure AutoComplete textbox using CSS class
 

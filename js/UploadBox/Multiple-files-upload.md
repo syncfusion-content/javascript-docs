@@ -10,7 +10,7 @@ api: /js/ejuploadbox
 
 # Multiple files upload
 
-The **Uploadbox** widget provides support to upload multiple files spontaneously. The **multipleFilesSelection** property enables you to select multiple files while browsing.  To achieve this, set the **multipleFilesSelection** property to ‘**true**’. The data type is **Boolean**.
+The **Uploadbox** widget provides support to upload multiple files spontaneously. The [multipleFilesSelection](https://help.syncfusion.com/api/js/ejuploadbox#members:multiplefilesselection) property enables you to select multiple files while browsing.  To achieve this, set the **multipleFilesSelection** property to ‘**true**’. The data type is **Boolean**.
 
 N> The Multiple file selection supports all the latest versions of browser except Internet Explorer 9 and its previous versions.
 

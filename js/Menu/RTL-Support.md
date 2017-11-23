@@ -12,7 +12,7 @@ api: /api/js/ejmenu
 
 The **enableRTL** option allows the **Menu** control to display it in the right to left direction. By default, this option is set to “false” in the **Menu** control.
 
-The following code depicts you on how to enable the **rtl** property of the **Menu** control.
+The following code depicts you on how to enable the [rtl](https://help.syncfusion.com/api/js/ejmenu#members:enablertl) property of the **Menu** control.
 
 
 {% highlight html %}

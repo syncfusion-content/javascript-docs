@@ -12,7 +12,7 @@ api: /api/js/ejtagcloud
 
 ## Minimum and maximum Font size
 
-The **TagCloud** content are set to different font sizes from minimum to maximum based on its frequency values. By default, **minFontSize** is “10px” and **maxFontSize** is “40px”, using these properties you can customize the minimum and maximum font sizes.
+The **TagCloud** content are set to different font sizes from minimum to maximum based on its frequency values. By default, [minFontSize](https://help.syncfusion.com/api/js/ejtagcloud#members:minfontsize) is “10px” and [maxFontSize](https://help.syncfusion.com/api/js/ejtagcloud#members:maxfontsize) is “40px”, using these properties you can customize the minimum and maximum font sizes.
 
 ### Customizing font sizes of TagCloud
 
@@ -48,7 +48,7 @@ The following screenshot illustrates the **TagCloud** control with customized fo
 
 ## Tag format
 
-You can set the **TagCloud** content display format using **format** property. By default format is set to cloud, that displays content in **TagCloud**. You can set the format as list to display the content in linear format.
+You can set the **TagCloud** content display format using [format](https://help.syncfusion.com/api/js/ejtagcloud#members:format) property. By default format is set to cloud, that displays content in **TagCloud**. You can set the format as list to display the content in linear format.
 
 ### Defining Cloud and List format
 
@@ -119,7 +119,7 @@ By default, there are 12 themes support available for **TagCloud** control namel
 
 ## CssClass
 
-You can use the CSS class to customize the **TagCloud** appearance. Any of the CSS properties can be used to modify look and feel of tag cloud based on the requirement. Define a **CSS** class as per requirement and assign the class name to **cssClass** property.
+You can use the CSS class to customize the **TagCloud** appearance. Any of the CSS properties can be used to modify look and feel of tag cloud based on the requirement. Define a **CSS** class as per requirement and assign the class name to [cssClass](https://help.syncfusion.com/api/js/ejtagcloud#members:cssclass) property.
 
 ### Configure TagCloud using CSS class
 

@@ -12,7 +12,7 @@ api: /api/js/ejtab
 
 You can change the contents in sub **Tab** element periodically and you are provided with a support to change the contents without any problems. To achieve the content load, use the **Load on Demand** concept.
 
-In **Load On-Demand**, the external **HTML** file with the necessary details is referred in &lt;href&gt; section during **Tab** header declaration section. Also include “**dataType**”, “**contentType**”, and “**async**” in the script like the following example when rendering the control. When you click the **Tab** header, the AJAX automatically calls the content from the external files and displays in a **Tab** content section. 
+In **Load On-Demand**, the external **HTML** file with the necessary details is referred in &lt;href&gt; section during **Tab** header declaration section. Also include [dataType](https://help.syncfusion.com/api/js/ejtab#members:ajaxsettings-datatype), [contentType](https://help.syncfusion.com/api/js/ejtab#members:ajaxsettings-contenttype), and [async](https://help.syncfusion.com/api/js/ejtab#members:ajaxsettings-async) in the script like the following example when rendering the control. When you click the **Tab** header, the AJAX automatically calls the content from the external files and displays in a **Tab** content section. 
 
 ## Sub Tab with AJAX Content
 

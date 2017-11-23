@@ -13,7 +13,7 @@ api: /api/js/ejtooltip
 
 The position object defines various attributes of the Tooltip position, including the element it is positioned in relation to, and how the position is adjusted within the defined container.
 
-Lets position the Tooltips (stems) left center corner at the right center of the target element.
+Lets position using [position](https://help.syncfusion.com/api/js/ejtooltip#members:position) the Tooltips (stems) left center corner at the right center of the target element.
 
 {% highlight html %}
  

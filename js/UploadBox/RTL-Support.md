@@ -12,7 +12,7 @@ api: /js/ejuploadbox
 
 This feature supports the change of left-to-right alignment of the **Uploadbox** widget to right-to-left (**RTL**). That is, it sets the **Uploadbox** to right-to-left actions.
 
-The following steps explain the configuration of **enableRTL** property in **Uploadbox**. 
+The following steps explain the configuration of [enableRTL](https://help.syncfusion.com/api/js/ejuploadbox#members:enablertl) property in **Uploadbox**. 
 
 In the **HTML** page, add the **&lt;div&gt;** element to configure the **Uploadbox** element.
 

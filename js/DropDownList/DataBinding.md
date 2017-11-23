@@ -473,7 +473,7 @@ By using “[WebMethodAdaptor](https://help.syncfusion.com/js/datamanager/gettin
     
 {% endhighlight %}
 
-Use the above code example to use WebMethod adaptor and bind the data to the DropDownList.
+Use the above code example to use WebMethod adaptor and bind the data to the DropDownList with the help of [query](https://help.syncfusion.com/api/js/ejdropdownlist#members:query) property.
 
 ## MVC controller Action Binding
 
@@ -614,7 +614,7 @@ When using remote data binding, the adaptor of "ej.DataManager" plays vital role
 
 ## Virtual Scrolling 
 
-To improve the performance when displaying large data set, you can use “allowVirtualScrolling” and [virtualScrollMode](https://help.syncfusion.com/api/js/ejdropdownlist#members:virtualscrollmode) property. This retrieves only a fixed amount of list items and loads remaining data on scrolling. The items will be fetched via AJAX request.
+To improve the performance when displaying large data set, you can use [allowVirtualScrolling](https://help.syncfusion.com/api/js/ejdropdownlist#members:allowvirtualscrolling) and [virtualScrollMode](https://help.syncfusion.com/api/js/ejdropdownlist#members:virtualscrollmode) property. This retrieves only a fixed amount of list items and loads remaining data on scrolling. The items will be fetched via AJAX request.
 
 This supports two modes of virtualization. They are,
 

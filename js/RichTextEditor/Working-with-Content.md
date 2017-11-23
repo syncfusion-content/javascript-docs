@@ -368,7 +368,7 @@ If you want to apply font  color or background color for a selected content of R
 
 ## Insert the content at cursor
 
-If you want to insert/paste the content at the current cursor position (or) to replace the selected content with some formatting, you can use pasteContent method in the editor.
+If you want to insert/paste the content at the current cursor position (or) to replace the selected content with some formatting, you can use [pasteContent](https://help.syncfusion.com/api/js/ejrte#methods:pastecontent) method in the editor. you can use [getSelectedHtml](https://help.syncfusion.com/api/js/ejrte#methods:getselectedhtml) method to select the content.
 
 {% highlight html %}
 

@@ -18,6 +18,7 @@ This option allows you to specify which footer elements should display at the bo
 3. Characters Count / Word Count 
 4. Clear Format
 5. Resizer
+It is enabled by using [showFooter](https://help.syncfusion.com/api/js/ejrte#members:showfooter) property.
 
 {% highlight html %}
 
@@ -37,7 +38,7 @@ This option allows you to specify which footer elements should display at the bo
 
 RichTextBox includes the ability for users to directly edit HTML code via “Source View” in a separate dialog. If you made any modification in Source view directly, click Update button to synchronize with Design view. This provides power users with more flexibility over the content they create.
 
-You can paste HTML text into Source view. If you cut or copy from HTML source such as page source of Browser, paste as HTML (without escape characters) into Source view.
+You can paste HTML text into Source view. If you cut or copy from HTML source such as page source of Browser using[showHtmlSource](https://help.syncfusion.com/api/js/ejrte#members:showhtmlsource), paste as HTML (without escape characters) into Source view.
 
 {% highlight html %}
 
@@ -58,7 +59,7 @@ N> Source view is useful for working directly with raw HTML text, so this tool i
 
 ## HTML Tag Info
 
-The HTML tag info tool that shows the path of currently selected tag along with hierarchy of parent tags to which it belongs. The tag information is displayed at the bottom of the editor. It is used to determine which element has the focus in the editor’s content. 
+The HTML tag info tool that shows the path of currently selected tag along with hierarchy of parent tags to which it belongs using [showHtmltagInfo](https://help.syncfusion.com/api/js/ejrte#members:showhtmltaginfo) property. The tag information is displayed at the bottom of the editor. It is used to determine which element has the focus in the editor’s content. 
 
 {% highlight html %}
 
@@ -79,7 +80,7 @@ N> The outermost tag is the body tag of &lt; iframe &gt; element in design view,
 
 ## Characters Count/Word Count
 
-The editor automatically counts the number of characters and words in the content while you type. The characters and words count displayed at the bottom of the editor. You can limit the number of characters in your content using [maxLength](https://help.syncfusion.com/api/js/ejrte#members:maxlength) property. By default, the editor sets the characters limit value as 7000 characters.
+The editor automatically counts the number of characters and words in the content while you type using [showCharCount](https://help.syncfusion.com/api/js/ejrte#members:showCharCount) property. The characters and words count displayed at the bottom of the editor. You can limit the number of characters in your content using [maxLength](https://help.syncfusion.com/api/js/ejrte#members:maxlength) property. By default, the editor sets the characters limit value as 7000 characters.
 
 {% highlight html %}
 

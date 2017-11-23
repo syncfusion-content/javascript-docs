@@ -82,7 +82,7 @@ Initialize the editor by adding the following script to the HTML document.
 
 ## Toolbar–Configuration
 
-You can configure a toolbar with the tools as your application requires.
+You can configure a toolbar with the tools using [tools](https://help.syncfusion.com/api/js/ejrte#members:tools) and [toolsList](https://help.syncfusion.com/api/js/ejrte#members:toolslist) properties as your application requires.
 
 {% highlight javascript %}
 $(function () {
@@ -101,7 +101,7 @@ images: ["image"]
 
 ## Setting and Getting Content
 
-You can set the content of the editor as follows.
+You can set the content of the editor using [value](https://help.syncfusion.com/api/js/ejrte#members:value) as follows.
 
 {% highlight javascript %}
 

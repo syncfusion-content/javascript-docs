@@ -110,7 +110,7 @@ Initialize **ProgressBar** in script.
 
 
 
-Here, you can initialize the properties of the **ProgressBar** such as height, value, width, text that is applied to the control by default.
+Here, you can initialize the properties of the **ProgressBar** such as [height](https://help.syncfusion.com/api/js/ejprogressbar#members:height), [value](https://help.syncfusion.com/api/js/ejprogressbar#members:value), [width](https://help.syncfusion.com/api/js/ejprogressbar#members:width), [text](https://help.syncfusion.com/api/js/ejprogressbar#members:text) that is applied to the control by default.
 
 The following screenshot displays a **ProgressBar** control.
 

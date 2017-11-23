@@ -12,7 +12,7 @@ api: /api/js/ejwaitingpopup
 
 ## Custom Text
 
-**WaitingPopup** control provides support for Custom Text to mention any message inside the pop-up panel.  You can specify a custom text through the option **text** that displays when the **WaitingPopup** is loading.
+**WaitingPopup** control provides support for Custom Text to mention any message inside the pop-up panel.  You can specify a custom text through the option [text](https://help.syncfusion.com/api/js/ejwaitingpopup#members:text) that displays when the **WaitingPopup** is loading.
 
 The following steps explains you the configuration of the custom text for **WaitingPopup** control.
 
@@ -102,7 +102,7 @@ The following steps explains you on how to define template to display a text and
 
 
 
-Initialize the **WaitingPopup** with custom template using the following code example.
+Initialize the **WaitingPopup** with custom template using [template](https://help.syncfusion.com/api/js/ejwaitingpopup#members:template) property ,
 
 
 
@@ -187,7 +187,7 @@ Execute the above code to render the following output.
 
 ## CSS Class
 
-You can use the **CSS** class to customize the **WaitingPopup** control appearance. Define a **CSS** class as per requirement and assign the class name to **cssClass** property.
+You can use the **CSS** class to customize the **WaitingPopup** control appearance. Define a **CSS** class as per requirement and assign the class name to [cssClass](https://help.syncfusion.com/api/js/ejwaitingpopup#members:cssclass) property.
 
 The following steps allows you to configure **CSS** class for an auto-complete textbox.
 

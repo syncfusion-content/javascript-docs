@@ -331,7 +331,7 @@ The following screenshot illustrates the First **Tab** with the sub **Tab** cont
 
 ## Orientation Change
 
-In this application, the sub **Tab** orientation needs to be vertical. By default, **Tab** control renders in horizontal orientation. Change the orientation to vertical using the “**headerPosition**” property. The **Tab** header orientation is set as “**left**”.
+In this application, the sub **Tab** orientation needs to be vertical. By default, **Tab** control renders in horizontal orientation. Change the orientation to vertical using the [headerPosition](https://help.syncfusion.com/api/js/ejtab#members:headerposition) property. The **Tab** header orientation is set as “**left**”.
 
 The following code example is used to render the sub **Tab** element in the vertical orientation.
 
