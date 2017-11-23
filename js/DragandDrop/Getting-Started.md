@@ -85,7 +85,7 @@ N>  In production, we highly recommend you to use our [custom script generator](
 
 ## Initialize Drag And Drop
 
-You can make any Html elements to be draggable or droppable by using ejDraggable and ejDroppable.This section explains how to perform drag and drop using html elements
+You can make any Html elements to be draggable or droppable by using ejDraggable and ejDroppable.This section explains how to perform drag using [drag](https://help.syncfusion.com/api/js/ejdraggable#events:drag) event and drop using [drop](https://help.syncfusion.com/api/js/ejdroppable#events:drop) by using html elements
 
  {% highlight html %}
 	
@@ -199,7 +199,7 @@ After Dragging:
 
 ## Helper
 
-Helper will return the object of corresponding draggable element. You can drag the element by using helper. 
+Helper will return the object of corresponding draggable element. You can drag the element by using [helper](https://help.syncfusion.com/api/js/ejdraggable#events:helper) event. 
 
 {% highlight javascript %}	
 
@@ -215,7 +215,7 @@ Helper will return the object of corresponding draggable element. You can drag t
 
 ## Set Boundaries 
 
-You can restrict the movement of draggable element within a specified area using dragArea property. 
+You can restrict the movement of draggable element within a specified area using [dragArea](https://help.syncfusion.com/api/js/ejdraggable#members:dragarea) property. 
 
 The below code explains how to make the movement constrained to the container boundaries. 
 	

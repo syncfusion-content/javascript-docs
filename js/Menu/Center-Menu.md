@@ -10,7 +10,7 @@ api: /api/js/ejmenu
 
 # Center Menu
 
-You can align the **Menu** items to center by setting “enableCenterAlign” property as true. “**enableCenterAlign**” property accepts Boolean value. By default, its value is **false**. When set to **true**, then the root menu items is aligned in center.
+You can align the **Menu** items to center by setting “enableCenterAlign” property as true. [enableCenterAlign](https://help.syncfusion.com/api/js/ejmenu#members:enablecenteralign) property accepts Boolean value. By default, its value is **false**. When set to **true**, then the root menu items is aligned in center.
 
 Add the following code in your **&lt;script&gt;** section.
 

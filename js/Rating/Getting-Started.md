@@ -20,7 +20,7 @@ The following screenshot illustrates the functionality of a Rating widget with a
 
 **Essential JavaScript Rating** widget is provided with built-in features such as precision, orientation and flexible API’s. You can create the **Rating** widget by using input textbox element as follows:
 
- Create an HTML file and add the following template to the HTML file.
+ Create an HTML file and add the following template to the HTML file. You can set the value of the rating widget by using [value](https://help.syncfusion.com/api/js/ejrating#members:value) property.
 
 {% highlight html %}
 
@@ -182,7 +182,7 @@ The following screenshot illustrates the functionality of a Rating widget with a
 
 ##Set the Min and Max Value
 
-In a real-time scenario, you can extend the range by using the properties **minValue** and **maxValue** in the **Rating** widget. 
+In a real-time scenario, you can extend the range by using the properties [minValue](https://help.syncfusion.com/api/js/ejrating#members:maxvalue) and [maxValue](https://help.syncfusion.com/api/js/ejrating#members:maxvalue) in the **Rating** widget. 
 
 {% highlight html %}
 

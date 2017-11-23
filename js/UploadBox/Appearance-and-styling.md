@@ -14,7 +14,7 @@ The **Uploadbox** widget provides support to customize the **dialog box** text a
 
 ## Customizing Button Text
 
-The following table contains the **sub properties** available under **buttonText** property. To customize the text, pass the alternate text with corresponding **sub properties**. 
+The following table contains the **sub properties** available under [buttonText](https://help.syncfusion.com/api/js/ejuploadbox#members:buttontext) property. To customize the text, pass the alternate text with corresponding **sub properties**. 
 
 Sub-properties under buttonText property
 
@@ -79,7 +79,7 @@ The following screenshot displays the output.
 
 ## Customizing Upload Dialog
 
-The following table contains the **sub properties** available under **Uploadbox’s DialogText** property. To customize the text, pass the alternate text with corresponding **sub properties**. 
+The following table contains the **sub properties** available under **Uploadbox’s** [DialogText](https://help.syncfusion.com/api/js/ejuploadbox#members:dialogtext) property. To customize the text, pass the alternate text with corresponding **sub properties**. 
 
 Sub properties under dialogText property.
 
@@ -145,7 +145,7 @@ The following screenshot displays the output.
 
 ## Show or Hide File details 
 
-You have an option to **show** or **hide** **file** **details** in the **uploaded file list** **dialog**. By using this property, the **uploaded file dialog** does not display the file details once selected. To enable this, set **showFileDetails** to ‘**false**’. By default, its value is set to ‘**true**’. The data type is **Boolean**.
+You have an option to **show** or **hide** **file** **details** in the **uploaded file list** **dialog**. By using this property, the **uploaded file dialog** does not display the file details once selected. To enable this, set [showFileDetails](https://help.syncfusion.com/api/js/ejuploadbox#members:showfiledetails) to ‘**false**’. By default, its value is set to ‘**true**’. The data type is **Boolean**.
 
 The following steps explains the configuration of **showFileDetails** property in **Uploadbox**.
 
@@ -200,7 +200,7 @@ By default, there are 12-theme support available for **Uploadbox** control namel
 
 ## Custom CSS
 
-**CSS** **class** customizes the **Uploadbox** control’s appearance. Define a **CSS** **class** as per the requirement and assign the class name to **cssClass** property. The data type is **string**. 
+**CSS** **class** customizes the **Uploadbox** control’s appearance. Define a **CSS** **class** as per the requirement and assign the class name to [cssClass](https://help.syncfusion.com/api/js/ejuploadbox#members:cssclass) property. The data type is **string**. 
 
 The following steps explain the configuration of **cssClass** property in **Uploadbox**. 
 

@@ -14,7 +14,7 @@ Data binding enables you to synchronize the elements with different sources of d
 
 ##Field Members
 
-Field is a property that includes the object type. Fields are used to bind the data source and it includes following field members to make binding easier.
+[Field](https://help.syncfusion.com/api/js/ejmenu#members:fields) is a property that includes the object type. Fields are used to bind the data source and it includes following field members to make binding easier.
 
 List of Field members
 

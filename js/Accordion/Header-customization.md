@@ -16,7 +16,7 @@ api: /api/js/ejaccordion
 
 ### Enable Collapsible settings
 
-The following steps explains to enable Collapsible state for **Accordion**.
+The following steps explains to enable Collapsible state for **Accordion** using [collapsible](https://help.syncfusion.com/api/js/ejaccordion#members:collapsible) property.
 
 In an HTML page, define a div element that is a container for Accordion widget and add the contents correspondingly
 
@@ -65,7 +65,7 @@ Output for Accordion control with collapsible headers.
 
 ## Enable Header expand
 
-**Accordion** widget provides you support to set the event, where the headers should expand and collapse. The **events** properties takes default events like mouseout, mouseover, and click.
+**Accordion** widget provides you support to set the event, where the headers should expand and collapse. The [events](https://help.syncfusion.com/api/js/ejaccordion#members:events) properties takes default events like mouseout, mouseover, and click.
 
 ### Configure header expand event
 
@@ -122,7 +122,7 @@ Output for Accordion control that expands header on mouseout event is as follows
 
 ### Single selection
 
-Using **selectedItemIndex** property you can modify the expanded panel when the control is rendered. By default **selectedItemIndex** is ‘0’ that always activate the first **Accordion** panel.
+Using [selectedItemIndex](https://help.syncfusion.com/api/js/ejaccordion#members:selecteditemindex) property you can modify the expanded panel when the control is rendered. By default **selectedItemIndex** is ‘0’ that always activate the first **Accordion** panel.
 
 ### Specify the selected item in Accordion panel
 
@@ -174,7 +174,7 @@ Output for Accordion control with the selected item by index is as follows.
 
 ## Multiple selection
 
-In **Accordion** widget you can select multiple panel items using **selectedItems** property. It takes array of indices that needs to be selected on rendering the control. As you need to select multiple items, you can set **enableMultipleOpen** to **true**.
+In **Accordion** widget you can select multiple panel items using [selectedItems](https://help.syncfusion.com/api/js/ejaccordion#members:selecteditems) property. It takes array of indices that needs to be selected on rendering the control. As you need to select multiple items, you can set [enableMultipleOpen](https://help.syncfusion.com/api/js/ejaccordion#members:enablemultipleopen) to **true**.
 
 ### Configure multiple selection in Accordion panel
 

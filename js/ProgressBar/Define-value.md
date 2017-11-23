@@ -12,7 +12,7 @@ api: /api/js/ejprogressbar
 
 ## Value
 
-The value for the ProgressBar is set by using **‘value’** property. The value should be between the minimum (min) and the maximum (max) values (number) of the ProgressBar. By default, the **minValue** is **0** and the **maxValue** is **100** in ProgressBar, and the ‘**value**’ is set to **0**(number).
+The value for the ProgressBar is set by using [value](https://help.syncfusion.com/api/js/ejprogressbar#members:value) property. The value should be between the minimum (min) and the maximum (max) values (number) of the ProgressBar. By default, the [minValue](https://help.syncfusion.com/api/js/ejprogressbar#members:minvalue) is **0** and the [maxValue](https://help.syncfusion.com/api/js/ejprogressbar#members:maxvalue) is **100** in ProgressBar, and the ‘**value**’ is set to **0**(number).
 
 The following steps explain you on how to set the **value** for the ProgressBar widget.
 
@@ -60,7 +60,7 @@ The following screenshot displays the output for the above code.
 
 ##  Percentage
 
-The ProgressBar value is set in ProgressBar by using the **‘percentage’** property. The value should be between the min and max values (number) of the ProgressBar. By default, the **minValue** is **0** and the **maxValue** is **100** in ProgressBar, and **percentage** is set to **0** (number).
+The ProgressBar value is set in ProgressBar by using the [percentage](https://help.syncfusion.com/api/js/ejprogressbar#members:percentage) property. The value should be between the min and max values (number) of the ProgressBar. By default, the **minValue** is **0** and the **maxValue** is **100** in ProgressBar, and **percentage** is set to **0** (number).
 
 The following steps explain you on how to set the value in **percentage** for the ProgressBar widget. 
 

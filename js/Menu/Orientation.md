@@ -14,7 +14,8 @@ It gets or sets the direction in which the **Menu** control renders and specifi
 
 ##Horizontal Menu
 
-Horizontal orientation displays the menu items horizontally and it is the default orientation behavior of **Menu** control. 
+Horizontal orientation displays the menu items horizontally and it is the default orientation behavior of **Menu** control.
+[Width](https://help.syncfusion.com/api/js/ejmenu#members:width) property is to set the width of the menu widget.
 
 The following steps explains you the details on rendering the **Menu** control. 
 
@@ -91,7 +92,7 @@ The following screenshot displays the output of the above code.
 
 ##Vertical Menu
 
-You can also render **Menu** control in vertical direction using **orientation.** To set the vertical orientation of **Menu** control, replace the following script in the above sample code example.
+You can also render **Menu** control in vertical direction using [orientation](https://help.syncfusion.com/api/js/ejmenu#members:orientation). To set the vertical orientation of **Menu** control, replace the following script in the above sample code example.
 
 Add the following code in your **&lt;script&gt;** section.
 

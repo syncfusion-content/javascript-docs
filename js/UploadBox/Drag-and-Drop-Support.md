@@ -20,7 +20,7 @@ The following screenshot displays the drag and drop support.
 
 ## Enable drag and drop 
 
-You can enable or disable drag and drop by using the **allowDragAndDrop** property. By default, the **allowDragAndDrop** property is set as **False** in the **Uploadbox** control. You can enable drag and drop by setting the **allowDragAndDrop** property as **True**. When you want to drag and drop multiple files, you can enable multiple file selection by setting **multipleFilesSelection** as **True** in the **Uploadbox** control.
+You can enable or disable drag and drop by using the [allowDragAndDrop](https://help.syncfusion.com/api/js/ejuploadbox#members:allowdraganddrop) property. By default, the **allowDragAndDrop** property is set as **False** in the **Uploadbox** control. You can enable drag and drop by setting the **allowDragAndDrop** property as **True**. When you want to drag and drop multiple files, you can enable multiple file selection by setting **multipleFilesSelection** as **True** in the **Uploadbox** control.
 
 The following steps explain how to enable the drag and drop in the **Uploadbox** control.
 
@@ -85,7 +85,7 @@ The following screenshot displays the output for the above code.
 
 ## Drag Area text
 
-You can change the drag area text by using the **dragAreaText** property.  By default, the **dragAreaText** (string) property is **Drop files or click to upload** in the Uploadbox control.
+You can change the drag area text by using the [dragAreaText](https://help.syncfusion.com/api/js/ejuploadbox#members:allowdraganddrop) property.  By default, the **dragAreaText** (string) property is **Drop files or click to upload** in the Uploadbox control.
 
 In the **HTML** page, add a **&lt;div&gt;** element to enable the drag and drop in the **Uploadbox** control.
 
@@ -148,7 +148,7 @@ In CSS, configure the custom styles for drag and drop.
 
 ## Adjust Drop area size
 
-The **Uploadbox** control provides the ability to change or adjust the drop area size. The **dropAreaHeight and** **dropAreaWidth** properties in the **Uploadbox** control allows you to set the maximum height and maximum width for the drop area. The value set to this property is **string** or **number** type.
+The **Uploadbox** control provides the ability to change or adjust the drop area size. The [dropAreaHeight](https://help.syncfusion.com/api/js/ejuploadbox#members:dropareaheight) and [dropAreaWidth](https://help.syncfusion.com/api/js/ejuploadbox#members:dropareawidth) properties in the **Uploadbox** control allows you to set the maximum height and maximum width for the drop area. The value set to this property is **string** or **number** type.
 
 The following steps explain you on how to adjust the Drop Area Size.
 
@@ -190,7 +190,7 @@ You can click anywhere in the droppable area to browse and upload the files. The
 
 ### Droppable area behavior
 
-Enable the **allowDragAndDrop** property to achieve this feature. Next, set the **showBrowseButton** as **False** in Uploadbox Control.
+Enable the **allowDragAndDrop** property to achieve this feature. Next, set the [showBrowseButton](https://help.syncfusion.com/api/js/ejuploadbox#members:showbrowsebutton) as **False** in Uploadbox Control.
 
 The following steps explain the droppable area containing the browse button behavior.
 

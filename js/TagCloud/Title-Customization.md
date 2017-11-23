@@ -12,7 +12,7 @@ api: /api/js/ejtagcloud
 
 ## Show title
 
-The **TagCloud** items are displayed with a Title element by default. To hide the title, you can use **showTitle** property that is true by default.
+The **TagCloud** items are displayed with a Title element by default. To hide the title, you can use [showTitle](https://help.syncfusion.com/api/js/ejtagcloud#members:showtitle) property that is true by default.
 
 ### How to disable title in TagCloud
 
@@ -48,7 +48,7 @@ The following screenshot illustrates a **TagCloud** control when you disable tit
 
 ## Title text
 
-**TagCloud** widget allows you to set a custom title text by using the **titleText** property. By default titleText property is set to string value “Title”.
+**TagCloud** widget allows you to set a custom title text by using the [titleText](https://help.syncfusion.com/api/js/ejtagcloud#members:titletext) property. By default titleText property is set to string value “Title”.
 
 ### Defining title text for TagCloud
 
@@ -88,7 +88,7 @@ The following screenshot illustrates the **TagCloud** control with customized ti
 
 ## Title image
 
-**TagCloud** widget provides **titleImage** to set an image for the title. You can set the desired image **URL** to **titleImage** property.
+**TagCloud** widget provides **titleImage** to set an image for the title. You can set the desired image **URL** to [titleImage](https://help.syncfusion.com/api/js/ejtagcloud#members:titleimage) property.
 
 ### Defining title text for TagCloud
 

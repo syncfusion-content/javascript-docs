@@ -12,7 +12,7 @@ api: /js/ejuploadbox
 
 ## Allow Extension
 
-Files are filtered before they are uploaded. You can select the files to be filtered by using **browse** button. The **extensionsAllow** property allows upload of the selected extensions only. You can give multiple extensions by using comma (,).  The data type is **string**.
+Files are filtered before they are uploaded. You can select the files to be filtered by using **browse** button. The [extensionsAllow](https://help.syncfusion.com/api/js/ejuploadbox#members:extensionsallow) property allows upload of the selected extensions only. You can give multiple extensions by using comma (,).  The data type is **string**.
 
 N> Prepend dot (.) symbol with extension like “.pdf”.
 
@@ -46,7 +46,7 @@ For **JS**, configure **saveFiles.ashx** and **removeFiles.ashx** files as menti
 
 ## Deny Extension
 
-Files are filtered before they are uploaded. You can select the files to be filtered by using **browse** button. The **extensionsDeny** property denies upload of the selected extensions. You can give multiple extensions by using comma (,).  The data type is **string**.
+Files are filtered before they are uploaded. You can select the files to be filtered by using **browse** button. The [extensionsDeny](https://help.syncfusion.com/api/js/ejuploadbox#members:extensionsdeny) property denies upload of the selected extensions. You can give multiple extensions by using comma (,).  The data type is **string**.
 
 N> Prepend dot (.) symbol with extension like “.pdf”.
 

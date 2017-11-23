@@ -88,7 +88,7 @@ Add the given styles to display the **Uploadbox** with margin alignments.
 
 Create a new handler file (.ashx) and save it as **saveFiles.ashx** and then copy the following code into it.
 
-
+Assign this file to the [saveUrl](https://help.syncfusion.com/api/js/ejuploadbox#members:saveurl) property.
 
 {% highlight c# %}
 
@@ -128,7 +128,7 @@ SaveFiles.ashx
 
  Create a new handler file (.ashx) and save it as **removeFiles.ashx** and then copy the following code into it.
 
-
+Assign this file to the [removeUrl](https://help.syncfusion.com/api/js/ejuploadbox#members:removeurl) property.
 
 {% highlight c# %}
 
@@ -186,7 +186,7 @@ N> The above screenshot displays the Uploadbox control that shows the files are 
 
 ## Set Restriction for File Extension
 
-In a real-time scenario, some file extensions are restricted. You can allow files and restrict files by using the following two properties **extensionsAllow** and **extensionsDeny** enabled in **Uploadbox**. 
+In a real-time scenario, some file extensions are restricted. You can allow files and restrict files by using the following two properties [extensionsAllow](https://help.syncfusion.com/api/js/ejuploadbox#members:extensionsallow) and [extensionsDeny](https://help.syncfusion.com/api/js/ejuploadbox#members:extensionsdeny) enabled in **Uploadbox**. 
 
 N> The SaveUrl and RemoveUrl are the same as above (see step 4)
 

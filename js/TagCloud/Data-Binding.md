@@ -40,7 +40,7 @@ Local data binding allows you to map **JSON** data to **TagCloud**, that the cor
 
 ### Defining the Local data for TagCloud
 
-The following steps explains you the local data binding to **TagCloud** widget,
+The following steps explains you the local data binding to **TagCloud** widget using [dataSource](https://help.syncfusion.com/api/js/ejtagcloud#members:datasource),
 
 In the **HTML** page, add a **&lt;div&gt;** element to configure **TagCloud** widget.
 

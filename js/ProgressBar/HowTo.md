@@ -13,7 +13,7 @@ api: /api/js/ejprogressbar
 
 ## How to increment & show the progressbar movement
 
-You can increment the progress percentage and show case the movement by using the below code
+You can increment the progress percentage and show case the movement by using the below code with the help of [change](https://help.syncfusion.com/api/js/ejprogressbar#events:change), [complete](https://help.syncfusion.com/api/js/ejprogressbar#events:complete) and [start](https://help.syncfusion.com/api/js/ejprogressbar#events:start) events.
 
 {% highlight html %}
 

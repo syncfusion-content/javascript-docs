@@ -10,7 +10,7 @@ api: /api/js/ejaccordion
 
 # State Persistence
 
-**Accordion** widget can store the model value in the browser cookies and on every time after initial rendering, the control get the model from the cookie only. Using **enablePersistence** property you can store the model value in cookies. Thus when any changes are made dynamically then those values are updated in cookie. On refreshing the page the past state of the **Accordion** control is maintained in cookie and control is rendered from it.
+**Accordion** widget can store the model value in the browser cookies and on every time after initial rendering, the control get the model from the cookie only. Using [enablePersistence](https://help.syncfusion.com/api/js/ejaccordion#members:enablepersistence) property you can store the model value in cookies. Thus when any changes are made dynamically then those values are updated in cookie. On refreshing the page the past state of the **Accordion** control is maintained in cookie and control is rendered from it.
 
 ## Configure state persistence of Accordion panel
 
