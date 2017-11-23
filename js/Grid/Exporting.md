@@ -347,7 +347,7 @@ grid.ignoreOnExport.splice(grid.ignoreOnExport.indexOf('dataSource'), 1);
 
 ## ColumnTemplate Exporting
 
-To export the grid with templae column we have to set `isTemplateColumnInclude` as true in the parameter of the export method. You can handle the template elements in server side event while exporting grid to various files such as Excel, PDF and Word.
+To export the grid with template column we have to set `isTemplateColumnInclude` as true in the parameter of the export method. You can handle the template elements in server side event while exporting grid to various files such as Excel, PDF and Word.
 
 The server side events available in template column exporting and its argument types are listed in the following table.
 
@@ -485,18 +485,18 @@ public void TemplatePdfExport(string GridModel)
 public void templateInfo(object currentCell, object row)
 {
   IRange range = (IRange)currentCell;
-  object templatevalue;
-  foreach (var ds in row.GetType().GetProperties())
+  object templates;
+  foreach (var data in row.GetType().GetProperties())
   {
      if (range.Value.Contains(ds.Name))
      {
-       templatevalue = row.GetType().GetProperty(ds.Name).GetValue(row, null);
+       templates = row.GetType().GetProperty(data.Name).GetValue(row, null);
        range.Value = range.Value.Replace(ds.Name, templatevalue.ToString());
        var regex = new Regex("<a [^>]*href=(?:'(?<href>.*?)')|(?:\"(?<href>.*?)\")", RegexOptions.IgnoreCase);
        var urls = regex.Matches(range.Value.ToString()).OfType<match>().Select(m => m.Groups["href"].Value).SingleOrDefault();
        IHyperLink hyperlink = (range.Parent as Syncfusion.XlsIO.Implementation.WorksheetImpl).HyperLinks.Add(range);
        hyperlink.Type = ExcelHyperLinkType.Url;
-       hyperlink.TextToDisplay = templatevalue.ToString();
+       hyperlink.TextToDisplay = templates.ToString();
        hyperlink.Address = urls;
      }
   }
@@ -505,16 +505,16 @@ public void templateInfo(object currentCell, object row)
 public void WordTemplateInfo(object currentCell, object row)
 {
   WTableCell wCell = (WTableCell)currentCell;
-  object templatevalue;
-  foreach (var ds in row.GetType().GetProperties())
+  object templates;
+  foreach (var data in row.GetType().GetProperties())
   {
      if (wCell.LastParagraph.Text.ToString().Contains(ds.Name))
      {
-        templatevalue = row.GetType().GetProperty(ds.Name).GetValue(row, null);
+        templates = row.GetType().GetProperty(data.Name).GetValue(row, null);
         var regex = new Regex("<a [^>]*href=(?:'(?<href>.*?)')|(?:\"(?<href>.*?)\")", RegexOptions.IgnoreCase);
         var urls = regex.Matches(wCell.LastParagraph.Text).OfType<Match>().Select(m => m.Groups["href"].Value).SingleOrDefault();
         wCell.LastParagraph.Text = "";
-        IWField field = wCell.LastParagraph.AppendHyperlink(urls, templatevalue.ToString(), HyperlinkType.WebLink);
+        IWField field = wCell.LastParagraph.AppendHyperlink(urls, templates.ToString(), HyperlinkType.WebLink);
      }
   }
 }
@@ -522,18 +522,18 @@ public void WordTemplateInfo(object currentCell, object row)
 public void PdfTemplateInfo(object currentCell, object row)
 {
    Syncfusion.Pdf.Grid.PdfGridCell range = (Syncfusion.Pdf.Grid.PdfGridCell)currentCell;
-   object templatevalue;
+   object templates;
    range.Value = Uri.UnescapeDataString(range.Value.ToString());
-   foreach (var ds in row.GetType().GetProperties())
+   foreach (var data in row.GetType().GetProperties())
    {
      if (range.Value.ToString().Contains(ds.Name))
      {
-       templatevalue = row.GetType().GetProperty(ds.Name).GetValue(row, null);
+       templates = row.GetType().GetProperty(data.Name).GetValue(row, null);
        var regex = new Regex("<a [^>]*href=(?:'(?<href>.*?)')|(?:\"(?<href>.*?)\")", RegexOptions.IgnoreCase);
        var urls = regex.Matches(range.Value.ToString()).OfType<Match>().Select(m => m.Groups["href"].Value).SingleOrDefault();
        RectangleF rectangle = new RectangleF(10, 40, 30, 30);
        PdfUriAnnotation uriAnnotation = new PdfUriAnnotation(rectangle, urls);
-       uriAnnotation.Text = templatevalue.ToString();
+       uriAnnotation.Text = templates.ToString();
        range.Value = uriAnnotation;
      }
    }
@@ -602,7 +602,7 @@ You can modify the detailTemplate of exporting files using server events. The co
 
 
 <script id="tabGridContents" type="text/x-jsrender">
-    <b> More Details: </b> <br /><br /> <b class='detail'>Last Name</b> - {{:LastName}} <br /> <br /> <b class='detail'>Home Phone</b> - {{:HomePhone}} <br /> <br /> <b class='detail'>Exten No</b> - {{:Extension}}
+    <b> More Details: </b> <br /><br /> <b class='detail'>Last Name</b> - {{:LastName}} <br /> <br /> <b class='detail'>Home Phone</b> - {{:HomePhone}} <br /> <br /> <b class='detail'>Ext No</b> - {{:Extension}}
   
 </script>
 
@@ -694,13 +694,13 @@ public class GridController : Controller
    public void templateInfo(object currentCell, object row)
    {
      IRange range = (IRange)currentCell;
-     object templatevalue;
-     foreach (var ds in row.GetType().GetProperties())
+     object templates;
+     foreach (var data in row.GetType().GetProperties())
      {
        if (range.Value.Contains(ds.Name))
        {
-         templatevalue = row.GetType().GetProperty(ds.Name).GetValue(row, null);
-         range.Value = range.Value.Replace(ds.Name, templatevalue.ToString());
+         templates = row.GetType().GetProperty(data.Name).GetValue(row, null);
+         range.Value = range.Value.Replace(data.Name, templatevalue.ToString());
          var charsToRemove = new string[] { '{', '}', '<b>', ':', '</b>', '<br />', 'style', '=', 'class', '</div>', '<p>', '</p>', 'detail', '<b', '>', };
          foreach (var c in charsToRemove)
          {
@@ -714,13 +714,13 @@ public class GridController : Controller
    public void WordDetailTemplateInfo(object currentCell, object row)
    {
       WTableCell wCell = (WTableCell)currentCell;
-      object templatevalue;
-      foreach (var ds in row.GetType().GetProperties())
+      object templates;
+      foreach (var data in row.GetType().GetProperties())
       {
-        if (wCell.LastParagraph.Text.ToString().Contains(ds.Name))
+        if (wCell.LastParagraph.Text.ToString().Contains(data.Name))
         {
-          templatevalue = row.GetType().GetProperty(ds.Name).GetValue(row, null);
-          wCell.LastParagraph.Text = wCell.LastParagraph.Text.ToString().Replace(ds.Name, templatevalue.ToString());
+          templates = row.GetType().GetProperty(data.Name).GetValue(row, null);
+          wCell.LastParagraph.Text = wCell.LastParagraph.Text.ToString().Replace(data.Name, templates.ToString());
           var charsToRemove = new string[] { '{', '}', '<b>', ':', '</b>', '<br />', 'style', '=', 'class', '</div>', '<p>', '</p>', 'detail', '<b', '>', };
           foreach (var c in charsToRemove)
           {
@@ -738,8 +738,8 @@ public class GridController : Controller
      {
         if (range.Value.ToString().Contains(ds.Name))
         {
-          templatevalue = row.GetType().GetProperty(ds.Name).GetValue(row, null);
-          range.Value = range.Value.ToString().Replace(ds.Name, templatevalue.ToString());
+          templatevalue = row.GetType().GetProperty(data.Name).GetValue(row, null);
+          range.Value = range.Value.ToString().Replace(data.Name, templates.ToString());
           var charsToRemove = new string[] { '{', '}', '<b>', ':', '</b>', '<br />', 'style', '=', 'class', '</div>', '<p>', '</p>', 'detail', '<b', '>', };
           foreach (var c in charsToRemove)
           {
