@@ -449,6 +449,8 @@ You can modify the columnTemplate of exporting files using server events. The co
 
 {% highlight c# %}
 
+[System.Web.Http.ActionName("TemplateExcelExport")]
+[AcceptVerbs("POST")]
 public void TemplateExcelExport(string GridModel)
 {
    ExcelExport exp = new ExcelExport();
@@ -458,6 +460,8 @@ public void TemplateExcelExport(string GridModel)
    exp.Export(obj, DataSource, "Export.xlsx", ExcelVersion.Excel2010, false, true, "flat-saffron");
 }
 
+[System.Web.Http.ActionName("TemplateWordExport")]
+[AcceptVerbs("POST")]
 public void TemplateWordExport(string GridModel)
 {
    WordExport exp = new WordExport();
@@ -466,6 +470,9 @@ public void TemplateWordExport(string GridModel)
    obj.WordColumnTemplateInfo = WordTemplateInfo;
    exp.Export(obj, DataSource, "Export.docx", false, true, "flat-saffron");
 }
+
+[System.Web.Http.ActionName("TemplatePdfExport")]
+[AcceptVerbs("POST")]
 public void TemplatePdfExport(string GridModel)
 {
   PdfExport exp = new PdfExport();
@@ -474,6 +481,7 @@ public void TemplatePdfExport(string GridModel)
   obj.PdfColumnTemplateInfo = PdfTemplateInfo;
   exp.Export(obj, DataSource, "Export.pdf", false, true, "flat-saffron");
 }
+
 public void templateInfo(object currentCell, object row)
 {
   IRange range = (IRange)currentCell;
@@ -493,6 +501,7 @@ public void templateInfo(object currentCell, object row)
      }
   }
 }
+
 public void WordTemplateInfo(object currentCell, object row)
 {
   WTableCell wCell = (WTableCell)currentCell;
@@ -645,6 +654,9 @@ public class GridController : Controller
        ViewBag.dataSource = DataSource;
        return View();
     }
+    
+   [System.Web.Http.ActionName("ExportToExcel")]
+   [AcceptVerbs("POST")]
    public void ExportToExcel(string GridModel)
    {
      ExcelExport exp = new ExcelExport();
@@ -654,6 +666,9 @@ public class GridController : Controller
      obj.ExcelDetailTemplateInfo = templateInfo;
      exp.Export(obj, DataSource, exp2);
    }
+   
+   [System.Web.Http.ActionName("ExportToWord")]
+   [AcceptVerbs("POST")]
    public void ExportToWord(string GridModel)
    {
      WordExport exp = new WordExport();
@@ -663,6 +678,9 @@ public class GridController : Controller
      GridWordExport exp1 = new GridWordExport() { IncludeDetailRow = true, IsTemplateColumnIncluded = false, IsHideColumnIncude = false, Theme = "flat-saffron", FileName = "Export.docx" };
      exp.Export(obj, DataSource, exp1);
    }
+   
+   [System.Web.Http.ActionName("ExportToPDF")]
+   [AcceptVerbs("POST")]
    public void ExportToPDF(string GridModel)
    {
      PdfExport exp = new PdfExport();
@@ -672,6 +690,7 @@ public class GridController : Controller
      GridPdfExport exp3 = new GridPdfExport() { IncludeDetailRow = true, IsTemplateColumnIncluded = false, IsHideColumnIncude = false, Theme = "flat-saffron", FileName = "Export.pdf" };
      exp.Export(obj, DataSource, exp3);
    }
+   
    public void templateInfo(object currentCell, object row)
    {
      IRange range = (IRange)currentCell;
@@ -691,6 +710,7 @@ public class GridController : Controller
        }
      }
    }
+   
    public void WordDetailTemplateInfo(object currentCell, object row)
    {
       WTableCell wCell = (WTableCell)currentCell;
@@ -709,6 +729,7 @@ public class GridController : Controller
         }
       }
    }
+   
    public void PdfDetailTemplateInfo(object currentCell, object row)
    {
      Syncfusion.Pdf.Grid.PdfGridCell range = (Syncfusion.Pdf.Grid.PdfGridCell)currentCell;
@@ -726,7 +747,8 @@ public class GridController : Controller
           }
         }
       }
-   }
+  }
+   
   private GridProperties ConvertGridObject(string gridProperty)
   {
     JavaScriptSerializer serializer = new JavaScriptSerializer();
