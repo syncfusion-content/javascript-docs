@@ -10,7 +10,7 @@ api: /api/js/ejaccordion
 
 # View multiple contents
 
-By default **Accordion** allows only one panel to be in expanded state. You can enable multiple panels in expand state by setting **enableMultipleOpen** to **true.**
+By default **Accordion** allows only one panel to be in expanded state. You can enable multiple panels in expand state by setting [enableMultipleOpen](https://help.syncfusion.com/api/js/ejaccordion#members:enablemultipleopen) to **true.**
 
 ## Enabling multiple panel open
 

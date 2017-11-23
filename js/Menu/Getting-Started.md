@@ -80,7 +80,7 @@ Output of the above steps.
 
 ## Configure parent Menu items
 
-Every **Menu** has a list of **Menu** items with list of sub level **Menu** items. From the following guidelines, you can learn how to initialize the root level elements of **Menu** control with Local data source value.  Initialize the **Menu** with data source value as illustrated in the following code example. 
+Every **Menu** has a list of **Menu** items with list of sub level **Menu** items. From the following guidelines, you can learn how to initialize the root level elements of **Menu** control with Local data source value.  Initialize the **Menu** with data source value using [fields](https://help.syncfusion.com/api/js/ejmenu#members:fields) property as illustrated in the following code example. 
 
 {% highlight javascript %}
 

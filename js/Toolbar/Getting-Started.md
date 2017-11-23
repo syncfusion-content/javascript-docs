@@ -397,7 +397,7 @@ After updating the Toolbar items with their **CSS** styles, you can render the t
 
 
 
-Execute the code to render a **toolbar items** with separator.
+Execute the code to render a **toolbar items** with separator using [enableSeperator](https://help.syncfusion.com/api/js/ejtoolbar#members:enableseparator)
 
 
 
@@ -479,7 +479,7 @@ Execute the given code to render a **PDF reader** as follows.
 
 
 
-So far, you have added the required toolbar items and configured its appearance. When you click on **toolbar items**, the operation is performed through **client slide click event**. The following code example explains how to perform operations when you click on the **toolbar items**.
+So far, you have added the required toolbar items and configured its appearance. When you click on **toolbar items**, the operation is performed through **client slide** [click](https://help.syncfusion.com/api/js/ejtoolbar#events:click) **event**. The following code example explains how to perform operations when you click on the **toolbar items**.
 
 {% highlight javascript %}
 

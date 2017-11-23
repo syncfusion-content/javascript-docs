@@ -19,7 +19,7 @@ The following section explains you on how to set orientation for the toolbar.
 
 ## Horizontal
 
-This property sets the **Toolbar** in **horizontal** orientation. You can refer the following steps to set horizontal orientation for **Toolbar** control.
+[Orientation](https://help.syncfusion.com/api/js/ejtoolbar#members:orientation) property sets the **Toolbar** in **horizontal** orientation. You can refer the following steps to set horizontal orientation for **Toolbar** control.
 
 In View, create UL-LI list of toolbar items and invoke the toolbar helper.
 
@@ -53,7 +53,7 @@ The following screenshot illustrates a **Toolbar** with horizontal orientation.
 
 ## Vertical
 
-This property sets the **Toolbar** in **vertical** orientation. You can refer the following steps to set vertical orientation for **Toolbar** control.
+[Orientation](https://help.syncfusion.com/api/js/ejtoolbar#members:orientation) property sets the **Toolbar** in **vertical** orientation. You can refer the following steps to set vertical orientation for **Toolbar** control.
 
 Create UL-LI list of toolbar items and invoke the toolbar helper.
 

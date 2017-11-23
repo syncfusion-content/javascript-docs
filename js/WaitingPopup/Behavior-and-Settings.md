@@ -12,7 +12,7 @@ api: /api/js/ejwaitingpopup
 
 ## Automatic Initializing WaitingPopup widget
 
-**WaitingPopup** widget contains **showOnInit** property that allows the popup to display over a target on page load automatically. By default, **showOnInit** property is set as false.
+**WaitingPopup** widget contains [showOnInit](https://help.syncfusion.com/api/js/ejwaitingpopup#members:showoninit) property that allows the popup to display over a target on page load automatically. By default, **showOnInit** property is set as false.
 
 The following steps explains you on how to display the **WaitingPopup** on page load.
 
@@ -59,7 +59,8 @@ The following screenshot illustrates the **WaitingPopup** when **showOnInit** is
 
 ## Enable / Disable Popup Indicator
 
-You can show or hide the popup indicator of **WaitingPopup** widget using **showImage** property. By default, **showImage** property is set as **true**.
+You can show or hide the popup indicator of **WaitingPopup** widget using **showImage** property. By default, [showImage](https://help.syncfusion.com/api/js/ejwaitingpopup#members:showimage) property is set as **true**.
+You can set the text using [text](https://help.syncfusion.com/api/js/ejwaitingpopup#members:text) property.
 
 The following steps explains you to enable / disable popup indicator in **WaitingPopup** widget.
 
@@ -122,7 +123,7 @@ Execute the above code to render the following output.
 
 ## Show / Hide WaitingPopup
 
-Using **show()** and **hide()** methods, you can display or hide the **WaitingPopup** widget over the target area.
+Using [show()](https://help.syncfusion.com/api/js/ejwaitingpopup#methods:show) and [hide()](https://help.syncfusion.com/api/js/ejwaitingpopup#methods:hide) methods, you can display or hide the **WaitingPopup** widget over the target area.
 
 The following steps explains you to show / hide the **WaitingPopup** widget.
 

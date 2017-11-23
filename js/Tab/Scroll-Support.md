@@ -12,7 +12,7 @@ api: /api/js/ejtab
 
 **Tab** control provides you scrolling support on Tab items to display a larger number of tabs with scroll buttons to get rid of the extending page size. The enabled Scroll buttons can be used to traverse through the elements.
 
-By default, **Tab** header is rendered without scroll button. You can add the scroll button by setting the "**enableTabScroll**" property to "**true**". When you move the cursor over the **Tab** header the scroll button is displayed.   
+By default, **Tab** header is rendered without scroll button. You can add the scroll button by setting the [enableTabScroll](https://help.syncfusion.com/api/js/ejtab#members:enabletabscroll) property to "**true**". When you move the cursor over the **Tab** header the scroll button is displayed.   
 
 
 

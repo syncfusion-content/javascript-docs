@@ -45,7 +45,7 @@ N> the selection highlight is invisible if the editor does not have focus. So, i
 
 ## Select a Range 
 
-You can programmatically select a range of content in the editor using the selectRange method.  To select a range, create a range object with desired offset position and pass it as arguments to selectRange method. The range object is created from createRange method. 
+You can programmatically select a range of content in the editor using the [selectRange](https://help.syncfusion.com/api/js/ejrte#methods:selectRange) method.  To select a range, create a range object with desired offset position and pass it as arguments to selectRange method. The range object is created from [createRange](https://help.syncfusion.com/api/js/ejrte#methods:createRange) method. 
 
 {% highlight html %}
 

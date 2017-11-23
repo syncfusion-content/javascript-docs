@@ -75,7 +75,7 @@ By default you can add any text or image to the Tooltip. To customize the toolti
 
 ### Tooltip’s title customization
 
-Tooltip title can be customized with the image or any HTML element. 
+Tooltip title using [title](https://help.syncfusion.com/api/js/ejtooltip#members:title) can be customized with the image or any HTML element. 
 
 {% highlight html %}
     
@@ -116,7 +116,7 @@ Tooltip title can be customized with the image or any HTML element.
 
 Determines the type of effect that takes place when showing/hiding the tooltip.
 
-We can specify the effect and the duration for the animation. 
+We can specify the effect and the duration for the animation using [animation](https://help.syncfusion.com/api/js/ejtooltip#members:animation) property. 
 
 <table>
 <tr>
@@ -231,7 +231,7 @@ It's easy to update a tooltip’s content – whether it’s open or closed.
 
 ## Closing Mode
 
-By default, the Tooltip will be hidden when mouse leaves the target element. Different types of close mode as follows 
+By default, the Tooltip will be hidden when mouse leaves the target element. Different types of [close mode](https://help.syncfusion.com/api/js/ejtooltip#members:closemode) as follows 
 
 <table>
 <tr>

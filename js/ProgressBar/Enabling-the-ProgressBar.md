@@ -10,7 +10,7 @@ api: /api/js/ejprogressbar
 
 # Enabling the ProgressBar
 
-The ProgressBar is enabled by using the ‘**enabled**’ Property. When this property is set to ‘**false**’, it disables the ProgressBar widget. By default, ‘**enabled**’ property is set to ‘**true**’ in the ProgressBar widget.
+The ProgressBar is enabled by using the [enabled](https://help.syncfusion.com/api/js/ejprogressbar#members:enabled) Property. When this property is set to ‘**false**’, it disables the ProgressBar widget. By default, ‘**enabled**’ property is set to ‘**true**’ in the ProgressBar widget.
 
 The following steps explain how to disable the ProgressBar widget when ‘**enabled**’ property is set to ‘**false**’.
 

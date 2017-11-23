@@ -9,7 +9,7 @@ api: /api/js/ejgrid
 ---
 # Responsive
 
-The grid control has support for responsive behavior based on client browser's width and height. To enable responsive, [`isResponsive`](https://help.syncfusion.com/api/js/ejgrid#members:isresponsive "isResponsive") property should be true. There are three modes of responsive layout is available in grid based on client width. They are.
+The grid control has support for the responsive behavior based on client browser's width and height. To enable responsive, [`isResponsive`](https://help.syncfusion.com/api/js/ejgrid#members:isresponsive "isResponsive") property should be set as true. There are three modes of responsive layout is available in grid based on client width. They are.
 
 * Mobile(<321px)
 * Tablet (321px to 800px)
@@ -68,7 +68,7 @@ W> IE8 and IE9 does not support responsive row. `ejgrid.responsive.css` should b
 
 ### Customized Features
 
-The customized layout for filtering, sorting, searching and CRUD operations in mobile device can be seen following screen shots.
+The customized layout for filtering, sorting, searching and CRUD operations in mobile device can be seen in the following screen shots.
 
 ![](Responsive_images/Responsive_img2.png)
 {:caption}
@@ -139,7 +139,7 @@ $("#Grid").ejGrid({
 
 ## Tablet Layout
 
-If the client width is between 321px and 800px, then the grid will render in tablet mode. Also it has customized filtering design to match tablet screen size.
+If the client width is between 321px and 800px, then the grid will render in tablet mode. Also, it has customized filtering design to match tablet screen size.
 
 {% highlight html %}
 <div id="Grid"></div>
@@ -241,11 +241,11 @@ $("#Grid").ejGrid({
 
 MinWidth set to Grid
 
-N> We can render the Grid with height responsive by setting the scrollSettings `height`as `100%`. If the grid height is greater than its parent container's height then the vertical scrollbar will be displayed to view the content.
+N> We can render the Grid to be height responsive by setting the scrollSettings `height` as `100%`. If the grid height is greater than its parent container's height then the vertical scrollbar will be displayed to view the content.
 
 ## Priority for Columns
 
-Priority makes column to be visible or hidden based on the `priority` value and browser's width to best accommodate the possible columns. To enable `priority` for `columns`, `priority` needs to be defined in columns collection. These Priority values are from one to six.
+Priority makes column to be visible or hidden based on the `priority` value and browser's width, to accommodate the best possible columns. To enable `priority` for `columns`, `priority` needs to be defined in columns collection. These Priority values are from one to six.
 
 {% highlight html %}
 <div id="Grid"></div>

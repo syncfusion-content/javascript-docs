@@ -89,7 +89,7 @@ Header Image Customization
 
 ## Rounded corner
 
-By enabling ‘**showRoundedCorner’** property, you can customize the shape of the **Tab** widget from regular rectangular shape to rounded rectangle shape that is set to ‘**false**’ by default. 
+By enabling [showRoundedCorner](https://help.syncfusion.com/api/js/ejtab#members:enablepersistence) property, you can customize the shape of the **Tab** widget from regular rectangular shape to rounded rectangle shape that is set to ‘**false**’ by default. 
 
 The following code example is used to render the **Tab** widget with **Rounded Corner**.
 
@@ -132,7 +132,7 @@ The following screenshot illustrates the **Tab** with Rounded corner.
 
 ## Enable/Disable
 
-You can enable or disable the **Tab** widget by ‘**enabled’** property. By default, the property set to ‘**true**’**.**
+You can enable or disable the **Tab** widget by [enabled](https://help.syncfusion.com/api/js/ejtab#members:enabled) property. By default, the property set to ‘**true**’**.**
 
 The following code example is used to render the **Tab** widget with enable/disable.
 
@@ -176,7 +176,7 @@ The following screenshot illustrates the **Tab** with disabled format.
 
 ## Enabling Reload Icon
  
-Without refresh/reload the whole page, you can reload a particular **Tab** using **Reload** icon. The **Reload** icon is appeared at right corner of the **Tab** by enabling the property ‘**showReloadIcon**’ to ‘**true**’. When you move cursor over the **Tab** headers, the **Reload** icon is displayed. By default the property value is set to ‘**false**’.   
+Without refresh/reload the whole page, you can reload a particular **Tab** using **Reload** icon. The **Reload** icon is appeared at right corner of the **Tab** by enabling the property [showReloadIcon](https://help.syncfusion.com/api/js/ejtab#members:showreloadicon) to ‘**true**’. When you move cursor over the **Tab** headers, the **Reload** icon is displayed. By default the property value is set to ‘**false**’.   
 
 The following code example is used to render the **Tab** widget with **Reload** icon.
 
@@ -219,7 +219,7 @@ The following screenshot illustrates the **Tab** with **Reload** icon.
 
 ## Collapsible Tabs
 
-You can collapse the **Tab** content by enabling the ‘**collapsible’** property to ‘**true**’. When the property is set to ‘**true**’ then click the active **Tab** header, the **Tab** contents are hided. By default, the property value is set to ‘**false**’.
+You can collapse the **Tab** content by enabling the [collapsible](https://help.syncfusion.com/api/js/ejtab#members:collapsible) property to ‘**true**’. When the property is set to ‘**true**’ then click the active **Tab** header, the **Tab** contents are hided. By default, the property value is set to ‘**false**’.
 
 The following code example is used to render the **Tab** widget with customized collapsible mode.
 
@@ -265,7 +265,7 @@ The following screenshot illustrates the **Tab** with customized collapsible mod
 
 ### Height Adjust Mode and Height
 
-The height of the **Tab** widget is customized by ‘**height**’ property. The **Tab** widget height depends on ‘**heightAdjustMode**’ property. Using the **heightAdjustMode** property, you can adjust height by “**content**”, “**auto**”, “**fill**”. By default the **heightAdjustMode** is set as **content**.
+The height of the **Tab** widget is customized by [height](https://help.syncfusion.com/api/js/ejtab#members:height) property. The **Tab** widget height depends on [heightAdjustMode](https://help.syncfusion.com/api/js/ejtab#members:heightadjustmode) property. Using the **heightAdjustMode** property, you can adjust height by “**content**”, “**auto**”, “**fill**”. By default the **heightAdjustMode** is set as **content**.
 
 The following code example is used to render the **Tab** widget with customized height and height adjust mode.
 
@@ -312,7 +312,7 @@ The following screenshot illustrates the **Tab** with customized height and heig
 
 ### Width
 
-The **width** of the **Tab** widget is customized by using ‘**width**’ property that accepts only the pixel values.
+The **width** of the **Tab** widget is customized by using [width](https://help.syncfusion.com/api/js/ejtab#members:width) property that accepts only the pixel values.
 
 The following code example is used to render the **Tab** widget with customized width.
 
@@ -376,7 +376,7 @@ By default, there are 13 themes support available for **Tab** control namely
 
 ## Custom styles
 
-The style of the **Tab** widget is customized by ‘**cssClass**’ property. 
+The style of the **Tab** widget is customized by [cssClass](https://help.syncfusion.com/api/js/ejtab#members:cssclass) property. 
 
 The following code example is used to render the **Tab** widget with customized style.
 

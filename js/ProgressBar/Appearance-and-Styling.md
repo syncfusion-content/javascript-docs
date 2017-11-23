@@ -103,7 +103,7 @@ By default, there are 12 themes’ support available for the **ProgressBar** wid
 
 ## CSS class
 
-To apply custom styles to the ProgressBar widget, you can specify the **cssClass** property. The specified **CSS** name is added in the root of the **ProgressBar** widget.
+To apply custom styles to the ProgressBar widget, you can specify the [cssClass](https://help.syncfusion.com/api/js/ejprogressbar#members:cssclass) property. The specified **CSS** name is added in the root of the **ProgressBar** widget.
 
 The following code example is used to render the ProgressBar widget with customized style.
 

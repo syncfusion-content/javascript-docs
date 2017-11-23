@@ -14,7 +14,7 @@ The following are some miscellaneous properties that enables you to change the b
 
 ## Enabling Toolbar
 
-The **Toolbar** property **enabled** is used to enable or disable the **Toolbar**. Set the value to this property as **Boolean** type.
+The **Toolbar** property [enabled](https://help.syncfusion.com/api/js/ejtoolbar#members:enabled) is used to enable or disable the **Toolbar**. Set the value to this property as **Boolean** type.
 
 {% highlight html %}
 
@@ -118,7 +118,7 @@ The **Toolbar** property **enabled** is used to enable or disable the **Toolbar*
 
 ## Hiding Toolbar 
 
-The **Toolbar** property **hide** is used to show or hide the **Toolbar**. Set the value to this property as **Boolean** type.
+The **Toolbar** property [hide](https://help.syncfusion.com/api/js/ejtoolbar#members:hide) is used to show or hide the **Toolbar**. Set the value to this property as **Boolean** type.
 
 
 {% highlight javascript %}
@@ -136,7 +136,7 @@ We can enable or disable a separate toolbar item by using the following methods.
 
 ### Disable Item
 
-The **Toolbar** method **disableItem** and **disableItemByID** can be used to disable separate toolbar item. In the below code we have disabled the third toolbar item by using these two methods
+The **Toolbar** method [disableItem](https://help.syncfusion.com/api/js/ejtoolbar#methods:disableitem) and [disableItemByID](https://help.syncfusion.com/api/js/ejtoolbar#methods:disableitembyid) can be used to disable separate toolbar item. In the below code we have disabled the third toolbar item by using these two methods
 
 {% highlight html %}
 
@@ -189,7 +189,7 @@ OR
 
 ### Enable Item
 
-The **Toolbar** method **enableItem** and **enableItemByID** can be used to enable separate toolbar item. In the below code we have disabled the first five items initially and enabled the third toolbar item by using these two methods
+The **Toolbar** method [enableItem](https://help.syncfusion.com/api/js/ejtoolbar#methods:enableitem) and [enableItemByID](https://help.syncfusion.com/api/js/ejtoolbar#methods:enableitembyid) can be used to enable separate toolbar item. In the below code we have disabled the first five items initially and enabled the third toolbar item by using these two methods
 
 {% highlight html %}
 
