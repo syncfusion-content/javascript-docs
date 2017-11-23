@@ -682,7 +682,7 @@ public class GridController : Controller
        {
          templatevalue = row.GetType().GetProperty(ds.Name).GetValue(row, null);
          range.Value = range.Value.Replace(ds.Name, templatevalue.ToString());
-         var charsToRemove = new string[] { "{", "}", "<b>", ":", "</b>", "<br />", "style", "=", "class", "</div>", "<p>", "</p>", "detail", "<b", "'", ">", };
+         var charsToRemove = new string[] { '{', '}', '<b>', ':', '</b>', '<br />', 'style', '=', 'class', '</div>', '<p>', '</p>', 'detail', '<b', '>', };
          foreach (var c in charsToRemove)
          {
             range.Value = range.Value.ToString().Replace(c, string.Empty);
@@ -701,7 +701,7 @@ public class GridController : Controller
         {
           templatevalue = row.GetType().GetProperty(ds.Name).GetValue(row, null);
           wCell.LastParagraph.Text = wCell.LastParagraph.Text.ToString().Replace(ds.Name, templatevalue.ToString());
-          var charsToRemove = new string[] { "{", "}", "<b>", ":", "</b>", "<br />", "style", "=", "class", "</div>", "<p>", "</p>", "detail", "<b", "'", ">", };
+          var charsToRemove = new string[] { '{', '}', '<b>', ':', '</b>', '<br />', 'style', '=', 'class', '</div>', '<p>', '</p>', 'detail', '<b', '>', };
           foreach (var c in charsToRemove)
           {
              wCell.LastParagraph.Text  = wCell.LastParagraph.Text.ToString().Replace(c, string.Empty);
@@ -719,7 +719,7 @@ public class GridController : Controller
         {
           templatevalue = row.GetType().GetProperty(ds.Name).GetValue(row, null);
           range.Value = range.Value.ToString().Replace(ds.Name, templatevalue.ToString());
-          var charsToRemove = new string[] { "{", "}", "<b>", ":", "</b>", "<br />", "style", "=", "class", "</div>", "<p>", "</p>", "detail", "<b", "'", ">", };
+          var charsToRemove = new string[] { '{', '}', '<b>', ':', '</b>', '<br />', 'style', '=', 'class', '</div>', '<p>', '</p>', 'detail', '<b', '>', };
           foreach (var c in charsToRemove)
           {
              range.Value = range.Value.ToString().Replace(c, string.Empty);
