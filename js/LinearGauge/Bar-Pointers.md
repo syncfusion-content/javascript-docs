@@ -10,7 +10,7 @@ api: /api/js/ejlineargauge
 
 # Bar Pointers
 
-**Bar Pointer** value points out the actual value set in the **Linear Gauge** as marker pointer. You can set the values of the various bar pointer attributes such as value, width, border and color in bar pointer collection.  You can also customize the pointers to improve the appearance of gauge.
+**Bar Pointer** value points out the actual value set in the **Linear Gauge** as marker pointer. You can set the values of the various bar pointer attributes such as [`value`](../api/ejlineargauge#members:scales-barpointers-value), [`width`](../api/ejlineargauge#members:scales-barpointers-width), border and color in bar pointer collection. You can also customize the pointers to improve the appearance of gauge.
 
 ## Adding bar pointer collection
 
@@ -66,7 +66,7 @@ Execute the above code to render the following output.
 
 ## Adding bar pointer value
 
-Bar pointer value is also important element in the **Linear Gauge** as it indicates the gauge value. Real purpose of the **Linear Gauge** is based on the pointer value. You can set the bar pointer value either directly during rendering the control or it can be achieved by public method.
+Bar pointer value is also important element in the **Linear Gauge** as it indicates the gauge value. Real purpose of the **Linear Gauge** is based on the pointer value. You can set the bar pointer [`value`](../api/ejlineargauge#members:scales-barpointers-value) either directly during rendering the control or it can be achieved by public method.
 
 
 
@@ -125,9 +125,9 @@ Execute the above code to render the following output.
 
 **Appearance**
 
-* Based on the value, the bar pointer points out the label value. You can set the bar pointer width using **width** property and you can also adjust the opacity of the pointer using **opacity** property that holds the value between 0 and 1. You can add the gradient effects to the pointer using **gradient** object. 
+* Based on the value, the bar pointer points out the label value. You can set the bar pointer width using [`width`](../api/ejlineargauge#members:scales-barpointers-width) property and you can also adjust the opacity of the pointer using [`opacity`](../api/ejlineargauge#members:scales-barpointers-opacity) property that holds the value between 0 and 1. You can add the gradient effects to the pointer using [`gradient`](../api/ejlineargauge#members:scales-barpointers-gradients) object. 
 
-* The marker pointer border is modified with the object **border**. It has two border property, **color** and **width** which are used to customize the border color of the scale and border width of the marker pointer. The background color can be customized with attribute **backgroundColor**.
+* The marker pointer border is modified with the object **border**. It has two border property, [`color`](../api/ejlineargauge#members:scales-barpointers-border-color) and [`width`](../api/ejlineargauge#members:scales-barpointers-border-width) which are used to customize the border color of the scale and border width of the marker pointer. The background color can be customized with attribute [`backgroundColor`](../api/ejlineargauge#members:scales-barpointers-backgroundcolor).
 
 
 {% highlight html %}
@@ -186,9 +186,9 @@ Execute the above code to render the following output.
 
 ## Positioning the pointer	
 
-* Bar pointer can be positioned with two properties such as **distanceFromScale** and **placement**. The **distanceFromScale** property defines the distance between the scale and pointer element. 
+* Bar pointer can be positioned with two properties such as **distanceFromScale** and **placement**. The [`distanceFromScale`](../api/ejlineargauge#members:scales-barpointers-distancefromscale) property defines the distance between the scale and pointer element. 
 
-* The **placement** property is used to locate the pointer with respect to scale either inside or outside the scale or along the scale. It is an enumerable data type.
+* The placement property is used to locate the pointer with respect to scale either inside or outside the scale or along the scale. It is an enumerable data type.
 
 
 {% highlight html %}

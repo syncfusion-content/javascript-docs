@@ -10,11 +10,11 @@ api: /api/js/ejcirculargauge
 
 # Tooltip
 
-**Tooltip** feature has been added to the **Circular Gauge**. **Circular Gauge** has several elements such as pointers, label, customLabel, scales, etc. There is a need for **Tooltip** feature in the **Circular Gauge** control because whenever the text hides or overrides with other gauge elements, it may not be fully visible. For resolving those problems **Tooltip** feature has been implemented in the **Circular Gauge** control.
+**Tooltip** feature has been added to the **Circular Gauge**. **Circular Gauge** has several elements such as pointers, label, customLabel, scales, etc. There is a need for **Tooltip** feature in the **Circular Gauge** control because whenever the text hides or overrides with other gauge elements, it may not be fully visible. For resolving those problems [`tooltip`](../api/ejcirculargauge#members:tooltip) feature has been implemented in the **Circular Gauge** control.
 
 ## Default Tooltip
 
-**Tooltip** has three attributes in it. The first two attributes such as **showLabelTooltip** and **showCustomLabelTooltip** are for enabling the **Tooltip** for label as well as custom label in default appearance. 
+**Tooltip** has three attributes in it. The first two attributes such as [`showLabelTooltip`](../api/ejcirculargauge#members:tooltip-showlabeltooltip) and [`showCustomLabelTooltip`](../api/ejcirculargauge#members:tooltip-showcustomlabeltooltip) are for enabling the **Tooltip** for label as well as custom label in default appearance. 
 
 **ShowLabelTooltip** is to enable the **Tooltip** for labels and **showCustomLabelTooltip** is for enabling the **Tooltip** option for customLabels.
 
@@ -68,7 +68,7 @@ Execute the above code to render the following output.
 
 ## Tooltip Template
 
-In **Tooltip** option, you can customize the Tooltip window by adding the tooltip template on that page with the help of API **TemplateID**. Refer to the following code example to know more about Tooltip template.
+In **Tooltip** option, you can customize the Tooltip window by adding the tooltip template on that page with the help of API [`templateID`](../api/ejcirculargauge#members:tooltip-templateid). Refer to the following code example to know more about Tooltip template.
 
 {% highlight html %}
 

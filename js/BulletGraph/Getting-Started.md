@@ -87,9 +87,9 @@ In the following screenshot, a **BulletGraph** is used to compare the actual mon
 
 **Provide Required Data**
 
-You can customize the values of feature and comparative measure bars in a **BulletGraph**, either locally or remotely. The category data is optional, and is used to display label values in parallel to the measure bars. 
+You can customize the values of feature and comparative measure bars in a **BulletGraph**, either locally or remotely. The [`category`](../api/ejbulletgraph#members:quantitativescalesettings-fields-category) data is optional, and is used to display label values in parallel to the measure bars. 
 
-Assign the data in **localData** variable to the **dataSource** property of **BulletGraph** as shown in the following code example.
+Assign the data in **localData** variable to the [`dataSource`](../api/ejbulletgraph#members:quantitativescalesettings-fields-datasource) property of **BulletGraph** as shown in the following code example.
 
 {% highlight javascript %}
 
@@ -215,7 +215,7 @@ Assign the data in **localData** variable to the **dataSource** property of **Bu
 
 
 
-Once the **dataSource** property is assigned with the required values, you can bind the variable names used in the **JSON** data to the corresponding fields of the **BulletGraph** as shown in the following code sample.
+Once the **dataSource** property is assigned with the required values, you can bind the variable names used in the **JSON** data to the corresponding fields of the **BulletGraph** such as [`category`](../api/ejbulletgraph#members:quantitativescalesettings-fields-category), [`feature measures`](../api/ejbulletgraph#members:quantitativescalesettings-fields-featuremeasures), [`comparative measure`](../api/ejbulletgraph#members:quantitativescalesettings-fields-comparativemeasure) shown in below code example.
 
 {% highlight javascript %}
 
@@ -235,11 +235,11 @@ Once the **dataSource** property is assigned with the required values, you can b
 
 **Set Default and Scale Values**
 
-You can plot more number of measure bars within the **BulletGraph**, the height and width of the control should be increased to locate all the measure bars within the graph.The **qualitativeRangeSize** and **quantitativeScaleLength** property needs to be set accordingly as shown in the following code example.
+You can plot more number of measure bars within the **BulletGraph**, the [`height`](../api/ejbulletgraph#members:height) and [`width`](../api/ejbulletgraph#members:width) of the control should be increased to locate all the measure bars within the graph.The [`qualitative range size`](../api/ejbulletgraph#members:qualitativerangesize) and [`quantitative scale length`](../api/ejbulletgraph#members:quantitativescalelength) property needs to be set accordingly as shown in the following code example.
 
-By default, the **BulletGraph** is rendered in the Horizontal orientation with its flow direction set to **Forward.** In this example,to achieve the desired output, horizontal orientation should be changed to **Vertical** orientation with the flow direction set to **Backward**.
+By default, the **BulletGraph** is rendered in the Horizontal [`orientation`](../api/ejbulletgraph#members:orientation) with its [`flow direction`](../api/ejbulletgraph#members:flowdirection) set to **Forward.** In this example,to achieve the desired output, horizontal orientation should be changed to **Vertical** orientation with the flow direction set to **Backward**.
 
-**Minimum**, **maximum** and **interval** values for the **quantitativeScale** of the **bullet graph** should be set, as shown in the following code example. The ticks and labels within the scale also need to be positioned.
+[`Minimum`](../api/ejbulletgraph#members:   -minimum), [`maximum`](../api/ejbulletgraph#members:quantitativescalesettings-maximum) and [`interval`](../api/ejbulletgraph#members:quantitativescalesettings-interval) values for the [`quantitative scale`](../api/ejbulletgraph#members:quantitativescalesettings) of the **bullet graph** should be set, as shown in the following code example. The [`ticks`](../api/ejbulletgraph#members:quantitativescalesettings-tickposition) and [`labels`](../api/ejbulletgraph#members:quantitativescalesettings-labelsettings-position) within the scale also need to be positioned.
 
 {% highlight javascript %}
 
@@ -276,11 +276,11 @@ By default, the **BulletGraph** is rendered in the Horizontal orientation with i
 
 ![](/js/BulletGraph/Getting-Started_images/Getting-Started_img3.png) 
 
-As you can see in the image above, the bullet graph without any ranges is displayed in the background. The steps to add the **qualitativeRanges** are described in the next section.
+As you can see in the image above, the bullet graph without any ranges is displayed in the background. The steps to add the [`qualitativeRanges`](../api/ejbulletgraph#members:qualitativeranges) are described in the next section.
 
 **Add Qualitative Ranges**
 
-By default, 3 ranges are displayed in the **BulletGraph** control during the initial rendering of the control with its default values. In order to customize it, you need to set appropriate values for the **rangeEnd** and its **rangeStroke** properties.  Any number of **qualitativeRanges** can be added to the control. 
+By default, 3 ranges are displayed in the **BulletGraph** control during the initial rendering of the control with its default values. In order to customize it, you need to set appropriate values for the [`range end`](../api/ejbulletgraph#members:qualitativeranges-rangeend),[`range opacity`](../api/ejbulletgraph#members:qualitativeranges-rangeopacity) and its [`rangeStroke`](../api/ejbulletgraph#members:qualitativeranges:rangestroke) properties.  Any number of [`qualitative ranges`](../api/ejbulletgraph#members:qualitativeranges) can be added to the control. 
 
 {% highlight javascript %}
 
@@ -332,7 +332,7 @@ After adding **qualitativeRanges** to the **BulletGraph**, the control will be r
 
 **Ticks and Measure Bars Customization**
 
-You have to do the following code changes in the quantitative scale in order to customize the tick size, the colors of the feature bar and comparative measure symbols. 
+You have to do the following code changes in the quantitative scale in order to customize the tick size, the colors of the [`feature bar`](../api/ejbulletgraph#members:quantitativescalesettings-featuredmeasuresettings) and [`comparative measure symbols`](../api/ejbulletgraph#members:quantitativescalesettings-comparativemeasuresettings). 
 
 {% highlight javascript %}
 
@@ -388,7 +388,7 @@ When customization of ticks and measure bars is done, **BulletGraph** looks as f
 
 **Add Caption and Subtitle**
 
-You can display an appropriate Caption and Subtitle in the **BulletGraph** by adding the following code example.
+You can display an appropriate [`Caption`](../api/ejbulletgraph#members:captionsettings) and [`Subtitle`](../api/ejbulletgraph#members:captionsettings-subtitle) in the **BulletGraph** by adding the following code example.
 
 {% highlight javascript %}
 
@@ -455,7 +455,7 @@ The following screenshot displays a **BulletGraph** in the caption and title in 
 
 **Show Tooltip**
 
-You can use a Tooltip in your application to display any information. In this example, a tooltip is used to show the values (in millimeter) of forecasted rainfall, actual rainfall received in (mm) and also the appropriate year. The tooltip is enabled by setting the **visible** property in tooltip to **True.** Also, in order to set the template tooltip, you can pass the template id to it as shown in the following code example.
+You can use a [`Tooltip`](../api/ejbulletgraph#members:tooltipsettings) in your application to display any information. In this example, a tooltip is used to show the values (in millimeter) of forecasted rainfall, actual rainfall received in (mm) and also the appropriate year. The tooltip is enabled by setting the [`visible`](../api/ejbulletgraph#members:tooltipsettings-visible) property in tooltip to **True.** Also, in order to set the [`template tooltip`](../api/ejbulletgraph#members:tooltipsettings-template), you can pass the template id to it as shown in the following code example.
 
 {% highlight javascript %}
 

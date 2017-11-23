@@ -81,7 +81,7 @@ Execute the above code to render the following output.
 
 **Appearance**
 
-The major attributes for ranges are **startValue** and **endValue**. The **startValue** defines the start position of the range and **endValue** defines the end position of the range. The **startWidth** and **endWidth** are used to specify the range width at the starting and ending position of the ranges.
+The major attributes for ranges are **startValue** and **endValue**. The [`startValue`](../api/ejlineargauge#members:scales-ranges-startvalue) defines the start position of the range and [`endValue`](../api/ejlineargauge#members:scales-ranges-endvalue) defines the end position of the range. The [`startWidth`](../api/ejlineargauge#members:scales-ranges-startwidth) and [`endWidth`](../api/ejlineargauge#members:scales-ranges-endwidth) are used to specify the range width at the starting and ending position of the ranges.
 
 
 {% highlight html %}
@@ -150,9 +150,9 @@ Execute the above code to render the following output.
 
 ## Colors and Border
 
-* You can customize the ranges to improve the appearance of the **Gauge**. The range border is modified with the object called **border**. It has two border property such as **color** and **width** which are used to customize the border color of the ranges and border width of the ranges. 
+* You can customize the ranges to improve the appearance of the **Gauge**. The range border is modified with the object called **border**. It has two border property such as [`color`](../api/ejlineargauge#members:scales-ranges-border-color) and [`width`](../api/ejlineargauge#members:scales-ranges-border-width) which are used to customize the border color of the ranges and border width of the ranges. 
 
-* You can set the background color to improve the look and feel of the **Linear Gauge**. For customizing the background color of the ranges, **backgroundColor** is used.You can add the gradient effects to the ranges by using **gradient** object.
+* You can set the background color to improve the look and feel of the **Linear Gauge**. For customizing the background color of the ranges, [`backgroundColor`](../api/ejlineargauge#members:scales-ranges-backgroundcolor) is used.You can add the gradient effects to the ranges by using [`gradient`](../api/ejlineargauge#members:scales-ranges-gradients) object.
 
 
 {% highlight html %}
@@ -219,9 +219,9 @@ Execute the above code to render the following output.
 
 ## Positioning the ranges
 
-* You can position ranges using two properties such as **distanceFromScale** and **placement**. The **distanceFromScale** property defines the distance between the scale and range. 
+* You can position ranges using two properties such as **distanceFromScale** and **placement**. The [`distanceFromScale`](../api/ejlineargauge#members:scales-ranges-distancefromscale) property defines the distance between the scale and range. 
 
-* **Placement** property is used to locate the pointer with respect to scale either inside the scale or outside the scale or along the scale. It is an enumerable data type. 
+* [`placement`](../api/ejlineargauge#members:scales-ranges-placement) property is used to locate the pointer with respect to scale either inside the scale or outside the scale or along the scale. It is an enumerable data type. 
 
 
 {% highlight html %}

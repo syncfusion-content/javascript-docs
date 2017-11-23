@@ -10,7 +10,7 @@ api: /api/js/ejmenu
 
 # Icons and navigation
 
-##Icons
+## Icons
 
 Icons are the images that is displayed in the **Menu** control. To specify the menu with icons you can use [sprite](https://help.syncfusion.com/api/js/ejmenu#members:fields-spritecssclass) property to display the icons. 
 
@@ -120,7 +120,7 @@ The following screenshot displays the output for the above code.
 
 N> Images for this sample are available in (installed location)\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\samples\web\content\images<br/>
 
-##Navigation
+## Navigation
 
 Navigation in Menu control is the default usage to navigate into the other web page. You can navigate to another page in menu item by providing link to the menu items. Navigation in **Menu** control can be achieved by placing “**href**” path to the anchor tag. Use the following code sample for navigating in **Menu** control.
 

@@ -10,7 +10,7 @@ api: /api/js/ejlineargauge
 
 # Exporting
 
-**Linear Gauge** has an exporting feature that converts **Gauge** control into image format and then export in client side. The method API **exportImage** is used to export the **LinearGauge**. It has two arguments such as **file name** and **file format** to specify the file name and file formats. For exporting refer the following code example.
+**Linear Gauge** has an exporting feature that converts **Gauge** control into image format and then export in client side. The method API [`exportImage`](../api/ejlineargauge#methods:exportimage) is used to export the **LinearGauge**. It has two arguments such as **file name** and **file format** to specify the file name and file formats. For exporting refer the following code example.
 
 
 {% highlight html %}

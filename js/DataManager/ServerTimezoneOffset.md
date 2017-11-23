@@ -15,13 +15,13 @@ This property is used to set the time-zone offset from UTC, in hours
 ### Property
 <table>
     <tr> 
-        <td>Name:</td> <td> ej.serverTimezoneOffset<td> 
+        <td>Name:</td> <td> ej.serverTimezoneOffset</td> 
     </tr>
     <tr>
-        <td>Data type:</td> <td> number<td>
+        <td>Data type:</td> <td> number</td>
     </tr>
     <tr>
-        <td>Default Value:</td> <td>  0 <td>
+        <td>Default Value:</td> <td>  0 </td>
     </tr>
 </table>
 

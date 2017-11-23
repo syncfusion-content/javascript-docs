@@ -10,7 +10,7 @@ api : /api/js/ejchart
 
 # Axis
 
-**Charts** typically have two axes that are used to measure and categorize data: a vertical (y) axis, and a horizontal (x) axis.
+**Charts** typically have two axes that are used to measure and categorize data: a vertical (y) [`primaryYAxis`](..api/ejchart#members:primaryyaxis), and a horizontal (x) [`primaryXAxis`](..api/ejchart#members:primaryxaxis).
 
 Vertical axis always uses numerical or logarithmic scale. Horizontal(x) axis supports the following types of scale:
 
@@ -148,7 +148,7 @@ $("#container").ejChart({
 
 ### Customize numeric range
 
-To customize the range of an axis, you can use the [`range`](../api/ejchart#members:primaryxaxis-range) property of the axis to set the [`minimum`](../api/ejchart#members:primaryxaxis-range-minimum), [`maximum`](../api/ejchart#members:primaryxaxis-range-maximum) and [`interval`](../api/ejchart#members:primaryxaxis-range-interval) values. Nice range is calculated automatically based on the provided data, by default.
+To customize the range of an axis, you can use the [`range`](../api/ejchart#members:primaryxaxis-range) property of the axis to set the [`min`](../api/ejchart#members:primaryxaxis-range-min), [`max`](../api/ejchart#members:primaryxaxis-range-max) and [`interval`](../api/ejchart#members:primaryxaxis-range-interval) values. Nice range is calculated automatically based on the provided data, by default.
 
 
 {% highlight javascript %}
@@ -231,7 +231,7 @@ When the value of the [`rangePadding`](../api/ejchart#members:primaryxaxis-range
 
 #### Round
 
-When the value of [`rangePadding`](../api/ejchart#members:primaryxaxis-rangepadding) property is **round**, the axis range is rounded to the nearest possible value divided by the interval.
+When the value of [`rangePadding`](../api/ejchart#members:primaryxaxis-rangepadding) property is **round**, the axis range is rounded to the nearest possible value divided by the interval. The [`roundingPlaces`](../api/ejchart#members:primaryxaxis-roundingplaces) property rounds the number to the given number of decimals.
 
 {% highlight javascript %}
 
@@ -240,8 +240,7 @@ When the value of [`rangePadding`](../api/ejchart#members:primaryxaxis-rangepadd
                primaryYAxis: {
                
                 //Applying round as range padding
-                rangePadding: 'round',       
-
+                rangePadding: 'round'
                 //  ...         
             },
 
@@ -1013,7 +1012,7 @@ Axis visibility can be controlled by using the [`visible`](../api/ejchart#member
 
 ### Axis title
 
-The [`title`](../api/ejchart#members:primaryxaxis-title) property in the axis provides options to customize the text and font of the axis title. Axis does not display the title, by default. Title text can also be trimmed based on the title text length or specified length.
+The [`title`](../api/ejchart#members:primaryxaxis-title) property in the axis provides options to customize the [`text`](../api/ejchart#members:primaryxaxis-title-text) and [`font`](../api/ejchart#members:primaryxaxis-title-font) of the axis title. You can customize the [`fontFamily`](../api/ejchart#members:primaryxaxis-title-font-fontfamily), [`fontStyle`](../api/ejchart#members:primaryxaxis-title-font-fontstyle), [`fontWeight`](../api/ejchart#members:primaryxaxis-title-font-fontweight), [`opacity`](../api/ejchart#members:primaryxaxis-title-font-opacity) and [`size`](../api/ejchart#members:primaryxaxis-title-font-size). Axis does not display the title, by default. Title text can also be trimmed using [`enableTrim`](../api/ejchart#members:primaryxaxis-title-enabletrim) based on the [`maximumTitleWidth`](../api/ejchart#members:primaryxaxis-title-maximumtitlewidth) or specified length. Other properties used to customize axis title are [`offset`](../api/ejchart#members:primaryxaxis-title-offset), [`position`](../api/ejchart#members:primaryxaxis-title-position), [`alignment`](../api/ejchart#members:primaryxaxis-title-alignment) and[`visible`](../api/ejchart#members:primaryxaxis-title-visible).
 
 {% highlight javascript %}
 
@@ -1082,7 +1081,8 @@ The [`font`](../api/ejchart#members:primaryxaxis-font) property of the axis prov
                 font : {
                         fontFamily : 'Segoe UI',
                         size : '14px',
-                        fontWeight : 'bold' ,
+                        fontWeight : 'bold',
+                        opacity : 0.5,
                         color : 'blue',
                 },                
                 //  ...         
@@ -1095,10 +1095,56 @@ The [`font`](../api/ejchart#members:primaryxaxis-font) property of the axis prov
 
 ![](/js/Chart/Axis_images/axis_img28.png)
 
+#### Axis Labels Line Break
+
+Axis Labels can be placed in multiple lines by specifying **<br>** for data points x value and in label format.
+
+For category value type, **<br>** can be specified in x value of data points.
+
+{% highlight javascript %}
+
+     $("#container").ejChart({
+        series: 
+			[ 
+				{
+				    points: [
+                             { x: "India", y: 61.3 },                       
+                             { x: "United<br>States<br>of<br>America", y: 31 },
+                             { x: "South<br>Korea", y: 39.4 },
+							 { x: "United<br>Arab<br>Emirates", y: 65.1 },
+							 { x: "United<br>Kingdom", y: 75.9 }
+                     ]
+				}
+			],
+     });
+
+{% endhighlight %}
+
+![](/js/Chart/Axis_images/axis_img68.png)
+
+[JS Playground Sample](http://jsplayground.syncfusion.com/zsaomrq5)
+
+For numeric, datetime and datetimeCategory value type, **<br>** can be specified in labelFormat.
+
+{% highlight javascript %}
+
+     $("#container").ejChart({
+        primaryXAxis:
+        {
+            labelFormat: 'MMM<br>dd<br>yyyy',
+            valueType: 'datetime'
+        }
+     });
+
+{% endhighlight %}
+
+![](/js/Chart/Axis_images/axis_img69.png)
+
+[JS Playground Sample](http://jsplayground.syncfusion.com/fllsqowe)
 
 ### Label and tick positioning
  
-Axis labels and ticks can be positioned inside or outside the chart area by using the [`labelPosition`](../api/ejchart#members:primaryxaxis-labelposition) and [`tickPosition`](../api/ejchart#members:primaryxaxis-tickposition) properties. The labels and ticks are positioned outside the chart area, by default.
+Axis labels and ticks can be positioned inside or outside the chart area by using the [`labelPosition`](../api/ejchart#members:primaryxaxis-labelposition) and [`tickLinesPosition`](../api/ejchart#members:primaryxaxis-ticklinesposition) properties. The labels and ticks are positioned outside the chart area, by default.
  
 {% highlight javascript %}
 
@@ -1122,7 +1168,7 @@ Axis labels and ticks can be positioned inside or outside the chart area by usin
 
 ### Edge labels placement
 
-Labels with long text at the edges of an axis may appear partially outside the chart. The [`edgeLabelPlacement`](../api/ejchart#members:primaryxaxis-edgelabelplacement) property can be used to avoid the partial appearance of the labels at the corners. 
+Labels with long text at the edges of an axis may appear partially outside the chart. The [`edgeLabelPlacement`](../api/ejchart#members:primaryxaxis-edgelabelplacement) property of primary X axis and [`edgeLabelPlacement`](../api/ejchart#members:primaryyaxis-edgelabelplacement) of primary Y axis can be used to avoid the partial appearance of the labels at the corners. The edge labels of secondary axes can be customized using [`edgeLabelPlacement`](../api/ejchart#members:axes-edgelabelplacement).
 
 {% highlight javascript %}
 
@@ -1130,10 +1176,10 @@ Labels with long text at the edges of an axis may appear partially outside the c
 
              primaryXAxis: {
 
-                //Customizing edge label placement
+                //Customizing axis edge label placement
                 edgeLabelPlacement : 'shift',
                 //  ...         
-            },
+            }
             //  ...
      });
 
@@ -1151,7 +1197,7 @@ Labels with long text at the edges of an axis may appear partially outside the c
 
 ### Grid lines customization
 
-The [`majorGridLines`](../api/ejchart#members:primaryxaxis-majorgridlines) and [`minorGridLines`](../api/ejchart#members:primaryxaxis-minorgridlines) properties in the axis are used to customize the major grid lines and minor grid lines of an axis. They provide options to change the width, color, visibility and opacity of the grid lines. The minor grid lines are not visible, by default.
+The [`majorGridLines`](../api/ejchart#members:primaryxaxis-majorgridlines) and [`minorGridLines`](../api/ejchart#members:primaryxaxis-minorgridlines) properties in the axis are used to customize the major grid lines and minor grid lines of an axis. The majorGridLines provide options to change the [`dashArray`](../api/ejchart#members:primaryxaxis-majorgridlines-dasharray), [`color`](../api/ejchart#members:primaryxaxis-majorgridlines-color), [`opacity`](../api/ejchart#members:primaryxaxis-majorgridlines-opacity), [`visible`](../api/ejchart#members:primaryxaxis-majorgridlines-visible) and [`width`](../api/ejchart#members:primaryxaxis-majorgridlines-width) of the grid lines. The minor grid lines are not [`visible`](../api/ejchart#members:primaryxaxis-minorgridlines-visible), by default. The minorGridLines provide options to change [`dashArray`](../api/ejchart#members:primaryxaxis-minorgridlines-dasharray) and [`width`](../api/ejchart#members:primaryxaxis-minorgridlines-width). 
 
 {% highlight javascript %}
 
@@ -1182,7 +1228,7 @@ The [`majorGridLines`](../api/ejchart#members:primaryxaxis-majorgridlines) and [
 
 ### Tick lines customization
 
-The [`majorTickLines`](../api/ejchart#members:primaryxaxis-majorticklines) and [`minorTickLines`](../api/ejchart#members:primaryxaxis-minorticklines) properties in the axis are used to customize the major tick lines of an axis and minor tick lines of an axis. They provide options to change the width, size, color and visibility of the grid lines. The minor tick lines are not visible, by default.
+The [`majorTickLines`](../api/ejchart#members:primaryxaxis-majorticklines) and [`minorTickLines`](../api/ejchart#members:primaryxaxis-minorticklines) properties in the axis are used to customize the major tick lines of an axis and minor tick lines of an axis. The majorTickLines provide options to change the [`size`](../api/ejchart#members:primaryxaxis-majorticklines-size), visibility using [`visible`](../api/ejchart#members:primaryxaxis-majorticklines-visible) property and [`width`](../api/ejchart#members:primaryxaxis-majorticklines-width) of the tick lines. The minor tick lines are not [`visible`](../api/ejchart#members:primaryxaxis-minorticklines-visible) , by default. The majorTickLines provide options to change [`size`](../api/ejchart#members:primaryxaxis-minorticklines-size) and [`width`](../api/ejchart#members:primaryxaxis-minorticklines-width) of the tick lines. The [`minorTicksPerInterval`](../api/ejchart#members:primaryxaxis-minorticksperinterval) specifies the number of minor ticks per interval
 
 {% highlight javascript %}
 
@@ -1304,6 +1350,213 @@ A maximum of 3 labels are displayed for each 100 pixels in the axis, by default.
 
 ![](/js/Chart/Axis_images/axis_img39.png)
 
+### Alternate Grid Band
+
+The [`alternateGridBand`](../api/ejchart#members:primaryxaxis-alternategridband) property is used to customize the axis grid band. Alternate grid bands contains two properties such as [`odd`](../api/ejchart#members:primaryxaxis-alternategridband-odd) and [`even`](../api/ejchart#members:primaryxaxis-alternategridband-even) grid bands. You can change the [`opacity`](../api/ejchart#members:primaryxaxis-alternategridband-odd-opacity) and [`fill`](../api/ejchart#members:primaryxaxis-alternategridband-odd-fill) color of odd, [`opacity`](../api/ejchart#members:primaryxaxis-alternategridband-even-opacity) and [`fill`](../api/ejchart#members:primaryxaxis-alternategridband-even-fill) color of even grid bands for axis. 
+
+{% highlight javascript %}
+
+$("#container").ejChart({
+
+    primaryXAxis: { 
+        alternateGridBand: { 
+            even :{ fill : "green",  opacity : 0.4 } ,
+            odd : { fill : "red" , opacity : 0.8}
+        } 
+    }
+});
+
+{% endhighlight %}
+
+### Axis Line
+
+You can customize the [`color`](../api/ejchart#members:primaryxaxis-axisline-color), [`dashArray`](../api/ejchart#members:primaryxaxis-axisline-dasharray), [`offset`](../api/ejchart#members:primaryxaxis-axisline-offset), [`visible`](../api/ejchart#members:primaryxaxis-axisline-visible) and [`width`](../api/ejchart#members:primaryxaxis-axisline-width) using [`axisLine`](../api/ejchart#members:primaryxaxis-axisline) property. 
+
+{% highlight javascript %}
+
+$("#container").ejChart({
+   primaryXAxis: { 
+       axisLine : {
+            color : "red", 
+            dashArray : "2,3", 
+            offset : 5, 
+            visible : false, 
+            width : 2 
+        } 
+    }   
+});
+
+{% endhighlight %}
+
+### Column Index and Span
+
+[`columnIndex`](../api/ejchart#members:primaryxaxis-columnindex) property specifies the index of the column where the axis is associated, when the chart area is divided into multiple plot areas by using columnDefinitions. The [`columnSpan`](../api/ejchart#members:primaryxaxis-columnspan) specifies number of columns or plot areas an axis has to span horizontally.
+
+{% highlight javascript %}
+
+$("#container").ejChart({
+   primaryXAxis: { 
+       columnIndex: 2,
+       columnSpan: 2
+   }                       
+});
+
+{% endhighlight %}
+
+### Crosshair Label
+
+The primary X axis provides an option to customize the [`crosshairLabel`](../api/ejchart#members:primaryxaxis-crosshairlabel). The [`visible`](../api/ejchart#members:primaryxaxis-crosshairlabel-visible) property of horizontal axis shows or hides the crosshair label.
+
+{% highlight javascript %}
+
+$("#container").ejChart({
+  primaryXAxis: { 
+      crosshairLabel : { 
+          visible : true
+      } 
+  }
+});
+
+{% endhighlight %}
+
+### Desired Intervals, Auto Zooming and Trimming
+
+By setting [`desiredIntervals`](../api/ejchart#members:primaryxaxis-desiredintervals), you can request axis to calculate intervals approximately equal to your desired interval. The [`enableTrim`](../api/ejchart#members:primaryxaxis-enabletrim) of axis specifies whether to trim the axis label when the width of the label exceeds the [`maximumLabelWidth`](../api/ejchart#members:primaryxaxis-maximumlabelwidth). The [`enableAutoIntervalOnZooming`](../api/ejchart#members:primaryxaxis-enableautointervalonzooming) specifies the interval of axis according to the zoomed data of the chart. 
+
+{% highlight javascript %}
+
+$("#container").ejChart({
+  primaryXAxis: { 
+      desiredIntervals: 5, 
+      enableTrim : true, 
+      enableAutoIntervalOnZooming: true, 
+      maximumLabelWidth : 34.5 
+      }  
+});
+
+{% endhighlight %}
+
+### Axis Alignment and Label Rotation
+
+The [`alignment`](../api/ejchart#members:primaryxaxis-alignment) property is used to position axis labels. Axis Labels can be rotated by specifying angles in degrees using [`labelRotation`](../api/ejchart#members:primaryxaxis-labelrotation) property.
+
+{% highlight javascript %}
+
+$("#container").ejChart({
+    primaryXAxis: { 
+        alignment : "far" ,
+        labelRotation : 90
+    }  
+});
+
+{% endhighlight %}
+
+### Axis Name, Orientation and Plot Offset
+
+Unique name of the axis. To associate an axis with the series, you have to set this [`name`](../api/ejchart#members:primaryxaxis-name) to the xAxisName/yAxisName property of the series. The [`orientation`](../api/ejchart#members:primaryxaxis-orientation) property is used to specify the orientation of the axis line. The [`plotOffset`](../api/ejchart#members:primaryxaxis-plotoffset) is used to specify padding for plot area.
+
+{% highlight javascript %}
+
+$("#container").ejChart({
+
+    primaryXAxis: { 
+        name: "xAxis" ,
+        orientation : 'Vertical',
+        plotOffset: 0
+    }                          
+});
+
+{% endhighlight %}
+
+### StripLine Customization
+
+Axis [`stripLine`](../api/ejchart#members:primaryxaxis-stripline) can be customized using attributes such as [`borderColor`](../api/ejchart#members:primaryxaxis-stripline-bordercolor), [`color`](../api/ejchart#members:primaryxaxis-stripline-color), [`end`](../api/ejchart#members:primaryxaxis-stripline-end), [`font`](../api/ejchart#members:primaryxaxis-stripline-font) [`color`](../api/ejchart#members:primaryxaxis-stripline-font-color), [`fontFamily`](../api/ejchart#members:primaryxaxis-stripline-font-fontfamily), [`fontStyle`](../api/ejchart#members:primaryxaxis-stripline-font-fontstyle), [`fontWeight`](../api/ejchart#members:primaryxaxis-stripline-font-fontweight), [`opacity`](../api/ejchart#members:primaryxaxis-stripline-font-opacity), [`size`](../api/ejchart#members:primaryxaxis-stripline-font-size), [`start`](../api/ejchart#members:primaryxaxis-stripline-start), [`startFromAxis`](../api/ejchart#members:primaryxaxis-stripline-startfromaxis), [`text`](../api/ejchart#members:primaryxaxis-stripline-text), [`textAlignment`](../api/ejchart#members:primaryxaxis-stripline-textalignment), [`visible`](../api/ejchart#members:primaryxaxis-stripline-visible), [`width`](../api/ejchart#members:primaryxaxis-stripline-width) and [`zIndex`](../api/ejchart#members:primaryxaxis-stripline-zindex).
+
+{% highlight javascript %}
+
+$("#container").ejChart({
+
+    primaryXAxis: { 
+        stripLine:[{ 
+            borderColor: "green" ,
+            color: "green",
+            end: 5,
+            font: {
+                color: "green",
+                fontFamily : "Algerian",
+                fontStyle: "Bold",
+                fontWeight: "lighter",
+                opacity: 0.5,
+                size: "15px"
+            },
+            start: 2,
+            startFromAxis : true,
+            text : "Empty Point",
+            textAlignment : "middletop",
+            visible : true,
+            width : 0,
+            zIndex: "behind"
+        }]
+    }                          
+});
+
+{% endhighlight %}
+
+### Axis Label border
+
+The borders of axis label can be customized using [`labelBorder`](../api/ejchart#members:primaryxaxis-labelborder). You can change the color and width of the axis label border using [`color`](../api/ejchart#members:primaryxaxis-labelborder-color) and [`width`](../api/ejchart#members:primaryxaxis-labelborder-width) property.
+
+{% highlight javascript %}
+
+$("#container").ejChart({
+
+    primaryXAxis: { 
+       labelBorder:{
+           color: "green",
+           width: 2
+       }
+    }                          
+});
+
+{% endhighlight %}
+
+### ZoomFactor and ZoomPosition
+
+The axis is scaled by [`zoomFactor`](../api/ejchart#members:primaryxaxis-zoomfactor). When zoomFactor is 0.5, the chart is scaled by 200% along this axis. Value of zoom factor ranges from 0 to 1. Position of the zoomed axis is specified by [`zoomPosition`](../api/ejchart#members:primaryxaxis-zoomposition). Value of zoom position ranges from 0 to 1.
+
+{% highlight javascript %}
+
+$("#container").ejChart({
+    primaryXAxis: { 
+        zoomFactor : 0.5,
+        zoomPosition :0.5
+    }                
+});
+
+{% endhighlight %}
+
+### Axis Scrollbar
+
+The [`scrollbarSettings`](../api/ejchart#members:primaryxaxis-scrollbarsettings) provides options to customize the axis scrollbar. The [`visible`](../api/ejchart#members:primaryxaxis-scrollbarsettings-visible) property of scrollbar enables or disables the scrollbar. The [`canResize`](../api/ejchart#members:primaryxaxis-scrollbarsettings-canresize) controls whether axis scrollbar is responsive in chart. The scrollbar [`range`](../api/ejchart#members:primaryxaxis-scrollbarsettings-range) can customized using range [`min`](../api/ejchart#members:primaryxaxis-scrollbarsettings-range-min) and [`max`](../api/ejchart#members:primaryxaxis-scrollbarsettings-range-max). The [`pointsLength`](../api/ejchart#members:primaryxaxis-scrollbarsettings-pointslength) is used to display maximum number of points in scrollbar.
+
+{% highlight javascript %}
+
+$("#container").ejChart({
+    primaryXAxis: { 
+       scrollbarSettings:{
+           visible:true,
+           canResize:true,
+           range : { 
+               min: 10,
+               max: 100
+           },
+           pointsLength : 50
+        }
+    }                
+});
+
+{% endhighlight %}
+
 
 ## Multiple Axis
 
@@ -1416,7 +1669,7 @@ The following screenshot displays the result, when the [`labelIntersectAction`](
 ![](/js/Chart/Axis_images/axis_img49.png)
 
 ## Multi-level Labels
-Axis can be customized with multiple levels of labels using the [`multiLevelLabels`] property. These labels are placed based on the start and end range values and we can add any number of labels to an axis.
+Axis can be customized with multiple levels of labels using the [`multiLevelLabels`](../api/ejchart#members:primaryxaxis-multilevellabels) property. These labels are placed based on the [`start`](../api/ejchart#members:primaryxaxis-multilevellabels-start) and [`end`](../api/ejchart#members:primaryxaxis-multilevellabels-end) range values and we can add any number of labels to an axis. You can customize the [`text`](../api/ejchart#members:primaryxaxis-multilevellabels-text) for each level, visibility of multi level label by [`visible`](../api/ejchart#members:primaryxaxis-multilevellabels-visible) property, alignment of text using [`textAlignment`](../api/ejchart#members:primaryxaxis-multilevellabels-textalignment), [`level`](../api/ejchart#members:primaryxaxis-multilevellabels-level) of multi level labels, [`maximumTextWidth`](../api/ejchart#members:primaryxaxis-multilevellabels-maximumtextwidth) of multi level label text, overflow of text using [`textOverflow`](../api/ejchart#members:primaryxaxis-multilevellabels-textoverflow), [`font`](../api/ejchart#members:primaryxaxis-multilevellabels-font) [`color`](../api/ejchart#members:primaryxaxis-multilevellabels-font-color), [`fontFamily`](../api/ejchart#members:primaryxaxis-multilevellabels-font-fontfamily), [`fontStyle`](../api/ejchart#members:primaryxaxis-multilevellabels-font-fontstyle), [`fontWeight`](../api/ejchart#members:primaryxaxis-multilevellabels-font-fontweight), [`opacity`](../api/ejchart#members:primaryxaxis-multilevellabels-font-opacity), [`size`](../api/ejchart#members:primaryxaxis-multilevellabels-font-size), [`border`](../api/ejchart#members:primaryxaxis-multilevellabels-border) [`color`](../api/ejchart#members:primaryxaxis-multilevellabels-border-color), [`width`](../api/ejchart#members:primaryxaxis-multilevellabels-border-width) and [`type`](../api/ejchart#members:primaryxaxis-multilevellabels-border-type) of labels.
 
 {% highlight javascript %}       
 
@@ -1428,8 +1681,7 @@ Axis can be customized with multiple levels of labels using the [`multiLevelLabe
                         { 
                             visible: true,
                             start: -0.5,
-                            end: 2.5,
-                            text: "Quater1"
+                            end: 2.5
                          }]
                     }    
              });  

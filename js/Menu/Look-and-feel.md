@@ -27,7 +27,7 @@ api: /api/js/ejmenu
 * gradient-saffron
 * gradient-saffron-dark
 
-##cssClass
+## cssClass
 
 **Menu** control also customizes its appearance using user-defined **CSS** and custom skin options (colors and backgrounds). To apply custom themes you can use the [cssClass](https://help.syncfusion.com/api/js/ejmenu#members:cssclass) property. “cssClass” property sets the root class for **Menu** control theme.
 

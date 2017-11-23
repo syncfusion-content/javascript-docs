@@ -287,6 +287,27 @@ function exportBtnClick(args)
 
 {% endhighlight %} 
 
+### File format selection
+
+I> This option is applicable only for PivotGrid when exporting to Excel document.
+
+You can set the option for exporting the widget to Excel document either in *.xls* or *.xlsx* format, using `fileFormat` property inside the `beforeExport` event.
+
+N> By default excel document will be exported to ".xls" format using PivotEngine export.
+
+{% highlight javascript %}
+
+        $("#PivotGrid1").ejPivotGrid({
+                //..
+                beforeExport: "Export"
+            });
+        
+        function Export(args) {
+            args.exportMode = ej.PivotGrid.ExportMode.PivotEngine; 
+            args.fileFormat = ".xlsx"; //you can set the excel sheet format here
+        }
+        
+ {% endhighlight %}
 
 ### Customize the export document name
 
@@ -420,7 +441,7 @@ void pGrid_PDFExport(object sender, Syncfusion.Pdf.PdfDocument pdfDoc)
 
 void pGrid_AddPDFHeaderFooter(object sender, Syncfusion.Pdf.PdfDocument pdfDoc)
 {
-    //You can add header/footer information to the pdf document.
+    //You can add header/footer information to the PDF document.
 }
 
 [System.Web.Http.ActionName("WordExport")]
@@ -482,7 +503,7 @@ void htmlHelper_WordExport(object sender, Syncfusion.DocIO.DLS.WordDocument docu
 }
 void htmlHelper_AddPDFHeaderFooter(object sender, Syncfusion.Pdf.PdfDocument pdfDoc)
 {
-    //You can add header/footer information to the pdf document.
+    //You can add header/footer information to the PDF document.
 }
 void htmlHelper_PDFExport(object sender, Syncfusion.Pdf.PdfDocument pdfDoc)
 {

@@ -345,7 +345,7 @@ The following code example is used to render the sub **Tab** element in the vert
              $("#pizzaRating").ejRating({ precision: ej.Rating.Precision.Exact, value: 4.9 });
              // set the orientation on sub tab element.       
              $("#pizzaType").ejTab({
-                headerPosition*: "left",
+                headerPosition: "left",
                 height: "221px"
             });                                                  
         });

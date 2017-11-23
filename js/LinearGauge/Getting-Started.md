@@ -77,7 +77,7 @@ On executing the above code sample renders a default **Linear Gauge** with defau
 
 * Basic attributes of each canvas elements are height and width properties. 
 
-* You can set the height and width of the gauge as shown in the following code example.
+* You can set the [`height`](../api/ejlineargauge#members:height) and [`width`](../api/ejlineargauge#members:width) of the gauge as shown in the following code example.
 
 
 
@@ -100,7 +100,7 @@ On executing the above code sample renders a default **Linear Gauge** with heigh
 
 ## Set animate option and Label Color
 
-* You can draw the Thermometer with Label color and set animate property to _True_.  
+* You can draw the Thermometer by using [`labelColor`](../api/ejlineargauge#members:labelcolor) option and set animate property [`enableAnimation`](../api/ejlineargauge#members:enableanimation) as _True_.  
 
 * Initially set the animate property to _False_ to avoid unwanted script loads.
 
@@ -128,17 +128,17 @@ On executing the above code sample renders a customized **Linear Gauge** as foll
 
 ## Provide scale values
 
-* You can change the Scale Style of Thermometer using **type** property.
+* You can change the Scale Style of Thermometer using [`type`](../api/ejlineargauge#members:scales-type) property.
 
 * You can set the Minimum temperature up to -10 and maximum body temperature up to 110. 
 
-* You can set the Minimum scale value as -10 and maximum value as 110.
+* You can set the Minimum scale value as -10 by using [`minimum`](../api/ejlineargauge#members:scales-minimum) property and maximum value as 110 by using [`maximum`](..api/ejlineargauge#members:scales-maximum) property.
 
-* You can set the Location values such as vertical and horizontal position in the thermometer.
+* You can set the Location values such as vertical and horizontal position by using [`position`](../api/ejlineargauge#members:scales-position) property in the thermometer.
 
-* You can set the thermometer height using **length** property.
+* You can set the thermometer height by using [`length`](../api/ejlineargauge#members:scales-length) property.
 
-* You can set the Minor Interval value as 5 to get the exact temperature of the patient.
+* You can set the Minor Interval value as 5 to get the exact temperature of the patient by using [`minorIntervalValue`](../api/ejlineargauge#members:scales-majorintervalvalue) property.
 
 
 
@@ -180,9 +180,9 @@ On executing the above code sample renders a customized gauge with ranges as fol
 
 In **Linear gauge** there are two types of pointers available such as marker pointer and bar pointer.
 
-* **Marker pointer** displays as a pointer device which shows the actual values. In this example, there is no need to show a marker pointer in a thermometer, therefore, you can hide it by setting the **Opacity** property to ‘0’.
+* **Marker pointer** displays as a pointer device which shows the actual values. In this example, there is no need to show a marker pointer in a thermometer, therefore, you can hide it by setting the [`opacity`](../api/ejlineargauge#members:scales-markerpointers-opacity) property to ‘0’.
 
-* **Bar pointer** displays as a mercury metal that shows the exact temperature of the person. You can set the basic properties of the bar pointer such as **width**, **distanceFromScale**, **Value** and **backgroundColor**.
+* **Bar pointer** displays as a mercury metal that shows the exact temperature of the person. You can set the basic properties of the bar pointer such as [`width`](../api/ejlineargauge#members:scales-barpointers-width), [`distanceFromScale`](../api/ejlineargauge#members:scales-barpointers-distancefromscale), [`value`](../api/ejlineargauge#members:scales-barpointers-value) and [`backgroundColor`](../api/ejlineargauge#members:scales-barpointers-backgroundcolor).
 
 
 
@@ -223,7 +223,7 @@ On executing the above code sample renders a **Linear Gauge** with bar marker as
 
 * You can display the label value on both sides to get temperature in different scales. For that you can add two label values in an array.
 
-* You can use the scale labels to display the value in the gauge. You can customize the label placement, font (including its style and family) and  its distance from scale.
+* You can use the scale labels to display the value by using [`labels`](../api/ejlineargauge#members:scales-labels) property in the gauge. You can customize the label [`placement`](../api/ejlineargauge#members:scales-labels-placement),[`font`](../api/ejlineargauge#members:scales-labels-font) (including its style and family) and its [`distanceFromScale`](../api/ejlineargauge#members:scales-labels-distancefromscale).
 
 
 
@@ -265,9 +265,9 @@ On executing the above code sample renders a customized **Linear Gauge** as foll
 
 ## Add Ticks Details
 
-* You can set the width and height of the major ticks greater than the Minor ticks. You can set dark background for tick Color to have a better visibility.
+* You can set the [`width`](../api/ejlineargauge#members:scales-ticks-width) and [`height`](../api/ejlineargauge#members:scales-ticks-height) of the major ticks greater than the Minor ticks. You can set dark background for tick Color to have a better visibility.
 
-* You can also use four ticks for both the sides, each having two minor ticks and major ticks.
+* You can also use four [`ticks`](../api/ejlineargauge#members:scales-ticks) for both the sides, each having two minor ticks and major ticks.
 
 
 
@@ -327,7 +327,7 @@ On executing the above code sample renders a **Linear Gauge** with custom labels
 
 * You can specify the texts using **Custom labels** which displays in the gauge and customize them using various properties.
 
-* You can change the **showIndicators** property as **True** to show the custom labels.
+* You can change the [`showCustomLabels`](../api/ejlineargauge#members:scales-showcustomlabels) property as **True** to show the custom labels.
 
 
 

@@ -81,7 +81,7 @@ Try it: [RangeColorMapping](http://jsplayground.syncfusion.com/cbcyugjn)
 
 ### Desaturation Color Mapping
 
-You can differentiate all the leaf nodes using the [`desaturation color mapping`](../api/ejtreemap#members:desaturationcolormapping) property of the **TreeMap**. Differentiation is achieved, even though same color is applied for all the leaf nodes by varying the opacity of the leaf nodes based on the color value specified in the color value range using [`rangeMinimum`](../api/ejtreemap#members:desaturationcolormapping-rangemaximum) and [`rangeMaximum`](../api/ejtreemap#members:desaturationcolormapping-rangeminimum) value of the data collection. You can also bound the opacity range by setting [`from`](../api/ejtreemap#members:desaturationcolormapping-from) and [`to`](../api/ejtreemap#members:desaturationcolormapping-t0) property of the `desaturationColorMapping`.
+You can differentiate all the leaf nodes using the [`desaturation color mapping`](../api/ejtreemap#members:desaturationcolormapping) property of the **TreeMap**. Differentiation is achieved, even though same color is applied for all the leaf nodes by varying the opacity of the leaf nodes based on the color value specified in the color value range using [`rangeMinimum`](../api/ejtreemap#members:desaturationcolormapping-rangemaximum) and [`rangeMaximum`](../api/ejtreemap#members:desaturationcolormapping-rangeminimum) value of the data collection. You can also bound the opacity range by setting [`from`](../api/ejtreemap#members:desaturationcolormapping-from) and [`to`](../api/ejtreemap#members:desaturationcolormapping-to) property of the `desaturationColorMapping`.
 
 {% highlight js %}
 
@@ -304,7 +304,7 @@ You can specifies the selection mode of the treemap using [`groupSelectionMode`]
 // Set the selection mode during initialization.                                        
           $("#container").ejTreeMap({groupSelectionMode:'default'});
 
-{% enghighlight %}
+{% endhighlight %}
 
 ## Header
 

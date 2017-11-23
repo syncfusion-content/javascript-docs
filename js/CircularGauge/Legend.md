@@ -10,7 +10,7 @@ api: /api/js/ejcirculargauge
 
 # Legend
 
-The legend contains the list of the ranges that appear in the circular gauge  
+The [`legend`](../api/ejcirculargauge#members:legend) contains the list of the ranges that appear in the circular gauge  
 
 ## Legend Visibility
 
@@ -35,7 +35,7 @@ $("#CircularGauge1").ejCircularGauge({
 
 ### Legend Text
 
-The text displayed in the legend can be customized by using the **legendText** property present in the ranges of the circular gauge. When the legendText is not specified in the ranges, then the legend item for that particular range will not displayed. By default the legendText value is **null** . 
+The text displayed in the legend can be customized by using the [`legendText`](../api/ejcirculargauge#members:scales-ranges-legendtext) property present in the ranges of the circular gauge. When the legendText is not specified in the ranges, then the legend item for that particular range will not displayed. By default the legendText value is **null** . 
 
 {% highlight javascript %}
 
@@ -99,6 +99,26 @@ You can align the legend to the *center*, *far* or *near* based on its position 
 
 ## Customization
 
+### Legend Fill and Opacity
+
+You can change the opacity and fill color of legend text using [`opacity`](../api/ejcirculargauge#members:legend-opacity) and [`fill`](../api/ejcirculargauge#members:legend-fill) property of legend. 
+
+{% highlight javascript %}
+
+        $("#CircularGauge1").ejCircularGauge({
+            // ...             
+            legend: {
+                //...
+                //fill color of legend
+                 fill: 'red',
+                //opacity of legend
+                 opacity: 0.8
+            }
+            // ...             
+        });
+
+{% endhighlight %}
+
 ### Legend shape
 
 To change the legend item shape, you have to specify the desired shape in the [`shape`](../api/ejcirculargauge#members:legend-shape) property of the legend. By default, the shape of the legend is **circle**.It also supports rectangle,diamond,triangle,slider,line,pentagon,trapezoid and wedge shapes.
@@ -124,7 +144,7 @@ To change the legend item shape, you have to specify the desired shape in the [`
 
 ### Legend Item Size and Border
 
-You can change the size of the legend items by using the [`width`](../api/ejcirculargauge#members:legend-itemstyle-width) and [`height`](../api/ejcirculargauge#members:legend-itemstyle-height) properties in the **itemStyle**. To change the legend item border, use [`border`](../api/ejcirculargauge#members:legend-itemstyle-border) property of the legend itemStyle.
+You can change the size of the legend items by using the [`width`](../api/ejcirculargauge#members:legend-itemstyle-width) and [`height`](../api/ejcirculargauge#members:legend-itemstyle-height) properties in the [`itemStyle`](../api/ejcirculargauge#members:legend-itemstyle). To change the legend item border, use [`border`](../api/ejcirculargauge#members:legend-itemstyle-border) property of the legend itemStyle. The color and width of legend item border can be customized using border [`color`](../api/ejcirculargauge#members:legend-itemstyle-border-color) and [`width`](../api/ejcirculargauge#members:legend-itemstyle-border-width) property.
 
 {% highlight javascript %}
 
@@ -146,7 +166,7 @@ You can change the size of the legend items by using the [`width`](../api/ejcirc
 
 ### Legend size
 
-You can change the default legend size by using the **size** property of the legend.  
+You can change the default legend size by using the [`size`](../api/ejcirculargauge#members:legend-size) property of the legend. The height and width of legend size can customized using [`height`](../api/ejcirculargauge#members:legend-size-height) and [`width`](../api/ejcirculargauge#members:legend-size-width) property.
 
 {% highlight javascript %}
 
@@ -191,7 +211,7 @@ You can control the spacing between the legend items by using the [`itemPadding`
 
 ### Legend border
 
-You can customize the legend border by using the [`border`](../api/ejcirculargauge#members:legend-border) option in the legend. 
+You can customize the legend border by using the [`border`](../api/ejcirculargauge#members:legend-border) option in the legend. The legend border can be customized using border [`color`](../api/ejcirculargauge#members:legend-border-color) and [`width`](../api/ejcirculargauge#members:legend-border-width) property. 
 
 {% highlight javascript %}
 
@@ -213,7 +233,7 @@ You can customize the legend border by using the [`border`](../api/ejcirculargau
 
 ### Font of the legend text
 
-The font of the legend item text can be customized by using the [`font`](../api/ejcirculargauge#members:legend-font)  property in legend.
+The [`font`](../api/ejcirculargauge#members:legend-font) of the legend item text can be customized by using properties such as [`fontFamily`](../api/ejcirculargauge#members:legend-font-fontfamily), [`fontStyle`](../api/ejcirculargauge#members:legend-font-fontstyle), [`fontWeight`](../api/ejcirculargauge#members:legend-font-fontweight) and [`size`](../api/ejcirculargauge#members:legend-font-size) of legend font.
 
 
 {% highlight javascript %}

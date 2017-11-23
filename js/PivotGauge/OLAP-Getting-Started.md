@@ -352,6 +352,7 @@ N> If you have installed any version of SQL Server Analysis Service (SSAS) or Mi
 * Syncfusion.Olap.Base
 * Syncfusion.PivotAnalysis.Base
 * Syncfusion.EJ
+* Syncfusion.EJ.Export
 * Syncfusion.EJ.Pivot
 
 **List of Namespaces**

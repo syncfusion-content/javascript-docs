@@ -60,6 +60,8 @@ There is an option to show or hide the additional filter options in the menu by 
 
 N> For [`filterType`](https://help.syncfusion.com/api/js/ejgrid#members:filtersettings-filtertype "filterType") property you can assign either `string` value ("menu") or `enum` value (`ej.Grid.FilterType.Menu`).
 
+We can also filter a specified range of values by using the `between` operator for the column type `number`, `date` and `datetime`.
+
 The following code example describes the above behavior.
 
 {% highlight html %}
@@ -136,7 +138,7 @@ The following output is displayed as a result of the above code example.
 ![](filtering_images/filtering_img6.png)
 
 
-Checkbox list generation:
+### Checkbox list generation:
 
 By default, the checkbox list is generated from distinct values of the filter column from dataSource which gives an option to search and select the required items.
 
@@ -168,6 +170,15 @@ $(function () {
 The following output is displayed as a result of the above code example.
 
 ![](filtering_images/filtering_img7.png)
+
+
+### Add current selection to filter checkbox:
+
+When filtering is done multiple times on the same column then the previously filtered values on the column will be cleared. So, to retain the old values `Add current selection to filter` checkbox can be used which is displayed when data is searched in the search bar.
+
+The following image describes the above mentioned behavior.
+
+![](filtering_images/filtering_img12.png)
 
 
 ### Case Sensitivity
