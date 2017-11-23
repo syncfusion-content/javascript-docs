@@ -164,7 +164,7 @@ I> When multiSelectMode is enabled in a DropDownList and selected items having s
 
 ### Using value or text
 
-To select an item initially you can pass the item’s value via [value](https://help.syncfusion.com/api/js/ejdropdownlist#members:value) property or [selectItemByValue](https://help.syncfusion.com/api/js/ejdropdownlist#members:selectitembyvalue) method. To achieve this DropDownList widget must be initiated with the associate value. 
+To select an item initially you can pass the item’s value via [value](https://help.syncfusion.com/api/js/ejdropdownlist#members:value) property or [selectItemByValue](https://help.syncfusion.com/api/js/ejdropdownlist#members:selectitembyvalue) method or [selectedIndex](https://help.syncfusion.com/api/js/ejdropdownlist#members:selectedindex) property. To achieve this DropDownList widget must be initiated with the associate value. 
 
 {% highlight html %}
 
@@ -907,7 +907,7 @@ Items are searched based on the keyed in values to the textbox. There are two ty
 
 ### Incremental Search
 
-Selects the item in the popup list based on the keyed in value. If the time taken to type exceeds 1000 milliseconds then filtered items will be reset based on the current input value. By default this mode of search is enabled. Incremental search can be case sensitive or case insensitive. To make case sensitive, you can use [caseSensitiveSearch](https://help.syncfusion.com/api/js/ejdropdownlist#members:casesensitivesearch) property.
+Selects the item in the popup list based on the keyed in value. If the time taken to type exceeds 1000 milliseconds then filtered items will be reset based on the current input value.For this search, [enableIncrementalSearch](https://help.syncfusion.com/api/js/ejdropdownlist#members:enableincrementalsearch) property must be enabled. By default this mode of search is enabled. Incremental search can be case sensitive or case insensitive. To make case sensitive, you can use [caseSensitiveSearch](https://help.syncfusion.com/api/js/ejdropdownlist#members:casesensitivesearch) property.
 
 {% highlight html %}
 

@@ -92,7 +92,7 @@ By default popup list is shown on DropDownList button click but you can display 
 
 ## Retrieve the selected item data from select event via arguments?
 
-Bind the select event and you can retrieve the value from args.value. 
+Bind the [select](https://help.syncfusion.com/api/js/ejdropdownlist#events:select) event and you can retrieve the value from args.value. 
 
 {% highlight html %}
 
@@ -131,7 +131,7 @@ Create a custom HTML element and insert it after popup wrapper. Detailed sample 
 
 ## Add check all option in popup list?
 
-You can use [headerTemplate](https://help.syncfusion.com/api/js/ejdropdownlist#members:headertemplate) property to add any HTML element. Code snippet to add check all option is given below,
+You can use [headerTemplate](https://help.syncfusion.com/api/js/ejdropdownlist#members:headertemplate) property to add any HTML element. Code snippet to add check all option using [change](https://help.syncfusion.com/api/js/ejdropdownlist#events:change) event is given below,
 
 {% highlight html %}
 
@@ -294,7 +294,7 @@ Initialize a DropDownList control with allowVirtualScrolling, enableFilterSearch
 
 {% endhighlight %}
 
-In the popupHide event, get the DropDownList control object and reorder the selected items.
+In the [popupHide](https://help.syncfusion.com/api/js/ejdropdownlist#events:popuphide) event, get the DropDownList control object and reorder the selected items.
 
 {% highlight javascript %}
 
@@ -329,7 +329,7 @@ In the popupHide event, get the DropDownList control object and reorder the sele
 
 
 ## To enable filter search for virtual items that are not visible on the page when virtualScrollMode is continuous
-By default when virtualScrolling is enabled, filterSearch will work only for the elements available at that moment. To enable searching for the complete datasource bound to DropDownList, we need to manually configure the search query and corresponding changes for it. 
+By default when virtualScrolling is enabled, filterSearch will work only for the elements available at that moment. To enable searching for the complete datasource bound to DropDownList, we need to manually configure the search query using [search](https://help.syncfusion.com/api/js/ejdropdownlist#events:search) event and corresponding changes for it. 
 Initialize a DropDownList control with allowVirtualScrolling, enableFilterSearch and showCheckbox. 
 
 {% highlight javascript %}
@@ -396,7 +396,7 @@ Now override the addItem method which will be redefined based on this scenario t
     
 {% endhighlight %}
 
-In the begin event for loading data items from remote source, modify the query for fetching data based on the search string. Also when items fetched from remote service append it to a temporary list instead of main popup list
+In the [begin](https://help.syncfusion.com/api/js/ejdropdownlist#events:actionBegin) event for loading data items from remote source, modify the query for fetching data based on the search string. Also when items fetched from remote service append it to a temporary list instead of main popup list
 
 {% highlight javascript %}
 
@@ -490,7 +490,7 @@ When performing search, define the event to change the query string for filterin
 
 {% endhighlight %}
 
-Finally define change event to maintain the selected items on search
+Finally define [change](https://help.syncfusion.com/api/js/ejdropdownlist#events:change) event to maintain the selected items on search
 
 {% highlight javascript %}
 

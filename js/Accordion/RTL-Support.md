@@ -14,7 +14,7 @@ This feature supports to change the left-to-right alignment of the **Accordion**
 
 ## Enabling RTL Support
 
-The following steps explains you in enabling the right-to-left property for an **Accordion**.
+The following steps explains you in enabling the right-to-left i.e [enableRTL](https://help.syncfusion.com/api/js/ejaccordion#members:enablertl) property for an **Accordion**.
 
 In an HTML page, define a div element that is a container for  Accordion widget and add the contents correspondingly
 

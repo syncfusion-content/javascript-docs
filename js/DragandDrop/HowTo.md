@@ -171,11 +171,11 @@ You can get the dragged element from the args of [drag](https://help.syncfusion.
 
 The events will be triggered in the following order during Drag and Drop
 
-* **DragStart** -Fires when Draggable action starts.
+* [DragStart](https://help.syncfusion.com/api/js/ejdraggable#events:dragstart) -Fires when Draggable action starts.
 
 * **Drag** - Fires when the element is being dragged.
 
-* **DragStop** -Fires when the Draggable action stops.
+* [DragStop](https://help.syncfusion.com/api/js/ejdraggable#events:dragstop) -Fires when the Draggable action stops.
 
 * **Over** -Fires when the element is Dragged over the Droppable element
 

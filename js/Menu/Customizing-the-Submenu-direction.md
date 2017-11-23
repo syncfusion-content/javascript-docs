@@ -10,7 +10,7 @@ api: /api/js/ejmenu
 
 # Customizing the Submenu direction
 
-You can customize the direction to open the sub menu items using **subMenuDirection** property. **subMenuDirection** accepts the type as string or enum and value as “Left” and “Right”. 
+You can customize the direction to open the sub menu items using [subMenuDirection](https://help.syncfusion.com/api/js/ejmenu#members:submenudirection) property. **subMenuDirection** accepts the type as string or enum and value as “Left” and “Right”. 
 
 In the following example, the Sub menus opens in the Left side of the menu.
 

@@ -10,7 +10,7 @@ api: /api/js/ejprogressbar
 
 # State Maintenance
 
-Save current model value to cookies for **State Maintenance**. While refreshing the ProgressBar widget, page retains the model value applied from browser cookies. By default, the ‘**enablePersistence**’ property is set to ‘**false**’ in the ProgressBar.
+Save current model value to cookies for **State Maintenance**. While refreshing the ProgressBar widget, page retains the model value applied from browser cookies. By default, the [enablePersistence](https://help.syncfusion.com/api/js/ejprogressbar#members:enablepersistence) property is set to ‘**false**’ in the ProgressBar.
 
 The following steps explain the **State Maintenance** in the ProgressBar control.
 

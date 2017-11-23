@@ -29,7 +29,7 @@ api: /api/js/ejmenu
 
 ## cssClass
 
-**Menu** control also customizes its appearance using user-defined **CSS** and custom skin options (colors and backgrounds). To apply custom themes you can use the “cssClass” property. “cssClass” property sets the root class for **Menu** control theme.
+**Menu** control also customizes its appearance using user-defined **CSS** and custom skin options (colors and backgrounds). To apply custom themes you can use the [cssClass](https://help.syncfusion.com/api/js/ejmenu#members:cssclass) property. “cssClass” property sets the root class for **Menu** control theme.
 
 Using this **cssClass** you can override the existing styles under the theme style sheet. The theme stylesheet applies theme-specific styles like colors and backgrounds. In the following sample the value of “cssClass” property is set as “Purple-dark”. Purple-dark is added as root class to **Menu** control at the runtime. From this root class you can customize the **Menu** control theme.
 

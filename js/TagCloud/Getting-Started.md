@@ -57,7 +57,7 @@ Add necessary **HTML** elements.
 
 
 
-Add the following code example before **&lt;/body&gt;** tag to add list of items to the **TagCloud** and initialize the **TagCloud** widget.
+Add the following code example before **&lt;/body&gt;** tag to add list of items to the **TagCloud** and initialize the **TagCloud** widget using [dataSource](https://help.syncfusion.com/api/js/ejtagcloud#members:datasource) and [titleText](https://help.syncfusion.com/api/js/ejtagcloud#members:titletext) properties.
 
 
 
@@ -139,7 +139,7 @@ In the above code, the min font size is 3 and max font size is 24.
 
 ## Set event to perform an operation
 
-Here, you can set the **TagCloud** events such as create, mouseover, mouseout, click.
+Here, you can set the **TagCloud** events such as [create](https://help.syncfusion.com/api/js/ejtagcloud#events:create), [mouseover](https://help.syncfusion.com/api/js/ejtagcloud#events:mouseover), [mouseout](https://help.syncfusion.com/api/js/ejtagcloud#events:mouseout), [click](https://help.syncfusion.com/api/js/ejtagcloud#events:click).
 
 
 

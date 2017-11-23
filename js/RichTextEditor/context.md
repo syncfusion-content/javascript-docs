@@ -11,7 +11,7 @@ api: /api/js/ejrte
 
 # Context Menu 
 
-Editor provides custom context menu support, which enables more interaction on the content modification and also it can be enabled dynamically. The showContextMenu property helps to enable custom context menu within editor area.
+Editor provides custom context menu support, which enables more interaction on the content modification and also it can be enabled dynamically. The [showContextMenu](https://help.syncfusion.com/api/js/ejrte#members:showcontextmenu) property helps to enable custom context menu within editor area.
 Based on the target content type context menu provides different actions. Refer the details with below table.
 
 {% highlight html %}

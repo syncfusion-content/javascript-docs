@@ -10,7 +10,7 @@ api: /api/js/ejaccordion
 
 # Keyboard Navigation
 
-You can use **Keyboard** shortcut keys as an alternative to the mouse on using Accordion widget using **allowKeyboardNavigation** property. However you will have to focus the control to enable the keyboard navigation. Accordion Widget allows you to perform all kind of actions using keyboard shortcuts.
+You can use **Keyboard** shortcut keys as an alternative to the mouse on using Accordion widget using [allowKeyboardNavigation](https://help.syncfusion.com/api/js/ejaccordion#members:allowkeyboardnavigation) property. However you will have to focus the control to enable the keyboard navigation. Accordion Widget allows you to perform all kind of actions using keyboard shortcuts.
 
 List of Keyboard shortcut keys
 
