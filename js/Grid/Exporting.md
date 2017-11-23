@@ -347,9 +347,9 @@ grid.ignoreOnExport.splice(grid.ignoreOnExport.indexOf('dataSource'), 1);
 
 ## ColumnTemplate Exporting
 
-To export the grid with columnTemplate we have to set isTemplateColumnInclude as true in the parameter of the export method. You can handle server side event while exporting grid to various files such as Excel, PDF and Word.
+To export the grid with templae column we have to set `isTemplateColumnInclude` as true in the parameter of the export method. You can handle the template elements in server side event while exporting grid to various files such as Excel, PDF and Word.
 
-The server side events available in Exporting and its argument types are listed in the following table.
+The server side events available in template column exporting and its argument types are listed in the following table.
 
 <table>
 <tr>
@@ -398,7 +398,7 @@ It returns the current cell and row of PDF.
 </tr>
 </table>
 
-You can modify the columnTemplate of exporting files using server events. The code snippet for this is
+You can modify the template column of exporting files using server events. The code snippet for this is
 
 {% highlight html %}
 
@@ -543,9 +543,9 @@ public void PdfTemplateInfo(object currentCell, object row)
 
 ## DetailTemplate Exporting
 
-To export the grid with columnTemplate we have to set IncludeDetailRow as true in the parameter of the export method. You can handle server side event while exporting grid to various files such as Excel, PDF and Word.
+To export the grid with detail template we have to set `IncludeDetailRow` as true in the parameter of the export method. You can handle template elements using server side event while exporting grid to various files such as Excel, PDF and Word.
 
-The server side events available in Exporting and its argument types are listed in the following table.
+The server side events available in detail template exporting and its argument types are listed in the following table.
 
 <table>
 <tr>
@@ -704,7 +704,7 @@ public class GridController : Controller
          var charsToRemove = new string[] { '{', '}', '<b>', ':', '</b>', '<br />', 'style', '=', 'class', '</div>', '<p>', '</p>', 'detail', '<b', '>', };
          foreach (var c in charsToRemove)
          {
-            range.Value = range.Value.ToString().Replace(c, string.Empty);
+            range.Value = range.Value.ToString().Replace(c, string.Empty); // Representing additional information of the parent Row
          }
          range.HorizontalAlignment = ExcelHAlign.HAlignCenter;
        }
@@ -724,7 +724,7 @@ public class GridController : Controller
           var charsToRemove = new string[] { '{', '}', '<b>', ':', '</b>', '<br />', 'style', '=', 'class', '</div>', '<p>', '</p>', 'detail', '<b', '>', };
           foreach (var c in charsToRemove)
           {
-             wCell.LastParagraph.Text  = wCell.LastParagraph.Text.ToString().Replace(c, string.Empty);
+             wCell.LastParagraph.Text  = wCell.LastParagraph.Text.ToString().Replace(c, string.Empty); // Representing additional information of the parent Row
           }
         }
       }
@@ -743,7 +743,7 @@ public class GridController : Controller
           var charsToRemove = new string[] { '{', '}', '<b>', ':', '</b>', '<br />', 'style', '=', 'class', '</div>', '<p>', '</p>', 'detail', '<b', '>', };
           foreach (var c in charsToRemove)
           {
-             range.Value = range.Value.ToString().Replace(c, string.Empty);
+             range.Value = range.Value.ToString().Replace(c, string.Empty); // Representing additional information of the parent Row
           }
         }
       }
