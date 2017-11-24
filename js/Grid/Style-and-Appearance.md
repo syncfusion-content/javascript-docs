@@ -11,7 +11,7 @@ api: /api/js/ejgrid
 
 ## List of classes and its purposes
 
-To modify Grid appearance, you need to override default CSS of Grid. Please find the list of CSS classes and its corresponding section in Grid. Also you have an option to create your own custom theme for all JavaScript controls using our [Theme Studio](http://js.syncfusion.com/themestudio/# "Theme Studio").
+To modify Grid appearance, you need to override the default CSS of Grid. Please find the list of CSS classes and its corresponding section in Grid. Also, you have an option to create your own custom theme for all JavaScript controls using our [Theme Studio](http://js.syncfusion.com/themestudio/# "Theme Studio").
 
   <table>
         <tr>
@@ -226,7 +226,7 @@ To modify Grid appearance, you need to override default CSS of Grid. Please find
 
 ## Toolbar Customization
 
-To customize toolbar, you need to use toolbar default CSS class to override icon in toolbar. 
+To customize toolbar, you need to use the toolbar default CSS class to override icon in toolbar. 
 
 {% seealso %} [customize toolbar ](http://www.syncfusion.com/kb/5076/how-to-change-custom-icons-for-default-edit-toolbar-items "customize toolbar") {% endseealso %}
 
