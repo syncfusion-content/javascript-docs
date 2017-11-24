@@ -13,7 +13,7 @@ It represents the record details that are fetched from the datasource.
 
 ## Row Hover
 
-You can see the mouse hovering effect on the corresponding grid rows using [`enableRowHover`](https://help.syncfusion.com/api/js/ejgrid#members:enablerowhover "enableRowHover") property. By default its value is `true`.
+You can see the mouse hovering effect on the corresponding grid rows using the [`enableRowHover`](https://help.syncfusion.com/api/js/ejgrid#members:enablerowhover "enableRowHover") property. By default, its value is `true`.
 
 The following code example describes the above behavior.
 
@@ -40,9 +40,9 @@ The following output is displayed as a result of the above code example.
 
 ## Details Template
 
-It provides a detailed view /additional information about each row of the grid. You can render any type of JsRender template and assign the script template id in the [`detailsTemplate`](https://help.syncfusion.com/api/js/ejgrid#members:detailstemplate "detailsTemplate") property. And also you can change HTML elements in detail template row into JavaScript controls using [`detailsDataBound`](https://help.syncfusion.com/api/js/ejgrid#events:detailsdatabound "detailsDataBound") event.
+It provides a detailed view /additional information about each row of the grid. You can render any type of JsRender template and assign the script template id in the [`detailsTemplate`](https://help.syncfusion.com/api/js/ejgrid#members:detailstemplate "detailsTemplate") property. And also you can change the HTML elements in detail template row into JavaScript controls using the [`detailsDataBound`](https://help.syncfusion.com/api/js/ejgrid#events:detailsdatabound "detailsDataBound") event.
 
-On enabling details template, new column will be added in grid with an expander button in it and that can be expanded or collapsed to show or hide the underlying details row respectively.
+On enabling details template, new column will be added in grid with an expander button in it and that can be expanded or collapsed to show or hide the underlying details of row respectively.
 
 N> It's a standard way to enclose the template within the `script` tag with `type` as "text/x-jsrender".
 
@@ -97,7 +97,7 @@ The following output is displayed as a result of the above code example.
 
 ## Row Template
 
-Row template enables you to set the customized look and behavior to grid all rows. [`rowTemplate`](https://help.syncfusion.com/api/js/ejgrid#members:rowtemplate "rowTemplate") property can be used bind the `id` of HTML template.
+Row template enables you to set the customized look and behavior to all Grid rows. The [`rowTemplate`](https://help.syncfusion.com/api/js/ejgrid#members:rowtemplate "rowTemplate") property can be used to bind the `id` of HTML template.
 
 The following code example describes the above behavior.
 
@@ -178,9 +178,9 @@ The following output is displayed as a result of the above code example.
 
 ## Alternate row styling
 
-Alternate row styling enhances the readability of grid rows by setting different background color for every alternate row. You can enable the alternative row styling in grid by using [`enableAltRow`](https://help.syncfusion.com/api/js/ejgrid#members:enablealtrow "enableAltRow") property. 
+Alternate row styling enhances the readability of Grid rows by setting different background color for every alternate row. You can enable the alternative row styling in Grid by using the [`enableAltRow`](https://help.syncfusion.com/api/js/ejgrid#members:enablealtrow "enableAltRow") property. 
 
-By default its value is `true`, so the following code example describes the how to turn off alternate row behavior.
+By default, its value is `true`. The following code example describes how to turn off the alternate row behavior.
 
 {% highlight html %}
 <div id="Grid"></div>
@@ -205,9 +205,9 @@ The following output is displayed as a result of the above code example.
 
 ## Drag-and-Drop
 
-Grid rows can be reordered, dropped to another Grid or custom control by enabling [`allowRowDragAndDrop`](https://help.syncfusion.com/api/js/ejgrid#members:allowrowdraganddrop "allowRowDragAndDrop") Grid property.
+The Grid rows can be reordered, dropped to another Grid or custom control by enabling the [`allowRowDragAndDrop`](https://help.syncfusion.com/api/js/ejgrid#members:allowrowdraganddrop "allowRowDragAndDrop") Grid property.
 
-N> To enable selection of multiple rows by mouse dragging on Grid rows, [`selectionType`](https://help.syncfusion.com/api/js/ejgrid#members:selectiontype "selectionType") property of Grid must be set to `multiple`.
+N> To enable selection of multiple rows by mouse dragging on Grid rows, the [`selectionType`](https://help.syncfusion.com/api/js/ejgrid#members:selectiontype "selectionType") property of Grid must be set to `multiple`.
 
 ### Reorder
 
@@ -250,7 +250,7 @@ The following output is displayed after reordering rows.
 
 ### Grid-to-Grid
 
-To drag and drop rows between two Grid, enable the Grid property [`allowRowDragAndDrop`](https://help.syncfusion.com/api/js/ejgrid#members:allowrowdraganddrop "allowRowDragAndDrop") and specify the target Grid ID in [`dropTargetID`](https://help.syncfusion.com/api/js/ejgrid#members:rowdropsettings-droptargetid "dropTargetID") property of Grid [`rowDropSettings`](https://help.syncfusion.com/api/js/ejgrid#members:rowdropsettings "rowDropSettings").
+To drag and drop rows between two Grid, enable the Grid property [`allowRowDragAndDrop`](https://help.syncfusion.com/api/js/ejgrid#members:allowrowdraganddrop "allowRowDragAndDrop") and specify the target Grid ID in [`dropTargetID`](https://help.syncfusion.com/api/js/ejgrid#members:rowdropsettings-droptargetid "dropTargetID") property of the Grid [`rowDropSettings`](https://help.syncfusion.com/api/js/ejgrid#members:rowdropsettings "rowDropSettings").
 
 The following code example describes the above behavior.
 
@@ -304,7 +304,7 @@ The following output is displayed after dropping Grid rows.
 
 ### Grid-to-Custom control
 
-You can also drag and drop grid rows to any custom control. For instance, let it be a form.
+You can also drag and drop Grid rows to any custom control. For instance, let it be a form.
 
 Enable the Grid property [`allowRowDragAndDrop`](https://help.syncfusion.com/api/js/ejgrid#members:allowrowdraganddrop "allowRowDragAndDrop") and specify the target form element ID in [`dropTargetID`](https://help.syncfusion.com/api/js/ejgrid#members:rowdropsettings-droptargetid "dropTargetID") property of Grid [`rowDropSettings`](https://help.syncfusion.com/api/js/ejgrid#members:rowdropsettings "rowDropSettings").
 
@@ -375,4 +375,4 @@ The following output is displayed after dropping the rows on Form.
 ![](Row_images/Row_img10.png)
 {:After Drop}
 
-N>   The default behavior of drag and drop between Grid or any other controls is as cut and paste. For copy and paste behavior specify the drag behavior in [`dragBehavior`](https://help.syncfusion.com/api/js/ejgrid#members:rowdropsettings-dragbehavior "dragBehavior") property of [`rowDropSettings`](https://help.syncfusion.com/api/js/ejgrid#members:rowdropsettings "rowDropSettings")  as ej.Grid.DragBehavior.Copy.
+N>   The default behavior of drag and drop between Grid or any other controls is as cut and paste. For copy and paste behavior specify the drag behavior in [`dragBehavior`](https://help.syncfusion.com/api/js/ejgrid#members:rowdropsettings-dragbehavior "dragBehavior") property of the [`rowDropSettings`](https://help.syncfusion.com/api/js/ejgrid#members:rowdropsettings "rowDropSettings")  as ej.Grid.DragBehavior.Copy.
