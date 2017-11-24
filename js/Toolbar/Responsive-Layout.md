@@ -203,7 +203,7 @@ Execute the above code to render the following output.
 
 ## responsiveType:Inline
 
-We can set the responsiveType property to inline to display the overflown toolbar items as inline toolbar.
+We can set the [responsiveType](https://help.syncfusion.com/api/js/ejtoolbar#members:responsiveType) property to inline to display the overflown toolbar items as inline toolbar.
 
 {% highlight js %}
 
@@ -225,7 +225,7 @@ While setting inline responsiveType the following output will be displayed.
 
 ## responsiveType:Popup
 
-We can set the responsiveType property to popup to display the overflown toolbar items as popup.
+We can set the [responsiveType](https://help.syncfusion.com/api/js/ejtoolbar#members:responsiveType) property to popup to display the overflown toolbar items as popup.
 
 {% highlight js %}
 

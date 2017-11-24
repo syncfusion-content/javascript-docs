@@ -10,7 +10,7 @@ api: /api/js/ejprogressbar
 
 # Setting Range
 
-The **range** of the ProgressBar is set by using minimum and maximum values. The Minimum value specifies the value where the ProgressBar shows the process to have started. The Maximum value specifies the value where the process is completed. You can set the range by using the **‘minValue’** and **‘maxValue’** property.
+The **range** of the ProgressBar is set by using minimum and maximum values. The Minimum value specifies the value where the ProgressBar shows the process to have started. The Maximum value specifies the value where the process is completed. You can set the range by using the [minValue](https://help.syncfusion.com/api/js/ejprogressbar#members:minvalue) and [maxValue](https://help.syncfusion.com/api/js/ejprogressbar#members:maxvalue) property.
 
 In the **HTML** page, add a **&lt;div&gt;** element to render the ProgressBar widget.
 

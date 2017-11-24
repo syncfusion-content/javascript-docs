@@ -10,7 +10,7 @@ api: /api/js/ejmenu
 
 # Separators
 
-Separators can be added to menu  to display a horizontal bars between menu items. Separators are similar to borders and cannot be selected.**enableSeparator** is the property that is used to display the separators in the Menu control. It accepts Boolean type value. Its default value is true. 
+Separators can be added to menu  to display a horizontal bars between menu items. Separators are similar to borders and cannot be selected.[enableSeparator](https://help.syncfusion.com/api/js/ejmenu#members:enableseparator) is the property that is used to display the separators in the Menu control. It accepts Boolean type value. Its default value is true. 
 
  
 

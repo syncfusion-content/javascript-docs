@@ -37,7 +37,7 @@ If you want to insert an image from online source like Google, Ping, etc., you n
 
 ## Insert a Image from Your Computer
 
-Configure the imageBrowser and fileBrowser property to insert an image from your computer. You can specify the settings required by the FileExplorer for create, read, upload, and destroy the files and images from the explorer. 
+Configure the [imageBrowser](https://help.syncfusion.com/api/js/ejrte#members:imagebrowser) and [fileBrowser](https://help.syncfusion.com/api/js/ejrte#members:filebrowser) property to insert an image from your computer. You can specify the settings required by the FileExplorer for create, read, upload, and destroy the files and images from the explorer. 
 
 {% highlight html %}
 
@@ -131,7 +131,7 @@ The General and Advanced tabs in the RTE Image browser can be removed by setting
     
  {% endhighlight %}
  
- Can remove the Add `NewFolder` button by using [removeToolbarItem](https://help.syncfusion.com/api/js/ejrte#methods:removetoolbaritem) property of Image Browser in the RTE create event. 
+ Can remove the Add `NewFolder` button by using [removeToolbarItem](https://help.syncfusion.com/api/js/ejrte#methods:removetoolbaritem) property of Image Browser in the RTE [create](https://help.syncfusion.com/api/js/ejrte#events:create) event. 
 
 {% highlight html %}
 

@@ -14,7 +14,7 @@ api: /api/js/ejtoolbar
 
 ### Height
 
-The **height** property is used to set height of the **Toolbar**. Set the value to this property as **number** or **string** type.
+The [height](https://help.syncfusion.com/api/js/ejtoolbar#members:height) property is used to set height of the **Toolbar**. Set the value to this property as **number** or **string** type.
 
 {% highlight html %}
 
@@ -27,7 +27,7 @@ The **height** property is used to set height of the **Toolbar**. Set the value 
 
 ### Width
 
-The **width** property is used to set width of the **Toolbar**. Set the value to this property as **number** or **string** type.
+The [width](https://help.syncfusion.com/api/js/ejtoolbar#members:width) property is used to set width of the **Toolbar**. Set the value to this property as **number** or **string** type.
 
 {% highlight html %}
 
@@ -40,7 +40,7 @@ The **width** property is used to set width of the **Toolbar**. Set the value to
 
 ## Enabling Rounded Corner 
 
-The **showRoundedCorner** property is used to enable rounded corner for **Toolbar**. Set the value to this property as **Boolean** type.
+The [showRoundedCorner](https://help.syncfusion.com/api/js/ejtoolbar#members:showroundedcorner) property is used to enable rounded corner for **Toolbar**. Set the value to this property as **Boolean** type.
 
 
 {% highlight javascript %}
@@ -57,7 +57,7 @@ The **showRoundedCorner** property is used to enable rounded corner for **Toolba
 
 ## Enabling Separator 
 
-The **enableSeparator** property is used to set separator between **Toolbar** items. It separates one or more list items. When you want to separate two set of items, then define them in two separate **‘ul’** tags and set the value to this property as **Boolean** type.
+The [enableSeparator](https://help.syncfusion.com/api/js/ejtoolbar#members:enableseparator) property is used to set separator between **Toolbar** items. It separates one or more list items. When you want to separate two set of items, then define them in two separate **‘ul’** tags and set the value to this property as **Boolean** type.
 
 
 

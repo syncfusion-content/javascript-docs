@@ -12,7 +12,7 @@ api: /api/js/ejmenu
 
 ## Icons
 
-Icons are the images that is displayed in the **Menu** control. To specify the menu with icons you can use **sprite** property to display the icons. 
+Icons are the images that is displayed in the **Menu** control. To specify the menu with icons you can use [sprite](https://help.syncfusion.com/api/js/ejmenu#members:fields-spritecssclass) property to display the icons. 
 
 Add the following code in your **HTML** page.
 

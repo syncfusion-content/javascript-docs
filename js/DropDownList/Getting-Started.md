@@ -170,7 +170,7 @@ N> ODataAdaptor is the default adaptor for DataManager. On binding to other web 
 
 ## Setting Dimensions
 
-DropDownList dimensions can be set using width and height API.
+DropDownList dimensions can be set using [width](https://help.syncfusion.com/api/js/ejdropdownlist#members:width) and [height](https://help.syncfusion.com/api/js/ejdropdownlist#members:height) API.
 	
 	{% highlight html %}
 	
@@ -194,7 +194,7 @@ DropDownList dimensions can be set using width and height API.
 
 **Setting dimensions to Popup list**
 
-PopupWidth and popupHeight can be used to create a fixed size popup list.
+[PopupWidth](https://help.syncfusion.com/api/js/ejdropdownlist#members:popupwidth) and [popupHeight](https://help.syncfusion.com/api/js/ejdropdownlist#members:popupheight) can be used to create a fixed size popup list.
 
 	{% highlight html %}
 

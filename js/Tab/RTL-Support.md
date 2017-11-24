@@ -10,7 +10,7 @@ api: /api/js/ejtab
 
 # RTL Support
 
-**Tab** control provides support for load contents in right to left format. This is achieved by setting ‘**enableRTL**’ property to “**true**”.
+**Tab** control provides support for load contents in right to left format. This is achieved by setting [enableRTL](https://help.syncfusion.com/api/js/ejtab#members:enablertl) property to “**true**”.
 
 The following code example is used to render the **Tab** element in RTL format. 
 

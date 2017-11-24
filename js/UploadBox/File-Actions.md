@@ -12,7 +12,7 @@ api: /js/ejuploadbox
 
 ## Save File Action 
 
-To save the uploaded file in **JS**, create the handler class and trigger the same in **saveUrl** property.  In that handler, save and specify the target location for uploaded files. The data type is **string**.
+To save the uploaded file in **JS**, create the handler class and trigger the same in [saveUrl](https://help.syncfusion.com/api/js/ejuploadbox#members:saveurl) property.  In that handler, save and specify the target location for uploaded files. The data type is **string**.
 
 The following steps explain the configuration of **saveUrl** property in the **Uploadbox**. 
 
@@ -89,7 +89,7 @@ The following screenshot displays the output.
 
 ## Remove File Action 
 
-To **remove** the uploaded file in **JS**, create a handler class and trigger the same in **removeUrl** property.  The uploaded file has to be removed from the handler where the file is saved. This is achieved by clicking **remove** button on **upload** dialog. The data type is **string**.
+To **remove** the uploaded file in **JS**, create a handler class and trigger the same in [removeUrl](https://help.syncfusion.com/api/js/ejuploadbox#members:rempveurl) property.  The uploaded file has to be removed from the handler where the file is saved. This is achieved by clicking **remove** button on **upload** dialog. The data type is **string**.
 
 The following steps explain the configuration of **removeUrl** property in **Uploadbox**. 
 
@@ -166,7 +166,7 @@ The following screenshot displays the output.
 
 The **Uploadbox** widget provides support to upload the file automatically once file is selected by using browse button, that is, without clicking upload button. To achieve this, set the **autoUpload** property to ‘**true**’. The data type is **Boolean**. By default, the value is set to ‘**false**’, so **upload** button is clicked to upload the files. 
 
-The following steps explain the configuration of **autoUpload** property in **Uploadbox**
+The following steps explain the configuration of [autoUpload](https://help.syncfusion.com/api/js/ejuploadbox#members:autoupload) property in **Uploadbox**
 
 In the **HTML** page, add the **&lt;div&gt;** element to configure the **Uploadbox** element.
 

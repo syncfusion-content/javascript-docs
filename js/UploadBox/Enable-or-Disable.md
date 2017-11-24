@@ -10,7 +10,7 @@ api: /js/ejuploadbox
 
 # Enables or Disables the Uploadbox 
 
-This feature helps set the **enable** or **disable** option for **Uploadbox** by setting **Boolean** type value to **enabled** property. For **enable** or **disable** option, set **enabled** property to ‘**false**’. The data type is **Boolean**.
+This feature helps set the **enable** or **disable** option for **Uploadbox** by setting **Boolean** type value to [enabled](https://help.syncfusion.com/js/uploadbox/enable-or-disable) property. For **enable** or **disable** option, set **enabled** property to ‘**false**’. The data type is **Boolean**.
 
 The following steps explain the configuration of **enabled** property in **Uploadbox**. 
 

@@ -10,9 +10,9 @@ api: /api/js/ejmenu
 
 # Context Menu
 
-A context menu is a type of menu in a graphical user interface (GUI) that appears when you perform right click operation. In this **Menu** control you can use a context menu by specifying the type of menu as **ContextMenu**. A context also provides support for nested level of menu items.
+A context menu is a type of menu in a graphical user interface (GUI) that appears when you perform right click operation. For this operation, you have to disable the [openOnClick](https://help.syncfusion.com/api/js/ejmenu#members:openonclick) property. In this **Menu** control you can use a context menu by specifying the type of menu as **ContextMenu** using [menuType](https://help.syncfusion.com/api/js/ejmenu#members:menutype). A context also provides support for nested level of menu items.
 
-Before you use the context menu, provide the target area for it. 
+Before you use the context menu, provide the target area for it and mention that area id in the property named as [contextMenuTarget](https://help.syncfusion.com/api/js/ejmenu#members:contextmenutarget).
 
 In the following example, a context menu for the division containing text is created. In this, when you perform right click operation, the following menu appears with open, edit, etc.
 
@@ -89,7 +89,7 @@ You can hide and show the context menu using the following methods.
 
 ## HideContextMenu
 
-Hides the context menu control. Add the following script code in the sample in order to hide the context menu.
+Hides the context menu control using [hide](https://help.syncfusion.com/api/js/ejmenu#methods:hide) method. Add the following script code in the sample in order to hide the context menu.
 
 {% highlight javascript %}
 

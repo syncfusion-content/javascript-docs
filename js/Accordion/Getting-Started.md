@@ -158,11 +158,11 @@ You can customize the Accordion control using various properties. The Accordion 
 
 ## Configure Multiple Open
 
-You can have multiple **Accordion** tabs opened to view all products at a time. To achieve this set the **enableMultipleOpen** property of the **Accordion** control to true.
+You can have multiple **Accordion** tabs opened to view all products at a time. To achieve this set the [enableMultipleOpen](https://help.syncfusion.com/api/js/ejaccordion#members:enablemultipleopen) property of the **Accordion** control to true.
 
 N> enableMultipleOpen property is false by default.
 
-You can also open all the panels during initialization using the **selectedItems** property of the **Accordion** control. The following code sample illustrates the opening of multiple tabs by passing the tab index values of tab.
+You can also open all the panels during initialization using the [selectedItems](https://help.syncfusion.com/api/js/ejaccordion#members:selecteditems) property of the **Accordion** control. The following code sample illustrates the opening of multiple tabs by passing the tab index values of tab.
 
 {% highlight javascript %}
 
@@ -184,7 +184,7 @@ You can also open all the panels during initialization using the **selectedItems
 
 ### Setting rounded corner
 
-**Accordion** control, by default, is rendered in a regular rectangle. You can modify the regular rectangles with rounded corners by setting the **showRoundedCorner** property to **True**.
+**Accordion** control, by default, is rendered in a regular rectangle. You can modify the regular rectangles with rounded corners by setting the [showRoundedCorner](https://help.syncfusion.com/api/js/ejaccordion#members:showroundedcorner) property to **True**.
 
 N> showRoundedCorner property is False by default.
 
@@ -208,7 +208,7 @@ The following screenshot illustrates the **Accordion** control with rounded corn
 
 ## Customize Icon
 
-You can customize the **Header** icon using **customIcon** property. This property has two features such as **header** and **selectedHeader**. By default, the classes of **header** and **selectedHeader** are **e-collapse** and **e-expand** respectively**.**
+You can customize the **Header** icon using [customIcon](https://help.syncfusion.com/api/js/ejaccordion#members:customicon) property. This property has two features such as **header** and **selectedHeader**. By default, the classes of **header** and **selectedHeader** are **e-collapse** and **e-expand** respectively**.**
 
 You can change the + and - symbols in the **Accordion** header, that are the default icons with Up or Down arrow icons. 
 

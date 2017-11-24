@@ -24,7 +24,7 @@ To localize the dropdownlist’s strings with your own localization, copy the de
     
 {% endhighlight %}
 
-Set the locale property of the DropDownList to the new language.
+Set the [locale](https://help.syncfusion.com/api/js/ejdropdownlist#members:locale) property of the DropDownList to the new language.
 
 
 {% highlight javascript %}

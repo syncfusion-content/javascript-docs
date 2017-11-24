@@ -78,7 +78,7 @@ This property sets the text value for Toolbar item while mouse over in Toolbar. 
 
 ## Local data
 
-**Toolbar** provides you an extensive data binding support to generate **Toolbar** items, that the values can be mapped to the **ToolBar** fields, namely **key** and **text**.
+**Toolbar** provides you an extensive data binding support to generate **Toolbar** items, that the values can be mapped to the **ToolBar** [fields](https://help.syncfusion.com/api/js/ejtoolbar#members:fields), namely **key** and **text**.
 
 And also you can add image, image styles, sprite CSS class, query and HTML attributes options with data binding fields. The following code explains the details about the data binding with **Toolbar**. 
 
@@ -182,7 +182,7 @@ And also you can add image, image styles, sprite CSS class, query and HTML attri
 
 You can bind the data for the **Toolbar** items from remote. That is, you can access the data from any other server that is located as remote web service. It uses DataManager to retrieve data and you can create DataManager with its **URL**. To create DataManager, define ej.DataManager() to a variable. Then provide online link to **url** property. Assign this variable to **Toolbar** dataSource. 
 
-To bind Remote data to **Toolbar**, use the following code example.
+To bind Remote data to **Toolbar** and [query](https://help.syncfusion.com/api/js/ejtoolbar#members:query) is used to get the data, use the following code example.
 
 {% highlight html %}
 

@@ -10,7 +10,7 @@ api: /api/js/ejrte
 ---
 # Import 
 
-Import feature provides support to import a word document into the editor `textarea`. To enable import option in the RTE tool bar,  `import` toolbar items needs to be added in RTE toolbar toolsList using `importExport` which adds the tool in the toolbar. In `importSettings` url option, the server page for import is needed to be mapped. When you click the toolbar import icon, it opens a dialog to browse the select a word file. The selected word file will be imported into the editor `textarea`.
+Import feature provides support to import a word document into the editor `textarea`. To enable import option in the RTE tool bar,  `import` toolbar items needs to be added in RTE toolbar toolsList using `importExport` which adds the tool in the toolbar. In [importSettings](https://help.syncfusion.com/api/js/ejrte#members:importsettings) url option, the server page for import is needed to be mapped. When you click the toolbar import icon, it opens a dialog to browse the select a word file. The selected word file will be imported into the editor `textarea`.
 
 {% highlight html %}
 
@@ -125,7 +125,7 @@ Full list of assemblies needed for RTE Import are as follows
 
 # Export 
 
-Export feature provides support to export editor `textarea` content into word and PDF files. To enable Export option in the RTE tool bar,  `wordExport` , `pdfExport` toolbar items needs to be added in RTE toolbar toolsList using `importExport` which adds the tool in the toolbar. `exportToWordSettings` consists of url and fileName sub properties. In url property, the server page for export to word is needed to be mapped and In fileName property, the name for the exported word file is given. `exportToPdfSettings` consists of url and fileName sub properties. In url property, the server page for export to PDF is needed to be mapped and In fileName property, the name for the exported PDF file is given. When you click the toolbar pdfExport or wordExport icon, the contents of RTE are sent to the server. It performs XHTML Validation on the editor `textarea` content on the server. Once the XHTML validation and formatting is successful, it exports the content into a Word or PDF File.
+Export feature provides support to export editor `textarea` content into word and PDF files. To enable Export option in the RTE tool bar,  `wordExport` , `pdfExport` toolbar items needs to be added in RTE toolbar toolsList using `importExport` which adds the tool in the toolbar. [exportToWordSettings](https://help.syncfusion.com/api/js/ejrte#members:exporttowordsettings) consists of url and fileName sub properties. In url property, the server page for export to word is needed to be mapped and In fileName property, the name for the exported word file is given. [exportToPdfSettings](https://help.syncfusion.com/api/js/ejrte#members:exporttopdfsettings) consists of url and fileName sub properties. In url property, the server page for export to PDF is needed to be mapped and In fileName property, the name for the exported PDF file is given. When you click the toolbar pdfExport or wordExport icon, the contents of RTE are sent to the server. It performs XHTML Validation on the editor `textarea` content on the server. Once the XHTML validation and formatting is successful, it exports the content into a Word or PDF File.
 
 {% highlight html %}
 

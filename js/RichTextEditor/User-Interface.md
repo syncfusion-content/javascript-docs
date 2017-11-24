@@ -321,7 +321,7 @@ I> The custom buttons get a `insert-special-character` CSS class to allow stylin
 
 ## Types of responsive toolbar
 
-Two types of toolbar modes are available for RTE in responsive mode. This includes "inline" and "popup". Toolbar Type can be set through API [toolbarOverflowMode](https://help.syncfusion.com/api/js/ejrte#members:toolbarOverflowMode)  whose default value is "popup".
+Two types of toolbar modes are available for RTE in responsive mode which is enabled by [isResponsive](https://help.syncfusion.com/api/js/ejrte#members:isresponsive) property. This includes "inline" and "popup". Toolbar Type can be set through API [toolbarOverflowMode](https://help.syncfusion.com/api/js/ejrte#members:toolbarOverflowMode)  whose default value is "popup".
 
 {% highlight html %}
 

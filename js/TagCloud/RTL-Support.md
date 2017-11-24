@@ -10,7 +10,7 @@ api: /api/js/ejtagcloud
 
 # RTL Support
 
-This feature supports you to change the left-to-right alignment of the **TagCloud** widget to right-to-left (RTL). This displays the content from right-to-left in the widget. You can achieve this using **enableRTL** property that is set false by default.
+This feature supports you to change the left-to-right alignment of the **TagCloud** widget to right-to-left (RTL). This displays the content from right-to-left in the widget. You can achieve this using [enableRTL](https://help.syncfusion.com/api/js/ejtagcloud#members:enablertl) property that is set false by default.
 
 ## Enabling RTL Support
 

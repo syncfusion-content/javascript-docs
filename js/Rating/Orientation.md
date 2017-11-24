@@ -10,7 +10,7 @@ api: /api/js/ejrating
 
 # Orientation
 
-**Rating** provides support for **vertical** orientation. By default Rating renders with **horizontal** orientation. You can the change the orientation by the **orientation** property.
+**Rating** provides support for **vertical** orientation. By default Rating renders with **horizontal** orientation. You can the change the orientation by the [orientation](https://help.syncfusion.com/api/js/ejrating#members:orientation) property.
 
 The following code example is used to render the Rating control with **vertical** **orientation**.
 

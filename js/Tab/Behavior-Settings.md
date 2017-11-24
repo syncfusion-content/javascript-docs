@@ -12,7 +12,7 @@ api: /api/js/ejtab
 
 ## Close Button
 
-By default, **Tab** contents are rendered without **Close Button**. You can add the **Close** **Button** by setting the ‘**showCloseButton**’ property to ‘**true**’. When you move cursor over the **Tab** headers, the **Close** **Button** is displayed.   
+By default, **Tab** contents are rendered without **Close Button**. You can add the **Close** **Button** by setting the [showCloseButton](https://help.syncfusion.com/api/js/ejtab#members:showclosebutton) property to ‘**true**’. When you move cursor over the **Tab** headers, the **Close** **Button** is displayed.   
 
 The following code example is used to render the **Tab** widget with **Close** **Button**.
 
@@ -55,7 +55,7 @@ The following screenshot illustrates the **Tab** with **Close** **Button**.
 
 ## Orientation
 
-By default, **Tab** control renders in horizontal orientation. You can change the **Orientation** to vertical using the ‘**headerPosition**’ property. Using  this property, you can customize the header by ” **top**”,” **bottom**”, “**left**”, and  “**right**”.
+By default, **Tab** control renders in horizontal orientation. You can change the **Orientation** to vertical using the [headerPosition](https://help.syncfusion.com/api/js/ejtab#members:headerposition) property. Using  this property, you can customize the header by ” **top**”,” **bottom**”, “**left**”, and  “**right**”.
 
 The following code example is used to render the sub **Tab** widget in the vertical orientation. 
 
@@ -99,7 +99,7 @@ The following screenshot illustrates the sub **Tab** with vertical orientation.
 
 ## State Maintenance
 
-When the page gets refreshed or reloaded, the **Tab** state is changed (i.e.) the focus is moved to start **Tab**. You can maintain the state of the **Tab** by using ‘**enablePersistence**’ property. When this property is set to **‘true’,** it retains the state. 
+When the page gets refreshed or reloaded, the **Tab** state is changed (i.e.) the focus is moved to start **Tab**. You can maintain the state of the **Tab** by using [enablePersistence](https://help.syncfusion.com/api/js/ejtab#members:enablepersistence) property. When this property is set to **‘true’,** it retains the state. 
 
 The following code example is used to render the **Tab** widget with state maintenance. 
 

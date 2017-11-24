@@ -12,7 +12,7 @@ api: /api/js/ejmenu
 
 ## Height
 
-Specifies the height of the root menu. You can customize the height of the **Menu** control by using height property. 
+Specifies the height of the root menu. You can customize the height of the **Menu** control by using [height](https://help.syncfusion.com/api/js/ejmenu#members:height) property. 
 
 You can specify the height of the **Menu** control in the script as follows.
 
@@ -31,7 +31,7 @@ You can specify the height of the **Menu** control in the script as follows.
 
 ## Width
 
-Specifies the width of the main menu. You can customize the width of the **Menu** control by using width property.
+Specifies the width of the main menu. You can customize the width of the **Menu** control by using [width](https://help.syncfusion.com/api/js/ejmenu#members:width) property.
 
 You can specify the width of the **Menu** control in the script as follows.
 
@@ -49,7 +49,7 @@ You can specify the width of the **Menu** control in the script as follows.
 
 ## Open on click
 
-Specifies the sub menu items to be show or open only on click. It accepts the Boolean value. Its default value is false. If we set “**openOnClick**” property to true then the submenu items will open only on click. By default the submenu will open when we hover on menu items.
+Specifies the sub menu items to be show or open only on click. It accepts the Boolean value. Its default value is false. If we set [openOnClick](https://help.syncfusion.com/api/js/ejmenu#members:openonclick) property to true then the submenu items will open only on click. By default the submenu will open when we hover on menu items.
 
 Add the following **&lt;script&gt;** in the above code sample. 
 
@@ -79,7 +79,7 @@ Output screenshot for the above code example is as follows.
 
 ## Animation
 
-**AnimationType** is used to enable or disable the Animation when hover or click on menu items. Its value type is string. It accepts two values such as “none” and “default”. Support to disable the **AnimationType** when hover or click on menu items is none. Support to enable the Animation Type when hover or click on menu items is default. 
+[AnimationType](https://help.syncfusion.com/api/js/ejmenu#members:animationtype) is used to enable or disable the Animation when hover or click on menu items. Its value type is string. It accepts two values such as “none” and “default”. Support to disable the **AnimationType** when hover or click on menu items is none. Support to enable the Animation Type when hover or click on menu items is default. 
 
 Add the following **&lt;script&gt;** in the above sample code. 
 
@@ -107,7 +107,7 @@ Output screenshot for the above code sample is as follows.
 
 ## Title text
 
-Specifies the title to the responsive menu. You can provide title to the **Menu** control by using **titleText** property. 
+Specifies the title to the responsive menu. You can provide title to the **Menu** control by using [titleText](https://help.syncfusion.com/api/js/ejmenu#members:titletext) property. 
 
 You can specify the title of the **Menu** control in the script as follows.
 
@@ -135,7 +135,7 @@ The following screenshot displays the output of the above code.
 
 ## Show root level arrows
 
-Specifies the main menu item arrows to display only when it contains child menu items. You can use “**showRootLevelArrows**” property to display the arrows of main menu items only when it contains child menu items. This property accepts Boolean value. Its default value is true. 
+Specifies the main menu item arrows to display only when it contains child menu items. You can use [showRootLevelArrows](https://help.syncfusion.com/api/js/ejmenu#members:showRootLevelArrows) property to display the arrows of main menu items only when it contains child menu items. This property accepts Boolean value. Its default value is true. 
 
 Add the following **&lt;script&gt;** in the above code sample.
 
@@ -165,7 +165,7 @@ The following screenshot displays the output of the above code.
 
 ## Show sub level arrows
 
-Specifies the sub menu items arrows to display only when it contains child menu items. You can use “**showSubLevelArrows**” property to show the arrows of sub menu items only when it contains child menu items. This property accepts Boolean value. Its default value is true. 
+Specifies the sub menu items arrows to display only when it contains child menu items. You can use [showSubLevelArrows](https://help.syncfusion.com/api/js/ejmenu#members:showsublevelarrows) property to show the arrows of sub menu items only when it contains child menu items. This property accepts Boolean value. Its default value is true. 
 
 Add the following **&lt;script&gt;** in the sample code.
 

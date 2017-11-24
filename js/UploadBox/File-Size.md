@@ -12,7 +12,7 @@ api: /js/ejuploadbox
 
 ## Maximum File Size for Uploadbox
 
-In the **Uploadbox** control, you can browse files with the size going up to gigabytes. You can restrict the files from being browsed using the **fileSize** property. When you do not use this property, it takes a default size, 31457280B, that is, 31MB.When this size exceeds, you cannot browse the file. 
+In the **Uploadbox** control, you can browse files with the size going up to gigabytes. You can restrict the files from being browsed using the [fileSize](https://help.syncfusion.com/api/js/ejuploadbox#members:filesize) property. When you do not use this property, it takes a default size, 31457280B, that is, 31MB.When this size exceeds, you cannot browse the file. 
 
 Add the following code example to the corresponding **HTML** page to render the **Uploadbox** control with the customized file size.
 
