@@ -9,7 +9,7 @@ api: /api/js/ejgantt
 ---
 
 # Resource Allocation View
-Resource allocation view is used to visualize the resource usage in a project. Resources are displayed in separate rows and all the tasks assigned to a specific resource will be displayed in the chart parallelly. In this view, a user can able to easily identify the overallocation of resources in a project.
+Resource allocation view is used to visualize the resource usage in a project. Resources are displayed in separate rows and all the tasks assigned to a specific resource will be displayed in the chart side. In this view, a user can able to easily identify the overallocation of resources in a project.
 
 ![](/js/Gantt/Resource-Allocation-View/ResourceView_1.png)
 
@@ -103,7 +103,7 @@ The below code snippet explains grouping of the resources in resource allocation
 
 var resourceGroups = [
     { groupId: 1, groupName: "Planning Team" },
-    { groupId: 2, groupName: "Developement Team" },
+    { groupId: 2, groupName: "Development Team" },
     { groupId: 3, groupName: "Testing Team" }
 ];
 
