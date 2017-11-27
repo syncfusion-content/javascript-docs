@@ -13,7 +13,7 @@ keywords: ComboBox, combobox, Item template, Group template, Header template, Fo
 The ComboBox has been provided with several options to customize each list item, group title,
 selected value, header, and footer elements. 
 
-## Item Template
+## Item template
 
 The content of each list item within the ComboBox can be customized with the
 help of [itemTemplate](https://help.syncfusion.com/api/js/ejcombobox#members:itemtemplate)
@@ -69,7 +69,7 @@ $(function () {
 
 ![](Templates_images/Templates_image1.png)
 
-## Group Template
+## Group template
 
 The group header title under which appropriate sub-items are categorized can also be
 customize with the help of
@@ -109,7 +109,7 @@ $(function () {
 
 ![](Templates_images/Templates_image6.png)
 
-## Header Template
+## Header template
 
 The header element is shown statically at the top of the popup list items within the
 ComboBox, and any custom element can be placed as a header element using the
@@ -189,7 +189,7 @@ $(function () {
 
 ![](Templates_images/Templates_image2.png)
 
-## Footer Template
+## Footer template
 
 The ComboBox has options to show a footer element at the bottom of the list items in the popup list.
 Here, you can place any custom element as a footer element using the [footerTemplate](https://help.syncfusion.com/api/js/ejcombobox#members:footertemplate) property.
@@ -253,7 +253,7 @@ $(function () {
 
 ![](Templates_images/Templates_image3.png)
 
-## No Necords Template
+## No records template
 
 The ComboBox is provided with support to custom design the popup list content when no data is found
 and no matches found on search with the help of
@@ -300,7 +300,7 @@ In the following sample, popup list content displays the notification of no data
 
 ![](Templates_images/Templates_image4.png)
 
-## Action Failure Template
+## Action failure template
 
 There is also an option to custom design the popup list content when the data fetch request
 fails at the remote server. This can be achieved using the

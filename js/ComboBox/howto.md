@@ -10,7 +10,7 @@ keywords: ComboBox, combobox, Cascading ComboBox, Autofill supported with ComboB
 
 # How To
 
-## Configure The Cascading ComboBox
+## Configure the Cascading ComboBox
 
 The cascading ComboBox is a series of ComboBox, where the value of one ComboBox depends
 upon  another's value. This can be configured by using the [change](https://help.syncfusion.com/api/js/ejcombobox#events:change) event of the parent ComboBox.

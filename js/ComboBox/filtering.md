@@ -59,7 +59,7 @@ through the `updateData` method in `filtering` event.
 
 ![](Filtering_images/Filtering_image1.png)
 
-## Limit The Minimum Filter Character
+## Limit the Minimum Filter Character
 
 When filtering the list items, you can set the limit for character count to raise remote request and fetch
 filtered data on the ComboBox. This can be done by manual validation within the filter event handler.
@@ -113,7 +113,7 @@ In the following example, the remote request does not fetch the search data unti
 
 ![](Filtering_images/Filtering_image2.png)
 
-## Change The Filter Type
+## Change the Filter Type
 
 While filtering, you can change the filter type to `contains`,
 `startsWith`, or `endsWith` for string type within the filter event handler.

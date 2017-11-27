@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Getting started with ComboBox widget for Syncfusion Essential JS
-description: To get start with ComboBox by adding references.
+title: Overview of ComboBox widget for Syncfusion Essential JS
+description: Descripes about overview of ComboBox widget.
 platform: js
 control: ComboBox
 documentation: ug
-keywords: ComboBox, combobox, Populating data
+keywords: ComboBox, combobox, Data Binding, Custom Values, Grouping, Sorting, Filtering, Templates
 ---
 
 # Overview

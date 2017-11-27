@@ -15,7 +15,7 @@ The ComboBox can be initialized on three different tags as described in below. T
 *  Using an input element 
 *  Using a select element 
 
-## Using An Input Element
+## Using an Input Element
 
 The ComboBox has also be rendered through `<input>` element with an array of either simple or complex data that is set through the dataSource property. It can retrieve data from local data sources as well as remote data services.
 

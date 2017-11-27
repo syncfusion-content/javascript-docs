@@ -177,7 +177,7 @@ $(function () {
 		
 {% endhighlight %}
 
-## Configure The Popup List
+## Configure the Popup List
 
 By default, the width of the popup list automatically adjusts according to the ComboBox input element's width, and the height of the popup list has '300px'.
 
