@@ -22,8 +22,6 @@ The Localization library allows you to localize static text content of the
 
 ## Loading Translations
 
-To load translation object to your application, use `load` function of **L10n** class.
-
 In the following sample, French culture is set to the ComboBox and no data is loaded. Hence, the `noRecordsTemplate` property displays its text in French culture initially, and if the sample is run offline, the `actionFailureTemplate` property displays its text appropriately.
 
 {% highlight html %}
