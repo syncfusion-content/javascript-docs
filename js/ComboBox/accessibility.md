@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started with ComboBox widget for Syncfusion Essential JS
-description: To get start with ComboBox by adding references.
+title: Accessibility Features of ComboBox widget for Syncfusion Essential JS
+description: Describes about the Accessibility in ComboBox widget for Syncfusion Essential JS.
 platform: js
 control: ComboBox
 documentation: ug
@@ -15,7 +15,7 @@ the WAI-ARIA roles, states, and properties along with `keyboard support`. This c
 by complete keyboard interaction support and ARIA accessibility support that makes it easy for people who
 use assistive technologies (AT) or those who completely rely on keyboard navigation.
 
-## ARIA attributes
+## ARIA Attributes
 
 The ComboBox component uses the `combobox` role, and each list item has an `option` role. The following
 `ARIA attributes` denote the ComboBox state.
@@ -31,7 +31,7 @@ The ComboBox component uses the `combobox` role, and each list item has an `opti
 | aria-owns | This attribute contains the ID of the popup list to indicate popup as a child element. |
 | aria-autocomplete | This attribute contains the ‘both’ to a list of options shows and the currently selected suggestion also shows inline. |
 
-## Keyboard interaction
+## Keyboard Interaction
 
 You can use the following key shortcuts to access the ComboBox without interruptions.
 
@@ -60,7 +60,7 @@ You can use the following key shortcuts to access the ComboBox without interrupt
 	
 {% highlight javascript %}	
 	
-    var empList = [
+    var sportsList = [
         { id: 'level1', country: 'American Football' }, { id: 'level2', country: 'Badminton' },
         { id: 'level3', country: 'Basketball' }, { id: 'level4', country: 'Cricket' },
         { id: 'level5', country: 'Football' }, { id: 'level6', country: 'Golf' },
@@ -69,7 +69,7 @@ You can use the following key shortcuts to access the ComboBox without interrupt
     ];
     $(function () {
         $("#list").ejComboBox({
-            dataSource: empList,
+            dataSource: sportsList,
             fields: { text: 'country', value: 'id' },
             width: '250px',
             placeholder: 'Select a game',

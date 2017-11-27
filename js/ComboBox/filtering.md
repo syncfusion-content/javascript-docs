@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data binding in ComboBox widget for Syncfusion Essential JS
-description: Describes about the data binding in ComboBox widget for Syncfusion Essential JS
+title: Filtering in ComboBox widget for Syncfusion Essential JS
+description: Describes about the filtering in ComboBox widget for Syncfusion Essential JS
 platform: js
 control: ComboBox
 documentation: ug
@@ -29,7 +29,7 @@ through the `updateData` method in `filtering` event.
 	
 <script type="text/javascript">
 
-    var empList = [
+    var sportsData = [
         { id: 'level1', game: 'American Football' }, { id: 'level2', game: 'Badminton' },
         { id: 'level3', game: 'Basketball' }, { id: 'level4', game: 'Cricket' },
         { id: 'level5', game: 'Football' }, { id: 'level6', game: 'Golf' },
@@ -39,7 +39,7 @@ through the `updateData` method in `filtering` event.
     var query = new ej.Query().select(['game', 'id']);
     $(function () {
         $('#list').ejComboBox({
-            dataSource: empList,
+            dataSource: sportsData,
             query: query.take(5),
             fields: { text: 'game', value: 'id' },
             placeholder: 'Select a game',
@@ -48,7 +48,7 @@ through the `updateData` method in `filtering` event.
             filtering: function(e){
                 var query = new ej.Query().select(['game', 'id']);
                 query = (e.text !== '') ? query.where('game', 'startswith', e.text, true) : query;
-                e.updateData(empList, query);
+                e.updateData(sportsData, query);
             }
         });
     });
@@ -59,7 +59,7 @@ through the `updateData` method in `filtering` event.
 
 ![](Filtering_images/Filtering_image1.png)
 
-## Limit the minimum filter character
+## Limit The Minimum Filter Character
 
 When filtering the list items, you can set the limit for character count to raise remote request and fetch
 filtered data on the ComboBox. This can be done by manual validation within the filter event handler.
@@ -76,7 +76,7 @@ In the following example, the remote request does not fetch the search data unti
 	
 <script type="text/javascript">
 
-    var empList = [
+    var sportsData = [
         { id: 'level1', game: 'American Football' }, { id: 'level2', game: 'Badminton' },
         { id: 'level3', game: 'Basketball' }, { id: 'level4', game: 'Cricket' },
         { id: 'level5', game: 'Football' }, { id: 'level6', game: 'Golf' },
@@ -86,7 +86,7 @@ In the following example, the remote request does not fetch the search data unti
     var query = new ej.Query().select(['game', 'id']);
     $(function () {
         $('#list').ejComboBox({
-            dataSource: empList,
+            dataSource: sportsData,
             query: query.take(5),
             fields: { text: 'game', value: 'id' },
             placeholder: 'Select a game',
@@ -94,14 +94,14 @@ In the following example, the remote request does not fetch the search data unti
             allowFiltering: true,
             filtering: function(e){
                 // load overall data when search key empty.
-                if(e.text == '') e.updateData(empList);
+                if(e.text == '') e.updateData(sportsData);
                 else{
                     // restrict the remote request until search key contains 3 characters.
                     if (e.text.length < 3) { return; }
                     var query = new ej.Query().select(['country', 'id']);
 
                     query = (e.text !== '') ? query.where('country', 'startswith', e.text, true) : query;
-                    e.updateData(empList, query);
+                    e.updateData(sportsData, query);
                 }
             }
         });
@@ -113,7 +113,7 @@ In the following example, the remote request does not fetch the search data unti
 
 ![](Filtering_images/Filtering_image2.png)
 
-## Change the filter type
+## Change The Filter Type
 
 While filtering, you can change the filter type to `contains`,
 `startsWith`, or `endsWith` for string type within the filter event handler.
@@ -130,7 +130,7 @@ In the following examples, data filtering is done with `endsWith` type.
 	
 <script type="text/javascript">
 
-    var empList = [
+    var sportsData = [
         { id: 'level1', game: 'American Football' }, { id: 'level2', game: 'Badminton' },
         { id: 'level3', game: 'Basketball' }, { id: 'level4', game: 'Cricket' },
         { id: 'level5', game: 'Football' }, { id: 'level6', game: 'Golf' },
@@ -140,7 +140,7 @@ In the following examples, data filtering is done with `endsWith` type.
     var query = new ej.Query().select(['game', 'id']);
     $(function () {
         $('#list').ejComboBox({
-            dataSource: empList,
+            dataSource: sportsData,
             query: query.take(5),
             fields: { text: 'game', value: 'id' },
             placeholder: 'Select a game',
@@ -148,11 +148,11 @@ In the following examples, data filtering is done with `endsWith` type.
             allowFiltering: true,
             filtering: function(e){
                 // load overall data when search key empty.
-                if(e.text == '') e.updateData(empList);
+                if(e.text == '') e.updateData(sportsData);
                 else{
                     var query = new ej.Query().select(['country', 'id']);
                     query = (e.text !== '') ? query.where('country', 'endswith', e.text, true) : query;
-                    e.updateData(empList, query);
+                    e.updateData(sportsData, query);
                 }
             }
         });
@@ -164,7 +164,7 @@ In the following examples, data filtering is done with `endsWith` type.
 
 ![](Filtering_images/Filtering_image3.png)
 
-## Case sensitive filtering
+## Case Sensitive Filtering
 
 Data items can be filtered either with or without case sensitivity using the DataManager. This can be done
 by passing the fourth optional parameter of the [where](https://help.syncfusion.com/api/js/ejquery#methods:where) clause.
@@ -181,7 +181,7 @@ The following example shows how to perform case-sensitive filter.
 	
 <script type="text/javascript">
 
-    var empList = [
+    var sportsData = [
         { id: 'level1', game: 'American Football' }, { id: 'level2', game: 'Badminton' },
         { id: 'level3', game: 'Basketball' }, { id: 'level4', game: 'Cricket' },
         { id: 'level5', game: 'Football' }, { id: 'level6', game: 'Golf' },
@@ -191,7 +191,7 @@ The following example shows how to perform case-sensitive filter.
     var query = new ej.Query().select(['game', 'id']);
     $(function () {
         $('#list').ejComboBox({
-            dataSource: empList,
+            dataSource: sportsData,
             query: query.take(5),
             fields: { text: 'game', value: 'id' },
             placeholder: 'Select a game',
@@ -199,12 +199,12 @@ The following example shows how to perform case-sensitive filter.
             allowFiltering: true,
             filtering: function(e){
                 // load overall data when search key empty.
-                if(e.text == '') e.updateData(empList);
+                if(e.text == '') e.updateData(sportsData);
                 else{
                     var query = new ej.Query().select(['country', 'id']);
                     //enable the case sensitive filtering by passing false to 4th parameter.
                     query = (e.text !== '') ? query.where('country', 'startswith', e.text, false) : query;
-                    e.updateData(empList, query);
+                    e.updateData(sportsData, query);
                 }
             }
         });

@@ -27,11 +27,11 @@ The below listed fields are the data collection fields which maps fields for the
 
 > When binding complex data to the ComboBox, fields should be mapped correctly. Otherwise, the selected item remains undefined.
 
-## Binding local data
+## Binding Local Data
 
 Local data can be represented in two ways as described below.
 
-### 1. Array of simple data
+### 1. Array of Simple Data
 
 The ComboBox has support to load array of primitive data such as strings and numbers. Here, both value and text field act the same.
 
@@ -60,7 +60,7 @@ The ComboBox has support to load array of primitive data such as strings and num
 		
 {% endhighlight %}
 
-### 2. Array of JSON data
+### 2. Array of JSON Data
 
 The ComboBox can generate its list items through an array of complex data. For this,
 the appropriate columns should be mapped to the [fields](https://help.syncfusion.com/api/js/ejcombobox#members:fields) property.
@@ -75,7 +75,7 @@ In the following example, `Id` column and `Game` column from complex data have b
 	
 {% highlight javascript %}	
 	
-var empList = [
+var sportsData = [
 	{ id: 'level1', game: 'American Football' }, { id: 'level2', game: 'Badminton' },
 	{ id: 'level3', game: 'Basketball' }, { id: 'level4', game: 'Cricket' },
 	{ id: 'level5', game: 'Football' }, { id: 'level6', game: 'Golf' },
@@ -84,7 +84,7 @@ var empList = [
 ];
 $(function () {
 	$("#list").ejComboBox({
-		dataSource: empList,
+		dataSource: sportsData,
 		fields: { text: 'game', value: 'id' },
 		width: '250px',
 		placeholder: 'Select a game',
@@ -94,7 +94,7 @@ $(function () {
 		
 {% endhighlight %}
 
-## Binding remote data
+## Binding Remote Data
 
 The ComboBox supports retrieval of data from remote data services with the help of [DataManager](https://help.syncfusion.com/js/datamanager/getting-started) component. The [Query](https://help.syncfusion.com/api/js/ejquery) property is used to fetch
 data from the database and bind it to the ComboBox.

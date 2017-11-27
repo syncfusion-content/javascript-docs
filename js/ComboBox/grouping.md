@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data binding in ComboBox widget for Syncfusion Essential JS
-description: Describes about the data binding in ComboBox widget for Syncfusion Essential JS
+title: Grouping in ComboBox widget for Syncfusion Essential JS
+description: Describes about the Grouping in ComboBox widget for Syncfusion Essential JS
 platform: js
 control: ComboBox
 documentation: ug
@@ -45,7 +45,7 @@ $(function () {
 		
 {% endhighlight %}
 
-## HTML select
+## HTML Select
 
 The ComboBox also supports grouping of list items under specific groups by initiating
 the `<select>` element using  `optgroup`. The nested items are wrapped based on

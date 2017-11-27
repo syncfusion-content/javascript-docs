@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data binding in ComboBox widget for Syncfusion Essential JS
-description: Describes about the data binding in ComboBox widget for Syncfusion Essential JS
+title: Cascading in ComboBox widget for Syncfusion Essential JS
+description: Describes about the Cascading, Autofill in ComboBox widget for Syncfusion Essential JS
 platform: js
 control: ComboBox
 documentation: ug
@@ -10,7 +10,7 @@ keywords: ComboBox, combobox, Cascading ComboBox, Autofill supported with ComboB
 
 # How To
 
-## Configure the Cascading ComboBox
+## Configure The Cascading ComboBox
 
 The cascading ComboBox is a series of ComboBox, where the value of one ComboBox depends
 upon  another's value. This can be configured by using the [change](https://help.syncfusion.com/api/js/ejcombobox#events:change) event of the parent ComboBox.
@@ -206,7 +206,7 @@ In the following sample, showcase that how to work autofill with ComboBox.
 	
 {% highlight javascript %}	
 	
-var empList = [
+var sportData = [
     { id: 'level1', game: 'American Football' }, { id: 'level2', game: 'Badminton' },
     { id: 'level3', game: 'Basketball' }, { id: 'level4', game: 'Cricket' },
     { id: 'level5', game: 'Football' }, { id: 'level6', game: 'Golf' },
@@ -215,7 +215,7 @@ var empList = [
 ];
 $(function () {
     $("#list").ejComboBox({
-        dataSource: empList,
+        dataSource: sportData,
         fields: { text: 'game', value: 'id' },
         width: '250px',
         autofill: true,

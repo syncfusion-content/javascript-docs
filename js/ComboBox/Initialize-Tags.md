@@ -3,7 +3,7 @@ layout: post
 title: Rendering Mode in ComboBox widget for Syncfusion Essential JS
 description: Describes about rendering mode in ComboBox widget for Syncfusion Essential JS.
 platform: js
-control: DropDownList
+control: ComboBox
 documentation: ug
 keywords: Rendering, ComboBox, Initialize Tags, Rendering Mode
 ---
@@ -15,7 +15,7 @@ The ComboBox can be initialized on three different tags as described in below. T
 *  Using an input element 
 *  Using a select element 
 
-## Using an input element
+## Using An Input Element
 
 The ComboBox has also be rendered through `<input>` element with an array of either simple or complex data that is set through the dataSource property. It can retrieve data from local data sources as well as remote data services.
 

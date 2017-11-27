@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started with ComboBox widget for Syncfusion Essential JS
-description: To get start with ComboBox by adding references.
+title: Localization with ComboBox widget for Syncfusion Essential JS
+description: Describes about the Localization in ComboBox widget for Syncfusion Essential JS.
 platform: js
 control: ComboBox
 documentation: ug
@@ -20,7 +20,7 @@ The Localization library allows you to localize static text content of the
 | noRecordsTemplate |  No records found |
 | actionFailureTemplate | The request failed |
 
-## Loading translations
+## Loading Translations
 
 To load translation object to your application, use `load` function of **L10n** class.
 

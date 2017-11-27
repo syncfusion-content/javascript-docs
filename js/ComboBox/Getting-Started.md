@@ -48,7 +48,7 @@ For getting started you can use the ‘ej.web.all.min.js’ file, which encapsul
 For themes, you can use the ‘ej.web.all.min.css’ CDN link from the snippet given. To add the themes in your application, please refer [this link](https://help.syncfusion.com/js/theming-in-essential-javascript-components#adding-specific-theme-to-your-application).
 
 
-## Preparing HTML document
+## Preparing HTML Document
 
 Create a new HTML file and add [CDN](https://help.syncfusion.com/js/cdn) links to the [JavaScript](https://help.syncfusion.com/js/dependencies) and [CSS](https://help.syncfusion.com/js/theming-in-essential-javascript-components) dependencies to your project.
 
@@ -108,7 +108,7 @@ Add the HTML input element that needs to be initialized as ComboBox in sample.ht
 			
 {% endhighlight %}
 
-## Binding data source
+## Binding Data Source
 
 After initializing, populate the ComboBox with data using the [dataSource](https://help.syncfusion.com/api/js/ejcombobox#members:datasource) property. Here, employee list object is passed to the ComboBox component.	
 	
@@ -120,7 +120,7 @@ After initializing, populate the ComboBox with data using the [dataSource](https
 		
 {% highlight javascript %}	
 
-var empList = [
+var sportsData = [
 	{ id: 'level1', game: 'American Football' }, { id: 'level2', game: 'Badminton' },
 	{ id: 'level3', game: 'Basketball' }, { id: 'level4', game: 'Cricket' },
 	{ id: 'level5', game: 'Football' }, { id: 'level6', game: 'Golf' },
@@ -129,7 +129,7 @@ var empList = [
 ];
 $(function () {
 	$("#list").ejComboBox({
-		dataSource: empList,
+		dataSource: sportsData,
 		fields: { text: 'game', value: 'id' },
 		width: '250px',
 		placeholder: 'Select a game',
@@ -143,7 +143,7 @@ After completing the configuration required to render a basic ComboBox, run the 
 	
 ![](Getteing-Started_images/Getteing-Started_img1.png)
 
-## Custom values
+## Custom Values
 
 The ComboBox allows the user to give input as custom value which is not required to present in predefined set of values. By default, this support is enabled by [allowCustom](https://help.syncfusion.com/api/js/ejcombobox#members:allowcustom) property. In this case, both text field and value field considered as same. The custom value will be sent to post back handler when a form is about to be submitted.
 
@@ -177,7 +177,7 @@ $(function () {
 		
 {% endhighlight %}
 
-## Configure the popup list
+## Configure The Popup List
 
 By default, the width of the popup list automatically adjusts according to the ComboBox input element's width, and the height of the popup list has '300px'.
 
