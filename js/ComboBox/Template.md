@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Templates in ComboBox widget for Syncfusion Essential JS
-description: Describes about the Templates in ComboBox widget for Syncfusion Essential JS
+description: Describes about the templates in ComboBox widget for Syncfusion Essential JS
 platform: js
 control: ComboBox
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Grouping in ComboBox widget for Syncfusion Essential JS
-description: Describes about the Grouping in ComboBox widget for Syncfusion Essential JS
+description: Describes about the grouping in ComboBox widget for Syncfusion Essential JS
 platform: js
 control: ComboBox
 documentation: ug

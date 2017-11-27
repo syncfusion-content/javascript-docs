@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Cascading in ComboBox widget for Syncfusion Essential JS
-description: Describes about the Cascading, Autofill in ComboBox widget for Syncfusion Essential JS
+description: Describes about the cascading, autofill in ComboBox widget for Syncfusion Essential JS
 platform: js
 control: ComboBox
 documentation: ug

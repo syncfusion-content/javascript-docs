@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Accessibility Features of ComboBox widget for Syncfusion Essential JS
-description: Describes about the Accessibility in ComboBox widget for Syncfusion Essential JS.
+description: Describes about the accessibility in ComboBox widget for Syncfusion Essential JS.
 platform: js
 control: ComboBox
 documentation: ug

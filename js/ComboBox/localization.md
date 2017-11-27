@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Localization with ComboBox widget for Syncfusion Essential JS
-description: Describes about the Localization in ComboBox widget for Syncfusion Essential JS.
+description: Describes about the localization in ComboBox widget for Syncfusion Essential JS.
 platform: js
 control: ComboBox
 documentation: ug
