@@ -107,6 +107,8 @@ $(function () {
 		
 {% endhighlight %}
 
+![](Templates_images/Templates_image6.png)
+
 ## Header template
 
 The header element is shown statically at the top of the popup list items within the
@@ -296,6 +298,8 @@ In the following sample, popup list content displays the notification of no data
 
 {% endhighlight %}
 
+![](Templates_images/Templates_image4.png)
+
 ## Action failure template
 
 There is also an option to custom design the popup list content when the data fetch request
@@ -352,3 +356,5 @@ In the following sample, when the data fetch request fails, the ComboBox display
      </style>
 
 {% endhighlight %}
+
+![](Templates_images/Templates_image5.png)

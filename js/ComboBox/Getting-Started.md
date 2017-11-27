@@ -13,7 +13,6 @@ keywords: ComboBox, ComboBox, Populating data
 The external script dependencies of the ComboBox widget are,
 
 * [jQuery 1.7.1](http://jquery.com/) and later versions.
-* [jQuery.easing](http://gsgd.co.uk/sandbox/jquery/easing/) - to support the animation effects.
 
 And the internal script dependencies of the ComboBox widget are:
 
@@ -37,6 +36,10 @@ And the internal script dependencies of the ComboBox widget are:
 	<tr>
 		<td>ej.scroller.min.js</td>
 		<td>Should be referred when using scrolling in ComboBox.</td>
+	</tr>
+	<tr>
+		<td>ej.globalize.min.js</td>
+		<td>processing specific source-side actions globally.</td>
 	</tr>
 </table>
 

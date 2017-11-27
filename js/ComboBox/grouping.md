@@ -82,6 +82,8 @@ $(function () {
 
 {% endhighlight %}
 
+![](RenderingMode_images/RenderingMode_img1.jpeg)
+
 ## Customization
 
 The grouping header is also provided with customization option. This allows custom designing using the `groupTemplate` property for both inline and fixed headers as referred here:
