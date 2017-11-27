@@ -10,7 +10,7 @@ api : /api/js/ejchart
 
 # Axis
 
-**Charts** typically have two axes that are used to measure and categorize data: a vertical (y) [`primaryYAxis`](..api/ejchart#members:primaryyaxis), and a horizontal (x) [`primaryXAxis`](..api/ejchart#members:primaryxaxis).
+**Charts** typically have two axes that are used to measure and categorize data: a vertical (y) [`primaryYAxis`](../api/ejchart#members:primaryyaxis), and a horizontal (x) [`primaryXAxis`](../api/ejchart#members:primaryxaxis).
 
 Vertical axis always uses numerical or logarithmic scale. Horizontal(x) axis supports the following types of scale:
 
