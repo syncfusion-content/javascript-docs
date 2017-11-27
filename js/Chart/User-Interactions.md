@@ -467,7 +467,7 @@ X and Y values displayed in the trackball tooltip are formatted based on its axi
 
 ### Customizing the Trackball Tooltip 
 
-The  [`trackballTooltipSettings`](api/js/ejchart#members:crosshair-trackballtooltipsettings) property is used for displaying the trackball tooltip.
+The  [`trackballTooltipSettings`](../api/js/ejchart#members:crosshair-trackballtooltipsettings) property is used for displaying the trackball tooltip.
 
 #### Mode
 You can able to show the trackball tooltip in two modes, using [`mode`](../api/ejchart#members:crosshair-trackballtooltipsettings-mode) property.
@@ -477,8 +477,8 @@ You can able to show the trackball tooltip in two modes, using [`mode`](../api/e
 
 #### Border
 
-The border of the trackball tooltip can be customized by using the [`border`](api/js/ejchart#members:crosshair-trackballtooltipsettings-border) property.
-The width and color of the border can be customized using the  [`width`](api/js/ejchart#members:crosshair-trackballtooltipsettings-border-width) and [`color`](api/js/ejchart#members:crosshair-trackballtooltipsettings-border-color) properties
+The border of the trackball tooltip can be customized by using the [`border`](../api/js/ejchart#members:crosshair-trackballtooltipsettings-border) property.
+The width and color of the border can be customized using the  [`width`](../api/js/ejchart#members:crosshair-trackballtooltipsettings-border-width) and [`color`](../api/js/ejchart#members:crosshair-trackballtooltipsettings-border-color) properties
 
 
 #### Fill,Rx,Ry,Opacity

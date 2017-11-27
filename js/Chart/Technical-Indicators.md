@@ -379,7 +379,7 @@ To render the TMA indicator, you should specify the [`indicators.type`](../api/e
 ## Enable Tooltip 
 
 To display the indicator tooltip, use [`visible`](../api/ejchart#members:indicators-tooltip) option of the [`indicators-tooltip`](../api/ejchart#members:indicators-tooltip). 
-Also, you can change and customize the tooltip [`color`](../api/ejchart#members:indicators-tooltip-fill), [`border`](../api/ejchart#members:indicators-tooltip-border), [`format`](../api/ejchart#members:indicators-tooltip-format) and [`font`](api/js/ejchart#members:indicators-tooltip-font) properties similar to the series tooltip.
+Also, you can change and customize the tooltip [`color`](../api/ejchart#members:indicators-tooltip-fill), [`border`](../api/ejchart#members:indicators-tooltip-border), [`format`](../api/ejchart#members:indicators-tooltip-format) and [`font`](../api/js/ejchart#members:indicators-tooltip-font) properties similar to the series tooltip.
 
 {% highlight javascript %}
 
