@@ -88,9 +88,9 @@ Execute the above code to render the following output.
 
 **Colors and Border**
 
-* The **Scale** border is modified with **border** object. It has two border property, [`color`](../api/js/ejlineargauge#members:scales-border-color) and [`width`](../api/js/ejlineargauge#members:scales-border-width)  are used to customize the border color of the scale and border width of the scale. Setting the background color improves the look and feel of the **Linear Gauge**. You can customize the background color of the scale using [`backgroundColor`](../api/js/ejlineargauge#members:scales-backgroundcolor). 
+* The **Scale** border is modified with **border** object. It has two border property, [`color`](../api/ejlineargauge#members:scales-border-color) and [`width`](../api/ejlineargauge#members:scales-border-width)  are used to customize the border color of the scale and border width of the scale. Setting the background color improves the look and feel of the **Linear Gauge**. You can customize the background color of the scale using [`backgroundColor`](../api/ejlineargauge#members:scales-backgroundcolor). 
 
-* Scales are used to enable or disable various properties such as [`showRanges`](../api/js/ejlineargauge#members:scales-showranges), [`showIndicators`](../api/js/ejlineargauge#members:scales-showindicators), [`showCustomLabels`](../api/js/ejlineargauge#members:scales-showcustomlabels), [`showLabels`](../api/js/ejlineargauge#members:scales-showlabels), [`showTicks`](../api/js/ejlineargauge#members:scales-showticks), [`showBarPointers`](../api/js/ejlineargauge#members:scales-showbarpointers) and [`showMarkerPointers`](../api/js/ejlineargauge#members:scales-showmarkerpointers). Enable/disable is done by setting the property into two states either “**true**” or “**false**”. You can adjust the Opacity of the scale with [`opacity`](../api/js/ejlineargauge#members:scales-opacity) property.
+* Scales are used to enable or disable various properties such as [`showRanges`](../api/ejlineargauge#members:scales-showranges), [`showIndicators`](../api/ejlineargauge#members:scales-showindicators), [`showCustomLabels`](../api/ejlineargauge#members:scales-showcustomlabels), [`showLabels`](../api/ejlineargauge#members:scales-showlabels), [`showTicks`](../api/ejlineargauge#members:scales-showticks), [`showBarPointers`](../api/ejlineargauge#members:scales-showbarpointers) and [`showMarkerPointers`](../api/ejlineargauge#members:scales-showmarkerpointers). Enable/disable is done by setting the property into two states either “**true**” or “**false**”. You can adjust the Opacity of the scale with [`opacity`](../api/ejlineargauge#members:scales-opacity) property.
 
 
 {% highlight html %}
@@ -152,9 +152,9 @@ Execute the above code to render the following output.
 
 ## Appearance 
 
-* You can improve the appearance of **Linear Gauge** using various properties. You can set the interval values for the scale with [`majorIntervalValue`](../api/js/ejlineargauge#members:scales-majorintervalvalue) and [`minorIntervalValue`](../api/js/ejlineargauge#members:scales-minorintervalvalue) properties and maximum and minimum value by [`minimum`](../api/js/ejlineargauge#members:scales-minimum) and [`maximum`](../api/js/ejlineargauge#members:scales-maximum) property. The [`width`](../api/js/ejlineargauge#members:scales-width) property is used to set the scale bar width. 
+* You can improve the appearance of **Linear Gauge** using various properties. You can set the interval values for the scale with [`majorIntervalValue`](../api/ejlineargauge#members:scales-majorintervalvalue) and [`minorIntervalValue`](../api/ejlineargauge#members:scales-minorintervalvalue) properties and maximum and minimum value by [`minimum`](../api/ejlineargauge#members:scales-minimum) and [`maximum`](../api/ejlineargauge#members:scales-maximum) property. The [`width`](../api/ejlineargauge#members:scales-width) property is used to set the scale bar width. 
 
-* You can also adjust the Opacity of the scale with [`opacity`](../api/js/ejlineargauge#members:scales-opacity) property. The value for opacity lies between 0 and 1.**Linear Gauge** contains two scale directions, clockwise and counter clockwise. It can be set with [`direction`](../api/js/ejlineargauge#members:scales-direction) property**.**
+* You can also adjust the Opacity of the scale with [`opacity`](../api/ejlineargauge#members:scales-opacity) property. The value for opacity lies between 0 and 1.**Linear Gauge** contains two scale directions, clockwise and counter clockwise. It can be set with [`direction`](../api/ejlineargauge#members:scales-direction) property**.**
 
 
 {% highlight html %}
@@ -221,7 +221,7 @@ Execute the above code to render the following output.
 
 ## Scale Types
 
-Scale Type is an element which decides the appearance of the gauge**. Linear Gauge** contains three scale [`type`](../api/js/ejlineargauge#members:scales-type) such as,
+Scale Type is an element which decides the appearance of the gauge**. Linear Gauge** contains three scale [`type`](../api/ejlineargauge#members:scales-type) such as,
 
 * Rectangle
 
@@ -231,7 +231,7 @@ Scale Type is an element which decides the appearance of the gauge**. Linear Gau
 
 **Rectangle**
 
-For rectangular scale [`type`](../api/js/ejlineargauge#members:scales-type), the scale renders with rectangular structure. Refer the following code example.
+For rectangular scale [`type`](../api/ejlineargauge#members:scales-type), the scale renders with rectangular structure. Refer the following code example.
 
 {% highlight html %}
 
@@ -283,7 +283,7 @@ Execute the above code to render the following output.
 
 **Rounded Rectangle**
 
-For rounded rectangular scale [`type`](../api/js/ejlineargauge#members:scales-type), the scale renders as rectangular structure but with constant radius rounded corner. Refer the following code example.
+For rounded rectangular scale [`type`](../api/ejlineargauge#members:scales-type), the scale renders as rectangular structure but with constant radius rounded corner. Refer the following code example.
 
 
 {% highlight html %}
@@ -336,7 +336,7 @@ Execute the above code to render the following output.
 
 **Thermometer**
 
-For thermometer scale [`type`](../api/js/ejlineargauge#members:scales-type), the scale renders as thermometer structure with rounded bottom. Refer the following code example.
+For thermometer scale [`type`](../api/ejlineargauge#members:scales-type), the scale renders as thermometer structure with rounded bottom. Refer the following code example.
 
 
 {% highlight html %}
