@@ -213,7 +213,7 @@ When the Map is double-tapped by using mouse, the zoom in operation is performed
 
 ### Shape Selection
 
-Map shape is zoomed to the whole Map area on the shape selected. Animation can be applied for that zooming by using the [`enableAnimation`](../api/js/ejmap#members:enableanimation) property as true. 
+Map shape is zoomed to the whole Map area on the shape selected. Animation can be applied for that zooming by using the [`enableAnimation`](../api/ejmap#members:enableanimation) property as true. 
 
 You can enable this feature by setting [`enableZoomOnSelection`](../api/ejmap#members:zoomsettings-enablezoomonselection) property value as ‘_True_’. 
 
@@ -402,7 +402,7 @@ Specifies the navigation control template for map, you can use [`content`](../ap
 
 ### Animation
 
- **Animation** is enabled or disabled using [`enable animation`](../api/jejmap#members:enableanimation) property. 
+ **Animation** is enabled or disabled using [`enable animation`](../api/ejmap#members:enableanimation) property. 
 
 {% highlight javascript %}
 
