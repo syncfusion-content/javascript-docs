@@ -259,7 +259,7 @@ The **JSON** object “populationData” is used as dataSource in the following 
 
 ## Customize Map Appearance 
 
-You can customize the shape’s color by using [`fill`](../api/jejmap#members:layers-shapesettings-fill), [`stroke`](../api/ejmap#members:layers-shapesettings-stroke) and [`strokeThickness`](../api/ejmap#members:layers-shapesettings-strokethickness) properties in [`shapeSettings`](../api/ejmap#members:layers-shapesettings).
+You can customize the shape’s color by using [`fill`](../api/ejmap#members:layers-shapesettings-fill), [`stroke`](../api/ejmap#members:layers-shapesettings-stroke) and [`strokeThickness`](../api/ejmap#members:layers-shapesettings-strokethickness) properties in [`shapeSettings`](../api/ejmap#members:layers-shapesettings).
 
 {% highlight html %}
 
@@ -363,7 +363,7 @@ The following screenshot illustrates a map with gradient color property enabled.
 
 ## Enable Tooltip
 
-The tooltip is displayed only when the [`showTooltip`](../api/js/ejmap#members:layers-showtooltip) is set to “**True**” in the `layers`. By default, it takes the property of the bound object that is referred in the `valuePath` and displays its content on hovering the corresponding shape. The [`tooltipTemplate`](../api/ejmap#members:layers-tooltiptemplate) property is used for customizing the template for tooltip.	
+The tooltip is displayed only when the [`showTooltip`](../api/ejmap#members:layers-showtooltip) is set to “**True**” in the `layers`. By default, it takes the property of the bound object that is referred in the `valuePath` and displays its content on hovering the corresponding shape. The [`tooltipTemplate`](../api/ejmap#members:layers-tooltiptemplate) property is used for customizing the template for tooltip.	
 
 {% highlight html %}
 
@@ -397,7 +397,7 @@ A Legend can be made visible by setting the [`showLegend`](../api/ejmap#members:
 
 ### Interactive Legend
 
-The legends can be made interactive with an arrow mark indicating the exact range color in the legend, when the mouse hovers on the corresponding shape. You can enable this option by setting the `mode` property in the `legendSettings` value as "**interactive**". The default value of [`mode`](../api/js/ejmap#members:layers-legendsettings-mode) property is "**default**" to enable the normal legend.
+The legends can be made interactive with an arrow mark indicating the exact range color in the legend, when the mouse hovers on the corresponding shape. You can enable this option by setting the `mode` property in the `legendSettings` value as "**interactive**". The default value of [`mode`](../api/ejmap#members:layers-legendsettings-mode) property is "**default**" to enable the normal legend.
 
 #### Title
 
