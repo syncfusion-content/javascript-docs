@@ -60,7 +60,7 @@ You can enable this feature by defining the [`layerType`](../api/ejmap#members:l
 
 ### Key
 
-The bing Map key is provided as input to this [`key`](..../api/ejmap#members:layers-key) property. The Bing Map key can be obtained from [http://www.microsoft.com/maps/create-a-bing-maps-key.aspx](http://www.microsoft.com/maps/create-a-bing-maps-key.aspx).
+The bing Map key is provided as input to this [`key`](../api/ejmap#members:layers-key) property. The Bing Map key can be obtained from [http://www.microsoft.com/maps/create-a-bing-maps-key.aspx](http://www.microsoft.com/maps/create-a-bing-maps-key.aspx).
 
 ![](/js/Maps/Map-Providers_images/Map-Providers_img2.png)
 
