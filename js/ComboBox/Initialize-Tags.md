@@ -10,10 +10,10 @@ keywords: Rendering, ComboBox, Initialize Tags, Rendering Mode
 
 # Initialize Tags
 
-The ComboBox can be initialized on three different tags as described in below. Though it is initialized in different tags, the UI appearance and built-in features behave in the same way.
+The ComboBox can be initialized on two different tags as described in below. Though it is initialized in different tags, the UI appearance and built-in features behave in the same way.
 
-*  Using an input element 
-*  Using a select element 
+*  Using an `<INPUT>` element 
+*  Using a `<SELECT>` element 
 
 ## Using an Input Element
 
