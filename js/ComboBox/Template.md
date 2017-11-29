@@ -10,14 +10,11 @@ keywords: ComboBox, combobox, Item template, Group template, Header template, Fo
 
 # Templates
 
-The ComboBox has been provided with several options to customize each list item, group title,
-selected value, header, and footer elements. 
+The ComboBox has been provided with several options to customize each list item, group title, selected value, header, and footer elements. 
 
 ## Item template
 
-The content of each list item within the ComboBox can be customized with the
-help of [itemTemplate](https://help.syncfusion.com/api/js/ejcombobox#members:itemtemplate)
-property.
+The content of each list item within the ComboBox can be customized with the help of [itemTemplate](https://help.syncfusion.com/api/js/ejcombobox#members:itemtemplate) property.
 
 In the following sample, each list item is split into two columns to display relevant data's.
 
@@ -71,9 +68,8 @@ $(function () {
 
 ## Group template
 
-The group header title under which appropriate sub-items are categorized can also be
-customize with the help of
-[groupTemplate](https://help.syncfusion.com/api/js/ejcombobox#members:grouptemplate) property.
+The group header title under which appropriate sub-items are categorized can also be customize with the help of [groupTemplate](https://help.syncfusion.com/api/js/ejcombobox#members:grouptemplate) property.
+
 This template is common for both inline and floating group header template.
 
 In the following sample, vegetables are grouped according to the category.
@@ -111,12 +107,9 @@ $(function () {
 
 ## Header template
 
-The header element is shown statically at the top of the popup list items within the
-ComboBox, and any custom element can be placed as a header element using the
-[headerTemplate](https://help.syncfusion.com/api/js/ejcombobox#members:headertemplate) property.
+The header element is shown statically at the top of the popup list items within the ComboBox, and any custom element can be placed as a header element using the [headerTemplate](https://help.syncfusion.com/api/js/ejcombobox#members:headertemplate) property.
 
-In the following sample, the list items and its headers are designed and displayed as two columns
-similar to multiple columns of the grid.
+In the following sample, the list items and its headers are designed and displayed as two columns similar to multiple columns of the grid.
 
 {% highlight html %}
 	
@@ -191,8 +184,7 @@ $(function () {
 
 ## Footer template
 
-The ComboBox has options to show a footer element at the bottom of the list items in the popup list.
-Here, you can place any custom element as a footer element using the [footerTemplate](https://help.syncfusion.com/api/js/ejcombobox#members:footertemplate) property.
+The ComboBox has options to show a footer element at the bottom of the list items in the popup list. Here, you can place any custom element as a footer element using the [footerTemplate](https://help.syncfusion.com/api/js/ejcombobox#members:footertemplate) property.
 
 In the following sample, footer element displays the total number of list items present in the ComboBox.
 
@@ -255,9 +247,7 @@ $(function () {
 
 ## No records template
 
-The ComboBox is provided with support to custom design the popup list content when no data is found
-and no matches found on search with the help of
-[noRecordsTemplate](https://help.syncfusion.com/api/js/ejcombobox#members:norecordstemplate) property.
+The ComboBox is provided with support to custom design the popup list content when no data is found and no matches found on search with the help of [noRecordsTemplate](https://help.syncfusion.com/api/js/ejcombobox#members:norecordstemplate) property.
 
 In the following sample, popup list content displays the notification of no data available.
 
@@ -302,9 +292,7 @@ In the following sample, popup list content displays the notification of no data
 
 ## Action failure template
 
-There is also an option to custom design the popup list content when the data fetch request
-fails at the remote server. This can be achieved using the
-[actionFailureTemplate](https://help.syncfusion.com/api/js/ejcombobox#members:actionfailuretemplate) property.
+There is also an option to custom design the popup list content when the data fetch request fails at the remote server. This can be achieved using the [actionFailureTemplate](https://help.syncfusion.com/api/js/ejcombobox#members:actionfailuretemplate) property.
 
 In the following sample, when the data fetch request fails, the ComboBox displays the notification.
 
