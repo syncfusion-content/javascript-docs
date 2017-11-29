@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Filtering
-description: filtering
+title: Filtering in DataManager widget for Syncfusion Javascript
+description: Describes about Filtering in DataManager control.
 platform: js
 control: DataManager
 documentation: ug
@@ -632,3 +632,304 @@ Result of the above code example is illustrated as follows.
 
 ![](Filtering_images/Filtering_img11.png) 
 
+## Containment Operators
+
+### notcontains
+
+This operator is used to get the records that not contains the filter value.
+
+{% highlight html %}
+
+    <div class="datatable">
+        <table id="table1" class=" table table-striped table-bordered" style="width:700px">
+            <thead>
+                <tr>
+                    <th>Order ID</th>
+                    <th>Customer ID</th>
+                    <th>Employee ID</th>
+                    <th>Freight</th>
+                    <th>Ship Country</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <script type="text/javascript">
+        $(function () {// Document is ready.
+            var dataManager = ej.DataManager({
+                url: "http://mvc.syncfusion.com/Services/Northwnd.svc/"
+            });
+
+            var query = ej.Query()
+                .from("Orders").select("OrderID", "CustomerID", " EmployeeID", "Freight", "ShipCountry")
+                .page(1,5).where("ShipCountry", "notcontains", "CAN", false);
+
+            var execute = dataManager.executeQuery(query) // executing query
+                    .done(function (e) {
+                        $("#table1 tbody").html($("#tableTemplate").render(e.result));
+                    });
+        });
+    </script>
+    <script id="tableTemplate" type="text/x-jsrender">
+        <tr>
+            <td>{{"{{"}}>OrderID{{}}}}</td>
+            <td>{{"{{"}}>CustomerID{{}}}}</td>
+            <td>{{"{{"}}>EmployeeID{{}}}}</td>
+            <td>{{"{{"}}>Freight{{}}}}</td>
+            <td>{{"{{"}}>ShipCountry{{}}}}</td>       
+        </tr>
+    </script>
+
+{% endhighlight %}
+
+![](Filtering_images/Filtering_image111.png) 
+
+### contains
+
+This operator is used to get the records that contains the filter value.
+
+{% highlight html %}
+
+    <div class="datatable">
+        <table id="table1" class=" table table-striped table-bordered" style="width:700px">
+            <thead>
+                <tr>
+                    <th>Order ID</th>
+                    <th>Customer ID</th>
+                    <th>Employee ID</th>
+                    <th>Freight</th>
+                    <th>Ship Country</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <script type="text/javascript">
+        $(function () {// Document is ready.
+            var dataManager = ej.DataManager({
+                url: "http://mvc.syncfusion.com/Services/Northwnd.svc/"
+            });
+
+            var query = ej.Query()
+                .from("Orders").select("OrderID", "CustomerID", " EmployeeID", "Freight", "ShipCountry")
+                .page(1, 5).where("ShipCountry", "contains", "CAN", false);
+
+            var execute = dataManager.executeQuery(query) // executing query
+                    .done(function (e) {
+                        $("#table1 tbody").html($("#tableTemplate").render(e.result));
+                    });
+        });
+    </script>
+    <script id="tableTemplate" type="text/x-jsrender">
+        <tr>
+            <td>{{"{{"}}>OrderID{{}}}}</td>
+            <td>{{"{{"}}>CustomerID{{}}}}</td>
+            <td>{{"{{"}}>EmployeeID{{}}}}</td>
+            <td>{{"{{"}}>Freight{{}}}}</td>
+            <td>{{"{{"}}>ShipCountry{{}}}}</td>       
+        </tr>
+    </script>
+
+{% endhighlight %}
+
+![](Filtering_images/Filtering_image12.png) 
+
+### in
+
+This operator used to fetch the records with value match with the given filter value. 
+
+{% highlight html %}
+
+    <div class="datatable">
+        <table id="table1" class=" table table-striped table-bordered" style="width:700px">
+            <thead>
+                <tr>
+                    <th>Order ID</th>
+                    <th>Customer ID</th>
+                    <th>Employee ID</th>
+                    <th>Freight</th>
+                    <th>Ship Country</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <script type="text/javascript">
+            var dataManager = ej.DataManager({
+            url: "http://mvc.syncfusion.com/Services/Northwnd.svc/"
+        });
+
+        var query = ej.Query()
+            .from("Orders").select("OrderID", "CustomerID", " EmployeeID", "Freight", "ShipCountry")
+            .page(1, 5).where("ShipCountry", "IN", ['INDIA'], false);
+
+        var execute = dataManager.executeQuery(query) // executing query
+                .done(function (e) {
+                    $("#table1 tbody").html($("#tableTemplate").render(e.result));
+                });
+
+        });
+    </script>
+    <script id="tableTemplate" type="text/x-jsrender">
+        <tr>
+            <td>{{"{{"}}>OrderID{{}}}}</td>
+            <td>{{"{{"}}>CustomerID{{}}}}</td>
+            <td>{{"{{"}}>EmployeeID{{}}}}</td>
+            <td>{{"{{"}}>Freight{{}}}}</td>
+            <td>{{"{{"}}>ShipCountry{{}}}}</td>       
+        </tr>
+    </script>
+
+{% endhighlight %}
+
+![](Filtering_images/Filtering_image13.png) 
+
+### notin
+
+This operator used to fetch the records with value not match with the given filter value. 
+
+{% highlight html %}
+
+    <div class="datatable">
+        <table id="table1" class=" table table-striped table-bordered" style="width:700px">
+            <thead>
+                <tr>
+                    <th>Order ID</th>
+                    <th>Customer ID</th>
+                    <th>Employee ID</th>
+                    <th>Freight</th>
+                    <th>Ship Country</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <script type="text/javascript">
+            var dataManager = ej.DataManager({
+            url: "http://mvc.syncfusion.com/Services/Northwnd.svc/"
+        });
+
+        var query = ej.Query()
+            .from("Orders").select("OrderID", "CustomerID", " EmployeeID", "Freight", "ShipCountry")
+            .page(1, 5).where("ShipCountry", "notin", ['INDIA'], false);
+
+        var execute = dataManager.executeQuery(query) // executing query
+                .done(function (e) {
+                    $("#table1 tbody").html($("#tableTemplate").render(e.result));
+                });
+
+        });
+    </script>
+    <script id="tableTemplate" type="text/x-jsrender">
+        <tr>
+            <td>{{"{{"}}>OrderID{{}}}}</td>
+            <td>{{"{{"}}>CustomerID{{}}}}</td>
+            <td>{{"{{"}}>EmployeeID{{}}}}</td>
+            <td>{{"{{"}}>Freight{{}}}}</td>
+            <td>{{"{{"}}>ShipCountry{{}}}}</td>       
+        </tr>
+    </script>
+
+{% endhighlight %}
+
+![](Filtering_images/Filtering_image14.png) 
+
+![](Filtering_images/Filtering_image15.png) 
+
+## Lambda Operators
+
+### aLL
+
+The ALL operator returns TRUE if all the sub query values meet the condition. This operator used to fetch the records of the fields match with the given value’s fields.
+
+{% highlight html %}
+
+    <div class="datatable">
+        <table id="table1" class=" table table-striped table-bordered" style="width:700px">
+            <thead>
+                <tr>
+                    <th>Order ID</th>
+                    <th>Customer ID</th>
+                    <th>Employee ID</th>
+                    <th>Freight</th>
+                    <th>Ship Country</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <script type="text/javascript">
+        var gridData=[{OrderID:10248,CustomerID:"VINET",EmployeeID:5,OrderDate:new Date(8364186e5),ShipName:"Vins et alcools Chevalier",ShipCity:"Reims",ShipAddress:"59 rue de l'Abbaye",ShipRegion:null,ShipPostalCode:"51100",ShipCountry:"France",Freight:32.38,Verified:!0}];
+        var Data= [{OrderID:10248,CustomerID:"VINET",EmployeeID:5,OrderDate:new Date(8364186e5),ShipName:"Vins et alcools Chevalier",ShipCity:"Reims",ShipAddress:"59 rue de l'Abbaye",ShipRegion:null,ShipPostalCode:"51100",ShipCountry:"France",Freight:32.38,Verified:!0}];
+        var dataManager = ej.DataManager(gridData);
+        var source = ej.DataManager(Data);
+        var result = ej.Query().select("ShipCountry")
+        var ShipCountry = source.executeLocal(result);
+        var query = ej.Query()            
+            .where("ShipCountry", "equal all",ShipCountry , false).select("OrderID", "CustomerID", "EmployeeID","Freight","ShipCountry");
+            var execute = dataManager.executeLocal(query); // executing query
+        $("#table1 tbody").html($("#tableTemplate").render(execute));        });
+
+    </script>
+    <script id="tableTemplate" type="text/x-jsrender">
+        <tr>
+            <td>{{"{{"}}>OrderID{{}}}}</td>
+            <td>{{"{{"}}>CustomerID{{}}}}</td>
+            <td>{{"{{"}}>EmployeeID{{}}}}</td>
+            <td>{{"{{"}}>Freight{{}}}}</td>
+            <td>{{"{{"}}>ShipCountry{{}}}}</td>       
+        </tr>
+    </script>
+
+{% endhighlight %}
+
+![](Filtering_images/Filtering_image16.png) 
+
+### any
+
+The ANY operator returns TRUE if any of the sub query values meet the condition. The returned data match with any one of the field in existing table.
+
+{% highlight html %}
+
+    <div class="datatable">
+        <table id="table1" class=" table table-striped table-bordered" style="width:700px">
+            <thead>
+                <tr>
+                    <th>Order ID</th>
+                    <th>Customer ID</th>
+                    <th>Employee ID</th>
+                    <th>Freight</th>
+                    <th>Ship Country</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <script type="text/javascript">
+          $(function () {// Document is ready.
+            var gridData = window.gridData;
+            var data = [{ OrderID: 10343, CustomerID: "LEHMS", EmployeeID: 4, OrderDate: new Date(8467002e5), ShipName: "Lehmanns Marktstand", ShipCity: "Frankfurt a.M.", ShipAddress: "Magazinweg 7", ShipRegion: null, ShipPostalCode: "60528", ShipCountry: "Germany", Freight: 110.37, Verified: !0 }, { OrderID: 10344, CustomerID: "WHITC", EmployeeID: 4, OrderDate: new Date(8467866e5), ShipName: "White Clover Markets", ShipCity: "Seattle", ShipAddress: "1029 - 12th Ave. S.", ShipRegion: "WA", ShipPostalCode: "98124", ShipCountry: "USA", Freight: 23.29, Verified: !1 }];
+
+            var dataManager = ej.DataManager(data);
+            var source = ej.DataManager(gridData1);
+            var result = ej.Query().select("ShipCountry")
+            var ShipCountry = source.executeLocal(result);
+            var query = ej.Query()
+			   .where("ShipCountry", "equal any", ShipCountry, false).select("OrderID", "CustomerID", "EmployeeID", "Freight", "ShipCountry");
+            var execute = dataManager.executeLocal(query); // executing query
+            $("#table1 tbody").html($("#tableTemplate").render(execute));  
+          }
+    </script>
+    <script id="tableTemplate" type="text/x-jsrender">
+        <tr>
+            <td>{{"{{"}}>OrderID{{}}}}</td>
+            <td>{{"{{"}}>CustomerID{{}}}}</td>
+            <td>{{"{{"}}>EmployeeID{{}}}}</td>
+            <td>{{"{{"}}>Freight{{}}}}</td>
+            <td>{{"{{"}}>ShipCountry{{}}}}</td>       
+        </tr>
+    </script>
+
+{% endhighlight %}
+
+![](Filtering_images/Filtering_image17.png) 
