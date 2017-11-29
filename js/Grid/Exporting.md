@@ -347,7 +347,7 @@ grid.ignoreOnExport.splice(grid.ignoreOnExport.indexOf('dataSource'), 1);
 
 ## ColumnTemplate Exporting
 
-To export the grid with template column we have to set `isTemplateColumnInclude` as true in the parameter of the export method. You can handle the template elements in server side event while exporting grid to various files such as Excel, PDF and Word.
+To export the grid with template column we have to set `IsTemplateColumnIncluded` as true in the parameter of the export method. You can handle the template elements in server side event while exporting grid to various files such as Excel, PDF and Word.
 
 The server side events available in template column exporting and its argument types are listed in the following table.
 
