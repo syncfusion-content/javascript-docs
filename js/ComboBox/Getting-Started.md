@@ -34,10 +34,6 @@ And the internal script dependencies of the ComboBox widget are:
 		<td>The ComboBox's main file</td>
 	</tr>
 	<tr>
-		<td>ej.scroller.min.js</td>
-		<td>Should be referred when using scrolling in ComboBox.</td>
-	</tr>
-	<tr>
 		<td>ej.globalize.min.js</td>
 		<td>processing specific source-side actions globally.</td>
 	</tr>
@@ -110,7 +106,7 @@ Add the HTML input element that needs to be initialized as ComboBox in sample.ht
 
 ## Binding Data Source
 
-After initializing, populate the ComboBox with data using the [dataSource](https://help.syncfusion.com/api/js/ejcombobox#members:datasource) property. Here, employee list object is passed to the ComboBox component.	
+After initializing, populate the ComboBox with data using the [dataSource](https://help.syncfusion.com/api/js/ejcombobox#members:datasource) property. Here, sportsData object is passed to the ComboBox component.	
 	
 {% highlight html %}
 	
