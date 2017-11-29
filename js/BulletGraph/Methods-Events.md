@@ -29,16 +29,6 @@ graphObj.destroy(); // destroy the graph
 {% endhighlight %}
 
 
-{% highlight html %}
- 
-<div id="bulletGraph1">BulletGraph</div> 
- 
-<script>
-// destroy the Bullet graph
-$("#bulletGraph1").ejButton("destroy"); 
-</script>
-
-{% endhighlight %}
 
 ## redraw()
 
@@ -59,44 +49,11 @@ graphObj.redraw(); // redraw the graph
 {% endhighlight %}
 
 
-{% highlight html %}
- 
-<div id="bulletGraph1">BulletGraph</div> 
- 
-<script>
-// redraw the Bullet graph
-$("#butbulletGraph1ton1").ejButton("redraw");   
-</script>
-
-{% endhighlight %}
 
 ## setComparativeMeasureSymbol(index, measure)
 
 To set the comparative measure in bullet graph, you can use [`setComparativeMeasureSymbol`](../api/ejbulletgraph#methods:setcomparativemeasuresymbol) method.
 
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-index{% endhighlight %}</td>
-<td class="type"><span class="param-type">number</span></td>
-<td class="description last">value for the graph</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-measure{% endhighlight %}</td>
-<td class="type"><span class="param-type">number</span></td>
-<td class="description last">value for the graph</td>
-</tr>
-</tbody>
-</table>
 
 #### Returns: void
 
@@ -128,29 +85,6 @@ $("#bulletGraph1").ejBulletGraph("setComparativeMeasureSymbol(1,7)");
 
 To set the value for feature measure bar, you can use [`setFeatureMeasureBarValue`](../api/ejbulletgraph#methods:setfeaturemeasurebarvalue) method.
 
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-index{% endhighlight %}</td>
-<td class="type"><span class="param-type">number</span></td>
-<td class="description last">value for the graph</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-measure{% endhighlight %}</td>
-<td class="type"><span class="param-type">number</span></td>
-<td class="description last">value for the graph</td>
-</tr>
-</tbody>
-</table>
 
 #### Returns: void
 
