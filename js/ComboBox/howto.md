@@ -12,13 +12,10 @@ keywords: ComboBox, combobox, Cascading ComboBox, Autofill supported with ComboB
 
 ## Configure the Cascading ComboBox
 
-The cascading ComboBox is a series of ComboBox, where the value of one ComboBox depends
-upon  another's value. This can be configured by using the [change](https://help.syncfusion.com/api/js/ejcombobox#events:change) event of the parent ComboBox.
-Within that change event handler, data has to be loaded to the child ComboBox based on the selected
-value of the parent ComboBox.
+The cascading ComboBox is a series of ComboBox, where the value of one ComboBox depends upon  another's value. This can be configured by using the [change](https://help.syncfusion.com/api/js/ejcombobox#events:change) event of the parent ComboBox.
+Within that change event handler, data has to be loaded to the child ComboBox based on the selected value of the parent ComboBox.
 
-The following example, shows the cascade behavior of country, state, and city
-ComboBox. Here, the `dataBind` method is used to reflect the property changes immediately
+The following example, shows the cascade behavior of country, state, and city ComboBox. Here, the `dataBind` method is used to reflect the property changes immediately
 to the ComboBox.
 
 {% highlight html %}
@@ -112,9 +109,7 @@ to the ComboBox.
 
 ## Show the list items with icons
 
-You can render **icons** to the list items by mapping the
-[iconCss](https://help.syncfusion.com/api/js/ejcombobox#members:fields-iconcss)
-&nbsp;field. This `iconCss` field create a span in the list item with mapped class name
+You can render **icons** to the list items by mapping the [iconCss](https://help.syncfusion.com/api/js/ejcombobox#members:fields-iconcss) &nbsp;field. This `iconCss` field create a span in the list item with mapped class name
 to allow styling as per your need.
 
 In the following sample, icon classes are mapped with `iconCss` field.
@@ -191,9 +186,7 @@ $(function () {
 
 ## Autofill supported with ComboBox
 
-The ComboBox supports the `autofill` behavior with the help
-of [autofill](https://help.syncfusion.com/api/js/ejcombobox#members:autofill) property. Whenever you change the input value,
-the ComboBox will autocomplete your data by matching the typed character. Suppose, if no matches
+The ComboBox supports the `autofill` behavior with the help of [autofill](https://help.syncfusion.com/api/js/ejcombobox#members:autofill) property. Whenever you change the input value, the ComboBox will autocomplete your data by matching the typed character. Suppose, if no matches
 found then, comboBox doesn't suggest any item.
 
 In the following sample, showcase that how to work autofill with ComboBox.
