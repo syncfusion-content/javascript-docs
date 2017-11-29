@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Server Filtering in the DropDownList widget for Syncfusion Essential JS
-description: Server Filtering in the DropDownList widget for Syncfusion Essential JS
+description: Description about server filtering in the DropDownList widget for Syncfusion Essential JS
 platform: js
 control: DropDownList
 documentation: ug
@@ -21,11 +21,11 @@ enableServerFiltering If set to true, the filtering operations performed in the 
     </div>
     <script type="text/javascript">
 	
-        var dm = ej.DataManager({url:"http://js.syncfusion.com/ejServices/Wcf/Northwind.svc/Customers", crossDomain: true});
+        var companyList = ej.DataManager({url:"http://js.syncfusion.com/ejServices/Wcf/Northwind.svc/Customers", crossDomain: true});
 		
         var controlProperty = 
         {
-            dataSource: dm , 
+            dataSource: companyList , 
             fields : { text: "ContactName", value: 'ContactName'  }, 
             itemsCount : 10 , 
             popupHeight: "200px",
