@@ -9,7 +9,7 @@ api: /api/js/ejgrid
 --- 
 # Searching
 
-The grid has an option to search its content using the JavaScript method [`search`](https://help.syncfusion.com/api/js/ejgrid#methods:search "search") with search key as parameter. Also, it provides an option to integrate Search text box in grid toolbar, by adding `search` toolbar item in [`toolbarSetting.toolbarItems`](https://help.syncfusion.com/api/js/ejgrid#members:toolbarsettings-toolbaritems "toolbarSetting.toolbarItems") property.
+The grid has an option to search its content using the JavaScript method [`search`](https://help.syncfusion.com/api/js/ejgrid#methods:search "search") with search key as parameter. Also, it provides an option to integrate Search text box in the grid toolbar, by adding `search` toolbar item in the [`toolbarSetting.toolbarItems`](https://help.syncfusion.com/api/js/ejgrid#members:toolbarsettings-toolbaritems "toolbarSetting.toolbarItems") property.
 
 The following code example describes the above behavior.
 
@@ -37,9 +37,9 @@ The following output is displayed as a result of the above code example.
 
 ## Initial Searching
 
-While initializing the grid, there is an option to display only the searched data in grid. To perform initial searching, define `fields`, `operator`, `key` and `ignoreCase` in `searchSettings` property.
+While initializing the grid, there is an option to display only the searched data in grid. To perform initial searching, define `fields`, `operator`, `key` and `ignoreCase` in the `searchSettings` property.
 
-N> `key` value must be passed as `string`.
+N> The `key` value must be passed as `string`.
 
 The following code example describes the above behavior.
 

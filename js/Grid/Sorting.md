@@ -9,7 +9,7 @@ api: /api/js/ejgrid
 --- 
 # Sorting
 
-The Grid control has support to sort data bound columns in ascending or descending order. This can be achieved by setting [`allowSorting`](https://help.syncfusion.com/api/js/ejgrid#members:allowsorting "allowSorting") property as `true`. 
+The Grid control has support to sort data bound columns in ascending or descending order. This can be achieved by setting the [`allowSorting`](https://help.syncfusion.com/api/js/ejgrid#members:allowsorting "allowSorting") property as `true`. 
 
 To dynamically sort a particular column, click on its column header. The order switch between ascending and descending each time you click a column header for sorting.
 
@@ -38,10 +38,10 @@ The following output is displayed as a result of the above code example.
 
 ## Initial Sorting
 
-Through `sortedColumns` property of [`sortSettings`](https://help.syncfusion.com/api/js/ejgrid#members:sortsettings "sortSettings"), you can sort the columns while initializing the grid itself. You need to specify the [`field`](https://help.syncfusion.com/api/js/ejgrid#members:sortsettings-sortedcolumns-field "field") (column) name and [`direction`](https://help.syncfusion.com/api/js/ejgrid#members:sortsettings-sortedcolumns-direction "direction") in the `sortedColumns`.
+Through the `sortedColumns` property of [`sortSettings`](https://help.syncfusion.com/api/js/ejgrid#members:sortsettings "sortSettings"), you can sort the columns while initializing the grid itself. You need to specify the [`field`](https://help.syncfusion.com/api/js/ejgrid#members:sortsettings-sortedcolumns-field "field") (column) name and [`direction`](https://help.syncfusion.com/api/js/ejgrid#members:sortsettings-sortedcolumns-direction "direction") in the `sortedColumns`.
 
 N> 1. For [`direction`](https://help.syncfusion.com/api/js/ejgrid#members:sortsettings-sortedcolumns-direction "direction") property you can assign either `string` value ("descending") or `enum` value (`ej.sortOrder.Descending`). 
-N> 2. You can add multiple columns in `sortedColumns` for multi column sorting while initializing the grid itself.
+N> 2. You can add multiple columns in the `sortedColumns` for multi column sorting while initializing the grid itself.
 
 The following code example describes the above behavior.
 
@@ -105,11 +105,11 @@ The following output is displayed as a result of the above code example.
 
 For sorting, grid uses default browser's sort function for better performance. On multi column sorting in some browsers like chrome, the records order will be different due to unstable implementation of sorting algorithm in it. 
 
-To resolve this, you need to set `ej.support.stableSort` as `false`.
+To resolve this, you need to set the `ej.support.stableSort` as `false`.
 
 This will tell the "DataManager" to use custom sort function for sorting data. 
 
-Please refer the [link](https://en.wikipedia.org/wiki/Category:Stable_sorts# "link"), to know more information about stable sort.
+Please refer to this [link](https://en.wikipedia.org/wiki/Category:Stable_sorts# "link"), to know more information about stable sort.
 
 The following code example describes the above behavior.
 

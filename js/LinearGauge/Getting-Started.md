@@ -132,7 +132,7 @@ On executing the above code sample renders a customized **Linear Gauge** as foll
 
 * You can set the Minimum temperature up to -10 and maximum body temperature up to 110. 
 
-* You can set the Minimum scale value as -10 by using [`minimum`](../api/ejlineargauge#members:scales-minimum) property and maximum value as 110 by using [`maximum`](..api/ejlineargauge#members:scales-maximum) property.
+* You can set the Minimum scale value as -10 by using [`minimum`](../api/ejlineargauge#members:scales-minimum) property and maximum value as 110 by using [`maximum`](../api/ejlineargauge#members:scales-maximum) property.
 
 * You can set the Location values such as vertical and horizontal position by using [`position`](../api/ejlineargauge#members:scales-position) property in the thermometer.
 

@@ -10,13 +10,13 @@ api : /api/js/ejchart
 
 # Exporting Chart
 
-The exporting of the chart is done using the [`exportSettings`](../api/js/ejchart#members:exportsettings) property. The chart  export can be done in both client-side and in server-side.This can be modified by setting values to the property [`mode`](../api/js/ejchart#members:exportsettings-mode) in exporting. Default value for mode is client. 
+The exporting of the chart is done using the [`exportSettings`](../api/ejchart#members:exportsettings) property. The chart  export can be done in both client-side and in server-side.This can be modified by setting values to the property [`mode`](../api/ejchart#members:exportsettings-mode) in exporting. Default value for mode is client. 
 
 ## Client-side Exporting
 
-In client-side rendered chart can be exported as PNG image or as SVG file.The type of export is controlled by using the [`type`](../api/js/ejchart#members:exportsettings-type)property of the exportSettings.
+In client-side rendered chart can be exported as PNG image or as SVG file.The type of export is controlled by using the [`type`](../api/ejchart#members:exportsettings-type)property of the exportSettings.
 
-* Export as PNG - The chart can be exported to image when it is rendered in HTML5 Canvas.To render a chart in canvas, set the [`enableCanvasRendering`](../api/js/ejchart#members:enablecanvasrendering) option to *true*. To export the chart, you can use the [`export`](../api/js/ejchart#methods:export) method of the chart. Refer to the online [`KB for exporting`](http://www.syncfusion.com/kb/5045) to know more about chart exporting. 
+* Export as PNG - The chart can be exported to image when it is rendered in HTML5 Canvas.To render a chart in canvas, set the [`enableCanvasRendering`](../api/ejchart#members:enablecanvasrendering) option to *true*. To export the chart, you can use the [`export`](../api/ejchart#methods:export) method of the chart. Refer to the online [`KB for exporting`](http://www.syncfusion.com/kb/5045) to know more about chart exporting. 
 
 * Export as SVG - Chart can be exported as SVG if it is rendered as a scalable vector graphics element. By default chart will be rendered as SVG. 
 
@@ -62,7 +62,7 @@ Server-side operation can be done by using the server-side frameworks such as We
 * Create an MVC application and add a controller.
 * Add Syncfusion.EJ, Syncfusion.EJ.MVC and Syncfusion.EJ.Export as references to the application.
 * Parse the data from client in MVC controller and export the chart to client.
-* Host the MVC application in your server and get the link for exporting action method. The [`action`](../api/js/ejchart#members:exportsettings-action) property is used for specifying the hosted link. Example: http://js.syncfusion.com/ExportingServices/api/JSChartExport/ExcelExport.
+* Host the MVC application in your server and get the link for exporting action method. The [`action`](../api/ejchart#members:exportsettings-action) property is used for specifying the hosted link. Example: http://js.syncfusion.com/ExportingServices/api/JSChartExport/ExcelExport.
 * To pass client data to server-side, you need to call the export method and pass export type (either image or excel) and server-side URL as an argument. The third argument of the export method is a Boolean property that specifies whether only the current chart should be exported or all charts in page should be exported.
 
 {% highlight html %}
@@ -269,11 +269,11 @@ Export multiple chart to excel at server-side
 
 ## Naming the exported file
 
-ejChart provides options to customize the name of the file to be exported. This can be done by setting the name of the file to the property [`fileName`](../api/js/ejchart#members:exportsettings-filename) in exporting.
+ejChart provides options to customize the name of the file to be exported. This can be done by setting the name of the file to the property [`fileName`](../api/ejchart#members:exportsettings-filename) in exporting.
 
 ## Rotating the chart
 
-We can also rotate the chart and can export it. Possible angles of rotation are 0, 90, -90 and 180 degree. This can be achieved by setting values to the [`angle`](../api/js/ejchart#members:exportsettings-angle) property in exporting.
+We can also rotate the chart and can export it. Possible angles of rotation are 0, 90, -90 and 180 degree. This can be achieved by setting values to the [`angle`](../api/ejchart#members:exportsettings-angle) property in exporting.
 
 {% highlight javascript %}
 
@@ -289,11 +289,11 @@ We can also rotate the chart and can export it. Possible angles of rotation are 
 
 ## Setting orientation for the document
 
-This is applicable for PDF, excel and word documents. By setting values to the [`orientation`](../api/js/ejchart#members:exportsettings-orientation) property in exporting, we can change the orientation of those documents. By default it will export with portrait orientation.
+This is applicable for PDF, excel and word documents. By setting values to the [`orientation`](../api/ejchart#members:exportsettings-orientation) property in exporting, we can change the orientation of those documents. By default it will export with portrait orientation.
 
 ### Multiple Chart Export
 
-Multiple charts can be exported  by setting the [`multipleExport`](../api/js/ejchart#members:exportsettings-multipleexport) property as true.
+Multiple charts can be exported  by setting the [`multipleExport`](../api/ejchart#members:exportsettings-multipleexport) property as true.
 
 {% highlight javascript %}
 

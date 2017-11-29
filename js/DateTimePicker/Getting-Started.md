@@ -97,8 +97,7 @@ Initialize **DateTimePicker** in the script.
 
     $(function() {
        $('#dateTime').ejDateTimePicker({
-          width: '180px',
-          value: new Date()
+          width: '180px'
        });
     });
 
@@ -108,7 +107,60 @@ Initialize **DateTimePicker** in the script.
 
 The following screenshot displays a **DateTimePicker** control.
 
+![](/js/DateTimePicker/Getting-Started_images/Getting-Started_img.png)
+
+
+## Get / Set value
+
+DateTimePicker provides an options to configure all its properties and get its value. DateTimePicker value can be assigned during initialization or at run time. Below code shows how to assign values at initialization.
+
+{% highlight javascript %}
+
+
+        $(function () {
+
+            // create DateTimePicker from input with current datetime value.
+
+            $("#dateTime").ejDateTimePicker({
+
+                value: new Date(), // sets the current datetime value
+
+            });
+
+        });
+
+{% endhighlight %}
+
+You can assign values after initialization in DateTimePicker (‘it helps to get or set value at run time). Let’s consider that going to set datetime value at button click.
+
+{% highlight javascript %}
+
+        //bind below onClick action to button
+
+        function onClick() {
+
+            //create instance for dateTimePicker.
+
+            // only after control creation we can get dateTimeObj otherwise it throws exception.
+
+            var dateTimeObj = $("#dateTime").ejDateTimePicker('instance');
+
+            //set value using datetime object
+
+            dateTimeObj.option('value', new Date());
+
+            //get value using dateTimeObj and displays in alert box
+
+            alert(dateTimeObj.option('value'));
+
+        }
+
+{% endhighlight %}
+
+The following screenshot displays a **DateTimePicker** control with datetime value.
+
 ![](/js/DateTimePicker/Getting-Started_images/Getting-Started_img2.png)
+
 
 ## Set the Min and Max Date with Time Interval
 
