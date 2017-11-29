@@ -339,7 +339,7 @@ You can perform the following customizations for picture. These are available in
     <tr><td>Change Picture</br></td><td> {{'[`changePicture`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlshape-changepicture  "changePicture")'| markdownify }}</br></td><td>You can change the picture with existing picture.</br></td></tr>
     <tr><td>Reset Picture</br></td><td> {{'[`resetPicture`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlshape-resetpicture  "resetPicture")'| markdownify }}</br></td><td>You can reset the changes done in the picture such as border changes, height and width changes.</br></td></tr>
     <tr><td>Picture Border</br></td><td> {{'[`changePictureBorder`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlshape-changepictureborder  "changePictureBorder")'| markdownify }}</br></td><td>You can add border to the picture. You have Border Color, Border Type and Border weight options to draw a border.</br></td></tr>
-    <tr><td>Height and Width</br></td><td> {{'[`height`](https://help.syncfusion.com/api/js/ejspreadsheet#members:picturesettings-height  "height")'| markdownify }} and {{'[`width`](https://help.syncfusion.com/api/js/ejspreadsheet#members:picturesettings-width  "width")'| markdownify }}</br></td><td>You can change the height and width of the picture.</br></td></tr>
+    <tr><td>Height and Width</br></td><td> {{'[`height`](http://help.syncfusion.com/api/js/ejspreadsheet#members:picturesettings-height  "height")'| markdownify }} and {{'[`width`](https://help.syncfusion.com/api/js/ejspreadsheet#members:picturesettings-width  "width")'| markdownify }}</br></td><td>You can change the height and width of the picture.</br></td></tr>
 </table>
 
 ## Pivot Table
