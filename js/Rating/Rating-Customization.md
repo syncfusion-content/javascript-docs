@@ -85,7 +85,7 @@ The following screenshot illustrates **Rating** with **minimum** **value**.
 
 ### Max Value
 
-**EJ** **Rating** **control** provides support for setting **maximum** **value**. This is achieved by adding the [maxValue]((https://help.syncfusion.com/api/js/ejrating#members:maxvalue)) property**.** By default, maxValue is five.
+**EJ** **Rating** **control** provides support for setting **maximum** **value**. This is achieved by adding the [maxValue](https://help.syncfusion.com/api/js/ejrating#members:maxvalue) property**.** By default, maxValue is five.
 
 The following code example is used to render the Rating control with **maximum** **rating**.
 
