@@ -231,6 +231,33 @@ Above flat array of JSON data can be directly assigned to [dataSource](https://h
 
 {% endhighlight %}
 
+### Nested Object Support
+
+The nested object support is provided for the TreeView component. Please find the following JSON.
+
+{% highlight js %}
+
+        var localData = [
+          { id: 1, name: { fName: "Discover Music"}, hasChild: true, expanded: true },
+          { id: 2, pid: 1, name: {fName:"Hot Singles" }},
+          { id: 3, pid: 1, name: {fName:"Rising Artists" }},
+          { id: 4, pid: 1, name:{fName: "Live Music" }}];
+
+        $(function () {
+
+            // initialize and bind the TreeView with local data with nested object
+
+            $("#treeView").ejTreeView({
+               fields: { id: "id", parentId: "pid", text: "name.fName", hasChild: "hasChild", dataSource: localData, expanded: "expanded" }}
+            );
+        });
+
+{% endhighlight %}
+
+The above flat array of JSON data can be directly assigned to the [dataSource](https://help.syncfusion.com/api/js/ejtreeview#members:fields-datasource) property and mapping nested data fields with respect to the mapper field to create the TreeView. The sample is in the following location.
+
+[Sample](http://jsplayground.syncfusion.com/j4040dpu)
+
 ## Remote Data
 
 When using remote data binding, the adaptor of [ej.DataManager](https://help.syncfusion.com/api/js/ejdatamanager#) plays vital role in processing queries to make them suitable to sends along with data request and also process the response data from the server.
@@ -489,7 +516,7 @@ The Custom Adaptor concept of [ej.DataManager](https://help.syncfusion.com/api/j
 
                 },
 
-                processQuery: ej.JsonAdaptor.prototype.processQuery // reused process query from json adaptor
+                processQuery: ej.JsonAdaptor.prototype.processQuery // reused process query from JSON adaptor
 
             });
 
