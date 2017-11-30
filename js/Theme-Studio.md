@@ -160,7 +160,7 @@ After that copy **ej.theme.min.css** file from the downloaded folder and paste i
 
 Now refer the both files (**ej.widgets.core.min.css & ej.theme.min.css**) directly in the place of its reference in your application. 
 
-### From 16.1 version 
+### From 16.1 version  
 
 <table>
 <tr>
@@ -170,7 +170,7 @@ Now refer the both files (**ej.widgets.core.min.css & ej.theme.min.css**) direct
 <tr>
 <td>
 ej.web.all.min.css<br/><br/></td><td>
-It’s used for refer both ej.theme.min.css,ej.widgets.core.min.css CSS files in our application.<br/><br/></td>
+It is used for refer both ej.theme.min.css,ej.widgets.core.min.css CSS files in our application.<br/><br/></td>
 </tr>
 </table>
 
