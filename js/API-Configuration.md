@@ -82,16 +82,21 @@ $("#myDate").ejDatePicker("option", "buttonText", "Hôm nay");
 $("jquery-selector").ej-plugin-name({
     propertyName: "value"
 });
+// Example
+$("#myDate").ejDatePicker({
+    value: "01/01/2015"
+});
+
 
 // Fifth way
 var obj = $("jquery-selector").data("ej-plugin-name");
 obj.setModel({
     propertyName: value
 });
-
 // Example
-$("#myDate").ejDatePicker({
-    value: "01/01/2015"
+var dateObject = $("#myDate").data("ejDatePicker");
+dateObject.setModel({
+    buttonText: "Hôm nay"
 });
 
 {% endhighlight %}
