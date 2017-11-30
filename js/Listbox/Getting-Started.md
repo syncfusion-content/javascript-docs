@@ -63,7 +63,7 @@ Add links to the [CDN](https://help.syncfusion.com/js/cdn) Script files with dep
 
 ### See Also
 
-[Custom Script Generator](https://help.syncfusion.com/js/include-only-the-needed-widgets)
+[Custom Script Generator](https://csg.syncfusion.com/)
 
 
  N> To reduce the file size further please use  [GZip](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/optimize-encoding-and-transfer?hl=en) compression in your server.
