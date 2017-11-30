@@ -62,6 +62,8 @@ You can find the Download option in theme studio as shown below:
 
 ![](ThemeStudio_images/Download-02.png)
 
+### 15.4 and below version
+
 In the Download dialog popup provide a name to the file to be generated. Once the Download button is clicked, it will download the customized theme files. The downloaded theme files consist as follows:
 
 <table>
@@ -157,6 +159,46 @@ After that copy **ej.theme.min.css** file from the downloaded folder and paste i
 **Step 4:**
 
 Now refer the both files (**ej.widgets.core.min.css & ej.theme.min.css**) directly in the place of its reference in your application. 
+
+### From 16.1 version  
+
+<table>
+<tr>
+<th>Files<br/><br/></th>
+<th>Details<br/><br/></th>
+</tr>
+<tr>
+<td>
+ej.web.all.min.css<br/><br/></td><td>
+It is used for refer both ej.theme.min.css,ej.widgets.core.min.css CSS files in our application.<br/><br/></td>
+</tr>
+</table>  
+
+Downloaded theme file is in the below structure:
+
+![](ThemeStudio_images/Download-03-15.4.png)
+
+How to use the generated CSS in your web application?
+
+![](ThemeStudio_images/Generated-01-15.4.png)
+
+**Step 1:** 
+
+Create the following folders in the same structure under your application folder.
+
+** appfolder\Content\ej{customized theme name} **
+
+**Step 2:**
+
+Copy the **common-images & ej.widgets.core.min.css** file from the downloaded folder and paste into the appfolder\Content\ej.
+
+**Step 3:**
+
+After that copy ej.theme.min.css &  ej.web.all.min.css file from the downloaded folder and paste inside the customized theme folder.
+
+**Step 4:**
+
+Now refer the file ej.web.all.min.css directly in the place of its reference in your application.
 
 ## How to generate the CSS from the downloaded LESS file?
 
