@@ -516,7 +516,7 @@ The Custom Adaptor concept of [ej.DataManager](https://help.syncfusion.com/api/j
 
                 },
 
-                processQuery: ej.JsonAdaptor.prototype.processQuery // reused process query from json adaptor
+                processQuery: ej.JsonAdaptor.prototype.processQuery // reused process query from JSON adaptor
 
             });
 
