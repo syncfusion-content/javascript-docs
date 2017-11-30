@@ -172,7 +172,7 @@ Now refer the both files (**ej.widgets.core.min.css & ej.theme.min.css**) direct
 ej.web.all.min.css<br/><br/></td><td>
 It is used for refer both ej.theme.min.css,ej.widgets.core.min.css CSS files in our application.<br/><br/></td>
 </tr>
-</table>
+</table>  
 
 Downloaded theme file is in the below structure:
 
