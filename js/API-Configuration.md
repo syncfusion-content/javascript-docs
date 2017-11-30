@@ -96,7 +96,7 @@ obj.setModel({
 // Example
 var dateObject = $("#myDate").data("ejDatePicker");
 dateObject.setModel({
-    buttonText: "Hôm nay"
+    value: "01/01/2015"
 });
 
 {% endhighlight %}
