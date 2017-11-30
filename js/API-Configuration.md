@@ -83,6 +83,12 @@ $("jquery-selector").ej-plugin-name({
     propertyName: "value"
 });
 
+// Fifth way
+var obj = $("jquery-selector").data("ej-plugin-name");
+obj.setModel({
+    propertyName: value
+});
+
 // Example
 $("#myDate").ejDatePicker({
     value: "01/01/2015"
