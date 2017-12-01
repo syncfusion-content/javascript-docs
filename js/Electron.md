@@ -106,7 +106,7 @@ N> For Mac OS run the command in administrator mode with $sudo as prefix
 ![](Electron-Getting-started\steps-to-add-the-sample-and-runthe-application_img3.png)
 
 
-N> Learn more about Electron and its API in the [documentation](http://electron.atom.io/docs/latest).
+N> Learn more about Electron and its API in the [documentation](http://electron.atom.io/docs).
 
 
 
