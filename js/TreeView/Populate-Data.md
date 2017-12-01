@@ -238,17 +238,17 @@ The nested object support is provided for the TreeView component. Please find th
 {% highlight js %}
 
         var localData = [
-          { id: 1, name: { fName: "Discover Music"}, hasChild: true, expanded: true },
-          { id: 2, pid: 1, name: {fName:"Hot Singles" }},
-          { id: 3, pid: 1, name: {fName:"Rising Artists" }},
-          { id: 4, pid: 1, name:{fName: "Live Music" }}];
+          { id: 1, name: { nodeName: "Discover Music"}, hasChild: true, expanded: true },
+          { id: 2, pid: 1, name: {nodeName:"Hot Singles" }},
+          { id: 3, pid: 1, name: {nodeName:"Rising Artists" }},
+          { id: 4, pid: 1, name:{nodeName: "Live Music" }}];
 
         $(function () {
 
             // initialize and bind the TreeView with local data with nested object
 
             $("#treeView").ejTreeView({
-               fields: { id: "id", parentId: "pid", text: "name.fName", hasChild: "hasChild", dataSource: localData, expanded: "expanded" }}
+               fields: { id: "id", parentId: "pid", text: "name.nodeName", hasChild: "hasChild", dataSource: localData, expanded: "expanded" }}
             );
         });
 
