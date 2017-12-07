@@ -37,9 +37,9 @@ It is possible to format a column using ‘load’ event. The following code exa
  });
 {% endhighlight %}
 
-Note: For more numeric format strings, please refer this [link](https://msdn.microsoft.com/library/dwhawy9k(v=vs.100).aspx).
+Note: For more numeric format strings, please refer to this [link](https://msdn.microsoft.com/library/dwhawy9k(v=vs.100).aspx).
 
-For more date format strings, please refer this [link](https://msdn.microsoft.com/library/az4se3k1(v=vs.100).aspx).
+For more date format strings, please refer to this [link](https://msdn.microsoft.com/library/az4se3k1(v=vs.100).aspx).
 
 ## Column Resizing
 
@@ -161,7 +161,7 @@ The column menu provides the following options:
 * Sort Descending
 * Columns 
 
-Sort Ascending and Sort Descending options can be enabled or disabled with the [allowSorting](/api/js/ejgantt#members:allowsorting "allowSorting") property. Single level sorting can be performed with these options. To perform multilevel sorting, [allowMultiSorting](/api/js/ejgantt#members:allowmultisorting "allowMultiSorting") property should be enabled. You can also disable the visibility of a particular column in the column collection manually by setting the `visible` property to `false`.
+Sort Ascending and Sort Descending options can be enabled or disabled with the [allowSorting](/api/js/ejgantt#members:allowsorting "allowSorting") property. Single level sorting can be performed with these options. To perform multilevel sorting, the [allowMultiSorting](/api/js/ejgantt#members:allowmultisorting "allowMultiSorting") property should be enabled. You can also disable the visibility of a particular column in the column collection manually by setting the `visible` property to `false`.
 
 {% highlight javascript %}
 $("#Gantt").ejGantt({
@@ -180,11 +180,10 @@ The following screenshot displays the column chooser in the Gantt control.
 
 ### Show column options
 
-You can customize the column with some more options with the [showColumnOptions](/api/js/ejgantt#members:showcolumnoptions "showColumnOptions") property. Insert new column, delete column and update the header text of the column can be done with this property.
-
+You can customize the column with some more options with the [showColumnOptions](/api/js/ejgantt#members:showcolumnoptions "showColumnOptions") property. Use this property to insert a new column, delete a column and to update the header text of the column.
 ![](/js/Gantt/Columns_images/Columns_img4.png)
 
-The column options can be enable or disabled with showColumnOptions property, where the default value for this property is false.
+The column options can be enabled or disabled with the `showColumnOptions` property, where the default value for this property is false.
 
 The column options provide the following options:
 
@@ -193,11 +192,11 @@ The column options provide the following options:
 * Delete column
 * Rename column
 
-Inserting column provides the dialog to enter the details for the column
+Inserting column provides the dialog to enter the details for the column.
 
 ![](/js/Gantt/Columns_images/Columns_img5.png)
 
-These fields can be customized with [columnDialogFields](/api/js/ejgantt#members:columndialogfields "columnDialogFields") this property. The following shows you how to customize these fields.
+These fields can be customized with the [columnDialogFields](/api/js/ejgantt#members:columndialogfields "columnDialogFields") property. The following code sample shows you how to customize these fields.
 
 {% highlight javascript %}
 
