@@ -592,39 +592,6 @@ currentCell, Row
 It returns the current cell and row of PDF.
 </td>
 </tr>
-<tr>
-<td>
-ExcelChildGridInfo
-</td>
-<td>
-current row, row data, GridProperties
-</td>
-<td>
-Customize the cell and child Grid
-</td>
-</tr>
-<tr>
-<td>
-PdfChildGridInfo
-</td>
-<td>
-current row, row data, GridProperties
-</td>
-<td>
-Customize the cell and child Grid
-</td>
-</tr>
-<tr>
-<td>
-WordChildGridInfo
-</td>
-<td>
-current row, row data, GridProperties
-</td>
-<td>
-Customize the cell and child Grid
-</td>
-</tr>
 </table>
 
 You can modify the detailTemplate of exporting files using server events. The code snippet for this is
