@@ -10,7 +10,7 @@ api: /api/js/ejgantt
 
 # Baseline
 
-Baseline is used to describe the original plan of the task and it can be the same as current duration of the task or different. The following code example shows you how to enable baseline in Gantt control.
+Baseline is used to describe the original plan of the task and it can be the same as current duration of the task or different. The following code example shows how to enable baseline in Gantt control.
 
 {% highlight javascript %}
 
