@@ -980,4 +980,51 @@ N> Excel File will be exported in the collapsed state with the expand/collapse i
 
 {% endhighlight %}
 
+The server side events available in Hierarchy Grid exporting and its argument types are listed in the following table.
 
+<table>
+<tr>
+<th>
+Event Name
+</th>
+<th>
+Argument
+</th>
+<th>
+Description
+</th>
+</tr>
+<tr>
+<td>
+ExcelChildGridInfo
+</td>
+<td>
+current row, row data, GridProperties
+</td>
+<td>
+Customize the cell and child Grid
+</td>
+</tr>
+<tr>
+<td>
+PdfChildGridInfo
+</td>
+<td>
+current row, row data, GridProperties
+</td>
+<td>
+Customize the cell and child Grid
+</td>
+</tr>
+<tr>
+<td>
+WordChildGridInfo
+</td>
+<td>
+current row, row data, GridProperties
+</td>
+<td>
+Customize the cell and child Grid
+</td>
+</tr>
+</table>
