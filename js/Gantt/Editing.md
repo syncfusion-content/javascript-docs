@@ -10,7 +10,7 @@ api: /api/js/ejgantt
 
 # Editing
 
-The Gantt control provides built-in support to add, insert and update the tasks. The following are the types of editing available in Gantt,
+The Gantt control provides in-built support to add, insert and update the tasks. The following are the types of editing available in Gantt.
 
 * Cell Editing
 * Normal Editing
@@ -21,7 +21,7 @@ The Gantt control provides built-in support to add, insert and update the tasks.
 
 Update the task details through grid cell editing by setting editMode as `cellEditing`.
 
-The following code example shows you how to enable `cellEditing` in Gantt control.
+The following code example shows you how to enable the `cellEditing` in Gantt control.
 
 {% highlight javascript %}
 
@@ -74,7 +74,7 @@ Update the task details by interactions such as resizing and dragging the taskba
 
 {% endhighlight %}
 
-You can also enable or disable the progressbar resizing by setting 'enableProgressbarResizing'. The following code example shows you to disable this property.
+You can also enable or disable the progressbar resizing by using the 'enableProgressbarResizing'. The following code example shows you to disable this property.
 
 {% highlight javascript %}
 
