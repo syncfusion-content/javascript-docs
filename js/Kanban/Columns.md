@@ -469,3 +469,55 @@ The following code example describes the above behavior.
 The following output is displayed as a result of the above code example.
 
 ![](Columns_images/column_img8.png)
+
+## Display Empty Column
+
+On binding empty data source to Kanban control, it displays "No cards to display" text. Using [`showColumnWhenEmpty`](https://help.syncfusion.com/api/js/ejkanban#members:showcolumnwhenempty) property, we can render empty kanban columns. Set allowEditing and allowAdding property as true to add new data into the empty kanban column. 
+
+The following code example describes the above behavior.
+
+{% highlight html %}
+
+    <div id='Kanban'></div>
+
+{% endhighlight %}
+
+{% highlight javascript %}
+
+    $(function () {
+        var data = ej.DataManager(window.kanbanData).executeLocal(ej.Query().take(0));
+        
+        $("#Kanban").ejKanban(
+        {
+                dataSource: data,
+				showColumnWhenEmpty: true,
+                columns: [
+                    { headerText: "Backlog", key: "Open"},
+                    { headerText: "In Progress", key: "InProgress" },
+					{ headerText: "Testing", key: "Testing" },
+                    { headerText: "Done", key: "Close" }
+                ],
+                keyField: "Status",
+                fields: {
+                    content: "Summary",
+                    primaryKey: "Id"
+                },
+				editSettings: {
+                    editItems: [
+                        { field: "Id", editType: ej.Kanban.EditingType.Text,validationRules: { required: true, number: true }},
+                        { field: "Status", editType: ej.Kanban.EditingType.Text },
+                        { field: "Assignee", editType: ej.Kanban.EditingType.Text },
+                        { field: "Estimate", editType: ej.Kanban.EditingType.Numeric, editParams: { decimalPlaces: 2 },validationRules: {range: [0, 1000]}},
+                        { field: "Summary", editType: ej.Kanban.EditingType.TextArea,validationRules: { required: true}}
+					    ],
+                    allowEditing: true,
+                    allowAdding: true
+                }
+        });
+    });
+
+{% endhighlight %}
+
+The following output is displayed as a result of the above code example.
+
+![](Columns_images/column_img10.png)
