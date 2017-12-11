@@ -824,10 +824,10 @@ N> Excel File will be exported in the collapsed state with the expand/collapse i
     <script type="text/javascript">
         $(function () {
             var parentGrid = ej.DataManager({
-                url: window.baseurl + "Wcf/Northwind.svc/Employees", crossDomain: true
+                url: "http://js.syncfusion.com/ExportingServices/Northwnd.svc/Employees/", crossDomain: true
             })
             var childGrid = ej.DataManager({
-                url: window.baseurl + "Wcf/Northwind.svc/Orders/?$top=100", crossDomain: true, offline: true
+                url: "http://js.syncfusion.com/ExportingServices/Northwnd.svc/Orders/?$top=100", crossDomain: true, offline: true
             });
             $("#Grid").ejGrid({
                 dataSource: parentGrid,
