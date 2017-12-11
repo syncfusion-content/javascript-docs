@@ -10,7 +10,7 @@ api: /api/js/ejgantt
 
 # Filtering
 
-Filtering helps to view specific or related records from data source which meets a given filtering criteria. `filterSettings` property in Gantt is used to set the filtering criteria at load time.
+Filtering helps to view specific or related records from data source which meets a given filtering criteria. The `filterSettings` property in Gantt is used to set the filtering criteria at load time.
 
 ## Filter columns at initial load
 It is possible to filter one or more columns at initial load by providing the field and filter query to the `filterSettings.filteredColumns` property. The following code example explains how to filter a column on initial load.
@@ -37,8 +37,8 @@ The output of the filtering applied for a column is as follows.
 
 ## Filtering a specific column by public method
 
-It is possible to filter columns dynamically by using `filterColumn` public method. 
-The below code snippet explains the above behavior
+It is possible to filter columns dynamically by using the `filterColumn` public method. 
+The below code snippet explains the above behavior.
 
 {% highlight js %}
 
@@ -60,8 +60,8 @@ $("#filterColumn").click(function (args) {
 
 ## Clearing the filter applied to Gantt
 
-You can clear all the filtering condition done in the Gantt by using `clearFiltering` public method. 
-The below code snippet explains the above behavior
+You can clear all the filtering condition done in the Gantt by using the `clearFiltering` public method. 
+The below code snippet explains the above behavior.
 
 {% highlight js %}
 
