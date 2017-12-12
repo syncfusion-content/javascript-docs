@@ -14,7 +14,7 @@ This section explains briefly about how to create a Gantt chart in your applicat
 
 ## Create your first Gantt in JavaScript
 
-In this tutorial, you can learn how to create a simple Gantt chart, add tasks or subtasks, and set relationship between tasks during the design phase of a software project. The following screenshot displays the desired output after completing this tutorial,
+This tutorial explains about how to create a simple Gantt chart, add tasks or subtasks and set relationship between tasks during the design phase of a software project. The following screenshot displays the desired output after completing this tutorial.
 
 ![](/js/Gantt/Getting-Started_images/Getting-Started_img4.png)
 
@@ -174,7 +174,7 @@ The following screen shot displays a Tool bar in Gantt chart control:
 
 ![](/js/Gantt/Getting-Started_images/Getting-Started_img6.png)
 
-N>  Add, edit, delete options are enabled when enabling the allowEditing, allowAdding, allowDelete properties in the edit Options.
+N>  Add, edit and delete options are enabled when enabling the allowEditing, allowAdding and allowDelete properties in the edit Options.
 
 ## Enable Sorting
 
@@ -182,7 +182,7 @@ The Gantt control has sorting functionality to arrange the tasks in ascending or
 
 ### Multicolumn Sorting
 
-Enable the multicolumn sorting in Gantt by setting [`allowMultiSorting`](/api/js/ejgantt#members:allowmultisorting "allowMultiSorting") as `true`. You can sort multiple columns in Gantt, by selecting the desired column header while holding the `CTRL` key.
+Enable the multicolumn sorting in Gantt by setting the [`allowMultiSorting`](/api/js/ejgantt#members:allowmultisorting "allowMultiSorting") as `true`. You can sort multiple columns in Gantt, by selecting the desired column header while holding the `CTRL` key.
 
 {% highlight javascript %}
 
@@ -196,7 +196,7 @@ Enable the multicolumn sorting in Gantt by setting [`allowMultiSorting`](/api/js
 
 ## Enable Editing
 
-You can enable editing using [`editSettings`](/api/js/ejgantt#members:editsettings "editSettings") and [`allowGanttChartEditing`](/api/js/ejgantt#allowganttcharteditingspan-classtype-signature-type-booleanbooleanspan "allowGanttChartEditing") options.
+You can enable editing using the [`editSettings`](/api/js/ejgantt#members:editsettings "editSettings") and [`allowGanttChartEditing`](/api/js/ejgantt#allowganttcharteditingspan-classtype-signature-type-booleanbooleanspan "allowGanttChartEditing") options.
 
 ### Cell Editing
 
@@ -212,7 +212,7 @@ Modify the task details through user interaction such as resizing and dragging t
 
 ### Predecessor Editing
 
-Modify the predecessor details of a task using mouse interactions by setting [`allowGanttChartEditing`](/api/js/ejgantt#members:allowganttchartediting "allowGanttChartEditing") as `true` and setting the value for `predecessorMapping` property.
+Modify the predecessor details of a task using mouse interactions by setting the [`allowGanttChartEditing`](/api/js/ejgantt#members:allowganttchartediting "allowGanttChartEditing") as `true` and setting value for the `predecessorMapping` property.
 
 {% highlight javascript %}
 
@@ -280,9 +280,7 @@ In Gantt, you have the predecessor support to show the relationship between two 
 * **Finish to Start (FS)** - You cannot start a task until the other task completes.
 * **Finish to Finish (FF)** - You cannot finish a task until the other task completes.
 
-You can show the relationship in tasks, by using the [`predecessorsMapping`](/api/js/ejgantt#members:predecessormapping "predecessorsMapping")
-
-, as shown in the following code example.
+You can show the relationship in tasks, by using the [`predecessorsMapping`](/api/js/ejgantt#members:predecessormapping "predecessorsMapping") property as shown in the following code example.
 
 {% highlight javascript %}
 
@@ -299,9 +297,9 @@ The following screenshot displays the relationship between tasks.
 
 ## Provide Resources
 
-In Gantt control, you can display and assign the resource for each task. Create a collection of `JSON` object, which contains id and name of the resource and assign it to [`resources`](/api/js/ejgantt#members:resources "resources") property. Then, specify the field name for id and name of the resource in the resource collection to [`resourceIdMapping`](/api/js/ejgantt#members:resourceidmapping "resourceIdMapping") and [`resourceNameMapping`](/api/js/ejgantt#members:resourcenamemapping "resourceNameMapping") options. The name of the field, which contains the actual resources assigned for a particular task in the `dataSource` is specified using [`resourceInfoMapping`](/api/js/ejgantt#members:resourceinfomapping "resourceInfoMapping").
+In Gantt control, you can display and assign the resource for each task. Create a collection of `JSON` object, which contains id and name of the resource and assign it to the [`resources`](/api/js/ejgantt#members:resources "resources") property. Then, specify the field name for id and name of the resource in the resource collection to [`resourceIdMapping`](/api/js/ejgantt#members:resourceidmapping "resourceIdMapping") and [`resourceNameMapping`](/api/js/ejgantt#members:resourcenamemapping "resourceNameMapping") options. The name of the field, which contains the actual resources assigned for a particular task in the `dataSource` is specified using the [`resourceInfoMapping`](/api/js/ejgantt#members:resourceinfomapping "resourceInfoMapping").
 
-1.Create the resource collection to be displayed in ejGantt
+1.Create the resource collection to be displayed in ejGantt.
 
 {% highlight javascript %}
 
