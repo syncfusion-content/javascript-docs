@@ -9,25 +9,25 @@ api: /api/js/ejgantt
 ---
 # Keyboard navigation
 
-Gantt control supports the following keyboard shortcuts for performing various actions
+Gantt control supports the following keyboard shortcuts for performing various actions.
 
-**Alt** **+** **j****:** To focus the Gantt control
+**Alt** **+** **j** **:** To focus the Gantt control.
 
-**Home****:** To select the first row
+**Home** **:** To select the first row.
 
-**End****:** To select the last row
+**End** **:** To select the last row.
 
-**F2****:** For editing the focused cell of the selected row
+**F2** **:** For editing the focused cell of the selected row.
 
-**Enter****:** To save the edited cell
+**Enter** **:** To save the edited cell.
 
-**Delete****:** To delete the selected row
+**Delete** **:** To delete the selected row.
 
-**Ctrl** **+** **Down** **Arrow****:** To expand all the parent tasks.
+**Ctrl** **+** **Down** **Arrow** **:** To expand all the parent tasks.
 
-**Ctrl** **+** **Up** **Arrow****:** To collapse all the parent tasks.
+**Ctrl** **+** **Up** **Arrow** **:** To collapse all the parent tasks.
 
-**Left** **Arrow****:** To collapse the selected parent task.
+**Left** **Arrow** **:** To collapse the selected parent task.
 
-**Right** **Arrow****:** To expand the selected parent task.
+**Right** **Arrow** **:** To expand the selected parent task.
 
