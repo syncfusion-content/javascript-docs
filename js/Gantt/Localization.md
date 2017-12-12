@@ -15,11 +15,11 @@ Localization is the key feature that provides solutions to global customers with
 
 `(installed location)\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets\scripts\i18n`
 
-Also it is possible to localize all the texts in the Gantt control with specific culture by referring the ej.localetexts.fr-FR.min.js file which is available in the following location.
+Also, it is possible to localize all the texts in the Gantt control with specific culture by referring to the ej.localetexts.fr-FR.min.js file which is available in the following location.
 
 `(installed location)\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets\scripts\i10n`
 
-The following code example explains on how to localize the control in French culture
+The following code example explains on how to localize the control in French culture.
 
 {% highlight javascript %}
 
