@@ -9,12 +9,12 @@ api: /api/js/ejgantt
 ---
 
 # Resource Allocation View
-Resource allocation view is used to visualize the resource usage in a project. Resources are displayed in separate rows and all the tasks assigned to a specific resource will be displayed in the chart side. In this view, a user can able to easily identify the overallocation of resources in a project.
+The resource allocation view is used to visualize the resource usage in a project. Resources are displayed in separate rows and all the tasks assigned to a specific resource will be displayed in the chart side. In this view, a user can able to easily identify the overallocation of resources in a project.
 
 ![](/js/Gantt/Resource-Allocation-View_images/ResourceView_1.png)
 
 ## Data Binding
-User can bind two types of data structure to Gantt in resource allocation view,
+User can bind two types of data structure to Gantt in resource allocation view.
 
 * Hierarchical data source binding
 * Flat data binding
@@ -182,7 +182,7 @@ User should select a task to be removed from the project, and then the task can 
 ![](/js/Gantt/Resource-Allocation-View_images/ResourceView_13.png)
 
 #### Deleting Resource
-User can able to delete a resource and the tasks assigned to it using toolbar and context menu delete options. After selecting the resource row, when clicking the delete toolbar icon, the resource will be removed from the project and the tasks assigned to that resource will be listed in unassigned tasks’ list. The same will happen for context menu delete option.
+User can able to delete a resource and the tasks assigned to it using toolbar and context menu delete options. After selecting the resource row, by clicking the delete toolbar icon the resource will be removed from the project and the tasks assigned to that resource will be listed in unassigned tasks list. The same will happen for context menu delete option.
 
 ![](/js/Gantt/Resource-Allocation-View_images/ResourceView_14.png)
 
@@ -216,7 +216,7 @@ In the below screen shot, the resource `Nancy Davolio` is the unassigned resourc
 
 ![](/js/Gantt/Resource-Allocation-View_images/ResourceView_16.png)
 
-There may be instances where some tasks are not yet assigned with resources. Those tasks that are not assigned to any resources are termed as unassigned tasks. Unassigned tasks are displayed at bottom, with resource name as `Unassigned Task`. Unassigned tasks can be assigned to any resources in the project.
+There may be instances where some tasks are not yet assigned with resources. Those tasks that are not assigned to any resources are termed as unassigned tasks. The Unassigned tasks are displayed at bottom, with resource name as `Unassigned Task`. Also, the Unassigned tasks can be assigned to any resources in the project.
 The below code snippet shows a task with no resource assigned to it.
 
 {% highlight javascript %}
@@ -241,6 +241,6 @@ In the below screen shot, there more instances of unassigned tasks.
 ![](/js/Gantt/Resource-Allocation-View_images/ResourceView_17.png)
 
 ## Resource Overallocation
-By default, a resource can work 8 hours a work day, but when a resource is forced to work more than 8 hours it is termed as overallocation. Or when a resource is assigned with two or more tasks which is occurring in a same date range, this state is termed as over allocation for a resource. The overlapped tasks are highlighted like in the below screen shot. The overlapped tasks will be displayed one below the other with an overlapped highlighted region.
+By default, a resource can work 8 hours a work day but when a resource is forced to work more than 8 hours it is termed as overallocation. When a resource is assigned with two or more tasks which is occurring in a same date range, this state is termed as over allocation for a resource. The overlapped tasks are highlighted like in the below screen shot. The overlapped tasks will be displayed one below the other with an overlapped highlighted region.
 
 ![](/js/Gantt/Resource-Allocation-View_images/ResourceView_18.png)

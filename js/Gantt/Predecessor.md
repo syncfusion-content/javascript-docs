@@ -12,13 +12,13 @@ api: /api/js/ejgantt
 
 ## Predecessor offset with duration units
 
-In Gantt, predecessor offset can be defined with the following duration units, 
+In Gantt, predecessor offset can be defined with the following duration units. 
 
 * Day
 * Hour
 * Minute
 
-We can define offset with various offset duration units for predecessors by using below code example
+We can define offset with various offset duration units for predecessors by using the below code example.
 
 {% highlight javascript %}
 
@@ -46,7 +46,7 @@ The following screen shot depicts the duration unit support in the predecessor o
 
 ## Validate predecessor links on editing
 
-In Gantt, it is possible to validate the taskbar editing based on the predecessor connections. Below are the following ways to validate the taskbar editing
+In Gantt, it is possible to validate the taskbar editing based on the predecessor connections. Below are the following ways to validate the taskbar editing.
 
 * Using actionBegin event 
 * Using validation dialog
@@ -54,9 +54,9 @@ In Gantt, it is possible to validate the taskbar editing based on the predecesso
 ### Using actionBegin event
 
 
-actionBegin event with requestType argument as **validateLinkedTask** will be triggered when editing a task with predecessor links.
+The actionBegin event with requestType argument as **validateLinkedTask** will be triggered when editing a task with predecessor links.
 
-And it is possible to validate the editing within the actionBegin event using the **validateMode** event argument. The validateMode event argument has the following properties,
+It is possible to validate the editing within the actionBegin event using the **validateMode** event argument. The validateMode event argument has the following properties.
 
 <table>
 <tr>
@@ -81,7 +81,7 @@ True<br/><br/></td><td>
 In this validation mode, taskbar editing will be considered along with the dependency links. There will be no validations in task editing.<br/><br/><br/><br/></td></tr>
 </table>
 
-By default, the **preserveLinkWithEditing** validation mode will be enabled, thus the validations will not occur when editing the linked tasks. 
+By default, the **preserveLinkWithEditing** validation mode will be enabled thus the validations will not occur when editing the linked tasks. 
 
 The below code snippet explains enabling the **respectLink** validation mode while editing the linked tasks in the actionBegin event.
 
@@ -98,7 +98,7 @@ $("#gantt").ejGantt({
 
 {% endhighlight %}
 
-### Using validation dialog:
+### Using validation dialog
 
 When disabling all the validation modes in the actionBegin event, a validation popup will be displayed prompting the user to select the validation mode to validate taskbar editing.
 
@@ -106,13 +106,13 @@ This validation popup will display different options based on the successor task
 
 If the user moved the successor task, that starts after predecessor task’s end date then the dialog will be rendered with below options,
 
-* Cancel, Keep the existing link
+* Cancel, Keep the existing link.
 * Remove the link and move the task to start on edited date.
 * Move the task to start on edited date and keep the link.
 
 If the user moved the successor task, that starts before the predecessor task’s end date then the dialog will be rendered with below options.
 
-* Cancel, Keep the existing link
+* Cancel, Keep the existing link.
 * Remove the link and move the task to start on edited date.
 
 The following code example explains this.
