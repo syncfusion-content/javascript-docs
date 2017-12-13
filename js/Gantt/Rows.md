@@ -9,20 +9,20 @@ api: /api/js/ejgantt
 ---
 # Rows 
 
-Row represents a task information from the datasource, and it is possible to perform the following actions in Gantt rows
+Row represents a task information from the datasource, and it is possible to perform the following actions in Gantt rows.
 
 ## Adding a row
 
-A row can be added in the following ways in Gantt,
+A row can be added in the following ways in Gantt.
 
 * Toolbar 
 * Context menu 
 * Adding a row programmatically 
 
-### Toolbar Adding
+### Toolbar adding
 
 
-Row can be added in Gantt from toolbar while [editSettings.allowAdding](/api/js/ejgantt#members:editsettings-allowadding) property is set to true. On clicking the toolbar add icon, you need to provide the task information in the add dialog. If a row is previously selected, then the new row will be added below and in the same hierarchical level as that of the selected row. If there are no rows selected in Gantt, by default the new row will be added as the top most row in Gantt.
+Row can be added in Gantt from toolbar while the [editSettings.allowAdding](/api/js/ejgantt#members:editsettings-allowadding) property is set to true. On clicking the toolbar add icon, you need to provide the task information in the add dialog. If a row is previously selected, then the new row will be added below and in the same hierarchical level as that of the selected row. If there are no rows selected in Gantt, by default the new row will be added as the top most row in Gantt.
 
 {% highlight javascript %}
 $("#GanttContainer").ejGantt({
@@ -44,7 +44,7 @@ $("#GanttContainer").ejGantt({
 
 ### Context menu adding
 
-You can able to add new rows either above or below the selected rows by using the default context menu, while [enableContextMenu](/api/js/ejgantt#members:enablecontextmenu) is set to true. The new row added will have the same task information similar to the selected row.
+New rows can either be added above or below the selected rows by using the default context menu, while the [enableContextMenu](/api/js/ejgantt#members:enablecontextmenu) is set to true. The new row added will have the same task information similar to the selected row.
 
 {% highlight javascript %}
 $("#GanttContainer").ejGantt({
@@ -68,7 +68,7 @@ $("#GanttContainer").ejGantt({
 
 ### Adding a row programmatically
 
-You can add rows in the below positions dynamically using [addRecord](/api/js/ejgantt#methods:addrecord) public method,
+You can add rows in the below positions dynamically using [addRecord](/api/js/ejgantt#methods:addrecord) public method.
 
 * Top of all the rows
 * Bottom to all the existing rows
@@ -151,9 +151,9 @@ The following screenshot depicts a row drag and drop in the Gantt widget.
 
 ![](/js/Gantt/Rows_images/Rows_img4.png)
 
-[Click](http://js.syncfusion.com/demos/web/#!/bootstrap/gantt/rowdraganddrop) here to view the online demo sample for row drag and drop in Gantt
+[Click](http://js.syncfusion.com/demos/web/#!/bootstrap/gantt/rowdraganddrop) here to view the online demo sample for row drag and drop in Gantt.
 
-### Customizing Drag tooltip
+### Customizing drag tooltip
 
 The [tooltipItems](/api/js/ejgantt#members:dragtooltip-tooltipitems) property is used to customize the tooltip items. By using this property, specific fields can be rendered in the tooltip. By default this property value is `null`, and all the defined field items are rendered in the tooltip.
 
@@ -272,7 +272,7 @@ $("#GanttContainer").ejGantt({
 
 # Row height
 
-It is possible to change the height of the row in Gantt by setting row height in pixels to [rowHeight](/api/js/ejtreegrid#members:rowheight) property. The following code example explains how to change the row height in Gantt at load time.
+It is possible to change the height of the row in Gantt by setting row height in pixels to the [rowHeight](/api/js/ejtreegrid#members:rowheight) property. The following code example explains how to change the row height in Gantt at load time.
 
 {% highlight javascript %}
 $("#GanttContainer").ejGantt({
