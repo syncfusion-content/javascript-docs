@@ -13,7 +13,7 @@ api: /api/js/ejdialog
 
 The Dialog widget can be animated by using [enableAnimation](https://help.syncfusion.com/api/js/ejdialog#members:enableanimation) property while opening and closing the dialog.
 
-We can specify the effect and the duration for the animation. There are two types of effects. They are slide and fade. We can configure these settings separately for open and close dialog actions.
+We can specify the effect and the duration for the [animation](https://help.syncfusion.com/api/js/ejdialog#members:animation). There are two types of effects. They are slide and fade. We can configure these settings separately for open and close dialog actions.
 
 {% highlight javascript %}
 

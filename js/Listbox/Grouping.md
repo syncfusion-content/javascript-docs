@@ -72,7 +72,7 @@ The grouped ListBox can be also created via data binding which is explained belo
 
 {% seealso %} [Data Binding](https://help.syncfusion.com/js/listbox/databinding). {% endseealso %}
 
-The grouping will be defined based on the “groupBy” API in fields object.
+The grouping will be defined based on the [groupBy](https://help.syncfusion.com/api/js/ejlistbox#members:fields-groupBy) API in fields object.
 
 {% highlight html %}
 

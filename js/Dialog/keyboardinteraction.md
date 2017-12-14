@@ -54,7 +54,7 @@ Increases the dialog width.</td></tr>
 <td>
 <kbd>Esc</kbd></td><td>
 Closes the dialog <br/> 
-N> It will work only if `closeOnEscape` is set to true.</td></tr>
+N> It will work only if <a href="https://help.syncfusion.com/api/js/ejdialog#members:closeonescape">closeOnEscape</a> is set to true.</td></tr>
 </table>
 
 
