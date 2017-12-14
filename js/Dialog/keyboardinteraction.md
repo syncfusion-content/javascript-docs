@@ -11,7 +11,7 @@ api: /api/js/ejdialog
 
 # Keyboard interaction
 
-You can use Keyboard shortcut keys as an alternative for mouse actions to interact with the Dialog widget. The keyboard interaction will be enabled by default in the Dialog widget. It can be disabled by setting `allowKeyboardNavigation` to false.Please refer the below table for details about short cut keys and its corresponding usage.
+You can use Keyboard shortcut keys as an alternative for mouse actions to interact with the Dialog widget. The keyboard interaction will be enabled by default in the Dialog widget. It can be disabled by setting [allowKeyboardNavigation](https://help.syncfusion.com/api/js/ejdialog#members:allowkeyboardnavigation) to false.Please refer the below table for details about short cut keys and its corresponding usage.
 
  <table>
 <tr>

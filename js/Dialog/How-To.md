@@ -13,7 +13,7 @@ api: /api/js/ejdialog
 
 ## Create Multiple Dialogs
 
-Essential JS library supports multiple Dialog widgets in the same web page with different contents and different functionalities.
+Essential JS library supports multiple Dialog widgets in the same web page with different contents at different position using [position](https://help.syncfusion.com/api/js/ejdialog#members:position) property and different functionalities.
 
 Initialize the Dialog widgets by adding the script section as below.
 
@@ -136,7 +136,7 @@ Initialize both the Dialog widgets by adding the script section as below.
 
 Essential JS library supports Alert Dialog widgets.
 
-Using `showFooter` property to render Alert Dialog with Footers in Dialog widget.
+Using [showFooter](https://help.syncfusion.com/api/js/ejdialog#members:showfooter) property to render Alert Dialog with Footers in Dialog widget.
 
 Initialize the Dialog widget using the below code.
 
@@ -173,7 +173,7 @@ Initialize Footer in Dialog widgets by adding the script section in JsRender as 
 
 {% endhighlight %}
 
-Add the below script to render the Dialog widget.
+Add the below script to render the Dialog widget and map the render template Id into the footercontent using [footerTemplateId](https://help.syncfusion.com/api/js/ejdialog#members:footertemplateid) property.
 
 {% highlight javascript %}
 	

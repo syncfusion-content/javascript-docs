@@ -23,7 +23,7 @@ The Dialog widget provides the following action buttons.
 
 5. Collapse/Expand
 
-You can display only the necessary buttons in the Dialog widget by configuring the `actionButtons` property.
+You can display only the necessary buttons in the Dialog widget by configuring the [actionButtons](https://help.syncfusion.com/api/js/ejdialog#members:actionbuttons) property.
 
 {% highlight javascript %}
 
@@ -44,7 +44,7 @@ You can display only the necessary buttons in the Dialog widget by configuring t
 
 We can customize the action buttons in dialog widget.
 
-You can add new action button in the dialog widget by configuring the `actionButtonClick` event.
+You can add new action button in the dialog widget by configuring the [actionButtonClick](https://help.syncfusion.com/api/js/ejdialog#events:actionbuttonclick) event.
 
 {% highlight javascript %}
 
