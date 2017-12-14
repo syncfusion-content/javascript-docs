@@ -10,7 +10,7 @@ api: /api/js/ejgantt
 
 # Sorting
 
-The Gantt control for JavaScript has built-in support for sorting one or more columns.
+The Gantt control for JavaScript has in-built support for sorting one or more columns.
 
 ### Sorting Columns
 
