@@ -10,7 +10,7 @@ api: /api/js/ejgantt
 
 # Stripline
 
-Stripline in Gantt control is used to highlight the important event in Gantt chart part. By using this feature, you can add the striplines to highlight important days in your project. The following code example shows you how to add the stripline in Gantt control.
+The stripline in Gantt control is used to highlight the important event in Gantt chart part. By using this feature, you can add the striplines to highlight important days in your project. The following code example shows you how to add the stripline in Gantt control.
 
 {% highlight javascript %}
 

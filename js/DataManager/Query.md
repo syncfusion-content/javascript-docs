@@ -66,7 +66,7 @@ Result of the above code example is illustrated as follows.
 
 ## From
 
-The `from` query of the data manager is used to select the table from where the data is retrieved and bound to the table. The following code example illustrates on how to use the `from` query.
+The [from](https://help.syncfusion.com/api/js/ejquery#methods:from) query of the data manager is used to select the table from where the data is retrieved and bound to the table. The following code example illustrates on how to use the `from` query.
 
 {% highlight html %}
 
@@ -117,7 +117,7 @@ Result of the above code example is illustrated as follows.
 
 ## Clone
 
-The `clone` query of the data manager is used to duplicate the query. The following code example illustrates on how to `clone` a query.
+The [clone](https://help.syncfusion.com/api/js/ejquery#methods:clone) query of the data manager is used to duplicate the query. The following code example illustrates on how to `clone` a query.
 
 {% highlight html %}
 
@@ -170,7 +170,7 @@ Result of the above code example is illustrated as follows.
 
 ## Expand
 
-The `expand` query of the data manager is used to perform complex data binding.
+The [expand](https://help.syncfusion.com/api/js/ejquery#methods:expand) query of the data manager is used to perform complex data binding.
 
 
 {% highlight html %}

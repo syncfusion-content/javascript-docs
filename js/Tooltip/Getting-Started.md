@@ -72,7 +72,7 @@ For themes, you can use the `ej.web.all.min.css` CDN link from the code example 
 ## Create a Tooltip
 
 The Tooltip can be created from any HTML element with the HTML `id` attribute and pre-defined options set to it. To create the Tooltip, you should call the `ejTooltip` jQuery plug-in function with the options as parameter. Refer to the following code example.
-
+[content](https://help.syncfusion.com/api/js/ejtooltip#members:content) option is used for tooltip content.
 {% highlight html %}
  
 <div class="frame">    
@@ -144,7 +144,7 @@ Tooltip dimensions can be set using [width](https://help.syncfusion.com/api/js/e
 
 ## Tooltip Appearance 
 
-You can configure the appearance of the Tooltip with the title, close button and call out as your application requires.
+You can configure the appearance of the Tooltip with the title, close button and call out as your application requires. [isBalloon](https://help.syncfusion.com/api/js/ejtooltip#members:isballoon) option is used to enable the arrow in the tooltip.
 
 {% highlight html %}
  
