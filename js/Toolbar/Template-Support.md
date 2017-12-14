@@ -52,7 +52,7 @@ Set the list for **DropDown control** inside a list tag and define this tag as a
 {% endhighlight %}
 
 
-##Through Items API:
+##Through [items](https://help.syncfusion.com/api/js/ejtoolbar#members:Items) API:
 
 {% highlight html %}
 

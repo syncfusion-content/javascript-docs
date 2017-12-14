@@ -361,7 +361,7 @@ Initialize a DropDownList control with allowVirtualScrolling, enableFilterSearch
     
 {% endhighlight %}
 
-Now override the addItem method which will be redefined based on this scenario to avoid adding duplicate data on virtualScrolling and empty the _updateSelectedIndexByValue prototype method.
+Now override the addItem method which will be redefined based on this scenario to avoid adding duplicate data on virtualScrolling and empty the _updateSelectedIndexByValue prototype method using [create](https://help.syncfusion.com/api/js/ejdropdownlist#events:create) event.
 
 {% highlight javascript %}
     

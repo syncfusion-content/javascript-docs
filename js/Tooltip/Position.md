@@ -67,7 +67,7 @@ N> By default, the Tooltips "center bottom" corner is placed at the center top o
 
 ## Containment 
 
-Determines the HTML element in which the Tooltip is appended to e.g. its containing element and The tooltip will be restricted to move only within the specified container element.
+Determines the HTML element in which the Tooltip is appended to e.g. its containing element using [containment](https://help.syncfusion.com/api/js/ejtooltip#members:containment) property and The tooltip will be restricted to move only within the specified container element.
 
 Let's append our Tooltip to a custom 'frame' container:
 
@@ -116,7 +116,7 @@ N> By default all Tooltips are appended to the document.body element.
     
 {% endhighlight %}
  
-We can also position the Tooltip in relation to the mouse.
+We can also position the Tooltip in relation to the mouse using [associate](https://help.syncfusion.com/api/js/ejtooltip#members:associate) property.
  
 {% highlight html %}
  
@@ -209,7 +209,7 @@ And last but not least, absolute positioning via X,Y co-ordinates e.g. a Tooltip
 
 ## Collision 
 
-When the positioned element overflows the window in some direction, move it to an alternative position. 
+When the positioned element overflows the window in some direction, move it to an alternative position using [collision](https://help.syncfusion.com/api/js/ejtooltip#members:collision) property.
 
 The following values determines the kind of positioning that takes place.
 

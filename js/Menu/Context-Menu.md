@@ -112,7 +112,7 @@ Hides the context menu control using [hide](https://help.syncfusion.com/api/js/e
 
 ## ShowContextMenu
 
-Shows the context menu control. Add the following script code in the sample in order to show the context menu.
+Shows the context menu control using [show](https://help.syncfusion.com/api/js/ejmenu#methods:show) method. Add the following script code in the sample in order to show the context menu.
 
 {% highlight javascript %}
 

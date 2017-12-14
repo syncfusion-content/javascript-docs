@@ -11,7 +11,7 @@ api: /api/js/ejdatamanager
 
 # Paging
 
-Paging is a very important query in **DataManager** that is used to display only some records from the large data source. Here, you can learn the paging query in detail.
+Paging is a very important query in **DataManager** that is used to display only some records from the large data source. Here, you can learn the paging query using [page](https://help.syncfusion.com/api/js/ejquery#methods:page) option in detail.
 
 ## Default
 
@@ -194,7 +194,7 @@ Result of above code example is illustrated as follows.
 
 ## Skip
 
-The `skip` query is used to skip some number of records.
+The [skip](https://help.syncfusion.com/api/js/ejquery#methods:skip) query is used to skip some number of records.
 
 {% highlight html %}
 
@@ -246,7 +246,7 @@ Result of the above code example is illustrated as follows.
 
 ## Take
 
-The `take` query is used to get some certain number of records from the data source of the **DataManager**.
+The [take](https://help.syncfusion.com/api/js/ejquery#methods:take) query is used to get some certain number of records from the data source of the **DataManager**.
 
 {% highlight html %}
 
@@ -298,7 +298,7 @@ Result of the above code example is illustrated as follows.
 
 ## RequiresCount
 
-The `requiresCount` query is used to get the count of the total number of records in the data source of the **DataManager**.
+The [requiresCount](https://help.syncfusion.com/api/js/ejquery#methods:requirescount) query is used to get the count of the total number of records in the data source of the **DataManager**.
 
 {% highlight html %}
 
@@ -353,7 +353,7 @@ Result of the above code example is illustrated as follows.
 
 ## Range
 
-The `range` query is used to get some particular range of records from the data source of the **DataManager**.
+The [range](https://help.syncfusion.com/api/js/ejquery#methods:range) query is used to get some particular range of records from the data source of the **DataManager**.
 
 {% highlight html %}
 

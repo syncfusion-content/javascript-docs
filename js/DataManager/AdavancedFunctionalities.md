@@ -209,7 +209,7 @@ The above method generates the request header with custom header as follows.
 
 ### Adding Custom Request Headers to every Request using pre-request callback **beforeSend**
 
-You can set the custom headers using pre-request callback **beforeSend** as follows. The **setRequestHeader** method can be used to modify the **XMLHTTPRequest**.
+You can set the custom headers using pre-request callback [beforeSend](https://help.syncfusion.com/api/js/ejdatamanager#callbackfunctions:beforesend) as follows. The **setRequestHeader** method can be used to modify the **XMLHTTPRequest**.
 
 {% highlight html %}
 
@@ -252,7 +252,7 @@ The above method generates the request header with custom header as follows.
 
 ### Adding Custom Request Headers using **addParams** method
 
-You can use the addParams method of ej.Query class, to add custom parameter to the data request.
+You can use the [addParams](https://help.syncfusion.com/api/js/ejquery#methods:addparams) method of ej.Query class, to add custom parameter to the data request.
 
 {% highlight html %}
 
