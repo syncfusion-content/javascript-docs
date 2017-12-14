@@ -173,7 +173,7 @@ Initialize Footer in Dialog widgets by adding the script section in JsRender as 
 
 {% endhighlight %}
 
-Add the below script to render the Dialog widget and map the render template Id into the footercontent using [footerTemplateId](https://help.syncfusion.com/api/js/ejdialog#members:footertemplateid) property.
+Add the below script to render the Dialog widget and map the render template Id into the footer content using [footerTemplateId](https://help.syncfusion.com/api/js/ejdialog#members:footertemplateid) property.
 
 {% highlight javascript %}
 	
