@@ -84,11 +84,11 @@ You can use **ej.Query** to generate the report from web service.
 
 You can generate the **Filter** query to filter the **CustomerID** column based on **VINET** value and it is executed using the **DataManager.**
 
-The **where** function is used to filter the records based on the specified filter condition.
+The [where](https://help.syncfusion.com/api/js/ejquery#methods:where) function is used to filter the records based on the specified filter condition.
 
-The **select** property of **ejQuery**, is used to retrieve the specified columns from the data source.
+The [select](https://help.syncfusion.com/api/js/ejquery#methods:select) property of **ejQuery**, is used to retrieve the specified columns from the data source.
 
-The **executeQuery** property is used to process the data based on the query.
+The [executeQuery](https://help.syncfusion.com/api/js/ejdatamanager#methods:executequery) property is used to process the data based on the query.
 
 
 
@@ -382,7 +382,7 @@ When you execute the filter query and binding the result to the table, the follo
 
 You can generate the **Sort** query to sort the **Freight** column in descending order and that is executed using the **DataManager**. 
 
-The **sortBy** property of **ejQuery** is used to sort the records based on the field and direction specified.
+The [sortBy](https://help.syncfusion.com/api/js/ejquery#methods:sortby) property of **ejQuery** is used to sort the records based on the field and direction specified.
 
 {% highlight html %}
 
@@ -672,7 +672,7 @@ When you execute the sort query and binding the result to the table, the followi
 
 ## Page
 You can generate the **Paging** query to get the top four orders and it is executed using the **DataManager**.  
-The **Page** property of **ejQuery** is used to retrieve the records based on the given **pageIndex** and **pageSize**.
+The [page](https://help.syncfusion.com/api/js/ejquery#methods:page) property of **ejQuery** is used to retrieve the records based on the given **pageIndex** and **pageSize**.
 
 {% highlight html %}
 
@@ -811,6 +811,7 @@ Many Syncfusion UI widgets support data binding, and the Syncfusion DataManager 
 ### Local DataSource
 
 A DataSource can be created in-line with other Syncfusion UI widget configuration settings, as demonstrated in the example below.
+[executeLocal](https://help.syncfusion.com/api/js/ejdatamanager#methods:executelocal) method is used to get the local json array.
 
 {% highlight html %}
 
