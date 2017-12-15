@@ -9,9 +9,13 @@ api: /api/js/ejsplitter
 ---
 # How To?
 
-### Section for template icon suppport
+### Change Expand/Collapse icons
 
-By default, you are provided with collpase/expand icons in **Split bar** to collapse or expand the corresponding pane element in **Splitter**. But now, we have provided template support to replace existing expand/collapse icons. **expanderTemplate** Specifies HTML element string to replace template with existing expand/collapse icons. **clickOnExpander** event is triggered when we click on the template icon.
+By default, you are provided with collpase/expand icons in **Split bar** to collapse or expand the splitter panes. We have provided template support to replace existing expand/collapse icons.
+
+* **expanderTemplate** Specifies HTML element string to replace template with existing expand/collapse icons. 
+
+* **clickOnExpander** event is triggered when we click on the template icon.`
 
 {% highlight html %}
 
@@ -39,6 +43,31 @@ By default, you are provided with collpase/expand icons in **Split bar** to coll
 			      else {this.expand(0); flag=true;}
 			}
 		};)
+
+{% endhighlight %}
+
+{% highlight css %}
+
+        .cont {
+            padding: 10px 0 0 10px;
+            text-align: center;
+        }   
+         .eimg {
+            height:40px;
+            width:35px;
+			margin-left: -13px;
+        }  
+
+		.ediv {
+           height: 30px;
+			width: 45px;
+			background-color: darkblue;
+			margin-top: -130px;
+			margin-left: -20px;
+        }  
+       .e-splitter .e-splitbar .e-splitter-h-template {
+            top: 15%;
+       }
 
 {% endhighlight %}
 
