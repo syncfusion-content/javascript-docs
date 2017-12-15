@@ -12,7 +12,7 @@ api: /api/js/ejsignature
 
 ## Background color
 
-Signature widget allows you to set the background Color for the control using the **backgroundColor** property. When we set our required background, then the signature’s background color will be changed automatically.
+Signature widget allows you to set the background Color for the control using the [backgroundColor](https://help.syncfusion.com/api/js/ejsignature#members:backgroundcolor) property. When we set our required background, then the signature’s background color will be changed automatically.
 
 The following code example is used to render the Signature control with background color
 
@@ -34,7 +34,7 @@ The following screenshot illustrates the Signature with custom defined backgroun
 
 ## Background Image
 
-Signature widget allows you to set the background image for the control using the **backgroundImage** property. When we set our required background image, then the signature’s canvas will be changed with the given image.
+Signature widget allows you to set the background image for the control using the [backgroundImage](https://help.syncfusion.com/api/js/ejsignature#members:backgroundimage) property. When we set our required background image, then the signature’s canvas will be changed with the given image.
 
 The following code example is used to render the Signature control with customized background image.
 
@@ -58,7 +58,7 @@ The following screenshot illustrates the Signature with custom defined backgroun
 
 ## Stroke color
 
-Signature widget allows you to set the stroke color for the signature stroke using the **strokeColor** property. When we set our required color, then the signature’s stroke color will be changed.
+Signature widget allows you to set the stroke color for the signature stroke using the [strokeColor](https://help.syncfusion.com/api/js/ejsignature#members:strokecolor) property. When we set our required color, then the signature’s stroke color will be changed.
 
 The following code example is used to render the Signature control with stroke color.
 
@@ -80,7 +80,7 @@ The following screenshot illustrates the Signature with custom defined stroke co
 
 ## Stroke Width
 
-Signature widget allows you to set the stroke width for the control using the **strokeWidth** property. When we set our required width, then the signature’s stroke width will be changed.
+Signature widget allows you to set the stroke width for the control using the [strokeWidth](https://help.syncfusion.com/api/js/ejsignature#members:strokewidth) property. When we set our required width, then the signature’s stroke width will be changed.
 
 The following code example is used to render the Signature control with maximum stroke value.
 

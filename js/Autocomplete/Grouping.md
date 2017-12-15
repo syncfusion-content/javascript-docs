@@ -11,7 +11,7 @@ api: /api/js/ejautocomplete
 
 # Grouping
 
-The suggestion list items can be grouped by providing a header for each set of items. The grouping will be defined based on the “groupBy” API in fields object.
+The suggestion list items can be grouped by providing a header for each set of items. The grouping will be defined based on the [groupBy](https://help.syncfusion.com/api/js/ejautocomplete#members:fields-groupBy) API in fields object.
 
 Here the category field is mapped with groupBy field.
 

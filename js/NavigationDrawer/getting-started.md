@@ -105,7 +105,7 @@ To set the target icon image from sprite and to position the target icon properl
 {% endhighlight %}
 
 
-Create the navigation drawer control as follows. You can display the navigation items as a list (or it can be any template) by using the ListView control. This is achieved by setting the **enableListView** property to true. Also you can open the drawer by clicking on target element by setting the **targetId** property. 
+Create the navigation drawer control as follows. You can display the navigation items as a list (or it can be any template) by using the ListView control. This is achieved by setting the [enableListView](https://help.syncfusion.com/api/js/ejnavigationdrawer#members:enablelistview) property to true. Also you can open the drawer by clicking on target element by setting the [targetId](https://help.syncfusion.com/api/js/ejnavigationdrawer#members:targetid) property. 
 
 Add the following code in the **script** tag.
 
@@ -224,7 +224,7 @@ You can add desired page content while selecting the options in navigation drawe
 
 
 
-You can load the appropriate content for the navigation items by updating the content through mouseDown handler of ListView. You can define the handler and pass the method name with **mouseDown** attribute through listViewSettings. Also to view which item’s content is being loaded in the page, make the list selection to persist in the drawer by setting **persistSelection** as true. Refer to the following code example.
+You can load the appropriate content for the navigation items by updating the content through mouseDown handler of ListView. You can define the handler and pass the method name with [mouseDown](https://help.syncfusion.com/api/js/ejlistview#events:mousedown) attribute through [listViewSettings](https://help.syncfusion.com/api/js/ejnavigationdrawer#members:listviewsettings). Also to view which item’s content is being loaded in the page, make the list selection to persist in the drawer by setting [persistSelection](https://help.syncfusion.com/api/js/ejlistview#members:persistselection) as true. Refer to the following code example.
 
 Add the following code in the **script** tag.
 

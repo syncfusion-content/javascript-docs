@@ -93,7 +93,7 @@ Run the above code to render the following output.
 
 **Add Header** 
 
-You can add a header for **ListView**. Refer to the following script.
+You can add a header for **ListView** using [showHeader](https://help.syncfusion.com/api/js/ejlistview#members:showheader) property and change the title content using [headerTitle](https://help.syncfusion.com/api/js/ejlistview#members:headertitle) property. Refer to the following script.
 
 
 

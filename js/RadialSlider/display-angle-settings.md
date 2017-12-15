@@ -12,7 +12,7 @@ api: /api/js/ejradialslider
 
 ## Start Angle
 
-The **RadialSlider** property **startAngle** allows you to change the startAngle level of the  **RadialSlider**. By default, the **Radial Slider** startAngle is set as 0. Refer to the following code example.
+The **RadialSlider** property [startAngle](https://help.syncfusion.com/api/js/ejradialslider#members:startangle) allows you to change the startAngle level of the  **RadialSlider**. By default, the **Radial Slider** startAngle is set as 0. Refer to the following code example.
 
 
 {% highlight html %}
@@ -36,7 +36,7 @@ The following screenshot illustrates the output of the above code.
 
 ## End Angle
 
-The **RadialSlider** property **endAngle** allows you  to change the endAngle level of the  **RadialSlider**. By default, the **Radial Slider** endAngle is set as 360. Refer to the following code example.
+The **RadialSlider** property [endAngle](https://help.syncfusion.com/api/js/ejradialslider#members:endangle) allows you  to change the endAngle level of the  **RadialSlider**. By default, the **Radial Slider** endAngle is set as 360. Refer to the following code example.
 
 {% highlight html %}
 

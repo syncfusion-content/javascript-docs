@@ -75,7 +75,7 @@ The following screenshot is the output for the above code.
 
 ## Adjusting Signature Size
 
-You can customize the width and height of the Signature by width and height properties. These properties completely depend on signature canvas. The width and height are adjusted within the signature canvas.
+You can customize the width and height of the Signature by [width](https://help.syncfusion.com/api/js/ejsignature#members:width) and [height](https://help.syncfusion.com/api/js/ejsignature#members:height) properties. These properties completely depend on signature canvas. The width and height are adjusted within the signature canvas.
 
 The following code example is used to render the Signature control with customized width and height.
 

@@ -10,7 +10,7 @@ api: /api/js/ejlistbox
 
 # Cascading
 
-We can dynamically populate data of a list box while selecting an item in another list box i.e. rendering child list box based on the item selection in parent list box. This can be achieved using “cascadeTo” property.
+We can dynamically populate data of a list box while selecting an item in another list box i.e. rendering child list box based on the item selection in parent list box. This can be achieved using [cascadeTo](https://help.syncfusion.com/api/js/ejlistbox#members:cascadeto) property.
 
 Create the UL elements to render both the parent and the child ListBox widget as below.
 
