@@ -50,7 +50,7 @@ Create an HTML file and add the following references to the required libraries.
 
 
 
-Add a &lt;div&gt; element. It is a container for Accordion control.
+Add a &lt;div&gt; element. It is a container for Accordion control. The [width](https://help.syncfusion.com/api/js/ejaccordion#members:width) property is used to define the width of the Accordion control.
 
 
 
@@ -184,7 +184,7 @@ You can also open all the panels during initialization using the [selectedItems]
 
 ### Setting rounded corner
 
-**Accordion** control, by default, is rendered in a regular rectangle. You can modify the regular rectangles with rounded corners by setting the [showRoundedCorner](https://help.syncfusion.com/api/js/ejaccordion#members:showroundedcorner) property to **True**.
+**Accordion** control, by default, is rendered in a regular rectangle. You can modify the regular rectangles with rounded corners by setting the [showRoundedCorner](https://help.syncfusion.com/api/js/ejaccordion#members:showroundedcorner) property to **True**. You can select the items on rendering by using [selectedItems](https://help.syncfusion.com/api/js/ejaccordion#members:selecteditems) property.
 
 N> showRoundedCorner property is False by default.
 

@@ -23,47 +23,47 @@ List of Field members
 <th>Name</th><th>Description</th></tr>
 <tr>
 <td>
-dataSource</td><td>
+[dataSource](https://help.syncfusion.com/api/js/ejmenu#members:fields-datasource)</td><td>
 datasource receives  Essential DataManager object and JSON object. </td></tr>
 <tr>
 <td>
-Query</td><td>
+[query](https://help.syncfusion.com/api/js/ejmenu#members:fields-query)</td><td>
 It receives query to retrieve data from the table (query is same as SQL). Example:  ej.Query().from("Categories").select("CategoryID,CategoryName").take(3);</td></tr>
 <tr>
 <td>
-tableName</td><td>
+[tableName](https://help.syncfusion.com/api/js/ejmenu#members:fields-tablename)</td><td>
 It receives table name to execute query on the corresponding table</td></tr>
 <tr>
 <td>
-Id</td><td>
+[id](https://help.syncfusion.com/api/js/ejmenu#members:fields-id)</td><td>
 Specifies the id to menu items list</td></tr>
 <tr>
 <td>
-parentId</td><td>
+[parentId](https://help.syncfusion.com/api/js/ejmenu#members:fields-parentid)</td><td>
 Specifies the parent id of the table.</td></tr>
 <tr>
 <td>
-Text</td><td>
+[text](https://help.syncfusion.com/api/js/ejmenu#members:fields-text)</td><td>
 Specifies the text of menu items list</td></tr>
 <tr>
 <td>
-spriteCssClass</td><td>
+[spriteCssClass](https://help.syncfusion.com/api/js/ejmenu#members:fields-spritecssclass)</td><td>
 Specifies the sprite CSS class to “li” item list</td></tr>
 <tr>
 <td>
-linkAttribute</td><td>
+[linkAttribute](https://help.syncfusion.com/api/js/ejmenu#members:fields-linkattribute)</td><td>
 Specifies the link attribute to “a” tag in item list</td></tr>
 <tr>
 <td>
-imageAttribute</td><td>
+[imageAttribute](https://help.syncfusion.com/api/js/ejmenu#members:fields-imageattribute)</td><td>
 Specifies the image attribute to “img” tag inside items list </td></tr>
 <tr>
 <td>
-htmlAttribute</td><td>
+[htmlAttribute](https://help.syncfusion.com/api/js/ejmenu#members:fields-htmlattribute)</td><td>
 Specifies the HTML attributes to “li” item list</td></tr>
 <tr>
 <td>
-imageUrl</td><td>
+[imageUrl](https://help.syncfusion.com/api/js/ejmenu#members:fields-imageurl)</td><td>
 Specifies the image URL to “img” tag inside item list. </td></tr>
 </table>
 

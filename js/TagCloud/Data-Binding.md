@@ -141,7 +141,7 @@ Define DataManager and assign remote data source to it. Initialize query for bin
 
 
 
-Assign datasource and query property values to bind the remote data. Map the corresponding fields to **TagCloud** control as follows:
+Assign [datasource](https://help.syncfusion.com/api/js/ejtagcloud#members:datasource) and [query](https://help.syncfusion.com/api/js/ejtagcloud#members:query) property values to bind the remote data. Map the corresponding fields to **TagCloud** control using [fields](https://help.syncfusion.com/api/js/ejtagcloud#members:fields) as follows:
 
 
 

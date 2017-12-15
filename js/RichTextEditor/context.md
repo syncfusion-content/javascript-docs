@@ -100,7 +100,7 @@ spriteCssClass:"e-rte-toolbar-icon tableProperties"});
 
 
 ## Removing an item from the context menu:
-  To remove a menu-item from the editor contextmenu, you have to use the ‘removeMenuOption’ method from the ejRTE object and find the method and parameter details with the [API-document](https://help.syncfusion.com/api/js/ejrte#methods:removeMenuOption "").
+  To remove a menu-item from the editor contextmenu, you have to use the ‘removeMenuOption’ method from the ejRTE object and find the method and parameter details with the [API-document](https://help.syncfusion.com/api/js/ejrte#methods:removeMenuOption).
 
 {% highlight html %}
 <textarea id="editor">     
