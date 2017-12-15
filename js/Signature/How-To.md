@@ -12,7 +12,7 @@ api: /api/js/ejsignature
 
 ### Save signature image with user defined format
 
-By default, the downloaded image from the signature canvas will be in **png** format. We can define our own format to download the image with **saveImageFormat** property. And we can also save the image along with the background by using the **saveWithBackground** property.
+By default, the downloaded image from the signature canvas will be in **png** format. We can define our own format to download the image with [saveImageFormat](https://help.syncfusion.com/api/js/ejsignature#members:saveimageformat) property. And we can also save the image along with the background by using the [saveWithBackground](https://help.syncfusion.com/api/js/ejsignature#members:savewithbackground) property.
 
 The following code example is used to download drawn image on the Signature control.
 
@@ -60,7 +60,7 @@ The following screenshot illustrates the Signature with saving (downloading) the
 
 ### To clear the Signature
 
-To clear the signature, you can simply use the **clear()** method. This method will clear all the drawn strokes in the signature canvas and leaves it empty.
+To clear the signature, you can simply use the [clear()](https://help.syncfusion.com/api/js/ejsignature#methods:clear) method. This method will clear all the drawn strokes in the signature canvas and leaves it empty.
 
 {% highlight js %}
 
@@ -89,7 +89,7 @@ To clear the signature, you can simply use the **clear()** method. This method w
 
 ### Make signature as responsive
 
-When the signature control is resized or even the window is resized the strokes drawn in the signature will be disappeared. To make the strokes visible even after resizing the window, we must set the **isResponsive**property as true.
+When the signature control is resized or even the window is resized the strokes drawn in the signature will be disappeared. To make the strokes visible even after resizing the window, we must set the [isResponsive](https://help.syncfusion.com/api/js/ejsignature#members:isresponsive) property as true.
 
 The following code example is used to render the Signature control with responsive support.
 

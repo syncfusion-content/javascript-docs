@@ -12,7 +12,7 @@ api: /api/js/ejlistview
 
 **First Level Group List**
 
-The **ListView** widget can make as grouped list by setting the **“data-ej-enableGroupList”** attribute as **“True”**. This groups the set of items listed under **ul**. You can identify the grouped items with the header title specified respectively.
+The **ListView** widget can make as grouped list by setting the [enableGroupList](https://help.syncfusion.com/api/js/ejlistview#members:enablegrouplist) property as **“True”**. This groups the set of items listed under **ul**. You can identify the grouped items with the header title specified respectively.
 
 Refer the following code example.
 
@@ -62,7 +62,7 @@ Run the codes to get the following output
 
 **Nested Child Group List**
 
-While selecting a list item that is grouped, you can also render another set of list items. This is achieved by defining the desired **child item list** within the list containing **”PrimaryKeyValue”.** This **data-ej-primarykey** attribute relates the parent child for identifying its appropriate child when clicking on the parent list item.
+While selecting a list item that is grouped, you can also render another set of list items. This is achieved by defining the desired **child item list** within the list containing **”PrimaryKeyValue”.** This [data-ej-primarykey](https://help.syncfusion.com/api/js/ejlistview#members:fieldsettings-primarykey) attribute relates the parent child for identifying its appropriate child when clicking on the parent list item.
 
 Refer the following code examples.
 
