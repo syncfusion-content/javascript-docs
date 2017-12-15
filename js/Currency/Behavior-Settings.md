@@ -12,7 +12,7 @@ api: /api/js/
 
 ## Decimal Places
 
-The property **decimalPlaces** declares the decimal point to the value of **CurrencyTextBox** control. The default value of decimalPlaces is 0 in CurrencyTextBox control. To set the decimalPlaces to “-1”, that allows the decimals without any limit in CurrencyTextbox control.
+The property **decimalPlaces** declares the decimal point to the value of **CurrencyTextBox** control. The default value of decimalPlaces is 0 in CurrencyTextBox control. To set the decimalPlaces to “-1”, that allows the decimals without any limit in CurrencyTextBox control.
 
 ### Configure Decimal Places
 

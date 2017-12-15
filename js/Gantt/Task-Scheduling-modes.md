@@ -10,7 +10,7 @@ api: /api/js/ejgantt
 
 # Task Scheduling Modes
 
-Gantt provides support for automatic and manual task scheduling modes. Scheduling mode of a task is used to indicate whether the start and end dates of a task will be automatically validated or not. Using the property **taskSchedulingMode** we can able to change the scheduling mode of a task. The following are the enumeration values that can be set to the property **taskSchedulingMode**
+The Gantt provides support for automatic and manual task scheduling modes. Scheduling mode of a task is used to indicate whether the start and end dates of a task will be automatically validated or not. Using the property **taskSchedulingMode** we can able to change the scheduling mode of a task. The following are the enumeration values that can be set to the property **taskSchedulingMode**
 
 * auto
 * manual
@@ -36,7 +36,7 @@ N> Automatic scheduling mode is the default task scheduling mode in Gantt.
 
 ## **Manually** **Scheduled** **tasks**
 
-When the **taskSchedulingMode** property is set as manual scheduling mode, all the tasks in the project will be rendered as manually scheduled tasks. Thus the dates of the tasks will not get validated automatically by the system. The tasks will not get rescheduled and dates will not be recalculated automatically based on the factors such as task dependencies and non-working days and hence manual scheduled tasks will lie on weekends and holidays. We can restrict this mode in predecessor editing alone, that is we can make to automatically validate the dates of the manual tasks on predecessor editing by enabling the property **validateManualTasksOnLinking****.** By enabling this property, the dates of the manual tasks will recalculate automatically, when its predecessor tasks' dates have been changed.
+When the **taskSchedulingMode** property is set as manual scheduling mode, all the tasks in the project will be rendered as manually scheduled tasks. Thus the dates of the tasks will not get validated automatically by the system. The tasks will not get rescheduled and dates will not be recalculated automatically based on the factors such as task dependencies and non-working days and hence manual scheduled tasks will lie on weekends and holidays. We can restrict this mode in predecessor editing alone, that is we can make to automatically validate the dates of the manual tasks on predecessor editing by enabling the property **validateManualTasksOnLinking**. By enabling this property, the dates of the manual tasks will recalculate automatically, when its predecessor tasks' dates have been changed.
 
 {% highlight javascript %}
 
