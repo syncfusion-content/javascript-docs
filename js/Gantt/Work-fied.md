@@ -10,8 +10,8 @@ api: /api/js/ejgantt
 
 # Work
 
-Work is the total labor hours necessary to complete a task. Work can be mapped from the data source field using the property `workMapping` and when the work value is mapped from the data source the end date and duration of the task will be calculated automatically based on the work and resource unit values from the data source. 
-The below code snippet explains mapping the work value from the data source
+The Work is the total labor hours necessary to complete a task. Work can be mapped from the data source field using the property `workMapping` and when the work value is mapped from the data source, the end date and duration of the task will be calculated automatically based on the work and resource unit values from the data source. 
+The below code snippet explains mapping the work value from the data source.
 
 
 {% highlight javascript %}
@@ -27,7 +27,7 @@ $("#GanttContainer").ejGantt({
 Note: 
 
 * When the work is mapped from the data source and if the resource unit is not defined for a task, the work will be calculated as 0 and task will be displayed as a milestone.
-* When the work field is mapped from the data source, the default task type will be `fixed work`
+* When the work field is mapped from the data source, the default task type will be `fixed work`.
 
 When the work value for a task is not mapped from the data source using the `workMapping` property, it will be calculated internally based on the number of resources assigned to the task and the duration of the task.
 
@@ -95,15 +95,15 @@ Work field updates</td></tr>
 <tr>
 <td>
 Fixed Work</td><td>
-Resource unit updatesNote: For manually scheduled task work will update</td><td>
-Duration field updatesNote: For manually scheduled task resource unit updates</td><td>
-Duration will updateNote: For manually scheduled task work field updates</td></tr>
+Resource unit updatesNote: For manually scheduled task work will update.</td><td>
+Duration field updatesNote: For manually scheduled task resource unit updates.</td><td>
+Duration will updateNote: For manually scheduled task work field updates.</td></tr>
 <tr>
 <td>
 Fixed Unit</td><td>
 Work field updates</td><td>
-Duration field updatesNote: For manually scheduled task resource unit updates</td><td>
-Duration will updateNote: For manually scheduled task work field updates</td></tr>
+Duration field updatesNote: For manually scheduled task resource unit updates.</td><td>
+Duration will updateNote: For manually scheduled task work field updates.</td></tr>
 </table>
 Note: 
 
@@ -116,9 +116,9 @@ The effortDriven field is used to define whether the total labor hours or the wo
 
 Note:
 
-* Effort driven field is effective only on adding or removing a resource in a task 
+* Effort driven field is effective only on adding or removing a resource in a task.
 
-The below table illustrates the effects of effort driven field with taskType property
+The below table illustrates the effects of effort driven field with taskType property.
 
 <table>
 <tr>
@@ -134,7 +134,7 @@ Work field updates</td></tr>
 <tr>
 <td>
 Fixed Work</td><td>
-Duration field updatesNote: For Fixed Work effort driven is always true.In this task type the effort driven field is non-editable</td><td>
+Duration field updatesNote: For Fixed Work effort driven is always true.In this task type the effort driven field is non-editable.</td><td>
 Not applicable</td></tr>
 <tr>
 <td>

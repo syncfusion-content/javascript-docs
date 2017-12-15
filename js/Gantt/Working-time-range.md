@@ -10,7 +10,7 @@ api: /api/js/ejgantt
 
 # Working Time Range
 
-In Gantt control, working hours in a day for a project can be defined by using **dayWorkingTime** property. Based on the working hours, automatic date scheduling and duration validations for a task are performed.
+In Gantt control, working hours in a day for a project can be defined by using the **dayWorkingTime** property. Based on the working hours, automatic date scheduling and duration validations for a task are performed.
 
 The below code snippet explains on how to define the working time range for the project in Gantt,
 
@@ -29,7 +29,7 @@ N> 1. Individual tasks can lie between any time within the defined working time 
 
 N> 1. **dayWorkingTime** property is used to define the working time for the whole project.
 
-The below demo explains the working time range in Gantt
+The below demo explains the working time range in Gantt.
 
 [Working Time Range](http://js.syncfusion.com/demos/web/#!/bootstrap/gantt/schedulingconcepts/workingtimerange)
 
