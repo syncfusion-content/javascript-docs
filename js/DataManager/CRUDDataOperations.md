@@ -19,7 +19,7 @@ The information in this section is applicable to scenarios, in which the data is
 
 ### Insert
 
-The insert method of the data manager is used to add a new record to the table. The JSON data passed as a parameter to the insert method that is inserted to the data source of the data manager.
+The [insert](https://help.syncfusion.com/api/js/ejdatamanager#methods:insert) method of the data manager is used to add a new record to the table. The JSON data passed as a parameter to the insert method that is inserted to the data source of the data manager.
 
 {% highlight html %}
 
@@ -73,7 +73,7 @@ The insert method of the data manager is used to add a new record to the table. 
 
 ### Update
 
-The update method is used to update the modified changes made to a record in the data source of the DataManager.
+The [update](https://help.syncfusion.com/api/js/ejdatamanager#methods:update) method is used to update the modified changes made to a record in the data source of the DataManager.
 
 {% highlight html %}
 
@@ -122,7 +122,7 @@ The update method is used to update the modified changes made to a record in the
 
 ### Remove
 
-The remove function receives the items to be deleted in the Data Table. The function should remove the provided items from the data source of the DataManager.
+The [remove](https://help.syncfusion.com/api/js/ejdatamanager#methods:remove) function receives the items to be deleted in the Data Table. The function should remove the provided items from the data source of the DataManager.
 
 {% highlight html %}
 
@@ -344,7 +344,7 @@ The remove action submits the data items that should be deleted, or just its IDs
 
 ## Batch Edit
 
-Batch Editing is a unique feature, where requests to add, remove and change are handled altogether at a time rather than passing the request separately for each operation.
+Batch Editing is a unique feature, where requests to add, remove and change are handled altogether at a time rather than passing the request separately for each operation. [saveChanges](https://help.syncfusion.com/api/js/ejdatamanager#methods:savechanges) method  is used to save the changes to the corresponding table.
 
 {% highlight html %}
 

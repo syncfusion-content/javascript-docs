@@ -113,7 +113,7 @@ N> Items are filtered based on “contains” filter type by default.
 ## Server Filtering
 
 Server filtering for displaying only a fixed amount of dataset from the whole dataset. In general, DropDownList displays just the data returned from the server. This feature is convenient for you to apply when the user does not want to see the whole dataset in the popup wrapper.
-enableServerFiltering If set to true, the filtering operations performed in the remote service and returns the result.
+[enableServerFiltering](https://help.syncfusion.com/api/js/ejdropdownlist#members:enableServerFiltering) If set to true, the filtering operations performed in the remote service and returns the result.
 
 {% highlight html %}
 

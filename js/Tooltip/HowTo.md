@@ -57,7 +57,7 @@ Define three employee’s JSON Array as given below(an array of 3 employees reco
 
 {% endhighlight %}
 
-Render the employees table and create the tooltip. Once the tooltip created, the data will be fetched using AJAX method as follows.
+Render the employees table and create the tooltip. Once the tooltip created, the data will be fetched using AJAX method as follows using [beforeOpen](https://help.syncfusion.com/api/js/ejtooltip#events:beforeopen) event.
 
 {% highlight html %}
 
@@ -230,6 +230,8 @@ Render the slider control and finds its handle to render the Tooltip as follows
     
 {% endhighlight %}
 
+Here, [showRoundedCorner](https://help.syncfusion.com/api/js/ejtooltip#members:showroundedcorner) is enabled for tooltip.
+
 Once the handler in the slider, start its sliding the below function will be triggered
 
 {% highlight html %}
@@ -266,7 +268,7 @@ function onStop(args){
 
 ## Tip(arrow) customization
 
-Styling the Tip's background and border colors is done using "cssClass" API of Tooltip. Change the size of the tip using the property name called "Tip" and CSS as follows.
+Styling the Tip's background and border colors is done using "cssClass" API of Tooltip. Change the size of the tip using the property name called [tip](https://help.syncfusion.com/api/js/ejtooltip#members:tip) and CSS as follows.
 
 {% highlight html %}
 
@@ -325,7 +327,7 @@ Defines the style for the tip as follow as
 
 Tooltips are also useful for input elements, to show hint in the context of each field.
 
-Rather than using multiple Tooltips, a single Tooltip can be used to show the information of each and every field of the form/table element. This can be achieved using “target” API. Target property Specifies a selector for elements, within the container, for which the Tooltip will be displayed.
+Rather than using multiple Tooltips, a single Tooltip can be used to show the information of each and every field of the form/table element. This can be achieved using [target](https://help.syncfusion.com/api/js/ejtooltip#members:target) API. Target property Specifies a selector for elements, within the container, for which the Tooltip will be displayed.
 
 The example below demonstrates how to create a Tooltip for multiple targets element. 
 
@@ -416,7 +418,7 @@ Apply the following styles to the form element.
 
 ## Interact with the Tooltip
 
-Give users, the possibility to interact with the tooltip. If the tooltip is interactive and activated by a hover event, set the amount of time (milliseconds)allowed for a user to hover off of the tooltip activator on to the tooltip itself – keeping the tooltip from closing using “autoCloseTimeout”  property.
+Give users, the possibility to interact with the tooltip. If the tooltip is interactive and activated by a hover event, set the amount of time (milliseconds)allowed for a user to hover off of the tooltip activator on to the tooltip itself – keeping the tooltip from closing using [autoCloseTimeout](https://help.syncfusion.com/api/js/ejtooltip#members:autoclosetimeout)  property.
 
 Using this property, Links can be provided in Tooltip content where user can navigate to some other page. This is handy for situations where you need to grab the user attention.
 
