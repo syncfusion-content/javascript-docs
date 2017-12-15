@@ -89,7 +89,7 @@ Header Image Customization
 
 ## Rounded corner
 
-By enabling [showRoundedCorner](https://help.syncfusion.com/api/js/ejtab#members:enablepersistence) property, you can customize the shape of the **Tab** widget from regular rectangular shape to rounded rectangle shape that is set to ‘**false**’ by default. 
+By enabling [showRoundedCorner](https://help.syncfusion.com/api/js/ejtab#members:showroundedcorner) property, you can customize the shape of the **Tab** widget from regular rectangular shape to rounded rectangle shape that is set to ‘**false**’ by default. 
 
 The following code example is used to render the **Tab** widget with **Rounded Corner**.
 

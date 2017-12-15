@@ -10,15 +10,15 @@ api: /api/js/ejgantt
 
 # Time Options
 
-Start date and End date in the datasource defines the starting point and ending point of a task in the project. It can be of two data types,
+The start date and end date in datasource defines the starting point and ending point of a task in the project. It can be of two data types.
 
 * Date 
 * Datetime
 
 The datetime data type for start date and end date defines the exact starting point and ending point of a task along with time details of a day. There are two types of time scales available based on working hours,
 
-* `TimeScale8Hours`  for 8 hour working scale
-* `TimeScale24Hours` for 24 hour working scale
+* `TimeScale8Hours`  for 8 hour working scale.
+* `TimeScale24Hours` for 24 hour working scale.
 
 Use the following code example for setting different time scales of working hours.
 

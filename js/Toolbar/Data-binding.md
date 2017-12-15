@@ -26,7 +26,7 @@ Syntax</th><th>
 Description</b></th></tr>
 <tr>
 <td>
-dataSource</td><td>
+[dataSource](https://help.syncfusion.com/api/js/ejtoolbar#members:datasource)</td><td>
 dataSource: window.countriesField</td><td>
 It specifies the data source of the Toolbar. The data source contains the list of data for generating the Toolbar items. By default, its value is null and its data type is object. </td></tr>
 <tr>
@@ -36,42 +36,42 @@ fields: {text: "name", value: "key" }</td><td>
 It specifies the mapping fields for the data items of the Toolbar. By default, its value is null and its data type is object.</td></tr>
 <tr>
 <td>
-query</td><td>
+[query](https://help.syncfusion.com/api/js/ejtoolbar#members:query)</td><td>
 query: ej.Query().from("Suppliers").select("ContactName");       	 </td><td>
 It specifies the query to retrieve the data from online server. By default, its value is null and its data type is object. </td></tr>
 <tr>
 <td>
-id</td><td>
+[id](https://help.syncfusion.com/api/js/ejtoolbar#members:fields-id)</td><td>
 id</td><td>
 It specifies the id of the tag and its default value is null and data type is string. </td></tr>
 <tr>
 <td>
-text</td><td>
+[text](https://help.syncfusion.com/api/js/ejtoolbar#members:fields-text)</td><td>
 text</td><td>
 It specifies the text content of the tag and its default value is null and data type is string. </td></tr>
 <tr>
 <td>
-imageUrl</td><td>
+[imageUrl](https://help.syncfusion.com/api/js/ejtoolbar#members:fields-imageurl)</td><td>
 imageUrl</td><td>
 This property defines the imageURL for the image location. While setting images, the folder name in which the images are stored should be set to imageUrl property. The value set to this property should be <b>string</b> type.</td></tr>
 <tr>
 <td>
-imageAttributes</td><td>
+[imageAttributes](https://help.syncfusion.com/api/js/ejtoolbar#members:fields-imageattributes)</td><td>
 imageAttributes</td><td>
 This property defines style for the image. While setting an image, styles can be applied such as height, width by using this property. The value set to this property should be <b>string</b> type.</td></tr>
 <tr>
 <td>
-spriteCssClass</td><td>
+[spriteCssClass](https://help.syncfusion.com/api/js/ejtoolbar#members:fields-spritecssclass)</td><td>
 spriteCssClass</td><td>
 This property sets the Sprite CSS for the image tag in Toolbar. The value set to this property should be <b>string</b> type.</td></tr>
 <tr>
 <td>
-htmlAttributes</td><td>
+[htmlAttributes](https://help.syncfusion.com/api/js/ejtoolbar#members:fields-htmlattributes)</td><td>
 htmlAttributes</td><td>
 This property sets the <b>HTML</b> attribute for the Toolbar item. The value set to this property should be <b>object</b> type. It can be any <b>HTML</b> attribute such as id, class, style.</td></tr>
 <tr>
 <td>
-tooltipText  </td><td>
+[tooltipText](https://help.syncfusion.com/api/js/ejtoolbar#members:fields-tooltiptext)  </td><td>
 tooltipText  </td><td>
 This property sets the text value for Toolbar item while mouse over in Toolbar. The value set to this property should be <b>string</b> type.</td></tr>
 </table>
