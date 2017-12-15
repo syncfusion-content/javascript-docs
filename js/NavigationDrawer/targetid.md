@@ -10,7 +10,7 @@ api: /api/js/ejnavigationdrawer
 
 ## TargetId
 
-This property is used to define the target Id for **Navigation Drawer**. The drawer opens while you click on the specified target element.
+The [targetId](https://help.syncfusion.com/api/js/ejnavigationdrawer#members:targetid) property is used to define the target Id for **Navigation Drawer**. The drawer opens while you click on the specified target element.
 
 {% highlight html %}
 

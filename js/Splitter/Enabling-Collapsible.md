@@ -10,7 +10,7 @@ api: /api/js/ejsplitter
 
 # Configure Collapsible and Expandable properties
 
-The **Splitter** provides you the option to enable or disable the pane collapse functionality. You can click the icon in **Split bar** to collapse or expand the corresponding pane element in **Splitter**. Setting the **collapsible** property to “**false**” disables the pane collapse functionality in the **Splitter** widget.
+The **Splitter** provides you the [option](https://help.syncfusion.com/api/js/ejsplitter#members:properties) to enable or disable the pane collapse functionality. You can click the icon in **Split bar** to collapse or expand the corresponding pane element in **Splitter**. Setting the **collapsible** property to “**false**” disables the pane collapse functionality in the **Splitter** widget.
 
 ## Enabling Collapsible
 

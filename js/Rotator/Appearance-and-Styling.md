@@ -14,7 +14,7 @@ api: /api/js/ejrotator
 
 ### Slide width
 
-This property sets the **width** of a **Rotator** Item. The value set to this property is **string** or **number**.
+This property sets the [width](https://help.syncfusion.com/api/js/ejrotator#members:slidewidth) of a **Rotator** Item. The value set to this property is **string** or **number**.
 
 
   {% highlight javascript %}
@@ -39,7 +39,7 @@ This property sets the **width** of a **Rotator** Item. The value set to this pr
 
 ### Slide height
 
-This property sets the **height** of a **Rotator** Item. The value set to this property is **string** or **number**.
+This property sets the [height](https://help.syncfusion.com/api/js/ejrotator#members:slideheight) of a **Rotator** Item. The value set to this property is **string** or **number**.
 
 
   {% highlight javascript %}

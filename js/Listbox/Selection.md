@@ -15,7 +15,7 @@ The ListBox widget allows you to highlight the selected item. It allows multiple
 
 ## Selection on initialize
 
-By default, the ListBox widget allows single item selection. We can select specific item during initialization of the ListBox widget using the “selectedIndex” API. 
+By default, the ListBox widget allows single item selection. We can select specific item during initialization of the ListBox widget using the [selectedIndex](https://help.syncfusion.com/api/js/ejlistbox#members:selectedindex) API. 
 
 {% tabs %}
 {% highlight html %}
@@ -59,7 +59,7 @@ By default, the ListBox widget allows single item selection. We can select speci
 
 ## Multiple selection
 
-Multiple selection can be enabled using “allowMultiSelection” property. You can select multiple list items using <kbd>“Ctrl”</kbd> and <kbd>“Shift”</kbd> keys.
+Multiple selection can be enabled using [allowMultiSelection](https://help.syncfusion.com/api/js/ejlistbox#members:allowmultiselection) property. You can select multiple list items using <kbd>“Ctrl”</kbd> and <kbd>“Shift”</kbd> keys.
 
 {% seealso %} [Keyboard Interaction](https://help.syncfusion.com/js/listbox/keyboard-interaction). {% endseealso %}
 
@@ -82,9 +82,9 @@ Multiple selection can be enabled using “allowMultiSelection” property. You 
 
 ## Checkbox
 
-The ListBox widget allows selection through checkbox. It can be enabled using “showCheckbox” API.
+The ListBox widget allows selection through checkbox. It can be enabled using [showCheckbox](https://help.syncfusion.com/api/js/ejlistbox#members:showcheckbox) API.
 
-The specified items can be checked on initialize through “checkedIndices” property. 
+The specified items can be checked on initialize through [checkedIndices](https://help.syncfusion.com/api/js/ejlistbox#members:checkedindices) property. 
 
 {% seealso %} [checkedIndices](https://help.syncfusion.com/api/js/ejlistbox#members:checkedindices). {% endseealso %}
 

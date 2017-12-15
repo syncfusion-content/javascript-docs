@@ -38,7 +38,7 @@ This property retrieves data from remote data. This property is applicable only 
 
 ## Local data binding
 
-**Rotator** provides the data binding support for the **Rotator** **item**. So you can bind the data from **JSON** **Data**. For this behavior, you need to map the corresponding filed with their column names. The data can be bound as a list and it is assigned to **dataSource** property. You can refer the following code example to bind local data.
+**Rotator** provides the data binding support for the **Rotator** **item**. So you can bind the data from **JSON** **Data**. For this behavior, you need to map the corresponding filed with their column names. The data can be bound as a list and it is assigned to [dataSource](https://help.syncfusion.com/api/js/ejrotator#members:datasource) property. You can refer the following code example to bind local data.
 
   {% highlight html %}
 

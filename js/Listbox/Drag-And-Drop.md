@@ -16,7 +16,7 @@ A list item can be moved from a widget to another ListBox widget. Also the order
 
 In some scenarios we might want to transfer a ListBox data to another ListBox. In the below steps we will see how to move skills from a ListBox widget to another.
 
-Enable the drag and drop support through “allowDrag” and “allowDrop” properties.
+Enable the drag and drop support through [allowDrag](https://help.syncfusion.com/api/js/ejlistbox#members:allowdrag) and [allowDrop](https://help.syncfusion.com/api/js/ejlistbox#members:allowdrop) properties.
 
 {% highlight html %}
 
@@ -88,7 +88,7 @@ N> The datasource is not set for the second ListBox widget. In the above example
 
 ## Dynamically set data source on drag and drop
 
-In local data binding, while moving the specific item from a ListBox to another, its data source will be updated automatically along with the DOM (which is explained here). But in case of remote binding, only the DOM will be updated. We need to update the data source manually since it’s not possible to update the remote data source. So in this case, we can use “itemDrop” event to update the datasource of the second ListBox widget based on the dropped items. 
+In local data binding, while moving the specific item from a ListBox to another, its data source will be updated automatically along with the DOM (which is explained here). But in case of remote binding, only the DOM will be updated. We need to update the data source manually since it’s not possible to update the remote data source. So in this case, we can use [itemDrop](https://help.syncfusion.com/api/js/ejlistbox#events:itemdrop) event to update the datasource of the second ListBox widget based on the dropped items. 
 
 Both the ListBox widgets are bound to a remote data source.
 
@@ -152,11 +152,11 @@ Both the ListBox widgets are bound to a remote data source.
 
 
 
-In the “itemDrop” event, we can implement “updateDataSource” function to update the datasource of the second ListBox widget. The “itemDrop” event’s argument contains the details of the dropped item. 
+In the [itemDrop](https://help.syncfusion.com/api/js/ejlistbox#events:itemdrop) event, we can implement “updateDataSource” function to update the datasource of the second ListBox widget. The “itemDrop” event’s argument contains the details of the dropped item. 
 
 ## Reordering
 
-Item reordering can be done within a ListBox widget by enabling both “allowDrag” and “allowDrop” properties.
+Item reordering can be done within a ListBox widget by enabling both [allowDrag](https://help.syncfusion.com/api/js/ejlistbox#members:allowdrag) and [allowDrop](https://help.syncfusion.com/api/js/ejlistbox#members:allowdrop) properties.
 
 {% highlight html %}
   

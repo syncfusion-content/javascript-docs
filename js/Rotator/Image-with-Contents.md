@@ -211,7 +211,7 @@ This feature allows you to add text along with the **image** in **Rotator** cont
 
 ### Display Items count 
 
-This property specifies the number of **Rotator** Items to be displayed. The default value is ‘**1’**. The value set to this property is **string** or **number**.
+This [displayItemsCount](https://help.syncfusion.com/api/js/ejrotator#members:displayitemscount) property specifies the number of **Rotator** Items to be displayed. The default value is ‘**1’**. The value set to this property is **string** or **number**.
 
 {% highlight javascript %}
 
@@ -244,7 +244,7 @@ This property specifies the number of **Rotator** Items to be displayed. The def
 
 ### Navigate steps
 
-This property specifies the number of **Rotator** Items to **navigate** on a single click (next/previous/play buttons). The **navigateSteps** property value must be less than or equal to the **displayItemsCount** property value. The default value is ‘**1**’. The value set to this property is **string** or **number**.
+This [navigateSteps](https://help.syncfusion.com/api/js/ejrotator#members:navigatesteps) property specifies the number of **Rotator** Items to **navigate** on a single click (next/previous/play buttons). The **navigateSteps** property value must be less than or equal to the **displayItemsCount** property value. The default value is ‘**1**’. The value set to this property is **string** or **number**.
 
 {% highlight javascript %}
 
@@ -275,7 +275,7 @@ This property specifies the number of **Rotator** Items to **navigate** on a sin
 
 ### Start index
 
-This property sets the **index** of the slide that is displayed first. The default value is ‘1’. The value set to this property is **string** or **number**.
+This property sets the [index](https://help.syncfusion.com/api/js/ejrotator#members:startindex) of the slide that is displayed first. The default value is ‘1’. The value set to this property is **string** or **number**.
 
 {% highlight javascript %}
 
@@ -294,7 +294,7 @@ This property sets the **index** of the slide that is displayed first. The defau
 
 ### Frame space
 
-This property sets the space between the **Rotator** Items. The value set to this property is **string** or **number**.
+This [frameSpace](https://help.syncfusion.com/api/js/ejrotator#members:framespace) property sets the space between the **Rotator** Items. The value set to this property is **string** or **number**.
 
 {% highlight javascript %}
 
@@ -308,7 +308,7 @@ This property sets the space between the **Rotator** Items. The value set to thi
 
 ## Animation 
 
-**animationType** property specifies the **Animation** type for the **Rotator** Item. **animationType** options include slide, fastSlide, slowSlide, and other custom easing animationTypes. The default value is ‘**slide**’. The value set to this property is **string**. 
+[animationType](https://help.syncfusion.com/api/js/ejrotator#members:animationtype) property specifies the **Animation** type for the **Rotator** Item. **animationType** options include slide, fastSlide, slowSlide, and other custom easing animationTypes. The default value is ‘**slide**’. The value set to this property is **string**. 
 
 {% highlight javascript %}
 
@@ -324,7 +324,7 @@ This property sets the space between the **Rotator** Items. The value set to thi
 
 ### Animation speed
 
-This property sets the **speed** of slide transition. The default value is ‘**600**’. The value set to this property is **string** or **number**.
+This property sets the [speed](https://help.syncfusion.com/api/js/ejrotator#members:animationspeed) of slide transition. The default value is ‘**600**’. The value set to this property is **string** or **number**.
 
 {% highlight javascript %}
 
@@ -341,7 +341,7 @@ This property sets the **speed** of slide transition. The default value is ‘**
 
 ### Delay
 
-This property sets the **delay** between the **Rotator** Items to move after the slide transition. The default value is **500**. The value set to this property is **string** or **number.**
+This property sets the [delay](https://help.syncfusion.com/api/js/ejrotator#members:delay) between the **Rotator** Items to move after the slide transition. The default value is **500**. The value set to this property is **string** or **number.**
 
 {% highlight javascript %}
 
@@ -377,7 +377,7 @@ By default, there are 12 themes support available for **Rotator** control as fol
 
 ### cssClass
 
-This property is used to set **root** **class** for **Rotator** control theme. The value set to this property is **string** type.
+This [cssClass](https://help.syncfusion.com/api/js/ejrotator#members:cssclass) property is used to set **root** **class** for **Rotator** control theme. The value set to this property is **string** type.
 
 {% highlight javascript %}
 

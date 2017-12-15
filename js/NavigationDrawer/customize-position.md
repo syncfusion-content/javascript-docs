@@ -10,7 +10,7 @@ api: /api/js/ejnavigationdrawer
 
 ## Customize Position
 
-**Position** property is used to specify the position whether it is in fixed or relative to the page. When you set a normal value to **position** property, it appears within the container. Otherwise, it appears in the whole body .The possible position values are fixed and normal. The Default value is normal.
+[Position](https://help.syncfusion.com/api/js/ejnavigationdrawer#members:position) property is used to specify the position whether it is in fixed or relative to the page. When you set a normal value to **position** property, it appears within the container. Otherwise, it appears in the whole body .The possible position values are fixed and normal. The Default value is normal.
 
 {% highlight html %}
 
