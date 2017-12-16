@@ -12,7 +12,7 @@ api: /api/js/ejradialslider
 
 ## Stroke Width
 
-**Radial Slider** strokeWidth property specifies the width of the outline . By default, the **Radial slider** strokeWidth is set as 2. Refer to the following code example.
+**Radial Slider** [strokeWidth](https://help.syncfusion.com/api/js/ejradialslider#members:strokewidth) property specifies the width of the outline . By default, the **Radial slider** strokeWidth is set as 2. Refer to the following code example.
 
 {% highlight html %}
 
@@ -37,7 +37,7 @@ The following screenshot illustrates the output of the above code.
 
 ## Setting radius
 
-The **RadialSlider** property **radius**  indicates the radius of the RadialSlider's circle ant its allow to change radius value.  By default, the **Radial Slider** radius is set to 200. Refer to the following code example.
+The **RadialSlider** property [radius](https://help.syncfusion.com/api/js/ejradialslider#members:radius) indicates the radius of the RadialSlider's circle ant its allow to change radius value.  By default, the **Radial Slider** radius is set to 200. Refer to the following code example.
 
 {% highlight html %}
 

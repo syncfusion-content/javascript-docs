@@ -10,7 +10,7 @@ api: /api/js/ejlistbox
 
 # Templates
 
-The ListBox widget’s appearance can be customized based on different needs using templates. The desired templates can be defined using the “template” property.
+The ListBox widget’s appearance can be customized based on different needs using templates. The desired templates can be defined using the [template](https://help.syncfusion.com/api/js/ejlistbox#members:template) property.
 
 {% highlight html %}
    <ul id="listbox"></ul>

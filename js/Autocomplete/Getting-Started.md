@@ -105,7 +105,7 @@ Initialize the AutoComplete widget by adding the following code in script sectio
 
 ## Data binding
 
-The data for the suggestion list can be populated using the dataSource property. 
+The data for the suggestion list can be populated using the [dataSource](https://help.syncfusion.com/api/js/ejautocomplete#members:datasource) property. 
 
 {%seealso%}[Data Binding](https://help.syncfusion.com/js/autocomplete/data-binding){%endseealso%}
 
@@ -134,7 +134,7 @@ The data for the suggestion list can be populated using the dataSource property.
 
 ## Enable Popup Button
 
-This button helps you to show all the available suggestions on clicking it instead of the search text.
+The [showPopupButton](https://help.syncfusion.com/api/js/ejautocomplete#members:showpopupbutton) property helps you to show all the available suggestions on clicking it instead of the search text.
 
 {% highlight javascript %}
 

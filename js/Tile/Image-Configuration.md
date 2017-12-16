@@ -10,7 +10,7 @@ api: /api/js/ejtile
 
 # Image Configuration
 
-The **“data-ej-imagePosition”** attribute is used to adjust the position of **Tile** image at the **center** on initialization. The possible values for the “**data-ej-imagePosition”** are as follows
+The [data-ej-imagePosition](https://help.syncfusion.com/api/js/ejtile#members:imageposition) attribute is used to adjust the position of **Tile** image at the **center** on initialization. The possible values for the “**data-ej-imagePosition”** are as follows
 
 1. center
 2. top
@@ -24,7 +24,7 @@ The **“data-ej-imagePosition”** attribute is used to adjust the position of 
 
 
 
-The **"data-ej-imageUrl”** attribute is used to set the background image for **Tile**, where the image is given in the path specified by “**data-ej-imageUrl”** attribute.
+The [data-ej-imageUrl](https://help.syncfusion.com/api/js/ejtile#members:imageurl) attribute is used to set the background image for **Tile**, where the image is given in the path specified by “**data-ej-imageUrl”** attribute.
 
 Refer to the following code examples.
 
@@ -46,7 +46,7 @@ Add the following code inside the **script** tag.
 
 ![](/js/Tile/Image-Configuration_images/Image-Configuration_img1.png)
 
-You can give images for each tile through **css** classes by using **"data-ej-imageClass”** attribute. You can define your desired styles in the specified class.
+You can give images for each tile through **css** classes by using [data-ej-imageClass](https://help.syncfusion.com/api/js/ejtile#members:imageclass) attribute. You can define your desired styles in the specified class.
 
 Refer to the following code examples.
 

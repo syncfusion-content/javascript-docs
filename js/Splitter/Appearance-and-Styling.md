@@ -66,11 +66,11 @@ In the **HTML** page set the corresponding **&lt;div&gt;** elements for outer an
 
 ## Animation Support
 
-The **Splitter** provides you animation support when you expand or collapse the pane. The animation speed can be modified by using the **animationSpeed** property, that has values in milliseconds.
+The **Splitter** provides you animation support when you expand or collapse the pane. The animation speed can be modified by using the [animationSpeed](https://help.syncfusion.com/api/js/ejsplitter#members:animationspeed) property, that has values in milliseconds.
 
 ### Enabling Animation with Animation speed
 
-The following steps explain the implementation of **enableAnimation** option in the **Splitter** widget.
+The following steps explain the implementation of [enableAnimation](https://help.syncfusion.com/api/js/ejsplitter#members:enableanimation) option in the **Splitter** widget.
 
 In the **HTML** page set the corresponding **&lt;div&gt;** element for rendering **Splitter** control. 
 
@@ -115,11 +115,11 @@ The output for **Splitter** when **enableAnimation** is “**True**”. Expandin
 
 ### Height
 
-The height of **Splitter** can be modified by using the **height** property. The default value for **height** property is **null** in **Splitter**. You can set the **height** property by pixel or percentage values.
+The height of **Splitter** can be modified by using the [height](https://help.syncfusion.com/api/js/ejsplitter#members:height) property. The default value for **height** property is **null** in **Splitter**. You can set the **height** property by pixel or percentage values.
 
 ### Width
 
-The width of **Splitter** can be modified by using the **width** property. The default value for **width** property is **null** in **Splitter**. You can set the **width** property by pixel or percentage values.
+The width of **Splitter** can be modified by using the [width](https://help.syncfusion.com/api/js/ejsplitter#members:width) property. The default value for **width** property is **null** in **Splitter**. You can set the **width** property by pixel or percentage values.
 
 ### Max Size
 
@@ -202,7 +202,7 @@ By default, there are 12 themes support available for Autocomplete control namel
 
 ### CSS Class
 
-The CSS properties can be customized by using **cssClass** in the **Splitter** widget. The following steps explain the implementation of **cssClass** option in the **Splitter** widget.
+The CSS properties can be customized by using **cssClass** in the **Splitter** widget. The following steps explain the implementation of [cssClass](https://help.syncfusion.com/api/js/ejsplitter#members:cssclass) option in the **Splitter** widget.
 
 In the **HTML** page set the corresponding **&lt;div&gt;** element for rendering **Splitter** control. 
 

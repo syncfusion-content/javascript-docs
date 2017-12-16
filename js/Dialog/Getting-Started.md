@@ -122,7 +122,7 @@ Add the contents for the dialog as below.
 
 ### Set the title
 
-The Dialog widget’s title can be set as follows.
+To set the title to Dialog widget’s using [title](https://help.syncfusion.com/api/js/ejdialog#members:title) property as follows.
 
 {% highlight javascript %}
 
@@ -141,9 +141,9 @@ N>The title can be also set through the title attribute for the dialog’s div e
 
 ### Open Dialog dynamically
 
-In most cases, the Dialog widgets are needed only in dynamic actions like showing some messages on clicking a button, to provide alert, etc. So the Dialog widget provides “open” and “close” methods to open/close the dialogs dynamically.
+In most cases, the Dialog widgets are needed only in dynamic actions like showing some messages on clicking a button, to provide alert, etc. So the Dialog widget provides [open](https://help.syncfusion.com/api/js/ejdialog#methods:open) and [close](https://help.syncfusion.com/api/js/ejdialog#methods:close) methods to open/close the dialogs dynamically.
 
-The Dialog widget can be hidden on initialize using `showOnInit` property which should be set to false. 
+The Dialog widget can be hidden on initialize using [showOnInit](https://help.syncfusion.com/api/js/ejdialog#members:showoninit) property which should be set to false. 
 
 Refer the below example. The dialog will be opened on clicking the Button widget. 
 
