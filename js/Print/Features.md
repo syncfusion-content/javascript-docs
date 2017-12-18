@@ -9,11 +9,11 @@ documentation: ug
 
 # Print options
 
-The Print widget comes with other enhanced options to exclude specific elemments on a page before printing, print the content on a new window and includes external styles to the page before printing, thus allowing appearance customization to be applied on the printed page.
+The Print widget comes with other enhanced options to exclude specific elements on a page before printing, print the content on a new window and includes external styles to the page before printing, thus allowing appearance customization to be applied on the printed page.
 
-## Printing specific elemments
+## Printing specific elements
 
-It is possible to print a particular elemment alone from a page. For this, you need to pass that particular elemment into the `print` method.
+It is possible to print a particular element alone from a page. For this, you need to pass that particular element into the `print` method.
 
 {% highlight html %}
 
@@ -79,21 +79,21 @@ It is possible to print the entire web page by calling the `ejPrint` on the docu
 {% endhighlight %}
 
 
-## Excluding specific elemments
+## Excluding specific elements
 
-It is possible to exclude specific selemctors from a page or from specific component before printing it. This can be achieved by using the `excludeSelemctor` property.
+It is possible to exclude specific selectors from a page or from specific component before printing it. This can be achieved by using the `excludeSelector` property.
 
-The below code example depicts the way to print the grid control excluding specific elemments with the class name 'e-row' from it.
+The below code example depicts the way to print the grid control excluding specific elements with the class name 'e-row' from it.
 
 {% highlight javascript %}
 
         function onPrint(e) {
             var elem = $("#Grid");
             if (!elem.hasClass("e-print")) {
-                $("#Grid").ejPrint({ excludeSelemctor: ".e-row" });
+                $("#Grid").ejPrint({ excludeSelector: ".e-row" });
             } else {
                 var obj = $("#Grid").ejPrint("instance");
-                obj.option("excludeSelemctor", ".e-row");
+                obj.option("excludeSelector", ".e-row");
                 obj.print();
             }
         }
@@ -122,7 +122,7 @@ It is possible to print the content in a new window by making use of the `printI
 
 ## Applying external styles
 
-It is possible to include other external styles on the elemments of a printed page, by passing an URL of an external stylesheet to the `externalStyles` property.
+It is possible to include other external styles on the elements of a printed page, by passing an URL of an external stylesheet to the `externalStyles` property.
 
 {% highlight javascript %}
 
