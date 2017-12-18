@@ -30,7 +30,7 @@ The below listed fields are the data collection fields which maps fields for the
     </tr>
     <tr>
         <td>
-            dataSource
+            [dataSource](https://help.syncfusion.com/api/js/ejdropdownlist#members:datasource)
             <br/>
         </td>
         <td>
@@ -40,7 +40,7 @@ The below listed fields are the data collection fields which maps fields for the
     </tr>
     <tr>
         <td>
-            query
+            [query](https://help.syncfusion.com/api/js/ejdropdownlist#members:query)
             <br/>
         </td>
         <td>
@@ -50,7 +50,7 @@ The below listed fields are the data collection fields which maps fields for the
     </tr>
     <tr>
         <td>
-            fields
+            [fields](https://help.syncfusion.com/api/js/ejdropdownlist#members:fields)
             <br/>
         </td>
         <td>
@@ -60,7 +60,7 @@ The below listed fields are the data collection fields which maps fields for the
     </tr>
     <tr>
         <td>
-            id
+            [id](https://help.syncfusion.com/api/js/ejdropdownlist#members:fields-id)
             <br/>
         </td>
         <td>
@@ -70,7 +70,7 @@ The below listed fields are the data collection fields which maps fields for the
     </tr>
     <tr>
         <td>
-            text
+            [text](https://help.syncfusion.com/api/js/ejdropdownlist#members:fields-text)
             <br/>
         </td>
         <td>
@@ -80,7 +80,7 @@ The below listed fields are the data collection fields which maps fields for the
     </tr>
     <tr>
         <td>
-            value
+            [value](https://help.syncfusion.com/api/js/ejdropdownlist#members:fields-value)
             <br/>
         </td>
         <td>
@@ -90,7 +90,7 @@ The below listed fields are the data collection fields which maps fields for the
     </tr>
     <tr>
         <td>
-            groupBy
+            [groupBy](https://help.syncfusion.com/api/js/ejdropdownlist#members:fields-groupby)
             <br/>
         </td>
         <td>
@@ -100,7 +100,7 @@ The below listed fields are the data collection fields which maps fields for the
     </tr>
     <tr>
         <td>
-            imageUrl
+            [imageUrl](https://help.syncfusion.com/api/js/ejdropdownlist#members:fields-imageurl)
             <br/>
         </td>
         <td>
@@ -110,7 +110,7 @@ The below listed fields are the data collection fields which maps fields for the
     </tr>
     <tr>
         <td>
-            imageAttributes
+            [imageAttributes](https://help.syncfusion.com/api/js/ejdropdownlist#members:fields-imageattributes)
             <br/>
         </td>
         <td>
@@ -120,7 +120,7 @@ The below listed fields are the data collection fields which maps fields for the
     </tr>
     <tr>
         <td>
-            spriteCssClass
+            [spriteCssClass](https://help.syncfusion.com/api/js/ejdropdownlist#members:fields-spritecssclass)
             <br/>
         </td>
         <td>
@@ -130,7 +130,7 @@ The below listed fields are the data collection fields which maps fields for the
     </tr>
     <tr>
         <td>
-            htmlAttributes
+            [htmlAttributes](https://help.syncfusion.com/api/js/ejdropdownlist#members:htmlattributes)
             <br/>
         </td>
         <td>
@@ -140,7 +140,7 @@ The below listed fields are the data collection fields which maps fields for the
     </tr>
     <tr>
         <td>
-            selected
+            [selected](https://help.syncfusion.com/api/js/ejdropdownlist#members:fields-selected)
             <br/>
         </td>
         <td>
@@ -150,7 +150,7 @@ The below listed fields are the data collection fields which maps fields for the
     </tr>
     <tr>
         <td>
-            tableName
+            [tableName](https://help.syncfusion.com/api/js/ejdropdownlist#members:fields-tablename)
             <br/>
         </td>
         <td>

@@ -21,7 +21,7 @@ Also, we can render the Dialog widget content through the following ways.
 
 3. request image content
 
-This settings can be specified through `contentType` property. 
+This settings can be specified through [contentType](https://help.syncfusion.com/api/js/ejdialog#members:contenttype) property. 
 
 {% highlight javascript %}
 
@@ -53,7 +53,7 @@ Here below the content of that HTML file.
 
 ![Load content](load-content_images\load-content_img1.png)
 
-We can handle the AJAX request’s success and failures through the events “ajaxSuccess” and “ajaxError” events respectively. See also ajaxSuccess and ajaxError
+We can handle the AJAX request’s success and failures through the events [ajaxSuccess](https://help.syncfusion.com/api/js/ejdialog#events:ajaxsuccess) and [ajaxError](https://help.syncfusion.com/api/js/ejdialog#events:ajaxerror) events respectively. See also ajaxSuccess and ajaxError
 
 The previous example is modified as below to handle the success and failure events.
 
@@ -79,5 +79,5 @@ The previous example is modified as below to handle the success and failure even
 
 
 
-N>The same way we can render the iframe and image content for the Dialog widget by specifying the `contentType` as “iframe” and “image” respectively and also by specifying the proper location in the `contentUrl` property.
+N>The same way we can render the iframe and image content for the Dialog widget by specifying the [contentType](https://help.syncfusion.com/api/js/ejdialog#members:contenttype) as “iframe” and “image” respectively and also by specifying the proper location in the [contentUrl](https://help.syncfusion.com/api/js/ejdialog#members:contenturl) property.
 

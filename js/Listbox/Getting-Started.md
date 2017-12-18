@@ -114,7 +114,7 @@ Initialize the ListBox widget as below.
 
 ## Data binding
 
-We can populate data in the ListBox widget using “datasource” and “fields” properties. 
+We can populate data in the ListBox widget using [dataSource](https://help.syncfusion.com/api/js/ejlistbox#members:datasource) and [fields](https://help.syncfusion.com/api/js/ejlistbox#members:fields) properties. 
 
 {% seealso %} [Data binding](https://help.syncfusion.com/js/listbox/databinding). {% endseealso %}
 
@@ -160,7 +160,7 @@ We can populate data in the ListBox widget using “datasource” and “fields�
 
 ## Selection
 
-The ListBox widget supports item selection. 
+The ListBox widget supports item selection using [selectedIndex](https://help.syncfusion.com/api/js/ejlistbox#members:selectedindex) and [selectedIndices](https://help.syncfusion.com/api/js/ejlistbox#members:selectedindices) property. 
 
 {% seealso %} [Selection](https://help.syncfusion.com/js/listbox/selection) {% endseealso %}
 

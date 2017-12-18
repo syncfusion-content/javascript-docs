@@ -46,7 +46,7 @@ The field object contains the following properties.
 
 ### Local data
 
-The local data must be an array of JSON objects which is assigned for the Autocomplete widget dataSource property. 
+The local data must be an array of JSON objects which is assigned for the Autocomplete widget [dataSource](https://help.syncfusion.com/api/js/ejautocomplete#members:datasource) property. 
 
 In the below example name and index fields are mapped with text and key properties of the field object respectively.
 
@@ -88,7 +88,7 @@ In the below example name and index fields are mapped with text and key properti
 
 [OData](https://help.syncfusion.com/js/datamanager/data-binding) is a standardized protocol for creating and consuming the data. You can retrieve data from OData service by using [ej.DataManager](https://help.syncfusion.com/js/datamanager/getting-started) and the queries can be added using [ej.Query()](https://help.syncfusion.com/js/datamanager/query).
 
-Here ContactName and SupplierID fields are mapped with text and key properties respective to the field object.
+Here ContactName and SupplierID fields are mapped with text and key [fields](https://help.syncfusion.com/api/js/ejautocomplete#members:fields) properties are respective to the field object.
 
 {% highlight html %}
 

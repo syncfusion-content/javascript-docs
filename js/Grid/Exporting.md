@@ -810,3 +810,188 @@ public void ExcelExport()
 
 {% endhighlight %}
 
+# Hierarchy Grid Exporting
+
+Grid will be exported with its child Grid. This can be achieved by enabling `IncludeChildGrid` property of the respective Exporting classes like `GridExcelExport`, `GridWordExport` and `GridPdfExport` and include the dataSource needed for ChildGrid in the GridProperties object after deserializing them. Remaining procedures will be same as the normal Grid Exporting.
+
+N> Excel File will be exported in the collapsed state with the expand/collapse icon whereas other file-formats like Pdf and Word will be exported in expanded state.
+
+
+{% highlight html %}
+
+    <div id="Grid"></div>
+
+    <script type="text/javascript">
+        $(function () {
+            var parentGrid = ej.DataManager({
+                url: "http://js.syncfusion.com/ExportingServices/Northwnd.svc/Employees/", crossDomain: true
+            })
+            var childGrid = ej.DataManager({
+                url: "http://js.syncfusion.com/ExportingServices/Northwnd.svc/Orders/?$top=100", crossDomain: true, offline: true
+            });
+            $("#Grid").ejGrid({
+                dataSource: parentGrid,
+                allowSorting: true,
+				toolbarSettings: { 
+					showToolbar: true, 
+					toolbarItems: [ej.Grid.ToolBarItems.ExcelExport, ej.Grid.ToolBarItems.WordExport, ej.Grid.ToolBarItems.PdfExport] 
+				},
+                columns: [
+                       { field: "EmployeeID", headerText: "Employee ID", textAlign: ej.TextAlign.Right, width: 75 },
+                       { field: "FirstName", headerText: 'First Name', textAlign: ej.TextAlign.Left, width: 100 },
+                       { field: "Title", headerText: 'Title', textAlign: ej.TextAlign.Left, width: 120 },
+                       { field: "City", headerText: 'City', textAlign: ej.TextAlign.Left, width: 100 },
+                       { field: "Country", headerText: 'Country', textAlign: ej.TextAlign.Left, width: 100 }
+                ],
+                childGrid: {
+                    dataSource: childGrid,
+                    queryString: "EmployeeID",
+                    allowPaging: true,
+                    columns: [
+                      { field: "OrderID", headerText: 'Order ID', textAlign: ej.TextAlign.Right, width: 75 },
+                      { field: "ShipCity", headerText: 'Ship City',  width: 100 },
+                      { field: "Freight", headerText: 'Freight', textAlign: ej.TextAlign.Right, format: "{0:C2}", width: 120 },
+                      { field: "ShipName", headerText: 'Ship Name', width: 100 }
+                    ],
+                },
+				toolbarClick: function (e) {
+                   this.exportGrid = this["export"];
+                   if (e.itemName == "Excel Export") {
+                       this.exportGrid('/Home/ExportToExcel')
+                       e.cancel = true;
+                   }
+                   else if (e.itemName == "Word Export") {
+                       this.exportGrid('/Home/ExportToWord')
+                       e.cancel = true;
+                   }
+                   else if (e.itemName == "PDF Export") {
+                       this.exportGrid('/Home/ExportToPdf')
+                       e.cancel = true;
+                   }
+               }
+            });
+        });
+
+    </script>
+{% endhighlight %}
+
+
+{% highlight c# %}
+ 
+    public class HomeController : Controller
+    {
+        public ActionResult Index()
+        {
+            var order = new NorthWndDataContext().Orders.Take(100).ToList();
+            var emp = new NorthWndDataContext().Employees.ToList();
+            ViewBag.childData = order;
+            ViewBag.parentData = emp;
+            return View();
+        }
+        public void ExportToExcel(string GridModel)
+        {
+            ExcelExport exp = new ExcelExport();
+            var DataSource = new NorthWndDataContext().Employees.ToList();
+            GridProperties obj = ConvertGridObject(GridModel);
+            obj.ChildGrid.DataSource = new NorthWndDataContext().Orders.Take(100).ToList();
+            GridExcelExport expo = new GridExcelExport();
+            expo.IncludeChildGrid = true;
+            exp.Export(obj, DataSource, expo);
+        }
+        public void ExportToWord(string GridModel)
+        {
+            WordExport exp = new WordExport();
+            var DataSource = new NorthWndDataContext().Employees.ToList();
+            GridProperties obj = ConvertGridObject(GridModel);
+            obj.ChildGrid.DataSource = new NorthWndDataContext().Orders.Take(100).ToList();
+            GridWordExport expo = new GridWordExport();
+            expo.IncludeChildGrid = true;
+            exp.Export(obj, DataSource, expo);
+        }
+        public void ExportToPdf(string GridModel)
+        {
+            PdfExport exp = new PdfExport();
+            var DataSource = new NorthWndDataContext().Employees.ToList();
+            GridProperties obj = ConvertGridObject(GridModel);
+            obj.ChildGrid.DataSource = new NorthWndDataContext().Orders.Take(100).ToList();
+            GridPdfExport expo = new GridPdfExport();
+            expo.IncludeChildGrid = true;
+            expo.Unicode = true;
+            exp.Export(obj, DataSource, expo);
+        }
+        private GridProperties ConvertGridObject(string gridProperty)
+        {
+            JavaScriptSerializer serializer = new JavaScriptSerializer();
+            IEnumerable div = (IEnumerable)serializer.Deserialize(gridProperty, typeof(IEnumerable));
+            GridProperties gridProp = new GridProperties();
+            foreach (KeyValuePair<string, object> ds in div)
+            {
+                var property = gridProp.GetType().GetProperty(ds.Key, BindingFlags.Instance | BindingFlags.Public | BindingFlags.IgnoreCase);
+                if (property != null)
+                {
+                    Type type = property.PropertyType;
+                    object value = null;
+                    string serialize = serializer.Serialize(ds.Value);
+                    if (ds.Key == "childGrid")
+                        value = ConvertGridObject(serialize);
+                    else
+                        value = serializer.Deserialize(serialize, type);
+                    property.SetValue(gridProp, value, null);
+                }
+            }
+            return gridProp;
+        }
+    }
+
+
+
+{% endhighlight %}
+
+The server side events available in Hierarchy Grid exporting and its argument types are listed in the following table.
+
+<table>
+<tr>
+<th>
+Event Name
+</th>
+<th>
+Argument
+</th>
+<th>
+Description
+</th>
+</tr>
+<tr>
+<td>
+ExcelChildGridInfo
+</td>
+<td>
+current row, row data, GridProperties
+</td>
+<td>
+Customize the cell and child Grid
+</td>
+</tr>
+<tr>
+<td>
+PdfChildGridInfo
+</td>
+<td>
+current row, row data, GridProperties
+</td>
+<td>
+Customize the cell and child Grid
+</td>
+</tr>
+<tr>
+<td>
+WordChildGridInfo
+</td>
+<td>
+current row, row data, GridProperties
+</td>
+<td>
+Customize the cell and child Grid
+</td>
+</tr>
+</table>

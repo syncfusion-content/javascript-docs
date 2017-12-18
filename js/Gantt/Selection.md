@@ -11,7 +11,7 @@ api: /api/js/ejgantt
 
 ## Row selection
 
-You can enable or disable the row selection in Gantt, by using [allowSelection](/api/js/ejgantt#members:allowselection) property. And you can able to get the selected row object using selectedItem property from the Gantt model. The following code example shows how to disable the row selection in Gantt.
+The row selection in Gantt can be enabled or disabled, by using the  [allowSelection](/api/js/ejgantt#members:allowselection) property. You can able to get the selected row object using the selectedItem property from the Gantt model. The following code example shows how to disable the row selection in Gantt.
 
 {% highlight javascript %}
 $("#GanttContainer").ejGantt({
@@ -25,7 +25,7 @@ $("#GanttContainer").ejGantt({
 
 ### Selecting a row on initial load
 
-You can select a row on load time by setting the index of the row to [selectedRowIndex](/api/js/ejgantt#members:selectedrowindex) property. Find the following code example for details.
+You can select a row on load time by setting the index of the row to the [selectedRowIndex](/api/js/ejgantt#members:selectedrowindex) property. Find the following code example for details.
 
 {% highlight javascript %}
 $("#GanttContainer").ejGantt({
@@ -41,7 +41,7 @@ $("#GanttContainer").ejGantt({
 
 ### Selecting a row programmatically 
 
-You can also select a row programmatically by setting index of the row value to [selectedRowIndex](/api/js/ejgantt#members:selectedrowindex) property. The following code shows to select a row programmatically with a custom button click action,
+You can also select a row programmatically by setting index of the row value to the [selectedRowIndex](/api/js/ejgantt#members:selectedrowindex) property. The following code shows to select a row programmatically with a custom button click action.
 
 {% highlight html %}
 <body>
@@ -83,11 +83,11 @@ The output of the Gantt with multiple row selection is as follows.
 
 ![](/js/Gantt/Selection_images/Selection_img5.png)
 
-To enable multiple selection, you can set `selectionType` property either as `multiple` or enumeration value `ej.Gantt.SelectionType.Multiple`.
+To enable multiple selection, you can set the `selectionType` property either as `multiple` or enumeration value `ej.Gantt.SelectionType.Multiple`.
 
 ### Selecting multiple rows programmatically 
 
-You can also select multiple rows programmatically  by using `selectMultipleRows` public method. The following code example explains how to enable multiple selection in Gantt.
+You can also select multiple rows programmatically  by using the `selectMultipleRows` public method. The following code example explains how to enable multiple selection in Gantt.
 {% highlight html %}
 <body>
 
@@ -119,7 +119,7 @@ $("#selectMultipleRow").click(function(args) {
 
 ## Cell selection
 
-You can select a cell in Gantt by setting [selectionMode](/api/js/ejgantt#members:selectionmode) property as ‘cell’. And you can able to get the selected cell information using selectedCellIndexes property from the Gantt object. selectedCellIndexes is an object collection, which has the cell index and row index information of the selected cells.
+You can select a cell in Gantt by setting the [selectionMode](/api/js/ejgantt#members:selectionmode) property as ‘cell’. And you can able to get the selected cell information using the selectedCellIndexes property from the Gantt object. The selectedCellIndexes is an object collection, which has the cell index and row index information of the selected cells.
 
 Find the code example below to enable the cell selection in Gantt. 
 
@@ -139,7 +139,7 @@ The following screen shots shows you cell selection.
 
 ### Selecting multiple cells
 
-You can also select multiple cells by setting [selectionType](/api/js/ejgantt#members:selectiontype) property as ‘multiple’ while [selectionMode](/api/js/ejgantt#members:selectionmode) property is set to “cell”. Multiple cells can be selected by holding the ctrl key and to click on the cells. The following code example shows you to select multiple cells.
+You can also select multiple cells by setting the [selectionType](/api/js/ejgantt#members:selectiontype) property as ‘multiple’ while the [selectionMode](/api/js/ejgantt#members:selectionmode) property is set to “cell”. Multiple cells can be selected by holding the ctrl key and to click on the cells. The following code example shows you to select multiple cells.
 
 {% highlight javascript %}
 $("#GanttContainer").ejGantt({
@@ -157,7 +157,7 @@ $("#GanttContainer").ejGantt({
 
 ### Select cells programmatically 
 
-You can select the cells programmatically using [selectCells](/api/js/ejgantt#methods:selectcells) public method. Find the code example below for details.
+You can select the cells programmatically using the [selectCells](/api/js/ejgantt#methods:selectcells) public method. Find the code example below for details.
 
 {% highlight html %}
 <body>
@@ -169,6 +169,7 @@ You can select the cells programmatically using [selectCells](/api/js/ejgantt#me
 
 {% highlight javascript %}
 $("#GanttContainer").ejGantt({
+
 
     //...
 
@@ -197,7 +198,7 @@ $("#selectCells").click(function(args) {
 
 ## MultiSelection – Touch Option
 
-It is possible to select rows using touch action in Gantt. Gantt provides support for both single selection and multiple row selection using touch action. For multiple row selection, when we tap on a cell, a helper icon will be displayed using which we can select multiple rows.
+It is possible to select rows using touch action in Gantt. Gantt provides support for both single selection and multiple row selection using touch action. For multiple row selection, when we tap on a cell, a helper icon will be displayed using that multiple rows can be selected.
 
 The following code example describes how to enable multiple selection in Gantt.
 
@@ -211,6 +212,6 @@ $("#GanttContainer"). ejGantt ({
            
 {% endhighlight %}
 
-The following output is displayed the result of multiple selection in touch device environment.
+The following output displays the result of multiple selection in touch device environment.
 
 ![](/js/Gantt/Selection_images/Selection_img6.png)

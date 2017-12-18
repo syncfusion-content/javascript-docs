@@ -10,7 +10,7 @@ api: /api/js/ejsplitter
 
 # Keyboard Navigation
 
-With the keyboard navigation enabled in the **Splitter** control, it is possible to control the actions of the **Splitter** with the provided shortcut keys. Almost all the **Splitter** actions that are done by mouse can be controlled with shortcut keys.
+With the [allowKeyboardNavigation](https://help.syncfusion.com/api/js/ejsplitter#members:allowkeyboardnavigation) enabled in the **Splitter** control, it is possible to control the actions of the **Splitter** with the provided shortcut keys. Almost all the **Splitter** actions that are done by mouse can be controlled with shortcut keys.
 
 The various keyboard shortcuts available within the **Splitter** control are discussed in the following table.
 

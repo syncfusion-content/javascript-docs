@@ -12,7 +12,7 @@ api: /api/js/ejlistview
 
 **MultiSelection**
 
-**ListView** has a checklist feature that is used to select multiple list items at the same time in the **ListView**. For this, set **data-ej-enableCheckMark** attribute to **“True”**.
+**ListView** has a checklist feature that is used to select multiple list items at the same time in the **ListView**. For this, set [enableCheckMark](https://help.syncfusion.com/api/js/ejlistview#members:enablecheckmark) property to **“True”**.
 
 Refer the following code examples.
 
@@ -56,7 +56,7 @@ Run the codes to get the following output
 
 **PreventSelection**
 
-When selecting a specific list item, it is highlighted with an active color. **data-ej-preventSelection** attribute is used to prevent this behavior by setting it to **“True”**. 
+When selecting a specific list item, it is highlighted with an active color. [preventSelection](https://help.syncfusion.com/api/js/ejlistview#members:preventselection) property is used to prevent this behavior by setting it to **“True”**. 
 
 N> When the click or select action is completed, the highlight is undone automatically even when the  attribute is set to “False”.
 
@@ -98,7 +98,7 @@ Add the following script in your code.
 
 **PersistSelection**
 
-**data-ej-persistSelection** attribute is used to highlight the selected item in the **ListView** control even after touch end happens. By default, the active state is removed once the touch end happens.
+[persistSelection](https://help.syncfusion.com/api/js/ejlistview#members:persistselection) property is used to highlight the selected item in the **ListView** control even after touch end happens. By default, the active state is removed once the touch end happens.
 
 Refer the following code examples.
 

@@ -14,7 +14,7 @@ You can customize individual **Radial Menu** items by using the items properties
 
 ### Adding image and text to RadialMenu items
 
-The **data-ej-imageUrl** property specifies the URL of the image for the items. **data-ej-text** attribute is used to specify the item text. Refer to the following code example.
+The **data-ej-imageUrl** property specifies the URL of the image for the items. **data-ej-text** attribute is used to specify the text through [items](https://help.syncfusion.com/api/js/ejradialmenu#members:items) . Refer to the following code example.
 
 {% highlight html %}
 
@@ -54,7 +54,7 @@ The following screenshot illustrates the output.
 
 ### Adding events to Radial Menu items
 
-You can specify the click event to corresponding image/text of **Radial Menu** items for performing some specific action. You need to handle the click event in script manually for each item click.
+You can specify the [click](https://help.syncfusion.com/api/js/ejradialmenu#events:click) event to corresponding image/text of **Radial Menu** items for performing some specific action. You need to handle the click event in script manually for each item click.
 
 {% highlight html %}
 
@@ -130,7 +130,7 @@ The following screenshot illustrates the output.
 
 You can specify set badges for the items by using badge settings in the radial menu. You can set value for the badge and enable badge with a default value.
 
-The **data-ej-badge-enabled** property to enable or disable badges. **data-ej-badge-value** attribute is to set the badge value.
+The [data-ej-badge-enabled](https://help.syncfusion.com/api/js/ejradialmenu#members:items-badge-enabled) property to enable or disable badges. [data-ej-badge-value](https://help.syncfusion.com/api/js/ejradialmenu#members:items-badge-value) attribute is to set the badge value.
 
 {% highlight html %}
 
@@ -167,9 +167,9 @@ The following screenshot illustrates the output.
 
 ### Slider support for Radial Menu Items
 
-You can customize the Radial Menu with slider settings.The **data-ej-type** property specifies the type of radial menu item, where you can set the type for RadialMenu item.
+You can customize the Radial Menu with slider settings.The [data-ej-type](https://help.syncfusion.com/api/js/ejradialmenu#members:items-type) property specifies the type of radial menu item, where you can set the type for RadialMenu item.
 
-You can customize the **Radial Menu** slider settings by using the **ticks**, **strokeWidth** and **labelSpace** properties. The **data-ej-sliderSettings-ticks** property specifies the slider ticks for radial menu item.**data-ej-sliderSettings-strokeWidth** attribute is used to specify the slider's stroke width value.**data-ej-sliderSettings-labelSpace** attribute is used to specify the value of slider label space.
+You can customize the **Radial Menu** [sliderSettings](https://help.syncfusion.com/api/js/ejradialmenu#members:slidersettings) by using the [ticks](https://help.syncfusion.com/api/js/ejradialmenu#members:slidersettings-ticks), [strokeWidth](https://help.syncfusion.com/api/js/ejradialmenu#members:slidersettings-strokewidth) and [labelSpace](https://help.syncfusion.com/api/js/ejradialmenu#members:slidersettings-labelspace) properties. The **data-ej-sliderSettings-ticks** property specifies the slider ticks for radial menu item.**data-ej-sliderSettings-strokeWidth** attribute is used to specify the slider's stroke width value.**data-ej-sliderSettings-labelSpace** attribute is used to specify the value of slider label space.
 
 Refer to the following code example.
 

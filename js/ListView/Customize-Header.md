@@ -10,9 +10,9 @@ api: /api/js/ejlistview
 
 # Customize Header
 
-In **ListView**, you can enable the built-in **Header** support. To show or hide the **Header** in **ListView**, use the **data-ej-showheader** attribute. By default, **ListView** is rendered with the **Header**. You can set the title for the **Header** by using the **data-ej-headertitle** attribute.
+In **ListView**, you can enable the built-in **Header** support. To show or hide the **Header** in **ListView**, use the [showHeader](https://help.syncfusion.com/api/js/ejlistview#members:showheader) property. By default, **ListView** is rendered with the **Header**. You can set the title for the **Header** by using the [headerTitle](https://help.syncfusion.com/api/js/ejlistview#members:headertitle) property.
 
-In some cases, for the purpose of navigation, you may want to show the **Back** button in **ListView Header**. To achieve this, **data-ej-showheaderbackbutton** attribute is used. By default, **ListView** is not rendered with the header back button in parent page. To customize the text shown in **ListView Header Back** button, the attribute **data-ej-headerbackbuttontext** is used. 
+In some cases, for the purpose of navigation, you may want to show the **Back** button in **ListView Header**. To achieve this, [showheaderbackbutton](https://help.syncfusion.com/api/js/ejlistview#members:showheaderbackbutton) property is used. By default, **ListView** is not rendered with the header back button in parent page. To customize the text shown in **ListView Header Back** button, the property [headerbackbuttontext](https://help.syncfusion.com/api/js/ejlistview#members:headerbackbuttontext) is used. 
 
 Refer the following code example.
 

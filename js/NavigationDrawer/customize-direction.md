@@ -10,7 +10,7 @@ api: /api/js/ejnavigationdrawer
 
 ## Customize Direction
 
-By using this property you can set the drawer to be open from right to left direction or left to right direction. The possible direction values are Right, Left and the default value is Left. Refer to the following code example.
+By using [direction](https://help.syncfusion.com/api/js/ejnavigationdrawer#members:direction) property you can set the drawer to be open from right to left direction or left to right direction. The possible direction values are Right, Left and the default value is Left. Refer to the following code example.
 
 {% highlight html %}
 

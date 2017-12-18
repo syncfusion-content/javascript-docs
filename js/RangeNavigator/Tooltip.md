@@ -15,8 +15,11 @@ api: /api/js/ejrangenavigator
 
 #### Customization
 
-**RangeNavigator** provides support for you to customize the text display in the tooltip and background using **tooltipSettings** property. You can change font family, font color, font style, font weight. By default “**Segoe UI**” font family is set to tooltip text.
+**RangeNavigator** provides support for you to customize the text display in the tooltip and background using [`tooltipSettings`](../api/js/ejrangenavigator#members:tooltipsettings) property. You can change font family, font color, font style, font weight. By default “**Segoe UI**” font family is set to tooltip text.
 
+* Tooltip visibility can be enabled or disabled using [`visible`](../api/js/ejrangenavigator#members:tooltipsettings-visible) property.
+* You can change background color of tooltip using [`backgroundColor`](../api/js/ejrangenavigator#members:tooltipsettings-backgroundcolor) property.
+* You can customize the [`color`](../api/js/ejrangenavigator#members:tooltipsettings-font-color), [`family`](../api/js/ejrangenavigator#members:tooltipsettings-font-family), [`fontStyle`](../api/js/ejrangenavigator#members:tooltipsettings-font-fontstyle), [`opacity`](../api/js/ejrangenavigator#members:tooltipsettings-font-opacity), [`size`](../api/js/ejrangenavigator#members:tooltipsettings-font-size) and [`weight`](../api/js/ejrangenavigator#members:tooltipsettings-font-weight) of tooltip text in [`font`](../api/js/ejrangenavigator#members:tooltipsettings-font) property.
 
 {% highlight javascript %}
 
@@ -51,9 +54,9 @@ $("#container").ejRangeNavigator(
 
 #### Label Format
 
-By default, the **tooltip** texts are automatically determined based on the data points.  To make it readable and understandable you can format the **tooltip** text. For **DateTime** data, all globalized format are supported. By default the **labelFormat** is "MM/dd/yyyy".
+By default, the **tooltip** texts are automatically determined based on the data points.  To make it readable and understandable you can format the **tooltip** text. For **DateTime** data, all globalized format are supported. By default the [`labelFormat`](../api/js/ejrangenavigator#members:tooltipsettings-labelformat) is "MM/dd/yyyy".
 
-Some of the **labelFormat** for **DateTime** data area as follows:
+Some of the [`labelFormat`](../api/js/ejrangenavigator#members:tooltipsettings-labelformat) for **DateTime** data area as follows:
 
 * 'MMM, yyyy'
 * 'dd, MMM'
@@ -83,7 +86,7 @@ $("#container").ejRangeNavigator({
 
 #### Tooltip display mode
 
-By default the **tooltip** for RangeNavigator gets displayed. You can change this behavior using the **tooltipDisplayMode** property in the tooltip and it takes the following values.
+By default the **tooltip** for RangeNavigator gets displayed. You can change this behavior using the [`tooltipDisplayMode`](../api/js/ejrangenavigator#members:tooltipsettings-tooltipdisplaymode) property in the tooltip and it takes the following values.
 
 
 

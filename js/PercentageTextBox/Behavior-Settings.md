@@ -12,7 +12,7 @@ api: /api/js/
 
 ## Decimal Places
 
-The property **decimalPlaces** declares the decimal point to the value of **PercentageTextBox** control. The default value of **decimalPlaces** is 0 in **PercentageTextBox** control.
+The property **decimalPlaces** declares the decimal point to the value of **PercentageTextBox** control. The default value of **decimalPlaces** is 0 in **PercentageTextBox** control. To set the decimalPlaces to “-1”, that allows the decimals without any limit in PercentageTextBox control.
 
 ### Configure Decimal Places
 

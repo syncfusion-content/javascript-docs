@@ -10,7 +10,7 @@ api: /api/js/ejdatamanager
 
 # Searching
 
-Searching is a basic query technique in data manager. It is used to filter the records from the entire data source based on the `search` key parameter.
+Searching is a basic query technique in data manager. It is used to filter the records from the entire data source based on the [search](https://help.syncfusion.com/api/js/ejquery#methods:search) key parameter.
 
 {% highlight html %}
 

@@ -14,7 +14,7 @@ api: /api/js/ejrangenavigator
 
 #### Deferred update
 
-If you set **enableDeferredUpdate**to true, the **rangeChanged** event gets fired after dragging and dropping the slider. By default the **enableDeferredUpdate**is true. If **enableDeferredUpdate**is false then the **rangeChanged** event gets fired while dragging the slider.
+If you set [`enableDeferredUpdate`](../api/js/ejrangenavigator#members:enabledeferredupdate)to true, the [`rangeChanged`](../api/js/ejrangenavigator#events:rangechanged) event gets fired after dragging and dropping the slider. By default the [`enableDeferredUpdate`](../api/js/ejrangenavigator#members:enabledeferredupdate)is true. If [`enableDeferredUpdate`](../api/js/ejrangenavigator#members:enabledeferredupdate)is false then the [`rangeChanged`](../api/js/ejrangenavigator#events:rangechanged) event gets fired while dragging the slider.
 
 
 {% highlight javascript %}
@@ -32,10 +32,44 @@ $("#container").ejRangeNavigator(
 
 ![](/js/RangeNavigator/Behavior-Customization_images/Behavior-Customization_img1.png) 
 
+#### Use of destroy method 
+
+[`_destroy`](../api/js/ejrangenavigator#methods:_destroy): function
+
+This method is used to destroy the **RangeNavigator** widget. 
+
+{% highlight html %}
+<div id="container"></div>
+<script type="text/javascript" language="javascript">
+    // Destroy range navigator
+    var obj = $("#container").data("ejRangeNavigator");
+    obj.destroy(); // destroy the range navigator
+</script>
+
+{% endhighlight %}
 
 #### Handle Events
 
-**loaded:** function
+[`load`](../api/js/ejrangenavigator#events:load): function
+
+This event is fired when **RangeNavigator** is loading. A parameter **sender** is passed to the handler. Using **sender.model**, you can access the RangeNavigator properties. 
+
+{% highlight javascript %}
+
+
+    $("#container").ejRangeNavigator({
+    // ...             
+    load: function(sender) {
+        sender.model.allowSnapping = true;
+    },
+    //...
+    });
+    });
+
+
+{% endhighlight %}
+
+[`loaded`](../api/js/ejrangenavigator#events:loaded): function
 
 This event is handled when the **RangeNavigator** gets loaded. A parameter **sender** is passed to the handler. Using **sender.model**, you can access the RangeNavigator properties. 
 
@@ -55,9 +89,9 @@ This event is handled when the **RangeNavigator** gets loaded. A parameter **sen
 {% endhighlight %}
 
 
-**rangeChanged**: function
+[`rangeChanged`](../api/js/ejrangenavigator#events:rangechanged): function
 
-This event gets fired whenever the selected range changes in **RangeNavigator**. A parameter **sender** is passed to the handler. Using sender.selectedRangeSettings, you can access the start and end value of range for the selected region. 
+This event gets fired whenever the selected range changes in **RangeNavigator**. A parameter **sender** is passed to the handler. Using sender.selectedRangeSettings, you can access the start and end value of range for the selected region. The [`selectedData`](../api/js/ejrangenavigator#members:selecteddata) can be obtained when this event is triggered from client side.
 
 {% highlight javascript %}
 
@@ -74,11 +108,105 @@ This event gets fired whenever the selected range changes in **RangeNavigator**.
 
 {% endhighlight %}
 
+[`selectedRangeStart`](../api/js/ejrangenavigator#events:selectedrangestart): function
+
+This event is fired when starting to change the slider position in **RangeNavigator**. A parameter **sender** is passed to the handler. Using sender.selectedRangeSettings, you can access the start value of range for the selected region. 
+
+{% highlight javascript %}
+
+
+    $("#container").ejRangeNavigator({
+    // ...             
+    selectedRangeStart: function(sender) {
+        console.log(sender.selectedRangeSettings.start);
+    },
+    // ...             
+    });
+    });
+
+
+{% endhighlight %}
+
+[`selectedRangeEnd`](../api/js/ejrangenavigator#events:selectedrangeend): function
+
+This event is fired when selection ends in **RangeNavigator**. A parameter **sender** is passed to the handler. Using sender.selectedRangeSettings, you can access the end value of range for the selected region. 
+
+{% highlight javascript %}
+
+
+    $("#container").ejRangeNavigator({
+    // ...             
+    selectedRangeEnd: function(sender) {
+        console.log(sender.selectedRangeSettings.end);
+    },
+    // ...             
+    });
+    });
+
+
+{% endhighlight %}
+
+[`scrollStart`](../api/js/ejrangenavigator#events:scrollstart): function
+
+This event is fired when starting to change the scrollbar position of **RangeNavigator**. A parameter **sender** is passed to the handler. Using sender.datastartRange and sender.dataendRange, you can access the scrollbar position starting and ending range value on changed scrollbar. 
+
+{% highlight javascript %}
+
+
+    $("#container").ejRangeNavigator({
+    // ...             
+    scrollStart: function(sender) {
+        console.log(sender.datastartRange);
+        console.log(sender.dataendRange);
+    },
+    // ...             
+    });
+    });
+
+
+{% endhighlight %}
+
+[`scrollEnd`](../api/js/ejrangenavigator#events:scrollend): function
+
+This event is fired while ending the change in scrollbar position of **RangeNavigator**. A parameter **sender** is passed to the handler. Using sender.dataoldRange and sender.datanewRange, you can access the scrollbar position old and new range values on changing scrollbar. 
+
+{% highlight javascript %}
+
+
+    $("#container").ejRangeNavigator({
+    // ...             
+    scrollEnd: function(sender) {
+        console.log(sender.dataoldRange);
+    },
+    // ...             
+    });
+    });
+
+{% endhighlight %}
+
+[`scrollChanged`](../api/js/ejrangenavigator#events:scrollchanged): function
+
+This event is fired when changing the scrollbar position of **RangeNavigator**. A parameter **sender** is passed to the handler. Using sender.dataoldRange and sender.datanewRange, you can access the old and new range values of changed scrollbar position. 
+
+{% highlight javascript %}
+
+
+    $("#container").ejRangeNavigator({
+    // ...             
+    scrollChanged: function(sender) {
+        console.log(sender.dataendRange);
+    },
+    // ...             
+    });
+    });
+
+{% endhighlight %}
+
 #### Use of ZoomCoordinates
 
-**RangeNavigator** is used along with the controls like chart and grid to view the selected data. To update chart/grid, whenever the selected range changes in **RangeNavigator**, you can use **rangeChanged** event of **RangeNavigator** and then update the chart/grid with the selected data in this event. 
+**RangeNavigator** is used along with the controls like chart and grid to view the selected data. To update chart/grid, whenever the selected range changes in **RangeNavigator**, you can use [`rangeChanged`](../api/js/ejrangenavigator#events:rangechanged) event of **RangeNavigator** and then update the chart/grid with the selected data in this event. 
 
-You can easily update the data for chart by assigning the **zoomFactor** and **zoomPosition** of the **RangeNavigator** to the chart axis.
+You can easily update the data for chart by assigning the [`zoomFactor`](../api/js/ejrangenavigator#members:zoomsettings-zoomfactor) and [`zoomPosition`](../api/js/ejrangenavigator#members:zoomsettings-zoomposition) of the **RangeNavigator** to the chart axis.
 
 {% highlight javascript %}
 
@@ -108,7 +236,7 @@ You can easily update the data for chart by assigning the **zoomFactor** and **z
 
 #### Thumb Template
 
-You can customize Thumb template by using **leftThumbTemplate** and **rightThumbTemplate** property. You can add the required template as a "div" element with an "id" to the web page and assign the id or assign the HTML string to this property under **navigatorStyleSettings**.
+You can customize Thumb template by using [`leftThumbTemplate`](../api/js/ejrangenavigator#members:navigatorstylesettings-leftthumbtemplate) and [`rightThumbTemplate`](../api/js/ejrangenavigator#members:navigatorstylesettings-rightthumbtemplate) property. You can add the required template as a "div" element with an "id" to the web page and assign the id or assign the HTML string to this property under [`navigatorStyleSettings`](../api/js/ejrangenavigator#members:navigatorstylesettings).
 
 {% highlight html %}
 
@@ -144,3 +272,56 @@ You can customize Thumb template by using **leftThumbTemplate** and **rightThumb
 The following screenshot displays the **RangeNavigator** using thumb template.
 
 ![](/js/RangeNavigator/Behavior-Customization_images/Behavior-Customization_img3.png) 
+
+#### Value Axis Settings
+
+You can customize the line, [`font`](../api/js/ejrangenavigator#members:valueaxissettings-font) [`size`](../api/js/ejrangenavigator#members:valueaxissettings-font-size), gridline, tickline, range, [`rangePadding`](../api/js/ejrangenavigator#members:valueaxissettings-rangepadding) and visibility of **RangeNavigator** axis.
+
+To enable the visibility of axis line, you need to set [`visible`](../api/js/ejrangenavigator#members:valueaxissettings-axisline-visible) property of [`axisLine`](../api/js/ejrangenavigator#members:valueaxissettings-axisline) in [`valueAxisSettings`](../api/js/ejrangenavigator#members:valueaxissettings). 
+
+You can customize the axis range by specifying [`min`](../api/js/ejrangenavigator#members:valueaxissettings-range-min), [`max`](../api/js/ejrangenavigator#members:valueaxissettings-range-max) and [`interval`](../api/js/ejrangenavigator#members:valueaxissettings-range-interval) for [`range`](../api/js/ejrangenavigator#members:valueaxissettings-range) property.
+
+The [`majorGridLines`](../api/js/ejrangenavigator#members:valueaxissettings-majorgridlines) can be enabled by specifying [`visible`](../api/js/ejrangenavigator#members:valueaxissettings-majorgridlines-visible) property. The [`size`](../api/js/ejrangenavigator#members:valueaxissettings-majorticklines-size), [`width`](../api/js/ejrangenavigator#members:valueaxissettings-majorticklines-width) and [`visible`](../api/js/ejrangenavigator#members:valueaxissettings-majorticklines-visible) property of [`majorTickLines`](../api/js/ejrangenavigator#members:valueaxissettings-majorticklines) is used to customize the axis tick lines.
+
+The visibility of valueAxisSettings is enabled by setting [`visible`](../api/js/ejrangenavigator#members:valueaxissettings-visible) property as true. 
+
+{% highlight javascript %}
+
+$("#container").ejRangeNavigator({
+               {   
+                   // ...              
+                valueAxisSettings:
+                        {
+                            axisLine: {visible: true},
+                            font: {size: '12px'},
+                            majorGridLines: {visible: true},
+                            majorTickLines: {size: 3, visible:false, width:3},
+                            range:{ min :0 , max :100, interval :10},
+                            rangePadding: "normal",
+                            visible: true
+                        }
+                   // ...             
+               });
+
+{% endhighlight %}
+
+#### Selected Range Settings
+
+The start and end range values of selected range can be customized using [`start`](../api/js/ejrangenavigator#members:selectedrangesettings-start) and [`end`](../api/js/ejrangenavigator#members:selectedrangesettings-end) property of [`selectedRangeSettings`](../api/js/ejrangenavigator#members:selectedrangesettings).
+
+{% highlight javascript %}
+
+$("#container").ejRangeNavigator({
+               {   
+                   // ...              
+                selectedRangeSettings:
+                        {
+                            start:"01/05/1992",
+                            end:"01/05/1993"
+                        },
+                   // ...             
+               });
+
+{% endhighlight %}
+
+
