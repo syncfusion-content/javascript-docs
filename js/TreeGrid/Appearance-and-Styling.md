@@ -10,7 +10,7 @@ api: /api/js/ejtreegrid
 
 # Appearance and Styling
 
-You can customize the look and feel of the TreeGrid control by applying themes.
+The look and feel of the TreeGrid control can be customized by applying themes.
 
 The following are the available themes in TreeGrid control.
 

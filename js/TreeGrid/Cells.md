@@ -11,7 +11,7 @@ documentation: ug
 
 ## Tooltip
 
-In TreeGrid tooltip can be enabled using `showGridCellTooltip` property. Using this property tooltip can be enabled for cells both header and content.
+In TreeGrid, tooltip can be enabled using the `showGridCellTooltip` property. Using this property tooltip can be enabled for cells both header and content.
 
 Please find the example describes the above behavior.
 
@@ -119,7 +119,7 @@ The following output shows the result of above code example.
 
 By using the property `columns.tooltip` it is possible to display a custom tooltip for a specific column. The ID of the script template must be set to the `columns.tooltip` property.
 
-Please refer the following code example for setting a custom tooltip for a specific column.
+Please refer to the following code example for setting a custom tooltip for a specific column.
 
 {% highlight js %}
 
@@ -157,7 +157,7 @@ N> Template element should be enclosed with `<script>` tag with type as `“text
 
 By using the property `columns.headerTooltip` it is possible to display a custom tooltip for a specific column header. The ID of the script template must be set to the `columns.headerTooltip` property.
 
-Please refer the following code example for setting a custom tooltip for a specific column header.
+Please refer to the following code example for setting a custom tooltip for a specific column header.
 
 {% highlight js %}
 
@@ -194,16 +194,16 @@ The following output shows the result of above code example.
 
 Clip mode enables the TreeGrid to clip cell content and header content when the content exceeds the boundary of the cell width. 
 
-We can specify the type of clip mode using `columns.clipMode` property, clip mode will be enabled for both TreeGrid content and header of that specific column.
+We can specify the type of clip mode using the `columns.clipMode` property, clip mode will be enabled for both TreeGrid content and header of that specific column.
 
-The below are the available clipping modes in TreeGrid,
+The below are the available clipping modes in TreeGrid.
 
 1. Clip
 2. Ellipsis
 
 ### Clip
 
-When clipMode of Columns property set as `ej.TreeGrid.ClipMode.Clip`, then it truncates the overflown text in the cell.
+When the clipMode of Columns property is set as `ej.TreeGrid.ClipMode.Clip`, then it truncates the overflown text in the cell.
 
 N> 1. By default the `clipMode` will be set as `Clip`.
 
@@ -228,7 +228,7 @@ The following output shows the result of above code example.
 
 ### Ellipsis
 
-When `columns.clipMode` property is set as `ej.TreeGrid.ClipMode.Ellipsis` then it shows ellipsis for the overflown cell.
+When the `columns.clipMode` property is set as `ej.TreeGrid.ClipMode.Ellipsis` then it shows ellipsis for the overflown cell.
 
 The following code example describes the above behavior.
 
@@ -254,7 +254,7 @@ Text wrap enables the TreeGrid to wrap cell content or header content to next li
 
 ### Header Text Wrap
 
-To enable header cell text wrap, set `headerTextOverflow` property as `wrap`.
+To enable header cell text wrap, set the `headerTextOverflow` property as `wrap`.
 
 N> By default the `headerTextOverflow` will be set as `none`.
 
@@ -275,7 +275,7 @@ The following output shows the result of above code example.
 
 ### Content Text Wrap
 
-To enable cell text wrap, set `allowTextWrap` property as `true`.
+To enable cell text wrap, set the `allowTextWrap` property as `true`.
 
 N> 1.By default the `allowTextWrap` will be set as `false`.
 
