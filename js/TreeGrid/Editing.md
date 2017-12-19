@@ -238,3 +238,25 @@ The following code example describes edit template behavior
 The output of the TreeGrid width editTemplate as follows
 
 ![](/js/TreeGrid/Editing_images/editTemplate.png)
+
+## Delete confirmation message
+
+Delete confirmation message is used to get the confirmation from the user before delete the record. This confirmation message can be enabled by setting `editSettings.showDeleteConfirmDailog` property as `true`.
+
+The following code snippet explains how to enable delete confirmation message in tree grid.
+
+{% highlight js %}
+$("#TreeGrid").ejTreeGrid({
+    //...
+    editSettings: {
+        allowDeleting: true,
+	    showDeleteConfirmDialog: true
+    },
+    //...
+});
+
+{% endhighlight %}
+
+![](/js/TreeGrid/Editing_images/deleteConfirmation.png)
+
+The above screen shot shows the appearance of delete confirmation message in treegrid.
