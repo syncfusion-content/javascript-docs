@@ -14,7 +14,7 @@ api: /api/js/ejrangenavigator
 
 #### Numeric
 
-The [`rangePadding`](../api/js/ejrangenavigator#members:rangepadding) property allows you to customize the automatic range calculation using the default auto range calculation for **RangeNavigator**.
+The [`rangePadding`](../api/ejrangenavigator#members:rangepadding) property allows you to customize the automatic range calculation using the default auto range calculation for **RangeNavigator**.
 
 {% highlight javascript %}
 
@@ -31,9 +31,9 @@ $("#container").ejRangeNavigator({
 
 ##### None
 
-By default, the [`rangePadding`](../api/js/ejrangenavigator#members:rangepadding) for numerical range is none. The range is calculated from the minimum value to the maximum value of data in the RangeNavigator.
+By default, the [`rangePadding`](../api/ejrangenavigator#members:rangepadding) for numerical range is none. The range is calculated from the minimum value to the maximum value of data in the RangeNavigator.
 
-The following screenshot illustrates a **RangeNavigator** with [`rangePadding`](../api/js/ejrangenavigator#members:rangepadding) set to none.
+The following screenshot illustrates a **RangeNavigator** with [`rangePadding`](../api/ejrangenavigator#members:rangepadding) set to none.
 
 
 
@@ -41,9 +41,9 @@ The following screenshot illustrates a **RangeNavigator** with [`rangePadding`](
 
 ##### Additional
 
-When you set the [`rangePadding`](../api/js/ejrangenavigator#members:rangepadding) for numerical range to **Additional**, range is padded with an interval.
+When you set the [`rangePadding`](../api/ejrangenavigator#members:rangepadding) for numerical range to **Additional**, range is padded with an interval.
 
-The following screenshot illustrates a **RangeNavigator** with [`rangePadding`](../api/js/ejrangenavigator#members:rangepadding) set to additional.
+The following screenshot illustrates a **RangeNavigator** with [`rangePadding`](../api/ejrangenavigator#members:rangepadding) set to additional.
 
 
 
@@ -51,23 +51,23 @@ The following screenshot illustrates a **RangeNavigator** with [`rangePadding`](
 
 ##### Normal
 
-In normal [`rangePadding`](../api/js/ejrangenavigator#members:rangepadding), automatic range calculation differs based on the data. 
+In normal [`rangePadding`](../api/ejrangenavigator#members:rangepadding), automatic range calculation differs based on the data. 
 
-The following screenshot illustrates **RangeNavigator** with [`rangePadding`](../api/js/ejrangenavigator#members:rangepadding) set to normal
+The following screenshot illustrates **RangeNavigator** with [`rangePadding`](../api/ejrangenavigator#members:rangepadding) set to normal
 
 ![](/js/RangeNavigator/Range-Padding_images/Range-Padding_img3.png) 
 
 ##### Round
 
-Round [`rangePadding`](../api/js/ejrangenavigator#members:rangepadding) for a numerical range rounds the range of the control to the nearest possible value that is divisible by the interval.
+Round [`rangePadding`](../api/ejrangenavigator#members:rangepadding) for a numerical range rounds the range of the control to the nearest possible value that is divisible by the interval.
 
-The following screenshot illustrates a **RangeNavigator** with [`rangePadding`](../api/js/ejrangenavigator#members:rangepadding) set to **Round**.
+The following screenshot illustrates a **RangeNavigator** with [`rangePadding`](../api/ejrangenavigator#members:rangepadding) set to **Round**.
 
 ![](/js/RangeNavigator/Range-Padding_images/Range-Padding_img4.png) 
 
 #### DateTime
 
-Using the default range calculation for **RangeNavigator**, the [`rangePadding`](../api/js/ejrangenavigator#members:rangepadding) property allows you to customize the range.
+Using the default range calculation for **RangeNavigator**, the [`rangePadding`](../api/ejrangenavigator#members:rangepadding) property allows you to customize the range.
 
 {% highlight javascript %}
 
@@ -83,23 +83,23 @@ $("#container").ejRangeNavigator({
 
 ##### None
 
-By default, the [`rangePadding`](../api/js/ejrangenavigator#members:rangepadding) for **DateTime** range is none. The range is calculated from the minimum value to the maximum value of data in the RangeNavigator
+By default, the [`rangePadding`](../api/ejrangenavigator#members:rangepadding) for **DateTime** range is none. The range is calculated from the minimum value to the maximum value of data in the RangeNavigator
 
-The following screenshot illustrates a **RangeNavigator** with [`rangePadding`](../api/js/ejrangenavigator#members:rangepadding) set to none.
+The following screenshot illustrates a **RangeNavigator** with [`rangePadding`](../api/ejrangenavigator#members:rangepadding) set to none.
 
 ![](/js/RangeNavigator/Range-Padding_images/Range-Padding_img5.png) 
 
 ##### Round
 
-Round [`rangePadding`](../api/js/ejrangenavigator#members:rangepadding) for a **DateTime** range rounds the range of the control to the nearest possible value.
+Round [`rangePadding`](../api/ejrangenavigator#members:rangepadding) for a **DateTime** range rounds the range of the control to the nearest possible value.
 
-The following screenshot illustrates a **RangeNavigator** with [`rangePadding`](../api/js/ejrangenavigator#members:rangepadding) set to Round.
+The following screenshot illustrates a **RangeNavigator** with [`rangePadding`](../api/ejrangenavigator#members:rangepadding) set to Round.
 
 ![](/js/RangeNavigator/Range-Padding_images/Range-Padding_img6.png) 
 
 ### Padding
 
-The gap between the container and the **RangeNavigator** can be specified using [`padding`](../api/js/ejrangenavigator#members:padding) property.
+The gap between the container and the **RangeNavigator** can be specified using [`padding`](../api/ejrangenavigator#members:padding) property.
 
 {% highlight javascript %}
 
@@ -114,7 +114,7 @@ $("#container").ejRangeNavigator({
 
 ### AllowSnapping
 
-An [`allowSnapping`](../api/js/ejrangenavigator#members:allowsnapping) property toggles the placement of slider exactly on the place it left or on the nearest interval.
+An [`allowSnapping`](../api/ejrangenavigator#members:allowsnapping) property toggles the placement of slider exactly on the place it left or on the nearest interval.
 
 {% highlight javascript %}
 
@@ -128,7 +128,7 @@ $("#container").ejRangeNavigator({
 
 ### Responsive
 
-Set [`isResponsive`](../api/js/ejrangenavigator#members:isresponsive) value to make the **RangeNavigator** responsive on resize.
+Set [`isResponsive`](../api/ejrangenavigator#members:isresponsive) value to make the **RangeNavigator** responsive on resize.
 
 {% highlight javascript %}
 
@@ -142,7 +142,7 @@ $("#container").ejRangeNavigator({
 
 ### Auto Resizing
 
-Enable [`enableAutoResizing`](../api/js/ejrangenavigator#members:enableautoresizing) option to resize the **RangeNavigator**.
+Enable [`enableAutoResizing`](../api/ejrangenavigator#members:enableautoresizing) option to resize the **RangeNavigator**.
 
 {% highlight javascript %}
 
@@ -156,7 +156,7 @@ $("#container").ejRangeNavigator({
 
 ### Customize range Navigator border
 
-**RangeNavigator** provides options to customize the [`color`](../api/js/ejrangenavigator#members:border-color), [`opacity`](../api/js/ejrangenavigator#members:border-opacity) and [`width`](../api/js/ejrangenavigator#members:border-width) of range navigator [`border`](../api/js/ejrangenavigator#members:border).
+**RangeNavigator** provides options to customize the [`color`](../api/ejrangenavigator#members:border-color), [`opacity`](../api/ejrangenavigator#members:border-opacity) and [`width`](../api/ejrangenavigator#members:border-width) of range navigator [`border`](../api/ejrangenavigator#members:border).
 
 {% highlight javascript %}
 
@@ -174,7 +174,7 @@ $("#container").ejRangeNavigator({
 
 ### Customize size of range navigator
 
-The [`height`](../api/js/ejrangenavigator#members:sizesettings-height) and [`width`](../api/js/ejrangenavigator#members:sizesettings-width) of **RangeNavigator** can be customized using [`sizeSettings`](../api/js/ejrangenavigator#members:sizesettings) property.
+The [`height`](../api/ejrangenavigator#members:sizesettings-height) and [`width`](../api/ejrangenavigator#members:sizesettings-width) of **RangeNavigator** can be customized using [`sizeSettings`](../api/ejrangenavigator#members:sizesettings) property.
 
 {% highlight javascript %}
 
@@ -191,7 +191,7 @@ $("#container").ejRangeNavigator({
 
 ### Customize axis range of navigator
 
-**RangeNavigator** calculates the range automatically based on the values of series data points. However you can explicitly specify the range using the [`start`](../api/js/ejrangenavigator#members:rangesettings-start), [`end`](../api/js/ejrangenavigator#members:rangesettings-end) properties in [`rangeSettings`](../api/js/ejrangenavigator#members:rangesettings) that is not possible when data is provided.
+**RangeNavigator** calculates the range automatically based on the values of series data points. However you can explicitly specify the range using the [`start`](../api/ejrangenavigator#members:rangesettings-start), [`end`](../api/ejrangenavigator#members:rangesettings-end) properties in [`rangeSettings`](../api/ejrangenavigator#members:rangesettings) that is not possible when data is provided.
 
 The following code example renders a RangeNavigator with a range from 2010 January 1st to 2013 January 1st.
 
