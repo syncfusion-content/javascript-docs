@@ -121,6 +121,78 @@ _AVERAGEA(value1, value2,...)_
 
 
 
+## AVERAGEIF
+
+
+
+The `AVERAGEIF` function returns the average of the cells in a specified range which satisfies the given criteria.
+
+
+
+**Syntax:**
+
+
+
+_AVERAGEIF(range, criteria, [average_range])_
+
+
+
+**where:**
+
+
+
+* range is the cells range to calculate the average value.
+
+
+
+* criteria are the condition to calculate the average.
+
+
+
+* average_range is the range optional cells range to computed average. If the average is not included, then the range is used for the average.
+
+
+
+## AVERAGEIFS
+
+
+
+The `AVERAGEIFS` returns the average of the cells in a specified range which satisfies the given multiple criteria.
+
+
+
+**Syntax:**
+
+
+
+_AVERAGEIFS(average_range, criteria_range1, criteria1, [criteria_range2, criteria2], ...)_
+
+
+
+**where:**
+
+
+
+* average_range is the range of cells to calculate the average.
+
+
+
+* criteria_range1 is the first range to calculate the average.
+
+
+
+* criteria_ is the optional cells range to evaluate the average.
+
+
+
+* criteria1 is the first condition for the first criteria range.
+
+
+
+* criteria2 is the optional condition for the criteria range 2.
+
+
+
 ## BINOM.DIST
 
 
