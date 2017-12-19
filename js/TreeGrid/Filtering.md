@@ -144,7 +144,7 @@ $("#Treegrid ").ejTreeGrid ({
 
 {% endhighlight %}
 ![](/js/TreeGrid/Filtering_images/Filtering_img7.png)
-The above screen shot shows TreeGrid with enableCaseSensivity set as false in search action.
+The above screen shot shows TreeGrid with `enableCaseSensitivity` set as false in search action.
 
 ## Filtering types
 By default, the filtering type for a column is inherited from the `columns.editType` property. You can also define a specific filtering type for a column using `columns.filterEditType` property.
