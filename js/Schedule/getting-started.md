@@ -193,3 +193,6 @@ $(function() { // Document is ready
 
 {% endhighlight %}
 
+![](Getting-Started_images/Getting-Started_img1.png)
+
+
