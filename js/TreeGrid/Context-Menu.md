@@ -34,7 +34,7 @@ The following screenshot displays the Context menu in TreeGrid control.
 ![](/js/TreeGrid/Context-Menu_images/Context-Menu_img1.png)
 
 # Header Context Menu
-Header context menu can be enabled by settings `contextMenuSettings.showContextMenu` as `true`. The default value `contextMenuSettings.showContextMenu` is false.
+Header context menu can be enabled by setting `contextMenuSettings.showContextMenu` as `true`. The default value of the `contextMenuSettings.showContextMenu` property is false.
 
 Following options are shown in header context menu. 
 
