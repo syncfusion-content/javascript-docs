@@ -15,6 +15,7 @@ TreeGrid provides support for the following filtering modes,
 
 * Filter bar
 * Menu
+* Excel
 
 Also, the following filtering types are available in TreeGrid
 
@@ -85,6 +86,65 @@ $("#TreeGridContainer").ejTreeGrid({
 The output of the filtering with filter menu enabled is as follows.
 
 ![](/js/TreeGrid/Filtering_images/Filtering_img3.png)
+
+### Excel Filtering
+Excel filtering can be enabled by setting `filterSettings.filterType` property as `excel`. The excel menu contains options such as sorting, clear filter and advance filtering options.
+The below code snippet explains how to enable excel filtering in TreeGrid
+
+{% highlight js %}
+
+$("#TreeGridContainer").ejTreeGrid({
+     //...
+     allowFiltering:true,
+      filterSettings:{
+             filterType: ej.TreeGrid.FilterType.Excel,
+      }
+    //...
+ });
+
+{% endhighlight %}
+
+The output of the filtering with excel filter enabled is as follows.
+
+![](/js/TreeGrid/Filtering_images/Filtering_img5.png)
+
+#### Checkbox list generation
+
+By default, the checkbox list is generated from distinct values of the filter column from dataSource which gives an option to search and select the required items. 
+If the number of distinct values are greater than 1000, then the excel filter will display only first 1000 values and show "Not all items shown" label to ensure the best performance on rendering and searching. However this limit has been customized according to your requirement by setting `filterSettings.maxFilterChoices` with required limit in integer.
+The below code snippet explains how to change the max filter choices value
+
+{% highlight js %}
+
+$("#Treegrid ").ejTreeGrid ({
+      //...
+      filterSettings:{
+             maxFilterChoices: 5,
+      }
+     //...
+});
+{% endhighlight %}
+![](/js/TreeGrid/Filtering_images/Filtering_img6.png)
+The above screen shot shows TreeGrid with maxFilterChoices as 5.
+
+#### Case Sensitivity
+
+To perform filter operation with case sensitive in excel styled filter menu mode by setting `enableCaseSensitivity` as `true`.
+The below code snippet explains how to enable the case sensitivity in excel filter
+
+{% highlight js %}
+
+$("#Treegrid ").ejTreeGrid ({
+      //...
+      filterSettings:{
+             enableCaseSensitivity: true,
+      }
+     //...
+});
+
+{% endhighlight %}
+![](/js/TreeGrid/Filtering_images/Filtering_img7.png)
+The above screen shot shows TreeGrid with enableCaseSensivity set as false in search action.
 
 ## Filtering types
 By default, the filtering type for a column is inherited from the `columns.editType` property. You can also define a specific filtering type for a column using `columns.filterEditType` property.
@@ -175,3 +235,25 @@ The output of the filtering enabled for only one column is as follows.
 ![](/js/TreeGrid/Filtering_images/Filtering_img4.png)
 
 [Click here](http://js.syncfusion.com/demos/web/#!/bootstrap/treegrid/columnfiltering) to find the demo sample for filtering in TreeGrid
+
+## Toolbox searching
+
+The TreeGrid control has an option to search its content using toolbar search box. The toolbar search box can be enabled by using the `toolbarSettings.toolbarItems` property.
+The following code example explains how to integrate search text box in toolbar.
+
+{% highlight js %}
+
+$("#Treegrid ").ejTreeGrid ({
+      //...
+      toolbarSettings:{
+             showToolbar: true,
+             toolbarItems:  [ ej.TreeGrid.ToolbarItems.Search ],
+      }
+     //...
+});
+
+{% endhighlight %}
+
+![](/js/TreeGrid/Filtering_images/Filtering_img8.png)
+
+The above screen shot shows TreeGrid search with ‘Plan’ key word

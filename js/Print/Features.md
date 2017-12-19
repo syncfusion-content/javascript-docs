@@ -47,8 +47,8 @@ To print the grid layout alone excluding other items from a web page, refer the 
               { Name: 'Ricardo Adocicados', City: 'Brazil' }
         ];
         function onPrint(e) {
-            var ele = $("#Grid");
-            if (!ele.hasClass("e-print")) {
+            var elem = $("#Grid");
+            if (!elem.hasClass("e-print")) {
                 $("#Grid").ejPrint();
             } else {
                 obj = $("#Grid").ejPrint("instance");
@@ -66,8 +66,8 @@ It is possible to print the entire web page by calling the `ejPrint` on document
 {% highlight javascript %}
 
         function onPrint(e) {
-            var ele = $(document.body);
-            if (!ele.hasClass("e-print")) {
+            var elem = $(document.body);
+            if (!elem.hasClass("e-print")) {
                 $(document.body).ejPrint();
             } else {
                 obj = $(document.body).ejPrint("instance");
@@ -88,12 +88,12 @@ The below code example depicts the way to print the grid control excluding speci
 {% highlight javascript %}
 
         function onPrint(e) {
-            var ele = $("#Grid");
-            if (!ele.hasClass("e-print")) {
+            var elem = $("#Grid");
+            if (!elem.hasClass("e-print")) {
                 $("#Grid").ejPrint({ excludeSelector: ".e-row" });
             } else {
                 var obj = $("#Grid").ejPrint("instance");
-                obj.option(excludeSelector, ".e-row");
+                obj.option("excludeSelector", ".e-row");
                 obj.print();
             }
         }
@@ -107,12 +107,12 @@ It is possible to print the content in a new window by making use of the `printI
 {% highlight javascript %}
 
         function onPrint(e) {
-            var ele = $("#Grid");
-            if (!ele.hasClass("e-print")) {
+            var elem = $("#Grid");
+            if (!elem.hasClass("e-print")) {
                 $("#Grid").ejPrint({ printInNewWindow:true });
             } else {
                 var obj = $("#Grid").ejPrint("instance");
-                obj.option(printInNewWindow,true);
+                obj.option("printInNewWindow",true);
                 obj.print();
             }
         }
@@ -127,12 +127,12 @@ It is possible to include other external styles on the elements of a printed pag
 {% highlight javascript %}
 
         function onPrint(e) {
-            var ele = $("#Grid");
-            if (!ele.hasClass("e-print")) {
+            var elem = $("#Grid");
+            if (!elem.hasClass("e-print")) {
                 $("#Grid").ejPrint({ externalStyles:"printStyle.css" });
             } else {
                 var obj = $("#Grid").ejPrint("instance");
-                obj.option(externalStyles,"printStyle.css");
+                obj.option("externalStyles","printStyle.css");
                 obj.print();
             }
         }

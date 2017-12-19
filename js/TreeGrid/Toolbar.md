@@ -32,6 +32,8 @@ Using TreeGrid default toolbar items we can perform below operations.
 		   
 * **ExcelExport**- To export TreeGrid in Excel format.
 
+* **Search**- To search the TreeGrid content.
+
 We can enable TreeGrid toolbar by using below code example:
 {% highlight js %}
     $("#TreeGridContainer").ejTreeGrid(
