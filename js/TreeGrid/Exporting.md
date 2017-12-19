@@ -9,7 +9,7 @@ api: /api/js/ejtreegrid
 ---
 # Export
 
-TreeGrid provides support to export the contents in PDF and excel. To export the contents, the `ExcelExport` and `PdfExport` toolbar items must be included in the [toolbarSettings.toolbarItems](https://help.syncfusion.com/api/js/ejtreegrid#members:toolbarsettings-toolbaritems) property. And you need to call the `export` method with the export mapper as parameter in the toolbar button click action. 
+The TreeGrid provides support to export the contents in PDF and excel. To export the contents, the `ExcelExport` and `PdfExport` toolbar items must be included in the [toolbarSettings.toolbarItems](https://help.syncfusion.com/api/js/ejtreegrid#members:toolbarsettings-toolbaritems) property. Now, you need to call the `export` method with the export mapper as parameter in the toolbar button click action. 
 The below code snippet explains the above behavior,
 
 The below code snippet explains the above behavior,
@@ -43,12 +43,12 @@ function toolbarClick(args) {
 
 {% endhighlight %}
 
-The below screen shot shows Gantt with excel and Pdf exporting enabled
+The below screen shot shows Gantt with excel and Pdf exporting enabled.
 
 ![](/js/TreeGrid/Export_images/Export_img1.png)
 
 ## Server Configuration
-TreeGrid data can be converted to PDF and excel file formats in server side only, through EJ’s helper functions in .NET. 
+The TreeGrid data can be converted to PDF and excel file formats in server-side only, through EJ’s helper functions in .NET. 
 To use TreeGrid pdf export in projects, it is required to create a server with any of the following web services. 
 
 * Web API
@@ -111,7 +111,7 @@ public class TreeGridController : ApiController
 
 
 ## Server dependencies
-Export Helper functions are available in the Assembly Syncfusion.EJ.Export, which is available in the Essential Studio & Essential JavaScript builds. The list of assemblies needed for TreeGrid Export as follows
+Export Helper functions are available in the Assembly Syncfusion.EJ.Export, which is available in the Essential Studio & Essential JavaScript builds. The list of assemblies needed for TreeGrid Export as follows.
 
 * Syncfusion.EJ
 * Syncfusion.EJ.Export
@@ -121,7 +121,7 @@ Export Helper functions are available in the Assembly Syncfusion.EJ.Export, whic
 * Syncfusion.PDF.Base
 
 ## Export Theme
-The TreeGrid export supports the below themes, 
+The TreeGrid export supports the below themes.
 
 * flat-azure
 * flat-azure-dark
@@ -137,7 +137,7 @@ The TreeGrid export supports the below themes,
 * gradient-saffron-dark
 * bootstrap-theme
 
-The desired theme should be passed as a parameter to the Export method and the code snippet for this as follows
+The desired theme should be passed as a parameter to the Export method and the code snippet for this as follows.
 
 {% highlight c# %}
 
