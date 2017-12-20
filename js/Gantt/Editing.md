@@ -105,3 +105,27 @@ The following screen shot shows the predecessor editing in Gantt control.
 ![](/js/Gantt/Editing_images/Editing_img3.png)
 
 [Click](http://js.syncfusion.com/demos/web/#!/bootstrap/gantt/editing) here to view the online demo sample for editing in Gantt.
+
+## Delete confirmation message
+
+Delete confirmation message is used to get the confirmation from the user before delete the record. This confirmation message can be enabled by setting `editSettings.showDeleteConfirmDailog` property as `true`.
+
+The following code snippet explains how to enable delete confirmation message in gantt.
+
+{% highlight js %}
+
+$("#Gantt").ejGantt({
+     //...
+    editSettings: {
+        allowDeleting: true,
+	    showDeleteConfirmDialog: true
+    },
+    //...
+});
+
+
+{% endhighlight %}
+
+![](/js/Gantt/Editing_images/deleteConfirmation.png)
+
+The above screen shot shows the appearance of delete confirmation message in gantt.

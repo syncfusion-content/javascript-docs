@@ -14,7 +14,7 @@ api: /api/js/ejtreegrid
 
 The **Essential JavaScript TreeGrid** has been designed to represent and edit the hierarchical data. 
 
-This section explains how to create a TreeGrid widget in your application with hierarchical data source and enable sorting and editing. The following screenshot displays the output.
+This section explains how to create a TreeGrid widget in your application with hierarchical data source, enable sorting and editing. The following screenshot displays the output.
 
 ![](/js/TreeGrid/Getting-Started_images/Getting-Started_img1.png)
 
@@ -204,7 +204,7 @@ The TreeGrid control has sorting functionality, to arrange the data in ascending
 
 #### Multicolumn Sorting
 
-Enable the multicolumn sorting in TreeGrid by setting [`allowMultiSorting`](/api/js/ejtreegrid#allowmultisortingspan-classtype-signature-type-booleanbooleanspan "allowMultiSorting") as `true`. You can sort multiple columns in TreeGrid, by selecting the desired column header while holding the `Ctrl` key.
+Enable the multicolumn sorting in TreeGrid by setting the [`allowMultiSorting`](/api/js/ejtreegrid#allowmultisortingspan-classtype-signature-type-booleanbooleanspan "allowMultiSorting") as `true`. You can sort multiple columns in TreeGrid, by selecting the desired column header while holding the `Ctrl` key.
 
 {% highlight js %}
 
