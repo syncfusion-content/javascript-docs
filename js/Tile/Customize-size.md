@@ -10,7 +10,7 @@ api: /api/js/ejtile
 
 # Customize size
 
-You can customize the size of the **Tile** by using **“data-ej-tileSize”** attribute. The following built-in tile sizes are supported.
+You can customize the size of the **Tile** by using [data-ej-tileSize](https://help.syncfusion.com/api/js/ejtile#members:tilesize) attribute. The following built-in tile sizes are supported.
 
 1. medium
 2. small

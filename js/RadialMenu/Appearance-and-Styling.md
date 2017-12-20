@@ -34,7 +34,7 @@ By default, there are 13 theme support available for RadialMenu component, namel
 
 ## CSS Class
 
-RadialMenu component's appearance can only be customized using its CSS classes. Define CSS class, as per requirement and assign the class name to cssClass property.
+RadialMenu component's appearance can only be customized using its CSS classes. Define CSS class, as per requirement and assign the class name to [cssClass](https://help.syncfusion.com/api/js/ejradialmenu#members:cssclass) property.
 
 ### Configure RadialMenu using CSS class
 

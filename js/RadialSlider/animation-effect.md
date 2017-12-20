@@ -10,7 +10,7 @@ api: /api/js/ejradialslider
 
 ## Animation Effect
 
-The animation effect for the **RadialSlider** can be enabled or disabled using the **enableAnimation** property.By default, it is set as **true**, so that the handle movement will be animated.
+The animation effect for the **RadialSlider** can be enabled or disabled using the [enableAnimation](https://help.syncfusion.com/api/js/ejradialslider#members:enableanimation) property.By default, it is set as **true**, so that the handle movement will be animated.
 
 {% highlight html %}
 

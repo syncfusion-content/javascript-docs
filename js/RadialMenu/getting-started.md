@@ -100,7 +100,7 @@ Create a new HTML file and add [CDN](https://help.syncfusion.com/js/cdn) links t
 **Create a simple Radial Menu**
 
 
-Create a **div** element that is a container for **Radial Menu**. You can set the images for each item by giving the image **url** with the **data-ej-imageUrl** attribute in the inner list element and text with **data-ej-text** attribute. Refer to the following code example.
+Create a **div** element that is a container for **Radial Menu**. You can set the images for each item by giving the image **url** with the [data-ej-imageUrl](https://help.syncfusion.com/api/js/ejradialmenu#members:items-imageurl) attribute in the inner list element and text with [data-ej-text](https://help.syncfusion.com/api/js/ejradialmenu#members:items-text) attribute. Refer to the following code example.
 
 
 
@@ -182,7 +182,7 @@ Initialize **Radial Menu** control with the **div** element and set its target c
 
 
 
-You can display the **Radial Menu** by performing the desired action on the target content while selecting the text inside the target. Therefore, call the **show** method in the select action of the content. Refer to the following code example and add it to the script.
+You can display the **Radial Menu** by performing the desired action on the target content while selecting the text inside the target. Therefore, call the [show](https://help.syncfusion.com/api/js/ejradialmenu#methods:show) method in the select action of the content. Refer to the following code example and add it to the script.
 
 
 

@@ -10,7 +10,7 @@ api: /api/js/ejtile
 
 # Template Support
 
-The **“data-ej-imageTemplateId”** attribute is used to customize the image of **Tile** with template feature by setting the **id**. The **“data-ej-captionTemplateId”** attribute is used to customize the text of **Tile** with template feature by setting the **id**. 
+The [data-ej-imageTemplateId](https://help.syncfusion.com/api/js/ejtile#members:imagetemplateid) attribute is used to customize the image of **Tile** with template feature by setting the **id**. The **“data-ej-captionTemplateId”** attribute is used to customize the text of **Tile** with template feature by setting the **id**. 
 
 Refer to the following code examples.
 

@@ -39,7 +39,7 @@ By default, there are 13 theme support available for RadialSlider component, nam
 
 **RadialSlider** control also allows you to customize its appearance using user-defined CSS. To apply custom themes you can use **cssClass** property, which sets the root class for **RadialSlider** theme.
 
-Using this **cssClass** you can override the existing styles under the theme style sheet. In the following example, the value of **cssClass** property is set as “**Purple-dark**”. **Purple-dark** is added as root class to **RadialSlider** control at the runtime. From this root class, you can customize the **RadialSlider** appearance.
+Using this [cssClass](https://help.syncfusion.com/api/js/ejradialslider#members:cssclass) you can override the existing styles under the theme style sheet. In the following example, the value of **cssClass** property is set as “**Purple-dark**”. **Purple-dark** is added as root class to **RadialSlider** control at the runtime. From this root class, you can customize the **RadialSlider** appearance.
 
 Add the following code in your **HTML** page to render the RadialSlider.
 
