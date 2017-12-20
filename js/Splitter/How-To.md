@@ -52,18 +52,10 @@ By default, you are provided with collpase/expand icons in **Split bar** to coll
             padding: 10px 0 0 10px;
             text-align: center;
         }   
-         .eimg {
+        .eimg {
             height:40px;
             width:35px;
 			margin-left: -13px;
-        }  
-
-		.ediv {
-           height: 30px;
-			width: 45px;
-			background-color: darkblue;
-			margin-top: -130px;
-			margin-left: -20px;
         }  
        .e-splitter .e-splitbar .e-splitter-h-template {
             top: 15%;
