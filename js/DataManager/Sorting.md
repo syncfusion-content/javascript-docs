@@ -68,7 +68,7 @@ Result of the above code example is illustrated as follows.
 
 ## SortByDesc
 
-The `sortByDesc` query of the data manager is used to sort the specified field in descending order by default. You can use the following code example for `sortByDesc` query.
+The [sortByDesc](https://help.syncfusion.com/api/js/ejquery#methods:sortbydesc) query of the data manager is used to sort the specified field in descending order by default. You can use the following code example for `sortByDesc` query.
 
 {% highlight html %}
 

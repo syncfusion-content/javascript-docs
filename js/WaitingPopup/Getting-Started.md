@@ -133,6 +133,8 @@ The following screenshot displays a **User** **login**.
 
  In a real-time login page scenario, when you click the Login button, the WaitingPopup is displayed. 
 
+It is achieved by using [showOnInit](https://help.syncfusion.com/api/js/ejwaitingpopup#members:showoninit) property that allows the popup to display over a target which is defined by the [target](https://help.syncfusion.com/api/js/ejwaitingpopup#members:target) property on page load automatically.
+
 {% highlight js %}
 
 

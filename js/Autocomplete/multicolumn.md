@@ -19,17 +19,17 @@ In AutoComplete Multiple Column searched value is updated to autocomplete input 
 
 
 <table><tr><th>Name</th><th>Description</th></tr>
-<tr><td>multiColumnSettings.enable</td><td>Allow list of data to be displayed in several columns.</td></tr>
-<tr><td>multiColumnSettings.showHeader</td><td>Allow header text to be displayed in corresponding columns.</td></tr>
-<tr><td>multiColumnSettings.stringFormat</td><td>Specifies the format for displaying a selected value and columns to be searched.</td></tr>
-<tr><td>multiColumnSettings.columns</td><td>Field and Header Text collections can be defined and customized through this field.</td></tr>
-<tr><td>multiColumnSettings.columns.field</td><td>Field to be mapped from the dataSource to the columns in Autocomplete suggestion list.</td></tr>
-<tr><td>multiColumnSettings.columns.headerText</td><td>Get or set a value that indicates to display the title of that particular column.</td></tr>
-<tr><td>multiColumnSettings.columns.cssClass</td><td>Field to be mapped for to add user defined CSS class for the specific column.</td></tr>
-<tr><td>multiColumnSettings.columns.type</td><td>Get or set the data type for a individual column.</td></tr>
-<tr><td>multiColumnSettings.columns.filterType</td><td>Get or set the search filter type for the column.</td></tr>
-<tr><td>multiColumnSettings.columns.headerTextAlign</td><td>Used to align or position the header value in the column.</td></tr>
-<tr><td>multiColumnSettings.columns.textAlign</td><td>Used to align or position all the values in a column.</td></tr>
+<tr><td><a href="https://help.syncfusion.com/api/js/ejautocomplete#members:multicolumnsettings-enable">multiColumnSettings.enable</a></td><td>Allow list of data to be displayed in several columns.</td></tr>
+<tr><td><a href="https://help.syncfusion.com/api/js/ejautocomplete#members:multicolumnsettings-showheader">multiColumnSettings.showHeader</a></td><td>Allow header text to be displayed in corresponding columns.</td></tr>
+<tr><td><a href="https://help.syncfusion.com/api/js/ejautocomplete#members:multicolumnsettings-stringformat">multiColumnSettings.stringFormat</a></td><td>Specifies the format for displaying a selected value and columns to be searched.</td></tr>
+<tr><td><a href="https://help.syncfusion.com/api/js/ejautocomplete#members:multicolumnsettings-columns">multiColumnSettings.columns</a></td><td>Field and Header Text collections can be defined and customized through this field.</td></tr>
+<tr><td><a href="https://help.syncfusion.com/api/js/ejautocomplete#members:multicolumnsettings-columns-field">multiColumnSettings.columns.field</a></td><td>Field to be mapped from the dataSource to the columns in Autocomplete suggestion list.</td></tr>
+<tr><td><a href="https://help.syncfusion.com/api/js/ejautocomplete#members:multicolumnsettings-columns-headertext">multiColumnSettings.columns.headerText</a></td><td>Get or set a value that indicates to display the title of that particular column.</td></tr>
+<tr><td><a href="https://help.syncfusion.com/api/js/ejautocomplete#members:multicolumnsettings-columns-cssclass">multiColumnSettings.columns.cssClass</a></td><td>Field to be mapped for to add user defined CSS class for the specific column.</td></tr>
+<tr><td><a href="https://help.syncfusion.com/api/js/ejautocomplete#members:multicolumnsettings-columns-type">multiColumnSettings.columns.type</a></td><td>Get or set the data type for a individual column.</td></tr>
+<tr><td><a href="https://help.syncfusion.com/api/js/ejautocomplete#members:multicolumnsettings-columns-filtertype">multiColumnSettings.columns.filterType</a></td><td>Get or set the search filter type for the column.</td></tr>
+<tr><td><a href="https://help.syncfusion.com/api/js/ejautocomplete#members:multicolumnsettings-columns-headertextalign">multiColumnSettings.columns.headerTextAlign</a></td><td>Used to align or position the header value in the column.</td></tr>
+<tr><td><a href="https://help.syncfusion.com/api/js/ejautocomplete#members:multicolumnsettings-columns-textalign">multiColumnSettings.columns.textAlign</a></td><td>Used to align or position all the values in a column.</td></tr>
 </table>
 
 

@@ -19,11 +19,11 @@ The Autocomplete control for JavaScript is a textbox control that provides a lis
 
 * Data binding: Supports data binding with JSON data and remote data.
 
-* Template: Supports templates for customizing the suggestion list content.
+* Template: The [template](https://help.syncfusion.com/api/js/ejautocomplete#members:template) property supports templates for customizing the suggestion list content.
 
-* Highlight Search: Supports highlighting the typed text in the suggestion list.
+* Highlight Search: The [highlightSearch](https://help.syncfusion.com/api/js/ejautocomplete#members:highlightsearch) property supports highlighting the typed text in the suggestion list.
 
-* Auto Fill: Allows the control to automatically select the first suggested item.
+* Auto Fill: The [enableAutoFill](https://help.syncfusion.com/api/js/ejautocomplete#members:enableautofill) property allows the control to automatically select the first suggested item.
 
 * Keyboard Interaction: Supports using the keyboard to focus on the control, navigate through the suggestion results, and select a value.
 

@@ -12,7 +12,7 @@ api: /api/js/ejrotator
 
 ## Enabling rotator
 
-The **“enabled”** property enables or disables the **Rotator** control. The default value is ‘**true**’. The value set to this property is **Boolean** type. You can refer the following code example to set this property.
+The [enabled](https://help.syncfusion.com/api/js/ejrotator#members:enabled) property enables or disables the **Rotator** control. The default value is ‘**true**’. The value set to this property is **Boolean** type. You can refer the following code example to set this property.
 
   {% highlight html %}
 
@@ -58,7 +58,7 @@ The **“enabled”** property enables or disables the **Rotator** control. The 
   
 ## Responsive rotator
 
-The “isResponsive” property resizes the Rotator when the browser window is resized. The default value is ‘false’. The value set to this property is Boolean. 
+The [isResponsive](https://help.syncfusion.com/api/js/ejrotator#members:isresponsive) property resizes the Rotator when the browser window is resized. The default value is ‘false’. The value set to this property is Boolean. 
 
 {% highlight javascript %}
 
@@ -72,7 +72,7 @@ The “isResponsive” property resizes the Rotator when the browser window is r
 
 ## Auto Play
 
-The **Rotator** Items continuously rotate without user interference by enable the **enableAutoPlay** property. The default value is ‘**false’**. The value set to this property is **Boolean**. 
+The **Rotator** Items continuously rotate without user interference by enable the [enableAutoPlay](https://help.syncfusion.com/api/js/ejrotator#members:enableautoplay) property. The default value is ‘**false’**. The value set to this property is **Boolean**. 
 
 {% highlight javascript %}
 
@@ -85,7 +85,7 @@ The **Rotator** Items continuously rotate without user interference by enable th
 
 ## Stop on hover
 
-The **stopOnHover** property pauses the **auto play** while hover on the **Rotator** content. The default value is ‘**false**’. The value set to this property is **Boolean**. 
+The [stopOnHover](https://help.syncfusion.com/api/js/ejrotator#members:stoponhover) property pauses the **auto play** while hover on the **Rotator** content. The default value is ‘**false**’. The value set to this property is **Boolean**. 
 
 {% highlight javascript %}
 
@@ -101,7 +101,7 @@ The **stopOnHover** property pauses the **auto play** while hover on the **Rotat
 
 ### Pager position
 
-This property specifies the position of the **showPager** in the **Rotator** Item. The default value is ‘**outside**’. The value set to this property is **string** or **enum**. 
+The [pagerPosition](https://help.syncfusion.com/api/js/ejrotator#members:pagerposition) property specifies the position of the **showPager** in the **Rotator** Item. The default value is ‘**outside**’. The value set to this property is **string** or **enum**. 
 
 * ej.Rotator.PagerPosition.BottomLeft
 * ej.Rotator.PagerPosition.BottomRight
@@ -132,7 +132,7 @@ This property specifies the position of the **showPager** in the **Rotator** Ite
 
 ### Show pager
 
-The **“showPager”** property turns on or off the **pager** support in the **Rotator** control. The **Pager** is used to navigate the **Rotator** Items. The default value is ‘**true**’. The value set to this property is **Boolean**. 
+The [showPager](https://help.syncfusion.com/api/js/ejrotator#members:showpager) property turns on or off the **pager** support in the **Rotator** control. The **Pager** is used to navigate the **Rotator** Items. The default value is ‘**true**’. The value set to this property is **Boolean**. 
 
 {% highlight javascript %}
 
@@ -151,7 +151,7 @@ The **“showPager”** property turns on or off the **pager** support in the **
 
 ### Show play button
 
-The “**showPlayButton**” property enables play / pause button on **Rotator**. The default value is ‘**false**’. The value set to this property is **Boolean**.
+The [showPlayButton](https://help.syncfusion.com/api/js/ejrotator#members:showplaybutton) property enables play / pause button on **Rotator**. The default value is ‘**false**’. The value set to this property is **Boolean**.
 
 {% highlight javascript %}
 
@@ -168,7 +168,7 @@ The “**showPlayButton**” property enables play / pause button on **Rotator**
 
 ### Show navigate button
 
-The “**showNavigateButton**” property turns on or off the slide buttons (next and previous) in the **Rotator** Items. Slide buttons are used to navigate the **Rotator** Items. The default value is ‘**false**’. The value set to this property is **Boolean**. 
+The [showNavigateButton](https://help.syncfusion.com/api/js/ejrotator#members:shownavigatebutton) property turns on or off the slide buttons (next and previous) in the **Rotator** Items. Slide buttons are used to navigate the **Rotator** Items. The default value is ‘**false**’. The value set to this property is **Boolean**. 
 
 {% highlight javascript %}
 
@@ -185,7 +185,7 @@ The “**showNavigateButton**” property turns on or off the slide buttons (nex
 
 ### Show caption
 
-When the **Rotator** Item is an image, you can specify a caption for the **Rotator** Item. The caption text for each **Rotator** Item is set by using the title attribute of the respective **&lt;image&gt;** tag. The caption cannot be displayed when multiple **Rotator** Items are present. The default value is ‘**false**’. The value set to this property is **Boolean**. 
+When the **Rotator** Item is an image, you can specify a [caption](https://help.syncfusion.com/api/js/ejrotator#members:showcaption) for the **Rotator** Item. The caption text for each **Rotator** Item is set by using the title attribute of the respective **&lt;image&gt;** tag. The caption cannot be displayed when multiple **Rotator** Items are present. The default value is ‘**false**’. The value set to this property is **Boolean**. 
 
 {% highlight javascript %}
 

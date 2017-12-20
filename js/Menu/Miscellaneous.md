@@ -83,7 +83,7 @@ Output screenshot for the above code example is as follows.
 
 Add the following **&lt;script&gt;** in the above sample code. 
 
-
+N> For animation, [enableAnimation](https://help.syncfusion.com/api/js/ejmenu#members:enableanimation) set to true
 
 {% highlight javascript %}
 

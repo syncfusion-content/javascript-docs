@@ -10,7 +10,7 @@ api: /api/js/ejtile
 
 # LiveTile Configuration
 
-**Live Tiles** are used to display the current or up to date information like scores, stocks, weather, etc. You can enable **Live Tile** using “**data-ej-livetile-enabled”** attribute by setting it to **true**. The **"data-ej-livetile-type”** attribute allows you to specify the type of animation while updating the information in **Tile**. There are three types of **Tile** animation supported: Flip, Slide and Carousel.
+**Live Tiles** are used to display the current or up to date information like scores, stocks, weather, etc. You can enable [LiveTile](https://help.syncfusion.com/api/js/ejtile#members:livetile) using “**data-ej-livetile-enabled”** attribute by setting it to **true**. The **"data-ej-livetile-type”** attribute allows you to specify the type of animation while updating the information in **Tile**. There are three types of **Tile** animation supported: Flip, Slide and Carousel.
 
 The **“data-ej-livetile-imageUrl”** attribute sets background image for **Live Tile**. This property accepts array values so you can specify the image **url’s** for all the **Tiles** that are used in single **Live Tile**. 
 

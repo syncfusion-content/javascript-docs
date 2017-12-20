@@ -12,7 +12,7 @@ api: /api/js/ejlistview
 
 ## Local Data Binding
 
-**Essential Studio Web JS ListView** provides support for **Data Binding**. **Data Binding** provides a simple and consistent way for applications to present and interact with data. Elements can be bounded to data from a variety of data sources. In local data binding, the data source is written inside the program. Then it is handled by the **ListView** control. **DataSource** is used to get the **data source** that holds the list items.
+**Essential Studio Web JS ListView** provides support for **Data Binding**. **Data Binding** provides a simple and consistent way for applications to present and interact with data. Elements can be bounded to data from a variety of data sources. In local data binding, the data source is written inside the program. Then it is handled by the **ListView** control. [DataSource](https://help.syncfusion.com/api/js/ejlistview#members:datasource) is used to get the **data source** that holds the list items.
 
 Create div element to render the ListView sample.
 

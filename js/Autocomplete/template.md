@@ -11,7 +11,7 @@ api: /api/js/ejautocomplete
 
 # Templates
 
-The suggestion list can be customized based on different needs using templates. The desired templates can be defined using the “template” property.
+The suggestion list can be customized based on different needs using templates. The desired templates can be defined using the [template](https://help.syncfusion.com/api/js/ejautocomplete#members:template) property.
 
 {% highlight html %}
 

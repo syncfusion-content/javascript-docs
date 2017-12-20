@@ -14,7 +14,7 @@ You can customize **Radial Menu** dimension by using **radius** and **position**
 
 ### Radius
 
-You can customize the **Radial Menu** size by using the **radius** property. By default, the **Radial Menu** radius is set as 150px. Refer to the following code example.
+You can customize the **Radial Menu** size by using the [radius](https://help.syncfusion.com/api/js/ejradialmenu#members:radius) property. By default, the **Radial Menu** radius is set as 150px. Refer to the following code example.
 
 {% highlight html %}
 
@@ -52,7 +52,7 @@ The following screenshot illustrates the **Radial Menu** while clicking on the s
 
 ### Position 
 
-To display the **Radial Menu** in the web page in a specific area, we can use the **position** property. By default, the **Radial Menu** position is set as null. 
+To display the **Radial Menu** in the web page in a specific area, we can use the [position](https://help.syncfusion.com/api/js/ejradialmenu#members:position) property. By default, the **Radial Menu** position is set as null. 
 
 Refer to the following code example.
 

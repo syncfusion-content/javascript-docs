@@ -51,7 +51,7 @@ N> Initial focus can be done by pressing tab key multiple times until it is focu
 
 ## Incremental Search
 
-The [Incremental search](https://en.wikipedia.org/wiki/Incremental_search) helps in finding the specific item in the ListBox,as the user types the text one or more possible matches for the text are found and the first matched item will be selected.It can be enabled in the ListBox widget using “enableIncrementalSearch” API. The search can be case sensitive or case insensitive.
+The [Incremental search](https://en.wikipedia.org/wiki/Incremental_search) helps in finding the specific item in the ListBox,as the user types the text one or more possible matches for the text are found and the first matched item will be selected.It can be enabled in the ListBox widget using [enableIncrementalSearch](https://help.syncfusion.com/api/js/ejlistbox#members:enableincrementalsearch) API. The search can be case sensitive or case insensitive.
 
 {% highlight html %}
 

@@ -14,7 +14,7 @@ api: /api/js/ejgantt
 
 ## Description
 
-Find the Gantt exporting type below,
+Find the Gantt exporting type below.
 
 * Excel Export.
 
@@ -38,12 +38,12 @@ Description</td></tr>
 <td>
 GanttProperties</td><td>
 Object</td><td>
-It takes Gantt model properties that should be pass to exporting</td></tr>
+It takes Gantt model properties that should be passed to exporting.</td></tr>
 <tr>
 <td>
 datasource</td><td>
 object</td><td>
-It holds the data to be exported in Excel</td></tr>
+It holds the data to be exported in Excel.</td></tr>
 <tr>
 <td>
 GanttExportSettings</td><td>
@@ -63,22 +63,22 @@ Description</td></tr>
 <td>
 GanttProperties</td><td>
 Object</td><td>
-It takes Gantt model properties that should be pass to exporting</td></tr>
+It takes Gantt model properties that should be pass to exporting.</td></tr>
 <tr>
 <td>
 datasource</td><td>
 object</td><td>
-It holds the data to be exported in Excel</td></tr>
+It holds the data to be exported in Excel.</td></tr>
 <tr>
 <td>
 excelName</td><td>
 String</td><td>
-It specifies the file name an extension to be downloaded</td></tr>
+It specifies the file name an extension to be downloaded.</td></tr>
 <tr>
 <td>
 excelVersion</td><td>
 String</td><td>
-Excel version in which workbook should download</td></tr>
+Excel version in which workbook should download.</td></tr>
 <tr>
 <td>
 GanttExportSettings</td><td>
@@ -98,22 +98,22 @@ Description</td></tr>
 <td>
 GanttProperties</td><td>
 Object</td><td>
-It takes Gantt model properties that should be pass to exporting</td></tr>
+It takes Gantt model properties that should be pass to exporting.</td></tr>
 <tr>
 <td>
 datasource</td><td>
 object</td><td>
-It holds the data to be exported in Excel</td></tr>
+It holds the data to be exported in Excel.</td></tr>
 <tr>
 <td>
 excelName</td><td>
 String</td><td>
-It specifies the file name and extension to be downloaded</td></tr>
+It specifies the file name and extension to be downloaded.</td></tr>
 <tr>
 <td>
 excelVersion</td><td>
 String</td><td>
-Excel version in which workbook should download</td></tr>
+Excel version in which workbook should download.</td></tr>
 <tr>
 <td>
 GanttExportSettings</td><td>
@@ -138,12 +138,12 @@ Description</td></tr>
 <td>
 GanttProperties</td><td>
 Object</td><td>
-It takes Gantt model properties that should be pass to exporting</td></tr>
+It takes Gantt model properties that should be passed to exporting.</td></tr>
 <tr>
 <td>
 datasource</td><td>
 object</td><td>
-It holds the data to be exported in Excel</td></tr>
+It holds the data to be exported in Excel.</td></tr>
 <tr>
 <td>
 GanttExportSettings</td><td>
@@ -213,12 +213,12 @@ Description</td></tr>
 <td>
 GanttProperties</td><td>
 Object</td><td>
-It takes Gantt model properties that should be pass to exporting</td></tr>
+It takes Gantt model properties that should be pass to exporting.</td></tr>
 <tr>
 <td>
 datasource</td><td>
 object</td><td>
-It holds the data to be exported in Excel</td></tr>
+It holds the data to be exported in Excel.</td></tr>
 <tr>
 <td>
 GanttExportSettings</td><td>
@@ -228,7 +228,7 @@ Returns the exporting settings like unicode support, columns fit to width, hidde
 <td>
 excelName</td><td>
 String</td><td>
-With this parameter you can set the downloaded file name. By default it is set to “Export”</td></tr>
+With this parameter you can set the downloaded file name. By default it is set to “Export”.</td></tr>
 <tr>
 <td>
 filePath</td><td>
@@ -258,12 +258,12 @@ Description</td></tr>
 <td>
 GanttProperties</td><td>
 Object</td><td>
-It takes Gantt model properties that should be pass to exporting</td></tr>
+It takes Gantt model properties that should be pass to exporting.</td></tr>
 <tr>
 <td>
 datasource</td><td>
 object</td><td>
-It holds the data to be exported in Excel</td></tr>
+It holds the data to be exported in Excel.</td></tr>
 <tr>
 <td>
 GanttExportSettings</td><td>
@@ -273,7 +273,7 @@ Returns the exporting settings like unicode support, columns fit to width, hidde
 <td>
 Workbook</td><td>
 Object</td><td>
-It specifies in case of multiple exporting, in which workbook the file export should append, it holds the internally stored excel files which is exported previously.</td></tr>
+It specifies in case of multiple exporting, in that workbook the file export should append, it holds the internally stored excel files which is exported previously.</td></tr>
 <tr>
 <td>
 multipleExport </td><td>
@@ -298,12 +298,12 @@ Description</td></tr>
 <td>
 GanttProperties</td><td>
 Object</td><td>
-It takes Gantt model properties that should be pass to exporting</td></tr>
+It takes Gantt model properties that should be pass to exporting.</td></tr>
 <tr>
 <td>
 datasource</td><td>
 object</td><td>
-It holds the data to be exported in Excel</td></tr>
+It holds the data to be exported in Excel.</td></tr>
 <tr>
 <td>
 GanttExportSettings</td><td>
@@ -318,7 +318,7 @@ With this parameter you can set the downloaded file name. By default it is set t
 <td>
 Workbook</td><td>
 Object</td><td>
-It specifies in case of multiple exporting, in which workbook the file export should append, it holds the internally stored excel files which is exported previously.</td></tr>
+It specifies in case of multiple exporting, in that workbook the file export should append, it holds the internally stored excel files which is exported previously.</td></tr>
 <tr>
 <td>
 multipleExport </td><td>
@@ -343,12 +343,12 @@ Description</td></tr>
 <td>
 GanttProperties</td><td>
 Object</td><td>
-It takes Gantt model properties that should be pass to exporting</td></tr>
+It takes Gantt model properties that should be pass to exporting.</td></tr>
 <tr>
 <td>
 datasource</td><td>
 object</td><td>
-It holds the data to be exported in Excel</td></tr>
+It holds the data to be exported in Excel.</td></tr>
 <tr>
 <td>
 GanttExportSettings</td><td>
@@ -393,12 +393,12 @@ Description</td></tr>
 <td>
 GanttProperties</td><td>
 Object</td><td>
-It takes Gantt model properties that should be pass to exporting</td></tr>
+It takes Gantt model properties that should be passed to exporting.</td></tr>
 <tr>
 <td>
 datasource</td><td>
 object</td><td>
-It holds the data to be exported in Excel</td></tr>
+It holds the data to be exported in Excel.</td></tr>
 <tr>
 <td>
 GanttExportSettings</td><td>
@@ -418,12 +418,12 @@ Is a boolean argument, and value `false` specifies the exporting is completed an
 <td>
 Workbook</td><td>
 Object</td><td>
-It specifies in case of multiple exporting, in which workbook the file export should append, it holds the internally stored excel files which is exported previously.</td></tr>
+It specifies in case of multiple exporting, in that workbook the file export should append, it holds the internally stored excel files which is exported previously.</td></tr>
 <tr>
 <td>
 MultipleExportType </td><td>
 Object</td><td>
-It specifies in case of multiple export, it returns the exporting type whether the file should append to the sheet or it should export in new sheet</td></tr>
+It specifies in case of multiple export, it returns the exporting type whether the file should append to the sheet or it should export in new sheet.</td></tr>
 <tr>
 <td>
 headerText</td><td>

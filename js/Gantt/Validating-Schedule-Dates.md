@@ -10,9 +10,9 @@ api: /api/js/ejgantt
 
 # Validating Schedule Dates
 
-Validating schedule dates is used to change the schedule start date and end date dynamically. By this support, `scheduleStartDate` and `scheduleEndDate` can be automatically updated from the data source. When you change the date of any task item to the date that is beyond `scheduleStartDate` or `ScheduleEndDate` through cell editing, taskbar editing, dialog editing or toolbar operation, then the `scheduleStartDate` and `ScheduleEndDate` can be dynamically updated based on that task item’s date.
+Validating schedule dates is used to change the schedule start date and end date dynamically. By this support, the `scheduleStartDate` and `scheduleEndDate` can be automatically updated from the data source. When you change the date of any task item to the date that is beyond the `scheduleStartDate` or `ScheduleEndDate` through cell editing, taskbar editing and dialog editing or toolbar operation, then the `scheduleStartDate` and `ScheduleEndDate` can be dynamically updated based on that task item’s date.
 
-`PrevTimeSpan` and `NextTimeSpan` toolbar items are used to create new time span based on the schedule mode.
+The`PrevTimeSpan` and `NextTimeSpan` toolbar items are used to create new time span based on the schedule mode.
 
 {% highlight javascript %}
 

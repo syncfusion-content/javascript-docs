@@ -10,7 +10,7 @@ api: /api/js/ejlistview
 
 # Dimensions
 
-To customize the **ListView** dimensions, **Width** and **Height** properties are used.
+To customize the **ListView** dimensions, [Width](https://help.syncfusion.com/api/js/ejlistview#members:width) and [Height](https://help.syncfusion.com/api/js/ejlistview#members:height) properties are used.
 
 Refer to the following code examples.
 

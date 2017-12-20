@@ -153,13 +153,13 @@ N>  In the above data manager configuration, “crossDomain” must be set to tr
 
 ### Virtual Scrolling
 
- The ListBox widget provides support to load its data on demand via scrolling behavior to improve the application’s performance. This can be achieved using `allowVirtualScrolling` property. There are two ways to load data based on the scrolling type.
+ The ListBox widget provides support to load its data on demand via scrolling behavior to improve the application’s performance. This can be achieved using [allowVirtualScrolling](https://help.syncfusion.com/api/js/ejlistbox#members:allowvirtualscrolling) property. There are two ways to load data based on the scrolling type.
 
 1. Normal scrolling
 
 2. Continuous Scrolling
 
-The scrolling type can be defined via `virtualScrollMode` property.
+The scrolling type can be defined via [virtualScrollMode](https://help.syncfusion.com/api/js/ejlistbox#members:virtualscrollmode) property.
 
 #### Normal Scrolling
 
@@ -193,7 +193,7 @@ This mode allows you to load the list box data while scrolling i.e. each time th
 
 
 
-N> By default, the value of “virtualScrollMode” property is normal.
+N> By default, the value of [virtualScrollMode](https://help.syncfusion.com/api/js/ejlistbox#members:virtualscrollmode) property is normal.
 
 ![Alt text](Databinding_images\Databinding_img4.png)
 
@@ -204,7 +204,7 @@ N> By default, the value of “virtualScrollMode” property is normal.
 
 This mode allows you to load the list box data when the scrollbar reaches the end point. In this mode, we can specify the number of items to be loaded per request.
 
-The number of items to be loaded per request can be specified using the “itemRequestCount” property.
+The number of items to be loaded per request can be specified using the [itemRequestCount](https://help.syncfusion.com/api/js/ejlistbox#members:itemrequestcount) property.
 
 {% highlight javascript %}
 
@@ -236,7 +236,7 @@ The number of items to be loaded per request can be specified using the “itemR
 
 
 
-N> The “itemRequestCount” property will work only when “virtualScrollMode” is “continuous”.
+N> The [itemRequestCount](https://help.syncfusion.com/api/js/ejlistbox#members:itemrequestcount) property will work only when [virtualScrollMode](https://help.syncfusion.com/api/js/ejlistbox#members:virtualscrollmode) is “continuous”.
 
 ![Alt text](Databinding_images\Databinding_img6.png)
 
@@ -251,7 +251,7 @@ N> The “itemRequestCount” property will work only when “virtualScrollMode�
 
 ### Handling errors
 
- In remote binding, the server might not return data sometimes due to various reasons. In such cases we need to handle the error properly. We can handle it using the “actionFailure” event. 
+ In remote binding, the server might not return data sometimes due to various reasons. In such cases we need to handle the error properly. We can handle it using the [actionFailure](https://help.syncfusion.com/api/js/ejlistbox#events:actionfailure) event. 
 
 {% seealso %} [actionComplete](https://help.syncfusion.com/api/js/ejlistbox#events:actioncomplete) and [actionSuccess](https://help.syncfusion.com/api/js/ejlistbox#events:actionsuccess) {% endseealso %}
 

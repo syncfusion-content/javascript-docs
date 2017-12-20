@@ -10,7 +10,7 @@ api: /api/js/ejsplitter
 
 # Splitter Orientation
 
-The **Splitter** supports both vertical and horizontal orientation of the pane. You can declare the orientation by using **enum**, **ej.Orientation.Vertical** or **ej.Orientation.Horizontal**, that have the corresponding value of vertical and horizontal as a string.
+The **Splitter** supports both vertical and horizontal [orientation](https://help.syncfusion.com/api/js/ejsplitter#members:orientation) of the pane. You can declare the orientation by using **enum**, **ej.Orientation.Vertical** or **ej.Orientation.Horizontal**, that have the corresponding value of vertical and horizontal as a string.
 
 ## Configure Splitter Orientation
 
