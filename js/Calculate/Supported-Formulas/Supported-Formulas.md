@@ -30,15 +30,33 @@ The following are the list of formulas supported in Calculate library,
 
 [ASIN](/js/calculate/supported-formulas/math-trigonometry#asin)
 
+[ASINH](/js/calculate/supported-formulas/math-trigonometry#asinh)
+
 [ATAN](/js/calculate/supported-formulas/math-trigonometry#atan)
 
 [ATAN2](/js/calculate/supported-formulas/math-trigonometry#atan2)
+
+[ATANH](/js/calculate/supported-formulas/math-trigonometry#atanh)
 
 [AVEDEV](/js/calculate/supported-formulas/statistical#avedev)
 
 [AVERAGE](/js/calculate/supported-formulas/statistical#average)
 
 [AVERAGEA](/js/calculate/supported-formulas/statistical#averagea)
+
+[AVERAGEIF](/js/calculate/supported-formulas/statistical#averageif)
+
+[AVERAGEIFS](/js/calculate/supported-formulas/statistical#averageifs)
+
+[BASE](/js/calculate/supported-formulas/math-trigonometry#base)
+
+[BESSELI](/js/calculate/supported-formulas/engineering#besseli)
+
+[BESSELJ](/js/calculate/supported-formulas/engineering#besselj)
+
+[BESSELK](/js/calculate/supported-formulas/engineering#besselk)
+
+[BESSELY](/js/calculate/supported-formulas/engineering#bessely)
 
 [BIN2DEC](/js/calculate/supported-formulas/engineering#bin2dec)
 
@@ -280,7 +298,11 @@ The following are the list of formulas supported in Calculate library,
 
 [MMULT](/js/calculate/supported-formulas/math-trigonometry#mmult)
 
+[MOD](/js/calculate/supported-formulas/math-trigonometry#mod)
+
 [MONTH](/js/calculate/supported-formulas/date-time#month)
+
+[ODD](/js/calculate/supported-formulas/math-trigonometry#odd)
 
 [N](/js/calculate/supported-formulas/information-formulas#n)
 
@@ -328,11 +350,17 @@ The following are the list of formulas supported in Calculate library,
 
 [POISSON.DIST](/js/calculate/supported-formulas/statistical#poissondist)
 
+[POWER](/js/calculate/supported-formulas/math-trigonometry#power)
+
 [PRODUCT](/js/calculate/supported-formulas/math-trigonometry#product)
 
 [PROPER](/js/calculate/supported-formulas/text-formulas#proper)
 
 [PV](/js/calculate/supported-formulas/financial-formulas#pv)
+
+[RADIANS](/js/calculate/supported-formulas/math-trigonometry#radians)
+
+[RAND](/js/calculate/supported-formulas/math-trigonometry#rand)
 
 [RANK.EQ](/js/calculate/supported-formulas/statistical#rankeq)
 
@@ -357,6 +385,8 @@ The following are the list of formulas supported in Calculate library,
 [SEARCH](/js/calculate/supported-formulas/text-formulas#search)
 
 [SEC](/js/calculate/supported-formulas/math-trigonometry#sec)
+
+[SECH](/js/calculate/supported-formulas/math-trigonometry#sech)
 
 [SECOND](/js/calculate/supported-formulas/date-time#second)
 
