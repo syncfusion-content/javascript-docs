@@ -11,7 +11,7 @@ api: /api/js/ejsplitter
 
 ### Change Expand/Collapse icons
 
-By default, you are provided with collpase/expand icons in **Split bar** to collapse or expand the splitter panes. We have provided template support to replace existing expand/collapse icons.
+By default, you are provided with collapse/expand icons in **Split bar** to collapse or expand the splitter panes. We have provided template support to replace existing expand/collapse icons.
 
 * **expanderTemplate** Specifies HTML element string to replace template with existing expand/collapse icons. 
 
@@ -19,8 +19,8 @@ By default, you are provided with collpase/expand icons in **Split bar** to coll
 
 {% highlight html %}
 
-<div id="outterSpliter">
-    <div id="innerSpliter">
+<div id="outterSplitter">
+    <div id="innerSplitter">
         <div>
             <div class="cont">Pane 1 </div>
         </div>
@@ -34,7 +34,7 @@ By default, you are provided with collpase/expand icons in **Split bar** to coll
 
 {% highlight js %}
 
-        $("#innerSpliter").ejSplitter({
+        $("#innerSplitter").ejSplitter({
              height: 250,width:"80%",
              expanderTemplate: '<img class="eimg" src="basketball.png" alt="employee"/>',
 			 clickOnExpander: function(args)
@@ -52,18 +52,10 @@ By default, you are provided with collpase/expand icons in **Split bar** to coll
             padding: 10px 0 0 10px;
             text-align: center;
         }   
-         .eimg {
+        .eimg {
             height:40px;
             width:35px;
 			margin-left: -13px;
-        }  
-
-		.ediv {
-           height: 30px;
-			width: 45px;
-			background-color: darkblue;
-			margin-top: -130px;
-			margin-left: -20px;
         }  
        .e-splitter .e-splitbar .e-splitter-h-template {
             top: 15%;
@@ -71,6 +63,6 @@ By default, you are provided with collpase/expand icons in **Split bar** to coll
 
 {% endhighlight %}
 
-The output for Splitter with **Tempalet support**.
+The output for Splitter with **Template support**.
 
 ![](/js/Splitter/How-To_images/Template_Support_img.png) 
