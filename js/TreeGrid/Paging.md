@@ -25,18 +25,18 @@ $("#TreeGridContainer").ejTreeGrid({
 });
 {% endhighlight %}
 
-The output of the TreeGrid with paging enabled is displayed below
+The output of the TreeGrid with paging enabled is displayed below.
 
 ![](/js/TreeGrid/Paging_images/Paging_img1.png)
 
 ## Paging settings
 
-The paging in TreeGrid can be customized by using `pageSettings` property.
+The paging in TreeGrid can be customized by using the `pageSettings` property.
 The number of records to be displayed per page can be limited by using the `pageSettings.pageSize` property. 
-The number of root nodes or the 0th level records to be displayed per page can be limited by setting the `pageSettings.pageSizeMode` property as `Root`. When pageSettings.pageSizeMode property is set as `Root` the number of records to displayed per page which is defined in the `pageSettings.pageSize` property will be considered only for the root nodes or the 0th level records.
-`pageSettings.pageCount` property is used to display the page number to be displayed in the pager.
-`pageSettings.currentPage` property is used to set the active page to displayed initially.
-`pageSettings.totalRecordsCount` property is used to limit the total number of records from the data source to be displayed in TreeGrid.
+The number of root nodes or the 0th level records to be displayed per page can be limited by setting the `pageSettings.pageSizeMode` property as `Root`. When the `pageSettings.pageSizeMode` property is set as `Root` the number of records to displayed per page which is defined in the The `pageSettings.pageSize` property will be considered only for the root nodes or the 0th level records.
+The `pageSettings.pageCount` property is used to display the page number to be displayed in the pager.
+The `pageSettings.currentPage` property is used to set the active page to displayed initially.
+The `pageSettings.totalRecordsCount` property is used to limit the total number of records from the data source to be displayed in TreeGrid.
  The following code example explains the properties in pageSettings. 
 
 {% highlight js %}
@@ -126,7 +126,7 @@ $("#currentPage").keydown(function(e) {
 
 {% endhighlight %}
 
-You can also find the demo for TreeGrid with pager template [here](http://js.syncfusion.com/demos/web/#!/bootstrap/treegrid/paging/pagertemplate)
+You can also find the demo for TreeGrid with pager template [here](http://js.syncfusion.com/demos/web/#!/bootstrap/treegrid/paging/pagertemplate).
 
 The below image displays TreeGrid with paging template.
 ![](/js/TreeGrid/Paging_images/Paging_img2.png)
