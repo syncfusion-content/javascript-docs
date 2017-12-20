@@ -71,6 +71,6 @@ By default, you are provided with collpase/expand icons in **Split bar** to coll
 
 {% endhighlight %}
 
-The output for Splitter with **Tempalet support**.
+The output for Splitter with **Template support**.
 
 ![](/js/Splitter/How-To_images/Template_Support_img.png) 
