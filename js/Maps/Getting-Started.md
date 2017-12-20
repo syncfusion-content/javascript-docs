@@ -257,6 +257,82 @@ The **JSON** object “populationData” is used as dataSource in the following 
 
 {% endhighlight %}
 
+## Map Dimensions
+
+The width and height of the map can be customized by setting the value directly to the container of the map.
+You can also specify the map dimensions in percentage. 
+
+N> you can also set the width and height by using CSS style.
+
+To set width and height directly to the container of the map
+
+{% highlight html %}
+
+   <div id="map" style="width:820px; height:400px;"></div>
+
+{% endhighlight %}
+
+To set width and height in percentage
+
+{% highlight html %}
+                      
+   <div id="map" style="width:100%; height:100%;"></div>
+
+{% endhighlight %}
+
+To set width and height in CSS Style
+
+{% highlight html %}
+
+  <style>
+     div#map {
+        height: 400px;
+        width: 820px;
+    }
+  </style>
+  <div id="map"></div>
+
+{% endhighlight %}
+
+The following code example illustrates setting the map in the given width and height,
+
+{% highlight html %}
+
+
+   <div id="map" style="width:820px;height:400px"></div>
+
+    <script>
+
+        jQuery(function ($) {
+            $("#map").ejMap({
+                layers: [
+                {
+                    shapeData: world_map,
+                    enableMouseHover: true,
+                    labelSettings: {
+                        showLabels: true,
+                        labelPath: 'admin',
+                    },
+                    shapeSettings: {
+                        fill: "lightgreen",
+                        stroke: "red",
+                        highlightColor: "#63B7B7",
+                    },
+                }]
+            });
+        });
+
+    </script>    
+    
+{% endhighlight %}
+
+![](/js/Maps/Getting-Started_images/Getting-Started_img7.png)
+
+In the above screenshot, you can see some space in the map, because it is not stretched to use the entire width.
+If you stretch the map as per width, projection of shapes will not be proper, and also you cannot get proper latitude and longitude.
+So, the map is not stretched. You can avoid this by setting the height and width equally(i.e. space appears due to unequal width and height).
+
+
 ## Customize Map Appearance 
 
 You can customize the shape’s color by using [`fill`](../api/ejmap#members:layers-shapesettings-fill), [`stroke`](../api/ejmap#members:layers-shapesettings-stroke) and [`strokeThickness`](../api/ejmap#members:layers-shapesettings-strokethickness) properties in [`shapeSettings`](../api/ejmap#members:layers-shapesettings).
