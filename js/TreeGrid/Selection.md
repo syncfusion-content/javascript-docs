@@ -14,8 +14,8 @@ The TreeGrid control provides support for row and cell selections. 
 
 ## Row selection
 
-You can enable or disable the row selection in TreeGrid, using `allowSelection` property. By default row selection is enabled in TreeGrid.
-The following code example shows you to disable the row selection in TreeGrid.
+You can enable or disable the row selection in TreeGrid, using the `allowSelection` property. By default row selection is enabled in TreeGrid.
+The following code example shows, how to disable the row selection in TreeGrid.
 
 
 {% highlight js %}
@@ -49,7 +49,7 @@ Find the following code for selecting a row at initial load.
 
 ### Multiple row selection
 
-It is also possible to select multiple rows by setting `selectionSettings.selectionType` as `multiple`. You can select more than one row by holding down `CTRL` key and to click on the rows. 
+It is also possible to select multiple rows by setting the `selectionSettings.selectionType` as `multiple`. You can select more than one row by holding down `CTRL` key and to click on the rows. 
 The following code example explains how to enable multiple selection in TreeGrid.
 
 {% highlight js %}
@@ -67,12 +67,12 @@ The output of the TreeGrid with multiple row selection is as follows.
 
 ![](/js/TreeGrid/Selection_images/Selection_img2.png)
 
-To enable multiple selection, you can set `selectionSettings.selectionType` property either as `multiple` or enumeration value `ej.TreeGrid.SelectionType.Multiple`.
+To enable multiple selection, you can set the `selectionSettings.selectionType` property either as `multiple` or enumeration value `ej.TreeGrid.SelectionType.Multiple`.
 
 ### Selecting a row programmatically 
 
-You can select a row programmatically by setting the row index value to `selectedRowIndex` property. 
-The following code shows on how to select a row programmatically with button click action,
+You can select a row programmatically by setting the row index value to the `selectedRowIndex` property. 
+The following code shows on how to select a row programmatically with button click action.
 
 {% highlight html %}
 
@@ -98,7 +98,7 @@ The following code shows on how to select a row programmatically with button cli
 
 ## Cell selection
 
-You can select cells in TreeGrid by setting `selectionSettings.selectionMode` property as `cell`.
+You can select cells in TreeGrid by setting the `selectionSettings.selectionMode` property as `cell`.
 Find the code example below to enable the cell selection in TreeGrid.
 
 {% highlight js %}
@@ -119,7 +119,7 @@ The output of the TreeGrid with cell selection is as follows.
 
 ### Multiple cell selection
 
-You can also select multiple cell by setting `selectionSettings.selectionType` property as `multiple`. 
+You can also select multiple cell by setting the `selectionSettings.selectionType` property as `multiple`. 
 Multiple selection can be done by holding the `CTRL` key and to click the required cells. 
 The following code example shows you to select multiple cells.
 
@@ -141,7 +141,7 @@ The output of the TreeGrid with multiple cell selection is as follows.
 
 ### Selecting cells programmatically 
 
-You can select the cells programmatically using `selectCells` public method. Find the code example below for selecting TreeGrid cells programmatically
+You can select the cells programmatically using the `selectCells` public method. Find the code example below for selecting TreeGrid cells programmatically.
 
 
 {% highlight html %}
@@ -172,11 +172,11 @@ You can select the cells programmatically using `selectCells` public method. Fin
 
 ## Checkbox selection
 
-TreeGrid supports checkbox selection and to enable the checkbox selection, you need to set `selectionSettings.selectionType` property to `checkbox` and `selectionSettings.selectionMode` property as `row`. By default, checkbox column will be displayed as the left most column, on enabling the checkbox selection in TreeGrid.
+TreeGrid supports checkbox selection and to enable the checkbox selection, you need to set the `selectionSettings.selectionType` property to `checkbox` and the `selectionSettings.selectionMode` property as `row`. By default, checkbox column will be displayed as the left most column, on enabling the checkbox selection in TreeGrid.
 
 ### Column header checkbox
 
-It is possible to select/unselect all the TreeGrid rows using column header checkbox. To enable this you need to set, `selectionSettings.enableSelectAll` property as `true`. The following code snippet explains how to enable the column header checkbox,
+It is possible to select/unselect all the TreeGrid rows using column header checkbox. To enable this you need to set the `selectionSettings.enableSelectAll` property as `true`. The following code snippet explains how to enable the column header checkbox.
 
 {% highlight js %}
         $("#TreeGridContainer").ejTreeGrid ({
@@ -188,7 +188,7 @@ It is possible to select/unselect all the TreeGrid rows using column header chec
            });
 {% endhighlight %}
 
-The output of the TreeGrid with checkbox enabled in column header
+The output of the TreeGrid with checkbox enabled in column header.
 
 ![](/js/TreeGrid/Selection_images/Selection_img5.png)
 
@@ -208,7 +208,7 @@ Following code snippet explains on enabling hierarchy selection in TreeGrid.
            });
 {% endhighlight %}
 
-The output of the TreeGrid with hierarchy selection enabled
+The output of the TreeGrid with hierarchy selection enabled.
 
 ![](/js/TreeGrid/Selection_images/Selection_img6.png)
 
@@ -238,7 +238,7 @@ The output of the TreeGrid with checkbox enabled in task name column.
 
 ## MultiSelection – Touch Option
 
-It is possible to select cells using touch action in TreeGrid. TreeGrid provides support for both single selection and multiple cell selection using touch action. For multiple cell selection, when we tap on a cell, a helper icon will be displayed using which we can select multiple cells.
+It is possible to select cells using touch action in TreeGrid. TreeGrid provides support for both single selection and multiple cell selection using touch action. For multiple cell selection, when we tap on a cell a helper icon will be displayed using that we can select multiple cells.
 
 The following code example describes how to enable multiple selection in TreeGrid.
 
