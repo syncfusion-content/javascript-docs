@@ -10,7 +10,7 @@ api: /api/js/ejtreegrid
 
 # Sorting
 
-The TreeGrid control for JavaScript has built-in support for Sorting one or more columns.
+The TreeGrid control for JavaScript has in-built support for Sorting one or more columns.
 
 ### Sorting Columns
 
@@ -27,7 +27,7 @@ TreeGrid allows the items to be sorted in ascending or descending order based o
 
 ### Multicolumn sorting
 
-TreeGrid allows you to sort multiple columns by clicking the desired column headers while holding the `Ctrl` key. The following code example shows you how to enable **Multicolumn sorting** in TreeGrid control.
+TreeGrid allows you to sort multiple columns by clicking the desired column headers while holding the `Ctrl` key. The following code example shows you how to enable **Multicolumn sorting** in the TreeGrid control.
 
 {% highlight js %}
 

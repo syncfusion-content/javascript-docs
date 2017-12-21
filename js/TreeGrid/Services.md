@@ -14,7 +14,7 @@ api: /api/js/ejtreegrid
 
 ## Description
 
-The following are the types of exporting is available in TreeGrid.
+The following are the types of exporting available in the TreeGrid.
 
 * PDF Export.
 * Excel Export.
@@ -39,17 +39,17 @@ Description</td></tr>
 <td>
 TreeGridProperties</td><td>
 Object</td><td>
-It takes TreeGrid model properties that should be pass to exporting</td></tr>
+It takes TreeGrid model properties that should be pass to exporting.</td></tr>
 <tr>
 <td>
 datasource</td><td>
 object</td><td>
-It holds the data to be exported in PDF</td></tr>
+It holds the data to be exported in PDF.</td></tr>
 <tr>
 <td>
 TreeGridExportSettings</td><td>
 object</td><td>
-Returns the exporting settings like Unicode support, columns fit to width, hidden column, template, etc..</td></tr>
+Returns the exporting settings like Unicode support, columns fit to width, hidden column and template, etc..</td></tr>
 </table>
 
 Type2:
@@ -64,12 +64,12 @@ Description</td></tr>
 <td>
 TreeGridProperties</td><td>
 Object</td><td>
-It takes TreeGrid model properties that should be pass to exporting</td></tr>
+It takes TreeGrid model properties that should be pass to exporting.</td></tr>
 <tr>
 <td>
 datasource</td><td>
 object</td><td>
-It holds the data to be exported in PDF</td></tr>
+It holds the data to be exported in PDF.</td></tr>
 <tr>
 <td>
 TreeGridExportSettings</td><td>
@@ -79,7 +79,7 @@ Returns the exporting settings like Unicode support, columns fit to width, hidde
 <td>
 fileName</td><td>
 String</td><td>
-With this parameter you can set the downloaded file name. By default it is set to “Export”</td></tr>
+With this parameter you can set the downloaded file name. By default it is set to “Export”.</td></tr>
 </table>
 
 Type3:
@@ -94,12 +94,12 @@ Description</td></tr>
 <td>
 TreeGridProperties</td><td>
 Object</td><td>
-It takes TreeGrid model properties that should be pass to exporting</td></tr>
+It takes TreeGrid model properties that should be pass to exporting.</td></tr>
 <tr>
 <td>
 datasource</td><td>
 object</td><td>
-It holds the data to be exported in PDF</td></tr>
+It holds the data to be exported in PDF.</td></tr>
 <tr>
 <td>
 TreeGridExportSettings</td><td>
@@ -109,7 +109,7 @@ Returns the exporting settings like Unicode support, columns fit to width, hidde
 <td>
 fileName</td><td>
 String</td><td>
-With this parameter you can set the downloaded file name. By default it is set to “Export”</td></tr>
+With this parameter you can set the downloaded file name. By default it is set to “Export”.</td></tr>
 <tr>
 <td>
 filePath</td><td>
@@ -129,12 +129,12 @@ Description</td></tr>
 <td>
 TreeGridProperties</td><td>
 Object</td><td>
-It takes TreeGrid model properties that should be pass to exporting</td></tr>
+It takes TreeGrid model properties that should be pass to exporting.</td></tr>
 <tr>
 <td>
 datasource</td><td>
 object</td><td>
-It holds the data to be exported in PDF</td></tr>
+It holds the data to be exported in PDF.</td></tr>
 <tr>
 <td>
 TreeGridExportSettings</td><td>
@@ -161,12 +161,12 @@ Description</td></tr>
 <td>
 TreeGridProperties</td><td>
 Object</td><td>
-It takes TreeGrid model properties that should be pass to exporting</td></tr>
+It takes TreeGrid model properties that should be pass to exporting.</td></tr>
 <tr>
 <td>
 datasource</td><td>
 object</td><td>
-It holds the data to be exported in PDF</td></tr>
+It holds the data to be exported in PDF.</td></tr>
 <tr>
 <td>
 TreeGridExportSettings</td><td>
@@ -176,7 +176,7 @@ Returns the exporting settings like Unicode support, columns fit to width, hidde
 <td>
 fileName</td><td>
 String</td><td>
-With this parameter you can set the downloaded file name. By default it is set to “Export”</td></tr>
+With this parameter you can set the downloaded file name. By default it is set to “Export”.</td></tr>
 <tr>
 <td>
 exportToFile </td><td>
@@ -201,12 +201,12 @@ Description</td></tr>
 <td>
 TreeGridProperties</td><td>
 Object</td><td>
-It takes TreeGrid model properties that should be pass to exporting</td></tr>
+It takes TreeGrid model properties that should be pass to exporting.</td></tr>
 <tr>
 <td>
 datasource</td><td>
 object</td><td>
-It holds the data to be exported in PDF</td></tr>
+It holds the data to be exported in PDF.</td></tr>
 <tr>
 <td>
 TreeGridExportSettings</td><td>
@@ -216,7 +216,7 @@ Returns the exporting settings like Unicode support, columns fit to width, hidde
 <td>
 fileName</td><td>
 String</td><td>
-With this parameter you can set the downloaded file name. By default it is set to “Export”</td></tr>
+With this parameter you can set the downloaded file name. By default it is set to “Export”.</td></tr>
 <tr>
 <td>
 exportToFile </td><td>
@@ -241,12 +241,12 @@ Description</td></tr>
 <td>
 TreeGridProperties</td><td>
 Object</td><td>
-It takes TreeGrid model properties that should be pass to exporting</td></tr>
+It takes TreeGrid model properties that should be pass to exporting.</td></tr>
 <tr>
 <td>
 datasource</td><td>
 object</td><td>
-It holds the data to be exported in PDF</td></tr>
+It holds the data to be exported in PDF.</td></tr>
 <tr>
 <td>
 TreeGridExportSettings</td><td>
@@ -256,7 +256,7 @@ Returns the exporting settings like Unicode support, columns fit to width, hidde
 <td>
 fileName</td><td>
 String</td><td>
-With this parameter you can set the downloaded file name. By default it is set to “Export”</td></tr>
+With this parameter you can set the downloaded file name. By default it is set to “Export”.</td></tr>
 <tr>
 <td>
 filePath</td><td>
@@ -286,12 +286,12 @@ Description</td></tr>
 <td>
 TreeGridProperties</td><td>
 Object</td><td>
-It takes TreeGrid model properties that should be pass to exporting</td></tr>
+It takes TreeGrid model properties that should be pass to exporting.</td></tr>
 <tr>
 <td>
 datasource</td><td>
 object</td><td>
-It holds the data to be exported in PDF</td></tr>
+It holds the data to be exported in PDF.</td></tr>
 <tr>
 <td>
 TreeGridExportSettings</td><td>
@@ -326,7 +326,7 @@ Description</td></tr>
 <td>
 TreeGridProperties</td><td>
 Object</td><td>
-It takes TreeGrid model properties that should be pass to exporting</td></tr>
+It takes TreeGrid model properties that should be pass to exporting.</td></tr>
 <tr>
 <td>
 datasource</td><td>
@@ -371,12 +371,12 @@ Description</td></tr>
 <td>
 TreeGridProperties</td><td>
 Object</td><td>
-It takes TreeGrid model properties that should be pass to exporting</td></tr>
+It takes TreeGrid model properties that should be pass to exporting.</td></tr>
 <tr>
 <td>
 datasource</td><td>
 object</td><td>
-It holds the data to be exported in PDF</td></tr>
+It holds the data to be exported in PDF.</td></tr>
 <tr>
 <td>
 TreeGridExportSettings</td><td>
@@ -487,22 +487,22 @@ Description</td></tr>
 <td>
 TreeGridProperties</td><td>
 Object</td><td>
-It takes TreeGrid model properties that should be pass to exporting</td></tr>
+It takes TreeGrid model properties that should be pass to exporting.</td></tr>
 <tr>
 <td>
 datasource</td><td>
 object</td><td>
-It holds the data to be exported in PDF</td></tr>
+It holds the data to be exported in PDF.</td></tr>
 <tr>
 <td>
 excelName</td><td>
 String</td><td>
-It specifies the file extension to be downloaded</td></tr>
+It specifies the file extension to be downloaded.</td></tr>
 <tr>
 <td>
 excelVersion</td><td>
 String</td><td>
-Excel version in which document should download</td></tr>
+Excel version in which document should download.</td></tr>
 <tr>
 <td>
 TreeGridExportSettings</td><td>
@@ -522,22 +522,22 @@ Description</td></tr>
 <td>
 TreeGridProperties</td><td>
 Object</td><td>
-It takes TreeGrid model properties that should be pass to exporting</td></tr>
+It takes TreeGrid model properties that should be pass to exporting.</td></tr>
 <tr>
 <td>
 datasource</td><td>
 object</td><td>
-It holds the data to be exported in PDF</td></tr>
+It holds the data to be exported in PDF.</td></tr>
 <tr>
 <td>
 excelName</td><td>
 String</td><td>
-It specifies the file extension to be downloaded</td></tr>
+It specifies the file extension to be downloaded.</td></tr>
 <tr>
 <td>
 excelVersion</td><td>
 String</td><td>
-Excel version in which document should download</td></tr>
+Excel version in which document should download.</td></tr>
 <tr>
 <td>
 TreeGridExportSettings</td><td>
@@ -547,7 +547,7 @@ Returns the exporting settings like Unicode support, columns fit to width, hidde
 <td>
 fileName</td><td>
 String</td><td>
-With this parameter you can set the downloaded file name. By default it is set to “ExcelExport”</td></tr>
+With this parameter you can set the downloaded file name. By default it is set to “ExcelExport”.</td></tr>
 </table>
 
 Type3:
@@ -562,22 +562,22 @@ Description</td></tr>
 <td>
 TreeGridProperties</td><td>
 Object</td><td>
-It takes TreeGrid model properties that should be pass to exporting</td></tr>
+It takes TreeGrid model properties that should be pass to exporting.</td></tr>
 <tr>
 <td>
 datasource</td><td>
 object</td><td>
-It holds the data to be exported in PDF</td></tr>
+It holds the data to be exported in PDF.</td></tr>
 <tr>
 <td>
 excelName</td><td>
 String</td><td>
-It specifies the file extension to be downloaded</td></tr>
+It specifies the file extension to be downloaded.</td></tr>
 <tr>
 <td>
 excelVersion</td><td>
 String</td><td>
-Excel version in which document should download</td></tr>
+Excel version in which document should download.</td></tr>
 <tr>
 <td>
 TreeGridExportSettings</td><td>

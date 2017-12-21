@@ -9,11 +9,11 @@ api: /api/js/ejtreegrid
 ---
 # Stacked Headers
 
-The stacked headers helps you to group the logical columns in treegrid. It can be shown by setting [`showStackedHeader`](https://help.syncfusion.com/api/js/ejtreegrid#members:showstackedheader "showStackedHeader") as `true` and by defining [`stackedHeaderRows`](https://help.syncfusion.com/api/js/ejtreegrid#members:stackedheaderrows "stackedHeaderRows").
+The stacked headers helps you to group the logical columns in TreeGrid. It can be shown by setting the [`showStackedHeader`](https://help.syncfusion.com/api/js/ejtreegrid#members:showstackedheader "showStackedHeader") as `true` and by defining the [`stackedHeaderRows`](https://help.syncfusion.com/api/js/ejtreegrid#members:stackedheaderrows "stackedHeaderRows").
 
 ## Adding Stacked header columns
 
-To stack columns in stacked header, you need to define [`column`](https://help.syncfusion.com/api/js/ejtreegrid#members:stackedheaderrows-stackedheadercolumns-column "column") property in [`stackedHeaderColumns`](https://help.syncfusion.com/api/js/ejtreegrid#members:stackedheaderrows-stackedheadercolumns "stackedHeaderColumns") with field names of visible columns.
+To stack columns in stacked header, you need to define the [`column`](https://help.syncfusion.com/api/js/ejtreegrid#members:stackedheaderrows-stackedheadercolumns-column "column") property in [`stackedHeaderColumns`](https://help.syncfusion.com/api/js/ejtreegrid#members:stackedheaderrows-stackedheadercolumns "stackedHeaderColumns") with field names of visible columns.
 
 {% highlight html %}
 
@@ -49,11 +49,11 @@ $("#treeGrid").ejTreeGrid({
 
 ## Stacked header column customization
 
-we can customize the stacked header cells with more options as described below.
+The stacked header cells can be customized with more options as described below.
 
 ### CSS Class
 
-You can provide external CSS styles to the stacked header with the help of cssClass property.
+You can provide external CSS styles to the stacked header with the help of the cssClass property.
 
 {% highlight html %}
 
@@ -89,7 +89,7 @@ $("#treeGrid").ejTreeGrid({
 
 ### Text Align
 
-There is an option to align the stacked header text inside the header cell using `textAlign` property as follows.
+There is an option to align the stacked header text inside the header cell using the `textAlign` property as follows.
 
 {% highlight html %}
 <div id="treeGrid"></div> 
@@ -119,7 +119,7 @@ $("#treeGrid").ejTreeGrid({
 
 ### Tooltip
 
-We can have the customized tooltip for the stacked header text with the help of `tooltip` property. JsRender template script id can be assigned to this property to get tooltip.
+We can have the customized tooltip for the stacked header text with the help of the `tooltip` property. The JsRender template script id can be assigned to this property to get tooltip.
 
 {% highlight html %}
 
@@ -152,6 +152,6 @@ $("#treeGrid").ejTreeGrid({
 ![](Stacked-header_images/Stacked-Header-img3.png)
 
 N>
-To enable stacked header tooltip we need to set `showGridCellTooltip` as `true`.
+To enable stacked header tooltip we need to set the `showGridCellTooltip` as `true`.
 
 [Click](http://js.syncfusion.com/demos/web/#!/bootstrap/treegrid/columns/stackedheader) here to view the demo sample for stacked header.
