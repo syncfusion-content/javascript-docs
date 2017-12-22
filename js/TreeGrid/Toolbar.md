@@ -9,30 +9,30 @@ api: /api/js/ejtreegrid
 ---
 # Toolbar
 
-In TreeGrid we can show/hide the Toolbar by using [`toolbarSettings.showToolbar`](https://help.syncfusion.com/api/js/ejtreegrid#members:toolbarsettings-showtoolbar "showToolbar") property.We can add default toolbar items by [`toolbarSettings.toolbarItems`](https://help.syncfusion.com/api/js/ejtreegrid#members:toolbarsettings-toolbaritems "toolbarItems"). User can also create a custom toolbar items by using [`toolbarSettings.customToolbarItems`](https://help.syncfusion.com/api/js/ejtreegrid#members:toolbarsettings-customToolbarItems "customToolbarItems").
+In TreeGrid we can show/hide the Toolbar by using the [`toolbarSettings.showToolbar`](https://help.syncfusion.com/api/js/ejtreegrid#members:toolbarsettings-showtoolbar "showToolbar") property. We can add default toolbar items by [`toolbarSettings.toolbarItems`](https://help.syncfusion.com/api/js/ejtreegrid#members:toolbarsettings-toolbaritems "toolbarItems"). User can also create a custom toolbar items by using the [`toolbarSettings.customToolbarItems`](https://help.syncfusion.com/api/js/ejtreegrid#members:toolbarsettings-customToolbarItems "customToolbarItems").
 
 ## Default Toolbar Items
 Using TreeGrid default toolbar items we can perform below operations.
 
-* **Add**- To add new task.
+* **Add**: To add new task.
 
-* **Edit**-To edit a selected task.
+* **Edit**:To edit a selected task.
 
-* **Delete**- To delete a selected task.
+* **Delete**: To delete a selected task.
 		   
-* **Cancel**- To cancel the edited changes in a task.
+* **Cancel**: To cancel the edited changes in a task.
 		   
-* **Update**- To save the edited changes in a task.
+* **Update**: To save the edited changes in a task.
 		   
-* **ExpandAll**- To expand all the TreeGrid rows.
+* **ExpandAll**: To expand all the TreeGrid rows.
 		   
-* **CollapseAll**- To collapse all the TreeGrid rows.
+* **CollapseAll**: To collapse all the TreeGrid rows.
 		   
-* **PdfExport**- To export TreeGrid in PDF format.
+* **PdfExport**: To export TreeGrid in PDF format.
 		   
-* **ExcelExport**- To export TreeGrid in Excel format.
+* **ExcelExport**: To export TreeGrid in Excel format.
 
-* **Search**- To search the TreeGrid content.
+* **Search**: To search the TreeGrid content.
 
 We can enable TreeGrid toolbar by using below code example:
 {% highlight js %}
@@ -60,19 +60,19 @@ The following screenshot displays the toolbar option in TreeGrid control.
 
 ![](/js/TreeGrid/Toolbar_images/Toolbar_img1.png)
 
-N> To perform add,edit,delete,cancel,update using Toolbar items we need to enable add/edit/delete using [`editSettings`](https://help.syncfusion.com/api/js/ejtreegrid#members:editsettings "editSettings").
+N> To perform add, edit, delete, cancel and update using Toolbar items we need to enable add/edit/delete using the [`editSettings`](https://help.syncfusion.com/api/js/ejtreegrid#members:editsettings "editSettings").
   
 ## Custom Toolbar Items
 
 CustomToolbarItems allows us to insert custom icons and custom template in TreeGrid toolbar. By using below properties we can customize TreeGrid toolbar as per our requirement.
 
-* **text**- To insert the custom icons in toolbar using CSS class name selector.
+* **text**: To insert the custom icons in toolbar using CSS class name selector.
 
-* **templateID**-To insert the custom icons in toolbar using script templates. Using this property we can bind HTML elements and other EJ controls to TreeGrid toolbar.
+* **templateID**: To insert the custom icons in toolbar using script templates. Using this property we can bind HTML elements and other EJ controls to TreeGrid toolbar.
 
-* **tooltipText**-Displays tooltip text for the custom icons.
+* **tooltipText**: Displays tooltip text for the custom icons.
 
-To insert EJ Controls in TreeGrid toolbar we need to initiate the control in [`create`](https://help.syncfusion.com/api/js/ejtreegrid#events:create "create") client side event.In [`toolbarClick`](https://help.syncfusion.com/api/js/ejtreegrid#events:toolbarclick "toolbarclick") client side event we can bind actions to the custom toolbar items.
+To insert EJ Controls in TreeGrid toolbar we need to initiate the control in [`create`](https://help.syncfusion.com/api/js/ejtreegrid#events:create "create") client-side event. In [`toolbarClick`](https://help.syncfusion.com/api/js/ejtreegrid#events:toolbarclick "toolbarclick") client-side event we can bind actions to the custom toolbar items.
 
 {% highlight html %}
     <div id="TreeGridContainer" style="height:400px;width:100%"></div>           

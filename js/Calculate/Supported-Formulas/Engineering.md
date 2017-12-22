@@ -11,6 +11,166 @@ documentation: ug
 
 
 
+## BESSELI
+
+
+
+The `BESSELI` function returns the modified Bessel function `In(X)`, which is equivalent to the Bessel function evaluated for purely imaginary arguments.
+
+
+
+**Syntax:**
+
+
+
+_BESSELI(X, N)_
+
+
+
+**where:**
+
+
+
+* X is the value at which the function is to be evaluated.
+
+
+
+* N is the positive integer, representing the order of the function. If the N value is represented as decimal, it is truncated as integer.
+
+
+
+**Remarks:**
+
+
+
+* Returns `#NUM!` , if the supplied value of n is lesser than 0.
+
+
+
+* If any of the supplied arguments are non-numeric, it returns `#VALUE!` error.
+
+
+
+## BESSELJ
+
+
+
+The `BESSELJ` function returns the Bessel function `Jn(X)`.
+ 
+
+
+**Syntax:**
+
+
+
+_BESSELJ( X, N )_
+
+
+
+**where:**
+
+
+
+* X is the value at which the function is to be evaluated.
+
+
+
+* N is the order of the Bessel function and it must be a positive number.
+
+
+
+**Remarks:**
+
+
+
+* Returns `#NUM!` if the supplied value of n is lesser than 0.
+
+
+
+* If any of the supplied arguments are non-numeric, it returns `#VALUE!` error.
+
+
+
+## BESSELK
+
+
+
+The `BESSELK` function returns the modified Bessel function `Kn(X)`, which is equivalent to the Bessel function evaluated for purely imaginary arguments.
+
+
+
+**Syntax:**
+
+
+
+_BESSELK( X, N )_
+
+
+
+**where:**
+
+
+
+* X is the value at which the function is to be evaluated.
+
+
+
+* N is the positive integer which denotes the order of the modified Bessel function.
+
+
+
+**Remarks:**
+
+
+
+* Returns `#NUM!`, if either N is Lesser than 0 or X is lesser than or equal to 0.
+
+
+
+* Returns `#VALUE!`, if any of the supplied argument are non-numeric.
+
+
+
+## BESSELY
+
+
+
+The `BESSELY` function returns the Bessel function `Yn(X)`. 
+
+
+
+**Syntax:**
+
+
+
+_BESSELY( X, N )_
+
+
+
+**where:**
+
+
+
+* X is the value at which the function is to be evaluated.
+
+
+
+* N is the positive integer which denotes the order of the Bessel function.
+
+
+
+**Remarks:**
+
+
+
+* Returns `#NUM!`, if either N is Lesser than 0 or X is lesser than or equal to 0.
+
+
+
+* Returns `#VALUE!`, if any of the supplied argument are non-numeric.
+
+
+
 ## BIN2OCT
 
 

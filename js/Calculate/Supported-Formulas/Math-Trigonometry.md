@@ -223,6 +223,32 @@ _ASIN(number)_
 
 
 
+## ASINH
+
+
+
+
+The `ASINH` function returns the inverse hyperbolic sine of a number. 
+
+
+
+
+**Syntax:**
+
+
+
+_ASINH(number)_
+
+
+
+**where:**
+
+
+
+* number is any real number which is to be converted.
+ 
+
+
 ## ATAN
 
 
@@ -284,6 +310,82 @@ _ATAN2(x_num,y_num)_
 
 
 * `ATAN2(a,b)` equals `ATAN(b/a)` , except that a can equal 0 in ATAN2.
+
+
+
+## ATANH
+
+
+
+The `ATANH` function returns the inverse hyperbolic tangent of a number.
+
+
+
+**Syntax:**
+
+
+
+_ATANH(number)_
+
+
+
+**where:**
+
+
+
+* number is any real number that must be greater than or equal to -1 and lesser than or equal to 1.
+
+
+
+## BASE
+
+
+
+The `BASE` function converts a number into a text representation with the given radix (base).
+
+
+
+**Syntax:**
+
+
+
+_BASE(number, radix, [min_length])_
+
+
+
+**where:**
+
+
+
+* number is the real number which is to be converted. It must be greater than or equal to 0 and lesser than or equal to 2^53.
+
+
+
+* radix is the base radix which is to convert a number into base. The value of radix must be greater than or equal to 2 and lesser than or equal to 36.
+
+
+
+* min_length is the minimum length of the returned string. It is optional and must be greater than or equal to 0.
+
+
+
+**Remarks:**
+
+
+
+* If number, radix, or min_length are outside the minimum or maximum constraints, BASE returns the `#NUM!` error value.
+
+
+
+* If number is a non-numeric value, BASE returns the `#VALUE!` error value.
+
+
+
+* If any non-integer number entered as an argument, it is truncated to an integer.
+
+
+
+* The maximum value of min_length is 255.
 
 
 
@@ -965,6 +1067,202 @@ _MMULT(array1, array2)_
 
 
   * The number of columns in array1 is different from the number of rows in array2.
+
+
+
+## MOD
+
+
+
+The `MOD` function returns the reminder from the division. The result always has the same sign as the divisor.
+
+
+
+**Syntax:**
+
+
+
+_MOD(number, divisor)_
+
+
+
+**where:**
+
+
+
+* number is an integer to be divided.
+
+
+
+* divisor is an integer by which to divide.
+
+
+
+**Remarks:**
+
+
+
+* Returns `#DIV!` error when the divisor is zero.
+
+
+
+* The `MOD` function will returns the whole number.
+
+
+
+## ODD
+
+
+
+The `ODD` function returns the number rounded up to the nearest odd integer.
+
+
+
+**Syntax:**
+
+
+
+_ODD(number)_
+
+
+
+**where:**
+
+
+
+* number is a value to be rounded.
+
+
+
+**Remarks:**
+
+
+
+* If the number is non-numeric, it returns the `#VALUE!` error.
+
+
+
+* Regardless of the sign of number, a value is rounded up when adjusted away from zero. If number is an odd integer, no rounding occurs.
+
+
+
+## POWER
+
+
+
+The `POWER` function returns the result of a number raised to power.
+
+
+
+**Syntax:**
+
+
+
+_POWER(number, power)_
+
+
+
+**where:**
+
+
+
+* number is the base number. It can be any real number.
+
+
+
+* power is the exponent to which the base number is raised.
+
+
+
+## RADIANS
+
+
+
+The `RADIANS` function converts the degrees into radians.
+
+
+
+**Syntax:**
+
+
+
+_RADIANS(angle)_
+
+
+
+**where:**
+
+
+
+* angle is an angle in degree which is to be converted into radian.
+
+
+
+## RAND
+
+
+
+The `RAND` function returns an evenly distributed random real number that should be greater than or equal to  0 and lesser than or equal to 1.
+
+
+
+**Syntax:**
+
+
+
+_RAND()_
+
+
+
+**Remarks:**
+
+
+
+* To generate a random real number between a and b, use the following syntax
+ 
+
+
+_RAND()*(b-a)+a_
+
+
+
+## SECH
+
+
+
+The `SECH` function returns the hyperbolic secant of an angle.
+
+
+
+**Syntax:**
+
+
+
+_SECH(number)_
+
+
+
+**where:**
+
+
+
+* number is the angle in radians to calculate the hyperbolic secant.
+
+
+
+**Remarks:**
+
+
+
+* The absolute value of number must be less than 2^27.
+
+
+
+* If number is outside of its constraints, SECH returns the #NUM! error value.
+
+
+
+* If number is a non-numeric value, SECH returns the #VALUE! error values.
 
 
 
