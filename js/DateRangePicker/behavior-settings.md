@@ -48,8 +48,33 @@ DateRangePicker value can be selected through picking two date values from avail
         
 {% endhighlight %}
 
+## Date Range
 
-##### Separator
+DateRangePicker provides an option to restrict the user to pick the date from specified range of value. You can utilize this option by make use of [minDate](https://help.syncfusion.com/api/js/ejdaterangepicker#members:mindate) and [maxDate](https://help.syncfusion.com/api/js/ejdaterangepicker#members:maxdate) property.
+
+**minDate** - specifies the minimum date to be picked in DateRangePicker calendar by disabling below date of minDate.
+
+**maxDate** -  specifies the maximum date to be picked in DateRangePicker calendar by disabling above date of maxDate. 
+
+{% highlight javascript %}
+     
+	   $(function () {
+ 
+            $("#dateRangePicker").ejDateRangePicker({
+
+                minDate: new Date("06/03/2017"), // sets min date to be pick able in DateRangePicker calendar
+
+                maxDate: new Date("07/23/2017") // sets max date to be pick able in DateRangePicker calendar
+
+            });
+
+        });      
+
+{% endhighlight %}
+
+![](minmax_images\minmax_img.png)
+
+#### Separator
 
 The value of the DateRangePicker popup will presented with two date strings which is separated by **separator** (e.g. “"11/1/2016 - 11/2/2017"”). Separator will be “- “by default and this can be changed using API called **separator**. Please check with below code example to setting/changing the separator using **separator** API.
 
