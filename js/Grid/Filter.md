@@ -386,7 +386,7 @@ N> For [`filterBarMode`](https://help.syncfusion.com/api/js/ejgrid#members:filte
 
 Filter bar message:
 
-The filter bar message is supported only for the [`filterType`](https://help.syncfusion.com/api/js/ejgrid#members:filtersettings-filtertype "filterType") as filterbar. The filtered data with column name is displayed in the grid pager itself. By default [`showFilterBarMessage`](https://help.syncfusion.com/api/js/ejgrid#members:filtersettings-showfilterbarmessage "showFilterBarMessage") is true.
+The filter bar message is supported only for the [`filterType`](https://help.syncfusion.com/api/js/ejgrid#members:filtersettings-filtertype "filterType") as filterbar. The filtered data with column name is displayed in the grid pager itself. By default [`showFilterBarStatus`](https://help.syncfusion.com/api/js/ejgrid#members:filtersettings-showFilterBarStatus "showFilterBarStatus") is true.
 
 The following code example describes the above behavior.
 
@@ -401,7 +401,7 @@ $(function () {
 		dataSource : window.gridData,
 		allowPaging : true,
 		allowFiltering : true,
-		filterSettings : { showFilterBarMessage : true },
+		filterSettings : { showFilterBarStatus : true },
 		columns : ["OrderID", "EmployeeID", "CustomerID", "ShipCountry", "Freight"]
 	});
 });
