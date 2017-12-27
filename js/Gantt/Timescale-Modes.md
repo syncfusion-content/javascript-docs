@@ -22,7 +22,8 @@ Gantt contains the following in-built schedule header types.
 * Month – Week
 * Year – Month
 
-The following code example illustrates you on how to change the schedule mode.
+Time scale mode in Gantt can be defined by using [scheduleHeaderType](/api/js/ejgantt#members:scheduleheadersettings-scheduleheadertype) property and 
+the following code example illustrates you on how to change the schedule mode.
 
 ### Week schedule mode
 
@@ -138,7 +139,7 @@ An Hour-Minute Schedule Mode tracks the tasks in minutes scale. In this mode, up
 * fifteenMinutes
 * thirtyMinutes
 
-The value `auto` automatically calculates the interval depending upon the `scheduleStartDate` and `scheduleEndDate`, whereas the other enumeration values splits up accordingly.
+The value `auto` automatically calculates the interval depending upon the [scheduleStartDate](/api/js/ejgantt#members:schedulestartdate) and [scheduleEndDate](/api/js/ejgantt#members:scheduleenddate), whereas the other enumeration values splits up accordingly.
 
 The Hour Schedule Mode supports both the `minute` and `hour` duration units.
 
@@ -169,7 +170,7 @@ $("#GanttContainer").ejGantt({
 ## Week start day customization
 
 In Gantt, we can customize week start day by using [weekStartDay](/api/js/ejgantt#members:scheduleheadersettings-weekstartday) property.
-By default the weekStartDay will be assigned with 0 which specifies the start day of the week.
+By default the [weekStartDay](/api/js/ejgantt#members:scheduleheadersettings-weekstartday) will be assigned with 0 which specifies the start day of the week.
 
 In week schedule mode, week starts with Sunday by default. But we can customize the week start day by using below code example.
  

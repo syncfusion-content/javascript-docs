@@ -9,7 +9,7 @@ api: /api/js/ejgantt
 ---
 # Keyboard navigation
 
-Gantt control supports the following keyboard shortcuts for performing various actions.
+Gantt control supports the following keyboard shortcuts for performing various actions and keyboard navigation can be enabled/disabled by [allowKeyboardNavigation](/api/js/ejgantt#members:allowkeyboardnavigation) property
 
 **Alt** **+** **j** **:** To focus the Gantt control.
 
@@ -30,4 +30,3 @@ Gantt control supports the following keyboard shortcuts for performing various a
 **Left** **Arrow** **:** To collapse the selected parent task.
 
 **Right** **Arrow** **:** To expand the selected parent task.
-

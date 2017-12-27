@@ -14,7 +14,8 @@ The look and feel of the Gantt control can be customized by applying themes and 
 
 ## Schedule Header Customization
 
-To customize the week header format and day header format in the Schedule part of the Gantt control use the following code example.
+You can change the format of schedule headers in various timescale modes by using [dayHeaderFormat](/api/js/ejgantt#members:scheduleheadersettings-dayheaderformat "scheduleHeaderSettings.dayHeaderFormat"), [hourHeaderFormat](/api/js/ejgantt#members:scheduleheadersettings-hourheaderformat "scheduleHeaderSettings.hourHeaderFormat"), [weekHeaderFormat](/api/js/ejgantt#members:scheduleheadersettings-weekheaderformat "scheduleHeaderSettings.weekHeaderFormat"), [monthHeaderFormat](/api/js/ejgantt#members:scheduleheadersettings-monthheaderformat "scheduleHeaderSettings.monthHeaderFormat") and [yearHeaderFormat](/api/js/ejgantt#members:scheduleheadersettings-yearheaderformat "scheduleHeaderSettings.yearHeaderFormat") properties available in [scheduleHeaderSettings](/api/js/ejgantt#members:scheduleheadersettings) property.
+And you can change the background of weekends available in timescale by using [weekendBackground](/api/js/ejgantt#members:scheduleheadersettings-weekendbackground "scheduleHeaderSettings.weekendBackground") property, please refer the following code example.
 
 {% highlight javascript %}
 
@@ -23,6 +24,9 @@ To customize the week header format and day header format in the Schedule part o
         scheduleHeaderSettings: {
             weekHeaderFormat: "MMM yyyy",
             dayHeaderFormat: "d",
+            hourHeaderFormat: "HH",
+            monthHeaderFormat: "MMM",
+            yearHeaderFormat : "yyyy", 
             weekendBackground: '#F2F2F2'
         }
     });
@@ -35,7 +39,7 @@ The following screenshot shows the customized format schedule header in Gantt co
 
 ## Taskbar Customization
 
- The Taskbar can be customized based on the task information in Gantt control to highlight the task. The following code example shows how to customize the Taskbar in Gantt control.
+ The Taskbar can be customized based on the task information in Gantt control by using [queryTaskbarInfo](/api/js/ejgantt#events:querytaskbarinfo) event. The following code example shows how to customize the Taskbar in Gantt control.
 
 {% highlight javascript %}
 
