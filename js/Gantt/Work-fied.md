@@ -10,7 +10,7 @@ api: /api/js/ejgantt
 
 # Work
 
-The Work is the total labor hours necessary to complete a task. Work can be mapped from the data source field using the property [workMappin](/api/js/ejgantt#members:workmapping) and when the work value is mapped from the data source, the end date and duration of the task will be calculated automatically based on the work and resource unit values from the data source. 
+The Work is the total labor hours necessary to complete a task. Work can be mapped from the data source field using the property [workMapping](/api/js/ejgantt#members:workmapping) and when the work value is mapped from the data source, the end date and duration of the task will be calculated automatically based on the work and resource unit values from the data source. 
 The below code snippet explains mapping the work value from the data source.
 
 

@@ -19,7 +19,7 @@ Context menu in Gantt has the following default menu items.
 * Outdent
 * Delete
 
-Context menu in Gantt can be enabled by uisng [enableContextMenu](/api/js/ejgantt#members:enablecontextmenu) property.
+Context menu in Gantt can be enabled by using [enableContextMenu](/api/js/ejgantt#members:enablecontextmenu) property.
 The following code example explains how to enable the context menu in Gantt control.
 
 {% highlight javascript %}

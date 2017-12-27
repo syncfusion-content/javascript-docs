@@ -63,7 +63,7 @@ The following screenshot shows the output of `normal` editing.
 
 ## Taskbar Editing
 
-Update the task details by interactions such as resizing and dragging the taskbar. Taskabr editing can be enabled by setting [allowGanttChartEditing](/api/js/ejgantt#members:allowganttchartediting) as `true`. The following code example shows you how to enable taskbar resizing in Gantt control.
+Update the task details by interactions such as resizing and dragging the taskbar. Taskbar editing can be enabled by setting [allowGanttChartEditing](/api/js/ejgantt#members:allowganttchartediting) as `true`. The following code example shows you how to enable taskbar resizing in Gantt control.
 
 {% highlight javascript %}
 
@@ -108,9 +108,9 @@ The following screen shot shows the predecessor editing in Gantt control.
 
 ## Delete confirmation message
 
-Delete confirmation message is used to get the confirmation from the user before delete the record. This confirmation message can be enabled by setting [showDeleteConfirmDailog](/api/js/ejgantt#members:editsettings-showdeleteconfirmdialog "editSettings.showDeleteConfirmDialog") property as `true`.
+Delete confirmation message is used to get the confirmation from the user before delete the record. This confirmation message can be enabled by setting [showDeleteConfirmDialog](/api/js/ejgantt#members:editsettings-showdeleteconfirmdialog "editSettings.showDeleteConfirmDialog") property as `true`.
 
-The following code snippet explains how to enable delete confirmation message in gantt.
+The following code snippet explains how to enable delete confirmation message in Gantt.
 
 {% highlight js %}
 
@@ -128,4 +128,4 @@ $("#Gantt").ejGantt({
 
 ![](/js/Gantt/Editing_images/deleteConfirmation.png)
 
-The above screen shot shows the appearance of delete confirmation message in gantt.
+The above screen shot shows the appearance of delete confirmation message in Gantt.
