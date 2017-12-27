@@ -9,7 +9,7 @@ api: /api/js/ejgantt
 ---
 
 # Resource Allocation View
-The resource allocation view is used to visualize the resource usage in a project. Resources are displayed in separate rows and all the tasks assigned to a specific resource will be displayed in the chart side. In this view, a user can able to easily identify the overallocation of resources in a project.
+The resource allocation view is used to visualize the resource usage in a project. Resources are displayed in separate rows and all the tasks assigned to a specific resource will be displayed in the chart side. In this view, a user can able to easily identify the overallocation of resources in a project. Resource allocation view can be initialized by setting [viewType](/api/js/ejgantt#members:viewtype) property as "resourceView".
 
 ![](/js/Gantt/Resource-Allocation-View_images/ResourceView_1.png)
 
@@ -50,6 +50,8 @@ $(function () {
 </script>
 
 {% endhighlight %}
+
+N> In Hierarchical data source resource collections are identified by using [resourceCollectionMapping](/api/js/ejgantt#members:resourcecollectionmapping) and tasks are identified by using [taskCollectionMapping](/api/js/ejgantt#members:taskcollectionmapping) properties.
 
 ### Flat data binding
 The following code example explains how to bind the flat data.
@@ -92,7 +94,7 @@ $(function () {
 ![](/js/Gantt/Resource-Allocation-View_images/ResourceView_2.png)
 
 ## Grouping
-The resources and the tasks assigned to those resources can be grouped into categories. The property `groupCollection` is used to define the groups to be displayed in the project. The properties `groupIdMapping` and `groupNameMapping` are used to map the group details.
+The resources and the tasks assigned to those resources can be grouped into categories. The property [groupCollection](/api/js/ejgantt#members:groupcollection) is used to define the groups to be displayed in the project. The properties [groupIdMapping](/api/js/ejgantt#members:groupidmapping) and [groupNameMapping](/api/js/ejgantt#members:groupnamemapping) are used to map the group details.
 
 The below code snippet explains grouping of the resources in resource allocation view.
 

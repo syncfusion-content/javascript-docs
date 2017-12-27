@@ -121,7 +121,8 @@ Add a **&lt;div&gt;** element with in the &lt;Body&gt; tag.
 {% endhighlight %}
 
 
-Initialize the Gantt with data source created in the last step.
+Initialize the Gantt with data source created in the last step. To render Gantt tasks we need to set the value for [taskIdMapping](/api/js/ejgantt#members:taskidmapping), [taskNameMapping](/api/js/ejgantt#members:tasknamemapping), [startDateMapping](/api/js/ejgantt#members:startdatemapping), [endDateMapping](/api/js/ejgantt#members:enddatemapping)/[durationMapping](/api/js/ejgantt#members:durationmapping), [progressMapping](/api/js/ejgantt#members:progressmapping), [childMapping](/api/js/ejgantt#members:childmapping) properties.
+
 
 {% highlight javascript %}
 
@@ -147,7 +148,7 @@ A Gantt chart is created as shown in the following screen shot.
 
 ## Enable Toolbar
 
-Gantt control contains toolbar options to edit, search, expand or collapse all records, indent, outdent, delete, and add a task. You can enable toolbar using the [`toolbarSettings`](/api/js/ejgantt#members:toolbarsettings "toolbarSettings") property.
+Gantt control contains toolbar options to edit, search, expand or collapse all records, indent, outdent, delete and add a task. You can enable toolbar using the [`toolbarSettings`](/api/js/ejgantt#members:toolbarsettings "toolbarSettings") property.
 
 {% highlight javascript %}
 $("#GanttContainer").ejGantt({
@@ -170,11 +171,11 @@ $("#GanttContainer").ejGantt({
 
 {% endhighlight %}
 
-The following screen shot displays a Tool bar in Gantt chart control:
+The following screen shot displays a Tool bar in Gantt control:
 
 ![](/js/Gantt/Getting-Started_images/Getting-Started_img6.png)
 
-N>  Add, edit and delete options are enabled when enabling the allowEditing, allowAdding and allowDelete properties in the edit Options.
+N>  Add, edit and delete options are enabled when enabling the [allowEditing](/api/js/ejgantt#members:editsettings-allowediting "editSettings.allowEditing"), [allowAdding](/api/js/ejgantt#members:editsettings-allowadding "editSettings.allowAdding") and [allowDeleting](/api/js/ejgantt#members:editsettings-allowdeleting "editSettings.allowDeleting") properties in the edit options.
 
 ## Enable Sorting
 
@@ -182,7 +183,7 @@ The Gantt control has sorting functionality to arrange the tasks in ascending or
 
 ### Multicolumn Sorting
 
-Enable the multicolumn sorting in Gantt by setting the [`allowMultiSorting`](/api/js/ejgantt#members:allowmultisorting "allowMultiSorting") as `true`. You can sort multiple columns in Gantt, by selecting the desired column header while holding the `CTRL` key.
+You can enable the multicolumn sorting in Gantt by setting the [allowSorting](/api/js/ejgantt#members:allowsorting) and [`allowMultiSorting`](/api/js/ejgantt#members:allowmultisorting "allowMultiSorting") as `true`. You can sort multiple columns in Gantt, by selecting the desired column header while holding the <kbd>CTRL</kbd> key.
 
 {% highlight javascript %}
 
@@ -196,23 +197,23 @@ Enable the multicolumn sorting in Gantt by setting the [`allowMultiSorting`](/ap
 
 ## Enable Editing
 
-You can enable editing using the [`editSettings`](/api/js/ejgantt#members:editsettings "editSettings") and [`allowGanttChartEditing`](/api/js/ejgantt#allowganttcharteditingspan-classtype-signature-type-booleanbooleanspan "allowGanttChartEditing") options.
+You can enable editing using the [`editSettings`](/api/js/ejgantt#members:editsettings) and [`allowGanttChartEditing`](/api/js/ejgantt#members:allowganttchartediting) options.
 
 ### Cell Editing
 
-Modify the task details through the grid cell editing by setting the [`editMode`](/api/js/ejgantt#members:editsettings-editmode "editSettings.editMode") as [`cellEditing`](/api/js/ejgantt#members:editsettings-editmode "cellEditing").
+Modify the task details through the grid cell editing by setting the [editMode](/api/js/ejgantt#members:editsettings-editmode "editSettings.editMode") as `cellEditing`.
 
 ### Normal Editing
 
-Modify the task details through the edit dialog by setting the [`editMode`](/api/js/ejgantt#members:editsettings-editmode "editSettings.editMode") as [`normal`](/api/js/ejgantt#members:editsettings-editmode "normal").
+Modify the task details through the edit dialog by setting the [editMode](/api/js/ejgantt#members:editsettings-editmode "editSettings.editMode") as `normal`.
 
 ### Taskbar Editing
 
-Modify the task details through user interaction such as resizing and dragging the taskbar.
+Modify the task details through user interaction such as resizing and dragging the taskbar by setting the [allowGanttChartEditing](/api/js/ejgantt#members:allowganttchartediting) as `true`.
 
 ### Predecessor Editing
 
-Modify the predecessor details of a task using mouse interactions by setting the [`allowGanttChartEditing`](/api/js/ejgantt#members:allowganttchartediting "allowGanttChartEditing") as `true` and setting value for the `predecessorMapping` property.
+Modify the predecessor details of a task using mouse interactions by setting the [`allowGanttChartEditing`](/api/js/ejgantt#members:allowganttchartediting "allowGanttChartEditing") as `true` and setting value for the [predecessorMapping](/api/js/ejgantt#members:predecessormapping) property.
 
 {% highlight javascript %}
 
@@ -230,11 +231,11 @@ Modify the predecessor details of a task using mouse interactions by setting the
 
 {% endhighlight %}
 
-The following screen shot displays a Gantt chart control with Enable Editing options.
+The following screen shot displays a Gantt control with dialog editing option.
 
 ![](/js/Gantt/Getting-Started_images/Getting-Started_img7.png)
 
-N>  Both cellEditing and  normal  editing operations are performed through double-click action.
+N>  Both `cellEditing` and `normal` editing operations are performed through double-click action.
 
 ## Enable Context Menu
 
@@ -267,7 +268,7 @@ You can enable the column menu in Gantt, by setting the [`showColumnChooser`](/a
 
 {% endhighlight %}
 
-The following screen shot displays Gantt chart in which column chooser option is enabled:
+The following screen shot displays Gantt control in which column chooser option is enabled:
 
 ![](/js/Gantt/Getting-Started_images/Getting-Started_img11.png)
 
@@ -297,7 +298,7 @@ The following screenshot displays the relationship between tasks.
 
 ## Provide Resources
 
-In Gantt control, you can display and assign the resource for each task. Create a collection of `JSON` object, which contains id and name of the resource and assign it to the [`resources`](/api/js/ejgantt#members:resources "resources") property. Then, specify the field name for id and name of the resource in the resource collection to [`resourceIdMapping`](/api/js/ejgantt#members:resourceidmapping "resourceIdMapping") and [`resourceNameMapping`](/api/js/ejgantt#members:resourcenamemapping "resourceNameMapping") options. The name of the field, which contains the actual resources assigned for a particular task in the `dataSource` is specified using the [`resourceInfoMapping`](/api/js/ejgantt#members:resourceinfomapping "resourceInfoMapping").
+In Gantt control, you can display and assign the resource for each task. Create a collection of `JSON` object, which contains id and name of the resource and assign it to the [`resources`](/api/js/ejgantt#members:resources "resources") property. Then, specify the field name for id and name of the resource in the resource collection to [`resourceIdMapping`](/api/js/ejgantt#members:resourceidmapping "resourceIdMapping") and [`resourceNameMapping`](/api/js/ejgantt#members:resourcenamemapping "resourceNameMapping") options. The name of the field, which contains the actual resources assigned for a particular task in the [dataSource](/api/js/ejgantt#members:datasource) is specified using the [`resourceInfoMapping`](/api/js/ejgantt#members:resourceinfomapping "resourceInfoMapping").
 
 1.Create the resource collection to be displayed in ejGantt.
 
@@ -337,13 +338,11 @@ The following screenshot displays resource allocation for tasks in Gantt chart.
 
 ![](/js/Gantt/Getting-Started_images/Getting-Started_img10.png)
 
-By following these steps, you have learned how to provide data source to Gantt chart, how to configure Gantt to set task relationships, assign resources for each task, and add toolbar with necessary buttons.
+By following these steps, you have learned how to provide data source to Gantt chart, how to configure Gantt to set task relationships, assign resources for each task and add toolbar with necessary buttons.
 
 ## Highlight Weekend
 
-In Gantt, you can on or off weekends high lighting by setting the [`highlightWeekEnds`](/api/js/ejgantt#members:highlightweekends "highlightWeekEnds")
-
- as `true` or `false`.
+In Gantt, you can on or off weekends high lighting by setting the [highlightWeekEnds](/api/js/ejgantt#members:highlightweekends "highlightWeekEnds") as `true` or `false`.
 
 {% highlight javascript %}
 
