@@ -200,3 +200,5 @@ Supported Keyboard Interactions keys with its description are tabulated as follo
         </td>
     </tr>
 </table>
+
+N> By default [allowKeyboardNavigation](https://help.syncfusion.com/api/js/ejkanban#members:allowkeyboardnavigation) property is set to **true**, which allows the Kanban to be accessed through the above specified keys.
