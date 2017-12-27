@@ -29,7 +29,7 @@ This tooltip can be customized further by using the [taskbarTooltipTemplate](/ap
 
 ## Taskbar drag tooltip
 
-It is possible to enable or disable the tooltip while performing editing actions on taskbar (left resizing, right resizing, dragging and progress resizing) by using the [enableTaskbarDragTooltip](/api/js/ejgantt#members:enabletaskbardragtooltip) property. By default, this property is set to true. The following code example explains this behavior.
+It is possible to enable or disable the tooltip while performing editing actions on taskbar (left resizing, right resizing, dragging and progress resizing) by using the [enableTaskbarDragTooltip](/api/js/ejgantt#members:enabletaskbardragtooltip) property. By default, this property is set to `true`. The following code example explains this behavior.
 
 {% highlight javascript %}
 $("#GanttContainer").ejGantt({
@@ -58,7 +58,7 @@ This tooltip can be customized using the [cellTooltipTemplate](/api/js/ejgantt#m
 
 ## Tree column (Expander column) tooltip 
 
-It is also possible to display tooltip only for expander column by setting the [showExpandGridCellTooltip](/api/js/ejgantt#members:showgridexpandcelltooltip) property. The following code example shows you to enable expander column tooltip in Gantt.
+It is also possible to display tooltip only for expander column by setting the [showGridExpandCellTooltip](/api/js/ejgantt#members:showgridexpandcelltooltip) property. The following code example shows you to enable expander column tooltip in Gantt.
 
 {% highlight javascript %}
 $("#GanttContainer").ejGantt({

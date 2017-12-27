@@ -10,7 +10,7 @@ api: /api/js/ejgantt
 
 # Toolbar
 
-In Gantt we can show/hide the Toolbar by using the [`toolbarSettings.showToolbar`](https://help.syncfusion.com/api/js/ejgantt#members:toolbarsettings-showtoolbar "showToolbar") property. We can add default toolbar items by the [`toolbarSettings.toolbarItems`](https://help.syncfusion.com/api/js/ejgantt#members:toolbarsettings-toolbaritems "toolbarItems"). User can also create a custom toolbar items by using the [`toolbarSettings.customToolbarItems`](https://help.syncfusion.com/api/js/ejgantt#members:toolbarsettings-customToolbarItems "customToolbarItems").
+In Gantt we can show/hide the Toolbar by using the [showToolbar](https://help.syncfusion.com/api/js/ejgantt#members:toolbarsettings-showtoolbar "toolbarSettings.showToolbar") property. We can add default toolbar items by the [toolbarItems](https://help.syncfusion.com/api/js/ejgantt#members:toolbarsettings-toolbaritems "toolbarSettings.toolbarItems"). User can also create a custom toolbar items by using the [customToolbarItems](/api/js/ejgantt#members:toolbarsettings-customtoolbaritems "toolbarSettings.customToolbarItems").
 
 ## Default Toolbar Items
 Using Gantt default toolbar items we can perform below operations.
@@ -43,7 +43,7 @@ Using Gantt default toolbar items we can perform below operations.
 		   
 * **ExcelExport**- To export Gantt in Excel format.
 
-* **PdfExport**- To export Gantt in Pdf format.
+* **PdfExport**- To export Gantt in PDF format.
 
 We can enable Gantt toolbar by using below code example:
 {% highlight js %}
@@ -62,11 +62,11 @@ We can enable Gantt toolbar by using below code example:
                 ej.Gantt.ToolbarItems.ExpandAll,
                 ej.Gantt.ToolbarItems.CollapseAll,
                 ej.Gantt.ToolbarItems.Search,
-		ej.Gantt.ToolbarItems.PrevTimeSpan,
+		        ej.Gantt.ToolbarItems.PrevTimeSpan,
                 ej.Gantt.ToolbarItems.NextTimeSpan,
-		ej.Gantt.ToolbarItems.CriticalPath,
-		ej.Gantt.ToolbarItems.ExcelExport,
-		ej.Gantt.ToolbarItems.PdfExport
+		        ej.Gantt.ToolbarItems.CriticalPath,
+		        ej.Gantt.ToolbarItems.ExcelExport,
+		        ej.Gantt.ToolbarItems.PdfExport
             ],
         }
     });
@@ -82,13 +82,13 @@ N> To perform add, edit, delete, cancel, update, indent and outdent using Toolba
 
 CustomToolbarItems allows us to insert custom icons and custom template in Gantt toolbar. By using below properties we can customize Gantt toolbar as per our requirement.
 
-* **text**- To insert the custom icons in toolbar using CSS class name selector.
+* [text](/api/js/ejgantt#members:toolbarsettings-customtoolbaritems-text "toolbarSettings.customToolbarItems.text")- To insert the custom icons in toolbar using CSS class name selector.
 
-* **templateID**- To insert the custom icons in toolbar using script templates. Using this property we can bind HTML elements and other EJ controls to Gantt toolbar.
+* [templateID](/api/js/ejgantt#members:toolbarsettings-customtoolbaritems-templateid "toolbarSettings.customToolbarItems.templateID")- To insert the custom icons in toolbar using script templates. Using this property we can bind HTML elements and other EJ controls to Gantt toolbar.
 
-* **tooltipText**- Displays tooltip text for the custom icons.
+* [tooltipText](/api/js/ejgantt#members:toolbarsettings-customtoolbaritems-tooltiptext "toolbarSettings.customToolbarItems.tooltipText")- Displays tooltip text for the custom icons.
 
-To insert EJ Controls in Gantt toolbar we need to initiate the control in the [`create`](https://help.syncfusion.com/api/js/ejgantt#events:create "create") client-side event. In the [`toolbarClick`](https://help.syncfusion.com/api/js/ejgantt#events:toolbarclick "toolbarclick") client-side event we can bind actions to the custom toolbar items.
+To insert EJ Controls in Gantt toolbar we need to initiate the control in the [create](https://help.syncfusion.com/api/js/ejgantt#events:create "create") client-side event. In the [toolbarClick](https://help.syncfusion.com/api/js/ejgantt#events:toolbarclick "toolbarclick") client-side event we can bind actions to the custom toolbar items.
 
 {% highlight html %}
     <div id="GanttContainer" style="height:400px;width:100%"></div>           

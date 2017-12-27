@@ -10,10 +10,10 @@ api: /api/js/ejgantt
 
 # Filtering
 
-Filtering helps to view specific or related records from data source which meets a given filtering criteria. The `filterSettings` property in Gantt is used to set the filtering criteria at load time.
+Filtering helps to view specific or related records from data source which meets a given filtering criteria. The [filterSettings](/api/js/ejgantt#members:filtersettings) property in Gantt is used to set the filtering criteria at load time.
 
 ## Filter columns at initial load
-It is possible to filter one or more columns at initial load by providing the field and filter query to the `filterSettings.filteredColumns` property. The following code example explains how to filter a column on initial load.
+It is possible to filter one or more columns at initial load by providing the [field](/api/js/ejgantt#members:filtersettings-filteredcolumns-field "filterSettings.filteredColumns.field"), [value](/api/js/ejgantt#members:filtersettings-filteredcolumns-value "filterSettings.filteredColumns.value"),[predicate](/api/js/ejgantt#members:filtersettings-filteredcolumns-predicate "filterSettings.filteredColumns.predicate") and [operator](/api/js/ejgantt#members:filtersettings-filteredcolumns-operator "filterSettings.filteredColumns.operator") to the [filteredColumns](/api/js/ejgantt#members:filtersettings-filteredcolumns) property. The following code example explains how to filter a column on initial load.
 
 {% highlight js %}
 
@@ -37,7 +37,7 @@ The output of the filtering applied for a column is as follows.
 
 ## Filtering a specific column by public method
 
-It is possible to filter columns dynamically by using the `filterColumn` public method. 
+It is possible to filter columns dynamically by using the **filterColumn** public method. 
 The below code snippet explains the above behavior.
 
 {% highlight js %}
@@ -60,7 +60,7 @@ $("#filterColumn").click(function (args) {
 
 ## Clearing the filter applied to Gantt
 
-You can clear all the filtering condition done in the Gantt by using the `clearFiltering` public method. 
+You can clear all the filtering condition done in the Gantt by using the **clearFiltering** public method. 
 The below code snippet explains the above behavior.
 
 {% highlight js %}
@@ -79,8 +79,3 @@ $("#clearFilter").click(function (args) {
 </script>
 
 {% endhighlight %}
-
-
-
-
-

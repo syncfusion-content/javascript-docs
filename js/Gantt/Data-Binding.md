@@ -10,6 +10,7 @@ api: /api/js/ejgantt
 # Data Binding
 
 Data binding is the process that establishes a connection between the application and different kinds of data sources such as business objects. And it is possible to bind local data and remote data in Gantt.
+You can set the data source for Gantt control by using [dataSource](/api/js/ejgantt#members:datasource) property.
 
 ## Local Data Binding
 
@@ -147,8 +148,8 @@ $("#gantt").ejGantt({
 
 Gantt can be rendered from self-referential data structures, by mapping the task ID and parent task ID fields.
 
-* Task ID field- This field must contain unique values to identify the nodes. It should be mapped to the `taskIdMapping` property.
-* Parent task ID field- This field must contain values to identify the parent nodes. It should be mapped to the `parentTaskIdMapping` property.
+* Task ID field- This field must contain unique values to identify the nodes. It should be mapped to the [taskIdMapping](/api/js/ejgantt#members:taskidmapping) property.
+* Parent task ID field- This field must contain values to identify the parent nodes. It should be mapped to the [parentTaskIdMapping](/api/js/ejgantt#members:parenttaskidmapping) property.
 
 {% highlight javascript %}
 
