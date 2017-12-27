@@ -18,13 +18,13 @@ In Gantt, the tasks’ duration value can be measured by the following duration 
 
 Each task in the project can be defined with different duration units and the duration unit of a task can be defined by the following ways,
 
-1. Using **durationUnitMapping** property, to map the duration unit data source field.
+1. Using [durationUnitMapping](/api/js/ejgantt#members:durationunitmapping) property, to map the duration unit data source field.
 2. Defining the duration unit value along with the duration field in the data source.
 
 ## Mapping the Duration Unit field
 
 
-The below code snippet explains the mapping of duration unit data source field to the Gantt control using the **durationUnitMapping** property.
+The below code snippet explains the mapping of duration unit data source field to the Gantt control using the [durationUnitMapping](/api/js/ejgantt#members:durationunitmapping) property.
 
 {% highlight javascript %}
 
@@ -41,7 +41,7 @@ $("#GanttContainer").ejGantt({
 
 {% endhighlight %}
 
-N> 1. The default value of the **durationUnit** property is “day”.
+N> 1. The default value of the [durationUnit](/api/js/ejgantt#members:durationunit) property is “day”.
 
 ## Defining duration unit along with duration field
 

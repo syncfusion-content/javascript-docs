@@ -20,7 +20,7 @@ The datetime data type for start date and end date defines the exact starting po
 * `TimeScale8Hours`  for 8 hour working scale.
 * `TimeScale24Hours` for 24 hour working scale.
 
-Use the following code example for setting different time scales of working hours.
+Use the [workingTimeScale](/api/js/ejgantt#members:workingtimescale) property for setting different time scales of working hours in Gantt, refer the following code example to define working hours for your project.
 
 {% highlight javascript %}
 
