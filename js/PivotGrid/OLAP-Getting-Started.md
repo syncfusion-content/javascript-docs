@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: OLAP-Getting-Started
 description: olap-getting started
@@ -12,9 +12,9 @@ api: /api/js/ejpivotgrid
 
 ## Creating a simple application with PivotGrid and OLAP datasource (Client Mode)
 
-This section covers the information that you need to know to populate a simple PivotGrid with OLAP data completely on the client-side.  
+This section explains about how to populate a simple PivotGrid with OLAP data completely on the client-side.
 
-### Scripts and CSS References
+### Scripts and CSS references
 
 Create a HTML page and add scripts and style sheets that are mandatorily required to render a PivotGrid widget which are listed below in an appropriate order.
 
@@ -24,7 +24,7 @@ Create a HTML page and add scripts and style sheets that are mandatorily require
 
 ### Initialize PivotGrid
 
-Place a "div" tag in the HTML page which acts as a container for the PivotGrid widget. Then initialize the widget using the "ejPivotGrid" method.
+Place a "div" tag in the HTML page which acts as a container for the PivotGrid widget. Then, initialize the widget using the "ejPivotGrid" method.
 
 {% highlight html %}
 
@@ -57,7 +57,7 @@ Place a "div" tag in the HTML page which acts as a container for the PivotGrid w
 
 ### Populate PivotGrid with DataSource
 
-Initializes the OLAP datasource for PivotGrid widget as shown below.
+Initialize the OLAP datasource for the PivotGrid widget as shown below:
 
 {% highlight html %}
 
@@ -97,24 +97,24 @@ Initializes the OLAP datasource for PivotGrid widget as shown below.
 
 {% endhighlight %}
 
-The above code will generate a simple PivotGrid with "Customer Geography" field in Column, "Fiscal" field in Row and "Internet Sales Amount" field in Value section.
+The above code will generate a simple PivotGrid with "Customer Geography" field in column, "Fiscal" field in row, and "Internet Sales Amount" field in Value section.
 
 ![](Getting-Started_images/OlapClientside.png) 
 
-## Creating a simple application with PivotGrid and OLAP datasource (Server Mode)
+## Creating a simple application with PivotGrid and OLAP datasource (server mode)
 
-This section covers the information required to create a simple PivotGrid bound to OLAP datasource.  
+This section covers the information required to create a simple PivotGrid that is bound to the OLAP datasource.
 
-N> We will be illustrating this section by creating a simple Web Application through Visual Studio IDE since PivotGrid is a server-side control with .NET dependency. The Web Application would contain a HTML page and a service that would transfer data to server-side, process and return back the data to client-side for control re-rendering. The service utilized for communication could be either WCF or WebAPI based on user requirement and we have illustrated both for user convenience.
+N> This section illustrates creating a simple Web Application through the Visual Studio IDE since PivotGrid is a server-side control with .NET dependency. The Web Application contains a HTML page and a service that would transfer data to server-side, process, and return back the data to client-side for control re-rendering. The service utilized for communication could be either WCF or WebAPI based on user requirement. Here, both WCF and WebAPI have been illustrated for user convenience.
 
-### Project Initialization
-Create a new **ASP.NET Empty Web Application** by using Visual Studio IDE and name the project as **“PivotGridDemo”**.
+### Project initialization
+Create a new **ASP.NET Empty Web Application** by using the Visual Studio IDE and name the project as **“PivotGridDemo”**.
 
-Next you need to add a HTML page. To add a HTML page in your Web Application, right-click on the project in Solution Explorer and select **Add > New Item.** In the **Add New Item** window, select **HTML Page** and name it as **“GettingStarted.html”**, click **Add.**
+Next, you should add a HTML page. To add a HTML page in your Web Application, right-click the project in the solution explorer and select **Add > New Item.** In the **Add New Item** window, select **HTML Page** and name it as **“GettingStarted.html”**, and then click **Add.**
 
-Now you need to set “GettingStarted.html” as start-up page. In-order to do so, right-click on “GettingStarted.html” page and select **“Set As Start Page”**.
+You can set “GettingStarted.html” as start-up page by right-clicking the “GettingStarted.html” page and selecting the **“Set As Start Page”**.
 
-### Scripts and CSS Initialization
+### Scripts and CSS initialization
 The scripts and style sheets that are mandatorily required to render a PivotGrid widget inside a HTML page are listed below in an appropriate order.
 
 1. ej.web.all.min.css
@@ -123,14 +123,14 @@ The scripts and style sheets that are mandatorily required to render a PivotGrid
 
 The scripts and style sheets listed above could be found in any of the following locations:
 
-Local Disk: [Click here](https://help.syncfusion.com/js/installation-and-deployment) to know more about script and style sheets installed in local machine.
+Local disk: [Click here](https://help.syncfusion.com/js/installation-and-deployment) to know more about script and style sheets installed in the local machine.
 
-CDN Link: [Click here](https://help.syncfusion.com/js/cdn) to know more about script and style sheets available online.
+CDN link: [Click here](https://help.syncfusion.com/js/cdn) to know more about script and style sheets available in online.
 
-NuGet Package: [Click here](https://help.syncfusion.com/js/installation-and-deployment#configuring-syncfusion-nuget-packages) to know more about script and style sheets available in NuGet package. 
+NuGet package: [Click here](https://help.syncfusion.com/js/installation-and-deployment#configuring-syncfusion-nuget-packages) to know more about script and style sheets available in the NuGet package.
 
-### Control Initialization
-In-order to initialize a PivotGrid widget, first you need to define a “div” tag with an appropriate “id” attribute which acts as a container for PivotGrid widget. Then you need to initialize the widget using `ejPivotGrid` method.
+### Control initialization
+To initialize a PivotGrid widget, you can define a “div” tag with an appropriate “id” attribute which acts as a container for the PivotGrid widget. Then, you can initialize the widget by using the `ejPivotGrid` method.
     
 {% highlight html %}
 
@@ -167,23 +167,23 @@ In-order to initialize a PivotGrid widget, first you need to define a “div” 
 
 {% endhighlight %}
 
-The “url” property in PivotGrid widget points the service endpoint, where data are processed and fetched in the form of JSON. The service used for the PivotGrid widget as endpoint are WCF and WebAPI.
+The “url” property in the PivotGrid widget, points the service endpoint where the data are processed and fetched in the form of JSON. The service used for the PivotGrid widget as endpoint are the WCF and WebAPI.
 
-N> The above "GettingStarted.html" contains WebAPI URL, which is **“/Olap”**. Suppose if you are using WCF service then the URL would look like **"/OlapService.svc"**. 
+N> The above "GettingStarted.html" contains WebAPI URL, which is **“/Olap”**. Suppose, if you are using the WCF service then the URL would look like **"/OlapService.svc"**.
 
 ### WebAPI
 
-**Adding a WebAPI Controller**
+**Adding a WebAPI controller**
 
-To add a WebAPI controller in your existing Web Application, right-click on the project in Solution Explorer and select **Add > New Item.** In the **Add New Item** window, select **WebAPI Controller Class** and name it as “OlapController.cs”, click **Add.**
+To add a WebAPI controller in your existing Web Application, right-click the project in the solution explorer and select **Add > New Item.** In the **Add New Item** window, select **WebAPI Controller Class** and name it as “OlapController.cs”, and then click **Add.**
 
-Now WebAPI controller is added into your application successfully which in-turn comprise of the following file. The utilization of this file will be explained in the following sections.
+Now, WebAPI controller is added to your application successfully which in-turn comprise of the following file. The utilization of this file will be explained in the following sections:
  
 * OlapController.cs
 
 N> While adding WebAPI Controller Class, name it with the suffix “Controller” that is mandatory. For example, in demo the controller is named as “OlapController”.
 
-Next, remove all the existing methods such as “Get”, “Post”, “Put” and “Delete” present inside `OlapController.cs` file. 
+Remove all the existing methods such as “Get”, “Post”, “Put”, and “Delete” that are present inside the `OlapController.cs` file.
 
 {% highlight c# %}
 
@@ -197,11 +197,11 @@ namespace PivotGridDemo
 
 {% endhighlight %}
 
-**List of Dependency Libraries**
+**List of dependency libraries**
 
-Next you need to add the below mentioned dependency libraries into your Web Application. These libraries could be found in GAC (Global Assembly Cache) as well.
+You can add the below mentioned dependency libraries to your Web Application. These libraries could be found in GAC (Global Assembly Cache).
 
-To add them to your Web Application, right-click on **References** in Solution Explorer and select **Add Reference.** Now, in the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries are found. 
+To add them to your Web Application, right-click the **References** in the solution explorer and select **Add Reference.** Now, in the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries are found.
 
 N> If you have installed any version of SQL Server Analysis Service (SSAS) or Microsoft ADOMD.NET utility, then the location of Microsoft.AnalysisServices.AdomdClient library is [system drive:\Program Files (x86)\Microsoft.NET\ADOMD.NET]. And if you have installed any version of Essential Studio, then the location of Syncfusion libraries is [system drive:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\Assemblies].
 
@@ -220,7 +220,7 @@ N> If you have installed any version of SQL Server Analysis Service (SSAS) or Mi
 
 **List of Namespaces**
 
-Following are the list of namespaces to be added on top of the main class inside `OlapController.cs` file.
+Following are the list of namespaces to be added on top of the main class inside the `OlapController.cs` file.
 
 {% highlight c# %}
 
@@ -249,9 +249,9 @@ namespace PivotGridDemo
 
 {% endhighlight %}
 
-**Datasource Initialization**
+**Datasource initialization**
 
-Now, the connection string to connect OLAP Cube, PivotGrid and JavaScriptSerializer instances are created immediately inside the main class in `OlapController.cs` file.
+Now, the connection string to connect OLAP Cube, PivotGrid, and JavaScriptSerializer instances are created immediately inside the main class of the `OlapController.cs` file.
 
 {% highlight c# %}
 
@@ -270,9 +270,9 @@ namespace PivotGridDemo
 
 {% endhighlight %}
 
-**Service methods in WebAPI Controller**
+**Service methods in WebAPI controller**
 
-Now you need to define the service methods inside OlapController class, found inside `OlapController.cs` file, created while adding WebAPI Controller Class to your Web Application.
+You should define the service methods inside the OlapController class. To define, found the `OlapController.cs` file, which is created while adding WebAPI controller Class from the Visual Studio to your Web Application.
  
 {% highlight c# %}
 
@@ -502,11 +502,11 @@ namespace PivotGridDemo
 
 {% endhighlight %}
 
-**Configure routing in Global Application Class**
+**Configure routing in global application class**
 
-To add a Global.asax in your existing Web Application, right-click on the project in Solution Explorer and select **Add > New Item.** In the **Add New Item** window, select **Global Application Class** and name it as “Global.asax”, click **Add.**
+To add a Global.asax in your existing Web Application, right-click the project in the solution explorer and select **Add > New Item.** In the **Add New Item** window, select **Global Application Class** and name it as “Global.asax”, and then click **Add.**
 
-Once you finish adding the **Global.asax** file, immediately add the namespace **“using System.Web.Http;”** and then you can configure routing like in the following code example.
+After adding the **Global.asax** file, immediately add the namespace **“using System.Web.Http;”**, and then you can configure the routing as shown in the following code example:
 
 {% highlight c# %}
 
@@ -526,10 +526,10 @@ public class Global : System.Web.HttpApplication
 
 Now, PivotGrid will be rendered with Internet Sales Amount over a period of fiscal years across different customer geographic locations.
 
-![](Getting-Started_images/olapwebapi.png) 
+![](Getting-Started_images/olapwebapi.png)
 
 ### WCF
-This section demonstrates the utilization of WCF service as endpoint binding OLAP datasource to a simple PivotGrid. For more details on this topic, [click here](https://help.syncfusion.com/js/pivotgrid/olap-connectivity#wcf).
+This section demonstrates the utilization of WCF service as endpoint binding the OLAP datasource to a simple PivotGrid. For more details on this topic, [click here](https://help.syncfusion.com/js/pivotgrid/olap-connectivity#wcf).
 
 
 
