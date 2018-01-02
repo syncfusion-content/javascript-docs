@@ -56,6 +56,8 @@ Following file types can be opened in Spreadsheet
 * CSV
 
 [`Click`](http://js.syncfusion.com/demos/web/#!/azure/spreadsheet/importexport "Click") here to view online demo sample.
+
+* Using [`getExportProps`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlexport-getexportprops "getExportProps") method to get the export properties in the Spreadsheet.
 You can open excel documents in following ways,
 
 1. Initial settings

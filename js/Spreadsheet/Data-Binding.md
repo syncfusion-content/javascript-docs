@@ -215,7 +215,29 @@ Spreadsheet can bind data for individual cells in a sheet. The data may contain 
             {{'[`style`](https://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-rows-cells-style "style")'| markdownify }}
         </td>
         <td>
-            To specify style in the cell
+            To specify style in the cell.
+             <table class="params">
+            <thead>
+            <tr>
+            <th>Properties</th>
+            <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td>backgroundColor </td>
+            <td>Specifies the background color of a cell in the Spreadsheet.</td>
+            </tr>
+            <tr>
+            <td>color</td>
+            <td>Specifies the font color of a cell in the Spreadsheet.</td>
+            </tr>
+            <tr>
+            <td>fontWeight</td>
+            <td>Specifies the font weight of a cell in the Spreadsheet.</td>
+            </tr>
+            </tbody>
+            </table>
         </td>
     </tr>
     <tr>
@@ -223,7 +245,33 @@ Spreadsheet can bind data for individual cells in a sheet. The data may contain 
             {{'[`format`](https://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-rows-cells-format "format")'| markdownify }}
         </td>
         <td>
-            To specify number format in the cell
+            To specify number format in the cell.
+            <table class="params">
+            <thead>
+            <tr>
+            <th>Properties</th>
+            <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td>type  </td>
+            <td>Specifies the type of the format in Spreadsheet.</td>
+            </tr>
+            <tr>
+            <td>decimalPlaces </td>
+            <td>Specifies the number of decimal places for the given input.</td>
+            </tr>
+            <tr>
+            <td>formatStr </td>
+            <td>Specifies the string format for the given input.</td>
+            </tr>
+            <tr>
+            <td>thousandSeparator </td>
+            <td>Specifies the thousand separator for the given input.</td>
+            </tr>
+            </tbody>
+            </table>
         </td>
     </tr>
     <tr>
@@ -232,6 +280,23 @@ Spreadsheet can bind data for individual cells in a sheet. The data may contain 
         </td>
         <td>
             To specify comment in the cell
+            <table class="params">
+            <thead>
+            <tr>
+            <th>Properties</th>
+            <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td>isVisible</td>
+            <td>Indicates whether to show or hide comments in Spreadsheet.</td>
+            </tr><tr>
+            <td>value</td>
+            <td>Specifies the value for the comment in Spreadsheet.</td>
+            </tr>
+            </tbody>
+            </table>
         </td>
     </tr>
     <tr>        
@@ -239,7 +304,29 @@ Spreadsheet can bind data for individual cells in a sheet. The data may contain 
             {{'[`hyperlink`](https://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-rows-cells-hyperlink "hyperlink")'| markdownify }}
         </td>
         <td>
-            To specify hyperlink in the cell
+            To specify hyperlink in the cell.
+            <table class="params">
+            <thead>
+            <tr>
+            <th>Properties</th>
+            <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td>webAddr</td>
+            <td>Specifies the web address for the hyperlink of a cell.</td>
+            </tr>
+            <tr>
+            <td>cellAddr</td>
+            <td>Specifies the cell address for the hyperlink of a cell.</td>
+            </tr>
+            <tr>
+            <td>sheetIndex</td>
+            <td>Specifies the sheet index to which the cell is referred.</td>
+            </tr>
+            </tbody>
+            </table>
         </td>
     </tr>
     <tr>        
