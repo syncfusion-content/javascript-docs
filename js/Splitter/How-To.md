@@ -11,11 +11,11 @@ api: /api/js/ejsplitter
 
 ### Change Expand/Collapse icons
 
-By default, you are provided with collapse/expand icons in **Split bar** to collapse or expand the splitter panes. We have provided template support to replace existing expand/collapse icons.
+By default, you are provided with collapse/expand icons in **Split bar** to collapse or expand the splitter panes. We have provided template support to replace existing expand/collapse icons. The template support will only replace the icons where you need to define the action handler for the template.
 
-* **expanderTemplate** Specifies HTML element string to replace template with existing expand/collapse icons. 
+* (expanderTemplate)[https://help.syncfusion.com/api/js/ejsplitter#members:expandertemplate] Specifies HTML element string to replace template with existing expand/collapse icons. 
 
-* **clickOnExpander** event is triggered when we click on the template icon.`
+* (clickOnExpander)[https://help.syncfusion.com/api/js/ejsplitter#events:clickonexpander] event is triggered when we click on the template icon. This will allow you to define action to be performed on clicking the template icon.
 
 {% highlight html %}
 

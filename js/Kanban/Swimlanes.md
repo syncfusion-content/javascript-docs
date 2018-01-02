@@ -10,7 +10,7 @@ api : /api/js/ejkanban
 
 # Swim lanes
 
-Swim lanes are a horizontal categorization of issues in the Kanban control which brings transparency to the workflow. This can be enabled by mapping the [`swimlaneKey`](https://help.syncfusion.com/api/js/ejkanban#members:swimlaneKey) to appropriate column name in the [`dataSource`](https://help.syncfusion.com/api/js/ejkanban#members:datasource).
+Swim lanes are a horizontal categorization of issues in the Kanban control which brings transparency to the workflow. This can be enabled by mapping the [swimlaneKey](https://help.syncfusion.com/api/js/ejkanban#members:fields-swimlanekey) to appropriate column name in the [`dataSource`](https://help.syncfusion.com/api/js/ejkanban#members:datasource).
 
 The following code example describes the above behavior.
 
@@ -107,8 +107,7 @@ N> By default, given common keys are grouped under the swim lane name “Unassig
 
 ### Using default values
 
-By default, the swim lane keys of card which is having null, undefined, empty string ("") values will be grouped as unassigned category when [enable](https://help.syncfusion.com/api/js/ejkanban#members:swimlanesettings-unassignedgroup-enable) property is set as true. 
-Default values in the [keys](https://help.syncfusion.com/api/js/ejkanban#members:swimlanesettings-unassignedgroup-keys) collection are null, undefined, empty string ("").
+By default, the swim lane keys of card which is having null, undefined, empty string ("") values will be grouped as unassigned category when [enable](https://help.syncfusion.com/api/js/ejkanban#members:swimlanesettings-unassignedgroup-enable) property is set as true on [unassignedGroup](https://help.syncfusion.com/api/js/ejkanban#members:swimlanesettings-unassignedgroup).
 
 The following code example describes the above behavior.
 
