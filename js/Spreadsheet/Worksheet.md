@@ -12,6 +12,8 @@ api: /api/js/ejspreadsheet
 
 Worksheet is a collection of cells organized in the form of rows and columns that allow us to store, format, manipulate and display data in grid format. You can create multiple sheets in Spreadsheet and use sheet tab for switching between those worksheets. By default Spreadsheet creates single worksheet since default [`sheetCount`](https://help.syncfusion.com/api/js/ejspreadsheet#members:sheetcount "sheetCount") value is `1`.
 
+By Using the method [`gotoPage`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:gotopage "gotoPage") you can send a paging request to the specified sheet Index in the Spreadsheet.
+
 ## List of Sheet Operations 
 
 You can perform following operations in worksheet,
