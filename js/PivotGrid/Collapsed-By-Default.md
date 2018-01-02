@@ -10,9 +10,9 @@ api: /api/js/ejpivotgrid
 
 # Collapse by default
 
-I> This feature is applicable only for Relational datasource.
+I> This feature is applicable only for the relational datasource.
 
-Allows you to collapse all members displayed in the grid. You can enable collapsing all members by default in PivotGrid by setting [`enableCollapseByDefault`](/api/js/ejpivotgrid#members:enablecollapsebydefault) property to true.
+Allows you to collapse all members displayed in the grid. You can enable collapsing all members by default in the PivotGrid by setting the [`enableCollapseByDefault`](/api/js/ejpivotgrid#members:enablecollapsebydefault) property to true.
 
 {% highlight js %}
    

@@ -24,6 +24,7 @@ You can perform this by one of the following ways,
 * Use Backspace and Delete Key to delete the contents of a cell.
 * Use "Alt + Enter" keys to perform multi line editing.
 * Using [`editCell`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xledit-editcell "editCell") method.
+* Using [`allowOverflow `](https://help.syncfusion.com/api/js/ejspreadsheet#members:allowoverflow "allowOverflow ") API you can hide the overflow text in a cell.
 
 ## Save cell content
 
@@ -70,6 +71,9 @@ You can restrict/prevent the editing in the specified range. You can use [`allow
 * Using [`lockCells`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:lockcells "lockCells") method to lock the specified range. Then you need to protect the sheet using [`protectSheet`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:protectsheet "protectSheet") method to restrict the editing.
 * Using "Lock Cells" option under Changes group of REVIEW tab in ribbon. Then Using "Protect Sheet" option under Changes group of REVIEW tab in ribbon to restrict editing.
 * Using [`isReadOnly`](https://help.syncfusion.com/api/js/ejspreadsheet#members:isreadonly "isReadOnly") API to enable/disable read only support in spreadsheet.
+* Using [`setReadOnly`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:setreadonly "setReadOnly") method to set the readonly option for the specified range.
+* Using [`removeReadOnly`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:removereadonly "removeReadOnly") method to remove the readonly option for the specified range. 
+
 
 The following code example describes the above behavior.
 
