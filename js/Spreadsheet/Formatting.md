@@ -39,6 +39,8 @@ Number formatting is used to represent type for your data in Spreadsheet. The di
 
 9) Fraction
 
+To enable/disable [`allowDecimalPlaces`](https://help.syncfusion.com/api/js/ejspreadsheet#members:formatsettings-allowdecimalplaces "allowDecimalPlaces") API in `formatSettings` you can update the decimal place by using the method[`updateDecimalPlaces`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlformat-updatedecimalplaces "updateDecimalPlaces").
+
 You can apply number format for a cell in following ways,
     
 1) Initial Load
@@ -125,6 +127,12 @@ To organize and easier to follow your financial, statistical or scientific data,
 ### Fonts
 
 To distinguish your data from built-in font formats, you can apply different font formats like bold, italic, strike-through, color, font-family and size etc.
+Use [`allowFontFamily`](https://help.syncfusion.com/api/js/ejspreadsheet#members:formatsettings-allowfontfamily "allowFontFamily") in formatSettings API in to enable / disable font option in Spreadsheet.
+
+You have following Font options in Spreadsheet,
+
+* Using [`addFontFamily`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlformat-addfontfamily "addFontFamily") method to add the font to the Ribbon font family dropdown.
+* Using [`removeFontFamily`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlformat-removefontfamily "removeFontFamily") method  to remove the font from the Ribbon font family dropdown.
 
 ### Text Alignment
 
@@ -257,9 +265,19 @@ You can wrap or unwrap text in a cell using wrap text option in ribbon `HOME` ta
 
 To highlight particular cell or section of cells from whole workbook you can use cell formatting options like borders, fill color etc.
 
+You have the following options in cell formatting,
+
+* Using [`updateFormat`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlformat-updateformat "updateFormat") method to update the format for the selected range of cells in the Spreadsheet.
+* Using [`updateUniqueFormat`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlformat-updateuniqueformat "updateUniqueFormat") method to update the unique format for selected range of cells in the Spreadsheet.
+* Using [`removeStyle`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlformat-removestyle "removeStyle") method to remove the style in the specified range.
+
+
 ### Borders 
 
-You can add border around a cell or range of cells to define a section of worksheet or table. The different types of borders supported in Spreadsheet are,
+You can add border around a cell or range of cells to define a section of worksheet or table. 
+Use [`allowCellBorder`](https://help.syncfusion.com/api/js/ejspreadsheet#members:formatsettings-allowcellborder "allowCellBorder") in formatSettings API in to enable / disable border option in Spreadsheet.
+
+The different types of borders supported in Spreadsheet are,
     
 1) Bottom Border
 
@@ -289,6 +307,14 @@ You can apply border for a cell or range of cells through following ways,
 2) Apply border for a cell or range of cells using border options in ribbon `HOME` tab
 
 3) Use draw border options in ribbon `HOME` tab
+
+4) Specify the border at initial load by using the [`border`](https://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-border"border") in `sheets` API.
+
+In Border you have the following options in spreadsheet.
+
+* To specify the border type in the Spreadsheet.Use [`type`](https://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-border-type "type") in `border` API.
+* To Specify the border color for range of cells in Spreadsheet.Use [`color`](https://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-border-color "color") in `border` API.
+* To apply border for the specified range of cell.Use [`range`](https://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-border-type "range") in `border` API.
 
 ### Fill color
 

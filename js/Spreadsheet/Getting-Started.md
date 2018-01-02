@@ -60,6 +60,7 @@ Initialize the Spreadsheet by using the ejSpreadsheet method. The Spreadsheet is
 
 You can also use [`showRibbon`](https://help.syncfusion.com/api/js/ejspreadsheet#members:showribbon "showRibbon")and [`showPager`](https://help.syncfusion.com/api/js/ejspreadsheet#members:showpager "showPager") property to show/hide ribbon and pager in the spreadsheet.
 
+The method[`showWaitingPopUp`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:showwaitingpopup "showWaitingPopUp") and [`hideWaitingPopUp`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:hidewaitingpopup "hideWaitingPopUp") is used to show/hide the waiting popup in the spreadsheet.
 
 {% highlight html %}
 

@@ -148,6 +148,15 @@ You can do this by one of the following ways,
 
 * Using "Conditional Formatting" option in Conditional Formatting button of HOME Tab in ribbon to open the conditional formatting dialog.
 * Using [`setCFRule`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlcformat-setcfrule "setCFRule") method to define the condition.
+* Using [`cFormatRule`](https://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-cformatrule "cFormatRule") in `sheets` API.
+* Using [`getCFRule`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlcformat-getcfrule "getCFRule") method to get the defined condition.
+
+Conditional Formatting have the following options in spreadsheet,
+
+* Using [`action`](https://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-cformatrule-action "action") in `cFormatRule` API you can specify the conditions to apply for the range of cells in Spreadsheet.
+* Using [`color`](https://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-cformatrule-color "color") in `cFormatRule` API, you can specify the color to apply for the range of cell while conditional formatting.
+* Using [`inputs`](https://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-cformatrule-inputs "inputs") in `cFormatRule` API, you can specify the inputs for conditional formatting in Spreadsheet.
+* Using [`range`](https://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-cformatrule-range "range") in `cFormatRule` API, you can specify the range for conditional formatting in Spreadsheet.
 
 The following code example describes the above behavior.
 {% highlight html %}
@@ -352,6 +361,10 @@ You can do this by one of the following ways,
 * Using [`createPivotTable`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlpivot-createpivottable "createPivotTable") method to create pivot table
 * Using [`deletePivotTable`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlpivot-deletepivottable "deletePivotTable") method to remove the pivot table.
 
+In Pivot table we have following options, 
+* Using [`clearPivotFieldList`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlpivot-clearpivotfieldlist "clearPivotFieldList") method to clear the pivot table list in Spreadsheet.
+* Using [`refreshDataSource`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlpivot-refreshdatasource "refreshDataSource") method to refresh data in pivot table.
+
 The following code example describes the above behavior.
 {% highlight html %}
 <div id="Spreadsheet"></div>
@@ -454,6 +467,7 @@ You can do this by one of the following ways,
 * Using "Format As Table" under Styles group of HOME Tab in ribbon.
 * Using Table option under Tables group of INSERT Tab in ribbon.
 * Using [`createTable`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlformat-createtable "createTable") method to insert a table and [`removeTable`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlformat-removetable "removeTable") to delete a table.
+* Using [`convertToRange`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlformat-converttorange "convertToRange") method to convert table range to normal range.
 
 ### Table Customization
 
