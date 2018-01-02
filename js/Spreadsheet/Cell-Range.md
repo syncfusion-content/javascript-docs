@@ -292,6 +292,12 @@ You can do this by one of the following ways,
 * Using “AutoFillOptions” menu which is open, while drag and drop the cell using fill handle element.
 * Using [`autoFill`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xldragfill-autofill "autoFill") method.
 
+The following methods are available in spreadsheet to customize the auto fill options in the spreadsheet.
+
+* Using [`hideAutoFillElement`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xldragfill-hideautofillelement "hideAutoFillElement") method to fide the auto fill element in the spreadsheet.
+* Using [`hideAutoFillOptions`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xldragfill-hideautofilloptions "hideAutoFillOptions") method to fide the auto fill options in the spreadsheet.
+* Using [`positionAutoFillElement`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xldragfill-positionautofillelement "positionAutoFillElement") method to set position of auto fill element in the spreadsheet.
+
 In Auto Fill we have following options, 
 
 * Copy Cells
