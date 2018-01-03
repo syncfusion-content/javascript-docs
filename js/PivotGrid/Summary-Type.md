@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Summary-Type
 description: summary type
@@ -10,9 +10,9 @@ api: /api/js/ejpivotgrid
 
 # Summary Type
 
-I> This feature is applicable only for Relational datasource only at Client Mode.
+I> This feature is applicable only for the relational datasource at client mode.
 
-Allow us to specify the required [`layout`](/api/js/ejpivotgrid#members:layout) that PivotGrid should use in its summary cells. “Sum” is the default summary type. Following summary types that are supported:
+Allow you to specify the required [`layout`](/api/js/ejpivotgrid#members:layout) that should be used in summary cells of the PivotGrid. “Sum” is the default summary type. Following are the supported summary types:
 
 * Sum
 * Average

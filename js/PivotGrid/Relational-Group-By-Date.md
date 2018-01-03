@@ -10,9 +10,9 @@ api: /api/js/ejpivotgrid
 
 # Group by date
 
-I> This feature is applicable for Relational datasource alone (in Client Mode).
+I> This feature is applicable for the relational datasource alone (in client mode).
 
-Allows the user to categorize the date type field and showcase them based on year, quarter, month and day formats. 
+Allows you to categorize the date type field and showcase them based on year, quarter, month, and day formats.
 
 {% highlight js %}
 
@@ -35,7 +35,7 @@ Allows the user to categorize the date type field and showcase them based on yea
   
 {% endhighlight %}
 
-The properties associated with group by date option is,
+The properties associated with the group by date option are,
 
 * format - To set the data type format. 
 * formatString - Specifies the structure of the date format.

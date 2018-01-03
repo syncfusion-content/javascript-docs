@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Export
 description: export
@@ -10,18 +10,18 @@ api: /api/js/ejpivotgrid
 
 # Exporting
 
-The PivotGrid control can be exported to the following file formats.
+The PivotGrid control can be exported to the following file formats:
 
 * Excel
 * Word
 * PDF
 * CSV
 
-The PivotGrid control can be exported by invoking **"exportPivotGrid"** method, with an appropriate export option as parameter.
+The PivotGrid control can be exported by invoking the **"exportPivotGrid"** method, with an appropriate export option as a parameter.
 
-## JSON Export
+## JSON export
 
-I> By default JSON export mode will be applied for server and client mode.
+I> By default, JSON export mode will be applied for the server and client modes.
 
 {% highlight html %}
 
@@ -45,11 +45,11 @@ I> By default JSON export mode will be applied for server and client mode.
 
 {% endhighlight %}
 
-### Excel Export
+### Excel export
 
-User can export the contents of PivotGrid to an Excel document for future archival, references and analysis purposes.
+You can export the contents of PivotGrid to a Microsoft Excel document for future archival, references, and analysis purposes.
 
-To achieve Excel export, service URL and file name is sent as the parameter.
+To achieve Excel export, the service URL and the file name are set as parameters.
 
 {% highlight javascript %}
 
@@ -61,11 +61,11 @@ To achieve Excel export, service URL and file name is sent as the parameter.
 
 {% endhighlight %}  
 
-### Word Export
+### Word export
 
-User can export the contents of PivotGrid to a Word document for future archival, references and analysis purposes.
+You can export the contents of PivotGrid to a Word document for future archival, references, and analysis purposes.
 
-To achieve Word export, service URL and file name is sent as the parameter.
+To achieve Word export, the service URL and the file name are set as parameters.
 
 {% highlight javascript %}
 
@@ -77,11 +77,11 @@ To achieve Word export, service URL and file name is sent as the parameter.
 
 {% endhighlight %}  
 
-### PDF Export
+### PDF export
 
-User can export the contents of PivotGrid to a PDF document for future archival, references and analysis purposes.
+You can export the contents of PivotGrid to a PDF document for future archival, references, and analysis purposes.
 
-To achieve PDF export, service URL and file name is sent as the parameter.
+To achieve PDF export, the service URL and the file name are set as parameters.
 
 {% highlight javascript %}
 
@@ -93,11 +93,11 @@ To achieve PDF export, service URL and file name is sent as the parameter.
 
 {% endhighlight %}  
 
-### CSV Export
+### CSV export
 
-User can export the contents of PivotGrid to a CSV document for future archival, references and analysis purposes.
+You can export the contents of PivotGrid to a CSV document for future archival, references, and analysis purposes.
 
-To achieve CSV export, service URL and file name is sent as the parameter.
+To achieve CSV export, the service URL and the file name are set as parameters.
 
 {% highlight javascript %}
 
@@ -111,7 +111,7 @@ To achieve CSV export, service URL and file name is sent as the parameter.
 
 ### Customize the export document name
 
-For customizing file name, we need to send file name as parameter to the **exportPivotGrid**  method along with service URL.
+For customizing the file name, you should set the file name as parameter to **exportPivotGrid**  method along with the service URL.
 
 {% highlight javascript %}
 
@@ -123,11 +123,11 @@ For customizing file name, we need to send file name as parameter to the **expor
     
 {% endhighlight %}
 
-## PivotEngine Export
+## PivotEngine export
 
 I> This feature is applicable only at server mode operation.
 
-In order to perform exporting with the use of PivotEngine available in server-side, the 'exportMode' property obtained in the “beforeExport” event is set to the value "ej.PivotGrid.ExportMode.PivotEngine" as shown below.
+To perform exporting with the use of PivotEngine available in the server-side, the 'exportMode' property that is obtained in the “beforeExport” event is set to the "ej.PivotGrid.ExportMode.PivotEngine" value as shown below:
 
 {% highlight html %}
 
@@ -157,7 +157,7 @@ In order to perform exporting with the use of PivotEngine available in server-si
 
 {% endhighlight %}
 
-A service method needs to be added in WCF/WebAPI for server side operations.
+A service method should be added in the WCF/WebAPI for server side operations.
 
 For WebAPI controller, the below method needs to be added.
 
@@ -204,16 +204,16 @@ public void Export(System.IO.Stream stream)
 
 {% endhighlight %}
 
-### Excel Export
+### Excel export
 
-User can export the contents of PivotGrid to an Excel document for future archival, references and analysis purposes.
+You can export the contents of PivotGrid to an Excel document for future archival, references, and analysis purposes.
 
-To achieve Excel export, we need to add the following dependency libraries into the application.
+To achieve Excel export, you should add the following dependency libraries to the application.
 
 * Syncfusion.Compression.Base
 * Syncfusion.XlsIO.Base
 
-For Excel export, **“ej.PivotGrid.ExportOptions.Excel”** enumeration value is sent as the parameter.
+For Excel export, the **“ej.PivotGrid.ExportOptions.Excel”** enumeration value is set as parameter.
 
 {% highlight javascript %}
 
@@ -226,16 +226,16 @@ function exportBtnClick(args)
 
 {% endhighlight %}  
 
-### Word Export
+### Word export
 
-User can export the contents of PivotGrid to a Word document for future archival, references and analysis purposes.
+You can export the contents of PivotGrid to a Word document for future archival, references, and analysis purposes.
 
- To achieve Word export, we need to add the following dependency libraries into the application.
+ To achieve Word export, you should add the following dependency libraries to the application.
 
 * Syncfusion.Compression.Base
 * Syncfusion.DocIO.Base
 
-For Word export, **“ej.PivotGrid.ExportOptions.Word”** enumeration value is sent as the parameter.
+For Word export, the **“ej.PivotGrid.ExportOptions.Word”** enumeration value is set as parameter.
 
 {% highlight javascript %}
 
@@ -248,16 +248,16 @@ function exportBtnClick(args)
 
 {% endhighlight %}
 
-### PDF Export
+### PDF export
 
-User can export the contents of PivotGrid to a PDF document for future archival, references and analysis purposes.
+You can export the contents of PivotGrid to a PDF document for future archival, references, and analysis purposes.
 
-To achieve PDF export, we need to add the following dependency libraries into the application.
+To achieve PDF export, you can add the following dependency libraries to the application.
 
 * Syncfusion.Compression.Base
 * Syncfusion.Pdf.Base
 
-For PDF export, **“ej.PivotGrid.ExportOptions.PDF”** enumeration value is sent as the parameter.
+For PDF export, the **“ej.PivotGrid.ExportOptions.PDF”** enumeration value is set as parameter.
 
 {% highlight javascript %}
 
@@ -270,11 +270,11 @@ function exportBtnClick(args)
 
 {% endhighlight %} 
 
-### CSV Export
+### CSV export
 
-User can export the contents of PivotGrid to a CSV document for future archival, references and analysis purposes.
+You can export the contents of PivotGrid to a CSV document for future archival, references, and analysis purposes.
 
-For CSV export, **“ej.PivotGrid.ExportOptions.CSV"** enumeration value is sent as the parameter.
+For CSV export, the **“ej.PivotGrid.ExportOptions.CSV"** enumeration value is set as parameter.
 
 {% highlight javascript %}
 
@@ -289,11 +289,11 @@ function exportBtnClick(args)
 
 ### File format selection
 
-I> This option is applicable only for PivotGrid when exporting to Excel document.
+I> This option is applicable only for the PivotGrid when exporting to Excel document.
 
-You can set the option for exporting the widget to Excel document either in *.xls* or *.xlsx* format, using `fileFormat` property inside the `beforeExport` event.
+You can set this option for exporting the widget to Excel document either in *.xls* or *.xlsx* format by using the `fileFormat` property in the `beforeExport` event.
 
-N> By default excel document will be exported to ".xls" format using PivotEngine export.
+N> By default, the excel document will be exported to ".xls" format using the PivotEngine export.
 
 {% highlight javascript %}
 
@@ -311,7 +311,7 @@ N> By default excel document will be exported to ".xls" format using PivotEngine
 
 ### Customize the export document name
 
-For customizing name in WebAPI controller, below code sample is used.
+For customizing name in the WebAPI controller, the below code sample is used:
 
 {% highlight c# %}
 
@@ -334,7 +334,7 @@ public void Export()
 
 {% endhighlight %}
 
-For customizing name in WCF Service, below code sample is used.
+For customizing name in the WCF Service, the below code sample is used:
 
 {% highlight c# %}
 
@@ -357,7 +357,7 @@ public void Export(System.IO.Stream stream)
 {% endhighlight %}
 
 
-## Exporting Customization
+## Exporting customization
 
 You can add title and description to the exporting document by using title and description property obtained in the "beforeExport" event.
 
@@ -396,7 +396,7 @@ You can add title and description to the exporting document by using title and d
 
 {% endhighlight %}
 
-You can also edit the exporting document with the use of a server side event for required exporting option.
+You can also edit the exporting document with the use of a server side event for the required exporting option.
 
 {% highlight c# %}
 
@@ -407,7 +407,7 @@ using Syncfusion.XlsIO;
 using Syncfusion.DocIO.Base;
 using Syncfusion.Pdf.Base;
 
- //Following service method needs to be added in WebAPI for JSON export.
+ //Following service method needs to be added in the WebAPI for JSON export.
  
 [System.Web.Http.ActionName("ExcelExport")]
 [System.Web.Http.HttpPost]
@@ -475,7 +475,7 @@ void pGrid_CSVExport(object sender, string csvString)
 }
 
 
- //Following service method needs to be added in WCF/WebAPI for PivotEngine export.
+ //Following service method needs to be added in the WCF/WebAPI for PivotEngine export.
 
 [System.Web.Http.ActionName("Export")]
 [System.Web.Http.HttpPost]
@@ -517,18 +517,18 @@ void htmlHelper_CSVExport(object sender, string csvString)
 {% endhighlight %}
 
 
-The below screenshot shows the PivotGrid control exported to Excel document.
+The below screenshot shows the PivotGrid control exported to the Excel document:
 
 ![](Export_images/ExportPivotExcel.png)
 
-The below screenshot shows the PivotGrid control exported to Word document.
+The below screenshot shows the PivotGrid control exported to the Word document:
 
 ![](Export_images/ExportPivotWord.png)
 
-The below screenshot shows the PivotGrid control exported to PDF document.
+The below screenshot shows the PivotGrid control exported to the PDF document:
 
 ![](Export_images/ExportPivotPDF.png)
 
-The below screenshot shows the PivotGrid control exported to CSV document.
+The below screenshot shows the PivotGrid control exported to the CSV document:
 
 ![](Export_images/ExportPivotCSV.png)
