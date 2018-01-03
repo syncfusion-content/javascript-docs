@@ -188,6 +188,8 @@ The following output is displayed as a result of the above code example.
 
 You can add your own function to Spreadsheet using [`addCustomFormula`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:addcustomformula "addCustomFormula") method. The following code example describes the above behavior,
 
+You can also calculate formulas in the specified sheet by using[`calcNow`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xledit-calcnow "calcNow") method in Spreadsheet.
+
 {% highlight html %}
 
 <div id="Spreadsheet"></div>
