@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Format String
 description: Format String
@@ -10,11 +10,11 @@ api: /api/js/ejpivotgrid
 
 ### Format Strings
 
-I> This feature is applicable only for Relational data source at Client Mode.
+I> This feature is applicable only for the relational data source at client mode.
 
-Formatted numeric values like n (number with decimal points), c (currency or accounting) and p (percentage) can be displayed with desired decimal places using `formatString` option.
+Formatted numeric values like n (number with decimal points), c (currency or accounting), and p (percentage) can be displayed with desired decimal places by using the `formatString`.
 
->**Note**: This is applicable only when the `Format` option is set.
+>**Note**: This is applicable only when the `Format` is set.
 
 {% highlight js %}
 
@@ -40,7 +40,7 @@ $(function() {
 
 ![](Number-Format_images/formatstring.png)
 
-The following table describes the result of applying some commonly used format strings on numeric values. 
+The following table describes the result of applying some commonly used format strings on numeric values.
  
 <table>
 <tr>
