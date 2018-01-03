@@ -10,9 +10,9 @@ api : /api/js/ejkanban
 
 # Context Menu  
 
-Context menu is used to improve user action with Kanban using popup menu. It can be shown by defining [`contextMenuSettings.enable`](https://help.syncfusion.com/api/js/ejkanban#members:contextmenusettings-enable) as true. Context menu has option to add default items in [`contextMenuSettings.menuItems`](https://help.syncfusion.com/api/js/ejkanban#members:contextmenusettings-menuitems) and customized items in [`contextMenuSettings.customMenuItems`](https://help.syncfusion.com/api/js/ejkanban#members:contextmenusettings-custommenuitems).
+Context menu is used to improve user action with Kanban using popup menu. It can be shown by defining [contextMenuSettings](https://help.syncfusion.com/api/js/ejkanban#members:contextmenusettings) property of [enable](https://help.syncfusion.com/api/js/ejkanban#members:contextmenusettings-enable) set as true. Context menu has option to add default items in [`contextMenuSettings.menuItems`](https://help.syncfusion.com/api/js/ejkanban#members:contextmenusettings-menuitems) and customized items in [`contextMenuSettings.customMenuItems`](https://help.syncfusion.com/api/js/ejkanban#members:contextmenusettings-custommenuitems).
 
-N> For using event handling in context menu , please refer this [API](https://help.syncfusion.com/api/js/ejkanban#events:contextclick).
+N> For using event handling in context menu, please refer this [API](https://help.syncfusion.com/api/js/ejkanban#events:contextclick).
 
 ## Default Context Menu items
 
@@ -191,7 +191,7 @@ The following output is displayed as a result of the above code example.
 
 ## Custom Context Menu
 
-Custom context menu is used to create your own menu item and its action. To add customized context menu items, you need to use [`contextMenuSettings.customMenuItems`](https://help.syncfusion.com/api/js/ejkanban#members:contextmenusettings-custommenuitems) property and to bind required actions for this, use [`contextClick`](https://help.syncfusion.com/api/js/ejkanban#events:contextclick) event.
+Custom context menu is used to create your own menu item and its action. To add customized context menu items, you need to use [`contextMenuSettings.customMenuItems`](https://help.syncfusion.com/api/js/ejkanban#members:contextmenusettings-custommenuitems) property of [text](https://help.syncfusion.com/api/js/ejkanban#members:contextmenusettings-custommenuitems-text) or [target](https://help.syncfusion.com/api/js/ejkanban#members:contextmenusettings-custommenuitems-target) or [template](https://help.syncfusion.com/api/js/ejkanban#members:contextmenusettings-custommenuitems-template) and to bind required actions for this, use [`contextClick`](https://help.syncfusion.com/api/js/ejkanban#events:contextclick) event.
 
 The following code example describes the above behavior.
 

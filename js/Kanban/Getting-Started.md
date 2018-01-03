@@ -255,7 +255,7 @@ N>  ODataAdaptor is the default adaptor used within DataManager. While binding t
 In order to display cards in Kanban control, you need to map the database fields to Kanban cards and columns. The required mapping field are listed as follows
 
 * `keyField` - Map the column name to use as `key` values to columns.
-* `columns` -  Map the corresponding `key` values of `keyField` column to each columns
+* `columns` -  Map the corresponding `key` values of [keyField](https://help.syncfusion.com/api/js/ejkanban#members:keyfield) column to each columns.
 * `fields.content` - Map the column name to use as content to cards.
 * `fields.primaryKey` - Map the column name to use as primary Key.
 
@@ -302,7 +302,7 @@ N>  `fields.primaryKey` field is mandatory for “Drag and Drop” ,”Selection
 
 ## Enable Swimlane
 
-`Swimlane` can be enabled by mapping the `fields.swimlaneKey` to appropriate column name in `dataSource`. This enables the grouping of the cards based on the mapped column values.
+`Swimlane` can be enabled by mapping the [fields.swimlaneKey](https://help.syncfusion.com/api/js/ejkanban#members:fields-swimlanekey) to appropriate column name in `dataSource`. This enables the grouping of the cards based on the mapped column values.
 
 {% highlight html %}
 

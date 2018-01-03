@@ -73,7 +73,7 @@ The following output is displayed as a result of the above code example.
 
 ![](Editing_images/editing_img1.png)
 
-N> For editing event handling , please refer this [API](https://help.syncfusion.com/api/js/ejkanban#events:endedit).
+N> For editing event handling, please refer this [API](https://help.syncfusion.com/api/js/ejkanban#events:endedit).
 
 ## Edit modes
 

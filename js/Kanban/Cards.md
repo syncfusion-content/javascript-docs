@@ -32,11 +32,11 @@ Map the column name to use as tag. Multiple tags can be given with comma separat
  Map the column name to use as colors to highlight cards left border.</td></tr>
 <tr>
 <td>
-{{ '[colorMapping](https://help.syncfusion.com/api/js/ejkanban#members:cardsettings.colormapping)' | markdownify }} </td><td>
+{{ '[colorMapping](https://help.syncfusion.com/api/js/ejkanban#members:cardsettings-colormapping)' | markdownify }} </td><td>
 Map the colors to use with column values which is mapped with `fields.color`.</td></tr>
 <tr>
 <td>
-{{ '[imageUrl](https://help.syncfusion.com/api/js/ejkanban#members:fields-imgurl)' | markdownify }} </td><td>
+{{ '[imageUrl](https://help.syncfusion.com/api/js/ejkanban#members:fields-imageurl)' | markdownify }} </td><td>
 Map the column name to use as image to cards.</td></tr>
 <tr>
 <td>
@@ -107,7 +107,7 @@ The following output is displayed as a result of the above code example.
 
 ## Template
 
-Templates are used to create custom card layout as per the user convenient. HTML templates can be specified in the [`template`](https://help.syncfusion.com/api/js/ejkanban#members:cardSettings-template) property of the [`cardSettings`](https://help.syncfusion.com/api/js/ejkanban#members:cardsettings) as an ID of the template’s HTML element.
+Templates are used to create custom card layout as per the user convenient. HTML templates can be specified in the [`template`](https://help.syncfusion.com/api/js/ejkanban#members:cardsettings-template) property of the [`cardSettings`](https://help.syncfusion.com/api/js/ejkanban#members:cardsettings) as an ID of the template’s HTML element.
 
 You can use JsRender syntax in the template. For more information about JsRender syntax, please refer this [`link`](https://www.jsviews.com/).
 

@@ -19,7 +19,7 @@ The Gantt control provides in-built support to add, insert and update the tasks.
 
 ## Cell Editing
 
-Update the task details through grid cell editing by setting editMode as `cellEditing`.
+Update the task details through grid cell editing by setting [editMode](/api/js/ejgantt#members:editsettings-editmode "editSettings.editMode") as `cellEditing`.
 
 The following code example shows you how to enable the `cellEditing` in Gantt control.
 
@@ -41,7 +41,7 @@ The output of Gantt with cellEditing is as follows.
 
 ## Normal Editing
 
-Update the task details through edit dialog by setting `editMode` as `normal`.
+Update the task details through edit dialog by setting [editMode](/api/js/ejgantt#members:editsettings-editmode "editSettings.editMode") as `normal`.
 
 The following code example shows you how to enable normal editing in Gantt control.
 
@@ -63,7 +63,7 @@ The following screenshot shows the output of `normal` editing.
 
 ## Taskbar Editing
 
-Update the task details by interactions such as resizing and dragging the taskbar. The following code example shows you how to enable taskbar resizing in Gantt control.
+Update the task details by interactions such as resizing and dragging the taskbar. Taskbar editing can be enabled by setting [allowGanttChartEditing](/api/js/ejgantt#members:allowganttchartediting) as `true`. The following code example shows you how to enable taskbar resizing in Gantt control.
 
 {% highlight javascript %}
 
@@ -74,7 +74,7 @@ Update the task details by interactions such as resizing and dragging the taskba
 
 {% endhighlight %}
 
-You can also enable or disable the progressbar resizing by using the 'enableProgressbarResizing'. The following code example shows you to disable this property.
+You can also enable or disable the progressbar resizing by using the [enableProgressbarResizing](/api/js/ejgantt#members:enableprogressbarresizing). The following code example shows how to disable this property.
 
 {% highlight javascript %}
 
@@ -108,9 +108,9 @@ The following screen shot shows the predecessor editing in Gantt control.
 
 ## Delete confirmation message
 
-Delete confirmation message is used to get the confirmation from the user before delete the record. This confirmation message can be enabled by setting `editSettings.showDeleteConfirmDailog` property as `true`.
+Delete confirmation message is used to get the confirmation from the user before delete the record. This confirmation message can be enabled by setting [showDeleteConfirmDialog](/api/js/ejgantt#members:editsettings-showdeleteconfirmdialog "editSettings.showDeleteConfirmDialog") property as `true`.
 
-The following code snippet explains how to enable delete confirmation message in gantt.
+The following code snippet explains how to enable delete confirmation message in Gantt.
 
 {% highlight js %}
 
@@ -128,4 +128,4 @@ $("#Gantt").ejGantt({
 
 ![](/js/Gantt/Editing_images/deleteConfirmation.png)
 
-The above screen shot shows the appearance of delete confirmation message in gantt.
+The above screen shot shows the appearance of delete confirmation message in Gantt.

@@ -311,7 +311,7 @@ The following output is displayed as a result of the above code example.
 
 ## Allow Dragging
 
-You can enable and disable drag behavior to the cards in the Kanban columns using the `allowDrag` property and the default value is `true`.
+You can enable and disable drag behavior to the cards in the Kanban columns using the [allowDrag](https://help.syncfusion.com/api/js/ejkanban#members:columns-allowdrag) property and the default value is `true`.
 
 The following code example describes the above behavior.
 
@@ -351,7 +351,7 @@ The following output is displayed as a result of the above code example.
 
 ## Allow Dropping
 
-You can enable and disable drop behavior to the cards in the Kanban columns using the `allowDrop` property and the default value is `true`.
+You can enable and disable drop behavior to the cards in the Kanban columns using the [allowDrop](https://help.syncfusion.com/api/js/ejkanban#members:columns-allowdrop) property and the default value is `true`.
 
 The following code example describes the above behavior.
 
@@ -389,9 +389,9 @@ The following output is displayed as a result of the above code example.
 
 ![](Columns_images/column_img6.png)
 
-##Items Count
+## Items Count
 
-You can show total cards count in each column's header using the property `enableTotalCount` and the default value is `false`.
+You can show total cards count in each column's header using the property [enableTotalCount](https://help.syncfusion.com/api/js/ejkanban#members:enabletotalcount) and the default value is `false`.
 
 The following code example describes the above behavior.
 
@@ -432,7 +432,7 @@ The following output is displayed as a result of the above code example.
 
 ## Customize Items Count Text
 
-You can customize the Items count text using the property `totalCount.text`.
+You can customize the Items count text using [totalCount](https://help.syncfusion.com/api/js/ejkanban#members:columns-totalcount) property of [text](https://help.syncfusion.com/api/js/ejkanban#members:columns-totalcount-text).
 
 The following code example describes the above behavior.
 

@@ -44,7 +44,7 @@ $("#GanttContainer").ejGantt({
 
 ### Context menu adding
 
-New rows can either be added above or below the selected rows by using the default context menu, while the [enableContextMenu](/api/js/ejgantt#members:enablecontextmenu) is set to true. The new row added will have the same task information similar to the selected row.
+New rows can either be added above or below the selected rows by using the default context menu, while the [enableContextMenu](/api/js/ejgantt#members:enablecontextmenu) is set to `true`. The new row added will have the same task information similar to the selected row.
 
 {% highlight javascript %}
 $("#GanttContainer").ejGantt({
@@ -125,7 +125,7 @@ The following screen shot shows to add new row as child.
 
 It is possible to dynamically re-arrange the rows in the Gantt control by using the [allowDragAndDrop](/api/js/ejgantt#members:allowdraganddrop "allowDragAndDrop") property. With this property, row drag and drop can be enabled or disabled. Rows can be inserted above, below as a sibling or as a child to the existing row with the help of this feature. A default tooltip is rendered while dragging the Gantt row and this tooltip can be customized by the [dragTooltip](/api/js/ejgantt#members:dragtooltip "dragTooltip") property. This property has inner properties such as [showTooltip](/api/js/ejgantt#members:dragtooltip-showtooltip "dragTooltip.showTooltip"), [tooltipItems](/api/js/ejgantt#members:dragtooltip-tooltipitems "dragTooltip.tooltipItems") and [tooltipTemplate](/api/js/ejgantt#members:dragtooltip-tooltiptemplate "dragTooltip.tooltipTemplate").
 
-The `showTooltip` property is used to enable or disable the tooltip. By default, this property value is `false`.
+The [showTooltip](/api/js/ejgantt#members:dragtooltip-showtooltip "dragTooltip.showTooltip") property is used to enable or disable the tooltip. By default, this property value is `false`.
 
 The following code explains about enabling the row drag and drop with the default tooltip in the Gantt.
 
@@ -155,7 +155,7 @@ The following screenshot depicts a row drag and drop in the Gantt widget.
 
 ### Customizing drag tooltip
 
-The [tooltipItems](/api/js/ejgantt#members:dragtooltip-tooltipitems) property is used to customize the tooltip items. By using this property, specific fields can be rendered in the tooltip. By default this property value is `null`, and all the defined field items are rendered in the tooltip.
+The [tooltipItems](/api/js/ejgantt#members:dragtooltip-tooltipitems "dragTooltip.tooltipItems") property is used to customize the tooltip items. By using this property, specific fields can be rendered in the tooltip. By default this property value is `null`, and all the defined field items are rendered in the tooltip.
 
 The following code shows how to render row drag tooltip with the desired field items.
 
@@ -187,7 +187,7 @@ $("#GanttContainer").ejGantt({
 });
 {% endhighlight %}
 
-The [tooltipTemplate](/api/js/ejgantt#members:dragtooltip-tooltiptemplate) property renders the template tooltip for row drag and drop in the Gantt control by using the JsRender template. You can provide either the id value of the script element or the script element to the property.
+The [tooltipTemplate](/api/js/ejgantt#members:dragtooltip-tooltiptemplate "dragTooltip.tooltipTemplate") property renders the template tooltip for row drag and drop in the Gantt control by using the JsRender template. You can provide either the id value of the script element or the script element to the property.
 
 The following code shows how to render row drag tooltip with tooltip template.
 

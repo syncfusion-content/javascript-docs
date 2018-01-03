@@ -25,7 +25,7 @@ Gantt supports the following types of column editors,
   
 ## Format column
 
-It is possible to format a column using ‘load’ event. The following code examples show how to format the ‘progress’ column with percentage value.
+It is possible to format a column using [load](/api/js/ejgantt#events:load) event. The following code examples show how to format the ‘progress’ column with percentage value.
 
 {% highlight javascript %}
  $("#GanttContainer").ejGantt({
