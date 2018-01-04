@@ -472,7 +472,7 @@ Custom validation error messages can also be defined in the column object. The b
 {% endhighlight %}
 
 ### Custom Validation rules
-Apart by the in-buit validation rules, any custom validation rules can also be defined for the column. The below code example explains defining custom validation rule for a column.
+Apart by the in-built validation rules, any custom validation rules can also be defined for the column. The below code example explains defining custom validation rule for a column.
 
 {% highlight js %}
 

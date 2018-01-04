@@ -164,7 +164,7 @@ The following output is displayed as a result of the above code example.
 
 It is possible to open the add dialog dynamically with a custom using the method showAddDialog..
 
-Similiarly, open the Edit dialog dynamically using the method showEditDialog(index), with the index of the row to be edited as parameter.
+Similarly, open the Edit dialog dynamically using the method showEditDialog(index), with the index of the row to be edited as parameter.
 
 {% highlight js %}
 <script>
@@ -241,7 +241,7 @@ The output of the TreeGrid width editTemplate as follows.
 
 ## Delete confirmation message
 
-Delete confirmation message is used to get the confirmation from the user before delete the record. This confirmation message can be enabled by setting [showDeleteConfirmDailog](/api/js/ejtreegrid#members:editsettings-showdeleteconfirmdialog "editSettings.showDeleteConfirmDailog") property as `true`.
+Delete confirmation message is used to get the confirmation from the user before delete the record. This confirmation message can be enabled by setting [showDeleteConfirmDialog](/api/js/ejtreegrid#members:editsettings-showdeleteconfirmdialog "editSettings.showDeleteConfirmDialog") property as `true`.
 
 The following code snippet explains how to enable delete confirmation message in tree grid.
 
