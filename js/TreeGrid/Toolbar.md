@@ -9,7 +9,7 @@ api: /api/js/ejtreegrid
 ---
 # Toolbar
 
-In TreeGrid we can show/hide the Toolbar by using the [`toolbarSettings.showToolbar`](https://help.syncfusion.com/api/js/ejtreegrid#members:toolbarsettings-showtoolbar "showToolbar") property. We can add default toolbar items by [`toolbarSettings.toolbarItems`](https://help.syncfusion.com/api/js/ejtreegrid#members:toolbarsettings-toolbaritems "toolbarItems"). User can also create a custom toolbar items by using the [`toolbarSettings.customToolbarItems`](https://help.syncfusion.com/api/js/ejtreegrid#members:toolbarsettings-customToolbarItems "customToolbarItems").
+In TreeGrid we can show/hide the Toolbar by using the [showToolbar](/api/js/ejtreegrid#members:toolbarsettings-showtoolbar "toolbarSettings.showToolbar") property. We can add default toolbar items by [toolbarItems](/api/js/ejtreegrid#members:toolbarsettings-toolbaritems "toolbarSettings.toolbarItems"). User can also create a custom toolbar items by using the [customToolbarItems](/api/js/ejtreegrid#members:toolbarsettings-customtoolbaritems "toolbarSettings.customToolbarItems").
 
 ## Default Toolbar Items
 Using TreeGrid default toolbar items we can perform below operations.
@@ -66,11 +66,11 @@ N> To perform add, edit, delete, cancel and update using Toolbar items we need t
 
 CustomToolbarItems allows us to insert custom icons and custom template in TreeGrid toolbar. By using below properties we can customize TreeGrid toolbar as per our requirement.
 
-* **text**: To insert the custom icons in toolbar using CSS class name selector.
+* [text](/api/js/ejtreegrid#members:toolbarsettings-customtoolbaritems-text "toolbarSettings.customToolbarItems.text"): To insert the custom icons in toolbar using CSS class name selector.
 
-* **templateID**: To insert the custom icons in toolbar using script templates. Using this property we can bind HTML elements and other EJ controls to TreeGrid toolbar.
+* [templateID](/api/js/ejtreegrid#members:toolbarsettings-customtoolbaritems-templateid "toolbarSettings.customToolbarItems.templateID"): To insert the custom icons in toolbar using script templates. Using this property we can bind HTML elements and other EJ controls to TreeGrid toolbar.
 
-* **tooltipText**: Displays tooltip text for the custom icons.
+* [tooltipText](/api/js/ejtreegrid#members:toolbarsettings-customtoolbaritems-tooltiptext "toolbarSettings.customToolbarItems.tooltipText"): Displays tooltip text for the custom icons.
 
 To insert EJ Controls in TreeGrid toolbar we need to initiate the control in [`create`](https://help.syncfusion.com/api/js/ejtreegrid#events:create "create") client-side event. In [`toolbarClick`](https://help.syncfusion.com/api/js/ejtreegrid#events:toolbarclick "toolbarclick") client-side event we can bind actions to the custom toolbar items.
 

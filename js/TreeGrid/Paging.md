@@ -10,7 +10,7 @@ api: /api/js/ejtreegrid
 
 # Paging
 
-The TreeGrid control provides support for displaying records in paginated view. Paging can be enabled in TreeGrid by setting the `allowPaging` property as `true`.
+The TreeGrid control provides support for displaying records in paginated view. Paging can be enabled in TreeGrid by setting the [allowPaging](/api/js/ejtreegrid#members:allowpaging) property as `true`.
 
 The below code snippet explains enabling paging in TreeGrid.
 
@@ -31,12 +31,12 @@ The output of the TreeGrid with paging enabled is displayed below.
 
 ## Paging settings
 
-The paging in TreeGrid can be customized by using the `pageSettings` property.
-The number of records to be displayed per page can be limited by using the `pageSettings.pageSize` property. 
-The number of root nodes or the 0th level records to be displayed per page can be limited by setting the `pageSettings.pageSizeMode` property as `Root`. When the `pageSettings.pageSizeMode` property is set as `Root` the number of records to displayed per page which is defined in the The `pageSettings.pageSize` property will be considered only for the root nodes or the 0th level records.
-The `pageSettings.pageCount` property is used to display the page number to be displayed in the pager.
-The `pageSettings.currentPage` property is used to set the active page to displayed initially.
-The `pageSettings.totalRecordsCount` property is used to limit the total number of records from the data source to be displayed in TreeGrid.
+The paging in TreeGrid can be customized by using the [pageSettings](/api/js/ejtreegrid#members:pagesettings) property.
+The number of records to be displayed per page can be limited by using the [pageSize](/api/js/ejtreegrid#members:pagesettings-pagesize "pageSettings.pageSize") property. 
+The number of root nodes or the 0th level records to be displayed per page can be limited by setting the [pageSizeMode](/api/js/ejtreegrid#members:pagesettings-pagesizemode "pageSettings.pageSizeMode") property as `Root`. When the [pageSizeMode](/api/js/ejtreegrid#members:pagesettings-pagesizemode "pageSettings.pageSizeMode") property is set as `Root` the number of records to displayed per page which is defined in the The [pageSize](/api/js/ejtreegrid#members:pagesettings-pagesize "pageSettings.pageSize") property will be considered only for the root nodes or the 0th level records.
+The [pageCount](/api/js/ejtreegrid#members:pagesettings-pagecount "pageSettings.pageCount") property is used to display the page number to be displayed in the pager.
+The [currentPage](/api/js/ejtreegrid#members:pagesettings-currentpage "pageSettings.currentPage") property is used to set the active page to displayed initially.
+The [totalRecordsCount](/api/js/ejtreegrid#members:pagesettings-totalrecordscount "pageSettings.totalRecordsCount") property is used to limit the total number of records from the data source to be displayed in TreeGrid.
  The following code example explains the properties in pageSettings. 
 
 {% highlight js %}
@@ -57,7 +57,7 @@ You can also find the demo for pageSettings [here](http://js.syncfusion.com/demo
 
 ## Pager Template
 
-It is possible to customize the default pager in TreeGrid by using the `pageSettings.template` property.
+It is possible to customize the default pager in TreeGrid by using the [template](/api/js/ejtreegrid#members:pagesettings-template "pageSettings.template") property.
 The below code snippet explains how to customize the default pager with template
 
 {% highlight html %}

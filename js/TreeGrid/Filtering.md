@@ -10,7 +10,7 @@ api: /api/js/ejtreegrid
 
 # Filtering
 
-Filtering helps to view specific or related records from data source which meets a given filtering criteria. To enable filtering in TreeGrid, set the `allowFiltering` as `true`
+Filtering helps to view specific or related records from data source which meets a given filtering criteria. To enable filtering in TreeGrid, set the [allowFiltering](/api/js/ejtreegrid#members:allowfiltering)  as `true`
 TreeGrid provides support for the following filtering modes.
 
 * Filter bar
@@ -44,7 +44,7 @@ The output of the TreeGrid with filtering enabled is as follows.
 
 ### Filter Bar 
 
-This is the default filtering mode in TreeGrid. It can also be enabled by setting the `filterSettings.filterType` as `filterbar`. When this filtering mode is enabled, a filter row will be displayed below the column header, in which we can provide the filter query.
+This is the default filtering mode in TreeGrid. It can also be enabled by setting the [filterType](/api/js/ejtreegrid#members:filtersettings-filtertype "filterSettings.filterType") as `filterbar`. When this filtering mode is enabled, a filter row will be displayed below the column header, in which we can provide the filter query.
 
 There are two types of actions available to initiate the filtering process in the filter bar mode,
 
@@ -71,7 +71,7 @@ The output of the filtering with filter bar enabled is as follows.
 ![](/js/TreeGrid/Filtering_images/Filtering_img2.png)
 
 ### Menu filtering
-Menu filtering can be enabled by setting the `filterSettings.filterType` property as `menu`. The below code snippet explains how to enable menu filtering in TreeGrid.
+Menu filtering can be enabled by setting the [filterType](/api/js/ejtreegrid#members:filtersettings-filtertype "filterSettings.filterType") property as `menu`. The below code snippet explains how to enable menu filtering in TreeGrid.
 
 {% highlight js %}
 
@@ -89,7 +89,7 @@ The output of the filtering with filter menu enabled is as follows.
 ![](/js/TreeGrid/Filtering_images/Filtering_img3.png)
 
 ### Excel Filtering
-Excel filtering can be enabled by setting the `filterSettings.filterType` property as `excel`. The excel menu contains options such as sorting, clear filter and advance filtering options.
+Excel filtering can be enabled by setting the [filterType](/api/js/ejtreegrid#members:filtersettings-filtertype "filterSettings.filterType") property as `excel`. The excel menu contains options such as sorting, clear filter and advance filtering options.
 The below code snippet explains how to enable excel filtering in TreeGrid.
 
 {% highlight js %}
@@ -148,7 +148,7 @@ $("#Treegrid ").ejTreeGrid ({
 The above screen shot shows TreeGrid with `enableCaseSensitivity` set as false in search action.
 
 ## Filtering types
-By default, the filtering type for a column is inherited from the `columns.editType` property. You can also define a specific filtering type for a column using the `columns.filterEditType` property.
+By default, the filtering type for a column is inherited from the [editType](/api/js/ejtreegrid#members:columns-edittype "columns.editType") property. You can also define a specific filtering type for a column using the [filterEditType](/api/js/ejtreegrid#members:columns-filteredittype "columns.filterEditType") property.
 The below code snippet explains on how to set a filtering type for a column.
 
 {% highlight js %}
@@ -196,7 +196,7 @@ $("#TreeGridContainer").ejTreeGrid({
 {% endhighlight %}
 
 ## Filter columns at initial load
-It is also possible to filter one or more columns at load time by providing the field and filter query values to the `filterSettings.filteredColumns` property. The following code example explains how to filter a column on initial load.
+It is also possible to filter one or more columns at load time by providing the field and filter query values to the [filteredColumns](/api/js/ejtreegrid#members:filtersettings-filteredcolumns "filterSettings.filteredColumns") property. The following code example explains how to filter a column on initial load.
 
 {% highlight js %}
 
@@ -216,7 +216,7 @@ $("#TreeGridContainer").ejTreeGrid({
 {% endhighlight %}
 
 ## Disabling filtering for a specific column 
-It is possible to disable filtering for a specific column by setting the `columns.allowFiltering` as `false` in the column definition.
+It is possible to disable filtering for a specific column by setting the [allowFiltering](/api/js/ejtreegrid#members:columns-edittemplate "columns.allowFiltering") as `false` in the column definition.
 The below code snippet explains the above behavior.
 
 {% highlight js %}

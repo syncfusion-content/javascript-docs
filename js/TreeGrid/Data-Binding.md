@@ -81,8 +81,8 @@ The output of the above steps is as follows:
 
 TreeGrid is rendered from Self-Referential data structures by providing two fields, **ID** field and **parent ID** field.
 
-* **ID Field**:  This field contains unique values used to identify nodes. Its name is assigned to the [`idMapping`](/api/js/ejtreegrid#idmappingspan-classtype-signature-type-stringstringspan "idMapping") property.
-* **Parent ID Field**: This field contains values that indicate parent nodes. Its name is assigned to the [`parentIdMapping`](/api/js/ejtreegrid#parentidmappingspan-classtype-signature-type-stringstringspan "parentIdMapping") property.
+* **ID Field**:  This field contains unique values used to identify nodes. Its name is assigned to the [idMapping](/api/js/ejtreegrid#members:idmapping) property.
+* **Parent ID Field**: This field contains values that indicate parent nodes. Its name is assigned to the [parentIdMapping](/api/js/ejtreegrid#members:parentidmapping) property.
 
 {% highlight js %}
 
@@ -151,7 +151,7 @@ N> 2. For better initial load time performance, we need to define the “hasChil
 
 Load on demand support in TreeGrid can be enabled by the following ways.
 
-1. By enabling the [`enableLoadOnDemand`](https://help.syncfusion.com/api/js/ejtreegrid#members:enableLoadOnDemand "enableLoadOnDemand") property of TreeGrid control
+1. By enabling the [enableLoadOnDemand](/api/js/ejtreegrid#members:enableloadondemand) property of TreeGrid control
 2. By enabling the **crossDomain** property while binding data source using ejDataManager control.
 
 The following code explains how to use Load on Demand in TreeGrid Control.
