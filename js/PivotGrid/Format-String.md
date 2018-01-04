@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Format String
 description: Format String

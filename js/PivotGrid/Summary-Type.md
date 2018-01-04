@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Summary-Type
 description: summary type
