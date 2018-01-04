@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Relational-Getting-Started
 description: relational-getting started

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Relational-Connection-Types
 description: Relational Connection Types

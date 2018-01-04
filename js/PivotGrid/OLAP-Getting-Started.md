@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: OLAP-Getting-Started
 description: olap-getting started
