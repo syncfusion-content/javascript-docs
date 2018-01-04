@@ -265,7 +265,7 @@ Try it: [ColorValuePath](http://jsplayground.syncfusion.com/dzkekv33)
 
 ## Enable Tooltip
 
-You can enable the tooltip by setting [`showTooltip`](../api/ejtreemap#members:showTooltip) property to “True”. By default, it takes the property of the bound object that is referred in the [`weightValuePath`](../api/ejtreemap#members:weightvaluepath) and displays its content when the corresponding node is hovered. You can customize the template for tooltip using [`tooltipTemplate`](../api/ejtreemap#members:tooltiptemplate) property.
+You can enable the tooltip by setting [`showTooltip`](../api/ejtreemap#members:showTooltip) property to “true”. By default, it takes the property of the bound object that is referred in the [`weightValuePath`](../api/ejtreemap#members:weightvaluepath) and displays its content when the corresponding node is hovered. You can customize the template for tooltip using [`tooltipTemplate`](../api/ejtreemap#members:tooltiptemplate) property.
 
 ## Leaf ItemSettings
 
@@ -307,7 +307,7 @@ Try it: [LeafItemSettings](http://jsplayground.syncfusion.com/apibaesy)
 
 ## Enable Legend
 
-You can set the color value of leaf nodes using [`TreeMap Legend`](../api/ejtreemap#members:legendsettings). This legend is appropriate only for the TreeMap whose leaf nodes are colored using `rangeColorMapping`. You can set [`showLegend`](../api/ejtreemap#members:showlegend) property value to “True” to make a legend visible.
+You can set the color value of leaf nodes using [`TreeMap Legend`](../api/ejtreemap#members:legendsettings). This legend is appropriate only for the TreeMap whose leaf nodes are colored using `rangeColorMapping`. You can set [`showLegend`](../api/ejtreemap#members:showlegend) property value to “true” to make a legend visible.
 
 ### Label for Legend
 
