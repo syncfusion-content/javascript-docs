@@ -11,20 +11,20 @@ api: /api/js/ejpivotgrid
 
 # ejPivotGrid
 
-PivotGrid widget is an easily configurable, presentation-quality business control that reads both OLAP and Relational data source, allows to create multi-dimensional views for analysis and satisfying business user needs. PivotGrid uses services to initialize and operate widget and also to export PivotGrid to an Excel, Word, PDF or CSV document.
+PivotGrid widget is an easily configurable, presentation-quality business control that reads both OLAP and relational data sources. It allows you to create multi-dimensional views for analyzing and satisfying business user needs. PivotGrid uses services to initialize and operate widget and also to export PivotGrid to an Excel, Word, PDF, or CSV document.
 
-## WCF/WebAPI Service to populate PivotGrid 
-You can populate a simple PivotGrid with OLAP/Relational data completely from the server-side using WCF/WebAPI service. You can refer the **Getting Started** document available in the following UG documentation section.
+## WCF/WebAPI service to populate PivotGrid
+You can populate a simple PivotGrid with the OLAP/relational data completely from the server-side by using the WCF/WebAPI service. You can refer the **Getting Started** document available in the following UG documentation section.
 
-For Relational data source, [click here.](https://help.syncfusion.com/js/pivotgrid/relational-getting-started#creating-a-simple-application-with-pivotgrid-and-relational-datasource-server-mode)
+For relational data source, [click here.](https://help.syncfusion.com/js/pivotgrid/relational-getting-started#creating-a-simple-application-with-pivotgrid-and-relational-datasource-server-mode)
 
 For OLAP data source, [click here.](https://help.syncfusion.com/js/pivotgrid/olap-getting-started#creating-a-simple-application-with-pivotgrid-and-olap-datasource-server-mode)
  
-## Exporting Service
+## Exporting service
 
-### Excel Export
+### Excel export
 
-User can export the contents of PivotGrid to an Excel document for future archival, references and analysis purposes.
+You can export the contents of PivotGrid to an Excel document for future archival, references, and analysis purposes.
 
 #### URL
 
@@ -45,7 +45,7 @@ User can export the contents of PivotGrid to an Excel document for future archiv
 
 #### Request
 
-To achieve Excel export, service URL and file name is sent as the parameter.
+To achieve Excel export, the service URL and the file name are set as parameters.
 
 ##### JS
 
@@ -114,12 +114,12 @@ public void ExcelExport()
 
 ##### Content-Type: application/octet-stream
 
-##### Response for Excel Export:
+##### Response for Excel export:
 Browser will prompt a dialog box to save the Excel document.
 
-### Word Export
+### Word export
 
-User can export the contents of PivotGrid to a Word document for future archival, references and analysis purposes.
+You can export the contents of PivotGrid to a Word document for future archival, references, and analysis purposes.
 
 #### URL
 
@@ -140,7 +140,7 @@ User can export the contents of PivotGrid to a Word document for future archival
 
 #### Request
 
-To achieve Word export, service URL and file name is sent as the parameter.
+To achieve Word export, the service URL and the file name are set as parameters.
 
 ##### JS
 
@@ -211,9 +211,9 @@ public void WordExport()
 ##### Response for Word export:
 Browser will prompt a dialog box to save the Word document.
 
-### PDF Export
+### PDF export
 
-User can export the contents of PivotGrid to a PDF document for future archival, references and analysis purposes.
+You can export the contents of PivotGrid to a PDF document for future archival, references, and analysis purposes.
 
 #### URL
 
@@ -234,7 +234,7 @@ User can export the contents of PivotGrid to a PDF document for future archival,
 
 #### Request
 
-To achieve PDF export, service URL and file name is sent as the parameter.
+To achieve PDF export, the service URL and the file name are set as parameters.
 
 ##### JS
 
@@ -305,9 +305,9 @@ public void PDFExport()
 ##### Response for PDF export:
 Browser will prompt a dialog box to save the PDF document.
 
-### CSV Export
+### CSV export
 
-User can export the contents of PivotGrid to a CSV document for future archival, references and analysis purposes.
+You can export the contents of PivotGrid to a CSV document for future archival, references, and analysis purposes.
 
 #### URL
 
@@ -328,7 +328,7 @@ User can export the contents of PivotGrid to a CSV document for future archival,
 
 #### Request
 
-To achieve CSV export, service URL and file name is sent as the parameter.
+To achieve CSV export, the service URL and the file name are set as parameters.
 
 ##### JS
 

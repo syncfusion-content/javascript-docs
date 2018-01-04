@@ -10,11 +10,11 @@ api: /api/js/ejpivotgrid
 
 # Resizing Column
 
-Allows the user to change the column width by holding and dragging the column border using the mouse pointer.
+Allows you to change the column width by holding and dragging the column border using the mouse pointer.
 
-## Column Width Based on Size
+## Column width based on size
 
-The property [`enableColumnResizing`](/api/js/ejpivotgrid#members:enablecolumnresizing) adjusts the width of each column based on size of the widget.
+The [`enableColumnResizing`](/api/js/ejpivotgrid#members:enablecolumnresizing) property adjusts the width of each column based on size of the widget.
 
 {% highlight html %}
 
@@ -32,9 +32,9 @@ The property [`enableColumnResizing`](/api/js/ejpivotgrid#members:enablecolumnre
 {% endhighlight %} 
 
 
-## Column Width Based on Text
+## Column width based on text
 
-The property [`resizeColumnsToFit`](/api/js/ejpivotgrid#members:resizecolumnstofit) automatically adjusts the width of each column based on the maximum content length available in the respective column.
+The [`resizeColumnsToFit`](/api/js/ejpivotgrid#members:resizecolumnstofit) property automatically adjusts the width of each column based on the maximum content length available in the respective column.
 
 {% highlight html %}
 

@@ -9,7 +9,7 @@ api: /api/js/ejpivotgrid
 ---
 
 # Styling
-By default, PivotGrid supports **17** different themes.
+By default, the PivotGrid supports **17** different themes.
 
 * default-theme
 * flat-azure-dark
@@ -32,10 +32,10 @@ By default, PivotGrid supports **17** different themes.
 You can also customize the appearance of the following component manually.
 
 * PivotGrid
-* Grouping Bar 
-* PivotTable Field List
+* Grouping bar 
+* PivotTable field list
 
-To change the appearance of PivotGrid, apply the below customized CSS.
+To change the appearance of the PivotGrid, apply the below customized CSS.
 
 {% highlight CSS %}
 
@@ -70,7 +70,7 @@ To change the appearance of PivotGrid, apply the below customized CSS.
 
 ![](Styling_images/customtheme-pivotgrid.png)
 
-To change the appearance of Grouping Bar, apply the below customized CSS.
+To change the appearance of the grouping bar, apply the below customized CSS.
 
 {% highlight CSS %}
 
@@ -99,7 +99,7 @@ To change the appearance of Grouping Bar, apply the below customized CSS.
 
 ![](Styling_images/customtheme-groupingbar.png)
 
-To change the appearance of PivotTable Field List, apply the below customized CSS.
+To change the appearance of the pivotTable field list, apply the below customized CSS.
 
 {% highlight CSS %}
 
@@ -125,5 +125,5 @@ To change the appearance of PivotTable Field List, apply the below customized CS
 
 ![](Styling_images/customtheme-fieldist.png)
 
-You can also customize the appearance of the Pivot component using our Theme Studio utility. To know more about Theme Studio [click here](/js/PivotGrid/Styling). 
+You can also customize the appearance of the pivot component by using the Theme Studio utility. To know more about Theme Studio [click here](/js/PivotGrid/Styling).
 

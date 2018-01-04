@@ -11,19 +11,19 @@ api: /api/js/ejpivotgrid
 # PivotGrid: Elements
 
 ## Hyperlink
-The PivotGrid control supports hyperlink option to link data for each individual cell. Hyperlink can be enabled separately for row header, column header, value and summary cells. Following are the respective properties:
+The PivotGrid control supports the hyperlink option to link data for each individual cell. Hyperlink can be enabled separately for row header, column header, value, and summary cells. Following are the respective properties:
 
 * [`enableColumnHeaderHyperlink`](/api/js/ejpivotgrid#members:hyperlinksettings-enablerowheaderhyperlink) - Enables hyperlink for column headers.
 * [`enableRowHeaderHyperlink`](/api/js/ejpivotgrid#members:hyperlinksettings-enablerowheaderhyperlink) - Enables hyperlink for row headers.
-* [`enableSummaryCellHyperlink`](/api/js/ejpivotgrid#members:hyperlinksettings-enablesummarycellhyperlink) - Enables hyperlink for summary cell.
-* [`enableValueCellHyperlink`](/api/js/ejpivotgrid#members:hyperlinksettings-enablevaluecellhyperlink) - Enables hyperlink for value cell.
+* [`enableSummaryCellHyperlink`](/api/js/ejpivotgrid#members:hyperlinksettings-enablesummarycellhyperlink) - Enables hyperlink for the summary cell.
+* [`enableValueCellHyperlink`](/api/js/ejpivotgrid#members:hyperlinksettings-enablevaluecellhyperlink) - Enables hyperlink for the value cell.
 
-Also hyperlink option provides separate events for row header, column header, value and summary cells as mentioned below.
+Also hyperlink option provides separate events for row header, column header, value, and summary cells as mentioned below:
  
-* [`columnHeaderHyperlinkClick`](/api/js/ejpivotgrid#events:columnheaderhyperlinkclick) - Returns column header information through event on hyperlink click.
-* [`rowHeaderHyperlinkClick`](/api/js/ejpivotgrid#events:rowheaderhyperlinkclick) - Returns row header information through event on hyperlink click.
-* [`summaryCellHyperlinkClick`](/api/js/ejpivotgrid#events:summarycellhyperlinkclick) - Returns summary cell information through event on hyperlink click.
-* [`valueCellHyperlinkClick`](/api/js/ejpivotgrid#events:valuecellhyperlinkclick) - Returns value cell information through event on hyperlink click.
+* [`columnHeaderHyperlinkClick`](/api/js/ejpivotgrid#events:columnheaderhyperlinkclick) - Returns column header information through event when clicking the hyperlink.
+* [`rowHeaderHyperlinkClick`](/api/js/ejpivotgrid#events:rowheaderhyperlinkclick) - Returns row header information through event when clicking the hyperlink.
+* [`summaryCellHyperlinkClick`](/api/js/ejpivotgrid#events:summarycellhyperlinkclick) - Returns summary cell information through event when clicking the hyperlink.
+* [`valueCellHyperlinkClick`](/api/js/ejpivotgrid#events:valuecellhyperlinkclick) - Returns value cell information through event when clicking the hyperlink.
 
 {% highlight html %}
 
@@ -54,9 +54,9 @@ $(function() {
 ![](PivotGrid-Elements_images/hyperlink.png)
 
 ## Selection
-You can select a particular range of value cells from PivotGrid and manipulate/display them. Cell selection is applicable only for value cells and you can enable this functionality by setting [`enableCellSelection`](/api/js/ejpivotgrid#members:enablecellselection) property to true.
+You can select a particular range of value cells from the PivotGrid and manipulate/display them. Cell selection is applicable only for value cells, and you can enable this functionality by setting the [`enableCellSelection`](/api/js/ejpivotgrid#members:enablecellselection) property to true.
 
-The [`cellSelection`](/api/js/ejpivotgrid#events:cellselection) event would be triggered as soon as the selection process is over, that is, when the mouse left click is released. The event argument contains a collection of JSON records and header values, which contains information about the selected cells.
+The [`cellSelection`](/api/js/ejpivotgrid#events:cellselection) event will be triggered after the selection process, that is, when the mouse left click is released. The event argument contains a collection of JSON records and header values, which contains information about selected cells.
 
 {% highlight html %}
 
@@ -80,10 +80,10 @@ $(function() {
 
 ![](PivotGrid-Elements_images/cellselection.png)
 
-## Cell Context
-Cell context allows user to perform any custom operation on cell right-click. For example, you can create and display context menu on cell right-click.
+## Cell context
+Cell context allows you to perform any custom operation by right-clicking the cell. For example, you can create and display the context menu by right-clicking the cell.
 
-Cell context is enabled by setting the [`enableCellContext`](/api/js/ejpivotgrid#members:enablecellcontext) property to true. The [`cellContext`](/api/js/ejpivotgrid#events:cellcontext) event would be raised as soon as right-click is done providing cell information through event argument.
+Cell context is enabled by setting the [`enableCellContext`](/api/js/ejpivotgrid#members:enablecellcontext) property to true. The [`cellContext`](/api/js/ejpivotgrid#events:cellcontext) event will be enabled by right-clicking for provided cell information through the event argument.
 
 {% highlight html %}
 
@@ -102,10 +102,10 @@ cell_RightClick = function(evt) {
 
 {% endhighlight %}
 
-## Conditional Formatting
-Conditional formatting in PivotGrid allows user to highlight particular cells with certain color, font-style, font-family etc. based on the condition they have met.  Also the condition can be applied for certain Measure alone.
+## Conditional formatting
+Conditional formatting in the PivotGrid allows you to highlight particular cells with certain color, font-style, font-family, etc., based on the applied condition.  Also the condition can be applied for certain measure alone.
   
-Conditional formatting is enabled by setting [`enableConditionalFormatting`](/api/js/ejpivotgrid#members:enableConditionalFormatting) property to true and the formatting dialog is launched when **"createConditionalDialog"** method is invoked.
+Conditional formatting is enabled by setting the [`enableConditionalFormatting`](/api/js/ejpivotgrid#members:enableConditionalFormatting) property to true and the formatting dialog is launched when the **"createConditionalDialog"** method is invoked.
 
 {% highlight html %}
 
@@ -148,23 +148,23 @@ Conditional formatting is enabled by setting [`enableConditionalFormatting`](/ap
 
 ### Export
 
-We can export the PivotGrid with highlighted particular cells along with its formatting styles. 
+You can export the PivotGrid with highlighted particular cells along with its formatting styles.
 
-LIMITATIONS FOR WORD:
+Limitations for Word:
 
-The following border styles are not supported
+The following border styles are not supported:
 
 * Solid
 * Groove
 * Ridge
 
-LIMITATIONS FOR PDF:
+Limitations for PDF:
 
 Border styles are not applicable.
 
-LIMITATIONS FOR EXCEL:
+Limitations for Excel:
 
-The following border styles are alone supported
+The following border styles are alone supported:
 
 * Dashed
 * Dotted
