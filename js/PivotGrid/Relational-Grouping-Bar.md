@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Grouping-Bar
 description: grouping bar

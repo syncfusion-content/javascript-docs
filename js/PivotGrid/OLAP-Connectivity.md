@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: OLAP-Connection-Types
 description: OLAP Connection Types
