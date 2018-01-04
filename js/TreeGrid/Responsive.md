@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Responsive
 
-The TreeGrid control has support for responsive behavior based on client browser's width and height. To enable responsive support in TreeGrid, the `isResponsive` property must be enabled.
+The TreeGrid control has support for responsive behavior based on client browser's width and height. To enable responsive support in TreeGrid, the [isResponsive](/api/js/ejtreegrid#members:isresponsive) property must be enabled.
 
 Please find the example describes the above behavior.
 
@@ -117,7 +117,7 @@ The following output is displayed as a result of the above code example.
 
 ## Priority for columns
 
-Column priorities are used to show or hide the columns based on priority values and browser width to best accommodate the possible columns. Priority value of the column is set by the `columns.priority` property and the value ranges from one to six.
+Column priorities are used to show or hide the columns based on priority values and browser width to best accommodate the possible columns. Priority value of the column is set by the [priority](/api/js/ejtreegrid#members:columns-priority "columns.priority") property and the value ranges from one to six.
 
 The following code example explains how to set priority for column.
 
