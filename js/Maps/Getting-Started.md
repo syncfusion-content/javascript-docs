@@ -439,7 +439,7 @@ The following screenshot illustrates a map with gradient color property enabled.
 
 ## Enable Tooltip
 
-The tooltip is displayed only when the [`showTooltip`](../api/ejmap#members:layers-showtooltip) is set to “**True**” in the `layers`. By default, it takes the property of the bound object that is referred in the `valuePath` and displays its content on hovering the corresponding shape. The [`tooltipTemplate`](../api/ejmap#members:layers-tooltiptemplate) property is used for customizing the template for tooltip.	
+The tooltip is displayed only when the [`showTooltip`](../api/ejmap#members:layers-showtooltip) is set to “**true**” in the `layers`. By default, it takes the property of the bound object that is referred in the `valuePath` and displays its content on hovering the corresponding shape. The [`tooltipTemplate`](../api/ejmap#members:layers-tooltiptemplate) property is used for customizing the template for tooltip.	
 
 {% highlight html %}
 

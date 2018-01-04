@@ -455,7 +455,7 @@ The following screenshot displays a **BulletGraph** in the caption and title in 
 
 **Show Tooltip**
 
-You can use a [`Tooltip`](../api/ejbulletgraph#members:tooltipsettings) in your application to display any information. In this example, a tooltip is used to show the values (in millimeter) of forecasted rainfall, actual rainfall received in (mm) and also the appropriate year. The tooltip is enabled by setting the [`visible`](../api/ejbulletgraph#members:tooltipsettings-visible) property in tooltip to **True.** Also, in order to set the [`template tooltip`](../api/ejbulletgraph#members:tooltipsettings-template), you can pass the template id to it as shown in the following code example.
+You can use a [`Tooltip`](../api/ejbulletgraph#members:tooltipsettings) in your application to display any information. In this example, a tooltip is used to show the values (in millimeter) of forecasted rainfall, actual rainfall received in (mm) and also the appropriate year. The tooltip is enabled by setting the [`visible`](../api/ejbulletgraph#members:tooltipsettings-visible) property in tooltip to **true.** Also, in order to set the [`template tooltip`](../api/ejbulletgraph#members:tooltipsettings-template), you can pass the template id to it as shown in the following code example.
 
 {% highlight javascript %}
 

@@ -336,7 +336,7 @@ This property is enabled only when [`colorPalette`](../api/ejmap#members:layers-
 
 ## Tooltip
 
-The tooltip is displayed only when you set [`showTooltip`](../api/ejmap#members:layers-showtooltip) to “True” in the shape layers. By default, it takes the property of the bound object that is referred in the [`valuePath`](../api/ejmap#members:layers-shapesettings-valuepath) and displays its content on hovering the corresponding shape. 
+The tooltip is displayed only when you set [`showTooltip`](../api/ejmap#members:layers-showtooltip) to “true” in the shape layers. By default, it takes the property of the bound object that is referred in the [`valuePath`](../api/ejmap#members:layers-shapesettings-valuepath) and displays its content on hovering the corresponding shape. 
 
 {% highlight javascript %}
 
