@@ -61,7 +61,7 @@ To initialize the PivotTable field list, first you should define a “div” tag
             $("#PivotSchemaDesigner1").ejPivotSchemaDesigner({
                 pivotControl: args,
                 layout: ej.PivotSchemaDesigner.Layouts.Excel,
-                olap: {
+                OLAP: {
                     showKPI: false,
                     showNamedSets: true
                 }
