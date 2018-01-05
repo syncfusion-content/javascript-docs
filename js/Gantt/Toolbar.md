@@ -10,7 +10,7 @@ api: /api/js/ejgantt
 
 # Toolbar
 
-In Gantt we can show/hide the Toolbar by using the [showToolbar](https://help.syncfusion.com/api/js/ejgantt#members:toolbarsettings-showtoolbar "toolbarSettings.showToolbar") property. We can add default toolbar items by the [toolbarItems](https://help.syncfusion.com/api/js/ejgantt#members:toolbarsettings-toolbaritems "toolbarSettings.toolbarItems"). User can also create a custom toolbar items by using the [customToolbarItems](/api/js/ejgantt#members:toolbarsettings-customtoolbaritems "toolbarSettings.customToolbarItems").
+In Gantt we can show/hide the Toolbar by using the [`showToolbar`](https://help.syncfusion.com/api/js/ejgantt#members:toolbarsettings-showtoolbar "toolbarSettings.showToolbar") property. We can add default toolbar items by the [`toolbarItems`](https://help.syncfusion.com/api/js/ejgantt#members:toolbarsettings-toolbaritems "toolbarSettings.toolbarItems"). User can also create a custom toolbar items by using the [`customToolbarItems`](/api/js/ejgantt#members:toolbarsettings-customtoolbaritems "toolbarSettings.customToolbarItems").
 
 ## Default Toolbar Items
 Using Gantt default toolbar items we can perform below operations.
@@ -82,13 +82,13 @@ N> To perform add, edit, delete, cancel, update, indent and outdent using Toolba
 
 CustomToolbarItems allows us to insert custom icons and custom template in Gantt toolbar. By using below properties we can customize Gantt toolbar as per our requirement.
 
-* [text](/api/js/ejgantt#members:toolbarsettings-customtoolbaritems-text "toolbarSettings.customToolbarItems.text")- To insert the custom icons in toolbar using CSS class name selector.
+* [`text`](/api/js/ejgantt#members:toolbarsettings-customtoolbaritems-text "toolbarSettings.customToolbarItems.text")- To insert the custom icons in toolbar using CSS class name selector.
 
-* [templateID](/api/js/ejgantt#members:toolbarsettings-customtoolbaritems-templateid "toolbarSettings.customToolbarItems.templateID")- To insert the custom icons in toolbar using script templates. Using this property we can bind HTML elements and other EJ controls to Gantt toolbar.
+* [`templateID`](/api/js/ejgantt#members:toolbarsettings-customtoolbaritems-templateid "toolbarSettings.customToolbarItems.templateID")- To insert the custom icons in toolbar using script templates. Using this property we can bind HTML elements and other EJ controls to Gantt toolbar.
 
-* [tooltipText](/api/js/ejgantt#members:toolbarsettings-customtoolbaritems-tooltiptext "toolbarSettings.customToolbarItems.tooltipText")- Displays tooltip text for the custom icons.
+* [`tooltipText`](/api/js/ejgantt#members:toolbarsettings-customtoolbaritems-tooltiptext "toolbarSettings.customToolbarItems.tooltipText")- Displays tooltip text for the custom icons.
 
-To insert EJ Controls in Gantt toolbar we need to initiate the control in the [create](https://help.syncfusion.com/api/js/ejgantt#events:create "create") client-side event. In the [toolbarClick](https://help.syncfusion.com/api/js/ejgantt#events:toolbarclick "toolbarclick") client-side event we can bind actions to the custom toolbar items.
+To insert EJ Controls in Gantt toolbar we need to initiate the control in the [`create`](https://help.syncfusion.com/api/js/ejgantt#events:create "create") client-side event. In the [`toolbarClick`](https://help.syncfusion.com/api/js/ejgantt#events:toolbarclick "toolbarclick") client-side event we can bind actions to the custom toolbar items.
 
 {% highlight html %}
     <div id="GanttContainer" style="height:400px;width:100%"></div>           

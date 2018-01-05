@@ -14,8 +14,8 @@ The resources are represented by staff, equipment and materials etc. In Gantt co
 
 ## Resource collection
 
-The resource collection contains details about resources that are used in the project. Resources are `JSON` object that contains id and name of the resources and this collection is mapped to the Gantt control using the [resources](/api/js/ejgantt#members:resources) property.
-Id and name field of the resources are mapped by using the [resourceIdMapping](/api/js/ejgantt#members:resourceidmapping) and [resourceNameMapping](/api/js/ejgantt#members:resourcenamemapping) properties.
+The resource collection contains details about resources that are used in the project. Resources are `JSON` object that contains id and name of the resources and this collection is mapped to the Gantt control using the [`resources`](/api/js/ejgantt#members:resources) property.
+Id and name field of the resources are mapped by using the [`resourceIdMapping`](/api/js/ejgantt#members:resourceidmapping) and [`resourceNameMapping`](/api/js/ejgantt#members:resourcenamemapping) properties.
 The following code snippets shows resource collection object and how it assigned to Gantt control.
 
 {% highlight javascript %}
@@ -44,7 +44,7 @@ The following code snippets shows resource collection object and how it assigned
 {% endhighlight %}
 
 ## Assign resource
-We can assign resources for a task at initial load, using the resource id value of the resources as a collection. This collection is mapped  from the [dataSource](/api/js/ejgantt#members:datasource) to the Gantt control using the [resourceInfoMapping](/api/js/ejgantt#members:resourceinfomapping) property.
+We can assign resources for a task at initial load, using the resource id value of the resources as a collection. This collection is mapped  from the [`dataSource`](/api/js/ejgantt#members:datasource) to the Gantt control using the [`resourceInfoMapping`](/api/js/ejgantt#members:resourceinfomapping) property.
 The following code snippet shows how to assign the resource for each task and map to Gantt control.
 {% highlight javascript %}
 
@@ -72,7 +72,7 @@ The following screenshot shows Gantt control with resources.
 
 ## Assign resources with unit
 Resource units indicates the amount of work done by a resource for the task. We can specify the resource unit for the each assigned resource for a particular task.
-Resource unit value is mapped to the Gantt tasks from the datasource using the [resourceUnitMapping](/api/js/ejgantt#members:resourceunitmapping) property.
+Resource unit value is mapped to the Gantt tasks from the datasource using the [`resourceUnitMapping`](/api/js/ejgantt#members:resourceunitmapping) property.
 The below code snippets shows how to assign resource unit value.
 
 {% highlight javascript %}
@@ -131,5 +131,5 @@ N> When resource unit is 100%, resource value is stored with ID only.
 	    "resourceId": [2]
     }
 {% endhighlight %}
-N> The unit values are updated to the resources assigned to the Gantt tasks, only when mapping resource units data source field using the [resourceUnitMapping](/api/js/ejgantt#members:resourceunitmapping) property.
+N> The unit values are updated to the resources assigned to the Gantt tasks, only when mapping resource units data source field using the [`resourceUnitMapping`](/api/js/ejgantt#members:resourceunitmapping) property.
 N> Resource unit will be updated while editing the duration and work fields with respective to [task type](/js/gantt/work-fied "Task types available in Gantt").
