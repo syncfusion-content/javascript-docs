@@ -10,7 +10,7 @@ api: /api/js/ejgantt
 
 # Stripline
 
-The strip line in Gantt control is used to highlight the important event in Gantt chart part. By using this feature, you can add the strip lines to highlight important days in your project. Strip lines in Gantt can be initialized by using [stripLines](/api/js/ejgantt#members:striplines) property and we can define date and label of the strip line by using [day](/api/js/ejgantt#members:striplines-day) and [label](/api/js/ejgantt#members:striplines-label) properties. Strip lines are formatted by using [lineStyle](/api/js/ejgantt#members:striplines-linestyle), [lineColor](/api/js/ejgantt#members:striplines-linecolor) and [lineWidth](/api/js/ejgantt#members:striplines-linewidth) properties. The following code example shows you how to add the strip line in Gantt control.
+The strip line in Gantt control is used to highlight the important event in Gantt chart part. By using this feature, you can add the strip lines to highlight important days in your project. Strip lines in Gantt can be initialized by using [`stripLines`](/api/js/ejgantt#members:striplines) property and we can define date and label of the strip line by using [`day`](/api/js/ejgantt#members:striplines-day) and [`label`](/api/js/ejgantt#members:striplines-label) properties. Strip lines are formatted by using [`lineStyle`](/api/js/ejgantt#members:striplines-linestyle), [`lineColor`](/api/js/ejgantt#members:striplines-linecolor) and [`lineWidth`](/api/js/ejgantt#members:striplines-linewidth) properties. The following code example shows you how to add the strip line in Gantt control.
 
 
 {% highlight javascript %}

@@ -22,7 +22,7 @@ Gantt contains the following in-built schedule header types.
 * Month – Week
 * Year – Month
 
-Time scale mode in Gantt can be defined by using [scheduleHeaderType](/api/js/ejgantt#members:scheduleheadersettings-scheduleheadertype) property and 
+Time scale mode in Gantt can be defined by using [`scheduleHeaderType`](/api/js/ejgantt#members:scheduleheadersettings-scheduleheadertype) property and 
 the following code example illustrates you on how to change the schedule mode.
 
 ### Week schedule mode
@@ -131,7 +131,7 @@ The following screenshot illustrates the Day Schedule in Gantt control.
 
 ### Hour schedule mode
 
-An Hour-Minute Schedule Mode tracks the tasks in minutes scale. In this mode, upper schedule header displays hour scale and the lower schedule header displays its corresponding Minutes. The minute split-up in the lower schedule header can be defined by using the [minutesPerInterval](/api/js/ejgantt#members:scheduleheadersettings-minutesperinterval) enumeration property. The enumeration values of the [minutesPerInterval](/api/js/ejgantt#members:scheduleheadersettings-minutesperinterval) are.
+An Hour-Minute Schedule Mode tracks the tasks in minutes scale. In this mode, upper schedule header displays hour scale and the lower schedule header displays its corresponding Minutes. The minute split-up in the lower schedule header can be defined by using the [`minutesPerInterval`](/api/js/ejgantt#members:scheduleheadersettings-minutesperinterval) enumeration property. The enumeration values of the [`minutesPerInterval`](/api/js/ejgantt#members:scheduleheadersettings-minutesperinterval) are.
 
 * Auto 
 * oneMinute
@@ -139,7 +139,7 @@ An Hour-Minute Schedule Mode tracks the tasks in minutes scale. In this mode, up
 * fifteenMinutes
 * thirtyMinutes
 
-The value `auto` automatically calculates the interval depending upon the [scheduleStartDate](/api/js/ejgantt#members:schedulestartdate) and [scheduleEndDate](/api/js/ejgantt#members:scheduleenddate), whereas the other enumeration values splits up accordingly.
+The value `auto` automatically calculates the interval depending upon the [`scheduleStartDate`](/api/js/ejgantt#members:schedulestartdate) and [`scheduleEndDate`](/api/js/ejgantt#members:scheduleenddate), whereas the other enumeration values splits up accordingly.
 
 The Hour Schedule Mode supports both the `minute` and `hour` duration units.
 
@@ -169,8 +169,8 @@ $("#GanttContainer").ejGantt({
 
 ## Week start day customization
 
-In Gantt, we can customize week start day by using [weekStartDay](/api/js/ejgantt#members:scheduleheadersettings-weekstartday) property.
-By default the [weekStartDay](/api/js/ejgantt#members:scheduleheadersettings-weekstartday) will be assigned with 0 which specifies the start day of the week.
+In Gantt, we can customize week start day by using [`weekStartDay`](/api/js/ejgantt#members:scheduleheadersettings-weekstartday "scheduleHeaderSettings.weekStartDay") property.
+By default the [`weekStartDay`](/api/js/ejgantt#members:scheduleheadersettings-weekstartday "scheduleHeaderSettings.weekStartDay") will be assigned with 0 which specifies the start day of the week.
 
 In week schedule mode, week starts with Sunday by default. But we can customize the week start day by using below code example.
  
@@ -189,14 +189,14 @@ $("#GanttContainer").ejGantt({
 
 ## Rounding off timescale (schedule) start date
 
-You can able to round off the schedule start date in a project by using the [timescaleStartDateMode](/api/js/ejgantt#members:scheduleheadersettings-timescalestartdatemode) property. It is possible to set the following values to the property.
+You can able to round off the schedule start date in a project by using the [`timescaleStartDateMode`](/api/js/ejgantt#members:scheduleheadersettings-timescalestartdatemode "scheduleHeaderSettings.timescaleStartDateMode") property. It is possible to set the following values to the property.
 
 * auto
 * month
 * week
 * year
 
-The value `auto`, automatically calculates the schedule header depending on the datasource values, whereas the other enumeration values rounds off the schedule header accordingly. For Instance, in year schedule if you set the [timescaleStartDateMode](/api/js/ejgantt#members:scheduleheadersettings-timescalestartdatemode) as `month` then the schedule header will start from the immediate month of the schedule instead of starting from beginning of the year.
+The value `auto`, automatically calculates the schedule header depending on the datasource values, whereas the other enumeration values rounds off the schedule header accordingly. For Instance, in year schedule if you set the [`timescaleStartDateMode`](/api/js/ejgantt#members:scheduleheadersettings-timescalestartdatemode "scheduleHeaderSettings.timescaleStartDateMode") as `month` then the schedule header will start from the immediate month of the schedule instead of starting from beginning of the year.
 
 {% highlight javascript %}
 $("#GanttContainer").ejGantt({

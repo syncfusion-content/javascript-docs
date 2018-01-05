@@ -19,7 +19,7 @@ Also, it is possible to localize all the texts in the Gantt control with specifi
 
 `(installed location)\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets\scripts\i10n`
 
-Culture of the Gantt control can be defined by using [locale](/api/js/ejgantt#members:locale) property. The following code example explains how to localize the control in French culture.
+Culture of the Gantt control can be defined by using [`locale`](/api/js/ejgantt#members:locale) property. The following code example explains how to localize the control in French culture.
 
 {% highlight javascript %}
 
@@ -438,7 +438,7 @@ $(function() {
 
 ## Date format
 
-The default date format used in the Gantt control is “MM/dd/yyyy”. Date formats will be changed based on the culture referred in the control. But if you still need to change the date format we can define the desired format using the [dateFormat](/api/js/ejgantt#members:dateformat) property. The same have been explained in the following code example.
+The default date format used in the Gantt control is “MM/dd/yyyy”. Date formats will be changed based on the culture referred in the control. But if you still need to change the date format we can define the desired format using the [`dateFormat`](/api/js/ejgantt#members:dateformat) property. The same have been explained in the following code example.
 
 {% highlight javascript %}
 

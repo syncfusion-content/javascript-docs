@@ -9,7 +9,7 @@ api: /api/js/ejgantt
 ---
 # Keyboard navigation
 
-Gantt control supports the following keyboard shortcuts for performing various actions and keyboard navigation can be enabled/disabled by [allowKeyboardNavigation](/api/js/ejgantt#members:allowkeyboardnavigation) property
+Gantt control supports the following keyboard shortcuts for performing various actions and keyboard navigation can be enabled/disabled by [`allowKeyboardNavigation`](/api/js/ejgantt#members:allowkeyboardnavigation) property
 
 **Alt** **+** **j** **:** To focus the Gantt control.
 
