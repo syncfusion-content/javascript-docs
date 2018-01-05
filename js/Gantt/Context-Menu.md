@@ -19,7 +19,7 @@ Context menu in Gantt has the following default menu items.
 * Outdent
 * Delete
 
-Context menu in Gantt can be enabled by using [enableContextMenu](/api/js/ejgantt#members:enablecontextmenu) property.
+Context menu in Gantt can be enabled by using [`enableContextMenu`](/api/js/ejgantt#members:enablecontextmenu) property.
 The following code example explains how to enable the context menu in Gantt control.
 
 {% highlight javascript %}
@@ -37,7 +37,7 @@ The following screenshot shows the default context menu in Gantt control.
 
 ## Custom Menu Item
 
-It is possible to add a custom context menu item in Gantt control by using [contextMenuOpen](/api/js/ejgantt#events:contextmenuopen) event. The following code example explains on how to add the custom context menu item.
+It is possible to add a custom context menu item in Gantt control by using [`contextMenuOpen`](/api/js/ejgantt#events:contextmenuopen) event. The following code example explains on how to add the custom context menu item.
 
 {% highlight javascript %}
 $("#GanttContainer").ejGantt({
@@ -74,7 +74,7 @@ The screenshot of the custom context menu items in Gantt control is as follows.
 
 ### Custom menu item with sub menu item
 
-It is possible to create a custom menu item with a sub menu, by mapping the parentMenuId property from the contextMenuItems argument in the [contextMenuOpen](/api/js/ejgantt#events:contextmenuopen) event.
+It is possible to create a custom menu item with a sub menu, by mapping the parentMenuId property from the contextMenuItems argument in the [`contextMenuOpen`](/api/js/ejgantt#events:contextmenuopen) event.
 
 The following code example explains on how to add sub context menu for custom menu items.
 

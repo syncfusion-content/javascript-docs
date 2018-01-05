@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Export
 
-Gantt provides support to export the contents in PDF and excel. To export the contents, the `ExcelExport` and `PdfExport` toolbar items must be included in the [toolbarSettings.toolbarItems](https://help.syncfusion.com/api/js/ejgantt#members:toolbarsettings-toolbaritems) property. And you need to call the `export` method with the export mapper as parameter in the toolbar button click action. 
+Gantt provides support to export the contents in PDF and excel. To export the contents, the `ExcelExport` and `PdfExport` toolbar items must be included in the [`toolbarSettings.toolbarItems`](https://help.syncfusion.com/api/js/ejgantt#members:toolbarsettings-toolbaritems) property. And you need to call the [`export`](/api/js/ejgantt#methods:export) method with the export mapper as parameter in the toolbar button click action. 
 
 The below code snippet explains the above behavior.
 

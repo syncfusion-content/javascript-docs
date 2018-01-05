@@ -54,9 +54,9 @@ In Gantt, it is possible to validate the taskbar editing based on the predecesso
 ### Using actionBegin event
 
 
-The actionBegin event with requestType argument as **validateLinkedTask** will be triggered when editing a task with predecessor links.
+The [`actionBegin`](/api/js/ejgantt#events:actionbegin) event with requestType argument as **validateLinkedTask** will be triggered when editing a task with predecessor links.
 
-It is possible to validate the editing within the actionBegin event using the **validateMode** event argument. The validateMode event argument has the following properties.
+It is possible to validate the editing within the [`actionBegin`](/api/js/ejgantt#events:actionbegin) event using the **validateMode** event argument. The validateMode event argument has the following properties.
 
 <table>
 <tr>
@@ -67,23 +67,23 @@ Description<br/><br/></td></tr>
 <tr>
 <td>
 args.validateMode.respectLink<br/><br/></td><td>
-False<br/><br/></td><td>
+false<br/><br/></td><td>
 In this validation mode, the predecessor links will be considered as high priority. With this mode enabled, when the successor task is moved before predecessor task’s end date, the editing will be reverted and dates will be validated based on the dependency links.<br/><br/><br/><br/></td></tr>
 <tr>
 <td>
 args.validateMode.removeLink<br/><br/></td><td>
-False<br/><br/></td><td>
+false<br/><br/></td><td>
 In this validation mode, the taskbar editing will be considered as high priority, where in the case of inappropriate task dates the dependency links will be removed and tasks will be moved to the edited date.<br/><br/><br/><br/></td></tr>
 <tr>
 <td>
 args.validateMode.preserveLinkWithEditing<br/><br/></td><td>
-True<br/><br/></td><td>
+true<br/><br/></td><td>
 In this validation mode, taskbar editing will be considered along with the dependency links. There will be no validations in task editing.<br/><br/><br/><br/></td></tr>
 </table>
 
 By default, the **preserveLinkWithEditing** validation mode will be enabled thus the validations will not occur when editing the linked tasks. 
 
-The below code snippet explains enabling the **respectLink** validation mode while editing the linked tasks in the actionBegin event.
+The below code snippet explains enabling the **respectLink** validation mode while editing the linked tasks in the [`actionBegin`](/api/js/ejgantt#events:actionbegin) event.
 
 
 {% highlight javascript %}
@@ -100,7 +100,7 @@ $("#gantt").ejGantt({
 
 ### Using validation dialog
 
-When disabling all the validation modes in the actionBegin event, a validation popup will be displayed prompting the user to select the validation mode to validate taskbar editing.
+When disabling all the validation modes in the [`actionBegin`](/api/js/ejgantt#events:actionbegin) event, a validation popup will be displayed prompting the user to select the validation mode to validate taskbar editing.
 
 This validation popup will display different options based on the successor task’s start date after editing.
 
