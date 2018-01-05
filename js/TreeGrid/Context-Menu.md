@@ -10,11 +10,11 @@ api: /api/js/ejtreegrid
 
 # Context Menu
 
-The **Context menu** in TreeGrid control is used to manipulate (add, edit and delete) the tree grid rows. In TreeGrid, context menu can be enabled with the [`contextMenuSettings`](/api/js/ejtreegrid#contextmenusettingsspan-classtype-signature-type-objectobjectspan "contextMenuSettings") property. The `contextMenuSettings` property contains two inner properties [`showContextMenu`](/api/js/ejtreegrid#contextmenusettingsshowcontextmenuspan-classtype-signature-type-booleanbooleanspan "contextMenuSettings.showContextMenu") and [`contextMenuItems`](/api/js/ejtreegrid#contextmenusettingscontextmenuitemsspan-classtype-signature-type-arrayarrayspan "contextMenuSettings.contextMenuItems").
+The **Context menu** in TreeGrid control is used to manipulate (add, edit and delete) the tree grid rows. In TreeGrid, context menu can be enabled with the [contextMenuSettings](/api/js/ejtreegrid#members:contextmenusettings) property. The `contextMenuSettings` property contains two inner properties [showContextMenu](/api/js/ejtreegrid#members:contextmenusettings-showcontextmenu "contextMenuSettings.showContextMenu") and [contextMenuItems](/api/js/ejtreegrid#members:contextmenusettings-contextmenuitems "contextMenuSettings.contextMenuItems").
 
-The `showContextMenu` property is used to **enable or disable** the context menu, default value for this property is `false`.
+The [showContextMenu](/api/js/ejtreegrid#members:contextmenusettings-showcontextmenu "contextMenuSettings.showContextMenu") property is used to **enable or disable** the context menu, default value for this property is `false`.
 
-The `contextMenuItems` property is used to add the menu items to context menu, this property renders `Add` and `Delete` options by default when the menu items are not provided.
+The [contextMenuItems](/api/js/ejtreegrid#members:contextmenusettings-contextmenuitems "contextMenuSettings.contextMenuItems") property is used to add the menu items to context menu, this property renders `Add` and `Delete` options by default when the menu items are not provided.
 
 {% highlight js %}
 

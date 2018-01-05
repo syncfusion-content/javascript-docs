@@ -12,11 +12,15 @@ api: /api/js/ejdaterangepicker
 
 The value of DateRangePicker can be sustained even after form post back and page refreshing by enabling the **enablePersistence** API like below code example.
 
-$("#daterange").ejDateRangePicker({
+{% highlight js %}
+
+      $("#daterange").ejDateRangePicker({
 
             enablePersistence: true,
 
         });
+
+{% endhighlight %}
 
 
 

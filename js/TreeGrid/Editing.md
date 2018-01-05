@@ -18,11 +18,11 @@ The TreeGrid provides support to add, edit and delete the records and the follow
 * Row Editing
 * Dialog Editing
 
-You can enable editing in TreeGrid by enabling the property `EditSettings.AllowEditing`.
+You can enable editing in TreeGrid by enabling the property [allowEditing](/api/js/ejtreegrid#members:editsettings-allowediting "editSettings.allowEditing").
 
 ### Cell Editing
 
-Update the record through editing a cell by setting editMode as the `cellEditing`.
+Update the record through editing a cell by setting [editMode](/api/js/ejtreegrid#members:editsettings-editmode "editSettings.editMode") as the `cellEditing`.
 
 The following code example shows you how to enable the `cellEditing` in TreeGrid control.
 
@@ -45,7 +45,7 @@ The output of the TreeGrid with `cellEditing` is as follows.
 
 ### Row Editing
 
-It is possible to make the entire row to editable state and to update a record by setting editMode as rowEditing.
+It is possible to make the entire row to editable state and to update a record by setting [editMode](/api/js/ejtreegrid#members:editsettings-editmode "editSettings.editMode") as rowEditing.
 
 The following code example shows you how to enable rowEditing in TreeGrid control.
 
@@ -68,7 +68,7 @@ The following output is displayed as a result of the above code example.
 
 ### Dialog Editing
 
-Set the editMode as dialogEditing to edit/add a record using dialog.
+Set the [editMode](/api/js/ejtreegrid#members:editsettings-editmode "editSettings.editMode") as dialogEditing to edit/add a record using dialog.
 
 The following code example shows you how to enable the `dialogEditing` in TreeGrid control.
 
@@ -93,7 +93,7 @@ The output of the TreeGrid with `dialogEditing` is as follows.
 
 You can edit any of the fields pertaining to a single record of data and apply it to a template so that the same format is applied to all the other records that you may edit later.
 Using this template support, you can edit/add the fields that are not bound to TreeGrid columns.
-To edit/add the records using dialog template form, set `editMode` as `dialogEditing` and specify the template id to `dialogEditorTemplateID` property of `editSettings`.
+To edit/add the records using dialog template form, set `editMode` as `dialogEditing` and specify the template id to [dialogEditorTemplateID](/api/js/ejtreegrid#members:editsettings-dialogeditortemplateid "editSettings.dialogEditorTemplateID") property of `editSettings`.
 
 N> 1. The `value` attribute is used to bind the corresponding field value while editing.
 N> 2. The `name` attribute is used to get the changed field values while saving the edited record.
@@ -164,7 +164,7 @@ The following output is displayed as a result of the above code example.
 
 It is possible to open the add dialog dynamically with a custom using the method showAddDialog..
 
-Similiarly, open the Edit dialog dynamically using the method showEditDialog(index), with the index of the row to be edited as parameter.
+Similarly, open the Edit dialog dynamically using the method showEditDialog(index), with the index of the row to be edited as parameter.
 
 {% highlight js %}
 <script>
@@ -181,7 +181,7 @@ $("#edit").click(function (args) {
 
 ## Cell Edit Template
 
-Edit template is used to create custom editor for editing the column values. It can be created by using the `editTemplate` property of `columns`.
+Edit template is used to create custom editor for editing the column values. It can be created by using the [editTemplate](/api/js/ejtreegrid#members:columns-edittemplate "columns.editTemplate") property of `columns`.
 
 The following are the functions available for edit template.
 
@@ -241,7 +241,7 @@ The output of the TreeGrid width editTemplate as follows.
 
 ## Delete confirmation message
 
-Delete confirmation message is used to get the confirmation from the user before delete the record. This confirmation message can be enabled by setting `editSettings.showDeleteConfirmDailog` property as `true`.
+Delete confirmation message is used to get the confirmation from the user before delete the record. This confirmation message can be enabled by setting [showDeleteConfirmDialog](/api/js/ejtreegrid#members:editsettings-showdeleteconfirmdialog "editSettings.showDeleteConfirmDialog") property as `true`.
 
 The following code snippet explains how to enable delete confirmation message in tree grid.
 
