@@ -47,12 +47,12 @@ function toolbarClick(args) {
 
 The PDF and Excel exporting services for Gantt are explained in detail [here](https://help.syncfusion.com/js/gantt/services-reference).
 
-The below screen shot shows Gantt with excel and Pdf exporting enabled.
+The below screen shot shows Gantt with excel and PDF exporting enabled.
 ![](/js/Gantt/Export_images/Export_img1.png)
 
 ## Server Configuration
 Gantt data can be converted to PDF and excel file formats in server-side only, through EJ’s helper functions in .NET. 
-To use Gantt pdf export in projects, it is required to create a server with any of the following web services. 
+To use Gantt PDF export in projects, it is required to create a server with any of the following web services. 
 
 * Web API
 * WCF Service
