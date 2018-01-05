@@ -10,11 +10,11 @@ api: /api/js/ejpivotgrid
 
 # Named Sets
 
-Named sets is a multidimensional expression (MDX) that returns a set of dimension members, which can be created by combining cube data, arithmetic operators, numbers and functions.
+Named sets is a multidimensional expression (MDX) that returns a set of dimension members, that can be created by combining cube data, arithmetic operators, numbers, and functions.
 
-## Client Mode
+## Client mode
 
-You can bind the Named Sets in PivotGrid by setting it's unique name in the [`fieldName`](/api/js/ejpivotgrid#members:datasource-rows-fieldname) property either in row or column axis and [`isNamedSets`](/api/js/ejpivotgrid#members:datasource-columns-isnamedsets) boolean property to "true".
+You can bind the named sets in the PivotGrid by setting it's unique name in the [`fieldName`](/api/js/ejpivotgrid#members:datasource-rows-fieldname) property either in row or column axis and the [`isNamedSets`](/api/js/ejpivotgrid#members:datasource-columns-isnamedsets) boolean property to "true".
 
 {% highlight js %}
 
@@ -51,9 +51,9 @@ You can bind the Named Sets in PivotGrid by setting it's unique name in the [`fi
 ![](KPI_images/namedset.png)
 
 
-## Server Mode
+## Server mode
 
-You can add Named Sets in the PivotGrid by using NamedSetElement Class in the OlapReport. 
+You can add named sets in the PivotGrid by using NamedSetElement Class in the OlapReport. 
 
 {% highlight C# %}
 

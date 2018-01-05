@@ -76,7 +76,7 @@ This feature enables you to select multiple Map shapes on mouse taps accompanied
 ## Dragging On Selection
 
 This feature enables you to select the shapes by dragging over the shapes. While dragging over the shapes, a rectangle is generated and the shapes that comes within the rectangle is selected.
-You can enable this feature by setting the [`draggingOnSelection`](../api/ejmap#members:draggingonselection) property in the [`layers`](../api/ejmap#members:layers) to **True**.
+You can enable this feature by setting the [`draggingOnSelection`](../api/ejmap#members:draggingonselection) property in the [`layers`](../api/ejmap#members:layers) to **true**.
 
 {% highlight javascript %}
 
@@ -215,7 +215,7 @@ When the Map is double-tapped by using mouse, the zoom in operation is performed
 
 Map shape is zoomed to the whole Map area on the shape selected. Animation can be applied for that zooming by using the [`enableAnimation`](../api/ejmap#members:enableanimation) property as true. 
 
-You can enable this feature by setting [`enableZoomOnSelection`](../api/ejmap#members:zoomsettings-enablezoomonselection) property value as ‘_True_’. 
+You can enable this feature by setting [`enableZoomOnSelection`](../api/ejmap#members:zoomsettings-enablezoomonselection) property value as ‘_true_’. 
 
 When [`enableZoomOnSelection`](../api/ejmap#members:zoomsettings-enablezoomonselection) property is set to true, then zooming by double click is muted.
 
