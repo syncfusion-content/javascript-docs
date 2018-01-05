@@ -13,7 +13,7 @@ api: /api/js/ejdropdownlist
 
 Load on demand feature allows the DropDownList items load on request from the service/database, during only on click the DropDown icon or DropDownList. This functionality helps to improve performance on control initial rendering time. Because data items load on request. 
 
-The loadOnDemand property is used to enable or disable the load on demand functionality of the DropDownList.
+The [loadOnDemand](https://help.syncfusion.com/api/js/ejdropdownlist#members:loadOnDemand) property is used to enable or disable the load on demand functionality of the DropDownList.
 
 {% highlight html %}
 
@@ -55,4 +55,4 @@ The loadOnDemand property is used to enable or disable the load on demand functi
 
 {% endhighlight %}
 
-![](LoadOnDemand/loadondemand.png)
+![](LoadOnDemand_images/loadondemand.png)
