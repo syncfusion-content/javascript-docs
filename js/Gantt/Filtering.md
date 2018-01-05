@@ -10,10 +10,10 @@ api: /api/js/ejgantt
 
 # Filtering
 
-Filtering helps to view specific or related records from data source which meets a given filtering criteria. The [filterSettings](/api/js/ejgantt#members:filtersettings) property in Gantt is used to set the filtering criteria at load time.
+Filtering helps to view specific or related records from data source which meets a given filtering criteria. The [`filterSettings`](/api/js/ejgantt#members:filtersettings) property in Gantt is used to set the filtering criteria at load time.
 
 ## Filter columns at initial load
-It is possible to filter one or more columns at initial load by providing the [field](/api/js/ejgantt#members:filtersettings-filteredcolumns-field "filterSettings.filteredColumns.field"), [value](/api/js/ejgantt#members:filtersettings-filteredcolumns-value "filterSettings.filteredColumns.value"),[predicate](/api/js/ejgantt#members:filtersettings-filteredcolumns-predicate "filterSettings.filteredColumns.predicate") and [operator](/api/js/ejgantt#members:filtersettings-filteredcolumns-operator "filterSettings.filteredColumns.operator") to the [filteredColumns](/api/js/ejgantt#members:filtersettings-filteredcolumns) property. The following code example explains how to filter a column on initial load.
+It is possible to filter one or more columns at initial load by providing the [`field`](/api/js/ejgantt#members:filtersettings-filteredcolumns-field "filterSettings.filteredColumns.field"), [`value`](/api/js/ejgantt#members:filtersettings-filteredcolumns-value "filterSettings.filteredColumns.value"),[`predicate`](/api/js/ejgantt#members:filtersettings-filteredcolumns-predicate "filterSettings.filteredColumns.predicate") and [`operator`](/api/js/ejgantt#members:filtersettings-filteredcolumns-operator "filterSettings.filteredColumns.operator") to the [`filteredColumns`](/api/js/ejgantt#members:filtersettings-filteredcolumns) property. The following code example explains how to filter a column on initial load.
 
 {% highlight js %}
 

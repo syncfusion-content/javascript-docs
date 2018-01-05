@@ -10,7 +10,7 @@ api: /api/js/ejgantt
 
 # Work
 
-The Work is the total labor hours necessary to complete a task. Work can be mapped from the data source field using the property [workMapping](/api/js/ejgantt#members:workmapping) and when the work value is mapped from the data source, the end date and duration of the task will be calculated automatically based on the work and resource unit values from the data source. 
+The Work is the total labor hours necessary to complete a task. Work can be mapped from the data source field using the property [`workMapping`](/api/js/ejgantt#members:workmapping) and when the work value is mapped from the data source, the end date and duration of the task will be calculated automatically based on the work and resource unit values from the data source. 
 The below code snippet explains mapping the work value from the data source.
 
 
@@ -29,14 +29,14 @@ Note:
 * When the work is mapped from the data source and if the resource unit is not defined for a task, the work will be calculated as 0 and task will be displayed as a milestone.
 * When the work field is mapped from the data source, the default task type will be `fixed work`.
 
-When the work value for a task is not mapped from the data source using the [workMapping](/api/js/ejgantt#members:workmapping) property, it will be calculated internally based on the number of resources assigned to the task and the duration of the task.
+When the work value for a task is not mapped from the data source using the [`workMapping`](/api/js/ejgantt#members:workmapping) property, it will be calculated internally based on the number of resources assigned to the task and the duration of the task.
 
 Note:	
 
 * By Default, the work field value for a task will be calculated based on the duration and assigned resource unit.
 * If an assigned resource has resource unit value of 100% for a task, i.e. if a resource is dedicatedly assigned to a task, the work per day will be __8__ __hours__.
 
-Work can be measured in hours, days and minutes, and it is measured in 'hours' scale by default and this can be changed by using the [workUnit](/api/js/ejgantt#members:workunit) property.
+Work can be measured in hours, days and minutes, and it is measured in 'hours' scale by default and this can be changed by using the [`workUnit`](/api/js/ejgantt#members:workunit) property.
 
 The below code snippet explains how to change work unit property in Gantt.
 
@@ -55,7 +55,7 @@ workUnit: ej.Gantt.WorkUnit.Minute,
 
 # Task type 
 
-The work, duration and resource unit fields of a task depends upon each other values and will change automatically on editing any one of these fields. But we can also set these field’s values as constant using the [taskType](/api/js/ejgantt#members:tasktype) property. The following values can be set to the type property,
+The work, duration and resource unit fields of a task depends upon each other values and will change automatically on editing any one of these fields. But we can also set these field’s values as constant using the [`taskType`](/api/js/ejgantt#members:tasktype) property. The following values can be set to the type property,
 
 **Fixed Duration** - Duration task field will remain constant while updating resource unit or work field.
 
@@ -118,7 +118,7 @@ Note:
 
 * Effort driven field is effective only on adding or removing a resource in a task.
 
-The below table illustrates the effects of effort driven field with [taskType](/api/js/ejgantt#members:tasktype) property.
+The below table illustrates the effects of effort driven field with [`taskType`](/api/js/ejgantt#members:tasktype) property.
 
 <table>
 <tr>
