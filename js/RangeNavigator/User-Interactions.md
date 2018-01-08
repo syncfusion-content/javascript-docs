@@ -171,4 +171,6 @@ To customize border of selected interval, use [`color`](../api/ejrangenavigator#
 
 ![](/js/RangeNavigator/User-Interactions_images/User-Interactions_img5.png)
 
+
+
 [Click](http://js.syncfusion.com/demos/web/#!/azure/rangenavigator/scrollbar) here to view scrollbar online demo sample.

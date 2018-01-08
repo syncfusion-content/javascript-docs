@@ -89,7 +89,7 @@ Execute the above code to render the following output.
 
 **Colors and Border**
 
-The Pointers border is modified with the object called [`border`](../api/ejcirculargauge#members:scales-pointers-border) as in scales. It has two border property called [`color`](../api/ejcirculargauge#members:scales-pointers-border-color) and [`width`](../api/ejcirculargauge#members:scales-pointers-border-width) which are used to customize the border color of the pointer and border width of the pointer. You can set the background color to improve the look of the **Circular Gauge** and you can customize the background color of the scale using [`backgroundColor`](../api/ejcirculargauge#members:scales-pointers-backgroundcolor). The needle length of circular gauge can be customized using [`backNeedleLength`](../api/ejcirculargauge#members:scales-pointers-backneedlelength) property.
+The Pointers border is modified with the object called [`border`](../api/ejcirculargauge#members:scales-pointers-border) as in scales. It has two border property called [`color`](../api/ejcirculargauge#members:scales-pointers-border-color) and [`width`](../api/ejcirculargauge#members:scales-pointers-border-width) which are used to customize the border color of the pointer and border width of the pointer. You can set the background color to improve the look of the **Circular Gauge** and you can customize the background color of the scale using [`backgroundColor`](../api/ejcirculargauge#members:scales-pointers-backgroundcolor). The [`needle`](../api/ejcirculargauge#members:scales-pointers-showbackneedle) length of circular gauge can be customized using [`backNeedleLength`](../api/ejcirculargauge#members:scales-pointers-backneedlelength) property.
 
 {% highlight html %}
 
@@ -137,7 +137,7 @@ Execute the above code to render the following output.
 
 **Appearance**
 
-Based on the value, the**pointer** point out the label value. You can set the pointer length and width using [`length`](../api/ejcirculargauge#members:scales-pointers-length) and [`width`](../api/ejcirculargauge#members:scales-pointers-width) property respectively. And you can also adjust the opacity of the pointer using the property [`opacity`](../api/ejcirculargauge#members:scales-pointers-opacity) which holds the value between 0 and 1. You can add the gradient effects to the pointer using [`gradients`](../api/ejcirculargauge#members:scales-pointers-gradients) object.
+Based on the value, the**pointer** point out the label value. You can set the pointer length and width using [`length`](../api/ejcirculargauge#members:scales-pointers-length) and [`width`](../api/ejcirculargauge#members:scales-pointers-width) property respectively. And you can also adjust the opacity of the [`pointer`](../api/ejcirculargauge#members:scales-pointers-radius) using the property [`opacity`](../api/ejcirculargauge#members:scales-pointers-opacity) which holds the value between 0 and 1. You can add the gradient effects to the pointer using [`gradients`](../api/ejcirculargauge#members:scales-pointers-gradients) object.
 
 {% highlight html %}
 

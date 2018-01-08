@@ -85,12 +85,15 @@ $("#container").ejSparkline({
 
 Sparkline is having support for localization as well. Default culture is "en-US". You can modify the culture using the property [`locale`](../api/ejsparkline#members:locale).
 
+**Enable Group Separator** is used to Convert the date object to string while using the locale settings, you can set [`enableGroupSeparator`](../api/ejsparkline#members:enablegroupseparator) property as **true**.
+
 {% highlight javascript %}
 
 $("#container").ejSparkline({
             // ...
             //Culture for the sparkline
-            culture: "fr-FR"
+            locale: "fr-FR",
+            enableGroupSeparator: true
             // ...
 });
 

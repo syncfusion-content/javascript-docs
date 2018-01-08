@@ -120,7 +120,7 @@ Now, add the [`dataSource`](../api/ejrangenavigator#members:datasource) to the *
 {% endhighlight %}
 
 
-The following screenshot displays a RangeNavigator with the default **"Line"** series type.
+The following screenshot displays a RangeNavigator with the default **"Line"** series [`type`](../api/ejrangenavigator#members:series-type). To change the line segment color, you can use the [`fill`](../api/ejrangenavigator#members:series-fill) property of the series.
 
 
 
@@ -239,7 +239,7 @@ The following screenshot displays how a RangeNavigator is updated when a selecte
 
 **ejRangeNavigator** can also be used with numerical values. You can specify the data type using [`valueType`](../api/ejrangenavigator#members:valuetype) option. 
 
-You can create a [`dataSource`](../api/ejrangenavigator#members:datasource) for Chart Series with integer Values using the following code sample.
+You can create a [`dataSource`](../api/ejrangenavigator#members:series-datasource) and get the values from the datasource in [`xName`](../api/ejrangenavigator#members:series-xname) and [`yName`](../api/ejrangenavigator#members:series-yname) options for Chart Series with integer Values using the following code sample.
 
 {% highlight javascript %}
 
@@ -283,4 +283,28 @@ The following screenshot displays a RangeNavigator with numerical values:
 
 
 ![](/js/RangeNavigator/Getting-Started_images/Getting-Started_img6.png) 
+
+
+## Animation
+
+To animate the series enabled or disabled the [`animation`](../api/ejrangenavigator#members:seriessettings-enableanimation) option by using [`enableAnimation`](../api/ejrangenavigator#members:series-enableanimation) property.
+
+{% highlight javascript %}
+
+$(function () {
+          $("#container").ejRangeNavigator({
+            series: [
+            {
+              type: 'line',
+              dataSource: window.chartData, xName: "xDate", yName: "yValue" ,
+              enableAnimation:true,
+            }
+            ],
+            valueType:"numeric",
+          });
+       });
+
+
+
+{% endhighlight %}
 

@@ -131,6 +131,16 @@ $(function () {
 
 {% endhighlight %}
 
+Circular Guage is made responsive when resizing the browser by using [`isResponsive`](../api/ejcirculargauge#members:isresponsive) property.
+
+{% highlight javascript %}
+
+$("#CircularGauge1").ejCircularGauge({
+                    isResponsive: true,                                     
+                });
+
+{% endhighlight %}
+
 **Localization**
 
 The circular gauge can be localized based on name of culture specified in [`locale`](../api/ejcirculargauge#members:locale) property.
@@ -149,6 +159,21 @@ $(function () {
            locale : "en-US"
         })
     });
+
+{% endhighlight %}
+
+**Enable Group Separator** is used to Convert the date object to string while using the locale settings, you can set [`enableGroupSeparator`](../api/ejcirculargauge#members:enablegroupseparator) property as **true**.
+
+{% highlight javascript %}
+
+<div id="CircularGauge1"></div> 
+ 
+<script>
+        $("#CircularGauge1").ejCircularGauge({ 
+            locale : "en-US" ,
+            enableGroupSeparator: true
+            }); 
+</script>
 
 {% endhighlight %}
 

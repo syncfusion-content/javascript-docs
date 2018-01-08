@@ -152,15 +152,90 @@ Now, bind the default_Datasource to [`datasource`](../api/ejsunburstchart#member
 
 {% endhighlight %}
 
+## Sunburst Chart Dimensions
+
+You can set the size of the sunburst chart directly on the sunburst chart or to the container of the sunburst chart.
+
+### Set size for the container
+
+You can customize the sunburst chart dimension by setting the width and height for the container element.
+
+{% highlight js %}
+
+ <body>
+       <div id=”container” style=”width:820px; height:500px;”></div>
+         <script type="text/javascript" language="javascript ">
+
+            $(function () {
+                $("#chart").ejSunburstChart();
+            });
+         </script>
+    </body>
+
+{% endhighlight %}
+
+You can also set the sunburst chart dimension by using the [`size`](../api/ejsunburstchart#members:size) property of the sunburst chart. The [`width`](../api/ejsunburstchart#members:size-width) and [`height`](../api/ejsunburstchart#members:size-height) are set using the size property.
+
+{% highlight js %}
+
+
+$("#chart").ejSunburstChart({
+    // ...
+    
+    //Set size to sunburst chart container
+    size: { width: '600', height: '450' },
+    
+});
+
+{% endhighlight %}
+
+## Margin
+
+Options to customize the left, right, top and bottom [`margins`](../api/ejsunburstchart#members:margin) of sunburst area.
+
+We can also place the sunburst area to the specified position by using the margin property. 
+The margin property of the sunburst area can further be customized in [`right`](../api/ejsunburstchart#members:margin-right),
+[`left`](../api/ejsunburstchart#members:margin-left),[`top`](../api/ejsunburstchart#members:margin-top) and [`bottom`](../api/ejsunburstchart#members:margin-right) directions.
+
+{% highlight js %}
+
+$("#chart").ejSunburstChart({
+
+   margin : { right: 10 , top: 10, bottom: 10, left: 10 }             
+
+});
+
+{% endhighlight %}
+         
+
 ## Add Title to the Sunburst Chart
 
 The title of the Sunburst chart is used to provide quick information to the user about the data being plotted in the Sunburst Chart. You can add it by using the [`text`](../api/ejsunburstchart#members:title-text) property of the [`title`](../api/ejsunburstchart#members:title) 
+
+Using [`font`](../api/ejsunburstchart#members:title-font) property, you can customize [`font family`](../api/ejsunburstchart#members:title-font-fontfamily), [`font style`](../api/ejsunburstchart#members:title-font-fontstyle), [`font weight`](../api/ejsunburstchart#members:title-font-fontweight), [`opacity`](../api/ejsunburstchart#members:title-font-opacity), [`size`](../api/ejsunburstchart#members:title-font-size) options.
 
 {% highlight js %}
 
  $("#chart").ejSunburstChart ({
 
-  title: {text: "Employees Count"},
+  title: {text: "Employees Count",font: {color:"black",fontWeight:"bold",size:"15px"}},
+
+   });
+
+{% endhighlight %}
+
+## Add Subtitle to the Sunburst Chart
+
+By using the subTitle option, you can add the subTitle to the sunburst chart title and customize its border, background color and [`font`](../api/ejsunburstchart#members:title-subtitle-font).
+
+You can customize [`font family`](../api/ejsunburstchart#members:title-subtitle-font-fontfamily), [`font style`](../api/ejsunburstchart#members:title-subtitle-font-fontstyle), [`font weight`](../api/ejsunburstchart#members:title-subtitle-font-fontweight), [`opacity`](../api/ejsunburstchart#members:title-subtitle-font-opacity),
+[`size`](../api/ejsunburstchart#members:title-subtitle-font-size) options.
+
+{% highlight js %}
+
+ $("#chart").ejSunburstChart ({
+
+  title: { subtitle : {text: "Employees Count",font: {color:"black",fontWeight:"bold",size:"15px"}}},
 
    });
 
@@ -197,5 +272,19 @@ The data labels are used to improve the readability of the Sunburst chart. This 
 Now the Sunburst Chart is rendered along with the specified customizations
 
 ![](/js/SunburstChart/Getting-Started_images/Getting-Started_img1.png)
+
+## Sunburst Chart Visibility
+
+You can enable or disable it by using the [`visible`](../api/ejsunburstchart#members:visible) option.
+
+{% highlight js %}
+
+$("#chart").ejSunburstChart({
+
+   visible : true             
+
+});
+
+{% endhighlight %}
 
 [Click](http://js.syncfusion.com/demos/web/#!/bootstrap/sunburst/deafult) here to view the default sample of the SunburstChart 
