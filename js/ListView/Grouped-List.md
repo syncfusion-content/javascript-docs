@@ -12,7 +12,7 @@ api: /api/js/ejlistview
 
 **First Level Group List**
 
-The **ListView** widget can make as grouped list by setting the [enableGroupList](https://help.syncfusion.com/api/js/ejlistview#members:enablegrouplist) property as **“True”**. This groups the set of items listed under **ul**. You can identify the grouped items with the header title specified respectively.
+The **ListView** widget can make as grouped list by setting the [enableGroupList](https://help.syncfusion.com/api/js/ejlistview#members:enablegrouplist) property as **“true”**. This groups the set of items listed under **ul**. You can identify the grouped items with the header title specified respectively.
 
 Refer the following code example.
 

@@ -48,7 +48,7 @@ In the **HTML** page set the **&lt;div&gt;** element to render **Splitter** cont
 
 {% endhighlight %}
 
-The output for **Splitter** when **collapsible** is set to “**True**” is as follows.
+The output for **Splitter** when **collapsible** is set to “**true**” is as follows.
 
 ![](/js/Splitter/Enabling-Collapsible_images/Enabling-Collapsible_img1.png) 
 
