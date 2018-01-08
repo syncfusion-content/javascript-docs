@@ -107,7 +107,7 @@ In the **HTML** page set the corresponding **&lt;div&gt;** element for rendering
 
 {% endhighlight %}
 
-The output for **Splitter** when **enableAnimation** is “**True**”. Expanding or collapsing the outer pane in the **Splitter** produces the animation effect with the animation speed.
+The output for **Splitter** when **enableAnimation** is “**true**”. Expanding or collapsing the outer pane in the **Splitter** produces the animation effect with the animation speed.
 
 ![](/js/Splitter/Appearance-and-Styling_images/Appearance-and-Styling_img3.png) 
 
@@ -135,7 +135,7 @@ Defines the pane size in the **Splitter** widget. The default value of **paneSiz
 
 ## Resizable
 
-Defines whether the pane in the **Splitter** is resizable or not. Setting the **resizable** property as “**False”** disables the resize option to the pane. The default value of **resizable** property is true in **Splitter**.
+Defines whether the pane in the **Splitter** is resizable or not. Setting the **resizable** property as “**false”** disables the resize option to the pane. The default value of **resizable** property is true in **Splitter**.
 
 The following steps explain the implementation of **Splitter** properties. 
 
