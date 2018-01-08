@@ -48,7 +48,7 @@ Execute the above code examples to render the **Digital****Gauge** as follows.
 
 ## Responsive Layout
 
-* For any display devices, the control will be rendered based on the space available in that device. For this purpose, **resizing** property is given to the **Digital Gauge** control. The **Digital Gauge** renders with a given value. 
+* For any display devices, the control will be rendered based on the space available in that device. For this purpose, **resizing** property is given to the **Digital Gauge** control. The **Digital Gauge** renders with a given [`value`](../api/ejdigitalgauge#members:value). 
 
 * When the browser resize the canvas element checks the dimension with its parent element. If there are any changes in parent dimension, **Gauge** control will changes the dimension based on its parent element change. This feature is enabled by using the property [`isResponsive`](../api/ejdigitalgauge#members:isresponsive)
 
@@ -80,7 +80,21 @@ Execute the above code examples to render the **Digital****Gauge** as follows.
 
 ![](/js/DigitalGauge/Basic-Settings_images/Basic-Settings_img2.png)
 
+The responsiveness of the Digital gauge is specified by using the property [`enableResize`](../api/ejdigitalgauge#members:enableresize)
 
+{% highlight javascript %}
+
+<div id="DigitalCore"></div>
+
+{% endhighlight %}
+
+{% highlight javascript %}
+
+<script>
+$("#DigitalCore").ejDigitalGauge({ enableResize: true }); 
+</script>
+
+{% endhighlight %}
 
 ## Themes
 

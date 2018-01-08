@@ -31,6 +31,8 @@ Following customization options are available to customize the treemap level as 
 
 * You can customize the header template using [`headerTemplate`](../api/ejtreemap#members:levels-headertemplate) property.
 
+* You can specify the header visibility using [`headerVisibilityMode`](../api/ejtreemap#members:levels-headervisibilitymode) property.
+
 * To specify the label position, you can use [`labelPosition`](../api/ejtreemap#members:levels-labelposition) property.
 
 * To specify the label template for treemap, you can use [`labelTemplate`](../api/ejtreemap#members:levels-labeltemplate) property.

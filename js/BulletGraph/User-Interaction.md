@@ -44,6 +44,18 @@ $("#BulletGraph1").ejBulletGraph({
 
 {% endhighlight %}
 
+Responsiveness of the bullet graph is controlled by using [`enableResize`](../api//ejbulletgraph#members:enableResizing) property.
+
+{% highlight javascript %}
+
+<div id="BulletGraph1"></div> 
+ 
+<script>
+        $("#BulletGraph1").ejBulletGraph({ enableResizing: true });   
+</script>
+
+{% endhighlight %}
+
 
 
 ## Applying same color to all ticks and labels in a range
@@ -82,6 +94,7 @@ By default **Bullet Graph** displays **Tooltip** when mouse is hovered over feat
 
 Bullet Graph supports Tooltip template instead of default Tooltip to customize the appearance and contents of Tooltip. The Tooltip template should be a &lt;div&gt; element with display set to ‘none’, so it is displayed only when mouse is placed on feature measure bar. The id value of the &lt;div&gt; element should be provided as value to the [`template`](../api/ejbulletgraph#members:tooltipsettings-template) property in tooltipSettings of Bullet Graph to display the customized &lt;div&gt; element as Tooltip instead of default Tooltip. The values displayed in default Tooltip such as current value, target value and category are accessed in template &lt;div&gt; element by using {{currentValue}}, {{targetValue}} and {{category}} respectively.
 
+
 {% highlight html %}
 
 <div id="BulletGraphTooltip" style="display:none; width:125px; padding-top: 10px; padding-bottom:10px; color: blue"> 
@@ -102,7 +115,57 @@ Bullet Graph supports Tooltip template instead of default Tooltip to customize t
 
 {% endhighlight %}
 
+### captionTemplate
+
+Specifies template for caption tooltip by using the property [`captionTooltip`](../api/ejbulletgraph#members:tooltipsettings-captiontemplate)
+
+{% highlight javascript %}
+
+<div id="bulletGraph1"></div> 
+<script>
+$("#bulletGraph1").ejBulletGraph({
+tooltipSettings :{captionTemplate: "BulletGraphTooltip"}
+});
+</script>
+
+{% endhighlight %}
+
+### enableCaptionTooltip 
+
+Toggles the visibility of caption tooltip by using the property [`enableCaptionTooltip`](../api/ejbulletgraph#members:tooltipsettings-enablecaptiontooltip)
+
+{% highlight javascript %}
+
+<div id="bulletGraph1"></div> 
+<script>
+$("#bulletGraph1").ejBulletGraph({
+tooltipSettings :{enableCaptionTooltip: true}
+});
+</script>
+
+{% endhighlight %}
+
 The following screenshot displays **Bullet Graph** with a customized **Tooltip** including a header and contents such as current value and target value in different colors.
 
 ![](/js/BulletGraph/User-Interaction_images/User-Interaction_img3.png) 
+
+## Localization
+
+**BulletGraph** supports localization for its axis labels and tooltip. To render the gauge with specific culture you have to refer the corresponding globalize culture script and need to specify the culture name in [`locale`](../api/ejbulletgraph#members:locale) property of gauge.
+
+**Enable Group Separator** is used to Convert the date object to string while using the locale settings, you can set [`enableGroupSeparator`](../api/ejbulletgraph#members:enablegroupseparator) property as **true**.
+
+{% highlight javascript %}
+
+<div id="BulletGraph1"></div> 
+ 
+<script>
+        $("#BulletGraph1").ejBulletGraph({ 
+            locale : "en-US" ,
+            enableGroupSeparator: true
+            }); 
+</script>
+
+{% endhighlight %}
+
 

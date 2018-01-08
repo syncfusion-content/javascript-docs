@@ -9,7 +9,7 @@ api: /api/js/ejsunburstchart
 ---
 
 # Highlight 
-EjSunburstChart provides highlighting support for the points on mouse hover. To enable the highlighting , set the [`enable`](../api/ejsunburstchart#members:highlightsettings-enable) property to true in the [`highlightSettings`](../api/ejsunburstchart#members:highlightsettings). 
+EjSunburstChart provides highlighting support for the points on mouse hover. To [`enable`](../api/ejsunburstchart#members:highlightSettings-enable) the highlighting , set the [`enable`](../api/ejsunburstchart#members:highlightsettings-enable) property to true in the [`highlightSettings`](../api/ejsunburstchart#members:highlightsettings). 
 
 {% highlight js %}
 
@@ -27,7 +27,7 @@ $("#chart").ejSunburstChart({
  
 ## Highlight Display mode
 
- You can customize the highlighted segment appearance by using color or opacity. You can choose between color or opacity using the [`type`](../api/ejsunburstchart#members:highlightsettings-type) property in the highlight Settings.
+ You can customize the highlighted segment appearance by using [`color`](../api/ejsunburstchart#members:highlightsettings-color) or [`opacity`](../api/ejsunburstchart#members:highlightsettings-opacity). You can choose between color or opacity using the [`type`](../api/ejsunburstchart#members:highlightsettings-type) property in the highlight Settings.
 
 *	HighlightByColor – To display the highlighted segment appearance using color.
 *	HighlightByOpacity – To display the highlighted segment appearance using opacity.

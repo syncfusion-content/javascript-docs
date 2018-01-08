@@ -52,3 +52,32 @@ $("#chart").ejSunburstChart ({
 {% endhighlight %}
 
 ![](/js/SunburstChart/Tooltip_images/Tooltip_img2.png)
+
+
+## Customize the appearance of tooltip
+
+* The [`fill`](../api/ejsunburstchart#members:tooltip-fill) and [`border`](../api/ejsunburstchart#members:tooltip-border) options are used to customize the background color and border of the tooltip respectively. 
+
+* You can change this default border of the tooltip by using the [`width`](../api/ejsunburstchart#members:tooltip-border-width) and [`color`](../api/ejsunburstchart#members:tooltip-border-color) options.
+
+* The opacity of the tooltip are customized by using the [`opacity`](../api/ejsunburstchart#members:tooltip-opacity) properties.The font option in the tooltip is used to customize the font of the tooltip text.
+
+* Using font property, you can customize [`font color`](../api/ejsunburstchart#members:tooltip-font-color), [`font family`](../api/ejsunburstchart#members:tooltip-font-fontfamily), [`font style`](../api/ejsunburstchart#members:tooltip-font-fontstyle), [`font weight`](../api/ejsunburstchart#members:tooltip-font-fontweight), [`opacity`](../api/ejsunburstchart#members:tooltip-font-opacity), [`size`](../api/ejsunburstchart#members:tooltip-font-size) options.
+
+{% highlight js %}
+
+$("#container").ejSunburstChart({
+            // ...
+          
+                 tooltip: {
+                       //Change tooltip color and border
+                       fill: '#FF9933',
+                       border: { width: 1, color: "#993300" },
+                       font: {color:"black",fontWeight:"bold",size:"15px"}	
+                       // ...
+                 } 
+            
+            // ...
+        });
+
+{% endhighlight %}

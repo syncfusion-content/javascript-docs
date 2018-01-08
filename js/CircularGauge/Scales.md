@@ -216,7 +216,7 @@ The property [`startAngle`](../api/ejcirculargauge#members:scales-startangle) is
 
 **Enable/Disable properties**
 
-You can enable / disable properties in Circular Gauge using some properties in scale collection. The [`showIndicators`](../api/ejcirculargauge#members:scales-showindicators) property is used to enable/disable the indicators. [`showLabels`](../api/ejcirculargauge#members:scales-showlabels), [`showTicks`](../api/ejcirculargauge#members:scales-showticks), [`showRanges`](../api/ejcirculargauge#members:scales-showranges), [`showPointers`](../api/ejcirculargauge#members:scales-showpointers)** ans [`showScaleBar`](../api/ejcirculargauge#members:scales-showscalebar) are used to enable/ disable labels, ticks, ranges, pointers and scale bar respectively. 
+You can enable / disable properties in Circular Gauge using some properties in scale collection. The [`showIndicators`](../api/ejcirculargauge#members:scales-showindicators) property is used to enable/disable the indicators. [`showLabels`](../api/ejcirculargauge#members:scales-showlabels), [`showTicks`](../api/ejcirculargauge#members:scales-showticks), [`showRanges`](../api/ejcirculargauge#members:scales-showranges), [`showPointers`](../api/ejcirculargauge#members:scales-showpointers) and [`showScaleBar`](../api/ejcirculargauge#members:scales-showscalebar) are used to enable/ disable labels, ticks, ranges, pointers and scale bar respectively. 
 
 ## Multiple Scales
 
