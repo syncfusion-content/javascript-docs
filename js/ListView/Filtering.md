@@ -10,7 +10,7 @@ api: /api/js/ejlistview
 
 # Filtering
 
-**Filtering** is one of the key features of **ListView** control. The **Filtering** option is added into the **ListView** control when the [enableFiltering](https://help.syncfusion.com/api/js/ejlistview#members:enablefiltering) property is set to **“True”**. This enables a simple interface to filter items from a large collection of **ListView** items.
+**Filtering** is one of the key features of **ListView** control. The **Filtering** option is added into the **ListView** control when the [enableFiltering](https://help.syncfusion.com/api/js/ejlistview#members:enablefiltering) property is set to **“true”**. This enables a simple interface to filter items from a large collection of **ListView** items.
 
 Refer the following code examples.
 
