@@ -145,3 +145,5 @@ To enable this feature, set the [`draggingGroupOnSelection`](../api/ejtreemap#me
 {% endhighlight %}
 
 {% include image.html url="/js/TreeMap/User-Interaction_images/User-Interaction_img6.png"%}
+
+

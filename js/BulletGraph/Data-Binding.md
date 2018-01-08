@@ -14,7 +14,7 @@ api: /api/js/ejbulletgraph
 
 ## Local Data
 
-Data available in client-side (local data) can be bound with **Bullet Graph** using [`fields`](../api/ejbulletgraph#members:quantitativescalesettings-fields) property. This property provides option to specify data source, fields representing progress measure bar value, comparative measure value and category value.
+Data available in client-side (local data) can be bound with **Bullet Graph** using [`fields`](../api/ejbulletgraph#members:quantitativescalesettings-fields) property. This property provides option to specify data source, fields representing progress measure bar value, comparative measure value, category value and [`tableName`](../api/ejbulletgraph#members:quantitativescalesettings-fields-tablename).
 
 {% highlight javascript %}
 

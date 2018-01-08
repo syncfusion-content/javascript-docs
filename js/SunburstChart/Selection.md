@@ -9,7 +9,7 @@ api: /api/js/ejsunburstchart
 ---
 
 # Selection 
-EjSunburstChart provides selection support for the points on mouse click. To enable the selection , set the [`enable`](../api/ejsunburstchart#members:selectionsettings-enable) property to true in the [`selectionSettings`](../api/ejsunburstchart#members:selectionsettings). 
+EjSunburstChart provides selection support for the points on mouse click. To [`enable`](../api/ejsunburstchart#members:selectionsettings-enable) the selection , set the [`enable`](../api/ejsunburstchart#members:selectionsettings-enable) property to true in the [`selectionSettings`](../api/ejsunburstchart#members:selectionsettings). 
 
 {% highlight js %}
 
@@ -27,7 +27,7 @@ $("#chart").ejSunburstChart({
  
 ## Selection Display mode
 
- You can customize the selected  segment appearance by using color or opacity. You can choose between color or opacity using the [`type`](../api/ejsunburstchart#members:selectionsettings-type) property in the selection Settings.
+ You can customize the selected  segment appearance by using [`color`](../api/ejsunburstchart#members:selectionsettings-color) or [`opacity`](../api/ejsunburstchart#members:selectionsettings-opacity). You can choose between color or opacity using the [`type`](../api/ejsunburstchart#members:selectionsettings-type) property in the selection Settings.
 
 *	selectionByColor – To display the selected segment appearance using color.
 *	selectionByOpacity – To display the selected segment appearance using opacity.

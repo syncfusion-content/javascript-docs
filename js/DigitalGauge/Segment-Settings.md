@@ -62,7 +62,7 @@ Execute the above code examples to render the **Digital****Gauge** as follows.
 
 ## Dimension Modification
 
-* **Digital Gauge** consists of several digital segments. Segment is customized with some properties. Color of the segment is set by using **color** property. Color is either given as string or hexadecimal value. 
+* **Digital Gauge** consists of several digital segments. [`Segment`](../api/ejdigitalgauge#members:matrixsegmentdata) is customized with some properties. Color of the segment is set by using **color** property. Color is either given as string or hexadecimal value. 
 
 * You can add gradient effects to the segments with the help of [`gradient`](../api/ejdigitalgauge#members:items-segmentsettings-gradient) attribute. The [`opacity`](../api/ejdigitalgauge#members:items-segmentsettings-opacity) of the segment is also adjustable. The space between two segments are adjusted with [`spacing`](../api/ejdigitalgauge#members:items-segmentsettings-spacing) property.
 

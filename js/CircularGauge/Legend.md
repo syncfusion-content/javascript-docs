@@ -166,7 +166,7 @@ You can change the size of the legend items by using the [`width`](../api/ejcirc
 
 ### Legend size
 
-You can change the default legend size by using the [`size`](../api/ejcirculargauge#members:legend-size) property of the legend. The height and width of legend size can customized using [`height`](../api/ejcirculargauge#members:legend-size-height) and [`width`](../api/ejcirculargauge#members:legend-size-width) property.
+You can change the default legend size by using the [`size`](../api/ejcirculargauge#members:legend-size) property of the legend. The height and width of legend size can customized using [`height`](../api/ejcirculargauge#members:legend-size-height) and [`width`](../api/ejcirculargauge#members:legend-size-width) property. The color and width of legend border can be customized using [`border color`](../api/ejcirculargauge#members:legend-border-color) and [`width`](../api/ejcirculargauge#members:legend-border-width) property.
 
 {% highlight javascript %}
 
@@ -233,7 +233,7 @@ You can customize the legend border by using the [`border`](../api/ejcirculargau
 
 ### Font of the legend text
 
-The [`font`](../api/ejcirculargauge#members:legend-font) of the legend item text can be customized by using properties such as [`fontFamily`](../api/ejcirculargauge#members:legend-font-fontfamily), [`fontStyle`](../api/ejcirculargauge#members:legend-font-fontstyle), [`fontWeight`](../api/ejcirculargauge#members:legend-font-fontweight) and [`size`](../api/ejcirculargauge#members:legend-font-size) of legend font.
+The [`font`](../api/ejcirculargauge#members:legend-font) of the legend item text can be customized by using properties such as [`fontFamily`](../api/ejcirculargauge#members:legend-font-fontfamily), [`fontStyle`](../api/ejcirculargauge#members:legend-font-fontstyle), [`fontWeight`](../api/ejcirculargauge#members:legend-font-fontweight) , [`color`](../api/ejcirculargauge#members:legend-font-color) and [`size`](../api/ejcirculargauge#members:legend-font-size) of legend font.
 
 
 {% highlight javascript %}

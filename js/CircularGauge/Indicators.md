@@ -112,7 +112,7 @@ Execute the above code to render the following output.
 
 State Ranges are used to specify the indicator behavior in the specified region. Use [`startValue`](../api/ejcirculargauge#members:scales-indicators-stateranges-startvalue) and [`endValue`](../api/ejcirculargauge#members:scales-indicators-stateranges-endvalue) to set the range bound for the pointer. Whenever the pointer cross the specified region, the indicator attributes are applied for ranges. 
 
-The [`backgroundColor`](../api/ejcirculargauge#members:scales-indicators-stateranges-backgroundcolor) and [`borderColor`](../api/ejcirculargauge#members:scales-indicators-stateranges-bordercolor) sets the appearance behavior for the indicators. For text type indicators you can give value for text. And [`text`](../api/ejcirculargauge#members:scales-indicators-stateranges-text) can be changed whenever the pointer crosses its state range area. There are many basic [`font`](../api/ejcirculargauge#members:scales-indicators-stateranges-font) options available for the text in the state range such as [`size`](../api/ejcirculargauge#members:scales-indicators-stateranges-font-size), [`fontStyle`](../api/ejcirculargauge#members:scales-indicators-stateranges-font-fontstyle) and [`fontFamily`](../api/ejcirculargauge#members:scales-indicators-stateranges-font-fontfamily).
+The [`backgroundColor`](../api/ejcirculargauge#members:scales-indicators-stateranges-backgroundcolor) and [`borderColor`](../api/ejcirculargauge#members:scales-indicators-stateranges-bordercolor) sets the appearance behavior for the indicators. For [`text`](../api/ejcirculargauge#members:scales-indicators-stateranges-textcolor) type indicators you can give value for text. And [`text`](../api/ejcirculargauge#members:scales-indicators-stateranges-text) can be changed whenever the pointer crosses its state range area. There are many basic [`font`](../api/ejcirculargauge#members:scales-indicators-stateranges-font) options available for the text in the state range such as [`size`](../api/ejcirculargauge#members:scales-indicators-stateranges-font-size), [`fontStyle`](../api/ejcirculargauge#members:scales-indicators-stateranges-font-fontstyle) and [`fontFamily`](../api/ejcirculargauge#members:scales-indicators-stateranges-font-fontfamily).
 
 {% highlight html %}
 
@@ -180,6 +180,8 @@ Execute the above code to render the following output.
 ## Multiple Indicators
 
 You can use multiple indicators for a single **Gauge**. Each indicator have a list of [`stateRanges`](../api/ejcirculargauge#members:scales-indicators-stateranges). Refer the following code example for multiple Indicators.
+
+To specify value of the text as the indicator when the indicator style is set with the value [`text`](../api/ejcirculargauge#members:scales-indicators-stateranges-text) of circular gauge.
 
 {% highlight html %}
 
