@@ -131,7 +131,7 @@ $(function () {
 
 {% endhighlight %}
 
-Circular Guage is made responsive when resizing the browser by using [`isResponsive`](../api/ejcirculargauge#members:isresponsive) property.
+Circular Gauge is made responsive when resizing the browser by using [`isResponsive`](../api/ejcirculargauge#members:isresponsive) property.
 
 {% highlight javascript %}
 
