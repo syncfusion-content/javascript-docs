@@ -531,3 +531,58 @@ The following output is displayed as a result of the above code example.
 
 I> The HTML Table element is the only valid element when using HTML Table binding. Using other elements will throws an exception.
 
+
+## Miscellaneous APIs
+
+To collect the details related to the current view data and to refresh the Grid from external actions, Grid provides following methods. 
+
+
+1. [`dataSource`](https://help.syncfusion.com/api/js/ejgrid#methods:datasource "dataSource")
+2. [`getCurrentViewData`](https://help.syncfusion.com/api/js/ejgrid#methods:getcurrentviewdata "getCurrentViewData")
+3. [`refreshContent`](https://help.syncfusion.com/api/js/ejgrid#methods:refreshcontent "refreshContent")
+
+{% highlight html %}
+
+	<label>Refresh Template</label><input id="check" type="checkbox">
+	
+	<select id="columnName" class="e-ddl" data-bind="value: field">
+		<option value="dataSource" selected="selected">dataSource</option>
+		<option value="getCurrentViewData">getCurrentViewData</option>
+		<option value="refreshContent">refreshContent</option>
+	</select>
+	<label>Current View Data</label> <textarea id="cols"></textarea>
+    <div id="Grid"></div>
+
+{% endhighlight %}
+
+{% highlight javascript %}
+		$("#columnName").ejDropDownList({
+			watermarkText: "Select Methods",
+			change: function(args){
+				if(args.selectedText == "dataSource") $("#Grid").ejGrid(args.selectedText, window.gridData.slice(0,5));
+				else if(args.selectedText == "refreshContent") { 
+					var obj = $("#Grid").ejGrid("instance")
+					obj.model.columns.splice(3,1)
+					obj[args.selectedText]($("#check").is(":checked"));
+				}
+				else $("#cols").val(JSON.stringify($("#Grid").ejGrid(args.selectedText)));
+			}
+		});
+        $(function () {
+            $("#Grid").ejGrid({
+                dataSource: window.gridData,
+                allowPaging:true,
+				columns: [
+					 { field: "OrderID", headerText: "Order ID", textAlign: ej.TextAlign.Right },
+					 { field: "CustomerID", headerText: "Customer ID"},
+					 { field: "Freight", headerText: "Freight", textAlign: ej.TextAlign.Right, format: "{0:C}" },
+					 { field: "ShipCity", headerText: "Ship City" },
+					 { field: "ShipName", headerText: "Ship Name" }
+                ]
+            });
+		  });
+{% endhighlight %}
+
+The following output is displayed as a result of the above code example.
+
+![](dataBinding_images/dataBinding_img10.png)
