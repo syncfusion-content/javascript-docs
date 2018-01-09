@@ -21,8 +21,8 @@ Selection support enables you to highlight the items on which the mouse tapping 
 
 ### Single Selection
 
-To enable the selection of the leaf nodes, the [`highlight on selection`](../api/ejtreemap#members:highlightOnSelection) property in `treemap` is set as **true**. When the selection occurs, the item is highlighted with a bounding rectangle around the selected leaf node.
-The border can be customized with the [`highlight border brush`](../api/ejtreemap#members:highlightBorderBrush) and [`highlight border thickness`](../api/ejtreemap#members:highlightBorderThickness) properties.
+To enable the selection of the leaf nodes, the [`highlight on selection`](../api/ejtreemap#members:highlightonselection) property in `treemap` is set as **true**. When the selection occurs, the item is highlighted with a bounding rectangle around the selected leaf node.
+The border can be customized with the [`highlight border brush`](../api/ejtreemap#members:highlightborderbrush) and [`highlight border thickness`](../api/ejtreemap#members:highlightborderthickness) properties.
 
 
 {% highlight js %}
@@ -44,7 +44,7 @@ The border can be customized with the [`highlight border brush`](../api/ejtreema
 
 ### Group Selection
 
-To enable the selection of leaf nodes, the [`highlight group on selection`](../api/ejtreemap#members:highlightOnSelection) property in `treemap` is set as **true**. When the selection occurs, bounding rectangle highlights the selected group. The border can be customized with the [`highlight group border brush`](../api/ejtreemap#members:highlightGroupBorderBrush) and [`highlight group border thickness`](../api/ejtreemap#members:highlightGroupBorderThickness) properties.
+To enable the selection of leaf nodes, the [`highlight group on selection`](../api/ejtreemap#members:highlightonselection) property in `treemap` is set as **true**. When the selection occurs, bounding rectangle highlights the selected group. The border can be customized with the [`highlight group border brush`](../api/ejtreemap#members:highlightgroupborderbrush) and [`highlight group border thickness`](../api/ejtreemap#members:highlightgroupborderthickness) properties.
 
 {% highlight js %}
 
