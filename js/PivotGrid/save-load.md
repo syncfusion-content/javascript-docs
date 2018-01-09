@@ -10,14 +10,14 @@ api: /api/js/ejpivotgrid
 
 # Save and Load Report
 
-Allows you to save the current report of PivotGrid and render the control with the saved report later. We can save and load the report in two ways:
+Allows you to save the current report of PivotGrid and render the control with the saved report later. You can save and load the report in two ways:
 
 * Database
-* Local Storage
+* Local storage
 
-## Save Report to Database
+## Save report to database
 
-By using current report name, storage option and url, we can save the current report of PivotGrid to database. 
+By using the current report name, storage option, and url, you can save the current report of the PivotGrid to the database.
 
 {% highlight html %}
 
@@ -38,7 +38,7 @@ By using current report name, storage option and url, we can save the current re
 
 {% endhighlight %}
 
-Service method needs to be added in WCF/WebAPI for storing current report of PivotGrid to database.
+Service method can be added in the WCF/WebAPI for storing the current report of PivotGrid to the database.
 
 For WebAPI controller, the below method needs to be added.
 
@@ -113,9 +113,9 @@ public Dictionary<string, object> SaveReport(string reportName, string operation
 
 {% endhighlight %}
 
-## Save Report to Local Storage
+## Save report to local storage
 
-To save the current report of PivotGrid to local storage, we need to call the [`saveReport`](/api/js/ejpivotgrid#members:saveReport) method in PivotGrid.
+To save the current report of PivotGrid to the local storage, you should call the [`saveReport`](/api/js/ejpivotgrid#members:saveReport) method in the PivotGrid.
 
 {% highlight html %}
 
@@ -140,9 +140,9 @@ To save the current report of PivotGrid to local storage, we need to call the [`
 
 {% endhighlight %}
 
-## Load Report from Database
+## Load report from database
 
-By using the stored report name, database name and url, we can load the saved report of PivotGrid from database. 
+By using the stored report name, database name, and url, you can load the saved report of PivotGrid from the database.
 
 {% highlight html %}
 
@@ -163,11 +163,11 @@ By using the stored report name, database name and url, we can load the saved re
 
 {% endhighlight %}
 
-Service methods need to be added in WCF/WebAPI for loading the stored report in database.
+Service methods should be added in the WCF/WebAPI for loading the stored report in the database.
 
 ### Relational
 
-For WebAPI controller, the below methods need to be added.
+For WebAPI controller, the below methods need to be added:
 
 {% highlight c# %}
 
@@ -226,7 +226,7 @@ private DataTable GetDataTable()
 
 {% endhighlight %}
 
-For WCF service, the below methods need to be added.
+For WCF service, the below methods need to be added:
 
 {% highlight c# %}
 
@@ -416,9 +416,9 @@ private DataTable GetDataTable()
 
 {% endhighlight %}
 
-## Load Report from Local Storage
+## Load report from local storage
 
-To load the stored report of PivotGrid from local storage, we need to call the ['loadReport'](/api/js/ejpivotgrid#members:loadReport) method in PivotGrid.
+To load the stored report of PivotGrid from the local storage, you should call the ['loadReport'](/api/js/ejpivotgrid#members:loadReport) method in the PivotGrid.
 
 {% highlight html %}
 

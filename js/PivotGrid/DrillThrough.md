@@ -10,25 +10,25 @@ api: /api/js/ejpivotgrid
 
 # Drill Through
 
-Drill-through retrieves the raw items that are used to create a specific cell. To enable drill-through support, set [`enableDrillThrough`](/api/js/ejpivotgrid#members:enableDrillThrough) property to true. Raw items are obtained through the [`drillThrough`](/api/js/ejpivotgrid#events:drillthrough) event, using which user can bind them to an external widget for precise view. 
+Drill-through retrieves raw items that are used to create a specific cell. To enable drill-through support, you can set the [`enableDrillThrough`](/api/js/ejpivotgrid#members:enableDrillThrough) property to true. Raw items are obtained through the [`drillThrough`](/api/js/ejpivotgrid#events:drillthrough) event by which you can bind them to an external widget for a precise view.
 
 ## OLAP
 
-N> Drill-through is supported in PivotGrid only when we configure and enable drill-through action at the Cube. 
+N> Drill-through is supported in the PivotGrid only when you configure and enable the drill-through action at the cube.
 
 ![](DrillThrough_images/pivotgrid.png)
 
-On clicking any value cell, the "Drill Through Information" dialog will be opened.  It consists of a Grid with data which are associated with the measure values of clicked value cell. In this example, the measure behind the respective cell is “Sales Amount” and the values of the dimensions which are associated with this measure are alone displayed in the Grid. 
+On clicking any value cell, the "Drill Through Information" dialog will be opened.  It consists of a grid with data that are associated with measure values of the clicked value cell. In this example, the measure behind the respective cell is “Sales Amount” and the values of dimensions that are associated with this measure are alone displayed in the grid.
 
 ![](DrillThrough_images/DrillThroughData.png)
 
-On clicking the "Hierarchy Selector" button which is displayed below the Grid, the "Hierarchy Selector" dialog will be opened. It consists of the dimensions which are associated with the measure of the clicked value cell. In this example, the measure behind the respective cell is “Sales Amount” and the dimensions associated with this measure are alone displayed in the dialog.   
+On clicking the "Hierarchy Selector" button which is displayed below the grid, the "Hierarchy Selector" dialog will be opened. It consists of dimensions that are associated with the measure of clicked value cell. In this example, the measure behind the respective cell is “Sales Amount” and the dimensions associated with this measure are alone displayed in the dialog.
 
 ![](DrillThrough_images/hierarchy_selector.png)
 
-By dragging and dropping the respective hierarchies and finally clicking “OK” button, drill through MDX query will be framed and executed internally and provides back the raw items through "drillThrough" event. In this example, we have bound the raw items obtained to our ejGrid widget. Please refer the code sample and screen-shot below.
+To frame and execute the drill through MDX query internally, drag and drop the respective hierarchies and click “OK”. It provides back the raw items through the "drillThrough" event. In this example, the obtained raw items are bound to the ejGrid widget. Please refer the code sample and screen-shot below:
 
-## Client Mode
+## Client mode
 
 {% highlight html %}
 
@@ -66,7 +66,7 @@ By dragging and dropping the respective hierarchies and finally clicking “OK�
 
 {% endhighlight %}
 
-## Server Mode
+## Server mode
 
 {% highlight html %}
 
@@ -110,7 +110,7 @@ By dragging and dropping the respective hierarchies and finally clicking “OK�
 
 {% endhighlight %}
 
-When PivotGrid is rendered in server mode, below service methods need to be added in WCF/WebAPI for drill through operation.
+When the PivotGrid is rendered in server mode, the below service methods need to be added in the WCF/WebAPI for drill through operation.
 
 For WebAPI controller, the below methods need to be added.
 
@@ -160,7 +160,7 @@ public Dictionary<string, object> DrillThroughDataTable(string currentReport, st
 
 ## Relational
 
-To enable drill-through support, set [`enableDrillThrough`](/api/js/ejpivotgrid#members:enableDrillThrough) property to true. Raw items are obtained through the [`drillThrough`](/api/js/ejpivotgrid#events:drillthrough) event.
+To enable drill-through support, you can set the [`enableDrillThrough`](/api/js/ejpivotgrid#members:enableDrillThrough) property to true. Raw items are obtained through the [`drillThrough`](/api/js/ejpivotgrid#events:drillthrough) event.
 
 {% highlight html %}
 
