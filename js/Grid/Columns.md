@@ -168,6 +168,43 @@ The following output is displayed as a result of the above code example.
 
 ![](columns_images/columns_img3.png)
 
+We can change the columns headers by external action using [`getHeaderTable`](https://help.syncfusion.com/api/js/ejgrid#methods:getheadertable "getHeaderTable"), [`getHeaderContent`](https://help.syncfusion.com/api/js/ejgrid#methods:getheadercontent "getHeaderContent") methods.
+
+The following code example describes the above behavior.
+
+{% highlight html %}
+<input id="change">
+<div id="Grid"></div>
+{% endhighlight %}
+
+{% highlight html %}
+$("#change").ejButton({
+    text: "Update Grid header",
+    click: function(args){
+        var obj = $("#Grid").ejGrid("instance");
+        obj.getHeaderContent().css("color","green");
+        obj.getHeaderTable().css("font-family","fantasy");
+    },
+});
+$(function () {
+    $("#Grid").ejGrid({
+        dataSource: window.gridData,
+        allowPaging:true,
+        pageSettings:{pageSize:8},
+        columns: [
+            { field: "OrderID", isPrimaryKey: true, headerText: "Order ID",  width: 90 },
+            { field: "CustomerID", headerText: 'Customer ID', width: 90 },
+            { field: "Freight", headerText: 'Freight', format: "{0:C}", width: 90 },
+            { field: "ShipCountry", headerText: "Ship Country", width: 90 },
+            { field: "ShipCity", headerText: 'Ship City', width: 120 }
+        ]
+    });
+});
+{% endhighlight %}
+
+The following output is displayed as a result of the above code example.
+
+![](columns_images/columns_img32.png)
 
 ## Header Template
 
@@ -316,6 +353,37 @@ The following output is displayed as a result of the above code example.
 
 ![](columns_images/columns_img7.png)
 
+To change the columns width by external action use  [`setWidthToColumns`](https://help.syncfusion.com/api/js/ejGrid#methods:setwidthtocolumns "setWidthToColumns") method.
+
+The following code example describes the above behavior. 
+
+{% highlight html %}
+<button onclick="methods()">setWidthToColumns</button>
+<br/><br/>
+<div id="Grid"></div>
+{% endhighlight %}
+
+{% highlight javascript %}
+$(function () {
+	$("#Grid").ejGrid({
+		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+		dataSource : window.gridData,
+		allowPaging : true,
+		columns : [
+		    { field: "OrderID", isPrimaryKey: true, headerText: "Order ID",  width: 90 },
+            { field: "CustomerID", headerText: 'Customer ID', width: 90 },
+            { field: "Freight", headerText: 'Freight', format: "{0:C}", width: 90 },
+            { field: "ShipCountry", headerText: "Ship Country", width: 90 },
+            { field: "ShipCity", headerText: 'Ship City', width: 120 }
+		]
+	});
+});
+{% endhighlight %}
+
+The following output is displayed as a result of the above code example.
+
+![](columns_images/columns_img31.png)
+
 
 ## Resize to fit 
 
@@ -352,6 +420,7 @@ The following output is displayed as a result of the above code example.
 ![](columns_images/columns_img8.png)
 
 
+
 ## Reorder
 
 Reordering can be done by drag and drop on the particular column header from one index to another index within the Grid. Reordering can be enabled by setting the [`allowReordering`](https://help.syncfusion.com/api/js/ejgrid#members:allowreordering "allowReordering") property as `true`.
@@ -377,6 +446,37 @@ $(function () {
 The following output is displayed as a result of the above code example.
 
 ![](columns_images/columns_img10.png)
+
+N> While reordering the columns [`columnDragStart`](https://help.syncfusion.com/api/js/ejgrid#events:columndragstart "columnDragStart"),[`columnDrop`](https://help.syncfusion.com/api/js/ejgrid#events:columndrop "columnDrop") events are triggered.
+
+To reorder the column by external action use  [`reorderColumns`](https://help.syncfusion.com/api/js/ejgrid#methods:reordercolumns "reorderColumns") method.
+
+The following code example describes the above behavior.
+
+{% highlight html %}
+<div id="Grid"></div>
+{% endhighlight %}
+
+{% highlight javascript %}
+$(function () {
+	$("#Grid").ejGrid({
+		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+		dataSource : window.gridData,
+		allowPaging : true,
+		columns : [
+			{ field: "EmployeeID"},
+			{ field: "OrderID", },
+			{ field: "Freight" },
+			{ field: "ShipCity" },
+			{ field: "ShipCountry" }
+		]
+	});
+});
+{% endhighlight %}
+
+The following output is displayed as a result of the above code example.
+
+![](columns_images/columns_img36.png)
 
 
 ## Visibility
@@ -410,6 +510,60 @@ The following output is displayed as a result of the above code example.
 
 ![](columns_images/columns_img11.png)
 
+We can show or hide the grid columns externally by [`showColumns`](https://help.syncfusion.com/api/js/ejgrid#methods:showcolumns "showColumns"),[`hideColumns`](https://help.syncfusion.com/api/js/ejgrid#methods:hidecolumns "hideColumns") methods. We can get the visible or hidden column details by [`getVisibleColumnNames`](https://help.syncfusion.com/api/js/ejgrid#methods:getvisiblecolumnnames "getVisibleColumnNames"),[`getHiddenColumnNames`](https://help.syncfusion.com/api/js/ejgrid#members:columns-field "getHiddenColumnNames") methods.
+
+The following code example describes the above behavior. 
+
+{% highlight html %}
+<select id="columnName" class="e-ddl" data-bind="value: field">
+    <option value="Order ID" selected="selected">Order ID</option>
+    <option value="Customer ID">Customer ID</option>
+    <option value="Employee ID">Employee ID</option>
+    <option value="Freight">Freight</option>
+    <option value="Order Date">Order Date</option>
+</select>
+<input id="visible" type="button" value="Visible Columns" class="e-btn" />
+<input id="hidden" type="button" value="Hidden Columns" class="e-btn" />
+<textarea id="cols" style="width: 300px;height:50px"></textarea>
+<div id="Grid"></div>
+{% endhighlight %}
+
+{% highlight javascript %}
+$(".e-btn").ejButton({ 
+    size: "medium", 
+    click: function(args){
+        var txt = this.model.text;
+        var names = $("#Grid").ejGrid(txt == "Visible Columns" ? "getVisibleColumnNames" : "getHiddenColumnNames");
+        $("#cols").val(JSON.stringify(names));
+    }
+});
+$("#columnName").ejDropDownList({width:"120",selectedIndices: [0, 1, 2, 3, 4], 
+    change: function(args){
+        var oper = args.isChecked ? "showColumns" : "hideColumns";
+        $("#Grid").ejGrid(oper,args.selectedText);
+}, 
+showCheckbox: true}).ejDropDownList("disableItemsByIndices", "0");
+$(function () {
+    $("#Grid").ejGrid({
+        dataSource: window.gridData,
+        allowPaging:true,
+        pageSettings:{pageSize:8},
+        columns: [
+            { field: "OrderID", headerText: "Order ID", textAlign: ej.TextAlign.Right },
+            { field: "CustomerID", headerText: "Customer ID"},
+            { field: "Freight", headerText: "Freight", textAlign: ej.TextAlign.Right, format: "{0:C}" },
+            { field: "ShipCity", headerText: "Ship City" },
+            { field: "ShipName", headerText: "Ship Name" },
+            { field: "OrderDate", headerText: "OrderDate" ,format:"{0:dd/MM/yyyy}" }
+        ]
+    });
+});
+
+{% endhighlight %}
+
+The following output is displayed as a result of the above code example.
+
+![](columns_images/columns_img34.png)          
 
 ## Unbound Column
 
@@ -523,6 +677,44 @@ $(function () {
 	});
 });
 {% endhighlight %}
+
+To resize the columns by external action use [`resizeColumns`](https://help.syncfusion.com/api/js/ejgrid#methods:resizecolumns "resizeColumns") method.
+
+The following code example describes the above behavior.
+
+{% highlight html %}
+<button onclick="methods()">resizeColumns</button>
+<div id="Grid"></div>
+{% endhighlight %}
+
+{% highlight javascript %}
+$(function () {
+	$("#Grid").ejGrid({
+		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+		dataSource : window.gridData,
+		allowPaging : true,
+		columns : [
+		   { field: "EmployeeID",width:90},
+           { field: "OrderID",width:40 },
+           { field: "Freight",width:100 },
+           { field: "ShipCity",width:80 },
+           { field: "ShipCountry",width:90 }
+		]
+	});
+});
+function methods(){
+    var obj=$("#Grid").ejGrid("instance")
+    obj.resizeColumns( "OrderID",80);
+};
+{% endhighlight %}
+
+The following output is displayed as a result of the above code example.
+
+![](columns_images/columns_img35.png)
+
+N> 1. By default the resize mode is normal, you can change the resize mode by using property [`resizeSettings.resizeMode `](https://help.syncfusion.com/api/js/ejgrid#members:resizesettings-resizemode "resizeSettings.resizeMode").
+
+N> 2. While resizing, the following events are triggered [`resized`](https://help.syncfusion.com/api/js/ejgrid#events:resized "resized"), [`resizeStart`](https://help.syncfusion.com/api/js/ejgrid#events:resizestart "resizeStart"), [`resizeEnd`](https://help.syncfusion.com/api/js/ejgrid#events:resizeend "resizeEnd")
 
 ## Read only
 
@@ -697,7 +889,7 @@ The following output is displayed as a result of the above code example.
 
 ## Column Chooser
 
-Column chooser contains the list of all the columns which are defined in the [`columns`](https://help.syncfusion.com/api/js/ejgrid#members:columns "columns") property. Using this you can control the visibility of columns in Grid. You can prevent the display of the particular column name in column chooser by setting [`showInColumnChooser`](https://help.syncfusion.com/api/js/ejgrid#members:showcolumnchooser "showInColumnChooser") property of [`columns`](https://help.syncfusion.com/api/js/ejgrid#members:columns "columns") as `false`. 
+Column chooser contains the list of all the columns which are defined in the [`columns`](https://help.syncfusion.com/api/js/ejgrid#members:columns "columns") property. Using this you can control the visibility of columns in Grid. You can prevent the display of the particular column name in column chooser by setting [`showInColumnChooser`](https://help.syncfusion.com/api/js/ejgrid#members:columns-showincolumnchooser "showInColumnChooser") property of [`columns`](https://help.syncfusion.com/api/js/ejgrid#members:columns "columns") as `false`. 
 
 
 
@@ -942,5 +1134,57 @@ The following output is displayed as a result of the above code example.
 
 ![](columns_images/columns_img25.png)
 
+# Important Methods of Columns
 
+To control the grid column actions externally, use [`getColumnByIndex`](https://help.syncfusion.com/api/js/ejgrid#methods:getcolumnbyindex "getColumnByIndex"), [`getColumnFieldNames`](https://help.syncfusion.com/api/js/ejgrid#methods:getcolumnfieldnames "getColumnFieldNames"), [`getColumnIndexByField`](https://help.syncfusion.com/api/js/ejgrid#methods:getcolumnindexbyfield "getColumnIndexByField"), [`getColumnIndexByHeaderText`](https://help.syncfusion.com/api/js/ejgrid#methods:getcolumnindexbyheadertext "getColumnIndexByHeaderText"), [`getFieldNameByHeaderText`](https://help.syncfusion.com/api/js/ejgrid#methods:getfieldnamebyheadertext "getFieldNameByHeaderText"), [`getHeaderTextByFieldName`](https://help.syncfusion.com/api/js/ejgrid#methods:getheadertextbyfieldname "getHeaderTextByFieldName") methods.
+
+The following code example describes the above behavior.
+
+{% highlight html %}
+<body>
+<input  type ="text" id='txtVal' > Enter Column/Index</input>
+<div>
+        <select name="selectIndex"style="width:100px" id="dropdown">
+                <option value="getColumnByIndex">getColumnByIndex</option>
+                <option value="getColumnByFieldNames">getColumnbyFieldNames</option>
+                <option value="getColumnIndexByField">getColumnIndexByField</option>
+                <option value="getColumnIndexByHeaderText">getColumnIndexByHeaderText</option>
+                <option value="getFieldNameByHeaderText">getFieldNameByHeaderText</option>
+                <option value="getHeaderTextByFieldName">getHeaderTextByFieldName</option>
+        </select>
+</div>
+<button onclick="methods()" >Click</button></br><br/>
+<div class="col-md-3">
+Details
+</div>
+<div class ="area">
+<textarea id="details" class="ejinputtext" style="width: 300px;height:80px;position:inline" readonly="readonly"></textarea>
+</div>
+<div id="Grid"></div>
+{% endhighlight %}
+
+{% highlight javascript %}
+$(function () {
+    $("#Grid").ejGrid({
+        dataSource: window.gridData,
+        allowPaging: true,
+        pageSettings:{pageSize:8},
+        columns: [
+            { field: "OrderID", isPrimaryKey: true, headerText: "Order ID", textAlign: ej.TextAlign.Right, width: 90 },
+            { field: "CustomerID", headerText: 'Customer ID', width: 90 },
+            { field: "Freight", headerText: 'Freight', format: "{0:C}", textAlign: ej.TextAlign.Right, width: 90 },
+            { field: "ShipCountry", headerText: "Ship Country", width: 90 },
+            { field: "ShipCity", headerText: 'Ship City', width: 120 }
+        ]
+    });
+});
+function methods(){
+    var option= $("#dropdown_input").val(), obj=$("#Grid").ejGrid("instance"), val = $('#txtVal').val();
+    $("#details").val(JSON.stringify(obj[option](val)));
+};
+{% endhighlight %}
+
+The following output is displayed as a result of the above code example.
+
+![](columns_images/columns_img30.png)
 
