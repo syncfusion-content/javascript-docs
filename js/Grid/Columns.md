@@ -463,9 +463,10 @@ $(function () {
 		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
 		dataSource : window.gridData,
 		allowPaging : true,
+		allowReordering : true,
 		columns : [
+			{ field: "OrderID" },
 			{ field: "EmployeeID"},
-			{ field: "OrderID", },
 			{ field: "Freight" },
 			{ field: "ShipCity" },
 			{ field: "ShipCountry" }
