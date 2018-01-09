@@ -175,7 +175,7 @@ $.ajax({
 
  [POST] [/Api/PdfViewer/Unload](http://js.syncfusion.com/demos/ejServices/api/PdfViewer/Unload)
 
-Unloading and disposing the PDF document resource in the server side.
+Unloads and Disposes the PDF document resources being displayed in the PDF viewer from the server side
 
 
 ### Code example 
@@ -192,4 +192,4 @@ $.ajax({
 })
 
 {% endhighlight %}
->The above example shows that it will unloads and disposes the PDF document resource in server side.
+>The above example shows that it will unloads and disposes the PDF document resources being displayed in the PDF viewer from the server side.
