@@ -298,8 +298,7 @@ namespace PDFViewerDemo.Api
             PdfViewerHelper helper = new PdfViewerHelper();
             helper.UnLoad();
         }
-
-		}
+    }
 }
 {% endhighlight %}
 
