@@ -11,7 +11,7 @@ api: /api/js/ejpivotgrid
 # Localization and Globalization
 
 ## Localization in PivotGrid 
-You can localize the PivotGrid controls text with a collection of localized strings using [`ej.PivotGrid.Locale`](/api/js/ejpivotgrid#members:locale) for different cultures. By default, the PivotGrid control is localized in **"en-US"** culture.
+You can localize the PivotGrid controls text with a collection of localized strings by using [`ej.PivotGrid.Locale`](/api/js/ejpivotgrid#members:locale) for different cultures. By default, the PivotGrid control is localized in the **"en-US"** culture.
 
 {% highlight html %}
 
@@ -87,7 +87,7 @@ You can localize the PivotGrid controls text with a collection of localized stri
 
 {% endhighlight %}
 
-The following table lists the default keywords in French culture for PivotGrid.
+The following table lists the default keywords in French culture for the PivotGrid.
 <table>
 <tr>
 <th>
@@ -1404,7 +1404,7 @@ Recherchez
 </tr>
 </table>
 
-The following table lists the default keywords in French culture for PivotTable Field List.
+The following table lists the default keywords in French culture for the PivotTable field list.
 
 <table>
 <tr>
@@ -1627,7 +1627,7 @@ PivotTableFieldList</td>
 </tr>
 </table>
 
-The following table lists the default keywords in French culture for Pivot Pager.
+The following table lists the default keywords in French culture for the pivot pager.
 
 <table>
 <tr>
@@ -1660,12 +1660,12 @@ The following table lists the default keywords in French culture for Pivot Pager
 </tr>
 </table>
 
-## Localization and Globalization of Cube Info (Client Mode)
+## Localization and globalization of cube info (client mode)
 
-Content displayed within the PivotGrid control are obtained from the OLAP Cube. So following are the steps that needs to be done to get the localized and globalized Cube content.
+Content displayed within the PivotGrid control are obtained from the OLAP cube. So, following are the steps that need to be done to get the localized and globalized cube content.
 
-* To get localized data from OLAP Cube, we need to set **"Locale Identifier"** in the connection string to a specific culture in the **"data"** property present inside **"dataSource"**. 
-* To bind the globalized content in PivotGrid control, we need to set **"locale"** property to a specific culture and want to refer specific culture file in the sample. 
+* To get the localized data from OLAP cube, you need to set the **"Locale Identifier"** in the connection string to a specific culture in the **"data"** property present in the **"dataSource"**.
+* To bind the globalized content in the PivotGrid control, you can set the **"locale"** property to a specific culture and refer the specific culture file in the sample.
  
 N> Culture files are present under **"[installed drive]:\Users\ [user name]\AppData\Local\Syncfusion\EssentialStudio\X.X.X.X\JavaScript\samples\web\scripts\cultures".** 
  
@@ -1683,11 +1683,11 @@ N> Culture files are present under **"[installed drive]:\Users\ [user name]\AppD
 
 {% endhighlight %}
 
-## Localization and Globalization of Cube (Server Mode)
-Content displayed within the PivotGrid control are obtained from the OLAP Cube. So following are the steps that needs to be done to get the localized and globalized Cube content.
+## Localization and globalization of cube (server mode)
+Content displayed within the PivotGrid control are obtained from the OLAP cube. So, following are the steps that need to be done to get the localized and globalized cube content.
  
-* To get the localized string based on different cultures, from OLAP Cube, you need to set **"Locale Identifier"** in the connection string to a specific culture.
-* To bind the globalized content in PivotGrid control, you need to set **"Culture"** and `OverrideDefaultFormatStrings` properties in OlapDataManager class to a specific culture. 
+* To get the localized string based on different cultures, from the OLAP cube, you need to set **"Locale Identifier"** in the connection string to a specific culture.
+* To bind the globalized content in the PivotGrid control, you need to set **"Culture"** and `OverrideDefaultFormatStrings` properties in the OlapDataManager class to a specific culture.
 
 {% highlight c# %}
 
@@ -1702,11 +1702,11 @@ DataManager.OverrideDefaultFormatStrings = true;
 
 ![](Localization-and-Globalization_images/localization.png)
 
-## Localization and Globalization of Relational Info (Client Mode)
-Content displayed within the PivotGrid control are obtained from the Relational datasource. So following are the steps that needs to done to get localized as well as globalized content.
+## Localization and globalization of relational info (client mode)
+Content displayed within the PivotGrid control are obtained from the relational datasource. So, following are the steps that need to done to get localized as well as globalized content.
  
-* To get the localized content, the Relational datasource must have localized headers in them which will be directly applied to PivotGrid.  
-* To globalize the values appear in PivotGrid , we need to set **"format"** and **"locale"** property to a specific culture and want to refer specific culture file in the sample. 
+* To get the localized content, the relational datasource should have localized headers in them which will be directly applied to the PivotGrid.  
+* To globalize the values appear in the PivotGrid, you can set the **"format"** and **"locale"** property to a specific culture and refer the specific culture file in the sample.
 
 N> Culture files are present under **"[installed drive]:\Users\ [user name]\AppData\Local\Syncfusion\EssentialStudio\X.X.X.X\JavaScript\samples\web\scripts\cultures".** 
  
@@ -1726,11 +1726,11 @@ $("#PivotGrid1").ejPivotGrid({
 {% endhighlight %}
 
 
-## Localization and Globalization of Relational Info (Server Mode)
-Content displayed within the PivotGrid control are obtained from the Relational datasource. So following are the steps that needs to done to get localized as well as globalized content.
+## Localization and globalization of relational info (server mode)
+Content displayed within the PivotGrid control are obtained from the relational datasource. So, following are the steps that need to done to get localized as well as globalized content.
  
-* To get the localized content, the Relational datasource must have localized headers in them which will be directly applied to PivotGrid.  
-* **“Format”** settings in PivotComputationInfo class would globalize the values appear in PivotGrid.
+* To get the localized content, the relational datasource should have localized headers in them which will be directly applied to the PivotGrid.  
+* **“Format”** settings in the PivotComputationInfo class will globalize the values appear in the PivotGrid.
 
 {% highlight c# %}
 
@@ -1747,7 +1747,7 @@ Content displayed within the PivotGrid control are obtained from the Relational 
 
 ## RTL
 
-You can render our PivotGrid control from Right to Left by setting [`enableRTL`](/api/js/ejpivotgrid#members:enablertl) property to true.
+You can render the PivotGrid control from right to left by setting the [`enableRTL`](/api/js/ejpivotgrid#members:enablertl) property to true.
 
 {% highlight js %}
 

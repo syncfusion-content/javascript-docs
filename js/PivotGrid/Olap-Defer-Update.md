@@ -10,9 +10,9 @@ api: /api/js/ejpivotgrid
 
 # Defer Update
 
-I> This feature is applicable for OLAP datasource only at Server Mode.
+I> This feature is applicable for the OLAP datasource only at server mode.
 
-Defer Update support allows you to refresh the control only on-demand and not during every UI interaction. 
+Defer update support allows you to refresh the control only on-demand and not during every UI interaction.
 
 {% highlight js %}
 

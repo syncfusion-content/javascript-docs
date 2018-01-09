@@ -12,7 +12,7 @@ api: /api/js/ejpivotgrid
 
 I> This feature is applicable for all modes.
 
-Allows us to specify the required number format that PivotGrid should use in its values by setting the `format` option. Following number formats that are supported:
+Allows you to specify the required number format that should be used in values of the PivotGrid by setting the `format`. Following are supported number formats:
 
 * number
 * decimal
@@ -25,9 +25,9 @@ Allows us to specify the required number format that PivotGrid should use in its
 * fraction
 * string
 
-## RELATIONAL
+## Relational
 
-### Client Mode 
+### Client mode
 
 {% highlight js %}
 
@@ -57,9 +57,9 @@ $(function() {
 
 ![](Number-Format_images/RelationalClient.png)
 
-### Server Mode
+### Server mode
 
-You can set Number Format through the property `Format`. You should specify the format to the property as per the MS standard notation.
+You can set the number format through the `Format` property. You should specify the format to the property as per the MS standard notation.
  
 private PivotReport BindDefaultData()
     {
@@ -76,7 +76,7 @@ private PivotReport BindDefaultData()
 
 ## OLAP
 
-### Client Mode
+### Client mode
 
 {% highlight html %}
 
@@ -99,16 +99,16 @@ $("#PivotGrid1").ejPivotGrid({
 
 ![](Number-Format_images/OlapClient.png)
 
-### Server Mode
+### Server mode
 
- OLAP server mode supports the following number formats in addition to the above mentioned formats.
+ OLAP server mode supports the following number formats in addition to the above mentioned formats:
   
 * General
 * RoundTrip
 * FixedPoint
 * HexaDecimal
 
-N> You can set the number format through the property `Format`
+N> You can set the number format through the `Format` property.
 
 private OlapReport CreateOlapReport()
 {
