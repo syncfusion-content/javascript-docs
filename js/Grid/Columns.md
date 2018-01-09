@@ -370,11 +370,11 @@ $(function () {
 		dataSource : window.gridData,
 		allowPaging : true,
 		columns : [
-		    { field: "OrderID", isPrimaryKey: true, headerText: "Order ID",  width: 90 },
-            { field: "CustomerID", headerText: 'Customer ID', width: 90 },
-            { field: "Freight", headerText: 'Freight', format: "{0:C}", width: 90 },
-            { field: "ShipCountry", headerText: "Ship Country", width: 90 },
-            { field: "ShipCity", headerText: 'Ship City', width: 120 }
+		     { field: "OrderID", isPrimaryKey: true, headerText: "Order ID",  width: 90 },
+             { field: "CustomerID", headerText: 'Customer ID', width: 90 },
+             { field: "Freight", headerText: 'Freight', format: "{0:C}", width: 90 },
+             { field: "ShipCountry", headerText: "Ship Country", width: 90 },
+             { field: "ShipCity", headerText: 'Ship City', width: 120 }
 		]
 	});
 });
