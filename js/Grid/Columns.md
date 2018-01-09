@@ -168,7 +168,7 @@ The following output is displayed as a result of the above code example.
 
 ![](columns_images/columns_img3.png)
 
-We can change the columns headers by external action using [`getHeaderTable`](https://help.syncfusion.com/api/js/ejgrid#methods:getheadertable "getHeaderTable"), [`getHeaderContent`](https://help.syncfusion.com/api/js/ejgrid#methods:getheadercontent "getHeaderContent") methods.
+We can change the columns header text by external action using [`getHeaderTable`](https://help.syncfusion.com/api/js/ejgrid#methods:getheadertable "getHeaderTable"), [`getHeaderContent`](https://help.syncfusion.com/api/js/ejgrid#methods:getheadercontent "getHeaderContent") methods.
 
 The following code example describes the above behavior.
 
