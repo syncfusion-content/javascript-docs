@@ -208,7 +208,7 @@ The following screenshot displays the BulletGraph with Trim.
 
 ## Text Placement
 
-All the caption group elements (caption, subtitle, and indicator) in the **Bullet Graph** support text positioning by using the property **textPosition** available in all caption group elements. The properties, **textAlignment** and **textAnchor** are used to customize text placement further.
+All the caption group elements (caption, subtitle, and indicator) in the **Bullet Graph** support text positioning by using the property [`textPosition`](../api/ejbulletgraph#members:captionsettings-subtitle-textposition) available in all caption group elements. The properties, **textAlignment** and **textAnchor** are used to customize text placement further.
 
 **Text Position**
 

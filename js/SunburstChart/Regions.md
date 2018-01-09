@@ -54,7 +54,7 @@ $("#chart").ejSunburstChart({
 
 ![](/js/SunburstChart/Regions_images/Regions_img1.png);
 
- ## Sunburst Inner Radius
+## Sunburst Inner Radius
  
  The Inner Radius of the Sunburst chart can be customized by using the [`innerRadius`](../api/ejsunburstchart#members:innerradius) property. The default value of innerRadius is 0.4 and its value ranges between 0 and 1 
 
@@ -72,7 +72,6 @@ $("#chart").ejSunburstChart({
 {% endhighlight %}
 
 ![](/js/SunburstChart/Regions_images/Regions_img2.png);
-
 
 
 

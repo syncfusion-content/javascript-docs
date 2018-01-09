@@ -237,7 +237,7 @@ Execute the above code to render the following output.
 
 Frame is the element that decides the appearance of the **Circular Gauge**. You can customize it using the object called [`frame`](../api/ejcirculargauge#members:frame).  It has the properties such as frameType, backGroundUrl, halfCircleFrameStartAngle and halfCircleFrameEndAngle.
 
-[`frameType`](../api/ejcirculargauge#members:frame-frametype) is used to specify whether frame is a half circle frame or full circle frame. [`halfCircleFrameStartAngle`](../api/ejcirculargauge#members:frame-halfcircleframestartangle) and [`halfCircleFrameEndAngle`](../api/ejcirculargauge#members:frame-halfcircleframeendangle)** are used to specify the angle for **Gauge** with frame type as half circle. [`backgroundUrl`](../api/ejcirculargauge#members:frame-backgroundurl) is used to set the background image for the frame.
+[`frameType`](../api/ejcirculargauge#members:frame-frametype) is used to specify whether frame is a half circle frame or full circle frame. [`halfCircleFrameStartAngle`](../api/ejcirculargauge#members:frame-halfcircleframestartangle) and [`halfCircleFrameEndAngle`](../api/ejcirculargauge#members:frame-halfcircleframeendangle)** are used to specify the angle for **Gauge** with frame type as half circle. [`backgroundUrl`](../api/ejcirculargauge#members:frame-backgroundimageurl) is used to set the background image for the frame.
 
 {% highlight html %}
 

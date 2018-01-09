@@ -9,7 +9,8 @@ api: /api/js/ejsunburstchart
 ---
 
 ## Legend
-The legend is used to represent the first level of items in the Sunburst Chart.The [`legend`](../api/ejsunburstchart#members:legend) can be initialized using the below code snippet
+The legend is used to represent the first level of items in the Sunburst Chart.The [`legend`](../api/ejsunburstchart#members:legend) can be initialized using the below code snippet,
+You can enable or disable it by using the [`visible`](../api/ejsunburstchart#members:legend-visible) option of the legend.
 
 {% highlight js %}
 
@@ -57,11 +58,38 @@ $("#chart"). ejSunburstChart ({
 {% endhighlight %}
 
 ![](/js/SunburstChart/Legend_images/Legend_img3.png)
+
+## Legend title
+
+To add the title to the legend, you have to specify the [`text`](../api/ejsunburstchart#members:legend-title-text) option.You can enable or disable the legend title by using the [`visible`](../api/ejsunburstchart#members:legend-title-visible) option of the legend.
+
+
+Using [`font`](../api/ejsunburstchart#members:legend-title-font) property, you can customize  [`font family`](../api/ejsunburstchart#members:legend-title-font-fontfamily), [`font style`](../api/ejsunburstchart#members:legend-title-font-fontstyle), [`font weight`](../api/ejsunburstchart#members:legend-title-font-fontweight), [`size`](../api/ejsunburstchart#members:legend-title-font-size) options.
+
+{% highlight javascript %}
+
+
+        $("#chart").ejSunburstChart({
+            // ...             
+              legend: {
+                //...
+                title: {
+                   //Add title to the chart legend
+	               text: "Countries",
+				
+		         }  },
+
+            // ...             
+        });
+
+
+{% endhighlight %}
  
 ### Customization
 
 ## Legend Item Size and border
-You can change the size of the legend items by using the [`itemStyle.width`](../api/ejsunburstchart#members:legend-itemstyle-width) and [`itemStyle.height`](../api/ejsunburstchart#members:legend-itemstyle-height) properties. To change the legend item border, use [`border`](../api/ejsunburstchart#members:legend-border) property of the legend .
+You can change the size of the legend items by using the [`itemStyle.width`](../api/ejsunburstchart#members:legend-itemstyle-width) and [`itemStyle.height`](../api/ejsunburstchart#members:legend-itemstyle-height) properties. To change the legend item border, use [`border`](../api/ejsunburstchart#members:legend-border) option of the legend [`itemStyle`](../api/ejsunburstchart#members:legend-itemstyle).
+You can change this default border of the legend by using the [`width`](../api/ejsunburstchart#members:legend-border-width) and `height` options.
 
 {% highlight js %}
 
@@ -76,7 +104,7 @@ $("#chart"). ejSunburstChart ({
 
 ## Legend Size
 
-By default, legend takes 20% of the height horizontally when it was placed on the top or bottom position and 20% of the width vertically while placing on the left or right position of the chart. You can change this default legend size by using the [`size`](../api/ejsunburstchart#members:legend-size) property of the legend.
+By default, legend takes 20% of the [`height`](../api/ejsunburstchart#members:legend-size-height) horizontally when it was placed on the top or bottom position and 20% of the [`width`](../api/ejsunburstchart#members:legend-size-width) vertically while placing on the left or right position of the chart. You can change this default legend size by using the [`size`](../api/ejsunburstchart#members:legend-size) property of the legend.
 
 {% highlight js %}
 
@@ -87,11 +115,29 @@ $("#chart"). ejSunburstChart ({
 
 {% endhighlight %}
 
- ![](/js/SunburstChart/Legend_images/Legend_img5.png)
+![](/js/SunburstChart/Legend_images/Legend_img5.png)
+
+## Legend Item Padding
+
+You can control the spacing between the legend items by using the [`itemPadding`](../api/ejsunburstchart#members:legend-itempadding) option of the legend.
+
+{% highlight js %}
+
+$("#chart").ejSunburstChart({
+            // ...             
+            legend: {
+                //...
+                //Add space between each legend item
+                itemPadding: 15,
+            }
+            // ...             
+        });
+
+{% endhighlight %}
 
 ## Legend Row and Columns
 
-You can arrange the legend items horizontally and vertically by using the [`rowCount`](../api/ejsunburstchart#members:legend-rowCount) and [`columnCount`](../api/ejsunburstchart#members:legend-clumnCount) properties of the legend.
+You can arrange the legend items horizontally and vertically by using the [`rowCount`](../api/ejsunburstchart#members:legend-rowcount) and [`columnCount`](../api/ejsunburstchart#members:legend-columncount) properties of the legend.
 •	When only the rowCount is specified, the legend items are arranged according to the rowCount and number of columns may vary based on the number of legend items.
 •	When only the columnCount is specified, the legend items are arranged according to the columnCount and number of rows may vary based on the number of legend items.
 •	When both the properties are specified, then the one which has higher value is given preference. For example, when the rowCount is 4 and columnCount is 3, legend items are arranged in 4 rows.
@@ -110,7 +156,7 @@ $("#chart"). ejSunburstChart ({
  
 ## LegendInteractivity
 
-You can select a specific category while clicking on corresponding legend item through [`clickAction'](../api/ejsunburstchart#members:legend-clickAction) property. 
+You can select a specific category while clicking on corresponding legend item through [`clickAction'](../api/ejsunburstchart#members:legend-clickaction) property. 
 
 It has three types of action
 *	ToggleSegmentSelection
@@ -147,5 +193,55 @@ $("#chart").ejSunburstChart ({
 
 
 ![](/js/SunburstChart/Legend_images/Legend_img8.png)
+
+## Customize the legend text
+
+To customize the legend item text and title you can use the [`font`](../api/ejsunburstchart#members:legend-font) and [`title`](../api/ejsunburstchart#members:legend-title) options. You can change the legend title [`alignment`](../api/ejsunburstchart#members:legend-alignment) by using the [`textAlignment`](../api/ejsunburstchart#members:legend-title-textalignment) option of the legend title.
+
+Using [`font`](../api/ejsunburstchart#members:legend-font) property, you can customize  [`font family`](../api/ejsunburstchart#members:legend-font-fontfamily), [`font style`](../api/ejsunburstchart#members:legend-font-fontstyle), [`font weight`](../api/ejsunburstchart#members:legend-font-fontweight), [`size`](../api/ejsunburstchart#members:legend-font-size) options.
+
+{% highlight javascript %}
+
+
+        $("#chart").ejSunburstChart({
+            // ...             
+            legend: {
+                //...
+                //Customize the legend item text
+                font: { fontFamily: 'Segoe UI', fontStyle: 'Normal', fontWeight: 'Bold', size: '15px' },
+                title: {
+                    //...
+		            textAlignment: "center",
+                    //Customize the legend title text
+	                font: { fontFamily: 'Segoe UI', fontStyle: 'Italic', 
+                                        fontWeight: 'Bold', size: '12px' },
+	             }            
+             },
+            // ...             
+        });
+
+
+{% endhighlight %}
+
+## Legend Location
+
+The [`location`](../api/ejsunburstchart#members:legend-location) property is used for customizing the position of the sunburst chart legend. 
+Legend is placed in provided location only when value of position property is custom. Both the [`x`](../api/ejsunburstchart#members:legend-location-x) and [`y`](../api/ejsunburstchart#members:legend-location-y) locations can be customized in the location property.
+
+{% highlight javascript %}
+
+$("#chart").ejSunburstChart({
+            // ...             
+            legend: {
+                //...
+               
+                location :{x :20 ,y:100}  
+            }
+            // ...             
+        });
+{% endhighlight %}
+
+
+
 
 

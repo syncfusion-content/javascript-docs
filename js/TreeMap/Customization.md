@@ -81,7 +81,7 @@ Try it: [RangeColorMapping](http://jsplayground.syncfusion.com/cbcyugjn)
 
 ### Desaturation Color Mapping
 
-You can differentiate all the leaf nodes using the [`desaturation color mapping`](../api/ejtreemap#members:desaturationcolormapping) property of the **TreeMap**. Differentiation is achieved, even though same color is applied for all the leaf nodes by varying the opacity of the leaf nodes based on the color value specified in the color value range using [`rangeMinimum`](../api/ejtreemap#members:desaturationcolormapping-rangemaximum) and [`rangeMaximum`](../api/ejtreemap#members:desaturationcolormapping-rangeminimum) value of the data collection. You can also bound the opacity range by setting [`from`](../api/ejtreemap#members:desaturationcolormapping-from) and [`to`](../api/ejtreemap#members:desaturationcolormapping-to) property of the `desaturationColorMapping`.
+You can differentiate all the leaf nodes using the [`desaturation color mapping`](../api/ejtreemap#members:desaturationcolormapping) property of the **TreeMap**. Differentiation is achieved, even though same color is applied for all the leaf nodes by varying the opacity of the leaf nodes based on the color value specified in the [`color`](../api/ejtreemap#members:desaturationcolormapping-color) value range using [`rangeMinimum`](../api/ejtreemap#members:desaturationcolormapping-rangemaximum) and [`rangeMaximum`](../api/ejtreemap#members:desaturationcolormapping-rangeminimum) value of the data collection. You can also bound the opacity range by setting [`from`](../api/ejtreemap#members:desaturationcolormapping-from) and [`to`](../api/ejtreemap#members:desaturationcolormapping-to) property of the `desaturationColorMapping`.
 
 {% highlight js %}
 
@@ -194,7 +194,7 @@ You can able to customize the border color of the treemap using the property [`b
 
 ## Border Thickness
 
-For customizing the border thickness of the treemap, you can use the [`borderThickness`](../api/ejtreemap#members:borderbrush) property.
+For customizing the border thickness of the treemap, you can use the [`borderThickness`](../api/ejtreemap#members:borderthickness) property.
 
 {% highlight js %}
  
@@ -275,7 +275,7 @@ You can customize that whether gradient color have to be applied for treemap or 
 
 ## Responsive Treemap
 
-You can customize whether treemap have to be responsive or not while resizing the container. For making treemap responsive you can use [`enableResize`](../api/ejtreemap#members:enableResize) or [`isResponsive`]((../api/ejtreemap#members:isResponsive) property.
+You can customize whether treemap have to be [`responsive`](../api/ejtreemap#members:isresponsive) or not while resizing the container. For making treemap responsive you can use [`enableResize`](../api/ejtreemap#members:enableresize) property.
 
 {% highlight js %}
  
@@ -286,7 +286,7 @@ You can customize whether treemap have to be responsive or not while resizing th
 
 ## GroupColorMapping
 
-You can customize the color of the each group using [`groupColorMapping`] property. To use group color mapping, kindly specify `groupId` and `rangeColorMapping` inside the [`groupColorMapping`](../api/ejtreemap#members:groupColorMapping). 
+You can customize the color of the each group using `groupColorMapping` property. To use group color mapping, kindly specify [`groupId`](../api/ejtreemap#members:groupColorMapping-groupid) and `rangeColorMapping` inside the [`groupColorMapping`](../api/ejtreemap#members:groupcolormapping). 
 
 {% highlight js %}
 
@@ -297,7 +297,7 @@ You can customize the color of the each group using [`groupColorMapping`] proper
 
 ## GroupSelectionMode
 
-You can specifies the selection mode of the treemap using [`groupSelectionMode`](../api/ejtreemap#members:groupSelectionMode) property. You can set either group selection mode value as `Default` or  `Multiple`. 
+You can specifies the [`selection mode`](../api/ejtreemap#members:selectionmode) of the treemap using [`groupSelectionMode`](../api/ejtreemap#members:groupselectionmode) property. You can set either group selection mode value as `Default` or  `Multiple`. 
 
 {% highlight js %}
 
@@ -319,7 +319,7 @@ You can specify the header for the parent item using the property [`header`](../
 
 ## Specifying HierarchicalDatasource
 
-You can specify whether data source bound for the treemap is hierarchical or not using the property [`isHierarchicalDatasource`](../api/ejtreemap#members:isHierarchicalDatasource).
+You can specify whether data source bound for the treemap is hierarchical or not using the property [`isHierarchicalDatasource`](../api/ejtreemap#members:ishierarchicaldatasource).
 
 {% highlight js %}
 
@@ -332,6 +332,8 @@ You can specify whether data source bound for the treemap is hierarchical or not
 
 You can specify the name of the culture based on which treemap is localized. To achieve this you can use the treemap property [`locale`](../api/ejtreemap#members:locale).
 
+**Enable Group Separator** is used to Convert the date object to string while using the locale settings, you can set [`enableGroupSeparator`](../api/ejtreemap#members:enablegroupseparator) property as **true**.
+
 {% highlight js %}
          
    //Sets the locale value
@@ -341,7 +343,7 @@ You can specify the name of the culture based on which treemap is localized. To 
 
 ## Treemap Items
 
-You can specify the treemap items which you want to display in the treemap using the property [`treeMapItems`](../api/ejtreemap#members:treeMapItems).
+You can specify the treemap items which you want to display in the treemap using the property [`treeMapItems`](../api/ejtreemap#members:treemapitems).
 
 {% highlight js %}
 

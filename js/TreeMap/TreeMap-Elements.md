@@ -20,7 +20,7 @@ TreeMap contains various elements such as,
 
 You can set the color value of **leaf nodes** using `treeMapLegend`. This legend is appropriate only for the **TreeMap** whose leaf nodes are colored using `rangeColorMapping`.
 
-You can set `showLegend` property value to **“true”** to enable or disable legend visibility.
+You can set `showLegend` property value to **“True”** to enable or disable legend visibility.
 
 ### TreeMap Legend
 
@@ -273,7 +273,7 @@ You can handle the label overflow, by specifying any one of the following values
 
 ## Palette Color Mapping
 
-Treemap is having support for [`palette color mapping`](../api/ejtreemap#members:levels-palatteColorMapping). You can set the color for [`palette color mapping`] using the property [`color`](../api/ejtreemap#members:levels-palatteColorMapping-color) in palette color mapping.
+Treemap is having support for [`palette color mapping`](../api/ejtreemap#members:levels-palattecolormapping). You can set the color for `palette color mapping` using the property [`color`](../api/ejtreemap#members:levels-palattecolormapping-color) in palette color mapping.
 
 {% highlight js %}
 

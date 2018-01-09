@@ -107,7 +107,7 @@ You can customize the **Digital Gauge** using different properties.
 
 **Add Segment and Character Properties**
 
-* In this example, the **Digital Gauge** uses a welcome board in which the text color must be distinctly visible in nature. In order to meet this requirement, you can give some segment properties such as segment spacing, segment width, segment color, segment length and segment opacity.
+* In this example, the **Digital Gauge** uses a welcome board in which the text color must be distinctly visible in nature. In order to meet this requirement, you can give some [`segment`](../api/ejdigitalgauge#members:matrixsegmentdata) properties such as segment spacing, segment width, segment color, segment length and segment opacity.
 
 * **Character** [`type`](../api/ejdigitalgauge#members:items-charactersettings-type) is used to define the Digital representation of the character. Thee five types of character representation are as follows:
 

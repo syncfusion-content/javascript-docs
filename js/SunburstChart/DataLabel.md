@@ -25,7 +25,7 @@ $("#chart"). ejSunburstChart ({
 
 ## Label Overflow mode
 
-When you represent huge data with data labels, they may intersect each other. You can avoid this using the [`labelOverflowMode`](../api/ejsunburstchart#members:datalabelSettings-labelOverflowMode) property.
+When you represent huge data with data labels, they may intersect each other. You can avoid this using the [`labelOverflowMode`](../api/ejsunburstchart#members:datalabelsettings-labeloverflowmode) property.
 
 The following properties are used to avoid the overlapping.
 *	Trim – To trim the large data labels.
@@ -56,7 +56,7 @@ $("#chart"). ejSunburstChart ({
 ![](/js/SunburstChart/DataLabel_images/DataLabel_img3.png)
 
 ## Label Rotation Mode
-You can rotate the data label by using [`labelRotationMode`](../api/ejsunburstchart#members:datalabelSettings-labelRotationMode) property. By default, the labelRotationMode is set as **angle**. 
+You can rotate the data label by using [`labelRotationMode`](../api/ejsunburstchart#members:datalabelsettings-labelrotationmode) property. By default, the labelRotationMode is set as **angle**. 
 
 The following code shows how to set labelRotationMode as normal and angle.
 
@@ -81,8 +81,10 @@ $("#chart"). ejSunburstChart ({
 ![](/js/SunburstChart/DataLabel_images/DataLabel_img5.png)
  
 ## Customizing the data labels
-You can customize the appearance of the data point using the [`font`](../api/ejsunburstchart#members:datalabelSettings-font) property.
 
+You can customize the appearance of the data point using the [`font`](../api/ejsunburstchart#members:datalabelsettings-font) property.
+
+Using font property, you can customize [`font color`](../api/ejsunburstchart#members:datalabelsettings-font-color), [`font family`](../api/ejsunburstchart#members:datalabelsettings-font-fontfamily), [`font style`](../api/ejsunburstchart#members:datalabelsettings-font-fontstyle), [`font weight`](../api/ejsunburstchart#members:datalabelsettings-font-fontweight), [`opacity`](../api/ejsunburstchart#members:datalabelsettings-font-opacity), [`size`](../api/ejsunburstchart#members:datalabelsettings-font-size) options.
 
 {% highlight js %}
 $("#chart"). ejSunburstChart ({
@@ -92,4 +94,25 @@ $("#chart"). ejSunburstChart ({
 {% endhighlight %}
 
 ![](/js/SunburstChart/DataLabel_images/DataLabel_img6.png)
+
+## Data Label Template
+
+Label content can be formatted by using the template option.
+
+{% highlight js %}
+
+<div id="item">
+     <div id="left">
+	<img src="../images/chart/icon_investments.png"/>
+     </div>
+     <div id="right">
+          <div id="point">#point.y#%</div>
+     </div>
+</div> 
+
+$("#chart").ejSunburstChart({
+    dataLabelSettings :{ template: "item" }               
+});
+
+{% endhighlight %}
 
