@@ -14,7 +14,7 @@ Custom labels are the text that can paste in any location of the **Linear Gauge*
 
 ## Adding Custom label collection
 
-Custom labels collection can be directly added to the scale object. Refer the following code to add custom labels collection in a **Linear Gauge** control.
+[`Custom labels`](../api/ejlineargauge#members:members:scales-customlabels) collection can be directly added to the scale object. Refer the following code to add custom labels collection in a **Linear Gauge** control.
 
 
 {% highlight html %}
@@ -145,6 +145,8 @@ Execute the above code to render the following output.
 ## Locating the CustomLabels
 
 To set the location of the custom label in **Linear Gauge**, [`position`](../api/ejlineargauge#members:scales-customlabels-position) property is used. You can position the custom labels in horizontal and vertical axis using [`x`](../api/ejlineargauge#members:scales-customlabels-position-x) and [`y`](../api/ejlineargauge#members:scales-customlabels-position-y) axis respectively.
+
+To specify the label [`position type`](../api/ejlineargauge#members:scales-customlabels-positiontype) as inner or outer in the custom labels.
 
 
 {% highlight html %}

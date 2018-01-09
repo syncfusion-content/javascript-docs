@@ -10,7 +10,7 @@ api: /api/js/ejlineargauge
 
 # Ranges 
 
-Ranges are used to specify or group the scale values. You can describe the values in the pointers using ranges. 
+Ranges are used to specify or group the scale values. You can describe the values in the pointers using [`ranges`](../api/ejlineargauge#members:scales-ranges). 
 
 ## Adding range collection
 

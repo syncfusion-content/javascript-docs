@@ -9,7 +9,7 @@ api: /api/js/ejlineargauge
 ---
 
 
-##Events
+## Events
 
 
 ### drawBarPointers
@@ -1006,7 +1006,7 @@ LinearGaugeObj.getScaleStyle(0);
 
 ### getTickAngle()
 
-To get Tick Angle in number, you can use [`getTickAngle`](../api/ejlineargauge#methods:gettickanglen) method.
+To get Tick Angle in number, you can use [`getTickAngle`](../api/ejlineargauge#methods:gettickangle) method.
 
 
 #### Example
