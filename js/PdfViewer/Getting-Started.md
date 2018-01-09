@@ -291,6 +291,14 @@ namespace PDFViewerDemo.Api
             PdfViewerHelper helper = new PdfViewerHelper();
             return helper.GetDocumentData(jsonResult);
         }
+		
+		//Post action for unloading and disposing the PDF document resources in server side.
+		public void Unload()
+		{
+			PdfViewerHelper helper = new PdfViewerHelper();
+			helper.UnLoad();
+		}
+		
     }
 }
 {% endhighlight %}
