@@ -212,7 +212,7 @@ The following screenshot illustrates the **Rating** with customized increment.
 
 ## Resetting values
 
-**EJ Rating** control provides support for value **reset** at runtime. This is achieved by enabling the [allowReset](https://help.syncfusion.com/api/js/ejrating#members:allowreset) property to be **‘True’.** By default, the property value is set to **‘True’.**
+**EJ Rating** control provides support for value **reset** at runtime. This is achieved by enabling the [allowReset](https://help.syncfusion.com/api/js/ejrating#members:allowreset) property to be **‘true’.** By default, the property value is set to **‘true’.**
 
 The following code example is used to render the **Rating** control with **allowReset**.
 
@@ -259,7 +259,7 @@ The following screenshot illustrates the **Rating** with **allowReset**.
 
 ## Read only
 
-**Rating** control provides support for changeable or unchangeable values for **Rating** control. This is achieved by the [readOnly](https://help.syncfusion.com/api/js/ejrating#members:readonly) property. When this property is set to **‘True’** the **Rating** value becomes unchangeable. By default, this property value is set to **‘False’.**
+**Rating** control provides support for changeable or unchangeable values for **Rating** control. This is achieved by the [readOnly](https://help.syncfusion.com/api/js/ejrating#members:readonly) property. When this property is set to **‘true’** the **Rating** value becomes unchangeable. By default, this property value is set to **‘false’.**
 
 The following code example is used to render the **Rating** control with **readOnly**.
 
@@ -296,7 +296,7 @@ The following screenshot illustrates the **Rating** with **readOnly.**
 
 ## Enable or Disable
 
-**Rating** control provides support to **enable** or **disable** the control. This is achieved by the [enabled](https://help.syncfusion.com/api/js/ejrating#members:enabled) property. By default the property value is **‘True’.**
+**Rating** control provides support to **enable** or **disable** the control. This is achieved by the [enabled](https://help.syncfusion.com/api/js/ejrating#members:enabled) property. By default the property value is **‘true’.**
 
 The following code example is used to render the **Rating** control with **enable** or **disable** support.
 
