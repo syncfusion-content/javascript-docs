@@ -14,7 +14,7 @@ api: /api/js/ejlineargauge
 
 ## Adding marker pointer collection
 
-You can add **Marker Pointer** collection directly to the scale object. To add pointer collection in a gauge control refer the following code example.  
+You can add **Marker Pointer** collection directly to the scale object. To add [`pointer`](../api/ejlineargauge#members:scales-markerpointers) collection in a gauge control refer the following code example.  
 
 
 {% highlight html %}

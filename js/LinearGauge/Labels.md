@@ -18,7 +18,7 @@ Labels are units that are used to display the values in the scales. You can cust
 
 * The attribute **angle** is used to display the labels in the specified angles and **color** attribute is used to display the labels in specified color. You can adjust the opacity of the label with the property **opacity** and the values of it lies between 0 and 1.The [`includeFirstValue`](../api/ejlineargauge#members:scales-labels-includefirstvalue) is a special property by enabling this property, the first value of the label is not rendered.
 
-* Font option is also available on the labels. The basic three properties of fonts such as [`size`](../api/ejlineargauge#members:scales-labels-font-size), [`family`](../api/ejlineargauge#members:scales-labels-font-fontfamily) and [`style`](../api/ejlineargauge#members:scales-labels-font-fontstyle) can be achieved by **size**, **fontStyle** and **fontFamily**. Labels are two types such as major and minor.Major type labels are for major interval values and minor type labels are for minor interval values.
+* Font option is also available on the labels. The basic three properties of fonts such as [`size`](../api/ejlineargauge#members:scales-labels-font-size), [`family`](../api/ejlineargauge#members:scales-labels-font-fontfamily) and [`style`](../api/ejlineargauge#members:scales-labels-font-fontstyle) can be achieved by **size**, **fontStyle** and **fontFamily**. Labels are two [`types`](../api/ejlineargauge#members:scales-labels-type) such as major and minor.Major type labels are for major interval values and minor type labels are for minor interval values.
 
 
 {% highlight html %}
