@@ -10,9 +10,9 @@ api: /api/js/ejpivotgrid
 
 # Write-back
 
-I> This feature is applicable only for OLAP datasource only at Server Mode.
+I> This feature is applicable only for the OLAP datasource at server mode.
 
-We can now edit the values in PivotGrid and update a write enabled Cube at the back-end (SSAS) dynamically at runtime.
+You can edit the values in the PivotGrid and update a write enabled cube in the back-end (SSAS) dynamically at runtime.
 
 N> Write-back is only supported for measures that use the **SUM** aggregation.
 
