@@ -98,10 +98,31 @@ You can enable this feature by setting the [`draggingOnSelection`](../api/ejmap#
 
 ![](User-Interaction_images/User-Interaction_img1.png)
 
+## Enable Mouse hover
+
+Enables or disables the shape [`mouse hover`](../api/ejmap#members:layers-enablemousehover).
+
+{% highlight javascript %}
+
+        jQuery(function($) {
+            $("#mapContainer").ejMap({
+                layers: [
+                    {
+                        // ...                        
+                        enableMouseHover: true
+                        // ...
+                    }
+                ]
+            });
+        }); 
+
+
+{% endhighlight %}
+
 
 ## Zooming
 
-The zooming feature enables you to zoom in and out the Map to show in-depth information. It is controlled by the [`level`](../api/ejmap#members:zoomsettings-level) property of the Map. When the zoom level of the Map control is increased, the Map is zoomed in. When the zoom level is decreased, then the Map is zoomed out.
+The [`zooming`](../api/ejmap#members:zoomsettings) feature enables you to zoom in and out the Map to show in-depth information. It is controlled by the [`level`](../api/ejmap#members:zoomsettings-level) property of the Map. When the zoom level of the Map control is increased, the Map is zoomed in. When the zoom level is decreased, then the Map is zoomed out.
 
 ### Properties
 
@@ -400,7 +421,7 @@ Specifies the navigation control template for map, you can use [`content`](../ap
 
 
 
-### Animation
+## Animation
 
  **Animation** is enabled or disabled using [`enable animation`](../api/ejmap#members:enableanimation) property. 
 
@@ -426,7 +447,7 @@ Enables or Disables the animation for layer change in map, you can use [`enableL
 {% endhighlight %}
 
 
-### Responsiveness during browser resize
+## Responsiveness during browser resize
 
 **Map** is made responsive when resizing the browser by using [`isResponsive`](../api/ejmap#members:isresponsive) property.
 
@@ -438,6 +459,27 @@ $("#Map").ejMap({
 
 {% endhighlight %}
 
+Responsiveness of the map is controlled by using [`enableResize`](../api/ejmap#members:enableresize) property.
 
 
+{% highlight javascript %}
 
+$("#Map").ejMap({
+        enableResize: true,                                       
+});
+
+{% endhighlight %}
+
+
+## Localization
+
+Name of the culture based on which map should be localized. Labels are localized with respect to the culture name.
+String type properties like template text are not localized automatically. Provide localized text as value to string type properties.
+
+{% highlight javascript %}
+
+$("#Map").ejMap({
+        locale: "en-US",                                       
+});
+
+{% endhighlight %}

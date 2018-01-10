@@ -97,7 +97,7 @@ $("#chart"). ejSunburstChart ({
 
 ## Data Label Template
 
-Label content can be formatted by using the template option.
+Label content can be formatted by using the [`template`](../api/ejsunburstchart#members:datalabelsettings-template) option.
 
 {% highlight js %}
 

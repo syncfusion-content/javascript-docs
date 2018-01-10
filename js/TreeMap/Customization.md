@@ -107,6 +107,27 @@ You can differentiate all the leaf nodes using the [`desaturation color mapping`
 
 Try it: [DesaturationColorMapping](http://jsplayground.syncfusion.com/qoh2upwr)
 
+### Palette Color Mapping
+
+You can customize the [`color`](../api/ejtreemap#members:palettecolormapping-color) of each leaf nodes by providing a color palette of your choice by using the [`paletteColorMapping`](../api/ejtreemap#members:palettecolormapping) property.
+
+{% highlight js %}
+]
+        jQuery(function ($) {
+
+            $("#treemapContainer").ejTreeMap({
+                // ...  
+                paletteColorMapping: {
+                        colors: ["red","green","blue", "yellow"]
+                },
+                // ...  
+            });
+        });
+
+
+{% endhighlight %}
+
+
 ## Tooltip
 
 You can enable the tooltip support for the TreeMap by setting the [`showTooltip`](../api/ejtreemap#members:showTooltip) property to true. By default, it takes the property of the bound object that is referred to in the groupPath and displays its content when the corresponding node is tapped. The [`tooltipTemplate`](../api/ejtreemap#members:tooltiptemplate) is a **HTML** element that is used to expose the custom template for the tooltip.
@@ -286,7 +307,7 @@ You can customize whether treemap have to be [`responsive`](../api/ejtreemap#mem
 
 ## GroupColorMapping
 
-You can customize the color of the each group using `groupColorMapping` property. To use group color mapping, kindly specify [`groupId`](../api/ejtreemap#members:groupColorMapping-groupid) and `rangeColorMapping` inside the [`groupColorMapping`](../api/ejtreemap#members:groupcolormapping). 
+You can customize the color of the each group using **groupColorMapping** property. To use group color mapping, kindly specify [`groupId`](../api/ejtreemap#members:groupcolormapping-groupid) and `rangeColorMapping` inside the [`groupColorMapping`](../api/ejtreemap#members:groupcolormapping). 
 
 {% highlight js %}
 

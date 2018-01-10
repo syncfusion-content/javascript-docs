@@ -116,7 +116,7 @@ In the HTML page set the corresponding &lt;input&gt; elements for rendering Nume
 {% endhighlight %}
 
 
-The output for NumericTextBox when enableStrictMode is “True” is as follows.
+The output for NumericTextBox when enableStrictMode is “true” is as follows.
 
 
 
@@ -124,7 +124,7 @@ The output for NumericTextBox when enableStrictMode is “True” is as follows.
 
 ## Enabled or Disabled
 
-The **NumericTextBox** control has an option to enable or disable its element. You can set the **enabled** property as “**True**” to enable the NumericTextBox control.
+The **NumericTextBox** control has an option to enable or disable its element. You can set the **enabled** property as “**true**” to enable the NumericTextBox control.
 
 ### Configure Enabled or Disabled 
 
@@ -151,18 +151,18 @@ In the **HTML** page set the corresponding **&lt;input&gt;** elements for render
 {% endhighlight %}
 
 
-The output for NumericTextBox when enabled is “False” and when enabled is “True”.
+The output for NumericTextBox when enabled is “false” and when enabled is “true”.
 
 ![](/js/NumericTextBox/Behavior-Settings_images/Behavior-Settings_img5.png)
 
-NumericTextBox with enabled as False
+NumericTextBox with enabled as false
 {:.caption}
 
 
 
 ![](/js/NumericTextBox/Behavior-Settings_images/Behavior-Settings_img6.png)
 
-NumericTextBox with enabled as True
+NumericTextBox with enabled as true
 {:.caption}
 
 ## Adjusting Textbox Size
@@ -358,7 +358,7 @@ NumericTextBox with minValue
 
 ## Read Only Support
 
-The **NumericTextBox** supports read only option. When you enable the **readOnly** property to the control, the value cannot be changed in the NumericTextBox . You can set the **readOnly** property as “**True”** to enable this option.
+The **NumericTextBox** supports read only option. When you enable the **readOnly** property to the control, the value cannot be changed in the NumericTextBox . You can set the **readOnly** property as “**true”** to enable this option.
 
 ### Configure Read Only
 
@@ -384,7 +384,7 @@ In the **HTML** page set the corresponding **&lt;input&gt;** elements for render
 
 {% endhighlight %}
 
-The output for NumericTextBox when **readOnly** is “**True**” is as follows**.** The NumericTextBox value cannot be edited or changed.
+The output for NumericTextBox when **readOnly** is “**true**” is as follows**.** The NumericTextBox value cannot be edited or changed.
 
 
 
@@ -500,7 +500,7 @@ In the HTML page set the corresponding &lt;input&gt; elements for rendering Nume
 {% endhighlight %}
 
 
-The output for NumericTextBox when **showRoundedCorner** is “**True**”.
+The output for NumericTextBox when **showRoundedCorner** is “**true**”.
 
 
 
@@ -535,7 +535,7 @@ In the HTML page set the corresponding &lt;input&gt; elements for rendering Nume
 {% endhighlight %}
 
 
-The output for NumericTextBox when showSpinButton is “False”.
+The output for NumericTextBox when showSpinButton is “false”.
 
 
 

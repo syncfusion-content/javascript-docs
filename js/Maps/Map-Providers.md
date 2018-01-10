@@ -43,7 +43,7 @@ Bing Map is a key feature in accessing the external geospatial imagery services 
 
 ### Enable Bing Maps
 
-You can enable this feature by defining the [`layerType`](../api/ejmap#members:layers-layertype) ) as “bing”.
+You can enable this feature by defining the [`layerType`](../api/ejmap#members:layers-layertype) as “bing”. To get the type of [`bing map`](../api/ejmap#members:layers-bingmaptype) as aerial,aerialwithlabel and road.
 
 {% highlight javascript %}
 

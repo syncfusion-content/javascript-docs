@@ -252,7 +252,7 @@ You can set the “**StrictMode” option** to restrict entering values defined 
                 value: 55, // sets value by default
                 minValue: 5, // sets min value for amount
                 maxValue: 55// sets max value for amount
-                enableStrictMode:true // sets strict mode to True will set the value 
+                enableStrictMode:true // sets strict mode to true will set the value 
             });
               // simple MaskEdit creation
               $("#mobileNo").ejMaskEdit({
