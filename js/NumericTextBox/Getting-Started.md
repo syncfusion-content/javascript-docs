@@ -222,7 +222,7 @@ You can set the “**strict mode” option** to restrict entering values defined
                 value: 35, // sets value  
                 minValue: 1, // sets min value   
                 maxValue: 10000, // sets max value  
-                enableStrictMode: true // sets strict mode to True  
+                enableStrictMode: true // sets strict mode to true  
             });
             // simple Percentage creation
             $("#service").ejPercentageTextbox({

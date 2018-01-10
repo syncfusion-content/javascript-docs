@@ -107,7 +107,7 @@ Marker, data label and fill color of each point in a series can be customized in
 
 ## Series border customization
 
-To customize the series border color, width and dashArray, you can use [`series.border`](../api/ejchart#members:series-border) option. 
+To customize the series border [`color`](../api/ejchart#members:series-border-color), [`width`](../api/ejchart#members:series-border-width) and [`dashArray`](../api/ejchart#members:series-border-dasharray), you can use [`border`](../api/ejchart#members:series-border) option. 
 
 N> Series border can be applied to all the series (except Line, Spline, HiLo, HiLoOpenClose and StepLine series).
 
@@ -130,6 +130,35 @@ N> Series border can be applied to all the series (except Line, Spline, HiLo, Hi
 {% endhighlight %}
 
 ![](/js/Chart/Appearance_images/Appearance_img4.png)
+
+## Series font customization
+
+To customize the series font color[`color`](../api/ejchart#members:series-font-color), [`fontFamily`](../api/ejchart#members:series-font-fontfamily), [`fontStyle`](../api/ejchart#members:series-font-fontstyle), [`fontWeight`](../api/ejchart#members:series-font-fontweight), [`opacity`](../api/ejchart#members:series-font-opacity) and [`size`](../api/ejchart#members:series-font-size), you can use [`font`](../api/ejchart#members:series-font) option. 
+
+{% highlight javascript %}
+
+  $("#container").ejChart({
+
+            //...
+            series: [{
+                  
+                //Change the color, fontFamily, fontStyle, fontWeight, opacity and size to customize the font of series
+                font: { 
+                    color : "green", 
+                    fontFamily : "Algerian", 
+                    fontStyle : "italic", 
+                    fontWeight : "lighter", 
+                    opacity : 0.5,
+                    size : "14px" 
+                }
+                //...
+           }]
+
+                //...
+     });
+
+
+{% endhighlight %}
 
 ## Chart area customization
 
