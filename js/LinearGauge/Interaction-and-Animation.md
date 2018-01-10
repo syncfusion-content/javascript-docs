@@ -81,3 +81,33 @@ Specifies the animate state for marker pointer, you can set [`enableMarkerPointe
 
 {% endhighlight %}
 
+# Tooltip
+
+[`Tooltip`](../api/ejlineargauge#members:tooltip) has three attributes in it. The first two attributes such as [`showLabelTooltip`](../api/ejlineargauge#members:tooltip-showlabeltooltip) and [`showCustomLabelTooltip`](../api/ejlineargauge#members:tooltip-showcustomlabeltooltip) are for enabling the **Tooltip** for label as well as custom label in default appearance. 
+
+**ShowLabelTooltip** is to enable the **Tooltip** for labels and **showCustomLabelTooltip** is for enabling the **Tooltip** option for customLabels.
+
+{% highlight javascript %}
+
+<div id="LinearGauge1"></div> 
+ 
+<script>
+        $("#LinearGauge1").ejLinearGauge({ tooltip:{showCustomLabelTooltip: true,showLabelTooltip: true}});  
+</script>
+
+{% endhighlight %}
+
+## Tooltip Template
+
+In **Tooltip** option, you can customize the Tooltip window by adding the tooltip template on that page with the help of API [`templateID`](../api/ejlineargauge#members:tooltip-templateid). Refer to the following code example to know more about Tooltip template.
+
+{% highlight javascript %}
+
+<div id="LinearGauge1"></div> 
+ 
+<script>
+        $("#LinearGauge1").ejLinearGauge({  tooltip:{showLabelTooltip: true, templateID: true}});  
+</script>
+
+{% endhighlight %}
+
