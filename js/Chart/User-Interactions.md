@@ -366,7 +366,115 @@ The [`fill`](../api/ejchart#members:crosshair-fill) and [`border`](../api/ejchar
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/userinteraction/crosshair) here to view the Crosshair online demo sample.
 
+### Crosshair marker
 
+Options for customizing the [`marker`] (../api/ejchart#members:crosshair-marker) in crosshair.
+
+### Crosshair marker Border
+
+Options for customizing the [`border`] (../api/ejchart#members:crosshair-marker-border)
+
+### Crosshair marker Border width
+
+Border [`width`] (../api/ejchart#members:crosshair-marker-border-width) of the marker.
+
+{% highlight javascript %}
+
+
+     $("#container").ejChart({
+
+   crosshair : { marker : { border : { width :2 } } }              
+
+});
+
+
+{% endhighlight %}
+
+### Crosshair marker Opacity
+
+[`Opacity`] (../api/ejchart#members:crosshair-marker-opacity) of the marker.
+
+
+{% highlight javascript %}
+
+
+     $("#container").ejChart({
+
+   crosshair :{marker :{opacity :2}}                
+
+});
+
+{% endhighlight %}
+
+### Crosshair marker size
+
+Options for customizing the [`size`] (../api/ejchart#members:crosshair-marker-size)of the marker.
+
+### Crosshair marker size height
+
+[`Height`] (../api/ejchart#members:crosshair-marker-size-height)of the marker.
+
+{% highlight javascript %}
+
+
+     $("#container").ejChart({
+
+  crosshair :{marker :{size :{ height :15 }}}                  
+
+});
+
+{% endhighlight %}
+
+### Crosshair marker size width
+
+[`Width`] (../api/ejchart#members:crosshair-marker-size-width)of the marker.
+
+{% highlight javascript %}
+
+
+     $("#container").ejChart({
+
+  crosshair :{marker :{size : {width :15}}}                       
+
+});
+
+{% endhighlight %}
+
+### Crosshair line
+
+Options for customizing the crosshair [`line`] (../api/ejchart#members:crosshair-line)
+
+### Crosshair line Color
+
+[`Color`] (../api/js/ejchart#members:crosshair-line-color) of the crosshair line.
+
+
+{% highlight javascript %}
+
+
+     $("#container").ejChart({
+
+  crosshair : { line : { color "red" } }                           
+
+});
+
+{% endhighlight %}
+
+### Crosshair line Width
+
+[`Width`] (../api/js/ejchart#members:crosshair-line-width) of the crosshair line.
+
+{% highlight javascript %}
+
+
+     $("#container").ejChart({
+
+ 
+   crosshair : { line : { width: 2 } }                            
+
+});
+
+{% endhighlight %}
 
 ## Trackball
 
