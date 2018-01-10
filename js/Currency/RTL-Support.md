@@ -36,7 +36,7 @@ In the **HTML** page set the corresponding **&lt;input&gt;** elements for render
 {% endhighlight %}
 
 
-The output for CurrencyTextBox when **enableRTL** is **“True”** is as follows. 
+The output for CurrencyTextBox when **enableRTL** is **“true”** is as follows. 
 
 ![](/js/Currency/RTL-Support_images/RTL-Support_img1.png) 
 

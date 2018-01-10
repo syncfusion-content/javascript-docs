@@ -128,7 +128,7 @@ The color for the datalabel text is set by using the [`fill`](../api/ejchart#mem
 
 The following code example shows how to add background shapes and set template to data label.
 
-The border for the marker is added by using the [`border`](../api/ejchart#members:series-marker-border) property.
+The border [`color`](../api/ejchart#members:series-marker-border-color) and [`width`](../api/ejchart#members:series-marker-border-width) for the marker is added by using the [`border`](../api/ejchart#members:series-marker-border) property.
 
 {% highlight html %}
 
@@ -183,7 +183,7 @@ The border for the marker is added by using the [`border`](../api/ejchart#member
 ![](/js/Chart/Data-Markers_images/Data-Markers_img4.png)
 
 
-The appearance of the labels can be customized by using the [`font`](../api/ejchart#members:series-marker-datalabel-font) and [`offset`](../api/ejchart#members:series-marker-datalabel-offset) options. The [`offset`](../api/ejchart#members:series-marker-datalabel-offset) option is used to move the labels vertically. Also, labels can be rotated by using the [`angle`](../api/ejchart#members:series-marker-datalabel-angle) option.
+The appearance of the labels can be customized by using the [`font`](../api/ejchart#members:series-marker-datalabel-font) and [`offset`](../api/ejchart#members:series-marker-datalabel-offset) options. The [`color`](../api/ejchart#members:series-marker-datalabel-font-color), [`fontFamily`](../api/ejchart#members:series-marker-datalabel-font-fontfamily), [`fontStyle`](../api/ejchart#members:series-marker-datalabel-font-fontstyle), [`fontWeight`](../api/ejchart#members:series-marker-datalabel-font-fontweight), [`opacity`](../api/ejchart#members:series-marker-datalabel-font-opacity) and [`size`](../api/ejchart#members:series-marker-datalabel-font-size) of font can also be customized. The [`offset`](../api/ejchart#members:series-marker-datalabel-offset) option is used to move the labels vertically. Also, labels can be rotated by using the [`angle`](../api/ejchart#members:series-marker-datalabel-angle) option.
 
 The following code example shows how to rotate datalabel text and customize the font.
 
@@ -290,7 +290,7 @@ The following screenshot displays the labels when the [`labelPosition`](../api/e
 ![](/js/Chart/Data-Markers_images/Data-Markers_img9.png)
 
 
-The label can be wrapped for pie, doughnut, funnel, and pyramid series by setting the [`enableWrap`](../api/ejchart#members:series-marker-datalabel-enablewrap) property. 
+The label can be wrapped for pie, doughnut, funnel, and pyramid series by setting the [`enableWrap`](../api/ejchart#members:series-marker-datalabel-enablewrap) property. The maximum label width for data label can be specified using [`maximumLabelWidth`](../api/ejchart#members:series-marker-datalabel-maximumlabelwidth) property.
 
 {% highlight javascript %} 
 
@@ -430,6 +430,43 @@ If the data label is placed inside the data points segment, then that particular
 {% endhighlight %}
 
 
+## Show Edge labels
+
+The partially visible data labels can be displayed inside chart area using [`showEdgeLabels`](../api/ejchart#members:series-marker-datalabel-showedgelabels) property.
+
+{% highlight javascript %}
+
+    $("#container").ejChart({
+            series :[{
+                marker :{
+                    dataLabel :{showEdgeLabels : true}
+                }
+            }]            
+    });
+
+{% endhighlight %}
+
+## DataLabel border
+
+The border [`color`](../api/ejchart#members:series-marker-datalabel-border-color) and [`width`](../api/ejchart#members:series-marker-datalabel-border-width) of the data label can be customized using [`border`](../api/ejchart#members:series-marker-datalabel-border) property.
+
+{% highlight javascript %}
+
+        $("#container").ejChart({
+                series :[{
+                    marker :{
+                        dataLabel :{
+                            border : {
+                                color : "green",
+                                width : 2
+                            }
+                        }
+                    }
+                }]                 
+        });
+
+{% endhighlight %}
+
 
 ## Customize specific points
 
@@ -437,7 +474,7 @@ By using the ejChart, you can also customize the individual/specific markers wit
 
 There are two ways to achieve this based on how the data is fed to the series.
 
-The [`margin`](../api/ejchart#members:series-marker-datalabel-margin) property is used for providing the space in the left,right,top and bottom directions.
+The [`margin`](../api/ejchart#members:series-marker-datalabel-margin) property is used for providing the space in the [`left`](../api/ejchart#members:series-marker-datalabel-margin-left),[`right`](../api/ejchart#members:series-marker-datalabel-margin-right),[`top`](../api/ejchart#members:series-marker-datalabel-margin-top) and [`bottom`](../api/ejchart#members:series-marker-datalabel-margin-bottom) directions.
 
 The required space for the datalabel text can also be customized by using the [`offset`](../api/ejchart#members:series-marker-datalabel-offset) property.
 
@@ -541,7 +578,7 @@ When the data is bound to the series by using the [`dataSource`](../api/ejchart#
 
 ## Connect Line
 
-This feature is used to connect label and data point by using a line. It can be enabled only for Pie, Doughnut, Pyramid and Funnel chart types. Connector line types can be set as *bezier* or *line* by using the [`type`](../api/ejchart#members:series-marker-datalabel-connectorline-type) option.
+This feature is used to connect label and data point by using a line. It can be enabled only for Pie, Doughnut, Pyramid and Funnel chart types. Connector line types can be set as *bezier* or *line* by using the [`type`](../api/ejchart#members:series-marker-datalabel-connectorline-type) option. The [`color`](../api/ejchart#members:series-marker-datalabel-connectorline-color) and [`width`](../api/ejchart#members:series-marker-datalabel-connectorline-width) of connector line can also be customized using [`connectorLine`](../api/ejchart#members:series-marker-datalabel-connectorline) property.
 
  The following code example illustrates this,
 
@@ -556,7 +593,7 @@ This feature is used to connect label and data point by using a line. It can be 
                    dataLabel: {
                              visible: true,
                              // Set connector line type and customize the color,
-                             connectorLine: { type: 'bezier', color: 'black' }
+                             connectorLine: { type: 'bezier', color: 'black', width: 1 }
                              // ...
                          }  },
                          // ...
