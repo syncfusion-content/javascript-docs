@@ -117,7 +117,7 @@ In the **HTML** page set the corresponding **&lt;input&gt;** elements for render
 {% endhighlight %}
 
 
-The output for **CurrencyTextBox** when **enableStrictMode** is **“True”** is as follows**.**
+The output for **CurrencyTextBox** when **enableStrictMode** is **“true”** is as follows**.**
 
 
 
@@ -125,7 +125,7 @@ The output for **CurrencyTextBox** when **enableStrictMode** is **“True”** i
 
 ## Enabled or Disabled
 
-The CurrencyTextBox control has an option to enable or disable its element. You can set the **enabled** property as “**True**” to enable the CurrencyTextBox control.
+The CurrencyTextBox control has an option to enable or disable its element. You can set the **enabled** property as “**true**” to enable the CurrencyTextBox control.
 
 ### Configure Enabled or Disabled 
 
@@ -151,20 +151,20 @@ In the **HTML** page set the corresponding **&lt;input&gt;** elements for render
 {% endhighlight %}
 
 
-The output for CurrencyTextBox when **enabled** is **“False”** and when **enabled** is “**True**”**.**
+The output for CurrencyTextBox when **enabled** is **“false”** and when **enabled** is “**true**”**.**
 
 
 
 ![](/js/Currency/Behavior-Settings_images/Behavior-Settings_img5.png)
 
-CurrencyTextBox with enabled as False
+CurrencyTextBox with enabled as false
 {:.caption}
 
 
 
 ![](/js/Currency/Behavior-Settings_images/Behavior-Settings_img6.png)
 
-CurrencyTextBox with enabled as True
+CurrencyTextBox with enabled as true
 {:.caption}
 
 ## Adjusting CurrencyTextBox Size
@@ -359,7 +359,7 @@ CurrencyTextBox with minValue
 
 ## Read Only Support
 
-The CurrencyTextBox supports read only option. When you enable the **readOnly** property to the control, the value cannot be changed in the CurrencyTextBox. You can set the **readOnly** property as “**True”** to enable this option.
+The CurrencyTextBox supports read only option. When you enable the **readOnly** property to the control, the value cannot be changed in the CurrencyTextBox. You can set the **readOnly** property as “**true”** to enable this option.
 
 ### Configure Read Only
 
@@ -385,7 +385,7 @@ In the **HTML** page set the corresponding **&lt;input&gt;** elements for render
 {% endhighlight %}
 
 
-The output for CurrencyTextBox when **readOnly** is “**True**” is as follows. The CurrencyTextBox values cannot be edited or changed.
+The output for CurrencyTextBox when **readOnly** is “**true**” is as follows. The CurrencyTextBox values cannot be edited or changed.
 
 
 
@@ -499,7 +499,7 @@ In the **HTML** page set the corresponding **&lt;input&gt;** elements for render
 
 {% endhighlight %}
 
-The output for CurrencyTextBox when **showRoundedCorner** is “**True**”.
+The output for CurrencyTextBox when **showRoundedCorner** is “**true**”.
 
 
 
@@ -532,18 +532,18 @@ In the **HTML** page set the corresponding **&lt;input&gt;** elements for render
 {% endhighlight %}
 
 
-The output for **CurrencyTextBox** when **showSpinButton** is “**True**”.
+The output for **CurrencyTextBox** when **showSpinButton** is “**true**”.
 
 
 
 ![](/js/Currency/Behavior-Settings_images/Behavior-Settings_img17.png)
 
-CurrencyTextBox with showSpinButton is True
+CurrencyTextBox with showSpinButton is true
 {:.caption}
 
 ![](/js/Currency/Behavior-Settings_images/Behavior-Settings_img18.png)
 
-CurrencyTextBox with showSpinButton is False
+CurrencyTextBox with showSpinButton is false
 {:.caption}
 
 ## Water Mark Text Support
