@@ -263,7 +263,7 @@ $("#Gantt").ejGantt({
 });
 
 
-{% endhighlight %
+{% endhighlight %}
 
 ![](/js/Gantt/Editing_images/deleteConfirmation.png)
 
@@ -295,7 +295,7 @@ $("#indentTask").click(function () {
         ganttObj.indentItem();
 });
 
-{% endhighlight %
+{% endhighlight %}
 
 The following screenshots shows the output of above code example.
 
@@ -337,7 +337,7 @@ $("#outdentTask").click(function () {
         ganttObj.outdentItem();
 });
 
-{% endhighlight %
+{% endhighlight %}
 
 The following screenshots shows the output of above code example.
 
