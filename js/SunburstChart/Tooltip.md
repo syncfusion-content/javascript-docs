@@ -11,7 +11,7 @@ api: /api/js/ejsunburstchart
 ## Tooltip  
 
 [`ToolTip`](../api/ejsunburstchart#members:tooltip) allows you to display any information over a sunburst segment. It appears when mouse hovered over or touch any chart segment. By default, it displays the corresponding segment category name and its value
-you can set the [`visible`](../api/ejsunburstchart#members:tooltip-visible) propery as true or false.
+you can set the [`visible`](../api/ejsunburstchart#members:tooltip-visible) property as true or false.
 
 {% highlight js %}
 
