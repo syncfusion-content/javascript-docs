@@ -10,11 +10,11 @@ api: /api/js/ejlineargauge
 
 # Bar Pointers
 
-**Bar Pointer** value points out the actual value set in the **Linear Gauge** as marker pointer. You can set the values of the various bar pointer attributes such as [`value`](../api/ejlineargauge#members:scales-barpointers-value), [`width`](../api/ejlineargauge#members:scales-barpointers-width), border and color in bar pointer collection. You can also customize the pointers to improve the appearance of gauge.
+**Bar Pointer** value points out the actual value set in the **Linear Gauge** as marker pointer. You can set the values of the various bar pointer attributes such as [`value`](../api/ejlineargauge#members:scales-barpointers-value), [`width`](../api/ejlineargauge#members:scales-barpointers-width), [`border`](../api/ejlineargauge#members:scales-barpointers-border) and color in bar pointer collection. You can also customize the pointers to improve the appearance of gauge.
 
 ## Adding bar pointer collection
 
-You can add Bar Pointer collection directly to the scale object. Refer the following code example.
+You can add [`Bar Pointer`](../api/ejlineargauge#members:scales-barpointers) collection directly to the scale object. Refer the following code example.
 
 
 {% highlight html %}

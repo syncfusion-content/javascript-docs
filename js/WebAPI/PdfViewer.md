@@ -170,3 +170,26 @@ $.ajax({
 
 {% endhighlight %}
 >The above example shows that it will download the PDF document.
+
+## Unload
+
+ [POST] [/Api/PdfViewer/Unload](http://js.syncfusion.com/demos/ejServices/api/PdfViewer/Unload)
+
+Unloads and Disposes the PDF document resources being displayed in the PDF viewer from the server side
+
+
+### Code example 
+
+{% highlight js %}
+
+http://js.syncfusion.com/demos/ejServices/api/PdfViewer/Unload
+
+$.ajax({
+    type: "POST",
+    url: "http://js.syncfusion.com/demos/ejServices/api/PdfViewer/Unload",
+    crossDomain: true,
+    traditional: true,    
+})
+
+{% endhighlight %}
+>The above example shows that it will unloads and disposes the PDF document resources being displayed in the PDF viewer from the server side.

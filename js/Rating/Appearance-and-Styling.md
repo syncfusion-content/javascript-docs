@@ -12,7 +12,7 @@ api: /api/js/ejrating
 
 ## Show ToolTip
 
-**Rating** control provides support for **Tooltip** values. This is achieved by enabling the [showTooltip](https://help.syncfusion.com/api/js/ejrating#members:showtooltip) property to be **‘True’.** When you move the mouse over the Rating control it displays the Tooltip value as rating value. By default this property value is set to **‘True’**.
+**Rating** control provides support for **Tooltip** values. This is achieved by enabling the [showTooltip](https://help.syncfusion.com/api/js/ejrating#members:showtooltip) property to be **‘true’.** When you move the mouse over the Rating control it displays the Tooltip value as rating value. By default this property value is set to **‘true’**.
 
 The following code example is used to render the **Rating** control without **tooltip**.
 

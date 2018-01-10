@@ -44,7 +44,7 @@ $("#BulletGraph1").ejBulletGraph({
 
 {% endhighlight %}
 
-Responsiveness of the bullet graph is controlled by using [`enableResize`](../api//ejbulletgraph#members:enableResizing) property.
+Responsiveness of the bullet graph is controlled by using [`enableResize`](../api//ejbulletgraph#members:enableresizing) property.
 
 {% highlight javascript %}
 
