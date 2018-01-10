@@ -11,6 +11,7 @@ api: /api/js/ejsunburstchart
 ## Tooltip  
 
 [`ToolTip`](../api/ejsunburstchart#members:tooltip) allows you to display any information over a sunburst segment. It appears when mouse hovered over or touch any chart segment. By default, it displays the corresponding segment category name and its value
+you can set the [`visible`](../api/ejsunburstchart#members:tooltip-visible) property as true or false.
 
 {% highlight js %}
 
@@ -28,7 +29,7 @@ $("#chart").ejSunburstChart ({
 
 ## Tooltip Template   
 
-HTML elements can be displayed in the tooltip by using the [`template`](../api/ejsunburstchart#members:tooltip-template) property of the tooltip. The template property takes the value of the id attribute of the HTML element. You can use the **#point.x#** and **#point.y#** as place holders in the HTML element to display the x and y values of the corresponding point.
+HTML elements can be displayed in the tooltip by using the [`template`](../api/ejsunburstchart#members:tooltip-template) property of the tooltip. The template property takes the value of the id attribute of the HTML element. You can use this [`format`](../api/ejsunburstchart#members:tooltip-format) **#point.x#** and **#point.y#** as place holders in the HTML element to display the x and y values of the corresponding point.
 
 {% highlight js %}
 
@@ -60,7 +61,7 @@ $("#chart").ejSunburstChart ({
 
 * You can change this default border of the tooltip by using the [`width`](../api/ejsunburstchart#members:tooltip-border-width) and [`color`](../api/ejsunburstchart#members:tooltip-border-color) options.
 
-* The opacity of the tooltip are customized by using the [`opacity`](../api/ejsunburstchart#members:tooltip-opacity) properties.The font option in the tooltip is used to customize the font of the tooltip text.
+* The opacity of the tooltip are customized by using the [`opacity`](../api/ejsunburstchart#members:tooltip-opacity) properties.The [`font`](../api/ejsunburstchart#members:tooltip-font) option in the tooltip is used to customize the font of the tooltip text.
 
 * Using font property, you can customize [`font color`](../api/ejsunburstchart#members:tooltip-font-color), [`font family`](../api/ejsunburstchart#members:tooltip-font-fontfamily), [`font style`](../api/ejsunburstchart#members:tooltip-font-fontstyle), [`font weight`](../api/ejsunburstchart#members:tooltip-font-fontweight), [`opacity`](../api/ejsunburstchart#members:tooltip-font-opacity), [`size`](../api/ejsunburstchart#members:tooltip-font-size) options.
 

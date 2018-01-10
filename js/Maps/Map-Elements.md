@@ -146,7 +146,7 @@ Gets or sets the tree map colors.</td></tr>
 <td>
 Color</td><td>
 String</td><td>
-Gets or sets the fill color for bubbles.</td></tr>
+Gets or sets the fill [`color`](../api/ejmap#members:layers-bubblesettings-color) for bubbles.</td></tr>
 <tr>
 <td>
 showTooltip</td><td>
@@ -232,7 +232,7 @@ The legend can be positioned in two ways.
 
 #### Absolute Position
 
-Based on the margin values of X and Y-axes, the Map legends can be positioned with the support of [`positionX`](../api/ejmap#members:layers-legendsettings-positionx) and [`positionY`](/api/ejmap#members:layers-legendsettings-positiony) properties available in [`legendSettings`]. For positioning the legend based on margins corresponding to a map, [`position`](/api/ejmap#members:layers-legendsettings-position) value is set as ‘_none_’.
+Based on the margin values of X and Y-axes, the Map legends can be positioned with the support of [`positionX`](../api/ejmap#members:layers-legendsettings-positionx) and [`positionY`](../api/ejmap#members:layers-legendsettings-positiony) properties available in [`legendSettings`]. For positioning the legend based on margins corresponding to a map, [`position`](../api/ejmap#members:layers-legendsettings-position) value is set as ‘_none_’.
 
 #### Dock Position
 
@@ -407,4 +407,16 @@ A bubble legend feature is used to provide the key (legend) for another map elem
 
 
 ![](/js/Maps/Map-Elements_images/Map-Elements_img6.png)
+
+### Legend Icon
+
+To get the legend icon value for legend settings by using icon property. You can customize the icon by using the [`icon width`](../api/ejmap#members:layers-legendsettings-iconheight) and [`icon height`](../api/ejmap#members:layers-legendsettings-iconwidth) property.
+
+{% highlight javascript %}
+
+ $("#container").ejMap({layers: [{legendSettings: {icon:"rectangle"} }]})
+
+{% endhighlight %}
+
+
 
