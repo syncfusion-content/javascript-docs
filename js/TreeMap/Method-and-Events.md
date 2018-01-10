@@ -29,7 +29,7 @@ api: /api/js/ejtreemap
 
 ## treeMapItemSelected
 
-[`treeMapItemSelected`](../api/ejtreemap#events:treeMapItemSelected) event will trigger when treemap item is selected. 
+[`treeMapItemSelected`](../api/ejtreemap#events:treemapitemselected) event will trigger when treemap item is selected. 
 
 <table class="params">
     <thead>
@@ -59,7 +59,7 @@ api: /api/js/ejtreemap
 
 ## drillStarted
 
-[`drillStarted`](../api/ejtreemap#events:drillStarted) event will fire, when the drilldown action is started in the treemap control.
+[`drillStarted`](../api/ejtreemap#events:drillstarted) event will fire, when the drilldown action is started in the treemap control.
 
 <table class="params">
     <thead>
@@ -89,7 +89,7 @@ api: /api/js/ejtreemap
 
 ## drillDownItemSelected
 
-If the treemap drilldown item is selected, then [`drillDownItemSelected`](../api/ejtreemap#events:drillDownItemSelected) event will fire.
+If the treemap drilldown item is selected, then [`drillDownItemSelected`](../api/ejtreemap#events:drilldownitemselected) event will fire.
 
 <table class="params">
     <thead>

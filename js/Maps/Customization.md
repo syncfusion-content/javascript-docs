@@ -21,6 +21,7 @@ The important property that makes an impact on shape colors is the [`autoFill`](
 * [`fill`](../api/ejmap#members:layers-shapesettings-fill) - It is used to set the fill color of the shapes in the map.
 * [`stroke`](../api/ejmap#members:layers-shapesettings-stroke) - It is used to set the border color of the shape in the map.
 * [`strokeThickness`](../api/ejmap#members:layers-shapesettings-strokethickness) - It is used to set the border thickness of the shape in the map.
+* [`highlightStroke`](../api/ejmap#members:layers-shapesettings-highlightstroke) - It Specifies the mouse over stroke color of the shape layer in map.
 * [`highlightColor`](../api/ejmap#members:layers-shapesettings-highlightcolor) - It is used to set the mouse hover color for shapes in the map.
 * [`highlightBorderWidth`](../api/ejmap#members:layers-shapesettings-highlightborderwidth) - It is used to set the mouse hover border width for shapes in the map.
 * [`selectionColor`](../api/ejmap#members:layers-shapesettings-selectioncolor) - It is used to set the selection color for shapes in the map.
@@ -63,8 +64,8 @@ The above properties of `shapeSettings` are applied only when the `autoFill` pro
 The **Color Mapping** support enables the customization of shape colors based on the underlying value of shape received from bounded data.
 
 * [`colorValuePath`](../api/ejmap#members:layers-shapesettings-colorvaluepath) - It renders the field value that is to be fetched from data for each shape used for determining the shape color.
-* [`valuePath`](../api/ejmap#members:layers-shapesettings-valuepath) - It renders the field value that is to be fetched from data for each shape. This support also provides a tree map-like impact on the map UI. The various types of Color Mapping supported in maps are listed as follows.
-* [`rangeColorMapping`](../api/ejmap#members:layers-shapesettings-colormappings) - It is used to differentiate the shape’s fill based on its underlying value and color ranges. The properties of rangeColorMapping are listed in the following table.
+* [`valuePath`](../api/ejmap#members:layers-shapesettings-valuepath) - It renders the field value that is to be fetched from data for each shape. This support also provides a tree map-like impact on the map UI. The various types of [`Color Mapping`](../api/ejmap#members:layers-shapesettings-colormappings) supported in maps are listed as follows.
+* [`rangeColorMapping`](../api/ejmap#members:layers-shapesettings-colormappings-rangecolormapping) - It is used to differentiate the shape’s fill based on its underlying value and color ranges. The properties of rangeColorMapping are listed in the following table.
 
 <table>
 <tr>
@@ -74,12 +75,12 @@ Type</th><th>
 Description</th></tr>
 <tr>
 <td>
-from</td><td>
+[`from`](../api/ejmap#members:layers-shapesettings-colormappings-rangecolormapping-from)</td><td>
 Double</td><td>
 Gets or sets start value</td></tr>
 <tr>
 <td>
-to</td><td>
+[`to`](../api/ejmap#members:layers-shapesettings-colormappings-rangecolormapping-to)</td><td>
 Double</td><td>
 Gets or sets end value</td></tr>
 <tr>
@@ -94,7 +95,7 @@ String</td><td>
 Gets or sets the label for legend when mode property value is ‘default’.</td></tr>
 <tr>
 <td>
-gradientColors</td><td>
+[`gradientColors`](../api/ejmap#members:layers-shapesettings-colormappings-rangecolormapping-gradientcolors)</td><td>
 Array</td><td>
 Gets or sets the start point and end point gradient colors to be applied for specific range value containing shapes when [`enableGradient`](../api/ejmap#members:layers-shapesettings-enablegradient) property value is set to true.</td></tr>
 </table>
@@ -164,12 +165,12 @@ Type</th><th>
 Description</th></tr>
 <tr>
 <td>
-value</td><td>
+[`value`](../api/ejmap#members:layers-shapesettings-colormappings-equalcolormapping-value)</td><td>
 String</td><td>
 Gets or sets the value.</td></tr>
 <tr>
 <td>
-color</td><td>
+[`color`](../api/ejmap#members:layers-shapesettings-colormappings-equalcolormapping-color)</td><td>
 String</td><td>
 Gets or sets the color for mapping.</td></tr>
 </table>
@@ -451,7 +452,7 @@ The Map background can be customized by using the [`background`](../api/ejmap#me
 
 ### Base Map Index 
 
-Specifies the index of the map to determine the shape layer to be displayed, you can use [`baseMapIndex`](..) property and the default value is 0.
+Specifies the index of the map to determine the shape layer to be displayed, you can use [`baseMapIndex`](../api/ejmap#members:basemapindex) property and the default value is 0.
 
 
 {% highlight js %}
@@ -461,6 +462,16 @@ Specifies the index of the map to determine the shape layer to be displayed, you
   $("#container").ejMap({
       baseMapIndex:0
    });
+
+{% endhighlight %}
+
+### show Map Items
+
+Shows or hides the [`map items`](../api/ejmap#members:layers-shownapitems).
+
+{% highlight js %}
+
+ $("#container").ejMap({layers: [{ showMapItems:false }]})
 
 {% endhighlight %}
 
@@ -481,7 +492,7 @@ Specify the [`centerPosition`](../api/ejmap#members:centerposition) where map sh
 
 ### Label Settings
 
-The [`labelSettings`](../api/ejmap#members:layers-shapesettings) defines the basic customization settings of labels in the map. 
+The [`labelSettings`](../api/ejmap#members:layers-labelsettings) defines the basic customization settings of labels in the map. 
 
 The below properties are used for `labelSettings`
 
