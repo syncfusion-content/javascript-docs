@@ -1320,7 +1320,7 @@ You can use the [`pieCoefficient`](../api/ejchart#members:series-piecoefficient)
 
 ### Explode a pie segment
 
-You can explode a pie segment on the chart load by using the [`explodeIndex`](../api/ejchart#members:series-explodeIndex) of the series.
+You can explode a pie segment on the chart load by using the [`explodeIndex`](../api/ejchart#members:series-explodeindex) of the series.
 The [`explodeOffset`](../api/ejchart#members:series-explodeoffset)property is used to specify the distance of the slice from the center. 
 
 {% highlight javascript %}
@@ -1504,7 +1504,7 @@ You can use the [`doughnutSize`](../api/ejchart#members:series-doughnutsize) pro
 
 ### Explode a doughnut segment
 
-To explode a specific doughnut segment, set the index to be exploded by using the [`explodeIndex`](../api/ejchart#members:series-explodeIndex) option of the series.
+To explode a specific doughnut segment, set the index to be exploded by using the [`explodeIndex`](../api/ejchart#members:series-explodeindex) option of the series.
 
 {% highlight javascript %}
 
@@ -1733,7 +1733,7 @@ You can control the gap between the segments by using the [`gapRatio`](../api/ej
 
 ### Explode a pyramid segment
 
-You can explode a pyramid segment on the chart load by using the [`explodeIndex`](../api/ejchart#members:series-explodeIndex) of the series.
+You can explode a pyramid segment on the chart load by using the [`explodeIndex`](../api/ejchart#members:series-explodeindex) of the series.
 
 {% highlight javascript %}
 
@@ -1812,7 +1812,7 @@ Funnel segments height and width is calculated from the chart size, by default. 
 
 ### Explode a funnel segment
 
-You can explode a funnel segment on the chart load by using the [`explodeIndex`](../api/ejchart#members:series-explodeIndex) of the series.
+You can explode a funnel segment on the chart load by using the [`explodeIndex`](../api/ejchart#members:series-explodeindex) of the series.
 
 {% highlight javascript %}
 
@@ -1871,6 +1871,24 @@ To create a Bubble chart, you can set the series [`type`](../api/ejchart#members
 
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/bubble) here to view the Bubble Chart online demo sample.
+
+### Bubble options
+
+The [`bubbleOptions`](../api/ejchart#members:series-bubbleoptions) of bubble series can be customized using [`radiusMode`](../api/ejchart#members:series-bubbleoptions-radiusmode), [`minRadius`](../api/ejchart#members:series-bubbleoptions-minradius) and [`maxRadius`](../api/ejchart#members:series-bubbleoptions-maxradius). 
+
+{% highlight javascript %}
+
+    $("#container").ejChart({
+        series : [{
+             bubbleOptions: { 
+                    radiusMode: "minMax",
+                    minRadius: 3,
+                    maxRadius: 7
+            }
+        }]                  
+    });
+
+{% endhighlight %}
 
 ## Scatter
 
@@ -2621,7 +2639,7 @@ The field y requires n number of data or it should  contains minimum of five val
 
 ### BoxPlotMode
 
-You can change the rendering mode of the  Box and Whisker series using the  [`boxPlotMode`](../api/ejchart#members:series-boxPlotMode) property. The default  [`boxPlotMode`](../api/ejchart#members:series-boxPlotMode) is **"exclusive"**.The other boxPlotModes available are `inclusive`and `normal`.
+You can change the rendering mode of the  Box and Whisker series using the  [`boxPlotMode`](../api/ejchart#members:series-boxplotmode) property. The default  [`boxPlotMode`](../api/ejchart#members:series-boxplotmode) is **"exclusive"**.The other boxPlotModes available are `inclusive`and `normal`.
 
 
 {% highlight javascript %}
@@ -2640,7 +2658,7 @@ You can change the rendering mode of the  Box and Whisker series using the  [`bo
 
 ### ShowMedian
 
-Box and Whisker [`showMedian`](../api/ejchart#members:series-showMedian) property is used to show the box and whisker average value. The default value of [`showMedian`](../api/ejchart#members:series-showMedian) is **"false"**.  
+Box and Whisker [`showMedian`](../api/ejchart#members:series-showmedian) property is used to show the box and whisker average value. The default value of [`showMedian`](../api/ejchart#members:series-showmedian) is **"false"**.  
 
 {% highlight javascript %}
 

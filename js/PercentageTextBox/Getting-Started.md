@@ -231,7 +231,7 @@ You can set the “**enableStrictMode” option** to restrict entering values de
                 value: 5, // sets value by default 
                 minValue: 3, // sets min value for calculation
                 maxValue: 100// sets max value for calculation
-                enableStrictMode: true // sets strict mode to True will set the value 
+                enableStrictMode: true // sets strict mode to true will set the value 
             });
             // simple Currency creation
             $("#amountPerUnit").ejCurrencyTextbox({
