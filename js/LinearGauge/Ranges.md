@@ -150,10 +150,11 @@ Execute the above code to render the following output.
 
 ## Colors and Border
 
-* You can customize the ranges to improve the appearance of the **Gauge**. The range border is modified with the object called **border**. It has two border property such as [`color`](../api/ejlineargauge#members:scales-ranges-border-color) and [`width`](../api/ejlineargauge#members:scales-ranges-border-width) which are used to customize the border color of the ranges and border width of the ranges. 
+* You can customize the ranges to improve the appearance of the **Gauge**. The range [`border`](../api/ejlineargauge#members:scales-ranges-border) is modified with the object called **border**. It has two border property such as [`color`](../api/ejlineargauge#members:scales-ranges-border-color) and [`width`](../api/ejlineargauge#members:scales-ranges-border-width) which are used to customize the border color of the ranges and border width of the ranges. 
 
 * You can set the background color to improve the look and feel of the **Linear Gauge**. For customizing the background color of the ranges, [`backgroundColor`](../api/ejlineargauge#members:scales-ranges-backgroundcolor) is used.You can add the gradient effects to the ranges by using [`gradient`](../api/ejlineargauge#members:scales-ranges-gradients) object.
 
+* The opacity of the ranges can be adjusted with the property [`opacity`](../api/ejlineargauge#members:scales-ranges-opacity). The opacity values lies between 0 and 1.
 
 {% highlight html %}
 

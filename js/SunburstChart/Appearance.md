@@ -60,4 +60,16 @@ theme: "flatdark",
 
 ![](/js/SunburstChart/Appearance_images/Appearance_img2.png)
 
+## Background color
 
+It specifies the [`background`](../api/ejsunburstchart#members:background) color of the plot area.
+
+{% highlight js %}
+
+$("#chart"). ejSunburstChart ({
+
+background: "grey",	
+   
+   });
+
+{% endhighlight %}
