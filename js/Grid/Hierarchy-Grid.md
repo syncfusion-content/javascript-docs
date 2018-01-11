@@ -106,6 +106,8 @@ N> 1. while  detail template row is clicked to expand [`detailsExpand`](https://
 N> 2. while  detail template row is clicked to collapse [`detailsCollapse`](https://help.syncfusion.com/api/js/ejgrid#events:detailscollapse "detailsCollapse") event is triggered.
 
 
+# Expand or Collapse by external action
+
 To expand or collapse the row based on the row state by external action use  [`expandCollapse`](https://help.syncfusion.com/api/js/ejgrid#methods:expandcollapse "expandCollapse") method. Refer the below code snippet,
 
 {% highlight javascript %}
