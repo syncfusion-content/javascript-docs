@@ -10,7 +10,7 @@ api: /api/js/ejlineargauge
 
 # Marker Pointers
 
-**Marker Pointer** value points out the actual value set in the **Linear Gauge**. You can set values for various pointer attributes such as [`value`](../api/ejlineargauge#members:scales-markerpointers-value), [`type`](../api/ejlineargauge#members:scales-markerpointers-type), [`length`](../api/ejlineargauge#members:scales-markerpointers-length), [`width`](../api/ejlineargauge#members:scales-markerpointers-width), border and color in pointer collection. You can also customize the pointers to improve the appearance of gauge.
+**Marker Pointer** value points out the actual value set in the **Linear Gauge**. You can set values for various pointer attributes such as [`value`](../api/ejlineargauge#members:scales-markerpointers-value), [`type`](../api/ejlineargauge#members:scales-markerpointers-type), [`length`](../api/ejlineargauge#members:scales-markerpointers-length), [`width`](../api/ejlineargauge#members:scales-markerpointers-width), [`border`](../api/ejlineargauge#members:scales-markerpointers-border) and color in pointer collection. You can also customize the pointers to improve the appearance of gauge.
 
 ## Adding marker pointer collection
 

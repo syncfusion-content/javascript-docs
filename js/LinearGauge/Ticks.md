@@ -78,7 +78,7 @@ Execute the above code to render the following output.
 
 **Appearance**
 
-* Height and width of the ticks can be applied by using the properties [`height`](../api/ejlineargauge#members:scales-ticks-height) and [`width`](../api/ejlineargauge#members:scales-ticks-width). You can customize ticks with the properties like angle, color, etc. [`angle`](../api/ejlineargauge#members:scales-ticks-angle) attribute is used to display the labels in the specified angles and [`color`](../api/ejlineargauge#members:scales-ticks-color) attribute is used to display the labels in specified color. 
+* Height and width of the ticks can be applied by using the properties [`height`](../api/ejlineargauge#members:scales-ticks-height) and [`width`](../api/ejlineargauge#members:scales-ticks-width). You can customize ticks with the properties like angle, color, etc. [`angle`](../api/ejlineargauge#members:scales-ticks-angle) attribute is used to display the labels in the specified angles and [`color`](../api/ejlineargauge#members:scales-ticks-color) attribute is used to display the labels in specified [`color`](../api/ejlineargauge#members:tickcolor). 
 
 * Ticks are two types such as major and minor. The opacity of the labels can be adjusted with the property [`opacity`](../api/ejlineargauge#members:scales-ticks-opacity). The opacity values lies between 0 and 1.
 
@@ -206,7 +206,7 @@ Execute the above code to render the following output.
 
 * You can position ticks with the help of two properties such as **distanceFromScale** and **placement**. The property [`distanceFromScale`](../api/ejlineargauge#members:scales-ticks-distancefromscale) defines the distance between the scale and ticks. 
 
-* [`placement`](../api/ejlineargauge#members:scales-ticks-placement) property is used to locate the ticks with respect to scale either inside the scale or outside the scale or along the scale. It is an enumerable data type.
+* [`placement`](../api/ejlineargauge#members:scales-ticks-placement) property is used to locate the ticks with respect to scale either inside the scale or outside the scale or along the scale. It can be specified along [`x`](../api/ejlineargauge#members:scales-ticks-distancefromscale-x) and [`y`](../api/ejlineargauge#members:scales-ticks-distancefromscale-y) position. It is an enumerable data type. 
 
 
 {% highlight html %}
