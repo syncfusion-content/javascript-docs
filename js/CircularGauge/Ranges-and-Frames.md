@@ -233,6 +233,25 @@ Execute the above code to render the following output.
 
 ![](/js/CircularGauge/Ranges-and-Frames_images/Ranges-and-Frames_img4.png)
 
+### rangeZOrder 
+
+To specify range zOrder placement of circular gauge, you can set the value as rear or front. The default value is **rear**.
+
+Rear - It is used to place the ranges above the ticks of the gauge.
+
+Front - It is used to place the ticks above the ranges of the gauge.
+
+{% highlight javascript %}
+
+  $(function () {
+        // For Circular Gauge rendering
+        $("#CircularGauge1").ejCircularGauge({
+           rangeZOrder:"rear"
+        });
+    });
+
+{% endhighlight %}
+
 ## Frames
 
 Frame is the element that decides the appearance of the **Circular Gauge**. You can customize it using the object called [`frame`](../api/ejcirculargauge#members:frame).  It has the properties such as frameType, backGroundUrl, halfCircleFrameStartAngle and halfCircleFrameEndAngle.

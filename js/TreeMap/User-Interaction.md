@@ -44,7 +44,7 @@ The border can be customized with the [`highlight border brush`](../api/ejtreema
 
 ### Group Selection
 
-To enable the selection of leaf nodes, the [`highlight group on selection`](../api/ejtreemap#members:highlightonselection) property in `treemap` is set as **true**. When the selection occurs, bounding rectangle highlights the selected group. The border can be customized with the [`highlight group border brush`](../api/ejtreemap#members:highlightgroupborderbrush) and [`highlight group border thickness`](../api/ejtreemap#members:highlightgroupborderthickness) properties.
+To enable the selection of leaf nodes, the [`highlight group on selection`](../api/ejtreemap#members:highlightgrouponselection) property in `treemap` is set as **true**. When the selection occurs, bounding rectangle highlights the selected group. The border can be customized with the [`highlight group border brush`](../api/ejtreemap#members:highlightgroupborderbrush) and [`highlight group border thickness`](../api/ejtreemap#members:highlightgroupborderthickness) properties.
 
 {% highlight js %}
 

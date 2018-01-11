@@ -109,7 +109,7 @@ Try it: [DesaturationColorMapping](http://jsplayground.syncfusion.com/qoh2upwr)
 
 ### Palette Color Mapping
 
-You can customize the [`color`](../api/ejtreemap#members:palettecolormapping-color) of each leaf nodes by providing a color palette of your choice by using the [`paletteColorMapping`](../api/ejtreemap#members:palettecolormapping) property.
+You can customize the [`color`](../api/ejtreemap#members:palettecolormapping-colors) of each leaf nodes by providing a color palette of your choice by using the [`paletteColorMapping`](../api/ejtreemap#members:palettecolormapping) property.
 
 {% highlight js %}
 ]
