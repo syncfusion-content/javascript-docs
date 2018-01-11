@@ -235,7 +235,7 @@ Execute the above code to render the following output.
 
 ### rangeZOrder 
 
-To specify range zOrder placement of circular gauge, you can set the value as rear or front. The default value is **rear**.
+To specify [`range ZOrder`](../api/ejcirculargauge#members:rangezorder) placement of circular gauge, you can set the value as rear or front. The default value is **rear**.
 
 Rear - It is used to place the ranges above the ticks of the gauge.
 
