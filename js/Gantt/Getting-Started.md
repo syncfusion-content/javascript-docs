@@ -235,7 +235,7 @@ The following screen shot displays a Gantt control with dialog editing option.
 
 ![](/js/Gantt/Getting-Started_images/Getting-Started_img7.png)
 
-N>  Both `cellEditing` and `normal` editing operations are performed through double-click action.
+N>  By default `cellEditing` and `normal` editing operations are performed through double-click action and it can be changed to click action by setting [`beginEditAction`](/api/js/ejgantt#members:editsettings-begineditaction "editSettings.beginEditAction") property as `click`.
 
 ## Enable Context Menu
 
