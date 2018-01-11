@@ -48,10 +48,10 @@ Swimlane key categorization of Kanban control can be changed dynamically using s
 					},
 					allowSelection: false
                 });
-		    $('#dropdown').ejDropDownList({watermarkText: "Change Assignee", change: "ddlChange"});
+		    $('#dropdown').ejDropDownList({watermarkText: "Change Assignee", change: "change"});
         });
 		// Swimlane key is changed based on dropdown value.
-		function ddlChange(args){
+		function change(args){
 		    $("#Kanban").ejKanban("option", {"fields": { swimlaneKey: args.selectedValue } });
         }
     </script>
