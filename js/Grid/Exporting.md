@@ -9,7 +9,7 @@ api: /api/js/ejgrid
 ---
 # Export
 
-To export the grid, `export` method should  be called with export mapper as a parameter. To make it work from the grid toolbar, `ExcelExport`, `WordExport` and `PdfExport` toolbar items needs to be added in [`toolbarSettings.toolbarItems`](https://help.syncfusion.com/api/js/ejgrid#members:toolbarsettings-toolbaritems) property and equivalent server action mapper should be defined in `exportToExcelAction`, `exportToWordAction`, and `exportToPdfAction` properties. The code snippet for this is
+To export the grid, `export` method should  be called with export mapper as a parameter. To make it work from the grid toolbar, `ExcelExport`, `WordExport` and `PdfExport` toolbar items needs to be added in [`toolbarSettings.toolbarItems`](https://help.syncfusion.com/api/js/ejgrid#members:toolbarsettings-toolbaritems) property and equivalent server action mapper should be defined in [`exportToExcelAction `](https://help.syncfusion.com/api/js/ejgrid#members:exporttoexcelaction "exportToExcelAction "), [`exportToWordAction `](https://help.syncfusion.com/api/js/ejgrid#members:exporttowordaction "exportToWordAction "), and [`exportToPdfAction `](https://help.syncfusion.com/api/js/ejgrid#members:exporttopdfaction "exportToPdfAction ") properties. The code snippet for this is
 
 {% highlight html %}
 <div id="Grid"></div>
@@ -331,6 +331,17 @@ private GridProperties ConvertGridProperties(string gridProperty)
 	return gridProp;
 }
 
+
+{% endhighlight %}
+
+By default few grid model properties are ignored while exporting, To ignore the desire grid model properties on exporting use  [`addIgnoreOnExport `](https://help.syncfusion.com/api/js/ejgrid#methods:addignoreonexport "addIgnoreOnExport ") method.
+
+The snippet for this is.
+
+{% highlight javascript %}
+
+var grid = $('#Grid').ejGrid('instance');
+grid.addIgnoreOnExport("filterSettings");
 
 {% endhighlight %}
 
