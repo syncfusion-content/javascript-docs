@@ -459,7 +459,10 @@ The following output is displayed as a result of the above code example.
 
 ![](columns_images/columns_img10.png)
 
-N> While reordering the columns [`columnDragStart`](https://help.syncfusion.com/api/js/ejgrid#events:columndragstart "columnDragStart"),[`columnDrop`](https://help.syncfusion.com/api/js/ejgrid#events:columndrop "columnDrop") events are triggered.
+N> While reordering the columns following events are triggered. 
+
+1. [`columnDragStart`](https://help.syncfusion.com/api/js/ejgrid#events:columndragstart "columnDragStart")
+2. [`columnDrop`](https://help.syncfusion.com/api/js/ejgrid#events:columndrop "columnDrop") 
 
 # Column-reorder customization by external action
 
