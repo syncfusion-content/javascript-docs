@@ -168,7 +168,12 @@ The following output is displayed as a result of the above code example.
 
 ![](columns_images/columns_img3.png)
 
-We can change the columns header text by external action using [`getHeaderTable`](https://help.syncfusion.com/api/js/ejgrid#methods:getheadertable "getHeaderTable"), [`getHeaderContent`](https://help.syncfusion.com/api/js/ejgrid#methods:getheadercontent "getHeaderContent") methods.
+# Column-header customization by external action
+
+We can customize the columns header element by external action using the following methods,
+
+1. [`getHeaderTable`](https://help.syncfusion.com/api/js/ejgrid#methods:getheadertable "getHeaderTable")
+2. [`getHeaderContent`](https://help.syncfusion.com/api/js/ejgrid#methods:getheadercontent "getHeaderContent") 
 
 The following code example describes the above behavior.
 
@@ -353,6 +358,8 @@ The following output is displayed as a result of the above code example.
 
 ![](columns_images/columns_img7.png)
 
+# Column-width customization by external action
+
 To change the columns width by external action use  [`setWidthToColumns`](https://help.syncfusion.com/api/js/ejGrid#methods:setwidthtocolumns "setWidthToColumns") method.
 
 The following code example describes the above behavior. 
@@ -378,6 +385,11 @@ $(function () {
 		]
 	});
 });
+function methods(){
+    var obj=$("#Grid").ejGrid("instance")
+    obj.columnsWidthCollection=[70,80,90,78,100];
+    obj.setWidthToColumns();
+};
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
@@ -449,6 +461,8 @@ The following output is displayed as a result of the above code example.
 
 N> While reordering the columns [`columnDragStart`](https://help.syncfusion.com/api/js/ejgrid#events:columndragstart "columnDragStart"),[`columnDrop`](https://help.syncfusion.com/api/js/ejgrid#events:columndrop "columnDrop") events are triggered.
 
+# Column-reorder customization by external action
+
 To reorder the column by external action use  [`reorderColumns`](https://help.syncfusion.com/api/js/ejgrid#methods:reordercolumns "reorderColumns") method.
 
 The following code example describes the above behavior.
@@ -473,6 +487,10 @@ $(function () {
 		]
 	});
 });
+function methods(){
+    var obj=$("#Grid").ejGrid("instance")
+    obj.reorderColumns( "EmployeeID","OrderID");
+};
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
@@ -511,7 +529,17 @@ The following output is displayed as a result of the above code example.
 
 ![](columns_images/columns_img11.png)
 
-We can show or hide the grid columns externally by [`showColumns`](https://help.syncfusion.com/api/js/ejgrid#methods:showcolumns "showColumns"),[`hideColumns`](https://help.syncfusion.com/api/js/ejgrid#methods:hidecolumns "hideColumns") methods. We can get the visible or hidden column details by [`getVisibleColumnNames`](https://help.syncfusion.com/api/js/ejgrid#methods:getvisiblecolumnnames "getVisibleColumnNames"),[`getHiddenColumnNames`](https://help.syncfusion.com/api/js/ejgrid#members:columns-field "getHiddenColumnNames") methods.
+# column-Visibility customization by external action
+
+We can show or hide the grid columns externally by using the following methods,
+
+1. [`showColumns`](https://help.syncfusion.com/api/js/ejgrid#methods:showcolumns "showColumns")
+2. [`hideColumns`](https://help.syncfusion.com/api/js/ejgrid#methods:hidecolumns "hideColumns") 
+
+We can get the visible or hidden column details by using the following methods,
+
+1. [`getVisibleColumnNames`](https://help.syncfusion.com/api/js/ejgrid#methods:getvisiblecolumnnames "getVisibleColumnNames")
+2. [`getHiddenColumnNames`](https://help.syncfusion.com/api/js/ejgrid#members:columns-field "getHiddenColumnNames") 
 
 The following code example describes the above behavior. 
 
@@ -678,6 +706,8 @@ $(function () {
 	});
 });
 {% endhighlight %}
+
+# Column-resize customization by external action
 
 To resize the columns by external action use [`resizeColumns`](https://help.syncfusion.com/api/js/ejgrid#methods:resizecolumns "resizeColumns") method.
 
@@ -1135,9 +1165,16 @@ The following output is displayed as a result of the above code example.
 
 ![](columns_images/columns_img25.png)
 
-# Important Methods of Columns
+# Columns customization by external action
 
-To control the grid column actions externally, use [`getColumnByIndex`](https://help.syncfusion.com/api/js/ejgrid#methods:getcolumnbyindex "getColumnByIndex"), [`getColumnFieldNames`](https://help.syncfusion.com/api/js/ejgrid#methods:getcolumnfieldnames "getColumnFieldNames"), [`getColumnIndexByField`](https://help.syncfusion.com/api/js/ejgrid#methods:getcolumnindexbyfield "getColumnIndexByField"), [`getColumnIndexByHeaderText`](https://help.syncfusion.com/api/js/ejgrid#methods:getcolumnindexbyheadertext "getColumnIndexByHeaderText"), [`getFieldNameByHeaderText`](https://help.syncfusion.com/api/js/ejgrid#methods:getfieldnamebyheadertext "getFieldNameByHeaderText"), [`getHeaderTextByFieldName`](https://help.syncfusion.com/api/js/ejgrid#methods:getheadertextbyfieldname "getHeaderTextByFieldName") methods.
+To control the grid column actions externally use the following methods,
+
+1. [`getColumnByIndex`](https://help.syncfusion.com/api/js/ejgrid#methods:getcolumnbyindex "getColumnByIndex")
+2. [`getColumnFieldNames`](https://help.syncfusion.com/api/js/ejgrid#methods:getcolumnfieldnames "getColumnFieldNames")
+3. [`getColumnIndexByField`](https://help.syncfusion.com/api/js/ejgrid#methods:getcolumnindexbyfield "getColumnIndexByField")
+4. [`getColumnIndexByHeaderText`](https://help.syncfusion.com/api/js/ejgrid#methods:getcolumnindexbyheadertext "getColumnIndexByHeaderText")
+5. [`getFieldNameByHeaderText`](https://help.syncfusion.com/api/js/ejgrid#methods:getfieldnamebyheadertext "getFieldNameByHeaderText")
+6. [`getHeaderTextByFieldName`](https://help.syncfusion.com/api/js/ejgrid#methods:getheadertextbyfieldname "getHeaderTextByFieldName") 
 
 The following code example describes the above behavior.
 
