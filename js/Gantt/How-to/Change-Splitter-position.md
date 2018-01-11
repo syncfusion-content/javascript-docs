@@ -25,7 +25,7 @@ The following code example explains how to define the [`splitterSettings.positio
 
         //also you can define with pixel value as 
         //‘ splitterSettings: { position: "650" } (or) ‘ splitterSettings: { position: "650px" } ’
-        //you can define spitter index value as below
+        //you can define splitter index value as below
             //splitterSettings: {
             //    index: 3,
             //},
