@@ -632,6 +632,215 @@ Options to customize the [`period line`] (../api/ejchart#members:indicators-peri
 
 {% endhighlight %}
 
+## Indicators Short Period
+Specifies the [`short period`] (../api/ejchart#members:indicators-shortperiod)in MACD indicator.
+
+{% highlight javascript %}
+
+
+   $("#container").ejChart({
+
+   
+     indicators :[{ shortPeriod :  14"}]
+                        
+});
+
+{% endhighlight %}
+
+## Indicators standardDeviations
+Specifies the [`standard deviation`] (../api/ejchart#members:indicators-standarddeviations) value for Bollinger band indicator.
+
+{% highlight javascript %}
+
+
+   $("#container").ejChart({
+
+   
+   indicators :[{ standardDeviations : 3}]
+                        
+});
+
+{% endhighlight %}
+
+## Indicators tooltip
+Options to customize the [`tooltip`] (../api/ejchart#members:indicators-tooltip)
+
+## Indicators tooltip border color
+Border color of [`indicator tooltip`] (../api/ejchart#members:indicators-tooltip-border-color)
+
+{% highlight javascript %}
+
+
+   $("#container").ejChart({
+
+   
+   indicators :[{ tooltip :{border : { color :"#0000ff"}} }]
+                        
+});
+
+{% endhighlight %}
+
+## Indicators tooltip border width
+[`Border width`] (../api/ejchart#members:indicators-tooltip-border-width)of indicator tooltip.
+
+{% highlight javascript %}
+
+
+   $("#container").ejChart({
+
+   
+  indicators :[{ tooltip :{border : { width :2}} }]
+                        
+});
+
+{% endhighlight %}
+
+## Indicators tooltip duration
+Specifies the [`animation duration`](../api/ejchart#members:indicators-tooltip-duration) of indicator tooltip.
+
+{% highlight javascript %}
+
+
+   $("#container").ejChart({
+
+   
+  indicators :[{ tooltip :{duration : "300ms"}}]
+                        
+});
+
+{% endhighlight %}
+
+## Indicators tooltip enableAnimation
+Enables/disables the tooltip [`animation`](../api/ejchart#members:indicators-tooltip-enableanimation)
+
+{% highlight javascript %}
+
+
+   $("#container").ejChart({
+
+   
+  indicators :[{ tooltip :{enableAnimation : false}}]
+                        
+});
+
+{% endhighlight %}
+
+## Indicators tooltip Opacity
+[`Opacity`] (../api/ejchart#members:indicators-tooltip-opacity)of indicator tooltip.
+
+{% highlight javascript %}
+
+
+   $("#container").ejChart({
+
+   
+  indicators :[{ tooltip :{opacity : 0.5}}]
+                        
+});
+
+{% endhighlight %}
+
+## Indicators tooltip visible
+[`visible`] (../api/ejchart#members:indicators-tooltip-visible) property Controls the visibility of indicator tooltip.
+{% highlight javascript %}
+
+
+   $("#container").ejChart({
+
+   
+  indicators :[{ tooltip :{visible : true}}]
+                        
+});
+
+{% endhighlight %}
+
+## Indicators trigger
+[`trigger`](../api/ejchart#members:indicators-trigger) property isTrigger value of MACD indicator.
+
+{% highlight javascript %}
+
+
+   $("#container").ejChart({
+
+   
+ indicators :[{ trigger :  14}]
+                        
+});
+
+{% endhighlight %}
+## Indicators UpperLine
+Options to customize the [`upperline`](../api/ejchart#members:indicators-upperline) in indicators
+## Indicators UpperLine fill
+Fill color of the [`upperline`](../api/ejchart#members:indicators-upperline-fill) in indicators
+{% highlight javascript %}
+
+
+   $("#container").ejChart({
+
+   
+ indicators :[{ upperLine : {fill: "#ff0000"}}]
+                        
+});
+
+{% endhighlight %}
+
+## Indicators UpperLine width
+Width of the [`upperLine`](../api/ejchart#members:indicators-upperline-width) in indicators.
+{% highlight javascript %}
+
+
+   $("#container").ejChart({
+
+   
+indicators :[{ upperLine : {width: 3}}]
+                        
+});
+
+{% endhighlight %}
+
+## Indicators  width
+[`Width`](../api/ejchart#members:indicators-width) of the indicator line.
+{% highlight javascript %}
+
+
+   $("#container").ejChart({
+
+   
+ indicators :[{ width :  3}]
+                        
+});
+
+{% endhighlight %}
+
+## Indicators xAxisName
+Name of the horizontal axis used for indicator. [`xAxisName`](../api/ejchart#members:indicators-xaxisname) property is used when x axis name is not specified.
+
+{% highlight javascript %}
+
+
+   $("#container").ejChart({
+
+   
+indicators :[{ xAxisName :  "xAxis"}]
+                        
+});
+
+{% endhighlight %}
+
+## Indicators yAxisName
+Name of the vertical axis used for indicator.  [`yAxisName`] (../api/js/ejchart#members:indicators-yaxisname)property  is used when y axis name is not specified
+
+{% highlight javascript %}
+
+
+   $("#container").ejChart({
+
+   
+indicators :[{ yAxisName :  "yAxis"}]
+                        
+});
+
+{% endhighlight %}
 
 
 
