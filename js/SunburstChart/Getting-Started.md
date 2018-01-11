@@ -97,7 +97,7 @@ var default_data = [
 
 ### Initialize Sunburst Chart with data
 
-Now, bind the default_Datasource to [`datasource`](../api/ejsunburstchart#members:datasource) property of the Sunburst Chart. The[`levels`](../api/ejsunburstchart#members:levels) property determines the number of hierarchical levels. Each hierarchy level is formed based on the property specified in [`groupMemberPath`](../api/ejsunburstchart#members:groupMemeberPath) property, and each arc segment size is calculated using [`valueMemberPath`](../api/ejsunburstchart#members:valueMemberPath).
+Now, bind the default_Datasource to [`datasource`](../api/ejsunburstchart#members:datasource) property of the Sunburst Chart. The[`levels`](../api/ejsunburstchart#members:levels) property determines the number of hierarchical levels. Each hierarchy level is formed based on the property specified in [`groupMemberPath`](../api/ejsunburstchart#members:groupmemberpath) property, and each arc segment size is calculated using [`valueMemberPath`](../api/ejsunburstchart#members:valueMemberPath).
 
 2. Add a script tag anywhere in the web page and add the following code.
 
@@ -195,13 +195,27 @@ Options to customize the left, right, top and bottom [`margins`](../api/ejsunbur
 
 We can also place the sunburst area to the specified position by using the margin property. 
 The margin property of the sunburst area can further be customized in [`right`](../api/ejsunburstchart#members:margin-right),
-[`left`](../api/ejsunburstchart#members:margin-left),[`top`](../api/ejsunburstchart#members:margin-top) and [`bottom`](../api/ejsunburstchart#members:margin-right) directions.
+[`left`](../api/ejsunburstchart#members:margin-left),[`top`](../api/ejsunburstchart#members:margin-top) and [`bottom`](../api/ejsunburstchart#members:margin-bottom) directions.
 
 {% highlight js %}
 
 $("#chart").ejSunburstChart({
 
    margin : { right: 10 , top: 10, bottom: 10, left: 10 }             
+
+});
+
+{% endhighlight %}
+
+### Segment border
+
+By customizing the sunburst chart, the appearance of the sunburst chart can be improved. The sunburst chart [`segment`](../api/ejsunburstchart#members:segmentborder) border is modified with the object called border. It has two border property such as [`color`](../api/ejsunburstchart#members:segmentborder-color) and [`width`](../api/ejsunburstchart#members:segmentborder-width). These are used to customize the border color and border width of the sunburst chart.
+
+{% highlight js %}
+
+$("#chart").ejSunburstChart({
+
+   segmentBorder: { color: "green", width:2 }               
 
 });
 
