@@ -514,6 +514,23 @@ Controls the [`visibility`](../api/ejchart#members:title-subtitle-visible) of th
 
 {% endhighlight %} 
 
+### title subtitle textoverflow
+[`textoverflow`](../api/ejchart#members:title-subtitle-textOverflow) Specifies the action taken when the Chart width is more than the SubTitleWidth.
+
+{% highlight javascript %}
+
+
+   $("#container").ejChart({
+
+   title:{ 
+     title : { subTitle: { textOverflow : "trim" }  }  
+      }  
+                                
+
+});
+
+{% endhighlight %} 
+
 
 ## Add Subtitle to the chart
 
