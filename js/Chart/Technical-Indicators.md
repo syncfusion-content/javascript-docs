@@ -402,5 +402,445 @@ Also, you can change and customize the tooltip [`color`](../api/ejchart#members:
 
 ![](/js/Chart/Technical-Indicators_images/Technical-Indicators_img12.png)
 
+## Indicators dPeriod
+
+The [`dPeriod`] (../api/ejchart#members:indicators-dperiod) value for stochastic indicator.
+
+{% highlight javascript %}
+
+
+        $("#container").ejChart({
+           indicators :[{ dPeriod : 4}]
+
+        });
+
+
+{% endhighlight %}
+
+## Indicators enableAimation
+
+Enables/disables the [`enable animation`] (../api/ejchart#members:indicators-enableanimation)
+
+{% highlight javascript %}
+
+
+        $("#container").ejChart({
+            indicators :[{ enableAnimation :  true}]
+
+        });
+
+
+{% endhighlight %}
+
+## Indicators AnimationDuration
+
+Specifies [`animation duration`] (../api/ejchart#members:indicators-animationduration) for indicator rendering.
+
+{% highlight javascript %}
+
+
+        $("#container").ejChart({
+             indicators :[{ animationDuration:2000}]
+
+        });
+
+
+{% endhighlight %}
+
+## Indicators fill
+ [`fill`] (../api/ejchart#members:indicators-fill) color of the technical indicator.
+
+ {% highlight javascript %}
+
+
+        $("#container").ejChart({
+                 indicators :[{ fill : "#ff0000"}]
+
+        });
+
+
+{% endhighlight %}
+
+## Indicators histogram
+Options to customize the [`histogram`] (../api/ejchart#members:indicators-histogram)in MACD indicator.
+
+## Indicators histogram border
+Options to customize the histogram [`border`] (../api/ejchart#members:indicators-histogram-border) in MACD indicator.
+
+## Indicators histogram border color
+[`Color`](../api/ejchart#members:indicators-histogram-border-color) of the histogram border in MACD indicator.
+
+ {% highlight javascript %}
+
+
+        $("#container").ejChart({
+                indicators :[{ histogram : {border: {color: "#ff0000"}}}]
+
+        });
+
+
+{% endhighlight %}
+
+## Indicators histogram border width
+Controls the [`width`](../api/ejchart#members:indicators-histogram-border-width) of histogram border line in MACD indicator.
+
+ {% highlight javascript %}
+
+
+        $("#container").ejChart({
+              indicators :[{ histogram : {border: {width: 2}}}]
+
+        });
+
+
+{% endhighlight %}
+
+
+## Indicators histogram border fill
+[`fill`](../api/ejchart#members:indicators-histogram-fill) color of histogram columns in MACD indicator.
+
+ {% highlight javascript %}
+
+
+        $("#container").ejChart({
+                indicators :[{ histogram : {fill: "#ff0000"}}]
+
+        });
+
+
+{% endhighlight %}
+
+## Indicators histogram border opacity
+[`Opacity`](../api/ejchart#members:indicators-histogram-opacity) of histogram columns in MACD indicator.
+
+{% highlight javascript %}
+
+
+        $("#container").ejChart({
+             indicators :[{ histogram : {opacity: 0.5}}]
+
+        });
+
+
+{% endhighlight %}
+
+## Indicators Kperiod
+Specifies the [`k period`](../api/ejchart#members:indicators-kperiod) in stochastic indicator.
+
+{% highlight javascript %}
+
+
+   $("#container").ejChart({
+
+    indicators :[{ kPeriod : 4}]
+                        
+});
+
+{% endhighlight %}
+
+## Indicators longPeriod
+Specifies the [`long period`](../api/ejchart#members:indicators-longperiod) in MACD indicator.
+
+{% highlight javascript %}
+
+
+   $("#container").ejChart({
+
+    indicators :[{ longPeriod :  14"}]
+                        
+});
+
+{% endhighlight %}
+
+## Indicators lowerLine
+Options to customize the [`lower line`](../api/ejchart#members:indicators-lowerline) in indicators.
+
+## Indicators lowerLine fill
+Color of [`lower line`](../api/ejchart#members:indicators-lowerline-fill)
+
+{% highlight javascript %}
+
+
+   $("#container").ejChart({
+
+   
+     indicators :[{ lowerLine : {fill: "#ff0000"}}]
+                        
+});
+
+{% endhighlight %}
+
+## Indicators lowerLine width
+[`Width`](../api/ejchart#members:indicators-lowerline-width) of the lower line.
+
+{% highlight javascript %}
+
+
+   $("#container").ejChart({
+
+   
+    indicators :[{ lowerLine : {width: 3}}]
+                        
+});
+
+{% endhighlight %}
+
+## Indicators Period
+Specifies [`period`](../api/ejchart#members:indicators-period) value in indicator.
+
+{% highlight javascript %}
+
+
+   $("#container").ejChart({
+
+   
+      indicators :[{ period : 20}]
+                        
+});
+
+{% endhighlight %}
+
+## Indicators PeriodLine
+Options to customize the [`period line`] (../api/ejchart#members:indicators-periodline)in indicators.
+
+## Indicators PeriodLine fill
+[`fill`] (../api/ejchart#members:indicators-periodline-fill) color of period line in indicator.
+{% highlight javascript %}
+
+
+   $("#container").ejChart({
+
+   
+     indicators :[{ periodLine : {fill: "#ff0000"}}]
+                        
+});
+
+{% endhighlight %}
+
+## Indicators PeriodLine width
+[`Width`] (../api/ejchart#members:indicators-periodline-width)of the period line in indicators.
+
+{% highlight javascript %}
+
+
+   $("#container").ejChart({
+
+   
+     indicators :[{ periodLine : {width: 3}}]
+                        
+});
+
+{% endhighlight %}
+
+## Indicators Short Period
+Specifies the [`short period`] (../api/ejchart#members:indicators-shortperiod)in MACD indicator.
+
+{% highlight javascript %}
+
+
+   $("#container").ejChart({
+
+   
+     indicators :[{ shortPeriod :  14"}]
+                        
+});
+
+{% endhighlight %}
+
+## Indicators standardDeviations
+Specifies the [`standard deviations`] (../api/ejchart#members:indicators-standarddeviations) value for Bollinger band indicator.
+
+{% highlight javascript %}
+
+
+   $("#container").ejChart({
+
+   
+   indicators :[{ standardDeviations : 3}]
+                        
+});
+
+{% endhighlight %}
+
+## Indicators tooltip
+Options to customize the [`tooltip`] (../api/ejchart#members:indicators-tooltip)
+
+## Indicators tooltip border color
+Border color of [`indicator tooltip`] (../api/ejchart#members:indicators-tooltip-border-color)
+
+{% highlight javascript %}
+
+
+   $("#container").ejChart({
+
+   
+   indicators :[{ tooltip :{border : { color :"#0000ff"}} }]
+                        
+});
+
+{% endhighlight %}
+
+## Indicators tooltip border width
+[`Border width`] (../api/ejchart#members:indicators-tooltip-border-width)of indicator tooltip.
+
+{% highlight javascript %}
+
+
+   $("#container").ejChart({
+
+   
+  indicators :[{ tooltip :{border : { width :2}} }]
+                        
+});
+
+{% endhighlight %}
+
+## Indicators tooltip duration
+Specifies the [`animation duration`](../api/ejchart#members:indicators-tooltip-duration) of indicator tooltip.
+
+{% highlight javascript %}
+
+
+   $("#container").ejChart({
+
+   
+  indicators :[{ tooltip :{duration : "300ms"}}]
+                        
+});
+
+{% endhighlight %}
+
+## Indicators tooltip enableAnimation
+Enables/disables the tooltip [`animation`](../api/ejchart#members:indicators-tooltip-enableanimation)
+
+{% highlight javascript %}
+
+
+   $("#container").ejChart({
+
+   
+  indicators :[{ tooltip :{enableAnimation : false}}]
+                        
+});
+
+{% endhighlight %}
+
+## Indicators tooltip Opacity
+[`Opacity`] (../api/ejchart#members:indicators-tooltip-opacity)of indicator tooltip.
+
+{% highlight javascript %}
+
+
+   $("#container").ejChart({
+
+   
+  indicators :[{ tooltip :{opacity : 0.5}}]
+                        
+});
+
+{% endhighlight %}
+
+## Indicators tooltip visible
+[`visible`] (../api/ejchart#members:indicators-tooltip-visible) property Controls the visibility of indicator tooltip.
+{% highlight javascript %}
+
+
+   $("#container").ejChart({
+
+   
+  indicators :[{ tooltip :{visible : true}}]
+                        
+});
+
+{% endhighlight %}
+
+## Indicators trigger
+[`trigger`](../api/ejchart#members:indicators-trigger)  value of MACD indicator.
+
+{% highlight javascript %}
+
+
+   $("#container").ejChart({
+
+   
+ indicators :[{ trigger :  14}]
+                        
+});
+
+{% endhighlight %}
+## Indicators UpperLine
+Options to customize the [`upper line`](../api/ejchart#members:indicators-upperline) in indicators
+## Indicators UpperLine fill
+Fill color of the [`upper line`](../api/ejchart#members:indicators-upperline-fill) in indicators
+{% highlight javascript %}
+
+
+   $("#container").ejChart({
+
+   
+ indicators :[{ upperLine : {fill: "#ff0000"}}]
+                        
+});
+
+{% endhighlight %}
+
+## Indicators UpperLine width
+Width of the [`upperLine`](../api/ejchart#members:indicators-upperline-width) in indicators.
+{% highlight javascript %}
+
+
+   $("#container").ejChart({
+
+   
+indicators :[{ upperLine : {width: 3}}]
+                        
+});
+
+{% endhighlight %}
+
+## Indicators  width
+[`Width`](../api/ejchart#members:indicators-width) of the indicator line.
+{% highlight javascript %}
+
+
+   $("#container").ejChart({
+
+   
+ indicators :[{ width :  3}]
+                        
+});
+
+{% endhighlight %}
+
+## Indicators xAxisName
+Name of the horizontal axis used for indicator. [`xAxisName`](../api/ejchart#members:indicators-xaxisname) property is used when x axis name is not specified.
+
+{% highlight javascript %}
+
+
+   $("#container").ejChart({
+
+   
+indicators :[{ xAxisName :  "xAxis"}]
+                        
+});
+
+{% endhighlight %}
+
+## Indicators yAxisName
+Name of the vertical axis used for indicator.  [`yAxisName`] (../api/js/ejchart#members:indicators-yaxisname)property  is used when y axis name is not specified
+
+{% highlight javascript %}
+
+
+   $("#container").ejChart({
+
+   
+indicators :[{ yAxisName :  "yAxis"}]
+                        
+});
+
+{% endhighlight %}
+
 
 
