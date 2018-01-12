@@ -166,7 +166,7 @@ Options to customize the [`border`](../api/ejchart#members:title-border) of the 
 {% endhighlight %} 
 
 ### title border cornerRadius
-[`cornerRadius`](../api/ejchart#members:title-border-cornerradius) is opacity of the title border.
+[`cornerRadius`](../api/ejchart#members:title-border-cornerradius)  of the title border.
 
 {% highlight javascript %}
 
@@ -272,7 +272,7 @@ Font [`size`](../api/ejchart#members:title-font-size) for Chart title.
 {% endhighlight %} 
 
 ### title text overflow
- [`text overflow`] (../api/ejchart#members:title-textoverflow) Specifies the action taken when the Chart width is more than the titleWidth.
+ [`text overflow`] (../api/ejchart#members:title-textoverflow) specifies the action taken when the Chart width is more than the titleWidth.
 
  {% highlight javascript %}
 
@@ -446,7 +446,7 @@ Font [`size`](../api/ejchart#members:title-font-size) for Chart title.
 
 
 ### title subtitle border cornerRadius
-[`cornerRadius`](../api/ejchart#members:title-subtitle-border-cornerradius) opacity of the subtitle border.
+[`cornerRadius`](../api/ejchart#members:title-subtitle-border-cornerradius) of the subtitle border.
 
 {% highlight javascript %}
 
@@ -515,7 +515,7 @@ Controls the [`visibility`](../api/ejchart#members:title-subtitle-visible) of th
 {% endhighlight %} 
 
 ### title subtitle text overflow
-[`text overflow`](../api/ejchart#members:title-subtitle-textOverflow) Specifies the action taken when the Chart width is more than the SubTitleWidth.
+[`text overflow`](../api/ejchart#members:title-subtitle-textOverflow) specifies the action taken when the Chart width is more than the SubTitleWidth.
 
 {% highlight javascript %}
 

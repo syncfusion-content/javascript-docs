@@ -448,7 +448,7 @@ Specifies [`animation duration`] (../api/ejchart#members:indicators-animationdur
 {% endhighlight %}
 
 ## Indicators fill
- [`fill`] (../api/ejchart#members:indicators-fill) Color of the technical indicator.
+ [`fill`] (../api/ejchart#members:indicators-fill) color of the technical indicator.
 
  {% highlight javascript %}
 
@@ -497,7 +497,7 @@ Controls the [`width`](../api/ejchart#members:indicators-histogram-border-width)
 
 
 ## Indicators histogram border fill
-[`fill`](../api/ejchart#members:indicators-histogram-fill) Color of histogram columns in MACD indicator.
+[`fill`](../api/ejchart#members:indicators-histogram-fill) color of histogram columns in MACD indicator.
 
  {% highlight javascript %}
 
@@ -604,7 +604,7 @@ Specifies [`period`](../api/ejchart#members:indicators-period) value in indicato
 Options to customize the [`period line`] (../api/ejchart#members:indicators-periodline)in indicators.
 
 ## Indicators PeriodLine fill
-[`fill`] (../api/ejchart#members:indicators-periodline-fill) Color of period line in indicator.
+[`fill`] (../api/ejchart#members:indicators-periodline-fill) color of period line in indicator.
 {% highlight javascript %}
 
 
@@ -755,7 +755,7 @@ Enables/disables the tooltip [`animation`](../api/ejchart#members:indicators-too
 {% endhighlight %}
 
 ## Indicators trigger
-[`trigger`](../api/ejchart#members:indicators-trigger) property isTrigger value of MACD indicator.
+[`trigger`](../api/ejchart#members:indicators-trigger)  value of MACD indicator.
 
 {% highlight javascript %}
 
