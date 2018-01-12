@@ -48,7 +48,7 @@ N> For the **OHLC** type series, you have to map four dataSource fields ([`high`
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/databinding/localdata) here to view the local data binding online demo sample.
 
 
-2.You can also plot data to chart using [`points`](../api/ejchart.html#members:series-points) option in the series. Using this property you can customize each and every point in the data.
+2.You can also plot data to chart using [`x`](../api/ejchart.html#members:series-points-x) and [`y`](../api/ejchart.html#members:series-points-y) field of [`points`](../api/ejchart.html#members:series-points) option in the series. Using this property you can customize each and every point in the data.
 
 {% highlight javascript %}
 

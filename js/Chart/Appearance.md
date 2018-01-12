@@ -74,7 +74,9 @@ You can set your desired theme by using the [`theme`](../api/ejchart#members:the
 
 ## Point level customization
 
-Marker, data label and fill color of each point in a series can be customized individually by using the [`points`](../api/ejchart#members:series-points) collection.
+[`Marker`](../api/ejchart#members:series-points-marker), [`data label`](../api/ejchart#members:series-points-marker-datalabel) and [`fill`](../api/ejchart#members:series-points-fill) color of each point in a series can be customized individually by using the [`points`](../api/ejchart#members:series-points) collection. The visibility of marker can be customized using [`visible`](../api/ejchart#members:series-points-marker-visible) property. The [`border`](../api/ejchart#members:series-points-marker-border) of marker shape can be customized using [`color`](../api/ejchart#members:series-points-marker-border-color) and [`width`](../api/ejchart#members:series-points-marker-border-width). 
+
+The color of marker shape can be specified using [`fill`](../api/ejchart#members:series-points-marker-fill) property.To display the image as marker, need to specify [`imageURL`](../api/ejchart#members:series-points-marker-imageurl). The [`opacity`](../api/ejchart#members:series-points-marker-opacity), [`shape`](../api/ejchart#members:series-points-marker-shape), [`width`](../api/ejchart#members:series-points-marker-size-width), [`height`](../api/ejchart#members:series-points-marker-size-height) of marker [`size`](../api/ejchart#members:series-points-marker-size) also be used to customize the points.
 
 {% highlight javascript %}
 
@@ -104,6 +106,40 @@ Marker, data label and fill color of each point in a series can be customized in
 {% endhighlight %}
 
 ![](/js/Chart/Appearance_images/Appearance_img3.png)
+
+The [`border`](../api/ejchart#members:series-points-border) [`color`](../api/ejchart#members:series-points-border-color) and [`width`](../api/ejchart#members:series-points-border-width) property is used to customize the point border. This is applicable only for column type series and accumulation type series. The visibility of legend items can be enabled or disabled using [`visibleOnLegend`](../api/ejchart#members:series-points-visibleonlegend). 
+
+The [`showIntermediateSum`](../api/ejchart#members:series-points-showintermediatesum) property shows/hides the intermediate summary from the last intermediate point. To show/hide the total summary of the waterfall series, [`showTotalSum`](../api/ejchart#members:series-points-showtotalsum) property can be used.
+
+The close and open value of a point can be specified using [`open`](../api/ejchart#members:series-points-open) and [`close`](../api/ejchart#members:series-points-close) property. It is applicable only for financial type series. The [`size`](../api/ejchart#members:series-points-size) property is used to customize the bubble size in the bubble series. The data label text for the point can be provided using [`text`](../api/ejchart#members:series-points-text) property.
+
+{% highlight javascript %}
+
+       $("#container").ejChart({
+            
+           series: [{
+                //Customizing border of a point
+                     points: [
+                         {  
+                           text: 'Others',
+                           border:{color : "green", width : 2},
+                           visibleOnLegend: "hidden",
+                           showIntermediateSum : true,
+                           showTotalSum : true,
+                           close : 50,
+						   open : 50,
+                           size : 5
+                         },
+                       // ...
+                      ],         
+                 // ...
+            }],
+            // ...
+
+        });
+
+
+{% endhighlight %}
 
 ## Series border customization
 
@@ -157,6 +193,33 @@ To customize the series font color[`color`](../api/ejchart#members:series-font-c
                 //...
      });
 
+
+{% endhighlight %}
+
+## Customizing Name and Opacity of Chart Series
+
+The series name to be displayed on the legend can be provided using [`name`](../api/ejchart#members:series-name) property. The [`opacity`](../api/ejchart#members:series-opacity) property is used to provide the series opacity.
+
+{% highlight javascript %}
+
+    $("#container").ejChart({
+            series :[{ 
+                name: 'India',
+                opacity : 0.5
+            }]                  
+    });
+
+{% endhighlight %}
+
+## Customizing data points fill color
+
+The [`palette`](../api/ejchart#members:series-palette) is the field name in data source where fill color for all the data points is generated.
+
+{% highlight javascript %}
+
+    $("#container").ejChart({
+        series :[{palette : "ColorFieldName"}]                  
+    });
 
 {% endhighlight %}
 

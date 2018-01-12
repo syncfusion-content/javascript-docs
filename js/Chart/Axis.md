@@ -1069,7 +1069,7 @@ You can modify the position of the axis title either inside or outside the chart
 
 ### Label customization
 
-The [`font`](../api/ejchart#members:primaryxaxis-font) property of the axis provides options to customize the [`font-family`](../api/ejchart#members:primaryxaxis-font-fontfamily), [`color`](../api/ejchart#members:primaryxaxis-font-color), [`opacity`](../api/ejchart#members:primaryxaxis-font-opacity), [`size`](../api/ejchart#members:primaryxaxis-font-size) and [`font-weight`](../api/ejchart#members:primaryxaxis-font-fontweight) of the axis labels.  
+The [`font`](../api/ejchart#members:primaryxaxis-font) property of the axis provides options to customize the [`font-style`](../api/ejchart#members:primaryxaxis-font-fontstyle), [`font-family`](../api/ejchart#members:primaryxaxis-font-fontfamily), [`color`](../api/ejchart#members:primaryxaxis-font-color), [`opacity`](../api/ejchart#members:primaryxaxis-font-opacity), [`size`](../api/ejchart#members:primaryxaxis-font-size) and [`font-weight`](../api/ejchart#members:primaryxaxis-font-fontweight) of the axis labels.  
 
 {% highlight javascript %}
 
