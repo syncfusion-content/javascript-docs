@@ -16,7 +16,7 @@ Data markers are used to provide information about the data point to the user. Y
 
 You can add shapes to any chart types but they are often used with line, area and spline series to indicate each data point. It is highlighted when you hover the mouse on the shape.
 
-Shapes can be added to the chart by enabling the [`visible`](../api/ejchart#members:series-marker-datalabel-visible) option of the [`marker`](../api/ejchart#members:series-marker) property. There are different shapes you can add to the chart by using the shape option such as rectangle, circle, diamond etc.
+Shapes can be added to the chart by enabling the [`visible`](../api/ejchart#members:series-marker-visible) option of the [`marker`](../api/ejchart#members:series-marker) property. There are different shapes you can add to the chart by using the [`shape`](../api/ejchart#members:series-marker-shape) option such as rectangle, circle, diamond etc.
 
 The following code example explains on how to enable series marker and add shapes,
 
@@ -56,7 +56,17 @@ The following code example explains on how to enable series marker and add shape
 
 ![](/js/Chart/Data-Markers_images/Data-Markers_img1.png)
 
+## Customizing marker 
 
+You can give color and opacity for the marker using [`fill`](../api/ejchart#members:series-marker-fill) and [`opacity`](../api/ejchart#members:series-marker-opacity) property.
+
+    $("#container").ejChart({
+            series :[{marker : { 
+                fill : "green",
+                opacity : 0.5 
+                } 
+            }]                  
+    });
 
 ## Add image as marker
 
@@ -476,9 +486,11 @@ There are two ways to achieve this based on how the data is fed to the series.
 
 The [`margin`](../api/ejchart#members:series-marker-datalabel-margin) property is used for providing the space in the [`left`](../api/ejchart#members:series-marker-datalabel-margin-left),[`right`](../api/ejchart#members:series-marker-datalabel-margin-right),[`top`](../api/ejchart#members:series-marker-datalabel-margin-top) and [`bottom`](../api/ejchart#members:series-marker-datalabel-margin-bottom) directions.
 
-The required space for the datalabel text can also be customized by using the [`offset`](../api/ejchart#members:series-marker-datalabel-offset) property.
+The required space for the datalabel text can also be customized by using the [`offset`](../api/ejchart#members:series-marker-datalabel-offset) property. The horizontal and vertical offset of data label can be customized using [`x`](../api/ejchart#members:series-marker-datalabel-offset-x) and [`y`](../api/ejchart#members:series-marker-datalabel-offset-y) property.
 
-When the data is provided by using the [`points`](../api/ejchart#members:series-points) option, you can add marker for each data point or specific point by using the [`marker`](../api/ejchart#members:series-marker) option as illustrated in the following code example.
+The opacity of the data label can be customized using [`opacity`](../api/ejchart#members:series-marker-datalabel-opacity) property.
+
+When the data is provided by using the [`points`](../api/ejchart#members:series-points) option, you can add marker for each data point or specific point by using the [`marker`](../api/ejchart#members:series-points-marker) option as illustrated in the following code example. There are several options like [`angle`](../api/ejchart#members:series-points-marker-datalabel-angle), [`border`](../api/ejchart#members:series-points-marker-datalabel-border) [`color`](../api/ejchart#members:series-points-marker-datalabel-border-color), [`width`](../api/ejchart#members:series-points-marker-datalabel-border-width), [`connectorLine`](../api/ejchart#members:series-points-marker-datalabel-connectorline) [`type`](../api/ejchart#members:series-points-marker-datalabel-connectorline-type), [`width`](../api/ejchart#members:series-points-marker-datalabel-connectorline-width), [`fill`](../api/ejchart#members:series-points-marker-datalabel-fill), [`font`](../api/ejchart#members:series-points-marker-datalabel-font) [`size`](../api/ejchart#members:series-points-marker-datalabel-font-size), [`opacity`](../api/ejchart#members:series-points-marker-datalabel-font-opacity), [`fontWeight`](../api/ejchart#members:series-points-marker-datalabel-font-fontweight), [`fontStyle`](../api/ejchart#members:series-points-marker-datalabel-font-fontstyle), [`fontFamily`](../api/ejchart#members:series-points-marker-datalabel-font-fontfamily), [`horizontalTextAlignment`](../api/ejchart#members:series-points-marker-datalabel-horizontaltextalignment), [`margin`](../api/ejchart#members:series-points-marker-datalabel-margin) [`left`](../api/ejchart#members:series-points-marker-datalabel-margin-left), [`right`](../api/ejchart#members:series-points-marker-datalabel-margin-right), [`top`](../api/ejchart#members:series-points-marker-datalabel-margin-top), [`bottom`](../api/ejchart#members:series-points-marker-datalabel-margin-bottom), [`shape`](../api/ejchart#members:series-points-marker-datalabel-shape), [`textPosition`](../api/ejchart#members:series-points-marker-datalabel-textposition), [`verticalTextAlignment`](../api/ejchart#members:series-points-marker-datalabel-verticaltextalignment), [`visible`](../api/ejchart#members:series-points-marker-datalabel-visible), [`template`](../api/ejchart#members:series-points-marker-datalabel-template) and [`offset`](../api/ejchart#members:series-points-marker-datalabel-offset) to customize the point data label.
 
 {% highlight javascript %}
 
