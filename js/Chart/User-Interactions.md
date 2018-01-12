@@ -1189,7 +1189,7 @@ We can able to select the point/series programmatically on chart load, by settin
 
 ## Data Editing
 
-EjChart provides support to change the location of the rendered points. This can be done by dragging the point and dropping it on another location in chart. To enable the data editing, set the [`enable`] (../api/ejchart#members:series-dragsettings-enable) property to true in the [`dragSettings`](../api/ejchart#members:series-dragsettings) of the series.
+EjChart provides support to change the location of the rendered points. This can be done by dragging the point and dropping it on another location in chart. To enable the data editing, set the [`enable`] (../api/ejchart#members:series-dragsettings-enable) property to true in the [`drag settings`](../api/ejchart#members:series-dragsettings) of the series.
 
 {% highlight javascript %}
 
@@ -1211,7 +1211,7 @@ $("#container").ejChart(
 
 ### Customize Dragging direction
 
-To drag the point along x and y axes, you can specify [`type`] (../api/ejchart#members:series-dragsettings-type) as xy in dragSettings. And to drag along x axis alone, specify the type as x and to drag along y axis, specify type as y.
+To drag the point along x and y axes, you can specify [`type`] (../api/ejchart#members:series-dragsettings-type) as xy in drag settings. And to drag along x axis alone, specify the type as x and to drag along y axis, specify type as y.
 
 {% highlight javascript %}
 
