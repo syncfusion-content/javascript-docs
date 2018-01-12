@@ -11,7 +11,7 @@ documentation: ug
 
 ## Tooltip
 
-In TreeGrid, tooltip can be enabled using the [showGridCellTooltip](/api/js/ejtreegrid#members:showgridcelltooltip) property. Using this property tooltip can be enabled for cells both header and content.
+In TreeGrid, tooltip can be enabled using the [`showGridCellTooltip`](/api/js/ejtreegrid#members:showgridcelltooltip) property. Using this property tooltip can be enabled for cells both header and content.
 
 Please find the example describes the above behavior.
 
@@ -40,7 +40,7 @@ Header Tooltip
 
 ### Tooltip Template
 
-It is possible to display a custom tooltip across all the TreeGrid cells using the property [cellTooltipTemplate](/api/js/ejtreegrid#members:celltooltiptemplate) with the property [showGridCellTooltip](/api/js/ejtreegrid#members:showgridcelltooltip) enabled. We need to set the template of the custom tooltip to this property.
+It is possible to display a custom tooltip across all the TreeGrid cells using the property [`cellTooltipTemplate`](/api/js/ejtreegrid#members:celltooltiptemplate) with the property [`showGridCellTooltip`](/api/js/ejtreegrid#members:showgridcelltooltip) enabled. We need to set the template of the custom tooltip to this property.
 
 Please find code example describes the cell tooltip template support.
 
@@ -117,7 +117,7 @@ The following output shows the result of above code example.
 
 ### Column tooltip
 
-By using the property [tooltip](/api/js/ejtreegrid#members:columns-tooltip "columns.tooltip") it is possible to display a custom tooltip for a specific column. The ID of the script template must be set to the `columns.tooltip` property.
+By using the property [`tooltip`](/api/js/ejtreegrid#members:columns-tooltip "columns.tooltip") it is possible to display a custom tooltip for a specific column. The ID of the script template must be set to the [`tooltip`](/api/js/ejtreegrid#members:columns-tooltip "columns.tooltip") property.
 
 Please refer to the following code example for setting a custom tooltip for a specific column.
 
@@ -155,7 +155,7 @@ N> Template element should be enclosed with `<script>` tag with type as `“text
 
 ### Header tooltip
 
-By using the property [headerTooltip](/api/js/ejtreegrid#members:columns-headertooltip "columns.headerTooltip") it is possible to display a custom tooltip for a specific column header. The ID of the script template must be set to the `columns.headerTooltip` property.
+By using the property [`headerTooltip`](/api/js/ejtreegrid#members:columns-headertooltip "columns.headerTooltip") it is possible to display a custom tooltip for a specific column header. The ID of the script template must be set to the [`headerTooltip`](/api/js/ejtreegrid#members:columns-headertooltip "columns.headerTooltip") property.
 
 Please refer to the following code example for setting a custom tooltip for a specific column header.
 
@@ -194,7 +194,7 @@ The following output shows the result of above code example.
 
 Clip mode enables the TreeGrid to clip cell content and header content when the content exceeds the boundary of the cell width. 
 
-We can specify the type of clip mode using the [clipMode](/api/js/ejtreegrid#members:columns-clipmode "columns.clipMode") property, clip mode will be enabled for both TreeGrid content and header of that specific column.
+We can specify the type of clip mode using the [`clipMode`](/api/js/ejtreegrid#members:columns-clipmode "columns.clipMode") property, clip mode will be enabled for both TreeGrid content and header of that specific column.
 
 The below are the available clipping modes in TreeGrid.
 
@@ -203,7 +203,7 @@ The below are the available clipping modes in TreeGrid.
 
 ### Clip
 
-When the clipMode of Columns property is set as `ej.TreeGrid.ClipMode.Clip`, then it truncates the overflown text in the cell.
+When the [`clipMode`](/api/js/ejtreegrid#members:columns-clipmode "columns.clipMode") of Columns property is set as `ej.TreeGrid.ClipMode.Clip`, then it truncates the overflown text in the cell.
 
 N> 1. By default the `clipMode` will be set as `Clip`.
 
@@ -228,7 +228,7 @@ The following output shows the result of above code example.
 
 ### Ellipsis
 
-When the `columns.clipMode` property is set as `ej.TreeGrid.ClipMode.Ellipsis` then it shows ellipsis for the overflown cell.
+When the [`clipMode`](/api/js/ejtreegrid#members:columns-clipmode "columns.clipMode") property is set as `ej.TreeGrid.ClipMode.Ellipsis` then it shows ellipsis for the overflown cell.
 
 The following code example describes the above behavior.
 
@@ -254,7 +254,7 @@ Text wrap enables the TreeGrid to wrap cell content or header content to next li
 
 ### Header Text Wrap
 
-To enable header cell text wrap, set the `headerTextOverflow` property as `wrap`.
+To enable header cell text wrap, set the [`headerTextOverflow`](/api/js/ejtreegrid#members:headertextoverflow) property as `wrap`.
 
 N> By default the `headerTextOverflow` will be set as `none`.
 
@@ -275,7 +275,7 @@ The following output shows the result of above code example.
 
 ### Content Text Wrap
 
-To enable cell text wrap, set the [allowTextWrap](/api/js/ejtreegrid#members:allowtextwrap) property as `true`.
+To enable cell text wrap, set the [`allowTextWrap`](/api/js/ejtreegrid#members:allowtextwrap) property as `true`.
 
 N> 1.By default the `allowTextWrap` will be set as `false`.
 

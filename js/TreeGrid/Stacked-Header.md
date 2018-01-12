@@ -53,7 +53,7 @@ The stacked header cells can be customized with more options as described below.
 
 ### CSS Class
 
-You can provide external CSS styles to the stacked header with the help of the [cssClass](/api/js/ejtreegrid#members:stackedheaderrows-stackedheadercolumns-cssclass "stackedHeaderRows.stackedHeaderColumns.cssClass") property.
+You can provide external CSS styles to the stacked header with the help of the [`cssClass`](/api/js/ejtreegrid#members:stackedheaderrows-stackedheadercolumns-cssclass "stackedHeaderRows.stackedHeaderColumns.cssClass") property.
 
 {% highlight html %}
 
@@ -89,7 +89,7 @@ $("#treeGrid").ejTreeGrid({
 
 ### Text Align
 
-There is an option to align the stacked header text inside the header cell using the [textAlign](/api/js/ejtreegrid#members:stackedheaderrows-stackedheadercolumns-textalign "stackedHeaderRows.stackedHeaderColumns.textAlign") property as follows.
+There is an option to align the stacked header text inside the header cell using the [`textAlign`](/api/js/ejtreegrid#members:stackedheaderrows-stackedheadercolumns-textalign "stackedHeaderRows.stackedHeaderColumns.textAlign") property as follows.
 
 {% highlight html %}
 <div id="treeGrid"></div> 
@@ -119,7 +119,7 @@ $("#treeGrid").ejTreeGrid({
 
 ### Tooltip
 
-We can have the customized tooltip for the stacked header text with the help of the [tooltip](/api/js/ejtreegrid#members:stackedheaderrows-stackedheadercolumns-tooltip "stackedHeaderRows.stackedHeaderColumns.tooltip") property. The JsRender template script id can be assigned to this property to get tooltip.
+We can have the customized tooltip for the stacked header text with the help of the [`tooltip`](/api/js/ejtreegrid#members:stackedheaderrows-stackedheadercolumns-tooltip "stackedHeaderRows.stackedHeaderColumns.tooltip") property. The JsRender template script id can be assigned to this property to get tooltip.
 
 {% highlight html %}
 
