@@ -545,7 +545,7 @@ To collect the details related to the current view data and to refresh the Grid 
 
 	<label>Refresh Template</label><input id="check" type="checkbox">
 	
-	<select id="columnName" class="e-ddl" data-bind="value: field">
+	<label>Methods</label><select id="columnName" class="e-ddl" data-bind="value: field">
 		<option value="dataSource" selected="selected">dataSource</option>
 		<option value="getCurrentViewData">getCurrentViewData</option>
 		<option value="refreshContent">refreshContent</option>
@@ -558,6 +558,7 @@ To collect the details related to the current view data and to refresh the Grid 
 {% highlight javascript %}
 		$("#columnName").ejDropDownList({
 			watermarkText: "Select Methods",
+			width: "100%",
 			change: function(args){
 				if(args.selectedText == "dataSource") $("#Grid").ejGrid("dataSource", window.gridData.slice(0,5));
 				else if(args.selectedText == "refreshContent") { 
@@ -582,6 +583,8 @@ To collect the details related to the current view data and to refresh the Grid 
             });
 		  });
 {% endhighlight %}
+
+N> If the argument is set to true in the refreshContent([argument]]), it will refresh the Grid content along with the template else only grid content is refreshed.
 
 The following output is displayed as a result of the above code example.
 
