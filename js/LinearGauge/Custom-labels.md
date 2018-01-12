@@ -76,9 +76,9 @@ Execute the above code to render the following output.
 
 **Appearance**
 
-* You can customize custom labels using the properties like [`textAngle`](../api/ejlineargauge#members:scales-customlabels-textangle), [`color`](../api/ejlineargauge#members:scales-customlabels-color) and [`font`](../api/ejlineargauge#members:scales-customlabels-font). The API **textAngle** is used to display the custom labels in the specified angles and **color** attribute is used to display the custom labels in specified color. You can use [`value`](../api/ejlineargauge#members:scales-customlabels-value)attribute to set the text value in the custom labels. 
+* You can customize [`custom labels`](../api/ejlineargauge#members:scales-customlabels) using the properties like [`textAngle`](../api/ejlineargauge#members:scales-customlabels-textangle), [`color`](../api/ejlineargauge#members:scales-customlabels-color) and [`font`](../api/ejlineargauge#members:scales-customlabels-font). The API **textAngle** is used to display the custom labels in the specified angles and **color** attribute is used to display the custom labels in specified color. You can use [`value`](../api/ejlineargauge#members:scales-customlabels-value)attribute to set the text value in the custom labels. 
 
-* To display the custom labels, set [`showCustomLabels`](../api/ejlineargauge#members:scales-showcustomlabels) as ‘true’. Font option is also available on the custom labels. The basic three properties of fonts such as [`size`](../api/ejlineargauge#members:scales-showcustomlabels), [`family`](../api/ejlineargauge#members:scales-customlabels-font-fontfamily) and [`style`](../api/ejlineargauge#members:scales-customlabels-font-fontstyle) can be achieved by **size**, **fontStyle** and **fontFamily**. You can adjust the opacity of the label with the property [`opacity`](../api/ejlineargauge#members:scales-customlabels-opacity) and the value of opacity lies between 0 and 1.
+* To display the custom labels, set [`showCustomLabels`](../api/ejlineargauge#members:scales-showcustomlabels) as ‘true’. Font option is also available on the custom labels. The basic three properties of fonts such as [`size`](../api/ejlineargauge#members:scales-customlabels-font-size), [`family`](../api/ejlineargauge#members:scales-customlabels-font-fontfamily) and [`style`](../api/ejlineargauge#members:scales-customlabels-font-fontstyle) can be achieved by **size**, **fontStyle** and **fontFamily**. You can adjust the opacity of the label with the property [`opacity`](../api/ejlineargauge#members:scales-customlabels-opacity) and the value of opacity lies between 0 and 1.
 
 
 {% highlight html %}
@@ -269,4 +269,17 @@ $(function () {
 Execute the above code to render the following output.
 
 ![](/js/LinearGauge/Custom-labels_images/Custom-labels_img4.png)
+
+
+## Outer Custom Label
+
+**Outer Custom Label** is used to show custom labels outside the **gauge** control. The **Outer Custom Label** can be positioned with API called [`outerCustomLabelPosition`](../api/ejlineargauge#members:outercustomlabelposition). The value for this API is enumerable type and its possible values are,
+
+* Right
+
+* Left
+
+* Top
+
+* Bottom
 

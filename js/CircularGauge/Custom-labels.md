@@ -166,7 +166,7 @@ Execute the above code to render the following output.
 
 * Bottom
 
-When a custom label is to be displayed as an **Outer Custom Label**, set the API [`positionType`](../api/ejcirculargauge#members:scales-customlabels-positionType) as Outer. Refer to the following code example to get the **Outer Custom Label**.
+When a custom label is to be displayed as an **Outer Custom Label**, set the API [`positionType`](../api/ejcirculargauge#members:scales-customlabels-positiontype) as Outer. Refer to the following code example to get the **Outer Custom Label**.
 
 
 {% highlight html %}

@@ -86,6 +86,8 @@ You can customize the appearance of the data point using the [`font`](../api/ejs
 
 Using font property, you can customize [`font color`](../api/ejsunburstchart#members:datalabelsettings-font-color), [`font family`](../api/ejsunburstchart#members:datalabelsettings-font-fontfamily), [`font style`](../api/ejsunburstchart#members:datalabelsettings-font-fontstyle), [`font weight`](../api/ejsunburstchart#members:datalabelsettings-font-fontweight), [`opacity`](../api/ejsunburstchart#members:datalabelsettings-font-opacity), [`size`](../api/ejsunburstchart#members:datalabelsettings-font-size) options.
 
+The color for the datalabel text is set by using the [`fill`](../api/ejsunburstchart#members:datalabelsettings-fill) property.
+
 {% highlight js %}
 $("#chart"). ejSunburstChart ({
 	dataLabelSettings: {visible: true, font: {color:"black",fontWeight:"bold",size:"15px"}},
