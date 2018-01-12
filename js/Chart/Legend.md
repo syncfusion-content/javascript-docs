@@ -511,7 +511,7 @@ You can collapse the specific series/point legend item displaying in the chart, 
 ![](/js/Chart/Legend_images/Legend_img17.png)
 
 ## legend enableScrollbar
-Controls whether legend has to use scrollbar or not. When [`enableScrollbar`] (../api/ejchart#members:legend-enablescrollbar) appears depending upon size and position properties of legend.
+Controls whether legend has to use scrollbar or not. When [`enable scrollbar`] (../api/ejchart#members:legend-enablescrollbar) appears depending upon size and position properties of legend.
 
 {% highlight javascript %}
 
@@ -558,7 +558,7 @@ Options to customize the [`font`](../api/ejchart#members:legend-font)used for le
 
 ## legend font fontWeight
 
-[`FontWeight`] (../api/ejchart#members:legend-font-fontweight)for legend item text.
+[`Font weight`] (../api/ejchart#members:legend-font-fontweight)for legend item text.
 
 {% highlight javascript %}
 
@@ -639,7 +639,7 @@ Options to customize the [`font`](../api/ejchart#members:legend-title-font) used
 {% endhighlight %}
 
 ## legend title font fontStyle
-[`Fontstyle`](../api/ejchart#members:legend-title-font-fontstyle) for legend title
+[`Font style`](../api/ejchart#members:legend-title-font-fontstyle) for legend title
 
 {% highlight javascript %}
 
@@ -652,8 +652,8 @@ Options to customize the [`font`](../api/ejchart#members:legend-title-font) used
       
 {% endhighlight %}
 
-## legend title font fontweight
-[`Fontweight`](../api/ejchart#members:legend-title-font-fontweight) for legend title.
+## legend title font font weight
+[`Font weight`](../api/ejchart#members:legend-title-font-fontweight) for legend title.
 
 {% highlight javascript %}
 
@@ -666,7 +666,7 @@ Options to customize the [`font`](../api/ejchart#members:legend-title-font) used
       
 {% endhighlight %}
 
-## legend title font fontsize
+## legend title font font size
 
 [`Font-Size`](../api/ejchart#members:legend-title-font-size) for legend title.
 

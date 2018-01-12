@@ -419,7 +419,7 @@ The [`dPeriod`] (../api/ejchart#members:indicators-dperiod) value for stochastic
 
 ## Indicators enableAimation
 
-Enables/disables the [`animation`] (../api/ejchart#members:indicators-enableanimation)
+Enables/disables the [`enable animation`] (../api/ejchart#members:indicators-enableanimation)
 
 {% highlight javascript %}
 
@@ -434,7 +434,7 @@ Enables/disables the [`animation`] (../api/ejchart#members:indicators-enableanim
 
 ## Indicators AnimationDuration
 
-Specifies [`animationDuration`] (../api/ejchart#members:indicators-animationduration) for indicator rendering.
+Specifies [`animation duration`] (../api/ejchart#members:indicators-animationduration) for indicator rendering.
 
 {% highlight javascript %}
 
@@ -648,7 +648,7 @@ Specifies the [`short period`] (../api/ejchart#members:indicators-shortperiod)in
 {% endhighlight %}
 
 ## Indicators standardDeviations
-Specifies the [`standard deviation`] (../api/ejchart#members:indicators-standarddeviations) value for Bollinger band indicator.
+Specifies the [`standard deviations`] (../api/ejchart#members:indicators-standarddeviations) value for Bollinger band indicator.
 
 {% highlight javascript %}
 
@@ -769,9 +769,9 @@ Enables/disables the tooltip [`animation`](../api/ejchart#members:indicators-too
 
 {% endhighlight %}
 ## Indicators UpperLine
-Options to customize the [`upperline`](../api/ejchart#members:indicators-upperline) in indicators
+Options to customize the [`upper line`](../api/ejchart#members:indicators-upperline) in indicators
 ## Indicators UpperLine fill
-Fill color of the [`upperline`](../api/ejchart#members:indicators-upperline-fill) in indicators
+Fill color of the [`upper line`](../api/ejchart#members:indicators-upperline-fill) in indicators
 {% highlight javascript %}
 
 

@@ -183,7 +183,7 @@ Options to customize the [`border`](../api/ejchart#members:title-border) of the 
 
 ### title fontFamily
 
-[`Fontfamily`](../api/ejchart#members:title-font-fontfamily) for Chart title.
+[`Font family`](../api/ejchart#members:title-font-fontfamily) for Chart title.
 
 {% highlight javascript %}
 
@@ -199,7 +199,7 @@ Options to customize the [`border`](../api/ejchart#members:title-border) of the 
 
 ### title fontStyle
 
-[`Fontstyle`](../api/ejchart#members:title-font-fontstyle) for Chart title.
+[`Font style`](../api/ejchart#members:title-font-fontstyle) for Chart title.
 
 {% highlight javascript %}
 
@@ -214,7 +214,7 @@ Options to customize the [`border`](../api/ejchart#members:title-border) of the 
 
 ### title fontWeight
 
-[`Fontweight`](../api/ejchart#members:title-font-fontweight) for Chart title.
+[`Font weight`](../api/ejchart#members:title-font-fontweight) for Chart title.
 
 {% highlight javascript %}
 
@@ -257,8 +257,8 @@ Font [`size`](../api/ejchart#members:title-font-size) for Chart title.
 {% endhighlight %} 
 
 
-### title maximumwidth
-[`MaximumWidth`] (../api/ejchart#members:title-maximumwidth) of the title, when the title exceeds this width, the title gets trimmed, when enableTrim is true.
+### title maximum width
+[`Maximum width`] (../api/ejchart#members:title-maximumwidth) of the title, when the title exceeds this width, the title gets trimmed, when enableTrim is true.
 
 {% highlight javascript %}
 
@@ -271,8 +271,8 @@ Font [`size`](../api/ejchart#members:title-font-size) for Chart title.
 
 {% endhighlight %} 
 
-### title textoverflow
- [`textOverflow`] (../api/ejchart#members:title-textoverflow) Specifies the action taken when the Chart width is more than the titleWidth.
+### title text overflow
+ [`text overflow`] (../api/ejchart#members:title-textoverflow) Specifies the action taken when the Chart width is more than the titleWidth.
 
  {% highlight javascript %}
 
@@ -302,7 +302,7 @@ Font [`size`](../api/ejchart#members:title-font-size) for Chart title.
 
 ### title subtitle font fontStyle
 
-[`Fontstyle`] (../api/ejchart#members:title-subtitle-font-fontstyle)for sub title.
+[`font style`] (../api/ejchart#members:title-subtitle-font-fontstyle)for sub title.
 
 {% highlight javascript %}
 
@@ -317,7 +317,7 @@ Font [`size`](../api/ejchart#members:title-font-size) for Chart title.
 
 ### title subtitle font fontWeight
 
-[`Font weight`] (../api/ejchart#members:title-subtitle-font-fontweight)for sub title.
+[`font weight`] (../api/ejchart#members:title-subtitle-font-fontweight)for sub title.
 
 {% highlight javascript %}
 
@@ -347,7 +347,7 @@ Font [`size`](../api/ejchart#members:title-font-size) for Chart title.
 
 ### title subtitle font size
 
-[`Fontsize`](../api/ejchart#members:title-subtitle-font-size) for sub title.
+[`Font size`](../api/ejchart#members:title-subtitle-font-size) for sub title.
 
 {% highlight javascript %}
 
@@ -497,8 +497,8 @@ Controls the [`visibility`](../api/ejchart#members:title-subtitle-visible) of th
 
 {% endhighlight %} 
 
-### title subtitle maximumwidth
-[`Maximumwidth`](../api/ejchart#members:title-subtitle-maximumwidth) of the Subtitle, when the Subtitle exceeds this width, the Subtitle gets trimmed, when enableTrim is true.
+### title subtitle maximum width
+[`Maximum width`](../api/ejchart#members:title-subtitle-maximumwidth) of the Subtitle, when the Subtitle exceeds this width, the Subtitle gets trimmed, when enableTrim is true.
 
 {% highlight javascript %}
 
@@ -514,8 +514,8 @@ Controls the [`visibility`](../api/ejchart#members:title-subtitle-visible) of th
 
 {% endhighlight %} 
 
-### title subtitle textoverflow
-[`textoverflow`](../api/ejchart#members:title-subtitle-textOverflow) Specifies the action taken when the Chart width is more than the SubTitleWidth.
+### title subtitle text overflow
+[`text overflow`](../api/ejchart#members:title-subtitle-textOverflow) Specifies the action taken when the Chart width is more than the SubTitleWidth.
 
 {% highlight javascript %}
 
