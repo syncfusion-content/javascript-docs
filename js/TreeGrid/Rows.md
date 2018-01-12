@@ -14,11 +14,11 @@ The **TreeGrid** rows displays the information of each row from the bounded data
 
 ## Row Template
 
-Row template is used to customize the **TreeGrid** rows based on requirements. In TreeGrid, the [rowTemplateID](/api/js/ejtreegrid#members:rowtemplateid) and [altRowTemplateID](/api/js/ejtreegrid#members:altrowtemplateid) properties are used for customizing the row.
+Row template is used to customize the **TreeGrid** rows based on requirements. In TreeGrid, the [`rowTemplateID`](/api/js/ejtreegrid#members:rowtemplateid) and [`altRowTemplateID`](/api/js/ejtreegrid#members:altrowtemplateid) properties are used for customizing the row.
 
-The [rowTemplateID](/api/js/ejtreegrid#members:rowtemplateid) is used to customize all the rows in TreeGrid. For this property, ID of the row template is to be provided.
+The [`rowTemplateID`](/api/js/ejtreegrid#members:rowtemplateid) is used to customize all the rows in TreeGrid. For this property, ID of the row template is to be provided.
 
-The [altRowTemplateID](/api/js/ejtreegrid#members:altrowtemplateid) is used to customize the alternative rows in TreeGrid. For this property, ID of the alternative row template is to be provided.
+The [`altRowTemplateID`](/api/js/ejtreegrid#members:altrowtemplateid) is used to customize the alternative rows in TreeGrid. For this property, ID of the alternative row template is to be provided.
 
 {% highlight css %}
 
@@ -157,9 +157,9 @@ The output of TreeGrid with **Row Template** is as follows.
 
 ## Row Drag and Drop
 
-It is possible to dynamically re-arrange the rows in the TreeGrid control by using the [allowDragAndDrop](/api/js/ejtreegrid#members:allowdraganddrop) property. With this property, row drag and drop can be enabled or disabled. Rows can be inserted above, below as a sibling or as a child to the existing row with the help of this feature. A default tooltip is rendered while dragging the TreeGrid row and this tooltip can be customized by the [dragTooltip](/api/js/ejtreegrid#members:dragtooltip) property. This property has inner properties such as the [showTooltip](/api/js/ejtreegrid#members:dragtooltip-showtooltip "dragTooltip.showTooltip"), [tooltipItems](/api/js/ejtreegrid#members:dragtooltip-tooltipitems "dragTooltip.tooltipItems"), [tooltipTemplate](/api/js/ejtreegrid#members:dragtooltip-tooltiptemplate "dragTooltip.tooltipTemplate").
+It is possible to dynamically re-arrange the rows in the TreeGrid control by using the [`allowDragAndDrop`](/api/js/ejtreegrid#members:allowdraganddrop) property. With this property, row drag and drop can be enabled or disabled. Rows can be inserted above, below as a sibling or as a child to the existing row with the help of this feature. A default tooltip is rendered while dragging the TreeGrid row and this tooltip can be customized by the [`dragTooltip`](/api/js/ejtreegrid#members:dragtooltip) property. This property has inner properties such as the [`showTooltip`](/api/js/ejtreegrid#members:dragtooltip-showtooltip "dragTooltip.showTooltip"), [`tooltipItems`](/api/js/ejtreegrid#members:dragtooltip-tooltipitems "dragTooltip.tooltipItems"), [`tooltipTemplate`](/api/js/ejtreegrid#members:dragtooltip-tooltiptemplate "dragTooltip.tooltipTemplate").
 
-The [showTooltip](/api/js/ejtreegrid#members:dragtooltip-showtooltip "dragTooltip.showTooltip") property is used to enable or disable the tooltip. By default, this property value is `false`.
+The [`showTooltip`](/api/js/ejtreegrid#members:dragtooltip-showtooltip "dragTooltip.showTooltip") property is used to enable or disable the tooltip. By default, this property value is `false`.
 
 The following code explains about enabling the row drag and drop with the default tooltip in the TreeGrid.
 
@@ -191,7 +191,7 @@ The following screenshot depicts a row drag and drop in the TreeGrid widget.
 
 ### Customizing Drag tooltip
 
-The [tooltipItems](/api/js/ejtreegrid#members:dragtooltip-tooltipitems "dragTooltip.tooltipItems") property is used to customize the tooltip items. By using this property, specific fields can be rendered in the tooltip. By default this property value is `null`, and all the defined field items are rendered in the tooltip.
+The [`tooltipItems`](/api/js/ejtreegrid#members:dragtooltip-tooltipitems "dragTooltip.tooltipItems") property is used to customize the tooltip items. By using this property, specific fields can be rendered in the tooltip. By default this property value is `null`, and all the defined field items are rendered in the tooltip.
 
 The following code shows how to render row drag tooltip with the desired field items.
 
@@ -213,7 +213,7 @@ The following code shows how to render row drag tooltip with the desired field i
 
 {% endhighlight %}
 
-The [tooltipTemplate](/api/js/ejtreegrid#members:dragtooltip-tooltiptemplate "dragTooltip.tooltipTemplate") property renders the template tooltip for row drag and drop in the TreeGrid control by using the JsRender template. You can provide either the id value of the script element or the script element to the property.
+The [`tooltipTemplate`](/api/js/ejtreegrid#members:dragtooltip-tooltiptemplate "dragTooltip.tooltipTemplate") property renders the template tooltip for row drag and drop in the TreeGrid control by using the JsRender template. You can provide either the id value of the script element or the script element to the property.
 
 The following code shows how to render row drag tooltip with tooltip template.	
 
