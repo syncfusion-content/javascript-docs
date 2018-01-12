@@ -10,7 +10,7 @@ api: /api/js/ejtreegrid
 # TreeGrid Printing
 
 
-TreeGrid provides support to print the contents. To print the TreeGrid the print toolbar item must be added to the [toolbarSettings.toolbarItems](/api/js/ejgantt#members:toolbarsettings-toolbaritems) property. The below code example shows how to enable print in TreeGrid.
+TreeGrid provides support to print the contents. To print the TreeGrid the print toolbar item must be added to the [`toolbarItems`](/api/js/ejtreegrid#members:toolbarsettings-toolbaritems "toolbarSettings.toolbarItems") property. The below code example shows how to enable print in TreeGrid.
 
 {% highlight js %}
  
@@ -32,7 +32,7 @@ The print preview window will be opened by clicking on this toolbar icon.
 
 ## Print Mode
 
-It is possible to set the printMode in the [pageSettings](/api/js/ejgantt#members:pagesettings) property to give printing preference, as to print current page alone or all the pages in case of paging enabled in TreeGrid. The following code example explains this.
+It is possible to set the [`printMode`](/api/js/ejtreegrid#members:pagesettings-printmode "pageSettings.printMode") in the [`pageSettings`](/api/js/ejtreegrid#members:pagesettings) property to give printing preference, as to print current page alone or all the pages in case of paging enabled in TreeGrid. The following code example explains this.
 
 
 {% highlight js %}

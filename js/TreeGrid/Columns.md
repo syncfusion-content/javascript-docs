@@ -10,11 +10,11 @@ api: /api/js/ejtreegrid
 
 # Columns
 
-Column definitions specified in the [columns](/api/js/ejtreegrid#members:columns) option defines how the data in the **dataSource** have to be displayed, formatted and edited in TreeGrid. The values in the **dataSource** can be mapped to the appropriate column using the [field](/api/js/ejtreegrid#members:columns-field "columns.field") property of the corresponding column object.
+Column definitions specified in the [`columns`](/api/js/ejtreegrid#members:columns) option defines how the data in the **dataSource** have to be displayed, formatted and edited in TreeGrid. The values in the **dataSource** can be mapped to the appropriate column using the [`field`](/api/js/ejtreegrid#members:columns-field "columns.field") property of the corresponding column object.
 
 ## Formatting
 
-The values in each column can be formatted using the [format](/api/js/ejtreegrid#members:columns-format "columns.format") property of the column object.
+The values in each column can be formatted using the [`format`](/api/js/ejtreegrid#members:columns-format "columns.format") property of the column object.
 
 The following example shows how to specify the numeric format string to display currency, percentage symbols and date values in a column.
 
@@ -43,7 +43,7 @@ For more date format strings, please refer this [link](https://msdn.microsoft.co
 
 ### Header text
 
-Using the [headerText](/api/js/ejtreegrid#members:columns-headertext "columns.headerText") property, you can provide the title for a specific column. The below code snippet shows how to set header text for the columns.
+Using the [`headerText`](/api/js/ejtreegrid#members:columns-headertext "columns.headerText") property, you can provide the title for a specific column. The below code snippet shows how to set header text for the columns.
 
 {% highlight js %}
 
@@ -63,7 +63,7 @@ Using the [headerText](/api/js/ejtreegrid#members:columns-headertext "columns.he
 
 ### Text wrapping
 
-It is possible to wrap the header text or the title for the column, when the content exceeds the column width using the [headerTextOverflow](/api/js/ejtreegrid#members:headertextoverflow) property. By default this property is set to **none**. To enable wrapping of header text, you have to set the [headerTextOverflow](/api/js/ejtreegrid#members:headertextoverflow) property to **‘wrap’**. The below code snippet demonstrates this.
+It is possible to wrap the header text or the title for the column, when the content exceeds the column width using the [`headerTextOverflow`](/api/js/ejtreegrid#members:headertextoverflow) property. By default this property is set to **none**. To enable wrapping of header text, you have to set the [`headerTextOverflow`](/api/js/ejtreegrid#members:headertextoverflow) property to **‘wrap’**. The below code snippet demonstrates this.
 
 {% highlight js %}
 
@@ -76,7 +76,7 @@ It is possible to wrap the header text or the title for the column, when the con
 
 ### Header Template
 
-Using the [headerTemplateID](/api/js/ejtreegrid#members:columns-headertemplateid "columns.headerTemplateID") property, you can specify the Id of the script element, which contains the JsRender template, to the specific column.
+Using the [`headerTemplateID`](/api/js/ejtreegrid#members:columns-headertemplateid "columns.headerTemplateID") property, you can specify the Id of the script element, which contains the JsRender template, to the specific column.
 
 Following code snippet shows how to set the header template,
 
@@ -138,7 +138,7 @@ The below screenshot depicts column headers with custom templates.
 
 ## Frozen Columns
 
-Specific columns can be frozen by enabling the **columns.isFrozen** property of the respective column object. The columns which are frozen remain static while scrolling the content horizontally. You can also freeze or unfreeze a column during runtime, by selecting Freeze or Unfreeze menu item in the column menu. These set of menu options will be displayed in all the columns when the **columns.isFrozen** property is enabled in any of the columns. However you can control the visibility of these menu options in a particular column by enabling/disabling the [allowFreezing](/api/js/ejtreegrid#members:columns-allowfreezing "columns.allowFreezing") property of that specific column.
+Specific columns can be frozen by enabling the [`isFrozen`](/api/js/ejtreegrid#members:columns-isfrozen "columns.isFrozen") property of the respective column object. The columns which are frozen remain static while scrolling the content horizontally. You can also freeze or unfreeze a column during runtime, by selecting Freeze or Unfreeze menu item in the column menu. These set of menu options will be displayed in all the columns when the [`isFrozen`](/api/js/ejtreegrid#members:columns-isfrozen "columns.isFrozen") property is enabled in any of the columns. However you can control the visibility of these menu options in a particular column by enabling/disabling the [`allowFreezing`](/api/js/ejtreegrid#members:columns-allowfreezing "columns.allowFreezing") property of that specific column.
 
 {% highlight js %}
 
@@ -168,7 +168,7 @@ It is also possible to freeze all the preceding columns by choosing *Freeze Prec
 
 ## Resizing
 
-You can resize the column width to view the hidden text of the cell. This feature can be enabled by setting the [allowColumnResize](/api/js/ejtreegrid#members:allowcolumnresize) property to true.
+You can resize the column width to view the hidden text of the cell. This feature can be enabled by setting the [`allowColumnResize`](/api/js/ejtreegrid#members:allowcolumnresize) property to true.
 
 {% highlight js %}
 
@@ -182,7 +182,7 @@ You can resize the column width to view the hidden text of the cell. This featur
 
 ## Checkbox column 
 
-It is possible to display a column as checkbox column in TreeGrid by enabling the [displayAsCheckbox](/api/js/ejtreegrid#members:columns-displayascheckbox "columns.displayAsCheckbox") property and by setting the `editType` property as `Boolean` for the column .  If the `columns.displayAsCheckbox` property is set as false, then the column will be displayed as string column with the value mapped from the data source.
+It is possible to display a column as checkbox column in TreeGrid by enabling the [`displayAsCheckbox`](/api/js/ejtreegrid#members:columns-displayascheckbox "columns.displayAsCheckbox") property and by setting the `editType` property as `Boolean` for the column .  If the [`displayAsCheckbox`](/api/js/ejtreegrid#members:columns-displayascheckbox "columns.displayAsCheckbox") property is set as false, then the column will be displayed as string column with the value mapped from the data source.
 The following code snippet explains how to display a checkbox column in TreeGrid.
 
 {% highlight js %}
@@ -210,7 +210,7 @@ The below screen shot depicts the `Approved` column in TreeGrid displayed as a c
 
 Columns can be customized either by using JsRender templates or by AngularJS templates.
 
-Using the **columns.templateID** property, you can specify the Id of the script element, which contains the template for the column. However, you need to enable the [isTemplateColumn](/api/js/ejtreegrid#members:columns-istemplatecolumn "columns.isTemplateColumn") property for the specific column to display the custom template instead of default template.
+Using the [`templateID`](/api/js/ejtreegrid#members:columns-templateid "columns.templateID") property, you can specify the Id of the script element, which contains the template for the column. However, you need to enable the [`isTemplateColumn`](/api/js/ejtreegrid#members:columns-istemplatecolumn "columns.isTemplateColumn") property for the specific column to display the custom template instead of default template.
 
 Following code example show how to define template for the column.
 
@@ -250,13 +250,13 @@ Following code example show how to define template for the column.
 
 ## Column Menu
 
-Column menu can be displayed in column header by enabling the [showColumnChooser](/api/js/ejtreegrid#members:showcolumnchooser).
+Column menu can be displayed in column header by enabling the [`showColumnChooser`](/api/js/ejtreegrid#members:showcolumnchooser).
 
 Following are the items displayed in the column menu,
 
 * **Column Chooser** – Displays all the column names, you can enable or disable a column by selecting or deselecting the respective column name in the column chooser menu.
-* **Sort Ascending & Sort Descending** – Used to sort the items in the column. These menu options will be displayed only when you set the **allowSorting** property as true. To perform multilevel sorting, the **‘allowMultiSorting’** property should be enabled.
-* **Freeze, Unfreeze & Freeze Preceding Columns** – Used to freeze or unfreeze the columns. These set of menu options will be displayed in all the columns when the **columns.isFrozen** property is enabled in any of the columns. However, you can control the visibility of these menu options in a particular column by enabling/disabling the **columns.allowFreezing** property of that specific column.
+* **Sort Ascending & Sort Descending** – Used to sort the items in the column. These menu options will be displayed only when you set the [`allowSorting`](/api/js/ejtreegrid#members:allowsorting) property as true. To perform multilevel sorting, the [`allowMultiSorting`](/api/js/ejtreegrid#members:allowmultisorting) property should be enabled.
+* **Freeze, Unfreeze & Freeze Preceding Columns** – Used to freeze or unfreeze the columns. These set of menu options will be displayed in all the columns when the [`isFrozen`](/api/js/ejtreegrid#members:columns-isfrozen "columns.isFrozen") property is enabled in any of the columns. However, you can control the visibility of these menu options in a particular column by enabling/disabling the [`allowFreezing`](/api/js/ejtreegrid#members:columns-allowfreezing "columns.allowFreezing") property of that specific column.
 
 {% highlight js %}
 
@@ -282,8 +282,8 @@ Following are the items displayed in the column menu,
 
 ### Default action buttons
 
-Using command columns in TreeGrid, we can display a separate column to perform CRUD operations.It is also possible to perform any custom actions by using custom command buttons. Command column can be defined in TreeGrid using the [commands](/api/js/ejtreegrid#members:columns-commands "columns.commands") property.
-A command column can be customized by using [type](/api/js/ejtreegrid#members:columns-commands-type "columns.commands.type") and [buttonOptions](/api/js/ejtreegrid#members:columns-commands-buttonoptions "columns.commands.buttonOptions") properties.
+Using command columns in TreeGrid, we can display a separate column to perform CRUD operations.It is also possible to perform any custom actions by using custom command buttons. Command column can be defined in TreeGrid using the [`commands`](/api/js/ejtreegrid#members:columns-commands "columns.commands") property.
+A command column can be customized by using [`type`](/api/js/ejtreegrid#members:columns-commands-type "columns.commands.type") and [`buttonOptions`](/api/js/ejtreegrid#members:columns-commands-buttonoptions "columns.commands.buttonOptions") properties.
 
 * **type** – Using this property we can add required action buttons in TreeGrid command column such as edit, delete, save and cancel.
 * **buttonOptions** - Using this property we can customize the button in the command column with the properties available in the [ejButton](https://help.syncfusion.com/api/js/ejbutton#members "ejButton").
@@ -340,7 +340,7 @@ function onClick(args) {
 
 ## Changing position of expander column
 
-The position of the expander column which acts as tree column, can be changed using the [treeColumnIndex](/api/js/ejtreegrid#members:treecolumnindex) property.
+The position of the expander column which acts as tree column, can be changed using the [`treeColumnIndex`](/api/js/ejtreegrid#members:treecolumnindex) property.
 
 Following code example shows how to change the position of the expander column.
 
@@ -355,7 +355,7 @@ Following code example shows how to change the position of the expander column.
 
 ## Visibility
 
-Columns can be hidden on loading by setting the [visible](/api/js/ejtreegrid#members:columns-visible "columns.visible") property as false.
+Columns can be hidden on loading by setting the [`visible`](/api/js/ejtreegrid#members:columns-visible "columns.visible") property as false.
 
 Following code example explains how to hide the fourth column.
 
@@ -380,7 +380,7 @@ Following code example explains how to hide the fourth column.
 
 ## Read-only
 
-A column can be made read-only by setting the **columns.allowEditing** property as false.
+A column can be made read-only by setting the [`allowEditing`](/api/js/ejtreegrid#members:editsettings-allowediting "editSettings.allowEditing") property as false.
 
 N>
 By setting columns.allowEditing as false that specific column alone is made as read only, and by setting the editSettings.allowEditing as false the entire TreeGrid is made read-only.
@@ -405,7 +405,7 @@ The below code snippet demonstrates this.
 
 ## Validation Rules
 
-At some occasions, we will need to validate the data before updating it to the database. In TreeGrid it is possible to validate the data while performing adding and editing actions. The validation rules must be provided in the column definition using [validationRules](/api/js/ejtreegrid#members:columns-validationrules "columns.validationRules") property. TreeGrid has built-in support for the below validation rules.
+At some occasions, we will need to validate the data before updating it to the database. In TreeGrid it is possible to validate the data while performing adding and editing actions. The validation rules must be provided in the column definition using [`validationRules`](/api/js/ejtreegrid#members:columns-validationrules "columns.validationRules") property. TreeGrid has built-in support for the below validation rules.
 
 * **maxlength** – Makes the value require a given maximum text length.
 * **minlength** – Makes the value require a given minimum text length.
