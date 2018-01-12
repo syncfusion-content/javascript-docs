@@ -12,7 +12,7 @@ Gantt add and edit dialogs groups the data sources fields in five different tabs
 
 ![](/js/Gantt/How-to/Change-Custom-Fields_images/dialog_all_tab.png)
 
-The custom fields are usually displayed in `Custom Fields` tab, but it is also possible to display the custom fields in general tab using `displayInGeneralTab` property in Gantt. By default, its value is false.
+The custom fields are usually displayed in `Custom Fields` tab, but it is also possible to display the custom fields in general tab using [`displayInGeneralTab`](/api/js/ejgantt#members:editdialogfields-displayingeneraltab "editDialogFields.displayInGeneralTab") property in Gantt. By default, its value is `false`.
 The following code example explains how to display custom fields in general tab
 
 {% highlight javascript %}
