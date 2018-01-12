@@ -532,7 +532,7 @@ The following output is displayed as a result of the above code example.
 I> The HTML Table element is the only valid element when using HTML Table binding. Using other elements will throws an exception.
 
 
-## Miscellaneous APIs
+## Miscellaneous
 
 To collect the details related to the current view data and to refresh the Grid from external actions, Grid provides following methods. 
 
@@ -559,13 +559,13 @@ To collect the details related to the current view data and to refresh the Grid 
 		$("#columnName").ejDropDownList({
 			watermarkText: "Select Methods",
 			change: function(args){
-				if(args.selectedText == "dataSource") $("#Grid").ejGrid(args.selectedText, window.gridData.slice(0,5));
+				if(args.selectedText == "dataSource") $("#Grid").ejGrid("dataSource", window.gridData.slice(0,5));
 				else if(args.selectedText == "refreshContent") { 
 					var obj = $("#Grid").ejGrid("instance")
 					obj.model.columns.splice(3,1)
-					obj[args.selectedText]($("#check").is(":checked"));
+					obj.refreshContent($("#check").is(":checked"));
 				}
-				else $("#cols").val(JSON.stringify($("#Grid").ejGrid(args.selectedText)));
+				else $("#cols").val(JSON.stringify($("#Grid").ejGrid("getCurrentViewData")));
 			}
 		});
         $(function () {
