@@ -1683,7 +1683,7 @@ To create a Pyramid chart, you can specify the series [`type`](../api/ejchart#me
 
 ### Pyramid Mode
 
-Pyramid mode has two types, *linear* and *surface* respectively. The default **"pyramidMode"** type is "linear".
+[`Pyramid mode`](../api/ejchart#members:series-pyramidmode) has two types, *linear* and *surface* respectively. The default **"pyramidMode"** type is "linear".
 
 {% highlight javascript %}
 
@@ -1919,7 +1919,7 @@ To create a Scatter chart, you can set the series [`type`](../api/ejchart#member
 
 ### Customize the scatter chart
 
-You can change the scatter size by using the [`size`](../api/ejchart#members:series-marker-size) property of the series marker. And you can change the scatter color by using the series [`fill`](../api/ejchart#members:series-fill) property. 
+You can change the scatter size [`height`](../api/ejchart#members:series-marker-size-height) and [`width`](../api/ejchart#members:series-marker-size-width) by using the [`size`](../api/ejchart#members:series-marker-size) property of the series marker. And you can change the scatter color by using the series [`fill`](../api/ejchart#members:series-fill) property. 
 
 {% highlight javascript %}
 
@@ -2317,7 +2317,7 @@ By using the [`isStacking`](../api/ejchart#members:series-isstacking) property, 
 
 ## Waterfall Chart 
 
-For rendering a Waterfall chart, set series [`type`](../api/ejchart#members:series-type) as **"waterfall"** in the chart series. To change the waterfall series segment color use [`fill`](../api/ejchart#members:series-fill) option of series and use [`positiveFill`](../api/ejchart#members:series-positiveFill) property to differentiate the positive segments.
+For rendering a Waterfall chart, set series [`type`](../api/ejchart#members:series-type) as **"waterfall"** in the chart series. To change the waterfall series segment color use [`fill`](../api/ejchart#members:series-fill) option of series and use [`positiveFill`](../api/ejchart#members:series-positivefill) property to differentiate the positive segments.
 
 N> The inline property of the **series.positiveFill** has the first priority and override the **series.fill**.
 
@@ -2404,7 +2404,7 @@ The sum of all previous point in the waterfall series is displayed on enabling t
 
 ### ConnectorLine
 
-To customize the connector line color, width, opacity and dashArray of the waterfall series, you can use [`connectorLine`](../api/ejchart#members:series-connectorline) option of series.
+To customize the connector line [`color`](../api/ejchart#members:series-connectorline-color), [`width`](../api/ejchart#members:series-connectorline-width), [`opacity`](../api/ejchart#members:series-connectorline-opacity) and [`dashArray`](../api/ejchart#members:series-connectorline-dasharray) of the waterfall series, you can use [`connectorLine`](../api/ejchart#members:series-connectorline) option of series.
 
 {% highlight javascript %}
 
@@ -2579,7 +2579,9 @@ You can change the error bar direction to plus, minus or both side using [`error
 
 ### Customizing Error bar cap
 
-To customize the error bar cap [`visibility`](../api/ejchart#members:series-errorBar-cap-visible), [`length`](../api/ejchart#members:series-errorBar-cap-length), [`width`](../api/ejchart#members:series-errorBar-cap-width) and [`fill`](../api/ejchart#members:series-errorBar-cap-fill) color, you can use [`cap`](../api/ejchart#members:series-errorBar-cap) option in the **series.errorBar**.
+To customize the error bar cap [`visibility`](../api/ejchart#members:series-errorbar-cap-visible), [`length`](../api/ejchart#members:series-errorbar-cap-length), [`width`](../api/ejchart#members:series-errorbar-cap-width) and [`fill`](../api/ejchart#members:series-errorbar-cap-fill) color, you can use [`cap`](../api/ejchart#members:series-errorbar-cap) option in the series [`errorBar`](../api/ejchart#members:series-errorbar).
+
+The [`visibility`](../api/ejchart#members:series-errorbar-visibility) property is used to enable errorBar. Other properties like [`type`](../api/ejchart#members:series-errorbar-type), [`mode`](../api/ejchart#members:series-errorbar-mode), [`direction`](../api/ejchart#members:series-errorbar-direction), [`verticalErrorValue`](../api/ejchart#members:series-errorbar-verticalerrorvalue), [`horizontalErrorValue`](../api/ejchart#members:series-errorbar-horizontalerrorvalue), [`verticalPositiveErrorValue`](../api/ejchart#members:series-errorbar-verticalpositiveerrorvalue), [`verticalNegativeErrorValue`](../api/ejchart#members:series-errorbar-verticalnegativeerrorvalue), [`horizontalPositiveErrorValue`](../api/ejchart#members:series-errorbar-horizontalpositiveerrorvalue), [`horizontalNegativeErrorValue`](../api/ejchart#members:series-errorbar-horizontalnegativeerrorvalue), [`fill`](../api/ejchart#members:series-errorbar-fill) and [`width`](../api/ejchart#members:series-errorbar-width) can also be used to customize the series errorBar.
 
 {% highlight javascript %}
 
@@ -2678,7 +2680,7 @@ Box and Whisker [`showMedian`](../api/ejchart#members:series-showmedian) propert
 
 ###  Customize the Outlier
 
-Outlier symbol, width and height can be  customized using [`shape`](../api/ejchart#members:series-outliersettings-shape),[`size`](../api/ejchart#members:series-outliersettings-size) properties of  [`outlierSettings`](../api/ejchart#members:series-outliersettings). By default Outlier symbol is displayed as circle with a height and width of 6 pixels.
+Outlier symbol, width and height can be  customized using [`shape`](../api/ejchart#members:series-outliersettings-shape),[`size`](../api/ejchart#members:series-outliersettings-size) properties of  [`outlierSettings`](../api/ejchart#members:series-outliersettings). By default Outlier symbol is displayed as circle with a [`height`](../api/ejchart#members:series-outliersettings-size-height) and [`width`](../api/ejchart#members:series-outliersettings-size-width) of 6 pixels.
 
 {% highlight javascript %}
 
@@ -2736,7 +2738,7 @@ series: [{
 
 ### Split Mode and Split Value 
 
-The points to be displayed in the second pie is decided based on the [`splitMode`](../api/ejchart#members:series-splitmode) property.**SplitMode** property takes the following values. 
+The points to be displayed in the second pie is decided based on the [`splitMode`](../api/ejchart#members:series-splitmode) and [`splitValue`](../api/ejchart#members:series-splitvalue) property.**SplitMode** property takes the following values. 
 * Position – Have to split the data points based on its position
 * Value – Have to split the data points based on its Y value
 * Percentage – Have to split the points based on the percentage value

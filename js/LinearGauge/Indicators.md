@@ -180,7 +180,7 @@ Linear Gauge with indicator state ranges
 
 The [`backgroundColor`](../api/ejlineargauge#members:scales-indicators-stateranges-backgroundcolor) and [`borderColor`](../api/ejlineargauge#members:scales-indicators-stateranges-bordercolor) sets the appearance behavior for the indicators. You can apply this only if it lies within the state ranges. Otherwise default behavior will be applied.
 
-The indicator border is modified with the border object. It contains two [`border`](../api/ejlineargauge#members:scales-indicators-border) property namely [`color`](../api/ejlineargauge#members:scales-indicators-border-color) and [`width`](../api/ejlineargauge#members:scales-indicators-border-width) which are used to customize the border color of the indicator and border width of the indicator pointer.
+The indicator border is modified with the border object. It contains two [`border`](../api/ejlineargauge#members:scales-indicators-border) property namely [`color`](../api/ejlineargauge#members:scales-indicators-border-color) and [`width`](../api/ejlineargauge#members:scales-indicators-border-width) which are used to customize the border [`color`](../api/ejlineargauge#members:scales-indicators-backgroundcolor) of the indicator and border width of the indicator pointer.
 
 {% highlight html %}
 

@@ -14,9 +14,9 @@ Options like zooming, panning, and map selection enables the effective interacti
 
 ## Map Selection
 
-Each shape in the Map can be selected and deselected during interaction with the shapes. 
+Each shape in the [`Map`](../api/ejmap#members:layers-showmapitems) can be selected and deselected during interaction with the shapes. 
 
-The [`selectionColor`](../api/ejmap#members:layers-shapesettings-selectioncolor) property is used to get or set the selected shape color. The [`selectionStroke`](../api/ejmap#members:layers-shapesettings-selectionstroke) and [`selectionStrokeWidth`](../api/ejmap#members:layers-shapesettings-selectionstrokewidth) properties are used to customize the selected shape border.
+The [`selectionColor`](../api/ejmap#members:layers-shapesettings-selectioncolor) property is used to get or set the selected shape color. The [`selectionStroke`](../api/ejmap#members:layers-shapesettings-selectionstroke) and [`selectionStrokeWidth`](../api/ejmap#members:layers-shapesettings-selectionstrokewidth) properties are used to customize the [`selected shape`](../api/ejmap#members:layers-selectedmapshapes) border.
 
 You can select the shape by tapping the shape. The Single selection is enabled by the [`enableSelection`](../api/ejmap#members:layers-enableselection) property of shape layer. When [`enableSelection`](../api/ejmap#members:layers-enableselection) is set to false, the shapes cannot be selected. 
 
@@ -473,8 +473,7 @@ $("#Map").ejMap({
 
 ## Localization
 
-Name of the culture based on which map should be localized. Labels are localized with respect to the culture name.
-String type properties like template text are not localized automatically. Provide localized text as value to string type properties.
+Name of the culture based on which map should be [`localized`](../api/ejmap#members:locale). Labels are localized with respect to the culture name.String type properties like template text are not localized automatically. Provide localized text as value to string type properties.
 
 {% highlight javascript %}
 
