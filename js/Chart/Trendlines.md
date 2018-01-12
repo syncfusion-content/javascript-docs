@@ -287,3 +287,45 @@ To display the legend item for trendline, use the [`name`](../api/ejchart#member
 {% endhighlight %}
 
 ![](/js/Chart/Trendlines_images/Trendlines_img11.png)
+
+## Trendlines Intercept and visibleOnLegend
+
+The trendline intercept value can be provided using [`intercept`](../api/ejchart#members:series-trendlines-intercept) property. The [`visibleOnLegend`](../api/ejchart#members:series-trendlines-visibleonlegend) shows/hides the trendline legend.
+
+{% highlight javascript %}
+
+    $("#container").ejChart({
+        series :[{ 
+          trendlines:[{ 
+              intercept : 10,
+              visibleOnLegend:'hidden'
+          }]
+        }]                 
+    });
+
+{% endhighlight %}
+
+## Trendlines Tooltip
+
+The trendline [`tooltip`](../api/ejchart#members:series-trendlines-tooltip) can be customized using options like [`color`](../api/ejchart#members:series-trendlines-tooltip-border-color) and [`width`](../api/ejchart#members:series-trendlines-tooltip-border-width) of [`border`](../api/ejchart#members:series-trendlines-tooltip-border), [`rx`](../api/ejchart#members:series-trendlines-tooltip-rx), [`ry`](../api/ejchart#members:series-trendlines-tooltip-ry), [`duration`](../api/ejchart#members:series-trendlines-tooltip-duration), [`enableAnimation`](../api/ejchart#members:series-trendlines-tooltip-enableanimation), [`fill`](../api/ejchart#members:series-trendlines-tooltip-fill), [`format`](../api/ejchart#members:series-trendlines-tooltip-format) and [`opacity`](../api/ejchart#members:series-trendlines-tooltip-opacity).
+
+{% highlight javascript %}
+
+    $("#container").ejChart({        
+          series :[{ 
+              trendlines:[{ 
+                  tooltip :{
+                      border:{ color : "green", width : 2 },
+                      rx: 10,
+                      ry: 10,
+                      duration : "300ms",
+                      enableAnimation : false,
+                      fill : "green",
+                      format : "#point.x# : #point.y#%",
+                      opacity : 0.5
+                  } 
+              }]
+          }]                  
+    });
+
+{% endhighlight %}

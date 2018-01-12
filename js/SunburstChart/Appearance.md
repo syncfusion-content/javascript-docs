@@ -73,3 +73,17 @@ background: "grey",
    });
 
 {% endhighlight %}
+
+### Responsiveness during browser resize
+
+Sunburst chart is made responsive when resizing the browser by using [`isResponsive`](../api/ejsunburstchart#members:isresponsive) property.
+
+{% highlight js %}
+
+$("#chart"). ejSunburstChart ({
+
+   isResponsive:true,
+   
+   });
+
+{% endhighlight %}

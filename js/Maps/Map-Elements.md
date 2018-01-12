@@ -24,7 +24,7 @@ There are two ways to set marker for map.
 
 ### Markers and Marker Template 
 
-The [`markers`](../api/ejmap#members:layers-markers) property has a list of objects that contains the data for Annotation. By default, it displays the bound data at the specified latitude and longitude. The [`markerTemplate`](../api/ejmap#members:layers-markertemplate) property is used for customizing the template for markers.	
+The [`markers`](../api/ejmap#members:layers-markers) property has a list of objects that contains the data for Annotation. By default, it displays the bound data at the specified latitude and longitude. The [`markerTemplate`](../api/ejmap#members:layers-markertemplate) property is used for customizing the [`template`](../api/ejmap#members:layers-mapitemstemplate) for markers.	
 
 {% highlight javascript %}
 
@@ -232,7 +232,7 @@ The legend can be positioned in two ways.
 
 #### Absolute Position
 
-Based on the margin values of X and Y-axes, the Map legends can be positioned with the support of [`positionX`](../api/ejmap#members:layers-legendsettings-positionx) and [`positionY`](../api/ejmap#members:layers-legendsettings-positiony) properties available in [`legendSettings`]. For positioning the legend based on margins corresponding to a map, [`position`](../api/ejmap#members:layers-legendsettings-position) value is set as ‘_none_’.
+Based on the margin values of X and Y-axes, the Map legends can be positioned with the support of [`positionX`](../api/ejmap#members:layers-legendsettings-positionx) and [`positionY`](../api/ejmap#members:layers-legendsettings-positiony) properties available in `legendSettings`. For positioning the legend based on margins corresponding to a map, [`position`](../api/ejmap#members:layers-legendsettings-position) value is set as ‘_none_’.
 
 #### Dock Position
 
