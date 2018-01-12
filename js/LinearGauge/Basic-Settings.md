@@ -74,7 +74,7 @@ Execute the above code to render the following output.
 
 * Frame is the element that decides the appearance of the **Linear Gauge**. You can customize it by using the object called **frame.** It contains frame inner width, frame outer width and frame background image URL properties. 
 
-* The [`innerWidth`](../api/ejlineargauge#members:frame-innerwidth) of the frame defines the distance between the canvas element and the frame and the [`outerWidth`](../api/ejlineargauge#members:frame-outerwidth) refers to distance from the frame. [`backgroundImageUrl`](../api/ejlineargauge#members:frame-backgroundimageurl) is used to set the background image for the frame.
+* The [`innerWidth`](../api/ejlineargauge#members:frame-innerwidth) of the [`frame`](../api/ejlineargauge#members:frame) defines the distance between the canvas element and the frame and the [`outerWidth`](../api/ejlineargauge#members:frame-outerwidth) refers to distance from the frame. [`backgroundImageUrl`](../api/ejlineargauge#members:frame-backgroundimageurl) is used to set the background image for the frame.
 
 
 {% highlight html %}

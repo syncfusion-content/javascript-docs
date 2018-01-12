@@ -302,3 +302,18 @@ $("#CircularGauge1").ejCircularGauge({
 
 {% endhighlight %}
 
+You can select a specific range while clicking on the corresponding legend item through disabling the [`toggleVisibility`](../api/ejcirculargauge#members:legend-togglevisibility) option of the legend. The default value of toggleVisibility option is **true**. 
+
+{% highlight javascript %}
+
+ $("#CircularGauge1").ejCircularGauge({   
+            // ...
+            legend: { 
+                  //Disable ranges collapsing on legend item clicked
+                   toggleVisibility: false,
+            }
+            // ...             
+        });
+             
+{% endhighlight %}
+
