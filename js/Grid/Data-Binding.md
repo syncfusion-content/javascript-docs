@@ -584,7 +584,8 @@ To collect the details related to the current view data and to refresh the Grid 
 		  });
 {% endhighlight %}
 
-N> If the argument is set to true in the refreshContent([argument]]), it will refresh the Grid content along with the template else only grid content is refreshed.
+N> If the argument is set to true in the refreshContent([argument]]), it will refresh the Grid content along with the template else only grid content is refreshed. To refresh the template alone,  [`refreshTemplate`](https://help.syncfusion.com/api/js/ejgrid#methods:refreshtemplate "refreshTemplate") can be used.
+N> To refresh the header of the Grid alone,  [`refreshHeader`](https://help.syncfusion.com/api/js/ejgrid#methods:refreshheader "refreshHeader") can be used.
 
 The following output is displayed as a result of the above code example.
 
