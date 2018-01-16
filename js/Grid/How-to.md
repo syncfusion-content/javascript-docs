@@ -195,6 +195,7 @@ The following output is displayed as a result of the above code example.
 
 Grid provides different Methods such as [`clearSorting`](https://help.syncfusion.com/api/js/ejgrid#methods:clearsorting "clearSorting"), [`clearFiltering`](https://help.syncfusion.com/api/js/ejgrid#methods:clearfiltering "clearFiltering") for clearing the respective models [`filterSettings.filteredColumns`](https://help.syncfusion.com/api/js/ejgrid#members:filtersettings-filteredcolumns "filteredColumns") and [`sortSettings.sortedColumns`](https://help.syncfusion.com/api/js/ejgrid#members:sortsettings-sortedcolumns "sortedColumns"). To set all these models to default value, Grid provides a [`resetModelCollections`](https://help.syncfusion.com/api/js/ejgrid#methods:resetmodelcollections "resetModelCollections") method. 
 
+`resetModelCollections` will clear the grouping, sorting and filtering and it will set the current page to first page. 
 
 {% tabs %}
 {% highlight html %}
@@ -259,3 +260,7 @@ Grid provides different Methods such as [`clearSorting`](https://help.syncfusion
 {% endhighlight %}
 
 {% endtabs %}
+
+
+The following output is displayed as a result of the above code example.
+![](externalsearch_images/ResetModel.png)
