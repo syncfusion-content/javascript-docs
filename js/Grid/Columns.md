@@ -547,6 +547,8 @@ We can get the visible or hidden column details by using the following methods,
 1. [`getVisibleColumnNames`](https://help.syncfusion.com/api/js/ejgrid#methods:getvisiblecolumnnames "getVisibleColumnNames")
 2. [`getHiddenColumnNames`](https://help.syncfusion.com/api/js/ejgrid#members:columns-field "getHiddenColumnNames") 
 
+Here, we hide the `CustomerID` column using the [`hideColumns`](https://help.syncfusion.com/api/js/ejgrid#methods:hidecolumns "hideColumns") method.
+
 The following code example describes the above behavior. 
 
 {% highlight html %}
@@ -1180,11 +1182,18 @@ To control the grid column actions externally use the following methods,
 5. [`getFieldNameByHeaderText`](https://help.syncfusion.com/api/js/ejgrid#methods:getfieldnamebyheadertext "getFieldNameByHeaderText")
 6. [`getHeaderTextByFieldName`](https://help.syncfusion.com/api/js/ejgrid#methods:getheadertextbyfieldname "getHeaderTextByFieldName") 
 
+Here, we changed the Freight column css by using the [`getColumnByIndex`](https://help.syncfusion.com/api/js/ejgrid#methods:getcolumnbyindex "getColumnByIndex")
+
 The following code example describes the above behavior.
 
 {% highlight html %}
 <body>
 <input  type ="text" id='txtVal' > Enter Column/Index</input>
+<style>
+.style{
+  color:green;
+}
+</style>
 <div>
         <select name="selectIndex"style="width:100px" id="dropdown">
                 <option value="getColumnByIndex">getColumnByIndex</option>
@@ -1196,12 +1205,6 @@ The following code example describes the above behavior.
         </select>
 </div>
 <button onclick="methods()" >Click</button></br><br/>
-<div class="col-md-3">
-Details
-</div>
-<div class ="area">
-<textarea id="details" class="ejinputtext" style="width: 300px;height:80px;position:inline" readonly="readonly"></textarea>
-</div>
 <div id="Grid"></div>
 {% endhighlight %}
 
@@ -1222,7 +1225,11 @@ $(function () {
 });
 function methods(){
     var option= $("#dropdown_input").val(), gridObj=$("#Grid").ejGrid("instance"), val = $('#txtVal').val();
-    $("#details").val(JSON.stringify(gridObj[option](val))); // Get the details based upon the method seleted
+    if(option=="getColumnByIndex"){
+        var newfield=obj.getColumnByIndex(val)
+        newfield.cssClass = "style";
+        obj.refreshContent(true);
+    }
 };
 {% endhighlight %}
 
