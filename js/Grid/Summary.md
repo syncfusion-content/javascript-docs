@@ -248,7 +248,7 @@ Summaries with Prefix and Suffix can be added using the [`summaryColumns.prefix`
 </script>
 {% endhighlight %}
 
-![](Summary_images/summaryGrid_img8.png)
+![](Summary_images/summaryGrid_img9.png)
 
 ## Title for Summary
 
@@ -285,7 +285,7 @@ Title name of any summary value can be change using [`title`](https://help.syncf
 </script>
 {% endhighlight %}
 
-![](Summary_images/summaryGrid_img9.png)
+![](Summary_images/summaryGrid_img10.png)
 
 ## Group Summary
 
