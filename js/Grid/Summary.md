@@ -41,6 +41,9 @@ Summary rows visibility can be controlled by the [`showSummary`](https://help.sy
 </script>
 {% endhighlight %}
 
+N> [`dataMember`](https://help.syncfusion.com/api/js/ejgrid#members:summaryrows-summarycolumns-datamember "dataMember") denotes the aggregation column whereas the [`displayColumn`](https://help.syncfusion.com/api/js/ejgrid#members:summaryrows-summarycolumns-displaycolumn "displayColumn") denotes the value to be displayed column.
+
+
 ![](Summary_images/summaryGrid_img1.png)
 
 
@@ -167,7 +170,7 @@ Summaries with `True` and `False` count aggregate can be defined by using [`summ
 
 ## Custom Summary
 
-Custom Summary can be used to create summary values based on your required custom logic and calculations. To enable Custom Summary, [`summaryType`](https://help.syncfusion.com/api/js/ejgrid#members:summaryrows-summarycolumns-summarytype "summaryType") should be [`custom`](https://help.syncfusion.com/js/grid/summary#custom-summary-by-string "custom") and `value` property need to define as function. In this property `value` function, you need to use Grid instance to access the `model.dataSource` and `model.currentViewData`. After the custom calculation, the returned value will be displayed in corresponding Summary cell.
+Custom Summary can be used to create summary values based on your required custom logic and calculations. To enable Custom Summary, [`summaryType`](https://help.syncfusion.com/api/js/ejgrid#members:summaryrows-summarycolumns-summarytype "summaryType") should be [`custom`](https://help.syncfusion.com/js/grid/summary#custom-summary-by-string "custom") and [`customSummaryValue`](https://help.syncfusion.com/api/js/ejgrid#members:summaryrows-summarycolumns-customsummaryvalue "customSummaryValue") property need to define as function. In this property `value` function, you need to use Grid instance to access the `model.dataSource` and `model.currentViewData`. After the custom calculation, the returned value will be displayed in corresponding Summary cell.
 
 
 {% highlight html %}
@@ -209,6 +212,80 @@ Custom Summary can be used to create summary values based on your required custo
 
 ![](Summary_images/summaryGrid_img4.png)
 
+## Prefix And Suffix
+
+Summaries with Prefix and Suffix can be added using the [`summaryColumns.prefix`](https://help.syncfusion.com/api/js/ejgrid#members:summaryrows-summarycolumns-prefix "summaryColumns.prefix") and summaryColumn.suffix [`summaryColumns.suffix`](https://help.syncfusion.com/api/js/ejgrid#members:summaryrows-summarycolumns-suffix "summaryColumns.suffix").
+
+{% highlight html %}
+
+<div id="Grid"></div>
+<script type="text/javascript">
+  $("#Grid").ejGrid({
+     // the datasource "window.gridData" is referred from jsondata.min.js
+      dataSource: window.gridData,
+      showSummary: true,
+      summaryRows: [{
+          title: "Sum",
+          summaryColumns: [{
+              summaryType: ej.Grid.SummaryType.Sum,
+              displayColumn: "Freight",
+              dataMember: "Freight",
+              format: "{0:C2}",
+              prefix: "Summation = ", 
+              suffix: " in US"
+          }]
+      }],
+      allowPaging: true,
+      columns: [
+          { field: "OrderID", headerText: "Order ID", isPrimaryKey: true, textAlign: ej.TextAlign.Right, width: 80 },
+          {field: "EmployeeID",headerText: "Employee ID",editType: ej.Grid.EditingType.NumericEdit,textAlign: ej.TextAlign.Right,width: 80 },
+          {field: "ShipCity",headerText: "Ship City",width: 90},
+          {field: "ShipCountry",headerText: "Ship Country", width: 100},
+          { field: "Freight", headerText: "Freight", textAlign: ej.TextAlign.Right, width: 80, format: "{0:C}" }
+      ]
+  });
+  
+</script>
+{% endhighlight %}
+
+![](Summary_images/summaryGrid_img8.png)
+
+## Title for Summary
+
+Title name of any summary value can be change using [`title`](https://help.syncfusion.com/api/js/ejgrid#members:summaryrows-title "title") property of [`summaryColumns`](https://help.syncfusion.com/api/js/ejgrid#members:summaryrows-summarycolumns "summaryColumns"). Title displaying column can also be alter using the [`titleColumn`](https://help.syncfusion.com/api/js/ejgrid#members:summaryrows-titlecolumn "titleColumn").
+
+{% highlight html %}
+
+<div id="Grid"></div>
+<script type="text/javascript">
+  $("#Grid").ejGrid({
+     // the datasource "window.gridData" is referred from jsondata.min.js
+      dataSource: window.gridData,
+      showSummary: true,
+      summaryRows: [{
+          title: "Summation",
+          titleColumn: "EmployeeID",
+          summaryColumns: [{
+              summaryType: ej.Grid.SummaryType.Sum,
+              displayColumn: "Freight",
+              dataMember: "Freight",
+              format: "{0:C2}"
+          }]
+      }],
+      allowPaging: true,
+      columns: [
+          { field: "OrderID", headerText: "Order ID", isPrimaryKey: true, textAlign: ej.TextAlign.Right, width: 80 },
+          {field: "EmployeeID",headerText: "Employee ID",editType: ej.Grid.EditingType.NumericEdit,textAlign: ej.TextAlign.Right,width: 80 },
+          {field: "ShipCity",headerText: "Ship City",width: 90},
+          {field: "ShipCountry",headerText: "Ship Country", width: 100},
+          { field: "Freight", headerText: "Freight", textAlign: ej.TextAlign.Right, width: 80, format: "{0:C}" }
+      ]
+  });
+  
+</script>
+{% endhighlight %}
+
+![](Summary_images/summaryGrid_img9.png)
 
 ## Group Summary
 
@@ -305,7 +382,7 @@ W> Minimum one column should be grouped to show summary details.
 
 ## Summary Template
 
-Using the `template` property of `summaryColumns` you can render any type of JsRender templates or customizing the summary value.
+Using the [`template`](https://help.syncfusion.com/api/js/ejgrid#members:summaryrows-summarycolumns-template "template") property of `summaryColumns` you can render any type of JsRender templates or customizing the summary value.
 
 The following code example describes the above behavior.
 
