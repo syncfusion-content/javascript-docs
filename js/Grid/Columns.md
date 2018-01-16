@@ -403,6 +403,8 @@ The [`allowResizeToFit`](https://help.syncfusion.com/api/js/ejgrid#members:allow
 
 On columns where "width is defined", double click on the particular column header's resizer symbol to resize the column to show the whole text. For example, refer to the "ShipCity" column in the below code snippet and output screen shot. 
 
+By default the resize mode is normal, you can change the resize mode by using property [`resizeSettings.resizeMode `](https://help.syncfusion.com/api/js/ejgrid#members:resizesettings-resizemode "resizeSettings.resizeMode").
+
 The following code example describes the above behavior. 
 
 {% highlight html %}
@@ -533,7 +535,7 @@ The following output is displayed as a result of the above code example.
 
 ![](columns_images/columns_img11.png)
 
-# columnVisibility customization by external action
+# Columnvisibility customization by external action
 
 We can show or hide the grid columns externally by using the following methods,
 
@@ -1219,8 +1221,8 @@ $(function () {
     });
 });
 function methods(){
-    var option= $("#dropdown_input").val(), obj=$("#Grid").ejGrid("instance"), val = $('#txtVal').val();
-    $("#details").val(JSON.stringify(obj[option](val)));
+    var option= $("#dropdown_input").val(), gridObj=$("#Grid").ejGrid("instance"), val = $('#txtVal').val();
+    $("#details").val(JSON.stringify(gridObj[option](val))); // Get the details based upon the method seleted
 };
 {% endhighlight %}
 
