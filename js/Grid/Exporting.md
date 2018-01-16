@@ -269,6 +269,16 @@ Following are the list of properties that are excluded during grid export, to re
 * enableRTL
 * cssClass
 
+To ignore the additional desired grid  properties on exporting use  [`addIgnoreOnExport `](https://help.syncfusion.com/api/js/ejgrid#methods:addignoreonexport "addIgnoreOnExport ") method. Here we ignored fitlerSettings so while exporting it will be exported without filtering applied.
+
+The snippet for this is.
+
+{% highlight javascript %}
+
+var grid = $('#Grid').ejGrid('instance');
+grid.addIgnoreOnExport("filterSettings");
+
+{% endhighlight %}
 
 ## Export only visible records
 
@@ -335,19 +345,6 @@ private GridProperties ConvertGridProperties(string gridProperty)
 	return gridProp;
 }
 
-
-{% endhighlight %}
-
-# Ignore some Grid properties while Exporting
-
-By default few grid model properties are ignored while exporting, To ignore the desire grid model properties on exporting use  [`addIgnoreOnExport `](https://help.syncfusion.com/api/js/ejgrid#methods:addignoreonexport "addIgnoreOnExport ") method. And also, here we ignored fitlerSettings so while exporting it will be exported without filtering applied.
-
-The snippet for this is.
-
-{% highlight javascript %}
-
-var grid = $('#Grid').ejGrid('instance');
-grid.addIgnoreOnExport("filterSettings");
 
 {% endhighlight %}
 
