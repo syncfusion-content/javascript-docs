@@ -179,7 +179,7 @@ You need to replace the newly created assembly and its dependent assemblies in t
 
 Attribute Name |	Description
 ---------|----------
-Name	|Name of your report item that is displayed in the list.
+Name	|Name of your report item that is going to be displayed in the list.
 Assembly	|Name of the newly created report item assembly.
 Type	|Report item class name with the namespace.
 
@@ -201,7 +201,7 @@ The following steps describe how to create a standalone report viewer applicatio
 Run the application, output with the bar code custom report item is rendered as below:
 ![](Add-Custom-Report-Item-images/Custom-Report-Item-1.png)
 
-Shows the invoice report rendered with the barcode custom report item.
+Shows the invoice report rendered with the bar code custom report item.
    {:.caption}	
 
 
