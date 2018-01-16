@@ -534,7 +534,7 @@ I> The HTML Table element is the only valid element when using HTML Table bindin
 
 ## Miscellaneous
 
-To collect the details related to the current view data and to refresh the Grid from external actions, Grid provides following methods. 
+To update/refresh the Grid datasource and collect the details related to the current view data of the Grid from external actions, Grid provides following methods. 
 
 
 1. [`dataSource`](https://help.syncfusion.com/api/js/ejgrid#methods:datasource "dataSource")
@@ -564,6 +564,7 @@ To collect the details related to the current view data and to refresh the Grid 
 				else if(args.selectedText == "refreshContent") { 
 					var obj = $("#Grid").ejGrid("instance")
 					obj.model.columns.splice(3,1)
+					//if the argument is set to true, it will refresh all the templates
 					obj.refreshContent($("#check").is(":checked"));
 				}
 				else $("#cols").val(JSON.stringify($("#Grid").ejGrid("getCurrentViewData")));
