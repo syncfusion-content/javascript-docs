@@ -474,7 +474,7 @@ The following code example describes the above behavior.
 
 {% highlight html %}
 <div id="Grid"></div>
-<button onclick="methods()" >getMethod</button>
+<button onclick="methods()" >Reorder</button>
 {% endhighlight %}
 
 {% highlight javascript %}
