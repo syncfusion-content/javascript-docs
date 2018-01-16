@@ -11,7 +11,8 @@ api: /api/js/ejgrid
 
 Context menu is used to improve user action with Grid using the popup menu. It can be shown by defining [`contextMenuSettings.enableContextMenu`](https://help.syncfusion.com/api/js/ejgrid#members:contextmenusettings-enablecontextmenu "contextMenuSettings.enableContextMenu") as true. Context menu has option to add default items in [`contextMenuSettings.contextMenuItems`](https://help.syncfusion.com/api/js/ejgrid#members:contextmenusettings-contextmenuitems "contextMenuSettings.contextMenuItems") and customized items in [`contextMenuSettings.customContextMenuItems`](https://help.syncfusion.com/api/js/ejgrid#members:contextmenusettings-customcontextmenuitems "contextMenuSettings.customContextMenuItems").
 
-To bind the required action before contextmenu opened use [`contextOpen`](https://help.syncfusion.com/api/js/ejgrid#events:contextopen "contextOpen") event.
+To bind the required action before context menu opened use [`contextOpen`](https://help.syncfusion.com/api/js/ejgrid#events:contextopen "contextOpen") event.
+
 ## Default Context Menu items
 
 Please find the below table for default context menu items and its actions.
