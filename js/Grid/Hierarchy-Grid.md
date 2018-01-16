@@ -101,3 +101,18 @@ The Grid can able to expand and collapse all the [`childGrid`](https://help.sync
 
 {% endhighlight %}
 
+N> 1. while  detail template row is clicked to expand [`detailsExpand`](https://help.syncfusion.com/api/js/ejgrid#events:detailsexpand "detailsExpand") event is triggered.
+
+N> 2. while  detail template row is clicked to collapse [`detailsCollapse`](https://help.syncfusion.com/api/js/ejgrid#events:detailscollapse "detailsCollapse") event is triggered.
+
+
+# Expand or Collapse by external action
+
+To expand or collapse the row by external action use  [`expandCollapse`](https://help.syncfusion.com/api/js/ejgrid#methods:expandcollapse "expandCollapse") method by passing the target object of the row. Refer the below code snippet,
+
+{% highlight javascript %}
+
+var gridObj = $("#Grid").data("ejGrid");
+gridObj.expandCollapse($("tr td.recordplusexpand > div").first());  
+
+{% endhighlight %}
