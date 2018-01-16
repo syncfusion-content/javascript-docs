@@ -168,7 +168,7 @@ The following output is displayed as a result of the above code example.
 
 ![](columns_images/columns_img3.png)
 
-# Column-header customization by external action
+# Columnheader customization by external action
 
 We can customize the columns header element by external action using the following methods,
 
@@ -358,7 +358,7 @@ The following output is displayed as a result of the above code example.
 
 ![](columns_images/columns_img7.png)
 
-# Column-width customization by external action
+# Columnwidth customization by external action
 
 To change the columns width by external action use  [`setWidthToColumns`](https://help.syncfusion.com/api/js/ejGrid#methods:setwidthtocolumns "setWidthToColumns") method.
 
@@ -464,7 +464,7 @@ N> While reordering the columns following events are triggered.
 1. [`columnDragStart`](https://help.syncfusion.com/api/js/ejgrid#events:columndragstart "columnDragStart")
 2. [`columnDrop`](https://help.syncfusion.com/api/js/ejgrid#events:columndrop "columnDrop") 
 
-# Column-reorder customization by external action
+# Columnreorder customization by external action
 
 To reorder the column by external action use  [`reorderColumns`](https://help.syncfusion.com/api/js/ejgrid#methods:reordercolumns "reorderColumns") method.
 
@@ -472,6 +472,7 @@ The following code example describes the above behavior.
 
 {% highlight html %}
 <div id="Grid"></div>
+<button onclick="methods()" >getMethod</button>
 {% endhighlight %}
 
 {% highlight javascript %}
@@ -532,7 +533,7 @@ The following output is displayed as a result of the above code example.
 
 ![](columns_images/columns_img11.png)
 
-# column-Visibility customization by external action
+# columnVisibility customization by external action
 
 We can show or hide the grid columns externally by using the following methods,
 
@@ -710,7 +711,7 @@ $(function () {
 });
 {% endhighlight %}
 
-# Column-resize customization by external action
+# Columnresize customization by external action
 
 To resize the columns by external action use [`resizeColumns`](https://help.syncfusion.com/api/js/ejgrid#methods:resizecolumns "resizeColumns") method.
 
@@ -746,9 +747,7 @@ The following output is displayed as a result of the above code example.
 
 ![](columns_images/columns_img35.png)
 
-N> 1. By default the resize mode is normal, you can change the resize mode by using property [`resizeSettings.resizeMode `](https://help.syncfusion.com/api/js/ejgrid#members:resizesettings-resizemode "resizeSettings.resizeMode").
-
-N> 2. While resizing, the following events are triggered [`resized`](https://help.syncfusion.com/api/js/ejgrid#events:resized "resized"), [`resizeStart`](https://help.syncfusion.com/api/js/ejgrid#events:resizestart "resizeStart"), [`resizeEnd`](https://help.syncfusion.com/api/js/ejgrid#events:resizeend "resizeEnd")
+N> 1. While resizing, the following events are triggered [`resized`](https://help.syncfusion.com/api/js/ejgrid#events:resized "resized"), [`resizeStart`](https://help.syncfusion.com/api/js/ejgrid#events:resizestart "resizeStart"), [`resizeEnd`](https://help.syncfusion.com/api/js/ejgrid#events:resizeend "resizeEnd")
 
 ## Read only
 
