@@ -108,7 +108,7 @@ N> 2. while  detail template row is clicked to collapse [`detailsCollapse`](http
 
 # Expand or Collapse by external action
 
-To expand or collapse the row based on the row state by external action use  [`expandCollapse`](https://help.syncfusion.com/api/js/ejgrid#methods:expandcollapse "expandCollapse") method. Refer the below code snippet,
+To expand or collapse the row by external action use  [`expandCollapse`](https://help.syncfusion.com/api/js/ejgrid#methods:expandcollapse "expandCollapse") method by passing the target object of the row. Refer the below code snippet,
 
 {% highlight javascript %}
 
