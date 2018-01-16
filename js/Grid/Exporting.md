@@ -338,7 +338,7 @@ private GridProperties ConvertGridProperties(string gridProperty)
 
 {% endhighlight %}
 
-# Grid model ignorance by external action
+# Ignore some Grid properties while Exporting
 
 By default few grid model properties are ignored while exporting, To ignore the desire grid model properties on exporting use  [`addIgnoreOnExport `](https://help.syncfusion.com/api/js/ejgrid#methods:addignoreonexport "addIgnoreOnExport ") method.
 
