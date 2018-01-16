@@ -191,3 +191,71 @@ Using [`search`](https://help.syncfusion.com/api/js/ejgrid#methods:search “sea
 The following output is displayed as a result of the above code example.
 ![](externalsearch_images/externalsearch_img1.png)
 
+## Reset Model Collections
+
+Grid provides different Methods such as [`clearSorting`](https://help.syncfusion.com/api/js/ejgrid#methods:clearsorting "clearSorting"), [`clearFiltering`](https://help.syncfusion.com/api/js/ejgrid#methods:clearfiltering "clearFiltering") for clearing the respective models [`filterSettings.filteredColumns`](https://help.syncfusion.com/api/js/ejgrid#members:filtersettings-filteredcolumns "filteredColumns") and [`sortSettings.sortedColumns`](https://help.syncfusion.com/api/js/ejgrid#members:sortsettings-sortedcolumns "sortedColumns"). To set all these models to default value, Grid provides a [`resetModelCollections`](https://help.syncfusion.com/api/js/ejgrid#methods:resetmodelcollections "resetModelCollections") method. 
+
+
+{% tabs %}
+{% highlight html %}
+
+	<label>Methods</label>
+	<select id="Methods" class="e-ddl" data-bind="value: field">
+		<option value="default-Page" selected="selected">default-Page</option>
+		<option value="clearSorting">clearSorting</option>
+		<option value="clear-Grouping">clear-Grouping</option>
+		<option value="clearFiltering">clearFiltering</option>
+		<option value="resetModelCollections">resetModelCollections</option>
+	</select>
+    <div id="Grid"></div>
+
+{% endhighlight %}
+
+{% highlight js %}
+    <script type="text/javascript">
+        $(function () {
+			$("#Methods").ejDropDownList({
+				watermarkText: "Select Methods",
+				width: "100%",
+				change: function(args){
+					var gridObj = $("#Grid").ejGrid("instance");
+					if(args.selectedText == "default-Page") gridObj.model.pageSettings.currentPage = 1;
+					else if(args.selectedText == "clearSorting") gridObj.clearSorting();
+					else if(args.selectedText == "clear-Grouping") gridObj.model.groupSettings.groupedColumns = [];
+					else if(args.selectedText == "clearFiltering") gridObj.clearFiltering();
+					else gridObj.resetModelCollections();
+					//clearSorting and clearFiltering will refresh the content on its own actions
+					//other resetModelCollections method and other actions requires, refresContent method
+					if(args.selectedText != "clearSorting" || args.selectedText != "clearFiltering")
+						gridObj.refreshContent();
+				}
+			});
+
+            $("#Grid").ejGrid({
+                dataSource: window.gridData,
+                allowPaging: true,
+				pageSettings: { currentPage: 3, pageSize: 8 },
+                allowSorting: true,
+				sortSettings: { sortedColumns: [{field: "OrderID", direction: "ascending"}] },
+				allowGrouping: true, 
+				groupSettings: { groupedColumns: ["OrderID"] },
+                allowFiltering: true,
+                filterSettings: { filterType: "excel", 
+					filteredColumns: [{ field: "ShipCity", operator: "startswith", value: "r", predicate: "and", matchCase: true }]  
+				}, 
+				columns: [
+				   { field: "OrderID", headerText: "Order ID", textAlign: ej.TextAlign.Right },
+				   { field: "EmployeeID", headerText: 'Employee ID', textAlign: ej.TextAlign.Right },
+				   { field: "OrderDate", headerText: 'Order Date', format:"{0:dd/MM/yyyy}", textAlign: ej.TextAlign.Right },
+				   { field: "CustomerID", headerText: 'Customer ID' },
+				   { field: "Freight", headerText: 'Freight', format: "{0:C}", textAlign: ej.TextAlign.Right },
+				   { field: "ShipCity", headerText: 'Ship City' }
+                ]
+            });
+        });
+    </script>
+
+
+{% endhighlight %}
+
+{% endtabs %}
