@@ -340,7 +340,7 @@ private GridProperties ConvertGridProperties(string gridProperty)
 
 # Ignore some Grid properties while Exporting
 
-By default few grid model properties are ignored while exporting, To ignore the desire grid model properties on exporting use  [`addIgnoreOnExport `](https://help.syncfusion.com/api/js/ejgrid#methods:addignoreonexport "addIgnoreOnExport ") method.
+By default few grid model properties are ignored while exporting, To ignore the desire grid model properties on exporting use  [`addIgnoreOnExport `](https://help.syncfusion.com/api/js/ejgrid#methods:addignoreonexport "addIgnoreOnExport ") method. And also, here we ignored fitlerSettings so while exporting it will be exported without filtering applied.
 
 The snippet for this is.
 
