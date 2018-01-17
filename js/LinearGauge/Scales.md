@@ -90,7 +90,7 @@ Execute the above code to render the following output.
 
 * The **Scale** [`border`](../api/ejlineargauge#members:scales-border) is modified with **border** object. It has two border property, [`color`](../api/ejlineargauge#members:scales-border-color) and [`width`](../api/ejlineargauge#members:scales-border-width)  are used to customize the border color of the scale and border width of the scale. Setting the background color improves the look and feel of the **Linear Gauge**. You can customize the background color of the scale using [`backgroundColor`](../api/ejlineargauge#members:scales-backgroundcolor). 
 
-* [`Scales`](../api/ejlineargauge#members:scales) are used to enable or disable various properties such as [`showRanges`](../api/ejlineargauge#members:scales-showranges), [`showIndicators`](../api/ejlineargauge#members:scales-showindicators), [`showCustomLabels`](../api/ejlineargauge#members:scales-showcustomlabels), [`showLabels`](../api/ejlineargauge#members:scales-showlabels), [`showTicks`](../api/ejlineargauge#members:scales-showticks), [`showBarPointers`](../api/ejlineargauge#members:scales-showbarpointers) and [`showMarkerPointers`](../api/ejlineargauge#members:scales-showmarkerpointers), [`shadowOffset`](../api/ejlineargauge#members:scales-shawdowoffset). Enable/disable is done by setting the property into two states either “**true**” or “**false**”. You can adjust the Opacity of the scale with [`opacity`](../api/ejlineargauge#members:scales-opacity) property.
+* [`Scales`](../api/ejlineargauge#members:scales) are used to enable or disable various properties such as [`showRanges`](../api/ejlineargauge#members:scales-showranges), [`showIndicators`](../api/ejlineargauge#members:scales-showindicators), [`showCustomLabels`](../api/ejlineargauge#members:scales-showcustomlabels), [`showLabels`](../api/ejlineargauge#members:scales-showlabels), [`showTicks`](../api/ejlineargauge#members:scales-showticks), [`showBarPointers`](../api/ejlineargauge#members:scales-showbarpointers) and [`showMarkerPointers`](../api/ejlineargauge#members:scales-showmarkerpointers), [`shadowOffset`](../api/ejlineargauge#members:scales-shadowoffset). Enable/disable is done by setting the property into two states either “**true**” or “**false**”. You can adjust the Opacity of the scale with [`opacity`](../api/ejlineargauge#members:scales-opacity) property.
 
 
 {% highlight html %}
@@ -220,9 +220,9 @@ Execute the above code to render the following output.
 
 You can add the gradient effects to the scales using gradients object.
 
-* pointerGradient1 - It specifies the [`pointerGradient1`](../api/ejlineargauge#members:scales-pointergradient1) for Linear gauge.
+* pointerGradient1 - It specifies the [`pointerGradient1`](../api/ejlineargauge#members:pointergradient1) for Linear gauge.
 
-* pointerGradient2 - It specifies the [`pointerGradient2`](../api/ejlineargauge#members:scales-pointergradient2) for Linear gauge.
+* pointerGradient2 - It specifies the [`pointerGradient2`](../api/ejlineargauge#members:pointergradient2) for Linear gauge.
 
 {% highlight javascript %}
  
