@@ -211,6 +211,48 @@ Triggers when map is zoomed out, you can use [`zoomedOut`](../api/ejmap#events:z
 
 {% endhighlight %}
 
+### shapeRendering
+
+Triggers while rendering rendering each shape, you can use [`shapeRendering`](../api/ejmap#events:shaperendering) event.
+
+{% highlight js %}
+
+//shapeRendering event for map
+  $("#container").ejMap({
+   shapeRendering : function (event) {}
+  });
+
+{% endhighlight %}
+
+
+### bubbleRendering
+
+Triggers while rendering each bubble, you can use [`bubbleRendering`](../api/ejmap#events:bubblerendering) event.
+
+{% highlight js %}
+
+//bubbleRendering event for map
+  $("#container").ejMap({
+   bubbleRendering : function (event) {}
+  });
+
+{% endhighlight %}
+
+
+### legendItemRendering
+
+Triggers while rendering each bubble, you can use [`legendItemRendering`](../api/ejmap#events:legenditemrendering) event.
+
+{% highlight js %}
+
+//legendItemRendering event for map
+  $("#container").ejMap({
+   legendItemRendering : function (event) {}
+  });
+
+{% endhighlight %}
+
+
 
 <a class="" href="http://www.syncfusion.com/copyright" target="_blank">Copyright &copy; 2001 - 2015 Syncfusion Inc. All Rights Reserved</a>
 
