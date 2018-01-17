@@ -182,7 +182,7 @@ The following code example describes the above behavior.
 <div id="Grid"></div>
 {% endhighlight %}
 
-{% highlight html %}
+{% highlight javascript %}
 $("#change").ejButton({
     text: "Update Grid header",
     click: function(args){
@@ -372,18 +372,18 @@ The following code example describes the above behavior.
 
 {% highlight javascript %}
 $(function () {
-	$("#Grid").ejGrid({
-		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
-		dataSource : window.gridData,
-		allowPaging : true,
-		columns : [
-		    { field: "OrderID", isPrimaryKey: true, headerText: "Order ID",  width: 90 },
+    $("#Grid").ejGrid({
+        dataSource: window.gridData,
+        allowPaging:true,
+        pageSettings:{pageSize:8},
+        columns: [
+            { field: "OrderID", isPrimaryKey: true, headerText: "Order ID",  width: 90 },
             { field: "CustomerID", headerText: 'Customer ID', width: 90 },
             { field: "Freight", headerText: 'Freight', format: "{0:C}", width: 90 },
             { field: "ShipCountry", headerText: "Ship Country", width: 90 },
             { field: "ShipCity", headerText: 'Ship City', width: 120 }
-		]
-	});
+        ]
+    });
 });
 function methods(){
     var obj=$("#Grid").ejGrid("instance")
@@ -546,6 +546,8 @@ We can get the visible or hidden column details by using the following methods,
 
 1. [`getVisibleColumnNames`](https://help.syncfusion.com/api/js/ejgrid#methods:getvisiblecolumnnames "getVisibleColumnNames")
 2. [`getHiddenColumnNames`](https://help.syncfusion.com/api/js/ejgrid#members:columns-field "getHiddenColumnNames") 
+
+Here, we hide the `CustomerID` column using the [`hideColumns`](https://help.syncfusion.com/api/js/ejgrid#methods:hidecolumns "hideColumns") method and also we shows the hidden column in the text area.
 
 The following code example describes the above behavior. 
 
@@ -730,12 +732,13 @@ $(function () {
 		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
 		dataSource : window.gridData,
 		allowPaging : true,
+		allowReordering : true,
 		columns : [
-		   { field: "EmployeeID",width:90},
-           { field: "OrderID",width:40 },
-           { field: "Freight",width:100 },
-           { field: "ShipCity",width:80 },
-           { field: "ShipCountry",width:90 }
+			{ field: "EmployeeID",  width:90 },
+			{ field: "OrderID",     width:100 },
+			{ field: "Freight",     width:75 },
+			{ field: "ShipCity ,    width:80 },
+			{ field: "ShipCountry", width:90 }
 		]
 	});
 });
@@ -1180,11 +1183,18 @@ To control the grid column actions externally use the following methods,
 5. [`getFieldNameByHeaderText`](https://help.syncfusion.com/api/js/ejgrid#methods:getfieldnamebyheadertext "getFieldNameByHeaderText")
 6. [`getHeaderTextByFieldName`](https://help.syncfusion.com/api/js/ejgrid#methods:getheadertextbyfieldname "getHeaderTextByFieldName") 
 
+Here, we changed the Freight column CSS by using the corresponding method.
+
 The following code example describes the above behavior.
 
 {% highlight html %}
 <body>
 <input  type ="text" id='txtVal' > Enter Column/Index</input>
+<style>
+.style{
+  color:green;
+}
+</style>
 <div>
         <select name="selectIndex"style="width:100px" id="dropdown">
                 <option value="getColumnByIndex">getColumnByIndex</option>
@@ -1196,12 +1206,6 @@ The following code example describes the above behavior.
         </select>
 </div>
 <button onclick="methods()" >Click</button></br><br/>
-<div class="col-md-3">
-Details
-</div>
-<div class ="area">
-<textarea id="details" class="ejinputtext" style="width: 300px;height:80px;position:inline" readonly="readonly"></textarea>
-</div>
 <div id="Grid"></div>
 {% endhighlight %}
 
@@ -1222,7 +1226,11 @@ $(function () {
 });
 function methods(){
     var option= $("#dropdown_input").val(), gridObj=$("#Grid").ejGrid("instance"), val = $('#txtVal').val();
-    $("#details").val(JSON.stringify(gridObj[option](val))); // Get the details based upon the method seleted
+    if(option=="getColumnByIndex"){
+        var newfield=obj.getColumnByIndex(val) 
+        newfield.cssClass = "style"; // CSS is added to Freight column
+        obj.refreshContent(true);
+    }
 };
 {% endhighlight %}
 
