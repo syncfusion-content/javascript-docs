@@ -13,7 +13,7 @@ api: /api/js/ejgrid
 
 Auto wrap enables the Grid to wrap the cell content or header content to next line when the content exceeds the boundary of the cell width. To enable auto wrap, set the  [`allowTextWrap`](https://help.syncfusion.com/api/js/ejgrid#members:allowtextwrap "allowTextWrap") property as `true`. 
 
-We can specify the mode of auto wrap using [`wrapMode`](https://help.syncfusion.com/api/js/ejgrid#members:textwrapsettings-wrapmode "wrapMode") property of the [`textWrapSettings`](https://help.syncfusion.com/api/js/ejgrid#members:textWrapSettings "textWrapSettings"). 
+We can specify the mode of auto wrap using [`wrapMode`](https://help.syncfusion.com/api/js/ejgrid#members:textWrapSettings-wrapmode "wrapMode") property of the [`textWrapSettings`](https://help.syncfusion.com/api/js/ejgrid#members:textwrapsettings "textWrapSettings"). 
 
 Three types of `wrapMode` are available and they are,
   
@@ -21,15 +21,15 @@ Three types of `wrapMode` are available and they are,
  2. Header
  3. Content 
  
-N> 1. By default the [`wrapMode`](https://help.syncfusion.com/api/js/ejgrid#members:textwrapsettings-wrapmode "wrapMode") will be set as `both`. 
+N> 1. By default the [`wrapMode`](https://help.syncfusion.com/api/js/ejgrid#members:textWrapSettings-wrapmode "wrapMode") will be set as `both`. 
 
-N> 2. While using [`textWrapSettings`](https://help.syncfusion.com/api/js/ejgrid#members:textWrapSettings "textWrapSettings") then it is must to set [`allowTextWrap`](https://help.syncfusion.com/api/js/ejgrid#members:allowtextwrap "allowTextWrap") as `true`.
+N> 2. While using [`textWrapSettings`](https://help.syncfusion.com/api/js/ejgrid#members:textwrapsettings "textWrapSettings") then it is must to set [`allowTextWrap`](https://help.syncfusion.com/api/js/ejgrid#members:allowtextwrap "allowTextWrap") as `true`.
 
-N> 3. For [`wrapMode`](https://help.syncfusion.com/api/js/ejgrid#members:textwrapsettings-wrapmode "wrapMode") property you can assign either `string` value (`both`) or `enum` value (`ej.Grid.WrapMode.Both`).
+N> 3. For [`wrapMode`](https://help.syncfusion.com/api/js/ejgrid#members:textWrapSettings-wrapmode "wrapMode") property you can assign either `string` value (`both`) or `enum` value (`ej.Grid.WrapMode.Both`).
  
 ## Both
 
-When the [`wrapMode`](https://help.syncfusion.com/api/js/ejgrid#members:textwrapsettings-wrapmode "wrapMode") of [`textWrapSettings`](https://help.syncfusion.com/api/js/ejgrid#members:textWrapSettings "textWrapSettings") property is set as `both` then the auto wrap will be enabled for both the grid content and header.  
+When the [`wrapMode`](https://help.syncfusion.com/api/js/ejgrid#members:textWrapSettings-wrapmode "wrapMode") of [`textWrapSettings`](https://help.syncfusion.com/api/js/ejgrid#members:textwrapsettings "textWrapSettings") property is set as `both` then the auto wrap will be enabled for both the grid content and header.  
 
 The following code example describes the above behavior.
 
@@ -64,7 +64,7 @@ The following output is displayed as a result of the above code example.
 
 ## Header
 
-When the [`wrapMode`](https://help.syncfusion.com/api/js/ejgrid#members:textwrapsettings-wrapmode "wrapMode") of [`textWrapSettings`](https://help.syncfusion.com/api/js/ejgrid#members:textWrapSettings "textWrapSettings") property is set as `header` then the auto wrap will be enabled only for the grid header alone. 
+When the [`wrapMode`](https://help.syncfusion.com/api/js/ejgrid#members:textWrapSettings-wrapmode "wrapMode") of [`textWrapSettings`](https://help.syncfusion.com/api/js/ejgrid#members:textwrapsettings "textWrapSettings") property is set as `header` then the auto wrap will be enabled only for the grid header alone. 
 
 The following code example describes the above behavior.
 
@@ -99,7 +99,7 @@ The following output is displayed as a result of the above code example.
 
 ## Content
 
-When the [`wrapMode`](https://help.syncfusion.com/api/js/ejgrid#members:textwrapsettings-wrapmode "wrapMode") of [`textWrapSettings`](https://help.syncfusion.com/api/js/ejgrid#members:textWrapSettings "textWrapSettings") property is set as `content` then the auto wrap will be enable only for the grid content alone. 
+When the [`wrapMode`](https://help.syncfusion.com/api/js/ejgrid#members:textWrapSettings-wrapmode "wrapMode") of [`textWrapSettings`](https://help.syncfusion.com/api/js/ejgrid#members:textwrapsettings "textWrapSettings") property is set as `content` then the auto wrap will be enable only for the grid content alone. 
 
 The following code example describes the above behavior.
 
@@ -137,6 +137,8 @@ The following output is displayed as a result of the above code example.
 The Grid has options to merge the Grid cells based on the required conditions. This can be enabled by setting [`allowCellMerging`](https://help.syncfusion.com/api/js/ejgrid#members:allowcellmerging "allowCellMerging") property as `true` and the merge conditions can be defined in [`mergeCellInfo`](https://help.syncfusion.com/api/js/ejgrid#events:mergecellinfo "mergeCellInfo") event. In this event, you can get the column details and data of that particular row and column which is helpful in defining conditions. 
 
 You can merge the rows and cells of grid, using `rowMerge`, `colMerge` and `merge` functions available in [`mergeCellInfo`](https://help.syncfusion.com/api/js/ejgrid#events:mergecellinfo "mergeCellInfo") event's argument.
+
+N>  [`mergeHeaderCellInfo`](https://help.syncfusion.com/api/js/ejgrid#events:mergeheadercellinfo "mergeHeaderCellInfo") event triggered every time a request is raised while merging the header cell which contains header cell information and element.
 
 The following code example describes the above behavior.
 
@@ -244,11 +246,13 @@ When you move the cursor over the particular cell it provides an information abo
 
 **Template**
 
-HTML templates can be specified in the `tooltip` property of the particular column cell as a string (HTML element) or ID of the template's HTML element.You can use JsRender syntax in the template. For more information about JsRender syntax, please refer to [this link](http://www.jsviews.com/#jsrapi "this link"). 
+HTML templates can be specified in the   [tooltip ](https://help.syncfusion.com/api/js/ejgrid#members:columns-tooltip "tooltip ")  property of the particular column cell as a string (HTML element) or ID of the template's HTML element.You can use JsRender syntax in the template. For more information about JsRender syntax, please refer to [this link](http://www.jsviews.com/#jsrapi "this link"). 
 
 N> It's a standard way to enclose the template within the `script` tag with `type` as "text/x-jsrender".
+
+N> To modify the tooltip for the Grid column header alone, use   [headerTooltip  ](https://help.syncfusion.com/api/js/ejgrid#members:columns-headertooltip "headerTooltip  ")
  
-N> The `tooltip` template must contain `value` property to bind the corresponding cell text in tooltip
+N> The  [tooltip ](https://help.syncfusion.com/api/js/ejgrid#members:columns-tooltip "tooltip ") template must contain `value` property to bind the corresponding cell text in tooltip
  
 The following code example describes the above behavior.
 
@@ -281,11 +285,11 @@ The following output is displayed as a result of the above code example.
 
 ## ClipMode
 
-When the cell value contains a long text that will not fit into the grid column cell, the `clipMode` property is used. By using the `clipMode`, the cell value will be displayed with ellipsis or with clipped content when the text overflows inside a column cell.
+When the cell value contains a long text that will not fit into the grid column cell, the [clipMode  ](https://help.syncfusion.com/api/js/ejgrid#members:columns-clipmode "clipMode") property is used. By using the [clipMode  ](https://help.syncfusion.com/api/js/ejgrid#members:columns-clipmode "clipMode"), the cell value will be displayed with ellipsis or with clipped content when the text overflows inside a column cell.
 
-N> 1. By default the `clipMode` will be set as `clip`. 
+N> 1. By default the [clipMode  ](https://help.syncfusion.com/api/js/ejgrid#members:columns-clipmode "clipMode  ") will be set as `clip`. 
 
-N> 2. For [`clipMode`] property you can assign either `string` value (`ellipsis`)  or `enum` value (`ej.Grid.ClipMode.Ellipsis`).
+N> 2. For [[clipMode  ](https://help.syncfusion.com/api/js/ejgrid#members:columns-clipmode "clipMode  ")] property you can assign either `string` value (`ellipsis`)  or `enum` value (`ej.Grid.ClipMode.Ellipsis`).
 
 
 **List of Enumeration types**
@@ -388,6 +392,4 @@ $(function () {
 The following output is displayed as a result of the above code example.
 
 ![](Cell_images/cell_img8.png)
-
-
 
