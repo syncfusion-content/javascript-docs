@@ -276,7 +276,7 @@ By using [`colorPath`](../api/ejmap#members:layers-shapesettings-colorpath) prop
 
 N> While setting color for map by using [`colorPath`] property, do not set any other color mapping hence color mapping is having higher priority than [`colorPath`]. 
 
-{ % highlight javascript %}
+{% highlight javascript %}
 
 jQuery(function($) {
 
@@ -290,13 +290,13 @@ jQuery(function($) {
      //…
     });
 });
-{ % enghighlight %}
+{% endhighlight %}
 
 ![](/js/Maps/Customization_images/Customization_img8.png) 
 
 While binding color path for map, it is possible to render legend for each shape in the map. To achieve this, set the [`textPath`](../api/ejmap#members:layers-legendsettings-textpath) for legend. [`textPath`](../api/ejmap#members:layers-legendsettings-textpath) contains another field name in the datasource. As per the text, content in the field legend will be generated. 
 
-{ % highlight javascript %}
+{% highlight javascript %}
 
 $("#maps").ejMap({ 
      //…
@@ -312,7 +312,7 @@ $("#maps").ejMap({
      //…
 });
 
-{ % enghighlight %}
+{% endhighlight %}
 
 ![](/js/Maps/Customization_images/Customization_img9.png) 
 

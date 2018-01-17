@@ -220,7 +220,7 @@ You can set color for each bubble by using [`colorPath`](../api/ejmap#members:la
 
 N> While settings color for bubbles by using [`colorPath`], do not set any other color mapping hence color mapping is having higher priority than [`colorPath`]. 
 
-{ % highlight javascript %}
+{% highlight javascript %}
 
     jQuery(function ($) {
 
@@ -240,7 +240,7 @@ N> While settings color for bubbles by using [`colorPath`], do not set any other
 
     });
 
-{ % enghighlight %}
+{% endhighlight %}
 
 ![](/js/Maps/Map-Elements_images/Map-Elements_img7.png)
 
@@ -266,7 +266,7 @@ $("#maps").ejMap({
      //…
 });
 
-{ % enghighlight %}
+{ % endhighlight %}
 
 ![](/js/Maps/Map-Elements_images/Map-Elements_img8.png)
 
