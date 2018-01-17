@@ -1227,8 +1227,8 @@ $(function () {
 function methods(){
     var option= $("#dropdown_input").val(), gridObj=$("#Grid").ejGrid("instance"), val = $('#txtVal').val();
     if(option=="getColumnByIndex"){
-        var newfield=obj.getColumnByIndex(val)
-        newfield.cssClass = "style";
+        var newfield=obj.getColumnByIndex(val) 
+        newfield.cssClass = "style"; // css is added to Freight column
         obj.refreshContent(true);
     }
 };
