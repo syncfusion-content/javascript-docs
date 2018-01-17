@@ -27,7 +27,7 @@ The following code snippet illustrates
 
 ## GroupMemberPath
 
-It is the string property that is used to map the group(../api/ejsunburstchart#members:levels-groupmemberpath) category value in the dataSource .
+It is the string property that is used to map the [`group`](../api/ejsunburstchart#members:levels-groupmemberpath) category value in the dataSource .
 You can define the levels as shown in the below code example
 
 {% highlight js %}
