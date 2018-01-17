@@ -84,6 +84,8 @@ I> [`editSettings.allowAdding`](https://help.syncfusion.com/api/js/ejgrid#member
 
 The custom toolbar is used to create your own toolbar items in toolbar. It can be added by defining the [`toolbarSettings.customToolbarItems`](https://help.syncfusion.com/api/js/ejgrid#members:toolbarsettings-customtoolbaritems "customToolbarItems").  Actions for this customized toolbar is defined in the [`toolbarClick`](https://help.syncfusion.com/api/js/ejgrid#events:toolbarclick "toolbarclick") event.
 
+To add custom toolbar item as template use [`templateID`](https://help.syncfusion.com/api/js/ejgrid#members:toolbarsettings-customtoolbaritems-templateid "templateID") property and also you can customize the toolbar tooltip by [`tooltip`](https://help.syncfusion.com/api/js/ejgrid#members:toolbarsettings-customtoolbaritems-tooltip "tooltip") property.
+
 {% highlight html %}
 <div id="Grid"></div>
 <script id="Refresh" type="text/x-jsrender">
