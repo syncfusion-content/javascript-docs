@@ -246,7 +246,7 @@ N> While settings color for bubbles by using [`colorPath`], do not set any other
 
 While binding [`colorPath`](../api/ejmap#members:layers-bubblesettings-colorpath) for bubbles, it is possible to render the legend for each bubble. To achieve this, set the [`textPath`](../api/ejmap#members:layers-legendsettings-text) for legend. [`textPath`] contains another field name in the datasource. As per the text, content in the field legend will be generated. 
 
-{ % highlight javascript %}
+{% highlight javascript %}
 
 $("#maps").ejMap({ 
      //…
@@ -266,7 +266,7 @@ $("#maps").ejMap({
      //…
 });
 
-{ % endhighlight %}
+{% endhighlight %}
 
 ![](/js/Maps/Map-Elements_images/Map-Elements_img8.png)
 
