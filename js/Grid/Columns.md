@@ -182,7 +182,7 @@ The following code example describes the above behavior.
 <div id="Grid"></div>
 {% endhighlight %}
 
-{% highlight html %}
+{% highlight javascript %}
 $("#change").ejButton({
     text: "Update Grid header",
     click: function(args){
@@ -372,18 +372,18 @@ The following code example describes the above behavior.
 
 {% highlight javascript %}
 $(function () {
-	$("#Grid").ejGrid({
-		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
-		dataSource : window.gridData,
-		allowPaging : true,
-		columns : [
-		    { field: "OrderID", isPrimaryKey: true, headerText: "Order ID",  width: 90 },
+    $("#Grid").ejGrid({
+        dataSource: window.gridData,
+        allowPaging:true,
+        pageSettings:{pageSize:8},
+        columns: [
+            { field: "OrderID", isPrimaryKey: true, headerText: "Order ID",  width: 90 },
             { field: "CustomerID", headerText: 'Customer ID', width: 90 },
             { field: "Freight", headerText: 'Freight', format: "{0:C}", width: 90 },
             { field: "ShipCountry", headerText: "Ship Country", width: 90 },
             { field: "ShipCity", headerText: 'Ship City', width: 120 }
-		]
-	});
+        ]
+    });
 });
 function methods(){
     var obj=$("#Grid").ejGrid("instance")
@@ -732,12 +732,13 @@ $(function () {
 		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
 		dataSource : window.gridData,
 		allowPaging : true,
+		allowReordering : true,
 		columns : [
-		   { field: "EmployeeID",width:90},
-           { field: "OrderID",width:40 },
-           { field: "Freight",width:100 },
-           { field: "ShipCity",width:80 },
-           { field: "ShipCountry",width:90 }
+			{ field: "EmployeeID",  width:90 },
+			{ field: "OrderID",     width:100 },
+			{ field: "Freight",     width:75 },
+			{ field: "ShipCity ,    width:80 },
+			{ field: "ShipCountry", width:90 }
 		]
 	});
 });
