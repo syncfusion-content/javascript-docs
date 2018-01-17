@@ -895,4 +895,20 @@ Method 2: Using Visual Mode
  {% endhighlight %}
 
 ![](HowTo_images/Json2.jpg)   
-    
+
+## Display the Validation message in the same line as the DropDownList
+
+In the DropDownList control, the `Display` property for the outer wrapper element will be set to `block` by default. So, modifying it to `inline-block` will move the validation message to the same line as of the DropDownList. Kindly refer to the following code. 
+
+{% highlight css %}
+
+    <style> 
+        .e-ddl { 
+            display: inline-block; 
+        } 
+    </style> 
+
+
+{% endhighlight %}  
+
+[Sample](http://jsplayground.syncfusion.com/gxmdr42a)

@@ -42,7 +42,7 @@ The Data points that uses the **null** or **undefined** as value are considered 
 
 ## EmptyPointSettings
 
-You can customize the empty points visibility and change its [`displayMode`](../api/ejchart.html#members:series-emptyPointSettings-displayMode) *(gap, zero and average)* using [`emptyPointSettings`](../api/ejchart.html#members:series-emptyPointSettings) option.
+You can customize the empty points visibility and change its [`displayMode`](../api/ejchart.html#members:series-emptypointsettings-displayMode) *(gap, zero and average)* using [`emptyPointSettings`](../api/ejchart.html#members:series-emptypointsettings) option.
 
 {% highlight javascript %}
 
@@ -65,13 +65,13 @@ You can customize the empty points visibility and change its [`displayMode`](../
 ![](/js/Chart/Empty-Points_images/Empty-Points_img2.png)
 
 
-If the [`visible`](../api/ejchart.html#members:series-emptyPointSettings-visible) property of [`emptyPointSettings`](../api/ejchart.html#members:series-emptyPointSettings) is *false*, then the empty points has been dropped and chart will be rendered without empty points.
+If the [`visible`](../api/ejchart.html#members:series-emptypointsettings-visible) property of [`emptyPointSettings`](../api/ejchart.html#members:series-emptypointsettings) is *false*, then the empty points has been dropped and chart will be rendered without empty points.
 
 ![](/js/Chart/Empty-Points_images/Empty-Points_img3.png)
 
 ## Customizing Styles
 
-Empty points color and border can be customized using [`style`](../api/ejchart.html#members:series-emptyPointSettings-style) property of [`emptyPointSettings`](../api/ejchart.html#members:series-emptyPointSettings).
+Empty points [`color`](../api/ejchart.html#members:series-emptypointsettings-style-color) and [`border`](../api/ejchart.html#members:series-emptypointsettings-style-border) can be customized using [`style`](../api/ejchart.html#members:series-emptypointsettings-style) property of [`emptyPointSettings`](../api/ejchart.html#members:series-emptypointsettings). The color and width of border can customized using the properties [`color`](../api/ejchart.html#members:series-emptypointsettings-style-border-color) and [`width`](../api/ejchart.html#members:series-emptypointsettings-style-border-width).
 
 {% highlight javascript %}
 

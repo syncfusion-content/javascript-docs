@@ -509,3 +509,177 @@ You can collapse the specific series/point legend item displaying in the chart, 
 {% endhighlight %}
 
 ![](/js/Chart/Legend_images/Legend_img17.png)
+
+## legend enableScrollbar
+Controls whether legend has to use scrollbar or not. When [`enable scrollbar`] (../api/ejchart#members:legend-enablescrollbar) appears depending upon size and position properties of legend.
+
+{% highlight javascript %}
+
+
+     $("#container").ejChart({
+     
+        legend :{ enableScrollbar : false}                    
+     });
+      
+{% endhighlight %}
+
+## legend font
+
+Options to customize the [`font`](../api/ejchart#members:legend-font)used for legend item text.
+
+## legend font fontFamily
+
+[`FontFamily`](../api/ejchart#members:legend-font-fontfamily) for legend item text.
+
+{% highlight javascript %}
+
+
+     $("#container").ejChart({
+     
+       legend :{ font :{fontFamily : "Algerian"}}                           
+     });
+      
+{% endhighlight %}
+
+## legend font fontStyle
+
+[`Fontstyle`] for legend item text.
+
+{% highlight javascript %}
+
+
+     $("#container").ejChart({
+     
+      legend :{ font :{fontStyle : "italic"}}                    
+                    
+     });
+      
+{% endhighlight %}
+
+## legend font fontWeight
+
+[`Font weight`] (../api/ejchart#members:legend-font-fontweight)for legend item text.
+
+{% highlight javascript %}
+
+
+     $("#container").ejChart({
+     
+    legend :{ font :{fontWeight : "lighter"}}                    
+                    
+     });
+      
+{% endhighlight %}
+
+## legend font size
+Font [`size`] (../api/ejchart#members:legend-font-size)for legend item text.
+
+{% highlight javascript %}
+
+
+     $("#container").ejChart({
+     
+   legend :{ font :{size : "14px"}}                        
+                    
+     });
+      
+{% endhighlight %}
+
+## legend itemStyle
+Options to customize the [`style`](../api/ejchart#members:legend-itemstyle) of legend items.
+
+## legend itemStyle border
+Options for customizing the [`border`](../api/ejchart#members:legend-itemstyle-border) of legend items.
+
+## legend itemStyle border color
+Border [`color`] (../api/ejchart#members:legend-itemstyle-border-color)of the legend items.
+ 
+ {% highlight javascript %}
+
+
+     $("#container").ejChart({
+     
+    legend :{ itemStyle :{border : { color : "green' }}}                             
+                    
+     });
+      
+{% endhighlight %}
+
+## legend itemStyle border width
+Border [`width`](../api/ejchart#members:legend-itemstyle-border-width) of the legend items.
+
+{% highlight javascript %}
+
+
+     $("#container").ejChart({
+     
+    legend :{ itemStyle :{border :{ width : 2 }}}                                             
+                    
+     });
+      
+{% endhighlight %}
+
+## legend title font
+
+Options to customize the [`font`](../api/ejchart#members:legend-title-font) used for legend title
+
+## legend title font fontFamily
+
+[`FontFamily`](../api/ejchart#members:legend-title-font-fontfamily) for the text in legend title.
+
+{% highlight javascript %}
+
+
+     $("#container").ejChart({
+     
+    legend: { title: { font :{fontFamily: "Algerian" } } }                                            
+                    
+     });
+      
+{% endhighlight %}
+
+## legend title font fontStyle
+[`Font style`](../api/ejchart#members:legend-title-font-fontstyle) for legend title
+
+{% highlight javascript %}
+
+
+     $("#container").ejChart({
+     
+    legend: { title: { font :{fontStyle: "normal" } }                                             
+                    
+     });
+      
+{% endhighlight %}
+
+## legend title font font weight
+[`Font weight`](../api/ejchart#members:legend-title-font-fontweight) for legend title.
+
+{% highlight javascript %}
+
+
+     $("#container").ejChart({
+     
+    legend: { title: { font :{fontWeight: "normal" } } }                                             
+                    
+     });
+      
+{% endhighlight %}
+
+## legend title font font size
+
+[`Font-Size`](../api/ejchart#members:legend-title-font-size) for legend title.
+
+{% highlight javascript %}
+
+
+     $("#container").ejChart({
+     
+     legend: { title: { font :{size: "14px" } } }                                               
+                    
+     });
+      
+{% endhighlight %}
+
+
+

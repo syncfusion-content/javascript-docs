@@ -313,7 +313,7 @@ N> We should select any one of the row in Gantt to perform task indent action.
 
 ## Task Outdent
 
-Task outdent option in Gantt was enabled by setting [`allowIndent`]((/api/js/ejgantt#members:editsettings-allowindent "editSettings.allowIndent") as `true`. Tasks can be outdent by clicking on outdent toolbar item or by using [`outdentItem`](/api/js/ejgantt#methods:outdentitem) method. We can invoke this method dynamically on any action like external button click. The below code example shows how to enable outdent option in Gantt.
+Task outdent option in Gantt was enabled by setting [`allowIndent`](/api/js/ejgantt#members:editsettings-allowindent "editSettings.allowIndent") as `true`. Tasks can be outdent by clicking on outdent toolbar item or by using [`outdentItem`](/api/js/ejgantt#methods:outdentitem) method. We can invoke this method dynamically on any action like external button click. The below code example shows how to enable outdent option in Gantt.
 
 {% highlight js %}
 
