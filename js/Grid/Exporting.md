@@ -9,7 +9,7 @@ api: /api/js/ejgrid
 ---
 # Export
 
-To export the grid, `export` method should  be called with export mapper as a parameter. To make it work from the grid toolbar, `ExcelExport`, `WordExport` and `PdfExport` toolbar items needs to be added in [`toolbarSettings.toolbarItems`](https://help.syncfusion.com/api/js/ejgrid#members:toolbarsettings-toolbaritems) property and equivalent server action mapper should be defined in `exportToExcelAction`, `exportToWordAction`, and `exportToPdfAction` properties. The code snippet for this is
+To export the grid, `export` method should  be called with export mapper as a parameter. To make it work from the grid toolbar, `ExcelExport`, `WordExport` and `PdfExport` toolbar items needs to be added in [`toolbarSettings.toolbarItems`](https://help.syncfusion.com/api/js/ejgrid#members:toolbarsettings-toolbaritems) property and equivalent server action mapper should be defined in [`exportToExcelAction `](https://help.syncfusion.com/api/js/ejgrid#members:exporttoexcelaction "exportToExcelAction "), [`exportToWordAction `](https://help.syncfusion.com/api/js/ejgrid#members:exporttowordaction "exportToWordAction "), and [`exportToPdfAction `](https://help.syncfusion.com/api/js/ejgrid#members:exporttopdfaction "exportToPdfAction ") properties. The code snippet for this is
 
 {% highlight html %}
 <div id="Grid"></div>
@@ -47,6 +47,10 @@ $(function () {
 {% endhighlight %}
 
 ![](Exporting_images/Exporting_img1.png) 
+
+# External Export in Grid
+
+To export the grid by external action use [`export `](https://help.syncfusion.com/api/js/ejgrid#methods:export "export ") method, refer the KB  [`link `](https://www.syncfusion.com/kb/4335/how-to-export-grid-data-to-excel-word-and-pdf-formats-on-external-action "link ").
 
 
 ## Server configuration
@@ -265,6 +269,16 @@ Following are the list of properties that are excluded during grid export, to re
 * enableRTL
 * cssClass
 
+To ignore the additional desired grid  properties on exporting use  [`addIgnoreOnExport `](https://help.syncfusion.com/api/js/ejgrid#methods:addignoreonexport "addIgnoreOnExport ") method. Here we ignored fitlerSettings so while exporting it will be exported without filtering applied.
+
+The snippet for this is.
+
+{% highlight javascript %}
+
+var grid = $('#Grid').ejGrid('instance');
+grid.addIgnoreOnExport("filterSettings");
+
+{% endhighlight %}
 
 ## Export only visible records
 

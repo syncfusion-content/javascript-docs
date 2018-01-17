@@ -11,6 +11,8 @@ api: /api/js/ejgrid
 
 Context menu is used to improve user action with Grid using the popup menu. It can be shown by defining [`contextMenuSettings.enableContextMenu`](https://help.syncfusion.com/api/js/ejgrid#members:contextmenusettings-enablecontextmenu "contextMenuSettings.enableContextMenu") as true. Context menu has option to add default items in [`contextMenuSettings.contextMenuItems`](https://help.syncfusion.com/api/js/ejgrid#members:contextmenusettings-contextmenuitems "contextMenuSettings.contextMenuItems") and customized items in [`contextMenuSettings.customContextMenuItems`](https://help.syncfusion.com/api/js/ejgrid#members:contextmenusettings-customcontextmenuitems "contextMenuSettings.customContextMenuItems").
 
+To bind the required action before context menu opened use [`contextOpen`](https://help.syncfusion.com/api/js/ejgrid#events:contextopen "contextOpen") event.
+
 ## Default Context Menu items
 
 Please find the below table for default context menu items and its actions.
@@ -188,6 +190,7 @@ Context menu at pager
 
 N> `allowGrouping`, `allowSorting` should be enabled to perform default context menu actions in the Grid header. `allowEditing`, `allowDeleting` and `allowAdding` should be enabled to perform default actions in the body.
 
+N> Use [`contextMenuSettings.disableDefaultItems `](https://help.syncfusion.com/api/js/ejgrid#members:contextmenusettings-disabledefaultitems  "contextMenuSettings.disableDefaultItems ") property to disable the default context menu items.
 ## Custom Context Menu
 
 Custom context menu is used to create your own menu item and its action. To add customized context menu items, you need to use the [`contextMenuSettings.customContextMenuItems`](https://help.syncfusion.com/api/js/ejgrid#members:contextmenusettings-customcontextmenuitems "contextMenuSettings.customContextMenuItems") property and to bind required actions for this, use [`contextClick`](https://help.syncfusion.com/api/js/ejgrid#events:contextclick "contextClick") event.
@@ -226,7 +229,9 @@ Custom context menu is used to create your own menu item and its action. To add 
 
 ## Sub Context Menu
 
-Sub context menu is used to add customized sub menu to the custom context menu item. To add a sub context menu, you need to use [`contextMenuSettings.subContextMenu`](https://help.syncfusion.com/api/js/ejgrid#members:contextmenusettings-subcontextmenu "contextMenuSettings.subContextMenu") property and to bind required actions for this, use the [`contextClick`](https://help.syncfusion.com/api/js/ejgrid#events:contextclick "contextClick") event.
+Sub context menu is used to add customized sub menu to the custom context menu item. To add a sub context menu, you need to use [`contextMenuSettings.subContextMenu.subMenu `](https://help.syncfusion.com/api/js/ejgrid#members:contextmenusettings-subcontextmenu-submenu  "contextMenuSettings.subContextMenu.subMenu ") property and to bind required actions for this, use the [`contextClick`](https://help.syncfusion.com/api/js/ejgrid#events:contextclick "contextClick") event.
+
+Use [`contextMenuSettings.subContextMenu.contextMenuItem `](https://help.syncfusion.com/api/js/ejgrid#members:contextmenusettings-subcontextmenu-contextmenuitem  "contextMenuSettings.subContextMenu.contextMenuItem ") property to get or set the corresponding custom context menu item to which the submenu to be appended.
 
 {% highlight html %}
 <div id="Grid"></div>
@@ -262,7 +267,7 @@ Sub context menu is used to add customized sub menu to the custom context menu i
 
 ## Sub Context Menu with Template
 
-On rendering the Sub context menu items, the customized sub menu items are created by using [`contextMenuSettings.subContextMenu.template`](https://help.syncfusion.com/api/js/ejgrid#members:contextmenusettings-subcontextmenu "contextMenuSettings.subContextMenu.template") property.
+On rendering the Sub context menu items, the customized sub menu items are created by using [`contextMenuSettings.subContextMenu.template`](https://help.syncfusion.com/api/js/ejgrid#members:contextmenusettings-subcontextmenu-template "contextMenuSettings.subContextMenu.template") property.
 
 {% highlight html %}
 <div id="Grid"></div>

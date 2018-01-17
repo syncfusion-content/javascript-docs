@@ -15,6 +15,8 @@ The stacked headers helps you to group the logical columns in grid. It can be sh
 
 To stack columns in stacked header, you need to define [`column`](https://help.syncfusion.com/api/js/ejgrid#members:stackedheaderrows-stackedheadercolumns-column "column") property in the [`stackedHeaderColumns`](https://help.syncfusion.com/api/js/ejgrid#members:stackedheaderrows-stackedheadercolumns "stackedHeaderColumns") with field names of visible columns.
 
+You can also define  [`cssclass`](https://help.syncfusion.com/api/js/ejgrid#members:stackedheaderrows-stackedheadercolumns-cssclass "cssclass"),  [`headerText `](https://help.syncfusion.com/api/js/ejgrid#members:stackedheaderrows-stackedheadercolumns-headertext  "headerText "), [`textAlign `](https://help.syncfusion.com/api/js/ejgrid#members:stackedheaderrows-stackedheadercolumns-textalign "textAlign  ") and [`tooltip `](https://help.syncfusion.com/api/js/ejgrid#members:stackedheaderrows-stackedheadercolumns-cssclass "tooltip ") properties in the [`stackedHeaderColumns`](https://help.syncfusion.com/api/js/ejgrid#members:stackedheaderrows-stackedheadercolumns "stackedHeaderColumns") .
+
 {% highlight html %}
 <div id="Grid"></div>
 
