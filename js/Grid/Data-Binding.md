@@ -532,7 +532,7 @@ The following output is displayed as a result of the above code example.
 I> The HTML Table element is the only valid element when using HTML Table binding. Using other elements will throws an exception.
 
 
-## Miscellaneous
+#### Miscellaneous
 
 To update/refresh the Grid datasource and collect the details related to the current view data of the Grid from external actions, Grid provides following methods. 
 
