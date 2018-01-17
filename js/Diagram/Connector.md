@@ -17,7 +17,7 @@ Connectors are objects used to create link between two points, nodes or ports to
 ## Create Connector
 
 Connector can be created by defining the start and end points. The path to be drawn can be defined with a collection of segments.
-To explore the properties of a `connector`, refer to [Connector Properties](/api/js/ejDiagram#members:connectors "Connector Properties").
+To explore the properties of a `connector`, refer to [Connector Properties](/api/js/ejdiagram#members:connectors "Connector Properties").
 
 ### Add connectors through connectors collection
 
