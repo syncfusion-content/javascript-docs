@@ -1183,7 +1183,7 @@ To control the grid column actions externally use the following methods,
 5. [`getFieldNameByHeaderText`](https://help.syncfusion.com/api/js/ejgrid#methods:getfieldnamebyheadertext "getFieldNameByHeaderText")
 6. [`getHeaderTextByFieldName`](https://help.syncfusion.com/api/js/ejgrid#methods:getheadertextbyfieldname "getHeaderTextByFieldName") 
 
-Here, we changed the Freight column CSS by using the corresponding method [`getColumnByIndex`](https://help.syncfusion.com/api/js/ejgrid#methods:getcolumnbyindex "getColumnByIndex").
+Here, we changed the Freight column CSS by using the corresponding method.
 
 The following code example describes the above behavior.
 
