@@ -285,7 +285,7 @@ jQuery(function($) {
      layers: [ 
      {
             shapeSettings: {
-               colorPath: "shapefill",
+               colorPath: "shapeFill",
             }
      //…
     });
@@ -303,7 +303,7 @@ $("#maps").ejMap({
      layers: [ 
      {
             shapeSettings: {
-               colorPath: "shapefill",
+               colorPath: "shapeFill",
             },
             legendSettings: {
                showLegend: true,

@@ -229,7 +229,7 @@ N> While settings color for bubbles by using [`colorPath`], do not set any other
             layers: [ 
             {
                 shapeSettings: {
-                    colorPath: "shapefill",
+                    colorPath: "shapeFill",
                 },
                 bubbleSettings: {
                     showBubbles: true,
@@ -253,7 +253,7 @@ $("#maps").ejMap({
      layers: [ 
      {
             shapeSettings: {
-               colorPath: "shapefill",
+               colorPath: "shapeFill",
             },
             bubbleSettings: {
                showBubbles: true,
