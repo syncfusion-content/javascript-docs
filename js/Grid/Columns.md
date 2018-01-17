@@ -547,7 +547,7 @@ We can get the visible or hidden column details by using the following methods,
 1. [`getVisibleColumnNames`](https://help.syncfusion.com/api/js/ejgrid#methods:getvisiblecolumnnames "getVisibleColumnNames")
 2. [`getHiddenColumnNames`](https://help.syncfusion.com/api/js/ejgrid#members:columns-field "getHiddenColumnNames") 
 
-Here, we hide the `CustomerID` column using the [`hideColumns`](https://help.syncfusion.com/api/js/ejgrid#methods:hidecolumns "hideColumns") method.
+Here, we hide the `CustomerID` column using the [`hideColumns`](https://help.syncfusion.com/api/js/ejgrid#methods:hidecolumns "hideColumns") method and also we shows the hidden column in the text area.
 
 The following code example describes the above behavior. 
 
@@ -1183,7 +1183,7 @@ To control the grid column actions externally use the following methods,
 5. [`getFieldNameByHeaderText`](https://help.syncfusion.com/api/js/ejgrid#methods:getfieldnamebyheadertext "getFieldNameByHeaderText")
 6. [`getHeaderTextByFieldName`](https://help.syncfusion.com/api/js/ejgrid#methods:getheadertextbyfieldname "getHeaderTextByFieldName") 
 
-Here, we changed the Freight column css by using the [`getColumnByIndex`](https://help.syncfusion.com/api/js/ejgrid#methods:getcolumnbyindex "getColumnByIndex")
+Here, we changed the Freight column CSS by using the corresponding method [`getColumnByIndex`](https://help.syncfusion.com/api/js/ejgrid#methods:getcolumnbyindex "getColumnByIndex").
 
 The following code example describes the above behavior.
 
@@ -1228,7 +1228,7 @@ function methods(){
     var option= $("#dropdown_input").val(), gridObj=$("#Grid").ejGrid("instance"), val = $('#txtVal').val();
     if(option=="getColumnByIndex"){
         var newfield=obj.getColumnByIndex(val) 
-        newfield.cssClass = "style"; // css is added to Freight column
+        newfield.cssClass = "style"; // CSS is added to Freight column
         obj.refreshContent(true);
     }
 };
