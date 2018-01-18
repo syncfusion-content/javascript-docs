@@ -160,3 +160,65 @@ $("#container").ejSparkline({
 });
 
 {% endhighlight %}
+
+### Click
+
+The [`click`](../api/ejsparkline#events:click) event is fired on clicking the sparkline.
+
+
+{% highlight js %}
+ 
+//Click event for sparkline
+
+ $("#container").ejSparkline({
+
+
+    click: function (args) {
+              //Do something
+    }
+   
+});
+
+{% endhighlight %}
+
+
+### doubleClick
+
+The [`doubleClick`](../api/ejsparkline#events:doubleclick) event is fired on double clicking the sparkline.
+
+
+{% highlight js %}
+ 
+//DoubleClick event for sparkline
+
+ $("#container").ejSparkline({
+
+
+    doubleClick: function (args) {
+              //Do something
+    }
+   
+});
+
+{% endhighlight %}
+
+
+
+### rightClick
+
+The [`rightClick`](../api/ejsparkline#events:rightclick) event is fired on right clicking the sparkline.
+
+
+{% highlight js %}
+ 
+//RightClick event for sparkline
+
+ $("#container").ejSparkline({
+
+    rightClick: function (args) {
+              //Do something
+    }
+   
+});
+
+{% endhighlight %}
