@@ -190,7 +190,7 @@ After creating the config file, add it to the report viewer application.
 
 The following steps describe how to create a standalone report viewer application:
 
-[Create a standalone report viewer application in web report viewer platform.](/js/reportviewer/getting-started)
+[Create a standalone report viewer application in web report viewer.](/js/reportviewer/getting-started)
 
 Run the application, output with the bar code custom report item is rendered as below:
 ![](Add-Custom-Report-Item-images/Custom-Report-Item-1.png)
