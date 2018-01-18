@@ -88,7 +88,7 @@ The below code snippet explains enabling the **respectLink** validation mode whi
 
 {% highlight javascript %}
 
-$("#gantt").ejGantt({
+$("#GanttContainer").ejGantt({
     actionBegin: function(args) {
         if (args.requestType == "validateLinkedTask") {
             args.validateMode.respectLink = true;
@@ -120,7 +120,7 @@ The following code example explains this.
 
 {% highlight javascript %}
 
-$("#gantt").ejGantt({
+$("#GanttContainer").ejGantt({
     actionBegin: function(args) {
         if (args.requestType == "validateLinkedTask") {
             args.validateMode.preserveLinkWithEditing = false;

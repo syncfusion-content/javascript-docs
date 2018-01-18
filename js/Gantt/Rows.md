@@ -68,7 +68,7 @@ $("#GanttContainer").ejGantt({
 
 ### Adding a row programmatically
 
-You can add rows in the below positions dynamically using [`addRecord`](/api/js/ejgantt#methods:addrecord) public method and we can define the default new record add position by using [`rowPosition`](/api/js/ejgantt#members:editsettings-rowposition "editSettings.rowPosition") property.
+You can add rows in the below positions dynamically using [`addRecord`](/api/js/ejgantt#methods:addrecord "addRecord(data, rowPosition)") public method and we can define the default new record add position by using [`rowPosition`](/api/js/ejgantt#members:editsettings-rowposition "editSettings.rowPosition") property.
 
 * Top of all the rows
 * Bottom to all the existing rows
@@ -94,7 +94,7 @@ $("#addRow").click(function(args) {
 
     //Create Gantt object
 
-    var GanttObj = $("#gantt").data("ejGantt");
+    var GanttObj = $("#GanttContainer").data("ejGantt");
 
     // data to be added
 
@@ -130,7 +130,7 @@ The [`showTooltip`](/api/js/ejgantt#members:dragtooltip-showtooltip "dragTooltip
 The following code explains about enabling the row drag and drop with the default tooltip in the Gantt.
 
 {% highlight javascript %}
-$("#gantt").ejGantt({
+$("#GanttContainer").ejGantt({
 
     //...     
 

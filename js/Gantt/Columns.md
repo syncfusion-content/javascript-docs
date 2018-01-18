@@ -212,3 +212,44 @@ $("#Gantt").ejGantt({
 
 ![](/js/Gantt/Columns_images/Columns_img6.png)
 
+## Change visibility of the columns dynamically
+
+Gantt columns visibility can be changed dynamically by using [`showColumn`](/api/js/ejgantt#methods:showcolumn "showColumn(headerText)") and [`hideColumn`](/api/js/ejgantt#methods:hidecolumn "hideColumn(headerText)") methods. The below code example shows how to change the visibility of the column in Gantt dynamically.
+
+{% highlight javascript %}
+
+$("#Gantt").ejGantt({
+        // ...
+        // ...        
+});
+
+$("#hide_column").click(function() {
+    var ganttObj = $("#Gantt").ejGantt("instance");
+    var column = ganttObj.getColumns()[0];
+    ganttObj.hideColumn(column.headerText);
+});
+
+$("#show_column").click(function() {
+    var ganttObj = $("#Gantt").ejGantt("instance");
+    var column = ganttObj.getColumns()[0];
+    ganttObj.showColumn(column.headerText);
+});
+
+{% endhighlight %}
+
+## Customize expandable column
+
+Expandable column was Gantt column which has icons to expand/collapse the child rows. We can define the expandable column index in Gantt by using [`treeColumnIndex`](/api/js/ejgantt#members:treecolumnindex) property, default value of this property was `0`. The following code example shows how to use this property.
+
+{% highlight javascript %}
+
+$("#Gantt").ejGantt({
+        // ...
+        treeColumnIndex: 2,       
+});
+
+{% endhighlight %}
+
+The below screenshot shows the output of above code example.
+
+![](/js/Gantt/Columns_images/Columns_img8.png)

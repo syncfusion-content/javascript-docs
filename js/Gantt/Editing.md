@@ -253,7 +253,7 @@ The following code snippet explains how to enable delete confirmation message in
 
 {% highlight js %}
 
-$("#Gantt").ejGantt({
+$("#GanttContainer").ejGantt({
      //...
     editSettings: {
         allowDeleting: true,
@@ -275,7 +275,7 @@ Task indent option in Gantt was enabled by setting [`allowIndent`](/api/js/ejgan
 
 {% highlight js %}
 
-$("#Gantt").ejGantt({
+$("#GanttContainer").ejGantt({
      //...
     editSettings: {
         allowIndent: true
@@ -317,7 +317,7 @@ Task outdent option in Gantt was enabled by setting [`allowIndent`](/api/js/ejga
 
 {% highlight js %}
 
-$("#Gantt").ejGantt({
+$("#GanttContainer").ejGantt({
      //...
     editSettings: {
         allowIndent: true
@@ -352,3 +352,56 @@ After Outdent
 {:.caption}
 
 N> We should select any one of the row in Gantt to perform task outdent action.
+
+## Task Delete
+
+Task delete option in Gantt was enabled by setting [`allowDeleting`](/api/js/ejgantt#members:editsettings-allowdeleting "editSettings.allowDeleting") as `true`. Tasks can be delete by clicking on delete toolbar item or by using [`deleteItem`](/api/js/ejgantt#methods:deleteitem) method. We can invoke this method dynamically on any action like external button click. The below code example shows how to enable delete option in Gantt.
+
+{% highlight js %}
+
+$("#GanttContainer").ejGantt({
+     //...
+    editSettings: {
+        allowDeleting: true
+    },
+    toolbarSettings: {
+        showToolbar: true,
+        toolbarItems: [ej.Gantt.ToolbarItems.Add,
+        //..
+        ej.Gantt.ToolbarItems.Delete]
+    },
+    //...
+});
+
+$("#deleteTask").click(function () {
+    var ganttObj = $("#GanttContainer").ejGantt("instance");
+    if (ganttObj.selectedRowIndex() != -1)
+        ganttObj.deleteItem();
+});
+
+{% endhighlight %}
+
+The following screenshots shows the output of above code example.
+
+![](/js/Gantt/Editing_images/Editing_img6.png)
+Before Delete
+{:.caption}
+
+![](/js/Gantt/Editing_images/Editing_img9.png)
+After Delete
+{:.caption}
+
+N> We should select any one of the row in Gantt to perform task delete action.
+
+## Read-only Gantt
+
+In Gantt, all editing options can be disabled by setting [`readOnly`](/api/js/ejgantt#members:readonly) property as `true`. The following code example shows how to make Gantt control as read-only.
+
+{% highlight js %}
+
+$("#GanttContainer").ejGantt({
+    //...
+    readOnly: true,
+});
+
+{% endhighlight %}
