@@ -237,9 +237,9 @@ $("#show_column").click(function() {
 
 {% endhighlight %}
 
-## Customize expandable column
+## Customize tree/expander column
 
-Expandable column was Gantt column which has icons to expand/collapse the child rows. We can define the expandable column index in Gantt by using [`treeColumnIndex`](/api/js/ejgantt#members:treecolumnindex) property, default value of this property was `0`. The following code example shows how to use this property.
+Tree/Expander column is a column in Gantt which has icons to expand/collapse the parent records. We can define the tree column index in Gantt by using [`treeColumnIndex`](/api/js/ejgantt#members:treecolumnindex) property, default value of this property was `0`. The following code example shows how to use this property.
 
 {% highlight javascript %}
 
