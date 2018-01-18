@@ -100,7 +100,7 @@ The following screenshot shows the template for taskbars in Gantt.
 
 ## Task label template
 
-By default, task name will be displayed to the left and resource names will be displayed to the right of the taskbars as task labels. We can enable/disable this default task lables by uisng [`showTaskNames`](/api/js/ejgantt#members:showtasknames) and [`showResourceNames`](/api/js/ejgantt#members:showresourcenames) properties. But these task labels are customizable.
+By default, task name will be displayed to the left and resource names will be displayed to the right of the taskbars as task labels. We can enable/disable this default task labels by using [`showTaskNames`](/api/js/ejgantt#members:showtasknames) and [`showResourceNames`](/api/js/ejgantt#members:showresourcenames) properties. But these task labels are customizable.
 
 ### Mapping data source fields as task labels
 
