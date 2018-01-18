@@ -30,6 +30,13 @@ Multiple selections is an interactive support to select a group of rows, cells o
 
 Row selection is enabled by setting the [`selectionMode`](https://help.syncfusion.com/api/js/ejgrid#members:selectionsettings-selectionmode "selectionMode") property of [`selectionSettings`](https://help.syncfusion.com/api/js/ejgrid#members:selectionsettings "selectionSettings") as `row`. For random row selection, press **"Ctrl + mouse left"** click and for continuous row selection press **"Shift + mouse left"** click on the grid rows. To unselect the selected rows, press **"Ctrl + mouse left"** click on the selected row.
 
+To select the row while initializing the grid use [`selectedRowIndex `](https://help.syncfusion.com/api/js/ejgrid#members:selectedrecords "selectedRowIndex ") property.
+
+While row selecting the following events are triggered,
+
+1. [`rowSelected`](https://help.syncfusion.com/api/js/ejgrid#events:rowselected "rowSelected")
+2. [`rowSelecting`](https://help.syncfusion.com/api/js/ejgrid#events:rowselecting "rowSelecting")
+
 The following code example describes the above behavior.
 
 {% highlight html %}
@@ -55,6 +62,44 @@ $(function () {
 The following output is displayed as a result of the above code example.
 
 ![](selection_images/selection_img1.png)
+
+N> We can get the selected row details in grid by using [`getSelectedRows`](https://help.syncfusion.com/api/js/ejgrid#methods:getselectedrows "getSelectedRows") method.
+
+# Row selection by external action
+
+To select the rows by external action use [`selectRows`](https://help.syncfusion.com/api/js/ejgrid#methods:selectrows "selectRows") by setting the starting and ending index we can select the rows.
+
+The following code example describes the above behavior.
+
+{% highlight javascript %}
+var gridObj = $("#Grid").data("ejGrid");
+gridObj.selectRows(1, 4); 
+{% endhighlight %}
+
+# Clear selection by external action
+
+To clear the row selection by external action use [`clearSelection`](https://help.syncfusion.com/api/js/ejgrid#methods:clearselection "clearSelection") method.
+
+The following code example describes the above behavior.
+
+{% highlight javascript %}
+var gridObj = $("#Grid").data("ejGrid");
+gridObj.clearSelection(); // clears all of the row selection
+{% endhighlight %}
+
+We can clear the specific row selection by providing the index value in the  [`clearSelection`](https://help.syncfusion.com/api/js/ejgrid#methods:clearselection "clearSelection") .
+
+The following code example describes the above behavior.
+
+{% highlight javascript %}
+var gridObj = $("#Grid").data("ejGrid");
+gridObj.clearSelection(2); // Removes the selection based on the row index
+{% endhighlight %}
+
+While clearing the row selection the following events are triggered,
+
+1. [`rowDeselected`](https://help.syncfusion.com/api/js/ejgrid#events:rowdeselected "rowDeselected")
+2. [`rowDeselecting`](https://help.syncfusion.com/api/js/ejgrid#events:rowdeselecting "rowDeselecting")
 
 ## Multiple Row Selection using Checkbox Column
 
@@ -94,6 +139,12 @@ The following output is displayed as a result of the above code example.
 
 Cell selection is enabled by setting the [`selectionMode`](https://help.syncfusion.com/api/js/ejgrid#members:selectionsettings-selectionmode "selectionMode") property of [`selectionSettings`](https://help.syncfusion.com/api/js/ejgrid#members:selectionsettings "selectionSettings") as `cell`. For random cell selection, press **"Ctrl + mouse left"** click and for continuous cell selection, press **"Shift + mouse left"** click on the grid cells. To unselect selected cells, press **"Ctrl + mouse left"** on the selected cell.
 
+While cell selecting the following events are triggered,
+
+1. [`cellSelected`](https://help.syncfusion.com/api/js/ejgrid#events:cellselected "cellSelected")
+2. [`cellSelecting`](https://help.syncfusion.com/api/js/ejgrid#events:cellselecting "cellSelecting")
+
+
 The following code example describes the above behavior.
 
 {% highlight html %}
@@ -118,10 +169,39 @@ The following output is displayed as a result of the above code example.
 
 ![](selection_images/selection_img2.png)
 
+# Cell selection by external action
+
+we can select the cell externally by using [`selectCells`](https://help.syncfusion.com/api/js/ejgrid#methods:selectcells "selectCells") method. By setting starting index of row and indexes of cells for that corresponding row for selecting cells.
+
+The following code example describes the above behavior.
+
+{% highlight javascript %}
+var gridObj = $("#Grid").data("ejGrid");
+gridObj.selectCells([[1, [4, 3, 2]]]); 
+{% endhighlight %}
+
+
+# Clear cell selection by external action
+
+We can clear the cell selection using  [`clearCellSelection`](https://help.syncfusion.com/api/js/ejgrid#methods:clearcellselection "clearCellSelection") method.
+
+The following code example describes the above behavior.
+
+{% highlight javascript %}
+var gridObj = $("#Grid").data("ejGrid");
+gridObj.clearCellSelection();
+{% endhighlight %}
+
+While clearing the cell selection the following events are triggered,
+
+1. [`cellDeselected`](https://help.syncfusion.com/api/js/ejgrid#events:celldeselected "cellDeselected")
+2. [`cellDeselecting`](https://help.syncfusion.com/api/js/ejgrid#events:celldeselecting "cellDeselecting")
 
 ### Cell Selection Mode
 
-There are two types of cell selection available in grid. They are as follows:
+Cell selection mode is enabled by setting the [`cellSelectionMode `](https://help.syncfusion.com/api/js/ejgrid#members:selectionsettings-cellselectionmode "cellselectionMode") property of [`selectionSettings`](https://help.syncfusion.com/api/js/ejgrid#members:selectionsettings "selectionSettings").There are two types of cell selection available in grid. 
+
+They are as follows:
 
 1. Continuous Selection
 2. Box Selection
@@ -157,6 +237,11 @@ The following output is displayed as a result of the above code example.
 
 [Column selection](https://help.syncfusion.com/api/js/ejgrid#members:selectionsettings-selectionmode "Column selection") can be enabled by setting the [`selectionMode`](https://help.syncfusion.com/api/js/ejgrid#members:selectionsettings-selectionmode "selectionMode") property of [`selectionSettings`](https://help.syncfusion.com/api/js/ejgrid#members:selectionsettings "selectionSettings") as `column`. For random column selection, press **"Ctrl + mouse left click"** and for continuous column selection, press **"Shift + mouse left click"** on the top of the column header. To unselect selected columns, press **"Ctrl + mouse left click"** on top of the selected column header.
 
+While column selecting the following events are triggered,
+
+1. [`columnSelected`](https://help.syncfusion.com/api/js/ejgrid#events:columnselected "columnSelected")
+2. [`columnSelecting`](https://help.syncfusion.com/api/js/ejgrid#events:columnselecting "columnSelecting")
+
 The following code example describes the above behavior.
 
 {% highlight html %}
@@ -180,6 +265,42 @@ $(function () {
 The following output is displayed as a result of the above code example.
 
 ![](selection_images/selection_img4.png)
+
+# Column selection by external action
+
+we can select the column externally by using [`selectColumns`](https://help.syncfusion.com/api/js/ejgrid#methods:selectcolumns "selectColumns") method. By setting starting index of column for selecting columns.
+
+The following code example describes the above behavior.
+
+{% highlight javascript %}
+var gridObj = $("#Grid").data("ejGrid");
+gridObj.selectColumns(1,4); 
+{% endhighlight %}
+
+While clearing the column selection the following events are triggered,
+
+1. [`columnDeselected`](https://help.syncfusion.com/api/js/ejgrid#events:columndeselected "columnDeselected")
+2. [`columnDeselecting`](https://help.syncfusion.com/api/js/ejgrid#events:columndeselecting "columnDeselecting")
+
+# Clear column selection by external action
+
+To clear the column selection by external action use [`clearColumnSelection`](https://help.syncfusion.com/api/js/ejgrid#methods:clearcolumnselection "clearColumnSelection") method.
+
+The following code example describes the above behavior.
+
+{% highlight javascript %}
+var gridObj = $("#Grid").ejGrid("instance")
+gridObj.clearColumnSelection(); // clears all of the column selection
+{% endhighlight %}
+
+We can clear the specific column selection by providing the index value in the  [`clearColumnSelection`](https://help.syncfusion.com/api/js/ejgrid#methods:clearcolumnselection "clearColumnSelection") .
+
+The following code example describes the above behavior.
+
+{% highlight javascript %}
+var gridObj = $("#Grid").ejGrid("instance")
+gridObj.clearColumnSelection(2); // Removes the selection based on the row index
+{% endhighlight %}
 
 
 ## Touch options
