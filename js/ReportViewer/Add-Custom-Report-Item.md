@@ -9,12 +9,12 @@ documentation: ug
 
 ## Overview
 
-A custom report item allows you to add the functionality that is not natively supported in the RDL or extend the functionality of existing controls in the RDL standard. The run-time component allows to render the custom report item in the report viewer.
+A custom report item allows you to add the functionality that is not natively supported in the RDL or extend the functionality of existing controls in the RDL standard. The run-time component allows to render the custom report item in report viewer.
 
 
 ## Creating a custom report item run-time component
 
-The run-time component of the custom report item is implemented using CLS-compliant language, and is called by the report processor at run-time. The below section provides detail to create run-time component of the bar code custom report item for the report viewer or Report Server rendering.
+The run-time component of the custom report item is implemented using CLS-compliant language, and is called by the report processor at run-time. The below section provides detail to create run-time component of the bar code custom report item for report viewer.
 
 ### Create report item assembly
 
@@ -151,13 +151,7 @@ internal partial class ImageConversion : UserControl
 
 #### Build project
 
-You can clean and build the extension project, it will generate the run-time component assembly "Syncfusion.Extensions.BarcodeCRI.dll" in the bin folder of the project. Copy the generated assembly to the installation location.
-
-**For ReportDesigner:** (C:\Program Files (x86)\Syncfusion\Report Designer\ReportDesigner)
-
-**For ReportServer:**  C:\Program Files (x86)\Syncfusion\Report Server\ReportServer.Web\bin
-
->Note: The installation path refers to the location where the Syncfusion ReportDesigner and the ReportServer were installed.
+You can clean and build the extension project, it will generate the run-time component assembly "Syncfusion.Extensions.BarcodeCRI.dll" in the bin folder of the project.
 
 
 ## Deploy a custom report item 
@@ -196,7 +190,7 @@ After creating the config file, add it to the report viewer application.
 
 The following steps describe how to create a standalone report viewer application:
 
-[Create a sStandalone report viewer application in the web report viewer platform.](/js/reportviewer/getting-started)
+[Create a standalone report viewer application in web report viewer platform.](/js/reportviewer/getting-started)
 
 Run the application, output with the bar code custom report item is rendered as below:
 ![](Add-Custom-Report-Item-images/Custom-Report-Item-1.png)
