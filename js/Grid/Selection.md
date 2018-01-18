@@ -63,7 +63,7 @@ The following output is displayed as a result of the above code example.
 
 ![](selection_images/selection_img1.png)
 
-N> We can get the selected row details in grid by using [`getSelectedRows`](https://help.syncfusion.com/api/js/ejgrid#methods:getselectedrows "getSelectedRows") method.
+N> We can get the selected row elements in grid by using [`getSelectedRows`](https://help.syncfusion.com/api/js/ejgrid#methods:getselectedrows "getSelectedRows") method.
 
 # Row selection by external action
 
