@@ -314,7 +314,7 @@ You can find the online demo sample for tooltip templates for taskbars [here](ht
 
 ### Taskbar Editing Tooltip
 
-Editing tooltips are used to shows the new edited start date, end date, duration and progress values on taskbar resizing, dragging and progress bar resizing actions. Currently two editing tooltips are available in Gantt.
+Editing tooltip is used to show the updated start date, end date, duration and progress values of a task while resizing, dragging and progress bar resizing actions. Currently two editing tooltips are available in Gantt.
 
 * Taskbar editing tooltip
 * Progress bar editing tooltip
