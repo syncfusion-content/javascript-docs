@@ -220,7 +220,6 @@ Gantt columns visibility can be changed dynamically by using [`showColumn`](/api
 
 $("#Gantt").ejGantt({
         // ...
-        // ...        
 });
 
 $("#hide_column").click(function() {
@@ -237,7 +236,7 @@ $("#show_column").click(function() {
 
 {% endhighlight %}
 
-## Customize tree/expander column
+## Change tree/expander column
 
 Tree/Expander column is a column in Gantt which has icons to expand/collapse the parent records. We can define the tree column index in Gantt by using [`treeColumnIndex`](/api/js/ejgantt#members:treecolumnindex) property, default value of this property was `0`. The following code example shows how to use this property.
 
