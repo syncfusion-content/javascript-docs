@@ -253,67 +253,6 @@ Triggers while rendering each bubble, you can use [`legendItemRendering`](../api
 {% endhighlight %}
 
 
-### Click
-
-Triggers while clicking on the layers of the map, you can use [`click`](../api/ejmap#events:click) event.
-
-
-{% highlight js %}
- 
-//Click event for map
-
-$("#container").ejMap({
-
-    click: function (args) {
-              //Do something
-    }
-   
-});
-
-{% endhighlight %}
-
-
-### doubleClick
-
-Triggers while double clicking on the layers of the map, you can use [`doubleClick`](../api/ejmap#events:doubleclick) event.
-
-
-{% highlight js %}
- 
-//DoubleClick event for map.
-
-$("#container").ejMap({
-
-    doubleClick: function (args) {
-              //Do something
-    }
-   
-});
-
-{% endhighlight %}
-
-
-
-### rightClick
-
-Triggers while right clicking on the layers of the map, you can use [`rightClick`](../api/ejmap#events:rightclick) event.
-
-
-
-{% highlight js %}
- 
-//RightClick event for map
-
-$("#container").ejMap({
-    rightClick: function (args) {
-              //Do something
-    }
-   
-});
-
-{% endhighlight %}
-
-
 
 <a class="" href="http://www.syncfusion.com/copyright" target="_blank">Copyright &copy; 2001 - 2015 Syncfusion Inc. All Rights Reserved</a>
 
