@@ -134,7 +134,7 @@ The output of the above steps is as follows.
 It is also possible to set the datasource to Gantt using ejDataManager. The following code example explains how to assign the ejDataManager instance to Gantt.
 
 {% highlight javascript %}
-$("#gantt").ejGantt({
+$("#GanttContainer").ejGantt({
 
     dataSource: ej.DataManager(dataManger),
 
@@ -246,7 +246,7 @@ $(function() {
 
     var dataManger = ej.DataManager("http://js.syncfusion.com/demos/ejServices/Wcf/TreeGridGantt/TreeGantt.svc/SelfReferenceDatas");
 
-    $("#gantt").ejGantt({
+    $("#GanttContainer").ejGantt({
 
         dataSource: dataManger,
 
