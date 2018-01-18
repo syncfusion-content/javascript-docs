@@ -388,3 +388,69 @@ $("#container").ejSunburstChart({
 
 {% endhighlight %}
 
+
+### Click
+
+Fires when clicking the sunburst points, you can use [`click`](../api/ejsunburstchart#events:click) event.
+
+
+
+{% highlight js %}
+ 
+//Click event for sunburst chart
+
+ $("#container").ejSunburstChart({
+
+
+    click: function (args) {
+              //Do something
+    }
+   
+});
+
+{% endhighlight %}
+
+
+### doubleClick
+
+Fires when double clicking the sunburst points, you can use [`doubleClick`](../api/ejsunburstchart#events:doubleclick) event.
+
+
+
+{% highlight js %}
+ 
+//DoubleClick event for sunburst chart
+
+ $("#container").ejSunburstChart({
+
+
+    doubleClick: function (args) {
+              //Do something
+    }
+   
+});
+
+{% endhighlight %}
+
+
+
+### rightClick
+
+
+Fires when right clicking the sunburst points, you can use [`rightClick`](../api/ejsunburstchart#events:rightclick) event.
+
+
+{% highlight js %}
+ 
+//RightClick event for sunburst chart
+
+ $("#container").ejSunburstChart({
+
+    rightClick: function (args) {
+              //Do something
+    }
+   
+});
+
+{% endhighlight %}
+
