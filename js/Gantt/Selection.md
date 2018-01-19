@@ -87,7 +87,7 @@ To enable multiple selection, you can set the [`selectionType`](/api/js/ejgantt#
 
 ### Selecting multiple rows programmatically 
 
-You can also select multiple rows programmatically  by using the [`selectMultipleRows`](/api/js/ejgantt#methods:selectmultiplerows) public method. The following code example explains how to enable multiple selection in Gantt.
+You can also select multiple rows programmatically  by using the [`selectMultipleRows`](/api/js/ejgantt#methods:selectmultiplerows "selectMultipleRows(rowIndexes)") public method. The following code example explains how to enable multiple selection in Gantt.
 {% highlight html %}
 <body>
 
@@ -157,7 +157,7 @@ $("#GanttContainer").ejGantt({
 
 ### Select cells programmatically 
 
-You can select the cells programmatically using the [`selectCells`](/api/js/ejgantt#methods:selectcells) public method. Find the code example below for details.
+You can select the cells programmatically using the [`selectCells`](/api/js/ejgantt#methods:selectcells "selectCells(Indexes,preservePreviousSelectedCell)") public method. Find the code example below for details.
 
 {% highlight html %}
 <body>
