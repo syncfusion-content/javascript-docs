@@ -22,7 +22,7 @@ You can design your own taskbars to view the tasks in Gantt by using [`taskbarTe
 The following code example shows how to define template for taskbars in Gantt. 
 
 {% highlight html %}
-<div id="gantt" style="height:450px;width:100%;" />
+<div id="GanttContainer" style="height:450px;width:100%;" />
 {% endhighlight %}
 
 {% highlight javascript %}
@@ -73,7 +73,7 @@ The following code example shows how to define template for taskbars in Gantt.
 <script>
     $(function() {
 
-        $("#gantt").ejGantt({
+        $("#GanttContainer").ejGantt({
 
             //…
 
@@ -100,11 +100,11 @@ The following screenshot shows the template for taskbars in Gantt.
 
 ## Task label template
 
-By default, task name will be displayed to the left and resource names will be displayed to the right of the taskbars as task labels. But these task labels are customizable.
+By default, task name will be displayed to the left and resource names will be displayed to the right of the taskbars as task labels. We can enable/disable this default task labels by using [`showTaskNames`](/api/js/ejgantt#members:showtasknames) and [`showResourceNames`](/api/js/ejgantt#members:showresourcenames) properties. But these task labels are customizable.
 
-### Mapping datasource fields as task labels
+### Mapping data source fields as task labels
 
-It is also possible to set any datasource fields as task labels using [`rightTaskLabelMapping`](/api/js/ejgantt#members:righttasklabelmapping "rightTaskLabelMapping") and [`leftTaskLabelMapping`](/api/js/ejgantt#members:lefttasklabelmapping "leftTaskLabelMapping") properties.
+It is also possible to set any data source fields as task labels using [`rightTaskLabelMapping`](/api/js/ejgantt#members:righttasklabelmapping "rightTaskLabelMapping") and [`leftTaskLabelMapping`](/api/js/ejgantt#members:lefttasklabelmapping "leftTaskLabelMapping") properties.
 
 The following code example explains how to set task name field as right label and task ID field as left label,
 
@@ -126,7 +126,7 @@ The following code example explains how to set task name field as right label an
 
 {% endhighlight %}
 
-The following screenshot shows Gantt with task labels mapped with different datasource fields
+The following screenshot shows Gantt with task labels mapped with different data source fields
 
 ![](/js/Gantt/Customization_images/Customization_img4.png)
 
@@ -311,3 +311,93 @@ TreeGrid part tooltip can also be customized using [`cellTooltipTemplate`](/api/
 ![](/js/Gantt/Customization_images/Customization_img5.png)
 
 You can find the online demo sample for tooltip templates for taskbars [here](http://js.syncfusion.com/demos/web/#!/bootstrap/gantt/customizations/tooltiptemplate)
+
+### Taskbar Editing Tooltip
+
+Editing tooltip is used to show the updated start date, end date, duration and progress values of a task while resizing, dragging and progress bar resizing actions. Currently two editing tooltips are available in Gantt.
+
+* Taskbar editing tooltip
+* Progress bar editing tooltip
+
+We can customize the default taskbar editing tooltip and progress bar editing tooltip in Gantt.
+
+#### Customize taskbar editing tooltip
+
+Taskbar editing tooltip can be customized by using [`taskbarEditingTooltipTemplate`](/api/js/ejgantt#members:taskbareditingtooltiptemplate) and [`taskbarEditingTooltipTemplateId`](/api/js/ejgantt#members:taskbareditingtooltiptemplateid) properties. The below code example shows how to customize the taskbar editing tooltip in Gantt.
+
+{% highlight javascript %}
+
+<script id="taskbar_editing_tooltip_template" type="text/x-jsrender">
+    <table>
+        <tr>
+            <td colspan="2" style="padding:3px;font-weight:bold;font-style:italic">{{:taskName}}</td>
+        </tr>
+        <tr>
+            <td style="padding:3px;font-weight:bold">Start Date</td>
+            <td style="padding:3px">{{:~getStartDate(#data)}}</td>
+        </tr>
+        <tr>
+            <td style="padding:3px;font-weight:bold">End Date</td>
+            <td style="padding:3px">{{:~getEndDate(#data)}}</td>
+        </tr>
+        <tr>
+            <td style="padding:3px;font-weight:bold">Duration</td>
+            <td style="padding:3px">{{:duration}} {{:durationUnit}}</td>
+        </tr>
+    </table>
+</script>
+<script>
+    $.views.helpers({
+            getStartDate: function () {
+                return ej.format(this.data.startDate, "MM/dd/yyyy", "en-US");
+            },
+            getEndDate: function () {
+                return ej.format(this.data.endDate, "MM/dd/yyyy", "en-US");
+            }
+        });
+
+    $(function() {
+        $("#GanttContainer").ejGantt({
+            //...
+            taskbarEditingTooltipTemplateId: "taskbar_editing_tooltip_template",
+        });
+    });
+</script>
+{% endhighlight %}
+
+The below screenshot shows the output of above code example.
+![](/js/Gantt/Customization_images/Customization_img6.png)
+
+You can find the JS playground sample for this property [here](http://jsplayground.syncfusion.com/Sync_khndhguw).
+
+#### Customize progress bar editing tooltip
+
+Progress bar editing tooltip can be customized by using [`progressbarTooltipTemplate`](/api/js/ejgantt#members:progressbartooltiptemplate) and [`progressbarTooltipTemplateId`](/api/js/ejgantt#members:progressbartooltiptemplateid) properties. The below code example shows how to customize the progress bar editing tooltip in Gantt.
+
+{% highlight javascript %}
+
+<script id="progressbar_editing_tooltip_template" type="text/x-jsrender">
+    <table>
+        <tr>
+            <td colspan="2" style="padding:3px;font-weight:bold;font-style:italic">{{:taskName}}</td>
+        </tr>
+        <tr>
+            <td style="padding:3px;font-weight:bold">Task Status</td>
+            <td style="padding:3px">{{:status}}%</td>
+        </tr>
+    </table>
+</script>
+<script>
+    $(function() {
+        $("#GanttContainer").ejGantt({
+            //...
+            progressbarTooltipTemplateId: "progressbar_editing_tooltip_template",
+        });
+    });
+</script>
+{% endhighlight %}
+
+The below screenshot shows the output of above code example.
+![](/js/Gantt/Customization_images/Customization_img7.png)
+
+You can find the JS playground sample for this property [here](http://jsplayground.syncfusion.com/Sync_aakdzajo).

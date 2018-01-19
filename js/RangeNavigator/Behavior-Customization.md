@@ -8,7 +8,7 @@ documentation: ug
 api: /api/js/ejrangenavigator
 ---
 
-## Behavior Customization
+### Behavior Customization
 
 **RangeNavigator** allows you to customize the control using events. You can change the range for selected data of the **RangeNavigator** using events.
 
@@ -30,13 +30,13 @@ $("#container").ejRangeNavigator(
 {% endhighlight %}
 
 
-![](/js/RangeNavigator/Behavior-Customization_images/Behavior-Customization_img1.png)
-
-## Methods 
+![](/js/RangeNavigator/Behavior-Customization_images/Behavior-Customization_img1.png) 
 
 #### Use of destroy method 
 
-[`_destroy`](../api/ejrangenavigator#methods:_destroy) method is used to destroy the **RangeNavigator** widget. 
+[`_destroy`](../api/ejrangenavigator#methods:_destroy): function
+
+This method is used to destroy the **RangeNavigator** widget. 
 
 {% highlight html %}
 <div id="container"></div>
@@ -48,11 +48,11 @@ $("#container").ejRangeNavigator(
 
 {% endhighlight %}
 
-## Handle Events
+#### Handle Events
 
-#### load
+[`load`](../api/ejrangenavigator#events:load): function
 
-[`load`](../api/ejrangenavigator#events:load) event is fired when **RangeNavigator** is loading. A parameter **sender** is passed to the handler. Using **sender.model**, you can access the RangeNavigator properties. 
+This event is fired when **RangeNavigator** is loading. A parameter **sender** is passed to the handler. Using **sender.model**, you can access the RangeNavigator properties. 
 
 {% highlight javascript %}
 
@@ -69,9 +69,9 @@ $("#container").ejRangeNavigator(
 
 {% endhighlight %}
 
-#### loaded
+[`loaded`](../api/ejrangenavigator#events:loaded): function
 
-[`loaded`](../api/ejrangenavigator#events:loaded) event is handled when the **RangeNavigator** gets loaded. A parameter **sender** is passed to the handler. Using **sender.model**, you can access the RangeNavigator properties. 
+This event is handled when the **RangeNavigator** gets loaded. A parameter **sender** is passed to the handler. Using **sender.model**, you can access the RangeNavigator properties. 
 
 {% highlight javascript %}
 
@@ -88,9 +88,10 @@ $("#container").ejRangeNavigator(
 
 {% endhighlight %}
 
-#### rangeChanged
 
-[`rangeChanged`](../api/ejrangenavigator#events:rangechanged)event gets fired whenever the selected range changes in **RangeNavigator**. A parameter **sender** is passed to the handler. Using sender.selectedRangeSettings, you can access the start and end value of range for the selected region. The [`selectedData`](../api/ejrangenavigator#members:selecteddata) can be obtained when this event is triggered from client side.
+[`rangeChanged`](../api/ejrangenavigator#events:rangechanged): function
+
+This event gets fired whenever the selected range changes in **RangeNavigator**. A parameter **sender** is passed to the handler. Using sender.selectedRangeSettings, you can access the start and end value of range for the selected region. The [`selectedData`](../api/ejrangenavigator#members:selecteddata) can be obtained when this event is triggered from client side.
 
 {% highlight javascript %}
 
@@ -107,9 +108,9 @@ $("#container").ejRangeNavigator(
 
 {% endhighlight %}
 
-#### selectedRangeStart
+[`selectedRangeStart`](../api/ejrangenavigator#events:selectedrangestart): function
 
-[`selectedRangeStart`](../api/ejrangenavigator#events:selectedrangestart) event is fired when starting to change the slider position in **RangeNavigator**. A parameter **sender** is passed to the handler. Using sender.selectedRangeSettings, you can access the start value of range for the selected region. 
+This event is fired when starting to change the slider position in **RangeNavigator**. A parameter **sender** is passed to the handler. Using sender.selectedRangeSettings, you can access the start value of range for the selected region. 
 
 {% highlight javascript %}
 
@@ -126,9 +127,9 @@ $("#container").ejRangeNavigator(
 
 {% endhighlight %}
 
-#### selectedRangeEnd
+[`selectedRangeEnd`](../api/ejrangenavigator#events:selectedrangeend): function
 
-[`selectedRangeEnd`](../api/ejrangenavigator#events:selectedrangeend) event is fired when selection ends in **RangeNavigator**. A parameter **sender** is passed to the handler. Using sender.selectedRangeSettings, you can access the end value of range for the selected region. 
+This event is fired when selection ends in **RangeNavigator**. A parameter **sender** is passed to the handler. Using sender.selectedRangeSettings, you can access the end value of range for the selected region. 
 
 {% highlight javascript %}
 
@@ -145,9 +146,9 @@ $("#container").ejRangeNavigator(
 
 {% endhighlight %}
 
-#### scrollStart
+[`scrollStart`](../api/ejrangenavigator#events:scrollstart): function
 
-[`scrollStart`](../api/ejrangenavigator#events:scrollstart) event is fired when starting to change the scrollbar position of **RangeNavigator**. A parameter **sender** is passed to the handler. Using sender.data startRange and sender.data endRange, you can access the scrollbar position starting and ending range value on changed scrollbar. 
+This event is fired when starting to change the scrollbar position of **RangeNavigator**. A parameter **sender** is passed to the handler. Using sender.data startRange and sender.data endRange, you can access the scrollbar position starting and ending range value on changed scrollbar. 
 
 {% highlight javascript %}
 
@@ -162,9 +163,9 @@ $("#container").ejRangeNavigator(
 
 {% endhighlight %}
 
-#### scrollEnd
+[`scrollEnd`](../api/ejrangenavigator#events:scrollend): function
 
-[`scrollEnd`](../api/ejrangenavigator#events:scrollend) event is fired while ending the change in scrollbar position of **RangeNavigator**. A parameter **sender** is passed to the handler. Using data oldRange and data newRange, you can access the scrollbar position old and new range values on changing scrollbar. 
+This event is fired while ending the change in scrollbar position of **RangeNavigator**. A parameter **sender** is passed to the handler. Using data oldRange and data newRange, you can access the scrollbar position old and new range values on changing scrollbar. 
 
 {% highlight javascript %}
 
@@ -178,9 +179,9 @@ $("#container").ejRangeNavigator(
 
 {% endhighlight %}
 
-#### scrollChanged
+[`scrollChanged`](../api/ejrangenavigator#events:scrollchanged): function
 
-[`scrollChanged`](../api/ejrangenavigator#events:scrollchanged) event is fired when changing the scrollbar position of **RangeNavigator**. A parameter **sender** is passed to the handler. Using data oldRange and data newRange, you can access the old and new range values of changed scrollbar position. 
+This event is fired when changing the scrollbar position of **RangeNavigator**. A parameter **sender** is passed to the handler. Using data oldRange and data newRange, you can access the old and new range values of changed scrollbar position. 
 
 {% highlight javascript %}
 
@@ -194,68 +195,7 @@ $("#container").ejRangeNavigator(
 
 {% endhighlight %}
 
-### Click
-
-[`click`](../api/ejrangenavigator#events:click) event is handled when the **RangeNavigator** gets clicked. A parameter **sender** is passed to the handler. Using **sender.model**, you can access the RangeNavigator properties. 
-
-
-{% highlight js %}
- 
-//Click event for range navigator
-
-$("#container").ejRangeNavigator({
-
-    click: function (args) {
-              //Do something
-    }
-   
-});
-
-{% endhighlight %}
-
-
-### doubleClick
-
-[`doubleClick`](../api/ejrangenavigator#events:doubleclick) event is handled when the **RangeNavigator** gets clicked. A parameter **sender** is passed to the handler. Using **sender.model**, you can access the RangeNavigator properties. 
-
-
-{% highlight js %}
- 
-//DoubleClick event for range navigator.
-
-$("#container").ejRangeNavigator({
-
-    doubleClick: function (args) {
-              //Do something
-    }
-   
-});
-
-{% endhighlight %}
-
-
-
-### rightClick
-
-[`rightClick`](../api/ejrangenavigator#events:rightclick) event is handled when the **RangeNavigator** gets clicked. A parameter **sender** is passed to the handler. Using **sender.model**, you can access the RangeNavigator properties. 
-
-
-{% highlight js %}
- 
-//RightClick event for range navigator
-
-$("#container").ejRangeNavigator({
-    rightClick: function (args) {
-              //Do something
-    }
-   
-});
-
-{% endhighlight %}
-
-
-
-## Use of ZoomCoordinates
+#### Use of ZoomCoordinates
 
 **RangeNavigator** is used along with the controls like chart and grid to view the selected data. To update chart/grid, whenever the selected range changes in **RangeNavigator**, you can use [`rangeChanged`](../api/ejrangenavigator#events:rangechanged) event of **RangeNavigator** and then update the chart/grid with the selected data in this event. 
 
@@ -287,7 +227,7 @@ You can easily update the data for chart by assigning the [`zoomFactor`](../api/
 
 ![](/js/RangeNavigator/Behavior-Customization_images/Behavior-Customization_img2.png) 
 
-## Thumb Template
+#### Thumb Template
 
 You can customize Thumb template by using [`leftThumbTemplate`](../api/ejrangenavigator#members:navigatorstylesettings-leftthumbtemplate) and [`rightThumbTemplate`](../api/ejrangenavigator#members:navigatorstylesettings-rightthumbtemplate) property. You can add the required template as a "div" element with an "id" to the web page and assign the id or assign the HTML string to this property under [`navigatorStyleSettings`](../api/ejrangenavigator#members:navigatorstylesettings).
 
@@ -326,7 +266,7 @@ The following screenshot displays the **RangeNavigator** using thumb template.
 
 ![](/js/RangeNavigator/Behavior-Customization_images/Behavior-Customization_img3.png) 
 
-## Value Axis Settings
+#### Value Axis Settings
 
 You can customize the line, [`font`](../api/ejrangenavigator#members:valueaxissettings-font) [`size`](../api/ejrangenavigator#members:valueaxissettings-font-size), gridline, tickline, range, [`rangePadding`](../api/ejrangenavigator#members:valueaxissettings-rangepadding) and visibility of **RangeNavigator** axis.
 
@@ -358,7 +298,7 @@ $("#container").ejRangeNavigator({
 
 {% endhighlight %}
 
-## Selected Range Settings
+#### Selected Range Settings
 
 The start and end range values of selected range can be customized using [`start`](../api/ejrangenavigator#members:selectedrangesettings-start) and [`end`](../api/ejrangenavigator#members:selectedrangesettings-end) property of [`selectedRangeSettings`](../api/ejrangenavigator#members:selectedrangesettings).
 

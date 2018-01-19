@@ -17,7 +17,7 @@ The`PrevTimeSpan` and `NextTimeSpan` toolbar items are used to create new time s
 {% highlight javascript %}
 
         $(function () {
-            $("#gantt").ejGantt({
+            $("#GanttContainer").ejGantt({
                 // ...
                 //scheduleStartDate: "02/01/2014",
                 //scheduleEndDate: "03/14/2016",
