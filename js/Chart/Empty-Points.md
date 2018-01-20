@@ -42,7 +42,7 @@ The Data points that uses the **null** or **undefined** as value are considered 
 
 ## EmptyPointSettings
 
-You can customize the empty points visibility and change its [`displayMode`](../api/ejchart.html#members:series-emptypointsettings-displayMode) *(gap, zero and average)* using [`emptyPointSettings`](../api/ejchart.html#members:series-emptypointsettings) option.
+You can customize the empty points visibility and change its [`displayMode`](../api/ejchart.html#members:series-emptypointsettings-displaymode) *(gap, zero and average)* using [`emptyPointSettings`](../api/ejchart.html#members:series-emptypointsettings) option.
 
 {% highlight javascript %}
 

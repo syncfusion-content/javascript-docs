@@ -12,7 +12,7 @@ api : /api/js/ejchart
 
 ## Line Chart
 
-To render a Line Chart, set the series [`type`](../api/ejchart#members:series-type) as **"line"** in the chart series. To change the line segment color, you can use the [`fill`](../api/ejchart#members:series-fill) property of the series.
+To render a Line Chart, set the series [`type`](../api/ejchart#members:series-type) as **"line"** in the chart series. To change the line segment color, you can use the [`fill`](../api/ejchart#members:series-fill) property of the series. By default, series visibility is visible. This property is used to control [`visibility`](../api/ejchart#members:series-visibility) of series.
 
 {% highlight javascript %}
 
