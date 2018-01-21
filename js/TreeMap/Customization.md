@@ -14,7 +14,28 @@ api: /api/js/ejtreemap
 
 ## Color
 
-You can customize the colors of the leaf nodes of **TreeMap** using the ColorMapping support of the **TreeMap**. 
+You can customize the color of leaf nodes in **Treemap** either using ColorMapping support of the **Treemap** or mapping a field in the datasource.
+
+## Binding color from the datasource
+
+You can set color for each leaf items from data source by using [`colorPath`](../api/ejtreemap#members:colorpath) property. 
+
+N> While setting color, do not set any other color mapping for treemap because color mapping has higher priority than [`colorPath`](../api/ejtreemap#members:colorpath) property. And also, if [`colorPath`](../api/ejtreemap#members:colorpath) is set, the legend will be generated for each leaf item in treemap. 
+
+{% highlight js %}
+
+        jQuery(function ($) {
+
+            $("#treemapContainer").ejTreeMap({
+                // ...  
+                colorPath : ‘fill’
+                // ...  
+            });
+        });
+
+{% endhighlight %}
+
+![](/js/TreeMap/Customization_images/Customization_img5.png)
 
 ColorMapping is categorized into three different types such as,
 
