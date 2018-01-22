@@ -9,7 +9,7 @@ api: /api/js/ejgantt
 ---
 # Rows 
 
-Row represents a task information from the datasource, and it is possible to perform the following actions in Gantt rows.
+Row represents a task information from the data source, and it is possible to perform the following actions in Gantt rows.
 
 ## Adding a row
 
@@ -240,9 +240,9 @@ $("#GanttContainer").ejGantt({
 
 ![](/js/Gantt/Rows_images/Rows_img7.png)
 
-### Change altRow background
+### Change alternate rows background
 
-The altRow background can be changed by setting the background color for the altRow using CSS. The following code example shows you how to change the altRow color.
+The alternate rows background can be changed by setting the background color for the alternate row elements using CSS. The following code example shows you how to change the alternate rows background color in Gantt.
 
 {% highlight html %}
 <head>
@@ -270,7 +270,7 @@ $("#GanttContainer").ejGantt({
 {% endhighlight %}
 ![](/js/Gantt/Rows_images/Rows_img5.png)
 
-# Row height
+## Row height
 
 It is possible to change the height of the row in Gantt by setting row height in pixels to the [`rowHeight`](/api/js/ejtreegrid#members:rowheight) property. The following code example explains how to change the row height in Gantt at load time.
 
@@ -288,3 +288,107 @@ $("#GanttContainer").ejGantt({
 
 ![](/js/Gantt/Rows_images/Rows_img8.png)
 
+## Expand/Collapse Row
+
+In Gantt parent tasks are expanded/collapsed by using expand/collapse icons, expand all/collapse all toolbar items and by using public methods. By default all tasks in Gantt was rendered in expanded state but we can change this status in Gantt.
+
+### Collapse all tasks at Gantt load
+
+All tasks available in Gantt was rendered in collapsed state by setting [`enableCollapseAll`](/api/js/ejgantt#members:enablecollapseall) property as `true`. The following code example shows how to use this property.
+
+{% highlight javascript %}
+
+$("#GanttContainer").ejGantt({
+    //...     
+    enableCollapseAll: true,
+});
+
+{% endhighlight %}
+
+The below screenshot shows the output of above code example.
+
+![](/js/Gantt/Rows_images/Rows_img9.png)
+
+### Define expand/collapse status of tasks at Gantt load
+
+In Gantt, we can render some tasks in collapsed state and some tasks in expanded state, this can done by defining expand status of the task in data source. This value was mapped to Gantt control by using [`expandStateMapping`](/api/js/ejgantt#members:expandstatemapping) property. The following code example shows how to use this property.
+
+{% highlight javascript %}
+
+ var data = [
+    {
+        taskID: 1,
+        taskName: "Project Schedule",
+        expandState: true,
+        //...
+        subtasks: [
+            {
+                taskID: 2,
+                taskName: "Design",
+                expandState: false,
+                //...
+            }]
+    }];
+
+$("#GanttContainer").ejGantt({
+    dataSource: data,
+    expandStateMapping: "expandState",
+    //...
+});
+
+{% endhighlight %}
+
+The below screenshot shows the output of above code example.
+
+![](/js/Gantt/Rows_images/Rows_img10.png)
+
+
+### Expand/Collapse the task dynamically
+
+Gantt tasks can be expanded/collapsed dynamically by using [`expandCollapseRecord`](/api/js/ejgantt#methods:expandcollapserecord "expandCollapseRecord(taskId)") method. The following code example shows how to use this method.
+
+{% highlight javascript %}
+
+$("#GanttContainer").ejGantt({
+    //...
+});
+
+$("#expandCollapseTask").click(function () {
+    var ganttObj = $("#GanttContainer").ejGantt("instance");
+        ganttObj.expandCollapseRecord(2);
+});
+
+{% endhighlight %}
+
+N> This method was used to toggle the expand status of Gantt task, when we pass the id of task which is in expanded state to this method and this task will be collapsed, similarly collapsed task will be expanded.
+
+### Expand/Collapse all the tasks dynamically
+
+All the tasks in Gantt will be expanded/collapsed by clicking `expandAll` and `collapsedAll` toolabr items or by using [`expandAllItems`](/api/js/ejgantt#methods:expandallitems "expandAllItems()") and [`collapseAllItems`](/api/js/ejgantt#methods:collapseallitems "collapseAllItems()") methods. We can invoke this methods dynamically on any action like external button click. The below code example shows how to use this methods.
+
+{% highlight js %}
+
+$("#GanttContainer").ejGantt({
+    //...
+    toolbarSettings: {
+        showToolbar: true,
+        toolbarItems: [
+            ej.Gantt.ToolbarItems.Add,
+            //..
+            ej.Gantt.ToolbarItems.ExpandAll,
+		    ej.Gantt.ToolbarItems.CollapseAll
+        ]
+    },
+});
+
+$("#expandAllTasks").click(function () {
+    var ganttObj = $("#GanttContainer").ejGantt("instance");
+        ganttObj.expandAllItems();
+});
+
+$("#collapseAllTasks").click(function () {
+    var ganttObj = $("#GanttContainer").ejGantt("instance");
+        ganttObj.collapseAllItems();
+});
+
+{% endhighlight %}
