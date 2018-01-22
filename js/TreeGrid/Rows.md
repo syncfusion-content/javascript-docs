@@ -155,6 +155,47 @@ The output of TreeGrid with **Row Template** is as follows.
 
 ![](/js/TreeGrid/Rows_images/Rows_img1.png)
 
+## Row Height
+The [`rowHeight`](/api/js/ejtreegrid#members:rowheight) property is used to change the height of row in tree grid, default value of this property is 30.
+
+The following code example explains how to change the row height in tree grid
+
+{% highlight js %}
+
+      $("#treegrid").ejTreeGrid({
+          //...     
+          rowHeight: 50,
+          // ...
+       });
+
+{% endhighlight %}
+
+![](/js/TreeGrid/Rows_images/Rows_img5.png)
+
+The above screenshot shows TreeGrid render with row height of 50.
+{:.caption}
+
+## Alternate row styling
+
+Alternate row style is used to enable the different background color for every alternate row. The [`enableAltRow`](/api/js/ejtreegrid#members:enablealtrow) property is used to enable the alternate row style in tree grid, default value of this property is true.
+
+The following code explains about enabling the alternate row style in tree grid
+
+{% highlight js %}
+
+      $("#treegrid").ejTreeGrid({
+          //...     
+          enableAltRow: true,
+          // ...
+       });
+
+{% endhighlight %}
+
+![](/js/TreeGrid/Rows_images/Rows_img4.png)
+
+The above screenshot shows TreeGrid with alternate row style.
+{:.caption}
+
 ## Row Drag and Drop
 
 It is possible to dynamically re-arrange the rows in the TreeGrid control by using the [`allowDragAndDrop`](/api/js/ejtreegrid#members:allowdraganddrop) property. With this property, row drag and drop can be enabled or disabled. Rows can be inserted above, below as a sibling or as a child to the existing row with the help of this feature. A default tooltip is rendered while dragging the TreeGrid row and this tooltip can be customized by the [`dragTooltip`](/api/js/ejtreegrid#members:dragtooltip) property. This property has inner properties such as the [`showTooltip`](/api/js/ejtreegrid#members:dragtooltip-showtooltip "dragTooltip.showTooltip"), [`tooltipItems`](/api/js/ejtreegrid#members:dragtooltip-tooltipitems "dragTooltip.tooltipItems"), [`tooltipTemplate`](/api/js/ejtreegrid#members:dragtooltip-tooltiptemplate "dragTooltip.tooltipTemplate").

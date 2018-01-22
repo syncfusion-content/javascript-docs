@@ -23,6 +23,8 @@ Two types of Data Binding are possible with the TreeGrid control.
 
 ### Hierarchy Datasource Binding
 
+The [`childMapping`](/api/js/ejtreegrid#members:childmapping) property is used to map the child records in hierarchy data source.
+
 The following code example shows you how to bind the hierarchical local data into the TreeGrid control.
 
 {% highlight js %}

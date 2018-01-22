@@ -380,7 +380,7 @@ Following code example explains how to hide the fourth column.
 
 ## Read-only
 
-A column can be made read-only by setting the [`allowEditing`](/api/js/ejtreegrid#members:editsettings-allowediting "editSettings.allowEditing") property as false.
+A column can be made read-only by setting the [`allowEditing`](/api/js/ejtreegrid#members:columns-allowediting "columns.allowEditing") property as false.
 
 N>
 By setting columns.allowEditing as false that specific column alone is made as read only, and by setting the editSettings.allowEditing as false the entire TreeGrid is made read-only.
@@ -497,3 +497,60 @@ Apart by the in-built validation rules, any custom validation rules can also be 
 
 The below image displays the TreeGrid with validation rule applied for a date column.
 ![](/js/TreeGrid/Columns_images/Columns_img7.png)
+
+## Column Reorder
+Column reorder is used to change the order of the column. In ejTreeGrid, [`allowColumnReordering`](/api/js/ejtreegrid#members:allowcolumnreordering) property is used to enable the column re-order, default value of this property is false.
+
+Following code example explains how to enable column reorder in tree grid
+
+{% highlight js %}
+
+    $(function () {
+        $("#TreeGridContainer").ejTreeGrid({
+            //...
+            allowColumnReordering : true,
+            //...
+        })
+    });
+        
+{% endhighlight %}
+
+![](/js/TreeGrid/Columns_images/Columns_img11.png)
+
+The above screenshot shows the column reorder in tree grid.
+{:.caption}
+
+## Text Alignment
+In ejTreeGrid, it is possible to align both content and header text of particular column using the [`textAlign`](/api/js/ejtreegrid#members:columns-textalign "columns.textAlign") and [`headerTextAlign`](/api/js/ejtreegrid#members:columns-headertextalign "columns.headerTextAlign") property of columns.
+There are four possible ways to align content and header text of column, they are
+
+1. Left
+2. Right
+3. Center
+4. Justify
+
+N> 1. The textAlign property will affect both content and header text of the grid, when headerTextAlign is not set in column definition.
+
+Following code example explains how to set text alignment for content and header text in tree grid
+
+{% highlight js %}
+
+    $(function () {
+        $("#TreeGridContainer").ejTreeGrid({
+            //...
+            columns: [
+                { field: "taskID", headerText: "Task Id"},
+                { field: "taskName", headerText: "Task Name" },
+                { field: "startDate", headerText: "Start Date",textAlign:"right",headerTextAlign:"left"},
+                { field: "endDate", headerText: "End Date",textAlign:"center" },
+                { field: "endDate", headerText: "Duration" }
+            ]
+        })
+    });
+
+{% endhighlight %}
+
+![](/js/TreeGrid/Columns_images/Columns_img12.png)
+
+The above screenshot shows tree grid render with text alignment and header text alignment.
+{:.caption}
