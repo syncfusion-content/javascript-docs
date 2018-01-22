@@ -364,7 +364,7 @@ N> This method was used to toggle the expand status of Gantt task, when we pass 
 
 ### Expand/Collapse all the tasks dynamically
 
-All the tasks in Gantt will be expanded/collapsed by clicking `expandAll` and `collapsedAll` toolabr items or by using [`expandAllItems`](/api/js/ejgantt#methods:expandallitems "expandAllItems()") and [`collapseAllItems`](/api/js/ejgantt#methods:collapseallitems "collapseAllItems()") methods. We can invoke this methods dynamically on any action like external button click. The below code example shows how to use this methods.
+All the tasks in Gantt will be expanded/collapsed by clicking `expandAll` and `collapsedAll` toolbar items or by using [`expandAllItems`](/api/js/ejgantt#methods:expandallitems "expandAllItems()") and [`collapseAllItems`](/api/js/ejgantt#methods:collapseallitems "collapseAllItems()") methods. We can invoke this methods dynamically on any action like external button click. The below code example shows how to use this methods.
 
 {% highlight js %}
 
