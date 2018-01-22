@@ -216,7 +216,7 @@ Momentum Technical indicator is created by setting the [`indicators.type`](../ap
 
 ### Moving Average Convergence Divergence (MACD)
 
-To render an MACD indicator, you have to set the [`indicators.type`](../api/ejchart#members:indicators-type) as **"macd"**.  MACD indicator contains MACD line, Signal line and Histogram column. Histogram is used to differentiate MACD and signal line.
+To render an MACD indicator, you have to set the [`indicators.type`](../api/ejchart#members:indicators-type) as **"macd"**.  MACD indicator contains [`MACD line`](../api/ejchart#members:indicators-macdline), Signal line and Histogram column. Histogram is used to differentiate MACD and signal line. The color and width of MACD Line can be customized using [`fill`](../api/ejchart#members:indicators-macdline-fill) and [`width`](../api/ejchart#members:indicators-macdline-width) property.
 
 {% highlight javascript %}
 
