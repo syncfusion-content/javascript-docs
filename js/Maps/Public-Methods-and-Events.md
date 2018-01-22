@@ -314,6 +314,26 @@ $("#container").ejMap({
 {% endhighlight %}
 
 
+### onLoad
+
+Triggers before loading the map, you can use [`onLoad`](../api/ejmap#events:onload) event.
+
+
+
+{% highlight js %}
+ 
+//onLoad event for map
+
+$("#container").ejMap({
+    onLoad: function (args) {
+              //Do something
+    }
+   
+});
+
+{% endhighlight %}
+
+
 
 <a class="" href="http://www.syncfusion.com/copyright" target="_blank">Copyright &copy; 2001 - 2015 Syncfusion Inc. All Rights Reserved</a>
 
