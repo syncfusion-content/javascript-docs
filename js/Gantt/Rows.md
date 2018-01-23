@@ -222,6 +222,33 @@ $("#GanttContainer").ejGantt({
 
 ![](/js/Gantt/Rows_images/Rows_img6.png)
 
+### Customize row drag and drop action
+
+In Gantt, [`rowDragStart`](/api/js/ejgantt#events:rowdragstart), [`rowDrag`](/api/js/ejgantt#events:rowdrag) and [`rowDragStop`](/api/js/ejgantt#events:rowdragstop) events are triggered on row drag and drop action. Using this event we can prevent drag and drop action of particular task and validate the drop position on particular row. The below code example shows how to use this events.
+
+{% highlight javascript %}
+
+$("#GanttContainer").ejGantt({
+    //...
+    allowDragAndDrop: true,
+    rowDragStart: function (args) {
+        if (args.draggedRow.taskId == 6) // Task Id 6 can't be dragged
+            args.cancel = true;
+    },
+    rowDrag: function (args) {
+        if (args.targetRow.taskId == 5 && args.dropPosition == "insertAsChild") // Can't drop task as child on Task Id 5
+            args.canDrop = false;
+    },
+    rowDragStop: function (args) {
+        if (args.targetRow.taskId == 6) // Can't drop any task on Task Id 6
+            args.cancel = true;
+    },
+});
+
+{% endhighlight %}
+
+You can find the JS playground sample for this [here](http://jsplayground.syncfusion.com/Sync_hgbrt1ky "Demo Link").
+
 ## Alternate row background
 
 In Gantt, it is possible to enable or disable the alternate row background using the [`enableAltRow`](/api/js/ejgantt#members:enablealtrow) property. The following code example shows you to disable the alternate row color in Gantt.
