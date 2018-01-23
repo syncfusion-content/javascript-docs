@@ -145,7 +145,9 @@ The following output is displayed as a result of the above code example.
 
 ### Cell Selection Mode
 
-Cell selection mode is enabled by setting the [`cellSelectionMode `](https://help.syncfusion.com/api/js/ejgrid#members:selectionsettings-cellselectionmode "cellselectionMode") property of [`selectionSettings`](https://help.syncfusion.com/api/js/ejgrid#members:selectionsettings "selectionSettings").There are two types of cell selection available in grid. 
+Cell selection mode is enabled by setting the [`cellSelectionMode `](https://help.syncfusion.com/api/js/ejgrid#members:selectionsettings-cellselectionmode "cellselectionMode") property of [`selectionSettings`](https://help.syncfusion.com/api/js/ejgrid#members:selectionsettings "selectionSettings").
+
+There are two types of cell selection available in grid. 
 
 They are as follows:
 
