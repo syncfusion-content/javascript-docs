@@ -37,6 +37,11 @@ While row selecting the following events are triggered,
 1. [`rowSelected`](https://help.syncfusion.com/api/js/ejgrid#events:rowselected "rowSelected")
 2. [`rowSelecting`](https://help.syncfusion.com/api/js/ejgrid#events:rowselecting "rowSelecting")
 
+N> While clearing the row selection the following events are triggered,
+
+N> 1. [`rowDeselected`](https://help.syncfusion.com/api/js/ejgrid#events:rowdeselected "rowDeselected")
+N> 2. [`rowDeselecting`](https://help.syncfusion.com/api/js/ejgrid#events:rowdeselecting "rowDeselecting")
+
 The following code example describes the above behavior.
 
 {% highlight html %}
@@ -64,42 +69,6 @@ The following output is displayed as a result of the above code example.
 ![](selection_images/selection_img1.png)
 
 N> We can get the selected row elements in grid by using [`getSelectedRows`](https://help.syncfusion.com/api/js/ejgrid#methods:getselectedrows "getSelectedRows") method.
-
-# Row selection by external action
-
-To select the rows by external action use [`selectRows`](https://help.syncfusion.com/api/js/ejgrid#methods:selectrows "selectRows") by setting the starting and ending index we can select the rows.
-
-The following code example describes the above behavior.
-
-{% highlight javascript %}
-var gridObj = $("#Grid").data("ejGrid");
-gridObj.selectRows(1, 4); 
-{% endhighlight %}
-
-# Clear selection by external action
-
-To clear the row selection by external action use [`clearSelection`](https://help.syncfusion.com/api/js/ejgrid#methods:clearselection "clearSelection") method.
-
-The following code example describes the above behavior.
-
-{% highlight javascript %}
-var gridObj = $("#Grid").data("ejGrid");
-gridObj.clearSelection(); // clears all of the row selection
-{% endhighlight %}
-
-We can clear the specific row selection by providing the index value in the  [`clearSelection`](https://help.syncfusion.com/api/js/ejgrid#methods:clearselection "clearSelection") .
-
-The following code example describes the above behavior.
-
-{% highlight javascript %}
-var gridObj = $("#Grid").data("ejGrid");
-gridObj.clearSelection(2); // Removes the selection based on the row index
-{% endhighlight %}
-
-While clearing the row selection the following events are triggered,
-
-1. [`rowDeselected`](https://help.syncfusion.com/api/js/ejgrid#events:rowdeselected "rowDeselected")
-2. [`rowDeselecting`](https://help.syncfusion.com/api/js/ejgrid#events:rowdeselecting "rowDeselecting")
 
 ## Multiple Row Selection using Checkbox Column
 
@@ -144,6 +113,11 @@ While cell selecting the following events are triggered,
 1. [`cellSelected`](https://help.syncfusion.com/api/js/ejgrid#events:cellselected "cellSelected")
 2. [`cellSelecting`](https://help.syncfusion.com/api/js/ejgrid#events:cellselecting "cellSelecting")
 
+N> While clearing the cell selection the following events are triggered,
+
+N> 1. [`cellDeselected`](https://help.syncfusion.com/api/js/ejgrid#events:celldeselected "cellDeselected")
+N> 2. [`cellDeselecting`](https://help.syncfusion.com/api/js/ejgrid#events:celldeselecting "cellDeselecting")
+
 
 The following code example describes the above behavior.
 
@@ -168,34 +142,6 @@ $(function () {
 The following output is displayed as a result of the above code example.
 
 ![](selection_images/selection_img2.png)
-
-# Cell selection by external action
-
-we can select the cell externally by using [`selectCells`](https://help.syncfusion.com/api/js/ejgrid#methods:selectcells "selectCells") method. By setting starting index of row and indexes of cells for that corresponding row for selecting cells.
-
-The following code example describes the above behavior.
-
-{% highlight javascript %}
-var gridObj = $("#Grid").data("ejGrid");
-gridObj.selectCells([[1, [4, 3, 2]]]); 
-{% endhighlight %}
-
-
-# Clear cell selection by external action
-
-We can clear the cell selection using  [`clearCellSelection`](https://help.syncfusion.com/api/js/ejgrid#methods:clearcellselection "clearCellSelection") method.
-
-The following code example describes the above behavior.
-
-{% highlight javascript %}
-var gridObj = $("#Grid").data("ejGrid");
-gridObj.clearCellSelection();
-{% endhighlight %}
-
-While clearing the cell selection the following events are triggered,
-
-1. [`cellDeselected`](https://help.syncfusion.com/api/js/ejgrid#events:celldeselected "cellDeselected")
-2. [`cellDeselecting`](https://help.syncfusion.com/api/js/ejgrid#events:celldeselecting "cellDeselecting")
 
 ### Cell Selection Mode
 
@@ -242,6 +188,11 @@ While column selecting the following events are triggered,
 1. [`columnSelected`](https://help.syncfusion.com/api/js/ejgrid#events:columnselected "columnSelected")
 2. [`columnSelecting`](https://help.syncfusion.com/api/js/ejgrid#events:columnselecting "columnSelecting")
 
+N> While clearing the column selection the following events are triggered,
+
+N> 1. [`columnDeselected`](https://help.syncfusion.com/api/js/ejgrid#events:columndeselected "columnDeselected")
+N> 2. [`columnDeselecting`](https://help.syncfusion.com/api/js/ejgrid#events:columndeselecting "columnDeselecting")
+
 The following code example describes the above behavior.
 
 {% highlight html %}
@@ -265,43 +216,6 @@ $(function () {
 The following output is displayed as a result of the above code example.
 
 ![](selection_images/selection_img4.png)
-
-# Column selection by external action
-
-we can select the column externally by using [`selectColumns`](https://help.syncfusion.com/api/js/ejgrid#methods:selectcolumns "selectColumns") method. By setting starting index of column for selecting columns.
-
-The following code example describes the above behavior.
-
-{% highlight javascript %}
-var gridObj = $("#Grid").data("ejGrid");
-gridObj.selectColumns(1,4); 
-{% endhighlight %}
-
-While clearing the column selection the following events are triggered,
-
-1. [`columnDeselected`](https://help.syncfusion.com/api/js/ejgrid#events:columndeselected "columnDeselected")
-2. [`columnDeselecting`](https://help.syncfusion.com/api/js/ejgrid#events:columndeselecting "columnDeselecting")
-
-# Clear column selection by external action
-
-To clear the column selection by external action use [`clearColumnSelection`](https://help.syncfusion.com/api/js/ejgrid#methods:clearcolumnselection "clearColumnSelection") method.
-
-The following code example describes the above behavior.
-
-{% highlight javascript %}
-var gridObj = $("#Grid").ejGrid("instance")
-gridObj.clearColumnSelection(); // clears all of the column selection
-{% endhighlight %}
-
-We can clear the specific column selection by providing the index value in the  [`clearColumnSelection`](https://help.syncfusion.com/api/js/ejgrid#methods:clearcolumnselection "clearColumnSelection") .
-
-The following code example describes the above behavior.
-
-{% highlight javascript %}
-var gridObj = $("#Grid").ejGrid("instance")
-gridObj.clearColumnSelection(2); // Removes the selection based on the row index
-{% endhighlight %}
-
 
 ## Touch options
 
@@ -357,4 +271,73 @@ $(function () {
 	});
 });
 {% endhighlight %}
+
+# Selection customization by external action
+
+To control the grid selection by external action use following methods,
+
+1. [`selectRows`](https://help.syncfusion.com/api/js/ejgrid#methods:selectrows "selectRows")
+2. [`selectCells`](https://help.syncfusion.com/api/js/ejgrid#methods:selectcells "selectCells")
+3. [`selectColumns`](https://help.syncfusion.com/api/js/ejgrid#methods:selectcolumns "selectColumns") 
+4. [`clearColumnSelection`](https://help.syncfusion.com/api/js/ejgrid#methods:clearcolumnselection "clearColumnSelection")
+5. [`clearCellSelection`](https://help.syncfusion.com/api/js/ejgrid#methods:clearcellselection "clearCellSelection")
+6. [`clearSelection`](https://help.syncfusion.com/api/js/ejgrid#methods:clearselection "clearSelection")
+
+Here we select the 'EmployeeID','Freight' and 'ShipCity' columns using the [`selectColumns`](https://help.syncfusion.com/api/js/ejgrid#methods:selectcolumns "selectColumns") method by providing the corresponding index value.
+
+The following code example describes the above behavior.
+
+{% highlight html %}
+<button id="selectRows" class ="buttons" >selectRows</button>
+<button id="selectColumns" class ="buttons" >selectColumns</button>
+<button id="selectCells" class ="buttons" >selectCells</button>     
+<br/></br>
+<button id="clearSelection" class ="buttons" >clearSelection</button>
+<button id="clearColumnSelection" class ="buttons" >clearColumnSelection</button>
+<button id="clearCellSelection" class ="buttons" >clearCellSelection</button>
+<br/></br>
+<div>Selection Mode</div>
+<br/></br>
+</div><select id="selectionMode">
+        <option value="row">Row</option>
+        <option value="cell">Cell</option>
+        <option value="column">Column</option>
+      </select>
+</div>
+<br/></br>
+<div id="Grid"></div>
+{% endhighlight %}
+
+{% highlight javascript %}
+$(function () {
+	$("#Grid").ejGrid({
+		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+		dataSource : window.gridData,
+		allowPaging:true,
+        pageSettings:{pageSize:8},
+        selectionType: "multiple",
+        enableRowHover: false,
+		columns : ["OrderID", "EmployeeID","Freight", "ShipCity", "ShipCountry"]
+	});
+$("#selectionMode").ejDropDownList({ width: "120px", change: "onSelectionModeChange"});
+});
+function onSelectionModeChange(args) {
+    var mode = $("#selectionMode").data("ejDropDownList")._selectedValue;
+    $("#Grid").ejGrid({ selectionSettings: {selectionMode: [mode]} });
+}
+$(".buttons").ejButton({click:function(args){
+     var option=args.target.id;
+     if(option=="clearSelection" || option == "clearColumnSelection" || option == "clearCellSelection")
+       $("#Grid").ejGrid(option);
+     if(option=="selectRows" || option=="selectColumns")
+       $("#Grid").ejGrid(option, 1, 3); // Selection based on the given index
+     if(option == "selectCells")
+       $("#Grid").ejGrid("selectCells", [[1, [4, 3, 2]]]); // Selects cells based on the given index
+    }
+});
+{% endhighlight %}
+
+The following output is displayed as a result of the above code example.
+
+![](selection_images/selection_img10.png)
 
