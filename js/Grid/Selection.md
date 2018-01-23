@@ -30,7 +30,9 @@ Multiple selections is an interactive support to select a group of rows, cells o
 
 Row selection is enabled by setting the [`selectionMode`](https://help.syncfusion.com/api/js/ejgrid#members:selectionsettings-selectionmode "selectionMode") property of [`selectionSettings`](https://help.syncfusion.com/api/js/ejgrid#members:selectionsettings "selectionSettings") as `row`. For random row selection, press **"Ctrl + mouse left"** click and for continuous row selection press **"Shift + mouse left"** click on the grid rows. To unselect the selected rows, press **"Ctrl + mouse left"** click on the selected row.
 
-To select the row while initializing the grid use [`selectedRowIndex `](https://help.syncfusion.com/api/js/ejgrid#members:selectedrecords "selectedRowIndex ") property.
+To select the row while initializing the grid use [`selectedRowIndex `](https://help.syncfusion.com/api/js/ejgrid#members:selectedrowindex "selectedRowIndex ") property. 
+
+We can display the array of selected records in the grid  by using [`selectedRecords  `](https://help.syncfusion.com/api/js/ejgrid#members:selectedrecords "selectedRecords  ") property.
 
 While row selecting the following events are triggered,
 
