@@ -30,3 +30,5 @@ The above code example makes Fridays and Saturdays as non-working days in a week
 
 The above screen shot will be displayed after changing the non-working days in Gantt.
 {:.caption}
+
+N> In Gantt, we can make weekend as working day by setting [`includeWeekend`](/api/js/ejgantt#members:includeweekend) property as `true`.
