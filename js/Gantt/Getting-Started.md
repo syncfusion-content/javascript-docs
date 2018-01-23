@@ -356,3 +356,26 @@ In Gantt, you can on or off weekends high lighting by setting the [`highlightWee
 The following screen shot displays Gantt chart in which highlight weekends is disabled:
 
 ![](/js/Gantt/Getting-Started_images/Getting-Started_img12.png)
+
+## Define dimension of Gantt
+
+By default Gantt control was rendered with `100%` width and `450px` height, we can define the dimension of Gantt control by using [`sizeSettings`](/api/js/ejgantt#members:sizesettings) property. Gantt control width and height can be defined by either [`height`](/api/js/ejgantt#members:sizesettings-height "sizeSettings.height") and [`width`](/api/js/ejgantt#members:sizesettings-width "sizeSettings.width") properties or by defining inline style in Gantt container element. The below code example shows how to define width and height for Gantt control.
+
+{% highlight html %}
+
+<!--<div id="GanttContainer" style="width:700px;height:350px"></div>-->
+<div id="GanttContainer"></div>
+
+<script>
+    $("#GanttContainer").ejGantt({   
+        //...
+        sizeSettings:{
+            width: "700px",
+            height: "350px"
+        }
+    });
+</script>
+
+{% endhighlight %}
+
+N> Gantt control will automatically update the width and height value based on container element on window resize action, this can be enabled by setting [`isResponsive`](/api/js/ejgantt#members:isresponsive) property as `true` for this [`height`](/api/js/ejgantt#members:sizesettings-height "sizeSettings.height") and [`width`](/api/js/ejgantt#members:sizesettings-width "sizeSettings.width") value will be defined in percentage.

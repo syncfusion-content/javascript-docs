@@ -25,10 +25,10 @@ Id value of Gantt tasks can be changed dynamically by using [`updateTaskId`](/ap
 
 The below screen shows the output of above code example.
 
-![](/js/Gantt/Update-Task-Id_images/Update-Task-Id_img1.png)
+![](/js/Gantt/How-to/Update-Task-Id_images/Update-Task-Id_img1.png)
 Before id update
 {:.caption}
 
-![](/js/Gantt/Update-Task-Id_images/Update-Task-Id_img2.png)
+![](/js/Gantt/How-to/Update-Task-Id_images/Update-Task-Id_img2.png)
 After id update
 {:.caption}
