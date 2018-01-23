@@ -285,7 +285,7 @@ To control the grid selection by external action use following methods,
 5. [`clearCellSelection`](https://help.syncfusion.com/api/js/ejgrid#methods:clearcellselection "clearCellSelection")
 6. [`clearSelection`](https://help.syncfusion.com/api/js/ejgrid#methods:clearselection "clearSelection")
 
-Here we select the 'EmployeeID','Freight' and 'ShipCity' columns using the [`selectColumns`](https://help.syncfusion.com/api/js/ejgrid#methods:selectcolumns "selectColumns") method by providing the corresponding index value.
+Here we select the `EmployeeID`, `Freight` and `ShipCity` columns using the [`selectColumns`](https://help.syncfusion.com/api/js/ejgrid#methods:selectcolumns "selectColumns") method by providing the corresponding index value.
 
 The following code example describes the above behavior.
 
