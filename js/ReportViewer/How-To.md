@@ -1,13 +1,17 @@
 ---
 layout: post
-title: Custom Report Item
-description: Overview of Custom Report Item
+title: Add Custom Report Item Run-Time Component
+description: Adding a Custom Report Item Run-Time Component
 platform: js
 control: ReportViewer
 documentation: ug
+keywords: Custom Report Item
+api: /api/js/ejreportviewer
 ---
 
-## Overview
+# How To
+
+## Add custom report item run-time component to report viewer
 
 A custom report item allows you to add the functionality that is not natively supported in the RDL or extend the functionality of existing controls in the RDL standard. The run-time component allows to render the custom report item in report viewer.
 
@@ -21,9 +25,9 @@ The run-time component of the custom report item is implemented using CLS-compli
 ### Create report item assembly
 
 1.	Open the Visual Studio and select the class library project type, and then name the project as "Syncfusion.Extensions.BarcodeCRI" for the run-time component.
-    ![](Add-Custom-Report-Item-images/Custom-Report-Item-2.png)
+    ![](Custom-Report-Item-images/Custom-Report-Item-2.png)
 2.	Add the reference "Syncfusion.EJ.ReportViewer" for the extension project.
-    ![](Add-Custom-Report-Item-images/Custom-Report-Item-3.png)  
+    ![](Custom-Report-Item-images/Custom-Report-Item-3.png)  
 3.  Add a class "BarcodeCustomReportItem" by inheriting the `ICustomReportItem` interface.
 
 >Note: Refer the above assemblies from the below installed location.
@@ -215,7 +219,7 @@ You need to replace the newly created assembly and its dependent assemblies in t
 After creating the config file, add it to the report viewer application.
 
 Run the application, output with the bar code custom report item is rendered as below.
-![](Add-Custom-Report-Item-images/Custom-Report-Item-1.png)
+![](Custom-Report-Item-images/Custom-Report-Item-1.png)
 
 Shows the invoice report rendered with the bar code custom report item.
    {:.caption}	
