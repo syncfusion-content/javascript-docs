@@ -88,7 +88,7 @@ The following screenshot shows the output of above code example.
 Before Sorting
 {:.caption}
 
-![](/js/Gantt/Sorting_images/Sorting_img3.png)
+![](/js/Gantt/Sorting_images/Sorting_img4.png)
 After Sorting
 {:.caption}
 
@@ -96,7 +96,7 @@ N> when sorting a column using this method, previously sorted columns are cleare
 
 ## Sorting multiple columns dynamically
 
-Multiple columns in Gantt can be sorted dynamically by using [`setModel`] method with [`sortSetting`](/api/js/ejgantt#members:sortsettings) property. The following code example shows how to use this method.
+Multiple columns in Gantt can be sorted dynamically by using `setModel` method with [`sortSetting`](/api/js/ejgantt#members:sortsettings) property. The following code example shows how to use this method.
 
 {% highlight javascript %}
 

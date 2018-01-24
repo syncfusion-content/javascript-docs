@@ -282,3 +282,30 @@ In Gantt [`cssClass`](/api/js/ejgantt#members:cssclass) property was used to app
 The below screenshot shows the output of above code example.
 
 ![](/js/Gantt/Appearance-and-Styling_images/Appearance-and-Styling_img11.png)
+
+## Customize rows and cells
+
+While rendering the rows in Grid part of Gantt [`rowDataBound`](/api/js/ejgantt#events:rowdatabound) event and [`queryCellInfo`](/api/js/ejgantt#events:querycellinfo) event will be triggered for each rows and cells. Using this event we can customize the rows and cells. The below code example shows how to customize the cell and row element using this events.
+
+{% highlight javascript %}
+
+$("#GanttContainer").ejGantt({
+    //...
+    queryCellInfo: function (args) {
+        if (args.column.mappingName == "progress") {
+            if (args.data.item["progress"] < 80)
+                $(args.cellElement).css("background-color", "rgba(255, 0, 0, 0.12)");
+            else
+                $(args.cellElement).css("background-color", "rgba(86, 226, 86, 0.25)");
+        } 
+    },
+    rowDataBound: function (args) {
+        if (args.data.item["taskID"] == 5)
+            $(args.rowElement).css("background-color", "rgba(251, 255, 0, 0.24)");
+    },
+});
+
+{% endhighlight %}
+
+The below screenshot shows the output of above code example.
+![](/js/Gantt/Appearance-and-Styling_images/Appearance-and-Styling_img12.png)
