@@ -356,3 +356,98 @@ In Gantt, you can on or off weekends high lighting by setting the [`highlightWee
 The following screen shot displays Gantt chart in which highlight weekends is disabled:
 
 ![](/js/Gantt/Getting-Started_images/Getting-Started_img12.png)
+
+## Define dimension of Gantt
+
+By default Gantt control was rendered with `100%` width and `450px` height, we can define the dimension of Gantt control by using [`sizeSettings`](/api/js/ejgantt#members:sizesettings) property. Gantt control width and height can be defined by either [`height`](/api/js/ejgantt#members:sizesettings-height "sizeSettings.height") and [`width`](/api/js/ejgantt#members:sizesettings-width "sizeSettings.width") properties or by defining inline style in Gantt container element. The below code example shows how to define width and height for Gantt control.
+
+{% highlight html %}
+
+<!--<div id="GanttContainer" style="width:700px;height:350px"></div>-->
+<div id="GanttContainer"></div>
+
+<script>
+    $("#GanttContainer").ejGantt({   
+        //...
+        sizeSettings:{
+            width: "700px",
+            height: "350px"
+        }
+    });
+</script>
+
+{% endhighlight %}
+
+N> Gantt control will automatically update the width and height value based on container element on window resize action, this can be enabled by setting [`isResponsive`](/api/js/ejgantt#members:isresponsive) property as `true` for this [`height`](/api/js/ejgantt#members:sizesettings-height "sizeSettings.height") and [`width`](/api/js/ejgantt#members:sizesettings-width "sizeSettings.width") value will be defined in percentage.
+
+## Add notes in tasks
+
+In Gantt, we can add additional information about the tasks, this information can be defined in data source and this field was mapped to Gantt control by using [`notesMapping`](/api/js/ejgantt#members:notesmapping) property. Notes values can be defined as string or in HTML string format. This notes content was displayed in `Notes` column and notes value can be updated by using cell editing and dialog editing. The following code example shows how to use the [`notesMapping`](/api/js/ejgantt#members:notesmapping) property.
+
+{% highlight javascript %}
+
+var data = [
+    //...
+    {
+        taskID: 4, 
+        taskName: "Develop prototype",
+        notesContent: "we can show additional information here",
+        //...
+    },
+    //...
+];
+
+$("#GanttContainer").ejGantt({
+    //...
+    dataSource: data,
+    notesMapping: "notesContent",
+});
+
+{% endhighlight %}
+
+The below screenshot shows the output of above code example.
+![](/js/Gantt/Getting-Started_images/Getting-Started_img13.png)
+Notes column in Gantt
+{:.caption}
+
+![](/js/Gantt/Getting-Started_images/Getting-Started_img14.png)
+Editing notes in edit dialog
+{:.caption}
+
+N> Notes value was displayed as plain text in Grid part and also when we edit the notes value by cell editing, value was stored as string value. We can use edit dialog to update the notes value of task in HTML string format.
+
+## Milestones in Gantt
+
+Milestones are used to denote the important event/stages in project management. Milestones start date and end date value will be same and duration value was `0`. Gantt tasks are rendered as milestone if the task duration value was `0` and we will define task was milestone or not in data source and this field was mapped to Gantt by using [`milestoneMapping`](/api/js/ejgantt#members:milestonemapping) property. The below code example shows how to use this property.
+
+{% highlight javascript %}
+
+var data = [
+    //...
+    {
+        taskID: 4, 
+        taskName: "Develop prototype",
+        isMileStone: false,
+        //..
+    },
+    {
+        taskID: 5, 
+        taskName: "Get approval from customer",
+        startDate: new Date("02/10/2014"),
+        endDate: new Date("02/14/2014"),
+        duration: 2,
+        isMileStone: true,
+    },
+    //...
+];
+
+$("#GanttContainer").ejGantt({
+    //...
+    dataSource: data,
+    milestoneMapping: "isMileStone",
+});
+
+{% endhighlight %}
+
+The below screenshot shows the output of above code example.
+![](/js/Gantt/Getting-Started_images/Getting-Started_img15.png)

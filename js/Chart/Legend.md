@@ -465,7 +465,7 @@ You can get the legend item details such as *index*, *bounds*, *shape* and *seri
 
 ## Series selection on legend item click
 
-You can select a specific series or point while clicking on the corresponding legend item through disabling the [`toggleSeriesVisibility`](../api/ejchart#members:legend-toggleSeriesVisibility) option of the legend. The default value of toggleSeriesVisibility option is **true**. To customize the series selection refer to the series [`selection`](../api/ejchart.html#members:series-selectionsettings).
+You can select a specific series or point while clicking on the corresponding legend item through disabling the [`toggleSeriesVisibility`](../api/ejchart#members:legend-toggleseriesvisibility) option of the legend. The default value of toggleSeriesVisibility option is **true**. To customize the series selection refer to the series [`selection`](../api/ejchart.html#members:series-selectionsettings).
 
 {% highlight javascript %}
 
@@ -543,7 +543,7 @@ Options to customize the [`font`](../api/ejchart#members:legend-font)used for le
 
 ## legend font fontStyle
 
-[`Fontstyle`] for legend item text.
+[`Fontstyle`](../api/ejchart#members:legend-font-fontstyle) for legend item text.
 
 {% highlight javascript %}
 
