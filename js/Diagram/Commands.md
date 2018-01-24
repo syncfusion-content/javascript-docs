@@ -351,7 +351,7 @@ To define a custom command, you need to specify following properties.
 * `canExecute`: a method to define whether the command can be executed at the moment. 
 * `gesture`: the combination of key gestures.
 
-To explore the properties of custom commands, refer to [Commands](/api/js/ejDiagram#commandmanager:commands "Commands")
+To explore the properties of custom commands, refer to [Commands](/api/js/ejdiagram#members:commandmanager-commands "Commands")
 
 The following code example illustrates how to define a custom command.
 

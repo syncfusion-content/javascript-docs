@@ -224,6 +224,30 @@ You can also enable or disable the progress bar resizing by using the [`enablePr
 
 {% endhighlight %}
 
+### Prevent taskbar editing for particular task
+
+On taskbar edit action [`taskbarEditing`](/api/js/ejgantt#events:taskbarediting) and [`taskbarEdited`](/api/js/ejgantt#events:taskbaredited) event will be triggered. We can prevent the taskbar from editing by using [`taskbarEditing`](/api/js/ejgantt#events:taskbarediting) event and we can revert taskbar edit action by using [`taskbarEdited`](/api/js/ejgantt#events:taskbaredited) event. The following code example shows how to achieve this.
+
+{% highlight javascript %}
+
+    $("#GanttContainer").ejGantt({
+        //...
+        allowGanttChartEditing: true,
+        taskbarEditing: function (args) {
+            if (args.rowData.taskId == 4) // We can't edit Task Id 4
+                args.cancel = true;
+        },
+        taskbarEdited: function (args) { // We can edit task id 5 task but changes reverted on mouse up action
+            if (args.data.taskId == 5)
+                args.cancel = true;
+        },
+        
+    });
+
+{% endhighlight %}
+
+You can find the JS playground sample for this [here](http://jsplayground.syncfusion.com/Sync_p3zjn5kw "Demo Link").
+
 ## Predecessor Editing
 
 Update the predecessor details of a task using mouse interactions. The following code example shows how to enable predecessor editing.

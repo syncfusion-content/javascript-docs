@@ -13,7 +13,7 @@ api: /api/js/ejdiagram
 * Diagram can be populated with the nodes and connectors based on the information provided from an external data source.
 * Diagram exposes its specific data-related properties allowing you to specify the data source fields from where the node information has to be retrieved from.
 
-To explore those properties, see [Data source settings](/api/js/ejDiagram#members:datasourcesettings "Data source settings")
+To explore those properties, see [Data source settings](/api/js/ejdiagram#members:datasourcesettings "Data source settings")
 
 * Diagram supports three different kinds of Data binding.
 	* Local Data
