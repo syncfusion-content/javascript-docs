@@ -32,7 +32,7 @@ For Essential Studio: C:\Program Files (x86)\Syncfusion\Essential Studio{{ site.
 
 ### Implementing the ICustomReportItem interface
 
-To create a CustomReportItem run-time component, you should implement the `ICustomReportItem` interface. It generates the following two method stubs:
+To create a CustomReportItem run-time component, you should implement the `ICustomReportItem` interface. It generates the following two method stubs.
 
 <table>
 <tr>
@@ -174,7 +174,7 @@ To deploy a custom report item, you must modify the application configuration fi
 You need to replace the newly created assembly and its dependent assemblies in the application bin folder. 
 
 1.	Create "ReportExtensions.config" file in your application.
-2.	The following "configSections" section is mandatory to process the extension inside the control, so add it as shown in the following code:
+2.	The following "configSections" section is mandatory to process the extension inside the control, so add it as shown in the following code.
 
 {% highlight xml %}
 <configSections>
@@ -182,7 +182,7 @@ You need to replace the newly created assembly and its dependent assemblies in t
 </configSections>
 {% endhighlight %}
 
-3.	You must add the `ReportItem` tag for all newly added report item types. It has following attributes:
+3.	You must add the `ReportItem` tag for all newly added report item types. It has following attributes.
 
 <table>
 <tr>
@@ -214,7 +214,7 @@ You need to replace the newly created assembly and its dependent assemblies in t
 
 After creating the config file, add it to the report viewer application.
 
-Run the application, output with the bar code custom report item is rendered as below:
+Run the application, output with the bar code custom report item is rendered as below.
 ![](Add-Custom-Report-Item-images/Custom-Report-Item-1.png)
 
 Shows the invoice report rendered with the bar code custom report item.
