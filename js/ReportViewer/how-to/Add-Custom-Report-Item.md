@@ -173,7 +173,7 @@ Create "ReportExtensions.config" file in your application. The following "config
 </configSections>
 {% endhighlight %}
 
-You must add the `ReportItem` tag for all newly added report item types. It has following attributes.
+You must add the `ReportItem` tag for all newly added custom report item with the following attributes.
 
 <table>
 <tr>
