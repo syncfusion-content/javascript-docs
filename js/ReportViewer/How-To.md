@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Add Custom Report Item Run-Time Component
-description: Adding a Custom Report Item Run-Time Component
+title: Create Custom Report Item Run-Time Component
+description: Creating a custom report item run-time component in report viewer
 platform: js
 control: ReportViewer
 documentation: ug
@@ -11,14 +11,11 @@ api: /api/js/ejreportviewer
 
 # How To
 
-## Add custom report item run-time component to report viewer
+## Creating a custom report item run-time component
 
 A custom report item allows you to add the functionality that is not natively supported in the RDL or extend the functionality of existing controls in the RDL standard. The run-time component allows to render the custom report item in report viewer.
 
->Note: You can to create a standalone report viewer application with the help of the given [Create a standalone report viewer application in web report viewer platform.](/js/reportviewer/getting-started)
-
-
-## Creating a custom report item run-time component
+>Note: You can create a standalone report viewer application with the help of given [Getting Started Documentation.](/js/reportviewer/getting-started)
 
 The run-time component of the custom report item is implemented using CLS-compliant language, and is called by the report processor at run-time. The below section provides detail to create run-time component of the bar code custom report item for report viewer.
 
