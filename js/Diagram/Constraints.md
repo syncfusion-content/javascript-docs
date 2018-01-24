@@ -22,7 +22,7 @@ Diagram constraints allow to enable or disable the following behaviors.
 * Crisp Edges
 * Resizing
 
-For more information about Diagram constraints, refer to [Diagram Constraints](/api/js/global#diagramconstraints "Diagram Constraints").
+For more information about Diagram constraints, refer to [Diagram Constraints](/api/js/ejdiagram#members:constraints "Diagram Constraints").
 
 **Example**
 
@@ -54,7 +54,7 @@ NodeConstraints allows to enable or disable the following behaviors of node.
 * Crisp Edges
 * Interaction
 
-For more information about node constraints, refer to [Node Constraints](/api/js/global#nodeconstraints "Node Constraints")
+For more information about node constraints, refer to [Node Constraints](/api/js/ejdiagram#members:nodes-constraints "Node Constraints")
 
 **Example**
 
@@ -89,7 +89,7 @@ ConnectorConstraints allow to enable or disable certain behaviors of Connectors.
 * Crisp Edges
 * Interaction
 
-For more information about connector constraints, refer to [Connector Constraints](/api/js/global#connectorconstraints "Connector Constraints")
+For more information about connector constraints, refer to [Connector Constraints](/api/js/ejdiagram#members:connectors-constraints "Connector Constraints")
 
 **Example**
 
@@ -117,7 +117,7 @@ You can enable or disable certain behaviors of Port. They are as follows.
 * Connect
 * ConnectOnDrag
 
-For more information about port constraints, refer to [Port Constraints](/api/js/global#portconstraints "Port Constraints")
+For more information about port constraints, refer to [Port Constraints](/api/js/ejdiagram#members:nodes-ports-constraints "Port Constraints")
 
 **Example**
 
@@ -147,7 +147,7 @@ Selector visually represents the selected elements with certain editable thumbs.
 * Rotator
 * User handles
 
-For more information about Selector constraints, refer to [Selector Constraints](/api/js/global#selectorconstraints "Selector Constraints")
+For more information about Selector constraints, refer to [Selector Constraints](/api/js/ejdiagram#members:selecteditems-constraints "Selector Constraints")
 
 **Example**
 
@@ -174,7 +174,7 @@ Snap Constraints control the visibility of gridlines and enable/disable snapping
 * Snap to either horizontal or vertical gridlines
 * Snap to both horizontal and vertical gridlines
 
-For more information about snap constraints, refer to [Snap Constraints](/api/js/global#snapconstraints "Snap Constraints")
+For more information about snap constraints, refer to [Snap Constraints](/api/js/ejdiagram#members:snapsettings-snapconstraints "Snap Constraints")
 
 **Example**
 
