@@ -154,7 +154,7 @@ var options = {
 diagram.exportDiagram(options);
 
 //By default, Diagram is exported with stretch option as "none". 
-For more information about the various stretch options refer to [Stretch options](api/js/ejdiagram#methods:exportdiagram )
+For more information about the various stretch options refer to [Stretch options](/api/js/ejdiagram#methods:exportdiagram )
 
 {% endhighlight %}
 
