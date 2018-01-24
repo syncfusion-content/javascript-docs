@@ -477,11 +477,11 @@ $("#diagram").ejDiagram({
 
 Orientation, spacings, and position of layout can be customized with a set of properties.
 
-To explore layout properties, refer to [Layout Properties](/api/js/ejDiagram#members:layout "Layout Properties").
+To explore layout properties, refer to [Layout Properties](/api/js/ejdiagram#members:layout "Layout Properties").
 
 ### Layout Bounds 
 
-Diagram provides support to align the layout within any custom rectangular area. For more information about bounds, refer to [Layout Bounds] (/api/js/ejDiagram#members:layout-bounds "Layout Bounds")
+Diagram provides support to align the layout within any custom rectangular area. For more information about bounds, refer to [Layout Bounds] (/api/js/ejdiagram#members:layout-bounds "Layout Bounds")
 
 ### Layout Alignment
 
@@ -713,7 +713,7 @@ In above example, while expanding/collapsing a node, it is set as fixed node in 
 
 ### Refresh layout
 
-Diagram allows to refresh the layout at runtime. To refresh the layout, refer to [Refresh layout](/api/js/ejDiagram#methods:layout "Refresh layout").
+Diagram allows to refresh the layout at runtime. To refresh the layout, refer to [Refresh layout](/api/js/ejdiagram#methods:layout "Refresh layout").
 
 ### nodeTemplate
 

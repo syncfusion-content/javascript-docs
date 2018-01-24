@@ -419,3 +419,27 @@ $("#collapseAllTasks").click(function () {
 });
 
 {% endhighlight %}
+
+### Customize expand/collapse action
+
+On expand action [`expanding`](/api/js/ejgantt#events:expanding) and [`expanded`](/api/js/ejgantt#events:expanded) event will be triggered with current expanding row's information. Similarly on collapse action [`collapsing`](/api/js/ejgantt#events:collapsing) and [`collapsed`](/api/js/ejgantt#events:collapsed) event will be triggered. Using this events and it's arguments we can customize the expand/collapse action. The following code example shows how to prevent the particular row from expand/collapse action using [`expanding`](/api/js/ejgantt#events:expanding) and [`collapsing`](/api/js/ejgantt#events:collapsing) event.
+
+{% highlight js %}
+
+$("#GanttContainer").ejGantt({
+    //...
+    expandStateMapping: "expandState",
+    expanding: function (args) {
+        if (args.data.taskId == 2) // we can't expand Task Id 2
+            args.cancel = true;
+    },
+    collapsing: function (args) { // we can't collapse Task Id 1
+        if (args.data.taskId == 1)
+            args.cancel = true;
+    },
+    
+});
+
+{% endhighlight %}
+
+You can find the JS playground sample for this [here](http://jsplayground.syncfusion.com/Sync_wmcj2lbp "Demo Link").
