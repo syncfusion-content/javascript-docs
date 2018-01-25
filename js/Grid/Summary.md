@@ -212,7 +212,7 @@ Custom Summary can be used to create summary values based on your required custo
 
 ![](Summary_images/summaryGrid_img4.png)
 
-## Prefix And Suffix
+## Summary values with Prefix And Suffix
 
 Summaries with Prefix and Suffix can be added using the [`summaryColumns.prefix`](https://help.syncfusion.com/api/js/ejgrid#members:summaryrows-summarycolumns-prefix "summaryColumns.prefix") and summaryColumn.suffix [`summaryColumns.suffix`](https://help.syncfusion.com/api/js/ejgrid#members:summaryrows-summarycolumns-suffix "summaryColumns.suffix").
 
