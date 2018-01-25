@@ -37,7 +37,7 @@ The output of the filtering applied for a column is as follows.
 
 ## Filtering a specific column by public method
 
-It is possible to filter columns dynamically by using the **filterColumn** public method. 
+It is possible to filter columns dynamically by using the [`filterColumn`](/api/js/ejgantt#methods:filtercolumn) public method. 
 The below code snippet explains the above behavior.
 
 {% highlight js %}
@@ -60,7 +60,7 @@ $("#filterColumn").click(function (args) {
 
 ## Clearing the filter applied to Gantt
 
-You can clear all the filtering condition done in the Gantt by using the **clearFiltering** public method. 
+You can clear all the filtering condition done in the Gantt by using the [`clearFilter`](/api/js/ejgantt#methods:clearfilter) public method. 
 The below code snippet explains the above behavior.
 
 {% highlight js %}
