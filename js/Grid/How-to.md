@@ -220,15 +220,22 @@ Grid provides different Methods such as [`clearSorting`](https://help.syncfusion
 				width: "100%",
 				change: function(args){
 					var gridObj = $("#Grid").ejGrid("instance");
-					if(args.selectedText == "default-Page") gridObj.model.pageSettings.currentPage = 1;
+					if(args.selectedText == "default-Page") {
+					    gridObj.model.pageSettings.currentPage = 1;
+					    gridObj.refreshContent();
+					}
 					else if(args.selectedText == "clearSorting") gridObj.clearSorting();
-					else if(args.selectedText == "clear-Grouping") gridObj.model.groupSettings.groupedColumns = [];
+					else if(args.selectedText == "clear-Grouping") {
+					    gridObj.model.groupSettings.groupedColumns = [];
+					    gridObj.refreshContent();
+					}
 					else if(args.selectedText == "clearFiltering") gridObj.clearFiltering();
-					else gridObj.resetModelCollections();
-					//clearSorting and clearFiltering will refresh the content on its own actions
-					//other resetModelCollections method and other actions requires, refresContent method
-					if(args.selectedText != "clearSorting" || args.selectedText != "clearFiltering")
-						gridObj.refreshContent();
+					else { 
+					    gridObj.resetModelCollections();
+					    gridObj.refreshContent();
+					}
+					//clearSorting and clearFiltering methods will refresh the content on its own actions
+					//resetModelCollections method and other actions requires, refreshContent method to refresh the content
 				}
 			});
 
