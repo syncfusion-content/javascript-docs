@@ -269,6 +269,50 @@ The following screen shot shows the predecessor editing in Gantt control.
 
 [Click](http://js.syncfusion.com/demos/web/#!/bootstrap/gantt/editing) here to view the online demo sample for editing in Gantt.
 
+## Update Gantt record value dynamically
+
+Gantt record's value can be dynamically updated by using [`updateRecordByTaskId`](/api/js/ejgantt#methods:updaterecordbytaskid "updateRecordByTaskId(data)") or [`updateRecordByIndex`](/api/js/ejgantt#methods:updaterecordbyindex "updateRecordByIndex(index, data)") method. [`updateRecordByTaskId`](/api/js/ejgantt#methods:updaterecordbytaskid "updateRecordByTaskId(data)") method used to update the Gantt record by using it's task id value and [`updateRecordByIndex`](/api/js/ejgantt#methods:updaterecordbyindex "updateRecordByIndex(index, data)") method was used to update Gantt record value by row index value. We can invoke this method on any external button click action, the following code example shows how to use this methods.
+
+{% highlight js %}
+
+$("#GanttContainer").ejGantt({
+    //...
+});
+
+$("#updateRecordByTaskId").click(function () {
+    var ganttObj = $("#GanttContainer").ejGantt("instance"),
+        data = {
+                taskID: 4,
+                taskName: "Updated by task id",
+                startDate: new Date("02/10/2014"),
+                endDate: new Date("02/14/2014"),
+                duration: 5,
+                progress: "80",
+                resourceId: [2]
+            };
+    ganttObj.updateRecordByTaskId(data);
+});
+
+$("#updateRecordByRowIndex").click(function () {
+    var ganttObj = $("#GanttContainer").ejGantt("instance"),
+        data = {
+                taskID: 5,
+                taskName: "Updated by index value",
+                startDate: new Date("02/10/2014"),
+                endDate: new Date("02/14/2014"),
+                duration: 3, progress: "100",
+                predecessor: "4SS",
+                resourceId: [2]
+        };
+    ganttObj.updateRecordByIndex(4, data);
+});
+
+{% endhighlight %}
+
+You can find the JS playground sample for this [here](http://jsplayground.syncfusion.com/Sync_w5suulh5).
+
+N> Using these methods we can't update the task id value, refer this [link](/js/gantt/how-to/update-task-id-value) to know about how to update the task id value.
+
 ## Delete confirmation message
 
 Delete confirmation message is used to get the confirmation from the user before delete the record. This confirmation message can be enabled by setting [`showDeleteConfirmDialog`](/api/js/ejgantt#members:editsettings-showdeleteconfirmdialog "editSettings.showDeleteConfirmDialog") property as `true`.
