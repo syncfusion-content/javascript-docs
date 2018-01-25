@@ -377,7 +377,7 @@ $("#PivotGrid1").ejPivotGrid({
 
             enableJSONRendering: true,
 
-            jsonRecords: data     // json records
+            jsonRecords: data     // JSON records
 
             //...
         });
@@ -450,7 +450,7 @@ The [`serviceMethodSettings`](/api/js/ejpivotgrid#members:servicemethodsettings)
 |[valueSorting](/api/js/ejpivotgrid#members:servicemethodsettings-valuesorting)|It allows to perform sorting by clicking of column header.|
 |[nodeStateModified](/api/js/ejpivotgrid#members:servicemethodsettings-nodestatemodified)|It fetches the relational data required to render the PivotGrid control on selecting/unselecting fields in Field list.|
 
-### Olap
+### OLAP
 
 | Service Methods | Description |
 |---|---|
