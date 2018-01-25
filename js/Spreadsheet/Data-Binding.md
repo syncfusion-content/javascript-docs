@@ -225,15 +225,15 @@ Spreadsheet can bind data for individual cells in a sheet. The data may contain 
             </thead>
             <tbody>
             <tr>
-            <td>backgroundColor </td>
+            <td>{{'[`backgroundColor`](https://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-rows-cells-style-backgroundcolor "backgroundColor")'| markdownify }} </td>
             <td>Specifies the background color of a cell in the Spreadsheet.</td>
             </tr>
             <tr>
-            <td>color</td>
+            <td>{{'[`color`](https://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-rows-cells-style-color "color")'| markdownify }}</td>
             <td>Specifies the font color of a cell in the Spreadsheet.</td>
             </tr>
             <tr>
-            <td>fontWeight</td>
+            <td>{{'[`fontWeight `](https://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-rows-cells-style-fontweight "fontWeight ")'| markdownify }}</td>
             <td>Specifies the font weight of a cell in the Spreadsheet.</td>
             </tr>
             </tbody>
@@ -255,19 +255,19 @@ Spreadsheet can bind data for individual cells in a sheet. The data may contain 
             </thead>
             <tbody>
             <tr>
-            <td>type  </td>
+            <td>{{'[`type `](https://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-rows-cells-format-type "type ")'| markdownify }}  </td>
             <td>Specifies the type of the format in Spreadsheet.</td>
             </tr>
             <tr>
-            <td>decimalPlaces </td>
+            <td>{{'[`decimalPlaces  `](https://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-rows-cells-format-decimalplaces "decimalPlaces  ")'| markdownify }} </td>
             <td>Specifies the number of decimal places for the given input.</td>
             </tr>
             <tr>
-            <td>formatStr </td>
+            <td>{{'[`formatStr  `](https://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-rows-cells-format-formatstr "formatStr  ")'| markdownify }} </td>
             <td>Specifies the string format for the given input.</td>
             </tr>
             <tr>
-            <td>thousandSeparator </td>
+            <td>{{'[`thousandSeparator `](https://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-rows-cells-format-thousandseparator "thousandSeparator ")'| markdownify }} </td>
             <td>Specifies the thousand separator for the given input.</td>
             </tr>
             </tbody>
@@ -289,10 +289,10 @@ Spreadsheet can bind data for individual cells in a sheet. The data may contain 
             </thead>
             <tbody>
             <tr>
-            <td>isVisible</td>
+            <td>{{'[`isVisible `](https://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-rows-cells-comment-isvisible "isVisible ")'| markdownify }}</td>
             <td>Indicates whether to show or hide comments in Spreadsheet.</td>
             </tr><tr>
-            <td>value</td>
+            <td>{{'[`value `](https://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-rows-cells-comment-value "value ")'| markdownify }}</td>
             <td>Specifies the value for the comment in Spreadsheet.</td>
             </tr>
             </tbody>
@@ -314,15 +314,15 @@ Spreadsheet can bind data for individual cells in a sheet. The data may contain 
             </thead>
             <tbody>
             <tr>
-            <td>webAddr</td>
+            <td>{{'[`webAddr `](https://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-rows-cells-hyperlink-webaddr "webAddr ")'| markdownify }}</td>
             <td>Specifies the web address for the hyperlink of a cell.</td>
             </tr>
             <tr>
-            <td>cellAddr</td>
+            <td>{{'[`cellAddr `](https://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-rows-cells-hyperlink-celladdr "cellAddr ")'| markdownify }}</td>
             <td>Specifies the cell address for the hyperlink of a cell.</td>
             </tr>
             <tr>
-            <td>sheetIndex</td>
+            <td>{{'[`sheetIndex  `](https://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-rows-cells-hyperlink-sheetindex "sheetIndex  ")'| markdownify }}</td>
             <td>Specifies the sheet index to which the cell is referred.</td>
             </tr>
             </tbody>
