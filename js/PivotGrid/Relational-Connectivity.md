@@ -433,6 +433,8 @@ namespace PivotGridDemo
 
 {% endhighlight %}
 
+N> Here [`customObject`](/api/js/ejpivotgrid#members:customobject) is utilized to pass additional information between the client-end and the service-end.
+
 **Configuring web configuration file**
 
 You can expose services through the properties such as binding, contract, and address by using an endpoint.

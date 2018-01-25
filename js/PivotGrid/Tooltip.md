@@ -25,7 +25,7 @@ Allows you to display details of the cell on hovering value cells. By default, t
 
 ## ToolTip animation
 
-The PivotGrid provides option to animate the tooltip that is displayed in the grid. The animation enhances the appearance of tooltip by displaying it slowly. You can enable the animation in the tooltip by setting the [`enableToolTipAnimation`](/api/js/ejpivotgrid#members:enabletooltip) property to true.
+The PivotGrid provides option to animate the tooltip that is displayed in the grid. The animation enhances the appearance of tooltip by displaying it slowly. You can enable the animation in the tooltip by setting the [`enableToolTipAnimation`](/api/js/ejpivotgrid#members:enabletooltipanimation) property to true.
 
 {% highlight js %}
 

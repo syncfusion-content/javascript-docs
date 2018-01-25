@@ -17,7 +17,7 @@ The PivotGrid control can be exported to the following file formats:
 * PDF
 * CSV
 
-The PivotGrid control can be exported by invoking the **"exportPivotGrid"** method, with an appropriate export option as a parameter.
+The PivotGrid control can be exported by invoking the [`exportPivotGrid`](../api/ejpivotgrid#methods:exportPivotGrid) public method, with an appropriate export option as a parameter.
 
 ## JSON export
 

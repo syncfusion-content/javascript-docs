@@ -183,4 +183,6 @@ Values can be filtered by checking/unchecking the check box besides them, in the
 
 ![](PivotTable-Field-List_images/relationaldialogfilter.png)
 
+## Defer Update
+Defer Update in the field list allows you to refresh the control on-demand and not during every UI operation. This operation can be enabled/disabled through [`enableDeferUpdate`](/api/js/ejpivotgrid#members:enabledeferupdate) property internally.
 

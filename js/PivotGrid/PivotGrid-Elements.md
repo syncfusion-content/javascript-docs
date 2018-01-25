@@ -11,9 +11,9 @@ api: /api/js/ejpivotgrid
 # PivotGrid: Elements
 
 ## Hyperlink
-The PivotGrid control supports the hyperlink option to link data for each individual cell. Hyperlink can be enabled separately for row header, column header, value, and summary cells. Following are the respective properties:
+The PivotGrid control supports the hyperlink option to link data for each individual cell. Hyperlink can be enabled separately for row header, column header, value, and summary cells. Following are the respective properties and they should be declared under this property [`hyperlinkSettings`](/api/js/ejpivotgrid#members:hyperlinksettings).
 
-* [`enableColumnHeaderHyperlink`](/api/js/ejpivotgrid#members:hyperlinksettings-enablerowheaderhyperlink) - Enables hyperlink for column headers.
+* [`enableColumnHeaderHyperlink`](/api/js/ejpivotgrid#members:hyperlinksettings-enablecolumnheaderhyperlink) - Enables hyperlink for column headers.
 * [`enableRowHeaderHyperlink`](/api/js/ejpivotgrid#members:hyperlinksettings-enablerowheaderhyperlink) - Enables hyperlink for row headers.
 * [`enableSummaryCellHyperlink`](/api/js/ejpivotgrid#members:hyperlinksettings-enablesummarycellhyperlink) - Enables hyperlink for the summary cell.
 * [`enableValueCellHyperlink`](/api/js/ejpivotgrid#members:hyperlinksettings-enablevaluecellhyperlink) - Enables hyperlink for the value cell.
@@ -52,6 +52,44 @@ $(function() {
 {% endhighlight %}
 
 ![](PivotGrid-Elements_images/hyperlink.png)
+
+## Header Settings
+The [`headerSettings`](/api/js/ejpivotgrid#members:headersettings) property allows you to enable/disable row/column header names in PivotGrid control. This feature can be enabled separately for row header and column header. Following are the respective properties:
+
+* [`showRowItems`](/api/js/ejpivotgrid#members:headersettings-showrowitems) - Allows you to enable/disable the row header names in the PivotGrid control.
+
+* [`showColumnItems`](/api/js/ejpivotgrid#members:headersettings-showcolumnitems) - Allows you to enable/disable the column header names in the PivotGrid control.
+
+{% highlight html %}
+
+$(function() {
+
+    $("#PivotGrid1").ejPivotGrid({
+        //...
+        headerSettings: {
+                          showRowItems: true,
+                          showColumnItems: true
+                        }
+    });
+{% endhighlight %}
+
+![](PivotGrid-Elements_images/headerSettings.png)
+
+## Show Unique Name on Pivot Button
+The [`showUniqueNameOnPivotButton`](/api/js/ejpivotgrid#members:showUniqueNameOnPivotButton) property allows you to show the appropriate unique name in the pivot button.
+
+{% highlight html %}
+
+$(function() {
+
+    $("#PivotGrid1").ejPivotGrid({
+        //...
+        enableGroupingBar: true,
+        showUniqueNameOnPivotButton: true
+    });
+{% endhighlight %}
+
+![](PivotGrid-Elements_images/uniquNamePivotButton.png)
 
 ## Selection
 You can select a particular range of value cells from the PivotGrid and manipulate/display them. Cell selection is applicable only for value cells, and you can enable this functionality by setting the [`enableCellSelection`](/api/js/ejpivotgrid#members:enablecellselection) property to true.
@@ -105,7 +143,7 @@ cell_RightClick = function(evt) {
 ## Conditional formatting
 Conditional formatting in the PivotGrid allows you to highlight particular cells with certain color, font-style, font-family, etc., based on the applied condition.  Also the condition can be applied for certain measure alone.
   
-Conditional formatting is enabled by setting the [`enableConditionalFormatting`](/api/js/ejpivotgrid#members:enableConditionalFormatting) property to true and the formatting dialog is launched when the **"createConditionalDialog"** method is invoked.
+Conditional formatting is enabled by setting the [`enableConditionalFormatting`](/api/js/ejpivotgrid#members:enableconditionalformatting) property to true and the formatting dialog is launched when the **"createConditionalDialog"** method is invoked.
 
 {% highlight html %}
 

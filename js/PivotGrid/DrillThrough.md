@@ -10,7 +10,7 @@ api: /api/js/ejpivotgrid
 
 # Drill Through
 
-Drill-through retrieves raw items that are used to create a specific cell. To enable drill-through support, you can set the [`enableDrillThrough`](/api/js/ejpivotgrid#members:enableDrillThrough) property to true. Raw items are obtained through the [`drillThrough`](/api/js/ejpivotgrid#events:drillthrough) event by which you can bind them to an external widget for a precise view.
+Drill-through retrieves raw items that are used to create a specific cell. To enable drill-through support, you can set the [`enableDrillThrough`](/api/js/ejpivotgrid#members:enabledrillthrough) property to true. Raw items are obtained through the [`drillThrough`](/api/js/ejpivotgrid#events:drillthrough) event by which you can bind them to an external widget for a precise view.
 
 ## OLAP
 
@@ -160,7 +160,7 @@ public Dictionary<string, object> DrillThroughDataTable(string currentReport, st
 
 ## Relational
 
-To enable drill-through support, you can set the [`enableDrillThrough`](/api/js/ejpivotgrid#members:enableDrillThrough) property to true. Raw items are obtained through the [`drillThrough`](/api/js/ejpivotgrid#events:drillthrough) event.
+To enable drill-through support, you can set the [`enableDrillThrough`](/api/js/ejpivotgrid#members:enabledrillthrough) property to true. Raw items are obtained through the [`drillThrough`](/api/js/ejpivotgrid#events:drillthrough) event.
 
 {% highlight html %}
 

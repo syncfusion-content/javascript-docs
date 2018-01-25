@@ -14,7 +14,7 @@ It allows to filter and sort field members in the PivotGrid.
 
 ### Client mode
 
-In client mode, you can enable the advanced filtering and sorting option in the PivotGrid by setting the [`enableAdvancedFilter`](/api/js/ejpivotgrid#members:enableAdvancedFilter) property to true.
+In client mode, you can enable the advanced filtering and sorting option in the PivotGrid by setting the [`enableAdvancedFilter`](/api/js/ejpivotgrid#members:enableadvancedfilter) property to true.
 
 {% highlight html %}
 
@@ -30,7 +30,7 @@ In client mode, you can enable the advanced filtering and sorting option in the 
 
 ### Server mode
 
-In server mode, you can enable the advanced filtering and sorting option in the PivotGrid by setting the [`enableAdvancedFilter`](/api/js/ejpivotgrid#members:enableAdvancedFilter) property to true.
+In server mode, you can enable the advanced filtering and sorting option in the PivotGrid by setting the [`enableAdvancedFilter`](/api/js/ejpivotgrid#members:enableadvancedfilter) property to true.
 
 {% highlight html %}
 

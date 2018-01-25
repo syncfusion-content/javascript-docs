@@ -12,7 +12,7 @@ api: /api/js/ejpivotgrid
 
 ## Creating a simple application with PivotGrid and OLAP datasource (Client Mode)
 
-This section explains about how to populate a simple PivotGrid with OLAP data completely on the client-side.
+This section explains about how to populate a simple PivotGrid with [`OLAP`](/api/js/ejpivotgrid#members:analysismode) data completely on the [`client-side`](/api/js/ejpivotgrid#members:operationalmode).
 
 ### Scripts and CSS references
 
@@ -57,7 +57,7 @@ Place a "div" tag in the HTML page which acts as a container for the PivotGrid w
 
 ### Populate PivotGrid with DataSource
 
-Initialize the OLAP datasource for the PivotGrid widget as shown below:
+Initialize the [`OLAP`](/api/js/ejpivotgrid#members:analysismode) datasource for the PivotGrid widget as shown below:
 
 {% highlight html %}
 
@@ -101,11 +101,277 @@ The above code will generate a simple PivotGrid with "Customer Geography" field 
 
 ![](Getting-Started_images/OlapClientside.png) 
 
+The following table will explain the [`OLAP`](/api/js/ejpivotgrid#members:analysismode) [`datasource`](/api/js/ejpivotgrid#members:datasource) properties at [`client-side`](/api/js/ejpivotgrid#members:operationalmode) in detail:
+
+<table>
+    <tr>
+        <th>
+            Properties
+        </th>
+        <th>
+            Description
+        </th>
+    </tr>
+    <tr>
+    <td>
+        {{'[`cube`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-cube "cube")'| markdownify }}
+    </td>
+    <td>
+        Contains the respective cube name as string type in the OLAP database.
+    </td>
+    </tr>
+    <tr>
+    <td>
+        {{'[`sourceInfo`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-sourceinfo "sourceInfo")'| markdownify }}
+    </td>
+    <td>
+        To set the data source name to fetch the data.
+    </td>
+    </tr>
+    <tr>
+    <td>
+        {{'[`providerName`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-providername "providerName")'| markdownify }}
+    </td>
+    <td>
+        Sets the provider name for PivotGrid to identify whether the provider is SSAS or Mondrian.
+    </td>
+    </tr>
+    <tr>
+    <td>
+        {{'[`data`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-data "data")'| markdownify }}
+    </td>
+    <td>
+        Provides the raw data source for the PivotGrid.
+    </td>
+    </tr>
+    <tr>
+    <td>
+        {{'[`catalog`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-catalog "catalog")'| markdownify }}
+    </td>
+    <td>
+        In connection with an OLAP database, this property contains the database name as string to fetch the data from the given connection string.
+    </td>
+    </tr>
+    <tr>
+    <td>
+        {{'[`enableAdvancedFilter`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-enableadvancedfilter "enableAdvancedFilter")'| markdownify }}
+    </td>
+    <td>
+        Allows you to filter the members (by its name and values) through advanced filtering.</td>
+    </tr>
+    <tr>
+    <td>
+        {{'[`reportName`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-reportName "reportName")'| markdownify }}
+    </td>
+    <td>
+        Sets a name to the report that is bound to the control.</td>
+    </tr>
+    <tr>
+        <td>
+            {{'[`columns`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-columns "columns")'| markdownify }}
+        </td>
+        <td>
+            Lists out the items to be arranged in the columns section of the PivotGrid.
+             <table class="params">
+            <thead>
+            <tr>
+            <th>Properties</th>
+            <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td>{{'[`fieldName`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-columns-fieldname "fieldName")'| markdownify }} </td>
+            <td>Allows you to bind the item by using its unique name as field name.</td>
+            </tr>
+            <tr>
+            <td>{{'[`fieldCaption`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-columns-fieldcaption "fieldCaption")'| markdownify }}</td>
+            <td>Allows you to set the display caption for an item.</td>
+            </tr>
+            <tr>
+            <td>{{'[`isNamedSets`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-columns-isnamedsets "isNamedSets")'| markdownify }}</td>
+            <td>Allows you to indicate whether the added item is a named set or not.</td>
+            </tr>
+            <tr>
+            <td>{{'[`advancedFilter`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-columns-advancedfilter "advancedFilter")'| markdownify }}</td>
+            <td>Allows you to filter the members (by its name and values) through advanced filtering.
+            <table class="params">
+            <thead>
+            <tr>
+            <th>Properties</th>
+            <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td>
+                {{'[`name`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-columns-advancedfilter-name "name")'| markdownify }} </td>
+            <td>Allows you to provide the level unique name to perform the advanced filtering.</td>
+            </tr>
+            <tr>
+            <td>
+                {{'[`labelFilterOperator`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-columns-advancedfilter-labelfilteroperator "labelFilterOperator")'| markdownify }} </td>
+            <td>Allows you to set the operator to perform the label filtering.</td>
+            </tr>
+            <tr>
+            <td>
+                {{'[`valueFilterOperator`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-columns-advancedfilter-valuefilteroperator "valueFilterOperator")'| markdownify }} </td>
+            <td>Allows you to set the operator to perform the value filtering.</td>
+            </tr>
+            <tr>
+            <td>
+                {{'[`advancedFilterType`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-columns-advancedfilter-advancedfiltertype "advancedFilterType")'| markdownify }} </td>
+            <td>Allows you to set the filtering type while performing the advanced filtering.</td>
+            </tr>
+            <tr>
+            <td>
+                {{'[`measure`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-columns-advancedfilter-measure "measure")'| markdownify }} </td>
+            <td>In value filtering, this property contains the measure name to which the filter is applied.</td>
+            </tr>
+            <tr>
+            <td>
+                {{'[`values`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-columns-advancedfilter-values "values")'| markdownify }} </td>
+            <td>Allows you to hold the filter operand values in the advanced filtering.</td>
+            </tr>
+            </td>
+            </tr>
+            </tbody>
+            </table>
+            </td>
+            </tr>
+            </tbody>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            {{'[`rows`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-rows "rows")'| markdownify }}
+        </td>
+        <td>
+            Lists out the items to be arranged in the rows section of PivotGrid.
+             <table class="params">
+            <thead>
+            <tr>
+            <th>Properties</th>
+            <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td>{{'[`fieldName`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-rows-fieldname "fieldName")'| markdownify }} </td>
+            <td>Allows you to bind the item by using its unique name as field name.</td>
+            </tr>
+            <tr>
+            <td>{{'[`fieldCaption`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-rows-fieldcaption "fieldCaption")'| markdownify }}</td>
+            <td>Allows you to set the display caption for an item.</td>
+            </tr>
+            <tr>
+            <td>{{'[`isNamedSets`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-rows-isnamedsets "isNamedSets")'| markdownify }}</td>
+            <td>Allows you to indicate whether the added item is a named set or not.</td>
+            </tr>
+            <tr>
+            <td>{{'[`advancedFilter`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-rows-advancedfilter "advancedFilter")'| markdownify }}</td>
+            <td>Allows you to filter the members (by its name and values) through advanced filtering.
+            <table class="params">
+            <thead>
+            <tr>
+            <th>Properties</th>
+            <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td>
+                {{'[`name`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-rows-advancedfilter-name "name")'| markdownify }} </td>
+            <td>Allows you to provide the level unique name to perform the advanced filtering.</td>
+            </tr>
+            <tr>
+            <td>
+                {{'[`labelFilterOperator`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-rows-advancedfilter-labelfilteroperator "labelFilterOperator")'| markdownify }} </td>
+            <td>Allows you to set the operator to perform the label filtering.</td>
+            </tr>
+            <tr>
+            <td>
+                {{'[`valueFilterOperator`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-rows-advancedfilter-valuefilteroperator "valueFilterOperator")'| markdownify }} </td>
+            <td>Allows you to set the operator to perform the value filtering.</td>
+            </tr>
+            <tr>
+            <td>
+                {{'[`advancedFilterType`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-rows-advancedfilter-advancedfiltertype "advancedFilterType")'| markdownify }} </td>
+            <td>Allows you to set the filtering type while performing the advanced filtering.</td>
+            </tr>
+            <tr>
+            <td>
+                {{'[`measure`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-rows-advancedfilter-measure "measure")'| markdownify }} </td>
+            <td>In value filtering, this property contains the measure name to which the filter is applied.</td>
+            </tr>
+            <tr>
+            <td>
+                {{'[`values`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-rows-advancedfilter-values "values")'| markdownify }} </td>
+            <td>Allows you to hold the filter operand values in the advanced filtering.</td>
+            </tr>
+            </td>
+            </tr>
+            </tbody>
+            </table>
+            </td>
+            </tr>
+            </tbody>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            {{'[`values`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-values "values")'| markdownify }}
+        </td>
+        <td>
+            Lists out the items to be arranged in the rows section of PivotGrid.
+            <table class="params">
+            <thead>
+            <tr>
+            <th>Properties</th>
+            <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td>{{'[`axis`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-values-axis "axis")'| markdownify }} </td>
+            <td>Allows you to set the axis name to place measures items.</td>
+            </tr>
+            <tr>
+            <td>{{'[`measures`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-values-measures "measures")'| markdownify }}</td>
+            <td>This holds the list of unique names of measures to bind them from the OLAP cube.
+            <table class="params">
+            <thead>
+            <tr>
+            <th>Property</th>
+            <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td>
+                {{'[`fieldName`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-values-measures-fieldName "fieldName")'| markdownify }} </td>
+            <td>Allows you to bind the measure from the OLAP datasource by using its unique name as field name.</td>
+            </tr>
+            </td>
+            </tr>
+            </tbody>
+            </table>
+            </td>
+            </tr>
+            </tbody>
+            </table>
+        </td>
+        </tr>
+
+</table>
+
 ## Creating a simple application with PivotGrid and OLAP datasource (server mode)
 
-This section covers the information required to create a simple PivotGrid that is bound to the OLAP datasource.
+This section covers the information required to create a simple PivotGrid that is bound to the [`OLAP`](/api/js/ejpivotgrid#members:analysismode) datasource.
 
-N> This section illustrates creating a simple Web Application through the Visual Studio IDE since PivotGrid is a server-side control with .NET dependency. The Web Application contains a HTML page and a service that would transfer data to server-side, process, and return back the data to client-side for control re-rendering. The service utilized for communication could be either WCF or WebAPI based on user requirement. Here, both WCF and WebAPI have been illustrated for user convenience.
+N> This section illustrates creating a simple Web Application through the Visual Studio IDE since PivotGrid is a [`server-side`](/api/js/ejpivotgrid#members:operationalmode) control with .NET dependency. The Web Application contains a HTML page and a service that would transfer data to [`server-side`](/api/js/ejpivotgrid#members:operationalmode), process, and return back the data to [`client-side`](/api/js/ejpivotgrid#members:operationalmode) for control re-rendering. The service utilized for communication could be either WCF or WebAPI based on user requirement. Here, both WCF and WebAPI have been illustrated for user convenience.
 
 ### Project initialization
 Create a new **ASP.NET Empty Web Application** by using the Visual Studio IDE and name the project as **“PivotGridDemo”**.
@@ -167,7 +433,7 @@ To initialize a PivotGrid widget, you can define a “div” tag with an appropr
 
 {% endhighlight %}
 
-The “url” property in the PivotGrid widget, points the service endpoint where the data are processed and fetched in the form of JSON. The service used for the PivotGrid widget as endpoint are the WCF and WebAPI.
+The [`url`](/api/js/ejpivotgrid#members:url) property in the PivotGrid widget, points the service endpoint where the data are processed and fetched in the form of JSON. The service used for the PivotGrid widget as endpoint are the WCF and WebAPI.
 
 N> The above "GettingStarted.html" contains WebAPI URL, which is **“/Olap”**. Suppose, if you are using the WCF service then the URL would look like **"/OlapService.svc"**.
 
@@ -502,6 +768,8 @@ namespace PivotGridDemo
 
 {% endhighlight %}
 
+N> Here, [`customObject`](/api/js/ejpivotgrid#members:customobject) is utilized to pass additional information between the client-end and the service-end.
+
 **Configure routing in global application class**
 
 To add a Global.asax in your existing Web Application, right-click the project in the solution explorer and select **Add > New Item.** In the **Add New Item** window, select **Global Application Class** and name it as “Global.asax”, and then click **Add.**
@@ -529,7 +797,7 @@ Now, PivotGrid will be rendered with Internet Sales Amount over a period of fisc
 ![](Getting-Started_images/olapwebapi.png)
 
 ### WCF
-This section demonstrates the utilization of WCF service as endpoint binding the OLAP datasource to a simple PivotGrid. For more details on this topic, [click here](https://help.syncfusion.com/js/pivotgrid/olap-connectivity#wcf).
+This section demonstrates the utilization of WCF service as endpoint binding the [`OLAP`](/api/js/ejpivotgrid#members:analysismode) datasource to a simple PivotGrid. For more details on this topic, [click here](https://help.syncfusion.com/js/pivotgrid/olap-connectivity#wcf).
 
 
 

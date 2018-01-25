@@ -10,7 +10,7 @@ api: /api/js/ejpivotgrid
 
 # Frozen Header
 
-Allows you to freeze the header of the grid. so, it will be always visible while scrolling the content with large number of rows or columns providing a precise view.
+Allows you to freeze the header of the grid. so, it will be always visible while scrolling the content with large number of rows or columns providing a precise view by this property [`enableFrozenHeaders`](../api/ejpivotgrid#members:frozenheadersettings-enablefrozenheaders) under [`frozenheadersettings`](../api/ejpivotgrid#members:frozenheadersettings).
 
 {% highlight html %}
 
@@ -29,7 +29,7 @@ Allows you to freeze the header of the grid. so, it will be always visible while
 
 ![](FrozenHeader_images/row_col_freeze.png)
 
-You can also freeze the row/column headers individually by setting the following properties:
+You can also freeze the row/column headers individually by setting these properties [`enableFrozenRowHeaders`](../api/ejpivotgrid#members:frozenheadersettings-enablefrozenrowheaders)/[`enableFrozenColumnHeaders`](../api/ejpivotgrid#members:frozenheadersettings-enableFrozenColumnHeaders)   under [`frozenheadersettings`](../api/ejpivotgrid#members:frozenheadersettings).
 
 {% highlight html %}
 
@@ -65,7 +65,7 @@ You can also freeze the row/column headers individually by setting the following
 
 ![](FrozenHeader_images/col_freeze.png)
 
-You can also set the size of the scroller (horizontal and vertical) in the PivotGrid by using the following property:
+You can also set the size of the scroller (horizontal and vertical) in the PivotGrid by using the property [`scrollerSize`](../api/ejpivotgrid#members:frozenheadersettings-scrollersize) under [`frozenheadersettings`](../api/ejpivotgrid#members:frozenheadersettings).
 
 {% highlight html %}
 

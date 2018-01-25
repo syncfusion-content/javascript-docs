@@ -12,7 +12,7 @@ api: /api/js/ejpivotgrid
 
 Member editor paging helps you to improve the rendering performance of the dialog by dividing large amount of data into sections and displaying them.
 
-You can enable the member editor paging and set member editor page size in the PivotGrid control by setting the [`enableMemberEditorPaging`](/api/js/ejpivotgrid#members:enableMemberEditorPaging) and [`memberEditorPageSize`](/api/js/ejpivotgrid#members:memberEditorPageSize) properties.
+You can enable the member editor paging and set member editor page size in the PivotGrid control by setting the [`enableMemberEditorPaging`](/api/js/ejpivotgrid#members:enablemembereditorpaging) and [`memberEditorPageSize`](/api/js/ejpivotgrid#members:membereditorpagesize) properties.
 
 {% highlight html %}
 

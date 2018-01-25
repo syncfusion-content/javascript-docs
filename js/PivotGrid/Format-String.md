@@ -12,9 +12,9 @@ api: /api/js/ejpivotgrid
 
 I> This feature is applicable only for the relational data source at client mode.
 
-Formatted numeric values like n (number with decimal points), c (currency or accounting), and p (percentage) can be displayed with desired decimal places by using the `formatString`.
+Formatted numeric values like n (number with decimal points), c (currency or accounting), and p (percentage) can be displayed with desired decimal places by using the [`formatString`](/api/js/ejpivotgrid#members:datasource-values-formatstring).
 
->**Note**: This is applicable only when the `Format` is set.
+>**Note**: This is applicable only when the [`Format`](/api/js/ejpivotgrid#members:datasource-values-format) is set.
 
 {% highlight js %}
 
