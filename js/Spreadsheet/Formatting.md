@@ -325,6 +325,34 @@ To highlight cell or range of cells from whole workbook you can apply background
 Cell styles is a collection of pre-defined styles with multiple formatting characteristics to apply several formats in one step. You can apply cell style for a cell using `cell style` option in ribbon `HOME` tab. The following screenshot illustrate this,
 ![](Formatting_images/Formatting_img7.png)
 
+### Custom Cell Style
+
+you can apply several formats in a single step by using the New Cell Style option in cell styles.
+
+The following options are available in cell style customization.
+
+1) Add New Custom Style
+
+2) Modify Custom Style
+
+3) Apply Custom Cell Style
+
+4) Delete Custom Style
+
+
+#### Add New Custom Style
+To add new custom cell style in the spreadsheet. Use [`addNewCustomStyle`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlformat-addnewcustomstyle "addNewCustomStyle") method to add new custom cell style in spreadsheet via code.
+
+#### Modify Custom Style
+To modify custom cell style in the spreadsheet. Use [`modifyCustomStyle`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlformat-modifycustomstyle "modifyCustomStyle") method to modify the added custom cell style via code.
+
+#### Apply Custom Cell Style
+To apply custom cell style in the spreadsheet. Use [`applyCustomCellStyle`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlformat-applycustomcellstyle "applyCustomCellStyle") method to apply the custom cell style in cells via code.
+
+#### Delete Custom Style
+To delete custom cell style in the spreadsheet. Use [`deleteCustomStyle`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlformat-deletecustomstyle "deleteCustomStyle") method to delete the added custom cell style via code.
+
+
 ### Format painter
 
 The `format painter` lets you copy all of the formatting from a cell or range of cells and apply the same formatting to another cell or range of cells including font size, color, style etc. Use [`allowFormatPainter`](https://help.syncfusion.com/api/js/ejspreadsheet#members:allowformatpainter "allowFormatPainter") API to enable/disable format painter option in spreadsheet.
