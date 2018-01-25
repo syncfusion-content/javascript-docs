@@ -80,7 +80,7 @@ To explore more label properties, refer to [Label Properties](/api/js/ejdiagram#
 
 ### Add Labels at runtime
 
-Labels can be added at runtime by using the client side method `addLabel`. The following code illustrates how to add a label to a node. 
+Labels can be added at runtime by using the client side method [addLabel](/api/js/ejdiagram#methods:addlabel "addLabel"). The following code illustrates how to add a label to a node. 
 
 {% highlight js %}
 
@@ -101,7 +101,7 @@ Labels can be added at runtime by using the client side method `addLabel`. The 
 
 ## Update Label at runtime
 
-The client side API `updateLabel` is used to update the labels at run time.
+The client side API [updateLabel](/api/js/ejdiagram#methods:updatelabel "updateLabel") is used to update the labels at run time.
 
 The following code example illustrates how to change the label properties.
 

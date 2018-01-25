@@ -46,7 +46,7 @@ In the example given below, the vertical scroll bar is scrolled down by 50px and
 
 ## Update scroll status
 
-You can programmatically change the scroll offsets at runtime by using the client side method `update`. The following code illustrates how to change the scroll offsets and zoom factor at runtime.
+You can programmatically change the scroll offsets at runtime by using the client side method [update](/api/js/ejdiagram#methods:load "update"). The following code illustrates how to change the scroll offsets and zoom factor at runtime.
 
 {% highlight javascript %}
 
