@@ -63,7 +63,7 @@ $("#DiagramContent").ejDiagram({
 
 ### Add group at run time
 
-You can add a group node at runtime by using the client side method `add`.
+You can add a group node at runtime by using the client side method [add](/api/js/ejdiagram#methods:add "add").
 
 The following code illustrates how a group node is added at run time.
 
