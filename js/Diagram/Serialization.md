@@ -14,7 +14,7 @@ api: /api/js/ejdiagram
 
 ## Save
 
-The Diagram is serialized as JSON data while saving. The client side method, `save` helps to serialize the Diagram as JSON. The following code illustrates how to save the Diagram.
+The Diagram is serialized as JSON data while saving. The client side method, [save](/api/js/ejdiagram#methods:save "save") helps to serialize the Diagram as JSON. The following code illustrates how to save the Diagram.
 
 {% highlight javascript %}
 
@@ -39,7 +39,7 @@ Diagram can also be saved as raster or vector image files. For more information 
 
 ## Load
 
-Diagram is loaded from the Serialized JSON data. The client side method, `load` helps you to load the Diagram from the serialized JSON. The following code illustrates how to load the Diagram from serialized JSON data.
+Diagram is loaded from the Serialized JSON data. The client side method, [load](/api/js/ejdiagram#methods:load "load") helps you to load the Diagram from the serialized JSON. The following code illustrates how to load the Diagram from serialized JSON data.
 
 {% highlight javascript %}
 

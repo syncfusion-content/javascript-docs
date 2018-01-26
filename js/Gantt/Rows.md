@@ -121,6 +121,8 @@ The following screen shot shows to add new row as child.
 
 ![](/js/Gantt/Rows_images/Rows_img3.png)
 
+N> While adding a new record [`actionComplete`](/api/js/ejgantt#events:actioncomplete) event will be triggered with arguments `addedRecord` value as new record and `requestType` value as `save`, using this event we can update new record information in server database.
+
 ## Row drag and drop
 
 It is possible to dynamically re-arrange the rows in the Gantt control by using the [`allowDragAndDrop`](/api/js/ejgantt#members:allowdraganddrop "allowDragAndDrop") property. With this property, row drag and drop can be enabled or disabled. Rows can be inserted above, below as a sibling or as a child to the existing row with the help of this feature. A default tooltip is rendered while dragging the Gantt row and this tooltip can be customized by the [`dragTooltip`](/api/js/ejgantt#members:dragtooltip "dragTooltip") property. This property has inner properties such as [`showTooltip`](/api/js/ejgantt#members:dragtooltip-showtooltip "dragTooltip.showTooltip"), [`tooltipItems`](/api/js/ejgantt#members:dragtooltip-tooltipitems "dragTooltip.tooltipItems") and [`tooltipTemplate`](/api/js/ejgantt#members:dragtooltip-tooltiptemplate "dragTooltip.tooltipTemplate").
