@@ -289,3 +289,134 @@ The following code shows how to render row drag tooltip with tooltip template.
 
 ![](/js/TreeGrid/Rows_images/Rows_img3.png)
 
+## Expand/Collapse Row
+
+In TreeGrid, parent rows are expanded/collapsed by using expand/collapse icons, expand all/collapse all toolbar items and by using public methods. By default all records in TreeGrid will be rendered in expanded state.
+
+### Collapse parent records at initial load
+
+It is possible to display all the records in collapsed state by setting [`enableCollapseAll`](/api/js/ejtreegrid#members:enablecollapseall) property as `true`. 
+
+The following code example shows how to use this property.
+
+{% highlight javascript %}
+
+$("#TreeGrid").ejTreeGrid({
+    //...     
+    enableCollapseAll: true,
+    //...
+});
+
+{% endhighlight %}
+
+![](/js/TreeGrid/Rows_images/Rows_img6.png)
+
+The above screenshot shows TreeGrid render with collapsed state.
+{:.caption}
+
+###  Define expand/collapse state of every record
+
+In TreeGrid, it is possible to render records either in collapsed state or in expanded state, and this can done by mapping the expand state to the records from the data source by using [`expandStateMapping`](/api/js/ejtreegrid#members:expandstatemapping) property.
+
+The following code example shows how to use this property.
+
+{% highlight javascript %}
+
+var data = [
+    //...
+    {
+         taskID: 6,
+         taskName: "Design",
+         startDate: new Date("02/10/2014"),
+         endDate: new Date("02/14/2014"),
+         duration: 3,
+         expandState:false,
+         subtasks: [
+             { 
+                 taskID: 7, 
+                 taskName: "Software Specification", 
+                 startDate: new Date("02/10/2014"), 
+                 endDate: new Date("02/12/2014"), 
+                 duration: 3,
+                 expandState:false },
+            //...
+         ]
+     },
+];
+$("#TreeGrid").ejTreeGrid({
+    //...     
+    dataSource: data,
+    expandStateMapping: "expandState",
+    //...
+});
+
+{% endhighlight %}
+
+The below screenshot shows the output of above code example..
+
+![](/js/TreeGrid/Rows_images/Rows_img7.png)
+
+### Expand/Collapse all the rows dynamically
+
+All the rows in tree grid will be expanded/collapsed by clicking `expandAll` and `collapsedAll` toolbar items or by using [`expandAll`](/api/js/ejtreegrid#methods:expandall "expandAll()") and [`collapseAll`](/api/js/ejtreegrid#methods:collapseall "collapseAll()") methods. We can invoke this methods dynamically on any action like external button click. 
+
+The below code example shows how to use this methods.
+
+{% highlight js %}
+
+$("#TreeGrid").ejTreeGrid({
+    //...
+    toolbarSettings: {
+        showToolbar: true,
+        toolbarItems: [
+            ej.TreeGrid.ToolbarItems.Add,
+            //..
+            ej.TreeGrid.ToolbarItems.ExpandAll,
+		    ej.TreeGrid.ToolbarItems.CollapseAll
+        ]
+    },
+});
+
+$("#expandAll").click(function () {
+    var treegridObj = $("#TreeGrid").ejTreeGrid("instance");
+        treegridObj.expandAll();
+});
+
+$("#collapseAll").click(function () {
+    var treegridObj = $("#TreeGrid").ejTreeGrid("instance");
+        treegridObj.collapseAll();
+});
+
+{% endhighlight %}
+
+
+### Dynamically expand/Collapse the specific level row
+
+The tree grid control provide the support to dynamically expand/collapse the specific level row by using [`expandAtLevel`](/api/js/ejtreegrid#methods:expandatlevel "expandAtLevel(index)") and [`collapseAtLevel`](/api/js/ejtreegrid#methods:collapseatlevel "collapseAtLevel(index)") methods. This methods are used to expand/ collapse the all rows which are in specific level.
+
+
+The below code example shows how to use this methods.
+
+{% highlight js %}
+
+$("#TreeGrid").ejTreeGrid({
+    //...
+    dataSource:data,
+    //..
+});
+
+$("#expandAtLevel").click(function () {
+    var treegridObj = $("#TreeGrid").ejTreeGrid("instance");
+        treegridObj.expandAtLevel(1);
+});
+
+$("#collapseAtLevel").click(function () {
+    var treegridObj = $("#TreeGrid").ejTreeGrid("instance");
+        treegridObj.collapseAtLevel(1);
+});
+
+{% endhighlight %}
+
+
+
+

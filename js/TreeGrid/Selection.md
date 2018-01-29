@@ -91,14 +91,14 @@ The following code shows on how to select a row programmatically with button cli
         //...
      });
      $("#selectRow").click(function (args) {
-         $("#TreeGridContainer ").ejTreeGrid("option", "selectedRowIndex", 4);           
+         $("#TreeGridContainer").ejTreeGrid("option", "selectedRowIndex", 4);           
      })
 
 {% endhighlight %}
 
 ## Cell selection
 
-You can select cells in TreeGrid by setting the [`selectionMode`](/api/js/ejtreegrid#members:selectionsettings-selectionmode "selectionSettings.selectionMode") property as `cell`.
+You can select cells in TreeGrid by setting the [`selectionMode`](/api/js/ejtreegrid#members:selectionsettings-selectionmode "selectionSettings.selectionMode") property as `cell`. And you can able to get the selected cell information using the [`selectedCellIndexes`](/api/js/ejtreegrid#members:selectedcellindexes) property from the TreeGrid object. The [`selectedCellIndexes`](/api/js/ejtreegrid#members:selectedcellindexes) is an object collection, which has the [`cellIndex`](/api/js/ejtreegrid#members:selectedcellindexes-cellindex "selectedCellIndexes.cellIndex") and [`rowIndex`](/api/js/ejtreegrid#members:selectedcellindexes-rowindex "selectedCellIndexes.rowIndex") information of the selected cells.
 Find the code example below to enable the cell selection in TreeGrid.
 
 {% highlight js %}
@@ -107,7 +107,7 @@ Find the code example below to enable the cell selection in TreeGrid.
         //...
          selectionSettings:
          {
-           selectionMode: "ej.TreeGrid.SelectionType.Cell",                                 
+           selectionMode: ej.TreeGrid.SelectionMode.Cell,                                 
          }
      });
 
@@ -117,9 +117,51 @@ The output of the TreeGrid with cell selection is as follows.
 
 ![](/js/TreeGrid/Selection_images/Selection_img3.png)
 
+### Select cells dynamically
+
+You can select the cells programmatically using the [`selectCells`](/api/js/ejtreegrid#methods:selectcells "selectCells(indexes,preservePreviousSelectedCell)") public method. Find the code example below for details.
+
+{% highlight html %}
+
+    <html>
+        <body>
+        <button id="selectCells">Select Cells</button>
+        //...
+        </body>
+    </html>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+     $("#TreeGridContainer").ejTreeGrid({
+        //...
+        selectionSettings:
+        {
+            selectionMode: ej.TreeGrid.SelectionMode.Cell,
+            selectionType: ej.TreeGrid.SelectionType.Multiple
+        },
+        //..
+     });
+     $("#selectCells").click(function (args) {
+         var treegridObj = $("#TreeGridContainer").ejTreeGrid("instance");
+         var cellIndex = [{
+            rowIndex: 2,
+            cellIndex: 1
+        }, {
+            rowIndex: 3,
+            cellIndex: 1
+        }];       
+        treegridObj.selectCells(cellIndex);    
+     })
+
+{% endhighlight %}
+
+![](/js/TreeGrid/Selection_images/Selection_img8.png)
+
 ### Disabling cell selection for specific column
 
-It is possible to disable cell selection for a specific column by setting [`allowCellSelection`](/api/js/ejtreegrid#members:columns-allowcellselection "columns.allowCellSelection") as false in the column definition.
+It is possible to disable cell selection for a specific column by setting [`allowCellSelection`](/api/js/ejtreegrid#members:columns-allowcellselection "columns.allowCellSelection") as `false` in the column definition.
 
 The below code snippet explains how to disable cell selection for specific column in tree grid
 

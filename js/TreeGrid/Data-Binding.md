@@ -10,7 +10,7 @@ api: /api/js/ejtreegrid
 
 # Data Binding
 
-Data Binding is the process that establishes a connection between the application and different kinds of data sources such as business objects.
+Data Binding is the process that establishes a connection between the application and different kinds of data sources such as business objects. You can set the data source for TreeGrid control by using [`dataSource`](/api/js/ejtreegrid#members:datasource) property.
 
 ## Local Data Binding
 
@@ -242,3 +242,15 @@ Please refer to this [link](https://help.syncfusion.com/js/datamanager/data-bin
 1. Mapping the expand state of a record using the `expandStateMapping` property is not supported in load on demand feature.
 2. If a root or parent node is in collapsed state (child nodes not yet loaded), then that parent node will not be expanded while inserting new child to that parent node using toolbar icon or drag and drop actions.
 
+## Virtualization mode in TreeGrid
+Virtualization support is used to render large number of records in TreeGrid with effective performance. In this mode all the records are fetched from data source initially, but only few records will be displayed in the document object model (DOM) which should be visible to the user. While scrolling, the visible records are updated in DOM as per the scrolled position. This mode can be enabled by setting [`enableVirtualization`](/api/js/ejtreegrid#members:enablevirtualization "enableVirtualization") property as `true`. 
+
+The below code example shows how to use this property.
+
+{% highlight js %}
+$("#TreeGrid").ejTreeGrid({
+    //...
+    enableVirtualization:true,
+    //...
+});
+{% endhighlight %}
