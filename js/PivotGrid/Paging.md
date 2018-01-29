@@ -90,7 +90,7 @@ The properties associated to paging are:
 * EnablePaging: This property is used to enable/disable paging in the pivot client control.
 * PagerOptions.CategoricalPageSize: Specifies the number of categorical columns to be displayed within a page of the pivot client control.
 * PagerOptions.SeriesPageSize: Specifies the number of series rows to be displayed within a page of the pivot client control.
-* PagerOptions.CategoricalCurrentPag: Sets the current page of the categorical axis in the pivot client control.
+* PagerOptions.CategoricalCurrentPage: Sets the current page of the categorical axis in the pivot client control.
 * PagerOptions.SeriesCurrentPage: Sets the current page of the series axis in the pivot client control.
 
 In client mode, the page setting for categorical and series axes are needed to be set in the data source property by using the following properties:
