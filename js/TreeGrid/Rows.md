@@ -291,11 +291,11 @@ The following code shows how to render row drag tooltip with tooltip template.
 
 ## Expand/Collapse Row
 
-In ejTreeGrid parent rows are expanded/collapsed by using expand/collapse icons, expand all/collapse all toolbar items and by using public methods. By default all tasks in tree grid was rendered in expanded state but we can change this state.
+In TreeGrid, parent rows are expanded/collapsed by using expand/collapse icons, expand all/collapse all toolbar items and by using public methods. By default all records in TreeGrid will be rendered in expanded state.
 
-### Collapse all parent row at TreeGrid load
+### Collapse parent records at initial load
 
-All rows available in tree grid was rendered in collapsed state by setting [`enableCollapseAll`](/api/js/ejtreegrid#members:enablecollapseall) property as `true`. 
+It is possible to display all the records in collapsed state by setting [`enableCollapseAll`](/api/js/ejtreegrid#members:enablecollapseall) property as `true`. 
 
 The following code example shows how to use this property.
 
@@ -314,9 +314,9 @@ $("#TreeGrid").ejTreeGrid({
 The above screenshot shows TreeGrid render with collapsed state.
 {:.caption}
 
-### Define expand/collapse status of rows at tree grid load
+###  Define expand/collapse state of every record
 
-In ejTreeGrid, it is possible to render some rows in collapsed state and some rows in expanded state, this can done by defining expand status in data source. This value was mapped to tree grid control by using [`expandStateMapping`](/api/js/ejtreegrid#members:expandstatemapping) property.
+In TreeGrid, it is possible to render records either in collapsed state or in expanded state, and this can done by mapping the expand state to the records from the data source by using [`expandStateMapping`](/api/js/ejtreegrid#members:expandstatemapping) property.
 
 The following code example shows how to use this property.
 

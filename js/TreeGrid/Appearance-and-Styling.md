@@ -56,7 +56,7 @@ The following screenshot shows the TreeGrid control with Gradient-lime theme.
 
 ## Configuring CSS class
 
-In TreeGrid [`cssClass`](/api/js/ejtreegrid#members:cssclass) property was used to apply different customized styles to multiple TreeGrid controls available in sample page.
+In TreeGrid [`cssClass`](/api/js/ejtreegrid#members:cssclass) property is used to apply different custom styles to multiple TreeGrid controls available in the webpage.
 
 The following code example shows how to apply different background color for each TreeGrid control's toolbar element.
 
