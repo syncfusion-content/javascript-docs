@@ -11,7 +11,7 @@ api: /api/js/ejgantt
 
 The critical path in a project is indicated by a single task or a series of tasks in a project, critical path describes the calculated start date or end date of a project. If a task in a critical path is delayed, then the entire project will be delayed.
 
-The critical path can be enabled in Gantt by using built-in toolbar button or **showCriticalPath** method.
+The critical path can be enabled in Gantt by using built-in toolbar button or [`showCriticalPath`](/api/js/ejgantt#methods:showcriticalpath "showCriticalPath(isShown)") method.
 
 ## Using Toolbar Icon
 
@@ -43,7 +43,7 @@ You can enable/disable the critical path in Gantt by using toolbar button, and t
 
 ## Using Method
 
-You can enable the critical path by using **showCriticalPath****()** method with parameter as **true**. And critical path can be disabled using the same method with parameter as **false**.
+You can enable the critical path by using [`showCriticalPath`](/api/js/ejgantt#methods:showcriticalpath "showCriticalPath(isShown)") method with parameter as `true`. And critical path can be disabled using the same method with parameter as `false`.
 
 {% highlight html %}
  

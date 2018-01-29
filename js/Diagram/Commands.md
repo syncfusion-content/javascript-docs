@@ -144,7 +144,7 @@ diagram.ungroup();
 
 ### bringToFront Command
 
-The `bringToFront` command visually brings the selected element to front over all the other overlapped elements. The following code illustrates how to execute the bringToFront command.
+The [bringToFront](/api/js/ejdiagram#methods:bringtofront "bringToFront") command visually brings the selected element to front over all the other overlapped elements. The following code illustrates how to execute the bringToFront command.
 
 {% highlight javascript %}
 
@@ -157,7 +157,7 @@ diagram.bringToFront();
 
 ### sendToBack Command
 
-The `sendToBack` command visually moves the selected element behind all the other overlapped elements. The following code illustrates how to execute the sendToBack command.
+The [sendToBack](/api/js/ejdiagram#methods:sendtoback "sendToBack") command visually moves the selected element behind all the other overlapped elements. The following code illustrates how to execute the sendToBack command.
 
 {% highlight javascript %}
 
@@ -170,7 +170,7 @@ diagram.sendToBack();
 
 ### moveForward Command
 
-The `moveForward` command visually moves the selected element over the nearest overlapping element. The following code illustrates how to execute the moveForward Command.
+The [moveForward](/api/js/ejdiagram#methods:moveforward "moveForward") command visually moves the selected element over the nearest overlapping element. The following code illustrates how to execute the moveForward Command.
 
 {% highlight javascript %}
 
@@ -183,7 +183,7 @@ diagram.moveForward();
 
 ### sendBackward Command
 
-The `sendBackward` command visually moves the selected element behind the underlying element. The following code illustrates how to execute the sendBackward command.
+The [sendBackward](/api/js/ejdiagram#methods:sendbackward "sendBackward") command visually moves the selected element behind the underlying element. The following code illustrates how to execute the sendBackward command.
 
 {% highlight javascript %}
 
@@ -196,7 +196,7 @@ diagram.sendBackward();
 
 ## Zoom
 
-**zoomTo** command is used to zoom-in and zoom-out the Diagram view.
+[zoomTo](/api/js/ejdiagram#methods:zoomto "zoomTo") command is used to zoom-in and zoom-out the Diagram view.
 
 The following code illustrates how to zoom-in/zoom out the Diagram.
 
@@ -226,7 +226,7 @@ function Zoom() {
 
 ## Nudge Command
 
-**nudge** commands move the selected elements towards up, down, left or right by 1 pixel.
+[nudge](/api/js/ejdiagram#methods:nudge "nudge") commands move the selected elements towards up, down, left or right by 1 pixel.
 
 | Command | Parameter | Description |
 |---|---|---|
@@ -262,7 +262,7 @@ For more information, refer to [Keyboard Interaction](/js/Diagram/Interaction#ke
 
 ## BringIntoView
 
-`bringIntoView` command brings the specified rectangular region into the view port of the Diagram
+[bringIntoView](/api/js/ejdiagram#methods:bringintoview "bringIntoView") command brings the specified rectangular region into the view port of the Diagram
 
 The following code illustrates how to execute the bringIntoView command.
 
@@ -281,7 +281,7 @@ diagram.bringIntoView({
 
 ## BringToCenter
 
-`bringToCenter` command brings the specified rectangular region of the Diagram content to the center of the view port.
+[bringToCenter](/api/js/ejdiagram#methods:bringtocenter "bringToCenter") command brings the specified rectangular region of the Diagram content to the center of the view port.
 
 The following code illustrates how to execute the bringToCenter command.
 
@@ -300,7 +300,7 @@ diagram.bringToCenter({
 
 ## FitToPage command
 
-`fitToPage` command helps to fit the Diagram content into the view with respect to either width, height, or at the whole.
+[fitToPage](/api/js/ejdiagram#methods:fittopage "fitToPage") command helps to fit the Diagram content into the view with respect to either width, height, or at the whole.
 
 <table>
 <tr>
@@ -351,7 +351,7 @@ To define a custom command, you need to specify following properties.
 * `canExecute`: a method to define whether the command can be executed at the moment. 
 * `gesture`: the combination of key gestures.
 
-To explore the properties of custom commands, refer to [Commands](/api/js/ejDiagram#commandmanager:commands "Commands")
+To explore the properties of custom commands, refer to [Commands](/api/js/ejdiagram#members:commandmanager-commands "Commands")
 
 The following code example illustrates how to define a custom command.
 

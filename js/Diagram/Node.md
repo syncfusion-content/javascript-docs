@@ -57,7 +57,7 @@ $("#diagram").ejDiagram({
 
 ### Add node at runtime
 
-Nodes can be added at runtime by using public method, `add`. The following code illustrates how to add a node.
+Nodes can be added at runtime by using public method, [add](/api/js/ejdiagram#methods:add "add"). The following code illustrates how to add a node.
 
 {% highlight javascript %}
 // Defines JSON to create a node
@@ -96,7 +96,7 @@ Nodes can be interactively drawn by clicking and dragging the Diagram surface by
 
 ## Update Node at runtime
 
-The client side method `updateNode` is used to update the nodes at run time. The following code example illustrates how to update a node at runtime.
+The client side method [updateNode](/api/js/ejdiagram#methods:updatenode "updateNode") is used to update the nodes at run time. The following code example illustrates how to update a node at runtime.
 
 {% highlight javascript %}
 
@@ -291,7 +291,7 @@ Diagram provides support to describe the state of the node. i.e., node is expand
 
 N> Icon can be created only when the node has outedges.
 
-To explore the properties of expandIcon and collapseIcon, refer to [Icon Properties](/api/js/ejDiagram#members:nodes-expandicon "Icon Properties").
+To explore the properties of expandIcon and collapseIcon, refer to [Icon Properties](/api/js/ejdiagram#members:nodes-expandicon "Icon Properties").
 
 The `shape` property of icon allows to define the shape of the icon. The following code example illustrates how to create icon of various shapes.
 

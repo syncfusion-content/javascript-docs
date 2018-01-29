@@ -10,7 +10,7 @@ api: /api/js/ejtreegrid
 
 # Selection
 
-The TreeGrid control provides support for row and cell selections. 
+The TreeGrid control provides support for row and cell selections using [`selectionSettings`](/api/js/ejtreegrid#members:selectionsettings) property. 
 
 ## Row selection
 
@@ -116,6 +116,28 @@ Find the code example below to enable the cell selection in TreeGrid.
 The output of the TreeGrid with cell selection is as follows.
 
 ![](/js/TreeGrid/Selection_images/Selection_img3.png)
+
+### Disabling cell selection for specific column
+
+It is possible to disable cell selection for a specific column by setting [`allowCellSelection`](/api/js/ejtreegrid#members:columns-allowcellselection "columns.allowCellSelection") as false in the column definition.
+
+The below code snippet explains how to disable cell selection for specific column in tree grid
+
+{% highlight js %}
+
+    $(function () {
+        $("#TreeGridContainer").ejTreeGrid({
+            //...
+            columns: [
+                { field: "taskID", headerText: "Task Id"},
+                { field: "taskName", headerText: "Task Name",allowCellSelection: false },
+                { field: "startDate", headerText: "Start Date"},
+                { field: "endDate", headerText: "End Date" }
+            ]
+        })
+    });
+
+{% endhighlight %}
 
 ### Multiple cell selection
 

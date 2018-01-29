@@ -11,7 +11,7 @@ api: /api/js/ejdiagram
 # Exporting
 
 Diagram provides support to export its content as image/svg files.
-The client side method `exportDiagram` helps to export the Diagram. The following code illustrates how to export the Diagram as image.
+The client side method [exportDiagram](/api/js/ejdiagram#methods:exportdiagram "exportDiagram") helps to export the Diagram. The following code illustrates how to export the Diagram as image.
 
 {% highlight javascript %}
 
@@ -154,7 +154,7 @@ var options = {
 diagram.exportDiagram(options);
 
 //By default, Diagram is exported with stretch option as "none". 
-For more information about the various stretch options refer to [Stretch options](api/js/ejdiagram#methods:exportdiagram )
+For more information about the various stretch options refer to [Stretch options](/api/js/ejdiagram#methods:exportdiagram )
 
 {% endhighlight %}
 

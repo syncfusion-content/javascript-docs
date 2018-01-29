@@ -9,7 +9,7 @@ api: /api/js/ejtreegrid
 ---
 # Toolbar
 
-In TreeGrid we can show/hide the Toolbar by using the [`showToolbar`](/api/js/ejtreegrid#members:toolbarsettings-showtoolbar "toolbarSettings.showToolbar") property. We can add default toolbar items by [`toolbarItems`](/api/js/ejtreegrid#members:toolbarsettings-toolbaritems "toolbarSettings.toolbarItems"). User can also create a custom toolbar items by using the [`customToolbarItems`](/api/js/ejtreegrid#members:toolbarsettings-customtoolbaritems "toolbarSettings.customToolbarItems").
+In TreeGrid we can show/hide the Toolbar by using the [`showToolbar`](/api/js/ejtreegrid#members:toolbarsettings-showtoolbar "toolbarSettings.showToolbar") property of [`toolbarSettings`](/api/js/ejtreegrid#members:toolbarsettings). We can add default toolbar items by [`toolbarItems`](/api/js/ejtreegrid#members:toolbarsettings-toolbaritems "toolbarSettings.toolbarItems"). User can also create a custom toolbar items by using the [`customToolbarItems`](/api/js/ejtreegrid#members:toolbarsettings-customtoolbaritems "toolbarSettings.customToolbarItems").
 
 ## Default Toolbar Items
 Using TreeGrid default toolbar items we can perform below operations.

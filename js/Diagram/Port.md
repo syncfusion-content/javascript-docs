@@ -57,7 +57,7 @@ $("#diagram").ejDiagram({
 
 ### Add ports at runtime
 
-You can add ports at runtime by using the client side method `addPorts`. The following code illustrates how to add ports to node at runtime.
+You can add ports at runtime by using the client side method [addPorts](/api/js/ejdiagram#methods:addports "addPorts"). The following code illustrates how to add ports to node at runtime.
 
 {% highlight javascript %}
 
@@ -86,11 +86,11 @@ diagram.addPorts("node", ports)
 
 ![](/js/Diagram/Port_images/Port_img1.png)
 
-To explore the set of properties for defining a port, refer to [Port Properties](/api/js/ejDiagram#members:nodes-ports "Port Properties")
+To explore the set of properties for defining a port, refer to [Port Properties](/api/js/ejdiagram#members:nodes-ports "Port Properties")
 
 ### Update Port at runtime
 
-The client side API `updatePort` is used to update the ports at run time. The following code example illustrates how to change the port properties.
+The client side API [updatePort](/api/js/ejdiagram#methods:updateport "updatePort") is used to update the ports at run time. The following code example illustrates how to change the port properties.
 
 {% highlight javascript %}
 
@@ -108,7 +108,7 @@ For more information about creating connections with port, refer to [Connections
 
 ## Appearance 
 
-You can change the shape of port by using its `shape` property. To explore the different types of port shapes, refer to [Port Shapes](/api/js/global#portshapes "Port Shapes").
+You can change the shape of port by using its `shape` property. To explore the different types of port shapes, refer to [Port Shapes](/api/js/ejdiagram#members:nodes-ports-shape "Port Shapes").
 The appearance of ports can be customized with a set of style specific properties. 
 
 The following code illustrates how to change the appearance of port.

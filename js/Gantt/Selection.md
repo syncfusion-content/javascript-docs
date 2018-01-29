@@ -11,7 +11,7 @@ api: /api/js/ejgantt
 
 ## Row selection
 
-The row selection in Gantt can be enabled or disabled, by using the  [`allowSelection`](/api/js/ejgantt#members:allowselection) property. You can able to get the selected row object using the selectedItem property from the Gantt model. The following code example shows how to disable the row selection in Gantt.
+The row selection in Gantt can be enabled or disabled, by using the  [`allowSelection`](/api/js/ejgantt#members:allowselection) property. You can able to get the selected row object using the `selectedItem` property from the Gantt model. The following code example shows how to disable the row selection in Gantt.
 
 {% highlight javascript %}
 $("#GanttContainer").ejGantt({
@@ -87,7 +87,7 @@ To enable multiple selection, you can set the [`selectionType`](/api/js/ejgantt#
 
 ### Selecting multiple rows programmatically 
 
-You can also select multiple rows programmatically  by using the [`selectMultipleRows`](/api/js/ejgantt#methods:selectmultiplerows) public method. The following code example explains how to enable multiple selection in Gantt.
+You can also select multiple rows programmatically  by using the [`selectMultipleRows`](/api/js/ejgantt#methods:selectmultiplerows "selectMultipleRows(rowIndexes)") public method. The following code example explains how to enable multiple selection in Gantt.
 {% highlight html %}
 <body>
 
@@ -116,6 +116,27 @@ $("#selectMultipleRow").click(function(args) {
 
 })
 {% endhighlight %}
+
+### Customize row selection action
+
+While selecting a row in Gantt, [`rowSelecting`](/api/js/ejgantt#events:rowselecting) and [`rowSelected`](/api/js/ejgantt#events:rowselected) event will be triggered. Row selecting event will be triggered on initialization of row selection action. In [`rowSelecting`](/api/js/ejgantt#events:rowselecting) event we can get the previously selected row and current selecting row's information, using this information we can prevent selection of particular row. The [`rowSelected`](/api/js/ejgantt#events:rowselected) event will be triggered on completion of row selection action, in this event we can get the current selected row's information. The following code example shows how to prevent the selection of particular row using [`rowSelecting`](/api/js/ejgantt#events:rowselecting) event.
+
+{% highlight javascript %}
+
+    $("#GanttContainer").ejGantt({
+        allowSelection: true,
+        selectionMode: "row",
+        selectionType: "single",
+        rowSelecting: function(args) {
+            if(args.data.taskId == 5) // prevent selection of Task id 5
+                args.cancel = true;
+        },
+        //...
+    });
+
+{% endhighlight %}
+
+You can find the JS playground sample for this [here](http://jsplayground.syncfusion.com/Sync_birtlzhd "Demo Link").
 
 ## Cell selection
 
@@ -157,7 +178,7 @@ $("#GanttContainer").ejGantt({
 
 ### Select cells programmatically 
 
-You can select the cells programmatically using the [`selectCells`](/api/js/ejgantt#methods:selectcells) public method. Find the code example below for details.
+You can select the cells programmatically using the [`selectCells`](/api/js/ejgantt#methods:selectcells "selectCells(Indexes,preservePreviousSelectedCell)") public method. Find the code example below for details.
 
 {% highlight html %}
 <body>
@@ -196,7 +217,28 @@ $("#selectCells").click(function(args) {
 
 ![](/js/Gantt/Selection_images/Selection_img4.png)
 
-## MultiSelection – Touch Option
+### Customize cell selection action
+
+While selecting a cell in Gantt, [`cellSelecting`](/api/js/ejgantt#events:cellselecting) and [`cellSelected`](/api/js/ejgantt#events:cellselected) event will be triggered. Cell selecting event will be triggered on initialization of cell selection action. In [`cellSelecting`](/api/js/ejgantt#events:cellselecting) event we can get the current selecting cell information, using this information we can prevent selection of particular cell in particular row. The [`cellSelected`](/api/js/ejgantt#events:cellselected) event will be triggered on completion of cell selection action, in this event we can get the current selected cell's information. The following code example shows how to prevent the selection of particular cell using [`cellSelecting`](/api/js/ejgantt#events:cellselecting) event.
+
+{% highlight javascript %}
+
+    $("#GanttContainer").ejGantt({
+        allowSelection: true,
+        selectionMode: "cell",
+        selectionType: "single",
+        cellSelecting: function(args) {
+            if(args.data.taskId == 5 && args.cellIndex == 1) // prevent selection of Task Name cell of Task id 5
+                args.cancel = true;
+        },
+        //...
+    });
+
+{% endhighlight %}
+
+You can find the JS playground sample for this [here](http://jsplayground.syncfusion.com/Sync_x3ep3n4r "Demo Link").
+
+## Multiple Selection – Touch Option
 
 It is possible to select rows using touch action in Gantt. Gantt provides support for both single selection and multiple row selection using touch action. For multiple row selection, when we tap on a cell, a helper icon will be displayed using that multiple rows can be selected.
 

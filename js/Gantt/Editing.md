@@ -224,6 +224,30 @@ You can also enable or disable the progress bar resizing by using the [`enablePr
 
 {% endhighlight %}
 
+### Prevent taskbar editing for particular task
+
+On taskbar edit action [`taskbarEditing`](/api/js/ejgantt#events:taskbarediting) and [`taskbarEdited`](/api/js/ejgantt#events:taskbaredited) event will be triggered. We can prevent the taskbar from editing by using [`taskbarEditing`](/api/js/ejgantt#events:taskbarediting) event and we can revert taskbar edit action by using [`taskbarEdited`](/api/js/ejgantt#events:taskbaredited) event. The following code example shows how to achieve this.
+
+{% highlight javascript %}
+
+    $("#GanttContainer").ejGantt({
+        //...
+        allowGanttChartEditing: true,
+        taskbarEditing: function (args) {
+            if (args.rowData.taskId == 4) // We can't edit Task Id 4
+                args.cancel = true;
+        },
+        taskbarEdited: function (args) { // We can edit task id 5 task but changes reverted on mouse up action
+            if (args.data.taskId == 5)
+                args.cancel = true;
+        },
+        
+    });
+
+{% endhighlight %}
+
+You can find the JS playground sample for this [here](http://jsplayground.syncfusion.com/Sync_p3zjn5kw "Demo Link").
+
 ## Predecessor Editing
 
 Update the predecessor details of a task using mouse interactions. The following code example shows how to enable predecessor editing.
@@ -245,6 +269,50 @@ The following screen shot shows the predecessor editing in Gantt control.
 
 [Click](http://js.syncfusion.com/demos/web/#!/bootstrap/gantt/editing) here to view the online demo sample for editing in Gantt.
 
+## Update Gantt record value dynamically
+
+Gantt record's value can be dynamically updated by using [`updateRecordByTaskId`](/api/js/ejgantt#methods:updaterecordbytaskid "updateRecordByTaskId(data)") or [`updateRecordByIndex`](/api/js/ejgantt#methods:updaterecordbyindex "updateRecordByIndex(index, data)") method. [`updateRecordByTaskId`](/api/js/ejgantt#methods:updaterecordbytaskid "updateRecordByTaskId(data)") method used to update the Gantt record by using it's task id value and [`updateRecordByIndex`](/api/js/ejgantt#methods:updaterecordbyindex "updateRecordByIndex(index, data)") method was used to update Gantt record value by row index value. We can invoke this method on any external button click action, the following code example shows how to use this methods.
+
+{% highlight js %}
+
+$("#GanttContainer").ejGantt({
+    //...
+});
+
+$("#updateRecordByTaskId").click(function () {
+    var ganttObj = $("#GanttContainer").ejGantt("instance"),
+        data = {
+                taskID: 4,
+                taskName: "Updated by task id",
+                startDate: new Date("02/10/2014"),
+                endDate: new Date("02/14/2014"),
+                duration: 5,
+                progress: "80",
+                resourceId: [2]
+            };
+    ganttObj.updateRecordByTaskId(data);
+});
+
+$("#updateRecordByRowIndex").click(function () {
+    var ganttObj = $("#GanttContainer").ejGantt("instance"),
+        data = {
+                taskID: 5,
+                taskName: "Updated by index value",
+                startDate: new Date("02/10/2014"),
+                endDate: new Date("02/14/2014"),
+                duration: 3, progress: "100",
+                predecessor: "4SS",
+                resourceId: [2]
+        };
+    ganttObj.updateRecordByIndex(4, data);
+});
+
+{% endhighlight %}
+
+You can find the JS playground sample for this [here](http://jsplayground.syncfusion.com/Sync_w5suulh5).
+
+N> Using these methods we can't update the task id value, refer this [link](/js/gantt/how-to/update-task-id-value) to know about how to update the task id value.
+
 ## Delete confirmation message
 
 Delete confirmation message is used to get the confirmation from the user before delete the record. This confirmation message can be enabled by setting [`showDeleteConfirmDialog`](/api/js/ejgantt#members:editsettings-showdeleteconfirmdialog "editSettings.showDeleteConfirmDialog") property as `true`.
@@ -253,7 +321,7 @@ The following code snippet explains how to enable delete confirmation message in
 
 {% highlight js %}
 
-$("#Gantt").ejGantt({
+$("#GanttContainer").ejGantt({
      //...
     editSettings: {
         allowDeleting: true,
@@ -275,7 +343,7 @@ Task indent option in Gantt was enabled by setting [`allowIndent`](/api/js/ejgan
 
 {% highlight js %}
 
-$("#Gantt").ejGantt({
+$("#GanttContainer").ejGantt({
      //...
     editSettings: {
         allowIndent: true
@@ -317,7 +385,7 @@ Task outdent option in Gantt was enabled by setting [`allowIndent`](/api/js/ejga
 
 {% highlight js %}
 
-$("#Gantt").ejGantt({
+$("#GanttContainer").ejGantt({
      //...
     editSettings: {
         allowIndent: true
@@ -352,3 +420,56 @@ After Outdent
 {:.caption}
 
 N> We should select any one of the row in Gantt to perform task outdent action.
+
+## Task Delete
+
+Task delete option in Gantt was enabled by setting [`allowDeleting`](/api/js/ejgantt#members:editsettings-allowdeleting "editSettings.allowDeleting") as `true`. Tasks can be delete by clicking on delete toolbar item or by using [`deleteItem`](/api/js/ejgantt#methods:deleteitem) method. We can invoke this method dynamically on any action like external button click. The below code example shows how to enable delete option in Gantt.
+
+{% highlight js %}
+
+$("#GanttContainer").ejGantt({
+     //...
+    editSettings: {
+        allowDeleting: true
+    },
+    toolbarSettings: {
+        showToolbar: true,
+        toolbarItems: [ej.Gantt.ToolbarItems.Add,
+        //..
+        ej.Gantt.ToolbarItems.Delete]
+    },
+    //...
+});
+
+$("#deleteTask").click(function () {
+    var ganttObj = $("#GanttContainer").ejGantt("instance");
+    if (ganttObj.selectedRowIndex() != -1)
+        ganttObj.deleteItem();
+});
+
+{% endhighlight %}
+
+The following screenshots shows the output of above code example.
+
+![](/js/Gantt/Editing_images/Editing_img6.png)
+Before Delete
+{:.caption}
+
+![](/js/Gantt/Editing_images/Editing_img9.png)
+After Delete
+{:.caption}
+
+N> We should select any one of the row in Gantt to perform task delete action.
+
+## Read-only Gantt
+
+In Gantt, all editing options can be disabled by setting [`readOnly`](/api/js/ejgantt#members:readonly) property as `true`. The following code example shows how to make Gantt control as read-only.
+
+{% highlight js %}
+
+$("#GanttContainer").ejGantt({
+    //...
+    readOnly: true,
+});
+
+{% endhighlight %}

@@ -47,6 +47,39 @@ $("#treeGrid").ejTreeGrid({
 
 ![](Stacked-header_images/Stacked-Header-img1.png)
 
+### Stacked header text
+
+Using [`headerText`](/api/js/ejtreegrid#members:stackedheaderrows-stackedheadercolumns-headertext "stackedHeaderRows.stackedHeaderColumns.headerText") property you can provide title for the specific stacked header column.
+
+The following code example explains how to set header text for stacked header
+
+{% highlight js %}
+
+      $("#treegrid").ejTreeGrid({
+          //...     
+          showStackedHeader: true,
+          stackedHeaderRows: [{
+              stackedHeaderColumns: [{
+                        column: "ID,Name,units",
+                        headerText: "Shipment details"
+                    },
+                    {
+                        column: "unitPrice,price",
+                        headerText: "Price details"
+                    }
+                ]
+            ]
+          },
+          // ...
+    });
+
+{% endhighlight %}
+
+The following screenshot shows TreeGrid with stacked header text
+
+![](Stacked-header_images/Stacked-Header-img5.png)
+
+
 ## Stacked header column customization
 
 The stacked header cells can be customized with more options as described below.

@@ -131,15 +131,14 @@ The output of the above steps is as follows.
 
 ![](/js/Gantt/Data-Binding_images/Data-Binding_img1.png)
 
-It is also possible to set the datasource to Gantt using ejDataManager. The following code example explains how to assign the ejDataManager instance to Gantt.
+It is also possible to set the data source to Gantt using ejDataManager. And we can pass the query value to ejDataManager by using [`query`](/api/js/ejgantt#members:query) property. The following code example explains how to assign the ejDataManager instance to Gantt.
 
 {% highlight javascript %}
-$("#gantt").ejGantt({
 
-    dataSource: ej.DataManager(dataManger),
-
+$("#GanttContainer").ejGantt({
+    dataSource: ej.DataManager(taskDetails),
+    query: ej.Query().select("taskID", "taskName", "startDate", "duration", "progress", "subtasks"),
     //…
-
 });
 
 {% endhighlight %}
@@ -246,7 +245,7 @@ $(function() {
 
     var dataManger = ej.DataManager("http://js.syncfusion.com/demos/ejServices/Wcf/TreeGridGantt/TreeGantt.svc/SelfReferenceDatas");
 
-    $("#gantt").ejGantt({
+    $("#GanttContainer").ejGantt({
 
         dataSource: dataManger,
 
@@ -324,3 +323,18 @@ The following output is displayed as a result of the above code example.
 ![](Data-Binding_images/Data-Binding_img5.png)
 ![](Data-Binding_images/Data-Binding_img6.png)
 
+## Virtualization mode in Gantt
+
+Virtualization support was used to render large number tasks in Gantt with effective performance, in this mode all the tasks are fetched from data source initially then some of the records are rendered in DOM which are compact to the current viewport area. While scrolling tasks are updated in DOM as per current viewport position. This mode can be enabled by setting [`enableVirtualization`](/api/js/ejgantt#members:enablevirtualization) property as `true`. The below code example shows how to use this property.
+
+{% highlight javascript %}
+
+$("#GanttContainer").ejGantt({
+    dataSource: dataSource,
+    enableVirtualization: true
+    //…
+});
+
+{% endhighlight %}
+
+You can find the online demo sample of Gantt with virtualization mode [here](https://js.syncfusion.com/demos/web/#!/bootstrap/gantt/databinding/performance).

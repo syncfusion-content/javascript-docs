@@ -189,6 +189,29 @@ The following output shows the result of above code example.
 
 ![](/js/TreeGrid/Cell/headetTooltipTemplate.png)
 
+### Expander column tooltip
+
+It is possible to enable the tooltip only for expander column using [`showGridExpandCellTooltip`](/api/js/ejtreegrid#members:showgridexpandcelltooltip) property also need to enable the [`showGridCellTooltip`](/api/js/ejtreegrid#members:showgridcelltooltip) property.
+
+The below code snippet explains enabling tooltip only for expander column
+
+{% highlight js %}
+
+$("#TreeGridContainer").ejTreeGrid({
+    
+        //...
+        showGridCellTooltip: true,
+        showGridExpandCellTooltip: true
+        //...
+    ]
+});
+
+{% endhighlight %}
+
+The following output shows the result of above code example.
+
+![](/js/TreeGrid/Cell/expander_tooltip.png)
+
 
 ## Clip Mode
 

@@ -14,7 +14,7 @@ Diagram's `scrollSettings` enables you to read the current scroll status, view p
 
 ## Get current scroll status
 
-Scroll settings allows you to read the scroll status, view port size, and current zoom factor with a set of properties. To explore those properties, see [Scroll Settings](/api/js/ejDiagram#members:scrollsettings "Scroll Settings")
+Scroll settings allows you to read the scroll status, view port size, and current zoom factor with a set of properties. To explore those properties, see [Scroll Settings](/api/js/ejdiagram#members:scrollsettings "Scroll Settings")
 
 ## Define scroll status
 Diagram allows you to pan the Diagram before loading, so that any desired region of a large Diagram is made to view. You can programmatically pan the Diagram with the `horizontalOffset` and `verticalOffset` properties of scroll settings. The following code illustrates how to set pan the Diagram programmatically.
@@ -46,7 +46,7 @@ In the example given below, the vertical scroll bar is scrolled down by 50px and
 
 ## Update scroll status
 
-You can programmatically change the scroll offsets at runtime by using the client side method `update`. The following code illustrates how to change the scroll offsets and zoom factor at runtime.
+You can programmatically change the scroll offsets at runtime by using the client side method [update](/api/js/ejdiagram#methods:update "update"). The following code illustrates how to change the scroll offsets and zoom factor at runtime.
 
 {% highlight javascript %}
 
@@ -96,7 +96,7 @@ The scroll limit allows you to define the scrollable region of the Diagram. It i
 * Allows to scroll within the Diagram content.
 * Allows to scroll within the specified scrollable area.
 
-`scrollLimit` property of scroll settings helps to limit the scrolling. For the accepted values of the scrollLimit, refer to [Scroll Limit](/api/js/ejDiagram#scroll-limit "Scroll Limit").
+`scrollLimit` property of scroll settings helps to limit the scrolling. For the accepted values of the scrollLimit, refer to [Scroll Limit](/api/js/ejdiagram#scroll-limit "Scroll Limit").
 
 The following code example illustrates how to specify the scroll limit.
 

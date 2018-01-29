@@ -253,7 +253,7 @@ The following tables illustrates all the possible scale options for the node
 
 ## Basic Shapes
 
-The Basic shapes are common shapes that are used to represent the geometrical information visually. To create basic shapes, the `type` of the node should be set as "basic". Its `shape` property can be set with any one of the built-in shape. [Basic Shapes](/api/js/global#basicshapes "Basic Shapes"). 
+The Basic shapes are common shapes that are used to represent the geometrical information visually. To create basic shapes, the `type` of the node should be set as "basic". Its `shape` property can be set with any one of the built-in shape. [Basic Shapes](/api/js/ejdiagram#members:nodes-shape "Basic Shapes"). 
 The following code example illustrates how to create a basic shape. 
 
 {% highlight javascript %}
@@ -322,7 +322,7 @@ The list of basic shapes are as follows.
 
 ## Flow Shapes
 
-The flow shapes are used to represent the process flow. It is used for analyzing, designing, and managing for documentation process. To create a flow shape, you need to specify the `type` as "flow". Its `shape` property can be set with any one of the built-in shape. [Flow Shapes](/api/js/global#flowshapes "Flow Shapes") and by default, it is considered as "process". The following code example illustrates how to create a flow shape. 
+The flow shapes are used to represent the process flow. It is used for analyzing, designing, and managing for documentation process. To create a flow shape, you need to specify the `type` as "flow". Its `shape` property can be set with any one of the built-in shape. [Flow Shapes](/api/js/ejdiagram#members:nodes-shape "Flow Shapes") and by default, it is considered as "process". The following code example illustrates how to create a flow shape. 
 
 {% highlight javascript %}
 

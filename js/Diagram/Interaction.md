@@ -42,7 +42,7 @@ Multiple selected elements are visually represented as shown.
 
 ### Select/Unselect elements programmatically
 
-The client side methods `addSelection`, `clearSelection` and `removeSelection` help select/unselect elements at runtime. The following code example illustrates how to select/unselect an item through programmatically.
+The client side methods [addSelection](/api/js/ejdiagram#methods:addselection "addSelection"), [clearSelection](/api/js/ejdiagram#methods:clearselection "clearSelection") and [removeSelection](/api/js/ejdiagram#methods:removeselection "removeSelection") help select/unselect elements at runtime. The following code example illustrates how to select/unselect an item through programmatically.
 
 {% highlight javascript %}
 

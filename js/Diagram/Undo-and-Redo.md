@@ -24,7 +24,7 @@ For more information, refer to [Keyboard Interactions](/js/Diagram/Interaction#k
 
 ### Undo redo through public APIs
 
-The client side methods `undo` and `redo` help you to revert/restore the changes. The following code example illustrates how to undo/redo the changes through script.
+The client side methods [undo](/api/js/ejdiagram#methods:undo "undo") and [redo](/api/js/ejdiagram#methods:redo "redo") help you to revert/restore the changes. The following code example illustrates how to undo/redo the changes through script.
 
 {% highlight javascript %}
 

@@ -55,7 +55,7 @@ $("#DiagramContent").ejDiagram({
 
 ### Add connector at run time
 
-Connectors can be added at runtime with the client side method, `add`. The following code example illustrates how to add connector at runtime.
+Connectors can be added at runtime with the client side method, [add](/api/js/ejdiagram#methods:add "add"). The following code example illustrates how to add connector at runtime.
 
 {% highlight javascript %}
 
@@ -98,7 +98,7 @@ Connectors can be interactively drawn by clicking and dragging on the Diagram su
 
 ## Update Connector at runtime
 
-The client side method, `updateConnector` is used to update the connectors at run time. The following code example illustrates how to update a connector at runtime.
+The client side method, [updateConnector](/api/js/ejdiagram#methods:updateconnector "updateConnector") is used to update the connectors at run time. The following code example illustrates how to update a connector at runtime.
 
 {% highlight javascript %}
 
@@ -454,7 +454,7 @@ connectors.push(connector);
 ## Decorator
 
 Start and end points of a connector can be decorated with some customizable shapes like arrows, circles, diamond or path. You can decorate the connection end points with the `sourceDecorator` and `targetDecorator` properties of connector.
-To explore the properties of decorators, refer to [Decorator Properties](/api/js/ejDiagram#members:connectors-sourcedecorator "Decorator Properties").
+To explore the properties of decorators, refer to [Decorator Properties](/api/js/ejdiagram#members:connectors-sourcedecorator "Decorator Properties").
 
 The `shape` property of decorator allows to define the shape of the decorators. The following code example illustrates how to create decorators of various shapes.
 
