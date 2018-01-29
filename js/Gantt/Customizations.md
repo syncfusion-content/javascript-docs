@@ -254,7 +254,7 @@ The following screenshot shows Gantt with task tooltip customization.
 
 ### Dependency tooltip
 
-The default dependency tooltip in Gantt can be customized by using [`predecessorTooltipTemplate`](/api/js/ejgantt#members:predecessortooltiptemplate "predecessorTooltipTemplate") property. We can map value to this property as  JsRender template script id with prefix of '#' or html elements in string format. The following code example shows how to use the [`predecessorTooltipTemplate`](/api/js/ejgantt#members:predecessortooltiptemplate "predecessorTooltipTemplate") property.
+The default dependency tooltip in Gantt can be customized by using [`predecessorTooltipTemplate`](/api/js/ejgantt#members:predecessortooltiptemplate "predecessorTooltipTemplate") property. We can map value to this property as  JsRender template script id with prefix of '#' or HTML elements in string format. The following code example shows how to use the [`predecessorTooltipTemplate`](/api/js/ejgantt#members:predecessortooltiptemplate "predecessorTooltipTemplate") property.
 
 {% highlight javascript %}
 
