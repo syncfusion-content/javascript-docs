@@ -112,7 +112,7 @@ public Dictionary<string, object> SaveReportToDB(string reportName, string opera
 
 ## Save Report to Local Storage
 
-We can store the report collection of PivotClient to local storage, by setting the [`enableLocalStorage`](/api/js/ejpivotclient#members:enableLocalStorage) property to true and by defining the [`saveReport`](/api/js/ejpivotclient#members:saveReport) event of PivotClient.
+We can store the report collection of pivot client to local storage, by setting the [`enableLocalStorage`](/api/js/ejpivotclient#members:enablelocalstorage) property to true and by defining the [`saveReport`](/api/js/ejpivotclient#members:saveReport) event of pivot client.
 
 {% highlight html %}
 
@@ -331,7 +331,7 @@ private DataTable GetDataTable()
 
 ## Load Report from Local Storage
 
-We can load the stored report collection of PivotClient from local storage, by setting the [`enableLocalStorage`](/api/js/ejpivotclient#members:enableLocalStorage) property to true and using the [`LoadReport`](/api/js/ejpivotclient#members:loadReport) and [`FetchReport`](/api/js/ejpivotclient#members:fetchReport) events in PivotClient.
+We can load the stored report collection of pivot client from local storage, by setting the [`enableLocalStorage`](/api/js/ejpivotclient#members:enablelocalstorage) property to true and using the [`LoadReport`](/api/js/ejpivotclient#members:loadReport) and [`FetchReport`](/api/js/ejpivotclient#members:fetchReport) events in pivot client.
 
 {% highlight html %}
 

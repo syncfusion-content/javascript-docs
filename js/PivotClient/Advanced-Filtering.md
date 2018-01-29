@@ -14,7 +14,7 @@ It allows to filter and sort the field members in PivotClient.
 
 ### Client Mode
 
-In client mode, you can enable Advanced Filtering and Sorting option in PivotClient by setting the [`enableAdvancedFilter`](/api/js/ejpivotclient#members:enableAdvancedFilter) property under [`dataSource`] to true.
+In client mode, you can enable Advanced Filtering and Sorting option in PivotClient by setting the [`enableAdvancedFilter`](/api/js/ejpivotclient#members:datasource-enableadvancedfilter) property under [`dataSource`] to true.
 
 {% highlight html %}
 
@@ -32,7 +32,7 @@ In client mode, you can enable Advanced Filtering and Sorting option in PivotCli
 
 ### Server Mode
 
-In server mode, you can enable the Advanced Filtering and Sorting option in PivotClient by setting the [`enableAdvancedFilter`](/api/js/ejpivotclient#members:enableAdvancedFilter) property to true.
+In server mode, you can enable the Advanced Filtering and Sorting option in PivotClient by setting the [`enableAdvancedFilter`](/api/js/ejpivotclient#members:enableadvancedfilter) property to true.
 
 {% highlight html %}
 

@@ -12,7 +12,7 @@ api: /api/js/ejpivotclient
 
 ## Size
 
-Allows you to render PivotClient in different sizes. You can set height and width under ['size'] property. 
+Allows you to render pivot client in different sizes. You can set height and width under [`size`](/api/js/ejpivotclient#members:size) property.
 
 ## Set size in Pixels
 
@@ -252,7 +252,7 @@ The Chart Type can also be changed dynamically through the toolbar icon.
 
 I> This feature is applicable only for OLAP data source bound from server-side.
 
-You can include the PivotTreeMap component as one of the chart types by setting [`enablePivotTreeMap`](/api/js/ejPivotClient#members:enablepivottreemap) property to true.
+You can include the pivot treemap component as one of the chart types by setting [`enablePivotTreeMap`](/api/js/ejpivotclient#members:enablepivottreemap) property to true.
 
 {% highlight javascript %}
 
@@ -290,3 +290,24 @@ You can customize the display of toolbar by enabling/disabling the visibility of
 The following screenshot shows after disabling the toolbar icons.
 
 ![](Layout-Customization_images/toolbarIconSettings2.png)
+
+Following Table will explain you the available properties for the customization of the report toolbar.
+
+| Property | Description
+|---|---|
+| [`enableNewReport`](/api/js/ejpivotclient#members:toolbariconsettings-enablenewreport) | Allows user to set the visibility of `New Report` icon in toolbar panel.|
+| [`enableAddReport`](/api/js/ejpivotclient#members:toolbariconsettings-enableaddreport) | Allows user to set the visibility of `Add Report` icon in toolbar panel.|
+| [`enableRemoveReport`](/api/js/ejpivotclient#members:toolbariconsettings-enableremovereport) | Allows user to set the visibility of `Remove Report` icon in toolbar panel.|
+| [`enableRenameReport`](/api/js/ejpivotclient#members:toolbariconsettings-enablerenamereport) | Allows user to set the visibility of `Rename Report` icon in toolbar panel.|
+| [`enableDBManipulation`](/api/js/ejpivotclient#members:toolbariconsettings-enabledbmanipulation) | Allows user to set the visibility of `DB Manipulation` icon in toolbar panel.|
+| [`enableMDXQuery`](/api/js/ejpivotclient#members:toolbariconsettings-enablemdxquery) | Allows user to set the visibility of `MDX Query` icon in toolbar panel.|
+| [`enableDeferUpdate`](/api/js/ejpivotclient#members:toolbariconsettings-enabledeferupdate) | Allows user to set the visibility of `Defer Update` icon in toolbar panel.|
+| [`enableExcelExport`](/api/js/ejpivotclient#members:toolbariconsettings-enableexcelexport) | Allows user to set the visibility of `Excel Export` icon in toolbar panel.|
+| [`enableWordExport`](/api/js/ejpivotclient#members:toolbariconsettings-enablewordexport) | Allows user to set the visibility of `Word Export` icon in toolbar panel.|
+| [`enablePdfExport`](/api/js/ejpivotclient#members:toolbariconsettings-enablepdfexport)| Allows user to set the visibility of `PDF Export` icon in toolbar panel.|
+| [`enableFullScreen`](/api/js/ejpivotclient#members:toolbariconsettings-enablefullscreen)| Allows user to set the visibility of `Full Screen` icon in toolbar panel.|
+| [`enableSortOrFilterColumn`](/api/js/ejpivotclient#members:toolbariconsettings-enablesortorfiltercolumn)| Allows user to set the visibility of `Sort/Filter Column` icon in toolbar panel.|
+| [`enableSortOrFilterRow`](/api/js/ejpivotclient#members:toolbariconsettings-enablesortorfilterrow)| Allows user to set the visibility of `Sort/Filter Row` icon in toolbar panel.|
+| [`enableToggleAxis`](/api/js/ejpivotclient#members:toolbariconsettings-enabletoggleaxis)| Allows user to set the visibility of `Toggle Axis` icon in toolbar panel.|
+| [`enableChartTypes`](/api/js/ejpivotclient#members:toolbariconsettings-enablecharttypes)| Allows user to set the visibility of `Chart Types` icon in toolbar panel.|
+| [`enableCalculatedMember`](/api/js/ejpivotclient#members:toolbariconsettings-enablecalculatedmember)| Allows user to set the visibility of `Calculated Member` icon in toolbar panel.|

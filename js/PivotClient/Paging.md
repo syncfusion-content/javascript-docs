@@ -16,7 +16,7 @@ Paging helps to improve the rendering performance of the PivotClient control by 
 
 ## Using Pager 
 
-You can enable Pager in PivotClient by setting the [`enablePaging`](/api/js/ejpivotclient#members:enablePaging) property to true. You can provide the page size and current page details for each axis through [`pagerOptions`](/api/js/ejpivotclient#members:pagerOptions) property.
+You can enable Pager in pivot client by setting the [`enablePaging`](/api/js/ejpivotclient#members:enablepaging) property to true. You can provide the page size and current page details for each axis through [`pagerOptions`](/api/js/ejpivotclient#members:datasource-pageroptions) property.
 
 ### Client Mode
 
@@ -65,7 +65,7 @@ Following are the navigation option available in Pager.
 
 ## Using Virtual Scrolling
 
-Virtual Scrolling is a technique that allows user to view the PivotClient information page by page with the use of vertical and horizontal scrollbar. You can enable Virtual Scrolling option in PivotClient by setting the [`enableVirtualScrolling`](/api/js/ejpivotclient#members:enablevirtualscrolling) property to true. You can provide the page size and current page details for each axis through [`pagerOptions`](/api/js/ejpivotclient#members:pagerOptions) property. 
+Virtual Scrolling is a technique that allows user to view the PivotClient information page by page with the use of vertical and horizontal scrollbar. You can enable Virtual Scrolling option in PivotClient by setting the [`enableVirtualScrolling`](/api/js/ejpivotclient#members:enablevirtualscrolling) property to true. You can provide the page size and current page details for each axis through [`pagerOptions`](/api/js/ejpivotclient#members:datasource-pageroptions) property.
 
 ### Client Mode
 
@@ -110,6 +110,14 @@ The properties associated to paging are:
 * PagerOptions.SeriesCurrentPage - Sets the current page of the series axis in PivotClient control.
 
 For client mode, the page setting for categorical and series axes are mandatorily needed to be set in data source property by using the following properties.
+
+[`categoricalPageSize`](/api/js/ejpivotclient#members:datasource-pageroptions-categoricalpagesize) - Allows to set the number of categorical columns to be displayed in each page on applying the paging.
+
+[`seriesPageSize`](/api/js/ejpivotclient#members:datasource-pageroptions-seriespagesize) - Allows to set the number of series rows to be displayed in each page on applying the paging.
+
+[`categoricalCurrentPage`](/api/js/ejpivotclient#members:datasource-pageroptions-categoricalcurrentpage) - Allows to set the page number to be loaded in the categorical axis by default.
+
+[`seriesCurrentPage`](/api/js/ejpivotclient#members:datasource-pageroptions-seriescurrentpage) - Allows to set the page number to be loaded in the series axis by default.
 
 {% highlight javascript %}
 

@@ -12,7 +12,7 @@ api: /api/js/ejpivotclient
 
 Member editor paging helps to improve the rendering performance of the dialog by dividing large amount of data into sections and displaying them.
 
-You can enable member editor paging and set member editor page size in PivotClient control by setting the [`enableMemberEditorPaging`](/api/js/ejpivotclient#members:enableMemberEditorPaging) and [`memberEditorPageSize`](/api/js/ejpivotclient#members:memberEditorPageSize) properties.
+You can enable member editor paging and set member editor page size in PivotClient control by setting the [`enableMemberEditorPaging`](/api/js/ejpivotclient#members:enablemembereditorpaging) and [`memberEditorPageSize`](/api/js/ejpivotclient#members:membereditorpagesize) properties.
 
 {% highlight html %}
 

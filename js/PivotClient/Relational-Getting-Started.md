@@ -12,7 +12,7 @@ api: /api/js/ejpivotclient
 
 ## Creating a simple application with PivotClient and Relational datasource (Client Mode)
 
-This section covers the information that you need to know to populate a simple PivotClient with Relational data completely on the client-side.  
+This section covers the information that you need to know to populate a simple pivot client with [`Relational`](/api/js/ejpivotclient#members:analysisMode) data completely on the [`client-side`](/api/js/ejpivotclient#members:operationalmode).
 
 ### Scripts and CSS References
 
@@ -155,11 +155,277 @@ Now, PivotClient is rendered with PivotChart and PivotGrid with "Country" field 
 
 ![](Getting-Started_images/purejs.png)
 
+The following table will explain the [`relational`](/api/js/ejpivotclient#members:analysismode) [`datasource`](/api/js/ejpivotclient#members:datasource) properties at [`client-side`](/api/js/ejpivotclient#members:operationalmode) in detail:
+
+<table>
+    <tr>
+        <th>
+            Properties
+        </th>
+        <th>
+            Description
+        </th>
+    </tr>
+    <tr>
+        <td>
+            {{'[`columns`](https://help.syncfusion.com//api/js/ejpivotclient#members:datasource-columns "columns")'| markdownify }}
+        </td>
+        <td>
+            Lists out the items to be arranged in columns section of PivotClient.
+             <table class="params">
+            <thead>
+            <tr>
+            <th>Properties</th>
+            <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td>{{'[`fieldName`](https://help.syncfusion.com//api/js/ejpivotclient#members:datasource-columns-fieldname "fieldName")'| markdownify }} </td>
+            <td>Allows the user to bind the item by using its unique name as field name.</td>
+            </tr>
+            <tr>
+            <td>{{'[`fieldCaption`](https://help.syncfusion.com//api/js/ejpivotclient#members:datasource-columns-fieldcaption "fieldCaption")'| markdownify }}</td>
+            <td>Allows the user to set the display caption for an item.</td>
+            </tr>
+            <tr>
+            <td>{{'[`showSubTotal`](https://help.syncfusion.com//api/js/ejpivotclient#members:datasource-columns-showsubtotal "showSubTotal")'| markdownify }}</td>
+            <td>Shows/hides the sub-total of the field in PivotGrid.</td>
+            </tr>
+            <tr>
+            <td>{{'[`format`](https://help.syncfusion.com//api/js/ejpivotclient#members:datasource-columns-format "format")'| markdownify }}</td>
+            <td>Allows you to set the format for column headers.</td>
+            </tr>
+            <tr>
+            <td>{{'[`formatString`](https://help.syncfusion.com//api/js/ejpivotclient#members:datasource-columns-formatstring "formatString")'| markdownify }}</td>
+            <td>This property is set to display the formatted values with format types in the PivotGrid.</td>
+            </tr>
+            <tr>
+            <td>{{'[`cssClass`](https://help.syncfusion.com//api/js/ejpivotclient#members:datasource-columns-cssclass "cssClass")'| markdownify }}</td>
+            <td>Allows you to set the custom theme for column headers.</td>
+            </tr>
+            <tr>
+            <td>{{'[`sortOrder`](https://help.syncfusion.com//api/js/ejpivotclient#members:datasource-columns-sortorder "sortOrder")'| markdownify }}</td>
+            <td>Allows you to set the sorting order of members of the field.</td>
+            </tr>
+            <tr>
+            <td>{{'[`drilledItems`](https://help.syncfusion.com//api/js/ejpivotclient#members:datasource-columns-drilleditems "drilledItems")'| markdownify }}</td>
+            <td>Contains the list of members need to be drilled down by default in the field.</td>
+            </tr>
+            <tr>
+            <td>{{'[`filterItems`](https://help.syncfusion.com//api/js/ejpivotclient#members:datasource-columns-filteritems "filterItems")'| markdownify }}</td>
+            <td>Applies the filter to field members.
+            <table class="params">
+            <thead>
+            <tr>
+            <th>Properties</th>
+            <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td>
+                {{'[`filterType`](https://help.syncfusion.com//api/js/ejpivotclient#members:datasource-columns-filteritems-filtertype "filterType")'| markdownify }} </td>
+            <td>Sets the type of filter to include/exclude the mentioned values.</td>
+            </tr>
+            <tr>
+            <td>
+                {{'[`values`](https://help.syncfusion.com//api/js/ejpivotclient#members:datasource-columns-filteritems-values "values")'| markdownify }} </td>
+            <td>Contains the collection of items to be included/excluded among the field members.</td>
+            </tr>
+            </tbody>
+            </table>
+            </td>
+            </tr>
+            </tbody>
+            </table>
+            </td>
+            </tr>
+            <tr>
+        <td>
+            {{'[`rows`](https://help.syncfusion.com//api/js/ejpivotclient#members:datasource-rows "rows")'| markdownify }}
+        </td>
+        <td>
+            Lists out the items to be arranged in rows section of PivotClient.
+             <table class="params">
+            <thead>
+            <tr>
+            <th>Properties</th>
+            <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td>{{'[`fieldName`](https://help.syncfusion.com//api/js/ejpivotclient#members:datasource-rows-fieldname "fieldName")'| markdownify }} </td>
+            <td>Allows the user to bind the item by using its unique name as field name.</td>
+            </tr>
+            <tr>
+            <td>{{'[`fieldCaption`](https://help.syncfusion.com//api/js/ejpivotclient#members:datasource-rows-fieldcaption "fieldCaption")'| markdownify }}</td>
+            <td>Allows the user to set the display caption for an item.</td>
+            </tr>
+            <tr>
+            <td>{{'[`showSubTotal`](https://help.syncfusion.com//api/js/ejpivotclient#members:datasource-rows-showsubtotal "showSubTotal")'| markdownify }}</td>
+            <td>Shows/hides the sub-total of the field in PivotGrid.</td>
+            </tr>
+            <tr>
+            <td>{{'[`format`](https://help.syncfusion.com//api/js/ejpivotclient#members:datasource-rows-format "format")'| markdownify }}</td>
+            <td>Allows to set the format for the row headers.</td>
+            </tr>
+            <tr>
+            <td>{{'[`formatString`](https://help.syncfusion.com//api/js/ejpivotclient#members:datasource-rows-formatstring "formatString")'| markdownify }}</td>
+            <td>This property is set to display the formatted values with format types in PivotGrid.</td>
+            </tr>
+            <tr>
+            <td>{{'[`cssClass`](https://help.syncfusion.com//api/js/ejpivotclient#members:datasource-rows-cssclass "cssClass")'| markdownify }}</td>
+            <td>Allows to set the custom theme for the row headers.</td>
+            </tr>
+            <tr>
+            <td>{{'[`sortOrder`](https://help.syncfusion.com//api/js/ejpivotclient#members:datasource-rows-sortorder "sortOrder")'| markdownify }}</td>
+            <td>Allows the user to set the sorting order of the members of the field.</td>
+            </tr>
+            <tr>
+            <td>{{'[`drilledItems`](https://help.syncfusion.com//api/js/ejpivotclient#members:datasource-rows-drilleditems "drilledItems")'| markdownify }}</td>
+            <td>Contains the list of members need to be drilled down by default in the field.</td>
+            </tr>
+            <tr>
+            <td>{{'[`filterItems`](https://help.syncfusion.com//api/js/ejpivotclient#members:datasource-rows-filteritems "filterItems")'| markdownify }}</td>
+            <td>Applies filter to the field members.
+            <table class="params">
+            <thead>
+            <tr>
+            <th>Properties</th>
+            <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td>
+                {{'[`filterType`](https://help.syncfusion.com//api/js/ejpivotclient#members:datasource-rows-filteritems-filtertype "filterType")'| markdownify }} </td>
+            <td>Sets the type of filter whether to include/exclude the mentioned values.</td>
+            </tr>
+            <tr>
+            <td>
+                {{'[`values`](https://help.syncfusion.com//api/js/ejpivotclient#members:datasource-rows-filteritems-values "values")'| markdownify }} </td>
+            <td>Contains the collection of items to be included/excluded among the field members.</td>
+            </tr>
+            </tbody>
+            </table>
+            </td>
+            </tr>
+            </tbody>
+            </table>
+            </td>
+            </tr>
+            <tr>
+        <td>
+            {{'[`values`](https://help.syncfusion.com//api/js/ejpivotclient#members:datasource-values "values")'| markdownify }}
+        </td>
+        <td>
+            Lists out the items which supports calculation in PivotClient.
+             <table class="params">
+            <thead>
+            <tr>
+            <th>Properties</th>
+            <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td>{{'[`fieldName`](https://help.syncfusion.com//api/js/ejpivotclient#members:datasource-values-fieldname "fieldName")'| markdownify }} </td>
+            <td>Allows the user to bind the item by using its unique name as field name.</td>
+            </tr>
+            <tr>
+            <td>{{'[`fieldCaption`](https://help.syncfusion.com//api/js/ejpivotclient#members:datasource-values-fieldcaption "fieldCaption")'| markdownify }}</td>
+            <td>Allows the user to set the display caption for an item.</td>
+            </tr>
+            <tr>
+            <td>{{'[`isCalculatedField`](https://help.syncfusion.com//api/js/ejpivotclient#members:datasource-values-iscalculatedfield "isCalculatedField")'| markdownify }}</td>
+            <td>Indicates whether the field is a calculated field or not.</td>
+            </tr>
+            <tr>
+            <td>{{'[`summaryType`](https://help.syncfusion.com//api/js/ejpivotclient#members:datasource-values-summarytype "summaryType")'| markdownify }}</td>
+            <td>Allows to set the type of PivotGrid summary calculation for the value field.</td>
+            </tr>
+            <tr>
+            <td>{{'[`format`](https://help.syncfusion.com//api/js/ejpivotclient#members:datasource-values-format "format")'| markdownify }}</td>
+            <td>Allows to set the format of the values.</td>
+            </tr>
+            <tr>
+            <td>{{'[`formatString`](https://help.syncfusion.com//api/js/ejpivotclient#members:datasource-values-formatstring "formatString")'| markdownify }}</td>
+            <td>This property is set to display the formatted values with format types in PivotGrid.</td>
+            </tr>
+            <tr>
+            <td>{{'[`formula`](https://help.syncfusion.com//api/js/ejpivotclient#members:datasource-values-formula "formula")'| markdownify }}</td>
+            <td>Allows to set the formula for calculation of values for calculated members</td>
+            </tr>
+            <tr>
+            <td>{{'[`cssClass`](https://help.syncfusion.com//api/js/ejpivotclient#members:datasource-values-cssclass "cssClass")'| markdownify }}</td>
+            <td>Allows to set the custom theme for the values.</td>
+            </tr>
+            </tbody>
+            </table>
+            </td>
+            </tr>
+            <tr>
+        <td>
+            {{'[`filters`](https://help.syncfusion.com//api/js/ejpivotclient#members:datasource-filters "filters")'| markdownify }}
+        </td>
+        <td>
+            Lists out the items which supports filtering of values without displaying the members in UI in PivotClient.
+            <table class="params">
+            <thead>
+            <tr>
+            <th>Properties</th>
+            <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td>{{'[`fieldName`](https://help.syncfusion.com//api/js/ejpivotclient#members:datasource-filters-fieldname "fieldName")'| markdownify }} </td>
+            <td>Allows the user to bind the item by using its unique name as field name.</td>
+            </tr>
+            <tr>
+            <td>{{'[`fieldCaption`](https://help.syncfusion.com//api/js/ejpivotclient#members:datasource-filters-fieldcaption "fieldCaption")'| markdownify }} </td>
+            <td>Allows the user to set the display name for an item.</td>
+            </tr>
+            <tr>
+            <td>{{'[`filterItems`](https://help.syncfusion.com//api/js/ejpivotclient#members:datasource-filters-filteritems "filterItems")'| markdownify }}</td>
+            <td>Applies filter to the field members.
+            <table class="params">
+            <thead>
+            <tr>
+            <th>Property</th>
+            <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td>
+                {{'[`filterType`](https://help.syncfusion.com//api/js/ejpivotclient#members:datasource-filters-filteritems-filtertype "filterType")'| markdownify }} </td>
+            <td>Sets the type of filter whether to include/exclude the mentioned values.</td>
+            </tr>
+            <tr>
+            <td>
+                {{'[`values`](https://help.syncfusion.com//api/js/ejpivotclient#members:datasource-filters-filteritems-values "values")'| markdownify }} </td>
+            <td>Contains the collection of items to be included/excluded among the field members.</td>
+            </tr>
+            </td>
+            </tr>
+            </tbody>
+            </table>
+            </td>
+            </tr>
+            </tbody>
+            </table>
+        </td>
+        </tr>
+            </table>
+
 ## Creating a simple application with PivotClient and Relational datasource (Server Mode)
 
-This section covers the information required to create a simple PivotClient bound to Relational datasource from server-side. 
+This section covers the information required to create a simple pivot client bound to [`Relational`](/api/js/ejpivotclient#members:analysisMode) datasource from [`server-side`](/api/js/ejpivotclient#members:operationalmode).
 
-N> We will be illustrating this section by creating a simple Web Application through Visual Studio IDE since PivotClient with server-side datasource requires .NET dependency. The Web Application would contain a HTML page and a service that would transfer data to server-side, process and return back the data to client-side for control re-rendering. The service utilized for communication could be either WCF or WebAPI based on user requirement and we have also illustrated both for user convenience.
+N> We will be illustrating this section by creating a simple Web Application through Visual Studio IDE since pivot client with [`server-side`](/api/js/ejpivotclient#members:operationalmode) datasource requires .NET dependency. The Web Application would contain a HTML page and a service that would transfer data to [`server-side`](/api/js/ejpivotclient#members:operationalmode), process and return back the data to client-side for control re-rendering. The service utilized for communication could be either WCF or WebAPI based on user requirement and we have also illustrated both for user convenience.
 
 ### Project Initialization
 
@@ -224,7 +490,7 @@ In-order to initialize a PivotClient widget, first you need to define a “div�
 
 {% endhighlight %}
 
-The “url” property in PivotClient widget points the service endpoint, where data are processed and fetched in the form of JSON. The service used for the PivotClient widget as endpoint are WCF and WebAPI. 
+The [`url`](/api/js/ejpivotclient#members:url) property in pivot client widget points the service endpoint, where data are processed and fetched in the form of JSON. The service used for the pivot client widget as endpoint are WCF and WebAPI. 
 
 ### WebAPI
 
@@ -640,6 +906,8 @@ namespace PivotClientDemo
 
 {% endhighlight %}
 
+N> The [`customObject`](../api/ejpivotclient#members:customobject) utilized to pass additional information between client-end and service-end.
+
 **Configure routing in Global Application Class**
 
 To add a Global.asax in your existing Web Application, right-click on the project in Solution Explorer and select **Add > New** Item. In the **Add New Item** window, select **Global Application** Class and name it as **“Global.asax”**, click **Add.**
@@ -668,7 +936,7 @@ Now, PivotClient is rendered with PivotChart and PivotGrid with "Country" field 
 
 ### WCF
 
-This section demonstrates the utilization of WCF service as endpoint binding Relational datasource to a simple PivotClient. For more details on this topic, [click here](https://help.syncfusion.com/js/pivotclient/relational-connectivity#wcf-1).
+This section demonstrates the utilization of WCF service as endpoint binding [`Relational`](/api/js/ejpivotclient#members:analysisMode) datasource to a simple pivot client. For more details on this topic, [click here](https://help.syncfusion.com/js/pivotclient/relational-connectivity#wcf-1).
   
 
 

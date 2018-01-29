@@ -640,7 +640,7 @@ Types de graphiques</td></tr>
 Content displayed within the PivotClient control are obtained from the OLAP cube. Following are the steps to get the localized and globalized cube content.
 
 * To get localized data from OLAP cube, we need to set **"Locale Identifier"** in the connection string to a specific culture in the **"data"** property present inside **"dataSource"**. 
-* To bind the globalized content in PivotClient control, we need to set **"locale"** property to a specific culture and the specific culture file is referred in the sample. 
+* To bind the globalized content in pivot client control, we need to set [`locale`](/api/js/ejpivotclient#members:locale) property to a specific culture and the specific culture file is referred in the sample.
  
 N> Culture files are present under **"[installed drive]:\Users\ [user name]\AppData\Local\Syncfusion\EssentialStudio\X.X.X.X\JavaScript\samples\web\scripts\cultures".** 
  
@@ -726,7 +726,7 @@ Content displayed within the PivotClient control are obtained from the Relationa
 
 ## RTL
 
-You can render our PivotClient control from Right to Left by setting [`enableRTL`](/api/js/ejPivotClient#members:enablertl) property to true.
+You can render our pivot client control from Right to Left by setting [`enableRTL`](/api/js/ejpivotclient#members:enablertl) property to true.
 
 {% highlight javascript %}
 

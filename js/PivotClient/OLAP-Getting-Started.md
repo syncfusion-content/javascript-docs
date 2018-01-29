@@ -12,7 +12,7 @@ api: /api/js/ejpivotclient
 
 ## Creating a simple application with PivotClient and OLAP datasource (Client Mode)
 
-This section covers the information that you need to know to populate a simple PivotClient with OLAP data completely on the client-side.  
+This section covers the information that you need to know to populate a simple pivot client with [`OLAP`](/api/js/ejpivotclient#members:analysisMode) data completely on the [`client-side`](/api/js/ejpivotclient#members:operationalmode).
 
 ### Scripts and CSS References
 
@@ -58,7 +58,7 @@ Place a "div" tag in the HTML page which acts as a container for the PivotClient
 
 ### Populate PivotClient with DataSource
 
-Initializes the OLAP datasource for PivotClient widget as shown below.
+Initializes the [`OLAP`](/api/js/ejpivotclient#members:analysisMode) datasource for pivot client widget as shown below.
 
 {% highlight html %}
 
@@ -101,11 +101,304 @@ Now, PivotClient is rendered with PivotChart and PivotGrid with "Customer Geogra
 
 ![](Getting-Started_images/OlapClientside.png) 
 
+
+The following table will explain the [`OLAP`](/api/js/ejpivotclient#members:analysismode) [`datasource`](/api/js/ejpivotclient#members:datasource) properties at [`client-side`](/api/js/ejpivotclient#members:operationalmode) in detail:
+
+<table>
+    <tr>
+        <th>
+            Properties
+        </th>
+        <th>
+            Description
+        </th>
+    </tr>
+    <tr>
+    <td>
+        {{'[`cube`](https://help.syncfusion.com/api/js/ejpivotclient#members:datasource-cube "cube")'| markdownify }}
+    </td>
+    <td>
+        Contains the respective cube name from OLAP database as string type.
+    </td>
+    </tr>
+    <tr>
+    <td>
+        {{'[`sourceInfo`](https://help.syncfusion.com/api/js/ejpivotclient#members:datasource-sourceinfo "sourceInfo")'| markdownify }}
+    </td>
+    <td>
+        To set the data source name to fetch data from that.
+    </td>
+    </tr>
+    <tr>
+    <td>
+        {{'[`providerName`](https://help.syncfusion.com/api/js/ejpivotclient#members:datasource-providername "providerName")'| markdownify }}
+    </td>
+    <td>
+        Set the provider name for PivotClient to identify whether the provider is SSAS or Mondrian.
+    </td>
+    </tr>
+    <tr>
+    <td>
+        {{'[`data`](https://help.syncfusion.com/api/js/ejpivotclient#members:datasource-data "data")'| markdownify }}
+    </td>
+    <td>
+        Provides the raw data source for the pivot client.
+    </td>
+    </tr>
+    <tr>
+    <td>
+        {{'[`catalog`](https://help.syncfusion.com/api/js/ejpivotclient#members:datasource-catalog "catalog")'| markdownify }}
+    </td>
+    <td>
+        In connection with an OLAP database, this property contains the database name as string to fetch the data from the given connection string.
+    </td>
+    </tr>
+    <tr>
+    <td>
+        {{'[`enableAdvancedFilter`](https://help.syncfusion.com/api/js/ejpivotclient#members:datasource-enableadvancedfilter "enableAdvancedFilter")'| markdownify }}
+    </td>
+    <td>
+        Allows user to filter the members (by its name and values) through advanced filtering (excel-like) option.</td>
+    </tr>
+    <tr>
+    <td>
+        {{'[`reportName`](https://help.syncfusion.com/api/js/ejpivotclient#members:datasource-reportName "reportName")'| markdownify }}
+    </td>
+    <td>
+        Sets a name to the report bound to the control.</td>
+    </tr>
+    <tr>
+        <td>
+            {{'[`columns`](https://help.syncfusion.com/api/js/ejpivotclient#members:datasource-columns "columns")'| markdownify }}
+        </td>
+        <td>
+            Lists out the items to be arranged in columns section of pivot client.
+             <table class="params">
+            <thead>
+            <tr>
+            <th>Properties</th>
+            <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td>{{'[`fieldName`](https://help.syncfusion.com/api/js/ejpivotclient#members:datasource-columns-fieldname "fieldName")'| markdownify }} </td>
+            <td>Allows the user to bind the item by using its unique name as field name.</td>
+            </tr>
+            <tr>
+            <td>{{'[`fieldCaption`](https://help.syncfusion.com/api/js/ejpivotclient#members:datasource-columns-fieldcaption "fieldCaption")'| markdownify }}</td>
+            <td>Allows the user to set the display caption for an item.</td>
+            </tr>
+            <tr>
+            <td>{{'[`isNamedSets`](https://help.syncfusion.com/api/js/ejpivotclient#members:datasource-columns-isnamedsets "isNamedSets")'| markdownify }}</td>
+            <td>Allows the user to indicate whether the added item is a named set or not.</td>
+            </tr>
+            <tr>
+            <td>{{'[`advancedFilter`](https://help.syncfusion.com/api/js/ejpivotclient#members:datasource-columns-advancedfilter "advancedFilter")'| markdownify }}</td>
+            <td>Allows the user to filter the report by default using advanced filtering (excel-like) option for OLAP data source in client-mode.
+            <table class="params">
+            <thead>
+            <tr>
+            <th>Properties</th>
+            <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td>
+                {{'[`name`](https://help.syncfusion.com/api/js/ejpivotclient#members:datasource-columns-advancedfilter-name "name")'| markdownify }} </td>
+            <td>Allows the user to provide level unique name to perform advanced filtering.</td>
+            </tr>
+            <tr>
+            <td>
+                {{'[`labelFilterOperator`](https://help.syncfusion.com/api/js/ejpivotclient#members:datasource-columns-advancedfilter-labelfilteroperator "labelFilterOperator")'| markdownify }} </td>
+            <td>Allows the user to set the operator to perform Label Filtering.</td>
+            </tr>
+            <tr>
+            <td>
+                {{'[`valueFilterOperator`](https://help.syncfusion.com/api/js/ejpivotclient#members:datasource-columns-advancedfilter-valuefilteroperator "valueFilterOperator")'| markdownify }} </td>
+            <td>Allows the user to set the operator to perform Value Filtering.</td>
+            </tr>
+            <tr>
+            <td>
+                {{'[`advancedFilterType`](https://help.syncfusion.com/api/js/ejpivotclient#members:datasource-columns-advancedfilter-advancedfiltertype "advancedFilterType")'| markdownify }} </td>
+            <td>Allows the user to set the filtering type while performing advanced filtering.</td>
+            </tr>
+            <tr>
+            <td>
+                {{'[`measure`](https://help.syncfusion.com/api/js/ejpivotclient#members:datasource-columns-advancedfilter-measure "measure")'| markdownify }} </td>
+            <td>In case of value filtering, this property contains the measure name to which the filter is applied.</td>
+            </tr>
+            <tr>
+            <td>
+                {{'[`values`](https://help.syncfusion.com/api/js/ejpivotclient#members:datasource-columns-advancedfilter-values "values")'| markdownify }} </td>
+            <td>Allows the user to hold the filter operand values in advanced filtering.</td>
+            </tr>
+            </td>
+            </tr>
+            </tbody>
+            </table>
+            </td>
+            </tr>
+            </tbody>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            {{'[`rows`](https://help.syncfusion.com/api/js/ejpivotclient#members:datasource-rows "rows")'| markdownify }}
+        </td>
+        <td>
+            Lists out the items to be arranged in rows section of PivotClient.
+             <table class="params">
+            <thead>
+            <tr>
+            <th>Properties</th>
+            <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td>{{'[`fieldName`](https://help.syncfusion.com/api/js/ejpivotclient#members:datasource-rows-fieldname "fieldName")'| markdownify }} </td>
+            <td>Allows the user to bind the item by using its unique name as field name.</td>
+            </tr>
+            <tr>
+            <td>{{'[`fieldCaption`](https://help.syncfusion.com/api/js/ejpivotclient#members:datasource-rows-fieldcaption "fieldCaption")'| markdownify }}</td>
+            <td>Allows the user to set the display caption for an item.</td>
+            </tr>
+            <tr>
+            <td>{{'[`isNamedSets`](https://help.syncfusion.com/api/js/ejpivotclient#members:datasource-rows-isnamedsets "isNamedSets")'| markdownify }}</td>
+            <td>Allows the user to indicate whether the added item is a named set or not.</td>
+            </tr>
+            <tr>
+            <td>{{'[`advancedFilter`](https://help.syncfusion.com/api/js/ejpivotclient#members:datasource-rows-advancedfilter "advancedFilter")'| markdownify }}</td>
+            <td>Allows the user to filter the report by default using advanced filtering (excel-like) option for OLAP data source in client-mode.
+            <table class="params">
+            <thead>
+            <tr>
+            <th>Properties</th>
+            <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td>
+                {{'[`name`](https://help.syncfusion.com/api/js/ejpivotclient#members:datasource-rows-advancedfilter-name "name")'| markdownify }} </td>
+            <td>Allows the user to provide level unique name to perform advanced filtering.</td>
+            </tr>
+            <tr>
+            <td>
+                {{'[`labelFilterOperator`](https://help.syncfusion.com/api/js/ejpivotclient#members:datasource-rows-advancedfilter-labelfilteroperator "labelFilterOperator")'| markdownify }} </td>
+            <td>Allows the user to set the operator to perform Label Filtering.</td>
+            </tr>
+            <tr>
+            <td>
+                {{'[`valueFilterOperator`](https://help.syncfusion.com/api/js/ejpivotclient#members:datasource-rows-advancedfilter-valuefilteroperator "valueFilterOperator")'| markdownify }} </td>
+            <td>Allows the user to set the operator to perform Value Filtering.</td>
+            </tr>
+            <tr>
+            <td>
+                {{'[`advancedFilterType`](https://help.syncfusion.com/api/js/ejpivotclient#members:datasource-rows-advancedfilter-advancedfiltertype "advancedFilterType")'| markdownify }} </td>
+            <td>Allows the user to set the filtering type while performing advanced filtering.</td>
+            </tr>
+            <tr>
+            <td>
+                {{'[`measure`](https://help.syncfusion.com/api/js/ejpivotclient#members:datasource-rows-advancedfilter-measure "measure")'| markdownify }} </td>
+            <td>In case of value filtering, this property contains the measure name to which the filter is applied.</td>
+            </tr>
+            <tr>
+            <td>
+                {{'[`values`](https://help.syncfusion.com/api/js/ejpivotclient#members:datasource-rows-advancedfilter-values "values")'| markdownify }} </td>
+            <td>Allows the user to hold the filter operand values in advanced filtering.</td>
+            </tr>
+            </td>
+            </tr>
+            </tbody>
+            </table>
+            </td>
+            </tr>
+            </tbody>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            {{'[`filters`](https://help.syncfusion.com/api/js/ejpivotclient#members:datasource-filters "filters")'| markdownify }}
+        </td>
+        <td>
+            Lists out the items which supports filtering of values without displaying the members in UI in PivotClient.
+             <table class="params">
+            <thead>
+            <tr>
+            <th>Properties</th>
+            <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td>{{'[`fieldName`](https://help.syncfusion.com/api/js/ejpivotclient#members:datasource-filters-fieldname "fieldName")'| markdownify }} </td>
+            <td>Allows the user to bind the item by using its unique name as field name.</td>
+            </tr>
+            <tr>
+            <td>{{'[`fieldCaption`](https://help.syncfusion.com/api/js/ejpivotclient#members:datasource-filters-fieldcaption "fieldCaption")'| markdownify }}</td>
+            <td>Allows the user to set the display name for an item.</td>
+            </tr>
+            </tbody>
+            </table>
+            </td>
+            </tr>
+    <tr>
+        <td>
+            {{'[`values`](https://help.syncfusion.com/api/js/ejpivotclient#members:datasource-values "values")'| markdownify }}
+        </td>
+        <td>
+            Lists out the items which supports calculation in PivotClient.
+            <table class="params">
+            <thead>
+            <tr>
+            <th>Properties</th>
+            <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td>{{'[`axis`](https://help.syncfusion.com/api/js/ejpivotclient#members:datasource-values-axis "axis")'| markdownify }} </td>
+            <td>Allows to set the axis name to place the measures items.</td>
+            </tr>
+            <tr>
+            <td>{{'[`measures`](https://help.syncfusion.com/api/js/ejpivotclient#members:datasource-values-measures "measures")'| markdownify }}</td>
+            <td>This holds the list of unique names of measures to bind them from the OLAP cube.
+            <table class="params">
+            <thead>
+            <tr>
+            <th>Property</th>
+            <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td>
+                {{'[`fieldName`](https://help.syncfusion.com/api/js/ejpivotclient#members:datasource-values-measures-fieldName "fieldName")'| markdownify }} </td>
+            <td>Allows the user to bind the measure from OLAP datasource by using its unique name as field name.</td>
+            </tr>
+            </td>
+            </tr>
+            </tbody>
+            </table>
+            </td>
+            </tr>
+            </tbody>
+            </table>
+        </td>
+        </tr>
+
+</table>
+
 ## Creating a simple application with PivotClient and OLAP datasource (Server Mode)
 
-This section covers the information required to create a simple PivotClient bound to OLAP datasource from server-side.
+This section covers the information required to create a simple pivot client bound to [`OLAP`](/api/js/ejpivotclient#members:analysisMode) datasource from [`server-side`](/api/js/ejpivotclient#members:operationalmode).
 
-N> We will be illustrating this section by creating a simple Web Application through Visual Studio IDE since PivotClient bound with data from server-side requires .NET dependency. The Web Application would contain a HTML page and a service that would transfer data to server-side, process and return back the data to client-side for control re-rendering. The service utilized for communication could be either WCF or WebAPI based on user requirement and we have illustrated both for user convenience.
+N> We will be illustrating this section by creating a simple Web Application through Visual Studio IDE since pivot client bound with data from server-side requires .NET dependency. The Web Application would contain a HTML page and a service that would transfer data to [`server-side`](/api/js/ejpivotclient#members:operationalmode), process and return back the data to [`client-side`](/api/js/ejpivotclient#members:operationalmode) for control re-rendering. The service utilized for communication could be either WCF or WebAPI based on user requirement and we have illustrated both for user convenience.
 
 ### Project Initialization
 Create a new **ASP.NET Empty Web Application** by using Visual Studio IDE and name the project as **“PivotClientDemo”**.
@@ -167,9 +460,11 @@ In-order to initialize a PivotClient widget, first you need to define a “div�
 
 {% endhighlight %}
 
-The “url” property in PivotClient widget points the service endpoint, where data are processed and fetched in the form of JSON. The service used for the PivotClient widget as endpoint are WCF and WebAPI.
+The [`url`](/api/js/ejpivotclient#members:url) property in pivot client widget points the service endpoint, where data are processed and fetched in the form of JSON. The service used for the pivot client widget as endpoint are WCF and WebAPI.
 
-N> The above "GettingStarted.html" contains WebAPI URL, which is **“/Olap”**. Suppose if you are using WCF service, then the URL would look like **“/OlapService.svc”**. 
+ The [`title`](/api/js/ejpivotclient#members:title) property is used to set the title for PivotClient widget.
+
+N> The above "GettingStarted.html" contains WebAPI [`URL`](/api/js/ejpivotclient#members:url), which is **“/Olap”**. Suppose if you are using WCF service, then the [`URL`](/api/js/ejpivotclient#members:url) would look like **“/OlapService.svc”**.
 
 ### WebAPI
 
@@ -681,6 +976,8 @@ namespace PivotClientDemo
 }
 
 {% endhighlight %}
+
+N> The [`customObject`](../api/ejpivotclient#members:customobject) utilized to pass additional information between client-end and service-end.
 
 **Configure routing in Global Application Class**
 

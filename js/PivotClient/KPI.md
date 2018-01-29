@@ -21,7 +21,7 @@ The different indicators available in KPI are:
 
 The **“KpiElements”** class in OLAP Base library holds the KPI name and when its object is added to an OlapReport, you can view the resultant information in PivotClient.
 
-To enable KPI option set the property `enableKPI` to `true`.
+To enable KPI option set the property [`enableKPI`](/api/js/ejpivotclient#members:enablekpi) to `true`.
 
 ## Client Mode
 
