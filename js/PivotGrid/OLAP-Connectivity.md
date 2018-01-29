@@ -10,8 +10,8 @@ api: /api/js/ejpivotgrid
 
 # DataBinding 
 
-## Binding PivotGrid to Offline Cube
-To connect an OLAP Cube available in the local machine, set the physical path of the Cube in the connection string. The following code example illustrates the same.
+## Binding pivot grid to offline cube
+To connect to an OLAP cube available in the local machine, set the physical path of the cube in the connection string. The following code example illustrates the same.
 
 {% highlight c# %}
 
@@ -20,8 +20,8 @@ OlapDataManager DataManager = new OlapDataManager(connectionString);
 
 {% endhighlight %}
 
-## Binding PivotGrid to Cube in local SQL Server
-To connect an OLAP Cube available in SQL Server Analysis Service in the local machine, set the server name and database name in the connection string. If you have any credentials to connect your Cube, then set the “User ID” and “Password” attributes accordingly. The following code example illustrates the same:
+## Binding pivot grid to cube in local SQL Server
+To connect to an OLAP cube available in SQL Server Analysis Service in the local machine, set the server name and database name in the connection string. If you have any credentials to connect your cube, then set the “User ID” and “Password” attributes accordingly. The following code example illustrates the same:
 
 {% highlight c# %}
 
@@ -30,8 +30,8 @@ OlapDataManager DataManager = new OlapDataManager(connectionString);
 
 {% endhighlight %}
 
-## Binding PivotGrid to Cube in online SQL Server
-To connect an OLAP Cube available in the SQL Server Analysis Service in the online server through **XML/A**, set the host server link and database name in the connection string. If you have any credentials to connect your Cube, then set the “User ID” and “Password” attributes accordingly. The following code example illustrates the same:
+## Binding pivot grid to cube in online SQL Server
+To connect to an OLAP cube available in the SQL Server Analysis Service in the online server through **XML/A**, set the host server link and database name in the connection string. If you have any credentials to connect your cube, then set the “User ID” and “Password” attributes accordingly. The following code example illustrates the same:
 
 {% highlight c# %}
 
@@ -41,7 +41,7 @@ OlapDataManager DataManager = new OlapDataManager(connectionString);
 {% endhighlight %}
 
 ## Binding PivotGrid to Cube in online Mondrian Server
-To connect an OLAP Cube available in Mondrian Server through **XML/A**, set the host server link and database name in the connection string. If you have any credentials to connect your Cube, then set the “User ID” and “Password” attributes accordingly. The following code example illustrates the same:
+To connect to an OLAP cube available in the Mondrian Server through **XML/A**, set the host server link and database name in the connection string. If you have any credentials to connect your cube, then set the “User ID” and “Password” attributes accordingly. The following code example illustrates the same:
 
 {% highlight c# %}
 
@@ -51,8 +51,8 @@ DataManager.DataProvider.ProviderName = Syncfusion.Olap.DataProvider.Providers.M
 
 {% endhighlight %}
 
-## Binding PivotGrid to Cube in online ActivePivot Server
-To connect an OLAP Cube available in the ActivePivot Server through **XML/A**, set the host server link and database name in the connection string. If you have any credentials to connect your Cube, then set the “User ID” and “Password” attributes accordingly. The following code example illustrates the same:
+## Binding pivot grid to cube in online ActivePivot Server
+To connect to an OLAP cube available in the ActivePivot Server through **XML/A**, set the host server link and database name in the connection string. If you have any credentials to connect your cube, then set the “User ID” and “Password” attributes accordingly. The following code example illustrates the same:
 
 {% highlight c# %}
 
@@ -68,7 +68,7 @@ DataManager.DataProvider.ProviderName=Syncfusion.Olap.DataProvider.Providers.Act
 
 To add a WCF service in an existing web application, right-click the project in the solution explorer and select **Add > New Item**. In the **Add New Item** window, select WCF Service and name it as **“OlapService.svc”**, and then click **Add**.
  
-Now, the WCF service is added to your application successfully which in-turn comprise of the following files. The utilization of these files will be explained in the immediate sections.
+Now, the WCF service is added to your application, which, in turn, comprise of the following files. The utilization of these files will be explained in the immediate sections.
 
 * OlapService.svc
 * OlapService.svc.cs
@@ -94,11 +94,11 @@ namespace PivotGridDemo
 
 **List of dependency libraries**
 
-Next, you should add the below mentioned dependency libraries to your Web Application. These libraries could be found in GAC (Global Assembly Cache).
+Next, you should add the below mentioned dependency libraries to your Web Application. These libraries can be found in the GAC (Global Assembly Cache).
  
-To add them to your Web Application, right-click the **References** in the solution explorer and select **Add Reference**. Now, in the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries are found.
+To add them to your web application, right-click **References** in the solution explorer and select **Add Reference**. Now, in the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries are found.
 
-N> If you have installed any version of SQL Server Analysis Service (SSAS) or Microsoft ADOMD.NET utility, then the location of Microsoft.AnalysisServices.AdomdClient library is [system drive:\Program Files (x86)\Microsoft.NET\ADOMD.NET]. And if you have installed any version of Essential Studio, then the location of Syncfusion libraries is [system drive:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\Assemblies].
+N> If you have installed any version of SQL Server Analysis Service (SSAS) or Microsoft ADOMD.NET utility, then the location of Microsoft.AnalysisServices.AdomdClient library is [system drive:\Program Files (x86)\Microsoft.NET\ADOMD.NET]. If you have installed any version of Essential Studio, then the location of Syncfusion libraries is [system drive:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\Assemblies].
 
 * Microsoft.AnalysisServices.AdomdClient
 * Syncfusion.Compression.Base
@@ -113,9 +113,9 @@ N> If you have installed any version of SQL Server Analysis Service (SSAS) or Mi
 * Syncfusion.EJ.Export
 * Syncfusion.EJ.Pivot
 
-**List of Namespaces**
+**List of namespaces**
 
-Following are the list of namespaces to be added on top of the main class inside the `OlapService.svc.cs` file:
+Following are the list of namespaces to be added on top of the main class in the `OlapService.svc.cs` file:
 
 {% highlight c# %}
 
@@ -147,7 +147,7 @@ namespace PivotGridDemo
 
 **Datasource initialization**
 
-Now, the connection string to connect OLAP Cube, PivotGrid, and JavaScriptSerializer instances are created immediately inside the main class in the `OlapService.svc.cs` file.
+Now, the connection string to connect OLAP Cube, PivotGrid, and JavaScriptSerializer instances are created immediately in the main class of the `OlapService.svc.cs` file.
 
 {% highlight c# %}
 
@@ -170,7 +170,7 @@ namespace PivotGridDemo
 
 **Service methods in WCF service**
 
-You can define the service methods inside the IOlapService interface. To define, found the `IOlapService.cs` file, which is created while adding the WCF Service to your Web Application.
+You can define the service methods inside the IOlapService interface. To do this, find the `IOlapService.cs` file, which is created while adding the WCF Service to your web application.
 
  {% highlight c# %}
 
@@ -429,11 +429,11 @@ N> Here, [`customObject`](/api/js/ejpivotgrid#members:customobject) is utilized 
 
 You can expose services through the properties such as binding, contract, and address by using an endpoint.
 
-* Contract: This property indicates that the contract of the endpoint is exposing. Here, the **IOlapService** contract is being referred and hence it is **PivotGridDemo.IOlapService**.
+* Contract: This property indicates that the contract of the endpoint is exposed. Refer to the **IOlapService** contract, and thus it is **PivotGridDemo.IOlapService**.
 * Binding: In your application, you can use **webHttpBinding** to post and receive the requests and responses between the client-end and the service.
 * behaviorConfiguration: This property contains the name of the behavior to be used in the endpoint.
 
-The endpointBehaviors are illustrated as follows: 
+The endpointBehaviors are illustrated in the following:
  
 {% highlight xaml %}
 
@@ -468,8 +468,8 @@ The endpointBehaviors contain all the behaviors for the endpoint. You can link e
 
 {% endhighlight %}
 
-N> In this example, “PivotGridDemo” indicates the name and root namespace of the Web Application created in the Visual Studio IDE and “OlapService” indicates the name of the created WCF service.
-Now, PivotGrid is rendered with internet sales amount over a period of fiscal years across different customer geographic locations.
+N> In this example, “PivotGridDemo” indicates the name and root namespace of the web application created in the Visual Studio IDE and “OlapService” indicates the name of the created WCF service.
+Now, the pivot grid is rendered with Internet sales amount over a period of fiscal years across different customer geographic locations.
 
 {% include image.html url="/js/PivotGrid/OLAP-Connectivity_images/olapwebapi.png" %}
 
