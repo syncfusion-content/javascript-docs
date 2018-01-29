@@ -113,7 +113,7 @@ diagram.updateNode("swimlaneName", { header: {fontColor:"white"} })
 
 ### Update Header
 
-Swimlane headers can be updated at runtime with the client side method `updateNode`. The following code example illustrates how to update a lane's header at runtime.
+Swimlane headers can be updated at runtime with the client side method [updateNode](/api/js/ejdiagram#methods:updatenode "updateNode"). The following code example illustrates how to update a lane's header at runtime.
 
 {% highlight javascript %}
 
@@ -233,7 +233,7 @@ var swimlane = {
 
 #### Disable/Update header
 
-You can disable/update the lane header at runtime with the client side method, `updateNode`. The following code example illustrates how to disable the lane header at run time.
+You can disable/update the lane header at runtime with the client side method, [updateNode](/api/js/ejdiagram#methods:updatenode "updateNode"). The following code example illustrates how to disable the lane header at run time.
 
 {% highlight javascript %}
 
@@ -351,7 +351,7 @@ var swimlane = {
 
 ### Add phase at runtime
 
-You can add a region at runtime with the client side method, `addPhase`. The following code example illustrates how to add a phase at runtime.
+You can add a region at runtime with the client side method, [addPhase](/api/js/ejdiagram#methods:addphase "addPhase"). The following code example illustrates how to add a phase at runtime.
 
 {% highlight javascript %}
 
@@ -365,7 +365,7 @@ diagram.addPhase("swimlaneName", phase);
 
 {% endhighlight %}
 
-A phase can be updated at runtime with the client side API `updateNode`. The following code example illustrates how to a update phase at runtime.
+A phase can be updated at runtime with the client side API [updateNode](/api/js/ejdiagram#methods:updatenode "updateNode"). The following code example illustrates how to a update phase at runtime.
 
 {% highlight javascript %}
 

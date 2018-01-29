@@ -57,7 +57,7 @@ $("#diagram").ejDiagram({
 
 ### Add ports at runtime
 
-You can add ports at runtime by using the client side method `addPorts`. The following code illustrates how to add ports to node at runtime.
+You can add ports at runtime by using the client side method [addPorts](/api/js/ejdiagram#methods:addports "addPorts"). The following code illustrates how to add ports to node at runtime.
 
 {% highlight javascript %}
 
@@ -90,7 +90,7 @@ To explore the set of properties for defining a port, refer to [Port Properties]
 
 ### Update Port at runtime
 
-The client side API `updatePort` is used to update the ports at run time. The following code example illustrates how to change the port properties.
+The client side API [updatePort](/api/js/ejdiagram#methods:updateport "updatePort") is used to update the ports at run time. The following code example illustrates how to change the port properties.
 
 {% highlight javascript %}
 
