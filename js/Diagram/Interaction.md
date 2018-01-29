@@ -20,6 +20,10 @@ An element can be selected by clicking that element. During single click, all pr
 
 ![](/js/Diagram/Interaction_images/Interaction_img1.png)
 
+The diagram client side event [selectionChange](/api/js/ejdiagram#events:selectionchange "selectionChange") gets triggered when a selection is changed in diagram.
+The diagram client side event [click](/api/js/ejdiagram#events:click "click") gets triggered when we click on elements/model in the diagram. This event triggers even when the node/connector constraints is disabled.
+The diagram client side event [itemClick](/api/js/ejdiagram#events:itemclick "itemClick") gets triggered only when we click on diagram elements in the diagram.
+
 ### Selecting a group
 
 When a child element of any group is clicked, its contained group is selected instead of the child element. With consecutive clicks on the selected element, selection is changed from top to bottom in the hierarchy of parent group to its children.
@@ -84,7 +88,15 @@ for (var i = 0; i < diagram.model.selectedItems.children.length; i++) {
 
 {% endhighlight %}
 
+The client side method [updateSelectedObject](/api/js/ejdiagram#methods:updateselectedobject "updateSelectedObject") used to update the specified node as selected object. For example, when you have a group node with multiple childrens and need to select particular children, then you need to pass that node name to this method.
+
 N> SelectedItems’s children is a read-only property. You cannot change the children collection at run time.
+
+### Select entire elements in diagram programmatically
+
+The client side method selectAll used to select all the elements such as nodes/connectors in diagram. Please refer to below API document.
+
+[selectAll](/api/js/ejdiagram#methods:selectall "selectAll")
 
 ## Drag
 
@@ -92,6 +104,8 @@ N> SelectedItems’s children is a read-only property. You cannot change the chi
 * While dragging, the objects are snapped towards the nearest objects to make better alignments. For better alignments, refer to [Snapping](/js/Diagram/Gridlines#snapping "Snapping").
 
 ![](/js/Diagram/Interaction_images/Interaction_img3.png)
+
+The diagram client side event [drag](/api/js/ejdiagram#events:drag "drag") gets triggered when you drag the elements in diagram.
 
 ## Working with multiple diagrams
 
@@ -160,6 +174,8 @@ The following screen short illustrates how the nodes are dragged from one diagra
 
 ![](/js/Diagram/Interaction_images/Interaction_img4.png)
 
+The diagram client side event [sizeChange](/api/js/ejdiagram#events:sizechange "sizeChange") gets triggered when a node is resized.
+
 ## Rotate
 
 * A rotate handler is placed above the selector. Clicking and dragging the handler in a circular direction lead to rotate the node.
@@ -168,6 +184,8 @@ The following screen short illustrates how the nodes are dragged from one diagra
 * For more information about pivot, refer to [Position](/js/Diagram/Node#position "Position").
 
 ![](/js/Diagram/Interaction_images/Interaction_img5.png)
+
+The diagram client side event [rotationChange](/api/js/ejdiagram#events:rotationchange "rotationChange") gets triggered when the diagram elements are rotated.
 
 ## Connection editing
 
@@ -309,6 +327,19 @@ $("#DiagramContent").ejDiagram({
 
 ![](/js/Diagram/Interaction_images/Interaction_img10.png)
 
+
+### update user handles at runtime
+
+You can use client side method [updateUserHandles](/api/js/ejdiagram#methods:updateuserhandles "updateUserHandles") to update userhandles with respect to given node. Please refer to the below code example which shows how to update user handles at runtime.
+
+{% highlight javascript %}
+
+var diagram=$("#diagramcontent").ejDiagram("instance");
+var node = diagram.selectionList[0];
+diagram.updateUserHandles(node);
+
+{% endhighlight %}
+
 ### Appearance
 
 Position, size, and style of the user handle can be customized with a set of predefined properties.
@@ -349,6 +380,8 @@ $("#DiagramContent").ejDiagram({
 
 * When a large Diagram is loaded, only certain portion of the Diagram is visible. The remaining portions are clipped. Clipped portions can be explored by scrolling the scrollbars or panning the Diagram.
 * Diagram can be zoomed in or out by using Ctrl + mouse wheel.
+
+The diagram client side event [scrollChange](/api/js/ejdiagram#events:scrollchange "scrollChange") gets triggered when the diagram is zoomed or panned.
 
 ## Keyboard
 

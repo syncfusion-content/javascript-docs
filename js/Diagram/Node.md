@@ -55,6 +55,10 @@ $("#diagram").ejDiagram({
 
 ![](/js/Diagram/Node_images/Node_img2.png)
 
+The diagram client side event [mouseEnter](/api/js/ejdiagram#events:mouseenter "mouseEnter") gets triggered when mouse enters node/connector.
+The diagram client side event [mouseLeave](/api/js/ejdiagram#events:mouseleave "mouseLeave") gets triggered when mouse leaves node/connector.
+The diagram client side event [mouseOver](/api/js/ejdiagram#events:mouseover "mouseOver") gets triggered when mouse hovers over a node/connector.
+
 ### Add node at runtime
 
 Nodes can be added at runtime by using public method, [add](/api/js/ejdiagram#methods:add "add"). The following code illustrates how to add a node.
@@ -82,9 +86,16 @@ diagram.add(node);
 
 ![](/js/Diagram/Node_images/Node_img3.png)
 
+The diagram client side event [nodeCollectionChange](/api/js/ejdiagram#events:nodecollectionchange "nodeCollectionChange") gets triggered when a node is either added or removed in diagram.
+
 ### Add node from palette
 
 Nodes can be predefined and added to palette and can be dropped into the Diagram when needed. For more information about adding nodes from symbol palette, refer to [Symbol Palette](/js/Diagram/Symbol-Palette "Symbol Palette").
+
+The diagram client side event [dragEnter](/api/js/ejdiagram#events:dragenter "dragEnter") gets triggered when a symbol is dragged into diagram from symbol palette.
+The diagram client side event [dragOver](/api/js/ejdiagram#events:dragover "dragOver") gets triggered when a symbol is dragged over diagram.
+The diagram client side event [drop](/api/js/ejdiagram#events:drop "drop") gets triggered when a symbol is dragged and dropped from symbol palette to drawing area.
+The diagram client side event [dragLeave](/api/js/ejdiagram#events:dragleave "dragLeave") gets triggered when a symbol is dragged outside of the diagram.
 
 ### Create node through data source
 
@@ -108,6 +119,7 @@ diagram.updateNode("nodeName", {
 })
 {% endhighlight %}
 
+The diagram client side event [propertyChange](/api/js/ejdiagram#events:propertychange "propertyChange") gets triggered when the node/connector properties are changed at runtime.
 
 ## Position
 
@@ -336,6 +348,7 @@ $("#diagram").ejDiagram({
 ## Interaction
 
 Diagram provides support to drag, resize, or rotate the node interactively. For more information about editing a node at runtime, refer to [Edit Nodes](/js/Diagram/Interaction "Interaction").
+
 
 ## Constraints
 

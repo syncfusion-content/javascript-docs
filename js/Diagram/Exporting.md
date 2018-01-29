@@ -158,3 +158,8 @@ For more information about the various stretch options refer to [Stretch options
 
 {% endhighlight %}
 
+# Print
+
+We use diagram print method to print the diagram as image. Please refer to below API document below.
+
+[print](/api/js/ejdiagram#methods:print "print")

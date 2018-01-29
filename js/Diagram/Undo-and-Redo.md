@@ -38,6 +38,8 @@ diagram.redo();
 
 {% endhighlight %}
 
+The diagram client side event [historyChange](/api/js/ejdiagram#events:historychange "historyChange") gets triggered when a change is reverted or restored(undo/redo).
+
 ## Track custom changes
 
 Diagram provides options to track the changes that are made to custom properties. For example, in case of an employee relationship Diagram, you may need to track the changes in the employee information. The `historyManager` of the Diagram model enables you to track such changes.
@@ -155,3 +157,10 @@ var undoStack = diagram.model.historyManager.undoStack;
 var redoStack = diagram.model.historyManager.redoStack;
 		
 {% endhighlight %}
+
+## clear History
+
+The clearHistory method used to Clears the actions which is recorded to perform undo/redo operation in the diagram. Please refer to the below API document link
+
+[clearHistory](/api/js/ejdiagram#methods:clearHistory "clearHistory")
+

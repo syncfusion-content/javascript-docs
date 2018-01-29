@@ -53,6 +53,9 @@ $("#DiagramContent").ejDiagram({
 
 ![](/js/Diagram/Connector_images/Connector_img2.png)
 
+The diagram client side event [connectorSourceChange](/api/js/ejdiagram#events:connectorsourcechange "connectorSourceChange") gets triggered when the connector source point is changed.
+The diagram client side event [connectorTargetChange](/api/js/ejdiagram#events:connectortargetchange "connectorTargetChange") gets triggered when the connector target point is changed.
+
 ### Add connector at run time
 
 Connectors can be added at runtime with the client side method, [add](/api/js/ejdiagram#methods:add "add"). The following code example illustrates how to add connector at runtime.
@@ -78,6 +81,8 @@ diagram.add(connector);
 {% endhighlight %}
 
 ![](/js/Diagram/Connector_images/Connector_img3.png)
+
+The diagram client side event [connectorCollectionChange](/api/js/ejdiagram#events:connectorcollectionchange "connectorCollectionChange") gets triggered when the connector is either added or removed in diagram.
 
 ### Connectors from palette
 
@@ -161,6 +166,8 @@ $("#DiagramContent").ejDiagram({
 {% endhighlight %}
 
 ![](/js/Diagram/Connector_images/Connector_img4.png)
+
+The diagram client side event [connectionChange](/api/js/ejdiagram#events:connectionchange "connectionChange") gets triggered when the connection(disconnect/connect connector with node) is changed and you can do your own customization in this event.
 
 N> By default, connections are created at the intersecting point of segments and node bounds. The connection between any specific point of source and target nodes can be achieved with connection ports.
 
@@ -251,6 +258,8 @@ connectors.push(connector);
 {% endhighlight %}
 
 ![](/js/Diagram/Connector_images/connector_img6.png)
+
+The diagram client side event [segmentChange](/api/js/ejdiagram#events:segmentchange "segmentChange") gets triggered when a connector segment is edited.
 
 The `point` property of straight segment allows you to define the end point of it. The following code example illustrates how to define the end point of a straight segment.
 
