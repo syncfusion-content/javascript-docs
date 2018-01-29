@@ -40,7 +40,7 @@ $(function() {
 
 ![](Number-Format_images/formatstring.png)
 
-The following table describes the result of applying some commonly used format strings on numeric values.
+The following table describes the result of applying some commonly used format strings on numeric values:
  
 <table>
 <tr>
@@ -111,7 +111,7 @@ The following table describes the result of applying some commonly used format s
 </tr>
 </table>
 
-The following table describes the result of applying some commonly used format strings on numeric values. 
+The following table describes the result of applying some commonly used format strings on numeric values:
  
 <table>
 <tr>
