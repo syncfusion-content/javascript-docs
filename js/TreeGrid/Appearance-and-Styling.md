@@ -54,3 +54,44 @@ The following screenshot shows the TreeGrid control with Gradient-lime theme.
 
 ![](/js/TreeGrid/Appearance-and-Styling_images/Appearance-and-Styling_img1.png)
 
+## Configuring CSS class
+
+In TreeGrid [`cssClass`](/api/js/ejtreegrid#members:cssclass) property was used to apply different customized styles to multiple TreeGrid controls available in sample page.
+
+The following code example shows how to apply different background color for each TreeGrid control's toolbar element.
+
+{% highlight html %}
+    <style>
+        .c-class1.e-treegrid .e-toolbar {
+            background-color: rgba(169, 45, 45, 0.31);
+        }
+        .c-class2.e-treegrid .e-toolbar {
+            background-color: rgba(0, 128, 0, 0.2);
+        }
+    </style>
+    <div>
+        <div id="TreeGridContainer"></div>
+    </div>
+
+    <div>
+        <div id="TreeGridContainer1"></div>
+    </div>
+    <script>
+    $("#TreeGridContainer").ejTreeGrid({
+        //...
+        cssClass: "c-class1",
+    });
+
+     $("#TreeGridContainer1").ejTreeGrid({
+        //...
+        cssClass: "c-class2",
+    });
+    </script>
+
+{% endhighlight %}
+
+The below screenshot shows the output of above code example.
+
+![](/js/TreeGrid/Appearance-and-Styling_images/Appearance-and-Styling_img2.png)
+
+![](/js/TreeGrid/Appearance-and-Styling_images/Appearance-and-Styling_img3.png)

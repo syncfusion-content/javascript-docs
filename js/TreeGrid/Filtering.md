@@ -195,6 +195,32 @@ $("#TreeGridContainer").ejTreeGrid({
 
 {% endhighlight %}
 
+### Filtering blank values in drop down filtering
+In ejTreeGrid, it is possible to filter the null or empty string value in drop down filter type by setting [`allowFilteringBlankContent`](/api/js/ejtreegrid#members:columns-allowfilteringblankcontent "columns.allowFilteringBlankContent") as `true` in the column definition.
+
+{% highlight js %}
+
+$("#TreeGridContainer").ejTreeGrid({
+    //...
+     allowFiltering: true,
+     columns: [
+         {
+            field: "priority",
+            headerText:"Priority",
+            filterEditType:"dropdownedit",
+            allowFilteringBlankContent: true,
+        },
+    ]
+    //...
+ })
+
+{% endhighlight %}
+
+![](/js/TreeGrid/Filtering_images/Filtering_img9.png)
+
+The above screenshot shows TreeGrid with filtering blank content.
+{:.caption}
+
 ## Filter columns at initial load
 It is also possible to filter one or more columns at load time by providing the field and filter query values to the [`filteredColumns`](/api/js/ejtreegrid#members:filtersettings-filteredcolumns "filterSettings.filteredColumns") property. The following code example explains how to filter a column on initial load.
 
@@ -216,7 +242,7 @@ $("#TreeGridContainer").ejTreeGrid({
 {% endhighlight %}
 
 ## Disabling filtering for a specific column 
-It is possible to disable filtering for a specific column by setting the [`allowFiltering`](/api/js/ejtreegrid#members:columns-edittemplate "columns.allowFiltering") as `false` in the column definition.
+It is possible to disable filtering for a specific column by setting the [`allowFiltering`](/api/js/ejtreegrid#members:columns-allowfiltering "columns.allowFiltering") as `false` in the column definition.
 The below code snippet explains the above behavior.
 
 {% highlight js %}
