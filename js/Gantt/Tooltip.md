@@ -11,21 +11,29 @@ api: /api/js/ejgantt
 
 The Gantt has support to display tooltip for both taskbars and for column cells.
 
-## Taskbar Tooltip
+## Taskbar and dependency line tooltip
 
-In Gantt, you can enable or disable taskbar mouse hover tooltip by using the [enableTaskbarTooltip](/api/js/ejgantt#members:enabletaskbartooltip) property. By default, this property is set to true. The following code example shows, how to enable the taskbar tooltip in Gantt.
+In Gantt, you can enable or disable taskbar and dependency line mouse hover tooltip by using the [`enableTaskbarTooltip`](/api/js/ejgantt#members:enabletaskbartooltip) property. The default value of this property was `true`. The following code example shows, how to enable the taskbar and dependency line tooltip in Gantt.
 
 {% highlight javascript %}
+
 $("#GanttContainer").ejGantt({
-
     //...
-
     enableTaskbarTooltip: true,
-
+    predecessorMapping: "predecessor",
 });
+
 {% endhighlight %}
 
-This tooltip can be customized further by using the [taskbarTooltipTemplate](/api/js/ejgantt#members:taskbartooltiptemplate) property, which is described briefly in the [customization](/js/gantt/customizations) section.
+Taskbar tooltip can be customized by using the [`taskbarTooltipTemplate`](/api/js/ejgantt#members:taskbartooltiptemplate) property and  dependency line tooltip can be customized by using the [`predecessorTooltipTemplate`](/api/js/ejgantt#members:predecessortooltiptemplate) property, these properties are described briefly in the [customization](/js/gantt/customizations) section.
+
+![](/js/Gantt/Tooltip_images/Tooltip_img3.png)
+Taskbar Tooltip
+{:.caption}
+
+![](/js/Gantt/Tooltip_images/Tooltip_img4.png)
+Dependency Tooltip
+{:.caption}
 
 ## Taskbar drag tooltip
 
