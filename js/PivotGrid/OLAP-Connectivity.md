@@ -469,7 +469,7 @@ The endpointBehaviors contain all the behaviors for the endpoint. You can link e
 {% endhighlight %}
 
 N> In this example, “PivotGridDemo” indicates the name and root namespace of the web application created in the Visual Studio IDE and “OlapService” indicates the name of the created WCF service.
-Now, the pivot grid is rendered with internet sales amount over a period of fiscal years across different customer geographic locations.
+Now, the pivot grid is rendered with Internet sales amount over a period of fiscal years across different customer geographic locations.
 
 {% include image.html url="/js/PivotGrid/OLAP-Connectivity_images/olapwebapi.png" %}
 
