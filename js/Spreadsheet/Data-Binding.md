@@ -368,7 +368,7 @@ The individual row properties are listed below,
     </tr>
 </table>
 
-You can specify particular row with `index` property and its height with `height` property in the rows' property collection. The following code illustrates cell binding in Spreadsheet,
+You can specify particular row with `index` property and its height with `height` property in the [`rows`](https://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-rows "rows") and [`cells`](https://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-rows-cells "cells") property collection. The following code illustrates cell binding in Spreadsheet,
 
 {% highlight html %}
 
