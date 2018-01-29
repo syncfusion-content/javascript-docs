@@ -196,7 +196,7 @@ $("#TreeGridContainer").ejTreeGrid({
 {% endhighlight %}
 
 ### Filtering blank values in drop down filtering
-In ejTreeGrid, it is possible to filter the null or empty string value in drop down filter type by setting [`allowFilteringBlankContent`](/api/js/ejtreegrid#members:columns-allowfilteringblankcontent "columns.allowFilteringBlankContent") as `true` in the column definition.
+In TreeGrid, it is possible to filter the null or empty string value in drop down filter type by setting [`allowFilteringBlankContent`](/api/js/ejtreegrid#members:columns-allowfilteringblankcontent "columns.allowFilteringBlankContent") as `true` in the column definition.
 
 {% highlight js %}
 

@@ -39,9 +39,9 @@ For more numeric format strings, please refer this [link](https://msdn.microsoft
 
 For more date format strings, please refer this [link](https://msdn.microsoft.com/library/az4se3k1(v=vs.100).aspx).
 
-## Width
+## Defining column width
 
-In ejTreeGrid, it is possible to specify the width for a particular column by settings [`width`](/api/js/ejtreegrid#members:columns-width "columns.width")  property of column.
+In TreeGrid, it is possible to define width for a specific column by setting [`width`](/api/js/ejtreegrid#members:columns-width "columns.width") property of column.
 
 The below code snippet shows how to set width for specific column.
 
@@ -67,7 +67,7 @@ The below screenshot shows TreeGrid render with specific column width.
 
 ![](/js/TreeGrid/Columns_images/Columns_img13.png)
 
-### Common width
+### Defining common width for the columns
 
 The TreeGrid control provide the support to set same width for all the columns in tree grid using [`commonWidth`](/api/js/ejtreegrid#members:commonwidth) property.
 
@@ -232,11 +232,11 @@ You can resize the column width to view the hidden text of the cell. This featur
 
 ### Column resize mode
 
-In ejTreegrid, it is provide the different column resize mode using [`columnResizeMode`](/api/js/ejtreegrid#members:columnresizesettings-columnresizemode "columnResizeSettings.columnResizeMode") property of [`columnResizeSettings`](/api/js/ejtreegrid#members:columnresizesettings).
+In Treegrid, it is possible to provide different column resizing mode using [`columnResizeMode`](/api/js/ejtreegrid#members:columnresizesettings-columnresizemode "columnResizeSettings.columnResizeMode") property of [`columnResizeSettings`](/api/js/ejtreegrid#members:columnresizesettings).
 
-Type of column resize mode below.
+The below are the types of column resize modes available in TreeGrid,
 
-* Normal - Columns are stretched with control width at load time. When resize the column the current column width is updated based on next column.
+* Normal - Columns are stretched with control width at load time. When resizing the column, the current column width is updated based on next column.
 * Next column - Columns are stretched with control width at load time. When resize the column the current column width is updated based on stretching columns in control width.
 * Fixed Columns - Column are rendered with given width value at load time. Only the current column width is changed while resizing the column.
 
@@ -386,7 +386,7 @@ Following code example shows how to hide specific column in column chooser list
 
 ![](/js/TreeGrid/Columns_images/Columns_img14.png)
 
-The above screenshot shows TreeGrid column chooser render with out `Task Id` column. 
+The above screenshot shows TreeGrid column chooser rendered without `Task Id` column. 
 {:.caption}
 
 ## Command Column
