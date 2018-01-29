@@ -293,7 +293,7 @@ The following code shows how to render row drag tooltip with tooltip template.
 
 In ejTreeGrid parent rows are expanded/collapsed by using expand/collapse icons, expand all/collapse all toolbar items and by using public methods. By default all tasks in tree grid was rendered in expanded state but we can change this state.
 
-### Collapse all parent row at TreGrid load
+### Collapse all parent row at TreeGrid load
 
 All rows available in tree grid was rendered in collapsed state by setting [`enableCollapseAll`](/api/js/ejtreegrid#members:enablecollapseall) property as `true`. 
 
@@ -407,7 +407,7 @@ $("#TreeGrid").ejTreeGrid({
 
 $("#expandAtLevel").click(function () {
     var treegridObj = $("#TreeGrid").ejTreeGrid("instance");
-        treegridObj.expandatlevel(1);
+        treegridObj.expandAtlevel(1);
 });
 
 $("#collapseAtLevel").click(function () {
