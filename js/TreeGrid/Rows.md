@@ -407,7 +407,7 @@ $("#TreeGrid").ejTreeGrid({
 
 $("#expandAtLevel").click(function () {
     var treegridObj = $("#TreeGrid").ejTreeGrid("instance");
-        treegridObj.expandAtlevel(1);
+        treegridObj.expandAtLevel(1);
 });
 
 $("#collapseAtLevel").click(function () {
