@@ -243,7 +243,7 @@ Please refer to this [link](https://help.syncfusion.com/js/datamanager/data-bin
 2. If a root or parent node is in collapsed state (child nodes not yet loaded), then that parent node will not be expanded while inserting new child to that parent node using toolbar icon or drag and drop actions.
 
 ## Virtualization mode in TreeGrid
-Virtualization support was used to render large number of records in TreeGrid with effective performance. In this mode all the records are fetched from data source initially, then some of the records are rendered in DOM which are compact to the current viewport area. While scrolling records are updated in DOM as per current viewport position. This mode can be enabled by setting [`enableVirtualization`](/api/js/ejtreegrid#members:enablevirtualization "enableVirtualization") property as `true`. 
+Virtualization support is used to render large number of records in TreeGrid with effective performance. In this mode all the records are fetched from data source initially, but only few records will be displayed in the document object model (DOM) which should be visible to the user. While scrolling, the visible records are updated in DOM as per the scrolled position. This mode can be enabled by setting [`enableVirtualization`](/api/js/ejtreegrid#members:enablevirtualization "enableVirtualization") property as `true`. 
 
 The below code example shows how to use this property.
 
