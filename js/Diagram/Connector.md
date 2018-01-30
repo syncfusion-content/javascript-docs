@@ -53,9 +53,6 @@ $("#DiagramContent").ejDiagram({
 
 ![](/js/Diagram/Connector_images/Connector_img2.png)
 
-* Once the connector rendered in the diagram and if you drag end points of the connector, then you can use below events to do your customization.
-* When the connector source point is changed, the [connectorSourceChange](/api/js/ejdiagram#events:connectorsourcechange "connectorSourceChange") event gets triggered.
-* When the connector target point is changed, the [connectorTargetChange](/api/js/ejdiagram#events:connectortargetchange "connectorTargetChange") event gets triggered.
 
 ### Add connector at run time
 
@@ -167,8 +164,6 @@ $("#DiagramContent").ejDiagram({
 {% endhighlight %}
 
 ![](/js/Diagram/Connector_images/Connector_img4.png)
-
-The diagram client side event [connectionChange](/api/js/ejdiagram#events:connectionchange "connectionChange") gets triggered when the connection(disconnect/connect connector with node) is changed and you can do your own customization in this event.
 
 N> By default, connections are created at the intersecting point of segments and node bounds. The connection between any specific point of source and target nodes can be achieved with connection ports.
 

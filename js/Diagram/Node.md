@@ -55,10 +55,6 @@ $("#diagram").ejDiagram({
 
 ![](/js/Diagram/Node_images/Node_img2.png)
 
- * Once the node is rendered in the diagram, you can use the following events to detect the mouse behavior on node.
- * The diagram client side event [mouseEnter](/api/js/ejdiagram#events:mouseenter "mouseEnter") gets triggered when mouse enters node/connector.
- * The diagram client side event [mouseLeave](/api/js/ejdiagram#events:mouseleave "mouseLeave") gets triggered when mouse leaves node/connector.
- * The diagram client side event [mouseOver](/api/js/ejdiagram#events:mouseover "mouseOver") gets triggered when mouse hovers over a node/connector.
 
 ### Add node at runtime
 

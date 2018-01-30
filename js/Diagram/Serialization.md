@@ -36,6 +36,23 @@ localStorage.setItem("diagram", JSON.stringify(json));
 
 Diagram can also be saved as raster or vector image files. For more information about saving the Diagram as images, refer to [Exporting](/js/Diagram/Exporting "Exporting").
 
+## Preventing Serialization of Model default properties
+
+* Diagram provides the support to serialize the user defined model properties. 
+* The diagram model’s serializationSettings preventDefaultValues property is used to specify whether to save the diagram with user defined model properties or entire diagram model properties. 
+* By default, the preventDefaultValues property value is set as false and all default properties will be serialized. If it is set to true, only user defined properties will be serialized. The following code illustrates how to use preventDefaultValues property.
+
+{% highlight javascript %}
+
+$("#Diagram").ejDiagram({
+         //optimize the size of JSON  
+         serializationSettings: {
+         // serialize user defined model properties when preventDefaultValues is true.  
+         preventDefaultValues: true
+      }
+ });
+
+{% endhighlight %}
 
 ## Load
 
@@ -55,7 +72,7 @@ N> Before loading a new Diagram, existing Diagram is cleared.
 
 ## Upgrade
 
-When you save the diagram in older versions and need to load that JSON in newer version. At that time, you can use this method which upgrades JSON to newer version. Please refer to below link which shows how to use upgrade method in diagram.
+You can upgrade older version JSON to newer version without loading it. Please refer to below link which shows how to use upgrade method in diagram.
 
 [upgrade](/api/js/ejdiagram#methods:upgrade "upgrade")
 

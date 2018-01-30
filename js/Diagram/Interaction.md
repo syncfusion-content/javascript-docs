@@ -20,7 +20,7 @@ An element can be selected by clicking that element. During single click, all pr
 
 ![](/js/Diagram/Interaction_images/Interaction_img1.png)
 
-* Once you wish to select the diagram elements, you can use the below events to do your customization.
+* While selecting the diagram elements, you can use below events to do your customization.
 * When we select/unselect a diagram elements, the [selectionChange](/api/js/ejdiagram#events:selectionchange "selectionChange") event gets triggered.
 * When we click on elements/model in the diagram, the [click](/api/js/ejdiagram#events:click "click") event gets triggered. This event triggers even when the diagram is static.
 * Like click event, the [itemClick](/api/js/ejdiagram#events:itemclick "itemClick") event gets triggered only when we click on diagram elements.
@@ -200,6 +200,11 @@ Source and target points of the selected connectors are represented with two han
 
 ![](/js/Diagram/Interaction_images/Interaction_img6.png)
 
+* If you drag connector end points or updating connector end points, then you can use below events to do your customization.
+* When the connector source point is changed, the [connectorSourceChange](/api/js/ejdiagram#events:connectorsourcechange "connectorSourceChange") event gets triggered.
+* When the connector target point is changed, the [connectorTargetChange](/api/js/ejdiagram#events:connectortargetchange "connectorTargetChange") event gets triggered.
+* When you connect connector with ports/node or disconnect from it, the [connectionChange](/api/js/ejdiagram#events:connectionchange "connectionChange") event gets triggered.
+
 ### Straight segment editing
 
 * End point of each straight segment is represented by a thumb that enables to edit the segment.
@@ -283,6 +288,11 @@ function onDrop(args) {
 	}
 }
 {% endhighlight %}
+
+ * When the node is rendered in the diagram, you can use the following events to detect the mouse behavior on node.
+ * The diagram client side event [mouseEnter](/api/js/ejdiagram#events:mouseenter "mouseEnter") gets triggered when mouse enters node/connector.
+ * The diagram client side event [mouseLeave](/api/js/ejdiagram#events:mouseleave "mouseLeave") gets triggered when mouse leaves node/connector.
+ * The diagram client side event [mouseOver](/api/js/ejdiagram#events:mouseover "mouseOver") gets triggered when mouse hovers over a node/connector.
 
 ## User handles
 
