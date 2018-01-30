@@ -46,7 +46,7 @@ The following screenshot shows the output of multicolumn sorting in TreeGrid c
 
 ### Disable sorting for specific column
 
-It is possible to disable sorting for a specific column by setting [`allowSorting`](/api/js/ejtreegrid#members:columns-allowsorting "columns.allowSorting") as false in the column definition.
+It is possible to disable sorting for a specific column by setting [`allowSorting`](/api/js/ejtreegrid#members:columns-allowsorting "columns.allowSorting") as `false` in the column definition.
 
 The below code snippet demonstrates this.
 
