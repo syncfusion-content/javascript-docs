@@ -10,20 +10,20 @@ api: /api/js/ejpivotclient
 
 # KPI
 
-Key Performance Indicators (KPIs) are business metric that help to figure out the progress of an enterprise in meeting its business goals.
+Key Performance Indicators (KPI) is the business metric that helps to figure out the progress of an enterprise when meeting its business goals.
 
-The different indicators available in KPI are:
+The different indicators available in the KPI are:
 
-* KPI Value: A physical measure or a calculated measure.
-* KPI Goal: Defines the target for the measure.
-* KPI Status: Evaluates the current status of the value compared to the goal.
-* KPI Trend: Evaluate the current trend of the value compared to the goal.
+* KPI value: A physical measure or a calculated measure.
+* KPI goal: Defines the target for the measure.
+* KPI status: Evaluates the current status of the value compared to the goal.
+* KPI trend: Evaluates the current trend of the value compared to the goal.
 
-The **“KpiElements”** class in OLAP Base library holds the KPI name and when its object is added to an OlapReport, you can view the resultant information in PivotClient.
+The **“KpiElements”** class in OLAP Base library holds the KPI name, and when its object is added to an OlapReport, you can view the resultant information in the pivot client.
 
-To enable KPI option set the property [`enableKPI`](/api/js/ejpivotclient#members:enablekpi) to `true`.
+To enable the KPI option, set the [`enableKPI`](/api/js/ejpivotclient#members:enablekpi) property to `true`.
 
-## Client Mode
+## Client mode
 
 {% highlight js %}
 
@@ -63,7 +63,7 @@ To enable KPI option set the property [`enableKPI`](/api/js/ejpivotclient#member
 
 ![](KPI_images/clientmode-kpi.png)
 
-## Server Mode
+## Server mode
 
 ### Client side property declaration
 
@@ -78,7 +78,7 @@ To enable KPI option set the property [`enableKPI`](/api/js/ejpivotclient#member
 
 {% endhighlight %}
 
-### Framing OlapReport with KPI Elements
+### Framing OLAP report with KPI elements
 
 {% highlight c# %}
 
