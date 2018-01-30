@@ -8,7 +8,9 @@ documentation: ug
 api: /api/js/ejpivotgrid
 ---
 
-### Refresh the PivotGrid with page properties
+## Public Methods
+
+### Refresh the PivotGrid with paging
 
 The [`refreshPagedPivotGrid`](../api/ejpivotgrid#methods:refreshPagedPivotGrid) method is used to re-render the **PivotGrid** component with given axis and page number.
 
@@ -24,7 +26,7 @@ The [`refreshPagedPivotGrid`](../api/ejpivotgrid#methods:refreshPagedPivotGrid) 
 
 {% endhighlight %}
 
-### Refresh the PivotGrid
+### Refresh the PivotGrid without paging
 
 The [`refreshPivotGrid`](../api/ejpivotgrid#methods:refreshPivotGrid) method is used to re-render the **PivotGrid** control with modified data input in client-mode.
 
@@ -40,7 +42,7 @@ The [`refreshPivotGrid`](../api/ejpivotgrid#methods:refreshPivotGrid) method is 
 
 {% endhighlight %}
 
-### Re-rendering the PivotGrid
+### Refresh the PivotGrid with modified report
 
 The [`refreshControl`](../api/ejpivotgrid#methods:refreshControl) method is used to refresh the **PivotGrid** component with the report available at that instant.
 
@@ -57,7 +59,7 @@ The [`refreshControl`](../api/ejpivotgrid#methods:refreshControl) method is used
 
 {% endhighlight %}
 
-### Calculating Dimensions of the Cells
+### Returning height and width of all cells of PivotGrid
 
 The [`calculateCellWidths`](../api/ejpivotgrid#methods:calculateCellWidths) method is used to return the height of all rows and width of all columns of cells in **PivotGrid** component.
 
@@ -73,7 +75,7 @@ The [`calculateCellWidths`](../api/ejpivotgrid#methods:calculateCellWidths) meth
 
 {% endhighlight %}
 
-### Showing the Conditional Formatting Dialog
+### Show/Open the Conditional formatting dialog
 
 The [`openConditionalFormattingDialog`](../api/ejpivotgrid#methods:openConditionalFormattingDialog) method is used to create conditional formatting dialog to apply conditional formatting for the **PivotGrid** control.
 
@@ -89,7 +91,7 @@ The [`openConditionalFormattingDialog`](../api/ejpivotgrid#methods:openCondition
 
 {% endhighlight %}
 
-### Saving the Report
+### Saving the Report collection
 
 The [`saveReport`](../api/ejpivotgrid#methods:saveReport) method is used to save the current report to the database/local storage.
 
@@ -107,7 +109,7 @@ The [`saveReport`](../api/ejpivotgrid#methods:saveReport) method is used to save
 
 {% endhighlight %}
 
-### Rendering Excel Like Layout
+### Render the PivotGrid in Excel Like format
 
 The [`excelLikeLayout`](../api/ejpivotgrid#methods:excelLikeLayout) method is used to reconstruct the JSON data that is formed for rendering the **PivotGrid** in the excel-like layout format.
 
@@ -118,12 +120,12 @@ The [`excelLikeLayout`](../api/ejpivotgrid#methods:excelLikeLayout) method is us
 <script>
     $("#PivotGrid1").ejPivotGrid();
     var pivotGridObj = $("#PivotGrid1").data("ejPivotGrid");
-    pivotGridObj.excelLikeLayout(JSONObjectArray);
+    pivotGridObj.excelLikeLayout(pivotGridObj.getJSONRecords());
 </script>
 
 {% endhighlight %}
 
-### Refresh Field Caption
+### Refresh the field caption dynamically
 
 The [`refreshFieldCaption`](../api/ejpivotgrid#methods:refreshFieldCaption) method is used to change the caption of the pivot item (name displayed in UI) on-demand for the relational datasource in client-mode.
 
@@ -139,7 +141,7 @@ The [`refreshFieldCaption`](../api/ejpivotgrid#methods:refreshFieldCaption) meth
 
 {% endhighlight %}
 
-### AJAX Request
+### Explicit asynchronous invoke
 
 The [`doAjaxPost`](../api/ejpivotgrid#methods:doAjaxPost) method is used to Perform an asynchronous HTTP (AJAX) request.
 
@@ -155,7 +157,7 @@ The [`doAjaxPost`](../api/ejpivotgrid#methods:doAjaxPost) method is used to Perf
 
 {% endhighlight %}
 
-### Destroying the PivotGrid
+### Destroying the object of PivotGrid
 
 The [`destroy`](../api/ejpivotgrid#methods:destroy) method is used to destroy the **PivotGrid** widget associated events that are bound using “this._on” and brings the control to pre-init state.
 
@@ -171,7 +173,7 @@ The [`destroy`](../api/ejpivotgrid#methods:destroy) method is used to destroy th
 
 {% endhighlight %}
 
-### Getting JSON Records
+### Getting JSON records from control object
 
 The [`getJSONRecords`](../api/ejpivotgrid#methods:getJSONRecords) method is used to return the JSON records that are formed to render the control.
 
@@ -187,7 +189,7 @@ The [`getJSONRecords`](../api/ejpivotgrid#methods:getJSONRecords) method is used
 
 {% endhighlight %}
 
-### Setting JSON Records
+### Setting JSON records to control object
 
 The [`setJSONRecords`](../api/ejpivotgrid#methods:setJSONRecords) method is used to set the JSON records that are formed to render the control.
 
@@ -203,7 +205,10 @@ The [`setJSONRecords`](../api/ejpivotgrid#methods:setJSONRecords) method is used
 
 {% endhighlight %}
 
-### Before Pivot Engine Populate
+
+## Events
+
+### Invoking event before Pivot Engine population
 
 The [`beforePivotEnginePopulate`](../api/ejpivotgrid#events:beforePivotEnginePopulate) event is triggered before the pivot engine starts to populate.
 
@@ -221,7 +226,7 @@ $("#PivotGrid1").ejPivotGrid({
 
 {% endhighlight %}
 
-### Save Report
+### Invoking event before saving the report in database
 
 The [`saveReport`](../api/ejpivotgrid#events:saveReport) event is triggered before saving the current report to the database.
 
@@ -239,7 +244,7 @@ $("#PivotGrid1").ejPivotGrid({
 
 {% endhighlight %}
 
-### Cell Edit
+### Triggering event before editing the cell in PivotGrid
 
 The [`cellEdit`](../api/ejpivotgrid#events:cellEdit) event is triggered before editing the cells.
 
@@ -257,7 +262,7 @@ $("#PivotGrid1").ejPivotGrid({
 
 {% endhighlight %}
 
-### After Service Invoke
+### Invoking event in client-side after service invoke
 
 The [`afterServiceInvoke`](../api/ejpivotgrid#events:afterServiceInvoke) event is triggered when it is reached client-side after the AJAX request.
 
@@ -275,7 +280,7 @@ $("#PivotGrid1").ejPivotGrid({
 
 {% endhighlight %}
 
-### Before Service Invoke
+### Invoking event in client-side before service is invoke
 
 The [`beforeServiceInvoke`](../api/ejpivotgrid#events:beforeServiceInvoke) event is triggered before any AJAX request is passed from the PivotGrid to service methods.
 
@@ -293,7 +298,7 @@ $("#PivotGrid1").ejPivotGrid({
 
 {% endhighlight %}
 
-### Drill Success
+### Triggering event after performing drill operation
 
 The [`drillSuccess`](../api/ejpivotgrid#events:drillSuccess) event is triggered after performing drill operation in the PivotGrid.
 
@@ -311,7 +316,7 @@ $("#PivotGrid1").ejPivotGrid({
 
 {% endhighlight %}
 
-### Before Export
+### Triggering event before exporting
 
 The [`beforeExport`](../api/ejpivotgrid#events:beforeExport) event is triggered before performing exporting in the pivot grid.
 
@@ -329,7 +334,7 @@ $("#PivotGrid1").ejPivotGrid({
 
 {% endhighlight %}
 
-### Load
+### Triggering event before the PivotGrid loaded
 
 The [`load`](../api/ejpivotgrid#events:load) event is triggered when the PivotGrid loading is initiated.
 
@@ -347,7 +352,10 @@ $("#PivotGrid1").ejPivotGrid({
 
 {% endhighlight %}
 
-### Getting Raw Items on Double Click
+
+## Members
+
+### Getting Raw items by triggering cell double click event
 Cell Double Click on PivotGrid allows you to get Raw items of cell which is clicked. To enable cell double click event, you can use the [`enableCellDoubleClick`](../api/ejpivotgrid#members:enablecelldoubleclick) property. You can get the raw items of the cell through the [`cellDoubleClick`](../api/ejpivotgrid#events:cellDoubleClick) event.
 
 {% highlight javascript %}
@@ -386,7 +394,7 @@ $("#PivotGrid1").ejPivotGrid({
 
 ![](How-To_images/jsonRendering.png)
 
-### Rendering Field List through ID
+### Connect the Field List with PivotGrid using its ID
 You can connect PivotSchemaDesigner with specified ID to the PivotGrid control. This connection can be enabled by the [`pivotTableFieldListID`](/api/js/ejpivotgrid#members:pivottablefieldlistid) property. The
 [`enablePivotFieldList`](/api/js/ejpivotgrid#members:enablepivotfieldlist) property also helps you to show/hide PivotSchemaDesigner.
 
@@ -424,45 +432,7 @@ You can connect PivotSchemaDesigner with specified ID to the PivotGrid control. 
 
 {% endhighlight %}
 
-## Setting Custom Name to Service Methods
-The [`serviceMethodSettings`](/api/js/ejpivotgrid#members:servicemethodsettings) allows you to set the custom name for the methods in WebAPI/WCF, communicated during AJAX post.
-
-### Common Service Methods to OLAP and Relational datasource
-
-| Service Methods | Description |
-|---|---|
-|[initialize](/api/js/ejpivotgrid#members:servicemethodsettings-initialize)|It fetches the data required to render the PivotGrid initially.|
-|[fetchMembers](/api/js/ejpivotgrid#members:servicemethodsettings-fetchmembers)|It fetches the members of the selected field to render the member editor tree.|
-|[filtering](/api/js/ejpivotgrid#members:servicemethodsettings-filtering)|It fetches the data required to render the PivotGrid control on performing filtering action.|
-|[nodeDropped](/api/js/ejpivotgrid#members:servicemethodsettings-nodedropped)|It fetches the relational data required to render the PivotGrid control on node drop action.|
-|[sorting](/api/js/ejpivotgrid#members:servicemethodsettings-sorting)|It fetches the sorted data to render the PivotGrid control on performing sorting.|
-|[exportPivotGrid](/api/js/ejpivotgrid#members:servicemethodsettings-exportpivotgrid)|It is used to export the PivotGrid data to specified format.|
-|[saveReport](/api/js/ejpivotgrid#members:servicemethodsettings-savereport)|It saves the current report to database with the specified name.|
-|[loadReport](/api/js/ejpivotgrid#members:servicemethodsettings-loadreport)|It loads a report from the database and refreshes the control with it.|
-|[deferUpdate](/api/js/ejpivotgrid#members:servicemethodsettings-deferupdate)|It fetches the data with respect to the report available at that instant (i.e) updates the control with current report.|
-
-### Relational
-
-| Service Methods | Description |
-|---|---|
-|[calculatedField](/api/js/ejpivotgrid#members:servicemethodsettings-calculatedfield)|It forms a calculated field in values area and fetches the data along with it to render the PivotGrid control.|
-|[cellEditing](/api/js/ejpivotgrid#members:servicemethodsettings-cellediting)|It rewrites the content of database on editing a cell.|
-|[valueSorting](/api/js/ejpivotgrid#members:servicemethodsettings-valuesorting)|It allows to perform sorting by clicking of column header.|
-|[nodeStateModified](/api/js/ejpivotgrid#members:servicemethodsettings-nodestatemodified)|It fetches the relational data required to render the PivotGrid control on selecting/unselecting fields in Field list.|
-
-### OLAP
-
-| Service Methods | Description |
-|---|---|
-|[drillDown](/api/js/ejpivotgrid#members:servicemethodsettings-initialize)|It fetches the OLAP data required to render the PivotGrid control after drilling it.|
-|[Paging](/api/js/ejpivotgrid#members:servicemethodsettings-paging)|It fetches the OLAP data required to render the specific page of PivotGrid with paging enabled.|
-|[removeButton](/api/js/ejpivotgrid#members:servicemethodsettings-removebutton)|It fetches the data required to render the control after removing a button.|
-|[memberExpand](/api/js/ejpivotgrid#members:servicemethodsettings-memberexpand)|It fetches the data to render children nodes of a member in Member Editor Tree.|
-|[drillThroughHierarchies](/api/js/ejpivotgrid#members:servicemethodsettings-drillthroughhierarchies)|It returns dimensions that are associated with the measure of clicked value cell.|
-|[drillThroughDataTable](/api/js/ejpivotgrid#members:servicemethodsettings-drillthroughdatatable)|It returns a grid with data that are associated with measure values of the clicked value cell.|
-|[writeBack](/api/js/ejpivotgrid#members:servicemethodsettings-writeback)|It allows you to edit the values in the PivotGrid and update a write enabled cube in the back-end (SSAS) dynamically at runtime.|
-
-## Enabling Context Menu in PivotGrid
+### Enabling Context Menu in PivotGrid
 To improve user action, the Context Menu option in PivotGrid allows you to enable/disable the features with UI operations. This feature can be enabled by the [`enableContextMenu`](/api/js/ejpivotgrid#members:enablecontextmenu) property. The features in Context Menu is displayed with respective to the datasource (OLAP/Relational) and operational modes (client-side/server-side).
 
 {% highlight html %}
@@ -539,13 +509,43 @@ For more details on this topic, [click here](https://help.syncfusion.com/js/pivo
 ![](How-To_images/frozenHeaders.png)
 
 
+## Setting Custom Name to Service Methods
+The [`serviceMethodSettings`](/api/js/ejpivotgrid#members:servicemethodsettings) allows you to set the custom name for the methods in WebAPI/WCF, communicated during AJAX post.
 
+### Common Service Methods to OLAP and Relational datasource
 
+| Service Methods | Description |
+|---|---|
+|[initialize](/api/js/ejpivotgrid#members:servicemethodsettings-initialize)|It fetches the data required to render the PivotGrid initially.|
+|[fetchMembers](/api/js/ejpivotgrid#members:servicemethodsettings-fetchmembers)|It fetches the members of the selected field to render the member editor tree.|
+|[filtering](/api/js/ejpivotgrid#members:servicemethodsettings-filtering)|It fetches the data required to render the PivotGrid control on performing filtering action.|
+|[nodeDropped](/api/js/ejpivotgrid#members:servicemethodsettings-nodedropped)|It fetches the relational data required to render the PivotGrid control on node drop action.|
+|[sorting](/api/js/ejpivotgrid#members:servicemethodsettings-sorting)|It fetches the sorted data to render the PivotGrid control on performing sorting.|
+|[exportPivotGrid](/api/js/ejpivotgrid#members:servicemethodsettings-exportpivotgrid)|It is used to export the PivotGrid data to specified format.|
+|[saveReport](/api/js/ejpivotgrid#members:servicemethodsettings-savereport)|It saves the current report to database with the specified name.|
+|[loadReport](/api/js/ejpivotgrid#members:servicemethodsettings-loadreport)|It loads a report from the database and refreshes the control with it.|
+|[deferUpdate](/api/js/ejpivotgrid#members:servicemethodsettings-deferupdate)|It fetches the data with respect to the report available at that instant (i.e) updates the control with current report.|
 
+### Relational
 
+| Service Methods | Description |
+|---|---|
+|[calculatedField](/api/js/ejpivotgrid#members:servicemethodsettings-calculatedfield)|It forms a calculated field in values area and fetches the data along with it to render the PivotGrid control.|
+|[cellEditing](/api/js/ejpivotgrid#members:servicemethodsettings-cellediting)|It rewrites the content of database on editing a cell.|
+|[valueSorting](/api/js/ejpivotgrid#members:servicemethodsettings-valuesorting)|It allows to perform sorting by clicking of column header.|
+|[nodeStateModified](/api/js/ejpivotgrid#members:servicemethodsettings-nodestatemodified)|It fetches the relational data required to render the PivotGrid control on selecting/unselecting fields in Field list.|
 
+### OLAP
 
-
+| Service Methods | Description |
+|---|---|
+|[drillDown](/api/js/ejpivotgrid#members:servicemethodsettings-initialize)|It fetches the OLAP data required to render the PivotGrid control after drilling it.|
+|[Paging](/api/js/ejpivotgrid#members:servicemethodsettings-paging)|It fetches the OLAP data required to render the specific page of PivotGrid with paging enabled.|
+|[removeButton](/api/js/ejpivotgrid#members:servicemethodsettings-removebutton)|It fetches the data required to render the control after removing a button.|
+|[memberExpand](/api/js/ejpivotgrid#members:servicemethodsettings-memberexpand)|It fetches the data to render children nodes of a member in Member Editor Tree.|
+|[drillThroughHierarchies](/api/js/ejpivotgrid#members:servicemethodsettings-drillthroughhierarchies)|It returns dimensions that are associated with the measure of clicked value cell.|
+|[drillThroughDataTable](/api/js/ejpivotgrid#members:servicemethodsettings-drillthroughdatatable)|It returns a grid with data that are associated with measure values of the clicked value cell.|
+|[writeBack](/api/js/ejpivotgrid#members:servicemethodsettings-writeback)|It allows you to edit the values in the PivotGrid and update a write enabled cube in the back-end (SSAS) dynamically at runtime.|
 
 
 
