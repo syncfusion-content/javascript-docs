@@ -22,17 +22,17 @@ $("#maps").ejMap({
 
 In default legend, after setting [`enableRTL`] is set as true, legend text will be rendered first, and then legend icon will be rendered. 
 
-![](/js/Maps/Globalization-and-Localization_images/Globalization-and-Localization_images1.png)
+![](Globalization-and-Localization _images/Globalization-and-Localization_images1.png)
 
 ## Interactive legend
 
 If [`enableRTL`](../api/ejmap#members:enablertl) is set as true, then whole interactive legend will be rendered from right-to-left, which means left label will be rendered at right side, and right label will be rendered at left side. Also, navigation arrow position will be changed to right side.
 
-![](/js/Maps/Globalization-and-Localization_images/Globalization-and-Localization_images2.png)
+![](Globalization-and-Localization _images/Globalization-and-Localization_images2.png)
 
 ## Tooltip
 
 If [`enableRTL`] is set as true, tooltip will be rendered at the left side of the mouse cursor. 
 
-![](/js/Maps/Globalization-and-Localization_images/Globalization-and-Localization_images3.png)
+![](Globalization-and-Localization _images/Globalization-and-Localization_images3.png)
 
