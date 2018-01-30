@@ -32,7 +32,7 @@ When you open an excel file, it needs to be read and converted to client side Sp
 
 The Spreadsheet can open excel documents as like excel application with its data, style, format. To enable open option in Spreadsheet set [`allowImport`](https://help.syncfusion.com/api/js/ejspreadsheet#members:allowimport "allowImport") option as `true`. Since Spreadsheet uses a server side helper to open document, set [`importMapper`](https://help.syncfusion.com/api/js/ejspreadsheet#members:importsettings-importmapper "importMapper") in [`importSettings`](https://help.syncfusion.com/api/js/ejspreadsheet#members:importsettings "importSettings") to map server action.
 
-The method [`blankWorkbook`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:blankworkbook "blankworkbook") is used to blank the workbook in Spreadsheet.
+The method [`blankWorkbook`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:blankworkbook "blankworkbook") is used to create the new workbook in Spreadsheet.
 
 {% highlight html %}
 
@@ -203,7 +203,7 @@ You can dynamically open excel document by clicking the file menu in ribbon and 
 
 ## Save
 
-The Spreadsheet can save its data, style, format into an excel file. To enable save option in Spreadsheet set [`allowExporting`](https://help.syncfusion.com/api/js/ejspreadsheet#members:exportsettings-allowexporting "allowExporting") option in [`exportSettings`](https://help.syncfusion.com/api/js/ejspreadsheet#members:exportsettings "exportSettings") as `true`. Since Spreadsheet uses server side helper to save documents set [`excelUrl`](https://help.syncfusion.com/api/js/ejspreadsheet#members:exportsettings-excelurl "excelUrl"),[`csvUrl`](https://help.syncfusion.com/api/js/ejspreadsheet#members:exportsettings-csvurl "csvUrl"),[`pdfUrl`](https://help.syncfusion.com/api/js/ejspreadsheet#members:exportsettings-pdfurl "pdfUrl") in [`exportSettings`](https://help.syncfusion.com/api/js/ejspreadsheet#members:exportsettings "exportSettings") option and and also you can define password while exporting the spreadsheet by using [`password`](https://help.syncfusion.com/api/js/ejspreadsheet#members:exportsettings-password "password") API.
+The Spreadsheet can save its data, style, format into an excel file. To enable save option in Spreadsheet set [`allowExporting`](https://help.syncfusion.com/api/js/ejspreadsheet#members:exportsettings-allowexporting "allowExporting") option in [`exportSettings`](https://help.syncfusion.com/api/js/ejspreadsheet#members:exportsettings "exportSettings") as `true`. Since Spreadsheet uses server side helper to save documents set [`excelUrl`](https://help.syncfusion.com/api/js/ejspreadsheet#members:exportsettings-excelurl "excelUrl"),[`csvUrl`](https://help.syncfusion.com/api/js/ejspreadsheet#members:exportsettings-csvurl "csvUrl"),[`pdfUrl`](https://help.syncfusion.com/api/js/ejspreadsheet#members:exportsettings-pdfurl "pdfUrl") in [`exportSettings`](https://help.syncfusion.com/api/js/ejspreadsheet#members:exportsettings "exportSettings") option and also you can define password while exporting the spreadsheet by using [`password`](https://help.syncfusion.com/api/js/ejspreadsheet#members:exportsettings-password "password") API.
 
 {% highlight html %}
 
