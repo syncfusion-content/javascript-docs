@@ -39,6 +39,56 @@ For more numeric format strings, please refer this [link](https://msdn.microsoft
 
 For more date format strings, please refer this [link](https://msdn.microsoft.com/library/az4se3k1(v=vs.100).aspx).
 
+## Defining column width
+
+In TreeGrid, it is possible to define width for a specific column by setting [`width`](/api/js/ejtreegrid#members:columns-width "columns.width") property of column.
+
+The below code snippet shows how to set width for specific column.
+
+{% highlight js %}
+
+    $(function () {
+        $("#TreeGridContainer").ejTreeGrid({
+            //...
+            columns: [
+                { field: "taskID", headerText: "Task Id", width:50},
+                { field: "taskName", headerText: "Task Name", width:150 },
+                { field: "startDate", headerText: "Start Date", width:100 },
+                { field: "endDate", headerText: "End Date", width:100 }
+                { field: "duration", headerText: "Duration", width:100 }                    
+            ]
+            //..
+        })
+    });
+
+{% endhighlight %}
+
+The below screenshot shows TreeGrid render with specific column width.
+
+![](/js/TreeGrid/Columns_images/Columns_img13.png)
+
+### Defining common width for the columns
+
+The TreeGrid control provide the support to set same width for all the columns in tree grid using [`commonWidth`](/api/js/ejtreegrid#members:commonwidth) property.
+
+The below code snippet shows how to set common width for tree grid columns.
+
+{% highlight js %}
+
+    $(function () {
+        $("#TreeGridContainer").ejTreeGrid({
+            //...
+            commonWidth:140,
+            //...
+        })
+    });
+
+{% endhighlight %}
+
+The below screenshot shows TreeGrid render with common width. 
+
+![](/js/TreeGrid/Columns_images/Columns_img16.png)
+
 ## Headers
 
 ### Header text
@@ -180,6 +230,35 @@ You can resize the column width to view the hidden text of the cell. This featur
 
 {% endhighlight %}
 
+### Column resize mode
+
+In Treegrid, it is possible to provide different column resizing mode using [`columnResizeMode`](/api/js/ejtreegrid#members:columnresizesettings-columnresizemode "columnResizeSettings.columnResizeMode") property of [`columnResizeSettings`](/api/js/ejtreegrid#members:columnresizesettings).
+
+The below are the types of column resize modes available in TreeGrid,
+
+* Normal - Columns are stretched with control width at load time. When resizing the column, the current column width is updated based on next column.
+* Next column - Columns are stretched with control width at load time. When resize the column the current column width is updated based on stretching columns in control width.
+* Fixed Columns - Column are rendered with given width value at load time. Only the current column width is changed while resizing the column.
+
+The following code snippet explains how to set column resize mode in tree grid.
+
+{% highlight js %}
+
+   $("#TreeGridContainer").ejTreeGrid({
+    //...
+    columnResizeSettings:{
+        columnResizeMode: ej.TreeGrid.ColumnResizeMode.FixedColumns
+    }
+    //...
+});
+
+{% endhighlight %}
+
+![](/js/TreeGrid/Columns_images/Columns_img15.png)
+
+The above screenshot shows the tree grid render with `FixedColumns` resize mode.
+{:.caption}
+
 ## Checkbox column 
 
 It is possible to display a column as checkbox column in TreeGrid by enabling the [`displayAsCheckbox`](/api/js/ejtreegrid#members:columns-displayascheckbox "columns.displayAsCheckbox") property and by setting the `editType` property as `Boolean` for the column .  If the [`displayAsCheckbox`](/api/js/ejtreegrid#members:columns-displayascheckbox "columns.displayAsCheckbox") property is set as false, then the column will be displayed as string column with the value mapped from the data source.
@@ -210,7 +289,13 @@ The below screen shot depicts the `Approved` column in TreeGrid displayed as a c
 
 Columns can be customized either by using JsRender templates or by AngularJS templates.
 
-Using the [`templateID`](/api/js/ejtreegrid#members:columns-templateid "columns.templateID") property, you can specify the Id of the script element, which contains the template for the column. However, you need to enable the [`isTemplateColumn`](/api/js/ejtreegrid#members:columns-istemplatecolumn "columns.isTemplateColumn") property for the specific column to display the custom template instead of default template.
+One of the following property is used for set column template in TreeGrid.
+
+* [`templateID`](/api/js/ejtreegrid#members:columns-templateid "columns.templateID") - Using the [`templateID`](/api/js/ejtreegrid#members:columns-templateid "columns.templateID") property, you can specify the Id of the script element, which contains the template for the column.
+* [`template`](/api/js/ejtreegrid#members:columns-template "columns.template") - HTML templates can be specified in the [`template`](/api/js/ejtreegrid#members:columns-template "columns.template") property of the particular column as a string (HTML element).
+* [`angularTemplate`](/api/js/ejtreegrid#members:columns-angulartemplate "angularTemplate") - Specifies the template ID or the template string of the AngularJS script element for specific column.
+
+However, you need to enable the [`isTemplateColumn`](/api/js/ejtreegrid#members:columns-istemplatecolumn "columns.isTemplateColumn") property for the specific column to display the custom template instead of default template.
 
 Following code example show how to define template for the column.
 
@@ -277,6 +362,32 @@ Following are the items displayed in the column menu,
 {% endhighlight %}
 
 ![](/js/TreeGrid/Columns_images/Columns_img5.png)
+
+### Hide specific column in column chooser list
+It is possible to hide the specific column in column chooser list by settings [`showInColumnChooser`](/api/js/ejtreegrid#members:columns-showincolumnchooser "columns.showInColumnChooser") as `false` in the column definition.
+
+Following code example shows how to hide specific column in column chooser list
+
+{% highlight js %}
+
+    $("#treegrid1").ejTreeGrid(
+    {   
+        // ...     
+        showColumnChooser: true,
+        columns:[
+            // ...  
+            { field: "taskID", headerText: "Task Id", showInColumnChooser: false }
+            // ...  
+        ],
+        // ...             
+    });
+
+{% endhighlight %}
+
+![](/js/TreeGrid/Columns_images/Columns_img14.png)
+
+The above screenshot shows TreeGrid column chooser rendered without `Task Id` column. 
+{:.caption}
 
 ## Command Column
 

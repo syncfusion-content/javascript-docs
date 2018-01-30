@@ -14,7 +14,7 @@ api: /api/js/ejdiagram
 
 ## Create Label
 
-You can add a label to a node/connector by defining the label object and adding that to the `labels` collection of node/connector. The `text` property of label defines the text to be displayed. The following code illustrates how to create a Label. 
+You can add a label to a node/connector by defining the label object and adding that to the [labels](/api/js/ejdiagram#members:nodes-labels "labels")  collection of node/connector. The [text](/api/js/ejdiagram#members:nodes-labels-text "text")  property of label defines the text to be displayed. The following code illustrates how to create a Label. 
 
 {% highlight javascript %}
 
@@ -80,7 +80,7 @@ To explore more label properties, refer to [Label Properties](/api/js/ejdiagram#
 
 ### Add Labels at runtime
 
-Labels can be added at runtime by using the client side method [addLabel](/api/js/ejdiagram#methods:addlabel "addLabel"). The following code illustrates how to add a label to a node. 
+Labels can be added at runtime by using the client side method [addLabel](/api/js/ejdiagram#methods:addlabel "addLabel"). Also, we can insert a label into a node's label collection at runtime using client side method [insertLabel](/api/js/ejdiagram#methods:insertlabel "insertLabel"). The following code illustrates how to add a label to a node. 
 
 {% highlight js %}
 
@@ -98,6 +98,11 @@ Labels can be added at runtime by using the client side method [addLabel](/api/
 
 ![](/js/Diagram/Label_images/addlabelatruntime_img1.png)
 
+### Remove Labels at runtime
+
+You can remove a collection of labels from the node by using client side method removeLabels. Please refer to below link which shows how to use removeLabels method.
+
+[removeLabels](/api/js/ejdiagram#methods:removelabels "removeLabels")
 
 ## Update Label at runtime
 
@@ -120,7 +125,7 @@ Label can be aligned relative to the node boundaries. It has margin, offset, hor
 
 ### Offset
 
-The `offset` property of label is used to align the labels based on fractions. 0 represents top/left corner, 1 represents bottom/right corner, and 0.5 represents half of width/height.
+The [offset](/api/js/ejdiagram#members:nodes-labels-offset "offset") property of label is used to align the labels based on fractions. 0 represents top/left corner, 1 represents bottom/right corner, and 0.5 represents half of width/height.
 
 The following image shows the relationship between the label position (black colored circle) and offset (fraction values).
 
@@ -128,7 +133,7 @@ The following image shows the relationship between the label position (black col
 
 ### Horizontal and vertical alignments
 
-The `horizontalAlignment` property of label is used to set how the label is horizontally aligned at the label position determined from the fraction values. The `verticalAlignment` property is used to set how label is vertically aligned at the label position. 
+The [horizontalAlignment](/api/js/ejdiagram#members:nodes-labels-horizontalalignment "horizontalAlignment") property of label is used to set how the label is horizontally aligned at the label position determined from the fraction values. The [verticalAlignment](/api/js/ejdiagram#members:nodes-labels-verticalalignment "verticalAlignment") property is used to set how label is vertically aligned at the label position. 
 
 The following tables illustrates all the possible alignments visually with **offset (0, 0).**
 
@@ -186,7 +191,7 @@ $("#diagram").ejDiagram({
 
 ### Label alignment with respect to Segments
 
- `segmentOffset` and `alignment` properties of label allows you to align the connector labels with respect to the segments. In the following image, the labels are placed exactly over the segments regardless of its rectangular bounds.
+ [segmentOffset](/api/js/ejdiagram#members:connectors-labels-segmentoffset "segmentOffset") and [alignment](/api/js/ejdiagram#members:connectors-labels-alignment "alignment") properties of label allows you to align the connector labels with respect to the segments. In the following image, the labels are placed exactly over the segments regardless of its rectangular bounds.
  
  ![](/js/Diagram/Label_images/Label_img32.png)
  
@@ -244,7 +249,7 @@ $("#diagram").ejDiagram({
 
 ![](/js/Diagram/Label_images/Label_img31.png)
 
-By default, connector labels will be aligned with respect to the segments. The `relativeMode` property of label allows you to disable this segment specific label alignment. Following code example illustrates how to disable the segment specific label alignment.
+By default, connector labels will be aligned with respect to the segments. The [relativeMode](/api/js/ejdiagram#members:connectors-labels-relativemode "relativeMode")  property of label allows you to disable this segment specific label alignment. Following code example illustrates how to disable the segment specific label alignment.
 
 {% highlight javascript %}
 
@@ -278,7 +283,7 @@ By default, connector labels will be aligned with respect to the segments. The `
 
 ### Margin
 
-**Margin** is an absolute value used to add some blank space in any one of its four sides. You can displace the labels with the `margin` property.
+**Margin** is an absolute value used to add some blank space in any one of its four sides. You can displace the labels with the [margin](/api/js/ejdiagram#members:nodes-labels-margin "margin") property.
 The following code example illustrates how to align a label based on its `offset`, `horizontalAlignment`, `verticalAlignment` and `margin` values.
 
 {% highlight javascript %}
@@ -321,7 +326,7 @@ $("#diagram").ejDiagram({
 
 ### Text Alignment
 
-The `textAlign` property of label allows you to set how the text should be aligned (left, right, center, or justify) inside the text block. The following codes illustrate how to set textAlign for a label.
+The [textAlign](/api/js/ejdiagram#members:nodes-labels-textalign "textAlign") property of label allows you to set how the text should be aligned (left, right, center, or justify) inside the text block. The following codes illustrate how to set textAlign for a label.
 
 {% highlight javascript %}
 
@@ -388,7 +393,7 @@ $("#diagram").ejDiagram({
 
 ## Wrapping
 
-When text overflows node boundaries, you can control it by using text wrapping. So, it is wrapped into multiple lines. The `wrapping` property of label defines how the text should be wrapped. The following code illustrates how to wrap a text in a node.
+When text overflows node boundaries, you can control it by using text wrapping. So, it is wrapped into multiple lines. The [wrapping](/api/js/ejdiagram#members:nodes-labels-wrapping "wrapping") property of label defines how the text should be wrapped. The following code illustrates how to wrap a text in a node.
 
 {% highlight javascript %}
 
@@ -426,7 +431,7 @@ $("#diagram").ejDiagram({
 
 ## Appearance
 
-You can change the font style of the labels with the font specific properties(`fontSize`,`fontFamily`,`fontColor`.,). The following code illustrates how to customize the appearance of a label.
+You can change the font style of the labels with the font specific properties([fontSize](/api/js/ejdiagram#members:nodes-labels-fontsize "fontSize"), [fontFamily](/api/js/ejdiagram#members:nodes-labels-fontfamily "fontFamily"), [fontColor](/api/js/ejdiagram#members:nodes-labels-fontcolor "fontColor").,). The following code illustrates how to customize the appearance of a label.
 
 {% highlight javascript %}
 
@@ -499,7 +504,7 @@ $("#diagram").ejDiagram({
 
 ## Drag
 
-A **Label** can be displaced from its original position to any preferred location interactively. Dragging is disabled by default. You can enable label dragging with the `constraints` property of node/connector. The following code illustrates how to enable label **dragging**.
+A **Label** can be displaced from its original position to any preferred location interactively. Dragging is disabled by default. You can enable label dragging with the [constraints](/api/js/ejdiagram#members:nodes-constraints "constraints") property of node/connector. The following code illustrates how to enable label **dragging**.
 
 {% highlight javascript %}
 
@@ -558,7 +563,7 @@ $("#diagram").ejDiagram({
 
 ## Rotate
 
-You can rotate the labels to any desired angle. Labels are rotated to the angle that is defined by the `rotateAngle` property of label. The following code illustrates how to rotate a label.
+You can rotate the labels to any desired angle. Labels are rotated to the angle that is defined by the [rotateAngle](/api/js/ejdiagram#members:nodes-rotateangle "rotateAngle") property of label. The following code illustrates how to rotate a label.
 
 {% highlight javascript %}
 
@@ -599,8 +604,9 @@ N> There is no built-in support to rotate labels interactively.
 2. By selecting the item and pressing the **F2** key. 
 
 Double-clicking any label will enables **editing** of that. Double-clicking the node enables first label editing. When the focus of editor is lost, the label for the node is updated.
+When you double click on the node/connector/diagram model, the [doubleClick](/api/js/ejdiagram#events:doubleclick "doubleClick") event gets triggered.
 
-You can programmatically edit the label by changing the `mode` of the label. The following code illustrates how to edit the label programmatically.
+You can programmatically edit the label by changing the [mode](/api/js/ejdiagram#members:nodes-labels-mode "mode") of the label. Also, you can use client side method [startLabelEdit](/api/js/ejdiagram#methods:startlabeledit "startLabelEdit") to edit the label at runtime. The following code illustrates how to edit the label programmatically.
 
 {% highlight javascript %}
 
@@ -611,14 +617,20 @@ var options = {
 	mode: ej.datavisualization.Diagram.LabelEditMode.Edit
 };
 diagram.updateLabel(node.name, node.labels[0], options);
+//edit the label at runtime
+diagram.startLabelEdit(node,node.labels[0]);
 
 {% endhighlight %}
 
 ![](/js/Diagram/Label_images/Label_img27.png)
 
+* Once the text editing is ended and text editor is focused, you can use the below events to do your customization.
+* The diagram client side event [editorFocusChange](/api/js/ejdiagram#events:editorfocuschange "editorFocusChange") gets triggered when editor got focus at the time of node’s label or text node editing.
+* The diagram client side event [textChange](/api/js/ejdiagram#events:textchange "textChange") gets triggered when label editing is ended.
+
 ### Read Only labels
 
-Diagram allows to create read only labels. You have to set the `readOnly` property of label to enable/disable the read only mode. The following code illustrates how to enable **readOnly** mode.
+Diagram allows to create read only labels. You have to set the [readOnly](/api/js/ejdiagram#members:nodes-labels-readonly "readOnly") property of label to enable/disable the read only mode. The following code illustrates how to enable **readOnly** mode.
 
 {% highlight javascript %}
 

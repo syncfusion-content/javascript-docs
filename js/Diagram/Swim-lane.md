@@ -301,6 +301,12 @@ var swimlane = {
 
 ![](/js/Diagram/Swim-lane_images/Swim-lane_img4.png)
 
+## Add lane at runtime
+
+We can add a lane at runtime width client side API method addLane. please refer to the below link whcih shows how to use addLane method in diagram.
+
+[addLane](/api/js/ejdiagram#methods:addlane "addLane"). 
+
 ## Phase
 
 Phases are the sub-processes that are used to break the swimlane into multiple smaller regions.

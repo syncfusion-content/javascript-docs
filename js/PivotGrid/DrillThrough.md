@@ -10,11 +10,11 @@ api: /api/js/ejpivotgrid
 
 # Drill Through
 
-Drill-through retrieves raw items that are used to create a specific cell. To enable drill-through support, you can set the [`enableDrillThrough`](/api/js/ejpivotgrid#members:enableDrillThrough) property to true. Raw items are obtained through the [`drillThrough`](/api/js/ejpivotgrid#events:drillthrough) event by which you can bind them to an external widget for a precise view.
+The drill-through retrieves raw items that are used to create a specific cell. To enable drill-through support, you can set the [`enableDrillThrough`](/api/js/ejpivotgrid#members:enabledrillthrough) property to true. Raw items are obtained through the [`drillThrough`](/api/js/ejpivotgrid#events:drillthrough) event by which you can bind them to an external widget for a precise view.
 
 ## OLAP
 
-N> Drill-through is supported in the PivotGrid only when you configure and enable the drill-through action at the cube.
+N> The drill-through is supported in the pivot grid only when you configure and enable the drill-through action at the cube.
 
 ![](DrillThrough_images/pivotgrid.png)
 
@@ -26,7 +26,7 @@ On clicking the "Hierarchy Selector" button which is displayed below the grid, t
 
 ![](DrillThrough_images/hierarchy_selector.png)
 
-To frame and execute the drill through MDX query internally, drag and drop the respective hierarchies and click “OK”. It provides back the raw items through the "drillThrough" event. In this example, the obtained raw items are bound to the ejGrid widget. Please refer the code sample and screen-shot below:
+To frame and execute the drill through MDX query internally, drag and drop the respective hierarchies and click “OK”. It provides back the raw items through the "drillThrough" event. In this example, the obtained raw items are bound to the ejGrid widget. Please refer the code sample and screenshot below:
 
 ## Client mode
 
@@ -110,7 +110,7 @@ To frame and execute the drill through MDX query internally, drag and drop the r
 
 {% endhighlight %}
 
-When the PivotGrid is rendered in server mode, the below service methods need to be added in the WCF/WebAPI for drill through operation.
+When the pivot grid is rendered in server mode, the below service methods need to be added in the WCF/WebAPI for drill-through operation.
 
 For WebAPI controller, the below methods need to be added.
 
@@ -160,7 +160,7 @@ public Dictionary<string, object> DrillThroughDataTable(string currentReport, st
 
 ## Relational
 
-To enable drill-through support, you can set the [`enableDrillThrough`](/api/js/ejpivotgrid#members:enableDrillThrough) property to true. Raw items are obtained through the [`drillThrough`](/api/js/ejpivotgrid#events:drillthrough) event.
+To enable drill-through support, you can set the [`enableDrillThrough`](/api/js/ejpivotgrid#members:enabledrillthrough) property to true. Raw items are obtained through the [`drillThrough`](/api/js/ejpivotgrid#events:drillthrough) event.
 
 {% highlight html %}
 

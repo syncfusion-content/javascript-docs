@@ -106,7 +106,7 @@ The following code example illustrates how to customize the icon of context menu
 
 ## Context Menu Events
 
-You would be notified with events when you try to open the context menu items(`contextMenuBeforeOpen`) and when you click the menu items(`contextMenuClick`). The following code example illustrates how to define those events.
+You would be notified with events when you try to open the context menu items[contextMenuBeforeOpen](/api/js/ejdiagram#events:contextmenubeforeopen "contextMenuBeforeOpen") and when you click the menu items[contextMenuClick](/api/js/ejdiagram#events:contextmenuclick "contextMenuClick"). The following code example illustrates how to define those events.
 
 {% highlight javascript %}
 
