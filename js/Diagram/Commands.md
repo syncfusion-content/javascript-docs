@@ -25,7 +25,7 @@ There are several commands available in the Diagram as follows.
 
 ## Align
 
-Alignment commands enable you to align the selected objects such as nodes and connectors with respect to the selection boundary.
+Alignment commands enable you to align the selected objects such as nodes and connectors with respect to the selection boundary. Please refer to [align](/api/js/ejdiagram#methods:align "align") commands which shows how to use align methods in diagram.
 
 | Command | Parameter | Description |
 |---|---|---|
@@ -57,7 +57,11 @@ diagram.align("left");
 
 ## Space
 
-Spacing commands enable you to place the selected objects on the page at equal intervals from each other. The selected objects are equally spaced within the selection boundary.
+Spacing commands enable you to place the selected objects on the page at equal intervals from each other. The selected objects are equally spaced within the selection boundary. Please refer to below link which shows how to use spacing commands in diagram.
+
+[spaceAcross](/api/js/ejdiagram#methods:spaceacross "spaceAcross")
+
+[spaceDown](/api/js/ejdiagram#methods:spacedown "spaceDown")
 
 The following code example illustrates how to execute the space commands.
 
@@ -79,7 +83,13 @@ diagram.spaceDown();
 
 ## Sizing
 
-Sizing commands enable to equally size the selected nodes with respect to the first selected object.
+Sizing commands enable to equally size the selected nodes with respect to the first selected object.Please refer to below link which shows how to use Sizing commands in diagram.
+
+[sameSize](/api/js/ejdiagram#methods:samesize "sameSize")
+
+[sameHeight](/api/js/ejdiagram#methods:sameheight "sameHeight")
+
+[sameWidth](/api/js/ejdiagram#methods:samewidth "sameWidth")
 
 The following code example illustrates how to execute the size commands.
 
@@ -103,7 +113,13 @@ diagram.sameWidth();
 
 ## Clipboard
 
-Clipboard commands are used to cut, copy or paste the selected elements.
+Clipboard commands are used to cut, copy or paste the selected elements.Please refer to below link which shows how to use clipboard methods in diagram.
+
+[cut](/api/js/ejdiagram#methods:cut "cut")
+
+[copy](/api/js/ejdiagram#methods:copy "copy")
+
+[paste](/api/js/ejdiagram#methods:paste "paste")
 
 The following code illustrates how to execute the clipboard commands.
 
@@ -124,7 +140,11 @@ diagram.paste();
 
 ## Grouping
 
-**Grouping commands** are used to group/ungroup the selected elements on the Diagram.
+**Grouping commands** are used to group/ungroup the selected elements on the Diagram.Please refer to below link which shows how to use grouping commands in diagram.
+
+[group](/api/js/ejdiagram#methods:group "group")
+
+[ungroup](/api/js/ejdiagram#methods:ungroup "ungroup")
 
 The following code illustrates how to execute the Grouping commands.
 

@@ -88,6 +88,13 @@ diagram.addPorts("node", ports)
 
 To explore the set of properties for defining a port, refer to [Port Properties](/api/js/ejdiagram#members:nodes-ports "Port Properties")
 
+### Remove ports at runtime
+
+You can remove ports at runtime by using client side method removePorts. Please refer to below link which shows how to remove ports at runtime.
+
+[removePorts](/api/js/ejdiagram#methods:removeports "removePorts")
+
+
 ### Update Port at runtime
 
 The client side API [updatePort](/api/js/ejdiagram#methods:updateport "updatePort") is used to update the ports at run time. The following code example illustrates how to change the port properties.
