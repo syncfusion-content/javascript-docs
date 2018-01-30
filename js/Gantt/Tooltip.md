@@ -37,7 +37,7 @@ Dependency Tooltip
 
 ## Taskbar drag tooltip
 
-It is possible to enable or disable the tooltip while performing editing actions on taskbar (left resizing, right resizing, dragging and progress resizing) by using the [enableTaskbarDragTooltip](/api/js/ejgantt#members:enabletaskbardragtooltip) property. By default, this property is set to `true`. The following code example explains this behavior.
+It is possible to enable or disable the tooltip while performing editing actions on taskbar (left resizing, right resizing, dragging and progress resizing) by using the [`enableTaskbarDragTooltip`](/api/js/ejgantt#members:enabletaskbardragtooltip) property. By default, this property is set to `true`. The following code example explains this behavior.
 
 {% highlight javascript %}
 $("#GanttContainer").ejGantt({
@@ -48,7 +48,7 @@ $("#GanttContainer").ejGantt({
 
 ## Cell tooltip
 
-It is possible to enable or disable the TreeGrid cell tooltip in mouse hover by using the [showGridCellTooltip](/api/js/ejgantt#members:showgridcelltooltip) property. By default, this property is set to true. The following code example explains how to enable disable this property.
+It is possible to enable or disable the TreeGrid cell tooltip in mouse hover by using the [`showGridCellTooltip`](/api/js/ejgantt#members:showgridcelltooltip) property. By default, this property is set to `true`. The following code example explains how to enable disable this property.
 
 {% highlight javascript %}
 $("#GanttContainer").ejGantt({
@@ -60,13 +60,13 @@ $("#GanttContainer").ejGantt({
 });
 {% endhighlight %}
 
-This tooltip can be customized using the [cellTooltipTemplate](/api/js/ejgantt#members:celltooltiptemplate) property, which is described briefly in the [customization](/js/gantt/customizations) section.
+This tooltip can be customized using the [`cellTooltipTemplate`](/api/js/ejgantt#members:celltooltiptemplate) property, which is described briefly in the [customization](/js/gantt/customizations) section.
 
 ![](/js/Gantt/Tooltip_images/Tooltip_img1.png)
 
 ## Tree column (Expander column) tooltip 
 
-It is also possible to display tooltip only for expander column by setting the [showGridExpandCellTooltip](/api/js/ejgantt#members:showgridexpandcelltooltip) property. The following code example shows you to enable expander column tooltip in Gantt.
+It is also possible to display tooltip only for expander column by setting the [`showGridExpandCellTooltip`](/api/js/ejgantt#members:showgridexpandcelltooltip) property. The following code example shows you to enable expander column tooltip in Gantt.
 
 {% highlight javascript %}
 $("#GanttContainer").ejGantt({
