@@ -8,23 +8,23 @@ documentation: ug
 api: /api/js/ejpivotgrid
 ---
 
-# Getting Started
+# Getting started
 
-## Creating a simple application with PivotGrid and OLAP datasource (Client Mode)
+## Creating a simple application with pivot grid and OLAP datasource (client mode)
 
-This section explains about how to populate a simple PivotGrid with OLAP data completely on the client-side.
+This section explains about how to populate a simple pivot grid with [`OLAP`](/api/js/ejpivotgrid#members:analysismode) data completely on the [`client-side`](/api/js/ejpivotgrid#members:operationalmode).
 
 ### Scripts and CSS references
 
-Create a HTML page and add scripts and style sheets that are mandatorily required to render a PivotGrid widget which are listed below in an appropriate order.
+Create a HTML page and add scripts and style sheets that are required to render a pivot grid widget which are listed below in an appropriate order.
 
 1. ej.web.all.min.css
 2. jQuery-3.0.0.min.js
 3. ej.web.all.min.js
 
-### Initialize PivotGrid
+### Initialize pivot grid
 
-Place a "div" tag in the HTML page which acts as a container for the PivotGrid widget. Then, initialize the widget using the "ejPivotGrid" method.
+Place a "div" tag in the HTML page which acts as a container for the pivot grid widget. Then, initialize the widget using the "ejPivotGrid" method.
 
 {% highlight html %}
 
@@ -55,9 +55,9 @@ Place a "div" tag in the HTML page which acts as a container for the PivotGrid w
 
 {% endhighlight %}
 
-### Populate PivotGrid with DataSource
+### Populate pivot grid with data source
 
-Initialize the OLAP datasource for the PivotGrid widget as shown below:
+Initialize the [`OLAP`](/api/js/ejpivotgrid#members:analysismode) data source for the pivot grid widget as shown below:
 
 {% highlight html %}
 
@@ -97,31 +97,297 @@ Initialize the OLAP datasource for the PivotGrid widget as shown below:
 
 {% endhighlight %}
 
-The above code will generate a simple PivotGrid with "Customer Geography" field in column, "Fiscal" field in row, and "Internet Sales Amount" field in Value section.
+The above code will generate a simple pivot grid with "Customer Geography" field in column, "Fiscal" field in row, and "Internet Sales Amount" field in the value section.
 
 ![](Getting-Started_images/OlapClientside.png) 
 
-## Creating a simple application with PivotGrid and OLAP datasource (server mode)
+The following table will explain the [`OLAP`](/api/js/ejpivotgrid#members:analysismode) [`datasource`](/api/js/ejpivotgrid#members:datasource) properties at [`client-side`](/api/js/ejpivotgrid#members:operationalmode) in detail:
 
-This section covers the information required to create a simple PivotGrid that is bound to the OLAP datasource.
+<table>
+    <tr>
+        <th>
+            Properties
+        </th>
+        <th>
+            Description
+        </th>
+    </tr>
+    <tr>
+    <td>
+        {{'[`cube`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-cube "cube")'| markdownify }}
+    </td>
+    <td>
+        Contains the respective cube name as string type in the OLAP database.
+    </td>
+    </tr>
+    <tr>
+    <td>
+        {{'[`sourceInfo`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-sourceinfo "sourceInfo")'| markdownify }}
+    </td>
+    <td>
+        To set the data source name to fetch the data.
+    </td>
+    </tr>
+    <tr>
+    <td>
+        {{'[`providerName`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-providername "providerName")'| markdownify }}
+    </td>
+    <td>
+        Sets the provider name for PivotGrid to identify whether the provider is SSAS or Mondrian.
+    </td>
+    </tr>
+    <tr>
+    <td>
+        {{'[`data`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-data "data")'| markdownify }}
+    </td>
+    <td>
+        Provides the raw data source for the PivotGrid.
+    </td>
+    </tr>
+    <tr>
+    <td>
+        {{'[`catalog`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-catalog "catalog")'| markdownify }}
+    </td>
+    <td>
+        In connection with an OLAP database, this property contains the database name as string to fetch the data from the given connection string.
+    </td>
+    </tr>
+    <tr>
+    <td>
+        {{'[`enableAdvancedFilter`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-enableadvancedfilter "enableAdvancedFilter")'| markdownify }}
+    </td>
+    <td>
+        Allows you to filter the members (by its name and values) through advanced filtering.</td>
+    </tr>
+    <tr>
+    <td>
+        {{'[`reportName`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-reportName "reportName")'| markdownify }}
+    </td>
+    <td>
+        Sets a name to the report that is bound to the control.</td>
+    </tr>
+    <tr>
+        <td>
+            {{'[`columns`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-columns "columns")'| markdownify }}
+        </td>
+        <td>
+            Lists out the items to be arranged in the columns section of the PivotGrid.
+             <table class="params">
+            <thead>
+            <tr>
+            <th>Properties</th>
+            <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td>{{'[`fieldName`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-columns-fieldname "fieldName")'| markdownify }} </td>
+            <td>Allows you to bind the item by using its unique name as field name.</td>
+            </tr>
+            <tr>
+            <td>{{'[`fieldCaption`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-columns-fieldcaption "fieldCaption")'| markdownify }}</td>
+            <td>Allows you to set the display caption for an item.</td>
+            </tr>
+            <tr>
+            <td>{{'[`isNamedSets`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-columns-isnamedsets "isNamedSets")'| markdownify }}</td>
+            <td>Allows you to indicate whether the added item is a named set or not.</td>
+            </tr>
+            <tr>
+            <td>{{'[`advancedFilter`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-columns-advancedfilter "advancedFilter")'| markdownify }}</td>
+            <td>Allows you to filter the members (by its name and values) through advanced filtering.
+            <table class="params">
+            <thead>
+            <tr>
+            <th>Properties</th>
+            <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td>
+                {{'[`name`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-columns-advancedfilter-name "name")'| markdownify }} </td>
+            <td>Allows you to provide the level unique name to perform the advanced filtering.</td>
+            </tr>
+            <tr>
+            <td>
+                {{'[`labelFilterOperator`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-columns-advancedfilter-labelfilteroperator "labelFilterOperator")'| markdownify }} </td>
+            <td>Allows you to set the operator to perform the label filtering.</td>
+            </tr>
+            <tr>
+            <td>
+                {{'[`valueFilterOperator`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-columns-advancedfilter-valuefilteroperator "valueFilterOperator")'| markdownify }} </td>
+            <td>Allows you to set the operator to perform the value filtering.</td>
+            </tr>
+            <tr>
+            <td>
+                {{'[`advancedFilterType`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-columns-advancedfilter-advancedfiltertype "advancedFilterType")'| markdownify }} </td>
+            <td>Allows you to set the filtering type while performing the advanced filtering.</td>
+            </tr>
+            <tr>
+            <td>
+                {{'[`measure`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-columns-advancedfilter-measure "measure")'| markdownify }} </td>
+            <td>In value filtering, this property contains the measure name to which the filter is applied.</td>
+            </tr>
+            <tr>
+            <td>
+                {{'[`values`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-columns-advancedfilter-values "values")'| markdownify }} </td>
+            <td>Allows you to hold the filter operand values in the advanced filtering.</td>
+            </tr>
+            </td>
+            </tr>
+            </tbody>
+            </table>
+            </td>
+            </tr>
+            </tbody>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            {{'[`rows`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-rows "rows")'| markdownify }}
+        </td>
+        <td>
+            Lists out the items to be arranged in the rows section of PivotGrid.
+             <table class="params">
+            <thead>
+            <tr>
+            <th>Properties</th>
+            <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td>{{'[`fieldName`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-rows-fieldname "fieldName")'| markdownify }} </td>
+            <td>Allows you to bind the item by using its unique name as field name.</td>
+            </tr>
+            <tr>
+            <td>{{'[`fieldCaption`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-rows-fieldcaption "fieldCaption")'| markdownify }}</td>
+            <td>Allows you to set the display caption for an item.</td>
+            </tr>
+            <tr>
+            <td>{{'[`isNamedSets`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-rows-isnamedsets "isNamedSets")'| markdownify }}</td>
+            <td>Allows you to indicate whether the added item is a named set or not.</td>
+            </tr>
+            <tr>
+            <td>{{'[`advancedFilter`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-rows-advancedfilter "advancedFilter")'| markdownify }}</td>
+            <td>Allows you to filter the members (by its name and values) through advanced filtering.
+            <table class="params">
+            <thead>
+            <tr>
+            <th>Properties</th>
+            <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td>
+                {{'[`name`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-rows-advancedfilter-name "name")'| markdownify }} </td>
+            <td>Allows you to provide the level unique name to perform the advanced filtering.</td>
+            </tr>
+            <tr>
+            <td>
+                {{'[`labelFilterOperator`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-rows-advancedfilter-labelfilteroperator "labelFilterOperator")'| markdownify }} </td>
+            <td>Allows you to set the operator to perform the label filtering.</td>
+            </tr>
+            <tr>
+            <td>
+                {{'[`valueFilterOperator`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-rows-advancedfilter-valuefilteroperator "valueFilterOperator")'| markdownify }} </td>
+            <td>Allows you to set the operator to perform the value filtering.</td>
+            </tr>
+            <tr>
+            <td>
+                {{'[`advancedFilterType`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-rows-advancedfilter-advancedfiltertype "advancedFilterType")'| markdownify }} </td>
+            <td>Allows you to set the filtering type while performing the advanced filtering.</td>
+            </tr>
+            <tr>
+            <td>
+                {{'[`measure`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-rows-advancedfilter-measure "measure")'| markdownify }} </td>
+            <td>In value filtering, this property contains the measure name to which the filter is applied.</td>
+            </tr>
+            <tr>
+            <td>
+                {{'[`values`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-rows-advancedfilter-values "values")'| markdownify }} </td>
+            <td>Allows you to hold the filter operand values in the advanced filtering.</td>
+            </tr>
+            </td>
+            </tr>
+            </tbody>
+            </table>
+            </td>
+            </tr>
+            </tbody>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            {{'[`values`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-values "values")'| markdownify }}
+        </td>
+        <td>
+            Lists out the items to be arranged in the rows section of PivotGrid.
+            <table class="params">
+            <thead>
+            <tr>
+            <th>Properties</th>
+            <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td>{{'[`axis`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-values-axis "axis")'| markdownify }} </td>
+            <td>Allows you to set the axis name to place measures items.</td>
+            </tr>
+            <tr>
+            <td>{{'[`measures`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-values-measures "measures")'| markdownify }}</td>
+            <td>This holds the list of unique names of measures to bind them from the OLAP cube.
+            <table class="params">
+            <thead>
+            <tr>
+            <th>Property</th>
+            <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td>
+                {{'[`fieldName`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-values-measures-fieldName "fieldName")'| markdownify }} </td>
+            <td>Allows you to bind the measure from the OLAP datasource by using its unique name as field name.</td>
+            </tr>
+            </td>
+            </tr>
+            </tbody>
+            </table>
+            </td>
+            </tr>
+            </tbody>
+            </table>
+        </td>
+        </tr>
 
-N> This section illustrates creating a simple Web Application through the Visual Studio IDE since PivotGrid is a server-side control with .NET dependency. The Web Application contains a HTML page and a service that would transfer data to server-side, process, and return back the data to client-side for control re-rendering. The service utilized for communication could be either WCF or WebAPI based on user requirement. Here, both WCF and WebAPI have been illustrated for user convenience.
+</table>
+
+## Creating a simple application with pivot grid and OLAP data source (server mode)
+
+This section covers the information required to create a simple pivot grid that is bound to the [`OLAP`](/api/js/ejpivotgrid#members:analysismode) datasource.
+
+N> This section illustrates creating a simple web application through the Visual Studio IDE, since the pivot grid is a [`server-side`](/api/js/ejpivotgrid#members:operationalmode) control with .NET dependency. The web application contains a HTML page and a service that will transfer data to the [`server-side`](/api/js/ejpivotgrid#members:operationalmode), process it, and return it back to the [`client-side`](/api/js/ejpivotgrid#members:operationalmode) for control re-rendering. The service utilized for communication can be either WCF or WebAPI based on user's requirement. Here, both WCF and WebAPI have been illustrated for user convenience.
 
 ### Project initialization
 Create a new **ASP.NET Empty Web Application** by using the Visual Studio IDE and name the project as **“PivotGridDemo”**.
 
-Next, you should add a HTML page. To add a HTML page in your Web Application, right-click the project in the solution explorer and select **Add > New Item.** In the **Add New Item** window, select **HTML Page** and name it as **“GettingStarted.html”**, and then click **Add.**
+Next, you should add an HTML page. To add an HTML page in your web application, right-click the project in the solution explorer and select **Add > New Item.** In the **Add New Item** window, select **HTML Page** and name it as **“GettingStarted.html”**, and then click **Add.**
 
-You can set “GettingStarted.html” as start-up page by right-clicking the “GettingStarted.html” page and selecting the **“Set As Start Page”**.
+You can set “GettingStarted.html” page as start-up page by right-clicking the “GettingStarted.html” page and selecting the **“Set As Start Page”**.
 
 ### Scripts and CSS initialization
-The scripts and style sheets that are mandatorily required to render a PivotGrid widget inside a HTML page are listed below in an appropriate order.
+The scripts and style sheets that are required to render the pivot grid widget in the HTML page are listed below in an appropriate order.
 
 1. ej.web.all.min.css
 2. jQuery-3.0.0.min.js
 3. ej.web.all.min.js
 
-The scripts and style sheets listed above could be found in any of the following locations:
+The scripts and style sheets listed above can be found in any of the following locations:
 
 Local disk: [Click here](https://help.syncfusion.com/js/installation-and-deployment) to know more about script and style sheets installed in the local machine.
 
@@ -130,7 +396,7 @@ CDN link: [Click here](https://help.syncfusion.com/js/cdn) to know more about sc
 NuGet package: [Click here](https://help.syncfusion.com/js/installation-and-deployment#configuring-syncfusion-nuget-packages) to know more about script and style sheets available in the NuGet package.
 
 ### Control initialization
-To initialize a PivotGrid widget, you can define a “div” tag with an appropriate “id” attribute which acts as a container for the PivotGrid widget. Then, you can initialize the widget by using the `ejPivotGrid` method.
+To initialize a pivot grid widget, you can define a “div” tag with an appropriate “ID” attribute which acts as a container for the pivot grid widget. Then, you can initialize the widget by using the `ejPivotGrid` method.
     
 {% highlight html %}
 
@@ -167,21 +433,21 @@ To initialize a PivotGrid widget, you can define a “div” tag with an appropr
 
 {% endhighlight %}
 
-The “url” property in the PivotGrid widget, points the service endpoint where the data are processed and fetched in the form of JSON. The service used for the PivotGrid widget as endpoint are the WCF and WebAPI.
+The [`url`](/api/js/ejpivotgrid#members:url) property in the pivot grid widget, points the service endpoint where the data are processed and fetched in the form of JSON. The service used for the pivot grid widget as endpoint are the WCF and WebAPI.
 
-N> The above "GettingStarted.html" contains WebAPI URL, which is **“/Olap”**. Suppose, if you are using the WCF service then the URL would look like **"/OlapService.svc"**.
+N> The above "GettingStarted.html" contains WebAPI URL, which is **“/Olap”**. If you are using the WCF service then the URL will look like **"/OlapService.svc"**.
 
 ### WebAPI
 
 **Adding a WebAPI controller**
 
-To add a WebAPI controller in your existing Web Application, right-click the project in the solution explorer and select **Add > New Item.** In the **Add New Item** window, select **WebAPI Controller Class** and name it as “OlapController.cs”, and then click **Add.**
+To add a WebAPI controller in your existing web application, right-click the project in the solution explorer and select **Add > New Item.** In the **Add New Item** window, select **WebAPI Controller Class** and name it “OlapController.cs”, and then click **Add.**
 
-Now, WebAPI controller is added to your application successfully which in-turn comprise of the following file. The utilization of this file will be explained in the following sections:
+Now, the WebAPI controller is added to your application, which, in turn, comprise the following file. The utilization of this file will be explained in the following sections:
  
 * OlapController.cs
 
-N> While adding WebAPI Controller Class, name it with the suffix “Controller” that is mandatory. For example, in demo the controller is named as “OlapController”.
+N> While adding the WebAPI Controller Class, add the mandatory suffix “Controller” that is . For example, in the demo, the controller is named “OlapController”.
 
 Remove all the existing methods such as “Get”, “Post”, “Put”, and “Delete” that are present inside the `OlapController.cs` file.
 
@@ -199,11 +465,11 @@ namespace PivotGridDemo
 
 **List of dependency libraries**
 
-You can add the below mentioned dependency libraries to your Web Application. These libraries could be found in GAC (Global Assembly Cache).
+You can add the below mentioned dependency libraries to your web application. These libraries can be found in the GAC (Global Assembly Cache).
 
-To add them to your Web Application, right-click the **References** in the solution explorer and select **Add Reference.** Now, in the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries are found.
+To add them to your web application, right-click **References** in the solution explorer and select **Add Reference.** In the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries are found.
 
-N> If you have installed any version of SQL Server Analysis Service (SSAS) or Microsoft ADOMD.NET utility, then the location of Microsoft.AnalysisServices.AdomdClient library is [system drive:\Program Files (x86)\Microsoft.NET\ADOMD.NET]. And if you have installed any version of Essential Studio, then the location of Syncfusion libraries is [system drive:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\Assemblies].
+N> If you have installed any version of SQL Server Analysis Service (SSAS) or Microsoft ADOMD.NET utility, then the location of the Microsoft.AnalysisServices.AdomdClient library is [system drive:\Program Files (x86)\Microsoft.NET\ADOMD.NET]. If you have installed any version of Essential Studio, then the location of Syncfusion libraries is [system drive:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\Assemblies].
 
 * Microsoft.AnalysisServices.AdomdClient
 * Syncfusion.Compression.Base
@@ -220,7 +486,7 @@ N> If you have installed any version of SQL Server Analysis Service (SSAS) or Mi
 
 **List of Namespaces**
 
-Following are the list of namespaces to be added on top of the main class inside the `OlapController.cs` file.
+Following are the list of namespaces to be added on top of the main class in the `OlapController.cs` file.
 
 {% highlight c# %}
 
@@ -251,7 +517,7 @@ namespace PivotGridDemo
 
 **Datasource initialization**
 
-Now, the connection string to connect OLAP Cube, PivotGrid, and JavaScriptSerializer instances are created immediately inside the main class of the `OlapController.cs` file.
+Now, the connection string to connect OLAP cube, pivot grid, and JavaScriptSerializer instances is created immediately in the main class of the `OlapController.cs` file.
 
 {% highlight c# %}
 
@@ -272,7 +538,7 @@ namespace PivotGridDemo
 
 **Service methods in WebAPI controller**
 
-You should define the service methods inside the OlapController class. To define, found the `OlapController.cs` file, which is created while adding WebAPI controller Class from the Visual Studio to your Web Application.
+You can define the service methods in the OlapController class. To do so, find the `OlapController.cs` file, which was created while adding the WebAPI controller Class from the Visual Studio to your web application.
  
 {% highlight c# %}
 
@@ -502,9 +768,11 @@ namespace PivotGridDemo
 
 {% endhighlight %}
 
+N> Here, [`customObject`](/api/js/ejpivotgrid#members:customobject) is utilized to pass additional information between the client-end and the service-end.
+
 **Configure routing in global application class**
 
-To add a Global.asax in your existing Web Application, right-click the project in the solution explorer and select **Add > New Item.** In the **Add New Item** window, select **Global Application Class** and name it as “Global.asax”, and then click **Add.**
+To add a Global.asax in your existing web application, right-click the project in the solution explorer and select **Add > New Item.** In the **Add New Item** window, select **Global Application Class** and name it “Global.asax”, and then click **Add.**
 
 After adding the **Global.asax** file, immediately add the namespace **“using System.Web.Http;”**, and then you can configure the routing as shown in the following code example:
 
@@ -524,12 +792,12 @@ public class Global : System.Web.HttpApplication
 
 {% endhighlight %}
 
-Now, PivotGrid will be rendered with Internet Sales Amount over a period of fiscal years across different customer geographic locations.
+The pivot grid will be rendered with internet sales amount over a period of fiscal years across different customer geographic locations.
 
 ![](Getting-Started_images/olapwebapi.png)
 
 ### WCF
-This section demonstrates the utilization of WCF service as endpoint binding the OLAP datasource to a simple PivotGrid. For more details on this topic, [click here](https://help.syncfusion.com/js/pivotgrid/olap-connectivity#wcf).
+This section demonstrates the utilization of the WCF service as an endpoint binding the [`OLAP`](/api/js/ejpivotgrid#members:analysismode) data source to the simple pivot grid. For more details on this topic, [click here](https://help.syncfusion.com/js/pivotgrid/olap-connectivity#wcf).
 
 
 
