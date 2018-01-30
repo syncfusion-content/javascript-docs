@@ -53,6 +53,7 @@ $("#DiagramContent").ejDiagram({
 
 ![](/js/Diagram/Connector_images/Connector_img2.png)
 
+
 ### Add connector at run time
 
 Connectors can be added at runtime with the client side method, [add](/api/js/ejdiagram#methods:add "add"). The following code example illustrates how to add connector at runtime.
@@ -78,6 +79,8 @@ diagram.add(connector);
 {% endhighlight %}
 
 ![](/js/Diagram/Connector_images/Connector_img3.png)
+
+When the connector is either added or removed in diagram, the [connectorCollectionChange](/api/js/ejdiagram#events:connectorcollectionchange "connectorCollectionChange") gets triggered.
 
 ### Connectors from palette
 
@@ -251,6 +254,7 @@ connectors.push(connector);
 {% endhighlight %}
 
 ![](/js/Diagram/Connector_images/connector_img6.png)
+
 
 The `point` property of straight segment allows you to define the end point of it. The following code example illustrates how to define the end point of a straight segment.
 

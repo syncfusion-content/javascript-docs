@@ -55,6 +55,7 @@ $("#diagram").ejDiagram({
 
 ![](/js/Diagram/Node_images/Node_img2.png)
 
+
 ### Add node at runtime
 
 Nodes can be added at runtime by using public method, [add](/api/js/ejdiagram#methods:add "add"). The following code illustrates how to add a node.
@@ -82,9 +83,17 @@ diagram.add(node);
 
 ![](/js/Diagram/Node_images/Node_img3.png)
 
+When a node is either added or removed in diagram, the [nodeCollectionChange](/api/js/ejdiagram#events:nodecollectionchange "nodeCollectionChange") event raised.
+
 ### Add node from palette
 
 Nodes can be predefined and added to palette and can be dropped into the Diagram when needed. For more information about adding nodes from symbol palette, refer to [Symbol Palette](/js/Diagram/Symbol-Palette "Symbol Palette").
+
+* Once we drag a node/connector from the palette to diagram, you can use the below events to do your customization.
+* When a symbol is dragged into diagram from symbol palette, the [dragEnter](/api/js/ejdiagram#events:dragenter "dragEnter") event gets triggered. 
+* When a symbol is dragged over diagram,the [dragOver](/api/js/ejdiagram#events:dragover "dragOver") event gets triggered.
+* When a symbol is dragged and dropped from symbol palette to diagram area, the [drop](/api/js/ejdiagram#events:drop "drop") event gets triggered.
+* When a symbol is dragged outside of the diagram, the [dragLeave](/api/js/ejdiagram#events:dragleave "dragLeave") event gets triggered.
 
 ### Create node through data source
 
@@ -108,6 +117,7 @@ diagram.updateNode("nodeName", {
 })
 {% endhighlight %}
 
+When the node/connector properties are changed at runtime, the [propertyChange](/api/js/ejdiagram#events:propertychange "propertyChange") event gets triggered.
 
 ## Position
 
@@ -336,6 +346,7 @@ $("#diagram").ejDiagram({
 ## Interaction
 
 Diagram provides support to drag, resize, or rotate the node interactively. For more information about editing a node at runtime, refer to [Edit Nodes](/js/Diagram/Interaction "Interaction").
+
 
 ## Constraints
 
