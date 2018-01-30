@@ -12,7 +12,7 @@ api: /api/js/ejpivotgrid
 
 ## Creating a simple application with PivotGrid and Relational datasource (Client Mode)
 
-This section explains about the steps required to populate a simple PivotGrid with relational data completely on the client-side.
+This section explains about the steps required to populate a simple PivotGrid with [`relational`](/api/js/ejpivotgrid#members:analysismode) data completely on the [`client-side`](/api/js/ejpivotgrid#members:operationalmode).
 
 ### Scripts and CSS references
 
@@ -151,6 +151,280 @@ Now, set the JSON data to the **"data"** property that is present inside the **"
 The above code will generate a simple PivotGrid with "Country" field in row, "Product" field in column, and "Amount" field in value section.
 
 {% include image.html url="/js/PivotGrid/Getting-Started_images/purejs.png" %}
+
+The following table will explain the [`relational`](/api/js/ejpivotgrid#members:analysismode) [`datasource`](/api/js/ejpivotgrid#members:datasource) properties at [`client-side`](/api/js/ejpivotgrid#members:operationalmode) in detail:
+
+<table>
+    <tr>
+        <th>
+            Properties
+        </th>
+        <th>
+            Description
+        </th>
+    </tr>
+    <tr>
+        <td>
+            {{'[`columns`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-columns "columns")'| markdownify }}
+        </td>
+        <td>
+            Lists out the items to be arranged in the columns section of the PivotGrid.
+             <table class="params">
+            <thead>
+            <tr>
+            <th>Properties</th>
+            <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td>{{'[`fieldName`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-columns-fieldname "fieldName")'| markdownify }} </td>
+            <td>Allows you to bind the item by using its unique name as field name.</td>
+            </tr>
+            <tr>
+            <td>{{'[`fieldCaption`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-columns-fieldcaption "fieldCaption")'| markdownify }}</td>
+            <td>Allows you to set the display caption for an item.</td>
+            </tr>
+            <tr>
+            <td>{{'[`showSubTotal`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-columns-showsubtotal "showSubTotal")'| markdownify }}</td>
+            <td>Shows/hides the sub-total of the field in PivotGrid.</td>
+            </tr>
+            <tr>
+            <td>{{'[`format`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-columns-format "format")'| markdownify }}</td>
+            <td>Allows you to set the format for column headers.</td>
+            </tr>
+            <tr>
+            <td>{{'[`formatString`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-columns-formatstring "formatString")'| markdownify }}</td>
+            <td>This property is set to display the formatted values with format types in the PivotGrid.</td>
+            </tr>
+            <tr>
+            <td>{{'[`cssClass`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-columns-cssclass "cssClass")'| markdownify }}</td>
+            <td>Allows you to set the custom theme for column headers.</td>
+            </tr>
+            <tr>
+            <td>{{'[`delimiter`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-columns-delimiter "delimiter")'| markdownify }}</td>
+            <td>Allows you to set the delimiter for date type format in the **formatString**. This is applicable for the **groupByDate** of row/column headers.</td>
+            </tr>
+            <tr>
+            <td>{{'[`sortOrder`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-columns-sortorder "sortOrder")'| markdownify }}</td>
+            <td>Allows you to set the sorting order of members of the field.</td>
+            </tr>
+            <tr>
+            <td>{{'[`drilledItems`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-columns-drilleditems "drilledItems")'| markdownify }}</td>
+            <td>Contains the list of members need to be drilled down by default in the field.</td>
+            </tr>
+            <tr>
+            <td>{{'[`filterItems`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-columns-filteritems "filterItems")'| markdownify }}</td>
+            <td>Applies the filter to field members.
+            <table class="params">
+            <thead>
+            <tr>
+            <th>Properties</th>
+            <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td>
+                {{'[`filterType`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-columns-filteritems-filtertype "filterType")'| markdownify }} </td>
+            <td>Sets the type of filter to include/exclude the mentioned values.</td>
+            </tr>
+            <tr>
+            <td>
+                {{'[`values`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-columns-filteritems-values "values")'| markdownify }} </td>
+            <td>Contains the collection of items to be included/excluded among the field members.</td>
+            </tr>
+            </tbody>
+            </table>
+            </td>
+            </tr>
+            </tbody>
+            </table>
+            </td>
+            </tr>
+            <tr>
+        <td>
+            {{'[`rows`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-rows "rows")'| markdownify }}
+        </td>
+        <td>
+            Lists out the items to be arranged in the rows section of the PivotGrid.
+             <table class="params">
+            <thead>
+            <tr>
+            <th>Properties</th>
+            <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td>{{'[`fieldName`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-rows-fieldname "fieldName")'| markdownify }} </td>
+            <td>Allows you to bind the item by using its unique name as field name.</td>
+            </tr>
+            <tr>
+            <td>{{'[`fieldCaption`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-rows-fieldcaption "fieldCaption")'| markdownify }}</td>
+            <td>Allows you to set the display caption for an item.</td>
+            </tr>
+            <tr>
+            <td>{{'[`showSubTotal`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-rows-showsubtotal "showSubTotal")'| markdownify }}</td>
+            <td>Shows/hides the sub-total of the field in PivotGrid.</td>
+            </tr>
+            <tr>
+            <td>{{'[`format`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-rows-format "format")'| markdownify }}</td>
+            <td>Allows you to set the format for column headers.</td>
+            </tr>
+            <tr>
+            <td>{{'[`formatString`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-rows-formatstring "formatString")'| markdownify }}</td>
+            <td>This property is set to display the formatted values with format types in the PivotGrid.</td>
+            </tr>
+            <tr>
+            <td>{{'[`cssClass`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-rows-cssclass "cssClass")'| markdownify }}</td>
+            <td>Allows you to set the custom theme for rows headers.</td>
+            </tr>
+            <tr>
+            <td>{{'[`delimiter`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-rows-delimiter "delimiter")'| markdownify }}</td>
+            <td>Allows you to set the delimiter for date type format in the **formatString**. This is applicable for the **groupByDate** of row/column headers.</td>
+            </tr>
+            <tr>
+            <td>{{'[`sortOrder`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-rows-sortorder "sortOrder")'| markdownify }}</td>
+            <td>Allows you to set the sorting order of members of the field.</td>
+            </tr>
+            <tr>
+            <td>{{'[`drilledItems`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-rows-drilleditems "drilledItems")'| markdownify }}</td>
+            <td>Contains the list of members need to be drilled down by default in the field.</td>
+            </tr>
+            <tr>
+            <td>{{'[`filterItems`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-rows-filteritems "filterItems")'| markdownify }}</td>
+            <td>Applies the filter to field members.
+            <table class="params">
+            <thead>
+            <tr>
+            <th>Properties</th>
+            <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td>
+                {{'[`filterType`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-rows-filteritems-filtertype "filterType")'| markdownify }} </td>
+            <td>Sets the type of filter to include/exclude the mentioned values.</td>
+            </tr>
+            <tr>
+            <td>
+                {{'[`values`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-rows-filteritems-values "values")'| markdownify }} </td>
+            <td>Contains the collection of items to be included/excluded among the field members.</td>
+            </tr>
+            </tbody>
+            </table>
+            </td>
+            </tr>
+            </tbody>
+            </table>
+            </td>
+            </tr>
+            <tr>
+        <td>
+            {{'[`values`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-values "values")'| markdownify }}
+        </td>
+        <td>
+            Lists out the items that support calculation in the PivotGrid.
+             <table class="params">
+            <thead>
+            <tr>
+            <th>Properties</th>
+            <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td>{{'[`fieldName`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-values-fieldname "fieldName")'| markdownify }} </td>
+            <td>Allows you to bind the item by using its unique name as field name for the relational datasource.</td>
+            </tr>
+            <tr>
+            <td>{{'[`fieldCaption`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-values-fieldcaption "fieldCaption")'| markdownify }}</td>
+            <td>Allows you to set the display caption for the item in the relational datasource.</td>
+            </tr>
+            <tr>
+            <td>{{'[`isCalculatedField`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-values-iscalculatedfield "isCalculatedField")'| markdownify }}</td>
+            <td>Indicates whether the field is a calculated field with the relational datasource or not.</td>
+            </tr>
+            <tr>
+            <td>{{'[`summaryType`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-values-summarytype "summaryType")'| markdownify }}</td>
+            <td>Allows to set the type of PivotGrid summary calculation in the value field.</td>
+            </tr>
+            <tr>
+            <td>{{'[`format`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-values-format "format")'| markdownify }}</td>
+            <td>Allows to set the format for values.</td>
+            </tr>
+            <tr>
+            <td>{{'[`formatString`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-values-formatstring "formatString")'| markdownify }}</td>
+            <td>This property is set to display the formatted values with format types in the PivotGrid.</td>
+            </tr>
+            <tr>
+            <td>{{'[`formula`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-values-formula "formula")'| markdownify }}</td>
+            <td>Allows to set the formula for calculation of values for calculated members.</td>
+            </tr>
+            <tr>
+            <td>{{'[`cssClass`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-values-cssclass "cssClass")'| markdownify }}</td>
+            <td>Allows to set the custom theme for values.</td>
+            </tr>
+            </tbody>
+            </table>
+            </td>
+            </tr>
+            <tr>
+        <td>
+            {{'[`filters`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-filters "filters")'| markdownify }}
+        </td>
+        <td>
+            Lists out the items which supports filtering of values without displaying the members in UI of the PivotGrid.
+            <table class="params">
+            <thead>
+            <tr>
+            <th>Properties</th>
+            <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td>{{'[`fieldName`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-filters-fieldname "fieldName")'| markdownify }} </td>
+            <td>Allows you to bind the item by using its unique name as field name.</td>
+            </tr>
+            <tr>
+            <td>{{'[`fieldCaption`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-filters-fieldcaption "fieldCaption")'| markdownify }} </td>
+            <td>Allows you to set the display name for the item.</td>
+            </tr>
+            <tr>
+            <td>{{'[`filterItems`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-filters-filteritems "filterItems")'| markdownify }}</td>
+            <td>Applies the filter to field members.
+            <table class="params">
+            <thead>
+            <tr>
+            <th>Property</th>
+            <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td>
+                {{'[`filterType`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-filters-filteritems-filtertype "filterType")'| markdownify }} </td>
+            <td>Sets the type of filter to include/exclude the mentioned values.</td>
+            </tr>
+            <tr>
+            <td>
+                {{'[`values`](https://help.syncfusion.com/api/js/ejpivotgrid#members:datasource-filters-filteritems-values "values")'| markdownify }} </td>
+            <td>Sets the type of filter to include/exclude the mentioned values.</td>
+            </tr>
+            </td>
+            </tr>
+            </tbody>
+            </table>
+            </td>
+            </tr>
+            </tbody>
+            </table>
+        </td>
+        </tr>
+            </table>
 
 ### Apply sorting
 
@@ -317,9 +591,9 @@ $(function () {
 
 ## Creating a simple application with PivotGrid and relational datasource (server mode)
 
-This section covers the information required to create a simple PivotGrid that is bound to the relational datasource.
+This section covers the information required to create a simple PivotGrid that is bound to the [`relational`](/api/js/ejpivotgrid#members:analysismode) datasource.
 
-N> This section illustrates creating a simple Web Application through the Visual Studio IDE since the PivotGrid is a server-side control with .NET dependency. The Web Application contains a HTML page and a service that would transfer data to server-side, process, and return back the data to client-side for control re-rendering. The service utilized for communicate could be either WCF or WebAPI based on user requirement. Here, both WCF and WebAPI have been illustrated for user convenience.
+N> This section illustrates creating a simple Web Application through the Visual Studio IDE since the PivotGrid is a [`server-side`](/api/js/ejpivotgrid#members:operationalmode) control with .NET dependency. The Web Application contains a HTML page and a service that would transfer data to [`server-side`](/api/js/ejpivotgrid#members:operationalmode), process, and return back the data to [`client-side`](/api/js/ejpivotgrid#members:operationalmode) for control re-rendering. The service utilized for communicate could be either WCF or WebAPI based on user requirement. Here, both WCF and WebAPI have been illustrated for user convenience.
 
 ### Project initialization
 
@@ -803,9 +1077,11 @@ Now, PivotGrid is rendered with sales amount over a set of products across diffe
  
 {% include image.html url="/js/PivotGrid/Getting-Started_images/relaionalwebapi.png" %}
 
+N> Here, [`customObject`](/api/js/ejpivotgrid#members:customobject) is utilized to pass additional information between the client-end and the service-end.
+
 ### WCF
 
-This section demonstrates the utilization of WCF service as endpoint binding relational datasource to a simple PivotGrid. For more details on this topic, [click here](https://help.syncfusion.com/js/pivotgrid/relational-connectivity#wcf-1).
+This section demonstrates the utilization of WCF service as endpoint binding [`relational`](/api/js/ejpivotgrid#members:analysismode) datasource to a simple PivotGrid. For more details on this topic, [click here](https://help.syncfusion.com/js/pivotgrid/relational-connectivity#wcf-1).
   
 
 

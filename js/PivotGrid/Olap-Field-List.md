@@ -8,12 +8,12 @@ documentation: ug
 api: /api/js/ejpivotgrid
 ---
 
-# PivotTable Field List
+# PivotTable field list
 
 ## Initialization  
-Field list, also known as Pivot Schema Designer, allows you to add, rearrange, filter, and remove fields to show the data in PivotGrid as exactly you want.
+The field list, also known as Pivot Schema Designer, allows you to add, rearrange, filter, and remove fields to show the data in the pivot grid as exactly you want.
 
-Based on the datasource and OLAP bound to the PivotGrid control, the PivotTable field list will be automatically populated with cube information or field names. The PivotTable field list provides an Excel like appearance and behavior.
+Based on the data source and OLAP bound to the pivot grid control, the PivotTable field list will be automatically populated with cube information or field names. The PivotTable field list provides an Excel like appearance and behavior.
 
 To initialize the PivotTable field list, first you should define a “div” tag with an appropriate “id” attribute which acts as a container for the widget. Then, you should initialize the PivotTable field list by using the **“ejPivotSchemaDesigner”** method.
 
@@ -121,24 +121,24 @@ To initialize the PivotTable field list, first you should define a “div” tag
 ## Layout
 The top portion of the layout shows field or cube items in a categorized way. They can be dynamically added to the report either by the drag and drop option or through the simple check box selection.
  
-On item(s) selection, they will be placed in the row section except numeric based item(s) or measures, which will alone be placed in the value section, by default.
+On item(s) selection, they will be placed in the row section except numeric based item(s) or measures, which alone will be placed in the value section, by default.
  
 The bottom portion of the layout is segregated as below:
 
 * Report filter: Exclusively designed to filter the item(s) placed in the particular position of the layout. 
 * Value section: The value label usually displays the numeric value item(s) present in the report.
-* Column section: It is used to display the item(s) as column header and values in the PivotGrid control.
-* Row section: It is used to display the item(s) as row header and values in the PivotGrid control.
+* Column section: It is used to display the item(s) as column header and values in the pivot grid control.
+* Row section: It is used to display the item(s) as row header and values in the pivot grid control.
 
 ## UI interactions
 
 ### By drag and drop
 
-You can alter the report on fly through the drag-and-drop operation. You can drag any item from the field list and drop into column, row, value, or filter section available at the bottom of the field list.
+You can alter the report on fly through the drag-and-drop operation. You can drag any item from the field list and drop it into column, row, value, or filter section available at the bottom of the field list.
 
 ![](PivotTable-Field-List_images/ui-operartion.png)
  
-### By Treeview selection
+### By tree view selection
  
 You can also alter the report on fly through the check and uncheck option as an alternate. By default, fields will be added to the row label when checked.
 
@@ -165,3 +165,6 @@ Values can be filtered by checking/unchecking the check box besides them, in the
 ![](PivotTable-Field-List_images/filterclick.png)
 
 ![](PivotTable-Field-List_images/filter.png)
+
+## Defer update
+Defer update in the field list allows you to refresh the control on-demand and not during every UI operation. This operation can be enabled/disabled through the [`enableDeferUpdate`](/api/js/ejpivotgrid#members:enabledeferupdate) property internally.
