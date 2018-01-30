@@ -25,7 +25,7 @@ There are several commands available in the Diagram as follows.
 
 ## Align
 
-Alignment commands enable you to align the selected objects such as nodes and connectors with respect to the selection boundary. Please refer to API reference [align](/api/js/ejdiagram#methods:align "align") for more details.
+Alignment commands enable you to align the selected objects such as nodes and connectors with respect to the selection boundary. Please refer to [align](/api/js/ejdiagram#methods:align "align") commands which shows how to use align methods in diagram.
 
 | Command | Parameter | Description |
 |---|---|---|
@@ -57,7 +57,7 @@ diagram.align("left");
 
 ## Space
 
-Spacing commands enable you to place the selected objects on the page at equal intervals from each other. The selected objects are equally spaced within the selection boundary. Please refer to the list of API reference shown below for more details.
+Spacing commands enable you to place the selected objects on the page at equal intervals from each other. The selected objects are equally spaced within the selection boundary. Please refer to below link which shows how to use spacing commands in diagram.
 
 [spaceAcross](/api/js/ejdiagram#methods:spaceacross "spaceAcross")
 
@@ -83,7 +83,7 @@ diagram.spaceDown();
 
 ## Sizing
 
-Sizing commands enable to equally size the selected nodes with respect to the first selected object.Please refer to below list of API reference for more details.
+Sizing commands enable to equally size the selected nodes with respect to the first selected object.Please refer to below link which shows how to use Sizing commands in diagram.
 
 [sameSize](/api/js/ejdiagram#methods:samesize "sameSize")
 
@@ -113,7 +113,7 @@ diagram.sameWidth();
 
 ## Clipboard
 
-Clipboard commands are used to cut, copy or paste the selected elements.Please refer to below list of API reference for more details.
+Clipboard commands are used to cut, copy or paste the selected elements.Please refer to below link which shows how to use clipboard methods in diagram.
 
 [cut](/api/js/ejdiagram#methods:cut "cut")
 
@@ -140,7 +140,7 @@ diagram.paste();
 
 ## Grouping
 
-**Grouping commands** are used to group/ungroup the selected elements on the Diagram.Please refer to below list of API reference for more details.
+**Grouping commands** are used to group/ungroup the selected elements on the Diagram.Please refer to below link which shows how to use grouping commands in diagram.
 
 [group](/api/js/ejdiagram#methods:group "group")
 

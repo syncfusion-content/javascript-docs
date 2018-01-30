@@ -137,6 +137,6 @@ $("#diagram").ejDiagram({
 
 ## ScrollToNode
 
-You can bring the node/connector into view by using client side method scrollToNode. Please refer to below API document.
+You can bring the node/connector into view by using client side method scrollToNode. Please refer to below link which shows how to use scrollToNode method in diagram.
 
 [scrollToNode](/api/js/ejdiagram#methods:scrolltonode "scrollToNode")

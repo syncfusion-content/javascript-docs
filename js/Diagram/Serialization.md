@@ -55,7 +55,7 @@ N> Before loading a new Diagram, existing Diagram is cleared.
 
 ## Upgrade
 
-When you save the diagram in older versions and need to load that JSON in newer version. At that time, you can use this method which upgrades JSON to newer version. Please refer to API document below.
+When you save the diagram in older versions and need to load that JSON in newer version. At that time, you can use this method which upgrades JSON to newer version. Please refer to below link which shows how to use upgrade method in diagram.
 
 [upgrade](/api/js/ejdiagram#methods:upgrade "upgrade")
 

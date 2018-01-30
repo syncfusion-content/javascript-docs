@@ -100,7 +100,7 @@ Labels can be added at runtime by using the client side method [addLabel](/api/
 
 ### Remove Labels at runtime
 
-You can remove a collection of labels from the node by using client side method removeLabels. Please refer to below API document link.
+You can remove a collection of labels from the node by using client side method removeLabels. Please refer to below link which shows how to use removeLabels method.
 
 [removeLabels](/api/js/ejdiagram#methods:removelabels "removeLabels")
 
@@ -604,7 +604,7 @@ N> There is no built-in support to rotate labels interactively.
 2. By selecting the item and pressing the **F2** key. 
 
 Double-clicking any label will enables **editing** of that. Double-clicking the node enables first label editing. When the focus of editor is lost, the label for the node is updated.
-The diagram client side event [doubleClick](/api/js/ejdiagram#events:doubleclick "doubleClick") gets triggered when you double click on the node/connector/diagram model.
+When you double click on the node/connector/diagram model, the [doubleClick](/api/js/ejdiagram#events:doubleclick "doubleClick") event gets triggered.
 
 You can programmatically edit the label by changing the `mode` of the label. Also, you can use client side method [startLabelEdit](/api/js/ejdiagram#methods:startlabeledit "startLabelEdit") to edit the label at runtime. The following code illustrates how to edit the label programmatically.
 
@@ -624,8 +624,9 @@ diagram.startLabelEdit(node,node.labels[0]);
 
 ![](/js/Diagram/Label_images/Label_img27.png)
 
-The diagram client side event [editorFocusChange](/api/js/ejdiagram#events:editorfocuschange "editorFocusChange") gets triggered when editor got focus at the time of node’s label or text node editing.
-The diagram client side event [textChange](/api/js/ejdiagram#events:textchange "textChange") gets triggered when label editing is ended.
+* Once the text editing is ended and text editor is focused, you can use the below events to do your customization.
+* The diagram client side event [editorFocusChange](/api/js/ejdiagram#events:editorfocuschange "editorFocusChange") gets triggered when editor got focus at the time of node’s label or text node editing.
+* The diagram client side event [textChange](/api/js/ejdiagram#events:textchange "textChange") gets triggered when label editing is ended.
 
 ### Read Only labels
 

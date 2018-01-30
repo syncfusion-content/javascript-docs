@@ -38,7 +38,7 @@ diagram.redo();
 
 {% endhighlight %}
 
-The diagram client side event [historyChange](/api/js/ejdiagram#events:historychange "historyChange") gets triggered when a change is reverted or restored(undo/redo).
+When a change in diagram is reverted or restored(undo/redo), the [historyChange](/api/js/ejdiagram#events:historychange "historyChange") event gets triggered.
 
 ## Track custom changes
 
@@ -160,7 +160,7 @@ var redoStack = diagram.model.historyManager.redoStack;
 
 ## clear History
 
-The clearHistory method used to Clears the actions which is recorded to perform undo/redo operation in the diagram. Please refer to the below API document link
+The clearHistory method used to Clears the actions which is recorded to perform undo/redo operation in the diagram. Please refer to the below link which shows how to use clearHistory method in diagram.
 
 [clearHistory](/api/js/ejdiagram#methods:clearHistory "clearHistory")
 

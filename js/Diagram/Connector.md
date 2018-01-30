@@ -53,8 +53,9 @@ $("#DiagramContent").ejDiagram({
 
 ![](/js/Diagram/Connector_images/Connector_img2.png)
 
-The diagram client side event [connectorSourceChange](/api/js/ejdiagram#events:connectorsourcechange "connectorSourceChange") gets triggered when the connector source point is changed.
-The diagram client side event [connectorTargetChange](/api/js/ejdiagram#events:connectortargetchange "connectorTargetChange") gets triggered when the connector target point is changed.
+* Once the connector rendered in the diagram and if you drag end points of the connector, then you can use below events to do your customization.
+* When the connector source point is changed, the [connectorSourceChange](/api/js/ejdiagram#events:connectorsourcechange "connectorSourceChange") event gets triggered.
+* When the connector target point is changed, the [connectorTargetChange](/api/js/ejdiagram#events:connectortargetchange "connectorTargetChange") event gets triggered.
 
 ### Add connector at run time
 
@@ -82,7 +83,7 @@ diagram.add(connector);
 
 ![](/js/Diagram/Connector_images/Connector_img3.png)
 
-The diagram client side event [connectorCollectionChange](/api/js/ejdiagram#events:connectorcollectionchange "connectorCollectionChange") gets triggered when the connector is either added or removed in diagram.
+When the connector is either added or removed in diagram, the [connectorCollectionChange](/api/js/ejdiagram#events:connectorcollectionchange "connectorCollectionChange") gets triggered.
 
 ### Connectors from palette
 
@@ -259,7 +260,6 @@ connectors.push(connector);
 
 ![](/js/Diagram/Connector_images/connector_img6.png)
 
-The diagram client side event [segmentChange](/api/js/ejdiagram#events:segmentchange "segmentChange") gets triggered when a connector segment is edited.
 
 The `point` property of straight segment allows you to define the end point of it. The following code example illustrates how to define the end point of a straight segment.
 

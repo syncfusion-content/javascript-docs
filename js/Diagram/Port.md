@@ -90,7 +90,7 @@ To explore the set of properties for defining a port, refer to [Port Properties]
 
 ### Remove ports at runtime
 
-You can remove ports at runtime by using client side method removePorts. Please refer to below API document link.
+You can remove ports at runtime by using client side method removePorts. Please refer to below link which shows how to remove ports at runtime.
 
 [removePorts](/api/js/ejdiagram#methods:removeports "removePorts")
 

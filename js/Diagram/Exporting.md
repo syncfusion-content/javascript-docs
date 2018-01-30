@@ -160,6 +160,6 @@ For more information about the various stretch options refer to [Stretch options
 
 # Print
 
-We use diagram print method to print the diagram as image. Please refer to below API document below.
+The client side method Print helps to print the Diagram as image. Please refer to below link which shows how to print the Diagram as image.
 
 [print](/api/js/ejdiagram#methods:print "print")

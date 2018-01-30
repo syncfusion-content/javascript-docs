@@ -20,9 +20,10 @@ An element can be selected by clicking that element. During single click, all pr
 
 ![](/js/Diagram/Interaction_images/Interaction_img1.png)
 
-The diagram client side event [selectionChange](/api/js/ejdiagram#events:selectionchange "selectionChange") gets triggered when a selection is changed in diagram.
-The diagram client side event [click](/api/js/ejdiagram#events:click "click") gets triggered when we click on elements/model in the diagram. This event triggers even when the node/connector constraints is disabled.
-The diagram client side event [itemClick](/api/js/ejdiagram#events:itemclick "itemClick") gets triggered only when we click on diagram elements in the diagram.
+* Once you wish to select the diagram elements, you can use the below events to do your customization.
+* When we select/unselect a diagram elements, the [selectionChange](/api/js/ejdiagram#events:selectionchange "selectionChange") event gets triggered.
+* When we click on elements/model in the diagram, the [click](/api/js/ejdiagram#events:click "click") event gets triggered. This event triggers even when the diagram is static.
+* Like click event, the [itemClick](/api/js/ejdiagram#events:itemclick "itemClick") event gets triggered only when we click on diagram elements.
 
 ### Selecting a group
 
@@ -88,13 +89,13 @@ for (var i = 0; i < diagram.model.selectedItems.children.length; i++) {
 
 {% endhighlight %}
 
-The client side method [updateSelectedObject](/api/js/ejdiagram#methods:updateselectedobject "updateSelectedObject") used to update the specified node as selected object. For example, when you have a group node with multiple childrens and need to select particular children, then you need to pass that node name to this method.
+The client side method [updateSelectedObject](/api/js/ejdiagram#methods:updateselectedobject "updateSelectedObject") used to update the specified node as selected object. For example, When you click on a group node, the entire group gets selected. if you need to select the group children on first click, then you need to pass that node name to this method.
 
 N> SelectedItems’s children is a read-only property. You cannot change the children collection at run time.
 
 ### Select entire elements in diagram programmatically
 
-The client side method selectAll used to select all the elements such as nodes/connectors in diagram. Please refer to below API document.
+The client side method selectAll used to select all the elements such as nodes/connectors in diagram. Please refer to below link which shows how to use selectAll method on diagram.
 
 [selectAll](/api/js/ejdiagram#methods:selectall "selectAll")
 
@@ -105,7 +106,7 @@ The client side method selectAll used to select all the elements such as nodes/c
 
 ![](/js/Diagram/Interaction_images/Interaction_img3.png)
 
-The diagram client side event [drag](/api/js/ejdiagram#events:drag "drag") gets triggered when you drag the elements in diagram.
+* When you drag the elements in diagram, the [drag](/api/js/ejdiagram#events:drag "drag") event gets triggered and you can do your customization in this event.
 
 ## Working with multiple diagrams
 
@@ -174,7 +175,7 @@ The following screen short illustrates how the nodes are dragged from one diagra
 
 ![](/js/Diagram/Interaction_images/Interaction_img4.png)
 
-The diagram client side event [sizeChange](/api/js/ejdiagram#events:sizechange "sizeChange") gets triggered when a node is resized.
+* When a node is resized, the [sizeChange](/api/js/ejdiagram#events:sizechange "sizeChange") event gets triggered. 
 
 ## Rotate
 
@@ -185,11 +186,13 @@ The diagram client side event [sizeChange](/api/js/ejdiagram#events:sizechange "
 
 ![](/js/Diagram/Interaction_images/Interaction_img5.png)
 
-The diagram client side event [rotationChange](/api/js/ejdiagram#events:rotationchange "rotationChange") gets triggered when the diagram elements are rotated.
+* When the diagram elements are rotated, the [rotationChange](/api/js/ejdiagram#events:rotationchange "rotationChange") event gets triggered.
 
 ## Connection editing
 
 * Each segment of a selected connector is editable with some specific handles/thumbs.
+
+* When a connector segment is edited, the [segmentChange](/api/js/ejdiagram#events:segmentchange "segmentChange") event gets triggered.
 
 ### End point handles
 
@@ -380,8 +383,7 @@ $("#DiagramContent").ejDiagram({
 
 * When a large Diagram is loaded, only certain portion of the Diagram is visible. The remaining portions are clipped. Clipped portions can be explored by scrolling the scrollbars or panning the Diagram.
 * Diagram can be zoomed in or out by using Ctrl + mouse wheel.
-
-The diagram client side event [scrollChange](/api/js/ejdiagram#events:scrollchange "scrollChange") gets triggered when the diagram is zoomed or panned.
+* When the diagram is zoomed or panned, the [scrollChange](/api/js/ejdiagram#events:scrollchange "scrollChange") event gets triggered.
 
 ## Keyboard
 

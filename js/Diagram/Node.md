@@ -55,9 +55,10 @@ $("#diagram").ejDiagram({
 
 ![](/js/Diagram/Node_images/Node_img2.png)
 
-The diagram client side event [mouseEnter](/api/js/ejdiagram#events:mouseenter "mouseEnter") gets triggered when mouse enters node/connector.
-The diagram client side event [mouseLeave](/api/js/ejdiagram#events:mouseleave "mouseLeave") gets triggered when mouse leaves node/connector.
-The diagram client side event [mouseOver](/api/js/ejdiagram#events:mouseover "mouseOver") gets triggered when mouse hovers over a node/connector.
+ * Once the node is rendered in the diagram, you can use the following events to detect the mouse behavior on node.
+ * The diagram client side event [mouseEnter](/api/js/ejdiagram#events:mouseenter "mouseEnter") gets triggered when mouse enters node/connector.
+ * The diagram client side event [mouseLeave](/api/js/ejdiagram#events:mouseleave "mouseLeave") gets triggered when mouse leaves node/connector.
+ * The diagram client side event [mouseOver](/api/js/ejdiagram#events:mouseover "mouseOver") gets triggered when mouse hovers over a node/connector.
 
 ### Add node at runtime
 
@@ -86,16 +87,17 @@ diagram.add(node);
 
 ![](/js/Diagram/Node_images/Node_img3.png)
 
-The diagram client side event [nodeCollectionChange](/api/js/ejdiagram#events:nodecollectionchange "nodeCollectionChange") gets triggered when a node is either added or removed in diagram.
+When a node is either added or removed in diagram, the [nodeCollectionChange](/api/js/ejdiagram#events:nodecollectionchange "nodeCollectionChange") event raised.
 
 ### Add node from palette
 
 Nodes can be predefined and added to palette and can be dropped into the Diagram when needed. For more information about adding nodes from symbol palette, refer to [Symbol Palette](/js/Diagram/Symbol-Palette "Symbol Palette").
 
-The diagram client side event [dragEnter](/api/js/ejdiagram#events:dragenter "dragEnter") gets triggered when a symbol is dragged into diagram from symbol palette.
-The diagram client side event [dragOver](/api/js/ejdiagram#events:dragover "dragOver") gets triggered when a symbol is dragged over diagram.
-The diagram client side event [drop](/api/js/ejdiagram#events:drop "drop") gets triggered when a symbol is dragged and dropped from symbol palette to drawing area.
-The diagram client side event [dragLeave](/api/js/ejdiagram#events:dragleave "dragLeave") gets triggered when a symbol is dragged outside of the diagram.
+* Once we drag a node/connector from the palette to diagram, you can use the below events to do your customization.
+* When a symbol is dragged into diagram from symbol palette, the [dragEnter](/api/js/ejdiagram#events:dragenter "dragEnter") event gets triggered. 
+* When a symbol is dragged over diagram,the [dragOver](/api/js/ejdiagram#events:dragover "dragOver") event gets triggered.
+* When a symbol is dragged and dropped from symbol palette to diagram area, the [drop](/api/js/ejdiagram#events:drop "drop") event gets triggered.
+* When a symbol is dragged outside of the diagram, the [dragLeave](/api/js/ejdiagram#events:dragleave "dragLeave") event gets triggered.
 
 ### Create node through data source
 
@@ -119,7 +121,7 @@ diagram.updateNode("nodeName", {
 })
 {% endhighlight %}
 
-The diagram client side event [propertyChange](/api/js/ejdiagram#events:propertychange "propertyChange") gets triggered when the node/connector properties are changed at runtime.
+When the node/connector properties are changed at runtime, the [propertyChange](/api/js/ejdiagram#events:propertychange "propertyChange") event gets triggered.
 
 ## Position
 

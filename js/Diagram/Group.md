@@ -106,7 +106,7 @@ diagram.add(group);
 
 {% endhighlight %}
 
-The diagram client side event [groupChange](/api/js/ejdiagram#events:groupchange "groupChange") gets triggered when a child is added to or removed from a group.
+In a group node, when you add or remove a children, the [groupChange](/api/js/ejdiagram#events:groupchange "groupChange") event gets triggered.
 
 ### Group from palette
 

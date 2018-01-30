@@ -303,7 +303,7 @@ var swimlane = {
 
 ## Add lane at runtime
 
-We can add a lane at runtime width client side API method addLane. please refer to the below API document link.
+We can add a lane at runtime width client side API method addLane. please refer to the below link whcih shows how to use addLane method in diagram.
 
 [addLane](/api/js/ejdiagram#methods:addlane "addLane"). 
 
