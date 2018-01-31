@@ -65,7 +65,7 @@ diagram.removeSelection(node);
 
 {% endhighlight %}
 
-You can get the current selected items from the `children` collection of `selectedItems` property of the Diagram model.
+You can get the current selected items from the [children](/api/js/ejdiagram#members:selecteditems-children "children") collection of [selectedItems](/api/js/ejdiagram#members:selecteditems "selectedItems") property of the Diagram model.
 The client side method `updateSelector` helps you to change the size, position, and rotation angle of the selected elements at runtime. The following code example illustrates how to read the selected items and how to update the position, size, and rotation angle.
 
 {% highlight javascript %}
@@ -112,7 +112,7 @@ The client side method selectAll used to select all the elements such as nodes/c
 
 Diagram provides support to drag diagram elements from one diagram to another. 
 
-If you enable `FloatElements` constraints to any diagram, it will allow you to drag elements from it and the elements can be dropped into any other diagram.
+If you enable [FloatElements](/api/js/ejdiagram#members:constraints "FloatElements") constraints to any diagram, it will allow you to drag elements from it and the elements can be dropped into any other diagram.
 
 The following code illustrates how to drag nodes over multiple diagrams.
 
@@ -229,7 +229,7 @@ Source and target points of the selected connectors are represented with two han
 
 ## Drag and drop nodes over other elements
 
-Diagram provides support to drop a node/connector over another node/connector. Drop event is raised to notify that an element is dropped over another one and it is disabled by default. It can enabled with the `constraints` property. The following code illustrates how to enable **dropping**.
+Diagram provides support to drop a node/connector over another node/connector. Drop event is raised to notify that an element is dropped over another one and it is disabled by default. It can enabled with the [constraints](/api/js/ejdiagram#members:nodes-constraints "constraints") property. The following code illustrates how to enable **dropping**.
 
 {% highlight javascript %}
 
@@ -296,8 +296,8 @@ function onDrop(args) {
 
 ## User handles
 
-User handles are used to add some frequently used commands around the selector. To create user handles, define and add them to the `userHandles` collection of `selectedItems` property.
-The `tool` property of user handle should be set with any appropriate tool to enable interaction.
+User handles are used to add some frequently used commands around the selector. To create user handles, define and add them to the [userHandles](/api/js/ejdiagram#members:selecteditems-userhandles "userHandles") collection of [selectedItems](/api/js/ejdiagram#members:selecteditems "selectedItems") property.
+The [tool](/api/js/ejdiagram#members:selecteditems-userhandles-tool "tool") property of user handle should be set with any appropriate tool to enable interaction.
 
 The following code example illustrates how to draw a user handle.
 
