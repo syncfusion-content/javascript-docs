@@ -271,10 +271,10 @@ You have the following options in cell formatting,
 * Using [`updateUniqueFormat`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlformat-updateuniqueformat "updateUniqueFormat") method to update the unique format for selected range of cells in the Spreadsheet.
 * Using [`removeStyle`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlformat-removestyle "removeStyle") method to remove the style in the specified range.
 * Using [`getBorderFromHashCode`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlformat-getborderfromhashcode "getBorderFromHashCode") method to get the border from hashcode in the Spreadsheet.
-* Using [`getFormatClass`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlformat-getformatclass "getFormatClass") method to get the format class in spreadsheet.
-* Using [`getFormatFromHashCode`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlformat-getformatfromhashcode "getFormatFromHashCode") method to get the format from the given hashcode in spreadsheet.
-* Using [`getFormatHashCode`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlformat-getformathashcode "getFormatHashCode") method to get the hashcode from the given style object in spreadsheet.
-* Using [`getHashCodeClassAsArray`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlformat-gethashcodeclassasarray "getHashCodeClassAsArray") method to get the format as array from the given specified range in spreadsheet.
+* Using [`getFormatClass`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlformat-getformatclass "getFormatClass") method to get the format class in Spreadsheet.
+* Using [`getFormatFromHashCode`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlformat-getformatfromhashcode "getFormatFromHashCode") method to get the format from the given hashcode in Spreadsheet.
+* Using [`getFormatHashCode`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlformat-getformathashcode "getFormatHashCode") method to get the hashcode from the given style object in Spreadsheet.
+* Using [`getHashCodeClassAsArray`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlformat-gethashcodeclassasarray "getHashCodeClassAsArray") method to get the format as array from the given specified range in Spreadsheet.
 
 
 ### Borders 

@@ -12,7 +12,7 @@ api: /api/js/ejspreadsheet
 
 Spreadsheet provides the support to perform undo and redo operations. You can set [`allowUndoRedo`](https://help.syncfusion.com/api/js/ejspreadsheet#members:allowundoredo "allowUndoRedo") as true to enable undo redo feature. You can also use [`undoRedoStep`](https://help.syncfusion.com/api/js/ejspreadsheet#members:undoredostep "undoRedoStep") property to limit the undo redo action.
 
-The following options are available in spreadsheet undo redo.
+The following options are available in Spreadsheet undo redo.
 
 * To perform undo action use [`undo`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:undo "undo") method.
 * To perform redo action use [`redo`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:redo "redo") method.
@@ -25,14 +25,14 @@ N> Default value of [`undoRedoStep`](https://help.syncfusion.com/api/js/ejspread
 
 ## Undo the last action
 
-Undo reverses the last action you performed with spreadsheet. You can do this by following ways.
+Undo reverses the last action you performed with Spreadsheet. You can do this by following ways.
 
 * Use Undo button of HOME tab in ribbon.
 * Use "Ctrl + Z" key.
 
 ## Redo the action
 
-Redo reverses the last undo action you performed with spreadsheet. You can do this by following ways.
+Redo reverses the last undo action you performed with Spreadsheet. You can do this by following ways.
 
 * Use Redo button of HOME tab in ribbon.
 * Use "Ctrl + Y" key.

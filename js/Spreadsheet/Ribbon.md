@@ -23,11 +23,8 @@ You can perform the Ribbon customization in the following two ways.
 
 ## Initial Load
 
-The Ribbon customization can be done at Initial load by using [`ribbonSettings`](https://help.syncfusion.com/api/js/ejspreadsheet#members:ribbonsettings "ribbonSettings") API.
+The Ribbon customization can be done at Initial load by using [`ribbonSettings`](https://help.syncfusion.com/api/js/ejspreadsheet#members:ribbonsettings "ribbonSettings") API. In ribbonSettings `applicationTab` options is available for ribbon customization.
 
-The following options are available in ribbonSettings for ribbon customization.
-
-* Application Tab
 
 # Application Tab
 
@@ -38,7 +35,7 @@ To set application tab in Spreadsheet, [`applicationTab`](https://help.syncfusio
             
         1) [`isAppend`](https://help.syncfusion.com/api/js/ejspreadsheet#members:ribbonsettings-applicationtab-menusettings-isappend  "isAppend ") is used to enable or disable isAppend property in ribbon settings.
         
-        2) [`dataSource`](https://help.syncfusion.com/api/js/ejspreadsheet#members:ribbonsettings-applicationtab-menusettings-datasource  "dataSource ") is used to Specify the data source to append in application tab.
+        2) [`dataSource`](https://help.syncfusion.com/api/js/ejspreadsheet#members:ribbonsettings-applicationtab-menusettings-datasource  "dataSource ") is used to specify the data source to append in application tab.
 
 
 
@@ -59,10 +56,10 @@ You can also customize the ribbon by using the following methods.
     <tr><td>Disable Ribbon Items</br></td><td>{{'[`disableRibbonItems`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlribbon-disableribbonitems  "disableRibbonItems  ")'| markdownify }}</br></td><td>To disable ribbon items in the Spreadsheet.</br></td></tr>
     <tr><td>Enable Ribbon Items</br></td><td>{{'[`enableRibbonItems`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlribbon-enableribbonitems  "enableRibbonItems  ")'| markdownify }}</br></td><td>To enable ribbon items in the Spreadsheet.</br></td></tr>
     <tr><td>Hide Menu</br></td><td>{{'[`hideMenu  `](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlribbon-hidemenu  "hideMenu")'| markdownify }}</br></td><td>To hide the file menu in the ribbon tab.</br></td></tr>
-    <tr><td>Remove BackStage Item</br></td><td>{{'[`removeBackStageItem`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlribbon-removebackstageitem  "removeBackStageItem  ")'| markdownify }}</br></td><td>To remove the item from the backstage in the spreadsheet.</br></td></tr>
-    <tr><td>Remove Menu Item</br></td><td>{{'[`removeMenuItem`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlribbon-removemenuitem  "removeMenuItem")'| markdownify }}</br></td><td>To remove the menu item from file menu in spreadsheet.</br></td></tr>
+    <tr><td>Remove BackStage Item</br></td><td>{{'[`removeBackStageItem`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlribbon-removebackstageitem  "removeBackStageItem  ")'| markdownify }}</br></td><td>To remove the item from the backstage in the Spreadsheet.</br></td></tr>
+    <tr><td>Remove Menu Item</br></td><td>{{'[`removeMenuItem`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlribbon-removemenuitem  "removeMenuItem")'| markdownify }}</br></td><td>To remove the menu item from file menu in Spreadsheet.</br></td></tr>
     <tr><td>Remove Tab</br></td><td>{{'[`removeTab`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlribbon-removetab "removeTab")'| markdownify }}</br></td><td>To remove the tab from ribbon in the spreadsheet.</br></td></tr>
-    <tr><td>Remove Tab Group</br></td><td>{{'[`removeTabGroup`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlribbon-removetabgroup "removeTabGroup")'| markdownify }}</br></td><td>To remove the tab group from ribbon in the spreadsheet.</br></td></tr>
+    <tr><td>Remove Tab Group</br></td><td>{{'[`removeTabGroup`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlribbon-removetabgroup "removeTabGroup")'| markdownify }}</br></td><td>To remove the tab group from ribbon in the Spreadsheet.</br></td></tr>
     <tr><td>Show Menu</br></td><td>{{'[`showMenu`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlribbon-showmenu "showMenu")'| markdownify }}</br></td><td>To show the file menu in the ribbon tab.</br></td></tr>
     <tr><td>Update Menu Item</br></td><td>{{'[`updateMenuItem`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlribbon-updatemenuitem "updateMenuItem")'| markdownify }}</br></td><td>To update the menu item in the file menu.</br></td></tr>
     <tr><td>Update Ribbon Icons</br></td><td>{{'[`updateRibbonIcons`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlribbon-updateribbonicons "updateRibbonIcons")'| markdownify }}</br></td><td>To update the ribbon icons in the Spreadsheet.</br></td></tr>
