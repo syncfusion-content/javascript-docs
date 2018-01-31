@@ -8,7 +8,11 @@ documentation: ug
 api: /api/js/ejpivotclient
 ---
 
-### Refresh the PivotClient control with page properties
+# How To
+
+## Public Methods
+
+### Refresh the PivotClient with specified page number
 The [`refreshPagedPivotClient`](../api/ejpivotclient#methods:refreshpagedpivotclient) method is used to re-render the pivot client component with given axis and page number.
 
 {% highlight html %}
@@ -23,7 +27,7 @@ The [`refreshPagedPivotClient`](../api/ejpivotclient#methods:refreshpagedpivotcl
 
 {% endhighlight %}
 
-### Refresh the PivotClient control
+### Refresh the PivotClient with modified report
 The [`refreshControl`](../api/ejpivotclient#methods:refreshcontrol) method is used to re-render the pivot client control with the report at that instant.
 
 {% highlight html %}
@@ -38,7 +42,7 @@ The [`refreshControl`](../api/ejpivotclient#methods:refreshcontrol) method is us
 
 {% endhighlight %}
 
-### Generating JSON Records
+### Generating JSON Records to render the control
 The [`generateJSON`](../api/ejpivotclient#methods:generatejson) method is used to render the pivot chart and pivot grid controls in pivot client with the JSON data provided.
 
 {% highlight html %}
@@ -48,12 +52,12 @@ The [`generateJSON`](../api/ejpivotclient#methods:generatejson) method is used t
 <script>
     $("PivotClient1").ejPivotClient();
     var clientObj = $("#PivotClient1").data("ejPivotClient");
-    clientObj.generateJSON(jsonData);//jsonData object holds the data in JSON format required to render the control
+    clientObj.generateJSON(clientObj.getJSONRecords());//jsonData object holds the data in JSON format required to render the control
 </script>
 
 {% endhighlight %}
 
-### AJAX Request
+### Explicit asynchronous invoke
 The [`doAjaxPost`](../api/ejpivotclient#methods:doajaxpost) method is used to perform an asynchronous HTTP (AJAX) request.
 
 {% highlight html %}
@@ -68,7 +72,7 @@ The [`doAjaxPost`](../api/ejpivotclient#methods:doajaxpost) method is used to pe
 
 {% endhighlight %}
 
-### Destroying the PivotClient control
+### Destroying the object of PivotClient
 The [`destroy`](../api/ejpivotclient#methods:destroy) method is used to destroy the pivot client widget all events bound using this._on will be unbind automatically and bring the control to pre-init state.
 
 {% highlight html %}
@@ -83,7 +87,7 @@ The [`destroy`](../api/ejpivotclient#methods:destroy) method is used to destroy 
 
 {% endhighlight %}
 
-### Getting JSON Records
+### Getting JSON records from control object
 The [`getJSONRecords`](../api/ejpivotclient#methods:getjsonrecords) method is used to return the JSON records formed to render the control.
 
 {% highlight html %}
@@ -98,7 +102,7 @@ The [`getJSONRecords`](../api/ejpivotclient#methods:getjsonrecords) method is us
 
 {% endhighlight %}
 
-### Setting JSON Records
+### Setting JSON records to control object
 The [`setJSONRecords`](../api/ejpivotclient#methods:setjsonrecords) method is used to set the JSON records formed to render the control to a property.
 
 {% highlight html %}
@@ -108,12 +112,12 @@ The [`setJSONRecords`](../api/ejpivotclient#methods:setjsonrecords) method is us
 <script>
     $("PivotClient1").ejPivotClient();
     var clientObj = $("#PivotClient1").data("ejPivotClient");
-    clientObj.setJSONRecords(jsonRecords);
+    clientObj.setJSONRecords(clientObj.getJSONRecords());
 </script>
 
 {% endhighlight %}
 
-### Refresh the PivotClient Control with paging
+### Refresh the PivotClient with paging
 The [`refreshPagedPivotClientSuccess`](../api/ejpivotclient#methods:refreshpagedpivotclientsuccess) method is used to update the PivotClient component with the JSON data fetched from the service on navigating between pages.
 
 {% highlight html %}
@@ -123,7 +127,7 @@ The [`refreshPagedPivotClientSuccess`](../api/ejpivotclient#methods:refreshpaged
 <script>
     $("PivotClient1").ejPivotClient();
     var clientObj = $("#PivotClient1").data("ejPivotClient");
-    clientObj.refreshPagedPivotClientSuccess(jsonData); //jsonData object holds the JSON data required to render a specific page of the control.
+    clientObj.refreshPagedPivotClientSuccess(clientObj.getJSONRecords()); //jsonData object holds the JSON data required to render a specific page of the control.
 </script>
 
 {% endhighlight %}
@@ -142,7 +146,10 @@ The [`getActiveTab`](../api/ejpivotclient#methods:getactivetab) method is used t
 
 {% endhighlight %}
 
-### Save Report
+
+## Events
+
+### Triggering event before saving the Reports
 The [`saveReport`](../api/ejpivotclient#events:savereport) event is triggered to save the current collection of reports.
 
 {% highlight html %}
@@ -157,7 +164,7 @@ The [`saveReport`](../api/ejpivotclient#events:savereport) event is triggered to
 
 {% endhighlight %}
 
-### Fetch Report
+### Triggering event before fetching the Report from database
 The [`fetchReport`](../api/ejpivotclient#events:fetchreport) event is triggered before fetching the report collection from storage.
 
 {% highlight html %}
@@ -172,7 +179,7 @@ The [`fetchReport`](../api/ejpivotclient#events:fetchreport) event is triggered 
 
 {% endhighlight %}
 
-### Value Cell Hyperlink click
+### Triggering event on value cell click
 The [`valueCellHyperlinkClick`](../api/ejpivotclient#events:valuecellhyperlinkclick) event is triggered on clicking any value cell in pivot grid.
 
 {% highlight html %}
@@ -187,7 +194,7 @@ The [`valueCellHyperlinkClick`](../api/ejpivotclient#events:valuecellhyperlinkcl
 
 {% endhighlight %}
 
-### Row Header Hyperlink click
+### Triggering event on row header click
 The [`rowHeaderHyperlinkClick`](../api/ejpivotclient#events:rowheaderhyperlinkclick) event is triggered on clicking any row header cell in pivot grid.
 
 {% highlight html %}
@@ -202,7 +209,7 @@ The [`rowHeaderHyperlinkClick`](../api/ejpivotclient#events:rowheaderhyperlinkcl
 
 {% endhighlight %}
 
-### Column Header Hyperlink click
+### Triggering event on column header click
 The [`columnHeaderHyperlinkClick`](../api/ejpivotclient#events:columnheaderhyperlinkclick) event is triggered on clicking any column header cell in pivot grid.
 
 {% highlight html %}
@@ -217,7 +224,7 @@ The [`columnHeaderHyperlinkClick`](../api/ejpivotclient#events:columnheaderhyper
 
 {% endhighlight %}
 
-### Summary Cell Hyperlink click
+### Triggering event on summary cell click
 The [`summaryCellHyperlinkClick`](../api/ejpivotclient#events:summarycellhyperlinkclick) event is triggered on clicking any summary cell in pivot grid.
 
 {% highlight html %}
@@ -232,7 +239,7 @@ The [`summaryCellHyperlinkClick`](../api/ejpivotclient#events:summarycellhyperli
 
 {% endhighlight %}
 
-### Cell Context
+### Triggering event on cell right click in PivotGrid
 The [`cellContext`](../api/ejpivotclient#events:cellcontext) event is triggered when right click on any cell in the pivot grid.
 
 {% highlight html %}
@@ -247,7 +254,7 @@ The [`cellContext`](../api/ejpivotclient#events:cellcontext) event is triggered 
 
 {% endhighlight %}
 
-### Cell Selection
+### Triggering event before selecting the cells in PivotGrid
 The [`cellSelection`](../api/ejpivotclient#events:cellselection) event is triggered when select/click any of the cell in the pivot grid.
 
 {% highlight html %}
@@ -262,7 +269,7 @@ The [`cellSelection`](../api/ejpivotclient#events:cellselection) event is trigge
 
 {% endhighlight %}
 
-### Cell Edit
+### Triggering event before editing the cell in PivotGrid
 The [`cellEdit`](../api/ejpivotclient#events:celledit) event is triggered when any of the value cell edited in the pivot grid.
 
 {% highlight html %}
@@ -277,7 +284,7 @@ The [`cellEdit`](../api/ejpivotclient#events:celledit) event is triggered when a
 
 {% endhighlight %}
 
-### Cell Double Click
+### Triggering event on cell double click in PivotGrid
 The [`cellDoubleClick`](../api/ejpivotclient#events:celldoubleclick) event is triggered when double click on any of the cell in the pivot grid.
 
 {% highlight html %}
@@ -292,7 +299,7 @@ The [`cellDoubleClick`](../api/ejpivotclient#events:celldoubleclick) event is tr
 
 {% endhighlight %}
 
-### Point Region Click
+### Triggering event on point region click in PivotChart
 The [`pointRegionClick`](../api/ejpivotclient#events:celldoubleclick) event is triggered when clicking on any Chart series points in the pivot chart.
 
 {% highlight html %}
@@ -307,7 +314,7 @@ The [`pointRegionClick`](../api/ejpivotclient#events:celldoubleclick) event is t
 
 {% endhighlight %}
 
-### Axes label Rendering
+### Triggering event before rendering of axes lables in PivotChart
 The [`axesLabelRendering`](../api/ejpivotclient#events:axeslabelrendering) event is triggered before Chart label rendering in the pivot chart.
 
 {% highlight html %}
@@ -322,7 +329,7 @@ The [`axesLabelRendering`](../api/ejpivotclient#events:axeslabelrendering) event
 
 {% endhighlight %}
 
-### After Service Invoke
+### Invoking event in client-side after service invoke
 The [`afterServiceInvoke`](../api/ejpivotclient#events:afterserviceinvoke) event is triggered when it is reached client-side after any AJAX request.
 
 {% highlight html %}
@@ -337,7 +344,7 @@ The [`afterServiceInvoke`](../api/ejpivotclient#events:afterserviceinvoke) event
 
 {% endhighlight %}
 
-### Before Service Invoke
+### Invoking event in client-side before service invoke
 The [`beforeServiceInvoke`](../api/ejpivotclient#events:beforeserviceinvoke) event is triggered before any AJAX request is passed from client-side to service methods.
 
 {% highlight html %}
@@ -352,7 +359,7 @@ The [`beforeServiceInvoke`](../api/ejpivotclient#events:beforeserviceinvoke) eve
 
 {% endhighlight %}
 
-### Before Export
+### Triggering event before exporting
 The [`beforeExport`](../api/ejpivotclient#events:beforeexport) event is triggered before exporting the control.
 
 {% highlight html %}
@@ -367,7 +374,7 @@ The [`beforeExport`](../api/ejpivotclient#events:beforeexport) event is triggere
 
 {% endhighlight %}
 
-### Grid Drill Success
+### Triggering event after performing drill operation in PivotGrid
 The [`gridDrillSuccess`](../api/ejpivotclient#events:griddrillsuccess) event is triggered on performing drill up/down on row/columns headers.
 
 {% highlight html %}
@@ -382,7 +389,7 @@ The [`gridDrillSuccess`](../api/ejpivotclient#events:griddrillsuccess) event is 
 
 {% endhighlight %}
 
-### Chart Drill Success
+### Triggering event after performing drill operation in PivotChart
 The [`chartDrillSuccess`](../api/ejpivotclient#events:chartdrillsuccess) event is triggered on performing drill operation on Chart series.
 
 {% highlight html %}
@@ -397,7 +404,7 @@ The [`chartDrillSuccess`](../api/ejpivotclient#events:chartdrillsuccess) event i
 
 {% endhighlight %}
 
-### TreeMap Drill Success
+### Triggering event after performing drill operation in PivotTreeMap
 The [`treeMapDrillSuccess`](../api/ejpivotclient#events:treemapdrillsuccess) event is triggered on performing drill operation on TreeMap.
 
 {% highlight html %}
@@ -412,7 +419,7 @@ The [`treeMapDrillSuccess`](../api/ejpivotclient#events:treemapdrillsuccess) eve
 
 {% endhighlight %}
 
-### Schema Load
+### Triggering event before the PivotSchemaDesigner loaded
 The [`schemaLoad`](../api/ejpivotclient#events:schemaload) event is triggered before rendering the PivotSchemaDesigner.
 
 {% highlight html %}
@@ -427,7 +434,7 @@ The [`schemaLoad`](../api/ejpivotclient#events:schemaload) event is triggered be
 
 {% endhighlight %}
 
-### TreeMap Load
+### Triggering event before the PivotTreeMap loaded
 The [`treeMapLoad`](../api/ejpivotclient#events:treemapload) event is triggered before rendering the pivot treemap.
 
 {% highlight html %}
@@ -442,7 +449,7 @@ The [`treeMapLoad`](../api/ejpivotclient#events:treemapload) event is triggered 
 
 {% endhighlight %}
 
-### Chart Load
+### Triggering event before the PivotChart loaded
 The [`chartLoad`](../api/ejpivotclient#events:chartload) event is triggered before rendering the pivot chart.
 
 {% highlight html %}
@@ -457,7 +464,7 @@ The [`chartLoad`](../api/ejpivotclient#events:chartload) event is triggered befo
 
 {% endhighlight %}
 
-### Load
+### Triggering event before the PivotClient loaded
 The [`load`](../api/ejpivotclient#events:load) event is triggered while we initiate loading of the widget.
 
 {% highlight html %}
@@ -471,6 +478,9 @@ The [`load`](../api/ejpivotclient#events:load) event is triggered while we initi
 </script>
 
 {% endhighlight %}
+
+
+## Members
 
 ### Grid Layout in PivotClient
 The [`gridLayout`](../api/ejpivotclient#members:gridlayout) is used to set the summary layout for pivot grid OLAP server-end. Following are the ways in which summary can be positioned: normal summary (bottom), top summary, no summary and excel-like summary.
@@ -500,7 +510,7 @@ The [`showUniqueNameOnPivotButton`](../api/ejpivotclient#members:showuniquenameo
 
 ![](How-To_images/uniqueNamePivotButton.png)
 
-### Showing Report Collection
+### Showing Report Collection in toolbar
 The [`showReportCollection`](../api/ejpivotclient#members:showreportcollection) property allows you to load the saved report collection from the database and show it in Toolbar.
 
 {% highlight html %}
@@ -514,6 +524,7 @@ The [`showReportCollection`](../api/ejpivotclient#members:showreportcollection) 
 {% endhighlight %}
 
 ![](How-To_images/reportCollection.png)
+
 
 ## Setting Custom Name to Service Methods
 The [`serviceMethodSettings`](/api/js/ejpivotclient#members:servicemethodsettings) allows you to set the custom name for the methods in WebAPI/WCF, communicated during AJAX post.
