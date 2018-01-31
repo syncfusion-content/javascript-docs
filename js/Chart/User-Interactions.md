@@ -624,7 +624,7 @@ The color ,opacity and  corners of the trackball tooltip are customized by using
 
 #### TrackBall ToolTip Template:
 
-Trackball ToolTip Template is used to display the toolTip in the customized template format. You can define the  desired Template  in css style format.You can enable the toolTipTemplate by following below code snippet.
+Trackball ToolTip Template is used to display the toolTip in the customized template format. You can define the  desired Template  in css style format.You can enable the **toolTipTemplate** by following below code snippet.
 
 {% highlight javascript %}
 
