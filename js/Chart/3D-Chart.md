@@ -388,3 +388,37 @@ The [`perspectiveAngle`](../api/ejchart#members:perspectiveangle) specifies the 
 
 
 ![](/js/Chart/3D-Chart_images/3D-Chart_img14.png)
+
+### 3D Smart Axis Labels:
+
+3D Smart axis labels is used to customize the primaryXaxis Labels by two ways
+
+1.labelIntersectAction
+
+2.edgeLabelPlacement
+
+#### Customize labelIntersectAction :
+
+To customize the labelIntersectAction you can use eight set of property  multipleRows,wrapByWord,rotate45,rotate90,trim,hide,wrap,none.The default property of labelIntersectAction is hide.
+
+#### Customize edgeLabelPlacement:
+
+To customize the edgelabelPlacement you can use the three set of property  none,shift,hide.The default property of edgeLabelPlacement is none.
+
+{% highlight javascript %}
+
+     $("#container").ejChart({   
+         primaryXAxis:
+            {
+                title: { text: "Country" },
+                labelIntersectAction: 'multipleRows',
+                edgeLabelPlacement: 'none'
+            },
+       });
+
+{% endhighlight %}
+
+
+![](/js/Chart/3D-Chart_images/3D-Chart_img15.png)
+
+	
