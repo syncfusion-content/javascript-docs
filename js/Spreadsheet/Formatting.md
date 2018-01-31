@@ -39,7 +39,7 @@ Number formatting is used to represent type for your data in Spreadsheet. The di
 
 9) Fraction
 
-To enable/disable [`allowDecimalPlaces`](https://help.syncfusion.com/api/js/ejspreadsheet#members:formatsettings-allowdecimalplaces "allowDecimalPlaces") API in `formatSettings` you can update the decimal place by using the method[`updateDecimalPlaces`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlformat-updatedecimalplaces "updateDecimalPlaces").
+To enable/disable [`allowDecimalPlaces`](https://help.syncfusion.com/api/js/ejspreadsheet#members:formatsettings-allowdecimalplaces "allowDecimalPlaces") API in [`formatSettings`](https://help.syncfusion.com/api/js/ejspreadsheet#members:formatsettings "formatSettings") you can update the decimal place by using the method[`updateDecimalPlaces`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlformat-updatedecimalplaces "updateDecimalPlaces").
 
 You can apply number format for a cell in following ways,
     
@@ -270,12 +270,17 @@ You have the following options in cell formatting,
 * Using [`updateFormat`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlformat-updateformat "updateFormat") method to update the format for the selected range of cells in the Spreadsheet.
 * Using [`updateUniqueFormat`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlformat-updateuniqueformat "updateUniqueFormat") method to update the unique format for selected range of cells in the Spreadsheet.
 * Using [`removeStyle`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlformat-removestyle "removeStyle") method to remove the style in the specified range.
+* Using [`getBorderFromHashCode`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlformat-getborderfromhashcode "getBorderFromHashCode") method to get the border from hashcode in the Spreadsheet.
+* Using [`getFormatClass`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlformat-getformatclass "getFormatClass") method to get the format class in Spreadsheet.
+* Using [`getFormatFromHashCode`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlformat-getformatfromhashcode "getFormatFromHashCode") method to get the format from the given hashcode in Spreadsheet.
+* Using [`getFormatHashCode`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlformat-getformathashcode "getFormatHashCode") method to get the hashcode from the given style object in Spreadsheet.
+* Using [`getHashCodeClassAsArray`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlformat-gethashcodeclassasarray "getHashCodeClassAsArray") method to get the format as array from the given specified range in Spreadsheet.
 
 
 ### Borders 
 
 You can add border around a cell or range of cells to define a section of worksheet or table. 
-Use [`allowCellBorder`](https://help.syncfusion.com/api/js/ejspreadsheet#members:formatsettings-allowcellborder "allowCellBorder") in formatSettings API in to enable / disable border option in Spreadsheet.
+Use [`allowCellBorder`](https://help.syncfusion.com/api/js/ejspreadsheet#members:formatsettings-allowcellborder "allowCellBorder") in [`formatSettings`](https://help.syncfusion.com/api/js/ejspreadsheet#members:formatsettings "formatSettings") API in to enable / disable border option in Spreadsheet.
 
 The different types of borders supported in Spreadsheet are,
     
@@ -314,7 +319,7 @@ In Border you have the following options in spreadsheet.
 
 * To specify the border type in the Spreadsheet.Use [`type`](https://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-border-type "type") in `border` API.
 * To Specify the border color for range of cells in Spreadsheet.Use [`color`](https://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-border-color "color") in `border` API.
-* To apply border for the specified range of cell.Use [`range`](https://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-border-type "range") in `border` API.
+* To apply border for the specified range of cell.Use [`range`](https://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-border-range "range") in `border` API.
 
 ### Fill color
 
