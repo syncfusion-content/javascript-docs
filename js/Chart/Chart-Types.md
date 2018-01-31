@@ -2166,7 +2166,7 @@ Polar chart is created by setting the series [`type`](../api/ejchart#members:ser
 
 ### DrawType
 
-Polar [`drawType`](../api/ejchart#members:series-drawtype) property is used to change the series plotting type to *line*, *column*, *scatter*,*rangeColumn*,*spline*,*stackingArea* or *area*. The default value of [`drawType`](../api/ejchart#members:series-drawtype) is **"line"**.  
+Polar [`drawType`](../api/ejchart#members:series-drawtype) property is used to change the series plotting type to *line*, *column*, *scatter*, *rangeColumn*, *spline*, *stackingArea* or *area*. The default value of [`drawType`](../api/ejchart#members:series-drawtype) is **"line"**.  
 
 {% highlight javascript %}
 
@@ -2269,7 +2269,7 @@ To create a Radar chart, you can specify the series [`type`](../api/ejchart#memb
 
 ### DrawType
 
-Radar [`drawType`](../api/ejchart#members:series-drawtype) property is used to change the series plotting type to *line*, *column*, *scatter*,*spline*,*rangeColumn*,*stackingArea* or *area*. The default value of [`drawType`](../api/ejchart#members:series-drawtype) is **"line"**.
+Radar [`drawType`](../api/ejchart#members:series-drawtype) property is used to change the series plotting type to *line*, *column*, *scatter*, *spline*, *rangeColumn*, *stackingArea* or *area*. The default value of [`drawType`](../api/ejchart#members:series-drawtype) is **"line"**.
 
 {% highlight javascript %}
 
