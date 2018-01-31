@@ -26,7 +26,7 @@ Ports act as the connection points of node and allows to create connections with
 
 ### Add ports when initializing nodes
 
-To add a connection port, you need to define the port object and add it to node's `ports` collection. The `offset` property of port accepts an object of fractions and used to determine the position of ports. The following code illustrates how to add ports when initializing the node.
+To add a connection port, you need to define the port object and add it to node's [ports](/api/js/ejdiagram#members:nodes-ports "ports") collection. The [offset](/api/js/ejdiagram#members:nodes-ports-offset "offset") property of port accepts an object of fractions and used to determine the position of ports. The following code illustrates how to add ports when initializing the node.
 
 {% highlight javascript %}
 
@@ -110,12 +110,12 @@ diagram.updatePort(selectedObject.name, selectedObject.ports[0], { fillColor: "r
 
 ## Connect with ports
 
-Connector’s `sourcePort` and `targetPort` properties allow to create connections between some specific points of source/target nodes. 
+Connector’s [sourcePort](/api/js/ejdiagram#members:connectors-sourceport "sourcePort") and [targetPort](/api/js/ejdiagram#members:connectors-targetport "targetPort") properties allow to create connections between some specific points of source/target nodes. 
 For more information about creating connections with port, refer to [Connections with ports](/js/Diagram/Connector#connections-with-ports "Connections with ports")
 
 ## Appearance 
 
-You can change the shape of port by using its `shape` property. To explore the different types of port shapes, refer to [Port Shapes](/api/js/ejdiagram#members:nodes-ports-shape "Port Shapes").
+You can change the shape of port by using its [shape](/api/js/ejdiagram#members:nodes-ports-shape "shape") property. To explore the different types of port shapes, refer to [Port Shapes](/api/js/ejdiagram#members:nodes-ports-shape "Port Shapes").
 The appearance of ports can be customized with a set of style specific properties. 
 
 The following code illustrates how to change the appearance of port.
@@ -147,4 +147,4 @@ var nodes = [{ name: "node", ports: ports }];
 
 ## Constraints
 
-The `constraints` property allows to enable/disable certain behaviors of ports. For more information about port constraints, refer to [Port Constraints](/js/Diagram/Constraints#portconstraints)
+The [constraints](/api/js/ejdiagram#members:nodes-ports-constraints "constraints") property allows to enable/disable certain behaviors of ports. For more information about port constraints, refer to [Port Constraints](/js/Diagram/Constraints#portconstraints)

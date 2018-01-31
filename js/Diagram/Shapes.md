@@ -21,7 +21,7 @@ Diagram provides support to add different kind of nodes. They are as follows.
 
 ## Text
 
-Texts can be added to the Diagram as text nodes. For text nodes, the `type` should be set as "text". In addition, you need to define the `textBlock` object that is used to define the `text` to be added and to customize the appearance of that text. The following code illustrates how to create a text node.
+Texts can be added to the Diagram as text nodes. For text nodes, the [type](/api/js/ejdiagram#members:nodes-type "type") should be set as "text". In addition, you need to define the [textBlock](/api/js/ejdiagram#members:nodes-textblock "textBlock") object that is used to define the `text` to be added and to customize the appearance of that text. The following code illustrates how to create a text node.
 
 {% highlight javascript %}
 
@@ -48,7 +48,7 @@ var nodes = [{
 ![](/js/Diagram/Shapes_images/Shapes_img59.png)
 
 ## Image
-Diagram allows to add images as image nodes. For image nodes, the `type` should be set as "image". In addition, the `source` property of node enables you to set the image source. 
+Diagram allows to add images as image nodes. For image nodes, the [type](/api/js/ejdiagram#members:nodes-type "type") should be set as "image". In addition, the [source](/api/js/ejdiagram#members:nodes-source "source") property of node enables you to set the image source. 
 
 The following code illustrates how an **Image** node is created.
 
@@ -81,7 +81,7 @@ Link1: http://stackoverflow.com/questions/4761711/local-image-in-canvas-in-chrom
 
 You can stretch and align the image content anywhere but within the node boundary.
 
-The `contentAlignment` property of node allows to align an image within the node boundary. The `scale` property of node allows to stretch the image as you desired (either to maintain proportion or to stretch). By default, the `scale` property of node is set as "meet".
+The `contentAlignment` property of node allows to align an image within the node boundary. The [scale](/api/js/ejdiagram#nodesscale-enum "scale") property of node allows to stretch the image as you desired (either to maintain proportion or to stretch). By default, the `scale` property of node is set as "meet".
 The following code illustrates how to scale or stretch the content of the image node.
 
 {% highlight javascript %}
@@ -120,7 +120,7 @@ The following tables illustrates all the possible scale options for the image no
 
 ## HTML
 
-**Html** elements can be embedded in the Diagram through **Html** type node. To create a HTML node, you need to set the `type` of node as "html". In addition, you need to set the id of HTML template to the `templateId` property of node. The following code illustrates how an **Html** node is created.
+**Html** elements can be embedded in the Diagram through **Html** type node. To create a HTML node, you need to set the [type](/api/js/ejdiagram#members:nodes-type "type") of node as "html". In addition, you need to set the id of HTML template to the [templateId](/api/js/ejdiagram#members:nodes-templateid "templateId") property of node. The following code illustrates how an **Html** node is created.
 
 {% highlight html %}
 
@@ -158,7 +158,7 @@ N> HTML node cannot be exported to image format, like JPEG, PNG, and BMP. It is 
 
 ## Native
 
-**Diagram** provides support to embed **SVG** element into a node. To create a native node, the `type` node should be set as "native". Also, you need to define the id of the SVG template by using the `templateId` property of node. The following code illustrates how a **Native node** is created.
+**Diagram** provides support to embed **SVG** element into a node. To create a native node, the [type](/api/js/ejdiagram#members:nodes-type "type") node should be set as "native". Also, you need to define the id of the SVG template by using the [templateId](/api/js/ejdiagram#members:nodes-templateid "templateId") property of node. The following code illustrates how a **Native node** is created.
 
 {% highlight html %}
 
@@ -197,7 +197,7 @@ N> Like HTML node, Native node also cannot be exported to image format. Fill col
 
 You can stretch and align the svg content anywhere but within the node boundary.
 
-The `contentAlignment` property of node allows to align the svg content within the node boundaries. The `scale` property of node allows to stretch the svg content as you desired(either to maintain proportion or to stretch).By default, the `scale` property of node is set as "meet".
+The `contentAlignment` property of node allows to align the svg content within the node boundaries. The [scale](/api/js/ejdiagram#nodesscale-enum "scale") property of node allows to stretch the svg content as you desired(either to maintain proportion or to stretch).By default, the `scale` property of node is set as "meet".
 The following code illustrates how to scale or stretch the content of the node.
 
 {% highlight html %}
@@ -253,7 +253,7 @@ The following tables illustrates all the possible scale options for the node
 
 ## Basic Shapes
 
-The Basic shapes are common shapes that are used to represent the geometrical information visually. To create basic shapes, the `type` of the node should be set as "basic". Its `shape` property can be set with any one of the built-in shape. [Basic Shapes](/api/js/ejdiagram#members:nodes-shape "Basic Shapes"). 
+The Basic shapes are common shapes that are used to represent the geometrical information visually. To create basic shapes, the [type](/api/js/ejdiagram#members:nodes-type "type") of the node should be set as "basic". Its [shape](/api/js/ejdiagram#members:nodes-shape "shape") property can be set with any one of the built-in shape. [Basic Shapes](/api/js/ejdiagram#members:nodes-shape "Basic Shapes"). 
 The following code example illustrates how to create a basic shape. 
 
 {% highlight javascript %}
@@ -294,7 +294,7 @@ N> When the `shape` is not set for a basic shape, it is considered a "rectangle"
 
 ## Path
 
-Path node is a commonly used basic shape that allows visually to represent the geometrical information. To create a path node, You need to specify the `type` as "basic" and the `shape` as "path". The `pathData` property of node allows you to define the path to be drawn. The following code illustrates how a Path node is created.
+Path node is a commonly used basic shape that allows visually to represent the geometrical information. To create a path node, You need to specify the [type](/api/js/ejdiagram#members:nodes-type "type") as "basic" and the [shape](/api/js/ejdiagram#members:nodes-shape "shape") as "path". The [pathData](/api/js/ejdiagram#members:nodes-pathdata "pathData") property of node allows you to define the path to be drawn. The following code illustrates how a Path node is created.
 
 {% highlight javascript %}
 
@@ -322,7 +322,7 @@ The list of basic shapes are as follows.
 
 ## Flow Shapes
 
-The flow shapes are used to represent the process flow. It is used for analyzing, designing, and managing for documentation process. To create a flow shape, you need to specify the `type` as "flow". Its `shape` property can be set with any one of the built-in shape. [Flow Shapes](/api/js/ejdiagram#members:nodes-shape "Flow Shapes") and by default, it is considered as "process". The following code example illustrates how to create a flow shape. 
+The flow shapes are used to represent the process flow. It is used for analyzing, designing, and managing for documentation process. To create a flow shape, you need to specify the [type](/api/js/ejdiagram#members:nodes-type "type") as "flow". Its [shape](/api/js/ejdiagram#members:nodes-shape "shape") property can be set with any one of the built-in shape. [Flow Shapes](/api/js/ejdiagram#members:nodes-shape "Flow Shapes") and by default, it is considered as "process". The following code example illustrates how to create a flow shape. 
 
 {% highlight javascript %}
 
