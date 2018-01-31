@@ -2166,7 +2166,7 @@ Polar chart is created by setting the series [`type`](../api/ejchart#members:ser
 
 ### DrawType
 
-Polar [`drawType`](../api/ejchart#members:series-drawtype) property is used to change the series plotting type to *line*, *column* or *area*. The default value of [`drawType`](../api/ejchart#members:series-drawtype) is **"line"**.  
+Polar [`drawType`](../api/ejchart#members:series-drawtype) property is used to change the series plotting type to *line*, *column*, *scatter*,*rangeColumn*,*spline*,*stackingArea* or *area*. The default value of [`drawType`](../api/ejchart#members:series-drawtype) is **"line"**.  
 
 {% highlight javascript %}
 
@@ -2236,103 +2236,7 @@ By using the [`isStacking`](../api/ejchart#members:series-isstacking) property, 
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/windrose) here to view the Polar Wind Rose Chart online demo sample.
 
-### Scatter in Polar and Radar:
 
-Polar drawType property is used to change the series of plotting type to scatter .The default value of drawType is "line".The code snippet to enable the drawType as scatter is attached below.
-
-{% highlight javascript %}
-
-
-       $("#container").ejChart({
-               
-            series: [{
-                   //Change polar series drawType
-                   drawType: 'scatter',
-                                        
-               }],               
-            
-                        
-        });
-
-
-
-{% endhighlight %}
-
-![](/js/Chart/Chart-Types_images/Chart-Types_img99.png)
-
-### RangeColumn in Polar and Radar:
-
-Polar drawType property is used to change the series of plotting type to rangeColumn .The default value of drawType is "line".The code snippet to enable the drawType as rangeColumn  is attached below.
-
-{% highlight javascript %}
-
-
-       $("#container").ejChart({
-               
-            series: [{
-                   //Change polar series drawType
-                    drawType: 'rangecolumn',
-
-               }],               
-            
-                        
-        });
-
-
-
-{% endhighlight %}
-
-![](/js/Chart/Chart-Types_images/Chart-Types_img100.png)
-
-### Spline in Polar and Radar:
-
-Polar drawType property is used to change the series of plotting type to spline .The default value of drawType is "line".The code snippet to enable the drawType as spline is attached below.
-
-{% highlight javascript %}
-
-
-       $("#container").ejChart({
-               
-            series: [{
-                   //Change polar series drawType
-                    drawType: 'spline',
-
-               }],               
-            
-                        
-        });
-
-
-
-{% endhighlight %}
-
-![](/js/Chart/Chart-Types_images/Chart-Types_img101.png)
-
-### StackingArea in Polar and Radar:
-
-Polar drawType property is used to change the series of plotting type to Area .The StackingArea is enabled by isStacking property as true.The default value of drawType is "line".The code snippet to enable the isStacking property is attached below.
-
-{% highlight javascript %}
-
-
-       $("#container").ejChart({
-               
-            series: [{
-                   //Change polar series drawType
-                   
-                   drawType: 'Area',
-                   isStacking: true
-
-               }],               
-            
-                        
-        });
-
-
-
-{% endhighlight %}
-
-![](/js/Chart/Chart-Types_images/Chart-Types_img102.png)
 
 
 ## Radar Chart  
@@ -2365,7 +2269,7 @@ To create a Radar chart, you can specify the series [`type`](../api/ejchart#memb
 
 ### DrawType
 
-Radar [`drawType`](../api/ejchart#members:series-drawtype) property is used to change the series plotting type to *line*, *column* or *area*. The default value of [`drawType`](../api/ejchart#members:series-drawtype) is **"line"**.
+Radar [`drawType`](../api/ejchart#members:series-drawtype) property is used to change the series plotting type to *line*, *column*, *scatter*,*spline*,*rangeColumn*,*stackingArea* or *area*. The default value of [`drawType`](../api/ejchart#members:series-drawtype) is **"line"**.
 
 {% highlight javascript %}
 
