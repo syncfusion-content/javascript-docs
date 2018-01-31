@@ -157,4 +157,16 @@ public ActionResult BatchUpdate( List<ItemDetail> changed,  List<ItemDetail> add
 
 To save and retrieve the Spreadsheet data in the database, you can refer this [`Knowledge Base`](https://www.syncfusion.com/kb/7567/how-to-save-and-retrieve-the-spreadsheet-data-in-database "Knowledge Base") link.
 
-You can update data dynamically in the Spreadsheet by using [`updateRange`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:updaterange "updateRange") method.
+You can update data dynamically in the Spreadsheet by using the following methods.
+
+* Using [`updateRange`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:updaterange "updateRange") method to update the range of cells based on the specified settings.
+* Using [`updateData`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:updatedata "updateData") method to update the data for the specified range of cells in the Spreadsheet.
+* Using [`updateUniqueData`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:updateuniquedata "updateUniqueData") method to update the unique data for the specified range of cells in Spreadsheet.
+* Using [`updateCell`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xledit-updatecell "updateCell") method to update a particular cell value in the Spreadsheet.
+
+You can update range dynamically in the Spreadsheet by using the following methods.
+
+* Using [`editRange`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:editrange "editRange") method to edit data in the specified range of cells based on its corresponding rangeSettings.
+* Using [`removeRange`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:removerange "removeRange") method to remove the range data and its defined rangeSettings property based on the specified range name.
+
+ N> To get the property value of particular cell, based on the row and column index in the Spreadsheet use [`getPropertyValue`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xledit-getpropertyvalue "getPropertyValue")
