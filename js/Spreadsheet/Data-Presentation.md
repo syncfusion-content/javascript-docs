@@ -106,6 +106,8 @@ You can perform the following customizations for chart. These are available in D
     <tr><td>Chart Type</br></td><td>{{'[`changeType`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlchart-changetype  "changeType")'| markdownify }}</br></td><td>You can change the type of the chart using Chart Type dialog.</br></td></tr>
     <tr><td>Height and Width</br></td><td>{{'[`height`](https://help.syncfusion.com/api/js/ejspreadsheet#members:chartsettings-height  "height")'| markdownify }} and {{'[`width`](https://help.syncfusion.com/api/js/ejspreadsheet#members:chartsettings-width  "width")'| markdownify }}</br></td><td>You can change the height and width of the chart.</br></td></tr>
     <tr><td>Chart Themes</br></td><td>{{'[`changeTheme`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlchart-changetheme "changeTheme")'| markdownify }}</br></td><td>You can change the theme of the chart. The available themes are saffron, lemon and azure in dark, light themes.</br></td></tr>
+    <tr><td>Refresh Chart</br></td><td>{{'[`refreshChart`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlchart-refreshchart  "refreshChart")'| markdownify }}</br></td><td>To refresh the chart in the Spreadsheet.</br></td></tr>
+    <tr><td>Resize Chart</br></td><td>{{'[`resizeChart`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlchart-resizechart  "resizeChart")'| markdownify }}</br></td><td>To resize the chart of specified id in the Spreadsheet.</br></td></tr>
 </table>
 
 The following code example describes the above behavior.
@@ -362,8 +364,12 @@ You can do this by one of the following ways,
 * Using [`deletePivotTable`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlpivot-deletepivottable "deletePivotTable") method to remove the pivot table.
 
 In Pivot table we have following options, 
+
 * Using [`clearPivotFieldList`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlpivot-clearpivotfieldlist "clearPivotFieldList") method to clear the pivot table list in Spreadsheet.
 * Using [`refreshDataSource`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlpivot-refreshdatasource "refreshDataSource") method to refresh data in pivot table.
+* Using [`showActivationPanel`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:showactivationpanel "showActivationPanel") method to show the pivot table activationPanel in the Spreadsheet.
+* Using [`hideActivationPanel`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:hideactivationpanel "hideActivationPanel") method to hide the pivot table activationPanel in the Spreadsheet.
+* Using [`apWidth `](https://help.syncfusion.com/api/js/ejspreadsheet#members:apwidth "apWidth ") method to define the width of the activation panel in Spreadsheet.
 
 The following code example describes the above behavior.
 {% highlight html %}
