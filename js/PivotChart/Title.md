@@ -11,7 +11,7 @@ api: /api/js/ejpivotchart
 # Title
 
 ## Title Text
-By using the [`title.text`](/api/js/ejchart#members:title-text) property, you can add the title text for PivotChart.
+By using the [`title.text`](/api/js/ejchart#members:title-text) property, you can add the title text for pivot chart.
  
 
 {% highlight javascript %}
@@ -33,7 +33,7 @@ $(function () {
 
 ## Title Alignment
 
-By using the [`title.textAlignment`](/api/js/ejchart#members:title-textalignment) property, you can align the PivotChart controls title text to center, far or near.
+By using the [`title.textAlignment`](/api/js/ejchart#members:title-textalignment) property, you can align the pivot chart controls title text to center, far or near.
 
 {% highlight javascript %}
 

@@ -12,7 +12,7 @@ api: /api/js/ejpivotchart
 
 ## Creating a simple application with PivotChart and Relational datasource (Client Mode)
 
-This section covers the basic information required to populate a simple PivotChart with Relational data completely on the client-side.  
+This section covers the basic information required to populate a simple pivot chart with [`Relational`](/api/js/ejpivotchart#members:analysismode) data completely on the [`client-side`](/api/js/ejpivotchart#members:operationalmode).
 
 ### Scripts and CSS References
 
@@ -24,7 +24,7 @@ Create a HTML page and add scripts and style sheets that are mandatorily require
 
 ### Initialize PivotChart
 
-Place a "div" tag in the HTML page which acts as a container for the PivotChart widget.  Then initialize the widget using the "ejPivotChart" method.
+Place a "div" tag in the HTML page which acts as a container for the pivot chart widget.  Then initialize the widget using the "ejPivotChart" method.
 
 {% highlight html %}
 
@@ -53,7 +53,7 @@ Place a "div" tag in the HTML page which acts as a container for the PivotChart 
 
 ### Populate PivotChart With Data
 
-Let us now see how to populate the PivotChart control using a sample JSON data as shown below. 
+Let us now see how to populate the pivot chart control using a sample JSON data as shown below.
 
 {% highlight html %}
 
@@ -66,7 +66,7 @@ var pivotData = [
 ];
 {% endhighlight %}
 
-Now set the JSON data to the **"data"** property available inside the **"dataSource"** object.  The **"dataSource"** object allows us to set the raw data input and the fields that need to be displayed in the row, column, value and filter section of the PivotChart control. 
+Now set the JSON data to the **"data"** property available inside the **"dataSource"** object.  The **"dataSource"** object allows us to set the raw data input and the fields that need to be displayed in the row, column, value and filter section of the pivot chart control.
 
 {% highlight html %}
 
@@ -90,9 +90,9 @@ Now set the JSON data to the **"data"** property available inside the **"dataSou
             $(function () {
                 $("#PivotChart1").ejPivotChart({
                     dataSource: {
-                        //Datasource bound to PivotChart control.
+                        //Datasource bound to pivot chart control.
                         data: pivotData,
-                        //Required fields in row, column, value and filter areas of PivotChart control.
+                        //Required fields in row, column, value and filter areas of pivot chart control.
                         rows: [
                             {
                                 fieldName: "Country",
@@ -123,9 +123,219 @@ Now set the JSON data to the **"data"** property available inside the **"dataSou
 </html>
 {% endhighlight %}
 
-The above code will generate a simple PivotChart with sales amount over a range of products across different locations. 
+The above code will generate a simple pivot chart with sales amount over a range of products across different locations.
 
 ![](Relational-Getting-Started_images/PopulatePivotChartWithData.png)
+
+The following table will explain the [`relational`](/api/js/ejpivotchart#members:analysismode) [`datasource`](/api/js/ejpivotchart#members:datasource) properties at [`client-side`](/api/js/ejpivotchart#members:operationalmode) in detail:
+
+<table>
+    <tr>
+        <th>
+            Properties
+        </th>
+        <th>
+            Description
+        </th>
+    </tr>
+    <tr>
+        <td>
+            {{'[`columns`](https://help.syncfusion.com//api/js/ejpivotchart#members:datasource-columns "columns")'| markdownify }}
+        </td>
+        <td>
+            Lists out the items to be arranged in the columns section of the PivotGrid.
+             <table class="params">
+            <thead>
+            <tr>
+            <th>Properties</th>
+            <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td>{{'[`fieldName`](https://help.syncfusion.com//api/js/ejpivotchart#members:datasource-columns-fieldname "fieldName")'| markdownify }} </td>
+            <td>Allows you to bind the item by using its unique name as field name.</td>
+            </tr>
+            <tr>
+            <td>{{'[`fieldCaption`](https://help.syncfusion.com//api/js/ejpivotchart#members:datasource-columns-fieldcaption "fieldCaption")'| markdownify }}</td>
+            <td>Allows you to set the display caption for an item.</td>
+            </tr>
+            <tr>
+            <td>{{'[`sortOrder`](https://help.syncfusion.com//api/js/ejpivotchart#members:datasource-columns-sortorder "sortOrder")'| markdownify }}</td>
+            <td>Allows you to set the sorting order of members of the field.</td>
+            </tr>
+            <tr>
+            <td>{{'[`filterItems`](https://help.syncfusion.com//api/js/ejpivotchart#members:datasource-columns-filteritems "filterItems")'| markdownify }}</td>
+            <td>Applies the filter to field members.
+            <table class="params">
+            <thead>
+            <tr>
+            <th>Properties</th>
+            <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td>
+                {{'[`filterType`](https://help.syncfusion.com//api/js/ejpivotchart#members:datasource-columns-filteritems-filtertype "filterType")'| markdownify }} </td>
+            <td>Sets the type of filter to include/exclude the mentioned values.</td>
+            </tr>
+            <tr>
+            <td>
+                {{'[`values`](https://help.syncfusion.com//api/js/ejpivotchart#members:datasource-columns-filteritems-values "values")'| markdownify }} </td>
+            <td>Contains the collection of items to be included/excluded among the field members.</td>
+            </tr>
+            </tbody>
+            </table>
+            </td>
+            </tr>
+            </tbody>
+            </table>
+            </td>
+            </tr>
+            <tr>
+        <td>
+            {{'[`rows`](https://help.syncfusion.com//api/js/ejpivotchart#members:datasource-rows "rows")'| markdownify }}
+        </td>
+        <td>
+            Lists out the items to be arranged in the rows section of the PivotGrid.
+             <table class="params">
+            <thead>
+            <tr>
+            <th>Properties</th>
+            <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td>{{'[`fieldName`](https://help.syncfusion.com//api/js/ejpivotchart#members:datasource-rows-fieldname "fieldName")'| markdownify }} </td>
+            <td>Allows you to bind the item by using its unique name as field name.</td>
+            </tr>
+            <tr>
+            <td>{{'[`fieldCaption`](https://help.syncfusion.com//api/js/ejpivotchart#members:datasource-rows-fieldcaption "fieldCaption")'| markdownify }}</td>
+            <td>Allows you to set the display caption for an item.</td>
+            </tr>
+            <tr>
+            <td>{{'[`sortOrder`](https://help.syncfusion.com//api/js/ejpivotchart#members:datasource-rows-sortorder "sortOrder")'| markdownify }}</td>
+            <td>Allows you to set the sorting order of members of the field.</td>
+            </tr>
+            <tr>
+            <td>{{'[`filterItems`](https://help.syncfusion.com//api/js/ejpivotchart#members:datasource-rows-filteritems "filterItems")'| markdownify }}</td>
+            <td>Applies the filter to field members.
+            <table class="params">
+            <thead>
+            <tr>
+            <th>Properties</th>
+            <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td>
+                {{'[`filterType`](https://help.syncfusion.com//api/js/ejpivotchart#members:datasource-rows-filteritems-filtertype "filterType")'| markdownify }} </td>
+            <td>Sets the type of filter to include/exclude the mentioned values.</td>
+            </tr>
+            <tr>
+            <td>
+                {{'[`values`](https://help.syncfusion.com//api/js/ejpivotchart#members:datasource-rows-filteritems-values "values")'| markdownify }} </td>
+            <td>Contains the collection of items to be included/excluded among the field members.</td>
+            </tr>
+            </tbody>
+            </table>
+            </td>
+            </tr>
+            </tbody>
+            </table>
+            </td>
+            </tr>
+            <tr>
+        <td>
+            {{'[`values`](https://help.syncfusion.com//api/js/ejpivotchart#members:datasource-values "values")'| markdownify }}
+        </td>
+        <td>
+            Lists out the items that support calculation in the PivotGrid.
+             <table class="params">
+            <thead>
+            <tr>
+            <th>Properties</th>
+            <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td>{{'[`fieldName`](https://help.syncfusion.com//api/js/ejpivotchart#members:datasource-values-fieldname "fieldName")'| markdownify }} </td>
+            <td>Allows you to bind the item by using its unique name as field name for the relational datasource.</td>
+            </tr>
+            <tr>
+            <td>{{'[`fieldCaption`](https://help.syncfusion.com//api/js/ejpivotchart#members:datasource-values-fieldcaption "fieldCaption")'| markdownify }}</td>
+            <td>Allows you to set the display caption for the item in the relational datasource.</td>
+            </tr>
+            <tr>
+            <td>{{'[`isCalculatedField`](https://help.syncfusion.com//api/js/ejpivotchart#members:datasource-values-iscalculatedfield "isCalculatedField")'| markdownify }}</td>
+            <td>Indicates whether the field is a calculated field with the relational datasource or not.</td>
+            </tr>
+            <tr>
+            <td>{{'[`formula`](https://help.syncfusion.com//api/js/ejpivotchart#members:datasource-values-formula "formula")'| markdownify }}</td>
+            <td>Allows to set the formula for calculation of values for calculated members.</td>
+            </tr>
+            </tbody>
+            </table>
+            </td>
+            </tr>
+            <tr>
+        <td>
+            {{'[`filters`](https://help.syncfusion.com//api/js/ejpivotchart#members:datasource-filters "filters")'| markdownify }}
+        </td>
+        <td>
+            Lists out the items which supports filtering of values without displaying the members in UI of the PivotGrid.
+            <table class="params">
+            <thead>
+            <tr>
+            <th>Properties</th>
+            <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td>{{'[`fieldName`](https://help.syncfusion.com//api/js/ejpivotchart#members:datasource-filters-fieldname "fieldName")'| markdownify }} </td>
+            <td>Allows you to bind the item by using its unique name as field name.</td>
+            </tr>
+            <tr>
+            <td>{{'[`fieldCaption`](https://help.syncfusion.com//api/js/ejpivotchart#members:datasource-filters-fieldcaption "fieldCaption")'| markdownify }} </td>
+            <td>Allows you to set the display name for the item.</td>
+            </tr>
+            <tr>
+            <td>{{'[`filterItems`](https://help.syncfusion.com//api/js/ejpivotchart#members:datasource-filters-filteritems "filterItems")'| markdownify }}</td>
+            <td>Applies the filter to field members.
+            <table class="params">
+            <thead>
+            <tr>
+            <th>Property</th>
+            <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td>
+                {{'[`filterType`](https://help.syncfusion.com//api/js/ejpivotchart#members:datasource-filters-filteritems-filtertype "filterType")'| markdownify }} </td>
+            <td>Sets the type of filter to include/exclude the mentioned values.</td>
+            </tr>
+            <tr>
+            <td>
+                {{'[`values`](https://help.syncfusion.com//api/js/ejpivotchart#members:datasource-filters-filteritems-values "values")'| markdownify }} </td>
+            <td>Sets the type of filter to include/exclude the mentioned values.</td>
+            </tr>
+            </td>
+            </tr>
+            </tbody>
+            </table>
+            </td>
+            </tr>
+            </tbody>
+            </table>
+        </td>
+        </tr>
+            </table>
 
 ### Apply Sorting
 
@@ -202,9 +412,9 @@ $(function () {
 
 ## Creating a simple application with PivotChart and Relational datasource (Server Mode)
 
-This section covers the information required to create a simple PivotChart bound with Relational datasource from server-side. 
+This section covers the information required to create a simple pivot chart bound with [`Relational`](/api/js/ejpivotchart#members:analysismode) datasource from [`server-side`](/api/js/ejpivotchart#members:operationalmode).
 
-N>The illustration is done by creating a simple Web Application through Visual Studio IDE since PivotChart in ServerMode requires .NET dependency. The Web Application would contain a HTML page and a service which transfers data to server-side, processes and returns back the data to client-side for control rendering. The service utilized for communication could be either a WebAPI Controller Class or a WCF Service based on user requirement.  We have illustrated both for user convenience.
+N>The illustration is done by creating a simple Web Application through Visual Studio IDE since pivot chart in ServerMode requires .NET dependency. The Web Application would contain a HTML page and a service which transfers data to [`server-side`](/api/js/ejpivotchart#members:operationalmode), processes and returns back the data to [`client-side`](/api/js/ejpivotchart#members:operationalmode) for control rendering. The service utilized for communication could be either a WebAPI Controller Class or a WCF Service based on user requirement.  We have illustrated both for user convenience.
 
 ### Project Initialization
 
@@ -215,7 +425,7 @@ Next you need to add a HTML page. To add a HTML page in your Web Application, ri
 Now you need to set “GettingStarted.html” as start-up page. In-order to do so, right-click on “GettingStarted.html” page and select **“Set As Start Page”**.
 
 ### Scripts and CSS Initialization
-The scripts and style sheets that are mandatorily required to render a PivotChart widget inside a HTML page are highlighted below in an appropriate order.
+The scripts and style sheets that are mandatorily required to render a pivot chart widget inside a HTML page are highlighted below in an appropriate order.
 
 1. ej.web.all.min.css
 2. jQuery-3.0.0.min.js
@@ -231,7 +441,7 @@ NuGet Package: [Click here](https://help.syncfusion.com/js/installation-and-depl
 
 ### Control Initialization
 
-In-order to initialize a PivotChart widget, first you need to define a “div” tag with an appropriate “id” attribute which acts as a container for PivotChart widget. Then you need to initialize the widget using `ejPivotChart` method.
+In-order to initialize a pivot chart widget, first you need to define a “div” tag with an appropriate “id” attribute which acts as a container for pivot chart widget. Then you need to initialize the widget using `ejPivotChart` method.
 
 {% highlight html %}
 
@@ -264,7 +474,7 @@ In-order to initialize a PivotChart widget, first you need to define a “div”
 </html>
 {% endhighlight %}
 
-The “url” property in PivotChart widget points the service endpoint, where the data gets processed and fetched in the form of JSON. The services used for the PivotChart widget as endpoint are WebAPI and WCF.
+The [`url`](/api/js/ejpivotchart#members:url) property in pivot chart widget points the service endpoint, where the data gets processed and fetched in the form of JSON. The services used for the pivot chart widget as endpoint are WebAPI and WCF.
 
 N> The above "GettingStarted.html" contains WebAPI URL, which is **“/Relational”**. Suppose if you are using WCF service then the URL would look like **"/RelationalService.svc"**. 
 
@@ -335,7 +545,7 @@ namespace PivotChartDemo
 
 **Datasource Initialization**
 
-A simple collection is provided as a datasource for the PivotChart in this demo section. This datasource is placed inside a separate class “ProductSales” in `RelationalController.cs` file. Refer to the following code example.
+A simple collection is provided as a datasource for the pivot chart in this demo section. This datasource is placed inside a separate class “ProductSales” in `RelationalController.cs` file. Refer to the following code example.
 
 {% highlight c# %}
 
@@ -511,13 +721,13 @@ public class Global : System.Web.HttpApplication
 }
 {% endhighlight %}
 
-Now, PivotChart is rendered with sales amount details over a set of products across different countries. 
- 
+Now, pivot chart is rendered with sales amount details over a set of products across different countries.
+
 ![](Relational-Getting-Started_images/ServerMode.png)
 
 ### WCF
 
-This section demonstrates the utilization of WCF service as endpoint binding Relational datasource to a simple PivotChart. For more details on this topic, [click here](https://help.syncfusion.com/js/pivotchart/relational-connectivity#wcf-1).
+This section demonstrates the utilization of WCF service as endpoint binding [`Relational`](/api/js/ejpivotchart#members:analysismode) datasource to a simple pivot chart. For more details on this topic, [click here](https://help.syncfusion.com/js/pivotchart/relational-connectivity#wcf-1).
   
 
 

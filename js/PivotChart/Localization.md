@@ -12,9 +12,9 @@ api: /api/js/ejpivotchart
 
 ## Localization in PivotChart
 
-We can localize the PivotChart controls text with a collection of localized strings using [`ej.PivotChart.Locale`](/api/js/ejpivotchart#members:locale) for different cultures. By default, the PivotChart control is localized in **“en-US”.**
+We can localize the pivot chart controls text with a collection of localized strings using [`ej.PivotChart.Locale`](/api/js/ejpivotchart#members:locale) for different cultures. By default, the pivot chart control is localized in **“en-US”.**
 
-Following code example illustrates on how to localize PivotChart based on **“French”** culture.
+Following code example illustrates on how to localize pivot chart based on **“French”** culture.
 
 {% highlight javascript %}
 
@@ -50,7 +50,7 @@ Following code example illustrates on how to localize PivotChart based on **“F
 
 {% endhighlight %}
 
-Following table localizes the in-built keywords to **“French”** culture for PivotChart.
+Following table localizes the in-built keywords to **“French”** culture for pivot chart.
 
 <table>
 <tr>
@@ -90,10 +90,10 @@ Exit</td><td>
 
 ## Localization and Globalization of Cube Info (Client Mode)
 
-Content displayed within the PivotChart control are obtained from the OLAP Cube. So following are the steps that needs to be done to get the localized and globalized Cube content.
+Content displayed within the pivot chart control are obtained from the OLAP Cube. So following are the steps that needs to be done to get the localized and globalized Cube content.
 
 * To get localized data from OLAP Cube, we need to set **"Locale Identifier"** in the connection string to a specific culture in the **"data"** property present inside **"dataSource"**. 
-* To bind the globalized content in PivotChart control, we need to set **"locale"** property to a specific culture and want to refer specific culture file in the sample. 
+* To bind the globalized content in pivot chart control, we need to set **"locale"** property to a specific culture and want to refer specific culture file in the sample.
  
 N> Culture files are present under **"[installed drive]:\Users\ [user name]\AppData\Local\Syncfusion\EssentialStudio\X.X.X.X\JavaScript\samples\web\scripts\cultures".** 
  
@@ -113,10 +113,10 @@ N> Culture files are present under **"[installed drive]:\Users\ [user name]\AppD
 
 ## Localization and Globalization of Cube Info (Server Mode)
 
-Content displayed within the PivotChart control are obtained from the OLAP Cube. So following are the steps that needs to be done to get the localized and globalized Cube content.
+Content displayed within the pivot chart control are obtained from the OLAP Cube. So following are the steps that needs to be done to get the localized and globalized Cube content.
 
 * To get the localized string based on different cultures, from OLAP Cube, we need to set **"Locale Identifier"** in the connection string to a specific culture. 
-* To bind the globalized content in PivotChart control, we need to set **"Culture"** and **"OverrideDefaultFormatStrings"** properties in OlapDataManager class to a specific culture. 
+* To bind the globalized content in pivot chart control, we need to set **"Culture"** and **"OverrideDefaultFormatStrings"** properties in OlapDataManager class to a specific culture.
  
 {% highlight c# %}
 
@@ -129,4 +129,21 @@ DataManager.OverrideDefaultFormatStrings = true;
 {% endhighlight %}
 
 ![](Localization-and-Translation-support_images/Localization-and-Translation-support_img1.png) 
+
+## RTL
+
+You can enable or disable right to left using the [`enableRTL`](/api/js/ejpivotchart#members:enablertl) property in pivot chart.
+
+{% highlight js %}
+
+$("#PivotChart1").ejPivotChart({
+      enableRTL: true
+ });
+
+{% endhighlight %}
+
+![](Localization-and-Translation-support_images/Rtl.png)
+
+N> RTL is applicable only for tooltip of pivot chart.
+
 

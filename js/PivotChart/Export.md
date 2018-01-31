@@ -10,14 +10,14 @@ api: /api/js/ejpivotchart
 
 # Exporting
 
-The PivotChart control can be exported to the following file formats.
+The pivot chart control can be exported to the following file formats.
 
 * Excel
 * Word
 * PDF
 * Image
 
-The PivotChart control can be exported by invoking **“exportPivotChart”** method, with an appropriate export option as parameter.
+The pivot chart control can be exported by invoking [`exportPivotChart`](/api/js/ejpivotchart#methods:exportpivotchart) method, with an appropriate export option as parameter.
 
 {% highlight html %}
 
@@ -44,10 +44,10 @@ The PivotChart control can be exported by invoking **“exportPivotChart”** me
         {
             var chartObj = $('#PivotChart1').data("ejPivotChart");
             
-            //If you render PivotChart in Client Mode, set the export option like below.
+            //If you render pivot chart in Client Mode, set the export option like below.
             chartObj.exportPivotChart("http://js.syncfusion.com/ejservices/api/PivotChart/Olap/ExcelExport","fileName");
             
-            //If you render PivotChart in Server Mode, set the export option like below.
+            //If you render pivot chart in Server Mode, set the export option like below.
             chartObj.exportPivotChart(ej.PivotChart.ExportOptions.Excel);
         }
     </script>
@@ -56,7 +56,7 @@ The PivotChart control can be exported by invoking **“exportPivotChart”** me
 
 {% endhighlight %}
 
-When PivotChart is rendered in Server Mode, a service method needs to be added in WCF/WebAPI for server side operations.
+When pivot chart is rendered in Server Mode, a service method needs to be added in WCF/WebAPI for server side operations.
 
 For WebAPI controller, the below method needs to be added.
 
@@ -87,7 +87,7 @@ public void Export(System.IO.Stream stream) {
 
 ## Excel Export
 
-User can export contents of the PivotChart to Excel document for future archival, references and analysis purposes.
+User can export contents of the pivot chart to Excel document for future archival, references and analysis purposes.
 
 ### Client Mode
 
@@ -125,7 +125,7 @@ function exportBtnClick(args)
 
 ## Word Export
 
-User can export contents of the PivotChart to Word document for future archival, references and analysis purposes.
+User can export contents of the pivot chart to Word document for future archival, references and analysis purposes.
 
 ### Client Mode
 
@@ -163,7 +163,7 @@ function exportBtnClick(args)
 
 ## PDF Export
 
-User can export contents of the PivotChart to PDF document for future archival, references and analysis purposes.
+User can export contents of the pivot chart to PDF document for future archival, references and analysis purposes.
 
 ### Client Mode
 
@@ -201,7 +201,7 @@ function exportBtnClick(args)
 
 ## Image Export
 
-User can export contents of the PivotChart to image format for future archival, references and analysis purposes. We can export PivotChart to the following image formats.
+User can export contents of the pivot chart to image format for future archival, references and analysis purposes. We can export pivot chart to the following image formats.
 
 * PNG
 * EMF
@@ -211,7 +211,7 @@ User can export contents of the PivotChart to image format for future archival, 
 
 ### Client Mode
 
-To export PivotChart in PNG format, service URL, file name and **“ej.PivotChart.ExportOptions.PNG”** enumeration value is sent as the parameter. This is similar to other image formats.
+To export pivot chart in PNG format, service URL, file name and **“ej.PivotChart.ExportOptions.PNG”** enumeration value is sent as the parameter. This is similar to other image formats.
 
 {% highlight javascript %}
 
@@ -225,7 +225,7 @@ function exportBtnClick(args)
 
 ### Server Mode
 
-To export PivotChart in PNG format, **“ej.PivotChart.ExportOptions.PNG”** enumeration value is sent as the parameter. This is similar to other image formats.
+To export pivot chart in PNG format, **“ej.PivotChart.ExportOptions.PNG”** enumeration value is sent as the parameter. This is similar to other image formats.
 
 {% highlight javascript %}
 
@@ -240,11 +240,11 @@ function exportBtnClick(args)
 
 ## PivotChart - Exporting Format
 
-I> This option is applicable only for PivotChart specifically when exported to Excel document.
+I> This option is applicable only for pivot chart specifically when exported to Excel document.
 
-You can set an option to export PivotChart to an Excel document, either as image or PivotChart format itself by setting the boolean property `exportChartAsImage`, inside the `beforeExport` event.
+You can set an option to export pivot chart to an Excel document, either as image or pivot chart format itself by setting the boolean property `exportChartAsImage`, inside the `beforeExport` event.
 
-N> By default PivotChart will be exported as image format to Excel document.
+N> By default pivot chart will be exported as image format to Excel document.
 
 {% highlight javascript %}
 
@@ -299,10 +299,10 @@ N> Title and description cannot be added to image formats.
         {
             var chartObj = $('#PivotChart1').data("ejPivotChart");
             
-            //If you render PivotChart in Client Mode, set the export option like below.
+            //If you render pivot chart in Client Mode, set the export option like below.
             chartObj.exportPivotChart("http://js.syncfusion.com/ejservices/api/PivotChart/Olap/ExcelExport","fileName");
             
-            //If you render PivotChart in Server Mode, set the export option like below.
+            //If you render pivot chart in Server Mode, set the export option like below.
             chartObj.exportPivotChart(ej.PivotChart.ExportOptions.Excel);
         }
     </script>
@@ -454,18 +454,18 @@ public void Export(System.IO.Stream stream) {
 
 {% endhighlight %}
 
-The below screenshot shows the PivotChart control exported to Excel document.
+The below screenshot shows the pivot chart control exported to Excel document.
 
 ![](Export_images/Export_ExcelClient.png)
 
-The below screenshot shows the PivotChart control exported to Word document.
+The below screenshot shows the pivot chart control exported to Word document.
 
 ![](Export_images/Export_WordClient.png)
 
-The below screenshot shows the PivotChart control exported to PDF document.
+The below screenshot shows the pivot chart control exported to PDF document.
 
 ![](Export_images/Export_PDFClient.png)
 
-The below screenshot shows the PivotChart control exported to PNG format.
+The below screenshot shows the pivot chart control exported to PNG format.
 
 ![](Export_images/Export_PNGClient.png)

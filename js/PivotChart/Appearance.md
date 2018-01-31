@@ -12,7 +12,7 @@ api: /api/js/ejpivotchart
 
 ## Built-in Themes
 
-Following are the built-in themes available in the PivotChart.
+Following are the built-in themes available in the pivot chart.
 
 * flatlight
 * gradientlight
@@ -32,7 +32,7 @@ Following are the built-in themes available in the PivotChart.
 * bootstrap
 
 
-By using the [`theme`](/api/js/ejchart#members:theme) property, you can set the desired theme in PivotChart. By default, **“Flat Light”** theme is applied to PivotChart.
+By using the [`theme`](/api/js/ejchart#members:theme) property, you can set the desired theme in pivot chart. By default, **“Flat Light”** theme is applied to pivot chart.
 
 {% highlight javascript %}
 
@@ -53,7 +53,7 @@ By using the [`theme`](/api/js/ejchart#members:theme) property, you can set the 
 ## PivotChart - Area Customization
 
 ### Border Customization
-To customize the PivotChart border, use [`border`](/api/js/ejchart#members:border) property in PivotChart.
+To customize the pivot chart border, use [`border`](/api/js/ejchart#members:border) property in pivot chart.
 
 {% highlight javascript %}
 
@@ -77,7 +77,7 @@ To customize the PivotChart border, use [`border`](/api/js/ejchart#members:borde
 ![](Appearance_images/BorderCustomization.png)
 
 ### Margin Customization
-The PivotChart control [`margin`](/api/js/ejchart#members:margin) property is used to add the margin to the Chart area at left, right, top and bottom position.
+The pivot chart control [`margin`](/api/js/ejchart#members:margin) property is used to add the margin to the Chart area at left, right, top and bottom position.
 
 {% highlight javascript %}
 
@@ -102,7 +102,7 @@ The PivotChart control [`margin`](/api/js/ejchart#members:margin) property is us
 ![](Appearance_images/MarginCustomization.png)
 
 ### Background Customization
-The PivotChart control background can be customized by using the [`background`](/api/js/ejchart#members:chartarea-background) property in the Chart area.
+The pivot chart control background can be customized by using the [`background`](/api/js/ejchart#members:chartarea-background) property in the Chart area.
 
 {% highlight javascript %}
 
@@ -155,7 +155,7 @@ By using the [`alternateGridBand`](/api/js/ejchart#members:primaryxaxis-alternat
 ![](Appearance_images/GridBandsCustomization.png)
 
 ### Animation
-You can enable animation by using the [`enableAnimation`](/api/js/ejchart#members:commonseriesoptions-enableanimation) property under [`commonSeriesOptions`](/api/js/ejchart#members:commonseriesoptions) of the PivotChart control. This animates the Chart series on two occasions - when the Chart is loaded for the first time and when you change the series type by using the “type” property.
+You can enable animation by using the [`enableAnimation`](/api/js/ejchart#members:commonseriesoptions-enableanimation) property under [`commonSeriesOptions`](/api/js/ejchart#members:commonseriesoptions) of the pivot chart control. This animates the Chart series on two occasions - when the Chart is loaded for the first time and when you change the series type by using the “type” property.
 
 {% highlight javascript %}
 

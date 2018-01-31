@@ -12,9 +12,9 @@ api: /api/js/ejpivotchart
 
 ## Legend Visibility
 
-You can enable or disable legend using the [`visible`](/api/js/ejchart#members:legend-visible) property inside the [`legend`](/api/js/ejchart#members:legend) object. By default, legend is enabled in PivotChart.
+You can enable or disable legend using the [`visible`](/api/js/ejchart#members:legend) property inside the [`legend`](/api/js/ejchart#members:legend) object. By default, legend is enabled in pivot chart.
 
-N> By default, the legend is visible in PivotChart.
+N> By default, the legend is visible in pivot chart.
 
 {% highlight javascript %}
 
@@ -37,7 +37,7 @@ $(function()
 ![](Legend_images/Legend_img1.png) 
 
 ## Legend Shape
-You can customize the legend [`shape`](/api/js/ejchart#members:legend-shape) in PivotChart widget. Default value of legend shape is “Rectangle”. Following legend shapes that are supported:
+You can customize the legend [`shape`](/api/js/ejchart#members:legend-shape) in pivot chart widget. Default value of legend shape is “Rectangle”. Following legend shapes that are supported:
 
 * Rectangle
 * Circle
@@ -69,9 +69,9 @@ You can customize the legend [`shape`](/api/js/ejchart#members:legend-shape) in 
 ![](Legend_images/Legend_img2.png) 
 
 ## Legend Position
-By using the [`position`](/api/js/ejchart#members:legend-position) property, you can place the legend at top, bottom, left or right of the PivotChart. 
+By using the [`position`](/api/js/ejchart#members:legend-position) property, you can place the legend at top, bottom, left or right of the pivot chart.
 
-N> Default value of legend position is “bottom” in PivotChart.
+N> Default value of legend position is “bottom” in pivot chart.
 
 {% highlight javascript %}
 

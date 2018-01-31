@@ -11,7 +11,7 @@ api: /api/js/ejpivotchart
 # DataBinding 
 
 ## Binding PivotChart to Collection
-This section demonstrates binding of a collection to the PivotChart control as datasource. For more information on this datasource refer to the following links.
+This section demonstrates binding of a collection to the pivot chart control as datasource. For more information on this datasource refer to the following links.
 
 When you are using WebAPI controller, refer to the “Datasource Initialization” section under the following [link](https://help.syncfusion.com/js/pivotchart/relational-getting-started#creating-a-simple-application-with-pivotchart-and-relational-datasource-server-mode).
 
@@ -86,7 +86,7 @@ namespace PivotChartDemo
 
 **Datasource Initialization**
 
-A simple collection is provided as a datasource for our PivotChart in this demo section. This datasource is placed inside a separate class named “ProductSales” in `RelationalService.svc.cs` file. Refer to the following code example.
+A simple collection is provided as a datasource for our pivot chart in this demo section. This datasource is placed inside a separate class named “ProductSales” in `RelationalService.svc.cs` file. Refer to the following code example.
 
 {% highlight c# %}
 
@@ -259,6 +259,8 @@ namespace PivotChartDemo
 }
 {% endhighlight %}
 
+N> The [`customObject`](../api/ejpivotchart#members:customobject) utilized to pass additional information between client-end and service-end.
+
 **Configuring Web Configuration File**
 
 You can expose services through the properties such as binding, contract and address by using an endpoint.
@@ -302,7 +304,7 @@ The endpointBehaviors contain all the behaviors for an endpoint. You can link ea
 
 N> In this example, **“PivotChartDemo”** indicates the name and root namespace of the Web Application created in Visual Studio IDE and **“RelationalService”** indicates the name of the WCF service created.
 
-Now, PivotChart will be rendered with sales amount details over a set of products across different countries. 
+Now, pivot chart will be rendered with sales amount details over a set of products across different countries.
 
 ![](Relational-Connectivity_images/ServerModeWCF.png)
 

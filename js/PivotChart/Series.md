@@ -11,7 +11,7 @@ api: /api/js/ejpivotchart
 # Series
 
 ## Series Point Customization
-By using the [`fill`](/api/js/ejchart#members:series-fill) and [`border`](/api/js/ejchart#members:series-border) properties of Chart series, you can customize the PivotChart series color, border color and border width.
+By using the [`fill`](/api/js/ejchart#members:series-fill) and [`border`](/api/js/ejchart#members:series-border) properties of Chart series, you can customize the pivot chart series color, border color and border width.
  
 {% highlight javascript %}
 $(function()

@@ -11,7 +11,7 @@ api: /api/js/ejpivotchart
 # DataBinding 
 
 ## Binding PivotChart to Offline Cube
-To connect an OLAP Cube available in local machine, set the physical path of the Cube in the connection string. The following code example illustrates the same.
+To connect an [`OLAP`](/api/js/ejpivotchart#members:analysismode) Cube available in local machine, set the physical path of the Cube in the connection string. The following code example illustrates the same.
 
 {% highlight c# %}
 
@@ -20,7 +20,7 @@ OlapDataManager DataManager = new OlapDataManager(connectionString);
 {% endhighlight %}
 
 ## Binding PivotChart to Cube in local SQL Server
-To connect an OLAP Cube available in SQL Server Analysis Service in local machine, set the server name and database name in the connection string. When you have any credentials to connect your Cube, then set the “User ID” and “Password” attributes accordingly. The following code example illustrates the same.
+To connect an [`OLAP`](/api/js/ejpivotchart#members:analysismode) Cube available in SQL Server Analysis Service in local machine, set the server name and database name in the connection string. When you have any credentials to connect your Cube, then set the “User ID” and “Password” attributes accordingly. The following code example illustrates the same.
 
 {% highlight c# %}
 
@@ -29,7 +29,7 @@ OlapDataManager DataManager = new OlapDataManager(connectionString);
 {% endhighlight %}
 
 ## Binding PivotChart to Cube in online SQL Server
-To connect an OLAP Cube available in SQL Server Analysis Service in online server through **XML/A**, set the host server link and database name in the connection string. When you have any credentials to connect your Cube, then set the “User ID” and “Password” attributes accordingly. The following code example illustrates the same.
+To connect an [`OLAP`](/api/js/ejpivotchart#members:analysismode) Cube available in SQL Server Analysis Service in online server through **XML/A**, set the host server link and database name in the connection string. When you have any credentials to connect your Cube, then set the “User ID” and “Password” attributes accordingly. The following code example illustrates the same.
 
 {% highlight c# %}
 
@@ -38,7 +38,7 @@ OlapDataManager DataManager = new OlapDataManager(connectionString);
 {% endhighlight %}
 
 ## Binding PivotChart to Cube in online Mondrian Server
-To connect an OLAP Cube available in Mondrian Server through **XML/A**, set the host server link and database name in the connection string. When you have any credentials to connect your Cube, then set the “User ID” and “Password” attributes accordingly. The following code example illustrates the same.
+To connect an [`OLAP`](/api/js/ejpivotchart#members:analysismode) Cube available in Mondrian Server through **XML/A**, set the host server link and database name in the connection string. When you have any credentials to connect your Cube, then set the “User ID” and “Password” attributes accordingly. The following code example illustrates the same.
 
 {% highlight c# %}
 
@@ -48,7 +48,7 @@ DataManager.DataProvider.ProviderName = Syncfusion.Olap.DataProvider.Providers.M
 {% endhighlight %}
 
 ## Binding PivotChart to Cube in online ActivePivot Server
-To connect an OLAP Cube available in ActivePivot Server through **XML/A**, set the host server link and database name in the connection string. When you have any credentials to connect your Cube, then set the “User ID” and “Password” attributes accordingly. The following code example illustrates the same.
+To connect an [`OLAP`](/api/js/ejpivotchart#members:analysismode) Cube available in ActivePivot Server through **XML/A**, set the host server link and database name in the connection string. When you have any credentials to connect your Cube, then set the “User ID” and “Password” attributes accordingly. The following code example illustrates the same.
 
 {% highlight c# %}
 
@@ -128,7 +128,7 @@ namespace PivotChartDemo
 
 **Datasource Initialization**
 
-Now the connection string to connect OLAP Cube and PivotChart instances are created immediately inside the main class in `OlapService.svc.cs` file.
+Now the connection string to connect [`OLAP`](/api/js/ejpivotchart#members:analysismode) Cube and pivot chart instances are created immediately inside the main class in `OlapService.svc.cs` file.
 
 {% highlight c# %}
 
@@ -222,6 +222,8 @@ namespace PivotChartDemo
 }
 {% endhighlight %}
 
+N> The [`customObject`](../api/ejpivotchart#members:customobject) utilized to pass additional information between client-end and service-end.
+
 **Configuring Web Configuration File**
 
 You can expose services through the properties such as binding, contract and address by using an endpoint.
@@ -264,7 +266,7 @@ The endpointBehaviors contain all the behaviors for an endpoint. You can link ea
 
 N> In this example, “PivotChartDemo” indicates the name and root namespace of the Web Application created in Visual Studio IDE and “OlapService” indicates the name of the WCF service created.
 
-Now, PivotChart is rendered with Customer Count over a period of fiscal years across different customer geographic locations.
+Now, pivot chart is rendered with Customer Count over a period of fiscal years across different customer geographic locations.
 
 ![](OLAP-Connectivity_images/ServerModeWCF.png)
 

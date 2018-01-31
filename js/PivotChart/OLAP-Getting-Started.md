@@ -12,11 +12,11 @@ api: /api/js/ejpivotchart
 
 ## Creating a simple application with PivotChart and OLAP datasource (Client Mode)
 
-This section covers the information required to populate a simple PivotChart with OLAP data completely on the client-side.  
+This section covers the information required to populate a simple pivot chart with [`OLAP`](/api/js/ejpivotchart#members:analysismode) data completely on the [`client-side`](/api/js/ejpivotchart#members:operationalmode).
 
 ### Scripts and CSS References
 
-Create a HTML page and add scripts and style sheets that are mandatorily required to render a PivotChart widget which are highlighted below in an appropriate order.
+Create a HTML page and add scripts and style sheets that are mandatorily required to render a pivot chart widget which are highlighted below in an appropriate order.
 
 1. ej.web.all.min.css
 2. jQuery-3.0.0.min.js
@@ -24,7 +24,7 @@ Create a HTML page and add scripts and style sheets that are mandatorily require
 
 ### Initialize PivotChart
 
-Place a "div" tag in the HTML page which acts as a container for the PivotChart widget. Then initialize the widget using the "ejPivotChart" method.
+Place a "div" tag in the HTML page which acts as a container for the pivot chart widget. Then initialize the widget using the "ejPivotChart" method.
 
 {% highlight html %}
 
@@ -51,7 +51,7 @@ Place a "div" tag in the HTML page which acts as a container for the PivotChart 
 
 ### Populate PivotChart with DataSource
 
-Initialize the OLAP datasource for PivotChart widget as shown below.
+Initialize the [`OLAP`](/api/js/ejpivotchart#members:analysismode) datasource for pivot chart widget as shown below.
 
 {% highlight html %}
 
@@ -92,15 +92,173 @@ Initialize the OLAP datasource for PivotChart widget as shown below.
 </html>
 {% endhighlight %}
 
-The above code will generate a simple PivotChart showing Internet Sales Amount over a period of fiscal years across different customer geographic locations.
+The above code will generate a simple pivot chart showing Internet Sales Amount over a period of fiscal years across different customer geographic locations.
 
 ![](Olap-Getting-Started_images/OlapClientMode.png) 
 
+The following table will explain the [`OLAP`](/api/js/ejpivotchart#members:analysismode) [`datasource`](/api/js/ejpivotchart#members:datasource) properties at [`client-side`](/api/js/ejpivotchart#members:operationalmode) in detail:
+
+<table>
+    <tr>
+        <th>
+            Properties
+        </th>
+        <th>
+            Description
+        </th>
+    </tr>
+    <tr>
+    <td>
+        {{'[`cube`](https://help.syncfusion.com/api/js/ejpivotchart#members:datasource-cube "cube")'| markdownify }}
+    </td>
+    <td>
+        Contains the respective cube name as string type in the OLAP database.
+    </td>
+    </tr>
+    <tr>
+    <td>
+        {{'[`sourceInfo`](https://help.syncfusion.com/api/js/ejpivotchart#members:datasource-sourceinfo "sourceInfo")'| markdownify }}
+    </td>
+    <td>
+        To set the data source name to fetch the data.
+    </td>
+    </tr>
+    <tr>
+    <td>
+        {{'[`providerName`](https://help.syncfusion.com/api/js/ejpivotchart#members:datasource-providername "providerName")'| markdownify }}
+    </td>
+    <td>
+        Sets the provider name for PivotGrid to identify whether the provider is SSAS or Mondrian.
+    </td>
+    </tr>
+    <tr>
+    <td>
+        {{'[`data`](https://help.syncfusion.com/api/js/ejpivotchart#members:datasource-data "data")'| markdownify }}
+    </td>
+    <td>
+        Provides the raw data source for the PivotGrid.
+    </td>
+    </tr>
+    <tr>
+    <td>
+        {{'[`catalog`](https://help.syncfusion.com/api/js/ejpivotchart#members:datasource-catalog "catalog")'| markdownify }}
+    </td>
+    <td>
+        In connection with an OLAP database, this property contains the database name as string to fetch the data from the given connection string.
+    </td>
+    </tr>
+    <tr>
+        <td>
+            {{'[`columns`](https://help.syncfusion.com/api/js/ejpivotchart#members:datasource-columns "columns")'| markdownify }}
+        </td>
+        <td>
+            Lists out the items to be arranged in the columns section of the PivotGrid.
+             <table class="params">
+            <thead>
+            <tr>
+            <th>Properties</th>
+            <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td>{{'[`fieldName`](https://help.syncfusion.com/api/js/ejpivotchart#members:datasource-columns-fieldname "fieldName")'| markdownify }} </td>
+            <td>Allows you to bind the item by using its unique name as field name.</td>
+            </tr>
+            <tr>
+            <td>{{'[`fieldCaption`](https://help.syncfusion.com/api/js/ejpivotchart#members:datasource-columns-fieldcaption "fieldCaption")'| markdownify }}</td>
+            <td>Allows you to set the display caption for an item.</td>
+            </tr>
+            <tr>
+            <td>{{'[`isNamedSets`](https://help.syncfusion.com/api/js/ejpivotchart#members:datasource-columns-isnamedsets "isNamedSets")'| markdownify }}</td>
+            <td>Allows you to indicate whether the added item is a named set or not.</td>
+            </tr>
+            </tbody>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            {{'[`rows`](https://help.syncfusion.com/api/js/ejpivotchart#members:datasource-rows "rows")'| markdownify }}
+        </td>
+        <td>
+            Lists out the items to be arranged in the rows section of PivotGrid.
+             <table class="params">
+            <thead>
+            <tr>
+            <th>Properties</th>
+            <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td>{{'[`fieldName`](https://help.syncfusion.com/api/js/ejpivotchart#members:datasource-rows-fieldname "fieldName")'| markdownify }} </td>
+            <td>Allows you to bind the item by using its unique name as field name.</td>
+            </tr>
+            <tr>
+            <td>{{'[`fieldCaption`](https://help.syncfusion.com/api/js/ejpivotchart#members:datasource-rows-fieldcaption "fieldCaption")'| markdownify }}</td>
+            <td>Allows you to set the display caption for an item.</td>
+            </tr>
+            <tr>
+            <td>{{'[`isNamedSets`](https://help.syncfusion.com/api/js/ejpivotchart#members:datasource-rows-isnamedsets "isNamedSets")'| markdownify }}</td>
+            <td>Allows you to indicate whether the added item is a named set or not.</td>
+            </tr>
+            </tbody>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            {{'[`values`](https://help.syncfusion.com/api/js/ejpivotchart#members:datasource-values "values")'| markdownify }}
+        </td>
+        <td>
+            Lists out the items to be arranged in the rows section of PivotGrid.
+            <table class="params">
+            <thead>
+            <tr>
+            <th>Properties</th>
+            <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td>{{'[`axis`](https://help.syncfusion.com/api/js/ejpivotchart#members:datasource-values-axis "axis")'| markdownify }} </td>
+            <td>Allows you to set the axis name to place measures items.</td>
+            </tr>
+            <tr>
+            <td>{{'[`measures`](https://help.syncfusion.com/api/js/ejpivotchart#members:datasource-values-measures "measures")'| markdownify }}</td>
+            <td>This holds the list of unique names of measures to bind them from the OLAP cube.
+            <table class="params">
+            <thead>
+            <tr>
+            <th>Property</th>
+            <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td>
+                {{'[`fieldName`](https://help.syncfusion.com/api/js/ejpivotchart#members:datasource-values-measures-fieldName "fieldName")'| markdownify }} </td>
+            <td>Allows you to bind the measure from the OLAP datasource by using its unique name as field name.</td>
+            </tr>
+            </td>
+            </tr>
+            </tbody>
+            </table>
+            </td>
+            </tr>
+            </tbody>
+            </table>
+        </td>
+        </tr>
+
+</table>
+
 ## Creating a simple application with PivotChart and OLAP datasource (Server Mode)
 
-This section covers the information required to create a simple PivotChart bound to OLAP datasource.  
+This section covers the information required to create a simple pivot chart bound to [`OLAP`](/api/js/ejpivotchart#members:analysismode) datasource.
 
-N> We will be illustrating this section by creating a simple Web Application through Visual Studio IDE since PivotChart in ServerMode requires .NET dependency. The Web Application would contain a HTML page and a service that would transfer data to server-side, process and return back the data to client-side for control rendering. The service utilized for communication could be either WCF or WebAPI based on user requirement and we have illustrated both for user convenience.
+N> We will be illustrating this section by creating a simple Web Application through Visual Studio IDE since pivot chart in ServerMode requires .NET dependency. The Web Application would contain a HTML page and a service that would transfer data to [`server-side`](/api/js/ejpivotchart#members:operationalmode), process and return back the data to [`client-side`](/api/js/ejpivotchart#members:operationalmode) for control rendering. The service utilized for communication could be either WCF or WebAPI based on user requirement and we have illustrated both for user convenience.
 
 ### Project Initialization
 Create a new **ASP.NET Empty Web Application** by using Visual Studio IDE and name the project as **“PivotChartDemo”**.
@@ -110,7 +268,7 @@ Next you need to add a HTML page. To add a HTML page in your Web Application, ri
 Now you need to set “GettingStarted.html” as start-up page. In-order to do so, right-click on “GettingStarted.html” page and select **“Set As Start Page”**.
 
 ### Scripts and CSS Initialization
-The scripts and style sheets that are mandatorily required to render a PivotChart widget inside a HTML page are highlighted below in an appropriate order.
+The scripts and style sheets that are mandatorily required to render a pivot chart widget inside a HTML page are highlighted below in an appropriate order.
 
 1. ej.web.all.min.css
 2. jQuery-3.0.0.min.js
@@ -125,7 +283,7 @@ CDN Link: [Click here](https://help.syncfusion.com/js/cdn) to know more about sc
 NuGet Package: [Click here](https://help.syncfusion.com/js/installation-and-deployment#configuring-syncfusion-nuget-packages) to know more about script and style sheets available in NuGet package. 
 
 ### Control Initialization
-In-order to initialize a PivotChart widget, first you need to define a “div” tag with an appropriate “id” attribute which acts as a container for PivotChart widget. Then you need to initialize the widget using `ejPivotChart` method.
+In-order to initialize a pivot chart widget, first you need to define a “div” tag with an appropriate “id” attribute which acts as a container for pivot chart widget. Then you need to initialize the widget using `ejPivotChart` method.
     
 {% highlight html %}
 
@@ -158,7 +316,7 @@ In-order to initialize a PivotChart widget, first you need to define a “div”
 
 {% endhighlight %}
 
-The “url” property in PivotChart widget points the service endpoint, where data are processed and fetched in the form of JSON. The services used for the PivotChart widget as endpoint are WCF and WebAPI.
+The [`url`](/api/js/ejpivotchart#members:url) property in pivot chart widget points the service endpoint, where data are processed and fetched in the form of JSON. The services used for the pivot chart widget as endpoint are WCF and WebAPI.
 
 N> The above "GettingStarted.html" contains WebAPI URL, which is **“/Olap”**. Suppose if you are using WCF service then the URL would look like **"/OlapService.svc"**. 
 
@@ -253,7 +411,7 @@ namespace PivotChartDemo
 
 **Datasource Initialization**
 
-Now, the connection string to connect OLAP Cube and PivotChart instances are created immediately inside the main class in `OlapController.cs` file.
+Now, the connection string to connect [`OLAP`](/api/js/ejpivotchart#members:analysismode) Cube and pivot chart instances are created immediately inside the main class in `OlapController.cs` file.
 
 {% highlight c# %}
 
@@ -355,12 +513,12 @@ public class Global : System.Web.HttpApplication
 
 {% endhighlight %}
 
-Now, PivotChart will be rendered with Customer Count over a period of fiscal years across different customer geographic locations.
+Now, pivot chart will be rendered with Customer Count over a period of fiscal years across different customer geographic locations.
 
 ![](Olap-Getting-Started_images/ServerMode.png)
 
 ### WCF
-This section demonstrates the utilization of WCF service as endpoint binding OLAP datasource to a simple PivotChart. For more details on this topic, [click here](https://help.syncfusion.com/js/pivotchart/olap-connectivity#wcf).
+This section demonstrates the utilization of WCF service as endpoint binding [`OLAP`](/api/js/ejpivotchart#members:analysismode) datasource to a simple pivot chart. For more details on this topic, [click here](https://help.syncfusion.com/js/pivotchart/olap-connectivity#wcf).
 
 
 

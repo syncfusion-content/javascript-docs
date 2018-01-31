@@ -10,12 +10,12 @@ api: /api/js/ejpivotchart
 
 # 3D Visualization
 
-The PivotChart control allows you to view the data in a 3D view. Following are the chart types that are supported:
+The pivot chart control allows you to view the data in a 3D view. Following are the chart types that are supported:
 
 * Bar
 * Column
 * Stacking Bar
-* Stocking Column 
+* Stacking Column
 * Pie
 
 ## 3D Column Chart
