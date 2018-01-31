@@ -8,12 +8,16 @@ documentation: ug
 api: /api/js/ejheatmap
 ---
 
-#Items Mapping
+# Items Mapping
 
-External data source can be mapped with HeatMap using `itemsMapping` property. It supports 2 kind of data source.
+External data source can be mapped with HeatMap using [itemsMapping](/api/js/ejheatmap#members:itemsmapping "itemsMapping") property. It supports 2 kind of data source.
 
 * In `TableMapping` rows represents an objects in collection, columns represents numerical properties of that object.
 * In `CellMapping` each cell represent an object in collection, this collection is grouped based on specific property to form as rows and columns.
+* You can use [row](/api/js/ejheatmap#members:itemsmapping-row "row") and [column](/api/js/ejheatmap#members:itemsmapping-column "column") property to specify the rows and columns of heatmap.
+* You can use [propertyName](/api/js/ejheatmap#members:itemsmapping-row-propertyname "propertyName") property and [displayName](/api/js/ejheatmap#members:itemsmapping-row-displayname "displayName") property to specify name and value respectively for rows. similarly, you can use [propertyName](/api/js/ejheatmap#members:itemsmapping-column-propertyname "propertyName") property and [displayName](/api/js/ejheatmap#members:itemsmapping-column-displayname "displayName") property to specify name and value for columns.  
+* To bind the values for heatmap, use [value](/api/js/ejheatmap#members:itemsmapping-value "value") property.You can use [propertyName](/api/js/ejheatmap#members:itemsmapping-value-propertyname "propertyName") property and [displayName](/api/js/ejheatmap#members:itemsmapping-value-displayname "displayName") property to specify name and value respectively for row or column.
+
 
 Let us see the difference between two types of mapping. Following table represents two different data structure to represent the same HeatMap.
 

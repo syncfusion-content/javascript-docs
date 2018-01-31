@@ -83,6 +83,15 @@ $("#heatmap").ejHeatMap({
 Now data is ready, next we need to configure data source and map rows and columns to visualize.
 
 * Prepare `ItemsMapping` add it in resource.
+* To set size for the heatmap, use [width](/api/js/ejheatmap#members:width "width") and [height](/api/js/ejheatmap#members:height "height") property.
+* You can use [headerMapping](/api/js/ejheatmap#members:itemsmapping-headermapping "headerMapping") and [columnMapping](/api/js/ejheatmap#members:itemsmapping-columnmapping "columnMapping") property to map rows and columns of heatmap.
+* In headerMapping, you can use [propertyName](/api/js/ejheatmap#members:itemsmapping-headermapping-propertyname "propertyName") property and [displayName](/api/js/ejheatmap#members:itemsmapping-headermapping-displayname "displayName") property to specify name and value respectively for rows.
+* In columnMapping, you can use [propertyName](/api/js/ejheatmap#members:itemsmapping-columnmapping-propertyname "propertyName") property and [displayName](/api/js/ejheatmap#members:itemsmapping-columnmapping-displayname "displayName") property to specify name and value respectively for columns.
+* You can customize the individual heatmap column using [columnStyle](/api/js/ejheatmap#members:itemsmapping-columnstyle "columnStyle") [width](/api/js/ejheatmap#members:itemsmapping-columnstyle-width "width"), [textAlign](/api/js/ejheatmap#members:itemsmapping-columnstyle-textalign "textAlign"), [headerTemplateID](/api/js/ejheatmap#members:itemsmapping-columnstyle-headertemplateid "headerTemplateID") and [templateID](/api/js/ejheatmap#members:itemsmapping-columnstyle-templateid "templateID") property.
+* You can customize the entire heatmap column using [defaultColumnStyle](/api/js/ejheatmap#members:defaultcolumnstyle "defaultColumnStyle"), [textAlign](/api/js/ejheatmap#members:defaultcolumnstyle-textalign "textAlign"), [headerTemplateID](/api/js/ejheatmap#members:defaultcolumnstyle-headertemplateid "headerTemplateID") and [templateID](/api/js/ejheatmap#members:defaultcolumnstyle-templateid "templateID") property.
+* You can enable/disable virtualization for heatmap using [enableVirtualization](/api/js/ejheatmap#members:enablevirtualization "enableVirtualization") property.
+* You can enable/disable responsive mode for heatmap by using [isResponsive](/api/js/ejheatmap#members:isresponsive "isResponsive") property.
+* To hide the cell content, use [heatmapCell](/api/js/ejheatmap#members:heatmapcell "heatmapCell") [showContent](/api/js/ejheatmap#members:heatmapcell-showcontent "showContent") property as hidden and use [showColor](/api/js/ejheatmap#members:heatmapcell-showcolor "showColor") property to specify whether the cell color can be visible or not.
 
 {% highlight js %}
 
@@ -101,7 +110,7 @@ var columnMapping = [
      
 {% endhighlight %}
 
-* Set items source and mapping
+* Set [itemsSource](/api/js/ejheatmap#members:itemssource "itemsSource") and mapping
 
 {% highlight js %}
              
@@ -154,8 +163,16 @@ $("#heatmap").ejHeatMap({
 
 ## Tooltip
 
-HeatMap provides support to show tooltip when mouse hovers over any rows/columns. 
-To show tooltip on mouse over, the toolTipSettings property of model needs to be set with the toolTipSettings templateId and position as shown in the following example.
+* HeatMap provides support to show tooltip when mouse hovers over any rows/columns.
+* To show/hide the tooltip of heatmap, use [enableTooltip](/api/js/ejheatmap#members:enabletooltip "enableTooltip") property.
+* To show tooltip on mouse over, the [tooltipSettings](/api/js/ejheatmap#members:tooltipsettings "tooltipSettings") property of model needs to be set with the tooltipSettings [templateId](/api/js/ejheatmap#members:tooltipsettings-templateid "templateId") and [position](/api/js/ejheatmap#members:position "position") as shown in the following example.
+* To set the tooltip position related to target element, window, mouse or (x,y) co-ordinates, use tooltip [associate](/api/js/ejheatmap#members:tooltipsettings-associate "associate") property. 
+* To enable the arrow in tooltip, use [isBalloon](/api/js/ejheatmap#members:tooltipsettings-isballoon "isBalloon") property.
+* To set the tooltip position against the target, use [target](/api/js/ejheatmap#members:tooltipsettings-position-target "target") [horizontal](/api/js/ejheatmap#members:tooltipsettings-position-target-horizontal "horizontal") and [vertical](/api/js/ejheatmap#members:tooltipsettings-position-target-vertical "vertical") property.
+* To set the arrow position against popup, use [stem](/api/js/ejheatmap#members:tooltipsettings-position-stem "stem") [horizontal](/api/js/ejheatmap#members:tooltipsettings-position-stem-horizontal "horizontal") and [vertical](/api/js/ejheatmap#members:tooltipsettings-position-stem-vertical "vertical") property.
+* You can use [trigger](/api/js/ejheatmap#members:tooltipsettings-trigger "trigger") property which specify the event action to show case the Tooltip. 
+* You can set an [animation](/api/js/ejheatmap#members:tooltipsettings-animation "animation") for tooltip using [effect](/api/js/ejheatmap#members:tooltipsettings-animation-effect "effect") and [speed](/api/js/ejheatmap#members:tooltipsettings-animation-speed "speed") property.
+
 
 {% highlight html %}
 
@@ -196,7 +213,8 @@ $("#heatmap").ejHeatMap({
 
 # Legend
 
-A legend control is used to represent range value in a gradient, create a legend with the same color mapping as shown below.
+* A legend control is used to represent range value in a gradient, create a legend with the same color mapping as shown below.
+* You can use [legendCollection](/api/js/ejheatmap#members:legendcollection "legendCollection") to specify the number of legends that can sync with heat map.
   
 {% highlight js %}
 

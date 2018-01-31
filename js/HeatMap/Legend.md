@@ -12,9 +12,12 @@ api: /api/js/ejheatmaplegend
 
 Legend is a control used to summarize the range of colors in HeatMap. This gives visual guideline for mapping between value and color.
 
-##Create Legend
+## Create Legend
 
-Legend can be created with color mapping as shown below.
+* Legend can be created with color mapping as shown below.
+* You can set size for heatmap legend using [width](/api/js/ejheatmaplegend#members:width "width") and [height](/api/js/ejheatmaplegend#members:height "height") properties.
+* You can show/hide the cell label by using [showLabel](/api/js/ejheatmaplegend#members:showlabel "showLabel") property.
+* You can enable/disable responsive mode for heatmap legend by using [isResponsive](/api/js/ejheatmaplegend#members:isresponsive "isResponsive") property.
 
 {% highlight js %}
 
@@ -37,13 +40,13 @@ Resultant legend will be like following image.
 
 ![](Legend_images/Legend_img1.png)
  
-##Legend Mode
+## Legend Mode
 
-There are two modes for Legend
+There are two [legendMode](/api/js/ejheatmap#members:legendmode "legendMode") for Legend
 * Gradient
 * List
 
-###Gradient:
+### Gradient:
 
 {% highlight js %} 
 
@@ -58,7 +61,7 @@ $("#heatmap_legend").ejHeatMapLegend({
 
 ![](Legend_images/Legend_img2.png)
 
-###List:
+### List:
 
 {% highlight js %} 
 
@@ -73,13 +76,13 @@ $("#heatmap_legend").ejHeatMapLegend({
 
 ![](Legend_images/Legend_img3.png)
 
-##Orientation
+## Orientation
 
-There are 2 types of Orientation, applicable for Gradient and List Mode 
+There are 2 types of [orientation](/api/js/ejheatmap#members:orientation "orientation"), applicable for Gradient and List Mode 
 * Horizontal
 * Vertical
 
-###Horizontal:
+### Horizontal:
 
 {% highlight js %} 
 
@@ -94,7 +97,7 @@ $("#heatmap_legend").ejHeatMapLegend({
 
 ![](Legend_images/Legend_img3.png)
 
-###Vertical:
+### Vertical:
 
 {% highlight js %} 
 
