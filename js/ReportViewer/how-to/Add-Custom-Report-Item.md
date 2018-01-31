@@ -161,7 +161,7 @@ You can clean and build the extension project, it will generate the run-time com
 
 N> You can create a standalone report viewer application with the help of given [Getting Started Documentation.](/js/reportviewer/getting-started)
 
-You can download the custom report item extension project of sample barcode for report viewer by clicking here  [Download sample](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.Extensions.BarcodeCRI-1262603904).
+You can download the extension project with barcode custom report item for report viewer from here  [Download sample](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.Extensions.BarcodeCRI-1262603904).
 
 ## Deploy a custom report item 
 
