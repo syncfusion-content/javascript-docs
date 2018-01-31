@@ -17,7 +17,7 @@ The run-time component of the custom report item is implemented using CLS-compli
 
 1.	Open the Visual Studio and select the class library project type, then name the project as "Syncfusion.Extensions.BarcodeCRI" for the run-time component.
     ![](Custom-Report-Item-images/Custom-Report-Item-2.png)
-2.	Add the reference "Syncfusion.EJ.ReportViewer" and "Syncfusion.SfBarcode.WPF" for the extension project.
+2.	Add the reference "Syncfusion.EJ.ReportViewer", "Syncfusion.SfBarcode.WPF" and "Syncfusion.Shared.WPF" for the extension project.
     ![](Custom-Report-Item-images/Custom-Report-Item-3.png)  
 
     N> Refer the above assemblies from the below installed location.For Essential Studio: C:\Program Files (x86)\Syncfusion\Essential Studio{{ site.releaseversion }}\Assemblies   
