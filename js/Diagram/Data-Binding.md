@@ -24,7 +24,7 @@ To explore those properties, see [Data source settings](/api/js/ejdiagram#member
 
 Diagram can be populated based on the user defined JSON data (**Local Data**) by mapping the relevant data source fields.
 
-To map the user defined JSON data with Diagram, you have to configure the fields of `dataSourceSettings`. The following code example illustrates how to bind local data with the Diagram.
+To map the user defined JSON data with Diagram, you have to configure the fields of [dataSourceSettings](/api/js/ejdiagram#members:datasourcesettings "dataSourceSettings"). The following code example illustrates how to bind local data with the Diagram.
 
 {% highlight javascript %}
 
@@ -113,7 +113,7 @@ You can bind the Diagram with Remote Data by using dataManager.
 * It uses two different classes: ej.DataManager for processing and ej.Query for serving data. ej.DataManager communicates with data source and ej.Query generates data queries that are read by the dataManager.
 * To learn more, refer to [Data Manager](/js/DataManager/Getting-Started "Data Manager").
 
-To bind remote data to the Diagram, you have to configure the fields of `dataSourceSettings`. The following code illustrates how to bind remote data to the Diagram.
+To bind remote data to the Diagram, you have to configure the fields of [dataSourceSettings](/api/js/ejdiagram#members:datasourcesettings "dataSourceSettings"). The following code illustrates how to bind remote data to the Diagram.
 
 {% highlight javascript %}
 

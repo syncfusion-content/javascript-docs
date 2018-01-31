@@ -15,7 +15,7 @@ Diagram provides some in-built context menu items and allows to define custom me
 
 ## Default Context Menu
 
-The `enableContextMenu` property helps you to enable/disable the context menu. Diagram provides some default context menu items to ease the execution of some frequently used commands.
+The [enableContextMenu](/api/js/ejdiagram#members:enablecontextmenu "enableContextMenu") property helps you to enable/disable the context menu. Diagram provides some default context menu items to ease the execution of some frequently used commands.
 The following code illustrates how to enable the default context menu items.
 
 {% highlight javascript %}

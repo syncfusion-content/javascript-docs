@@ -19,7 +19,7 @@ Diagram provides support to auto-arrange the nodes in the Diagram area that is r
 ## Hierarchical Layout
 
 The Hierarchical Tree Layout arranges nodes in a tree-like structure, where the nodes in the hierarchical layout may have multiple parents. There is no need to specify the layout root.
-To arrange the nodes in hierarchical structure, you need to specify the layout `type` as hierarchical tree. The following example shows how to arrange the nodes in a hierarchical structure.
+To arrange the nodes in hierarchical structure, you need to specify the layout [type](/api/js/ejdiagram#members:layout-type "type") as hierarchical tree. The following example shows how to arrange the nodes in a hierarchical structure.
 
 
 {% highlight javascript %}
@@ -97,7 +97,7 @@ N> You can ignore a particular Node from layout arrangement by setting its **exc
 
 The Radial Tree layout arranges nodes on a virtual concentric circles around a root node. Sub-trees formed by the branching of child nodes are located radially around the child nodes. This arrangement results in an ever-expanding concentric arrangement with radial proximity to the root node indicating the node level in the hierarchy. When no root node is set, the algorithm automatically considers one of the Diagram nodes as the root node.
 
-To arrange nodes in a radial tree structure, you need to set the `layout.type` as `radialtree`. The following code illustrates how to arrange the nodes in a radial tree structure.
+To arrange nodes in a radial tree structure, you need to set the [layout.type](/api/js/ejdiagram#members:layout-type "layout.type") as `radialtree`. The following code illustrates how to arrange the nodes in a radial tree structure.
 
 {% highlight javascript %}
 
@@ -179,7 +179,7 @@ $("#diagram").ejDiagram({
 
 ## Organizational Chart
 
-An **organizational chart** is a Diagram that displays the structure of an organization and relationships. To create an organizational chart, `layout.type` should be set as `organizationalchart`.
+An **organizational chart** is a Diagram that displays the structure of an organization and relationships. To create an organizational chart, [layout.type](/api/js/ejdiagram#members:layout-type "layout.type") should be set as `organizationalchart`.
 The following code example illustrates how to create an organizational chart.
 
 {% highlight javascript %}
@@ -485,7 +485,7 @@ Diagram provides support to align the layout within any custom rectangular area.
 
 ### Layout Alignment
 
-You can align the layout anywhere over the layout bounds/viewport using the `horizontalAlignment` and `verticalAlignment` properties of layout.
+You can align the layout anywhere over the layout bounds/viewport using the [horizontalAlignment](/api/js/ejdiagram#members:tooltip-alignment-horizontal "horizontalAlignment") and [verticalAlignment](/api/js/ejdiagram#members:tooltip-alignment-vertical "verticalAlignment") properties of layout.
 
 The following code illustrates how to align the layout at the top left of the layout bounds.
 
@@ -531,7 +531,7 @@ $("#diagram").ejDiagram({
 
 ### Layout Margin
 
-Layout provides support to add some blank space between the layout bounds/viewport and the layout. The `margin` property of the layout allows you to set the blank space.
+Layout provides support to add some blank space between the layout bounds/viewport and the layout. The [margin](/api/js/ejdiagram#members:tooltip-margin "margin") property of the layout allows you to set the blank space.
 
 The following code illustrates how to set the layout margin.
 
@@ -574,7 +574,7 @@ $("#diagram").ejDiagram({
 
 ### Layout Orientation
 
-Diagram provides support to customize the orientation of layout. You can set the desired orientation using `layout.orientation`. For more information about orientation, refer to [Layout Orientations](/api/js/global#layoutorientations "Layout Orientations")
+Diagram provides support to customize the orientation of layout. You can set the desired orientation using [layout.orientation](/api/js/ejdiagram#members:layout-orientation "layout.orientation"). For more information about orientation, refer to [Layout Orientations](/api/js/global#layoutorientations "Layout Orientations")
 
 The following code illustrates how to arrange the nodes in a "BottomToTop" orientation.
 
@@ -617,7 +617,7 @@ $("#diagram").ejDiagram({
 
 ### Fixed Node
 
-Layout provides support to arrange the nodes with reference to the position of a fixed node and the fixed node has to be set to the `layout.fixedNode`.
+Layout provides support to arrange the nodes with reference to the position of a fixed node and the fixed node has to be set to the [layout.fixedNode](/api/js/ejdiagram#members:layout-fixednode "layout.fixedNode").
 This is helpful when you try to expand/collapse a node. It might be expected that the position of the double-clicked node should not be changed.
 
 {% highlight javascript %}
@@ -681,7 +681,7 @@ $("#DiagramContent").ejDiagram({
 
 ### Expand and collapse
 
-Diagram allows to expand/collapse the sub trees of a layout. `node.isExpanded` allows you to expand/collapse its children. The following code example shows how to expand/collapse the children of a node.
+Diagram allows to expand/collapse the sub trees of a layout. [node.isExpanded](/api/js/ejdiagram#members:nodes-isexpanded "node.isExpanded") allows you to expand/collapse its children. The following code example shows how to expand/collapse the children of a node.
 
 {% highlight javascript %}
 
