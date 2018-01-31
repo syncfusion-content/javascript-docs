@@ -403,7 +403,7 @@ To customize the labelIntersectAction you can use eight set of property  multipl
 
 #### Customize edgeLabelPlacement:
 
-To customize the edgelabelPlacement you can use the three set of property  none,shift,hide.The default property of edgeLabelPlacement is none.
+To customize the edgeLabelPlacement you can use the three set of property  none,shift,hide.The default property of edgeLabelPlacement is none.
 
 {% highlight javascript %}
 

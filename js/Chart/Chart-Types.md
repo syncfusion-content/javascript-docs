@@ -2310,7 +2310,7 @@ Polar drawType property is used to change the series of plotting type to spline 
 
 ### StackingArea in Polar and Radar:
 
-Polar drawType property is used to change the series of plotting type to Area .The StackingArea is enabld by isStacking property as true.The default value of drawType is "line".The code snippet to enable the isStacking property is attached below.
+Polar drawType property is used to change the series of plotting type to Area .The StackingArea is enabled by isStacking property as true.The default value of drawType is "line".The code snippet to enable the isStacking property is attached below.
 
 {% highlight javascript %}
 
