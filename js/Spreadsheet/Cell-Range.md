@@ -102,7 +102,7 @@ To get the comment in the Spreadsheet. Use  [`getComment`](https://help.syncfusi
 To show all the comments in the Spreadsheet. Use  [`showAllComments`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlcomment-showallcomments "showAllComments") method to show all comments via code.
 
 #### Show Hide Comment
-To show or hide the specific comment in the Spreadsheet. Use  [`showHideComment`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlcomment-showhidecomments "showHideComment") method to show or hide the specified comment via code.
+To show or hide the specific comment in the Spreadsheet. Use  [`showHideComment`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlcomment-showhidecomment "showHideComment") method to show or hide the specified comment via code.
 
 #### User Name
 To define the username for the Spreadsheet which is displayed in comment. Use  [`userName`](https://help.syncfusion.com/api/js/ejspreadsheet#members:username "userName") member to define user name for a comment via code.
