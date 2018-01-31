@@ -106,6 +106,8 @@ diagram.add(group);
 
 {% endhighlight %}
 
+In a group node, when you add or remove a children, the [groupChange](/api/js/ejdiagram#events:groupchange "groupChange") event gets triggered.
+
 ### Group from palette
 
 Group nodes can be predefined and added to symbol palette. You can drop those groups into Diagram, when required.

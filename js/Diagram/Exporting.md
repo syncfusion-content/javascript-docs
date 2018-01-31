@@ -158,3 +158,8 @@ For more information about the various stretch options refer to [Stretch options
 
 {% endhighlight %}
 
+# Print
+
+The client side method `print` helps to print the Diagram as image. Please refer to below link which shows how to print the Diagram as image and also you can view the several options which can be passed as a parameter in it.
+
+[print](/api/js/ejdiagram#methods:print "print")

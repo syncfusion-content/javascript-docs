@@ -20,7 +20,7 @@ A node can be created and added to the Diagram, either programmatically or inter
 
 ### Add node through nodes collection
 
-To create a node, You have to define the node object and add that to `nodes` collection of the Diagram model. The following code example illustrates how to add a node to the Diagram.
+To create a node, You have to define the node object and add that to [nodes](/api/js/ejdiagram#members:nodes "nodes") collection of the Diagram model. The following code example illustrates how to add a node to the Diagram.
 
 {% highlight javascript %}
 // Defines JSON to create a node
@@ -55,6 +55,7 @@ $("#diagram").ejDiagram({
 
 ![](/js/Diagram/Node_images/Node_img2.png)
 
+
 ### Add node at runtime
 
 Nodes can be added at runtime by using public method, [add](/api/js/ejdiagram#methods:add "add"). The following code illustrates how to add a node.
@@ -82,9 +83,17 @@ diagram.add(node);
 
 ![](/js/Diagram/Node_images/Node_img3.png)
 
+When a node is either added or removed in diagram, the [nodeCollectionChange](/api/js/ejdiagram#events:nodecollectionchange "nodeCollectionChange") event raised.
+
 ### Add node from palette
 
 Nodes can be predefined and added to palette and can be dropped into the Diagram when needed. For more information about adding nodes from symbol palette, refer to [Symbol Palette](/js/Diagram/Symbol-Palette "Symbol Palette").
+
+* Once we drag a node/connector from the palette to diagram, you can use the below events to do your customization.
+* When a symbol is dragged into diagram from symbol palette, the [dragEnter](/api/js/ejdiagram#events:dragenter "dragEnter") event gets triggered. 
+* When a symbol is dragged over diagram,the [dragOver](/api/js/ejdiagram#events:dragover "dragOver") event gets triggered.
+* When a symbol is dragged and dropped from symbol palette to diagram area, the [drop](/api/js/ejdiagram#events:drop "drop") event gets triggered.
+* When a symbol is dragged outside of the diagram, the [dragLeave](/api/js/ejdiagram#events:dragleave "dragLeave") event gets triggered.
 
 ### Create node through data source
 
@@ -108,10 +117,11 @@ diagram.updateNode("nodeName", {
 })
 {% endhighlight %}
 
+When the node/connector properties are changed at runtime, the [propertyChange](/api/js/ejdiagram#events:propertychange "propertyChange") event gets triggered.
 
 ## Position
 
-Position of a node is controlled by using its `offsetX` and `offsetY` properties. By default, these offset properties represent the distance between origin of the Diagram's page and node's center point. You may expect this offset values to represent the distance between page origin and node's top left corner instead of center. `pivot` property helps solve this problem. Default value of node's pivot point is (0.5, 0.5), that means center of Node.
+Position of a node is controlled by using its [offsetX](/api/js/ejdiagram#members:nodes-offsetx "offsetX") and [offsetY](/api/js/ejdiagram#members:nodes-offsety "offsetY") properties. By default, these offset properties represent the distance between origin of the Diagram's page and node's center point. You may expect this offset values to represent the distance between page origin and node's top left corner instead of center. [pivot](/api/js/ejdiagram#members:nodes-pivot "pivot") property helps solve this problem. Default value of node's pivot point is (0.5, 0.5), that means center of Node.
 
 The following table illustrates how pivot relates offset values with node boundaries.
 
@@ -178,7 +188,7 @@ There are two types of gradients.
 * **Linear gradient -** Defines a smooth transition between a set of colors (so-called "stops") on a line. 
 * **Radial gradient -** Defines a smooth transition between stops on a circle.
 
-The `gradient` property of node allows you to define and applies the gradient effect to that node.
+The [gradient](/api/js/ejdiagram#members:nodes-gradient "gradient") property of node allows you to define and applies the gradient effect to that node.
 
 {% highlight javascript %}
 
@@ -229,7 +239,7 @@ var nodes = [{
 
 ## Shadow
 
-**Diagram** provides support to add **shadow** effect to a node that is disabled by default. It can be enabled with the `constraints` property of node. The following code illustrates how to drop shadow.
+**Diagram** provides support to add **shadow** effect to a node that is disabled by default. It can be enabled with the [constraints](/api/js/ejdiagram#members:nodes-constraints "constraints") property of node. The following code illustrates how to drop shadow.
 
 {% highlight javascript %}
 var nodeConstraints = ej.datavisualization.Diagram.NodeConstraints;
@@ -268,7 +278,7 @@ diagram.updateNode("node", { constraints: constraints });
 
 ### Customizing Shadow
 
-The angle, translation, and opacity of the shadow can be customized with the `shadow` property of node. The following code example illustrates how to customize shadow.
+The angle, translation, and opacity of the shadow can be customized with the [shadow](/api/js/ejdiagram#members:nodes-shadow "shadow") property of node. The following code example illustrates how to customize shadow.
 
 {% highlight javascript %}
 var nodes = [{
@@ -293,7 +303,7 @@ N> Icon can be created only when the node has outedges.
 
 To explore the properties of expandIcon and collapseIcon, refer to [Icon Properties](/api/js/ejdiagram#members:nodes-expandicon "Icon Properties").
 
-The `shape` property of icon allows to define the shape of the icon. The following code example illustrates how to create icon of various shapes.
+The [shape](/api/js/ejdiagram#members:nodes-expandicon-shape "shape") property of icon allows to define the shape of the icon. The following code example illustrates how to create icon of various shapes.
 
 {% highlight javascript %}
 
@@ -337,6 +347,7 @@ $("#diagram").ejDiagram({
 
 Diagram provides support to drag, resize, or rotate the node interactively. For more information about editing a node at runtime, refer to [Edit Nodes](/js/Diagram/Interaction "Interaction").
 
+
 ## Constraints
 
-The `constraints` property of node allows you to enable/disable certain features. For more information about node constraints, refer to [Node Constraints](/js/Diagram/Constraints#nodeconstraints "Node Constraints").
+The [constraints](/api/js/ejdiagram#members:nodes-constraints "constraints") property of node allows you to enable/disable certain features. For more information about node constraints, refer to [Node Constraints](/js/Diagram/Constraints#nodeconstraints "Node Constraints").
