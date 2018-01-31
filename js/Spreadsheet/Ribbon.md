@@ -10,7 +10,7 @@ api: /api/js/ejspreadsheet
 
 # Ribbon
 
-A ribbon is a command bar that organizes a spreadsheet's features into a series of tabs at the top of the control.
+A ribbon is a command bar that organizes a Spreadsheet's features into a series of tabs at the top of the control.
 
 ## Ribbon Customization
 
