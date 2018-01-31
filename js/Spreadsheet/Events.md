@@ -189,7 +189,7 @@ $("#Spreadsheet").ejSpreadsheet({
 
 ### Drag Start
 
-The [`dragStart`](../api/ejspreadsheet#events:dragStart) event is triggered when the selected cells are initiated to drag.
+The [`dragStart`](../api/ejspreadsheet#events:dragstart) event is triggered when the selected cells are initiated to drag.
 
 {% highlight html %}
 
