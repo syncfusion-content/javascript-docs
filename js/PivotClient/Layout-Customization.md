@@ -295,19 +295,19 @@ The following table will explain you the available properties for the customizat
 
 | Property | Description
 |---|---|
-| [`enableNewReport`](/api/js/ejpivotclient#members:toolbariconsettings-enablenewreport) | Allows user to set the visibility of `New Report` icon in the toolbar panel.|
-| [`enableAddReport`](/api/js/ejpivotclient#members:toolbariconsettings-enableaddreport) | Allows user to set the visibility of `Add Report` icon in the toolbar panel.|
-| [`enableRemoveReport`](/api/js/ejpivotclient#members:toolbariconsettings-enableremovereport) | Allows user to set the visibility of `Remove Report` icon in the toolbar panel.|
-| [`enableRenameReport`](/api/js/ejpivotclient#members:toolbariconsettings-enablerenamereport) | Allows user to set the visibility of `Rename Report` icon in the toolbar panel.|
-| [`enableDBManipulation`](/api/js/ejpivotclient#members:toolbariconsettings-enabledbmanipulation) | Allows user to set the visibility of `DB Manipulation` icon in the toolbar panel.|
-| [`enableMDXQuery`](/api/js/ejpivotclient#members:toolbariconsettings-enablemdxquery) | Allows user to set the visibility of `MDX Query` icon in the toolbar panel.|
-| [`enableDeferUpdate`](/api/js/ejpivotclient#members:toolbariconsettings-enabledeferupdate) | Allows user to set the visibility of `Defer Update` icon in the toolbar panel.|
-| [`enableExcelExport`](/api/js/ejpivotclient#members:toolbariconsettings-enableexcelexport) | Allows user to set the visibility of `Excel Export` icon in the toolbar panel.|
-| [`enableWordExport`](/api/js/ejpivotclient#members:toolbariconsettings-enablewordexport) | Allows user to set the visibility of `Word Export` icon in the toolbar panel.|
-| [`enablePdfExport`](/api/js/ejpivotclient#members:toolbariconsettings-enablepdfexport)| Allows user to set the visibility of `PDF Export` icon in the toolbar panel.|
-| [`enableFullScreen`](/api/js/ejpivotclient#members:toolbariconsettings-enablefullscreen)| Allows user to set the visibility of `Full Screen` icon in the toolbar panel.|
-| [`enableSortOrFilterColumn`](/api/js/ejpivotclient#members:toolbariconsettings-enablesortorfiltercolumn)| Allows user to set the visibility of `Sort/Filter Column` icon in the toolbar panel.|
-| [`enableSortOrFilterRow`](/api/js/ejpivotclient#members:toolbariconsettings-enablesortorfilterrow)| Allows user to set the visibility of `Sort/Filter Row` icon in the toolbar panel.|
-| [`enableToggleAxis`](/api/js/ejpivotclient#members:toolbariconsettings-enabletoggleaxis)| Allows user to set the visibility of `Toggle Axis` icon in the toolbar panel.|
-| [`enableChartTypes`](/api/js/ejpivotclient#members:toolbariconsettings-enablecharttypes)| Allows user to set the visibility of `Chart Types` icon in the toolbar panel.|
-| [`enableCalculatedMember`](/api/js/ejpivotclient#members:toolbariconsettings-enablecalculatedmember)| Allows user to set the visibility of `Calculated Member` icon in the toolbar panel.|
+| [`enableNewReport`](/api/js/ejpivotclient#members:toolbariconsettings-enablenewreport) | Allows you to set the visibility of `New Report` icon in the toolbar panel.|
+| [`enableAddReport`](/api/js/ejpivotclient#members:toolbariconsettings-enableaddreport) | Allows you to set the visibility of `Add Report` icon in the toolbar panel.|
+| [`enableRemoveReport`](/api/js/ejpivotclient#members:toolbariconsettings-enableremovereport) | Allows you to set the visibility of `Remove Report` icon in the toolbar panel.|
+| [`enableRenameReport`](/api/js/ejpivotclient#members:toolbariconsettings-enablerenamereport) | Allows you to set the visibility of `Rename Report` icon in the toolbar panel.|
+| [`enableDBManipulation`](/api/js/ejpivotclient#members:toolbariconsettings-enabledbmanipulation) | Allows you to set the visibility of `DB Manipulation` icon in the toolbar panel.|
+| [`enableMDXQuery`](/api/js/ejpivotclient#members:toolbariconsettings-enablemdxquery) | Allows you to set the visibility of `MDX Query` icon in the toolbar panel.|
+| [`enableDeferUpdate`](/api/js/ejpivotclient#members:toolbariconsettings-enabledeferupdate) | Allows you to set the visibility of `Defer Update` icon in the toolbar panel.|
+| [`enableExcelExport`](/api/js/ejpivotclient#members:toolbariconsettings-enableexcelexport) | Allows you to set the visibility of `Excel Export` icon in the toolbar panel.|
+| [`enableWordExport`](/api/js/ejpivotclient#members:toolbariconsettings-enablewordexport) | Allows you to set the visibility of `Word Export` icon in the toolbar panel.|
+| [`enablePdfExport`](/api/js/ejpivotclient#members:toolbariconsettings-enablepdfexport)| Allows you to set the visibility of `PDF Export` icon in the toolbar panel.|
+| [`enableFullScreen`](/api/js/ejpivotclient#members:toolbariconsettings-enablefullscreen)| Allows you to set the visibility of `Full Screen` icon in the toolbar panel.|
+| [`enableSortOrFilterColumn`](/api/js/ejpivotclient#members:toolbariconsettings-enablesortorfiltercolumn)| Allows you to set the visibility of `Sort/Filter Column` icon in the toolbar panel.|
+| [`enableSortOrFilterRow`](/api/js/ejpivotclient#members:toolbariconsettings-enablesortorfilterrow)| Allows you to set the visibility of `Sort/Filter Row` icon in the toolbar panel.|
+| [`enableToggleAxis`](/api/js/ejpivotclient#members:toolbariconsettings-enabletoggleaxis)| Allows you to set the visibility of `Toggle Axis` icon in the toolbar panel.|
+| [`enableChartTypes`](/api/js/ejpivotclient#members:toolbariconsettings-enablecharttypes)| Allows you to set the visibility of `Chart Types` icon in the toolbar panel.|
+| [`enableCalculatedMember`](/api/js/ejpivotclient#members:toolbariconsettings-enablecalculatedmember)| Allows you to set the visibility of `Calculated Member` icon in the toolbar panel.|

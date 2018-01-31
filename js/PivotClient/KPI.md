@@ -10,7 +10,7 @@ api: /api/js/ejpivotclient
 
 # KPI
 
-Key Performance Indicators (KPI) is the business metric that helps to figure out the progress of an enterprise when meeting its business goals.
+Key Performance Indicators (KPI) are the business metrics that help to figure out the progress of an enterprise when meeting its business goals.
 
 The different indicators available in the KPI are:
 
