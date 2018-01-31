@@ -389,6 +389,63 @@ Following code example shows how to hide specific column in column chooser list
 The above screenshot shows TreeGrid column chooser rendered without `Task Id` column. 
 {:.caption}
 
+### Column options
+
+In TreGrid, It is provides the support to customize the column like insert a new column, delete a column and update the header text of column.
+
+The column options can be enabled or disabled with the [`showColumnOptions`](/api/js/ejtreegrid#members:showcolumnoptions) property, default value this property is `false`.
+
+Following code example shows how to enable the column option in tree grid.
+
+{% highlight js %}
+
+    $("#treegrid1").ejTreeGrid(
+    {   
+        // ...     
+        showColumnOptions:true,
+        // ...             
+    });
+
+{% endhighlight %}
+
+![](/js/TreeGrid/Columns_images/Columns_img17.png)
+
+The column options provide the following options:
+
+* Insert column left
+* Insert column right 
+* Delete column
+* Rename column
+
+![](/js/TreeGrid/Columns_images/Columns_img18.png)
+
+The above screenshot shows insert column dialog in TreeGrid  
+{:.caption}
+
+### Customize the insert column option.
+
+It is possible to add or remove the [`columns`](/api/js/ejtreegrid#members:columns) properties in insert column option using [`columnDialogFields`](/api/js/ejtreegrid#members:columndialogfields) property. In insert column option [`field`](/api/js/ejtreegrid#members:columns-field "columns.field"), [`headerText`](/api/js/ejtreegrid#members:columns-headertext "columns.headerText") and [`editType`](/api/js/ejtreegrid#members:columns-edittype "columns.editType") properties are necessary to create a new column, so this fields are unable to remove from insert column option.
+
+Following code example shows how to customize the insert column option in tree grid.
+
+{% highlight js %}
+
+    $("#treegrid1").ejTreeGrid(
+    {   
+        // ...     
+        allowSorting:true,
+        showColumnOptions:true,
+        columnDialogFields:["field","headerText","editType","width","visible","allowSorting","textAlign","headerTextAlign"],
+        // ...             
+    });
+
+{% endhighlight %}
+
+![](/js/TreeGrid/Columns_images/Columns_img19.png)
+
+The above screenshot shows customized insert column option in tree grid.  
+{:.caption}
+
 ## Command Column
 
 ### Default action buttons
