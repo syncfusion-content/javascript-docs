@@ -12,7 +12,7 @@ api: /api/js/ejpivotgauge
 
 ## Localization in PivotGauge Control
 
- We can localize the PivotGauge control texts with a collection of localized strings using **"ej.PivotGauge.Locale"** for different cultures.
+ We can localize the PivotGauge control texts with a property [`locale`](../api/ejpivotgauge#members:locale) and a collection of localized strings using **"ej.PivotGauge.Locale"** for different cultures.
  
  N> By default, the PivotGauge control is localized in **"en-US"**.
 
@@ -78,4 +78,19 @@ For Server Mode, we need to set **"Culture"** and **"OverrideDefaultFormatString
 
 {% endhighlight %}
 
-![](Localization_images/Localization.png) 
+![](Localization_images/Localization.png)
+
+## RTL
+You can enable or disable right to left using the [`enableRTL`](/api/js/ejpivotgauge#members:enablertl) property in pivot gauge.
+
+{% highlight js %}
+
+$("#PivotGauge1").ejPivotGauge({
+      enableRTL: true
+ });
+
+{% endhighlight %}
+
+![](Localization_images/RTL.png)
+
+N> RTL is applicable only for tooltip of pivot gauge.

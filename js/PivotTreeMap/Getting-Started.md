@@ -12,7 +12,7 @@ api: /api/js/ejpivottreemap
 
 ## Creating a simple application with PivotTreeMap and OLAP datasource (Client Mode)
 
-This section covers the information that you need to know to populate a simple PivotTreeMap with OLAP data completely on the client-side.  
+This section covers the information that you need to know to populate a simple PivotTreeMap with OLAP data completely on the [`client-side`](../api/js/ejpivottreemap#members:operationalmode).
 
 ### Scripts and CSS References
 
@@ -103,11 +103,244 @@ The above code will generate a simple PivotTreeMap showing Customer Count over d
 
 ![](Getting-Started_images/OlapClientside.png) 
 
+The following table will explain the OLAP [`datasource`](/api/js/ejpivottreemap#members:datasource) properties at [`client-side`](/api/js/ejpivottreemap#members:operationalmode) in detail:
+
+<table>
+    <tr>
+        <th>
+            Properties
+        </th>
+        <th>
+            Description
+        </th>
+    </tr>
+    <tr>
+    <td>
+        {{'[`cube`](https://help.syncfusion.com/api/js/ejpivottreemap#members:datasource-cube "cube")'| markdownify }}
+    </td>
+    <td>
+        Contains the respective cube name from OLAP database as string type.
+    </td>
+    </tr>
+    <tr>
+    <td>
+        {{'[`sourceInfo`](https://help.syncfusion.com/api/js/ejpivottreemap#members:datasource-sourceinfo "sourceInfo")'| markdownify }}
+    </td>
+    <td>
+        To set the data source name to fetch data from that.
+    </td>
+    </tr>
+    <tr>
+    <td>
+        {{'[`providerName`](https://help.syncfusion.com/api/js/ejpivottreemap#members:datasource-providername "providerName")'| markdownify }}
+    </td>
+    <td>
+        Sets the provider name for PivotTreeMap to identify whether the provider is SSAS or Mondrian.
+    </td>
+    </tr>
+    <tr>
+    <td>
+        {{'[`data`](https://help.syncfusion.com/api/js/ejpivottreemap#members:datasource-data "data")'| markdownify }}
+    </td>
+    <td>
+        Provides the raw data source for the PivotTreeMap.
+    </td>
+    </tr>
+    <tr>
+    <td>
+        {{'[`catalog`](https://help.syncfusion.com/api/js/ejpivottreemap#members:datasource-catalog "catalog")'| markdownify }}
+    </td>
+    <td>
+        In connection with an OLAP database, this property contains the database name as string to fetch the data from the given connection string.
+    </td>
+    </tr>
+    <tr>
+        <td>
+            {{'[`columns`](https://help.syncfusion.com/api/js/ejpivottreemap#members:datasource-columns "columns")'| markdownify }}
+        </td>
+        <td>
+            Lists out the items to be displayed as series of PivotTreeMap.
+             <table class="params">
+            <thead>
+            <tr>
+            <th>Properties</th>
+            <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td>{{'[`fieldName`](https://help.syncfusion.com/api/js/ejpivottreemap#members:datasource-columns-fieldname "fieldName")'| markdownify }} </td>
+            <td>Allows the user to bind the item by using its unique name as field name.</td>
+            </tr>
+            <tr>
+            <td>{{'[`isNamedSets`](https://help.syncfusion.com/api/js/ejpivottreemap#members:datasource-columns-isnamedsets "isNamedSets")'| markdownify }}</td>
+            <td>Allows the user to indicate whether the added item is a named set or not.</td>
+            </tr>
+            <tr>
+            <td>{{'[`filterItems`](https://help.syncfusion.com//api/js/ejpivottreemap#members:datasource-columns-filteritems "filterItems")'| markdownify }}</td>
+            <td>Applies filter to the field members.
+            <table class="params">
+            <thead>
+            <tr>
+            <th>Properties</th>
+            <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td>
+                {{'[`values`](https://help.syncfusion.com//api/js/ejpivottreemap#members:datasource-columns-filteritems-values "values")'| markdownify }} </td>
+            <td>Contains the collection of items to be excluded among the field members.</td>
+            </tr>
+            </tbody>
+            </table>
+            </td>
+            </tr>
+            </tbody>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            {{'[`rows`](https://help.syncfusion.com/api/js/ejpivottreemap#members:datasource-rows "rows")'| markdownify }}
+        </td>
+        <td>
+            Lists out the items to be displayed as segments of PivotTreeMap.
+             <table class="params">
+            <thead>
+            <tr>
+            <th>Properties</th>
+            <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td>{{'[`fieldName`](https://help.syncfusion.com/api/js/ejpivottreemap#members:datasource-rows-fieldname "fieldName")'| markdownify }} </td>
+            <td>Allows the user to bind the item by using its unique name as field name.</td>
+            </tr>
+            <tr>
+            <td>{{'[`isNamedSets`](https://help.syncfusion.com/api/js/ejpivottreemap#members:datasource-rows-isnamedsets "isNamedSets")'| markdownify }}</td>
+            <td>Allows the user to indicate whether the added item is a named set or not.</td>
+            </tr>
+             <tr>
+            <td>{{'[`filterItems`](https://help.syncfusion.com//api/js/ejpivottreemap#members:datasource-columns-filteritems "filterItems")'| markdownify }}</td>
+            <td>Applies filter to the field members.
+            <table class="params">
+            <thead>
+            <tr>
+            <th>Properties</th>
+            <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td>
+                {{'[`values`](https://help.syncfusion.com//api/js/ejpivottreemap#members:datasource-columns-filteritems-values "values")'| markdownify }} </td>
+            <td>Contains the collection of items to be excluded among the field members.</td>
+            </tr>
+            </tbody>
+            </table>
+            </td>
+            </tr>
+            </tbody>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            {{'[`filters`](https://help.syncfusion.com/api/js/ejpivottreemap#members:datasource-filters "filters")'| markdownify }}
+        </td>
+        <td>
+            Lists out the items which supports filtering of values without displaying the members in UI in PivotTreeMap.
+             <table class="params">
+            <thead>
+            <tr>
+            <th>Properties</th>
+            <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td>{{'[`fieldName`](https://help.syncfusion.com/api/js/ejpivottreemap#members:datasource-filters-fieldname "fieldName")'| markdownify }} </td>
+            <td>Allows the user to bind the item by using its unique name as field name.</td>
+            </tr>
+            <tr>
+            <td>{{'[`filterItems`](https://help.syncfusion.com//api/js/ejpivottreemap#members:datasource-filters-filteritems "filterItems")'| markdownify }}</td>
+            <td>Applies filter to the field members.
+            <table class="params">
+            <thead>
+            <tr>
+            <th>Properties</th>
+            <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td>
+                {{'[`values`](https://help.syncfusion.com//api/js/ejpivottreemap#members:datasource-filters-filteritems-values "values")'| markdownify }} </td>
+            <td>Contains the collection of items to be excluded among the field members.</td>
+            </tr>
+            </tbody>
+            </table>
+            </td>
+            </tr>
+            </tbody>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            {{'[`values`](https://help.syncfusion.com/api/js/ejpivottreemap#members:datasource-values "values")'| markdownify }}
+        </td>
+        <td>
+            Lists out the items supports calculation in PivotTreeMap.
+            <table class="params">
+            <thead>
+            <tr>
+            <th>Properties</th>
+            <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td>{{'[`axis`](https://help.syncfusion.com/api/js/ejpivottreemap#members:datasource-values-axis "axis")'| markdownify }} </td>
+            <td>Allows you to set the axis name to place measures items.</td>
+            </tr>
+            <tr>
+            <td>{{'[`measures`](https://help.syncfusion.com/api/js/ejpivottreemap#members:datasource-values-measures "measures")'| markdownify }}</td>
+            <td>This holds the list of unique names of measures to bind them from the OLAP cube.
+            <table class="params">
+            <thead>
+            <tr>
+            <th>Property</th>
+            <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td>
+                {{'[`fieldName`](https://help.syncfusion.com/api/js/ejpivottreemap#members:datasource-values-measures-fieldName "fieldName")'| markdownify }} </td>
+            <td>Allows the user to bind the measure from OLAP datasource by using its unique name as field name.</td>
+            </tr>
+            </td>
+            </tr>
+            </tbody>
+            </table>
+            </td>
+            </tr>
+            </tbody>
+            </table>
+        </td>
+        </tr>
+
+</table>
+
+
 ## Creating a simple application with PivotTreeMap and OLAP data source (Server Mode)
 
 This section covers the information required to create a simple PivotTreeMap bound to OLAP data source.  
 
-N> We will be illustrating this section by creating a simple Web Application through Visual Studio IDE since PivotTreeMap can also act as a server-side control with .NET dependency. The Web Application would contain a HTML page and a service that would transfer data to server-side, process and return back the data to client-side for control re-rendering. The service utilized for communication could be either WCF or WebAPI based on user requirement and we have illustrated both for user convenience.
+N> We will be illustrating this section by creating a simple Web Application through Visual Studio IDE since PivotTreeMap can also act as a [`server-side`](/api/js/ejpivottreemap#members:operationalmode) control with .NET dependency. The Web Application would contain a HTML page and a service that would transfer data to [`server-side`](/api/js/ejpivottreemap#members:operationalmode), process and return back the data to [`client-side`](/api/js/ejpivottreemap#members:operationalmode) for control re-rendering. The service utilized for communication could be either WCF or WebAPI based on user requirement and we have illustrated both for user convenience.
 
 ### Project Initialization
 Create a new **ASP.NET Empty Web Application** by using Visual Studio IDE and name the project as **“PivotTreeMapDemo”**.
@@ -176,9 +409,9 @@ In-order to initialize a PivotTreeMap widget, first you need to define a “div�
 
 {% endhighlight %}
 
-The “url” property in PivotTreeMap widget points the service endpoint, where data are processed and fetched in the form of JSON. The service used for the PivotTreeMap widget as endpoint are WCF and WebAPI.
+The [`url`](../api/js/ejpivottreemap#members:url) property in PivotTreeMap widget points the service endpoint, where data are processed and fetched in the form of JSON. The service used for the PivotTreeMap widget as endpoint are WCF and WebAPI.
 
-N> The above "GettingStarted.html" contains WebAPI URL, which is **“/Olap”**. Suppose if you are using WCF service then the URL would look like **"/OlapService.svc"**.
+N> The above "GettingStarted.html" contains WebAPI [`url`](../api/js/ejpivottreemap#members:url), which is **“/Olap”**. Suppose if you are using WCF service then the [`url`](../api/js/ejpivottreemap#members:url) would look like **"/OlapService.svc"**.
 
 Register the referenced assemblies in Web.config file available at the root of the application.
 

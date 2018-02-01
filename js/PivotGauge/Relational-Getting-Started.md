@@ -12,7 +12,7 @@ api: /api/js/ejpivotgauge
 
 ## Creating a simple application with PivotGauge and Relational datasource (Client Mode)
 
-This section covers the basic information required to populate a simple PivotGauge with Relational data completely on the client-side.  
+This section covers the basic information required to populate a simple PivotGauge with [`Relational`](/api/js/ejpivotgauge#members:analysismode) data completely on the [`client-side`](/api/js/ejpivotgauge#members:operationalmode).
 
 ### Scripts and CSS References
 
@@ -193,11 +193,201 @@ The above code will generate a simple PivotGauge as shown in the below image.
 
 ![](Relational-Getting-Started_images/PopulatePivotGaugeWithData.png)
 
+The following table will explain the [`relational`](/api/js/ejpivotgauge#members:analysismode) [`datasource`](/api/js/ejpivotgauge#members:datasource) properties at [`client-side`](/api/js/ejpivotgauge#members:operationalmode) in detail:
+
+<table>
+    <tr>
+        <th>
+            Properties
+        </th>
+        <th>
+            Description
+        </th>
+    </tr>
+    <tr>
+        <td>
+            {{'[`columns`](https://help.syncfusion.com//api/js/ejpivotgauge#members:datasource-columns "columns")'| markdownify }}
+        </td>
+        <td>
+            Lists out the items to bind in columns section.
+             <table class="params">
+            <thead>
+            <tr>
+            <th>Properties</th>
+            <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td>{{'[`fieldName`](https://help.syncfusion.com//api/js/ejpivotgauge#members:datasource-columns-fieldname "fieldName")'| markdownify }} </td>
+            <td>Allows the user to bind the item by using its unique name as field name.</td>
+            </tr>
+            <tr>
+            <td>{{'[`filterItems`](https://help.syncfusion.com//api/js/ejpivotgauge#members:datasource-columns-filteritems "filterItems")'| markdownify }}</td>
+            <td>Applies filter to the field members.
+            <table class="params">
+            <thead>
+            <tr>
+            <th>Properties</th>
+            <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td>
+                {{'[`filterType`](https://help.syncfusion.com//api/js/ejpivotgauge#members:datasource-columns-filteritems-filtertype "filterType")'| markdownify }} </td>
+            <td>Sets the type of filter whether to include/exclude the mentioned values.</td>
+            </tr>
+            <tr>
+            <td>
+                {{'[`values`](https://help.syncfusion.com//api/js/ejpivotgauge#members:datasource-columns-filteritems-values "values")'| markdownify }} </td>
+            <td>Contains the collection of items to be included/excluded among the field members.</td>
+            </tr>
+            </tbody>
+            </table>
+            </td>
+            </tr>
+            </tbody>
+            </table>
+            </td>
+            </tr>
+            <tr>
+        <td>
+            {{'[`rows`](https://help.syncfusion.com//api/js/ejpivotgauge#members:datasource-rows "rows")'| markdownify }}
+        </td>
+        <td>
+            Lists out the items to bind in rows section.
+             <table class="params">
+            <thead>
+            <tr>
+            <th>Properties</th>
+            <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td>{{'[`fieldName`](https://help.syncfusion.com//api/js/ejpivotgauge#members:datasource-rows-fieldname "fieldName")'| markdownify }} </td>
+            <td>Allows the user to bind the item by using its unique name as field name.</td>
+            </tr>
+            <tr>
+            <td>{{'[`filterItems`](https://help.syncfusion.com//api/js/ejpivotgauge#members:datasource-rows-filteritems "filterItems")'| markdownify }}</td>
+            <td>Applies filter to the field members.
+            <table class="params">
+            <thead>
+            <tr>
+            <th>Properties</th>
+            <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td>
+                {{'[`filterType`](https://help.syncfusion.com//api/js/ejpivotgauge#members:datasource-rows-filteritems-filtertype "filterType")'| markdownify }} </td>
+            <td>Sets the type of filter whether to include/exclude the mentioned values.</td>
+            </tr>
+            <tr>
+            <td>
+                {{'[`values`](https://help.syncfusion.com//api/js/ejpivotgauge#members:datasource-rows-filteritems-values "values")'| markdownify }} </td>
+            <td>Contains the collection of items to be included/excluded among the field members.</td>
+            </tr>
+            </tbody>
+            </table>
+            </td>
+            </tr>
+            </tbody>
+            </table>
+            </td>
+            </tr>
+            <tr>
+        <td>
+            {{'[`values`](https://help.syncfusion.com//api/js/ejpivotgauge#members:datasource-values "values")'| markdownify }}
+        </td>
+        <td>
+            Lists out the items supports calculation in pivot gauge.
+             <table class="params">
+            <thead>
+            <tr>
+            <th>Properties</th>
+            <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td>{{'[`fieldName`](https://help.syncfusion.com//api/js/ejpivotgauge#members:datasource-values-fieldname "fieldName")'| markdownify }} </td>
+            <td>Allows the user to bind the item by using its unique name as field name for Relational datasource.</td>
+            </tr>
+            <tr>
+            <td>{{'[`fieldCaption`](https://help.syncfusion.com//api/js/ejpivotgauge#members:datasource-values-fieldcaption "fieldCaption")'| markdownify }}</td>
+            <td>Allows the user to set the display caption for an item for Relational datasource.</td>
+            </tr>
+            <tr>
+            <td>{{'[`isCalculatedField`](https://help.syncfusion.com//api/js/ejpivotgauge#members:datasource-values-iscalculatedfield "isCalculatedField")'| markdownify }}</td>
+            <td>Indicates whether the field is a calculated field or not.</td>
+            </tr>
+            <tr>
+            <td>{{'[`formula`](https://help.syncfusion.com//api/js/ejpivotgauge#members:datasource-values-formula "formula")'| markdownify }}</td>
+            <td>Allows to set the formula for calculation of values for calculated members in Relational datasource.</td>
+            </tr>
+            </tbody>
+            </table>
+            </td>
+            </tr>
+            <tr>
+        <td>
+            {{'[`filters`](https://help.syncfusion.com//api/js/ejpivotgauge#members:datasource-filters "filters")'| markdownify }}
+        </td>
+        <td>
+            Lists out the items which supports filtering of values without displaying the members in UI in PivotGauge.
+            <table class="params">
+            <thead>
+            <tr>
+            <th>Properties</th>
+            <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td>{{'[`fieldName`](https://help.syncfusion.com//api/js/ejpivotgauge#members:datasource-filters-fieldname "fieldName")'| markdownify }} </td>
+            <td>Allows the user to bind the item by using its unique name as field name.</td>
+            </tr>
+            <tr>
+            <td>{{'[`filterItems`](https://help.syncfusion.com//api/js/ejpivotgauge#members:datasource-filters-filteritems "filterItems")'| markdownify }}</td>
+            <td>Applies filter to the field members.
+            <table class="params">
+            <thead>
+            <tr>
+            <th>Property</th>
+            <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td>
+                {{'[`filterType`](https://help.syncfusion.com//api/js/ejpivotgauge#members:datasource-filters-filteritems-filtertype "filterType")'| markdownify }} </td>
+            <td>Sets the type of filter whether to include/exclude the mentioned values.</td>
+            </tr>
+            <tr>
+            <td>
+                {{'[`values`](https://help.syncfusion.com//api/js/ejpivotgauge#members:datasource-filters-filteritems-values "values")'| markdownify }} </td>
+            <td>Contains the collection of items to be included/excluded among the field members.</td>
+            </tr>
+            </td>
+            </tr>
+            </tbody>
+            </table>
+            </td>
+            </tr>
+            </tbody>
+            </table>
+        </td>
+        </tr>
+        </table>
+
 ## Creating a simple application with PivotGauge and Relational datasource (Server Mode)
 
-This section covers the information required to create a simple PivotGauge bound to Relational datasource from server-side. 
+This section covers the information required to create a simple PivotGauge bound to [`Relational`](/api/js/ejpivotgauge#members:analysismode) datasource from [`server-side`](/api/js/ejpivotgauge#members:operationalmode).
 
-N>The Illustration is done by creating a simple Web Application through Visual Studio IDE since PivotGauge in ServerMode requires .NET dependency. The Web Application would contain a HTML page and a service which transfers data to server-side, processes and returns back the data to client-side for control rendering. The service utilized for communication could be either a WebAPI Controller Class or a WCF Service based on user requirement.  We have illustrated both for user convenience.
+N>The Illustration is done by creating a simple Web Application through Visual Studio IDE since PivotGauge in ServerMode requires .NET dependency. The Web Application would contain a HTML page and a service which transfers data to [`server-side`](/api/js/ejpivotgauge#members:operationalmode), processes and returns back the data to [`client-side`](/api/js/ejpivotgauge#members:operationalmode) for control rendering. The service utilized for communication could be either a WebAPI Controller Class or a WCF Service based on user requirement.  We have illustrated both for user convenience.
 
 ### Project Initialization
 
@@ -565,7 +755,7 @@ Now, PivotGauge is rendered with sales amount as shown in below image.
 
 ### WCF
 
-This section demonstrates the utilization of WCF service as endpoint binding Relational datasource to a simple PivotGauge. For more details on this topic, [click here](https://help.syncfusion.com/js/pivotgauge/relational-connectivity#wcf-1).
+This section demonstrates the utilization of WCF service as endpoint binding [`Relational`](/api/js/ejpivotgauge#members:analysismode) datasource to a simple PivotGauge. For more details on this topic, [click here](https://help.syncfusion.com/js/pivotgauge/relational-connectivity#wcf-1).
   
 
 

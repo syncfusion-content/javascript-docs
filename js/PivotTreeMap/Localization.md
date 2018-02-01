@@ -16,6 +16,8 @@ Content displayed within the PivotTreeMap control are obtained from the OLAP Cub
 
 * To get localized data from OLAP Cube, we need to set **"Locale Identifier"** in the connection string to a specific culture in the **"data"** property present inside **"dataSource"**. 
 
+N> You can use [`locale`](/api/js/ejpivottreemap#members:locale) for the localization of the control.
+
 {% highlight js %}
 
 //1036 refers to “fr-FR” culture.

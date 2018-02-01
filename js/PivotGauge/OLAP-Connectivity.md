@@ -215,6 +215,8 @@ namespace PivotGaugeDemo
 }
 {% endhighlight %}
 
+N> The [`customObject`](../api/ejpivotgauge#members:customobject) utilized to pass additional information between client-end and service-end.
+
 **Configuring Web Configuration File**
 
 You can expose services through the properties such as binding, contract and address by using an endpoint.
