@@ -52,6 +52,25 @@ $("#Spreadsheet").ejSpreadsheet({
 
 {% endhighlight %}
 
+### Before Batch Save
+
+The [`beforeBatchSave`](../api/ejspreadsheet#events:beforebatchsave) event is triggered  before the batch save.
+
+{% highlight html %}
+
+<div id="Spreadsheet"></div>
+
+<script>
+$("#Spreadsheet").ejSpreadsheet({
+            // beforeBatchSave event triggerd  before the batch save.
+            beforeBatchSave: function(args){
+             var dataSettings = args.dataSettings // if we want to know the dataSettings of batch save event.
+          },
+        });
+</script>
+
+{% endhighlight %}
+
 ### Before Cell Format
 
 The [`beforeCellFormat`](../api/ejspreadsheet#events:beforecellformat) event is triggered before the cells to be formatted.
@@ -392,6 +411,25 @@ $("#Spreadsheet").ejSpreadsheet({
             // when a file is imported.
             onImport: function(args){
               var importedData = args.importData //to get the data to be imported
+            },
+        });
+</script>
+
+{% endhighlight %}
+
+### Open Failure
+
+The [`openFailure`](../api/ejspreadsheet#events:openfailure) event is triggered when import sheet is failed to open.
+
+{% highlight html %}
+
+<div id="Spreadsheet"></div>
+
+<script>
+$("#Spreadsheet").ejSpreadsheet({
+            // when import sheet is failed to open.
+            openFailure: function(args){
+              var status = args.statusText //to get the status
             },
         });
 </script>

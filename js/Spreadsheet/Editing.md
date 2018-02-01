@@ -169,4 +169,12 @@ You can update range dynamically in the Spreadsheet by using the following metho
 * Using [`editRange`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:editrange "editRange") method to edit data in the specified range of cells based on its corresponding rangeSettings.
 * Using [`removeRange`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:removerange "removeRange") method to remove the range data and its defined rangeSettings property based on the specified range name.
 
- N> To get the property value of particular cell, based on the row and column index in the Spreadsheet use [`getPropertyValue`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xledit-getpropertyvalue "getPropertyValue")
+You can have the following range options in Spreadsheet.
+
+ 1. To get the data in specified range in Spreadsheet, use [`getRangeData`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:getrangedata "getRangeData") method.
+ 2. To get the range indices array based on the specified alpha range in Spreadsheet, use [`getRangeIndices`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:getrangeindices "getRangeIndices") method.
+ 3. To get the alpha range of the given index in Spreadsheet, use[`getAlphaRange`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:getalpharange "getAlphaRange")method.
+ 4. To get all cell elements in the specified range, use[`getRange`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:getrange "getRange") method.
+
+ N> 1. To get the property value of particular cell, based on the row and column index in the Spreadsheet use [`getPropertyValue`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xledit-getpropertyvalue "getPropertyValue")
+ 

@@ -188,6 +188,9 @@ function loadComplete(args) {
 The following output is displayed as a result of the above code example.
 ![](Worksheet_images/Worksheet_img5.png)
 
+N> 1. To refresh the content in Spreadsheet, use [`refreshContent`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:refreshcontent "refreshContent") method.
+N> 2. To refresh the Spreadsheet, use[`refreshSpreadsheet`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:refreshspreadsheet "refreshSpreadsheet")method.
+
 ## Headers
 
 Headers in the spreadsheet are numbered rows and lettered columns in worksheets. It makes ease of view and reference your data. You can dynamically show/hide worksheet header by using one of the following ways,
