@@ -352,7 +352,7 @@ The individual row properties are listed below,
     </tr>
     <tr>
         <td>
-            {{'[`index`](https://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-rows-cells-index "index")'| markdownify }}
+            {{'[`index`](https://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-rows-index "index")'| markdownify }}
         </td>
         <td>
             To specify particular row
