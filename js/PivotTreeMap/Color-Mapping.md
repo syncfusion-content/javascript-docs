@@ -8,22 +8,22 @@ documentation: ug
 api: /api/js/ejpivottreemap
 ---
 
-# Color Mapping
+# Color mapping
 
-You can customize the colors of the leaf nodes of PivotTreeMap using the color mapping support. 
+You can customize the colors of leaf nodes of the pivot tree map by using the color mapping support. 
 
-Color mapping is categorized into two different types such as,
+Color mapping is categorized into two different types as follows:
 
 * Normal
 * Range
 
-You can color all the leaf nodes with the different colors by setting the `color` value of the `rangeColorMapping` property.
+You can color all the leaf nodes with different colors by setting the `color` value of the `rangeColorMapping` property.
 
-### Normal Color Mapping
+### Normal color mapping
 
-You can customize the nodes based on number of leaf items using different color ranges. You can also define the color value range using `from` and `to` properties.
+You can customize the nodes based on number of leaf items using different color ranges. You can also define the color value range by using `from` and `to` properties.
 
-The following code sample explains how to customize PivotTreeMap appearance using **Normal** mode (i.e., differentiate color based on number of the leaf items in each header).
+The following code sample explains how to customize the pivot tree map appearance using **normal** mode (i.e., differentiate color based on the number of leaf items in each header).
 
 {% highlight js %}
 
@@ -69,11 +69,11 @@ The following code sample explains how to customize PivotTreeMap appearance usin
 
 ![](Color-Mapping_images/ColorMapping_img1.png)
 
-### Range Color Mapping
+### Range color mapping
 
-You can customize the nodes based on its value and color ranges using **Range** color. You can also define the color value range using `from` and `to` properties.
+You can customize the nodes based on its value and color ranges by using **range** color. You can also define the color value range by using `from` and `to` properties.
 
-The following code sample explains how to customize PivotTreeMap appearance using **Range** mode (i.e., differentiate color for leaf items based on values).
+The following code sample explains how to customize the pivot tree map appearance by using **range** mode (i.e., differentiate color for leaf items based on values).
 
 {% highlight js %}
 

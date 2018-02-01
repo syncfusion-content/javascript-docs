@@ -10,8 +10,8 @@ api: /api/js/ejpivottreemap
 
 # How to
 
-### Generate JSON object from Olap Cube
-The [`generateJSON`](/api/js/ejpivottreemap#methods:generateJSON) method is used to render the control with the pivot engine obtained from OLAP cube.
+### Generate JSON object from Olap cube
+The [`generateJSON`](/api/js/ejpivottreemap#methods:generateJSON) method is used to render the control with the pivot engine obtained from the OLAP cube.
 
 {% highlight html %}
 
@@ -40,8 +40,8 @@ The [`doAjaxPost`](/api/js/ejpivottreemap#methods:doajaxpost) method is used to 
 
 {% endhighlight %}
 
-### Destroying object of PivotTreeMap Component
-The [`destroy`](/api/js/ejpivottreemap#methods:destroy) method is used to destroy the PivotChart widget associated events that are bound using "this._on" and brings the control to pre-init state.
+### Destroying object of pivot tree map component
+The [`destroy`](/api/js/ejpivottreemap#methods:destroy) method is used to destroy the pivot chart widget associated events that are bound using "this._on" and bring the control to pre-init state.
 
 {% highlight html %}
 
@@ -55,8 +55,8 @@ The [`destroy`](/api/js/ejpivottreemap#methods:destroy) method is used to destro
 
 {% endhighlight %}
 
-### Getting JSON Records from control object
-The [`getJSONRecords`](/api/js/ejpivottreemap#methods:getjsonrecords) method is used to return the JSON records formed to render the control.
+### Getting JSON records from control object
+The [`getJSONRecords`](/api/js/ejpivottreemap#methods:getjsonrecords) method is used to return the JSON records that is formed to render the control.
 
 {% highlight html %}
 
@@ -70,8 +70,8 @@ The [`getJSONRecords`](/api/js/ejpivottreemap#methods:getjsonrecords) method is 
 
 {% endhighlight %}
 
-### Setting JSON Records to control object
-The [`setJSONRecords`](/api/js/ejpivottreemap#methods:setjsonrecords) method is used to set the JSON records to render the PivotChart control.
+### Setting JSON records to control object
+The [`setJSONRecords`](/api/js/ejpivottreemap#methods:setjsonrecords) method is used to set the JSON records to render the pivot chart control.
 
 {% highlight html %}
 
@@ -85,8 +85,8 @@ The [`setJSONRecords`](/api/js/ejpivottreemap#methods:setjsonrecords) method is 
 
 {% endhighlight %}
 
-### Invoking event before Pivot Engine population
-The [`beforePivotEnginePopulate`](/api/js/ejpivottreemap#events:beforePivotEnginePopulate) event is triggered before populating the pivot engine from datasource.
+### Invoking event before pivot engine population
+The [`beforePivotEnginePopulate`](/api/js/ejpivottreemap#events:beforePivotEnginePopulate) event is triggered before populating the pivot engine from the data source.
 
 {% highlight html %}
 
@@ -120,7 +120,7 @@ The [`afterServiceInvoke`](/api/js/ejpivottreemap#events:afterserviceinvoke) eve
 {% endhighlight %}
 
 ### Invoking event in client-side before service invoke
-The [`beforeServiceInvoke`](/api/js/ejpivottreemap#events:beforeserviceinvoke) event is triggered before any AJAX request is passed from PivotTreeMap to service methods.
+The [`beforeServiceInvoke`](/api/js/ejpivottreemap#events:beforeserviceinvoke) event is triggered before any AJAX request is passed from the pivot tree map to service methods.
 
 {% highlight html %}
 
@@ -137,7 +137,7 @@ The [`beforeServiceInvoke`](/api/js/ejpivottreemap#events:beforeserviceinvoke) e
 {% endhighlight %}
 
 ### Triggering event after performing drill operation
-The [`drillSuccess`](/api/js/ejpivottreemap#events:drillsuccess) event is triggered when drill up/down happens in PivotTreeMap control. And it returns the outer HTML of PivotTreeMap control.
+The [`drillSuccess`](/api/js/ejpivottreemap#events:drillsuccess) event is triggered when drill up/down operation is performed in the pivot tree map control, and it returns the outer HTML of the pivot tree map control.
 
 {% highlight html %}
 
@@ -153,8 +153,8 @@ The [`drillSuccess`](/api/js/ejpivottreemap#events:drillsuccess) event is trigge
 
 {% endhighlight %}
 
-### Triggering event before the PivotTreeMap loaded
-The [`load`](/api/js/ejpivottreemap#events:load) event is triggered when the pivot treemap is started to render.
+### Triggering event before the pivot tree map loaded
+The [`load`](/api/js/ejpivottreemap#events:load) event is triggered when the pivot tree map is started to render.
 
 {% highlight html %}
 
@@ -173,8 +173,8 @@ The [`load`](/api/js/ejpivottreemap#events:load) event is triggered when the piv
 
 ## Members
 
-### Responsive layout of PivotTreeMap component
-You can enable/disable responsiveness in the browser layout for pivot treemap control by setting [`isResponsive`](/api/js/ejpivottreemap#members:isresponsive) property.
+### Responsive layout of pivot tree map component
+You can enable/disable the responsiveness in the browser layout for pivot tree map control by setting the [`isResponsive`](/api/js/ejpivottreemap#members:isresponsive) property.
 
 {% highlight html %}
 
@@ -191,13 +191,13 @@ You can enable/disable responsiveness in the browser layout for pivot treemap co
 {% endhighlight %}
 
 
-## Setting Custom Name to Service Methods
-The [`serviceMethodSettings`](/api/js/ejpivottreemap#members:servicemethodsettings) allows you to set the custom name for the methods in WebAPI/WCF, communicated during AJAX post. The following table will explain the service methods.
+## Setting custom name to service methods
+The [`serviceMethodSettings`](/api/js/ejpivottreemap#members:servicemethodsettings) allows you to set the custom name for methods in the WebAPI/WCF, communicated during the AJAX post. The following table will explain the service methods:
 
-| Service Methods | Description |
+| Service methods | Description |
 |---|---|
-|[initialize](/api/js/ejpivottreemap#members:servicemethodsettings-initialize)|It fetches the data required to initialize the control.|
-|[drillDown](/api/js/ejpivottreemap#members:servicemethodsettings-drilldown)|It allows drilling up/down action in pivot treemap.|
+|[initialize](/api/js/ejpivottreemap#members:servicemethodsettings-initialize)|It fetches the required data to initialize the control.|
+|[drillDown](/api/js/ejpivottreemap#members:servicemethodsettings-drilldown)|It allows drilling up/down action in the pivot tree map.|
 
 
 
