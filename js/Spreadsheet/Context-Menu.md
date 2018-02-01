@@ -74,6 +74,10 @@ You can perform the following context menu customization options in spreadsheet.
 
 5) Remove Item
 
+6) Hide Item
+
+7) Show Item
+
 
 #### Add Item
 To dynamically add items in the context menu. Use [`addItem`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlcmenu-additem "addItem") method to add items in context menu via code.
@@ -89,6 +93,13 @@ To enable the items in the context menu. Use [`enableItem`](https://help.syncfus
 
 #### Remove Item
 To remove the items in the context menu. Use [`removeItem`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlcmenu-removeitem "removeItem") method to remove items in context menu via code.
+
+#### Hide Item
+To hide the items in the context menu. Use [`hideItem`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlcmenu-hideitem "hideItem") method to hide the items in context menu via code.
+
+#### Show Item
+To show the items in the context menu. Use [`showItem`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlcmenu-showitem "showItem") method to show the items in context menu via code.
+
 
 ![](Context-Menu_images/context-menu_img1.png)
 
