@@ -169,7 +169,7 @@ You can update range dynamically in the Spreadsheet by using the following metho
 * Using [`editRange`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:editrange "editRange") method to edit data in the specified range of cells based on its corresponding rangeSettings.
 * Using [`removeRange`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:removerange "removeRange") method to remove the range data and its defined rangeSettings property based on the specified range name.
 
-You can have the following range options in Spreadsheet.
+You have the following range options in Spreadsheet.
 
  1. To get the data in specified range in Spreadsheet, use [`getRangeData`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:getrangedata "getRangeData") method.
  2. To get the range indices array based on the specified alpha range in Spreadsheet, use [`getRangeIndices`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:getrangeindices "getRangeIndices") method.
