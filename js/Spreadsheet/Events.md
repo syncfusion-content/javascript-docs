@@ -62,7 +62,7 @@ The [`beforeBatchSave`](../api/ejspreadsheet#events:beforebatchsave) event is tr
 
 <script>
 $("#Spreadsheet").ejSpreadsheet({
-            // beforeBatchSave event triggerd  before the batch save.
+            // beforeBatchSave event triggered  before the batch save.
             beforeBatchSave: function(args){
              var dataSettings = args.dataSettings // if we want to know the dataSettings of batch save event.
           },
