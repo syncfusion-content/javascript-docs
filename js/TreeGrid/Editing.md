@@ -247,15 +247,14 @@ The below code snippet explains dynamically inserting a record in tree grid. The
 
 {% highlight js %}
 
-var treeGridObj = $("#treegrid").data("ejTreeGrid");
-var data = {
-            taskId:"40",
-            taskName:"New Task 40",
-            startDate:"2/20/2014",
-            startDate:"2/25/2014"
-           };
-
-treeGridObj.addRow(data, ej.TreeGrid.RowPosition.Child); // To add a task
+        var treeGridObj = $("#treegrid").data("ejTreeGrid");
+        var data = {
+            taskId: "40",
+            taskName: "New Task 40",
+            startDate: "2/20/2014",
+            startDate: "2/25/2014"
+        };
+        treeGridObj.addRow(data, ej.TreeGrid.RowPosition.Child); // To add a task
 
 {% endhighlight %}
 
