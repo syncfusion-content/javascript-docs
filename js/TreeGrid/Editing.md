@@ -239,6 +239,32 @@ The output of the TreeGrid width editTemplate as follows.
 
 ![](/js/TreeGrid/Editing_images/editTemplate.png)
 
+## Adding records using method
+
+Records can be added dynamically to TreeGrid using the method  [`addRow`](/api/js/ejtreegrid#methods:addrow "addRow"). Before calling this method, you should enable the [`allowAdding`](/api/js/ejtreegrid#members:editsettings-allowadding "editSettings.allowAdding") property.
+
+The below code snippet explains dynamically inserting a record in tree grid. The record will be inserted as a child node to the current selected record.
+
+{% highlight js %}
+var treeGridObj = $("#treegrid").data("ejTreeGrid");
+var data = {
+            taskId:"40",
+            taskName:"New Task 40",
+            startDate:"2/20/2014",
+            startDate:"2/25/2014"
+           };
+
+treeGridObj.addRow(data, ej.TreeGrid.RowPosition.Child); // To add a task
+{% endhighlight %}
+
+Using the row position parameter of the method, user can able to insert the record at any desired index at run-time. The user can insert a record dynamically in the following positions
+
+* Top: Top to all the existing records
+* Bottom: Bottom to all the existing records
+* Above: Above to the selected row
+* Below: Below to the selected row
+* Child: As a child to the selected row
+
 ## Delete confirmation message
 
 Delete confirmation message is used to get the confirmation from the user before delete the record. This confirmation message can be enabled by setting [`showDeleteConfirmDialog`](/api/js/ejtreegrid#members:editsettings-showdeleteconfirmdialog "editSettings.showDeleteConfirmDialog") property as `true`.
