@@ -246,6 +246,7 @@ Records can be added dynamically to TreeGrid using the method  [`addRow`](/api/j
 The below code snippet explains dynamically inserting a record in tree grid. The record will be inserted as a child node to the current selected record.
 
 {% highlight js %}
+
 var treeGridObj = $("#treegrid").data("ejTreeGrid");
 var data = {
             taskId:"40",
@@ -255,6 +256,7 @@ var data = {
            };
 
 treeGridObj.addRow(data, ej.TreeGrid.RowPosition.Child); // To add a task
+
 {% endhighlight %}
 
 Using the row position parameter of the method, user can able to insert the record at any desired index at run-time. The user can insert a record dynamically in the following positions
