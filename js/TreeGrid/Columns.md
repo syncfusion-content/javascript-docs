@@ -216,6 +216,18 @@ It is also possible to freeze all the preceding columns by choosing *Freeze Prec
 
 ![](/js/TreeGrid/Columns_images/Columns_img3.png)
 
+### Freezing columns using method
+
+Columns can also be frozen or unfrozen with custom actions using the [`freezeColumn`](/api/js/ejtreegrid#methods:freezecolumn "freezeColumn") method.
+The column's field name which is to be frozen/unfrozen should be passed as the method paramter, along with the freeze state.
+
+{% highlight js %}
+
+        var treegridObj = $("#treegrid").data("ejTreeGrid");
+        treegridObj.freezeColumn(field, true);
+
+{% endhighlight %}
+
 ## Resizing
 
 You can resize the column width to view the hidden text of the cell. This feature can be enabled by setting the [`allowColumnResize`](/api/js/ejtreegrid#members:allowcolumnresize) property to true.
@@ -388,6 +400,19 @@ Following code example shows how to hide specific column in column chooser list
 
 The above screenshot shows TreeGrid column chooser rendered without `Task Id` column. 
 {:.caption}
+
+## Show/Hide columns using method
+
+It is possible to toggle the visibility of the columns using the [`hideColumn`](/api/js/ejtreegrid#methods:hidecolumn "hideColumn") and [`showColumn`](/api/js/ejtreegrid#methods:showcolumn "showColumn") methods. The column's header text should be passed as the method parameter which is to be hidden.
+
+{% highlight js %}
+
+        var treegridObj = $("#treegrid").data("ejTreeGrid");
+        treegridObj.hideColumn("Task Name");
+        treegridObj.showColumn("Order ID");
+
+{% endhighlight %}
+
 
 ## Command Column
 
