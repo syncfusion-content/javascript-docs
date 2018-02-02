@@ -315,6 +315,8 @@ You can apply border for a cell or range of cells through following ways,
 
 4) Specify the border at initial load by using the [`border`](https://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-border"border") in `sheets` API.
 
+5) Use [`setBorder`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:setborder "setBorder") method to set border for the specified range of cells in the Spreadsheet.
+
 In Border you have the following options in spreadsheet.
 
 * To specify the border type in the Spreadsheet.Use [`type`](https://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-border-type "type") in `border` API.

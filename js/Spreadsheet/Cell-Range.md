@@ -392,6 +392,10 @@ function loadComplete(args) {
 The following output is displayed as a result of the above code example.
 ![](Cell-Ranges_images/Cell-Ranges_img5.png)
 
+N> 1. To get the active cell object in Spreadsheet, use[`getActiveCell`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:getactivecell "getActiveCell")method.
+N> 2. To get the cell element based on specified row and column index in the Spreadsheet, use[`getCell`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:getcell "getCell")method.
+N> 3. To get the sheet details based on the given sheet index in Spreadsheet, use[`getSheet`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:getsheet "getSheet")method.
+
 ## Hyperlink
 
 Hyperlink is used to navigate to web links or cell reference within the sheet or to other sheets in Spreadsheet. You can use [`allowHyperlink`](https://help.syncfusion.com/api/js/ejspreadsheet#members:allowhyperlink "allowHyperlink") property to enable/disable Hyperlink.
