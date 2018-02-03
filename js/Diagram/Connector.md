@@ -16,12 +16,23 @@ Connectors are objects used to create link between two points, nodes or ports to
 
 ## Create Connector
 
-Connector can be created by defining the start and end points. The path to be drawn can be defined with a collection of segments.
-To explore the properties of a [connector](/api/js/ejdiagram#members:connectors "connector"), refer to [Connector Properties](/api/js/ejdiagram#members:connectors "Connector Properties").
+* Connector can be created by defining the start and end points. The path to be drawn can be defined with a collection of segments.
+* To explore the properties of a [connector](/api/js/ejdiagram#members:connectors "connector"), refer to [Connector Properties](/api/js/ejdiagram#members:connectors "Connector Properties").
+* To Align the connectors when its parent is an container, use [horizontalAlign](/api/js/ejdiagram#members:connectors-horizontalalign "horizontalAlign") and [verticalAlign](/api/js/ejdiagram#members:connectors-verticalalign "verticalAlign") properties of connector.
+* To customize the connector appearance, use [lineColor](/api/js/ejdiagram#members:connectors-linecolor "lineColor"), [lineDashArray](/api/js/ejdiagram#members:connectors-linedasharray "lineDashArray") properties and to set size for connector, use [lineWidth](/api/js/ejdiagram#members:connectors-linewidth "lineWidth") property.
+* You can use [lineHitPadding](/api/js/ejdiagram#members:connectors-linehitpadding "lineHitPadding") property to perform interaction with connectors easily.
+* You can set a margin for connectors using [marginLeft](/api/js/ejdiagram#members:connectors-marginleft "marginLeft"),[marginRight](/api/js/ejdiagram#members:connectors-marginright "marginRight"),[marginTop](/api/js/ejdiagram#members:connectors-margintop "marginTop") and [marginBottom](/api/js/ejdiagram#members:connectors-marginbottom "marginBottom") properties and its applicable only if its parent is an container.
+* You can set a name for connectors using [name](/api/js/ejdiagram#members:connectors-name "name") property.
+* You can set connector transparency using [opacity](/api/js/ejdiagram#members:connectors-opacity "opacity") property.
+* To add a connector in group, set parent/group name in connectors [parent](/api/js/ejdiagram#members:connectors-parent "parent") property.
+* You can use connector [tooltip](/api/js/ejdiagram#members:connectors-tooltip "tooltip") which shows when mouse hovers over connector.
+* To show/hide the connector, use connector [visible](/api/js/ejdiagram#members:connectors-visible "visible") property.
+* To set an z-index for connector, use [zOrder](/api/js/ejdiagram#members:connectors-zorder "zOrder") property.
 
 ### Add connectors through connectors collection
 
 The [sourcePoint](/api/js/ejdiagram#members:connectors-sourcepoint "sourcePoint") and [targetPoint](/api/js/ejdiagram#members:connectors-targetpoint "targetPoint") properties of connector allow you to define the end points of a [connector](/api/js/ejdiagram#members:connectors "connector") . The following code example illustrates how to add a connector through connector collection.
+To position the connector, use sourcePoint [x](/api/js/ejdiagram#members:connectors-sourcepoint-x "x"), [y](/api/js/ejdiagram#members:connectors-sourcepoint-y "y") properties and targetPoint x, y properties.
 
 {% highlight javascript %}
 
@@ -85,6 +96,7 @@ When the connector is either added or removed in diagram, the [connectorCollecti
 ### Connectors from palette
 
 Connectors can be predefined and added to the symbol palette. You can drop those connectors into the Diagram, when required.
+Use [paletteItem](/api/js/ejdiagram#members:connectors-paletteitem "paletteItem") property to set size and preview size for connector which you add it to symbol palette.
 
 For more information about adding connectors from symbol palette, refer to [Symbol Palette](/js/Diagram/Symbol-Palette "Symbol Palette").
 
@@ -113,6 +125,19 @@ diagram.updateConnector("connectorName", {
 });
 
 {% endhighlight %}
+
+## Create label for connectors
+
+* You can add [labels](/api/js/ejdiagram#members:connectors-labels "labels") for connectors. Please refer [label](/js/diagram/label "label") section to know more about labels.
+* To customize the connector label, use [bold](/api/js/ejdiagram#members:connectors-labels-bold "bold"),[italic](/api/js/ejdiagram#members:connectors-labels-italic "italic"),[borderColor](/api/js/ejdiagram#members:connectors-labels-bordercolor "borderColor"),[borderWidth](/api/js/ejdiagram#members:connectors-labels-borderwidth "borderWidth"),[fontColor](/api/js/ejdiagram#members:connectors-labels-fontcolor "fontColor"),[fillColor](/api/js/ejdiagram#members:connectors-labels-fillcolor "fillColor") and [textDecoration](/api/js/ejdiagram#members:connectors-labels-textdecoration "textDecoration").
+* To align the label within the connector boundaries, use [boundaryConstraints](/api/js/ejdiagram#members:connectors-labels-boundaryconstraints "boundaryConstraints") property.
+* To set an hyperlink for connector labels, use [hyperlink](/api/js/ejdiagram#members:connectors-labels-hyperlink "hyperlink") property.
+* You can set a name for connector label using [name](/api/js/ejdiagram#members:connectors-labels-name "name") property.
+* To set a margin for connector label, use [margin](/api/js/ejdiagram#members:connectors-labels-margin "margin") [left](/api/js/ejdiagram#members:connectors-labels-margin-left "left"), [right](/api/js/ejdiagram#members:connectors-labels-margin-right "right"),[top](/api/js/ejdiagram#members:connectors-labels-margin-top "top") and [bottom](/api/js/ejdiagram#members:connectors-labels-margin-bottom "bottom") properties.
+* To drag a label within certain bounds, use [dragLimit](/api/js/ejdiagram#members:connectors-labels-dragLimit "dragLimit") [left](/api/js/ejdiagram#members:connectors-labels-dragLimit-left "left"), [right](/api/js/ejdiagram#members:connectors-labels-dragLimit-right "right"), [top](/api/js/ejdiagram#members:connectors-labels-dragLimit-top "top") and [dragLimit](/api/js/ejdiagram#members:connectors-labels-dragLimit-bottom "bottom") properties.
+* You can set transparency for connector labels using [opacity](/api/js/ejdiagram#members:connectors-labels-opacity "opacity") property.
+* To show/hide the connector label, use labels [visible](/api/js/ejdiagram#members:connectors-labels-visible "visible") property.
+* You can set the size for connector label using [width](/api/js/ejdiagram#members:connectors-labels-width "width") property.
 
 ## Connect nodes
 
@@ -457,10 +482,13 @@ connectors.push(connector);
 
 ## Decorator
 
-Start and end points of a connector can be decorated with some customizable shapes like arrows, circles, diamond or path. You can decorate the connection end points with the [sourceDecorator](/api/js/ejdiagram#members:connectors-sourcedecorator "sourceDecorator") and [targetDecorator](/api/js/ejdiagram#members:connectors-targetdecorator "targetDecorator") properties of connector.
-To explore the properties of decorators, refer to [Decorator Properties](/api/js/ejdiagram#members:connectors-sourcedecorator "Decorator Properties").
-
-The [shape](/api/js/ejdiagram#members:connectors-targetdecorator-shape "shape") property of decorator allows to define the shape of the decorators. The following code example illustrates how to create decorators of various shapes.
+* Start and end points of a connector can be decorated with some customizable shapes like arrows, circles, diamond or path. You can decorate the connection end points with the [sourceDecorator](/api/js/ejdiagram#members:connectors-sourcedecorator "sourceDecorator") and [targetDecorator](/api/js/ejdiagram#members:connectors-targetdecorator "targetDecorator") properties of connector.
+* To explore the properties of decorators, refer to [Decorator Properties](/api/js/ejdiagram#members:connectors-sourcedecorator "Decorator Properties").
+* To customize the sourceDecorator, use [borderColor](/api/js/ejdiagram#members:connectors-sourcedecorator-bordercolor "borderColor"), [borderWidth](/api/js/ejdiagram#members:connectors-sourcedecorator-borderwidth "borderWidth") and [fillColor](/api/js/ejdiagram#members:connectors-sourcedecorator-fillcolor "fillColor").
+* To customize the targetDecorator, use [borderColor](/api/js/ejdiagram#members:connectors-targetdecorator-bordercolor "borderColor") and [fillColor](/api/js/ejdiagram#members:connectors-targetdecorator-fillcolor "fillColor").
+* To set the size for sourceDecorator, use [width](/api/js/ejdiagram#members:connectors-sourcedecorator-width "width") and [height](/api/js/ejdiagram#members:connectors-sourcedecorator-height "height") property. Similarly, to set the size for targetDecorator, use [width](/api/js/ejdiagram#members:connectors-targetdecorator-width "width") and [height](/api/js/ejdiagram#members:connectors-targetdecorator-height "height").
+* To customize the [shape](/api/js/ejdiagram#members:connectors-sourcedecorator-shape "shape") of sourceDecorator, use [pathData](/api/js/ejdiagram#members:connectors-sourcedecorator-pathdata "pathData") property. similarly, to customize the shape of targetDecorator, use [pathData](/api/js/ejdiagram#members:connectors-targetdecorator-pathData "pathData") property.
+* The [shape](/api/js/ejdiagram#members:connectors-targetdecorator-shape "shape") property of decorator allows to define the shape of the decorators. The following code example illustrates how to create decorators of various shapes.
 
 {% highlight javascript %}
 
@@ -674,6 +702,8 @@ $("#DiagramContent").ejDiagram({
 
 ![](/js/Diagram/Connector_images/Connector_img21.png)
 
+You can use [bridgeSpace](/api/js/ejdiagram#members:connectors-bridgespace "bridgeSpace") property of connectors to define the width for line bridging. 
+
 **Limitation**: Bezier segments do not support bridging.
 
 ## Corner radius
@@ -763,3 +793,19 @@ Diagram allows to edit the connectors at runtime. To edit the connector segments
 
 ## Constraints
 The [constraints](/api/js/ejdiagram#members:connectors-constraints "constraints") property of connector allows to enable/disable certain features of connectors. For more information about constraints, refer to [Connector Constraints](/js/Diagram/Constraints#connectorconstraints "Connector Constraints").
+
+## AddInfo and CssClass
+The [addInfo](/api/js/ejdiagram#members:connectors-addinfo "addInfo") property of connectors allows to maintain additional information to connectors.
+The [cssClass](/api/js/ejdiagram#members:connectors-cssclass "cssClass") property used to customize the style of connectors using user defined css.
+
+## Connector Shapes
+* Diagram provides support to render different types of connectors by setting it using connectors [shape](/api/js/ejdiagram#members:connectors-shape "shape") property.
+* The different types of connector shapes are BPMN, UMLclassifier and UMLActivity and can render these Shapes by setting connector shape [type](/api/js/ejdiagram#members:connectors-shape-type "type") property.
+* The type of [flow](/api/js/ejdiagram#members:connectors-shape-flow "flow") shapes in a BPMN process are [sequence](/api/js/ejdiagram#members:connectors-shape-sequence "sequence"), [association](/api/js/ejdiagram#members:connectors-shape-flow-association "association") and [message](/api/js/ejdiagram#members:connectors-shape-message "message").
+* Use connector shape [relationship](/api/js/ejdiagram#members:connectors-shape-relationship "relationship") property to define the role of the connector in a UML Class Diagram. Applicable, if the type of the connector is “classifier”.
+* The connector shape [multiplicity](/api/js/ejdiagram#members:connectors-shape-multiplicity "multiplicity") to define multiplicity option of the connector.
+* Use multiplicity [type](/api/js/ejdiagram#members:connectors-shape-multiplicity-type "type") property to set the type of multiplicity.Applicable, if the connector is of type “classifier”.
+* Multiplicity [source](/api/js/ejdiagram#members:connectors-shape-multiplicity-source "source") property used to set the source label to connector. Applicable, if the connector is of type “UML”. 
+* The different options in source property are [optional](/api/js/ejdiagram#members:connectors-shape-multiplicity-source-optional "optional"), [lowerBounds](/api/js/ejdiagram#members:connectors-shape-multiplicity-source-lowerbounds "lowerBounds") and [upperBounds](/api/js/ejdiagram#members:connectors-shape-multiplicity-source-upperBounds "upperBounds") properties.
+* Multiplicity [target](/api/js/ejdiagram#members:connectors-shape-multiplicity-target "target") property used Defines the target label to connector. Applicable, if the connector is of type “UML”.
+* [ActivityFlow](/api/js/ejdiagram#members:connectors-shape-activityflow "ActivityFlow") shape used to Defines the shape of UMLActivity to connector. Applicable, if the connector is of type UMLActivity.
