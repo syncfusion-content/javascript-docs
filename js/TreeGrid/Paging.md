@@ -55,6 +55,7 @@ $("#TreeGridContainer").ejTreeGrid({
 
 You can also find the demo for pageSettings [here](http://js.syncfusion.com/demos/web/#!/bootstrap/treegrid/paging/pagingapi)
 
+
 ## Pager Template
 
 It is possible to customize the default pager in TreeGrid by using the [`template`](/api/js/ejtreegrid#members:pagesettings-template "pageSettings.template") property.
@@ -130,6 +131,17 @@ You can also find the demo for TreeGrid with pager template [here](http://js.syn
 
 The below image displays TreeGrid with paging template.
 ![](/js/TreeGrid/Paging_images/Paging_img2.png)
+
+It is possible to navigate to a specific page with a custom action instead from pager button click action, using the [`gotoPage`]( /api/js/ejtreegrid#methods:gotopage "gotoPage") method.
+
+The below code snippet explains calling the method to navigate to the 3rd page in TreeGrid
+
+{% highlight javascript %}
+
+        var treeObject = $("#TreeGridContainer").data("ejTreeGrid");
+        treeObject.gotoPage(3);
+
+{% endhighlight %}
 
 ## Paging - Touch Option
 
