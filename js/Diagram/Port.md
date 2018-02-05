@@ -59,6 +59,8 @@ $("#diagram").ejDiagram({
 
 You can add ports at runtime by using the client side method [addPorts](/api/js/ejdiagram#methods:addports "addPorts"). The following code illustrates how to add ports to node at runtime.
 
+* The port's [name](/api/js/ejdiagram#members:nodes-ports-name "name") property is used to define the name of the port and its further used to find the port at runtime and do any customization.
+
 {% highlight javascript %}
 
 // Defines a collection of ports that have to be added at runtime
@@ -115,8 +117,9 @@ For more information about creating connections with port, refer to [Connections
 
 ## Appearance 
 
-You can change the shape of port by using its [shape](/api/js/ejdiagram#members:nodes-ports-shape "shape") property. To explore the different types of port shapes, refer to [Port Shapes](/api/js/ejdiagram#members:nodes-ports-shape "Port Shapes").
-The appearance of ports can be customized with a set of style specific properties. 
+* You can change the shape of port by using its [shape](/api/js/ejdiagram#members:nodes-ports-shape "shape") property. To explore the different types of port shapes, refer to [Port Shapes](/api/js/ejdiagram#members:nodes-ports-shape "Port Shapes").
+
+* The appearance of ports can be customized by using [borderColor](/api/js/ejdiagram#members:nodes-ports-bordercolor "borderColor"), [borderWidth](/api/js/ejdiagram#members:nodes-ports-borderwidth "borderWidth"), [fillColor](/api/js/ejdiagram#members:nodes-ports-fillcolor "fillColor") properties of the port. 
 
 The following code illustrates how to change the appearance of port.
 
@@ -144,6 +147,10 @@ var nodes = [{ name: "node", ports: ports }];
 {% endhighlight %}
 
 ![](/js/Diagram/Port_images/Port_img2.png)
+
+## Offset
+
+The [offset](/api/js/ejdiagram#members:nodes-ports-offset "offset") property of port is used to align the port based on fractions. 0 represents top/left corner, 1 represents bottom/right corner, and 0.5 represents half of width/height.
 
 ## Constraints
 
