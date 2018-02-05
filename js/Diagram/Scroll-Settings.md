@@ -68,12 +68,14 @@ diagram.update({ scrollSettings: scrollSettings });
 
 Autoscroll feature automatically scrolls the Diagram whenever the node or connector is moved beyond the boundary of the Diagram. So that, it is always visible during dragging, resizing, and multiple selection operations. Autoscroll is automatically triggered when any one of the following is done towards the edges of the Diagram.
 
-The diagram client side event [autoScrollChange](/api/js/ejdiagram#events:autoscrollchange "autoScrollChange") gets triggered when the auto scroll(scrollbars) is changed and you can do your own customization in this event.
-
 * Node dragging, resizing 
 * Connection editing
 * Rubber band selection
 * Label dragging
+
+The diagram client side event [autoScrollChange](/api/js/ejdiagram#events:autoscrollchange "autoScrollChange") gets triggered when the auto scroll(scrollbars) is changed and you can do your own customization in this event.
+
+You can enable/disable the auto scroll behavior in your diagram by using [enableAutoScroll](/api/js/ejdiagram#members:enableautoscroll "enableautoscroll") property of the diagram.
 
 ## Autoscroll border
 
