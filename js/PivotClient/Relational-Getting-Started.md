@@ -59,7 +59,7 @@ Place a div tag in the HTML page which acts as a container for the pivot client 
 
 ### Populate pivot client with data
 
-This section exxplains the steps to populate the pivot client control using a sample JSON data as shown below:
+This section explains the steps to populate the pivot client control using a sample JSON data as shown below:
 
 {% highlight javascript %}
 

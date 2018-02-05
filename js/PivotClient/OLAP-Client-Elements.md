@@ -174,7 +174,7 @@ The member editor is a dialog which displays the members of the current hierarch
 
 ![](OLAP-Client-Elements_images/Member editor.png)
 
-The check all and uncheck all options in the dialog aloows the user to select and unselect entire nodes for filtering. For more details, about filtering, [click here](https://help.syncfusion.com/js/pivotclient/olap-data-exploration#filtering-by-member).
+The check all and uncheck all options in the dialog allows the user to select and unselect entire nodes for filtering. For more details, about filtering, [click here](https://help.syncfusion.com/js/pivotclient/olap-data-exploration#filtering-by-member).
 
 ## Toolbar
 
@@ -272,7 +272,7 @@ The load option allows you to load the saved report collection from the database
 
 ![](OLAP-Client-Elements_images/Loadreport.png)
 
-Select a report from the report collection through the drop-down list and click OK for loading the selected report collection. Otherwise cick Cancel to abort the report loading operation.
+Select a report from the report collection through the drop-down list and click OK for loading the selected report collection. Otherwise, click Cancel to abort the report loading operation.
 
 ![](OLAP-Client-Elements_images/Load report1.png)
 
@@ -281,7 +281,7 @@ This option allows you to remove the saved report from the report collection.  B
 
 ![](OLAP-Client-Elements_images/Removerecord.png)
 
-Clicking OK to remove the report from the collection. Otherwie click Cancel to withdraw the cancel operation.
+Clicking OK to remove the report from the collection. Otherwise, click Cancel to withdraw the cancel operation.
 
 ### Rename
 Rename option allows you to rename the saved report. By clicking the rename icon on the toolbar, the following dialog will open: 

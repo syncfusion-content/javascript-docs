@@ -14,7 +14,7 @@ api: /api/js/ejdiagram
 
 ## Customize the gridlines visibility
 
-The `snapSettings.snapConstraints` enables you to show/hide the gridlines. The following code example illustrates how to show or hide gridlines.
+The [snapSettings.snapConstraints](/api/js/ejdiagram#members:snapsettings-snapconstraints "snapSettings.snapConstraints") enables you to show/hide the gridlines. The following code example illustrates how to show or hide gridlines.
 
 {% highlight javascript %}
 
@@ -40,7 +40,7 @@ To show only horizontal/vertical gridlines or to hide gridlines, refer to [Const
 ## Appearance
 
 You can customize the appearance of the gridlines by using a set of predefined properties. To explore those properties, refer to [Gridlines](/api/js/ejdiagram#snapsettings:horizontalgridlines "Gridlines")
-The `horizontalGridLines` and `verticalGridLines` properties allow to customize the appearance of the gridlines. The following code example illustrates how to customize the appearance of gridlines.
+The [horizontalGridLines](/api/js/ejdiagram#members:snapsettings-horizontalgridlines "horizontalGridLines") and [verticalGridLines](/api/js/ejdiagram#members:snapsettings-verticalgridlines "verticalGridLines") properties allow to customize the appearance of the gridlines. The following code example illustrates how to customize the appearance of gridlines.
 
 {% highlight javascript %}
 
@@ -71,7 +71,7 @@ $(function() {
 
 ### Line Intervals
 
-Thickness and the space between gridlines can be customized by using `linesInterval` property. In the linesInterval collections, values at the odd places are referred as the thickness of lines and the values at the even places are referred as the space between gridlines.
+Thickness and the space between gridlines can be customized by using [linesInterval](/api/js/ejdiagram#members:snapsettings-verticalgridlines-linesinterval "linesInterval") property. In the linesInterval collections, values at the odd places are referred as the thickness of lines and the values at the even places are referred as the space between gridlines.
 
 The following code example illustrates how to customize the thickness of lines and the line intervals.
 
@@ -110,7 +110,7 @@ $(function() {
 
 This feature allows the Diagram objects to snap to the nearest intersection of gridlines while being dragged or resized. This feature enables easier alignment during layout or design.
 
-Snapping to gridlines can be enabled/disabled with the `snapSettings.snapConstraints`. The following code example illustrates how to enable/disable the snapping to gridlines.
+Snapping to gridlines can be enabled/disabled with the [snapSettings.snapConstraints](/api/js/ejdiagram#members:snapsettings-snapconstraints "snapSettings.snapConstraints"). The following code example illustrates how to enable/disable the snapping to gridlines.
 
 {% highlight javascript %}
 
@@ -133,7 +133,7 @@ To enable/disable snapping to horizontal/vertical lines, refer to [Constraints] 
 
 ## Customization of Snap Intervals
 
-By default, the objects are snapped towards the nearest gridline. The gridline or position towards where the diagram object snaps can be customized with the property, `snapInterval`. The following code example illustrates how to customize the snap intervals.
+By default, the objects are snapped towards the nearest gridline. The gridline or position towards where the diagram object snaps can be customized with the property, [snapInterval](/api/js/ejdiagram#members:snapsettings-verticalgridlines-snapinterval "snapInterval"). The following code example illustrates how to customize the snap intervals.
 
 {% highlight javascript %}
 
@@ -160,7 +160,7 @@ $("#diagram").ejDiagram({
 
 The snap-to-object provides visual cues to assist with aligning and spacing Diagram elements. A node can be snapped with its neighboring objects based on certain alignments. Such alignments are visually represented as smart guides.
 
-The `enableSnapToObject` property allows you to enable/disable smart guides. The following code example illustrates how to enable/disable the smart guides.
+The [enableSnapToObject](/api/js/ejdiagram#members:snapsettings-enablesnaptoobject "enableSnapToObject") property allows you to enable/disable smart guides. The following code example illustrates how to enable/disable the smart guides.
 
 {% highlight javascript %}
 

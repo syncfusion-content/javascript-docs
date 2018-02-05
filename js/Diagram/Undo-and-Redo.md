@@ -42,10 +42,10 @@ When a change in diagram is reverted or restored(undo/redo), the [historyChange]
 
 ## Track custom changes
 
-Diagram provides options to track the changes that are made to custom properties. For example, in case of an employee relationship Diagram, you may need to track the changes in the employee information. The `historyManager` of the Diagram model enables you to track such changes.
+Diagram provides options to track the changes that are made to custom properties. For example, in case of an employee relationship Diagram, you may need to track the changes in the employee information. The [historyManager](/api/js/ejdiagram#members:historymanager "historyManager") of the Diagram model enables you to track such changes.
 The following example illustrates how to track such custom property changes.
 
-* Before changing the employee information, save the existing information to history manager by using the client side method `push` of `historyManager`.
+* Before changing the employee information, save the existing information to history manager by using the client side method [push](/api/js/ejdiagram#members:historymanager-push "push") of `historyManager`.
 
 The following code example illustrates how to save the existing property values. 
 
@@ -75,7 +75,7 @@ node.empInfo = newValue;
 
 * Define the methods to handle the custom changes. These methods are called when you try to revert/restore the custom changes.
 
-You need to define the methods to handle the custom changes and you need to assign that to `undo` and `redo` properties of `historyManager`.
+You need to define the methods to handle the custom changes and you need to assign that to [undo](/api/js/ejdiagram#members:historymanager-undo "undo") and [redo](/api/js/ejdiagram#members:historymanager-redo "redo") properties of `historyManager`.
 The following code example illustrates how to define methods to handle the custom changes.
 
 {% highlight javascript %}
@@ -108,7 +108,7 @@ function customUndoRedo(args) {
 
 History manager allows to revert or restore multiple changes through a single undo/redo command. For example, you may need to revert/restore the fill color change of multiple elements at a time.
 
-The client side method `startGroupAction` is used to notify the Diagram to start grouping the changes. The client side method `closeGroupAction` is used to notify to stop grouping the changes. The following code illustrates how to undo/redo fillColor change of multiple elements at a time.
+The client side method [startGroupAction](/api/js/ejdiagram#members:historymanager-startgroupaction "startGroupAction") is used to notify the Diagram to start grouping the changes. The client side method [closeGroupAction](/api/js/ejdiagram#members:historymanager-closegroupaction "closeGroupAction") is used to notify to stop grouping the changes. The following code illustrates how to undo/redo fillColor change of multiple elements at a time.
 
 {% highlight javascript %}
 
@@ -133,9 +133,9 @@ diagram.model.historyManager.closeGroupAction();
 
 ## Track Undo/Redo actions
 
-The historyManager `undoStack` property is used to get the collection of undo actions which needs to be performed in the diagram.
-The historyManager `redoStack` property is used to get the collection of redo actions which needs to be performed in the diagram.
-The historyManager `stackLimit` property limits the number of actions to be stored on the historyManager.
+The historyManager [undoStack](/api/js/ejdiagram#members:historymanager-undostack "undoStack") property is used to get the collection of undo actions which needs to be performed in the diagram.
+The historyManager [redoStack](/api/js/ejdiagram#members:historymanager-redostack "redoStack") property is used to get the collection of redo actions which needs to be performed in the diagram.
+The historyManager [stackLimit](/api/js/ejdiagram#members:historymanager-stacklimit "stackLimit") property limits the number of actions to be stored on the historyManager.
 The undoStack/redoStack is an read only property.
 
 {% highlight javascript %}

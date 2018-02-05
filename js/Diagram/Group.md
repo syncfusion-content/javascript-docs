@@ -16,7 +16,7 @@ Group is used to cluster multiple nodes and connectors into a single element. It
 
 ### Add group when initializing diagram
 
-You can add a group to the Diagram model through `nodes` collection. To define an object as group, set its `type` property as "group" and you need to add the child objects to the `children` collection of the group. The following code illustrates how to create a group node.
+You can add a group to the Diagram model through [nodes](/api/js/ejdiagram#members:nodes "nodes") collection. To define an object as group, set its [type](/api/js/ejdiagram#members:nodes-type "type") property as "group" and you need to add the child objects to the [children](/api/js/ejdiagram#members:nodes-children "children")  collection of the group. The following code illustrates how to create a group node.
 
 {% highlight javascript %}
 
@@ -125,7 +125,7 @@ There are two types of containers available.
 * Canvas allows you to position its contained elements by using margin and alignment properties.
 * It allows elements to be either vertically or horizontally aligned.
 
-The `container` property of group should be defined and its `type` should be set as `canvas` to create a canvas panel. The following code illustrates how to add a canvas panel.
+The [container](/api/js/ejdiagram#members:nodes-container "container") property of group should be defined and its [type](/api/js/ejdiagram#members:nodes-container-type "type") should be set as `canvas` to create a canvas panel. The following code illustrates how to add a canvas panel.
 
 {% highlight javascript %}
 
@@ -193,9 +193,9 @@ $("#DiagramContent").ejDiagram({
 ### Stack
 
 * Stack panel is used to arrange its children in a single line or stack order, either vertically or horizontally.
-* It controls spacing by setting margin properties of child and padding properties of group. By default, a Stack Panel’s `orientation` is vertical. 
+* It controls spacing by setting margin properties of child and padding properties of group. By default, a Stack Panel’s [orientation](/api/js/ejdiagram#members:nodes-container-orientation "orientation") is vertical. 
 
-The `container` property of group should be defined and its `type` should be set as `stack` to create a canvas panel The following code illustrates how to add a stack panel.
+The [container](/api/js/ejdiagram#members:nodes-container "container") property of group should be defined and its [type](/api/js/ejdiagram#members:nodes-container-type "type") should be set as `stack` to create a canvas panel The following code illustrates how to add a stack panel.
 
 {% highlight javascript %}
 

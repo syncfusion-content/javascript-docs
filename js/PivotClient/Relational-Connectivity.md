@@ -22,7 +22,7 @@ If you are using the WCF service, refer to the data source initialization sectio
 
 To add a WCF service in an existing web application, right-click the project in the solution explorer and select **Add > New Item**. In the **Add New Item** window, select **WCF Service** and name it **“RelationalService.svc,”** and then click **Add**.
 
-The WCF service is added to your application, which, inturn, comprises the following files. The utilization of these files will be explained in the immediate sections. 
+The WCF service is added to your application, which, in-turn, comprises the following files. The utilization of these files will be explained in the immediate sections. 
 
 * RelationalService.svc
 * RelationalService.svc.cs
@@ -67,7 +67,7 @@ N> If you have installed any version of Essential Studio, then the location of S
 
 **List of namespaces**
 
-The following are the list of namespaces to be added on top of the main class in the `RelationalService.svc.cs` file.
+The following is the list of namespaces to be added on top of the main class in the `RelationalService.svc.cs` file.
 
 {% highlight c# %}
 

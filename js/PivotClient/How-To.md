@@ -314,7 +314,7 @@ The [`pointRegionClick`](../api/ejpivotclient#events:celldoubleclick) event is t
 
 {% endhighlight %}
 
-### Triggering event before rendering of axes lables in PivotChart
+### Triggering event before rendering of axes labels in pivot chart
 The [`axesLabelRendering`](../api/ejpivotclient#events:axeslabelrendering) event is triggered before rendering the chart label in the pivot chart.
 
 {% highlight html %}
@@ -389,7 +389,7 @@ The [`gridDrillSuccess`](../api/ejpivotclient#events:griddrillsuccess) event is 
 
 {% endhighlight %}
 
-### Triggering event after performing drill operation in PivotChart
+### Triggering event after performing drill operation in pivot chart
 The [`chartDrillSuccess`](../api/ejpivotclient#events:chartdrillsuccess) event is triggered when performing the drill operation on the chart series.
 
 {% highlight html %}
@@ -464,7 +464,7 @@ The [`chartLoad`](../api/ejpivotclient#events:chartload) event is triggered befo
 
 {% endhighlight %}
 
-### Triggering event before the PivotClient loaded
+### Triggering event before the pivot client loaded
 The [`load`](../api/ejpivotclient#events:load) event is triggered while you initiate loading of the widget.
 
 {% highlight html %}

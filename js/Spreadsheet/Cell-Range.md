@@ -102,7 +102,7 @@ To get the comment in the Spreadsheet. Use  [`getComment`](https://help.syncfusi
 To show all the comments in the Spreadsheet. Use  [`showAllComments`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlcomment-showallcomments "showAllComments") method to show all comments via code.
 
 #### Show Hide Comment
-To show or hide the specific comment in the Spreadsheet. Use  [`showHideComment`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlcomment-showhidecomments "showHideComment") method to show or hide the specified comment via code.
+To show or hide the specific comment in the Spreadsheet. Use  [`showHideComment`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlcomment-showhidecomment "showHideComment") method to show or hide the specified comment via code.
 
 #### User Name
 To define the username for the Spreadsheet which is displayed in comment. Use  [`userName`](https://help.syncfusion.com/api/js/ejspreadsheet#members:username "userName") member to define user name for a comment via code.
@@ -391,6 +391,10 @@ function loadComplete(args) {
 
 The following output is displayed as a result of the above code example.
 ![](Cell-Ranges_images/Cell-Ranges_img5.png)
+
+N> 1. To get the active cell object in Spreadsheet, use[`getActiveCell`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:getactivecell "getActiveCell")method.
+N> 2. To get the cell element based on specified row and column index in the Spreadsheet, use[`getCell`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:getcell "getCell")method.
+N> 3. To get the sheet details based on the given sheet index in Spreadsheet, use[`getSheet`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:getsheet "getSheet")method.
 
 ## Hyperlink
 

@@ -26,7 +26,7 @@ On clicking the "Hierarchy Selector" button which is displayed below the Grid, t
 
 ![](DrillThrough_images/hierarchy_selector.png)
 
-By dragging and dropping the respective hierarchies and click “OK”, the drill through MDX query will be framed and executed internally, and it provides the raw items back through the "drillThrough" event. In this example, the obtained raw items were bound to the ejGrid widget. Please refer the follwing code sample and screenshot:
+By dragging and dropping the respective hierarchies and click “OK”, the drill through MDX query will be framed and executed internally, and it provides the raw items back through the "drillThrough" event. In this example, the obtained raw items were bound to the ejGrid widget. Please refer the following code sample and screenshot:
 
 ## Client mode
 

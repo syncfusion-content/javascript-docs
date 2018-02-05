@@ -114,7 +114,7 @@ I> This option is applicable only for the pivot client when exporting to Excel d
 
 You can set the option for exporting the control to Excel document either in *.xls* or *.xlsx* format, using the `fileFormat` property in the `beforeExport` event.
 
-N> By default, the excel document will be exported to ".xls" format using the Ppvot engine export.
+N> By default, the excel document will be exported to ".xls" format using the pivot engine export.
 
 {% highlight javascript %}
 
