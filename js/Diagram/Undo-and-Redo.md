@@ -162,5 +162,5 @@ var redoStack = diagram.model.historyManager.redoStack;
 
 The clearHistory method used to Clears the actions which is recorded to perform undo/redo operation in the diagram. Please refer to the below link which shows how to use clearHistory method in diagram.
 
-[clearHistory](/api/js/ejdiagram#methods:clearHistory "clearHistory")
+[clearHistory](/api/js/ejdiagram#methods:clearhistory "clearHistory")
 

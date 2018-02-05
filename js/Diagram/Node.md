@@ -58,7 +58,13 @@ $("#diagram").ejDiagram({
 
 ### Add node at runtime
 
-Nodes can be added at runtime by using public method, [add](/api/js/ejdiagram#methods:add "add"). The following code illustrates how to add a node.
+* Nodes can be added at runtime by using public method, [add](/api/js/ejdiagram#methods:add "add").
+
+* To add a node to group at runtime, define group name in node's [parent](/api/js/ejdiagram#members:nodes-parent "parent") property.
+
+* The node's [name](/api/js/ejdiagram#members:nodes-name "name") property is used to define the name of the node and its further used to find the node at runtime and do any customization. A public method [findNode] (/api/js/ejdiagram#methods:findnode "findNode") is used to find the node/connector at runtime.
+
+The following code illustrates how to add a node.
 
 {% highlight javascript %}
 // Defines JSON to create a node
@@ -155,7 +161,7 @@ Diagram allows to add different kind of nodes. To explore the types of nodes, re
 
 ## Appearance
 
-You can customize the appearance of a node by changing its font, fill colors, patterns, line weight and style, or shadow. The following code illustrates how to customize the appearance of the shape.
+You can customize the appearance of a node by changing its [fillColor](/api/js/ejdiagram#members:nodes-fillcolor "fillColor"), [borderColor](/api/js/ejdiagram#members:nodes-bordercolor "borderColor"), [borderWidth](/api/js/ejdiagram#members:nodes-borderwidth "borderWidth"), [borderDashArray](/api/js/ejdiagram#members:nodes-borderdasharray "borderDashArray"), [opacity](/api/js/ejdiagram#members:nodes-opacity "opacity"), [patterns](/api/js/ejdiagram#members:nodes-gradient "patterns") and [shadow](/api/js/ejdiagram#members:nodes-shadow "shadow"). The following code illustrates how to customize the appearance of the shape.
 
 {% highlight javascript %}
 var nodes = [{
@@ -278,7 +284,7 @@ diagram.updateNode("node", { constraints: constraints });
 
 ### Customizing Shadow
 
-The angle, translation, and opacity of the shadow can be customized with the [shadow](/api/js/ejdiagram#members:nodes-shadow "shadow") property of node. The following code example illustrates how to customize shadow.
+The [angle](/api/js/ejdiagram#members:nodes-shadow-angle "angle"), [distance](/api/js/ejdiagram#members:nodes-shadow-distance "distance"), and [opacity](/api/js/ejdiagram#members:nodes-shadow-opacity "opacity") of the shadow can be customized with the [shadow](/api/js/ejdiagram#members:nodes-shadow "shadow") property of node. The following code example illustrates how to customize shadow.
 
 {% highlight javascript %}
 var nodes = [{
