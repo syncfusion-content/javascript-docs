@@ -16,7 +16,9 @@ The **SymbolPalette** displays a collection of palettes. The Palette shows a s
 
 * The [width](/api/js/ejsymbolpalette#members:width "width") and [height](/api/js/ejsymbolpalette#members:height "height") property of the symbolpalette allows you to define the size of the symbolpalette.
 
-* The [diagramId](/api/js/ejsymbolpalette#members:diagramid "diagramId") property of symbolpalette should be set with the corresponding Diagram ID to drag and drop the nodes and connectors into the Diagram. The following code illustrates how to create symbolpalette.  
+* The [diagramId](/api/js/ejsymbolpalette#members:diagramid "diagramId") property of symbolpalette should be set with the corresponding Diagram ID to drag and drop the nodes and connectors into the Diagram. The following code illustrates how to create symbolpalette.
+
+* The [cssClass](/api/js/ejsymbolpalette#members:cssClass "diagramId") property of symbolpalette allows to define the user defined CSS class to customize the style of the symbolpalette.
 
 {% highlight html %}
 
@@ -371,3 +373,19 @@ You can show/hide the symbol text by using the [showPaletteItemText](/api/js/ejs
 
 {% endhighlight %}
 To explore the properties of symbol palette, refer to [Symbol Palette Properties](/api/js/ejsymbolpalette#members "Symbol Palette Properties").
+
+## Disable Drag and Drop
+
+* The [allowDrag](/api/js/ejsymbolpalette#members "allowDrag") property of the symbolpalette allows you to enable the dragging the symbols from the symbol palette.
+
+## Add Symbols to Diagram on Single Click
+
+* SymbolPalette control provide the options to add the symbols to diagram when click on the the symbols from palette by using the client side event [selectionChange](/api/js/ejsymbolpalette#events "selectionChange").
+
+* The `selectionChange` event will get triggered when a palette item gets selected and return the selected item through arguments. You can use this to add the symbols to diagram.
+
+## Default Settings
+
+* While adding more number of symbols such as nodes and connectors to the palette, you can define the default settings for those objects through [defaultSettings](/api/js/ejsymbolpalette#members:defaultsettings "defaultSettings") property of the symbol palette.  
+
+* The [node](/api/js/ejsymbolpalette#members:defaultsettings-node "node") property of defaultSettings allows to define the default settings for nodes and [connectors](/api/js/ejsymbolpalette#members:defaultsettings-connector "connectors") property of defaultSettings allows to define the default settings for connectors.
