@@ -100,7 +100,7 @@ The scroll limit allows you to define the scrollable region of the Diagram. It i
 * Allows to scroll within the Diagram content.
 * Allows to scroll within the specified scrollable area.
 
-[scrollLimit](/api/js/ejdiagram#scroll-limit "scrollLimit") property of scroll settings helps to limit the scrolling. For the accepted values of the scrollLimit, refer to [Scroll Limit](/api/js/ejdiagram#scroll-limit "Scroll Limit").
+[scrollLimit](/api/js/ejdiagram#members:pagesettings-scrolllimit "scrollLimit") property of scroll settings helps to limit the scrolling.
 
 The following code example illustrates how to specify the scroll limit.
 
@@ -117,7 +117,7 @@ $("#diagram").ejDiagram({
 
 ## Scrollable Area
 
-You can restrict scrolling beyond any particular rectangular area by using the [scrollableArea](/api/js/ejdiagram#members:pagesettings-scrollablearea "scrollableArea") property of scroll settings. To restrict scrolling beyond any custom region, you have to set the [scrollLimit](/api/js/ejdiagram#scroll-limit "scrollLimit") as "limited". The following code example illustrates how to customize scrollable area.
+You can restrict scrolling beyond any particular rectangular area by using the [scrollableArea](/api/js/ejdiagram#members:pagesettings-scrollablearea "scrollableArea") property of scroll settings. To restrict scrolling beyond any custom region, you have to set the [scrollLimit](/api/js/ejdiagram#members:pagesettings-scrolllimit "scrollLimit") as "limited". The following code example illustrates how to customize scrollable area.
 
 {% highlight javascript %}
 

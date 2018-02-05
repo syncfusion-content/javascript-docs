@@ -563,7 +563,7 @@ $("#diagram").ejDiagram({
 
 ## Rotate
 
-You can rotate the labels to any desired angle. Labels are rotated to the angle that is defined by the [rotateAngle](/api/js/ejdiagram#members:nodes-rotateangle "rotateAngle") property of label. The following code illustrates how to rotate a label.
+You can rotate the labels to any desired angle. Labels are rotated to the angle that is defined by the [rotateAngle](/api/js/ejdiagram#members:nodes-labels-rotateangle "rotateAngle") property of label. The following code illustrates how to rotate a label.
 
 {% highlight javascript %}
 
