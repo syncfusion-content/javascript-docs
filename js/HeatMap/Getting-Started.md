@@ -50,7 +50,7 @@ api: /api/js/ejheatmap
 
 ## Prepare and Populate data
 
-Populate product information in a collection
+Populate product information in a collection.
 
 {% highlight js %}
 
@@ -73,7 +73,7 @@ for (var i = 0; i < 8; i++) {
 
 
 $("#heatmap").ejHeatMap({
-    colorMappingCollection: colorMappingCollection,
+    itemsSource: itemsSource,
 });
 
 {% endhighlight %}
@@ -82,7 +82,7 @@ $("#heatmap").ejHeatMap({
 
 Now data is ready, next we need to configure data source and map rows and columns to visualize.
 
-* Prepare `ItemsMapping` add it in resource.
+* Prepare [itemsMapping](/api/js/ejheatmap#members:itemsmapping "itemsMapping") and add it in resource.
 
 {% highlight js %}
 
@@ -101,7 +101,7 @@ var columnMapping = [
      
 {% endhighlight %}
 
-* Set items source and mapping
+* Set [itemsSource](/api/js/ejheatmap#members:itemssource "itemsSource") and mapping
 
 {% highlight js %}
              
@@ -119,7 +119,7 @@ $("#heatmap").ejHeatMap({
  
 ## Color Mapping
   
-Next we can configure color range for these values using color mapping
+Next we can configure color range for these values by using [colorMappingCollection](api/js/ejheatmap#members:colormappingcollection "colorMappingCollection") property of the HeatMap.
  
 * Configure items mapping based on items source.
  
@@ -152,51 +152,10 @@ $("#heatmap").ejHeatMap({
 
 ![](Getting-Started_images/Getting-Started_img2.png)
 
-## Tooltip
-
-HeatMap provides support to show tooltip when mouse hovers over any rows/columns. 
-To show tooltip on mouse over, the toolTipSettings property of model needs to be set with the toolTipSettings templateId and position as shown in the following example.
-
-{% highlight html %}
-
-<!--Define tooltip template-->
-<script type="text/x-jsrender" id="mouseovertoolTipId">
-    <div class="tooltip-style">Custom Tooltip
-        <div style="height:0px;width:100%;border:1px solid white;"></div>
-            <table>
-                <tr>
-                    <td style="width:50px;">Year  </td>
-                    <td>{{:data.Year}}</td>
-                </tr>
-                <tr>
-                    <td>Value  </td>
-                    <td>{{:cellValue}}</td>
-                </tr>
-            </table>
-    </div>
-</script>
-{% endhighlight %}
-
-{% highlight js %}
-
-$("#heatmap").ejHeatMap({
-    //Defines mouse over tooltip
-    toolTipSettings: {
-        templateId:"mouseovertoolTipId",
-        associate:"mouseFollow",
-        position: {
-            stem: { horizontal: "left", vertical: "top" }
-            };
-         }
-    });
-            
-{% endhighlight %}
-
-![](Getting-Started_images/Getting-Started_img4.png)
-
 # Legend
 
-A legend control is used to represent range value in a gradient, create a legend with the same color mapping as shown below.
+* A legend control is used to represent range value in a gradient, create a legend with the same color mapping as shown below.
+* You can use [legendCollection](/api/js/ejheatmap#members:legendcollection "legendCollection") to specify the number of legends that can sync with heat map.
   
 {% highlight js %}
 
