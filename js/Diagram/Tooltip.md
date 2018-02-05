@@ -100,7 +100,7 @@ $("#diagram").ejDiagram({
 
 ## Tooltip for a specific node/connector
 
-Tooltips can be customized for every node. Tooltip can be defined for individual node/connector by using the [tooltip](/api/js/ejdiagram#members:nodes-tooltip "tooltip") property of that node/connector. In addition to that, you have to remove the **InheritTooltip** option from the [constraints](/api/js/ejdiagram#members:constraints "constraints") of that node/connector. The following code example illustrates how to customize tooltips for individual elements.
+Tooltips can be customized for each node and connector. Tooltip can be defined for individual node/connector by using the node's [tooltip](/api/js/ejdiagram#members:nodes-tooltip "tooltip") and connector's [tooltip](/api/js/ejdiagram#members:connectors-tooltip "tooltip") property. In addition to that, you have to remove the **InheritTooltip** option from the [constraints](/api/js/ejdiagram#members:constraints "constraints") of that node/connector. The following code example illustrates how to customize tooltips for individual elements.
 
 {% highlight javascript %}
 
