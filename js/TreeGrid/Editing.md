@@ -89,6 +89,70 @@ The output of the TreeGrid with `dialogEditing` is as follows.
 
 ![](/js/TreeGrid/Editing_images/dialogEditing.png)
 
+## Cell edit type and its params
+
+The edit type of columns can be customized using [`editType`](/api/js/ejtreegrid#members:columns-edittype "columns.editType") property of [`columns`](/api/js/ejtreegrid#members:columns). The following Essential JavaScript controls are supported built-in by [`editType`](/api/js/ejtreegrid#members:columns-edittype "columns.editType"). You can set the [`editType`](/api/js/ejtreegrid#members:columns-edittype "columns.editType") based on specific data type of the column.
+
+* [`CheckBox`](/api/js/ejcheckbox# "CheckBox") control for boolean data type.
+* [`NumericTextBox`](/api/js/ejtextboxes# "NumericTextBox") control for integers, double, and decimal data types.
+* `InputTextBox` control for string data type.
+* [`DatePicker`](/api/js/ejdatepicker# "DatePicker") control for date data type.
+* [`DateTimePicker`](/api/js/ejdatetimepicker# "DateTimePicker") control for date-time data type.
+* [`DropDownList`](/api/js/ejdropdownlist# "DropDownList") control for list of data type.
+
+And also you can define the model for all the editTypes controls while editing through [`editParams`](/api/js/ejtreegrid#members:columns-editparams "columns.editParams") property of [`columns`](/api/js/ejtreegrid#members:columns).
+
+The following code example describes the above behavior.
+
+{% highlight js %}
+
+    $("#TreeGridContainer").ejTreeGrid({
+        //...
+         columns: [
+            { field: "taskID", headerText: "Task Id", editType: "numericedit" },
+            { field: "taskName", headerText: "Task Name", editType: "stringedit" },
+            { field: "startDate", headerText: "Start Date", editType: "datepicker"},
+            { field: "endDate", headerText: "End Date", editType: "datepicker"},
+            { field: "duration", headerText: "Duration", editType: "numericedit", editParams: {decimalPlaces:2} },
+        ],
+        //...
+    });
+
+{% endhighlight %}
+
+![](/js/TreeGrid/Editing_images/editType.png)
+
+The above screenshot shows TreeGrid with different edit type.
+
+### Assign data source for drop down edit type
+
+In TreeGrid, we need to assign the data source for drop down list control to populate the suggestion list while editing the column in tree grid. The [`dropdownData`](/api/js/ejtreegrid#members:columns-dropdowndata "columns.dropdownData") property is used to set the drop down list data source in TreeGrid control.
+
+The following code example shows how to set data source for drop down edit type.
+
+{% highlight js %}
+var data = [
+            {id:1, text: "Low", value: "Low" },
+            {id:2, text: "Normal", value: "Normal" },
+            {id:3, text: "High", value: "High" },
+            {id:4, text: "Critical", value: "Critical" }
+        ];
+    $("#TreeGridContainer").ejTreeGrid({
+        //...
+         columns: [
+            //..
+            { field: "priority", headerText: "Priority", editType: "dropdownedit", dropdownData: data },
+        ],
+        //...
+    });
+
+{% endhighlight %}
+
+![](/js/TreeGrid/Editing_images/dropdownEdit.png)
+
+The above screenshot shows drop down edit type in tree grid.
+{:.caption}
+
 #### Dialog Template
 
 You can edit any of the fields pertaining to a single record of data and apply it to a template so that the same format is applied to all the other records that you may edit later.
@@ -177,6 +241,23 @@ $("#edit").click(function (args) {
     treegridObj.showEditDialog(3);
     })
 </script>
+{% endhighlight %}
+
+### Edit cell/row by single click
+
+The TreeGrid control provide the support for single click edit action for cell and row edit by setting [`beginEditAction`](/api/js/ejtreegrid#members:editsettings-begineditaction "editSettings.beginEditAction") property as `click`, default value this property is `dblClick`.
+
+The following code example shows how to enable single click edit in tree grid.
+
+{% highlight js %}
+$("#TreeGrid").ejTreeGrid({
+    //...
+    editSettings: {
+        beginEditAction:ej.TreeGrid.BeginEditAction.Click,
+    },
+    //...
+});
+
 {% endhighlight %}
 
 ## Cell Edit Template
