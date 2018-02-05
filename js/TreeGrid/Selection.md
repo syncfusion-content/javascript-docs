@@ -321,3 +321,16 @@ $("#TreeGridContainer"). ejTreeGrid ({
 The following output is displayed the result of multiple selection in touch device environment.
 
 ![](/js/TreeGrid/Selection_images/multiselection.png)
+
+## Deselecting records using method
+
+It is possible to clear the selection in TreeGrid at run-time using the [`clearSelection`](/api/js/ejtreegrid#methods:clearselection "clearSelection") method.
+
+The specific row will be deselected when the row index is passed as the method parameter. If the index is not passed, then all the selected rows in tree grid will be deselected.
+
+{% highlight js %}
+
+        var treegridObj = $("#treegrid").data("ejTreeGrid");
+        treegridObj.clearSelection(2);
+           
+{% endhighlight %}

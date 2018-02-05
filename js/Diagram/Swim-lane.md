@@ -32,7 +32,7 @@ Add a placeholder `div` element that can be used to initialize the diagram widge
 
 ## Create a swimlane
 
-To create a swimlane, you need to define an object with `isSwimlane` property that helps identify the object as a swimlane. By default, the swimlanes are arranged vertically. You can change that with the `orientation` property of swimlane.
+To create a swimlane, you need to define an object with [isSwimlane](/api/js/ejdiagram#members:nodes-isswimlane "isSwimlane") property that helps identify the object as a swimlane. By default, the swimlanes are arranged vertically. You can change that with the [orientation](/api/js/ejdiagram#members:nodes-orientation "orientation") property of swimlane.
 
 The following code example illustrates how to define a swimlane object.
 
@@ -55,7 +55,7 @@ var swimlane = {
 
 ## Add swimlane into diagram
 
-Adding a swimlane to the Diagram is same as adding a node. You can add either through the `nodes` collection or through the client side method `add`. You can also drag and drop a swimlane from symbol palette.
+Adding a swimlane to the Diagram is same as adding a node. You can add either through the [nodes](/api/js/ejdiagram#members:nodes "nodes") collection or through the client side method `add`. You can also drag and drop a swimlane from symbol palette.
 For more information about adding a node/swimlane to the Diagram, refer to [Add Nodes](/js/Diagram/Node#create-node "Add Nodes").
 
 The following code example illustrates how to add a swimlane to the Diagram through `nodes` collection.
@@ -72,7 +72,7 @@ $("#diagram").ejDiagram({
 
 ## Headers
 
-Swimlane allows to define a header to textually describe it. The `header` property of swimlane allows you to define its textual description(`text`) and to customize its appearance. The following code example illustrates how to define swimlane header.
+Swimlane allows to define a header to textually describe it. The [header](/api/js/ejdiagram#members:nodes-header "header") property of swimlane allows you to define its textual description(`text`) and to customize its appearance. The following code example illustrates how to define swimlane header.
 
 {% highlight javascript %}
 
@@ -151,7 +151,7 @@ You can add any number of lanes to a swimlane and the lanes are automatically st
 
 ### Create an empty lane
 
-To create an empty lane, you need to define an object with `isLane` property that helps identify the object as a lane. The following example illustrates how to define a swimlane with a lane.
+To create an empty lane, you need to define an object with [isLane](/api/js/ejdiagram#members:nodes-lanes-islane "isLane") property that helps identify the object as a lane. The following example illustrates how to define a swimlane with a lane.
 
 {% highlight javascript %}
 
@@ -185,8 +185,8 @@ var swimlane = {
 
 ### Create a lane with header
 
-The `header` property of the lane allows you to textually describe the lane(`text`) and to customize the appearance of the description. The following code example illustrates how to define a lane header.
-You can limit the size of a lane with its `minWidth`, `minHeight`, `maxWidth`, and `maxHeight` properties.
+The [header](/api/js/ejdiagram#members:nodes-lanes-header "header") property of the lane allows you to textually describe the lane(`text`) and to customize the appearance of the description. The following code example illustrates how to define a lane header.
+You can limit the size of a lane with its [minWidth](/api/js/ejdiagram#members:nodes-minwidth "minWidth"), [minHeight](/api/js/ejdiagram#members:nodes-minheight "minHeight"), [maxWidth](/api/js/ejdiagram#members:nodes-maxwidth "maxWidth"), and [maxHeight](/api/js/ejdiagram#members:nodes-maxheight "maxHeight") properties.
 
 {% highlight javascript %}
 
@@ -246,7 +246,7 @@ diagram.updateNode("laneName", { header: {height: 0} })
 
 ### Add nodes to a lane
 
-To add nodes to a lane, You need to add them to the `children` collection of lane. The following code example illustrates how to add nodes to a lane.
+To add nodes to a lane, You need to add them to the [children](/api/js/ejdiagram#members:nodes-lanes-children "children") collection of lane. The following code example illustrates how to add nodes to a lane.
 
 {% highlight javascript %}
 
@@ -313,7 +313,7 @@ Phases are the sub-processes that are used to break the swimlane into multiple s
 
 ### Add phase
 
-To define a phase, you have to set the length of the region to the `offset` property of phase. Every region can be textually described with the `label` property of phase.
+To define a phase, you have to set the length of the region to the [offset](/api/js/ejdiagram#members:nodes-phases-offset "offset") property of phase. Every region can be textually described with the [label](/api/js/ejdiagram#members:nodes-phases-label "label") property of phase.
 
 The following code example illustrates how to add a phase on initializing swimlane.
 

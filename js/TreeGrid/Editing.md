@@ -89,6 +89,70 @@ The output of the TreeGrid with `dialogEditing` is as follows.
 
 ![](/js/TreeGrid/Editing_images/dialogEditing.png)
 
+## Cell edit type and its params
+
+The edit type of columns can be customized using [`editType`](/api/js/ejtreegrid#members:columns-edittype "columns.editType") property of [`columns`](/api/js/ejtreegrid#members:columns). The following Essential JavaScript controls are supported built-in by [`editType`](/api/js/ejtreegrid#members:columns-edittype "columns.editType"). You can set the [`editType`](/api/js/ejtreegrid#members:columns-edittype "columns.editType") based on specific data type of the column.
+
+* [`CheckBox`](/api/js/ejcheckbox# "CheckBox") control for boolean data type.
+* [`NumericTextBox`](/api/js/ejtextboxes# "NumericTextBox") control for integers, double, and decimal data types.
+* `InputTextBox` control for string data type.
+* [`DatePicker`](/api/js/ejdatepicker# "DatePicker") control for date data type.
+* [`DateTimePicker`](/api/js/ejdatetimepicker# "DateTimePicker") control for date-time data type.
+* [`DropDownList`](/api/js/ejdropdownlist# "DropDownList") control for list of data type.
+
+And also you can define the model for all the editTypes controls while editing through [`editParams`](/api/js/ejtreegrid#members:columns-editparams "columns.editParams") property of [`columns`](/api/js/ejtreegrid#members:columns).
+
+The following code example describes the above behavior.
+
+{% highlight js %}
+
+    $("#TreeGridContainer").ejTreeGrid({
+        //...
+         columns: [
+            { field: "taskID", headerText: "Task Id", editType: "numericedit" },
+            { field: "taskName", headerText: "Task Name", editType: "stringedit" },
+            { field: "startDate", headerText: "Start Date", editType: "datepicker"},
+            { field: "endDate", headerText: "End Date", editType: "datepicker"},
+            { field: "duration", headerText: "Duration", editType: "numericedit", editParams: {decimalPlaces:2} },
+        ],
+        //...
+    });
+
+{% endhighlight %}
+
+![](/js/TreeGrid/Editing_images/editType.png)
+
+The above screenshot shows TreeGrid with different edit type.
+
+### Assign data source for drop down edit type
+
+In TreeGrid, we need to assign the data source for drop down list control to populate the suggestion list while editing the column in tree grid. The [`dropdownData`](/api/js/ejtreegrid#members:columns-dropdowndata "columns.dropdownData") property is used to set the drop down list data source in TreeGrid control.
+
+The following code example shows how to set data source for drop down edit type.
+
+{% highlight js %}
+var data = [
+            {id:1, text: "Low", value: "Low" },
+            {id:2, text: "Normal", value: "Normal" },
+            {id:3, text: "High", value: "High" },
+            {id:4, text: "Critical", value: "Critical" }
+        ];
+    $("#TreeGridContainer").ejTreeGrid({
+        //...
+         columns: [
+            //..
+            { field: "priority", headerText: "Priority", editType: "dropdownedit", dropdownData: data },
+        ],
+        //...
+    });
+
+{% endhighlight %}
+
+![](/js/TreeGrid/Editing_images/dropdownEdit.png)
+
+The above screenshot shows drop down edit type in tree grid.
+{:.caption}
+
 #### Dialog Template
 
 You can edit any of the fields pertaining to a single record of data and apply it to a template so that the same format is applied to all the other records that you may edit later.
@@ -179,6 +243,23 @@ $("#edit").click(function (args) {
 </script>
 {% endhighlight %}
 
+### Edit cell/row by single click
+
+The TreeGrid control provide the support for single click edit action for cell and row edit by setting [`beginEditAction`](/api/js/ejtreegrid#members:editsettings-begineditaction "editSettings.beginEditAction") property as `click`, default value this property is `dblClick`.
+
+The following code example shows how to enable single click edit in tree grid.
+
+{% highlight js %}
+$("#TreeGrid").ejTreeGrid({
+    //...
+    editSettings: {
+        beginEditAction:ej.TreeGrid.BeginEditAction.Click,
+    },
+    //...
+});
+
+{% endhighlight %}
+
 ## Cell Edit Template
 
 Edit template is used to create custom editor for editing the column values. It can be created by using the [`editTemplate`](/api/js/ejtreegrid#members:columns-edittemplate "columns.editTemplate") property of `columns`.
@@ -238,6 +319,82 @@ The following code example describes edit template behavior.
 The output of the TreeGrid width editTemplate as follows.
 
 ![](/js/TreeGrid/Editing_images/editTemplate.png)
+
+## Adding records using method
+
+Records can be added dynamically to TreeGrid using the method  [`addRow`](/api/js/ejtreegrid#methods:addrow "addRow"). Before calling this method, you should enable the [`allowAdding`](/api/js/ejtreegrid#members:editsettings-allowadding "editSettings.allowAdding") property.
+
+The below code snippet explains dynamically inserting a record in tree grid. The record will be inserted as a child node to the current selected record.
+
+{% highlight js %}
+
+        var treeGridObj = $("#treegrid").data("ejTreeGrid");
+        var data = {
+            taskId: "40",
+            taskName: "New Task 40",
+            startDate: "2/20/2014",
+            startDate: "2/25/2014"
+        };
+        treeGridObj.addRow(data, ej.TreeGrid.RowPosition.Child); // To add a task
+
+{% endhighlight %}
+
+Using the row position parameter of the method, user can able to insert the record at any desired index at run-time. The user can insert a record dynamically in the following positions
+
+* Top: Top to all the existing records
+* Bottom: Bottom to all the existing records
+* Above: Above to the selected row
+* Below: Below to the selected row
+* Child: As a child to the selected row
+
+The row position can be also defined while initializing the TreeGrid. The below code example shows how to set row position for adding new record in TreeGrid.
+
+{% highlight js %}
+
+        $("#TreeGrid").ejTreeGrid({
+            //...
+            editSettings: {
+                allowAdding: true,
+                rowPosition: ej.TreeGrid.RowPosition.Child,
+            },
+            //...
+        });
+
+{% endhighlight %}
+
+![](/js/TreeGrid/Editing_images/addnewRowChild.png)
+
+The above screenshot shows new record added in row position of `child`.
+{:.caption}
+
+## Delete record
+
+TreeGrid provides support to delete a record by enabling [`allowDeleting`](/api/js/ejtreegrid#members:editsettings-allowdeleting "editSettings.allowDeleting") property.
+
+The below code example shows how to enable delete option in TreeGrid.
+
+{% highlight js %}
+
+        $("#TreeGrid").ejTreeGrid({
+            //...
+            editSettings: {
+                allowDeleting: true,
+            },
+            //...
+        });
+
+{% endhighlight %}
+
+![](/js/TreeGrid/Editing_images/beforeDelete.png)
+
+The above screenshot shows before delete a record in tree grid.
+{:.caption}
+
+![](/js/TreeGrid/Editing_images/afterDelete.png)
+
+The above screenshot shows after delete a record in tree grid.
+{:.caption}
+
 
 ## Delete confirmation message
 
