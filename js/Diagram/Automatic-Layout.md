@@ -485,7 +485,7 @@ Diagram provides support to align the layout within any custom rectangular area.
 
 ### Layout Alignment
 
-You can align the layout anywhere over the layout bounds/viewport using the `horizontalAlignment` and `verticalAlignment` properties of layout.
+You can align the layout anywhere over the layout bounds/viewport using the [horizontalAlignment](/api/js/ejdiagram#members:layout-horizontalalignment "horizontalAlignment") and [verticalAlignment](/api/js/ejdiagram#members:layout-verticalalignment "verticalAlignment") properties of layout.
 
 The following code illustrates how to align the layout at the top left of the layout bounds.
 
@@ -528,6 +528,10 @@ $("#diagram").ejDiagram({
 
 
 ![](/js/Diagram/Automatic-Layout_images/Automatic-Layout_img14.png)
+
+### Layout Spacing
+
+Layout provides support to add space horizontally and vertically between the nodes. The [horizontalSpacing](/api/js/ejdiagram#members:layout-horizontalspacing "horizontalSpacing") and [verticalSpacing](/api/js/ejdiagram#members:layout-verticalspacing "verticalSpacing") property of the layout allows you to set the space between the nodes in horizontally and vertically.
 
 ### Layout Margin
 

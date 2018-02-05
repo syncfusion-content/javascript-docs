@@ -11,7 +11,7 @@ api: /api/js/ejdiagram
 # Context Menu
 
 In graphical user interface (GUI), a context menu is a type of menu that appears when you perform right-click operation. Nested level of context menu items can be created.
-Diagram provides some in-built context menu items and allows to define custom menu items.
+Diagram provides some in-built context menu items and allows to define custom menu items through [contextMenu](api/js/ejdiagram#members:contextmenu "contextMenu") property.
 
 ## Default Context Menu
 
@@ -33,14 +33,16 @@ $("#DiagramContent").ejDiagram({
 
 ## Customize Context Menu
 
-Apart from the default context menu items, you can define some additional context menu items. Those additional items have to be defined and added to [contextMenu.items](/api/js/ejdiagram#members:contextmenu-items "contextMenu.items"). Sub menu items for context menu can set using [contextMenu.items.subItems](/api/js/ejdiagram#members:contextmenu-items-subitems "contextMenu.items.subItems")
+* Apart from the default context menu items, you can define some additional context menu items. Those additional items have to be defined and added to [items](/api/js/ejdiagram#members:contextmenu-items "items") property of the context menu. 
+* Sub menu items for context menu can set using [subItems](/api/js/ejdiagram#members:contextmenu-items-subitems "subItems") property of the items.
+
 The following code example illustrate how to add custom context menu items.
 
 {% highlight html %}
 <style>
 	.menuBackgroundSize{
-            background-size:14px 14px;
-			}
+		background-size:14px 14px;
+	}
 </style>
 
 {% endhighlight %}

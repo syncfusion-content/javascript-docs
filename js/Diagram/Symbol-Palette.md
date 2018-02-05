@@ -14,7 +14,9 @@ The **SymbolPalette** displays a collection of palettes. The Palette shows a s
 
 ## Create symbol palette
 
-The [diagramId](/api/js/ejsymbolpalette#members:diagramid "diagramId") property of symbolpalette should be set with the corresponding Diagram ID to drag and drop the nodes and connectors into the Diagram. The following code illustrates how to create symbolpalette.  
+* The [width](/api/js/ejsymbolpalette#members:width "width") and [height](/api/js/ejsymbolpalette#members:height "height") property of the symbolpalette allows you to define the size of the symbolpalette.
+
+* The [diagramId](/api/js/ejsymbolpalette#members:diagramid "diagramId") property of symbolpalette should be set with the corresponding Diagram ID to drag and drop the nodes and connectors into the Diagram. The following code illustrates how to create symbolpalette.  
 
 {% highlight html %}
 
@@ -47,7 +49,7 @@ $("#symbolpalette").ejSymbolPalette({
 ## Add palettes to SymbolPalette
 
 A palette allows to display a group of related symbols and it textually annotates the group with its header.
-To initialize a palette, define a JSON object with the property [name](/api/js/ejdiagram#members:nodes-name "name") that is displayed as the header text of palette. The [expanded](/api/js/ejsymbolpalette#members:palettes-expanded "expanded") property of palette allows to expand/collapse its palette items.
+To initialize a palette, define a JSON object with the property [name](/api/js/ejsymbolpalette#members:palettes-name "name") that is displayed as the header text of palette. The [expanded](/api/js/ejsymbolpalette#members:palettes-expanded "expanded") property of palette allows to expand/collapse its palette items.
 The following code example illustrates how to define a palette and how its added to symbol palette.
 
 {% highlight javascript %}
@@ -170,6 +172,12 @@ The following code example illustrates how to define a palette with symbols that
 
 {% endhighlight %}
 
+### Add/Remove symbols to palette at runtime
+
+* Symbols can be added to palette at runtime by using public method, [addPaletteItem](/api/js/ejsymbolpalette#methods:addpaletteitem "addPaletteItem").
+
+* Symbols can be removed from palette at runtime by using public method, [removePaletteItem](/api/js/ejsymbolpalette#methods:removePaletteItem "removePaletteItem").
+
 ### Customize the size of symbols
 
 You can customize the size of the individual symbol. The [paletteItem](/api/js/ejdiagram#members:nodes-paletteitem "paletteItem") property of node enables you to define the size of the symbols. The following code example illustrates how to change the size of a symbol.
@@ -216,9 +224,9 @@ Symbol size will be set based on the following precedence.
 | Width | paletteItem.width > model.paletteItemWidth > node.width |  
 | Height | paletteItem.height > model.paletteItem.Height > node.height | 
 
-* Symbol size will be rendered in the palette based on node.paletteItem's [width](/api/js/ejsymbolpalette#members:width "width") and [height](/api/js/ejsymbolpalette#members:height "height") property. 
+* Symbol size will be rendered in the palette based on node.paletteItem's [width](/api/js/ejdiagram#members:nodes-paletteitem-width "width") and [height](/api/js/ejdiagram#members:nodes-paletteitem-height "height") property. 
 * If paletteItem's width and height property is not specified, symbol size will be rendered in the palette based on model's [paletteItemWidth](/api/js/ejsymbolpalette#members:paletteitemheight "paletteItemWidth") and [paletteItemHeight](/api/js/ejsymbolpalette#members:paletteitemwidth "paletteItemHeight") property. 
-* If you don't specify above two, then symbol size will be rendered in the palette based on node's [width](/api/js/ejsymbolpalette#members:width "width") and [height](/api/js/ejsymbolpalette#members:height "height") property. 
+* If you don't specify above two, then symbol size will be rendered in the palette based on node's [width](/api/js/ejdiagram#members:nodes-width "width") and [height](/api/js/ejdiagram#members:nodes-height "height") property. 
  
 
 ### Stretch the symbols into the palette
@@ -284,7 +292,7 @@ You can customize the preview size of the individual palette items. The [palette
 
 ![](/js/Diagram/Symbol-Palette_images/Symbol-Palette_img4.png)
 
-You can also customize the preview size of the all palette items. The [previewWidth](/api/js/ejdiagram#members:nodes-paletteitem-previewwidth "previewWidth") and [previewHeight](/api/js/ejdiagram#members:nodes-paletteitem-previewheight "previewHeight") property of SymbolPalette enables you to define the preview size to all the symbol palette items. The following code example illustrates how to change the preview size of a symbol palette items.
+You can also customize the preview size of the all palette items. The [previewWidth](/api/js/ejsymbolpalette#members:previewwidth "previewWidth") and [previewHeight](/api/js/ejsymbolpalette#members:previewheight "previewHeight") property of SymbolPalette enables you to define the preview size to all the symbol palette items. The following code example illustrates how to change the preview size of a symbol palette items.
 
 {% highlight js %}
 
@@ -313,8 +321,7 @@ You can also customize the preview size of the all palette items. The [previewWi
 
 ![](/js/Diagram/Symbol-Palette_images/Symbol-Palette_img5.png)
 
-Symbol palette allows to sets the offset of the dragging helper relative to the mouse cursor.
-
+Symbol palette allows to sets the [offset](ejsymbolpalette#members:previewoffset "offset") of the dragging helper relative to the mouse cursor.
 
 {% highlight javascript %}
 
@@ -347,8 +354,8 @@ Symbol preview size will be set based on the following precedence.
 | Height | paletteItem.previewHeight > model.previewHeight > node.height |
 
 * Symbol preview size will be set based on node.paletteItem's [previewWidth](/api/js/ejdiagram#members:nodes-paletteitem-previewwidth "previewWidth") and [previewHeight](/api/js/ejdiagram#members:nodes-paletteitem-previewheight "previewHeight") property. 
-* If paletteItem's width and height property is not specified, symbol size will be set based on model's [previewWidth](/api/js/ejdiagram#members:nodes-paletteitem-previewwidth "previewWidth") and [previewHeight](/api/js/ejdiagram#members:nodes-paletteitem-previewheight "previewHeight") property. 
-* If you don't specify above two, then symbol size will be rendered in the palette based on node's [width](/api/js/ejsymbolpalette#members:width "width") and [height](/api/js/ejsymbolpalette#members:height "height") property. 
+* If paletteItem's width and height property is not specified, symbol size will be set based on model's [previewWidth](/api/js/ejsymbolpalette#members:previewwidth "previewWidth") and [previewHeight](/api/js/ejsymbolpalette#members:previewheight "previewHeight") property. 
+* If you don't specify above two, then symbol size will be rendered in the palette based on node's [width](/api/js/ejdiagram#members:nodes-width "width") and [height](/api/js/ejdiagram#members:nodes-height "height") property. 
 
 ## Show/hide the symbol Text 
 
