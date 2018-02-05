@@ -66,3 +66,31 @@ The below code snippet demonstrates this.
 
 {% endhighlight %}
 
+
+### Sort column at initial load
+
+In TreeGrid, It is possible to render the control with sorted columns, this can be achieve by using [`sortSettings`](/api/js/ejtreegrid#members:sortsettings) property. We can add columns which are sorted initially in [`sortedColumns`](/api/js/ejtreegrid#members:sortsettings-sortedcolumns "sortSettings.sortedColumns") collection. [`sortedColumns`](/api/js/ejtreegrid#members:sortsettings-sortedcolumns "sortSettings.sortedColumns") collection was defined with [`field`](/api/js/ejtreegrid#members:sortsettings-sortedcolumns-field "sortSettings.sortedColumns.field") and [`direction`](/api/js/ejtreegrid#members:sortsettings-sortedcolumns-direction "sortSettings.sortedColumns.direction") properties.
+
+The following code shows how to add sorted column in TreeGrid.
+
+{% highlight js %}
+
+    $(function () {
+        $("#TreeGridContainer").ejTreeGrid({
+            //...
+            allowSorting: true,
+            sortSettings: {
+                sortedColumns: [
+                    { field: "taskName", direction: ej.sortOrder.Descending }
+                ]
+            },
+            //...
+        })
+    });
+
+{% endhighlight %}
+
+![](/js/TreeGrid/Sorting_images/Sorting_img2.png)
+
+The above screenshot shows TreeGrid rendered with descending order of `Task Name` column.
+{:.caption}

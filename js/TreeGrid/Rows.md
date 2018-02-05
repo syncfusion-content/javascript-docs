@@ -289,6 +289,89 @@ The following code shows how to render row drag tooltip with tooltip template.
 
 ![](/js/TreeGrid/Rows_images/Rows_img3.png)
 
+## Details row
+
+Details row is used to provide a additional information about each row of tree grid. You can specify the detail row jsRender template id or HTML element as string to [`detailsTemplate`](/api/js/ejtreegrid#members:detailstemplate) property. However you need to enable the details template by setting [`showDetailsRow`](/api/js/ejtreegrid#members:showdetailsrow) property as `true`.
+
+The following code example shows how to enable details tow in tree grid.
+
+{% highlight HTML %}
+<script id="descriptionTemplate" type="text/x-jsrender">
+    <div style="position: relative; display: inline-block; float: left; font-weight: bold; width: 10%">
+        <img src="../content/images/treegrid/{{:Name}}.png" style="margin-left: 10px;margin-top:15px;" />
+    </div>
+    <div style="padding-left: 10px; display: inline-block; width: 88%; text-wrap: normal;font-size:12px;font-family:'Segoe UI';margin-top:2px;">
+        <div class="e-description" style="word-wrap: break-word;">
+            <b>{{:Name}}</b> was born on {{:~_treeGridDateFormatter("DOB")}}. Now lives at {{:Address}},{{:Country}}. {{:Name}} holds a position of <b>{{:Designation}}</b> in our WA department, (Seattle USA). Joined our company on {{:~_treeGridDateFormatter("DOJ")}}.
+        </div>
+        <div class="e-description" style="word-wrap: break-word;margin-top:5px;">
+         <b style="margin-right:10px;">Contact:</b>{{:Contact}}
+        </div>
+    </div>
+</script>
+
+<script>
+    $("#TreeGrid").ejTreeGrid({
+        //...     
+        detailsTemplate:"descriptionTemplate",
+        enableCollapseAll: true,
+        //...
+    });
+</script>
+{% endhighlight %}
+
+![](/js/TreeGrid/Rows_images/Rows_img8.png)
+
+The above screenshot shows details row in tree grid.
+{:.caption}
+
+[Click](https://js.syncfusion.com/demos/web/#!/bootstrap/treegrid/rows/detailstemplate) here to view the demo sample for details row template.
+
+### Disable details row info column
+On enabling details template, details row info column will be added in tree grid. It is used for show or hide the detail row of respective row. You can disable that column while enabling details template using [`showDetailsRowInfoColumn`](/api/js/ejtreegrid#members:showdetailsrowinfocolumn) property. If you disable details row info column, then the details row will render next to the respective row.
+
+The following code example shows how to hide detail info column in tree grid. 
+
+{% highlight javascript %}
+
+$("#TreeGrid").ejTreeGrid({
+    //...     
+    detailsTemplate:"descriptionTemplate",
+    enableCollapseAll: true,
+    showDetailsRowInfoColumn:false,
+    //...
+});
+
+{% endhighlight %}
+
+![](/js/TreeGrid/Rows_images/Rows_img9.png)
+
+The above screenshot shows details row rendered next to the respective row.
+{:.caption}
+
+### Defining row height for detail template
+
+In TreeGrid, It is provide a support to change the detail template height using [`detailsRowHeight`](/api/js/ejtreegrid#members:detailsrowheight) property.
+
+The following code example shows how to set details row height in tree grid. 
+
+{% highlight javascript %}
+
+$("#TreeGrid").ejTreeGrid({
+    //...     
+    detailsTemplate:"descriptionTemplate",
+    enableCollapseAll: true,
+    detailsRowHeight:150,
+    //...
+});
+
+{% endhighlight %}
+
+![](/js/TreeGrid/Rows_images/Rows_img10.png)
+
+The above screenshot shows details row rendered with height of `150px`.
+{:.caption}
+
 ## Expand/Collapse Row
 
 In TreeGrid, parent rows are expanded/collapsed by using expand/collapse icons, expand all/collapse all toolbar items and by using public methods. By default all records in TreeGrid will be rendered in expanded state.

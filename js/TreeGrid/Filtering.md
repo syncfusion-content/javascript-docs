@@ -10,7 +10,9 @@ api: /api/js/ejtreegrid
 
 # Filtering
 
-Filtering helps to view specific or related records from data source which meets a given filtering criteria. To enable filtering in TreeGrid, set the [`allowFiltering`](/api/js/ejtreegrid#members:allowfiltering)  as `true`
+Filtering helps to view specific or related records from data source which meets a given filtering criteria. To enable filtering in TreeGrid, set the [`allowFiltering`](/api/js/ejtreegrid#members:allowfiltering)  as `true`.
+The [`filterSettings`](/api/js/ejtreegrid#members:filtersettings) property is used to customize the filtering in tree grid.
+
 TreeGrid provides support for the following filtering modes.
 
 * Filter bar
@@ -46,7 +48,7 @@ The output of the TreeGrid with filtering enabled is as follows.
 
 This is the default filtering mode in TreeGrid. It can also be enabled by setting the [`filterType`](/api/js/ejtreegrid#members:filtersettings-filtertype "filterSettings.filterType") as `filterbar`. When this filtering mode is enabled, a filter row will be displayed below the column header, in which we can provide the filter query.
 
-There are two types of actions available to initiate the filtering process in the filter bar mode,
+There are two types of actions available to initiate the filtering process in the filter bar mode, we can set the filter bar mode using [`filterBarMode`](/api/js/ejtreegrid#members:filtersettings-filterbarmode "filterSettings.filterBarMode") property.
 
 `immediate`: Filtering action will be initiated immediately on key press, for each character being typed in the filter bar.
 
@@ -222,7 +224,7 @@ The above screenshot shows TreeGrid with filtering blank content.
 {:.caption}
 
 ## Filter columns at initial load
-It is also possible to filter one or more columns at load time by providing the field and filter query values to the [`filteredColumns`](/api/js/ejtreegrid#members:filtersettings-filteredcolumns "filterSettings.filteredColumns") property. The following code example explains how to filter a column on initial load.
+It is also possible to filter one or more columns at load time by providing the [`field`](/api/js/ejtreegrid#members:filtersettings-filteredcolumns-field "filterSettings.filteredColumns.field"), [`value`](/api/js/ejtreegrid#members:filtersettings-filteredcolumns-value "filterSettings.filteredColumns.value"), [`predicate`](/api/js/ejtreegrid#members:filtersettings-filteredcolumns-predicate "filterSettings.filteredColumns.predicate") and [`operator`](/api/js/ejtreegrid#members:filtersettings-filteredcolumns-operator "filterSettings.filteredColumns.operator") to the [`filteredColumns`](/api/js/ejtreegrid#members:filtersettings-filteredcolumns "filterSettings.filteredColumns") property. The following code example explains how to filter a column on initial load.
 
 {% highlight js %}
 
