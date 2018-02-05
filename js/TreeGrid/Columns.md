@@ -12,6 +12,44 @@ api: /api/js/ejtreegrid
 
 Column definitions specified in the [`columns`](/api/js/ejtreegrid#members:columns) option defines how the data in the **dataSource** have to be displayed, formatted and edited in TreeGrid. The values in the **dataSource** can be mapped to the appropriate column using the [`field`](/api/js/ejtreegrid#members:columns-field "columns.field") property of the corresponding column object.
 
+## Editing type
+
+The edit type of a column can be defined using the [`editType`](/api/js/ejtreegrid#members:columns-edittype "columns.edittype") property of the column object.
+
+The following example shows how to define the edit type in a column,
+
+{% highlight js %}
+
+        $("#treegrid").ejTreeGrid({
+            columns: [
+                {
+                  editType: ej.TreeGrid.EditingType.Numeric
+                },
+                {
+                    editType: ej.TreeGrid.EditingType.Boolean
+                }]
+        });
+
+{% endhighlight %}
+
+The column editors can be further customized using the [`editParams`](/api/js/ejtreegrid#members:columns-editparams "columns.editparams") property of the column object. 
+
+The following example shows how to define additional properties to customize the date edit type,
+
+{% highlight js %}
+
+        $("#treegrid").ejTreeGrid({
+              columns: [
+                    {
+                    editType: "datepicker",
+                    editParams: {highlightWeekend : true }
+                    }
+                ],
+        });
+
+{% endhighlight %}
+
+
 ## Formatting
 
 The values in each column can be formatted using the [`format`](/api/js/ejtreegrid#members:columns-format "columns.format") property of the column object.
@@ -216,6 +254,18 @@ It is also possible to freeze all the preceding columns by choosing *Freeze Prec
 
 ![](/js/TreeGrid/Columns_images/Columns_img3.png)
 
+### Freezing columns using method
+
+Columns can also be frozen or unfrozen with custom actions using the [`freezeColumn`](/api/js/ejtreegrid#methods:freezecolumn "freezeColumn") method.
+The column's field name which is to be frozen/unfrozen should be passed as the method paramter, along with the freeze state.
+
+{% highlight js %}
+
+        var treegridObj = $("#treegrid").data("ejTreeGrid");
+        treegridObj.freezeColumn(field, true);
+
+{% endhighlight %}
+
 ## Resizing
 
 You can resize the column width to view the hidden text of the cell. This feature can be enabled by setting the [`allowColumnResize`](/api/js/ejtreegrid#members:allowcolumnresize) property to true.
@@ -389,62 +439,18 @@ Following code example shows how to hide specific column in column chooser list
 The above screenshot shows TreeGrid column chooser rendered without `Task Id` column. 
 {:.caption}
 
-### Column options
+## Show/Hide columns using method
 
-In TreGrid, It is provides the support to customize the column like insert a new column, delete a column and update the header text of column.
-
-The column options can be enabled or disabled with the [`showColumnOptions`](/api/js/ejtreegrid#members:showcolumnoptions) property, default value this property is `false`.
-
-Following code example shows how to enable the column option in tree grid.
+It is possible to toggle the visibility of the columns using the [`hideColumn`](/api/js/ejtreegrid#methods:hidecolumn "hideColumn") and [`showColumn`](/api/js/ejtreegrid#methods:showcolumn "showColumn") methods. The column's header text should be passed as the method parameter which is to be hidden.
 
 {% highlight js %}
 
-    $("#treegrid1").ejTreeGrid(
-    {   
-        // ...     
-        showColumnOptions:true,
-        // ...             
-    });
+        var treegridObj = $("#treegrid").data("ejTreeGrid");
+        treegridObj.hideColumn("Task Name");
+        treegridObj.showColumn("Order ID");
 
 {% endhighlight %}
 
-![](/js/TreeGrid/Columns_images/Columns_img17.png)
-
-The column options provide the following options:
-
-* Insert column left
-* Insert column right 
-* Delete column
-* Rename column
-
-![](/js/TreeGrid/Columns_images/Columns_img18.png)
-
-The above screenshot shows insert column dialog in TreeGrid  
-{:.caption}
-
-### Customize the insert column option.
-
-It is possible to add or remove the [`columns`](/api/js/ejtreegrid#members:columns) properties in insert column option using [`columnDialogFields`](/api/js/ejtreegrid#members:columndialogfields) property. In insert column option [`field`](/api/js/ejtreegrid#members:columns-field "columns.field"), [`headerText`](/api/js/ejtreegrid#members:columns-headertext "columns.headerText") and [`editType`](/api/js/ejtreegrid#members:columns-edittype "columns.editType") properties are necessary to create a new column, so this fields are unable to remove from insert column option.
-
-Following code example shows how to customize the insert column option in tree grid.
-
-{% highlight js %}
-
-    $("#treegrid1").ejTreeGrid(
-    {   
-        // ...     
-        allowSorting:true,
-        showColumnOptions:true,
-        columnDialogFields:["field","headerText","editType","width","visible","allowSorting","textAlign","headerTextAlign"],
-        // ...             
-    });
-
-{% endhighlight %}
-
-![](/js/TreeGrid/Columns_images/Columns_img19.png)
-
-The above screenshot shows customized insert column option in tree grid.  
-{:.caption}
 
 ## Command Column
 

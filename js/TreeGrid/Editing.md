@@ -320,82 +320,32 @@ The output of the TreeGrid width editTemplate as follows.
 
 ![](/js/TreeGrid/Editing_images/editTemplate.png)
 
-## Add new record
+## Adding records using method
 
-In TreeGrid, it is provide the support to add new record by setting [`allowAdding`](/api/js/ejtreegrid#members:editsettings-allowadding "editSettings.allowAdding") property as `true`. You can add new record by toolbar add item click or context menu.
+Records can be added dynamically to TreeGrid using the method  [`addRow`](/api/js/ejtreegrid#methods:addrow "addRow"). Before calling this method, you should enable the [`allowAdding`](/api/js/ejtreegrid#members:editsettings-allowadding "editSettings.allowAdding") property.
 
-The below code example shows how to enable add new record option in TreeGrid.
+The below code snippet explains dynamically inserting a record in tree grid. The record will be inserted as a child node to the current selected record.
 
 {% highlight js %}
-$("#TreeGrid").ejTreeGrid({
-    //...
-    editSettings: {
-        allowAdding: true,
-    },
-    //...
-});
+
+        var treeGridObj = $("#treegrid").data("ejTreeGrid");
+        var data = {
+            taskId: "40",
+            taskName: "New Task 40",
+            startDate: "2/20/2014",
+            startDate: "2/25/2014"
+        };
+        treeGridObj.addRow(data, ej.TreeGrid.RowPosition.Child); // To add a task
 
 {% endhighlight %}
 
-![](/js/TreeGrid/Editing_images/addnewRowBefore.png)
+Using the row position parameter of the method, user can able to insert the record at any desired index at run-time. The user can insert a record dynamically in the following positions
 
-The above screenshot shows before add a new record in tree grid.
-{:.caption}
-
-![](/js/TreeGrid/Editing_images/addnewRowAfter.png)
-
-The above screenshot shows after add a new record in tree grid.
-{:.caption}
-
-### Add row position
-
-The TreeGrid control provides the support to add the new row in the top, bottom, above selected row, below selected row and child position of tree grid content using [`rowPosition`](/api/js/ejtreegrid#members:editsettings-rowposition "editSettings.rowPosition") property.
- 
- The below code example shows how to set row position for new record add in tree grid.
-
-{% highlight js %}
-$("#TreeGrid").ejTreeGrid({
-    //...
-    editSettings: {
-        allowAdding: true,
-        rowPosition:ej.TreeGrid.RowPosition.Child,
-    },
-    //...
-});
-
-{% endhighlight %}
-
-![](/js/TreeGrid/Editing_images/addnewRowChild.png)
-
-The above screenshot shows new record added in row position of `child`.
-{:.caption}
-
-## Delete record
-
-In TreeGrid, it is provide the support to delete record by enabling [`allowDeleting`](/api/js/ejtreegrid#members:editsettings-allowdeleting "editSettings.allowDeleting") property.
-
-The below code example shows how to enable delete option in TreeGrid.
-
-{% highlight js %}
-$("#TreeGrid").ejTreeGrid({
-    //...
-    editSettings: {
-        allowDeleting: true,
-    },
-    //...
-});
-
-{% endhighlight %}
-
-![](/js/TreeGrid/Editing_images/beforeDelete.png)
-
-The above screenshot shows before delete a record in tree grid.
-{:.caption}
-
-![](/js/TreeGrid/Editing_images/afterDelete.png)
-
-The above screenshot shows after delete a record in tree grid.
-{:.caption}
+* Top: Top to all the existing records
+* Bottom: Bottom to all the existing records
+* Above: Above to the selected row
+* Below: Below to the selected row
+* Child: As a child to the selected row
 
 ## Delete confirmation message
 

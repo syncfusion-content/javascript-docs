@@ -352,7 +352,7 @@ The individual row properties are listed below,
     </tr>
     <tr>
         <td>
-            {{'[`index`](https://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-rows-cells-index "index")'| markdownify }}
+            {{'[`index`](https://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-rows-index "index")'| markdownify }}
         </td>
         <td>
             To specify particular row
@@ -439,6 +439,8 @@ $(function () {
 
 The following output is displayed as a result of the above code snippets.
 ![](Data-Binding_images/Data-Binding_img4.png)
+
+N> To get the active cell and data settings in Spreadsheet, use [`getActiveCell`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:getactivecell "getActiveCell") and [`getDataSettings`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:getdatasettings "getDataSettings") methods.
 
 ### Range Binding
 
