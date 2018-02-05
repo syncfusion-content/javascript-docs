@@ -347,6 +347,55 @@ Using the row position parameter of the method, user can able to insert the reco
 * Below: Below to the selected row
 * Child: As a child to the selected row
 
+The row position can be also defined while initializing the TreeGrid. The below code example shows how to set row position for adding new record in TreeGrid.
+
+{% highlight js %}
+
+        $("#TreeGrid").ejTreeGrid({
+            //...
+            editSettings: {
+                allowAdding: true,
+                rowPosition: ej.TreeGrid.RowPosition.Child,
+            },
+            //...
+        });
+
+{% endhighlight %}
+
+![](/js/TreeGrid/Editing_images/addnewRowChild.png)
+
+The above screenshot shows new record added in row position of `child`.
+{:.caption}
+
+## Delete record
+
+TreeGrid provides support to delete a record by enabling [`allowDeleting`](/api/js/ejtreegrid#members:editsettings-allowdeleting "editSettings.allowDeleting") property.
+
+The below code example shows how to enable delete option in TreeGrid.
+
+{% highlight js %}
+
+        $("#TreeGrid").ejTreeGrid({
+            //...
+            editSettings: {
+                allowDeleting: true,
+            },
+            //...
+        });
+
+{% endhighlight %}
+
+![](/js/TreeGrid/Editing_images/beforeDelete.png)
+
+The above screenshot shows before delete a record in tree grid.
+{:.caption}
+
+![](/js/TreeGrid/Editing_images/afterDelete.png)
+
+The above screenshot shows after delete a record in tree grid.
+{:.caption}
+
+
 ## Delete confirmation message
 
 Delete confirmation message is used to get the confirmation from the user before delete the record. This confirmation message can be enabled by setting [`showDeleteConfirmDialog`](/api/js/ejtreegrid#members:editsettings-showdeleteconfirmdialog "editSettings.showDeleteConfirmDialog") property as `true`.

@@ -19,7 +19,7 @@ Diagram provides support to auto-arrange the nodes in the Diagram area that is r
 ## Hierarchical Layout
 
 The Hierarchical Tree Layout arranges nodes in a tree-like structure, where the nodes in the hierarchical layout may have multiple parents. There is no need to specify the layout root.
-To arrange the nodes in hierarchical structure, you need to specify the layout `type` as hierarchical tree. The following example shows how to arrange the nodes in a hierarchical structure.
+To arrange the nodes in hierarchical structure, you need to specify the layout [type](/api/js/ejdiagram#members:layout-type "type") as hierarchical tree. The following example shows how to arrange the nodes in a hierarchical structure.
 
 
 {% highlight javascript %}
@@ -91,13 +91,13 @@ $("#diagram").ejDiagram({
 
 ![](/js/Diagram/Automatic-Layout_images/Automatic-Layout_img1.png)
 
-N> You can ignore a particular Node from layout arrangement by setting its **excludeFromLayout** property as true.
+N> You can ignore a particular Node from layout arrangement by setting its [excludeFromLayout](api/js/ejdiagram#members:nodes-excludefromlayout "excludeFromLayout") property as true.
 
 ## Radial Tree Layout
 
 The Radial Tree layout arranges nodes on a virtual concentric circles around a root node. Sub-trees formed by the branching of child nodes are located radially around the child nodes. This arrangement results in an ever-expanding concentric arrangement with radial proximity to the root node indicating the node level in the hierarchy. When no root node is set, the algorithm automatically considers one of the Diagram nodes as the root node.
 
-To arrange nodes in a radial tree structure, you need to set the `layout.type` as `radialtree`. The following code illustrates how to arrange the nodes in a radial tree structure.
+To arrange nodes in a radial tree structure, you need to set the [type](/api/js/ejdiagram#members:layout-type "type") of the layout as `radialtree`. The following code illustrates how to arrange the nodes in a radial tree structure.
 
 {% highlight javascript %}
 
@@ -179,7 +179,7 @@ $("#diagram").ejDiagram({
 
 ## Organizational Chart
 
-An **organizational chart** is a Diagram that displays the structure of an organization and relationships. To create an organizational chart, `layout.type` should be set as `organizationalchart`.
+An **organizational chart** is a Diagram that displays the structure of an organization and relationships. To create an organizational chart, [type](/api/js/ejdiagram#members:layout-type "type") of layout should be set as `organizationalchart`.
 The following code example illustrates how to create an organizational chart.
 
 {% highlight javascript %}
@@ -265,7 +265,7 @@ Organizational chart layout starts parsing from root and iterate through all its
 
 ### GetLayoutInfo
 
-You can set Chart orientations, chart types, and offset to be left between parent and child nodes by overriding the method, diagram.model.layout.getLayoutInfo. The getLayoutInfo method is called to configure every subtree of the organizational chart. It takes the following arguments.
+You can set Chart orientations, chart types, and offset to be left between parent and child nodes by overriding the method, diagram.model.layout.getLayoutInfo. The [getLayoutInfo](api/js/ejdiagram#members:layout-getlayoutinfo "getLayoutInfo") method is called to configure every subtree of the organizational chart. It takes the following arguments.
 
 * `diagram`: Reference of diagram
 * `node`: Parent node to that options are to be customized
@@ -479,13 +479,13 @@ Orientation, spacings, and position of layout can be customized with a set of pr
 
 To explore layout properties, refer to [Layout Properties](/api/js/ejdiagram#members:layout "Layout Properties").
 
-### Layout Bounds 
+### Layout Bounds
 
-Diagram provides support to align the layout within any custom rectangular area. For more information about bounds, refer to [Layout Bounds] (/api/js/ejdiagram#members:layout-bounds "Layout Bounds")
+Diagram provides support to align the layout within any custom rectangular area. For more information about bounds, refer to [bounds](/api/js/ejdiagram#members:layout-bounds "bounds")
 
 ### Layout Alignment
 
-You can align the layout anywhere over the layout bounds/viewport using the `horizontalAlignment` and `verticalAlignment` properties of layout.
+You can align the layout anywhere over the layout bounds/viewport using the [horizontalAlignment](/api/js/ejdiagram#members:layout-horizontalalignment "horizontalAlignment") and [verticalAlignment](/api/js/ejdiagram#members:layout-verticalalignment "verticalAlignment") properties of layout.
 
 The following code illustrates how to align the layout at the top left of the layout bounds.
 
@@ -529,9 +529,13 @@ $("#diagram").ejDiagram({
 
 ![](/js/Diagram/Automatic-Layout_images/Automatic-Layout_img14.png)
 
+### Layout Spacing
+
+Layout provides support to add space horizontally and vertically between the nodes. The [horizontalSpacing](/api/js/ejdiagram#members:layout-horizontalspacing "horizontalSpacing") and [verticalSpacing](/api/js/ejdiagram#members:layout-verticalspacing "verticalSpacing") property of the layout allows you to set the space between the nodes in horizontally and vertically.
+
 ### Layout Margin
 
-Layout provides support to add some blank space between the layout bounds/viewport and the layout. The `margin` property of the layout allows you to set the blank space.
+Layout provides support to add some blank space between the layout bounds/viewport and the layout. The [margin](/api/js/ejdiagram#members:layout-margin "margin") property of the layout allows you to set the blank space.
 
 The following code illustrates how to set the layout margin.
 
@@ -574,7 +578,7 @@ $("#diagram").ejDiagram({
 
 ### Layout Orientation
 
-Diagram provides support to customize the orientation of layout. You can set the desired orientation using `layout.orientation`. For more information about orientation, refer to [Layout Orientations](/api/js/global#layoutorientations "Layout Orientations")
+Diagram provides support to customize the orientation of layout. You can set the desired orientation using [layout.orientation](/api/js/ejdiagram#members:layout-orientation "layout.orientation").
 
 The following code illustrates how to arrange the nodes in a "BottomToTop" orientation.
 
@@ -617,7 +621,7 @@ $("#diagram").ejDiagram({
 
 ### Fixed Node
 
-Layout provides support to arrange the nodes with reference to the position of a fixed node and the fixed node has to be set to the `layout.fixedNode`.
+Layout provides support to arrange the nodes with reference to the position of a fixed node and the fixed node has to be set to the [fixedNode](/api/js/ejdiagram#members:layout-fixednode "fixedNode") of the layout property.
 This is helpful when you try to expand/collapse a node. It might be expected that the position of the double-clicked node should not be changed.
 
 {% highlight javascript %}
@@ -681,7 +685,7 @@ $("#DiagramContent").ejDiagram({
 
 ### Expand and collapse
 
-Diagram allows to expand/collapse the sub trees of a layout. `node.isExpanded` allows you to expand/collapse its children. The following code example shows how to expand/collapse the children of a node.
+Diagram allows to expand/collapse the sub trees of a layout. The node's [isExpanded](/api/js/ejdiagram#members:nodes-isexpanded "isExpanded") property allows you to expand/collapse its children. The following code example shows how to expand/collapse the children of a node.
 
 {% highlight javascript %}
 
@@ -717,7 +721,7 @@ Diagram allows to refresh the layout at runtime. To refresh the layout, refer to
 
 ### nodeTemplate
 
-The nodeTemplate function is provided for the purpose of customizing nodes.It will be called for each node on node initialization. In this function, we can customize the node style and its properties and can bind the custom JSON with node.  
+The [nodeTemplate](api/js/ejdiagram#members:nodetemplate "nodeTemplate") function is provided for the purpose of customizing nodes.It will be called for each node on node initialization. In this function, we can customize the node style and its properties and can bind the custom JSON with node.  
 
 {% highlight javascript %}
 
@@ -763,7 +767,7 @@ $("#diagramcontent").ejDiagram(
 
 ### connectorTemplate
 
-The connectorTemplate function is provided for the purpose of customizing connectors.It will be called for each connector on connector initialization. In this function, we can customize the connector style and its properties and can bind the custom JSON with connector.
+The [connectorTemplate](api/js/ejdiagram#members:connectortemplate "connectorTemplate") function is provided for the purpose of customizing connectors.It will be called for each connector on connector initialization. In this function, we can customize the connector style and its properties and can bind the custom JSON with connector.
 
 {% highlight javascript %}
 
