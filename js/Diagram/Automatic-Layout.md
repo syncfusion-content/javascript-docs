@@ -478,7 +478,7 @@ $("#diagram").ejDiagram({
 
 The symmetrical layout has been formed using nodes position by closer together or pushing them further apart. This is repeated iteratively until the system comes to an equilibrium state. 
 
-`layout.springLength` defined as how long edges should be, ideally. This will be the resting length for the springs. Edge attraction and vertex repulsion forces may be defined by ` layout.springFactor`, the more sibling nodes repel each other. The relative positions do not change anymore from one iteration to the next.  We can specify the no of iteration using ` layout.maxIteraction`. 
+`layout.springLength` defined as how long edges should be, ideally. This will be the resting length for the springs. Edge attraction and vertex repulsion forces may be defined by ` layout.springFactor`, the more sibling nodes repel each other. The relative positions do not change anymore from one iteration to the next.  We can specify the no of iteration using ` layout.maxIteration`. 
 
 The following code illustrates how to arrange the nodes in a radial tree structure. 
 
@@ -532,9 +532,9 @@ The following code illustrates how to arrange the nodes in a radial tree structu
             //sets the layout child elements
             nodes: populateNodes(),
             connectors: connectors,
-            //sets the layout as symmetriclayout
+            //sets the layout as symmetric layout
             layout: {
-                type: "symmetriclayout",
+                type: ej.datavisualization.Diagram.LayoutTypes.SymmetricLayout,
                 springLength: 80,
                 margin: {
                     left: 0,
