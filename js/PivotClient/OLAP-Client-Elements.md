@@ -1,4 +1,4 @@
-HA---
+---
 layout: post
 title: OLAP-Client-Elements
 description: PivotClient Elements 
