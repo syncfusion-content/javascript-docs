@@ -340,6 +340,8 @@ The following code snippets shows how to bind `ServerPdfQueryCellInfo` event in 
 
 [Click](http://js.syncfusion.com/demos/web/#!/bootstrap/gantt/export/conditionalformatting) here to view the online demo sample with above code example.
 
+N> Refer this [link](http://help.syncfusion.com/cr/cref_files/aspnetmvc/ejmvc/Syncfusion.EJ.Export~Syncfusion.EJ.Export.PdfTreeGridCellStyle_members.html) to know more about what are the properties are available in PDF cell and it's type values.
+
 ### Customize PDF taskbar
 
 PDF taskbars in Gantt can be customized by using `ServerPdfQueryTaskbarInfo` event, in this event we can get the details about current record and taskbar information. Using this information we can customize the background color of taskbar and progress bar, please find the event argument details below.
