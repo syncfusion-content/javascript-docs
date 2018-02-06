@@ -8,11 +8,11 @@ documentation: ug
 api: /api/js/ejpivotclient
 ---
 
-# Measure Groups 
+# Measure groups
 
-I> This feature is applicable only for OLAP data source bound from server-side.
+I> This feature is applicable only for the OLAP data source bound from the server-side.
 
-In Cube Dimension Browser, treeview can be viewed in a filtered manner through the Measure Groups option. This feature allows you to view the list of measures and dimensions associated with the selected measure group from the cube. For enabling this, the [`enableMeasureGroups`](/api/js/ejpivotclient#members:enablemeasuregroups) property is set to true. By default, its value is set to false.
+In cube dimension browser, the tree view can be viewed in a filtered manner through the measure groups option. This feature allows you to view the list of measures and dimensions associated with the selected measure group from the cube. For enabling this, the [`enableMeasureGroups`](/api/js/ejpivotclient#members:enablemeasuregroups) property is set to true. By default, its value is set to false.
 
 {% highlight javascript %}
 
@@ -24,7 +24,7 @@ In Cube Dimension Browser, treeview can be viewed in a filtered manner through t
 
 {% endhighlight %}
 
-On selecting a measure group from the drop-down list, the Cube Dimension Browser treeview displays the related measures and dimensions alone as follows.
+When you select a measure group from the drop-down list, the tree view of the cube dimension browser will display the related measures and dimensions as follows:
 
 ![](Measure-Groups_images/beforemeasure.png)
 
