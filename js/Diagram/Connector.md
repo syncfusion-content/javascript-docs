@@ -723,6 +723,8 @@ var connectors = [
 
 * The [cssClass](/api/js/ejdiagram#members:connectors-cssclass "cssClass") property used to customize the style of connectors using user defined CSS class.
 
+* The [visible](/api/js/ejdiagram#members:connectors-visible "visible") property of the connector enables or disables the visibility of connector.
+
 ### Segment Appearance
 
 The following code example illustrates how to customize the segment appearance.
