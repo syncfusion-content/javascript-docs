@@ -180,10 +180,9 @@ The following code illustrates how to add a node to layer.
         });
         // creating the instance for the diagram
         var diagram = $("#diagram").ejDiagram("instance");
-
-        var node = diagram.findNode('Ellipse1')
+ 
         // add the node to the specific layer.
-        diagram.addNodeToLayer('Layer1', [node])
+        diagram.addNodeToLayer('Layer1', ['Ellipse1'])
 
 {% endhighlight %}
 
@@ -193,7 +192,8 @@ Layers can be removed at runtime by using public method, [removeLayers](/api/js/
 
 The following code illustrates how to add a layer.
 
-        {% highlight javascript %}
+{% highlight javascript %}
+
         // creating the instance for the diagram
         var diagram = $("#diagram").ejDiagram("instance");
         // remove the diagram layers from model 
@@ -224,9 +224,9 @@ The following code illustrates how to remove a node from layer.
         // creating the instance for the diagram
         var diagram = $("#diagram").ejDiagram("instance");
 
-        var node = diagram.findNode('Ellipse1')
+        
         // remove the node from the specific layer.
-        diagram.removeNodeToLayer('Layer1', [node])
+        diagram.removeNodeToLayer('Layer1', ['Ellipse1'])
 
 {% endhighlight %}
 
