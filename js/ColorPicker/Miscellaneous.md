@@ -81,3 +81,119 @@ In the **HTML** page, add a **&lt;input&gt;** element to render **ColorPicker** 
     });
 
 {% endhighlight %}
+
+## Enable/Disable Colorpicker widget
+
+**Colorpicker** widget provides you an option to enable /disable the widget. You can disable the TimePicker by setting the “**enabled**” property value as **false**.
+
+The following steps explain you to enable/disable property in **Colorpicker** widget.
+
+In the **HTML** page, add a **&lt;input&gt;** element to configure **Button** widget.
+
+{% highlight html %}
+
+
+    <input type="text" id="colorPicker"/> 
+
+{% endhighlight %}
+
+{% highlight javascript %}
+
+    // To enable/disable Button controls use the following code example.
+    //disable Button:
+    $(function () {
+       $('#colorPicker').ejColorPicker({ value: "#278787" });
+        // Create ColorPicker instance
+        var colorObj = $("#colorPicker").data("ejColorPicker");
+        colorObj.disable(); // disables the colorPicker
+    });
+
+    //enable Button:
+    $(function () {
+      $('#colorPicker').ejColorPicker({ value: "#278787" });
+        // Create ColorPicker instance
+        var colorObj = $("#colorPicker").data("ejColorPicker");
+        colorObj.enable(); // enables the colorPicker
+    });
+
+{% endhighlight %}
+
+
+
+## showTooltip
+
+The **showTooltip** property of the colorpicker control allows to shows tooltip to notify the slider value in color picker control
+
+{% highlight html %}
+
+
+    <input type="text" id="colorPicker"/>    
+
+{% endhighlight %}
+
+{% highlight javascript %}
+
+    $(function () {
+       $('#colorPicker').ejColorPicker({ value: "#278787", showTooltip: true});
+    });
+
+{% endhighlight %}
+
+
+## showSwitcher
+
+The **showSwitcher** property of the colorpicker control allows show/hides the switcher button in ColorPicker control.It helps to switch palette or picker mode in colorpicker.its default value is **true**
+
+{% highlight html %}
+
+
+    <input type="text" id="colorPicker"/>    
+
+{% endhighlight %}
+
+{% highlight javascript %}
+
+    $(function () {
+       $('#colorPicker').ejColorPicker({ value: "#278787", showSwitcher: false}); // hide the swithcer button in colorpicker control.
+    });
+
+{% endhighlight %}
+
+
+## showApplyCancel
+
+The **showApplyCancel** property of the colorpicker control allows to show/hides the apply and cancel buttons in ColorPicker control.its default value is **true**.
+
+{% highlight html %}
+
+
+    <input type="text" id="colorPicker"/>    
+
+{% endhighlight %}
+
+{% highlight javascript %}
+
+    $(function () {
+       $('#colorPicker').ejColorPicker({ value: "#278787", showApplyCancel: false});
+    });
+
+{% endhighlight %}
+
+
+## showClearButton
+
+The **showClearButton** property of the colorpicker control allows to show/hides the clear button in ColorPicker control.its default value is **true**.
+
+{% highlight html %}
+
+    <input type="text" id="colorPicker"/>    
+
+{% endhighlight %}
+
+{% highlight javascript %}
+
+    $(function () {
+       $('#colorPicker').ejColorPicker({ value: "#278787", showClearButton: false});
+    });
+
+{% endhighlight %}

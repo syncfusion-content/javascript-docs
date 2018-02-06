@@ -55,3 +55,100 @@ To clear the all selection and ranges in a popup we can make use of **clearRange
 
 {% endhighlight %}
 
+### Add ranges
+
+Add the preset ranges to DateRangePicker popup. we can make use of **addRanges** method.
+
+{% highlight html %}
+
+        $("#daterangepicker").ejDateRangePicker();
+        // Create DateRangePicker instance
+        var dateObj = $("#daterangepicker").data("ejDateRangePicker");
+        dateObj.addRanges("new Range", [new Date("11/12/2019"),new Date("11/12/2021")] ); 
+
+{% endhighlight %}
+
+
+### set Range
+
+set the preset ranges to DateRangePicker popup.. we can make use of **setRange** method.
+
+{% highlight html %}
+
+        $("#daterangepicker").ejDateRangePicker();
+        // Create DateRangePicker instance
+        var dateObj = $("#daterangepicker").data("ejDateRangePicker");
+        dateObj.setRange([new Date("11/12/2019"),new Date("11/12/2021")]); 
+
+{% endhighlight %}
+
+### popupHide
+
+Close the DateRangePicker popup, if it is in opened state. we can make use of **popupHide** method.
+
+{% highlight html %}
+
+          $("#daterangepick").ejDateRangePicker();
+          // hides the DateRangePicker popup
+          $("#daterangepick").ejDateRangePicker("popupHide");
+
+
+{% endhighlight %}
+
+### popupShow
+
+Open the DateRangePicker popup. we can make use of **popupShow** method.
+
+{% highlight html %}
+
+          $("#daterangepick").ejDateRangePicker();
+          // hides the DateRangePicker popup
+          $("#daterangepick").ejDateRangePicker("popupShow");
+
+
+{% endhighlight %}
+
+### WaterMark Text
+
+The **watermarkText** property of the daterangepicker control allows an option to specifies the water mark text to be displayed in input text.
+
+{% highlight javascript %}
+     
+	   $(function () {
+ 
+            $("#dateRangePicker").ejDateRangePicker({
+
+               watermarkText: "Enter date"  // default value is “Select Range”
+
+            });
+
+        });      
+
+{% endhighlight %}
+
+Execute the above code to render the following output.
+
+![](/js/DateRangePicker/Miscellaneous_images/Miscellaneous_img2.png)
+
+
+### showPopupButton
+
+The **showPopupButton** property of the daterangepicker control allows an option to shows/hides the date icon button at right side of textbox, which is used to open or close the DateRangePicker calendar popup.
+
+{% highlight javascript %}
+     
+	   $(function () {
+ 
+            $("#dateRangePicker").ejDateRangePicker({
+
+              showPopupButton:false   
+              
+            });
+
+        });      
+
+{% endhighlight %}
+
+Execute the above code to render the following output.
+
+![](/js/DateRangePicker/Miscellaneous_images/Miscellaneous_img1.png)

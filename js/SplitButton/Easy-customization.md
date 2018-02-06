@@ -698,7 +698,7 @@ In the **HTML** page, add the following button elements to configure **Split But
 
 {% highlight css %}
 
-<div class="align">
+    <div class="align">
     <table>
         <tr>
             <td class="btnsht">
@@ -749,7 +749,7 @@ In the **HTML** page, add the following button elements to configure **Split But
             </td>
         </tr>
     </table>
-</div>
+    </div>
     
 {% endhighlight %}
 
@@ -859,3 +859,38 @@ Execute the above code to render the following output.
 
 ![](/js/SplitButton/Easy-customization_images/Easy-customization_img5.png) 
 
+# Enable/Disable SplitButton
+
+**SplitButton** provides you an option to enable /disable the ToggleButton. You can disable the ToggleButton by setting the “**enabled**” property value as **false**.
+
+The following steps explain you to enable/disable property in **SplitButton** .
+
+
+{% highlight html %}
+
+    <div class="spltspan">
+     <button id="splitButton">File</button>
+       <ul id="target">
+          <li><a href="#">Open..</a></li>
+          <li><a href="#">Save</a></li>
+          <li><a href="#">Delete</a></li>
+       </ul>
+     </div>
+
+{% endhighlight %}
+
+{% highlight javascript %}
+
+    // To enable/disable SplitButton controls use the following code example.
+    //Enable SplitButton:
+    $(function () {
+
+        $("#splitButton").ejSplitButton({  targetID: "target",width:100,enabled:  true });                                         
+    });
+    //Disable SplitButton:
+    $(function () {
+
+      $("#splitButton").ejSplitButton({  targetID: "target",width:100,enabled: false });                                  
+    });
+
+{% endhighlight %}

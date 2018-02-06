@@ -620,3 +620,37 @@ Execute the above code to render the following output.
 
 ![](/js/Button/Easy-Customization_images/Easy-Customization_img4.png)
 
+## Enable/Disable Button widget
+
+**Button** widget provides you an option to enable /disable the widget. You can disable the TimePicker by setting the “**enabled**” property value as **false**.
+
+The following steps explain you to enable/disable property in **Button** widget.
+
+In the **HTML** page, add a **&lt;input&gt;** element to configure **Button** widget.
+
+{% highlight html %}
+  
+    <button id="button1">Button</button> 
+
+{% endhighlight %}
+
+{% highlight javascript %}
+
+    // To enable/disable Button controls use the following code example.
+    //disable Button:
+    $(function () {
+       $("#button1").ejButton();
+        var btnObj = $("#button1").data("ejButton");
+        btnObj.disable(); // disable the button
+    });
+
+    //enable Button:
+    $(function () {
+       $("#button1").ejButton();
+        var btnObj = $("#button1").data("ejButton");
+        btnObj.enable(); // enable the button;
+    });
+
+{% endhighlight %}
+
+
