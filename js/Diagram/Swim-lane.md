@@ -147,11 +147,15 @@ var header = {
 ## Lane
 
 Lane is a functional unit or a responsible department of a business process that helps to map a process within the functional unit or in between other functional units.
-You can add any number of lanes to a swimlane and the lanes are automatically stacked inside a swimlane based in the order they are added.
+You can add any number of [lanes](/api/js/ejdiagram#members:nodes-lanes "lanes") to a swimlane and the lanes are automatically stacked inside a swimlane based in the order they are added.
 
 ### Create an empty lane
 
-To create an empty lane, you need to define an object with [isLane](/api/js/ejdiagram#members:nodes-lanes-islane "isLane") property that helps identify the object as a lane. The following example illustrates how to define a swimlane with a lane.
+* To create an empty lane, you need to define an object with [isLane](/api/js/ejdiagram#members:nodes-lanes-islane "isLane") property that helps identify the object as a lane. 
+
+* The lane's [name](/api/js/ejdiagram#members:nodes-name "name") property is used to define the name of the lane and its further used to find the lane at runtime and do any customization.
+
+The following example illustrates how to define a swimlane with a lane.
 
 {% highlight javascript %}
 
@@ -186,6 +190,7 @@ var swimlane = {
 ### Create a lane with header
 
 The [header](/api/js/ejdiagram#members:nodes-lanes-header "header") property of the lane allows you to textually describe the lane(`text`) and to customize the appearance of the description. The following code example illustrates how to define a lane header.
+
 You can limit the size of a lane with its [minWidth](/api/js/ejdiagram#members:nodes-minwidth "minWidth"), [minHeight](/api/js/ejdiagram#members:nodes-minheight "minHeight"), [maxWidth](/api/js/ejdiagram#members:nodes-maxwidth "maxWidth"), and [maxHeight](/api/js/ejdiagram#members:nodes-maxheight "maxHeight") properties.
 
 {% highlight javascript %}
@@ -306,6 +311,10 @@ var swimlane = {
 We can add a lane at runtime width client side API method addLane. please refer to the below link whcih shows how to use addLane method in diagram.
 
 [addLane](/api/js/ejdiagram#methods:addlane "addLane"). 
+
+## Custom Properties
+
+The [addInfo](/api/js/ejdiagram#members:nodes-lanes-addinfo "addInfo") property of lane allows to maintain additional information to lane.
 
 ## Phase
 

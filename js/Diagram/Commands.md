@@ -362,14 +362,15 @@ Region specifies the region/bounds of the Diagram content that is to be fit into
 ## Command Manager
 
 Diagram provides support to map/bind command execution with desired combination of key gestures. Diagram provides some built-in commands. For more information about built-in commands, refer to [Keyboard Interaction](/js/Diagram/Interaction#keyboard "Keyboard Interaction").
-Command Manager provides support to define custom commands. The custom commands are executed, when the specified key gesture is recognized.
+[Command Manager](/api/js/ejdiagram#members:commandmanager "Command Manager") provides support to define custom commands. The custom commands are executed, when the specified key gesture is recognized.
 
 ### Custom command
 
 To define a custom command, you need to specify following properties.
-* `execute`: a method to be execute.
-* `canExecute`: a method to define whether the command can be executed at the moment. 
-* `gesture`: the combination of key gestures.
+* [execute](/api/js/ejdiagram#members:commandmanager-commands-execute "execute"): a method to be execute.
+* [canExecute](/api/js/ejdiagram#members:commandmanager-commands-canexecute "canExecute"): a method to define whether the command can be executed at the moment. 
+* [gesture](/api/js/ejdiagram#members:commandmanager-commands-gesture "gesture"): a combination of [keys](/api/js/ejdiagram#members:commandmanager-commands-gesture-key "keys") and [key modifiers](/api/js/ejdiagram#members:commandmanager-commands-gesture-keymodifiers "key modifiers").
+* [parameter](/api/js/ejdiagram#members:commandmanager-commands-parameter "parameter"): defines any additional parameters that are required at runtime.
 
 To explore the properties of custom commands, refer to [Commands](/api/js/ejdiagram#members:commandmanager-commands "Commands")
 

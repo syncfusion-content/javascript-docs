@@ -16,7 +16,7 @@ Drawing tool allows you to draw any kind of node/connector during runtime by cli
 
 ### Shapes
 
-To draw a shape, you need to set the JSON of that shape to the `drawType` property of the Diagram model and you have to activate the drawing tool by using the `tool` property. The following code example illustrates how to draw a rectangle at run time. 
+To draw a shape, you need to set the JSON of that shape to the [drawType](/api/js/ejdiagram#members:drawtype "drawType") property of the Diagram model and you have to activate the drawing tool by using the [tool](/api/js/ejdiagram#members:tool "tool") property. The following code example illustrates how to draw a rectangle at run time. 
 
 {% highlight javascript %}
 
@@ -74,7 +74,7 @@ diagram.update({
 
 ### Connectors
 
-To draw connectors, you have to set the JSON of the connector to `drawType` property. The drawing tool can be activated by using the `tool` property as shown. The following code example illustrates how to draw a straight line connector. 
+To draw connectors, you have to set the JSON of the connector to [drawType](/api/js/ejdiagram#members:drawtype "drawType") property. The drawing tool can be activated by using the [tool](/api/js/ejdiagram#members:tool "tool") property as shown. The following code example illustrates how to draw a straight line connector. 
 
 {% highlight javascript %}
 
@@ -134,7 +134,7 @@ When more than one of those tools are applied, a tool is activated based on the 
 | 5th | SingleSelect | Allows you to select individual nodes or connectors. |
 | 6th | None | Disables all tools |
 
-You can set the desired tool to the `tool` property of the Diagram model. The following code illustrates how to enable single/multiple tools.
+You can set the desired tool to the [tool](/api/js/ejdiagram#members:tool "tool") property of the Diagram model. The following code illustrates how to enable single/multiple tools.
 
 {% highlight javascript %}
 

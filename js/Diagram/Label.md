@@ -80,7 +80,9 @@ To explore more label properties, refer to [Label Properties](/api/js/ejdiagram#
 
 ### Add Labels at runtime
 
-Labels can be added at runtime by using the client side method [addLabel](/api/js/ejdiagram#methods:addlabel "addLabel"). Also, we can insert a label into a node's label collection at runtime using client side method [insertLabel](/api/js/ejdiagram#methods:insertlabel "insertLabel"). The following code illustrates how to add a label to a node. 
+* Labels can be added at runtime by using the client side method [addLabel](/api/js/ejdiagram#methods:addlabel "addLabel"). Also, we can insert a label into a node's label collection at runtime using client side method [insertLabel](/api/js/ejdiagram#methods:insertlabel "insertLabel"). The following code illustrates how to add a label to a node. 
+
+* The label's [name](/api/js/ejdiagram#members:nodes-labels-name "name") property is used to define the name of the label and its further used to find the label at runtime and do any customization.
 
 {% highlight js %}
 
@@ -366,7 +368,7 @@ $("#diagram").ejDiagram({
 
 ## Hyperlink
 
-**Diagram** provides a support to add a hyperlink for the nodes label. It can also be customized.
+**Diagram** provides a support to add a [hyperlink](/api/js/ejdiagram#members:connectors-labels-hyperlink "hyperlink") for the nodes/connectors label. It can also be customized.
 
 {% highlight javascript %}
 
@@ -431,7 +433,15 @@ $("#diagram").ejDiagram({
 
 ## Appearance
 
-You can change the font style of the labels with the font specific properties([fontSize](/api/js/ejdiagram#members:nodes-labels-fontsize "fontSize"), [fontFamily](/api/js/ejdiagram#members:nodes-labels-fontfamily "fontFamily"), [fontColor](/api/js/ejdiagram#members:nodes-labels-fontcolor "fontColor").,). The following code illustrates how to customize the appearance of a label.
+* You can change the font style of the labels with the font specific properties([fontSize](/api/js/ejdiagram#members:nodes-labels-fontsize "fontSize"), [fontFamily](/api/js/ejdiagram#members:nodes-labels-fontfamily "fontFamily"), [fontColor](/api/js/ejdiagram#members:nodes-labels-fontcolor "fontColor"). The following code illustrates how to customize the appearance of a label.
+
+* The label's [bold](/api/js/ejdiagram#members:nodes-labels-bold "bold"), [italic](/api/js/ejdiagram#members:nodes-labels-italic "italic") and [textDecoration](/api/js/ejdiagram#members:nodes-labels-textdecoration "textDecoration") properties are used to style the label's text.
+
+* The label's [fillColor](/api/js/ejdiagram#members:nodes-labels-fillcolor "fillColor"), [borderColor](/api/js/ejdiagram#members:nodes-labels-bordercolor "bordercolor"), [borderWidth] (/api/js/ejdiagram#members:nodes-labels-borderwidth "borderWidth") properties are used to define the background color and border color of the label and [opacity](/api/js/ejdiagram#members:nodes-labels-opacity "opacity") property is used to define the transparency of the labels.
+
+* The [cssClass](/api/js/ejdiagram#members:nodes-labels-cssclass "cssClass") property used to customize the style of label using user defined CSS class.
+
+* The [visible](/api/js/ejdiagram#members:nodes-labels-visible "visible") property of the label enables or disables the visibility of label.
 
 {% highlight javascript %}
 
@@ -563,7 +573,7 @@ $("#diagram").ejDiagram({
 
 ## Rotate
 
-You can rotate the labels to any desired angle. Labels are rotated to the angle that is defined by the [rotateAngle](/api/js/ejdiagram#members:nodes-rotateangle "rotateAngle") property of label. The following code illustrates how to rotate a label.
+You can rotate the labels to any desired angle. Labels are rotated to the angle that is defined by the [rotateAngle](/api/js/ejdiagram#members:nodes-labels-rotateangle "rotateAngle") property of label. The following code illustrates how to rotate a label.
 
 {% highlight javascript %}
 

@@ -8,9 +8,9 @@ documentation: ug
 api: /api/js/ejheatmap
 ---
 
-#Items Mapping
+# Items Mapping
 
-External data source can be mapped with HeatMap using `itemsMapping` property. It supports 2 kind of data source.
+External data source can be mapped with HeatMap using [itemsMapping](/api/js/ejheatmap#members:itemsmapping "itemsMapping") property. It supports 2 kind of data source.
 
 * In `TableMapping` rows represents an objects in collection, columns represents numerical properties of that object.
 * In `CellMapping` each cell represent an object in collection, this collection is grouped based on specific property to form as rows and columns.

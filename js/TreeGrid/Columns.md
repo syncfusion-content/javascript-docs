@@ -12,6 +12,44 @@ api: /api/js/ejtreegrid
 
 Column definitions specified in the [`columns`](/api/js/ejtreegrid#members:columns) option defines how the data in the **dataSource** have to be displayed, formatted and edited in TreeGrid. The values in the **dataSource** can be mapped to the appropriate column using the [`field`](/api/js/ejtreegrid#members:columns-field "columns.field") property of the corresponding column object.
 
+## Editing type
+
+The edit type of a column can be defined using the [`editType`](/api/js/ejtreegrid#members:columns-edittype "columns.edittype") property of the column object.
+
+The following example shows how to define the edit type in a column,
+
+{% highlight js %}
+
+        $("#treegrid").ejTreeGrid({
+            columns: [
+                {
+                  editType: ej.TreeGrid.EditingType.Numeric
+                },
+                {
+                    editType: ej.TreeGrid.EditingType.Boolean
+                }]
+        });
+
+{% endhighlight %}
+
+The column editors can be further customized using the [`editParams`](/api/js/ejtreegrid#members:columns-editparams "columns.editparams") property of the column object. 
+
+The following example shows how to define additional properties to customize the date edit type,
+
+{% highlight js %}
+
+        $("#treegrid").ejTreeGrid({
+              columns: [
+                    {
+                    editType: "datepicker",
+                    editParams: {highlightWeekend : true }
+                    }
+                ],
+        });
+
+{% endhighlight %}
+
+
 ## Formatting
 
 The values in each column can be formatted using the [`format`](/api/js/ejtreegrid#members:columns-format "columns.format") property of the column object.
@@ -374,6 +412,61 @@ Following are the items displayed in the column menu,
 {% endhighlight %}
 
 ![](/js/TreeGrid/Columns_images/Columns_img5.png)
+
+
+The column menu also provides support for some of the additional column options such as,
+
+* Insert column left
+* Insert column right 
+* Delete column
+* Rename column
+
+The column options can be enabled or disabled with the [`showColumnOptions`](/api/js/ejtreegrid#members:showcolumnoptions) property, default value of this property is `false`.
+
+Following code example shows how to enable the column option in tree grid.
+
+{% highlight js %}
+
+        $("#treegrid1").ejTreeGrid(   
+        {   
+            // ...     
+            showColumnOptions:true,
+            // ...             
+        });
+
+{% endhighlight %}
+
+![](/js/TreeGrid/Columns_images/Columns_img17.png)
+
+![](/js/TreeGrid/Columns_images/Columns_img18.png)
+
+The above screenshot shows insert column dialog in TreeGrid  
+{:.caption}
+
+### Customizing the insert column dialog.
+
+It is possible to add or remove the [`columns`](/api/js/ejtreegrid#members:columns) properties in insert column dialog using [`columnDialogFields`](/api/js/ejtreegrid#members:columndialogfields) property. In insert column option [`field`](/api/js/ejtreegrid#members:columns-field "columns.field"), [`headerText`](/api/js/ejtreegrid#members:columns-headertext "columns.headerText") and [`editType`](/api/js/ejtreegrid#members:columns-edittype "columns.editType") properties are necessary to create a new column, so this fields are unable to remove from insert column option.
+
+Following code example shows how to customize the insert column option in tree grid.
+
+{% highlight js %}
+        $("#treegrid1").ejTreeGrid(
+        {
+            // ...     
+            allowSorting: true,
+            showColumnOptions: true,
+            columnDialogFields: ["field", "headerText", "editType", "width", "visible", "allowSorting", "textAlign", "headerTextAlign"],
+            // ...             
+        });
+
+
+{% endhighlight %}
+
+![](/js/TreeGrid/Columns_images/Columns_img19.png)
+
+The above screenshot shows customized insert column dailog in tree grid.  
+{:.caption}
+
 
 ### Hide specific column in column chooser list
 It is possible to hide the specific column in column chooser list by settings [`showInColumnChooser`](/api/js/ejtreegrid#members:columns-showincolumnchooser "columns.showInColumnChooser") as `false` in the column definition.
