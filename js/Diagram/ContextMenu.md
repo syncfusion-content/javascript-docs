@@ -34,10 +34,14 @@ $("#DiagramContent").ejDiagram({
 ## Customize Context Menu
 
 * Apart from the default context menu items, you can define some additional context menu items. Those additional items have to be defined and added to [items](/api/js/ejdiagram#members:contextmenu-items "items") property of the context menu. 
+
 * Sub menu items for context menu can set using [subItems](/api/js/ejdiagram#members:contextmenu-items-subitems "subItems") property of the items.
-* You can set text and name for the collection of context menu items using contextMenu [text](/api/js/ejdiagram#members:contextmenu-items-text "text") and [name](/api/js/ejdiagram#members:contextmenu-items-name "name") properties respectively.
-* You can set an image for the contextMenu items using contextMenu [imageUrl](/api/js/ejdiagram#members:contextmenu-items-imageurl "imageUrl") property.
-* The [cssClass](/api/js/ejdiagram#members:contextmenu-items-cssclass "cssClass") property used to customize the style of contextMenu items using user defined CSS class.
+
+* You can set text and name for context menu item using contextMenu [text](/api/js/ejdiagram#members:contextmenu-items-text "text") and [name](/api/js/ejdiagram#members:contextmenu-items-name "name") properties respectively.
+
+* You can set an image for the contextMenu item using contextMenu [imageUrl](/api/js/ejdiagram#members:contextmenu-items-imageurl "imageUrl") property.
+
+* The [cssClass](/api/js/ejdiagram#members:contextmenu-items-cssclass "cssClass") property used to customize the style of contextMenu item using user defined CSS class.
 
 The following code example illustrate how to add custom context menu items.
 

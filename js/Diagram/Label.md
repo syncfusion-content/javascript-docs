@@ -672,20 +672,31 @@ $("#diagram").ejDiagram({
 ### Drag Limit
 
 * The diagram control now supports defining the [dragLimit](/api/js/ejdiagram#members:connectors-labels-dragLimit "dragLimit") to the label while dragging from the connector and also update the postion to the nearest segment offset.
-* You can set the value to dragLimit left, right, top and bottom properties which allows the dragging of connector labels to a certain limit based on user defined values.
+
+* You can set the value to dragLimit [left](/api/js/ejdiagram#members:connectors-labels-dragLimit-left "left"), [right](/api/js/ejdiagram#members:connectors-labels-dragLimit-right "right"), [top](/api/js/ejdiagram#members:connectors-labels-dragLimit-top "top") and [bottom](/api/js/ejdiagram#members:connectors-labels-dragLimit-bottom "bottom") properties which allows the dragging of connector labels to a certain limit based on user defined values.
+
+ * By default, drag limit will be disabled for connector. It can be enabled with the [constraints](/api/js/ejdiagram#members:connector-constraints "constraints") property of connector.
 
 {% highlight javascript %}
 
-//Initializes Diagram
-$("#diagram").ejDiagram({
-	connectors:[
-		{
-		name:"connector1",
-		constraints: ej.datavisualization.Diagram.ConnectorConstraints.Default | ej.datavisualization.Diagram.ConnectorConstraints.DragLimit | ej.datavisualization.Diagram.ConnectorConstraints.DragLabel
-		}
-	]
-});
+var connectorConstraints = ej.datavisualization.Diagram.ConnectorConstraints;
 
+//Enables drag limit for a connector.
+var constraints = connectorConstraints.Default | connectorConstraints.DragLimit | connectorConstraints.DragLabel;
+
+//Initializes Diagram
+
+	$("#diagram").ejDiagram({
+		connectors:[
+			{
+				name:"connector1",
+				constraints: constraints,
+				labels:[
+					{ text:"connector", { dragLimit:{ left: 10, right: 10, top: 10, bottom: 10 }}}
+				]
+			}
+		]
+	});
 {% endhighlight %}
 
 
@@ -738,7 +749,11 @@ $("#diagram").ejDiagram({
 
 ## LabelRendering Mode
 
-Labels can be rendered in separate layer as svg or html using [labelRenderingMode](/api/js/ejdiagram#members:labelrenderingmode "labelRenderingMode") property.
+Diagram provides a support to render the label in the diagram in two mode by using [labelRenderingMode](/api/js/ejdiagram#members:labelrenderingmode "labelRenderingMode") property.
+
+* Text wrapping is not available for SVG elements by default. So while rendering the label in SVG mode, we have to achieve the wrapping by some calculation. So it will take more time when compared to rendering the label in HTML mode. Since text wrapping is available for HTML elements by default.
+
+* However while rendering the label in HTML mode, we have to face the below [limitation](/js/diagram/label#limitation "limitation").
 
 {% highlight javascript %}
 

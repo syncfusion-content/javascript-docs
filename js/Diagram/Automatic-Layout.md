@@ -404,7 +404,7 @@ $("#diagram").ejDiagram({
 
 ### GetConnectorSegments
 
-You can customize the connector segments based on source and target nodes and it can be used only when the layout type is organizationalchart. please refer to [GetConnectorSegments](/api/js/ejDiagram#members:layout-getconnectorsegments "GetConnectorSegments") to know more about it.
+You can customize the connector segments based on source and target nodes by overriding the method, diagram.model.layout.getConnectorSegments and it can be used only when the layout type set as `organizationalchart`. please refer to [getConnectorSegments](/api/js/ejDiagram#members:layout-getconnectorsegments "getConnectorSegments") to know more details about its argument and usage.
 
 ### Assistant
 
@@ -479,12 +479,11 @@ $("#diagram").ejDiagram({
 
 ##  Symmetric Layout
 
-The symmetrical layout has been formed using nodes position by closer together or pushing them further apart. This is repeated iteratively until the system comes to an equilibrium state. 
+The symmetric layout has been formed using nodes position by closer together or pushing them further apart. This is repeated iteratively until the system comes to an equilibrium state. 
 
-`layout.springLength` defined as how long edges should be, ideally. This will be the resting length for the springs. Edge attraction and vertex repulsion forces may be defined by ` layout.springFactor`, the more sibling nodes repel each other. The relative positions do not change anymore from one iteration to the next.  We can specify the no of iteration using ` layout.maxIteration`. 
+The layout's [springLength](/api/js/ejdiagram#members:layout-springlength "springLength") defined as how long edges should be, ideally. This will be the resting length for the springs. Edge attraction and vertex repulsion forces to be defined by using layout's [springFactor](/api/js/ejdiagram#members:layout-springfactor "springFactor"), the more sibling nodes repel each other. The relative positions do not change anymore from one iteration to the next.  We can specify the no of iteration by using layout's [maxIteration](/api/js/ejdiagram#members:layout-maxiteration "maxIteration"). 
 
 The following code illustrates how to arrange the nodes in a radial tree structure. 
-
 
 {% highlight javascript %}
 

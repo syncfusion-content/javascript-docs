@@ -18,10 +18,14 @@ The UML class diagram shapes are explained as follows.
 ### Class
 
 * A Class describes a set of objects that shares the same specifications of features,constraints and semantics.To define a class object, you need to define the [classifier](/api/js/ejdiagram#members:nodes-classifier "classifier") as "class".
+
 * Also, you need to define the [name](/api/js/ejdiagram#members:nodes-class-name "name"), [attributes](/api/js/ejdiagram#members:nodes-class-attributes "attributes") and [methods](/api/js/ejdiagram#members:nodes-class-methods "methods") of the class using the [class](/api/js/ejdiagram#members:nodes-class "class")property of node.
-* In attribute collection, you can use [name](/api/js/ejdiagram#members:nodes-class-attributes-name "name"), [type](/api/js/ejdiagram#members:nodes-class-attributes-type "type") and [scope](/api/js/ejdiagram#members:nodes-class-attributes-scope "scope") properties which is used to set a name,data type and visibility of the attribute respectively.
-* In methods collection, you can use [name](/api/js/ejdiagram#members:nodes-class-methods-name "name"), [arguments](/api/js/ejdiagram#members:nodes-class-methods-arguments "arguments"),[type](/api/js/ejdiagram#members:nodes-class-methods-type "type") and [scope](/api/js/ejdiagram#members:nodes-class-methods-scope "scope") properties which is used to set a name, argument, return type and visibility of the methods.
-* In arguments collection, you can use [name](/api/js/ejdiagram#members:nodes-class-methods-arguments-name "name") and [type](/api/js/ejdiagram#members:nodes-class-methods-arguments-type "type") properties which is used to set a name and type of the argument.
+
+* The attribute's [name](/api/js/ejdiagram#members:nodes-class-attributes-name "name"), [type](/api/js/ejdiagram#members:nodes-class-attributes-type "type") and [scope](/api/js/ejdiagram#members:nodes-class-attributes-scope "scope") properties are allows you to define the name, data type and visibility of the attribute.
+
+* The method's [name](/api/js/ejdiagram#members:nodes-class-methods-name "name"), [arguments](/api/js/ejdiagram#members:nodes-class-methods-arguments "arguments"), [type](/api/js/ejdiagram#members:nodes-class-methods-type "type") and [scope](/api/js/ejdiagram#members:nodes-class-methods-scope "scope") properties are allows you to define the name, argument, return type and visibility of the methods.
+
+* The method.arguments object properties [name](/api/js/ejdiagram#members:nodes-class-methods-arguments-name "name") and [type](/api/js/ejdiagram#members:nodes-class-methods-arguments-type "type") allows to define the name and type of the argument.
  
 The following code example illustrates how to create a class.
 
@@ -79,10 +83,14 @@ N> The default value for the property `classifier` is "class".
 ### Interface
 
 * An Interface is a kind of classifier that represents a declaration of a set of coherent public features and obligations. To create an interface, you need to define the [classifier](/api/js/ejdiagram#members:nodes-classifier "classifier") property as "interface". 
+
 * Also, you need to define the [name](/api/js/ejdiagram#members:nodes-interface-name "name"),[attributes](/api/js/ejdiagram#members:nodes-interface-attributes "attributes") and [methods](/api/js/ejdiagram#members:nodes-interface-methods "methods") of the interface using the [interface](/api/js/ejdiagram#members:nodes-interface "interface") property of the node.
-* In attribute collection, you can use [name](/api/js/ejdiagram#members:nodes-interface-attributes-name "name"), [type](/api/js/ejdiagram#members:nodes-interface-attributes-type "type") and [scope](/api/js/ejdiagram#members:nodes-interface-attributes-scope "scope") properties which is used to set a name,data type and visibility of the attribute respectively.
-* In methods collection, you can use [name](/api/js/ejdiagram#members:nodes-interface-methods-name "name"), [arguments](/api/js/ejdiagram#members:nodes-interface-methods-arguments "arguments"),[type](/api/js/ejdiagram#members:nodes-interface-methods-type "type") and [scope](/api/js/ejdiagram#members:nodes-interface-methods-scope "scope") properties which is used to set a name, argument, return type and visibility of the methods.
-* In arguments collection, you can use [name](/api/js/ejdiagram#members:nodes-interface-methods-arguments-name "name") and [type](/api/js/ejdiagram#members:nodes-interface-methods-arguments-type "type") properties which is used to set a name and type of the argument.
+
+* The attribute's [name](/api/js/ejdiagram#members:nodes-interface-attributes-name "name"), [type](/api/js/ejdiagram#members:nodes-interface-attributes-type "type") and [scope](/api/js/ejdiagram#members:nodes-interface-attributes-scope "scope") properties are allows you to define the name, data type and visibility of the attribute.
+
+* The method's [name](/api/js/ejdiagram#members:nodes-interface-methods-name "name"), [arguments](/api/js/ejdiagram#members:nodes-interface-methods-arguments "arguments"), [type](/api/js/ejdiagram#members:nodes-interface-methods-type "type") and [scope](/api/js/ejdiagram#members:nodes-interface-interface-scope "scope") properties are allows you to define the name, argument, return type and visibility of the methods.
+
+* The method.arguments object properties [name](/api/js/ejdiagram#members:nodes-interface-methods-arguments-name "name") and [type](/api/js/ejdiagram#members:nodes-interface-methods-arguments-type "type") allows to define the name and type of the argument.
  
 The following code example illustrates how to create an interface.
 
@@ -132,8 +140,9 @@ $("#diagram").ejDiagram({
 
 ###  Enumeration
 
-To define an enumeration, you need to define the [classifier](/api/js/ejdiagram#members:nodes-classifier "classifier") property of node as "enumeration".  Also you need to define the [name](/api/js/ejdiagram#members:nodes-enumeration-name "name") and [members](/api/js/ejdiagram#members:nodes-enumeration-members "members") of the enumeration using the [enumeration](/api/js/ejdiagram#members:nodes-enumeration "enumeration") property of node. 
-You can set a name for the enumeration members collection using [name](/api/js/ejdiagram#members:nodes-enumeration-members-name "name") property of members collection.
+* To define an enumeration, you need to define the [classifier](/api/js/ejdiagram#members:nodes-classifier "classifier") property of node as "enumeration".  Also you need to define the [name](/api/js/ejdiagram#members:nodes-enumeration-name "name") and [members](/api/js/ejdiagram#members:nodes-enumeration-members "members") of the enumeration using the [enumeration](/api/js/ejdiagram#members:nodes-enumeration "enumeration") property of node.
+
+* You can set a name for the enumeration members collection using [name](/api/js/ejdiagram#members:nodes-enumeration-members-name "name") property of members collection.
 
 The following code example illustrates how to create an enumeration.
  
@@ -179,7 +188,7 @@ The following code example illustrates how to create an enumeration.
 ### Connector Shapes
 
 * The connector [shape](/api/js/ejdiagram#members:connectors-shape "shape") property defines the role/meaning of the connector.
-* The different types of connector shapes are BPMN, UMLclassifier and UMLActivity and can render these Shapes by setting connector shape [type](/api/js/ejdiagram#members:connectors-shape-type "type") property.
+* The different types of connector shapes are BPMN, UMLClassifier and UMLActivity and can render these Shapes by setting connector shape [type](/api/js/ejdiagram#members:connectors-shape-type "type") property.
 * The type of [flow](/api/js/ejdiagram#members:connectors-shape-flow "flow") shapes in a BPMN process are [sequence](/api/js/ejdiagram#members:connectors-shape-sequence "sequence"), [association](/api/js/ejdiagram#members:connectors-shape-flow-association "association") and [message](/api/js/ejdiagram#members:connectors-shape-relationship "message").
 
 ### Relationships
