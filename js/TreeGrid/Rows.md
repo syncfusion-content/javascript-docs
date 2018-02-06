@@ -507,8 +507,8 @@ Title for each summary row can be defined using the [`summaryRows.title`](https:
 
 ### Defining summary columns
 
-Using the [`summaryRows.summaryColumn.summaryType`](https://help.syncfusion.com/api/js/ejtreegrid#members:summaryrows-summarycolumns-summarytype "summaryRows.summaryColumn.summaryType") property, user can define the type of summary to be displayed in a column. The [`summaryRows.summaryColumns.dataMember`](https://help.syncfusion.com/api/js/ejtreegrid#members:summaryrows-summarycolumns-datamember "summaryRows.summaryColumns.dataMember") property is used the map the field values which is used for summary calculations. The [`summaryRows.summaryColumns.displayColumn`](https://help.syncfusion.com/api/js/ejtreegrid#members:summaryrows-summarycolumns-displaycolumn "summaryRows.summaryColumns.displayColumn") property is used to specify the column in which the summary to be displayed.
-The [`summaryRows.summaryColumns.prefix`](https://help.syncfusion.com/api/js/ejtreegrid#members:summaryrows-summarycolumns-prefix "summaryRows.summaryColumns.prefix") and [`summaryRows.summaryColumns.suffix`](https://help.syncfusion.com/api/js/ejtreegrid#members:summaryrows-summarycolumns-suffix "summaryRows.summaryColumns.suffix") properties are used to define the text should be displayed along with the summary column value. The [`summaryRows.summaryColumns.format`](https://help.syncfusion.com/api/js/ejtreegrid#members:summaryrows-summarycolumns-format "summaryRows.summaryColumns.format") property is used for formatting the summary column value.
+Using the [`summaryType`](https://help.syncfusion.com/api/js/ejtreegrid#members:summaryrows-summarycolumns-summarytype "summaryRows.summaryColumn.summaryType") property, user can define the type of summary to be displayed in a column. The [`dataMember`](https://help.syncfusion.com/api/js/ejtreegrid#members:summaryrows-summarycolumns-datamember "summaryRows.summaryColumns.dataMember") property is used the map the field values which is used for summary calculations. The [`displayColumn`](https://help.syncfusion.com/api/js/ejtreegrid#members:summaryrows-summarycolumns-displaycolumn "summaryRows.summaryColumns.displayColumn") property is used to specify the column in which the summary to be displayed.
+The [`prefix`](https://help.syncfusion.com/api/js/ejtreegrid#members:summaryrows-summarycolumns-prefix "summaryRows.summaryColumns.prefix") and [`suffix`](https://help.syncfusion.com/api/js/ejtreegrid#members:summaryrows-summarycolumns-suffix "summaryRows.summaryColumns.suffix") properties are used to define the text should be displayed along with the summary column value. The [`format`](https://help.syncfusion.com/api/js/ejtreegrid#members:summaryrows-summarycolumns-format "summaryRows.summaryColumns.format") property is used for formatting the summary column value.
 The below code snippet explains defining a summary row in TreeGrid,
 
 {% highlight js %}
@@ -559,4 +559,4 @@ The below code snippet explains defining a summary row in TreeGrid,
 
 The below screenshot shows the output of above code example..
 
-![](/js/TreeGrid/Rows_images/Rows_img8.png)
+![](/js/TreeGrid/Rows_images/Rows_img11.png)
