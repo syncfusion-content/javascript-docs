@@ -161,7 +161,13 @@ Diagram allows to add different kind of nodes. To explore the types of nodes, re
 
 ## Appearance
 
-You can customize the appearance of a node by changing its [fillColor](/api/js/ejdiagram#members:nodes-fillcolor "fillColor"), [borderColor](/api/js/ejdiagram#members:nodes-bordercolor "borderColor"), [borderWidth](/api/js/ejdiagram#members:nodes-borderwidth "borderWidth"), [borderDashArray](/api/js/ejdiagram#members:nodes-borderdasharray "borderDashArray"), [opacity](/api/js/ejdiagram#members:nodes-opacity "opacity"), [patterns](/api/js/ejdiagram#members:nodes-gradient "patterns") and [shadow](/api/js/ejdiagram#members:nodes-shadow "shadow"). The following code illustrates how to customize the appearance of the shape.
+* You can customize the appearance of a node by changing its [fillColor](/api/js/ejdiagram#members:nodes-fillcolor "fillColor"), [borderColor](/api/js/ejdiagram#members:nodes-bordercolor "borderColor"), [borderWidth](/api/js/ejdiagram#members:nodes-borderwidth "borderWidth"), [borderDashArray](/api/js/ejdiagram#members:nodes-borderdasharray "borderDashArray"), [opacity](/api/js/ejdiagram#members:nodes-opacity "opacity"), [patterns](/api/js/ejdiagram#members:nodes-gradient "patterns") and [shadow](/api/js/ejdiagram#members:nodes-shadow "shadow"). 
+
+* The [cssClass](/api/js/ejdiagram#members:nodes-cssclass "cssClass") property of the node used to customize the style of label using user defined CSS class.
+
+* The [visible](/api/js/ejdiagram#members:nodes-visible "visible") property of the node enables or disables the visibility of node.
+
+The following code illustrates how to customize the appearance of the shape.
 
 {% highlight javascript %}
 var nodes = [{
@@ -191,8 +197,13 @@ $("#diagram").ejDiagram({
 
 There are two types of gradients.
 
-* **Linear gradient -** Defines a smooth transition between a set of colors (so-called "stops") on a line. 
-* **Radial gradient -** Defines a smooth transition between stops on a circle.
+* [Linear gradient](/api/js/ejdiagram#members:nodes-gradient-lineargradient "Linear gradient") - Defines a smooth transition between a set of colors (so-called [stops](/api/js/ejdiagram#members:nodes-gradient-lineargradient-stops "stops")) on a line. 
+
+* A Linear gradient's [x1](/api/js/ejdiagram#members:nodes-gradient-lineargradient-x1 "x1"), [y1](/api/js/ejdiagram#members:nodes-gradient-lineargradient-y1 "y1"), [x2](/api/js/ejdiagram#members:nodes-gradient-lineargradient-x2 "x2"), [y2](/api/js/ejdiagram#members:nodes-gradient-lineargradient-y2 "y2") properties are used to define the position(relative to node) of the rectangular region that needs to be painted.
+
+* [Radial gradient](/api/js/ejdiagram#members:nodes-gradient-radialgradient "Radial gradient") - Defines a smooth transition between [stops](/api/js/ejdiagram#members:nodes-gradient-radialgradient-stops "stops") on a circle.
+
+* A Radial gradient's [cx](/api/js/ejdiagram#members:nodes-gradient-radialgradient-cx "cx"), [cy](/api/js/ejdiagram#members:nodes-gradient-radialgradient-cy "cy"), [fx](/api/js/ejdiagram#members:nodes-gradient-radialgradient-fx "fx") , [fy](/api/js/ejdiagram#members:nodes-gradient-radialgradient-fy "fy") properties are used to define the position(relative to node) of the outer most or inner most circle of the radial gradient.
 
 The [gradient](/api/js/ejdiagram#members:nodes-gradient "gradient") property of node allows you to define and applies the gradient effect to that node.
 
@@ -357,3 +368,6 @@ Diagram provides support to drag, resize, or rotate the node interactively. For 
 ## Constraints
 
 The [constraints](/api/js/ejdiagram#members:nodes-constraints "constraints") property of node allows you to enable/disable certain features. For more information about node constraints, refer to [Node Constraints](/js/Diagram/Constraints#nodeconstraints "Node Constraints").
+
+## Custom Properties
+The [addInfo](/api/js/ejdiagram#members:nodes-addinfo "addInfo") property of node allows to maintain additional information to node.
