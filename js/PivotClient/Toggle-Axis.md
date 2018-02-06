@@ -8,9 +8,9 @@ documentation: ug
 api: /api/js/ejpivotclient
 ---
 
-# Toggle Axis
+# Toggle axis
 
-Toggle Axis support swaps all the axis elements between column and row axes, thereby refreshing PivotChart and PivotGrid view. This can be achieved with the use of a toolbar icon.
+The toggle axis support swaps all axis elements between the column and row axes for refreshing the pivot chart and pivot grid views. This can be achieved with the use of a toolbar icon.
 
 ![](Toggle-Axis_images/before-toggle-axis.png)
 

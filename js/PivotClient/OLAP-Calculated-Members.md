@@ -7,23 +7,23 @@ control: PivotClient
 documentation: ug
 ---
 
-# Calculated Members
+# Calculated members
 
-I> This feature is applicable only for Server Mode bound with OLAP data source.
+I> This feature is applicable only for the server mode bound with the OLAP data source.
 
-Calculated members are the customized dimension members or measures that are defined based on the cube data. Values for calculated members are computed at run-time. 
+Calculated members are the customized dimension members or measures that are defined based on the cube data. Values for calculated members are computed at run-time.
 
 The two types of calculated members are as follows:
 
-Calculated Measure – Calculated measure created from a measure element.
+Calculated measure – Calculated measure created from a measure element.
 
-Calculated Dimension – Calculated member created from a dimension element.
+Calculated dimension – Calculated member created from a dimension element.
 
-PivotClient provides support to insert new calculated members based on the existing OLAP field members either through UI dialog or code behind.
+The pivot client provides support to insert new calculated members based on the existing OLAP field members either through UI dialog or code behind.
 
 ## Through UI
 
-To show the icon in toolbar panel, we need to set the property `EnableCalculatedMember` as `true` under `ToolbarIconSettings` object.
+To show the icon in the toolbar panel, you need to set the property `enableCalculatedMember` to `true` under the `toolbarIconSettings` object.
 
 {% highlight html %}
 
@@ -38,34 +38,34 @@ To show the icon in toolbar panel, we need to set the property `EnableCalculated
 
 ![](Calculated-Members_images/icon.png)
 
-To insert a new calculated member, open the Calculated Member dialog by clicking the icon available in toolbar panel. We can define following options inside the dialog.
+To insert a new calculated member, open the calculated member dialog by clicking the icon available in the toolbar panel. You can define the following options in the dialog:
 
     Caption - To set the name for the calculated member.
-    Expression - To set the formula for the calculated member where you can insert required members through Cube Dimension Browser by a simple drag and drop option with required operators to make formula.
-    Member Type - To specify the hierarchy of the member set in expression.
-    Format String - To set the format for the calculated member. 
+    Expression - To set the formula for the calculated member, where you can insert required members through the cube dimension browser by a simple drag and drop option with required operators to make formula.
+    Member type - To specify the hierarchy of the member set in an expression.
+    Format string - To set the format for the calculated member.
 
 ![](Calculated-Members_images/dialog.png)
 
-## Through Code Behind
+## Through code behind
 
-For code-behind, we can create the calculated members by defining formula in OlapReport with the following definitions.
+For code-behind, you can create the calculated members by defining formula in the OLAP report with the following definitions:
 
     Name – Name of the calculated member.
     Expression – Expression to form the calculated member.
-    Measure/Dimension Element – You should add a measure or dimension element from which the calculated member should be created.
+    Measure/dimension element – You should add a measure or dimension element from which the calculated member should be created.
 
-Following steps will explain how to create and add a calculated member in an OlapReport:
+The following steps explain how to create and add a calculated member in an OLAP report:
 
-    1. Create the dimension measure or element from which the calculated member has to be created.
-    2. Create the calculated member by giving the name and expression.
-    3. Add the element created in Step 1 to the calculated member.
-    4. Once the calculated member is defined, add that member to the calculated members collection in the OlapReport.
-    5. Add the newly created calculated members in categorical or series axis of an OlapReport.
+    1. Create a dimension measure or element from which the calculated member has to be created.
+    2. Create a calculated member by giving the name and expression.
+    3. Add the created dimension element to the calculated member.
+    4. After defining the calculated member, add that member to the calculated members collection in the OLAP report.
+    5. Add the newly created calculated members in categorical or series axes of the OLAP report.
 
-Following code snippet will describe the creation and addition of a calculated members in OlapReport:
+Th following code snippet describes the creation and addition of a calculated members in the OLAP report:
 
-### Calculated Measure
+### Calculated measure
 
 {% highlight c# %}
 
@@ -87,7 +87,7 @@ Following code snippet will describe the creation and addition of a calculated m
 
 {% endhighlight %}
 
-### Calculated Dimension
+### Calculated dimension
 
 {% highlight c# %}
 

@@ -10,13 +10,13 @@ api: /api/js/ejpivotclient
 
 # Paging
 
-I> This feature is applicable only for OLAP data source.
+I> This feature is applicable only for the OLAP data source.
 
-Paging helps to improve the rendering performance of the PivotClient control by dividing large amount of data into sections and displaying one section at a time.
+Paging helps to improve the rendering performance of the pivot client control by dividing the large amount of the data into several sections and displaying one section at a time.
 
-## Using Pager 
+## Using pager 
 
-You can enable Pager in PivotClient by setting the [`enablePaging`](/api/js/ejpivotclient#members:enablePaging) property to true. You can provide the page size and current page details for each axis through [`pagerOptions`](/api/js/ejpivotclient#members:pagerOptions) property.
+You can enable the pager in the pivot client by setting the [`enablePaging`](/api/js/ejpivotclient#members:enablepaging) property to true. You can provide the page size and current page details for each axis through the [`pagerOptions`](/api/js/ejpivotclient#members:datasource-pageroptions) property.
 
 ### Client Mode
 
@@ -40,7 +40,7 @@ You can enable Pager in PivotClient by setting the [`enablePaging`](/api/js/ejpi
 </script>
 {% endhighlight %}
 
-### Server Mode
+### Server mode
 
 {% highlight javascript %}
 
@@ -52,22 +52,22 @@ $("#PivotClient1").ejPivotClient({
 
 {% endhighlight %}
 
-Following are the navigation option available in Pager.
+The following are the navigation option available in the pager:
 
-* Move First - Navigates to the first page.
-* Move Last - Navigates to the last page. 
-* Move Previous - Navigates to the previous page from the current page.
-* Move Next - Navigates to the next page from the current page.
-* Numeric Box - Navigates to the desired page by entering an appropriate page number in numeric value.
+* Move first - Navigates to the first page.
+* Move last - Navigates to the last page. 
+* Move previous - Navigates to the previous page from the current page.
+* Move next - Navigates to the next page from the current page.
+* Numeric box - Navigates to the desired page by entering an appropriate page number in the numeric value.
 
 ![](Paging_images/paging.png)
 
 
-## Using Virtual Scrolling
+## Using virtual scrolling
 
-Virtual Scrolling is a technique that allows user to view the PivotClient information page by page with the use of vertical and horizontal scrollbar. You can enable Virtual Scrolling option in PivotClient by setting the [`enableVirtualScrolling`](/api/js/ejpivotclient#members:enablevirtualscrolling) property to true. You can provide the page size and current page details for each axis through [`pagerOptions`](/api/js/ejpivotclient#members:pagerOptions) property. 
+The virtual scrolling is a technique that allows you to view the pivot client information in page by page with the use of the vertical and horizontal scrollbar. You can enable the virtual scrolling option in the pivot client by setting the [`enableVirtualScrolling`](/api/js/ejpivotclient#members:enablevirtualscrolling) property to true. You can provide the page size and current page details for each axis through the [`pagerOptions`](/api/js/ejpivotclient#members:datasource-pageroptions) property.
 
-### Client Mode
+### Client mode
 
 {% highlight javascript %}
 
@@ -86,7 +86,7 @@ $("#PivotClient1").ejPivotClient({
 
 {% endhighlight %}
 
-### Server Mode
+### Server mode
 
 {% highlight javascript %}
 
@@ -100,16 +100,24 @@ $("#PivotClient1").ejPivotClient({
 
 ![](Paging_images/virtual-scrolling.png)
 
-## Page Settings
+## Page settings
 
 The properties associated to paging are:
-* EnablePaging – This property is used to enable/disable paging in PivotClient control.
-* PagerOptions.CategoricalPageSize - Specifies the number of categorical columns to be displayed within a page of the PivotClient control.
-* PagerOptions.SeriesPageSize - Specifies the number of series rows to be displayed within a page of the PivotClient control.
-* PagerOptions.CategoricalCurrentPage - Sets the current page of the categorical axis in PivotClient control.
-* PagerOptions.SeriesCurrentPage - Sets the current page of the series axis in PivotClient control.
+* EnablePaging – This property is used to enable/disable the paging in the pivot client control.
+* PagerOptions.CategoricalPageSize - Specifies the number of categorical columns to be displayed within a page of the pivot client control.
+* PagerOptions.SeriesPageSize - Specifies the number of series rows to be displayed within a page of the pivot client control.
+* PagerOptions.CategoricalCurrentPage - Sets the current page of the categorical axis in the pivot client control.
+* PagerOptions.SeriesCurrentPage - Sets the current page of the series axis in the pivot client control.
 
-For client mode, the page setting for categorical and series axes are mandatorily needed to be set in data source property by using the following properties.
+In client mode, the page setting for categorical and series axes is needed for setting in the data source property by using the following properties:
+
+[`categoricalPageSize`](/api/js/ejpivotclient#members:datasource-pageroptions-categoricalpagesize) - Allows to set the number of categorical columns to be displayed in each page by applying the paging.
+
+[`seriesPageSize`](/api/js/ejpivotclient#members:datasource-pageroptions-seriespagesize) - Allows to set the number of series rows to be displayed in each page by applying the paging.
+
+[`categoricalCurrentPage`](/api/js/ejpivotclient#members:datasource-pageroptions-categoricalcurrentpage) - Allows to set the page number to be loaded in the categorical axis by default.
+
+[`seriesCurrentPage`](/api/js/ejpivotclient#members:datasource-pageroptions-seriescurrentpage) - Allows to set the page number to be loaded in the series axis by default.
 
 {% highlight javascript %}
 
@@ -128,7 +136,7 @@ $("#PivotClient1").ejPivotClient({
 
 {% endhighlight %}
 
-For server mode, the page settings for categorical and series axes are done only through OlapReport object, created inside WebAPI or WCF file.
+In server mode, the page settings for categorical and series axes are done only through the OlapReport object that is created in the WebAPI or WCF file.
 
 {% highlight c# %}
 
