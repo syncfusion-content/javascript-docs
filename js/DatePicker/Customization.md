@@ -240,7 +240,7 @@ You can make use of **showRoundedCorner** property in order to add rounded bord
 {% highlight html %}
 
 
-        $("#daterpicker").ejDatePicker();
+        $("#datepicker").ejDatePicker();
 
         dateObj = $("#datepicker").ejDatePicker("instance");
 
@@ -263,7 +263,7 @@ You can make use of **ShowDisableRanges** property its used to allow show/hide 
 
             $("#datePicker").ejDatePicker({
 
-                showDisabledRange: false  // hides the disableranges in DatePicker calendar
+                showDisabledRange: false  // hides the disable ranges in DatePicker calendar
 
             });
 

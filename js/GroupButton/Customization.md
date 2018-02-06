@@ -188,7 +188,7 @@ You can customize the shape of the **GroupButton** widget from regular rectangul
 
 The following steps explain you to change the edges of the textbox to rounded corner.
 
-In the **HTML** page, add a **&lt;input&gt;** element to configure **GroupButon** widget.
+In the **HTML** page, add a **&lt;input&gt;** element to configure **GroupButton** widget.
 
 {% highlight html %}
 

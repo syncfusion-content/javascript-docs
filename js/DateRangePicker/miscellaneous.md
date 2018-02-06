@@ -88,9 +88,9 @@ Close the DateRangePicker popup, if it is in opened state. we can make use of **
 
 {% highlight html %}
 
-          $("#daterangepick").ejDateRangePicker();
+          $("#daterange").ejDateRangePicker();
           // hides the DateRangePicker popup
-          $("#daterangepick").ejDateRangePicker("popupHide");
+          $("#daterange").ejDateRangePicker("popupHide");
 
 
 {% endhighlight %}
@@ -101,9 +101,9 @@ Open the DateRangePicker popup. we can make use of **popupShow** method.
 
 {% highlight html %}
 
-          $("#daterangepick").ejDateRangePicker();
+          $("#daterange").ejDateRangePicker();
           // hides the DateRangePicker popup
-          $("#daterangepick").ejDateRangePicker("popupShow");
+          $("#daterange").ejDateRangePicker("popupShow");
 
 
 {% endhighlight %}

@@ -240,9 +240,9 @@ The ranges can be set with time value also by enable the TimePicker in popup usi
 
 ![](timepickeroption_images\timepickeroption_img1.png)
 
-## Backward Date Selction
+## Backward Date Selection
 
-DateRangePicker value can be selected through picking two date values from right calender to left calenar.
+DateRangePicker value can be selected through picking two date values from right calender to left calender.
 
 {% highlight javascript %}
      

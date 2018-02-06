@@ -154,7 +154,7 @@ The **showSwitcher** property of the colorpicker control allows show/hides the s
 {% highlight javascript %}
 
     $(function () {
-       $('#colorPicker').ejColorPicker({ value: "#278787", showSwitcher: false}); // hide the swithcer button in colorpicker control.
+       $('#colorPicker').ejColorPicker({ value: "#278787", showSwitcher: false}); // hide the switcher button in colorpicker control.
     });
 
 {% endhighlight %}
