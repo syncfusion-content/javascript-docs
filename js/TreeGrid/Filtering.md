@@ -310,7 +310,7 @@ The below code example explains filtering the TreeGrid contents at initial load 
         });
 {% endhighlight %}
 
-TreeGrid provides support for conditional searching with operators in toolbar search using the property [`searchSettings`](https://help.syncfusion.com/api/js/ejtreegrid#members:searchsettings-operator "searchSettings.operator"). And case sensitivity for the search query can be ignored using the property [`searchSettings.ignoreCase`](https://help.syncfusion.com/api/js/ejtreegrid#members:searchsettings-ignorecase "searchSettings.ignoreCase").
+TreeGrid provides support for conditional searching with operators in toolbar search using the property [`searchSettings.operator`](https://help.syncfusion.com/api/js/ejtreegrid#members:searchsettings-operator "searchSettings.operator"). And case sensitivity for the search query can be ignored using the property [`searchSettings.ignoreCase`](https://help.syncfusion.com/api/js/ejtreegrid#members:searchsettings-ignorecase "searchSettings.ignoreCase").
 The below code example explains filtering the TreeGrid content using toolbar search with operators
 
 {% highlight js %}
