@@ -121,6 +121,8 @@ For more information about creating connections with port, refer to [Connections
 
 * The appearance of ports can be customized by using [borderColor](/api/js/ejdiagram#members:nodes-ports-bordercolor "borderColor"), [borderWidth](/api/js/ejdiagram#members:nodes-ports-borderwidth "borderWidth"), [fillColor](/api/js/ejdiagram#members:nodes-ports-fillcolor "fillColor") properties of the port. 
 
+* The [cssClass](/api/js/ejdiagram#members:nodes-ports-cssclass "cssClass") property used to customize the style of port using user defined CSS class.
+
 The following code illustrates how to change the appearance of port.
 
 {% highlight javascript %}
