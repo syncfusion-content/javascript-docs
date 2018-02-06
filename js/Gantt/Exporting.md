@@ -246,7 +246,7 @@ The following code snippets shows how to bind `ServerExcelQueryCellInfo` event i
 
 [Click](http://js.syncfusion.com/demos/web/#!/bootstrap/gantt/export/conditionalformatting) here to view the online demo sample with above code example.
 
-N> Refer this [link](https://help.syncfusion.com/cr/cref_files/aspnetmvc/xlsio/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IExtendedFormat_members.html) to know more about what are the properties are availble in Excel cell and it's type values.
+N> Refer this [link](https://help.syncfusion.com/cr/cref_files/aspnetmvc/xlsio/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IExtendedFormat_members.html) to know more about what are the properties are available in Excel cell and it's type values.
 
 ### Customize PDF cell
 
