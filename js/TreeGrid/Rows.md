@@ -504,6 +504,7 @@ $("#collapseAtLevel").click(function () {
 
 Summary rows in TreeGrid is used to summarize every hierarchy with the set of predefined summary types using the column values. Using the [`summaryRows`](https://help.syncfusion.com/api/js/ejtreegrid#members:summaryrows "summaryRows") property, user can define the summary rows in TreeGrid.
 Title for each summary row can be defined using the [`summaryRows.title`](https://help.syncfusion.com/api/js/ejtreegrid#members:summaryrows-title "summaryRows.title") property. And using the [`summaryRows.summaryColumns`](https://help.syncfusion.com/api/js/ejtreegrid#members:summaryrows-summarycolumns "summaryRows.summaryColumns") property, it is possible to defined the summary for specific columns alone in a summary row.
+Enable the [`showSummaryRow`](https://help.syncfusion.com/api/js/ejtreegrid#members:showsummaryrow "showSummaryRow") property to make the summary row visible. Total summary row is the overall summary row displayed for all the rows in the TreeGrid content, and its visibility can be deined using the [`showTotalSummary`](https://help.syncfusion.com/api/js/ejtreegrid#members:showtotalsummary "showTotalSummary") property.
 
 ### Defining summary columns
 
@@ -513,7 +514,10 @@ The below code snippet explains defining a summary row in TreeGrid,
 
 {% highlight js %}
 
+
         $("#treegrid").ejTreeGrid({
+            showSummaryRow: true,
+            showTotalSummary: true,
             summaryRows: [
                        {
                            title: "Maximum",
