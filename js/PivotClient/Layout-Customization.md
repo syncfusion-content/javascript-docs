@@ -8,13 +8,13 @@ documentation: ug
 api: /api/js/ejpivotclient
 ---
 
-# Layout Customization
+# Layout customization
 
 ## Size
 
-Allows you to render PivotClient in different sizes. You can set height and width under ['size'] property. 
+Allows you to render the pivot client in different sizes. You can set the height and width under the [`size`](/api/js/ejpivotclient#members:size) property.
 
-## Set size in Pixels
+## Set size in pixels
 
 {% highlight html %}
 
@@ -30,15 +30,15 @@ Allows you to render PivotClient in different sizes. You can set height and widt
 
 {% endhighlight %}
 
-PivotClient with decreased size from Default size
+Th pivot client with decreased size from default size.
 
 ![](Layout-Customization_images/small-size.png)
 
 ## Set size in percentage
 
-You can set the PivotClient size in percentage also.
+You can also set the pivot client size in percentage.
 
-N> Size of the parent container should be set in Pixels.
+N> The size of the parent container should be set in pixels.
 
 {% highlight html %}
 
@@ -57,11 +57,11 @@ N> Size of the parent container should be set in Pixels.
 
 {% endhighlight %}
 
-N> PivotClient set with minimum height and width to show decent UI.
-## Control Placement
+N> The pivot client is set with minimum height and width to show the decent UI.
+## Control placement
 
-### Tab View
-In Tab View representation, both Grid and Chart will be displayed in separate tabs. This could be set by using the [`controlPlacement`](/api/js/ejpivotclient#members:displaysettings-controlplacement) property under the [`displaySettings`](/api/js/ejpivotclient#members:displaysettings) option.  By default, **Tab** value is set.
+### Tab view
+In tab view representation, both the grid and the chart will be displayed in separate tabs. This can be set by using the [`controlPlacement`](/api/js/ejpivotclient#members:displaysettings-controlplacement) property under the [`displaySettings`](/api/js/ejpivotclient#members:displaysettings) option.  By default, the **Tab** value is set.
 
 {% highlight javascript %}
 
@@ -76,8 +76,8 @@ $("#PivotClient1").ejPivotClient({
 
 ![](Layout-Customization_images/tab.png) 
 
-### Tile View
-In Tile View representation, both Grid and Chart will be displayed one above the other, in the same layout. Tile view can be set by using the [`controlPlacement`](/api/js/ejpivotclient#members:displaysettings-controlplacement) property under the [`displaySettings`](/api/js/ejpivotclient#members:displaysettings) option.
+### Tile view
+In tile view representation, both the grid and the chart will be displayed one above the other, in the same layout. The tile view can be set by using the [`controlPlacement`](/api/js/ejpivotclient#members:displaysettings-controlplacement) property under the [`displaySettings`](/api/js/ejpivotclient#members:displaysettings) option.
 
 {% highlight javascript %}
 
@@ -92,10 +92,10 @@ $("#PivotClient1").ejPivotClient({
 
 ![](Layout-Customization_images/tile-view.png)
 
-## Default View
+## Default view
 
-### Grid View
-To display Grid control by default, set [`defaultView`](/api/js/ejpivotclient#members:displaysettings-defaultview) property under [`displaySettings`](/api/js/ejpivotclient#members:displaysettings) option to **Grid**, which is the default value of the property.
+### Grid view
+To display the grid control by default, set the [`defaultView`](/api/js/ejpivotclient#members:displaysettings-defaultview) property under the [`displaySettings`](/api/js/ejpivotclient#members:displaysettings) option to **Grid**, which is the default value of the property.
 
 {% highlight javascript %}
 
@@ -110,8 +110,8 @@ To display Grid control by default, set [`defaultView`](/api/js/ejpivotclient#me
 
 ![](Layout-Customization_images/grid-view.png)
 
-### Chart View
-To display Chart control by default, set the property [`defaultView`](/api/js/ejpivotclient#members:displaysettings-defaultview) property to **Chart**.
+### Chart view
+To display chart control by default, set the [`defaultView`](/api/js/ejpivotclient#members:displaysettings-defaultview) property to **Chart**.
 
 {% highlight javascript %}
 
@@ -126,10 +126,10 @@ To display Chart control by default, set the property [`defaultView`](/api/js/ej
 
 ![](Layout-Customization_images/Chart-view.png)
 
-## Display Mode
+## Display mode
 
-### Grid Only
-By setting the [`mode`](/api/js/ejpivotclient#members:displaysettings-mode) property under [`displaySettings`](/api/js/ejpivotclient#members:displaysettings) option to **GridOnly**, PivotGrid component alone will get rendered and PivotChart will not be rendered.
+### Grid only
+By setting the [`mode`](/api/js/ejpivotclient#members:displaysettings-mode) property under the [`displaySettings`](/api/js/ejpivotclient#members:displaysettings) option to **GridOnly**, the pivot grid component alone will get rendered and the pivot chart will not be rendered.
 
 {% highlight javascript %}
 
@@ -145,7 +145,7 @@ By setting the [`mode`](/api/js/ejpivotclient#members:displaysettings-mode) prop
 ![](Layout-Customization_images/Grid-only.png)
 
 ### Chart Only
-By setting the [`mode`](/api/js/ejpivotclient#members:displaysettings-mode) property under [`displaySettings`](/api/js/ejpivotclient#members:displaysettings) option to **ChartOnly**, PivotChart component alone will get rendered and PivotGrid will not be rendered.
+By setting the [`mode`](/api/js/ejpivotclient#members:displaysettings-mode) property under the [`displaySettings`](/api/js/ejpivotclient#members:displaysettings) option to **ChartOnly**, the pivot chart component alone will get rendered and the pivot grid will not be rendered.
 
 {% highlight javascript %}
 
@@ -160,8 +160,8 @@ By setting the [`mode`](/api/js/ejpivotclient#members:displaysettings-mode) prop
 
 ![](Layout-Customization_images/Chart-only.png)
 
-### Both Chart and Grid
-By setting the [`mode`](/api/js/ejpivotclient#members:displaysettings-mode) property under [`displaySettings`](/api/js/ejpivotclient#members:displaysettings) option to **ChartAndGrid**, data is displayed in both Grid and Chart.  This is the default value of the property.
+### Both chart and grid
+By setting the [`mode`](/api/js/ejpivotclient#members:displaysettings-mode) property under the [`displaySettings`](/api/js/ejpivotclient#members:displaysettings) option to **ChartAndGrid**, the data is displayed in both the grid and chart.  This is the default value of the [`mode`](/api/js/ejpivotclient#members:displaysettings-mode) property.
 
 {% highlight javascript %}
 
@@ -176,8 +176,8 @@ By setting the [`mode`](/api/js/ejpivotclient#members:displaysettings-mode) prop
 
 ![](Layout-Customization_images/tile-view.png)
 
-## Toggle Panel
-Toggle panel option lets the user to toggle the visibility of Axis Element Builder and Cube Dimension Browser panels in PivotClient with a use of a button. The button could be added to the control by enabling the [`enableTogglePanel`](/api/js/ejpivotclient#members:displaysettings-enabletogglepanel) property under [`displaySettings`](/api/js/ejpivotclient#members:displaysettings) option.  This property is disabled by default.
+## Toggle panel
+The toggle panel option allows you to toggle the visibility of axis element builder and cube dimension browser panels in the pivot client with a use of a button. The button can be added to the control by enabling the [`enableTogglePanel`](/api/js/ejpivotclient#members:displaysettings-enabletogglepanel) property under the [`displaySettings`](/api/js/ejpivotclient#members:displaysettings) option.  This property is disabled by default.
 
 {% highlight javascript %}
 
@@ -192,9 +192,9 @@ Toggle panel option lets the user to toggle the visibility of Axis Element Build
 
 ![](Layout-Customization_images/toggle-panel.png)
 
-## Collapse Toggle Panel By Default
+## Collapse toggle panel by default
 
-Allows the user to hide “Cube Browser” and “Axis Element Builder” panels while initiating the widget. You can enable this option in PivotClient by setting the [`collapseCubeBrowserByDefault`](/api/js/ejpivotclient#members:collapsecubebrowserbydefault) property to true.
+Allows you to hide the “Cube Browser” and “Axis Element Builder” panels while initiating the widget. You can enable this option in the pivot client by setting the [`collapseCubeBrowserByDefault`](/api/js/ejpivotclient#members:collapsecubebrowserbydefault) property to true.
 
 {% highlight javascript %}
 
@@ -207,8 +207,8 @@ Allows the user to hide “Cube Browser” and “Axis Element Builder” panels
 
 ![](Layout-Customization_images/collapse-cube-browser-by-default.png)
 
-## Maximized/Full Screen View
-Full screen view helps to visualize the PivotGrid and PivotChart controls inside PivotClient precisely according to the browser window size.  By selecting full screen icon in the toolbar, the control which is in the view gets maximized.  Drilldown action can also be performed in both PivotGrid and PivotChart in the maximized view.  This option is enabled by setting the [`enableFullScreen`](/api/js/ejpivotclient#members:displaysettings-enablefullscreen) property under [`displaySettings`](/api/js/ejpivotclient#members:displaysettings)  option to true.  The value is false by default.
+## Maximized/full screen view
+Full screen view helps to visualize the pivot grid and pivot chart controls in the pivot client precisely according to the browser window size.  By selecting full screen icon in the toolbar, the control which is in the view gets maximized. The drill down action can also be performed in both the pivot grid and the pivot chart in the maximized view.  This option is enabled by setting the [`enableFullScreen`](/api/js/ejpivotclient#members:displaysettings-enablefullscreen) property under the [`displaySettings`](/api/js/ejpivotclient#members:displaysettings)  option to true.  The value is false by default.
 
 {% highlight javascript %}
 
@@ -223,13 +223,13 @@ Full screen view helps to visualize the PivotGrid and PivotChart controls inside
 
 ![](Layout-Customization_images/fullscreen-icon.png)
 
-The following screenshot shows the maximized view of PivotGrid.
+The following screenshot shows the maximized view of the pivot grid:
 
 ![](Layout-Customization_images/fullscreen-view.png)
 
 
-## Chart Types
-While loading the PivotClient initially, the PivotChart widget can be rendered in any one of the available chart types using the [`chartType`](/api/js/ejpivotclient#members:charttype) property.
+## Chart types
+While loading the pivot client initially, the pivot chart widget can be rendered in any one of the available chart types using the [`chartType`](/api/js/ejpivotclient#members:charttype) property.
 
 {% highlight javascript %}
 
@@ -240,19 +240,19 @@ While loading the PivotClient initially, the PivotChart widget can be rendered i
 
 {% endhighlight %} 
 
-The [`chartType`](/api/js/ejpivotclient#members:charttype) property takes Column Chart by default. The types available are Column, Stacking Column, Bar, Stacking Bar, Line, Spline, Step Line, Area, Spline Area, Step Area, Stacking Area, Pie, Funnel and Pyramid.
+The [`chartType`](/api/js/ejpivotclient#members:charttype) property takes column chart by default. The available chart types are column, stacking column, bar, stacking bar, line, spline, step line, area, spline area, step area, stacking area, pie, funnel, and pyramid.
 
-The Chart Type can also be changed dynamically through the toolbar icon. 
+The chart type can also be changed dynamically through the toolbar icon.
 
 ![](Layout-Customization_images/chart-type.png)
 
 ![](Layout-Customization_images/chart-type-changed.png)
 
-### PivotTreeMap
+### Pivot tree map
 
-I> This feature is applicable only for OLAP data source bound from server-side.
+I> This feature is applicable only for the OLAP data source bound from the server-side.
 
-You can include the PivotTreeMap component as one of the chart types by setting [`enablePivotTreeMap`](/api/js/ejPivotClient#members:enablepivottreemap) property to true.
+You can include the pivot tree map component as one of the chart type by setting the [`enablePivotTreeMap`](/api/js/ejpivotclient#members:enablepivottreemap) property to true.
 
 {% highlight javascript %}
 
@@ -269,7 +269,7 @@ You can include the PivotTreeMap component as one of the chart types by setting 
 
 ## Report Toolbar
 
-You can customize the display of toolbar by enabling/disabling the visibility of each of the icons.  This can be achieved by setting the properties under [`toolbarIconSettings`](/api/js/ejpivotclient#members:toolbariconsettings) option to false. The values are true by default.
+You can customize the display of toolbar by enabling/disabling the visibility of each icon.  This can be achieved by setting the properties under the [`toolbarIconSettings`](/api/js/ejpivotclient#members:toolbariconsettings) option to false. The values are true by default.
 
 {% highlight javascript %}
 
@@ -287,6 +287,27 @@ You can customize the display of toolbar by enabling/disabling the visibility of
 
 ![](Layout-Customization_images/toolbarIconSettings1.png)
 
-The following screenshot shows after disabling the toolbar icons.
+The following screenshot will be displayed after disabling the toolbar icons.
 
 ![](Layout-Customization_images/toolbarIconSettings2.png)
+
+The following table will explain you the available properties for the customization of the report toolbar.
+
+| Property | Description
+|---|---|
+| [`enableNewReport`](/api/js/ejpivotclient#members:toolbariconsettings-enablenewreport) | Allows you to set the visibility of `New Report` icon in the toolbar panel.|
+| [`enableAddReport`](/api/js/ejpivotclient#members:toolbariconsettings-enableaddreport) | Allows you to set the visibility of `Add Report` icon in the toolbar panel.|
+| [`enableRemoveReport`](/api/js/ejpivotclient#members:toolbariconsettings-enableremovereport) | Allows you to set the visibility of `Remove Report` icon in the toolbar panel.|
+| [`enableRenameReport`](/api/js/ejpivotclient#members:toolbariconsettings-enablerenamereport) | Allows you to set the visibility of `Rename Report` icon in the toolbar panel.|
+| [`enableDBManipulation`](/api/js/ejpivotclient#members:toolbariconsettings-enabledbmanipulation) | Allows you to set the visibility of `DB Manipulation` icon in the toolbar panel.|
+| [`enableMDXQuery`](/api/js/ejpivotclient#members:toolbariconsettings-enablemdxquery) | Allows you to set the visibility of `MDX Query` icon in the toolbar panel.|
+| [`enableDeferUpdate`](/api/js/ejpivotclient#members:toolbariconsettings-enabledeferupdate) | Allows you to set the visibility of `Defer Update` icon in the toolbar panel.|
+| [`enableExcelExport`](/api/js/ejpivotclient#members:toolbariconsettings-enableexcelexport) | Allows you to set the visibility of `Excel Export` icon in the toolbar panel.|
+| [`enableWordExport`](/api/js/ejpivotclient#members:toolbariconsettings-enablewordexport) | Allows you to set the visibility of `Word Export` icon in the toolbar panel.|
+| [`enablePdfExport`](/api/js/ejpivotclient#members:toolbariconsettings-enablepdfexport)| Allows you to set the visibility of `PDF Export` icon in the toolbar panel.|
+| [`enableFullScreen`](/api/js/ejpivotclient#members:toolbariconsettings-enablefullscreen)| Allows you to set the visibility of `Full Screen` icon in the toolbar panel.|
+| [`enableSortOrFilterColumn`](/api/js/ejpivotclient#members:toolbariconsettings-enablesortorfiltercolumn)| Allows you to set the visibility of `Sort/Filter Column` icon in the toolbar panel.|
+| [`enableSortOrFilterRow`](/api/js/ejpivotclient#members:toolbariconsettings-enablesortorfilterrow)| Allows you to set the visibility of `Sort/Filter Row` icon in the toolbar panel.|
+| [`enableToggleAxis`](/api/js/ejpivotclient#members:toolbariconsettings-enabletoggleaxis)| Allows you to set the visibility of `Toggle Axis` icon in the toolbar panel.|
+| [`enableChartTypes`](/api/js/ejpivotclient#members:toolbariconsettings-enablecharttypes)| Allows you to set the visibility of `Chart Types` icon in the toolbar panel.|
+| [`enableCalculatedMember`](/api/js/ejpivotclient#members:toolbariconsettings-enablecalculatedmember)| Allows you to set the visibility of `Calculated Member` icon in the toolbar panel.|

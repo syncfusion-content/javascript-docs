@@ -8,13 +8,13 @@ documentation: ug
 api: /api/js/ejpivotclient
 ---
 
-# Advanced Filtering & Sorting
+# Advanced filtering and sorting
 
-It allows to filter and sort the field members in PivotClient.
+It allows you to filter and sort the field members in the pivot client.
 
-### Client Mode
+### Client mode
 
-In client mode, you can enable Advanced Filtering and Sorting option in PivotClient by setting the [`enableAdvancedFilter`](/api/js/ejpivotclient#members:enableAdvancedFilter) property under [`dataSource`] to true.
+In client mode, you can enable the advanced filtering and sorting option in the pivot client by setting the [`enableAdvancedFilter`](/api/js/ejpivotclient#members:datasource-enableadvancedfilter) property under the [`dataSource`] to true.
 
 {% highlight html %}
 
@@ -30,9 +30,9 @@ In client mode, you can enable Advanced Filtering and Sorting option in PivotCli
 
 {% endhighlight %}
 
-### Server Mode
+### Server mode
 
-In server mode, you can enable the Advanced Filtering and Sorting option in PivotClient by setting the [`enableAdvancedFilter`](/api/js/ejpivotclient#members:enableAdvancedFilter) property to true.
+In server mode, you can enable the advanced filtering and sorting option in the pivot client by setting the [`enableAdvancedFilter`](/api/js/ejpivotclient#members:enableadvancedfilter) property to true.
 
 {% highlight html %}
 
@@ -48,22 +48,22 @@ In server mode, you can enable the Advanced Filtering and Sorting option in Pivo
 
 ## Sorting
 
-Sorting provides an option to sort the members of a field either in ascending or descending order. 
+Sorting provides an option to sort the members of the field either in the ascending or descending order. 
 
 ![](AdvanceFiltering_images/sorting.png)
 
-## Label Filtering
+## Label filtering
 
-Label filtering provides an option to filter the members of a field purely based on their caption. 
+The label filtering provides an option to filter the members of the field purely based on their caption.
 
 ![](AdvanceFiltering_images/filtering.png)
 
 ![](AdvanceFiltering_images/filtering_dialog.png)
 
 
-## Value Filtering
+## Value filtering
 
-Value filtering provides an option to filter members based on the total values of the appropriate measure between the members of the level. 
+The value filtering provides an option to filter the members based on total values of the appropriate measure between the members of the level. 
 
 ![](AdvanceFiltering_images/valuefilter.png)
 
