@@ -316,13 +316,19 @@ We can add a lane at runtime width client side API method addLane. please refer 
 
 The [addInfo](/api/js/ejdiagram#members:nodes-lanes-addinfo "addInfo") property of lane allows to maintain additional information to lane.
 
+## Stack Order
+
+The lanes [zOrder](/api/js/ejdiagram#members:nodes-lanes-zorder "zOrder") property specifies the stack order of an lane. An lane with greater stack order is always in front of an lane with a lower stack order.
+
 ## Phase
 
-Phases are the sub-processes that are used to break the swimlane into multiple smaller regions.
+[Phases](/api/js/ejdiagram#members:nodes-phases "phases") are the sub-processes that are used to break the swimlane into multiple smaller regions.
 
 ### Add phase
 
-To define a phase, you have to set the length of the region to the [offset](/api/js/ejdiagram#members:nodes-phases-offset "offset") property of phase. Every region can be textually described with the [label](/api/js/ejdiagram#members:nodes-phases-label "label") property of phase.
+* To define a phase, you have to set the length of the region to the [offset](/api/js/ejdiagram#members:nodes-phases-offset "offset") property of phase. Every region can be textually described with the [label](/api/js/ejdiagram#members:nodes-phases-label "label") property of phase.
+
+* The phase's [name](/api/js/ejdiagram#members:nodes-phases-name "name") property is used to define the name of the phase and its further used to find the phase from swimlane at runtime and do any customization.
 
 The following code example illustrates how to add a phase on initializing swimlane.
 

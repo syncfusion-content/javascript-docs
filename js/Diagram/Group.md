@@ -18,6 +18,8 @@ Group is used to cluster multiple nodes and connectors into a single element. It
 
 You can add a group to the Diagram model through [nodes](/api/js/ejdiagram#members:nodes "nodes") collection. To define an object as group, set its [type](/api/js/ejdiagram#members:nodes-type "type") property as "group" and you need to add the child objects to the [children](/api/js/ejdiagram#members:nodes-children "children")  collection of the group. The following code illustrates how to create a group node.
 
+* The group's [canUngroup](/api/js/ejdiagram#members:nodes-canungroup "canUngroup") property is used to defines whether the group can be ungrouped or not.
+
 {% highlight javascript %}
 
 var nodes = [{
@@ -125,7 +127,7 @@ There are two types of containers available.
 * Canvas allows you to position its contained elements by using margin and alignment properties.
 * It allows elements to be either vertically or horizontally aligned.
 
-The [container](/api/js/ejdiagram#members:nodes-container "container") property of group should be defined and its [type](/api/js/ejdiagram#members:nodes-container-type "type") should be set as `canvas` to create a canvas panel. The following code illustrates how to add a canvas panel.
+The [container](/api/js/ejdiagram#members:nodes-container "container") property of group should be defined and its [type](/api/js/ejdiagram#members:nodes-container-type "type") should be set as `canvas` to create a canvas panel. Also, you can set an orientation as horizontal or vertical for canvas panel using nodes container [orientation](/api/js/ejdiagram#members:nodes-container-orientation "orientation") property. The following code illustrates how to add a canvas panel.
 
 {% highlight javascript %}
 

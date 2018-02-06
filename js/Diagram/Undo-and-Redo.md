@@ -46,8 +46,10 @@ Diagram provides options to track the changes that are made to custom properties
 The following example illustrates how to track such custom property changes.
 
 * Before changing the employee information, save the existing information to history manager by using the client side method [push](/api/js/ejdiagram#members:historymanager-push "push") of `historyManager`.
+* You can use historyManager [canPop](/api/js/ejdiagram#events:historymanager-canpop "canPop") method which takes a history entry as argument and returns whether the specific entry can be popped or not.
+* The [pop](/api/js/ejdiagram#events:historymanager-pop "pop") method is used to remove the history of a recent change made in diagram.
 
-The following code example illustrates how to save the existing property values. 
+The following code example illustrates how to save the existing property values and pop it. 
 
 {% highlight javascript %}
 
@@ -60,6 +62,10 @@ diagram.model.historyManager.push(entry);
 //Updates the new information
 var newValue = { role: "New role" };
 node.empInfo = newValue;
+
+//Pop if the change doesn't need to be tracked
+if(diagram.model.historyManager.canPop(entry))
+	diagram.model.historyManager.pop();
 
 {% endhighlight %}
 

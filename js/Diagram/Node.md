@@ -62,7 +62,9 @@ $("#diagram").ejDiagram({
 
 * To add a node to group at runtime, define group name in node's [parent](/api/js/ejdiagram#members:nodes-parent "parent") property.
 
-* The node's [name](/api/js/ejdiagram#members:nodes-name "name") property is used to define the name of the node and its further used to find the node at runtime and do any customization. A public method [findNode] (/api/js/ejdiagram#methods:findnode "findNode") is used to find the node/connector at runtime.
+* The node's [name](/api/js/ejdiagram#members:nodes-name "name") property is used to define the name of the node and its further used to find the node at runtime and do any customization. 
+
+* A public method [findNode](/api/js/ejdiagram#methods:findnode "findNode") is used to find the node/connector at runtime.
 
 The following code illustrates how to add a node.
 
@@ -318,9 +320,11 @@ Diagram provides support to describe the state of the node. i.e., node is expand
 
 N> Icon can be created only when the node has outedges.
 
-To explore the properties of expandIcon and collapseIcon, refer to [Icon Properties](/api/js/ejdiagram#members:nodes-expandicon "Icon Properties").
+* To explore the properties of expand and collapse icon, refer to [expandIcon](/api/js/ejdiagram#members:nodes-expandicon "expandIcon") and [collapseIcon](/api/js/ejdiagram#members:nodes-collapseicon "collapseIcon").
 
-The [shape](/api/js/ejdiagram#members:nodes-expandicon-shape "shape") property of icon allows to define the shape of the icon. The following code example illustrates how to create icon of various shapes.
+* The expandIcon's [shape](/api/js/ejdiagram#members:nodes-expandicon-shape "shape") property and collapseIcon's [shape](/api/js/ejdiagram#members:nodes-collapseicon-shape "shape") property allows to define the shape of the icon. 
+
+The following code example illustrates how to create icon of various shapes.
 
 {% highlight javascript %}
 
@@ -360,14 +364,34 @@ $("#diagram").ejDiagram({
 
 ![](/js/Diagram/Node_images/Node_img10.png)
 
+### Customizing Expand Icon
+
+* You can set an borderColor, borderWidth, background color for an expandIcon using [borderColor](/api/js/ejdiagram#members:nodes-expandicon-bordercolor "borderColor"),[borderWidth](/api/js/ejdiagram#members:nodes-expandicon-borderwidth "borderWidth") and [fillColor](/api/js/ejdiagram#members:nodes-expandicon-fillcolor "fillColor") properties.
+
+* To set an size for expandIcon, use [width](/api/js/ejdiagram#members:nodes-expandicon-width "width") and [height](/api/js/ejdiagram#members:nodes-expandicon-height "height") properties.
+
+* The expand icon can be aligned relative to the node boundaries. It has [margin](/api/js/ejdiagram#members:nodes-expandicon-margin "margin"), [offset](/api/js/ejdiagram#members:nodes-expandicon-offset "offset"), [horizontalAlignment](/api/js/ejdiagram#members:nodes-expandicon-horizontalalignment "horizontalAlignment") and [verticalAlignment](/api/js/ejdiagram#members:nodes-expandicon-verticalalignment "verticalAlignment") settings. It is quite tricky when all four alignments are used together but gives you more control over alignment.
+
+### Customizing Collapse Icon
+
+* You can set an borderColor, borderWidth, background color for an collapseIcon using [borderColor](/api/js/ejdiagram#members:nodes-collapseicon-bordercolor "borderColor"),[borderWidth](/api/js/ejdiagram#members:nodes-collapseicon-borderwidth "borderWidth") and [fillColor](/api/js/ejdiagram#members:nodes-collapseicon-fillcolor "fillColor") properties.
+
+* To set an size for collapseIcon, use [width](/api/js/ejdiagram#members:nodes-collapseicon-width "width") and [height](/api/js/ejdiagram#members:nodes-collapseicon-height "height") properties.
+
+* Like expand icon, collapse icon also can be aligned relative to the node boundaries. It has [margin](/api/js/ejdiagram#members:nodes-collapseicon-margin "margin"), [offset](/api/js/ejdiagram#members:nodes-collapseicon-offset "offset"), [horizontalAlignment](/api/js/ejdiagram#members:nodes-collapseicon-horizontalalignment "horizontalAlignment") and [verticalAlignment](/api/js/ejdiagram#members:nodes-collapseicon-verticalalignment "verticalAlignment") settings. It is quite tricky when all four alignments are used together but gives you more control over alignment.
+
 ## Interaction
 
 Diagram provides support to drag, resize, or rotate the node interactively. For more information about editing a node at runtime, refer to [Edit Nodes](/js/Diagram/Interaction "Interaction").
-
 
 ## Constraints
 
 The [constraints](/api/js/ejdiagram#members:nodes-constraints "constraints") property of node allows you to enable/disable certain features. For more information about node constraints, refer to [Node Constraints](/js/Diagram/Constraints#nodeconstraints "Node Constraints").
 
 ## Custom Properties
+
 The [addInfo](/api/js/ejdiagram#members:nodes-addinfo "addInfo") property of node allows to maintain additional information to node.
+
+## Stack Order
+
+The nodes [zOrder](/api/js/ejdiagram#members:nodes-zorder "zOrder") property specifies the stack order of an node. An node with greater stack order is always in front of an node with a lower stack order.
