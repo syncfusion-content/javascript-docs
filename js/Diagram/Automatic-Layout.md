@@ -20,8 +20,7 @@ Diagram provides support to auto-arrange the nodes in the Diagram area that is r
 
 The Hierarchical Tree Layout arranges nodes in a tree-like structure, where the nodes in the hierarchical layout may have multiple parents. There is no need to specify the layout root.
 To arrange the nodes in hierarchical structure, you need to specify the layout [type](/api/js/ejdiagram#members:layout-type "type") as hierarchical tree. The following example shows how to arrange the nodes in a hierarchical structure.
-
-
+ 
 {% highlight javascript %}
 
 //Initializes data source
@@ -95,7 +94,7 @@ N> You can ignore a particular Node from layout arrangement by setting its [excl
 
 ## Radial Tree Layout
 
-The Radial Tree layout arranges nodes on a virtual concentric circles around a root node. Sub-trees formed by the branching of child nodes are located radially around the child nodes. This arrangement results in an ever-expanding concentric arrangement with radial proximity to the root node indicating the node level in the hierarchy. When no root node is set, the algorithm automatically considers one of the Diagram nodes as the root node.
+The Radial Tree layout arranges nodes on a virtual concentric circles around a root node. Sub-trees formed by the branching of child nodes are located radially around the child nodes. This arrangement results in an ever-expanding concentric arrangement with radial proximity to the root node indicating the node level in the hierarchy. You can use layout [root](/api/js/ejdiagram#members:layout-root "root") property to define the root node of the layout. When no root node is set, the algorithm automatically considers one of the Diagram nodes as the root node.
 
 To arrange nodes in a radial tree structure, you need to set the [type](/api/js/ejdiagram#members:layout-type "type") of the layout as `radialtree`. The following code illustrates how to arrange the nodes in a radial tree structure.
 
@@ -401,6 +400,10 @@ $("#diagram").ejDiagram({
 {% endhighlight %}
 
 ![](/js/Diagram/Automatic-Layout_images/Automatic-Layout_img10.png)
+
+### GetConnectorSegments
+
+You can customize the connector segments based on source and target nodes and it can be used only when the layout type is organizationalchart. please refer to [GetConnectorSegments](/api/js/ejDiagram#members:layout-getconnectorsegments "GetConnectorSegments") to know more about it.
 
 ### Assistant
 

@@ -466,10 +466,10 @@ connectors.push(connector);
 ## Decorator
 
 * Start and end points of a connector can be decorated with some customizable shapes like arrows, circles, diamond or path. You can decorate the connection end points with the [sourceDecorator](/api/js/ejdiagram#members:connectors-sourcedecorator "sourceDecorator") and [targetDecorator](/api/js/ejdiagram#members:connectors-targetdecorator "targetDecorator") properties of connector.
-
 * To explore the properties of decorators, refer to [Decorator Properties](/api/js/ejdiagram#members:connectors-sourcedecorator "Decorator Properties").
-
-* The [shape](/api/js/ejdiagram#members:connectors-targetdecorator-shape "shape") property of decorator allows to define the shape of the decorators. The following code example illustrates how to create decorators of various shapes.
+* The [shape](/api/js/ejdiagram#members:connectors-targetdecorator-shape "shape") property of decorator allows to define the shape of the decorators.
+* To create custom [shape](/api/js/ejdiagram#members:connectors-sourcedecorator-shape "shape") for sourceDecorator, use [pathData](/api/js/ejdiagram#members:connectors-sourcedecorator-pathdata "pathData") property. similarly, to create custom shape for targetDecorator, use [pathData](/api/js/ejdiagram#members:connectors-targetdecorator-pathData "pathData") property.
+* The following code example illustrates how to create decorators of various shapes.
 
 {% highlight javascript %}
 
@@ -752,6 +752,11 @@ var connectors = [{
 
 ### Decorator Appearance
 
+* To set the border color, border width and background color for sourceDecorator, use [borderColor](/api/js/ejdiagram#members:connectors-sourcedecorator-bordercolor "borderColor"), [borderWidth](/api/js/ejdiagram#members:connectors-sourcedecorator-borderwidth "borderWidth") and [fillColor](/api/js/ejdiagram#members:connectors-sourcedecorator-fillcolor "fillColor").
+* To set the border color, border width and background color for the targetDecorator, use [borderColor](/api/js/ejdiagram#members:connectors-targetdecorator-bordercolor "borderColor") and [fillColor](/api/js/ejdiagram#members:connectors-targetdecorator-fillcolor "fillColor").
+* To set the size for sourceDecorator, use [width](/api/js/ejdiagram#members:connectors-sourcedecorator-width "width") and [height](/api/js/ejdiagram#members:connectors-sourcedecorator-height "height") property. Similarly, to set the size for targetDecorator, use [width](/api/js/ejdiagram#members:connectors-targetdecorator-width "width") and [height](/api/js/ejdiagram#members:connectors-targetdecorator-height "height").
+* The [cssClass](/api/js/ejdiagram#members:connectors-sourcedecorator-cssclass "cssClass") property used to customize the style of sourceDecorator using user defined CSS class. Similarly, you can use targetDecorator [cssClass](/api/js/ejdiagram#members:connectors-targetdecorator-cssclass "cssClass") to customize the style of targetDecorator.
+
 The following code example illustrates how to customize the appearance of the decorator.
 
 {% highlight javascript %}
@@ -781,3 +786,6 @@ The [constraints](/api/js/ejdiagram#members:connectors-constraints "constraints"
 
 ## Custom Properties
 The [addInfo](/api/js/ejdiagram#members:connectors-addinfo "addInfo") property of connectors allows to maintain additional information to connectors.
+
+## zOrder
+The connectors [zOrder](/api/js/ejdiagram#members:connectors-zorder "zOrder") property is used to set z-index for the connector.

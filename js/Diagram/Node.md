@@ -318,9 +318,10 @@ Diagram provides support to describe the state of the node. i.e., node is expand
 
 N> Icon can be created only when the node has outedges.
 
-To explore the properties of expandIcon and collapseIcon, refer to [Icon Properties](/api/js/ejdiagram#members:nodes-expandicon "Icon Properties").
+* To explore the properties of expandIcon and [collapseIcon](/api/js/ejdiagram#members:nodes-collapseicon "collapseIcon"), refer to [Icon Properties](/api/js/ejdiagram#members:nodes-expandicon "Icon Properties").
 
-The [shape](/api/js/ejdiagram#members:nodes-expandicon-shape "shape") property of icon allows to define the shape of the icon. The following code example illustrates how to create icon of various shapes.
+* The [shape](/api/js/ejdiagram#members:nodes-expandicon-shape "shape") property of icon allows to define the shape of the icon. The following code example illustrates how to create icon of various shapes.
+
 
 {% highlight javascript %}
 
@@ -359,6 +360,26 @@ $("#diagram").ejDiagram({
 ![](/js/Diagram/Node_images/Node_img9.png)
 
 ![](/js/Diagram/Node_images/Node_img10.png)
+
+### Customizing Icon
+
+### Expand Icon
+
+* You can set an borderColor, borderWidth, background color for an expandIcon using [borderColor](/api/js/ejdiagram#members:nodes-expandicon-bordercolor "borderColor"),[borderWidth](/api/js/ejdiagram#members:nodes-expandicon-borderwidth "borderWidth") and [fillColor](/api/js/ejdiagram#members:nodes-expandicon-fillcolor "fillColor") properties.
+* To set an size for expandIcon, use [width](/api/js/ejdiagram#members:nodes-expandicon-width "width") and [height](/api/js/ejdiagram#members:nodes-expandicon-height "height") properties.
+* You can align the expandIcon using [horizontalAlignment](/api/js/ejdiagram#members:nodes-expandicon-horizontalalignment "horizontalAlignment") and [verticalAlignment](/api/js/ejdiagram#members:nodes-expandicon-verticalalignment "verticalAlignment") properties.
+* The expandIcon [margin](/api/js/ejdiagram#members:nodes-expandicon-margin "margin") property is used to set the margin value for an expandIcon.
+* The expandIcon [offset](/api/js/ejdiagram#members:nodes-expandicon-offset "offset") property is used to position the icon. 
+
+### Collapse Icon
+
+* You can set an borderColor, borderWidth, background color for an collapseIcon using [borderColor](/api/js/ejdiagram#members:nodes-collapseicon-bordercolor "borderColor"),[borderWidth](/api/js/ejdiagram#members:nodes-collapseicon-borderwidth "borderWidth") and [fillColor](/api/js/ejdiagram#members:nodes-collapseicon-fillcolor "fillColor") properties.
+* To set an size for collapseIcon, use [width](/api/js/ejdiagram#members:nodes-collapseicon-width "width") and [height](/api/js/ejdiagram#members:nodes-collapseicon-height "height") properties.
+* You can align the expandIcon using [horizontalAlignment](/api/js/ejdiagram#members:nodes-collapseicon-horizontalalignment "horizontalAlignment") and [verticalAlignment](/api/js/ejdiagram#members:nodes-collapseicon-verticalalignment "verticalAlignment") properties.
+* The collapseIcon [margin](/api/js/ejdiagram#members:nodes-collapseicon-margin "margin") property is used to set the margin value for an collapseIcon.
+* The collapseIcon [offset](/api/js/ejdiagram#members:nodes-collapseicon-offset "offset") property is used to position the icon. 
+* The [shape](/api/js/ejdiagram#members:nodes-collapseicon-shape "shape") property of icon allows to define the shape of the icon. The following code example illustrates how to create icon of various shapes.
+
 
 ## Interaction
 

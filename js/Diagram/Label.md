@@ -570,7 +570,7 @@ $("#diagram").ejDiagram({
 {% endhighlight %}
 
 ![](/js/Diagram/Label_images/Label_img25.png)
-
+ 
 ## Rotate
 
 You can rotate the labels to any desired angle. Labels are rotated to the angle that is defined by the [rotateAngle](/api/js/ejdiagram#members:nodes-labels-rotateangle "rotateAngle") property of label. The following code illustrates how to rotate a label.
@@ -669,6 +669,26 @@ $("#diagram").ejDiagram({
 
 {% endhighlight %}
 
+### Drag Limit
+
+* The diagram control now supports defining the [dragLimit](/api/js/ejdiagram#members:connectors-labels-dragLimit "dragLimit") to the label while dragging from the connector and also update the postion to the nearest segment offset.
+* You can set the value to dragLimit left, right, top and bottom properties which allows the dragging of connector labels to a certain limit based on user defined values.
+
+{% highlight javascript %}
+
+//Initializes Diagram
+$("#diagram").ejDiagram({
+	connectors:[
+		{
+		name:"connector1",
+		constraints: ej.datavisualization.Diagram.ConnectorConstraints.Default | ej.datavisualization.Diagram.ConnectorConstraints.DragLimit | ej.datavisualization.Diagram.ConnectorConstraints.DragLabel
+		}
+	]
+});
+
+{% endhighlight %}
+
+
 ## Multiple labels
 
 You can add any number of labels to a node or connector. The following code illustrates how to add multiple labels to a node. 
@@ -718,7 +738,7 @@ $("#diagram").ejDiagram({
 
 ## LabelRendering Mode
 
-Labels can be rendered in separate layer as svg or html. 
+Labels can be rendered in separate layer as svg or html using [labelRenderingMode](/api/js/ejdiagram#members:labelrenderingmode "labelRenderingMode") property.
 
 {% highlight javascript %}
 

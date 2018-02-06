@@ -13,7 +13,10 @@ api: /api/js/ejdiagram
 * Diagram can be populated with the nodes and connectors based on the information provided from an external data source.
 * Diagram exposes its specific data-related properties allowing you to specify the data source fields from where the node information has to be retrieved from.
 
-To explore those properties, see [DataSourceSettings](/api/js/ejdiagram#members:datasourcesettings "DataSourceSettings")
+* To explore those properties, see [DataSourceSettings](/api/js/ejdiagram#members:datasourcesettings "DataSourceSettings")
+* The dataSourceSettings [id](/api/js/ejdiagram#members:datasourcesettings-id "id") property is used to set the unique id for the data source items.
+* The dataSourceSettings [parent](/api/js/ejdiagram#members:datasourcesettings-parent "parent") property is used to define the parent id for the data source item.
+* The dataSourceSettings [root](/api/js/ejdiagram#members:datasourcesettings-root "root") property is used to render an root node which is set in this property.
 
 * Diagram supports three different kinds of Data binding.
 	* Local Data
@@ -23,7 +26,7 @@ To explore those properties, see [DataSourceSettings](/api/js/ejdiagram#members:
 ## Local Data
 
 Diagram can be populated based on the user defined JSON data (**Local Data**) by mapping the relevant data source fields.
-
+ 
 To map the user defined JSON data with Diagram, you have to configure the fields of [dataSourceSettings](/api/js/ejdiagram#members:datasourcesettings "dataSourceSettings"). The following code example illustrates how to bind local data with the Diagram.
 
 {% highlight javascript %}
@@ -111,6 +114,8 @@ You can bind the Diagram with Remote Data by using dataManager.
 
 * DataManager supports the following types of data-binding: JSON, Web Services, oData.
 * It uses two different classes: ej.DataManager for processing and ej.Query for serving data. ej.DataManager communicates with data source and ej.Query generates data queries that are read by the dataManager.
+* The dataSourceSettings [query](/api/js/ejdiagram#members:datasourcesettings-query "query") property is used to retrieve a set of data from the specified datasource.
+* The dataSourceSettings [tableName](/api/js/ejdiagram#members:datasourcesettings-tablename "tableName") is used to describe the name of the table on which the specified query has to be executed.
 * To learn more, refer to [Data Manager](/js/DataManager/Getting-Started "Data Manager").
 
 To bind remote data to the Diagram, you have to configure the fields of [dataSourceSettings](/api/js/ejdiagram#members:datasourcesettings "dataSourceSettings"). The following code illustrates how to bind remote data to the Diagram.
@@ -304,7 +309,180 @@ $(function() {
 
 ![](/js/Diagram/Data-Binding_images/Data-Binding_img4.png)
 
+## CRUD
 
+* This feature allows the user to read the DataSource and perform add/edit/delete the data in datasource at runtime.
+
+## Read DataSource
+
+* This feature allows you to define nodes and connectors collection in the dataSource and connectionDataSource respectively.
+* We can set the data collection in the model’s dataSourceSettings [dataSource](/api/js/ejdiagram#members:datasourcesettings-datasource "dataSource") property. The nodes will be generated based on the data specified in the dataSource. 
+* We can set the connector collection in the model’s dataSourceSettings [connectionDataSource](/api/js/ejdiagram#members:datasourcesettings-connectiondatasource "connectionDataSource") property.
+* The dataSourceSettings connectionDataSource [dataSource](/api/js/ejdiagram#members:datasourcesettings-connectiondatasource-datasource "dataSource") property is used to set an datasource for the connection datasource items.
+* The dataSourceSettings connectionDataSource [id](/api/js/ejdiagram#members:datasourcesettings-connectiondatasource-id "id") property is used to set an unique id for the connection data source item.
+* The dataSourceSettings connectionDataSource [sourceNode](/api/js/ejdiagram#members:datasourcesettings-connectiondatasource-sourcenode "sourceNode") and [targetNode](/api/js/ejdiagram#members:datasourcesettings-connectiondatasource-targetnode "targetNode") properties is used to set an sourceNode and targetNode for connection data source item.
+* The dataSourceSettings connectionDataSource [sourcePointX](/api/js/ejdiagram#members:datasourcesettings-connectiondatasource-sourcepointx "sourcePointX") and [sourcePointY](/api/js/ejdiagram#members:datasourcesettings-connectiondatasource-sourcepointy "sourcePointY") properties is used to set an sourcePointX and sourcePointY values for connection data source item.
+* The dataSourceSettings connectionDataSource [targetPointX](/api/js/ejdiagram#members:datasourcesettings-connectiondatasource-targetpointx "targetPointX") and [targetPointY](/api/js/ejdiagram#members:datasourcesettings-connectiondatasource-targetpointy "targetPointY") properties is used to set an targetPointX and targetPointY values for connection data source item.
+* If we have a data (data will be set in the dataSource property) with parent relationship in the database and also defined the connector in the connectionDataSource simultaneously, then the connectors set in the connectionDataSource will be considered as a priority to render the connector.
+
+{% highlight javascript %}
+ 
+          dataSourceSettings:
+           {
+               //set the data collection
+               dataSource: Data,
+               //bind the column name to the Id property which generates the unique name for the object
+               id: "Name",
+               //Specify the custom property/columns which is available in the DataSource.
+               customFields:
+               [
+                   "Description",
+                   "Color"
+               ],
+               connectionDataSource:
+               {
+                   //set the connector collection
+                   dataSource: Data,
+                   //bind the column name to the Id property which generates the unique name for the object 
+                   id: "Name",
+                   sourceNode: "SourceNode",
+                   targetNode: "TargetNode",
+
+                   //Specify the custom property/columns which is available in the ConnectionDataSource.
+                   customFields:
+                   [
+                     "Description",
+                     "Color"
+                   ],
+               }
+           },
+            
+{% endhighlight %}
+
+## Custom Property in CRUD
+
+You can use [customFields](/api/js/ejdiagram#members:datasourcesettings-customfields "customFields") property specify the custom property/columns which is available in the dataSource.Similarly, you can define crudAction [customFields](/api/js/ejdiagram#members:datasourcesettings-connectiondatasource-customfields "customFields") property in the connectionDataSource. The below code example illustrates how to define custom fields in dataSource and connectionDataSource.
+
+{% highlight javascript %}
+ 
+          dataSourceSettings:
+           {
+			    //Specify the custom property/columns which is available in the dataSource.
+               customFields:
+               [
+                   "Description",
+                   "Color"
+               ],
+               connectionDataSource:
+               {                   
+                   //Specify the custom property/columns which is available in the ConnectionDataSource.
+                   customFields:
+                   [
+                     "Description",
+                     "Color"
+                   ],
+               }
+           },
+            
+{% endhighlight %}
+
+## How to perform Editing at runtime
+
+We need to specify the URL for create/update/destroy of nodes and connectors.
+
+## InsertData
+
+* You can Specify the method name in [crudAction](/api/js/ejdiagram#members:datasourcesettings-crudaction "crudAction") property which is used to get the updated data from client side to the server side.Similarly, you can define [crudAction](/api/js/ejdiagram#members:datasourcesettings-connectiondatasource-crudaction "crudAction") property in the connectionDataSource.
+
+* The crudAction [read](/api/js/ejdiagram#members:datasourcesettings-crudaction-read "read") property specifies the read method to get the created nodes from client side to the server side.Similarly, you can define crudAction [read](/api/js/ejdiagram#members:datasourcesettings-connectiondatasource-crudaction-read "read") property in the connectionDataSource.
+
+* The crudAction [create](/api/js/ejdiagram#members:datasourcesettings-crudaction-create "create") property specifies the create method is used to get the nodes to be added from client side to the server side. Similarly, you can define crudAction [create](/api/js/ejdiagram#members:datasourcesettings-connectiondatasource-crudaction-create "create") property in the connectionDataSource.
+
+* The following code example illustrates how to send the newly added/inserted data from client to server side.
+
+{% highlight javascript %}
+
+  dataSourceSettings:
+           {
+                crudAction:
+                {
+                    read: "http://js.syncfusion.com/demos/ejServices/api/Diagram/GetShapeData",
+                    create: "http://js.syncfusion.com/demos/ejServices/api/Diagram/InsertShape",                    
+                },
+               connectionDataSource:
+               {
+                  crudAction: {
+                        read: "http://js.syncfusion.com/demos/ejServices/api/Diagram/GetConnectorData",
+                        create: "http://js.syncfusion.com/demos/ejServices/api/Diagram/InsertConnector",
+                    }
+               }
+           },       
+
+var diagram = $("#diagram").ejDiagram("instance");
+//Sends the newly added nodes/connectors from client side to the server side through the URL which is specified in server side.
+diagram.insertData();
+
+{% endhighlight %}
+
+## UpdateData
+
+* The crudAction [update](/api/js/ejdiagram#members:datasourcesettings-crudaction-update "update") property specifies the update method which is used to get the updated data from client side to the server side. Similarly, you can define crudAction [update](/api/js/ejdiagram#members:datasourcesettings-crudaction-connectiondatasource-update "update") property in the connectionDataSource.
+
+* The following code example illustrates how to send the updated data from client to the server side.
+
+{% highlight javascript %}
+
+  dataSourceSettings:
+           {
+                crudAction:
+                {
+                    read: "http://js.syncfusion.com/demos/ejServices/api/Diagram/GetShapeData",                    
+                    update: "http://js.syncfusion.com/demos/ejServices/api/Diagram/UpdateShape",
+                },
+               connectionDataSource:
+               {
+                  crudAction: {
+                        read: "http://js.syncfusion.com/demos/ejServices/api/Diagram/GetConnectorData",
+                        update: "http://js.syncfusion.com/demos/ejServices/api/Diagram/UpdateConnector",                        
+                    }
+               }
+           },       
+
+var diagram = $("#diagram").ejDiagram("instance");
+//Sends the updated nodes/connectors from client side to the server side through the URL which is specified in server side.
+diagram.updateData();
+
+{% endhighlight %}
+
+## DeleteData
+
+* The crudAction [destroy](/api/js/ejdiagram#members:datasourcesettings-crudaction-destroy "destroy") property specifies the destroy method which is used to get the deleted items data from client side to the server side.Similarly, you can define crudAction [destroy](/api/js/ejdiagram#members:datasourcesettings-connectiondatasource-crudaction-destroy "destroy") property in the connectionDataSource.
+
+The following code example illustrates how to send the deleted data from client to the server side.
+
+{% highlight javascript %}
+
+  dataSourceSettings:
+           {
+                crudAction:
+                {
+                    read: "http://js.syncfusion.com/demos/ejServices/api/Diagram/GetShapeData",                   
+                    destroy: "http://js.syncfusion.com/demos/ejServices/api/Diagram/DeleteShape"
+                },
+               connectionDataSource:
+               {
+                  crudAction: {
+                        read: "http://js.syncfusion.com/demos/ejServices/api/Diagram/GetConnectorData",
+                        destroy: "http://js.syncfusion.com/demos/ejServices/api/Diagram/DeleteConnector"
+                    }
+               }
+           },       
+
+var diagram = $("#diagram").ejDiagram("instance");
+//Sends the deleted nodes/connectors from client side to the server side through the URL which is specified in server side.
+diagram.removeData();
+
+{% endhighlight %}
 
 
 
