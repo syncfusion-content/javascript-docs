@@ -57,11 +57,13 @@ $("#DiagramContent").ejDiagram({
 
 ### Add connector at run time
 
-* Connectors can be added at runtime with the client side method, [add](/api/js/ejdiagram#methods:add "add"). The following code example illustrates how to add connector at runtime.
+* Connectors can be added at runtime with the client side method, [add](/api/js/ejdiagram#methods:add "add") and can be removed at runtime by using public method, [remove](/api/js/ejdiagram#methods:remove "remove"). 
 
 * To add a connector in group at runtime, define group name in connectors [parent](/api/js/ejdiagram#members:connectors-parent "parent") property.
 
 * The connector's [name](/api/js/ejdiagram#members:connectors-name "name") property is used to define the name of the connector and its further used to find the connector at runtime and do any customization.
+
+The following code example illustrates how to add connector at runtime.
 
 {% highlight javascript %}
 

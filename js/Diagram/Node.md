@@ -56,9 +56,9 @@ $("#diagram").ejDiagram({
 ![](/js/Diagram/Node_images/Node_img2.png)
 
 
-### Add node at runtime
+### Add/Remove node at runtime
 
-* Nodes can be added at runtime by using public method, [add](/api/js/ejdiagram#methods:add "add").
+* Nodes can be added at runtime by using public method, [add](/api/js/ejdiagram#methods:add "add") and can be removed at runtime by using public method, [remove](/api/js/ejdiagram#methods:remove "remove").
 
 * To add a node to group at runtime, define group name in node's [parent](/api/js/ejdiagram#members:nodes-parent "parent") property.
 
@@ -206,6 +206,8 @@ There are two types of gradients.
 * [Radial gradient](/api/js/ejdiagram#members:nodes-gradient-radialgradient "Radial gradient") - Defines a smooth transition between [stops](/api/js/ejdiagram#members:nodes-gradient-radialgradient-stops "stops") on a circle.
 
 * A Radial gradient's [cx](/api/js/ejdiagram#members:nodes-gradient-radialgradient-cx "cx"), [cy](/api/js/ejdiagram#members:nodes-gradient-radialgradient-cy "cy"), [fx](/api/js/ejdiagram#members:nodes-gradient-radialgradient-fx "fx") , [fy](/api/js/ejdiagram#members:nodes-gradient-radialgradient-fy "fy") properties are used to define the position(relative to node) of the outer most or inner most circle of the radial gradient.
+
+* A Linear gradient's [type](/api/js/ejdiagram#members:nodes-gradient-lineargradient-type "type") and radial gradient's [type](/api/js/ejdiagram#members:nodes-gradient-radialgradient-type "type") property is used to define the type of the gradient.
 
 The [gradient](/api/js/ejdiagram#members:nodes-gradient "gradient") property of node allows you to define and applies the gradient effect to that node.
 
