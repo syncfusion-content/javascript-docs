@@ -471,7 +471,7 @@ connectors.push(connector);
 
 * The [shape](/api/js/ejdiagram#members:connectors-sourcedecorator-shape "shape") property of `sourceDecorator` allows to define the shape of the decorators. Similarly, the [shape](/api/js/ejdiagram#members:connectors-targetdecorator-shape "shape") property of `targetDecorator` allows to define the shape of the decorators.
 
-* To create custom shape for sourceDecorator, use [pathData](/api/js/ejdiagram#members:connectors-sourcedecorator-pathdata "pathData") property. similarly, to create custom shape for targetDecorator, use [pathData](/api/js/ejdiagram#members:connectors-targetdecorator-pathData "pathData") property.
+* To create custom shape for sourceDecorator, use [pathData](/api/js/ejdiagram#members:connectors-sourcedecorator-pathdata "pathData") property. similarly, to create custom shape for targetDecorator, use [pathData](/api/js/ejdiagram#members:connectors-targetdecorator-pathdata "pathData") property.
 
 * The following code example illustrates how to create decorators of various shapes.
 
