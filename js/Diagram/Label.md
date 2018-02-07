@@ -435,10 +435,8 @@ $("#diagram").ejDiagram({
 
 ## TextOverflow
 
-* The nodes.labels [textOverflow](/api/js/ejdiagram#members:nodes-labels-textoverflow "textOverflow") property is used whether to display the overflowed content in node.
-* You can set [overflowType](/api/js/ejdiagram#members:nodes-labels-overflowtype "overflowType") as ellipsis or clip only when textOverflow is true.
-* When the text exceeds the node size, the text gets clipped while setting overflowType as clip.
-* When the text exceeds the node size, the dotted line appears at the end of node while setting overflowType as ellipsis.
+* The label's [textOverflow](/api/js/ejdiagram#members:nodes-labels-textoverflow "textOverflow") property is used control whether to display the overflowed content in node or not. 
+* Also you can use label's [overflowType](/api/js/ejdiagram#members:nodes-labels-overflowtype "overflowType") property to define whether the overflowed content can be clipped (i.e. cut off, hidden) or display an ellipsis ('…').
 
 ## Appearance
 

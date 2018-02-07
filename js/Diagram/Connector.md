@@ -20,9 +20,7 @@ Connectors are objects used to create link between two points, nodes or ports to
 
 ### Add connectors through connectors collection
 
-* The [sourcePoint](/api/js/ejdiagram#members:connectors-sourcepoint "sourcePoint") and [targetPoint](/api/js/ejdiagram#members:connectors-targetpoint "targetPoint") properties of connector allow you to define the end points of a [connector](/api/js/ejdiagram#members:connectors "connector").
-
-* The connectors sourcePoint [x](/api/js/ejdiagram#members:connectors-sourcepoint-x "x") and [y](/api/js/ejdiagram#members:connectors-sourcepoint-y "y") properties is used to position x and y coordinate of connector start point. 
+* The [sourcePoint](/api/js/ejdiagram#members:connectors-sourcepoint "sourcePoint") and [targetPoint](/api/js/ejdiagram#members:connectors-targetpoint "targetPoint") properties of connector allow you to define the end points of a [connector](/api/js/ejdiagram#members:connectors "connector"). The [x](/api/js/ejdiagram#members:connectors-sourcepoint-x "x") and [y](/api/js/ejdiagram#members:connectors-sourcepoint-y "y") properties of `sourcePoint` and `targetPoint` allows you to define position x and y coordinate of end points. 
 
 The following code example illustrates how to add a connector through connector collection.
 
@@ -129,7 +127,9 @@ diagram.updateConnector("connectorName", {
 ## Connect nodes
 
 * The [SourceNode](/api/js/ejdiagram#members:connectors-sourcenode "SourceNode") and [targetNode](/api/js/ejdiagram#members:connectors-targetnode "targetNode") properties allow to define the nodes to be connected. 
-* When you establish the connection between sourceNode and targetNode, you can see that connector in sourceNode [inEdges](/api/js/ejdiagram#members:nodes-inedges "inEdges") property and targetNode [outEdges](/api/js/ejdiagram#members:nodes-outedges "outEdges") property. it is a read-only properties.
+
+* When you establish the connection between sourceNode and targetNode, the [inEdges](/api/js/ejdiagram#members:nodes-inedges "inEdges") property of sourceNode and [outEdges](/api/js/ejdiagram#members:nodes-outedges "outEdges") property of targetNode will be updated automatically. it is a read-only properties. You can use these properties to get the incoming and outgoing connection of the node at runtime.
+
 * The following code example illustrates how to connect two nodes.
 
 {% highlight javascript %}

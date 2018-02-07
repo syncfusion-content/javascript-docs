@@ -189,9 +189,9 @@ var swimlane = {
 
 ### Create a lane with header
 
-The [header](/api/js/ejdiagram#members:nodes-lanes-header "header") property of the lane allows you to textually describe the lane(`text`) and to customize the appearance of the description. The following code example illustrates how to define a lane header.
+* The [header](/api/js/ejdiagram#members:nodes-lanes-header "header") property of the lane allows you to textually describe the lane(`text`) and to customize the appearance of the description. The following code example illustrates how to define a lane header.
 
-You can limit the size of a lane with its [minWidth](/api/js/ejdiagram#members:nodes-minwidth "minWidth"), [minHeight](/api/js/ejdiagram#members:nodes-minheight "minHeight"), [maxWidth](/api/js/ejdiagram#members:nodes-maxwidth "maxWidth"), and [maxHeight](/api/js/ejdiagram#members:nodes-maxheight "maxHeight") properties.
+* The size of the lane can be controlled by using its [width](/api/js/ejdiagram#members:nodes-lanes-width "width") and [height](/api/js/ejdiagram#members:nodes-lanes-height "height") properties. Also you can limit the size of a lane with its [minWidth](/api/js/ejdiagram#members:nodes-minwidth "minWidth"), [minHeight](/api/js/ejdiagram#members:nodes-minheight "minHeight"), [maxWidth](/api/js/ejdiagram#members:nodes-maxwidth "maxWidth"), and [maxHeight](/api/js/ejdiagram#members:nodes-maxheight "maxHeight") properties.
 
 {% highlight javascript %}
 
@@ -314,11 +314,7 @@ We can add a lane at runtime width client side API method addLane. please refer 
 
 ## Customizing Lanes appearance
 
-* To Set the size for a lane, use [width](/api/js/ejdiagram#members:nodes-lanes-width "width") and [height](/api/js/ejdiagram#members:nodes-lanes-height "height") properties.
-
 * To set a background color for an lane, use [fillColor](/api/js/ejdiagram#members:nodes-lanes-fillcolor "fillColor") property.
-
-* To set an orientation as vertical/horizontal of lane, use [orientation](/api/js/ejdiagram#members:nodes-lanes-orientation "orientation") property.
 
 * The lanes [cssClass](/api/js/ejdiagram#members:nodes-lanes-cssclass "cssClass") property is used to customize the style of lanes using user defined CSS class.
 
@@ -340,7 +336,7 @@ The lanes [zOrder](/api/js/ejdiagram#members:nodes-lanes-zorder "zOrder") proper
 
 * The phase's [name](/api/js/ejdiagram#members:nodes-phases-name "name") property is used to define the name of the phase and its further used to find the phase from swimlane at runtime and do any customization.
 
-* The swimlane [phaseSize](/api/js/ejdiagram#members:nodes-phasesize "phaseSize") property is used to set the height of the phase header.
+* The swimlane [phaseSize](/api/js/ejdiagram#members:nodes-phasesize "phaseSize") property is used to set the height/width of the phase header based on [orientation](/api/js/ejdiagram#members:nodes-orientation "orientation") property of swimlane.
 
 The following code example illustrates how to add a phase on initializing swimlane.
 
@@ -415,13 +411,9 @@ diagram.updateNode("phaseName", options);
 
 N> A default phase is added, when the phase collection of the swimlane is empty. When the phase collection is initialized, a default phase is appended at the end of swimlane.
 
-## Customizing phases appearance
+## Customizing phase appearance
 
-* The phases [lineColor](/api/js/ejdiagram#members:nodes-phases-linecolor "lineColor") property defines the line color of the splitter that splits adjacent phases.
-* The phases [lineDashArray](/api/js/ejdiagram#members:nodes-phases-linedasharray "lineDashArray") property Sets the dash array that used to stroke the phase splitter.
-* The phases [lineWidth](/api/js/ejdiagram#members:nodes-phases-linewidth "lineWidth") property is used to set the linewidth of the phase.
-* The phases [orientation](/api/js/ejdiagram#members:nodes-phases-orientation "orientation") property is used to set the orientation of the phase.
-* You can set the object type as `phase` using [type](/api/js/ejdiagram#members:nodes-phases-type "type") property.
+* The phase [lineColor](/api/js/ejdiagram#members:nodes-phases-linecolor "lineColor"), [lineDashArray](/api/js/ejdiagram#members:nodes-phases-linedasharray "lineDashArray"), [lineWidth](/api/js/ejdiagram#members:nodes-phases-linewidth "lineWidth") properties are used to customize the line style of the phase.
 
 ## Limitations
 
