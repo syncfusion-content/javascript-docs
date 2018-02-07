@@ -20,7 +20,7 @@ api: /api/js/ejdiagram
 
 * The dataSourceSettings [parent](/api/js/ejdiagram#members:datasourcesettings-parent "parent") property is used to defines the parent field which builds the relationship between id and parent field.
 
-* The dataSourceSettings [root](/api/js/ejdiagram#members:datasourcesettings-root "root") property is used to define root node for the diagram popualted from the datasource.
+* The dataSourceSettings [root](/api/js/ejdiagram#members:datasourcesettings-root "root") property is used to define root node for the diagram populated from the datasource.
 
 * To explore those properties, see [DataSourceSettings](/api/js/ejdiagram#members:datasourcesettings "DataSourceSettings")
 
@@ -417,9 +417,9 @@ diagram.insertData();
 
 ## UpdateData
 
-* The dataSourceSettings.crudAction's [update](/api/js/ejdiagram#members:datasourcesettings-crudaction-update "update") property specifies the method which is used to get the modfied nodes from client side to the server side. 
+* The dataSourceSettings.crudAction's [update](/api/js/ejdiagram#members:datasourcesettings-crudaction-update "update") property specifies the method which is used to get the modified nodes from client side to the server side. 
 
-* The connectionDataSource.crudAction's [update](/api/js/ejdiagram#members:datasourcesettings-connectiondatasource-crudaction-update "update") specifies the method which is used to get the modfied connectors from client side to the server side.
+* The connectionDataSource.crudAction's [update](/api/js/ejdiagram#members:datasourcesettings-connectiondatasource-crudaction-update "update") specifies the method which is used to get the modified connectors from client side to the server side.
 
 * The following code example illustrates how to send the updated data from client to the server side.
 

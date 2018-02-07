@@ -19,7 +19,7 @@ The UML class diagram shapes are explained as follows.
 
 * A Class describes a set of objects that shares the same specifications of features,constraints and semantics.To define a class object, you need to define the [classifier](/api/js/ejdiagram#members:nodes-classifier "classifier") as "class".
 
-* Also, you need to define the [name](/api/js/ejdiagram#members:nodes-class-name "name"), [attributes](/api/js/ejdiagram#members:nodes-class-attributes "attributes") and [methods](/api/js/ejdiagram#members:nodes-class-methods "methods") of the class using the [class](/api/js/ejdiagram#members:nodes-class "class")property of node.
+* Also, you need to define the [name](/api/js/ejdiagram#members:nodes-class-name "name"), [attributes](/api/js/ejdiagram#members:nodes-class-attributes "attributes") and [methods](/api/js/ejdiagram#members:nodes-class-methods "methods") of the class using the [class](/api/js/ejdiagram#members:nodes-class "class") property of node.
 
 * The attribute's [name](/api/js/ejdiagram#members:nodes-class-attributes-name "name"), [type](/api/js/ejdiagram#members:nodes-class-attributes-type "type") and [scope](/api/js/ejdiagram#members:nodes-class-attributes-scope "scope") properties are allows you to define the name, data type and visibility of the attribute.
 
