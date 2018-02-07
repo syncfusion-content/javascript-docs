@@ -153,7 +153,7 @@ You can add any number of [lanes](/api/js/ejdiagram#members:nodes-lanes "lanes")
 
 * To create an empty lane, you need to define an object with [isLane](/api/js/ejdiagram#members:nodes-lanes-islane "isLane") property that helps identify the object as a lane. 
 
-* The lane's [name](/api/js/ejdiagram#members:nodes-name "name") property is used to define the name of the lane and its further used to find the lane at runtime and do any customization.
+* The lane's [name](/api/js/ejdiagram#members:nodes-lanes-name "name") property is used to define the name of the lane and its further used to find the lane at runtime and do any customization.
 
 The following example illustrates how to define a swimlane with a lane.
 

@@ -12,17 +12,17 @@ api: /api/js/ejdiagram
 
 **Layer** is used to organize related shapes on a diagram control. A layer is a named category of shapes. By assigning shapes to different layers, we can selectively view, print, remove and lock different categories of shapes
 
-Layers in diagram provide a way to change properties of all shapes that have been assigned to that layer. The following properties can be set.
+[Layers](/api/js/ejdiagram#members:layers "layers") in diagram provide a way to change properties of all shapes that have been assigned to that layer. The following properties can be set.
 
 * Visible
 * Print 
-* Active 
+* Active
 * Lock  
 * Objects 
 
 ## Visible 
 
-Diagram layer provides the support to control the visibility of the set of diagram elements.
+The layer's [visible](/api/js/ejdiagram#members:layers-visible "visible") property is used to control the visibility of the elements assigned to the layer.
 
 {% highlight javascript %}
 
@@ -45,6 +45,8 @@ Diagram layer provides the support to control the visibility of the set of diagr
 {% endhighlight %}
 
 ## Print  
+
+The layer's [print](/api/js/ejdiagram#members:layers-print "print") property is used to include or exclude the elements assigned to the layer when the diagram is printed.
 
 Diagram layer provides the support to Include or exclude the shapes when the diagram is printed.
 
@@ -70,7 +72,7 @@ Diagram layer provides the support to Include or exclude the shapes when the dia
 
 ## Active  
 
-Diagram layer provides the support to automatically assign shapes to active layers when the shapes are added to the diagram.
+The layer's [active](/api/js/ejdiagram#members:layers-active "active") property is used to automatically assign shapes to active layers when the shapes are added to the diagram.
 
 {% highlight javascript %}
 
@@ -94,7 +96,7 @@ Diagram layer provides the support to automatically assign shapes to active laye
 
 ## Lock  
 
-Diagram layer provides the support to prevent or allow changes to the shapes dimension and position.
+The layer's [lock](/api/js/ejdiagram#members:layers-lock "lock") property is used to prevent or allow changes to the elements dimension and position.
 
 {% highlight javascript %}
 
@@ -119,7 +121,7 @@ Diagram layer provides the support to prevent or allow changes to the shapes dim
  
 ## Objects  
 
-Diagram layer provides the support to add the diagram elements to the specific layer.
+The layer's [objects](/api/js/ejdiagram#members:layers-objects "objects") property is used to define the diagram elements to the layer.
 
 {% highlight javascript %}
 
@@ -232,7 +234,7 @@ The following code illustrates how to remove a node from layer.
 
 ### Update layer at runtime
 
-Layers can be updated at runtime by using public updateLayer, [updateLayer](/api/js/ejdiagram#methods:removeNodeToLayer "updateLayer").  
+Layers can be updated at runtime by using public updateLayer, [updateLayer](/api/js/ejdiagram#methods:updatelayer "updateLayer").  
  
 The following code illustrates how to add a node to layer.  
 

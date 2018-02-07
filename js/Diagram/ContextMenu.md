@@ -11,7 +11,7 @@ api: /api/js/ejdiagram
 # Context Menu
 
 In graphical user interface (GUI), a context menu is a type of menu that appears when you perform right-click operation. Nested level of context menu items can be created.
-Diagram provides some in-built context menu items and allows to define custom menu items through [contextMenu](api/js/ejdiagram#members:contextmenu "contextMenu") property.
+Diagram provides some in-built context menu items and allows to define custom menu items through [contextMenu](/api/js/ejdiagram#members:contextmenu "contextMenu") property.
 
 ## Default Context Menu
 
