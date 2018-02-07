@@ -129,7 +129,12 @@ When the node/connector properties are changed at runtime, the [propertyChange](
 
 ## Position
 
-Position of a node is controlled by using its [offsetX](/api/js/ejdiagram#members:nodes-offsetx "offsetX") and [offsetY](/api/js/ejdiagram#members:nodes-offsety "offsetY") properties. By default, these offset properties represent the distance between origin of the Diagram's page and node's center point. You may expect this offset values to represent the distance between page origin and node's top left corner instead of center. [pivot](/api/js/ejdiagram#members:nodes-pivot "pivot") property helps solve this problem. Default value of node's pivot point is (0.5, 0.5), that means center of Node.
+* Position of a node is controlled by using its [offsetX](/api/js/ejdiagram#members:nodes-offsetx "offsetX") and [offsetY](/api/js/ejdiagram#members:nodes-offsety "offsetY") properties. By default, these offset properties represent the distance between origin of the Diagram's page and node's center point. 
+
+* You may expect this offset values to represent the distance between page origin and node's top left corner instead of center. [pivot](/api/js/ejdiagram#members:nodes-pivot "pivot") property helps solve this problem. Default value of node's pivot point is (0.5, 0.5), that means center of Node. 
+
+* The size of the node can be controlled by using its [width](/api/js/ejdiagram#members:nodes-width "width") and [height](/api/js/ejdiagram#members:nodes-height "height") properties.
+
 
 The following table illustrates how pivot relates offset values with node boundaries.
 
@@ -195,7 +200,14 @@ $("#diagram").ejDiagram({
 
 ![](/js/Diagram/Node_images/Node_img5.png)
 
+ 
 ### Gradient
+
+* The [gradient](/api/js/ejdiagram#members:nodes-gradient "gradient") property of node allows you to define and applies the gradient effect to that node.
+
+* The gradient [stop](/api/js/ejdiagram#members:nodes-gradient-stop "stop") property defines the [color](/api/js/ejdiagram#members:nodes-gradient-stop-color "color") and a [position](/api/js/ejdiagram#members:nodes-gradient-stop-offset "position") where the previous color transition ends and a new color transition starts.
+
+* The gradient.stop's [opacity](/api/js/ejdiagram#members:nodes-gradient-stop-opacity "opacity") property defines the transparency level of the region.
 
 There are two types of gradients.
 
@@ -208,8 +220,6 @@ There are two types of gradients.
 * A Radial gradient's [cx](/api/js/ejdiagram#members:nodes-gradient-radialgradient-cx "cx"), [cy](/api/js/ejdiagram#members:nodes-gradient-radialgradient-cy "cy"), [fx](/api/js/ejdiagram#members:nodes-gradient-radialgradient-fx "fx") , [fy](/api/js/ejdiagram#members:nodes-gradient-radialgradient-fy "fy") properties are used to define the position(relative to node) of the outer most or inner most circle of the radial gradient.
 
 * A Linear gradient's [type](/api/js/ejdiagram#members:nodes-gradient-lineargradient-type "type") and radial gradient's [type](/api/js/ejdiagram#members:nodes-gradient-radialgradient-type "type") property is used to define the type of the gradient.
-
-The [gradient](/api/js/ejdiagram#members:nodes-gradient "gradient") property of node allows you to define and applies the gradient effect to that node.
 
 {% highlight javascript %}
 

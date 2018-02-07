@@ -717,9 +717,19 @@ Artifact is used to show additional information about a Process in order to make
 * Text Annotation
 * Group
 
-#### Text Annoatation
+#### Text Annotation
 
-A BPMN object can be associated with a text annotation which does not affect the flow but gives details about objects within a flow. The [annotation](/api/js/ejdiagram#members:nodes-annotation "annotation") property of the node is used to connect an annotation element to the BPNN node.
+* A BPMN object can be associated with a text annotation which does not affect the flow but gives details about objects within a flow. The [annotation](/api/js/ejdiagram#members:nodes-annotation "annotation") property of the node is used to connect an annotation element to the BPNN node.
+
+* The annotation [angle](/api/js/ejdiagram#members:nodes-annotation-angle "angle") property is used to set the angle between the BPMN shape and the annotation.
+
+* The annotation [direction](/api/js/ejdiagram#members:nodes-annotation-direction "direction") property is used to set direction of the text annotation.
+
+* To set the size for text annotation, use [width](/api/js/ejdiagram#members:nodes-annotation-width "width") and [height](/api/js/ejdiagram#members:nodes-annotation-height "height") properties.
+
+* The annotation [length](/api/js/ejdiagram#members:nodes-annotation-length "length") property is used to set the distance between the BPMN shape and the annotation.
+
+* The annotation [text](/api/js/ejdiagram#members:nodes-annotation-text "text") property defines the additional information about the flow object in a BPMN Process.
 
  {% highlight javascript %}
 

@@ -382,8 +382,7 @@ The below code example illustrates how to define custom fields in dataSource and
 
 ## How to perform Editing at runtime
 
-We need to specify the URL for create/update/destroy of nodes and connectors.
-
+The dataSourceSettings [crudAction](/api/js/ejdiagram#members:datasourcesettings-crudaction "crudAction") property specifies the method name which is used to get the updated data from client side to the server side. similarly, the connectionDataSource [crudAction](/api/js/ejdiagram#members:datasourcesettings-connectiondatasource-crudaction "crudAction")  property specifies the method name which is used to get updated connectors from client side to the server side.
 
 ## InsertData
 
