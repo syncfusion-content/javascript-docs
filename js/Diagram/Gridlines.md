@@ -173,7 +173,7 @@ The snap-to-object provides visual cues to assist with aligning and spacing Diag
 
 The [enableSnapToObject](/api/js/ejdiagram#members:snapsettings-enablesnaptoobject "enableSnapToObject") property allows you to enable/disable smart guides. The following code example illustrates how to enable/disable the smart guides.
 
-The [snapAngle](api/js/ejdiagram#members:snapsettings-snapangle "snapAngle") property allows you to define the snap angle by which the object needs to be rotated.
+The [snapAngle](/api/js/ejdiagram#members:snapsettings-snapangle "snapAngle") property allows you to define the snap angle by which the object needs to be rotated.
 
 The [snapObjectDistance](/api/js/ejdiagram#members:snapsettings-snapobjectdistance "snapObjectDistance") property allows you to define minimum distance between the selected object and the nearest object.
 
