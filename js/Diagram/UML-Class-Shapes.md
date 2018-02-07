@@ -84,7 +84,7 @@ N> The default value for the property `classifier` is "class".
 
 * An Interface is a kind of classifier that represents a declaration of a set of coherent public features and obligations. To create an interface, you need to define the [classifier](/api/js/ejdiagram#members:nodes-classifier "classifier") property as "interface". 
 
-* Also, you need to define the [name](/api/js/ejdiagram#members:nodes-interface-name "name"),[attributes](/api/js/ejdiagram#members:nodes-interface-attributes "attributes") and [methods](/api/js/ejdiagram#members:nodes-interface-methods "methods") of the interface using the [interface](/api/js/ejdiagram#members:nodes-interface "interface") property of the node.
+* Also, you need to define the [name](/api/js/ejdiagram#members:nodes-interface-name "name"), [attributes](/api/js/ejdiagram#members:nodes-interface-attributes "attributes") and [methods](/api/js/ejdiagram#members:nodes-interface-methods "methods") of the interface using the [interface](/api/js/ejdiagram#members:nodes-interface "interface") property of the node.
 
 * The attribute's [name](/api/js/ejdiagram#members:nodes-interface-attributes-name "name"), [type](/api/js/ejdiagram#members:nodes-interface-attributes-type "type") and [scope](/api/js/ejdiagram#members:nodes-interface-attributes-scope "scope") properties are allows you to define the name, data type and visibility of the attribute.
 

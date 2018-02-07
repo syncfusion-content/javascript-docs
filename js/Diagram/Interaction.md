@@ -375,7 +375,7 @@ The [horizontalAlignment](/api/js/ejdiagram#members:selecteditems-userhandles-ho
 
 ### Appearance
 
-* The [size](/api/js/ejdiagram#members:selecteditems-userhandles-size "size"), [borderColor](/api/js/ejdiagram#members:selecteditems-userhandles-bordercolor "borderColor"), [backgroundColor](/api/js/ejdiagram#members:selecteditems-userhandles-bordercolor "backgroundColor") properties of user handle used for its appearance customization.
+* The [size](/api/js/ejdiagram#members:selecteditems-userhandles-size "size"), [borderColor](/api/js/ejdiagram#members:selecteditems-userhandles-bordercolor "borderColor"), [backgroundColor](/api/js/ejdiagram#members:selecteditems-userhandles-backgroundcolor "backgroundColor") properties of user handle used for its appearance customization.
 
 * The [enableMultiSelection](/api/js/ejdiagram#members:selecteditems-userhandles-enablemultiselection "enableMultiSelection") property of the user handle defines whether the user handle should be added, when more than one element is selected and [visible](/api/js/ejdiagram#members:selecteditems-userhandles-visible "visible") property of the user handle defines the visibility of the user handle.
 
