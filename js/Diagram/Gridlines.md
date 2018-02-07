@@ -142,7 +142,7 @@ To enable/disable snapping to horizontal/vertical lines, refer to [Constraints] 
 
 ## Customization of Snap Intervals
 
-By default, the objects are snapped towards the nearest gridline. The gridline or position towards where the diagram object snaps can be customized with the property, horizontalGridLines's [snapinterval](/api/js/ejdiagram#members:snapsettings-horizontalgridlines-snapinterval "snapinterval") and verticalGridLines's [snapinterval](/api/js/ejdiagram#members:snapsettings-verticalgridlines-snapinterval "snapinterval") property. 
+By default, the objects are snapped towards the nearest gridline. The gridline or position towards where the diagram object snaps can be customized with the property, horizontalGridLines's [snapInterval](/api/js/ejdiagram#members:snapsettings-horizontalgridlines-snapinterval "snapInterval") and verticalGridLines's [snapInterval](/api/js/ejdiagram#members:snapsettings-verticalgridlines-snapinterval "snapInterval") property. 
 
 The following code example illustrates how to customize the snap intervals.
 
