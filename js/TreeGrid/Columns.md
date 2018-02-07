@@ -443,6 +443,8 @@ Following code example shows how to enable the column option in tree grid.
 The above screenshot shows insert column dialog in TreeGrid  
 {:.caption}
 
+The TreeGrid columns can also be renamed or deleted at run-time with custom actions using the [`renameColumn`](https://help.syncfusion.com/api/js/ejtreegrid#methods:renamecolumn "renameColumn") and [`deleteColumn`](https://help.syncfusion.com/api/js/ejtreegrid#methods:deletecolumn "deleteColumn") methods.
+
 ### Customizing the insert column dialog.
 
 It is possible to add or remove the [`columns`](/api/js/ejtreegrid#members:columns) properties in insert column dialog using [`columnDialogFields`](/api/js/ejtreegrid#members:columndialogfields) property. In insert column option [`field`](/api/js/ejtreegrid#members:columns-field "columns.field"), [`headerText`](/api/js/ejtreegrid#members:columns-headertext "columns.headerText") and [`editType`](/api/js/ejtreegrid#members:columns-edittype "columns.editType") properties are necessary to create a new column, so this fields are unable to remove from insert column option.
@@ -748,6 +750,8 @@ Following code example explains how to enable column reorder in tree grid
 
 The above screenshot shows the column reorder in tree grid.
 {:.caption}
+
+The TreeGrid columns can also be reordered using the [`reorderColumn`](https://help.syncfusion.com/api/js/ejtreegrid#methods:reordercolumn "reorderColumn") method, where the column field name and the target index should be passed as the method parameters.
 
 ## Text Alignment
 In ejTreeGrid, it is possible to align both content and header text of particular column using the [`textAlign`](/api/js/ejtreegrid#members:columns-textalign "columns.textAlign") and [`headerTextAlign`](/api/js/ejtreegrid#members:columns-headertextalign "columns.headerTextAlign") property of columns.
