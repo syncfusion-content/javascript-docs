@@ -312,6 +312,16 @@ We can add a lane at runtime width client side API method addLane. please refer 
 
 [addLane](/api/js/ejdiagram#methods:addlane "addLane"). 
 
+## Customizing Lanes appearance
+
+* To Set the size for a lane, use [width](/api/js/ejdiagram#members:nodes-lanes-width "width") and [height](/api/js/ejdiagram#members:nodes-lanes-height "height") properties.
+
+* To set a background color for an lane, use [fillColor](/api/js/ejdiagram#members:nodes-lanes-fillcolor "fillColor") property.
+
+* To set an orientation as vertical/horizontal of lane, use [orientation](/api/js/ejdiagram#members:nodes-lanes-orientation "orientation") property.
+
+* The lanes [cssClass](/api/js/ejdiagram#members:nodes-lanes-cssclass "cssClass") property is used to customize the style of lanes using user defined CSS class.
+
 ## Custom Properties
 
 The [addInfo](/api/js/ejdiagram#members:nodes-lanes-addinfo "addInfo") property of lane allows to maintain additional information to lane.
@@ -329,6 +339,8 @@ The lanes [zOrder](/api/js/ejdiagram#members:nodes-lanes-zorder "zOrder") proper
 * To define a phase, you have to set the length of the region to the [offset](/api/js/ejdiagram#members:nodes-phases-offset "offset") property of phase. Every region can be textually described with the [label](/api/js/ejdiagram#members:nodes-phases-label "label") property of phase.
 
 * The phase's [name](/api/js/ejdiagram#members:nodes-phases-name "name") property is used to define the name of the phase and its further used to find the phase from swimlane at runtime and do any customization.
+
+* The swimlane [phaseSize](/api/js/ejdiagram#members:nodes-phasesize "phaseSize") property is used to set the height of the phase header.
 
 The following code example illustrates how to add a phase on initializing swimlane.
 
@@ -402,6 +414,14 @@ diagram.updateNode("phaseName", options);
 {% endhighlight %}
 
 N> A default phase is added, when the phase collection of the swimlane is empty. When the phase collection is initialized, a default phase is appended at the end of swimlane.
+
+## Customizing phases appearance
+
+* The phases [lineColor](/api/js/ejdiagram#members:nodes-phases-linecolor "lineColor") property defines the line color of the splitter that splits adjacent phases.
+* The phases [lineDashArray](/api/js/ejdiagram#members:nodes-phases-linedasharray "lineDashArray") property Sets the dash array that used to stroke the phase splitter.
+* The phases [lineWidth](/api/js/ejdiagram#members:nodes-phases-linewidth "lineWidth") property is used to set the linewidth of the phase.
+* The phases [orientation](/api/js/ejdiagram#members:nodes-phases-orientation "orientation") property is used to set the orientation of the phase.
+* You can set the object type as `phase` using [type](/api/js/ejdiagram#members:nodes-phases-type "type") property.
 
 ## Limitations
 

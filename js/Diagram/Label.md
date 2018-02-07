@@ -129,6 +129,8 @@ Label can be aligned relative to the node boundaries. It has margin, offset, hor
 
 The [offset](/api/js/ejdiagram#members:nodes-labels-offset "offset") property of label is used to align the labels based on fractions. 0 represents top/left corner, 1 represents bottom/right corner, and 0.5 represents half of width/height.
 
+To set size for a nodes label, use [width](/api/js/ejdiagram#members:nodes-labels-width "width") and [height](/api/js/ejdiagram#members:nodes-labels-height "height") properties.
+
 The following image shows the relationship between the label position (black colored circle) and offset (fraction values).
 
 ![](/js/Diagram/Label_images/Label_img2.png)
@@ -430,6 +432,13 @@ $("#diagram").ejDiagram({
 | NoWrap | Text will not be wrapped | ![](/js/Diagram/Label_images/Label_img20.png) |
 | Wrap | Text-wrapping occurs when the text overflows beyond the available node width. | ![](/js/Diagram/Label_images/Label_img21.png) |
 | WrapWithOverflow (Default) | Text-wrapping occurs when the text overflows beyond the available node width. However, the text may overflow beyond the node width in the case of a very long word. | ![](/js/Diagram/Label_images/Label_img22.png) |
+
+## TextOverflow
+
+* The nodes.labels [textOverflow](/api/js/ejdiagram#members:nodes-labels-textoverflow "textOverflow") property is used whether to display the overflowed content in node.
+* You can set [overflowType](/api/js/ejdiagram#members:nodes-labels-overflowtype "overflowType") as ellipsis or clip only when textOverflow is true.
+* When the text exceeds the node size, the text gets clipped while setting overflowType as clip.
+* When the text exceeds the node size, the dotted line appears at the end of node while setting overflowType as ellipsis.
 
 ## Appearance
 

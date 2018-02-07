@@ -196,6 +196,12 @@ $("#DiagramContent").ejDiagram({
 
 * Stack panel is used to arrange its children in a single line or stack order, either vertically or horizontally.
 * It controls spacing by setting margin properties of child and padding properties of group. By default, a Stack Panel’s [orientation](/api/js/ejdiagram#members:nodes-container-orientation "orientation") is vertical. 
+* To align the connectors in a group, use [horizontalAlign](/api/js/ejdiagram#members:connectors-horizontalalign "horizontalAlign") and [verticalAlign](/api/js/ejdiagram#members:connectors-verticalalign "verticalAlign") properties.
+* The connector [marginTop](/api/js/ejdiagram#members:connectors-margintop "marginTop"), [marginBottom](/api/js/ejdiagram#members:connectors-marginbottom "marginBottom"),[marginLeft](/api/js/ejdiagram#members:connectors-marginleft "marginLeft") and [marginRight](/api/js/ejdiagram#members:connectors-marginright "marginRight") properties defines the minimum space to be left between the top,bottom,left and right of parent bounds and the connector. Applicable, if the parent is a container.
+* To align the nodes in a group, use [horizontalAlign](/api/js/ejdiagram#members:nodes-horizontalalign "horizontalAlign") and [verticalAlign](/api/js/ejdiagram#members:nodes-verticalalign "verticalAlign") properties.
+* The nodes [marginTop](/api/js/ejdiagram#members:nodes-margintop "marginTop"), [marginBottom](/api/js/ejdiagram#members:nodes-marginbottom "marginBottom"),[marginLeft](/api/js/ejdiagram#members:nodes-marginleft "marginLeft") and [marginRight](/api/js/ejdiagram#members:nodes-marginright "marginRight") properties define the minimum space to be left between the top,bottom,left and right of parent bounds and the node. Applicable, if the parent is a container.
+* The nodes [paddingTop](/api/js/ejdiagram#members:nodes-paddingtop "paddingTop"), [paddingBottom](/api/js/ejdiagram#members:nodes-paddingbottom "paddingBottom"),[paddingLeft](/api/js/ejdiagram#members:nodes-paddingleft "paddingLeft") and [paddingRight](/api/js/ejdiagram#members:nodes-paddingright "paddingRight") properties define the minimum padding value to be left between the top,bottom,left and right most position of a group and its children. Applicable, if the group is a container.
+ 
 
 The [container](/api/js/ejdiagram#members:nodes-container "container") property of group should be defined and its [type](/api/js/ejdiagram#members:nodes-container-type "type") should be set as `stack` to create a canvas panel The following code illustrates how to add a stack panel.
 
