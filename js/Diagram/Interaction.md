@@ -346,7 +346,7 @@ $("#DiagramContent").ejDiagram({
 
 ### update user handles at runtime
 
-You can use client side method [updateUserHandles](/api/js/ejdiagram#methods:updateuserhandles "updateUserHandles") to update userhandles with respect to given node. Please refer to the below code example which shows how to update user handles at runtime.
+You can use client side method [updateUserHandles](/api/js/ejdiagram#methods:updateuserhandles "updateUserHandles") to update user handles with respect to given node. Please refer to the below code example which shows how to update user handles at runtime.
 
 {% highlight javascript %}
 
@@ -356,11 +356,28 @@ diagram.updateUserHandles(node);
 
 {% endhighlight %}
 
+
+### Alignment
+
+User handles can be aligned relative to the node boundaries. It has margin, offset, horizontal and vertical alignment settings. It is quite tricky when all four alignments are used together but gives you more control over alignment.
+
+#### Offset
+
+The [offset](/api/js/ejdiagram#members:selecteditems-userhandles-offset "offset") property of userhandle is used to align the user handle based on fractions. 0 represents top/left corner, 1 represents bottom/right corner, and 0.5 represents half of width/height.
+
+#### Horizontal and vertical alignments
+
+The [horizontalAlignment](/api/js/ejdiagram#members:selecteditems-userhandles-horizontalalignment "horizontalAlignment") property of userhandle is used to set how the userhandle is horizontally aligned at the userhandle position determined from the fraction values. The [verticalAlignment](/api/js/ejdiagram#members:selecteditems-userhandles-verticalalignment "verticalAlignment") property is used to set how userhandle is vertically aligned at the userhandle position.
+
+#### Margin
+
+**Margin** is an absolute value used to add some blank space in any one of its four sides. You can displace the userhandle with the [margin](/api/js/ejdiagram#members:selecteditems-userhandles-margin "margin") property.
+
 ### Appearance
 
-* The [position](/api/js/ejdiagram#members:selecteditems-userhandles-position "position"), [size](/api/js/ejdiagram#members:selecteditems-userhandles-size "size"), [borderColor](/api/js/ejdiagram#members:selecteditems-userhandles-bordercolor "borderColor"), [backgroundColor](/api/js/ejdiagram#members:selecteditems-userhandles-bordercolor "backgroundColor") properties of user handle used for its appearance customization.
+* The [size](/api/js/ejdiagram#members:selecteditems-userhandles-size "size"), [borderColor](/api/js/ejdiagram#members:selecteditems-userhandles-bordercolor "borderColor"), [backgroundColor](/api/js/ejdiagram#members:selecteditems-userhandles-bordercolor "backgroundColor") properties of user handle used for its appearance customization.
 
-* The [enablemultiselection](/api/js/ejdiagram#members:selecteditems-userhandles-enablemultiselection "enablemultiselection") property of the user handle defines whether the user handle should be added, when more than one element is selected and [visible](/api/js/ejdiagram#members:selecteditems-userhandles-enablemultiselection "visible") property of the user handle defines the visibility of the user handle.
+* The [enableMultiSelection](/api/js/ejdiagram#members:selecteditems-userhandles-enablemultiselection "enableMultiSelection") property of the user handle defines whether the user handle should be added, when more than one element is selected and [visible](/api/js/ejdiagram#members:selecteditems-userhandles-visible "visible") property of the user handle defines the visibility of the user handle.
 
 * The [pathData](/api/js/ejdiagram#members:selecteditems-userhandles-pathdata "pathData") property of the user handle used to define the custom shape inside the user handle and [pathColor](/api/js/ejdiagram#members:selecteditems-userhandles-pathcolor "pathColor") property used to define the fill color of the custom shape.
 

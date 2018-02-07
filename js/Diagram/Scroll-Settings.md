@@ -14,7 +14,7 @@ Diagram's [scrollSettings](/api/js/ejdiagram#members:scrollsettings "scrollSetti
 
 ## Get current scroll status
 
-Scroll settings allows you to read the scroll status, view port size, and current zoom factor with a set of properties. To explore those properties, see [Scroll Settings](/api/js/ejdiagram#members:scrollsettings "Scroll Settings")
+Scroll settings allows you to read the scroll status, [viewPortWidth](/api/js/ejdiagram#members:scrollsettings-viewportwidth "viewPortWidth"), [viewPortHeight](/api/js/ejdiagram#members:scrollsettings-viewportheight "viewPortHeight"), and [currentZoom](/api/js/ejdiagram#members:scrollsettings-currentzoom "currentZoom") with a set of properties. To explore those properties, see [Scroll Settings](/api/js/ejdiagram#members:scrollsettings "Scroll Settings")
 
 ## Define scroll status
 Diagram allows you to pan the Diagram before loading, so that any desired region of a large Diagram is made to view. You can programmatically pan the Diagram with the [horizontalOffset](/api/js/ejdiagram#members:scrollsettings-horizontaloffset "horizontalOffset") and [verticalOffset](/api/js/ejdiagram#members:scrollsettings-verticaloffset "verticalOffset") properties of scroll settings. The following code illustrates how to set pan the Diagram programmatically.
@@ -100,7 +100,9 @@ The scroll limit allows you to define the scrollable region of the Diagram. It i
 * Allows to scroll within the Diagram content.
 * Allows to scroll within the specified scrollable area.
 
-[scrollLimit](/api/js/ejdiagram#members:pagesettings-scrolllimit "scrollLimit") property of scroll settings helps to limit the scrolling.
+* [scrollLimit](/api/js/ejdiagram#members:pagesettings-scrolllimit "scrollLimit") property of scroll settings helps to limit the scrolling.
+
+* The scrollSettings [padding](/api/js/ejdiagram#members:scrollsettings-padding "padding") allows to extend the scrollable region that is based on the scroll limit.
 
 The following code example illustrates how to specify the scroll limit.
 

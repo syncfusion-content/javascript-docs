@@ -325,3 +325,17 @@ The below code example explains filtering the TreeGrid content using toolbar sea
         });
         
 {% endhighlight %}
+
+If the toolbar search textbox is not enabled in TreeGrid, and still if the contents need to be filtered at initial load using the `searchSettings` property, then the user should enable the [`allowSearching`](https://help.syncfusion.com/api/js/ejtreegrid#members:allowsearching "allowSearching") property along with search settings.
+
+{% highlight js %}
+
+        $("#treegrid").ejTreeGrid({
+            //...
+            allowSearching: true,
+            searchSettings: {
+                key: "Plan"
+            },
+        });
+        
+{% endhighlight %}
