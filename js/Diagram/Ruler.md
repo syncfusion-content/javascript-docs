@@ -37,7 +37,7 @@ $("#diagram").ejDiagram({
 By default, ruler segments are arranged based on pixel values.
 
 
-* The horizontalRuler's [interval](/api/js/ejdiagram#members:rulersettings-horizontalruler-interval "interval") property allows you to define the interval between ruler segments and [segmentWidth](/api/js/ejdiagram#members:rulersettings-horizontalruler-segmentwidth "segmentWidth") property allows you to define the segment width of the ruler. Similary you can use verticalRuler's [interval](/api/js/ejdiagram#members:rulersettings-verticalruler-interval "interval") and [segmentWidth](/api/js/ejdiagram#members:rulersettings-verticalruler-segmentwidth "segmentWidth") properties to define the interval and segment width of the vertical ruler
+* The horizontalRuler's [interval](/api/js/ejdiagram#members:rulersettings-horizontalruler-interval "interval") property allows you to define the interval between ruler segments and [segmentWidth](/api/js/ejdiagram#members:rulersettings-horizontalruler-segmentwidth "segmentWidth") property allows you to define the segment width of the ruler. Similarly you can use verticalRuler's [interval](/api/js/ejdiagram#members:rulersettings-verticalruler-interval "interval") and [segmentWidth](/api/js/ejdiagram#members:rulersettings-verticalruler-segmentwidth "segmentWidth") properties to define the interval and segment width of the vertical ruler
 
 * The horizontalRuler's [arrangeTick](/api/js/ejdiagram#members:rulersettings-horizontalruler-arrangetick "arrangeTick") and verticalRuler's [arrangeTick](/api/js/ejdiagram#members:rulersettings-verticalruler-arrangetick "arrangeTick")  function is provided for the purpose of customizing the appearance of ruler ticks.It will be called for each tick rendering.
 
