@@ -142,3 +142,8 @@ diagram.load(json);
 diagram.load(json);
 
 {% endhighlight %}
+
+
+## Clear
+
+The public method [clear](/api/js/ejdiagram#methods:clear "clear") allows you to remove all the elements from the diagram and [refresh](/api/js/ejdiagram#methods:refresh "refresh") method used to refresh the whole diagram page.
