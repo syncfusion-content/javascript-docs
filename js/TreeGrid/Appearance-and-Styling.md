@@ -98,7 +98,7 @@ The below screenshot shows the output of above code example.
 
 ## Customize rows and cells
 
-In TreeGrid, while rendering rows [`rowDataBound`](https://help.syncfusion.com/api/js/ejtreegrid#events:rowdatabound) event will be trigger for each and every rows. Similarly [`queryCellInfo`](https://help.syncfusion.com/api/js/ejtreegrid#events:querycellinfo) event will be trigger for each and every cells. Using this event we can customize the tree grid rows and cells.
+In TreeGrid, while rendering rows [`rowDataBound`](https://help.syncfusion.com/api/js/ejtreegrid#events:rowdatabound) event will be triggered for rows. Similarly [`queryCellInfo`](https://help.syncfusion.com/api/js/ejtreegrid#events:querycellinfo) event will be triggered for every cells. Using these events we can customize the tree grid rows and cells at initial load.
 
 The below code example shows how to customize the rows and cells in tree grid.
 
