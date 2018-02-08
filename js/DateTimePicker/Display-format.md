@@ -195,3 +195,38 @@ Add the following code in your **HTML** page.
 
 ![](/js/DateTimePicker/Display-format_images/Display-format_img2.png)
 
+## Drilldown and Meridian
+
+We can drill down up to time interval on selected date with meridian details.you can utilize this option by make use of [timeDrillDown](https://help.syncfusion.com/api/js/ejdatetimepicker#members:timedrilldown) property.
+
+{% highlight javascript %}
+    
+    $('#dateTime').ejDateTimePicker({
+        width: '100%',
+        timeDrillDown: {
+         enabled: true,
+         interval: 5,
+         showMeridian: false
+        },
+    });
+
+{% endhighlight %}
+
+{% highlight javascript %}
+
+    $('#dateTime').ejDateTimePicker({
+        width: '100%',
+        timeDrillDown: {
+         enabled: true,
+         interval: 5,
+         showMeridian: true
+        },
+    });
+
+{% endhighlight %}
+
+Execute the above code to render the following outputs.
+
+![](/js/DateTimePicker/Display-format_images/Display-format_img3.png)
+
+![](/js/DateTimePicker/Display-format_images/Display-format_img3.png)

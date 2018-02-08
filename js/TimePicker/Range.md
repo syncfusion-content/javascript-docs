@@ -43,3 +43,22 @@ Execute the above code to render the following output.
 
 ![](/js/TimePicker/Range_images/Range_img1.png) 
 
+### DisableTime Ranges
+ 
+Specifies the list of time range to be disabled. you can set it by using[disableTimeRanges](https://help.syncfusion.com/api/js/ejdatetimepicker#members:disabletimeranges) property.
+
+{% highlight javascript %}
+      
+    $(function () {
+        // Set the disableTimeRanges value during initialization.
+
+        $("#timepicker").ejDatePicker({ disableTimeRanges: [{ startTime: "3:00 AM", endTime: "6:00 AM" }]});
+            
+        });
+    });
+{% endhighlight %}
+
+Execute the above code to render the following output.
+
+
+![](/js/TimePicker/Range_images/Range_img2.png) 

@@ -91,3 +91,63 @@ You can enable or disable the DatePicker textbox by using [enabled](https://help
 
 {% endhighlight %}
 
+## Week Number
+
+You can allows to embed a new column with the calendar in the popup, which will display the week number of every week in a calendar year. You can utilize this option by make use of [weekNumber](https://help.syncfusion.com/api/js/ejdatepicker#members:weeknumber) property.
+
+{% highlight javascript %}
+
+        $(function () {
+
+            // creates DatePicker from input
+
+            $("#datePicker").ejDatePicker({
+
+                weekNumber: true //displays the week number 
+
+            });
+
+        });
+
+{% endhighlight %}
+
+
+## allowEdit
+
+The **allowEdit** property of datepicker used to allow or restrict the editing in DatePicker input field directly. By setting false to this API, You can only pick the date from DatePicker popup.
+
+{% highlight javascript %}
+
+        $(function () {
+
+            // creates DatePicker from input
+
+            $("#datePicker").ejDatePicker({
+
+               allowEdit : true 
+
+            });
+
+        });
+
+{% endhighlight %}
+
+## allowDrillDown
+
+The **allowDrillDown** property of the DatePicker control allow or restrict the drill down to multiple levels of view (month/year/decade) in DatePicker calendar
+
+{% highlight javascript %}
+
+        $(function () {
+
+            // creates DatePicker from input
+
+            $("#datePicker").ejDatePicker({
+
+               allowDrillDown: true  
+
+            });
+
+        });
+
+{% endhighlight %}

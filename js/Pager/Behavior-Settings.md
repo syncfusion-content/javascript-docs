@@ -10,6 +10,95 @@ api: /api/js/ejpager
 
 # Behavior Settings
 
+##Page Size
+
+The **pageSize** property of the pager control allows an option to gets or sets a value that indicates whether to define the number of records displayed per page.
+
+{% highlight javascript %}
+
+   $(function () {
+
+        $("#pager").ejPager({
+         pageSize: 2
+        
+        })
+
+    });
+
+{% endhighlight %}
+
+
+##Page Count
+
+The **pageCount** property of the pager control allows an option to gets or sets a value that indicates whether to define the number of pages displayed in the pager for navigation.
+
+{% highlight javascript %}
+
+   $(function () {
+
+        $("#pager").ejPager({
+         pageCount: 5
+        
+        })
+
+    });
+
+{% endhighlight %}
+
+
+##Total Pages
+
+The **totalPages** property of the pager control allows an option to gets or sets a value of total number of pages in the pager. The totalPages value is calculated based on page size and total records.
+
+{% highlight javascript %}
+
+   $(function () {
+
+        $("#pager").ejPager({
+         totalPages:1
+        
+        })
+
+    });
+
+{% endhighlight %}
+
+
+##Total Records count
+
+The **totalRecordsCount** property of the pager control allows an option to get the value of total number of records which is bound to a data item.
+
+{% highlight javascript %}
+
+   $(function () {
+
+        $("#pager").ejPager({
+         totalRecordsCount: 10 
+        
+        })
+
+    });
+
+{% endhighlight %}
+
+##current page
+
+The **currentPage** property of the pager control allows an option to gets or sets a value that indicates whether to define which page to display currently in pager.
+
+{% highlight javascript %}
+
+   $(function () {
+
+        $("#pager").ejPager({
+         currentPage: 1 
+        
+        })
+
+    });
+
+{% endhighlight %}
+
+
 ## Page Size List
 
 The **pageSizeList** property of the pager control allows an option to have multiple options of page size values. By defining **pageSizeList**, a dropdown will render in a pager with given values along with the current pageSize as selected value in dropdown.

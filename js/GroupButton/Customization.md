@@ -180,4 +180,99 @@ GroupButton has two Built-in orientation support called vertical and horizontal 
 
 ![](Customization_images/Customization_img3.jpeg)
 
+## Rounded Corner
+
+You can customize the shape of the **GroupButton** widget from regular rectangular shape to rounded rectangle shape using **showRoundedCorner** property that is set to **false** by default.
+
+### Configure Rounded corner to GroupButton Text box
+
+The following steps explain you to change the edges of the textbox to rounded corner.
+
+In the **HTML** page, add a **&lt;input&gt;** element to configure **GroupButton** widget.
+
+{% highlight html %}
+
+    <div id="groupButton">
+        <ul>
+            <li>Day</li>
+            <li>Week</li>
+            <li>Month</li>
+        </ul>
+    </div>
+{% endhighlight %}
+
+{% highlight javascript %}
+
+    // You can configure Rounded Corner  in GroupButton control as follows,
+    $("#groupButton").ejGroupButton({
+        showRoundedCorner: true
+    });
+
+{% endhighlight %}
+
+
+The following screenshot illustrates a **GroupButton** when **showRoundedCorner** is set to “**true**”.
+
+![](Customization_images/Customization_img4.jpeg)
+
+## RTL Support 
+
+In some cases you need to use right-to-left alignment. You can give RTL support by using **enableRTL** property.**RTL** mode works when you use the **text** property in **GroupButton**.
+
+The following steps explain the details about rendering the **GroupButton** with right-to-left alignment support. 
+In the HTML page, add the following button elements to configure RadioButton widget.
+
+{% highlight html %}
+
+
+    <div id="groupButton">
+        <ul>
+            <li>Day</li>
+            <li>Week</li>
+            <li>Month</li>
+        </ul>
+    </div>
+
+{% endhighlight %}
+
+{% highlight javascript %}
+
+    // Initializes the control in JavaScript
+     $("#groupButton").ejGroupButton({
+        enableRTL: true
+    });
+
+{% endhighlight %}
+
+The following screenshot illustrates a **GroupButton** when **showRoundedCorner** is set to “**true**”.
+
+![](Customization_images/Customization_img5.jpeg)
+
+
+## cssClass
+
+The **cssClass** property of the groupbutton control allows an option to sets the specified class to GroupButton wrapper element, which allows for custom skinning option in ejGroupButton control.
+
+{% highlight html %}
+
+
+    <div id="groupButton">
+        <ul>
+            <li>Day</li>
+            <li>Week</li>
+            <li>Month</li>
+        </ul>
+    </div>
+
+{% endhighlight %}
+
+{% highlight javascript %}
+
+    // Initializes the control in JavaScript
+     cssClass:"e-btnColor"
+    });
+
+{% endhighlight %}
+
+
 
