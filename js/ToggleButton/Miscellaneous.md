@@ -97,4 +97,30 @@ Execute the above code to render the following output.
 ![](/js/ToggleButton/Miscellaneous_images/Miscellaneous_img2.png) 
 
 
+## Scaling
+
+**ToggleButton** widget provides you options to change its height, width and also to change popup height and width.
+
+### Change ToggleButton widget Height and width
+
+You can use **height** and **width** property to customize **ToggleButton** width and height.
+
+{% highlight html %}
+
+    <input id="toggle" type="checkbox" /> 
+
+{% endhighlight %}
+
+{% highlight javascript %}
+
+    // You can customize the width and height of the ToggleButton as follows.
+    $(function () {
+         $("#toggle").ejToggleButton({defaultText:"Play",activeText:"Pause",width: "100px",height:"28px" });
+    });
+    
+{% endhighlight %}
+
+Execute the above code to render the following output.
+
+![](/js/ToggleButton/Miscellaneous_images/Miscellaneous_img3.png) 
 

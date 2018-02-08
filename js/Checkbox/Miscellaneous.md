@@ -66,6 +66,49 @@ You can set name and value for **Checkbox** control as follows.
 
 {% endhighlight %}
 
+## State Persistence
+
+Specifies the persist property for CheckBox while initialization. The persist API save current model value to browser cookies for state maintains. While refreshing the CheckBox control page the model value apply from browser cookies.
+
+{% highlight javascript %}
+
+        $(function () {
+
+             //To set persist API value
+
+             $("#checkBox").ejCheckBox({ enablePersistence : false });
+
+        });
+
+{% endhighlight %}
+
+## RTL Support
+
+In some cases you need to use right-to-left alignment. You can give RTL support by using **enableRTL** property.  **RTL** mode works when you use the **text** property in **Checkbox**. The **Checkbox** and text are aligned in the right-to-left format. For example, when text is right-aligned and Checkbox is left-aligned, after you apply right-to-left alignment, these positions are interchanged. 
+
+The following steps explain the details about rendering the **Checkbox** with right-to-left alignment support. Here the **text** property is necessary.
+
+In the HTML page, add the following button elements to configure Checkbox widget.
+
+{% highlight html %}
+
+    <input type="checkbox" id="checkBox"/>
+    <label for="checkBox">Experienced</label>
+
+{% endhighlight %}
+
+{% highlight javascript %}
+
+    // Initializes the control in JavaScript
+    $(function () {
+        //set checkbox with right to left format
+        $("#checkBox").ejCheckBox({  enableRTL : true });
+    });
+
+{% endhighlight %}
+
+
+In the above mentioned code, the **text** property has been used. In **LTR** format, the **CheckBox** is on the left side. In **RTL** format, the **CheckBox** appears on the right side. Here the **text** property is used and the **enableRTL** property is set as “**true**”**.** It changes the alignment to right-to-left.
 
 
 
