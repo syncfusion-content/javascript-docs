@@ -21,7 +21,7 @@ Page settings enable to customize the appearance, width, and height of the Diagr
 
 * The [pageWidth](/api/js/ejdiagram#members:pagesettings-pagewidth "pageWidth") and [pageHeight](/api/js/ejdiagram#members:pagesettings-pageheight "pageHeight") properties of page settings define the size of the page and based on the size, the [pageOrientation](/api/js/ejdiagram#members:pagesettings-pageorientation "pageOrientation") will be set for the page. In addition to that, you can customize the appearance of the page with [backgroundImage](/api/js/ejdiagram#members:backgroundimage "backgroundImage") and set of appearance specific properties.
 
-* The [pageBackgroundColor](/api/js/ejdiagram#members:pagesettings-pagebackgroundcolor "pageBackgroundColor"), [pageBorderColor](/api/js/ejdiagram#members:pagesettings-pagebordercolor "pageBorderColor") and [pageBorderWidth](/api/js/ejdiagram#members:pagesettings-pageborderwidth "pageBorderWidth") properties are used to customize the backgroundcolor and bordercolor of the page.
+* The [pageBackgroundColor](/api/js/ejdiagram#members:pagesettings-pagebackgroundcolor "pageBackgroundColor"), [pageBorderColor](/api/js/ejdiagram#members:pagesettings-pagebordercolor "pageBorderColor") and [pageBorderWidth](/api/js/ejdiagram#members:pagesettings-pageborderwidth "pageBorderWidth") properties are used to customize the background color and border color of the page.
 
 * The [pageMargin](/api/js/ejdiagram#members:pagesettings-pagemargin "pageMargin") property is used to define the page margin.
 
