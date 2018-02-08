@@ -45,6 +45,30 @@ The output of the TreeGrid with `cellEditing` is as follows.
 
 The edited cell can be saved with custom actions using the [`saveCell`](https://help.syncfusion.com/api/js/ejtreegrid#methods:savecell "saveCell") method.
 
+### Prevent cell editing
+
+In cell edit action [`beginEdit`](https://help.syncfusion.com/api/js/ejtreegrid#events:beginedit) and [`editEdit`](https://help.syncfusion.com/api/js/ejtreegrid#events:endedit) events are triggered before and after the editing action. cell editing for specific cell can prevent by using [`beginEdit`](https://help.syncfusion.com/api/js/ejtreegrid#events:beginedit) event.
+
+The following code example show, how to prevent cell editing in tree grid.
+
+{% highlight js %}
+
+    $("#TreeGridContainer").ejTreeGrid({
+        //...
+        editSettings: {
+            allowEditing: true,
+            editMode: "cellEditing"
+        },
+        beginEdit:function(args)
+        {
+            if(args.columnIndex == 1)
+                args.cancel = true;
+        },
+        //...
+    });
+
+{% endhighlight %}
+
 ### Row Editing
 
 It is possible to make the entire row to editable state and to update a record by setting [`editMode`](/api/js/ejtreegrid#members:editsettings-editmode "editSettings.editMode") as rowEditing.
