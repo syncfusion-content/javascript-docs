@@ -250,14 +250,14 @@ The below screenshot depicts TreeGrid with frozen columns,
 
 ![](/js/TreeGrid/Columns_images/Columns_img2.png)
 
-It is also possible to freeze all the preceding columns at run-time by choosing *Freeze Preceding Columns* option in the column menu or by using the [`freezePrecedingColumns`](https://help.syncfusion.com/api/js/ejtreegrid#methods:freezeprecedingcolumns "freezePrecedingColumns") method, the column field name, for which the columns preceding it to be freezed should be passed as the method parameter.
+It is also possible to freeze all the preceding columns at run-time by choosing *Freeze Preceding Columns* option in the column menu or by using the [`freezePrecedingColumns`](https://help.syncfusion.com/api/js/ejtreegrid#methods:freezeprecedingcolumns "freezePrecedingColumns") method, the column field name, for which the columns preceding it to be frozen should be passed as the method parameter.
 
 ![](/js/TreeGrid/Columns_images/Columns_img3.png)
 
 ### Freezing columns using method
 
 Columns can also be frozen or unfrozen with custom actions using the [`freezeColumn`](/api/js/ejtreegrid#methods:freezecolumn "freezeColumn") method.
-The column's field name which is to be frozen/unfrozen should be passed as the method paramter, along with the freeze state.
+The column's field name which is to be frozen/unfrozen should be passed as the method parameter, along with the freeze state.
 
 {% highlight js %}
 
@@ -488,7 +488,7 @@ Following code example shows how to customize the insert column option in tree g
 
 ![](/js/TreeGrid/Columns_images/Columns_img19.png)
 
-The above screenshot shows customized insert column dailog in tree grid.  
+The above screenshot shows customized insert column dialog in tree grid.  
 {:.caption}
 
 
@@ -837,6 +837,6 @@ The above screenshot shows tree grid render with text alignment and header text 
 
 ## Column object
 
-The column object which contists the list of columns available in TreeGrid can be retrieved using the [`getColumnByHeaderText`](https://help.syncfusion.com/api/js/ejtreegrid#methods:getcolumnbyheadertext "getColumnByHeaderText") and [`getColumnByField`](https://help.syncfusion.com/api/js/ejtreegrid#methods:getcolumnbyfield "getColumnByField") methods.In the method `getColumnByHeaderText` the header text defined for the column should be passed as the method parameter while in the method `getColumnByField` the column field name should be passed as method parameter.
+The column object which consists the list of columns available in TreeGrid can be retrieved using the [`getColumnByHeaderText`](https://help.syncfusion.com/api/js/ejtreegrid#methods:getcolumnbyheadertext "getColumnByHeaderText") and [`getColumnByField`](https://help.syncfusion.com/api/js/ejtreegrid#methods:getcolumnbyfield "getColumnByField") methods.In the method `getColumnByHeaderText` the header text defined for the column should be passed as the method parameter while in the method `getColumnByField` the column field name should be passed as method parameter.
 
 To fetch the column index using the column field name, the method [`getColumnIndexByField`](https://help.syncfusion.com/api/js/ejtreegrid#methods:getcolumnindexbyfield "getColumnIndexByField") should be called with field name as parameter. And to retrieve the datasource field name assigned to a column by using the column header text the method [`getFieldNameByHeaderText`](https://help.syncfusion.com/api/js/ejtreegrid#methods:getfieldnamebyheadertext "getFieldNameByHeaderText") should be called.

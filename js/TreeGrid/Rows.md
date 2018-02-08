@@ -317,7 +317,7 @@ The below code example shows how to use this events.
 
 ## Details row
 
-Details row is used to provide a additional information about each row of tree grid. You can specify the detail row jsRender template id or HTML element as string to [`detailsTemplate`](/api/js/ejtreegrid#members:detailstemplate) property. However you need to enable the details template by setting [`showDetailsRow`](/api/js/ejtreegrid#members:showdetailsrow) property as `true`.
+Details row is used to provide a additional information about each row of tree grid. You can specify the detail row JsRender template id or HTML element as string to [`detailsTemplate`](/api/js/ejtreegrid#members:detailstemplate) property. However you need to enable the details template by setting [`showDetailsRow`](/api/js/ejtreegrid#members:showdetailsrow) property as `true`.
 
 The following code example shows how to enable details tow in tree grid.
 
@@ -571,9 +571,9 @@ $("#collapseAtLevel").click(function () {
 
 ### Customize expand/collapse action
 
-In TreeGrid,While expanding the parent row [`expanding`](https://help.syncfusion.com/api/js/ejtreegrid#events:expanding) and [`expanded`](https://help.syncfusion.com/api/js/ejtreegrid#events:expanded) event will be trigger with current expading row detail. Similarly [`collapsing`](https://help.syncfusion.com/api/js/ejtreegrid#events:collapsing) and [`collapsed`](https://help.syncfusion.com/api/js/ejtreegrid#events:collapsed) event will be trigger while collapsing the parent row. Using this event and it's arguments we can customize the expand/collpase action.
+In TreeGrid,While expanding the parent row [`expanding`](https://help.syncfusion.com/api/js/ejtreegrid#events:expanding) and [`expanded`](https://help.syncfusion.com/api/js/ejtreegrid#events:expanded) event will be trigger with current expanding row detail. Similarly [`collapsing`](https://help.syncfusion.com/api/js/ejtreegrid#events:collapsing) and [`collapsed`](https://help.syncfusion.com/api/js/ejtreegrid#events:collapsed) event will be trigger while collapsing the parent row. Using this event and it's arguments we can customize the expand/collaase action.
 
-The following code example shows how to prevent the particular row from expand/collpase action using [`expanding`](https://help.syncfusion.com/api/js/ejtreegrid#events:expanding) and [`collapsing`](https://help.syncfusion.com/api/js/ejtreegrid#events:collapsing) event.
+The following code example shows how to prevent the particular row from expand/collapse action using [`expanding`](https://help.syncfusion.com/api/js/ejtreegrid#events:expanding) and [`collapsing`](https://help.syncfusion.com/api/js/ejtreegrid#events:collapsing) event.
 
 {% highlight js %}
 
@@ -596,7 +596,7 @@ $("#TreeGrid").ejTreeGrid({
 
 Summary rows in TreeGrid is used to summarize every hierarchy with the set of predefined summary types using the column values. Using the [`summaryRows`](https://help.syncfusion.com/api/js/ejtreegrid#members:summaryrows "summaryRows") property, user can define the summary rows in TreeGrid.
 Title for each summary row can be defined using the [`summaryRows.title`](https://help.syncfusion.com/api/js/ejtreegrid#members:summaryrows-title "summaryRows.title") property. And using the [`summaryRows.summaryColumns`](https://help.syncfusion.com/api/js/ejtreegrid#members:summaryrows-summarycolumns "summaryRows.summaryColumns") property, it is possible to defined the summary for specific columns alone in a summary row.
-Enable the [`showSummaryRow`](https://help.syncfusion.com/api/js/ejtreegrid#members:showsummaryrow "showSummaryRow") property to make the summary row visible. Total summary row is the overall summary row displayed for all the rows in the TreeGrid content, and its visibility can be deined using the [`showTotalSummary`](https://help.syncfusion.com/api/js/ejtreegrid#members:showtotalsummary "showTotalSummary") property.
+Enable the [`showSummaryRow`](https://help.syncfusion.com/api/js/ejtreegrid#members:showsummaryrow "showSummaryRow") property to make the summary row visible. Total summary row is the overall summary row displayed for all the rows in the TreeGrid content, and its visibility can be denied using the [`showTotalSummary`](https://help.syncfusion.com/api/js/ejtreegrid#members:showtotalsummary "showTotalSummary") property.
 
 ### Defining summary columns
 
