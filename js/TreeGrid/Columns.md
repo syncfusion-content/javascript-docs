@@ -309,6 +309,26 @@ The following code snippet explains how to set column resize mode in tree grid.
 The above screenshot shows the tree grid render with `FixedColumns` resize mode.
 {:.caption}
 
+### Customize column resize action
+
+In TreeGrid, [`columnResizeStart`](https://help.syncfusion.com/api/js/ejtreegrid#events:columnresizestart), [`columnResizeEnd`](https://help.syncfusion.com/api/js/ejtreegrid#events:columnresizeend) and [`columnResized`](https://help.syncfusion.com/api/js/ejtreegrid#events:columnresized) events are triggered on column resize action. Using this event we can prevent column resize for particular column.
+
+The below code example shows how to prevent the column resize for particular column
+
+{% highlight js %}
+
+   $("#TreeGridContainer").ejTreeGrid({
+    //...
+    allowColumnResize: true,
+    columnResizeStart:function(args)
+    {
+        if (args.column.field == "taskName") // Prevent the column resize for Task Name column
+            args.cancel = true;
+    },
+    //...
+});
+{% endhighlight %}
+
 ## Checkbox column 
 
 It is possible to display a column as checkbox column in TreeGrid by enabling the [`displayAsCheckbox`](/api/js/ejtreegrid#members:columns-displayascheckbox "columns.displayAsCheckbox") property and by setting the `editType` property as `Boolean` for the column .  If the [`displayAsCheckbox`](/api/js/ejtreegrid#members:columns-displayascheckbox "columns.displayAsCheckbox") property is set as false, then the column will be displayed as string column with the value mapped from the data source.
@@ -756,6 +776,29 @@ The above screenshot shows the column reorder in tree grid.
 {:.caption}
 
 The TreeGrid columns can also be reordered using the [`reorderColumn`](https://help.syncfusion.com/api/js/ejtreegrid#methods:reordercolumn "reorderColumn") method, where the column field name and the target index should be passed as the method parameters.
+
+### Customize the column reorder action
+
+In TreeGrid, [`columnDragStart`](https://help.syncfusion.com/api/js/ejtreegrid#events:columndragstart), [`columnDrag`](https://help.syncfusion.com/api/js/ejtreegrid#events:columndrag) and [`columnDrop`](https://help.syncfusion.com/api/js/ejtreegrid#events:columndrop) events are triggered on column reorder action. Using this event we can prevent the column reorder for specific column.
+
+The below code example shows how to prevent column reorder in TreeGrid.
+
+{% highlight js %}
+
+    $(function () {
+        $("#TreeGridContainer").ejTreeGrid({
+            //...
+            allowColumnReordering : true,
+            columnDragStart : function(args)
+            {
+                if (args.draggedColumn.field == "taskName")
+                    args.cancel = true;
+            },
+            //...
+        })
+    });
+        
+{% endhighlight %}
 
 ## Text Alignment
 In ejTreeGrid, it is possible to align both content and header text of particular column using the [`textAlign`](/api/js/ejtreegrid#members:columns-textalign "columns.textAlign") and [`headerTextAlign`](/api/js/ejtreegrid#members:columns-headertextalign "columns.headerTextAlign") property of columns.

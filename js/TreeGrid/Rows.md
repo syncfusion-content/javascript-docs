@@ -289,6 +289,32 @@ The following code shows how to render row drag tooltip with tooltip template.
 
 ![](/js/TreeGrid/Rows_images/Rows_img3.png)
 
+### Customize row drag and drop action
+In TreeGrid, [`rowDragStart`](https://help.syncfusion.com/api/js/ejtreegrid#events:rowdragstart), [`rowDrag`](https://help.syncfusion.com/api/js/ejtreegrid#events:rowdrag) and [`rowDragStop`](https://help.syncfusion.com/api/js/ejtreegrid#events:rowdragstop) events are triggered on row drag and drop action. Using this event we can prevent drag and drop action of particular record and validate the drop position on particular record. 
+
+The below code example shows how to use this events.
+
+{% highlight js %}
+
+        $("#treegrid1").ejTreeGrid({
+            //...
+            allowDragAndDrop: true,
+            rowDragStart: function (args) {
+                if (args.draggedRow.taskID == 6) // Task Id 6 can't be dragged
+                    args.cancel = true;
+            },
+            rowDrag: function (args) {
+                if (args.targetRow.taskID == 5 && args.dropPosition == "insertAsChild") // Can't drop task as child on Task Id 5
+                    args.canDrop = false;
+            },
+            rowDragStop: function (args) {
+                if (args.targetRow.taskID == 6) // Can't drop any task on Task Id 6
+                    args.cancel = true;
+            },            
+        });
+
+{% endhighlight %}
+
 ## Details row
 
 Details row is used to provide a additional information about each row of tree grid. You can specify the detail row jsRender template id or HTML element as string to [`detailsTemplate`](/api/js/ejtreegrid#members:detailstemplate) property. However you need to enable the details template by setting [`showDetailsRow`](/api/js/ejtreegrid#members:showdetailsrow) property as `true`.
@@ -360,7 +386,6 @@ The following code example shows how to set details row height in tree grid.
 $("#TreeGrid").ejTreeGrid({
     //...     
     detailsTemplate:"descriptionTemplate",
-    enableCollapseAll: true,
     detailsRowHeight:150,
     //...
 });
@@ -371,6 +396,50 @@ $("#TreeGrid").ejTreeGrid({
 
 The above screenshot shows details row rendered with height of `150px`.
 {:.caption}
+
+### Customize detail row
+In TreeGrid, while rendering the details row the [`detailsDataBound`](https://help.syncfusion.com/api/js/ejtreegrid#events:detailsdatabound) event will trigger. Using this event we can customize the detail row for specific row.
+
+The below code example shows how to customize details row for specific row.
+
+{% highlight javascript %}
+
+$("#TreeGrid").ejTreeGrid({
+    //...     
+    detailsTemplate:"descriptionTemplate",
+    detailsDataBound:function(args)
+    {
+        if (args.data.Name == "Andrew Fuller")
+            $(args.detailsElement).css("background-color", "rgba(133, 133, 173,1)");
+    },
+    //...
+});
+
+{% endhighlight %}
+
+![](/js/TreeGrid/Rows_images/Rows_img12.png)
+
+The above screenshot shows details row customization for specific row. 
+{:.caption}
+
+While opening and closing the details row, the [`detailsShown`](https://help.syncfusion.com/api/js/ejtreegrid#events:detailsshown) and [`detailsHidden`](https://help.syncfusion.com/api/js/ejtreegrid#events:detailshidden) events are triggered. Using this event we can prevent the details row show and hide for specific row.
+
+The below code example shows how to prevent details row show for specific row.
+
+ {% highlight javascript %}
+
+$("#TreeGrid").ejTreeGrid({
+    //...     
+    detailsTemplate:"descriptionTemplate",
+    detailsShown:function(args)
+    {
+        if (args.data.Name == "Andrew Fuller")
+           args.cancel = true;
+    },
+    //...
+});
+
+{% endhighlight %}
 
 ## Expand/Collapse Row
 
@@ -496,6 +565,29 @@ $("#expandAtLevel").click(function () {
 $("#collapseAtLevel").click(function () {
     var treegridObj = $("#TreeGrid").ejTreeGrid("instance");
         treegridObj.collapseAtLevel(1);
+});
+
+{% endhighlight %}
+
+### Customize expand/collapse action
+
+In TreeGrid,While expanding the parent row [`expanding`](https://help.syncfusion.com/api/js/ejtreegrid#events:expanding) and [`expanded`](https://help.syncfusion.com/api/js/ejtreegrid#events:expanded) event will be trigger with current expading row detail. Similarly [`collapsing`](https://help.syncfusion.com/api/js/ejtreegrid#events:collapsing) and [`collapsed`](https://help.syncfusion.com/api/js/ejtreegrid#events:collapsed) event will be trigger while collapsing the parent row. Using this event and it's arguments we can customize the expand/collpase action.
+
+The following code example shows how to prevent the particular row from expand/collpase action using [`expanding`](https://help.syncfusion.com/api/js/ejtreegrid#events:expanding) and [`collapsing`](https://help.syncfusion.com/api/js/ejtreegrid#events:collapsing) event.
+
+{% highlight js %}
+
+$("#TreeGrid").ejTreeGrid({
+    //...
+    collapsing:function(args){
+        if(args.data.progress < 50) // we can't collapse the record which has progress is less than 50
+            args.cancel = true;
+    },
+    expanding:function(args){
+        if(args.data.duration > 5) // we can't expand the record which has duration is greater than 5
+            args.cancel = true;
+    },
+    //..
 });
 
 {% endhighlight %}
