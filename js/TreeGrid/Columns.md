@@ -250,7 +250,7 @@ The below screenshot depicts TreeGrid with frozen columns,
 
 ![](/js/TreeGrid/Columns_images/Columns_img2.png)
 
-It is also possible to freeze all the preceding columns by choosing *Freeze Preceding Columns* option in the column menu.
+It is also possible to freeze all the preceding columns at run-time by choosing *Freeze Preceding Columns* option in the column menu or by using the [`freezePrecedingColumns`](https://help.syncfusion.com/api/js/ejtreegrid#methods:freezeprecedingcolumns "freezePrecedingColumns") method, the column field name, for which the columns preceding it to be freezed should be passed as the method parameter.
 
 ![](/js/TreeGrid/Columns_images/Columns_img3.png)
 
@@ -442,6 +442,8 @@ Following code example shows how to enable the column option in tree grid.
 
 The above screenshot shows insert column dialog in TreeGrid  
 {:.caption}
+
+The TreeGrid columns can also be renamed or deleted at run-time with custom actions using the [`renameColumn`](https://help.syncfusion.com/api/js/ejtreegrid#methods:renamecolumn "renameColumn") and [`deleteColumn`](https://help.syncfusion.com/api/js/ejtreegrid#methods:deletecolumn "deleteColumn") methods.
 
 ### Customizing the insert column dialog.
 
@@ -748,6 +750,8 @@ Following code example explains how to enable column reorder in tree grid
 
 The above screenshot shows the column reorder in tree grid.
 {:.caption}
+
+The TreeGrid columns can also be reordered using the [`reorderColumn`](https://help.syncfusion.com/api/js/ejtreegrid#methods:reordercolumn "reorderColumn") method, where the column field name and the target index should be passed as the method parameters.
 
 ## Text Alignment
 In ejTreeGrid, it is possible to align both content and header text of particular column using the [`textAlign`](/api/js/ejtreegrid#members:columns-textalign "columns.textAlign") and [`headerTextAlign`](/api/js/ejtreegrid#members:columns-headertextalign "columns.headerTextAlign") property of columns.

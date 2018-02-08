@@ -40,9 +40,9 @@ Diagram can also be saved as raster or vector image files. For more information 
 
 * While saving the diagram as JSON data, the size of the JSON data will be large when diagram having more number of nodes and connectors. 
 
-* Diagram provides the support to enable/disable serializing default model properties to reduce the size of the saved JSON data through [serializationSettings](https://help.syncfusion.com/api/js/ejdiagram#members:serializationsettings-serializationSettings "serializationSettings") property.
+* Diagram provides the support to enable/disable serializing default model properties to reduce the size of the saved JSON data through [serializationSettings](/api/js/ejdiagram#members:serializationsettings "serializationSettings") property.
 
-* The serializationSettings [preventDefaultValues](https://help.syncfusion.com/api/js/ejdiagram#members:serializationsettings-preventdefaultvalues "preventDefaultValues") property is used to specify whether to save the diagram with user defined model properties or entire diagram model properties.
+* The serializationSettings [preventDefaultValues](/api/js/ejdiagram#members:serializationsettings-preventdefaultvalues "preventDefaultValues") property is used to specify whether to save the diagram with user defined model properties or entire diagram model properties.
 
 * By default, the preventDefaultValues property value is set as false and all default properties will be serialized. If it is set to true, only user defined properties will be serialized. The following code illustrates how to use preventDefaultValues property.
 
@@ -142,3 +142,8 @@ diagram.load(json);
 diagram.load(json);
 
 {% endhighlight %}
+
+
+## Clear
+
+The public method [clear](/api/js/ejdiagram#methods:clear "clear") allows you to remove all the elements from the diagram and [refresh](/api/js/ejdiagram#methods:refresh "refresh") method used to refresh the whole diagram page.

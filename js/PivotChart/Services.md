@@ -11,20 +11,20 @@ api: /api/js/ejpivotchart
 
 # ejPivotChart
 
-PivotChart widget is a lightweight control that reads both OLAP and Relational data source and visualizes it in graphical format with the ability to drill up and down. PivotChart uses services to initialize and operate widget and also to export PivotChart to an Excel, Word, PDF or Image document.
+The pivot chart widget is a lightweight control that reads both OLAP and relational data sources and visualizes them in a graphical format with the ability to drill up and down. The pivot chart uses services to initialize and operate the widget and to export the pivot chart to an Microsoft Excel, Microsoft Word, PDF, or image document.
 
-## WCF/WebAPI Service to populate PivotChart 
-You can populate a simple PivotChart with OLAP/Relational data completely from the server-side using WCF/WebAPI service. You can refer the **Getting Started** document available in the following UG documentation section.
+## WCF/WebAPI service to populate pivot chart
+You can populate a simple pivot chart with OLAP/relational data completely from the server-side using the WCF/WebAPI service. You can refer the **Getting Started** document available in the following UG documentation section.
  
-For Relational data source, [click here.](https://help.syncfusion.com/js/pivotchart/relational-getting-started#creating-a-simple-application-with-pivotchart-and-relational-datasource-server-mode)
+For relational data source, [click here.](https://help.syncfusion.com/js/pivotchart/relational-getting-started#creating-a-simple-application-with-pivotchart-and-relational-datasource-server-mode)
 
 For OLAP data source, [click here.](https://help.syncfusion.com/js/pivotchart/olap-getting-started#creating-a-simple-application-with-pivotchart-and-olap-datasource-server-mode)
  
-## Exporting Service
+## Exporting service
 
-### Excel Export
+### Excel export
 
-User can export contents of the PivotChart to Excel document for future archival, references and analysis purposes.
+You can export the contents of the pivot chart to Excel document for future archival, references, and analysis purposes.
 
 #### URL
 
@@ -44,7 +44,7 @@ User can export contents of the PivotChart to Excel document for future archival
 
 #### Request
 
-To achieve Excel export, service URL and file name is sent as the parameter.
+To achieve Excel export, the service URL and the file name are set as parameters.
 
 ##### JS
 
@@ -113,12 +113,12 @@ public void ExcelExport()
 
 ##### Content-Type: application/octet-stream
 
-##### Response for Excel Export:
-Browser will prompt a dialog box to save the Excel document.
+##### Response for Excel export:
+The browser will prompt a dialog box to save the Excel document.
 
-### Word Export
+### Word export
 
-User can export contents of the PivotChart to Word document for future archival, references and analysis purposes.
+You can export the contents of the pivot chart to Word document for future archival, references, and analysis purposes.
 
 #### URL
 
@@ -138,7 +138,7 @@ User can export contents of the PivotChart to Word document for future archival,
 
 #### Request
 
-To achieve Word export, service URL and file name is sent as the parameter.
+To achieve Word export, the service URL and the file name are set as parameters.
 
 ##### JS
 
@@ -207,12 +207,12 @@ public void WordExport()
 
 ##### Content-Type: application/octet-stream
 
-##### Response for Word Export:
-Browser will prompt a dialog box to save the Word document.
+##### Response for Word export:
+The browser will prompt a dialog box to save the Word document.
 
-### PDF Export
+### PDF export
 
-User can export contents of the PivotChart to PDF document for future archival, references and analysis purposes.
+You can export the contents of the pivot chart to the PDF document for future archival, references, and analysis purposes.
 
 #### URL
 
@@ -232,7 +232,7 @@ User can export contents of the PivotChart to PDF document for future archival, 
 
 #### Request
 
-To achieve PDF export, service URL and file name is sent as the parameter.
+To achieve PDF export, the service URL and the file name are set as parameters.
 
 ##### JS
 
@@ -301,12 +301,12 @@ public void PDFExport()
 
 ##### Content-Type: application/octet-stream
 
-##### Response for PDF Export:
-Browser will prompt a dialog box to save the PDF document.
+##### Response for PDF export:
+The browser will prompt a dialog box to save the PDF document.
 
-### Image Export
+### Image export
 
-User can export contents of the PivotChart to image format for future archival, references and analysis purposes. We can export PivotChart to the following image formats.
+You can export the contents of the pivot chart to image format for future archival, references, and analysis purposes. You can export the pivot chart to the following image formats:
 
 * PNG
 * EMF
@@ -332,7 +332,7 @@ User can export contents of the PivotChart to image format for future archival, 
 
 #### Request
 
-To export PivotChart in PNG format, service URL, file name and **“ej.PivotChart.ExportOptions.PNG”** enumeration value is sent as the parameter. This is similar to other image formats.
+To export the pivot chart in PNG format, the service URL, file name, and **“ej.PivotChart.ExportOptions.PNG”** enumeration value are set as parameters. This is similar to other image formats.
 
 ##### JS
 
@@ -406,5 +406,5 @@ public void ImageExport()
 ##### Content-Type: application/octet-stream
 
 ##### Response for PNG Export:
-Browser will prompt a dialog box to save the PNG image.
+The browser will prompt a dialog box to save the PNG image.
 

@@ -20,7 +20,7 @@ Connectors are objects used to create link between two points, nodes or ports to
 
 ### Add connectors through connectors collection
 
-* The [sourcePoint](/api/js/ejdiagram#members:connectors-sourcepoint "sourcePoint") and [targetPoint](/api/js/ejdiagram#members:connectors-targetpoint "targetPoint") properties of connector allow you to define the end points of a [connector](/api/js/ejdiagram#members:connectors "connector").
+* The [sourcePoint](/api/js/ejdiagram#members:connectors-sourcepoint "sourcePoint") and [targetPoint](/api/js/ejdiagram#members:connectors-targetpoint "targetPoint") properties of connector allow you to define the end points of a [connector](/api/js/ejdiagram#members:connectors "connector"). The [x](/api/js/ejdiagram#members:connectors-sourcepoint-x "x") and [y](/api/js/ejdiagram#members:connectors-sourcepoint-y "y") properties of `sourcePoint` and `targetPoint` allows you to define position x and y coordinate of end points. 
 
 The following code example illustrates how to add a connector through connector collection.
 
@@ -57,11 +57,13 @@ $("#DiagramContent").ejDiagram({
 
 ### Add connector at run time
 
-* Connectors can be added at runtime with the client side method, [add](/api/js/ejdiagram#methods:add "add"). The following code example illustrates how to add connector at runtime.
+* Connectors can be added at runtime with the client side method, [add](/api/js/ejdiagram#methods:add "add") and can be removed at runtime by using public method, [remove](/api/js/ejdiagram#methods:remove "remove"). 
 
 * To add a connector in group at runtime, define group name in connectors [parent](/api/js/ejdiagram#members:connectors-parent "parent") property.
 
 * The connector's [name](/api/js/ejdiagram#members:connectors-name "name") property is used to define the name of the connector and its further used to find the connector at runtime and do any customization.
+
+The following code example illustrates how to add connector at runtime.
 
 {% highlight javascript %}
 
@@ -124,7 +126,11 @@ diagram.updateConnector("connectorName", {
 
 ## Connect nodes
 
-The [SourceNode](/api/js/ejdiagram#members:connectors-sourcenode "SourceNode") and [targetNode](/api/js/ejdiagram#members:connectors-targetnode "targetNode") properties allow to define the nodes to be connected. The following code example illustrates how to connect two nodes.
+* The [SourceNode](/api/js/ejdiagram#members:connectors-sourcenode "SourceNode") and [targetNode](/api/js/ejdiagram#members:connectors-targetnode "targetNode") properties allow to define the nodes to be connected. 
+
+* When you establish the connection between sourceNode and targetNode, the [inEdges](/api/js/ejdiagram#members:nodes-inedges "inEdges") property of sourceNode and [outEdges](/api/js/ejdiagram#members:nodes-outedges "outEdges") property of targetNode will be updated automatically. it is a read-only properties. You can use these properties to get the incoming and outgoing connection of the node at runtime.
+
+* The following code example illustrates how to connect two nodes.
 
 {% highlight javascript %}
 
@@ -467,9 +473,11 @@ connectors.push(connector);
 
 * Start and end points of a connector can be decorated with some customizable shapes like arrows, circles, diamond or path. You can decorate the connection end points with the [sourceDecorator](/api/js/ejdiagram#members:connectors-sourcedecorator "sourceDecorator") and [targetDecorator](/api/js/ejdiagram#members:connectors-targetdecorator "targetDecorator") properties of connector.
 
-* To explore the properties of decorators, refer to [Decorator Properties](/api/js/ejdiagram#members:connectors-sourcedecorator "Decorator Properties").
+* The [shape](/api/js/ejdiagram#members:connectors-sourcedecorator-shape "shape") property of `sourceDecorator` allows to define the shape of the decorators. Similarly, the [shape](/api/js/ejdiagram#members:connectors-targetdecorator-shape "shape") property of `targetDecorator` allows to define the shape of the decorators.
 
-* The [shape](/api/js/ejdiagram#members:connectors-targetdecorator-shape "shape") property of decorator allows to define the shape of the decorators. The following code example illustrates how to create decorators of various shapes.
+* To create custom shape for sourceDecorator, use [pathData](/api/js/ejdiagram#members:connectors-sourcedecorator-pathdata "pathData") property. similarly, to create custom shape for targetDecorator, use [pathData](/api/js/ejdiagram#members:connectors-targetdecorator-pathdata "pathData") property.
+
+* The following code example illustrates how to create decorators of various shapes.
 
 {% highlight javascript %}
 
@@ -752,6 +760,14 @@ var connectors = [{
 
 ### Decorator Appearance
 
+* The sourceDecorator's [borderColor](/api/js/ejdiagram#members:connectors-sourcedecorator-bordercolor "borderColor"), [borderWidth](/api/js/ejdiagram#members:connectors-sourcedecorator-borderwidth "borderWidth") and [fillColor](/api/js/ejdiagram#members:connectors-sourcedecorator-fillcolor "fillColor") properties are used to customize the background and border appearance of the decorator.
+
+* To set the border color, border width and background color for the targetDecorator, use [borderColor](/api/js/ejdiagram#members:connectors-targetdecorator-bordercolor "borderColor"), [borderWidth](/api/js/ejdiagram#members:connectors-targetdecorator-borderwidth "borderWidth") and [fillColor](/api/js/ejdiagram#members:connectors-targetdecorator-fillcolor "fillColor").
+
+* To set the size for sourceDecorator, use [width](/api/js/ejdiagram#members:connectors-sourcedecorator-width "width") and [height](/api/js/ejdiagram#members:connectors-sourcedecorator-height "height") property. Similarly, to set the size for targetDecorator, use [width](/api/js/ejdiagram#members:connectors-targetdecorator-width "width") and [height](/api/js/ejdiagram#members:connectors-targetdecorator-height "height").
+
+* The [cssClass](/api/js/ejdiagram#members:connectors-sourcedecorator-cssclass "cssClass") property used to customize the style of sourceDecorator using user defined CSS class. Similarly, you can use targetDecorator [cssClass](/api/js/ejdiagram#members:connectors-targetdecorator-cssclass "cssClass") to customize the style of targetDecorator.
+
 The following code example illustrates how to customize the appearance of the decorator.
 
 {% highlight javascript %}
@@ -781,3 +797,7 @@ The [constraints](/api/js/ejdiagram#members:connectors-constraints "constraints"
 
 ## Custom Properties
 The [addInfo](/api/js/ejdiagram#members:connectors-addinfo "addInfo") property of connectors allows to maintain additional information to connectors.
+
+## Stack Order
+
+The connectors [zOrder](/api/js/ejdiagram#members:connectors-zorder "zOrder") property specifies the stack order of an connector. An connector with greater stack order is always in front of an connector with a lower stack order.

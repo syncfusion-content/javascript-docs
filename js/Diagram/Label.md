@@ -129,6 +129,8 @@ Label can be aligned relative to the node boundaries. It has margin, offset, hor
 
 The [offset](/api/js/ejdiagram#members:nodes-labels-offset "offset") property of label is used to align the labels based on fractions. 0 represents top/left corner, 1 represents bottom/right corner, and 0.5 represents half of width/height.
 
+To set size for a nodes label, use [width](/api/js/ejdiagram#members:nodes-labels-width "width") and [height](/api/js/ejdiagram#members:nodes-labels-height "height") properties.
+
 The following image shows the relationship between the label position (black colored circle) and offset (fraction values).
 
 ![](/js/Diagram/Label_images/Label_img2.png)
@@ -431,6 +433,11 @@ $("#diagram").ejDiagram({
 | Wrap | Text-wrapping occurs when the text overflows beyond the available node width. | ![](/js/Diagram/Label_images/Label_img21.png) |
 | WrapWithOverflow (Default) | Text-wrapping occurs when the text overflows beyond the available node width. However, the text may overflow beyond the node width in the case of a very long word. | ![](/js/Diagram/Label_images/Label_img22.png) |
 
+## TextOverflow
+
+* The label's [textOverflow](/api/js/ejdiagram#members:nodes-labels-textoverflow "textOverflow") property is used control whether to display the overflowed content in node or not. 
+* Also you can use label's [overflowType](/api/js/ejdiagram#members:nodes-labels-overflowtype "overflowType") property to define whether the overflowed content can be clipped (i.e. cut off, hidden) or display an ellipsis ('…').
+
 ## Appearance
 
 * You can change the font style of the labels with the font specific properties([fontSize](/api/js/ejdiagram#members:nodes-labels-fontsize "fontSize"), [fontFamily](/api/js/ejdiagram#members:nodes-labels-fontfamily "fontFamily"), [fontColor](/api/js/ejdiagram#members:nodes-labels-fontcolor "fontColor"). The following code illustrates how to customize the appearance of a label.
@@ -570,7 +577,7 @@ $("#diagram").ejDiagram({
 {% endhighlight %}
 
 ![](/js/Diagram/Label_images/Label_img25.png)
-
+ 
 ## Rotate
 
 You can rotate the labels to any desired angle. Labels are rotated to the angle that is defined by the [rotateAngle](/api/js/ejdiagram#members:nodes-labels-rotateangle "rotateAngle") property of label. The following code illustrates how to rotate a label.
@@ -669,6 +676,37 @@ $("#diagram").ejDiagram({
 
 {% endhighlight %}
 
+### Drag Limit
+
+* The diagram control now supports defining the [dragLimit](/api/js/ejdiagram#members:connectors-labels-dragLimit "dragLimit") to the label while dragging from the connector and also update the postion to the nearest segment offset.
+
+* You can set the value to dragLimit [left](/api/js/ejdiagram#members:connectors-labels-dragLimit-left "left"), [right](/api/js/ejdiagram#members:connectors-labels-dragLimit-right "right"), [top](/api/js/ejdiagram#members:connectors-labels-dragLimit-top "top") and [bottom](/api/js/ejdiagram#members:connectors-labels-dragLimit-bottom "bottom") properties which allows the dragging of connector labels to a certain limit based on user defined values.
+
+ * By default, drag limit will be disabled for connector. It can be enabled with the [constraints](/api/js/ejdiagram#members:connector-constraints "constraints") property of connector.
+
+{% highlight javascript %}
+
+var connectorConstraints = ej.datavisualization.Diagram.ConnectorConstraints;
+
+//Enables drag limit for a connector.
+var constraints = connectorConstraints.Default | connectorConstraints.DragLimit | connectorConstraints.DragLabel;
+
+//Initializes Diagram
+
+	$("#diagram").ejDiagram({
+		connectors:[
+			{
+				name:"connector1",
+				constraints: constraints,
+				labels:[
+					{ text:"connector", { dragLimit:{ left: 10, right: 10, top: 10, bottom: 10 }}}
+				]
+			}
+		]
+	});
+{% endhighlight %}
+
+
 ## Multiple labels
 
 You can add any number of labels to a node or connector. The following code illustrates how to add multiple labels to a node. 
@@ -718,7 +756,11 @@ $("#diagram").ejDiagram({
 
 ## LabelRendering Mode
 
-Labels can be rendered in separate layer as svg or html. 
+Diagram provides a support to render the label in the diagram in two mode by using [labelRenderingMode](/api/js/ejdiagram#members:labelrenderingmode "labelRenderingMode") property.
+
+* Text wrapping is not available for SVG elements by default. So while rendering the label in SVG mode, we have to achieve the wrapping by some calculation. So it will take more time when compared to rendering the label in HTML mode. Since text wrapping is available for HTML elements by default.
+
+* However while rendering the label in HTML mode, we have to face the below [limitation](/js/diagram/label#limitation "limitation").
 
 {% highlight javascript %}
 

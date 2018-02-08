@@ -637,7 +637,7 @@ The following table contains various types of BPMN boundaries.
 
 ### Data
 
-A data object represents information flowing through the process, such as data placed into the process, data resulting from the process, data that needs to be collected, or data that must be stored. To define a data object, set the [shape](/api/js/ejdiagram#members:nodes-shape "shape")  as "dataobject" and [type](/api/js/ejdiagram#members:nodes-data-type "type") property defines whether data is an input or a output. You can create multiple instances of data object with the [collection](/api/js/ejdiagram#members:nodes-data-collection "collection") property of data.
+A data object represents information flowing through the process, such as data placed into the process, data resulting from the process, data that needs to be collected, or data that must be stored. To define a [data](/api/js/ejdiagram#members:nodes-data "data") object, set the [shape](/api/js/ejdiagram#members:nodes-shape "shape")  as "dataobject" and [type](/api/js/ejdiagram#members:nodes-data-type "type") property defines whether data is an input or a output. You can create multiple instances of data object with the [collection](/api/js/ejdiagram#members:nodes-data-collection "collection") property of data.
 
 {% highlight javascript %}
 
@@ -717,9 +717,19 @@ Artifact is used to show additional information about a Process in order to make
 * Text Annotation
 * Group
 
-#### Text Annoatation
+#### Text Annotation
 
-A BPMN object can be associated with a text annotation which does not affect the flow but gives details about objects within a flow. The [annotation](/api/js/ejdiagram#members:nodes-annotation "annotation") property of the node is used to connect an annotation element to the BPNN node.
+* A BPMN object can be associated with a text annotation which does not affect the flow but gives details about objects within a flow. The [annotation](/api/js/ejdiagram#members:nodes-annotation "annotation") property of the node is used to connect an annotation element to the BPNN node.
+
+* The annotation [angle](/api/js/ejdiagram#members:nodes-annotation-angle "angle") property is used to set the angle between the BPMN shape and the annotation.
+
+* The annotation [direction](/api/js/ejdiagram#members:nodes-annotation-direction "direction") property is used to set direction of the text annotation.
+
+* To set the size for text annotation, use [width](/api/js/ejdiagram#members:nodes-annotation-width "width") and [height](/api/js/ejdiagram#members:nodes-annotation-height "height") properties.
+
+* The annotation [length](/api/js/ejdiagram#members:nodes-annotation-length "length") property is used to set the distance between the BPMN shape and the annotation.
+
+* The annotation [text](/api/js/ejdiagram#members:nodes-annotation-text "text") property defines the additional information about the flow object in a BPMN Process.
 
  {% highlight javascript %}
 
