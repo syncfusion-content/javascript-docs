@@ -91,6 +91,8 @@ The output of the TreeGrid with `dialogEditing` is as follows.
 
 ![](/js/TreeGrid/Editing_images/dialogEditing.png)
 
+The add and edit dialogs can be opened on custom actions instead of toolbar icons using the methods [`showAddDialog`](https://help.syncfusion.com/api/js/ejtreegrid#methods:showadddialog "showAddDialog") and [`showEditDialog`](https://help.syncfusion.com/api/js/ejtreegrid#methods:showeditdialog "showEditDialog").
+
 ## Cell edit type and its params
 
 The edit type of columns can be customized using [`editType`](/api/js/ejtreegrid#members:columns-edittype "columns.editType") property of [`columns`](/api/js/ejtreegrid#members:columns). The following Essential JavaScript controls are supported built-in by [`editType`](/api/js/ejtreegrid#members:columns-edittype "columns.editType"). You can set the [`editType`](/api/js/ejtreegrid#members:columns-edittype "columns.editType") based on specific data type of the column.
