@@ -239,7 +239,7 @@ In the HTML page, add the following button elements to configure RadioButton wid
 
     // Initializes the control in JavaScript
      $("#groupButton").ejGroupButton({
-        showRoundedCorner: true
+        enableRTL: true
     });
 
 {% endhighlight %}
