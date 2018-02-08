@@ -257,7 +257,7 @@ The various types of BPMN tasks are tabulated as follows.
 
 #### Subprocess
 
-A sub-process is a group of tasks which is used to hide or reveal details of additional levels which can be done using [collapsed](/api/js/ejdiagram#members:nodes-subprocess-collapsed "collapsed") property .
+A [sub-process](/api/js/ejdiagram#members:nodes-subprocess "sub-process") is a group of tasks which is used to hide or reveal details of additional levels which can be done using [collapsed](/api/js/ejdiagram#members:nodes-subprocess-collapsed "collapsed") property .
 
  {% highlight javascript %}
 
@@ -291,16 +291,16 @@ $("#diagram").ejDiagram({
 
 ![](/js/Diagram/Shapes_images/Shapes_img116.png)
 
-The different types of subprocess are as follows.
+The different types of subprocess are as follows. 
 
 * Event Subprocess
 * Transaction 
 
 ##### Event Subprocess
 
-A Sub-process is defined as an Event Sub-process when it is triggered by an event. An event-subprocess is placed within another subprocess which is not part of the normal flow of its parent process . You can set event to a sub-process with the [event](/api/js/ejdiagram#members:nodes-subprocess-event "event") and [trigger](/api/js/ejdiagram#members:nodes-subprocess-trigger "trigger") property of subprocess. 
+A Sub-process is defined as an Event Sub-process when it is triggered by an event. An event-subprocess is placed within another subprocess which is not part of the normal flow of its parent process . You can set event to a sub-process with the [event](/api/js/ejdiagram#members:nodes-subprocess-event "event") and [trigger](/api/js/ejdiagram#members:nodes-subprocess-trigger "trigger") property of subprocess. The [type](/api/js/ejdiagram#members:nodes-subprocess-type "type") property of sub-process allows you to define type of sub-process whether it should be event sub-process or transaction sub-process.
 
- {% highlight javascript %}
+{% highlight javascript %}
 
 $("#diagram").ejDiagram({
 	width: "100%",
@@ -334,7 +334,15 @@ $("#diagram").ejDiagram({
 
 ##### Transaction Subprocess
 
-An transaction is a set of activities that logically belong together, in which all contained activities must complete their parts of the transaction; otherwise the process is undone. The execution result of a transaction is one of Successful Completion, Unsuccessful Completion (Cancel), and Hazard (Exception). The [events](/api/js/ejdiagram#members:nodes-subprocess-events "events") property of subprocess allows to represent these results as an event attached to the subprocess. 
+* An transaction is a set of activities that logically belong together, in which all contained activities must complete their parts of the transaction; otherwise the process is undone. The execution result of a transaction is one of Successful Completion, Unsuccessful Completion (Cancel), and Hazard (Exception). The [events](/api/js/ejdiagram#members:nodes-subprocess-events "events") property of subprocess allows to represent these results as an event attached to the subprocess. 
+
+* The [event](/api/js/ejdiagram#members:nodes-subprocess-events-event "event") object allows you define the type of event by which the sub-process will be triggered. Also you can define [name](/api/js/ejdiagram#members:nodes-subprocess-events-name "name") of the event to identify the event at runtime.
+
+* The event's [offset](/api/js/ejdiagram#members:nodes-subprocess-events-offset "offset") property is used to set the fraction/ratio(relative to parent) that defines the position of the event shape.
+
+* The [trigger](/api/js/ejdiagram#members:nodes-subprocess-events-trigger "trigger") property defines the type of the event trigger.
+
+* You can also use define ports and labels to sub-process events by using event's [ports](/api/js/ejdiagram#members:nodes-subprocess-events-ports "ports") and [labels](/api/js/ejdiagram#members:nodes-subprocess-events-labels "labels") properties.
 
  {% highlight javascript %}
 
@@ -374,7 +382,7 @@ $("#diagram").ejDiagram({
 
 #### Processes 
 
-Processes is a array collection that defines the children values for BPMN subprocess.
+[processes](/api/js/ejdiagram#members:nodes-subprocess-processes "processes") is a array collection that defines the children values for BPMN subprocess.
 
 {% highlight javascript %}
 <div id="diagram"></div>
@@ -413,6 +421,7 @@ $("#diagram").ejDiagram({
 #### Loop
 
 Loop is a task that is internally being looped. The [loop](/api/js/ejdiagram#members:nodes-tasks-loop "loop") property of task allows you to define the type of loop. The default value for `loop` is "none". 
+You can define the [loop](/api/js/ejdiagram#members:nodes-subprocess-loop "loop") property in subprocess BPMN shape as shown in the below code.
 
 {% highlight javascript %}
 
@@ -471,7 +480,7 @@ The following table contains various types of BPMN loops.
 
 #### Compensation
 
-Compensation is triggered when operation is partially failed and you can enable it with the [compensation](/api/js/ejdiagram#members:nodes-tasks-compensation "compensation") property of task.
+Compensation is triggered when operation is partially failed and you can enable it with the [compensation](/api/js/ejdiagram#members:nodes-tasks-compensation "compensation") property of task and [compensation](/api/js/ejdiagram#members:nodes-subprocess-compensation "compensation") property of subprocess.
 
 {% highlight javascript %}
 

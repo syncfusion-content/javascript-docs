@@ -265,7 +265,7 @@ Organizational chart layout starts parsing from root and iterate through all its
 
 ### GetLayoutInfo
 
-You can set Chart orientations, chart types, and offset to be left between parent and child nodes by overriding the method, diagram.model.layout.getLayoutInfo. The [getLayoutInfo](api/js/ejdiagram#members:layout-getlayoutinfo "getLayoutInfo") method is called to configure every subtree of the organizational chart. It takes the following arguments.
+You can set Chart orientations, chart types, and offset to be left between parent and child nodes by overriding the method, diagram.model.layout.getLayoutInfo. The [getLayoutInfo](/api/js/ejdiagram#members:layout-getlayoutinfo "getLayoutInfo") method is called to configure every subtree of the organizational chart. It takes the following arguments.
 
 * `diagram`: Reference of diagram
 * `node`: Parent node to that options are to be customized
@@ -404,7 +404,7 @@ $("#diagram").ejDiagram({
 
 ### GetConnectorSegments
 
-You can customize the connector segments based on source and target nodes by overriding the method, diagram.model.layout.getConnectorSegments and it can be used only when the layout type set as `organizationalchart`. please refer to [getConnectorSegments](/api/js/ejDiagram#members:layout-getconnectorsegments "getConnectorSegments") to know more details about its argument and usage.
+You can customize the connector segments based on source and target nodes by overriding the method, diagram.model.layout.getConnectorSegments and it can be used only when the layout type set as `organizationalchart`. please refer to [getConnectorSegments](/api/js/ejdiagram#members:layout-getconnectorsegments "getConnectorSegments") to know more details about its argument and usage.
 
 ### Assistant
 

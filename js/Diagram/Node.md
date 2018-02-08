@@ -135,6 +135,10 @@ When the node/connector properties are changed at runtime, the [propertyChange](
 
 * The size of the node can be controlled by using its [width](/api/js/ejdiagram#members:nodes-width "width") and [height](/api/js/ejdiagram#members:nodes-height "height") properties.
 
+* Rotation of a node is controlled by using its [rotateAngle](/api/js/ejdiagram#members:nodes-rotateangle "rotateAngle") property.
+
+* You can update the above properties at runtime using updateNode method.
+
 
 The following table illustrates how pivot relates offset values with node boundaries.
 
