@@ -116,8 +116,8 @@ Once you activate the TextTool, you can also able to perform label editing of a 
 
 ### setTool
 
-The [setTool](/api/js/ejdiagram#events:settool "setTool") method is used to decide action on the diagramming elements whether to draw connector on port hover or drag ports which is on the diagram elements.
-When the port is detected on mouse hover of diagram elements, the element's name will be set in the ports [parent](/api/js/ejdiagram#members:nodes-ports-parent "parent") property.
+* The [setTool](/api/js/ejdiagram#events:settool "setTool") method is provided for the purpose of deciding action whether to draw connector on port hover or drag ports which is on the diagram elements. it is triggered when mouse hover on the diagram.
+* When the port is detected on mouse hover of diagram elements, the element's name will be set in the ports [parent](/api/js/ejdiagram#members:nodes-ports-parent "parent") property.
 
 ## Tool Selection
 

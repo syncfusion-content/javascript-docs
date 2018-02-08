@@ -180,7 +180,6 @@ The following screen short illustrates how the nodes are dragged from one diagra
 ## Rotate
 
 * A rotate handler is placed above the selector. Clicking and dragging the handler in a circular direction lead to rotate the node.
-* You can use node's [rotateAngle](/api/js/ejdiagram#members:nodes-rotateangle "rotateAngle") property to set an angle to which node should be rotated. You can define this property in node while rendering it initially and also update the node's angle at runtime using this property in updateNode method.
 * The node is rotated with reference to the static pivot point.
 * Pivot thumb (thumb at the middle of the node) appears while rotating the node to represent the static point.
 * For more information about pivot, refer to [Position](/js/Diagram/Node#position "Position").
@@ -374,9 +373,9 @@ The [horizontalAlignment](/api/js/ejdiagram#members:selecteditems-userhandles-ho
 
 **Margin** is an absolute value used to add some blank space in any one of its four sides. You can displace the userhandle with the [margin](/api/js/ejdiagram#members:selecteditems-userhandles-margin "margin") property.
 
-### Interaction with MultiSelected elements
+### GetConstraints
 
-The [getConstraints](/api/js/ejdiagram#members:selecteditems-getconstraints "getConstraints") method is used to dynamically enables/disables the interaction with multiple selection.
+The [getConstraints](/api/js/ejdiagram#members:selecteditems-getconstraints "getConstraints") is provided for the purpose of interaction with multiple selection. In this function, when you perform multiselection with elements in which any one of the element has an interaction disabled, then you can decide whether to enable it using this method.
 
 ### Appearance
 

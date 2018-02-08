@@ -117,9 +117,7 @@ For more information about creating connections with port, refer to [Connections
 
 ## Appearance 
 
-* You can change the shape of port by using its [shape](/api/js/ejdiagram#members:nodes-ports-shape "shape") property. To explore the different types of port shapes, refer to [Port Shapes](/api/js/ejdiagram#members:nodes-ports-shape "Port Shapes").
-
-* The [pathData](/api/js/ejdiagram#members:nodes-ports-pathdata "pathData") property of port allows you to define the path to be drawn.
+* You can change the shape of port by using its [shape](/api/js/ejdiagram#members:nodes-ports-shape "shape") property. To explore the different types of port shapes, refer to [Port Shapes](/api/js/ejdiagram#members:nodes-ports-shape "Port Shapes"). If you need to render a custom shape, then you can set shape as `path` and define path using [pathData](/api/js/ejdiagram#members:nodes-ports-pathdata "pathData") property of port.
 
 * The appearance of ports can be customized by using [borderColor](/api/js/ejdiagram#members:nodes-ports-bordercolor "borderColor"), [borderWidth](/api/js/ejdiagram#members:nodes-ports-borderwidth "borderWidth"), [fillColor](/api/js/ejdiagram#members:nodes-ports-fillcolor "fillColor") properties of the port. 
 

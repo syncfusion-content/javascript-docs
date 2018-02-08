@@ -395,9 +395,9 @@ $("#diagram").ejDiagram({
 
 ![](/js/Diagram/Label_images/Label_img33.png)
 
-## Render Label As HTML/Svg Template
+## Template support for Label
 
-**Diagram** provides a support to render HTML/Svg template in a nodes/connectors label. You need to define a script template with HTML/Svg content and set script id in a label's [templateId](/api/js/ejdiagram#members:nodes-labels-templateid "templateId") property. 
+**Diagram** provides a template support for label. You need to define a id of template(SVG/Html) using label's [templateId](/api/js/ejdiagram#members:nodes-labels-templateid "templateId") property. 
 
 ## Wrapping
 
