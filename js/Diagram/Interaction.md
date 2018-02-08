@@ -93,6 +93,10 @@ The client side method [updateSelectedObject](/api/js/ejdiagram#methods:updatese
 
 N> SelectedItems’s children is a read-only property. You cannot change the children collection at run time.
 
+#### GetConstraints
+
+The SelectedItems’s [getConstraints](/api/js/ejdiagram#members:selecteditems-getconstraints "getConstraints") function is provided for the purpose of to decide the interaction with multiple selection. The method is used to decide when you perform interaction with multiple selected elements in which any one of the element has an interaction disabled, then you can decide whether interaction such as dragging, resizing and rotation needs to be enabled or not.
+
 ### Select entire elements in diagram programmatically
 
 The client side method selectAll used to select all the elements such as nodes/connectors in diagram. Please refer to below link which shows how to use selectAll method on diagram.
@@ -372,10 +376,6 @@ The [horizontalAlignment](/api/js/ejdiagram#members:selecteditems-userhandles-ho
 #### Margin
 
 **Margin** is an absolute value used to add some blank space in any one of its four sides. You can displace the userhandle with the [margin](/api/js/ejdiagram#members:selecteditems-userhandles-margin "margin") property.
-
-### GetConstraints
-
-The [getConstraints](/api/js/ejdiagram#members:selecteditems-getconstraints "getConstraints") is provided for the purpose of interaction with multiple selection. In this function, when you perform multiselection with elements in which any one of the element has an interaction disabled, then you can decide whether to enable it using this method.
 
 ### Appearance
 

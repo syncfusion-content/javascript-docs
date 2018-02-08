@@ -298,9 +298,9 @@ The different types of subprocess are as follows.
 
 ##### Event Subprocess
 
-A Sub-process is defined as an Event Sub-process when it is triggered by an event. An event-subprocess is placed within another subprocess which is not part of the normal flow of its parent process . You can set [type](/api/js/ejdiagram#members:nodes-subprocess-type "type") as `event` and put event to a sub-process with the [event](/api/js/ejdiagram#members:nodes-subprocess-event "event") and [trigger](/api/js/ejdiagram#members:nodes-subprocess-trigger "trigger") property of subprocess. 
+A Sub-process is defined as an Event Sub-process when it is triggered by an event. An event-subprocess is placed within another subprocess which is not part of the normal flow of its parent process . You can set event to a sub-process with the [event](/api/js/ejdiagram#members:nodes-subprocess-event "event") and [trigger](/api/js/ejdiagram#members:nodes-subprocess-trigger "trigger") property of subprocess. The [type](/api/js/ejdiagram#members:nodes-subprocess-type "type") property of sub-process allows you to define type of sub-process whether it should be event sub-process or transaction sub-process.
 
- {% highlight javascript %}
+{% highlight javascript %}
 
 $("#diagram").ejDiagram({
 	width: "100%",
@@ -335,10 +335,14 @@ $("#diagram").ejDiagram({
 ##### Transaction Subprocess
 
 * An transaction is a set of activities that logically belong together, in which all contained activities must complete their parts of the transaction; otherwise the process is undone. The execution result of a transaction is one of Successful Completion, Unsuccessful Completion (Cancel), and Hazard (Exception). The [events](/api/js/ejdiagram#members:nodes-subprocess-events "events") property of subprocess allows to represent these results as an event attached to the subprocess. 
-* The [event](/api/js/ejdiagram#members:nodes-subprocess-events-event "event") property in events collection is used to set the type of event by which the sub-process will be triggered
-* The [offset](/api/js/ejdiagram#members:nodes-subprocess-events-offset "offset") property in events collection is used to set the fraction/ratio(relative to parent) that defines the position of the event shape.
+
+* The [event](/api/js/ejdiagram#members:nodes-subprocess-events-event "event") object allows you define the type of event by which the sub-process will be triggered. Also you can define [name](/api/js/ejdiagram#members:nodes-subprocess-events-name "name") of the event to identify the event at runtime.
+
+* The event's [offset](/api/js/ejdiagram#members:nodes-subprocess-events-offset "offset") property is used to set the fraction/ratio(relative to parent) that defines the position of the event shape.
+
 * The [trigger](/api/js/ejdiagram#members:nodes-subprocess-events-trigger "trigger") property defines the type of the event trigger.
-* You can define [name](/api/js/ejdiagram#members:nodes-subprocess-events-name "name"), [ports](/api/js/ejdiagram#members:nodes-subprocess-events-ports "ports") and [labels](/api/js/ejdiagram#members:nodes-subprocess-events-labels "labels") collection in events collection.
+
+* You can also use define ports and labels to sub-process events by using event's [ports](/api/js/ejdiagram#members:nodes-subprocess-events-ports "ports") and [labels](/api/js/ejdiagram#members:nodes-subprocess-events-labels "labels") properties.
 
  {% highlight javascript %}
 
