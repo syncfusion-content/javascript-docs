@@ -571,7 +571,7 @@ $("#collapseAtLevel").click(function () {
 
 ### Customize expand/collapse action
 
-In TreeGrid,While expanding the parent row [`expanding`](https://help.syncfusion.com/api/js/ejtreegrid#events:expanding) and [`expanded`](https://help.syncfusion.com/api/js/ejtreegrid#events:expanded) event will be trigger with current expanding row detail. Similarly [`collapsing`](https://help.syncfusion.com/api/js/ejtreegrid#events:collapsing) and [`collapsed`](https://help.syncfusion.com/api/js/ejtreegrid#events:collapsed) event will be trigger while collapsing the parent row. Using this event and it's arguments we can customize the expand/collaase action.
+In TreeGrid,While expanding the parent row [`expanding`](https://help.syncfusion.com/api/js/ejtreegrid#events:expanding) and [`expanded`](https://help.syncfusion.com/api/js/ejtreegrid#events:expanded) event will be trigger with current expanding row detail. Similarly [`collapsing`](https://help.syncfusion.com/api/js/ejtreegrid#events:collapsing) and [`collapsed`](https://help.syncfusion.com/api/js/ejtreegrid#events:collapsed) event will be trigger while collapsing the parent row. Using this event and it's arguments we can customize the expand/collapse action.
 
 The following code example shows how to prevent the particular row from expand/collapse action using [`expanding`](https://help.syncfusion.com/api/js/ejtreegrid#events:expanding) and [`collapsing`](https://help.syncfusion.com/api/js/ejtreegrid#events:collapsing) event.
 
