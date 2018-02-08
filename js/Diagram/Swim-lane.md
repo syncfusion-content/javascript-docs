@@ -147,11 +147,15 @@ var header = {
 ## Lane
 
 Lane is a functional unit or a responsible department of a business process that helps to map a process within the functional unit or in between other functional units.
-You can add any number of lanes to a swimlane and the lanes are automatically stacked inside a swimlane based in the order they are added.
+You can add any number of [lanes](/api/js/ejdiagram#members:nodes-lanes "lanes") to a swimlane and the lanes are automatically stacked inside a swimlane based in the order they are added.
 
 ### Create an empty lane
 
-To create an empty lane, you need to define an object with [isLane](/api/js/ejdiagram#members:nodes-lanes-islane "isLane") property that helps identify the object as a lane. The following example illustrates how to define a swimlane with a lane.
+* To create an empty lane, you need to define an object with [isLane](/api/js/ejdiagram#members:nodes-lanes-islane "isLane") property that helps identify the object as a lane. 
+
+* The lane's [name](/api/js/ejdiagram#members:nodes-lanes-name "name") property is used to define the name of the lane and its further used to find the lane at runtime and do any customization.
+
+The following example illustrates how to define a swimlane with a lane.
 
 {% highlight javascript %}
 
@@ -185,8 +189,9 @@ var swimlane = {
 
 ### Create a lane with header
 
-The [header](/api/js/ejdiagram#members:nodes-lanes-header "header") property of the lane allows you to textually describe the lane(`text`) and to customize the appearance of the description. The following code example illustrates how to define a lane header.
-You can limit the size of a lane with its [minWidth](/api/js/ejdiagram#members:nodes-minwidth "minWidth"), [minHeight](/api/js/ejdiagram#members:nodes-minheight "minHeight"), [maxWidth](/api/js/ejdiagram#members:nodes-maxwidth "maxWidth"), and [maxHeight](/api/js/ejdiagram#members:nodes-maxheight "maxHeight") properties.
+* The [header](/api/js/ejdiagram#members:nodes-lanes-header "header") property of the lane allows you to textually describe the lane(`text`) and to customize the appearance of the description. The following code example illustrates how to define a lane header.
+
+* The size of the lane can be controlled by using its [width](/api/js/ejdiagram#members:nodes-lanes-width "width") and [height](/api/js/ejdiagram#members:nodes-lanes-height "height") properties. Also you can limit the size of a lane with its [minWidth](/api/js/ejdiagram#members:nodes-minwidth "minWidth"), [minHeight](/api/js/ejdiagram#members:nodes-minheight "minHeight"), [maxWidth](/api/js/ejdiagram#members:nodes-maxwidth "maxWidth"), and [maxHeight](/api/js/ejdiagram#members:nodes-maxheight "maxHeight") properties.
 
 {% highlight javascript %}
 
@@ -303,17 +308,35 @@ var swimlane = {
 
 ## Add lane at runtime
 
-We can add a lane at runtime width client side API method addLane. please refer to the below link whcih shows how to use addLane method in diagram.
+We can add a lane at runtime width client side API method addLane. please refer to the below link which shows how to use addLane method in diagram.
 
 [addLane](/api/js/ejdiagram#methods:addlane "addLane"). 
 
+## Customizing Lanes appearance
+
+* To set a background color for an lane, use [fillColor](/api/js/ejdiagram#members:nodes-lanes-fillcolor "fillColor") property.
+
+* The lanes [cssClass](/api/js/ejdiagram#members:nodes-lanes-cssclass "cssClass") property is used to customize the style of lanes using user defined CSS class.
+
+## Custom Properties
+
+The [addInfo](/api/js/ejdiagram#members:nodes-lanes-addinfo "addInfo") property of lane allows to maintain additional information to lane.
+
+## Stack Order
+
+The lanes [zOrder](/api/js/ejdiagram#members:nodes-lanes-zorder "zOrder") property specifies the stack order of an lane. An lane with greater stack order is always in front of an lane with a lower stack order.
+
 ## Phase
 
-Phases are the sub-processes that are used to break the swimlane into multiple smaller regions.
+[Phases](/api/js/ejdiagram#members:nodes-phases "phases") are the sub-processes that are used to break the swimlane into multiple smaller regions.
 
 ### Add phase
 
-To define a phase, you have to set the length of the region to the [offset](/api/js/ejdiagram#members:nodes-phases-offset "offset") property of phase. Every region can be textually described with the [label](/api/js/ejdiagram#members:nodes-phases-label "label") property of phase.
+* To define a phase, you have to set the length of the region to the [offset](/api/js/ejdiagram#members:nodes-phases-offset "offset") property of phase. Every region can be textually described with the [label](/api/js/ejdiagram#members:nodes-phases-label "label") property of phase.
+
+* The phase's [name](/api/js/ejdiagram#members:nodes-phases-name "name") property is used to define the name of the phase and its further used to find the phase from swimlane at runtime and do any customization.
+
+* The swimlane [phaseSize](/api/js/ejdiagram#members:nodes-phasesize "phaseSize") property is used to set the height/width of the phase header based on [orientation](/api/js/ejdiagram#members:nodes-orientation "orientation") property of swimlane.
 
 The following code example illustrates how to add a phase on initializing swimlane.
 
@@ -387,6 +410,10 @@ diagram.updateNode("phaseName", options);
 {% endhighlight %}
 
 N> A default phase is added, when the phase collection of the swimlane is empty. When the phase collection is initialized, a default phase is appended at the end of swimlane.
+
+## Customizing phase appearance
+
+* The phase [lineColor](/api/js/ejdiagram#members:nodes-phases-linecolor "lineColor"), [lineDashArray](/api/js/ejdiagram#members:nodes-phases-linedasharray "lineDashArray"), [lineWidth](/api/js/ejdiagram#members:nodes-phases-linewidth "lineWidth") properties are used to customize the line style of the phase.
 
 ## Limitations
 

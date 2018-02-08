@@ -163,6 +163,7 @@ You can update data dynamically in the Spreadsheet by using the following method
 * Using [`updateData`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:updatedata "updateData") method to update the data for the specified range of cells in the Spreadsheet.
 * Using [`updateUniqueData`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:updateuniquedata "updateUniqueData") method to update the unique data for the specified range of cells in Spreadsheet.
 * Using [`updateCell`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xledit-updatecell "updateCell") method to update a particular cell value in the Spreadsheet.
+* Using [`updateValue`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xledit-updatevalue "updateValue") method to update a particular cell value and its format in the Spreadsheet.
 
 You can update range dynamically in the Spreadsheet by using the following methods.
 

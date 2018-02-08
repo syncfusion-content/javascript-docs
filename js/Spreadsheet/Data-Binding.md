@@ -440,7 +440,7 @@ $(function () {
 The following output is displayed as a result of the above code snippets.
 ![](Data-Binding_images/Data-Binding_img4.png)
 
-N> To get the active cell and data settings in Spreadsheet, use [`getActiveCell`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:getactivecell "getActiveCell") and [`getDataSettings`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:getdatasettings "getDataSettings") methods.
+N> To get the active sheet index and data settings in Spreadsheet, use [`getActiveSheetIndex`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:getactivesheetindex "getActiveSheetIndex") and [`getDataSettings`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:getdatasettings "getDataSettings") methods.
 
 ### Range Binding
 

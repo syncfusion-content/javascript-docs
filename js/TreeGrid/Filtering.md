@@ -286,3 +286,56 @@ $("#Treegrid ").ejTreeGrid ({
 ![](/js/TreeGrid/Filtering_images/Filtering_img8.png)
 
 The above screen shot shows TreeGrid search with ‘Plan’ key word.
+
+The toolbox searching can be customized using the [`searchSettings`](https://help.syncfusion.com/api/js/ejtreegrid#members:searchsettings "searchSettings") property. It is possible to search the TreeGrid content with the specific column values as the query for searching, using the property [`searchSettings.field`](https://help.syncfusion.com/api/js/ejtreegrid#members:searchsettings-fields "searchSettings.field").
+The below code example explains searching the TreeGrid content across the "TaskId" and "TaskName" columns.
+
+{% highlight js %}
+        $("#treegrid").ejTreeGrid({
+            searchSettings: {
+                fields: ["TaskId", "TaskName"],
+            }
+        });
+        
+{% endhighlight %}
+
+It is possible to filter the TreeGrid contents at initial load using the toolbar search, with the [`searchSettings.key`](https://help.syncfusion.com/api/js/ejtreegrid#members:searchsettings-key "searchSettings.key") property.
+The below code example explains filtering the TreeGrid contents at initial load with a search key, which will be applied accross all the columns.
+
+{% highlight js %}
+        $("#treegrid").ejTreeGrid({
+            searchSettings: {
+                key: "task 1",
+            }
+        });
+{% endhighlight %}
+
+TreeGrid provides support for conditional searching with operators in toolbar search using the property [`searchSettings.operator`](https://help.syncfusion.com/api/js/ejtreegrid#members:searchsettings-operator "searchSettings.operator"). And case sensitivity for the search query can be ignored using the property [`searchSettings.ignoreCase`](https://help.syncfusion.com/api/js/ejtreegrid#members:searchsettings-ignorecase "searchSettings.ignoreCase").
+The below code example explains filtering the TreeGrid content using toolbar search with operators
+
+{% highlight js %}
+
+        $("#treegrid").ejTreeGrid({
+            searchSettings: {
+                fields: ["TaskName"],
+                key: "Task 1",
+                operator: "startsWith",
+                ignoreCase: false
+            }
+        });
+        
+{% endhighlight %}
+
+If the toolbar search textbox is not enabled in TreeGrid, and still if the contents need to be filtered at initial load using the `searchSettings` property, then the user should enable the [`allowSearching`](https://help.syncfusion.com/api/js/ejtreegrid#members:allowsearching "allowSearching") property along with search settings.
+
+{% highlight js %}
+
+        $("#treegrid").ejTreeGrid({
+            //...
+            allowSearching: true,
+            searchSettings: {
+                key: "Plan"
+            },
+        });
+        
+{% endhighlight %}

@@ -15,13 +15,13 @@ Diagram provides support to auto-arrange the nodes in the Diagram area that is r
 * Hierarchical Layout
 * Organization Chart
 * Radial Tree
+* Symmetric Layout
 
 ## Hierarchical Layout
 
 The Hierarchical Tree Layout arranges nodes in a tree-like structure, where the nodes in the hierarchical layout may have multiple parents. There is no need to specify the layout root.
 To arrange the nodes in hierarchical structure, you need to specify the layout [type](/api/js/ejdiagram#members:layout-type "type") as hierarchical tree. The following example shows how to arrange the nodes in a hierarchical structure.
-
-
+ 
 {% highlight javascript %}
 
 //Initializes data source
@@ -91,11 +91,11 @@ $("#diagram").ejDiagram({
 
 ![](/js/Diagram/Automatic-Layout_images/Automatic-Layout_img1.png)
 
-N> You can ignore a particular Node from layout arrangement by setting its [excludeFromLayout](api/js/ejdiagram#members:nodes-excludefromlayout "excludeFromLayout") property as true.
+N> You can ignore a particular Node from layout arrangement by setting its [excludeFromLayout](/api/js/ejdiagram#members:nodes-excludefromlayout "excludeFromLayout") property as true.
 
 ## Radial Tree Layout
 
-The Radial Tree layout arranges nodes on a virtual concentric circles around a root node. Sub-trees formed by the branching of child nodes are located radially around the child nodes. This arrangement results in an ever-expanding concentric arrangement with radial proximity to the root node indicating the node level in the hierarchy. When no root node is set, the algorithm automatically considers one of the Diagram nodes as the root node.
+The Radial Tree layout arranges nodes on a virtual concentric circles around a root node. Sub-trees formed by the branching of child nodes are located radially around the child nodes. This arrangement results in an ever-expanding concentric arrangement with radial proximity to the root node indicating the node level in the hierarchy. You can use layout [root](/api/js/ejdiagram#members:layout-root "root") property to define the root node of the layout. When no root node is set, the algorithm automatically considers one of the Diagram nodes as the root node.
 
 To arrange nodes in a radial tree structure, you need to set the [type](/api/js/ejdiagram#members:layout-type "type") of the layout as `radialtree`. The following code illustrates how to arrange the nodes in a radial tree structure.
 
@@ -402,6 +402,10 @@ $("#diagram").ejDiagram({
 
 ![](/js/Diagram/Automatic-Layout_images/Automatic-Layout_img10.png)
 
+### GetConnectorSegments
+
+You can customize the connector segments based on source and target nodes by overriding the method, diagram.model.layout.getConnectorSegments and it can be used only when the layout type set as `organizationalchart`. please refer to [getConnectorSegments](/api/js/ejDiagram#members:layout-getconnectorsegments "getConnectorSegments") to know more details about its argument and usage.
+
 ### Assistant
 
 **Assistants** are child item that have a different relationship with the parent node. They are laid out in a dedicated part of the tree. You can specify a node as an assistant of its parent by adding it to `assistants` property of the argument "options".
@@ -472,6 +476,81 @@ $("#diagram").ejDiagram({
 {% endhighlight %}
 
 ![](/js/Diagram/Automatic-Layout_images/Automatic-Layout_img11.png)
+
+##  Symmetric Layout
+
+The symmetric layout has been formed using nodes position by closer together or pushing them further apart. This is repeated iteratively until the system comes to an equilibrium state. 
+
+The layout's [springLength](/api/js/ejdiagram#members:layout-springlength "springLength") defined as how long edges should be, ideally. This will be the resting length for the springs. Edge attraction and vertex repulsion forces to be defined by using layout's [springFactor](/api/js/ejdiagram#members:layout-springfactor "springFactor"), the more sibling nodes repel each other. The relative positions do not change anymore from one iteration to the next.  We can specify the no of iteration by using layout's [maxIteration](/api/js/ejdiagram#members:layout-maxiteration "maxIteration"). 
+
+The following code illustrates how to arrange the nodes in a radial tree structure. 
+
+{% highlight javascript %}
+
+        var nodes = [];
+        var connectors = [];
+        // creating the connection between the layout nodes and connectors.
+        function connectNodes(parentNode, childNode) {
+            var connector = {
+                name: parentNode.name + childNode.name,
+                sourceNode: parentNode.name,
+                targetNode: childNode.name,
+                targetDecorator: { shape: "none" }
+            };
+            return connector;
+        }
+
+        // creating the layout nodes as rectangle in shape.
+        function getRectangle(name) {
+            var node = {
+                name: name, height: 25, width: 25, borderColor: "#5e5e5e", borderWidth: 1, fillColor: "#ff6329", shape: "ellipse"
+            };
+            return node;
+        }
+
+        // creating the symmetrical layout child elements hierarchy.
+        function populateNodes() {
+            var parentRect = getRectangle("p");
+            nodes.push(parentRect);
+            for (var i = 0; i < 2; i++) {
+                var childRect_i = getRectangle("c" + i);
+                nodes.push(childRect_i);
+                for (var j = 0; j < 2; j++) {
+                    var childRect_j = getRectangle("c" + i + j);
+                    nodes.push(childRect_j);
+                    for (var k = 0; k < 6; k++) {
+                        var childRect_k = getRectangle("c" + i + j + k);
+                        nodes.push(childRect_k);
+                        connectors.push(connectNodes(childRect_j, childRect_k));
+                    }
+                    connectors.push(connectNodes(childRect_i, childRect_j));
+                }
+                connectors.push(connectNodes(parentRect, childRect_i));
+            }
+            return nodes;
+        }
+
+        $("#diagram").ejDiagram({
+            //sets the layout child elements
+            nodes: populateNodes(),
+            connectors: connectors,
+            //sets the layout as symmetric layout
+            layout: {
+                type: ej.datavisualization.Diagram.LayoutTypes.SymmetricLayout,
+                springLength: 80,
+                margin: {
+                    left: 0,
+                    top: 20,
+                },
+                springFactor: .8,
+                maxIteration: 500
+            }
+        });
+
+{% endhighlight %}
+
+![](/js/Diagram/Automatic-Layout_images/Automatic-Layout_img17.png)
+
 
 ## Customize Layout
 
@@ -721,7 +800,7 @@ Diagram allows to refresh the layout at runtime. To refresh the layout, refer to
 
 ### nodeTemplate
 
-The [nodeTemplate](api/js/ejdiagram#members:nodetemplate "nodeTemplate") function is provided for the purpose of customizing nodes.It will be called for each node on node initialization. In this function, we can customize the node style and its properties and can bind the custom JSON with node.  
+The [nodeTemplate](/api/js/ejdiagram#members:nodetemplate "nodeTemplate") function is provided for the purpose of customizing nodes.It will be called for each node on node initialization. In this function, we can customize the node style and its properties and can bind the custom JSON with node.  
 
 {% highlight javascript %}
 
@@ -767,7 +846,7 @@ $("#diagramcontent").ejDiagram(
 
 ### connectorTemplate
 
-The [connectorTemplate](api/js/ejdiagram#members:connectortemplate "connectorTemplate") function is provided for the purpose of customizing connectors.It will be called for each connector on connector initialization. In this function, we can customize the connector style and its properties and can bind the custom JSON with connector.
+The [connectorTemplate](/api/js/ejdiagram#members:connectortemplate "connectorTemplate") function is provided for the purpose of customizing connectors.It will be called for each connector on connector initialization. In this function, we can customize the connector style and its properties and can bind the custom JSON with connector.
 
 {% highlight javascript %}
 

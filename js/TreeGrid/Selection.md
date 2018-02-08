@@ -117,6 +117,8 @@ The output of the TreeGrid with cell selection is as follows.
 
 ![](/js/TreeGrid/Selection_images/Selection_img3.png)
 
+It is possible to get the list of HTML elements of the selected cells at run-time using the [`getSelectedCells`](https://help.syncfusion.com/api/js/ejtreegrid#methods:getselectedcells "getSelectedCells") method.
+
 ### Select cells dynamically
 
 You can select the cells programmatically using the [`selectCells`](/api/js/ejtreegrid#methods:selectcells "selectCells(indexes,preservePreviousSelectedCell)") public method. Find the code example below for details.
