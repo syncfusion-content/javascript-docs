@@ -156,7 +156,7 @@ The following screenshot displays the **spline chart**.
 
 ![](Chart-Types_images/SplineChart.png)
 
-## Area cchart
+## Area chart
 
 The **area chart** emphasizes the degree of change of values over a period of time. Instead of rendering the data as discrete bars or columns, the area chart renders continuous ebb-and-flow pattern as defined against the y-axis.
 

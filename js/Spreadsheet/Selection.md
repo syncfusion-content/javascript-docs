@@ -33,7 +33,7 @@ You can set default [`selectionType`](https://help.syncfusion.com/api/js/ejsprea
 
 Cell selection is used to select a single or multiple cells. It can be performed using [`selectRange`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlselection-selectrange "selectRange") and [`performSelection`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:performselection "performSelection") method. 
 
-To clear the selection use [`clearAll`]() method.
+To clear the selection use [`clearAll`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlselection-clearall) method.
 
 The following code example describes the above behavior,
 

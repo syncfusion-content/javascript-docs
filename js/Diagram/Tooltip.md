@@ -100,7 +100,7 @@ $("#diagram").ejDiagram({
 
 ## Tooltip for a specific node/connector
 
-Tooltips can be customized for every node. Tooltip can be defined for individual node/connector by using the [tooltip](/api/js/ejdiagram#members:nodes-tooltip "tooltip") property of that node/connector. In addition to that, you have to remove the **InheritTooltip** option from the [constraints](/api/js/ejdiagram#members:constraints "constraints") of that node/connector. The following code example illustrates how to customize tooltips for individual elements.
+Tooltips can be customized for each node and connector. Tooltip can be defined for individual node/connector by using the node's [tooltip](/api/js/ejdiagram#members:nodes-tooltip "tooltip") and connector's [tooltip](/api/js/ejdiagram#members:connectors-tooltip "tooltip") property. In addition to that, you have to remove the **InheritTooltip** option from the [constraints](/api/js/ejdiagram#members:constraints "constraints") of that node/connector. The following code example illustrates how to customize tooltips for individual elements.
 
 {% highlight javascript %}
 
@@ -130,7 +130,11 @@ node = {
 
 ### Tooltip relative to object
 
-Diagram provides support to show tooltip around the node/connector that is hovered by mouse. You can align the tooltip as you wish by using the [alignment](/api/js/ejdiagram#members:tooltip-alignment "alignment") and [margin](/api/js/ejdiagram#members:tooltip-margin "margin") properties of tooltip. The [relativeMode](/api/js/ejdiagram#members:tooltip-relativemode "relativeMode") property of tooltip defines whether the tooltip has to be displayed around the object or at the mouse position. The following code example illustrates how to position the tooltip around object.
+* Diagram provides support to show tooltip around the node/connector that is hovered by mouse. You can align the tooltip as you wish by using the [alignment](/api/js/ejdiagram#members:tooltip-alignment "alignment") and [margin](/api/js/ejdiagram#members:tooltip-margin "margin") properties of tooltip. The [relativeMode](/api/js/ejdiagram#members:tooltip-relativemode "relativeMode") property of tooltip defines whether the tooltip has to be displayed around the object or at the mouse position. 
+
+* The alignment's [horizontal](/api/js/ejdiagram#members:tooltip-alignment-horizontal "horizontal") and [vertical](/api/js/ejdiagram#members:tooltip-alignment-vertical "vertical") properties are used to align the tooltip with horizontal and vertical direction.
+
+The following code example illustrates how to position the tooltip around object.
 
 {% highlight html %}
 

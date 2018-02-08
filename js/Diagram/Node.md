@@ -56,9 +56,17 @@ $("#diagram").ejDiagram({
 ![](/js/Diagram/Node_images/Node_img2.png)
 
 
-### Add node at runtime
+### Add/Remove node at runtime
 
-Nodes can be added at runtime by using public method, [add](/api/js/ejdiagram#methods:add "add"). The following code illustrates how to add a node.
+* Nodes can be added at runtime by using public method, [add](/api/js/ejdiagram#methods:add "add") and can be removed at runtime by using public method, [remove](/api/js/ejdiagram#methods:remove "remove").
+
+* To add a node to group at runtime, define group name in node's [parent](/api/js/ejdiagram#members:nodes-parent "parent") property.
+
+* The node's [name](/api/js/ejdiagram#members:nodes-name "name") property is used to define the name of the node and its further used to find the node at runtime and do any customization. 
+
+* A public method [findNode](/api/js/ejdiagram#methods:findnode "findNode") is used to find the node/connector at runtime.
+
+The following code illustrates how to add a node.
 
 {% highlight javascript %}
 // Defines JSON to create a node
@@ -121,7 +129,12 @@ When the node/connector properties are changed at runtime, the [propertyChange](
 
 ## Position
 
-Position of a node is controlled by using its [offsetX](/api/js/ejdiagram#members:nodes-offsetx "offsetX") and [offsetY](/api/js/ejdiagram#members:nodes-offsety "offsetY") properties. By default, these offset properties represent the distance between origin of the Diagram's page and node's center point. You may expect this offset values to represent the distance between page origin and node's top left corner instead of center. [pivot](/api/js/ejdiagram#members:nodes-pivot "pivot") property helps solve this problem. Default value of node's pivot point is (0.5, 0.5), that means center of Node.
+* Position of a node is controlled by using its [offsetX](/api/js/ejdiagram#members:nodes-offsetx "offsetX") and [offsetY](/api/js/ejdiagram#members:nodes-offsety "offsetY") properties. By default, these offset properties represent the distance between origin of the Diagram's page and node's center point. 
+
+* You may expect this offset values to represent the distance between page origin and node's top left corner instead of center. [pivot](/api/js/ejdiagram#members:nodes-pivot "pivot") property helps solve this problem. Default value of node's pivot point is (0.5, 0.5), that means center of Node. 
+
+* The size of the node can be controlled by using its [width](/api/js/ejdiagram#members:nodes-width "width") and [height](/api/js/ejdiagram#members:nodes-height "height") properties.
+
 
 The following table illustrates how pivot relates offset values with node boundaries.
 
@@ -155,7 +168,13 @@ Diagram allows to add different kind of nodes. To explore the types of nodes, re
 
 ## Appearance
 
-You can customize the appearance of a node by changing its font, fill colors, patterns, line weight and style, or shadow. The following code illustrates how to customize the appearance of the shape.
+* You can customize the appearance of a node by changing its [fillColor](/api/js/ejdiagram#members:nodes-fillcolor "fillColor"), [borderColor](/api/js/ejdiagram#members:nodes-bordercolor "borderColor"), [borderWidth](/api/js/ejdiagram#members:nodes-borderwidth "borderWidth"), [borderDashArray](/api/js/ejdiagram#members:nodes-borderdasharray "borderDashArray"), [opacity](/api/js/ejdiagram#members:nodes-opacity "opacity"), [patterns](/api/js/ejdiagram#members:nodes-gradient "patterns") and [shadow](/api/js/ejdiagram#members:nodes-shadow "shadow"). 
+
+* The [cssClass](/api/js/ejdiagram#members:nodes-cssclass "cssClass") property of the node used to customize the style of label using user defined CSS class.
+
+* The [visible](/api/js/ejdiagram#members:nodes-visible "visible") property of the node enables or disables the visibility of node.
+
+The following code illustrates how to customize the appearance of the shape.
 
 {% highlight javascript %}
 var nodes = [{
@@ -181,14 +200,26 @@ $("#diagram").ejDiagram({
 
 ![](/js/Diagram/Node_images/Node_img5.png)
 
+ 
 ### Gradient
+
+* The [gradient](/api/js/ejdiagram#members:nodes-gradient "gradient") property of node allows you to define and applies the gradient effect to that node.
+
+* The gradient [stop](/api/js/ejdiagram#members:nodes-gradient-stop "stop") property defines the [color](/api/js/ejdiagram#members:nodes-gradient-stop-color "color") and a [position](/api/js/ejdiagram#members:nodes-gradient-stop-offset "position") where the previous color transition ends and a new color transition starts.
+
+* The gradient.stop's [opacity](/api/js/ejdiagram#members:nodes-gradient-stop-opacity "opacity") property defines the transparency level of the region.
 
 There are two types of gradients.
 
-* **Linear gradient -** Defines a smooth transition between a set of colors (so-called "stops") on a line. 
-* **Radial gradient -** Defines a smooth transition between stops on a circle.
+* [Linear gradient](/api/js/ejdiagram#members:nodes-gradient-lineargradient "Linear gradient") - Defines a smooth transition between a set of colors (so-called [stops](/api/js/ejdiagram#members:nodes-gradient-lineargradient-stops "stops")) on a line. 
 
-The [gradient](/api/js/ejdiagram#members:nodes-gradient "gradient") property of node allows you to define and applies the gradient effect to that node.
+* A Linear gradient's [x1](/api/js/ejdiagram#members:nodes-gradient-lineargradient-x1 "x1"), [y1](/api/js/ejdiagram#members:nodes-gradient-lineargradient-y1 "y1"), [x2](/api/js/ejdiagram#members:nodes-gradient-lineargradient-x2 "x2"), [y2](/api/js/ejdiagram#members:nodes-gradient-lineargradient-y2 "y2") properties are used to define the position(relative to node) of the rectangular region that needs to be painted.
+
+* [Radial gradient](/api/js/ejdiagram#members:nodes-gradient-radialgradient "Radial gradient") - Defines a smooth transition between [stops](/api/js/ejdiagram#members:nodes-gradient-radialgradient-stops "stops") on a circle.
+
+* A Radial gradient's [cx](/api/js/ejdiagram#members:nodes-gradient-radialgradient-cx "cx"), [cy](/api/js/ejdiagram#members:nodes-gradient-radialgradient-cy "cy"), [fx](/api/js/ejdiagram#members:nodes-gradient-radialgradient-fx "fx") , [fy](/api/js/ejdiagram#members:nodes-gradient-radialgradient-fy "fy") properties are used to define the position(relative to node) of the outer most or inner most circle of the radial gradient.
+
+* A Linear gradient's [type](/api/js/ejdiagram#members:nodes-gradient-lineargradient-type "type") and radial gradient's [type](/api/js/ejdiagram#members:nodes-gradient-radialgradient-type "type") property is used to define the type of the gradient.
 
 {% highlight javascript %}
 
@@ -278,7 +309,7 @@ diagram.updateNode("node", { constraints: constraints });
 
 ### Customizing Shadow
 
-The angle, translation, and opacity of the shadow can be customized with the [shadow](/api/js/ejdiagram#members:nodes-shadow "shadow") property of node. The following code example illustrates how to customize shadow.
+The [angle](/api/js/ejdiagram#members:nodes-shadow-angle "angle"), [distance](/api/js/ejdiagram#members:nodes-shadow-distance "distance"), and [opacity](/api/js/ejdiagram#members:nodes-shadow-opacity "opacity") of the shadow can be customized with the [shadow](/api/js/ejdiagram#members:nodes-shadow "shadow") property of node. The following code example illustrates how to customize shadow.
 
 {% highlight javascript %}
 var nodes = [{
@@ -301,9 +332,11 @@ Diagram provides support to describe the state of the node. i.e., node is expand
 
 N> Icon can be created only when the node has outedges.
 
-To explore the properties of expandIcon and collapseIcon, refer to [Icon Properties](/api/js/ejdiagram#members:nodes-expandicon "Icon Properties").
+* To explore the properties of expand and collapse icon, refer to [expandIcon](/api/js/ejdiagram#members:nodes-expandicon "expandIcon") and [collapseIcon](/api/js/ejdiagram#members:nodes-collapseicon "collapseIcon").
 
-The [shape](/api/js/ejdiagram#members:nodes-expandicon-shape "shape") property of icon allows to define the shape of the icon. The following code example illustrates how to create icon of various shapes.
+* The expandIcon's [shape](/api/js/ejdiagram#members:nodes-expandicon-shape "shape") property and collapseIcon's [shape](/api/js/ejdiagram#members:nodes-collapseicon-shape "shape") property allows to define the shape of the icon. 
+
+The following code example illustrates how to create icon of various shapes.
 
 {% highlight javascript %}
 
@@ -343,11 +376,34 @@ $("#diagram").ejDiagram({
 
 ![](/js/Diagram/Node_images/Node_img10.png)
 
+### Customizing Expand Icon
+
+* You can set an borderColor, borderWidth, background color for an expandIcon using [borderColor](/api/js/ejdiagram#members:nodes-expandicon-bordercolor "borderColor"),[borderWidth](/api/js/ejdiagram#members:nodes-expandicon-borderwidth "borderWidth") and [fillColor](/api/js/ejdiagram#members:nodes-expandicon-fillcolor "fillColor") properties.
+
+* To set an size for expandIcon, use [width](/api/js/ejdiagram#members:nodes-expandicon-width "width") and [height](/api/js/ejdiagram#members:nodes-expandicon-height "height") properties.
+
+* The expand icon can be aligned relative to the node boundaries. It has [margin](/api/js/ejdiagram#members:nodes-expandicon-margin "margin"), [offset](/api/js/ejdiagram#members:nodes-expandicon-offset "offset"), [horizontalAlignment](/api/js/ejdiagram#members:nodes-expandicon-horizontalalignment "horizontalAlignment") and [verticalAlignment](/api/js/ejdiagram#members:nodes-expandicon-verticalalignment "verticalAlignment") settings. It is quite tricky when all four alignments are used together but gives you more control over alignment.
+
+### Customizing Collapse Icon
+
+* You can set an borderColor, borderWidth, background color for an collapseIcon using [borderColor](/api/js/ejdiagram#members:nodes-collapseicon-bordercolor "borderColor"),[borderWidth](/api/js/ejdiagram#members:nodes-collapseicon-borderwidth "borderWidth") and [fillColor](/api/js/ejdiagram#members:nodes-collapseicon-fillcolor "fillColor") properties.
+
+* To set an size for collapseIcon, use [width](/api/js/ejdiagram#members:nodes-collapseicon-width "width") and [height](/api/js/ejdiagram#members:nodes-collapseicon-height "height") properties.
+
+* Like expand icon, collapse icon also can be aligned relative to the node boundaries. It has [margin](/api/js/ejdiagram#members:nodes-collapseicon-margin "margin"), [offset](/api/js/ejdiagram#members:nodes-collapseicon-offset "offset"), [horizontalAlignment](/api/js/ejdiagram#members:nodes-collapseicon-horizontalalignment "horizontalAlignment") and [verticalAlignment](/api/js/ejdiagram#members:nodes-collapseicon-verticalalignment "verticalAlignment") settings. It is quite tricky when all four alignments are used together but gives you more control over alignment.
+
 ## Interaction
 
 Diagram provides support to drag, resize, or rotate the node interactively. For more information about editing a node at runtime, refer to [Edit Nodes](/js/Diagram/Interaction "Interaction").
 
-
 ## Constraints
 
 The [constraints](/api/js/ejdiagram#members:nodes-constraints "constraints") property of node allows you to enable/disable certain features. For more information about node constraints, refer to [Node Constraints](/js/Diagram/Constraints#nodeconstraints "Node Constraints").
+
+## Custom Properties
+
+The [addInfo](/api/js/ejdiagram#members:nodes-addinfo "addInfo") property of node allows to maintain additional information to node.
+
+## Stack Order
+
+The nodes [zOrder](/api/js/ejdiagram#members:nodes-zorder "zOrder") property specifies the stack order of an node. An node with greater stack order is always in front of an node with a lower stack order.

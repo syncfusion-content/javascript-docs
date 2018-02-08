@@ -25,6 +25,8 @@ TreeGrid allows the items to be sorted in ascending or descending order based o
 
 {% endhighlight %}
 
+The TreeGrid columns can also be sorted with custom actions by using the [`sortColumn`](https://help.syncfusion.com/api/js/ejtreegrid#methods:sortcolumn "sortColumn") method, where the column field name and the sort order should be passed as the method parameters. And the sorting can be cleared using the method [`clearSorting`](https://help.syncfusion.com/api/js/ejtreegrid#methods:clearsorting "clearSorting"), calling this method will clear sorting for all the columns in TreeGrid.
+
 ### Multicolumn sorting
 
 TreeGrid allows you to sort multiple columns by clicking the desired column headers while holding the `Ctrl` key. The following code example shows you how to enable **Multicolumn sorting** in the TreeGrid control.

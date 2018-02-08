@@ -33,7 +33,7 @@ $(function () {
 
 ## Title alignment
 
-By using the [`title.textAlignment`](/api/js/ejchart#members:title-textalignment) property, you can align the title text of the pivot chart contrl to center, far, or near.
+By using the [`title.textAlignment`](/api/js/ejchart#members:title-textalignment) property, you can align the title text of the pivot chart control to center, far, or near.
 
 {% highlight javascript %}
 

@@ -37,7 +37,7 @@ string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dl
 OlapDataManager DataManager = new OlapDataManager(connectionString);
 {% endhighlight %}
 
-## Binding pivot chart to cbe in online Mondrian Server
+## Binding pivot chart to cube in online Mondrian Server
 To connect to an OLAP cube available in the Mondrian Server through **XML/A**, set the host server link and database name in the connection string. If you have any credentials to connect the cube, then set the user ID and password attributes accordingly. The following code example illustrates this process:
 
 {% highlight c# %}
