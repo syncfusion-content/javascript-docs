@@ -95,3 +95,34 @@ The below screenshot shows the output of above code example.
 ![](/js/TreeGrid/Appearance-and-Styling_images/Appearance-and-Styling_img2.png)
 
 ![](/js/TreeGrid/Appearance-and-Styling_images/Appearance-and-Styling_img3.png)
+
+## Customize rows and cells
+
+In TreeGrid, while rendering rows [`rowDataBound`](https://help.syncfusion.com/api/js/ejtreegrid#events:rowdatabound) event will be triggered for rows. Similarly [`queryCellInfo`](https://help.syncfusion.com/api/js/ejtreegrid#events:querycellinfo) event will be triggered for every cells. Using these events we can customize the tree grid rows and cells at initial load.
+
+The below code example shows how to customize the rows and cells in tree grid.
+
+{% highlight js %}
+
+        $("#treegrid").ejTreeGrid({
+            //...
+            queryCellInfo: function (args) {
+                if (args.column.mappingName == "progress") {
+                    if (args.data.item["progress"] < 75)
+                        $(args.cellElement).css("background-color", "rgba(255, 0, 0, 0.12)");
+                    else
+                        $(args.cellElement).css("background-color", "rgba(86, 226, 86, 0.25)");
+                } 
+            },
+            rowDataBound: function (args) {
+                if (args.data.item["taskID"] == 5)
+                    $(args.rowElement).css("background-color", "rgba(251, 255, 0, 0.24)");
+            },
+            //...
+        });
+
+{% endhighlight %}
+
+The below screenshot shows the output of above code example.
+
+![](/js/TreeGrid/Appearance-and-Styling_images/Appearance-and-Styling_img4.png)
