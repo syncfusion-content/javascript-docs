@@ -229,7 +229,8 @@ Symbol size will be set based on the following precedence.
 * Symbol size will be rendered in the palette based on node.paletteItem's [width](/api/js/ejdiagram#members:nodes-paletteitem-width "width") and [height](/api/js/ejdiagram#members:nodes-paletteitem-height "height") property. 
 * If paletteItem's width and height property is not specified, symbol size will be rendered in the palette based on model's [paletteItemWidth](/api/js/ejsymbolpalette#members:paletteitemheight "paletteItemWidth") and [paletteItemHeight](/api/js/ejsymbolpalette#members:paletteitemwidth "paletteItemHeight") property. 
 * If you don't specify above two, then symbol size will be rendered in the palette based on node's [width](/api/js/ejdiagram#members:nodes-width "width") and [height](/api/js/ejdiagram#members:nodes-height "height") property. 
- 
+* You can use paletteItem [label](/api/js/ejdiagram#members:nodes-paletteitem-label "label") property to display a name for nodes in symbol palette.
+* The paletteItem [margin](/api/js/ejdiagram#members:nodes-paletteitem-margin "margin") property is used to set an margin for symbol palette items. 
 
 ### Stretch the symbols into the palette
 

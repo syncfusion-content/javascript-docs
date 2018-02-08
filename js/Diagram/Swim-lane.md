@@ -316,6 +316,8 @@ We can add a lane at runtime width client side API method addLane. please refer 
 
 * To set a background color for an lane, use [fillColor](/api/js/ejdiagram#members:nodes-lanes-fillcolor "fillColor") property.
 
+* You can use a lanes [orientation](/api/js/ejdiagram#members:nodes-lanes-orientation "orientation") property while rendering the lanes in symbol palette. The orientation can be set as horizontal/vertical to render horizontal/vertical lanes respectively.
+
 * The lanes [cssClass](/api/js/ejdiagram#members:nodes-lanes-cssclass "cssClass") property is used to customize the style of lanes using user defined CSS class.
 
 ## Custom Properties
@@ -414,6 +416,10 @@ N> A default phase is added, when the phase collection of the swimlane is empty.
 ## Customizing phase appearance
 
 * The phase [lineColor](/api/js/ejdiagram#members:nodes-phases-linecolor "lineColor"), [lineDashArray](/api/js/ejdiagram#members:nodes-phases-linedasharray "lineDashArray"), [lineWidth](/api/js/ejdiagram#members:nodes-phases-linewidth "lineWidth") properties are used to customize the line style of the phase.
+
+* You can use a phase [orientation](/api/js/ejdiagram#members:nodes-phases-orientation "orientation") property while rendering the phases in symbol palette. The orientation can be set as horizontal/vertical to render horizontal/vertical phases respectively.
+
+* To render a phase in symbol palette, you can set a type of object as `phase` using phase [type](/api/js/ejdiagram#members:nodes-phases-type "type") property.
 
 ## Limitations
 
