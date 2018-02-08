@@ -335,6 +335,8 @@ The below screen shot depicts the `Approved` column in TreeGrid displayed as a c
 
 ![](/js/TreeGrid/Columns_images/Columns_img8.png)
 
+The index of the checkbox column can be changed at run-time using the [`updateCheckboxColumn`](https://help.syncfusion.com/api/js/ejtreegrid#methods:updatecheckboxcolumn "updateCheckboxColumn") method. The index of the column in which the checkbox should be displayed is passed as the method parameter.
+
 ## Column Template
 
 Columns can be customized either by using JsRender templates or by AngularJS templates.
@@ -569,7 +571,7 @@ function onClick(args) {
 ![](/js/TreeGrid/Columns_images/Columns_img10.png)
 
 
-## Changing position of expander column
+## Tree column/ Expander column 
 
 The position of the expander column which acts as tree column, can be changed using the [`treeColumnIndex`](/api/js/ejtreegrid#members:treecolumnindex) property.
 
@@ -583,6 +585,8 @@ Following code example shows how to change the position of the expander column.
     });
 
 {% endhighlight %}
+
+The tree column index can be also be changed at run-time by using the [`columnIndex`](https://help.syncfusion.com/api/js/ejtreegrid#methods:columnindex "columnIndex")
 
 ## Visibility
 
@@ -787,3 +791,9 @@ Following code example explains how to set text alignment for content and header
 
 The above screenshot shows tree grid render with text alignment and header text alignment.
 {:.caption}
+
+## Column object
+
+The column object which contists the list of columns available in TreeGrid can be retrieved using the [`getColumnByHeaderText`](https://help.syncfusion.com/api/js/ejtreegrid#methods:getcolumnbyheadertext "getColumnByHeaderText") and [`getColumnByField`](https://help.syncfusion.com/api/js/ejtreegrid#methods:getcolumnbyfield "getColumnByField") methods.In the method `getColumnByHeaderText` the header text defined for the column should be passed as the method parameter while in the method `getColumnByField` the column field name should be passed as method parameter.
+
+To fetch the column index using the column field name, the method [`getColumnIndexByField`](https://help.syncfusion.com/api/js/ejtreegrid#methods:getcolumnindexbyfield "getColumnIndexByField") should be called with field name as parameter. And to retrieve the datasource field name assigned to a column by using the column header text the method [`getFieldNameByHeaderText`](https://help.syncfusion.com/api/js/ejtreegrid#methods:getfieldnamebyheadertext "getFieldNameByHeaderText") should be called.
