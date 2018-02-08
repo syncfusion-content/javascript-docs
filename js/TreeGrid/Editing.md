@@ -43,6 +43,8 @@ The output of the TreeGrid with `cellEditing` is as follows.
 
 ![](/js/TreeGrid/Editing_images/cellEditing.png)
 
+The edited cell can be saved with custom actions using the [`saveCell`](https://help.syncfusion.com/api/js/ejtreegrid#methods:savecell "saveCell") method.
+
 ### Row Editing
 
 It is possible to make the entire row to editable state and to update a record by setting [`editMode`](/api/js/ejtreegrid#members:editsettings-editmode "editSettings.editMode") as rowEditing.
