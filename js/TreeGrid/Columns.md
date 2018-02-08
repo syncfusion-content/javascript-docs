@@ -250,7 +250,7 @@ The below screenshot depicts TreeGrid with frozen columns,
 
 ![](/js/TreeGrid/Columns_images/Columns_img2.png)
 
-It is also possible to freeze all the preceding columns by choosing *Freeze Preceding Columns* option in the column menu.
+It is also possible to freeze all the preceding columns at run-time by choosing *Freeze Preceding Columns* option in the column menu or by using the [`freezePrecedingColumns`](https://help.syncfusion.com/api/js/ejtreegrid#methods:freezeprecedingcolumns "freezePrecedingColumns") method, the column field name, for which the columns preceding it to be freezed should be passed as the method parameter.
 
 ![](/js/TreeGrid/Columns_images/Columns_img3.png)
 
