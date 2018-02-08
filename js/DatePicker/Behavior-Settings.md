@@ -194,7 +194,7 @@ You can also override the **“** **error** **”** class to highlight when inva
 ## Blockout Dates
 
 
-Datepicker Provides an option to disable the list of date value.You can utilize this option by make use of [blockoutdates](https://help.syncfusion.com/api/js/ejdatepicker#members:blackoutdates) property.
+Datepicker Provides an option to disable the list of date value.You can utilize this option by make use of [blackoutDates](https://help.syncfusion.com/api/js/ejdatepicker#members:blackoutdates) property.
 
 {% highlight javascript %}
      

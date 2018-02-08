@@ -45,7 +45,7 @@ Execute the above code to render the following output.
 
 ### DisableTime Ranges
  
-Specifies the list of time range to be disabled. you can set it by using[disabletimeranges](https://help.syncfusion.com/api/js/ejdatetimepicker#members:disabletimeranges) property.
+Specifies the list of time range to be disabled. you can set it by using[disableTimeRanges](https://help.syncfusion.com/api/js/ejdatetimepicker#members:disabletimeranges) property.
 
 {% highlight javascript %}
       
