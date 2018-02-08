@@ -8,7 +8,7 @@ documentation: ug
 api : /api/js/ejbutton
 ---
 
-# Repeat Button
+# Repeat Button with Time Interval
 
 When you press button continuously, click event is raised at each specific time interval. This type of button is called **Repeat Button**. This functionality repeatedly raises the click event of button in both button click and from button in pressed state to the released state. **timeInterval** property is used to specify the time Interval for triggering click event, when the button is in pressed state. **repeatButton** property is used to set the button in repeat mode.
 
