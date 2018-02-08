@@ -10,7 +10,7 @@ api: /api/js/ejpivotgauge
 
 # Animation
 
-The animation option makes the pointer to rotate from minimum value to actual value with animation effects.  Animation could be enabled/disabled by using the [`enableAnimation`](/api/js/ejcirculargauge#members:enableanimation) property.  Speed of the pointer could be controlled by using the [`animationSpeed`](/api/js/ejcirculargauge#members:animationspeed) property. Time is represented in milliseconds.
+The animation option makes the pointer to rotate from minimum value to actual value with animation effects. Animation can be enabled/disabled by using the [`enableAnimation`](/api/js/ejcirculargauge#members:enableanimation) property.  The speed of the pointer can be controlled by using the [`animationSpeed`](/api/js/ejcirculargauge#members:animationspeed) property. Time is represented in milliseconds.
 
 {% highlight javascript %}
 
