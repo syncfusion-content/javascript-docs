@@ -395,6 +395,10 @@ $("#diagram").ejDiagram({
 
 ![](/js/Diagram/Label_images/Label_img33.png)
 
+## Template support for Label
+
+**Diagram** provides a template support for label. You need to define a id of template(SVG/Html) using label's [templateId](/api/js/ejdiagram#members:nodes-labels-templateid "templateId") property. 
+
 ## Wrapping
 
 When text overflows node boundaries, you can control it by using text wrapping. So, it is wrapped into multiple lines. The [wrapping](/api/js/ejdiagram#members:nodes-labels-wrapping "wrapping") property of label defines how the text should be wrapped. The following code illustrates how to wrap a text in a node.
@@ -772,6 +776,11 @@ Diagram provides a support to render the label in the diagram in two mode by usi
  });
 
 {% endhighlight %}
+
+## Constraints
+
+The [constraints](/api/js/ejdiagram#members:nodes-labels-constraints "constraints") property of label allows you to enable/disable certain label behaviours. For instance, you can disable label interaction such as dragging, resizing, rotation and so on.
+
 
 ## Limitation
 
