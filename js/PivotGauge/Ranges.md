@@ -10,9 +10,9 @@ api: /api/js/ejpivotgauge
 
 # Ranges
 
-## Adding Range Collection
+## Adding range collection
 
-Range collection can be directly added to the scales option within the PivotGauge widget as an array.
+The range collection can be directly added to the scales option within the pivot gauge widget as an array.
 
 {% highlight javascript %}
 
@@ -28,9 +28,9 @@ Range collection can be directly added to the scales option within the PivotGaug
     });
 {% endhighlight %}
 
-## Appearance Customization
+## Appearance customization
 
-The appearance of the range can be customized through the following properties.
+The appearance of the range can be customized through the following properties:
 
 * **startValue** – defines the start position of the range.
 * **endValue** – defines the end position of the range.
@@ -39,11 +39,11 @@ The appearance of the range can be customized through the following properties.
 * **backgroundColor** – sets the background color of the range.
 * **border** – sets the height and width of the border of the range.
 * **placement** – sets the position of the range.
-* **distanceFromScale** – sets the distance between the range and scale.
+* **distanceFromScale** – sets the distance between the range and the scale.
 
-Positioning the range could be set either through `placement` or `distanceFromScale` property. 
+The position of the range can be set through the `placement` or `distanceFromScale` property. 
 
-N> By default, placement takes the value "near", whereas other enumeration values available are "far" and "center".
+N> By default, the placement takes the value "near", whereas other enumeration values available are "far" and "center".
 
 {% highlight javascript %}
 
@@ -83,10 +83,10 @@ N> By default, placement takes the value "near", whereas other enumeration value
 
 ![](Ranges_images/AppearanceCustomization.png) 
 
-N> On setting both the position properties - "distanceFromScale" and "placement" for a range, the value set in "distanceFromScale" is given preference.
+N> By setting both the position properties - "distanceFromScale" and "placement" for a range, the preference is given to the value that is set in the "distanceFromScale" property.
 
-## Multiple Ranges 
-Multiple ranges can be added by placing an array of objects in `ranges` option.
+## Multiple ranges 
+Multiple ranges can be added by placing an array of objects in the `ranges` option.
 
 {% highlight javascript %}
 
