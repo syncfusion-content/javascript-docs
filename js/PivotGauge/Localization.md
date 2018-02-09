@@ -51,7 +51,7 @@ RevenueValue</td><td>
 
 ## Localization and globalization of cube info
 
-The content displayed within the pivot gauge conrol can be obtained from the OLAP cube. The following are the steps that should be done to get the localized and globalized cube content.
+The content displayed within the pivot gauge control can be obtained from the OLAP cube. The following are the steps that should be done to get the localized and globalized cube content.
 
 To get the localized string based on different cultures, set the **"Locale Identifier"** in the connection string to a specific culture in the OLAP cube. The attribute is set for the pivot gauge in client mode as shown below:
 
