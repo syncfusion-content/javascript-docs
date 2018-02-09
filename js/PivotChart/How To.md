@@ -8,12 +8,12 @@ documentation: ug
 api: /api/js/ejpivotchart
 ---
 
-# How To
+# How to
 
-## Public Methods
+## Public methods
 
-### Refresh the PivotGrid with modified report
-The [`refreshControl`](../api/ejpivotchart#methods:refreshControl) method is used to re-render the pivot chart component with specified datasource and properties initially.
+### Refresh the pivot grid with modified report
+The [`refreshControl`](../api/ejpivotchart#methods:refreshControl) method is used to re-render the pivot chart component with specified data source and properties initially.
 
 {% highlight html %}
 
@@ -27,8 +27,8 @@ The [`refreshControl`](../api/ejpivotchart#methods:refreshControl) method is use
 
 {% endhighlight %}
 
-### Generate JSON object from Olap Cube
-The [`generateJSON`](../api/ejpivotchart#methods:generateJSON) method is used to render the pivot chart component with pivot engine from OLAP cube.
+### Generate JSON object from OLAP cube
+The [`generateJSON`](../api/ejpivotchart#methods:generateJSON) method is used to render the pivot chart component with the pivot engine from the OLAP cube.
 
 {% highlight html %}
 
@@ -42,8 +42,8 @@ The [`generateJSON`](../api/ejpivotchart#methods:generateJSON) method is used to
 
 {% endhighlight %}
 
-### Refresh the PivotChart with paging
-The [`refreshPagedPivotChart`](../api/ejpivotchart#methods:refreshPagedPivotChart) method is used to render the pivot chart control with given axis and page number.
+### Refresh the pivot chart with paging
+The [`refreshPagedPivotChart`](../api/ejpivotchart#methods:refreshPagedPivotChart) method is used to render the pivot chart control with the given axis and the page number.
 
 {% highlight html %}
 
@@ -72,8 +72,8 @@ The [`doAjaxPost`](../api/ejpivotchart#methods:doajaxpost) method is used to pos
 
 {% endhighlight %}
 
-### Destroying the object of PivotChart
-The [`destroy`](../api/ejpivotchart#methods:destroy) method is used to destroy the pivot chart widget associated events that are bound using "this._on" and brings the control to pre-init state.
+### Destroying the object of pivot chart
+The [`destroy`](../api/ejpivotchart#methods:destroy) method is used to destroy the pivot chart widget associated events that are bound using "this._on" and bring the control to pre-init state.
 
 {% highlight html %}
 
@@ -87,7 +87,7 @@ The [`destroy`](../api/ejpivotchart#methods:destroy) method is used to destroy t
 
 {% endhighlight %}
 
-### Getting JSON Records from control object
+### Getting JSON records from control object
 The [`getJSONRecords`](../api/ejpivotchart#methods:getjsonrecords) method is used to return the JSON records that are formed to render the pivot chart control.
 
 {% highlight html %}
@@ -102,7 +102,7 @@ The [`getJSONRecords`](../api/ejpivotchart#methods:getjsonrecords) method is use
 
 {% endhighlight %}
 
-### Setting JSON Records to control object
+### Setting JSON records to control object
 The [`setJSONRecords`](../api/ejpivotchart#methods:setjsonrecords) method is used to set the JSON records to render the pivot chart control.
 
 {% highlight html %}
@@ -155,7 +155,7 @@ $("#PivotChart1").ejPivotChart({
 {% endhighlight %}
 
 ### Triggering event after performing drill operation
-The [`drillSuccess`](../api/ejpivotchart#events:drillsuccess) event is triggered when performing drill up/down operation in the pivot chart control.
+The [`drillSuccess`](../api/ejpivotchart#events:drillsuccess) event is triggered when performing the drill up/down operation in the pivot chart control.
 
 {% highlight javascript %}
 
@@ -172,7 +172,7 @@ $("#PivotChart1").ejPivotChart({
 {% endhighlight %}
 
 ### Triggering event before exporting
-The [`beforeExport`](../api/ejpivotchart#events:beforeexport) event is triggered before performing export operation in the pivot chart.
+The [`beforeExport`](../api/ejpivotchart#events:beforeexport) event is triggered before performing the export operation in the the pivot chart.
 {% highlight javascript %}
 
 $("#PivotChart1").ejPivotChart({
@@ -187,7 +187,7 @@ $("#PivotChart1").ejPivotChart({
 
 {% endhighlight %}
 
-### Triggering event before the PivotChart loaded
+### Triggering event before the pivot chart loaded
 The [`load`](../api/ejpivotchart#events:load) event is triggered when the pivot chart is started to render.
 {% highlight javascript %}
 
@@ -206,8 +206,8 @@ $("#PivotChart1").ejPivotChart({
 
 ## Members
 
-### Enabling Context Menu in PivotChart
-To improve user action, the Context Menu option in pivot chart allows you to enable/disable the features with UI operations. This feature can be enabled by the [`enableContextMenu`](/api/js/ejpivotchart#members:enablecontextmenu) property.
+### Enabling context menu in pivot chart
+To improve user action, the context menu option in the pivot chart allows you to enable/disable the features with UI operations. This feature can be enabled by the [`enableContextMenu`](/api/js/ejpivotchart#members:enablecontextmenu) property.
 
 {% highlight html %}
 
@@ -228,45 +228,45 @@ To improve user action, the Context Menu option in pivot chart allows you to ena
 
 ![](How-To_images/contextMenu.png)
 
-The following are the available features in Context Menu.
+The following are the available features in the context menu:
 
-* [`Tooltip`](/api/js/ejchart#members:commonseriesoptions-tooltip-visible): It allows you enable/disable the tooltip.
-* [`Legend`](/api/js/ejpivotchart#members:legend): You can show/hide legend in pivot chart component.
-* [`Zooming`](/api/js/ejchart#members:zooming-enable): You can zoom the chart by using rubber band selection.
+* [`Tooltip`](/api/js/ejchart#members:commonseriesoptions-tooltip-visible): It allows you to enable/disable the tooltip.
+* [`Legend`](/api/js/ejpivotchart#members:legend): It allows you to show/hide the legend in the pivot chart component.
+* [`Zooming`](/api/js/ejchart#members:zooming-enable): It allows you to zoom the chart by using the rubber band selection.
 
 ![](How-To_images/zooming.png)
 
-* [`Chart Types`](/api/js/ejpivotchart#members:commonseriesoptions-type): You can choose different 2D charts by UI operations.
+* [`Chart types`](/api/js/ejpivotchart#members:commonseriesoptions-type): You can choose different 2D charts by UI operations.
 
 ![](How-To_images/chartTypes.png)
 
-* [`3D Charts`](/api/js/ejpivotchart#members:enable3d): You can choose different 3D chart types. The **"Disable 3D Charts"** option available to disable 3D chart and it is rendered as respective 2D chart.
+* [`3D Charts`](/api/js/ejpivotchart#members:enable3d): You can choose different 3D chart types. The **"Disable 3D Charts"** option is available to disable the 3D chart, and it is rendered as the respective 2D chart.
 
 ![](How-To_images/3DCharts.png)
 
-* `Exporting`: You can export the chart in different formats given in the following image. You have to mention the export settings through [`beforeExport`](../api/ejpivotchart#events:beforeexport) event.
+* `Exporting`: You can export the chart in different formats given in the following image. You have to mention the export settings through the[`beforeExport`](../api/ejpivotchart#events:beforeexport) event.
 
 ![](How-To_images/exporting.png)
 
-* `Interactions`: Different types of interactions available in the context menu to view the datum in the chart.
+* `Interactions`: Different types of interactions are available in the context menu to view the datum in the chart.
 
 For more on this topic, [click here](https://help.syncfusion.com/js/pivotchart/user-interactions)
 
 ![](How-To_images/interactions.png)
 
-* [`Smart Labels`](/api/js/ejchart#members:primaryxaxis-labelintersectaction): You can customize the labels in a different view by given options mentioned in the following image.
+* [`Smart Labels`](/api/js/ejchart#members:primaryxaxis-labelintersectaction): You can customize the labels in a different view by given options mentioned in the following image:
 
 ![](How-To_images/smartLabels.png)
 
 
-## Setting Custom Name to Service Methods
-The [`serviceMethodSettings`](/api/js/ejpivotchart#members:servicemethodsettings) allows you to set the custom name for the methods in WebAPI/WCF, communicated during AJAX post. The following table will explain the service methods.
+## Setting custom name to service methods
+The [`serviceMethodSettings`](/api/js/ejpivotchart#members:servicemethodsettings) allows you to set the custom name for methods in the WebAPI/WCF, communicated during the AJAX post. The following table will explain the service methods:
 
-| Service Methods | Description |
+| Service methods | Description |
 |---|---|
 |[initialize](/api/js/ejpivotchart#members:servicemethodsettings-initialize)|It fetches the data required to initialize the control.|
-|[drillDown](/api/js/ejpivotchart#members:servicemethodsettings-drilldown)|It allows drilling up/down action in pivot chart.|
-|[paging](/api/js/ejpivotchart#members:servicemethodsettings-paging)|It fetches the data on navigating between pages in pivot chart data.|
+|[drillDown](/api/js/ejpivotchart#members:servicemethodsettings-drilldown)|It allows the drilling up/down action in the pivot chart.|
+|[paging](/api/js/ejpivotchart#members:servicemethodsettings-paging)|It fetches the data while navigating between pages in the pivot chart data.|
 
 
 

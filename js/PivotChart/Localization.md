@@ -10,11 +10,11 @@ api: /api/js/ejpivotchart
 
 # Localization
 
-## Localization in PivotChart
+## Localization in pivot chart
 
-We can localize the pivot chart controls text with a collection of localized strings using [`ej.PivotChart.Locale`](/api/js/ejpivotchart#members:locale) for different cultures. By default, the pivot chart control is localized in **“en-US”.**
+You can localize the pivot chart controls text with a collection of localized strings by using the [`ej.PivotChart.Locale`](/api/js/ejpivotchart#members:locale) for different cultures. By default, the pivot chart control is localized in **“en-US”.**
 
-Following code example illustrates on how to localize pivot chart based on **“French”** culture.
+The following code example illustrates how to localize the pivot chart based on **“French”** culture:
 
 {% highlight javascript %}
 
@@ -50,7 +50,7 @@ Following code example illustrates on how to localize pivot chart based on **“
 
 {% endhighlight %}
 
-Following table localizes the in-built keywords to **“French”** culture for pivot chart.
+Following table localizes the in-built keywords to **“French”** culture for the pivot chart:
 
 <table>
 <tr>
@@ -88,12 +88,12 @@ Exit</td><td>
 </tr>
 </table>
 
-## Localization and Globalization of Cube Info (Client Mode)
+## Localization and globalization of cube info (client mode)
 
-Content displayed within the pivot chart control are obtained from the OLAP Cube. So following are the steps that needs to be done to get the localized and globalized Cube content.
+The content displayed within the pivot chart control is obtained from the OLAP cube. The following are the steps that should be done to get the localized and globalized cube content.
 
-* To get localized data from OLAP Cube, we need to set **"Locale Identifier"** in the connection string to a specific culture in the **"data"** property present inside **"dataSource"**. 
-* To bind the globalized content in pivot chart control, we need to set **"locale"** property to a specific culture and want to refer specific culture file in the sample.
+* To get the localized data from the OLAP cube, set the **"Locale Identifier"** in the connection string to a specific culture in the **"data"** property present in the **"dataSource"**.
+* To bind the globalized content in the pivot chart control, set the **"locale"** property to a specific culture and refer the specific culture file in the sample.
  
 N> Culture files are present under **"[installed drive]:\Users\ [user name]\AppData\Local\Syncfusion\EssentialStudio\X.X.X.X\JavaScript\samples\web\scripts\cultures".** 
  
@@ -111,12 +111,12 @@ N> Culture files are present under **"[installed drive]:\Users\ [user name]\AppD
 
 {% endhighlight %}
 
-## Localization and Globalization of Cube Info (Server Mode)
+## Localization and globalization of cube info (server mode)
 
-Content displayed within the pivot chart control are obtained from the OLAP Cube. So following are the steps that needs to be done to get the localized and globalized Cube content.
+The content displayed within the pivot chart control is obtained from the OLAP cube. The following are the steps that should be done to get the localized and globalized cube content:
 
-* To get the localized string based on different cultures, from OLAP Cube, we need to set **"Locale Identifier"** in the connection string to a specific culture. 
-* To bind the globalized content in pivot chart control, we need to set **"Culture"** and **"OverrideDefaultFormatStrings"** properties in OlapDataManager class to a specific culture.
+* To get the localized string based on different cultures, set the **"Locale Identifier"** in the connection string to a specific culture in the OLAP cube. 
+* To bind the globalized content in the pivot chart control, you can set the **"Culture"** and **"OverrideDefaultFormatStrings"** properties in the OlapDataManager class to a specific culture.
  
 {% highlight c# %}
 
@@ -132,7 +132,7 @@ DataManager.OverrideDefaultFormatStrings = true;
 
 ## RTL
 
-You can enable or disable right to left using the [`enableRTL`](/api/js/ejpivotchart#members:enablertl) property in pivot chart.
+You can enable or disable the right to left option by using the [`enableRTL`](/api/js/ejpivotchart#members:enablertl) property in the pivot chart.
 
 {% highlight js %}
 
@@ -144,6 +144,6 @@ $("#PivotChart1").ejPivotChart({
 
 ![](Localization-and-Translation-support_images/Rtl.png)
 
-N> RTL is applicable only for tooltip of pivot chart.
+N> RTL is applicable only for the tooltip of the pivot chart.
 
 
