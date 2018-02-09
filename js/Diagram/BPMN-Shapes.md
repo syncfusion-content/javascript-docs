@@ -209,6 +209,7 @@ The different activities of BPMN process are listed as follows.
 #### Tasks
 
 The [task](/api/js/ejdiagram#members:nodes-task "task") property of node allows you to define the [type](/api/js/ejdiagram#members:nodes-tasks-type "type") of task such as sending, receiving, user based task etc… By default, the `type` property of task is set as "none". The following code illustrates how to create different types of BPMN tasks. 
+The [events](/api/js/ejdiagram#members:nodes-tasks-events "events") property of tasks allows to represent these results as an event attached to the task.
 
 {% highlight javascript %}
 
