@@ -10,9 +10,9 @@ api: /api/js/ejpivotgauge
 
 # Tooltip
 
-Tooltip can be enabled by using the [`enableTooltip`](/api/js/ejpivotgauge#members:enabletooltip) property. 
+The tooltip can be enabled by using the [`enableTooltip`](/api/js/ejpivotgauge#members:enabletooltip) property. 
 
-N> By default, this property is set to "false".
+N> By default, this property is set to false.
 
 {% highlight javascript %}
 
@@ -23,7 +23,7 @@ N> By default, this property is set to "false".
 
 {% endhighlight %}
 
-Tooltip appearance can be customized by overriding its CSS class.
+The tooltip appearance can be customized by overriding its CSS class.
 
 {% highlight css %}
 
