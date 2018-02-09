@@ -9,7 +9,7 @@ api: /api/js/ejgantt
 ---
 # Localization
 
-Localization is the process of customizing the User Interface (UI) based on a culture, specific to a particular country or region, in order to display regional data. The culture is represented by a unique string like `en``-``US` for US English and `fr``-``FR` for French.
+Localization is the process of customizing the User Interface (UI) based on a culture, specific to a particular country or region, in order to display regional data. The culture is represented by a unique string like `en-US` for US English and `fr-FR` for French.
 
 Localization is the key feature that provides solutions to global customers with the help of localized control. It is necessary to include the specific culture script files (ej.culture.fr-FR.min.js file for French culture) in the reference section, which is available in the following location.
 
