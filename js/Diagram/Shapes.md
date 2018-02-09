@@ -253,7 +253,10 @@ The following tables illustrates all the possible scale options for the node
 
 ## Basic Shapes
 
-The Basic shapes are common shapes that are used to represent the geometrical information visually. To create basic shapes, the [type](/api/js/ejdiagram#members:nodes-type "type") of the node should be set as "basic". Its [shape](/api/js/ejdiagram#members:nodes-shape "shape") property can be set with any one of the built-in shape. [Basic Shapes](/api/js/ejdiagram#members:nodes-shape "Basic Shapes"). 
+* The Basic shapes are common shapes that are used to represent the geometrical information visually. To create basic shapes, the [type](/api/js/ejdiagram#members:nodes-type "type") of the node should be set as "basic". Its [shape](/api/js/ejdiagram#members:nodes-shape "shape") property can be set with any one of the built-in shape. [Basic Shapes](/api/js/ejdiagram#members:nodes-shape "Basic Shapes"). 
+* To render a rounded rectangle, you need to set type as `basic` and shape as `rectangle` and set the [cornerRadius](/api/js/ejdiagram#members:nodes-cornerradius "cornerRadius") property to specify the radius of rounded rectangle.
+* To render a polygon shape, you can specify the collection of points to a [points](/api/js/ejdiagram#members:nodes-points "points") property.
+
 The following code example illustrates how to create a basic shape. 
 
 {% highlight javascript %}

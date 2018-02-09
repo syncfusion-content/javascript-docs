@@ -96,6 +96,44 @@ The following code shows on how to select a row programmatically with button cli
 
 {% endhighlight %}
 
+### Customize row selection action
+
+While selecting a row in TreeGrid, [`rowSelecting`](https://help.syncfusion.com/api/js/ejtreegrid#events:rowselecting) and [`rowSelected`](https://help.syncfusion.com/api/js/ejtreegrid#events:rowselected) event will be triggered. Row selecting event will be triggered on initialization of row selection action. In [`rowSelecting`](https://help.syncfusion.com/api/js/ejtreegrid#events:rowselecting) event we can get the previously selected row and current selecting row’s information, using this information we can prevent selection of particular row. The [`rowSelected`](https://help.syncfusion.com/api/js/ejtreegrid#events:rowselected) event will be triggered on completion of row selection action, in this event we can get the current selected row’s information. 
+
+The following code example shows how to prevent the selection of particular row using [`rowSelecting`](https://help.syncfusion.com/api/js/ejtreegrid#events:rowselecting) event.
+
+{% highlight js %}
+
+     $("#TreeGridContainer").ejTreeGrid({
+        //...
+        allowSelection: true,
+        rowSelecting: function(args) {
+            if(args.data.taskID == 5) // prevent selection of Task id 5
+                args.cancel = true;
+        },
+        //...
+
+{% endhighlight %}
+
+### Get record details
+
+In TreeGrid, It is possible to get the record detail when `click` and `dblClick` the row using [`recordClick`](https://help.syncfusion.com/api/js/ejtreegrid#events:recordclick) and [`recordDoubleClick`](https://help.syncfusion.com/api/js/ejtreegrid#events:recorddoubleclick) event, using this method we can get the record details even [`allowSelection`](/api/js/ejtreegrid#members:allowselection) is `false`.
+
+The below code example show, how to get record details when `click` the row.
+
+ {% highlight js %}
+
+     $("#TreeGridContainer").ejTreeGrid({
+        //...
+        allowSelection: false,
+        recordClick:function(args)
+        {
+            var n=0;
+        },
+        //...
+
+{% endhighlight %}
+
 ## Cell selection
 
 You can select cells in TreeGrid by setting the [`selectionMode`](/api/js/ejtreegrid#members:selectionsettings-selectionmode "selectionSettings.selectionMode") property as `cell`. And you can able to get the selected cell information using the [`selectedCellIndexes`](/api/js/ejtreegrid#members:selectedcellindexes) property from the TreeGrid object. The [`selectedCellIndexes`](/api/js/ejtreegrid#members:selectedcellindexes) is an object collection, which has the [`cellIndex`](/api/js/ejtreegrid#members:selectedcellindexes-cellindex "selectedCellIndexes.cellIndex") and [`rowIndex`](/api/js/ejtreegrid#members:selectedcellindexes-rowindex "selectedCellIndexes.rowIndex") information of the selected cells.
@@ -233,6 +271,29 @@ You can select the cells programmatically using the `selectCells` public method.
             cellIndex = [{ rowIndex: 2, cellIndex: 1 }, {rowIndex:3,cellIndex:1}];
             TreeGridObj.selectCells(cellIndex);
      })
+
+{% endhighlight %}
+
+### Customize cell selection action
+
+While selecting a cell in TreeGrid, [`cellSelecting`](https://help.syncfusion.com/api/js/ejtreegrid#events:cellselecting) and [`cellSelected`](https://help.syncfusion.com/api/js/ejtreegrid#events:cellselected) event will be triggered. Cell selecting event will be triggered on initialization of cell selection action. In [`cellSelecting`](https://help.syncfusion.com/api/js/ejtreegrid#events:cellselecting) event we can get the current selecting cell information, using this information we can prevent selection of particular cell in particular row. The[`cellSelected`](https://help.syncfusion.com/api/js/ejtreegrid#events:cellselected) event will be triggered on completion of cell selection action, in this event we can get the current selected cell’s information. 
+
+The following code example shows how to prevent the selection of particular cell using [`cellSelecting`](https://help.syncfusion.com/api/js/ejtreegrid#events:cellselecting) event.
+
+{% highlight js %}
+
+     $("#TreeGridContainer").ejTreeGrid({
+        //...
+        allowSelection: true,
+        selectionSettings:{
+            selectionMode:ej.TreeGrid.SelectionMode.Cell,
+            selectionType: ej.TreeGrid.SelectionType.Single
+        },
+        cellSelecting: function(args) {
+            if(args.data.taskID == 5 && args.cellIndex == 1) // prevent selection of Task Name cell of Task id 5
+                args.cancel = true;
+        },
+        //...
 
 {% endhighlight %}
 

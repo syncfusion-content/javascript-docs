@@ -201,7 +201,7 @@ $("#DiagramContent").ejDiagram({
 * The [container](/api/js/ejdiagram#members:nodes-container "container") property of group should be defined and its [type](/api/js/ejdiagram#members:nodes-container-type "type") should be set as `stack` to create a canvas panel.
 
 * The group's [paddingTop](/api/js/ejdiagram#members:nodes-paddingtop "paddingTop"), [paddingBottom](/api/js/ejdiagram#members:nodes-paddingbottom "paddingBottom"),[paddingLeft](/api/js/ejdiagram#members:nodes-paddingleft "paddingLeft") and [paddingRight](/api/js/ejdiagram#members:nodes-paddingright "paddingRight") properties allows you to controls the spacing around an children defined in the stack.
-
+		
 * The connector [marginTop](/api/js/ejdiagram#members:connectors-margintop "marginTop"), [marginBottom](/api/js/ejdiagram#members:connectors-marginbottom "marginBottom"),[marginLeft](/api/js/ejdiagram#members:connectors-marginleft "marginLeft") and [marginRight](/api/js/ejdiagram#members:connectors-marginright "marginRight") properties allows you to controls the spacing of the connector within the stack.
 
 * The nodes [marginTop](/api/js/ejdiagram#members:nodes-margintop "marginTop"), [marginBottom](/api/js/ejdiagram#members:nodes-marginbottom "marginBottom"),[marginLeft](/api/js/ejdiagram#members:nodes-marginleft "marginLeft") and [marginRight](/api/js/ejdiagram#members:nodes-marginright "marginRight")  properties allows you to controls the spacing of the connector within the stack.
