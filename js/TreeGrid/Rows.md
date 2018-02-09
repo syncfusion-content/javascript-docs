@@ -351,6 +351,8 @@ The following code example shows how to enable details tow in tree grid.
 The above screenshot shows details row in tree grid.
 {:.caption}
 
+The visibility of the details view of a record can also be toggled with any custom actions by using the method [`showHideDetailsRow`](https://help.syncfusion.com/api/js/ejtreegrid#methods:showhidedetailsrow "showHideDetailsRow").
+
 [Click](https://js.syncfusion.com/demos/web/#!/bootstrap/treegrid/rows/detailstemplate) here to view the demo sample for details row template.
 
 ### Disable details row info column
@@ -443,7 +445,7 @@ $("#TreeGrid").ejTreeGrid({
 
 ## Expand/Collapse Row
 
-In TreeGrid, parent rows are expanded/collapsed by using expand/collapse icons, expand all/collapse all toolbar items and by using public methods. By default all records in TreeGrid will be rendered in expanded state.
+In TreeGrid, parent rows are expanded/collapsed by using expand/collapse icons, expand all/collapse all toolbar items and by using the [`expandCollapseRow`](https://help.syncfusion.com/api/js/ejtreegrid#methods:expandcollapserow "expandCollapseRow") method. By default all records in TreeGrid will be rendered in expanded state.
 
 ### Collapse parent records at initial load
 
