@@ -250,14 +250,14 @@ The below screenshot depicts TreeGrid with frozen columns,
 
 ![](/js/TreeGrid/Columns_images/Columns_img2.png)
 
-It is also possible to freeze all the preceding columns at run-time by choosing *Freeze Preceding Columns* option in the column menu or by using the [`freezePrecedingColumns`](https://help.syncfusion.com/api/js/ejtreegrid#methods:freezeprecedingcolumns "freezePrecedingColumns") method, the column field name, for which the columns preceding it to be freezed should be passed as the method parameter.
+It is also possible to freeze all the preceding columns at run-time by choosing *Freeze Preceding Columns* option in the column menu or by using the [`freezePrecedingColumns`](https://help.syncfusion.com/api/js/ejtreegrid#methods:freezeprecedingcolumns "freezePrecedingColumns") method, the column field name, for which the columns preceding it to be frozen should be passed as the method parameter.
 
 ![](/js/TreeGrid/Columns_images/Columns_img3.png)
 
 ### Freezing columns using method
 
 Columns can also be frozen or unfrozen with custom actions using the [`freezeColumn`](/api/js/ejtreegrid#methods:freezecolumn "freezeColumn") method.
-The column's field name which is to be frozen/unfrozen should be passed as the method paramter, along with the freeze state.
+The column's field name which is to be frozen/unfrozen should be passed as the method parameter, along with the freeze state.
 
 {% highlight js %}
 
@@ -309,6 +309,26 @@ The following code snippet explains how to set column resize mode in tree grid.
 The above screenshot shows the tree grid render with `FixedColumns` resize mode.
 {:.caption}
 
+### Customize column resize action
+
+In TreeGrid, [`columnResizeStart`](https://help.syncfusion.com/api/js/ejtreegrid#events:columnresizestart), [`columnResizeEnd`](https://help.syncfusion.com/api/js/ejtreegrid#events:columnresizeend) and [`columnResized`](https://help.syncfusion.com/api/js/ejtreegrid#events:columnresized) events are triggered on column resize action. Using this event we can prevent column resize for particular column.
+
+The below code example shows how to prevent the column resize for particular column
+
+{% highlight js %}
+
+   $("#TreeGridContainer").ejTreeGrid({
+    //...
+    allowColumnResize: true,
+    columnResizeStart:function(args)
+    {
+        if (args.column.field == "taskName") // Prevent the column resize for Task Name column
+            args.cancel = true;
+    },
+    //...
+});
+{% endhighlight %}
+
 ## Checkbox column 
 
 It is possible to display a column as checkbox column in TreeGrid by enabling the [`displayAsCheckbox`](/api/js/ejtreegrid#members:columns-displayascheckbox "columns.displayAsCheckbox") property and by setting the `editType` property as `Boolean` for the column .  If the [`displayAsCheckbox`](/api/js/ejtreegrid#members:columns-displayascheckbox "columns.displayAsCheckbox") property is set as false, then the column will be displayed as string column with the value mapped from the data source.
@@ -334,6 +354,8 @@ The following code snippet explains how to display a checkbox column in TreeGrid
 The below screen shot depicts the `Approved` column in TreeGrid displayed as a checkbox column.
 
 ![](/js/TreeGrid/Columns_images/Columns_img8.png)
+
+The index of the checkbox column can be changed at run-time using the [`updateCheckboxColumn`](https://help.syncfusion.com/api/js/ejtreegrid#methods:updatecheckboxcolumn "updateCheckboxColumn") method. The index of the column in which the checkbox should be displayed is passed as the method parameter.
 
 ## Column Template
 
@@ -466,7 +488,7 @@ Following code example shows how to customize the insert column option in tree g
 
 ![](/js/TreeGrid/Columns_images/Columns_img19.png)
 
-The above screenshot shows customized insert column dailog in tree grid.  
+The above screenshot shows customized insert column dialog in tree grid.  
 {:.caption}
 
 
@@ -569,7 +591,7 @@ function onClick(args) {
 ![](/js/TreeGrid/Columns_images/Columns_img10.png)
 
 
-## Changing position of expander column
+## Tree column/ Expander column 
 
 The position of the expander column which acts as tree column, can be changed using the [`treeColumnIndex`](/api/js/ejtreegrid#members:treecolumnindex) property.
 
@@ -583,6 +605,8 @@ Following code example shows how to change the position of the expander column.
     });
 
 {% endhighlight %}
+
+The tree column index can be also be changed at run-time by using the [`columnIndex`](https://help.syncfusion.com/api/js/ejtreegrid#methods:columnindex "columnIndex")
 
 ## Visibility
 
@@ -753,6 +777,29 @@ The above screenshot shows the column reorder in tree grid.
 
 The TreeGrid columns can also be reordered using the [`reorderColumn`](https://help.syncfusion.com/api/js/ejtreegrid#methods:reordercolumn "reorderColumn") method, where the column field name and the target index should be passed as the method parameters.
 
+### Customize the column reorder action
+
+In TreeGrid, [`columnDragStart`](https://help.syncfusion.com/api/js/ejtreegrid#events:columndragstart), [`columnDrag`](https://help.syncfusion.com/api/js/ejtreegrid#events:columndrag) and [`columnDrop`](https://help.syncfusion.com/api/js/ejtreegrid#events:columndrop) events are triggered on column reorder action. Using this event we can prevent the column reorder for specific column.
+
+The below code example shows how to prevent column reorder in TreeGrid.
+
+{% highlight js %}
+
+    $(function () {
+        $("#TreeGridContainer").ejTreeGrid({
+            //...
+            allowColumnReordering : true,
+            columnDragStart : function(args)
+            {
+                if (args.draggedColumn.field == "taskName")
+                    args.cancel = true;
+            },
+            //...
+        })
+    });
+        
+{% endhighlight %}
+
 ## Text Alignment
 In ejTreeGrid, it is possible to align both content and header text of particular column using the [`textAlign`](/api/js/ejtreegrid#members:columns-textalign "columns.textAlign") and [`headerTextAlign`](/api/js/ejtreegrid#members:columns-headertextalign "columns.headerTextAlign") property of columns.
 There are four possible ways to align content and header text of column, they are
@@ -787,3 +834,9 @@ Following code example explains how to set text alignment for content and header
 
 The above screenshot shows tree grid render with text alignment and header text alignment.
 {:.caption}
+
+## Column object
+
+The column object which consists the list of columns available in TreeGrid can be retrieved using the [`getColumnByHeaderText`](https://help.syncfusion.com/api/js/ejtreegrid#methods:getcolumnbyheadertext "getColumnByHeaderText") and [`getColumnByField`](https://help.syncfusion.com/api/js/ejtreegrid#methods:getcolumnbyfield "getColumnByField") methods.In the method `getColumnByHeaderText` the header text defined for the column should be passed as the method parameter while in the method `getColumnByField` the column field name should be passed as method parameter.
+
+To fetch the column index using the column field name, the method [`getColumnIndexByField`](https://help.syncfusion.com/api/js/ejtreegrid#methods:getcolumnindexbyfield "getColumnIndexByField") should be called with field name as parameter. And to retrieve the datasource field name assigned to a column by using the column header text the method [`getFieldNameByHeaderText`](https://help.syncfusion.com/api/js/ejtreegrid#methods:getfieldnamebyheadertext "getFieldNameByHeaderText") should be called.
