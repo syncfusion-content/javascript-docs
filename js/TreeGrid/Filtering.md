@@ -42,6 +42,8 @@ The output of the TreeGrid with filtering enabled is as follows.
 
 ![](/js/TreeGrid/Filtering_images/Filtering_img1.png)
 
+The TreeGrid allows the user to filter the columns with custom actions by using the method [`filterColumn`](https://help.syncfusion.com/api/js/ejtreegrid#methods:filtercolumn "filterColumn"). And it is possible to clear the filter for a specific column by using the method [`clearFilter`](https://help.syncfusion.com/api/js/ejtreegrid#methods:clearfilter "clearFilter").
+
 ## Filtering Modes
 
 ### Filter Bar 
@@ -264,6 +266,7 @@ The output of the filtering enabled for only one column is as follows.
 ![](/js/TreeGrid/Filtering_images/Filtering_img4.png)
 
 [Click here](http://js.syncfusion.com/demos/web/#!/bootstrap/treegrid/columnfiltering) to find the demo sample for filtering in TreeGrid
+
 
 ## Toolbox searching
 
