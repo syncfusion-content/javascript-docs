@@ -10,7 +10,7 @@ api: /api/js/ejgantt
 
 # Validating Schedule Dates
 
-Validating schedule dates is used to change the schedule start date and end date dynamically. By this support, the [`scheduleStartDate`](/api/js/ejgantt#members:schedulestartdate) and [`scheduleEndDate`](/api/js/ejgantt#members:scheduleenddate) can be automatically updated from the data source. When you change the date of any task item to the date that is beyond the [`scheduleStartDate`](/api/js/ejgantt#members:schedulestartdate) or [`scheduleEndDate`](/api/js/ejgantt#members:scheduleenddate) through cell editing, taskbar editing and dialog editing or toolbar operation, then the [scheduleStartDate](/api/js/ejgantt#members:schedulestartdate) and [`scheduleEndDate`](/api/js/ejgantt#members:scheduleenddate) can be dynamically updated based on that task item’s date.
+Validating schedule dates is used to change the schedule start date and end date dynamically. By this support, the [`scheduleStartDate`](/api/js/ejgantt#members:schedulestartdate) and [`scheduleEndDate`](/api/js/ejgantt#members:scheduleenddate) can be automatically updated from the data source. When you change the date of any task item to the date that is beyond the [`scheduleStartDate`](/api/js/ejgantt#members:schedulestartdate) or [`scheduleEndDate`](/api/js/ejgantt#members:scheduleenddate) through cell editing, taskbar editing and dialog editing or toolbar operation, then the [`scheduleStartDate`](/api/js/ejgantt#members:schedulestartdate) and [`scheduleEndDate`](/api/js/ejgantt#members:scheduleenddate) can be dynamically updated based on that task item’s date.
 
 The`PrevTimeSpan` and `NextTimeSpan` toolbar items are used to create new time span based on the schedule mode.
 
