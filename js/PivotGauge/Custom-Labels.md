@@ -10,9 +10,9 @@ api: /api/js/ejpivotgauge
 
 # Custom labels
 
-## Adding Custom Label Collection
+## Adding custom label collection
 
-`customLabels` collection can be directly added to the scales option within the PivotGauge widget as an array.
+A `customLabels` collection can be directly added to the scales option within the pivot gauge widget as an array.
 
 {% highlight javascript %}
 
@@ -31,12 +31,12 @@ api: /api/js/ejpivotgauge
 
 {% endhighlight %}
 
-## Appearance Customization
+## Appearance customization
 
-The appearance of the custom labels can be changed through the following properties.
+The appearance of the custom labels can be changed through the following properties:
 
-* **position** – used to set the position of the labels.
-* **font** – sets the font size, font style and font family of the label text.
+* **position** – sets the position of the labels.
+* **font** – sets the font size, font style, and font family of the label text.
 * **color** – sets the color of the label text.
 * **textAngle** – rotates the label to a specified angle. By default, the value is 0.
 
@@ -66,9 +66,9 @@ The appearance of the custom labels can be changed through the following propert
 
 ![](Custom-Labels_images/AppearanceCustomization.png) 
 
-## Multiple Custom Labels
+## Multiple custom labels
 
-Multiple custom labels can be set to a PivotGauge widget by adding an array of objects within the `customLabels` option. 
+Multiple custom labels can be set to the pivot gauge widget by adding an array of objects within the `customLabels` option.
 
 {% highlight javascript %}
 

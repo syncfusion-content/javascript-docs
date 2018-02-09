@@ -10,9 +10,9 @@ api: /api/js/ejpivotgauge
 
 # Ticks
 
-## Adding Tick Collection
+## Adding tick collection
 
-Tick collection can be directly added to the scales option within the PivotGauge widget as an array.
+The tick collection can be directly added to the scales option within the pivot gauge widget as an array.
 
 {% highlight javascript %}
 
@@ -28,16 +28,16 @@ Tick collection can be directly added to the scales option within the PivotGauge
 
 {% endhighlight %}
 
-## Tick Customization
+## Tick customization
 
-The appearance of the tick can be customized through the following properties.
+The appearance of the tick can be customized through the following properties:
 
 * **type** – indicates whether ticks are for major or minor intervals. By default, the type is "major".
 * **height** – sets the height of the ticks.
 * **width** – sets the width of the ticks.
 * **angle** – rotates the ticks to a specified angle. By default, the angle value is 0.
-* **color** – displays the ticks in specified color.
-* **distanceFromScale** – sets the distance between scale and ticks. By default, the values is 0.
+* **color** – displays the ticks in a specified color.
+* **distanceFromScale** – sets the distance between the scale and ticks. By default, the values is 0.
 * **placement** – positions the ticks with respect to the scale.  By default, the value is set to "far".
 
 {% highlight javascript %}
