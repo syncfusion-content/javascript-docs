@@ -382,7 +382,9 @@ The below code example illustrates how to define custom fields in dataSource and
 
 ## How to perform Editing at runtime
 
-The dataSourceSettings [crudAction](/api/js/ejdiagram#members:datasourcesettings-crudaction "crudAction") property specifies the method name which is used to get the updated data from client side to the server side. similarly, the connectionDataSource [crudAction](/api/js/ejdiagram#members:datasourcesettings-connectiondatasource-crudaction "crudAction")  property specifies the method name which is used to get updated connectors from client side to the server side.
+* The dataSourceSettings [crudAction](/api/js/ejdiagram#members:datasourcesettings-crudaction "crudAction") object allows you to define the method which is used to get the changes done in the datasource defined for shapes from client side to the server side. 
+
+* Similarly, the connectionDataSource [crudAction](/api/js/ejdiagram#members:datasourcesettings-connectiondatasource-crudaction "crudAction") object allows you to define the method which is used to get the changes done in the datasource defined for connectors from client side to the server side. 
 
 ## InsertData
 

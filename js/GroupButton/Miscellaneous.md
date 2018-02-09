@@ -44,6 +44,34 @@ Particular currently showing button items can be hided. Also it provides the opt
 
 Also entire group button, can be hide/show using public methods hide(), show().
 
+**Hide the entire GroupButton**
+
+{% highlight js %}
+
+        <script>
+
+            groupButtonObj = $("#groupButton").data("ejGroupButton");
+
+            groupButtonObj.hide();
+
+        </script>
+
+{% endhighlight %}
+
+**Show the groupButton**
+
+{% highlight js %}
+
+        <script>
+
+            groupButtonObj = $("#groupButton").data("ejGroupButton");
+
+            groupButtonObj.show();
+
+        </script>
+
+{% endhighlight %}
+
 ## Enable/Disable
 
 Particular Items can be enabled/disabled using **enableItem**, **disableItem** methods. This takes the index of the button as the argument. 

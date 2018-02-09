@@ -131,6 +131,8 @@ The following screenshot shows the output of the above steps,
 
 ![](/js/TreeGrid/Data-Binding_images/Data-Binding_img2.png)
 
+It is possible to the refresh the data source rendered in TreeGrid at run-time using the [`refresh`](https://help.syncfusion.com/api/js/ejtreegrid#methods:refresh "refresh") method. The data source to be displayed and the query to render the data should be passed as the method parameters.
+
 ## Remote data binding
 
 ### Load on demand
