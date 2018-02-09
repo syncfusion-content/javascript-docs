@@ -36,7 +36,7 @@ Getting started with your Essential JavaScript Diagram is easy. You can start by
 {% endhighlight %}
 
 2\. Add a placeholder `div` element that can be used to initialize the diagram widget as shown below.
-3\. Use [width](/api/js/ejDiagram#members:width "width") and [height](/api/js/ejDiagram#members:height "height") property of the diagram allows you to define the size of the diagram.
+3\. Use [width](/api/js/ejdiagram#members:width "width") and [height](/api/js/ejdiagram#members:height "height") property of the diagram allows you to define the size of the diagram.
 
 {% highlight html %}
 
@@ -55,6 +55,8 @@ Getting started with your Essential JavaScript Diagram is easy. You can start by
 4\. This creates an empty diagram
 
 ![](/js/Diagram/Getting-Started_images/Getting-Started_img1.png)
+
+The [create](/api/js/ejdiagram#events:create "create") event gets triggered once the diagram is created.
 
 ### Create and add Node
 

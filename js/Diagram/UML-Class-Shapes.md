@@ -84,11 +84,11 @@ N> The default value for the property `classifier` is "class".
 
 * An Interface is a kind of classifier that represents a declaration of a set of coherent public features and obligations. To create an interface, you need to define the [classifier](/api/js/ejdiagram#members:nodes-classifier "classifier") property as "interface". 
 
-* Also, you need to define the [name](/api/js/ejdiagram#members:nodes-interface.name "name"), [attributes](/api/js/ejdiagram#members:nodes-interface.attributes "attributes") and [methods](/api/js/ejdiagram#members:nodes-interface.methods "methods") of the interface using the [interface](/api/js/ejdiagram#members:nodes-interface "interface") property of the node.
+* Also, you need to define the [name](/api/js/ejdiagram#members:nodes-interface-name "name"), [attributes](/api/js/ejdiagram#members:nodes-interface-attributes "attributes") and [methods](/api/js/ejdiagram#members:nodes-interface-methods "methods") of the interface using the [interface](/api/js/ejdiagram#members:nodes-interface "interface") property of the node.
 
-* The attribute's [name](/api/js/ejdiagram#members:nodes-interface-attributes.name "name"), [type](/api/js/ejdiagram#members:nodes-interface-attributes.type "type") and [scope](/api/js/ejdiagram#members:nodes-interface-attributes.scope "scope") properties are allows you to define the name, data type and visibility of the attribute.
+* The attribute's [name](/api/js/ejdiagram#members:nodes-interface-attributes-name "name"), [type](/api/js/ejdiagram#members:nodes-interface-attributes-type "type") and [scope](/api/js/ejdiagram#members:nodes-interface-attributes-scope "scope") properties are allows you to define the name, data type and visibility of the attribute.
 
-* The method's [name](/api/js/ejdiagram#members:nodes-interface-methods.name "name"), [arguments](/api/js/ejdiagram#members:nodes-interface-methods.arguments "arguments"), [type](/api/js/ejdiagram#members:nodes-interface-methods.type "type") and [scope](/api/js/ejdiagram#members:nodes-interface-interface.scope "scope") properties are allows you to define the name, argument, return type and visibility of the methods.
+* The method's [name](/api/js/ejdiagram#members:nodes-interface-methods-name "name"), [arguments](/api/js/ejdiagram#members:nodes-interface-methods-arguments "arguments"), [type](/api/js/ejdiagram#members:nodes-interface-methods-type "type") and [scope](/api/js/ejdiagram#members:nodes-interface-interface-scope "scope") properties are allows you to define the name, argument, return type and visibility of the methods.
 
 * The method.arguments object properties [name](/api/js/ejdiagram#members:nodes-interface-methods-arguments-name "name") and [type](/api/js/ejdiagram#members:nodes-interface-methods-arguments-type "type") allows to define the name and type of the argument.
  
@@ -434,7 +434,7 @@ Multiplicity is a definition of an inclusive interval of non-negative integers t
 
 * To set an optionality/cardinality for the connector source label, use [optional](/api/js/ejdiagram#members:connectors-shape-multiplicity-source-optional "optional") property.
 
-* [lowerBounds](/api/js/ejdiagram#members:connectors-shape-multiplicity-source-lowerbounds "lowerBounds") and [upperBounds](/api/js/ejdiagram#members:connectors-shape-multiplicity-source-upperBounds "upperBounds") could be natural constants or constant expressions evaluated to natural (non negative) number. Upper bound could be also specified as asterisk '*' which denotes unlimited number of elements. Upper bound should be greater than or equal to the lower bound.
+* [lowerBounds](/api/js/ejdiagram#members:connectors-shape-multiplicity-source-lowerbounds "lowerBounds") and [upperBounds](/api/js/ejdiagram#members:connectors-shape-multiplicity-source-upperbounds "upperBounds") could be natural constants or constant expressions evaluated to natural (non negative) number. Upper bound could be also specified as asterisk '*' which denotes unlimited number of elements. Upper bound should be greater than or equal to the lower bound.
 
 The following code example illustrates how to customize the multiplicity.
 

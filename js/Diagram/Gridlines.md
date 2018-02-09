@@ -45,9 +45,9 @@ You can customize the appearance of the gridlines by using a set of predefined p
 
 * The [horizontalGridLines](/api/js/ejdiagram#members:snapsettings-horizontalgridlines "horizontalGridLines") and [verticalGridLines](/api/js/ejdiagram#members:snapsettings-verticalgridlines "verticalGridLines") properties allow to customize the appearance of the horizontal and vertical gridlines respectively.
 
-* The horizontalGridLines [lineColor](/api/js/ejdiagram#members:snapsettings-horizontalgridlines-linecolor "lineColor") and [lineDashArray](/api/js/ejdiagram#members:snapsettings-horizontalgridlines-lineDashArray "lineDashArray") properties are used to customizes the line color and line style of the horizontal gridlines.
+* The horizontalGridLines [lineColor](/api/js/ejdiagram#members:snapsettings-horizontalgridlines-linecolor "lineColor") and [lineDashArray](/api/js/ejdiagram#members:snapsettings-horizontalgridlines-linedasharray "lineDashArray") properties are used to customizes the line color and line style of the horizontal gridlines.
 
-* The verticalGridLines [lineColor](/api/js/ejdiagram#members:snapsettings-verticalgridlines-linecolor "lineColor") and [lineDashArray](/api/js/ejdiagram#members:snapsettings-verticalgridlines-lineDashArray "lineDashArray") properties are used to customizes the line color and line style of the vertical gridlines.
+* The verticalGridLines [lineColor](/api/js/ejdiagram#members:snapsettings-verticalgridlines-linecolor "lineColor") and [lineDashArray](/api/js/ejdiagram#members:snapsettings-verticalgridlines-linedasharray "lineDashArray") properties are used to customizes the line color and line style of the vertical gridlines.
 
 The following code example illustrates how to customize the appearance of gridlines.
 
