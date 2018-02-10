@@ -83,6 +83,7 @@ $("#heatmap").ejHeatMap({
 Now data is ready, next we need to configure data source and map rows and columns to visualize.
 
 * Prepare [itemsMapping](/api/js/ejheatmap#members:itemsmapping "itemsMapping") and add it in resource.
+* To set size for the heatmap, use [width](/api/js/ejheatmap#members:width "width") and [height](/api/js/ejheatmap#members:height "height") property.
 
 {% highlight js %}
 

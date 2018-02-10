@@ -18,6 +18,10 @@ Legend is a control used to summarize the range of colors in HeatMap. This gives
 
 * You can set size for heatmap legend using [width](/api/js/ejheatmaplegend#members:width "width") and [height](/api/js/ejheatmaplegend#members:height "height") properties.
 
+* You can show/hide the cell label by using [showLabel](/api/js/ejheatmaplegend#members:showlabel "showLabel") property.
+
+* You can enable/disable responsive mode for heatmap legend by using [isResponsive](/api/js/ejheatmaplegend#members:isresponsive "isResponsive") property.
+
 {% highlight js %}
 
 var colorMappingCollection = [
