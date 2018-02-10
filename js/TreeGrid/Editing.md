@@ -187,9 +187,9 @@ You can edit any of the fields pertaining to a single record of data and apply i
 Using this template support, you can edit/add the fields that are not bound to TreeGrid columns.
 To edit/add the records using dialog template form, set `editMode` as `dialogEditing` and specify the template id to [`dialogEditorTemplateID`](/api/js/ejtreegrid#members:editsettings-dialogeditortemplateid "editSettings.dialogEditorTemplateID") property of `editSettings`.
 
-N> 1. The `value` attribute is used to bind the corresponding field value while editing.
-N> 2. The `name` attribute is used to get the changed field values while saving the edited record.
-N> 3.  The `id` attribute must to be set in the format of ( treegrid control id + fieldname).
+N> The `value` attribute is used to bind the corresponding field value while editing.
+   The `name` attribute is used to get the changed field values while saving the edited record.
+   The `id` attribute must to be set in the format of ( treegrid control id + fieldname).
 
 The following code example describes the above behavior.
 
@@ -347,6 +347,8 @@ The following code example describes edit template behavior.
 The output of the TreeGrid width editTemplate as follows.
 
 ![](/js/TreeGrid/Editing_images/editTemplate.png)
+
+The updated record values are maintained in collection in TreeGrid, and the user can retrieve the updated record collection at any time by using the [`getUpdatedRecords`](https://help.syncfusion.com/api/js/ejtreegrid#methods:getupdatedrecords "getUpdatedRecords") method.
 
 ## Adding records using method
 

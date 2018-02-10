@@ -234,7 +234,7 @@ The following code illustrates how to remove a node from layer.
 
 ### Update layer at runtime
 
-Layers can be updated at runtime by using public updateLayer, [updateLayer](/api/js/ejdiagram#methods:updatelayer "updateLayer").  
+Layers can be updated at runtime by using public updateLayer, [updateLayer](/api/js/ejdiagram#methods:updateLayer "updateLayer").  
  
 The following code illustrates how to add a node to layer.  
 
