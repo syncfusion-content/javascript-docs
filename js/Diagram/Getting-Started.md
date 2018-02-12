@@ -36,6 +36,7 @@ Getting started with your Essential JavaScript Diagram is easy. You can start by
 {% endhighlight %}
 
 2\. Add a placeholder `div` element that can be used to initialize the diagram widget as shown below.
+3\. Use [width](/api/js/ejdiagram#members:width "width") and [height](/api/js/ejdiagram#members:height "height") property of the diagram allows you to define the size of the diagram.
 
 {% highlight html %}
 
@@ -51,9 +52,11 @@ Getting started with your Essential JavaScript Diagram is easy. You can start by
 
 {% endhighlight %}
 
-3\. This creates an empty diagram
+4\. This creates an empty diagram
 
 ![](/js/Diagram/Getting-Started_images/Getting-Started_img1.png)
+
+The [create](/api/js/ejdiagram#events:create "create") event gets triggered once the diagram is created.
 
 ### Create and add Node
 
@@ -143,7 +146,13 @@ $("#diagram").ejDiagram({
 
 ![](/js/Diagram/Getting-Started_images/Getting-Started_img3.png)
 
-* Default values for all nodes and connectors can be set using default settings. For example if all nodes have same `width` and `height`, we can move such properties into `defaultSettings`. Above code can be rewritten as shown below.
+* Default values for all nodes and connectors can be set using [defaultSettings](/api/js/ejdiagram#members:defaultsettings "defaultSettings") property. For example if all nodes have same `width` and `height`, we can move such properties into `defaultSettings`. 
+
+* The defaultSettings [node](/api/js/ejdiagram#members:defaultsettings-node "node") property is used to define the default node properties.
+* The defaultSettings [connector](/api/js/ejdiagram#members:defaultsettings-connector "connector") property is used to define the default connector properties.
+* The defaultSettings [group](/api/js/ejdiagram#members:defaultsettings-group "group") property is used to define the default group properties.
+
+Above code can be rewritten as shown below.
 
 {% highlight javascript %}
 

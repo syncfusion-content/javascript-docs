@@ -513,12 +513,12 @@ public class Global : System.Web.HttpApplication
 
 {% endhighlight %}
 
-Now, the pivot chart will be rendered with customer count over a period of fiscal years across different customer geographic locations.
+The pivot chart will be rendered with customer count over a period of fiscal years across different customer geographic locations.
 
 ![](Olap-Getting-Started_images/ServerMode.png)
 
 ### WCF
-This section demonstrates the utilization of the WCF service as endpoint binding the [`OLAP`](/api/js/ejpivotchart#members:analysismode) data source to a simple pivot chart. For more details on this topic, [click here](https://help.syncfusion.com/js/pivotchart/olap-connectivity#wcf).
+This section demonstrates the utilization of the WCF service as an endpoint binding the OLAP data source to the simple pivot chart. For more details on this topic, [click here](https://help.syncfusion.com/js/pivotchart/olap-connectivity#wcf).
 
 
 

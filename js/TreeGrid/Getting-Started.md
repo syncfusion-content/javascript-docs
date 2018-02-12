@@ -269,3 +269,27 @@ The output of the DateTimePicker editor in TreeGrid control is as follows.
 
 ![](/js/TreeGrid/Getting-Started_images/Getting-Started_img5.png)
 
+### Define dimension of TreeGrid
+
+The TreeGrid control is render with `100%` width and `450px`height by default, we can define the dimension of TreeGrid control by using [`sizeSettings`](/api/js/ejtreegrid#members:sizesettings) property. TreeGrid control width and height can be defined by either [`width`](/api/js/ejtreegrid#members:sizesettings-width "sizeSettings.width") and [`height`](/api/js/ejtreegrid#members:sizesettings-height "sizeSettings.height") properties or by defining inline style in TreeGrid container element.
+
+The below code example shows how to define width and height for TreeGrid.
+
+{% highlight html %}
+
+<!--<div id="TreeGridContainer" style="width:700px;height:350px"></div>-->
+<div id="TreeGridContainer"></div>
+
+<script>
+    $("#TreeGridContainer").ejTreeGrid({   
+        //...
+        sizeSettings:{
+            width: "700px",
+            height: "350px"
+        }
+    });
+</script>
+
+{% endhighlight %}
+
+N> TreeGrid control will automatically update the width and height value based on container element on window resize action, this can be enabled by setting [`isResponsive`](/api/js/ejtreegrid#members:isresponsive) property as `true` for this [`height`](/api/js/ejtreegrid#members:sizesettings-height "sizeSettings.height") and [`width`](/api/js/ejtreegrid#members:sizesettings-width "sizeSettings.width") value will be defined in percentage.

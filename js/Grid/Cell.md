@@ -138,7 +138,13 @@ The Grid has options to merge the Grid cells based on the required conditions. T
 
 You can merge the rows and cells of grid, using `rowMerge`, `colMerge` and `merge` functions available in [`mergeCellInfo`](https://help.syncfusion.com/api/js/ejgrid#events:mergecellinfo "mergeCellInfo") event's argument.
 
+
 N>  [`mergeHeaderCellInfo`](https://help.syncfusion.com/api/js/ejgrid#events:mergeheadercellinfo "mergeHeaderCellInfo") event triggered every time a request is raised while merging the header cell which contains header cell information and element.
+
+N> The following features are not supported with Cell Merging
+N> 1. Normal Mode Editing
+N> 2. Inline Mode Editing
+N> 3. Inline TemplateForm Mode Editing
 
 The following code example describes the above behavior.
 

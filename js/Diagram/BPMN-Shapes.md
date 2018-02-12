@@ -209,6 +209,7 @@ The different activities of BPMN process are listed as follows.
 #### Tasks
 
 The [task](/api/js/ejdiagram#members:nodes-task "task") property of node allows you to define the [type](/api/js/ejdiagram#members:nodes-tasks-type "type") of task such as sending, receiving, user based task etc… By default, the `type` property of task is set as "none". The following code illustrates how to create different types of BPMN tasks. 
+The [events](/api/js/ejdiagram#members:nodes-tasks-events "events") property of tasks allows to represent these results as an event attached to the task.
 
 {% highlight javascript %}
 
@@ -257,7 +258,7 @@ The various types of BPMN tasks are tabulated as follows.
 
 #### Subprocess
 
-A sub-process is a group of tasks which is used to hide or reveal details of additional levels which can be done using [collapsed](/api/js/ejdiagram#members:nodes-subprocess-collapsed "collapsed") property .
+A [sub-process](/api/js/ejdiagram#members:nodes-subprocess "sub-process") is a group of tasks which is used to hide or reveal details of additional levels which can be done using [collapsed](/api/js/ejdiagram#members:nodes-subprocess-collapsed "collapsed") property .
 
  {% highlight javascript %}
 
@@ -291,16 +292,16 @@ $("#diagram").ejDiagram({
 
 ![](/js/Diagram/Shapes_images/Shapes_img116.png)
 
-The different types of subprocess are as follows.
+The different types of subprocess are as follows. 
 
 * Event Subprocess
 * Transaction 
 
 ##### Event Subprocess
 
-A Sub-process is defined as an Event Sub-process when it is triggered by an event. An event-subprocess is placed within another subprocess which is not part of the normal flow of its parent process . You can set event to a sub-process with the [event](/api/js/ejdiagram#members:nodes-subprocess-event "event") and [trigger](/api/js/ejdiagram#members:nodes-subprocess-trigger "trigger") property of subprocess. 
+A Sub-process is defined as an Event Sub-process when it is triggered by an event. An event-subprocess is placed within another subprocess which is not part of the normal flow of its parent process . You can set event to a sub-process with the [event](/api/js/ejdiagram#members:nodes-subprocess-event "event") and [trigger](/api/js/ejdiagram#members:nodes-subprocess-trigger "trigger") property of subprocess. The [type](/api/js/ejdiagram#members:nodes-subprocess-type "type") property of sub-process allows you to define type of sub-process whether it should be event sub-process or transaction sub-process.
 
- {% highlight javascript %}
+{% highlight javascript %}
 
 $("#diagram").ejDiagram({
 	width: "100%",
@@ -334,7 +335,15 @@ $("#diagram").ejDiagram({
 
 ##### Transaction Subprocess
 
-An transaction is a set of activities that logically belong together, in which all contained activities must complete their parts of the transaction; otherwise the process is undone. The execution result of a transaction is one of Successful Completion, Unsuccessful Completion (Cancel), and Hazard (Exception). The [events](/api/js/ejdiagram#members:nodes-subprocess-events "events") property of subprocess allows to represent these results as an event attached to the subprocess. 
+* An transaction is a set of activities that logically belong together, in which all contained activities must complete their parts of the transaction; otherwise the process is undone. The execution result of a transaction is one of Successful Completion, Unsuccessful Completion (Cancel), and Hazard (Exception). The [events](/api/js/ejdiagram#members:nodes-subprocess-events "events") property of subprocess allows to represent these results as an event attached to the subprocess. 
+
+* The [event](/api/js/ejdiagram#members:nodes-subprocess-events-event "event") object allows you define the type of event by which the sub-process will be triggered. Also you can define [name](/api/js/ejdiagram#members:nodes-subprocess-events-name "name") of the event to identify the event at runtime.
+
+* The event's [offset](/api/js/ejdiagram#members:nodes-subprocess-events-offset "offset") property is used to set the fraction/ratio(relative to parent) that defines the position of the event shape.
+
+* The [trigger](/api/js/ejdiagram#members:nodes-subprocess-events-trigger "trigger") property defines the type of the event trigger.
+
+* You can also use define ports and labels to sub-process events by using event's [ports](/api/js/ejdiagram#members:nodes-subprocess-events-ports "ports") and [labels](/api/js/ejdiagram#members:nodes-subprocess-events-labels "labels") properties.
 
  {% highlight javascript %}
 
@@ -374,7 +383,7 @@ $("#diagram").ejDiagram({
 
 #### Processes 
 
-Processes is a array collection that defines the children values for BPMN subprocess.
+[processes](/api/js/ejdiagram#members:nodes-subprocess-processes "processes") is a array collection that defines the children values for BPMN subprocess.
 
 {% highlight javascript %}
 <div id="diagram"></div>
@@ -413,6 +422,7 @@ $("#diagram").ejDiagram({
 #### Loop
 
 Loop is a task that is internally being looped. The [loop](/api/js/ejdiagram#members:nodes-tasks-loop "loop") property of task allows you to define the type of loop. The default value for `loop` is "none". 
+You can define the [loop](/api/js/ejdiagram#members:nodes-subprocess-loop "loop") property in subprocess BPMN shape as shown in the below code.
 
 {% highlight javascript %}
 
@@ -471,7 +481,7 @@ The following table contains various types of BPMN loops.
 
 #### Compensation
 
-Compensation is triggered when operation is partially failed and you can enable it with the [compensation](/api/js/ejdiagram#members:nodes-tasks-compensation "compensation") property of task.
+Compensation is triggered when operation is partially failed and you can enable it with the [compensation](/api/js/ejdiagram#members:nodes-tasks-compensation "compensation") property of task and [compensation](/api/js/ejdiagram#members:nodes-subprocess-compensation "compensation") property of subprocess.
 
 {% highlight javascript %}
 
@@ -637,7 +647,7 @@ The following table contains various types of BPMN boundaries.
 
 ### Data
 
-A data object represents information flowing through the process, such as data placed into the process, data resulting from the process, data that needs to be collected, or data that must be stored. To define a data object, set the [shape](/api/js/ejdiagram#members:nodes-shape "shape")  as "dataobject" and [type](/api/js/ejdiagram#members:nodes-data-type "type") property defines whether data is an input or a output. You can create multiple instances of data object with the [collection](/api/js/ejdiagram#members:nodes-data-collection "collection") property of data.
+A data object represents information flowing through the process, such as data placed into the process, data resulting from the process, data that needs to be collected, or data that must be stored. To define a [data](/api/js/ejdiagram#members:nodes-data "data") object, set the [shape](/api/js/ejdiagram#members:nodes-shape "shape")  as "dataobject" and [type](/api/js/ejdiagram#members:nodes-data-type "type") property defines whether data is an input or a output. You can create multiple instances of data object with the [collection](/api/js/ejdiagram#members:nodes-data-collection "collection") property of data.
 
 {% highlight javascript %}
 
@@ -717,9 +727,19 @@ Artifact is used to show additional information about a Process in order to make
 * Text Annotation
 * Group
 
-#### Text Annoatation
+#### Text Annotation
 
-A BPMN object can be associated with a text annotation which does not affect the flow but gives details about objects within a flow. The [annotation](/api/js/ejdiagram#members:nodes-annotation "annotation") property of the node is used to connect an annotation element to the BPNN node.
+* A BPMN object can be associated with a text annotation which does not affect the flow but gives details about objects within a flow. The [annotation](/api/js/ejdiagram#members:nodes-annotation "annotation") property of the node is used to connect an annotation element to the BPNN node.
+
+* The annotation [angle](/api/js/ejdiagram#members:nodes-annotation-angle "angle") property is used to set the angle between the BPMN shape and the annotation.
+
+* The annotation [direction](/api/js/ejdiagram#members:nodes-annotation-direction "direction") property is used to set direction of the text annotation.
+
+* To set the size for text annotation, use [width](/api/js/ejdiagram#members:nodes-annotation-width "width") and [height](/api/js/ejdiagram#members:nodes-annotation-height "height") properties.
+
+* The annotation [length](/api/js/ejdiagram#members:nodes-annotation-length "length") property is used to set the distance between the BPMN shape and the annotation.
+
+* The annotation [text](/api/js/ejdiagram#members:nodes-annotation-text "text") property defines the additional information about the flow object in a BPMN Process.
 
  {% highlight javascript %}
 

@@ -61,7 +61,11 @@ DataManager.DataProvider.ProviderName=Syncfusion.Olap.DataProvider.Providers.Act
 ## WCF
 **Adding a WCF service**
 
+<<<<<<< HEAD
 To add a WCF service in an existing web application, right-click the project in the solution explorer and select **Add > New Item**. In the **Add New Item** window, select the WCF Service and name it **“OlapService.svc,”** and then click **Add**.
+=======
+To add a WCF service in an existing web application, right-click the project in the solution explorer and select **Add > New Item**. In the **Add New Item** window, select WCF Service and name it **“OlapService.svc,”** and then click **Add**.
+>>>>>>> hotfix/hotfix-v15.4.0.20
  
 The WCF service is added to your application, which, in-turn, comprises the following files. The utilization of these files will be explained in the immediate sections.
 
@@ -71,7 +75,11 @@ The WCF service is added to your application, which, in-turn, comprises the foll
 
 **Configuring WCF service class**
 
+<<<<<<< HEAD
 Remove the “DoWork” method present in both `OlapService.svc.cs` and `IOlapService.cs files`. Next, add “AspNetCompatibilityRequirements” attribute on top of the main class present in the `OlapService.svc.cs` file and set the “RequirementsMode” value to “Allowed”.
+=======
+Remove the “DoWork” method present in both `OlapService.svc.cs` and `IOlapService.cs files`. Next, add the “AspNetCompatibilityRequirements” attribute on top of the main class that is present in `OlapService.svc.cs` and set the “RequirementsMode” value to “Allowed”.
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 {% highlight c# %}
 
@@ -87,9 +95,15 @@ namespace PivotGaugeDemo
 
 **List of dependency libraries**
 
+<<<<<<< HEAD
 Next, you can add the below-mentioned dependency libraries to your web application. These libraries can be found in the GAC (Global Assembly Cache).
  
 To add them to your web application, right-click **References** in the solution explorer and select **Add Reference**. In the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries are found.
+=======
+Next, you can add the below mentioned dependency libraries to your web application. These libraries can be found in the GAC (Global Assembly Cache).
+ 
+To add them to your web application, right-click **References** in the solution explorer and select **Add Reference**. Now, in the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries are found. 
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 N> If you have installed any version of SQL Server Analysis Service (SSAS) or Microsoft ADOMD.NET utility, then the location of Microsoft.AnalysisServices.AdomdClient library is [system drive:\Program Files (x86)\Microsoft.NET\ADOMD.NET]. If you have installed any version of Essential Studio, then the location of Syncfusion libraries is [system drive:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\Assemblies].
 
@@ -104,7 +118,11 @@ N> If you have installed any version of SQL Server Analysis Service (SSAS) or Mi
 
 **List of namespaces**
 
+<<<<<<< HEAD
 Following are the list of namespaces to be added on top of the main class in the `OlapService.svc.cs` file:
+=======
+Following is the list of namespaces to be added on top of the main class in the `OlapService.svc.cs` file.
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 {% highlight c# %}
 
@@ -144,7 +162,11 @@ namespace PivotGaugeDemo
 
 **Service methods in WCF service**
 
+<<<<<<< HEAD
 First, you can define the service methods in the IOlapService interface.To do so, find the `IOlapService.cs` file which was created while adding the WCF service to your web application.
+=======
+First, you can define the service methods in the IOlapService interface, found in the `IOlapService.cs` file which was created while adding the WCF service to your web application.
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 {% highlight c# %}
 
@@ -159,7 +181,11 @@ namespace PivotGaugeDemo
 }
 {% endhighlight %}
 
+<<<<<<< HEAD
 Then, you can elaborate the service methods in the main class, found in the `OlapService.svc.cs` file.
+=======
+Then, you can elaborate the service methods in the main class, which is found in the `OlapService.svc.cs` file.
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 {% highlight c# %}
 
@@ -215,6 +241,7 @@ namespace PivotGaugeDemo
 }
 {% endhighlight %}
 
+<<<<<<< HEAD
 N> The [`customObject`](../api/ejpivotgauge#members:customobject) is utilized to pass the additional information between the client-end and the service-end.
 
 **Configuring web configuration file**
@@ -226,6 +253,17 @@ You can expose the services through the properties such as binding, contract, an
 * behaviorConfiguration: This property contains the name of the behavior to be used in the endpoint.
 
 The endpointBehaviors are illustrated as follows:
+=======
+**Configuring web configuration file**
+
+You can expose the services through the properties such as binding, contract, and address by using an endpoint.
+
+* Contract: This property indicates that the contract of the endpoint is exposed. Refer to the **IOlapService** contract, and it is written as **PivotGaugeDemo.IOlapService**.
+* Binding: In your application, you can use **webHttpBinding** to post and receive requests and responses between the client-end and the service.
+* behaviorConfiguration: This property contains the name of the behavior to be used in the endpoint.
+
+The endpointBehaviors are illustrated in the following sample:
+>>>>>>> hotfix/hotfix-v15.4.0.20
  
 {% highlight xml %}
 
@@ -257,7 +295,11 @@ The endpointBehaviors contain all behaviors for an endpoint. You can link each e
 </system.serviceModel>
 {% endhighlight %}
 
+<<<<<<< HEAD
 N> In this example, the “PivotGaugeDemo” indicates the name and root namespace of the web application that is created in the Visual Studio IDE, and the “OlapService” indicates the name of the created WCF service.
+=======
+N> In this example, the “PivotGaugeDemo” indicates the name and root namespace of the web application created in the Visual Studio IDE, and the “OlapService” indicates the name of the created WCF service.
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 Now, the pivot gauge is rendered with internet sales amount across different customer geographic locations.
 

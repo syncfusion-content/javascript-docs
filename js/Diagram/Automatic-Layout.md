@@ -15,13 +15,13 @@ Diagram provides support to auto-arrange the nodes in the Diagram area that is r
 * Hierarchical Layout
 * Organization Chart
 * Radial Tree
+* Symmetric Layout
 
 ## Hierarchical Layout
 
 The Hierarchical Tree Layout arranges nodes in a tree-like structure, where the nodes in the hierarchical layout may have multiple parents. There is no need to specify the layout root.
-To arrange the nodes in hierarchical structure, you need to specify the layout `type` as hierarchical tree. The following example shows how to arrange the nodes in a hierarchical structure.
-
-
+To arrange the nodes in hierarchical structure, you need to specify the layout [type](/api/js/ejdiagram#members:layout-type "type") as hierarchical tree. The following example shows how to arrange the nodes in a hierarchical structure.
+ 
 {% highlight javascript %}
 
 //Initializes data source
@@ -91,13 +91,13 @@ $("#diagram").ejDiagram({
 
 ![](/js/Diagram/Automatic-Layout_images/Automatic-Layout_img1.png)
 
-N> You can ignore a particular Node from layout arrangement by setting its **excludeFromLayout** property as true.
+N> You can ignore a particular Node from layout arrangement by setting its [excludeFromLayout](/api/js/ejdiagram#members:nodes-excludefromlayout "excludeFromLayout") property as true.
 
 ## Radial Tree Layout
 
-The Radial Tree layout arranges nodes on a virtual concentric circles around a root node. Sub-trees formed by the branching of child nodes are located radially around the child nodes. This arrangement results in an ever-expanding concentric arrangement with radial proximity to the root node indicating the node level in the hierarchy. When no root node is set, the algorithm automatically considers one of the Diagram nodes as the root node.
+The Radial Tree layout arranges nodes on a virtual concentric circles around a root node. Sub-trees formed by the branching of child nodes are located radially around the child nodes. This arrangement results in an ever-expanding concentric arrangement with radial proximity to the root node indicating the node level in the hierarchy. You can use layout [root](/api/js/ejdiagram#members:layout-root "root") property to define the root node of the layout. When no root node is set, the algorithm automatically considers one of the Diagram nodes as the root node.
 
-To arrange nodes in a radial tree structure, you need to set the `layout.type` as `radialtree`. The following code illustrates how to arrange the nodes in a radial tree structure.
+To arrange nodes in a radial tree structure, you need to set the [type](/api/js/ejdiagram#members:layout-type "type") of the layout as `radialtree`. The following code illustrates how to arrange the nodes in a radial tree structure.
 
 {% highlight javascript %}
 
@@ -179,7 +179,7 @@ $("#diagram").ejDiagram({
 
 ## Organizational Chart
 
-An **organizational chart** is a Diagram that displays the structure of an organization and relationships. To create an organizational chart, `layout.type` should be set as `organizationalchart`.
+An **organizational chart** is a Diagram that displays the structure of an organization and relationships. To create an organizational chart, [type](/api/js/ejdiagram#members:layout-type "type") of layout should be set as `organizationalchart`.
 The following code example illustrates how to create an organizational chart.
 
 {% highlight javascript %}
@@ -265,7 +265,7 @@ Organizational chart layout starts parsing from root and iterate through all its
 
 ### GetLayoutInfo
 
-You can set Chart orientations, chart types, and offset to be left between parent and child nodes by overriding the method, diagram.model.layout.getLayoutInfo. The getLayoutInfo method is called to configure every subtree of the organizational chart. It takes the following arguments.
+You can set Chart orientations, chart types, and offset to be left between parent and child nodes by overriding the method, diagram.model.layout.getLayoutInfo. The [getLayoutInfo](/api/js/ejdiagram#members:layout-getlayoutinfo "getLayoutInfo") method is called to configure every subtree of the organizational chart. It takes the following arguments.
 
 * `diagram`: Reference of diagram
 * `node`: Parent node to that options are to be customized
@@ -402,6 +402,10 @@ $("#diagram").ejDiagram({
 
 ![](/js/Diagram/Automatic-Layout_images/Automatic-Layout_img10.png)
 
+### GetConnectorSegments
+
+You can customize the connector segments based on source and target nodes by overriding the method, diagram.model.layout.getConnectorSegments and it can be used only when the layout type set as `organizationalchart`. please refer to [getConnectorSegments](/api/js/ejdiagram#members:layout-getconnectorsegments "getConnectorSegments") to know more details about its argument and usage.
+
 ### Assistant
 
 **Assistants** are child item that have a different relationship with the parent node. They are laid out in a dedicated part of the tree. You can specify a node as an assistant of its parent by adding it to `assistants` property of the argument "options".
@@ -473,19 +477,94 @@ $("#diagram").ejDiagram({
 
 ![](/js/Diagram/Automatic-Layout_images/Automatic-Layout_img11.png)
 
+##  Symmetric Layout
+
+The symmetric layout has been formed using nodes position by closer together or pushing them further apart. This is repeated iteratively until the system comes to an equilibrium state. 
+
+The layout's [springLength](/api/js/ejdiagram#members:layout-springlength "springLength") defined as how long edges should be, ideally. This will be the resting length for the springs. Edge attraction and vertex repulsion forces to be defined by using layout's [springFactor](/api/js/ejdiagram#members:layout-springfactor "springFactor"), the more sibling nodes repel each other. The relative positions do not change anymore from one iteration to the next.  We can specify the no of iteration by using layout's [maxIteration](/api/js/ejdiagram#members:layout-maxiteration "maxIteration"). 
+
+The following code illustrates how to arrange the nodes in a radial tree structure. 
+
+{% highlight javascript %}
+
+        var nodes = [];
+        var connectors = [];
+        // creating the connection between the layout nodes and connectors.
+        function connectNodes(parentNode, childNode) {
+            var connector = {
+                name: parentNode.name + childNode.name,
+                sourceNode: parentNode.name,
+                targetNode: childNode.name,
+                targetDecorator: { shape: "none" }
+            };
+            return connector;
+        }
+
+        // creating the layout nodes as rectangle in shape.
+        function getRectangle(name) {
+            var node = {
+                name: name, height: 25, width: 25, borderColor: "#5e5e5e", borderWidth: 1, fillColor: "#ff6329", shape: "ellipse"
+            };
+            return node;
+        }
+
+        // creating the symmetrical layout child elements hierarchy.
+        function populateNodes() {
+            var parentRect = getRectangle("p");
+            nodes.push(parentRect);
+            for (var i = 0; i < 2; i++) {
+                var childRect_i = getRectangle("c" + i);
+                nodes.push(childRect_i);
+                for (var j = 0; j < 2; j++) {
+                    var childRect_j = getRectangle("c" + i + j);
+                    nodes.push(childRect_j);
+                    for (var k = 0; k < 6; k++) {
+                        var childRect_k = getRectangle("c" + i + j + k);
+                        nodes.push(childRect_k);
+                        connectors.push(connectNodes(childRect_j, childRect_k));
+                    }
+                    connectors.push(connectNodes(childRect_i, childRect_j));
+                }
+                connectors.push(connectNodes(parentRect, childRect_i));
+            }
+            return nodes;
+        }
+
+        $("#diagram").ejDiagram({
+            //sets the layout child elements
+            nodes: populateNodes(),
+            connectors: connectors,
+            //sets the layout as symmetric layout
+            layout: {
+                type: ej.datavisualization.Diagram.LayoutTypes.SymmetricLayout,
+                springLength: 80,
+                margin: {
+                    left: 0,
+                    top: 20,
+                },
+                springFactor: .8,
+                maxIteration: 500
+            }
+        });
+
+{% endhighlight %}
+
+![](/js/Diagram/Automatic-Layout_images/Automatic-Layout_img17.png)
+
+
 ## Customize Layout
 
 Orientation, spacings, and position of layout can be customized with a set of properties.
 
 To explore layout properties, refer to [Layout Properties](/api/js/ejdiagram#members:layout "Layout Properties").
 
-### Layout Bounds 
+### Layout Bounds
 
-Diagram provides support to align the layout within any custom rectangular area. For more information about bounds, refer to [Layout Bounds] (/api/js/ejdiagram#members:layout-bounds "Layout Bounds")
+Diagram provides support to align the layout within any custom rectangular area. For more information about bounds, refer to [bounds](/api/js/ejdiagram#members:layout-bounds "bounds")
 
 ### Layout Alignment
 
-You can align the layout anywhere over the layout bounds/viewport using the `horizontalAlignment` and `verticalAlignment` properties of layout.
+You can align the layout anywhere over the layout bounds/viewport using the [horizontalAlignment](/api/js/ejdiagram#members:layout-horizontalalignment "horizontalAlignment") and [verticalAlignment](/api/js/ejdiagram#members:layout-verticalalignment "verticalAlignment") properties of layout.
 
 The following code illustrates how to align the layout at the top left of the layout bounds.
 
@@ -529,9 +608,13 @@ $("#diagram").ejDiagram({
 
 ![](/js/Diagram/Automatic-Layout_images/Automatic-Layout_img14.png)
 
+### Layout Spacing
+
+Layout provides support to add space horizontally and vertically between the nodes. The [horizontalSpacing](/api/js/ejdiagram#members:layout-horizontalspacing "horizontalSpacing") and [verticalSpacing](/api/js/ejdiagram#members:layout-verticalspacing "verticalSpacing") property of the layout allows you to set the space between the nodes in horizontally and vertically.
+
 ### Layout Margin
 
-Layout provides support to add some blank space between the layout bounds/viewport and the layout. The `margin` property of the layout allows you to set the blank space.
+Layout provides support to add some blank space between the layout bounds/viewport and the layout. The [margin](/api/js/ejdiagram#members:layout-margin "margin") property of the layout allows you to set the blank space.
 
 The following code illustrates how to set the layout margin.
 
@@ -574,7 +657,7 @@ $("#diagram").ejDiagram({
 
 ### Layout Orientation
 
-Diagram provides support to customize the orientation of layout. You can set the desired orientation using `layout.orientation`. For more information about orientation, refer to [Layout Orientations](/api/js/global#layoutorientations "Layout Orientations")
+Diagram provides support to customize the orientation of layout. You can set the desired orientation using [layout.orientation](/api/js/ejdiagram#members:layout-orientation "layout.orientation").
 
 The following code illustrates how to arrange the nodes in a "BottomToTop" orientation.
 
@@ -617,7 +700,7 @@ $("#diagram").ejDiagram({
 
 ### Fixed Node
 
-Layout provides support to arrange the nodes with reference to the position of a fixed node and the fixed node has to be set to the `layout.fixedNode`.
+Layout provides support to arrange the nodes with reference to the position of a fixed node and the fixed node has to be set to the [fixedNode](/api/js/ejdiagram#members:layout-fixednode "fixedNode") of the layout property.
 This is helpful when you try to expand/collapse a node. It might be expected that the position of the double-clicked node should not be changed.
 
 {% highlight javascript %}
@@ -681,7 +764,7 @@ $("#DiagramContent").ejDiagram({
 
 ### Expand and collapse
 
-Diagram allows to expand/collapse the sub trees of a layout. `node.isExpanded` allows you to expand/collapse its children. The following code example shows how to expand/collapse the children of a node.
+Diagram allows to expand/collapse the sub trees of a layout. The node's [isExpanded](/api/js/ejdiagram#members:nodes-isexpanded "isExpanded") property allows you to expand/collapse its children. The following code example shows how to expand/collapse the children of a node.
 
 {% highlight javascript %}
 
@@ -717,7 +800,7 @@ Diagram allows to refresh the layout at runtime. To refresh the layout, refer to
 
 ### nodeTemplate
 
-The nodeTemplate function is provided for the purpose of customizing nodes.It will be called for each node on node initialization. In this function, we can customize the node style and its properties and can bind the custom JSON with node.  
+The [nodeTemplate](/api/js/ejdiagram#members:nodetemplate "nodeTemplate") function is provided for the purpose of customizing nodes.It will be called for each node on node initialization. In this function, we can customize the node style and its properties and can bind the custom JSON with node.  
 
 {% highlight javascript %}
 
@@ -763,7 +846,7 @@ $("#diagramcontent").ejDiagram(
 
 ### connectorTemplate
 
-The connectorTemplate function is provided for the purpose of customizing connectors.It will be called for each connector on connector initialization. In this function, we can customize the connector style and its properties and can bind the custom JSON with connector.
+The [connectorTemplate](/api/js/ejdiagram#members:connectortemplate "connectorTemplate") function is provided for the purpose of customizing connectors.It will be called for each connector on connector initialization. In this function, we can customize the connector style and its properties and can bind the custom JSON with connector.
 
 {% highlight javascript %}
 

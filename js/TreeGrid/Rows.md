@@ -289,9 +289,163 @@ The following code shows how to render row drag tooltip with tooltip template.
 
 ![](/js/TreeGrid/Rows_images/Rows_img3.png)
 
+### Customize row drag and drop action
+In TreeGrid, [`rowDragStart`](https://help.syncfusion.com/api/js/ejtreegrid#events:rowdragstart), [`rowDrag`](https://help.syncfusion.com/api/js/ejtreegrid#events:rowdrag) and [`rowDragStop`](https://help.syncfusion.com/api/js/ejtreegrid#events:rowdragstop) events are triggered on row drag and drop action. Using this event we can prevent drag and drop action of particular record and validate the drop position on particular record. 
+
+The below code example shows how to use this events.
+
+{% highlight js %}
+
+        $("#treegrid1").ejTreeGrid({
+            //...
+            allowDragAndDrop: true,
+            rowDragStart: function (args) {
+                if (args.draggedRow.taskID == 6) // Task Id 6 can't be dragged
+                    args.cancel = true;
+            },
+            rowDrag: function (args) {
+                if (args.targetRow.taskID == 5 && args.dropPosition == "insertAsChild") // Can't drop task as child on Task Id 5
+                    args.canDrop = false;
+            },
+            rowDragStop: function (args) {
+                if (args.targetRow.taskID == 6) // Can't drop any task on Task Id 6
+                    args.cancel = true;
+            },            
+        });
+
+{% endhighlight %}
+
+## Details row
+
+Details row is used to provide a additional information about each row of tree grid. You can specify the detail row JsRender template id or HTML element as string to [`detailsTemplate`](/api/js/ejtreegrid#members:detailstemplate) property. However you need to enable the details template by setting [`showDetailsRow`](/api/js/ejtreegrid#members:showdetailsrow) property as `true`.
+
+The following code example shows how to enable details tow in tree grid.
+
+{% highlight HTML %}
+<script id="descriptionTemplate" type="text/x-jsrender">
+    <div style="position: relative; display: inline-block; float: left; font-weight: bold; width: 10%">
+        <img src="../content/images/treegrid/{{:Name}}.png" style="margin-left: 10px;margin-top:15px;" />
+    </div>
+    <div style="padding-left: 10px; display: inline-block; width: 88%; text-wrap: normal;font-size:12px;font-family:'Segoe UI';margin-top:2px;">
+        <div class="e-description" style="word-wrap: break-word;">
+            <b>{{:Name}}</b> was born on {{:~_treeGridDateFormatter("DOB")}}. Now lives at {{:Address}},{{:Country}}. {{:Name}} holds a position of <b>{{:Designation}}</b> in our WA department, (Seattle USA). Joined our company on {{:~_treeGridDateFormatter("DOJ")}}.
+        </div>
+        <div class="e-description" style="word-wrap: break-word;margin-top:5px;">
+         <b style="margin-right:10px;">Contact:</b>{{:Contact}}
+        </div>
+    </div>
+</script>
+
+<script>
+    $("#TreeGrid").ejTreeGrid({
+        //...     
+        detailsTemplate:"descriptionTemplate",
+        enableCollapseAll: true,
+        //...
+    });
+</script>
+{% endhighlight %}
+
+![](/js/TreeGrid/Rows_images/Rows_img8.png)
+
+The above screenshot shows details row in tree grid.
+{:.caption}
+
+The visibility of the details view of a record can also be toggled with any custom actions by using the method [`showHideDetailsRow`](https://help.syncfusion.com/api/js/ejtreegrid#methods:showhidedetailsrow "showHideDetailsRow").
+
+[Click](https://js.syncfusion.com/demos/web/#!/bootstrap/treegrid/rows/detailstemplate) here to view the demo sample for details row template.
+
+### Disable details row info column
+On enabling details template, details row info column will be added in tree grid. It is used for show or hide the detail row of respective row. You can disable that column while enabling details template using [`showDetailsRowInfoColumn`](/api/js/ejtreegrid#members:showdetailsrowinfocolumn) property. If you disable details row info column, then the details row will render next to the respective row.
+
+The following code example shows how to hide detail info column in tree grid. 
+
+{% highlight javascript %}
+
+$("#TreeGrid").ejTreeGrid({
+    //...     
+    detailsTemplate:"descriptionTemplate",
+    enableCollapseAll: true,
+    showDetailsRowInfoColumn:false,
+    //...
+});
+
+{% endhighlight %}
+
+![](/js/TreeGrid/Rows_images/Rows_img9.png)
+
+The above screenshot shows details row rendered next to the respective row.
+{:.caption}
+
+### Defining row height for detail template
+
+In TreeGrid, It is provide a support to change the detail template height using [`detailsRowHeight`](/api/js/ejtreegrid#members:detailsrowheight) property.
+
+The following code example shows how to set details row height in tree grid. 
+
+{% highlight javascript %}
+
+$("#TreeGrid").ejTreeGrid({
+    //...     
+    detailsTemplate:"descriptionTemplate",
+    detailsRowHeight:150,
+    //...
+});
+
+{% endhighlight %}
+
+![](/js/TreeGrid/Rows_images/Rows_img10.png)
+
+The above screenshot shows details row rendered with height of `150px`.
+{:.caption}
+
+### Customize detail row
+In TreeGrid, while rendering the details row the [`detailsDataBound`](https://help.syncfusion.com/api/js/ejtreegrid#events:detailsdatabound) event will trigger. Using this event we can customize the detail row for specific row.
+
+The below code example shows how to customize details row for specific row.
+
+{% highlight javascript %}
+
+$("#TreeGrid").ejTreeGrid({
+    //...     
+    detailsTemplate:"descriptionTemplate",
+    detailsDataBound:function(args)
+    {
+        if (args.data.Name == "Andrew Fuller")
+            $(args.detailsElement).css("background-color", "rgba(133, 133, 173,1)");
+    },
+    //...
+});
+
+{% endhighlight %}
+
+![](/js/TreeGrid/Rows_images/Rows_img12.png)
+
+The above screenshot shows details row customization for specific row. 
+{:.caption}
+
+While opening and closing the details row, the [`detailsShown`](https://help.syncfusion.com/api/js/ejtreegrid#events:detailsshown) and [`detailsHidden`](https://help.syncfusion.com/api/js/ejtreegrid#events:detailshidden) events are triggered. Using this event we can prevent the details row show and hide for specific row.
+
+The below code example shows how to prevent details row show for specific row.
+
+ {% highlight javascript %}
+
+$("#TreeGrid").ejTreeGrid({
+    //...     
+    detailsTemplate:"descriptionTemplate",
+    detailsShown:function(args)
+    {
+        if (args.data.Name == "Andrew Fuller")
+           args.cancel = true;
+    },
+    //...
+});
+
+{% endhighlight %}
+
 ## Expand/Collapse Row
 
-In TreeGrid, parent rows are expanded/collapsed by using expand/collapse icons, expand all/collapse all toolbar items and by using public methods. By default all records in TreeGrid will be rendered in expanded state.
+In TreeGrid, parent rows are expanded/collapsed by using expand/collapse icons, expand all/collapse all toolbar items and by using the [`expandCollapseRow`](https://help.syncfusion.com/api/js/ejtreegrid#methods:expandcollapserow "expandCollapseRow") method. By default all records in TreeGrid will be rendered in expanded state.
 
 ### Collapse parent records at initial load
 
@@ -417,6 +571,90 @@ $("#collapseAtLevel").click(function () {
 
 {% endhighlight %}
 
+### Customize expand/collapse action
+
+In TreeGrid,While expanding the parent row [`expanding`](https://help.syncfusion.com/api/js/ejtreegrid#events:expanding) and [`expanded`](https://help.syncfusion.com/api/js/ejtreegrid#events:expanded) event will be trigger with current expanding row detail. Similarly [`collapsing`](https://help.syncfusion.com/api/js/ejtreegrid#events:collapsing) and [`collapsed`](https://help.syncfusion.com/api/js/ejtreegrid#events:collapsed) event will be trigger while collapsing the parent row. Using this event and it's arguments we can customize the expand/collapse action.
+
+The following code example shows how to prevent the particular row from expand/collapse action using [`expanding`](https://help.syncfusion.com/api/js/ejtreegrid#events:expanding) and [`collapsing`](https://help.syncfusion.com/api/js/ejtreegrid#events:collapsing) event.
+
+{% highlight js %}
+
+$("#TreeGrid").ejTreeGrid({
+    //...
+    collapsing:function(args){
+        if(args.data.progress < 50) // we can't collapse the record which has progress is less than 50
+            args.cancel = true;
+    },
+    expanding:function(args){
+        if(args.data.duration > 5) // we can't expand the record which has duration is greater than 5
+            args.cancel = true;
+    },
+    //..
+});
+
+{% endhighlight %}
+
+## Summary Row
+
+Summary rows in TreeGrid is used to summarize every hierarchy with the set of predefined summary types using the column values. Using the [`summaryRows`](https://help.syncfusion.com/api/js/ejtreegrid#members:summaryrows "summaryRows") property, user can define the summary rows in TreeGrid.
+Title for each summary row can be defined using the [`summaryRows.title`](https://help.syncfusion.com/api/js/ejtreegrid#members:summaryrows-title "summaryRows.title") property. And using the [`summaryRows.summaryColumns`](https://help.syncfusion.com/api/js/ejtreegrid#members:summaryrows-summarycolumns "summaryRows.summaryColumns") property, it is possible to defined the summary for specific columns alone in a summary row.
+Enable the [`showSummaryRow`](https://help.syncfusion.com/api/js/ejtreegrid#members:showsummaryrow "showSummaryRow") property to make the summary row visible. Total summary row is the overall summary row displayed for all the rows in the TreeGrid content, and its visibility can be denied using the [`showTotalSummary`](https://help.syncfusion.com/api/js/ejtreegrid#members:showtotalsummary "showTotalSummary") property.
+
+### Defining summary columns
+
+Using the [`summaryType`](https://help.syncfusion.com/api/js/ejtreegrid#members:summaryrows-summarycolumns-summarytype "summaryRows.summaryColumn.summaryType") property, user can define the type of summary to be displayed in a column. The [`dataMember`](https://help.syncfusion.com/api/js/ejtreegrid#members:summaryrows-summarycolumns-datamember "summaryRows.summaryColumns.dataMember") property is used the map the field values which is used for summary calculations. The [`displayColumn`](https://help.syncfusion.com/api/js/ejtreegrid#members:summaryrows-summarycolumns-displaycolumn "summaryRows.summaryColumns.displayColumn") property is used to specify the column in which the summary to be displayed.
+The [`prefix`](https://help.syncfusion.com/api/js/ejtreegrid#members:summaryrows-summarycolumns-prefix "summaryRows.summaryColumns.prefix") and [`suffix`](https://help.syncfusion.com/api/js/ejtreegrid#members:summaryrows-summarycolumns-suffix "summaryRows.summaryColumns.suffix") properties are used to define the text should be displayed along with the summary column value. The [`format`](https://help.syncfusion.com/api/js/ejtreegrid#members:summaryrows-summarycolumns-format "summaryRows.summaryColumns.format") property is used for formatting the summary column value.
+The below code snippet explains defining a summary row in TreeGrid,
+
+{% highlight js %}
 
 
+        $("#treegrid").ejTreeGrid({
+            showSummaryRow: true,
+            showTotalSummary: true,
+            summaryRows: [
+                       {
+                           title: "Maximum",
+                           summaryColumns: [
+                               {
+                                   summaryType: ej.TreeGrid.SummaryType.Maximum,
+                                   dataMember: "TotalUnits",
+                                   displayColumn: "TotalUnits",
+                                   prefix: "Individual maximum unit = "
+                               },
+                               {
+                                   summaryType: ej.TreeGrid.SummaryType.Maximum,
+                                   dataMember: "TotalCosts",
+                                   displayColumn: "TotalCosts",
+                                   prefix: "Individual maximum Cost = ",
+                                   format: "{0:C}"
+                               }
+                           ]
+                       },
+                       {
+                           title: "Total",
+                           summaryColumns: [
+                               {
+                                   summaryType: ej.TreeGrid.SummaryType.Sum,
+                                   dataMember: "TotalCosts",
+                                   displayColumn: "TotalCosts",
+                                   prefix: "Total costs = ",
+                                   format: "{0:C}"
+                               },
+                               {
+                                   summaryType: ej.TreeGrid.SummaryType.Sum,
+                                   dataMember: "UnitWeight",
+                                   displayColumn: "UnitWeight",
+                                   prefix: "Total weight = ",
+                                   suffix: " Pounds"
+                               }]
+                       }
+            ],
+            //...
+        });
 
+{% endhighlight %}
+
+The below screenshot shows the output of above code example..
+
+![](/js/TreeGrid/Rows_images/Rows_img11.png)

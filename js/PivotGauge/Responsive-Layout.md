@@ -10,7 +10,11 @@ api: /api/js/ejpivotgauge
 
 # Responsive layout
 
+<<<<<<< HEAD
 The pivot gauge widget supports the responsive rendering based on the target device (desktop and tablet) resolution. It supports resolution upto 1024x600. You can enable the responsiveness in the pivot gauge by setting the [`isResponsive`](/api/js/ejpivotgauge#members:isresponsive) property to true.
+=======
+The pivot gauge widget supports responsive rendering based on the target device (desktop and tablet) resolution. It supports resolution upto 1024x600. You can enable the responsiveness in the pivot gauge by setting the [`isResponsive`](/api/js/ejpivotgauge#members:isresponsive) property to true.
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 {% highlight javascript %}
 

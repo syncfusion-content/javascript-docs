@@ -32,7 +32,7 @@ Essential **PivotChart JS** supports 17 different types of charts as follows:
 
 ## Column chart
 
-The **column chart** is the most commonly used chart type. It uses vertical bars (called columns) to display different values of one or more items. Points from adjacent series are drawn as bars next to each other. It is used to compare the frequency, count, total, or average of data in different categories. It is ideal to show the variations in the value of an item over a period of time.
+The **column chart** is the most commonly used chart type. It uses vertical bars (called columns) to display different values of one or more items. Points from adjacent series are drawn as bars next to each other. It is used to compare the frequency, count, total, or average of the data in different categories. It is ideal to show the variations in the value of an item over a period of time.
 
 {% highlight javascript %}
     
@@ -44,13 +44,13 @@ The **column chart** is the most commonly used chart type. It uses vertical bars
     });
 {% endhighlight %}
 
-The following screenshot displays the **column chart**:
+The following screenshot displays the **column chart**.
 
 ![](Chart-Types_images/ColumnChart.png)
 
 ## Stacking column chart
 
-The **stacking column** chart is similar to column charts except the Y-values. These Y-values stack on top of each other in a specified series order. This helps to visualize the relationship of parts to the whole chart across various categories.
+The **stacking column** chart is similar to column chart except the Y-values. These Y-values stack on top of each other in a specified series order. This helps to visualize the relationship of parts to the whole chart across various categories.
 
 {% highlight javascript %}
 
@@ -62,13 +62,13 @@ The **stacking column** chart is similar to column charts except the Y-values. T
     });
 {% endhighlight %}
 
-The following screenshot displays the **stacking column chart**:
+The following screenshot displays the **stacking column chart**.
 
 ![](Chart-Types_images/StackingColumnChart.png)
 
 ## Bar chart
 
-The **bar chart** displays horizontal bars for each point in the series and points from adjacent series. Bar charts are used to compare values across various categories for displaying the variations in the value of an item over a period of time or comparing the values of several items at a single point in time.
+The **bar chart** displays horizontal bars for each point in the series and points from adjacent series. Bar charts are used to compare values across various categories for displaying the variations in the value of an item over a period of time or comparing the values of several items in a single point of time.
 
 {% highlight javascript %}
 
@@ -80,7 +80,7 @@ The **bar chart** displays horizontal bars for each point in the series and poin
     });
 {% endhighlight %}
 
-The following screenshot displays the **bar chart**:
+The following screenshot displays a **bar chart**.
 
 ![](Chart-Types_images/BarChart.png)
 
@@ -98,7 +98,7 @@ The **stacking bar chart** is a regular **bar** chart with the X-values stacked 
     });
 {% endhighlight %}
 
-The following screenshot displays the **stacking bar chart**:
+The following screenshot displays the **stacking bar chart.**
 
 ![](Chart-Types_images/StackingBarChart.png) 
 
@@ -116,13 +116,13 @@ The **line chart** joins the data points on a plot by using straight lines that 
     });
 {% endhighlight %}
 
-The following screenshot displays the **line chart**:
+The following screenshot displays the **line chart**.
 
 ![](Chart-Types_images/LineChart.png)
 
 ## Step line chart
 
-The **step line chart** uses horizontal and vertical lines to connect the data points resulting in a step like progression.
+**Step line chart** uses horizontal and vertical lines to connect the data points resulting in a step like progression.
 
 {% highlight javascript %}
 
@@ -134,13 +134,13 @@ The **step line chart** uses horizontal and vertical lines to connect the data p
     });
 {% endhighlight %}
 
-The following screenshot displays the **step line chart:**
+The following screenshot displays the **step line chart.**
 
 ![](Chart-Types_images/StepLineChart.png)
 
 ## Spline chart
 
-The **spline chart** is similar to line chart whereas it connects different data points by using curved lines instead of straight lines.
+The **spline chart** is similar to line chart whereas it connects different data points with curved lines instead of straight lines.
 
 {% highlight javascript %}
 
@@ -152,13 +152,13 @@ The **spline chart** is similar to line chart whereas it connects different data
     });
 {% endhighlight %}
 
-The following screenshot displays the **spline chart**:
+The following screenshot displays the **spline chart**.
 
 ![](Chart-Types_images/SplineChart.png)
 
 ## Area chart
 
-The **area chart** emphasizes the degree of change of values over a period of time. Instead of rendering data as discrete bars or columns, an area chart renders it in a continuous ebb-and-flow pattern as defined against the y-axis.
+The **area chart** emphasizes the degree of change of values over a period of time. Instead of rendering the data as discrete bars or columns, the area chart renders continuous ebb-and-flow pattern as defined against the y-axis.
 
 {% highlight javascript %}
 
@@ -170,13 +170,13 @@ The **area chart** emphasizes the degree of change of values over a period of ti
     });
 {% endhighlight %}
 
-The following screenshot displays the **area chart**:
+The following screenshot displays the **area chart**.
 
 ![](Chart-Types_images/AreaChart.png)
 
 ## Step area chart
 
-The **step area** chart is similar to the regular area chart except for a straight line tracing the shortest path between the data points. The values are connected by continuous vertical and horizontal lines to form a step like progression.
+The **step area** chart is similar to the regular area chart except a straight line tracing the shortest path between the data points. The values are connected by continuous vertical and horizontal lines to form a step like progression.
 
 {% highlight javascript %}
 
@@ -194,7 +194,7 @@ The following screenshot displays the **step area chart.**
 
 ## Spline area chart
 
-The **spline area** chart is similar to area chart with the difference in which the data points of a series are connected. It connects each series of points by a smooth **spline curve**.
+The **spline area** chart is similar to area chart which differs by connecting the data points of a series. It connects each series of points by a smooth **spline curve**.
 
 {% highlight javascript %}
 
@@ -206,13 +206,13 @@ The **spline area** chart is similar to area chart with the difference in which 
     });
 {% endhighlight %}
 
-The following screenshot displays the **spline area chart:**
+The following screenshot displays the **spline area chart.**
 
 ![](Chart-Types_images/SplineAreaChart.png)
 
 ## Stacking area chart
 
-The **stacking area** chart is similar to regular area chart except the “Y-values”. These “Y-values” stack on top of each other in the specified series order. This helps to visualize the relationship of parts to the whole chart across various categories.
+The **stacking area** chart is similar to regular area chart except the “Y-values”. These “Y-values” stack on top of each other in the specified series order. It helps to visualize the relationship of parts to the whole chart across various categories.
 
 {% highlight javascript %}
 
@@ -224,13 +224,13 @@ The **stacking area** chart is similar to regular area chart except the “Y-val
     });
 {% endhighlight %}
 
-The following screenshot displays the **stacking area chart:**
+The following screenshot displays the **Stacking Area Chart.**
 
 ![](Chart-Types_images/StackingAreaChart.png)
 
 ## Pie chart
 
-A **pie chart** is used to summarize a set of categorical data or display the different values of a given variable (e.g., percentage distribution). This type of chart is in a circle shape that is divided into a series of segments. Each segment represents a particular category.
+The **pie chart** is used to summarize a set of categorical data or displaying different values of a given variable (e.g., percentage distribution). This type of chart is a circle form that is divided into several segments. Each segment represents a particular category.
 
 {% highlight javascript %}
 
@@ -242,13 +242,13 @@ A **pie chart** is used to summarize a set of categorical data or display the di
     });
 {% endhighlight %}
 
-The following screenshot displays the **pie chart**:
+The following screenshot displays the **pie chart**.
 
 ![](Chart-Types_images/PieChart.png)
 
 ## Doughnut chart
 
-A **doughnut chart** is used to summarize a set of categorical data which possesses a doughnut like structure that is divided into a series of segments. Each segment represents a particular category.
+The **doughnut chart** is used to summarize a set of categorical data which possesses a doughnut like structure that is divided into several segments. Each segment represents a particular category.
 
 {% highlight javascript %}
 
@@ -260,7 +260,7 @@ A **doughnut chart** is used to summarize a set of categorical data which posses
     });
 {% endhighlight %}
 
-The following screenshot displays the **doughnut chart**:
+The following screenshot displays the **doughnut chart**.
 
 ![](Chart-Types_images/DoughnutChart.png)
 
@@ -302,7 +302,7 @@ The following screenshot displays the **funnel chart:**
 
 ## Scatter chart
 
-The **scatter chart** type displays the data as a collection of points corresponding to the associated values.
+The **scatter chart** type displays the data as a collection of points corresponding to associated values.
 
 {% highlight javascript %}
 

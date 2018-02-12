@@ -56,7 +56,7 @@ The pivot chart control can be exported by invoking the [`exportPivotChart`](/ap
 
 {% endhighlight %}
 
-When the pivot chart is rendered in the server mode, a service method should be added in the WCF/WebAPI for server-side operations.
+When the pivot chart is rendered in the server mode, a service method should be added to the WCF/WebAPI for server side operations.
 
 For WebAPI controller, the following method should be added:
 
@@ -87,11 +87,11 @@ public void Export(System.IO.Stream stream) {
 
 ## Excel export
 
-You can export the contents of the pivot chart to Excel document for future archival, references, and analysis purposes.
+You can export the contents of the pivot chart to an Excel document for future archival, references, and analysis purposes.
 
 ### Client mode
 
-To achieve Excel export, the service URL and the file name are set as parameter.
+To achieve Excel export, the service URL and the file name are set as parameters.
 
 {% highlight javascript %}
 
@@ -105,7 +105,7 @@ function exportBtnClick(args)
 
 ### Server mode
 
-To achieve Excel export, you can add the following dependency libraries to the application:
+To achieve Excel export, you should add the following dependency libraries to the application:
 
 * Syncfusion.Compression.Base
 * Syncfusion.XlsIO.Base
@@ -125,7 +125,7 @@ function exportBtnClick(args)
 
 ## Word export
 
-You can export the contents of the pivot chart to Word document for future archival, references, and analysis purposes.
+You can export the contents of the pivot chart to a Word document for future archival, references, and analysis purposes.
 
 ### Client mode
 
@@ -211,7 +211,7 @@ You can export the contents of the pivot chart to image format for future archiv
 
 ### Client mode
 
-To export the pivot chart in PNG format, the service URL, file name and **“ej.PivotChart.ExportOptions.PNG”** enumeration value are set as parameters. This is similar to other image formats.
+To export the pivot chart in PNG format, the service URL, the file name, and the **“ej.PivotChart.ExportOptions.PNG”** enumeration value are set as parameters. It is similar to other image formats.
 
 {% highlight javascript %}
 
@@ -240,7 +240,7 @@ function exportBtnClick(args)
 
 ## Pivot chart - exporting format
 
-I> This option is applicable only for the pivot chart specifically when exported to an Excel document.
+I> This option is applicable only for the pivot chart specifically when it is exported to an Excel document.
 
 You can set an option to export the pivot chart to an Excel document, and you can export it as either an image or pivot chart format itself by setting the Boolean property `exportChartAsImage` in the `beforeExport` event.
 
@@ -260,13 +260,13 @@ N> By default, the pivot chart will be exported in image format to an Excel docu
         
  {% endhighlight %}
 
-The following screenshot shows the control exported to the Excel document showing its own format (pivoting chart):
+The following screenshot illustrates the control exported to an Excel document by showing its own format (pivoting chart).
 
 ![](Export_images/Export_ExcelChartClient.png)
 
 ## Exporting customization
 
-You can add the title and description to the exporting document by using the title and description property obtained in the "beforeExport" event.
+You can add the title and description to the exporting document by using the title and description property in the "beforeExport" event.
 
 N> The title and description cannot be added to image formats.
 
@@ -414,9 +414,9 @@ void htmlHelper_ExcelExport(object sender, Syncfusion.XlsIO.IWorkbook workBook)
 
 {% endhighlight %}
 
-The name of the document can be customized as per the user's requirements.
+The name of the document can be customized per the user's requirements.
 
-For client mode, you should set the file name as a parameter in the **“exportPivotChart”**  method along with the service URL.
+For client mode, you can set the file name as a parameter in the **“exportPivotChart”** method along with the service URL.
 
 {% highlight javascript %}
 
@@ -427,7 +427,7 @@ function exportBtnClick(args)
 }
 {% endhighlight %}    
 
-For server mode, the exporting document name is provided in the WebAPI controller, as shown in the following code snippet:
+For server mode, the exporting document name is provided in the WebAPI controller as shown in the following code snippet:
 
 {% highlight c# %}
 
@@ -441,7 +441,7 @@ public void Export() {
 
 {% endhighlight %}
 
-For customizing names in the WCF service, the following code snippet is used:
+For customizing names in the WCF Service, the following code snippet is used:
 
 {% highlight c# %}
 

@@ -66,7 +66,7 @@ diagram.removeSelection(node);
 {% endhighlight %}
 
 You can get the current selected items from the [children](/api/js/ejdiagram#members:selecteditems-children "children") collection of [selectedItems](/api/js/ejdiagram#members:selecteditems "selectedItems") property of the Diagram model.
-The client side method `updateSelector` helps you to change the size, position, and rotation angle of the selected elements at runtime. The following code example illustrates how to read the selected items and how to update the position, size, and rotation angle.
+The client side method `updateSelector` helps you to change the [width](/api/js/ejdiagram#members:selecteditems-width "width"), [height](/api/js/ejdiagram#members:selecteditems-height "height"), [offsetX](/api/js/ejdiagram#members:selecteditems-offsetx "offsetX"), [offsetY](/api/js/ejdiagram#members:selecteditems-offsety "offsetY") and [rotation angle](/api/js/ejdiagram#members:selecteditems-rotateangle "rotate angle") of the selected elements at runtime. The following code example illustrates how to read the selected items and how to update the position, size, and rotation angle.
 
 {% highlight javascript %}
 
@@ -92,6 +92,10 @@ for (var i = 0; i < diagram.model.selectedItems.children.length; i++) {
 The client side method [updateSelectedObject](/api/js/ejdiagram#methods:updateselectedobject "updateSelectedObject") used to update the specified node as selected object. For example, When you click on a group node, the entire group gets selected. if you need to select the group children on first click, then you need to pass that node name to this method.
 
 N> SelectedItems’s children is a read-only property. You cannot change the children collection at run time.
+
+#### GetConstraints
+
+The SelectedItems’s [getConstraints](/api/js/ejdiagram#members:selecteditems-getconstraints "getConstraints") function is provided for the purpose of to decide the interaction with multiple selection. The method is used to decide when you perform interaction with multiple selected elements in which any one of the element has an interaction disabled, then you can decide whether interaction such as dragging, resizing and rotation needs to be enabled or not.
 
 ### Select entire elements in diagram programmatically
 
@@ -296,8 +300,11 @@ function onDrop(args) {
 
 ## User handles
 
-User handles are used to add some frequently used commands around the selector. To create user handles, define and add them to the [userHandles](/api/js/ejdiagram#members:selecteditems-userhandles "userHandles") collection of [selectedItems](/api/js/ejdiagram#members:selecteditems "selectedItems") property.
-The [tool](/api/js/ejdiagram#members:selecteditems-userhandles-tool "tool") property of user handle should be set with any appropriate tool to enable interaction.
+* User handles are used to add some frequently used commands around the selector. To create user handles, define and add them to the [userHandles](/api/js/ejdiagram#members:selecteditems-userhandles "userHandles") collection of [selectedItems](/api/js/ejdiagram#members:selecteditems "selectedItems") property.
+
+* The [name](/api/js/ejdiagram#members:selecteditems-userhandles-name "name") property of user handle is used to define the name of the user handle and its further used to find the user handle at runtime and do any customization.
+
+* The [tool](/api/js/ejdiagram#members:selecteditems-userhandles-tool "tool") property of user handle should be set with any appropriate tool to enable interaction.
 
 The following code example illustrates how to draw a user handle.
 
@@ -343,7 +350,7 @@ $("#DiagramContent").ejDiagram({
 
 ### update user handles at runtime
 
-You can use client side method [updateUserHandles](/api/js/ejdiagram#methods:updateuserhandles "updateUserHandles") to update userhandles with respect to given node. Please refer to the below code example which shows how to update user handles at runtime.
+You can use client side method [updateUserHandles](/api/js/ejdiagram#methods:updateuserhandles "updateUserHandles") to update user handles with respect to given node. Please refer to the below code example which shows how to update user handles at runtime.
 
 {% highlight javascript %}
 
@@ -353,9 +360,30 @@ diagram.updateUserHandles(node);
 
 {% endhighlight %}
 
+
+### Alignment
+
+User handles can be aligned relative to the node boundaries. It has margin, offset, horizontal and vertical alignment settings. It is quite tricky when all four alignments are used together but gives you more control over alignment.
+
+#### Offset
+
+The [offset](/api/js/ejdiagram#members:selecteditems-userhandles-offset "offset") property of userhandle is used to align the user handle based on fractions. 0 represents top/left corner, 1 represents bottom/right corner, and 0.5 represents half of width/height.
+
+#### Horizontal and vertical alignments
+
+The [horizontalAlignment](/api/js/ejdiagram#members:selecteditems-userhandles-horizontalalignment "horizontalAlignment") property of userhandle is used to set how the userhandle is horizontally aligned at the userhandle position determined from the fraction values. The [verticalAlignment](/api/js/ejdiagram#members:selecteditems-userhandles-verticalalignment "verticalAlignment") property is used to set how userhandle is vertically aligned at the userhandle position.
+
+#### Margin
+
+**Margin** is an absolute value used to add some blank space in any one of its four sides. You can displace the userhandle with the [margin](/api/js/ejdiagram#members:selecteditems-userhandles-margin "margin") property.
+
 ### Appearance
 
-Position, size, and style of the user handle can be customized with a set of predefined properties.
+* The [size](/api/js/ejdiagram#members:selecteditems-userhandles-size "size"), [borderColor](/api/js/ejdiagram#members:selecteditems-userhandles-bordercolor "borderColor"), [backgroundColor](/api/js/ejdiagram#members:selecteditems-userhandles-backgroundcolor "backgroundColor") properties of user handle used for its appearance customization.
+
+* The [enableMultiSelection](/api/js/ejdiagram#members:selecteditems-userhandles-enablemultiselection "enableMultiSelection") property of the user handle defines whether the user handle should be added, when more than one element is selected and [visible](/api/js/ejdiagram#members:selecteditems-userhandles-visible "visible") property of the user handle defines the visibility of the user handle.
+
+* The [pathData](/api/js/ejdiagram#members:selecteditems-userhandles-pathdata "pathData") property of the user handle used to define the custom shape inside the user handle and [pathColor](/api/js/ejdiagram#members:selecteditems-userhandles-pathcolor "pathColor") property used to define the fill color of the custom shape.
 
 The following code example illustrates how to customize the appearance of the user handle.
 {% highlight javascript %}

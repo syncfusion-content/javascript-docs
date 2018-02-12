@@ -96,6 +96,44 @@ The following code shows on how to select a row programmatically with button cli
 
 {% endhighlight %}
 
+### Customize row selection action
+
+While selecting a row in TreeGrid, [`rowSelecting`](https://help.syncfusion.com/api/js/ejtreegrid#events:rowselecting) and [`rowSelected`](https://help.syncfusion.com/api/js/ejtreegrid#events:rowselected) event will be triggered. Row selecting event will be triggered on initialization of row selection action. In [`rowSelecting`](https://help.syncfusion.com/api/js/ejtreegrid#events:rowselecting) event we can get the previously selected row and current selecting row’s information, using this information we can prevent selection of particular row. The [`rowSelected`](https://help.syncfusion.com/api/js/ejtreegrid#events:rowselected) event will be triggered on completion of row selection action, in this event we can get the current selected row’s information. 
+
+The following code example shows how to prevent the selection of particular row using [`rowSelecting`](https://help.syncfusion.com/api/js/ejtreegrid#events:rowselecting) event.
+
+{% highlight js %}
+
+     $("#TreeGridContainer").ejTreeGrid({
+        //...
+        allowSelection: true,
+        rowSelecting: function(args) {
+            if(args.data.taskID == 5) // prevent selection of Task id 5
+                args.cancel = true;
+        },
+        //...
+
+{% endhighlight %}
+
+### Get record details
+
+In TreeGrid, It is possible to get the record detail when `click` and `dblClick` the row using [`recordClick`](https://help.syncfusion.com/api/js/ejtreegrid#events:recordclick) and [`recordDoubleClick`](https://help.syncfusion.com/api/js/ejtreegrid#events:recorddoubleclick) event, using this method we can get the record details even [`allowSelection`](/api/js/ejtreegrid#members:allowselection) is `false`.
+
+The below code example show, how to get record details when `click` the row.
+
+ {% highlight js %}
+
+     $("#TreeGridContainer").ejTreeGrid({
+        //...
+        allowSelection: false,
+        recordClick:function(args)
+        {
+            var n=0;
+        },
+        //...
+
+{% endhighlight %}
+
 ## Cell selection
 
 You can select cells in TreeGrid by setting the [`selectionMode`](/api/js/ejtreegrid#members:selectionsettings-selectionmode "selectionSettings.selectionMode") property as `cell`. And you can able to get the selected cell information using the [`selectedCellIndexes`](/api/js/ejtreegrid#members:selectedcellindexes) property from the TreeGrid object. The [`selectedCellIndexes`](/api/js/ejtreegrid#members:selectedcellindexes) is an object collection, which has the [`cellIndex`](/api/js/ejtreegrid#members:selectedcellindexes-cellindex "selectedCellIndexes.cellIndex") and [`rowIndex`](/api/js/ejtreegrid#members:selectedcellindexes-rowindex "selectedCellIndexes.rowIndex") information of the selected cells.
@@ -116,6 +154,8 @@ Find the code example below to enable the cell selection in TreeGrid.
 The output of the TreeGrid with cell selection is as follows.
 
 ![](/js/TreeGrid/Selection_images/Selection_img3.png)
+
+It is possible to get the list of HTML elements of the selected cells at run-time using the [`getSelectedCells`](https://help.syncfusion.com/api/js/ejtreegrid#methods:getselectedcells "getSelectedCells") method.
 
 ### Select cells dynamically
 
@@ -234,6 +274,29 @@ You can select the cells programmatically using the `selectCells` public method.
 
 {% endhighlight %}
 
+### Customize cell selection action
+
+While selecting a cell in TreeGrid, [`cellSelecting`](https://help.syncfusion.com/api/js/ejtreegrid#events:cellselecting) and [`cellSelected`](https://help.syncfusion.com/api/js/ejtreegrid#events:cellselected) event will be triggered. Cell selecting event will be triggered on initialization of cell selection action. In [`cellSelecting`](https://help.syncfusion.com/api/js/ejtreegrid#events:cellselecting) event we can get the current selecting cell information, using this information we can prevent selection of particular cell in particular row. The[`cellSelected`](https://help.syncfusion.com/api/js/ejtreegrid#events:cellselected) event will be triggered on completion of cell selection action, in this event we can get the current selected cell’s information. 
+
+The following code example shows how to prevent the selection of particular cell using [`cellSelecting`](https://help.syncfusion.com/api/js/ejtreegrid#events:cellselecting) event.
+
+{% highlight js %}
+
+     $("#TreeGridContainer").ejTreeGrid({
+        //...
+        allowSelection: true,
+        selectionSettings:{
+            selectionMode:ej.TreeGrid.SelectionMode.Cell,
+            selectionType: ej.TreeGrid.SelectionType.Single
+        },
+        cellSelecting: function(args) {
+            if(args.data.taskID == 5 && args.cellIndex == 1) // prevent selection of Task Name cell of Task id 5
+                args.cancel = true;
+        },
+        //...
+
+{% endhighlight %}
+
 ## Checkbox selection
 
 TreeGrid supports checkbox selection and to enable the checkbox selection, you need to set the [`selectionType`](/api/js/ejtreegrid#members:selectionsettings-selectiontype "selectionSettings.selectionType") property to `checkbox` and the [`selectionMode`](/api/js/ejtreegrid#members:selectionsettings-selectionmode "selectionSettings.selectionMode") property as `row`. By default, checkbox column will be displayed as the left most column, on enabling the checkbox selection in TreeGrid.
@@ -321,3 +384,16 @@ $("#TreeGridContainer"). ejTreeGrid ({
 The following output is displayed the result of multiple selection in touch device environment.
 
 ![](/js/TreeGrid/Selection_images/multiselection.png)
+
+## Deselecting records using method
+
+It is possible to clear the selection in TreeGrid at run-time using the [`clearSelection`](/api/js/ejtreegrid#methods:clearselection "clearSelection") method.
+
+The specific row will be deselected when the row index is passed as the method parameter. If the index is not passed, then all the selected rows in tree grid will be deselected.
+
+{% highlight js %}
+
+        var treegridObj = $("#treegrid").data("ejTreeGrid");
+        treegridObj.clearSelection(2);
+           
+{% endhighlight %}

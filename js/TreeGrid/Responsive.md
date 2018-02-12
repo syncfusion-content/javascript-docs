@@ -83,7 +83,7 @@ Insert column options in tablet layout.
 
 ## Changing responsive width using method
 
-You can change the minimum responsive width dynamically by using public method the `updateResponsiveMinWidth(width)` by passing the width as an argument.
+You can change the minimum responsive width dynamically by using public method the [`updateResponsiveMinWidth`](https://help.syncfusion.com/api/js/ejtreegrid#methods:updateresponsiveminwidth "updateResponsiveMinWidth") by passing the width as an argument.
 The TreeGrid control get works in responsive mode only when the window width is below the minimum responsive width.
 
 Please find the example describes the above behavior.

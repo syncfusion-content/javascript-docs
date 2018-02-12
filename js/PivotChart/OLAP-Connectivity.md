@@ -59,7 +59,7 @@ DataManager.DataProvider.ProviderName=Syncfusion.Olap.DataProvider.Providers.Act
 
 
 ## WCF
-**Adding a WCF Service**
+**Adding a WCF service**
 
 To add a WCF service in an existing web application, right-click the project in the solution explorer and select **Add > New Item**. In the **Add New Item** window, select the WCF Service and name it **“OlapService.svc,”** and then click **Add**.
  
@@ -107,7 +107,7 @@ N> If you have installed any version of SQL Server Analysis Service (SSAS) or Mi
 
 **List of namespaces**
 
-Following are the list of namespaces to be added on top of the main class in the `OlapService.svc.cs` file:
+The following are the list of namespaces to be added on top of the main class in the `OlapService.svc.cs` file.
 
 {% highlight c# %}
 

@@ -12,7 +12,11 @@ api: /api/js/ejpivotgauge
 
 ## Localization in pivot gauge control
 
+<<<<<<< HEAD
  You can localize the pivot gauge control texts with a [`locale`](../api/ejpivotgauge#members:locale) property and a collection of localized strings by using **"ej.PivotGauge.Locale"** for different cultures.
+=======
+ You can localize the pivot gauge control texts with a collection of localized strings by using **"ej.PivotGauge.Locale"** for different cultures.
+>>>>>>> hotfix/hotfix-v15.4.0.20
  
  N> By default, the pivot gauge control is localized in **"en-US"**.
 
@@ -51,7 +55,11 @@ RevenueValue</td><td>
 
 ## Localization and globalization of cube info
 
+<<<<<<< HEAD
 The content displayed within the pivot gauge control is obtained from the OLAP cube. The following are the steps that should be done to get the localized and globalized cube content.
+=======
+The content displayed within the pivot gauge control can be obtained from the OLAP cube. The following are the steps that should be done to get the localized and globalized cube content.
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 To get the localized string based on different cultures, set the **"Locale Identifier"** in the connection string to a specific culture in the OLAP cube. The attribute is set for the pivot gauge in client mode as shown below:
 
@@ -66,7 +74,11 @@ To get the localized string based on different cultures, set the **"Locale Ident
 
 {% endhighlight %}
 
+<<<<<<< HEAD
 In server mode, you should set **"Culture"** and **"OverrideDefaultFormatStrings"** properties in the OlapDataManager class to a specific culture along with the setting **"Locale Identifier"** in connection string.
+=======
+In server mode, you should set **"Culture"** and **"OverrideDefaultFormatStrings"** properties in OlapDataManager class to a specific culture along with the setting **"Locale Identifier"** in the connection string.
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 {% highlight C# %}
 

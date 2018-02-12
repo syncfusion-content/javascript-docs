@@ -38,7 +38,11 @@ The appearance of the tick can be customized through the following properties:
 * **angle** – rotates the ticks to a specified angle. By default, the angle value is 0.
 * **color** – displays the ticks in a specified color.
 * **distanceFromScale** – sets the distance between the scale and ticks. By default, the values is 0.
+<<<<<<< HEAD
 * **placement** – positions the ticks with respect to the scale.  By default, the value is set to far.
+=======
+* **placement** – positions the ticks with respect to the scale.  By default, the value is set to "far".
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 {% highlight javascript %}
 

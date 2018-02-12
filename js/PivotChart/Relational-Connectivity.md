@@ -13,16 +13,16 @@ api: /api/js/ejpivotchart
 ## Binding pivot chart to collection
 This section demonstrates binding a collection to the pivot chart control as data source. For more information on this data source, refer to the following links:
 
-If you are using the WebAPI controller, refer to the “Datasource Initialization” section under the following [link](https://help.syncfusion.com/js/pivotchart/relational-getting-started#creating-a-simple-application-with-pivotchart-and-relational-datasource-server-mode).
+If you are using the WebAPI controller, refer to the "Data Source Initialization" section under the following [link](https://help.syncfusion.com/js/pivotchart/relational-getting-started#creating-a-simple-application-with-pivotchart-and-relational-datasource-server-mode).
 
-If you are using the WCF Service, refer to the "Datasource Initialization" section below:
+If you are using the WCF Service, refer to the "Data Source Initialization" section below:
 
 ## WCF
 **Adding a WCF service**
 
 To add a WCF service in an existing web application, right-click the project in the solution explorer and select **Add > New Item**. In the **Add New Item** window, select **WCF Service** and name it **“RelationalService.svc,”** and then click **Add**.
 
-Now, the WCF service is added to your application, which, in-turn, comprises the following files. The utilization of these files will be explained in the immediate sections.
+The WCF service is added to your application, which, in-turn, comprises the following files. The utilization of these files will be explained in the immediate sections.
 
 * RelationalService.svc
 * RelationalService.svc.cs
@@ -30,7 +30,7 @@ Now, the WCF service is added to your application, which, in-turn, comprises the
 
 **Configuring WCF service class**
 
-Remove the “DoWork” method present in both `RelationalService.svc.cs` and `IRelationalService.cs` files. Next, add “AspNetCompatibilityRequirements” attribute on top of the main class that is present in `RelationalService.svc.cs` and set the **“RequirementsMode”** value to **“Allowed”**.
+Remove the “DoWork” method present in both `RelationalService.svc.cs` and `IRelationalService.cs` files. Next, add “AspNetCompatibilityRequirements” attribute on top of main class that is present in the `RelationalService.svc.cs` file and set **“RequirementsMode”** value to **“Allowed”**.
 
 {% highlight c# %}
     
@@ -302,7 +302,7 @@ The endpointBehaviors contain all behaviors for an endpoint. You can link each e
 </system.serviceModel>
 {% endhighlight %}
 
-N> In this example, the **“PivotChartDemo”** indicates the name and root namespace of the web application created in the Visual Studio IDE, and the **“RelationalService”** indicates the name of the created WCF service.
+N> In this example, the **“PivotChartDemo”** indicates the name and root namespace of the web application that is created in the Visual Studio IDE, and the **“RelationalService”** indicates the name of the created WCF service.
 
 Now, the pivot chart will be rendered with sales amount details over a set of products across different countries.
 

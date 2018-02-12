@@ -191,3 +191,23 @@ You can also override the **“** **error** **”** class to highlight when inva
 
 {% endhighlight %}
 
+## Blockout Dates
+
+
+Datepicker Provides an option to disable the list of date value.You can utilize this option by make use of [blackoutDates](https://help.syncfusion.com/api/js/ejdatepicker#members:blackoutdates) property.
+
+{% highlight javascript %}
+     
+	   $(function () {
+
+            // creates DatePicker from input with current date value
+ 
+            $("#datePicker").ejDatePicker({
+
+               blackoutDates: [new Date(2018, 4, 18), new Date(2018, 4, 15), new Date(2016, 4, 20), new Date(2018, 4, 22), new Date(2018, 5, 12), new Date(2018, 5, 24)]
+
+            });
+
+        });      
+
+    {% endhighlight %}

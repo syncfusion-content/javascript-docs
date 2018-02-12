@@ -368,12 +368,12 @@ $(function () {
 
 ### Apply filtering
 
-The filtering option allows you to specify a set of values that should be made either visible or hidden. Also, the filtering option is applicable only for the row, column, and filter areas.
+The filtering option allows you to show or hide a set of values. The filtering option is applicable only for the row, column, and filter areas.
 
-**"filterItems"** object allows you to apply the filtering to fields by using the following properties:
+**"filterItems"** object allows you to apply filtering to fields by using the following properties:
 
 * filterType -  indicates whether the values should be included or excluded.
-* values -  specify an array of values that should be included or excluded within the particular field.
+* values -  specify an array of values that need to be included or excluded within the particular field.
 
 
 {% highlight html %}
@@ -488,7 +488,7 @@ Now, the WebAPI controller is added to your application, which, in-turn, compris
 
 * RelationalController.cs
 
-N> While adding the WebAPI controller class, add the mandatory suffix “Controller”. For example, in the demo, the controller is named “RelationalController”.
+N> While adding the WebAPI controller class, add the mandatory suffix “Controller”. For example, in the demo, the controller is named as “RelationalController”.
 
 Next, remove all the existing methods such as “Get”, “Post”, “Put”, and “Delete” present in the `RelationalController.cs` file.
 
@@ -506,7 +506,7 @@ namespace PivotChartDemo
 
 **List of dependency libraries**
 
-Next, you can add the below mentioned dependency libraries to your web application. These libraries can be found in the GAC (Global Assembly Cache).
+Next, you should add the below mentioned dependency libraries to your web application. These libraries can be found in the GAC (Global Assembly Cache).
 
 To add them to your web application, right-click **References** in the solution explorer and select **Add Reference.** Now, in the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries are found.
 
@@ -702,9 +702,9 @@ namespace PivotChartDemo
 
 **Configure routing in global application class**
 
-To add a Global.asax in your existing web application, right-click the project in the solution explorer and select **Add > New** item. In the **Add New Item** window, select **Global Application** class and name it **“Global.asax”**, and then click **Add.**
+To add a Global.asax in your existing web application, right-click the project in the solution explorer and select **Add > New** item. In the **Add New Item** window, select **Global Application** class and name it **“Global.asax,”** and then click **Add.**
  
-After adding the **Global.asax** file, delete all methods inside the **Global** class and add the namespace **“using System.Web.Http;”**, and then configure the routing as shown in the following code example:
+After adding the **Global.asax** file, delete all methods in the **Global** class and add the namespace **“using System.Web.Http;”**, and then configure the routing as shown in the following code example:
 
 {% highlight c# %}
 
@@ -722,12 +722,12 @@ public class Global : System.Web.HttpApplication
 {% endhighlight %}
 
 Now, the pivot chart is rendered with sales amount details over a set of products across different countries.
-
+ 
 ![](Relational-Getting-Started_images/ServerMode.png)
 
 ### WCF
 
-This section demonstrates the utilization of WCF service as endpoint binding [`Relational`](/api/js/ejpivotchart#members:analysismode) data source to a simple pivot chart. For more details on this topic, [click here](https://help.syncfusion.com/js/pivotchart/relational-connectivity#wcf-1).
+This section demonstrates the utilization of WCF service as endpoint binding the relational data source to a simple pivot chart. For more details on this topic, [click here](https://help.syncfusion.com/js/pivotchart/relational-connectivity#wcf-1).
   
 
 

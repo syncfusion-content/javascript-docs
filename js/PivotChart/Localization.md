@@ -12,9 +12,9 @@ api: /api/js/ejpivotchart
 
 ## Localization in pivot chart
 
-You can localize the pivot chart controls text with a collection of localized strings by using the [`ej.PivotChart.Locale`](/api/js/ejpivotchart#members:locale) for different cultures. By default, the pivot chart control is localized in **“en-US”.**
+You can localize the pivot chart controls text with a collection of localized strings using [`ej.PivotChart.Locale`](/api/js/ejpivotchart#members:locale) for different cultures. By default, the pivot chart control is localized in **“en-US”.**
 
-The following code example illustrates how to localize the pivot chart based on **“French”** culture:
+The following code example illustrates the steps to localize the pivot chart based on the **“French”** culture.
 
 {% highlight javascript %}
 
@@ -50,7 +50,7 @@ The following code example illustrates how to localize the pivot chart based on 
 
 {% endhighlight %}
 
-Following table localizes the in-built keywords to **“French”** culture for the pivot chart:
+The following table localizes the in-built keywords to **“French”** culture for the pivot chart.
 
 <table>
 <tr>

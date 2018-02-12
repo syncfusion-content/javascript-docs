@@ -8,18 +8,18 @@ documentation: ug
 api: /api/js/ejpivotclient
 ---
 
-# Save and Load Report
+# Save and load report
 
-Save and load report allows you to save the current report collection of PivotClient and render the control later on loading the same.
+The save and load report allows you to save the current report collection of the pivot client and render the control later on loading the same.
 
-We can save and load the report in two ways.
+You can save and load the report in the following two ways:
 
 * Database
-* Local Storage
+* Local storage
 
-## Save Report to Database
+## Save report to database
 
-We can store the report collection of PivotClient to database, by using the [`saveReport`](/api/js/ejpivotclient#members:saveReport) event in PivotClient.
+You can store the report collection of the pivot client to database by using the [`saveReport`](/api/js/ejpivotclient#members:saveReport) event in the pivot client.
 
 {% highlight html %}
 
@@ -37,9 +37,9 @@ We can store the report collection of PivotClient to database, by using the [`sa
 </script>
 {% endhighlight %}
 
-Service method needs to be added in WCF/WebAPI for storing PivotClient report collection in database.
+The service method needs to be added in the WCF/WebAPI for storing the pivot client report collection in the database.
 
-For WebAPI controller, the below method needs to be added.
+For WebAPI controller, the following method should be added:
 
 {% highlight c# %}
 
@@ -76,7 +76,7 @@ public Dictionary<string, object> SaveReportToDB(Dictionary<string, object> json
 
 {% endhighlight %}
 
-For WCF controller, the below method needs to be added.
+For WCF controller, the following method should be added:
 
 {% highlight c# %}
 
@@ -110,9 +110,9 @@ public Dictionary<string, object> SaveReportToDB(string reportName, string opera
 
 {% endhighlight %}
 
-## Save Report to Local Storage
+## Save report to local storage
 
-We can store the report collection of PivotClient to local storage, by setting the [`enableLocalStorage`](/api/js/ejpivotclient#members:enableLocalStorage) property to true and by defining the [`saveReport`](/api/js/ejpivotclient#members:saveReport) event of PivotClient.
+You can store the report collection of the pivot client to the local storage by setting the [`enableLocalStorage`](/api/js/ejpivotclient#members:enablelocalstorage) property to true and by defining the [`saveReport`](/api/js/ejpivotclient#members:saveReport) event of the pivot client.
 
 {% highlight html %}
 
@@ -138,9 +138,9 @@ We can store the report collection of PivotClient to local storage, by setting t
 
 {% endhighlight %}
 
-## Load Report from Database
+## Load report from database
 
-We can load the stored report collection of PivotClient from database, by using the [`fetchReport`](/api/js/ejpivotclient#members:fetchReport)  and [`loadReport`](/api/js/ejpivotclient#members:loadReport) events in PivotClient.
+You can load the stored report collection of the pivot client from the database by using the [`fetchReport`](/api/js/ejpivotclient#members:fetchReport)  and [`loadReport`](/api/js/ejpivotclient#members:loadReport) events in the pivot client.
 
 {% highlight html %}
 
@@ -162,9 +162,9 @@ We can load the stored report collection of PivotClient from database, by using 
 
 {% endhighlight %}
 
-Service methods need to be added in WCF/WebAPI for storing PivotClient report collection in database.
+The service methods should be added to the WCF/WebAPI for storing the pivot client report collection in the database.
 
-For WebAPI controller, the below methods need to be added.
+For WebAPI controller, the following methods should be added:
 
 {% highlight c# %}
 
@@ -248,7 +248,7 @@ private DataTable GetDataTable()
 
 {% endhighlight %}
 
-For WCF controller, the below methods need to be added.
+For WCF controller, the following methods should be added:
 
 {% highlight c# %}
 
@@ -329,9 +329,9 @@ private DataTable GetDataTable()
 
 {% endhighlight %}
 
-## Load Report from Local Storage
+## Load report from local storage
 
-We can load the stored report collection of PivotClient from local storage, by setting the [`enableLocalStorage`](/api/js/ejpivotclient#members:enableLocalStorage) property to true and using the [`LoadReport`](/api/js/ejpivotclient#members:loadReport) and [`FetchReport`](/api/js/ejpivotclient#members:fetchReport) events in PivotClient.
+You can load the stored report collection of the pivot client from the local storage by setting the [`enableLocalStorage`](/api/js/ejpivotclient#members:enablelocalstorage) property to true and using the [`loadReport`](/api/js/ejpivotclient#members:loadReport) and [`fetchReport`](/api/js/ejpivotclient#members:fetchReport) events in the pivot client.
 
 {% highlight html %}
 

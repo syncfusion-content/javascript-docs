@@ -440,6 +440,8 @@ $(function () {
 The following output is displayed as a result of the above code snippets.
 ![](Data-Binding_images/Data-Binding_img4.png)
 
+N> To get the active sheet index and data settings in Spreadsheet, use [`getActiveSheetIndex`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:getactivesheetindex "getActiveSheetIndex") and [`getDataSettings`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:getdatasettings "getDataSettings") methods.
+
 ### Range Binding
 
 Spreadsheet can bind data for one or more range in a sheet using [`rangeSettings`](https://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-rangesettings "rangeSettings"). The individual range properties are listed below,

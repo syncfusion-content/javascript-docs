@@ -17,7 +17,11 @@ The pivot gauge has two types of pointers namely,
 * Needle
 * Marker
 
+<<<<<<< HEAD
 Needle type pointers are the default pointers which are always located at the center of the gauge. Following are the supported shapes for the needle pointers:
+=======
+Needle type pointers are the default pointers that are always located at the center of the gauge. Following are the supported shapes for the needle pointers:
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 * rectangle
 * triangle
@@ -139,10 +143,17 @@ The appearance of the pointer can be customized through the following properties
  
 ## Pointer position
 
+<<<<<<< HEAD
 The pointer can be positioned with the help of the following two properties:
 
 * **distanceFromScale** - defines the distance between the scale and the pointer. By default, the value is 0.
 * **placement** - defines the location of the pointer. By default, the value is center.
+=======
+Pointer can be positioned with the help of following two properties:
+
+* **distanceFromScale** -  defines the distance between the scale and the pointer. By default, the value is 0.
+* **placement** -  defines the location of the pointer. By default, the value is center.
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 N> Both the properties can be applied only if the pointer type is set to marker. The needle pointer type appears only at the center of the widget, which is its default position.
 
@@ -167,7 +178,11 @@ N> Both the properties can be applied only if the pointer type is set to marker.
  
 ## Pointer image
 
+<<<<<<< HEAD
 It is possible to replace the pointers with an image. To view the pointers as an image, set the appropriate location in the `imageUrl` property.
+=======
+It is possible to replace the pointers with an image. To view the pointers as an image, you should set the appropriate location in the `imageUrl` property.
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 {% highlight javascript %}
 
@@ -195,9 +210,15 @@ It is possible to replace the pointers with an image. To view the pointers as an
 
 ## Pointer value text
 
+<<<<<<< HEAD
 To display the current value of the pointers in the pivot gauge widget, the `pointerValueText` option in pointers is used. Following are the properties that are used to enable and customize the pointer value text:
  
 * **showValue** – enables the pointer value text by setting the property to true. By default, its value is true.
+=======
+To display the current value of pointers in the pivot gauge widget, the `pointerValueText` option is used. Following are the properties used to enable and customize the pointer value text.
+ 
+* **showValue** – enables the pointer value text by setting the property to “true”. By default, its value is “true”.
+>>>>>>> hotfix/hotfix-v15.4.0.20
 * **distance** – sets the distance between the pointer and the text.
 * **color** – sets the color of the text.
 * **opacity** – sets the opacity of the text. By default, its value is 1.

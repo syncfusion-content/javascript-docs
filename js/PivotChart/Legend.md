@@ -37,7 +37,7 @@ $(function()
 ![](Legend_images/Legend_img1.png) 
 
 ## Legend shape
-You can customize the legend [`shape`](/api/js/ejchart#members:legend-shape) in the pivot chart widget. The default value of legend shape is "Rectangle". Following are the supported legend shapes:
+You can customize the legend [`shape`](/api/js/ejchart#members:legend-shape) in the pivot chart widget. The default value of legend shape is “Rectangle”. The following are the supported legend shapes:
 
 * Rectangle
 * Circle
@@ -93,7 +93,7 @@ N> The default value of the legend position is bottom in the pivot chart.
 ![](Legend_images/Legend_img3.png) 
 
 ## Legend title
-To add the legend title, you can specify the title text in the [`title.text`](/api/js/ejchart#members:legend-title-text) property.
+To add a legend title, you should specify the title text in the [`title.text`](/api/js/ejchart#members:legend-title-text) property.
 
 {% highlight javascript %}
 
@@ -118,7 +118,7 @@ To add the legend title, you can specify the title text in the [`title.text`](/a
 ![](Legend_images/Legend_img4.png) 
 
 ## Legend alignment
-You can align the legend to center, far, and near based on its position in the chart area by using the [`alignment`](/api/js/ejchart#members:legend-alignment) option.
+You can align the legend to center, far, and near based on its position in the chart area by using the [`alignment`](/api/js/ejchart#members:legend-alignment) .
  
 {% highlight javascript %}
 
@@ -140,7 +140,7 @@ You can align the legend to center, far, and near based on its position in the c
 ![](Legend_images/Legend_img5.png)
 
 ## Legend items - size and border
-By using the legend [`itemStyle.width`](/api/js/ejchart#members:legend-itemstyle-width), [`itemStyle.height`](/api/js/ejchart#members:legend-itemstyle-height), and [`itemStyle.border`](/api/js/ejchart#members:legend-itemstyle-border) properties, you can change the size and border of legend items.
+By using the [`itemStyle.width`](/api/js/ejchart#members:legend-itemstyle-width), [`itemStyle.height`](/api/js/ejchart#members:legend-itemstyle-height), and [`itemStyle.border`](/api/js/ejchart#members:legend-itemstyle-border) properties of the legend, you can change the size and border of legend items.
 
 {% highlight javascript %}
 
@@ -171,7 +171,7 @@ By using the legend [`itemStyle.width`](/api/js/ejchart#members:legend-itemstyle
 ![](Legend_images/Legend_img6.png)
  
 ## Legend border
-By using the [`border`](/api/js/ejchart#members:legend-border) option in the legend, you can customize the border color and width.
+By using the [`border`](/api/js/ejchart#members:legend-border) in the legend, you can customize the color and width of the border.
 
 {% highlight javascript %}
 
@@ -197,7 +197,7 @@ By using the [`border`](/api/js/ejchart#members:legend-border) option in the leg
 ![](Legend_images/Legend_img7.png)
 
 ## Legend text
-By using the [`font`](/api/js/ejchart#members:legend-font) option, you can customize the font family, font style, font weight, and size of the legend text. 
+By using the [`font`](/api/js/ejchart#members:legend-font), you can customize the font family, font style, font weight, and size of the legend text.
 
 {% highlight javascript %}
 

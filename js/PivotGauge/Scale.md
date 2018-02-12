@@ -32,7 +32,11 @@ The scale can be added within the pivot gauge widget as an array.
 
 ### Pointer cap
 
+<<<<<<< HEAD
 The pointer cap is a circular shape element that is located at the center of the pivot gauge. It can be customized with the `pointerCap` property in the [`scales`](/api/js/ejcirculargauge#members:scales) option. Following are the properties that are used to customize the appearance of the pointer cap:
+=======
+The pointer cap is a circular shape element that is located at the center of the pivot gauge. It can be customized with the `pointerCap` property in the [`scales`](/api/js/ejcirculargauge#members:scales) option. Following are the properties used to customize the appearance of the pointer cap:
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 * **radius** – sets the radius of the pointer cap.
 * **borderColor** – sets the color of the pointer cap border.
@@ -73,7 +77,11 @@ The appearance of the scale can be customized through the following properties:
 * **minorIntervalValue** – sets the interval between minor ticks in the scale.
 * **direction** – sets the direction of the scale. By default, it takes clockwise direction.
 
+<<<<<<< HEAD
 The `showIndicators`, `showTicks`, `showRanges`, `showPointers`, and `showScaleBar` properties are used to enable/disable the indicators, ticks, ranges, pointers, and scale bar respectively. By default, `showTicks` and `showPointers` are set to true, and other properties are set to false.
+=======
+The `showIndicators`, `showTicks`, `showRanges`, `showPointers`, and `showScaleBar` properties are used to enable/disable the indicators, ticks, ranges, pointers, and scale bar respectively. By default, `showTicks` and `showPointers` are set to true, other properties are set as false.
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 {% highlight javascript %}
 
