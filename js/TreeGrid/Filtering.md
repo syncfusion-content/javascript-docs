@@ -153,9 +153,9 @@ The above screen shot shows TreeGrid with `enableCaseSensitivity` set as false i
 
 ### Change filter mode for specific column
 
-In TreeGrid, it is provide the option for change the filter mode for spcific coumn using [`filterType`](https://help.syncfusion.com/api/js/ejtreegrid#members:columns-filtertype "columns.filterType") property. Using this property we can either set `Menu` or `Excel` filter mode when [`filterType`](/api/js/ejtreegrid#members:filtersettings-filtertype "filterSettings.filterType") is `Menu` or `Excel`.
+In TreeGrid, it is provide the option for change the filter mode for specific column using [`filterType`](https://help.syncfusion.com/api/js/ejtreegrid#members:columns-filtertype "columns.filterType") property. Using this property we can either set `Menu` or `Excel` filter mode when [`filterType`](/api/js/ejtreegrid#members:filtersettings-filtertype "filterSettings.filterType") is `Menu` or `Excel`.
 
-The following code example show, how to change filter mode for spcific column.
+The following code example show, how to change filter mode for specific column.
 
 {% highlight js %}
 
@@ -329,7 +329,7 @@ The below code example explains searching the TreeGrid content across the "TaskI
 {% endhighlight %}
 
 It is possible to filter the TreeGrid contents at initial load using the toolbar search, with the [`searchSettings.key`](https://help.syncfusion.com/api/js/ejtreegrid#members:searchsettings-key "searchSettings.key") property.
-The below code example explains filtering the TreeGrid contents at initial load with a search key, which will be applied accross all the columns.
+The below code example explains filtering the TreeGrid contents at initial load with a search key, which will be applied across all the columns.
 
 {% highlight js %}
         $("#treegrid").ejTreeGrid({
