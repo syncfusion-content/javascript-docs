@@ -270,6 +270,21 @@ Now, you can set the “GettingStarted.html” as start-up page. To do so, right
 ### Scripts and CSS initialization
 The scripts and style sheets that are required to render a pivot chart widget in the HTML page are highlighted below in an appropriate order:
 
+This section covers the information required to create a simple pivot chart bound to the OLAP data source.
+
+N> This section is illustrated by creating a simple web application through the Visual Studio IDE since the pivot chart in server mode requires .NET dependency. The web application contains an HTML page and a service that will transfer data to server-side, process it, and return it client-side for control rendering. The service utilized for communication can be either WCF or WebAPI based on user requirement. Both are illustrated here for user convenience.
+
+### Project initialization
+Create a new **ASP.NET Empty Web Application** by using the Visual Studio IDE and name the project **“PivotChartDemo.”**
+
+Next, you should add an HTML page. To add an HTML page in your web application, right-click the project in the solution explorer and select **Add > New Item.** In the **Add New Item** window, select **HTML Page** and name it **“GettingStarted.html,”** and then click **Add.**
+
+Now, you can set the “GettingStarted.html” page as start-up page. To do so, right-click “GettingStarted.html” page and select **“Set As Start Page.”**
+
+### Scripts and CSS initialization
+The scripts and style sheets that are required to render a pivot chart widget in an HTML page are highlighted below in an appropriate order:
+>>>>>>> hotfix/hotfix-v15.4.0.20
+
 1. ej.web.all.min.css
 2. jQuery-3.0.0.min.js
 3. ej.web.all.min.js
@@ -349,11 +364,11 @@ Register the referenced assemblies in "Web.config" file available at the root of
 
 To add a WebAPI controller in your existing web application, right-click the project in the solution explorer and select **Add > New Item.** In the **Add New Item** window, select **WebAPI Controller Class** and name it “OlapController.cs,” and then click **Add.**
 
-Now, the WebAPI controller is added to your application, which, in-turn, comprises the following file. The utilization of this file will be explained in the following sections:
+The WebAPI controller is added to your application, which, in-turn, comprises the following file. The utilization of this file will be explained in the following sections.
  
 * OlapController.cs
 
-N> While adding the WebAPI controller class, add the mandatory suffix “Controller”. For example, in the demo, the controller is named “OlapController”.
+N> While adding the WebAPI controller class, add the mandatory suffix “Controller.” For example, in the demo, the controller is named “OlapController”.
 
 Next, remove all existing methods such as “Get”, “Post”, “Put”, and “Delete” present in the `OlapController.cs` file.
 

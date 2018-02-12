@@ -12,7 +12,7 @@ api: /api/js/ejpivotchart
 
 ## Creating a simple application with pivot chart and relational data source (client mode)
 
-This section covers the basic information required to populate a simple pivot chart with [`Relational`](/api/js/ejpivotchart#members:analysismode) data completely on the [`client-side`](/api/js/ejpivotchart#members:operationalmode).
+This section covers the basic information required to populate a simple pivot chart with relational data completely on the client-side.
 
 ### Scripts and CSS references
 
@@ -341,6 +341,9 @@ The following table will explain the [`relational`](/api/js/ejpivotchart#members
 
 You can sort a field either in ascending or descending order by using the **"sortOrder"** property. The sorting is applicable only for the fields in rows and columns.
 
+You can sort a field either in ascending or descending order by using the **"sortOrder"** property. Sorting is applicable only for fields in rows and columns.
+>>>>>>> hotfix/hotfix-v15.4.0.20
+
 N> By default, the values in all fields are arranged in ascending order.
 
 {% highlight html %}
@@ -414,15 +417,15 @@ $(function () {
 
 This section covers the information required to create a simple pivot chart bound with [`Relational`](/api/js/ejpivotchart#members:analysismode) data source from the [`server-side`](/api/js/ejpivotchart#members:operationalmode).
 
-N>The section is illustrated by creating a simple web application through the Visual Studio IDE since the pivot chart in server mode requires .NET dependency. The web application contains an HTML page and a service which transfers data to [`server-side`](/api/js/ejpivotchart#members:operationalmode), process it, and return it to [`client-side`](/api/js/ejpivotchart#members:operationalmode) for control rendering. The service utilized for communication can be either a WebAPI controller class or a WCF service based on user requirement. Here, both are illustrated for user convenience.
+N>This section illustrates creating a simple web application through the Visual Studio IDE since the pivot chart in server mode requires .NET dependency. The web application contains an HTML page and a service that transfers data to server-side, processes, and returns back the data to the client-side for control rendering. The service utilized for communication can be either a WebAPI controller class or a WCF service based on user requirement. Here, both are illustrated for user convenience.
 
 ### Project initialization
 
-Create a new **ASP.NET Empty Web Application** by using the Visual Studio IDE and name the project **“PivotChartDemo”.**
+Create a new **ASP.NET Empty Web Application** by using the Visual Studio IDE and name the project as **“PivotChartDemo.”**
 
-Next, you can add an HTML page. To add an HTML page in your web application, right-click on the project in the solution explorer and select **Add > New Item**. In the **Add New Item** window, select **HTML Page** and name it “GettingStarted.html”, and then click **Add.**
+Next, you can add an HTML page. To add an HTML page in your web application, right-click the project in the solution explorer and select **Add > New Item**. In the **Add New Item** window, select **HTML Page** and name it “GettingStarted.html”, and then click **Add.**
  
-Now, you can set “GettingStarted.html” page as start-up page. To do so, right-click “GettingStarted.html” page and select **“Set As Start Page”**.
+Now, you can set the “GettingStarted.html” page as start-up page. To do so, right-click the “GettingStarted.html” page and select **“Set As Start Page”**.
 
 ### Scripts and CSS initialization
 The scripts and style sheets that are required to render a pivot chart widget inside an HTML page that are highlighted below in an appropriate order:

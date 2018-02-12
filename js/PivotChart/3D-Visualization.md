@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: 3D-Visualization
 description: 3d visualization
@@ -10,6 +10,9 @@ api: /api/js/ejpivotchart
 
 # 3D visualization
 
+<<<<<<< HEAD
+The pivot chart control allows you to view the data in a 3D view. Following are the chart types that are supported:
+=======
 The pivot chart control allows you to view the data in a 3D view. The following are the chart types that are supported:
 
 * Bar

@@ -271,6 +271,9 @@ You can expose the services through the properties such as binding, contract, an
  
 The endpointBehaviors are illustrated as follows:
  
+The endpointBehaviors are illustrated in the following sample:
+>>>>>>> hotfix/hotfix-v15.4.0.20
+ 
 {% highlight xml %}
 
 <system.serviceModel>
