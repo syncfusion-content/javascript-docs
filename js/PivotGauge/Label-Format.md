@@ -10,11 +10,7 @@ api: /api/js/ejpivotgauge
 
 # Label format
 
-<<<<<<< HEAD
 You can customize the format of labels that is displayed in the pivot gauge control by using the [`labelFormatSettings`](/api/js/ejpivotgauge#members:labelformatsettings) property.
-=======
-You can customize the format of labels that are displayed in the pivot gauge control by using the [`labelFormatSettings`](/api/js/ejpivotgauge#members:labelformatsettings) property.
->>>>>>> hotfix/hotfix-v15.4.0.20
 
 Following are the formats that can be applied to labels in the pivot gauge:
 
