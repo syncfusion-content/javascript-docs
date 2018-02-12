@@ -996,5 +996,70 @@ Execute the above code to render the following output.
 
 ![](/js/ToggleButton/Easy-Customization_images/Easy-Customization_img7.png) 
 
+## State persistence
+
+**ToggleButton** widget provide options to maintain the selected value after you refresh the page by using **enablePersistence** property.
+
+### Steps to use State persistence of the ToggleButton
+
+The following steps explains you to use **enablePersistence** property.
+
+In the **HTML** page, add a **&lt;input&gt;** element to configure **ToggleButton** widget.
+
+{% highlight html %}
+
+    <input id="toggle" type="checkbox" /> 
+
+{% endhighlight %}
+
+{% highlight javascript %}
+
+    // Use enablePersistence property to maintain selected value as follows.
+    $(function () {
+        $("#toggle").ejToggleButton({ defaultText:"Play",
+        activeText:"Pause",
+        enablePersistence : true
+        });                         
+    });
+    
+{% endhighlight %}
+
+## Enable/Disable ToggleButton
+
+**ToggleButton** provides you an option to enable /disable the ToggleButton. You can disable the ToggleButton by setting the “**enabled**” property value as **false**.
+
+The following steps explain you to enable/disable property in **ToggleButton** .
+
+
+{% highlight html %}
+
+
+    <input id="toggle" type="checkbox" /> 
+
+{% endhighlight %}
+
+{% highlight javascript %}
+
+    // To enable/disable ToggleButton controls use the following code example.
+    //Enable ToggleButton:
+    $(function () {
+
+         $("#toggle").ejToggleButton({defaultText:"Play",activeText:"Pause",enabled: true });                                           
+    });
+    //Disable ToggleButton:
+    $(function () {
+
+        $("#toggle").ejToggleButton({defaultText:"Play",activeText:"Pause",enabled: false });                                            
+    });
+
+{% endhighlight %}
+
+
+Execute the above code to render the following output.
+
+![](/js/ToggleButton/Easy-Customization_images/Easy-Customization_img8.png)
+
+![](/js/ToggleButton/Easy-Customization_images/Easy-Customization_img9.png)
+
 
 

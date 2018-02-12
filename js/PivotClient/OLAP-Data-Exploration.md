@@ -8,90 +8,90 @@ documentation: ug
 api: /api/js/ejpivotclient
 ---
 
-# Data Exploration
+# Data exploration
 
 ## Filtering
 
-### Filtering by Member
+### Filtering by member
 
-After clicking Split button of a dimension, Member Editor dialog opens through which members are filtered by checking and unchecking the check boxes corresponding to the members.  On clicking the "OK" button, based on the selected members in the Member Editor dialog, OlapReport gets updated and refreshes the PivotGrid and PivotChart controls.  The "Cancel" button is used to cancel the selection.
+After clicking the split button of a dimension, the member editor dialog opens through which the members are filtered by checking and unchecking the check boxes corresponding to the members. By clicking the OK button, the OLAP report gets updated and refreshes the pivot grid and pivot chart controls based on selected members in the member editor dialog.  The Cancel button is used to cancel the selection.
 
 ![](Data-Exploration_images/Filtering-by-member.png) 
 
-The above filter illustrates that the members France and Germany, along with New South Wales and Queensland are excluded from the Grid and Chart controls.
+The above filter illustrates the members France and Germany, along with New South Wales and Queensland are excluded from the grid and chart controls.
 
-### Filtering by Value
+### Filtering by value
 
-I> This feature is applicable only for OLAP data source bound from server-side.
+I> This feature is applicable only for OLAP data source bound from the server-side.
 
-The Filtering tab in the Sorting and Filtering dialog box of PivotClient provides the options to apply custom filters on the multi-dimensional data. It enables the user to filter the rows and columns of the selected Measure.
+The filtering tab in the sorting and filtering dialog box of the pivot client provides the options to apply custom filters on the multi-dimensional data. It enables the user to filter the rows and columns of the selected measure.
 
 * **Column Filter** - Filters the columns related to the specified measure according to the condition applied for filtering.
 * **Row Filter** - Filters the rows related to the specified measure according to the condition applied for filtering.
 
-Sorting and Filtering dialog box for rows and columns are opened by clicking the corresponding icon in the toolbar.
+The sorting and filtering dialog box for rows and columns are opened by clicking the corresponding icon in the toolbar.
 
 ![](Data-Exploration_images/column-sorting-icon.png)
 
 ![](Data-Exploration_images/rowsorting.png)
 
-The following screenshot displays the Filtering tab in Sorting and Filtering Dialog box.
+The following screenshot displays the filtering tab in the sorting and filtering dialog box:
 
 ![](Data-Exploration_images/Filtering-by-value.png)
 
-The options in the Filtering tab are as follows:
+The options in the filtering tab are as follows:
 
-* **Enabling Filtering** – Enables/Disables the Filtering option.
-* **Measure** – The measure for filtering is selected from the collection of measures in drop down list.
+* **Enabling filtering** – Enables/disables the filtering option.
+* **Measure** – The measure for filtering is selected from the collection of measures in drop-down list.
 * **Condition** – Condition with which the filtering is applied.
 * **Value** – Value to compare with each data according to the condition.
 
-The following screenshot displays data before Filtering.
+The following screenshot displays the data before filtering:
 
 ![](Data-Exploration_images/beforefilteringbyvalue.png)
 
-The following screenshot displays the data after Filtering.
+The following screenshot displays the data after filtering:
 
 ![](Data-Exploration_images/after-filtering-by-value.png)
 
 ## Sorting
 
-I> This feature is applicable only for OLAP datasource only at Server Mode.
+I> This feature is applicable only for the OLAP data source in the server mode.
 
-The Sorting tab in the Sorting and Filtering dialog box provides the option to sort the results by rows/columns, either in ascending or descending order.
+The sorting tab in the sorting and filtering dialog box provides the option to sort the results by rows/columns in the ascending or descending order.
   
 * **Column sorting** - Sorts the columns based on the summary values of each column.
 * **Row sorting** - Sorts the rows based on the summary values of each row.
 
-Sorting and Filtering dialog box for rows and columns are opened by clicking the corresponding icon in the toolbar.
+The sorting and filtering dialog box for rows and columns are opened by clicking the corresponding icon in the toolbar.
 
 ![](Data-Exploration_images/column-sorting-icon.png)  
 
 ![](Data-Exploration_images/rowsorting.png)  
 
-The following screenshot displays the Sorting and Filtering dialog box.
+The following screenshot displays the sorting and filtering dialog box:
 
 ![](Data-Exploration_images/sorting-dialog.png)  
 
-The options in the Sorting tab are as follows:
+The options in the sorting tab are as follows:
 
-* **Measure** – The measure for sorting is selected from the collection of measures in drop down list.
+* **Measure** – The measure for sorting is selected from the collection of measures in drop-down list.
 * **Order** – Specifies the sorting order.
 * **Preserve Hierarchy** – Sorts the records without changing the hierarchy order.
 
-The following screenshot displays the data after applying sorting in ascending order for rows.
+The following screenshot displays the data after applying the sorting in the ascending order for rows:
 
 ![](Data-Exploration_images/sorting.png)
 
 ## Grouping
 
-The data can be grouped when more than one dimension element is added to column or row in Axis Element Builder.  Based on the order of addition, data is grouped and the report is updated. In the following example, members of the **Date** dimension get grouped, with respect to the members of **Customer** dimension.  Likewise multiple dimension members can be grouped by dragging the elements from Cube Dimension Browser to Axis Element Builder.
+The data can be grouped when more than one dimension element is added to the column or row in the axis element builder.  Based on the order of addition, the data is grouped and the report is updated. In the following example, the members of the **Date** dimension get grouped with respect to the members of **Customer** dimension.  Likewise, multiple dimension members can be grouped by dragging the elements from the cube dimension browser to the axis element builder.
 
 ![](Data-Exploration_images/grouping.png)
 
 ## Searching
 
-Members can be searched and displayed from the members list inside the Member Editor dialog.
+The members can be searched and displayed from the members list in the member editor dialog box.
 
-![](Data-Exploration_images/Searching-by-member.png) 
+![](Data-Exploration_images/Searching-by-member.png)
 

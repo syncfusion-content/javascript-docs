@@ -21,7 +21,11 @@ Overview control solves these problems by showing you a preview, that is, an ove
 
 ## Create overview
 
-The `sourceId` property of overview should be set with the corresponding Diagram ID for you need the overall view. The following code illustrates how to create overview.  
+* The [width](/api/js/ejoverview#members:width "width") and [height](/api/js/ejoverview#members:height "height") property of the overview allows you to define the size of the overview.
+
+* The [sourceID](/api/js/ejoverview#members:sourceID "sourceID") property of overview should be set with the corresponding Diagram ID for you need the overall view. 
+
+The following code illustrates how to create overview.  
 
 {% highlight html %}
 

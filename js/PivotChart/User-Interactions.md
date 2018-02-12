@@ -12,8 +12,13 @@ api: /api/js/ejpivotchart
 
 ## Tooltip
 
+<<<<<<< HEAD
 ### Enable tooltip for data points
 Tooltip for the data points can be enabled by using the **"visible"** option of the [`tooltip`](/api/js/ejchart#members:commonseriesoptions-tooltip-visible) property under the [`commonSeriesOptions`](/api/js/ejpivotchart#members:commonseriesoptions) in the pivot chart.
+=======
+### Enable tooltips for data points
+Tooltips for data points can be enabled by using the **"visible"** of the [`tooltip`](/api/js/ejchart#members:commonseriesoptions-tooltip-visible) property under the **"commonSeriesOptions"** in the pivot chart.
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 {% highlight javascript %}
 $(function()
@@ -38,7 +43,11 @@ $(function()
 ![](User-Interactions_images/tooltip.png) 
 
 ### Tooltip template
+<<<<<<< HEAD
 HTML elements can be displayed in the tooltip by using the [`template`](/api/js/ejchart#members:commonseriesoptions-tooltip-template) option. The template option takes the value of the “id” attribute from the HTML element. You can use the **#point.x#** and **#point.y#** as place holders in the HTML element to display the X and Y values of the corresponding data points.
+=======
+HTML elements can be displayed inside the tooltip by using the [`template`](/api/js/ejchart#members:commonseriesoptions-tooltip-template). The template option takes the value of the “id” attribute from the HTML element. You can use the **#point.x#** and **#point.y#** as place holders in the HTML element to display the X and Y values of corresponding data points.
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 {% highlight javascript %}
 
@@ -145,7 +154,11 @@ $(function()
 There are two ways to zoom the chart:
 
 * When [`zooming.enable`](/api/js/ejchart#members:zooming-enable) is set to true, you can zoom the chart by using the rubber band selection.
+<<<<<<< HEAD
 * When the [`zooming.enableMouseWheel`](/api/js/ejchart#members:zooming-enablemousewheel) is set to true, you can zoom the chart by scrolling the mouse wheel.
+=======
+* When [`zooming.enableMouseWheel`](/api/js/ejchart#members:zooming-enablemousewheel) is set to true, you can zoom the chart by scrolling the mouse wheel.
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 {% highlight javascript %}
 
@@ -167,14 +180,24 @@ $(function()
 
 ![](User-Interactions_images/zooming.png) 
 
+<<<<<<< HEAD
 After zooming the chart, a zooming toolbar will appear with options to *zoom, pan, and reset*. Selecting the **“Pan”** option will allow you to view the chart and selecting **“Reset”** will reset the zoomed chart.
+=======
+After zooming the chart, a zooming toolbar will appear with options to *zoom, pan, and reset*. Selecting the **“Pan”** will allow to view the chart and selecting **“Reset”** will reset the zoomed chart.
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 ![](User-Interactions_images/pan.png) 
 
 ### Types of zooming
+<<<<<<< HEAD
 You can zoom a particular axis like horizontal axis or the vertical axis or both axes by using the [`type`](/api/js/ejchart#members:zooming-type) in the zooming.
 
 N> By default, the value for the `type` in zooming is “x,y” (indicating both axes) in the pivot chart.
+=======
+You can zoom a particular axis, like the horizontal axis or the vertical axis or both axis by using the [`type`](/api/js/ejchart#members:zooming-type) when zooming. 
+
+N> By default, the value for the `type` when zooming is “x,y” (indicating both axes) in the pivot chart.
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 {% highlight javascript %}
 
@@ -197,7 +220,11 @@ $(function()
 
 ### Enable scrollbar
 
+<<<<<<< HEAD
 * When [`enableScrollbar`](/api/js/ejpivotchart#members:zooming-enablescrollbar) is set to true under [`zooming`](/api/js/ejpivotchart#members:zooming), the pivot chart is rendered along with the scroll bars for a precise view of the data. The data can be viewed by using the scroll bar or by scrolling the mouse wheel.
+=======
+* When [`zooming.enableScrollbar`](/api/js/ejpivotchart#members:zooming-enablescrollbar) is set to true, the pivot chart is rendered along with scroll bars for a precise view of the data. The data can be viewed by using the scroll bar or by scrolling the mouse wheel.
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 {% highlight javascript %}
 
@@ -232,7 +259,7 @@ In the pivot chart, you can customize the marker [`shape`](/api/js/ejchart#membe
 * Hexagon
 * Star
 * Ellipse
-* Triangle etc.
+* Triangle
 
 {% highlight javascript %}
 
@@ -260,7 +287,11 @@ function onSeriesRender(args)
 ![](User-Interactions_images/marker.png) 
 
 ### Enable crosshair and crosshair label
+<<<<<<< HEAD
 The crosshair allows you to view values at mouse position or touch contact point. The crosshair can be enabled by using the [`visible`](/api/js/ejchart#members:crosshair-visible) option in [`crosshair`](/api/js/ejchart#members:crosshair) property. The crosshair label can be enabled by using the **“visible”** option in the [`crosshairLabel`](/api/js/ejchart#members:primaryxaxis-crosshairlabel) property within its corresponding axis.
+=======
+The crosshair allows you to view values at mouse position or touch contact point. The crosshair can be enabled by using the [`visible`](/api/js/ejchart#members:crosshair-visible) in the [`crosshair`](/api/js/ejchart#members:crosshair) property. The crosshair label can be enabled by using the **“visible”** in the [`crosshairLabel`](/api/js/ejchart#members:primaryxaxis-crosshairlabel) property within its corresponding axis.
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 {% highlight javascript %}
 
@@ -298,7 +329,11 @@ $(function()
 ![](User-Interactions_images/crosshair.png) 
 
 ### Crosshair line and label customization
+<<<<<<< HEAD
 By using the [`line`](/api/js/ejchart#members:crosshair-line) property of the crosshair, you can customize its line color and width. By using `fill` and `border` properties of the [`crosshairLabel`](/api/js/ejchart#members:primaryxaxis-crosshairlabel) in its corresponding axis, you can customize its background color, border color, and border width.
+=======
+By using the [`line`](/api/js/ejchart#members:crosshair-line) property of the crosshair, you can customize its line color and width. By using the `fill` and `border` properties of the [`crosshairLabel`](/api/js/ejchart#members:primaryxaxis-crosshairlabel) in its corresponding axis, you can customize its background color, border color, and border width.
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 {% highlight javascript %}
 
@@ -351,7 +386,11 @@ $(function()
 ## Trackball
 
 ### Enable trackball
+<<<<<<< HEAD
 The trackball can be enabled by setting both - ['visible'](/api/js/ejchart#members:crosshair-visible) of the crosshair to true and [`type`](/api/js/ejchart#members:crosshair-type) of the crosshair to **“trackball”.** The default value of type is **“crosshair”.**
+=======
+The trackball can be enabled by setting both - the ['visible'](/api/js/ejchart#members:crosshair-visible) of the crosshair to true and the [`type`](/api/js/ejchart#members:crosshair-type) of the crosshair to **“trackball”.** The default value of type is **“crosshair”.**
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 {% highlight javascript %}
 
@@ -375,7 +414,11 @@ $(function()
 ![](User-Interactions_images/trackball.png) 
 
 ### Trackball marker and line customization
+<<<<<<< HEAD
 The shape and size of the trackball marker can be customized by using the [`shape`](/api/js/ejchart#members:commonseriesoptions-marker-shape) and [`size`](/api/js/ejchart#members:crosshair-marker-size) options of the crosshair marker. The color and width of the trackball line can be customized by using the **“line”** in the crosshair.
+=======
+The shape and size of the trackball marker can be customized by using the [`shape`](/api/js/ejchart#members:commonseriesoptions-marker-shape) and [`size`](/api/js/ejchart#members:crosshair-marker-size) options of the crosshair marker. The color and width of the trackball line can be customized using the **“line”** in the crosshair.
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 {% highlight javascript %}
 
@@ -416,7 +459,11 @@ $(function()
 ![](User-Interactions_images/trackballmarker.png) 
 
 ## Highlight
+<<<<<<< HEAD
 The pivot chart provides highlighting support for the series and data points by hovering the pointer. To enable highlighting, set the **“enable”** property to true in the [`highlightsettings`](/api/js/ejchart#members:series-highlightsettings-enable) of the series.
+=======
+The pivot chart provides highlighting support for the series and data points by hovering the mouse. To enable highlighting, set the **“enable”** property to true in the [`highlightSettings`](/api/js/ejchart#members:series-highlightsettings-enable) of the series.
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 {% highlight javascript %}
 
@@ -442,7 +489,11 @@ function onSeriesRender(args)
 {% endhighlight %} 
 
 ### Highlight mode
+<<<<<<< HEAD
 You can set three different modes for highlighting data points and series by using the [`mode`](/api/js/ejchart#members:series-highlightsettings-mode) property of the [`highlightsettings`](/api/js/ejchart#members:series-highlightsettings).
+=======
+You can set three different modes for highlighting data points and series by using the [`mode`](/api/js/ejchart#members:series-highlightsettings-mode) property of the [`highlightSettings`](/api/js/ejchart#members:series-highlightsettings).
+>>>>>>> hotfix/hotfix-v15.4.0.20
  
 * series
 * points
@@ -659,7 +710,11 @@ function onSeriesRender(args)
 ![](User-Interactions_images/customizeselection.png) 
 
 ### Patterns for selection
+<<<<<<< HEAD
 The pivot chart provides pattern support for selecting data by setting an appropriate value to the [`pattern`](/api/js/ejchart#members:series-selectionsettings-pattern) property of the [`selectionSettings`](/api/js/ejchart#members:series-selectionsettings) option. The different types of selection patterns are as follows:
+=======
+The pivot chart provides pattern support for selecting data by setting an appropriate value to the [`pattern`](/api/js/ejchart#members:series-selectionsettings-pattern) property of the [`selectionSettings`](/api/js/ejchart#members:series-selectionsettings). The different types of selection patterns are as follows:
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 * chessboard
 * crosshatch

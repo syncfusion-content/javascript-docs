@@ -12,7 +12,11 @@ api: /api/js/ejpivotchart
 
 ## Set size in percentage
 
+<<<<<<< HEAD
 You can customize the pivot chart dimension under the [`size`](/api/js/ejpivotchart#members:size) property by setting the width and height of the widget in percentage.
+=======
+You can customize the pivot chart dimension by setting the width and height of the widget in percentage.
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 {% highlight javascript %}
 
@@ -40,7 +44,11 @@ You can customize the pivot chart dimension under the [`size`](/api/js/ejpivotch
 
 ## Set size in pixels
 
+<<<<<<< HEAD
 You can customize the pivot chart dimension under the [`size`](/api/js/ejpivotchart#members:size) property by setting the width and height of the widget in pixels.
+=======
+You can customize the pivot chart dimension by setting the width and height of the widget in pixels.
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 {% highlight javascript %}
 

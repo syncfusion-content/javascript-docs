@@ -10,6 +10,7 @@ api: /api/js/ejpivotchart
 
 # Getting started
 
+<<<<<<< HEAD
 ## Creating a simple application with pivot chart and relational data source (client mode)
 
 This section covers the basic information required to populate a simple pivot chart with [`Relational`](/api/js/ejpivotchart#members:analysismode) data completely on the [`client-side`](/api/js/ejpivotchart#members:operationalmode).
@@ -17,6 +18,15 @@ This section covers the basic information required to populate a simple pivot ch
 ### Scripts and CSS references
 
 Create an HTML page and add scripts and style sheets that are required to render a pivot chart widget which are highlighted below in an appropriate order:
+=======
+## Creating a simple application with pivot chart and relational data sources (client mode)
+
+This section covers the basic information required to populate a simple pivot chart with relational data completely on the client-side.
+
+### Scripts and CSS references
+
+Create an HTML page and add scripts and style sheets that are required to render a pivot chart widget, which are highlighted below in an appropriate order:
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 1. ej.web.all.min.css
 2. jQuery-3.0.0.min.js
@@ -24,7 +34,11 @@ Create an HTML page and add scripts and style sheets that are required to render
 
 ### Initialize pivot chart
 
+<<<<<<< HEAD
 Place a "div" tag in the HTML page which acts as a container for the pivot chart widget.  Then, initialize the widget by using the "ejPivotChart" method.
+=======
+Place a div tag in the HTML page which acts as a container for the pivot chart widget. Then, initialize the widget using the "ejPivotChart" method.
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 {% highlight html %}
 
@@ -53,7 +67,11 @@ Place a "div" tag in the HTML page which acts as a container for the pivot chart
 
 ### Populate pivot chart with data
 
+<<<<<<< HEAD
 This section illustrates how to populate the pivot chart control using a sample JSON data as shown below:
+=======
+This section explains the steps required to populate the pivot chart control using a sample JSON data as shown below: 
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 {% highlight html %}
 
@@ -66,7 +84,11 @@ var pivotData = [
 ];
 {% endhighlight %}
 
+<<<<<<< HEAD
 Now, set the JSON data to the **"data"** property available in the **"dataSource"** object. The **"dataSource"** object allows you to set the raw data input and the fields that should be displayed in the row, column, value, and filter section of the pivot chart control.
+=======
+Now, set the JSON data to the **"data"** property available in the **"dataSource"** object.  The **"dataSource"** object allows you to set the raw data input and the fields that need to be displayed in the row, column, value, and filter section of the pivot chart control.
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 {% highlight html %}
 
@@ -127,6 +149,7 @@ The above code will generate a simple pivot chart with sales amount over a range
 
 ![](Relational-Getting-Started_images/PopulatePivotChartWithData.png)
 
+<<<<<<< HEAD
 The following table will explain the [`relational`](/api/js/ejpivotchart#members:analysismode) [`datasource`](/api/js/ejpivotchart#members:datasource) properties at [`client-side`](/api/js/ejpivotchart#members:operationalmode) in detail:
 
 <table>
@@ -340,6 +363,11 @@ The following table will explain the [`relational`](/api/js/ejpivotchart#members
 ### Apply sorting
 
 You can sort a field either in ascending or descending order by using the **"sortOrder"** property. The sorting is applicable only for the fields in rows and columns.
+=======
+### Apply sorting
+
+You can sort a field either in ascending or descending order by using the **"sortOrder"** property. Sorting is applicable only for fields in rows and columns.
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 N> By default, the values in all fields are arranged in ascending order.
 
@@ -368,12 +396,21 @@ $(function () {
 
 ### Apply filtering
 
+<<<<<<< HEAD
 The filtering option allows you to specify a set of values that should be made either visible or hidden. Also, the filtering option is applicable only for the row, column, and filter areas.
 
 **"filterItems"** object allows you to apply the filtering to fields by using the following properties:
 
 * filterType -  indicates whether the values should be included or excluded.
 * values -  specify an array of values that should be included or excluded within the particular field.
+=======
+The filtering option allows you to show or hide a set of values. The filtering option is applicable only for the row, column, and filter areas.
+
+**"filterItems"** object allows you to apply filtering to fields by using the following properties:
+
+* filterType -  indicates whether the values should be included or excluded.
+* values -  specify an array of values that need to be included or excluded within the particular field.
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 
 {% highlight html %}
@@ -412,6 +449,7 @@ $(function () {
 
 ## Creating a simple application with pivot chart and relational data source (server mode)
 
+<<<<<<< HEAD
 This section covers the information required to create a simple pivot chart bound with [`Relational`](/api/js/ejpivotchart#members:analysismode) data source from the [`server-side`](/api/js/ejpivotchart#members:operationalmode).
 
 N>The section is illustrated by creating a simple web application through the Visual Studio IDE since the pivot chart in server mode requires .NET dependency. The web application contains an HTML page and a service which transfers data to [`server-side`](/api/js/ejpivotchart#members:operationalmode), process it, and return it to [`client-side`](/api/js/ejpivotchart#members:operationalmode) for control rendering. The service utilized for communication can be either a WebAPI controller class or a WCF service based on user requirement. Here, both are illustrated for user convenience.
@@ -426,6 +464,22 @@ Now, you can set “GettingStarted.html” page as start-up page. To do so, righ
 
 ### Scripts and CSS initialization
 The scripts and style sheets that are required to render a pivot chart widget inside an HTML page that are highlighted below in an appropriate order:
+=======
+This section covers the information required to create a simple pivot chart that is bound with the relational data source from the server-side.
+
+N>This section illustrates creating a simple web application through the Visual Studio IDE since the pivot chart in server mode requires .NET dependency. The web application contains an HTML page and a service that transfers data to server-side, processes, and returns back the data to the client-side for control rendering. The service utilized for communication can be either a WebAPI controller class or a WCF service based on user requirement. Here, both are illustrated for user convenience.
+
+### Project initialization
+
+Create a new **ASP.NET Empty Web Application** by using the Visual Studio IDE and name the project as **“PivotChartDemo.”**
+
+Next, you can add an HTML page. To add an HTML page in your web application, right-click the project in the solution explorer and select **Add > New Item**. In the **Add New Item** window, select **HTML Page** and name it “GettingStarted.html”, and then click **Add.**
+ 
+Now, you can set the “GettingStarted.html” page as start-up page. To do so, right-click the “GettingStarted.html” page and select **“Set As Start Page”**.
+
+### Scripts and CSS initialization
+The scripts and style sheets that are required to render a pivot chart widget in an HTML page are highlighted below in an appropriate order:
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 1. ej.web.all.min.css
 2. jQuery-3.0.0.min.js
@@ -441,7 +495,11 @@ NuGet package: [Click here](https://help.syncfusion.com/js/installation-and-depl
 
 ### Control initialization
 
+<<<<<<< HEAD
 To initialize a pivot chart widget, first you can define a “div” tag with an appropriate “id” attribute which acts as a container for the pivot chart widget. Then, you can initialize the widget by using the `ejPivotChart` method.
+=======
+To initialize a pivot chart widget, you can define a div tag with an appropriate “id” attribute which acts as a container for the pivot chart widget. Then, you can initialize the widget using the `ejPivotChart` method.
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 {% highlight html %}
 
@@ -474,9 +532,15 @@ To initialize a pivot chart widget, first you can define a “div” tag with an
 </html>
 {% endhighlight %}
 
+<<<<<<< HEAD
 The [`url`](/api/js/ejpivotchart#members:url) property in the pivot chart widget points the service endpoint, where the data is processed and fetched in the form of JSON. The services used for the pivot chart widget as endpoint are WebAPI and WCF.
 
 N> The above "GettingStarted.html" contains WebAPI URL, which is **“/Relational”**. If you are using the WCF service, then the URL will look like **"/RelationalService.svc"**. 
+=======
+The “url” property in the pivot chart widget points the service endpoint, where the data is processed and fetched in the form of JSON. The services used for the pivot chart widget as endpoint are WebAPI and WCF.
+
+N> The above "GettingStarted.html" contains WebAPI URL, which is **“/Relational”**. If you are using the WCF service, then the URL will look like **"/RelationalService.svc"**.
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 ### WebAPI
 
@@ -488,7 +552,11 @@ Now, the WebAPI controller is added to your application, which, in-turn, compris
 
 * RelationalController.cs
 
+<<<<<<< HEAD
 N> While adding the WebAPI controller class, add the mandatory suffix “Controller”. For example, in the demo, the controller is named “RelationalController”.
+=======
+N> While adding the WebAPI controller class, add the mandatory suffix “Controller”. For example, in the demo, the controller is named as “RelationalController”.
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 Next, remove all the existing methods such as “Get”, “Post”, “Put”, and “Delete” present in the `RelationalController.cs` file.
 
@@ -506,7 +574,11 @@ namespace PivotChartDemo
 
 **List of dependency libraries**
 
+<<<<<<< HEAD
 Next, you can add the below mentioned dependency libraries to your web application. These libraries can be found in the GAC (Global Assembly Cache).
+=======
+Next, you should add the below mentioned dependency libraries to your web application. These libraries can be found in the GAC (Global Assembly Cache).
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 To add them to your web application, right-click **References** in the solution explorer and select **Add Reference.** Now, in the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries are found.
 
@@ -658,7 +730,11 @@ namespace PivotChartDemo
 
 **Service methods in WebAPI controller**
 
+<<<<<<< HEAD
 Now, you can define the service methods in the RelationalController class, find the `RelationalController.cs` file which was created while adding the WebAPI controller class to your web application.
+=======
+You can define the service methods in the RelationalController class, found in the `RelationalController.cs` file which was created while adding the WebAPI controller class to your web application.
+>>>>>>> hotfix/hotfix-v15.4.0.20
  
 {% highlight c# %}
 
@@ -702,9 +778,15 @@ namespace PivotChartDemo
 
 **Configure routing in global application class**
 
+<<<<<<< HEAD
 To add a Global.asax in your existing web application, right-click the project in the solution explorer and select **Add > New** item. In the **Add New Item** window, select **Global Application** class and name it **“Global.asax”**, and then click **Add.**
  
 After adding the **Global.asax** file, delete all methods inside the **Global** class and add the namespace **“using System.Web.Http;”**, and then configure the routing as shown in the following code example:
+=======
+To add a Global.asax in your existing web application, right-click the project in the solution explorer and select **Add > New** item. In the **Add New Item** window, select **Global Application** class and name it **“Global.asax,”** and then click **Add.**
+ 
+After adding the **Global.asax** file, delete all methods in the **Global** class and add the namespace **“using System.Web.Http;”**, and then configure the routing as shown in the following code example:
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 {% highlight c# %}
 
@@ -722,12 +804,20 @@ public class Global : System.Web.HttpApplication
 {% endhighlight %}
 
 Now, the pivot chart is rendered with sales amount details over a set of products across different countries.
+<<<<<<< HEAD
 
+=======
+ 
+>>>>>>> hotfix/hotfix-v15.4.0.20
 ![](Relational-Getting-Started_images/ServerMode.png)
 
 ### WCF
 
+<<<<<<< HEAD
 This section demonstrates the utilization of WCF service as endpoint binding [`Relational`](/api/js/ejpivotchart#members:analysismode) data source to a simple pivot chart. For more details on this topic, [click here](https://help.syncfusion.com/js/pivotchart/relational-connectivity#wcf-1).
+=======
+This section demonstrates the utilization of WCF service as endpoint binding the relational data source to a simple pivot chart. For more details on this topic, [click here](https://help.syncfusion.com/js/pivotchart/relational-connectivity#wcf-1).
+>>>>>>> hotfix/hotfix-v15.4.0.20
   
 
 

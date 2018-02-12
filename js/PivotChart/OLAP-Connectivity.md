@@ -11,7 +11,11 @@ api: /api/js/ejpivotchart
 # Data binding 
 
 ## Binding pivot chart to offline cube
+<<<<<<< HEAD
 To connect to an [`OLAP`](/api/js/ejpivotchart#members:analysismode) cube available in the local machine, set the physical path of the cube in the connection string. The following code example illustrates this process:
+=======
+To connect to an OLAP cube available in the local machine, set the physical path of the cube in the connection string. The following code example illustrates this process:
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 {% highlight c# %}
 
@@ -19,8 +23,13 @@ string connectionString = @"DataSource = system drive:\OfflineCube\Adventure_Wor
 OlapDataManager DataManager = new OlapDataManager(connectionString);
 {% endhighlight %}
 
+<<<<<<< HEAD
 ## Binding pivot chart to cube in local SQL Server
 To connect to an [`OLAP`](/api/js/ejpivotchart#members:analysismode) cube available in the SQL Server Analysis Service in the local machine, set the server name and database name in the connection string. If you have any credentials to connect your cube, then set the user ID and password attributes accordingly. The following code example illustrates this process:
+=======
+## Binding pivot chart to cube in local SQL server
+To connect to an OLAP cube available in the SQL Server Analysis Service of the local machine, set the server name and database name in the connection string. If you have any credentials to connect the cube, then set the user ID and password attributes accordingly. The following code example illustrates this process:
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 {% highlight c# %}
 
@@ -28,8 +37,13 @@ string connectionString = "Data source=localhost; Initial Catalog=Adventure Work
 OlapDataManager DataManager = new OlapDataManager(connectionString);
 {% endhighlight %}
 
+<<<<<<< HEAD
 ## Binding pivot chart to cube in online SQL Server
 To connect to an [`OLAP`](/api/js/ejpivotchart#members:analysismode) cube available in the SQL Server Analysis Service in online server through **XML/A**, set the host server link and database name in the connection string. If you have any credentials to connect your cube, then set the user ID and password attributes accordingly. The following code example illustrates this process:
+=======
+## Binding pivot chart to cube in online SQL server
+To connect to an OLAP cube available in the SQL Server Analysis Service in online server through **XML/A**, set the host server link and database name in the connection string. If you have any credentials to connect the cube, then set the user ID and password attributes accordingly. The following code example illustrates this process:
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 {% highlight c# %}
 
@@ -38,7 +52,11 @@ OlapDataManager DataManager = new OlapDataManager(connectionString);
 {% endhighlight %}
 
 ## Binding pivot chart to cube in online Mondrian Server
+<<<<<<< HEAD
 To connect to an [`OLAP`](/api/js/ejpivotchart#members:analysismode) cube available in the Mondrian Server through **XML/A**, set the host server link and database name in the connection string. If you have any credentials to connect your cube, then set the user ID and password attributes accordingly. The following code example illustrates this process:
+=======
+To connect to an OLAP cube available in the Mondrian Server through **XML/A**, set the host server link and database name in the connection string. If you have any credentials to connect the cube, then set the user ID and password attributes accordingly. The following code example illustrates this process:
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 {% highlight c# %}
 
@@ -48,7 +66,11 @@ DataManager.DataProvider.ProviderName = Syncfusion.Olap.DataProvider.Providers.M
 {% endhighlight %}
 
 ## Binding pivot chart to cube in online Active Pivot Server
+<<<<<<< HEAD
 To connect to an [`OLAP`](/api/js/ejpivotchart#members:analysismode) cube available in the Active Pivot Server through **XML/A**, set the host server link and database name in the connection string. If you have any credentials to connect your cube, then set the user ID and password attributes accordingly. The following code example illustrates this process:
+=======
+To connect to an OLAP cube available in the Active Pivot Server through **XML/A**, set the host server link and database name in the connection string. If you have any credentials to connect your cube, then set the user ID and password attributes accordingly. The following code example illustrates this process:
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 {% highlight c# %}
 
@@ -59,11 +81,17 @@ DataManager.DataProvider.ProviderName=Syncfusion.Olap.DataProvider.Providers.Act
 
 
 ## WCF
-**Adding a WCF Service**
+**Adding a WCF service**
 
+<<<<<<< HEAD
 To add a WCF service in an existing web application, right-click the project in the solution explorer and select **Add > New Item**. In the **Add New Item** window, select the WCF Service and name it **“OlapService.svc,”** and then click **Add**.
  
 The WCF service is added to your application, which, in-turn, comprises the following files. The utilization of these files will be explained in the immediate sections.
+=======
+To add a WCF service in an existing web application, right-click the project in the solution explorer and select **Add > New Item**. In the **Add New Item** window, select WCF Service and name it **“OlapService.svc”**, and then click **Add**.
+ 
+Now, the WCF service is added to your application, which, in turn, comprises the following files. The utilization of these files will be explained in the immediate sections. 
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 * OlapService.svc
 * OlapService.svc.cs
@@ -71,7 +99,11 @@ The WCF service is added to your application, which, in-turn, comprises the foll
 
 **Configuring WCF service class**
 
+<<<<<<< HEAD
 Remove the “DoWork” method present in both `OlapService.svc.cs` and `IOlapService.cs files`. Next, add “AspNetCompatibilityRequirements” attribute on top of the main class present in the `OlapService.svc.cs` file and set the “RequirementsMode” value to “Allowed”.
+=======
+Remove the “DoWork” method present in both `OlapService.svc.cs` and `IOlapService.cs files`. Next, add “AspNetCompatibilityRequirements” attribute on top of the main class that is present in `OlapService.svc.cs` and set “RequirementsMode” value to “Allowed”.
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 {% highlight c# %}
 
@@ -87,9 +119,15 @@ namespace PivotChartDemo
 
 **List of dependency libraries**
 
+<<<<<<< HEAD
 Next, you can add the below-mentioned dependency libraries to your web application. These libraries can be found in the GAC (Global Assembly Cache).
  
 To add them to your web application, right-click **References** in the solution explorer and select **Add Reference**. In the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries are found.
+=======
+You can add the below mentioned dependency libraries to your web application. These libraries can be found in the GAC (Global Assembly Cache).
+ 
+To add them to the web application, right-click **References** in the solution explorer and select **Add Reference**. Now, in the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries are found.
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 N> If you have installed any version of SQL Server Analysis Service (SSAS) or Microsoft ADOMD.NET utility, then the location of Microsoft.AnalysisServices.AdomdClient library is [system drive:\Program Files (x86)\Microsoft.NET\ADOMD.NET]. If you have installed any version of Essential Studio, then the location of Syncfusion libraries is [system drive:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\Assemblies].
 
@@ -107,7 +145,11 @@ N> If you have installed any version of SQL Server Analysis Service (SSAS) or Mi
 
 **List of namespaces**
 
+<<<<<<< HEAD
 Following are the list of namespaces to be added on top of the main class in the `OlapService.svc.cs` file:
+=======
+The following are the list of namespaces to be added on top of the main class in the `OlapService.svc.cs` file.
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 {% highlight c# %}
 
@@ -128,7 +170,11 @@ namespace PivotChartDemo
 
 **Data source initialization**
 
+<<<<<<< HEAD
 Now, the connection string to connect the [`OLAP`](/api/js/ejpivotchart#members:analysismode) cube and pivot chart instances is created immediately in the main class of the `OlapService.svc.cs` file.
+=======
+The connection string to connect the OLAP cube and the pivot chart instances is created immediately in the main class of the `OlapService.svc.cs` file.
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 {% highlight c# %}
 
@@ -147,7 +193,11 @@ namespace PivotChartDemo
 
 **Service methods in WCF service**
 
+<<<<<<< HEAD
 First, you can define the service methods in the IOlapService interface, find in the `IOlapService.cs` file which was created while adding the WCF service to your web application.
+=======
+First, you can define the service methods in the IOlapService interface, found in the `IOlapService.cs` file which is created while adding the WCF Service to your web application.
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 {% highlight c# %}
 
@@ -164,7 +214,11 @@ namespace PivotChartDemo
 }
 {% endhighlight %}
 
+<<<<<<< HEAD
 Then, you can elaborate the service methods in the main class, found in the `OlapService.svc.cs` file.
+=======
+Then, you can elaborate the service methods in the main class that is found in the `OlapService.svc.cs` file.
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 {% highlight c# %}
 
@@ -222,6 +276,7 @@ namespace PivotChartDemo
 }
 {% endhighlight %}
 
+<<<<<<< HEAD
 N> The [`customObject`](../api/ejpivotchart#members:customobject) is utilized to pass additional information between the client-end and the service-end.
 
 **Configuring web configuration file**
@@ -233,6 +288,17 @@ You can expose the services through the properties such as binding, contract, an
 * behaviorConfiguration: This property contains the name of the behavior to be used in the endpoint.
 
 The endpointBehaviors are illustrated as follows:
+=======
+**Configuring web configuration file**
+
+You can expose the services through properties such as binding, contract, and address by using an endpoint.
+
+* Contract: This property indicates that the contract of the endpoint is exposed. Refer to the **IOlapService** contract, and it is written as **PivotChartDemo.IOlapService**.
+* Binding: In your application, you can use **webHttpBinding** to post and receive requests and responses between the client-end and the service.
+* behaviorConfiguration: This property contains the name of the behavior to be used in the endpoint.
+
+The endpointBehaviors are illustrated in the following sample:
+>>>>>>> hotfix/hotfix-v15.4.0.20
  
 {% highlight xml %}
 
@@ -264,7 +330,11 @@ The endpointBehaviors contain all behaviors for an endpoint. You can link each e
 </system.serviceModel>
 {% endhighlight %}
 
+<<<<<<< HEAD
 N> In this example, the “PivotChartDemo” indicates the name and root namespace of the web application that is created in the Visual Studio IDE, and the “OlapService” indicates the name of the created WCF service.
+=======
+N> In this example, the “PivotChartDemo” indicates the name and root namespace of the web application created in Visual Studio IDE, and the “OlapService” indicates the name of the created WCF service.
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 Now, the pivot chart is rendered with customer count over a period of fiscal years across different customer geographic locations.
 

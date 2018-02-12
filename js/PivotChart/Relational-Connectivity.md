@@ -13,16 +13,26 @@ api: /api/js/ejpivotchart
 ## Binding pivot chart to collection
 This section demonstrates binding a collection to the pivot chart control as data source. For more information on this data source, refer to the following links:
 
+<<<<<<< HEAD
 If you are using the WebAPI controller, refer to the “Datasource Initialization” section under the following [link](https://help.syncfusion.com/js/pivotchart/relational-getting-started#creating-a-simple-application-with-pivotchart-and-relational-datasource-server-mode).
 
 If you are using the WCF Service, refer to the "Datasource Initialization" section below:
+=======
+If you are using the WebAPI controller, refer to the "Data Source Initialization" section under the following [link](https://help.syncfusion.com/js/pivotchart/relational-getting-started#creating-a-simple-application-with-pivotchart-and-relational-datasource-server-mode).
+
+If you are using the WCF Service, refer to the "Data Source Initialization" section below:
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 ## WCF
 **Adding a WCF service**
 
 To add a WCF service in an existing web application, right-click the project in the solution explorer and select **Add > New Item**. In the **Add New Item** window, select **WCF Service** and name it **“RelationalService.svc,”** and then click **Add**.
 
+<<<<<<< HEAD
 Now, the WCF service is added to your application, which, in-turn, comprises the following files. The utilization of these files will be explained in the immediate sections.
+=======
+The WCF service is added to your application, which, in-turn, comprises the following files. The utilization of these files will be explained in the immediate sections.
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 * RelationalService.svc
 * RelationalService.svc.cs
@@ -30,7 +40,11 @@ Now, the WCF service is added to your application, which, in-turn, comprises the
 
 **Configuring WCF service class**
 
+<<<<<<< HEAD
 Remove the “DoWork” method present in both `RelationalService.svc.cs` and `IRelationalService.cs` files. Next, add “AspNetCompatibilityRequirements” attribute on top of the main class that is present in `RelationalService.svc.cs` and set the **“RequirementsMode”** value to **“Allowed”**.
+=======
+Remove the “DoWork” method present in both `RelationalService.svc.cs` and `IRelationalService.cs` files. Next, add “AspNetCompatibilityRequirements” attribute on top of main class that is present in the `RelationalService.svc.cs` file and set **“RequirementsMode”** value to **“Allowed”**.
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 {% highlight c# %}
     
@@ -46,9 +60,15 @@ namespace PivotChartDemo
 
 **List of dependency libraries**
 
+<<<<<<< HEAD
 Next, you can add the below-mentioned dependency libraries to your web application. These libraries can be found in the GAC (Global Assembly Cache).
  
 To add them to your web application, right-click **References** in the solution explorer and select **Add Reference**. In the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries are found. 
+=======
+Next, you should add the below mentioned dependency libraries to your web application. These libraries can be found in the GAC (Global Assembly Cache).
+ 
+To add them to your web application, right-click **References** in the solution explorer and select **Add Reference**. Now, in the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries are found. 
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 N> If you have installed any version of Essential Studio, then the location of Syncfusion libraries is [system drive:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\Assemblies].
 
@@ -66,7 +86,11 @@ N> If you have installed any version of Essential Studio, then the location of S
 
 **List of namespaces**
 
+<<<<<<< HEAD
 Following are the list of namespaces to be added on top of the main class in the `RelationalService.svc.cs` file:
+=======
+Following are the list of namespaces to be added on top of the main class in the `RelationalService.svc.cs` file.
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 {% highlight c# %}
 
@@ -204,7 +228,11 @@ namespace PivotChartDemo
 
 **Service methods in WCF service**
 
+<<<<<<< HEAD
 First, you can define the service methods in the IRelationalService interface, find in the `IRelationalService.cs` file which was created while adding the WCF service to your web application.
+=======
+First, you can define the service methods in the IRelationalService interface, found in `IRelationalService.cs` file, created while adding the WCF service to your web application.
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 {% highlight c# %}
 
@@ -221,7 +249,11 @@ namespace PivotChartDemo
 }
 {% endhighlight %}
 
+<<<<<<< HEAD
 Then, you can elaborate the service methods in the main class, found in the `RelationalService.svc.cs` file.
+=======
+Then, you can elaborate the service methods inside the main class, found in the `RelationalService.svc.cs` file.
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 {% highlight c# %}
 
@@ -259,6 +291,7 @@ namespace PivotChartDemo
 }
 {% endhighlight %}
 
+<<<<<<< HEAD
 N> The [`customObject`](../api/ejpivotchart#members:customobject) is utilized to pass additional information between the client-end and the service-end.
 
 **Configuring web configuration file**
@@ -270,6 +303,17 @@ You can expose the services through the properties such as binding, contract, an
 3. behaviorConfiguration: This property contains the name of the behavior to be used in the endpoint.
  
 The endpointBehaviors are illustrated as follows:
+=======
+**Configuring web configuration file**
+
+You can expose services through the properties such as binding, contract, and address by using an endpoint.
+
+1. contract: This property indicates that the contract of the endpoint is exposed. Refer to the `IRelationalService` contract, and it is written as `PivotChartDemo.IRelationalService`.
+2. binding: In your application, you can use `webHttpBinding` to post and receive the requests and responses between the client-end and the service.
+3. behaviorConfiguration: This property contains the name of the behavior to be used in the endpoint.
+ 
+The endpointBehaviors are illustrated in the following sample:
+>>>>>>> hotfix/hotfix-v15.4.0.20
  
 {% highlight xml %}
 
@@ -302,7 +346,11 @@ The endpointBehaviors contain all behaviors for an endpoint. You can link each e
 </system.serviceModel>
 {% endhighlight %}
 
+<<<<<<< HEAD
 N> In this example, the **“PivotChartDemo”** indicates the name and root namespace of the web application created in the Visual Studio IDE, and the **“RelationalService”** indicates the name of the created WCF service.
+=======
+N> In this example, the **“PivotChartDemo”** indicates the name and root namespace of the web application that is created in the Visual Studio IDE, and the **“RelationalService”** indicates the name of the created WCF service.
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 Now, the pivot chart will be rendered with sales amount details over a set of products across different countries.
 

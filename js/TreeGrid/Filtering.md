@@ -10,7 +10,9 @@ api: /api/js/ejtreegrid
 
 # Filtering
 
-Filtering helps to view specific or related records from data source which meets a given filtering criteria. To enable filtering in TreeGrid, set the [`allowFiltering`](/api/js/ejtreegrid#members:allowfiltering)  as `true`
+Filtering helps to view specific or related records from data source which meets a given filtering criteria. To enable filtering in TreeGrid, set the [`allowFiltering`](/api/js/ejtreegrid#members:allowfiltering)  as `true`.
+The [`filterSettings`](/api/js/ejtreegrid#members:filtersettings) property is used to customize the filtering in tree grid.
+
 TreeGrid provides support for the following filtering modes.
 
 * Filter bar
@@ -40,13 +42,15 @@ The output of the TreeGrid with filtering enabled is as follows.
 
 ![](/js/TreeGrid/Filtering_images/Filtering_img1.png)
 
+The TreeGrid allows the user to filter the columns with custom actions by using the method [`filterColumn`](https://help.syncfusion.com/api/js/ejtreegrid#methods:filtercolumn "filterColumn"). And it is possible to clear the filter for a specific column by using the method [`clearFilter`](https://help.syncfusion.com/api/js/ejtreegrid#methods:clearfilter "clearFilter").
+
 ## Filtering Modes
 
 ### Filter Bar 
 
 This is the default filtering mode in TreeGrid. It can also be enabled by setting the [`filterType`](/api/js/ejtreegrid#members:filtersettings-filtertype "filterSettings.filterType") as `filterbar`. When this filtering mode is enabled, a filter row will be displayed below the column header, in which we can provide the filter query.
 
-There are two types of actions available to initiate the filtering process in the filter bar mode,
+There are two types of actions available to initiate the filtering process in the filter bar mode, we can set the filter bar mode using [`filterBarMode`](/api/js/ejtreegrid#members:filtersettings-filterbarmode "filterSettings.filterBarMode") property.
 
 `immediate`: Filtering action will be initiated immediately on key press, for each character being typed in the filter bar.
 
@@ -222,7 +226,7 @@ The above screenshot shows TreeGrid with filtering blank content.
 {:.caption}
 
 ## Filter columns at initial load
-It is also possible to filter one or more columns at load time by providing the field and filter query values to the [`filteredColumns`](/api/js/ejtreegrid#members:filtersettings-filteredcolumns "filterSettings.filteredColumns") property. The following code example explains how to filter a column on initial load.
+It is also possible to filter one or more columns at load time by providing the [`field`](/api/js/ejtreegrid#members:filtersettings-filteredcolumns-field "filterSettings.filteredColumns.field"), [`value`](/api/js/ejtreegrid#members:filtersettings-filteredcolumns-value "filterSettings.filteredColumns.value"), [`predicate`](/api/js/ejtreegrid#members:filtersettings-filteredcolumns-predicate "filterSettings.filteredColumns.predicate") and [`operator`](/api/js/ejtreegrid#members:filtersettings-filteredcolumns-operator "filterSettings.filteredColumns.operator") to the [`filteredColumns`](/api/js/ejtreegrid#members:filtersettings-filteredcolumns "filterSettings.filteredColumns") property. The following code example explains how to filter a column on initial load.
 
 {% highlight js %}
 
@@ -263,6 +267,7 @@ The output of the filtering enabled for only one column is as follows.
 
 [Click here](http://js.syncfusion.com/demos/web/#!/bootstrap/treegrid/columnfiltering) to find the demo sample for filtering in TreeGrid
 
+
 ## Toolbox searching
 
 The TreeGrid control has an option to search its content using toolbar search box. The toolbar search box can be enabled by using the `toolbarSettings.toolbarItems` property.
@@ -284,3 +289,56 @@ $("#Treegrid ").ejTreeGrid ({
 ![](/js/TreeGrid/Filtering_images/Filtering_img8.png)
 
 The above screen shot shows TreeGrid search with ‘Plan’ key word.
+
+The toolbox searching can be customized using the [`searchSettings`](https://help.syncfusion.com/api/js/ejtreegrid#members:searchsettings "searchSettings") property. It is possible to search the TreeGrid content with the specific column values as the query for searching, using the property [`searchSettings.field`](https://help.syncfusion.com/api/js/ejtreegrid#members:searchsettings-fields "searchSettings.field").
+The below code example explains searching the TreeGrid content across the "TaskId" and "TaskName" columns.
+
+{% highlight js %}
+        $("#treegrid").ejTreeGrid({
+            searchSettings: {
+                fields: ["TaskId", "TaskName"],
+            }
+        });
+        
+{% endhighlight %}
+
+It is possible to filter the TreeGrid contents at initial load using the toolbar search, with the [`searchSettings.key`](https://help.syncfusion.com/api/js/ejtreegrid#members:searchsettings-key "searchSettings.key") property.
+The below code example explains filtering the TreeGrid contents at initial load with a search key, which will be applied accross all the columns.
+
+{% highlight js %}
+        $("#treegrid").ejTreeGrid({
+            searchSettings: {
+                key: "task 1",
+            }
+        });
+{% endhighlight %}
+
+TreeGrid provides support for conditional searching with operators in toolbar search using the property [`searchSettings.operator`](https://help.syncfusion.com/api/js/ejtreegrid#members:searchsettings-operator "searchSettings.operator"). And case sensitivity for the search query can be ignored using the property [`searchSettings.ignoreCase`](https://help.syncfusion.com/api/js/ejtreegrid#members:searchsettings-ignorecase "searchSettings.ignoreCase").
+The below code example explains filtering the TreeGrid content using toolbar search with operators
+
+{% highlight js %}
+
+        $("#treegrid").ejTreeGrid({
+            searchSettings: {
+                fields: ["TaskName"],
+                key: "Task 1",
+                operator: "startsWith",
+                ignoreCase: false
+            }
+        });
+        
+{% endhighlight %}
+
+If the toolbar search textbox is not enabled in TreeGrid, and still if the contents need to be filtered at initial load using the `searchSettings` property, then the user should enable the [`allowSearching`](https://help.syncfusion.com/api/js/ejtreegrid#members:allowsearching "allowSearching") property along with search settings.
+
+{% highlight js %}
+
+        $("#treegrid").ejTreeGrid({
+            //...
+            allowSearching: true,
+            searchSettings: {
+                key: "Plan"
+            },
+        });
+        
+{% endhighlight %}

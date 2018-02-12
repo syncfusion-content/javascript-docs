@@ -25,6 +25,8 @@ TreeGrid allows the items to be sorted in ascending or descending order based o
 
 {% endhighlight %}
 
+The TreeGrid columns can also be sorted with custom actions by using the [`sortColumn`](https://help.syncfusion.com/api/js/ejtreegrid#methods:sortcolumn "sortColumn") method, where the column field name and the sort order should be passed as the method parameters. And the sorting can be cleared using the method [`clearSorting`](https://help.syncfusion.com/api/js/ejtreegrid#methods:clearsorting "clearSorting"), calling this method will clear sorting for all the columns in TreeGrid.
+
 ### Multicolumn sorting
 
 TreeGrid allows you to sort multiple columns by clicking the desired column headers while holding the `Ctrl` key. The following code example shows you how to enable **Multicolumn sorting** in the TreeGrid control.
@@ -66,3 +68,31 @@ The below code snippet demonstrates this.
 
 {% endhighlight %}
 
+
+### Sort column at initial load
+
+In TreeGrid, It is possible to render the control with sorted columns, this can be achieve by using [`sortSettings`](/api/js/ejtreegrid#members:sortsettings) property. We can add columns which are sorted initially in [`sortedColumns`](/api/js/ejtreegrid#members:sortsettings-sortedcolumns "sortSettings.sortedColumns") collection. [`sortedColumns`](/api/js/ejtreegrid#members:sortsettings-sortedcolumns "sortSettings.sortedColumns") collection was defined with [`field`](/api/js/ejtreegrid#members:sortsettings-sortedcolumns-field "sortSettings.sortedColumns.field") and [`direction`](/api/js/ejtreegrid#members:sortsettings-sortedcolumns-direction "sortSettings.sortedColumns.direction") properties.
+
+The following code shows how to add sorted column in TreeGrid.
+
+{% highlight js %}
+
+    $(function () {
+        $("#TreeGridContainer").ejTreeGrid({
+            //...
+            allowSorting: true,
+            sortSettings: {
+                sortedColumns: [
+                    { field: "taskName", direction: ej.sortOrder.Descending }
+                ]
+            },
+            //...
+        })
+    });
+
+{% endhighlight %}
+
+![](/js/TreeGrid/Sorting_images/Sorting_img2.png)
+
+The above screenshot shows TreeGrid rendered with descending order of `Task Name` column.
+{:.caption}

@@ -12,7 +12,11 @@ api: /api/js/ejpivotchart
 
 ## Built-in themes
 
+<<<<<<< HEAD
 Following are the built-in themes available in the pivot chart:
+=======
+The following are the built-in themes available in the pivot chart:
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 * flatlight
 * gradientlight
@@ -32,7 +36,11 @@ Following are the built-in themes available in the pivot chart:
 * bootstrap
 
 
+<<<<<<< HEAD
 By using the [`theme`](/api/js/ejchart#members:theme) property, you can set the desired theme in the pivot chart. By default, the **“Flat Light”** theme is applied to the pivot chart.
+=======
+By using the [`theme`](/api/js/ejchart#members:theme) property, you can set the desired theme in the pivot chart. By default, the **“flatlight”** theme is applied to the pivot chart.
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 {% highlight javascript %}
 
@@ -77,7 +85,11 @@ To customize the pivot chart border, use the [`border`](/api/js/ejchart#members:
 ![](Appearance_images/BorderCustomization.png)
 
 ### Margin customization
+<<<<<<< HEAD
 The pivot chart control [`margin`](/api/js/ejchart#members:margin) property is used to add the margin to the chart area at left, right, top, and bottom position.
+=======
+The [`margin`](/api/js/ejchart#members:margin) property of the pivot chart control is used to add a margin to the chart area at the left, right, top, and bottom of the chart.
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 {% highlight javascript %}
 
@@ -124,7 +136,11 @@ The pivot chart control background can be customized by using the [`background`]
 ![](Appearance_images/BackgroundCustomization.png)
 
 ### Grid bands customization
+<<<<<<< HEAD
 By using the [`alternateGridBand`](/api/js/ejchart#members:primaryxaxis-alternategridband) property of the axis, you can provide different colors for grid rows and columns formed by the grid lines in the chart area. The [`odd`](/api/js/ejchart#members:primaryyaxis-alternategridband-odd) and [`even`](/api/js/ejchart#members:primaryyaxis-alternategridband-even) properties are used to customize the grid bands at odd and even positions respectively.
+=======
+By using the [`alternateGridBand`](/api/js/ejchart#members:primaryxaxis-alternategridband) property of the axis, you can provide different colors for grid rows and columns that are formed by the grid lines in the chart area. The [`odd`](/api/js/ejchart#members:primaryyaxis-alternategridband-odd) and [`even`](/api/js/ejchart#members:primaryyaxis-alternategridband-even) properties are used to customize the grid bands at odd and even positions respectively.
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 {% highlight javascript %}
 
@@ -155,7 +171,11 @@ By using the [`alternateGridBand`](/api/js/ejchart#members:primaryxaxis-alternat
 ![](Appearance_images/GridBandsCustomization.png)
 
 ### Animation
+<<<<<<< HEAD
 You can enable the animation by using the [`enableAnimation`](/api/js/ejchart#members:commonseriesoptions-enableanimation) property under [`commonSeriesOptions`](/api/js/ejchart#members:commonseriesoptions) of the pivot chart control. This animates the chart series on two occasions - when the chart is loaded for the first time and when you change the series type by using the “type” property.
+=======
+You can enable the animation by using the [`enableAnimation`](/api/js/ejchart#members:commonseriesoptions-enableanimation) property under the [`commonSeriesOptions`](/api/js/ejchart#members:commonseriesoptions) of the pivot chart control. It animates the chart series on two occasions - when the chart is loaded for the first time, and when the series type is changed by using the “type” property.
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 {% highlight javascript %}
 

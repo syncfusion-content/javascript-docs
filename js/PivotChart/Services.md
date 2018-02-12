@@ -11,10 +11,17 @@ api: /api/js/ejpivotchart
 
 # ejPivotChart
 
+<<<<<<< HEAD
 The pivot chart widget is a lightweight control that reads both OLAP and relational data sources and visualizes it in a graphical format with the ability to drill up and down. The pivot chart uses services to initialize and operate the widget and also to export the pivot chart to a Microsoft Excel, Microsoft Word, PDF, or image document.
 
 ## WCF/WebAPI service to populate pivot chart
 You can populate a simple pivot chart with the OLAP/relational data completely from the server-side using the WCF/WebAPI service. You can refer the **Getting Started** document available in the following UG documentation section.
+=======
+The pivot chart widget is a lightweight control that reads both OLAP and relational data sources and visualizes them in a graphical format with the ability to drill up and down. The pivot chart uses services to initialize and operate the widget and to export the pivot chart to an Microsoft Excel, Microsoft Word, PDF, or image document.
+
+## WCF/WebAPI service to populate pivot chart
+You can populate a simple pivot chart with OLAP/relational data completely from the server-side using the WCF/WebAPI service. You can refer the **Getting Started** document available in the following UG documentation section.
+>>>>>>> hotfix/hotfix-v15.4.0.20
  
 For relational data source, [click here.](https://help.syncfusion.com/js/pivotchart/relational-getting-started#creating-a-simple-application-with-pivotchart-and-relational-datasource-server-mode)
 
@@ -118,7 +125,11 @@ The browser will prompt a dialog box to save the Excel document.
 
 ### Word export
 
+<<<<<<< HEAD
 You can export the contents of the pivot chart to a Word document for future archival, references, and analysis purposes.
+=======
+You can export the contents of the pivot chart to Word document for future archival, references, and analysis purposes.
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 #### URL
 
@@ -212,7 +223,11 @@ The browser will prompt a dialog box to save the Word document.
 
 ### PDF export
 
+<<<<<<< HEAD
 You can export the contents of the pivot chart to a PDF document for future archival, references, and analysis purposes.
+=======
+You can export the contents of the pivot chart to the PDF document for future archival, references, and analysis purposes.
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 #### URL
 
@@ -306,7 +321,11 @@ The browser will prompt a dialog box to save the PDF document.
 
 ### Image export
 
+<<<<<<< HEAD
 You can export the contents of the pivot chart to an image format for future archival, references, and analysis purposes. You can export the pivot chart to the following image formats:
+=======
+You can export the contents of the pivot chart to image format for future archival, references, and analysis purposes. You can export the pivot chart to the following image formats:
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 * PNG
 * EMF
@@ -332,7 +351,11 @@ You can export the contents of the pivot chart to an image format for future arc
 
 #### Request
 
+<<<<<<< HEAD
 To export pivot chart in the PNG format, the service URL, file name and **“ej.PivotChart.ExportOptions.PNG”** enumeration value are set as parameters. This is similar to other image formats.
+=======
+To export the pivot chart in PNG format, the service URL, file name, and **“ej.PivotChart.ExportOptions.PNG”** enumeration value are set as parameters. This is similar to other image formats.
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 ##### JS
 
@@ -405,6 +428,10 @@ public void ImageExport()
 
 ##### Content-Type: application/octet-stream
 
+<<<<<<< HEAD
 ##### Response for PNG export:
+=======
+##### Response for PNG Export:
+>>>>>>> hotfix/hotfix-v15.4.0.20
 The browser will prompt a dialog box to save the PNG image.
 

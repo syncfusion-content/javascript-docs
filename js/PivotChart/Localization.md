@@ -12,9 +12,15 @@ api: /api/js/ejpivotchart
 
 ## Localization in pivot chart
 
+<<<<<<< HEAD
 You can localize the pivot chart controls text with a collection of localized strings by using the [`ej.PivotChart.Locale`](/api/js/ejpivotchart#members:locale) for different cultures. By default, the pivot chart control is localized in **“en-US”.**
 
 The following code example illustrates how to localize the pivot chart based on **“French”** culture:
+=======
+You can localize the pivot chart controls text with a collection of localized strings using [`ej.PivotChart.Locale`](/api/js/ejpivotchart#members:locale) for different cultures. By default, the pivot chart control is localized in **“en-US”.**
+
+The following code example illustrates the steps to localize the pivot chart based on the **“French”** culture.
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 {% highlight javascript %}
 
@@ -50,7 +56,11 @@ The following code example illustrates how to localize the pivot chart based on 
 
 {% endhighlight %}
 
+<<<<<<< HEAD
 Following table localizes the in-built keywords to **“French”** culture for the pivot chart:
+=======
+The following table localizes the in-built keywords to **“French”** culture for the pivot chart.
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 <table>
 <tr>
@@ -90,10 +100,17 @@ Exit</td><td>
 
 ## Localization and globalization of cube info (client mode)
 
+<<<<<<< HEAD
 The content displayed within the pivot chart control is obtained from the OLAP cube. The following are the steps that should be done to get the localized and globalized cube content.
 
 * To get the localized data from the OLAP cube, set the **"Locale Identifier"** in the connection string to a specific culture in the **"data"** property present in the **"dataSource"**.
 * To bind the globalized content in the pivot chart control, set the **"locale"** property to a specific culture and refer the specific culture file in the sample.
+=======
+The content displayed within the pivot chart control are obtained from the OLAP cube. The following are the steps that need to be done to get the localized and globalized cube content.
+
+* To get the localized data from the OLAP cube, you need to set the **"Locale Identifier"** in the connection string to a specific culture of the **"data"** property present in the **"dataSource"**. 
+* To bind the globalized content in the pivot chart control, you need to set the **"locale"** property to a specific culture and want to refer a specific culture file in the sample.
+>>>>>>> hotfix/hotfix-v15.4.0.20
  
 N> Culture files are present under **"[installed drive]:\Users\ [user name]\AppData\Local\Syncfusion\EssentialStudio\X.X.X.X\JavaScript\samples\web\scripts\cultures".** 
  
@@ -113,10 +130,17 @@ N> Culture files are present under **"[installed drive]:\Users\ [user name]\AppD
 
 ## Localization and globalization of cube info (server mode)
 
+<<<<<<< HEAD
 The content displayed within the pivot chart control is obtained from the OLAP cube. The following are the steps that should be done to get the localized and globalized cube content:
 
 * To get the localized string based on different cultures, set the **"Locale Identifier"** in the connection string to a specific culture in the OLAP cube. 
 * To bind the globalized content in the pivot chart control, you can set the **"Culture"** and **"OverrideDefaultFormatStrings"** properties in the OlapDataManager class to a specific culture.
+=======
+The content displayed within the pivot chart control are obtained from the OLAP cube. The following are the steps that need to be done to get the localized and globalized cube content.
+
+* To get the localized string based on different cultures, set the **"Locale Identifier"** in the connection string to a specific culture in the OLAP cube.
+* To bind the globalized content in the pivot chart control, set the **"Culture"** and **"OverrideDefaultFormatStrings"** properties in the OlapDataManager class to a specific culture.
+>>>>>>> hotfix/hotfix-v15.4.0.20
  
 {% highlight c# %}
 

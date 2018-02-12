@@ -17,7 +17,11 @@ The pivot chart control can be exported to the following file formats:
 * PDF
 * Image
 
+<<<<<<< HEAD
 The pivot chart control can be exported by invoking the [`exportPivotChart`](/api/js/ejpivotchart#methods:exportpivotchart) method with an appropriate export option as parameter.
+=======
+The pivot chart control can be exported by invoking the **“exportPivotChart”** method with an appropriate export option as parameter.
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 {% highlight html %}
 
@@ -56,7 +60,11 @@ The pivot chart control can be exported by invoking the [`exportPivotChart`](/ap
 
 {% endhighlight %}
 
+<<<<<<< HEAD
 When the pivot chart is rendered in the server mode, a service method should be added in the WCF/WebAPI for server-side operations.
+=======
+When the pivot chart is rendered in the server mode, a service method should be added to the WCF/WebAPI for server side operations.
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 For WebAPI controller, the following method should be added:
 
@@ -87,11 +95,19 @@ public void Export(System.IO.Stream stream) {
 
 ## Excel export
 
+<<<<<<< HEAD
 You can export the contents of the pivot chart to Excel document for future archival, references, and analysis purposes.
 
 ### Client mode
 
 To achieve Excel export, the service URL and the file name are set as parameter.
+=======
+You can export the contents of the pivot chart to an Excel document for future archival, references, and analysis purposes.
+
+### Client mode
+
+To achieve Excel export, the service URL and the file name are set as parameters.
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 {% highlight javascript %}
 
@@ -105,7 +121,11 @@ function exportBtnClick(args)
 
 ### Server mode
 
+<<<<<<< HEAD
 To achieve Excel export, you can add the following dependency libraries to the application:
+=======
+To achieve Excel export, you should add the following dependency libraries to the application:
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 * Syncfusion.Compression.Base
 * Syncfusion.XlsIO.Base
@@ -125,7 +145,11 @@ function exportBtnClick(args)
 
 ## Word export
 
+<<<<<<< HEAD
 You can export the contents of the pivot chart to Word document for future archival, references, and analysis purposes.
+=======
+You can export the contents of the pivot chart to a Word document for future archival, references, and analysis purposes.
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 ### Client mode
 
@@ -143,7 +167,11 @@ function exportBtnClick(args)
 
 ### Server mode
 
+<<<<<<< HEAD
  To achieve Word export, you can add the following dependency libraries to the application.
+=======
+ To achieve Word export, you need to add the following dependency libraries to the application:
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 * Syncfusion.Compression.Base
 * Syncfusion.DocIo.Base
@@ -181,7 +209,11 @@ function exportBtnClick(args)
 
 ### Server mode
 
+<<<<<<< HEAD
 To achieve PDF export, you should add the following dependency libraries to the application.
+=======
+To achieve PDF export, you need to add the following dependency libraries to the application:
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 * Syncfusion.Compression.Base
 * Syncfusion.Pdf.Base
@@ -211,7 +243,11 @@ You can export the contents of the pivot chart to image format for future archiv
 
 ### Client mode
 
+<<<<<<< HEAD
 To export the pivot chart in PNG format, the service URL, file name and **“ej.PivotChart.ExportOptions.PNG”** enumeration value are set as parameters. This is similar to other image formats.
+=======
+To export the pivot chart in PNG format, the service URL, the file name, and the **“ej.PivotChart.ExportOptions.PNG”** enumeration value are set as parameters. It is similar to other image formats.
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 {% highlight javascript %}
 
@@ -240,7 +276,11 @@ function exportBtnClick(args)
 
 ## Pivot chart - exporting format
 
+<<<<<<< HEAD
 I> This option is applicable only for the pivot chart specifically when exported to an Excel document.
+=======
+I> This option is applicable only for the pivot chart specifically when it is exported to an Excel document.
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 You can set an option to export the pivot chart to an Excel document, and you can export it as either an image or pivot chart format itself by setting the Boolean property `exportChartAsImage` in the `beforeExport` event.
 
@@ -260,13 +300,21 @@ N> By default, the pivot chart will be exported in image format to an Excel docu
         
  {% endhighlight %}
 
+<<<<<<< HEAD
 The following screenshot shows the control exported to the Excel document showing its own format (pivoting chart):
+=======
+The following screenshot illustrates the control exported to an Excel document by showing its own format (pivoting chart).
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 ![](Export_images/Export_ExcelChartClient.png)
 
 ## Exporting customization
 
+<<<<<<< HEAD
 You can add the title and description to the exporting document by using the title and description property obtained in the "beforeExport" event.
+=======
+You can add the title and description to the exporting document by using the title and description property in the "beforeExport" event.
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 N> The title and description cannot be added to image formats.
 
@@ -414,9 +462,15 @@ void htmlHelper_ExcelExport(object sender, Syncfusion.XlsIO.IWorkbook workBook)
 
 {% endhighlight %}
 
+<<<<<<< HEAD
 The name of the document can be customized as per the user's requirements.
 
 For client mode, you should set the file name as a parameter in the **“exportPivotChart”**  method along with the service URL.
+=======
+The name of the document can be customized per the user's requirements.
+
+For client mode, you can set the file name as a parameter in the **“exportPivotChart”** method along with the service URL.
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 {% highlight javascript %}
 
@@ -427,7 +481,11 @@ function exportBtnClick(args)
 }
 {% endhighlight %}    
 
+<<<<<<< HEAD
 For server mode, the exporting document name is provided in the WebAPI controller, as shown in the following code snippet:
+=======
+For server mode, the exporting document name is provided in the WebAPI controller as shown in the following code snippet:
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 {% highlight c# %}
 
@@ -441,7 +499,11 @@ public void Export() {
 
 {% endhighlight %}
 
+<<<<<<< HEAD
 For customizing names in the WCF service, the following code snippet is used:
+=======
+For customizing names in the WCF Service, the following code snippet is used:
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 {% highlight c# %}
 

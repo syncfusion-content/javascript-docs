@@ -10,9 +10,15 @@ api: /api/js/ejpivotchart
 
 # Getting started
 
+<<<<<<< HEAD
 ## Creating a simple application with pivot chart and OLAP data sources (client mode)
 
 This section covers the information required to populate a simple pivot chart with the [`OLAP`](/api/js/ejpivotchart#members:analysismode) data completely on the [`client-side`](/api/js/ejpivotchart#members:operationalmode).
+=======
+## Creating a simple application with the pivot chart and OLAP data sources (client mode)
+
+This section covers the information required to populate a simple pivot chart with OLAP data completely on the client-side.  
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 ### Scripts and CSS references
 
@@ -24,7 +30,11 @@ Create an HTML page and add scripts and style sheets that are required to render
 
 ### Initialize pivot chart
 
+<<<<<<< HEAD
 Place a "div" tag in the HTML page which acts as a container for the pivot chart widget. Then, initialize the widget by using the "ejPivotChart" method.
+=======
+Place a div tag in the HTML page which acts as a container for the pivot chart widget. Then, initialize the widget using the "ejPivotChart" method.
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 {% highlight html %}
 
@@ -51,7 +61,11 @@ Place a "div" tag in the HTML page which acts as a container for the pivot chart
 
 ### Populate pivot chart with data source
 
+<<<<<<< HEAD
 Initialize the [`OLAP`](/api/js/ejpivotchart#members:analysismode) data source for pivot chart widget as shown below:
+=======
+Initialize the OLAP data source for the pivot chart widget as shown below:
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 {% highlight html %}
 
@@ -96,6 +110,7 @@ The above code will generate a simple pivot chart showing internet sales amount 
 
 ![](Olap-Getting-Started_images/OlapClientMode.png) 
 
+<<<<<<< HEAD
 The following table will explain the [`OLAP`](/api/js/ejpivotchart#members:analysismode) [`datasource`](/api/js/ejpivotchart#members:datasource) properties at [`client-side`](/api/js/ejpivotchart#members:operationalmode) in detail:
 
 <table>
@@ -269,6 +284,23 @@ Now, you can set the “GettingStarted.html” as start-up page. To do so, right
 
 ### Scripts and CSS initialization
 The scripts and style sheets that are required to render a pivot chart widget in the HTML page are highlighted below in an appropriate order:
+=======
+## Creating a simple application with pivot chart and OLAP data source (server mode)
+
+This section covers the information required to create a simple pivot chart bound to the OLAP data source.
+
+N> This section is illustrated by creating a simple web application through the Visual Studio IDE since the pivot chart in server mode requires .NET dependency. The web application contains an HTML page and a service that will transfer data to server-side, process it, and return it client-side for control rendering. The service utilized for communication can be either WCF or WebAPI based on user requirement. Both are illustrated here for user convenience.
+
+### Project initialization
+Create a new **ASP.NET Empty Web Application** by using the Visual Studio IDE and name the project **“PivotChartDemo.”**
+
+Next, you should add an HTML page. To add an HTML page in your web application, right-click the project in the solution explorer and select **Add > New Item.** In the **Add New Item** window, select **HTML Page** and name it **“GettingStarted.html,”** and then click **Add.**
+
+Now, you can set the “GettingStarted.html” page as start-up page. To do so, right-click “GettingStarted.html” page and select **“Set As Start Page.”**
+
+### Scripts and CSS initialization
+The scripts and style sheets that are required to render a pivot chart widget in an HTML page are highlighted below in an appropriate order:
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 1. ej.web.all.min.css
 2. jQuery-3.0.0.min.js
@@ -283,7 +315,11 @@ CDN link: [Click here](https://help.syncfusion.com/js/cdn) to know more about sc
 NuGet package: [Click here](https://help.syncfusion.com/js/installation-and-deployment#configuring-syncfusion-nuget-packages) to know more about script and style sheets available in the NuGet package.
 
 ### Control initialization
+<<<<<<< HEAD
 To initialize a pivot chart widget, first you can define a “div” tag with an appropriate “id” attribute which acts as a container for the pivot chart widget. Then, you can initialize the widget by using the `ejPivotChart` method.
+=======
+To initialize a pivot chart widget, first you should define a div tag with an appropriate "id" attribute which acts as a container for the pivot chart widget. Then, you can initialize the widget by using the `ejPivotChart` method.
+>>>>>>> hotfix/hotfix-v15.4.0.20
     
 {% highlight html %}
 
@@ -316,11 +352,19 @@ To initialize a pivot chart widget, first you can define a “div” tag with an
 
 {% endhighlight %}
 
+<<<<<<< HEAD
 The [`url`](/api/js/ejpivotchart#members:url) property in the pivot chart widget points the service endpoint, where the data is processed and fetched in the form of JSON. The services used for the pivot chart widget as endpoint are WCF and WebAPI.
 
 N> The above "GettingStarted.html" contains WebAPI URL, which is **“/Olap”**. If you are using the WCF service, then the URL will look like **"/OlapService.svc"**. 
 
 Register the referenced assemblies in "Web.config" file available at the root of the application.
+=======
+The “url” property in the pivot chart widget points the service endpoint, where the data is processed and fetched in the form of JSON. The services used for the pivot chart widget as endpoint are WCF and WebAPI.
+
+N> The above "GettingStarted.html" page contains WebAPI URL, which is **“/Olap”**. If you are using the WCF service, then the URL will look like **"/OlapService.svc."**
+
+Register the referenced assemblies in the "Web.config" file at the root of the application.
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 {% highlight xml %}
 
@@ -347,6 +391,7 @@ Register the referenced assemblies in "Web.config" file available at the root of
 
 **Adding a WebAPI controller**
 
+<<<<<<< HEAD
 To add a WebAPI controller in your existing web application, right-click the project in the solution explorer and select **Add > New Item.** In the **Add New Item** window, select **WebAPI Controller Class** and name it “OlapController.cs,” and then click **Add.**
 
 Now, the WebAPI controller is added to your application, which, in-turn, comprises the following file. The utilization of this file will be explained in the following sections:
@@ -356,6 +401,17 @@ Now, the WebAPI controller is added to your application, which, in-turn, compris
 N> While adding the WebAPI controller class, add the mandatory suffix “Controller”. For example, in the demo, the controller is named “OlapController”.
 
 Next, remove all existing methods such as “Get”, “Post”, “Put”, and “Delete” present in the `OlapController.cs` file.
+=======
+To add a WebAPI controller in your existing web application, right-click the project in the solution explorer and select **Add > New Item.** In the **Add New Item** window, select **WebAPI Controller Class** and name it “OlapController.cs”, and then click **Add.**
+
+The WebAPI controller is added to your application, which, in-turn, comprises the following file. The utilization of this file will be explained in the following sections.
+ 
+* OlapController.cs
+
+N> While adding the WebAPI controller class, add the mandatory suffix “Controller.” For example, in the demo, the controller is named “OlapController”.
+
+Next, remove all the existing methods such as “Get”, “Post”, “Put”, and “Delete” that are present in the `OlapController.cs` file.
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 {% highlight c# %}
 
@@ -375,7 +431,11 @@ Next, you can add the below mentioned dependency libraries to your web applicati
 
 To add them to your web application, right-click **References** in the solution explorer and select **Add Reference.** In the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries are found. 
 
+<<<<<<< HEAD
 N> If you have installed any version of SQL Server Analysis Service (SSAS) or Microsoft ADOMD.NET utility, then the location of Microsoft.AnalysisServices.AdomdClient library is [system drive:\Program Files (x86)\Microsoft.NET\ADOMD.NET]. If you have installed any version of Essential Studio, then the location of Syncfusion libraries is [system drive:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\Assemblies].
+=======
+N> If you have installed any version of SQL Server Analysis Service (SSAS) or Microsoft ADOMD.NET utility, then the location of the Microsoft.AnalysisServices.AdomdClient library is [system drive:\Program Files (x86)\Microsoft.NET\ADOMD.NET]. If you have installed any version of Essential Studio, then the location of Syncfusion libraries is [system drive:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\Assemblies].
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 * Microsoft.AnalysisServices.AdomdClient
 * Syncfusion.Compression.Base
@@ -391,7 +451,11 @@ N> If you have installed any version of SQL Server Analysis Service (SSAS) or Mi
 
 **List of namespaces**
 
+<<<<<<< HEAD
 Following are the list of namespaces to be added on top of the main class in the `OlapController.cs` file:
+=======
+Following are the list of namespaces to be added on top of the main class in the `OlapController.cs` file.
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 {% highlight c# %}
 
@@ -411,7 +475,11 @@ namespace PivotChartDemo
 
 **Data source initialization**
 
+<<<<<<< HEAD
 Now, the connection string to connect [`OLAP`](/api/js/ejpivotchart#members:analysismode) cube and pivot chart instances is created immediately in the main class of the `OlapController.cs` file.
+=======
+The connection string to connect the OLAP cube and the pivot chart instances is created immediately in the main class of the `OlapController.cs` file.
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 {% highlight c# %}
 
@@ -429,7 +497,11 @@ namespace PivotChartDemo
 
 **Service methods in WebAPI controller**
 
+<<<<<<< HEAD
 Now, you can define the service methods in the OlapController class. To do this, find the `OlapController.cs` file which was created while adding the WebAPI controller class to your web application.
+=======
+You can define the service methods in the OlapController class. To do so, find the `OlapController.cs` file which was created while adding the WebAPI controller class to your web application.
+>>>>>>> hotfix/hotfix-v15.4.0.20
  
 {% highlight c# %}
 
@@ -493,7 +565,11 @@ namespace PivotChartDemo
 
 **Configure routing in global application class**
 
+<<<<<<< HEAD
 To add a Global.asax in your existing web application, right-click the project in the solution explorer and select **Add > New Item.** In the **Add New Item** window, select **Global Application Class** and name it “Global.asax”, and then click **Add.**
+=======
+To add a Global.asax to your existing web application, right-click the project in the solution explorer and select **Add > New Item.** In the **Add New Item** window, select **Global Application Class** and name it “Global.asax,” and then click **Add.**
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 After adding the **Global.asax** file, immediately add the namespace **“using System.Web.Http;”**, and then configure the routing as shown in the following code example:
 
@@ -513,12 +589,20 @@ public class Global : System.Web.HttpApplication
 
 {% endhighlight %}
 
+<<<<<<< HEAD
 Now, the pivot chart will be rendered with customer count over a period of fiscal years across different customer geographic locations.
+=======
+The pivot chart will be rendered with customer count over a period of fiscal years across different customer geographic locations.
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 ![](Olap-Getting-Started_images/ServerMode.png)
 
 ### WCF
+<<<<<<< HEAD
 This section demonstrates the utilization of the WCF service as endpoint binding the [`OLAP`](/api/js/ejpivotchart#members:analysismode) data source to a simple pivot chart. For more details on this topic, [click here](https://help.syncfusion.com/js/pivotchart/olap-connectivity#wcf).
+=======
+This section demonstrates the utilization of the WCF service as an endpoint binding the OLAP data source to the simple pivot chart. For more details on this topic, [click here](https://help.syncfusion.com/js/pivotchart/olap-connectivity#wcf).
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 
 

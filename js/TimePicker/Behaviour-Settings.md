@@ -295,3 +295,23 @@ In the **HTML** page, add a **&lt;input&gt;** element to configure **TimePicker*
     
 {% endhighlight %}
 
+##  Show PopupButton
+
+You can use **showPopupButton**  property to shows or hides the drop down button in TimePicker.
+
+{% highlight html %}
+
+    <input type="text" id="time" />
+
+{% endhighlight %}
+
+{% highlight javascript %}
+
+    // Use showPopupButton property for the TimePicker as follows.
+    $(function () {
+        $('#time').ejTimePicker({
+           showPopupButton : false
+        });
+    });
+    
+{% endhighlight %}

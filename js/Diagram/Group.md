@@ -18,6 +18,8 @@ Group is used to cluster multiple nodes and connectors into a single element. It
 
 You can add a group to the Diagram model through [nodes](/api/js/ejdiagram#members:nodes "nodes") collection. To define an object as group, set its [type](/api/js/ejdiagram#members:nodes-type "type") property as "group" and you need to add the child objects to the [children](/api/js/ejdiagram#members:nodes-children "children")  collection of the group. The following code illustrates how to create a group node.
 
+* The group's [canUngroup](/api/js/ejdiagram#members:nodes-canungroup "canUngroup") property is used to defines whether the group can be ungrouped or not.
+
 {% highlight javascript %}
 
 var nodes = [{
@@ -125,7 +127,7 @@ There are two types of containers available.
 * Canvas allows you to position its contained elements by using margin and alignment properties.
 * It allows elements to be either vertically or horizontally aligned.
 
-The [container](/api/js/ejdiagram#members:nodes-container "container") property of group should be defined and its [type](/api/js/ejdiagram#members:nodes-container-type "type") should be set as `canvas` to create a canvas panel. The following code illustrates how to add a canvas panel.
+The [container](/api/js/ejdiagram#members:nodes-container "container") property of group should be defined and its [type](/api/js/ejdiagram#members:nodes-container-type "type") should be set as `canvas` to create a canvas panel. Also, you can set an orientation as horizontal or vertical for canvas panel using nodes container [orientation](/api/js/ejdiagram#members:nodes-container-orientation "orientation") property. The following code illustrates how to add a canvas panel.
 
 {% highlight javascript %}
 
@@ -193,9 +195,22 @@ $("#DiagramContent").ejDiagram({
 ### Stack
 
 * Stack panel is used to arrange its children in a single line or stack order, either vertically or horizontally.
-* It controls spacing by setting margin properties of child and padding properties of group. By default, a Stack Panel’s [orientation](/api/js/ejdiagram#members:nodes-container-orientation "orientation") is vertical. 
 
-The [container](/api/js/ejdiagram#members:nodes-container "container") property of group should be defined and its [type](/api/js/ejdiagram#members:nodes-container-type "type") should be set as `stack` to create a canvas panel The following code illustrates how to add a stack panel.
+* It controls spacing by setting margin properties of child and padding properties of group. By default, a Stack Panel’s [orientation](/api/js/ejdiagram#members:nodes-container-orientation "orientation") is vertical.
+
+* The [container](/api/js/ejdiagram#members:nodes-container "container") property of group should be defined and its [type](/api/js/ejdiagram#members:nodes-container-type "type") should be set as `stack` to create a canvas panel.
+
+* The group's [paddingTop](/api/js/ejdiagram#members:nodes-paddingtop "paddingTop"), [paddingBottom](/api/js/ejdiagram#members:nodes-paddingbottom "paddingBottom"),[paddingLeft](/api/js/ejdiagram#members:nodes-paddingleft "paddingLeft") and [paddingRight](/api/js/ejdiagram#members:nodes-paddingright "paddingRight") properties allows you to controls the spacing around an children defined in the stack.
+		
+* The connector [marginTop](/api/js/ejdiagram#members:connectors-margintop "marginTop"), [marginBottom](/api/js/ejdiagram#members:connectors-marginbottom "marginBottom"),[marginLeft](/api/js/ejdiagram#members:connectors-marginleft "marginLeft") and [marginRight](/api/js/ejdiagram#members:connectors-marginright "marginRight") properties allows you to controls the spacing of the connector within the stack.
+
+* The nodes [marginTop](/api/js/ejdiagram#members:nodes-margintop "marginTop"), [marginBottom](/api/js/ejdiagram#members:nodes-marginbottom "marginBottom"),[marginLeft](/api/js/ejdiagram#members:nodes-marginleft "marginLeft") and [marginRight](/api/js/ejdiagram#members:nodes-marginright "marginRight")  properties allows you to controls the spacing of the connector within the stack.
+
+* The nodes [horizontalAlign](/api/js/ejdiagram#members:nodes-horizontalalign "horizontalAlign") and [verticalAlign](/api/js/ejdiagram#members:nodes-verticalalign "verticalAlign") properties are used to align the node on the container with set of predefined horizontal and vertical direction.
+
+* The connectors [horizontalAlign](/api/js/ejdiagram#members:connectors-horizontalalign "horizontalAlign") and [verticalAlign](/api/js/ejdiagram#members:connectors-verticalalign "verticalAlign") properties are used to align the connector on the container with set of predefined horizontal and vertical direction.
+
+The following code illustrates how to add a stack panel.
 
 {% highlight javascript %}
 

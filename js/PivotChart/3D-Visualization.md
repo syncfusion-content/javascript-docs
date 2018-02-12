@@ -10,17 +10,29 @@ api: /api/js/ejpivotchart
 
 # 3D visualization
 
+<<<<<<< HEAD
 The pivot chart control allows you to view the data in a 3D view. Following are the chart types that are supported:
+=======
+The pivot chart control allows you to view the data in a 3D view. The following are the chart types that are supported:
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 * Bar
 * Column
 * Stacking bar
+<<<<<<< HEAD
 * Stacking column
+=======
+* Stocking column
+>>>>>>> hotfix/hotfix-v15.4.0.20
 * Pie
 
 ## 3D column chart
 
+<<<<<<< HEAD
 The 3D column chart is rendered by specifying the chart type as **“Column”** in the **“type”** enumeration property of **“commonSeriesOptions”** and setting the [`enable3D`](/api/js/ejchart#members:enable3d) property to **“true”.**
+=======
+The 3D column chart is rendered by specifying the chart type to **“Column”** in the **“type”** enumeration property of **“commonSeriesOptions”** and setting the [`enable3D`](/api/js/ejchart#members:enable3d) property to **“true”.**
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 {% highlight javascript %}
 
@@ -42,7 +54,11 @@ The 3D column chart is rendered by specifying the chart type as **“Column”**
 
 ## 3D bar chart
 
+<<<<<<< HEAD
 The 3D bar chart is rendered by specifying the chart type as **“Bar”** in the **“type”** enumeration property of **“commonSeriesOptions”** and setting the  [`enable3D`](/api/js/ejchart#members:enable3d) property to **“true”.**
+=======
+The 3D bar chart is rendered by specifying the chart type to **“Bar”** in the **“type”** enumeration property of **“commonSeriesOptions”** and setting the  [`enable3D`](/api/js/ejchart#members:enable3d) property to **“true”.**
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 {% highlight javascript %}
 
@@ -63,7 +79,11 @@ The 3D bar chart is rendered by specifying the chart type as **“Bar”** in th
 ![](3D-Visualization_images/3DBarChart.png)
 
 ## 3D stacking bar chart
+<<<<<<< HEAD
 The 3D stacking bar chart is rendered by specifying the chart type as **“Stacking Bar”** in the **“type”** enumeration property of **“commonSeriesOptions”** and setting the [`enable3D`](/api/js/ejchart#members:enable3d) property to **“true”.**
+=======
+The 3D stacking bar chart is rendered by specifying the chart type to **“Stacking Bar”** in the **“type”** enumeration property of **“commonSeriesOptions”** and setting the [`enable3D`](/api/js/ejchart#members:enable3d) property to **“true”.**
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 {% highlight javascript %}
 
@@ -84,7 +104,11 @@ The 3D stacking bar chart is rendered by specifying the chart type as **“Stack
 ![](3D-Visualization_images/3DStackingBarChart.png)
 
 ## 3D stacking column chart
+<<<<<<< HEAD
 The 3D stacking column chart is rendered by specifying the chart type as **“Stacking Column”** in the **“type”** enumeration property of **“commonSeriesOptions”** and setting the [`enable3D`](/api/js/ejchart#members:enable3d) property to **“true”.**
+=======
+The 3D stacking column chart is rendered by specifying the chart type to **“Stacking Column”** in the **“type”** enumeration property of **“commonSeriesOptions”** and setting the [`enable3D`](/api/js/ejchart#members:enable3d) property to **“true”.**
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 {% highlight javascript %}
 
@@ -105,7 +129,11 @@ The 3D stacking column chart is rendered by specifying the chart type as **“St
 ![](3D-Visualization_images/3DStackingColumnChart.png)
 
 ## 3D pie chart
+<<<<<<< HEAD
 Th 3D pie chart is rendered by specifying the chart type as **"Pie"** in the **“type”** enumeration property of **“commonSeriesOptions”** and setting the [`enable3D`](/api/js/ejchart#members:enable3d) property to **“true”.**
+=======
+The 3D pie chart is rendered by specifying the chart type to **"Pie"** in the **“type”** enumeration property of **“commonSeriesOptions”** and setting the [`enable3D`](/api/js/ejchart#members:enable3d) property to **“true”.**
+>>>>>>> hotfix/hotfix-v15.4.0.20
 
 {% highlight javascript %}
 
