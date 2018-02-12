@@ -18,10 +18,6 @@ Legend is a control used to summarize the range of colors in HeatMap. This gives
 
 * You can set size for heatmap legend using [width](/api/js/ejheatmaplegend#members:width "width") and [height](/api/js/ejheatmaplegend#members:height "height") properties.
 
-* You can show/hide the cell label by using [showLabel](/api/js/ejheatmaplegend#members:showlabel "showLabel") property.
-
-* You can enable/disable responsive mode for heatmap legend by using [isResponsive](/api/js/ejheatmaplegend#members:isresponsive "isResponsive") property.
-
 {% highlight js %}
 
 var colorMappingCollection = [
@@ -42,6 +38,20 @@ $("#heatmap_legend").ejHeatMapLegend({
 Resultant legend will be like following image.
 
 ![](Legend_images/Legend_img1.png)
+
+### colorMapping of HeatMapLegend
+
+* The heatmap legend [color](/api/js/ejheatmaplegend#members:colormappingcollection-color "color") property is used to specify the color for heatmap data. The color will be set for lower and higher value.For any value between two values, a medium color will be automatically be chosen.
+
+* The heatmap legend [value](/api/js/ejheatmaplegend#members:colormappingcollection-value "value") property is used to specify the values for heatmap legend. If we specify a value as 0 and 100, the heatmap column is filled randomly with values between 0 to 100.
+
+* The heatmap legend [label](/api/js/ejheatmaplegend#members:colormappingcollection-label "label") can be customized with [bold](/api/js/ejheatmaplegend#members:colormappingcollection-label-bold "bold"), [italic](/api/js/ejheatmaplegend#members:colormappingcollection-label-italic "italic"), [text](/api/js/ejheatmaplegend#members:colormappingcollection-label-text "text"), [textDecoration](/api/js/ejheatmaplegend#members:colormappingcollection-label-textdecoration "textDecoration"), [fontSize](/api/js/ejheatmaplegend#members:colormappingcollection-label-fontsize "fontSize"), [fontFamily](/api/js/ejheatmaplegend#members:colormappingcollection-label-fontfamily "fontFamily") and [fontColor](/api/js/ejheatmaplegend#members:colormappingcollection-label-fontcolor "fontColor") properties.
+
+* The heatmap legend [showLabel](/api/js/ejheatmaplegend#members:showlabel "showLabel") property is used to show/hide the label.
+
+### Responsive
+
+The heatmap legend control has support for the responsive behavior based on client browser’s width and height. To enable responsive, [isResponsive](/api/js/ejheatmaplegend#members:isresponsive "isResponsive") property should be set as true.
  
 ## Legend Mode
 
