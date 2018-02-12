@@ -242,7 +242,7 @@ function exportBtnClick(args)
 
 I> This option is applicable only for the pivot chart specifically when exported to an Excel document.
 
-You can set an option to export the pivot chart to an Excel documen., and you can export it as either an image or pivot chart format itself by setting the Boolean property `exportChartAsImage` in the `beforeExport` event.
+You can set an option to export the pivot chart to an Excel document, and you can export it as either an image or pivot chart format itself by setting the Boolean property `exportChartAsImage` in the `beforeExport` event.
 
 N> By default, the pivot chart will be exported in image format to an Excel document.
 
