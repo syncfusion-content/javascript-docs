@@ -153,7 +153,7 @@ The above screen shot shows TreeGrid with `enableCaseSensitivity` set as false i
 
 ### Change filter mode for specific column
 
-In TreeGrid, it is provide the option for change the filter mode for specific column using [`filterType`](https://help.syncfusion.com/api/js/ejtreegrid#members:columns-filtertype "columns.filterType") property. Using this property we can either set `Menu` or `Excel` filter mode when [`filterType`](/api/js/ejtreegrid#members:filtersettings-filtertype "filterSettings.filterType") is `Menu` or `Excel`.
+TreeGrid provides option for changing the filter mode for specific column by using [`filterType`](https://help.syncfusion.com/api/js/ejtreegrid#members:columns-filtertype "columns.filterType") property. Using this property we can either set `Menu` or `Excel` filter mode when [`filterType`](/api/js/ejtreegrid#members:filtersettings-filtertype "filterSettings.filterType") property as `Menu` or `Excel`.
 
 The following code example show, how to change filter mode for specific column.
 
