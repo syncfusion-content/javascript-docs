@@ -293,3 +293,46 @@ The below code example shows how to define width and height for TreeGrid.
 {% endhighlight %}
 
 N> TreeGrid control will automatically update the width and height value based on container element on window resize action, this can be enabled by setting [`isResponsive`](/api/js/ejtreegrid#members:isresponsive) property as `true` for this [`height`](/api/js/ejtreegrid#members:sizesettings-height "sizeSettings.height") and [`width`](/api/js/ejtreegrid#members:sizesettings-width "sizeSettings.width") value will be defined in percentage.
+
+## Localization
+
+Localization is the process of customizing the User Interface (UI) based on a culture, specific to a particular country or region, in order to display regional data. The culture is represented by a unique string like en-US for US English and fr-FR for French.
+
+Localization is the key feature that provides solutions to global customers with the help of localized control. It is necessary to include the specific culture script files (ej.culture.fr-FR.min.js file for French culture) in the reference section, which is available in the following location.
+
+(installed location)\Syncfusion\Essential Studio\15.4.0.20\JavaScript\assets\scripts\i18n
+
+Also, it is possible to localize all the texts in the Gantt control with specific culture by referring to the ej.localetexts.fr-FR.min.js file which is available in the following location.
+
+(installed location)\Syncfusion\Essential Studio\15.4.0.20\JavaScript\assets\scripts\i10n
+
+Culture of the TreeGrid control can be defined by using [`locale`](https://help.syncfusion.com/api/js/ejtreegrid#members:locale) property. 
+
+The following code example explains how to localize the control in French culture.
+
+{% highlight html %}
+
+<head>
+    //…..
+    <script src="Scripts/ej.culture.fr-FR.min.js"></script>
+    <script src="Scripts/ej.localetexts.fr-FR.js"></script>
+    //...
+</head>
+
+<script type="text/javascript">
+    $(function() {
+        $("#TreeGridContainer").ejTreeGrid({
+            //... 
+            locale: "fr-FR"
+            //...
+        });
+
+    });
+</script>
+
+{% endhighlight %}
+
+![](/js/TreeGrid/Getting-Started_images/Getting-Started_img6.png)
+
+The above screenshot shows TreeGrid with `fr-FR` culture.
+{:.caption}
