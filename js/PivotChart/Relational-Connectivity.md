@@ -46,9 +46,9 @@ namespace PivotChartDemo
 
 **List of dependency libraries**
 
-Next, you should add the below mentioned dependency libraries to your web application. These libraries can be found in the GAC (Global Assembly Cache).
+Next, you can add the below-mentioned dependency libraries to your web application. These libraries can be found in the GAC (Global Assembly Cache).
  
-To add them to your web application, right-click **References** in the solution explorer and select **Add Reference**. Now, in the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries are found. 
+To add them to your web application, right-click **References** in the solution explorer and select **Add Reference**. In the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries are found. 
 
 N> If you have installed any version of Essential Studio, then the location of Syncfusion libraries is [system drive:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\Assemblies].
 
@@ -66,7 +66,7 @@ N> If you have installed any version of Essential Studio, then the location of S
 
 **List of namespaces**
 
-Following are the list of namespaces to be added on top of the main class in the `RelationalService.svc.cs` file.
+Following are the list of namespaces to be added on top of the main class in the `RelationalService.svc.cs` file:
 
 {% highlight c# %}
 
@@ -204,7 +204,7 @@ namespace PivotChartDemo
 
 **Service methods in WCF service**
 
-First, you can define the service methods in the IRelationalService interface, found in `IRelationalService.cs` file, created while adding the WCF service to your web application.
+First, you can define the service methods in the IRelationalService interface, find in the `IRelationalService.cs` file which was created while adding the WCF service to your web application.
 
 {% highlight c# %}
 
@@ -221,7 +221,7 @@ namespace PivotChartDemo
 }
 {% endhighlight %}
 
-Then, you can elaborate the service methods inside the main class, found in the `RelationalService.svc.cs` file.
+Then, you can elaborate the service methods in the main class, found in the `RelationalService.svc.cs` file.
 
 {% highlight c# %}
 
@@ -259,13 +259,17 @@ namespace PivotChartDemo
 }
 {% endhighlight %}
 
+N> The [`customObject`](../api/ejpivotchart#members:customobject) is utilized to pass additional information between the client-end and the service-end.
+
 **Configuring web configuration file**
 
-You can expose services through the properties such as binding, contract, and address by using an endpoint.
+You can expose the services through the properties such as binding, contract, and address by using an endpoint.
 
-1. contract: This property indicates that the contract of the endpoint is exposed. Refer to the `IRelationalService` contract, and it is written as `PivotChartDemo.IRelationalService`.
-2. binding: In your application, you can use `webHttpBinding` to post and receive the requests and responses between the client-end and the service.
+1. contract: This property indicates that the contract of the endpoint is exposed. Refer to the `IRelationalService` contract, and thus it is written as `PivotChartDemo.IRelationalService`.
+2. binding: In your application, you can use `webHttpBinding` to post and receive requests and responses between the client-end and the service.
 3. behaviorConfiguration: This property contains the name of the behavior to be used in the endpoint.
+ 
+The endpointBehaviors are illustrated as follows:
  
 The endpointBehaviors are illustrated in the following sample:
  

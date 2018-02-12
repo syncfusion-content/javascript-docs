@@ -54,7 +54,7 @@ $(function () {
 ![](Title_images/Title_img2.png) 
 
 ## Title customization
-By using the [`title`](/api/js/ejchart#members:title) property, you can add the title text for X-axis and Y-axis. Also, the title text can be customized by using the [`text`](/api/js/ejchart#members:title-text) and [`font`](/api/js/ejchart#members:title-font) properties. By setting the [`enableTrim`](/api/js/ejchart#members:primaryyaxis-enabletrim) property to true, the title text can be trimmed based on its length.
+By using the [`title`](/api/js/ejchart#members:title) property, you can add the title text for X-axis and Y-axis. The title text can be customized by using the [`text`](/api/js/ejchart#members:title-text) and [`font`](/api/js/ejchart#members:title-font) properties. By setting the [`enableTrim`](/api/js/ejchart#members:primaryyaxis-enabletrim) to true, the title text can be trimmed based on its length.
 
 {% highlight javascript %}
 

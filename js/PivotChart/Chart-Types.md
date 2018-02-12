@@ -10,7 +10,7 @@ api: /api/js/ejpivotchart
 
 # Chart types
 
-Essential **PivotChart JS** supports seventeen different types of chart as follows:
+Essential **PivotChart JS** supports 17 different types of charts as follows:
 
    * Column
    * Stacking column
@@ -248,7 +248,7 @@ The following screenshot displays the **pie chart**.
 
 ## Doughnut chart
 
-The **Doughnut chart** is used to summarize a set of categorical data which possesses a doughnut like structure that is divided into several segments. Each segment represents a particular category.
+The **doughnut chart** is used to summarize a set of categorical data which possesses a doughnut like structure that is divided into several segments. Each segment represents a particular category.
 
 {% highlight javascript %}
 
@@ -278,13 +278,13 @@ The **pyramid chart** type displays the data in the form of a triangle. It helps
     });
 {% endhighlight %}
 
-The following screen shot displays the **pyramid chart.**
+The following screenshot displays the **pyramid chart.**
 
 ![](Chart-Types_images/PyramidChart.png)
 
 ## Funnel chart
 
-The **funnel chart** type displays the data in the form of an inverted triangle. It helps you to visualize data in a hierarchical structure without any axes.
+The **funnel chart** type displays the data in the form of an inverted triangle. It helps you to visualize the data in a hierarchical structure without any axes.
 
 {% highlight javascript %}
 
@@ -296,7 +296,7 @@ The **funnel chart** type displays the data in the form of an inverted triangle.
     });
 {% endhighlight %}
 
-The following screen shot displays the **funnel chart.**
+The following screenshot displays the **funnel chart:**
 
 ![](Chart-Types_images/FunnelChart.png)
 
@@ -314,7 +314,7 @@ The **scatter chart** type displays the data as a collection of points correspon
     });
 {% endhighlight %}
 
-The following screen shot displays the **scatter chart.**
+The following screenshot displays the **scatter chart:**
 
 ![](Chart-Types_images/ScatterChart.png) 
 
@@ -332,7 +332,7 @@ The **bubble chart** type displays the data as a collection of bubbles.
     });
 {% endhighlight %}
 
-The following screen shot displays the **bubble chart.**
+The following screenshot displays the **bubble chart:**
 
 ![](Chart-Types_images/BubbleChart.png)
 
@@ -341,7 +341,7 @@ The following screen shot displays the **bubble chart.**
 A **combination chart** combines two or more series types in a single chart. But there are some limitations in the combination chart. They are:
 
    1. The combination chart cannot combine the column and bar series.
-   2. The pie chart cannot be used with other series types.
+   2. Th pie chart cannot be used with other series types.
 
 
 {% highlight javascript %}
