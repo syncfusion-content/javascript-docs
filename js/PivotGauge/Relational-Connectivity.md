@@ -15,22 +15,14 @@ This section demonstrates binding a collection to the pivot gauge control as dat
 
 If you are using the WebAPI controller, refer to the “Datasource Initialization” section under the following [link](https://help.syncfusion.com/js/pivotgauge/relational-getting-started#creating-a-simple-application-with-pivotgauge-and-relational-datasource-server-mode).
 
-<<<<<<< HEAD
 If you are using the WCF Service, refer to the "Datasource Initialization" section below:
-=======
-If you are using the WCF service, refer to the "Datasource Initialization" section below:
->>>>>>> hotfix/hotfix-v15.4.0.20
 
 ## WCF
 **Adding a WCF service**
 
 To add a WCF service in an existing web application, right-click the project in the solution explorer and select **Add > New Item**. In the **Add New Item** window, select **WCF Service** and name it **“RelationalService.svc,”** and then click **Add**.
 
-<<<<<<< HEAD
 The WCF service is added to your application, which, in-turn, comprises the following files. The utilization of these files will be explained in the immediate sections. 
-=======
-Now, the WCF service is added to your application, which, in-turn, comprises the following files. The utilization of these files will be explained in the immediate sections. 
->>>>>>> hotfix/hotfix-v15.4.0.20
 
 * RelationalService.svc
 * RelationalService.svc.cs
@@ -38,11 +30,7 @@ Now, the WCF service is added to your application, which, in-turn, comprises the
 
 **Configuring WCF service class**
 
-<<<<<<< HEAD
-Remove the “DoWork” method present in both `RelationalService.svc.cs` and `IRelationalService.cs` files. Next, add “AspNetCompatibilityRequirements” attribute on top of the main class present in the `RelationalService.svc.cs` file and set the **“RequirementsMode”** value to **“Allowed”**.
-=======
 Remove the “DoWork” method present in both `RelationalService.svc.cs` and `IRelationalService.cs` files. Next, add “AspNetCompatibilityRequirements” attribute on top of the main class that is present in the `RelationalService.svc.cs` file and set **RequirementsMode** value to **Allowed**.
->>>>>>> hotfix/hotfix-v15.4.0.20
 
 {% highlight c# %}
     
@@ -58,11 +46,7 @@ namespace PivotGaugeDemo
 
 **List of dependency libraries**
 
-<<<<<<< HEAD
-Next, you can add the below mentioned dependency libraries to your web application. These libraries can be found in the GAC (Global Assembly Cache).
-=======
 Next, you can add the below-mentioned dependency libraries to your web application. These libraries can be found in the GAC (Global Assembly Cache).
->>>>>>> hotfix/hotfix-v15.4.0.20
  
 To add them to your web application, right-click **References** in the solution explorer and select **Add Reference**. In the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries are found.
 
@@ -78,11 +62,7 @@ N> If you have installed any version of Essential Studio, then the location of S
 
 **List of namespaces**
 
-<<<<<<< HEAD
-Following are the list of namespaces to be added on top of the main class in the `RelationalService.svc.cs` file:
-=======
 Following is the list of namespaces to be added on top of the main class in the `RelationalService.svc.cs` file.
->>>>>>> hotfix/hotfix-v15.4.0.20
 
 {% highlight c# %}
 
@@ -235,11 +215,7 @@ namespace PivotGaugeDemo
 }
 {% endhighlight %}
 
-<<<<<<< HEAD
 Then, you can elaborate the service methods in the main class, found in the `RelationalService.svc.cs` file.
-=======
-Then, you can elaborate the service methods in the main class, which is found in the `RelationalService.svc.cs` file.
->>>>>>> hotfix/hotfix-v15.4.0.20
 
 {% highlight c# %}
 
@@ -271,28 +247,17 @@ namespace PivotGaugeDemo
 }
 {% endhighlight %}
 
-<<<<<<< HEAD
 N> The [`customObject`](../api/ejpivotgauge#members:customobject) is utilized to pass the additional information between the client-end and the service-end.
 
 **Configuring web configuration file**
 
 You can expose the services through the properties such as binding, contract, and address by using an endpoint.
 
-=======
-**Configuring web configuration file**
-
-You can expose the services through the properties such as binding, contract, and address by using an endpoint.
-
->>>>>>> hotfix/hotfix-v15.4.0.20
 1. Contract: This property indicates that the contract of the endpoint is exposed. Refer to the `IRelationalService` contract, and thus it is `PivotGaugeDemo.IRelationalService`.
 2. Binding: In your application, you can use `webHttpBinding` to post and receive requests and responses between the client-end and the service.
 3. behaviorConfiguration: This property contains the name of the behavior to be used in the endpoint.
  
-<<<<<<< HEAD
-The endpointBehaviors are illustrated as follows:
-=======
 The endpointBehaviors are illustrated in the following sample:
->>>>>>> hotfix/hotfix-v15.4.0.20
  
 {% highlight xml %}
 
@@ -326,11 +291,7 @@ The endpointBehaviors contain all behaviors for an endpoint. You can link each e
 
 {% endhighlight %}
 
-<<<<<<< HEAD
 N> In this example, the **“PivotGaugeDemo”** indicates the name and root namespace of the web application that is created in the Visual Studio IDE, and the **“RelationalService”** indicates the name of the created WCF service.
-=======
-N> In this example, the **PivotGaugeDemo** indicates the name and root namespace of the web application created in the Visual Studio IDE, and **RelationalService** indicates the name of the created WCF service.
->>>>>>> hotfix/hotfix-v15.4.0.20
 
 Now, the pivot gauge will be rendered with sales amount as shown in the following image:
 

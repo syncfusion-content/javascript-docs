@@ -12,11 +12,7 @@ api: /api/js/ejpivotgauge
 
 ## Adding custom label collection
 
-<<<<<<< HEAD
 The `customLabels` collection can be directly added to the scales option within the pivot gauge widget as an array.
-=======
-A `customLabels` collection can be directly added to the scales option within the pivot gauge widget as an array.
->>>>>>> hotfix/hotfix-v15.4.0.20
 
 {% highlight javascript %}
 
@@ -72,11 +68,7 @@ The appearance of the custom labels can be changed through the following propert
 
 ## Multiple custom labels
 
-<<<<<<< HEAD
 Multiple custom labels can be set to a pivot gauge widget by adding an array of objects within the `customLabels` option.
-=======
-Multiple custom labels can be set to the pivot gauge widget by adding an array of objects within the `customLabels` option.
->>>>>>> hotfix/hotfix-v15.4.0.20
 
 {% highlight javascript %}
 

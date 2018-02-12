@@ -74,11 +74,7 @@ To get the localized string based on different cultures, set the **"Locale Ident
 
 {% endhighlight %}
 
-<<<<<<< HEAD
-In server mode, you should set **"Culture"** and **"OverrideDefaultFormatStrings"** properties in the OlapDataManager class to a specific culture along with the setting **"Locale Identifier"** in connection string.
-=======
 In server mode, you should set **"Culture"** and **"OverrideDefaultFormatStrings"** properties in OlapDataManager class to a specific culture along with the setting **"Locale Identifier"** in the connection string.
->>>>>>> hotfix/hotfix-v15.4.0.20
 
 {% highlight C# %}
 

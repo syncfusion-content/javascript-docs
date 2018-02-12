@@ -19,19 +19,11 @@ You can customize the format of labels that are displayed in the pivot gauge con
 Following are the formats that can be applied to labels in the pivot gauge:
 
 * [`numberFormat`](/api/js/ejpivotgauge#members:labelformatsettings-numberformat) - Allows you to change the number format of label values in the pivot gauge.
-<<<<<<< HEAD
-* [`decimalPlaces`](/api/js/ejpivotgauge#members:labelformatsettings-decimalplaces) - Allows you to set the number of digits displayed after the decimal point.
-* [`prefixText `](/api/js/ejpivotgauge#members:labelformatsettings-prefixtext) - Allows you to add a text at the beginning of the label.
-* [`suffixText `](/api/js/ejpivotgauge#members:labelformatsettings-suffixtext) - Allows you to add a text at the end of the label.
-
-Number format for label values can be set to any of the following types:
-=======
 * [`decimalPlaces`](/api/js/ejpivotgauge#members:labelformatsettings-decimalplaces) - Allows you to set the number of digits that are displayed after the decimal point.
 * [`prefixText `](/api/js/ejpivotgauge#members:labelformatsettings-prefixtext) - Allows you to add a text at the beginning of the label.
 * [`suffixText `](/api/js/ejpivotgauge#members:labelformatsettings-suffixtext) - Allows you to add a text at the end of the label.
 
 The number format for label values can be set to any of the following types:
->>>>>>> hotfix/hotfix-v15.4.0.20
 
 * Default	
 * Currency

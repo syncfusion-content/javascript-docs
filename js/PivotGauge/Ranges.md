@@ -41,11 +41,7 @@ The appearance of the range can be customized through the following properties:
 * **placement** – sets the position of the range.
 * **distanceFromScale** – sets the distance between the range and the scale.
 
-<<<<<<< HEAD
-The position of the range can be set through the `placement` or `distanceFromScale` property. 
-=======
 The position of the range can be set through the `placement` or `distanceFromScale` property.
->>>>>>> hotfix/hotfix-v15.4.0.20
 
 N> By default, the placement takes the value "near", whereas other enumeration values available are "far" and "center".
 
@@ -87,15 +83,9 @@ N> By default, the placement takes the value "near", whereas other enumeration v
 
 ![](Ranges_images/AppearanceCustomization.png) 
 
-<<<<<<< HEAD
-N> By setting both the position properties - "distanceFromScale" and "placement" for a range, the preference is given to the value that is set in the "distanceFromScale" property.
-
-## Multiple ranges 
-=======
 N> When you set both the position properties - "distanceFromScale" and "placement" for a range, the preference is given to the value that is set in the "distanceFromScale" property.
 
 ## Multiple ranges
->>>>>>> hotfix/hotfix-v15.4.0.20
 Multiple ranges can be added by placing an array of objects in the `ranges` option.
 
 {% highlight javascript %}

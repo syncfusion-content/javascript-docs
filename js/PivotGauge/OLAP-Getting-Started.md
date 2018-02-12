@@ -12,11 +12,7 @@ api: /api/js/ejpivotgauge
 
 ## Creating a simple application with pivot gauge and OLAP data sources (client mode)
 
-<<<<<<< HEAD
 This section covers the information required to populate a simple pivot gauge with the [`OLAP`](/api/js/ejpivotgauge#members:analysismode) data completely on the [`client-side`](/api/js/ejpivotgauge#members:operationalmode).
-=======
-This section covers the information required to populate a simple pivot gauge with OLAP data completely on the client-side.
->>>>>>> hotfix/hotfix-v15.4.0.20
 
 ### Scripts and CSS references
 
@@ -28,11 +24,7 @@ Create an HTML page and add scripts and style sheets that are required to render
 
 ### Initialize pivot gauge
 
-<<<<<<< HEAD
 Place a "div" tag in the HTML page which acts as a container for the pivot gauge widget. Then, initialize the widget by using the "ejPivotGauge" method.
-=======
-Place a div tag in the HTML page which acts as a container for the pivot gauge widget. Then, initialize the widget by using the "ejPivotGauge" method.
->>>>>>> hotfix/hotfix-v15.4.0.20
 
 {% highlight html %}
 
@@ -59,11 +51,7 @@ Place a div tag in the HTML page which acts as a container for the pivot gauge w
 
 ### Populate pivot gauge with data source
 
-<<<<<<< HEAD
 Initialize the [`OLAP`](/api/js/ejpivotgauge#members:analysismode) data source for the pivot gauge widget by using the **dataSource** property.
-=======
-Initialize the OLAP data source for the pivot gauge widget by using the **dataSource** property.
->>>>>>> hotfix/hotfix-v15.4.0.20
 
 {% highlight html %}
 
@@ -191,7 +179,6 @@ The above code will generate a series of gauges for all countries as shown below
 
 ![](OLAP-Getting-Started_images/ClientMode.png)
 
-<<<<<<< HEAD
 The following table will explain the [`OLAP`](/api/js/ejpivotgauge#members:analysismode) [`datasource`](/api/js/ejpivotgauge#members:datasource) properties at [`client-side`](/api/js/ejpivotgauge#members:operationalmode) in detail:
 
 <table>
@@ -339,32 +326,16 @@ The following table will explain the [`OLAP`](/api/js/ejpivotgauge#members:analy
 This section covers the information required to create a simple pivot gauge that is bound to the [`OLAP`](/api/js/ejpivotgauge#members:analysismode) data source from the [`server-side`](/api/js/ejpivotgauge#members:operationalmode).
 
 N> This section is illustrated by creating a simple web application through the Visual Studio IDE since the pivot gauge in the server mode requires .NET dependency. The web application contain an HTML page and a service that will transfer the data to the [`server-side`](/api/js/ejpivotgauge#members:operationalmode), process it, and return it to the [`client-side`](/api/js/ejpivotgauge#members:operationalmode) for control rendering. The service utilized for communication can be WCF or WebAPI based on user requirement. Here, both are illustrated for user convenience.
-=======
-## Creating a simple application with pivot gauge and OLAP data source (server mode)
-
-This section covers the information required to create a simple pivot gauge bound to OLAP data source from the server-side.
-
-N> This section is illustrated by creating a simple web application through the Visual Studio IDE, since the pivot gauge in the server mode requires .NET dependency. The web application contains an HTML page and a service that will transfer data to server-side, process it, and return it to the client-side for control rendering. The service utilized for communication can be either WCF or WebAPI based on user requirements. Here, both are illustrated for user convenience.
->>>>>>> hotfix/hotfix-v15.4.0.20
 
 ### Project initialization
 Create a new **ASP.NET Empty Web Application** by using the Visual Studio IDE and name the project **“PivotGaugeDemo”**.
 
-<<<<<<< HEAD
-Next, you can add an HTML page. To add an HTML page in your web application, right-click the project in the solution explorer and select **Add > New Item.** In the **Add New Item** window, select **HTML Page** and name it **“GettingStarted.html,”** and then click **Add.**
-
-Now, you can set the “GettingStarted.html” page as start-up page. To do so, right-click the “GettingStarted.html” page and select **“Set As Start Page”**.
-
-### Scripts and CSS initialization
-The scripts and style sheets that are required to render a pivot gauge widget in the HTML page are highlighted below in an appropriate order:
-=======
 Next, you should add an HTML page. To add an HTML page in your web application, right-click the project in the solution explorer and select **Add > New Item.** In the **Add New Item** window, select **HTML Page** and name it **“GettingStarted.html”** page, and then click **Add.**
 
 Now, you can set “GettingStarted.html” as start-up page. To do so, right-click the “GettingStarted.html” page and select **“Set As Start Page”**.
 
 ### Scripts and CSS initialization
 The scripts and style sheets that are required to render a pivot gauge widget in an HTML page are highlighted below in an appropriate order:
->>>>>>> hotfix/hotfix-v15.4.0.20
 
 1. ej.web.all.min.css
 2. jQuery-3.0.0.min.js
@@ -376,17 +347,10 @@ Local disk: [Click here](https://help.syncfusion.com/js/installation-and-deploym
 
 CDN link: [Click here](https://help.syncfusion.com/js/cdn) to know more about script and style sheets available in online.
 
-<<<<<<< HEAD
 NuGet package: [Click here](https://help.syncfusion.com/js/installation-and-deployment#configuring-syncfusion-nuget-packages) to know more about script and style sheets available in the NuGet package. 
 
 ### Control initialization
 To initialize a pivot gauge widget, first you can define a “div” tag with an appropriate “id” attribute which acts as a container for the pivot gauge widget. Then, you can initialize the widget by using the `ejPivotGauge` method.
-=======
-NuGet package: [Click here](https://help.syncfusion.com/js/installation-and-deployment#configuring-syncfusion-nuget-packages) to know more about script and style sheets available in the NuGet package.
-
-### Control initialization
-To initialize a pivot gauge widget, first you can define a div tag with an appropriate “id” attribute which acts as a container for the pivot gauge widget. Then, you can initialize the widget by using the `ejPivotGauge` method.
->>>>>>> hotfix/hotfix-v15.4.0.20
     
 {% highlight html %}
 
@@ -486,21 +450,14 @@ To initialize a pivot gauge widget, first you can define a div tag with an appro
 
 {% endhighlight %}
 
-<<<<<<< HEAD
 The [`url`](../api/ejpivotgauge#members:url) property in the pivot gauge widget points the service endpoint, where the data is processed and fetched in the form of JSON. The services used for the pivot gauge widget as endpoint are WCF and WebAPI.
 
 N> The above "GettingStarted.html" contains WebAPI [`url`](../api/ejpivotgauge#members:url), which is **“/Olap”**. If you are using the WCF service, then the [`url`](../api/ejpivotgauge#members:url) will look like **"/OlapService.svc"**.
-=======
-The `url` property in the pivot gauge widget points the service endpoint, where the data is processed and fetched in the form of JSON. The services used for the pivot gauge widget as endpoint are WCF and WebAPI.
-
-N> The above "GettingStarted.html" contains WebAPI URL, which is **“/Olap”**. If you are using the WCF service, then the URL will look like **"/OlapService.svc"**.
->>>>>>> hotfix/hotfix-v15.4.0.20
 
 ### WebAPI
 
 **Adding a WebAPI controller**
 
-<<<<<<< HEAD
 To add a WebAPI controller in your existing web application, right-click the project in the solution explorer and select **Add > New Item.** In the **Add New Item** window, select **WebAPI Controller Class** and name it “OlapController.cs,” and then click **Add.**
 
 The WebAPI controller is added to your application, which, in-turn, comprises the following file. The utilization of this file will be explained in the following sections:
@@ -510,17 +467,6 @@ The WebAPI controller is added to your application, which, in-turn, comprises th
 N> While adding the WebAPI controller class, add the mandatory suffix “Controller”. For example, in the demo, the controller is named “OlapController”.
 
 Next, remove all existing methods such as “Get”, “Post”, “Put”, and “Delete” present in the `OlapController.cs` file.
-=======
-To add a WebAPI controller in your existing web application, right-click the project in the solution explorer and select **Add > New Item.** In the **Add New Item** window, select **WebAPI Controller Class** and name it “OlapController.cs”, and then click **Add.**
-
-Now, the WebAPI controller is added to your application, which, in-turn, comprises the following file. The utilization of this file will be explained in the following sections:
- 
-* OlapController.cs
-
-N> While adding the WebAPI controller class, add the mandatory suffix “Controller”. For example, in the demo, the controller is named as “OlapController”.
-
-Next, remove all the existing methods such as “Get”, “Post”, “Put”, and “Delete” present in the `OlapController.cs` file.
->>>>>>> hotfix/hotfix-v15.4.0.20
 
 {% highlight c# %}
 
@@ -536,15 +482,9 @@ namespace PivotGaugeDemo
 
 **List of dependency libraries**
 
-<<<<<<< HEAD
 Next, you can add the below-mentioned dependency libraries to your web application. These libraries can be found in the GAC (Global Assembly Cache).
 
 To add them to your web application, right-click **References** in the solution explorer and select **Add Reference.** In the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries are found. 
-=======
-Next, you can add the below mentioned dependency libraries to your web application. These libraries can be found in the GAC (Global Assembly Cache).
-
-To add them to your web application, right-click **References** in the solution explorer and select **Add Reference.** Now, in the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries are found.
->>>>>>> hotfix/hotfix-v15.4.0.20
 
 N> If you have installed any version of SQL Server Analysis Service (SSAS) or Microsoft ADOMD.NET utility, then the location of Microsoft.AnalysisServices.AdomdClient library is [system drive:\Program Files (x86)\Microsoft.NET\ADOMD.NET]. If you have installed any version of Essential Studio, then the location of Syncfusion libraries is [system drive:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\Assemblies].
 
@@ -577,15 +517,9 @@ namespace PivotGaugeDemo
 
 {% endhighlight %}
 
-<<<<<<< HEAD
-**Datasource initialization**
-
-Now, the connection string to connect the [`OLAP`](/api/js/ejpivotgauge#members:analysismode) cube and pivot gauge instances are created immediately in the main class of the `OlapController.cs` file.
-=======
 **Data source initialization**
 
 Now, the connection string to connect the OLAP cube and the pivot gauge instances is created immediately in the main class of the `OlapController.cs` file.
->>>>>>> hotfix/hotfix-v15.4.0.20
 
 {% highlight c# %}
 
@@ -603,11 +537,7 @@ namespace PivotGaugeDemo
 
 **Service methods in WebAPI controller**
 
-<<<<<<< HEAD
-Now, you can define the service methods in the OlapController class. To do this, find the `OlapController.cs` file which was created while adding the WebAPI controller class to your web application.
-=======
 Now, you can define the service methods in the OlapController class, find in the `OlapController.cs` file which was created while adding the WebAPI controller class to your web application.
->>>>>>> hotfix/hotfix-v15.4.0.20
  
 {% highlight c# %}
 
@@ -687,11 +617,7 @@ Now, the pivot gauge will be rendered with the provided data as shown below:
 ![](Olap-Getting-Started_images/ServerMode.png)
 
 ### WCF
-<<<<<<< HEAD
 This section demonstrates the utilization of the WCF service as endpoint binding the [`OLAP`](/api/js/ejpivotgauge#members:analysismode) data source to a simple pivot gauge. For more details on this topic, [click here](https://help.syncfusion.com/js/pivotgauge/olap-connectivity#wcf).
-=======
-This section demonstrates the utilization of WCF service as endpoint binding the OLAP data source to a simple pivot gauge. For more details on this topic, [click here](https://help.syncfusion.com/js/pivotgauge/olap-connectivity#wcf).
->>>>>>> hotfix/hotfix-v15.4.0.20
 
 
 
