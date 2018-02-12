@@ -41,11 +41,11 @@ Resultant legend will be like following image.
 
 ### colorMapping of HeatMapLegend
 
-* The heatmap legend [color](/api/js/ejheatmaplegend#members:colormappingcollection-color "color") property is used to specify the color for heatmap data. The color will be set for lower and higher value.For any value between two values, a medium color will be automatically be chosen.
+* The heatmap legend [color](/api/js/ejheatmaplegend#members:colormappingcollection-color "color") property is used to specify the color for starting range of heatmap datasource.
 
-* The heatmap legend [value](/api/js/ejheatmaplegend#members:colormappingcollection-value "value") property is used to specify the values for heatmap legend. If we specify a value as 0 and 100, the heatmap column is filled randomly with values between 0 to 100.
+* The heatmap legend [value](/api/js/ejheatmaplegend#members:colormappingcollection-value "value") property is used to specify the values for starting range of heatmap datasource.
 
-* The heatmap legend [label](/api/js/ejheatmaplegend#members:colormappingcollection-label "label") can be customized with [bold](/api/js/ejheatmaplegend#members:colormappingcollection-label-bold "bold"), [italic](/api/js/ejheatmaplegend#members:colormappingcollection-label-italic "italic"), [text](/api/js/ejheatmaplegend#members:colormappingcollection-label-text "text"), [textDecoration](/api/js/ejheatmaplegend#members:colormappingcollection-label-textdecoration "textDecoration"), [fontSize](/api/js/ejheatmaplegend#members:colormappingcollection-label-fontsize "fontSize"), [fontFamily](/api/js/ejheatmaplegend#members:colormappingcollection-label-fontfamily "fontFamily") and [fontColor](/api/js/ejheatmaplegend#members:colormappingcollection-label-fontcolor "fontColor") properties.
+* You can place a text for heatmap legeng using [label](/api/js/ejheatmaplegend#members:colormappingcollection-label "label") [text](/api/js/ejheatmaplegend#members:colormappingcollection-label-text "text") property and text can be customized with [bold](/api/js/ejheatmaplegend#members:colormappingcollection-label-bold "bold"), [italic](/api/js/ejheatmaplegend#members:colormappingcollection-label-italic "italic"), , [textDecoration](/api/js/ejheatmaplegend#members:colormappingcollection-label-textdecoration "textDecoration"), [fontSize](/api/js/ejheatmaplegend#members:colormappingcollection-label-fontsize "fontSize"), [fontFamily](/api/js/ejheatmaplegend#members:colormappingcollection-label-fontfamily "fontFamily") and [fontColor](/api/js/ejheatmaplegend#members:colormappingcollection-label-fontcolor "fontColor") properties.
 
 * The heatmap legend [showLabel](/api/js/ejheatmaplegend#members:showlabel "showLabel") property is used to show/hide the label.
 
