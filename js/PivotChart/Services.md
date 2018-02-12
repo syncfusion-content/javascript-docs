@@ -11,7 +11,7 @@ api: /api/js/ejpivotchart
 
 # ejPivotChart
 
-The pivot chart widget is a lightweight control that reads both OLAP and relational data source and visualizes it in a graphical format with the ability to drill up and down. The pivot chart uses services to initialize and operate the widget and also to export the pivot chart to a Microsoft Excel, Microsoft Word, PDF, or image document.
+The pivot chart widget is a lightweight control that reads both OLAP and relational data sources and visualizes it in a graphical format with the ability to drill up and down. The pivot chart uses services to initialize and operate the widget and also to export the pivot chart to a Microsoft Excel, Microsoft Word, PDF, or image document.
 
 ## WCF/WebAPI service to populate pivot chart
 You can populate a simple pivot chart with the OLAP/relational data completely from the server-side using the WCF/WebAPI service. You can refer the **Getting Started** document available in the following UG documentation section.

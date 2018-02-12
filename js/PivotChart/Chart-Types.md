@@ -104,7 +104,7 @@ The following screenshot displays the **stacking bar chart**:
 
 ## Line chart
 
-The **line chart** joins the data points on a plot by using straight lines that show trends in data at equal intervals.
+The **line chart** joins the data points on a plot by using straight lines that show trends in the data at equal intervals.
 
 {% highlight javascript %}
 
@@ -176,7 +176,7 @@ The following screenshot displays the **area chart**:
 
 ## Step area chart
 
-The **step area** chart is similar to the regular area chart except for a straight line tracing the shortest path between the data points. The values are connected by continuous vertical and horizontal lines forming a step like progression.
+The **step area** chart is similar to the regular area chart except for a straight line tracing the shortest path between the data points. The values are connected by continuous vertical and horizontal lines to form a step like progression.
 
 {% highlight javascript %}
 
@@ -278,7 +278,7 @@ The **pyramid chart** type displays the data in the form of a triangle. It helps
     });
 {% endhighlight %}
 
-The following screen shot displays the **Pyramid Chart.**
+The following screenshot displays the **pyramid chart.**
 
 ![](Chart-Types_images/PyramidChart.png)
 

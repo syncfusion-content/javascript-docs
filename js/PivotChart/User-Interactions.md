@@ -13,7 +13,7 @@ api: /api/js/ejpivotchart
 ## Tooltip
 
 ### Enable tooltip for data points
-Tooltip for the data points can be enabled by using the **"visible"** option of the [`tooltip`](/api/js/ejchart#members:commonseriesoptions-tooltip-visible) property under the [`commonSeriesOptions`](/api/js/ejpivotchart#members:commonseriesoptions) of the pivot chart.
+Tooltip for the data points can be enabled by using the **"visible"** option of the [`tooltip`](/api/js/ejchart#members:commonseriesoptions-tooltip-visible) property under the [`commonSeriesOptions`](/api/js/ejpivotchart#members:commonseriesoptions) in the pivot chart.
 
 {% highlight javascript %}
 $(function()
@@ -110,7 +110,7 @@ $(function()
 ![](User-Interactions_images/tooltipcustomization.png) 
 
 ### Tooltip with rounded corners
-The tooltip properties, [`rx`](/api/js/ejchart#members:commonseriesoptions-tooltip-rx) and [`ry`](/api/js/ejchart#members:commonseriesoptions-tooltip-ry) are used to customize its corner radius.
+The tooltip properties [`rx`](/api/js/ejchart#members:commonseriesoptions-tooltip-rx) and [`ry`](/api/js/ejchart#members:commonseriesoptions-tooltip-ry) are used to customize its corner radius.
 
 {% highlight javascript %}
 
@@ -144,8 +144,8 @@ $(function()
 
 There are two ways to zoom the chart:
 
-* When [`zooming.enable`](/api/js/ejchart#members:zooming-enable) option is set to true, you can zoom the chart by using the rubber band selection.
-* When the [`zooming.enableMouseWheel`](/api/js/ejchart#members:zooming-enablemousewheel) option is set to true, you can zoom the chart by scrolling the mouse wheel.
+* When [`zooming.enable`](/api/js/ejchart#members:zooming-enable) is set to true, you can zoom the chart by using the rubber band selection.
+* When the [`zooming.enableMouseWheel`](/api/js/ejchart#members:zooming-enablemousewheel) is set to true, you can zoom the chart by scrolling the mouse wheel.
 
 {% highlight javascript %}
 
@@ -167,14 +167,14 @@ $(function()
 
 ![](User-Interactions_images/zooming.png) 
 
-After zooming the chart, a zooming toolbar will appear with options to *zoom, pan, and reset*. Selecting the **“Pan”** option will allow you to view the chart and selecting the **“Reset”** option will reset the zoomed chart.
+After zooming the chart, a zooming toolbar will appear with options to *zoom, pan, and reset*. Selecting the **“Pan”** option will allow you to view the chart and selecting **“Reset”** will reset the zoomed chart.
 
 ![](User-Interactions_images/pan.png) 
 
 ### Types of zooming
-You can zoom the particular axis like horizontal axis or vertical axis or both axis by using the [`type`](/api/js/ejchart#members:zooming-type) option in the zooming.
+You can zoom a particular axis like horizontal axis or the vertical axis or both axes by using the [`type`](/api/js/ejchart#members:zooming-type) in the zooming.
 
-N> By default, the value for the `type` option in zooming is “x,y” (indicating both axis) in the pivot chart.
+N> By default, the value for the `type` in zooming is “x,y” (indicating both axes) in the pivot chart.
 
 {% highlight javascript %}
 
@@ -197,7 +197,7 @@ $(function()
 
 ### Enable scrollbar
 
-* When [`enableScrollbar`](/api/js/ejpivotchart#members:zooming-enablescrollbar) option is set to true under [`zooming`](/api/js/ejpivotchart#members:zooming), the pivot chart is rendered along with the scroll bars for precise view of the data. The data can be viewed by using the scroll bar or by scrolling the mouse wheel.
+* When [`enableScrollbar`](/api/js/ejpivotchart#members:zooming-enablescrollbar) is set to true under [`zooming`](/api/js/ejpivotchart#members:zooming), the pivot chart is rendered along with the scroll bars for a precise view of the data. The data can be viewed by using the scroll bar or by scrolling the mouse wheel.
 
 {% highlight javascript %}
 
@@ -222,7 +222,7 @@ $(function()
 ## Marker and crosshair
 
 ### Marker shape customization
-In pivot chart, you can customize the marker [`shape`](/api/js/ejchart#members:series-marker-shape) with the following symbols:
+In the pivot chart, you can customize the marker [`shape`](/api/js/ejchart#members:series-marker-shape) with the following symbols:
 
 * Rectangle
 * Circle
@@ -260,7 +260,7 @@ function onSeriesRender(args)
 ![](User-Interactions_images/marker.png) 
 
 ### Enable crosshair and crosshair label
-The crosshair helps you to view the value at mouse position or touch contact point. The crosshair can be enabled by using the [`visible`](/api/js/ejchart#members:crosshair-visible) option in [`crosshair`](/api/js/ejchart#members:crosshair) property. The crosshair label can be enabled by using the **“visible”** option in the [`crosshairLabel`](/api/js/ejchart#members:primaryxaxis-crosshairlabel) property within its corresponding axis.
+The crosshair allows you to view values at mouse position or touch contact point. The crosshair can be enabled by using the [`visible`](/api/js/ejchart#members:crosshair-visible) option in [`crosshair`](/api/js/ejchart#members:crosshair) property. The crosshair label can be enabled by using the **“visible”** option in the [`crosshairLabel`](/api/js/ejchart#members:primaryxaxis-crosshairlabel) property within its corresponding axis.
 
 {% highlight javascript %}
 
@@ -298,7 +298,7 @@ $(function()
 ![](User-Interactions_images/crosshair.png) 
 
 ### Crosshair line and label customization
-By using the [`line`](/api/js/ejchart#members:crosshair-line) property of crosshair, you can customize its line color and width. Also, by using `fill` and `border` properties of the [`crosshairLabel`](/api/js/ejchart#members:primaryxaxis-crosshairlabel) in its corresponding axis, you can customize its background color, border color, and border width.
+By using the [`line`](/api/js/ejchart#members:crosshair-line) property of the crosshair, you can customize its line color and width. By using `fill` and `border` properties of the [`crosshairLabel`](/api/js/ejchart#members:primaryxaxis-crosshairlabel) in its corresponding axis, you can customize its background color, border color, and border width.
 
 {% highlight javascript %}
 
@@ -351,7 +351,7 @@ $(function()
 ## Trackball
 
 ### Enable trackball
-Trackball can be enabled by setting both - ['visible'](/api/js/ejchart#members:crosshair-visible) option of the crosshair to true and [`type`](/api/js/ejchart#members:crosshair-type) option of the crosshair to **“trackball”.** The default value of type is **“crosshair”.**
+The trackball can be enabled by setting both - ['visible'](/api/js/ejchart#members:crosshair-visible) of the crosshair to true and [`type`](/api/js/ejchart#members:crosshair-type) of the crosshair to **“trackball”.** The default value of type is **“crosshair”.**
 
 {% highlight javascript %}
 
@@ -375,7 +375,7 @@ $(function()
 ![](User-Interactions_images/trackball.png) 
 
 ### Trackball marker and line customization
-The shape and size of the trackball marker can be customized by using the [`shape`](/api/js/ejchart#members:commonseriesoptions-marker-shape) and [`size`](/api/js/ejchart#members:crosshair-marker-size) options of the crosshair marker. The color and width of the trackball line can be customized by using the **“line”** option in the crosshair.
+The shape and size of the trackball marker can be customized by using the [`shape`](/api/js/ejchart#members:commonseriesoptions-marker-shape) and [`size`](/api/js/ejchart#members:crosshair-marker-size) options of the crosshair marker. The color and width of the trackball line can be customized by using the **“line”** in the crosshair.
 
 {% highlight javascript %}
 
@@ -416,7 +416,7 @@ $(function()
 ![](User-Interactions_images/trackballmarker.png) 
 
 ## Highlight
-The pivot chart provides highlighting support for the series and data points on hovering the pointer. To enable highlighting, set the **“enable”** property to true in the [`highlightsettings`](/api/js/ejchart#members:series-highlightsettings-enable) option of the series.
+The pivot chart provides highlighting support for the series and data points by hovering the pointer. To enable highlighting, set the **“enable”** property to true in the [`highlightsettings`](/api/js/ejchart#members:series-highlightsettings-enable) of the series.
 
 {% highlight javascript %}
 
@@ -477,7 +477,7 @@ function onSeriesRender(args)
 ![](User-Interactions_images/highlightmode.png) 
 
 ### Customize the highlight styles
-To customize the highlighted series, use [`border.color`](/api/js/ejchart#members:series-highlightsettings-border-color), [`border.width`](/api/js/ejchart#members:series-highlightsettings-border-width), and [`opacity`](/api/js/ejchart#members:series-highlightsettings-opacity)
+To customize the highlighted series, use the [`border.color`](/api/js/ejchart#members:series-highlightsettings-border-color), [`border.width`](/api/js/ejchart#members:series-highlightsettings-border-width), and [`opacity`](/api/js/ejchart#members:series-highlightsettings-opacity)
  options in the [`highlightSettings`](/api/js/ejchart#members:series-highlightsettings) property.
 
 {% highlight javascript %}
@@ -563,7 +563,7 @@ function onSeriesRender(args)
 ![](User-Interactions_images/patternhighlight.png) 
 
 ## Selection
-The pivot chart provides selection support for the series and data points by clicking the mouse. To enable selection, set the **“enable”** property to true in the [`selectionSettings`](/api/js/ejchart#members:series-selectionsettings-enable) option of the series.
+The pivot chart provides selection support for the series and data points by clicking the mouse. To enable selection, set the **“enable”** property to true in the [`selectionSettings`](/api/js/ejchart#members:series-selectionsettings-enable) of the series.
 
 {% highlight javascript %}
 
@@ -659,7 +659,7 @@ function onSeriesRender(args)
 ![](User-Interactions_images/customizeselection.png) 
 
 ### Patterns for selection
-The pivot chart provides pattern support for selecting the data by setting an appropriate value to the [`pattern`](/api/js/ejchart#members:series-selectionsettings-pattern) property of the [`selectionSettings`](/api/js/ejchart#members:series-selectionsettings) option. The different types of selection patterns are as follows:
+The pivot chart provides pattern support for selecting data by setting an appropriate value to the [`pattern`](/api/js/ejchart#members:series-selectionsettings-pattern) property of the [`selectionSettings`](/api/js/ejchart#members:series-selectionsettings) option. The different types of selection patterns are as follows:
 
 * chessboard
 * crosshatch

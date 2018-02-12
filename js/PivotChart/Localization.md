@@ -132,7 +132,7 @@ DataManager.OverrideDefaultFormatStrings = true;
 
 ## RTL
 
-You can enable or disable the right to left option by using the [`enableRTL`](/api/js/ejpivotchart#members:enablertl) property in the pivot chart.
+You can enable or disable the right to left alignment by using the [`enableRTL`](/api/js/ejpivotchart#members:enablertl) property in the pivot chart.
 
 {% highlight js %}
 

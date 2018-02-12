@@ -120,7 +120,7 @@ By using the [`labelFormat`](/api/js/ejchart#members:primaryyaxis-labelformat) p
 ### Axis visibility
 The axis visibility can be set by using the [`visible`](/api/js/ejchart#members:primaryyaxis-visible) property of the respective axis. 
 
-N> By default, the value of [`visible`](/api/js/ejchart#members:primaryyaxis-visible) property is true in the pivot chart.
+N> By default, the value of the [`visible`](/api/js/ejchart#members:primaryyaxis-visible) property is true in the pivot chart.
 
 {% highlight javascript %}
 
@@ -321,11 +321,11 @@ N> By default, the [`opposedPosition`](/api/js/ejchart#members:primaryyaxis-oppo
 
 ## Smart axis labels
 
-When the axis labels overlap with each other based on the chart dimensions and label size, you can use the [`labelIntersection`](/api/js/ejchart#members:primaryxaxis-labelintersectaction) property of the axis to avoid overlapping.
+When the axis labels overlap with each other based on the chart dimensions and label size, you can use the [`labelIntersectAction`](/api/js/ejchart#members:primaryxaxis-labelintersectaction) property of the axis to avoid overlapping.
 
-N> By default, the [`labelIntersection`](/api/js/ejchart#members:primaryxaxis-labelintersectaction) property is none in the pivot chart.
+N> By default, the [`labelIntersectAction`](/api/js/ejchart#members:primaryxaxis-labelintersectaction) property is none in the pivot chart.
 
-The following options are supported for the `labelIntersection` property: 
+The following options are supported for the `labelIntersectAction` property: 
 
 * rotate45
 * rotate90

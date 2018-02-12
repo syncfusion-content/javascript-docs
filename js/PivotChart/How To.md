@@ -254,7 +254,7 @@ For more on this topic, [click here](https://help.syncfusion.com/js/pivotchart/u
 
 ![](How-To_images/interactions.png)
 
-* [`Smart Labels`](/api/js/ejchart#members:primaryxaxis-labelintersectaction): You can customize the labels in a different view by given options mentioned in the following image:
+* [`Smart Labels`](/api/js/ejchart#members:primaryxaxis-labelintersectaction): You can customize the labels in a different view by giving the options mentioned in the following image:
 
 ![](How-To_images/smartLabels.png)
 

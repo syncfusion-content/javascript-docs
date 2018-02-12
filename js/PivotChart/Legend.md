@@ -140,7 +140,7 @@ You can align the legend to center, far, and near based on its position in the c
 ![](Legend_images/Legend_img5.png)
 
 ## Legend items - size and border
-By using the legend [`itemStyle.width`](/api/js/ejchart#members:legend-itemstyle-width), [`itemStyle.height`](/api/js/ejchart#members:legend-itemstyle-height), and [`itemStyle.border`](/api/js/ejchart#members:legend-itemstyle-border) properties, you can change the legend items - size and border.
+By using the legend [`itemStyle.width`](/api/js/ejchart#members:legend-itemstyle-width), [`itemStyle.height`](/api/js/ejchart#members:legend-itemstyle-height), and [`itemStyle.border`](/api/js/ejchart#members:legend-itemstyle-border) properties, you can change the size and border of legend items.
 
 {% highlight javascript %}
 
