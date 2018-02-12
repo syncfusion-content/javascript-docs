@@ -283,7 +283,6 @@ Now, you can set the “GettingStarted.html” page as start-up page. To do so, 
 
 ### Scripts and CSS initialization
 The scripts and style sheets that are required to render a pivot chart widget in an HTML page are highlighted below in an appropriate order:
->>>>>>> hotfix/hotfix-v15.4.0.20
 
 1. ej.web.all.min.css
 2. jQuery-3.0.0.min.js

@@ -342,7 +342,6 @@ The following table will explain the [`relational`](/api/js/ejpivotchart#members
 You can sort a field either in ascending or descending order by using the **"sortOrder"** property. The sorting is applicable only for the fields in rows and columns.
 
 You can sort a field either in ascending or descending order by using the **"sortOrder"** property. Sorting is applicable only for fields in rows and columns.
->>>>>>> hotfix/hotfix-v15.4.0.20
 
 N> By default, the values in all fields are arranged in ascending order.
 
