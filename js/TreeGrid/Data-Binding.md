@@ -79,6 +79,21 @@ The output of the above steps is as follows:
 
 ![](/js/TreeGrid/Data-Binding_images/Data-Binding_img1.png)
 
+It is also possible to set the data source to TreeGrid using ejDataManager. And we can pass the query value to ejDataManager by using [`query`](https://help.syncfusion.com/api/js/ejtreegrid#members:query) property. 
+
+The following code example explains how to assign the ejDataManager instance to TreeGrid.
+
+{% highlight js %}
+
+    $("#TreeGridContainer").ejTreeGrid({
+        //...
+        dataSource: ej.DataManager(taskDetails),
+        query: ej.Query().select("taskID", "taskName", "startDate", "duration", "progress", "subtasks"),
+        //...
+    });
+
+{% endhighlight %}
+
 ### Self-Referential Data Binding (Flat Data)
 
 TreeGrid is rendered from Self-Referential data structures by providing two fields, **ID** field and **parent ID** field.

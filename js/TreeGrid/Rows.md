@@ -155,6 +155,8 @@ The output of TreeGrid with **Row Template** is as follows.
 
 ![](/js/TreeGrid/Rows_images/Rows_img1.png)
 
+N> 1. In TreeGrid, the given row template is parsed for default row functionality like row selection, alt row and other default row customization. Using [`parseRowTempalte`](https://help.syncfusion.com/api/js/ejtreegrid#members:parserowtemplate) property we can disable the row template parsing. TreeGrid is rendered with given row template, if we disable that property.
+
 ## Row Height
 The [`rowHeight`](/api/js/ejtreegrid#members:rowheight) property is used to change the height of row in tree grid, default value of this property is 30.
 
