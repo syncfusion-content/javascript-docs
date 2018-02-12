@@ -41,7 +41,7 @@ Summary rows visibility can be controlled by the [`showSummary`](https://help.sy
 </script>
 {% endhighlight %}
 
-N> [`dataMember`](https://help.syncfusion.com/api/js/ejgrid#members:summaryrows-summarycolumns-datamember "dataMember") denotes the aggregation column whereas the [`displayColumn`](https://help.syncfusion.com/api/js/ejgrid#members:summaryrows-summarycolumns-displaycolumn "displayColumn") column in which aggregation value will be displayed.
+N> [`dataMember`](https://help.syncfusion.com/api/js/ejgrid#members:summaryrows-summarycolumns-datamember "dataMember") denotes the aggregation column whereas the [`displayColumn`](https://help.syncfusion.com/api/js/ejgrid#members:summaryrows-summarycolumns-displaycolumn "displayColumn") denotes the column in which aggregation value will be displayed.
 
 
 ![](Summary_images/summaryGrid_img1.png)
