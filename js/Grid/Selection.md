@@ -345,3 +345,32 @@ The following output is displayed as a result of the above code example.
 
 ![](selection_images/selection_img10.png)
 
+
+## Drag Selection
+
+The [Toggle](https://help.syncfusion.com/api/js/ejgrid#members:selectionsettings-enabletoggle "Toggle") selection allows to perform selection of the particular row, cell or column by performing mouse dragging.  To enable drag selection, set [`allowDragSelection`](https://help.syncfusion.com/api/js/ejgrid#members:selectionsettings-enabletoggle "allowDragSelection") property of the [`selectionSettings`](https://help.syncfusion.com/api/js/ejgrid#members:selectionsettings "selectionSettings") as `true` and set the [`selectionMode`](https://help.syncfusion.com/api/js/ejgrid#members:selectionsettings-selectionmode "selectionMode") property of [`selectionSettings`](https://help.syncfusion.com/api/js/ejgrid#members:selectionsettings "selectionSettings") as `cell`. Now you can select the cells in the Grid by drgging the mouse. 
+
+N> The multi selection needs to be enabled, to select multiple cells in Grid by mouse dragging. 
+
+The following code example describes the above behavior. 
+
+{% highlight html %}
+<div id="Grid"></div>
+{% endhighlight %}
+
+{% highlight javascript %}
+$(function () {
+	//The datasource "window.gridData" is referred from jsondata.min.js
+	$("#Grid").ejGrid({
+		dataSource : window.gridData,
+		allowPaging : true,
+		selectionType : "multiple",
+		selectionSettings: {selectionMode: ["cell"], allowDragSelection:true, cellSelectionMode: ej.Grid.CellSelectionMode.Flow },
+		columns : ["OrderID", "EmployeeID", "ShipCity", "ShipCountry", "Freight"]
+	});
+});
+{% endhighlight %}
+
+The following output is displayed as a result of the above code example.
+
+![](selection_images/selection_img11.png)
