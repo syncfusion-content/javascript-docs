@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: 3D-Visualization
 description: 3d visualization

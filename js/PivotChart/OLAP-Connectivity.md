@@ -226,9 +226,9 @@ N> The [`customObject`](../api/ejpivotchart#members:customobject) is utilized to
 
 **Configuring web configuration file**
 
-You can expose the services through the properties such as binding, contract, and address by using an endpoint.
+You can expose the services through properties such as binding, contract, and address by using an endpoint.
 
-* Contract: This property indicates that the contract of the endpoint is exposed. Refer to the **IOlapService** contract, and thus it is written as **PivotChartDemo.IOlapService**.
+* Contract: This property indicates that the contract of the endpoint is exposed. Refer to the **IOlapService** contract, and it is written as **PivotChartDemo.IOlapService**.
 * Binding: In your application, you can use **webHttpBinding** to post and receive requests and responses between the client-end and the service.
 * behaviorConfiguration: This property contains the name of the behavior to be used in the endpoint.
 
