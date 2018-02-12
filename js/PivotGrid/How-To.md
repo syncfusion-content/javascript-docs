@@ -280,7 +280,7 @@ $("#PivotGrid1").ejPivotGrid({
 
 {% endhighlight %}
 
-### Invoking event in client-side before service is invoke
+### Invoking event in client-side before service invoke
 
 The [`beforeServiceInvoke`](../api/ejpivotgrid#events:beforeServiceInvoke) event is triggered before any AJAX request is passed from the PivotGrid to service methods.
 
@@ -490,17 +490,11 @@ The following are the available features through sub context menu.
 
 ![](How-To_images/layouts.png)
 
-For more details on this topic, [click here](https://help.syncfusion.com/js/pivotgrid/grid-layout).
-
-* `Hyper Link` - Allows you to enable/disable hyperlink for row header, column header, value, and summary cells.
-
-![](How-To_images/summaryTypes.png)
-
 * `Hyper Link` - Allows you to enable/disable hyperlink for row header, column header, value, and summary cells.
 
 ![](How-To_images/hyperlink.png)
 
-* `Exporting` - Allows you to export PivotGrid in a desired format.
+* `Exporting` - Allows you to export PivotGrid in a desired format. You have to mention the export settings through [`beforeExport`](../api/ejpivotgridt#events:beforeexport) event.
 
 ![](How-To_images/exporting.png)
 

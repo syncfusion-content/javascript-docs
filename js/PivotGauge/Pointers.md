@@ -167,7 +167,7 @@ N> Both the properties can be applied only if the pointer type is set to marker.
  
 ## Pointer image
 
-It is possible to replace the pointers with an image. To view the pointers as an image, you should set the appropriate location in the `imageUrl` property.
+It is possible to replace the pointers with an image. To view the pointers as an image, set the appropriate location in the `imageUrl` property.
 
 {% highlight javascript %}
 

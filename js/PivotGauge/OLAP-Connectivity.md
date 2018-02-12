@@ -61,7 +61,7 @@ DataManager.DataProvider.ProviderName=Syncfusion.Olap.DataProvider.Providers.Act
 ## WCF
 **Adding a WCF service**
 
-To add a WCF service in an existing web application, right-click the project in the solution explorer and select **Add > New Item**. In the **Add New Item** window, select WCF Service and name it **“OlapService.svc,”** and then click **Add**.
+To add a WCF service in an existing web application, right-click the project in the solution explorer and select **Add > New Item**. In the **Add New Item** window, select the WCF Service and name it **“OlapService.svc,”** and then click **Add**.
  
 The WCF service is added to your application, which, in-turn, comprises the following files. The utilization of these files will be explained in the immediate sections.
 
@@ -71,7 +71,7 @@ The WCF service is added to your application, which, in-turn, comprises the foll
 
 **Configuring WCF service class**
 
-Remove the “DoWork” method present in both `OlapService.svc.cs` and `IOlapService.cs files`. Next, add the “AspNetCompatibilityRequirements” attribute on top of the main class that is present in `OlapService.svc.cs` and set the “RequirementsMode” value to “Allowed”.
+Remove the “DoWork” method present in both `OlapService.svc.cs` and `IOlapService.cs files`. Next, add “AspNetCompatibilityRequirements” attribute on top of the main class present in the `OlapService.svc.cs` file and set the “RequirementsMode” value to “Allowed”.
 
 {% highlight c# %}
 
@@ -87,9 +87,9 @@ namespace PivotGaugeDemo
 
 **List of dependency libraries**
 
-Next, you can add the below mentioned dependency libraries to your web application. These libraries can be found in the GAC (Global Assembly Cache).
+Next, you can add the below-mentioned dependency libraries to your web application. These libraries can be found in the GAC (Global Assembly Cache).
  
-To add them to your web application, right-click **References** in the solution explorer and select **Add Reference**. Now, in the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries are found. 
+To add them to your web application, right-click **References** in the solution explorer and select **Add Reference**. In the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries are found.
 
 N> If you have installed any version of SQL Server Analysis Service (SSAS) or Microsoft ADOMD.NET utility, then the location of Microsoft.AnalysisServices.AdomdClient library is [system drive:\Program Files (x86)\Microsoft.NET\ADOMD.NET]. If you have installed any version of Essential Studio, then the location of Syncfusion libraries is [system drive:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\Assemblies].
 
@@ -142,9 +142,9 @@ namespace PivotGaugeDemo
 }
 {% endhighlight %}
 
-**Service methods in WCF Service**
+**Service methods in WCF service**
 
-First, you can define the service methods in the IOlapService interface, found in the `IOlapService.cs` file which was created while adding the WCF service to your web application.
+First, you can define the service methods in the IOlapService interface. To do so, find the `IOlapService.cs` file which was created while adding the WCF service to your web application.
 
 {% highlight c# %}
 
@@ -159,7 +159,7 @@ namespace PivotGaugeDemo
 }
 {% endhighlight %}
 
-Then, you can elaborate the service methods in the main class, which is found in the `OlapService.svc.cs` file.
+Then, you can elaborate the service methods in the main class, found in the `OlapService.svc.cs` file.
 
 {% highlight c# %}
 

@@ -12,7 +12,7 @@ api: /api/js/ejpivotgauge
 
 ## Full circle
 
-Full circle frame allows the pivot gauge to display in a circular shape. The frame type can be set by using the [`frameType`](/api/js/ejcirculargauge#members:frame) property.  By default, the frame type is "fullCircle".
+Full circle frame allows the pivot gauge to display in a circular shape. The frame type can be set by using the [`frameType`](/api/js/ejcirculargauge#members:frame) property. By default, the frame type is "fullCircle".
 
 {% highlight javascript %}
 

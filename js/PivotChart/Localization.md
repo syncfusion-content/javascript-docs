@@ -90,10 +90,10 @@ Exit</td><td>
 
 ## Localization and globalization of cube info (client mode)
 
-The content displayed within the pivot chart control are obtained from the OLAP cube. The following are the steps that need to be done to get the localized and globalized cube content.
+The content displayed within the pivot chart control is obtained from the OLAP cube. The following are the steps that should be done to get the localized and globalized cube content.
 
-* To get the localized data from the OLAP cube, you need to set the **"Locale Identifier"** in the connection string to a specific culture of the **"data"** property present in the **"dataSource"**. 
-* To bind the globalized content in the pivot chart control, you need to set the **"locale"** property to a specific culture and want to refer a specific culture file in the sample.
+* To get the localized data from the OLAP cube, set the **"Locale Identifier"** in the connection string to a specific culture in the **"data"** property present in the **"dataSource"**.
+* To bind the globalized content in the pivot chart control, set the **"locale"** property to a specific culture and refer the specific culture file in the sample.
  
 N> Culture files are present under **"[installed drive]:\Users\ [user name]\AppData\Local\Syncfusion\EssentialStudio\X.X.X.X\JavaScript\samples\web\scripts\cultures".** 
  
@@ -113,10 +113,10 @@ N> Culture files are present under **"[installed drive]:\Users\ [user name]\AppD
 
 ## Localization and globalization of cube info (server mode)
 
-The content displayed within the pivot chart control are obtained from the OLAP cube. The following are the steps that need to be done to get the localized and globalized cube content.
+The content displayed within the pivot chart control is obtained from the OLAP cube. The following are the steps that should be done to get the localized and globalized cube content:
 
-* To get the localized string based on different cultures, set the **"Locale Identifier"** in the connection string to a specific culture in the OLAP cube.
-* To bind the globalized content in the pivot chart control, set the **"Culture"** and **"OverrideDefaultFormatStrings"** properties in the OlapDataManager class to a specific culture.
+* To get the localized string based on different cultures, set the **"Locale Identifier"** in the connection string to a specific culture in the OLAP cube. 
+* To bind the globalized content in the pivot chart control, you can set the **"Culture"** and **"OverrideDefaultFormatStrings"** properties in the OlapDataManager class to a specific culture.
  
 {% highlight c# %}
 
@@ -129,4 +129,21 @@ DataManager.OverrideDefaultFormatStrings = true;
 {% endhighlight %}
 
 ![](Localization-and-Translation-support_images/Localization-and-Translation-support_img1.png) 
+
+## RTL
+
+You can enable or disable the right to left alignment by using the [`enableRTL`](/api/js/ejpivotchart#members:enablertl) property in the pivot chart.
+
+{% highlight js %}
+
+$("#PivotChart1").ejPivotChart({
+      enableRTL: true
+ });
+
+{% endhighlight %}
+
+![](Localization-and-Translation-support_images/Rtl.png)
+
+N> RTL is applicable only for the tooltip of the pivot chart.
+
 
