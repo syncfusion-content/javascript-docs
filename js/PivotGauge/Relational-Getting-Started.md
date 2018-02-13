@@ -12,7 +12,7 @@ api: /api/js/ejpivotgauge
 
 ## Creating a simple application with pivot gauge and relational data source (client mode)
 
-This section covers the basic information required to populate a simple pivot gauge with relational data completely on the client-side.
+This section covers the basic information required to populate a simple pivot gauge with [`Relational`](/api/js/ejpivotgauge#members:analysismode) data completely on the [`client-side`](/api/js/ejpivotgauge#members:operationalmode).
 
 ### Scripts and CSS references
 
@@ -24,7 +24,7 @@ Create an HTML page and add scripts and style sheets that are required to render
 
 ### Initialize pivot gauge
 
-Place a div tag in the HTML page which acts as a container for the pivot gauge widget. Then, initialize the widget by using the "ejPivotGauge" method.
+Place a "div" tag in the HTML page which acts as a container for the pivot gauge widget. Then, initialize the widget by using the "ejPivotGauge" method.
 
 {% highlight html %}
 
@@ -66,7 +66,7 @@ var pivotData = [
 
 {% endhighlight %}
 
-Now, set the JSON data to the **"data"** property available in the **"dataSource"** object.  The **"dataSource"** object allows you to set the raw data input and the fields in the rows, columns, values, and filters.
+Now, set the JSON data to the **"data"** property available in the **"dataSource"** object.  The **"dataSource"** object allows you to set the raw data input and fields in the rows, columns, values, and filters.
 
 {% highlight html %}
 
@@ -189,21 +189,211 @@ Now, set the JSON data to the **"data"** property available in the **"dataSource
 </html>
 {% endhighlight %}
 
-The above code will generate a simple pivot gauge as shown in the below image: 
+The above code will generate a simple pivot gauge as shown in the below image:
 
 ![](Relational-Getting-Started_images/PopulatePivotGaugeWithData.png)
 
+The following table will explain the [`relational`](/api/js/ejpivotgauge#members:analysismode) [`datasource`](/api/js/ejpivotgauge#members:datasource) properties at [`client-side`](/api/js/ejpivotgauge#members:operationalmode) in detail:
+
+<table>
+    <tr>
+        <th>
+            Properties
+        </th>
+        <th>
+            Description
+        </th>
+    </tr>
+    <tr>
+        <td>
+            {{'[`columns`](https://help.syncfusion.com//api/js/ejpivotgauge#members:datasource-columns "columns")'| markdownify }}
+        </td>
+        <td>
+            Lists out the items to bind in columns section.
+             <table class="params">
+            <thead>
+            <tr>
+            <th>Properties</th>
+            <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td>{{'[`fieldName`](https://help.syncfusion.com//api/js/ejpivotgauge#members:datasource-columns-fieldname "fieldName")'| markdownify }} </td>
+            <td>Allows the user to bind the item by using its unique name as field name.</td>
+            </tr>
+            <tr>
+            <td>{{'[`filterItems`](https://help.syncfusion.com//api/js/ejpivotgauge#members:datasource-columns-filteritems "filterItems")'| markdownify }}</td>
+            <td>Applies filter to the field members.
+            <table class="params">
+            <thead>
+            <tr>
+            <th>Properties</th>
+            <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td>
+                {{'[`filterType`](https://help.syncfusion.com//api/js/ejpivotgauge#members:datasource-columns-filteritems-filtertype "filterType")'| markdownify }} </td>
+            <td>Sets the type of filter whether to include/exclude the mentioned values.</td>
+            </tr>
+            <tr>
+            <td>
+                {{'[`values`](https://help.syncfusion.com//api/js/ejpivotgauge#members:datasource-columns-filteritems-values "values")'| markdownify }} </td>
+            <td>Contains the collection of items to be included/excluded among the field members.</td>
+            </tr>
+            </tbody>
+            </table>
+            </td>
+            </tr>
+            </tbody>
+            </table>
+            </td>
+            </tr>
+            <tr>
+        <td>
+            {{'[`rows`](https://help.syncfusion.com//api/js/ejpivotgauge#members:datasource-rows "rows")'| markdownify }}
+        </td>
+        <td>
+            Lists out the items to bind in rows section.
+             <table class="params">
+            <thead>
+            <tr>
+            <th>Properties</th>
+            <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td>{{'[`fieldName`](https://help.syncfusion.com//api/js/ejpivotgauge#members:datasource-rows-fieldname "fieldName")'| markdownify }} </td>
+            <td>Allows the user to bind the item by using its unique name as field name.</td>
+            </tr>
+            <tr>
+            <td>{{'[`filterItems`](https://help.syncfusion.com//api/js/ejpivotgauge#members:datasource-rows-filteritems "filterItems")'| markdownify }}</td>
+            <td>Applies filter to the field members.
+            <table class="params">
+            <thead>
+            <tr>
+            <th>Properties</th>
+            <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td>
+                {{'[`filterType`](https://help.syncfusion.com//api/js/ejpivotgauge#members:datasource-rows-filteritems-filtertype "filterType")'| markdownify }} </td>
+            <td>Sets the type of filter whether to include/exclude the mentioned values.</td>
+            </tr>
+            <tr>
+            <td>
+                {{'[`values`](https://help.syncfusion.com//api/js/ejpivotgauge#members:datasource-rows-filteritems-values "values")'| markdownify }} </td>
+            <td>Contains the collection of items to be included/excluded among the field members.</td>
+            </tr>
+            </tbody>
+            </table>
+            </td>
+            </tr>
+            </tbody>
+            </table>
+            </td>
+            </tr>
+            <tr>
+        <td>
+            {{'[`values`](https://help.syncfusion.com//api/js/ejpivotgauge#members:datasource-values "values")'| markdownify }}
+        </td>
+        <td>
+            Lists out the items supports calculation in pivot gauge.
+             <table class="params">
+            <thead>
+            <tr>
+            <th>Properties</th>
+            <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td>{{'[`fieldName`](https://help.syncfusion.com//api/js/ejpivotgauge#members:datasource-values-fieldname "fieldName")'| markdownify }} </td>
+            <td>Allows the user to bind the item by using its unique name as field name for Relational datasource.</td>
+            </tr>
+            <tr>
+            <td>{{'[`fieldCaption`](https://help.syncfusion.com//api/js/ejpivotgauge#members:datasource-values-fieldcaption "fieldCaption")'| markdownify }}</td>
+            <td>Allows the user to set the display caption for an item for Relational datasource.</td>
+            </tr>
+            <tr>
+            <td>{{'[`isCalculatedField`](https://help.syncfusion.com//api/js/ejpivotgauge#members:datasource-values-iscalculatedfield "isCalculatedField")'| markdownify }}</td>
+            <td>Indicates whether the field is a calculated field or not.</td>
+            </tr>
+            <tr>
+            <td>{{'[`formula`](https://help.syncfusion.com//api/js/ejpivotgauge#members:datasource-values-formula "formula")'| markdownify }}</td>
+            <td>Allows to set the formula for calculation of values for calculated members in Relational datasource.</td>
+            </tr>
+            </tbody>
+            </table>
+            </td>
+            </tr>
+            <tr>
+        <td>
+            {{'[`filters`](https://help.syncfusion.com//api/js/ejpivotgauge#members:datasource-filters "filters")'| markdownify }}
+        </td>
+        <td>
+            Lists out the items which supports filtering of values without displaying the members in UI in PivotGauge.
+            <table class="params">
+            <thead>
+            <tr>
+            <th>Properties</th>
+            <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td>{{'[`fieldName`](https://help.syncfusion.com//api/js/ejpivotgauge#members:datasource-filters-fieldname "fieldName")'| markdownify }} </td>
+            <td>Allows the user to bind the item by using its unique name as field name.</td>
+            </tr>
+            <tr>
+            <td>{{'[`filterItems`](https://help.syncfusion.com//api/js/ejpivotgauge#members:datasource-filters-filteritems "filterItems")'| markdownify }}</td>
+            <td>Applies filter to the field members.
+            <table class="params">
+            <thead>
+            <tr>
+            <th>Property</th>
+            <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td>
+                {{'[`filterType`](https://help.syncfusion.com//api/js/ejpivotgauge#members:datasource-filters-filteritems-filtertype "filterType")'| markdownify }} </td>
+            <td>Sets the type of filter whether to include/exclude the mentioned values.</td>
+            </tr>
+            <tr>
+            <td>
+                {{'[`values`](https://help.syncfusion.com//api/js/ejpivotgauge#members:datasource-filters-filteritems-values "values")'| markdownify }} </td>
+            <td>Contains the collection of items to be included/excluded among the field members.</td>
+            </tr>
+            </td>
+            </tr>
+            </tbody>
+            </table>
+            </td>
+            </tr>
+            </tbody>
+            </table>
+        </td>
+        </tr>
+        </table>
+
 ## Creating a simple application with pivot gauge and relational data source (server mode)
 
-This section covers the information required to create a simple pivot gauge bound to relational data source from the server-side.
+This section covers the information required to create a simple pivot gauge that is bound to the [`Relational`](/api/js/ejpivotgauge#members:analysismode) data source from the [`server-side`](/api/js/ejpivotgauge#members:operationalmode).
 
-N>This section is illustrated by creating a simple web application through the Visual Studio IDE, since the pivot gauge in the server mode requires .NET dependency. The web application contains an HTML page and a service that will transfer the data to server-side, process it, and return it to the client-side for control rendering. The service utilized for communication can be a WebAPI controller class or a WCF service based on user requirement. Here, both are illustrated for user convenience.
+N>This section is illustrated by creating a simple web application through the Visual Studio IDE, since the pivot gauge in server mode requires .NET dependency. The web application contains an HTML page and a service which will transfer the data to [`server-side`](/api/js/ejpivotgauge#members:operationalmode), process it, and return it to the [`client-side`](/api/js/ejpivotgauge#members:operationalmode) for control rendering. The service utilized for communication can be a WebAPI controller class or a WCF service based on user requirement. Here, both are illustrated for user convenience.
 
 ### Project initialization
 
-Create a new **ASP.NET Empty Web Application** by using the Visual Studio IDE and name the project **“PivotGaugeDemo.”**
+Create a new **ASP.NET Empty Web Application** by using the Visual Studio IDE and name the project **“PivotGaugeDemo”.**
 
-Next, you can add an HTML page. To add an HTML page in your web application, right-click the project in the solution explorer and select **Add > New Item**. In the **Add New Item** window, select **HTML Page** and name it “GettingStarted.html”, and then click **Add.**
+Next, you can add an HTML page. To add an HTML page in your web application, right-click the project in the solution explorer and select **Add > New Item**. In the **Add New Item** window, select **HTML Page** and name it “GettingStarted.html,” and then click **Add.**
  
 Now, you can set the “GettingStarted.html” page as start-up page. To do so, right-click the “GettingStarted.html” page and select **“Set As Start Page”**.
 
@@ -216,7 +406,7 @@ The scripts and style sheets that are required to render a pivot gauge widget in
 
 The scripts and style sheets listed above can be found in any of the following locations:
 
-Local disk: [Click here](https://help.syncfusion.com/js/installation-and-deployment) to know more about script and style sheets installed in the local machine.
+Local disk: [Click here](https://help.syncfusion.com/js/installation-and-deployment) to know more about script and style sheets installed on the local machine.
  
 CDN link: [Click here](https://help.syncfusion.com/js/cdn) to know more about script and style sheets available in online.
 
@@ -224,7 +414,7 @@ NuGet package: [Click here](https://help.syncfusion.com/js/installation-and-depl
 
 ### Control initialization
 
-To initialize a pivot gauge widget, first you can define a div tag with an appropriate “id” attribute which acts as a container for the pivot gauge widget. Then, you can initialize the widget by using the `ejPivotGauge` method.
+To initialize a pivot gauge widget, first you can define a “div” tag with an appropriate “id” attribute which acts as a container for the pivot gauge widget. Then, you can initialize the widget by using the `ejPivotGauge` method.
 
 {% highlight html %}
 
@@ -328,21 +518,21 @@ To initialize a pivot gauge widget, first you can define a div tag with an appro
 
 The `url` property in the pivot gauge widget points the service endpoint, where the data is processed and fetched in the form of JSON. The services used for the pivot gauge widget as endpoint are WebAPI and WCF.
 
-N> The above "GettingStarted.html" contains WebAPI URL, which is **“/Relational”**. If you are using the WCF service, then the URL will look like **"/RelationalService.svc"**.
+N> The above "GettingStarted.html" contains WebAPI URL, which is **“/Relational”**. If you are using the WCF service, then the URL will look like **"/RelationalService.svc"**. 
 
 ### WebAPI
 
 **Adding a WebAPI controller**
 
-To add a WebAPI controller in your existing web application, right-click the project in the solution explorer and select **Add > New Item**. In the **Add New Item** window, select **WebAPI Controller Class** and name it “RelationalController.cs”, and then click **Add**.
+To add a WebAPI controller in your existing web application, right-click the project in the solution explorer and select **Add > New Item**. In the **Add New Item** window, select **WebAPI Controller Class** and name it “RelationalController.cs,” and then click **Add**.
  
-Now, the WebAPI controller is added to your application, which, in-turn, comprises the following file. The utilization of this file will be explained in the immediate sections.
+The WebAPI controller is added to your application, which, in-turn, comprises the following file. The utilization of this file will be explained in the immediate sections. 
 
 * RelationalController.cs
 
 N> While adding the WebAPI controller class, add the mandatory suffix “Controller”. For example, in the demo, the controller is named “RelationalController”.
 
-Next, remove all the existing methods such as “Get”, “Post”, “Put”, and “Delete” present in the `RelationalController.cs` file.
+Next, remove all existing methods such as “Get”, “Post”, “Put”, and “Delete” present in the `RelationalController.cs` file.
 
 {% highlight c# %}
 
@@ -358,9 +548,9 @@ namespace PivotGaugeDemo
 
 **List of dependency libraries**
 
-Next, you can add the below-mentioned dependency libraries to your web application. These libraries can be found in the GAC (Global Assembly Cache).
+Next, you should add the below-mentioned dependency libraries to your web application. These libraries can be found in the GAC (Global Assembly Cache).
 
-To add them to your web application, right-click **References** in the solution explorer and select **Add Reference.** Now, in the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries are found. 
+To add them to your web application, right-click **References** in the solution explorer and select **Add Reference.** In the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries are found.
 
 N> If you have installed any version of Essential Studio, then the location of Syncfusion libraries is [system drive:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\Assemblies].
 
@@ -565,7 +755,7 @@ Now, the pivot gauge is rendered with sales amount as shown in the below image:
 
 ### WCF
 
-This section demonstrates the utilization of WCF service as endpoint binding relational data source to a simple pivot gauge. For more details on this topic, [click here](https://help.syncfusion.com/js/pivotgauge/relational-connectivity#wcf-1).
+This section demonstrates the utilization of the WCF service as endpoint binding [`Relational`](/api/js/ejpivotgauge#members:analysismode) data source to a simple pivot gauge. For more details on this topic, [click here](https://help.syncfusion.com/js/pivotgauge/relational-connectivity#wcf-1).
   
 
 

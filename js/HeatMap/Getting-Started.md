@@ -84,6 +84,8 @@ Now data is ready, next we need to configure data source and map rows and column
 
 * Prepare [itemsMapping](/api/js/ejheatmap#members:itemsmapping "itemsMapping") and add it in resource.
 
+* To set size for the heatmap, use [width](/api/js/ejheatmap#members:width "width") and [height](/api/js/ejheatmap#members:height "height") property.
+
 {% highlight js %}
 
 var headerMapping = { "propertyName": "ProductName", "displayName": "Product Name", columnStyle: { width: 140 } };
@@ -155,6 +157,7 @@ $("#heatmap").ejHeatMap({
 # Legend
 
 * A legend control is used to represent range value in a gradient, create a legend with the same color mapping as shown below.
+
 * You can use [legendCollection](/api/js/ejheatmap#members:legendcollection "legendCollection") to specify the number of legends that can sync with heat map.
   
 {% highlight js %}

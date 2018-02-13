@@ -17,7 +17,7 @@ The pivot chart control can be exported to the following file formats:
 * PDF
 * Image
 
-The pivot chart control can be exported by invoking the **“exportPivotChart”** method with an appropriate export option as parameter.
+The pivot chart control can be exported by invoking the [`exportPivotChart`](/api/js/ejpivotchart#methods:exportpivotchart) method with an appropriate export option as parameter.
 
 {% highlight html %}
 
@@ -44,10 +44,10 @@ The pivot chart control can be exported by invoking the **“exportPivotChart”
         {
             var chartObj = $('#PivotChart1').data("ejPivotChart");
             
-            //If you render PivotChart in Client Mode, set the export option like below.
+            //If you render pivot chart in Client Mode, set the export option like below.
             chartObj.exportPivotChart("http://js.syncfusion.com/ejservices/api/PivotChart/Olap/ExcelExport","fileName");
             
-            //If you render PivotChart in Server Mode, set the export option like below.
+            //If you render pivot chart in Server Mode, set the export option like below.
             chartObj.exportPivotChart(ej.PivotChart.ExportOptions.Excel);
         }
     </script>
@@ -143,7 +143,7 @@ function exportBtnClick(args)
 
 ### Server mode
 
- To achieve Word export, you need to add the following dependency libraries to the application:
+ To achieve Word export, you can add the following dependency libraries to the application.
 
 * Syncfusion.Compression.Base
 * Syncfusion.DocIo.Base
@@ -181,7 +181,7 @@ function exportBtnClick(args)
 
 ### Server mode
 
-To achieve PDF export, you need to add the following dependency libraries to the application:
+To achieve PDF export, you should add the following dependency libraries to the application.
 
 * Syncfusion.Compression.Base
 * Syncfusion.Pdf.Base
@@ -268,7 +268,7 @@ The following screenshot illustrates the control exported to an Excel document b
 
 You can add the title and description to the exporting document by using the title and description property in the "beforeExport" event.
 
-N> Title and description cannot be added to image formats.
+N> The title and description cannot be added to image formats.
 
 {% highlight html %}
 
@@ -299,10 +299,10 @@ N> Title and description cannot be added to image formats.
         {
             var chartObj = $('#PivotChart1').data("ejPivotChart");
             
-            //If you render PivotChart in Client Mode, set the export option like below.
+            //If you render pivot chart in Client Mode, set the export option like below.
             chartObj.exportPivotChart("http://js.syncfusion.com/ejservices/api/PivotChart/Olap/ExcelExport","fileName");
             
-            //If you render PivotChart in Server Mode, set the export option like below.
+            //If you render pivot chart in Server Mode, set the export option like below.
             chartObj.exportPivotChart(ej.PivotChart.ExportOptions.Excel);
         }
     </script>

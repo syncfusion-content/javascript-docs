@@ -12,7 +12,7 @@ api: /api/js/ejpivotgauge
 
 ## Creating a simple application with pivot gauge and OLAP data sources (client mode)
 
-This section covers the information required to populate a simple pivot gauge with OLAP data completely on the client-side.
+This section covers the information required to populate a simple pivot gauge with the [`OLAP`](/api/js/ejpivotgauge#members:analysismode) data completely on the [`client-side`](/api/js/ejpivotgauge#members:operationalmode).
 
 ### Scripts and CSS references
 
@@ -24,7 +24,7 @@ Create an HTML page and add scripts and style sheets that are required to render
 
 ### Initialize pivot gauge
 
-Place a div tag in the HTML page which acts as a container for the pivot gauge widget. Then, initialize the widget by using the "ejPivotGauge" method.
+Place a "div" tag in the HTML page which acts as a container for the pivot gauge widget. Then, initialize the widget by using the "ejPivotGauge" method.
 
 {% highlight html %}
 
@@ -51,7 +51,7 @@ Place a div tag in the HTML page which acts as a container for the pivot gauge w
 
 ### Populate pivot gauge with data source
 
-Initialize the OLAP data source for the pivot gauge widget by using the **dataSource** property.
+Initialize the [`OLAP`](/api/js/ejpivotgauge#members:analysismode) data source for the pivot gauge widget by using the **dataSource** property.
 
 {% highlight html %}
 
@@ -179,11 +179,153 @@ The above code will generate a series of gauges for all countries as shown below
 
 ![](OLAP-Getting-Started_images/ClientMode.png)
 
+The following table will explain the [`OLAP`](/api/js/ejpivotgauge#members:analysismode) [`datasource`](/api/js/ejpivotgauge#members:datasource) properties at [`client-side`](/api/js/ejpivotgauge#members:operationalmode) in detail:
+
+<table>
+    <tr>
+        <th>
+            Properties
+        </th>
+        <th>
+            Description
+        </th>
+    </tr>
+    <tr>
+    <td>
+        {{'[`cube`](https://help.syncfusion.com/api/js/ejpivotgauge#members:datasource-cube "cube")'| markdownify }}
+    </td>
+    <td>
+        Contains the respective cube name as string type in the OLAP database.
+    </td>
+    </tr>
+    <tr>
+    <td>
+        {{'[`sourceInfo`](https://help.syncfusion.com/api/js/ejpivotgauge#members:datasource-sourceinfo "sourceInfo")'| markdownify }}
+    </td>
+    <td>
+        To set the data source name to fetch the data.
+    </td>
+    </tr>
+    <tr>
+    <td>
+        {{'[`providerName`](https://help.syncfusion.com/api/js/ejpivotgauge#members:datasource-providername "providerName")'| markdownify }}
+    </td>
+    <td>
+        Set the provider name for pivot gauge to identify whether the provider is SSAS or Mondrian.
+    </td>
+    </tr>
+    <tr>
+    <td>
+        {{'[`data`](https://help.syncfusion.com/api/js/ejpivotgauge#members:datasource-data "data")'| markdownify }}
+    </td>
+    <td>
+        Provides the raw data source for the pivot gauge.
+    </td>
+    </tr>
+    <tr>
+    <td>
+        {{'[`catalog`](https://help.syncfusion.com/api/js/ejpivotgauge#members:datasource-catalog "catalog")'| markdownify }}
+    </td>
+    <td>
+        In connection with an OLAP database, this property contains the database name as string to fetch the data from the given connection string.
+    </td>
+    </tr>
+    <tr>
+        <td>
+            {{'[`columns`](https://help.syncfusion.com/api/js/ejpivotgauge#members:datasource-columns "columns")'| markdownify }}
+        </td>
+        <td>
+            Lists out the items to bind in columns section.
+             <table class="params">
+            <thead>
+            <tr>
+            <th>Properties</th>
+            <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td>{{'[`fieldName`](https://help.syncfusion.com/api/js/ejpivotgauge#members:datasource-columns-fieldname "fieldName")'| markdownify }} </td>
+            <td>Allows the user to bind the item by using its unique name as field name.</td>
+            </tr>
+            </tbody>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            {{'[`rows`](https://help.syncfusion.com/api/js/ejpivotgauge#members:datasource-rows "rows")'| markdownify }}
+        </td>
+        <td>
+            Lists out the items to bind in rows section.
+             <table class="params">
+            <thead>
+            <tr>
+            <th>Properties</th>
+            <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td>{{'[`fieldName`](https://help.syncfusion.com/api/js/ejpivotgauge#members:datasource-rows-fieldname "fieldName")'| markdownify }} </td>
+            <td>Allows the user to bind the item by using its unique name as field name.</td>
+            </tr>
+            </tbody>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            {{'[`values`](https://help.syncfusion.com/api/js/ejpivotgauge#members:datasource-values "values")'| markdownify }}
+        </td>
+        <td>
+            Lists out the items supports calculation in pivot gauge.
+            <table class="params">
+            <thead>
+            <tr>
+            <th>Properties</th>
+            <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td>{{'[`axis`](https://help.syncfusion.com/api/js/ejpivotgauge#members:datasource-values-axis "axis")'| markdownify }} </td>
+            <td>Allows to set the axis name to place the measures items.</td>
+            </tr>
+            <tr>
+            <td>{{'[`measures`](https://help.syncfusion.com/api/js/ejpivotgauge#members:datasource-values-measures "measures")'| markdownify }}</td>
+            <td>This holds the list of unique names of measures to bind them from the OLAP cube.
+            <table class="params">
+            <thead>
+            <tr>
+            <th>Property</th>
+            <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td>
+                {{'[`fieldName`](https://help.syncfusion.com/api/js/ejpivotgauge#members:datasource-values-measures-fieldName "fieldName")'| markdownify }} </td>
+            <td>Allows the user to bind the measure from OLAP datasource by using its unique name as field name.</td>
+            </tr>
+            </td>
+            </tr>
+            </tbody>
+            </table>
+            </td>
+            </tr>
+            </tbody>
+            </table>
+        </td>
+        </tr>
+
+</table>
+
 ## Creating a simple application with pivot gauge and OLAP data source (server mode)
 
-This section covers the information required to create a simple pivot gauge bound to OLAP data source from the server-side.
+This section covers the information required to create a simple pivot gauge that is bound to the [`OLAP`](/api/js/ejpivotgauge#members:analysismode) data source from the [`server-side`](/api/js/ejpivotgauge#members:operationalmode).
 
-N> This section is illustrated by creating a simple web application through the Visual Studio IDE, since the pivot gauge in the server mode requires .NET dependency. The web application contains an HTML page and a service that will transfer data to server-side, process it, and return it to the client-side for control rendering. The service utilized for communication can be either WCF or WebAPI based on user requirements. Here, both are illustrated for user convenience.
+N> This section is illustrated by creating a simple web application through the Visual Studio IDE since the pivot gauge in the server mode requires .NET dependency. The web application contain an HTML page and a service that will transfer the data to the [`server-side`](/api/js/ejpivotgauge#members:operationalmode), process it, and return it to the [`client-side`](/api/js/ejpivotgauge#members:operationalmode) for control rendering. The service utilized for communication can be WCF or WebAPI based on user requirement. Here, both are illustrated for user convenience.
 
 ### Project initialization
 Create a new **ASP.NET Empty Web Application** by using the Visual Studio IDE and name the project **“PivotGaugeDemo”**.
@@ -205,10 +347,10 @@ Local disk: [Click here](https://help.syncfusion.com/js/installation-and-deploym
 
 CDN link: [Click here](https://help.syncfusion.com/js/cdn) to know more about script and style sheets available in online.
 
-NuGet package: [Click here](https://help.syncfusion.com/js/installation-and-deployment#configuring-syncfusion-nuget-packages) to know more about script and style sheets available in the NuGet package.
+NuGet package: [Click here](https://help.syncfusion.com/js/installation-and-deployment#configuring-syncfusion-nuget-packages) to know more about script and style sheets available in the NuGet package. 
 
 ### Control initialization
-To initialize a pivot gauge widget, first you can define a div tag with an appropriate “id” attribute which acts as a container for the pivot gauge widget. Then, you can initialize the widget by using the `ejPivotGauge` method.
+To initialize a pivot gauge widget, first you can define a “div” tag with an appropriate “id” attribute which acts as a container for the pivot gauge widget. Then, you can initialize the widget by using the `ejPivotGauge` method.
     
 {% highlight html %}
 
@@ -308,23 +450,23 @@ To initialize a pivot gauge widget, first you can define a div tag with an appro
 
 {% endhighlight %}
 
-The `url` property in the pivot gauge widget points the service endpoint, where the data is processed and fetched in the form of JSON. The services used for the pivot gauge widget as endpoint are WCF and WebAPI.
+The [`url`](../api/ejpivotgauge#members:url) property in the pivot gauge widget points the service endpoint, where the data is processed and fetched in the form of JSON. The services used for the pivot gauge widget as endpoint are WCF and WebAPI.
 
-N> The above "GettingStarted.html" contains WebAPI URL, which is **“/Olap”**. If you are using the WCF service, then the URL will look like **"/OlapService.svc"**.
+N> The above "GettingStarted.html" contains WebAPI [`url`](../api/ejpivotgauge#members:url), which is **“/Olap”**. If you are using the WCF service, then the [`url`](../api/ejpivotgauge#members:url) will look like **"/OlapService.svc"**.
 
 ### WebAPI
 
 **Adding a WebAPI controller**
 
-To add a WebAPI controller in your existing web application, right-click the project in the solution explorer and select **Add > New Item.** In the **Add New Item** window, select **WebAPI Controller Class** and name it “OlapController.cs”, and then click **Add.**
+To add a WebAPI controller in your existing web application, right-click the project in the solution explorer and select **Add > New Item.** In the **Add New Item** window, select **WebAPI Controller Class** and name it “OlapController.cs,” and then click **Add.**
 
-Now, the WebAPI controller is added to your application, which, in-turn, comprises the following file. The utilization of this file will be explained in the following sections:
+The WebAPI controller is added to your application, which, in-turn, comprises the following file. The utilization of this file will be explained in the following sections:
  
 * OlapController.cs
 
-N> While adding the WebAPI controller class, add the mandatory suffix “Controller”. For example, in the demo, the controller is named as “OlapController”.
+N> While adding the WebAPI controller class, add the mandatory suffix “Controller”. For example, in the demo, the controller is named “OlapController”.
 
-Next, remove all the existing methods such as “Get”, “Post”, “Put”, and “Delete” present in the `OlapController.cs` file.
+Next, remove all existing methods such as “Get”, “Post”, “Put”, and “Delete” present in the `OlapController.cs` file.
 
 {% highlight c# %}
 
@@ -340,9 +482,9 @@ namespace PivotGaugeDemo
 
 **List of dependency libraries**
 
-Next, you can add the below mentioned dependency libraries to your web application. These libraries can be found in the GAC (Global Assembly Cache).
+Next, you can add the below-mentioned dependency libraries to your web application. These libraries can be found in the GAC (Global Assembly Cache).
 
-To add them to your web application, right-click **References** in the solution explorer and select **Add Reference.** Now, in the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries are found.
+To add them to your web application, right-click **References** in the solution explorer and select **Add Reference.** In the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries are found. 
 
 N> If you have installed any version of SQL Server Analysis Service (SSAS) or Microsoft ADOMD.NET utility, then the location of Microsoft.AnalysisServices.AdomdClient library is [system drive:\Program Files (x86)\Microsoft.NET\ADOMD.NET]. If you have installed any version of Essential Studio, then the location of Syncfusion libraries is [system drive:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\Assemblies].
 
@@ -475,7 +617,7 @@ Now, the pivot gauge will be rendered with the provided data as shown below:
 ![](Olap-Getting-Started_images/ServerMode.png)
 
 ### WCF
-This section demonstrates the utilization of WCF service as endpoint binding the OLAP data source to a simple pivot gauge. For more details on this topic, [click here](https://help.syncfusion.com/js/pivotgauge/olap-connectivity#wcf).
+This section demonstrates the utilization of the WCF service as endpoint binding the [`OLAP`](/api/js/ejpivotgauge#members:analysismode) data source to a simple pivot gauge. For more details on this topic, [click here](https://help.syncfusion.com/js/pivotgauge/olap-connectivity#wcf).
 
 
 
