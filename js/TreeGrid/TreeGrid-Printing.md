@@ -58,7 +58,7 @@ In this case only the visible records in the current page will be send to printi
 
 ## beforePrint Event 
 
-The beforePrint event will be triggered once after printing initiated in TreeGrid. This event contains the TreeGrid element which is going to be printing. The following code explains this.
+The [`beforePrint`](https://help.syncfusion.com/api/js/ejtreegrid#events:beforeprint) event will be triggered once after printing initiated in TreeGrid. This event contains the TreeGrid element which is going to be printing. The following code explains this.
 
 {% highlight js %}
  
