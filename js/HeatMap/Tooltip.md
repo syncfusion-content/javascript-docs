@@ -14,7 +14,7 @@ api: /api/js/ejheatmap
 
 * To show/hide the tooltip of heatmap, use [enableTooltip](/api/js/ejheatmap#members:enabletooltip "enableTooltip") property.
 
-* To show tooltip on mouse over, the [tooltipSettings](/api/js/ejheatmap#members:tooltipsettings "tooltipSettings") property of model needs to be set with the tooltipSettings [templateId](/api/js/ejheatmap#members:tooltipsettings-templateid "templateId") and [position](/api/js/ejheatmap#members:position "position").
+* To show tooltip on mouse over, the [tooltipSettings](/api/js/ejheatmap#members:tooltipsettings "tooltipSettings") property of model needs to be set with the tooltipSettings [templateId](/api/js/ejheatmap#members:tooltipsettings-templateid "templateId") and [position](/api/js/ejheatmap#members:tooltipsettings-position "position").
 
 * The [trigger](/api/js/ejheatmap#members:tooltipsettings-trigger "trigger") property specify the event action to showcase the tooltip. 
 

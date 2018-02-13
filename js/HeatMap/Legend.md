@@ -41,9 +41,9 @@ Resultant legend will be like following image.
 
 ### colorMapping of HeatMapLegend
 
-* The heatmap legend [color](/api/js/ejheatmaplegend#members:colormappingcollection-color "color") property is used to specify the color for starting range of heatmap datasource.
+* The heatmap legend [colorMappingCollection](/api/js/ejheatmaplegend#members:colormappingcollection "colorMappingCollection") [color](/api/js/ejheatmaplegend#members:colormappingcollection-color "color") property is used to specify the color for starting range of heatmap datasource.
 
-* The heatmap legend [value](/api/js/ejheatmaplegend#members:colormappingcollection-value "value") property is used to specify the values for starting range of heatmap datasource.
+* The heatmap legend colorMappingCollection [value](/api/js/ejheatmaplegend#members:colormappingcollection-value "value") property is used to specify the values for starting range of heatmap datasource.
 
 * You can place a text for heatmap legend using [label](/api/js/ejheatmaplegend#members:colormappingcollection-label "label") [text](/api/js/ejheatmaplegend#members:colormappingcollection-label-text "text") property and text can be customized with [bold](/api/js/ejheatmaplegend#members:colormappingcollection-label-bold "bold"), [italic](/api/js/ejheatmaplegend#members:colormappingcollection-label-italic "italic"), , [textDecoration](/api/js/ejheatmaplegend#members:colormappingcollection-label-textdecoration "textDecoration"), [fontSize](/api/js/ejheatmaplegend#members:colormappingcollection-label-fontsize "fontSize"), [fontFamily](/api/js/ejheatmaplegend#members:colormappingcollection-label-fontfamily "fontFamily") and [fontColor](/api/js/ejheatmaplegend#members:colormappingcollection-label-fontcolor "fontColor") properties.
 
@@ -55,7 +55,7 @@ The heatmap legend control has support for the responsive behavior based on clie
  
 ## Legend Mode
 
-There are two type of [legendMode](/api/js/ejheatmap#members:legendmode "legendMode").
+There are two type of [legendMode](/api/js/ejheatmaplegend#members:legendmode "legendMode").
 
 ### Gradient:
 
@@ -89,7 +89,7 @@ $("#heatmap_legend").ejHeatMapLegend({
 
 ## Orientation
 
-There are 2 types of [orientation](/api/js/ejheatmap#members:orientation "orientation") available for legend and its applicable for both Gradient and List Mode.
+There are 2 types of [orientation](/api/js/ejheatmaplegend#members:orientation "orientation") available for legend and its applicable for both Gradient and List Mode.
 
 * Horizontal
 * Vertical
