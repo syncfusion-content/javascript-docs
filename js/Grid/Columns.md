@@ -396,6 +396,58 @@ The following output is displayed as a result of the above code example.
 
 ![](columns_images/columns_img31.png)
 
+## Resizing
+
+The [`allowResizing`](https://help.syncfusion.com/api/js/ejgrid#members:allowresizing "allowResizing") property enables the grid to set the width to columns based on resizing the grid column manually.
+
+### Resizing modes
+
+[`resizeSettings.resizeMode`](https://help.syncfusion.com/api/js/ejgrid#members:resizesettings-resizemode "resizeSettings.resizeMode") mode is used to change the resizing modes. It indicates whether to define mode of resizing.
+
+<table>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="name">Normal</td>
+<td class="description">New column size will be adjusted by all other Columns</td>
+</tr>
+<tr>
+<td class="name">NextColumn</td>
+<td class="description">New column Size will be adjusted using next column.</td>
+</tr>
+<tr>
+<td class="name">Control</td>
+<td class="description">New column Size will be adjusted using entire control</td>
+</tr>
+</table>
+
+The following code example describes the above behavior.
+
+{% highlight html %}
+<div id="Grid"> </div> 
+{% endhighlight %}
+
+{% highlight javascript %}
+<script>
+$(function () {
+            // the datasource "window.gridData" is referred from jsondata.min.js
+          var data = ej.DataManager(window.gridData).executeLocal(ej.Query().take(40));
+            $("#Grid").ejGrid({
+                dataSource: data,
+                allowResizing: true,
+                resizeSettings: { resizeMode: "nextcolumn" },
+                columns: [
+                    { field: "ShipCity", headerText: "Ship City", width: 80 },
+                    { field: "ShipPostalCode", headerText: "Ship Postal Code", width: 40 },
+                    { field: "ShipName", headerText: "Ship Name", width: 40 },
+                    { field: "ShipAddress", headerText: "Ship Address", width: 100 },
+                ]
+            });
+        });
+</script>
+{% endhighlight %}
 
 ## Resize to fit 
 
