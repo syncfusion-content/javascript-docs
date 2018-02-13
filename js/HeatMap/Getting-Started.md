@@ -121,7 +121,7 @@ $("#heatmap").ejHeatMap({
  
 ## Color Mapping
   
-Next we can configure color range for these values by using [colorMappingCollection](api/js/ejheatmap#members:colormappingcollection "colorMappingCollection") property of the HeatMap.
+Next we can configure color range for these values by using [colorMappingCollection](/api/js/ejheatmap#members:colormappingcollection "colorMappingCollection") property of the HeatMap.
  
 * Configure items mapping based on items source.
  

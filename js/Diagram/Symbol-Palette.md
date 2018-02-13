@@ -332,7 +332,7 @@ You can also customize the preview size of the all palette items. The [previewWi
 
 ![](/js/Diagram/Symbol-Palette_images/Symbol-Palette_img5.png)
 
-Symbol palette allows to sets the [offset](ejsymbolpalette#members:previewoffset "offset") of the dragging helper relative to the mouse cursor.
+Symbol palette allows to sets the [offset](/api/js/ejsymbolpalette#members:previewoffset "offset") of the dragging helper relative to the mouse cursor.
 
 {% highlight javascript %}
 
