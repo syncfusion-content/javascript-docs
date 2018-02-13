@@ -348,7 +348,7 @@ The following output is displayed as a result of the above code example.
 
 ## Drag Selection
 
-The Drag selection allows to perform selection of the particular row or cell by performing mouse dragging.  To enable drag selection, set [`allowDragSelection`](https://help.syncfusion.com/api/js/ejgrid#members:selectionsettings-allowdragselection "allowDragSelection") property of the [`selectionSettings`](https://help.syncfusion.com/api/js/ejgrid#members:selectionsettings "selectionSettings") as `true`. Now you can select the cells or rows in the Grid by drgging the mouse. 
+The Drag selection allows to perform selection of the particular row or cell by performing mouse dragging.  To enable drag selection, set [`allowDragSelection`](https://help.syncfusion.com/api/js/ejgrid#members:selectionsettings-allowdragselection "allowDragSelection") property of the [`selectionSettings`](https://help.syncfusion.com/api/js/ejgrid#members:selectionsettings "selectionSettings") as `true`. Now you can select the cells or rows in the Grid by dragging the mouse. 
 
 N> The [`selectionType`](https://help.syncfusion.com/api/js/ejgrid#members:selectiontype "selectionType") property as should be set as `multiple`, to select multiple cells in Grid by mouse dragging. 
 
