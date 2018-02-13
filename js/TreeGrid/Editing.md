@@ -381,7 +381,7 @@ The updated record values are maintained in collection in TreeGrid, and the user
 
 ## Add new record
 
-In TreeGrid, it is provide the support to add new record by setting [`allowAdding`](/api/js/ejtreegrid#members:editsettings-allowadding "editSettings.allowAdding") property as `true`. You can add new record by toolbar add item click or context menu.
+TreeGrid provides support for adding a new record by setting [`allowAdding`](/api/js/ejtreegrid#members:editsettings-allowadding "editSettings.allowAdding") property as `true`. You can add new record by toolbar add item click or context menu.
 
 The below code example shows how to enable add new record option in TreeGrid.
 
