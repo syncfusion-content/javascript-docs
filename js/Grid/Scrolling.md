@@ -9,8 +9,6 @@ api: /api/js/ejgrid
 --- 
 # Scrolling
 
-# Scrolling
-
 Scrolling can be enabled by setting the [`allowScrolling`](https://help.syncfusion.com/api/js/ejgrid#members:allowscrolling "allowScrolling") as `true`. The height and width can be set to grid by using the properties [`scrollSettings.height`](https://help.syncfusion.com/api/js/ejgrid#members:scrollsettings-height "scrollSettings.height") and [`scrollSettings.width`](https://help.syncfusion.com/api/js/ejgrid#members:scrollsettings-width "scrollSettings.width") respectively.
 
 The height and width can be set in percentage and pixel. The default value for [`height`](https://help.syncfusion.com/api/js/ejgrid#members:scrollsettings-height "height") and [`width`](https://help.syncfusion.com/api/js/ejgrid#members:scrollsettings-width "width") in the [`scrollSettings`](https://help.syncfusion.com/api/js/ejgrid#members:scrollsettings "scrollSettings") is 0 and `auto` respectively.
