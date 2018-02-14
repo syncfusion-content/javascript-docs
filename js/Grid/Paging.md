@@ -141,7 +141,14 @@ The following output is displayed as a result of the above code example.
 
 ## Pager with pageSettings
 
-We can customize the default page settings, such as [`pageCount`](https://help.syncfusion.com/api/js/ejgrid#members:pagesettings-pagecount "pageCount"), [`pageSize`](https://help.syncfusion.com/api/js/ejgrid#members:pagesettings-pagesize "pageSize")  of the Grid's pager by using [`pageSettings`](https://help.syncfusion.com/api/js/ejgrid#members:pagesettings "pageSettings") property of Grid control. 
+We can customize the following default  [`pageSettings`](https://help.syncfusion.com/api/js/ejgrid#members:pagesettings "pageSettings") properties of Grid control.
+
+1. [`pageCount`](https://help.syncfusion.com/api/js/ejgrid#members:pagesettings-pagecount "pageCount")
+2. [`pageSize`](https://help.syncfusion.com/api/js/ejgrid#members:pagesettings-pagesize "pageSize")
+3. [`currentPage`](https://help.syncfusion.com/api/js/ejgrid#members:pagesettings-currentpage "currentPage") 
+4. [`printMode`](https://help.syncfusion.com/api/js/ejgrid#members:pagesettings-printmode "printMode")   
+
+To get the value of  total number of pages and total number of records in the grid use [`totalPages `](https://help.syncfusion.com/api/js/ejgrid#members:pagesettings-totalpages  "totalPages ") and [`totalRecordsCount `](https://help.syncfusion.com/api/js/ejgrid#members:pagesettings-totalrecordscount  "totalRecordsCount ") properties of [`pageSettings`](https://help.syncfusion.com/api/js/ejgrid#members:pagesettings "pageSettings") respectively.
 
 The following code example describes the above behavior.
 
@@ -155,7 +162,7 @@ $(function () {
 		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
         dataSource: window.gridData,
         allowPaging: true,
-        pageSettings: { pageSize: 8, pageCount:3}
+        pageSettings: { pageSize: 8, pageCount:3, currentPage:2, printMode:ej.Grid.PrintMode.CurrentPage }
     });
 });
 {% endhighlight %}

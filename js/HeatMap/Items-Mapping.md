@@ -160,6 +160,8 @@ Let us see the difference between two types of mapping. Following table represen
 
 * The columnStyle [templateID](/api/js/ejheatmap#members:itemsmapping-columnstyle-templateid "templateID") property is used to set an templateId for individual heatmap column. To set an template id for all heatmap columns, use defaultColumnStyle [templateID](/api/js/ejheatmap#members:defaultcolumnstyle-templateid "templateID") property.
  
+* To customize the header column, use headerMapping [columnStyle](/api/js/ejheatmap#members:itemsmapping-headermapping-columnstyle "columnStyle") property.
+
 * To hide the cell content, use [heatmapCell](/api/js/ejheatmap#members:heatmapcell "heatmapCell") [showContent](/api/js/ejheatmap#members:heatmapcell-showcontent "showContent") property as hidden and use [showColor](/api/js/ejheatmap#members:heatmapcell-showcolor "showColor") property to specify whether the cell color can be visible or not.
 
 ## Virtualization
