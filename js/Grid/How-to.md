@@ -274,7 +274,7 @@ The following output is displayed as a result of the above code example.
 
 ## Set foreignKeyField for Child Grid
 
-The `queryString` property is used to filter the childGrid data based on value in parent Grid data. But when the field name provided in `queryString` does not exists in Child Grid, then `foreignKeyField`(https://help.syncfusion.com/api/js/ejgrid#members:childgrid "foreignKeyField") property is used to filter the childGrid data. If the map field name for parent and child grid differs then you have to use `foreignKeyField`(https://help.syncfusion.com/api/js/ejgrid#members:childgrid "foreignKeyField") property of Grid.
+The [`queryString`](https://help.syncfusion.com/api/js/ejgrid#members:childgrid-querystring "queryString") property is used to filter the childGrid data based on value in parent Grid data. But when the field name provided in [`queryString`](https://help.syncfusion.com/api/js/ejgrid#members:childgrid-querystring "queryString") does not exists in Child Grid, then [`foreignKeyField`](https://help.syncfusion.com/api/js/ejgrid#members:childgrid-foreignkeyfield "foreignKeyField") property is used to filter the childGrid data. If the map field name for parent and child grid differs then you have to use [`foreignKeyField`](https://help.syncfusion.com/api/js/ejgrid#members:childgrid-foreignkeyfield "foreignKeyField") property of Grid.
 
 The following code example explains the above behavior.
 
