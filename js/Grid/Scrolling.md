@@ -45,7 +45,7 @@ The following output is displayed as a result of the above code example.
 
 We can show or hide the scrollbar while focus in or focus out of the Grid using  [`autoHide`](https://help.syncfusion.com/api/js/ejgrid#members:scrollsettings-autohide "autoHide") property of  [`scrollSettings`](https://help.syncfusion.com/api/js/ejgrid#members:scrollsettings "scrollSettings") 
 
-The height and width of button in the scrollbar can be customised by using [`buttonSize `](https://help.syncfusion.com/api/js/ejgrid#members:scrollsettings-buttonsize  "buttonSize ") property of  [`scrollSettings`](https://help.syncfusion.com/api/js/ejgrid#members:scrollsettings "scrollSettings") 
+The height and width of button in the scrollbar can be customized by using [`buttonSize `](https://help.syncfusion.com/api/js/ejgrid#members:scrollsettings-buttonsize  "buttonSize ") property of  [`scrollSettings`](https://help.syncfusion.com/api/js/ejgrid#members:scrollsettings "scrollSettings") 
 
 To specify the scroll down pixel of mouse wheel, to scroll mouse wheel and view the grid contents use [`scrollOneStepBy  `](https://help.syncfusion.com/api/js/ejgrid#members:scrollsettings-scrollonestepby  "scrollOneStepBy  ") property of  [`scrollSettings`](https://help.syncfusion.com/api/js/ejgrid#members:scrollsettings "scrollSettings") 
 
