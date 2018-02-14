@@ -102,8 +102,7 @@ The following output is displayed as a result of the above code example.
 
 ![](Row_images/Row_img2.png)
 
-
-By using [`getIndexByRow`](https://help.syncfusion.com/api/js/ejgrid#methods:getindexbyrow "getIndexByRow") you can get the row index based on the given tr element in Grid while on detail template it returns row index excluding detail rows.
+By using [`getIndexByRow`](https://help.syncfusion.com/api/js/ejgrid#methods:getindexbyrow "getIndexByRow") you can get the row index of provided tr element and index value would not have considered detail row elements in grid content.
 
 ## Row Template
 
@@ -312,7 +311,7 @@ The following output is displayed after dropping Grid rows.
 ![](Row_images/Row_img8.png)
 {:After Drop}
 
-You can re-order the row in the Grid by using [`reorderRows`](https://help.syncfusion.com/api/js/ejgrid#methods:reorderrows "reorderRows") method.
+You can re-order the rows in the Grid dynamically by using [`reorderRows`](https://help.syncfusion.com/api/js/ejgrid#methods:reorderrows "reorderRows") method.
 
 N> 1. While Drag and Drop, the following events are triggered [`rowDrag`](https://help.syncfusion.com/api/js/ejgrid#events:rowdrag "rowDrag"), [`rowDrop`](https://help.syncfusion.com/api/js/ejgrid#events:rowdrop "rowDrop"), [`rowDragStart`](https://help.syncfusion.com/api/js/ejgrid#events:rowdragstart "rowDragStart")
 
