@@ -268,7 +268,7 @@ The following output is displayed as a result of the above code example.
 ![](scrolling_images/scrolling_img7.png)
 
 
-N> By using [`rowHeightRefresh`](https://help.syncfusion.com/api/js/ejgrid#methods:rowheightrefresh "rowHeightRefresh") method you can resolves row height issue when unbound column is used with FrozenColumn.
+N> By using [`rowHeightRefresh`](https://help.syncfusion.com/api/js/ejgrid#methods:rowheightrefresh "rowHeightRefresh") method resolves row height issue when movable and frozen content height mismatch.
 
 
 ## Touch scroll
