@@ -76,6 +76,65 @@ Set name and value for each radio button control as follows.
 
 {% endhighlight %}
 
+## State persistence
+
+**RadioButton** widget provide options to maintain the selected value after you refresh the page by using **enablePersistence** property.
+
+### Steps to use State persistence of the RadioButton
+
+The following steps explains you to use **enablePersistence** property.
+
+{% highlight html %}
+
+    <input type="radio" name="radioButton" id="radioButton"/>
+
+{% endhighlight %}
+
+{% highlight javascript %}
+
+    // Use enablePersistence property to maintain selected value as follows.
+    $(function () {
+       $("#radioButton").ejRadioButton({ enablePersistence: true });
+    });
+    
+{% endhighlight %}
+
+## Enable/Disable RadioButton
+
+**RadioButton** provides you an option to enable /disable the RadioButton. You can disable the ToggleButton by setting the “**enabled**” property value as **false**.
+
+The following steps explain you to enable/disable property in **RadioButton** .
+
+
+{% highlight html %}
+
+
+    <input type="radio" name="radioButton" id="radioButton"/>
+    <label for="radioButton">Experienced</label> 
+
+{% endhighlight %}
+
+{% highlight javascript %}
+
+    // To enable/disable RadioButton controls use the following code example.
+    //Enable RadioButton:
+    $(function () {
+
+         $("#radioButton").ejRadioButton ({ enabled: true });                                       
+    });
+    //Disable RadioButton:
+    $(function () {
+
+        $("#radioButton").ejRadioButton ({ enabled: false });
+    });
+
+{% endhighlight %}
+
+Execute the above code to render the following output.
+
+![](/js/RadioButton/Miscellaneous_images/Miscellaneous_img1.png) 
+
+![](/js/RadioButton/Miscellaneous_images/Miscellaneous_img2.png) 
 
 
 

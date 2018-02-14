@@ -170,3 +170,103 @@ It specifies the mapping field of tool tip text.<br/><br/></td></tr>
 
 {% endhighlight %}
 
+## Enable RTL
+
+You can displays DatePicker calendar along with DatePicker input field in Right to Left direction.You can utilize this option by make use of [enableRTL](https://help.syncfusion.com/api/js/ejdatepicker#members:enablertl) property.
+
+{% highlight javascript %}
+
+        $(function () {
+
+            // creates DatePicker from input
+
+            $("#datePicker").ejDatePicker({
+
+               enableRTL : true //DatePicker input field in Right to Left direction.
+            });
+
+        });
+
+{% endhighlight %}
+
+##  Show Highlight Section  
+
+HighlightSection is used to highlight currently selected date’s **month/week/workdays**. See below to get available HighlightSection options.You can utilize this option by make use of [highlightSection](https://help.syncfusion.com/api/js/ejdatepicker#members:highlightsection) property.
+
+{% highlight javascript %}
+
+        $(function () {
+
+            // creates DatePicker from input
+
+            $("#datePicker").ejDatePicker({
+
+                highlightSection: "week" // hides the days of other months in DatePicker calendar
+
+            });
+
+        });
+
+{% endhighlight %}
+
+##  highlightWeekend  
+
+highlightWeekend is used to Weekend dates will be highlighted when this property is set to true. See below to get available highlightWeekend options.You can utilize this option by make use of [highlightWeekend](https://help.syncfusion.com/api/js/ejdatepicker#members:highlightweekend) property.
+
+{% highlight javascript %}
+
+        $(function () {
+
+            // creates DatePicker from input
+
+            $("#datePicker").ejDatePicker({
+
+                highlightWeekend:true // highlight the weekend in DatePicker calendar
+
+            });
+
+        });
+
+{% endhighlight %}
+
+
+### Rounded Corners
+
+You can make use of **showRoundedCorner** property in order to add rounded borders to the input and popup elements. By default, in DatePicker this will be disabled state we can enable this by setting true to this API.
+
+// creates DatePicker and setting rounded corner dynamically
+
+
+{% highlight html %}
+
+
+        $("#datepicker").ejDatePicker();
+
+        dateObj = $("#datepicker").ejDatePicker("instance");
+
+        dateObj.option("showRoundedCorner", true);
+
+{% endhighlight %}
+
+
+### Show Disable Ranges
+
+You can make use of **ShowDisableRanges** property its used to allow show/hide the disabled date ranges
+
+
+{% highlight html %}
+
+
+        $(function () {
+
+            // creates DatePicker from input
+
+            $("#datePicker").ejDatePicker({
+
+                showDisabledRange: false  // hides the disable ranges in DatePicker calendar
+
+            });
+
+        });
+
+{% endhighlight %}

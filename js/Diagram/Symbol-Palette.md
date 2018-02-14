@@ -138,7 +138,15 @@ The following image shows the customized palette header
 
 ## Add symbols to palette
 
-The symbol need to be defined and added to the [items](/api/js/ejsymbolpalette#members:palettes-items "items") collection of the palette. You can create a symbol as a node, group, connector, lane, or phase except swimlane. To create a symbol, you first need to define that element as JSON. The following code example illustrates how to define a symbol.
+The symbol need to be defined and added to the [items](/api/js/ejsymbolpalette#members:palettes-items "items") collection of the palette. You can create a symbol as a node, group, connector, lane, or phase except swimlane. 
+
+* When adding the lane into palette, The lane's [orientation](/api/js/ejdiagram#members:nodes-lanes-orientation "orientation") property allows you to define render the lane in either horizontal/vertical direction.
+
+* Similarly, the phase's [orientation](/api/js/ejdiagram#members:nodes-phases-orientation "orientation") property is mainly used to add phase in symbol palette. The orientation can be set as horizontal/vertical to render horizontal/vertical phases respectively. The [type](/api/js/ejdiagram#members:nodes-phases-type "type") property of phase that helps identify the object as a phase.
+
+* Also node.paletteItem's [label](/api/js/ejdiagram#members:nodes-paletteitem-label "label") property is used to set the  display name to symbol added in the symbol palette.
+
+To create a symbol, you first need to define that element as JSON. The following code example illustrates how to define a symbol.
 
 {% highlight js %}
 
@@ -229,7 +237,8 @@ Symbol size will be set based on the following precedence.
 * Symbol size will be rendered in the palette based on node.paletteItem's [width](/api/js/ejdiagram#members:nodes-paletteitem-width "width") and [height](/api/js/ejdiagram#members:nodes-paletteitem-height "height") property. 
 * If paletteItem's width and height property is not specified, symbol size will be rendered in the palette based on model's [paletteItemWidth](/api/js/ejsymbolpalette#members:paletteitemheight "paletteItemWidth") and [paletteItemHeight](/api/js/ejsymbolpalette#members:paletteitemwidth "paletteItemHeight") property. 
 * If you don't specify above two, then symbol size will be rendered in the palette based on node's [width](/api/js/ejdiagram#members:nodes-width "width") and [height](/api/js/ejdiagram#members:nodes-height "height") property. 
- 
+
+* The node.paletteItem's [margin](/api/js/ejdiagram#members:nodes-paletteitem-margin "margin") property is used to create the space around elements, outside of any defined borders. 
 
 ### Stretch the symbols into the palette
 
@@ -323,7 +332,7 @@ You can also customize the preview size of the all palette items. The [previewWi
 
 ![](/js/Diagram/Symbol-Palette_images/Symbol-Palette_img5.png)
 
-Symbol palette allows to sets the [offset](ejsymbolpalette#members:previewoffset "offset") of the dragging helper relative to the mouse cursor.
+Symbol palette allows to sets the [offset](/api/js/ejsymbolpalette#members:previewoffset "offset") of the dragging helper relative to the mouse cursor.
 
 {% highlight javascript %}
 

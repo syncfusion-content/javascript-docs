@@ -427,11 +427,14 @@ Multiplicity is a definition of an inclusive interval of non-negative integers t
 * OneToMany
 * ManyToMany
 
-* By default the multiplicity will be considered as "OneToOne". You can customize it using the [multiplicity](/api/js/ejdiagram#members:connectors-shape-multiplicity "multiplicity") property of connector.
-* Multiplicity [source](/api/js/ejdiagram#members:connectors-shape-multiplicity-source "source") property used to set the source label to connector. Applicable, if the connector is of type “UML”.
+* By default the multiplicity will be considered as "OneToOne". 
+* [multiplicity](/api/js/ejdiagram#members:connectors-shape-multiplicity "multiplicity") property in UML allows to specify large number of elements or some collection of elements.
+
+* The shape.multiplicity's [source](/api/js/ejdiagram#members:connectors-shape-multiplicity-source "source") property used to set the source label to connector and [target](/api/js/ejdiagram#members:connectors-shape-multiplicity-target "target") property used to set the target label to connector.
+
 * To set an optionality/cardinality for the connector source label, use [optional](/api/js/ejdiagram#members:connectors-shape-multiplicity-source-optional "optional") property.
-* To specify an interval for number of instances of source label, use [lowerBounds](/api/js/ejdiagram#members:connectors-shape-multiplicity-source-lowerbounds "lowerBounds") and [upperBounds](/api/js/ejdiagram#members:connectors-shape-multiplicity-source-upperBounds "upperBounds") properties.
-* Multiplicity [target](/api/js/ejdiagram#members:connectors-shape-multiplicity-target "target") property used to set the target label to connector. Applicable, if the connector is of type “UML”.
+
+* [lowerBounds](/api/js/ejdiagram#members:connectors-shape-multiplicity-source-lowerbounds "lowerBounds") and [upperBounds](/api/js/ejdiagram#members:connectors-shape-multiplicity-source-upperbounds "upperBounds") could be natural constants or constant expressions evaluated to natural (non negative) number. Upper bound could be also specified as asterisk '*' which denotes unlimited number of elements. Upper bound should be greater than or equal to the lower bound.
 
 The following code example illustrates how to customize the multiplicity.
 

@@ -8,11 +8,11 @@ documentation: ug
 api: /api/js/ejpivotgauge
 ---
 
-# Frame Type
+# Frame type
 
-## Full Circle
+## Full circle
 
-Full Circle frame lets the PivotGauge display in circular shape. Frame type can be set using the [`frameType`](/api/js/ejcirculargauge#members:frame) property.  By default, the frame type is "fullCircle".
+Full circle frame allows the pivot gauge to display in a circular shape. The frame type can be set by using the [`frameType`](/api/js/ejcirculargauge#members:frame) property. By default, the frame type is "fullCircle".
 
 {% highlight javascript %}
 
@@ -25,9 +25,9 @@ Full Circle frame lets the PivotGauge display in circular shape. Frame type can 
 
 ![](Frame-Type_images/FullCircle.png) 
 
-## Half Circle
+## Half circle
 
-Half Circle frame lets the PivotGauge to display in semi-circular shape. For this, frame type needs to be set as "halfCircle" within the [`frameType`](/api/js/ejcirculargauge#members:frame) property and need to set `startAngle` and `sweepAngle` for the PivotGauge in the  [`scales`](/api/js/ejcirculargauge#members:scales) property.
+The half circle frame allows the pivot gauge to display in a semi-circular shape. For this, the frame type should be set as "halfCircle" within the [`frameType`](/api/js/ejcirculargauge#members:frame) property and should set the `startAngle` and `sweepAngle` for the pivot gauge in the  [`scales`](/api/js/ejcirculargauge#members:scales) property.
 
 {% highlight javascript %}
 

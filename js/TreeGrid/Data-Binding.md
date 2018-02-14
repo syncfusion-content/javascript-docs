@@ -79,6 +79,21 @@ The output of the above steps is as follows:
 
 ![](/js/TreeGrid/Data-Binding_images/Data-Binding_img1.png)
 
+It is also possible to set the data source to TreeGrid using ejDataManager. And we can pass the query value to ejDataManager by using [`query`](https://help.syncfusion.com/api/js/ejtreegrid#members:query) property. 
+
+The following code example explains how to assign the ejDataManager instance to TreeGrid.
+
+{% highlight js %}
+
+    $("#TreeGridContainer").ejTreeGrid({
+        //...
+        dataSource: ej.DataManager(taskDetails),
+        query: ej.Query().select("taskID", "taskName", "startDate", "duration", "progress", "subtasks"),
+        //...
+    });
+
+{% endhighlight %}
+
 ### Self-Referential Data Binding (Flat Data)
 
 TreeGrid is rendered from Self-Referential data structures by providing two fields, **ID** field and **parent ID** field.
@@ -130,6 +145,8 @@ TreeGrid is rendered from Self-Referential data structures by providing two fiel
 The following screenshot shows the output of the above steps,
 
 ![](/js/TreeGrid/Data-Binding_images/Data-Binding_img2.png)
+
+It is possible to the refresh the data source rendered in TreeGrid at run-time using the [`refresh`](https://help.syncfusion.com/api/js/ejtreegrid#methods:refresh "refresh") method. The data source to be displayed and the query to render the data should be passed as the method parameters.
 
 ## Remote data binding
 
@@ -242,7 +259,7 @@ Please refer to this [link](https://help.syncfusion.com/js/datamanager/data-bin
 1. Mapping the expand state of a record using the `expandStateMapping` property is not supported in load on demand feature.
 2. If a root or parent node is in collapsed state (child nodes not yet loaded), then that parent node will not be expanded while inserting new child to that parent node using toolbar icon or drag and drop actions.
 
-## Virtualization mode in TreeGrid
+## Virtual rendering
 Virtualization support is used to render large number of records in TreeGrid with effective performance. In this mode all the records are fetched from data source initially, but only few records will be displayed in the document object model (DOM) which should be visible to the user. While scrolling, the visible records are updated in DOM as per the scrolled position. This mode can be enabled by setting [`enableVirtualization`](/api/js/ejtreegrid#members:enablevirtualization "enableVirtualization") property as `true`. 
 
 The below code example shows how to use this property.
@@ -254,3 +271,8 @@ $("#TreeGrid").ejTreeGrid({
     //...
 });
 {% endhighlight %}
+
+## Setting scroll offset to the content
+
+The TreeGrid by default without enabling paging, will render the contents with horizontal and vertical scrollbars. The method [`scrollOffset`](https://help.syncfusion.com/api/js/ejtreegrid#methods:scrolloffset "scrollOffset") allows the user to scroll the content to the specified left and top offset values with custom actions at run-time.
+It is also possible to get the scroll offsets of the content by the using the [`getScrollTopOffset`](https://help.syncfusion.com/api/js/ejtreegrid#methods:getscrolltopoffset "getScrollTopOffset") and [`getScrollLeftOffset`](https://help.syncfusion.com/api/js/ejtreegrid#methods:getscrollleftoffset "getScrollLeftOffset") methods. At any instances, the user can scroll the TreeGrid content to the top most position and to the bottom position by using the [`scrollToTop`](https://help.syncfusion.com/api/js/ejtreegrid#methods:scrolltotop "scrollToTop") and [`scrollToBottom`](https://help.syncfusion.com/api/js/ejtreegrid#methods:scrolltobottom "scrollToBottom") methods.

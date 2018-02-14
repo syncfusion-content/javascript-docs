@@ -10,9 +10,9 @@ api: /api/js/ejpivotgauge
 
 # Labels
 
-## Adding Label Collection
+## Adding label collection
 
-Label collection can be directly added to the scales option within the PivotGauge widget as an array.
+The label collection can be added directly to the scales option within the pivot gauge widget as an array.
 
 {% highlight javascript %}
 
@@ -27,16 +27,16 @@ Label collection can be directly added to the scales option within the PivotGaug
     });
 {% endhighlight %}
 
-## Appearance Customization
+## Appearance customization
 
-The appearance of the Label can be customized through the following properties.
+The appearance of the label can be customized through the following properties:
 
-* **angle** – used to display labels in a rotated manner. By default, the value is 0.
-* **color** – displays the label in specified color.
+* **angle** – displays labels in a rotated manner. By default, the value is 0.
+* **color** – displays the label in a specified color.
 * **opacity** – sets the opacity of the label. By default, the value is 1.
 * **type** – indicates the label for major intervals or minor intervals.  By default, it takes major intervals.
-* **includeFirstValue** – includes the initial value based on user requirement.  By default, the value is “true”.
-* **font** – sets the font size, font style and font family of the label.
+* **includeFirstValue** – includes the initial value based on user's requirement. By default, the value is true.
+* **font** – sets the font size, font style, and font family of the label.
 
 {% highlight javascript %}
 
@@ -75,11 +75,11 @@ The appearance of the Label can be customized through the following properties.
 
 ![](Labels_images/AppearanceCustomization.png) 
 
-## Unit Text
+## Unit text
 
-The `unitText` property is used to add some text along with the labels. Normally, we indicate the unit/measurement of the numeric value through unit text. Using the `unitTextPosition` property, the text can be positioned either in front or back. 
+The `unitText` property is used to add some text along with labels. Normally, the unit/measurement of the numeric value is indicated through a unit text. By using the `unitTextPosition` property, the text can be positioned in front or back. 
 
-N> By default, text appears at the back.
+N> By default, the text appears at the back.
 
 {% highlight javascript %}
 

@@ -87,9 +87,9 @@ The steps to configure the Syncfusion JavaScript NuGet Packages in Visual Studio
 
    **Name**: Name of the package that listed in Available package sources  
    **Source**: Syncfusion JavaScript NuGet Package feed URL 
-   [http://nuget.syncfusion.com/javascript](http://nuget.syncfusion.com/javascript)
+   [http://nuget.syncfusion.com/nuget_javascript/nuget/getsyncfusionpackages/javascript](http://nuget.syncfusion.com/nuget_javascript/nuget/getsyncfusionpackages/javascript)
     
-   ![](Installation-and-Deployment_images/NuGetConfig2.jpeg)
+   ![](Installation-and-Deployment_images/NuGetConfig2.png)
 
    N> The `Source` text box in the above image denotes the location of the NuGet packages and the `Name` section, allows you to provide a unique name for NuGet Packages Source.
     

@@ -8,29 +8,29 @@ documentation: ug
 api: /api/js/ejpivotgauge
 ---
 
-# DataBinding 
+# Data binding
 
-## Binding PivotGauge to Collection
-This section demonstrates binding of a collection to the PivotGauge control as datasource. For more information on this datasource refer to the following links.
+## Binding pivot gauge to collection
+This section demonstrates binding a collection to the pivot gauge control as data source. For more information on this data source, refer to the following links:
 
-When you are using WebAPI controller, refer to the “Datasource Initialization” section under the following [link](https://help.syncfusion.com/js/pivotgauge/relational-getting-started#creating-a-simple-application-with-pivotgauge-and-relational-datasource-server-mode).
+If you are using the WebAPI controller, refer to the “Datasource Initialization” section under the following [link](https://help.syncfusion.com/js/pivotgauge/relational-getting-started#creating-a-simple-application-with-pivotgauge-and-relational-datasource-server-mode).
 
-If you are using WCF Service, refer the "Datasource Initialization" section below.
+If you are using the WCF Service, refer to the "Datasource Initialization" section below:
 
 ## WCF
-**Adding a WCF Service**
+**Adding a WCF service**
 
-To add a WCF service in an existing web application, right-click on the project in Solution Explorer and select **Add > New Item**. In the **Add New Item** window, select **WCF Service** and name it as **“RelationalService.svc”** and click **Add**. 
+To add a WCF service in an existing web application, right-click the project in the solution explorer and select **Add > New Item**. In the **Add New Item** window, select **WCF Service** and name it **“RelationalService.svc,”** and then click **Add**.
 
-Now WCF service is added into your application successfully which in-turn comprise of the following files. The utilization of these files will be explained in the immediate sections. 
+The WCF service is added to your application, which, in-turn, comprises the following files. The utilization of these files will be explained in the immediate sections. 
 
 * RelationalService.svc
 * RelationalService.svc.cs
 * IRelationalService.cs
 
-**Configuring WCF Service Class**
+**Configuring WCF service class**
 
-Remove the “DoWork” method present inside both `RelationalService.svc.cs` and `IRelationalService.cs` files. Next, add “AspNetCompatibilityRequirements” attribute on top of main class present inside `RelationalService.svc.cs` and set **“RequirementsMode”** value to **“Allowed”**.
+Remove the “DoWork” method present in both `RelationalService.svc.cs` and `IRelationalService.cs` files. Next, add “AspNetCompatibilityRequirements” attribute on top of the main class that is present in the `RelationalService.svc.cs` file and set **RequirementsMode** value to **Allowed**.
 
 {% highlight c# %}
     
@@ -44,11 +44,11 @@ namespace PivotGaugeDemo
 }
 {% endhighlight %}
 
-**List of Dependency Libraries**
+**List of dependency libraries**
 
-Next you need to add the below mentioned dependency libraries into your Web Application. These libraries could be found in GAC (Global Assembly Cache) as well.
+Next, you can add the below-mentioned dependency libraries to your web application. These libraries can be found in the GAC (Global Assembly Cache).
  
-To add them to your Web Application, right-click on **References** in Solution Explorer and select **Add Reference**. Now in the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries are found. 
+To add them to your web application, right-click **References** in the solution explorer and select **Add Reference**. In the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries are found.
 
 N> If you have installed any version of Essential Studio, then the location of Syncfusion libraries is [system drive:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\Assemblies].
 
@@ -60,9 +60,9 @@ N> If you have installed any version of Essential Studio, then the location of S
 * Syncfusion.EJ.Export
 * Syncfusion.EJ.Pivot
 
-**List of Namespaces**
+**List of namespaces**
 
-Following are the list of namespaces to be added on top of the main class inside `RelationalService.svc.cs` file.
+Following is the list of namespaces to be added on top of the main class in the `RelationalService.svc.cs` file.
 
 {% highlight c# %}
 
@@ -80,9 +80,9 @@ namespace PivotGaugeDemo
 }
 {% endhighlight %}
 
-**Datasource Initialization**
+**Data source initialization**
 
-A simple collection is provided as a datasource for our PivotGauge in this demo section. This datasource is placed inside a separate class named “ProductSales” in `RelationalService.svc.cs` file. Refer to the following code example.
+A simple collection is provided as a data source for the pivot gauge in this demo section. This data source is placed inside a separate class named “ProductSales” in the `RelationalService.svc.cs` file. Refer to the following code example:
 
 {% highlight c# %}
 
@@ -198,9 +198,9 @@ namespace PivotGaugeDemo
 }
 {% endhighlight %}
 
-**Service methods in WCF Service**
+**Service methods in WCF service**
 
-First, you need to define the service methods inside IRelationalService interface, found in `IRelationalService.cs` file, created while adding WCF service to your Web Application.
+First, you can define the service methods in the IRelationalService interface. To do so, find the `IRelationalService.cs` file which was created while adding the WCF service to your web application.
 
 {% highlight c# %}
 
@@ -215,7 +215,7 @@ namespace PivotGaugeDemo
 }
 {% endhighlight %}
 
-Secondly, you need to elaborate the service methods inside the main class, found in `RelationalService.svc.cs` file.
+Then, you can elaborate the service methods in the main class, found in the `RelationalService.svc.cs` file.
 
 {% highlight c# %}
 
@@ -247,15 +247,17 @@ namespace PivotGaugeDemo
 }
 {% endhighlight %}
 
-**Configuring Web Configuration File**
+N> The [`customObject`](../api/ejpivotgauge#members:customobject) is utilized to pass the additional information between the client-end and the service-end.
 
-You can expose services through the properties such as binding, contract and address by using an endpoint.
+**Configuring web configuration file**
 
-1. Contract: This property indicates that the contract of the endpoint is exposing. Here you are referring to `IRelationalService` contract and hence it is `PivotGaugeDemo.IRelationalService`.
-2. Binding: In your application, you use `webHttpBinding` to post and receive the requests and responses between the client-end and the service.
+You can expose the services through the properties such as binding, contract, and address by using an endpoint.
+
+1. Contract: This property indicates that the contract of the endpoint is exposed. Refer to the `IRelationalService` contract, and thus it is `PivotGaugeDemo.IRelationalService`.
+2. Binding: In your application, you can use `webHttpBinding` to post and receive requests and responses between the client-end and the service.
 3. behaviorConfiguration: This property contains the name of the behavior to be used in the endpoint.
  
-The endpointBehaviors are illustrated as follows.
+The endpointBehaviors are illustrated in the following sample:
  
 {% highlight xml %}
 
@@ -271,7 +273,7 @@ The endpointBehaviors are illustrated as follows.
 </system.serviceModel>
 {% endhighlight %}
  
-The endpointBehaviors contain all the behaviors for an endpoint. You can link each endpoint to the respective behavior only by using this name property.
+The endpointBehaviors contain all behaviors for an endpoint. You can link each endpoint to the respective behavior only by using the name property.
 
 {% highlight xml %}
 
@@ -289,9 +291,9 @@ The endpointBehaviors contain all the behaviors for an endpoint. You can link ea
 
 {% endhighlight %}
 
-N> In this example, **“PivotGaugeDemo”** indicates the name and root namespace of the Web Application created in Visual Studio IDE and **“RelationalService”** indicates the name of the WCF service created.
+N> In this example, the **“PivotGaugeDemo”** indicates the name and root namespace of the web application that is created in the Visual Studio IDE, and the **“RelationalService”** indicates the name of the created WCF service.
 
-Now, PivotGauge will be rendered with sales amount as shown in the below image.
+Now, the pivot gauge will be rendered with sales amount as shown in the following image:
 
 ![](Relational-Connectivity_images/ServerModeWCF.png)
 

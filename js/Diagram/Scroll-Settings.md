@@ -144,3 +144,7 @@ $("#diagram").ejDiagram({
 You can bring the node/connector into view by using client side method scrollToNode. Please refer to below link which shows how to use scrollToNode method in diagram.
 
 [scrollToNode](/api/js/ejdiagram#methods:scrolltonode "scrollToNode")
+
+## UpdateViewport
+
+The [updateViewPort](/api/js/ejdiagram#methods:updateviewport "updateViewPort") method is used to update the diagram page and view size at runtime. 

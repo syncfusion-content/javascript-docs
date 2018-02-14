@@ -12,7 +12,7 @@ api: /api/js/ejpivotchart
 
 ## Set size in percentage
 
-You can customize the PivotChart dimension by setting the width and height of the widget in percentage.
+You can customize the pivot chart dimension under the [`size`](/api/js/ejpivotchart#members:size) property by setting the width and height of the widget in percentage.
 
 {% highlight javascript %}
 
@@ -40,7 +40,7 @@ You can customize the PivotChart dimension by setting the width and height of th
 
 ## Set size in pixels
 
-You can customize the PivotChart dimension by setting the width and height of the widget in pixels.
+You can customize the pivot chart dimension under the [`size`](/api/js/ejpivotchart#members:size) property by setting the width and height of the widget in pixels.
 
 {% highlight javascript %}
 
@@ -70,7 +70,7 @@ You can customize the PivotChart dimension by setting the width and height of th
 
 ## Responsive
 
-PivotChart widget supports responsive rendering based on the target device (desktop & tablet) resolution. It supports resolution upto 1024x600. You can enable responsiveness in PivotChart by setting [`isResponsive`](/api/js/ejpivotchart#members:isresponsive) property to true.
+The pivot chart widget supports responsive rendering based on the target device (desktop and tablet) resolution. It supports resolution upto 1024x600. You can enable the responsiveness in the pivot chart by setting the [`isResponsive`](/api/js/ejpivotchart#members:isresponsive) property to true.
 
 {% highlight javascript %}
 

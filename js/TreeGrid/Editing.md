@@ -43,6 +43,32 @@ The output of the TreeGrid with `cellEditing` is as follows.
 
 ![](/js/TreeGrid/Editing_images/cellEditing.png)
 
+The edited cell can be saved with custom actions using the [`saveCell`](https://help.syncfusion.com/api/js/ejtreegrid#methods:savecell "saveCell") method.
+
+### Prevent cell editing
+
+In cell edit action [`beginEdit`](https://help.syncfusion.com/api/js/ejtreegrid#events:beginedit) and [`editEdit`](https://help.syncfusion.com/api/js/ejtreegrid#events:endedit) events are triggered before and after the editing action. cell editing for specific cell can prevent by using [`beginEdit`](https://help.syncfusion.com/api/js/ejtreegrid#events:beginedit) event.
+
+The following code example show, how to prevent cell editing in tree grid.
+
+{% highlight js %}
+
+    $("#TreeGridContainer").ejTreeGrid({
+        //...
+        editSettings: {
+            allowEditing: true,
+            editMode: "cellEditing"
+        },
+        beginEdit:function(args)
+        {
+            if(args.columnIndex == 1)
+                args.cancel = true;
+        },
+        //...
+    });
+
+{% endhighlight %}
+
 ### Row Editing
 
 It is possible to make the entire row to editable state and to update a record by setting [`editMode`](/api/js/ejtreegrid#members:editsettings-editmode "editSettings.editMode") as rowEditing.
@@ -88,6 +114,37 @@ The following code example shows you how to enable the `dialogEditing` in Tre
 The output of the TreeGrid with `dialogEditing` is as follows.
 
 ![](/js/TreeGrid/Editing_images/dialogEditing.png)
+
+The add and edit dialogs can be opened on custom actions instead of toolbar icons using the methods [`showAddDialog`](https://help.syncfusion.com/api/js/ejtreegrid#methods:showadddialog "showAddDialog") and [`showEditDialog`](https://help.syncfusion.com/api/js/ejtreegrid#methods:showeditdialog "showEditDialog").
+
+### Prevent dialog editing
+In dialog editing action [`actionBegin`](https://help.syncfusion.com/api/js/ejtreegrid#events:actionbegin)  and [`actionComplete`](https://help.syncfusion.com/api/js/ejtreegrid#events:actioncomplete) client side events are triggered before and after the edit action. Dialog editing for specific row can be prevent by using actionBegin event.
+
+The following code example show, how to prevent dialog editing in tree grid.
+
+{% highlight js %}
+
+    $("#TreeGridContainer").ejTreeGrid({
+        //...
+        editSettings: {
+            allowEditing: true,
+            editMode: "dialogEditing"
+
+        },
+        actionBegin:function(args)
+        {
+            if(args.requestType == "beforeOpenEditDialog")
+            {
+                if(args.data.taskID == 4)
+                    args.cancel = true;
+            }
+        },
+        //...
+    });
+
+{% endhighlight %}
+
+N> While saving the edited record [`actionComplete`](https://help.syncfusion.com/api/js/ejtreegrid#events:actioncomplete) event will be triggered with updated record value in `data` argument and `requestType` as `recordUpdate`. Using this event we can update the information in database.
 
 ## Cell edit type and its params
 
@@ -159,9 +216,9 @@ You can edit any of the fields pertaining to a single record of data and apply i
 Using this template support, you can edit/add the fields that are not bound to TreeGrid columns.
 To edit/add the records using dialog template form, set `editMode` as `dialogEditing` and specify the template id to [`dialogEditorTemplateID`](/api/js/ejtreegrid#members:editsettings-dialogeditortemplateid "editSettings.dialogEditorTemplateID") property of `editSettings`.
 
-N> 1. The `value` attribute is used to bind the corresponding field value while editing.
-N> 2. The `name` attribute is used to get the changed field values while saving the edited record.
-N> 3.  The `id` attribute must to be set in the format of ( treegrid control id + fieldname).
+N> The `value` attribute is used to bind the corresponding field value while editing.
+   The `name` attribute is used to get the changed field values while saving the edited record.
+   The `id` attribute must to be set in the format of ( treegrid control id + fieldname).
 
 The following code example describes the above behavior.
 
@@ -319,6 +376,58 @@ The following code example describes edit template behavior.
 The output of the TreeGrid width editTemplate as follows.
 
 ![](/js/TreeGrid/Editing_images/editTemplate.png)
+
+The updated record values are maintained in collection in TreeGrid, and the user can retrieve the updated record collection at any time by using the [`getUpdatedRecords`](https://help.syncfusion.com/api/js/ejtreegrid#methods:getupdatedrecords "getUpdatedRecords") method.
+
+## Add new record
+
+TreeGrid provides support for adding a new record by setting [`allowAdding`](/api/js/ejtreegrid#members:editsettings-allowadding "editSettings.allowAdding") property as `true`. You can add new record by toolbar add item click or context menu.
+
+The below code example shows how to enable add new record option in TreeGrid.
+
+{% highlight js %}
+$("#TreeGrid").ejTreeGrid({
+    //...
+    editSettings: {
+        allowAdding: true,
+    },
+    //...
+});
+
+{% endhighlight %}
+
+![](/js/TreeGrid/Editing_images/addnewRowBefore.png)
+
+The above screenshot shows before add a new record in tree grid.
+{:.caption}
+
+![](/js/TreeGrid/Editing_images/addnewRowAfter.png)
+
+The above screenshot shows after add a new record in tree grid.
+{:.caption}
+
+### Add row position
+
+The TreeGrid control provides the support to add the new row in the top, bottom, above selected row, below selected row and child position of tree grid content using [`rowPosition`](/api/js/ejtreegrid#members:editsettings-rowposition "editSettings.rowPosition") property.
+ 
+ The below code example shows how to set row position for new record add in tree grid.
+
+{% highlight js %}
+$("#TreeGrid").ejTreeGrid({
+    //...
+    editSettings: {
+        allowAdding: true,
+        rowPosition:ej.TreeGrid.RowPosition.Child,
+    },
+    //...
+});
+
+{% endhighlight %}
+
+![](/js/TreeGrid/Editing_images/addnewRowChild.png)
+
+The above screenshot shows new record added in row position of `child`.
+{:.caption}
 
 ## Adding records using method
 

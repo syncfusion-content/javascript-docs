@@ -61,7 +61,7 @@ The following screenshot displays the Header context menu in TreeGrid control.
 
 ### ContextMenu Customization
 
-Context menu can be customized by adding a new custom menu item to it. In TreeGrid, context menu can be customized using the [`contextMenuOpen`](/api/js/ejtreegrid#contextmenuopen "contextMenuOpen") client-side event. This event is triggered when the context menu is rendered with mouse right click action. The following properties are available in the event.
+Context menu can be customized by adding a new custom menu item to it. In TreeGrid, context menu can be customized using the [`contextMenuOpen`](https://help.syncfusion.com/api/js/ejtreegrid#events:contextmenuopen "contextMenuOpen") client-side event. This event is triggered when the context menu is rendered with mouse right click action. The following properties are available in the event.
 
 * headerText: Display text for menu item.
 * menuId: provides ID field for the created DOM element for custom menu item.

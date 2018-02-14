@@ -42,6 +42,8 @@ The output of the TreeGrid with filtering enabled is as follows.
 
 ![](/js/TreeGrid/Filtering_images/Filtering_img1.png)
 
+The TreeGrid allows the user to filter the columns with custom actions by using the method [`filterColumn`](https://help.syncfusion.com/api/js/ejtreegrid#methods:filtercolumn "filterColumn"). And it is possible to clear the filter for a specific column by using the method [`clearFilter`](https://help.syncfusion.com/api/js/ejtreegrid#methods:clearfilter "clearFilter").
+
 ## Filtering Modes
 
 ### Filter Bar 
@@ -148,6 +150,32 @@ $("#Treegrid ").ejTreeGrid ({
 {% endhighlight %}
 ![](/js/TreeGrid/Filtering_images/Filtering_img7.png)
 The above screen shot shows TreeGrid with `enableCaseSensitivity` set as false in search action.
+
+### Change filter mode for specific column
+
+TreeGrid provides option for changing the filter mode for specific column by using [`filterType`](https://help.syncfusion.com/api/js/ejtreegrid#members:columns-filtertype "columns.filterType") property. Using this property we can either set `Menu` or `Excel` filter mode when [`filterType`](/api/js/ejtreegrid#members:filtersettings-filtertype "filterSettings.filterType") property as `Menu` or `Excel`.
+
+The following code example show, how to change filter mode for specific column.
+
+{% highlight js %}
+
+$("#Treegrid ").ejTreeGrid ({
+      //...
+      columns: [{
+         field: "taskName",
+         headerText: "Task Name",
+         filterType:"excel"
+     }, ]
+      filterSettings:{
+             filterType: ej.TreeGrid.FilterType.Menu,
+      }
+     //...
+});
+{% endhighlight %}
+
+![](/js/TreeGrid/Filtering_images/Filtering_img10.png)
+
+The above screen shot shows TreeGrid with excel filter mode for `Task Name` column only.  
 
 ## Filtering types
 By default, the filtering type for a column is inherited from the [`editType`](/api/js/ejtreegrid#members:columns-edittype "columns.editType") property. You can also define a specific filtering type for a column using the [`filterEditType`](/api/js/ejtreegrid#members:columns-filteredittype "columns.filterEditType") property.
@@ -265,6 +293,7 @@ The output of the filtering enabled for only one column is as follows.
 
 [Click here](http://js.syncfusion.com/demos/web/#!/bootstrap/treegrid/columnfiltering) to find the demo sample for filtering in TreeGrid
 
+
 ## Toolbox searching
 
 The TreeGrid control has an option to search its content using toolbar search box. The toolbar search box can be enabled by using the `toolbarSettings.toolbarItems` property.
@@ -300,7 +329,7 @@ The below code example explains searching the TreeGrid content across the "TaskI
 {% endhighlight %}
 
 It is possible to filter the TreeGrid contents at initial load using the toolbar search, with the [`searchSettings.key`](https://help.syncfusion.com/api/js/ejtreegrid#members:searchsettings-key "searchSettings.key") property.
-The below code example explains filtering the TreeGrid contents at initial load with a search key, which will be applied accross all the columns.
+The below code example explains filtering the TreeGrid contents at initial load with a search key, which will be applied across all the columns.
 
 {% highlight js %}
         $("#treegrid").ejTreeGrid({

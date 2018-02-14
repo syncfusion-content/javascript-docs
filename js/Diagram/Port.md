@@ -117,9 +117,13 @@ For more information about creating connections with port, refer to [Connections
 
 ## Appearance 
 
-* You can change the shape of port by using its [shape](/api/js/ejdiagram#members:nodes-ports-shape "shape") property. To explore the different types of port shapes, refer to [Port Shapes](/api/js/ejdiagram#members:nodes-ports-shape "Port Shapes").
+* You can change the shape of port by using its [shape](/api/js/ejdiagram#members:nodes-ports-shape "shape") property. To explore the different types of port shapes, refer to [Port Shapes](/api/js/ejdiagram#members:nodes-ports-shape "Port Shapes"). If you need to render a custom shape, then you can set shape as `path` and define path using [pathData](/api/js/ejdiagram#members:nodes-ports-pathdata "pathData") property of port.
 
 * The appearance of ports can be customized by using [borderColor](/api/js/ejdiagram#members:nodes-ports-bordercolor "borderColor"), [borderWidth](/api/js/ejdiagram#members:nodes-ports-borderwidth "borderWidth"), [fillColor](/api/js/ejdiagram#members:nodes-ports-fillcolor "fillColor") properties of the port. 
+
+* To customize the port size, use [size](/api/js/ejdiagram#members:nodes-ports-size "size") property of port.
+
+* The ports [visibility](/api/js/ejdiagram#members:nodes-ports-visibility "visibility") property allows you to define when the port should be visible.
 
 * The [cssClass](/api/js/ejdiagram#members:nodes-ports-cssclass "cssClass") property used to customize the style of port using user defined CSS class.
 
