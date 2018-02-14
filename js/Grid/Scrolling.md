@@ -268,6 +268,9 @@ The following output is displayed as a result of the above code example.
 ![](scrolling_images/scrolling_img7.png)
 
 
+N> By using [`rowHeightRefresh`](https://help.syncfusion.com/api/js/ejgrid#methods:rowheightrefresh "rowHeightRefresh") method resolves row height issue when movable and frozen content height mismatch.
+
+
 ## Touch scroll
 
 In [touch](https://help.syncfusion.com/api/js/ejgrid#members:scrollsettings-enabletouchscroll "touch") supported devices you can scroll and show the content by swipe left, right, top and bottom. Disable touch scroll by setting [`enableTouchScroll`](https://help.syncfusion.com/api/js/ejgrid#members:scrollsettings-enabletouchscroll "enableTouchScroll") property of the [`scrollSettings`](https://help.syncfusion.com/api/js/ejgrid#members:scrollsettings "scrollSettings") as `false`.
