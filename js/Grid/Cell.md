@@ -132,6 +132,8 @@ The following output is displayed as a result of the above code example.
 
 ![](Cell_images/cell_img1_2.png)
 
+N> By using [`getRowHeight`](https://help.syncfusion.com/api/js/ejgrid#methods:getrowheight "getRowHeight") method, you can get the row height of the Grid.
+
 ## Cell Merging
 
 The Grid has options to merge the Grid cells based on the required conditions. This can be enabled by setting [`allowCellMerging`](https://help.syncfusion.com/api/js/ejgrid#members:allowcellmerging "allowCellMerging") property as `true` and the merge conditions can be defined in [`mergeCellInfo`](https://help.syncfusion.com/api/js/ejgrid#events:mergecellinfo "mergeCellInfo") event. In this event, you can get the column details and data of that particular row and column which is helpful in defining conditions. 

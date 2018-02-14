@@ -35,46 +35,74 @@ CDN link</th></tr>
 <td>
 jQuery 1.10.2</td><td>
 Common jQuery script to render any of the Syncfusion widgets</td><td>
-<a href="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js">http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js</a></td></tr>
+Secured Link:
+<a href="https://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js">https://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js</a><br>
+Unsecured Link:
+<a href="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js">http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js</a>
+</td></tr>
 <tr>
 <td>
 jQuery.easing</td><td>
 Supports animation</td><td>
+Secured Link:
+<a href="https://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js">https://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js</a><br>
+Unsecured Link:
 <a href="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js">http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js</a></td></tr>
 <tr>
 <td>
 JsRender</td><td>
 Supports template rendering</td><td>
+Secured Link:
+<a href="https://cdn.syncfusion.com/js/assets/external/jsrender.min.js">https://cdn.syncfusion.com/js/assets/external/jsrender.min.js</a><br>
+Unsecured Link:
 <a href="http://cdn.syncfusion.com/js/assets/external/jsrender.min.js">http://cdn.syncfusion.com/js/assets/external/jsrender.min.js</a>  </td></tr>
 <tr>
 <td>
 AngularJS</td><td>
 Minified AngularJS file to support custom directives.</td><td>
+Secured Link:
+<a href="https://cdn.syncfusion.com/js/assets/external/angular.min.js">https://cdn.syncfusion.com/js/assets/external/angular.min.js</a><br>
+Unsecured Link:
 <a href="http://cdn.syncfusion.com/js/assets/external/angular.min.js">http://cdn.syncfusion.com/js/assets/external/angular.min.js</a></td></tr>
 <tr>
 <td>
 excanvas</td><td>
 To support canvas element rendering in IE8 browser</td><td>
+Secured Link:
+<a href="https://cdn.syncfusion.com/js/assets/external/excanvas.min.js">https://cdn.syncfusion.com/js/assets/external/excanvas.min.js</a><br>
+Unsecured Link:
 <a href="http://cdn.syncfusion.com/js/assets/external/excanvas.min.js">http://cdn.syncfusion.com/js/assets/external/excanvas.min.js</a></td></tr>
 <tr>
 <td>
 KnockoutJS</td><td>
 Minified KnockoutJS file to support the observable binding. </td><td>
+Secured Link:
+<a href="https://cdn.syncfusion.com/js/assets/external/knockout.min.js">https://cdn.syncfusion.com/js/assets/external/knockout.min.js</a><br>
+Unsecured Link:
 <a href="http://cdn.syncfusion.com/js/assets/external/knockout.min.js">http://cdn.syncfusion.com/js/assets/external/knockout.min.js</a></td></tr>
 <tr>
 <td>
 RequireJS</td><td>
 Supports loading of required dependencies</td><td>
+Secured Link:
+<a href="https://cdn.syncfusion.com/js/assets/external/require.min.js">https://cdn.syncfusion.com/js/assets/external/require.min.js</a><br>
+Unsecured Link:
 <a href="http://cdn.syncfusion.com/js/assets/external/require.min.js">http://cdn.syncfusion.com/js/assets/external/require.min.js</a> </td></tr>
 <tr>
 <td>
 jQuery.validate</td><td>
 Supports client-side validation</td><td>
+Secured Link:
+<a href="https://cdn.syncfusion.com/js/assets/external/jquery.validate.min.js">https://cdn.syncfusion.com/js/assets/external/jquery.validate.min.js</a><br>
+Unsecured Link:
 <a href="http://cdn.syncfusion.com/js/assets/external/jquery.validate.min.js">http://cdn.syncfusion.com/js/assets/external/jquery.validate.min.js</a></td></tr>
 <tr>
 <td>
 jQuery.validate.unobtrusive</td><td>
 To enable unobtrusive validation options in <b>data-*</b> attributes</td><td>
+Secured Link:
+<a href="https://cdn.syncfusion.com/js/assets/external/jquery.validate.unobtrusive.min.js">https://cdn.syncfusion.com/js/assets/external/jquery.validate.unobtrusive.min.js</a><br>
+Unsecured Link:
 <a href="http://cdn.syncfusion.com/js/assets/external/jquery.validate.unobtrusive.min.js">http://cdn.syncfusion.com/js/assets/external/jquery.validate.unobtrusive.min.js</a></td></tr>
 </table>
 
@@ -97,26 +125,41 @@ CDN link</th></tr>
 <td>
 ej.web.all.min</td><td>
 Combined script file which includes the script of all the Syncfusion UI web widgets. </td><td>
+Secured Link:
+<a href="https://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js">https://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js</a><br>
+Unsecured Link:
 <a href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js">http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js</a> </td></tr>
 <tr>
 <td>
 ej.webform.min</td><td>
 supports server-side event functionalities in ASP.NET controls</td><td>
+Secured Link:
+<a href="https://cdn.syncfusion.com/{{ site.releaseversion }}/js/common/ej.webform.min.js">https://cdn.syncfusion.com/{{ site.releaseversion }}/js/common/ej.webform.min.js</a><br>
+Unsecured Link:
 <a href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/common/ej.webform.min.js">http://cdn.syncfusion.com/{{ site.releaseversion }}/js/common/ej.webform.min.js</a></td></tr>
 <tr>
 <td>
 ej.unobtrusive.min</td><td>
 Supports Syncfusion widgets to render in HTML5 format.</td><td>
+Secured Link:
+<a href="https://cdn.syncfusion.com/{{ site.releaseversion }}/js/common/ej.unobtrusive.min.js">https://cdn.syncfusion.com/{{ site.releaseversion }}/js/common/ej.unobtrusive.min.js</a><br>
+Unsecured Link:
 <a href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/common/ej.unobtrusive.min.js">http://cdn.syncfusion.com/{{ site.releaseversion }}/js/common/ej.unobtrusive.min.js</a>  </td></tr>
 <tr>
 <td>
 ej.widget.angular.min</td><td>
 Provides support for AngularJS </td><td>
+Secured Link:
+<a href="https://cdn.syncfusion.com/{{ site.releaseversion }}/js/common/ej.widget.angular.min.js">https://cdn.syncfusion.com/{{ site.releaseversion }}/js/common/ej.widget.angular.min.js</a><br>
+Unsecured Link:
 <a href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/common/ej.widget.angular.min.js">http://cdn.syncfusion.com/{{ site.releaseversion }}/js/common/ej.widget.angular.min.js</a></td></tr>
 <tr>
 <td>
 ej.widget.ko.min</td><td>
 Provides support for KnockoutJS</td><td>
+Secured Link:
+<a href="https://cdn.syncfusion.com/{{ site.releaseversion }}/js/common/ej.widget.ko.min.js">https://cdn.syncfusion.com/{{ site.releaseversion }}/js/common/ej.widget.ko.min.js</a><br>
+Unsecured Link:
 <a href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/common/ej.widget.ko.min.js">http://cdn.syncfusion.com/{{ site.releaseversion }}/js/common/ej.widget.ko.min.js</a></td></tr>
 </table>
 
@@ -147,71 +190,113 @@ CDN link</th></tr>
 <td>
 Flat-Azure (default theme)</td><td>
 Includes the CSS properties defined for all the widgets in flat-azure theme. (Default-theme)</td><td>
+Secured Link:
+<a href="https://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css">https://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css</a><br>
+Unsecured Link:
 <a href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css">http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css</a></td></tr>
 <tr>
 <td>
 Flat-Azure Dark</td><td>
 Includes the CSS properties defined for all the widgets in flat-azure dark theme.</td><td>
+Secured Link:
+<a href="https://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure-dark/ej.web.all.min.css">https://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure-dark/ej.web.all.min.css</a><br>
+Unsecured Link:
 <a href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure-dark/ej.web.all.min.css">http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure-dark/ej.web.all.min.css</a>  </td></tr>
 <tr>
 <td>
 Flat-lime</td><td>
 Includes the CSS properties defined for all the widgets in flat-lime theme.</td><td>
+Secured Link:
+<a href="https://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-lime/ej.web.all.min.css">https://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-lime/ej.web.all.min.css</a><br>
+Unsecured Link:
 <a href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-lime/ej.web.all.min.css">http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-lime/ej.web.all.min.css</a></td></tr>
 <tr>
 <td>
 Flat-lime Dark</td><td>
 Includes the CSS properties defined for all the widgets in flat-lime dark theme.</td><td>
+Secured Link:
+<a href="https://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-lime-dark/ej.web.all.min.css">https://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-lime-dark/ej.web.all.min.css</a><br>
+Unsecured Link:
 <a href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-lime-dark/ej.web.all.min.css">http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-lime-dark/ej.web.all.min.css</a></td></tr>
 <tr>
 <td>
 Flat-Saffron</td><td>
 Includes the CSS properties defined for all the widgets in flat-saffron theme.</td><td>
+Secured Link:
+<a href="https://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-saffron/ej.web.all.min.css">https://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-saffron/ej.web.all.min.css</a><br>
+Unsecured Link:
 <a href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-saffron/ej.web.all.min.css">http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-saffron/ej.web.all.min.css</a></td></tr>
 <tr>
 <td>
 Flat-Saffron Dark</td><td>
 Includes the CSS properties defined for all the widgets in flat-saffron dark theme.</td><td>
+Secured Link:
+<a href="https://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-saffron-dark/ej.web.all.min.css">https://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-saffron-dark/ej.web.all.min.css</a><br>
+Unsecured Link:
 <a href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-saffron-dark/ej.web.all.min.css">http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-saffron-dark/ej.web.all.min.css</a></td></tr>
 <tr>
 <td>
 Gradient-Azure</td><td>
 Includes the CSS properties defined for all the widgets in gradient-azure theme.</td><td>
+Secured Link:
+<a href="https://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/gradient-azure/ej.web.all.min.css">https://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/gradient-azure/ej.web.all.min.css</a><br>
+Unsecured Link:
 <a href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/gradient-azure/ej.web.all.min.css">http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/gradient-azure/ej.web.all.min.css</a>  </td></tr>
 <tr>
 <td>
 Gradient-Azure Dark</td><td>
 Includes the CSS properties defined for all the widgets in gradient-azure dark theme.</td><td>
+Secured Link:
+<a href="https://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/gradient-azure-dark/ej.web.all.min.css">https://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/gradient-azure-dark/ej.web.all.min.css</a><br>
+Unsecured Link:
 <a href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/gradient-azure-dark/ej.web.all.min.css">http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/gradient-azure-dark/ej.web.all.min.css</a></td></tr>
 <tr>
 <td>
 Gradient-lime</td><td>
 Includes the CSS properties defined for all the widgets in gradient-lime theme.</td><td>
+Secured Link:
+<a href="https://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/gradient-lime/ej.web.all.min.css">https://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/gradient-lime/ej.web.all.min.css</a><br>
+Unsecured Link:
 <a href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/gradient-lime/ej.web.all.min.css">http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/gradient-lime/ej.web.all.min.css</a></td></tr>
 <tr>
 <td>
 Gradient-lime Dark</td><td>
 Includes the CSS properties defined for all the widgets in gradient-lime dark theme.</td><td>
+Secured Link:
+<a href="https://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/gradient-lime-dark/ej.web.all.min.css">https://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/gradient-lime-dark/ej.web.all.min.css</a><br>
+Unsecured Link:
 <a href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/gradient-lime-dark/ej.web.all.min.css">http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/gradient-lime-dark/ej.web.all.min.css</a></td></tr>
 <tr>
 <td>
 Gradient-Saffron</td><td>
 Includes the CSS properties defined for all the widgets in gradient-saffron theme.</td><td>
+Secured Link:
+<a href="https://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/gradient-saffron/ej.web.all.min.css">https://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/gradient-saffron/ej.web.all.min.css</a><br>
+Unsecured Link:
 <a href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/gradient-saffron/ej.web.all.min.css">http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/gradient-saffron/ej.web.all.min.css</a></td></tr>
 <tr>
 <td>
 Gradient-Saffron Dark</td><td>
 Includes the CSS properties defined for all the widgets in gradient-saffron dark theme.</td><td>
+Secured Link:
+<a href="https://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/gradient-saffron-dark/ej.web.all.min.css">https://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/gradient-saffron-dark/ej.web.all.min.css</a><br>
+Unsecured Link:
 <a href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/gradient-saffron-dark/ej.web.all.min.css">http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/gradient-saffron-dark/ej.web.all.min.css</a></td></tr>
 <tr>
 <td>
 Bootstrap-theme</td><td>
 Includes the CSS properties defined for all the widgets in bootstrap theme.</td><td>
+Secured Link:
+<a href="https://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/bootstrap-theme/ej.web.all.min.css">https://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/bootstrap-theme/ej.web.all.min.css</a><br>
+Unsecured Link:
 <a href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/bootstrap-theme/ej.web.all.min.css">http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/bootstrap-theme/ej.web.all.min.css</a></td></tr>
 <tr>
 <td>
 ej.responsive.css</td><td>
 To make the widget responsive, it is necessary to refer this CSS file.</td><td>
+Secured Link:
+<a href="https://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/responsive-css/ej.responsive.css">https://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/responsive-css/ej.responsive.css</a><br>
+Unsecured Link:
 <a href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/responsive-css/ej.responsive.css">http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/responsive-css/ej.responsive.css</a></td></tr>
 </table>
 
@@ -229,11 +314,17 @@ CDN link</th></tr>
 <td>
 Flat-Azure</td><td>
 Here, the widget core file (<b>ej.widget.core.min.css</b>) is common and the theme file <b>ej.theme.min.css</b> is uniquely available under the <b>flat-azure</b> theme folder.</td><td>
+Secured Link:
+<a href="https://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.widgets.core.min.css">https://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.widgets.core.min.css</a><br/><br/><a href="https://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.theme.min.css">https://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.theme.min.css</a><br/>
+Unsecured Link:
 <a href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.widgets.core.min.css">http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.widgets.core.min.css</a><br/><br/><a href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.theme.min.css">http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.theme.min.css</a><br/></td></tr>
 <tr>
 <td>
 Flat-Azure Dark</td><td>
 Here, the widget core file (<b>ej.widget.core.min.css</b>) is common and the theme file <b>ej.theme.min.css</b> is uniquely available under the <b>flat-azure-dark</b> theme folder.</td><td>
+Secured Link:
+<a href="https://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.widgets.core.min.css">https://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.widgets.core.min.css</a><br/><br/><a href="https://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure-dark/ej.theme.min.css">https://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure-dark/ej.theme.min.css</a><br/>
+Unsecured Link:
 <a href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.widgets.core.min.css">http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.widgets.core.min.css</a><br/><br/><a href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure-dark/ej.theme.min.css">http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure-dark/ej.theme.min.css</a><br/></td></tr>
 </table>
 
