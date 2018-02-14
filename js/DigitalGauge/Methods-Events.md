@@ -260,6 +260,69 @@ $("#DigitalCore").ejDigitalGauge({
 
 {% endhighlight %}
 
+## click
+
+[`click`](../api/ejdigitalgauge#events:click) event triggers on clicking the gauges. 
+
+
+{% highlight html %}
+ 
+<div id="DigitalCore"></div> 
+ 
+<script>
+$("#DigitalCore").ejDigitalGauge({
+
+    click: function (args) {
+              //Do something
+    }
+   
+});      
+</script>
+
+{% endhighlight %}
+
+
+## doubleClick
+
+[`doubleClick`](../api/ejdigitalgauge#events:doubleclick) event triggers on double clicking the gauges. 
+
+
+{% highlight html %}
+ 
+<div id="DigitalCore"></div> 
+ 
+<script>
+$("#DigitalCore").ejDigitalGauge({
+
+    doubleClick: function (args) {
+              //Do something
+    }
+   
+});       
+</script>
+
+{% endhighlight %}
+
+
+### rightClick
+
+[`rightClick`](../api/ejdigitalgauge#events:rightclick) event triggers on right clicking the gauges. 
+
+
+{% highlight html %}
+ 
+<div id="DigitalCore"></div> 
+ 
+<script>
+$("#DigitalCore").ejDigitalGauge({
+    rightClick: function (args) {
+              //Do something
+    }
+   
+});       
+</script>
+
+{% endhighlight %}
 
 
 

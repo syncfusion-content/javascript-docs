@@ -388,3 +388,5 @@ The [`perspectiveAngle`](../api/ejchart#members:perspectiveangle) specifies the 
 
 
 ![](/js/Chart/3D-Chart_images/3D-Chart_img14.png)
+
+

@@ -194,6 +194,8 @@ The following screenshot shows Gantt with task label templates.
 
 ## Tooltip template
 
+### Taskbar tooltip
+
 The default tooltip in Gantt can be customized by using the [`taskbarTooltipTemplateId`](/api/js/ejgantt#members:taskbartooltiptemplateid "taskbarTooltipTemplateId") property. We need to map the JsRender script element’s ID value to this property.
 
 The following code example shows how to customize the tooltip.
@@ -249,6 +251,55 @@ $(function () { $("#GanttContainer").ejGantt({ //… taskbarTooltipTemplateId: "
 The following screenshot shows Gantt with task tooltip customization.
 
 ![](/js/Gantt/Customization_images/Customization_img3.png)
+
+### Dependency tooltip
+
+The default dependency tooltip in Gantt can be customized by using [`predecessorTooltipTemplate`](/api/js/ejgantt#members:predecessortooltiptemplate "predecessorTooltipTemplate") property. We can map value to this property as  JsRender template script id with prefix of '#' or HTML elements in string format. The following code example shows how to use the [`predecessorTooltipTemplate`](/api/js/ejgantt#members:predecessortooltiptemplate "predecessorTooltipTemplate") property.
+
+{% highlight javascript %}
+
+<script type="text/javascript">
+    $("#GanttContainer").ejGantt({
+        //...
+        enableTaskbarTooltip: true,
+        predecessorTooltipTemplate: "#ToolTipTemplate",
+    })
+
+    $.views.helpers({
+        _Type: getType,
+        _Lag: getLag
+    });
+
+    function getType() {
+        return this.data.linkText;
+    }
+
+    function getLag() {
+        return this.data.offset + " " + this.data.offsetUnit;        
+    }
+</script>
+
+<script id="ToolTipTemplate" type="text/x-jsrender">
+
+    <table>
+            <tr>
+                <td><b>Type:</b></td>
+                <td><i>{{:~_Type()}}</i></td>
+            </tr>
+            <tr>
+                <td><b>Lag:</b></td>
+                <td><i>{{:~_Lag()}}</i></td>
+            </tr>
+    </table>
+
+</script>
+
+{% endhighlight %}
+
+The following screenshot show the output of above code example.
+![](/js/Gantt/Customization_images/Customization_img8.png)
+
+You can find the JS playground sample for dependency tooltip template [here](http://jsplayground.syncfusion.com/Sync_f5fvhwfi).
 
 ### Cell tooltip 
 
