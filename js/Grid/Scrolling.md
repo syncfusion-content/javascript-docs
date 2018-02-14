@@ -9,8 +9,6 @@ api: /api/js/ejgrid
 --- 
 # Scrolling
 
-# Scrolling
-
 Scrolling can be enabled by setting the [`allowScrolling`](https://help.syncfusion.com/api/js/ejgrid#members:allowscrolling "allowScrolling") as `true`. The height and width can be set to grid by using the properties [`scrollSettings.height`](https://help.syncfusion.com/api/js/ejgrid#members:scrollsettings-height "scrollSettings.height") and [`scrollSettings.width`](https://help.syncfusion.com/api/js/ejgrid#members:scrollsettings-width "scrollSettings.width") respectively.
 
 The height and width can be set in percentage and pixel. The default value for [`height`](https://help.syncfusion.com/api/js/ejgrid#members:scrollsettings-height "height") and [`width`](https://help.syncfusion.com/api/js/ejgrid#members:scrollsettings-width "width") in the [`scrollSettings`](https://help.syncfusion.com/api/js/ejgrid#members:scrollsettings "scrollSettings") is 0 and `auto` respectively.
@@ -45,7 +43,7 @@ The following output is displayed as a result of the above code example.
 
 We can show or hide the scrollbar while focus in or focus out of the Grid using  [`autoHide`](https://help.syncfusion.com/api/js/ejgrid#members:scrollsettings-autohide "autoHide") property of  [`scrollSettings`](https://help.syncfusion.com/api/js/ejgrid#members:scrollsettings "scrollSettings") 
 
-The height and width of button in the scrollbar can be customised by using [`buttonSize `](https://help.syncfusion.com/api/js/ejgrid#members:scrollsettings-buttonsize  "buttonSize ") property of  [`scrollSettings`](https://help.syncfusion.com/api/js/ejgrid#members:scrollsettings "scrollSettings") 
+The height and width of button in the scrollbar can be customized by using [`buttonSize `](https://help.syncfusion.com/api/js/ejgrid#members:scrollsettings-buttonsize  "buttonSize ") property of  [`scrollSettings`](https://help.syncfusion.com/api/js/ejgrid#members:scrollsettings "scrollSettings") 
 
 To specify the scroll down pixel of mouse wheel, to scroll mouse wheel and view the grid contents use [`scrollOneStepBy  `](https://help.syncfusion.com/api/js/ejgrid#members:scrollsettings-scrollonestepby  "scrollOneStepBy  ") property of  [`scrollSettings`](https://help.syncfusion.com/api/js/ejgrid#members:scrollsettings "scrollSettings") 
 
@@ -266,6 +264,9 @@ $(function () {
 The following output is displayed as a result of the above code example.
 
 ![](scrolling_images/scrolling_img7.png)
+
+
+N> By using [`rowHeightRefresh`](https://help.syncfusion.com/api/js/ejgrid#methods:rowheightrefresh "rowHeightRefresh") method resolves row height issue when movable and frozen content height mismatch.
 
 
 ## Touch scroll
