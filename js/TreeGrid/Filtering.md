@@ -151,6 +151,32 @@ $("#Treegrid ").ejTreeGrid ({
 ![](/js/TreeGrid/Filtering_images/Filtering_img7.png)
 The above screen shot shows TreeGrid with `enableCaseSensitivity` set as false in search action.
 
+### Change filter mode for specific column
+
+TreeGrid provides option for changing the filter mode for specific column by using [`filterType`](https://help.syncfusion.com/api/js/ejtreegrid#members:columns-filtertype "columns.filterType") property. Using this property we can either set `Menu` or `Excel` filter mode when [`filterType`](/api/js/ejtreegrid#members:filtersettings-filtertype "filterSettings.filterType") property as `Menu` or `Excel`.
+
+The following code example show, how to change filter mode for specific column.
+
+{% highlight js %}
+
+$("#Treegrid ").ejTreeGrid ({
+      //...
+      columns: [{
+         field: "taskName",
+         headerText: "Task Name",
+         filterType:"excel"
+     }, ]
+      filterSettings:{
+             filterType: ej.TreeGrid.FilterType.Menu,
+      }
+     //...
+});
+{% endhighlight %}
+
+![](/js/TreeGrid/Filtering_images/Filtering_img10.png)
+
+The above screen shot shows TreeGrid with excel filter mode for `Task Name` column only.  
+
 ## Filtering types
 By default, the filtering type for a column is inherited from the [`editType`](/api/js/ejtreegrid#members:columns-edittype "columns.editType") property. You can also define a specific filtering type for a column using the [`filterEditType`](/api/js/ejtreegrid#members:columns-filteredittype "columns.filterEditType") property.
 The below code snippet explains on how to set a filtering type for a column.
@@ -303,7 +329,7 @@ The below code example explains searching the TreeGrid content across the "TaskI
 {% endhighlight %}
 
 It is possible to filter the TreeGrid contents at initial load using the toolbar search, with the [`searchSettings.key`](https://help.syncfusion.com/api/js/ejtreegrid#members:searchsettings-key "searchSettings.key") property.
-The below code example explains filtering the TreeGrid contents at initial load with a search key, which will be applied accross all the columns.
+The below code example explains filtering the TreeGrid contents at initial load with a search key, which will be applied across all the columns.
 
 {% highlight js %}
         $("#treegrid").ejTreeGrid({

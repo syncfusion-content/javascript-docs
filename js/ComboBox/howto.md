@@ -220,3 +220,73 @@ $(function () {
 {% endhighlight %}
 
 ![](HowTo-images/image2.png)
+
+
+## Validation of ComboBox using jQuery Validator
+
+Validation of ComboBox can be done on form submission using jQuery Validations by adding name attribute for ComboBox through `htmlAttributes` property. Also, you can remove this error message during item selection through select or change event of ComboBox
+
+N> [jquery.validate.min](http://cdn.syncfusion.com/js/assets/external/jquery.validate.min.js) script file should be referred for validation, for more details, refer [here](http://jqueryvalidation.org/documentation).
+
+{% highlight html%}
+
+     <form id="form1">
+       <div class="content-container-fluid">
+        <div class="row">
+            <div class="cols-sample-area">
+                <div class="frame">
+                    <div class="control">
+                        <input type="text" tabindex="1" id="list" />
+                    </div>
+                   <label class="message"></label>
+                </div>
+            </div>
+            <button type="submit" id="valid" onclick="validate()"> Validate</button>
+        </div>
+    </div>
+    <script type="text/javascript">
+        var empList = [
+        { id: 'level1', country: 'American Football' }, { id: 'level2', country: 'Badminton' },
+        { id: 'level3', country: 'Basketball' }, { id: 'level4', country: 'Cricket' },
+        { id: 'level5', country: 'Football' }, { id: 'level6', country: 'Golf' },
+        { id: 'level7', country: 'Hockey' }, { id: 'level8', country: 'Rugby' },
+        { id: 'level9', country: 'Snooker' }, { id: 'level10', country: 'Tennis' }
+		];
+        $(function () {
+            $("#list").ejComboBox({
+				dataSource: empList,
+				fields: { text: 'country', value: 'id' },
+				width: '250px',
+				placeholder: 'Select a game',
+				index: -1,
+                htmlAttributes: { name: 'select'},
+				popupHeight: '200px',
+				popupWidth: '250px',
+                select:'select'
+			});
+        });
+        
+          function validate()
+          {
+            var rules = {};
+            $("form[id$=form1] input[name$=select]").each(function () {
+                rules[this.name] = "required";
+            });
+            $('form[id$="form1"]').validate({
+                rules: rules,
+                errorPlacement: function (error, element) {
+                    $(error).insertAfter($(".message"));
+                }
+            });
+          }
+         function select(args)
+          {
+            if(args.value!="")
+            {
+               $("label.error").css("display", "none")  //hide error message when value is selected.
+            }
+          }
+       </script>
+     </form>
+
+{% endhighlight%}

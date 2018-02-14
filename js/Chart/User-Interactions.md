@@ -622,6 +622,33 @@ The color ,opacity and  corners of the trackball tooltip are customized by using
 
 ![](/js/Chart/User-Interactions_images/User-Interactions_img30.png)
 
+#### Trackball tooltip template:
+
+Trackball tooltip template is used to display the tooltip in the customized template format. You can define the  desired template  in css style.You can enable the **toolTipTemplate** by using the following  code snippet.
+
+{% highlight javascript %}
+
+
+            $("#container").ejChart({
+                 
+                  
+               crosshair:
+                 {
+                     visible: true,
+                     type: 'trackball',
+                     trackballTooltipSettings: {
+                         mode: "float",
+                         tooltipTemplate: 'Tooltip'
+                         }
+                 }
+
+               });
+
+
+{% endhighlight %}
+
+![](/js/Chart/User-Interactions_images/User-Interactions_img33.png)
+
 
 ## Highlight
 

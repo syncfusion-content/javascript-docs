@@ -213,7 +213,7 @@ Modify the task details through user interaction such as resizing and dragging t
 
 ### Predecessor Editing
 
-Modify the predecessor details of a task using mouse interactions by setting the [`allowGanttChartEditing`](/api/js/ejgantt#members:allowganttchartediting "allowGanttChartEditing") as `true` and setting value for the [predecessorMapping](/api/js/ejgantt#members:predecessormapping) property.
+Modify the predecessor details of a task using mouse interactions by setting the [`allowGanttChartEditing`](/api/js/ejgantt#members:allowganttchartediting "allowGanttChartEditing") as `true` and setting value for the [`predecessorMapping`](/api/js/ejgantt#members:predecessormapping) property.
 
 {% highlight javascript %}
 

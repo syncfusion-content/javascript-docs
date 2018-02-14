@@ -37,6 +37,14 @@ The following output is displayed as a result of the above code example.
 
 ![](Row_images/Row_img1.png)
 
+By using the following methods, you can get the rows(tr element)of the Grid.
+
+1.[`getRowByIndex`](https://help.syncfusion.com/api/js/ejgrid#methods:getrowbyindex "getRowByIndex")
+
+2.[`getRows`](https://help.syncfusion.com/api/js/ejgrid#methods:getrows "getRows")
+
+N> 1. While Hovering, the [`rowHover`](https://help.syncfusion.com/api/js/ejgrid#events:rowHover "rowHover") event get triggered.
+
 
 ## Details Template
 
@@ -94,6 +102,7 @@ The following output is displayed as a result of the above code example.
 
 ![](Row_images/Row_img2.png)
 
+By using [`getIndexByRow`](https://help.syncfusion.com/api/js/ejgrid#methods:getindexbyrow "getIndexByRow") you can get the row index of provided tr element and index value would not have considered detail row elements in grid content.
 
 ## Row Template
 
@@ -302,6 +311,10 @@ The following output is displayed after dropping Grid rows.
 ![](Row_images/Row_img8.png)
 {:After Drop}
 
+You can re-order the rows in the Grid dynamically by using [`reorderRows`](https://help.syncfusion.com/api/js/ejgrid#methods:reorderrows "reorderRows") method.
+
+N> 1. While Drag and Drop, the following events are triggered [`rowDrag`](https://help.syncfusion.com/api/js/ejgrid#events:rowdrag "rowDrag"), [`rowDrop`](https://help.syncfusion.com/api/js/ejgrid#events:rowdrop "rowDrop"), [`rowDragStart`](https://help.syncfusion.com/api/js/ejgrid#events:rowdragstart "rowDragStart")
+
 ### Grid-to-Custom control
 
 You can also drag and drop Grid rows to any custom control. For instance, let it be a form.
@@ -375,4 +388,7 @@ The following output is displayed after dropping the rows on Form.
 ![](Row_images/Row_img10.png)
 {:After Drop}
 
-N>   The default behavior of drag and drop between Grid or any other controls is as cut and paste. For copy and paste behavior specify the drag behavior in [`dragBehavior`](https://help.syncfusion.com/api/js/ejgrid#members:rowdropsettings-dragbehavior "dragBehavior") property of the [`rowDropSettings`](https://help.syncfusion.com/api/js/ejgrid#members:rowdropsettings "rowDropSettings")  as ej.Grid.DragBehavior.Copy.
+N>  Also [`dragMapper`](https://help.syncfusion.com/api/js/ejgrid#members:rowdropsettings-dragmapper "dragMapper") and [`dropMapper`](https://help.syncfusion.com/api/js/ejgrid#members:rowdropsettings-dropmapper "dropMapper") property of the [`rowDropSettings`](https://help.syncfusion.com/api/js/ejgrid#members:rowdropsettings "rowDropSettings") helps in mapping server-side action when rows are dragged and dropped into the Grid.
+
+N>  The default behavior of drag and drop between Grid or any other controls is as cut and paste. For copy and paste behavior specify the drag behavior in [`dragBehavior`](https://help.syncfusion.com/api/js/ejgrid#members:rowdropsettings-dragbehavior "dragBehavior") property of the [`rowDropSettings`](https://help.syncfusion.com/api/js/ejgrid#members:rowdropsettings "rowDropSettings")  as ej.Grid.DragBehavior.Copy.
+

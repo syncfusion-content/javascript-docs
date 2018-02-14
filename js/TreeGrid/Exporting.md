@@ -9,7 +9,7 @@ api: /api/js/ejtreegrid
 ---
 # Export
 
-The TreeGrid provides support to export the contents in PDF and excel. To export the contents, the `ExcelExport` and `PdfExport` toolbar items must be included in the [toolbarSettings.toolbarItems](https://help.syncfusion.com/api/js/ejtreegrid#members:toolbarsettings-toolbaritems) property. Now, you need to call the `export` method with the export mapper as parameter in the toolbar button click action. 
+The TreeGrid provides support to export the contents in PDF and excel. To export the contents, the `ExcelExport` and `PdfExport` toolbar items must be included in the [`toolbarItems`](https://help.syncfusion.com/api/js/ejtreegrid#members:toolbarsettings-toolbaritems "toolbarSettings.toolbarItems") property. Now, you need to call the `export` method with the export mapper as parameter in the toolbar button click action. 
 The below code snippet explains the above behavior,
 
 The below code snippet explains the above behavior,

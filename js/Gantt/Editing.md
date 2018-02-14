@@ -15,7 +15,7 @@ The Gantt control provides in-built support to add, insert and update the tasks.
 * Cell Editing
 * Normal Editing
 * Taskbar Editing
-* Predecessor Editing
+* Dependency Editing
 
 ## Cell Editing
 
@@ -248,24 +248,61 @@ On taskbar edit action [`taskbarEditing`](/api/js/ejgantt#events:taskbarediting)
 
 You can find the JS playground sample for this [here](http://jsplayground.syncfusion.com/Sync_p3zjn5kw "Demo Link").
 
-## Predecessor Editing
+## Dependency Editing
 
-Update the predecessor details of a task using mouse interactions. The following code example shows how to enable predecessor editing.
+In Gantt, we can add, edit, update the task dependencies by mouse interactions, edit dialog and public methods. The code example shows how to enable dependency editing in Gantt.
 
 {% highlight javascript %}
 
-          $("#GanttContainer").ejGantt({
-              //...
-              dataSource: data,
-              allowGanttChartEditing: true,
-              predecessorMapping: "predecessor",
-          });
+    $("#GanttContainer").ejGantt({
+        //...
+        dataSource: data,
+        allowGanttChartEditing: true,
+        predecessorMapping: "predecessor",
+    });
 
 {% endhighlight %}
 
-The following screen shot shows the predecessor editing in Gantt control.
+### Add Dependency
+
+Task dependency can be added by mouse interactions by connecting connector points in predecessor and successor tasks. The following screen shot shows the add dependency action.
 
 ![](/js/Gantt/Editing_images/Editing_img3.png)
+
+### Edit Dependency
+
+Task dependency value can be edited by using edit dialog and [`updateDependency`](/api/js/ejgantt#methods:updatedependency) method. Dependency edit dialog can be opened by double clicking on corresponding dependency line.
+
+Client side [`actionBegin`](/api/js/ejgantt#events:actionbegin) event will be triggered twice with different `requestType` argument values while opening of dependency dialog. First time, event will be triggered with `requestType` argument values as `beforeDependencyEditDialogOpen`, in this event we can get the current editing dependency line information, next [`actionBegin`](/api/js/ejgantt#events:actionbegin) will be triggered with `requestType` argument value as `afterDependencyEditDialogOpen`, in this event we can get the information about current editing dependency line and editing elements in edit dialog. Using this event we can customize the dependency edit dialog elements.
+
+{% highlight javascript %}
+
+$("#GanttContainer").ejGantt({
+    //...
+   actionBegin: "actionBegin"
+});
+
+function actionBegin(args) {
+    if(args.requestType == "beforeDependencyEditDialogOpen") {
+
+    }
+    else if(args.requestType == "afterDependencyEditDialogOpen") {
+
+    }
+}
+
+{% endhighlight %}
+
+The following screen shot shows the dependency edit dialog.
+![](/js/Gantt/Editing_images/Predecessor_Editing_Dialog.png)
+
+You can find the JS playground sample for dependency editing methods and events [here](http://jsplayground.syncfusion.com/Sync_5eyi0dgr).
+
+### Delete Dependency
+
+Task dependency can be deleted by using edit dialog and [`deleteDependency`](/api/js/ejgantt#methods:deletedependency) method. The following screen shot shows the dependency edit dialog with delete option.
+
+![](/js/Gantt/Editing_images/Predecessor_Editing_Dialog.png)
 
 [Click](http://js.syncfusion.com/demos/web/#!/bootstrap/gantt/editing) here to view the online demo sample for editing in Gantt.
 

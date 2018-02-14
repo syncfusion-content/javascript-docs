@@ -140,7 +140,7 @@ You can find the JS playground sample for this [here](http://jsplayground.syncfu
 
 ## Cell selection
 
-You can select a cell in Gantt by setting the [`selectionMode`](/api/js/ejgantt#members:selectionmode) property as `cell`. And you can able to get the selected cell information using the [`selectedCellIndexes`](/api/js/ejgantt#members:selectedcellindexes) property from the Gantt object. The [`selectedCellIndexes`](/api/js/ejgantt#members:selectedcellindexes) is an object collection, which has the [`cellIndex`](/api/js/ejgantt#members:selectedcellindexes-cellIndex "selectedCellIndexes.cellIndex") and [`rowIndex`](/api/js/ejgantt#members:selectedcellindexes-rowIndex "selectedCellIndexes.rowIndex") information of the selected cells.
+You can select a cell in Gantt by setting the [`selectionMode`](/api/js/ejgantt#members:selectionmode) property as `cell`. And you can able to get the selected cell information using the [`selectedCellIndexes`](/api/js/ejgantt#members:selectedcellindexes) property from the Gantt object. The [`selectedCellIndexes`](/api/js/ejgantt#members:selectedcellindexes) is an object collection, which has the [`cellIndex`](/api/js/ejgantt#members:selectedcellindexes-cellindex "selectedCellIndexes.cellIndex") and [`rowIndex`](/api/js/ejgantt#members:selectedcellindexes-rowindex "selectedCellIndexes.rowIndex") information of the selected cells.
 
 Find the code example below to enable the cell selection in Gantt. 
 

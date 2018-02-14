@@ -162,3 +162,268 @@ public void ExcelExport()
 }
 
 {% endhighlight %}
+
+## Customization
+
+In Gantt, we can customize Grid cells, taskbars in Excel and PDF files by using exporting events. While exporting the Gantt as Excel or PDF files, events are triggered to customize the Grid cells and taskbars.
+
+### Customize Excel cell
+
+Excel cells can be customized by using `ServerExcelQueryCellInfo` event, in this event we can get the details about current record, Excel cell and current column information. Using this information we can customize the background color, font color and value of Excel cell, please find the event argument details below.
+
+<table>
+<tr>
+<th>Name</th><th>Description</th><th>Type</th>
+</tr>
+<tr>
+<td>Data</td><td>Returns the current row details </td><td>GanttRecordDetails</td>
+</tr>
+<td>Cell</td><td>Returns current Excel cell information</td><td>IRange</td>
+</tr>
+<tr>
+<td>Column</td><td>Returns current column information</td><td>GanttColumn</td>
+</tr>
+</table>
+
+The following code snippets shows how to bind `ServerExcelQueryCellInfo` event in Web API controller and how to customize Excel cell using this event.
+
+{% highlight c# %}
+
+    public class GanttController : ApiController
+    {
+        GanttProperties.GanttEJExportEventHandler queryExcelCellDelegate = new GanttProperties.GanttEJExportEventHandler(GanttExcelQueryCell);
+
+        [System.Web.Http.ActionName("ExcelCustomExport")]
+        [AcceptVerbs("POST")]
+        public void ExcelCustomExport()
+        {
+            string gridModel = HttpContext.Current.Request.Params["GanttModel"];
+            GanttProperties controlProperty = ConvertGridObject(gridModel);
+            `controlProperty.ServerExcelQueryCellInfo = queryExcelCellDelegate;`
+            ExcelExport exportObject = new ExcelExport();
+            TaskDetailsCollection taskDetails = new TaskDetailsCollection();
+            IEnumerable<TaskDetails> result = taskDetails.GetExportDataSource();
+            exportObject.Export(controlProperty, result, "ExcelExport.xlsx", ExcelVersion.Excel2010, new GanttExportSettings() { Theme = ExportTheme.FlatAzure });
+        }
+        
+        public static void GanttExcelQueryCell(object model, object arguments)
+        {
+            var record = (GanttRecordDetails)((Dictionary<string, object>)arguments)["Data"];
+            var cell = (IRange)((Dictionary<string, object>)arguments)["Cell"];
+            var column = (GanttColumn)((Dictionary<string, object>)arguments)["Column"];
+            var ganttModel = (GanttProperties)model;
+
+            if (column.MappingName == ganttModel.ProgressMapping && !record.IsParentRow)
+            {
+                if (float.Parse(cell.Value) > 80)
+                    cell.CellStyle.Color = ColorConversion.GetColor(new PdfColor(165, 105, 189));
+                else if (float.Parse(cell.Value) < 20)
+                    cell.CellStyle.Color = ColorConversion.GetColor(new PdfColor(240, 128, 128));
+            } 
+        }
+
+        private GanttProperties ConvertGridObject(string controlProperty)
+        {
+            JavaScriptSerializer serializer = new JavaScriptSerializer();
+            IEnumerable outputObject = (IEnumerable)serializer.Deserialize(controlProperty, typeof(IEnumerable));
+            GanttProperties gridProp = new GanttProperties();
+            foreach (KeyValuePair<string, object> currentProperty in outputObject)
+            {
+                var property = gridProp.GetType().GetProperty(currentProperty.Key, BindingFlags.Instance | BindingFlags.Public | BindingFlags.IgnoreCase);
+                if (property != null)
+                {
+                    Type type = property.PropertyType;
+                    string serialize = serializer.Serialize(currentProperty.Value);
+                    object value = serializer.Deserialize(serialize, type);
+                    property.SetValue(gridProp, value, null);
+                }
+            }
+            return gridProp;
+        }
+    }
+      
+{% endhighlight %}
+
+[Click](http://js.syncfusion.com/demos/web/#!/bootstrap/gantt/export/conditionalformatting) here to view the online demo sample with above code example.
+
+N> Refer this [link](https://help.syncfusion.com/cr/cref_files/aspnetmvc/xlsio/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IExtendedFormat_members.html) to know more about what are the properties are available in Excel cell and it's type values.
+
+### Customize PDF cell
+
+PDF cells in Gantt can be customized by using `ServerPdfQueryCellInfo` event, in this event we can get the details about current record, PDF cell and current column information. Using this information we can customize the background color and font color of PDF cells, please find the event argument details below.
+
+<table>
+<tr>
+<th>Name</th><th>Description</th><th>Type</th>
+</tr>
+<tr>
+<td>Data</td><td>Returns the current row details </td><td>GanttRecord</td>
+</tr>
+<td>Cell</td><td>Returns current Excel cell information</td><td>PdfTreeGridCell</td>
+</tr>
+<tr>
+<td>Column</td><td>Returns current column information</td><td>GanttColumn</td>
+</tr>
+</table>
+
+The following code snippets shows how to bind `ServerPdfQueryCellInfo` event in Web API controller and how to customize PDF cell using this event.
+
+
+{% highlight c# %}
+
+    public class GanttController : ApiController
+    {
+        GanttProperties.GanttEJExportEventHandler queryCellDelegate = new GanttProperties.GanttEJExportEventHandler(GanttPdfQueryCell);
+
+        [System.Web.Http.ActionName("PdfCustomExport")]
+        [AcceptVerbs("POST")]
+        public void PdfCustomExport()
+        {
+            string gridModel = HttpContext.Current.Request.Params["GanttModel"];
+            string locale = HttpContext.Current.Request.Params["locale"];
+            GanttProperties gridProperty = ConvertGridObject(gridModel);
+            `gridProperty.ServerPdfQueryCellInfo = queryCellDelegate;`
+            PdfExport export = new PdfExport();
+            TaskDetailsCollection taskCollection = new TaskDetailsCollection();
+            IEnumerable<TaskDetails> result = taskCollection.GetExportDataSource();
+            GanttPdfExportSettings settings = new GanttPdfExportSettings();
+            settings.EnableFooter = true;
+            settings.IsFitToWidth = true;
+            settings.ProjectName = "Project Tracker";
+            settings.Locale = locale;
+            export.Export(gridProperty, result, settings, "Gantt");
+        }
+
+        public static void GanttPdfQueryCell(object model, object arguments)
+        {
+            var record = (GanttRecord)((Dictionary<string, object>)arguments)["Data"];
+            var cell = (PdfTreeGridCell)((Dictionary<string, object>)arguments)["Cell"];
+            var column = (GanttColumn)((Dictionary<string, object>)arguments)["Column"];
+            var ganttModel = (GanttProperties)model;
+
+            if (column.MappingName == ganttModel.ProgressMapping && !record.IsParentRow)
+            {
+                if (record.Progress > 80)
+                {
+                    PdfBrush color = new PdfSolidBrush(new PdfColor(165, 105, 189));
+                    cell.Style.BackgroundBrush = color;
+                }
+                else if (record.Progress < 20)
+                {
+                    PdfBrush color = new PdfSolidBrush(new PdfColor(240, 128, 128));
+                    cell.Style.BackgroundBrush = color;
+                }
+            }       
+        }
+
+        private GanttProperties ConvertGridObject(string controlProperty)
+        {
+            JavaScriptSerializer serializer = new JavaScriptSerializer();
+            IEnumerable outputObject = (IEnumerable)serializer.Deserialize(controlProperty, typeof(IEnumerable));
+            GanttProperties gridProperty = new GanttProperties();
+            foreach (KeyValuePair<string, object> currentProperty in outputObject)
+            {
+                var property = gridProperty.GetType().GetProperty(currentProperty.Key, BindingFlags.Instance | BindingFlags.Public | BindingFlags.IgnoreCase);
+                if (property != null)
+                {
+                    Type type = property.PropertyType;
+                    string serialize = serializer.Serialize(currentProperty.Value);
+                    object value = serializer.Deserialize(serialize, type);
+                    property.SetValue(gridProperty, value, null);
+                }
+            }
+            return gridProperty;
+        }
+    }
+
+{% endhighlight %}
+
+[Click](http://js.syncfusion.com/demos/web/#!/bootstrap/gantt/export/conditionalformatting) here to view the online demo sample with above code example.
+
+N> Refer this [link](http://help.syncfusion.com/cr/cref_files/aspnetmvc/ejmvc/Syncfusion.EJ.Export~Syncfusion.EJ.Export.PdfTreeGridCellStyle_members.html) to know more about what are the properties are available in PDF cell and it's type values.
+
+### Customize PDF taskbar
+
+PDF taskbars in Gantt can be customized by using `ServerPdfQueryTaskbarInfo` event, in this event we can get the details about current record and taskbar information. Using this information we can customize the background color of taskbar and progress bar, please find the event argument details below.
+
+<table>
+<tr>
+<th>Name</th><th>Description</th><th>Type</th>
+</tr>
+<tr>
+<td>Data</td><td>Returns the current row details </td><td>GanttRecord</td>
+</tr>   
+<td>Taskbar</td><td>Returns current Excel cell information</td><td>PdfGanttTaskbar</td>
+</tr>
+</table>
+
+The following code snippets shows how to bind `ServerPdfQueryTaskbarInfo` event in Web API controller and how to customize PDF taskbar using this event.
+
+
+{% highlight c# %}
+
+    public class GanttController : ApiController
+    {
+        GanttProperties.GanttEJExportEventHandler queryTaskbarDelegate = new GanttProperties.GanttEJExportEventHandler(GanttQueryTaskbar);
+
+        [System.Web.Http.ActionName("PdfCustomExport")]
+        [AcceptVerbs("POST")]
+        public void PdfCustomExport()
+        {
+            string gridModel = HttpContext.Current.Request.Params["GanttModel"];
+            string locale = HttpContext.Current.Request.Params["locale"];
+            GanttProperties gridProperty = ConvertGridObject(gridModel);
+            `gridProperty.ServerPdfQueryTaskbarInfo = queryTaskbarDelegate;`
+            PdfExport export = new PdfExport();
+            TaskDetailsCollection taskCollection = new TaskDetailsCollection();
+            IEnumerable<TaskDetails> result = taskCollection.GetExportDataSource();
+            GanttPdfExportSettings settings = new GanttPdfExportSettings();
+            settings.EnableFooter = true;
+            settings.IsFitToWidth = true;
+            settings.ProjectName = "Project Tracker";
+            settings.Locale = locale;
+            export.Export(gridProperty, result, settings, "Gantt");
+        }
+
+        public static void GanttQueryTaskbar(object model, object arguments)
+        {
+            var record = (GanttRecord)((Dictionary<string, object>)arguments)["Data"];
+            var taskbar = (PdfGanttTaskbar)((Dictionary<string, object>)arguments)["Taskbar"];
+            if (!record.IsParentRow)
+            {
+                if (record.Progress > 80)
+                {
+                    taskbar.ProgressColor = new PdfColor(108, 52, 131);
+                    taskbar.TaskBorderColor = taskbar.TaskColor = new PdfColor(165, 105, 189);
+                }
+                else if (record.Progress < 20)
+                {
+                    taskbar.ProgressColor = new PdfColor(205, 92, 92);
+                    taskbar.TaskBorderColor = taskbar.TaskColor = new PdfColor(240, 128, 128);
+                }
+            }
+        }
+
+        private GanttProperties ConvertGridObject(string controlProperty)
+        {
+            JavaScriptSerializer serializer = new JavaScriptSerializer();
+            IEnumerable outputObject = (IEnumerable)serializer.Deserialize(controlProperty, typeof(IEnumerable));
+            GanttProperties gridProperty = new GanttProperties();
+            foreach (KeyValuePair<string, object> currentProperty in outputObject)
+            {
+                var property = gridProperty.GetType().GetProperty(currentProperty.Key, BindingFlags.Instance | BindingFlags.Public | BindingFlags.IgnoreCase);
+                if (property != null)
+                {
+                    Type type = property.PropertyType;
+                    string serialize = serializer.Serialize(currentProperty.Value);
+                    object value = serializer.Deserialize(serialize, type);
+                    property.SetValue(gridProperty, value, null);
+                }
+            }
+            return gridProperty;
+        }
+    }
+
+{% endhighlight %}
+
+[Click](http://js.syncfusion.com/demos/web/#!/bootstrap/gantt/export/conditionalformatting) here to view the online demo sample with above code example.

@@ -155,6 +155,8 @@ The output of TreeGrid with **Row Template** is as follows.
 
 ![](/js/TreeGrid/Rows_images/Rows_img1.png)
 
+N> 1. In TreeGrid, the given row template is parsed for default row functionality like row selection, alt row and other default row customization. Using [`parseRowTemplate`](https://help.syncfusion.com/api/js/ejtreegrid#members:parserowtemplate) property we can disable the row template parsing. TreeGrid is rendered with given row template, if we disable that property.
+
 ## Row Height
 The [`rowHeight`](/api/js/ejtreegrid#members:rowheight) property is used to change the height of row in tree grid, default value of this property is 30.
 
@@ -314,6 +316,35 @@ The below code example shows how to use this events.
         });
 
 {% endhighlight %}
+
+## Multiple Row drag and drop
+		
+Using Multiple row drag and drop we can re-order multiple rows at a time.Using this we can drop the rows as above, below and child position as like single row drag and drop.
+In TreeGrid we can enable the multiple drag and drop by setting [`selectionSettings.selectionType`](/api/js/ejtreegrid#members:selectionsettings-selectiontype "selectionSettings.selectionType") as `multiple` or  `checkbox` and also we should enable the [`allowDragAndDrop`](/api/js/ejtreegrid#members:allowdraganddrop).
+
+Please find the code example below to enable multiple drag and drop in TreeGrid.
+
+{% highlight js %} 
+      $("#treegrid1").ejTreeGrid({
+          //... 
+          selectionSettings:{
+              selectionType:"multiple"
+          },		  
+          allowDragAndDrop: true,          
+          // ...
+       });
+
+{% endhighlight %}
+
+We can also customize row drag and drop actions by using below properties
+
+* canDrag – It is used to enable/disable the row drag action for draggedRecords collection in [`rowDragStart`](/api/js/ejtreegrid#events:rowdragstart) client side event.
+
+* canDrop – It is used to enable/disable the row drop action for draggedRecords collection in `rowDropActionBegin` client side event. 
+
+![](/js/TreeGrid/Rows_images/Rows_img13.png)
+
+[Click](http://js.syncfusion.com/demos/web/#!/bootstrap/treegrid/rows/rowdraganddrop) here to view the demo sample for multiple drag and drop action.
 
 ## Details row
 

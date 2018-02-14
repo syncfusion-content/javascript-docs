@@ -321,6 +321,48 @@ $("#LinearGauge1").ejLinearGauge({
 });
 </script> {% endhighlight %}
 
+### doubleClick
+
+Triggers when the double click is released, you can use [`doubleClick`](../api/ejlineargauge#events:doubleclick) event.
+
+
+#### Example
+
+{% highlight html %}
+ 
+<div id="LinearGauge1"></div> 
+ 
+<script>
+$("#LinearGauge1").ejLinearGauge({
+
+    doubleClick: function (args) {
+              //Do something
+    }
+   
+});
+</script> {% endhighlight %}
+
+
+### rightClick
+
+Triggers when the right click is released, you can use [`rightClick`](../api/ejlineargauge#events:rightclick) event.
+
+
+#### Example
+
+{% highlight html %}
+ 
+<div id="LinearGauge1"></div> 
+ 
+<script>
+$("#LinearGauge1").ejLinearGauge({
+    rightClick: function (args) {
+              //Do something
+    }
+   
+});
+</script> {% endhighlight %}
+
 
 ## Methods
 
@@ -1929,6 +1971,7 @@ $("#LinearGauge1").ejLinearGauge();
 var LinearGaugeObj = $("#LinearGauge1").data("ejLinearGauge");
 LinearGaugeObj.setTickYDistanceFromScale(0,0,20);
 </script>{% endhighlight %}
+
 
 
 

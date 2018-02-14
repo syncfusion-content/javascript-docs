@@ -13,6 +13,7 @@ api: /api/js/ejheatmap
 External data source can be mapped with HeatMap using [itemsMapping](/api/js/ejheatmap#members:itemsmapping "itemsMapping") property. It supports 2 kind of data source.
 
 * In `TableMapping` rows represents an objects in collection, columns represents numerical properties of that object.
+
 * In `CellMapping` each cell represent an object in collection, this collection is grouped based on specific property to form as rows and columns.
 
 Let us see the difference between two types of mapping. Following table represents two different data structure to represent the same HeatMap.
@@ -90,6 +91,15 @@ Let us see the difference between two types of mapping. Following table represen
             
 			{% endhighlight %}
         </td>
+          <td>
+ 
+* The [row](/api/js/ejheatmap#members:itemsmapping-row "row") [propertyName](/api/js/ejheatmap#members:itemsmapping-row-propertyname "propertyName") property is used to bind the row with specific field which is in datasource collection. The row [displayName](/api/js/ejheatmap#members:itemsmapping-row-displayname "displayName") property is used to specify your own name for row.
+
+* The [column](/api/js/ejheatmap#members:itemsmapping-column "column") [propertyName](/api/js/ejheatmap#members:itemsmapping-column-propertyname "propertyName") property is used to bind the column with specific field which is in datasource collection. The column
+ [displayName](/api/js/ejheatmap#members:itemsmapping-column-displayname "displayName") property is used to specify your own name for column.
+
+* The [value](/api/js/ejheatmap#members:itemsmapping-value "value") [propertyName](/api/js/ejheatmap#members:itemsmapping-value-propertyname "propertyName") property is used to bind the heatmap column with specified data.
+        </td>
         <td>
             {% highlight js %}
     
@@ -109,6 +119,7 @@ Let us see the difference between two types of mapping. Following table represen
                 });
                 
             {% endhighlight %}
+
         </td>
     </tr>
     <tr>
@@ -120,3 +131,45 @@ Let us see the difference between two types of mapping. Following table represen
         </td>
     </tr>
 </table>
+
+## Mapping
+
+### HeaderMapping
+
+* The [headerMapping](/api/js/ejheatmap#members:itemsmapping-headermapping "headerMapping") property allows you to bind the header column(first column) with specific field defined in user DataSource. 
+
+* The headerMapping [propertyName](/api/js/ejheatmap#members:itemsmapping-headermapping-propertyname "propertyName") property is used to bind the specific field of datasource collection in it.
+
+* The headerMapping [displayName](/api/js/ejheatmap#members:itemsmapping-headermapping-displayname "displayName") property allows you to set name for an header.
+
+### ColumnMapping
+
+* The [columnMapping](/api/js/ejheatmap#members:itemsmapping-columnmapping "columnMapping") property allows you to bind the columns with user defined data.
+
+* The columnMapping [propertyName](/api/js/ejheatmap#members:itemsmapping-columnmapping-propertyname "propertyName") property is used to bind the heatmap columns with specified data.
+
+* The columnMapping [displayName](/api/js/ejheatmap#members:itemsmapping-columnmapping-displayname "displayName") property is used to specify the column name.
+
+## Appearance
+
+* To Align the text of an individual heatmap column, [columnStyle](/api/js/ejheatmap#members:itemsmapping-columnstyle "columnStyle") use [textAlign](/api/js/ejheatmap#members:itemsmapping-columnstyle-textalign "textAlign") property and to align text for an entire heatmap column, use [defaultColumnStyle](/api/js/ejheatmap#members:defaultcolumnstyle "defaultColumnStyle"), [textAlign](/api/js/ejheatmap#members:defaultcolumnstyle-textalign "textAlign").
+
+* The columnStyle [width](/api/js/ejheatmap#members:itemsmapping-columnstyle-width "width") property is used to define the width for a particular heatmap column.
+
+* The columnStyle [headerTemplateID](/api/js/ejheatmap#members:itemsmapping-columnstyle-headertemplateid "headerTemplateID") is used to add the template within the header element of the particular column.  
+
+* The columnStyle [templateID](/api/js/ejheatmap#members:itemsmapping-columnstyle-templateid "templateID") property is used to set an templateId for individual heatmap column. To set an template id for all heatmap columns, use defaultColumnStyle [templateID](/api/js/ejheatmap#members:defaultcolumnstyle-templateid "templateID") property.
+ 
+* To customize the header column, use headerMapping [columnStyle](/api/js/ejheatmap#members:itemsmapping-headermapping-columnstyle "columnStyle") property.
+
+* To hide the cell content, use [heatmapCell](/api/js/ejheatmap#members:heatmapcell "heatmapCell") [showContent](/api/js/ejheatmap#members:heatmapcell-showcontent "showContent") property as hidden and use [showColor](/api/js/ejheatmap#members:heatmapcell-showcolor "showColor") property to specify whether the cell color can be visible or not.
+
+## Virtualization
+
+Virtualization support is used to render large number of records in Heatmap with effective performance. This mode can be enabled by setting [enableVirtualization](/api/js/ejheatmap#members:enablevirtualization "enableVirtualization") property as true.
+
+## Responsive
+
+The heatmap control has support for the responsive behavior based on client browser’s width and height. To enable responsive, [isResponsive](/api/js/ejheatmap#members:isresponsive "isResponsive") property should be set as true.
+
+

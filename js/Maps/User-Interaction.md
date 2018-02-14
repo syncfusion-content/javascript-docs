@@ -311,6 +311,27 @@ The panning feature enables the Map navigation. The [`enablePan`](../api/ejmap#m
 
 {% endhighlight %}
 
+### Mouse Wheel Zoom
+
+You can zoom the Map with mouse by using mouse wheel. When the mouse is wheeled, the Map is zoomed in.
+
+You can enable this feature by setting [`enableMouseWheel`](../api/ejmap#members:zoomsettings-enablemousewheel) property value as ‘_true_’. 
+
+{% highlight javascript %}
+
+        jQuery(function($) {
+            $("#mapContainer").ejMap({
+                // ...
+                zoomSettings:
+                {
+                     enableMouseWheelZoom: true
+                },
+                // ...          
+            });
+        }); 
+
+{% endhighlight %}
+
 ## Navigation Control
 
 **Navigation** control is built-in with **Maps** control. With Navigation control, **Maps** can be panned in any direction and zoomed. It is possible to show or hide the NavigationControl by [`enableNavigation`](../api/ejmap#members:navigationcontrol-enablenavigation) property.

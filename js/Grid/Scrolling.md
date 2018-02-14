@@ -9,7 +9,9 @@ api: /api/js/ejgrid
 --- 
 # Scrolling
 
-Scrolling can be enabled by setting the [`allowScrolling`](https://help.syncfusion.com/api/js/ejgrid#members:allowscrolling "allowScrolling") as `true`. The height and width can be set to grid by using the properties [`scrollSettings.height`](https://help.syncfusion.com/api/js/ejgrid#members:scrollsettings-height "scrollSettings.height") and [`scrollSettings.width`](https://help.syncfusion.com/api/js/ejgrid#members:scrollsettings-width "scrollSettings.width") respectively. 
+Scrolling can be enabled by setting the [`allowScrolling`](https://help.syncfusion.com/api/js/ejgrid#members:allowscrolling "allowScrolling") as `true`. The height and width can be set to grid by using the properties [`scrollSettings.height`](https://help.syncfusion.com/api/js/ejgrid#members:scrollsettings-height "scrollSettings.height") and [`scrollSettings.width`](https://help.syncfusion.com/api/js/ejgrid#members:scrollsettings-width "scrollSettings.width") respectively.
+
+The height and width can be set in percentage and pixel. The default value for [`height`](https://help.syncfusion.com/api/js/ejgrid#members:scrollsettings-height "height") and [`width`](https://help.syncfusion.com/api/js/ejgrid#members:scrollsettings-width "width") in the [`scrollSettings`](https://help.syncfusion.com/api/js/ejgrid#members:scrollsettings "scrollSettings") is 0 and `auto` respectively.
 
 N> If [`width`](https://help.syncfusion.com/api/js/ejgrid#members:scrollsettings-width "width") and [`height`](https://help.syncfusion.com/api/js/ejgrid#members:scrollsettings-height "height") is not defined in the [`scrollSettings`](https://help.syncfusion.com/api/js/ejgrid#members:scrollsettings "scrollSettings") property then the horizontal and vertical scrollbar is enabled, only when the grid width exceeds the browser width.
 
@@ -36,6 +38,42 @@ $(function () {
 The following output is displayed as a result of the above code example.
 
 ![](scrolling_images/scrolling_img1.png)
+
+# Scroller appearance customization
+
+We can show or hide the scrollbar while focus in or focus out of the Grid using  [`autoHide`](https://help.syncfusion.com/api/js/ejgrid#members:scrollsettings-autohide "autoHide") property of  [`scrollSettings`](https://help.syncfusion.com/api/js/ejgrid#members:scrollsettings "scrollSettings") 
+
+The height and width of button in the scrollbar can be customized by using [`buttonSize `](https://help.syncfusion.com/api/js/ejgrid#members:scrollsettings-buttonsize  "buttonSize ") property of  [`scrollSettings`](https://help.syncfusion.com/api/js/ejgrid#members:scrollsettings "scrollSettings") 
+
+To specify the scroll down pixel of mouse wheel, to scroll mouse wheel and view the grid contents use [`scrollOneStepBy  `](https://help.syncfusion.com/api/js/ejgrid#members:scrollsettings-scrollonestepby  "scrollOneStepBy  ") property of  [`scrollSettings`](https://help.syncfusion.com/api/js/ejgrid#members:scrollsettings "scrollSettings") 
+
+And to specify the scroller size use  [`scrollerSize `](https://help.syncfusion.com/api/js/ejgrid#members:scrollsettings-scrollersize  "scrollerSize ") property of  [`scrollSettings`](https://help.syncfusion.com/api/js/ejgrid#members:scrollsettings "scrollSettings") 
+
+N> To get the scroller object use [`getScrollObject`](https://help.syncfusion.com/api/js/ejgrid#methods:getscrollobject "getScrollObject") method.
+
+The following code example describes the above behavior.
+
+{% highlight html %}
+<div id="Grid"></div>
+{% endhighlight %}
+
+{% highlight javascript %}
+$(function () {
+	$("#Grid").ejGrid({
+		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+		dataSource : window.gridData,
+		allowScrolling : true,
+		scrollSettings:{width: 600, height: 337,autoHide: true,buttonSize:35,scrollerSize:40},
+        columns : ["OrderID", "EmployeeID", "CustomerID", "ShipCity"]
+	});
+});
+{% endhighlight %}
+
+The following output is displayed as a result of the above code example.
+
+![](scrolling_images/scrolling_img12.png)
+
+
 
 
 ## Set width and height in pixel 	
@@ -228,6 +266,9 @@ The following output is displayed as a result of the above code example.
 ![](scrolling_images/scrolling_img7.png)
 
 
+N> By using [`rowHeightRefresh`](https://help.syncfusion.com/api/js/ejgrid#methods:rowheightrefresh "rowHeightRefresh") method resolves row height issue when movable and frozen content height mismatch.
+
+
 ## Touch scroll
 
 In [touch](https://help.syncfusion.com/api/js/ejgrid#members:scrollsettings-enabletouchscroll "touch") supported devices you can scroll and show the content by swipe left, right, top and bottom. Disable touch scroll by setting [`enableTouchScroll`](https://help.syncfusion.com/api/js/ejgrid#members:scrollsettings-enabletouchscroll "enableTouchScroll") property of the [`scrollSettings`](https://help.syncfusion.com/api/js/ejgrid#members:scrollsettings "scrollSettings") as `false`.
@@ -252,9 +293,9 @@ $(function () {
 
 ## Virtual Scrolling
 
-The virtual scrolling support allows you to load data that you require (load data based on page size) without buffering the entire huge database. To enable the virtual scrolling set the `allowVirtualScrolling`  property of `scrollSettings`  as `true`. 
+The virtual scrolling support allows you to load data that you require (load data based on page size) without buffering the entire huge database. To enable the virtual scrolling set the  [`allowVirtualScrolling `](https://help.syncfusion.com/api/js/ejgrid#members:scrollsettings-allowvirtualscrolling "allowVirtualScrolling ")   property of `scrollSettings`  as `true`. 
 
-We also have an enhanced virtual scrolling feature with an improvised performance. To enable improvised virtual scrolling feature set the `enableVirtualization` property of `scrollSettings` as true and it doesn't require the `allowVirtualScrolling` to be enabled. It allows you to load the grid with data while scrolling. Some of the relevant functionalities of this are.
+We also have an enhanced virtual scrolling feature with an improvised performance. To enable improvised virtual scrolling feature set the  [`enableVirtualization  `](https://help.syncfusion.com/api/js/ejgrid#members:scrollsettings-enablevirtualization "enableVirtualization  ")  property of `scrollSettings` as true and it doesn't require the [`allowVirtualScrolling `](https://help.syncfusion.com/api/js/ejgrid#members:scrollsettings-allowvirtualscrolling "allowVirtualScrolling ") to be enabled. It allows you to load the grid with data while scrolling. Some of the relevant functionalities of this are.
 
 1.	White space will not be appeared in the Grid. 
 2.	Improved page rendering performance. 
@@ -301,7 +342,7 @@ The following output is displayed as a result of the above code example.
 
 #### Enhanced Virtual Scrolling:
 
-In order to enable this, you need to set the `enableVirtualization` property of the `scrollSettings` as true. 
+In order to enable this, you need to set the  [`enableVirtualization  `](https://help.syncfusion.com/api/js/ejgrid#members:scrollsettings-enablevirtualization "enableVirtualization  ") property of the `scrollSettings` as true. 
 
 The following code example describes the above behavior.
 

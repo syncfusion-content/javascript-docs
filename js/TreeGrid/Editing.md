@@ -117,6 +117,35 @@ The output of the TreeGrid with `dialogEditing` is as follows.
 
 The add and edit dialogs can be opened on custom actions instead of toolbar icons using the methods [`showAddDialog`](https://help.syncfusion.com/api/js/ejtreegrid#methods:showadddialog "showAddDialog") and [`showEditDialog`](https://help.syncfusion.com/api/js/ejtreegrid#methods:showeditdialog "showEditDialog").
 
+### Prevent dialog editing
+In dialog editing action [`actionBegin`](https://help.syncfusion.com/api/js/ejtreegrid#events:actionbegin)  and [`actionComplete`](https://help.syncfusion.com/api/js/ejtreegrid#events:actioncomplete) client side events are triggered before and after the edit action. Dialog editing for specific row can be prevent by using actionBegin event.
+
+The following code example show, how to prevent dialog editing in tree grid.
+
+{% highlight js %}
+
+    $("#TreeGridContainer").ejTreeGrid({
+        //...
+        editSettings: {
+            allowEditing: true,
+            editMode: "dialogEditing"
+
+        },
+        actionBegin:function(args)
+        {
+            if(args.requestType == "beforeOpenEditDialog")
+            {
+                if(args.data.taskID == 4)
+                    args.cancel = true;
+            }
+        },
+        //...
+    });
+
+{% endhighlight %}
+
+N> While saving the edited record [`actionComplete`](https://help.syncfusion.com/api/js/ejtreegrid#events:actioncomplete) event will be triggered with updated record value in `data` argument and `requestType` as `recordUpdate`. Using this event we can update the information in database.
+
 ## Cell edit type and its params
 
 The edit type of columns can be customized using [`editType`](/api/js/ejtreegrid#members:columns-edittype "columns.editType") property of [`columns`](/api/js/ejtreegrid#members:columns). The following Essential JavaScript controls are supported built-in by [`editType`](/api/js/ejtreegrid#members:columns-edittype "columns.editType"). You can set the [`editType`](/api/js/ejtreegrid#members:columns-edittype "columns.editType") based on specific data type of the column.
@@ -349,6 +378,56 @@ The output of the TreeGrid width editTemplate as follows.
 ![](/js/TreeGrid/Editing_images/editTemplate.png)
 
 The updated record values are maintained in collection in TreeGrid, and the user can retrieve the updated record collection at any time by using the [`getUpdatedRecords`](https://help.syncfusion.com/api/js/ejtreegrid#methods:getupdatedrecords "getUpdatedRecords") method.
+
+## Add new record
+
+TreeGrid provides support for adding a new record by setting [`allowAdding`](/api/js/ejtreegrid#members:editsettings-allowadding "editSettings.allowAdding") property as `true`. You can add new record by toolbar add item click or context menu.
+
+The below code example shows how to enable add new record option in TreeGrid.
+
+{% highlight js %}
+$("#TreeGrid").ejTreeGrid({
+    //...
+    editSettings: {
+        allowAdding: true,
+    },
+    //...
+});
+
+{% endhighlight %}
+
+![](/js/TreeGrid/Editing_images/addnewRowBefore.png)
+
+The above screenshot shows before add a new record in tree grid.
+{:.caption}
+
+![](/js/TreeGrid/Editing_images/addnewRowAfter.png)
+
+The above screenshot shows after add a new record in tree grid.
+{:.caption}
+
+### Add row position
+
+The TreeGrid control provides the support to add the new row in the top, bottom, above selected row, below selected row and child position of tree grid content using [`rowPosition`](/api/js/ejtreegrid#members:editsettings-rowposition "editSettings.rowPosition") property.
+ 
+ The below code example shows how to set row position for new record add in tree grid.
+
+{% highlight js %}
+$("#TreeGrid").ejTreeGrid({
+    //...
+    editSettings: {
+        allowAdding: true,
+        rowPosition:ej.TreeGrid.RowPosition.Child,
+    },
+    //...
+});
+
+{% endhighlight %}
+
+![](/js/TreeGrid/Editing_images/addnewRowChild.png)
+
+The above screenshot shows new record added in row position of `child`.
+{:.caption}
 
 ## Adding records using method
 
