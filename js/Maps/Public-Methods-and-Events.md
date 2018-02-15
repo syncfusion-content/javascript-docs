@@ -211,6 +211,129 @@ Triggers when map is zoomed out, you can use [`zoomedOut`](../api/ejmap#events:z
 
 {% endhighlight %}
 
+### shapeRendering
+
+The [`shapeRendering`](../api/ejmap#events:shaperendering) event is triggered while rendering each shape in the map.
+
+{% highlight js %}
+
+//shapeRendering event for map
+  $("#container").ejMap({
+   shapeRendering : function (event) {}
+  });
+
+{% endhighlight %}
+
+
+### bubbleRendering
+
+The [`bubbleRendering`](../api/ejmap#events:bubblerendering) event is triggered while rendering each bubble in the map.
+
+{% highlight js %}
+
+//bubbleRendering event for map
+  $("#container").ejMap({
+   bubbleRendering : function (event) {}
+  });
+
+{% endhighlight %}
+
+
+### legendItemRendering
+
+The [`legendItemRendering`](../api/ejmap#events:legenditemrendering) event is triggered before rendering each legend in the map.
+
+{% highlight js %}
+
+//legendItemRendering event for map
+  $("#container").ejMap({
+   legendItemRendering : function (event) {}
+  });
+
+{% endhighlight %}
+
+
+### Click
+
+Triggers while clicking on the layers of the map, you can use [`click`](../api/ejmap#events:click) event.
+
+
+{% highlight js %}
+ 
+//Click event for map
+
+$("#container").ejMap({
+
+    click: function (args) {
+              //Do something
+    }
+   
+});
+
+{% endhighlight %}
+
+
+### doubleClick
+
+Triggers while double clicking on the layers of the map, you can use [`doubleClick`](../api/ejmap#events:doubleclick) event.
+
+
+{% highlight js %}
+ 
+//DoubleClick event for map.
+
+$("#container").ejMap({
+
+    doubleClick: function (args) {
+              //Do something
+    }
+   
+});
+
+{% endhighlight %}
+
+
+
+### rightClick
+
+Triggers while right clicking on the layers of the map, you can use [`rightClick`](../api/ejmap#events:rightclick) event.
+
+
+
+{% highlight js %}
+ 
+//RightClick event for map
+
+$("#container").ejMap({
+    rightClick: function (args) {
+              //Do something
+    }
+   
+});
+
+{% endhighlight %}
+
+
+### onLoad
+
+Triggers before loading the map, you can use [`onLoad`](../api/ejmap#events:onload) event.
+
+
+
+{% highlight js %}
+ 
+//onLoad event for map
+
+$("#container").ejMap({
+    onLoad: function (args) {
+              //Do something
+    }
+   
+});
+
+{% endhighlight %}
+
+
 
 <a class="" href="http://www.syncfusion.com/copyright" target="_blank">Copyright &copy; 2001 - 2015 Syncfusion Inc. All Rights Reserved</a>
 

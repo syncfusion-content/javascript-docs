@@ -1580,3 +1580,39 @@ $("#CircularGauge1").ejCircularGauge({
         });
 
 {% endhighlight %}
+
+
+### doubleClick
+
+The [`doubleClick`](../api/ejcirculargauge#events:doubleclick) event is triggered when double clicking the gauges.
+
+{% highlight js %}
+ 
+//DoubleClick event for circular gauge
+
+$("#CoreCircularGauge").ejCircularGauge({
+
+    doubleClick: function (args) {
+              //Do something
+    }
+   
+});
+
+{% endhighlight %}
+
+### rightClick
+
+The [`rightClick`](../api/ejcirculargauge#events:rightclick) event is triggered when right clicking the gauges.
+
+{% highlight js %}
+ 
+//RightClick event for circular gauge
+
+$("#CoreCircularGauge").ejCircularGauge({
+    rightClick: function (args) {
+              //Do something
+    }
+   
+});
+
+{% endhighlight %}

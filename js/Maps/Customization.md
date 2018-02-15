@@ -270,6 +270,52 @@ Here USA election data is considered as input datasource and stored in “electi
 
 ![](/js/Maps/Customization_images/Customization_img3.png) 
 
+## Binding color from the datasource
+
+By using [`colorPath`](../api/ejmap#members:layers-shapesettings-colorpath) property, you can bind the specific field in the datasource to the map, and the shapes will be rendered based the color values available from the field you bind. 
+
+N> While setting color for map by using [`colorPath`] property, do not set any other color mapping hence color mapping is having higher priority than [`colorPath`]. 
+
+{% highlight javascript %}
+
+jQuery(function($) {
+
+    $("#maps").ejMap({ 
+     //…
+     layers: [ 
+     {
+            shapeSettings: {
+               colorPath: "shapeFill",
+            }
+     //…
+    });
+});
+{% endhighlight %}
+
+![](/js/Maps/Customization_images/Customization_img8.png) 
+
+While binding color path for map, it is possible to render legend for each shape in the map. To achieve this, set the [`textPath`](../api/ejmap#members:layers-legendsettings-textpath) for legend. [`textPath`](../api/ejmap#members:layers-legendsettings-textpath) contains another field name in the datasource. As per the text, content in the field legend will be generated. 
+
+{% highlight javascript %}
+
+$("#maps").ejMap({ 
+     //…
+     layers: [ 
+     {
+            shapeSettings: {
+               colorPath: "shapeFill",
+            },
+            legendSettings: {
+               showLegend: true,
+               textPath: “name”
+            }
+     //…
+});
+
+{% endhighlight %}
+
+![](/js/Maps/Customization_images/Customization_img9.png) 
+
 ## Color Palette
 
 ### AutoFill

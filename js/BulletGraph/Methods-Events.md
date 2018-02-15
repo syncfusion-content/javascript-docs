@@ -248,3 +248,62 @@ $("#bulletGraph1").ejBulletGraph({
 </script>
 
 {% endhighlight %}
+
+## click
+
+[`click`](../api/ejbulletgraph#events:click) event fires on clicking the bullet graph.
+
+{% highlight html %}
+ 
+<script>
+//click event for bulletgraph
+$("#bulletGraph1").ejBulletGraph({
+
+    click: function (args) {
+              //Do something
+    }
+   
+});
+</script>
+
+{% endhighlight %}
+
+
+## doubleClick
+
+[`doubleClick`](../api/ejbulletgraph#events:doubleclick) event fires on double clicking the bullet graph.
+
+{% highlight html %}
+ 
+<script>
+//doubleClick event for bulletgraph
+$("#bulletGraph1").ejBulletGraph({
+
+    doubleClick: function (args) {
+              //Do something
+    }
+   
+});
+</script>
+
+{% endhighlight %}
+
+
+## rightClick
+
+[`rightClick`](../api/ejbulletgraph#events:rightclick) event fires on right clicking the bullet graph.
+
+
+{% highlight html %}
+ 
+<script>
+//rightClick event for bulletgraph
+$("#bulletGraph1").ejBulletGraph({
+    rightClick: function (args) {
+              //Do something
+    }
+   
+});
+</script>
+
+{% endhighlight %}
