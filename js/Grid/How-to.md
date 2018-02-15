@@ -279,7 +279,6 @@ The `queryString` property is used to filter the childGrid data based on value i
 The following code example explains the above behavior.
 
 {% highlight html %}
-<a href="http://www.syncfusion.com">Navigate to another Page</a>
 <div id="Grid"></div>
     <script type="text/javascript">
         $(function () {
