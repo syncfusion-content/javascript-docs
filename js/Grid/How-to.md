@@ -271,3 +271,53 @@ Grid provides different Methods such as [`clearSorting`](https://help.syncfusion
 
 The following output is displayed as a result of the above code example.
 ![](externalsearch_images/ResetModel.png)
+
+## Hierarchy Grid with different foreignKeyField in parent and child table
+
+The `queryString` property is used to filter the childGrid data based on value in parent Grid data. But when the field name provided in `queryString` does not exists in Child Grid, then `foreignKeyField` property is used to filter the childGrid data. If the foreign key column name differs for parent and child grid then use `foreingnKeyField` property of Grid.
+
+The following code example explains the above behavior.
+
+{% highlight html %}
+<div id="Grid"></div>
+    <script type="text/javascript">
+        $(function () {
+            var dataparent =[{EmployeeID:1,FirstName:"Nancy",City:"Seattle",Country:"USA"},
+                            {EmployeeID:2,FirstName:"Andrew",City:"Takoma",Country:"USA"},
+                            {EmployeeID:3,FirstName:"Margret",City:"Krickland",Country:"USA"},
+                            {EmployeeID:4,FirstName:"Janet",City:"Seattle",Country:"USA"}];
+                            
+            var datachild = [{OrderID:10248,CustomerName :"Nancy",CustomerID:"VINET",ShipCity:"Graz",ShipName:"Ernst Handel"},
+                            {OrderID:10249,CustomerName :"Takoma",CustomerID:"ANATR",ShipCity:"Oulu",ShipName:"Wartian Herkku"},
+                            {OrderID:10251,CustomerName :"Krickland",CustomerID:"HANAR",ShipCity:"Bergamo",ShipName:"QUICK-Stop"}];            
+                            
+            $("#Grid").ejGrid({
+                dataSource: dataparent,
+                allowSorting: true,
+                columns: [
+                         { field: "EmployeeID", headerText: 'Employee ID', textAlign: ej.TextAlign.Right, width: 75 },
+                         { field: "FirstName", headerText: 'First Name', textAlign: ej.TextAlign.Left, width: 100 },
+                         { field: "City", headerText: 'City', textAlign: ej.TextAlign.Left, width: 100 },
+                         { field: "Country", headerText: 'Country', textAlign: ej.TextAlign.Left, width: 100 }
+                ],
+                childGrid: {
+                    dataSource: datachild,
+                    queryString: "FirstName",
+                    foreignKeyField:"CustomerName",
+                    allowPaging: true,
+                    columns: [
+                             { field: "OrderID", headerText: 'Order ID', textAlign: ej.TextAlign.Right, width: 75 },
+                             { field: "ShipCity", headerText: 'Ship City', textAlign: ej.TextAlign.Left, width: 100 },
+                             { field: "CustomerName", headerText: 'First Name', textAlign: ej.TextAlign.Left, width: 100 },
+                             { field: "CustomerID", headerText: 'Customer ID', textAlign: ej.TextAlign.Left, width: 120 },
+                             { field: "ShipName", headerText: 'Ship Name', textAlign: ej.TextAlign.Left, width: 100 }
+                    ],
+                    
+                },
+            });
+        });
+    </script>
+  {% endhighlight %}   
+  
+The following output is displayed as a result of the above code example.
+![](Hierarchy-Grid_images/Hierarchy-Grid_images2.png)
