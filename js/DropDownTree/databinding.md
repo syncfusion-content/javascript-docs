@@ -145,7 +145,6 @@ OData is a standardized protocol for creating and consuming data. Provide  [ODat
             $('#selectCar').ejDropDownTree({
                 watermarkText: "Select a car",
                 width: "50%",
-                value: 'Gula Malacca',
                 treeViewSettings : {
                     fields: {
                         dataSource: dataManger, query: query, id: "CategoryID", text: "CategoryName",
@@ -184,7 +183,6 @@ By using URL property of “ej.DataManager”, bind OData Version 4 Service link
             $('#selectCar').ejDropDownTree({
                 watermarkText: "Select a car",
                 width: "50%",
-                value: 'Gula Malacca',
                 treeViewSettings : {
                     fields: {
                         dataSource: dataManger, query: query, id: "CategoryID", text: "CategoryName",
@@ -291,7 +289,7 @@ When using remote data binding, the adaptor of "ej.DataManager" plays a vital ro
   
   		// insert from custom adaptor usage
         dataManager.insert({
-            id: 29, pid: 1, name: "Hingles"
+            id: 29, pid: 1, name: `Hingles`
         });
 
         $(function () {

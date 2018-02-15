@@ -32,7 +32,7 @@ And the internal script dependencies of the DropDownTree widget are:
 	</tr>
 	<tr>
 		<td>ej.dropdowntree.min.js</td>
-		<td>The dropdowntree’s main file</td>
+		<td>The DropDownTree’s main file</td>
 	</tr>
 	<tr>
 		<td>ej.checkbox.min.js</td>
@@ -104,7 +104,7 @@ Create a new HTML file and add [CDN](https://help.syncfusion.com/js/cdn) links t
 
  ## Creating DropDownTree
 
-The DropDownTree can be created from a HTML ‘input’ element with the HTML 'id' attribute and 'ul','li' elements for hierarchial data. To create the DropDownTree, you should call the 'ejDropDownTree' jQuery plug-in function.
+The DropDownTree can be created from a HTML ‘input’ element with the HTML 'id' attribute and 'ul','li' elements for hierarchical data. To create the DropDownTree, you should call the 'ejDropDownTree' jQuery plug-in function.
 
     {% highlight html %}
 	

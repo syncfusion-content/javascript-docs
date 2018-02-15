@@ -65,7 +65,7 @@ In the demo, a JSON array is created with text, imgId, role and country initiali
             padding: 6px 3px 1px 3px;
         }
 
-        .desig, .cont {
+        .cont {
             font-size: smaller;
             padding: 3px 3px -1px 0px;
         }
@@ -113,10 +113,6 @@ In the demo, a JSON array is created with text, imgId, role and country initiali
              });
 
             var treeObj = $("#treeview").data("ejTreeView");
-            $("#treeview").find(".cont-del").bind("click", function (e) {
-                e.preventDefault();
-                treeObj.removeNode($(e.target).parents("li").first());
-            });
         });
 
 

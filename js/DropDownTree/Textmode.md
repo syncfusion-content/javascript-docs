@@ -9,7 +9,7 @@ keywords: Textmode, dropdown,textModes, Delimiter
 api: /api/js/ejDropDownTree
 ---
 
-## Textmode
+## textMode
 
 You can get the node text or node with parent text in the value field by using the [`textMode`](https://help.syncfusion.com/api/js/ejdropdowntree#members:textMode) property.
 
@@ -59,9 +59,9 @@ It's default value is `none`.
 
 ![](TextMode_images/fullpath.png)
 
-## TextMode with fullPathDelimeter
+## TextMode with fullPathDelimiter
 
-Each selected item’s text is appended to the textbox with parent separated by delimiter “/”, by default. This is enabled by assigning `textMode` (enum). You can customize the delimiter option by using the [`fullPathDelimeter`](https://help.syncfusion.com/api/js/ejdropdowntree#members:fullPathDelimeter) property.
+Each selected item’s text is appended to the textbox with parent separated by delimiter “/”, by default. This is enabled by assigning `textMode` (enum). You can customize the delimiter option by using the [`fullPathDelimiter`](https://help.syncfusion.com/api/js/ejdropdowntree#members:fullpathdelimiter) property.
 
 {% highlight html %}
 

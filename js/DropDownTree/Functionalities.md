@@ -130,7 +130,7 @@ You can select/unselect the particular node at run time by using [selectNode](ht
 
 N> To select nodes, `allowMultiSelection` must be enabled in [`treeViewSettings`](https://help.syncfusion.com/api/js/ejdropdowntree#members:treeViewSettings).
 
-## Movenode
+## moveNode
 
 You can move a node from one index to another index using the [`moveNode`](https://help.syncfusion.com/api/js/ejdropdowntree#methods:moveNode) method.
 
@@ -276,7 +276,7 @@ You can remove a particular node or all the nodes using [`removeNode`](https://h
 
 ## Validation
 
-You can validate the DropDownList value on form submission by applying “validationRules” and “validationMessage”to the DropDownList. 
+You can validate the DropDownList value on form submission by applying `validationRules` and `validationMessage`to the DropDownList. 
 
 N> [jquery.validate.min](http://cdn.syncfusion.com/js/assets/external/jquery.validate.min.js) script file should be referred for validation, for more details, refer [here](http://jqueryvalidation.org/documentation).
 
@@ -355,7 +355,6 @@ Required field and min value validation is demonstrated in the below given examp
                     <li>
                         Classical
                         <ul>
-                            <li>Avant-Garde</li>
                             <li>Medieval</li>
                             <li>Orchestral</li>
                         </ul>

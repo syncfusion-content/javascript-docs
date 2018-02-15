@@ -11,7 +11,7 @@ api: /api/js/ejDropDownTree
 
 ## Load On Demand
 
-Load on demand feature allows the DropDownTree items to load on request from the service/database, on clicking the expand icon. This functionality helps to improve performance on control’s initial rendering timeas data items load only on request. 
+Load on demand feature allows the DropDownTree items to load on request from the service/database, on clicking the expand icon. This functionality helps to improve performance on control’s initial rendering time as data items load only on request. 
 
 The [loadOnDemand](https://help.syncfusion.com/api/js/ejdropdowntree#members:loadOnDemand) property is used to enable or disable the load on demand functionality of the DropDownTree.
 

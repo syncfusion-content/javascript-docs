@@ -351,7 +351,7 @@ While selecting the items in the DropDownTree, the select or change event will b
 
 ## Display the Validation message in the same line as the DropDownTree
 
-In the DropDownTree control, the `display` property for the outer wrapper element will be set to `block`, by default. So, modifying it to `inline-block` will move the validation message to the same line as the DropDownTree. Rrefer to the following code.
+In the DropDownTree control, the `display` property for the outer wrapper element will be set to `block`, by default. So, modifying it to `inline-block` will move the validation message to the same line as the DropDownTree. Refer to the following code.
 
 {% highlight html %}
 
@@ -415,7 +415,6 @@ In the DropDownTree control, the `display` property for the outer wrapper elemen
                     <li>
                         Classical
                         <ul>
-                            <li>Avant-Garde</li>
                             <li>Medieval</li>
                             <li>Orchestral</li>
                         </ul>
