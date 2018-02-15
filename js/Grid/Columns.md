@@ -1024,6 +1024,8 @@ I> For foreign key column the sorting and grouping is based on [`foreignKeyField
 
 N> In remote data, server should be configured to perform select and filter operations since the Grid will try to fetch required columns using select operation and the required data using filter operation.
 
+N> To render a Hierarchy Grid with different `foreignKeyField` in parent and child table, click [`here`](https://help.syncfusion.com/js/grid/how-to#hierarchy-grid-with-different-foreignkeyfield-in-parent-and-child-table "here").
+
 The following code example describes the above behavior.
 
 {% highlight html %}
