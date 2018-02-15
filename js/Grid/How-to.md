@@ -321,3 +321,65 @@ The following code example explains the above behavior.
   
 The following output is displayed as a result of the above code example.
 ![](Hierarchy-Grid_images/Hierarchy-Grid_images2.png)
+
+## Display other Syncfusion controls in Grid columns
+
+We can display the other Syncfusion controls using [`template`](https://help.syncfusion.com/api/js/ejgrid#members:columns-template "template") property of Grid columns and [`templateRefresh`](https://help.syncfusion.com/api/js/ejgrid#events:templaterefresh "templateRefresh") event of ejGrid control.
+
+{% tabs %}
+{% highlight html %}
+
+<div class="content-container-fluid">
+        <div class="row">
+            <div class="cols-sample-area">
+                <script type="text/x-jsrender" id="columnTemplate">
+
+                    {{if EmployeeID<3}}
+
+                    <input type="text" class="rating" value="3" />
+
+                    {{else EmployeeID>2 && EmployeeID<5}}
+
+                    <input type="text" class="rating" value="3" />
+
+                    {{else EmployeeID>4}}
+
+                    <input type="text" class="rating" value="5" />
+
+                    {{/if}}
+                </script>
+                <div id="Grid"></div>
+            </div>
+        </div>
+    </div>
+    
+{% endhighlight %}
+
+{% highlight js %}
+
+<script>
+    $(function () {
+        $("#Grid").ejGrid({
+            // the datasource "window.employeeView" is referred from jsondata.min.js
+            dataSource: window.employeeView,
+            allowPaging: true,
+            columns: [
+                { headerText: "Employee Rating", template: "#columnTemplate", width: 150 },
+                { field: "EmployeeID", headerText: "Employee ID", width: 90 },
+                { field: "FirstName", headerText: "First Name", width: 90 },
+                { field: "LastName", headerText: "Last Name", width: 90 },
+                { field: "Country", headerText: "Country", width: 80 }
+            ],
+            templateRefresh: "template",
+        });
+    });
+    function template(args) {
+        $(args.cell).find(".rating").ejRating({ allowReset: false });
+    }
+</script>
+
+{% endhighlight %}
+
+{% endtabs %}
+The following output is displayed as a result of the above code example.
+![](Display_Other_controls_images/Display_Other_controls_img1.png)
