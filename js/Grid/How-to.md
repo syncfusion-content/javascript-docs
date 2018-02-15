@@ -272,9 +272,9 @@ Grid provides different Methods such as [`clearSorting`](https://help.syncfusion
 The following output is displayed as a result of the above code example.
 ![](externalsearch_images/ResetModel.png)
 
-## Set foreignKeyField for Child Grid
+## Hierarchy Grid with different foreignkeyfield in parent and child table
 
-The [`queryString`](https://help.syncfusion.com/api/js/ejgrid#members:childgrid-querystring "queryString") property is used to filter the childGrid data based on value in parent Grid data. But when the field name provided in [`queryString`](https://help.syncfusion.com/api/js/ejgrid#members:childgrid-querystring "queryString") does not exists in Child Grid, then [`foreignKeyField`](https://help.syncfusion.com/api/js/ejgrid#members:childgrid-foreignkeyfield "foreignKeyField") property is used to filter the childGrid data. If the map field name for parent and child grid differs then you have to use [`foreignKeyField`](https://help.syncfusion.com/api/js/ejgrid#members:childgrid-foreignkeyfield "foreignKeyField") property of Grid.
+The `queryString` property is used to filter the childGrid data based on value in parent Grid data. But when the field name provided in `queryString` does not exists in Child Grid, then `foreignKeyField` property is used to filter the childGrid data. If the foreign key column name differes for parent and child grid then use `foreingnKeyField` property of Grid.
 
 The following code example explains the above behavior.
 
@@ -288,9 +288,9 @@ The following code example explains the above behavior.
                             {EmployeeID:3,FirstName:"Margret",City:"Krickland",Country:"USA"},
                             {EmployeeID:4,FirstName:"Janet",City:"Seattle",Country:"USA"}];
                             
-            var datachild = [{OrderID:10248,New :"Nancy",CustomerID:"VINET",ShipCity:"Graz",ShipName:"Ernst Handel"},
-                            {OrderID:10249,New :"Takoma",CustomerID:"ANATR",ShipCity:"Oulu",ShipName:"Wartian Herkku"},
-                            {OrderID:10251,New :"Krickland",CustomerID:"HANAR",ShipCity:"Bergamo",ShipName:"QUICK-Stop"}];            
+            var datachild = [{OrderID:10248,CustomerName :"Nancy",CustomerID:"VINET",ShipCity:"Graz",ShipName:"Ernst Handel"},
+                            {OrderID:10249,CustomerName :"Takoma",CustomerID:"ANATR",ShipCity:"Oulu",ShipName:"Wartian Herkku"},
+                            {OrderID:10251,CustomerName :"Krickland",CustomerID:"HANAR",ShipCity:"Bergamo",ShipName:"QUICK-Stop"}];            
                             
             $("#Grid").ejGrid({
                 dataSource: dataparent,
@@ -304,12 +304,12 @@ The following code example explains the above behavior.
                 childGrid: {
                     dataSource: datachild,
                     queryString: "FirstName",
-                    foreignKeyField:"New",
+                    foreignKeyField:"CustomerName",
                     allowPaging: true,
                     columns: [
                              { field: "OrderID", headerText: 'Order ID', textAlign: ej.TextAlign.Right, width: 75 },
                              { field: "ShipCity", headerText: 'Ship City', textAlign: ej.TextAlign.Left, width: 100 },
-                             { field: "New", headerText: 'First Name', textAlign: ej.TextAlign.Left, width: 100 },
+                             { field: "CustomerName", headerText: 'First Name', textAlign: ej.TextAlign.Left, width: 100 },
                              { field: "CustomerID", headerText: 'Freight', textAlign: ej.TextAlign.Left, width: 120 },
                              { field: "ShipName", headerText: 'Ship Name', textAlign: ej.TextAlign.Left, width: 100 }
                     ],
