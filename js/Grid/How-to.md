@@ -309,7 +309,7 @@ The following code example explains the above behavior.
                              { field: "OrderID", headerText: 'Order ID', textAlign: ej.TextAlign.Right, width: 75 },
                              { field: "ShipCity", headerText: 'Ship City', textAlign: ej.TextAlign.Left, width: 100 },
                              { field: "CustomerName", headerText: 'First Name', textAlign: ej.TextAlign.Left, width: 100 },
-                             { field: "Freight", headerText: 'Freight', textAlign: ej.TextAlign.Left, width: 120 },
+                             { field: "CustomerID", headerText: 'Customer ID', textAlign: ej.TextAlign.Left, width: 120 },
                              { field: "ShipName", headerText: 'Ship Name', textAlign: ej.TextAlign.Left, width: 100 }
                     ],
                     
