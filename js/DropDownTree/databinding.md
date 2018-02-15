@@ -289,7 +289,7 @@ When using remote data binding, the adaptor of "ej.DataManager" plays a vital ro
   
   		// insert from custom adaptor usage
         dataManager.insert({
-            id: 29, pid: 1, name: `Hingles`
+            id: 29, pid: 1, name: `Gospel`
         });
 
         $(function () {
