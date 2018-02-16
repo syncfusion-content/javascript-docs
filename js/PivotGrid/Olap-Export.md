@@ -353,7 +353,7 @@ public void Export(System.IO.Stream stream) {
 
 ## Exporting customization
 
-You can add title and description to the exporting document by using the title and description property obtained in the "beforeExport" event.
+You can add title and description to the exporting document by using the title and description properties respectively obtained in the `beforeExport` event. Similarly, you can enable or disable styling on the exported document by using the `exportWithStyle` property.
 
 {% highlight html %}
 <html> 
@@ -383,10 +383,11 @@ You can add title and description to the exporting document by using the title a
         function Exporting(args) {
             args.title = "PivotGrid";
             args.description = "Displays both OLAP and Relational datasource in tabular format";
+			args.exportWithStyle = true;   // by default it sets as true. It improves performance on exporting huge data when it sets as false.
         }
     </script>
 </body>
-</html>                                            
+</html>
 
 {% endhighlight %}
 
@@ -468,8 +469,7 @@ void pGrid_CSVExport(object sender, string csvString)
     //You can customize exporting document here.
 }
 
-
- //Following service method should be added in the WCF/WebAPI for PivotEngine export.
+//Following service method should be added in the WCF/WebAPI for PivotEngine export.
 
 [System.Web.Http.ActionName("Export")]
 [System.Web.Http.HttpPost]
@@ -509,6 +509,27 @@ void htmlHelper_CSVExport(object sender, string csvString)
 
 {% endhighlight %}
 
+### Exporting complete data on Paging
+
+When paging is enabled, you can export the complete data by enabling the [enableCompleteDataExport](/api/js/ejpivotclient#members:enablecompletedataexport) property. It is supported in both types of JSON and PivotEngine export and it is applicable for all kinds of exporting formats available in PivotGrid.
+
+{% highlight html %}
+<html>
+    <div id="PivotGrid1"></div>
+    //...
+    <script type="text/javascript">
+        $(function () {
+            $("#PivotGrid1").ejPivotGrid({
+                //...
+                enableCompleteDataExport: true
+            });
+        });
+    //...    
+    </script>
+</html>
+
+{% endhighlight %}
+
 The following screenshot shows the pivot grid control exported to the Excel document:
 
 ![](Export_images/ExportOLAPExcel.png)
@@ -524,6 +545,3 @@ The following screenshot shows the pivot grid control exported to the PDF docume
 The following screenshot shows the pivot grid control exported to the CSV document:
 
 ![](Export_images/ExportOLAPCSV.png)
-
-
-
