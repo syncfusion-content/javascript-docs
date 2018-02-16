@@ -23,49 +23,135 @@ By default, only one item can be selected from the popup list. For multiple sele
 
 {% highlight javascript %}
   
-        var localData = [
-                    { id: 1, name: "Windows Team", hasChild: true, expanded: true },
-                    { id: 2, pid: 1, name: "Clark" },
-                    { id: 3, pid: 1, name: "Wright" },
-                    { id: 4, pid: 1, name: "Lopez" },
-                    { id: 6, pid: 1, name: "Anderson" },
-                    { id: 7, name: "Web Team", hasChild: true, expanded: true },
-                    { id: 8, pid: 7, name: "Joshua" },
-                    { id: 9, pid: 7, name: "Matthew" },
-                    { id: 10, pid: 7, name: "David" },
-                    { id: 11, name: "Build Team", hasChild: true },
-                    { id: 12, pid: 11, name: "Ryan" },
-                    { id: 13, pid: 11, name: "Justin" },
-                    { id: 14, pid: 11, name: "Robert" },
-                    { id: 15, pid: 11, name: "Johnson" },
-                    { id: 16, name: "WPF Team", hasChild: true },
-                    { id: 17, pid: 16, name: "Rock" },
-                    { id: 18, pid: 16, name: "Gospel" },
-                    { id: 19, pid: 16, name: "Brown" },
-                    { id: 20, pid: 16, name: "Miller" }];
-        $(function () {
-            $('#itemList').ejDropDownTree({
-                treeViewSettings: {
-                    allowMultiSelection: true,
-                    fields: { id: "id", parentId: "pid", value: "id", text: "name", hasChild: "hasChild", dataSource: localData, expanded: "expanded" }
-                },
-                watermarkText: "Please select",
-                width: "100%",
-				
-            });
-			
-			$("#toggle").ejToggleButton({
-            "change": "onCheckUncheckAll",
-            "defaultText": "Select All",
-            "activeText": "Unselect All"
-             });
-        });
-		
-		function onCheckUncheckAll(args) {
-		var ddTreeObj = $('#itemList').data("ejDropDownTree");
-        if (args.isChecked) ddTreeObj.selectAll();
-        else ddTreeObj.unselectAll());
-        }
+        var localData = [{
+        id: 1,
+        name: "Windows Team",
+        hasChild: true,
+        expanded: true
+    },
+    {
+        id: 2,
+        pid: 1,
+        name: "Clark"
+    },
+    {
+        id: 3,
+        pid: 1,
+        name: "Wright"
+    },
+    {
+        id: 4,
+        pid: 1,
+        name: "Lopez"
+    },
+    {
+        id: 6,
+        pid: 1,
+        name: "Anderson"
+    },
+    {
+        id: 7,
+        name: "Web Team",
+        hasChild: true,
+        expanded: true
+    },
+    {
+        id: 8,
+        pid: 7,
+        name: "Joshua"
+    },
+    {
+        id: 9,
+        pid: 7,
+        name: "Matthew"
+    },
+    {
+        id: 10,
+        pid: 7,
+        name: "David"
+    },
+    {
+        id: 11,
+        name: "Build Team",
+        hasChild: true
+    },
+    {
+        id: 12,
+        pid: 11,
+        name: "Ryan"
+    },
+    {
+        id: 13,
+        pid: 11,
+        name: "Justin"
+    },
+    {
+        id: 14,
+        pid: 11,
+        name: "Robert"
+    },
+    {
+        id: 15,
+        pid: 11,
+        name: "Johnson"
+    },
+    {
+        id: 16,
+        name: "WPF Team",
+        hasChild: true
+    },
+    {
+        id: 17,
+        pid: 16,
+        name: "Rock"
+    },
+    {
+        id: 18,
+        pid: 16,
+        name: "Gospel"
+    },
+    {
+        id: 19,
+        pid: 16,
+        name: "Brown"
+    },
+    {
+        id: 20,
+        pid: 16,
+        name: "Miller"
+    }
+];
+$(function() {
+    $('#itemList').ejDropDownTree({
+        treeViewSettings: {
+            allowMultiSelection: true,
+            fields: {
+                id: "id",
+                parentId: "pid",
+                value: "id",
+                text: "name",
+                hasChild: "hasChild",
+                dataSource: localData,
+                expanded: "expanded"
+            }
+        },
+        watermarkText: "Please select",
+        width: "100%",
+
+    });
+
+    $("#toggle").ejToggleButton({
+        "change": "onCheckUncheckAll",
+        "defaultText": "Select All",
+        "activeText": "Unselect All"
+    });
+});
+
+function onCheckUncheckAll(args) {
+    var ddTreeObj = $('#itemList').data("ejDropDownTree");
+    if (args.isChecked) ddTreeObj.selectAll();
+    else ddTreeObj.unselectAll());
+}
     
 {% endhighlight %}
 
@@ -81,51 +167,137 @@ You can select/unselect the particular node at run time by using [selectNode](ht
 {% endhighlight %}
 
 {% highlight javascript %}
-  
-        var localData = [
-                    { id: 1, name: "Windows Team", hasChild: true, expanded: true },
-                    { id: 2, pid: 1, name: "Clark" },
-                    { id: 3, pid: 1, name: "Wright" },
-                    { id: 4, pid: 1, name: "Lopez" },
-                    { id: 6, pid: 1, name: "Anderson" },
-                    { id: 7, name: "Web Team", hasChild: true, expanded: true },
-                    { id: 8, pid: 7, name: "Joshua" },
-                    { id: 9, pid: 7, name: "Matthew" },
-                    { id: 10, pid: 7, name: "David" },
-                    { id: 11, name: "Build Team", hasChild: true },
-                    { id: 12, pid: 11, name: "Ryan" },
-                    { id: 13, pid: 11, name: "Justin" },
-                    { id: 14, pid: 11, name: "Robert" },
-                    { id: 15, pid: 11, name: "Johnson" },
-                    { id: 16, name: "WPF Team", hasChild: true },
-                    { id: 17, pid: 16, name: "Rock" },
-                    { id: 18, pid: 16, name: "Gospel" },
-                    { id: 19, pid: 16, name: "Brown" },
-                    { id: 20, pid: 16, name: "Miller" }];
-        $(function () {
-            $('#itemList').ejDropDownTree({
-                treeViewSettings: {
-                    allowMultiSelection: true,
-                    fields: { id: "id", parentId: "pid", value: "id", text: "name", hasChild: "hasChild", dataSource: localData, expanded: "expanded" }
-                },
-                watermarkText: "Please select",
-                width: "100%",
-				
-            });
-			
-			$("#toggle").ejToggleButton({
-            "change": "onSelectUnSelect",
-            "defaultText": "Select Node",
-            "activeText": "UnSelect Node"
-             });
-        });
-		
-		function onCheckUncheckAll(args) {
-		var ddTreeObj = $('#itemList').data("ejDropDownTree");
-        if (args.isChecked) ddTreeObj.selectNode($("#1"));
-        else ddTreeObj.unselectNode($("#1"));
-        }
-    
+
+var localData = [{
+        id: 1,
+        name: "Windows Team",
+        hasChild: true,
+        expanded: true
+    },
+    {
+        id: 2,
+        pid: 1,
+        name: "Clark"
+    },
+    {
+        id: 3,
+        pid: 1,
+        name: "Wright"
+    },
+    {
+        id: 4,
+        pid: 1,
+        name: "Lopez"
+    },
+    {
+        id: 6,
+        pid: 1,
+        name: "Anderson"
+    },
+    {
+        id: 7,
+        name: "Web Team",
+        hasChild: true,
+        expanded: true
+    },
+    {
+        id: 8,
+        pid: 7,
+        name: "Joshua"
+    },
+    {
+        id: 9,
+        pid: 7,
+        name: "Matthew"
+    },
+    {
+        id: 10,
+        pid: 7,
+        name: "David"
+    },
+    {
+        id: 11,
+        name: "Build Team",
+        hasChild: true
+    },
+    {
+        id: 12,
+        pid: 11,
+        name: "Ryan"
+    },
+    {
+        id: 13,
+        pid: 11,
+        name: "Justin"
+    },
+    {
+        id: 14,
+        pid: 11,
+        name: "Robert"
+    },
+    {
+        id: 15,
+        pid: 11,
+        name: "Johnson"
+    },
+    {
+        id: 16,
+        name: "WPF Team",
+        hasChild: true
+    },
+    {
+        id: 17,
+        pid: 16,
+        name: "Rock"
+    },
+    {
+        id: 18,
+        pid: 16,
+        name: "Gospel"
+    },
+    {
+        id: 19,
+        pid: 16,
+        name: "Brown"
+    },
+    {
+        id: 20,
+        pid: 16,
+        name: "Miller"
+    }
+];
+$(function() {
+    $('#itemList').ejDropDownTree({
+        treeViewSettings: {
+            allowMultiSelection: true,
+            fields: {
+                id: "id",
+                parentId: "pid",
+                value: "id",
+                text: "name",
+                hasChild: "hasChild",
+                dataSource: localData,
+                expanded: "expanded"
+            }
+        },
+        watermarkText: "Please select",
+        width: "100%",
+
+    });
+
+    $("#toggle").ejToggleButton({
+        "change": "onSelectUnSelect",
+        "defaultText": "Select Node",
+        "activeText": "UnSelect Node"
+    });
+});
+
+function onCheckUncheckAll(args) {
+    var ddTreeObj = $('#itemList').data("ejDropDownTree");
+    if (args.isChecked) ddTreeObj.selectNode($("#1"));
+    else ddTreeObj.unselectNode($("#1"));
+}
+
 {% endhighlight %}
 
 N> To select nodes, `allowMultiSelection` must be enabled in [`treeViewSettings`](https://help.syncfusion.com/api/js/ejdropdowntree#members:treeViewSettings).
@@ -143,40 +315,126 @@ You can move a node from one index to another index using the [`moveNode`](https
 
 {% highlight javascript %}
   
-        var localData = [
-                    { id: 1, name: "Windows Team", hasChild: true, expanded: true },
-                    { id: 2, pid: 1, name: "Clark" },
-                    { id: 3, pid: 1, name: "Wright" },
-                    { id: 4, pid: 1, name: "Lopez" },
-                    { id: 6, pid: 1, name: "Anderson" },
-                    { id: 7, name: "Web Team", hasChild: true, expanded: true },
-                    { id: 8, pid: 7, name: "Joshua" },
-                    { id: 9, pid: 7, name: "Matthew" },
-                    { id: 10, pid: 7, name: "David" },
-                    { id: 11, name: "Build Team", hasChild: true },
-                    { id: 12, pid: 11, name: "Ryan" },
-                    { id: 13, pid: 11, name: "Justin" },
-                    { id: 14, pid: 11, name: "Robert" },
-                    { id: 15, pid: 11, name: "Johnson" },
-                    { id: 16, name: "WPF Team", hasChild: true },
-                    { id: 17, pid: 16, name: "Rock" },
-                    { id: 18, pid: 16, name: "Gospel" },
-                    { id: 19, pid: 16, name: "Brown" },
-                    { id: 20, pid: 16, name: "Miller" }];
-        $(function () {
-            $('#itemList').ejDropDownTree({
-                treeViewSettings: {
-                    showCheckbox: true,
-                    fields: { id: "id", parentId: "pid", value: "id", text: "name", hasChild: "hasChild", dataSource: localData, expanded: "expanded" }
-                },
-                watermarkText: "Please select",
-                width: "100%",
-				
-            });
-			var ddTreeObj = $('#itemList').data("ejDropDownTree");
-            ddTreeObj.checkNode($("#1"));
-			ddTreeObj.moveNode("#1", "#10");
-        });
+var localData = [{
+        id: 1,
+        name: "Windows Team",
+        hasChild: true,
+        expanded: true
+    },
+    {
+        id: 2,
+        pid: 1,
+        name: "Clark"
+    },
+    {
+        id: 3,
+        pid: 1,
+        name: "Wright"
+    },
+    {
+        id: 4,
+        pid: 1,
+        name: "Lopez"
+    },
+    {
+        id: 6,
+        pid: 1,
+        name: "Anderson"
+    },
+    {
+        id: 7,
+        name: "Web Team",
+        hasChild: true,
+        expanded: true
+    },
+    {
+        id: 8,
+        pid: 7,
+        name: "Joshua"
+    },
+    {
+        id: 9,
+        pid: 7,
+        name: "Matthew"
+    },
+    {
+        id: 10,
+        pid: 7,
+        name: "David"
+    },
+    {
+        id: 11,
+        name: "Build Team",
+        hasChild: true
+    },
+    {
+        id: 12,
+        pid: 11,
+        name: "Ryan"
+    },
+    {
+        id: 13,
+        pid: 11,
+        name: "Justin"
+    },
+    {
+        id: 14,
+        pid: 11,
+        name: "Robert"
+    },
+    {
+        id: 15,
+        pid: 11,
+        name: "Johnson"
+    },
+    {
+        id: 16,
+        name: "WPF Team",
+        hasChild: true
+    },
+    {
+        id: 17,
+        pid: 16,
+        name: "Rock"
+    },
+    {
+        id: 18,
+        pid: 16,
+        name: "Gospel"
+    },
+    {
+        id: 19,
+        pid: 16,
+        name: "Brown"
+    },
+    {
+        id: 20,
+        pid: 16,
+        name: "Miller"
+    }
+];
+$(function() {
+    $('#itemList').ejDropDownTree({
+        treeViewSettings: {
+            showCheckbox: true,
+            fields: {
+                id: "id",
+                parentId: "pid",
+                value: "id",
+                text: "name",
+                hasChild: "hasChild",
+                dataSource: localData,
+                expanded: "expanded"
+            }
+        },
+        watermarkText: "Please select",
+        width: "100%",
+
+    });
+    var ddTreeObj = $('#itemList').data("ejDropDownTree");
+    ddTreeObj.checkNode($("#1"));
+    ddTreeObj.moveNode("#1", "#10");
+});
 
 {% endhighlight %}
 
@@ -192,39 +450,125 @@ You can remove a particular node or all the nodes using [`removeNode`](https://h
 
 {% highlight javascript %}
   
-        var localData = [
-                    { id: 1, name: "Windows Team", hasChild: true, expanded: true },
-                    { id: 2, pid: 1, name: "Clark" },
-                    { id: 3, pid: 1, name: "Wright" },
-                    { id: 4, pid: 1, name: "Lopez" },
-                    { id: 6, pid: 1, name: "Anderson" },
-                    { id: 7, name: "Web Team", hasChild: true, expanded: true },
-                    { id: 8, pid: 7, name: "Joshua" },
-                    { id: 9, pid: 7, name: "Matthew" },
-                    { id: 10, pid: 7, name: "David" },
-                    { id: 11, name: "Build Team", hasChild: true },
-                    { id: 12, pid: 11, name: "Ryan" },
-                    { id: 13, pid: 11, name: "Justin" },
-                    { id: 14, pid: 11, name: "Robert" },
-                    { id: 15, pid: 11, name: "Johnson" },
-                    { id: 16, name: "WPF Team", hasChild: true },
-                    { id: 17, pid: 16, name: "Rock" },
-                    { id: 18, pid: 16, name: "Gospel" },
-                    { id: 19, pid: 16, name: "Brown" },
-                    { id: 20, pid: 16, name: "Miller" }];
-        $(function () {
-            $('#itemList').ejDropDownTree({
-                treeViewSettings: {
-                    showCheckbox: true,
-                    fields: { id: "id", parentId: "pid", value: "id", text: "name", hasChild: "hasChild", dataSource: localData, expanded: "expanded" }
-                },
-                watermarkText: "Please select",
-                width: "100%",
-				
-            });
-			var ddTreeObj = $('#itemList').data("ejDropDownTree");
-            ddTreeObj.removeAll());
-        });
+var localData = [{
+        id: 1,
+        name: "Windows Team",
+        hasChild: true,
+        expanded: true
+    },
+    {
+        id: 2,
+        pid: 1,
+        name: "Clark"
+    },
+    {
+        id: 3,
+        pid: 1,
+        name: "Wright"
+    },
+    {
+        id: 4,
+        pid: 1,
+        name: "Lopez"
+    },
+    {
+        id: 6,
+        pid: 1,
+        name: "Anderson"
+    },
+    {
+        id: 7,
+        name: "Web Team",
+        hasChild: true,
+        expanded: true
+    },
+    {
+        id: 8,
+        pid: 7,
+        name: "Joshua"
+    },
+    {
+        id: 9,
+        pid: 7,
+        name: "Matthew"
+    },
+    {
+        id: 10,
+        pid: 7,
+        name: "David"
+    },
+    {
+        id: 11,
+        name: "Build Team",
+        hasChild: true
+    },
+    {
+        id: 12,
+        pid: 11,
+        name: "Ryan"
+    },
+    {
+        id: 13,
+        pid: 11,
+        name: "Justin"
+    },
+    {
+        id: 14,
+        pid: 11,
+        name: "Robert"
+    },
+    {
+        id: 15,
+        pid: 11,
+        name: "Johnson"
+    },
+    {
+        id: 16,
+        name: "WPF Team",
+        hasChild: true
+    },
+    {
+        id: 17,
+        pid: 16,
+        name: "Rock"
+    },
+    {
+        id: 18,
+        pid: 16,
+        name: "Gospel"
+    },
+    {
+        id: 19,
+        pid: 16,
+        name: "Brown"
+    },
+    {
+        id: 20,
+        pid: 16,
+        name: "Miller"
+    }
+];
+$(function() {
+    $('#itemList').ejDropDownTree({
+        treeViewSettings: {
+            showCheckbox: true,
+            fields: {
+                id: "id",
+                parentId: "pid",
+                value: "id",
+                text: "name",
+                hasChild: "hasChild",
+                dataSource: localData,
+                expanded: "expanded"
+            }
+        },
+        watermarkText: "Please select",
+        width: "100%",
+
+    });
+    var ddTreeObj = $('#itemList').data("ejDropDownTree");
+    ddTreeObj.removeAll());
+});
 
 {% endhighlight %}
 
@@ -236,41 +580,127 @@ You can remove a particular node or all the nodes using [`removeNode`](https://h
 
 {% highlight javascript %}
   
-        var localData = [
-                    { id: 1, name: "Windows Team", hasChild: true, expanded: true },
-                    { id: 2, pid: 1, name: "Clark" },
-                    { id: 3, pid: 1, name: "Wright" },
-                    { id: 4, pid: 1, name: "Lopez" },
-                    { id: 6, pid: 1, name: "Anderson" },
-                    { id: 7, name: "Web Team", hasChild: true, expanded: true },
-                    { id: 8, pid: 7, name: "Joshua" },
-                    { id: 9, pid: 7, name: "Matthew" },
-                    { id: 10, pid: 7, name: "David" },
-                    { id: 11, name: "Build Team", hasChild: true },
-                    { id: 12, pid: 11, name: "Ryan" },
-                    { id: 13, pid: 11, name: "Justin" },
-                    { id: 14, pid: 11, name: "Robert" },
-                    { id: 15, pid: 11, name: "Johnson" },
-                    { id: 16, name: "WPF Team", hasChild: true },
-                    { id: 17, pid: 16, name: "Rock" },
-                    { id: 18, pid: 16, name: "Gospel" },
-                    { id: 19, pid: 16, name: "Brown" },
-                    { id: 20, pid: 16, name: "Miller" }];
-        $(function () {
-            $('#itemList').ejDropDownTree({
-                treeViewSettings: {
-                    allowMultiSelection: true,
-                    fields: { id: "id", parentId: "pid", value: "id", text: "name", hasChild: "hasChild", dataSource: localData, expanded: "expanded" }
-                },
-                watermarkText: "Please select",
-                width: "100%",
-				
-            });
-			var ddTreeObj = $('#itemList').data("ejDropDownTree");
-			ddTreeObj.selectNode($("#3"));
-            ddTreeObj.removeNode($("#3"));
+var localData = [{
+        id: 1,
+        name: "Windows Team",
+        hasChild: true,
+        expanded: true
+    },
+    {
+        id: 2,
+        pid: 1,
+        name: "Clark"
+    },
+    {
+        id: 3,
+        pid: 1,
+        name: "Wright"
+    },
+    {
+        id: 4,
+        pid: 1,
+        name: "Lopez"
+    },
+    {
+        id: 6,
+        pid: 1,
+        name: "Anderson"
+    },
+    {
+        id: 7,
+        name: "Web Team",
+        hasChild: true,
+        expanded: true
+    },
+    {
+        id: 8,
+        pid: 7,
+        name: "Joshua"
+    },
+    {
+        id: 9,
+        pid: 7,
+        name: "Matthew"
+    },
+    {
+        id: 10,
+        pid: 7,
+        name: "David"
+    },
+    {
+        id: 11,
+        name: "Build Team",
+        hasChild: true
+    },
+    {
+        id: 12,
+        pid: 11,
+        name: "Ryan"
+    },
+    {
+        id: 13,
+        pid: 11,
+        name: "Justin"
+    },
+    {
+        id: 14,
+        pid: 11,
+        name: "Robert"
+    },
+    {
+        id: 15,
+        pid: 11,
+        name: "Johnson"
+    },
+    {
+        id: 16,
+        name: "WPF Team",
+        hasChild: true
+    },
+    {
+        id: 17,
+        pid: 16,
+        name: "Rock"
+    },
+    {
+        id: 18,
+        pid: 16,
+        name: "Gospel"
+    },
+    {
+        id: 19,
+        pid: 16,
+        name: "Brown"
+    },
+    {
+        id: 20,
+        pid: 16,
+        name: "Miller"
+    }
+];
+$(function() {
+    $('#itemList').ejDropDownTree({
+        treeViewSettings: {
+            allowMultiSelection: true,
+            fields: {
+                id: "id",
+                parentId: "pid",
+                value: "id",
+                text: "name",
+                hasChild: "hasChild",
+                dataSource: localData,
+                expanded: "expanded"
+            }
+        },
+        watermarkText: "Please select",
+        width: "100%",
 
-        });
+    });
+    var ddTreeObj = $('#itemList').data("ejDropDownTree");
+    ddTreeObj.selectNode($("#3"));
+    ddTreeObj.removeNode($("#3"));
+
+});
 
 {% endhighlight %}
 
@@ -296,110 +726,110 @@ Required field and min value validation is demonstrated in the below given examp
 
 {% highlight html %}
 
-     <form id="form1">
-        <input type="text" id="selectCar" />
-   
-    	<input type="submit" value="Validate" />
-	</form>
-     <div id="carsList">
-        <ul id="treeView">
-            <li class="expanded">
-                Artwork
-                <ul>
-                    <li>
-                        Abstract
-                        <ul>
-                            <li>2 Acrylic Mediums</li>
-                            <li>Creative Acrylic</li>
-                            <li>Modern Painting</li>
-                            <li>Canvas Art</li>
-                            <li>Black white</li>
-                        </ul>
-                    </li>
-                    <li>
-                        Children
-                        <ul>
-                            <li>Preschool Crafts</li>
-                            <li>School-age Crafts</li>
-                            <li>Fabulous Toddler</li>
-                        </ul>
-                    </li>
-                    <li>
-                        Comic / Cartoon
-                        <ul>
-                            <li>Batman</li>
-                            <li>Adventures of Superman</li>
-                            <li>Super boy</li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-            <li class="expanded">
-                Books
-                <ul>
-                    <li>
-                        Comics
-                        <ul>
-                            <li>The Flash</li>
-                            <li>Human Target</li>
-                            <li>Birds of Prey</li>
-                        </ul>
-                    </li>
-                    <li>Entertaining</li>
-                    <li>Design</li>
-                </ul>
+<form id="form1">
+   <input type="text" id="selectCar" />
+   <input type="submit" value="Validate" />
+</form>
+<div id="carsList">
+   <ul id="treeView">
+      <li class="expanded">
+         Artwork
+         <ul>
+            <li>
+               Abstract
+               <ul>
+                  <li>2 Acrylic Mediums</li>
+                  <li>Creative Acrylic</li>
+                  <li>Modern Painting</li>
+                  <li>Canvas Art</li>
+                  <li>Black white</li>
+               </ul>
             </li>
             <li>
-                Music
-                <ul>
-                    <li>
-                        Classical
-                        <ul>
-                            <li>Medieval</li>
-                            <li>Orchestral</li>
-                        </ul>
-                    </li>
-                    <li>Mass</li>
-                    <li>Folk</li>
-                </ul>
+               Children
+               <ul>
+                  <li>Preschool Crafts</li>
+                  <li>School-age Crafts</li>
+                  <li>Fabulous Toddler</li>
+               </ul>
             </li>
-        </ul>
-    </div>
+            <li>
+               Comic / Cartoon
+               <ul>
+                  <li>Batman</li>
+                  <li>Adventures of Superman</li>
+                  <li>Super boy</li>
+               </ul>
+            </li>
+         </ul>
+      </li>
+      <li class="expanded">
+         Books
+         <ul>
+            <li>
+               Comics
+               <ul>
+                  <li>The Flash</li>
+                  <li>Human Target</li>
+                  <li>Birds of Prey</li>
+               </ul>
+            </li>
+            <li>Entertaining</li>
+            <li>Design</li>
+         </ul>
+      </li>
+      <li>
+         Music
+         <ul>
+            <li>
+               Classical
+               <ul>
+                  <li>Medieval</li>
+                  <li>Orchestral</li>
+               </ul>
+            </li>
+            <li>Mass</li>
+            <li>Folk</li>
+         </ul>
+      </li>
+   </ul>
+</div>
 {% endhighlight %}
 
 {% highlight javascript %}
-  
-       $.validator.setDefaults({
-        ignore: [],
-        errorClass: 'e-validation-error', // to get the error message on jQuery validation
-        errorPlacement: function (error, element) {
-            $(error).insertAfter(element.closest(".e-widget"));
-        }
-        // any other default options and/or rules
-    });
-    //If necessary, we can create custom rules as below. here method defined for min
-    $.validator.addMethod("min",
-        function (value, element, params) {
-            if (!/Invalid|NaN/.test(value)) {
-                return parseInt(value) > params;
-            }
-        }, 'Must be greater than 30.');
-        var target;
-        $(function () {
-            $('#selectCar').ejDropDownTree({
-                watermarkText: "Select a car",
-                width: "50%",
-                targetId: "carsList",
-                validationRules: {
-                required: true
-               
-            },
-            validationMessage: {
-                required: "* Required"
-               
-            }
-            });
-        });
+
+ $.validator.setDefaults({
+     ignore: [],
+     errorClass: 'e-validation-error', // to get the error message on jQuery validation
+     errorPlacement: function(error, element) {
+         $(error).insertAfter(element.closest(".e-widget"));
+     }
+     // any other default options and/or rules
+ });
+ //If necessary, we can create custom rules as below. here method defined for min
+ $.validator.addMethod("min",
+     function(value, element, params) {
+         if (!/Invalid|NaN/.test(value)) {
+             return parseInt(value) > params;
+         }
+     }, 'Must be greater than 30.');
+ var target;
+ $(function() {
+     $('#selectCar').ejDropDownTree({
+         watermarkText: "Select a car",
+         width: "50%",
+         targetId: "carsList",
+         validationRules: {
+             required: true
+
+         },
+         validationMessage: {
+             required: "* Required"
+
+         }
+     });
+ });
+
 {% endhighlight %}
 
 ![](Functionalities_images/validation.png)

@@ -31,6 +31,10 @@ And the internal script dependencies of the DropDownTree widget are:
 		<td>Used to handle data operation and should be used while binding data to JS controls.</td>
 	</tr>
 	<tr>
+		<td>ej.treeview.min.js</td>
+		<td>The DropDownTree’s popup main file</td>
+	</tr>
+	<tr>
 		<td>ej.dropdowntree.min.js</td>
 		<td>The DropDownTree’s main file</td>
 	</tr>
@@ -50,6 +54,10 @@ And the internal script dependencies of the DropDownTree widget are:
 		<td>ej.waitingpopup.min.js</td>
 		<td>Should be referred when using load on demand in TreeView.</td>
 	</tr>
+	<tr>
+		<td>ej.globalize.min.js</td>
+		<td>Should be referred for localization in DropDownTree.</td>
+	</tr>
 </table>
 
 To get started, you can use the ‘ej.web.all.min.js’ file, which encapsulates all the 'ej' controls and frameworks in one single file.
@@ -61,42 +69,26 @@ Create a new HTML file and add [CDN](https://help.syncfusion.com/js/cdn) links t
 
 {% highlight html %}
 
-    <!DOCTYPE html>
-
-    <html>
-
-    <head>
-
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8" />
-
-        <!-- style sheet for default theme(flat azure) -->
-
-        <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css"
-              rel="stylesheet" />
-
-        <!--scripts-->
-
-        <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.11.3.min.js"></script>
-
-        <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"></script>
-
-        <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"></script>
-
-    </head>
-
-    <body>
-
-        <!--Place input element to create DropDownTree-->
-
-        <script>
-
-            // Place your script code here to initialize DropDownTree
-
-        </script>
-
-    </body>
-
-    </html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8" />
+    <!-- style sheet for default theme(flat azure) -->
+    <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css"
+      rel="stylesheet" />
+    <!--scripts-->
+    <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.11.3.min.js"></script>
+    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"></script>
+    <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"></script>
+  </head>
+  <body>
+    <!--Place input element to create DropDownTree-->
+    <script>
+      // Place your script code here to initialize DropDownTree
+      
+    </script>
+  </body>
+</html>
 
 {% endhighlight %}
 
@@ -108,49 +100,43 @@ The DropDownTree can be created from a HTML ‘input’ element with the HTML 'i
 
     {% highlight html %}
 	
-	<input type="text" id="selectItem" />
-
-                        <div id="itemList">
-                            <ul id="treeView">
-                                <li class="expanded">
-                                    United States
-									<ul>
-										<li>California</li>
-										<li>Colorado</li>
-										<li>Georgia</li>
-									   
-									</ul>
-								</li>
-								<li>
-									United Kingdom
-									<ul>
-										<li>England</li>
-										<li>Scotland</li>
-										<li>Northern Ireland</li>
-									</ul>
-								</li>
-								<li>
-									Asia
-									<ul>
-										<li>Afghanistan</li>
-										<li>Kuwait</li>
-										<li>Russia</li>
-									</ul>
-								</li>
-							</ul>
-                        </div>
-			
+<input type="text" id="selectItem" />
+<div id="itemList">
+  <ul id="treeView">
+    <li class="expanded">
+      United States
+      <ul>
+        <li>California</li>
+        <li>Colorado</li>
+        <li>Georgia</li>
+      </ul>
+    </li>
+    <li>
+      United Kingdom
+      <ul>
+        <li>England</li>
+        <li>Scotland</li>
+        <li>Northern Ireland</li>
+      </ul>
+    </li>
+    <li>
+      Asia
+      <ul>
+        <li>Afghanistan</li>
+        <li>Kuwait</li>
+        <li>Russia</li>
+      </ul>
+    </li>
+  </ul>
+</div>
 	{% endhighlight %}
 	
 	{% highlight javascript %}	
 	
-		$(function () {
-				
-			$('#selectItem').ejDropDownTree();
-					
-		});				
-	
-			
+$(function () {
+$('#selectItem').ejDropDownTree();
+});
+
 	{% endhighlight %}
 
 ![](Getteing-Started_images/getting_started_images.png)
@@ -169,42 +155,146 @@ N> The ODataAdaptor is the default adaptor for DataManager. On binding to other 
 	
 	{% highlight javascript %}	
 	
-	 $(function () {
-            // declaration
-            var localData = [
-                    { id: 1, name: "Discover Music", hasChild: true, expanded: true },
-                    { id: 2, pid: 1, name: "Hot Singles" },
-                    { id: 3, pid: 1, name: "Rising Artists" },
-                    { id: 4, pid: 1, name: "Live Music" },
-                    { id: 6, pid: 1, name: "Best of 2013 So Far" },
-                    { id: 7, name: "Sales and Events", hasChild: true, expanded: true },
-                    { id: 8, pid: 7, name: "100 Albums - $5 Each" },
-                    { id: 9, pid: 7, name: "Hip-Hop and R&B Sale" },
-                    { id: 10, pid: 7, name: "CD Deals" },
-                    { id: 11, name: "Categories", hasChild: true },
-                    { id: 12, pid: 11, name: "Songs" },
-                    { id: 13, pid: 11, name: "Bestselling Albums" },
-                    { id: 14, pid: 11, name: "New Releases" },
-                    { id: 15, pid: 11, name: "Bestselling Songs" },
-                    { id: 16, name: "MP3 Albums", hasChild: true },
-                    { id: 17, pid: 16, name: "Rock" },
-                    { id: 18, pid: 16, name: "Gospel" },
-                    { id: 19, pid: 16, name: "Latin Music" },
-                    { id: 20, pid: 16, name: "Jazz" },
-                    { id: 21, name: "More in Music", hasChild: true },
-                    { id: 22, pid: 21, name: "Music Trade-In" },
-                    { id: 23, pid: 21, name: "Redeem a Gift Card" },
-                    { id: 24, pid: 21, name: "Band T-Shirts" },
-                    { id: 25, pid: 21, name: "Mobile MVC" }];
-           $('#localList').ejDropDownTree({
-                treeViewSettings: {
-                    fields: { id: "id", parentId: "pid", text: "name", hasChild: "hasChild", dataSource: ej.DataManager(localData), expanded: "expanded" }
-                },
-                watermarkText: "Please select",
-                width: "100%"
-            });
-        });
-	
+	$(function() {
+	    // declaration
+	    var localData = [{
+	            id: 1,
+	            name: "Discover Music",
+	            hasChild: true,
+	            expanded: true
+	        },
+	        {
+	            id: 2,
+	            pid: 1,
+	            name: "Hot Singles"
+	        },
+	        {
+	            id: 3,
+	            pid: 1,
+	            name: "Rising Artists"
+	        },
+	        {
+	            id: 4,
+	            pid: 1,
+	            name: "Live Music"
+	        },
+	        {
+	            id: 6,
+	            pid: 1,
+	            name: "Best of 2013 So Far"
+	        },
+	        {
+	            id: 7,
+	            name: "Sales and Events",
+	            hasChild: true,
+	            expanded: true
+	        },
+	        {
+	            id: 8,
+	            pid: 7,
+	            name: "100 Albums - $5 Each"
+	        },
+	        {
+	            id: 9,
+	            pid: 7,
+	            name: "Hip-Hop and R&B Sale"
+	        },
+	        {
+	            id: 10,
+	            pid: 7,
+	            name: "CD Deals"
+	        },
+	        {
+	            id: 11,
+	            name: "Categories",
+	            hasChild: true
+	        },
+	        {
+	            id: 12,
+	            pid: 11,
+	            name: "Songs"
+	        },
+	        {
+	            id: 13,
+	            pid: 11,
+	            name: "Bestselling Albums"
+	        },
+	        {
+	            id: 14,
+	            pid: 11,
+	            name: "New Releases"
+	        },
+	        {
+	            id: 15,
+	            pid: 11,
+	            name: "Bestselling Songs"
+	        },
+	        {
+	            id: 16,
+	            name: "MP3 Albums",
+	            hasChild: true
+	        },
+	        {
+	            id: 17,
+	            pid: 16,
+	            name: "Rock"
+	        },
+	        {
+	            id: 18,
+	            pid: 16,
+	            name: "Gospel"
+	        },
+	        {
+	            id: 19,
+	            pid: 16,
+	            name: "Latin Music"
+	        },
+	        {
+	            id: 20,
+	            pid: 16,
+	            name: "Jazz"
+	        },
+	        {
+	            id: 21,
+	            name: "More in Music",
+	            hasChild: true
+	        },
+	        {
+	            id: 22,
+	            pid: 21,
+	            name: "Music Trade-In"
+	        },
+	        {
+	            id: 23,
+	            pid: 21,
+	            name: "Redeem a Gift Card"
+	        },
+	        {
+	            id: 24,
+	            pid: 21,
+	            name: "Band T-Shirts"
+	        },
+	        {
+	            id: 25,
+	            pid: 21,
+	            name: "Mobile MVC"
+	        }
+	    ];
+	    $('#localList').ejDropDownTree({
+	        treeViewSettings: {
+	            fields: {
+	                id: "id",
+	                parentId: "pid",
+	                text: "name",
+	                hasChild: "hasChild",
+	                dataSource: ej.DataManager(localData),
+	                expanded: "expanded"
+	            }
+	        },
+	        watermarkText: "Please select",
+	        width: "100%"
+	    });
+	});
 
 	{% endhighlight %}
 	
@@ -221,20 +311,15 @@ The DropDownTree dimensions can be set using [width](https://help.syncfusion.com
 	{% endhighlight %}
 	
 	{% highlight javascript %}	
-	
-	$(function () {
-			
-		$('#dropdown1').ejDropDownTree({
-			
-			width: “150px”,
-			
-			height: "160px"
-		});
-	});		
-	
+    $(function() {
+	    $('#dropdown1').ejDropDownTree({
+	        width: “150 px”,
+	        height: "160px"
+	    });
+	});
 	{% endhighlight %}
 
-    **Setting dimensions to Popup list**
+**Setting dimensions to Popup list**
 
 [PopupSettings.width](https://help.syncfusion.com/api/js/ejdropdowntree#members:popupSettings-width) and [PopupSettings.height](https://help.syncfusion.com/api/js/ejdropdowntree#members:popupSettings-height) can be used to create a fixed size popup list.
 
@@ -246,50 +331,149 @@ The DropDownTree dimensions can be set using [width](https://help.syncfusion.com
 	
 	{% highlight javascript %}
 	
-	
-	$(function () {
-	
-		// declaration
-		
-		var localData = [
-                    { id: 1, name: "Discover Music", hasChild: true, expanded: true },
-                    { id: 2, pid: 1, name: "Hot Singles" },
-                    { id: 3, pid: 1, name: "Rising Artists" },
-                    { id: 4, pid: 1, name: "Live Music" },
-                    { id: 6, pid: 1, name: "Best of 2013 So Far" },
-                    { id: 7, name: "Sales and Events", hasChild: true, expanded: true },
-                    { id: 8, pid: 7, name: "100 Albums - $5 Each" },
-                    { id: 9, pid: 7, name: "Hip-Hop and R&B Sale" },
-                    { id: 10, pid: 7, name: "CD Deals" },
-                    { id: 11, name: "Categories", hasChild: true },
-                    { id: 12, pid: 11, name: "Songs" },
-                    { id: 13, pid: 11, name: "Bestselling Albums" },
-                    { id: 14, pid: 11, name: "New Releases" },
-                    { id: 15, pid: 11, name: "Bestselling Songs" },
-                    { id: 16, name: "MP3 Albums", hasChild: true },
-                    { id: 17, pid: 16, name: "Rock" },
-                    { id: 18, pid: 16, name: "Gospel" },
-                    { id: 19, pid: 16, name: "Latin Music" },
-                    { id: 20, pid: 16, name: "Jazz" },
-                    { id: 21, name: "More in Music", hasChild: true },
-                    { id: 22, pid: 21, name: "Music Trade-In" },
-                    { id: 23, pid: 21, name: "Redeem a Gift Card" },
-                    { id: 24, pid: 21, name: "Band T-Shirts" },
-                    { id: 25, pid: 21, name: "Mobile MVC" }];
-					
-		$('#localList').ejDropDownTree({
-                treeViewSettings: {
-                    fields: { id: "id", parentId: "pid", text: "name", hasChild: "hasChild", dataSource: localData, expanded: "expanded" }
-                },
-                watermarkText: "Please select",
-                popupSettings: {
-                height: "500px",
-				width: "300px"
+$(function() {
+    // declaration
+    var localData = [{
+            id: 1,
+            name: "Discover Music",
+            hasChild: true,
+            expanded: true
+        },
+        {
+            id: 2,
+            pid: 1,
+            name: "Hot Singles"
+        },
+        {
+            id: 3,
+            pid: 1,
+            name: "Rising Artists"
+        },
+        {
+            id: 4,
+            pid: 1,
+            name: "Live Music"
+        },
+        {
+            id: 6,
+            pid: 1,
+            name: "Best of 2013 So Far"
+        },
+        {
+            id: 7,
+            name: "Sales and Events",
+            hasChild: true,
+            expanded: true
+        },
+        {
+            id: 8,
+            pid: 7,
+            name: "100 Albums - $5 Each"
+        },
+        {
+            id: 9,
+            pid: 7,
+            name: "Hip-Hop and R&B Sale"
+        },
+        {
+            id: 10,
+            pid: 7,
+            name: "CD Deals"
+        },
+        {
+            id: 11,
+            name: "Categories",
+            hasChild: true
+        },
+        {
+            id: 12,
+            pid: 11,
+            name: "Songs"
+        },
+        {
+            id: 13,
+            pid: 11,
+            name: "Bestselling Albums"
+        },
+        {
+            id: 14,
+            pid: 11,
+            name: "New Releases"
+        },
+        {
+            id: 15,
+            pid: 11,
+            name: "Bestselling Songs"
+        },
+        {
+            id: 16,
+            name: "MP3 Albums",
+            hasChild: true
+        },
+        {
+            id: 17,
+            pid: 16,
+            name: "Rock"
+        },
+        {
+            id: 18,
+            pid: 16,
+            name: "Gospel"
+        },
+        {
+            id: 19,
+            pid: 16,
+            name: "Latin Music"
+        },
+        {
+            id: 20,
+            pid: 16,
+            name: "Jazz"
+        },
+        {
+            id: 21,
+            name: "More in Music",
+            hasChild: true
+        },
+        {
+            id: 22,
+            pid: 21,
+            name: "Music Trade-In"
+        },
+        {
+            id: 23,
+            pid: 21,
+            name: "Redeem a Gift Card"
+        },
+        {
+            id: 24,
+            pid: 21,
+            name: "Band T-Shirts"
+        },
+        {
+            id: 25,
+            pid: 21,
+            name: "Mobile MVC"
+        }
+    ];
+    $('#localList').ejDropDownTree({
+        treeViewSettings: {
+            fields: {
+                id: "id",
+                parentId: "pid",
+                text: "name",
+                hasChild: "hasChild",
+                dataSource: localData,
+                expanded: "expanded"
             }
-
-            });
-		
-	});
+        },
+        watermarkText: "Please select",
+        popupSettings: {
+            height: "500px",
+            width: "300px"
+        }
+    });
+});
 	
 	{% endhighlight %}
 
@@ -300,59 +484,56 @@ You can select single or multiple values from the DropDownTree widget. To assign
 
 	{% highlight html %}
 
-	<input type="text" id="selectItem" />
-
-                        <div id="itemList">
-                            <ul id="treeView">
-                                <li class="expanded">
-                                    United States
-									<ul>
-										<li>California</li>
-										<li>Colorado</li>
-										<li>Georgia</li>
-									   
-									</ul>
-								</li>
-								<li>
-									United Kingdom
-									<ul>
-										<li>England</li>
-										<li>Scotland</li>
-										<li>Northern Ireland</li>
-									</ul>
-								</li>
-								<li>
-									Asia
-									<ul>
-										<li>Afghanistan</li>
-										<li>Kuwait</li>
-										<li>Russia</li>
-									</ul>
-								</li>
-							</ul>
-                        </div>
-
+<input type="text" id="selectItem" />
+<div id="itemList">
+  <ul id="treeView">
+    <li class="expanded">
+      United States
+      <ul>
+        <li>California</li>
+        <li>Colorado</li>
+        <li>Georgia</li>
+      </ul>
+    </li>
+    <li>
+      United Kingdom
+      <ul>
+        <li>England</li>
+        <li>Scotland</li>
+        <li>Northern Ireland</li>
+      </ul>
+    </li>
+    <li>
+      Asia
+      <ul>
+        <li>Afghanistan</li>
+        <li>Kuwait</li>
+        <li>Russia</li>
+      </ul>
+    </li>
+  </ul>
+</div>
 	{% endhighlight %}
 	
 	{% highlight javascript %}	
 	
-	$(function () {
-				
-		$('#selectItem').ejDropDownTree({
-                value: 'Afghanistan',
-                watermarkText: "Please select",
-                targetId: "itemList"
-            });
-			
-		var obj = $('#selectItem').data("ejDropDownTree");
-				
-		console.log("Selected Item's Text - " + obj.option("text"));
-				
-		console.log("selected Item's Value - " + obj.option("value"));
+$(function() {
 
-		console.log("selected Item's Value - " + obj.getValue());
-				
-	}); 
+    $('#selectItem').ejDropDownTree({
+        value: 'Afghanistan',
+        watermarkText: "Please select",
+        targetId: "itemList"
+    });
+
+    var obj = $('#selectItem').data("ejDropDownTree");
+
+    console.log("Selected Item's Text - " + obj.option("text"));
+
+    console.log("selected Item's Value - " + obj.option("value"));
+
+    console.log("selected Item's Value - " + obj.getValue());
+
+});
     
 
 	{% endhighlight %}

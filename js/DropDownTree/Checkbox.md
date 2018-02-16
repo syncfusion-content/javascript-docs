@@ -21,37 +21,122 @@ DropDownTree displays checkboxes to the left of each item when you set [treeView
 
 {% highlight javascript %}
 
-   var localData = [
-                    { id: 1, name: "Windows Team", hasChild: true, expanded: true },
-                    { id: 2, pid: 1, name: "Clark" },
-                    { id: 3, pid: 1, name: "Wright" },
-                    { id: 4, pid: 1, name: "Lopez" },
-                    { id: 6, pid: 1, name: "Anderson" },
-                    { id: 7, name: "Web Team", hasChild: true, expanded: true },
-                    { id: 8, pid: 7, name: "Joshua" },
-                    { id: 9, pid: 7, name: "Matthew" },
-                    { id: 10, pid: 7, name: "David" },
-                    { id: 11, name: "Build Team", hasChild: true },
-                    { id: 12, pid: 11, name: "Ryan" },
-                    { id: 13, pid: 11, name: "Justin" },
-                    { id: 14, pid: 11, name: "Robert" },
-                    { id: 15, pid: 11, name: "Johnson" },
-                    { id: 16, name: "WPF Team", hasChild: true },
-                    { id: 17, pid: 16, name: "Rock" },
-                    { id: 18, pid: 16, name: "Gospel" },
-                    { id: 19, pid: 16, name: "Brown" },
-                    { id: 20, pid: 16, name: "Miller" }];
-        $(function () {
-            $('#itemList').ejDropDownTree({
-                treeViewSettings: {
-                    showCheckbox: true,
-                    fields: { id: "id", parentId: "pid", value: "id", text: "name", hasChild: "hasChild", dataSource: localData, expanded: "expanded" }
-                },
-                watermarkText: "Please select",
-                width: "100%"
-            });
-        });
-
+var localData = [{
+         id: 1,
+         name: "Windows Team",
+         hasChild: true,
+         expanded: true
+     },
+     {
+         id: 2,
+         pid: 1,
+         name: "Clark"
+     },
+     {
+         id: 3,
+         pid: 1,
+         name: "Wright"
+     },
+     {
+         id: 4,
+         pid: 1,
+         name: "Lopez"
+     },
+     {
+         id: 6,
+         pid: 1,
+         name: "Anderson"
+     },
+     {
+         id: 7,
+         name: "Web Team",
+         hasChild: true,
+         expanded: true
+     },
+     {
+         id: 8,
+         pid: 7,
+         name: "Joshua"
+     },
+     {
+         id: 9,
+         pid: 7,
+         name: "Matthew"
+     },
+     {
+         id: 10,
+         pid: 7,
+         name: "David"
+     },
+     {
+         id: 11,
+         name: "Build Team",
+         hasChild: true
+     },
+     {
+         id: 12,
+         pid: 11,
+         name: "Ryan"
+     },
+     {
+         id: 13,
+         pid: 11,
+         name: "Justin"
+     },
+     {
+         id: 14,
+         pid: 11,
+         name: "Robert"
+     },
+     {
+         id: 15,
+         pid: 11,
+         name: "Johnson"
+     },
+     {
+         id: 16,
+         name: "WPF Team",
+         hasChild: true
+     },
+     {
+         id: 17,
+         pid: 16,
+         name: "Rock"
+     },
+     {
+         id: 18,
+         pid: 16,
+         name: "Gospel"
+     },
+     {
+         id: 19,
+         pid: 16,
+         name: "Brown"
+     },
+     {
+         id: 20,
+         pid: 16,
+         name: "Miller"
+     }
+ ];
+ $(function() {
+     $('#itemList').ejDropDownTree({
+         treeViewSettings: {
+             showCheckbox: true,
+             fields: {
+                 id: "id",
+                 parentId: "pid",
+                 value: "id",
+                 text: "name",
+                 hasChild: "hasChild",
+                 dataSource: localData,
+                 expanded: "expanded"
+             }
+         },
+         watermarkText: "Please select",
+         width: "100%"
+     });
+ });
 {% endhighlight %}
 
 ![](Checkbox_images/Checkbox_img1.png)
@@ -71,51 +156,136 @@ You can check/uncheck all the list items at run time by using [checkAll](https:/
 
 {% highlight javascript %}
   
-        var localData = [
-                    { id: 1, name: "Windows Team", hasChild: true, expanded: true },
-                    { id: 2, pid: 1, name: "Clark" },
-                    { id: 3, pid: 1, name: "Wright" },
-                    { id: 4, pid: 1, name: "Lopez" },
-                    { id: 6, pid: 1, name: "Anderson" },
-                    { id: 7, name: "Web Team", hasChild: true, expanded: true },
-                    { id: 8, pid: 7, name: "Joshua" },
-                    { id: 9, pid: 7, name: "Matthew" },
-                    { id: 10, pid: 7, name: "David" },
-                    { id: 11, name: "Build Team", hasChild: true },
-                    { id: 12, pid: 11, name: "Ryan" },
-                    { id: 13, pid: 11, name: "Justin" },
-                    { id: 14, pid: 11, name: "Robert" },
-                    { id: 15, pid: 11, name: "Johnson" },
-                    { id: 16, name: "WPF Team", hasChild: true },
-                    { id: 17, pid: 16, name: "Rock" },
-                    { id: 18, pid: 16, name: "Gospel" },
-                    { id: 19, pid: 16, name: "Brown" },
-                    { id: 20, pid: 16, name: "Miller" }];
-        $(function () {
-            $('#itemList').ejDropDownTree({
-                treeViewSettings: {
-                    showCheckbox: true,
-                    fields: { id: "id", parentId: "pid", value: "id", text: "name", hasChild: "hasChild", dataSource: localData, expanded: "expanded" }
-                },
-                watermarkText: "Please select",
-                width: "100%",
-				
-            });
-        
-        target = $('#itemList').data("ejDropDownTree");
-        
-        $("#toggle").ejToggleButton({
-            "change": "onCheckUncheckAll",
-            "defaultText": "Check All",
-            "activeText": "Uncheck All"
-        });
-    });
+var localData = [{
+         id: 1,
+         name: "Windows Team",
+         hasChild: true,
+         expanded: true
+     },
+     {
+         id: 2,
+         pid: 1,
+         name: "Clark"
+     },
+     {
+         id: 3,
+         pid: 1,
+         name: "Wright"
+     },
+     {
+         id: 4,
+         pid: 1,
+         name: "Lopez"
+     },
+     {
+         id: 6,
+         pid: 1,
+         name: "Anderson"
+     },
+     {
+         id: 7,
+         name: "Web Team",
+         hasChild: true,
+         expanded: true
+     },
+     {
+         id: 8,
+         pid: 7,
+         name: "Joshua"
+     },
+     {
+         id: 9,
+         pid: 7,
+         name: "Matthew"
+     },
+     {
+         id: 10,
+         pid: 7,
+         name: "David"
+     },
+     {
+         id: 11,
+         name: "Build Team",
+         hasChild: true
+     },
+     {
+         id: 12,
+         pid: 11,
+         name: "Ryan"
+     },
+     {
+         id: 13,
+         pid: 11,
+         name: "Justin"
+     },
+     {
+         id: 14,
+         pid: 11,
+         name: "Robert"
+     },
+     {
+         id: 15,
+         pid: 11,
+         name: "Johnson"
+     },
+     {
+         id: 16,
+         name: "WPF Team",
+         hasChild: true
+     },
+     {
+         id: 17,
+         pid: 16,
+         name: "Rock"
+     },
+     {
+         id: 18,
+         pid: 16,
+         name: "Gospel"
+     },
+     {
+         id: 19,
+         pid: 16,
+         name: "Brown"
+     },
+     {
+         id: 20,
+         pid: 16,
+         name: "Miller"
+     }
+ ];
+ $(function() {
+     $('#itemList').ejDropDownTree({
+         treeViewSettings: {
+             showCheckbox: true,
+             fields: {
+                 id: "id",
+                 parentId: "pid",
+                 value: "id",
+                 text: "name",
+                 hasChild: "hasChild",
+                 dataSource: localData,
+                 expanded: "expanded"
+             }
+         },
+         watermarkText: "Please select",
+         width: "100%",
 
-    function onCheckUncheckAll(args) {
-        if (args.isChecked) target.treeView.checkAll();
-        else target.treeView.unCheckAll();
-    }
+     });
 
+     target = $('#itemList').data("ejDropDownTree");
+
+     $("#toggle").ejToggleButton({
+         "change": "onCheckUncheckAll",
+         "defaultText": "Check All",
+         "activeText": "Uncheck All"
+     });
+ });
+
+ function onCheckUncheckAll(args) {
+     if (args.isChecked) target.treeView.checkAll();
+     else target.treeView.unCheckAll();
+ }
 {% endhighlight %}
 
 ![](Checkbox_images/Checkbox_img2.png)
@@ -132,49 +302,135 @@ You can check/uncheck a particular node at run time by using [checkNode](https:/
 
 {% highlight javascript %}
   
-        var localData = [
-                    { id: 1, name: "Windows Team", hasChild: true, expanded: true },
-                    { id: 2, pid: 1, name: "Clark" },
-                    { id: 3, pid: 1, name: "Wright" },
-                    { id: 4, pid: 1, name: "Lopez" },
-                    { id: 6, pid: 1, name: "Anderson" },
-                    { id: 7, name: "Web Team", hasChild: true, expanded: true },
-                    { id: 8, pid: 7, name: "Joshua" },
-                    { id: 9, pid: 7, name: "Matthew" },
-                    { id: 10, pid: 7, name: "David" },
-                    { id: 11, name: "Build Team", hasChild: true },
-                    { id: 12, pid: 11, name: "Ryan" },
-                    { id: 13, pid: 11, name: "Justin" },
-                    { id: 14, pid: 11, name: "Robert" },
-                    { id: 15, pid: 11, name: "Johnson" },
-                    { id: 16, name: "WPF Team", hasChild: true },
-                    { id: 17, pid: 16, name: "Rock" },
-                    { id: 18, pid: 16, name: "Gospel" },
-                    { id: 19, pid: 16, name: "Brown" },
-                    { id: 20, pid: 16, name: "Miller" }];
-        $(function () {
-            $('#itemList').ejDropDownTree({
-                treeViewSettings: {
-                    showCheckbox: true,
-                    fields: { id: "id", parentId: "pid", value: "id", text: "name", hasChild: "hasChild", dataSource: localData, expanded: "expanded" }
-                },
-                watermarkText: "Please select",
-                width: "100%",
-				
-            });
-			
-			$("#toggle").ejToggleButton({
-            "change": "onCheckUncheckAll",
-            "defaultText": "Check Node",
-            "activeText": "Uncheck Node"
-             });
-        });
-		
-		function onCheckUncheckAll(args) {
-		var ddTreeObj = $('#itemList').data("ejDropDownTree");
-        if (args.isChecked) ddTreeObj.checkNode($("#1"));
-        else ddTreeObj.uncheckNode($("#1"));
-        }
+var localData = [{
+        id: 1,
+        name: "Windows Team",
+        hasChild: true,
+        expanded: true
+    },
+    {
+        id: 2,
+        pid: 1,
+        name: "Clark"
+    },
+    {
+        id: 3,
+        pid: 1,
+        name: "Wright"
+    },
+    {
+        id: 4,
+        pid: 1,
+        name: "Lopez"
+    },
+    {
+        id: 6,
+        pid: 1,
+        name: "Anderson"
+    },
+    {
+        id: 7,
+        name: "Web Team",
+        hasChild: true,
+        expanded: true
+    },
+    {
+        id: 8,
+        pid: 7,
+        name: "Joshua"
+    },
+    {
+        id: 9,
+        pid: 7,
+        name: "Matthew"
+    },
+    {
+        id: 10,
+        pid: 7,
+        name: "David"
+    },
+    {
+        id: 11,
+        name: "Build Team",
+        hasChild: true
+    },
+    {
+        id: 12,
+        pid: 11,
+        name: "Ryan"
+    },
+    {
+        id: 13,
+        pid: 11,
+        name: "Justin"
+    },
+    {
+        id: 14,
+        pid: 11,
+        name: "Robert"
+    },
+    {
+        id: 15,
+        pid: 11,
+        name: "Johnson"
+    },
+    {
+        id: 16,
+        name: "WPF Team",
+        hasChild: true
+    },
+    {
+        id: 17,
+        pid: 16,
+        name: "Rock"
+    },
+    {
+        id: 18,
+        pid: 16,
+        name: "Gospel"
+    },
+    {
+        id: 19,
+        pid: 16,
+        name: "Brown"
+    },
+    {
+        id: 20,
+        pid: 16,
+        name: "Miller"
+    }
+];
+$(function() {
+    $('#itemList').ejDropDownTree({
+        treeViewSettings: {
+            showCheckbox: true,
+            fields: {
+                id: "id",
+                parentId: "pid",
+                value: "id",
+                text: "name",
+                hasChild: "hasChild",
+                dataSource: localData,
+                expanded: "expanded"
+            }
+        },
+        watermarkText: "Please select",
+        width: "100%",
+
+    });
+
+    $("#toggle").ejToggleButton({
+        "change": "onCheckUncheckAll",
+        "defaultText": "Check Node",
+        "activeText": "Uncheck Node"
+    });
+});
+
+function onCheckUncheckAll(args) {
+    var ddTreeObj = $('#itemList').data("ejDropDownTree");
+    if (args.isChecked) ddTreeObj.checkNode($("#1"));
+    else ddTreeObj.uncheckNode($("#1"));
+}
     
 {% endhighlight %}
 
