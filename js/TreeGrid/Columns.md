@@ -823,7 +823,7 @@ Following code example explains how to set text alignment for content and header
                 { field: "taskName", headerText: "Task Name" },
                 { field: "startDate", headerText: "Start Date",textAlign:"right",headerTextAlign:"left"},
                 { field: "endDate", headerText: "End Date",textAlign:"center" },
-                { field: "endDate", headerText: "Duration" }
+                { field: "duration", headerText: "Duration" }
             ]
         })
     });
@@ -834,6 +834,40 @@ Following code example explains how to set text alignment for content and header
 
 The above screenshot shows tree grid render with text alignment and header text alignment.
 {:.caption}
+
+### Customize the column at initial load
+In TreeGrid, it is possible to customize the column at load time using [`load`](https://help.syncfusion.com/api/js/ejtreegrid#events:load) event.
+
+The following code examples shows how to customize the column at load time
+
+{% highlight js %}
+
+    $(function () {
+        $("#TreeGridContainer").ejTreeGrid({
+            //...
+            columns: [
+                { field: "taskID", headerText: "Task Id"},
+                { field: "taskName", headerText: "Task Name" },
+                { field: "startDate", headerText: "Start Date"},
+                { field: "endDate", headerText: "End Date" },
+                { field: "duration", headerText: "Duration" }
+            ],
+            load:function(args)
+            {
+                var columns = args.model.columns;
+                columns[0].isFrozen = true;
+                columns[3].textAlign = "center";
+                columns[4].visible = false;
+                
+            }
+        })
+    });
+
+{% endhighlight %}
+
+![](/js/TreeGrid/Columns_images/Columns_img20.png)
+
+The above screen shot shows tree grid render with column customization
 
 ## Column object
 
