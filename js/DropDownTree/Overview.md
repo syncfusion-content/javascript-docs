@@ -10,7 +10,7 @@ api: /api/js/ejDropDownTree
 
 # Overview
 The DropDownTree widget displays hierarchical data in a tree like structure with advanced functions to edit, select with checkboxes, and more.
-##Key features
+## Key features
 * **DataBinding**: Supports various client-side and remote data sources such as JSON, RESTful services, OData services, and much more. 
 * **Searching**:  Provides filter search. 
 * **Load on demand**: Fetches remote data on demand. 
