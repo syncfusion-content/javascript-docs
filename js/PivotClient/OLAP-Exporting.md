@@ -189,7 +189,7 @@ The following screenshot shows the control exported to an Excel document showing
 
 ## Exporting customization
 
-You can add the title and description to the exporting document by using the title and description property obtained in the "beforeExport" event.
+You can add title and description to the exporting document by using the title and description properties respectively obtained in the `beforeExport` event. Similarly, you can enable or disable styling on the exported document by using the `exportWithStyle` property.
 
 {% highlight html %}
 <html> 
@@ -211,13 +211,14 @@ You can add the title and description to the exporting document by using the tit
             args.url = "http://js.syncfusion.com/ejservices/api/PivotClient/Olap/Export";
             //PivotEngine Export
             args.exportMode = ej.PivotClient.ExportMode.PivotEngine;
-            
+
             args.title = "PivotClient";
             args.description = "Visualizes both OLAP and Relational datasource in tabular and graphical formats";
+			args.exportWithStyle = true;   // by default it sets as true. It improves performance on exporting huge data when it sets as false.
         }
     </script>
 </body>
-</html>                                            
+</html>
 
 {% endhighlight %}
 
@@ -232,7 +233,7 @@ using Syncfusion.XlsIO;
 using Syncfusion.DocIO.Base;
 using Syncfusion.Pdf.Base;
 
- //Following service method needs to be added in WebAPI for JSON export.
+//Following service method needs to be added in WebAPI for JSON export.
  
 [System.Web.Http.ActionName("Export")]
 [System.Web.Http.HttpPost]
@@ -267,7 +268,7 @@ void pivotClient_ExcelExport(object sender, Syncfusion.XlsIO.IWorkbook workBook)
     //You can customize exporting document here.
 }
 
- //Following service method needs to be added in WCF/WebAPI for PivotEngine export.
+//Following service method needs to be added in WCF/WebAPI for PivotEngine export.
 [System.Web.Http.ActionName("ExportOlapClient")]
 [System.Web.Http.HttpPost]
 public void ExportOlapClient()
@@ -304,6 +305,27 @@ void olapClientHelper_ExcelExport(object sender, Syncfusion.XlsIO.IWorkbook work
 
 {% endhighlight %}
 
+### Exporting complete data on Paging
+
+When paging is enabled, you can export the complete data by enabling the [enableCompleteDataExport](/api/js/ejpivotclient#members:enablecompletedataexport) property. It is supported in both types of JSON and PivotEngine export and it is applicable for all kinds of exporting formats available in PivotClient.
+
+{% highlight html %}
+<html>
+    <div id="PivotClient1"></div>
+    //...
+    <script type="text/javascript">
+        $(function () {
+            $("#PivotClient1").ejPivotClient({
+                //...
+                enableCompleteDataExport: true
+            });
+        });
+    //...    
+    </script>
+</html>
+
+{% endhighlight %}
+
 The following screenshot shows the pivot grid and pivot chart controls exported to an Excel document:
 
 ![](Export_images/excel-export.png)
@@ -315,5 +337,3 @@ The following screenshot shows the pivot grid and pivot chart controls exported 
 The following screenshot shows the pivot grid and pivot chart controls exported to a PDF document:
 
 ![](Export_images/Pdf-Export.png)
-
-
