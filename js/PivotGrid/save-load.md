@@ -472,7 +472,7 @@ $("#Button1").ejButton({ roundedCorner: true, size: "small", text: "save", click
     function saveReport() {
         pGridObj = $('#PivotGrid1').data("ejPivotGrid");
         url = "../api/RelationalGrid/XmlExport";
-        pGridObj.saveXMLReport("XMLfile", url); // YOu can specify XML file name here
+        pGridObj.saveXMLReport("XML", url); // YOu can specify XML file name here
     }
     
 </script>
@@ -527,7 +527,7 @@ For WebAPI controller, the below methods need to be added.
         JavaScriptSerializer serializer = new JavaScriptSerializer();
         Dictionary<string, bool> clientSideAPI = new Dictionary<string, bool>();
         Syncfusion.Windows.Controls.PivotGrid.PivotGridSerializer xmlSerializer = new Syncfusion.Windows.Controls.PivotGrid.PivotGridSerializer();
-        string filePath = HttpContext.Current.Server.MapPath(".").Split(new string[] { "\\api" }, StringSplitOptions.None)[0] + "\\pivotgridxml.xml";
+        string filePath = HttpContext.Current.Server.MapPath(".").Split(new string[] { "\\api" }, StringSplitOptions.None)[0] + "\\pivot.xml";
 
         [System.Web.Http.ActionName("XmlImport")]
         [System.Web.Http.HttpPost]
