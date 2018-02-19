@@ -10,19 +10,22 @@ api: /api/js/ejpivotclient
 
 # Value sorting
 
-I> This feature is applicable for the relational data source.
+I> This feature is applicable only for the relational data source.
 
-The value sorting allows you to sort columns and rows based on value fields.
+PivotClient provides support for value sorting that allows you to sort columns and rows based on value fields.
 
 The headers of the column to be sorted are given in the [`headerText`](/api/js/ejpivotclient#members:valueSortSettings-headerText) property under [`valueSortSettings`](/api/js/ejpivotclient#members:valueSortSettings) in field wise order, separated by a string.  The string which is used to separate the headers is given in the [`headerDelimiters`](/api/js/ejpivotclient#members:valueSortSettings-headerDelimiters) property.
-Also, you can sort the column by clicking the column header. By clicking the same header once again, will reverse the sorting direction. The sorting operation is performed by this property [`sortOrder`](/api/js/ejpivotclient#members:valueSortSettings-sortOrder)
+
+Also, you can sort the column by clicking the column header. By clicking the same header once again, the sorting direction will be reversed. The sorting operation is performed by the [`sortOrder`](/api/js/ejpivotclient#members:valueSortSettings-sortOrder) property.
+
+The following code snippet shows how to sort values in descending order.
 
 {% highlight js %}
 
-  <script type="text/javascript">
+    <script type="text/javascript">
 
-  // Datasource
-  
+    // Datasource
+
     $(function() {
         $("#PivotClient1").ejPivotClient({
             dataSource: {
@@ -50,14 +53,12 @@ Also, you can sort the column by clicking the column header. By clicking the sam
                }
         });
     });
-</script>
-
+    </script>
 
 {% endhighlight %}
 
-![](Value-Sorting_images/Before.png) 
+The below screenshot shows PivotClient before applying value sorting.
+![Before-value-sorting](Value-Sorting_images/Before.png)
 
-![](Value-Sorting_images/After.png) 
-
-
-
+The below screenshot shows PivotClient after applying value sorting.
+![After-value-sorting](Value-Sorting_images/After.png)
