@@ -1124,7 +1124,7 @@ Also, using 'DataOperations' helper class you can perform grid action at server 
 
 ### RemoteSave Adaptor
 
-RemoteSaveAdaptor is used for binding local data and performs all data operatons in client-side. It interacts with server-side only for CRUD operations to pass the modified records.
+RemoteSaveAdaptor is used for binding local data and performs all data operations in client-side. It interacts with server-side only for CRUD operations to pass the modified records.
 
 The following code example describes the above behavior
 
