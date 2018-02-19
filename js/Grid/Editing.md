@@ -1122,6 +1122,52 @@ Also, using 'DataOperations' helper class you can perform grid action at server 
 7. PerformSelect
 8. Execute
 
+### RemoteSave Adaptor
+
+RemoteSaveAdaptor is used for binding local data and performs all data operatons in client-side. It interacts with server-side only for CRUD operations to pass the modified records.
+
+The following code example describes the above behavior
+
+{% highlight html %}
+
+<div id="Grid"></div>
+
+{% endhighlight %}
+
+{% highlight javascript %}
+
+$(function () {
+	$("#Grid").ejGrid({
+		dataSource : ej.DataManager({
+			json : "window.gridData",
+			updateUrl : "Home/Update",
+			insertUrl : "Home/Insert",
+			removeUrl : "Home/Delete",
+			adaptor : "remoteSaveAdaptor"
+		}),
+		allowPaging : true,
+		editSettings : {
+			allowEditing : true,
+			allowAdding : true,
+			allowDeleting : true
+		},
+		toolbarSettings : {
+			showToolbar : true,
+			toolbarItems : [ej.Grid.ToolBarItems.Add, ej.Grid.ToolBarItems.Edit, ej.Grid.ToolBarItems.Delete, ej.Grid.ToolBarItems.Update, ej.Grid.ToolBarItems.Cancel]
+		},
+		columns : [
+			{ field: "OrderID", isPrimaryKey: true },
+			{ field: "CustomerID" },
+			{ field: "EmployeeID"},
+			{ field: "Freight", editType: ej.Grid.EditingType.Numeric, editParams: { decimalPlaces: 2 }, format: "{0:C}" },
+			{ field: "ShipName" },
+			{ field: "ShipCountry"}
+		]
+	});
+});
+
+{% endhighlight %}
+
 ### Accessing CRUD action request details in server side:
 
 The 'Server-Side' function must be declared with the following parameter name for each editing functionality.
