@@ -23,30 +23,31 @@ The [loadOnDemand](https://help.syncfusion.com/api/js/ejdropdowntree#members:loa
 
 {% highlight javascript %}
   
-        // DataManager creation
-        var dataManager = ej.DataManager({
-            url: "http://js.syncfusion.com/demos/ejServices/api/TreeViewData/GetAllData",
-            crossDomain: true,
-            adaptor: new ej.WebApiAdaptor()
+// DataManager creation
+var dataManager = ej.DataManager({
+    url: "http://js.syncfusion.com/demos/ejServices/api/TreeViewData/GetAllData",
+    crossDomain: true,
+    adaptor: new ej.WebApiAdaptor()
 
-        });
-        // Query creation
-        var query = ej.Query().from("Categories").select("CategoryID,CategoryName").take(3);
+});
+// Query creation
+var query = ej.Query().from("Categories").select("CategoryID,CategoryName").take(3);
 
-        $(function () {
-            $('#itemList').ejDropDownTree({
-                watermarkText: "Please select",
-                width: "100%",
-                treeViewSettings: {
-                    loadOnDemand: true,
-                    fields: {
-                        dataSource: dataManager,
-                        id: "id", text: "name", parentId: "pid",
-                    }
-                }
-            });
-        });
-
+$(function() {
+    $('#itemList').ejDropDownTree({
+        watermarkText: "Please select",
+        width: "100%",
+        treeViewSettings: {
+            loadOnDemand: true,
+            fields: {
+                dataSource: dataManager,
+                id: "id",
+                text: "name",
+                parentId: "pid",
+            }
+        }
+    });
+});
 {% endhighlight %}
 
 ![](LoadOnDemand_images/loadondemand.png)

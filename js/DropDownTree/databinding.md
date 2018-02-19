@@ -23,44 +23,148 @@ N> The columns are bounded automatically when the fields are specified with the 
 
 {% highlight javascript %}
 	
-    $(function () {
-	
-		// declaration
-		
-		var localData = [
-                    { id: 1, name: "Discover Music", hasChild: true, expanded: true },
-                    { id: 2, pid: 1, name: "Hot Singles" },
-                    { id: 3, pid: 1, name: "Rising Artists" },
-                    { id: 4, pid: 1, name: "Live Music" },
-                    { id: 6, pid: 1, name: "Best of 2013 So Far" },
-                    { id: 7, name: "Sales and Events", hasChild: true, expanded: true },
-                    { id: 8, pid: 7, name: "100 Albums - $5 Each" },
-                    { id: 9, pid: 7, name: "Hip-Hop and R&B Sale" },
-                    { id: 10, pid: 7, name: "CD Deals" },
-                    { id: 11, name: "Categories", hasChild: true },
-                    { id: 12, pid: 11, name: "Songs" },
-                    { id: 13, pid: 11, name: "Bestselling Albums" },
-                    { id: 14, pid: 11, name: "New Releases" },
-                    { id: 15, pid: 11, name: "Bestselling Songs" },
-                    { id: 16, name: "MP3 Albums", hasChild: true },
-                    { id: 17, pid: 16, name: "Rock" },
-                    { id: 18, pid: 16, name: "Gospel" },
-                    { id: 19, pid: 16, name: "Latin Music" },
-                    { id: 20, pid: 16, name: "Jazz" },
-                    { id: 21, name: "More in Music", hasChild: true },
-                    { id: 22, pid: 21, name: "Music Trade-In" },
-                    { id: 23, pid: 21, name: "Redeem a Gift Card" },
-                    { id: 24, pid: 21, name: "Band T-Shirts" },
-                    { id: 25, pid: 21, name: "Mobile MVC" }];
-					
-		$('#localList').ejDropDownTree({
-                treeViewSettings: {
-                    fields: { id: "id", parentId: "pid", text: "name", hasChild: "hasChild", dataSource: localData, expanded: "expanded" }
-                },
-                watermarkText: "Please select",
-            });	
-	});
+$(function() {
 
+     // declaration
+
+     var localData = [{
+             id: 1,
+             name: "Discover Music",
+             hasChild: true,
+             expanded: true
+         },
+         {
+             id: 2,
+             pid: 1,
+             name: "Hot Singles"
+         },
+         {
+             id: 3,
+             pid: 1,
+             name: "Rising Artists"
+         },
+         {
+             id: 4,
+             pid: 1,
+             name: "Live Music"
+         },
+         {
+             id: 6,
+             pid: 1,
+             name: "Best of 2013 So Far"
+         },
+         {
+             id: 7,
+             name: "Sales and Events",
+             hasChild: true,
+             expanded: true
+         },
+         {
+             id: 8,
+             pid: 7,
+             name: "100 Albums - $5 Each"
+         },
+         {
+             id: 9,
+             pid: 7,
+             name: "Hip-Hop and R&B Sale"
+         },
+         {
+             id: 10,
+             pid: 7,
+             name: "CD Deals"
+         },
+         {
+             id: 11,
+             name: "Categories",
+             hasChild: true
+         },
+         {
+             id: 12,
+             pid: 11,
+             name: "Songs"
+         },
+         {
+             id: 13,
+             pid: 11,
+             name: "Bestselling Albums"
+         },
+         {
+             id: 14,
+             pid: 11,
+             name: "New Releases"
+         },
+         {
+             id: 15,
+             pid: 11,
+             name: "Bestselling Songs"
+         },
+         {
+             id: 16,
+             name: "MP3 Albums",
+             hasChild: true
+         },
+         {
+             id: 17,
+             pid: 16,
+             name: "Rock"
+         },
+         {
+             id: 18,
+             pid: 16,
+             name: "Gospel"
+         },
+         {
+             id: 19,
+             pid: 16,
+             name: "Latin Music"
+         },
+         {
+             id: 20,
+             pid: 16,
+             name: "Jazz"
+         },
+         {
+             id: 21,
+             name: "More in Music",
+             hasChild: true
+         },
+         {
+             id: 22,
+             pid: 21,
+             name: "Music Trade-In"
+         },
+         {
+             id: 23,
+             pid: 21,
+             name: "Redeem a Gift Card"
+         },
+         {
+             id: 24,
+             pid: 21,
+             name: "Band T-Shirts"
+         },
+         {
+             id: 25,
+             pid: 21,
+             name: "Mobile MVC"
+         }
+     ];
+
+     $('#localList').ejDropDownTree({
+         treeViewSettings: {
+             fields: {
+                 id: "id",
+                 parentId: "pid",
+                 text: "name",
+                 hasChild: "hasChild",
+                 dataSource: localData,
+                 expanded: "expanded"
+             }
+         },
+         watermarkText: "Please select",
+     });
+ });
 {% endhighlight %}
 
 ![](DataBinding_images/databinding_local.png)
@@ -78,43 +182,148 @@ The JSON array to the `fields` property can also be provided as an instance of t
 
 {% highlight javascript %}	
   
-   $(function () {
-	
-		// declaration
-		
-		var localData = [
-                    { id: 1, name: "Discover Music", hasChild: true, expanded: true },
-                    { id: 2, pid: 1, name: "Hot Singles" },
-                    { id: 3, pid: 1, name: "Rising Artists" },
-                    { id: 4, pid: 1, name: "Live Music" },
-                    { id: 6, pid: 1, name: "Best of 2013 So Far" },
-                    { id: 7, name: "Sales and Events", hasChild: true, expanded: true },
-                    { id: 8, pid: 7, name: "100 Albums - $5 Each" },
-                    { id: 9, pid: 7, name: "Hip-Hop and R&B Sale" },
-                    { id: 10, pid: 7, name: "CD Deals" },
-                    { id: 11, name: "Categories", hasChild: true },
-                    { id: 12, pid: 11, name: "Songs" },
-                    { id: 13, pid: 11, name: "Bestselling Albums" },
-                    { id: 14, pid: 11, name: "New Releases" },
-                    { id: 15, pid: 11, name: "Bestselling Songs" },
-                    { id: 16, name: "MP3 Albums", hasChild: true },
-                    { id: 17, pid: 16, name: "Rock" },
-                    { id: 18, pid: 16, name: "Gospel" },
-                    { id: 19, pid: 16, name: "Latin Music" },
-                    { id: 20, pid: 16, name: "Jazz" },
-                    { id: 21, name: "More in Music", hasChild: true },
-                    { id: 22, pid: 21, name: "Music Trade-In" },
-                    { id: 23, pid: 21, name: "Redeem a Gift Card" },
-                    { id: 24, pid: 21, name: "Band T-Shirts" },
-                    { id: 25, pid: 21, name: "Mobile MVC" }];
-					
-		$('#localList').ejDropDownTree({
-                treeViewSettings: {
-                    fields: { id: "id", parentId: "pid", text: "name", hasChild: "hasChild", dataSource: ej.DataManager(localData), expanded: "expanded" }
-                },
-                watermarkText: "Please select",
-            });	
-	});
+$(function() {
+
+    // declaration
+
+    var localData = [{
+            id: 1,
+            name: "Discover Music",
+            hasChild: true,
+            expanded: true
+        },
+        {
+            id: 2,
+            pid: 1,
+            name: "Hot Singles"
+        },
+        {
+            id: 3,
+            pid: 1,
+            name: "Rising Artists"
+        },
+        {
+            id: 4,
+            pid: 1,
+            name: "Live Music"
+        },
+        {
+            id: 6,
+            pid: 1,
+            name: "Best of 2013 So Far"
+        },
+        {
+            id: 7,
+            name: "Sales and Events",
+            hasChild: true,
+            expanded: true
+        },
+        {
+            id: 8,
+            pid: 7,
+            name: "100 Albums - $5 Each"
+        },
+        {
+            id: 9,
+            pid: 7,
+            name: "Hip-Hop and R&B Sale"
+        },
+        {
+            id: 10,
+            pid: 7,
+            name: "CD Deals"
+        },
+        {
+            id: 11,
+            name: "Categories",
+            hasChild: true
+        },
+        {
+            id: 12,
+            pid: 11,
+            name: "Songs"
+        },
+        {
+            id: 13,
+            pid: 11,
+            name: "Bestselling Albums"
+        },
+        {
+            id: 14,
+            pid: 11,
+            name: "New Releases"
+        },
+        {
+            id: 15,
+            pid: 11,
+            name: "Bestselling Songs"
+        },
+        {
+            id: 16,
+            name: "MP3 Albums",
+            hasChild: true
+        },
+        {
+            id: 17,
+            pid: 16,
+            name: "Rock"
+        },
+        {
+            id: 18,
+            pid: 16,
+            name: "Gospel"
+        },
+        {
+            id: 19,
+            pid: 16,
+            name: "Latin Music"
+        },
+        {
+            id: 20,
+            pid: 16,
+            name: "Jazz"
+        },
+        {
+            id: 21,
+            name: "More in Music",
+            hasChild: true
+        },
+        {
+            id: 22,
+            pid: 21,
+            name: "Music Trade-In"
+        },
+        {
+            id: 23,
+            pid: 21,
+            name: "Redeem a Gift Card"
+        },
+        {
+            id: 24,
+            pid: 21,
+            name: "Band T-Shirts"
+        },
+        {
+            id: 25,
+            pid: 21,
+            name: "Mobile MVC"
+        }
+    ];
+
+    $('#localList').ejDropDownTree({
+        treeViewSettings: {
+            fields: {
+                id: "id",
+                parentId: "pid",
+                text: "name",
+                hasChild: "hasChild",
+                dataSource: ej.DataManager(localData),
+                expanded: "expanded"
+            }
+        },
+        watermarkText: "Please select",
+    });
+});
 
 {% endhighlight %}
 
@@ -134,25 +343,33 @@ OData is a standardized protocol for creating and consuming data. Provide  [ODat
 
 {% highlight javascript %}
 
-    var dataManger = ej.DataManager({
-            url: "http://js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/",
-            adaptor: new ej.ODataAdaptor(),
-            crossDomain: true
-        });
-        // Query creation
-        var query = ej.Query().from("Categories").select("CategoryID,CategoryName").take(3);
-        $(function () {
-            $('#selectCar').ejDropDownTree({
-                watermarkText: "Select a car",
-                width: "50%",
-                treeViewSettings : {
-                    fields: {
-                        dataSource: dataManger, query: query, id: "CategoryID", text: "CategoryName",
-                        child: { dataSource: dataManger, tableName: "Products", parentId: "CategoryID", text: "ProductName" }
-                    }
+var dataManger = ej.DataManager({
+    url: "http://js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/",
+    adaptor: new ej.ODataAdaptor(),
+    crossDomain: true
+});
+// Query creation
+var query = ej.Query().from("Categories").select("CategoryID,CategoryName").take(3);
+$(function() {
+    $('#selectCar').ejDropDownTree({
+        watermarkText: "Select a car",
+        width: "50%",
+        treeViewSettings: {
+            fields: {
+                dataSource: dataManger,
+                query: query,
+                id: "CategoryID",
+                text: "CategoryName",
+                child: {
+                    dataSource: dataManger,
+                    tableName: "Products",
+                    parentId: "CategoryID",
+                    text: "ProductName"
                 }
-            });
-        });
+            }
+        }
+    });
+});
    
 
 {% endhighlight %}
@@ -171,26 +388,33 @@ By using URL property of “ej.DataManager”, bind OData Version 4 Service link
 
 {% highlight javascript %}
 
-   
-    var dataManger = ej.DataManager({
-            url: "http://js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/",
-            adaptor: new ej.ODataV4Adaptor(),
-            crossDomain: true
-        });
-        // Query creation
-        var query = ej.Query().from("Categories").select("CategoryID,CategoryName").take(3);
-        $(function () {
-            $('#selectCar').ejDropDownTree({
-                watermarkText: "Select a car",
-                width: "50%",
-                treeViewSettings : {
-                    fields: {
-                        dataSource: dataManger, query: query, id: "CategoryID", text: "CategoryName",
-                        child: { dataSource: dataManger, tableName: "Products", parentId: "CategoryID", text: "ProductName" }
-                    }
+var dataManger = ej.DataManager({
+    url: "http://js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/",
+    adaptor: new ej.ODataV4Adaptor(),
+    crossDomain: true
+});
+// Query creation
+var query = ej.Query().from("Categories").select("CategoryID,CategoryName").take(3);
+$(function() {
+    $('#selectCar').ejDropDownTree({
+        watermarkText: "Select a car",
+        width: "50%",
+        treeViewSettings: {
+            fields: {
+                dataSource: dataManger,
+                query: query,
+                id: "CategoryID",
+                text: "CategoryName",
+                child: {
+                    dataSource: dataManger,
+                    tableName: "Products",
+                    parentId: "CategoryID",
+                    text: "ProductName"
                 }
-            });
-        });
+            }
+        }
+    });
+});
 {% endhighlight %}
 
 
@@ -209,28 +433,29 @@ Using [ej.WebApiAdaptor](https://help.syncfusion.com/js/datamanager/data-adaptor
 {% highlight javascript %}
 
    // DataManager creation
-        var dataManager = ej.DataManager({
-            url: "http://js.syncfusion.com/demos/ejServices/api/TreeViewData/GetAllData",
-            crossDomain: true,
-            adaptor: new ej.WebApiAdaptor()
+   var dataManager = ej.DataManager({
+       url: "http://js.syncfusion.com/demos/ejServices/api/TreeViewData/GetAllData",
+       crossDomain: true,
+       adaptor: new ej.WebApiAdaptor()
 
-        });
-        // Query creation
-        var query = ej.Query().from("Categories").select("CategoryID,CategoryName").take(3);
-        $(function () {
-            $('#selectCar').ejDropDownTree({
-                watermarkText: "Select a car",
-                width: "50%",
-                treeViewSettings: {
-                    fields: {
-                        dataSource: dataManager,
+   });
+   // Query creation
+   var query = ej.Query().from("Categories").select("CategoryID,CategoryName").take(3);
+   $(function() {
+       $('#selectCar').ejDropDownTree({
+           watermarkText: "Select a car",
+           width: "50%",
+           treeViewSettings: {
+               fields: {
+                   dataSource: dataManager,
 
-                        id: "id", text: "name", parentId: "pid",
-                    }
-                }
-            });
-        });
-
+                   id: "id",
+                   text: "name",
+                   parentId: "pid",
+               }
+           }
+       });
+   });
 
 {% endhighlight %}
 
@@ -250,60 +475,160 @@ When using remote data binding, the adaptor of "ej.DataManager" plays a vital ro
 
 {% highlight javascript %}
   
-   var localData = [
-                    { id: 1, name: "Discover Music", hasChild: true, expanded: true },
-                    { id: 2, pid: 1, name: "Hot Singles" },
-                    { id: 3, pid: 1, name: "Rising Artists" },
-                    { id: 4, pid: 1, name: "Live Music" },
-                    { id: 6, pid: 1, name: "Best of 2013 So Far" },
-                    { id: 7, name: "Sales and Events", hasChild: true, expanded: true },
-                    { id: 8, pid: 7, name: "100 Albums - $5 Each" },
-                    { id: 9, pid: 7, name: "Hip-Hop and R&B Sale" },
-                    { id: 10, pid: 7, name: "CD Deals" },
-                    { id: 11, name: "Categories", hasChild: true },
-                    { id: 12, pid: 11, name: "Songs" },
-                    { id: 13, pid: 11, name: "Bestselling Albums" },
-                    { id: 14, pid: 11, name: "New Releases" },
-                    { id: 15, pid: 11, name: "Bestselling Songs" },
-                    { id: 16, name: "MP3 Albums", hasChild: true },
-                    { id: 17, pid: 16, name: "Rock" },
-                    { id: 18, pid: 16, name: "Gospel" },
-                    { id: 19, pid: 16, name: "Latin Music" },
-                    { id: 20, pid: 16, name: "Jazz" },
-                    { id: 21, name: "More in Music", hasChild: true },
-                    { id: 22, pid: 21, name: "Music Trade-In" },
-                    { id: 23, pid: 21, name: "Redeem a Gift Card" },
-                    { id: 24, pid: 21, name: "Band T-Shirts" },];
-        var customAdaptor = new ej.Adaptor().extend({
-            insert: function(dataObj, data) {
-                return dataObj.dataSource.json.push(data);
-            },
-            processQuery: ej.JsonAdaptor.prototype.processQuery
-                // reused process query from JSON adaptor
-        });
-  
-        var dataManager = new ej.DataManager(localData);
-  
-        // assigning custom adaptor to datamanager
-        dataManager.adaptor = new customAdaptor(); 
-  
-  		// insert from custom adaptor usage
-        dataManager.insert({
-            id: 29, pid: 1, name: `Gospel`
-        });
+var localData = [{
+        id: 1,
+        name: "Discover Music",
+        hasChild: true,
+        expanded: true
+    },
+    {
+        id: 2,
+        pid: 1,
+        name: "Hot Singles"
+    },
+    {
+        id: 3,
+        pid: 1,
+        name: "Rising Artists"
+    },
+    {
+        id: 4,
+        pid: 1,
+        name: "Live Music"
+    },
+    {
+        id: 6,
+        pid: 1,
+        name: "Best of 2013 So Far"
+    },
+    {
+        id: 7,
+        name: "Sales and Events",
+        hasChild: true,
+        expanded: true
+    },
+    {
+        id: 8,
+        pid: 7,
+        name: "100 Albums - $5 Each"
+    },
+    {
+        id: 9,
+        pid: 7,
+        name: "Hip-Hop and R&B Sale"
+    },
+    {
+        id: 10,
+        pid: 7,
+        name: "CD Deals"
+    },
+    {
+        id: 11,
+        name: "Categories",
+        hasChild: true
+    },
+    {
+        id: 12,
+        pid: 11,
+        name: "Songs"
+    },
+    {
+        id: 13,
+        pid: 11,
+        name: "Bestselling Albums"
+    },
+    {
+        id: 14,
+        pid: 11,
+        name: "New Releases"
+    },
+    {
+        id: 15,
+        pid: 11,
+        name: "Bestselling Songs"
+    },
+    {
+        id: 16,
+        name: "MP3 Albums",
+        hasChild: true
+    },
+    {
+        id: 17,
+        pid: 16,
+        name: "Rock"
+    },
+    {
+        id: 18,
+        pid: 16,
+        name: "Gospel"
+    },
+    {
+        id: 19,
+        pid: 16,
+        name: "Latin Music"
+    },
+    {
+        id: 20,
+        pid: 16,
+        name: "Jazz"
+    },
+    {
+        id: 21,
+        name: "More in Music",
+        hasChild: true
+    },
+    {
+        id: 22,
+        pid: 21,
+        name: "Music Trade-In"
+    },
+    {
+        id: 23,
+        pid: 21,
+        name: "Redeem a Gift Card"
+    },
+    {
+        id: 24,
+        pid: 21,
+        name: "Band T-Shirts"
+    },
+];
+var customAdaptor = new ej.Adaptor().extend({
+    insert: function(dataObj, data) {
+        return dataObj.dataSource.json.push(data);
+    },
+    processQuery: ej.JsonAdaptor.prototype.processQuery
+    // reused process query from JSON adaptor
+});
 
-        $(function () {
+var dataManager = new ej.DataManager(localData);
 
-            $('#remoteList').ejDropDownTree({
-                watermarkText: "Please select",
-                width: "100%",
-                treeViewSettings: {
-                    fields: {
-                        dataSource: dataManager,id: "id", parentId: "pid", text: "name", hasChild: "hasChild"
-                    }
-                }
-            });
-        });
+// assigning custom adaptor to datamanager
+dataManager.adaptor = new customAdaptor();
+
+// insert from custom adaptor usage
+dataManager.insert({
+    id: 29,
+    pid: 1,
+    name: `Gospel`
+});
+
+$(function() {
+
+    $('#remoteList').ejDropDownTree({
+        watermarkText: "Please select",
+        width: "100%",
+        treeViewSettings: {
+            fields: {
+                dataSource: dataManager,
+                id: "id",
+                parentId: "pid",
+                text: "name",
+                hasChild: "hasChild"
+            }
+        }
+    });
+});
 {% endhighlight %}
 
 ![](DataBinding_images/databinding_custom.png)
