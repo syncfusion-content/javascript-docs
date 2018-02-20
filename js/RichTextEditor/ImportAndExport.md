@@ -123,6 +123,17 @@ Full list of assemblies needed for RTE Import are as follows
 
 ![](ImportAndExport_images/import_images.png)
 
+### Import Limitations
+
+Import feature utilizes the DocIO’s assembly which converts Word Document to the HTML string. The generated string is then appended to the RTE control. DocIO supports only the conversion of Word Documents that are Web Compatible. You can check the compatibility of the any Word document while saving the document. For Example, refer to the following Screenshot.
+
+![](ImportAndExport_images/web_compatibility_checker.png)
+
+In the above screenshot, there is a compatibility issue with the word document. The text box is preserved with absolute position. While saving the Word document with absolute positioned textbox as HTML, it will be aligned to left or right of the HTML page. So the original format will be altered to support web. Refer to the [DocIO's Word to HTML conversion](https://help.syncfusion.com/file-formats/docio/conversion#customizing-the-word-to-html-conversion) for more information on the supported formats and limitations.
+
+So, in order to have the exact document to be imported into RTE control, make sure that it is compatible with Web.
+
+
 # Export 
 
 Export feature provides support to export editor `textarea` content into word and PDF files. To enable Export option in the RTE tool bar,  `wordExport` , `pdfExport` toolbar items needs to be added in RTE toolbar toolsList using `importExport` which adds the tool in the toolbar. [exportToWordSettings](https://help.syncfusion.com/api/js/ejrte#members:exporttowordsettings) consists of url and fileName sub properties. In url property, the server page for export to word is needed to be mapped and In fileName property, the name for the exported word file is given. [exportToPdfSettings](https://help.syncfusion.com/api/js/ejrte#members:exporttopdfsettings) consists of url and fileName sub properties. In url property, the server page for export to PDF is needed to be mapped and In fileName property, the name for the exported PDF file is given. When you click the toolbar pdfExport or wordExport icon, the contents of RTE are sent to the server. It performs XHTML Validation on the editor `textarea` content on the server. Once the XHTML validation and formatting is successful, it exports the content into a Word or PDF File.
