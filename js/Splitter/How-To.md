@@ -65,4 +65,55 @@ By default, you are provided with collapse/expand icons in **Split bar** to coll
 
 The output for Splitter with **Template support**.
 
-![](/js/Splitter/How-To_images/Template_Support_img.png) 
+![](How-To_images/Template_Support_img.png) 
+
+### Change the splitter pane size dynamically
+
+Splitter pane size can be changed by updating model property of [`paneSize`](https://help.syncfusion.com/api/js/ejsplitter#members:properties) and by refreshing the control using [`refresh`](https://help.syncfusion.com/api/js/ejsplitter#methods:refresh) public method.  As shown in the below code, based on the selected dropdown list value, pane size of splitter is changed.
+
+{% highlight html %}
+
+<span class="txt">Select PaneSize</span>
+<input type="text" id="paneSize" />
+<div id="Size">
+    <ul>
+       <li>25</li>
+       <li>50</li>
+       <li>75</li>
+    </ul>
+</div>
+</br>
+<div id="splitter">
+    <div>
+        <div class="cont">Pane 1 </div>
+    </div>
+    <div>
+        <div class="cont">Pane 2 </div>
+    </div>
+</div>
+
+{% endhighlight %}
+
+{% highlight javascript %}
+
+<script type="text/javascript">
+   $(function () {
+      $("#splitter").ejSplitter({
+           height: 250
+       });
+       $('#paneSize').ejDropDownList({
+           targetID: "Size",
+           value: "50",
+	       change: "change"
+       });
+    });
+    function change(args){
+         var obj = $("#splitter").data("ejSplitter");
+         obj.model.properties[0].paneSize = args.value + "%";
+         obj.refresh();
+    }
+</script>
+
+{% endhighlight %}
+
+![](How-To_images/Pane_Size.png) 
