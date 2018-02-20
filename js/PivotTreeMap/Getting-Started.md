@@ -12,7 +12,7 @@ api: /api/js/ejpivottreemap
 
 ## Creating a simple application with pivot tree map and OLAP data source (client mode)
 
-This section covers the information required to populate a simple pivot tree map with the OLAP data completely on the [`client-side`](../api/js/ejpivottreemap#members:operationalmode).
+This section covers the information required to populate a simple pivot tree map with the OLAP data completely on the [`client-side`](/api/js/ejpivottreemap#members:operationalmode).
 
 ### Scripts and CSS references
 
@@ -409,9 +409,9 @@ To initialize a pivot tree map widget, first you can define a "div" tag with an 
 
 {% endhighlight %}
 
-The [`url`](../api/js/ejpivottreemap#members:url) property in the pivot tree map widget points the service endpoint, where the data is processed and fetched in the form of JSON. The service used for the pivot tree map widget as endpoint are WCF and WebAPI.
+The [`url`](/api/js/ejpivottreemap#members:url) property in the pivot tree map widget points the service endpoint, where the data is processed and fetched in the form of JSON. The service used for the pivot tree map widget as endpoint are WCF and WebAPI.
 
-N> The above "GettingStarted.html" contains WebAPI [`url`](../api/js/ejpivottreemap#members:url), which is **“/Olap”**. If you are using the WCF service then the [`url`](../api/js/ejpivottreemap#members:url) will look like **"/OlapService.svc"**.
+N> The above "GettingStarted.html" contains WebAPI [`url`](/api/js/ejpivottreemap#members:url), which is **“/Olap”**. If you are using the WCF service then the [`url`](/api/js/ejpivottreemap#members:url) will look like **"/OlapService.svc"**.
 
 Register the referenced assemblies in "Web.config" file available at the root of the application.
 
