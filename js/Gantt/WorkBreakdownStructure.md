@@ -1,6 +1,6 @@
 ---
 layout: post
-title: WorkBreakdownStructure
+title: Work Breakdown Structure
 description: Work Breakdown Structure
 platform: js
 control: Gantt
@@ -24,7 +24,7 @@ Work Breakdown Structure(WBS) in Gantt represents the entire project activities 
 
 The below screenshot depicts the output of above code example.
 
-![](/js/Gantt/WorkBreakdownStrcture_images/wbs_img1.png)
+![](/js/Gantt/WorkBreakdownStructure_images/wbs_img1.png)
 
 [Click](http://js.syncfusion.com/demos/web/#!/bootstrap/gantt/schedulingconcepts/workbreakdownstrcture) here to view the online demo sample for WBS in Gantt.
 
