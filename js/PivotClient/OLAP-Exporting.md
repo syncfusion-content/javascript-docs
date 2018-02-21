@@ -211,14 +211,14 @@ You can add title and description to the exporting document by using the title a
             args.url = "http://js.syncfusion.com/ejservices/api/PivotClient/Olap/Export";
             //PivotEngine Export
             args.exportMode = ej.PivotClient.ExportMode.PivotEngine;
-            
+
             args.title = "PivotClient";
             args.description = "Visualizes both OLAP and Relational datasource in tabular and graphical formats";
 			args.exportWithStyle = true;   // by default it sets as true. It improves performance on exporting huge data when it sets as false.
         }
     </script>
 </body>
-</html>                                            
+</html>
 
 {% endhighlight %}
 
@@ -233,7 +233,7 @@ using Syncfusion.XlsIO;
 using Syncfusion.DocIO.Base;
 using Syncfusion.Pdf.Base;
 
- //Following service method needs to be added in WebAPI for JSON export.
+//Following service method needs to be added in WebAPI for JSON export.
  
 [System.Web.Http.ActionName("Export")]
 [System.Web.Http.HttpPost]
@@ -268,7 +268,7 @@ void pivotClient_ExcelExport(object sender, Syncfusion.XlsIO.IWorkbook workBook)
     //You can customize exporting document here.
 }
 
- //Following service method needs to be added in WCF/WebAPI for PivotEngine export.
+//Following service method needs to be added in WCF/WebAPI for PivotEngine export.
 [System.Web.Http.ActionName("ExportOlapClient")]
 [System.Web.Http.HttpPost]
 public void ExportOlapClient()
@@ -337,5 +337,3 @@ The following screenshot shows the pivot grid and pivot chart controls exported 
 The following screenshot shows the pivot grid and pivot chart controls exported to a PDF document:
 
 ![](Export_images/Pdf-Export.png)
-
-

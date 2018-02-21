@@ -41,7 +41,7 @@ I> By default, the JSON export mode will be applied for server and client modes.
             var pGridObj = $('#PivotGrid1').data("ejPivotGrid");
             pGridObj.exportPivotGrid("http://js.syncfusion.com/ejservices/api/PivotGrid/Olap/ExcelExport", "fileName");
         }
-    </script>                                       
+    </script>
 
 {% endhighlight %}
 
@@ -153,7 +153,7 @@ To perform exporting with the use of PivotEngine available in the server-side, t
         }
     </script>
     </body>
-</html>                                            
+</html>
 
 {% endhighlight %}
 
@@ -356,7 +356,6 @@ public void Export(System.IO.Stream stream)
 
 {% endhighlight %}
 
-
 ## Exporting customization
 
 You can add title and description to the exporting document by using the title and description properties respectively obtained in the `beforeExport` event. Similarly, you can enable or disable styling on the exported document by using the `exportWithStyle` property.
@@ -393,7 +392,7 @@ You can add title and description to the exporting document by using the title a
         }
     </script>
 </body>
-</html>                                            
+</html>
 
 {% endhighlight %}
 
@@ -475,8 +474,7 @@ void pGrid_CSVExport(object sender, string csvString)
     //You can customize exporting document here.
 }
 
-
- //Following service method needs to be added in the WCF/WebAPI for PivotEngine export.
+//Following service method needs to be added in the WCF/WebAPI for PivotEngine export.
 
 [System.Web.Http.ActionName("Export")]
 [System.Web.Http.HttpPost]

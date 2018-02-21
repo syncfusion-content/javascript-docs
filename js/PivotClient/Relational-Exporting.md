@@ -219,7 +219,7 @@ You can add title and description to the exporting document by using the title a
              });
         });
         function Exporting(args) {
-            //ClientMode export    
+            //ClientMode export
             args.url = "http://js.syncfusion.com/ejservices/api/PivotClient/Olap/Export";
             //PivotEngine Export
             args.exportMode = ej.PivotClient.ExportMode.PivotEngine;
@@ -230,7 +230,7 @@ You can add title and description to the exporting document by using the title a
         }
     </script>
 </body>
-</html>                                            
+</html>
 
 {% endhighlight %}
 
@@ -280,7 +280,7 @@ void pivotClient_ExcelExport(object sender, Syncfusion.XlsIO.IWorkbook workBook)
     //You can customize exporting document here.
 }
 
- //Following service method needs to be added in WCF/WebAPI for PivotEngine export.
+//Following service method needs to be added in WCF/WebAPI for PivotEngine export.
 
 [System.Web.Http.ActionName("Export")]
 [System.Web.Http.HttpPost]
@@ -330,4 +330,3 @@ The following screenshot shows the pivot grid and pivot chart controls exported 
 The following screenshot shows the pivot grid and pivot chart controls exported to a PDF document.
 
 ![](Export_images/relational-Pdf-Export.png)
-

@@ -387,7 +387,7 @@ You can add title and description to the exporting document by using the title a
         }
     </script>
 </body>
-</html>                                            
+</html>
 
 {% endhighlight %}
 
@@ -469,8 +469,7 @@ void pGrid_CSVExport(object sender, string csvString)
     //You can customize exporting document here.
 }
 
-
- //Following service method should be added in the WCF/WebAPI for PivotEngine export.
+//Following service method should be added in the WCF/WebAPI for PivotEngine export.
 
 [System.Web.Http.ActionName("Export")]
 [System.Web.Http.HttpPost]
@@ -546,6 +545,3 @@ The following screenshot shows the pivot grid control exported to the PDF docume
 The following screenshot shows the pivot grid control exported to the CSV document:
 
 ![](Export_images/ExportOLAPCSV.png)
-
-
-
