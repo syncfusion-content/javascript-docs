@@ -15,7 +15,7 @@ api: /api/js/ejgrid
 
 Essential Grid is export as a PDF, Word or Excel document by using services . Data from a remote server can be bound to ejGrid using ejDataManager widget.
 
-## Northwnd Service
+## Northwnd service
 {:#members:grid-northwnd-service}
 
 ### Description
@@ -141,7 +141,7 @@ To export grid data as Excel, Word or PDF document.
 
 ### Request
 
-#### Essential Grid exporting in JavaScript platform
+#### Essential grid exporting in JavaScript platform
 {% highlight js %}
 $(function() {
     $("#Grid").ejGrid({
@@ -169,7 +169,7 @@ $(function() {
 })
 {% endhighlight %}
 
-#### Essential Grid exporting in C# 
+#### Essential grid exporting in C# 
 
 {% highlight c# %}
 public void ExportToExcel(string GridModel)

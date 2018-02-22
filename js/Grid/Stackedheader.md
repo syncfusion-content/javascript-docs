@@ -9,13 +9,13 @@ api: /api/js/ejgrid
 ---
 # Stacked Headers
 
-The stacked headers helps you to group the logical columns in grid. It can be shown by setting the [`showStackedHeader`](https://help.syncfusion.com/api/js/ejgrid#members:showstackedheader "showStackedHeader") as `true` and by defining [`stackedHeaderRows`](https://help.syncfusion.com/api/js/ejgrid#members:stackedheaderrows "stackedHeaderRows").
+The stacked headers helps you to group the logical columns in the Grid. It can be shown by setting the [`showStackedHeader`](https://help.syncfusion.com/api/js/ejgrid#members:showstackedheader "showStackedHeader") as `true` and by defining the [`stackedHeaderRows`](https://help.syncfusion.com/api/js/ejgrid#members:stackedheaderrows "stackedHeaderRows").
 
-## Adding Stacked header columns
+## Adding stacked header columns
 
-To stack columns in stacked header, you need to define [`column`](https://help.syncfusion.com/api/js/ejgrid#members:stackedheaderrows-stackedheadercolumns-column "column") property in the [`stackedHeaderColumns`](https://help.syncfusion.com/api/js/ejgrid#members:stackedheaderrows-stackedheadercolumns "stackedHeaderColumns") with field names of visible columns.
+To stack columns in stacked header, you need to define the [`column`](https://help.syncfusion.com/api/js/ejgrid#members:stackedheaderrows-stackedheadercolumns-column "column") property in the [`stackedHeaderColumns`](https://help.syncfusion.com/api/js/ejgrid#members:stackedheaderrows-stackedheadercolumns "stackedHeaderColumns") with field names of visible columns.
 
-You can also define  [`cssclass`](https://help.syncfusion.com/api/js/ejgrid#members:stackedheaderrows-stackedheadercolumns-cssclass "cssclass"),  [`headerText `](https://help.syncfusion.com/api/js/ejgrid#members:stackedheaderrows-stackedheadercolumns-headertext  "headerText "), [`textAlign `](https://help.syncfusion.com/api/js/ejgrid#members:stackedheaderrows-stackedheadercolumns-textalign "textAlign  ") and [`tooltip `](https://help.syncfusion.com/api/js/ejgrid#members:stackedheaderrows-stackedheadercolumns-cssclass "tooltip ") properties in the [`stackedHeaderColumns`](https://help.syncfusion.com/api/js/ejgrid#members:stackedheaderrows-stackedheadercolumns "stackedHeaderColumns") .
+You can also define the [`cssclass`](https://help.syncfusion.com/api/js/ejgrid#members:stackedheaderrows-stackedheadercolumns-cssclass "cssclass"),  [`headerText `](https://help.syncfusion.com/api/js/ejgrid#members:stackedheaderrows-stackedheadercolumns-headertext  "headerText "), [`textAlign `](https://help.syncfusion.com/api/js/ejgrid#members:stackedheaderrows-stackedheadercolumns-textalign "textAlign  ") and [`tooltip `](https://help.syncfusion.com/api/js/ejgrid#members:stackedheaderrows-stackedheadercolumns-cssclass "tooltip ") properties in the [`stackedHeaderColumns`](https://help.syncfusion.com/api/js/ejgrid#members:stackedheaderrows-stackedheadercolumns "stackedHeaderColumns") .
 
 {% highlight html %}
 <div id="Grid"></div>

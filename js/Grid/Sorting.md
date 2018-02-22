@@ -13,7 +13,7 @@ The Grid control has support to sort data bound columns in ascending or descendi
 
 To dynamically sort a particular column, click on its column header. The order switch between ascending and descending each time you click a column header for sorting.
 
-The following code example describes the above behavior.
+The following code example describes the previous behavior.
 
 {% highlight html %}
 <div id="Grid"></div>
@@ -31,19 +31,19 @@ $(function () {
 });
 {% endhighlight %}
 
-The following output is displayed as a result of the above code example.
+The following output is displayed as a result of the previous code example.
 
 ![](sorting_images/sorting_img1.png)
 
 
-## Initial Sorting
+## Initial sorting
 
 Through the `sortedColumns` property of [`sortSettings`](https://help.syncfusion.com/api/js/ejgrid#members:sortsettings "sortSettings"), you can sort the columns while initializing the grid itself. You need to specify the [`field`](https://help.syncfusion.com/api/js/ejgrid#members:sortsettings-sortedcolumns-field "field") (column) name and [`direction`](https://help.syncfusion.com/api/js/ejgrid#members:sortsettings-sortedcolumns-direction "direction") in the `sortedColumns`.
 
-N> 1. For [`direction`](https://help.syncfusion.com/api/js/ejgrid#members:sortsettings-sortedcolumns-direction "direction") property you can assign either `string` value ("descending") or `enum` value (`ej.sortOrder.Descending`). 
+N> 1. For the [`direction`](https://help.syncfusion.com/api/js/ejgrid#members:sortsettings-sortedcolumns-direction "direction") property you can assign either the `string` value ("descending") or `enum` value (`ej.sortOrder.Descending`). 
 N> 2. You can add multiple columns in the `sortedColumns` for multi column sorting while initializing the grid itself.
 
-The following code example describes the above behavior.
+The following code example describes the previous behavior.
 
 {% highlight html %}
 <div id="Grid"></div>
@@ -62,20 +62,20 @@ $(function () {
 });
 {% endhighlight %}
 
-The following output is displayed as a result of the above code example.
+The following output is displayed as a result of the previous code example.
 
 ![](sorting_images/sorting_img2.png)
 
 
-## Multi-Column Sorting
+## Multi-column sorting
 
-Sort multiple columns in grid by setting [`allowMultiSorting`](https://help.syncfusion.com/api/js/ejgrid#members:allowmultisorting "allowMultiSorting") property as true. The sorting order is displayed in the header while doing multi sorting.
+Sort multiple columns in grid by setting the [`allowMultiSorting`](https://help.syncfusion.com/api/js/ejgrid#members:allowmultisorting "allowMultiSorting") property as true. The sorting order is displayed in the header while doing multi sorting.
 
 You can sort more than one column by pressing "Ctrl key + mouse left click" on the column header. To clear sorting for particular column, press "Shift + mouse left click". 
 
-N> [`allowSorting`](https://help.syncfusion.com/api/js/ejgrid#members:allowsorting "allowSorting") must be true while enabling multi sort.
+N> The [`allowSorting`](https://help.syncfusion.com/api/js/ejgrid#members:allowsorting "allowSorting") must be true while enabling multi sort.
 
-The following code example describes the above behavior.
+The following code example describes the previous behavior.
 
 {% highlight html %}
 <div id="Grid"></div>
@@ -96,7 +96,7 @@ $(function () {
 });
 {% endhighlight %}
 
-The following output is displayed as a result of the above code example.
+The following output is displayed as a result of the previous code example.
 
 ![](sorting_images/sorting_img3.png)
 
@@ -111,7 +111,7 @@ This will tell the "DataManager" to use custom sort function for sorting data.
 
 Please refer to this [link](https://en.wikipedia.org/wiki/Category:Stable_sorts# "link"), to know more information about stable sort.
 
-The following code example describes the above behavior.
+The following code example describes the previous behavior.
 
 {% highlight html %}
 <div id="Grid"></div>
@@ -130,20 +130,20 @@ $(function () {
 });
 {% endhighlight %}
 
-The following output is displayed as a result of the above code example.
+The following output is displayed as a result of the previous previous code example.
 
 ![](sorting_images/sorting_img4.png)
 
 
 ## Touch options
 
-While using Grid in a touch device, you have an option for multi sorting in single tap on the grid header. By tapping on the grid header, it will show the toggle button in small popup with sort icon. Now tap the button to enable multi sorting in single tap.
+While using grid in a touch device, you have an option for multi sorting in single tap on the grid header. By tapping on the grid header, it will show the toggle button in small popup with sort icon. Now, tap the button to enable multi sorting in single tap.
 
-Again if you tap the popup symbol, then the single tap multi sorting will be disabled. 
+If you tap the popup symbol, then the single tap multi sorting will be disabled. 
 
-N> [`allowMultiSorting`](https://help.syncfusion.com/api/js/ejgrid#members:allowmultisorting "allowMultiSorting") and [`allowSorting`](https://help.syncfusion.com/api/js/ejgrid#members:allowsorting "allowSorting") should be `true` then only the popup will be shown.
+N> The [`allowMultiSorting`](https://help.syncfusion.com/api/js/ejgrid#members:allowmultisorting "allowMultiSorting") and [`allowSorting`](https://help.syncfusion.com/api/js/ejgrid#members:allowsorting "allowSorting") should be `true` then only the popup will be shown.
 
-The following code example describes the above behavior.
+The following code example describes the previous behavior.
 
 {% highlight html %}
 <div id="Grid"></div>
@@ -162,7 +162,7 @@ $(function () {
 });
 {% endhighlight %}
 
-The following output is displayed as a result of the above code example.
+The following output is displayed as a result of the previous code example.
 
 ![](sorting_images/sorting_img5.png)
 
