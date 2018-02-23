@@ -130,7 +130,7 @@ $(function () {
 });
 {% endhighlight %}
 
-The following output is displayed as a result of the previous previous code example.
+The following output is displayed as a result of the previous code example.
 
 ![](sorting_images/sorting_img4.png)
 
