@@ -298,11 +298,15 @@ The different types of borders supported in Spreadsheet are,
 
 7) Thick Box Border
 
-8) Thick Bottom Border
+8) Bottom Double Border
 
-9) Top and Bottom Border
+9) Thick Bottom Border
 
-10) Top and Thick Bottom Border
+10) Top and Bottom Border
+
+11) Top and Thick Bottom Border
+
+12) Top and Bottom Double Border
 
 
 You can apply border for a cell or range of cells through following ways,
