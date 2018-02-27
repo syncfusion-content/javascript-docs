@@ -12,7 +12,7 @@ api: /api/js/ejpivotgauge
 
 ## Creating a simple application with pivot gauge and relational data source (client mode)
 
-This section covers the basic information required to populate a simple pivot gauge with [`Relational`](/api/js/ejpivotgauge#members:analysismode) data completely on the [`client-side`](/api/js/ejpivotgauge#members:operationalmode).
+This section covers the basic information required to populate a simple pivot gauge with [`Relational`](/api/js/ejpivotgauge#members:analysisMode) data completely on the [`client-side`](/api/js/ejpivotgauge#members:operationalmode).
 
 ### Scripts and CSS references
 
@@ -193,7 +193,7 @@ The above code will generate a simple pivot gauge as shown in the below image:
 
 ![](Relational-Getting-Started_images/PopulatePivotGaugeWithData.png)
 
-The following table will explain the [`relational`](/api/js/ejpivotgauge#members:analysismode) [`datasource`](/api/js/ejpivotgauge#members:datasource) properties at [`client-side`](/api/js/ejpivotgauge#members:operationalmode) in detail:
+The following table will explain the [`relational`](/api/js/ejpivotgauge#members:analysisMode) [`datasource`](/api/js/ejpivotgauge#members:datasource) properties at [`client-side`](/api/js/ejpivotgauge#members:operationalmode) in detail:
 
 <table>
     <tr>
@@ -385,7 +385,7 @@ The following table will explain the [`relational`](/api/js/ejpivotgauge#members
 
 ## Creating a simple application with pivot gauge and relational data source (server mode)
 
-This section covers the information required to create a simple pivot gauge that is bound to the [`Relational`](/api/js/ejpivotgauge#members:analysismode) data source from the [`server-side`](/api/js/ejpivotgauge#members:operationalmode).
+This section covers the information required to create a simple pivot gauge that is bound to the [`Relational`](/api/js/ejpivotgauge#members:analysisMode) data source from the [`server-side`](/api/js/ejpivotgauge#members:operationalmode).
 
 N>This section is illustrated by creating a simple web application through the Visual Studio IDE, since the pivot gauge in server mode requires .NET dependency. The web application contains an HTML page and a service which will transfer the data to [`server-side`](/api/js/ejpivotgauge#members:operationalmode), process it, and return it to the [`client-side`](/api/js/ejpivotgauge#members:operationalmode) for control rendering. The service utilized for communication can be a WebAPI controller class or a WCF service based on user requirement. Here, both are illustrated for user convenience.
 
@@ -755,7 +755,7 @@ Now, the pivot gauge is rendered with sales amount as shown in the below image:
 
 ### WCF
 
-This section demonstrates the utilization of the WCF service as endpoint binding [`Relational`](/api/js/ejpivotgauge#members:analysismode) data source to a simple pivot gauge. For more details on this topic, [click here](https://help.syncfusion.com/js/pivotgauge/relational-connectivity#wcf-1).
+This section demonstrates the utilization of the WCF service as endpoint binding [`Relational`](/api/js/ejpivotgauge#members:analysisMode) data source to a simple pivot gauge. For more details on this topic, [click here](https://help.syncfusion.com/js/pivotgauge/relational-connectivity#wcf-1).
   
 
 
