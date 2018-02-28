@@ -12,7 +12,7 @@ api: /api/js/ejpivotgrid
 
 ### Refresh the PivotGrid with paging
 
-The [`refreshPagedPivotGrid`](/api/js/ejpivotgrid#methods:refreshPagedPivotGrid) method is used to re-render the **PivotGrid** component with given axis and page number.
+The [`refreshPagedPivotGrid`](/api/js/ejpivotgrid#methods:refreshpagedpivotgrid) method is used to re-render the **PivotGrid** component with given axis and page number.
 
 {% highlight html %}
 
@@ -28,7 +28,7 @@ The [`refreshPagedPivotGrid`](/api/js/ejpivotgrid#methods:refreshPagedPivotGrid)
 
 ### Refresh the PivotGrid without paging
 
-The [`refreshPivotGrid`](/api/js/ejpivotgrid#methods:refreshPivotGrid) method is used to re-render the **PivotGrid** control with modified data input in client-mode.
+The [`refreshPivotGrid`](/api/js/ejpivotgrid#methods:refreshpivotgrid) method is used to re-render the **PivotGrid** control with modified data input in client-mode.
 
 {% highlight html %}
 
@@ -44,7 +44,7 @@ The [`refreshPivotGrid`](/api/js/ejpivotgrid#methods:refreshPivotGrid) method is
 
 ### Refresh the PivotGrid with modified report
 
-The [`refreshControl`](/api/js/ejpivotgrid#methods:refreshControl) method is used to refresh the **PivotGrid** component with the report available at that instant.
+The [`refreshControl`](/api/js/ejpivotgrid#methods:refreshcontrol) method is used to refresh the **PivotGrid** component with the report available at that instant.
 
 {% highlight html %}
 
@@ -77,7 +77,7 @@ The [`calculateCellWidths`](/api/js/ejpivotgrid#methods:calculateCellWidths) met
 
 ### Show/Open the Conditional formatting dialog
 
-The [`openConditionalFormattingDialog`](/api/js/ejpivotgrid#methods:openConditionalFormattingDialog) method is used to create conditional formatting dialog to apply conditional formatting for the **PivotGrid** control.
+The [`openConditionalFormattingDialog`](/api/js/ejpivotgrid#methods:openconditionalformattingdialog) method is used to create conditional formatting dialog to apply conditional formatting for the **PivotGrid** control.
 
 {% highlight html %}
 
@@ -111,7 +111,7 @@ The [`saveReport`](/api/js/ejpivotgrid#methods:saveReport) method is used to sav
 
 ### Render the PivotGrid in Excel Like format
 
-The [`excelLikeLayout`](/api/js/ejpivotgrid#methods:excelLikeLayout) method is used to reconstruct the JSON data that is formed for rendering the **PivotGrid** in the excel-like layout format.
+The [`excelLikeLayout`](/api/js/ejpivotgrid#methods:excellikelayout) method is used to reconstruct the JSON data that is formed for rendering the **PivotGrid** in the excel-like layout format.
 
 {% highlight html %}
 
@@ -127,7 +127,7 @@ The [`excelLikeLayout`](/api/js/ejpivotgrid#methods:excelLikeLayout) method is u
 
 ### Refresh the field caption dynamically
 
-The [`refreshFieldCaption`](/api/js/ejpivotgrid#methods:refreshFieldCaption) method is used to change the caption of the pivot item (name displayed in UI) on-demand for the relational datasource in client-mode.
+The [`refreshFieldCaption`](/api/js/ejpivotgrid#methods:refreshfieldcaption) method is used to change the caption of the pivot item (name displayed in UI) on-demand for the relational datasource in client-mode.
 
 {% highlight html %}
 
@@ -210,7 +210,7 @@ The [`setJSONRecords`](/api/js/ejpivotgrid#methods:setJSONRecords) method is use
 
 ### Invoking event before Pivot Engine population
 
-The [`beforePivotEnginePopulate`](/api/js/ejpivotgrid#events:beforePivotEnginePopulate) event is triggered before the pivot engine starts to populate.
+The [`beforePivotEnginePopulate`](/api/js/ejpivotgrid#events:beforepivotenginepopulate) event is triggered before the pivot engine starts to populate.
 
 {% highlight javascript %}
 
@@ -246,7 +246,7 @@ $("#PivotGrid1").ejPivotGrid({
 
 ### Triggering event before editing the cell in PivotGrid
 
-The [`cellEdit`](/api/js/ejpivotgrid#events:cellEdit) event is triggered before editing the cells.
+The [`cellEdit`](/api/js/ejpivotgrid#events:celledit) event is triggered before editing the cells.
 
 {% highlight javascript %}
 
@@ -264,7 +264,7 @@ $("#PivotGrid1").ejPivotGrid({
 
 ### Invoking event in client-side after service invoke
 
-The [`afterServiceInvoke`](/api/js/ejpivotgrid#events:afterServiceInvoke) event is triggered when it is reached client-side after the AJAX request.
+The [`afterServiceInvoke`](/api/js/ejpivotgrid#events:afterserviceinvoke) event is triggered when it is reached client-side after the AJAX request.
 
 {% highlight javascript %}
 
@@ -282,7 +282,7 @@ $("#PivotGrid1").ejPivotGrid({
 
 ### Invoking event in client-side before service invoke
 
-The [`beforeServiceInvoke`](/api/js/ejpivotgrid#events:beforeServiceInvoke) event is triggered before any AJAX request is passed from the PivotGrid to service methods.
+The [`beforeServiceInvoke`](/api/js/ejpivotgrid#events:beforeserviceinvoke) event is triggered before any AJAX request is passed from the PivotGrid to service methods.
 
 {% highlight javascript %}
 
@@ -300,7 +300,7 @@ $("#PivotGrid1").ejPivotGrid({
 
 ### Triggering event after performing drill operation
 
-The [`drillSuccess`](/api/js/ejpivotgrid#events:drillSuccess) event is triggered after performing drill operation in the PivotGrid.
+The [`drillSuccess`](/api/js/ejpivotgrid#events:drillsuccess) event is triggered after performing drill operation in the PivotGrid.
 
 {% highlight javascript %}
 
@@ -356,7 +356,7 @@ $("#PivotGrid1").ejPivotGrid({
 ## Members
 
 ### Getting Raw items by triggering cell double click event
-Cell Double Click on PivotGrid allows you to get Raw items of cell which is clicked. To enable cell double click event, you can use the [`enableCellDoubleClick`](/api/js/ejpivotgrid#members:enablecelldoubleclick) property. You can get the raw items of the cell through the [`cellDoubleClick`](/api/js/ejpivotgrid#events:cellDoubleClick) event.
+Cell Double Click on PivotGrid allows you to get Raw items of cell which is clicked. To enable cell double click event, you can use the [`enableCellDoubleClick`](/api/js/ejpivotgrid#members:enablecelldoubleclick) property. You can get the raw items of the cell through the [`cellDoubleClick`](/api/js/ejpivotgrid#events:celldoubleclick) event.
 
 {% highlight javascript %}
 
@@ -494,7 +494,7 @@ The following are the available features through sub context menu.
 
 ![](How-To_images/hyperlink.png)
 
-* `Exporting` - Allows you to export PivotGrid in a desired format. You have to mention the export settings through [`beforeExport`](/api/js/ejpivotgridt#events:beforeexport) event.
+* `Exporting` - Allows you to export PivotGrid in a desired format. You have to mention the export settings through [`beforeExport`](/api/js/ejpivotgrid#events:beforeExport) event.
 
 ![](How-To_images/exporting.png)
 
@@ -533,7 +533,7 @@ The [`serviceMethodSettings`](/api/js/ejpivotgrid#members:servicemethodsettings)
 
 | Service Methods | Description |
 |---|---|
-|[drillDown](/api/js/ejpivotgrid#members:servicemethodsettings-initialize)|It fetches the OLAP data required to render the PivotGrid control after drilling it.|
+|[drillDown](/api/js/ejpivotgrid#members:servicemethodsettings-drilldown)|It fetches the OLAP data required to render the PivotGrid control after drilling it.|
 |[Paging](/api/js/ejpivotgrid#members:servicemethodsettings-paging)|It fetches the OLAP data required to render the specific page of PivotGrid with paging enabled.|
 |[removeButton](/api/js/ejpivotgrid#members:servicemethodsettings-removebutton)|It fetches the data required to render the control after removing a button.|
 |[memberExpand](/api/js/ejpivotgrid#members:servicemethodsettings-memberexpand)|It fetches the data to render children nodes of a member in Member Editor Tree.|

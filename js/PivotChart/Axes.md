@@ -94,7 +94,7 @@ The following table describes the result of applying some commonly used label fo
 </table>
 
 ### Label format customization 
-By using the [`labelFormat`](/api/js/ejchart#members:primaryyaxis-labelformat) property of the [`primaryYAxis`](/api/js/ejchart#members:primaryyaxis), you can add the category labels with prefix and/or suffix. 
+By using the [`labelFormat`](/api/js/ejchart#members:primaryyaxis-labelformat) property of the [`primaryYAxis`](/api/js/ejpivotchart#members:primaryyaxis), you can add the category labels with prefix and/or suffix.
 
 {% highlight javascript %}
 
@@ -142,7 +142,7 @@ N> By default, the value of the [`visible`](/api/js/ejchart#members:primaryyaxis
 ![](Chart-Axes_images/AxisVisibility.png)
 
 ### Label customization
-By using the [`font`](/api/js/ejchart#members:primaryxaxis-font) property of the axis, you can customize the font family, color, opacity, size, and font weight of labels.
+By using the [`font`](/api/js/ejchart#members:primaryxaxis-font) property of the [`axis`](/api/js/ejpivotchart#members:primaryxaxis), you can customize the font family, color, opacity, size, and font weight of labels.
 
 {% highlight javascript %}
 
