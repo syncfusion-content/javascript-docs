@@ -13,7 +13,7 @@ api: /api/js/ejpivotgauge
 ## Public methods
 
 ### Refresh the pivot gauge at client mode
-The [`refresh`](../api/ejpivotgauge#methods:refresh) method is used to refresh the pivot gauge at client-side itself.
+The [`refresh`](/api/js/ejpivotgauge#methods:refresh) method is used to refresh the pivot gauge at client-side itself.
 
 {% highlight html %}
 
@@ -28,7 +28,7 @@ The [`refresh`](../api/ejpivotgauge#methods:refresh) method is used to refresh t
 {% endhighlight %}
 
 ### Removing KPI images from pivot gauge
-The [`removeImg`](../api/ejpivotgauge#methods:removeimg) method is used to remove the KPI related images from the pivot gauge when binding the OLAP data source.
+The [`removeImg`](/api/js/ejpivotgauge#methods:removeimg) method is used to remove the KPI related images from the pivot gauge when binding the OLAP data source.
 
 {% highlight html %}
 
