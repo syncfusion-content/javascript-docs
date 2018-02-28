@@ -122,7 +122,7 @@ Summaries with the [`Sum`](https://help.syncfusion.com/js/datamanager/summary#su
 ![](Summary_images/summaryGrid_img2.png)
 
 
-### True and false count 
+### True and False count 
 
 Summaries with the `True` and `False` count aggregate can be defined by using the [`summaryType`](https://help.syncfusion.com/api/js/ejgrid#members:summaryrows-summarycolumns-summarytype "summaryType") and [`summaryColumns`](https://help.syncfusion.com/api/js/ejgrid#members:summaryrows-summarycolumns "summaryColumns") collections. The `True` and `False` count aggregates are used for boolean columns.
 
