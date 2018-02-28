@@ -13,7 +13,7 @@ api: /api/js/ejpivotchart
 ## Public methods
 
 ### Refresh the pivot grid with modified report
-The [`refreshControl`](/api/js/ejpivotchart#methods:refreshControl) method is used to re-render the pivot chart component with specified data source and properties initially.
+The [`refreshControl`](/api/js/ejpivotchart#methods:refreshcontrol) method is used to re-render the pivot chart component with specified data source and properties initially.
 
 {% highlight html %}
 
@@ -28,7 +28,7 @@ The [`refreshControl`](/api/js/ejpivotchart#methods:refreshControl) method is us
 {% endhighlight %}
 
 ### Generate JSON object from OLAP cube
-The [`generateJSON`](/api/js/ejpivotchart#methods:generateJSON) method is used to render the pivot chart component with the pivot engine from the OLAP cube.
+The [`generateJSON`](/api/js/ejpivotchart#methods:generatejson) method is used to render the pivot chart component with the pivot engine from the OLAP cube.
 
 {% highlight html %}
 
@@ -43,7 +43,7 @@ The [`generateJSON`](/api/js/ejpivotchart#methods:generateJSON) method is used t
 {% endhighlight %}
 
 ### Refresh the pivot chart with paging
-The [`refreshPagedPivotChart`](/api/js/ejpivotchart#methods:refreshPagedPivotChart) method is used to render the pivot chart control with the given axis and the page number.
+The [`refreshPagedPivotChart`](/api/js/ejpivotchart#methods:refreshpagedpivotchart) method is used to render the pivot chart control with the given axis and the page number.
 
 {% highlight html %}
 
