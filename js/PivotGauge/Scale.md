@@ -32,7 +32,7 @@ The scale can be added within the pivot gauge widget as an array.
 
 ### Pointer cap
 
-The pointer cap is a circular shape element that is located at the center of the pivot gauge. It can be customized with the `pointerCap` property in the [`scales`](/api/js/ejcirculargauge#members:scales) option. Following are the properties that are used to customize the appearance of the pointer cap:
+The pointer cap is a circular shape element that is located at the center of the pivot gauge. It can be customized with the `pointerCap` property in the [`scales`](/api/js/ejpivotgauge#members:scales) option. Following are the properties that are used to customize the appearance of the pointer cap:
 
 * **radius** – sets the radius of the pointer cap.
 * **borderColor** – sets the color of the pointer cap border.

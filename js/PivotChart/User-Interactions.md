@@ -144,7 +144,7 @@ $(function()
 
 There are two ways to zoom the chart:
 
-* When [`zooming.enable`](/api/js/ejchart#members:zooming-enable) is set to true, you can zoom the chart by using the rubber band selection.
+* When [`zooming.enable`](/api/js/ejpivotchart#members:zooming-enable) is set to true, you can zoom the chart by using the rubber band selection.
 * When the [`zooming.enableMouseWheel`](/api/js/ejchart#members:zooming-enablemousewheel) is set to true, you can zoom the chart by scrolling the mouse wheel.
 
 {% highlight javascript %}

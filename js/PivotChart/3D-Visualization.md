@@ -20,7 +20,7 @@ The pivot chart control allows you to view the data in a 3D view. The following 
 
 ## 3D column chart
 
-The 3D column chart is rendered by specifying the chart type as **“Column”** in the **“type”** enumeration property of **“commonSeriesOptions”** and setting the [`enable3D`](/api/js/ejchart#members:enable3d) property to **“true”.**
+The 3D column chart is rendered by specifying the chart type as **“Column”** in the **“type”** enumeration property of [`commonSeriesOptions`](/api/js/ejpivotchart#members:commonseriesoptions) and setting the [`enable3D`](/api/js/ejpivotchart#members:enable3d) property to **“true”.**
 
 {% highlight javascript %}
 
@@ -42,7 +42,7 @@ The 3D column chart is rendered by specifying the chart type as **“Column”**
 
 ## 3D bar chart
 
-The 3D bar chart is rendered by specifying the chart type as **“Bar”** in the **“type”** enumeration property of **“commonSeriesOptions”** and setting the  [`enable3D`](/api/js/ejchart#members:enable3d) property to **“true”.**
+The 3D bar chart is rendered by specifying the chart type as **“Bar”** in the **“type”** enumeration property of [`commonSeriesOptions`](/api/js/ejpivotchart#members:commonseriesoptions) and setting the  [`enable3D`](/api/js/ejpivotchart#members:enable3d) property to **“true”.**
 
 {% highlight javascript %}
 
@@ -63,7 +63,7 @@ The 3D bar chart is rendered by specifying the chart type as **“Bar”** in th
 ![](3D-Visualization_images/3DBarChart.png)
 
 ## 3D stacking bar chart
-The 3D stacking bar chart is rendered by specifying the chart type as **“Stacking Bar”** in the **“type”** enumeration property of **“commonSeriesOptions”** and setting the [`enable3D`](/api/js/ejchart#members:enable3d) property to **“true”.**
+The 3D stacking bar chart is rendered by specifying the chart type as **“Stacking Bar”** in the **“type”** enumeration property of [`commonSeriesOptions`](/api/js/ejpivotchart#members:commonseriesoptions) and setting the [`enable3D`](/api/js/ejpivotchart#members:enable3d) property to **“true”.**
 
 {% highlight javascript %}
 
@@ -84,7 +84,7 @@ The 3D stacking bar chart is rendered by specifying the chart type as **“Stack
 ![](3D-Visualization_images/3DStackingBarChart.png)
 
 ## 3D stacking column chart
-The 3D stacking column chart is rendered by specifying the chart type as **“Stacking Column”** in the **“type”** enumeration property of **“commonSeriesOptions”** and setting the [`enable3D`](/api/js/ejchart#members:enable3d) property to **“true”.**
+The 3D stacking column chart is rendered by specifying the chart type as **“Stacking Column”** in the **“type”** enumeration property of [`commonSeriesOptions`](/api/js/ejpivotchart#members:commonseriesoptions) and setting the [`enable3D`](/api/js/ejpivotchart#members:enable3d) property to **“true”.**
 
 {% highlight javascript %}
 
@@ -105,7 +105,7 @@ The 3D stacking column chart is rendered by specifying the chart type as **“St
 ![](3D-Visualization_images/3DStackingColumnChart.png)
 
 ## 3D pie chart
-Th 3D pie chart is rendered by specifying the chart type as **"Pie"** in the **“type”** enumeration property of **“commonSeriesOptions”** and setting the [`enable3D`](/api/js/ejchart#members:enable3d) property to **“true”.**
+Th 3D pie chart is rendered by specifying the chart type as **"Pie"** in the **“type”** enumeration property of [`commonSeriesOptions`](/api/js/ejpivotchart#members:commonseriesoptions) and setting the [`enable3D`](/api/js/ejpivotchart#members:enable3d) property to **“true”.**
 
 {% highlight javascript %}
 
@@ -126,7 +126,7 @@ Th 3D pie chart is rendered by specifying the chart type as **"Pie"** in the **�
 ![](3D-Visualization_images/3DPieChart.png)
 
 ## Rotating 3D chart
-You can rotate the 3D chart towards left or right by setting an appropriate angle value to the [`rotation`](/api/js/ejchart#members:rotation) property. The direction of the chart display depends on the positive or negative angle value.
+You can rotate the 3D chart towards left or right by setting an appropriate angle value to the [`rotation`](/api/js/ejpivotchart#members:rotation) property. The direction of the chart display depends on the positive or negative angle value.
 
 {% highlight javascript %}
 

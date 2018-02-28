@@ -12,7 +12,7 @@ api: /api/js/ejpivotchart
 
 ## Legend visibility
 
-You can enable or disable the legend by using the [`visible`](/api/js/ejchart#members:legend) property in the [`legend`](/api/js/ejchart#members:legend) object. By default, the legend is enabled in the pivot chart.
+You can enable or disable the legend by using the [`visible`](/api/js/ejpivotchart#members:legend) property in the [`legend`](/api/js/ejpivotchart#members:legend) object. By default, the legend is enabled in the pivot chart.
 
 N> By default, the legend is visible in the pivot chart.
 
