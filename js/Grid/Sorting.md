@@ -167,3 +167,59 @@ The following output is displayed as a result of the previous code example.
 ![](sorting_images/sorting_img5.png)
 
 
+### Perform Sorting by External Action:-
+
+To control the grid Sort actions externally use the following methods,
+
+1.[`sortColumn`](https://help.syncfusion.com/api/js/ejgrid#methods:sortcolumn "sortColumn")
+
+2.[`removeSortedColumn`](https://help.syncfusion.com/api/js/ejgrid#methods:removesortedcolumns "removeSortedColumns")
+
+3.[`clearSorting`](https://help.syncfusion.com/api/js/ejgrid#methods:clearsorting "clearSorting")
+
+The following code example describes the above behavior.
+
+{% highlight html %}
+ <button id="doSorting" style="width: 100px">SortColumn</button>
+ <button id="clearSort" style="width: 100px">ClearSorting</button>
+ <button id="RemoveSort" style="width: 100px">RemoveSortedColumns</button>
+ <div id="Grid"></div>
+{% endhighlight %}
+
+{% highlight javascript %}
+$(function () {
+                $("#Grid").ejGrid({
+                    // the datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js' 
+                    dataSource: window.gridData,
+                    allowPaging: true,
+                    allowRowDragAndDrop: true,
+                    selectionType: "multiple",
+                    columns: [
+                                  { field: "OrderID", headerText: "Order ID", isPrimaryKey: true, textAlign: ej.TextAlign.Right, width: 80 },
+                                  { field: "CustomerID", headerText: "Customer ID", width: 90 },
+                                  { field: "Freight", headerText: "Freight", textAlign: ej.TextAlign.Right, width: 75, format: "{0:C}" },
+                                  { field: "ShipCountry", headerText: "Ship Country", width: 110 }
+                    ],
+                });
+                 $("#doSorting,#clearSort").ejButton({ "click": "Sorting", width: "100" });
+	         $("#RemoveSort").ejButton({ "click": "RemoveSorting", width: "160" });           
+        });
+        function Sorting(args){
+          var gridObj = $("#Grid").ejGrid("instance");
+             if (this.element.attr("id") == "doSorting") {
+		 gridObj.sortColumn("OrderID", "ascending");
+              }
+             else 
+                 gridObj.clearSorting();
+               }
+        function RemoveSorting(args){
+           var gridObj = $("#Grid").ejGrid("instance");
+              gridObj.removeSortedColumns("OrderID");  
+         }
+{% endhighlight %}
+
+N> You can get the field and sorted direction of the column by using [`getsortColumnByField`](https://help.syncfusion.com/api/js/ejgrid#methods:getsortcolumnbyfield "getSortColumnByField") method.
+
+The following output is displayed as a result of the previous code example.
+
+![](sorting_images/sorting_img6.png)

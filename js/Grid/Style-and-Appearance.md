@@ -11,7 +11,7 @@ api: /api/js/ejgrid
 
 ## List of classes and its purposes
 
-To modify Grid appearance, you need to override the default CSS of Grid. Please find the list of CSS classes and its corresponding section in Grid. Also, you have an option to create your own custom theme for all JavaScript controls using our [Theme Studio](http://js.syncfusion.com/themestudio/# "Theme Studio").
+To modify the Grid appearance, you need to override the default CSS of grid. Please find the list of CSS classes and its corresponding section in grid. Also, you have an option to create your own custom theme for all the JavaScript controls using our [Theme Studio](http://js.syncfusion.com/themestudio/# "Theme Studio").
 
   <table>
         <tr>
@@ -33,7 +33,7 @@ To modify Grid appearance, you need to override the default CSS of Grid. Please 
                 e-grid 
             </td>
             <td rowspan="2">
-                This classes are in this root element (div) of grid control. 
+                This classes are in this root element (div) of the grid control. 
             </td>
         </tr>
         <tr>
@@ -51,7 +51,7 @@ To modify Grid appearance, you need to override the default CSS of Grid. Please 
                 e-gridheader
             </td>
             <td>
-                This is class is added in the root element of header element. In this class, You can override thin line between header and content of grid.
+                This class is added in the root element of header element. In this class, You can override thin line between header and content of the grid.
             </td>
         </tr>
         <tr>
@@ -60,7 +60,7 @@ To modify Grid appearance, you need to override the default CSS of Grid. Please 
                 e-table
             </td>
             <td>
-                This class is added at 'table' of grid header. This CSS class makes table width as 100 %.
+                This class is added at 'table' of the grid header. This CSS class makes table width as 100 %.
             </td>
         </tr>
         <tr>
@@ -69,7 +69,7 @@ To modify Grid appearance, you need to override the default CSS of Grid. Please 
                 e-columnheader
             </td>
             <td>
-                This class is added at 'tr' of grid header. 
+                This class is added at 'tr' of the grid header. 
             </td>
         </tr>
         <tr>
@@ -78,7 +78,7 @@ To modify Grid appearance, you need to override the default CSS of Grid. Please 
                 e-headercell
             </td>
             <td>
-                This class is added in 'th' element of grid header. You can override background color of header and border color
+                This class is added in 'th' element of grid header. You can override background color of header and border color.
             </td>
         </tr>
         <tr>
@@ -87,7 +87,7 @@ To modify Grid appearance, you need to override the default CSS of Grid. Please 
                 e-headercelldiv
             </td>
             <td>
-                This class is add in div which present 'th' element in header. You recommend you to use e-headercelldiv to override skeleton of header.
+                This class is add in div which present 'th' element in the header. we recommend you to use the e-headercelldiv to override skeleton of header.
             </td>
         </tr>
         <tr>
@@ -98,7 +98,7 @@ To modify Grid appearance, you need to override the default CSS of Grid. Please 
                 e-gridcontent
             </td>
             <td>
-                This class is added at root of body content. This is to override background color of body.
+                This class is added at root of body content. This is to override background color of the body.
             </td>
         </tr>
         <tr>
@@ -116,7 +116,7 @@ To modify Grid appearance, you need to override the default CSS of Grid. Please 
                 e-alt_row
             </td>
             <td>
-                This class is added to alternate rows of grid. This is to override alternate row color of grid.
+                This class is added to alternate rows of grid. This is to override alternate row color of the grid.
             </td>
         </tr>
         <tr>
@@ -125,7 +125,7 @@ To modify Grid appearance, you need to override the default CSS of Grid. Please 
                 e-rowcell
             </td>
             <td>
-                This class is added to all cells in grid. This is to override cells appearance and styling.
+                This class is added to all cells in the grid. This is to override cells appearance and styling.
             </td>
         </tr>
         <tr>
@@ -134,7 +134,7 @@ To modify Grid appearance, you need to override the default CSS of Grid. Please 
                 e-groupcaption
             </td>
             <td>
-                This class is added to 'td' of group caption which is to change background color of caption cell.
+                This class is added to the 'td' of group caption which is to change the background color of caption cell.
             </td>
         </tr>
         <tr>
@@ -143,7 +143,7 @@ To modify Grid appearance, you need to override the default CSS of Grid. Please 
                 e-selectionbackground
             </td>
             <td>
-                This class is added to rowcell's of grid. this is override selection.
+                This class is added to rowcell's of the grid. This is override selection.
             </td>
         </tr>
         <tr>
@@ -152,7 +152,7 @@ To modify Grid appearance, you need to override the default CSS of Grid. Please 
                 e-hover 
             </td>
             <td>
-                This class adds to row of grid while hover grid rows.
+                This class adds to row of grid, while hovering the grid rows.
             </td>
         </tr>
         <tr>
@@ -163,7 +163,7 @@ To modify Grid appearance, you need to override the default CSS of Grid. Please 
                 e-pager
             </td>
             <td>
-                This class is added to root element of pager. This to change appearance of background color and color of font.
+                This class is added to root element of the pager. This to change appearance of the background color and color of font.
             </td>
         </tr>
         <tr>
@@ -172,7 +172,7 @@ To modify Grid appearance, you need to override the default CSS of Grid. Please 
                 e-pagercontainer
             </td>
             <td>
-                This class is added to numeric items of pager.
+                This class is added to numeric items of the pager.
             </td>
         </tr>
         <tr>
@@ -181,7 +181,7 @@ To modify Grid appearance, you need to override the default CSS of Grid. Please 
                 e-parentmsgbar
             </td>
             <td>
-                This class is added to pager info of pager.
+                This class is added to pager info of the pager.
             </td>
         </tr>
         <tr>
@@ -192,7 +192,7 @@ To modify Grid appearance, you need to override the default CSS of Grid. Please 
                 e-gridfooter
             </td>
             <td>
-                This class is added to root of summary div.
+                This class is added to root of the summary div.
             </td>
         </tr>
         <tr>
@@ -224,9 +224,9 @@ To modify Grid appearance, you need to override the default CSS of Grid. Please 
     </table>
 
 
-## Toolbar Customization
+## Toolbar customization
 
 To customize toolbar, you need to use the toolbar default CSS class to override icon in toolbar. 
 
-{% seealso %} [customize toolbar ](http://www.syncfusion.com/kb/5076/how-to-change-custom-icons-for-default-edit-toolbar-items "customize toolbar") {% endseealso %}
+{% seealso %} The [customize toolbar ](http://www.syncfusion.com/kb/5076/how-to-change-custom-icons-for-default-edit-toolbar-items "customize toolbar") {% endseealso %}
 

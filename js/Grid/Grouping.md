@@ -284,3 +284,63 @@ The following output is displayed as a result of the above code example.
 ![](Grouping_images/Grouping_img10.png)
 
 
+### Perform Grouping by External Action:-
+
+To control the grid Group actions externally use the following methods,
+
+1.[`groupColumn`](https://help.syncfusion.com/api/js/ejgrid#methods:groupcolumn "groupColumn")
+
+2.[`ungroupColumn`](https://help.syncfusion.com/api/js/ejgrid#methods:ungroupcolumn "removeSortedColumns")
+
+3.[`expandGroupDropArea`](https://help.syncfusion.com/api/js/ejgrid#methods:expandgroupdroparea "expandGroupDropArea")
+
+3.[`expandGroupDropArea`](https://help.syncfusion.com/api/js/ejgrid#methods:expandgroupdroparea "expandGroupDropArea")
+
+The following code example describes the above behavior.
+
+{% highlight html %}
+ <button id="groupColumn" style="width: 100px">GroupColumn</button>
+ <button id="ungroupColumn" style="width: 100px">unGroupColumn</button>
+ <button id="ExpandArea" style="width: 100px">ExpandGroupDropArea</button>
+ <button id="collapseArea" style="width: 100px">CollapseGroupDropArea</button>
+ <div id="Grid"></div>
+{% endhighlight %}
+
+{% highlight javascript %}
+$(function () {
+                $("#Grid").ejGrid({
+                    // the datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js' 
+                    dataSource: window.gridData,
+                    allowPaging: true,
+                    allowGrouping:true,
+                    columns: [
+                                  { field: "OrderID", headerText: "Order ID", isPrimaryKey: true, textAlign: ej.TextAlign.Right, width: 80 },
+                                  { field: "CustomerID", headerText: "Customer ID", width: 90 },
+                                  { field: "Freight", headerText: "Freight", textAlign: ej.TextAlign.Right, width: 75, format: "{0:C}" },
+                                  { field: "ShipCountry", headerText: "Ship Country", width: 110 }
+                    ],
+                });
+                 $("#groupColumn,#ungroupColumn").ejButton({ "click": "groupColumn", width: "100" });
+	               $("#expandArea,#collapseArea").ejButton({ "click": "DropArea", width: "160" });
+        });
+            function groupColumn(args){
+               var gridObj = $("#Grid").ejGrid("instance");
+		              if (this.element.attr("id") == "groupColumn") {
+		                 gridObj.groupColumn("OrderID");
+                   }
+                  else 
+                     gridObj.ungroupColumn("OrderID"); 
+              }
+            function DropArea(args){
+		          var gridObj = $("#Grid").ejGrid("instance");
+		             if (this.element.attr("id") == "expandArea") {
+		               gridObj.expandGroupDropArea(); 
+                   }
+		            else
+		               gridObj.collapseGroupDropArea(); 
+            }
+{% endhighlight %}
+
+The following output is displayed as a result of the previous code example.
+
+![](Grouping_images/Grouping_img11.png)
