@@ -10,7 +10,7 @@ api: /api/js/ejpivotgrid
 
 # Frozen header
 
-Allows you to freeze the header of the grid. so, it will be always visible while scrolling the content with large number of rows or columns providing a precise view by this [`enableFrozenHeaders`](../api/ejpivotgrid#members:frozenheadersettings-enablefrozenheaders) property under the [`frozenHeaderSettings`](../api/ejpivotgrid#members:frozenheadersettings).
+Allows you to freeze the header of the grid. so, it will be always visible while scrolling the content with large number of rows or columns providing a precise view by this [`enableFrozenHeaders`](/api/js/ejpivotgrid#members:frozenheadersettings-enablefrozenheaders) property under the [`frozenHeaderSettings`](/api/js/ejpivotgrid#members:frozenheadersettings).
 
 {% highlight html %}
 
@@ -29,7 +29,7 @@ Allows you to freeze the header of the grid. so, it will be always visible while
 
 ![](FrozenHeader_images/row_col_freeze.png)
 
-You can also freeze the row/column headers individually by setting [`enableFrozenRowHeaders`](../api/ejpivotgrid#members:frozenheadersettings-enablefrozenrowheaders)/[`enableFrozenColumnHeaders`](../api/ejpivotgrid#members:frozenheadersettings-enableFrozenColumnHeaders) properties under the [`frozenHeaderSettings`](../api/ejpivotgrid#members:frozenheadersettings).
+You can also freeze the row/column headers individually by setting [`enableFrozenRowHeaders`](/api/js/ejpivotgrid#members:frozenheadersettings-enablefrozenrowheaders)/[`enableFrozenColumnHeaders`](/api/js/ejpivotgrid#members:frozenheadersettings-enableFrozenColumnHeaders) properties under the [`frozenHeaderSettings`](/api/js/ejpivotgrid#members:frozenheadersettings).
 
 {% highlight html %}
 

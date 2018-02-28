@@ -43,7 +43,7 @@ The [`removeImg`](../api/ejpivotgauge#methods:removeimg) method is used to remov
 {% endhighlight %}
 
 ### Getting JSON data to render with OLAP data source
-The [`getJSONData`](../api/ejpivotgauge#methods:getJSONData) method is used to return the JSON records required to render the pivot gauge when performing any action with the OLAP data source.
+The [`getJSONData`](/api/js/ejpivotgauge#methods:getjsondata) method is used to return the JSON records required to render the pivot gauge when performing any action with the OLAP data source.
 
 {% highlight html %}
 
@@ -59,7 +59,7 @@ The [`getJSONData`](../api/ejpivotgauge#methods:getJSONData) method is used to r
 {% endhighlight %}
 
 ### Getting JSON records from control object
-The [`getJSONRecords`](../api/ejpivotgauge#methods:getJSONRecords) method is used to return the JSON records that is formed to render the control.
+The [`getJSONRecords`](/api/js/ejpivotgauge#methods:getjsonrecords) method is used to return the JSON records that is formed to render the control.
 
 {% highlight html %}
 
@@ -74,7 +74,7 @@ The [`getJSONRecords`](../api/ejpivotgauge#methods:getJSONRecords) method is use
 {% endhighlight %}
 
 ### Setting JSON records to control object
-The [`setJSONRecords`](../api/ejpivotgauge#methods:setJSONRecords) method is used to set the JSON records to render the control.
+The [`setJSONRecords`](/api/js/ejpivotgauge#methods:setjsonrecords) method is used to set the JSON records to render the control.
 
 {% highlight html %}
 
@@ -104,7 +104,7 @@ The [`destroy`](../api/ejpivotgauge#methods:destroy) method is used to destroy t
 {% endhighlight %}
 
 ### Explicit asynchronous invoke
-The [`doAjaxPost`](../api/ejpivotgauge#methods:doajaxpost) method is used to perform an asynchronous HTTP (AJAX) request.
+The [`doAjaxPost`](/api/js/ejpivottreemap#methods:doajaxpost) method is used to perform an asynchronous HTTP (AJAX) request.
 
 {% highlight html %}
 
@@ -122,7 +122,7 @@ The [`doAjaxPost`](../api/ejpivotgauge#methods:doajaxpost) method is used to per
 ## Events
 
 ### Triggering event before the pivot gauge loaded
-The [`load`](../api/ejpivotgauge#events:load) event is triggered when the pivot gauge is started loading at client-side.
+The [`load`](/api/js/ejpivotgauge#events:load) event is triggered when the pivot gauge is started loading at client-side.
 
 {% highlight html %}
 
@@ -142,7 +142,7 @@ The [`load`](../api/ejpivotgauge#events:load) event is triggered when the pivot 
 {% endhighlight %}
 
 ### Invoking event before pivot engine population
-The [`beforePivotEnginePopulate`](../api/ejpivotgauge#events:beforepivotenginepopulate) event is triggered before populating the pivot engine when operating in client mode.
+The [`beforePivotEnginePopulate`](/api/js/ejpivotgauge#events:beforepivotenginepopulate) event is triggered before populating the pivot engine when operating in client mode.
 
 {% highlight html %}
 
@@ -160,7 +160,7 @@ The [`beforePivotEnginePopulate`](../api/ejpivotgauge#events:beforepivotenginepo
 {% endhighlight %}
 
 ### Invoking event in client-side after service invoke
-The [`afterServiceInvoke`](../api/ejpivotgauge#events:afterserviceinvoke) event is triggered when it is reached the client-side after any AJAX request.
+The [`afterServiceInvoke`](/api/js/ejpivotgauge#events:afterserviceinvoke) event is triggered when it is reached the client-side after any AJAX request.
 
 {% highlight html %}
 
@@ -178,7 +178,7 @@ The [`afterServiceInvoke`](../api/ejpivotgauge#events:afterserviceinvoke) event 
 {% endhighlight %}
 
 ### Invoking event in client-side before service invoke
-The [`beforeServiceInvoke`](../api/ejpivotgauge#events:beforeserviceinvoke) event is triggered before any AJAX request is passed from the pivot gauge to service methods.
+The [`beforeServiceInvoke`](/api/js/ejpivotgauge#events:beforeserviceinvoke) event is triggered before any AJAX request is passed from the pivot gauge to service methods.
 
 {% highlight html %}
 
@@ -199,7 +199,7 @@ The [`beforeServiceInvoke`](../api/ejpivotgauge#events:beforeserviceinvoke) even
 ## Members
 
 ### Showing header label in pivot gauge
-You can show/hide the header label in the pivot gauge by the [`showHeaderLabel`](../api/ejpivotgauge#members:showheaderlabel) property.
+You can show/hide the header label in the pivot gauge by the [`showHeaderLabel`](/api/js/ejpivotgauge#members:showheaderlabel) property.
 
 {% highlight html %}
 

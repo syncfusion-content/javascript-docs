@@ -13,7 +13,7 @@ api: /api/js/ejpivotchart
 ## Public methods
 
 ### Refresh the pivot grid with modified report
-The [`refreshControl`](../api/ejpivotchart#methods:refreshControl) method is used to re-render the pivot chart component with specified data source and properties initially.
+The [`refreshControl`](/api/js/ejpivotchart#methods:refreshControl) method is used to re-render the pivot chart component with specified data source and properties initially.
 
 {% highlight html %}
 
@@ -28,7 +28,7 @@ The [`refreshControl`](../api/ejpivotchart#methods:refreshControl) method is use
 {% endhighlight %}
 
 ### Generate JSON object from OLAP cube
-The [`generateJSON`](../api/ejpivotchart#methods:generateJSON) method is used to render the pivot chart component with the pivot engine from the OLAP cube.
+The [`generateJSON`](/api/js/ejpivotchart#methods:generateJSON) method is used to render the pivot chart component with the pivot engine from the OLAP cube.
 
 {% highlight html %}
 
@@ -43,7 +43,7 @@ The [`generateJSON`](../api/ejpivotchart#methods:generateJSON) method is used to
 {% endhighlight %}
 
 ### Refresh the pivot chart with paging
-The [`refreshPagedPivotChart`](../api/ejpivotchart#methods:refreshPagedPivotChart) method is used to render the pivot chart control with the given axis and the page number.
+The [`refreshPagedPivotChart`](/api/js/ejpivotchart#methods:refreshPagedPivotChart) method is used to render the pivot chart control with the given axis and the page number.
 
 {% highlight html %}
 
@@ -58,7 +58,7 @@ The [`refreshPagedPivotChart`](../api/ejpivotchart#methods:refreshPagedPivotChar
 {% endhighlight %}
 
 ### Explicit asynchronous invoke
-The [`doAjaxPost`](../api/ejpivotchart#methods:doajaxpost) method is used to post an asynchronous HTTP (AJAX) request.
+The [`doAjaxPost`](/api/js/ejpivotchart#methods:doajaxpost) method is used to post an asynchronous HTTP (AJAX) request.
 
 {% highlight html %}
 
@@ -73,7 +73,7 @@ The [`doAjaxPost`](../api/ejpivotchart#methods:doajaxpost) method is used to pos
 {% endhighlight %}
 
 ### Destroying the object of pivot chart
-The [`destroy`](../api/ejpivotchart#methods:destroy) method is used to destroy the pivot chart widget associated events that are bound using "this._on" and bring the control to pre-init state.
+The [`destroy`](/api/js/ejpivotchart#methods:destroy) method is used to destroy the pivot chart widget associated events that are bound using "this._on" and bring the control to pre-init state.
 
 {% highlight html %}
 
@@ -88,7 +88,7 @@ The [`destroy`](../api/ejpivotchart#methods:destroy) method is used to destroy t
 {% endhighlight %}
 
 ### Getting JSON records from control object
-The [`getJSONRecords`](../api/ejpivotchart#methods:getjsonrecords) method is used to return the JSON records that are formed to render the pivot chart control.
+The [`getJSONRecords`](/api/js/ejpivotchart#methods:getjsonrecords) method is used to return the JSON records that are formed to render the pivot chart control.
 
 {% highlight html %}
 
@@ -103,7 +103,7 @@ The [`getJSONRecords`](../api/ejpivotchart#methods:getjsonrecords) method is use
 {% endhighlight %}
 
 ### Setting JSON records to control object
-The [`setJSONRecords`](../api/ejpivotchart#methods:setjsonrecords) method is used to set the JSON records to render the pivot chart control.
+The [`setJSONRecords`](/api/js/ejpivotchart#methods:setjsonrecords) method is used to set the JSON records to render the pivot chart control.
 
 {% highlight html %}
 
@@ -121,7 +121,7 @@ The [`setJSONRecords`](../api/ejpivotchart#methods:setjsonrecords) method is use
 ## Events
 
 ### Invoking event in client-side after service invoke
-The [`afterServiceInvoke`](../api/ejpivotchart#events:afterserviceinvoke) event is triggered when it is reached the client-side after any AJAX request.
+The [`afterServiceInvoke`](/api/js/ejpivotchart#events:afterserviceinvoke) event is triggered when it is reached the client-side after any AJAX request.
 
 {% highlight javascript %}
 
@@ -138,7 +138,7 @@ $("#PivotChart1").ejPivotChart({
 {% endhighlight %}
 
 ### Invoking event in client-side before service invoke
-The [`beforeServiceInvoke`](../api/ejpivotchart#events:beforeserviceinvoke) event is triggered before any AJAX request is passed from the pivot chart to service methods.
+The [`beforeServiceInvoke`](/api/js/ejpivotchart#events:beforeserviceinvoke) event is triggered before any AJAX request is passed from the pivot chart to service methods.
 
 {% highlight javascript %}
 
@@ -155,7 +155,7 @@ $("#PivotChart1").ejPivotChart({
 {% endhighlight %}
 
 ### Triggering event after performing drill operation
-The [`drillSuccess`](../api/ejpivotchart#events:drillsuccess) event is triggered when performing the drill up/down operation in the pivot chart control.
+The [`drillSuccess`](/api/js/ejpivotchart#events:drillsuccess) event is triggered when performing the drill up/down operation in the pivot chart control.
 
 {% highlight javascript %}
 
@@ -172,7 +172,7 @@ $("#PivotChart1").ejPivotChart({
 {% endhighlight %}
 
 ### Triggering event before exporting
-The [`beforeExport`](../api/ejpivotchart#events:beforeexport) event is triggered before performing the export operation in the the pivot chart.
+The [`beforeExport`](/api/js/ejpivotchart#events:beforeexport) event is triggered before performing the export operation in the the pivot chart.
 {% highlight javascript %}
 
 $("#PivotChart1").ejPivotChart({
@@ -188,7 +188,7 @@ $("#PivotChart1").ejPivotChart({
 {% endhighlight %}
 
 ### Triggering event before the pivot chart loaded
-The [`load`](../api/ejpivotchart#events:load) event is triggered when the pivot chart is started to render.
+The [`load`](/api/js/ejpivotchart#events:load) event is triggered when the pivot chart is started to render.
 {% highlight javascript %}
 
 $("#PivotChart1").ejPivotChart({
@@ -244,7 +244,7 @@ The following are the available features in the context menu:
 
 ![](How-To_images/3DCharts.png)
 
-* `Exporting`: You can export the chart in different formats given in the following image. You have to mention the export settings through the[`beforeExport`](../api/ejpivotchart#events:beforeexport) event.
+* `Exporting`: You can export the chart in different formats given in the following image. You have to mention the export settings through the[`beforeExport`](../api/js/ejpivotchart#events:beforeexport) event.
 
 ![](How-To_images/exporting.png)
 
@@ -267,6 +267,7 @@ The [`serviceMethodSettings`](/api/js/ejpivotchart#members:servicemethodsettings
 |[initialize](/api/js/ejpivotchart#members:servicemethodsettings-initialize)|It fetches the data required to initialize the control.|
 |[drillDown](/api/js/ejpivotchart#members:servicemethodsettings-drilldown)|It allows the drilling up/down action in the pivot chart.|
 |[paging](/api/js/ejpivotchart#members:servicemethodsettings-paging)|It fetches the data while navigating between pages in the pivot chart data.|
+|[exportPivotChart](/api/js/ejpivotchart#members:servicemethodsettings-exportpivotchart)|It exports the pivot chart control at the instant to the specified format.|
 
 
 

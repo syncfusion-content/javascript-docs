@@ -12,7 +12,7 @@ api: /api/js/ejpivotgauge
 
 ## Creating a simple application with pivot gauge and OLAP data sources (client mode)
 
-This section covers the information required to populate a simple pivot gauge with the [`OLAP`](/api/js/ejpivotgauge#members:analysismode) data completely on the [`client-side`](/api/js/ejpivotgauge#members:operationalmode).
+This section covers the information required to populate a simple pivot gauge with the [`OLAP`](/api/js/ejpivotgauge#members:analysisMode) data completely on the [`client-side`](/api/js/ejpivotgauge#members:operationalmode).
 
 ### Scripts and CSS references
 
@@ -51,7 +51,7 @@ Place a "div" tag in the HTML page which acts as a container for the pivot gauge
 
 ### Populate pivot gauge with data source
 
-Initialize the [`OLAP`](/api/js/ejpivotgauge#members:analysismode) data source for the pivot gauge widget by using the **dataSource** property.
+Initialize the [`OLAP`](/api/js/ejpivotgauge#members:analysisMode) data source for the pivot gauge widget by using the **dataSource** property.
 
 {% highlight html %}
 
@@ -179,7 +179,7 @@ The above code will generate a series of gauges for all countries as shown below
 
 ![](OLAP-Getting-Started_images/ClientMode.png)
 
-The following table will explain the [`OLAP`](/api/js/ejpivotgauge#members:analysismode) [`datasource`](/api/js/ejpivotgauge#members:datasource) properties at [`client-side`](/api/js/ejpivotgauge#members:operationalmode) in detail:
+The following table will explain the [`OLAP`](/api/js/ejpivotgauge#members:analysisMode) [`datasource`](/api/js/ejpivotgauge#members:datasource) properties at [`client-side`](/api/js/ejpivotgauge#members:operationalmode) in detail:
 
 <table>
     <tr>
@@ -323,7 +323,7 @@ The following table will explain the [`OLAP`](/api/js/ejpivotgauge#members:analy
 
 ## Creating a simple application with pivot gauge and OLAP data source (server mode)
 
-This section covers the information required to create a simple pivot gauge that is bound to the [`OLAP`](/api/js/ejpivotgauge#members:analysismode) data source from the [`server-side`](/api/js/ejpivotgauge#members:operationalmode).
+This section covers the information required to create a simple pivot gauge that is bound to the [`OLAP`](/api/js/ejpivotgauge#members:analysisMode) data source from the [`server-side`](/api/js/ejpivotgauge#members:operationalmode).
 
 N> This section is illustrated by creating a simple web application through the Visual Studio IDE since the pivot gauge in the server mode requires .NET dependency. The web application contain an HTML page and a service that will transfer the data to the [`server-side`](/api/js/ejpivotgauge#members:operationalmode), process it, and return it to the [`client-side`](/api/js/ejpivotgauge#members:operationalmode) for control rendering. The service utilized for communication can be WCF or WebAPI based on user requirement. Here, both are illustrated for user convenience.
 
@@ -617,7 +617,7 @@ Now, the pivot gauge will be rendered with the provided data as shown below:
 ![](Olap-Getting-Started_images/ServerMode.png)
 
 ### WCF
-This section demonstrates the utilization of the WCF service as endpoint binding the [`OLAP`](/api/js/ejpivotgauge#members:analysismode) data source to a simple pivot gauge. For more details on this topic, [click here](https://help.syncfusion.com/js/pivotgauge/olap-connectivity#wcf).
+This section demonstrates the utilization of the WCF service as endpoint binding the [`OLAP`](/api/js/ejpivotgauge#members:analysisMode) data source to a simple pivot gauge. For more details on this topic, [click here](https://help.syncfusion.com/js/pivotgauge/olap-connectivity#wcf).
 
 
 
