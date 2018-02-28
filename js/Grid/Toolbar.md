@@ -11,39 +11,39 @@ api: /api/js/ejgrid
 
 Toolbar can be shown by setting the [`toolbarSettings.showToolbar`](https://help.syncfusion.com/api/js/ejgrid#members:toolbarsettings-showtoolbar "showToolbar") as true. Toolbar has an option to add default items in the [`toolbarSettings.toolbarItems`](https://help.syncfusion.com/api/js/ejgrid#members:toolbarsettings-toolbaritems "toolbarItems") and customized items in the [`toolbarSettings.customToolbarItems`](https://help.syncfusion.com/api/js/ejgrid#members:toolbarsettings-customtoolbaritems "customToolbarItems").
 
-## Default Toolbar items
+## Default toolbar items
 
 The following table shows default toolbar items and its action. 
 
 <table>
 <tr>
 <th>
-Default toolbar items</th><th>
+Default toolbar items.</th><th>
 Action</th></tr>
 <tr>
 <td>
 Add</td><td>
-Add a new row</td></tr>
+Add a new row.</td></tr>
 <tr>
 <td>
 Edit</td><td>
-Edit an existing</td></tr>
+Edit an existing.</td></tr>
 <tr>
 <td>
 Delete</td><td>
-Delete a row</td></tr>
+Delete a row.</td></tr>
 <tr>
 <td>
 Update</td><td>
-Update edited or added row</td></tr>
+Update edited or added row.</td></tr>
 <tr>
 <td>
 Cancel</td><td>
-Cancel edited or added row</td></tr>
+Cancel edited or added row.</td></tr>
 <tr>
 <td>
 Search</td><td>
-Search text in records</td></tr>
+Search text in records.</td></tr>
 </table>
 
 
@@ -80,7 +80,7 @@ Search text in records</td></tr>
 
 I> [`editSettings.allowAdding`](https://help.syncfusion.com/api/js/ejgrid#members:editsettings-allowadding "allowAdding"), [`editSettings.allowEditing`](https://help.syncfusion.com/api/js/ejgrid#members:editsettings-allowediting "allowEditing") and [`editSettings.allowDeleting`](https://help.syncfusion.com/api/js/ejgrid#members:editsettings-allowdeleting "allowdeleting") need to be enabled for add, delete, edit, save & cancel in [`toolbarItems`](https://help.syncfusion.com/api/js/ejgrid#members:toolbarsettings-toolbaritems "toolbaritems"). [`allowSearching`](https://help.syncfusion.com/api/js/ejgrid#members:allowsearching "allowsearching")` to be enabled while adding search in toolbar to perform search action.
 
-## Custom Toolbar items
+## Custom toolbar items
 
 The custom toolbar is used to create your own toolbar items in toolbar. It can be added by defining the [`toolbarSettings.customToolbarItems`](https://help.syncfusion.com/api/js/ejgrid#members:toolbarsettings-customtoolbaritems "customToolbarItems").  Actions for this customized toolbar is defined in the [`toolbarClick`](https://help.syncfusion.com/api/js/ejgrid#events:toolbarclick "toolbarclick") event.
 

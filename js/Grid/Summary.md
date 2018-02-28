@@ -41,15 +41,15 @@ Summary rows visibility can be controlled by the [`showSummary`](https://help.sy
 </script>
 {% endhighlight %}
 
-N> [`dataMember`](https://help.syncfusion.com/api/js/ejgrid#members:summaryrows-summarycolumns-datamember "dataMember") denotes the aggregation column whereas the [`displayColumn`](https://help.syncfusion.com/api/js/ejgrid#members:summaryrows-summarycolumns-displaycolumn "displayColumn") denotes the column in which aggregation value will be displayed.
+N> The [`dataMember`](https://help.syncfusion.com/api/js/ejgrid#members:summaryrows-summarycolumns-datamember "dataMember") denotes the aggregation column whereas the [`displayColumn`](https://help.syncfusion.com/api/js/ejgrid#members:summaryrows-summarycolumns-displaycolumn "displayColumn") denotes the column in which aggregation value will be displayed.
 
 
 ![](Summary_images/summaryGrid_img1.png)
 
 
-## Supported Aggregates 
+## Supported aggregates 
 
-Following are the supported list of [aggregates](https://help.syncfusion.com/js/datamanager/summary#) 
+Following are the supported list of the [aggregates](https://help.syncfusion.com/js/datamanager/summary#) 
 
 * Sum
 * Average
@@ -58,10 +58,10 @@ Following are the supported list of [aggregates](https://help.syncfusion.com/js/
 * False Count
 * True Count
 
-### Sum, Average, Maximum and Minimum
+### Sum, average, maximum and minimum
 
 
-Summaries with the [`Sum`](https://help.syncfusion.com/js/datamanager/summary#sum "sum"),[`Average`](https://help.syncfusion.com/js/datamanager/summary#avg "Average"),[`Maximum`](https://help.syncfusion.com/js/datamanager/summary#max "maximum") and [`Minimum`](https://help.syncfusion.com/js/datamanager/summary#min "min") aggregate can be defined by using the [`summaryType`](https://help.syncfusion.com/api/js/ejgrid#members:summaryrows-summarycolumns-summarytype "summaryType") in [`summaryColumns`](https://help.syncfusion.com/api/js/ejgrid#members:summaryrows-summarycolumns "summaryColumns") collections. These aggregate are used in `Number` column.
+Summaries with the [`Sum`](https://help.syncfusion.com/js/datamanager/summary#sum "sum"), [`Average`](https://help.syncfusion.com/js/datamanager/summary#avg "Average"), [`Maximum`](https://help.syncfusion.com/js/datamanager/summary#max "maximum") and [`Minimum`](https://help.syncfusion.com/js/datamanager/summary#min "min") aggregate can be defined by using the [`summaryType`](https://help.syncfusion.com/api/js/ejgrid#members:summaryrows-summarycolumns-summarytype "summaryType") in [`summaryColumns`](https://help.syncfusion.com/api/js/ejgrid#members:summaryrows-summarycolumns "summaryColumns") collections. These aggregate are used in the `Number` column.
 
 {% highlight html %}
 <div id="Grid"></div>
@@ -124,7 +124,7 @@ Summaries with the [`Sum`](https://help.syncfusion.com/js/datamanager/summary#su
 
 ### True and False count 
 
-Summaries with `True` and `False` count aggregate can be defined by using [`summaryType`](https://help.syncfusion.com/api/js/ejgrid#members:summaryrows-summarycolumns-summarytype "summaryType") [`summaryColumns`](https://help.syncfusion.com/api/js/ejgrid#members:summaryrows-summarycolumns "summaryColumns") collections. `True` and `False` count aggregates are used for Boolean columns.
+Summaries with the `True` and `False` count aggregate can be defined by using the [`summaryType`](https://help.syncfusion.com/api/js/ejgrid#members:summaryrows-summarycolumns-summarytype "summaryType") and [`summaryColumns`](https://help.syncfusion.com/api/js/ejgrid#members:summaryrows-summarycolumns "summaryColumns") collections. The `True` and `False` count aggregates are used for boolean columns.
 
 {% highlight html %}
 
@@ -168,9 +168,9 @@ Summaries with `True` and `False` count aggregate can be defined by using [`summ
 ![](Summary_images/summaryGrid_img3.png)
 
 
-## Custom Summary
+## Custom summary
 
-Custom Summary can be used to create summary values based on your required custom logic and calculations. To enable Custom Summary, [`summaryType`](https://help.syncfusion.com/api/js/ejgrid#members:summaryrows-summarycolumns-summarytype "summaryType") should be [`custom`](https://help.syncfusion.com/js/grid/summary#custom-summary-by-string "custom") and [`customSummaryValue`](https://help.syncfusion.com/api/js/ejgrid#members:summaryrows-summarycolumns-customsummaryvalue "customSummaryValue") property need to define as function. In this property `value` function, you need to use Grid instance to access the `model.dataSource` and `model.currentViewData`. After the custom calculation, the returned value will be displayed in corresponding Summary cell.
+Custom summary can be used to create summary values based on your required custom logic and calculations. To enable custom summary, the [`summaryType`](https://help.syncfusion.com/api/js/ejgrid#members:summaryrows-summarycolumns-summarytype "summaryType") should be [`custom`](https://help.syncfusion.com/js/grid/summary#custom-summary-by-string "custom") and the [`customSummaryValue`](https://help.syncfusion.com/api/js/ejgrid#members:summaryrows-summarycolumns-customsummaryvalue "customSummaryValue") property need to define as function. In this property `value` function, you need to use the grid instance to access the `model.dataSource` and `model.currentViewData`. After the custom calculation, the returned value will be displayed in corresponding summary cell.
 
 
 {% highlight html %}
@@ -212,9 +212,9 @@ Custom Summary can be used to create summary values based on your required custo
 
 ![](Summary_images/summaryGrid_img4.png)
 
-## Summary values with Prefix And Suffix
+## Summary values with prefix and suffix
 
-Summaries with Prefix and Suffix can be added using the [`summaryColumns.prefix`](https://help.syncfusion.com/api/js/ejgrid#members:summaryrows-summarycolumns-prefix "summaryColumns.prefix") and summaryColumn.suffix [`summaryColumns.suffix`](https://help.syncfusion.com/api/js/ejgrid#members:summaryrows-summarycolumns-suffix "summaryColumns.suffix").
+Summaries with prefix and suffix can be added using the [`summaryColumns.prefix`](https://help.syncfusion.com/api/js/ejgrid#members:summaryrows-summarycolumns-prefix "summaryColumns.prefix") and summaryColumn.suffix [`summaryColumns.suffix`](https://help.syncfusion.com/api/js/ejgrid#members:summaryrows-summarycolumns-suffix "summaryColumns.suffix").
 
 {% highlight html %}
 
@@ -250,9 +250,9 @@ Summaries with Prefix and Suffix can be added using the [`summaryColumns.prefix`
 
 ![](Summary_images/summaryGrid_img9.png)
 
-## Title for Summary
+## Title for summary
 
-Title name of any summary value can be change using [`title`](https://help.syncfusion.com/api/js/ejgrid#members:summaryrows-title "title") property of [`summaryColumns`](https://help.syncfusion.com/api/js/ejgrid#members:summaryrows-summarycolumns "summaryColumns"). Title displaying column can also be alter using the [`titleColumn`](https://help.syncfusion.com/api/js/ejgrid#members:summaryrows-titlecolumn "titleColumn").
+Title name of any summary value can be change using the [`title`](https://help.syncfusion.com/api/js/ejgrid#members:summaryrows-title "title") property of [`summaryColumns`](https://help.syncfusion.com/api/js/ejgrid#members:summaryrows-summarycolumns "summaryColumns"). Title displaying column can be altered by using the [`titleColumn`](https://help.syncfusion.com/api/js/ejgrid#members:summaryrows-titlecolumn "titleColumn").
 
 {% highlight html %}
 
@@ -287,9 +287,9 @@ Title name of any summary value can be change using [`title`](https://help.syncf
 
 ![](Summary_images/summaryGrid_img10.png)
 
-## Group Summary
+## Group summary
 
-Group Summary is used to summarize values of a particular column based on group and it shows at bottom of each Group. To enable Group Summary for particular Group, you need to define the [`showTotalSummary`](https://help.syncfusion.com/api/js/ejgrid#members:summaryrows-showtotalsummary "showTotalSummary") as false.
+Group summary is used to summarize values of a particular column based on group and it shows at bottom of the each group. To enable the group summary for particular group, you need to define the [`showTotalSummary`](https://help.syncfusion.com/api/js/ejgrid#members:summaryrows-showtotalsummary "showTotalSummary") as false.
 
 {% highlight html %}
 <div id="Grid"></div>
@@ -334,9 +334,9 @@ Group Summary is used to summarize values of a particular column based on group 
 
 W> Minimum one column should be grouped to show summary details.
 
-## Group Caption Summary
+## Group caption summary
 
-To show summaries in each Group's Caption row, particular [summary row](https://help.syncfusion.com/api/js/ejgrid#members:summaryrows) should have the [`showTotalSummary`](https://help.syncfusion.com/api/js/ejgrid#members:summaryrows-showtotalsummary "showtotalsummary") as `false` and [`showCaptionSummary`](https://help.syncfusion.com/api/js/ejgrid#members:summaryrows-showcaptionsummary "showCaptionSummary") as `true`.
+To show summaries in each group's caption row, the particular [summary row](https://help.syncfusion.com/api/js/ejgrid#members:summaryrows) should have the [`showTotalSummary`](https://help.syncfusion.com/api/js/ejgrid#members:summaryrows-showtotalsummary "showtotalsummary") as `false` and the [`showCaptionSummary`](https://help.syncfusion.com/api/js/ejgrid#members:summaryrows-showcaptionsummary "showCaptionSummary") as `true`.
 
 
 {% highlight html %}
@@ -378,9 +378,9 @@ To show summaries in each Group's Caption row, particular [summary row](https://
 ![](Summary_images/summaryGrid_img6.png)
 
 
-W> Minimum one column should be grouped to show summary details.
+W> Minimum one column should be grouped to show the summary details.
 
-## Summary Template
+## Summary template
 
 Using the [`template`](https://help.syncfusion.com/api/js/ejgrid#members:summaryrows-summarycolumns-template "template") property of `summaryColumns` you can render any type of JsRender templates or customizing the summary value.
 
@@ -420,7 +420,7 @@ The following output is displayed as a result of the above code example.
 
 ## Format
 
-To format Summary values, the [`format`](https://help.syncfusion.com/api/js/ejgrid#members:summaryrows-summarycolumns-format "format") property needs to be assigned in the [`summaryColumns`](https://help.syncfusion.com/api/js/ejgrid#members:summaryrows-summarycolumns "summaryColumns") collection object.  To know more about formatting options. Please refer to [**globalize.js**](https://github.com/jquery/globalize/tree/v0.1.1#)
+To format summary values, the [`format`](https://help.syncfusion.com/api/js/ejgrid#members:summaryrows-summarycolumns-format "format") property needs to be assigned in the [`summaryColumns`](https://help.syncfusion.com/api/js/ejgrid#members:summaryrows-summarycolumns "summaryColumns") collection object.  To know more about formatting options. Please refer to the [**globalize.js**](https://github.com/jquery/globalize/tree/v0.1.1#)
 
 {% highlight html %}
 <div id="Grid"></div>
