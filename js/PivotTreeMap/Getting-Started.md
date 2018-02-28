@@ -223,7 +223,7 @@ The following table will explain the OLAP [`dataSource`](/api/js/ejpivottreemap#
             <td>Allows the user to indicate whether the added item is a named set or not.</td>
             </tr>
              <tr>
-            <td>{{'[`filterItems`](https://help.syncfusion.com//api/js/ejpivottreemap#members:datasource-columns-filteritems "filterItems")'| markdownify }}</td>
+            <td>{{'[`filterItems`](https://help.syncfusion.com/api/js/ejpivottreemap#members:datasource-rows-filteritems "filterItems")'| markdownify }}</td>
             <td>Applies filter to the field members.
             <table class="params">
             <thead>
@@ -235,7 +235,7 @@ The following table will explain the OLAP [`dataSource`](/api/js/ejpivottreemap#
             <tbody>
             <tr>
             <td>
-                {{'[`values`](https://help.syncfusion.com//api/js/ejpivottreemap#members:datasource-columns-filteritems-values "values")'| markdownify }} </td>
+                {{'[`values`](https://help.syncfusion.com/api/js/ejpivottreemap#members:datasource-rows-filteritems-values "values")'| markdownify }} </td>
             <td>Contains the collection of items to be excluded among the field members.</td>
             </tr>
             </tbody>
