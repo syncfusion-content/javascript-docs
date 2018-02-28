@@ -11,7 +11,7 @@ api: /api/js/ejpivottreemap
 # How to
 
 ### Generate JSON object from Olap cube
-The [`generateJSON`](/api/js/ejpivottreemap#methods:generateJSON) method is used to render the control with the pivot engine obtained from the OLAP cube.
+The [`generateJSON`](/api/js/ejpivottreemap#methods:generatejson) method is used to render the control with the pivot engine obtained from the OLAP cube.
 
 {% highlight html %}
 
@@ -86,7 +86,7 @@ The [`setJSONRecords`](/api/js/ejpivottreemap#methods:setjsonrecords) method is 
 {% endhighlight %}
 
 ### Invoking event before pivot engine population
-The [`beforePivotEnginePopulate`](/api/js/ejpivottreemap#events:beforePivotEnginePopulate) event is triggered before populating the pivot engine from the data source.
+The [`beforePivotEnginePopulate`](/api/js/ejpivottreemap#events:beforepivotenginepopulate) event is triggered before populating the pivot engine from the data source.
 
 {% highlight html %}
 
