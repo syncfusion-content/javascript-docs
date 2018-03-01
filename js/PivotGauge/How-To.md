@@ -215,6 +215,23 @@ You can show/hide the header label in the pivot gauge by the [`showHeaderLabel`]
 
 {% endhighlight %}
 
+### Enabling XMLHttpRequest object for CORS
+Allows you to enable “withCredentials” property inside XMLHttpRequest object for CORS(Cross-Origin Resource Sharing) request. This feature can be enabled by [`enableXHRCredentials`](/api/js/ejpivotgauge#members:enableXHRCredentials) property.
+
+{% highlight html %}
+
+<div id="PivotGauge1"></div>
+
+<script type="text/javascript">
+    $("#PivotGauge1").ejPivotGauge({
+
+        enableXHRCredentials: true
+
+    });
+</script>
+
+{% endhighlight %}
+
 
 ## Setting custom name to service methods
 The [`serviceMethodSettings`](/api/js/ejpivotgauge#members:servicemethodsettings) allows you to set the custom name for methods in the WebAPI/WCF, communicated during the AJAX post. The following table will explain the service methods:

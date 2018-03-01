@@ -124,6 +124,38 @@ To initialize the PivotTable field list, first you should define a “div” tag
 
 ![](PivotTable-Field-List_images/relationalserverfieldlist.png)
 
+N> The [`url`](/api/js/ejpivotschemadesigner#members:url) property is used to connect the service using the specified URL for any server updates.
+
+## Service Method Settings
+The [`serviceMethods`](/api/js/ejpivotschemadesigner#members:servicemethods) allows the user to set custom name for service methods at service-end.
+
+{% highlight html %}
+
+<script type="text/javascript">
+
+$("#PivotSchemaDesigner1").ejPivotSchemaDesigner({
+
+    serviceMethods: { initialize: "InitializeGrid"}
+
+    });
+
+</script>
+
+{% endhighlight %}
+
+The following table will explain the available service methods in pivot scchema designer.
+
+| Service Methods | Description |
+|---|---|
+|[fetchMembers](/api/js/ejpivotschemadesigner#members:servicemethod-fetchmembers)|It is responsible for getting the values for the tree-view inside filter dialog.|
+|[filtering](/api/js/ejpivotschemadesigner#members:servicemethod-filtering)|It is responsible for filtering operation in Field List.|
+|[memberExpand](/api/js/ejpivotschemadesigner#members:servicemethod-memberexpand)|It is responsible for the server-side action, on expanding members in Field List.|
+|[nodeDropped](/api/js/ejpivotschemadesigner#members:servicemethod-nodedropped)|It is responsible for the server-side action, on dropping a node into Field List.|
+|[nodeStateModified](/api/js/ejpivotschemadesigner#members:servicemethod-nodestatemodified)|It is responsible for the server-side action on changing the checked state of a node in Field List.|
+|[removeButton](/api/js/ejpivotschemadesigner#members:servicemethod-removebutton)|It is responsible for button removing operation in Field List.|
+
+N> The [`customObject`](/api/js/ejpivotschemadesigner#members:customobject) property in pivot schema designer is used to pass additional information between client-end and service-end.
+
 
 ## Layout
 The top portion of the layout shows field or cube items in a categorized way. They can be dynamically added to the report either by drag and drop option or through the simple check box selection.
@@ -137,6 +169,40 @@ The bottom portion of the layout is segregated as follows:
 * Column section: It displays the item(s) as column header and values in the pivot grid control.
 * Row section: It displays the item(s) as row header and values in the pivot grid control.
 
+### Height of the pivot schema designer
+The [`height`](/api/js/ejpivotschemadesigner#members:height) property is used to set the height of the pivot schema designer.
+
+{% highlight html %}
+
+$("#PivotSchemaDesigner1").ejPivotSchemaDesigner({
+
+     height: "630px"
+
+     });
+
+{% endhighlight %}
+
+### Width of the pivot schema designer
+The [`width`](/api/js/ejpivotschemadesigner#members:width) property is used to set the width of the pivot schema designer.
+
+{% highlight html %}
+
+$("#PivotSchemaDesigner1").ejPivotSchemaDesigner({
+
+     width: "415px"
+
+     });
+
+{% endhighlight %}
+
+### Types of layout in pivot schema designer
+The [`layout`](/api/js/ejpivotschemadesigner#members:layout) property is used to set the layout for pivot schema designer. The following table will explain the available types in pivot schema designer along with pivot grid.
+
+| Layout | Description |
+|---|---|
+|Excel|To set the layout as same in the Excel.|
+|Normal|To set normal layout for Field List.|
+
 ## UI interactions
 
 ### By drag and drop
@@ -144,6 +210,8 @@ The bottom portion of the layout is segregated as follows:
 You can alter the report on fly through the drag-and-drop operation. You can drag any item from the field list and drop it into the column, row, value, or filter section available at the bottom of the field list.
 
 ![](PivotTable-Field-List_images/ralationaldragndrop.png)
+
+N> You can enable/disable drag and drop operation by the [`enableDragDrop`](/api/js/ejpivotschemadesigner#members:enabledragdrop) property.
 
 ### By drag and drop to grid headers
 

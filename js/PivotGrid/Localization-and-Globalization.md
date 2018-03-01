@@ -1747,6 +1747,7 @@ Content displayed within the PivotGrid control are obtained from the relational 
 
 ## RTL
 
+### RTL in PivotGrid
 You can render the PivotGrid control from right to left by setting the [`enableRTL`](/api/js/ejpivotgrid#members:enablertl) property to true.
 
 {% highlight js %}
@@ -1761,4 +1762,22 @@ $(function() {
 {% endhighlight %}
 
 ![](Localization-and-Globalization_images/rtl.png)
+
+### RTL in PivotSchemaDesigner
+You can render the pivot schema designer control from right to left by setting the [`enableRTL`](/api/js/ejpivotschemadesigner#members:enablertl) property to true.
+
+{% highlight js %}
+
+$(function() {
+
+    $("#PivotSchemaDesigner1").ejPivotSchemaDesigner({
+
+        enableRTL : true
+
+        });
+});
+
+{% endhighlight %}
+
+![](Localization-and-Globalization_images/rtlSchema.png)
 
