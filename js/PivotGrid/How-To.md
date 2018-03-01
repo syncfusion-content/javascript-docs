@@ -604,7 +604,7 @@ The [`serviceMethodSettings`](/api/js/ejpivotgrid#members:servicemethodsettings)
 ## Public Methods
 
 ### Initialize pivot pager with page properties
-The [`initPagerProperties`](/api/js/ejpivotpager#methods:initpagerproperties) method is used to initialize the page counts and page numbers for the pivot pager.
+The [`initPagerProperties`](/api/js/ejpivotpager#methods:initpagerproperties) method is used to initialize the page counts and page numbers of the pivot pager.
 
 {% highlight js %}
 
@@ -617,7 +617,7 @@ The [`initPagerProperties`](/api/js/ejpivotpager#methods:initpagerproperties) me
 ## Members
 
 ### Current page number in categorical axis
-The [`categoricalCurrentPage`](/api/js/ejpivotpager#members:categoricalcurrentpage) property is used to specify the current page number in categorical axis.
+The [`categoricalCurrentPage`](/api/js/ejpivotpager#members:categoricalcurrentpage) property is used to specify the current page number in the categorical axis.
 
 {% highlight js %}
 
@@ -633,7 +633,7 @@ The [`categoricalCurrentPage`](/api/js/ejpivotpager#members:categoricalcurrentpa
 {% endhighlight %}
 
 ### Page count in categorical axis
-The [`categoricalPageCount`](/api/js/ejpivotpager#members:categoricalpagecount) property is used to specify the total page count in categorical axis.
+The [`categoricalPageCount`](/api/js/ejpivotpager#members:categoricalpagecount) property is used to specify the total page count in the categorical axis.
 
 {% highlight js %}
 
@@ -650,7 +650,7 @@ The [`categoricalPageCount`](/api/js/ejpivotpager#members:categoricalpagecount) 
 {% endhighlight %}
 
 ### Current page number in series axis
-The [`seriesCurrentPage`](/api/js/ejpivotpager#members:seriescurrentpage) property is used to specify the current page number in series axis.
+The [`seriesCurrentPage`](/api/js/ejpivotpager#members:seriescurrentpage) property is used to specify the current page number in the series axis.
 
 {% highlight js %}
 
@@ -667,7 +667,7 @@ The [`seriesCurrentPage`](/api/js/ejpivotpager#members:seriescurrentpage) proper
 {% endhighlight %}
 
 ### Page count in series axis
-The [`seriesPageCount`](/api/js/ejpivotpager#members:seriespagecount) property is used to specify the total page count in series axis.
+The [`seriesPageCount`](/api/js/ejpivotpager#members:seriespagecount) property is used to specify the total page count in the series axis.
 
 {% highlight js %}
 
@@ -715,7 +715,7 @@ The [`locale`](/api/js/ejpivotpager#members:locale) property is used to set the 
 {% endhighlight %}
 
 ### Modes in pivot pager
-The [`mode`](/api/js/ejpivotpager#members:mode) property is used to set the pager mode for pivot pager. The following table will explain the available modes in pivot pager widget.
+The [`mode`](/api/js/ejpivotpager#members:mode) property is used to set the pager mode for the pivot pager. The following table will explain the available modes in the pivot pager widget.
 
 | Mode | Description |
 |---|---|
