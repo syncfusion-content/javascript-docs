@@ -161,7 +161,7 @@ The bottom portion of the layout is segregated as below:
 
 * Report filter: Filter the item(s) placed in the particular position of the layout.
 * Value section: The value label usually displays the numeric value item(s) present in the report.
-* Column section: Display the item(s) as column header and values in the pivot grid control.
+* Column section: Displays the item(s) as column header and values in the pivot grid control.
 * Row section: Display the item(s) as row header and values in the pivot grid control.
 
 ### Height of the pivot schema designer
@@ -191,12 +191,12 @@ $("#PivotSchemaDesigner1").ejPivotSchemaDesigner({
 {% endhighlight %}
 
 ### Types of layout in pivot schema designer
-The [`layout`](/api/js/ejpivotschemadesigner#members:layout) property is used to set the layout for pivot schema designer. The following table will explain the available types in pivot schema designer along with pivot grid.
+The [`layout`](/api/js/ejpivotschemadesigner#members:layout) property is used to set the layout for pivot schema designer. The following table will explain the available types in pivot schema designer along with the pivot grid.
 
 | Layout | Description |
 |---|---|
 |Excel|To set the layout as same in the Excel.|
-|Normal|To set normal layout for Field List.|
+|Normal|To set normal layout for the field list.|
 
 ## UI interactions
 
