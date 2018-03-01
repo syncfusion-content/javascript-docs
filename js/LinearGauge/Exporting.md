@@ -75,3 +75,15 @@ Execute the above code to render the following output.
 
 ![](/js/LinearGauge/Exporting_images/Exporting_img1.png)
 
+### Export Properties
+
+Each export(../api/ejlineargauge#members:exportsettings) object contains the following list of properties.
+
+[`type`](../api/ejlineargauge#members:exportsettings-type) - Specifies the format of the file to export
+
+[`fileName`](../api/ejlineargauge#members:exportsettings-filename) - Specifies the downloading filename 
+
+[`action`](../api/ejlineargauge#members:exportsettings-action) - Specifies the name of the action URL 
+
+[`mode`](../api/ejlineargauge#members:exportsettings-mode) - Specifies the mode of exporting
+
