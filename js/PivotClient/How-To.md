@@ -285,7 +285,7 @@ The [`cellEdit`](/api/js/ejpivotclient#events:celledit) event is triggered when 
 {% endhighlight %}
 
 ### Triggering event on cell double-click in pivot grid
-The [`cellDoubleClick`](/api/js/ejpivotclient#events:celldoubleclick) event is triggered when you double-click any cell in the pivot grid. It can be enabled through [`enableCellDoubleClick`](/api/js/ejpivotclient#members:enablecelldoubleclick) property.
+The [`cellDoubleClick`](/api/js/ejpivotclient#events:celldoubleclick) event is triggered when you double-click any cell in the pivot grid. It can be enabled through the [`enableCellDoubleClick`](/api/js/ejpivotclient#members:enablecelldoubleclick) property.
 
 {% highlight html %}
 
