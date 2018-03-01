@@ -77,7 +77,7 @@ Execute the above code to render the following output.
 
 ### Export Properties
 
-Each export(../api/ejlineargauge#members:exportsettings) object contains the following list of properties.
+Each [`export`](../api/ejlineargauge#members:exportsettings) object contains the following list of properties.
 
 [`type`](../api/ejlineargauge#members:exportsettings-type) - Specifies the format of the file to export
 

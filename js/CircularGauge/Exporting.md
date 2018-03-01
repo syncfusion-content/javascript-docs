@@ -47,7 +47,7 @@ Execute the above code to render the following output.
 
 ### Export Properties
 
-Each export(../api/ejcirculargauge#members:exportsettings-type) object contains the following list of properties.
+Each [`export`](../api/ejcirculargauge#members:exportsettings-type) object contains the following list of properties.
 
 [`type`](../api/ejcirculargauge#members:exportsettings-type) - Specifies the format of the file to export
 
