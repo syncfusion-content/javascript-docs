@@ -10,7 +10,7 @@ api: /api/js/ejpivotgrid
 
 # PivotTable field list
 
-## Initialization  
+## Initialization
 The field list, also known as Pivot Schema Designer, allows you to add, rearrange, filter, and remove fields to show the data in the pivot grid as exactly you want.
 
 Based on the data source and OLAP bound to the pivot grid control, the PivotTable field list will be automatically populated with cube information or field names. The PivotTable field list provides an Excel like appearance and behavior.
@@ -71,10 +71,10 @@ To initialize the PivotTable field list, first you should define a “div” tag
 
 </body>
 
-</html>   
+</html>
 
 {% endhighlight %}
- 
+
 
 ![](PivotTable-Field-List_images/olapclientfieldlsit.png)
 
@@ -138,7 +138,7 @@ $("#PivotSchemaDesigner1").ejPivotSchemaDesigner({
 
 {% endhighlight %}
 
-The following table will explain the available service methods in pivot scchema designer.
+The following table will explain the available service methods in pivot schema designer.
 
 | Service Methods | Description |
 |---|---|
@@ -154,12 +154,12 @@ N> The [`customObject`](/api/js/ejpivotschemadesigner#members:customobject) prop
 
 ## Layout
 The top portion of the layout shows field or cube items in a categorized way. They can be dynamically added to the report either by the drag and drop option or through the simple check box selection.
- 
+
 On item(s) selection, they will be placed in the row section except numeric based item(s) or measures, which alone will be placed in the value section, by default.
- 
+
 The bottom portion of the layout is segregated as below:
 
-* Report filter: Exclusively designed to filter the item(s) placed in the particular position of the layout. 
+* Report filter: Exclusively designed to filter the item(s) placed in the particular position of the layout.
 * Value section: The value label usually displays the numeric value item(s) present in the report.
 * Column section: It is used to display the item(s) as column header and values in the pivot grid control.
 * Row section: It is used to display the item(s) as row header and values in the pivot grid control.
@@ -209,13 +209,13 @@ You can alter the report on fly through the drag-and-drop operation. You can dra
 N> You can enable/disable drag and drop operation by the [`enableDragDrop`](/api/js/ejpivotschemadesigner#members:enabledragdrop) property.
 
 ### By tree view selection
- 
+
 You can also alter the report on fly through the check and uncheck option as an alternate. By default, fields will be added to the row label when checked.
 
 ![](PivotTable-Field-List_images/pivotfield.png)
- 
+
 ### By context menu
- 
+
 You can also alter the report by using the context menu.
 
 ![](PivotTable-Field-List_images/Olap_Pivotbutton_Context.png)

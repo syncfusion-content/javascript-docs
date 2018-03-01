@@ -569,7 +569,7 @@ $("#PivotClient1").ejPivotClient({
 
  });
 
-{% endhighlight
+{% endhighlight %}
 
 ### Maximum Node limit in Member Editor
 This feature allows you to set the maximum number of nodes as well as child nodes to be displayed in the member editor. It can be enabled by [`maxNodeLimitInMemberEditor`](/api/js/ejpivotclient#members:maxNodeLimitInMemberEditor) property.

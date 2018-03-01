@@ -143,7 +143,7 @@ $("#PivotSchemaDesigner1").ejPivotSchemaDesigner({
 
 {% endhighlight %}
 
-The following table will explain the available service methods in pivot scchema designer.
+The following table will explain the available service methods in pivot schema designer.
 
 | Service Methods | Description |
 |---|---|
@@ -159,12 +159,12 @@ N> The [`customObject`](/api/js/ejpivotschemadesigner#members:customobject) prop
 
 ## Layout
 The top portion of the layout shows field or cube items in a categorized way. They can be dynamically added to the report either by drag and drop option or through the simple check box selection.
- 
+
 On item(s) selection, they will be placed in the row section except numeric based item(s) or measures, which will alone be placed in the value section, by default.
- 
+
 The bottom portion of the layout is segregated as follows:
 
-* Report filter: Exclusively designed to filter an item(s) placed in the particular position of the layout. 
+* Report filter: Exclusively designed to filter an item(s) placed in the particular position of the layout.
 * Value section: The value label usually displays the numeric value item(s) present in the report.
 * Column section: It displays the item(s) as column header and values in the pivot grid control.
 * Row section: It displays the item(s) as row header and values in the pivot grid control.
@@ -224,7 +224,7 @@ You can also drag and drop elements from the field list to grid headers.
 ![](PivotTable-Field-List_images/HeaderDrop2.png)
 
 ### By tree view selection
- 
+
 You can alter the report on fly through the check and uncheck option as an alternate. By default, fields will be added to the row label when checked.
 
 ![](PivotTable-Field-List_images/relationalcheckRuncheck.png)
@@ -236,7 +236,7 @@ You can also alter the report by using the context menu.
 ![](PivotTable-Field-List_images/Pivotbutton_Context.png)
 
 ![](PivotTable-Field-List_images/Treeview_Context.png)
- 
+
 ## Searching values
 The search option in the field list allows you to search a specific value that needs to be filtered from the list of values in the filter pop-up window.
 

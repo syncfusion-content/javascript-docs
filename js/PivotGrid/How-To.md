@@ -403,7 +403,7 @@ $("#PivotGrid1").ejPivotGrid({
 
  });
 
-{% endhighlight
+{% endhighlight %}
 
 ### Enabling complete data export on pivot grid
 This feature allows you to export entire data instead of current page data, while paging option is enabled. it can be enabled by the [`enableCompleteDataExport`](/api/js/ejpivotgrid#members:enableCompleteDataExport) property.
@@ -416,7 +416,7 @@ $("#PivotGrid1").ejPivotGrid({
 
  });
 
-{% endhighlight
+{% endhighlight %}
 
 ### Maximum Node limit in Member Editor
 This feature allows you to set the maximum number of nodes as well as child nodes to be displayed in the member editor. It can be enabled by [`maxNodeLimitInMemberEditor`](/api/js/ejpivotgrid#members:maxNodeLimitInMemberEditor) property.
