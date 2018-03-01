@@ -118,7 +118,7 @@ To initialize the PivotTable field list, first you should define a “div” tag
 
 ![](PivotTable-Field-List_images/schema1.png)
 
-N> The [`url`](/api/js/ejpivotschemadesigner#members:url) property is used to connect the service using the specified URL for any server updates.
+N> The [`url`](/api/js/ejpivotschemadesigner#members:url) property is used to connect the service by using the specified URL for any server updates.
 
 
 ## Service Method Settings
@@ -138,18 +138,18 @@ $("#PivotSchemaDesigner1").ejPivotSchemaDesigner({
 
 {% endhighlight %}
 
-The following table will explain the available service methods in pivot schema designer.
+The following table will explain the available service methods in the pivot schema designer:
 
 | Service Methods | Description |
 |---|---|
-|[fetchMembers](/api/js/ejpivotschemadesigner#members:servicemethod-fetchmembers)|It is responsible for getting the values for the tree-view inside filter dialog.|
-|[filtering](/api/js/ejpivotschemadesigner#members:servicemethod-filtering)|It is responsible for filtering operation in Field List.|
-|[memberExpand](/api/js/ejpivotschemadesigner#members:servicemethod-memberexpand)|It is responsible for the server-side action, on expanding members in Field List.|
-|[nodeDropped](/api/js/ejpivotschemadesigner#members:servicemethod-nodedropped)|It is responsible for the server-side action, on dropping a node into Field List.|
-|[nodeStateModified](/api/js/ejpivotschemadesigner#members:servicemethod-nodestatemodified)|It is responsible for the server-side action on changing the checked state of a node in Field List.|
-|[removeButton](/api/js/ejpivotschemadesigner#members:servicemethod-removebutton)|It is responsible for button removing operation in Field List.|
+|[fetchMembers](/api/js/ejpivotschemadesigner#members:servicemethod-fetchmembers)|It is responsible for getting the values for the tree view in the filter dialog.|
+|[filtering](/api/js/ejpivotschemadesigner#members:servicemethod-filtering)|It is responsible for filtering operation in the field list.|
+|[memberExpand](/api/js/ejpivotschemadesigner#members:servicemethod-memberexpand)|It is responsible for the server-side action when expanding members in the field list.|
+|[nodeDropped](/api/js/ejpivotschemadesigner#members:servicemethod-nodedropped)|It is responsible for the server-side action when dropping a node into the field list.|
+|[nodeStateModified](/api/js/ejpivotschemadesigner#members:servicemethod-nodestatemodified)|It is responsible for the server-side action when changing the checked state of a node in the field list.|
+|[removeButton](/api/js/ejpivotschemadesigner#members:servicemethod-removebutton)|It is responsible for button removing operation in field list.|
 
-N> The [`customObject`](/api/js/ejpivotschemadesigner#members:customobject) property in pivot schema designer is used to pass additional information between client-end and service-end.
+N> The [`customObject`](/api/js/ejpivotschemadesigner#members:customobject) property in pivot schema designer is used to pass additional information between the client-end and the service-end.
 
 
 ## Layout
@@ -159,10 +159,10 @@ On item(s) selection, they will be placed in the row section except numeric base
 
 The bottom portion of the layout is segregated as below:
 
-* Report filter: Exclusively designed to filter the item(s) placed in the particular position of the layout.
+* Report filter: Filter the item(s) placed in the particular position of the layout.
 * Value section: The value label usually displays the numeric value item(s) present in the report.
-* Column section: It is used to display the item(s) as column header and values in the pivot grid control.
-* Row section: It is used to display the item(s) as row header and values in the pivot grid control.
+* Column section: Display the item(s) as column header and values in the pivot grid control.
+* Row section: Display the item(s) as row header and values in the pivot grid control.
 
 ### Height of the pivot schema designer
 The [`height`](/api/js/ejpivotschemadesigner#members:height) property is used to set the height of the pivot schema designer.
@@ -206,7 +206,7 @@ You can alter the report on fly through the drag-and-drop operation. You can dra
 
 ![](PivotTable-Field-List_images/ui-operartion.png)
 
-N> You can enable/disable drag and drop operation by the [`enableDragDrop`](/api/js/ejpivotschemadesigner#members:enabledragdrop) property.
+N> You can enable/disable the drag and drop operation by the [`enableDragDrop`](/api/js/ejpivotschemadesigner#members:enabledragdrop) property.
 
 ### By tree view selection
 
@@ -240,7 +240,7 @@ Values can be filtered by checking/unchecking the check box besides them, in the
 Defer update in the field list allows you to refresh the control on-demand and not during every UI operation. This operation can be enabled/disabled through the [`enableDeferUpdate`](/api/js/ejpivotgrid#members:enabledeferupdate) property internally.
 
 ### Showing KPI
-The [`showKpi`](/api/js/ejpivotschemadesigner#members:olap-showkpi) property is used to view the KPI elements in tree-view inside PivotTable Field List. This property should be defined under [`olap`](/api/js/ejpivotschemadesigner#members:olap) object.
+The [`showKpi`](/api/js/ejpivotschemadesigner#members:olap-showkpi) property is used to view the KPI elements in tree view in the pivot table field list. This property should be defined under the [`olap`](/api/js/ejpivotschemadesigner#members:olap) object.
 
 {% highlight js %}
 
@@ -258,7 +258,7 @@ The [`showKpi`](/api/js/ejpivotschemadesigner#members:olap-showkpi) property is 
 ![](PivotTable-Field-List_images/kpi.png)
 
 ### Showing NamedSets
-The [`showNamedSets `](/api/js/ejpivotschemadesigner#members:olap-shownamedsets) property is used to view the named sets in tree-view inside PivotTable Field List. This property should be defined under [`olap`](/api/js/ejpivotschemadesigner#members:olap) object.
+The [`showNamedSets `](/api/js/ejpivotschemadesigner#members:olap-shownamedsets) property is used to view the named sets in tree view of the pivot table field list. This property should be defined under [`olap`](/api/js/ejpivotschemadesigner#members:olap) object.
 
 {% highlight js %}
 
@@ -274,7 +274,7 @@ The [`showNamedSets `](/api/js/ejpivotschemadesigner#members:olap-shownamedsets)
 {% endhighlight %}
 
 ## Setting pivot control to pivot schema designer
-The [`pivotControl `](/api/js/ejpivotschemadesigner#members:pivotcontrol) property is used to set the Pivot control bound with this pivot schema designer.
+The [`pivotControl `](/api/js/ejpivotschemadesigner#members:pivotcontrol) property is used to set the pivot control bound with the pivot schema designer.
 
 {% highlight js %}
 
