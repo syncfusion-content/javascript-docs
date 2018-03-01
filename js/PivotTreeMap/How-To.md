@@ -190,6 +190,23 @@ You can enable/disable the responsiveness in the browser layout for pivot tree m
 
 {% endhighlight %}
 
+### Enabling XMLHttpRequest object for CORS
+Allows you to enable the “withCredentials” property in the XMLHttpRequest object for CORS(Cross-Origin Resource Sharing) request. This feature can be enabled by using the [`enableXHRCredentials`](/api/js/ejpivottreemap#members:enableXHRCredentials) property.
+
+{% highlight html %}
+
+<div id="PivotTreeMap1" type="text/javascript"></div>
+
+<script>
+    $("#PivotTreeMap1").ejPivotTreeMap({
+
+       enableXHRCredentials: true
+
+    });
+</script>
+
+{% endhighlight %}
+
 
 ## Setting custom name to service methods
 The [`serviceMethodSettings`](/api/js/ejpivottreemap#members:servicemethodsettings) allows you to set the custom name for methods in the WebAPI/WCF, communicated during the AJAX post. The following table will explain the service methods:

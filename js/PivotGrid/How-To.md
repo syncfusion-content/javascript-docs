@@ -356,11 +356,11 @@ $("#PivotGrid1").ejPivotGrid({
 ## Members
 
 ### Getting Raw items by triggering cell double click event
-Cell Double Click on PivotGrid allows you to get Raw items of cell which is clicked. To enable cell double click event, you can use the [`enableCellDoubleClick`](/api/js/ejpivotgrid#members:enablecelldoubleclick) property. You can get the raw items of the cell through the [`cellDoubleClick`](/api/js/ejpivotgrid#events:celldoubleclick) event.
+Cell double click on pivot grid allows you to get the raw items of cell which is clicked. To enable the cell double click event, you can use the [`enableCellDoubleClick`](/api/js/ejpivotgrid#members:enablecelldoubleclick) property. You can get the raw items of the cell through the [`cellDoubleClick`](/api/js/ejpivotgrid#events:celldoubleclick) event.
 
 {% highlight javascript %}
 
-$("#PivotGrid1").ejPivotGrid({
+  $("#PivotGrid1").ejPivotGrid({
 
             enableCellDoubleClick: true,
 
@@ -371,6 +371,63 @@ $("#PivotGrid1").ejPivotGrid({
 
             //...
         });
+
+{% endhighlight %}
+
+### Getting JSON format by triggering cell click event
+Cell click on pivot grid allows you to get JSON format of the cell which is clicked. To enable cell click event, you can use the [`enableCellClick`](/api/js/ejpivotgrid#members:enablecellclick) property. You can get the JSON format of the value cell through the [`cellClick`](/api/js/ejpivotgrid#events:cellclick) event.
+
+{% highlight javascript %}
+
+$("#PivotGrid1").ejPivotGrid({
+
+            enableCellClick: true,
+
+            cellClick: function (args) {
+
+            }
+
+            //...
+        });
+
+{% endhighlight %}
+
+### Enabling XMLHttpRequest object for CORS
+Allows you to enable the “withCredentials” property in the XMLHttpRequest object for CORS(Cross-Origin Resource Sharing) request. This feature can be enabled by the [`enableXHRCredentials`](/api/js/ejpivottreemap#members:enableXHRCredentials) property.
+
+{% highlight javascript %}
+
+$("#PivotGrid1").ejPivotGrid({
+
+          enableXHRCredentials: true
+
+ });
+
+{% endhighlight %}
+
+### Enabling complete data export on pivot grid
+This feature allows you to export the entire data instead of current page data, while paging option is enabled. It can be enabled by using the [`enableCompleteDataExport`](/api/js/ejpivotgrid#members:enableCompleteDataExport) property.
+
+{% highlight javascript %}
+
+$("#PivotGrid1").ejPivotGrid({
+
+          enableCompleteDataExport: true
+
+ });
+
+{% endhighlight %}
+
+### Maximum Node limit in Member Editor
+This feature allows you to set the maximum number of nodes and child nodes to be displayed in the member editor. It can be enabled by using the [`maxNodeLimitInMemberEditor`](/api/js/ejpivotgrid#members:maxNodeLimitInMemberEditor) property.
+
+{% highlight javascript %}
+
+$("#PivotGrid1").ejPivotGrid({
+
+         maxNodeLimitInMemberEditor: 1500
+
+    });
 
 {% endhighlight %}
 
@@ -542,6 +599,221 @@ The [`serviceMethodSettings`](/api/js/ejpivotgrid#members:servicemethodsettings)
 |[writeBack](/api/js/ejpivotgrid#members:servicemethodsettings-writeback)|It allows you to edit the values in the PivotGrid and update a write enabled cube in the back-end (SSAS) dynamically at runtime.|
 
 
+# Pivot Pager
+
+## Public Methods
+
+### Initialize pivot pager with page properties
+The [`initPagerProperties`](/api/js/ejpivotpager#methods:initpagerproperties) method is used to initialize the page counts and page numbers of the pivot pager.
+
+{% highlight js %}
+
+     var pagerObj = $("#PivotPager1").data("ejPivotPager");
+     pagerObj.initPagerProperties(150, { CategorialPageSize: 10, SeriesPageSize: 10, CategorialCurrentPage: 1, SeriesCurrentPage: 1});
+
+
+{% endhighlight %}
+
+## Members
+
+### Current page number in categorical axis
+The [`categoricalCurrentPage`](/api/js/ejpivotpager#members:categoricalcurrentpage) property is used to specify the current page number in the categorical axis.
+
+{% highlight js %}
+
+<script type="text/javascript">
+
+    $("#PivotPager1").ejPivotPager({
+
+        categoricalCurrentPage: 1
+
+        });
+</script>
+
+{% endhighlight %}
+
+### Page count in categorical axis
+The [`categoricalPageCount`](/api/js/ejpivotpager#members:categoricalpagecount) property is used to specify the total page count in the categorical axis.
+
+{% highlight js %}
+
+<script type="text/javascript">
+
+    $("#PivotPager1").ejPivotPager({
+
+        categPageCount: 1
+
+        });
+
+</script>
+
+{% endhighlight %}
+
+### Current page number in series axis
+The [`seriesCurrentPage`](/api/js/ejpivotpager#members:seriescurrentpage) property is used to specify the current page number in the series axis.
+
+{% highlight js %}
+
+<script type="text/javascript">
+
+    $("#PivotPager1").ejPivotPager({
+
+        seriesCurrentPage: 1
+
+        });
+
+</script>
+
+{% endhighlight %}
+
+### Page count in series axis
+The [`seriesPageCount`](/api/js/ejpivotpager#members:seriespagecount) property is used to specify the total page count in the series axis.
+
+{% highlight js %}
+
+<script type="text/javascript">
+
+    $("#PivotPager1").ejPivotPager({
+
+        seriesPageCount: 1
+
+        });
+</script>
+
+{% endhighlight %}
+
+### Target control ID in pivot pager
+The [`targetControlID`](/api/js/ejpivotpager#members:targetcontrolid) property is used to specify the ID of the target element for which paging needs to be done.
+
+{% highlight js %}
+
+<script type="text/javascript">
+
+    $("#PivotPager1").ejPivotPager({
+
+        targetControlID: "PivotGrid1"
+
+        });
+</script>
+
+{% endhighlight %}
+
+### Localization in pivot pager
+The [`locale`](/api/js/ejpivotpager#members:locale) property is used to set the localized language for the pivot pager widget.
+
+{% highlight js %}
+
+<script type="text/javascript">
+
+    $("#PivotPager1").ejPivotPager({
+
+        locale: "en-US"
+
+        });
+</script>
+
+{% endhighlight %}
+
+### Modes in pivot pager
+The [`mode`](/api/js/ejpivotpager#members:mode) property is used to set the pager mode for the pivot pager. The following table will explain the available modes in the pivot pager widget.
+
+| Mode | Description |
+|---|---|
+|Both|To set both categorical and series pager for paging.|
+|Categorical|To set only categorical pager for paging.|
+|Series|To set only series pager for paging.|
+
+{% highlight js %}
+
+<script type="text/javascript">
+
+    $("#PivotPager1").ejPivotPager({
+
+        mode: ej.PivotPager.Mode.Series
+
+        });
+</script>
+
+{% endhighlight %}
+
+
+# Pivot Schema Designer
+
+## Public Methods
+
+### Refresh the pivot schema designer with the report
+
+The [`refreshControl`](/api/js/ejpivotschemadesigner#methods:refreshControl) method is used to refresh the pivot schema designer component with the report available at that instant.
+
+{% highlight html %}
+
+<div id="PivotSchemaDesigner1"></div>
+
+<script>
+    $("#PivotSchemaDesigner1").ejPivotSchemaDesigner();
+    var schemaObj = $("#PivotSchemaDesigner1").data("ejPivotSchemaDesigner");
+    schemaObj.refreshControl();
+</script>
+
+{% endhighlight %}
+
+
+## Events
+
+### Invoking event in client-side after service invoke
+
+The [`afterServiceInvoke`](/api/js/ejpivotschemadesigner#events:afterserviceinvoke) event is triggered when it is reached client-side after the AJAX request.
+
+{% highlight javascript %}
+
+$("#PivotSchemaDesigner1").ejPivotSchemaDesigner({
+
+            //after service invoke event
+            afterServiceInvoke: function(args) {
+
+            },
+
+            //...
+        });
+
+{% endhighlight %}
+
+### Invoking event in client-side before service invoke
+
+The [`beforeServiceInvoke`](/api/js/ejpivotschemadesigner#events:beforeserviceinvoke) event is triggered before any AJAX request is passed from the pivot schema designer to service methods.
+
+{% highlight javascript %}
+
+$("#PivotSchemaDesigner1").ejPivotSchemaDesigner({
+
+            //before service invoke event
+            beforeServiceInvoke: function(args) {
+
+            },
+
+            //...
+        });
+
+{% endhighlight %}
+
+
+## Members
+
+### Localization in pivot schema designer
+The [`locale`](/api/js/ejpivotschemadesigner#members:locale) property is used to set the localized language for the pivot schema designer widget.
+
+{% highlight js %}
+
+<script type="text/javascript">
+
+    $("#PivotSchemaDesigner1").ejPivotSchemaDesigner({
+
+        locale: "en-US"
+
+        });
+</script>
+
+{% endhighlight %}
 
 
 
