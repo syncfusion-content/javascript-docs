@@ -356,7 +356,7 @@ $("#PivotGrid1").ejPivotGrid({
 ## Members
 
 ### Getting Raw items by triggering cell double click event
-Cell Double Click on pivot grid allows you to get Raw items of cell which is clicked. To enable cell double click event, you can use the [`enableCellDoubleClick`](/api/js/ejpivotgrid#members:enablecelldoubleclick) property. You can get the raw items of the cell through the [`cellDoubleClick`](/api/js/ejpivotgrid#events:celldoubleclick) event.
+Cell double click on pivot grid allows you to get the raw items of cell which is clicked. To enable the cell double click event, you can use the [`enableCellDoubleClick`](/api/js/ejpivotgrid#members:enablecelldoubleclick) property. You can get the raw items of the cell through the [`cellDoubleClick`](/api/js/ejpivotgrid#events:celldoubleclick) event.
 
 {% highlight javascript %}
 
@@ -375,7 +375,7 @@ Cell Double Click on pivot grid allows you to get Raw items of cell which is cli
 {% endhighlight %}
 
 ### Getting JSON format by triggering cell click event
-Cell Click on pivot grid allows you to get JSON format of cell which is clicked. To enable cell click event, you can use the [`enableCellClick`](/api/js/ejpivotgrid#members:enablecellclick) property. You can get the JSON format of the value cell through the [`cellClick`](/api/js/ejpivotgrid#events:cellclick) event.
+Cell click on pivot grid allows you to get JSON format of the cell which is clicked. To enable cell click event, you can use the [`enableCellClick`](/api/js/ejpivotgrid#members:enablecellclick) property. You can get the JSON format of the value cell through the [`cellClick`](/api/js/ejpivotgrid#events:cellclick) event.
 
 {% highlight javascript %}
 
@@ -393,7 +393,7 @@ $("#PivotGrid1").ejPivotGrid({
 {% endhighlight %}
 
 ### Enabling XMLHttpRequest object for CORS
-Allows you to enable “withCredentials” property inside XMLHttpRequest object for CORS(Cross-Origin Resource Sharing) request. This feature can be enabled by [`enableXHRCredentials`](/api/js/ejpivottreemap#members:enableXHRCredentials) property.
+Allows you to enable the “withCredentials” property in the XMLHttpRequest object for CORS(Cross-Origin Resource Sharing) request. This feature can be enabled by the [`enableXHRCredentials`](/api/js/ejpivottreemap#members:enableXHRCredentials) property.
 
 {% highlight javascript %}
 
@@ -406,7 +406,7 @@ $("#PivotGrid1").ejPivotGrid({
 {% endhighlight %}
 
 ### Enabling complete data export on pivot grid
-This feature allows you to export entire data instead of current page data, while paging option is enabled. it can be enabled by the [`enableCompleteDataExport`](/api/js/ejpivotgrid#members:enableCompleteDataExport) property.
+This feature allows you to export the entire data instead of current page data, while paging option is enabled. It can be enabled by using the [`enableCompleteDataExport`](/api/js/ejpivotgrid#members:enableCompleteDataExport) property.
 
 {% highlight javascript %}
 
@@ -419,7 +419,7 @@ $("#PivotGrid1").ejPivotGrid({
 {% endhighlight %}
 
 ### Maximum Node limit in Member Editor
-This feature allows you to set the maximum number of nodes as well as child nodes to be displayed in the member editor. It can be enabled by [`maxNodeLimitInMemberEditor`](/api/js/ejpivotgrid#members:maxNodeLimitInMemberEditor) property.
+This feature allows you to set the maximum number of nodes and child nodes to be displayed in the member editor. It can be enabled by using the [`maxNodeLimitInMemberEditor`](/api/js/ejpivotgrid#members:maxNodeLimitInMemberEditor) property.
 
 {% highlight javascript %}
 
