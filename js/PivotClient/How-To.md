@@ -529,7 +529,7 @@ The [`showReportCollection`](/api/js/ejpivotclient#members:showreportcollection)
 ![](How-To_images/reportCollection.png)
 
 ### Getting JSON format by triggering cell click event
-Cell Click on pivot grid allows you to get JSON format of cell which is clicked. To enable cell click event in pivot client, you can use the [`enableCellClick`](/api/js/ejpivotclient#members:enablecellclick) property. You can get the JSON format of the value cell through the [`cellClick`](/api/js/ejpivotclient#events:cellclick) event.
+Cell click on the pivot grid allows you to get JSON format of the cell which is clicked. To enable cell click event in the pivot client, you can use the [`enableCellClick`](/api/js/ejpivotclient#members:enablecellclick) property. You can get the JSON format of the value cell through the [`cellClick`](/api/js/ejpivotclient#events:cellclick) event.
 
 {% highlight javascript %}
 
@@ -546,7 +546,7 @@ $("#PivotClient1").ejPivotClient({
 {% endhighlight %}
 
 ### Enabling XMLHttpRequest object for CORS
-This feature allows you to enable “withCredentials” property inside XMLHttpRequest object for CORS(Cross-Origin Resource Sharing) request. It can be enabled by [`enableXHRCredentials`](/api/js/ejpivotclient#members:enableXHRCredentials) property.
+This feature allows you to enable the “withCredentials” property in the XMLHttpRequest object for CORS(Cross-Origin Resource Sharing) request. It can be enabled by the [`enableXHRCredentials`](/api/js/ejpivotclient#members:enableXHRCredentials) property.
 
 {% highlight javascript %}
 
@@ -559,7 +559,7 @@ $("#PivotClient1").ejPivotClient({
 {% endhighlight %}
 
 ### Enabling complete data export on pivot client
-This feature allows you to export entire data instead of current page data, while paging option is enabled. it can be enabled by the [`enableCompleteDataExport`](/api/js/ejpivotclient#members:enableCompleteDataExport) property.
+This feature allows you to export the entire data instead of current page data, while paging option is enabled. It can be enabled by the [`enableCompleteDataExport`](/api/js/ejpivotclient#members:enableCompleteDataExport) property.
 
 {% highlight javascript %}
 
@@ -572,7 +572,7 @@ $("#PivotClient1").ejPivotClient({
 {% endhighlight %}
 
 ### Maximum Node limit in Member Editor
-This feature allows you to set the maximum number of nodes as well as child nodes to be displayed in the member editor. It can be enabled by [`maxNodeLimitInMemberEditor`](/api/js/ejpivotclient#members:maxNodeLimitInMemberEditor) property.
+This feature allows you to set the maximum number of nodes and child nodes to be displayed in the member editor. It can be enabled by the [`maxNodeLimitInMemberEditor`](/api/js/ejpivotclient#members:maxNodeLimitInMemberEditor) property.
 
 {% highlight javascript %}
 
@@ -602,7 +602,7 @@ The [`serviceMethodSettings`](/api/js/ejpivotclient#members:servicemethodsetting
 |[removeDBReport](/api/js/ejpivotclient#members:servicemethodsettings-removedbreport)|It is responsible to remove a report collection from the database.|
 |[renameDBReport](/api/js/ejpivotclient#members:servicemethodsettings-renamedbreport)|It is responsible for renaming the report collection in the database.|
 |[filterElement](/api/js/ejpivotclient#members:servicemethodsettings-filterelement)|It fetches the filtered data that is required to render the control after performing filtering.|
-|[valueSorting](/api/js/ejpivotclient#members:servicemethodsettings-valuesorting)|It is responsible for performing value sorting operation in the PivotClient.|
+|[valueSorting](/api/js/ejpivotclient#members:servicemethodsettings-valuesorting)|It is responsible for performing value sorting operation in the pivot client.|
 
 ### OLAP
 
