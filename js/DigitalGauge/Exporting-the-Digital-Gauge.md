@@ -48,3 +48,15 @@ Execute the above code examples to render the **Digital****Gauge** as follows.
 
 ![](/js/DigitalGauge/Exporting-the-Digital-Gauge_images/Exporting-the-Digital-Gauge_img1.png)
 
+### Export Properties
+
+Each [`export`](../api/ejdigitalgauge#members:exportsettings-type) object contains the following list of properties.
+
+[`type`](../api/ejdigitalgauge#members:exportsettings-type) - Specifies the format of the file to export
+
+[`fileName`](../api/ejdigitalgauge#members:exportsettings-filename) - Specifies the downloading filename 
+
+[`action`](../api/ejdigitalgauge#members:exportsettings-action) - Specifies the name of the action URL 
+
+[`mode`](../api/ejdigitalgauge#members:exportsettings-mode) - Specifies the mode of exporting
+

@@ -239,7 +239,7 @@ If the treemap drilldown item is selected, then [`drillDownItemSelected`](../api
 
 ## legendItemRendering
 
-[`legendItemRendering`](../api/ejtreemap#events:legendItemRendering) event will trigger while rendering each legend item in treemap.
+[`legendItemRendering`](../api/ejtreemap#events:legenditemrendering) event will trigger while rendering each legend item in treemap.
 
 <table class="params">
     <thead>
