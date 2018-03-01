@@ -191,7 +191,7 @@ You can enable/disable the responsiveness in the browser layout for pivot tree m
 {% endhighlight %}
 
 ### Enabling XMLHttpRequest object for CORS
-Allows you to enable “withCredentials” property inside XMLHttpRequest object for CORS(Cross-Origin Resource Sharing) request. This feature can be enabled by [`enableXHRCredentials`](/api/js/ejpivottreemap#members:enableXHRCredentials) property.
+Allows you to enable the “withCredentials” property in the XMLHttpRequest object for CORS(Cross-Origin Resource Sharing) request. This feature can be enabled by using the [`enableXHRCredentials`](/api/js/ejpivottreemap#members:enableXHRCredentials) property.
 
 {% highlight html %}
 
