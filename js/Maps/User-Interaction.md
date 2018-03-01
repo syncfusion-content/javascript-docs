@@ -315,7 +315,7 @@ The panning feature enables the Map navigation. The [`enablePan`](../api/ejmap#m
 
 You can zoom the Map with mouse by using mouse wheel. When the mouse is wheeled, the Map is zoomed in.
 
-You can enable this feature by setting [`enableMouseWheel`](../api/ejmap#members:zoomsettings-enablemousewheel) property value as ‘_true_’. 
+You can enable this feature by setting [`enableMouseWheelZoom`](../api/ejmap#members:zoomsettings-enablemousewheelzoom) property value as ‘_true_’. 
 
 {% highlight javascript %}
 

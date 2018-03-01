@@ -171,7 +171,7 @@ Specifies the [`showBubble`](../api/ejmap#members:layers-bubblesettings-showbubb
 
 ### Add Bubbles to the Map
 
-To add bubbles to a map, the bubble marker setting is added to the shape file layer. Create the Model and ViewModel as illustrated in the Data Binding topic and add the following code. Also set the [`maxValue`](../api/ejmap#members:layers-bubblesettings-maxvalue), [`minValue`](../api/ejmap#members:layers-bubblesettings-minvalue), and [`valuePath`](../api/ejmap#members:layers-bubblesettings-valuepath) properties as illustrated in the following code sample.
+To add bubbles to a map, the bubble marker setting is added to the shape file layer. Create the Model and ViewModel as illustrated in the Data Binding topic and add the following code. Also set the [`maxValue`](../api/ejmap#members:layers-bubblesettings-maxvalue), [`minValue`](../api/ejmap#members:layers-bubblesettings-minvalue),['colorValuePath'](../api/ejmap#members:layers-bubblesettings-colorvaluepath) and [`valuePath`](../api/ejmap#members:layers-bubblesettings-valuepath) properties as illustrated in the following code sample.
 
 N> `Tooltip` and [`Color Mappings`](../api/ejmap#members:layers-bubblesettings-colormappings) for bubble is to be set as similar to the tooltip and color mappings set in the layers and shapeSettings. For more details, refer to the Tooltip and Color Mappings section.
 

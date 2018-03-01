@@ -45,3 +45,15 @@ Execute the above code to render the following output.
 
 ![](/js/CircularGauge/Exporting_images/Exporting_img1.png)
 
+### Export Properties
+
+Each [`export`](../api/ejcirculargauge#members:exportsettings-type) object contains the following list of properties.
+
+[`type`](../api/ejcirculargauge#members:exportsettings-type) - Specifies the format of the file to export
+
+[`fileName`](../api/ejcirculargauge#members:exportsettings-filename) - Specifies the downloading filename 
+
+[`action`](../api/ejcirculargauge#members:exportsettings-action) - Specifies the name of the action URL 
+
+[`mode`](../api/ejcirculargauge#members:exportsettings-mode) - Specifies the mode of exporting
+
