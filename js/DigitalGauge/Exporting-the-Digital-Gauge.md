@@ -50,7 +50,7 @@ Execute the above code examples to render the **Digital****Gauge** as follows.
 
 ### Export Properties
 
-Each [`export`](../api/ejdigitalgauge#members:exportsettings-type) object contains the following list of properties.
+Each [`export`](../api/ejdigitalgauge#members:exportsettings) object contains the following list of properties.
 
 [`type`](../api/ejdigitalgauge#members:exportsettings-type) - Specifies the format of the file to export
 
