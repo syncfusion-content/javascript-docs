@@ -206,6 +206,25 @@ $("#PivotChart1").ejPivotChart({
 
 ## Members
 
+### Enabling XMLHttpRequest object for CORS
+Allows you to enable “withCredentials” property inside XMLHttpRequest object for CORS(Cross-Origin Resource Sharing) request. This feature can be enabled by [`enableXHRCredentials`](/api/js/ejpivotchart#members:enableXHRCredentials) property.
+
+{% highlight html %}
+
+    <script type="text/javascript">
+        $(function() {
+            $("#PivotChart1").ejPivotChart({
+
+              enableXHRCredentials: true
+
+            });
+
+        });
+
+    </script>
+
+{% endhighlight %}
+
 ### Enabling context menu in pivot chart
 To improve user action, the context menu option in the pivot chart allows you to enable/disable the features with UI operations. This feature can be enabled by the [`enableContextMenu`](/api/js/ejpivotchart#members:enablecontextmenu) property.
 

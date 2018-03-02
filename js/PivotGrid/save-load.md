@@ -17,7 +17,7 @@ This support allows you to save and load the current report of the PivotGrid and
 
 ## Save report to database
 
-By using the current report name, storage option and url, you can save the current report of the PivotGrid to the database.
+By using the current report name, storage option, and url, you can save the current report of the pivot grid to the database. The [`saveReport`](/api/js/ejpivotgrid#methods:savereport) method will help you to save the report.
 
 {% highlight html %}
 

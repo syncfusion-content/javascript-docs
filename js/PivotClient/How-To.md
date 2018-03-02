@@ -285,7 +285,7 @@ The [`cellEdit`](/api/js/ejpivotclient#events:celledit) event is triggered when 
 {% endhighlight %}
 
 ### Triggering event on cell double-click in pivot grid
-The [`cellDoubleClick`](/api/js/ejpivotclient#events:celldoubleclick) event is triggered when you double-click any cell in the pivot grid.
+The [`cellDoubleClick`](/api/js/ejpivotclient#events:celldoubleclick) event is triggered when you double-click any cell in the pivot grid. It can be enabled through the [`enableCellDoubleClick`](/api/js/ejpivotclient#members:enablecelldoubleclick) property.
 
 {% highlight html %}
 
@@ -293,6 +293,9 @@ The [`cellDoubleClick`](/api/js/ejpivotclient#events:celldoubleclick) event is t
 
 <script>
     $("#PivotClient1").ejPivotClient({
+
+        enableCellDoubleClick: true,
+
         cellDoubleClick: function (args) { }
     });
 </script>
@@ -525,6 +528,62 @@ The [`showReportCollection`](/api/js/ejpivotclient#members:showreportcollection)
 
 ![](How-To_images/reportCollection.png)
 
+### Getting JSON format by triggering cell click event
+Cell click on the pivot grid allows you to get JSON format of the cell which is clicked. To enable cell click event in the pivot client, you can use the [`enableCellClick`](/api/js/ejpivotclient#members:enablecellclick) property. You can get the JSON format of the value cell through the [`cellClick`](/api/js/ejpivotclient#events:cellclick) event.
+
+{% highlight javascript %}
+
+$("#PivotClient1").ejPivotClient({
+
+        enableCellClick: true,
+
+        cellClick: function (args) {
+
+        }
+
+    });
+
+{% endhighlight %}
+
+### Enabling XMLHttpRequest object for CORS
+This feature allows you to enable the “withCredentials” property in the XMLHttpRequest object for CORS(Cross-Origin Resource Sharing) request. It can be enabled by the [`enableXHRCredentials`](/api/js/ejpivotclient#members:enableXHRCredentials) property.
+
+{% highlight javascript %}
+
+$("#PivotClient1").ejPivotClient({
+
+        enableXHRCredentials: true
+
+    });
+
+{% endhighlight %}
+
+### Enabling complete data export on pivot client
+This feature allows you to export the entire data instead of current page data, while paging option is enabled. It can be enabled by the [`enableCompleteDataExport`](/api/js/ejpivotclient#members:enableCompleteDataExport) property.
+
+{% highlight javascript %}
+
+$("#PivotClient1").ejPivotClient({
+
+          enableCompleteDataExport: true
+
+ });
+
+{% endhighlight %}
+
+### Maximum Node limit in Member Editor
+This feature allows you to set the maximum number of nodes and child nodes to be displayed in the member editor. It can be enabled by using the [`maxNodeLimitInMemberEditor`](/api/js/ejpivotclient#members:maxNodeLimitInMemberEditor) property.
+
+{% highlight javascript %}
+
+$("#PivotClient1").ejPivotClient({
+
+         maxNodeLimitInMemberEditor: 1500
+
+    });
+
+{% endhighlight %}
+
 
 ## Setting custom name to service methods
 The [`serviceMethodSettings`](/api/js/ejpivotclient#members:servicemethodsettings) allows you to set the custom name for methods in the WebAPI/WCF, communicated during the AJAX post.
@@ -540,7 +599,10 @@ The [`serviceMethodSettings`](/api/js/ejpivotclient#members:servicemethodsetting
 |[exportPivotClient](/api/js/ejpivotclient#members:servicemethodsettings-exportpivotclient)|It exports the pivot grid or pivot chart or both to the selected format.|
 |[fetchReportList](/api/js/ejpivotclient#members:servicemethodsettings-fetchreportlist)|It fetches the list of names of reports stored in the database.|
 |[loadReport](/api/js/ejpivotclient#members:servicemethodsettings-loadreport)|It loads the report with specified name from the database to the control.|
+|[removeDBReport](/api/js/ejpivotclient#members:servicemethodsettings-removedbreport)|It is responsible to remove a report collection from the database.|
+|[renameDBReport](/api/js/ejpivotclient#members:servicemethodsettings-renamedbreport)|It is responsible for renaming the report collection in the database.|
 |[filterElement](/api/js/ejpivotclient#members:servicemethodsettings-filterelement)|It fetches the filtered data that is required to render the control after performing filtering.|
+|[valueSorting](/api/js/ejpivotclient#members:servicemethodsettings-valuesorting)|It is responsible for performing value sorting operation in the pivot client.|
 
 ### OLAP
 
@@ -556,7 +618,7 @@ The [`serviceMethodSettings`](/api/js/ejpivotclient#members:servicemethodsetting
 |[mdxQuery](/api/js/ejpivotclient#members:servicemethodsettings-mdxquery)|It retrieves the MDX query that is formed to fetch the data at that instant.|
 |[toggleAxis](/api/js/ejpivotclient#members:servicemethodsettings-toggleaxis)|It fetches the data after interchanging the elements in row and column axes.|
 |[paging](/api/js/ejpivotclient#members:servicemethodsettings-paging)|It fetches the data when navigating between pages in the pivot client with the OLAP data.|
-|[drillThroughHierarchies](/api/js/ejpivotgrid#members:servicemethodsettings-drillthroughhierarchies)|It is responsible for performing the drill through operation.|
-|[drillThroughDataTable](/api/js/ejpivotgrid#members:servicemethodsettings-drillthroughdatatable)|It is responsible for performing the drill through operation in the data table.|
-|[calculatedMember](/api/js/ejpivotgrid#members:servicemethodsettings-calculatedmember)|It is used for updating the report with the calculated member.|
+|[drillThroughHierarchies](/api/js/ejpivotclient#members:servicemethodsettings-drillthroughhierarchies)|It is responsible for performing the drill through operation.|
+|[drillThroughDataTable](/api/js/ejpivotclient#members:servicemethodsettings-drillthroughdatatable)|It is responsible for performing the drill through operation in the data table.|
+|[calculatedMember](/api/js/ejpivotclient#members:servicemethodsettings-calculatedmember)|It is used for updating the report with the calculated member.|
 
