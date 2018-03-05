@@ -54,8 +54,6 @@ PDF viewer have the following external dependencies.
 
 * [JQuery](http://jquery.com/# "JQuery")
 
-* [JQuery.easing](http://gsgd.co.uk/sandbox/jquery/easing/# "JQuery.easing")
-
 The following table shows the list of ej widgets required for using the ejPdfViewer.
 
 <table>
@@ -209,14 +207,13 @@ You can find the scripts listed above and style sheets in any of the following l
 Local Disk: [Click here](https://help.syncfusion.com/js/installation-and-deployment# "Installation and deployment") to know more about script and style sheets installed in local machine.
 CDN Link: [Click here](https://help.syncfusion.com/js/cdn# "CDN scripts and styles links") to know more about script and style sheets available online.
 NuGet Package: [Click here](https://help.syncfusion.com/js/installation-and-deployment#configuring-syncfusion-nuget-packages "Configuring Syncfusion NuGet Packages") to know more about script and style sheets available in NuGet package.
+
 Add the script files and CSS files in the <head> tag of the Default.html page.
 
-
 {% highlight html %}
-<script src="assets/external/jquery-1.11.3.min.js" type="text/javascript"></script>
-<script src="assets/external/jquery.easing.1.3.min.js" type="text/javascript"></script>
-<script src="assets/scripts/web/ej.web.all.min.js" type="text/javascript"></script>
-<link href="assets/css/web/default-theme/ej.widgets.all.min.css" rel="stylesheet" type="text/css" />
+<link href="https://cdn.syncfusion.com/16.1.0.24/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
+<script src="https://cdn.syncfusion.com/js/assets/external/jquery-3.1.1.min.js"></script>
+<script src="https://cdn.syncfusion.com/16.1.0.24/js/web/ej.web.all.min.js"></script>
 {% endhighlight %}
 
 
