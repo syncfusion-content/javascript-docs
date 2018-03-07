@@ -59,3 +59,92 @@ Swimlane key categorization of Kanban control can be changed dynamically using s
 {% endhighlight %} 
 
 ![](how-to_images/how_to_img1.png)
+
+
+## How to customize the height of the column dropping area when multiple key bound
+
+ By default, height for the dropping clone area will be taken based on overall Kanban control height. Control height is divided into equal and assigned to each key cloned area. So, the user needs to scroll to drop to the specific cloned key area.
+
+**Solution:**
+
+To resolve this case, we can set the cloned area height to the visible area of Kanban instead of taking whole control height which is achieved through the code provided with the steps given.
+
+**Step 1**:  To show all dropping area relative to the card that we are dragging, we should customize it at the sample level using the Kanban [CardDrag](https://help.syncfusion.com/api/js/ejkanban#events:carddrag) event. Create the Kanban control as shown below with cardDrag event configured.
+
+ {% highlight html %}
+
+   $("#Kanban").ejKanban(
+                {
+                    dataSource: data,
+	                isResponsive:true,
+                    columns: [
+                        { headerText: "Backlog", key: "Open" },
+                        { headerText: "In Progress", key: "InProgress,Testing,Close" },
+                    ],                                                           			
+                    keyField: "Status",
+	                allowTitle: true,
+	                fields: {
+	                    content: "Summary",
+					    primaryKey: "Id",
+					    imageUrl: "ImgUrl"
+					},
+					allowSelection: false,
+					cardDrag:"cardDragFun"
+                });
+
+
+ {% endhighlight %}
+ 
+
+ **Step 2**: Add the following script to show the dynamic heights for dropping area with multiple keys within the given available space. This will also show all target column keys in the visible window space while scrolling.
+
+
+ {% highlight javascript %}
+
+   <script type="text/javascript">
+
+    function cardDragFun(e) {
+
+        if ($(e.dragTarget).hasClass('e-columnkey') || $(e.dragTarget).hasClass('e-rowcell')) {
+            var target;
+            $(e.dragTarget).hasClass('e-columnkey') ? target = $(e.dragTarget) : target = $(e.dragTarget).find('.e-columnkey');
+            if (target.hasClass('e-columnkey')) {
+                var scrollTop, height, scrollElem;
+                var multiKeyDiv = target.parent();
+                multiKeyDiv.css('vertical-align', 'top');
+                if (this.model.allowScrolling && this.kanbanContent.hasClass('e-scroller')) {
+                    var scrollObj = this.kanbanContent.data('ejScroller');
+                    scrollTop = scrollObj.scrollTop();
+                    height = this.kanbanContent.height();
+                }
+                else {
+                    scrollElem = document.scrollingElement ? document.scrollingElement : document.documentElement
+                    scrollTop = scrollElem.scrollTop === 0 ? 0 : (scrollElem.scrollTop > target.parents('.e-rowcell')[0].offsetTop ? scrollElem.scrollTop - target.parents('.e-rowcell')[0].offsetTop : target.parents('.e-rowcell')[0].offsetTop - scrollElem.scrollTop);
+                    height = $(window).height() - (scrollElem.scrollTop > target.parents('.e-rowcell')[0].offsetTop ? 0 : target.parents('.e-rowcell')[0].offsetTop - scrollElem.scrollTop);
+                    if ((window.innerHeight + window.scrollY) >= Math.round(document.body.offsetHeight)) {
+                        height = height - ($(document).height() - (target.parents('.e-rowcell')[0].offsetHeight + target.parents('.e-rowcell')[0].offsetTop))
+                    }
+                }
+                multiKeyDiv.height(height);
+                var innerHeight = height / multiKeyDiv.children().length;
+                multiKeyDiv.children().height(innerHeight);
+                scrollTop > 0 ? multiKeyDiv.css('top', scrollTop) : multiKeyDiv.css('top', '');
+                multiKeyDiv.find('.e-text').css('top', innerHeight / 2);
+            }
+        }
+    }
+
+</script>
+
+  {% endhighlight %}
+
+
+**Before Customization:**
+
+  ![Before Customization image](how-to_images\Before_img.png)
+
+
+**After Customization:**
+  
+  ![After Customization image](how-to_images\After_img.png)
+   
