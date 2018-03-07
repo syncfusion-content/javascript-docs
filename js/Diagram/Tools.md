@@ -114,6 +114,47 @@ diagram.update({
 
 Once you activate the TextTool, you can also able to perform label editing of a node/connector.
 
+### Polygon Shape
+
+Diagram allows to create the polygon shape by clicking and moving the mouse at run time on the diagram page. 
+
+The following code illustrates how to draw a polygon shape.
+
+{% highlight javascript %}
+
+    var diagram = $("#diagram").ejDiagram("instance");
+    // set the default segment type as polyline
+    diagram.model.drawType = {
+        type: ej.datavisualization.Diagram.Shapes.Basic,
+		shape: ej.datavisualization.Diagram.BasicShapes.Polygon
+    };
+    var tool = diagram.tool();
+    //To draw an object once, activate draw once
+    diagram.update({ tool: tool | ej.datavisualization.Diagram.Tool.DrawOnce })
+
+{% endhighlight %}
+
+### Polyline Connector
+
+Diagram allows to create the polyline segments with straight lines and angled vertices at the control points by clicking and moving the mouse at run time on the diagram page. 
+
+The following code illustrates how to draw a polyline connector.
+
+{% highlight javascript %}
+
+    var diagram = $("#diagram").ejDiagram("instance");
+    // set the default segment type as polyline
+    diagram.model.drawType = {
+        type: "connector",
+        segments: [{ type: "polyline" }]
+    };
+    var tool = diagram.tool();
+    //To draw an object once, activate draw once
+    diagram.update({ tool: tool | ej.datavisualization.Diagram.Tool.DrawOnce })
+
+{% endhighlight %}
+
+
 ### SetTool
 
 * The [setTool](/api/js/ejdiagram#events:settool "setTool") method is provided for the purpose to decide which action needs to be performed when mouse hover on the port such as whether to draw connector on port hover or drag ports and it can be decided by using setTool's `action` argument. 
