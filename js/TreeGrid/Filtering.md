@@ -251,6 +251,37 @@ $("#TreeGridContainer").ejTreeGrid({
 The above screenshot shows TreeGrid with filtering blank content.
 {:.caption}
 
+### Filter Hierarchy Modes
+
+TreeGrid provides support for a set of filtering modes with [`filterHierarchyMode`](/api/js/ejtreegrid#members:filtersettings-filterhierarchymode "filterSettings.filterHierarchyMode") property.
+The below are the type of filter mode available in TreeGrid.
+
+`Parent `: This is the default filter hierarchy mode in TreeGrid. The filtered record displayed with its parent records, if the filtered records not have any parent record then the filtered record only displayed.
+
+`Child`  : The filtered record displayed with its child record, if the filtered records not have any child record then the filtered record only displayed.
+
+`Both`   : The filtered record displayed with its both parent and child record, if the filtered records not have any parent and child record then the filtered record only displayed.
+
+`None`   : The filtered record only displayed.
+
+The following code example shows how to set filter mode in TreeGrid.
+{% highlight js %}
+
+$("#TreeGridContainer").ejTreeGrid(
+   {
+          //..
+         filterSettings: {
+                filterHierarchyMode: ej.TreeGrid.FilterHierarchyMode.Child
+          }
+
+});
+
+{% endhighlight %}
+
+![](/js/TreeGrid/Filtering_images/filterHierarchyMode.png)
+
+The above screenshot shows TreeGrid filter with `child` filter mode.
+
 ## Filter columns at initial load
 It is also possible to filter one or more columns at load time by providing the [`field`](/api/js/ejtreegrid#members:filtersettings-filteredcolumns-field "filterSettings.filteredColumns.field"), [`value`](/api/js/ejtreegrid#members:filtersettings-filteredcolumns-value "filterSettings.filteredColumns.value"), [`predicate`](/api/js/ejtreegrid#members:filtersettings-filteredcolumns-predicate "filterSettings.filteredColumns.predicate") and [`operator`](/api/js/ejtreegrid#members:filtersettings-filteredcolumns-operator "filterSettings.filteredColumns.operator") to the [`filteredColumns`](/api/js/ejtreegrid#members:filtersettings-filteredcolumns "filterSettings.filteredColumns") property. The following code example explains how to filter a column on initial load.
 
