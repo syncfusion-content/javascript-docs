@@ -126,7 +126,7 @@ The following code illustrates how to draw a polygon shape.
     // set the default segment type as polyline
     diagram.model.drawType = {
         type: ej.datavisualization.Diagram.Shapes.Basic,
-		shape: "polygon"
+		shape: ej.datavisualization.Diagram.BasicShapes.Polygon
     };
     var tool = diagram.tool();
     //To draw an object once, activate draw once
