@@ -393,7 +393,7 @@ $("#PivotGrid1").ejPivotGrid({
 {% endhighlight %}
 
 ### Enabling XMLHttpRequest object for CORS
-Allows you to enable the “withCredentials” property in the XMLHttpRequest object for CORS(Cross-Origin Resource Sharing) request. This feature can be enabled by the [`enableXHRCredentials`](/api/js/ejpivottreemap#members:enableXHRCredentials) property.
+Allows you to enable the “withCredentials” property in the XMLHttpRequest object for CORS(Cross-Origin Resource Sharing) request. This feature can be enabled by the [`enableXHRCredentials`](/api/js/ejpivotgrid#members:enableXHRCredentials) property.
 
 {% highlight javascript %}
 
