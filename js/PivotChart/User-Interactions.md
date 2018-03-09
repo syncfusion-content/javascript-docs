@@ -197,7 +197,7 @@ $(function()
 
 ### Enable scrollbar
 
-* When [`zooming.enableScrollbar`](/api/js/ejpivotchart#members:zooming-enablescrollbar) is set to true, the pivot chart is rendered along with scroll bars for a precise view of the data. The data can be viewed by using the scroll bar or by scrolling the mouse wheel.
+* When [`enableScrollbar`](/api/js/ejpivotchart#members:zooming-enablescrollbar) under [`zooming`](/api/js/ejpivotchart#members:zooming) is set to true, the pivot chart is rendered along with scroll bars for a precise view of the data. The data can be viewed by using the scroll bar or by scrolling the mouse wheel.
 
 {% highlight javascript %}
 
