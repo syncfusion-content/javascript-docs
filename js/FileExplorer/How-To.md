@@ -395,4 +395,8 @@ It used to search all the matched files and sub-folders in the given folder path
 </td></tr>
 </table>
 
+## Customize the Root Folder name in FileExplorer
 
+You can set the alias name for root folder name in FileExplorer by using rootFolderName API. It is used to replace the actual root folder name in the FileExplorer UI. Refer to the below sample for set the alias name for root folder name in FileExplorer.
+
+Sample Link: [link](http://jsplayground.syncfusion.com/psx0vwle)
