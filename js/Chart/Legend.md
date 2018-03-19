@@ -322,7 +322,7 @@ You can customize the legend opacity by using the [`opacity`](../api/ejchart#mem
 
 ### Scrollbar for legend
 
-You can enable or disable the legend scrollbar by using the [`enableScrollbar`](../api/ejchart#members:legend-enablescrollbar) option of the legend. When you disable the scrollbar option, the legend does not consider the [`default size`](legend.html#legend-size) and chart draws in the reaming space. The default value of [`enableScrollbar`](../api/ejchart#members:legend-enablescrollbar) option is **true**.  
+You can enable or disable the legend scrollbar by using the [`enableScrollbar`](../api/ejchart#members:legend-enablescrollbar) option of the legend. When you disable the scrollbar option, the legend does not consider the [`default size`](legend.html#legend-size) and chart draws in the remaining space. If you have specified the [`size`](legend.html#legend-size) to the legend with the scrollbar disabled, then the legends beyond this limit will get clipped. The default value of [`enableScrollbar`](../api/ejchart#members:legend-enablescrollbar) option is **true**.  
 
 {% highlight javascript %}
 
