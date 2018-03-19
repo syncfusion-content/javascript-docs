@@ -1,4 +1,4 @@
-﻿---
+---
 title: How To| FileExplorer | Syncfusion
 description: How to do - section for FileExplorer
 platform: JS
