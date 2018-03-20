@@ -2,7 +2,7 @@
 layout: post
 title: Markers Customization
 description: Learn how to add markers to Sparkline.
-platform: ts
+platform: js
 control: Sparkline
 documentation: ug
 api: /api/js/ejsparkline
