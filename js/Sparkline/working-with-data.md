@@ -2,7 +2,7 @@
 layout: post
 title: Data binding
 description: Learn how to bind Sparkline with local data.
-platform: ts
+platform: js
 control: Sparkline
 documentation: ug
 api: /api/js/ejsparkline
