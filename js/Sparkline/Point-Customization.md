@@ -2,7 +2,7 @@
 layout: post
 title: Point Customization
 description: Learn how to customize points in Sparkline.
-platform: ts
+platform: js
 control: Sparkline
 documentation: ug
 api: /api/js/ejsparkline

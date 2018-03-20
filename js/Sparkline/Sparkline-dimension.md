@@ -2,7 +2,7 @@
 layout: post
 title: Sparkline size
 description: Learn how to set Sparkline size and make it responsive. 
-platform: ts
+platform: js
 control: Sparkline
 documentation: ug
 api: /api/js/ejsparkline

@@ -2,7 +2,7 @@
 layout: post
 title: Overview of Sparkline
 description: What are the key features available in sparkline.
-platform: ts
+platform: js
 control: Sparkline
 documentation: ug
 api: /api/js/ejsparkline

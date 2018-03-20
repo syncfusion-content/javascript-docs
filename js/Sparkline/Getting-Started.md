@@ -2,7 +2,7 @@
 layout: post
 title: Getting Started for Essential JavaScript Sparkline
 description: How to create a sparkline.
-platform: ts
+platform: js
 control: Sparkline
 documentation: ug
 api: /api/js/ejsparkline
