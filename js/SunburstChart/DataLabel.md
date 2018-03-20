@@ -2,7 +2,7 @@
 layout: post
 title: Datalabel Customization
 description: Learn how to customize datalabels in Sunburst Chart.
-platform: ts
+platform: js
 control: SunburstChart
 documentation: ug
 api: /api/js/ejsunburstchart

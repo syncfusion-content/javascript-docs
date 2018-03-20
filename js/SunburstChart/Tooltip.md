@@ -2,7 +2,7 @@
 layout: post
 title: Tooltip
 description: Learn how to add Tooltip to Sunburstchart .
-platform: ts
+platform: js
 control: Sunburst Chart
 documentation: ug
 api: /api/js/ejsunburstchart

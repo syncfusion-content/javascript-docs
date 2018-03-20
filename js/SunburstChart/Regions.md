@@ -2,7 +2,7 @@
 layout: post
 title: Sunburst elements 
 description: Learn how to customize the sunburst segments 
-platform: ts
+platform: js
 control: SunburstChart
 documentation: ug
 api: /api/js/ejsunburstchart
