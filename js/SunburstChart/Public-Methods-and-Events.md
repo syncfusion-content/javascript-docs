@@ -2,7 +2,7 @@
 layout: post
 title: Public Methos and Events
 description: Learn how to add public methos and events to Sunburstchart .
-platform: ts
+platform: js
 control: Sunburst Chart
 documentation: ug
 api: /api/js/ejsunburstchart
