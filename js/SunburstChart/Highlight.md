@@ -2,7 +2,7 @@
 layout: post
 title: Highlight
 description: What are the different modes of highlight present in the Sunburst Chart
-platform: ts
+platform: js
 control: Sunburst Chart
 documentation: ug
 api: /api/js/ejsunburstchart
