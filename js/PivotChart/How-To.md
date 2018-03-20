@@ -263,7 +263,7 @@ The following are the available features in the context menu:
 
 ![](How-To_images/3DCharts.png)
 
-* `Exporting`: You can export the chart in different formats given in the following image. You have to mention the export settings through the[`beforeExport`](../api/js/ejpivotchart#events:beforeexport) event.
+* `Exporting`: You can export the chart in different formats given in the following image. You have to mention the export settings through the[`beforeExport`](/api/js/ejpivotchart#events:beforeexport) event.
 
 ![](How-To_images/exporting.png)
 
