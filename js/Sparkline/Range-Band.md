@@ -2,7 +2,7 @@
 layout: post
 title: RangeBand
 description: Learn how to add Rangeband to Sparkline .
-platform: ts
+platform: js
 control: Sparkline
 documentation: ug
 api: /api/js/ejsparkline

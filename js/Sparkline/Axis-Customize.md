@@ -2,7 +2,7 @@
 layout: post
 title: Axis Customize
 description: Learn how to customize axis in Sparkline.
-platform: ts
+platform: js
 control: Sparkline
 documentation: ug
 api: /api/js/ejsparkline

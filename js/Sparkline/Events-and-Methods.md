@@ -2,7 +2,7 @@
 layout: post
 title: Events and Methods
 description: Learn how to add Events and Methods in Sparkline.
-platform: ts
+platform: js
 control: Sparkline
 documentation: ug
 api: /api/js/ejsparkline

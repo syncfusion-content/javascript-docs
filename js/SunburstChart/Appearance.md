@@ -2,7 +2,7 @@
 layout: post
 title: Appearance
 description: What are the different ways to customize the SunburstChart 
-platform: ts
+platform: js
 control: SunburstChart
 documentation: ug
 api: /api/js/ejsunburstchart

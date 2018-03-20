@@ -2,7 +2,7 @@
 layout: post
 title: Customization for Essential JavaScript Sparkline
 description: Learn how to customize the Sparkline .
-platform: ts
+platform: js
 control: Sparkline
 documentation: ug
 api: /api/js/ejsparkline

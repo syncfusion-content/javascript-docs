@@ -2,7 +2,7 @@
 layout: post
 title: Sparkline types
 description: What are the different types of Sparkline available in Essential JavaScript Chart.
-platform: ts
+platform: js
 control: Sparkline
 documentation: ug
 api: /api/js/ejsparkline

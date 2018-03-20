@@ -2,7 +2,7 @@
 layout: post
 title: Levels
 description: Learn how to customize various levels in SunburstChart
-platform: ts
+platform: js
 control: SunburstChart
 documentation: ug
 api: /api/js/ejsunburstchart

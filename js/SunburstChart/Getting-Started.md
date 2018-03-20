@@ -2,7 +2,7 @@
 layout: post
 title: Getting Started for Essential JavaScript SunburstChart
 description: How to create a SunburstChart.
-platform: ts
+platform: js
 control: SunburstChart
 documentation: ug
 api: /api/js/ejsunburstchart

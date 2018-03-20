@@ -2,7 +2,7 @@
 layout: post
 title: Overview of Sunburst Chart
 description: What are the key features available in SunburstChart.
-platform: ts
+platform: js
 control: SunburstChart
 documentation: ug
 api: /api/js/ejsunburstchart
