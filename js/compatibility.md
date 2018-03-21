@@ -74,7 +74,7 @@ Please refer the below code snippet.
 
 <! -- Style sheet for default theme (flat Azure) -- >
 <link href="http://cdn.syncfusion.com/16.1.0.24/js/web/ej.widgets.core.compatibility.min.css" rel="stylesheet" />
-<link href="http://cdn.syncfusion.com/16.1.0.24/js/web/default-theme/ej.theme.compatibility.min.css" rel="stylesheet" />
+<link href="http://cdn.syncfusion.com/16.1.0.24/js/web/flat-azure/ej.theme.compatibility.min.css" rel="stylesheet" />
 
 {% endhighlight %}
 
@@ -108,12 +108,12 @@ Please find the below html code.
 
 <body>
     <div style="margin: 50px;">
-        <!-- Add HTML Button element for Essential JS 1 -->
-        <button id="btn1">Essential JS 1</button>
-    </div>
-    <div style="margin: 50px;">
         <!-- Add HTML Button element for Essential JS 2 -->
         <button id="btn2">Essential JS 2</button>
+    </div>
+	<div style="margin: 50px;">
+        <!-- Add HTML Button element for Essential JS 1 -->
+        <button id="btn1">Essential JS 1</button>
     </div>
 </body>
 
