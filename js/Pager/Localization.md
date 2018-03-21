@@ -1,14 +1,14 @@
 ---
 layout: post
-title: globalization
-description: globalization
+title: localization
+description: localization
 platform: js
 control: Pager
 documentation: ug
 api: /api/js/ejpager
 ---
 
-# Globalization
+# Localization
 
 Pager has been provided with built in localization support with different culture .
 
