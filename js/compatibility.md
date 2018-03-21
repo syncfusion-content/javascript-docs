@@ -73,8 +73,7 @@ Please refer the below code snippet.
 {% highlight html %}
 
 <! -- Style sheet for default theme (flat Azure) -- >
-<link href="http://cdn.syncfusion.com/16.1.0.24/js/web/ej.widgets.core.compatibility.min.css" rel="stylesheet" />
-<link href="http://cdn.syncfusion.com/16.1.0.24/js/web/flat-azure/ej.theme.compatibility.min.css" rel="stylesheet" />
+<link href="http://cdn.syncfusion.com/16.1.0.24/js/web/flat-azure/ej.web.all.compatibility.min.css" rel="stylesheet" />
 
 {% endhighlight %}
 
