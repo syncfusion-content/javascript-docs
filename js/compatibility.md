@@ -20,9 +20,9 @@ Please find the below code for script references.
 {% highlight html %}
 
 <!-- Essential JS 1 script -->
-<script src="//cdn.syncfusion.com/15.4.0.17/js/web/ej.web.all.min.js"></script>
+<script src="http://cdn.syncfusion.com/16.1.0.24/js/web/ej.web.all.min.js"></script>
 <!-- Essential JS 2 script -->
-<script src="//cdn.syncfusion.com/ej2/dist/ej2.min.js" type="text/javascript"></script>
+<script src="http://cdn.syncfusion.com/ej2/dist/ej2.min.js" type="text/javascript"></script>
 <script>
     //Extend ej namespace with Syncfusion
       $.extend(ej, Syncfusion)
@@ -72,7 +72,7 @@ Please refer the below code snippet.
 
 {% highlight html %}
 
-<! -- Style sheet for default theme (flat Azure) -- >
+<!-- Style sheet for default theme (flat Azure) -->
 <link href="http://cdn.syncfusion.com/16.1.0.24/js/web/flat-azure/ej.web.all.compatibility.min.css" rel="stylesheet" />
 
 {% endhighlight %}
@@ -91,15 +91,13 @@ Please find the below html code.
 
 <head>
     <title>Essential JS 2 - Essential JS 1</title>
-
     <!-- Essential JS 1 default theme -->
-    <link href=" http://cdn.syncfusion.com/16.1.0.24/js/web/ej.widgets.core.compatibility.min.css " rel="stylesheet" type="text/css" />
-<link href=" http://cdn.syncfusion.com/16.1.0.24/js/web/default-theme/ej.theme.compatibility.min.css " rel="stylesheet" type="text/css" />
+    <link href=" http://cdn.syncfusion.com/16.1.0.24/js/web/flat-azure/ej.web.all.compatibility.min.css " rel="stylesheet" type="text/css" />
     <!-- Essential JS 2 material theme -->
     <link href="https://cdn.syncfusion.com/ej2/styles/compatibility/material.css" rel="stylesheet" type="text/css" />
     <!-- Essential JS 1 scripts -->
-    <script src="https://cdn.syncfusion.com/16.1.0.24/js/assets/external/jquery-1.10.2.min.js" type="text/javascript"></script>
-    <script src="https://cdn.syncfusion.com/16.1.0.24/js/assets/external/jquery.easing.1.3.min.js" type="text/javascript"></script>
+    <script src="https://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js" type="text/javascript"></script>
+    <script src="https://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js" type="text/javascript"></script>
     <script src=" https://cdn.syncfusion.com/16.1.0.24/js/web/ej.web.all.min.js" type="text/javascript"></script>
     <!-- Essential JS 2 script -->
     <script src=" https://cdn.syncfusion.com/ej2/dist/ej2.min.js" type="text/javascript"></script>
