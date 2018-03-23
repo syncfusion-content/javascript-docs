@@ -1,7 +1,7 @@
 ---
 layout: post
-title: NuGet Packages in Windows | JavaScript | Syncfusion
-description: NuGet Packages in Windows
+title: NuGet Packages | JavaScript | Syncfusion
+description: NuGet Packages
 platform: JavaScript
 control: NuGet Packages
 documentation: ug
