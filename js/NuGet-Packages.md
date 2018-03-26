@@ -2,7 +2,7 @@
 layout: post
 title: NuGet Packages | JavaScript | Syncfusion
 description: NuGet Packages
-platform: JavaScript
+platform: js
 control: NuGet Packages
 documentation: ug
 ---
