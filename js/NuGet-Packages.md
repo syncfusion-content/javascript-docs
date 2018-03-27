@@ -1,6 +1,6 @@
 ---
 layout: post
-title: NuGet Packages | JavaScript | Syncfusion
+title: JavaScript | NuGet Packages | Syncfusion
 description: NuGet Packages
 platform: js
 control: NuGet Packages
