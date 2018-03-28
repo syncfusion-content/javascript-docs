@@ -349,7 +349,7 @@ $("#filterContent").click(function (args) {
 </script>
 
 {% endhighlight %}
-The below screenshot show the output of above code example.
+The below screenshot shows the output of above code example.
 
 ![](/js/TreeGrid/Filtering_images/Filtering_img11.png)
 
