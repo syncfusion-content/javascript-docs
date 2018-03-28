@@ -35,9 +35,9 @@ The output of the filtering applied for a column is as follows.
 
 ![](Filtering_images/Filtering_img1.png)
 
-## Filtering a specific column by public method
+## Filtering a specific column by method
 
-It is possible to filter columns dynamically by using the [`filterColumn`](/api/js/ejgantt#methods:filtercolumn) public method. 
+It is possible to filter columns dynamically by using the [`filterColumn`](/api/js/ejgantt#methods:filtercolumn) method. 
 The below code snippet explains the above behavior.
 
 {% highlight js %}
@@ -56,6 +56,34 @@ $("#filterColumn").click(function (args) {
 </script>
 
 {% endhighlight %}
+
+## Filtering multiple columns dynamically
+
+It is possible to filtering multiple columns dynamically by using the [`filterContent`](/api/js/ejgantt#methods:filtercontent) method. 
+The below code snippet explains how to filter multiple columns dyanmically in Gantt.
+
+{% highlight js %}
+
+<button id="filterContent">filterContent</button>
+
+<script type="text/javascript">
+$("#GanttContainer").ejGantt({
+    //...    
+})
+
+$("#filterContent").click(function (args) {
+       var obj = $("#GanttContainer").ejGantt("instance");
+       var predicate = ej.Predicate("taskName", ej.FilterOperators.startsWith, "Plan", true)
+                             .or("taskName", ej.FilterOperators.equal, "Software Specification", true)
+                             .and("progress", ej.FilterOperators.notEqual, 0, true);
+           obj.filterContent(predicate);
+})
+</script>
+
+{% endhighlight %}
+The output of the filtering applied for a column is as follows.
+
+![](Filtering_images/Filtering_img2.png)
 
 
 ## Clearing the filter applied to Gantt
