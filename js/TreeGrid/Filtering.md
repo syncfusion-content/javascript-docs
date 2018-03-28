@@ -327,7 +327,7 @@ The output of the filtering enabled for only one column is as follows.
 ## Filtering multiple columns dynamically
 
 It is possible to filtering multiple columns dynamically by using the [`filterContent`](/api/js/ejtreegrid#methods:filtercontent) method. 
-The below code snippet explains how to filter mulitple columns dynamically in TreeGrid
+The below code snippet explains how to filter multiple columns dynamically in TreeGrid.
 
 {% highlight js %}
 
@@ -349,7 +349,7 @@ $("#filterContent").click(function (args) {
 </script>
 
 {% endhighlight %}
-The output of the filtering applied for a column is as follows.
+The below screenshot show the output of above code example.
 
 ![](/js/TreeGrid/Filtering_images/Filtering_img11.png)
 

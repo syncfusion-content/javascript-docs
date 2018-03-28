@@ -60,7 +60,7 @@ $("#filterColumn").click(function (args) {
 ## Filtering multiple columns dynamically
 
 It is possible to filtering multiple columns dynamically by using the [`filterContent`](/api/js/ejgantt#methods:filtercontent) method. 
-The below code snippet explains how to filter multiple columns dyanmically in Gantt.
+The below code snippet explains how to filter multiple columns dynamically in Gantt.
 
 {% highlight js %}
 
@@ -81,7 +81,7 @@ $("#filterContent").click(function (args) {
 </script>
 
 {% endhighlight %}
-The output of the filtering applied for a column is as follows.
+The below screenshot show the output of above code example.
 
 ![](Filtering_images/Filtering_img2.png)
 
