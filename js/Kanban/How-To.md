@@ -147,4 +147,31 @@ To resolve this case, we can set the cloned area height to the visible area of K
 **After Customization:**
   
   ![After Customization image](how-to_images\After_img.png)
-   
+
+## Customize the style of dragged Kanban card
+
+Default styles of dragged Kanban card can be customized with CSS overriding of class **e-draggedcard**. Styles such as cards color, fonts, and any other styles can be achieved as per the user need.  Here we have modified background and font styles of card while dragging.
+
+{% highlight html %}
+
+<style>
+
+    .e-kanban .e-draggedcard {  //changes the background color
+        background: pink;
+    }
+
+    .e-kanban .e-draggedcard .e-text { //changes the font size
+        font-size: 16px;
+    }
+</style>
+
+ {% endhighlight %}
+
+ **Before Customization:**
+
+  ![Before Customization image](how-to_images\Before_img1.png)
+
+
+**After Customization:**
+  
+  ![After Customization image](how-to_images\After_img1.png)
