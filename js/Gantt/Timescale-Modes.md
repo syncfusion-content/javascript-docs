@@ -219,3 +219,34 @@ $("#GanttContainer").ejGantt({
 ![](/js/Gantt/Timescale-Modes_images/Timescale-Modes_img6.png)
 
 [Click](http://js.syncfusion.com/demos/web/#!/bootstrap/gantt/schedulingconcepts/timescalemodes) here to view the timescale modes in Gantt.
+
+
+## Customize automatic timescale update action
+
+In Gantt, schedule timeline will be automatically updated when the tasks are edited beyond the schedule start date and end date range. This can be enabled/disabled by using [`updateTimescaleView`](/api/js/ejgantt#members:scheduleheadersettings-updatetimescaleview "scheduleHeaderSettings.updateTimescaleView") property.
+The following code snippets shows how to prevent the automatic timescale update in Gantt.
+
+{% highlight javascript %}
+$("#GanttContainer").ejGantt({
+	// ... 
+	scheduleHeaderSettings: {
+		scheduleHeaderType: ej.Gantt.ScheduleHeaderType.Week,
+  		updateTimescaleView : false
+ 	},
+	// ...
+});
+{% endhighlight %}
+
+The following screenshot illustrates the behavior of `updateTimescaleView` property.
+
+![](/js/Gantt/Timescale-Modes_images/Timescale-Modes_img7.png)
+At Initial load
+{:.caption}
+
+![](/js/Gantt/Timescale-Modes_images/Timescale-Modes_img8.png)
+`updateTimescaleView` property as `false`
+{:.caption}
+
+![](/js/Gantt/Timescale-Modes_images/Timescale-Modes_img9.png)
+`updateTimescaleView` property as `true`
+{:.caption}
