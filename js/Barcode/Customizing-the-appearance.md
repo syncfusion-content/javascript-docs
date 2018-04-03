@@ -90,7 +90,7 @@ To hide the text in the barcode use the property [displayText](/api/js/ejbarcode
  });
 {% endhighlight %}
 
-##Visiblity of barcode
+##Visibility of barcode
 To check if the barcode control is enabled use the property [enabled](/api/js/ejbarcode#members:enabled) and the event [load](/api/js/ejbarcode#events:load) will be triggered once the barcode is loaded.
 
 To disable the barcode use the method [disable()](/api/js/ejbarcode#methods:disable).
