@@ -43,7 +43,7 @@ Add `div` container for barcode rendering.
 <div id="barcode"></div>
 {% endhighlight %}
 
-Set the `symbologyType` and provide input URL to the `text` property to render the QR Code.
+Set the [symbologyType](/api/js/ejbarcode#members:symbologytype) and provide input URL to the [text](/api/js/ejbarcode#members:text) property to render the QR Code.
 
 {% highlight javascript %}
 <script type="text/javascript">
@@ -89,7 +89,7 @@ Add `div` container for barcode rendering.
 <div id="barcode"></div>
 {% endhighlight %}
 
-Set the `symbologyType` and provide input to the `text` property to render the Code39 barcode.
+Set the [symbologyType](/api/js/ejbarcode#members:symbologytype) and provide input to the [text](/api/js/ejbarcode#members:text) property to render the Code39 barcode.
 
 {% highlight javascript %}
 $("#barcode").ejBarcode({
@@ -100,8 +100,3 @@ $("#barcode").ejBarcode({
 
 
 ![](/js/Barcode/Getting-Started_images/Getting-Started_img3.png)
-
-## Customizing the Barcode appearance
-The height of the barcode can be changed using the [barHeight](/api/js/ejBarcode#barheightspan-classtype-signature-type-numbernumberspan) property. The equivalent property to change the block size for two dimensional barcode is [xDimension](/api/js/ejBarcode#xdimensionspan-classtype-signature-type-numbernumberspan). You can also customize the barcode color by changing the [darkBarColor](/api/js/ejBarcode#darkbarcolorspan-classtype-signature-type-objectobjectspan) and [lightBarColor](/api/js/ejbarcode#lightbarcolorspan-classtype-signature-type-objectobjectspan) properties.
-
-N>    This color customization is possible only for one dimensional barcodes and it is not supported for two dimensional barcodes.
