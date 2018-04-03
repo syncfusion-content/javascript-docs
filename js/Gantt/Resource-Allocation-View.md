@@ -198,6 +198,7 @@ $("#update").click(function () {
     var ganttObject = $("#resourceGantt").ejGantt("instance");
     var task = {};
     task.taskID = 3;
+    task.resourceId = [1, 2, 3];
     task.startDate = new Date("02/25/2017")
     task.duration = 10;
     task.taskName = task.taskID + " - Name Changed";
