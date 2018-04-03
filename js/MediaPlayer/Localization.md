@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Globalization with MediaPlayer
+title: Localization with MediaPlayer
 description: To get start with MediaPlayer by adding references.
 platform: js
 control: MediaPlayer
