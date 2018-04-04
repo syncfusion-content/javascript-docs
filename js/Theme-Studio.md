@@ -208,7 +208,7 @@ The compatibility CSS supports to use both Essential JS 1 and JS 2 components in
 Since, we have used same classes in styles for Essential JS 1 and Essential JS 2 components, the both classes were overrides with each other in normal case. 
 In order to resolve this problem, we suggest to use the compatibility CSS in your application.  
 
-### How to download & use the compatibility CSS files from theme studio?
+### How to use the compatibility CSS files from theme studio?
 
 * After customizing theme, you can download the customized compatibility theme files.
 
