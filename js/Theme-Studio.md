@@ -205,8 +205,8 @@ Now refer the file ej.web.all.min.css directly in the place of its reference in 
 ### From 16.1 version 
 
 The compatibility CSS supports to use both Essential JS 1 and JS 2 components in a same web page. 
-Since, we have used same classes in styles for Essential JS 1 and Essential JS 2 components, the both classes were overrides with each other in normal case. 
-In order to resolve this problem, we suggest to use the compatibility CSS in your application.  
+
+Since, we have used same classes in styles for Essential JS 1 and Essential JS 2 components, the both classes were overrides with each other in normal case. In order to resolve this problem, we suggest to use the compatibility CSS in your application.  
 
 ### How to use the compatibility CSS files from theme studio?
 
