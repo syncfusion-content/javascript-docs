@@ -200,6 +200,34 @@ After that copy ej.theme.min.css &  ej.web.all.min.css file from the downloaded 
 
 Now refer the file ej.web.all.min.css directly in the place of its reference in your application.
 
+## Compatibility
+
+### From 16.1 version 
+
+The compatibility CSS supports to use both Essential JS 1 and JS 2 components in a same web page. 
+
+Since, we have used same classes in styles for Essential JS 1 and Essential JS 2 components, the both classes were overrides with each other in normal case. In order to resolve this problem, we suggest to use the compatibility CSS in your application.  
+
+### How to use the compatibility CSS files from theme studio?
+
+* After customizing theme, you can download the customized compatibility theme files.
+
+* If the “include compatibility CSS” option is checked, it will generate compatibility files (ej.web.core.compatibility and ej.theme.compatibility) for the selected EJ1 component.
+
+* Using these compatibility theme files, you can render both EJ1 and EJ2 components in a single page
+
+![](ThemeStudio_images/compatibility-1.png)
+
+* Downloaded theme with compatibility file is in the below structure
+
+![](ThemeStudio_images/compatibility-2.png)
+
+* You can find the customized unminified/minified theme compatibility files in the downloaded folder as like below structure.
+
+![](ThemeStudio_images/compatibility-3.png)
+
+For more information, Please refer to the [Compatibility](https://help.syncfusion.com/js/compatibility) Section. 
+
 ## How to generate the CSS from the downloaded LESS file?
 
 You can find the customized theme less files in the downloaded folder under below location. 
