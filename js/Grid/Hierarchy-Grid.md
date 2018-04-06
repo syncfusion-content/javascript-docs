@@ -11,6 +11,8 @@ api: /api/js/ejgrid
 
 Hierarchical binding can be used to create the Grid with parent and child relation, this facilitate you to view the child records for a particular row by clicking on the Expander button present in first column of each grid row. This can be enabled by defining [`childGrid`](https://help.syncfusion.com/api/js/ejgrid#members:childgrid "childGrid") and `childGrid.queryString`. [`childGrid`](https://help.syncfusion.com/api/js/ejgrid#members:childgrid "childGrid") is to define options of child and `childGrid.queryString` is to define the relation between parent and child grid.
 
+If the foreign key column name differs for parent and child grid then use `childGrid.foreignKeyField` property of Grid. Refer [here](https://help.syncfusion.com/angular/grid/how-to#hierarchy-grid-with-different-foreignkeyfield-in-parent-and-child-table "here") for more information.
+
 N> The Grid's responsive and exporting support is not applicable for Hierarchical binding.
 
 {% highlight html %}
