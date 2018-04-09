@@ -85,7 +85,7 @@ ej.MediaPlayer.Quality = {
 
 ## Playlist
 
-**Playlist** will be generated once you render the control with source collection. You can set visibility for playlist while rendering, it is false by default. 
+**Playlist** will be generated once you render the control with source collection. You can set visibility for play list while rendering, it is false by default. 
 
 
 {% highlight html %}
@@ -137,7 +137,7 @@ ej.MediaPlayer.Quality = {
 
 ## Title
 
-You can add media title for each file in the source object. Title will be shown on top of the Player and reflected in the playlist. You can show or hide the title by setting the **showTitle** property, it is true by default.    
+You can add media title for each file in the source object. Title will be shown on top of the Player and reflected in the play list. You can show or hide the title by setting the **showTitle** property, it is true by default.    
 
 {% highlight html %}
 
@@ -188,7 +188,7 @@ You can add media title for each file in the source object. Title will be shown 
 
 ## Poster
 
-You can add media poster for each file in the source object using the  **posterUrl**. This will be shown in playlist thumbnail and in player for Audio files. Set the **showPoster** property to show or hide the poster, it is true by default. 
+You can add media poster for each file in the source object using the  **posterUrl**. This will be shown in play list thumbnail and in player for Audio files. Set the **showPoster** property to show or hide the poster, it is true by default. 
 
 {% highlight html %}
 
