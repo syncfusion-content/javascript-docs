@@ -9,7 +9,7 @@ api: /api/js/ejmediaplayer
 ---
 # Overview 
 
-**MediaPlayer** component is a html5 component which is used to embed a media in a web page such as web videos, YouTube and audio files.  
+**MediaPlayer** component is a HTML5 component that is used to embed a media in a web page such as web videos, YouTube, and audio files.  
 
 ## Key Features
 * YouTube support
