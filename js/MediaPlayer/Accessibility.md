@@ -11,7 +11,7 @@ api: /api/js/ejmediaplayer
 
 ## Keyboard Support
 
-You can enable/disable keyboard short cuts by **disableKeys** property. It is false by default.
+You can enable or disable the keyboard shortcuts using the **disableKeys** property. It is false by default.
 
 {% highlight html %}
 
@@ -63,12 +63,11 @@ You can enable/disable keyboard short cuts by **disableKeys** property. It is fa
 
 ### Keyboard shortcuts
 
-The keyboard shortcuts for Media Player are as follows.
-
+The following are the keyboard shortcuts of Media Player: 
 <table>
 <tr>
 <th>
-File </th><th>
+File </th><th>
 Description / Usage </th></tr>
 <tr>
 <td>

@@ -9,7 +9,7 @@ api: /api/js/ejgrid
 ---
 # Responsive
 
-The grid control has support for the responsive behavior based on client browser's width and height. To enable responsive, [`isResponsive`](https://help.syncfusion.com/api/js/ejgrid#members:isresponsive "isResponsive") property should be set as true. There are three modes of responsive layout is available in grid based on client width. They are.
+The grid control has support for the responsive behavior based on client browser's width and height. To enable responsive, [`isResponsive`](https://help.syncfusion.com/api/js/ejgrid#members:isresponsive "isResponsive") property should be set as true. In Desktop and Tablet mode, to render scroller set [`minWidth`](https://help.syncfusion.com/api/js/ejgrid#members:minwidth "minWidth") property. There are three modes of responsive layout is available in grid based on client width. They are.
 
 * Mobile(<321px)
 * Tablet (321px to 800px)
