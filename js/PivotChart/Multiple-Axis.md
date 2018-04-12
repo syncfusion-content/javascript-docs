@@ -9,31 +9,31 @@ documentation: ug
 
 # Multiple Axis
 
-You can split the pivot chart and its area into multiple panes to draw multiple series with multiple axes. Additional vertical/ horizontal axis in pivot chart can be created by [`axes`](/api/js/ejpivotchart#members:axes) property.
+You can split the pivot chart and its area into multiple panes to draw multiple series with multiple axes. Additional vertical/horizontal axis in the pivot chart can be created by the [`axes`](/api/js/ejpivotchart#members:axes) property.
 
-Before rendering multiple axis in pivot chart, you should know some important properties of axes and series of pivot chart.
+Before rendering multiple axis in the pivot chart, you should know some important properties of axes and series of the pivot chart.
 
-### Properties of Axes
+### Properties of axes
 
 * **rowIndex**: Specifies the index of the row where the axis is associated.
 * **columnIndex**: Specifies the index of the column where the axis is associated.
 * **opposedPosition**: Specifies whether to render the axis at the opposite side of its default position.
-* **labelFormat**: Custom formatting for axis label and supports all standard formatting type of numerical and date time values.
+* **labelFormat**: Provides custom formatting for axis label and supports all standard formatting type of numerical and date time values.
 * **title**: You can customize the title of the axis by the following properties.
        * **enableTrim**: Specifies whether to trim the axis title when it exceeds the chart area or the maximum width of the title.
-       * **maximumTitleWidth**: Maximum width of the title, when the title exceeds this width, the title gets trimmed, when enableTrim is true.
+       * **maximumTitleWidth**: When the title exceeds the maximum width, the title gets trimmed by setting enableTrim to true.
        * **visible**: Controls the visibility of the axis title.
 * **name**: Unique name of the axis. To associate an axis with the series, you have to set this name to the xAxisName/yAxisName property of the series.
 
 To know more about axes properties, [`Click Here`](https://help.syncfusion.com/api/js/ejchart#members:axes)
 
-### Properties of Series
+### Properties of series
 
-* **xAxisName**: Specifies the name of the x-axis that has to be associated with this series. Add an axis instance with this name to axes collection.
-* **yAxisName**: Specifies the name of the y-axis that has to be associated with this series. Add an axis instance with this name to axes collection.
+* **xAxisName**: Specifies the name of the X-axis that has to be associated with this series. Add an axis instance with this name to axes collection.
+* **yAxisName**: Specifies the name of the Y-axis that has to be associated with this series. Add an axis instance with this name to axes collection.
 
-## Customizing Axes at row index of zero
-You can customize the axes in the primary pivot chart itself. To achieve this you should give the following properties.
+## Customizing axes at row index of zero
+You can customize the axes in the primary pivot chart itself. To achieve this, you should give the following properties:
 
 {% highlight javascript %}
 
@@ -61,7 +61,7 @@ return args;
 
 ![](Multiple_Axis_images/rowIndex_zero.png)
 
-## Customizing Axes at row Index one
+## Customizing axes at row index one
 
 {% highlight javascript %}
 
@@ -89,7 +89,7 @@ return args;
 
 ![](Multiple_Axis_images/rowIndex_one.png)
 
-## Customizing Axes at column Index of zero
+## Customizing axes at column index of zero
 
 {% highlight javascript %}
 
@@ -117,7 +117,7 @@ return args;
 
 ![](Multiple_Axis_images/columnindex_zero.png)
 
-## Customizing Axes at column Index of one
+## Customizing axes at column index of one
 
 {% highlight javascript %}
 
@@ -145,8 +145,8 @@ return args;
 
 ![](Multiple_Axis_images/columnindex_one.png)
 
-## Customizing Series
-You can customize the series in multiple axis support with the help of **beforeSeriesRender** event. You can change the series type through **onBeforeRender** event.
+## Customizing series
+You can customize the series in multiple axis support with the help of **beforeSeriesRender** event. You can change the series type through the **onBeforeRender** event.
 
 {% highlight javascript %}
 
@@ -174,14 +174,14 @@ return args;
 
 ![](Multiple_Axis_images/customize_series.png)
 
-To know more about series properties [`Click Here`](https://help.syncfusion.com/api/js/ejchart#members:series)
+To learn more about series properties, [`Click Here`](https://help.syncfusion.com/api/js/ejchart#members:series).
 
 
-## Multiple Axis Support by series index
+## Multiple axis support by series index
 
-You can render pivot chart with multiple axis by series index.
+You can render the pivot chart with multiple axis by series index.
 
-**Note:** This is the default behavior of multiple axis support, if you are not triggering beforeSeriesRender event.
+**Note:** This is the default behavior of multiple axis support, if you are not triggering the beforeSeriesRender event.
 
 {% highlight javascript %}
 
@@ -202,7 +202,7 @@ axes: [
 
 {% endhighlight %}
 
-### For Y axes
+### For Y-axes
 
 {% highlight javascript %}
 
@@ -216,7 +216,7 @@ name:'y:0'
 
 ![](Multiple_Axis_images/seriesindex_zero.png)
 
-### For X Axes
+### For X-axes
 
 {% highlight javascript %}
 
@@ -229,7 +229,7 @@ name:'x:0'
 
 ![](Multiple_Axis_images/seriesindex_one.png)
 
-## Customizing PrimaryYAxis and Axes properties
+## Customizing PrimaryYAxis and axes properties
 
 ### labelFormat
 You can customize the **labelFormat** for both PrimaryYAxis and custom axes.
@@ -249,7 +249,7 @@ primaryYAxis: { labelFormat: 'c1' }
 ![](Multiple_Axis_images/label_formats.png)
 
 ### title
-You can customize the title for axes by **title** property.
+You can customize the title for axes by the **title** property.
 
 {% highlight javascript %}
 
