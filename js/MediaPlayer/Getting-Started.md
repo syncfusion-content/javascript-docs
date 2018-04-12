@@ -20,13 +20,16 @@ This section explains you the steps required to create a simple Media Player com
 * ejListView
 * ejListBox
 
-You can use the  **ej.web.all.min.js** file which encapsulates all **ej** web components and frameworks in single file.
+You can make use of **ej.web.all.min.js** file which encapsulates all **ej** web components and frameworks in single file.
 
 * [ej.web.all.min.js](http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js) – includes all web widgets.
 
 
 ## Adding CSS reference
-Add the following css references for the media player component like other JS 1 controls.
+
+
+
+Need to add the following css references for the media player component like other JS 1 controls.
 
 {% highlight html %}
 
@@ -42,7 +45,7 @@ Add the following css references for the media player component like other JS 1 
 ## Adding JS reference
 
 
-Add the following js references for the media player component like other JS 1 controls.
+Need to add the following js references for the media player component like other JS 1 controls.
 
 {% highlight html %}
 
@@ -58,7 +61,7 @@ Add the following js references for the media player component like other JS 1 c
 ## Adding Media Player component
 
 
-Add the Essential JS 1 Media Player component in the application. 
+Now, you can start adding Essential JS 1 Media Player component in the application. 
 Add the HTML <div> element for Media Player component into your index.html
 
 {% highlight html %}
@@ -105,7 +108,7 @@ Add the HTML <div> element for Media Player component into your index.html
 
 {% endhighlight %}
 
-Execute the previous code to render the following output:
+Execute the above code to render the following output.
 
 ![](/js/MediaPlayer/Display_images/Getting_img1.png)
 
