@@ -18,7 +18,7 @@ Before rendering multiple axis in the pivot chart, you should know some importan
 * **rowIndex**: Specifies the index of the row where the axis is associated.
 * **columnIndex**: Specifies the index of the column where the axis is associated.
 * **opposedPosition**: Specifies whether to render the axis at the opposite side of its default position.
-* **labelFormat**: Provides custom formatting for axis label and supports all standard formatting type of numerical and date time values.
+* **labelFormat**: Provides custom formatting for axis label and supports all standard formatting types of numerical and date time values.
 * **title**: You can customize the title of the axis by the following properties.
        * **enableTrim**: Specifies whether to trim the axis title when it exceeds the chart area or the maximum width of the title.
        * **maximumTitleWidth**: When the title exceeds the maximum width, the title gets trimmed by setting enableTrim to true.
@@ -174,7 +174,7 @@ return args;
 
 ![](Multiple_Axis_images/customize_series.png)
 
-To learn more about series properties, [`Click Here`](https://help.syncfusion.com/api/js/ejchart#members:series).
+To learn more about series properties, [`click here`](https://help.syncfusion.com/api/js/ejchart#members:series).
 
 
 ## Multiple axis support by series index
