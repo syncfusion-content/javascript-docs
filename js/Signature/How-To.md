@@ -134,25 +134,6 @@ We can detect whether not there has been any input to the signature control sinc
 
 {% endhighlight %}
 
-### To set the signature control dimensions by percentage rather than in pixels on creation?
-
-We can set the signature height and width in percentage. To reflect the changes in signature based percentage given, we need to give the explicit height and width to parent element. Because, the percentage height and width calculation based on the parent element height and width. Refer to the below code example:
-
-{% highlight html %}
-    <div style="height:500px">
-        <div id="signature">
-        </div>
-    </div>
-{% endhighlight %}
-
-{% highlight js %}
-   <script>
-      $(function () {
-        // declaration
-        $("#signature").ejSignature({ height: "50%", width: "80%", isResponsive: true, strokeWidth: 3 });
-      });
-   </script>
-{% endhighlight %}
   
  
 
