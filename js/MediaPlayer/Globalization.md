@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Localization with MediaPlayer
+title: Globalization with MediaPlayer
 description: To get start with MediaPlayer by adding references.
 platform: js
 control: MediaPlayer
@@ -12,7 +12,7 @@ api: /api/js/ejmediaplayer
 
 Essential JavaScript controls feature 12 built-in themes, six flat and gradient effects, and supports custom skin options for user-defined themes.
 
-The 16 themes support available for Media Player control are: 
+16 themes support available for Media Player control namely,
 
 * default-theme
 * flat-azure-dark
@@ -31,7 +31,7 @@ The 16 themes support available for Media Player control are:
 * material
 * office-365
 
-You Need to add this Css reference to apply the built-in themes. 
+You Need to add this Css reference to apply the built in themes. 
 Example:
 
 {% highlight html %}
@@ -40,7 +40,7 @@ Example:
 
 {% endhighlight %}
 
-**Media Player** control also customizes its appearance using user-defined CSS and custom skin options (colors and backgrounds). To apply custom themes, you can use the **cssClass** property. This property sets the root class for Media Player control theme.
+**Media Player** control also customizes its appearance using user-defined CSS and custom skin options (colors and backgrounds). To apply custom themes you can use the **cssClass** property. **cssClass** property sets the root class for Media Player control theme.
 
 
 {% highlight html %}
