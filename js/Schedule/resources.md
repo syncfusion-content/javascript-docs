@@ -479,6 +479,95 @@ $(function() {
 
 N> Here, the appointments will make use of the **color** defined for the Owners resource instance as its background color.
 
+### Grouped Appointments
+
+There are scenarios where the same appointment needs to be shared between multiple users and for this use case, grouped appointments have been implemented. Grouped appointments can be rendered only with multiple resources feature, thus allowing the CRUD action on it assigned with specific list of resources to take place simultaneously. 
+
+To allow this functionality, `allowGroupEditing` property needs to be set as `true` within the `group` API.
+
+**Example**: To display the Schedule with grouped appointments,
+
+{% highlight html %}
+
+<!--Container for ejScheduler widget-->
+<div id="Schedule1"></div>
+
+<script type="text/javascript">
+$(function() {
+    $("#Schedule1").ejSchedule({
+        width: "100%",
+        currentDate: new Date(2015, 04, 05),
+        group: {
+            resources: ["Owners"],
+            allowGroupEditing: true
+        },
+        resources: [{
+            field: "ownerId",
+            title: "Owner",
+            name: "Owners",
+            resourceSettings: {
+                dataSource: [{
+                    text: "Nancy",
+                    id: 1,
+                    color: "#f8a398"
+                }, {
+                    text: "Steven",
+                    id: 2,
+                    color: "#56ca85"
+                }, {
+                    text: "Michael",
+                    id: 3,
+                    color: "#51a0ed"
+                }],
+                text: "text",
+                id: "id",
+                color: "color"
+            }
+        }],
+        appointmentSettings: {
+            dataSource: [{
+                Id: 100,
+                Subject: "Research on Sky Miracles",
+                StartTime: new Date(2015, 04, 05, 9, 00),
+                EndTime: new Date(2015, 04, 05, 10, 30),
+                ownerId: '1,3,2'
+            }, {
+                Id: 101,
+                Subject: "Discovery of Exoplanets",
+                StartTime: new Date(2015, 04, 07, 6, 00),
+                EndTime: new Date(2015, 04, 07, 9, 30),
+                ownerId: '2,1'
+            }],
+            resourceFields: "ownerId"
+        }
+    });
+});	
+</script>
+
+{% endhighlight %}
+
+Also, the resource fields defined on an appointment object should hold the ID of all the needed resources separated by comma. Therefore, while adding/editing/deleting a single grouped appointment object in the dataSource will affect the entire resources attached to it. Even though, the appointment object is maintained as single in the dataSource, it will be visually depicted on all the respective resources.
+
+In the below sample appointment object, the `ownerId` field is defined with the IDs of multiple resources separated by comma.
+
+{% highlight html %}
+
+            dataSource: [{
+                Id: 100,
+                Subject: "Research on Sky Miracles",
+                StartTime: new Date(2015, 04, 05, 9, 00),
+                EndTime: new Date(2015, 04, 05, 10, 30),
+                ownerId: '1,3,2'
+            }, {
+                Id: 101,
+                Subject: "Discovery of Exoplanets",
+                StartTime: new Date(2015, 04, 07, 6, 00),
+                EndTime: new Date(2015, 04, 07, 9, 30),
+                ownerId: '2,1'
+            }]
+
+{% endhighlight %}
+
 ## Different Working days and Hours for Resources
 
 It is possible to assign different workdays and workhours for each resources present within the Scheduler. The process of assigning different working days for every individual resources is applicable only for the vertical Scheduler mode and not for timeline view, whereas the customization of workhours for each resources is applicable on both the Scheduler orientation.  The custom workdays and workhours needs to be defined within the `resourceSettings` property using the following 3 sub-properties available within it.
@@ -539,6 +628,128 @@ $(function() {
                 }
     });
 });	
+</script>
+
+{% endhighlight %}
+
+## Adding/Removing Resources dynamically
+
+It is possible to add and remove resources dynamically to and from the Schedule on both vertical and horizontal orientation with/without grouping. This can be achieved by making use of the public methods such as `addResource` and `removeResource`.
+
+**Example**: To add a resource in Schedule with single level grouping option,
+
+{% highlight html %}
+
+<!--Container for ejScheduler widget-->
+<div id="Schedule1"></div>
+
+<script type="text/javascript">
+$(function() {
+    $("#Schedule1").ejSchedule({
+        width: "100%",
+        currentDate: new Date(2015, 04, 05),
+        group: {
+            resources: ["Owners"]
+        },
+        resources: [{
+            field: "ownerId",
+            title: "Owner",
+            name: "Owners",
+            resourceSettings: {
+                dataSource: [{
+                    text: "Nancy",
+                    id: 1,
+                    color: "#f8a398"
+                }, {
+                    text: "Steven",
+                    id: 2,
+                    color: "#56ca85"
+                }],
+                text: "text",
+                id: "id",
+                color: "color"
+            }
+        }],
+        appointmentSettings: {
+            dataSource: [{
+                Id: 100,
+                Subject: "Research on Sky Miracles",
+                StartTime: new Date(2015, 04, 05, 9, 00),
+                EndTime: new Date(2015, 04, 05, 10, 30),
+                ownerId: 2
+            }, {
+                Id: 101,
+                Subject: "Discovery of Exoplanets",
+                StartTime: new Date(2015, 04, 07, 6, 00),
+                EndTime: new Date(2015, 04, 07, 9, 30),
+                ownerId: 1
+            }],
+            resourceFields: "ownerId"
+        }
+    });
+    var Obj = {text: "Adams", id: 10, groupId: 3, color: "#51a0ed"};
+    var schObj = $("#Schedule1").data("ejSchedule");
+    schObj.addResource(Obj, "Owners", 2); // (resourceObject, name, index)   
+});	
+</script>
+
+{% endhighlight %}
+
+To remove the resources from Schedule, the `removeResource` method can be used as depicted in the below code example. 
+
+**Example**: To remove a resource from Schedule that has single level resource grouping option,
+
+{% highlight html %}
+
+<!--Container for ejScheduler widget-->
+<div id="Schedule1"></div>
+
+<script type="text/javascript">
+$(function() {
+    $("#Schedule1").ejSchedule({
+        width: "100%",
+        currentDate: new Date(2015, 04, 05),
+        group: {
+            resources: ["Owners"]
+        },
+        resources: [{
+            field: "ownerId",
+            title: "Owner",
+            name: "Owners",
+            resourceSettings: {
+                dataSource: [{
+                    text: "Nancy",
+                    id: 1,
+                    color: "#f8a398"
+                }, {
+                    text: "Steven",
+                    id: 2,
+                    color: "#56ca85"
+                }],
+                text: "text",
+                id: "id",
+                color: "color"
+            }
+        }],
+        appointmentSettings: {
+            dataSource: [{
+                Id: 100,
+                Subject: "Research on Sky Miracles",
+                StartTime: new Date(2015, 04, 05, 9, 00),
+                EndTime: new Date(2015, 04, 05, 10, 30),
+                ownerId: 2
+            }, {
+                Id: 101,
+                Subject: "Discovery of Exoplanets",
+                StartTime: new Date(2015, 04, 07, 6, 00),
+                EndTime: new Date(2015, 04, 07, 9, 30),
+                ownerId: 1
+            }],
+            resourceFields: "ownerId"
+        }
+    });
+    var schObj = $("#Schedule1").data("ejSchedule");
+    schObj.removeResource(2,"Owners"); // (resourceId , name)   
 </script>
 
 {% endhighlight %}

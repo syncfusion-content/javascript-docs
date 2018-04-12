@@ -83,7 +83,7 @@ Initialize the Recurrence Editor control, by adding the following script code to
 
 ## Generating Recurrence Rule
 
-The Recurrence Editor can be used to generate the recurrence rule as a string, based on the repeat options selected.
+The Recurrence Editor can be used to generate the recurrence rule as a string, based on the repeat options selected. The [getRecurrenceRule](/api/js/ejschedule#methods:getrecurrencerule) public method is used to get the generated recurrence rule.
 
 The following code example depicts the way to generate the recurrence rule.
 
