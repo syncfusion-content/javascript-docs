@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Multiple-Axis
-description: multiple axis
+title: Multiple-Axes
+description: multiple axes
 platform: js
 control: PivotChart
 documentation: ug
 ---
 
-# Multiple Axis
+# Multiple Axes
 
-You can split the pivot chart and its area into multiple panes to draw multiple series with multiple axes. Additional vertical/horizontal axis in the pivot chart can be created by the [`axes`](/api/js/ejpivotchart#members:axes) property.
+You can split the pivot chart and its area into multiple panes to draw multiple series with multiple axes. Additional vertical/horizontal axes in the pivot chart can be created by the [`axes`](/api/js/ejpivotchart#members:axes) property.
 
 Before rendering multiple axes in the pivot chart, you should know some important properties of axes and series of the pivot chart.
 
@@ -40,7 +40,7 @@ You can customize the axes in the primary pivot chart itself. To achieve this, y
    $("#PivotChart").ejPivotChart({
 axes:[{
  rowIndex: 0,
- name: 'yaxisConfig',
+ name: 'yAxisConfig',
  //…
   }],
  beforeSeriesRender :"onBeforeRender"
@@ -50,7 +50,7 @@ axes:[{
 function onBeforeRender(args) {
  for (var i = 0; i < args.series.length; i++) {
     if (args.series[i].name.indexOf("Australia") != -1) {
-       args.series[i].yAxisName = "yaxisConfig";
+       args.series[i].yAxisName = "yAxisConfig";
        args.series[i].type = "line";
   }
  }
@@ -59,7 +59,7 @@ return args;
 
 {% endhighlight %}
 
-![](Multiple_Axis_images/rowIndex_zero.png)
+![](Multiple_Axes_images/rowIndex_zero.png)
 
 ## Customizing axes at row index one
 
@@ -68,7 +68,7 @@ return args;
   $("#PivotChart").ejPivotChart({
 axes:[{
  rowIndex: 1,
- name: 'yaxisConfig',
+ name: 'yAxisConfig',
  //…
   }],
 beforeSeriesRender :"onBeforeRender"
@@ -78,7 +78,7 @@ beforeSeriesRender :"onBeforeRender"
 function onBeforeRender(args) {
  for (var i = 0; i < args.series.length; i++) {
     if (args.series[i].name.indexOf("Australia") != -1) {
-       args.series[i].yAxisName = "yaxisConfig";
+       args.series[i].yAxisName = "yAxisConfig";
        args.series[i].type = "line";
   }
  }
@@ -87,7 +87,7 @@ return args;
 
 {% endhighlight %}
 
-![](Multiple_Axis_images/rowIndex_one.png)
+![](Multiple_Axes_images/rowIndex_one.png)
 
 ## Customizing axes at column index of zero
 
@@ -96,7 +96,7 @@ return args;
 $("#PivotChart").ejPivotChart({
 axes:[{
  columnIndex: 0,
- name: 'xaxisConfig',
+ name: 'xAxisConfig',
  //…
   }],
 beforeSeriesRender :"onBeforeRender"
@@ -106,7 +106,7 @@ beforeSeriesRender :"onBeforeRender"
 function onBeforeRender(args) {
  for (var i = 0; i < args.series.length; i++) {
     if (args.series[i].name.indexOf("Australia") != -1) {
-       args.series[i].xAxisName = "xaxisConfig";
+       args.series[i].xAxisName = "xAxisConfig";
        args.series[i].type = "line";
   }
  }
@@ -115,7 +115,7 @@ return args;
 
 {% endhighlight %}
 
-![](Multiple_Axis_images/columnindex_zero.png)
+![](Multiple_Axes_images/columnindex_zero.png)
 
 ## Customizing axes at column index of one
 
@@ -124,7 +124,7 @@ return args;
 $("#PivotChart").ejPivotChart({
 axes:[{
  columnIndex: 1,
- name: 'xaxisConfig',
+ name: 'xAxisConfig',
  //…
   }],
 beforeSeriesRender :"onBeforeRender"
@@ -134,7 +134,7 @@ beforeSeriesRender :"onBeforeRender"
 function onBeforeRender(args) {
  for (var i = 0; i < args.series.length; i++) {
     if (args.series[i].name.indexOf("Australia") != -1) {
-       args.series[i].xAxisName = "xaxisConfig";
+       args.series[i].xAxisName = "xAxisConfig";
        args.series[i].type = "line";
   }
  }
@@ -143,16 +143,16 @@ return args;
 
 {% endhighlight %}
 
-![](Multiple_Axis_images/columnindex_one.png)
+![](Multiple_Axes_images/columnindex_one.png)
 
 ## Customizing series
-You can customize the series in multiple axis support with the help of **beforeSeriesRender** event. You can change the series type through the **onBeforeRender** event.
+You can customize the series in multiple axes support with the help of **beforeSeriesRender** event. You can change the series type through the **onBeforeRender** event.
 
 {% highlight javascript %}
 
 $("#PivotChart").ejPivotChart({
 axes:[{
- name: 'yaxisConfig',
+ name: 'yAxisConfig',
 //…
   }],
 beforeSeriesRender :"onBeforeRender"
@@ -161,7 +161,7 @@ beforeSeriesRender :"onBeforeRender"
 function onBeforeRender(args) {
  for (var i = 0; i < args.series.length; i++) {
     if (args.series[i].name.indexOf("Australia") != -1) {
-       args.series[i].yAxisName = "yaxisConfig";
+       args.series[i].yAxisName = "yAxisConfig";
        args.series[i].type = "line";
   }
  }
@@ -172,16 +172,16 @@ return args;
 
 **Note:** You have to use the same name in both name property of axes and xAxisName/yAxisName property of series in the above **beforeSeriesRender** event.
 
-![](Multiple_Axis_images/customize_series.png)
+![](Multiple_Axes_images/customize_series.png)
 
 To learn more about series properties, [`click here`](https://help.syncfusion.com/api/js/ejchart#members:series).
 
 
-## Multiple axis support by series index
+## Multiple axes support by series index
 
-You can render the pivot chart with multiple axis by series index.
+You can render the pivot chart with multiple axes by series index.
 
-**Note:** This is the default behavior of multiple axis support, if you are not triggering the beforeSeriesRender event.
+**Note:** This is the default behavior of multiple axes support, if you are not triggering the beforeSeriesRender event.
 
 {% highlight javascript %}
 
@@ -214,7 +214,7 @@ name:'y:0'
 
 {% endhighlight %}
 
-![](Multiple_Axis_images/seriesindex_zero.png)
+![](Multiple_Axes_images/seriesindex_zero.png)
 
 ### For X-axes
 
@@ -227,7 +227,7 @@ name:'x:0'
 }]
 {% endhighlight %}
 
-![](Multiple_Axis_images/seriesindex_one.png)
+![](Multiple_Axes_images/seriesindex_one.png)
 
 ## Customizing PrimaryYAxis and axes properties
 
@@ -246,7 +246,7 @@ primaryYAxis: { labelFormat: 'c1' }
 
 {% endhighlight %}
 
-![](Multiple_Axis_images/label_formats.png)
+![](Multiple_Axes_images/label_formats.png)
 
 ### title
 You can customize the title for axes by the **title** property.
@@ -263,7 +263,7 @@ primaryYAxis: { title: { text: "Customer Count" }}
 
 {% endhighlight %}
 
-![](Multiple_Axis_images/title.png)
+![](Multiple_Axes_images/title.png)
 
 
 
