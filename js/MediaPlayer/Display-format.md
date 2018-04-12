@@ -10,7 +10,7 @@ api: /api/js/ejmediaplayer
 
 ## Render Mode
 
-There are three rendering layouts in Media Player such as Basic, Advanced, and Mobile. You can get the available render modes in ej.MediaPlayer.RenderMode object as follows.
+There are three rendering layouts in Media Player such as Basic, Advanced and Mobile. You can get the available render modes in ej.MediaPlayer.RenderMode Object as follows.
 
 {% highlight html %}
 
@@ -73,7 +73,7 @@ Render mode is **Basic** by default in Media Player. It has the simple layout wi
 {% endhighlight %}
 
 
-Execute the previous code to render the following output:
+Execute the above code to render the following output.
 
 ![](/js/MediaPlayer/Display_images/Basic_img1.png)
 
@@ -127,7 +127,7 @@ Execute the previous code to render the following output:
 
 {% endhighlight %}
 
-Execute the previous code to render the following output:
+Execute the above code to render the following output.
 
 ![](/js/MediaPlayer/Display_images/Advanced_img.png)
 
@@ -184,7 +184,7 @@ Execute the previous code to render the following output:
 
 {% endhighlight %}
 
-Execute the previous code to render the following output:
+Execute the above code to render the following output.
 
 ![](/js/MediaPlayer/Display_images/Mobile_img1.png)
 
