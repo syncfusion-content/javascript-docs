@@ -11,7 +11,7 @@ documentation: ug
 
 You can split the pivot chart and its area into multiple panes to draw multiple series with multiple axes. Additional vertical/horizontal axis in the pivot chart can be created by the [`axes`](/api/js/ejpivotchart#members:axes) property.
 
-Before rendering multiple axis in the pivot chart, you should know some important properties of axes and series of the pivot chart.
+Before rendering multiple axes in the pivot chart, you should know some important properties of axes and series of the pivot chart.
 
 ### Properties of axes
 
