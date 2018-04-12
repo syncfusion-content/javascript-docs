@@ -297,7 +297,7 @@ $(“#container”).data(“ejPdfViewer”).download();
 The signature tool of the ejPdfViewer contains an option to include handwritten signatures in the PDF document. The ejPdfViewer control provides the option to show or hide the signature tool in the default toolbar. You can achieve this by using the [`showSignatureTool(bool)`](https://help.syncfusion.com/api/js/ejpdfviewer#methods:showsignaturetool "showSignatureTool method") method.
 
 {% highlight javascript %}
-$(“#container”).data(“ejPdfViewer”).showSigntureTool(false);
+$(“#container”).data(“ejPdfViewer”).showSignatureTool(false);
 {% endhighlight %}
 
 ### Selection tool
