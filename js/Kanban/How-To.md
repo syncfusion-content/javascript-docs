@@ -21,7 +21,7 @@ For instance, if you want to change your columns property of Kanban dynamically 
 <script>
 
 //  set the entire modified columns
-$("#KanbanBoard").ejKanban({ columns: newcolumns });
+$("#KanbanBoard").ejKanban({ columns: new_columns });
 
 </script>
 
@@ -36,17 +36,17 @@ Code snippet to dynamically changing the column values using a button click is g
  // button click
 function onClick(e) {
         // take the Kanban instance
-        var kanbanobj = $("#KanbanBoard").ejKanban("instance");
+        var kanban_obj = $("#KanbanBoard").ejKanban("instance");
 
         // take the Kanban columns model using the instance
-        var newcolumns = kanbanobj.model.columns; 
+        var new_columns = kanban_obj.model.columns;
 
-        // through the columns object change the allowdrag or drop model value dynamically
-        newcolumns[1].allowDrag = false;
-        newcolumns[1].allowDrop = false;
+        // through the columns object change the allow drag or drop model value dynamically
+        new_columns[1].allowDrag = false;
+        new_columns[1].allowDrop = false;
 
         //set the entire modified columns
-        $("#KanbanBoard").ejKanban({ columns: newcolumns });
+        $("#KanbanBoard").ejKanban({ columns: new_columns });
     }
 </script>
 
