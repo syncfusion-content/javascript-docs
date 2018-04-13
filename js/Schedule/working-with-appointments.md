@@ -672,7 +672,6 @@ It is possible to drag and drop the external items to and fro the Scheduler cont
 which specifies the draggable area name stating whether the appointments can be dragged outside of the control or within it.
 
 On dragging the appointment to a cell, we can get the details such as start time, end time, resource of that cell using the public method [getSlotByElement](/api/js/ejschedule#methods:getslotbyelement) and update the details in custom appointment window. The appointment will save to the scheduler on clicking save button which is achieved with **saveAppointment** public method.
-uler.
 
 The following code example lets you drag and drop the external items from the tree view control to the Scheduler.
 
