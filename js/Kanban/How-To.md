@@ -11,6 +11,47 @@ api: /api/js/ejkanban
 
 # How To?
 
+## Update the Kanban properties dynamically after render
+
+Properties of Kanban control can be updated dynamically by updating the model properties with new values.
+For instance, if you want to change your columns property of Kanban dynamically means, this can be done by assigning newly updated columns values to existing model property [columns](https://help.syncfusion.com/api/js/ejkanban#members:columns).
+
+{% highlight javascript %}
+
+<script>
+
+//  set the entire modified columns
+$("#KanbanBoard").ejKanban({ columns: new_columns });
+
+</script>
+
+{% endhighlight %}
+
+Code snippet to dynamically changing the column values using a button click is given below,
+
+{% highlight javascript %}
+
+<script>
+
+ // button click
+function onClick(e) {
+        // take the Kanban instance
+        var kanban_obj = $("#KanbanBoard").ejKanban("instance");
+
+        // take the Kanban columns model using the instance
+        var new_columns = kanban_obj.model.columns;
+
+        // through the columns object change the allow drag or drop model value dynamically
+        new_columns[1].allowDrag = false;
+        new_columns[1].allowDrop = false;
+
+        //set the entire modified columns
+        $("#KanbanBoard").ejKanban({ columns: new_columns });
+    }
+</script>
+
+{% endhighlight %}
+
 ## Dynamically change swimlane key
 
 Swimlane key categorization of Kanban control can be changed dynamically using set model method.  We have created an external drop down list that contains the Kanban swimlane keys and based on the selected drop down value, [swimlaneKey](https://help.syncfusion.com/api/js/ejkanban#members:fields-swimlanekey) value is assigned using set model.  Please find the below code.
