@@ -20,7 +20,7 @@ The default toolbar is grouped into the following set of tools.
 {{'**MagnificationTools**'| markdownify }}
 </td>
 <td>
-Contains ZoomIn, ZoomOut, Zoom, FitPage and FitWidth tools
+Contains ZoomIn, ZoomOut, Zoom, FitPage, and FitWidth tools.
 </td>
 </tr>
 <tr>
@@ -28,7 +28,7 @@ Contains ZoomIn, ZoomOut, Zoom, FitPage and FitWidth tools
 {{'**NavigationTools**'| markdownify }}
 </td>
 <td>
-Contains GoToNext and GoToLast tools
+Contains GoToNext and GoToPrevious tools.
 </td>
 </tr>
 <tr>
@@ -44,7 +44,7 @@ Contains print tool.
 {{'**DownloadTool**'| markdownify }}
 </td>
 <td>
-Contains download tool
+Contains download tool.
 </td>
 </tr>
 <tr>
@@ -52,7 +52,7 @@ Contains download tool
 {{'**TextSearchTool**'| markdownify }}
 </td>
 <td>
-Contains text search tool
+Contains text search tool.
 </td>
 </tr>
 <tr>
@@ -60,7 +60,7 @@ Contains text search tool
 {{'**TextMarkupAnnotationTools**'| markdownify }}
 </td>
 <td>
-Contains text markup annotation tools
+Contains text markup annotation tools.
 </td>
 </tr>
 <tr>
@@ -68,7 +68,7 @@ Contains text markup annotation tools
 {{'**SignatureTool**'| markdownify }}
 </td>
 <td>
-Contains signature tool
+Contains signature tool.
 </td>
 </tr>
 <tr>
@@ -76,237 +76,384 @@ Contains signature tool
 {{'**SelectionTool**'| markdownify }}
 </td>
 <td>
-Contains selection tool
+Contains selection tool.
 </td>
 </tr>
 </table>
 
-The ejPdfViewer has an option to show or hide these grouped items in the default toolbar.  You can hide/display any of these tools by using the toolbarSettings property.
-The below code snippet describes how to show only the magnification tools in the widget.
+The ejPdfViewer control has an option to show or hide these grouped items in the default toolbar. You can hide or display any of these tools by using the [`toolbarSettings`](https://help.syncfusion.com/api/js/ejpdfviewer#members:toolbarsettings "toolbarSettings property") property. The following code snippet describes how to show the magnification tools in the widget.
 
 {% highlight javascript %}
 $(function () {
-            var obj = $("#container").ejPdfViewer({serviceUrl: "/api/PdfViewerAPI", toolbarSettings: {toolbarItems : ej.PdfViewer.ToolbarItems.MagnificationTools}});
-        });
+    var obj = $("#container").ejPdfViewer({serviceUrl: "../api/PdfViewerAPI", toolbarSettings: {toolbarItems : ej.PdfViewer.ToolbarItems.MagnificationTools}});
+});
+{% endhighlight %}
+
+The ejPdfViewer control also has an option to show or hide the complete default toolbar. You can achieve this by using the [`showToolbar(bool)`](https://help.syncfusion.com/api/js/ejpdfviewer#methods:showtoolbar "showToolbar method") method. The following code snippet describes how to hide the default toolbar in the widget.
+
+{% highlight javascript %}
+$(“#container).data(“ejPdfViewer”).showToolbar(false);
+{% endhighlight %}
+
+### Magnification tools
+
+The magnification tools of the ejPdfViewer contain ZoomIn, ZoomOut, Zoom, FitPage, and FitWidth tools in the default toolbar. The ejPdfViewer control also has an option to show or hide the magnification tools in the default toolbar. You can achieve this by using the [`showMagnificationTools(bool)`}(https://help.syncfusion.com/api/js/ejpdfviewer#showmagnificationtoolsshow "showMagnificationTools method") method. The following code snippet describes how to hide the magnification tools in the default toolbar in the widget.
+
+{% highlight javascript %}
+$(“#container).data(“ejPdfViewer”).showMagnificationTools(false);
+{% endhighlight %}
+
+**APIs available for Magnification tools**
+
+fitToPage()
+
+You can fit the page size of the PDF document loaded in the ejPdfViewer control using the [`fitToPage()`](https://help.syncfusion.com/api/js/ejpdfviewer#fittopage "fitToPage method") method. 
+ 
+{% highlight javascript %}
+$(“#container).data(“ejPdfViewer”).fitToPage();
+{% endhighlight %}
+
+fitToWidth()
+
+You can fit the page width of the PDF document loaded in the ejPdfViewer control using the ['fitToWidth()'](https://help.syncfusion.com/api/js/ejpdfviewer#fittowidth "fitToWidth method") method. 
+
+{% highlight javascript %}
+$(“#container).data(“ejPdfViewer”).fitToWidth();
+{% endhighlight %}
+
+zoomIn()
+
+You can zoom the PDF document page loaded in the ejPdfViewer control using [`zoomIn()`](https://help.syncfusion.com/api/js/ejpdfviewer#zoomin "zoomIn method") method. The maximum zoom percentage is 400%.
+
+{% highlight javascript %}
+$(“#container).data(“ejPdfViewer”).zoomIn();
+{% endhighlight %}
+
+zoomOut()
+
+You can zoom out the PDF document page loaded in the ejPdfViewer control using the [`zoomOut()`](https://help.syncfusion.com/api/js/ejpdfviewer#zoomout "zoomOut method") method. The minimum zoom percentage is 50%.
+
+{% highlight javascript %}
+$(“#container).data(“ejPdfViewer”).zoomOut();
+{% endhighlight %}
+
+zoomTo(zoomValue)
+
+The PDF document page loaded in the PDF viewer control can be zoomed to a specific value using the [`zoomTo(zoomValue)`](https://help.syncfusion.com/api/js/ejpdfviewer#zoomtozoomvalue "zoomTo method") method.
+
+{% highlight javascript %}
+$(“#container).data(“ejPdfViewer”).zoomTo(154);
+{% endhighlight %}
+
+zoomPercentage
+
+The [`zoomPercentage`](https://help.syncfusion.com/api/js/ejpdfviewer#zoompercentage-number "zoomPercentage property") property of the PDF viewer control returns the current zoom value of the PDF document.
+
+{% highlight javascript %}
+    var pdfviewer = $("#container").data(“ejPdfViewer”);
+    var zoomValue = pdfviewer. zoomPercentage;
+{% endhighlight %}
+
+zoomChange
+
+When the zoom value of the PDF document is changed using the magnification tools, the zoomChange event will be triggered. We can define the event method using the [`zoomChange`](https://help.syncfusion.com/api/js/ejpdfviewer#zoomchange "zoomChange Event") property of the control.
+
+{% highlight javascript %}
+$(function () {
+    $("#container").ejPdfViewer({serviceUrl: "../api/PdfViewerAPI", zoomChange: "zoomChanged" });
+});
+function zoomChanged(args) {
+    alert("The magnification changes from " + args.previousZoomPercentage + " to" + args.currentZoomPercentage);
+}
+{% endhighlight %}
+
+### Navigation Tools
+
+The navigation tools of the PDF viewer contain GoToNext, GoToPrevious, and current page number tools in the default toolbar. The PDF viewer control also has an option to show or hide the navigation tools in the default toolbar. You can achieve this by using the [`showPageNavigationTools(bool)`](https://help.syncfusion.com/api/js/ejpdfviewer#showpagenavigationtoolsshow "showPageNavigationTools method") method. The following code snippet describes how to hide the navigation tools in the default toolbar in the widget.
+
+{% highlight javascript %}
+$(“#container”).data(“ejPdfViewer”).showPageNavigationTools(false);
+{% endhighlight %}
+
+**APIs available for Navigation Tools**
+
+goToPreviousPage()
+
+The previous page of the PDF document from the current page can be navigated in the ejPdfViewer using [`goToPreviousPage()`](https://help.syncfusion.com/api/js/ejpdfviewer#gotopreviouspage "goToPreviousPage method") method.
+
+{% highlight javascript %}
+$(“#container”).data(“ejPdfViewer”).goToPreviousPage();
+{% endhighlight %}
+
+goToNextPage()
+
+The next page of the PDF document from the current page can be navigated in the ejPdfViewer using the [`goToNextPage()`](https://help.syncfusion.com/api/js/ejpdfviewer#gotonextpage "goToNextPage method") method.
+
+{% highlight javascript %}
+$(“#container”).data(“ejPdfViewer”).goToNextPage();
+{% endhighlight %}
+
+goToFirstPage()
+
+The first page of the PDF document can be navigated in the ejPdfViewer using the [`goToFirstPage()`](https://help.syncfusion.com/api/js/ejpdfviewer#gotofirstpage "goToFirstPage method") method.
+
+{% highlight javascript %}
+$(“#container”).data(“ejPdfViewer”).goToFirstPage();
+{% endhighlight %}
+
+goToLastPage()
+
+The last page of the PDF document can be navigated in the ejPdfViewer using the [`goToLastPage()`](https://help.syncfusion.com/api/js/ejpdfviewer#gotolastpage "goToLastPage method") method.
+
+{% highlight javascript %}
+$(“#container”).data(“ejPdfViewer”).goToLastPage();
+{% endhighlight %}
+
+goToPage(pageNumber)
+
+The specific page in the PDF document can be navigated using the [`goToPage(pageNumber)`](https://help.syncfusion.com/api/js/ejpdfviewer#gotopagepagenumber "goToPage method") method. If the page is not available for the given pageNumber, the PDF viewer retains the existing page in view.
+
+{% highlight javascript %}
+$(“#container”).data(“ejPdfViewer”).goToPage(4);
+{% endhighlight %}
+
+pageClick
+
+When a page of the PDF document is clicked, the pageClick event will be triggered. We can define the event method using the [`pageClick`](https://help.syncfusion.com/api/js/ejpdfviewer#pageclick "pageClick Event") property of the control.
+
+{% highlight javascript %}
+$(function () {
+    $("#container").ejPdfViewer({serviceUrl: "../api/PdfViewerAPI", pageClick: "pageClicked" });
+});
+function pageClicked (args) {
+    alert("The page is clicked”);
+}
+{% endhighlight %}
+
+### Text Markup Annotation Tools
+
+The text markup annotation tools of the ejPdfViewer contain strikeout, highlight, and underline tools in the default toolbar. The ejPdfViewer control also has an option to show or hide the text markup annotation tools in the default toolbar. You can achieve this by using the [`showTextMarkupAnnotationTools(bool)`](https://help.syncfusion.com/api/js/ejpdfviewer#methods:showtextmarkupannotationtools "showTextMarkupAnnotationTools method") method. The following code snippet describes how to hide the text markup annotation tools in the default toolbar in the widget.
+
+{% highlight javascript %}
+$(“#container”).data(“ejPdfViewer”).showTextMarkupAnnotationTools(false);
+{% endhighlight %}
+
+### Print Tool
+
+The print tool of the ejPdfViewer contains an option to print the PDF document. When the print button is clicked, the changes made in the PDF document will be printed along with the document using the browser’s default printer settings. The ejPdfViewer control provides the option to show or hide the print tool in the default toolbar. You can achieve this by using the [`showPrintTools(bool)`](https://help.syncfusion.com/api/js/ejpdfviewer#methods:showprinttools "showPrintTools method") method.
+
+{% highlight javascript %}
+$(“#container”).data(“ejPdfViewer”).showPrintTools(false);
+{% endhighlight %}
+
+The printing of the PDF document can be achieved in the client side by calling the [`print()`](https://help.syncfusion.com/api/js/ejpdfviewer#print "print method") method. 
+
+{% highlight javascript %}
+$(“#container”).data(“ejPdfViewer”).print();
+{% endhighlight %}
+
+*beforePrint*
+
+When the print option is clicked, the beforePrint event will be triggered before printing the PDF document from the ejPdfViewer control. We can define the event method using the [`beforePrint`](https://help.syncfusion.com/api/js/ejpdfviewer#events:beforeprint "beforePrint event") property of the control.
+
+{% highlight javascript %}
+$(function () {
+    $("#container").ejPdfViewer({serviceUrl: "../api/PdfViewerAPI", beforePrint: "beforePrint" });
+});
+function beforePrint(args) {
+    alert("The PDF document is made ready for printing.");
+}
+{% endhighlight %}
+
+*AfterPrint*
+
+After the printing process is completed, the afterPrint event will be triggered. We can define the event method using the [`afterPrint`](https://help.syncfusion.com/api/js/ejpdfviewer#events:afterprint "afterPrint Event") property of the control.
+
+{% highlight javascript %}
+$(function () {
+    $("#container").ejPdfViewer({serviceUrl: "../api/PdfViewerAPI", afterPrint: "afterPrint" });
+});
+function afterPrint (args) {
+    alert("Printing completed successfully");
+}
+{% endhighlight %}
+
+### Download Tool
+
+The download tool of the ejPdfViewer contains an option to download the PDF document. When the download button is clicked, the changes made in the PDF document will be saved in a copy of the original PDF document and it will be downloaded in the browser. The ejPdfViewer control provides the option to show or hide the download tool in the default toolbar. You can achieve this by using the [`showDownloadTool(bool)`](https://help.syncfusion.com/api/js/ejpdfviewer#methods:showdownloadtool "showDownloadTool method") method.
+
+{% highlight javascript %}
+$(“#container”).data(“ejPdfViewer”).showDownloadTool(false);
+{% endhighlight %}
+
+The PDF document can be downloaded in the client side by calling the [`download()`](https://help.syncfusion.com/api/js/ejpdfviewer#methods:download "download method") method.
+
+{% highlight javascript %}
+$(“#container”).data(“ejPdfViewer”).download();
+{% endhighlight %}
+
+### Signature tool
+
+The signature tool of the ejPdfViewer contains an option to include handwritten signatures in the PDF document. The ejPdfViewer control provides the option to show or hide the signature tool in the default toolbar. You can achieve this by using the [`showSignatureTool(bool)`](https://help.syncfusion.com/api/js/ejpdfviewer#methods:showsignaturetool "showSignatureTool method") method.
+
+{% highlight javascript %}
+$(“#container”).data(“ejPdfViewer”).showSignatureTool(false);
+{% endhighlight %}
+
+### Selection tool
+
+The selection tool of the ejPdfViewer control contains options for selection and panning interaction modes. The ejPdfViewer control provides the option to show or hide the selection tool in the default toolbar. You can achieve this by using the [`showSelectionTool(bool)`](https://help.syncfusion.com/api/js/ejpdfviewer#methods:showselectiontool "showSelectionTool method") method.
+
+{% highlight javascript %}
+$(“#container”).data(“ejPdfViewer”).showSelectionTool(false);
+{% endhighlight %}
+
+### Text Search tool
+
+The text search tool of the ejPdfViewer control is used to initiate and close the text search process in the control. The ejPdfViewer control provides the option to show or hide the text search tool in the default toolbar. You can achieve this by using the showTextSearchTool(bool) method.
+
+{% highlight javascript %}
+$(“#container”).data(“ejPdfViewer”).showTextSearchTool(false);
+{% endhighlight %}
+
+**APIs available for Text Search tool**
+
+searchText(targetText)
+
+[`searchText(targetText)`](https://help.syncfusion.com/api/js/ejpdfviewer#searchtexttargettext "searchText method") method allows us to search the target text in the PDF document and highlights the occurrences in the pages.
+
+{% highlight javascript %}
+$(“#container”).data("ejPdfViewer").searchText("name");
+{% endhighlight %}
+
+searchNext()
+
+The next occurrences of the searched text from the current occurrence can be searched using the [`searchNext()`](https://help.syncfusion.com/api/js/ejpdfviewer#searchnext "searchNext method") method.
+
+{% highlight javascript %}
+$(“#container”).data("ejPdfViewer").searchNext();
+{% endhighlight %}
+
+searchPrevious()
+
+The previous occurrence of the searched text from the current occurrence can be searched using the [`searchPrevious()`](https://help.syncfusion.com/api/js/ejpdfviewer#searchprevious "searchPrevious method") method.
+
+{% highlight javascript %}
+$(“#container”).data("ejPdfViewer").searchPrevious();
+{% endhighlight %}
+
+matchCase(enableMatchCase)
+
+The target text in the PDF document can be searched with its casing using the [`matchCase(enableMatchCase)`](https://help.syncfusion.com/api/js/ejpdfviewer#matchcaseenablematchcase "matchCase method") method.
+
+{% highlight javascript %}
+$(“#container”).data("ejPdfViewer").matchCase(true);
+{% endhighlight %}
+
+cancelSearchText()
+
+The text search can be canceled and the highlighted occurrences from the ejPdfViewer can be removed using the [`cancelSearchText()`](https://help.syncfusion.com/api/js/ejpdfviewer#cancelsearchtext "cancelSearchText method") method.
+
+{% highlight javascript %}
+$(“#container”).data("ejPdfViewer").cancelSearchText();
 {% endhighlight %}
 
 **Adding Custom toolbar**
 
-The toolbar can be customized as per the application’s needs, by hiding the existing toolbar.
-Hide the default toolbar of the ejPdfViewer, by using the below code snippet.
-
-{% highlight javascript %}
-$(function () {
-$("#container").ejPdfViewer({serviceUrl: "/api/PdfViewerAPI"}).data("ejPdfViewer").showToolbar(false);
-});
-{% endhighlight %}
-
-The below code snippet shows how to create a customer toolbar by using the client side APIs.
+The toolbar can be customized by hiding the existing toolbar.
+The following code snippet shows how to create a customer toolbar by using the [`client side APIs`](https://help.syncfusion.com/api/js/ejpdfviewer "ejPdfViewer API documentation").
 
 {% highlight html %}
 <body>
-  <div id="container" onmousemove="mouseMoveFunction(event)" style="width: 100%; height: 680px;"></div>
-        <!--"-->
-        <div id="magnificationDiv" class="toolbarclass" role="toolbar">
-            <div class="round-button-circle" style=" position:absolute;top:20px;">
-                <div class=" e-pdfviewer-customtoolbar-print "onclick=" callClientSideMethod('print')"></div>
+    <div>
+        <div id="toolbarDiv" style="height:38px;width:100%;border:solid black 1px" class="toolbarclass " role="toolbar">
+            <div style="float:left; padding:5px;">
+                <div class="e-pdfviewer-icon e-pdfviewer-gotoprevious" id="viewer-previous" onclick="callClientSideMethod('previous')"></div>
+                <div class="e-pdfviewer-icon e-pdfviewer-gotonext" id="viewer-next" onclick="callClientSideMethod('next')"></div>
+                <input id="currentPage" class="e-pdfviewer-pagenumber e-pdfviewer-elementalignments" type="text" onkeypress="updatePageNumber(event)" />
+                <span id="totalPageCount" class="e-pdfviewer-labelpageno"></span>
+                <div class="e-pdfviewer-icon e-pdfviewer-zoomin" id="viewer-zoomin" onclick="callClientSideMethod('zoomin')"></div>
+                <div class="e-pdfviewer-icon e-pdfviewer-zoomout" id="viewer-zoomout" onclick="callClientSideMethod('zoomout')"></div>
+                <div class="e-pdfviewer-icon e-pdfviewer-fitwidth" id="viewer-fitwidth" onclick="callClientSideMethod('fitwidth')"></div>
+                <div class="e-pdfviewer-icon e-pdfviewer-fitpage" id="viewer-fitpage" onclick="callClientSideMethod('fitpage')"></div>
             </div>
-              <div class="round-button-circle" style=" position:absolute;top:70px;">
-                <div class=" e-pdfviewer-customtoolbar-download "onclick=" callClientSideMethod('download')"></div>
-            </div>
-            <div class="round-button-circle" style=" position:absolute;top:120px;">
-                <div class=" e-pdfviewer-customtoolbar-zoomin "  onclick=" callClientSideMethod('zoomIn')"></div>
-            </div>
-            <div class="round-button-circle" style="position:absolute;top:170px;">
-                <div class="  e-pdfviewer-customtoolbar-zoomout "  onclick="callClientSideMethod('zoomOut')"></div>
-            </div>
-            <div class="round-button-circle" style="position:absolute;top:220px;">
-                <div class=" e-pdfviewer-customtoolbar-fitpage "  onclick="callClientSideMethod('fitPage')"></div>
-            </div>
-            <div class="round-button-circle" style="position:absolute;top:270px;">
-                <div class=" e-pdfviewer-customtoolbar-fitwidth "  onclick="callClientSideMethod('fitWidth')"></div>
+            <div style="float:right; padding:5px;">
+                <div class="e-pdfviewer-icon e-pdfviewer-print" id="viewer-print" onclick="callClientSideMethod('print')"></div>
+                <div class="e-pdfviewer-icon e-pdfviewer-download" id="viewer-download" onclick="callClientSideMethod('download')"></div>
             </div>
         </div>
-        <div id="toolbarDiv" class="toolbarclass " role="toolbar" style="background-color:#c8c8c8;width:98.5%;">
-            <div style="padding:10px;float:left">
-                <span id="pdfName"></span>
-            </div>
-            <div style ="left:45%;position:absolute;padding:5px;">
-                <table>
-                <tr>
-                    <td style="width:34px;"><div class=" round-button-circle"><div class=" e-pdfviewer-customtoolbar-previous " onclick=" callClientSideMethod('previous')"></div></div></td>
-                    <td><input id="currentPage" class="e-pdfviewer-pagenumber" type="text" value="1" data-role="none" onclick="textboxOnclick(event)" onkeypress="goToPage(event)" style="background-color:#c8c8c8;border:#c8c8c8;font-size:16px;margin:-5px;"></td>
-                    <td style="width:20px;"><span id="totalPageCount"></span></td>
-                    <td><div class=" round-button-circle"><div class=" e-pdfviewer-customtoolbar-next " onclick=" callClientSideMethod('next')"></div></div></td>
-                </tr>
-                </table>
-            </div>
-        </div>
-        <script type="text/javascript">
-            $(function () {
-                $("#container").ejPdfViewer({serviceUrl: "/api/PdfViewerAPI", pageChange: "pageChange" }).data("ejPdfViewer").showToolbar(false);
-            });
-            var isTextFieldInFocus = false;
-            var mousePosX, mousePosY, height, width;
-            var currentPage = 1;
-            var toolbarInView = false;
-            height = parseInt(document.getElementById("container").style.height);
-            width = window.innerWidth;
-            showCustomToolbar();
-            function mouseMoveFunction(args) {
-               mousePosX = args.clientX;
-               mousePosY = args.clientY;
-                if (!toolbarInView) {
-                    if ((mousePosY < height - 400 && mousePosX < 200) || (mousePosY <= 70 && mousePosX <= width)) {
-                        showCustomToolbar();
-                    }
-                    else {
-                    }
-                }
-            }
-            function showCustomToolbar() {
-                $("#magnificationDiv").css({ left: 0, "position": "absolute", "display": "block", "height": 300 + "px", "top": (height - 600) + "px" }).animate({ "left": 100 + "px" }, "slow");
-                $("#toolbarDiv").css({ left: 0, "top": 0 + "px", "position": "absolute" }).animate({ "height": 40 + "px", top: 0 }, "slow");
-                toolbarInView = true;
-            }
-            function hideCustomToolbar() {
-                $("#toolbarDiv").css({ height: 40 + "px" }).animate({ "top": -40 + "px" }, "slow");
-                $("#magnificationDiv").css({ left: 100 + "px" }).animate({ "left": -50 + "px" }, "slow");
-                toolbarInView = false;
-            }
-            setInterval(function () { hideToolbar() }, 5000);
-            function hideToolbar() {
-                if (((mousePosY < height - 400 && mousePosX < 200) || (mousePosY <= 70 && mousePosX <= width))) {
-                } else {
-                    if ((toolbarInView) && (!isTextFieldInFocus)) {
-                        hideCustomToolbar();
-                    }
-                }
-            }
-            function callClientSideMethod(apiName) {
-                var obj = $("#container").data("ejPdfViewer");
-                switch (apiName) {
-                    case 'zoomIn':
-                        obj.zoomIn();
-                        break;
-                    case 'zoomOut':
-                        obj.zoomOut();
-                        break;
-                    case 'fitPage':
-                        obj.fitToPage();
-                        break;
-                    case 'fitWidth':
-                        obj.fitToWidth();
-                        break;
-                    case 'previous':
-                        obj.goToPreviousPage();
-                        break;
-                    case 'next':
-                        obj.goToNextPage();
-                        break;
-                    case 'print':
-                        obj.print();
-                        break;
-                    case 'download':
-                        obj.download();
-                        break;
-                }
-            }
-            function pageChange(args) {
-                $("#currentPage").val(args.currentPageNumber);
-                currentPage = document.getElementById("currentPage").value;
-            }
-            $(function () {
-                var obj = $("#container").data("ejPdfViewer");
-                var pageCount = obj.pageCount;
-                $("#totalPageCount").html("/" + pageCount);
-                var filename = (obj.fileName).split("\\");
-                var pdf = filename[filename.length - 1];
-                $("#pdfName").html(pdf);
-            });
-            function goToPage(event) {
-                var obj = $("#container").data("ejPdfViewer");
-                if (event.keyCode == 13) {
-                    try {
-                        var val = parseInt($(event.currentTarget).val());
-                        if (val > 0 && val <= obj.pageCount)
-                            obj.goToPage(val);
-                        else
-                            $(event.currentTarget).val(currentPage);
-                    } catch (err) {
-                    }
-                }
-            }
-            function textboxOnclick(event) {
-                if (event.target.id == "currentPage")
-                    $('#currentPage').select();
-            };
-            $('#currentPage').keypress(function (event) {
-                if ((event.which < 48 || event.which > 57) && event.which != 8 && event.which != 13) {
-                    return false;
-                }
-                else {
-                    return true;
-                }
-            });
-            $("#currentPage").focusin(function () {
-                isTextFieldInFocus = true;
-                var $this = $(this);
-                 $this.select();
-                 window.setTimeout(function () {
-                    $this.select();
-                }, 1);
-                  function mouseUpHandler() {
-                    $this.off("mouseup", mouseUpHandler);
-                    return false;
-                }
-                $this.mouseup(mouseUpHandler);
-            });
-            $("#currentPage").focusout(function () {
-                isTextFieldInFocus = false;
-            });
-        </script>
-        <style>
-            .round-button-circle {
-                width: 30px;
-                height: 30px;
-                border-radius: 50%;
-                background-color: #c8c8c8;
-                /*overflow: hidden;*/
-            }
-            .round-button-circle:hover {
-                    background: #86cbea;
-            }         
-    .e-pdfviewer-customtoolbar-zoomin:before{
-      content: url('../images/pdfviewer/CustomToolbarImages/zoomin.png');
-          }
-    .e-pdfviewer-customtoolbar-zoomout:before{
-      content: url('../images/pdfviewer/CustomToolbarImages/zoomout.png');
-        }
-    .e-pdfviewer-customtoolbar-previous:before{
-        content: url('../images/pdfviewer/CustomToolbarImages/previous.png');
-        }
-    .e-pdfviewer-customtoolbar-next:before{
-        content: url('../images/pdfviewer/CustomToolbarImages/next.png');
-        }
-    .e-pdfviewer-customtoolbar-fitwidth:before{
-        content: url('../images/pdfviewer/CustomToolbarImages/fitwidth.png');
-        }
-    .e-pdfviewer-customtoolbar-print:before{
-        content: url('../images/pdfviewer/CustomToolbarImages/print.png');
-        }
-    .e-pdfviewer-customtoolbar-download:before{
-        content: url('../images/pdfviewer/CustomToolbarImages/download.png');
-        }
 
-    .e-pdfviewer-customtoolbar-fitpage:before{
-        content: url('../images/pdfviewer/CustomToolbarImages/fitpage.png');
+        <div style="width:100%;height:780px;margin-top:3px">
+            <div id="viewer"></div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        var currentPageNumber = 1;
+        $(function () {
+            $("#viewer").ejPdfViewer({ serviceUrl: '../api/PdfViewer', documentLoad: "onDocumentLoad", pageChange: "pageChange" });
+            var pdfviewer = $('#viewer').data('ejPdfViewer');
+            document.getElementById('currentPage').value = 1;
+            document.getElementById('totalPageCount').innerHTML = "/" + pdfviewer.pageCount;
+            pdfviewer.showToolbar(false);
+        });
+
+        function onDocumentLoad() {
+            var _ejPdfViewer = $('#viewer').data('ejPdfViewer');
+            document.getElementById('totalPageCount').innerHTML = "/" + _ejPdfViewer.pageCount;
+        }
+        function pageChange(args) {
+            currentPageNumber = args.currentPageNumber;
+            document.getElementById('currentPage').value = args.currentPageNumber;
+        }
+        function updatePageNumber(event) {
+            var _ejPdfViewer = $('#viewer').data("ejPdfViewer");
+            currentPageNumber = document.getElementById('currentPage').value;
+            if (event.which == 13) {
+                if (currentPageNumber > 0 && currentPageNumber <= _ejPdfViewer.pageCount) {
+                    _ejPdfViewer.goToPage(currentPageNumber);
+                } else {
+                    currentPageNumber = _ejPdfViewer.currentPageNumber;
+                }
+            }
+        }
+        function callClientSideMethod(apiName) {
+            var _ejPdfViewer = $('#viewer').data("ejPdfViewer");
+            switch (apiName) {
+                case 'print':
+                    _ejPdfViewer.print();
+                    break;
+                case 'zoomin':
+                    _ejPdfViewer.zoomIn();
+                    break;
+                case 'zoomout':
+                    _ejPdfViewer.zoomOut();
+                    break;
+                case 'fitpage':
+                    _ejPdfViewer.fitToPage();
+                    break;
+                case 'fitwidth':
+                    _ejPdfViewer.fitToWidth();
+                    break;
+                case 'previous':
+                    _ejPdfViewer.goToPreviousPage();
+                    break;
+                case 'next':
+                    _ejPdfViewer.goToNextPage();
+                    break;
+                case 'download':
+                    _ejPdfViewer.download();
+                    break;
+            }
+        }
+    </script>
+    <style>
+        #totalPageCount {
+            float: none !important;
         }
     </style>
 </body>
 {% endhighlight %}
 
+Run the sample. You can view the PDF viewer with custom toolbar.
 
-N> Ensure the icon images available in the referred location for the custom toolbar.
-
-Run the sample. You can view the ejPdfViewer with custom toolbar.
+Sample: [http://www.syncfusion.com/downloads/support/directtrac/general/ze/PdfViewer_ToolbarCustomization-835476603](http://www.syncfusion.com/downloads/support/directtrac/general/ze/PdfViewer_ToolbarCustomization-835476603 "Custom Toolbar sample")
