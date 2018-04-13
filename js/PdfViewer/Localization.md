@@ -11,7 +11,18 @@ api: /api/js/ejpdfviewer
 
 ## Localization
 
-We can localize the text labels provided in the ejPdfViewer widget with the collection of localized strings using ej.PdfViewer.Locale for different cultures. By default, ejPdfViewer is localized in “**en-US**” culture.
+The text labels provided in the ejPdfViewer control can be localized using the collection of localized strings using ej.PdfViewer.Locale for different cultures. By default, ejPdfViewer is localized in “**en-US**” culture.
+
+The different locale value for the ejPdfViewer control can be specified using the [`locale`](https://help.syncfusion.com/api/js/ejpdfviewer#locale-string "locale property") property.
+
+{% highlight javascript %}
+<div id="viewer"></div>
+<script type="text/javascript">
+    $(function () {
+        $("#viewer").ejPdfViewer({ serviceUrl: '../api/PdfViewer', locale:"fr-FR" });
+    });
+</script>
+{% endhighlight %}
 
 Following table shows the default values for the components in the ejPdfViewer widget in ‘en-US’ culture
 
@@ -182,7 +193,7 @@ Zoom
 contentText
 </td>
 <td>
-Zoom in or out on the PDF document.
+Zoom in or out of the PDF document.
 </td>
 </tr>
 <tr>
@@ -678,6 +689,20 @@ contentText
 Clear
 </td>
 </tr>
+<tr>
+<td colspan="1" rowspan="1">
+waitingPopup
+</td>
+<td>
+print
+</td>
+<td>
+contentText
+</td>
+<td>
+Preparing document for printing...
+</td>
+</tr>
 </table>
 
 The following code snippet illustrates you to change the localization to German culture “**de-DE**”
@@ -864,21 +889,23 @@ The following code snippet illustrates you to change the localization to German 
                     clear: {
                         contentText: "Klar"
                     },
+                },
+                waitingPopup: {
+                    print: {
+                        contentText: "Forbereder dokument til udskrivning ..."
+                    }
                 }
             };
         });
     </script>
-    <style>
-        .frame {
-            height: 600px;
-            width: 950px;
-        }
-    </style>
 </body>
 </html>
 {% endhighlight %}
 
 The following screenshot shows the PDF viewer with tooltip in German language.
+
+Sample
+[http://www.syncfusion.com/downloads/support/directtrac/general/ze/PdfViewer_Localization1889214505](http://www.syncfusion.com/downloads/support/directtrac/general/ze/PdfViewer_Localization1889214505 "Localization sample")
 
 ![](Localization_images/Localization_img1.png)
 
