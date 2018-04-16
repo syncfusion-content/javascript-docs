@@ -73,7 +73,7 @@ The following output is displayed as a result of the above code example.
 
 N> 1. There is no in-built support to bind the XML data to the grid. But you can achieve this requirement with the help of [custom adaptor](https://help.syncfusion.com/js/datamanager/data-adaptors#custom-adaptor) concept. 
 N> 2. Refer this [Knowledge Base link](http://www.syncfusion.com/kb/3377/how-to-process-xml-data-from-server-using-datamanager-and-bound-to-grid#) for bounding XML data to grid using custom adaptor. 
-N> 3. N> To update the dataSource after Grid rendered, use [`dataSource`](https://help.syncfusion.com/api/js/ejgrid#methods:datasource) method of grid.
+N> 3. To update the dataSource after Grid rendered, use [`dataSource`](https://help.syncfusion.com/api/js/ejgrid#methods:datasource) method of grid.
 
 ## Remote Data
 
