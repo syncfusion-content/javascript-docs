@@ -13,7 +13,7 @@ api: /api/js/ejpdfviewer
 
 The ejPdfViewer supports  adding handwritten signatures into the PDF document. The handwritten signature reduces the paper work of reviewing the content and verifies it digitally.
 
-The ejPdfViewer control has an option in the [`toolbarSettings`](https://help.syncfusion.com/api/js/ejpdfviewer#toolbarsettings-object "toolbarSettings property") property to enable or disable the signature button in the default toolbar. 
+The ejPdfViewer control has an option in the [toolbarSettings](https://help.syncfusion.com/api/js/ejpdfviewer#toolbarsettings-object "toolbarSettings property") property to enable or disable the signature button in the default toolbar. 
 
 The following code snippet describes how to disable the signature tool in the widget.
 
@@ -25,7 +25,7 @@ $(function () {
 
 **Enable or Disable handwritten signature**
 
-The adding of handwritten signature feature in the PDF document can be enabled or disabled using the [`enableSignature`](https://help.syncfusion.com/api/js/ejpdfviewer#members:enablesignature "enableSignature property") property.
+The adding of handwritten signature feature in the PDF document can be enabled or disabled using the [enableSignature](https://help.syncfusion.com/api/js/ejpdfviewer#members:enablesignature "enableSignature property") property.
 
 {% highlight javascript %}
 $(function () {
@@ -47,13 +47,13 @@ $(function () {
 
 The handwritten signature can be added by drawing the signature content in the signature panel and clicking the button labeled ADD. The following screenshots are the pictorial representation of this.
 
-![](Signature_images/Signature_img1.png)
+![](Signature_images/Signature_img1.png){:width="624px"}
 
 ![](Signature_images/Signature_img2.png)
 
 ![](Signature_images/Signature_img3.png)
 
-When the handwritten signature is added in the PDF document, the signatureAdd event will be triggered in the control. The event method can be defined using the [`signatureAdd`](https://help.syncfusion.com/api/js/ejpdfviewer#signatureadd "signatureAdd Event") property of the control.
+When the handwritten signature is added in the PDF document, the signatureAdd event will be triggered in the control. The event method can be defined using the [signatureAdd](https://help.syncfusion.com/api/js/ejpdfviewer#signatureadd "signatureAdd Event") property of the control.
 
 {% highlight javascript %}
 $(function () {
@@ -68,7 +68,7 @@ function signatureAdded(args){
 
 The handwritten signature content can be moved to the specified location within the page bounds by using touch gestures, arrow keys, and mouse. We can also resize the handwritten signature content by  maintaining the aspect ratio.
 
-When the handwritten signature is resized in the ejPdfViewer control, the signatureResize event will be triggered in the control. The event method can be defined using the [`signatureResize`](https://help.syncfusion.com/api/js/ejpdfviewer#signatureresize "signatureResize Event") property of the control.
+When the handwritten signature is resized in the ejPdfViewer control, the signatureResize event will be triggered in the control. The event method can be defined using the [signatureResize](https://help.syncfusion.com/api/js/ejpdfviewer#signatureresize "signatureResize Event") property of the control.
 
 {% highlight javascript %}
 $(function () {
@@ -83,7 +83,7 @@ The selected handwritten signature content can be deleted using the “Delete”
 
 ![](Signature_images/Signature_img4.png)
 
-When the handwritten signature is deleted from the PDF document, the signatureDelete event will be triggered in the control. The event method can be defined using the [`signatureDelete`](https://help.syncfusion.com/api/js/ejpdfviewer#signaturedelete "signatureDelete Event") property of the control.
+When the handwritten signature is deleted from the PDF document, the signatureDelete event will be triggered in the control. The event method can be defined using the [signatureDelete](https://help.syncfusion.com/api/js/ejpdfviewer#signaturedelete "signatureDelete Event") property of the control.
 
 {% highlight javascript %}
 $(function () {
@@ -94,7 +94,7 @@ function signatureDelete(args){
 }
 {% endhighlight %}
 
-You can undo and redo the changes made to the handwritten signatures included in the PDF document using the [`undo()`](https://help.syncfusion.com/api/js/ejpdfviewer#undo "undo method") and the [`redo()`](https://help.syncfusion.com/api/js/ejpdfviewer#redo "redo method") methods. 
+You can undo and redo the changes made to the handwritten signatures included in the PDF document using the [undo()](https://help.syncfusion.com/api/js/ejpdfviewer#undo "undo method") and the [redo()](https://help.syncfusion.com/api/js/ejpdfviewer#redo "redo method") methods. 
 
 {% highlight javascript %}
 function undoChanges() {
@@ -124,7 +124,7 @@ You can also change the opacity of the added signature in the "properties" optio
 
 ![](Signature_images/Signature_img8.png)
 
-When a property of the handwritten signature is changed in the ejPdfViewer control, the signaturePropertiesChange event will be triggered in the control. The event method can be defined using the [`signaturePropertiesChange`](https://help.syncfusion.com/api/js/ejpdfviewer#signaturepropertieschange "signaturePropertiesChange Event") property of the control.
+When a property of the handwritten signature is changed in the ejPdfViewer control, the signaturePropertiesChange event will be triggered in the control. The event method can be defined using the [signaturePropertiesChange](https://help.syncfusion.com/api/js/ejpdfviewer#signaturepropertieschange "signaturePropertiesChange Event") property of the control.
 
 {% highlight javascript %}
 $(function () {

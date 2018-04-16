@@ -81,7 +81,7 @@ Contains selection tool.
 </tr>
 </table>
 
-The ejPdfViewer control has an option to show or hide these grouped items in the default toolbar. You can hide or display any of these tools by using the [`toolbarSettings`](https://help.syncfusion.com/api/js/ejpdfviewer#members:toolbarsettings "toolbarSettings property") property. The following code snippet describes how to show the magnification tools in the widget.
+The ejPdfViewer control has an option to show or hide these grouped items in the default toolbar. You can hide or display any of these tools by using the [toolbarSettings](https://help.syncfusion.com/api/js/ejpdfviewer#members:toolbarsettings "toolbarSettings property") property. The following code snippet describes how to show the magnification tools in the widget.
 
 {% highlight javascript %}
 $(function () {
@@ -89,7 +89,7 @@ $(function () {
 });
 {% endhighlight %}
 
-The ejPdfViewer control also has an option to show or hide the complete default toolbar. You can achieve this by using the [`showToolbar(bool)`](https://help.syncfusion.com/api/js/ejpdfviewer#methods:showtoolbar "showToolbar method") method. The following code snippet describes how to hide the default toolbar in the widget.
+The ejPdfViewer control also has an option to show or hide the complete default toolbar. You can achieve this by using the [showToolbar(bool)](https://help.syncfusion.com/api/js/ejpdfviewer#methods:showtoolbar "showToolbar method") method. The following code snippet describes how to hide the default toolbar in the widget.
 
 {% highlight javascript %}
 $(“#container).data(“ejPdfViewer”).showToolbar(false);
@@ -97,7 +97,7 @@ $(“#container).data(“ejPdfViewer”).showToolbar(false);
 
 ### Magnification tools
 
-The magnification tools of the ejPdfViewer contain ZoomIn, ZoomOut, Zoom, FitPage, and FitWidth tools in the default toolbar. The ejPdfViewer control also has an option to show or hide the magnification tools in the default toolbar. You can achieve this by using the [`showMagnificationTools(bool)`}(https://help.syncfusion.com/api/js/ejpdfviewer#showmagnificationtoolsshow "showMagnificationTools method") method. The following code snippet describes how to hide the magnification tools in the default toolbar in the widget.
+The magnification tools of the ejPdfViewer contain ZoomIn, ZoomOut, Zoom, FitPage, and FitWidth tools in the default toolbar. The ejPdfViewer control also has an option to show or hide the magnification tools in the default toolbar. You can achieve this by using the [showMagnificationTools(bool)](https://help.syncfusion.com/api/js/ejpdfviewer#showmagnificationtoolsshow "showMagnificationTools method") method. The following code snippet describes how to hide the magnification tools in the default toolbar in the widget.
 
 {% highlight javascript %}
 $(“#container).data(“ejPdfViewer”).showMagnificationTools(false);
@@ -107,7 +107,7 @@ $(“#container).data(“ejPdfViewer”).showMagnificationTools(false);
 
 fitToPage()
 
-You can fit the page size of the PDF document loaded in the ejPdfViewer control using the [`fitToPage()`](https://help.syncfusion.com/api/js/ejpdfviewer#fittopage "fitToPage method") method. 
+You can fit the page size of the PDF document loaded in the ejPdfViewer control using the [fitToPage()](https://help.syncfusion.com/api/js/ejpdfviewer#fittopage "fitToPage method") method. 
  
 {% highlight javascript %}
 $(“#container).data(“ejPdfViewer”).fitToPage();
@@ -115,7 +115,7 @@ $(“#container).data(“ejPdfViewer”).fitToPage();
 
 fitToWidth()
 
-You can fit the page width of the PDF document loaded in the ejPdfViewer control using the ['fitToWidth()'](https://help.syncfusion.com/api/js/ejpdfviewer#fittowidth "fitToWidth method") method. 
+You can fit the page width of the PDF document loaded in the ejPdfViewer control using the [fitToWidth()](https://help.syncfusion.com/api/js/ejpdfviewer#fittowidth "fitToWidth method") method. 
 
 {% highlight javascript %}
 $(“#container).data(“ejPdfViewer”).fitToWidth();
@@ -123,7 +123,7 @@ $(“#container).data(“ejPdfViewer”).fitToWidth();
 
 zoomIn()
 
-You can zoom the PDF document page loaded in the ejPdfViewer control using [`zoomIn()`](https://help.syncfusion.com/api/js/ejpdfviewer#zoomin "zoomIn method") method. The maximum zoom percentage is 400%.
+You can zoom the PDF document page loaded in the ejPdfViewer control using [zoomIn()](https://help.syncfusion.com/api/js/ejpdfviewer#zoomin "zoomIn method") method. The maximum zoom percentage is 400%.
 
 {% highlight javascript %}
 $(“#container).data(“ejPdfViewer”).zoomIn();
@@ -131,7 +131,7 @@ $(“#container).data(“ejPdfViewer”).zoomIn();
 
 zoomOut()
 
-You can zoom out the PDF document page loaded in the ejPdfViewer control using the [`zoomOut()`](https://help.syncfusion.com/api/js/ejpdfviewer#zoomout "zoomOut method") method. The minimum zoom percentage is 50%.
+You can zoom out the PDF document page loaded in the ejPdfViewer control using the [zoomOut()](https://help.syncfusion.com/api/js/ejpdfviewer#zoomout "zoomOut method") method. The minimum zoom percentage is 50%.
 
 {% highlight javascript %}
 $(“#container).data(“ejPdfViewer”).zoomOut();
@@ -139,7 +139,7 @@ $(“#container).data(“ejPdfViewer”).zoomOut();
 
 zoomTo(zoomValue)
 
-The PDF document page loaded in the PDF viewer control can be zoomed to a specific value using the [`zoomTo(zoomValue)`](https://help.syncfusion.com/api/js/ejpdfviewer#zoomtozoomvalue "zoomTo method") method.
+The PDF document page loaded in the PDF viewer control can be zoomed to a specific value using the [zoomTo(zoomValue)](https://help.syncfusion.com/api/js/ejpdfviewer#zoomtozoomvalue "zoomTo method") method.
 
 {% highlight javascript %}
 $(“#container).data(“ejPdfViewer”).zoomTo(154);
@@ -147,7 +147,7 @@ $(“#container).data(“ejPdfViewer”).zoomTo(154);
 
 zoomPercentage
 
-The [`zoomPercentage`](https://help.syncfusion.com/api/js/ejpdfviewer#zoompercentage-number "zoomPercentage property") property of the PDF viewer control returns the current zoom value of the PDF document.
+The [zoomPercentage](https://help.syncfusion.com/api/js/ejpdfviewer#zoompercentage-number "zoomPercentage property") property of the PDF viewer control returns the current zoom value of the PDF document.
 
 {% highlight javascript %}
     var pdfviewer = $("#container").data(“ejPdfViewer”);
@@ -156,7 +156,7 @@ The [`zoomPercentage`](https://help.syncfusion.com/api/js/ejpdfviewer#zoompercen
 
 zoomChange
 
-When the zoom value of the PDF document is changed using the magnification tools, the zoomChange event will be triggered. We can define the event method using the [`zoomChange`](https://help.syncfusion.com/api/js/ejpdfviewer#zoomchange "zoomChange Event") property of the control.
+When the zoom value of the PDF document is changed using the magnification tools, the zoomChange event will be triggered. We can define the event method using the [zoomChange](https://help.syncfusion.com/api/js/ejpdfviewer#zoomchange "zoomChange Event") property of the control.
 
 {% highlight javascript %}
 $(function () {
@@ -169,7 +169,7 @@ function zoomChanged(args) {
 
 ### Navigation Tools
 
-The navigation tools of the PDF viewer contain GoToNext, GoToPrevious, and current page number tools in the default toolbar. The PDF viewer control also has an option to show or hide the navigation tools in the default toolbar. You can achieve this by using the [`showPageNavigationTools(bool)`](https://help.syncfusion.com/api/js/ejpdfviewer#showpagenavigationtoolsshow "showPageNavigationTools method") method. The following code snippet describes how to hide the navigation tools in the default toolbar in the widget.
+The navigation tools of the PDF viewer contain GoToNext, GoToPrevious, and current page number tools in the default toolbar. The PDF viewer control also has an option to show or hide the navigation tools in the default toolbar. You can achieve this by using the [showPageNavigationTools(bool)](https://help.syncfusion.com/api/js/ejpdfviewer#showpagenavigationtoolsshow "showPageNavigationTools method") method. The following code snippet describes how to hide the navigation tools in the default toolbar in the widget.
 
 {% highlight javascript %}
 $(“#container”).data(“ejPdfViewer”).showPageNavigationTools(false);
@@ -179,7 +179,7 @@ $(“#container”).data(“ejPdfViewer”).showPageNavigationTools(false);
 
 goToPreviousPage()
 
-The previous page of the PDF document from the current page can be navigated in the ejPdfViewer using [`goToPreviousPage()`](https://help.syncfusion.com/api/js/ejpdfviewer#gotopreviouspage "goToPreviousPage method") method.
+The previous page of the PDF document from the current page can be navigated in the ejPdfViewer using [goToPreviousPage()](https://help.syncfusion.com/api/js/ejpdfviewer#gotopreviouspage "goToPreviousPage method") method.
 
 {% highlight javascript %}
 $(“#container”).data(“ejPdfViewer”).goToPreviousPage();
@@ -187,7 +187,7 @@ $(“#container”).data(“ejPdfViewer”).goToPreviousPage();
 
 goToNextPage()
 
-The next page of the PDF document from the current page can be navigated in the ejPdfViewer using the [`goToNextPage()`](https://help.syncfusion.com/api/js/ejpdfviewer#gotonextpage "goToNextPage method") method.
+The next page of the PDF document from the current page can be navigated in the ejPdfViewer using the [goToNextPage()](https://help.syncfusion.com/api/js/ejpdfviewer#gotonextpage "goToNextPage method") method.
 
 {% highlight javascript %}
 $(“#container”).data(“ejPdfViewer”).goToNextPage();
@@ -195,7 +195,7 @@ $(“#container”).data(“ejPdfViewer”).goToNextPage();
 
 goToFirstPage()
 
-The first page of the PDF document can be navigated in the ejPdfViewer using the [`goToFirstPage()`](https://help.syncfusion.com/api/js/ejpdfviewer#gotofirstpage "goToFirstPage method") method.
+The first page of the PDF document can be navigated in the ejPdfViewer using the [goToFirstPage()](https://help.syncfusion.com/api/js/ejpdfviewer#gotofirstpage "goToFirstPage method") method.
 
 {% highlight javascript %}
 $(“#container”).data(“ejPdfViewer”).goToFirstPage();
@@ -203,7 +203,7 @@ $(“#container”).data(“ejPdfViewer”).goToFirstPage();
 
 goToLastPage()
 
-The last page of the PDF document can be navigated in the ejPdfViewer using the [`goToLastPage()`](https://help.syncfusion.com/api/js/ejpdfviewer#gotolastpage "goToLastPage method") method.
+The last page of the PDF document can be navigated in the ejPdfViewer using the [goToLastPage()](https://help.syncfusion.com/api/js/ejpdfviewer#gotolastpage "goToLastPage method") method.
 
 {% highlight javascript %}
 $(“#container”).data(“ejPdfViewer”).goToLastPage();
@@ -211,7 +211,7 @@ $(“#container”).data(“ejPdfViewer”).goToLastPage();
 
 goToPage(pageNumber)
 
-The specific page in the PDF document can be navigated using the [`goToPage(pageNumber)`](https://help.syncfusion.com/api/js/ejpdfviewer#gotopagepagenumber "goToPage method") method. If the page is not available for the given pageNumber, the PDF viewer retains the existing page in view.
+The specific page in the PDF document can be navigated using the [goToPage(pageNumber)](https://help.syncfusion.com/api/js/ejpdfviewer#gotopagepagenumber "goToPage method") method. If the page is not available for the given pageNumber, the PDF viewer retains the existing page in view.
 
 {% highlight javascript %}
 $(“#container”).data(“ejPdfViewer”).goToPage(4);
@@ -219,7 +219,7 @@ $(“#container”).data(“ejPdfViewer”).goToPage(4);
 
 pageClick
 
-When a page of the PDF document is clicked, the pageClick event will be triggered. We can define the event method using the [`pageClick`](https://help.syncfusion.com/api/js/ejpdfviewer#pageclick "pageClick Event") property of the control.
+When a page of the PDF document is clicked, the pageClick event will be triggered. We can define the event method using the [pageClick](https://help.syncfusion.com/api/js/ejpdfviewer#pageclick "pageClick Event") property of the control.
 
 {% highlight javascript %}
 $(function () {
@@ -232,7 +232,7 @@ function pageClicked (args) {
 
 ### Text Markup Annotation Tools
 
-The text markup annotation tools of the ejPdfViewer contain strikeout, highlight, and underline tools in the default toolbar. The ejPdfViewer control also has an option to show or hide the text markup annotation tools in the default toolbar. You can achieve this by using the [`showTextMarkupAnnotationTools(bool)`](https://help.syncfusion.com/api/js/ejpdfviewer#methods:showtextmarkupannotationtools "showTextMarkupAnnotationTools method") method. The following code snippet describes how to hide the text markup annotation tools in the default toolbar in the widget.
+The text markup annotation tools of the ejPdfViewer contain strikeout, highlight, and underline tools in the default toolbar. The ejPdfViewer control also has an option to show or hide the text markup annotation tools in the default toolbar. You can achieve this by using the [showTextMarkupAnnotationTools(bool)](https://help.syncfusion.com/api/js/ejpdfviewer#methods:showtextmarkupannotationtools "showTextMarkupAnnotationTools method") method. The following code snippet describes how to hide the text markup annotation tools in the default toolbar in the widget.
 
 {% highlight javascript %}
 $(“#container”).data(“ejPdfViewer”).showTextMarkupAnnotationTools(false);
@@ -240,13 +240,13 @@ $(“#container”).data(“ejPdfViewer”).showTextMarkupAnnotationTools(false)
 
 ### Print Tool
 
-The print tool of the ejPdfViewer contains an option to print the PDF document. When the print button is clicked, the changes made in the PDF document will be printed along with the document using the browser’s default printer settings. The ejPdfViewer control provides the option to show or hide the print tool in the default toolbar. You can achieve this by using the [`showPrintTools(bool)`](https://help.syncfusion.com/api/js/ejpdfviewer#methods:showprinttools "showPrintTools method") method.
+The print tool of the ejPdfViewer contains an option to print the PDF document. When the print button is clicked, the changes made in the PDF document will be printed along with the document using the browser’s default printer settings. The ejPdfViewer control provides the option to show or hide the print tool in the default toolbar. You can achieve this by using the [showPrintTools(bool)](https://help.syncfusion.com/api/js/ejpdfviewer#methods:showprinttools "showPrintTools method") method.
 
 {% highlight javascript %}
 $(“#container”).data(“ejPdfViewer”).showPrintTools(false);
 {% endhighlight %}
 
-The printing of the PDF document can be achieved in the client side by calling the [`print()`](https://help.syncfusion.com/api/js/ejpdfviewer#print "print method") method. 
+The printing of the PDF document can be achieved in the client side by calling the [print()](https://help.syncfusion.com/api/js/ejpdfviewer#print "print method") method. 
 
 {% highlight javascript %}
 $(“#container”).data(“ejPdfViewer”).print();
@@ -254,7 +254,7 @@ $(“#container”).data(“ejPdfViewer”).print();
 
 *beforePrint*
 
-When the print option is clicked, the beforePrint event will be triggered before printing the PDF document from the ejPdfViewer control. We can define the event method using the [`beforePrint`](https://help.syncfusion.com/api/js/ejpdfviewer#events:beforeprint "beforePrint event") property of the control.
+When the print option is clicked, the beforePrint event will be triggered before printing the PDF document from the ejPdfViewer control. We can define the event method using the [beforePrint](https://help.syncfusion.com/api/js/ejpdfviewer#events:beforeprint "beforePrint event") property of the control.
 
 {% highlight javascript %}
 $(function () {
@@ -265,9 +265,9 @@ function beforePrint(args) {
 }
 {% endhighlight %}
 
-*AfterPrint*
+*afterPrint*
 
-After the printing process is completed, the afterPrint event will be triggered. We can define the event method using the [`afterPrint`](https://help.syncfusion.com/api/js/ejpdfviewer#events:afterprint "afterPrint Event") property of the control.
+After the printing process is completed, the afterPrint event will be triggered. We can define the event method using the [afterPrint](https://help.syncfusion.com/api/js/ejpdfviewer#events:afterprint "afterPrint Event") property of the control.
 
 {% highlight javascript %}
 $(function () {
@@ -280,13 +280,13 @@ function afterPrint (args) {
 
 ### Download Tool
 
-The download tool of the ejPdfViewer contains an option to download the PDF document. When the download button is clicked, the changes made in the PDF document will be saved in a copy of the original PDF document and it will be downloaded in the browser. The ejPdfViewer control provides the option to show or hide the download tool in the default toolbar. You can achieve this by using the [`showDownloadTool(bool)`](https://help.syncfusion.com/api/js/ejpdfviewer#methods:showdownloadtool "showDownloadTool method") method.
+The download tool of the ejPdfViewer contains an option to download the PDF document. When the download button is clicked, the changes made in the PDF document will be saved in a copy of the original PDF document and it will be downloaded in the browser. The ejPdfViewer control provides the option to show or hide the download tool in the default toolbar. You can achieve this by using the [showDownloadTool(bool)](https://help.syncfusion.com/api/js/ejpdfviewer#methods:showdownloadtool "showDownloadTool method") method.
 
 {% highlight javascript %}
 $(“#container”).data(“ejPdfViewer”).showDownloadTool(false);
 {% endhighlight %}
 
-The PDF document can be downloaded in the client side by calling the [`download()`](https://help.syncfusion.com/api/js/ejpdfviewer#methods:download "download method") method.
+The PDF document can be downloaded in the client side by calling the [download()](https://help.syncfusion.com/api/js/ejpdfviewer#methods:download "download method") method.
 
 {% highlight javascript %}
 $(“#container”).data(“ejPdfViewer”).download();
@@ -294,7 +294,7 @@ $(“#container”).data(“ejPdfViewer”).download();
 
 ### Signature tool
 
-The signature tool of the ejPdfViewer contains an option to include handwritten signatures in the PDF document. The ejPdfViewer control provides the option to show or hide the signature tool in the default toolbar. You can achieve this by using the [`showSignatureTool(bool)`](https://help.syncfusion.com/api/js/ejpdfviewer#methods:showsignaturetool "showSignatureTool method") method.
+The signature tool of the ejPdfViewer contains an option to include handwritten signatures in the PDF document. The ejPdfViewer control provides the option to show or hide the signature tool in the default toolbar. You can achieve this by using the [showSignatureTool(bool)](https://help.syncfusion.com/api/js/ejpdfviewer#methods:showsignaturetool "showSignatureTool method") method.
 
 {% highlight javascript %}
 $(“#container”).data(“ejPdfViewer”).showSignatureTool(false);
@@ -302,7 +302,7 @@ $(“#container”).data(“ejPdfViewer”).showSignatureTool(false);
 
 ### Selection tool
 
-The selection tool of the ejPdfViewer control contains options for selection and panning interaction modes. The ejPdfViewer control provides the option to show or hide the selection tool in the default toolbar. You can achieve this by using the [`showSelectionTool(bool)`](https://help.syncfusion.com/api/js/ejpdfviewer#methods:showselectiontool "showSelectionTool method") method.
+The selection tool of the ejPdfViewer control contains options for selection and panning interaction modes. The ejPdfViewer control provides the option to show or hide the selection tool in the default toolbar. You can achieve this by using the [showSelectionTool(bool)](https://help.syncfusion.com/api/js/ejpdfviewer#methods:showselectiontool "showSelectionTool method") method.
 
 {% highlight javascript %}
 $(“#container”).data(“ejPdfViewer”).showSelectionTool(false);
@@ -320,7 +320,7 @@ $(“#container”).data(“ejPdfViewer”).showTextSearchTool(false);
 
 searchText(targetText)
 
-[`searchText(targetText)`](https://help.syncfusion.com/api/js/ejpdfviewer#searchtexttargettext "searchText method") method allows us to search the target text in the PDF document and highlights the occurrences in the pages.
+[searchText(targetText)](https://help.syncfusion.com/api/js/ejpdfviewer#searchtexttargettext "searchText method") method allows us to search the target text in the PDF document and highlights the occurrences in the pages.
 
 {% highlight javascript %}
 $(“#container”).data("ejPdfViewer").searchText("name");
@@ -328,7 +328,7 @@ $(“#container”).data("ejPdfViewer").searchText("name");
 
 searchNext()
 
-The next occurrences of the searched text from the current occurrence can be searched using the [`searchNext()`](https://help.syncfusion.com/api/js/ejpdfviewer#searchnext "searchNext method") method.
+The next occurrences of the searched text from the current occurrence can be searched using the [searchNext()](https://help.syncfusion.com/api/js/ejpdfviewer#searchnext "searchNext method") method.
 
 {% highlight javascript %}
 $(“#container”).data("ejPdfViewer").searchNext();
@@ -336,7 +336,7 @@ $(“#container”).data("ejPdfViewer").searchNext();
 
 searchPrevious()
 
-The previous occurrence of the searched text from the current occurrence can be searched using the [`searchPrevious()`](https://help.syncfusion.com/api/js/ejpdfviewer#searchprevious "searchPrevious method") method.
+The previous occurrence of the searched text from the current occurrence can be searched using the [searchPrevious()](https://help.syncfusion.com/api/js/ejpdfviewer#searchprevious "searchPrevious method") method.
 
 {% highlight javascript %}
 $(“#container”).data("ejPdfViewer").searchPrevious();
@@ -344,7 +344,7 @@ $(“#container”).data("ejPdfViewer").searchPrevious();
 
 matchCase(enableMatchCase)
 
-The target text in the PDF document can be searched with its casing using the [`matchCase(enableMatchCase)`](https://help.syncfusion.com/api/js/ejpdfviewer#matchcaseenablematchcase "matchCase method") method.
+The target text in the PDF document can be searched with its casing using the [matchCase(enableMatchCase)](https://help.syncfusion.com/api/js/ejpdfviewer#matchcaseenablematchcase "matchCase method") method.
 
 {% highlight javascript %}
 $(“#container”).data("ejPdfViewer").matchCase(true);
@@ -352,7 +352,7 @@ $(“#container”).data("ejPdfViewer").matchCase(true);
 
 cancelSearchText()
 
-The text search can be canceled and the highlighted occurrences from the ejPdfViewer can be removed using the [`cancelSearchText()`](https://help.syncfusion.com/api/js/ejpdfviewer#cancelsearchtext "cancelSearchText method") method.
+The text search can be canceled and the highlighted occurrences from the ejPdfViewer can be removed using the [cancelSearchText()](https://help.syncfusion.com/api/js/ejpdfviewer#cancelsearchtext "cancelSearchText method") method.
 
 {% highlight javascript %}
 $(“#container”).data("ejPdfViewer").cancelSearchText();
@@ -361,7 +361,7 @@ $(“#container”).data("ejPdfViewer").cancelSearchText();
 **Adding Custom toolbar**
 
 The toolbar can be customized by hiding the existing toolbar.
-The following code snippet shows how to create a customer toolbar by using the [`client side APIs`](https://help.syncfusion.com/api/js/ejpdfviewer "ejPdfViewer API documentation").
+The following code snippet shows how to create a customer toolbar by using the [client side APIs](https://help.syncfusion.com/api/js/ejpdfviewer "ejPdfViewer API documentation").
 
 {% highlight html %}
 <body>
