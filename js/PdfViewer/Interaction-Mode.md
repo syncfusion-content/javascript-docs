@@ -20,7 +20,7 @@ In this mode, the text selection can be performed in the PDF document loaded in 
 
 **Enable or disable the Text selection**
 
-The text selection in the PDF viewer control can be enabled or disabled using the [`enableTextSelection`](https://help.syncfusion.com/api/js/ejpdfviewer#members:enabletextselection "enableTextSelection property") property.
+The text selection in the PDF viewer control can be enabled or disabled using the [enableTextSelection](https://help.syncfusion.com/api/js/ejpdfviewer#members:enabletextselection "enableTextSelection property") property.
 
 {% highlight javascript %}
 $(function () {
@@ -36,7 +36,7 @@ In this mode, the panning and scrolling of the pages by touch can be performed i
 
 **Changing the interaction mode**
 
-The interaction mode of the PDF viewer control can be set using the [`interactionMode`](https://help.syncfusion.com/api/js/ejpdfviewer#interactionmode-enum "interactionMode property") property.
+The interaction mode of the PDF viewer control can be set using the [interactionMode](https://help.syncfusion.com/api/js/ejpdfviewer#interactionmode-enum "interactionMode property") property.
 
 {% highlight javascript %}
 $(function () {
