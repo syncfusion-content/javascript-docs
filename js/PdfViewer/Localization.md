@@ -13,7 +13,7 @@ api: /api/js/ejpdfviewer
 
 The text labels provided in the ejPdfViewer control can be localized using the collection of localized strings using ej.PdfViewer.Locale for different cultures. By default, ejPdfViewer is localized in “**en-US**” culture.
 
-The different locale value for the ejPdfViewer control can be specified using the [`locale`](https://help.syncfusion.com/api/js/ejpdfviewer#locale-string "locale property") property.
+The different locale value for the ejPdfViewer control can be specified using the [locale](https://help.syncfusion.com/api/js/ejpdfviewer#locale-string "locale property") property.
 
 {% highlight javascript %}
 <div id="viewer"></div>
