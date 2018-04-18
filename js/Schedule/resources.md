@@ -753,3 +753,63 @@ $(function() {
 </script>
 
 {% endhighlight %}
+
+## Different Working dates for Resources
+
+It is possible to pass the custom dates for each resources present within the Scheduler. The process of passing custom dates for every individual resources is applicable only for the vertical Scheduler mode and not for timeline view. To render the custom dates based Scheduler, need to set the "customView" as the Scheduler active view. The custom dates needs to be defined within the `resourceSettings` property using the following sub-properties available within it.
+
+* [renderDates](/api/js/ejschedule#members:resources-resourcesettings-renderdates) is used to define custom dates for each individual resources.
+
+**Example**: To display the Scheduler with each individual resources having different rendering dates, the code example is depicted below.
+
+{% highlight html %}
+
+<!--Container for ejScheduler widget-->
+<div id="Schedule1"></div>
+
+<script type="text/javascript">
+$(function() {
+    $("#Schedule1").ejSchedule({
+        width: "100%",               
+        views: ["CustomView"],
+        // Set the Active view
+        currentView: ej.Schedule.CurrentView.CustomView,
+        group: {
+            resources: ["Owners"]
+        },
+        resources: [{
+            field: "ownerId",
+            title: "Owner",
+            name: "Owners", allowMultiple: true,
+            resourceSettings: {
+                dataSource: [
+		    		{ text: "Nancy", id: 1, groupId: 1, color: "#ffaa00", 
+                      customDates: [ new Date(2017,5,2), new Date(2017,5,4), new Date(2017,5,6)] },
+					{ text: "Steven", id: 3, groupId: 2, color: "#f8a398", 
+                      customDates: [ new Date(2017,5,11), new Date(2017,6,9)] },
+					{ text: "Michael", id: 5, groupId: 1, color: "#7499e1", 
+                      customDates: [ new Date(2017,5,2), new Date(2017,5,9), new Date(2017,5,10)] }
+                    ],
+                text: "text", id: "id", groupId: "groupId", color: "color", renderDates:"customDates"
+            }
+        }],
+        appointmentSettings: {
+            dataSource: [{
+                        Id: 100,
+                        Subject: "Research on Sky Miracles",
+                        StartTime: new Date(2017, 02, 05, 9, 00),
+                        EndTime: new Date(2017, 02, 05, 10, 30),
+                        ownerId: 2
+                    }],
+            resourceFields: "ownerId"
+        }
+    });
+});
+</script>
+
+{% endhighlight %}
+
+The following restrictions will be applied while using this feature.
+
+* firstDayOfWeek, currentDate, minDate, maxDate and showAppointmentNavigator property values does not reflect in Scheduler.
+* Disabling the showWeekEnd is not possible in resource wise custom dates rendering.

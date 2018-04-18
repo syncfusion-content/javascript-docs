@@ -196,6 +196,8 @@ N> An appointment directly created in Month view will be considered as an all-da
 
 ## Custom
 
+### Customizing Number of Days
+
 The Scheduler can be displayed with the user-specified date ranges, such as 4 days or any specific date ranges instead of default view options, by making use of the [renderDates](/api/js/ejschedule#members:renderdates) property. This property includes two sub properties namely **start** and **end**, which accepts the date object or date value in string format to specify the date range. 
 
 To display the custom view option in the toolbar-like view options in the scheduler header area, add the `CustomView` value to the views property array collection as shown below. 
@@ -243,6 +245,115 @@ $(function() {
 When the date difference between the provided start and end date is greater than 7, then the month-like view will get displayed in Vertical Scheduler mode - whereas with the date difference less than 7 days displays the Scheduler with exact count of the specified days.
 
 N> When the `currentDate` property of Scheduler is set with a date, that lies beyond the specified custom date range - then the Scheduler navigates to the current date with the mentioned date differences.  
+
+## Customizing Number of Dates
+
+The Scheduler can be displayed with the user-provided custom dates, such as 4 dates or any specific collection of dates, by making use of the [renderDates](/api/js/ejschedule#members:renderdates) property.This property accepts both the object and array values. You need to pass the array (array of strings/array of date/array of objects) value to utilize this feature. To render the custom dates based Scheduler, need to set the "customView" as the Scheduler active view.
+
+The following code example renders the Scheduler with the user-provided custom dates.
+
+a. Passing array of string values
+
+{% highlight html %}
+
+<!--Container for ejScheduler widget-->
+<div id="Schedule1"></div>
+
+<script type="text/javascript">
+$(function() {
+    $("#Schedule1").ejSchedule({
+        width: "100%",
+        renderDates: [
+            "5/2/2017", "5/4/2017", "5/6/2017", "5/9/2017", "5/10/2017",
+            "5/11/2017", "5/28/2017", "5/30/2017", "6/3/2017", "6/5/2017"
+        ],
+        views: ["CustomView"],
+        currentView: ej.Schedule.CurrentView.CustomView,
+        appointmentSettings: {
+            dataSource: [{
+                Id: 101,
+                Subject: "Talk with Nature",
+                StartTime: new Date(2017, 11, 5, 10, 00),
+                EndTime: new Date(2017, 11, 5, 11, 00)
+            }]
+        }
+    });
+});
+</script>
+
+{% endhighlight %}
+
+b. Passing array of date values
+
+{% highlight html %}
+
+<!--Container for ejScheduler widget-->
+<div id="Schedule1"></div>
+
+<script type="text/javascript">
+$(function() {
+    $("#Schedule1").ejSchedule({
+        width: "100%",
+        renderDates: [                        
+            new Date(2017,5,2), new Date(2017,5,4), new Date(2017,5,6), new Date(2017,5,8), 
+            new Date(2017,5,10), new Date(2017,5,12), new Date(2017,5,14), new Date(2017,5,16), 
+            new Date(2017,5,20), new Date(2017,5,22), new Date(2017,5,24), new Date(2017,5,28)
+        ],
+        views: ["CustomView"],
+        currentView: ej.Schedule.CurrentView.CustomView,
+        appointmentSettings: {
+            dataSource: [{
+                Id: 101,
+                Subject: "Talk with Nature",
+                StartTime: new Date(2017, 11, 5, 10, 00),
+                EndTime: new Date(2017, 11, 5, 11, 00)
+            }]
+        }
+    });
+});
+</script>
+
+{% endhighlight %}
+
+c. Passing array of object values
+
+You can use sub properties namely **start** and **end** while passing array of object values, which accepts the date object or date value in string format to specify the custom date range.
+
+{% highlight html %}
+
+<!--Container for ejScheduler widget-->
+<div id="Schedule1"></div>
+
+<script type="text/javascript">
+$(function() {
+    $("#Schedule1").ejSchedule({
+        width: "100%",
+        renderDates: [                        
+            { start: new Date(2015, 1, 6), end: new Date(2015, 1, 10) },
+            { start: new Date(2016, 6, 11), end: new Date(2016, 6, 20) },
+            { start: new Date(2017, 10, 26), end: new Date(2017, 10, 30) }
+        ],
+        views: ["CustomView"],
+        currentView: ej.Schedule.CurrentView.CustomView,
+        appointmentSettings: {
+            dataSource: [{
+                Id: 101,
+                Subject: "Talk with Nature",
+                StartTime: new Date(2017, 11, 5, 10, 00),
+                EndTime: new Date(2017, 11, 5, 11, 00)
+            }]
+        }
+    });
+});
+</script>
+
+{% endhighlight %}
+
+N> When the passed custom dates length is greater than 7, then the month-like view will get displayed in Horizontal Scheduler mode - whereas with the dates length less than 7 days displays the Scheduler with its specified orientation.
+
+The following restrictions will be applied while using this feature.
+
+* firstDayOfWeek, currentDate, minDate, maxDate and showAppointmentNavigator property values does not reflect in Scheduler.
 
 ## Agenda
 
