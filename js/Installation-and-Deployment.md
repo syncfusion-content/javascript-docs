@@ -21,7 +21,7 @@ The installer copies the required scripts, stylesheets and samples into the foll
 
 _For example, if you had chosen to install under `C:\Program Files (x86)`, then navigate to the below location, C:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\_
 
-Within the root `javascript` folder, the `assets` folder contains all the minified versions of scripts along with the [Source Maps](/js/sourcemap) and stylesheets where as the `assets-src` folder contains the uncompressed version of the same files. The assets have been organized in the following folder structure
+Within the root `javascript` folder, the `assets` folder contains all the minified versions of scripts and stylesheets where as the `assets-src` folder contains the uncompressed version of the same files. The assets have been organized in the following folder structure
 
   * CSS - contains the style sheets for mobile and web components.
   * External - contains the external dependency files such as jQuery, JsRender etc.
