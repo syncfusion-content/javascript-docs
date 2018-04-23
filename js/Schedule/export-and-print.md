@@ -434,7 +434,7 @@ The server-side action **XLSExport** contains the following code example to expo
 public ActionResult XLSExport()
 {
     List<AppointmentData> scheduleAppointments = (List<AppointmentData>)Newtonsoft.Json.JsonConvert.DeserializeObject(Request.Form["ScheduleAppointment"], typeof(List<AppointmentData>));
-    for (int a = 0, len = scheduleAppointments.Count; a < len; a++)
+    for (int a = 0, b = scheduleAppointments.Count; a < b; a++)
     {
         scheduleAppointments[a].StartTime = Convert.ToDateTime(scheduleAppointments[a].StartTime).ToString();
         scheduleAppointments[a].EndTime = Convert.ToDateTime(scheduleAppointments[a].EndTime).ToString();
