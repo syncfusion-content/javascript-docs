@@ -176,6 +176,48 @@ A task’s schedule can be changed by left resizing, right resizing or dragging 
 
 ![](/js/Gantt/Resource-Allocation-View_images/ResourceView_12.png)
 
+#### Update task values dynamically
+In resource allocation view also, we can update the task details dynamically on any action like external button click by using [`updateRecordByTaskId`](/api/js/ejgantt#methods:updaterecordbytaskid "updateRecordByTaskId(data)") method. The below code example explains how to use this method in resource allocation view.
+
+{% highlight javascript %}
+
+<div id="resourceGantt" style="height:450px;width:100%;" />
+<button id="update">Update Tasks</button>
+
+<script type="text/javascript">
+
+$(function () {
+    $("#resourceGantt").ejGantt({
+        dataSource: resourceGanttData,
+        viewType: ej.Gantt.ViewType.ResourceView,
+        //…
+    });
+});
+
+$("#update").click(function () {
+    var ganttObject = $("#resourceGantt").ejGantt("instance");
+    var task = {};
+    task.taskID = 3;
+    task.resourceId = [1, 2, 3];
+    task.startDate = new Date("02/25/2017")
+    task.duration = 10;
+    task.taskName = task.taskID + " - Name Changed";
+    ganttObject.updateRecordByTaskId(task);
+});
+</script>
+
+{% endhighlight %}
+
+The below screenshot shows the result of above code example.
+
+![](/js/Gantt/Resource-Allocation-View_images/ResourceView_19.png)
+Before update
+{:.caption}
+
+![](/js/Gantt/Resource-Allocation-View_images/ResourceView_20.png)
+After update
+{:.caption}
+
 ### Deleting
 
 #### Deleting Task
