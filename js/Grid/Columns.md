@@ -42,7 +42,7 @@ The following output is displayed as a result of the above code example.
 
 ### How to set isPrimaryKey for auto generated columns when editing is enabled:
 
-Using the [`dataBound`](https://help.syncfusion.com/api/js/ejgrid#events:databound "dataBound") event, you can set [`isPrimaryKey`](https://help.syncfusion.com/api/js/ejgrid#members:columns-isprimarykey "isPrimaryKey") value as `true` by two ways. The following code example demonstrates the above behavior.
+Using the [`dataBound`](https://help.syncfusion.com/api/js/ejgrid#events:databound "dataBound") event, you can set [`isPrimaryKey`](https://help.syncfusion.com/api/js/ejgrid#methods:columns "columns") method for updating the particular column. The following code example demonstrates the above behavior.
 
 1. If primary key "column index" is known then refer to the following code example
 
