@@ -737,7 +737,7 @@ The following output is displayed as a result of the above code example.
 
 ## Controlling Grid actions
 
-You can control the Grid actions of a particular column by setting [`allowSorting`](https://help.syncfusion.com/api/js/ejgrid#members:allowsorting "allowSorting"), [`allowGrouping`](https://help.syncfusion.com/api/js/ejgrid#members:allowgrouping "allowGrouping"), `allowFiltering`, [`allowResizing`](https://help.syncfusion.com/api/js/ejgrid#members:allowresizing "allowResizing") and [`allowEditing`](https://help.syncfusion.com/api/js/ejgrid#members:editsettings-allowediting "allowEditing") properties.
+You can control the Grid actions of a particular column by setting [`allowSorting`](https://help.syncfusion.com/api/js/ejgrid#members:columns-allowsorting "allowSorting"), [`allowGrouping`](https://help.syncfusion.com/api/js/ejgrid#members:columns-allowgrouping "allowGrouping"), [`allowfiltering`](https://help.syncfusion.com/api/js/ejgrid#members:columns-allowfiltering "allowfiltering"), [`allowResizing`](https://help.syncfusion.com/api/js/ejgrid#members:columns-allowresizing "allowResizing") and [`allowEditing`](https://help.syncfusion.com/api/js/ejgrid#members:columns-allowediting "allowEditing") properties.
 
 The following code example describes the above behavior.
 
