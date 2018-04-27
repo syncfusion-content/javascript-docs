@@ -294,7 +294,7 @@ To control the grid Group actions externally use the following methods,
 
 3.[`expandGroupDropArea`](https://help.syncfusion.com/api/js/ejgrid#methods:expandgroupdroparea "expandGroupDropArea")
 
-3.[`expandGroupDropArea`](https://help.syncfusion.com/api/js/ejgrid#methods:expandgroupdroparea "expandGroupDropArea")
+3.[`collapseGroupDropArea`](https://help.syncfusion.com/api/js/ejgrid#methods:collapsegroupdroparea "collapseGroupDropArea")
 
 The following code example describes the above behavior.
 
