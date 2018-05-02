@@ -581,10 +581,10 @@ $(function() {
 
 {% endhighlight %}
 
-### Auto- navigation on dragging the appointments
+### Auto-navigation on dragging the appointments
 
-While drag and holding the appointments at most left or right drag area of the scheduler, the scheduler will navigate to previous or next page. Also, holding the appointments will allow continuous navigation.
-Holding time of appointments can be set by the user using `timeDelay` parameter in `drag` event whereas its default value is 3000ms.
+While drag and holding the appointments at most left or right drag area of the schedule, the schedule will navigate to previous or next page respectively. Also, holding the appointments will allow continuous navigation.
+Holding time of appointments can be set by the user using `timeDelay` argument in the `drag` event, whereas its default value is set to `3000ms`.
 
 The following code example shows how to delay the holding time of appointments.
 
