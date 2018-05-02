@@ -196,7 +196,7 @@ N> An appointment directly created in Month view will be considered as an all-da
 
 ## Custom
 
-### Customizing Number of Days
+### Customizing the days count
 
 The Scheduler can be displayed with the user-specified date ranges, such as 4 days or any specific date ranges instead of default view options, by making use of the [renderDates](/api/js/ejschedule#members:renderdates) property. This property includes two sub properties namely **start** and **end**, which accepts the date object or date value in string format to specify the date range. 
 
@@ -246,13 +246,13 @@ When the date difference between the provided start and end date is greater than
 
 N> When the `currentDate` property of Scheduler is set with a date, that lies beyond the specified custom date range - then the Scheduler navigates to the current date with the mentioned date differences.  
 
-## Customizing Number of Dates
+### Customizing with different date collection
 
-The Scheduler can be displayed with the user-provided custom dates, such as 4 dates or any specific collection of dates, by making use of the [renderDates](/api/js/ejschedule#members:renderdates) property.This property accepts both the object and array values. You need to pass the array (array of strings/array of date/array of objects) value to utilize this feature. To render the custom dates based Scheduler, need to set the "customView" as the Scheduler active view.
+The Scheduler can be displayed with the user-provided custom dates, such as continuous 4 dates or any discontinuous collection of dates, by making use of the [renderDates](/api/js/ejschedule#members:renderdates) property.This property accepts both the object and array values. You need to pass the array (array of strings/array of date/array of objects) value to utilize this feature. To render the custom date collection, we need to set the "customView" as Schedule's active view and then define the date collection to the `renderDates` property.
 
 The following code example renders the Scheduler with the user-provided custom dates.
 
-a. Passing array of string values
+#### Passing array of date string values
 
 {% highlight html %}
 
@@ -283,7 +283,7 @@ $(function() {
 
 {% endhighlight %}
 
-b. Passing array of date values
+#### Passing array of date values
 
 {% highlight html %}
 
@@ -315,9 +315,9 @@ $(function() {
 
 {% endhighlight %}
 
-c. Passing array of object values
+#### Passing array of date object values
 
-You can use sub properties namely **start** and **end** while passing array of object values, which accepts the date object or date value in string format to specify the custom date range.
+You can use sub-properties namely **start** and **end** while passing array of date object values, which accepts the date object or date value in string format to specify the custom date range.
 
 {% highlight html %}
 
@@ -353,7 +353,7 @@ N> When the passed custom dates length is greater than 7, then the month-like vi
 
 The following restrictions will be applied while using this feature.
 
-* firstDayOfWeek, currentDate, minDate, maxDate and showAppointmentNavigator property values does not reflect in Scheduler.
+* firstDayOfWeek, currentDate, minDate, maxDate and showAppointmentNavigator property values does not works with this customized view.
 
 ## Agenda
 
