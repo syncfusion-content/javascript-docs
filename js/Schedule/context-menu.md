@@ -343,3 +343,55 @@ $(function() {
 
 N> The **categorize** option must be added only to the **appointment** collection, which displays on right clicking the appointments.
 
+To bind the remote data to the dataSource of categorizeSettings, use the below code example.
+
+{% highlight html %}
+
+<!--Container for ejScheduler widget-->
+<div id="Schedule1"></div>
+
+<script type="text/javascript">
+$(function() {
+    var dataManager = ej.DataManager({
+        url: "Home/GetCategorizeData",
+        adaptor: new ej.UrlAdaptor()
+    });
+    $("#Schedule1").ejSchedule({
+        currentDate: new Date(2015, 11, 2),
+        categorizeSettings: {
+            enable: true,
+            allowMultiple: true,
+            dataSource: dataManager,
+            id: "Id",
+            fontColor: "FontColor",
+            color: "Color",
+            text: "Text"
+        },
+        appointmentSettings: {
+            categorize: "Categorize",
+            dataSource: [{
+                Id: 100,
+                Subject: "Research on Sky Miracles",
+                StartTime: new Date(2015, 11, 2, 9, 00),
+                EndTime: new Date(2015, 11, 2, 10, 30),
+                Categorize: "1"
+            }]
+        }
+    });
+});
+</script>
+
+{% endhighlight %}
+
+The server-side controller code to retrieve the categorize data are as follows.
+
+{% highlight c# %}
+
+public JsonResult GetCategorizeData()
+{
+    // ScheduleDataDataContext is a LINQ-to-SQL data class name that is defined in the .dbml file to access the tables from the database
+    IEnumerable data = new ScheduleDataDataContext().CategoryData; // CategoryData is the model class name which includes the category related field definition such as Id, FontColor, Color and Text.
+    return Json(data, JsonRequestBehavior.AllowGet);
+}
+
+{% endhighlight %}

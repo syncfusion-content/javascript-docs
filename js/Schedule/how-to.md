@@ -363,6 +363,8 @@ function searchKeyUp() {
 
 Apart from the custom appointment window, it is possible to customize the default appointment window by adding/removing the required number of fields into it. This can be achieved through the **create** event of the scheduler.
 
+Also, we can show/hide start & end timezone fields and location field by setting true/false to the [ShowTimeZoneField](/api/js/ejschedule#members:showtimezonefield) and [showLocationField](/api/js/ejschedule#members:showlocationfield)  properties respectively.
+
 The following code example depicts the way to achieve the customization of default appointment window.
 
 {% highlight html %}
@@ -378,6 +380,8 @@ $(function() {
         currentDate: new Date(2015, 11, 2),
         showCurrentTimeIndicator: false,
         appointmentWindowOpen: "onAppointmentOpen",
+        showTimeZoneField: false,
+        showLocationField: true,
         appointmentSettings: {
             dataSource: [{
                 Id: 100,
