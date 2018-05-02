@@ -93,6 +93,7 @@ Some of the default changes done for adaptive Scheduler to render in mobile devi
 * Time cell width decreased
 * Quick window display blocked on cell/appointment single click.
 * Appointment resizing action blocked.
+* Appointment dragging will be done on ‘tap and hold’ the appointments.
 * Multiple cell selection blocked.
 * Delete appointment option made available within the appointment window.
 * Week header display in month view hidden.
