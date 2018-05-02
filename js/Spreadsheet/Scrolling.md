@@ -58,6 +58,8 @@ Spreadsheet has support for responsive behavior based on client browser's width 
 
 N> Default value of [`isResponsive`](https://help.syncfusion.com/api/js/ejspreadsheet#members:scrollsettings-isresponsive "isResponsive") is true.
 
+I> `ej.responsive.css` should be referred to display spreadsheet in responsive. 
+
 ### Mobile Mode
 
 If client width is less than 420px, the spreadsheet will render in mobile mode. In which, you can see that spreadsheet user interface is customized and redesigned for best view in small screens. The customized feature includes filter dialog, format dialog, chart type dialog and ribbon.
