@@ -2,8 +2,10 @@
 layout: post
 title: Create cascading parameter with Syncfusion Web Report Designer
 description: How to create  cascading parameter with Syncfusion Web Report Designer
-platform: report-platform
+platform: js
+control: ReportDesigner
 documentation: ug
+api: /api/js/ejreportdesigner
 ---
 
 # Cascading Parameter

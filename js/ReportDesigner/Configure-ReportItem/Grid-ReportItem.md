@@ -2,8 +2,10 @@
 layout: post
 title: Visualize Data using grid report item with Syncfusion Web Report Designer
 description: How to visualize data using grid report item with Syncfusion Web Report Designer
-platform: report-platform
+platform: js
+control: ReportDesigner
 documentation: ug
+api: /api/js/ejreportdesigner
 ---
 
 # Grid Report Item

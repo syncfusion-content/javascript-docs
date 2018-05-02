@@ -2,8 +2,10 @@
 layout: post
 title: Formating Columns.
 description: How to Format Columns
-platform: report-platform
+platform: js
+control: ReportDesigner
 documentation: ug
+api: /api/js/ejreportdesigner
 ---
 
 # Formatting Columns

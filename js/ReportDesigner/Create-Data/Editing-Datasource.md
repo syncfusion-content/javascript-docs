@@ -2,8 +2,10 @@
 layout: post
 title: Editing data source with Syncfusion Web Report Designer
 description: How to edit a data source with Syncfusion Web Report Designer
-platform: report-platform
+platform: js
+control: ReportDesigner
 documentation: ug
+api: /api/js/ejreportdesigner
 ---
 
 # Editing a data source

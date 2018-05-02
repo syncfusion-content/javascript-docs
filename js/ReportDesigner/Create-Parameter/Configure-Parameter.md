@@ -2,8 +2,10 @@
 layout: post
 title: Create new parameter with Syncfusion Web Report Designer
 description: How to create  new parameter with Syncfusion Web Report Designer
-platform: report-platform
+platform: js
+control: ReportDesigner
 documentation: ug
+api: /api/js/ejreportdesigner
 ---
 
 # Report Parameter

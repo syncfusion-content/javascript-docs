@@ -2,8 +2,10 @@
 layout: post
 title: Configuring Data Filters with Syncfusion Web Report Designer
 description: How to configure a data filters with Syncfusion Web Report Designer
-platform: report-platform
+platform: js
+control: ReportDesigner
 documentation: ug
+api: /api/js/ejreportdesigner
 ---
 
 # Data Filters

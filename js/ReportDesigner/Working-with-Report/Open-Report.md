@@ -2,8 +2,10 @@
 layout: post
 title: Open Save Report with Syncfusion Web Report Designer
 description: How to open/save report with Syncfusion Web Report Designer
-platform: report-platform
+platform: js
+control: ReportDesigner
 documentation: ug
+api: /api/js/ejreportdesigner
 ---
 
 ## Open report

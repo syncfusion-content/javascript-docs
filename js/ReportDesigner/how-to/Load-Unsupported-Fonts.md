@@ -2,8 +2,10 @@
 layout: post
 title: Load browser unsupported fonts
 description: How to load the fonts does not supported in cross-platform browsers
-platform: report-platform
+platform: js
+control: ReportDesigner
 documentation: ug
+api: /api/js/ejreportdesigner
 ---
 
 # Load unsupported fonts

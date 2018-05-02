@@ -2,8 +2,10 @@
 layout: post
 title: Getting Started with Syncfusion Web Report Designer
 description: How to start with Syncfusion Web Report Designer
-platform: report-platform
+platform: js
+control: ReportDesigner
 documentation: ug
+api: /api/js/ejreportdesigner
 ---
 
 # Getting Started with Web Report Designer

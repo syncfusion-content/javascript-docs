@@ -2,8 +2,10 @@
 layout: post
 title: Textbox to design a report with Syncfusion Web Report Designer
 description: How to use textbox to design a report with Syncfusion Web Report Designer
-platform: report-platform
+platform: js
+control: ReportDesigner
 documentation: ug
+api: /api/js/ejreportdesigner
 ---
 
 # TextBox

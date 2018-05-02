@@ -2,8 +2,10 @@
 layout: post
 title: Import Shared Datasets with Syncfusion Web Report Designer
 description: How to import a shared datasets with Syncfusion Web Report Designer
-platform: report-platform
+platform: js
+control: ReportDesigner
 documentation: ug
+api: /api/js/ejreportdesigner
 ---
 
 # Shared Dataset

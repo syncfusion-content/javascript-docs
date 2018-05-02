@@ -2,8 +2,10 @@
 layout: post
 title: Web report designer supported and unsupported features list 
 description: Supported features in web report designer
-platform: report-platform
+platform: js
+control: ReportDesigner
 documentation: ug
+api: /api/js/ejreportdesigner
 ---
 
 # Supported and Unsupported Report Items

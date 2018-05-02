@@ -2,8 +2,10 @@
 layout: post
 title: Keyboard shortcuts in Syncfusion Web Designer
 description: How to use keyboard shortcuts in Syncfusion Web Designer
-platform: report-platform
+platform: js
+control: ReportDesigner
 documentation: ug
+api: /api/js/ejreportdesigner
 ---
 
 # Keyboard Shortcuts

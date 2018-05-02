@@ -2,8 +2,10 @@
 layout: post
 title: Image report item with Syncfusion Web Report Designer
 description: How to add image report item with Syncfusion Web Report Designer
-platform: report-platform
+platform: js
+control: ReportDesigner
 documentation: ug
+api: /api/js/ejreportdesigner
 ---
 # Image
 

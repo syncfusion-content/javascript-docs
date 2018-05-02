@@ -2,8 +2,10 @@
 layout: post
 title: Joining Tables with Syncfusion Web Report Designer
 description: How to join table with Syncfusion Web Report Designer
-platform: report-platform
+platform: js
+control: ReportDesigner
 documentation: ug
+api: /api/js/ejreportdesigner
 ---
 
 # Joining Tables

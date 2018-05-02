@@ -2,14 +2,15 @@
 layout: post
 title: Overview | Welcome to Syncfusion Web Report Designer | Overview of Web Report Designer.
 description:  Efficiently create and modify RDL Reports from Report Server in RDL 2008/2008R2 specification standard.
-platform: report-platform
-control: Web Report Designer
+platform: js
+control: ReportDesigner
 documentation: ug
+api: /api/js/ejreportdesigner
 ---
 
 # Overview
 
-Report Designer integrates with Report Server to create and modify RDL reports from Report Server in RDL 2008/2008R2 specification standard. By using Report Designer, the data can be transformed into meaningful information and quickly build the reports using both table and visualization formats with the help of following features.
+Report Designer helps to create and modify the RDL 2008/2008R2 specification standard reports. By using Report Designer, the data can be transformed into meaningful information and quickly build the reports using both table and visualization formats with the help of following features.
 
 ## Key features
 
