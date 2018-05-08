@@ -8,7 +8,7 @@ documentation: ug
 api: /api/js/ejreportdesigner
 ---
 
-# Editing a Data Connection
+# Editing a Data
 
 You can edit a data connection through the following procedure:
 
