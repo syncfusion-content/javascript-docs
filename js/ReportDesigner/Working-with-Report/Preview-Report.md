@@ -8,7 +8,7 @@ documentation: ug
 api: /api/js/ejreportdesigner
 ---
 
-# Previewing Web Designer Report
+# Preview a Report
 
 You can preview the report that is created with the web report designer by clicking **Preview** in the top-right corner.
 

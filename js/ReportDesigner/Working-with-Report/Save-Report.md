@@ -8,7 +8,7 @@ documentation: ug
 api: /api/js/ejreportdesigner
 ---
 
-## Save report
+## Save a Report
 
 After you are done with the report design, save the report in local as RDL file format.
 

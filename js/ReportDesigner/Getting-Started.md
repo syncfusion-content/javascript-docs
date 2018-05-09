@@ -8,231 +8,318 @@ documentation: ug
 api: /api/js/ejreportdesigner
 ---
 
-# Getting Started with Web Report Designer
+# Getting Started with JavaScript Application
 
-This is a simple walkthrough to get started with Web Report Designer application. An AdventureWorks and Northwind database is used to demonstrate each of the features in the Web Report Designer.
+This section explains briefly about how to create a ReportDesigner in your web application with JavaScript.
 
-## Start Web Report Designer
+## Project Creation
 
-Launch the Report Server application from installed location `(C:\Program Files (x86)\Syncfusion\Report Server\Infrastructure\StartReportServerIISExpress\ReportServerIISExpress.exe)`.
+Create a new ASP.NET Empty Web application project by selecting the **WEB** category from the listed project template in Microsoft Visual Studio IDE.     
 
-The Report Server application can also be launched using the apps list.
+![](Images/JS-Sample-Img1.png) 
 
-![](images/App-Start.png)
+### Create HTML Page
 
-> Note: The Syncfusion Web Report Designer is installed along with the Syncfusion Report Server Installer.
+To create a new `Web Forms` in the application follow the below steps.
 
-The Report Server application opens with the following view:
+1. Right-Click on the project and select `Add`. 
 
-![](images/Server-Start.png)
+   ![](Images/JS-Sample-Img2.png) 
 
-Now, click on the report icon to view available reports.
+2. Click `New Item` and select `HTML` page from the listed templates.
 
-![](images/Report-Icon.png)
+   ![](Images/JS-Sample-Img3.png) 
 
-### Create report
+3. Name the page as Default.html and click OK.
 
-Click on the `Create` button in the menu and select `Report` to create a report.
+### Adding References, Scripts, Styles and Control in HTML Page
 
-![](images/Create-Button.png)
+Add the References, scripts, styles that are required for the Report Designer.
 
-## Connecting to data
+### Add References
 
-Add a new data source by establishing a data connection with any of the supported data connection types like below:
+1. In the Solution Explorer, right-click the `References` folder and then click `Add Reference`.
 
-### Setting up connection
+    ![](Images/JS-Sample-Img4.png) 
 
-RDL dataset contains the information that is needed to retrieve a specific set of data from a data source.
+2. Add the following assemblies and click OK.
 
-Click the `Data` icon in the configuration panel to launch a `Data` configuration.
+   * System.Web.Routing
+   * System.Web.Http
+   * System.Web.WebHost
+   * System.Net.Http
+   * System.Net.Http.WebRequest
+   * System.Net.Http.Formatting
+   * Syncfusion.Compression.Base   
+   * Syncfusion.EJ.ReportViewer
+   * Syncfusion.EJ.ReportDesigner
+   * Syncfusion.Pdf.Base
+   * Syncfusion.XlsIO.Base
+   * Syncfusion.Presentation.Base
+   * Syncfusion.DocIO.Base
+   * Syncfusion.Shared.Wpf
+   * Syncfusion.Chart.Wpf
+   * Syncfusion.Gauge.Wpf
+   * Syncfusion.SfMaps.Wpf
 
- ![](images/Datasource-Start.png)
+ N> Refer the above assemblies from the installed location, C:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\Assemblies
+ N>
+ N> Refer System.Web.Http, System. Web.Http.WebHost, System.Net.Http.WebRequest and System.Net.Http.Formatting assemblies from ASP.NET WebApi NuGet package. 
 
-Click the `Add DataSet` button in `Data` panel.
+### Add Scripts and Styles
 
-![](images/Dataset-CreateWizard.png)
+Add the script files and theme files in the &lt;title&gt; tag of the default.html page.
+  
+{% highlight html %}
 
-Click `Create New` in the context menu, it will launch connection type panel. In the connection type panel, click on the data source type that you want to connect. Here, `SQL` connection type is used to demonstrate.
+<link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
+<link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.reportdesigner.min.css" rel="stylesheet" />
+<script src="http://code.jquery.com/jquery-1.10.2.min.js" type="text/javascript"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" type="text/javascript"></script>
+<script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js" type="text/javascript"></script>
+<script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.reportdesigner.min.js" type="text/javascript"></script>
+ 
+{% endhighlight %} 
 
- ![](images/SQL-Connect.png)
+Use the above code example while adding scripts and styles.
 
-In the new data source configuration panel, fill the server name and related details. 
+> Note: You can get the themes and scripts from the installed location [Installed Drive]:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript\{{ site.releaseversion }}\JavaScript\assets\
 
-![](images/Datasource-CreateWizard.png)
+## Control Initialization
 
-Click the `Connect` button. Now the following view will be displayed.
+Initialize Report Designer by using the following code example in the &lt;body&gt; tag of the Default.html page.
 
-![](images/Dataset-DesignView.png)
+{% highlight html %}
 
-You can enter the query directly in the Query Editor or use the Query Designer to interactively build the query and view the result of the query. Here, the data is created with the help of the Query Designer.
+<div id="container" style="position: absolute; height: 100%; width: 100%;"></div>
+<script type="text/javascript">
+    $(function() {
+        $("#container").ejReportDesigner({
+            serviceUrl: '../../api/ReportingAPI'
+        });
+    });
+</script>
 
-1. Build query using the Query Editor.
+{% endhighlight %}
 
-   * To switch over to Query Editor, click the switcher icon in the designer toolbar.
-
-      ![Enter the query directly with Query Editor](images/Switcher-Editor.png)
-
-      ![](images/Editor-View.png)
-
-2. Build query using the Query Designer.
-
-   The left pane holds the tables and views associated with the connected database. Drag your preferred table or view from the left pane and drop into the center pane labeled with `Drag and Drop table here` like below:
-
-   ![](images/Drag-Action.png)
-
-   ![](images/Dataset-Drag-DropTable.png)
-
-The dropped tables will be tick marked before the name of table in the left pane like below:
-
-![](images/Table-Tick.png)
-
-The primary key defined in the connected database table will be marked like below:
-
-![](images/PrimaryKey.png)
-
-The data type of the each column is represented with visual icons as shown below:
-
-![](images/Datatype-Icon.png)
-
-Add more than one table by following the same drag and drop procedure as mentioned in above steps, if required.
-
-To rename columns refer [Rename Columns](/report-platform/reportdesigner/web/transforming-data/rename-column).
-
-You can filter specific data out of huge database by using [Data Filters](/report-platform/reportdesigner/web/transforming-data/configure-data-filters).
-
-> Note: At present, you can experience full fledged query design for **SQL** datasource only.
-
-### Execute query
-
-You can visualize the data by using `Execute` option from the tools pane in data design view.
-
-![](images/Execute-Query.png)
-
-Now the data will be retrieved based on the specified query.
-
-![](Images/Execute-Preview.png)
-
-Click the `Finish` button in the tools pane to add the data with the report.
-
-![](Images/Dataset-Designer-Finish.png)
-
-Now, the table fields will be listed in `Data` panel like below.
-
-![](images/Report-Designer-DesignView.png)
-
-## Adding a report item to design view
-
-The item panel at left consists of Basic Items, Data Visualization, Data Regions and SubReport
-that you can utilize to design a report.
-
-![](images/Widgets-Pane.png)
-
-You can `drag and drop` report items into the `Header`, `Footer`, and `Design` area.
-
-> Note: You can only drag and drop `Basic Items` category into the `Header` and `Footer` area.
-
-### Enable header and footer
-
-You can enable and disable header/footer by clicking the below icons from the designer toolbar pane.
-
-![](images/Header.png)
-
-![](images/Footer.png)
-
-Click and drag the preferable report item from the toolbox by holding the mouse left button and drop into the design panel like below:
-
-![](images/Chart-Drag.png)
-
-![](images/Widgets-Sample.png)
-
-After you drop the report item, you can resize it by placing the focus over the report item and dragging its corner like below, if required.
-
-![](images/Resize-ChartWidget.png)
-
-## Assigning data to report item
-
-> Note: This step is applicable only for report items other than basic items category.
-
-To bind the data to a report item that is placed in the design area, focus on that report item.
-
-![](images/Focus-Widget.png)
-
-Click the `Properties` icon in the configuration panel.
-
-![](images/Properties-Icon.png)
-
-Now, the report item properties panel displayed like below:
-
-![](images/Properties-Window.png)
-
-Click the `Data Assign` tab in the properties panel. Now, the data assign tab switches like below:
-
-![](images/DataAssign-Window.png)
-
-Data assign panel shows the data configuration view. The numeric columns are listed under the `Measures` section; other type columns are listed under the `Dimensions` section.
-
-![](images/Measures-Dimensions.png)
-
-Select and drag the numeric column (measure element) from the `Measures` section that you want to visualize the data and drop into the `Y Value(s)` section.
-
-![](images/Gripper-AssignData.png)
-
-Now, the report item preview will look like below:
-
-![](images/ColumnChart-DataAssign1.png)
-
-Click the `Settings` icon (highlighted below) to open the aggregation type drop-down list.
-
-![](images/Settings-Icon.png)
-
-You can set the aggregation type by which you can compute the selected column.
-
-![](images/Aggregation-Type.png)
-
-Select and drag the dimension element from the `Dimensions` section to measure against any of the selected numeric column(s) in `Y Value(s)` section, and drop into the `Column(s)` section.  
-
-![](images/DragColumn-Section.png)
-
-Now, the report item preview will look like below:
-
-![](images/Column-Chart2.png)
-
-To group the added column element with another column, add the respective dimension element into Row(s) section.
-
-![](images/Row-DragColumn.png)
-
-Now, the report item design will look like below.
-
-![](images/Column-Chart3.png)
-
-To filter the data from getting bounded to report item, apply filters to the selected measure type or dimension type column(s).
-
-## Configuring report item
-
-> Note: This step is applicable only for report items other than basic items category.
-
-Navigate to the properties pane in the properties tab.
-
-![](images/PropertiesTab-Chart.png)
-
-This pane holds some general settings and some specific settings to the report item. 
-
-You can add more report items by following the above procedure.
-
-## Preview report
-
-Preview the changes made in the report item by clicking the `Preview` in the top-right corner of the Report Server menu.
-
-![](images/Preview-Button.png)
-
-Now, the report preview can be visualized through the built-in report viewer like below:
-
-![](images/Preview-Data.png)
-
-To launch design area, click the `Design` button  in the top-right corner of the Report Server menu.
-
-![](images/Close-Preview.png)
-
-### Save report
-
-To **Save** report refer [Save Report](open-save-report).
+### Add WebAPI controller for Report Designer
+ 
+The JavaScript Report Designer uses WebApi services to process the report file and get the request from control.
+
+![](Images/JS-Sample-Img5.png)
+
+### IReportDesignerController
+ 
+The ApiController inherits the `IReportDesignerController` and to process the report file add the following code example to its method definition. The interface IReportDesignerController contains the required actions and helper methods declaration to process the report. The ReportDesignerHelper and ReportHelper class contains helper methods that helps to process Post/Get request from control and return the response to control.
+
+{% highlight c# %}
+
+using System;
+using Syncfusion.EJ.ReportViewer;
+using System.Collections.Generic;
+using System.Linq;
+using System.Net;
+using System.Net.Http;
+using System.Web.Http;
+using Syncfusion.Reports.EJ;
+using System.Collections;
+using System.Web;
+using Syncfusion.EJ.ReportDesigner;
+using System.IO;
+
+namespace ReportDesignerSample
+{
+    public class ReportingAPIController : ApiController, Syncfusion.EJ.ReportDesigner.IReportDesignerController
+    {
+
+    public ReportingAPIController()
+    {
+    }
+
+    [HttpPost]
+    public void UploadReportAction()
+    {
+        ReportDesignerHelper.ProcessDesigner(null, this, HttpContext.Current.Request.Files[0]);
+    }
+
+    [HttpGet]
+    public object GetImage(string key, string image)
+    {
+        return ReportDesignerHelper.GetImage(key, image, this);
+    }
+
+    [HttpPost]
+    public object PostDesignerAction(Dictionary<string, object> jsonResult)
+    {
+        return ReportDesignerHelper.ProcessDesigner(jsonResult, this, null);
+    }
+
+    public object PostReportAction(Dictionary<string, object> jsonResult)
+    {
+        return ReportHelper.ProcessReport(jsonResult, this as IReportController);
+    }
+
+    public void OnInitReportOptions(Syncfusion.EJ.ReportViewer.ReportViewerOptions reportOption)
+    {
+    }
+
+    public void OnReportLoaded(Syncfusion.EJ.ReportViewer.ReportViewerOptions reportOption)
+    {
+
+    }
+
+    public object GetResource(string key, string resourcetype, bool isPrint)
+    {
+        return ReportHelper.GetResource(key, resourcetype, isPrint);
+    }
+
+    public bool UploadFile(HttpPostedFile httpPostedFile)
+    {
+        string targetFolder = HttpContext.Current.Server.MapPath("~/");
+        string fileName = !string.IsNullOrEmpty(ReportDesignerHelper.SaveFileName) ? ReportDesignerHelper.SaveFileName : Path.GetFileName(httpPostedFile.FileName);
+        targetFolder += "Cache";
+
+        if (!Directory.Exists(targetFolder))
+        {
+            Directory.CreateDirectory(targetFolder);
+        }
+
+        if (!Directory.Exists(targetFolder + "\\" + ReportDesignerHelper.EJReportDesignerToken))
+        {
+            Directory.CreateDirectory(targetFolder + "\\" + ReportDesignerHelper.EJReportDesignerToken);
+        }
+
+        httpPostedFile.SaveAs(targetFolder + "\\" + ReportDesignerHelper.EJReportDesignerToken + "\\" + fileName);
+        return true;
+    }
+
+    public List<Syncfusion.EJ.ReportDesigner.FileModel> GetFiles(Syncfusion.EJ.ReportDesigner.FileType fileType)
+    {
+        List<FileModel> databases = new List<FileModel>();
+        var folderPath = HttpContext.Current.Server.MapPath("~/") + "Cache\\" + ReportDesignerHelper.EJReportDesignerToken + "\\";
+        if (Directory.Exists(folderPath))
+        {
+            DirectoryInfo directoryInfo = new DirectoryInfo(folderPath);
+            FileInfo[] Files = directoryInfo.GetFiles(this.GetFileExtension(fileType));
+            foreach (FileInfo file in Files)
+            {
+                databases.Add(new FileModel() { Name = file.Name, Path = "../" + "Cache/" + ReportDesignerHelper.EJReportDesignerToken + "/" + file.Name });
+            }
+        }
+        return databases;
+    }
+
+    private string GetFileExtension(Syncfusion.EJ.ReportDesigner.FileType fileType)
+    {
+        if (fileType == FileType.Sdf)
+        {
+            return "*.sdf";
+        }
+        else if (fileType == FileType.Xml)
+        {
+            return "*.xml";
+        }
+        return "*.rdl";
+    }
+
+    public string GetFilePath(string fileName)
+    {
+        string targetFolder = HttpContext.Current.Server.MapPath("~/");
+        targetFolder += "Cache";
+
+        if (!Directory.Exists(targetFolder))
+        {
+            Directory.CreateDirectory(targetFolder);
+        }
+
+        if (!Directory.Exists(targetFolder + "\\" + ReportDesignerHelper.EJReportDesignerToken))
+        {
+            Directory.CreateDirectory(targetFolder + "\\" + ReportDesignerHelper.EJReportDesignerToken);
+        }
+
+        var folderPath = HttpContext.Current.Server.MapPath("~/") + "Cache\\" + ReportDesignerHelper.EJReportDesignerToken + "\\";
+        return folderPath + fileName;
+    }
+
+
+    public FileModel GetFile(string filename, bool isOverride)
+    {
+        throw new NotImplementedException();
+    }
+    }
+}
+
+{% endhighlight %}
+
+### WebAPI Routing
+
+1. Right-click the project and select Add and select Global.asax file from the listed templates.
+
+    ![](images/JS-Sample-img6.png)
+
+2. Route the WebAPI in Application_Start event into Global.asax file as follows.
+
+{% highlight c# %}
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.Security;
+using System.Web.SessionState;
+using System.Web.Http;
+
+namespace ReportDesignerSample
+{
+    public class Global : System.Web.HttpApplication
+    {
+    protected void Application_Start(object sender, EventArgs e)
+    {
+        System.Web.Http.GlobalConfiguration.Configuration.Routes.MapHttpRoute(
+        name: "DefaultApi",
+        routeTemplate: "api/{controller}/{action}/{id}",
+        defaults: new { id = RouteParameter.Optional });
+        AppDomain.CurrentDomain.SetData("SQLServerCompactEditionUnderWebHosting", true);
+    }
+    }
+}
+
+{% endhighlight %}
+
+On running the application, Report Designer will be rendered like below.
+
+   ![](Images/Getting-Started-img7.png)
+
+## Integrate the component with Report Server
+
+Report Designer can be integrated with the Report Server by using below code snippet. After integrating you can open, browse and edit the reports in the Report Server using Report designer.
+
+Set the Report Server `serviceUrl` and `serviceAuthorizationToken` in the ReportDesigner properties.
+
+{% highlight html %}
+
+<div id="container" style="position: absolute; height: 100%; width: 100%;"></div>
+<script type="text/javascript">
+   $(function () {
+       var dataValue = "";
+            var apiRequest = new Object();
+            apiRequest.password = "demo";
+            apiRequest.userid = "guest";
+            $.ajax({
+                type: "POST",
+                url: "http://reportserver.syncfusion.com/api/get-user-key",
+                data: apiRequest,
+                success: function (data) {
+                    dataValue = data.Token;
+                    var token = JSON.parse(dataValue);
+                    $("#container").ejReportDesigner(
+                    {
+                       serviceUrl: 'http://reportserver.syncfusion.com/ReportService/api/Designer',
+                       serviceAuthorizationToken: token['token_type'] + ' ' + token['access_token']
+                    });
+                }
+            });
+   });
+</script>
+
+{% endhighlight %} 
