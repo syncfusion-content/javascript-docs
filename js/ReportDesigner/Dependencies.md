@@ -72,7 +72,7 @@ And the internal dependencies are tabulated below.
             ej.waitingpopup.js
         </td>
         <td rowspan="32">
-        These files are used to handle the ineternal actions of ReportDesigner.
+        These files are used to handle the internal actions of ReportDesigner.
         </td>
     </tr>
     <tr>
