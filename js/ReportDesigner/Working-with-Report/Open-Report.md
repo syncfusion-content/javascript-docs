@@ -8,7 +8,7 @@ documentation: ug
 api: /api/js/ejreportdesigner
 ---
 
-## Open report
+## Open an Existing Report
 
 To open an existing report click on the `Open` icon in the designer toolbar.
 

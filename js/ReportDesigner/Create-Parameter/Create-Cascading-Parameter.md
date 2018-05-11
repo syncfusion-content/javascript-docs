@@ -38,7 +38,7 @@ A list of values for a parameter depends on values chosen for a previous paramet
 
 * Click `Connect Datasource`.
 
-* In name field, type 'SalesbyCategory'.
+* In name field, type **SalesbyCategory**.
 
 * Switch to Query editor by using the switcher icon (highlighted in the below snap).
 
@@ -291,7 +291,7 @@ Now, create a parameter @Product depends on both the value of @Category and the 
 
     ![](images/Cascade-Grid-Property.png)
 
-    In the properties panel, click the `Data Assign` tab, and drag the following fields SalesOrderNumber, OrderQty, LineTotal from the 'SalesbyCategory' dataset.
+    In the properties panel, click the `Data Assign` tab, and drag the following fields SalesOrderNumber, OrderQty, LineTotal from the **SalesbyCategory** dataset.
 
     ![](images/Cascade-Grid-AssignData.png)
 
