@@ -21,6 +21,9 @@ N> 1. In grid, the primary key column will be automatically set to read only whi
 
 N> 2. The column which is specified as [`isIdentity`](https://help.syncfusion.com/api/js/ejgrid#members:columns-isidentity "isIdentity") will be in readonly mode both while editing and adding a record. Also, auto incremented value is assigned to that [`isIdentity`](https://help.syncfusion.com/api/js/ejgrid#members:columns-isidentity "isIdentity") column.
 
+N> 3. To get the primarykey field name use [`getPrimaryKeyFieldNames`](https://help.syncfusion.com/api/js/ejgrid#methods:getprimarykeyfieldnames "getPrimaryKeyFieldNames") method.
+
+
 Some default behaviour of Grid editing (i.e auto save the edit action on row selection changed) which can be modified by setting [`enableAutoSaveOnSelectionChange `](https://help.syncfusion.com/api/js/ejgrid#members:enableautosaveonselectionchange "enableAutoSaveOnSelectionChange ") property as `false`.
 
 ## Toolbar with edit option
@@ -726,6 +729,7 @@ After the template elements are converted to JS controls using actionComplete ev
 Users can start editing by clicking a cell and typing data into it. Edited cell will be marked while navigating to next cell or any other row, so that you know which fields or cells has been edited. Set [`editMode`](https://help.syncfusion.com/api/js/ejgrid#members:editsettings-editmode "editMode") as `batch` to enable batch editing.
 
 N> [`getBatchChanges`](https://help.syncfusion.com/api/js/ejgrid#methods:getbatchchanges "getBatchChanges") method of grid holds the unsaved record changes.
+N> Using [`getDataByIndex`](https://help.syncfusion.com/api/js/ejgrid#methods:getdatabyindex "getDataByIndex") method we can get the row data based on index.
 N> Refer the KB [link](http://www.syncfusion.com/kb/3016/how-to-suppress-grid-confirmation-messages# "link") for "How to suppress grid confirmation messages" in batch mode.
 
 The following code example describes the above behavior.
@@ -766,6 +770,7 @@ The following output is displayed as a result of the above code example.
 ![](Editing_images/Editing_img15.png)
 
 N> During batch editing, you can do any custom actions in-between, using the corresponding events [`batchAdd`](https://help.syncfusion.com/api/js/ejgrid#events:batchadd "batchAdd"), [`batchDelete`](https://help.syncfusion.com/api/js/ejgrid#events:batchdelete "batchDelete"), [`beforeBatchAdd`](https://help.syncfusion.com/api/js/ejgrid#events:beforebatchadd "beforeBatchAdd"), [`beforeBatchDelete`](https://help.syncfusion.com/api/js/ejgrid#events:beforebatchdelete "beforeBatchDelete"), [`beforeBatchSave`](https://help.syncfusion.com/api/js/ejgrid#events:beforebatchsave "beforeBatchSave") .
+N> Using [`getCurrentEditCellData`](https://help.syncfusion.com/api/js/ejgrid#methods:getcurrenteditcelldata "getCurrentEditCellData") method, we can get the current edit cell data.
 
 # Batch operations by external action
 
@@ -823,14 +828,15 @@ $(".buttons").ejButton({
             $("#Grid").ejGrid("setCellValue",2, "EmployeeID", "10"); // cell value is set to the EmployeeID column
     }
 });
-The following output is displayed as a result of the above code example.
+
+Here we have set the default value to the EmployeeID Column based on index using setCellValue method and also we edit particular cell based on index using editCell method. Refer the below screenshot
 
 ![](Editing_images/Editing_img31.png)
 
 N> While editing action the following events are triggered,
 
 1. [`beginEdit`](https://help.syncfusion.com/api/js/ejgrid#events:beginedit "beginEdit")
-2. [`cellEdit`](https://help.syncfusion.com/api/js/ejgrid#events:celledit "cellEdit")
+2. [`cellEdit`](https://help.syncfusion.com/api/js/ejgrid#events:celledit "cellEdit") 
 3. [`endAdd`](https://help.syncfusion.com/api/js/ejgrid#events:endadd "endAdd")
 4. [`endDelete`](https://help.syncfusion.com/api/js/ejgrid#events:enddelete "endDelete")
 5. [`endEdit`](https://help.syncfusion.com/api/js/ejgrid#events:endedit "endEdit") 
@@ -1764,67 +1770,5 @@ $(function () {
 The following output is displayed as a result of the above code example.
 
 ![](Editing_images/Editing_img28.png)
-
-# Editing feature details by external action
-
-To get the edit action details externally use the following methods,
-
-1. [`getCurrentEditCellData`](https://help.syncfusion.com/api/js/ejgrid#methods:getcurrenteditcelldata "getCurrentEditCellData")
-2. [`getCurrentIndex`](https://help.syncfusion.com/api/js/ejgrid#methods:getcurrentindex "getCurrentIndex")
-3. [`getBatchChanges`](https://help.syncfusion.com/api/js/ejgrid#methods:getbatchchanges "getBatchChanges")
-4. [`getPrimaryKeyFieldNames`](https://help.syncfusion.com/api/js/ejgrid#methods:getprimarykeyfieldnames "getPrimaryKeyFieldNames")
-5. [`getDataByIndex`](https://help.syncfusion.com/api/js/ejgrid#methods:getdatabyindex "getDataByIndex") 
-
-The following code example describes the above behavior.
-
-<div><select name="selectIndex"style="width:100px" id="dropdown">
-<option value="getCurrentEditCellData">getCurrentEditCellData</option>
-<option value="getCurrentIndex">getCurrentIndex</option>
-<option value="getBatchChanges">getBatchChanges</option>
-<option value="getPrimaryKeyFieldNames">getPrimaryKeyFieldNames</option>
-<option value="getDataByIndex">getDataByIndex</option>
-</select></div>
-<button onclick="methods()" >getMethod</button>
-<div class="col-md-3">Details</div>
-<div class ="area">
-<textarea id="details" class="ejinputtext" style="width: 300px;height:80px;position:inline" readonly="readonly"></textarea></div>
-<div id="Grid"></div>
-{% endhighlight %}
-
-{% highlight javascript %}
-$(function () {
-    $("#Grid").ejGrid({
-        dataSource: window.gridData,
-        allowPaging: true,
-        pageSettings:{pageSize:6},
-        editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true,editMode: "batch" },
-        toolbarSettings: { showToolbar: true, toolbarItems: [ej.Grid.ToolBarItems.Add, ej.Grid.ToolBarItems.Edit, ej.Grid.ToolBarItems.Delete, ej.Grid.ToolBarItems.Update, ej.Grid.ToolBarItems.Cancel] },
-        columns: [
-            { field: "OrderID", isPrimaryKey: true, headerText: "Order ID", textAlign: ej.TextAlign.Right, validationRules: { required: true, number: true }, width: 90 },
-            { field: "CustomerID", headerText: 'Customer ID', validationRules: { required: true, minlength: 3 }, width: 90 },
-            { field: "EmployeeID", headerText: 'Employee ID', editType: ej.Grid.EditingType.Dropdown, textAlign: ej.TextAlign.Right, width: 80, validationRules: { number: true, range: [0, 1000] } },
-            { field: "Freight", headerText: 'Freight', textAlign: ej.TextAlign.Right, editType: ej.Grid.EditingType.Numeric, editParams: { decimalPlaces: 2 }, validationRules: { range: [0, 1000] }, width: 80, format: "{0:C}" },
-            { field: "ShipName", headerText: 'Ship Name', width: 150 },
-        ]
-    });
-});
-$('#dropdown').ejDropDownList({
-width: 200
-});  
-function methods(){
-    var option= $("#dropdown_input").val(), obj=$("#Grid").ejGrid("instance"), val = $('#txtVal').val();
-    if(option=="getDataByIndex")
-        $("#details").val(JSON.stringify(obj.getDataByIndex(val)));
-    else
-        $("#details").val(JSON.stringify(obj[option]()));
-};
-{% endhighlight %}
-
-
-The following output is displayed as a result of the above code example.
-
-![](Editing_images/Editing_img32.png)
-
-
 
 
