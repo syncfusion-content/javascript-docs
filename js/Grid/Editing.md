@@ -1136,6 +1136,7 @@ $(function () {
         editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true },
         toolbarSettings: { showToolbar: true, toolbarItems: [ej.Grid.ToolBarItems.Add, ej.Grid.ToolBarItems.Edit, ej.Grid.ToolBarItems.Delete, ej.Grid.ToolBarItems.Update, ej.Grid.ToolBarItems.Cancel] },
         columns: [
+            { field:"Verified", headerText:"status",width:80},
             { field: "OrderID", isPrimaryKey: true, headerText: "Order ID", textAlign: ej.TextAlign.Right,  width: 90 },
             { field: "CustomerID", headerText: 'Customer ID',  width: 90 },
             { field: "EmployeeID", headerText: 'Employee ID', editType: ej.Grid.EditingType.Dropdown, textAlign: ej.TextAlign.Right, width: 80,  },
@@ -1153,7 +1154,9 @@ function actionComplete(args){
 }
 {% endhighlight %}
 
-The following output is displayed as a result of the above code example.
+ Here we have checked, if the Verified column value is false and EmployeeID value is less than 5 validation is set to CustomerID field.
+ 
+ The following output is displayed as a result of the above code example.
 
 ![](Editing_images/Editing_img30.png)
 
