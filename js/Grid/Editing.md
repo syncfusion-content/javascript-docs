@@ -13,11 +13,15 @@ The grid control has support for the dynamic insertion, updating and deletion of
 
 Deletion of the record is possible by selecting the required row and clicking on Delete icon in toolbar. 
 
+By default edit action is enabled while double click on the record.To prevent this behavior, set [`editSettings.allowEditOnDblClick `](https://help.syncfusion.com/api/js/ejgrid#members:editsettings-alloweditondblclick "editSettings.allowEditOnDblClick ") property as `false`.
+
 The primary key for the data source should be defined in [`columns`](https://help.syncfusion.com/api/js/ejgrid#members:columns "columns") definition, for editing to work properly. In [`columns`](https://help.syncfusion.com/api/js/ejgrid#members:columns "columns") definition, particular primary column's [`isPrimaryKey`](https://help.syncfusion.com/api/js/ejgrid#members:columns-isprimarykey "isPrimaryKey") property should be set to `true`. Refer to the Knowledge base [link](http://www.syncfusion.com/kb/2675/cant-edit-any-row-except-the-first-row-in-grid# "link") for more information.
 
 N> 1. In grid, the primary key column will be automatically set to read only while editing the row, but you can specify primary key column value while adding a new record.
 
 N> 2. The column which is specified as [`isIdentity`](https://help.syncfusion.com/api/js/ejgrid#members:columns-isidentity "isIdentity") will be in readonly mode both while editing and adding a record. Also, auto incremented value is assigned to that [`isIdentity`](https://help.syncfusion.com/api/js/ejgrid#members:columns-isidentity "isIdentity") column.
+
+Some default behaviour of Grid editing (i.e auto save the edit action on row selection changed) which can be modified by setting [`enableAutoSaveOnSelectionChange `](https://help.syncfusion.com/api/js/ejgrid#members:enableautosaveonselectionchange "enableAutoSaveOnSelectionChange ") property as `false`.
 
 ## Toolbar with edit option
 
@@ -252,6 +256,8 @@ The following output is displayed as a result of the above code example.
 
 Set [`editMode`](https://help.syncfusion.com/api/js/ejgrid#members:editsettings-editmode "editMode") as `inlineform`, then edit form will be inserted next to the row which is to be edited.
 
+N> For [`editMode`](https://help.syncfusion.com/api/js/ejgrid#members:editsettings-editmode "editMode") property you can assign either `string` value ("normal") or `enum` value (`ej.Grid.EditMode.Normal`).
+
 The following code example describes the above behavior.
 
 {% highlight html %}
@@ -430,6 +436,7 @@ The following output is displayed as a result of the above code example.
 
 ![](Editing_images/Editing_img8.png)
 
+N> Use [`titleColumn`](https://help.syncfusion.com/api/js/ejgrid#members:editsettings-titleColumn "titleColumn") property of editSettings to change the the title for editform apart from the primarykey column value.
 
 ### Dialog Template Form
 
@@ -758,6 +765,137 @@ The following output is displayed as a result of the above code example.
 
 ![](Editing_images/Editing_img15.png)
 
+N> During batch editing, you can do any custom actions in-between, using the corresponding events [`batchAdd`](https://help.syncfusion.com/api/js/ejgrid#events:batchadd "batchAdd"), [`batchDelete`](https://help.syncfusion.com/api/js/ejgrid#events:batchdelete "batchDelete"), [`beforeBatchAdd`](https://help.syncfusion.com/api/js/ejgrid#events:beforebatchadd "beforeBatchAdd"), [`beforeBatchDelete`](https://help.syncfusion.com/api/js/ejgrid#events:beforebatchdelete "beforeBatchDelete"), [`beforeBatchSave`](https://help.syncfusion.com/api/js/ejgrid#events:beforebatchsave "beforeBatchSave") .
+
+# Batch operations by external action
+
+We can do the batch operations externally by using the following methods,
+
+1. [`batchCancel`](https://help.syncfusion.com/api/js/ejgrid#methods:batchcancel "batchCancel")
+2. [`batchSave`](https://help.syncfusion.com/api/js/ejgrid#methods:batchsave "batchSave")
+3. [`saveCell`](https://help.syncfusion.com/api/js/ejgrid#methods:savecell "saveCell")
+4. [`setCellValue`](https://help.syncfusion.com/api/js/ejgrid#methods:setcellvalue "setCellValue")
+5. [`setDefaultData`](https://help.syncfusion.com/api/js/ejgrid#methods:setdefaultdata "setDefaultData")
+6. [`editCell`](https://help.syncfusion.com/api/js/ejgrid#methods:editcell "editCell") 
+
+The following code example describes the above behavior.
+
+{% highlight html %}
+<button id="batchCancel" class ="buttons" >batchCancel</button>
+<button id="batchSave" class ="buttons" >batchSave</button>
+<button id="setDefaultData" class ="buttons">setDefaultData</button>
+<button id="setCellValue" class ="buttons">setCellValue</button>
+<button id="editCell" class ="buttons" >editCell</button>
+<button id="saveCell" class ="buttons" >saveCell</button>
+<div id="Grid"></div>
+{% endhighlight %}
+
+{% highlight javascript %}
+$(function () {
+    $("#Grid").ejGrid({
+        dataSource: window.gridData,
+        allowPaging: true,
+        pageSettings:{pageSize:6},
+        editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true,editMode: "batch" },
+        toolbarSettings: { showToolbar: true, toolbarItems: [ej.Grid.ToolBarItems.Add, ej.Grid.ToolBarItems.Edit, ej.Grid.ToolBarItems.Delete, ej.Grid.ToolBarItems.Update, ej.Grid.ToolBarItems.Cancel] },
+        columns: [
+            { field: "OrderID", isPrimaryKey: true, headerText: "Order ID", textAlign: ej.TextAlign.Right, validationRules: { required: true, number: true }, width: 90 },
+            { field: "CustomerID", headerText: 'Customer ID', validationRules: { required: true, minlength: 3 }, width: 90 },
+            { field: "EmployeeID", headerText: 'Employee ID', editType: ej.Grid.EditingType.Dropdown, textAlign: ej.TextAlign.Right, width: 80, validationRules: { number: true, range: [0, 1000] } },
+            { field: "Freight", headerText: 'Freight', textAlign: ej.TextAlign.Right, editType: ej.Grid.EditingType.Numeric, editParams: { decimalPlaces: 2 }, validationRules: { range: [0, 1000] }, width: 80, format: "{0:C}" },
+            { field: "ShipName", headerText: 'Ship Name', width: 150 },
+        ]
+    });
+});
+$(".buttons").ejButton({
+    click: function (args) {
+        var option=args.target.id;
+        if(option=="batchCancel"||option=="batchSave")
+            $("#Grid").ejGrid(option);
+        if(option=="editCell")
+            $("#Grid").ejGrid("editCell", 0, "EmployeeID"); // cell is ready for editing
+        if(option=="saveCell")
+            $("#Grid").ejGrid("saveCell",true);    
+        if(option=="setDefaultData")
+            var defaultData = {OrderID:"10000"};  
+            $("#Grid").ejGrid("setDefaultData",defaultData);    
+        if(option=="setCellValue")
+            $("#Grid").ejGrid("setCellValue",2, "EmployeeID", "10"); // cell value is set to the EmployeeID column
+    }
+});
+The following output is displayed as a result of the above code example.
+
+![](Editing_images/Editing_img31.png)
+
+N> While editing action the following events are triggered,
+
+1. [`beginEdit`](https://help.syncfusion.com/api/js/ejgrid#events:beginedit "beginEdit")
+2. [`cellEdit`](https://help.syncfusion.com/api/js/ejgrid#events:celledit "cellEdit")
+3. [`endAdd`](https://help.syncfusion.com/api/js/ejgrid#events:endadd "endAdd")
+4. [`endDelete`](https://help.syncfusion.com/api/js/ejgrid#events:enddelete "endDelete")
+5. [`endEdit`](https://help.syncfusion.com/api/js/ejgrid#events:endedit "endEdit") 
+
+# Editing customization by external action
+
+To perform the editing actions like delete, update or insert by external action use the following methods,
+
+1. [`cancelEdit`](https://help.syncfusion.com/api/js/ejgrid#methods:canceledit "cancelEdit")
+2. [`cancelEditCell`](https://help.syncfusion.com/api/js/ejgrid#methods:canceleditcell "cancelEditCell")
+3. [`endEdit`](https://help.syncfusion.com/api/js/ejgrid#methods:endedit "endEdit")
+4. [`startEdit`](https://help.syncfusion.com/api/js/ejgrid#methods:startedit "startEdit")
+5. [`deleteRecord`](https://help.syncfusion.com/api/js/ejgrid#methods:deleterecord "deleteRecord")
+6. [`deleteRow`](https://help.syncfusion.com/api/js/ejgrid#methods:deleterow "deleteRow")  
+
+The following code example describes the above behavior.
+
+{% highlight html %}
+<button id="cancelEdit" class ="buttons" >cancelEdit</button>
+<button id="cancelEditCell" class ="buttons" >cancelEditCell</button>  
+<button id="startEdit" class ="buttons" >startEdit</button>
+<button id="endEdit" class ="buttons" >endEdit</button>
+<br/></br>
+<button id="deleteRecord" class ="buttons" >deleteRecord</button>
+<button id="deleteRow" class ="buttons" >deleteRow</button>
+<button id="updateRecord" class ="buttons" >updateRecord</button>
+{% endhighlight %}
+
+{% highlight javascript %}
+$(function () {
+    $("#Grid").ejGrid({
+        dataSource: window.gridData,
+        allowPaging: true,
+        pageSettings:{pageSize:6},
+        editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true},
+        toolbarSettings: { showToolbar: true, toolbarItems: [ej.Grid.ToolBarItems.Add, ej.Grid.ToolBarItems.Edit, ej.Grid.ToolBarItems.Delete, ej.Grid.ToolBarItems.Update, ej.Grid.ToolBarItems.Cancel] },
+        columns: [
+            { field: "OrderID", isPrimaryKey: true, headerText: "Order ID", textAlign: ej.TextAlign.Right, validationRules: { required: true, number: true }, width: 90 },
+            { field: "CustomerID", headerText: 'Customer ID', validationRules: { required: true, minlength: 3 }, width: 90 },
+            { field: "EmployeeID", headerText: 'Employee ID', editType: ej.Grid.EditingType.Dropdown, textAlign: ej.TextAlign.Right, width: 80, validationRules: { number: true, range: [0, 1000] } },
+            { field: "Freight", headerText: 'Freight', textAlign: ej.TextAlign.Right, editType: ej.Grid.EditingType.Numeric, editParams: { decimalPlaces: 2 }, validationRules: { range: [0, 1000] }, width: 80, format: "{0:C}" },
+            { field: "ShipName", headerText: 'Ship Name', width: 150 },
+        ]
+    });
+});
+$(".buttons").ejButton({
+    click:function(args){
+        var option=args.target.id,grid = $("#Grid").ejGrid("instance");
+        if((option=="cancelEdit")||(option=="cancelEditCell")||(option=="endEdit"))
+            $("#Grid").ejGrid(option); 
+        if(option=="startEdit")
+            grid.startEdit(grid.getSelectedRows());
+        if(option=="deleteRow")
+            grid.deleteRow(grid.getSelectedRows());
+        if(option=="deleteRecord")
+            $("#Grid").ejGrid(option, "OrderID", { OrderID: 10249, EmployeeID: 3 });        
+        if(option=="updateRecord")
+            $("#Grid").ejGrid(option, "OrderID", {  OrderID:102453, EmployeeID: 2 ,CustomerID: "Arun",ShipCountry:"chennai"});        
+    }
+})
+{% endhighlight %}
+
+The following output is displayed as a result of the above code example.
+
+![](Editing_images/Editing_img33.png)
 
 ## Confirmation messages
 
@@ -973,6 +1111,53 @@ The following output is displayed as a result of the above code example.
 ![](Editing_images/Editing_img18.png)
 
 N> 1. Refer this [Knowledge Base link](https://www.syncfusion.com/kb/6817/how-to-perform-server-side-validation-in-grid) to perform server side validation in Grid.
+
+N> 2. Use [`editFormValidate`](https://help.syncfusion.com/api/js/ejgrid#methods:editFormValidate "editFormValidate") to returns a value and if the input field values of edit form is not based on the validation rules then it will show the validation message.
+
+# Column-validation customization by external action
+
+Set validation to edit form in the grid by external action use [`setValidation`](https://help.syncfusion.com/api/js/ejgrid#methods:setvalidation "setValidation") method, Set validation to a particular input field in a edit form dynamically use  [`setValidationToField`](https://help.syncfusion.com/api/js/ejgrid#methods:setvalidation "setValidationToField") method.
+
+The following code example describes the above behavior.
+
+{% highlight html %}
+<div id="Grid"></div>
+<input type="button" id="setValidation" value="setValidation">
+<input type="button" id="setValidationToField" value="setValidationToField">
+{% endhighlight %}
+
+{% highlight javascript %}
+$(function () {
+    $("#Grid").ejGrid({
+        dataSource: window.gridData,
+        allowPaging: true,
+        pageSettings:{pageSize:6},
+        editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true },
+        toolbarSettings: { showToolbar: true, toolbarItems: [ej.Grid.ToolBarItems.Add, ej.Grid.ToolBarItems.Edit, ej.Grid.ToolBarItems.Delete, ej.Grid.ToolBarItems.Update, ej.Grid.ToolBarItems.Cancel] },
+        columns: [
+            { field: "OrderID", isPrimaryKey: true, headerText: "Order ID", textAlign: ej.TextAlign.Right,  width: 90 },
+            { field: "CustomerID", headerText: 'Customer ID',  width: 90 },
+            { field: "EmployeeID", headerText: 'Employee ID', editType: ej.Grid.EditingType.Dropdown, textAlign: ej.TextAlign.Right, width: 80,  },
+            { field: "Freight", headerText: 'Freight', textAlign: ej.TextAlign.Right, editType: ej.Grid.EditingType.Numeric, width: 80, format: "{0:C}" },
+            { field: "ShipName", headerText: 'Ship Name', width: 150 },
+        ]
+    });
+});
+$("#setValidation").ejButton({
+    click: function (args) {
+        $("#Grid").ejGrid("setValidation");
+    }
+});
+$("#setValidationToField").ejButton({
+    click: function (args) {
+        $("#Grid").ejGrid("setValidationToField", "OrderID", { required: true });
+    }
+});
+{% endhighlight %}
+
+The following output is displayed as a result of the above code example.
+
+![](Editing_images/Editing_img30.png)
 
 ### Custom Validation
 
@@ -1492,7 +1677,7 @@ The following output is displayed as a result of the above code example.
 
 ## Render with blank row for easy add new
 
-The blank add new row is displayed in the grid content during grid initialization itself to add a new record easily. To enable show add new row by default, set the [`showAddNewRow`](https://help.syncfusion.com/api/js/ejgrid#members:showaddnewrow "showAddNewRow") property of [`editSettings`](https://help.syncfusion.com/api/js/ejgrid#members:editsettings "editSettings") as `true`.
+The blank add new row is displayed in the grid content during grid initialization itself to add a new record easily. To enable show add new row by default, set the [`showAddNewRow`](https://help.syncfusion.com/api/js/ejgrid#members:editsettings-showaddnewrow "showAddNewRow") property of [`editSettings`](https://help.syncfusion.com/api/js/ejgrid#members:editsettings "editSettings") as `true`.
 
 The blank add new row is displayed either in the top or bottom of the corresponding page, its position is based on the [`rowPosition`](https://help.syncfusion.com/api/js/ejgrid#members:editsettings-rowposition "rowPosition") property of [`editSettings`](https://help.syncfusion.com/api/js/ejgrid#members:editsettings "editSettings").
 
@@ -1579,5 +1764,67 @@ $(function () {
 The following output is displayed as a result of the above code example.
 
 ![](Editing_images/Editing_img28.png)
+
+# Editing feature details by external action
+
+To get the edit action details externally use the following methods,
+
+1. [`getCurrentEditCellData`](https://help.syncfusion.com/api/js/ejgrid#methods:getcurrenteditcelldata "getCurrentEditCellData")
+2. [`getCurrentIndex`](https://help.syncfusion.com/api/js/ejgrid#methods:getcurrentindex "getCurrentIndex")
+3. [`getBatchChanges`](https://help.syncfusion.com/api/js/ejgrid#methods:getbatchchanges "getBatchChanges")
+4. [`getPrimaryKeyFieldNames`](https://help.syncfusion.com/api/js/ejgrid#methods:getprimarykeyfieldnames "getPrimaryKeyFieldNames")
+5. [`getDataByIndex`](https://help.syncfusion.com/api/js/ejgrid#methods:getdatabyindex "getDataByIndex") 
+
+The following code example describes the above behavior.
+
+<div><select name="selectIndex"style="width:100px" id="dropdown">
+<option value="getCurrentEditCellData">getCurrentEditCellData</option>
+<option value="getCurrentIndex">getCurrentIndex</option>
+<option value="getBatchChanges">getBatchChanges</option>
+<option value="getPrimaryKeyFieldNames">getPrimaryKeyFieldNames</option>
+<option value="getDataByIndex">getDataByIndex</option>
+</select></div>
+<button onclick="methods()" >getMethod</button>
+<div class="col-md-3">Details</div>
+<div class ="area">
+<textarea id="details" class="ejinputtext" style="width: 300px;height:80px;position:inline" readonly="readonly"></textarea></div>
+<div id="Grid"></div>
+{% endhighlight %}
+
+{% highlight javascript %}
+$(function () {
+    $("#Grid").ejGrid({
+        dataSource: window.gridData,
+        allowPaging: true,
+        pageSettings:{pageSize:6},
+        editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true,editMode: "batch" },
+        toolbarSettings: { showToolbar: true, toolbarItems: [ej.Grid.ToolBarItems.Add, ej.Grid.ToolBarItems.Edit, ej.Grid.ToolBarItems.Delete, ej.Grid.ToolBarItems.Update, ej.Grid.ToolBarItems.Cancel] },
+        columns: [
+            { field: "OrderID", isPrimaryKey: true, headerText: "Order ID", textAlign: ej.TextAlign.Right, validationRules: { required: true, number: true }, width: 90 },
+            { field: "CustomerID", headerText: 'Customer ID', validationRules: { required: true, minlength: 3 }, width: 90 },
+            { field: "EmployeeID", headerText: 'Employee ID', editType: ej.Grid.EditingType.Dropdown, textAlign: ej.TextAlign.Right, width: 80, validationRules: { number: true, range: [0, 1000] } },
+            { field: "Freight", headerText: 'Freight', textAlign: ej.TextAlign.Right, editType: ej.Grid.EditingType.Numeric, editParams: { decimalPlaces: 2 }, validationRules: { range: [0, 1000] }, width: 80, format: "{0:C}" },
+            { field: "ShipName", headerText: 'Ship Name', width: 150 },
+        ]
+    });
+});
+$('#dropdown').ejDropDownList({
+width: 200
+});  
+function methods(){
+    var option= $("#dropdown_input").val(), obj=$("#Grid").ejGrid("instance"), val = $('#txtVal').val();
+    if(option=="getDataByIndex")
+        $("#details").val(JSON.stringify(obj.getDataByIndex(val)));
+    else
+        $("#details").val(JSON.stringify(obj[option]()));
+};
+{% endhighlight %}
+
+
+The following output is displayed as a result of the above code example.
+
+![](Editing_images/Editing_img32.png)
+
+
 
 
