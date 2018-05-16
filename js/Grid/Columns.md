@@ -437,7 +437,7 @@ $(function () {
             $("#Grid").ejGrid({
                 dataSource: data,
                 allowResizing: true,
-                resizeSettings: { resizeMode: "next column" },
+                resizeSettings: { resizeMode: "nextColumn" },
                 columns: [
                     { field: "ShipCity", headerText: "Ship City", width: 80 },
                     { field: "ShipPostalCode", headerText: "Ship Postal Code", width: 40 },
