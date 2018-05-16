@@ -1126,11 +1126,6 @@ Set validation to edit form in the grid by external action use [`setValidation`]
 
 The following code example describes the above behavior.
 
-{% highlight html %}
-<div id="Grid"></div>
-<input type="button" id="setValidation" value="setValidation">
-<input type="button" id="setValidationToField" value="setValidationToField">
-{% endhighlight %}
 
 {% highlight javascript %}
 $(function () {
@@ -1138,6 +1133,7 @@ $(function () {
         dataSource: window.gridData,
         allowPaging: true,
         pageSettings:{pageSize:6},
+        actionComplete:actionComplete,
         editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true },
         toolbarSettings: { showToolbar: true, toolbarItems: [ej.Grid.ToolBarItems.Add, ej.Grid.ToolBarItems.Edit, ej.Grid.ToolBarItems.Delete, ej.Grid.ToolBarItems.Update, ej.Grid.ToolBarItems.Cancel] },
         columns: [
@@ -1149,16 +1145,13 @@ $(function () {
         ]
     });
 });
-$("#setValidation").ejButton({
-    click: function (args) {
-        $("#Grid").ejGrid("setValidation");
+function actionComplete(args){
+    if(args.requestType =="beginedit"){
+        if(args.rowData.Verified=="false" && args.rowData.EmployeeID <5){
+            $("#Grid").ejGrid("setValidationToField", "CustomerID", { required: true });
+        }
     }
-});
-$("#setValidationToField").ejButton({
-    click: function (args) {
-        $("#Grid").ejGrid("setValidationToField", "OrderID", { required: true });
-    }
-});
+}
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
