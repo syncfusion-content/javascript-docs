@@ -9,7 +9,7 @@ api: /api/js/ejgrid
 --- 
 # Filtering
 
-Filtering helps to view particular or related records from dataSource which meets a given filtering criteria. To enable filter, set  [`allowfiltering`](https://help.syncfusion.com/api/js/ejgrid#members:allowfiltering "allowfiltering")  as `true`. 
+Filtering helps to view particular or related records from dataSource which meets a given filtering criteria. To enable filter, set  [`allowFiltering`](https://help.syncfusion.com/api/js/ejgrid#members:allowfiltering "allowFiltering")  as `true`. 
 
 The Grid supports three types of filter, they are
 
@@ -27,7 +27,7 @@ And also four types of filter menu is available in all filter types, they are
 The corresponding filter menu is opened based on the column type.
 
 N> 1. Need to specify the [`type`](https://help.syncfusion.com/api/js/ejgrid#members:columns-type "type") of column, when first record data value is empty or null otherwise the filter menu is not opened. 
-N> 2. The default filter type is Filter bar, when [`allowfiltering`](https://help.syncfusion.com/api/js/ejgrid#members:allowfiltering "allowfiltering") is enabled and [`filterType`](https://help.syncfusion.com/api/js/ejgrid#members:filtersettings-filtertype "filterType") is not set.
+N> 2. The default filter type is Filter bar, when [`allowFiltering`](https://help.syncfusion.com/api/js/ejgrid#members:allowfiltering "allowFiltering") is enabled and [`filterType`](https://help.syncfusion.com/api/js/ejgrid#members:filtersettings-filtertype "filterType") is not set.
 
 The following code example describes the above behavior.
 
