@@ -42,7 +42,7 @@ The following output is displayed as a result of the above code example.
 
 ### How to set isPrimaryKey for auto generated columns when editing is enabled:
 
-Using the [`dataBound`](https://help.syncfusion.com/api/js/ejgrid#events:databound "dataBound") event, you can set you can set [`isprimarykey`](https://help.syncfusion.com/api/js/ejgrid#members:columns-isprimarykey "isprimarykey") value as true by two ways. Here we have used [`columns`](https://help.syncfusion.com/api/js/ejgrid#methods:columns "columns")  method for updating the particular column. The following code example demonstrates the above behavior.
+Using the [`dataBound`](https://help.syncfusion.com/api/js/ejgrid#events:databound "dataBound") event, you can set you can set [`isPrimaryKey`](https://help.syncfusion.com/api/js/ejgrid#members:columns-isprimarykey "isPrimaryKey") value as true by two ways. Here we have used [`columns`](https://help.syncfusion.com/api/js/ejgrid#methods:columns "columns")  method for updating the particular column. The following code example demonstrates the above behavior.
 
 1. If primary key "column index" is known then refer to the following code example
 
@@ -437,7 +437,7 @@ $(function () {
             $("#Grid").ejGrid({
                 dataSource: data,
                 allowResizing: true,
-                resizeSettings: { resizeMode: "nextcolumn" },
+                resizeSettings: { resizeMode: "next column" },
                 columns: [
                     { field: "ShipCity", headerText: "Ship City", width: 80 },
                     { field: "ShipPostalCode", headerText: "Ship Postal Code", width: 40 },
@@ -628,8 +628,8 @@ $(".e-btn").ejButton({
 });
 $("#columnName").ejDropDownList({width:"120",selectedIndices: [0, 1, 2, 3, 4], 
     change: function(args){
-        var oper = args.isChecked ? "showColumns" : "hideColumns";
-        $("#Grid").ejGrid(oper,args.selectedText);
+        var opera = args.isChecked ? "showColumns" : "hideColumns";
+        $("#Grid").ejGrid(opera,args.selectedText);
 }, 
 showCheckbox: true}).ejDropDownList("disableItemsByIndices", "0");
 $(function () {
@@ -737,7 +737,7 @@ The following output is displayed as a result of the above code example.
 
 ## Controlling Grid actions
 
-You can control the Grid actions of a particular column by setting [`allowSorting`](https://help.syncfusion.com/api/js/ejgrid#members:columns-allowsorting "allowSorting"), [`allowGrouping`](https://help.syncfusion.com/api/js/ejgrid#members:columns-allowgrouping "allowGrouping"), [`allowfiltering`](https://help.syncfusion.com/api/js/ejgrid#members:columns-allowfiltering "allowfiltering"), [`allowResizing`](https://help.syncfusion.com/api/js/ejgrid#members:columns-allowresizing "allowResizing") and [`allowEditing`](https://help.syncfusion.com/api/js/ejgrid#members:columns-allowediting "allowEditing") properties.
+You can control the Grid actions of a particular column by setting [`allowSorting`](https://help.syncfusion.com/api/js/ejgrid#members:columns-allowsorting "allowSorting"), [`allowGrouping`](https://help.syncfusion.com/api/js/ejgrid#members:columns-allowgrouping "allowGrouping"), [`allow filtering`](https://help.syncfusion.com/api/js/ejgrid#members:columns-allowfiltering "allow filtering"), [`allowResizing`](https://help.syncfusion.com/api/js/ejgrid#members:columns-allowresizing "allowResizing") and [`allowEditing`](https://help.syncfusion.com/api/js/ejgrid#members:columns-allowediting "allowEditing") properties.
 
 The following code example describes the above behavior.
 
@@ -1232,7 +1232,7 @@ To control the grid column actions externally use the following methods,
 
 1. [`getColumnByIndex`](https://help.syncfusion.com/api/js/ejgrid#methods:getcolumnbyindex "getColumnByIndex")
 2. [`getColumnFieldNames`](https://help.syncfusion.com/api/js/ejgrid#methods:getcolumnfieldnames "getColumnFieldNames")
-3. [`getcolumnbyheadertext`](https://help.syncfusion.com/api/js/ejgrid#methods:getcolumnbyheadertext "getcolumnbyheadertext")
+3. [`getColumnByHeaderText`](https://help.syncfusion.com/api/js/ejgrid#methods:getcolumnbyheadertext "getcolumnbyheadertext")
 3. [`getColumnIndexByField`](https://help.syncfusion.com/api/js/ejgrid#methods:getcolumnindexbyfield "getColumnIndexByField")
 4. [`getColumnIndexByHeaderText`](https://help.syncfusion.com/api/js/ejgrid#methods:getcolumnindexbyheadertext "getColumnIndexByHeaderText")
 5. [`getFieldNameByHeaderText`](https://help.syncfusion.com/api/js/ejgrid#methods:getfieldnamebyheadertext "getFieldNameByHeaderText")
@@ -1253,7 +1253,7 @@ The following code example describes the above behavior.
 <div>
         <select name="selectIndex"style="width:100px" id="dropdown">
                 <option value="getColumnByIndex">getColumnByIndex</option>
-                <option value="getColumnByFieldNames">getColumnbyFieldNames</option>
+                <option value="getColumnByFieldNames">getColumnByFieldNames</option>
                 <option value="getColumnIndexByField">getColumnIndexByField</option>
                 <option value="getColumnIndexByHeaderText">getColumnIndexByHeaderText</option>
                 <option value="getFieldNameByHeaderText">getFieldNameByHeaderText</option>
@@ -1282,8 +1282,8 @@ $(function () {
 function methods(){
     var option= $("#dropdown_input").val(), gridObj=$("#Grid").ejGrid("instance"), val = $('#txtVal').val();
     if(option=="getColumnByIndex"){
-        var newfield=obj.getColumnByIndex(val) 
-        newfield.cssClass = "style"; // CSS is added to Freight column
+        var newField=obj.getColumnByIndex(val) 
+        newField.cssClass = "style"; // CSS is added to Freight column
         obj.refreshContent(true);
     }
 };
