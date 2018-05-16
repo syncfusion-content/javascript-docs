@@ -1132,7 +1132,6 @@ $(function () {
     $("#Grid").ejGrid({
         dataSource: window.gridData,
         allowPaging: true,
-        pageSettings:{pageSize:6},
         actionComplete:actionComplete,
         editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true },
         toolbarSettings: { showToolbar: true, toolbarItems: [ej.Grid.ToolBarItems.Add, ej.Grid.ToolBarItems.Edit, ej.Grid.ToolBarItems.Delete, ej.Grid.ToolBarItems.Update, ej.Grid.ToolBarItems.Cancel] },
