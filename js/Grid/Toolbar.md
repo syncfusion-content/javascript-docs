@@ -9,7 +9,7 @@ api: /api/js/ejgrid
 ---
 # Toolbar
 
-Toolbar can be shown by setting the [`toolbarSettings.showToolbar`](https://help.syncfusion.com/api/js/ejgrid#members:toolbarsettings-showtoolbar "showToolbar") as true. Toolbar has an option to add default items in the [`toolbarSettings.toolbarItems`](https://help.syncfusion.com/api/js/ejgrid#members:toolbarsettings-toolbaritems "toolbarItems") and customized items in the [`toolbarSettings.customToolbarItems`](https://help.syncfusion.com/api/js/ejgrid#members:toolbarsettings-customtoolbaritems "customToolbarItems").
+Toolbar can be shown by setting the [`toolbarSettings.showToolbar`](https://help.syncfusion.com/api/js/ejgrid#members:toolbarsettings-showtoolbar "showToolbar") as true. To modify the toolbar behavior use [`toolbarsettings`](https://help.syncfusion.com/api/js/ejgrid#members:toolbarsettings "toolbarsettings") property. Toolbar has an option to add default items in the [`toolbarSettings.toolbarItems`](https://help.syncfusion.com/api/js/ejgrid#members:toolbarsettings-toolbaritems "toolbarItems") and customized items in the [`toolbarSettings.customToolbarItems`](https://help.syncfusion.com/api/js/ejgrid#members:toolbarsettings-customtoolbaritems "customToolbarItems").
 
 ## Default toolbar items
 
