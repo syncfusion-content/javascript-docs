@@ -894,7 +894,7 @@ $(".buttons").ejButton({
         if(option=="deleteRecord")
             $("#Grid").ejGrid(option, "OrderID", { OrderID: 10249, EmployeeID: 3 });        
         if(option=="updateRecord")
-            $("#Grid").ejGrid(option, "OrderID", {  OrderID:102453, EmployeeID: 2 ,CustomerID: "Arunm",ShipCountry:"chennai"});        
+            $("#Grid").ejGrid(option, "OrderID", {  OrderID:102453, EmployeeID: 2 ,CustomerID: "Arum",ShipCountry:"chennai"});        
     }
 })
 {% endhighlight %}
