@@ -398,7 +398,7 @@ The following output is displayed as a result of the above code example.
 
 ## Resizing
 
-The [`allowResizing`](https://help.syncfusion.com/api/js/ejgrid#members:allowresizing "allowResizing") property enables the grid to set the width to columns based on resizing the grid column manually.
+The [`allowResizing`](https://help.syncfusion.com/api/js/ejgrid#members:allowresizing "allowResizing") property enables the grid to set the width to columns based on resizing the grid column manually. To modify the resizing behavior use [`resizesettings`](https://help.syncfusion.com/api/js/ejgrid#members:resizesettings "resizesettings") property.
 
 ### Resizing modes
 
