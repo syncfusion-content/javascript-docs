@@ -21,10 +21,10 @@ N> 1. In grid, the primary key column will be automatically set to read only whi
 
 N> 2. The column which is specified as [`isIdentity`](https://help.syncfusion.com/api/js/ejgrid#members:columns-isidentity "isIdentity") will be in readonly mode both while editing and adding a record. Also, auto incremented value is assigned to that [`isIdentity`](https://help.syncfusion.com/api/js/ejgrid#members:columns-isidentity "isIdentity") column.
 
-N> 3. To get the primarykey field name use [`getPrimaryKeyFieldNames`](https://help.syncfusion.com/api/js/ejgrid#methods:getprimarykeyfieldnames "getPrimaryKeyFieldNames") method.
+N> 3. To get the primarykey field name, use [`getPrimaryKeyFieldNames`](https://help.syncfusion.com/api/js/ejgrid#methods:getprimarykeyfieldnames "getPrimaryKeyFieldNames") method.
 
 
-Some default behaviour of Grid editing (i.e auto save the edit action on row selection changed) which can be modified by setting [`enableAutoSaveOnSelectionChange `](https://help.syncfusion.com/api/js/ejgrid#members:enableautosaveonselectionchange "enableAutoSaveOnSelectionChange ") property as `false`.
+Default behaviour of Grid editing (i.e auto save the edit action on row selection changed) which can be modified by setting [`enableAutoSaveOnSelectionChange `](https://help.syncfusion.com/api/js/ejgrid#members:enableautosaveonselectionchange "enableAutoSaveOnSelectionChange ") property as `false`.
 
 ## Toolbar with edit option
 
@@ -1118,11 +1118,11 @@ The following output is displayed as a result of the above code example.
 
 N> 1. Refer this [Knowledge Base link](https://www.syncfusion.com/kb/6817/how-to-perform-server-side-validation-in-grid) to perform server side validation in Grid.
 
-N> 2. Use [`editFormValidate`](https://help.syncfusion.com/api/js/ejgrid#methods:editFormValidate "editFormValidate") to returns a value and if the input field values of edit form is not based on the validation rules then it will show the validation message.
+N> 2. Use [`editFormValidate`](https://help.syncfusion.com/api/js/ejgrid#methods:editFormValidate "editFormValidate") to programmatically trigger validation of edit form.
 
 # Column-validation customization by external action
 
-Set validation to edit form in the grid by external action use [`setValidation`](https://help.syncfusion.com/api/js/ejgrid#methods:setvalidation "setValidation") method, Set validation to a particular input field in a edit form dynamically use  [`setValidationToField`](https://help.syncfusion.com/api/js/ejgrid#methods:setvalidation "setValidationToField") method.
+Set validation to edit form in the grid by external action use [`setValidation`](https://help.syncfusion.com/api/js/ejgrid#methods:setvalidation "setValidation") method and Set validation to a particular input field in a edit form dynamically use  [`setValidationToField`](https://help.syncfusion.com/api/js/ejgrid#methods:setvalidation "setValidationToField") method.
 
 The following code example describes the above behavior.
 
