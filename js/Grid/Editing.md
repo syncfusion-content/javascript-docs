@@ -24,7 +24,7 @@ N> 2. The column which is specified as [`isIdentity`](https://help.syncfusion.co
 N> 3. To get the primarykey field name, use [`getPrimaryKeyFieldNames`](https://help.syncfusion.com/api/js/ejgrid#methods:getprimarykeyfieldnames "getPrimaryKeyFieldNames") method.
 
 
-Default behaviour of Grid editing (i.e auto save the edit action on row selection changed) which can be modified by setting [`enableAutoSaveOnSelectionChange `](https://help.syncfusion.com/api/js/ejgrid#members:enableautosaveonselectionchange "enableAutoSaveOnSelectionChange ") property as `false`.
+Default behavior of Grid editing (i.e auto save the edit action on row selection changed) which can be modified by setting [`enableAutoSaveOnSelectionChange `](https://help.syncfusion.com/api/js/ejgrid#members:enableautosaveonselectionchange "enableAutoSaveOnSelectionChange ") property as `false`.
 
 ## Toolbar with edit option
 
@@ -439,7 +439,7 @@ The following output is displayed as a result of the above code example.
 
 ![](Editing_images/Editing_img8.png)
 
-N> Use [`titleColumn`](https://help.syncfusion.com/api/js/ejgrid#members:editsettings-titleColumn "titleColumn") property of editSettings to change the the title for editform apart from the primarykey column value.
+N> Use [`titleColumn`](https://help.syncfusion.com/api/js/ejgrid#members:editsettings-titleColumn "titleColumn") property of editSettings to change the the title for edit form apart from the primarykey column value.
 
 ### Dialog Template Form
 
@@ -894,7 +894,7 @@ $(".buttons").ejButton({
         if(option=="deleteRecord")
             $("#Grid").ejGrid(option, "OrderID", { OrderID: 10249, EmployeeID: 3 });        
         if(option=="updateRecord")
-            $("#Grid").ejGrid(option, "OrderID", {  OrderID:102453, EmployeeID: 2 ,CustomerID: "Arun",ShipCountry:"chennai"});        
+            $("#Grid").ejGrid(option, "OrderID", {  OrderID:102453, EmployeeID: 2 ,CustomerID: "Arunm",ShipCountry:"chennai"});        
     }
 })
 {% endhighlight %}
