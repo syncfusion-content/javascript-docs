@@ -828,6 +828,8 @@ $(".buttons").ejButton({
             $("#Grid").ejGrid("setCellValue",2, "EmployeeID", "10"); // cell value is set to the EmployeeID column
     }
 });
+{% endhighlight %}
+
 
 Here we have set the default value to the EmployeeID Column based on index using setCellValue method and also we edit particular cell based on index using editCell method. Refer the below screenshot
 
@@ -1126,6 +1128,9 @@ Set validation to edit form in the grid by external action use [`setValidation`]
 
 The following code example describes the above behavior.
 
+{% highlight html %}
+<div id="Grid"></div>
+{% endhighlight %}
 
 {% highlight javascript %}
 $(function () {
