@@ -37,7 +37,7 @@ The following output is displayed as a result of the above code example.
 
 ## Initial Searching
 
-While initializing the grid, there is an option to display only the searched data in grid. To perform initial searching, define `fields`, `operator`, `key` and `ignoreCase` in the `searchSettings` property.
+While initializing the grid, there is an option to display only the searched data in grid. To perform initial searching, define [`fields`](https://help.syncfusion.com/api/js/ejgrid#members:searchsettings-fields "fields") ,[`key`](https://help.syncfusion.com/api/js/ejgrid#members:searchsettings-key "key"), [`operator`](https://help.syncfusion.com/api/js/ejgrid#members:searchsettings-operator "operator") and [`ignoreCase`](https://help.syncfusion.com/api/js/ejgrid#members:searchsettings-ignorecase "ignoreCase") in the [`searchSettings`](https://help.syncfusion.com/api/js/ejGrid#members:searchsettings "searchSettings") property.
 
 N> The `key` value must be passed as `string`.
 
