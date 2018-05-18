@@ -208,18 +208,17 @@ The following output is displayed as a result of the above code example.
 
 ![](filtering_images/filtering_img8.png)
 
-### Filter Action by filterSettings property 
+### Default Filtering using filterSettings property
 
+To filter the grid at initial load use [filterSettings.filteredColumns](https://help.syncfusion.com/api/js/ejgrid#members:filtersettings-filteredcolumns "filterSettings.filteredColumns") property. And also we need to define the following parameters while filtering through [filterSettings.filteredColumns](https://help.syncfusion.com/api/js/ejgrid#members:filtersettings-filteredcolumns "filterSettings.filteredColumns")[filterSettings.filteredColumns](https://help.syncfusion.com/api/js/ejgrid#members:filtersettings-filteredcolumns "filterSettings.filteredColumns") property.
 
-
-### External Filtering 
-
-To perform the external filtering use [filterColumn](https://help.syncfusion.com/api/js/ejgrid#methods:filtercolumn "filterColumn") method. 
-
-The following code example describes the above behavior.
+1. [field](https://help.syncfusion.com/api/js/ejgrid#members:filtersettings-filteredcolumns-field "field")
+2. [matchCase ](https://help.syncfusion.com/api/js/ejgrid#members:filtersettings-filteredcolumns-matchcase "matchCase ")
+3. [operator ](https://help.syncfusion.com/api/js/ejgrid#members:filtersettings-filteredcolumns-operator "operator ")
+4. [predicate ](https://help.syncfusion.com/api/js/ejgrid#members:filtersettings-filteredcolumns-predicate "predicate ")
+5. [value ](https://help.syncfusion.com/api/js/ejgrid#members:filtersettings-filteredcolumns-value "value ")
 
 {% highlight html %}
-<button id="filter" class ="buttons" >Filter</button>
 <div id="Grid"></div>
 {% endhighlight %}
 
@@ -230,21 +229,51 @@ $(function () {
 		dataSource : window.gridData,
 		allowPaging : true,
 		allowFiltering : true,
-		filterSettings : { filterType : "menu" },
+        filterSettings: {  filterType: "menu", filteredColumns: [{ field: "ShipCity", operator: "startswith", value: "re", predicate: "and", matchCase: true }] },        		
+        columns : ["OrderID", "EmployeeID", "CustomerID", "ShipCountry", "Freight"]
+	})
+})
+{% endhighlight %}
+
+The following output is displayed as a result of the above code example.
+
+![](filtering_images/filtering_img14.png)
+
+
+### External Filtering 
+
+To perform the external filtering use [filterColumn](https://help.syncfusion.com/api/js/ejgrid#methods:filtercolumn "filterColumn") method. 
+
+The following code example describes the above behavior.
+
+{% highlight html %}
+<button id="filter" class ="buttons" >Filter</button>
+<br/><br/>
+<div id="Grid"></div>
+{% endhighlight %}
+
+{% highlight javascript %}
+$(function () {
+	$("#Grid").ejGrid({
+		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+		dataSource : window.gridData,
+		allowPaging : true,
+		allowFiltering : true,
+		filterSettings : { filterType : "menu"},
 		columns : ["OrderID", "EmployeeID", "CustomerID", "ShipCountry", "Freight"]
-	});
-});
+	})
+})
+
+$("#filter").click(function(args){
+    var obj=$("#Grid").ejGrid("instance")      
+    obj.filterColumn("OrderID","equal","10248","and", true);
+})
+
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
 
 ![](filtering_images/filtering_img13.png)
-
-
-
-
-
-
 
 ## Filter bar
 
