@@ -208,6 +208,43 @@ The following output is displayed as a result of the above code example.
 
 ![](filtering_images/filtering_img8.png)
 
+### Filter Action by filterSettings property 
+
+
+
+### External Filtering 
+
+To perform the external filtering use [filterColumn](https://help.syncfusion.com/api/js/ejgrid#methods:filtercolumn "filterColumn") method. 
+
+The following code example describes the above behavior.
+
+{% highlight html %}
+<button id="filter" class ="buttons" >Filter</button>
+<div id="Grid"></div>
+{% endhighlight %}
+
+{% highlight javascript %}
+$(function () {
+	$("#Grid").ejGrid({
+		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+		dataSource : window.gridData,
+		allowPaging : true,
+		allowFiltering : true,
+		filterSettings : { filterType : "menu" },
+		columns : ["OrderID", "EmployeeID", "CustomerID", "ShipCountry", "Freight"]
+	});
+});
+{% endhighlight %}
+
+The following output is displayed as a result of the above code example.
+
+![](filtering_images/filtering_img13.png)
+
+
+
+
+
+
 
 ## Filter bar
 
@@ -383,10 +420,12 @@ This specifies the grid to start the filter action while typing in the filter ba
 2. Immediate
 
 N> For [`filterBarMode`](https://help.syncfusion.com/api/js/ejgrid#members:filtersettings-filterbarmode "filterBarMode") property you can assign either `string` value (onenter) or `enum` value (`ej.Grid.FilterBarMode.OnEnter`).
+N> In immediate mode, to make the grid to delay the filter action while typing in the filterBar use the  [`immediateModeDelay `](https://help.syncfusion.com/api/js/ejgrid#members:filtersettings-immediatemodedelay "immediateModeDelay ") property.
+
 
 Filter bar message:
 
-The filter bar message is supported only for the [`filterType`](https://help.syncfusion.com/api/js/ejgrid#members:filtersettings-filtertype "filterType") as filterbar. The filtered data with column name is displayed in the grid pager itself. By default [`showFilterBarStatus`](https://help.syncfusion.com/api/js/ejgrid#members:filtersettings-showFilterBarStatus "showFilterBarStatus") is true.
+The filter bar message is supported only for the [`filterType`](https://help.syncfusion.com/api/js/ejgrid#members:filtersettings-filtertype "filterType") as filterbar. The filtered data with column name is displayed in the grid pager itself. By default [`showFilterBarStatus`](https://help.syncfusion.com/api/js/ejgrid#members:filtersettings-showfilterbarstatus "showFilterBarStatus") is true.
 
 The following code example describes the above behavior.
 
