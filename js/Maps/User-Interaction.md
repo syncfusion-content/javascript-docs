@@ -201,6 +201,17 @@ Specifies the zoom factor for map zoom value, you can use [`factor`](../api/ejma
 {% endhighlight %}
 
 
+### Animation Duration
+
+Specifies [`animation duration`](../api/ejmap#members:zoomsettings-animationduration) for shapes. The Default value is 600 milliseconds.
+
+{% highlight js %}
+ 
+   $("#container").ejMap({zoomSettings:{animationDuration:1000}});           
+
+{% endhighlight %}
+
+
 ### Additional Options to Zoom the Map
 
 Maps can be zoomed by using the following options also,

@@ -86,6 +86,31 @@ Method to perform map zooming, you can use [`zoom`](../api/ejmap#methods:zoom) m
 
 {% endhighlight %}
 
+### addMarkers(layerIndex,sublayerIndex)
+
+Add markers dynamically based on layer and sublayer index value, you can use [`addMarkers`](../api/ejmap#methods:addmarkers) method.
+
+{% highlight js %}
+ 
+//addMarkers method for map
+   $("#container").ejMap("addMarkers",layerIndex,sublayerIndex);
+
+{% endhighlight %}
+
+
+
+### refreshLayer(layerIndex,sublayerIndex,markers)
+
+Method to reload the shape marker with updated values, you can use [`refreshLayer`](../api/ejmap#methods:refreshlayer) method.
+
+
+{% highlight js %}
+ 
+//refresh layers method for map
+   $("#container").ejMap("refreshLayer",layerIndex,sublayerIndex,markers);
+
+{% endhighlight %}
+
 
 
 ## Events
@@ -333,6 +358,78 @@ $("#container").ejMap({
 
 {% endhighlight %}
 
+
+### Legend Item Click
+
+The [`legendItemClick`](../api/ejmap#events:legenditemclick) event is triggered on clicking the legend item.
+
+
+{% highlight js %}
+ 
+//legend item click event for map
+
+$("#container").ejMap({
+    legendItemClick: function (args) {
+              //Do something
+    }
+   
+});
+
+{% endhighlight %}
+
+### markerEnter
+
+The [`markerEnter`](../api/ejmap#events:markerenter) event is triggered on entering into the marker shape.
+
+
+{% highlight js %}
+ 
+//marker enter event for map
+
+$("#container").ejMap({
+    markerEnter: function (args) {
+              //Do something
+    }
+   
+});
+
+{% endhighlight %}
+
+### markerLeave
+
+The [`markerLeave`](../api/ejmap#events:markerleave) event is triggered on leaving from the marker shape.
+
+
+{% highlight js %}
+ 
+//marker leave event for map
+
+$("#container").ejMap({
+    markerLeave: function (args) {
+              //Do something
+    }
+   
+});
+
+{% endhighlight %}
+
+### refreshed
+
+The [`refreshed`](../api/ejmap#events:refreshed) event is triggered after refreshing the map items.
+
+
+{% highlight js %}
+ 
+//refreshed event for map
+
+$("#container").ejMap({
+    refreshed: function (args) {
+              //Do something
+    }
+   
+});
+
+{% endhighlight %}
 
 
 <a class="" href="http://www.syncfusion.com/copyright" target="_blank">Copyright &copy; 2001 - 2015 Syncfusion Inc. All Rights Reserved</a>

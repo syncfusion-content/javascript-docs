@@ -76,3 +76,50 @@ _Before Drill Down_
 _After Drill Down_
 
 Try it: [DrillDown](http://jsplayground.syncfusion.com/Sync_mrof3n0r)
+
+### Rendering Treemap with specific drilldown level
+
+We have provided support to render treemap with drilled state based on the specified value from the below mentioned API.
+
+•	[`drillDownValue`](../api/ejtreemap#members:drilldownvalue) – get the value of the tree         map item to render initially.  
+
+•	[`drillDownLevel`](../api/ejtreemap#members:drilldownlevel) – get the level index.
+
+Additionally, we have open technique to process the [`drilldown`](../api/ejtreemap#methods:drilldown) activity.
+
+{% highlight js %}
+
+var populationData = [
+{ Continent: "Asia", Country: "Indonesia", Population: 237641326 },
+{ Continent: "North America", Country: "USA", Population: 315645000 },
+{ Continent: "North America", Country: "Mexico", Population: 112336538 }
+{ Continent: "Africa", Country: "Nigeria", Population: 170901000 },
+{ Continent: "Africa", Country: "Egypt", Population: 83661000 },
+{ Continent: "Europe", Country: "Germany", Population: 81993000 },
+{ Continent: "Europe", Country: "France", Population: 65605000 }
+]
+
+$(function () {
+     $("#tree").ejTreeMap({   
+         dataSource: populationData,
+         drillDownValue: "North America",
+         drillDownLevel: 1,
+         weightValuePath: "Population",
+         levels: [{
+                //..
+                //..
+                //..
+         }]
+    });
+    var treeObj = $("#tree").ejTreeMap("instance");
+    treeObj.drillDown(data,level);
+
+});
+    
+{% endhighlight %}
+
+![](/js/TreeMap/Drill-Down-Support_images/Drill-Down-Support_img3.png)
+
+Treemap with modified level in initial view
+
+

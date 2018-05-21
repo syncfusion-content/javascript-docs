@@ -354,6 +354,42 @@ N> Here, Equal Color Mapping code sample for shapeSettings with color mappings i
 
 ![](/js/Maps/Map-Elements_images/Map-Elements_img4.png)
 
+## Shapes/Bubbles selection on legend item click
+
+You can select a specific shapes or bubbles while clicking on the corresponding legend item through disabling the [`toggleVisibility`](../api/ejmap#members:layers-legendsettings-togglevisibility) option of the legend. The default value of toggleVisibility option is **false**. 
+
+{% highlight javascript %}
+
+
+        jQuery(function ($) {
+        $("#mapContainer").ejMap({
+            layers: [
+            {
+                // ...
+                legendSettings:{
+                    showLegend:true,
+                    position:"bottomleft",
+                    height: 30,
+                    width: 70,
+                    type:'layers',
+                    toggleVisibility: true,                         
+                },
+                // ...                        
+            }]
+        });
+    });
+      
+
+{% endhighlight %}
+
+![](/js/Maps/Map-Elements_images/Map-Elements_img9.png)
+
+Map with shapes and legend items, before toggle.
+
+![](/js/Maps/Map-Elements_images/Map-Elements_img10.png)
+
+After toggle the visibility of Australia shape
+
 ### Interactive Legend
 
 The legends can be made interactive with an arrow mark indicating the exact range color in the legend when the mouse hovers over the corresponding shapes. You can enable this option by setting [`mode`](..) property in [`legendSettings`](../api/ejmap#members:layers-legendsettings) value as “interactive” and default value of [`mode`](../api/ejmap#members:layers-legendsettings-mode) property is “default” to enable the normal legend.

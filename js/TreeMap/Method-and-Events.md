@@ -25,6 +25,20 @@ api: /api/js/ejtreemap
 
 {% endhighlight %}
 
+## drillDown()
+
+[`drillDown()`](../api/ejtreemap#methods:drilldown) method is used to drilldown the treemap with specified data and level.
+
+#### Returns: void
+
+{% highlight js %}
+
+//drillDown method for treemap
+   var treeObj = $("#container").ejTreeMap("instance");
+   treeObj = treeObj.drillDown(data,level);
+
+{% endhighlight %}
+
 ## Events
 
 ## treeMapItemSelected
