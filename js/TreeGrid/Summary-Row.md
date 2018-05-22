@@ -75,10 +75,10 @@ The below code snippet explains defining a summary row in TreeGrid,
 The below screenshot shows the output of above code example.
 ![](SummaryRows_images/SummaryRows_img1.png)
 
-## Customize height of total summary row
+## Customize height of total summary
 
 Using [`totalSummaryHeight`](https://help.syncfusion.com/api/js/ejtreegrid#members:totalSummaryHeight "totalSummaryHeight") property we can customize the height of the total summary container.
-Please find the below code snippet for custom summary height
+The below code example shows how to update the footer summary container height.
 {% highlight js %}
   $("#treegrid").ejTreeGrid({
         showTotalSummary: true,
@@ -91,15 +91,15 @@ The below screenshot shows the output of above code example.
 
 ## Expand/collapse total summary row
 
-We can perform expand/collapse action in total summary row by two ways as follows
+We can expand/collapse the total summary rows in TreeGrid using following methods.
 
 * Using Expander Icon
 * Using Method
 
 ### Using Expander Icon
 
-We can render collapsible icon in total summary using [`collapsibleTotalSummary`](https://help.syncfusion.com/api/js/ejtreegrid#members:collapsibleTotalSummary "collapsibleTotalSummary").By default collapsible icon will be rendered in 0th column.
-Please find the below code snippet for collapsible summary row
+We can enable expander icon in total summary row by using [`collapsibleTotalSummary`](https://help.syncfusion.com/api/js/ejtreegrid#members:collapsibleTotalSummary "collapsibleTotalSummary") property. By default expander icon will be rendered in first row of 0th column in total summary rows.
+Please find the below code example to enable collapsible total summary row in TreeGrid.
 {% highlight js %}
   $("#treegrid").ejTreeGrid({
         showTotalSummary: true,
@@ -109,12 +109,12 @@ Please find the below code snippet for collapsible summary row
 {% endhighlight %}
 ![](SummaryRows_images/SummaryRows_img3.png)
 
-N> We can also customize summary column index using `_summaryColumnIndex` propery in [`load`](https://help.syncfusion.com/api/js/ejgantt#events:load "load") client side event.
+N> We can also customize the expander icon column in total summary row by using `_summaryColumnIndex` property and [`load`](https://help.syncfusion.com/api/js/ejgantt#events:load "load") event.
 
-### Using  Method to expand/collapse footer summary row
+### Using  Method
 
-Using [`expandCollapseTotalSummary`](https://help.syncfusion.com/api/js/ejgantt#methods:expandCollapseTotalSummary "expandCollapseTotalSummary") public method we can expand/collapse the total summary.
-Please find the below code snippet for collapsible summary row
+Total summary rows in TreeGrid can be expanded/collapsed by using [`expandCollapseTotalSummary`](https://help.syncfusion.com/api/js/ejgantt#methods:expandCollapseTotalSummary "expandCollapseTotalSummary") method.
+Please find the code example to collapse the total summary rows below.
 {% highlight js %}
     <button onclick="expandCollapse()">expandCollapse</button>
     $("#treegrid").ejTreeGrid({
@@ -127,4 +127,5 @@ Please find the below code snippet for collapsible summary row
             treeObj.expandCollapseTotalSummary(false);
         }
 {% endhighlight %}
+
 [Click](https://js.syncfusion.com/demos/web/#!/bootstrap/treegrid/rows/summaryrow) here to view the demo sample for summary row in TreeGrid.
