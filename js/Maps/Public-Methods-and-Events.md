@@ -86,20 +86,21 @@ Method to perform map zooming, you can use [`zoom`](../api/ejmap#methods:zoom) m
 
 {% endhighlight %}
 
-### addMarkers(layerIndex,sublayerIndex)
+### addMarkers(layerIndex, sublayerIndex)
 
-Add markers dynamically based on layer and sublayer index value, you can use [`addMarkers`](../api/ejmap#methods:addmarkers) method.
+Method to add the markers dynamically based on layer and sublayer index value, you can use
+[`addMarkers`](../api/ejmap#methods:addmarkers) method.
 
 {% highlight js %}
  
-//addMarkers method for map
-   $("#container").ejMap("addMarkers",layerIndex,sublayerIndex);
+//add marker method for map
+   $("#container").ejMap("addMarkers", layerIndex, sublayerIndex);
 
 {% endhighlight %}
 
 
 
-### refreshLayer(layerIndex,sublayerIndex,markers)
+### refreshLayer(layerIndex, sublayerIndex, markers)
 
 Method to reload the shape marker with updated values, you can use [`refreshLayer`](../api/ejmap#methods:refreshlayer) method.
 
@@ -107,7 +108,7 @@ Method to reload the shape marker with updated values, you can use [`refreshLaye
 {% highlight js %}
  
 //refresh layers method for map
-   $("#container").ejMap("refreshLayer",layerIndex,sublayerIndex,markers);
+   $("#container").ejMap("refreshLayer", layerIndex, sublayerIndex, markers);
 
 {% endhighlight %}
 
@@ -379,7 +380,7 @@ $("#container").ejMap({
 
 ### markerEnter
 
-The [`markerEnter`](../api/ejmap#events:markerenter) event is triggered on entering into the marker shape.
+The [`markerEnter`](../api/ejmap#events:markerenter) event is triggered, when mouse enter into the marker shape.
 
 
 {% highlight js %}
@@ -397,7 +398,7 @@ $("#container").ejMap({
 
 ### markerLeave
 
-The [`markerLeave`](../api/ejmap#events:markerleave) event is triggered on leaving from the marker shape.
+The [`markerLeave`](../api/ejmap#events:markerleave) event is triggered, when mouse leave from the marker shape.
 
 
 {% highlight js %}

@@ -354,9 +354,9 @@ N> Here, Equal Color Mapping code sample for shapeSettings with color mappings i
 
 ![](/js/Maps/Map-Elements_images/Map-Elements_img4.png)
 
-## Shapes/Bubbles selection on legend item click
+### Toggle Legend
 
-You can select a specific shapes or bubbles while clicking on the corresponding legend item through disabling the [`toggleVisibility`](../api/ejmap#members:layers-legendsettings-togglevisibility) option of the legend. The default value of toggleVisibility option is **false**. 
+You can enable this property by setting [`toggleVisibility`](../api/ejmap#members:layers-legendsettings-togglevisibility) property in legend settings. Now, you can toggle the shapes or bubbles by clicking on the corresponding legend item. The default value of toggleVisibility property is **false**. 
 
 {% highlight javascript %}
 
@@ -368,9 +368,7 @@ You can select a specific shapes or bubbles while clicking on the corresponding 
                 // ...
                 legendSettings:{
                     showLegend:true,
-                    position:"bottomleft",
-                    height: 30,
-                    width: 70,
+                    position:"bottomleft",                    
                     type:'layers',
                     toggleVisibility: true,                         
                 },
@@ -384,11 +382,11 @@ You can select a specific shapes or bubbles while clicking on the corresponding 
 
 ![](/js/Maps/Map-Elements_images/Map-Elements_img9.png)
 
-Map with bubble and legend items, before toggle.
+_Map with bubble and legend items, before toggle_.
 
 ![](/js/Maps/Map-Elements_images/Map-Elements_img10.png)
 
-After toggle the visibility of Brazil legend item
+_After toggle visibility of the legend item Brazil_.
 
 ### Interactive Legend
 

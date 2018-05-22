@@ -203,11 +203,11 @@ Specifies the zoom factor for map zoom value, you can use [`factor`](../api/ejma
 
 ### Animation Duration
 
-Specifies [`animation duration`](../api/ejmap#members:zoomsettings-animationduration) for shapes. The Default value is 600 milliseconds.
+To specify smooth transition on zooming the layers, you can use [`animation duration`](../api/ejmap#members:zoomsettings-animationduration) property and the default value is 600 milliseconds.
 
 {% highlight js %}
  
-   $("#container").ejMap({zoomSettings:{animationDuration:1000}});           
+   $("#container").ejMap({ zoomSettings: { animationDuration:1000 } });           
 
 {% endhighlight %}
 
