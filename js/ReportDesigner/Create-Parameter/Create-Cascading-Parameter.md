@@ -16,15 +16,15 @@ A list of values for a parameter depends on values chosen for a previous paramet
 
 ### Create datasource
 
-* To create new `Datasource`, refer [Create Datasource](/report-platform/reportdesigner/web/create-data/Create-New-Datasource).
+* To create new `Datasource`, refer [Create Datasource](/javascript-docs/js/ReportDesigner/create-data/Create-New-Datasource).
 
 * While creating data source, give the data source **Name** as **AdventureWorks** and select **AdventureWorks** database from the drop-down list.
  
-   ![](images/Cascade_Datasource.png)
+   ![](images/Cascade-Datasource.png)
 
 ### Create the main dataset with a query and query parameters
 
-* In the configuration panel, click the `Data` icon and select the `Add Dataset`. For more details, refer [Create Dataset](/report-platform/reportdesigner/web/create-data/Create-New-Data).
+* In the configuration panel, click the `Data` icon and select the `Add Dataset`. For more details, refer [Create Dataset](/javascript-docs/js/ReportDesigner/create-data/Create-New-Data).
 
    ![](images/Dataset-CreateWizard.png)
 

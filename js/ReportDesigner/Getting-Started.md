@@ -30,7 +30,7 @@ To create a new `Web Forms` in the application follow the below steps.
 
    ![](Images/JS-Sample-Img3.png) 
 
-3. Name the page as Default.html and click OK.
+3. Name the page as Default.html and click Add.
 
 ### Adding References, Scripts, Styles and Control in HTML Page
 
@@ -62,9 +62,8 @@ Add the References, scripts, styles that are required for the Report Designer.
    * Syncfusion.Gauge.Wpf
    * Syncfusion.SfMaps.Wpf
 
- N> Refer the above assemblies from the installed location, C:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\Assemblies
- N>
- N> Refer System.Web.Http, System. Web.Http.WebHost, System.Net.Http.WebRequest and System.Net.Http.Formatting assemblies from ASP.NET WebApi NuGet package. 
+ > Note: Refer the above assemblies from the installed location, C:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\Assemblies.
+Refer System.Web.Http, System. Web.Http.WebHost, System.Net.Http.WebRequest and System.Net.Http.Formatting assemblies from ASP.NET WebApi NuGet package. 
 
 ### Add Scripts and Styles
 

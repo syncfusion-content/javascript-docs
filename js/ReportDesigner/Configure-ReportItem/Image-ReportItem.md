@@ -17,79 +17,79 @@ An image report item contains a reference to an image that is embedded in the re
 
 2. Drag and drop an image report item from item panel to the design area. You can add an image report item to header, footer and body of the report.
 
-    ![](Image-Reportitem-images/Image-Drag.png)
+    ![](Image-ReportItem/Image-Drag.png)
 
 3. Click on the `Properties` icon in the configuration panel. Now, an image report item properties will be displayed like below.
 
-    ![](Image-Reportitem-images/Image-Properties.png)
+    ![](Image-ReportItem/Image-Properties.png)
 
     * **Basic Settings** : 
 
-        ![](Image-Reportitem-images/Basic-settings.png)
+        ![](Image-ReportItem/Basic-settings.png)
 
         * **Source** : 
 
-            ![](Image-Reportitem-images/Source-Dropdown.png)
+            ![](Image-ReportItem/Source-Dropdown.png)
 
             * **External Image** : Include stored images in a report by specifying a URL to an image.
 
-                ![](Image-Reportitem-images/External-Image.png)
+                ![](Image-ReportItem/External-Image.png)
 
             * **Embedded Image** : Using this property, you can add an image from the embedded images list in the report.
 
-                To know how to embed an image, see [Embed Image](/report-platform/reportdesigner/web/Image-Manager/Add-image)
+                To know how to embed an image, see [Embed Image](/javascript-docs/js/ReportDesigner/Image-Manager/Add-image)
 
                 Now, an embedded images in the report will be listed in the value dropdown.
 
-                ![](Image-Reportitem-images/Value-Dropdown.png)
+                ![](Image-ReportItem/Value-Dropdown.png)
 
                 Select an image from the list to design the report.
 
-                ![](Image-Reportitem-images/Embed-Snap.png)
+                ![](Image-ReportItem/Embed-Snap.png)
 
             * **Database Image** : Specify an image that is stored in a database.
 
-                ![](Image-Reportitem-images/Database-Image.png)
+                ![](Image-ReportItem/Database-Image.png)
 
                 * In the source field choose **Database**.
 
-                * In the value field dropdown, choose the field that contains images. For example, `=First(FieldsPhotoPath.Value,"Dataset1")`.
+                * In the value field dropdown, choose the field that contains images. For example, `=First(Fields!LargePhoto.Value,"Dataset1")`.
 
-                ![](Image-ReportItem-images/Value-Database.png)
+                ![](Image-ReportItem/Value-Database.png)
 
                 * In the MIME type choose the file format.
 
-                ![](Image-ReportItem-images/Database-Value.png)
+                ![](Image-ReportItem/Database-Value.png)
 
     * **Sizing** : To set the display size of an image.
 
         * **AutoSize** : 
 
-            ![](Image-ReportItem-Images/Size-Auto.png)
+            ![](Image-ReportItem/Size-Auto.png)
 
-            ![](Image-ReportItem-Images/AutoSize-Output.png)
+            ![](Image-ReportItem/AutoSize-Output.png)
 
         * **Fit** : 
 
-            ![](Image-ReportItem-Images/Size-Fit.png)
+            ![](Image-ReportItem/Size-Fit.png)
 
-            ![](Image-ReportItem-Images/Size-Fit-Output.png)
+            ![](Image-ReportItem/Size-Fit-Output.png)
 
         * **FitProportional** : 
 
-            ![](Image-ReportItem-Images/Size-FitProp-Option.png)
+            ![](Image-ReportItem/Size-FitProp-Option.png)
 
-            ![](Image-ReportItem-Images/Size-FitProp.png)
+            ![](Image-ReportItem/Size-FitProp.png)
 
         * **Clip** : 
 
-            ![](Image-ReportItem-Images/Size-Clip.png)
+            ![](Image-ReportItem/Size-Clip.png)
 
-            ![](Image-ReportItem-Images/Size-Clip-Option.png)
+            ![](Image-ReportItem/Size-Clip-Option.png)
 
     * **Position**: You can change an image size and position under this category.  
 
-        ![](Image-ReportItem-Images/Image-Position.png)
+        ![](Image-ReportItem/Image-Position.png)
     
         * **Position** : To adjust the position of an image in the designer area.
 
@@ -99,7 +99,7 @@ An image report item contains a reference to an image that is embedded in the re
 
     * **Visibility**: Select this option to indicate how the report item is initially displayed in the report.
 
-        ![](Textbox-images/Visibility.png)
+        ![](Image-ReportItem/Visibility.png)
 
         * Enable  the checkbox to show an image report item.
         * Disable the checkbox to hide an image report item.
@@ -107,6 +107,6 @@ An image report item contains a reference to an image that is embedded in the re
 
         Click on the icon in the right corner and select **Expression** to edit an expression.
 
-        ![](Textbox-images/Visibility2.png)
+        ![](Image-ReportItem/Visibility2.png)
 
 

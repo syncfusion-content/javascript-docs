@@ -72,9 +72,9 @@ The data type of the each column is represented with visual icons as shown below
 
 Add more than one table by following the same drag and drop procedure as mentioned in above steps, if required.
 
-To rename columns refer [Rename Columns](/report-platform/reportdesigner/web/transforming-data/rename-column).
+To rename columns refer [Rename Columns](/javascript-docs/js/ReportDesigner/transforming-data/rename-column).
 
-You can filter specific data out of huge database by using [Data Filters](/report-platform/reportdesigner/web/transforming-data/configure-data-filters).
+You can filter specific data out of huge database by using [Data Filters](/javascript-docs/js/ReportDesigner/transforming-data/configure-data-filters).
 
 > Note: At present, you can experience full fledged query design for **SQL** datasource only.
 

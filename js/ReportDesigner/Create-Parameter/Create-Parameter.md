@@ -60,7 +60,7 @@ The following steps describe the properties that can be set for each parameter:
 
     * Value: Appears only when **Specify Value** is selected. Type a value that will be retained for the parameter.
 
-    * Dataset: Appears only when **Query Value** is selected. Select this field to retrieve the list of parameters. Datasets can be defined using the data view. For more information, refer [Create Dataset](/report-platform/reportdesigner/web/create-data/Create-New-Data).
+    * Dataset: Appears only when **Query Value** is selected. Select this field to retrieve the list of parameters. Datasets can be defined using the data view. For more information, refer [Create Dataset](/javascript-docs/js/ReportDesigner/create-data/Create-New-Data).
 
     * Value field: Appears only when **Query Value** is selected. Select this field to obtain a list of available values, for example, `EmployeeID`. The available fields are retrieved from the list of column or field names in the dataset.
 
@@ -72,7 +72,7 @@ The following steps describe the properties that can be set for each parameter:
 
    **Query**: Select **Query Value** to retrieve the default value or set of default values from the data source. If you select **Query**, two fields appear in which you can define query information.
 
-   * Dataset: Appears only when **Query Value** is selected. Select the dataset to retrieve the default value or the set of default values for the parameter. Datasets can be defined using the data view. For more information, refer [Create Dataset](/report-platform/reportdesigner/web/create-data/Create-New-Data).
+   * Dataset: Appears only when **Query Value** is selected. Select the dataset to retrieve the default value or the set of default values for the parameter. Datasets can be defined using the data view. For more information, refer [Create Dataset](/javascript-docs/js/ReportDesigner/create-data/Create-New-Data).
 
    * Value field: Appears only when **Query Value** is selected. Select this field to obtain the default value or set of default values. The available fields are retrieved from the list of column or field names in the dataset.
 
@@ -80,21 +80,21 @@ The following steps describe the properties that can be set for each parameter:
 
 ## Add parameter
 
-Click `Parameter`icon in the configuration panel to launch the `Parameter` configuration.
+Click `Parameter` icon in the configuration panel to launch the `Parameter` configuration.
 
-![](images/Parameter-DataPane.png)
+![](Create-Parameter-Images/Parameter-DataPane.png)
 
 In the `Parameter` configuration panel, click the `New Parameter` button.
 
-![](images/New-Parameter.png)
+![](Create-Parameter-Images/New-Parameter.png)
 
 Now, the following wizard will be displayed.
 
-![](images/New-Parameter-Fields.png)
+![](Create-Parameter-Images/New-Parameter-Fields.png)
 
-In **Name** field, type `SalesPersonID`.
+In **Name** field, type `PersonID`.
 
-In **Prompt** field, type `SalesPersonID:` .
+In **Prompt** field, type `PersonID:` .
 
 Verify that the data type is `integer`.
 
@@ -102,7 +102,7 @@ Click `Assign Value` to set available and default values.
 
 Now, the above action will launch `Parameter dialog`, where you can set the available and default values for the parameter.
 
-![](images/Parameter-Dialog.png)
+![](Create-Parameter-Images/Parameter-Dialog.png)
 
 ### Add available values
 
@@ -110,11 +110,11 @@ Click the `Available Value` tab.
 
 * Click **Specify value** to manually provide the list of values, and optionally, name the labels for values.
 
-  ![](images/Parameter-Specify-Avail.png)
+  ![](Create-Parameter-Images/Parameter-Specify-Avail.png)
 
 * Click **Add** and then enter the value in the **Value** text box, and optionally, the label in the **Label** text box. If you do not provide the label, the value is used.
 
-  ![](images/Parameter-Specify-Add.png)
+  ![](Create-Parameter-Images/Parameter-Specify-Add.png)
 
 * You can write an expression for the value by clicking the icon which is right after to **Value** textbox.
 
@@ -122,7 +122,7 @@ Repeat this step for as many values as you want to provide. The order of items y
 
 * Click  **Query Value** to provide the name of an existing dataset that retrieves the values for this parameter.
 
-  ![](images/Parameter-Query-Avail.png)
+  ![](Create-Parameter-Images/Parameter-Query-Avail.png)
 
   In **Dataset**, choose the name of the dataset.
 
@@ -136,15 +136,15 @@ When you preview the report, you see a drop-down list of available values for th
 
 By default, the dialog will be launched with `Available Value` tab. To switch over to `Default Value` tab, click the **Default Value**.
 
-![](images/Default-None.png)
+![](Create-Parameter-Images/Default-None.png)
 
 * To manually provide a value or list of values, click **Specify value**.
 
-  ![](images/Default-Specify-Avail.png)
+  ![](Create-Parameter-Images/Default-Specify-Avail.png)
 
 * Click **Add** and then enter the value in the **Value** text box. 
 
-  ![](images/Default-Add-Expr.png)
+  ![](Create-Parameter-Images/Default-Add-Expr.png)
 
 * You can write an expression for the value by clicking the icon which is right after to **Value** textbox.
 
@@ -152,7 +152,7 @@ For multi value parameters, repeat this step for as many values as you want to p
 
 * To provide the name of the existing dataset that retrieves the values, click **Query Value**. 
 
-   ![](images/Default-Query.png)
+   ![](Create-Parameter-Images/Default-Query.png)
 
      In **Dataset**, choose the name of the dataset.
 
@@ -166,21 +166,21 @@ For multi value parameters, repeat this step for as many values as you want to p
 
  To change the order of an item in the list, click and hold the icon in the left corner of **Label** text box, and then drag the item to higher or lower position in the list.
 
-![](images/Parameter-Specify-Drag.png)
+![](Create-Parameter-Images/Parameter-Specify-Drag.png)
 
 The position of dragged item is shown as below:
 
-![](images/Default-Specify-Add.png)
+![](Create-Parameter-Images/Default-Specify-Add.png)
 
 ### Save parameter
 
 * Click `Save` in the parameter wizard.
 
-  ![](images/Parameter-Final-Save.png)
+  ![](Create-Parameter-Images/Parameter-Final-Save.png)
 
 The parameter will be listed under `Parameter` panel in the report like below.
 
-![](images/Parameter-Save-List.png)
+![](Create-Parameter-Images/Parameter-Save-List.png)
 
 Now, the `Parameter` has been create successfully with the Web Report Designer.
 
@@ -210,19 +210,19 @@ When you preview the report, the drop-down list of available values for the para
 
 When your report readers have questions about a report, it helps to know which parameter values are chosen by them. You can preserve user-selected values for each parameter in the report, so as to display the parameters in a textbox in the page footer.
 
-* From the parameter configuration panel, drag the parameter @SalesPersonID to the footer.
+* From the parameter configuration panel, drag the parameter @PersonID to the footer.
 
-  ![](images/Parameter-Drag-Footer.png)
+  ![](Create-Parameter-Images/Parameter-Drag-Footer.png)
 
 * It displays a text box with `<<Expr>>`. Select the `<<Expr>>` text and right-click the `<<Expr>>`
 
-  ![](images/Param-Textbox-Menu.png)
+  ![](Create-Parameter-Images/Param-Textbox-Menu.png)
 
 * Click `Expression`.
 
    The expression dialog box opens, you can edit the expression value in the text area.
 
-   ![](images/Parameter-ExpressionDialog.png)
+   ![](Create-Parameter-Images/Parameter-ExpressionDialog.png)
 
 * Click ok.
 

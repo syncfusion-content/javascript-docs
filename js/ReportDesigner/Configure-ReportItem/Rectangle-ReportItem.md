@@ -21,9 +21,11 @@ You can customize the Rectangle border, color and type through property panel.
 ![](Rectangle-images/Rectangle-Properties.png)
 
 You can add and drag the report items into rectangle area.
+
 ![](Rectangle-images/Rectangle-childitems.png)
 
 You can keep the entire content of rectangle in same page without split when enable the keep together property in property panel.
+
 ![](Rectangle-images/Rectangle-Keeptogether.png)
 
 

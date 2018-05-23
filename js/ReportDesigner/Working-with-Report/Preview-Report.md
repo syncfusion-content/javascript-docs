@@ -12,10 +12,10 @@ api: /api/js/ejreportdesigner
 
 You can preview the report that is created with the web report designer by clicking **Preview** in the top-right corner.
 
-![](images/Preview-Button-Server.png)
+![](Preview-Report-Images/Preview-Button.png)
 
 You can preview the report from anywhere within application by clicking the **Preview**.
 
-![](images/Preview-Final-image.png)
+![](Preview-Report-Images/Preview-Final-image.png)
 
 Syncfusion Web Designer Report is previewed using the inbuilt Report Viewer.

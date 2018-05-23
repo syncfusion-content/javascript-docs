@@ -12,14 +12,14 @@ api: /api/js/ejreportdesigner
 
 * In the configuration panel, click the `Parameters` icon. Hover the cursor on the parameter which you want to delete from the list of parameters.
 
-  ![](images/Parameter-Edit-Icon.png)
+  ![](Delete-Parameter-Images/Parameter-Delete-Icon.png)
 
 * Click the highlighted icon in the above image, will display the context menu.
 
-  ![](images/Parameter-Delete-Menu.png)
+  ![](Delete-Parameter-Images/Parameter-Context-Menu.png)
 
 * Choose `Delete` from the context menu, it will launch the confirmation dialog like below.
 
-  ![](images/Delete-Parameter.png)
+  ![](Delete-Parameter-Images/Delete-Parameter.png)
 
 * Click `Yes` button will remove the parameter from the report parameter list.
