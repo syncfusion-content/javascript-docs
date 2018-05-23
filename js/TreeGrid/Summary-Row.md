@@ -111,7 +111,7 @@ Please find the below code example to enable collapsible total summary row in Tr
 
 N> We can also customize the expander icon column in total summary row by using `_summaryColumnIndex` property and [`load`](https://help.syncfusion.com/api/js/ejgantt#events:load "load") event.
 
-### Using  Method
+### Using Method
 
 Total summary rows in TreeGrid can be expanded/collapsed by using [`expandCollapseTotalSummary`](https://help.syncfusion.com/api/js/ejgantt#methods:expandCollapseTotalSummary "expandCollapseTotalSummary") method.
 Please find the code example to collapse the total summary rows below.
