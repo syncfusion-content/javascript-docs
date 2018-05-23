@@ -79,217 +79,155 @@ And the internal dependencies are tabulated below.
         <td>
             ej.button.js
         </td>
-        <td>
-        </td>
     </tr>
     <tr>
         <td>
             ej.checkbox.js
-        </td>
-        <td>
         </td>
     </tr>
     <tr>
         <td>
             ej.radiobutton.js
         </td>
-        <td>
-        </td>
     </tr>
     <tr>
         <td>
             ej.autocomplete.js
-        </td>
-        <td>
         </td>
     </tr>
     <tr>
         <td>
             ej.datepicker.js
         </td>
-        <td>
-        </td>
     </tr>
     <tr>
         <td>
             ej.timepicker.js
-        </td>
-        <td>
         </td>
     </tr>
     <tr>
         <td>
             ej.datetimepicker.js
         </td>
-        <td>
-        </td>
     </tr>
     <tr>
         <td>
             ej.daterangepicker.js
-        </td>
-        <td>
         </td>
     </tr>
     <tr>
         <td>
             ej.dialog.js
         </td>
-        <td>
-        </td>
     </tr>
     <tr>
         <td>
             ej.dropdownlist.js
-        </td>
-        <td>
         </td>
     </tr>
     <tr>
         <td>
             ej.tooltip.js
         </td>
-        <td>
-        </td>
     </tr>
     <tr>
         <td>
             ej.listbox.js
-        </td>
-        <td>
         </td>
     </tr>
     <tr>
         <td>
             ej.map.js
         </td>
-        <td>
-        </td>
     </tr>
     <tr>
         <td>
             ej.editor.js
-        </td>
-        <td>
         </td>
     </tr>
     <tr>
         <td>
             ej.maskedit.js
         </td>
-        <td>
-        </td>
     </tr>
     <tr>
         <td>
             ej.menu.js
-        </td>
-        <td>
         </td>
     </tr>
     <tr>
         <td>
             ej.pager.js
         </td>
-        <td>
-        </td>
     </tr>
     <tr>
         <td>
             ej.slider.js
-        </td>
-        <td>
         </td>
     </tr>
     <tr>
         <td>
             ej.splitter.js
         </td>
-        <td>
-        </td>
     </tr>        
     <tr>
         <td>
             ej.splitbutton.js
-        </td>
-        <td>
         </td>
     </tr>
     <tr>
         <td>
             ej.toolbar.js
         </td>
-        <td>
-        </td>
     </tr>
     <tr>
         <td>
             ej.tab.js
-        </td>
-        <td>
         </td>
     </tr>
     <tr>
         <td>
             ej.treeview.js
         </td>
-        <td>
-        </td>
     </tr>
     <tr>
         <td>
             ej.uploadbox.js
-        </td>
-        <td>
         </td>
     </tr>
     <tr>
         <td>
             ej.colorpicker.js
         </td>
-        <td>
-        </td>
     </tr>
     <tr>
         <td>
             ej.grid.js
-        </td>
-        <td>
         </td>
     </tr>
     <tr>
         <td>
             ej.reportViewer.js
         </td>
-        <td>
-        </td>
     </tr>
     <tr>
         <td>
             ej.chart.js
-        </td>
-        <td>
         </td>
     </tr>
     <tr>
         <td>
             ej.circulargauge.js
         </td>
-        <td>
-        </td>
     </tr>
     <tr>
         <td>
             ej.lineargauge.js
         </td>
-        <td>
-        </td>
     </tr>
     <tr>
         <td>
             ej.bulletgraph.js
-        </td>
-        <td>
         </td>
     </tr>
 
