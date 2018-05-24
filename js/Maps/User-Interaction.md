@@ -201,9 +201,9 @@ Specifies the zoom factor for map zoom value, you can use [`factor`](../api/ejma
 {% endhighlight %}
 
 
-### Animation Duration
+### Animation duration
 
-To specify smooth transition on zooming the layers, you can use [`animation duration`](../api/ejmap#members:zoomsettings-animationduration) property and the default value is 600 milliseconds.
+To specify smooth transition when zooming the layers, use the [`animation duration`](../api/ejmap#members:zoomsettings-animationduration) property. The default value of this property is 600 milliseconds.
 
 {% highlight js %}
  
@@ -212,9 +212,9 @@ To specify smooth transition on zooming the layers, you can use [`animation dura
 {% endhighlight %}
 
 
-### Additional Options to Zoom the Map
+### Additional options to zoom the map
 
-Maps can be zoomed by using the following options also,
+Maps can be zoomed by using the following options:
 
 * Zoom method.
 * mouse scroll.
