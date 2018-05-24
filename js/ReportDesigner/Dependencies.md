@@ -8,6 +8,8 @@ api: /api/js/ejreportdesigner
 ---
 # Dependencies
 
+## JavaScript
+
 The ReportDesigner have the following list of external dependencies.
 
 * [`jQuery`](http://jquery.com "jQuery") 1.7.1 and later versions.
@@ -231,4 +233,138 @@ And the internal dependencies are tabulated below.
         </td>
     </tr>
 
+</table>
+
+## API Service
+
+The ReportDesigner service external assemblies are tabulated below.
+
+<table>
+    <tr>
+        <th>
+            Assemblies
+        </th>
+        <th>
+            Description/Usage
+        </th>
+    </tr>
+    <tr>
+        <td>
+            System.Web.Http
+        </td>
+        <td rowspan="6">
+            Must be referred these assemblies for WebAPI.
+        </td>
+    </tr>
+    <tr>
+        <td>
+            System.Web.Http.WebHost
+        </td>
+    </tr>
+    <tr>
+        <td>
+            System.Net.Http.WebRequest
+        </td>
+    </tr>
+    <tr>
+        <td>
+            System.Net.Http.Formatting
+        </td>
+    </tr>
+    <tr>
+        <td>
+            System.Net.Http
+        </td>
+    </tr>    
+    <tr>
+        <td>
+            System.Web.Routing
+        </td>
+    </tr>        
+</table>
+
+And the internal assemblies are tabulated below.
+
+<table>
+    <tr>
+        <th>
+            Assemblies
+        </th>
+        <th>
+            Description/Usage
+        </th>
+    </tr>
+    <tr>
+        <td>
+            Syncfusion.Shared.Wpf
+        </td>
+        <td>
+            It's common dependencies for our WPF components and used this for handle the report export related actions in ReportViewer.
+        </td>
+    </tr>
+    <tr>
+        <td>
+           Syncfusion.Pdf.Base
+        </td>
+        <td>
+          Must be referred to handle pdf export.
+        </td>        
+    </tr>
+    <tr>
+        <td>
+            Syncfusion.DocIO.Base
+        </td>
+        <td>
+          Must be referred to handle word export.        
+        </td>        
+    </tr>
+    <tr>
+        <td>
+            Syncfusion.XlsIO.Base
+        </td>
+        <td>
+          Must be referred to handle excel export.        
+        </td>        
+    </tr>
+    <tr>
+        <td>
+            Syncfusion.Presentation.Base
+        </td>
+        <td>
+          Must be referred to handle ppt export.        
+        </td>        
+    </tr>
+    <tr>
+        <td>
+            Syncfusion.Chart.Wpf
+        </td>
+        <td>
+          Must be referred to export the chart item from ReportViewer.        
+        </td>        
+    </tr>
+    <tr>
+        <td>
+            Syncfusion.Gauge.Wpf
+        </td>
+        <td>
+          Must be referred to export the Gauge item from ReportViewer.                
+        </td>        
+    </tr>
+    <tr>
+        <td>
+            Syncfusion.SfMaps.Wpf
+        </td>
+        <td>
+          Must be referred to export the Map item from ReportViewer.                
+        </td>        
+    </tr>
+    <tr>
+        <td>
+            Syncfusion.EJ.ReportViewer
+        </td>
+        <td>
+          It's used to preview the report.        
+        </td>        
+    </tr>
+    
 </table>
