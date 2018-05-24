@@ -354,9 +354,9 @@ N> Here, Equal Color Mapping code sample for shapeSettings with color mappings i
 
 ![](/js/Maps/Map-Elements_images/Map-Elements_img4.png)
 
-### Toggle Legend
+### Toggle legend
 
-You can toggle the visibility of shapes or bubbles by clicking on the corresponding legend item by using the property [`toggleVisibility`](../api/ejmap#members:layers-legendsettings-togglevisibility) in legendSettings. Its default value is **false**. 
+You can toggle the visibility of shapes and bubbles by clicking the corresponding legend item using the [`toggleVisibility`](../api/ejmap#members:layers-legendsettings-togglevisibility) property in legendSettings. The default value of this property is **false**. 
 
 {% highlight javascript %}
 
@@ -382,15 +382,15 @@ You can toggle the visibility of shapes or bubbles by clicking on the correspond
 
 ![](/js/Maps/Map-Elements_images/Map-Elements_img9.png)
 
-_Map with bubble and legend items, before toggle_.
+_Before toggle the visibility of bubble and legend items_.
 
 ![](/js/Maps/Map-Elements_images/Map-Elements_img10.png)
 
-_After toggle visibility of the legend item Brazil_.
+_After toggle the visibility of the legend item Brazil_.
 
-### Interactive Legend
+### Interactive legend
 
-The legends can be made interactive with an arrow mark indicating the exact range color in the legend when the mouse hovers over the corresponding shapes. You can enable this option by setting [`mode`](..) property in [`legendSettings`](../api/ejmap#members:layers-legendsettings) value as “interactive” and default value of [`mode`](../api/ejmap#members:layers-legendsettings-mode) property is “default” to enable the normal legend.
+The legends can be made interactive with an arrow mark that indicates the exact range color in the legend when the mouse hovers over the corresponding shape. You can enable this option by setting the [`mode`](..) property in [`legendSettings`](../api/ejmap#members:layers-legendsettings) to  “interactive”. The default value of the [`mode`](../api/ejmap#members:layers-legendsettings-mode) property is “default” to enable the normal legend.
 
 #### Title for Interactive Legend
 
