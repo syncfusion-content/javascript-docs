@@ -15,11 +15,11 @@ The expression icon in the tools pane will be in disabled state, if there is no 
 
 Expression Dialog can be launched through the **Expression** icon in the query designer toolbar highlighted below:
 
-![](images/Expression-Icon.png)
+![](Expression-Images/Expression-Icon.png)
 
 Now the expression dialog will be launched.
 
-![](images/QueryExp-Dialog.png)
+![](Expression-Images/QueryExp-Dialog.png)
 
 ## Adding an Expression Column
 
@@ -27,7 +27,7 @@ Click `Add` in the `Expression Dialog` to add a new expression column.
 
 Enter a suitable name for the expression in the `Name` text area. By default, it will be `Expression1`.
 
-![](images/QueryExp-Value.PNG)
+![](Expression-Images/QueryExp-Value.PNG)
 
 Define an expression in an **Expression** text area. The syntax for defining a simple expression is,
 
@@ -510,7 +510,7 @@ To include the function names and the column names in the `Expression` text area
 
 Click `Save` in Expression Dialog to add the expression in the list. The saved expression list will be listed in the left pane like below.
 
-![](images/QueryExp-List.png)
+![](Expression-Images/QueryExp-List.png)
 
 ## Deleting an Expression Column
 
@@ -518,7 +518,7 @@ Click `Save` in Expression Dialog to add the expression in the list. The saved e
 
 * Click `Close` icon to remove the selected expression column.
 
-    ![](images/Exp-Delete.png)
+    ![](Expression-Images/Exp-Delete.png)
 
 ## Edit an Expression Column
 

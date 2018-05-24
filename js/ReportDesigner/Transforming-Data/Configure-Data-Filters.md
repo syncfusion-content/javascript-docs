@@ -14,17 +14,17 @@ Data Filters can be used to filter specific data out of huge database based on d
 
 Click on the **Data Filter** icon in the query designer toolbar.
 
-![](images/QueryFilter-Icon.png)
+![](Data-Filters-Images/QueryFilter-Icon.png)
 
 Now the data filter dialog will be launched.
 
-![](images/Query-Dialog.png)
+![](Data-Filters-Images/Query-Dialog.png)
 
 ### Adding Data filter
 
 1. Add a filter condition through clicking the `Add` icon in the dialog.
 
-    ![](images/Query-Add.png)
+    ![](Data-Filters-Images/Query-Add.png)
 
     To add a filter, specify one or more filter conditions. A filter equation consists of field name that identifies which field data need to be filtered, an operator, and the value to compare.
 
@@ -34,19 +34,19 @@ Now the data filter dialog will be launched.
 
 4. In the **Value** field, type the value against which the data need to be filtered.
 
-    ![](images/Filter-Condition.png)
+    ![](Data-Filters-Images/Filter-Condition.png)
 
 5. More than one filter condition can be defined by following above steps.
 
-    ![](images/Query-FilterMultiple.png)
+    ![](Data-Filters-Images/Query-FilterMultiple.png)
 
 6. Execute the query. Now, the `OrderID` with data less than or equal to **10295** and `EmployeeID` equal to **8** will be displayed in the preview.
 
-    ![](Images/Preview-Data.png)
+    ![](Data-Filters-Images/Preview-Data.png)
 
 ### Removing a filter condition
 
 Remove a filter condition by clicking the close icon at left of the respective filter condition.
 
-![](images/Close-Icon.png)
+![](Data-Filters-Images/Close-Icon.png)
  

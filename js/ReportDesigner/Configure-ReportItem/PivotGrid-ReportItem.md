@@ -14,7 +14,7 @@ The pivot grid report item allows to visualize the multi-dimensional data.
 
 # To add a PivotGrid to a report
 
-* Create a report and define a dataset. For more information refer [Create Dataset](/report-platform/ReportDesigner/Web/Create-Data/Create-New-Data).
+* Create a report and define a dataset. For more information refer [Create Dataset](/javascript-docs/js/ReportDesigner/Create-Data/Create-New-Data).
 
   ![](images/Dataset-List.png)
 
@@ -44,7 +44,7 @@ In the `Properties` pane, to add **Expression** or to open **Advanced** options,
 
 ![](images/PivotGrid-Advanced-Option.png)
 
-> Note: RDL standard windows fonts are not supported in cross platforms. So, you need to load the unsupported [fonts](/report-platform/ReportDesigner/Web/how-to/Load-Unsupported-Fonts) in application level for cross platforms.
+> Note: RDL standard windows fonts are not supported in cross platforms. So, you need to load the unsupported [fonts](/javascript-docs/js/ReportDesigner/how-to/Load-Unsupported-Fonts) in application level for cross platforms.
 
 **Name**: Title for the pivot grid report item can be set using this property.
 

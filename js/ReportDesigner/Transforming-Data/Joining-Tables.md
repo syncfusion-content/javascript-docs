@@ -12,17 +12,17 @@ api: /api/js/ejreportdesigner
 
 Joining of tables is required when more than one table is used in data design. The join icon in the tools pane will be in disabled state, if there was only one table found dropped in table design view like below:
 
-![](images/Query-JoinerDisable.png)
+![](Joiner-Images/Query-JoinerDisable.png)
 
 It will get enabled once the second table found dropped in table design like below:
 
-![](images/Joiner-Enable.png)
+![](Joiner-Images/Joiner-Enable.png)
 
 ## Adding a join condition
 
 If the subsequent table being dropped, has any of its column as foreign key in any of the already dropped tables, the joining will take place automatically. Else, it will prompt the join editor like below to let you define the keys (columns) to join between this table and any one of the already dropped tables.
 
-![](images/Query-JoinerPrompt.png)
+![](Joiner-Images/Query-JoinerPrompt.png)
 
 * **LeftTable** - The `LeftTable` illustrates the list of table dropped already.
 
