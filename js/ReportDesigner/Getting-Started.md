@@ -30,7 +30,7 @@ To create a new `Web Forms` in the application follow the below steps.
 
    ![](Images/JS-Sample-Img3.png) 
 
-3. Name the page as Default.html and click OK.
+3. Name the page as Default.html and click Add.
 
 ### Adding References, Scripts, Styles and Control in HTML Page
 
@@ -64,7 +64,7 @@ Add the References, scripts, styles that are required for the Report Designer.
 
  N> Refer the above assemblies from the installed location, C:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\Assemblies
  N>
- N> Refer System.Web.Http, System. Web.Http.WebHost, System.Net.Http.WebRequest and System.Net.Http.Formatting assemblies from ASP.NET WebApi NuGet package. 
+ N> Refer System.Web.Http, System.Web.Http.WebHost, System.Net.Http.WebRequest and System.Net.Http.Formatting assemblies from ASP.NET WebApi NuGet package. 
 
 ### Add Scripts and Styles
 
@@ -332,3 +332,113 @@ Set the Report Server `serviceUrl` and `serviceAuthorizationToken` in the Report
 </script>
 
 {% endhighlight %} 
+
+## Integrate the component with External Server
+
+Report Designer can be integrated with the External Server or Server file browsing by using below code snippet. After integrating you can open, browse and edit the reports in External Server or Application Data using Report designer.
+
+{% highlight html %}
+
+<script type="text/javascript">
+    $(function() {
+        $("#container").ejReportDesigner({
+            serviceUrl: '../../api/ReportDesigner'
+        });
+    });
+</script>
+
+{% endhighlight %} 
+
+{% highlight c# %}
+
+using Syncfusion.EJ.ReportViewer;
+using System.Collections.Generic;
+using System.Linq;
+using System.Net;
+using System.Net.Http;
+using System.Web.Http;
+using Syncfusion.Reports.EJ;
+using System.Collections;
+using System.Web;
+using Syncfusion.EJ.ReportDesigner;
+using System.IO;
+using Reporting.ExternalServer;
+
+namespace EJServices.Controllers
+{
+    public class ReportDesignerController : ApiController, Syncfusion.EJ.ReportDesigner.IReportDesignerController
+    {
+        public ReportDesignerController()
+        {
+            ExternalServer externalServer = new ExternalServer();
+            externalServer.ReportServerUrl = "Your Path";
+            ReportDesignerHelper.ReportingServer = externalServer;
+        }
+
+        public FileModel GetFile(string filename, bool isOverride)
+        {
+            throw new NotImplementedException();
+        }
+
+        public string GetFilePath(string key)
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<FileModel> GetFiles(FileType fileType)
+        {
+            throw new NotImplementedException();
+        }
+
+        [HttpGet]
+        public object GetImage(string key, string image)
+        {
+            throw new NotImplementedException();
+        }
+
+        [HttpPost]
+        public object PostDesignerAction(Dictionary<string, object> jsonResult)
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool UploadFile(HttpPostedFile httpPostedFile)
+        {
+            throw new NotImplementedException();
+        }
+
+        [HttpPost]
+        public void UploadReportAction()
+        {
+            throw new NotImplementedException();
+        }
+
+        public object GetResource(string key, string resourcetype, bool isPrint)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void OnInitReportOptions(ReportViewerOptions reportOption)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void OnReportLoaded(ReportViewerOptions reportOption)
+        {
+            throw new NotImplementedException();
+        }
+
+        public object PostReportAction(Dictionary<string, object> jsonResult)
+        {
+            throw new NotImplementedException();
+        }
+    }
+}
+
+{% endhighlight %}
+
+N> You can refer the External Server sample and service from the installed location 
+N> sample: %public%\Documents\Syncfusion\JavaScript\{{ site.releaseversion }}\samples\web\reportdesigner\ReportBuilder.html
+N> API Service: %public%\Documents\Syncfusion\JavaScript\{{ site.releaseversion }}\ejservices\Controllers\ReportDesignerController.cs
+N> External Server: %public%\Documents\Syncfusion\JavaScript\{{ site.releaseversion }}\ejservices\Controllers\ExternalReportServer.cs
+

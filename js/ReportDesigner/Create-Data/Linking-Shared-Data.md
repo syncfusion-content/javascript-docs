@@ -18,15 +18,15 @@ This section explains, how to import a Shared Dataset from the server.
 
 Click the `Data` icon in the configuration panel to launch a `Data` configuration.
 
-![](images/DataStartIcon.png)
+![](Linking-Shared-Data-Images/DataStartIcon.png)
 
 Click the `Add DataSet` button in `Data` panel and choose `Shared` from the context menu.
 
-![](images/Shared-Dataset-Button.png)
+![](Linking-Shared-Data-Images/Shared-Dataset-Button.png)
 
 After choosing  the `Shared Data`, the new data wizard will be shown as below:
 
-![](images/Select-SharedDSet.png)
+![](Linking-Shared-Data-Images/Select-SharedDSet.png)
 
 A shared dataset panel consists of the following fields:
 

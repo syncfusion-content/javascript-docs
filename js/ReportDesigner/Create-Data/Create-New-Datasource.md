@@ -18,19 +18,19 @@ To bind data to a report item, a minimum of one data source is needed. A data so
 
 In the configuration panel, click the `Data` icon to launch a `Data` configuration panel.
 
-![](images/DataStartIcon.png)
+![](Create-Datasource-Images/Datasource-Start.png)
 
  To create a data source, switch over to the data source panel using the switcher icon on the top-right corner of the `Data` configuration panel.
 
-![](images/Switcher-Datasource.png)
+![](Create-Datasource-Images/Switcher-Datasource.png)
 
 Click the `DataSources` in context menu, the `DataSource` panel will be switched below.
 
-![](Images/Datasource-New-Panel.png)
+![](Create-Datasource-Images/Datasource-New-Panel.png)
 
 In the `DataSources` configuration panel, click the `New DataSource` button. In the connection type panel, choose the data source type that you want to connect. Here, `SQL` connection type is used to demonstrate.
 
- ![](images/SQL-Connect.png)
+ ![](Create-Datasource-Images/SQL-Connect.png)
 
 In the new connection configuration panel, 
 
@@ -40,14 +40,14 @@ In the new connection configuration panel,
 
 * **Authentication Type**: In the authentication type select  `Windows` or `SQL Server` authentication. In `SQL Server` type specify the `username` and `password` of the server.
 
-    ![](images/Authentication-sql.png)
+    ![](Create-Datasource-Images/Authentication-sql.png)
 
 * **Database name**: In this field, choose or enter a existing valid database on the specified server e.g. AdventureWorks.
 
-    ![](images/Datasource-CreateWizard2.png)
+    ![](Create-Datasource-Images/Datasource-CreateWizard.png)
 
 Finally, click `Save` in the `New Connection` panel and the new data source will be added in datasource pane like below.
 
-![](images/Datasource-SaveWizard1.png)
+![](Create-Datasource-Images/Datasource-SaveWizard.png)
 
  Now, the datasource will be added in the report and it is ready to create/use the data. 

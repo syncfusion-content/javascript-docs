@@ -50,23 +50,23 @@ Web Designer supports the following chart types:
 
 # To add a chart to a report
 
-* Create a report and define a dataset. For more information refer [Create Dataset](/report-platform/ReportDesigner/Web/create-Data/Create-New-Data).
+* Create a report and define a dataset. For more information refer [Create Dataset](/javascript-docs/js/ReportDesigner/create-Data/Create-New-Data).
 
 > Note: **AdventureWorks** database is used for demonstration.
 
  * To add a **Chart** data region to the report, drag and drop the chart type of your choice from the item panel. The wizard offers column, line, pie, bar and area charts.
 
-    ![](images/Widgets-Pane.png)
+    ![](chart-images/itempanel.png)
 
     > Note: Here **Column** chart is used to demonstrate. 
 
-    ![](images/Column-Chart.png)
+    ![](chart-images/Column-Chart.png)
 
 ## Designing a chart
 
 After adding a chart data region to the design surface, click the properties icon in the configuration panel to display the chart properties panel.
 
- ![](images/Properties-Icon.png)
+ ![](chart-images/Properties-Icon.png)
 
 In the chart `Properties` pane, the visual effects of the charts can be designed using the **Properties** tab.
 
@@ -80,7 +80,7 @@ In the `Properties` pane , to add **Expression** or to open **Advanced** options
 
 ![](images/Expression.png)
 
-> Note: RDL standard windows fonts are not supported in cross platforms. So, you need to load the unsupported [fonts](/report-platform/ReportDesigner/Web/how-to/Load-Unsupported-Fonts) in application level for cross platforms.
+> Note: RDL standard windows fonts are not supported in cross platforms. So, you need to load the unsupported [fonts](/javascript-docs/js/ReportDesigner/how-to/Load-Unsupported-Fonts) in application level for cross platforms.
 
 **Basic settings**
 
@@ -100,7 +100,7 @@ In the `Properties` pane , to add **Expression** or to open **Advanced** options
 
 ![](images/Data-Label.png)
 
-> Note: RDL standard windows fonts are not supported in cross platforms. So, you need to load the unsupported [fonts](/report-platform/ReportDesigner/Web/how-to/Load-Unsupported-Fonts) in application level for cross platforms.
+> Note: RDL standard windows fonts are not supported in cross platforms. So, you need to load the unsupported [fonts](/javascript-docs/js/ReportDesigner/how-to/Load-Unsupported-Fonts) in application level for cross platforms.
 
 Using the above properties in the above image, you can design the data label for better presentation of data.
 
@@ -156,7 +156,7 @@ To enable the chart title, check the **Show Chart Title** checkbox.
 
 ![](images/Title-Properties.png)
 
-> Note: RDL standard windows fonts are not supported in cross platforms. So, you need to load the unsupported [fonts](/report-platform/ReportDesigner/Web/how-to/Load-Unsupported-Fonts) in application level for cross platforms.
+> Note: RDL standard windows fonts are not supported in cross platforms. So, you need to load the unsupported [fonts](/javascript-docs/js/ReportDesigner/how-to/Load-Unsupported-Fonts) in application level for cross platforms.
 
 The chart title can be positioned, using **Title Position** in the below positions.
 

@@ -96,10 +96,8 @@ You can add effects to
 
  2. You can also set custom format by entering the format in the text field.
 
-     ![](Textbox-images/Apply-Format.png)
+    ![](Textbox-images/Apply-Format.png)
 
-     ![](Textbox-images/Text-Run-Format.png)
- 
 **Alignment**
 
 ![](Textbox-images/Textbox-Alignment.png)
@@ -198,7 +196,7 @@ You can add effects to
 
            ![](Textbox-images/Enable-Link-URLGrid.png)
 
-      4. Click the `ContactUs` text will open the link in new tab of the browser.
+      4. Click the `www.syncfusion.com` text will open the link in new tab of the browser.
 
 **Position**: You can change the textbox size and position under this category.  
 

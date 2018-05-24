@@ -16,25 +16,25 @@ A list of values for a parameter depends on values chosen for a previous paramet
 
 ### Create datasource
 
-* To create new `Datasource`, refer [Create Datasource](/report-platform/reportdesigner/web/create-data/Create-New-Datasource).
+* To create new `Datasource`, refer [Create Datasource](/javascript-docs/js/ReportDesigner/create-data/Create-New-Datasource).
 
 * While creating data source, give the data source **Name** as **AdventureWorks** and select **AdventureWorks** database from the drop-down list.
  
-   ![](images/Cascade_Datasource.png)
+   ![](Cascade-Parameter-Images/Cascade-Datasource.png)
 
 ### Create the main dataset with a query and query parameters
 
-* In the configuration panel, click the `Data` icon and select the `Add Dataset`. For more details, refer [Create Dataset](/report-platform/reportdesigner/web/create-data/Create-New-Data).
+* In the configuration panel, click the `Data` icon and select the `Add Dataset`. For more details, refer [Create Dataset](/javascript-docs/js/ReportDesigner/create-data/Create-New-Data).
 
-   ![](images/Dataset-CreateWizard.png)
+   ![](Cascade-Parameter-Images/Dataset-CreateWizard.png)
 
 * Click `Create New`, will launch the below wizard.
 
-  ![](images/Existing-DatsourceWizard.png)
+  ![](Cascade-Parameter-Images/Existing-DatsourceWizard.png)
 
 * Choose `AdventureWorks` data source from the drop-down list.
 
-  ![](images/Existing-Datsource-Select.png)
+  ![](Cascade-Parameter-Images/Existing-Datsource-Select.png)
 
 * Click `Connect Datasource`.
 
@@ -42,7 +42,7 @@ A list of values for a parameter depends on values chosen for a previous paramet
 
 * Switch to Query editor by using the switcher icon (highlighted in the below snap).
 
-   ![](images/Switch-Query-Editor.png)
+   ![](Cascade-Parameter-Images/Switch-Query-Editor.png)
 
 * Paste the following query in the Query editor:
 
@@ -73,7 +73,7 @@ A list of values for a parameter depends on values chosen for a previous paramet
     
    The query now includes the query parameters @Category, @Subcategory, and @Product.
 
-     ![](images/Cascade-Query-Editor.png)
+     ![](Cascade-Parameter-Images/Cascade-Query-Editor.png)
 
 * Click run to see the result set. The **Query Parameters** dialog box opens.
 
@@ -83,7 +83,7 @@ A list of values for a parameter depends on values chosen for a previous paramet
    * Enter `Brakes` as value for **@Subcategory**.
    * Enter `Front Brakes` as value for **@Product**.
 
-  ![](images/Cascade-Query-Parameter2.png)
+  ![](Cascade-Parameter-Images/Cascade-Query-Parameter2.png)
    
 * Click `Ok`.
 
@@ -109,7 +109,7 @@ Go through the [CreateParameter](Create-Parameter-FilterDS) topic to know about 
                 SELECT DISTINCT Name AS Category FROM Production.ProductCategory 
       ```          
 
-      ![](images/Cascade-RP1-Dataset.png)
+      ![](Cascade-Parameter-Images/Cascade-RP1-Dataset.png)
 
 * Click run to see the result. The column category appears with four values: accessories, bikes, clothing, and components.
 
@@ -137,7 +137,7 @@ Now, you have to set the properties for the report parameter **Category** to use
 
      In **Label field**, choose **Category**.
 
-     ![](images/Cascade-CategoryValDef.png)
+     ![](Cascade-Parameter-Images/Cascade-CategoryValDef.png)
 
    * Click **Default value**.
 
@@ -147,7 +147,7 @@ Now, you have to set the properties for the report parameter **Category** to use
 
       In **Value field**, select **Category**.
 
-     ![](images/Cascade-CategoryVal.png)
+     ![](Cascade-Parameter-Images/Cascade-CategoryVal.png)
 
 * Click `Ok`.
 
@@ -173,11 +173,11 @@ Now, you can modify the parameter @Subcategory depends on the value selected for
 
     Now, the query includes the query parameters @Category.
 
-    ![](images/Cascade-RP2-Dataset.png)
+    ![](Cascade-Parameter-Images/Cascade-RP2-Dataset.png)
 
 * Click run to see the result set. The **Query Parameters** dialog box opens.
 
-   ![](images/Cascade-Query-Parameter.png)
+   ![](Cascade-Parameter-Images/Cascade-Query-Parameter.png)
    
 * Click `Ok`, the result set displays 14 rows.
 
@@ -203,7 +203,7 @@ Now, you can modify the parameter @Subcategory depends on the value selected for
 
      In **Label field**, choose **Subcategory**.
 
-     ![](images/Cascade-EditRP1.png)
+     ![](Cascade-Parameter-Images/Cascade-EditRP1.png)
 
    * Click **Default value**.
 
@@ -213,7 +213,7 @@ Now, you can modify the parameter @Subcategory depends on the value selected for
 
       In **Value field**, select **Subcategory**.
 
-      ![](images/Cascade-EditRP1-Default.png)
+      ![](Cascade-Parameter-Images/Cascade-EditRP1-Default.png)
 
 * Click `Ok`.
 
@@ -241,7 +241,7 @@ Now, create a parameter @Product depends on both the value of @Category and the 
                     AND PSC.Name = (@Subcategory))
     ```
 
-    ![](images/Cascade-RP3-Dataset.png)
+    ![](Cascade-Parameter-Images/Cascade-RP3-Dataset.png)
 
 * Click `Finish`, now a dataset named **ProductValues** with one field named **Product** will be added with the report under the data pane.
 
@@ -265,7 +265,7 @@ Now, create a parameter @Product depends on both the value of @Category and the 
 
      In **Label field**, choose **Product**.
 
-     ![](images/Cascade-EditRP2.png)
+     ![](Cascade-Parameter-Images/Cascade-EditRP2.png)
 
    * Click **Default value**.
 
@@ -275,7 +275,7 @@ Now, create a parameter @Product depends on both the value of @Category and the 
 
       In **Value field**, select **Product**.
 
-      ![](images/Cascade-EditRP2-Default.png)
+      ![](Cascade-Parameter-Images/Cascade-EditRP2-Default.png)
 
 * Click `Ok`.
 
@@ -285,15 +285,15 @@ Now, create a parameter @Product depends on both the value of @Category and the 
 
   * In design view, drag and drop the the `Grid` from the left pane into designer panel.
 
-    ![](images/Cascade-Grid-Drag.png)
+    ![](Cascade-Parameter-Images/Cascade-Grid-Drag.png)
 
   * In the configuration panel, click the `Properties` icon to **assign data** to the `Grid`.
 
-    ![](images/Cascade-Grid-Property.png)
+    ![](Cascade-Parameter-Images/Cascade-Grid-Property.png)
 
     In the properties panel, click the `Data Assign` tab, and drag the following fields SalesOrderNumber, OrderQty, LineTotal from the **SalesbyCategory** dataset.
 
-    ![](images/Cascade-Grid-AssignData.png)
+    ![](Cascade-Parameter-Images/Cascade-Grid-AssignData.png)
 
 ### Preview the cascading parameters
 
@@ -311,13 +311,13 @@ Notice, when you select each successive parameter, the drop-down list for the ne
 
     The report displays sales order numbers with order quantity and line totals for orders that include the "front brakes" product.
 
-  ![](images/Parameter-ViewerICon-Preview.png)
+  ![](Cascade-Parameter-Images/Parameter-ViewerICon-Preview.png)
 
 
 Click the `Parameter` icon in the viewer toolbar to hide the parameter fields.
 
-![](images/Parameter-ViewerICon.png)
+![](Cascade-Parameter-Images/Parameter-ViewerICon.png)
 
 Now, the preview will be displayed like below:
 
-  ![](images/Cascade-Preview-Result.png)
+  ![](Cascade-Parameter-Images/Cascade-Preview-Result.png)

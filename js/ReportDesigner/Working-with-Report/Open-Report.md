@@ -12,12 +12,12 @@ api: /api/js/ejreportdesigner
 
 To open an existing report click on the `Open` icon in the designer toolbar.
 
-![](images/Open-Menu.png)
+![](Open-Report-Images/Open-Menu.png)
 
 **From Device** - To open the local report click on `From Device` option in the context menu. Now the client browser dialog will be launched.
 
-![](images/Open-DeviceDialog.png)
+![](Open-Report-Images/Open-DeviceDialog.png)
 
 **From Server** - To open the server report click on `From Server` option in the context menu. Now the server browser dialog will be launched.
 
-![](images/OpenServer-Report.png)
+![](Open-Report-Images/OpenServer-Report.png)

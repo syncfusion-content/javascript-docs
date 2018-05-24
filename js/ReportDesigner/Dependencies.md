@@ -8,6 +8,8 @@ api: /api/js/ejreportdesigner
 ---
 # Dependencies
 
+## JavaScript
+
 The ReportDesigner have the following list of external dependencies.
 
 * [`jQuery`](http://jquery.com "jQuery") 1.7.1 and later versions.
@@ -79,218 +81,290 @@ And the internal dependencies are tabulated below.
         <td>
             ej.button.js
         </td>
-        <td>
-        </td>
     </tr>
     <tr>
         <td>
             ej.checkbox.js
-        </td>
-        <td>
         </td>
     </tr>
     <tr>
         <td>
             ej.radiobutton.js
         </td>
-        <td>
-        </td>
     </tr>
     <tr>
         <td>
             ej.autocomplete.js
-        </td>
-        <td>
         </td>
     </tr>
     <tr>
         <td>
             ej.datepicker.js
         </td>
-        <td>
-        </td>
     </tr>
     <tr>
         <td>
             ej.timepicker.js
-        </td>
-        <td>
         </td>
     </tr>
     <tr>
         <td>
             ej.datetimepicker.js
         </td>
-        <td>
-        </td>
     </tr>
     <tr>
         <td>
             ej.daterangepicker.js
-        </td>
-        <td>
         </td>
     </tr>
     <tr>
         <td>
             ej.dialog.js
         </td>
-        <td>
-        </td>
     </tr>
     <tr>
         <td>
             ej.dropdownlist.js
-        </td>
-        <td>
         </td>
     </tr>
     <tr>
         <td>
             ej.tooltip.js
         </td>
-        <td>
-        </td>
     </tr>
     <tr>
         <td>
             ej.listbox.js
-        </td>
-        <td>
         </td>
     </tr>
     <tr>
         <td>
             ej.map.js
         </td>
-        <td>
-        </td>
     </tr>
     <tr>
         <td>
             ej.editor.js
-        </td>
-        <td>
         </td>
     </tr>
     <tr>
         <td>
             ej.maskedit.js
         </td>
-        <td>
-        </td>
     </tr>
     <tr>
         <td>
             ej.menu.js
-        </td>
-        <td>
         </td>
     </tr>
     <tr>
         <td>
             ej.pager.js
         </td>
-        <td>
-        </td>
     </tr>
     <tr>
         <td>
             ej.slider.js
-        </td>
-        <td>
         </td>
     </tr>
     <tr>
         <td>
             ej.splitter.js
         </td>
-        <td>
-        </td>
     </tr>        
     <tr>
         <td>
             ej.splitbutton.js
-        </td>
-        <td>
         </td>
     </tr>
     <tr>
         <td>
             ej.toolbar.js
         </td>
-        <td>
-        </td>
     </tr>
     <tr>
         <td>
             ej.tab.js
-        </td>
-        <td>
         </td>
     </tr>
     <tr>
         <td>
             ej.treeview.js
         </td>
-        <td>
-        </td>
     </tr>
     <tr>
         <td>
             ej.uploadbox.js
-        </td>
-        <td>
         </td>
     </tr>
     <tr>
         <td>
             ej.colorpicker.js
         </td>
-        <td>
-        </td>
     </tr>
     <tr>
         <td>
             ej.grid.js
-        </td>
-        <td>
         </td>
     </tr>
     <tr>
         <td>
             ej.reportViewer.js
         </td>
-        <td>
-        </td>
     </tr>
     <tr>
         <td>
             ej.chart.js
-        </td>
-        <td>
         </td>
     </tr>
     <tr>
         <td>
             ej.circulargauge.js
         </td>
-        <td>
-        </td>
     </tr>
     <tr>
         <td>
             ej.lineargauge.js
-        </td>
-        <td>
         </td>
     </tr>
     <tr>
         <td>
             ej.bulletgraph.js
         </td>
-        <td>
-        </td>
     </tr>
 
+</table>
+
+## API Service
+
+The ReportDesigner service external assemblies are tabulated below.
+
+<table>
+    <tr>
+        <th>
+            Assemblies
+        </th>
+        <th>
+            Description/Usage
+        </th>
+    </tr>
+    <tr>
+        <td>
+            System.Web.Http
+        </td>
+        <td rowspan="6">
+            Must be referred these assemblies for WebAPI.
+        </td>
+    </tr>
+    <tr>
+        <td>
+            System.Web.Http.WebHost
+        </td>
+    </tr>
+    <tr>
+        <td>
+            System.Net.Http.WebRequest
+        </td>
+    </tr>
+    <tr>
+        <td>
+            System.Net.Http.Formatting
+        </td>
+    </tr>
+    <tr>
+        <td>
+            System.Net.Http
+        </td>
+    </tr>    
+    <tr>
+        <td>
+            System.Web.Routing
+        </td>
+    </tr>        
+</table>
+
+And the internal assemblies are tabulated below.
+
+<table>
+    <tr>
+        <th>
+            Assemblies
+        </th>
+        <th>
+            Description/Usage
+        </th>
+    </tr>
+    <tr>
+        <td>
+            Syncfusion.Shared.Wpf
+        </td>
+        <td>
+            It's common dependencies for our WPF components and used this for handle the report export related actions in ReportViewer.
+        </td>
+    </tr>
+    <tr>
+        <td>
+           Syncfusion.Pdf.Base
+        </td>
+        <td>
+          Must be referred to handle pdf export.
+        </td>        
+    </tr>
+    <tr>
+        <td>
+            Syncfusion.DocIO.Base
+        </td>
+        <td>
+          Must be referred to handle word export.        
+        </td>        
+    </tr>
+    <tr>
+        <td>
+            Syncfusion.XlsIO.Base
+        </td>
+        <td>
+          Must be referred to handle excel export.        
+        </td>        
+    </tr>
+    <tr>
+        <td>
+            Syncfusion.Presentation.Base
+        </td>
+        <td>
+          Must be referred to handle ppt export.        
+        </td>        
+    </tr>
+    <tr>
+        <td>
+            Syncfusion.Chart.Wpf
+        </td>
+        <td>
+          Must be referred to export the chart item from ReportViewer.        
+        </td>        
+    </tr>
+    <tr>
+        <td>
+            Syncfusion.Gauge.Wpf
+        </td>
+        <td>
+          Must be referred to export the Gauge item from ReportViewer.                
+        </td>        
+    </tr>
+    <tr>
+        <td>
+            Syncfusion.SfMaps.Wpf
+        </td>
+        <td>
+          Must be referred to export the Map item from ReportViewer.                
+        </td>        
+    </tr>
+    <tr>
+        <td>
+            Syncfusion.EJ.ReportViewer
+        </td>
+        <td>
+          It's used to preview the report.        
+        </td>        
+    </tr>
+    
 </table>

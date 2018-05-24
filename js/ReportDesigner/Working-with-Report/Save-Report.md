@@ -12,7 +12,7 @@ api: /api/js/ejreportdesigner
 
 After you are done with the report design, save the report in local as RDL file format.
 
-![](images/Save-Report.png)
+![](Save-Report-Images/Save-Report.png)
 
 To save the report, click `Save` from the web designer toolbar.
 
@@ -22,8 +22,8 @@ To save the report, click `Save` from the web designer toolbar.
 
   * **To Device** - Click `To Device` to download the report.
 
-    ![](images/Save-Report-ToDevice.png)
+    ![](Save-Report-Images/Save-Report-ToDevice.png)
 
   * **To Server** - Click `To Server` to save the report in the server. By using this option, the edited report can be saved with the new name.
 
-    ![](images/Save-Report-Saveas.png)
+     ![](Save-Report-Images/Save-Report-Server.png)

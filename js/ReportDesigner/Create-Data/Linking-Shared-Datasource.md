@@ -18,23 +18,23 @@ This section explains, how to import a Shared Data Source from the server.
 
 Click the `Data` icon in the configuration panel to launch a `Data` configuration.
 
-![](images/DataStartIcon.png)
+![](Linking-Shared-DTSource-Images/Datasource-Start.png)
 
  To import shared data source, switch over to data source panel using the switcher icon on the top-right corner of the `Data` configuration panel.
 
-![](images/Switcher-Datasource.png)
+![](Linking-Shared-DTSource-Images/Switcher-Datasource.png)
 
 In the context menu, click `Datasources` to launch the `DataSources` configuration panel.
 
-![](images/Datasource-New-Panel.png)
+![](Linking-Shared-DTSource-Images/Datasource-New-Panel.png)
 
 In the `DataSources` configuration panel, click the `New DataSource` button. In the connection type panel, choose the `Shared` data source type.
 
- ![](images/Shared-Datasource-Connect.png)
+ ![](Linking-Shared-DTSource-Images/Shared-Datasource-Connect.png)
 
 After choosing  the `Shared Datasource`, the new connection wizard will be shown as below:
 
- ![](images/Shared-Datasource-CreateWizard.png)
+ ![](Linking-Shared-DTSource-Images/Shared-Datasource-CreateWizard.png)
 
  A shared data source panel consists of the following fields:
 
@@ -48,4 +48,4 @@ Finally, click `Save` button in the `New Connection` panel.
 
 Now, a new shared data source will be added in the report like below. You can import multiple shared data sources in the report.
 
-![](images/Select-SharedDS.png)
+![](Linking-Shared-DTSource-Images/Select-SharedDS.png)

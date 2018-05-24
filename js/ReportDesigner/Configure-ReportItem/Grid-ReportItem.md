@@ -14,7 +14,7 @@ The grid data region report item displays report data in cells that are organize
 
 # To add a grid to a report
 
-* Create a report and define a dataset. For more information refer [Create Dataset](/report-platform/ReportDesigner/Web/Create-Data/Create-New-Data).
+* Create a report and define a dataset. For more information refer [Create Dataset](/javascript-docs/js/ReportDesigner/Create-Data/Create-New-Data).
 
   ![](images/Dataset-List.png)
 
@@ -46,7 +46,7 @@ In the `Properties` pane, to add **Expression** or to open **Advanced** options,
 
 ![](images/Grid-Advanced-Option.png)
 
-> Note: RDL standard windows fonts are not supported in cross platforms. So, you need to load the unsupported [fonts](/report-platform/ReportDesigner/Web/how-to/Load-Unsupported-Fonts) in application level for cross platforms.
+> Note: RDL standard windows fonts are not supported in cross platforms. So, you need to load the unsupported [fonts](/javascript-docs/js/ReportDesigner/how-to/Load-Unsupported-Fonts) in application level for cross platforms.
 
 **Name**: Title for the grid report item can be set using this property.
 
@@ -223,7 +223,7 @@ To apply the above mentioned properties click the icon in the right corner and s
 
  ![](images/Grid-Header-Style.png)
 
-> Note: RDL standard windows fonts are not supported in cross platforms. So, you need to load the unsupported [fonts](/report-platform/ReportDesigner/Web/how-to/Load-Unsupported-Fonts) in application level for cross platforms.
+> Note: RDL standard windows fonts are not supported in cross platforms. So, you need to load the unsupported [fonts](/javascript-docs/js/ReportDesigner/how-to/Load-Unsupported-Fonts) in application level for cross platforms.
 
  ![](images/Cell-Style-GridFinal.png)
 
@@ -257,7 +257,7 @@ To apply the above mentioned properties click the icon in the right corner and s
 
        ![](images/Summary-Style-Grid.png)
 
-      > Note: RDL standard windows fonts are not supported in cross platforms. So, you need to load the unsupported [fonts](/report-platform/ReportDesigner/Web/how-to/Load-Unsupported-Fonts) in application level for cross platforms.
+      > Note: RDL standard windows fonts are not supported in cross platforms. So, you need to load the unsupported [fonts](/javascript-docs/js/ReportDesigner/how-to/Load-Unsupported-Fonts) in application level for cross platforms.
 
      * **Summary Column**: Enable the **Enable Summary Row** checkbox, will expand the menu with **Summary Column** option, where the summary of each cell can be edited by clicking the `fx` icon.
       
