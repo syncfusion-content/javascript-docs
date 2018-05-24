@@ -14,7 +14,7 @@ api: /api/js/ejtreemap
 
 ## refresh()
 
-[`refresh()`](../api/ejtreemap#methods:refresh) method is used to reload the treemap with updated values.
+The [`refresh()`](../api/ejtreemap#methods:refresh) method is used to reload the tree map with updated values.
 
 {% highlight js %}
 
@@ -25,7 +25,7 @@ api: /api/js/ejtreemap
 
 ## drillDown()
 
-[`drillDown()`](../api/ejtreemap#methods:drilldown) method is used to drill down the tree map level dynamically with specified data and level.
+The [`drillDown()`](../api/ejtreemap#methods:drilldown) method is used to drill-down the tree map level dynamically with specified data and level.
 
 {% highlight js %}
 
