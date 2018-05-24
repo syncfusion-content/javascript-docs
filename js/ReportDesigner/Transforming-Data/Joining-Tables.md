@@ -30,11 +30,11 @@ If the subsequent table being dropped, has any of its column as foreign key in a
 
 The fields of the specific table will be listed in the drop-down list below to that.
 
-![](images/Fields-List.png)
+![](Joiner-Images/Fields-List.png)
 
 You can add multiple join condition for single table relation by clicking `Add Field` button.
 
-![](images/Multiple-Relation.png)
+![](Joiner-Images/Multiple-Relation.png)
 
 **Join Types**
 
@@ -42,7 +42,7 @@ The join type, compares operator and relational operator to make relationship be
 
 **Types** of joins - Inner Join, Left Outer, Right Outer and Full Outer.
 
-![](images/Join-Type.png)
+![](Joiner-Images/Join-Type.png)
 
 **Inner Join**
 
@@ -176,15 +176,15 @@ The FULL OUTER JOIN keyword returns all the rows from the left table (table1), a
 
 To compare the values of the two columns (one from each table) between tables, any of the operator list shown in the below image can be used.
 
- ![](images/Operator-List.png)
+ ![](Joiner-Images/Operator-List.png)
 
- ![](images/Join-Tables.png)
+ ![](Joiner-Images/Join-Tables.png)
 
 ### Edit a join condition
 
 * Update an existing join condition by clicking the `Edit` icon in the respective field.
 
-    ![](images/Edit-Join.png)
+    ![](Joiner-Images/Edit-Join.png)
 
 * Clicking on the icon will enable the respective join fields.
 
@@ -194,4 +194,4 @@ To compare the values of the two columns (one from each table) between tables, a
 
 Remove a join condition by clicking the close icon at left of the respective join condition.
 
-![](images/delete-Join.png)
+![](Joiner-Images/delete-Join.png)
