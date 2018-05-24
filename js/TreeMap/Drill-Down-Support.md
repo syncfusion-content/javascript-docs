@@ -73,19 +73,19 @@ _Before Drill Down_
 
 ![](/js/TreeMap/Drill-Down-Support_images/Drill-Down-Support_img2.png)
 
-_After Drill Down_
+_After drill-down_
 
-Try it: [DrillDown](http://jsplayground.syncfusion.com/Sync_mrof3n0r)
+Try it: [Drill-Down](http://jsplayground.syncfusion.com/Sync_mrof3n0r)
 
-### Rendering Treemap with specific drilldown level
+### Rendering tree map with specific drill-down level
 
-Treemap can be rendered with any level instead of initial level based on the specified value to the below properties,
+The tree map can be rendered with any level instead of initial level based on the specified value to the following properties:
 
-[`drillDownValue`](../api/ejtreemap#members:drilldownvalue) – to get the value of the tree map item to render initially.  
+[`drillDownValue`](../api/ejtreemap#members:drilldownvalue) – Gets the value of the tree map item to render initially.  
 
-[`drillDownLevel`](../api/ejtreemap#members:drilldownlevel) – to get the level index.
+[`drillDownLevel`](../api/ejtreemap#members:drilldownlevel) – Gets the level index.
 
-Additionally, we have open technique to process the [`drilldown`](../api/ejtreemap#methods:drilldown) activity.
+Additionally, an open technique is available to process the [`drill-down`](../api/ejtreemap#methods:drilldown) activity.
 
 {% highlight js %}
 
