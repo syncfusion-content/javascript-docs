@@ -79,7 +79,7 @@ Try it: [DrillDown](http://jsplayground.syncfusion.com/Sync_mrof3n0r)
 
 ### Rendering Treemap with specific drilldown level
 
-Treemap can be rendered only with the first level. After rendering we can drill to other levels. But in some scenarios, it must to change the level of initial rendering. Based on the specified value to the API, initial level of rendering should be changed. You can use the properties,             
+Treemap can be rendered with the first level. From this level we can drilldown to the next level. By using this property drillDownValue and drillDownLevel. You can change the initial level of rendering based on the specified value to the property.
 
 [`drillDownValue`](../api/ejtreemap#members:drilldownvalue) – to get the value of the tree map item to render initially.  
 
