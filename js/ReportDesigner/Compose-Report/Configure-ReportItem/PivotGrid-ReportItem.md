@@ -126,6 +126,20 @@ To add the filter, specify one or more conditions; the conditions are filter equ
 
 > Note: For effective sorting experience, apply sorting to the column with string data.
 
+**Summary Settings**
+
+**Row and Column Group Settings**
+
+**Row Settings**
+
+**Column Settings**
+
+**Corner cell Settings**
+
+**No Row Message**
+
+**Apperance**
+
 **Position**: The position and size of the pivot grid can be changed using position and size property. The position and size can also be changed using `Resizer`.
 
 ![](images/Position-Pivot-Grid.png)
