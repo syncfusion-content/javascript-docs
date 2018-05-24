@@ -50,7 +50,7 @@ Web Designer supports the following chart types:
 
 # To add a chart to a report
 
-* Create a report and define a dataset. For more information refer [Create Dataset](/javascript-docs/js/ReportDesigner/create-Data/Create-New-Data).
+* Create a report and define a dataset. For more information refer [Create Dataset](/js/ReportDesigner/create-Data/Create-New-Data).
 
 > Note: **AdventureWorks** database is used for demonstration.
 
@@ -80,7 +80,7 @@ In the `Properties` pane , to add **Expression** or to open **Advanced** options
 
 ![](images/Expression.png)
 
-> Note: RDL standard windows fonts are not supported in cross platforms. So, you need to load the unsupported [fonts](/javascript-docs/js/ReportDesigner/how-to/Load-Unsupported-Fonts) in application level for cross platforms.
+> Note: RDL standard windows fonts are not supported in cross platforms. So, you need to load the unsupported [fonts](/js/ReportDesigner/how-to/Load-Unsupported-Fonts) in application level for cross platforms.
 
 **Basic settings**
 
@@ -100,7 +100,7 @@ In the `Properties` pane , to add **Expression** or to open **Advanced** options
 
 ![](images/Data-Label.png)
 
-> Note: RDL standard windows fonts are not supported in cross platforms. So, you need to load the unsupported [fonts](/javascript-docs/js/ReportDesigner/how-to/Load-Unsupported-Fonts) in application level for cross platforms.
+> Note: RDL standard windows fonts are not supported in cross platforms. So, you need to load the unsupported [fonts](/js/ReportDesigner/how-to/Load-Unsupported-Fonts) in application level for cross platforms.
 
 Using the above properties in the above image, you can design the data label for better presentation of data.
 
@@ -156,7 +156,7 @@ To enable the chart title, check the **Show Chart Title** checkbox.
 
 ![](images/Title-Properties.png)
 
-> Note: RDL standard windows fonts are not supported in cross platforms. So, you need to load the unsupported [fonts](/javascript-docs/js/ReportDesigner/how-to/Load-Unsupported-Fonts) in application level for cross platforms.
+> Note: RDL standard windows fonts are not supported in cross platforms. So, you need to load the unsupported [fonts](/js/ReportDesigner/how-to/Load-Unsupported-Fonts) in application level for cross platforms.
 
 The chart title can be positioned, using **Title Position** in the below positions.
 
@@ -286,31 +286,17 @@ You can add the `Dimension` to `Column` field by drag and drop.
 
 You can add `Measures` to `Column(s)` field.
 
-You can limit the data to be displayed by choosing the filters option.
+**Filters**: You can limit the data to be displayed by choosing the filters option.
 
 ![](images/Filters-Column.png)
 
-**Filters**: Filters are used to limit the data in the report after the data is retrieved from the data source. When you add the filter to a chart data, the report will retrieve data that matches the filter conditions.
+To filter data refer [Filters](/js/ReportDesigner/Compose-Report/Filter-Data).
 
-Click the `Filters...`, will launch `Filter Dialog` where you can filter the data need to be displayed.
-
-You can **Add** multiple filters by clicking the `ADD`.
-
-![](images/Filter-Dialog.png)
-
-Click `Ok`.
-
-You can clear the filter by clicking the close icon in the each row.
-
-![](images/Delete-Filter.png)
-
-**Sorting**: You can control the order in which data appears in a data region by representing sort expressions. You can sort the chart either in ascending or descending series.
+**Sorting**: You can control the order in which the data appears in a data region by representing sort expressions.
 
 ![](images/Sort-Menu.png)
 
-Click `Sorts...`, will launch `Sort Dialog` where you can sort the data.
-
-![](images/Sort-Dialog.png)
+To sort data refer [Sorting](/js/ReportDesigner/Compose-Report/Sort-Data).
 
 **Assigning row(s)**
 

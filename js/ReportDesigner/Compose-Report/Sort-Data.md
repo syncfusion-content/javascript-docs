@@ -1,23 +1,35 @@
 ---
 layout: post
-title: Line Report Item | ReportDesigner | JS | Syncfusion
-description: Draw a Line Item
+title: Sort Data | ReportDesigner | JS | Syncfusion
+description: Sort a Data
 platform: js
 control: ReportDesigner
 documentation: ug
 api: /api/js/ejreportdesigner
 ---
 
-# Line
-To insert the line element into report area to separate the report sections.
+# Sorting
 
-## To add Line
+**Sorts**: A sort expression controls the order in which data appears in a data region. Sort data in a dataset query, or define a sort expression for a data region or group. 
 
-Drag and drop the `Line` from the item panel. You can add Line item in header, footer, and body area.
+![](Sort-Data-Images/Sort-Dialog.png)
 
-![](Line-images/Line-Drag.png)
+1. For each sort expression, follow these steps:
 
-You can customize the line thickness, color and type through property panel.
-![](Line-images/Line-Properties.png)
+   * Click **Add**.
 
+     ![](Sort-Data-Images/Sort-Add.png)
 
+   * Type or select an expression by which the data will be sorted.
+
+   * From the drop-down list, choose the sort direction for each expression. 
+   
+        **Ascending** sorts an expression in A-Z order. 
+
+        **Descending** sorts an expression in Z-A order.
+
+     ![](Sort-Data-Images/Sort-Add-Field.png)
+
+2. Click OK.
+
+> Note: For effective sorting experience, apply sorting to the column with string data.

@@ -14,7 +14,7 @@ The grid data region report item displays report data in cells that are organize
 
 # To add a grid to a report
 
-* Create a report and define a dataset. For more information refer [Create Dataset](/javascript-docs/js/ReportDesigner/Create-Data/Create-New-Data).
+* Create a report and define a dataset. For more information refer [Create Dataset](/js/ReportDesigner/Create-Data/Create-New-Data).
 
   ![](images/Dataset-List.png)
 
@@ -46,7 +46,7 @@ In the `Properties` pane, to add **Expression** or to open **Advanced** options,
 
 ![](images/Grid-Advanced-Option.png)
 
-> Note: RDL standard windows fonts are not supported in cross platforms. So, you need to load the unsupported [fonts](/javascript-docs/js/ReportDesigner/how-to/Load-Unsupported-Fonts) in application level for cross platforms.
+> Note: RDL standard windows fonts are not supported in cross platforms. So, you need to load the unsupported [fonts](/js/ReportDesigner/how-to/Load-Unsupported-Fonts) in application level for cross platforms.
 
 **Name**: Title for the grid report item can be set using this property.
 
@@ -70,63 +70,19 @@ In the `Properties` pane, to add **Expression** or to open **Advanced** options,
 
        ![](images/Vertical-Grid-LineNone.png)
 
-**Filters**: Filters are used to limit the data in a report after the data is retrieved from a data source. When a filter is added to the grid data, the report will retrieve data that matches the filter conditions.
-
-To add the filter, specify one or more conditions; the conditions are filter equations. A filter equation has an expression that identifies the data has to be filtered, and also identifies the value has to be compared.
-
-### Add filters
-
- 1. Click `Set Filters...` in the filters property. It will launch the `Filter Dialog`, by default the list is empty.
+**Filters**: Click `Set Filters...` in the filters property. It will launch the `Filter Dialog`.
 
      ![](images/Filters-Button.png)
 
-2. Click **Add**. A new blank filter equation appears.
+To filter data refer [Filters](/js/ReportDesigner/Compose-Report/Filter-Data).
 
-    ![](images/Filters-Add.png)
+**Sorting**
 
-3. The first field in the filter is an **Expression** field, type or select an expression for the field to filter.
-
-   * To edit an expression, click on the icon next to the expression field and select `Expression`. 
-
-      ![](images/Expression-Icon.png)
-   
-      The expression can be set like below.
-
-      ![](images/Expression-Dialog.png)
-
-   * The icon will be indicated in `Black color`, if the expression is applied.
-
-      ![](images/Expression-Black.png)
-
-4. In the **Operator** box, select the operator by which the filter can compare the values in the **Expression** box and the **Value** box.
-
-5. In the **Value** box, type the expression or value against which you want the filter to evaluate the value in **Expression**.
-
-6. Click **OK**.
-
-### Sort data in a grid data region
-
-**Sorts**: A sort expression controls the order in which data appears in a data region.
-
-1. In the properties panel, click the **Set Sorts**.
+In the properties panel, click the **Set Sorts** button to launch sort dialog.
 
    ![](images/Sort-Button.png)
 
-2. For each sort expression, follow these steps:
-
-   * Click **Add**.
-
-     ![](images/Sort-Add.png)
-
-   * Type or select an expression by which the data will be sorted.
-
-   * From the drop-down list, choose the sort direction for each expression. **Ascending** sorts an expression in A-Z order. **Descending** sorts an expression in Z-A order.
-
-     ![](images/Sort-Add-Field.png)
-
-3. Click OK.
-
-> Note: For effective sorting experience, apply sorting to the column with string data.
+To sort data refer [Sorting](/js/ReportDesigner/Compose-Report/Sort-Data).
 
 **Column** and **Row** settings : 
 
@@ -223,7 +179,7 @@ To apply the above mentioned properties click the icon in the right corner and s
 
  ![](images/Grid-Header-Style.png)
 
-> Note: RDL standard windows fonts are not supported in cross platforms. So, you need to load the unsupported [fonts](/javascript-docs/js/ReportDesigner/how-to/Load-Unsupported-Fonts) in application level for cross platforms.
+> Note: RDL standard windows fonts are not supported in cross platforms. So, you need to load the unsupported [fonts](/js/ReportDesigner/how-to/Load-Unsupported-Fonts) in application level for cross platforms.
 
  ![](images/Cell-Style-GridFinal.png)
 
@@ -257,7 +213,7 @@ To apply the above mentioned properties click the icon in the right corner and s
 
        ![](images/Summary-Style-Grid.png)
 
-      > Note: RDL standard windows fonts are not supported in cross platforms. So, you need to load the unsupported [fonts](/javascript-docs/js/ReportDesigner/how-to/Load-Unsupported-Fonts) in application level for cross platforms.
+      > Note: RDL standard windows fonts are not supported in cross platforms. So, you need to load the unsupported [fonts](/js/ReportDesigner/how-to/Load-Unsupported-Fonts) in application level for cross platforms.
 
      * **Summary Column**: Enable the **Enable Summary Row** checkbox, will expand the menu with **Summary Column** option, where the summary of each cell can be edited by clicking the `fx` icon.
       
