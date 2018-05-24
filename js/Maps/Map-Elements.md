@@ -356,7 +356,7 @@ N> Here, Equal Color Mapping code sample for shapeSettings with color mappings i
 
 ### Toggle Legend
 
- You can toggle the shapes or bubbles by clicking on the corresponding legend item by using the property [`toggleVisibility`](../api/ejmap#members:layers-legendsettings-togglevisibility) in legendSettings. Its default value is **false**. 
+ You can toggle the visibility of shapes or bubbles by clicking on the corresponding legend item by using the property [`toggleVisibility`](../api/ejmap#members:layers-legendsettings-togglevisibility) in legendSettings. Its default value is **false**. 
 
 {% highlight javascript %}
 
