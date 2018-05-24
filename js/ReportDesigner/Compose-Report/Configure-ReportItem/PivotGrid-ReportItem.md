@@ -138,7 +138,7 @@ To add the filter, specify one or more conditions; the conditions are filter equ
 
 **No Row Message**
 
-**Apperance**
+**Appearance**
 
 **Position**: The position and size of the pivot grid can be changed using position and size property. The position and size can also be changed using `Resizer`.
 
