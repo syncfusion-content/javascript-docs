@@ -46,9 +46,9 @@ You can enter the query directly in the Query Editor or use the Query Designer t
 
    * To switch over to Query Editor, click the switcher icon in the designer toolbar.
 
-      ![Enter the query directly with Query Editor](images/Switcher-Editor.png)
+      ![Enter the query directly with Query Editor](Report-Creation-Images/Switcher-Editor.png)
 
-      ![](images/Editor-View.png)
+      ![](Report-Creation-Images/Editor-View.png)
 
 2. Build query using the Query Designer.
 
@@ -72,9 +72,9 @@ The data type of the each column is represented with visual icons as shown below
 
 Add more than one table by following the same drag and drop procedure as mentioned in above steps, if required.
 
-To rename columns refer [Rename Columns](/javascript-docs/js/ReportDesigner/transforming-data/rename-column).
+To rename columns refer [Rename Columns](/js/ReportDesigner/transforming-data/rename-column).
 
-You can filter specific data out of huge database by using [Data Filters](/javascript-docs/js/ReportDesigner/transforming-data/configure-data-filters).
+You can filter specific data out of huge database by using [Data Filters](/js/ReportDesigner/transforming-data/configure-data-filters).
 
 > Note: At present, you can experience full fledged query design for **SQL** datasource only.
 
@@ -139,7 +139,7 @@ Click the `Properties` icon in the configuration panel.
 
 Now, the report item properties panel displayed like below:
 
-![](images/Properties-Window.png)
+![](Report-Creation-Images/Properties-Window.png)
 
 Click the `Data Assign` tab in the properties panel. Now, the data assign tab switches like below:
 
@@ -163,23 +163,23 @@ Click the `Settings` icon (highlighted below) to open the aggregation type drop-
 
 You can set the aggregation type by which you can compute the selected column.
 
-![](images/Aggregation-Type.png)
+![](Report-Creation-Images/Aggregation-Type.png)
 
 Select and drag the dimension element from the `Dimensions` section to measure against any of the selected numeric column(s) in `Y Value(s)` section, and drop into the `Column(s)` section.  
 
-![](images/DragColumn-Section.png)
+![](Report-Creation-Images/DragColumn-Section.png)
 
 Now, the report item preview will look like below:
 
-![](images/Column-Chart2.png)
+![](Report-Creation-Images/Column-Chart2.png)
 
 To group the added column element with another column, add the respective dimension element into Row(s) section.
 
-![](images/Row-DragColumn.png)
+![](Report-Creation-Images/Row-DragColumn.png)
 
 Now, the report item design will look like below.
 
-![](images/Column-Chart3.png)
+![](Report-Creation-Images/Column-Chart3.png)
 
 To filter the data from getting bounded to report item, apply filters to the selected measure type or dimension type column(s).
 
@@ -189,7 +189,7 @@ To filter the data from getting bounded to report item, apply filters to the sel
 
 Navigate to the properties pane in the properties tab.
 
-![](images/PropertiesTab-Chart.png)
+![](Report-Creation-Images/PropertiesTab-Chart.png)
 
 This pane holds some general settings and some specific settings to the report item. 
 
@@ -197,18 +197,8 @@ You can add more report items by following the above procedure.
 
 ## Preview report
 
-Preview the changes made in the report item by clicking the `Preview` in the top-right corner of the Report Server menu.
-
-![](images/Preview-Button.png)
-
-Now, the report preview can be visualized through the built-in report viewer like below:
-
-![](images/Preview-Data.png)
-
-To launch design area, click the `Design` button  in the top-right corner of the Report Server menu.
-
-![](images/Close-Preview.png)
+To **Preview** report refer [Preview Report](/js/ReportDesigner/Working-with-Report/Preview-report).
 
 ### Save report
 
-To **Save** report refer [Save Report](open-save-report).
+To **Save** report refer [Save Report](/js/ReportDesigner/Working-with-Report/save-report).

@@ -60,7 +60,7 @@ The following steps describe the properties that can be set for each parameter:
 
     * Value: Appears only when **Specify Value** is selected. Type a value that will be retained for the parameter.
 
-    * Dataset: Appears only when **Query Value** is selected. Select this field to retrieve the list of parameters. Datasets can be defined using the data view. For more information, refer [Create Dataset](/javascript-docs/js/ReportDesigner/create-data/Create-New-Data).
+    * Dataset: Appears only when **Query Value** is selected. Select this field to retrieve the list of parameters. Datasets can be defined using the data view. For more information, refer [Create Dataset](/js/ReportDesigner/create-data/Create-New-Data).
 
     * Value field: Appears only when **Query Value** is selected. Select this field to obtain a list of available values, for example, `EmployeeID`. The available fields are retrieved from the list of column or field names in the dataset.
 
@@ -72,7 +72,7 @@ The following steps describe the properties that can be set for each parameter:
 
    **Query**: Select **Query Value** to retrieve the default value or set of default values from the data source. If you select **Query**, two fields appear in which you can define query information.
 
-   * Dataset: Appears only when **Query Value** is selected. Select the dataset to retrieve the default value or the set of default values for the parameter. Datasets can be defined using the data view. For more information, refer [Create Dataset](/javascript-docs/js/ReportDesigner/create-data/Create-New-Data).
+   * Dataset: Appears only when **Query Value** is selected. Select the dataset to retrieve the default value or the set of default values for the parameter. Datasets can be defined using the data view. For more information, refer [Create Dataset](/js/ReportDesigner/create-data/Create-New-Data).
 
    * Value field: Appears only when **Query Value** is selected. Select this field to obtain the default value or set of default values. The available fields are retrieved from the list of column or field names in the dataset.
 

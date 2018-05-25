@@ -37,7 +37,7 @@ An image report item contains a reference to an image that is embedded in the re
 
             * **Embedded Image** : Using this property, you can add an image from the embedded images list in the report.
 
-                To know how to embed an image, see [Embed Image](/javascript-docs/js/ReportDesigner/Image-Manager/Add-image)
+                To know how to embed an image, see [Embed Image](/js/ReportDesigner/Image-Manager/Add-image)
 
                 Now, an embedded images in the report will be listed in the value dropdown.
 
