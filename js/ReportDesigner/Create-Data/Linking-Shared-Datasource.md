@@ -42,8 +42,6 @@ After choosing  the `Shared Datasource`, the new connection wizard will be shown
  
  * **Shared DataSource**: You can select an existing shared data sources in the server from the drop-down list.
 
-    ![](images/Datasource-SaveWizard.png)
-
 Finally, click `Save` button in the `New Connection` panel.
 
 Now, a new shared data source will be added in the report like below. You can import multiple shared data sources in the report.
