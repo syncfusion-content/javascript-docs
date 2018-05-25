@@ -90,13 +90,13 @@ You can add effects to
 
   ![](Textbox-images/Format-Textbox.png)
   
-  1. Click the highlighted button in the above image to open `Format` dialog.
+Click the highlighted button in the above image to open `Format` dialog.
 
-      ![](Textbox-images/FormatDialog-Textbox.png)
+To demonstrate an example, here **Currency** format is applied to the text run.
 
- 2. You can also set custom format by entering the format in the text field.
+![](Textbox-images/Apply-Format.png)
 
-    ![](Textbox-images/Apply-Format.png)
+Refer [Format Data](/js/ReportDesigner/Compose-Report/Format-Data) section for more details on how to format data.
 
 **Alignment**
 
@@ -144,59 +144,17 @@ You can add effects to
 
   ![](Textbox-images/Appearance-Textbox.png)
 
-**Enable Link**: You can add link or file path in the text using this property. To enable **Action** fields, enable the **Enable Link** checkbox.
+**Enable Link**: You can add link or file path in the text using this property. 
 
-![](Textbox-images/Enable-Link.png)
+To define a hyperlink, or a drill through action to the textbox refer [Link Data](/js/ReportDesigner/Compose-Report/Link-Data).
 
-   * **Action** - Defines a hyperlink, a bookmark link, or a drill through action.
+  ![](Textbox-images/EnableLink-URL-Save.png)
 
-     The Action property must contain only one of the following elements: **Hyperlink**, **Drill through**, or **BookmarkLink**. 
+On report **Preview** action:
 
-     ### To add a drill through action
-  
-      1. Select **Report**.
+  ![](Textbox-images/Enable-Link-URLGrid.png)
 
-         ![](Textbox-images/Link-ReportFields.png)
-
-      2. Click `Browse` in the report fields and select a report from the list; type or select the name of the report.
-
-         ![](Textbox-images/Browse-Report-Dialog.png)
-
-          To specify parameters for the drill through report, follow the next step.
-
-      3.  Click `Set Parameters` in the report fields, it will launch the `Parameters` dialog.
-
-            ![](Textbox-images/EnableLink-Parameter-Dialog.png)
-
-            * Click **Add**. A new row is added to the parameter grid.
-
-              ![](Textbox-images/Enable-Link-Add-Row.png)
-
-            * In the **Name** text box, type the name of the report parameter in the drill through report. If the drill through report is in the server, the parameter names are available in the drop-down list.
-
-            * In **Value**, type or select the value to pass to the parameter in the drill through report.
-        
-            * Values can contain an expression that evaluates a value to pass to the report parameter. The expressions in the value list include the field list for the current report.
-
-      4. Click `OK`.
-
-      5. To test the link, run the report and click the report item that you set on this link.
-
-     ### Add a hyperlink to a URL
-
-      1. Select **URL**.
-
-         ![](Textbox-images/Enable-Link-URL.png)
-
-      2. In  **URL** field, type or select the URL or an expression that evaluates to the URL.
-
-         ![](Textbox-images/EnableLink-URL-Save.png)
-
-      3. To test the link, click **Preview** to preview the report, and then click the report item that you set on this link.
-
-           ![](Textbox-images/Enable-Link-URLGrid.png)
-
-      4. Click the `www.syncfusion.com` text will open the link in new tab of the browser.
+Click the `www.syncfusion.com` text will open the link in new tab of the browser.
 
 **Position**: You can change the textbox size and position under this category.  
 

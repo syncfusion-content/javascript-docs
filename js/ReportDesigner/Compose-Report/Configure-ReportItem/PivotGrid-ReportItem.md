@@ -100,74 +100,21 @@ To differentiate each fields from another the visual effects to the column can b
 
   ![](images/Grid-Format-Field.png)
   
-1. Click the highlighted button in the above image to open `Format` dialog.
+Click the highlighted button in the above image to open `Format` dialog.
 
-      ![](images/Format-Dialog.png)
-
-2. To set custom format, enter the format in the text field.
-
-     To demonstrate an example, here **Currency** format is applied to the `Unit Price` column.
-
-     ![](images/Format-UnitPrice.png)
+To demonstrate an example, here **Currency** format is applied to the `Unit Price` column.
 
      ![](images/Format-Save.png)
- 
+
+Refer [Format Data](/js/ReportDesigner/Compose-Report/Format-Data) section for more details on how to format data.
+
  **Enable Link**: To enable **Action** fields, enable the **Enable Link** checkbox.
 
    ![](images/Enable-Link-Fields.png)
 
-* **Action** - Defines a hyperlink, a bookmark link, or a drill through action.
-The action property must contain only one of the following elements: **Hyperlink**, **Drill through**, or **BookmarkLink**. 
+To define a hyperlink, or a drill through action to the pivot grid refer [Link Data](/js/ReportDesigner/Compose-Report/Link-Data).
 
-### To add a drill through action
-  
-   1. Select **Report**.
-
-       ![](images/Enable-Link-Reportpath.png)
-
-   2. Click the `Browse` in the report fields and select the report from the list.
-
-      ![](images/Browse-Report-Dialog.png)
-
-      To specify parameters for the drill through report, follow the next step.
-
-   3.  Click the `Set Parameters` in the report fields, it will launch the `Parameters` dialog.
-
-          ![](images/EnableLink-Parameter-Dialog.png)
-
-        * Click **Add**. A new row is added to the parameter grid.
-
-          ![](images/Enable-Link-Add-Row.png)
-
-          * In the **Name** text box, type the name of the report parameter in the drill through report. If the drill through report is in the server, the parameter names are available in the drop-down list.
-
-          * In **Value**, type or select the value to pass to the parameter in the drill through report.
-     
-          * Values contain an expression that evaluates to a value to pass to the report parameter. The expressions in the value list include the field list for the current report.
-
-            ![](images/Enable-Link-Expression.png)
-
-   4. Click `OK`.
-
-   5. To test the link, run the report and click the report item to which the link is assigned.
-
-      ![](images/Grid-Change-EnableLink.png)
-
-### Add a hyperlink to a URL
-
-Hyperlink can be added to the report item, so that users can able to click the link in the report and open a browser to the URL that you specify.
-
- 1. Select **URL**.
-
-    ![](images/Enable-Link-URL.png)
-
-2. In  **URL** field, type or select a URL or an expression that evaluates to the URL.
-
-    ![](images/Enable-Link-URLGrid.png)
-
-3. To test the link, click **Preview** to preview the report, and then click the report item that you set on this link.
-
-    ![](images/URL-Sample.png)
+![](images/URL-Sample.png)
 
 **Header Style**: Using the header style property, the font style, font size,font color, text decoration, text alignment, and padding of the each column header can be changed.
 
