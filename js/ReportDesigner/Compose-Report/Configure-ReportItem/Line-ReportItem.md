@@ -18,6 +18,7 @@ Drag and drop the `Line` from the item panel. You can add Line item in header, f
 ![](Line-images/Line-Drag.png)
 
 You can customize the line thickness, color and type through property panel.
+
 ![](Line-images/Line-Properties.png)
 
 

@@ -12,51 +12,52 @@ api: /api/js/ejreportdesigner
 
 To enable **Action** fields, enable the **Enable Link** checkbox.
 
-   ![](images/Enable-Link-Fields.png)
+   ![](Link-Data-Images/Enable-Link.png)
 
 * **Action** - Defines a hyperlink, a bookmark link, or a drill through action. The action property must contain only one of the following elements: **Hyperlink**, or **Drill through**. 
 
-## Drill Through:
+## Drill Through
 
 A drill through report is a report that a user opens by clicking a link within another report. Drill through reports commonly contain details about an item that is contained in an original summary report.You can add drill through links to text boxes, images, charts any other report item that has an **Action** property.
 
-### Drill through action
+### Link Report
   
    1. Select **Report**.
 
-       ![](images/Enable-Link-Reportpath.png)
+       ![](Link-Data-Images/Link-ReportFields.png)
 
    2. Click the `Browse` in the report fields and select the report from the list.
 
-      ![](images/Browse-Report-Dialog.png)
+      ![](Link-Data-Images/Browse-Report-Dialog.png)
 
-### Parameters in drill through reports
+### Link Parameters
 
 A drill through report contains parameters that are passed to it by the summary report. To specify parameters for the drill through report, follow the below steps.
 
    1.  Click the `Set Parameters` in the report fields, it will launch the `Parameters` dialog.
 
-        ![](images/EnableLink-Parameter-Dialog.png)
+        ![](Link-Data-Images/EnableLink-Parameter-Dialog.png)
 
    2. To add parameter click **Add**.
 
-        ![](images/Enable-Link-Add-Row.png)
-
+        ![](Link-Data-Images/Enable-Link-Add-Row.png)
    3. **Parameter Name** : In the **Name** text box, type the name of the report parameter in the drill through report. If the drill through report is in the server, the parameter names are available in the drop-down list.
 
    4. **Value** : In **Value**, type or select the value to pass to the parameter in the drill through report.
      
         * Values contain an expression that evaluates to a value to pass to the report parameter. The expressions in the value list include the field list for the current report. Click on the icon next to the expression field and select `Expression`. 
 
-            ![](Filter-Data-Images/Expression-Icon.png)
-   
-        * The expression can be set like below.
+            ![](Link-Data-Images/Expression-Icon.png)
 
-            ![](Filter-Data-Images/Expression-Dialog.png)
+        * To set expression click on the icon in the right side of the value field.
+
+            ![](Link-Data-Images/Expression-Menu.png)
+
+            ![](Link-Data-Images/Expression-Dialog.png)
 
         * The icon will be indicated in `Black color`, if the expression is applied.
 
-            ![](Filter-Data-Images/Expression-Black.png)
+            ![](Link-Data-Images/Expression-Black.png)
 
    3. Click `OK` to save the parameters.
 
@@ -64,17 +65,17 @@ A drill through report contains parameters that are passed to it by the summary 
 
 * Click `Close` icon to remove the parameters from the list.
 
-    ![](images/Delete-Parameter.png)
+    ![](Link-Data-Images/Delete-Parameter.png)
 
 #### Reorder item
 
  To change the order of an item in the list, click and hold the icon in the left corner of **Name** field, and then drag the item to higher or lower position in the list.
 
-![](Create-Parameter-Images/Parameter-Specify-Drag.png)
+![](Link-Data-Images/Parameter-Specify-Drag.png)
 
 The position of dragged item is shown as below:
 
-![](Create-Parameter-Images/Default-Specify-Add.png)
+![](Link-Data-Images/Default-Specify-Add.png)
 
 ## Hyperlink
 
@@ -86,13 +87,10 @@ Hyperlink can be added to the report item, so that users can able to click the l
 
  1. Select **URL**.
 
-    ![](images/Enable-Link-URL.png)
+    ![](Link-Data-Images/Enable-Link-URL.png)
 
-2. In  **URL** field, type or select a URL or an expression that evaluates to the URL.
+2. In **URL** field, type or select a URL or an expression that evaluates to the URL.
 
-    ![](images/Enable-Link-URLGrid.png)
+    ![](Link-Data-Images/EnableLink-URL-Save.png)
 
 3. To test the link, click **Preview** to preview the report, and then click the report item that you set on this link.
-
-    ![](images/URL-Sample.png)
-
