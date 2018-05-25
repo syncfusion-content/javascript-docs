@@ -114,8 +114,6 @@ Refer [Format Data](/js/ReportDesigner/Compose-Report/Format-Data) section for m
 
  **Enable Link**: To enable **Action** fields, enable the **Enable Link** checkbox.
 
-   ![](images/Enable-Link-Fields.png)
-
 To define a hyperlink, or a drill through action to the grid refer [Link Data](/js/ReportDesigner/Compose-Report/Link-Data).
 
 ![](images/URL-Sample.png)
