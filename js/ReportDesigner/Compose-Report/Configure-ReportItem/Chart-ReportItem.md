@@ -244,7 +244,7 @@ Drag and drop the doughnut chart report item into the design area.
 
 ![](chart-images/Doughnut-Chart.png)
 
-In the chart `Properties` pane, click the `Data Assign`.
+In the chart `Properties` pane, click the `Data`.
 
 The data pane will be opened with available measures and dimensions in the connected data source.
 

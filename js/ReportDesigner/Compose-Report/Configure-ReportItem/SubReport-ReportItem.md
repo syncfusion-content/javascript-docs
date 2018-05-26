@@ -30,6 +30,10 @@ To use this report as a subreport refer [Link Report](/js/ReportDesigner/Compose
 
 To specify parameters to pass to a subreport refer [Link Parameter](/js/ReportDesigner/Compose-Report/Link-Data#DrillThrough:Link-Parameters).
 
+You can configure to display the custom message when no datasets in the subreport have data at run time.
+
+![](SubReport-images/No-Rows-Message.png)
+
 You can keep the entire report content of subreport in same page without split when enable the keep together property in property panel.
 
 ![](SubReport-images/SubReport-Keeptogether.png)
