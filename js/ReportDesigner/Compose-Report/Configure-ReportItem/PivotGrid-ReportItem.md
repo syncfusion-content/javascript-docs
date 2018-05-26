@@ -130,7 +130,7 @@ To sort data refer [Sorting](/js/ReportDesigner/Compose-Report/Sort-Data).
 
        ![](PivotGrid-Images/SummaryRows.png)
 
-**Row Group Settings**: Choose the row group from the **Choose Row Group** droplist.
+**Row Group Settings**: Choose the row group from the **Choose Row Group** drop-down list.
 
 ![](PivotGrid-Images/Row-Group-Settings.png)
 
@@ -152,7 +152,7 @@ To sort data refer [Sorting](/js/ReportDesigner/Compose-Report/Sort-Data).
 
   ![](PivotGrid-Images/Cell-Style-Grid.png)
 
-**Row Settings** :  Choose the row number from the dropdown list to customize the specific row appearance.
+**Row Settings** :  Choose the row number from the drop-down list to customize the specific row appearance.
 
 ![](PivotGrid-Images/Row-Settings.png)
 
@@ -162,7 +162,7 @@ To sort data refer [Sorting](/js/ReportDesigner/Compose-Report/Sort-Data).
 
     ![](PivotGrid-Images/Row-Settings-Height.png)
 
-**Column Settings**: Choose the column number from the dropdown list to customize the specific column appearance.
+**Column Settings**: Choose the column number from the drop-down list to customize the specific column appearance.
 
 ![](PivotGrid-Images/Column-Settings.png)
 
