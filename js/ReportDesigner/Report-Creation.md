@@ -141,7 +141,7 @@ Now, the report item properties panel displayed like below:
 
 ![](Report-Creation-Images/Properties-Window.png)
 
-Click the `Data Assign` tab in the properties panel. Now, the data assign tab switches like below:
+Click the `Data` tab in the properties panel. Now, the data assign tab switches like below:
 
 ![](Report-Creation-Images/DataAssign-Window.png)
 

@@ -34,10 +34,8 @@ A shared dataset panel consists of the following fields:
  
   * **Shared DataSet**: You can select existing shared datasets in the server from the drop-down list.
     
-    ![](images/Shared-Dataset-CreateWizard.png)
-
 Click `Save` in the `New Dataset` configuration panel.
 
 Now, a new shared dataset will be added in the report like below. You can import multiple shared dataset in the report.
 
-   ![](images/Shared-Dataset-List.png)
+   ![](Linking-Shared-Data-Images/Shared-Dataset-List.png)

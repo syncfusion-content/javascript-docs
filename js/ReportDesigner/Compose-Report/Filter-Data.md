@@ -10,11 +10,11 @@ api: /api/js/ejreportdesigner
 
 # Filters
 
-**Filters**: Filters are used to limit the data in a report after the data is retrieved from a data source. When a filter is added to the grid data, the report will retrieve data that matches the filter conditions.
-
-To add the filter, specify one or more conditions; the conditions are filter equations. A filter equation has an expression that identifies the data has to be filtered, and also identifies the value has to be compared.
+Filters are used to limit the data in a report after the data is retrieved from a data source. When a filter is added to the grid data, the report will retrieve data that matches the filter conditions.
 
 ![](Filter-Data-Images/Filters-Dialog.png)
+
+To add the filter, specify one or more conditions; the conditions are filter equations. A filter equation has an expression that identifies the data has to be filtered, and also identifies the value has to be compared.
 
 ## Add filters
 
