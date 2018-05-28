@@ -172,7 +172,7 @@ To sort data refer [Sorting](/js/ReportDesigner/Compose-Report/Sort-Data).
 
 ![](PivotGrid-Images/Width-Pixel-Grid.png)
 
-**Corener Cell Settings**: 
+**Corner Cell Settings**: 
 Can be customize the corner cell style, border and caption through this property.
 
 ![](PivotGrid-Images/Corner-Cell-Grid.png) 
