@@ -146,7 +146,7 @@ Using [`search`](https://help.syncfusion.com/api/js/ejgrid#methods:search “sea
                     <div class="col-md-3">
                         <input type="text" id="searchString" class="e-ejinputtext" />
                         <input type="button" id="search" value="Searching" />
-                        <input type="button" id="clear" value="clearing" />
+                        <input type="button" id="clear" value="Clear Searching" />
                     </div>
                 </div>
             </div>
@@ -176,8 +176,8 @@ Using [`search`](https://help.syncfusion.com/api/js/ejgrid#methods:search “sea
             { field: "ShipCountry" }
             ]
         });
-        $("#search").ejButton({ click: "onSearching", size: "small" });
-        $("#clear").ejButton({ click: "onClearing", size: "small" });
+        $("#search").ejButton({ click: "onSearching" });
+        $("#clear").ejButton({ click: "onClearing" });
     });
     function onSearching(args) {
         var obj = $("#Grid").ejGrid("instance");
@@ -295,7 +295,7 @@ The following code example explains the above behavior.
                             {EmployeeID:4,FirstName:"Janet",City:"Seattle",Country:"USA"}];
                             
             var Child = [{OrderID:10248,CustomerName :"Nancy",CustomerID:"VINET",ShipCity:"Graz",ShipName:"Ernst Handel"},
-                            {OrderID:10249,CustomerName :"Tahoma",CustomerID:"ANATR",ShipCity:"Oulu",ShipName:"Wartier Herkku"},
+                            {OrderID:10249,CustomerName :"Tahoma",CustomerID:"ANATR",ShipCity:"Oulu",ShipName:"Wartier"},
                             {OrderID:10251,CustomerName :"Seattle",CustomerID:"HANAR",ShipCity:"Bergamo",ShipName:"QUICK-Stop"}];            
                             
             $("#Grid").ejGrid({
@@ -511,8 +511,8 @@ The following code example explains the above behavior.
     var group = true;
     function Filter(args) {
         var gridObj = $("#Grid").data("ejGrid");
-        var one = $('#filterone').data("ejDropDownList");
-        var two = $('#filtertwo').data("ejDropDownList");
+        var one = $('#filterOne').data("ejDropDownList");
+        var two = $('#filterTwo').data("ejDropDownList");
         var One = one.getValue();
         var Two = two.getValue();
         gridObj.filterColumn([{field:"OrderID",operator:"equal",value:One,predicate:"and", matchcase:true},{field:"EmployeeID",operator:"equal",value:Two,predicate:"and", matchcase:true}]);
