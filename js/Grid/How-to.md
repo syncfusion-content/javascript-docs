@@ -281,7 +281,7 @@ The following output is displayed as a result of the above code example.
 
 ## Hierarchy Grid with different foreignKeyField in parent and child table
 
-The `queryString` property is used to filter the childGrid data based on value in parent Grid data. But when the field name provided in `queryString` does not exists in Child Grid, then `foreignKeyField` property is used to filter the childGrid data. If the foreign key column name differs for parent and child grid then use `foreingnKeyField` property of Grid.
+The `queryString` property is used to filter the childGrid data based on value in parent Grid data. But when the field name provided in `queryString` does not exists in Child Grid, then `foreignKeyField` property is used to filter the childGrid data. If the foreign key column name differs for parent and child grid then use `foreignKeyField` property of Grid.
 
 The following code example explains the above behavior.
 
@@ -289,17 +289,17 @@ The following code example explains the above behavior.
 <div id="Grid"></div>
     <script type="text/javascript">
         $(function () {
-            var dataparent =[{EmployeeID:1,FirstName:"Nancy",City:"Seattle",Country:"USA"},
-                            {EmployeeID:2,FirstName:"Andrew",City:"Takoma",Country:"USA"},
-                            {EmployeeID:3,FirstName:"Margret",City:"Krickland",Country:"USA"},
+            var Parent =[{EmployeeID:1,FirstName:"Nancy",City:"Seattle",Country:"USA"},
+                            {EmployeeID:2,FirstName:"Andrew",City:"Tahoma",Country:"USA"},
+                            {EmployeeID:3,FirstName:"Margret",City:"Seattle",Country:"USA"},
                             {EmployeeID:4,FirstName:"Janet",City:"Seattle",Country:"USA"}];
                             
-            var datachild = [{OrderID:10248,CustomerName :"Nancy",CustomerID:"VINET",ShipCity:"Graz",ShipName:"Ernst Handel"},
-                            {OrderID:10249,CustomerName :"Takoma",CustomerID:"ANATR",ShipCity:"Oulu",ShipName:"Wartian Herkku"},
-                            {OrderID:10251,CustomerName :"Krickland",CustomerID:"HANAR",ShipCity:"Bergamo",ShipName:"QUICK-Stop"}];            
+            var Child = [{OrderID:10248,CustomerName :"Nancy",CustomerID:"VINET",ShipCity:"Graz",ShipName:"Ernst Handel"},
+                            {OrderID:10249,CustomerName :"Tahoma",CustomerID:"ANATR",ShipCity:"Oulu",ShipName:"Wartier Herkku"},
+                            {OrderID:10251,CustomerName :"Seattle",CustomerID:"HANAR",ShipCity:"Bergamo",ShipName:"QUICK-Stop"}];            
                             
             $("#Grid").ejGrid({
-                dataSource: dataparent,
+                dataSource: Parent,
                 allowSorting: true,
                 columns: [
                          { field: "EmployeeID", headerText: 'Employee ID', textAlign: ej.TextAlign.Right, width: 75 },
@@ -308,7 +308,7 @@ The following code example explains the above behavior.
                          { field: "Country", headerText: 'Country', textAlign: ej.TextAlign.Left, width: 100 }
                 ],
                 childGrid: {
-                    dataSource: datachild,
+                    dataSource: child,
                     queryString: "FirstName",
                     foreignKeyField:"CustomerName",
                     allowPaging: true,
@@ -417,8 +417,8 @@ The following code example explains the above behavior.
 {% highlight html %}
 <table>
     <tr>
-        <td><b>CRUD</b><br><button id="Addrecord">Addrecord</button><br><button id="Updaterecord">Updaterecord</button><br><button id="DeleteRecord">DeleteRecord</button></td>
-        <td><b>Filtering</b><br><br><input type="text" id="filterone" /><input type="text" id="filtertwo" /><button id="filteri">Filter</button> <button id="ClearFilter">Clear Filter</button></td>
+        <td><b>CRUD</b><br><button id="AddRecord">Add record</button><br><button id="UpdateRecord">Update record</button><br><button id="DeleteRecord">DeleteRecord</button></td>
+        <td><b>Filtering</b><br><br><input type="text" id="filterOne" /><input type="text" id="filterTwo" /><button id="filter">Filter</button> <button id="ClearFilter">Clear Filter</button></td>
         <div id="Order"><ul><li>10248</li><li>10249</li><li>10250</li><li>10251</li><li>10252</li></ul></div>
         <div id="Employee"><ul><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li></ul></div>
         <td><b>Grouping</b><br><br>
@@ -433,7 +433,7 @@ The following code example explains the above behavior.
             <button id="unGroupColumn">UnGroupColumn</button>
         </td>
         <td><b>Sorting</b><br><br>
-            <select id="sortcolumnName" class="e-ddl" style="width: 100px" data-bind="value: field">
+            <select id="sortColumnName" class="e-ddl" style="width: 100px" data-bind="value: field">
                 <option value="OrderID" selected="selected">Order ID</option>
                 <option value="CustomerID">Customer ID</option>
                 <option value="EmployeeID">Employee ID</option>
@@ -480,22 +480,22 @@ The following code example explains the above behavior.
                    { field: "Freight", headerText: "Freight", width: 70},
                    { field: "OrderDate", headerText: "Order Date", width: 70}]
     });
-    $('#filterone').ejDropDownList({ targetID: "Order", watermarkText:"Select Filter value one", width: "230"});
-    $('#filtertwo').ejDropDownList({ targetID: "Employee", watermarkText:"Select Filter value two", width: "230"});
-    $("#columnName").ejDropDownList({ width: "115", selectedItemIndex: 0, change: "Groupfn" });
-    $("#groupColumn").ejButton({ size: "medium", click: "clicktoGroup", width: "100px" });
-    $("#filteri").ejButton({ size: "medium", click: "Filterfn", width: "100px" });
-    $("#unGroupColumn").ejButton({ size: "medium", click: "clicktoGroup", width: "115px" });
-    $("#Addrecord").ejButton({ size: "medium", click: "addRecord", width: "100px" });
+    $('#filterOne').ejDropDownList({ targetID: "Order", watermarkText:"Select Filter value one", width: "230"});
+    $('#filterTwo').ejDropDownList({ targetID: "Employee", watermarkText:"Select Filter value two", width: "230"});
+    $("#columnName").ejDropDownList({ width: "115", selectedItemIndex: 0, change: "Grouping" });
+    $("#groupColumn").ejButton({ size: "medium", click: "clickGroup", width: "100px" });
+    $("#filter").ejButton({ size: "medium", click: "Filter", width: "100px" });
+    $("#unGroupColumn").ejButton({ size: "medium", click: "clickGroup", width: "115px" });
+    $("#AddRecord").ejButton({ size: "medium", click: "addRecord", width: "100px" });
     $("#DeleteRecord").ejButton({ size: "medium", click: "deleteRecord", width: "100px" });
-    $("#Updaterecord").ejButton({ size: "medium", click: "updateRecord", width: "100px" });
-    $("#ClearFilter").ejButton({ size: "medium", click: "clearfilterfn", width: "100px" });
+    $("#UpdateRecord").ejButton({ size: "medium", click: "updateRecord", width: "100px" });
+    $("#ClearFilter").ejButton({ size: "medium", click: "clearFilter", width: "100px" });
     $("#unGroupColumn").ejButton("disable");
-    $("#sortcolumnName").ejDropDownList({ width: "120" });
+    $("#sortColumnName").ejDropDownList({ width: "120" });
     $("#directions").ejDropDownList({ width: "120" });
-    $("#sortcolumnName").ejDropDownList("option",{"selectedItemIndex":1});
+    $("#sortColumnName").ejDropDownList("option",{"selectedItemIndex":1});
     $("#directions").ejDropDownList("option", { "selectedItemIndex": 0 });
-    $("#doSorting,#clearSort").ejButton({ "click": "Sortfn", width: "100" });
+    $("#doSorting,#clearSort").ejButton({ "click": "Sort", width: "100" });
     function addRecord(){
         var gridObj = $('#Grid').data("ejGrid");
         gridObj.addRecord({ "OrderID": 12333 });
@@ -509,7 +509,7 @@ The following code example explains the above behavior.
         gridObj.updateRecord("OrderID", { OrderID: 10249, EmployeeID: 3 }); 
     }
     var group = true;
-    function Filterfn(args) {
+    function Filter(args) {
         var gridObj = $("#Grid").data("ejGrid");
         var one = $('#filterone').data("ejDropDownList");
         var two = $('#filtertwo').data("ejDropDownList");
@@ -517,13 +517,13 @@ The following code example explains the above behavior.
         var Two = two.getValue();
         gridObj.filterColumn([{field:"OrderID",operator:"equal",value:One,predicate:"and", matchcase:true},{field:"EmployeeID",operator:"equal",value:Two,predicate:"and", matchcase:true}]);
     }
-    function clearfilterfn(args) {
+    function clearFilter(args) {
         var gridObj = $("#Grid").data("ejGrid");
         gridObj.clearFiltering();
     }
-    function Sortfn(args) {
+    function Sort(args) {
         var gridObj = $("#Grid").data("ejGrid");
-        var columnName = $("#sortcolumnName").data("ejDropDownList")._selectedValue;
+        var columnName = $("#sortColumnName").data("ejDropDownList")._selectedValue;
         var sortDirection = $("#directions").data("ejDropDownList")._selectedValue;
         if (this.element.attr("id") == "doSorting") {
             gridObj.sortColumn(columnName, sortDirection);
@@ -532,7 +532,7 @@ The following code example explains the above behavior.
             gridObj.clearSorting();
         }
     }
-    function Groupfn() {
+    function Grouping() {
         var gridObj = $("#Grid").data("ejGrid");
         var columnName = $("#columnName").ejDropDownList("getSelectedValue");
         if ($.inArray(columnName, gridObj.model.groupSettings.groupedColumns) != -1) {
@@ -544,7 +544,7 @@ The following code example explains the above behavior.
             $("#unGroupColumn").ejButton("disable");
         }
     }
-    function clicktoGroup(args) {
+    function clickGroup(args) {
         var gridObj = $("#Grid").data("ejGrid");
         var columnName = $("#columnName").ejDropDownList("getSelectedValue");
         if (this.element.attr("id") == "groupColumn") {
