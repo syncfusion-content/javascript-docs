@@ -134,7 +134,7 @@ Grid actions can be persisted throughout by enabling the enablePersistence prope
    
 ## External Search in Grid
 
-Using [`search`](https://help.syncfusion.com/api/js/ejgrid#methods:search “search”) method of Grid, you can search the string in Grid externally without using in-built toolbar search support. While using [`search`](https://help.syncfusion.com/api/js/ejgrid#methods:search “search”) method it is necessary to set [`allowSearching`](https://help.syncfusion.com/api/js/ejgrid#members:allowsearching “allowSearching”) property as `true`. The following code example explains the above behavior.
+Using [`search`](https://help.syncfusion.com/api/js/ejgrid#methods:search “search”) method of Grid, you can search the string in Grid externally without using in-built toolbar search support. While using [`search`](https://help.syncfusion.com/api/js/ejgrid#methods:search “search”) method it is necessary to set [`allowSearching`](https://help.syncfusion.com/api/js/ejgrid#members:allowsearching “allowSearching”) property as `true`. To clear the searching by external action use  [`clearSearching`](https://help.syncfusion.com/api/js/ejgrid#methods:clearsearching “clearSearching”) method. The following code example explains the above behavior.
 
 {% tabs %}
 {% highlight html %}
@@ -146,6 +146,7 @@ Using [`search`](https://help.syncfusion.com/api/js/ejgrid#methods:search “sea
                     <div class="col-md-3">
                         <input type="text" id="searchString" class="e-ejinputtext" />
                         <input type="button" id="search" value="Searching" />
+                        <input type="button" id="clear" value="clearing" />
                     </div>
                 </div>
             </div>
@@ -176,11 +177,17 @@ Using [`search`](https://help.syncfusion.com/api/js/ejgrid#methods:search “sea
             ]
         });
         $("#search").ejButton({ click: "onSearching", size: "small" });
+        $("#clear").ejButton({ click: "onClearing", size: "small" });
     });
     function onSearching(args) {
         var obj = $("#Grid").ejGrid("instance");
         var val = $("#searchString").val();
         obj.search(val);
+    }
+    function onClearing(args){
+        var obj = $("#Grid").ejGrid("instance");
+        $("#searchString").val("");
+        obj.clearSearching();
     }
 </script>
 
