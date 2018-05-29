@@ -167,7 +167,7 @@ Summaries with the `True` and `False` count aggregate can be defined by using th
 
 ![](Summary_images/summaryGrid_img3.png)
 
-# Column header customization by external action
+# Column footer customization by external action
 
 We can customize the columns footer element by external action using the following methods,
 
