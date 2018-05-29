@@ -705,7 +705,6 @@ You can use JsRender syntax in the template. For more information about JsRender
 For template manipulation using JavaScript, either you can use JSRender [helper](https://www.jsviews.com/#helpers) function or [`templateRefresh`](https://help.syncfusion.com/api/js/ejgrid#events:templaterefresh "templateRefresh") grid event. For more information on [`templateRefresh`](https://help.syncfusion.com/api/js/ejgrid#events:templaterefresh "templateRefresh") event, refer [this link](https://help.syncfusion.com/js/grid/how-to#display-other-syncfusion-controls-in-grid-columns "this link").
 
 N> If [`field`](https://help.syncfusion.com/api/js/ejgrid#members:columns-field "field") is not specified, you will not able to perform editing, grouping, filtering, sorting, search and summary functionalities in particular column.
-N> To render the syncfusion controls like ejRating etc., as one of the Grid column use [`templateRefresh`](https://help.syncfusion.com/api/js/ejgrid#events:templaterefresh "templateRefresh") event, refer the KB [link](https://www.syncfusion.com/kb/6798/how-to-display-syncfusion-controls-in-grid-columns "link"). 
 
 The following code example describes the above behavior.
 
