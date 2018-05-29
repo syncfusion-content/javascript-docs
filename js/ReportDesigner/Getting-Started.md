@@ -199,7 +199,7 @@ namespace ReportDesignerSample
         {
             reportOption.ReportModel.ReportingServer = this.Server;
             reportOption.ReportModel.ReportServerUrl = this.ServerURL;
-            reportOption.ReportModel.ReportServerCredential = new NetworkCredential("Sample", "Passwprd");
+            reportOption.ReportModel.ReportServerCredential = new NetworkCredential("Sample", "Password");
         }
 
         public void OnReportLoaded(Syncfusion.EJ.ReportViewer.ReportViewerOptions reportOption)
@@ -455,7 +455,7 @@ namespace EJServices.Controllers
         {
             reportOption.ReportModel.ReportingServer = this.Server;
             reportOption.ReportModel.ReportServerUrl = this.ServerURL;
-            reportOption.ReportModel.ReportServerCredential = new NetworkCredential("Sample", "Passwprd");
+            reportOption.ReportModel.ReportServerCredential = new NetworkCredential("Sample", "Password");
         }
 
         public void OnReportLoaded(ReportViewerOptions reportOption)

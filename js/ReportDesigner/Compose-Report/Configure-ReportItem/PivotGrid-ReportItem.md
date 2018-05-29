@@ -202,18 +202,6 @@ To apply the above mentioned properties click the icon in the right corner and s
 
 ![](PivotGrid-Images/Position-Grid.png)
 
-**Page Break**
-
-To control the amount of information on each page enable the **Enable Page Break** check box. 
-
-![](PivotGrid-Images/Page-Break.png)
-
-![](PivotGrid-Images/Page-Break-Properties.png)
-
-* **Break Location**: Using this property specify where to add page break in the data region.
-
-  ![](PivotGrid-Images/Break-Location.png)
-
 **Miscellaneous** 
 
 ![](PivotGrid-Images/Miscellaneous.png)
