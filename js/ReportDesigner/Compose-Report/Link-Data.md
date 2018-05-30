@@ -18,7 +18,7 @@ To enable **Action** fields, enable the **Enable Link** checkbox.
 
 ## Drill Through
 
-A drill through report is a report that a user opens by clicking a link within another report. Drill through reports commonly contain details about an item that is contained in an original summary report.You can add drill through links to text boxes, images, charts any other report item that has an **Action** property.
+A drill through report is a report that a user opens by clicking a link within another report. Drill through reports commonly contain details about an item that is contained in an original summary report.You can add drill through links to text boxes, images, charts or any other report item that has an **Action** property.
 
 ### Link Report
   
@@ -26,7 +26,7 @@ A drill through report is a report that a user opens by clicking a link within a
 
        ![](Link-Data-Images/Link-ReportFields.png)
 
-   2. Click the `Browse` in the report fields and select the report from the list.
+   2. Click the `Browse` button in the report fields and select the report from the list.
 
       ![](Link-Data-Images/Browse-Report-Dialog.png)
 
@@ -45,7 +45,7 @@ A drill through report contains parameters that are passed to it by the summary 
 
    4. **Value** : In **Value**, type or select the value to pass to the parameter in the drill through report.
      
-        * Values contain an expression that evaluates to a value to pass to the report parameter. The expressions in the value list include the field list for the current report. Click on the icon next to the expression field and select `Expression`. 
+        * Values contain an expression that evaluates to a value to pass to the report parameter. The expressions in the value list include the field list for the current report.
 
             ![](Link-Data-Images/Expression-Icon.png)
 

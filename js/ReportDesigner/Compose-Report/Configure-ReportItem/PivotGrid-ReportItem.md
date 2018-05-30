@@ -173,9 +173,12 @@ To sort data refer [Sorting](/js/ReportDesigner/Compose-Report/Sort-Data).
 ![](PivotGrid-Images/Width-Pixel-Grid.png)
 
 **Corner Cell Settings**: 
+
 Can be customize the corner cell style, border and caption through this property.
 
-![](PivotGrid-Images/Corner-Cell-Grid.png) 
+![](PivotGrid-Images/Corner-Cell-Settings.png) 
+
+![](PivotGrid-Images/Corner-Cell-Preview.png)
 
 **Appearance**
 
@@ -198,18 +201,6 @@ To apply the above mentioned properties click the icon in the right corner and s
  The position and size of the pivot grid can be changed using position and size property. The position and size can also be changed using `Resizer`.
 
 ![](PivotGrid-Images/Position-Grid.png)
-
-**Page Break**
-
-To control the amount of information on each page enable the **Enable Page Break** check box. 
-
-![](PivotGrid-Images/Page-Break.png)
-
-![](PivotGrid-Images/Page-Break-Properties.png)
-
-* **Break Location**: Using this property specify where to add page break in the data region.
-
-  ![](PivotGrid-Images/Break-Location.png)
 
 **Miscellaneous** 
 

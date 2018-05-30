@@ -14,6 +14,8 @@ This section explains briefly about how to create a ReportDesigner in your web 
 
 ## Project Creation
 
+The following screenshots displays the Project Creation Wizard in Visual Studio 2012.
+
 Create a new ASP.NET Empty Web application project by selecting the **WEB** category from the listed project template in Microsoft Visual Studio IDE.     
 
 ![](Images/JS-Sample-Img1.png) 
@@ -68,7 +70,7 @@ Add the References, scripts, styles that are required for the Report Designer.
 
 ### Add Scripts and Styles
 
-Add the script files and theme files in the &lt;title&gt; tag of the default.html page.
+Add the script files and theme files in the &lt;title&gt; tag of the Default.html page.
   
 {% highlight html %}
 
@@ -135,126 +137,157 @@ using System.Collections;
 using System.Web;
 using Syncfusion.EJ.ReportDesigner;
 using System.IO;
+using Reporting.ExternalServer;
 
 namespace ReportDesignerSample
 {
-    public class ReportingAPIController : ApiController, Syncfusion.EJ.ReportDesigner.IReportDesignerController
+    public class ReportDesignerController : ApiController, Syncfusion.EJ.ReportDesigner.IReportDesignerController
     {
+        string CachePath = "App_Data\\ReportServer\\Cache\\";
 
-    public ReportingAPIController()
-    {
-    }
-
-    [HttpPost]
-    public void UploadReportAction()
-    {
-        ReportDesignerHelper.ProcessDesigner(null, this, HttpContext.Current.Request.Files[0]);
-    }
-
-    [HttpGet]
-    public object GetImage(string key, string image)
-    {
-        return ReportDesignerHelper.GetImage(key, image, this);
-    }
-
-    [HttpPost]
-    public object PostDesignerAction(Dictionary<string, object> jsonResult)
-    {
-        return ReportDesignerHelper.ProcessDesigner(jsonResult, this, null);
-    }
-
-    public object PostReportAction(Dictionary<string, object> jsonResult)
-    {
-        return ReportHelper.ProcessReport(jsonResult, this as IReportController);
-    }
-
-    public void OnInitReportOptions(Syncfusion.EJ.ReportViewer.ReportViewerOptions reportOption)
-    {
-    }
-
-    public void OnReportLoaded(Syncfusion.EJ.ReportViewer.ReportViewerOptions reportOption)
-    {
-
-    }
-
-    public object GetResource(string key, string resourcetype, bool isPrint)
-    {
-        return ReportHelper.GetResource(key, resourcetype, isPrint);
-    }
-
-    public bool UploadFile(HttpPostedFile httpPostedFile)
-    {
-        string targetFolder = HttpContext.Current.Server.MapPath("~/");
-        string fileName = !string.IsNullOrEmpty(ReportDesignerHelper.SaveFileName) ? ReportDesignerHelper.SaveFileName : Path.GetFileName(httpPostedFile.FileName);
-        targetFolder += "Cache";
-
-        if (!Directory.Exists(targetFolder))
+        internal ExternalServer Server
         {
-            Directory.CreateDirectory(targetFolder);
+            get;
+            set;
         }
 
-        if (!Directory.Exists(targetFolder + "\\" + ReportDesignerHelper.EJReportDesignerToken))
+        internal string ServerURL
         {
-            Directory.CreateDirectory(targetFolder + "\\" + ReportDesignerHelper.EJReportDesignerToken);
+            get;
+            set;
         }
 
-        httpPostedFile.SaveAs(targetFolder + "\\" + ReportDesignerHelper.EJReportDesignerToken + "\\" + fileName);
-        return true;
-    }
-
-    public List<Syncfusion.EJ.ReportDesigner.FileModel> GetFiles(Syncfusion.EJ.ReportDesigner.FileType fileType)
-    {
-        List<FileModel> databases = new List<FileModel>();
-        var folderPath = HttpContext.Current.Server.MapPath("~/") + "Cache\\" + ReportDesignerHelper.EJReportDesignerToken + "\\";
-        if (Directory.Exists(folderPath))
+        internal string AuthorizationHeaderValue
         {
-            DirectoryInfo directoryInfo = new DirectoryInfo(folderPath);
-            FileInfo[] Files = directoryInfo.GetFiles(this.GetFileExtension(fileType));
-            foreach (FileInfo file in Files)
+            get;
+            set;
+        }
+
+        public ReportDesignerController()
+        {
+            ExternalServer externalServer = new ExternalServer();
+            this.Server = externalServer;
+            this.ServerURL = "Sample";
+            externalServer.ReportServerUrl = this.ServerURL;
+            ReportDesignerHelper.ReportingServer = externalServer;
+        }
+
+        [HttpPost]
+        public void UploadReportAction()
+        {
+            ReportDesignerHelper.ProcessDesigner(null, this, HttpContext.Current.Request.Files[0]);
+        }
+
+        [HttpGet]
+        public object GetImage(string key, string image)
+        {
+            return ReportDesignerHelper.GetImage(key, image, this);
+        }
+
+        [HttpPost]
+        public object PostDesignerAction(Dictionary<string, object> jsonResult)
+        {
+            return ReportDesignerHelper.ProcessDesigner(jsonResult, this, null);
+        }
+
+        public object PostReportAction(Dictionary<string, object> jsonResult)
+        {
+            return ReportHelper.ProcessReport(jsonResult, this as IReportController);
+        }
+
+        public void OnInitReportOptions(Syncfusion.EJ.ReportViewer.ReportViewerOptions reportOption)
+        {
+            reportOption.ReportModel.ReportingServer = this.Server;
+            reportOption.ReportModel.ReportServerUrl = this.ServerURL;
+            reportOption.ReportModel.ReportServerCredential = new NetworkCredential("Sample", "Password");
+        }
+
+        public void OnReportLoaded(Syncfusion.EJ.ReportViewer.ReportViewerOptions reportOption)
+        {
+        }
+
+        public object GetResource(string key, string resourcetype, bool isPrint)
+        {
+            return ReportHelper.GetResource(key, resourcetype, isPrint);
+        }
+
+        public bool UploadFile(HttpPostedFile httpPostedFile)
+        {
+            string targetFolder = HttpContext.Current.Server.MapPath("~/");
+            string fileName = !string.IsNullOrEmpty(ReportDesignerHelper.SaveFileName) ? ReportDesignerHelper.SaveFileName : Path.GetFileName(httpPostedFile.FileName);
+            targetFolder += CachePath;
+
+            if (!Directory.Exists(targetFolder))
             {
-                databases.Add(new FileModel() { Name = file.Name, Path = "../" + "Cache/" + ReportDesignerHelper.EJReportDesignerToken + "/" + file.Name });
+                Directory.CreateDirectory(targetFolder);
             }
-        }
-        return databases;
-    }
 
-    private string GetFileExtension(Syncfusion.EJ.ReportDesigner.FileType fileType)
-    {
-        if (fileType == FileType.Sdf)
+            if (!Directory.Exists(targetFolder + "\\" + ReportDesignerHelper.EJReportDesignerToken))
+            {
+                Directory.CreateDirectory(targetFolder + "\\" + ReportDesignerHelper.EJReportDesignerToken);
+            }
+
+            httpPostedFile.SaveAs(targetFolder + "\\" + ReportDesignerHelper.EJReportDesignerToken + "\\" + fileName);
+            return true;
+        }
+
+        public List<Syncfusion.EJ.ReportDesigner.FileModel> GetFiles(Syncfusion.EJ.ReportDesigner.FileType fileType)
         {
-            return "*.sdf";
+            List<FileModel> databases = new List<FileModel>();
+            var folderPath = HttpContext.Current.Server.MapPath("~/") + CachePath + ReportDesignerHelper.EJReportDesignerToken + "\\";
+
+            if (Directory.Exists(folderPath))
+            {
+                DirectoryInfo directoryInfo = new DirectoryInfo(folderPath);
+                FileInfo[] Files = directoryInfo.GetFiles(this.GetFileExtension(fileType));
+
+                foreach (FileInfo file in Files)
+                {
+                    databases.Add(new FileModel() { Name = file.Name, Path = "../" + CachePath + ReportDesignerHelper.EJReportDesignerToken + "/" + file.Name });
+                }
+            }
+
+            return databases;
         }
-        else if (fileType == FileType.Xml)
+
+        private string GetFileExtension(Syncfusion.EJ.ReportDesigner.FileType fileType)
         {
-            return "*.xml";
+            if (fileType == FileType.Sdf)
+            {
+                return "*.sdf";
+            }
+            else if (fileType == FileType.Xml)
+            {
+                return "*.xml";
+            }
+
+            return "*.rdl";
         }
-        return "*.rdl";
-    }
 
-    public string GetFilePath(string fileName)
-    {
-        string targetFolder = HttpContext.Current.Server.MapPath("~/");
-        targetFolder += "Cache";
-
-        if (!Directory.Exists(targetFolder))
+        public string GetFilePath(string fileName)
         {
-            Directory.CreateDirectory(targetFolder);
+            string targetFolder = HttpContext.Current.Server.MapPath("~/");
+            targetFolder += CachePath;
+
+            if (!Directory.Exists(targetFolder))
+            {
+                Directory.CreateDirectory(targetFolder);
+            }
+
+            if (!Directory.Exists(targetFolder + "\\" + ReportDesignerHelper.EJReportDesignerToken))
+            {
+                Directory.CreateDirectory(targetFolder + "\\" + ReportDesignerHelper.EJReportDesignerToken);
+            }
+
+            var folderPath = HttpContext.Current.Server.MapPath("~/") + CachePath + ReportDesignerHelper.EJReportDesignerToken + "\\";
+            return folderPath + fileName;
         }
 
-        if (!Directory.Exists(targetFolder + "\\" + ReportDesignerHelper.EJReportDesignerToken))
+
+        public FileModel GetFile(string filename, bool isOverride)
         {
-            Directory.CreateDirectory(targetFolder + "\\" + ReportDesignerHelper.EJReportDesignerToken);
+            throw new NotImplementedException();
         }
-
-        var folderPath = HttpContext.Current.Server.MapPath("~/") + "Cache\\" + ReportDesignerHelper.EJReportDesignerToken + "\\";
-        return folderPath + fileName;
-    }
-
-
-    public FileModel GetFile(string filename, bool isOverride)
-    {
-        throw new NotImplementedException();
-    }
     }
 }
 
@@ -420,7 +453,9 @@ namespace EJServices.Controllers
 
         public void OnInitReportOptions(ReportViewerOptions reportOption)
         {
-            throw new NotImplementedException();
+            reportOption.ReportModel.ReportingServer = this.Server;
+            reportOption.ReportModel.ReportServerUrl = this.ServerURL;
+            reportOption.ReportModel.ReportServerCredential = new NetworkCredential("Sample", "Password");
         }
 
         public void OnReportLoaded(ReportViewerOptions reportOption)
