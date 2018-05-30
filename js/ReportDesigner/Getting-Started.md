@@ -143,7 +143,7 @@ namespace ReportDesignerSample
 {
     public class ReportDesignerController : ApiController, Syncfusion.EJ.ReportDesigner.IReportDesignerController
     {
-        const string CachePath = "App_Data\\ReportServer\\Cache\\";
+        string CachePath = "App_Data\\ReportServer\\Cache\\";
 
         internal ExternalServer Server
         {
