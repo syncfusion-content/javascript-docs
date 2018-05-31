@@ -175,7 +175,7 @@ We can customize the columns footer element by external action using the followi
 2. [`getFooterContent`](https://help.syncfusion.com/api/js/ejgrid#methods:getfootercontent "getFooterContent") 
 3. [`getSummaryValues`](https://help.syncfusion.com/api/js/ejgrid#methods:getsummaryvalues "getSummaryValues") 
 
-Here we have Changed the grid footer content color and font-family to "green" and "fantasy" respectively by using the [`getFooterContent`](https://help.syncfusion.com/api/js/ejgrid#methods:getfootercontent "getFooterContent") and [`getFooterTable`](https://help.syncfusion.com/api/js/ejgrid#methods:getfootertable "getFooterTable") method and also we have displayed the summary value summary value in the alert message by using [`getSummaryValues`](https://help.syncfusion.com/api/js/ejgrid#methods:getsummaryvalues "getSummaryValues") method.
+Here we have Changed the grid footer content, color and font-family to "green" and "fantasy" respectively by using the [`getFooterContent`](https://help.syncfusion.com/api/js/ejgrid#methods:getfootercontent "getFooterContent") and [`getFooterTable`](https://help.syncfusion.com/api/js/ejgrid#methods:getfootertable "getFooterTable") method and also we have displayed the summary value summary value in the alert message by using [`getSummaryValues`](https://help.syncfusion.com/api/js/ejgrid#methods:getsummaryvalues "getSummaryValues") method.
 
 The following code example describes the above behavior.
 
