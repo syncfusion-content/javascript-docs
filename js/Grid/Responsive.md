@@ -245,7 +245,7 @@ N> We can render the Grid to be height responsive by setting the scrollSettings 
 
 ## Priority for Columns
 
-Priority makes column to be visible or hidden based on the `priority` value and browser's width, to accommodate the best possible columns. To enable `priority` for `columns`, `priority` needs to be defined in columns collection. These Priority values are from one to six.
+Priority makes column to be visible or hidden based on the [`priority`](https://help.syncfusion.com/api/js/ejgrid#members:columns-priority "priority") value and browser's width, to accommodate the best possible columns. To enable [`priority `](https://help.syncfusion.com/api/js/ejgrid#members:columns-priority "priority ") for `columns`, [`priority `](https://help.syncfusion.com/api/js/ejgrid#members:columns-priority "priority ") needs to be defined in columns collection. These Priority values are from one to six.
 
 {% highlight html %}
 <div id="Grid"></div>
