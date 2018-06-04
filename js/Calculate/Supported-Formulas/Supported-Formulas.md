@@ -130,6 +130,8 @@ The following are the list of formulas supported in Calculate library,
 
 [COUNTIF](/js/calculate/supported-formulas/statistical#countif)
 
+[COUNTIFS](/js/calculate/supported-formulas/statistical#countifs)
+
 [CSC](/js/calculate/supported-formulas/math-trigonometry#csc)
 
 [CSCH](/js/calculate/supported-formulas/math-trigonometry#csch)
