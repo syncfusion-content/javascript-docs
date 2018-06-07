@@ -289,8 +289,20 @@ The [`serviceMethodSettings`](/api/js/ejpivotchart#members:servicemethodsettings
 |[exportPivotChart](/api/js/ejpivotchart#members:servicemethodsettings-exportpivotchart)|It exports the pivot chart control at the instant to the specified format.|
 
 
+## Custom Format Strings
 
+The following table describes the result on applying certain custom format over numeric values.
 
+| Value | Custom Format String | Result |
+|---|---|---|
+| 10000000 | #,# | 10,000,000 |
+| 10000000 | #,#.00 | 10,000,000.00 |
+| 10000000 | #0.0 | 10000000.0 |
+| 10000000 | $#,#;0; | $10,000,000 |
+| 10000000 | #,##0.00;-#,##0.00 | 10,000,000.00 |
+| 10000000 | #,##0;-#,##0 | 10,000,000 |
+| 10000000 | $#,##0.00;($#,##0.00) | $10,000,000.00 |
+| 10000000 | #,##0;(#,##0) | 10,000,000 |
 
 
 
