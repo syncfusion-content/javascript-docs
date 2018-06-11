@@ -115,7 +115,7 @@ You can set number format for a cell through number formatting options in ribbon
 
 ### Custom Number Format
 
-Spreadsheet supports many number format to display your data as currency, date, percentage and so on. If these pre-defined number formats do not meet your needs you can create and apply your own number formats using format cell dialog. The following screenshot illustrate this,
+Spreadsheet supports many number format to display your data as currency, date, percentage and so on. If these pre-defined number formats do not meet your needs you can create and apply your own number formats using format cell dialog and [`addCustomFormatSpecifier`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlformat-addcustomformatspecifier "addCustomFormatSpecifier") method. The following screenshot illustrate this,
 ![](Formatting_images/Formatting_img3.png)
 
 N> Spreadsheet supports basic number format customization and it doesn't have all functionality similar to excel   
