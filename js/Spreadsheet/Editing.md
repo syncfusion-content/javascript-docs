@@ -155,7 +155,7 @@ public ActionResult BatchUpdate( List<ItemDetail> changed,  List<ItemDetail> add
 
 {% endhighlight %}
 
-N> 1. To save and retrieve the Spreadsheet data in the database, you can refer this [`Knowledge Base`](https://www.syncfusion.com/kb/7567/how-to-save-and-retrieve-the-spreadsheet-data-in-database "Knowledge Base") link.
+N> To save and retrieve the Spreadsheet data in the database, you can refer this [`Knowledge Base`](https://www.syncfusion.com/kb/7567/how-to-save-and-retrieve-the-spreadsheet-data-in-database "Knowledge Base") link.
 
 You can update data dynamically in the Spreadsheet by using the following methods.
 
