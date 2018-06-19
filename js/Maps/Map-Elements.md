@@ -354,9 +354,43 @@ N> Here, Equal Color Mapping code sample for shapeSettings with color mappings i
 
 ![](/js/Maps/Map-Elements_images/Map-Elements_img4.png)
 
-### Interactive Legend
+### Toggle legend
 
-The legends can be made interactive with an arrow mark indicating the exact range color in the legend when the mouse hovers over the corresponding shapes. You can enable this option by setting [`mode`](..) property in [`legendSettings`](../api/ejmap#members:layers-legendsettings) value as “interactive” and default value of [`mode`](../api/ejmap#members:layers-legendsettings-mode) property is “default” to enable the normal legend.
+You can toggle the visibility of shapes and bubbles by clicking the corresponding legend item using the [`toggleVisibility`](../api/ejmap#members:layers-legendsettings-togglevisibility) property in legendSettings. The default value of this property is **false**. 
+
+{% highlight javascript %}
+
+
+        jQuery(function ($) {
+        $("#mapContainer").ejMap({
+            layers: [
+            {
+                // ...
+                legendSettings:{
+                    showLegend: true,
+                    position: "bottomleft",                    
+                    type: 'bubbles',
+                    toggleVisibility: true,                         
+                },
+                // ...                        
+            }]
+        });
+    });
+      
+
+{% endhighlight %}
+
+![](/js/Maps/Map-Elements_images/Map-Elements_img9.png)
+
+_Before toggle the visibility of bubble and legend items_.
+
+![](/js/Maps/Map-Elements_images/Map-Elements_img10.png)
+
+_After toggle the visibility of the legend item Brazil_.
+
+### Interactive legend
+
+The legends can be made interactive with an arrow mark that indicates the exact range color in the legend when the mouse hovers over the corresponding shape. You can enable this option by setting the [`mode`](..) property in [`legendSettings`](../api/ejmap#members:layers-legendsettings) to  “interactive”. The default value of the [`mode`](../api/ejmap#members:layers-legendsettings-mode) property is “default” to enable the normal legend.
 
 #### Title for Interactive Legend
 
