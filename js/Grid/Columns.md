@@ -1237,10 +1237,11 @@ To control the grid column actions externally use the following methods,
 1. [`getColumnByIndex`](https://help.syncfusion.com/api/js/ejgrid#methods:getcolumnbyindex "getColumnByIndex")
 2. [`getColumnFieldNames`](https://help.syncfusion.com/api/js/ejgrid#methods:getcolumnfieldnames "getColumnFieldNames")
 3. [`getColumnByHeaderText`](https://help.syncfusion.com/api/js/ejgrid#methods:getcolumnbyheadertext "getcolumnbyheadertext")
-3. [`getColumnIndexByField`](https://help.syncfusion.com/api/js/ejgrid#methods:getcolumnindexbyfield "getColumnIndexByField")
-4. [`getColumnIndexByHeaderText`](https://help.syncfusion.com/api/js/ejgrid#methods:getcolumnindexbyheadertext "getColumnIndexByHeaderText")
-5. [`getFieldNameByHeaderText`](https://help.syncfusion.com/api/js/ejgrid#methods:getfieldnamebyheadertext "getFieldNameByHeaderText")
-6. [`getHeaderTextByFieldName`](https://help.syncfusion.com/api/js/ejgrid#methods:getheadertextbyfieldname "getHeaderTextByFieldName") 
+4. [`getColumnIndexByField`](https://help.syncfusion.com/api/js/ejgrid#methods:getcolumnindexbyfield "getColumnIndexByField")
+5. [`getColumnIndexByHeaderText`](https://help.syncfusion.com/api/js/ejgrid#methods:getcolumnindexbyheadertext "getColumnIndexByHeaderText")
+6. [`getFieldNameByHeaderText`](https://help.syncfusion.com/api/js/ejgrid#methods:getfieldnamebyheadertext "getFieldNameByHeaderText")
+7. [`getHeaderTextByFieldName`](https://help.syncfusion.com/api/js/ejgrid#methods:getheadertextbyfieldname "getHeaderTextByFieldName") 
+8. [`getColumnByField`](https://help.syncfusion.com/api/js/ejgrid#methods:getcolumnbyfield "getColumnByField") 
 
 Here, we changed the Freight column CSS by using the corresponding method.
 
