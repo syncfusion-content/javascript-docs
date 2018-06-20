@@ -86,31 +86,6 @@ Method to perform map zooming, you can use [`zoom`](../api/ejmap#methods:zoom) m
 
 {% endhighlight %}
 
-### addMarkers(layerIndex, sublayerIndex)
-
-You can add markers to map dynamically based on layer and sublayer index values using the [`addMarkers`](../api/ejmap#methods:addmarkers) method.
-
-{% highlight js %}
- 
-//add marker method for map
-   $("#container").ejMap("addMarkers", layerIndex, sublayerIndex);
-
-{% endhighlight %}
-
-
-
-### refreshLayer(layerIndex, sublayerIndex, markers)
-
-You can reload the shape marker with updated values using the [`refreshLayer`](../api/ejmap#methods:refreshlayer) method.
-
-
-{% highlight js %}
- 
-//refresh layers method for map
-   $("#container").ejMap("refreshLayer", layerIndex, sublayerIndex, markers);
-
-{% endhighlight %}
-
 
 
 ## Events
@@ -358,78 +333,6 @@ $("#container").ejMap({
 
 {% endhighlight %}
 
-
-### Legend item click
-
-The [`legendItemClick`](../api/ejmap#events:legenditemclick) event is triggered when the legend item is clicked.
-
-
-{% highlight js %}
- 
-//legend item click event for map
-
-$("#container").ejMap({
-    legendItemClick: function (args) {
-              //Do something
-    }
-   
-});
-
-{% endhighlight %}
-
-### markerEnter
-
-The [`markerEnter`](../api/ejmap#events:markerenter) event is triggered when the mouse enters into the marker shape.
-
-
-{% highlight js %}
- 
-//marker enter event for map
-
-$("#container").ejMap({
-    markerEnter: function (args) {
-              //Do something
-    }
-   
-});
-
-{% endhighlight %}
-
-### markerLeave
-
-The [`markerLeave`](../api/ejmap#events:markerleave) event is triggered the when mouse leaves from the marker shape.
-
-
-{% highlight js %}
- 
-//marker leave event for map
-
-$("#container").ejMap({
-    markerLeave: function (args) {
-              //Do something
-    }
-   
-});
-
-{% endhighlight %}
-
-### refreshed
-
-The [`refreshed`](../api/ejmap#events:refreshed) event is triggered after refreshing the map items.
-
-
-{% highlight js %}
- 
-//refreshed event for map
-
-$("#container").ejMap({
-    refreshed: function (args) {
-              //Do something
-    }
-   
-});
-
-{% endhighlight %}
 
 
 <a class="" href="http://www.syncfusion.com/copyright" target="_blank">Copyright &copy; 2001 - 2015 Syncfusion Inc. All Rights Reserved</a>

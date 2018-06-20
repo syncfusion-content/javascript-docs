@@ -624,3 +624,68 @@ $("#TreeGrid").ejTreeGrid({
 });
 
 {% endhighlight %}
+
+## Summary Row
+
+Summary rows in TreeGrid is used to summarize every hierarchy with the set of predefined summary types using the column values. Using the [`summaryRows`](https://help.syncfusion.com/api/js/ejtreegrid#members:summaryrows "summaryRows") property, user can define the summary rows in TreeGrid.
+Title for each summary row can be defined using the [`summaryRows.title`](https://help.syncfusion.com/api/js/ejtreegrid#members:summaryrows-title "summaryRows.title") property. And using the [`summaryRows.summaryColumns`](https://help.syncfusion.com/api/js/ejtreegrid#members:summaryrows-summarycolumns "summaryRows.summaryColumns") property, it is possible to defined the summary for specific columns alone in a summary row.
+Enable the [`showSummaryRow`](https://help.syncfusion.com/api/js/ejtreegrid#members:showsummaryrow "showSummaryRow") property to make the summary row visible. Total summary row is the overall summary row displayed for all the rows in the TreeGrid content, and its visibility can be denied using the [`showTotalSummary`](https://help.syncfusion.com/api/js/ejtreegrid#members:showtotalsummary "showTotalSummary") property.
+
+### Defining summary columns
+
+Using the [`summaryType`](https://help.syncfusion.com/api/js/ejtreegrid#members:summaryrows-summarycolumns-summarytype "summaryRows.summaryColumn.summaryType") property, user can define the type of summary to be displayed in a column. The [`dataMember`](https://help.syncfusion.com/api/js/ejtreegrid#members:summaryrows-summarycolumns-datamember "summaryRows.summaryColumns.dataMember") property is used the map the field values which is used for summary calculations. The [`displayColumn`](https://help.syncfusion.com/api/js/ejtreegrid#members:summaryrows-summarycolumns-displaycolumn "summaryRows.summaryColumns.displayColumn") property is used to specify the column in which the summary to be displayed.
+The [`prefix`](https://help.syncfusion.com/api/js/ejtreegrid#members:summaryrows-summarycolumns-prefix "summaryRows.summaryColumns.prefix") and [`suffix`](https://help.syncfusion.com/api/js/ejtreegrid#members:summaryrows-summarycolumns-suffix "summaryRows.summaryColumns.suffix") properties are used to define the text should be displayed along with the summary column value. The [`format`](https://help.syncfusion.com/api/js/ejtreegrid#members:summaryrows-summarycolumns-format "summaryRows.summaryColumns.format") property is used for formatting the summary column value.
+The below code snippet explains defining a summary row in TreeGrid,
+
+{% highlight js %}
+
+
+        $("#treegrid").ejTreeGrid({
+            showSummaryRow: true,
+            showTotalSummary: true,
+            summaryRows: [
+                       {
+                           title: "Maximum",
+                           summaryColumns: [
+                               {
+                                   summaryType: ej.TreeGrid.SummaryType.Maximum,
+                                   dataMember: "TotalUnits",
+                                   displayColumn: "TotalUnits",
+                                   prefix: "Individual maximum unit = "
+                               },
+                               {
+                                   summaryType: ej.TreeGrid.SummaryType.Maximum,
+                                   dataMember: "TotalCosts",
+                                   displayColumn: "TotalCosts",
+                                   prefix: "Individual maximum Cost = ",
+                                   format: "{0:C}"
+                               }
+                           ]
+                       },
+                       {
+                           title: "Total",
+                           summaryColumns: [
+                               {
+                                   summaryType: ej.TreeGrid.SummaryType.Sum,
+                                   dataMember: "TotalCosts",
+                                   displayColumn: "TotalCosts",
+                                   prefix: "Total costs = ",
+                                   format: "{0:C}"
+                               },
+                               {
+                                   summaryType: ej.TreeGrid.SummaryType.Sum,
+                                   dataMember: "UnitWeight",
+                                   displayColumn: "UnitWeight",
+                                   prefix: "Total weight = ",
+                                   suffix: " Pounds"
+                               }]
+                       }
+            ],
+            //...
+        });
+
+{% endhighlight %}
+
+The below screenshot shows the output of above code example..
+
+![](/js/TreeGrid/Rows_images/Rows_img11.png)
