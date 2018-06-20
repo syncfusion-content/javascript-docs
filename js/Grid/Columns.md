@@ -1112,6 +1112,51 @@ The following output is displayed as a result of the above code example.
 ![](columns_images/columns_img23.png)
 
 
+## Grid content customization
+
+We can customize the Grid Content element by external action using the following methods,
+
+1. [`getContent`](https://help.syncfusion.com/api/js/ejgrid#methods:getcontent "getContent")
+2. [`getContentTable`](https://help.syncfusion.com/api/js/ejgrid#methods:getcontenttable "getContentTable") 
+
+The following code example describes the above behavior.
+
+{% highlight html %}
+<input id="change">
+<div id="Grid"></div>
+{% endhighlight %}
+
+{% highlight javascript %}
+$("#change").ejButton({
+    text: "Update Grid Content",
+    click: function(args){
+        var obj = $("#Grid").ejGrid("instance");
+        obj.getContent().css("color","green");
+        obj.getContentTable().css("font-family","fantasy");
+    },
+});
+$(function () {
+    $("#Grid").ejGrid({
+        dataSource: window.gridData,
+        allowPaging:true,
+        pageSettings:{pageSize:8},
+        columns: [
+            { field: "OrderID", isPrimaryKey: true, headerText: "Order ID",  width: 90 },
+            { field: "CustomerID", headerText: 'Customer ID', width: 90 },
+            { field: "Freight", headerText: 'Freight', format: "{0:C}", width: 90 },
+            { field: "ShipCountry", headerText: "Ship Country", width: 90 },
+            { field: "ShipCity", headerText: 'Ship City', width: 120 }
+        ]
+    });
+});
+{% endhighlight %}
+
+The following output is displayed as a result of the above code example.
+
+![](columns_images/columns_img40.png)
+
+
+
 ## Type
 
 Used to define the type of the particular column data. If the [`type`](https://help.syncfusion.com/api/js/ejgrid#members:columns-type "type") property of [`columns`](https://help.syncfusion.com/api/js/ejgrid#members:columns "columns") is not specified then its type is automatically defined based on the first row data of that column.
