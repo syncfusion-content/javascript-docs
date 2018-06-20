@@ -100,6 +100,8 @@ $(function () {
 
 It represents the title for particular column. To enable header text, set [`headerText`](https://help.syncfusion.com/api/js/ejgrid#members:columns-headertext "headerText") property of [`columns`](https://help.syncfusion.com/api/js/ejgrid#members:columns "columns"). The following code example describes the above behavior.
 
+Use [`enableHeaderHover`](https://help.syncfusion.com/api/js/ejgrid#members:enableheaderhover "enableHeaderHover"), to enable mouse over effect on the corresponding column header cell of the grid.
+
 N> If [`headerText`](https://help.syncfusion.com/api/js/ejgrid#members:columns-headertext "headerText") is not defined then the [`field`](https://help.syncfusion.com/api/js/ejgrid#members:columns-field "field") name is considered as header text for that particular column. If both [`field`](https://help.syncfusion.com/api/js/ejgrid#members:columns-field "field") name and [`headerText`](https://help.syncfusion.com/api/js/ejgrid#members:columns-headertext "headerText") are not defined then the column is rendered with "empty" header text.
 
 The following code example describes the above behavior.
@@ -702,7 +704,7 @@ HTML templates can be specified in the [`template`](https://help.syncfusion.com/
 
 You can use JsRender syntax in the template. For more information about JsRender syntax, please refer [this link](http://www.jsviews.com/#jsrapi "this link"). 
 
-For template manipulation using JavaScript, either you can use JSRender [helper](https://www.jsviews.com/#helpers) function or [`templateRefresh`](https://help.syncfusion.com/api/js/ejgrid#events:templaterefresh "templateRefresh") grid event. For more information on [`templateRefresh`](https://help.syncfusion.com/api/js/ejgrid#events:templaterefresh "templateRefresh") event, refer [this link](https://help.syncfusion.com/js/grid/how-to#display-other-syncfusion-controls-in-grid-columns "this link").
+For template manipulation using JavaScript, either you can use JsRender [helper](https://www.jsviews.com/#helpers) function or [`templateRefresh`](https://help.syncfusion.com/api/js/ejgrid#events:templaterefresh "templateRefresh") grid event. For more information on [`templateRefresh`](https://help.syncfusion.com/api/js/ejgrid#events:templaterefresh "templateRefresh") event, refer [this link](https://help.syncfusion.com/js/grid/how-to#display-other-syncfusion-controls-in-grid-columns "this link").
 
 N> If [`field`](https://help.syncfusion.com/api/js/ejgrid#members:columns-field "field") is not specified, you will not able to perform editing, grouping, filtering, sorting, search and summary functionalities in particular column.
 
@@ -1110,6 +1112,51 @@ The following output is displayed as a result of the above code example.
 ![](columns_images/columns_img23.png)
 
 
+## Grid content customization
+
+We can customize the Grid Content element by external action using the following methods,
+
+1. [`getContent`](https://help.syncfusion.com/api/js/ejgrid#methods:getcontent "getContent")
+2. [`getContentTable`](https://help.syncfusion.com/api/js/ejgrid#methods:getcontenttable "getContentTable") 
+
+The following code example describes the above behavior.
+
+{% highlight html %}
+<input id="change">
+<div id="Grid"></div>
+{% endhighlight %}
+
+{% highlight javascript %}
+$("#change").ejButton({
+    text: "Update Grid Content",
+    click: function(args){
+        var obj = $("#Grid").ejGrid("instance");
+        obj.getContent().css("color","green");
+        obj.getContentTable().css("font-family","fantasy");
+    },
+});
+$(function () {
+    $("#Grid").ejGrid({
+        dataSource: window.gridData,
+        allowPaging:true,
+        pageSettings:{pageSize:8},
+        columns: [
+            { field: "OrderID", isPrimaryKey: true, headerText: "Order ID",  width: 90 },
+            { field: "CustomerID", headerText: 'Customer ID', width: 90 },
+            { field: "Freight", headerText: 'Freight', format: "{0:C}", width: 90 },
+            { field: "ShipCountry", headerText: "Ship Country", width: 90 },
+            { field: "ShipCity", headerText: 'Ship City', width: 120 }
+        ]
+    });
+});
+{% endhighlight %}
+
+The following output is displayed as a result of the above code example.
+
+![](columns_images/columns_img40.png)
+
+
+
 ## Type
 
 Used to define the type of the particular column data. If the [`type`](https://help.syncfusion.com/api/js/ejgrid#members:columns-type "type") property of [`columns`](https://help.syncfusion.com/api/js/ejgrid#members:columns "columns") is not specified then its type is automatically defined based on the first row data of that column.
@@ -1235,10 +1282,11 @@ To control the grid column actions externally use the following methods,
 1. [`getColumnByIndex`](https://help.syncfusion.com/api/js/ejgrid#methods:getcolumnbyindex "getColumnByIndex")
 2. [`getColumnFieldNames`](https://help.syncfusion.com/api/js/ejgrid#methods:getcolumnfieldnames "getColumnFieldNames")
 3. [`getColumnByHeaderText`](https://help.syncfusion.com/api/js/ejgrid#methods:getcolumnbyheadertext "getcolumnbyheadertext")
-3. [`getColumnIndexByField`](https://help.syncfusion.com/api/js/ejgrid#methods:getcolumnindexbyfield "getColumnIndexByField")
-4. [`getColumnIndexByHeaderText`](https://help.syncfusion.com/api/js/ejgrid#methods:getcolumnindexbyheadertext "getColumnIndexByHeaderText")
-5. [`getFieldNameByHeaderText`](https://help.syncfusion.com/api/js/ejgrid#methods:getfieldnamebyheadertext "getFieldNameByHeaderText")
-6. [`getHeaderTextByFieldName`](https://help.syncfusion.com/api/js/ejgrid#methods:getheadertextbyfieldname "getHeaderTextByFieldName") 
+4. [`getColumnIndexByField`](https://help.syncfusion.com/api/js/ejgrid#methods:getcolumnindexbyfield "getColumnIndexByField")
+5. [`getColumnIndexByHeaderText`](https://help.syncfusion.com/api/js/ejgrid#methods:getcolumnindexbyheadertext "getColumnIndexByHeaderText")
+6. [`getFieldNameByHeaderText`](https://help.syncfusion.com/api/js/ejgrid#methods:getfieldnamebyheadertext "getFieldNameByHeaderText")
+7. [`getHeaderTextByFieldName`](https://help.syncfusion.com/api/js/ejgrid#methods:getheadertextbyfieldname "getHeaderTextByFieldName") 
+8. [`getColumnByField`](https://help.syncfusion.com/api/js/ejgrid#methods:getcolumnbyfield "getColumnByField") 
 
 Here, we changed the Freight column CSS by using the corresponding method.
 
