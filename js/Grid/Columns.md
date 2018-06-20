@@ -100,6 +100,8 @@ $(function () {
 
 It represents the title for particular column. To enable header text, set [`headerText`](https://help.syncfusion.com/api/js/ejgrid#members:columns-headertext "headerText") property of [`columns`](https://help.syncfusion.com/api/js/ejgrid#members:columns "columns"). The following code example describes the above behavior.
 
+Use [`enableHeaderHover`](https://help.syncfusion.com/api/js/ejgrid#members:enableheaderhover "enableHeaderHover"), to enable mouse over effect on the corresponding column header cell of the grid.
+
 N> If [`headerText`](https://help.syncfusion.com/api/js/ejgrid#members:columns-headertext "headerText") is not defined then the [`field`](https://help.syncfusion.com/api/js/ejgrid#members:columns-field "field") name is considered as header text for that particular column. If both [`field`](https://help.syncfusion.com/api/js/ejgrid#members:columns-field "field") name and [`headerText`](https://help.syncfusion.com/api/js/ejgrid#members:columns-headertext "headerText") are not defined then the column is rendered with "empty" header text.
 
 The following code example describes the above behavior.
