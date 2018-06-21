@@ -217,7 +217,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](columns_images/columns_img33.png)
+![](Summary_images/summaryGrid_img11.png)
 
 ## Custom summary
 
