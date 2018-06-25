@@ -73,53 +73,6 @@ _Before Drill Down_
 
 ![](/js/TreeMap/Drill-Down-Support_images/Drill-Down-Support_img2.png)
 
-_After drill-down_
+_After Drill Down_
 
-Try it: [Drill-Down](http://jsplayground.syncfusion.com/Sync_mrof3n0r)
-
-### Rendering tree map with specific drill-down level
-
-The tree map can be rendered with any level instead of initial level based on the specified value to the following properties:
-
-[`drillDownValue`](../api/ejtreemap#members:drilldownvalue) – Gets the value of the tree map item to render initially.  
-
-[`drillDownLevel`](../api/ejtreemap#members:drilldownlevel) – Gets the level index.
-
-Additionally, an open technique is available to process the [`drill-down`](../api/ejtreemap#methods:drilldown) activity.
-
-{% highlight js %}
-
-var populationData = [
-{ Continent: "Asia", Country: "Indonesia", Population: 237641326 },
-{ Continent: "North America", Country: "USA", Population: 315645000 },
-{ Continent: "North America", Country: "Mexico", Population: 112336538 }
-{ Continent: "Africa", Country: "Nigeria", Population: 170901000 },
-{ Continent: "Africa", Country: "Egypt", Population: 83661000 },
-{ Continent: "Europe", Country: "Germany", Population: 81993000 },
-{ Continent: "Europe", Country: "France", Population: 65605000 }
-]
-
-$(function () {
-     $("#tree").ejTreeMap({   
-         dataSource: populationData,
-         drillDownValue: "North America",
-         drillDownLevel: 1,
-         weightValuePath: "Population",
-         levels: [{
-                //..
-                //..
-                //..
-         }]
-    });
-    var treeObj = $("#tree").ejTreeMap("instance");
-    treeObj.drillDown(data,level);
-
-});
-    
-{% endhighlight %}
-
-![](/js/TreeMap/Drill-Down-Support_images/Drill-Down-Support_img3.png)
-
-_Treemap with modified level in initial view_
-
-
+Try it: [DrillDown](http://jsplayground.syncfusion.com/Sync_mrof3n0r)
