@@ -44,6 +44,8 @@ Add the following references to the project that are necessary for using the ejP
 * Syncfusion.EJ.PdfViewer
 * Syncfusion.Pdf.Base
 
+N> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key "Syncfusion Licensing Overview") to know about registering Syncfusion license key in your JavaScript application to use our components.
+
 **Add Scripts and Styles**
 
 The PDF viewer has the [JQuery](http://jquery.com/# "JQuery") external dependency.

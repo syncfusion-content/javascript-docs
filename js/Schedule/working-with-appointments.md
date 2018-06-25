@@ -321,6 +321,8 @@ The appointments can be deleted in either of the following ways,
 * Selecting an appointment and pressing <kbd>Delete</kbd> key.
 * Through Programmatically.
 
+It is possible to enable or disable the deleting options of appointments. Deleting appointments through above options will be disabled by setting the [allowDelete](/api/js/ejschedule#members:allowdelete) API to false, whereas its default value is **true**.  
+
 A pop-up with a confirmation message will get displayed before deleting an appointment, which can be either switched on/off using the API `showDeleteConfirmationDialog`. Also, the confirmation text in that pop-up can be customized as mentioned [here](/js/schedule/globalization-and-localization#localization:localizing-specific-words).
 
 **For example**, to localize only the delete confirmation message in the delete window - 
@@ -449,9 +451,9 @@ The below code example depicts the way to delete the appointments using appointm
 
 It is possible to define some specific actions to take place before the CRUD operation occurs on the Scheduler appointments through the following available client-side events,
 
-* [beforeAppointmentCreate](/api/js/ejschedule#events:beforeAppointmentCreate)
-* [beforeAppointmentChange](/api/js/ejschedule#events:beforeAppointmentChange)
-* [beforeAppointmentRemove](/api/js/ejschedule#events:beforeAppointmentRemove)
+* [beforeAppointmentCreate](/api/js/ejschedule#events:beforeappointmentcreate)
+* [beforeAppointmentChange](/api/js/ejschedule#events:beforeappointmentchange)
+* [beforeAppointmentRemove](/api/js/ejschedule#events:beforeappointmentremove)
 
 **beforeAppointmentCreate** – Triggers before saving a new appointment.
 
@@ -501,6 +503,11 @@ function onAppointmentDelete(args) {
 </script>
 
 {% endhighlight %}
+
+Once the CRUD actions are performed, the following events will trigger using which confirmation of CRUD operations can be received.
+* [appointmentCreated](/api/js/ejschedule#events:appointmentcreated) – Triggers once the appointment is created.
+* [appointmentRemoved](/api/js/ejschedule#events:appointmentremoved) – Triggers once the appointment is deleted.
+* [appointmentChanged](/api/js/ejschedule#events:appointmentchanged) Triggers once the appointment is edited.
 
 ## Read Only
 
@@ -574,6 +581,44 @@ $(function() {
 
 {% endhighlight %}
 
+### Auto-navigation on dragging the appointments
+
+While drag and holding the appointments at most left or right drag area of the schedule, the schedule will navigate to previous or next page respectively. Also, holding the appointments will allow continuous navigation.
+Holding time of appointments can be set by the user using `timeDelay` argument in the `drag` event, whereas its default value is set to `3000ms`.
+
+The following code example shows how to delay the holding time of appointments.
+
+{% highlight html %}
+
+<!--Container for ejScheduler widget-->
+<div id="schedule"></div>
+
+<script>
+$(function() {
+    // defining Schedule control
+    $("#schedule").ejSchedule({
+        width: "100%",
+        height: "525px",
+        currentDate: new Date(2015, 11, 5),
+        appointmentSettings: {
+            dataSource: [{
+                Id: 101,
+                Subject: "Talk with Nature",
+                StartTime: new Date(2015, 11, 5, 10, 00),
+                EndTime: new Date(2015, 11, 5, 11, 00)
+            }]
+        },
+        drag: "onDrag"
+    });
+});
+
+function onDrag(args) {
+    args.timeDelay = 5000; //navigation occurs after 5 seconds of holding the appointment
+}	
+</script>
+
+{% endhighlight %}
+
 ### Handling Drag Actions Dynamically
 
 The drag and drop functionality can be handled with the following three events,
@@ -625,6 +670,8 @@ function onDragStop(args) {
 
 It is possible to drag and drop the external items to and fro the Scheduler control. This action is handled through the property [`appointmentDragArea`](/api/js/ejschedule#members:appointmentdragarea), 
 which specifies the draggable area name stating whether the appointments can be dragged outside of the control or within it.
+
+On dragging the appointment to a cell, we can get the details such as start time, end time, resource of that cell using the public method [getSlotByElement](/api/js/ejschedule#methods:getslotbyelement) and update the details in custom appointment window. The appointment will save to the scheduler on clicking save button which is achieved with **saveAppointment** public method.
 
 The following code example lets you drag and drop the external items from the tree view control to the Scheduler.
 
@@ -781,47 +828,16 @@ function onDragStart(e) {
 function onDropped(e) {
     if ($(e.target).parents(".e-schedule").length != 0) {
         var scheduleObj = $("#Schedule1").data("ejSchedule");
-        var index = $($(e.target).context).hasClass("e-workcells") || $($(e.target).context).hasClass("e-alldaycells") ? $($(e.target).context).index() : $($(e.target).context).hasClass("e-alldaycells") ? $($(e.target).context).index() : 7 - ((parseInt($($(e.target).context).index() / 7) + 1) * 7 - $($(e.target).context).index()) + ($($(e.target).context).parent().index() * 7);
-        if (scheduleObj.model.orientation == "horizontal") {
-            index = scheduleObj.model.showTimeScale ? scheduleObj.currentView() !== "month" && !(scheduleObj._isCustomView()) ? Math.floor(index / ((scheduleObj.model.endHour - scheduleObj.model.startHour) * 2)) : index : $(e.event.target).index();
-        }
-        var renderDate = (scheduleObj.model.orientation == "horizontal" && scheduleObj.currentView() == "month") ? scheduleObj.monthDays : scheduleObj.model.orientation == "vertical" ? scheduleObj.dateRender : scheduleObj._dateRender;
-        renderDate = scheduleObj.model.orientation == "horizontal" && scheduleObj.currentView() == "customview" && scheduleObj._dateRender.length <= 7 ? scheduleObj._dateRender : renderDate;
-        var curDate = new Date(renderDate[index]);
-        var _target = $($(e.target).context);
-        if ($(_target).hasClass("e-workcells") && (scheduleObj.model.showTimeScale) && scheduleObj.currentView() !== "month" && !(scheduleObj._isCustomView())) {
-            var time = scheduleObj.model.orientation == "vertical" ? scheduleObj.model.startHour + ($(e.event.target).parent().index() / 2) : scheduleObj.model.startHour + (($(e.event.target).index() - (((scheduleObj.model.endHour - scheduleObj.model.startHour) * 2) * index)) / 2);
-            var timeMin = time.toString().split(".");
-            var cur_StartTime = new Date(curDate).setHours(parseInt(timeMin[0]), parseInt(timeMin[1]) == 5 ? 30 : 00);
-            var min = (parseInt(new Date(cur_StartTime).getHours()) == 23 && parseInt(new Date(cur_StartTime).getMinutes()) == 30) ? new Date(cur_StartTime).getMinutes() + 29 : new Date(cur_StartTime).getMinutes() + 30;
-            var cur_EndTime = new Date(new Date(cur_StartTime).setMinutes(min));
-        }
-        else if ($(_target).hasClass("e-workcells") && scheduleObj.model.orientation == "horizontal" && scheduleObj.currentView() == "month") {
-            var cur_StartTime = new Date(new Date(curDate).setHours(0, 0));
-            var cur_EndTime = new Date(new Date(curDate).setHours(23, 59));
-        }
-        else {
-            var cur_StartTime = new Date(new Date(curDate).setHours(0, 0));
-            var cur_EndTime = new Date(new Date(curDate).setHours(23, 59));
-            scheduleObj._appointmentAddWindow.find(".allday").ejCheckBox({ checked: true });
-        }
-        
-        var StartDate = new Date(cur_StartTime);
-        var StartTime = new Date(cur_StartTime);
-        var endTime = cur_EndTime;
-        
-        // To find the resource details
-        var resource = scheduleObj._getResourceValue($($(e.target).context));
-       
-        // custom appointment window
+		var result = scheduleObj.getSlotByElement($(e.target));
+        // set value to custom appointment window fields
         $("#subject").val(e.droppedElementData.text);
         $("#customDescription").val(e.droppedElementData.text);
-        $("#StartTime").ejDateTimePicker({ value: new Date(StartTime) });
-        $("#EndTime").ejDateTimePicker({ value: new Date(endTime) });
-        $("#resource").val(resource.text);
-        $("#ownerId").val(resource.id);
+        $("#StartTime").ejDateTimePicker({ value: new Date(result.startTime) });
+        $("#EndTime").ejDateTimePicker({ value: new Date(result.endTime) });
+        $("#resource").val(result.resources.text);
+        $("#ownerId").val(result.resources.id);
         $("#customWindow").ejDialog("open");
-    }
+    }  
 }
 
 function save() {

@@ -10,7 +10,6 @@ api : /api/js/ejcalculate
 
 # Array Formulas
 
-## Array Formulas
 
 Array formula contains two or more range of values. These array arguments can be cell ranges or array constants. `Eg. ={SUM(A1: A10 * B1:B10)}`.
 

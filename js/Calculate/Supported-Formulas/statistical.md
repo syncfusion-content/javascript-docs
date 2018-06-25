@@ -693,6 +693,38 @@ _COUNTIF (range, criteria)_
 
 
 
+## COUNTIFS
+
+
+
+Returns the number of cells (of the supplied ranges), that satisfies the set of given criteria.
+
+
+
+**Syntax:**
+
+
+
+_COUNTIFS (range1, criteria1, [range2], [criteria2])_
+
+
+
+**where:**
+
+
+
+* range1 is the range of cells to count.
+
+
+
+* criteria1 is the criteria that controls which cells should be counted.
+
+
+
+* range2, criteria2 are optional.
+ 
+
+
 ## DEVSQ
 
 
