@@ -70,6 +70,8 @@ There is an option to show or hide the additional filter options in the menu by 
 
 N> For [`filterType`](https://help.syncfusion.com/api/js/ejgrid#members:filtersettings-filtertype "filterType") property you can assign either `string` value ("menu") or `enum` value (`ej.Grid.FilterType.Menu`).
 
+Using [`columns.filterType`](https://help.syncfusion.com/api/js/ejgrid#members:columns-filtertype "columns.filterType") property we can render the excel or menu filter dialog to the grid columns.
+
 We can also filter a specified range of values by using the `between` operator for the column type `number`, `date` and `datetime`.
 
 The following code example describes the above behavior.
@@ -120,6 +122,8 @@ Boolean Filter
 ## Excel-like filter
 
 You can enable excel menu by setting  [`filterSettings.filterType`](https://help.syncfusion.com/api/js/ejgrid#members:filtersettings-filtertype "filterSettings.filterType") as `excel`. The excel menu contains an option such as Sorting, Clear filter, submenu for advanced filtering.
+
+We can disable the interdeterminate state of checkbox in excel filter dialog by setting  [`filterSettings.enableInterDeterminateState`](https://help.syncfusion.com/api/js/ejgrid#members:filtersettings-enableinterdeterminatestate "filterSettings.enableInterDeterminateState") as `false`.
 
 The following code example describes the above behavior.
 
