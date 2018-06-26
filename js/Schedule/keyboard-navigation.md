@@ -78,7 +78,5 @@ Traversing through the appointments in a forward direction.</td></tr>
 Traversal of appointments in a reverse order.</td></tr>
 </table>
 
-The actions of key pressed can be tracked using [keyDown](/api/js/ejschedule#events:keydown) event.
-
 N> By default [allowKeyboardNavigation](/api/js/ejschedule#members:allowkeyboardnavigation) property is set to **true**, which allows the Scheduler to be accessed through the above specified keys.
 

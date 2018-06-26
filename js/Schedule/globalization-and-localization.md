@@ -189,6 +189,165 @@ $(function() {
 
 {% endhighlight %}
 
+## Time Zone
+
+The Scheduler makes use of the System time zone by default. If it needs to follow some other user-specific time zone, then the API [timeZone](/api/js/ejschedule#members:timezone) can be used. Also, the Scheduler can be set to observe the Daylight Saving Time (DST) with its **isDST** property which is set to **false** by default. 
+
+When [isDST](/api/js/ejschedule#members:isdst) property is set to **true**, the Scheduler internally processes the time difference values (for the Start and end time of the appointments) related to the Scheduler time zone that observes daylight savings time. 
+
+The following code example shows the way to set the specific time zone value with the daylight savings time observed in the Scheduler.
+
+{% highlight html %}
+
+<!--Container for ejScheduler widget-->
+<div id="Schedule1"></div>
+
+<script type="text/javascript">
+$(function() {
+    $("#Schedule1").ejSchedule({
+        currentDate: new Date(2015, 11, 2),
+        timeZone: "UTC +05:30",
+        isDST: true,
+        appointmentSettings: {
+            dataSource: [{
+                Id: 100,
+                Subject: "Wild Discovery",
+                StartTime: new Date(2015, 11, 2, 9, 00),
+                EndTime: new Date(2015, 11, 2, 10, 30),
+                Location: "CHINA"
+            }]
+        }
+    });
+});	
+</script>
+
+{% endhighlight %}
+
+### Setting different TimeZone for Scheduler Appointments
+
+Apart from the default action of applying specific timezone to the entire Scheduler, it is also possible to set different time zone values for each appointments through the properties **startTimeZone** and **endTimeZone** which can be defined as separate fields within the appointment dataSource. When these properties are not explicitly defined for appointments, the appointments Start and End time will be processed based on the Scheduler time zone.
+
+N> The **isDST** property closely relies on the appointment fields like [StartTimeZone](/api/js/ejschedule#members:appointmentsettings-starttimezone) and [EndTimeZone](/api/js/ejschedule#members:appointmentsettings-endtimezone), for appropriate time difference calculations. If these two fields are not defined for appointments, then **isDST** depends on the System **timeZone** value.
+
+The following code snippet shows how to define isDST and the time zones for specific appointments.
+
+{% highlight html %}
+
+<!--Container for ejScheduler widget-->
+<div id="Schedule1"></div>
+
+<script type="text/javascript">
+$(function() {
+    $("#Schedule1").ejSchedule({
+        currentDate: new Date(2015, 11, 2),
+        isDST: true,
+        appointmentSettings: {
+            dataSource: [{
+                Id: 100,
+                Subject: "Wild Discovery",
+                StartTime: new Date(2015, 11, 2, 9, 00),
+                EndTime: new Date(2015, 11, 2, 10, 30),
+                Location: "CHINA",
+                StartTimeZone: "UTC +02:00",
+                EndTimeZone: "UTC +02:00"
+            }]
+        }
+    });
+});	
+</script>
+
+{% endhighlight %}
+
+### Customizing the TimeZone Collection
+
+It is also possible to define or customize the default time zone collection of the Scheduler, by using the [timeZoneCollection](/api/js/ejschedule#members:timezonecollection) API as follows.
+
+{% highlight html %}
+
+<!--Container for ejScheduler widget-->
+<div id="Schedule1"></div>
+
+<script type="text/javascript">
+$(function() {
+    $("#Schedule1").ejSchedule({
+        currentDate: new Date(2015, 11, 2),
+        timeZoneCollection: {
+            dataSource: [{
+                text: "UTC -04:00",
+                id: "10",
+                value: "UTC -04:00"
+            }, {
+                text: "UTC -03:30",
+                id: "11",
+                value: "UTC -03:30"
+            }, {
+                text: "UTC -03:00",
+                id: "12",
+                value: "UTC -03:00"
+            }, {
+                text: "UTC -02:00",
+                id: "13",
+                value: "UTC -02:00"
+            }, {
+                text: "UTC -01:00",
+                id: "14",
+                value: "UTC -01:00"
+            }, {
+                text: "UTC +00:00",
+                id: "15",
+                value: "UTC +00:00"
+            }, {
+                text: "UTC +01:00",
+                id: "16",
+                value: "UTC +01:00"
+            }, {
+                text: "UTC +02:00",
+                id: "17",
+                value: "UTC +02:00"
+            }, {
+                text: "UTC +03:00",
+                id: "18",
+                value: "UTC +03:00"
+            }, {
+                text: "UTC +03:30",
+                id: "19",
+                value: "UTC +03:30"
+            }, {
+                text: "UTC +04:00",
+                id: "20",
+                value: "UTC +04:00"
+            }, {
+                text: "UTC +04:30",
+                id: "21",
+                value: "UTC +04:30"
+            }, {
+                text: "UTC +05:00",
+                id: "22",
+                value: "UTC +05:00"
+            }],
+            text: "text",
+            id: "id",
+            value: "value",
+        },
+        appointmentSettings: {
+            dataSource: [{
+                Id: 100,
+                Subject: "Wild Discovery",
+                StartTime: new Date(2015, 11, 2, 9, 00),
+                EndTime: new Date(2015, 11, 2, 10, 30),
+                Location: "CHINA",
+                StartTimeZone: "UTC +02:00",
+                EndTimeZone: "UTC +02:00"
+            }]
+        }
+    });
+});	
+</script>
+
+{% endhighlight %}
+
+N> The values defined within the **timeZoneCollection** dataSource are usually the only options displayed within the start and end time zone dropdown fields of the appointment window.
+
 ## Time Mode
 
 The time mode of the Scheduler can be either **12** or **24 hours** format which is based on the [locale](/api/js/ejschedule#members:locale) set to the Scheduler. Since the default locale value of the Scheduler is **en-US**, therefore the time mode will be set to **12 hours** format (by default) automatically based on the culture. 
