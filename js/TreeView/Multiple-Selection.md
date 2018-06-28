@@ -128,6 +128,8 @@ To select more than one nodes of TreeView, you can use [selectedNodes](https://h
 ## Get Selected Nodes
 
 To get the selected Nodes of TreeView, you can use [getSelectedNodes](https://help.syncfusion.com/api/js/ejtreeview#methods:getselectednodes) method. It returns the collections of TreeView selected nodes.
+Also you can get the selected Node of Treeview, you can use [getSelectedNode](https://help.syncfusion.com/api/js/ejtreeview#methods:getselectednode) method.
+You can use [getSelectedNodeIndex](https://help.syncfusion.com/api/js/ejtreeview#methods:getselectednodeindex) method to get the index position of currently selected node. You can use [getSelectedNodesIndex](https://help.syncfusion.com/api/js/ejtreeview#methods:getselectednodesindex) method to get the index positions of currently selected nodes. When you have to selectAll/unSelectAll by using [selectAll](https://help.syncfusion.com/api/js/ejtreeview#methods:selectall) method to select all the TreeView nodes while enabled `allowMultiSelection` property and [unselectAll](https://help.syncfusion.com/api/js/ejtreeview#methods:unselectall)method to unselect all the TreeView nodes. The [unselectNode](https://help.syncfusion.com/api/js/ejtreeview#methods:unselectnode) is used to unselect a node in TreeView control. If you want to unselect the collection of nodes in TreeView control then we need to enable `allowMultiSelection` property.
 
 {% highlight html %}
 

@@ -147,8 +147,8 @@ Initialize TreeView from unordered list
 ## TreeView Using Data Binding
 
 Another way of creating TreeView is binding with the data source, you can bind local data source to create a TreeView as shown below code example.
-
-Create the TreeView wrapper. 
+The [beforeLoad](https://help.syncfusion.com/api/js/ejtreeview#events:beforeload) event will be trigger when the TreeView control is before loaded.
+Create the TreeView wrapper.
 
 {% highlight html %}
 
