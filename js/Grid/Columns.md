@@ -1155,7 +1155,7 @@ The following output is displayed as a result of the above code example.
 
 ![](columns_images/columns_img40.png)
 
-
+Using [`gridLines`](https://help.syncfusion.com/api/js/ejgrid#members:gridlines "gridLines") property we can the visibility of the grid lines.
 
 ## Type
 
