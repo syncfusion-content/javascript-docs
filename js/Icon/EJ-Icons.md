@@ -10,7 +10,7 @@ api : /api/js/
 
 # EJ Icon Package
 
-The **Essential Studio for JavaScript** provides a set of icons that can be utilized in your application by applying the class names in element. To make it simple and standard, the EJ Icon class names are followed by **“e-icon e-{icon name}“** syntax.  
+The **Essential Studio for JavaScript** provides a set of icons that can be utilized in your application by applying the Unicode Content in element. To make it simple and standard, you have to create the custom icon class by defining the unicode content and refer that class with prefix of `e-icon`. 
 
 ## How to use EJ icons in your application?
 
@@ -33,7 +33,7 @@ Theme files are available in the following location:
 
 **Step 2:**
 
-The following example showcases to display the EJ Icon by using their corresponding class names.
+The following example showcases to display the EJ Icon by using their corresponding unicode content.
 
 {% tabs %}
 {% highlight html %}
@@ -49,30 +49,30 @@ The following example showcases to display the EJ Icon by using their correspond
   <div class="icons">
    <ul>
      <li>
-       <div class="e-icon e-search"></div>
+       <div class="e-icon e-custom-search"></div>
      </li>
      <li>
-       <div class="e-icon e-settings"></div>
+       <div class="e-icon e-custom-settings"></div>
      </li>
      <li>
-       <div class="e-icon e-upload"></div>
+       <div class="e-icon e-custom-upload"></div>
      </li>
      <li>
-       <div class="e-icon e-font"></div>
+       <div class="e-icon e-custom-font"></div>
      </li>
    </ul>
    <ul>
       <li>
-        <div class="e-icon e-indent"></div>
+        <div class="e-icon e-custom-indent"></div>
       </li>
       <li>
-        <div class="e-icon e-outdent"></div>
+        <div class="e-icon e-custom-outdent"></div>
       </li>
       <li>
-        <div class="e-icon e-redo"></div>
+        <div class="e-icon e-custom-redo"></div>
       </li>
       <li>
-        <div class="e-icon e-undo"></div>
+        <div class="e-icon e-custom-undo"></div>
       </li>
      </ul>
   </div>
@@ -92,6 +92,36 @@ The following example showcases to display the EJ Icon by using their correspond
             list-style: none;
            
         }
+    .e-custom-search:before{
+    content: "\e82e"
+    }
+
+   .e-custom-settings:before{
+    content: "\e644"
+    }
+
+   .e-custom-upload:before{
+    content: "\e678"
+    }
+
+   .e-custom-font:before{
+    content: "\e632"
+    }
+
+   .e-custom-indent:before{
+   content: "\e603"
+    }
+
+  .e-custom-outdent:before{
+     content: "\e604"
+    }
+
+   .e-custom-redo:before{
+     content: "\e606"
+    }
+   .e-custom-undo:before{
+     content: "\e607"
+    }
 </style>
 
 {% endhighlight %}
@@ -105,7 +135,7 @@ Execute the above code to render the following output.
 
 **Step 3:**
 
-The complete list of EJ icons are listed in the following table. You have to use the below class names prefix with e- in your application.
+The complete list of EJ icons are listed in the following table. You have to use the below Unicode content in your application.
 
   <style type="text/css" class="cssStyles"> 
       table {
@@ -3752,27 +3782,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-media-small-screen"></div>
- <div class="txt">media-small-screen</div>
  <div class="txt">Unicode:"e100"</div>
 </td>
 <td>
 <div class="spriteimage icon-media-backward"></div>
-<div class="txt">media-backward</div>
 <div class="txt">Unicode:"e101"</div>
 </td>
 <td>
 <div class="spriteimage icon-media-download"></div>
-<div class="txt">media-download</div>
 <div class="txt">Unicode:"e102"</div>
 </td>
 <td>
 <div class="spriteimage icon-media-forward"></div>
-<div class="txt">media-forward</div>
 <div class="txt">Unicode:"e103"</div>
 </td>
 <td>
 <div class="spriteimage icon-media-full-screen"></div>
-<div class="txt">media-full-screen</div>
 <div class="txt">Unicode:"e104"</div>
 </td>
 </tr>
@@ -3780,27 +3805,22 @@ The complete list of EJ icons are listed in the following table. You have to use
  <tr>
 <td>
  <div class="spriteimage icon-media-mute"></div>
-<div class="txt">media-mute</div>
 <div class="txt">Unicode:"e105"</div>
 </td>
 <td>
 <div class="spriteimage icon-media-next"></div>
-<div class="txt">media-next</div>
 <div class="txt">Unicode:"e106"</div>
  </td>
  <td>
 <div class="spriteimage icon-media-next-item"></div>
-<div class="txt">media-next-item</div>
 <div class="txt">Unicode:"e107"</div>
 </td>
 <td>
 <div class="spriteimage icon-media-pause"></div>
-<div class="txt">media-pause</div>
 <div class="txt">Unicode:"e108"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE109"></div>
-<div class="txt">uniE109</div>
 <div class="txt">Unicode:"e109"</div>
 </td>
 </tr>
@@ -3808,27 +3828,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
  <td>
 <div class="spriteimage icon-uniE10A"></div>
-<div class="txt">uniE10A</div>
 <div class="txt">Unicode:"e10a"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE10B"></div>
-<div class="txt">uniE10B</div>
 <div class="txt">Unicode:"e10b"</div>
 </td>
 <td>
 <div class="spriteimage icon-media-play"></div>
-<div class="txt">media-play</div>
 <div class="txt">Unicode:"e110"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE111"></div>
-<div class="txt">uniE111</div>
 <div class="txt">Unicode:"e111"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE112"></div>
-<div class="txt">uniE112</div>
 <div class="txt">Unicode:"e112"</div>
 </td>	
 </tr>
@@ -3836,27 +3851,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-media-Playlist"></div>
-<div class="txt">media-Playlist</div>
 <div class="txt">Unicode:"e113"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE115"></div>
-<div class="txt">uniE115</div>
 <div class="txt">Unicode:"e115"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE116"></div>
-<div class="txt">uniE116</div>
 <div class="txt">Unicode:"e116"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE117"></div>
-<div class="txt">uniE117</div>
 <div class="txt">Unicode:"e117"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE118"></div>
-<div class="txt">uniE118</div>
 <div class="txt">Unicode:"e118"</div>
 </td>
 </tr> 
@@ -3864,27 +3874,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
  <td>
 <div class="spriteimage icon-media-previous"></div>
-<div class="txt">media-previous</div>
 <div class="txt">Unicode:"e119"</div>
 </td>
  <td>
 <div class="spriteimage icon-media-previous-item"></div>
-<div class="txt">media-previous-item</div>
 <div class="txt">Unicode:"e120"</div>
 </td>
  <td>
 <div class="spriteimage icon-media-repeat"></div>
-<div class="txt">media-repeat</div>
 <div class="txt">Unicode:"e121"</div>
 </td>
  <td>
 <div class="spriteimage icon-media-select"></div>
-<div class="txt">media-select</div>
 <div class="txt">Unicode:"e122"</div>
 </td>
  <td>
 <div class="spriteimage icon-media-settings"></div>
-<div class="txt">media-settings</div>
 <div class="txt">Unicode:"e123"</div>
 </td>
 </tr>
@@ -3892,27 +3897,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
  <td>
 <div class="spriteimage icon-media-shuffle"></div>
-<div class="txt">media-shuffle</div>
 <div class="txt">Unicode:"e124"</div>
 </td>
  <td>
 <div class="spriteimage icon-media-snapshot"></div>
-<div class="txt">media-snapshot</div>
 <div class="txt">Unicode:"e125"</div>
 </td>
  <td>
 <div class="spriteimage icon-media-stop"></div>
-<div class="txt">media-stop</div>
 <div class="txt">Unicode:"e126"</div>
 </td>
  <td>
 <div class="spriteimage icon-media-volume"></div>
-<div class="txt">media-volume</div>
 <div class="txt">Unicode:"e127"</div>
 </td>
  <td>
 <div class="spriteimage icon-uniE128"></div>
-<div class="txt">uniE128</div>
 <div class="txt">Unicode:"e128"</div>
 </td>
 </tr>
@@ -3920,27 +3920,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE129"></div>
-<div class="txt">uniE129</div>
 <div class="txt">Unicode:"e129"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE12A"></div>
-<div class="txt">uniE12A</div>
 <div class="txt">Unicode:"e12a"</div>
 </td>
 <td>
 <div class="spriteimage icon-media-repeat-updated"></div>
-<div class="txt">media-repeat-updated</div>
 <div class="txt">Unicode:"e12b"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE130"></div>
-<div class="txt">uniE130</div>
 <div class="txt">Unicode:"e130"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE131"></div>
-<div class="txt">uniE131</div>
 <div class="txt">Unicode:"e131"</div>
 </td>
 </tr>
@@ -3948,27 +3943,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-media-next1"></div>
-<div class="txt">media-next1</div>
 <div class="txt">Unicode:"e132"</div>
 </td>
 <td>
 <div class="spriteimage icon-media-previous1"></div>
-<div class="txt">media-previous1</div>
 <div class="txt">Unicode:"e134"</div>
 </td>
 <td>
 <div class="spriteimage icon-a-54"></div>
-<div class="txt">a-54</div>
 <div class="txt">Unicode:"e135"</div>
 </td>
 <td>
 <div class="spriteimage icon-a-55"></div>
-<div class="txt">a-55</div>
 <div class="txt">Unicode:"e136"</div>
 </td>
 <td>
 <div class="spriteimage icon-a-56"></div>
-<div class="txt">a-56</div>
 <div class="txt">Unicode:"e137"</div>
 </td>
 </tr>
@@ -3976,27 +3966,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-a-57"></div>
-<div class="txt">a-57</div>
 <div class="txt">Unicode:"e138"</div>
 </td>
 <td>
 <div class="spriteimage icon-a-58"></div>
-<div class="txt">a-58</div>
 <div class="txt">Unicode:"e139"</div>
 </td>
 <td>
 <div class="spriteimage icon-a-59"></div>
-<div class="txt">a-59</div>
 <div class="txt">Unicode:"e140"</div>
 </td>
 <td>
 <div class="spriteimage icon-a-60"></div>
-<div class="txt">a-60</div>
 <div class="txt">Unicode:"e141"</div>
 </td>
 <td>
 <div class="spriteimage icon-a-61"></div>
-<div class="txt">a-61</div>
 <div class="txt">Unicode:"e142"</div>
 </td>
 </tr>
@@ -4004,27 +3989,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-a-62"></div>
-<div class="txt">a-62</div>
 <div class="txt">Unicode:"e143"</div>
 </td>
 <td>
 <div class="spriteimage icon-a-63"></div>
-<div class="txt">a-63</div>
 <div class="txt">Unicode:"e144"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE150"></div>
-<div class="txt">uniE150</div>
 <div class="txt">Unicode:"e150"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE151"></div>
-<div class="txt">uniE151</div>
 <div class="txt">Unicode:"e151"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE152"></div>
-<div class="txt">uniE152</div>
 <div class="txt">Unicode:"e152"</div>
 </td>
 </tr>
@@ -4032,27 +4012,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE153"></div>
-<div class="txt">uniE153</div>
 <div class="txt">Unicode:"e153"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE600"></div>
-<div class="txt">uniE600</div>
 <div class="txt">Unicode:"e600"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE601"></div>
-<div class="txt">uniE601</div>
 <div class="txt">Unicode:"e601"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE602"></div>
-<div class="txt">uniE602</div>
 <div class="txt">Unicode:"e602"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE603"></div>
-<div class="txt">uniE603</div>
 <div class="txt">Unicode:"e603"</div>
 </td>
 </tr>
@@ -4060,27 +4035,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE604"></div>
-<div class="txt">uniE604</div>
 <div class="txt">Unicode:"e604"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE605"></div>
-<div class="txt">uniE605</div>
 <div class="txt">Unicode:"e605"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE606"></div>
-<div class="txt">uniE606</div>
 <div class="txt">Unicode:"e606"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE607"></div>
-<div class="txt">uniE607</div>
 <div class="txt">Unicode:"e607"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE608"></div>
-<div class="txt">uniE608</div>
 <div class="txt">Unicode:"e608"</div>
 </td>
 </tr>
@@ -4088,27 +4058,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE609"></div>
-<div class="txt">uniE609</div>
 <div class="txt">Unicode:"e609"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE60A"></div>
-<div class="txt">uniE60A</div>
 <div class="txt">Unicode:"e60a"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE60B"></div>
-<div class="txt">uniE60B</div>
 <div class="txt">Unicode:"e60b"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE60C"></div>
-<div class="txt">uniE60C</div>
 <div class="txt">Unicode:"e60c"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE60D"></div>
-<div class="txt">uniE60D</div>
 <div class="txt">Unicode:"e60d"</div>
 </td>
 </tr>
@@ -4116,27 +4081,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE60E"></div>
-<div class="txt">uniE60E</div>
 <div class="txt">Unicode:"e60e"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE60F"></div>
-<div class="txt">uniE60F</div>
 <div class="txt">Unicode:"e60f"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE610"></div>
-<div class="txt">uniE610</div>
 <div class="txt">Unicode:"e610"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE611"></div>
-<div class="txt">uniE611</div>
 <div class="txt">Unicode:"e611"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE612"></div>
-<div class="txt">uniE612</div>
 <div class="txt">Unicode:"e612"</div>
 </td>
 </tr>
@@ -4144,27 +4104,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE613"></div>
-<div class="txt">uniE613</div>
 <div class="txt">Unicode:"e613"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE614"></div>
-<div class="txt">uniE614</div>
 <div class="txt">Unicode:"e614"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE615"></div>
-<div class="txt">uniE615</div>
 <div class="txt">Unicode:"e615"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE616"></div>
-<div class="txt">uniE616</div>
 <div class="txt">Unicode:"e616"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE617"></div>
-<div class="txt">uniE617</div>
 <div class="txt">Unicode:"e617"</div>
 </td>
 </tr>
@@ -4172,27 +4127,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE618"></div>
-<div class="txt">uniE618</div>
 <div class="txt">Unicode:"e618"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE619"></div>
-<div class="txt">uniE619</div>
 <div class="txt">Unicode:"e619"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE61A"></div>
-<div class="txt">uniE61A</div>
 <div class="txt">Unicode:"e61a"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE61B"></div>
-<div class="txt">uniE61B</div>
 <div class="txt">Unicode:"e61b"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE61C"></div>
-<div class="txt">uniE61C</div>
 <div class="txt">Unicode:"e61c"</div>
 </td>
 </tr>
@@ -4200,27 +4150,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE61D"></div>
-<div class="txt">uniE61D</div>
 <div class="txt">Unicode:"e61d"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE61E"></div>
-<div class="txt">uniE61E</div>
 <div class="txt">Unicode:"e61e"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE61F"></div>
-<div class="txt">uniE61F</div>
 <div class="txt">Unicode:"e61f"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE620"></div>
-<div class="txt">icon-uniE620</div>
 <div class="txt">Unicode:"e620"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE621"></div>
-<div class="txt">uniE621</div>
 <div class="txt">Unicode:"e621"</div>
 </td>
 </tr>
@@ -4228,27 +4173,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE622"></div>
-<div class="txt">uniE622</div>
 <div class="txt">Unicode:"e622"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE623"></div>
-<div class="txt">uniE623</div>
 <div class="txt">Unicode:"e623"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE624"></div>
-<div class="txt">uniE624</div>
 <div class="txt">Unicode:"e624"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE625"></div>
-<div class="txt">uniE625</div>
 <div class="txt">Unicode:"e625"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE626"></div>
-<div class="txt">uniE626</div>
 <div class="txt">Unicode:"e626"</div>
 </td>
 </tr>
@@ -4256,27 +4196,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE627"></div>
-<div class="txt">uniE627</div>
 <div class="txt">Unicode:"e627"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE628"></div>
-<div class="txt">uniE628</div>
 <div class="txt">Unicode:"e628"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE629"></div>
-<div class="txt">uniE629</div>
 <div class="txt">Unicode:"e629"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE62A"></div>
-<div class="txt">uniE62A</div>
 <div class="txt">Unicode:"e62a"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE62B"></div>
-<div class="txt">uniE62B</div>
 <div class="txt">Unicode:"e62b"</div>
 </td>
 </tr>
@@ -4284,27 +4219,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE62C"></div>
-<div class="txt">uniE62C</div>
 <div class="txt">Unicode:"e62c"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE62D"></div>
-<div class="txt">uniE62D</div>
 <div class="txt">Unicode:"e62d"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE62E"></div>
-<div class="txt">uniE62E</div>
 <div class="txt">Unicode:"e62e"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE62F"></div>
-<div class="txt">uniE62F</div>
 <div class="txt">Unicode:"e62f"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE630"></div>
-<div class="txt">uniE630</div>
 <div class="txt">Unicode:"e630"</div>
 </td>
 </tr>
@@ -4312,27 +4242,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE631"></div>
-<div class="txt">uniE631</div>
 <div class="txt">Unicode:"e631"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE632"></div>
-<div class="txt">uniE632</div>
 <div class="txt">Unicode:"e632"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE633"></div>
-<div class="txt">uniE633</div>
 <div class="txt">Unicode:"e633"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE634"></div>
-<div class="txt">uniE634</div>
 <div class="txt">Unicode:"e634"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE635"></div>
-<div class="txt">uniE635</div>
 <div class="txt">Unicode:"e635"</div>
 </td>
 </tr>
@@ -4340,27 +4265,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE636"></div>
-<div class="txt">uniE636</div>
 <div class="txt">Unicode:"e636"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE637"></div>
-<div class="txt">uniE637</div>
 <div class="txt">Unicode:"e637"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE638"></div>
-<div class="txt">uniE638</div>
 <div class="txt">Unicode:"e638"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE639"></div>
-<div class="txt">uniE639</div>
 <div class="txt">Unicode:"e639"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE63A"></div>
-<div class="txt">uniE63A</div>
 <div class="txt">Unicode:"e63a"</div>
 </td>
 </tr>
@@ -4368,27 +4288,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE63B"></div>
-<div class="txt">uniE63B</div>
 <div class="txt">Unicode:"e63b"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE63C"></div>
-<div class="txt">uniE63C</div>
 <div class="txt">Unicode:"e63c"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE63D"></div>
-<div class="txt">uniE63D</div>
 <div class="txt">Unicode:"e63d"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE63E"></div>
-<div class="txt">uniE63E</div>
 <div class="txt">Unicode:"e63e"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE63F"></div>
-<div class="txt">uniE63F</div>
 <div class="txt">Unicode:"e63f"</div>
 </td>
 </tr>
@@ -4396,27 +4311,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE640"></div>
-<div class="txt">uniE640</div>
 <div class="txt">Unicode:"e640"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE641"></div>
-<div class="txt">uniE641</div>
 <div class="txt">Unicode:"e641"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE642"></div>
-<div class="txt">uniE642</div>
 <div class="txt">Unicode:"e642"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE643"></div>
-<div class="txt">uniE643</div>
 <div class="txt">Unicode:"e643"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE644"></div>
-<div class="txt">uniE644</div>
 <div class="txt">Unicode:"e644"</div>
 </td>
 </tr>
@@ -4424,27 +4334,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE645"></div>
-<div class="txt">uniE645</div>
 <div class="txt">Unicode:"e645"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE646"></div>
-<div class="txt">uniE646</div>
 <div class="txt">Unicode:"e646"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE647"></div>
-<div class="txt">uniE647</div>
 <div class="txt">Unicode:"e647"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE648"></div>
-<div class="txt">uniE648</div>
 <div class="txt">Unicode:"e648"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE649"></div>
-<div class="txt">uniE649</div>
 <div class="txt">Unicode:"e649"</div>
 </td>
 </tr>
@@ -4452,27 +4357,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE64A"></div>
-<div class="txt">uniE64A</div>
 <div class="txt">Unicode:"e64a"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE64B"></div>
-<div class="txt">uniE64B</div>
 <div class="txt">Unicode:"e64b"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE64C"></div>
-<div class="txt">uniE64C</div>
 <div class="txt">Unicode:"e64c"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE64D"></div>
-<div class="txt">uniE64D</div>
 <div class="txt">Unicode:"e64d"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE64E"></div>
-<div class="txt">uniE64E</div>
 <div class="txt">Unicode:"e64e"</div>
 </td>
 </tr>
@@ -4480,27 +4380,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE64F"></div>
-<div class="txt">uniE64F</div>
 <div class="txt">Unicode:"e64f"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE650"></div>
-<div class="txt">uniE650</div>
 <div class="txt">Unicode:"e650"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE651"></div>
-<div class="txt">uniE651</div>
 <div class="txt">Unicode:"e651"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE652"></div>
-<div class="txt">uniE652</div>
 <div class="txt">Unicode:"e652"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE653"></div>
-<div class="txt">uniE653</div>
 <div class="txt">Unicode:"e653"</div>
 </td>
 </tr>
@@ -4508,27 +4403,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE654"></div>
-<div class="txt">uniE654</div>
 <div class="txt">Unicode:"e654"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE655"></div>
-<div class="txt">uniE655</div>
 <div class="txt">Unicode:"e655"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE656"></div>
-<div class="txt">uniE656</div>
 <div class="txt">Unicode:"e656"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE657"></div>
-<div class="txt">uniE657</div>
 <div class="txt">Unicode:"e657"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE658"></div>
-<div class="txt">uniE658</div>
 <div class="txt">Unicode:"e658"</div>
 </td>
 </tr>
@@ -4536,27 +4426,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE659"></div>
-<div class="txt">uniE659</div>
 <div class="txt">Unicode:"e659"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE65A"></div>
-<div class="txt">uniE65A</div>
 <div class="txt">Unicode:"e65a"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE65B"></div>
-<div class="txt">uniE65B</div>
 <div class="txt">Unicode:"e65b"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE65C"></div>
-<div class="txt">uniE65C</div>
 <div class="txt">Unicode:"e65c"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE65D"></div>
-<div class="txt">uniE65D</div>
 <div class="txt">Unicode:"e65d"</div>
 </td>
 </tr>
@@ -4564,27 +4449,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE65E"></div>
-<div class="txt">uniE65E</div>
 <div class="txt">Unicode:"e65e"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE65F"></div>
-<div class="txt">uniE65F</div>
 <div class="txt">Unicode:"e65f"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE660"></div>
-<div class="txt">uniE660</div>
 <div class="txt">Unicode:"e660"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE661"></div>
-<div class="txt">uniE661</div>
 <div class="txt">Unicode:"e661"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE662"></div>
-<div class="txt">uniE662</div>
 <div class="txt">Unicode:"e662"</div>
 </td>
 </tr>
@@ -4592,27 +4472,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE663"></div>
-<div class="txt">uniE663</div>
 <div class="txt">Unicode:"e663"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE664"></div>
-<div class="txt">uniE664</div>
 <div class="txt">Unicode:"e664"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE665"></div>
-<div class="txt">uniE665</div>
 <div class="txt">Unicode:"e665"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE666"></div>
-<div class="txt">uniE666</div>
 <div class="txt">Unicode:"e666"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE667"></div>
-<div class="txt">uniE667</div>
 <div class="txt">Unicode:"e667"</div>
 </td>
 </tr>
@@ -4620,27 +4495,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE668"></div>
-<div class="txt">uniE668</div>
 <div class="txt">Unicode:"e668"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE669"></div>
-<div class="txt">uniE669</div>
 <div class="txt">Unicode:"e669"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE66A"></div>
-<div class="txt">uniE66A</div>
 <div class="txt">Unicode:"e66a"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE66B"></div>
-<div class="txt">uniE66B</div>
 <div class="txt">Unicode:"e66b"</div>
 </td>
 <td>
 <div class="spriteimage icon-yAxis-title"></div>
-<div class="txt">yAxis-title</div>
 <div class="txt">Unicode:"e918"</div>
 </td>
 </tr>
@@ -4648,27 +4518,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE66C"></div>
-<div class="txt">uniE66C</div>
 <div class="txt">Unicode:"e66c"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE66D"></div>
-<div class="txt">uniE66D</div>
 <div class="txt">Unicode:"e66d"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE66E"></div>
-<div class="txt">uniE66E</div>
 <div class="txt">Unicode:"e66e"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE66F"></div>
-<div class="txt">uniE66F</div>
 <div class="txt">Unicode:"e66f"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE670"></div>
-<div class="txt">uniE670</div>
 <div class="txt">Unicode:"e670"</div>
 </td>
 </tr>
@@ -4676,27 +4541,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE671"></div>
-<div class="txt">uniE671</div>
 <div class="txt">Unicode:"e671"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE672"></div>
-<div class="txt">uniE672</div>
 <div class="txt">Unicode:"e672"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE673"></div>
-<div class="txt">uniE673</div>
 <div class="txt">Unicode:"e673"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE674"></div>
-<div class="txt">uniE674</div>
 <div class="txt">Unicode:"e674"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE675"></div>
-<div class="txt">uniE675</div>
 <div class="txt">Unicode:"e675"</div>
 </td>
 </tr>
@@ -4704,27 +4564,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE676"></div>
-<div class="txt">uniE676</div>
 <div class="txt">Unicode:"e676"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE677"></div>
-<div class="txt">uniE677</div>
 <div class="txt">Unicode:"e677"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE678"></div>
-<div class="txt">uniE678</div>
 <div class="txt">Unicode:"e678"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE679"></div>
-<div class="txt">uniE679</div>
 <div class="txt">Unicode:"e679"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE67A"></div>
-<div class="txt">uniE67A</div>
 <div class="txt">Unicode:"e67a"</div>
 </td>
 </tr>
@@ -4732,27 +4587,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE67B"></div>
-<div class="txt">uniE67B</div>
 <div class="txt">Unicode:"e67b"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE67C"></div>
-<div class="txt">uniE67C</div>
 <div class="txt">Unicode:"e67c"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE67D"></div>
-<div class="txt">uniE67D</div>
 <div class="txt">Unicode:"e67d"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE67E"></div>
-<div class="txt">uniE67E</div>
 <div class="txt">Unicode:"e67e"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE67F"></div>
-<div class="txt">uniE67F</div>
 <div class="txt">Unicode:"e67f"</div>
 </td>
 </tr>
@@ -4760,27 +4610,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE680"></div>
-<div class="txt">uniE680</div>
 <div class="txt">Unicode:"e680"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE681"></div>
-<div class="txt">uniE681</div>
 <div class="txt">Unicode:"e681"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE682"></div>
-<div class="txt">uniE682</div>
 <div class="txt">Unicode:"e682"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE683"></div>
-<div class="txt">uniE683</div>
 <div class="txt">Unicode:"e683"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE684"></div>
-<div class="txt">uniE684</div>
 <div class="txt">Unicode:"e684"</div>
 </td>
 </tr>
@@ -4788,27 +4633,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE685"></div>
-<div class="txt">uniE685</div>
 <div class="txt">Unicode:"e685"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE686"></div>
-<div class="txt">uniE686</div>
 <div class="txt">Unicode:"e686"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE687"></div>
-<div class="txt">uniE687</div>
 <div class="txt">Unicode:"e687"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE688"></div>
-<div class="txt">uniE688</div>
 <div class="txt">Unicode:"e688"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE689"></div>
-<div class="txt">uniE689</div>
 <div class="txt">Unicode:"e689"</div>
 </td>
 </tr>
@@ -4816,27 +4656,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE68A"></div>
-<div class="txt">uniE68A</div>
 <div class="txt">Unicode:"e68a"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE68B"></div>
-<div class="txt">uniE68B</div>
 <div class="txt">Unicode:"e68b"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE68C"></div>
-<div class="txt">uniE68C</div>
 <div class="txt">Unicode:"e68c"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE68D"></div>
-<div class="txt">uniE68D</div>
 <div class="txt">Unicode:"e68d"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE68E"></div>
-<div class="txt">uniE68E</div>
 <div class="txt">Unicode:"e68e"</div>
 </td>
 </tr>
@@ -4844,27 +4679,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE68F"></div>
-<div class="txt">uniE68F</div>
 <div class="txt">Unicode:"e68f"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE690"></div>
-<div class="txt">uniE690</div>
 <div class="txt">Unicode:"e690"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE691"></div>
-<div class="txt">uniE691</div>
 <div class="txt">Unicode:"e691"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE692"></div>
-<div class="txt">uniE692</div>
 <div class="txt">Unicode:"e692"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE693"></div>
-<div class="txt">uniE693</div>
 <div class="txt">Unicode:"e693"</div>
 </td>
 </tr>
@@ -4872,27 +4702,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE694"></div>
-<div class="txt">uniE694</div>
 <div class="txt">Unicode:"e694"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE695"></div>
-<div class="txt">uniE695</div>
 <div class="txt">Unicode:"e695"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE696"></div>
-<div class="txt">uniE696</div>
 <div class="txt">Unicode:"e696"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE697"></div>
-<div class="txt">uniE697</div>
 <div class="txt">Unicode:"e697"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE698"></div>
-<div class="txt">uniE698</div>
 <div class="txt">Unicode:"e698"</div>
 </td>
 </tr>
@@ -4900,27 +4725,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE699"></div>
-<div class="txt">uniE699</div>
 <div class="txt">Unicode:"e699"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE69A"></div>
-<div class="txt">uniE69A</div>
 <div class="txt">Unicode:"e69a"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE69B"></div>
-<div class="txt">uniE69B</div>
 <div class="txt">Unicode:"e69b"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE69C"></div>
-<div class="txt">uniE69C</div>
 <div class="txt">Unicode:"e69c"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE69D"></div>
-<div class="txt">uniE69D</div>
 <div class="txt">Unicode:"e69d"</div>
 </td>
 </tr>
@@ -4928,27 +4748,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE69E"></div>
-<div class="txt">uniE69E</div>
 <div class="txt">Unicode:"e69e"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE69F"></div>
-<div class="txt">uniE69F</div>
 <div class="txt">Unicode:"e69f"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE6A0"></div>
-<div class="txt">uniE6A0</div>
 <div class="txt">Unicode:"e6a0"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE6A1"></div>
-<div class="txt">uniE6A1</div>
 <div class="txt">Unicode:"e6a1"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE6A2"></div>
-<div class="txt">uniE6A2</div>
 <div class="txt">Unicode:"e6a2"</div>
 </td>
 </tr>
@@ -4956,27 +4771,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE6A3"></div>
-<div class="txt">uniE6A3</div>
 <div class="txt">Unicode:"e6a3"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE6A4"></div>
-<div class="txt">uniE6A4</div>
 <div class="txt">Unicode:"e6a4"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE6A5"></div>
-<div class="txt">uniE6A5</div>
 <div class="txt">Unicode:"e6a5"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE6A6"></div>
-<div class="txt">uniE6A6</div>
 <div class="txt">Unicode:"e6a6"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE6A7"></div>
-<div class="txt">uniE6A7</div>
 <div class="txt">Unicode:"e6a7"</div>
 </td>
 </tr>
@@ -4984,27 +4794,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE6A8"></div>
-<div class="txt">uniE6A8</div>
 <div class="txt">Unicode:"e6a8"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE6A9"></div>
-<div class="txt">uniE6A9</div>
 <div class="txt">Unicode:"e6a9"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE6AA"></div>
-<div class="txt">uniE6AA</div>
 <div class="txt">Unicode:"e6aa"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE6AB"></div>
-<div class="txt">uniE6AB</div>
 <div class="txt">Unicode:"e6ab"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE6AC"></div>
-<div class="txt">uniE6AC</div>
 <div class="txt">Unicode:"e6ac"</div>
 </td>
 </tr>
@@ -5012,27 +4817,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE6AD"></div>
-<div class="txt">uniE6AD</div>
 <div class="txt">Unicode:"e6ad"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE6AE"></div>
-<div class="txt">uniE6AE</div>
 <div class="txt">Unicode:"e6ae"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE6AF"></div>
-<div class="txt">uniE6AF</div>
 <div class="txt">Unicode:"e6af"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE6B0"></div>
-<div class="txt">uniE6B0</div>
 <div class="txt">Unicode:"e6b0"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE6B1"></div>
-<div class="txt">uniE6B1</div>
 <div class="txt">Unicode:"e6b1"</div>
 </td>
 </tr>
@@ -5040,27 +4840,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE6B2"></div>
-<div class="txt">uniE6B2</div>
 <div class="txt">Unicode:"e6b2"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE6B3"></div>
-<div class="txt">uniE6B3</div>
 <div class="txt">Unicode:"e6b3"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE6B4"></div>
-<div class="txt">uniE6B4</div>
 <div class="txt">Unicode:"e6b4"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE6B5"></div>
-<div class="txt">uniE6B5</div>
 <div class="txt">Unicode:"e6b5"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE6B6"></div>
-<div class="txt">uniE6B6</div>
 <div class="txt">Unicode:"e6b6"</div>
 </td>
 </tr>
@@ -5068,27 +4863,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE6B7"></div>
-<div class="txt">uniE6B7</div>
 <div class="txt">Unicode:"e6b7"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE6B8"></div>
-<div class="txt">uniE6B8</div>
 <div class="txt">Unicode:"e6b8"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE6B9"></div>
-<div class="txt">uniE6B9</div>
 <div class="txt">Unicode:"e6b9"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE6BA"></div>
-<div class="txt">uniE6BA</div>
 <div class="txt">Unicode:"e6ba"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE6BB"></div>
-<div class="txt">uniE6BB</div>
 <div class="txt">Unicode:"e6bb"</div>
 </td>
 </tr>
@@ -5096,27 +4886,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE6BC"></div>
-<div class="txt">uniE6BC</div>
 <div class="txt">Unicode:"e6bc"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE6BD"></div>
-<div class="txt">uniE6BD</div>
 <div class="txt">Unicode:"e6bd"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE6BE"></div>
-<div class="txt">uniE6BE</div>
 <div class="txt">Unicode:"e6be"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE6BF"></div>
-<div class="txt">icon-uniE6BF</div>
 <div class="txt">Unicode:"e6bf"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE6C0"></div>
-<div class="txt">uniE6C0</div>
 <div class="txt">Unicode:"e6c0"</div>
 </td>
 </tr>
@@ -5124,27 +4909,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE6C1"></div>
-<div class="txt">uniE6C1</div>
 <div class="txt">Unicode:"e6c1"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE6C2"></div>
-<div class="txt">uniE6C2</div>
 <div class="txt">Unicode:"e6c2"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE6C3"></div>
-<div class="txt">uniE6C3</div>
 <div class="txt">Unicode:"e6c3"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE6C4"></div>
-<div class="txt">uniE6C4</div>
 <div class="txt">Unicode:"e6c4"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE6C5"></div>
-<div class="txt">uniE6C5</div>
 <div class="txt">Unicode:"e6c5"</div>
 </td>
 </tr>
@@ -5152,27 +4932,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE6C6"></div>
-<div class="txt">uniE6C6</div>
 <div class="txt">Unicode:"e6c6"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE6C7"></div>
-<div class="txt">uniE6C7</div>
 <div class="txt">Unicode:"e6c7"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE6C8"></div>
-<div class="txt">uniE6C8</div>
 <div class="txt">Unicode:"e6c8"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE6C9"></div>
-<div class="txt">uniE6C9</div>
 <div class="txt">Unicode:"e6c9"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE6CA"></div>
-<div class="txt">uniE6CA</div>
 <div class="txt">Unicode:"e6ca"</div>
 </td>
 </tr>
@@ -5180,27 +4955,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE6CB"></div>
-<div class="txt">uniE6CB</div>
 <div class="txt">Unicode:"e6cb"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE6CC"></div>
-<div class="txt">uniE6CC</div>
 <div class="txt">Unicode:"e6cc"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE6CD"></div>
-<div class="txt">uniE6CD</div>
 <div class="txt">Unicode:"e6cd"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE6CE"></div>
-<div class="txt">uniE6CE</div>
 <div class="txt">Unicode:"e6ce"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE6CF"></div>
-<div class="txt">uniE6CF</div>
 <div class="txt">Unicode:"e6cf"</div>
 </td>
 </tr>
@@ -5208,27 +4978,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE6D0"></div>
-<div class="txt">uniE6D0</div>
 <div class="txt">Unicode:"e6d0"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE6D1"></div>
-<div class="txt">uniE6D1</div>
 <div class="txt">Unicode:"e6d1"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE6D2"></div>
-<div class="txt">uniE6D2</div>
 <div class="txt">Unicode:"e6d2"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE6D3"></div>
-<div class="txt">uniE6D3</div>
 <div class="txt">Unicode:"e6d3"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE6D4"></div>
-<div class="txt">uniE6D4</div>
 <div class="txt">Unicode:"e6d4"</div>
 </td>
 </tr>
@@ -5236,27 +5001,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE6D5"></div>
-<div class="txt">uniE6D5</div>
 <div class="txt">Unicode:"e6d5"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE6D6"></div>
-<div class="txt">uniE6D6</div>
 <div class="txt">Unicode:"e6d6"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE6D7"></div>
-<div class="txt">uniE6D7</div>
 <div class="txt">Unicode:"e6d7"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE6D8"></div>
-<div class="txt">uniE6D8</div>
 <div class="txt">Unicode:"e6d8"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE6D9"></div>
-<div class="txt">uniE6D9</div>
 <div class="txt">Unicode:"e6d9"</div>
 </td>
 </tr>
@@ -5264,27 +5024,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE6DA"></div>
-<div class="txt">uniE6DA</div>
 <div class="txt">Unicode:"e6da"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE6DB"></div>
-<div class="txt">uniE6DB</div>
 <div class="txt">Unicode:"e6db"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE6DC"></div>
-<div class="txt">uniE6DC</div>
 <div class="txt">Unicode:"e6dc"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE6DD"></div>
-<div class="txt">uniE6DD</div>
 <div class="txt">Unicode:"e6dd"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE6DE"></div>
-<div class="txt">uniE6DE</div>
 <div class="txt">Unicode:"e6de"</div>
 </td>
 </tr>
@@ -5292,27 +5047,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE6DF"></div>
-<div class="txt">uniE6DF</div>
 <div class="txt">Unicode:"e6df"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE6E0"></div>
-<div class="txt">uniE6E0</div>
 <div class="txt">Unicode:"e6e0"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE6E1"></div>
-<div class="txt">uniE6E1</div>
 <div class="txt">Unicode:"e6e1"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE6E2"></div>
-<div class="txt">uniE6E2</div>
 <div class="txt">Unicode:"e6e2"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE6E3"></div>
-<div class="txt">uniE6E3</div>
 <div class="txt">Unicode:"e6e3"</div>
 </td>
 </tr>
@@ -5320,27 +5070,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE6E4"></div>
-<div class="txt">uniE6E4</div>
 <div class="txt">Unicode:"e6e4"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE6E5"></div>
-<div class="txt">uniE6E5</div>
 <div class="txt">Unicode:"e6e5"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE6E6"></div>
-<div class="txt">uniE6E6</div>
 <div class="txt">Unicode:"e6e6"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE6E7"></div>
-<div class="txt">uniE6E7</div>
 <div class="txt">Unicode:"e6e7"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE6E8"></div>
-<div class="txt">uniE6E8</div>
 <div class="txt">Unicode:"e6e8"</div>
 </td>
 </tr>
@@ -5348,27 +5093,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE6E9"></div>
-<div class="txt">uniE6E9</div>
 <div class="txt">Unicode:"e6e9"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE6EA"></div>
-<div class="txt">uniE6EA</div>
 <div class="txt">Unicode:"e6ea"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE6EB"></div>
-<div class="txt">uniE6EB</div>
 <div class="txt">Unicode:"e6eb"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE6EC"></div>
-<div class="txt">uniE6EC</div>
 <div class="txt">Unicode:"e6ec"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE6ED"></div>
-<div class="txt">uniE6ED</div>
 <div class="txt">Unicode:"e6ed"</div>
 </td>
 </tr>
@@ -5376,27 +5116,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE6EE"></div>
-<div class="txt">uniE6EE</div>
 <div class="txt">Unicode:"e6ee"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE6EF"></div>
-<div class="txt">uniE6EF</div>
 <div class="txt">Unicode:"e6ef"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE6F0"></div>
-<div class="txt">uniE6F0</div>
 <div class="txt">Unicode:"e6f0"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE6F1"></div>
-<div class="txt">uniE6F1</div>
 <div class="txt">Unicode:"e6f1"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE6F2"></div>
-<div class="txt">uniE6F2</div>
 <div class="txt">Unicode:"e6f2"</div>
 </td>
 </tr>
@@ -5404,27 +5139,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE6F3"></div>
-<div class="txt">uniE6F3</div>
 <div class="txt">Unicode:"e6f3"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE6F4"></div>
-<div class="txt">uniE6F4</div>
 <div class="txt">Unicode:"e6f4"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE6F5"></div>
-<div class="txt">uniE6F5</div>
 <div class="txt">Unicode:"e6f5"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE6F6"></div>
-<div class="txt">uniE6F6</div>
 <div class="txt">Unicode:"e6f6"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE6F7"></div>
-<div class="txt">uniE6F7</div>
 <div class="txt">Unicode:"e6f7"</div>
 </td>
 </tr>
@@ -5432,27 +5162,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE6F8"></div>
-<div class="txt">uniE6F8</div>
 <div class="txt">Unicode:"e6f8"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE6F9"></div>
-<div class="txt">uniE6F9</div>
 <div class="txt">Unicode:"e6f9"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE6FA"></div>
-<div class="txt">uniE6FA</div>
 <div class="txt">Unicode:"e6fa"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE6FB"></div>
-<div class="txt">uniE6FB</div>
 <div class="txt">Unicode:"e6fb"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE6FC"></div>
-<div class="txt">uniE6FC</div>
 <div class="txt">Unicode:"e6fc"</div>
 </td>
 </tr>
@@ -5460,27 +5185,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE6FD"></div>
-<div class="txt">uniE6FD</div>
 <div class="txt">Unicode:"e6fd"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE6FE"></div>
-<div class="txt">uniE6FE</div>
 <div class="txt">Unicode:"e6fe"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE6FF"></div>
-<div class="txt">uniE6FF</div>
 <div class="txt">Unicode:"e6ff"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE700"></div>
-<div class="txt">uniE700</div>
 <div class="txt">Unicode:"e700"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE701"></div>
-<div class="txt">uniE701</div>
 <div class="txt">Unicode:"e701"</div>
 </td>
 </tr>
@@ -5488,27 +5208,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE702"></div>
-<div class="txt">uniE702</div>
 <div class="txt">Unicode:"e702"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE703"></div>
-<div class="txt">uniE703</div>
 <div class="txt">Unicode:"e703"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE704"></div>
-<div class="txt">uniE704</div>
 <div class="txt">Unicode:"e704"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE705"></div>
-<div class="txt">uniE705</div>
 <div class="txt">Unicode:"e705"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE706"></div>
-<div class="txt">uniE706</div>
 <div class="txt">Unicode:"e706"</div>
 </td>
 </tr>
@@ -5516,27 +5231,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE707"></div>
-<div class="txt">uniE707</div>
 <div class="txt">Unicode:"e707"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE708"></div>
-<div class="txt">uniE708</div>
 <div class="txt">Unicode:"e708"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE709"></div>
-<div class="txt">uniE709</div>
 <div class="txt">Unicode:"e709"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE70A"></div>
-<div class="txt">uniE70A</div>
 <div class="txt">Unicode:"e70a"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE70B"></div>
-<div class="txt">uniE70B</div>
 <div class="txt">Unicode:"e70b"</div>
 </td>
 </tr>
@@ -5544,27 +5254,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE70C"></div>
-<div class="txt">uniE70C</div>
 <div class="txt">Unicode:"e70c"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE70D"></div>
-<div class="txt">uniE70D</div>
 <div class="txt">Unicode:"e70d"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE70E"></div>
-<div class="txt">uniE70E</div>
 <div class="txt">Unicode:"e70e"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE70F"></div>
-<div class="txt">uniE70F</div>
 <div class="txt">Unicode:"e70f"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE710"></div>
-<div class="txt">uniE710</div>
 <div class="txt">Unicode:"e710"</div>
 </td>
 </tr>
@@ -5572,27 +5277,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE711"></div>
-<div class="txt">uniE711</div>
 <div class="txt">Unicode:"e711"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE712"></div>
-<div class="txt">uniE712</div>
 <div class="txt">Unicode:"e712"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE713"></div>
-<div class="txt">uniE713</div>
 <div class="txt">Unicode:"e713"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE714"></div>
-<div class="txt">uniE714</div>
 <div class="txt">Unicode:"e714"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE715"></div>
-<div class="txt">uniE715</div>
 <div class="txt">Unicode:"e715"</div>
 </td>
 </tr>
@@ -5600,27 +5300,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE716"></div>
-<div class="txt">uniE716</div>
 <div class="txt">Unicode:"e716"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE717"></div>
-<div class="txt">uniE717</div>
 <div class="txt">Unicode:"e717"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE718"></div>
-<div class="txt">uniE718</div>
 <div class="txt">Unicode:"e718"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE719"></div>
-<div class="txt">uniE719</div>
 <div class="txt">Unicode:"e719"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE71A"></div>
-<div class="txt">uniE71A</div>
 <div class="txt">Unicode:"e71a"</div>
 </td>
 </tr>
@@ -5628,27 +5323,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE71B"></div>
-<div class="txt">uniE71B</div>
 <div class="txt">Unicode:"e71b"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE71C"></div>
-<div class="txt">uniE71C</div>
 <div class="txt">Unicode:"e71c"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE71D"></div>
-<div class="txt">uniE71D</div>
 <div class="txt">Unicode:"e71d"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE71E"></div>
-<div class="txt">uniE71E</div>
 <div class="txt">Unicode:"e71e"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE71F"></div>
-<div class="txt">uniE71F</div>
 <div class="txt">Unicode:"e71f"</div>
 </td>
 </tr>
@@ -5656,27 +5346,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE720"></div>
-<div class="txt">uniE720</div>
 <div class="txt">Unicode:"e720"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE721"></div>
-<div class="txt">uniE721</div>
 <div class="txt">Unicode:"e721"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE722"></div>
-<div class="txt">uniE722</div>
 <div class="txt">Unicode:"e722"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE723"></div>
-<div class="txt">uniE723</div>
 <div class="txt">Unicode:"e723"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE724"></div>
-<div class="txt">uniE724</div>
 <div class="txt">Unicode:"e724"</div>
 </td>
 </tr>
@@ -5684,27 +5369,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE725"></div>
-<div class="txt">uniE725</div>
 <div class="txt">Unicode:"e725"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE726"></div>
-<div class="txt">uniE726</div>
 <div class="txt">Unicode:"e726"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE727"></div>
-<div class="txt">uniE727</div>
 <div class="txt">Unicode:"e727"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE728"></div>
-<div class="txt">uniE728</div>
 <div class="txt">Unicode:"e728"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE729"></div>
-<div class="txt">uniE729</div>
 <div class="txt">Unicode:"e729"</div>
 </td>
 </tr>
@@ -5712,27 +5392,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE72A"></div>
-<div class="txt">uniE72A</div>
 <div class="txt">Unicode:"e72a"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE72B"></div>
-<div class="txt">uniE72B</div>
 <div class="txt">Unicode:"e72b"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE72C"></div>
-<div class="txt">uniE72C</div>
 <div class="txt">Unicode:"e72c"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE72D"></div>
-<div class="txt">uniE72D</div>
 <div class="txt">Unicode:"e72d"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE72E"></div>
-<div class="txt">uniE72E</div>
 <div class="txt">Unicode:"e72e"</div>
 </td>
 </tr>
@@ -5740,27 +5415,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE72F"></div>
-<div class="txt">uniE72F</div>
 <div class="txt">Unicode:"e72f"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE730"></div>
-<div class="txt">uniE730</div>
 <div class="txt">Unicode:"e730"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE731"></div>
-<div class="txt">uniE731</div>
 <div class="txt">Unicode:"e731"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE732"></div>
-<div class="txt">uniE732</div>
 <div class="txt">Unicode:"e732"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE733"></div>
-<div class="txt">uniE733</div>
 <div class="txt">Unicode:"e733"</div>
 </td>
 </tr>
@@ -5768,27 +5438,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE734"></div>
-<div class="txt">uniE734</div>
 <div class="txt">Unicode:"e734"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE735"></div>
-<div class="txt">uniE735</div>
 <div class="txt">Unicode:"e735"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE736"></div>
-<div class="txt">uniE736</div>
 <div class="txt">Unicode:"e736"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE737"></div>
-<div class="txt">uniE737</div>
 <div class="txt">Unicode:"e737"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE738"></div>
-<div class="txt">uniE738</div>
 <div class="txt">Unicode:"e738"</div>
 </td>
 </tr>
@@ -5796,27 +5461,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE739"></div>
-<div class="txt">uniE739</div>
 <div class="txt">Unicode:"e739"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE73A"></div>
-<div class="txt">uniE73A</div>
 <div class="txt">Unicode:"e73a"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE73B"></div>
-<div class="txt">uniE73B</div>
 <div class="txt">Unicode:"e73b"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE73C"></div>
-<div class="txt">uniE73C</div>
 <div class="txt">Unicode:"e73c"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE73D"></div>
-<div class="txt">uniE73D</div>
 <div class="txt">Unicode:"e73d"</div>
 </td>
 </tr>
@@ -5824,27 +5484,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE73E"></div>
-<div class="txt">uniE73E</div>
 <div class="txt">Unicode:"e73e"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE73F"></div>
-<div class="txt">uniE73F</div>
 <div class="txt">Unicode:"e73f"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE740"></div>
-<div class="txt">uniE740</div>
 <div class="txt">Unicode:"e740"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE741"></div>
-<div class="txt">uniE741</div>
 <div class="txt">Unicode:"e741"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE742"></div>
-<div class="txt">uniE742</div>
 <div class="txt">Unicode:"e742"</div>
 </td>
 </tr>
@@ -5852,27 +5507,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE743"></div>
-<div class="txt">uniE743</div>
 <div class="txt">Unicode:"e743"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE744"></div>
-<div class="txt">uniE744</div>
 <div class="txt">Unicode:"e744"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE745"></div>
-<div class="txt">uniE745</div>
 <div class="txt">Unicode:"e745"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE746"></div>
-<div class="txt">uniE746</div>
 <div class="txt">Unicode:"e746"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE747"></div>
-<div class="txt">uniE747</div>
 <div class="txt">Unicode:"e747"</div>
 </td>
 </tr>
@@ -5880,27 +5530,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE748"></div>
-<div class="txt">uniE748</div>
 <div class="txt">Unicode:"e748"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE749"></div>
-<div class="txt">uniE749</div>
 <div class="txt">Unicode:"e749"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE74A"></div>
-<div class="txt">uniE74A</div>
 <div class="txt">Unicode:"e74a"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE74B"></div>
-<div class="txt">uniE74B</div>
 <div class="txt">Unicode:"e74b"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE74C"></div>
-<div class="txt">uniE74C</div>
 <div class="txt">Unicode:"e74c"</div>
 </td>
 </tr>
@@ -5908,27 +5553,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE74D"></div>
-<div class="txt">uniE74D</div>
 <div class="txt">Unicode:"e74d"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE74E"></div>
-<div class="txt">uniE74E</div>
 <div class="txt">Unicode:"e74e"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE74F"></div>
-<div class="txt">uniE74F</div>
 <div class="txt">Unicode:"e74f"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE750"></div>
-<div class="txt">uniE750</div>
 <div class="txt">Unicode:"e750"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE751"></div>
-<div class="txt">uniE751</div>
 <div class="txt">Unicode:"e751"</div>
 </td>
 </tr>
@@ -5936,27 +5576,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE752"></div>
-<div class="txt">uniE752</div>
 <div class="txt">Unicode:"e752"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE753"></div>
-<div class="txt">uniE753</div>
 <div class="txt">Unicode:"e753"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE754"></div>
-<div class="txt">uniE754</div>
 <div class="txt">Unicode:"e754"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE755"></div>
-<div class="txt">uniE755</div>
 <div class="txt">Unicode:"e755"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE756"></div>
-<div class="txt">uniE756</div>
 <div class="txt">Unicode:"e756"</div>
 </td>
 </tr>
@@ -5964,27 +5599,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE757"></div>
-<div class="txt">uniE757</div>
 <div class="txt">Unicode:"e757"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE758"></div>
-<div class="txt">uniE758</div>
 <div class="txt">Unicode:"e758"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE759"></div>
-<div class="txt">uniE759</div>
 <div class="txt">Unicode:"e759"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE75A"></div>
-<div class="txt">uniE75A</div>
 <div class="txt">Unicode:"e75a"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE75B"></div>
-<div class="txt">uniE75B</div>
 <div class="txt">Unicode:"e75b"</div>
 </td>
 </tr>
@@ -5992,27 +5622,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE75C"></div>
-<div class="txt">uniE75C</div>
 <div class="txt">Unicode:"e75c"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE75D"></div>
-<div class="txt">uniE75D</div>
 <div class="txt">Unicode:"e75d"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE75E"></div>
-<div class="txt">uniE75E</div>
 <div class="txt">Unicode:"e75e"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE75F"></div>
-<div class="txt">uniE75F</div>
 <div class="txt">Unicode:"e75f"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE760"></div>
-<div class="txt">uniE760</div>
 <div class="txt">Unicode:"e760"</div>
 </td>
 </tr>
@@ -6020,27 +5645,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE761"></div>
-<div class="txt">uniE761</div>
 <div class="txt">Unicode:"e761"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE762"></div>
-<div class="txt">uniE762</div>
 <div class="txt">Unicode:"e762"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE763"></div>
-<div class="txt">uniE763</div>
 <div class="txt">Unicode:"e763"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE764"></div>
-<div class="txt">uniE764</div>
 <div class="txt">Unicode:"e764"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE765"></div>
-<div class="txt">uniE765</div>
 <div class="txt">Unicode:"e765"</div>
 </td>
 </tr>
@@ -6048,27 +5668,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE766"></div>
-<div class="txt">uniE766</div>
 <div class="txt">Unicode:"e766"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE767"></div>
-<div class="txt">uniE767</div>
 <div class="txt">Unicode:"e767"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE768"></div>
-<div class="txt">uniE768</div>
 <div class="txt">Unicode:"e768"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE769"></div>
-<div class="txt">uniE769</div>
 <div class="txt">Unicode:"e769"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE76A"></div>
-<div class="txt">uniE76A</div>
 <div class="txt">Unicode:"e76a"</div>
 </td>
 </tr>
@@ -6076,27 +5691,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE76B"></div>
-<div class="txt">uniE76B</div>
 <div class="txt">Unicode:"e76b"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE76C"></div>
-<div class="txt">uniE76C</div>
 <div class="txt">Unicode:"e76c"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE76D"></div>
-<div class="txt">uniE76D</div>
 <div class="txt">Unicode:"e76d"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE76E"></div>
-<div class="txt">uniE76E</div>
 <div class="txt">Unicode:"e76e"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE76F"></div>
-<div class="txt">uniE76F</div>
 <div class="txt">Unicode:"e76f"</div>
 </td>
 </tr>
@@ -6104,27 +5714,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE770"></div>
-<div class="txt">uniE770</div>
 <div class="txt">Unicode:"e770"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE771"></div>
-<div class="txt">uniE771</div>
 <div class="txt">Unicode:"e771"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE772"></div>
-<div class="txt">uniE772</div>
 <div class="txt">Unicode:"e772"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE773"></div>
-<div class="txt">uniE773</div>
 <div class="txt">Unicode:"e773"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE774"></div>
-<div class="txt">uniE774</div>
 <div class="txt">Unicode:"e774"</div>
 </td>
 </tr>
@@ -6132,27 +5737,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE775"></div>
-<div class="txt">uniE775</div>
 <div class="txt">Unicode:"e775"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE776"></div>
-<div class="txt">uniE776</div>
 <div class="txt">Unicode:"e776"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE777"></div>
-<div class="txt">uniE777</div>
 <div class="txt">Unicode:"e777"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE778"></div>
-<div class="txt">uniE778</div>
 <div class="txt">Unicode:"e778"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE779"></div>
-<div class="txt">uniE779</div>
 <div class="txt">Unicode:"e779"</div>
 </td>
 </tr>
@@ -6160,27 +5760,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE77A"></div>
-<div class="txt">uniE77A</div>
 <div class="txt">Unicode:"e77a"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE77B"></div>
-<div class="txt">uniE77B</div>
 <div class="txt">Unicode:"e77b"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE77C"></div>
-<div class="txt">uniE77C</div>
 <div class="txt">Unicode:"e77c"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE77D"></div>
-<div class="txt">uniE77D</div>
 <div class="txt">Unicode:"e77d"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE77E"></div>
-<div class="txt">uniE77E</div>
 <div class="txt">Unicode:"e77e"</div>
 </td>
 </tr>
@@ -6189,27 +5784,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-copy"></div>
-<div class="txt">copy</div>
 <div class="txt">Unicode:"e77f"</div>
 </td>
 <td>
 <div class="spriteimage icon-js-playground"></div>
-<div class="txt">js-playground</div>
 <div class="txt">Unicode:"e780"</div>
 </td>
 <td>
 <div class="spriteimage icon-agenda"></div>
-<div class="txt">agenda</div>
 <div class="txt">Unicode:"e781"</div>
 </td>
 <td>
 <div class="spriteimage icon-allday"></div>
-<div class="txt">allday</div>
 <div class="txt">Unicode:"e782"</div>
 </td>
 <td>
 <div class="spriteimage icon-edit"></div>
-<div class="txt">edit</div>
 <div class="txt">Unicode:"e783"</div>
 </td>
 </tr>
@@ -6217,27 +5807,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-repeat"></div>
-<div class="txt">repeat</div>
 <div class="txt">Unicode:"e784"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE785"></div>
-<div class="txt">uniE785</div>
 <div class="txt">Unicode:"e785"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE786"></div>
-<div class="txt">uniE786</div>
 <div class="txt">Unicode:"e786"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE787"></div>
-<div class="txt">uniE787</div>
 <div class="txt">Unicode:"e787"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE788"></div>
-<div class="txt">uniE788</div>
 <div class="txt">Unicode:"e788"</div>
 </td>
 </tr>
@@ -6245,27 +5830,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE789"></div>
-<div class="txt">uniE789</div>
 <div class="txt">Unicode:"e789"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE78A"></div>
-<div class="txt">uniE78A</div>
 <div class="txt">Unicode:"e78a"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE78B"></div>
-<div class="txt">uniE78B</div>
 <div class="txt">Unicode:"e78b"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE78C"></div>
-<div class="txt">uniE78C</div>
 <div class="txt">Unicode:"e78c"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE78D"></div>
-<div class="txt">uniE78D</div>
 <div class="txt">Unicode:"e78d"</div>
 </td>
 </tr>
@@ -6273,27 +5853,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE78E"></div>
-<div class="txt">uniE78E</div>
 <div class="txt">Unicode:"e78e"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE78F"></div>
-<div class="txt">uniE78F</div>
 <div class="txt">Unicode:"e78f"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE790"></div>
-<div class="txt">uniE790</div>
 <div class="txt">Unicode:"e790"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE791"></div>
-<div class="txt">uniE791</div>
 <div class="txt">Unicode:"e791"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE792"></div>
-<div class="txt">uniE792</div>
 <div class="txt">Unicode:"e792"</div>
 </td>
 </tr>
@@ -6301,27 +5876,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE793"></div>
-<div class="txt">uniE793</div>
 <div class="txt">Unicode:"e793"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE794"></div>
-<div class="txt">uniE794</div>
 <div class="txt">Unicode:"e794"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE795"></div>
-<div class="txt">uniE795</div>
 <div class="txt">Unicode:"e795"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE796"></div>
-<div class="txt">uniE796</div>
 <div class="txt">Unicode:"e796"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE797"></div>
-<div class="txt">uniE797</div>
 <div class="txt">Unicode:"e797"</div>
 </td>
 </tr>
@@ -6329,27 +5899,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE798"></div>
-<div class="txt">uniE798</div>
 <div class="txt">Unicode:"e798"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE799"></div>
-<div class="txt">uniE799</div>
 <div class="txt">Unicode:"e799"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE79A"></div>
-<div class="txt">uniE79A</div>
 <div class="txt">Unicode:"e79a"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE79B"></div>
-<div class="txt">uniE79B</div>
 <div class="txt">Unicode:"e79b"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE79C"></div>
-<div class="txt">uniE79C</div>
 <div class="txt">Unicode:"e79c"</div>
 </td>
 </tr>
@@ -6357,27 +5922,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE79D"></div>
-<div class="txt">uniE79D</div>
 <div class="txt">Unicode:"e79d"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE79E"></div>
-<div class="txt">uniE79E</div>
 <div class="txt">Unicode:"e79e"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE79F"></div>
-<div class="txt">uniE79F</div>
 <div class="txt">Unicode:"e79f"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE7A0"></div>
-<div class="txt">uniE7A0</div>
 <div class="txt">Unicode:"e7a0"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE7A1"></div>
-<div class="txt">uniE7A1</div>
 <div class="txt">Unicode:"e7a1"</div>
 </td>
 </tr>
@@ -6385,27 +5945,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE7A2"></div>
-<div class="txt">uniE7A2</div>
 <div class="txt">Unicode:"e7a2"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE7A3"></div>
-<div class="txt">uniE7A3</div>
 <div class="txt">Unicode:"e7a3"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE7A4"></div>
-<div class="txt">uniE7A4</div>
 <div class="txt">Unicode:"e7a4"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE7A5"></div>
-<div class="txt">uniE7A5</div>
 <div class="txt">Unicode:"e7a5"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE7A6"></div>
-<div class="txt">uniE7A6</div>
 <div class="txt">Unicode:"e7a6"</div>
 </td>
 </tr>
@@ -6413,27 +5968,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE7A7"></div>
-<div class="txt">uniE7A7</div>
 <div class="txt">Unicode:"e7a7"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE7A8"></div>
-<div class="txt">uniE7A8</div>
 <div class="txt">Unicode:"e7a8"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE7A9"></div>
-<div class="txt">uniE7A9</div>
 <div class="txt">Unicode:"e7a9"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE7AA"></div>
-<div class="txt">uniE7AA</div>
 <div class="txt">Unicode:"e7aa"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE7AB"></div>
-<div class="txt">uniE7AB</div>
 <div class="txt">Unicode:"e7ab"</div>
 </td>
 </tr>
@@ -6441,27 +5991,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE7AC"></div>
-<div class="txt">uniE7AC</div>
 <div class="txt">Unicode:"e7ac"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE7AD"></div>
-<div class="txt">uniE7AD</div>
 <div class="txt">Unicode:"e7ad"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE7AE"></div>
-<div class="txt">uniE7AE</div>
 <div class="txt">Unicode:"e7ae"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE7AF"></div>
-<div class="txt">uniE7AF</div>
 <div class="txt">Unicode:"e7af"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE7B0"></div>
-<div class="txt">uniE7B0</div>
 <div class="txt">Unicode:"e7b0"</div>
 </td>
 </tr>
@@ -6469,27 +6014,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE7B1"></div>
-<div class="txt">uniE7B1</div>
 <div class="txt">Unicode:"e7b1"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE7B2"></div>
-<div class="txt">uniE7B2</div>
 <div class="txt">Unicode:"e7b2"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE7B3"></div>
-<div class="txt">uniE7B3</div>
 <div class="txt">Unicode:"e7b3"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE7B4"></div>
-<div class="txt">uniE7B4</div>
 <div class="txt">Unicode:"e7b4"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE7B5"></div>
-<div class="txt">uniE7B5</div>
 <div class="txt">Unicode:"e7b5"</div>
 </td>
 </tr>
@@ -6497,27 +6037,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE7B6"></div>
-<div class="txt">uniE7B6</div>
 <div class="txt">Unicode:"e7b6"</div>
 </td>
 <td>
 <div class="spriteimage icon-Recurrence"></div>
-<div class="txt">Recurrence</div>
 <div class="txt">Unicode:"e7b7"</div>
 </td>
 <td>
 <div class="spriteimage icon-RecurrenceEdit"></div>
-<div class="txt">RecurrenceEdit</div>
 <div class="txt">Unicode:"e7b8"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE7B9"></div>
-<div class="txt">uniE7B9</div>
 <div class="txt">Unicode:"e7b9"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE7BA"></div>
-<div class="txt">uniE7BA</div>
 <div class="txt">Unicode:"e7ba"</div>
 </td>
 </tr>
@@ -6525,27 +6060,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE7BB"></div>
-<div class="txt">uniE7BB</div>
 <div class="txt">Unicode:"e7bb"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE7BC"></div>
-<div class="txt">uniE7BC</div>
 <div class="txt">Unicode:"e7bc"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE7BD"></div>
-<div class="txt">uniE7BD</div>
 <div class="txt">Unicode:"e7bd"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE7BE"></div>
-<div class="txt">uniE7BE</div>
 <div class="txt">Unicode:"e7be"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE781"></div>
-<div class="txt">uniE781</div>
 <div class="txt">Unicode:"e7bf"</div>
 </td>
 </tr>
@@ -6553,27 +6083,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE782"></div>
-<div class="txt">uniE782</div>
 <div class="txt">Unicode:"e7c0"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE783"></div>
-<div class="txt">uniE783</div>
 <div class="txt">Unicode:"e7c1"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE784"></div>
-<div class="txt">uniE784</div>
 <div class="txt">Unicode:"e7c2"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE7852"></div>
-<div class="txt">uniE7852</div>
 <div class="txt">Unicode:"e7c3"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE7862"></div>
-<div class="txt">uniE7862</div>
 <div class="txt">Unicode:"e7c4"</div>
 </td>
 </tr>
@@ -6581,27 +6106,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE7872"></div>
-<div class="txt">uniE7872</div>
 <div class="txt">Unicode:"e7c5"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE7882"></div>
-<div class="txt">uniE7882</div>
 <div class="txt">Unicode:"e7c6"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE7892"></div>
-<div class="txt">uniE7892</div>
 <div class="txt">Unicode:"e7c7"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE78A2"></div>
-<div class="txt">uniE78A2</div>
 <div class="txt">Unicode:"e7c8"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE78B2"></div>
-<div class="txt">uniE78B2</div>
 <div class="txt">Unicode:"e7c9"</div>
 </td>
 </tr>
@@ -6609,27 +6129,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE78C2"></div>
-<div class="txt">uniE78C2</div>
 <div class="txt">Unicode:"e7ca"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE78D2"></div>
-<div class="txt">uniE78D2</div>
 <div class="txt">Unicode:"e7cb"</div>
 </td>
 <td>
 <div class="spriteimage icon-down-arrow-icon"></div>
-<div class="txt">down-arrow-icon</div>
 <div class="txt">Unicode:"e7cc"</div>
 </td>
 <td>
 <div class="spriteimage icon-dropdown"></div>
-<div class="txt">dropdown</div>
 <div class="txt">Unicode:"e7cd"</div>
 </td>
 <td>
 <div class="spriteimage icon-qat-icon"></div>
-<div class="txt">qat-icon</div>
 <div class="txt">Unicode:"e7ce"</div>
 </td>
 </tr>
@@ -6637,27 +6152,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-tick"></div>
-<div class="txt">tick</div>
 <div class="txt">Unicode:"e7cf"</div>
 </td>
 <td>
 <div class="spriteimage icon-Pdf_Print"></div>
-<div class="txt">Pdf_Print</div>
 <div class="txt">Unicode:"e7d0"</div>
 </td>
 <td>
 <div class="spriteimage icon-Pdf_First"></div>
-<div class="txt">Pdf_First</div>
 <div class="txt">Unicode:"e7d1"</div>
 </td>
 <td>
 <div class="spriteimage icon-PDf_Previous"></div>
-<div class="txt">PDf_Previous</div>
 <div class="txt">Unicode:"e7d2"</div>
 </td>
 <td>
 <div class="spriteimage icon-Pdf_Next"></div>
-<div class="txt">Pdf_Next</div>
 <div class="txt">Unicode:"e7d3"</div>
 </td>
 </tr>
@@ -6665,27 +6175,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-Pdf_Last"></div>
-<div class="txt">Pdf_Last</div>
 <div class="txt">Unicode:"e7d4"</div>
 </td>
 <td>
 <div class="spriteimage icon-Pdf_ZoomIn"></div>
-<div class="txt">Pdf_ZoomIn</div>
 <div class="txt">Unicode:"e7d5"</div>
 </td>
 <td>
 <div class="spriteimage icon-Pdf_ZoomOut"></div>
-<div class="txt">Pdf_ZoomOut</div>
 <div class="txt">Unicode:"e7d6"</div>
 </td>
 <td>
 <div class="spriteimage icon-Pdf_FitPage"></div>
-<div class="txt">Pdf_FitPage</div>
 <div class="txt">Unicode:"e7d7"</div>
 </td>
 <td>
 <div class="spriteimage icon-Pdf_FitWidth"></div>
-<div class="txt">Pdf_FitWidth</div>
 <div class="txt">Unicode:"e7d8"</div>
 </td>
 </tr>
@@ -6693,27 +6198,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-X16ICONS_UnFreeze"></div>
-<div class="txt">X16ICONS_UnFreeze</div>
 <div class="txt">Unicode:"e7d9"</div>
 </td>
 <td>
 <div class="spriteimage icon-X16ICONS_FREEZE_Freeze"></div>
-<div class="txt">X16ICONS_FREEZE_Freeze</div>
 <div class="txt">Unicode:"e7da"</div>
 </td>
 <td>
 <div class="spriteimage icon-X16ICONS_FreezeColumnsBefore"></div>
-<div class="txt">X16ICONS_FreezeColumnsBefore</div>
 <div class="txt">Unicode:"e7db"</div>
 </td>
 <td>
 <div class="spriteimage icon-Chart_Bubble"></div>
-<div class="txt">Chart_Bubble</div>
 <div class="txt">Unicode:"e7dc"</div>
 </td>
 <td>
 <div class="spriteimage icon-Chart_Doughnut"></div>
-<div class="txt">Chart_Doughnut</div>
 <div class="txt">Unicode:"e7dd"</div>
 </td>
 </tr>
@@ -6721,27 +6221,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-Chart_radar"></div>
-<div class="txt">Chart_radar</div>
 <div class="txt">Unicode:"e7de"</div>
 </td>
 <td>
 <div class="spriteimage icon-Chart_Scatter"></div>
-<div class="txt">Chart_Scatter</div>
 <div class="txt">Unicode:"e7df"</div>
 </td>
 <td>
 <div class="spriteimage icon-Chart-07"></div>
-<div class="txt">Chart-07</div>
 <div class="txt">Unicode:"e7e0"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE7E1"></div>
-<div class="txt">uniE7E1</div>
 <div class="txt">Unicode:"e7e1"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE7E2"></div>
-<div class="txt">uniE7E2</div>
 <div class="txt">Unicode:"e7e2"</div>
 </td>
 </tr>
@@ -6749,27 +6244,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE7E3"></div>
-<div class="txt">uniE7E3</div>
 <div class="txt">Unicode:"e7e3"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE7E4"></div>
-<div class="txt">uniE7E4</div>
 <div class="txt">Unicode:"e7e4"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE7E5"></div>
-<div class="txt">uniE7E5</div>
 <div class="txt">Unicode:"e7e5"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE7E6"></div>
-<div class="txt">uniE7E6</div>
 <div class="txt">Unicode:"e7e6"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE7E7"></div>
-<div class="txt">uniE7E7</div>
 <div class="txt">Unicode:"e7e7"</div>
 </td>
 </tr>
@@ -6777,27 +6267,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE7E8"></div>
-<div class="txt">uniE7E8</div>
 <div class="txt">Unicode:"e7e8"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE7E9"></div>
-<div class="txt">uniE7E9</div>
 <div class="txt">Unicode:"e7e9"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE7EA"></div>
-<div class="txt">uniE7EA</div>
 <div class="txt">Unicode:"e7ea"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE7EB"></div>
-<div class="txt">uniE7EB</div>
 <div class="txt">Unicode:"e7eb"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE7EC"></div>
-<div class="txt">uniE7EC</div>
 <div class="txt">Unicode:"e7ec"</div>
 </td>
 </tr>
@@ -6805,27 +6290,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE7ED"></div>
-<div class="txt">uniE7ED</div>
 <div class="txt">Unicode:"e7ed"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE7EE"></div>
-<div class="txt">uniE7EE</div>
 <div class="txt">Unicode:"e7ee"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE7EF"></div>
-<div class="txt">uniE7EF</div>
 <div class="txt">Unicode:"e7ef"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE7F0"></div>
-<div class="txt">uniE7F0</div>
 <div class="txt">Unicode:"e7f0"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE7F1"></div>
-<div class="txt">uniE7F1</div>
 <div class="txt">Unicode:"e7f1"</div>
 </td>
 </tr>
@@ -6833,27 +6313,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE7F2"></div>
-<div class="txt">uniE7F2</div>
 <div class="txt">Unicode:"e7f2"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE7F3"></div>
-<div class="txt">uniE7F3</div>
 <div class="txt">Unicode:"e7f3"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE7F4"></div>
-<div class="txt">uniE7F4</div>
 <div class="txt">Unicode:"e7f4"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE7F5"></div>
-<div class="txt">uniE7F5</div>
 <div class="txt">Unicode:"e7f5"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE7F6"></div>
-<div class="txt">uniE7F6</div>
 <div class="txt">Unicode:"e7f6"</div>
 </td>
 </tr>
@@ -6861,27 +6336,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE7f7"></div>
-<div class="txt">uniE7f7</div>
 <div class="txt">Unicode:"e7f7"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE7f8"></div>
-<div class="txt">uniE7f8</div>
 <div class="txt">Unicode:"e7f8"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE7f9"></div>
-<div class="txt">uniE7f9</div>
 <div class="txt">Unicode:"e7f9"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE7fa"></div>
-<div class="txt">uniE7fa</div>
 <div class="txt">Unicode:"e7fa"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE7fb"></div>
-<div class="txt">uniE7fb</div>
 <div class="txt">Unicode:"e7fb"</div>
 </td>
 </tr>
@@ -6889,27 +6359,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE7fc"></div>
-<div class="txt">uniE7fc</div>
 <div class="txt">Unicode:"e7fc"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE7fd"></div>
-<div class="txt">uniE7fd</div>
 <div class="txt">Unicode:"e7fd"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE7fe"></div>
-<div class="txt">uniE7fe</div>
 <div class="txt">Unicode:"e7fe"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE7ff"></div>
-<div class="txt">uniE7ff</div>
 <div class="txt">Unicode:"e7ff"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE800"></div>
-<div class="txt">uniE800</div>
 <div class="txt">Unicode:"e800"</div>
 </td>
 </tr>
@@ -6917,27 +6382,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE801"></div>
-<div class="txt">uniE801</div>
 <div class="txt">Unicode:"e801"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE802"></div>
-<div class="txt">uniE802</div>
 <div class="txt">Unicode:"e802"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE803"></div>
-<div class="txt">uniE803</div>
 <div class="txt">Unicode:"e803"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE804"></div>
-<div class="txt">uniE804</div>
 <div class="txt">Unicode:"e804"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE805"></div>
-<div class="txt">uniE805</div>
 <div class="txt">Unicode:"e805"</div>
 </td>
 </tr>
@@ -6945,27 +6405,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE806"></div>
-<div class="txt">uniE806</div>
 <div class="txt">Unicode:"e806"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE807"></div>
-<div class="txt">uniE807</div>
 <div class="txt">Unicode:"e807"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE808"></div>
-<div class="txt">uniE808</div>
 <div class="txt">Unicode:"e808"</div>
 </td>
 <td>
 <div class="spriteimage icon-unie809"></div>
-<div class="txt">unie809</div>
 <div class="txt">Unicode:"e809"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE80a"></div>
-<div class="txt">uniE80a</div>
 <div class="txt">Unicode:"e80a"</div>
 </td>
 </tr>
@@ -6973,27 +6428,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE80b"></div>
-<div class="txt">uniE80b</div>
 <div class="txt">Unicode:"e80b"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE80c"></div>
-<div class="txt">uniE80c</div>
 <div class="txt">Unicode:"e80c"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE80d"></div>
-<div class="txt">uniE80d</div>
 <div class="txt">Unicode:"e80d"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE80e"></div>
-<div class="txt">uniE80e</div>
 <div class="txt">Unicode:"e80e"</div>
 </td>
 <td>
 <div class="spriteimage icon-print-icon-02"></div>
-<div class="txt">print-icon-02</div>
 <div class="txt">Unicode:"e80f"</div>
 </td>
 </tr>
@@ -7001,27 +6451,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE810"></div>
-<div class="txt">uniE810</div>
 <div class="txt">Unicode:"e810"</div>
 </td>
 <td>
 <div class="spriteimage icon-a-051"></div>
-<div class="txt">a-051</div>
 <div class="txt">Unicode:"e811"</div>
 </td>
 <td>
 <div class="spriteimage icon-a-061"></div>
-<div class="txt">a-061</div>
 <div class="txt">Unicode:"e812"</div>
 </td>
 <td>
 <div class="spriteimage icon-filter-031"></div>
-<div class="txt">filter-031</div>
 <div class="txt">Unicode:"e813"</div>
 </td>
 <td>
 <div class="spriteimage icon-filter-042"></div>
-<div class="txt">filter-042</div>
 <div class="txt">Unicode:"e814"</div>
 </td>
 </tr>
@@ -7029,27 +6474,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-backarrow-08"></div>
-<div class="txt">backarrow-08</div>
 <div class="txt">Unicode:"e815"</div>
 </td>
 <td>
 <div class="spriteimage icon-BurgerMenu_iOS"></div>
-<div class="txt">BurgerMenu_iOS</div>
 <div class="txt">Unicode:"e816"</div>
 </td>
 <td>
 <div class="spriteimage icon-Icon-03"></div>
-<div class="txt">Icon-03</div>
 <div class="txt">Unicode:"e817"</div>
 </td>
 <td>
 <div class="spriteimage icon-Icon-04"></div>
-<div class="txt">Icon-04</div>
 <div class="txt">Unicode:"e818"</div>
 </td>
 <td>
 <div class="spriteimage icon-Icon-05"></div>
-<div class="txt">Icon-05</div>
 <div class="txt">Unicode:"e819"</div>
 </td>
 </tr>
@@ -7057,27 +6497,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-Icon-06"></div>
-<div class="txt">Icon-06</div>
 <div class="txt">Unicode:"e81a"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE81b"></div>
-<div class="txt">uniE81b</div>
 <div class="txt">Unicode:"e81b"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE81c"></div>
-<div class="txt">uniE81c</div>
 <div class="txt">Unicode:"e81c"</div>
 </td>
 <td>
 <div class="spriteimage icon-Adopt__Down-arrow"></div>
-<div class="txt">Adopt__Down-arrow</div>
 <div class="txt">Unicode:"e81d"</div>
 </td>
 <td>
 <div class="spriteimage icon-Adopt__up-arrow"></div>
-<div class="txt">Adopt__up-arrow</div>
 <div class="txt">Unicode:"e81e"</div>
 </td>
 </tr>
@@ -7085,27 +6520,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-download-pdf"></div>
-<div class="txt">download-pdf</div>
 <div class="txt">Unicode:"e81f"</div>
 </td>
 <td>
 <div class="spriteimage icon-arrow--down1"></div>
-<div class="txt">arrow--down1</div>
 <div class="txt">Unicode:"e820"</div>
 </td>
 <td>
 <div class="spriteimage icon-arrow--up1"></div>
-<div class="txt">arrow--up1</div>
 <div class="txt">Unicode:"e821"</div>
 </td>
 <td>
 <div class="spriteimage icon-CriticalTask_Taskbar_Icon_Solid"></div>
-<div class="txt">CriticalTask_Taskbar_Icon_Solid</div>
 <div class="txt">Unicode:"e822"</div>
 </td>
 <td>
 <div class="spriteimage icon-sort-by-icon-01"></div>
-<div class="txt">sort-by-icon-01</div>
 <div class="txt">Unicode:"e823"</div>
 </td>
 </tr>
@@ -7113,27 +6543,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-Icon_descending"></div>
-<div class="txt">Icon_descending</div>
 <div class="txt">Unicode:"e824"</div>
 </td>
 <td>
 <div class="spriteimage icon-Icon_ascending"></div>
-<div class="txt">Icon_ascending</div>
 <div class="txt">Unicode:"e825"</div>
 </td>
 <td>
 <div class="spriteimage icon-previous-page-pdfviewer"></div>
-<div class="txt">previous-page-pdfviewer</div>
 <div class="txt">Unicode:"e826"</div>
 </td>
 <td>
 <div class="spriteimage icon-next-page-pdfviewer"></div>
-<div class="txt">next-page-pdfviewer</div>
 <div class="txt">Unicode:"e827"</div>
 </td>
 <td>
 <div class="spriteimage icon-zoomout-pdfviewer"></div>
-<div class="txt">zoomout-pdfviewer</div>
 <div class="txt">Unicode:"e828"</div>
 </td>
 </tr>
@@ -7141,27 +6566,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-zoomin-pdfviewer"></div>
-<div class="txt">zoomin-pdfviewer</div>
 <div class="txt">Unicode:"e829"</div>
 </td>
 <td>
 <div class="spriteimage icon-fitwidth-pdfviewer"></div>
-<div class="txt">fitwidth-pdfviewer</div>
 <div class="txt">Unicode:"e82a"</div>
 </td>
 <td>
 <div class="spriteimage icon-fitpage-pdfviewer"></div>
-<div class="txt">fitpage-pdfviewer</div>
 <div class="txt">Unicode:"e82b"</div>
 </td>
 <td>
 <div class="spriteimage icon-print-pdfviewer"></div>
-<div class="txt">print-pdfviewer</div>
 <div class="txt">Unicode:"e82c"</div>
 </td>
 <td>
 <div class="spriteimage icon-download-pdf-pdfviewer"></div>
-<div class="txt">download-pdf-pdfviewer</div>
 <div class="txt">Unicode:"e82d"</div>
 </td>
 </tr>
@@ -7169,27 +6589,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-search-icon-pdfviewer"></div>
-<div class="txt">search-icon-pdfviewer</div>
 <div class="txt">Unicode:"e82e"</div>
 </td>
 <td>
 <div class="spriteimage icon-search-prev-pdfviewer"></div>
-<div class="txt">search-prev-pdfviewer</div>
 <div class="txt">Unicode:"e82f"</div>
 </td>
 <td>
 <div class="spriteimage icon-search-next-pdfviewer"></div>
-<div class="txt">search-next-pdfviewer</div>
 <div class="txt">Unicode:"e830"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE831"></div>
-<div class="txt">uniE831</div>
 <div class="txt">Unicode:"e831"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE832"></div>
-<div class="txt">uniE832</div>
 <div class="txt">Unicode:"e832"</div>
 </td>
 </tr>
@@ -7197,27 +6612,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE833"></div>
-<div class="txt">uniE833</div>
 <div class="txt">Unicode:"e833"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE834"></div>
-<div class="txt">uniE834</div>
 <div class="txt">Unicode:"e834"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE835"></div>
-<div class="txt">uniE835</div>
 <div class="txt">Unicode:"e835"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE836"></div>
-<div class="txt">uniE836</div>
 <div class="txt">Unicode:"e836"</div>
 </td>
 <td>
 <div class="spriteimage icon-search-close-pdfviewer"></div>
-<div class="txt">search-close-pdfviewer</div>
 <div class="txt">Unicode:"e837"</div>
 </td>
 </tr>
@@ -7225,27 +6635,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-waterfall"></div>
-<div class="txt">waterfall</div>
 <div class="txt">Unicode:"e838"</div>
 </td>
 <td>
 <div class="spriteimage icon-Database"></div>
-<div class="txt">Database</div>
 <div class="txt">Unicode:"e839"</div>
 </td>
 <td>
 <div class="spriteimage icon-Remove-DB-report"></div>
-<div class="txt">Remove-DB-report</div>
 <div class="txt">Unicode:"e83a"</div>
 </td>
 <td>
 <div class="spriteimage icon-Rename-DB-report"></div>
-<div class="txt">Rename-DB-report</div>
 <div class="txt">Unicode:"e83b"</div>
 </td>
 <td>
 <div class="spriteimage icon-Save-As"></div>
-<div class="txt">Save-As</div>
 <div class="txt">Unicode:"e83c"</div>
 </td>
 </tr>
@@ -7253,27 +6658,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-back-icon"></div>
-<div class="txt">back-icon</div>
 <div class="txt">Unicode:"e83d"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE83e"></div>
-<div class="txt">uniE83e</div>
 <div class="txt">Unicode:"e83e"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE83f"></div>
-<div class="txt">uniE83f</div>
 <div class="txt">Unicode:"e83f"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE840"></div>
-<div class="txt">uniE840</div>
 <div class="txt">Unicode:"e840"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE841"></div>
-<div class="txt">uniE841</div>
 <div class="txt">Unicode:"e841"</div>
 </td>
 </tr>
@@ -7281,27 +6681,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-ColumnFreeze"></div>
-<div class="txt">ColumnFreeze</div>
 <div class="txt">Unicode:"e842"</div>
 </td>
 <td>
 <div class="spriteimage icon-AdvancedFiltering"></div>
-<div class="txt">AdvancedFiltering</div>
 <div class="txt">Unicode:"e843"</div>
 </td>
 <td>
 <div class="spriteimage icon-Cell-context"></div>
-<div class="txt">Cell-context</div>
 <div class="txt">Unicode:"e844"</div>
 </td>
 <td>
 <div class="spriteimage icon-ExcelExporting"></div>
-<div class="txt">ExcelExporting</div>
 <div class="txt">Unicode:"e845"</div>
 </td>
 <td>
 <div class="spriteimage icon-PDFExporting"></div>
-<div class="txt">PDFExporting</div>
 <div class="txt">Unicode:"e846"</div>
 </td>
 </tr>
@@ -7309,27 +6704,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-CSVExporting"></div>
-<div class="txt">CSVExporting</div>
 <div class="txt">Unicode:"e847"</div>
 </td>
 <td>
 <div class="spriteimage icon-FrozenHeaders"></div>
-<div class="txt">FrozenHeaders</div>
 <div class="txt">Unicode:"e848"</div>
 </td>
 <td>
 <div class="spriteimage icon-Summary-types"></div>
-<div class="txt">Summary-types</div>
 <div class="txt">Unicode:"e849"</div>
 </td>
 <td>
 <div class="spriteimage icon-ColumnheaderHyperlink"></div>
-<div class="txt">ColumnheaderHyperlink</div>
 <div class="txt">Unicode:"e84a"</div>
 </td>
 <td>
 <div class="spriteimage icon-CalculatedFields"></div>
-<div class="txt">CalculatedFields</div>
 <div class="txt">Unicode:"e84b"</div>
 </td>
 </tr>
@@ -7337,27 +6727,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-Hyperlink"></div>
-<div class="txt">Hyperlink</div>
 <div class="txt">Unicode:"e84c"</div>
 </td>
 <td>
 <div class="spriteimage icon-RTL"></div>
-<div class="txt">RTL</div>
 <div class="txt">Unicode:"e84d"</div>
 </td>
 <td>
 <div class="spriteimage icon-WordExporting"></div>
-<div class="txt">WordExporting</div>
 <div class="txt">Unicode:"e84e"</div>
 </td>
 <td>
 <div class="spriteimage icon-Exporting"></div>
-<div class="txt">Exporting</div>
 <div class="txt">Unicode:"e84f"</div>
 </td>
 <td>
 <div class="spriteimage icon-ConditionalFormatting"></div>
-<div class="txt">ConditionalFormatting</div>
 <div class="txt">Unicode:"e850"</div>
 </td>
 </tr>
@@ -7365,27 +6750,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-ColumnResizing"></div>
-<div class="txt">ColumnResizing</div>
 <div class="txt">Unicode:"e851"</div>
 </td>
 <td>
 <div class="spriteimage icon-SummaryCustomization"></div>
-<div class="txt">SummaryCustomization</div>
 <div class="txt">Unicode:"e852"</div>
 </td>
 <td>
 <div class="spriteimage icon-RowFreeze"></div>
-<div class="txt">RowFreeze</div>
 <div class="txt">Unicode:"e853"</div>
 </td>
 <td>
 <div class="spriteimage icon-Paging"></div>
-<div class="txt">Paging</div>
 <div class="txt">Unicode:"e854"</div>
 </td>
 <td>
 <div class="spriteimage icon-CellEditing"></div>
-<div class="txt">CellEditing</div>
 <div class="txt">Unicode:"e855"</div>
 </td>
 </tr>
@@ -7393,27 +6773,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-CellSelection"></div>
-<div class="txt">CellSelection</div>
 <div class="txt">Unicode:"e856"</div>
 </td>
 <td>
 <div class="spriteimage icon-NumberFormats"></div>
-<div class="txt">NumberFormats</div>
 <div class="txt">Unicode:"e857"</div>
 </td>
 <td>
 <div class="spriteimage icon-Tooltip"></div>
-<div class="txt">Tooltip</div>
 <div class="txt">Unicode:"e858"</div>
 </td>
 <td>
 <div class="spriteimage icon-ExcelLikeLayout"></div>
-<div class="txt">ExcelLikeLayout</div>
 <div class="txt">Unicode:"e859"</div>
 </td>
 <td>
 <div class="spriteimage icon-ValueCellHyperlink"></div>
-<div class="txt">CellEditing</div>
 <div class="txt">Unicode:"e85a"</div>
 </td>
 </tr>
@@ -7421,27 +6796,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-SummaryCellHyperlink"></div>
-<div class="txt">SummaryCellHyperlink</div>
 <div class="txt">Unicode:"e85b"</div>
 </td>
 <td>
 <div class="spriteimage icon-RowHeaderHyperlink"></div>
-<div class="txt">RowHeaderHyperlink</div>
 <div class="txt">Unicode:"e85c"</div>
 </td>
 <td>
 <div class="spriteimage icon-CollapseByDefault"></div>
-<div class="txt">CollapseByDefault</div>
 <div class="txt">Unicode:"e85d"</div>
 </td>
 <td>
 <div class="spriteimage icon-15"></div>
-<div class="txt">15</div>
 <div class="txt">Unicode:"e85e"</div>
 </td>
 <td>
 <div class="spriteimage icon-16"></div>
-<div class="txt">16</div>
 <div class="txt">Unicode:"e85f"</div>
 </td>
 </tr>
@@ -7449,27 +6819,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-17"></div>
-<div class="txt">17</div>
 <div class="txt">Unicode:"e860"</div>
 </td>
 <td>
 <div class="spriteimage icon-18"></div>
-<div class="txt">18</div>
 <div class="txt">Unicode:"e861"</div>
 </td>
 <td>
 <div class="spriteimage icon-19"></div>
-<div class="txt">19</div>
 <div class="txt">Unicode:"e862"</div>
 </td>
 <td>
 <div class="spriteimage icon-20"></div>
-<div class="txt">20</div>
 <div class="txt">Unicode:"e863"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE864"></div>
-<div class="txt">uniE864</div>
 <div class="txt">Unicode:"e864"</div>
 </td>
 </tr>
@@ -7477,27 +6842,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE865"></div>
-<div class="txt">uniE865</div>
 <div class="txt">Unicode:"e865"</div>
 </td>
 <td>
 <div class="spriteimage icon-22"></div>
-<div class="txt">22</div>
 <div class="txt">Unicode:"e866"</div>
 </td>
 <td>
 <div class="spriteimage icon-23"></div>
-<div class="txt">23</div>
 <div class="txt">Unicode:"e867"</div>
 </td>
 <td>
 <div class="spriteimage icon-24"></div>
-<div class="txt">24</div>
 <div class="txt">Unicode:"e868"</div>
 </td>
 <td>
 <div class="spriteimage icon-25"></div>
-<div class="txt">25</div>
 <div class="txt">Unicode:"e869"</div>
 </td>
 </tr>
@@ -7505,27 +6865,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-D-disable-icon"></div>
-<div class="txt">D-disable-icon</div>
 <div class="txt">Unicode:"e86a"</div>
 </td>
 <td>
 <div class="spriteimage icon-Text-Selection"></div>
-<div class="txt">Text-Selection</div>
 <div class="txt">Unicode:"e86b"</div>
 </td>
 <td>
 <div class="spriteimage icon-Text-Strike"></div>
-<div class="txt">Text-Strike</div>
 <div class="txt">Unicode:"e86c"</div>
 </td>
 <td>
 <div class="spriteimage icon-Text-Underline"></div>
-<div class="txt">Text-Underline</div>
 <div class="txt">Unicode:"e86d"</div>
 </td>
 <td>
 <div class="spriteimage icon-PDF-viewer-JS_Arrow"></div>
-<div class="txt">PDF-viewer-JS_Arrow</div>
 <div class="txt">Unicode:"e86e"</div>
 </td>
 </tr>
@@ -7533,27 +6888,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-Calculated-member_-Toolbar-Black-Color-Icon"></div>
-<div class="txt">Calculated-member_-Toolbar-Black-Color-Icon</div>
 <div class="txt">Unicode:"e86f"</div>
 </td>
 <td>
 <div class="spriteimage icon-Calculated-member_-Tree-View-Black-Color-Icon"></div>
-<div class="txt">Calculated-member_-Tree-View-Black-Color-Icon</div>
 <div class="txt">Unicode:"e870"</div>
 </td>
 <td>
 <div class="spriteimage icon-Disable-Cross-Hair"></div>
-<div class="txt">Disable-Cross-Hair</div>
 <div class="txt">Unicode:"e871"</div>
 </td>
 <td>
 <div class="spriteimage icon-Enable-Cross-Hair"></div>
-<div class="txt">Enable-Cross-Hair</div>
 <div class="txt">Unicode:"e872"</div>
 </td>
 <td>
 <div class="spriteimage icon-Hide"></div>
-<div class="txt">Hide</div>
 <div class="txt">Unicode:"e873"</div>
 </td>
 </tr>
@@ -7561,27 +6911,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-Icon_Collapse"></div>
-<div class="txt">Icon_Collapse</div>
 <div class="txt">Unicode:"e874"</div>
 </td>
 <td>
 <div class="spriteimage icon-Icon_Drill-Through"></div>
-<div class="txt">Icon_Drill-Through</div>
 <div class="txt">Unicode:"e875"</div>
 </td>
 <td>
 <div class="spriteimage icon-Icon_Expand"></div>
-<div class="txt">Icon_Expand</div>
 <div class="txt">Unicode:"e876"</div>
 </td>
 <td>
 <div class="spriteimage icon-Interaction"></div>
-<div class="txt">Interaction</div>
 <div class="txt">Unicode:"e877"</div>
 </td>
 <td>
 <div class="spriteimage icon-Layout"></div>
-<div class="txt">Layout</div>
 <div class="txt">Unicode:"e878"</div>
 </td>
 </tr>
@@ -7589,27 +6934,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-Legend"></div>
-<div class="txt">Legend</div>
 <div class="txt">Unicode:"e879"</div>
 </td>
 <td>
 <div class="spriteimage icon-Marker"></div>
-<div class="txt">Marker</div>
 <div class="txt">Unicode:"e87a"</div>
 </td>
 <td>
 <div class="spriteimage icon-Multiple-Rows"></div>
-<div class="txt">Multiple-Rows</div>
 <div class="txt">Unicode:"e87b"</div>
 </td>
 <td>
 <div class="spriteimage icon-No-Summary-Layout"></div>
-<div class="txt">No-Summary-Layout</div>
 <div class="txt">Unicode:"e87c"</div>
 </td>
 <td>
 <div class="spriteimage icon-Normal-Layout"></div>
-<div class="txt">Normal-Layout</div>
 <div class="txt">Unicode:"e87d"</div>
 </td>
 </tr>
@@ -7617,27 +6957,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-Rotate-45"></div>
-<div class="txt">Rotate-45</div>
 <div class="txt">Unicode:"e87e"</div>
 </td>
 <td>
 <div class="spriteimage icon-Rotate-90"></div>
-<div class="txt">Rotate-90</div>
 <div class="txt">Unicode:"e87f"</div>
 </td>
 <td>
 <div class="spriteimage icon-Smart-Labels"></div>
-<div class="txt">Smart-Labels</div>
 <div class="txt">Unicode:"e880"</div>
 </td>
 <td>
 <div class="spriteimage icon-Top-Summary-Layout"></div>
-<div class="txt">Top-Summary-Layout</div>
 <div class="txt">Unicode:"e881"</div>
 </td>
 <td>
 <div class="spriteimage icon-Track-Ball"></div>
-<div class="txt">Track-Ball</div>
 <div class="txt">Unicode:"e882"</div>
 </td>
 </tr>
@@ -7645,27 +6980,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-Trim"></div>
-<div class="txt">Trim</div>
 <div class="txt">Unicode:"e883"</div>
 </td>
 <td>
 <div class="spriteimage icon-Wrap-By-Word"></div>
-<div class="txt">Wrap-By-Word</div>
 <div class="txt">Unicode:"e884"</div>
 </td>
 <td>
 <div class="spriteimage icon-Wrap"></div>
-<div class="txt">Wrap</div>
 <div class="txt">Unicode:"e885"</div>
 </td>
 <td>
 <div class="spriteimage icon-Zoom-In"></div>
-<div class="txt">Zoom-In</div>
 <div class="txt">Unicode:"e886"</div>
 </td>
 <td>
 <div class="spriteimage icon-Zoom-Out"></div>
-<div class="txt">Zoom-Out</div>
 <div class="txt">Unicode:"e887"</div>
 </td>
 </tr>
@@ -7673,27 +7003,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE8d1"></div>
-<div class="txt">uniE8d1</div>
 <div class="txt">Unicode:"e8d1"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE8d2"></div>
-<div class="txt">uniE8d2</div>
 <div class="txt">Unicode:"e8d2"</div>
 </td>
 <td>
 <div class="spriteimage icon-Base-line_Hide"></div>
-<div class="txt">Base-line_Hide</div>
 <div class="txt">Unicode:"e900"</div>
 </td>
 <td>
 <div class="spriteimage icon-Base-line_Show"></div>
-<div class="txt">Base-line_Show</div>
 <div class="txt">Unicode:"e901"</div>
 </td>
 <td>
 <div class="spriteimage icon-RTL_Dark"></div>
-<div class="txt">RTL_Dark</div>
 <div class="txt">Unicode:"e902"</div>
 </td>
 </tr>
@@ -7701,27 +7026,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-Signature-icon-03"></div>
-<div class="txt">Signature-icon-03</div>
 <div class="txt">Unicode:"e903"</div>
 </td>
 <td>
 <div class="spriteimage icon-selection-icon-03"></div>
-<div class="txt">selection-icon-03</div>
 <div class="txt">Unicode:"e904"</div>
 </td>
 <td>
 <div class="spriteimage icon-selection-icon-05"></div>
-<div class="txt">selection-icon-05</div>
 <div class="txt">Unicode:"e905"</div>
 </td>
 <td>
 <div class="spriteimage icon-b-79"></div>
-<div class="txt">b-79</div>
 <div class="txt">Unicode:"e906"</div>
 </td>
 <td>
 <div class="spriteimage icon-b-80"></div>
-<div class="txt">b-80</div>
 <div class="txt">Unicode:"e907"</div>
 </td>
 </tr>
@@ -7729,27 +7049,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-b-81"></div>
-<div class="txt">b-81</div>
 <div class="txt">Unicode:"e908"</div>
 </td>
 <td>
 <div class="spriteimage icon-b-82"></div>
-<div class="txt">b-82</div>
 <div class="txt">Unicode:"e909"</div>
 </td>
 <td>
 <div class="spriteimage icon-b-83"></div>
-<div class="txt">b-83</div>
 <div class="txt">Unicode:"e90a"</div>
 </td>
 <td>
 <div class="spriteimage icon-b-84"></div>
-<div class="txt">b-84</div>
 <div class="txt">Unicode:"e90b"</div>
 </td>
 <td>
 <div class="spriteimage icon-b-85"></div>
-<div class="txt">b-85</div>
 <div class="txt">Unicode:"e90c"</div>
 </td>
 </tr>
@@ -7757,27 +7072,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-b-86"></div>
-<div class="txt">b-86</div>
 <div class="txt">Unicode:"e90d"</div>
 </td>
 <td>
 <div class="spriteimage icon-b-87"></div>
-<div class="txt">b-87</div>
 <div class="txt">Unicode:"e90e"</div>
 </td>
 <td>
 <div class="spriteimage icon-b-88"></div>
-<div class="txt">b-88</div>
 <div class="txt">Unicode:"e90f"</div>
 </td>
 <td>
 <div class="spriteimage icon-b-89"></div>
-<div class="txt">b-89</div>
 <div class="txt">Unicode:"e910"</div>
 </td>
 <td>
 <div class="spriteimage icon-uniE912"></div>
-<div class="txt">uniE912</div>
 <div class="txt">Unicode:"e911"</div>
 </td>
 </tr>
@@ -7785,27 +7095,22 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-uniE913"></div>
-<div class="txt">uniE913</div>
 <div class="txt">Unicode:"e912"</div>
 </td>
 <td>
 <div class="spriteimage icon-a-70"></div>
-<div class="txt">a-70</div>
 <div class="txt">Unicode:"e913"</div>
 </td>
 <td>
 <div class="spriteimage icon-a-71"></div>
-<div class="txt">a-71</div>
 <div class="txt">Unicode:"e914"</div>
 </td>
 <td>
 <div class="spriteimage icon-v-92"></div>
-<div class="txt">v-92</div>
 <div class="txt">Unicode:"e915"</div>
 </td>
 <td>
 <div class="spriteimage icon-v-93"></div>
-<div class="txt">v-93</div>
 <div class="txt">Unicode:"e916"</div>
 </td>
 </tr>
@@ -7813,7 +7118,6 @@ The complete list of EJ icons are listed in the following table. You have to use
 <tr>
 <td>
 <div class="spriteimage icon-xAxis-title"></div>
-<div class="txt">xAxis-title</div>
 <div class="txt">Unicode:"e917"</div>
 </td>
 </tr>
