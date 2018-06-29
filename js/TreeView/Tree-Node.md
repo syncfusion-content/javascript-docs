@@ -442,7 +442,7 @@ The [nodeSelect](https://help.syncfusion.com/api/js/ejtreeview#events:nodeselect
 
 ## Ensure Visibility
 
-To get the visibility status of the given TreeView node by use [isVisible](https://help.syncfusion.com/api/js/ejtreeview#methods:isvisible) method.
+To get the visibility status of the given TreeView node, you can use [isVisible](https://help.syncfusion.com/api/js/ejtreeview#methods:isvisible) method.
 You can ensure the specified tree node is visible by using [ensureVisible](https://help.syncfusion.com/api/js/ejtreeview#methods:ensurevisible) method, which expands tree nodes and scrolls the TreeView control as necessary.
 Also you can use [getVisibleNodes](https://help.syncfusion.com/api/js/ejtreeview#methods:getvisiblenodes) method to get currently visible nodes in TreeView.
 
