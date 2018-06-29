@@ -125,6 +125,7 @@ The output for NumericTextBox when enableStrictMode is “true” is as follows.
 ## Enabled or Disabled
 
 The **NumericTextBox** control has an option to enable or disable its element. You can set the **enabled** property as “**true**” to enable the NumericTextBox control.
+Also you can enable/disable the **NumericTextBox** by using [enable](https://help.syncfusion.com/api/js/ejtextboxes#methods:enable) and [disable](https://help.syncfusion.com/api/js/ejtextboxes#methods:disable) methods.
 
 ### Configure Enabled or Disabled 
 
@@ -274,6 +275,7 @@ In the HTML page set the corresponding &lt;input&gt; elements for rendering Nume
 ## Define Value
 
 The value of **NumericTextBox** can be assigned by using the **value** property. The default value for **value** property is null.
+You can get the value of **NumericTextBox** by using [getValue](https://help.syncfusion.com/api/js/ejtextboxes#methods:getvalue) method.
 
 ### Configure Value
 

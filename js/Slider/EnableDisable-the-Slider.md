@@ -16,6 +16,8 @@ api: /api/js/ejslider
 
 Using this **enabled** property you can enable/disable the **Slider**. Data type of this property is “Boolean”.
 
+Also you can enable/disable the **Slider** by using [enable](https://help.syncfusion.com/api/js/ejslider#methods:enable) and [disable](https://help.syncfusion.com/api/js/ejslider#methods:disable) methods.
+
 The following steps explains you on how to disable the **Slider**.
 
 In an **HTML** page, specify the **&lt;div&gt;** elements to render the **Default Slider**.
