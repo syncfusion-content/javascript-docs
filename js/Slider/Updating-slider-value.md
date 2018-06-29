@@ -16,7 +16,7 @@ api: /api/js/ejslider
 
 This property is used to set the value in the “**Default**” and “**Min-Range**” Sliders. By default its value is null when no value is specified. Data type of this property is “**number**”.
 You can get/set the value in the slider handle by using [getValue](https://help.syncfusion.com/api/js/ejslider#methods:getvalue) and [setValue](https://help.syncfusion.com/api/js/ejslider#methods:setValue) methods.
-Also [change](https://help.syncfusion.com/api/js/ejslider#events:change) event will be trigger whenever **Slider** value is changed.
+Also [change](https://help.syncfusion.com/api/js/ejslider#events:change) event will be triggered whenever **Slider** value is changed.
 
 ## Values
 
