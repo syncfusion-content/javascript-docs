@@ -395,7 +395,7 @@ Also [beforeEdit](https://help.syncfusion.com/api/js/ejtreeview#events:beforeedi
 
 You can select a specific node by setting index value in [selectedNode](https://help.syncfusion.com/api/js/ejtreeview#members:selectednode) property or passing node’s id/element to [selectNode](https://help.syncfusion.com/api/js/ejtreeview#methods:selectnode) method.
 To get the selected status of a given TreeView node you have to use [isSelected](https://help.syncfusion.com/api/js/ejtreeview#methods:isselected) method.  
-The [nodeClick](https://help.syncfusion.com/api/js/ejtreeview#events:nodeclick) event will be triggered whenever TreeView node is clicked. The [beforeSelect](https://help.syncfusion.com/api/js/ejtreeview#events:beforeselect) event will be triggered when TreeView node is before selected. 
+The [nodeClick](https://help.syncfusion.com/api/js/ejtreeview#events:nodeclick) event will be triggered whenever TreeView node is clicked. The [beforeSelect](https://help.syncfusion.com/api/js/ejtreeview#events:beforeselect) event will be triggered before the TreeView node is selected. 
 The [nodeSelect](https://help.syncfusion.com/api/js/ejtreeview#events:nodeselect)/[nodeUnselect](https://help.syncfusion.com/api/js/ejtreeview#events:nodeunselect) events will be triggered based on the TreeView node click operations.
 
 {% highlight js %}
