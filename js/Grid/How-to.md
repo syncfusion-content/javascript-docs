@@ -568,3 +568,62 @@ The following code example explains the above behavior.
 {% endtabs %}
 The following output is displayed as a result of the above code example.
 ![](externalsearch_images/Actionswithexternalbutton_img1.png)
+
+## Getting Datasource of Grid in Sorted Order
+
+The datasource of the Grid can be obtained in the sorted order using `sortBy` query and `executeLocal` method of DataManager.
+
+The following code example describes the above behavior.
+
+{% tabs %}
+{% highlight html %}
+<div class="content-container-fluid">
+    <div class="row">
+        <div id="sampleProperties">
+            <div class="prop-grid">
+                <div class="row">
+                    <div class="col-md-3">
+                        <input type="button" id="Sort" value="Get Sorted Data" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cols-sample-area">
+            <div id="Grid"></div>
+        </div>
+    </div>
+</div>
+{% endhighlight %}
+
+{% highlight js %}
+<script>
+    $(function () {
+        $("#Grid").ejGrid({
+            dataSource: window.gridData,
+            allowPaging: true,
+            allowSorting: true,
+            columns: [
+            { field: "OrderID" },
+            { field: "CustomerID" },
+            { field: "EmployeeID" },
+            { field: "Freight" },
+            { field: "ShipCity" },
+            { field: "ShipCountry" }
+            ]
+        });
+        $("#sort").ejButton({ click: "GetSortedData" });
+    });
+    function GetSortedData(args) {
+            var obj = $(".e-grid").ejGrid("instance");                    
+            if(obj.model.sortSettings.sortedColumns.length){        
+                  var SortedColumn = obj.model.sortSettings.sortedColumns[0].field; 
+                  var Sortdirection = obj.model.sortSettings.sortedColumns[0].direction; 
+                  var query = ej.Query().sortBy(SortedColumn, Sortdirection, false); 
+                  var SortedDatasource = ej.DataManager(obj.model.dataSource).executeLocal(query); 
+    }
+}
+</script>
+{% endhighlight %}
+
+N> This solution will work only for local data.
+
