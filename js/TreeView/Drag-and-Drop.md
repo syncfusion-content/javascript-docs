@@ -132,7 +132,9 @@ You can restrict the dragged nodes to be dropped at siblings or children’s lev
 
 ## Drag and Drop between Trees
 
-You can drag and drop tree nodes between two TreeView by setting [allowDragAndDrop](https://help.syncfusion.com/api/js/ejtreeview#members:allowdraganddrop) as true along with [allowDragAndDropAcrossControl](https://help.syncfusion.com/api/js/ejtreeview#members:allowdraganddropacrosscontrol) as true. 
+You can drag and drop tree nodes between two TreeView by setting [allowDragAndDrop](https://help.syncfusion.com/api/js/ejtreeview#members:allowdraganddrop) as true along with [allowDragAndDropAcrossControl](https://help.syncfusion.com/api/js/ejtreeview#members:allowdraganddropacrosscontrol) as true.
+The [nodeDrag](https://help.syncfusion.com/api/js/ejtreeview#events:nodedrag), [nodeDragStart](https://help.syncfusion.com/api/js/ejtreeview#events:nodedragstart), [nodeDragStop](https://help.syncfusion.com/api/js/ejtreeview#events:nodedragstop) and 
+[nodeDropped](https://help.syncfusion.com/api/js/ejtreeview#events:nodedropped) event occurs based on Treeview node drag and drop state.
 
 {% highlight js %}
 
