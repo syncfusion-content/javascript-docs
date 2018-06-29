@@ -36,7 +36,8 @@ TreeView allow you to refresh the entire tree data by using [refresh](https://he
 ## Persist updated data after edit, add and remove node
 
 TreeView allow you to persist the updated data after performing node manipulation. By using persistence option, you can sustain on page refresh.
-
+The [nodeAdd](https://help.syncfusion.com/api/js/ejtreeview#events:nodeadd), [nodeCut](https://help.syncfusion.com/api/js/ejtreeview#events:nodecut), [nodeDelete](https://help.syncfusion.com/api/js/ejtreeview#events:nodedelete) and [nodePaste](https://help.syncfusion.com/api/js/ejtreeview#events:nodepaste) events occurs based on Treeview node manipulation. The [beforeAdd](https://help.syncfusion.com/api/js/ejtreeview#events:beforeadd), 
+[beforeCut](https://help.syncfusion.com/api/js/ejtreeview#events:beforecut), [beforeDelete](https://help.syncfusion.com/api/js/ejtreeview#events:beforedelete) and [beforePaste](https://help.syncfusion.com/api/js/ejtreeview#events:beforepaste) events are triggered before the TreeView component node manipulation.
 Refer the sample from the link [PersistData](http://jsplayground.syncfusion.com/szaem5fo#) to know how to persist updated tree data after refresh.
 
 ## Filtering nodes in TreeView
@@ -58,4 +59,3 @@ You can able to display expand icon on mouse entering into TreeView and hide whi
 ## Customize the expand/collapse icons of TreeView
 
 You can able to customize the TreeView expand and collapse icon by using “cssClass” property of TreeView. Refer the sample [CustomizeIcons](http://jsplayground.syncfusion.com/jeqtepz0#) to know how to customize the expand/collapse icons.
-
