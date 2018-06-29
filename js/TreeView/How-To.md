@@ -36,8 +36,8 @@ TreeView allow you to refresh the entire tree data by using [refresh](https://he
 ## Persist updated data after edit, add and remove node
 
 TreeView allow you to persist the updated data after performing node manipulation. By using persistence option, you can sustain on page refresh.
-The [nodeAdd](https://help.syncfusion.com/api/js/ejtreeview#events:nodeadd), [nodeCut](https://help.syncfusion.com/api/js/ejtreeview#events:nodecut), [nodeDelete](https://help.syncfusion.com/api/js/ejtreeview#events:nodedelete) and [nodePaste](https://help.syncfusion.com/api/js/ejtreeview#events:nodepaste) events occurs based on Treeview node manipulation. You need to be events occurs before TreeView node manipulation by using [beforeAdd](https://help.syncfusion.com/api/js/ejtreeview#events:beforeadd), 
-[beforeCut](https://help.syncfusion.com/api/js/ejtreeview#events:beforecut), [beforeDelete](https://help.syncfusion.com/api/js/ejtreeview#events:beforedelete) and [beforePaste](https://help.syncfusion.com/api/js/ejtreeview#events:beforepaste) events.
+The [nodeAdd](https://help.syncfusion.com/api/js/ejtreeview#events:nodeadd), [nodeCut](https://help.syncfusion.com/api/js/ejtreeview#events:nodecut), [nodeDelete](https://help.syncfusion.com/api/js/ejtreeview#events:nodedelete) and [nodePaste](https://help.syncfusion.com/api/js/ejtreeview#events:nodepaste) events occurs based on Treeview node manipulation. The [beforeAdd](https://help.syncfusion.com/api/js/ejtreeview#events:beforeadd), 
+[beforeCut](https://help.syncfusion.com/api/js/ejtreeview#events:beforecut), [beforeDelete](https://help.syncfusion.com/api/js/ejtreeview#events:beforedelete) and [beforePaste](https://help.syncfusion.com/api/js/ejtreeview#events:beforepaste) events are triggered before the TreeView component node manipulation.
 Refer the sample from the link [PersistData](http://jsplayground.syncfusion.com/szaem5fo#) to know how to persist updated tree data after refresh.
 
 ## Filtering nodes in TreeView
@@ -58,8 +58,4 @@ You can able to display expand icon on mouse entering into TreeView and hide whi
 
 ## Customize the expand/collapse icons of TreeView
 
-You can able to customize the TreeView expand and collapse icon by using “cssClass” property of TreeView. Specify the [expandedNodes](https://help.syncfusion.com/api/js/ejtreeview#members:expandednodes) array of value that indicates the expandedNodes index collection as an array. It can be using [expandOn](https://help.syncfusion.com/api/js/ejtreeview#members:expandon) property that indicates the TreeView node can be expand or collapse by using the specified action.
-
-If you want set property [enableAnimation](https://help.syncfusion.com/api/js/ejtreeview#members:enableanimation) is true that indicates whether to enable or disable the animation effect while expanding or collapsing a node. When you can select [isExpanded](https://help.syncfusion.com/api/js/ejtreeview#methods:isexpanded) method to get the expand status of the given TreeView node. 
-
-If you can using [getExpandedNodes](https://help.syncfusion.com/api/js/ejtreeview#methods:getexpandenodes) method to get currently expanded nodes. Refer the sample [CustomizeIcons](http://jsplayground.syncfusion.com/jeqtepz0#) to know how to customize the expand/collapse icons. If you select nodeExpand/nodeCollapse for event occurs by using node[nodeExpand](https://help.syncfusion.com/api/js/ejtreeview#events:nodeexpand) and [nodeCollapse](https://help.syncfusion.com/api/js/ejtreeview#events:nodecollapse) events . If you want to be event occurs before expand/collapse node by using [beforeExpand](https://help.syncfusion.com/api/js/ejtreeview#events:beforeedit) and [beforeCollapse](https://help.syncfusion.com/api/js/ejtreeview#events:beforecollapse) events.
+You can able to customize the TreeView expand and collapse icon by using “cssClass” property of TreeView. Refer the sample [CustomizeIcons](http://jsplayground.syncfusion.com/jeqtepz0#) to know how to customize the expand/collapse icons.
