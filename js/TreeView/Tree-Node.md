@@ -70,8 +70,8 @@ Selected state of the node<br/><br/></td></tr>
 ## Get/Set Node Value
 
 TreeView provides a set of options to configure all its properties by setting and getting values at initialization or dynamically.
-To get the node **data**, you can use [getNode](https://help.syncfusion.com/api/js/ejtreeview#methods:getnode) method as shown in the below code example, in which on button click action the node value has retrieved.
-Also you can get the text value **of tree node** by using [getText](https://help.syncfusion.com/api/js/ejtreeview#methods:gettext) method.
+To get the node data, you can use [getNode](https://help.syncfusion.com/api/js/ejtreeview#methods:getnode) method as shown in the below code example, in which on button click action the node value has retrieved.
+Also you can get the text value of tree node by using [getText](https://help.syncfusion.com/api/js/ejtreeview#methods:gettext) method.
 
 {% highlight js %}
 
@@ -394,10 +394,9 @@ Also [beforeEdit](https://help.syncfusion.com/api/js/ejtreeview#events:beforeedi
 ## Selection
 
 You can select a specific node by setting index value in [selectedNode](https://help.syncfusion.com/api/js/ejtreeview#members:selectednode) property or passing node’s id/element to [selectNode](https://help.syncfusion.com/api/js/ejtreeview#methods:selectnode) method.
-To get the selected status of a given TreeView node you have to use [isSelected](https://help.syncfusion.com/api/js/ejtreeview#methods:isselected) method. 
-The [nodeUnselect](https://help.syncfusion.com/api/js/ejtreeview#events:nodeunselect) event will be triggered when the TreeView node is unselected. 
+To get the selected status of a given TreeView node you have to use [isSelected](https://help.syncfusion.com/api/js/ejtreeview#methods:isselected) method.  
 The [nodeClick](https://help.syncfusion.com/api/js/ejtreeview#events:nodeclick) event will be triggered whenever TreeView node is clicked. The [beforeSelect](https://help.syncfusion.com/api/js/ejtreeview#events:beforeselect) event will be triggered when TreeView node is before selected. 
-The [nodeSelect](https://help.syncfusion.com/api/js/ejtreeview#events:nodeselect) event will be triggered when TreeView node is selected.
+The [nodeSelect](https://help.syncfusion.com/api/js/ejtreeview#events:nodeselect) event will be triggered when TreeView node is selected and if the TreeView node is unselected then [nodeUnselect](https://help.syncfusion.com/api/js/ejtreeview#events:nodeunselect) event will be triggered.
 
 {% highlight js %}
 
