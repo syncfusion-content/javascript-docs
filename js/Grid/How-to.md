@@ -618,8 +618,8 @@ The following code example describes the above behavior.
             var obj = $(".e-grid").ejGrid("instance");                    
             if(obj.model.sortSettings.sortedColumns.length){        
                   var SortedColumn = obj.model.sortSettings.sortedColumns[0].field; 
-                  var Sortdirection = obj.model.sortSettings.sortedColumns[0].direction; 
-                  var query = ej.Query().sortBy(SortedColumn, Sortdirection, false); 
+                  var SortDirection = obj.model.sortSettings.sortedColumns[0].direction; 
+                  var query = ej.Query().sortBy(SortedColumn, SortDirection, false); 
                   var SortedDatasource = ej.DataManager(obj.model.dataSource).executeLocal(query); 
     }
 }
