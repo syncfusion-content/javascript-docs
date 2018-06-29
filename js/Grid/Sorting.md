@@ -223,3 +223,5 @@ N> You can get the field and sorted direction of the column by using [`getsortCo
 The following output is displayed as a result of the previous code example.
 
 ![](sorting_images/sorting_img6.png)
+
+N> To get the sorted data of the grid after sorting a column you can refer the [`How To`](https://help.syncfusion.com/js/grid/how-to "Getting Sorted Data of Grid").
