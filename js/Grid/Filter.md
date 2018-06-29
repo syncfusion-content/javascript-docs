@@ -123,7 +123,7 @@ Boolean Filter
 
 You can enable excel menu by setting  [`filterSettings.filterType`](https://help.syncfusion.com/api/js/ejgrid#members:filtersettings-filtertype "filterSettings.filterType") as `excel`. The excel menu contains an option such as Sorting, Clear filter, submenu for advanced filtering.
 
-We can disable the interdeterminate state of checkbox in excel filter dialog by setting  [`filterSettings.enableInterDeterminateState`](https://help.syncfusion.com/api/js/ejgrid#members:filtersettings-enableinterdeterminatestate "filterSettings.enableInterDeterminateState") as `false`.
+We can disable the interDeterminate state of checkbox in excel filter dialog by setting  [`filterSettings.enableInterDeterminateState`](https://help.syncfusion.com/api/js/ejgrid#members:filtersettings-enableinterdeterminatestate "filterSettings.enableInterDeterminateState") as `false`.
 
 The following code example describes the above behavior.
 
