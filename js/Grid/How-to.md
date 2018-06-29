@@ -569,6 +569,7 @@ The following code example explains the above behavior.
 The following output is displayed as a result of the above code example.
 ![](externalsearch_images/Actionswithexternalbutton_img1.png)
 
+
 ## Getting Datasource of Grid in Sorted Order
 
 The datasource of the Grid can be obtained in the sorted order using `sortBy` query and `executeLocal` method of DataManager.
