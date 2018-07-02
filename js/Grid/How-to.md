@@ -572,7 +572,7 @@ The following output is displayed as a result of the above code example.
 
 ## Getting Datasource of Grid in Sorted Order
 
-The datasource of the Grid can be obtained in the sorted order using `sortBy` query and `executeLocal` method of DataManager.
+Grid column can be sorted and after sorting, the datasource can be obtained in the same order using `sortBy` query and `executeLocal` method of DataManager.
 
 The following code example describes the above behavior.
 
@@ -615,12 +615,14 @@ The following code example describes the above behavior.
         $("#sort").ejButton({ click: "GetSortedData" });
     });
     function GetSortedData(args) {
-            var obj = $(".e-grid").ejGrid("instance");                    
-            if(obj.model.sortSettings.sortedColumns.length){        
-                  var SortedColumn = obj.model.sortSettings.sortedColumns[0].field; 
-                  var SortDirection = obj.model.sortSettings.sortedColumns[0].direction; 
-                  var query = ej.Query().sortBy(SortedColumn, SortDirection, false); 
-                  var SortedDatasource = ej.DataManager(obj.model.dataSource).executeLocal(query); 
+            var obj = $(".e-grid").ejGrid("instance");   
+            var Sort = obj.model.sortSettings.sortedColumns;  
+            var query = ej.Query();               
+            if(obj.model.sortSettings.sortedColumns.length){
+                for(var i=Sort.length-1;i>=0;i--){        
+                  query.sortBy(Sort[i].field, Sort[i].direction); 
+                }
+            var SortedDatasource = ej.DataManager(obj.model.dataSource).executeLocal(query); 
     }
 }
 </script>
