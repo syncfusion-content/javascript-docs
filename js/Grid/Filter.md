@@ -17,6 +17,8 @@ The Grid supports three types of filter, they are
 2. Menu 
 3. Excel
 
+Using [`columns.filterType`](https://help.syncfusion.com/api/js/ejgrid#members:columns-filtertype "columns.filterType") property we can render the excel or menu filter dialog to the grid columns. It works when grid is in either menu or excel filter mode.
+
 And also four types of filter menu is available in all filter types, they are
 
 1. String 
@@ -69,8 +71,6 @@ You can enable menu filter by setting [`filterSettings.filterType`](https://help
 There is an option to show or hide the additional filter options in the menu by setting [`filterSettings.showPredicate`](https://help.syncfusion.com/api/js/ejgrid#members:filtersettings-showpredicate "filterSettings.showPredicate") as `true` or `false` respectively.
 
 N> For [`filterType`](https://help.syncfusion.com/api/js/ejgrid#members:filtersettings-filtertype "filterType") property you can assign either `string` value ("menu") or `enum` value (`ej.Grid.FilterType.Menu`).
-
-Using [`columns.filterType`](https://help.syncfusion.com/api/js/ejgrid#members:columns-filtertype "columns.filterType") property we can render the excel or menu filter dialog to the grid columns.
 
 We can also filter a specified range of values by using the `between` operator for the column type `number`, `date` and `datetime`.
 
