@@ -1155,7 +1155,29 @@ The following output is displayed as a result of the above code example.
 
 ![](columns_images/columns_img40.png)
 
+We can modify the visibility of grid lines by using [`gridLines`](https://help.syncfusion.com/api/js/ejgrid#members:gridlines "gridLines") property.
 
+The following code example describes the above behavior.
+
+{% highlight html %}
+<div id="Grid"></div>
+{% endhighlight %}
+
+{% highlight javascript %}
+$(function () {
+            $("#Grid").ejGrid({
+                dataSource: window.gridData,
+                allowPaging:true,
+                gridLines:ej.Grid.GridLines.Horizontal,        
+                pageSettings:{pageSize:8},
+                columns : ["OrderID", "EmployeeID", "CustomerID", "ShipCountry", "Freight"]
+            });
+});
+{% endhighlight %}
+
+The following output is displayed as a result of the above code example.
+
+![](columns_images/columns_img41.png)
 
 ## Type
 

@@ -229,7 +229,7 @@ Custom context menu is used to create your own menu item and its action. To add 
 
 ## Sub Context Menu
 
-Sub context menu is used to add customized sub menu to the custom context menu item. To add a sub context menu, you need to use [`contextMenuSettings.subContextMenu.subMenu `](https://help.syncfusion.com/api/js/ejgrid#members:contextmenusettings-subcontextmenu-submenu  "contextMenuSettings.subContextMenu.subMenu ") property and to bind required actions for this, use the [`contextClick`](https://help.syncfusion.com/api/js/ejgrid#events:contextclick "contextClick") event.
+[`subContextMenu  `](https://help.syncfusion.com/api/js/ejgrid#members:contextmenusettings-subcontextmenu  "subContextMenu ") is used to add customized sub menu to the custom context menu item. To add a sub context menu, you need to use [`contextMenuSettings.subContextMenu.subMenu `](https://help.syncfusion.com/api/js/ejgrid#members:contextmenusettings-subcontextmenu-submenu  "contextMenuSettings.subContextMenu.subMenu ") property and to bind required actions for this, use the [`contextClick`](https://help.syncfusion.com/api/js/ejgrid#events:contextclick "contextClick") event.
 
 Use [`contextMenuSettings.subContextMenu.contextMenuItem `](https://help.syncfusion.com/api/js/ejgrid#members:contextmenusettings-subcontextmenu-contextmenuitem  "contextMenuSettings.subContextMenu.contextMenuItem ") property to get or set the corresponding custom context menu item to which the submenu to be appended.
 
