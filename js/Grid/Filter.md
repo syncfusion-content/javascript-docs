@@ -17,7 +17,7 @@ The Grid supports three types of filter, they are
 2. Menu 
 3. Excel
 
-Using [`columns.filterType`](https://help.syncfusion.com/api/js/ejgrid#members:columns-filtertype "columns.filterType") property we can render the excel or menu filter dialog to the columns of same grid. It works when grid is in either menu or excel filter mode.
+Using [`columns.filterType`](https://help.syncfusion.com/api/js/ejgrid#members:columns-filtertype "columns.filterType") property we can render the excel and menu filter dialog to the columns of same grid. It works when grid is in either menu or excel filter mode.
 
 And also four types of filter menu is available in all filter types, they are
 
