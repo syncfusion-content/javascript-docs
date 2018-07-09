@@ -24,8 +24,7 @@ KeySettings Property</th></tr>
 <tr>
 <td>
 Alt + j</td><td>
-Focus the Grid</td><td>
--</td></tr>
+Focus the Grid</td></tr>
 <tr>
 <td>
 Insert</td><td>
