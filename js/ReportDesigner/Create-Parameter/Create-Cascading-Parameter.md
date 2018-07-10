@@ -117,7 +117,7 @@ Go through the [CreateParameter](Create-Parameter-FilterDS) topic to know about 
       SELECT DISTINCT Name AS Category FROM Production.ProductCategory 
    ```
 
-   Here column name **Name** and table **ProductCategory** has been represented in above query to create dataset for independent paramater `Category`.
+   Here column name **Name** and table **ProductCategory** has been represented in above query to create dataset for independent parameter `Category`.
 
     ![](Cascade-Parameter-Images/Cascade-RP1-Dataset.png)
 
@@ -179,7 +179,7 @@ Next, you need to create datasets for dependent parameters and assign values. Fo
           WHERE PC.Name = (@Category)
     ```
 
-   Here column name **Name** and table **ProductSubCategory** has been represented in above query which joins with table **ProductCategory** and includes condition with independent parameter `Category` to create dataset for dependent paramater `SubCategory`.
+   Here column name **Name** and table **ProductSubCategory** has been represented in above query which joins with table **ProductCategory** and includes condition with independent parameter `Category` to create dataset for dependent parameter `SubCategory`.
 
     ![](Cascade-Parameter-Images/Cascade-RP2-Dataset.png)
 
@@ -203,7 +203,7 @@ Next, you need to create datasets for dependent parameters and assign values. Fo
                     WHERE (PC.Name = (@Category)
                     AND PSC.Name = (@Subcategory))
     ```
-    Here column name **Name** and table **Product** has been represented in above query which joins with tables **ProductSubCategory** and **ProductCategory** to add condition with independent parameter `Category` and dependent parameter `Subcategory` for creating dataset for dependent paramater `Product`.
+    Here column name **Name** and table **Product** has been represented in above query which joins with tables **ProductSubCategory** and **ProductCategory** to add condition with independent parameter `Category` and dependent parameter `Subcategory` for creating dataset for dependent parameter `Product`.
 
      ![](Cascade-Parameter-Images/Cascade-RP3-Dataset.png)
 

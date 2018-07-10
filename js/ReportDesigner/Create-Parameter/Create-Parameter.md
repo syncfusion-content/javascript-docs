@@ -158,7 +158,7 @@ Now, the `Parameter` has been created successfully with the Web Report Designer.
 
 ## To display the parameter in design area
 
-You can prefer to display the parameters in a textbox placed anywhere in the design area for sharing the information of parameter choosen.
+You can prefer to display the parameters in a textbox placed anywhere in the design area for sharing the information of parameter chosen.
 
 The parameter can be placed easily in design area using below steps:
 
