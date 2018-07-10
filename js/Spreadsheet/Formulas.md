@@ -355,3 +355,78 @@ To sum a row or column of numbers, select a cell next to the numbers you want to
 The auto sum options in ribbon is used to perform basic operations like sum, average, count, minimum, maximum etc.
 
 You can also perform auto sum operations by using [`autoSum`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlribbon-autosum "autoSum")method.
+
+## Array Formula
+
+Array formula gives multiple results to the selected cells based on the provided formula and the formula reference values. It evaluates all individual values in the formula reference. you can achieve this array formula by pressing the ctrl+shift+enter.
+
+### Types of Array Formula
+
+1. Single Array Formula
+
+2. Multiple Array Formula
+
+#### Single Array Formula
+
+The selected range is single cell is called Single array formula. And you can modify the Single Array formula to default formula anytime by editing the formula cell.
+
+#### Multiple Array Formula
+
+The selected range contains multiple cells is called Multiple array formula. And you can’t modify it once the multiple array formula is created.
+
+You can achieve this by the following steps,
+
+1.	Enter the values in A1:B3
+
+2.	Select a range C1:D3
+
+3.	Give the formula =A1:A3 * B1:B3 in the formula Bar and press Ctrl + Shift + Enter key to perform the array formula.
+
+4.	This formula is applied to all the selected cells with Curly braces ({=A1:A3 * B1:B3}) and displayed the calculated results.
+
+Please find the output screen below.
+![](Formulas_images/Formula_img6.png)
+
+## Structured references with Table
+
+The combination of Table and Column name is called as Structured reference. The names in structured reference adjust whenever the table data is modified. Table names and column header names are assigned while creating Tables. So, you can refer the Table cell value by using the Structured reference. The column header name should be enclosed with “[]”. This can be done by following ways.
+
+1.	Enter the formula and define the structured reference by manually entering the column header name and table names.
+2.	Enter the formula and Selecting the cell references will automatically update the column header names and Table names.
+
+### Structured reference 
+
+The Structured references look like below,
+
+1.	The created Table Name is “Order”
+
+2.	The column header names are “OrderID, Price, Count, Amount “.
+
+3.	The formula should be “=SUM(Order[Amount])”
+
+### Structured reference components
+
+*	Table Name: Order is a table name. It references the table data without header and total rows.
+*	Column Specifier: [OrderID], [Price] are column specifiers. They reference the column data, without any column header and total row.
+*	Item Specifier: [#All] and [#Data] are special item specifiers, that refers to the exact portion of the table
+
+### Column Specifier
+
+1.	The created Table Name is “Order”
+2.	The column header names are “OrderID, Price, Count, Amount “.
+3.	The formula should be “=SUM(Order[Amount])”, here Amount is the Column Specifier.
+
+Please find the Column Specifier output screen below,
+![](Formulas_images/Formula_img7.png)
+
+### Item Specifier
+
+1.	The created Table Name is “Order”
+2.	The column header names are “OrderID, Price, Count, Amount “.
+3.	The formula should be “=SUM(Order[#All])”, here All is the Item Specifier.
+
+Please find the Item Specifier output screen below,
+![](Formulas_images/Formula_img8.png)
+
+
+
