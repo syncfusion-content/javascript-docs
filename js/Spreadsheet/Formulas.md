@@ -362,9 +362,9 @@ Array formula gives multiple results to the selected cells based on the provided
 
 ### Types of Array Formula
 
-*  Single Array Formula
+* Single Array Formula
 
-*  Multiple Array Formula
+* Multiple Array Formula
 
 #### Single Array Formula
 
@@ -376,10 +376,10 @@ The selected range contains multiple cells is called Multiple array formula. And
 
 You can achieve this by the following steps,
 
-1.	Enter the values in A1:B3
-2.	Select a range C1:D3
-3.	Give the formula =A1:A3 * B1:B3 in the formula Bar and press Ctrl + Shift + Enter key to perform the array formula.
-4.	This formula is applied to all the selected cells with Curly braces ({=A1:A3 * B1:B3}) and displayed the calculated results.
+1. Enter the values in A1:B3
+2. Select a range C1:D3
+3. Give the formula =A1:A3 * B1:B3 in the formula Bar and press Ctrl + Shift + Enter key to perform the array formula.
+4. This formula is applied to all the selected cells with Curly braces ({=A1:A3 * B1:B3}) and displayed the calculated results.
 
 Please find the output screen below.
 ![](Formulas_images/Formula_img6.png)
@@ -393,39 +393,39 @@ The combination of Table and Column name is called as Structured reference. The 
 
 You can create the structured reference with table by the following steps:
 
-1.	The created Table Name is “Order”
+1. The created Table Name is “Order”
 
-2.	The column header names are “OrderID, Price, Count, Amount “.
+2. The column header names are “OrderID, Price, Count, Amount “.
 
-3.	The formula should be “=SUM(Order[Amount])”
+3. The formula should be “=SUM(Order[Amount])”
 
 ### Structured reference components
 
-*  Table Name
+* Table Name
 
-*  Column Specifier
+* Column Specifier
 
-*  Item Specifier
+* Item Specifier
 
 
 ### Table Name
 
-*  Order is a table name. It references the table data without header and total rows.
+* Order is a table name. It references the table data without header and total rows.
 
 ### Column Specifier
 
-*   [OrderID], [Price] are column specifiers. They reference the column data, without any column header and total row.
+* [OrderID], [Price] are column specifiers. They reference the column data, without any column header and total row.
 
-*	The formula should be “=SUM(Order[Amount])”, here Amount is the Column Specifier.
+* The formula should be “=SUM(Order[Amount])”, here Amount is the Column Specifier.
 
 Please find the Column Specifier output screen below,
 ![](Formulas_images/Formula_img7.png)
 
 ### Item Specifier
 
-*   [#All] and [#Data] are special item specifiers, that refers to the exact portion of the table.
+* [#All] and [#Data] are special item specifiers, that refers to the exact portion of the table.
 
-*	The formula should be “=SUM(Order[#All])”, here All is the Item Specifier.
+* The formula should be “=SUM(Order[#All])”, here All is the Item Specifier.
 
 Please find the Item Specifier output screen below,
 ![](Formulas_images/Formula_img8.png)
