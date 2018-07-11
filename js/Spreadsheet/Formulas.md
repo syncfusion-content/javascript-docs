@@ -425,10 +425,16 @@ Please find the Column Specifier output screen below,
 
 * [#All] and [#Data] are special item specifiers, that refers to the exact portion of the table.
 
-* The formula should be “=SUM(Order[#All])”, here All is the Item Specifier.
+* To differentiate the [#All] and [#Data], you can enable the Total Row of the table.
+
+* The formula should be “=SUM(Order[#All])”, here All is the Item Specifier. In this formula calculates the sum of the entire table including Total row.
 
 Please find the Item Specifier output screen below,
 ![](Formulas_images/Formula_img8.png)
 
+* The formula should be “=SUM(Order[#Data])”, here Data is the Item Specifier. In this formula calculates only the data of the table.
+
+Please find the Item Specifier output screen below,
+![](Formulas_images/Formula_img9.png)
 
 
