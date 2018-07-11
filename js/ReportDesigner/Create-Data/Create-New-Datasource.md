@@ -1,4 +1,4 @@
-][l---
+---
 layout: post
 title: Connecting to new data source with Syncfusion Web Report Designer
 description: How to connect a new data source with Syncfusion Web Report Designer
