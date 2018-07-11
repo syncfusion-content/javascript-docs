@@ -388,8 +388,8 @@ Please find the output screen below.
 
 The combination of Table and Column name is called as Structured reference. The names in structured reference adjust whenever the table data is modified. Table names and column header names are assigned while creating Tables. So, you can refer the Table cell value by using the Structured reference. The column header name should be enclosed with “[]”. This can be done by following ways.
 
-*	Enter the formula and define the structured reference by manually entering the column header name and table names.
-*	Enter the formula and Selecting the cell references will automatically update the column header names and Table names.
+* Enter the formula and define the structured reference by manually entering the column header name and table names.
+* Enter the formula and Selecting the cell references will automatically update the column header names and Table names.
 
 You can create the structured reference with table by the following steps:
 
