@@ -615,7 +615,7 @@ The following code example describes the above behavior.
         $("#sort").ejButton({ click: "GetSortedData" });
     });
     function GetSortedData(args) {
-            var obj = $("Grid").ejGrid("instance");   
+            var obj = $("#Grid").ejGrid("instance");   
             var Sort = obj.model.sortSettings.sortedColumns;  
             var query = ej.Query();               
             if(obj.model.sortSettings.sortedColumns.length){
