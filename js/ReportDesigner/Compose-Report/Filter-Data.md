@@ -40,11 +40,11 @@ To add the filter, specify one or more conditions; the conditions are filter equ
 
 4. In the **Operator** box, select the operator to compare the values in the **Expression** box and the **Value** box.
 
-    ![](Filter-Data-Images/Operators.png)
+   ![](Filter-Data-Images/Operators.png)
 
-    To filter specific range of data use **Between** operator.
+   To filter specific range of data use **Between** operator.
 
-    ![](Filter-Data-Images/Between-Operator.png)
+   ![](Filter-Data-Images/Between-Operator.png)
 
 4. In the **Value** box, edit/create an expression using icon next to this field and following step 3 instructions or type value directly.
 
