@@ -12,13 +12,13 @@ api: /api/js/ejreportdesigner
 
 ### Rename column
 
- Rename the column, if required, by double-clicking the column to enable the edit mode.
+Rename the column, if required, by double-clicking the column to enable the edit mode.
 
 ![](images/Rename-Column.png)
 
 ### Exclude column
 
- Exclude the column that you requisite, by clicking the icon at left of the respective column. The excluded column will be represented like below:
+Exclude the column that you requisite, by clicking the icon at left of the respective column. The excluded column will be represented like below:
 
 ![](images/Hide-Column.png)
 

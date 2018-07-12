@@ -32,11 +32,11 @@ You can follow the below steps to create main dataset:
 
 2. Click `Create New`, will launch the below wizard.
 
-  ![](Cascade-Parameter-Images/Existing-DatsourceWizard.png)
+   ![](Cascade-Parameter-Images/Existing-DatsourceWizard.png)
 
 3. Choose `Create New` option to create new datasource or choose `Existing` to pick existing one. For example, we have picked existing data source `AdventureWorks` from the drop-down list.
 
-  ![](Cascade-Parameter-Images/Existing-Datsource-Select.png)
+   ![](Cascade-Parameter-Images/Existing-Datsource-Select.png)
 
 4. Click `Connect Datasource` to move to the query designer view.
 
@@ -93,7 +93,7 @@ You can follow the below steps to create main dataset:
    * In **@Subcategory** parameter, we have typed `Brakes` as value.
    * In **@Product** parameter, we have typed `Front Brakes` as value.
 
-  ![](Cascade-Parameter-Images/Cascade-Query-Parameter2.png)
+   ![](Cascade-Parameter-Images/Cascade-Query-Parameter2.png)
    
 9. Click `Ok`. The result set now contains a list of sales order numbers that are grouped by date for front brakes.
 
@@ -267,19 +267,19 @@ Next, you have to set the properties for the dependent parameters **Subcategory*
 
 3. From the dependent parameters **Subcategory** and **Product** drop-down list, select **Brakes** and **Front Brakes**.
 
-> Note: When you select each successive parameter, the drop-down list for the next parameter shows only the valid values that are based on your previous choices.
+   > Note: When you select each successive parameter, the drop-down list for the next parameter shows only the valid values that are based on your previous choices.
 
 4. Click `View Report` button in viewer toolbar.
 
    The report displays sales order numbers with order quantity and line totals for orders that include the "front brakes" product.
 
-  ![](Cascade-Parameter-Images/Parameter-ViewerICon-Preview.png)
+   ![](Cascade-Parameter-Images/Parameter-ViewerICon-Preview.png)
 
 
 5. Click the `Parameter` icon in the viewer toolbar to hide the parameter fields.
 
-![](Cascade-Parameter-Images/Parameter-ViewerICon.png)
+   ![](Cascade-Parameter-Images/Parameter-ViewerICon.png)
 
 Now, the preview will be displayed like below:
 
-  ![](Cascade-Parameter-Images/Cascade-Preview-Result.png)
+![](Cascade-Parameter-Images/Cascade-Preview-Result.png)

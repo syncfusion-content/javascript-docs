@@ -30,9 +30,9 @@ An embedded image added in a report will be always available to that report. The
 
    ![](ImageManager-images/Image-ListView.png)
 
-    > Note: Only one image can be imported at a time. To add more images repeat steps 2 to 4.
+   > Note: Only one image can be imported at a time. To add more images repeat steps 2 to 4.
 
-    ![](ImageManager-images/Image-ListView2.png)
+   ![](ImageManager-images/Image-ListView2.png)
 
 ### Add an Embedded Image to Report
 
@@ -46,4 +46,4 @@ An embedded image added in a report will be always available to that report. The
 
 > Note: By default, the image will be added to the body area, you can also drag the image to the header and footer.
 
-    ![](ImageManager-images/Header-FooterImage.png)
+![](ImageManager-images/Header-FooterImage.png)

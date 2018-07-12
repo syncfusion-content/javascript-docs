@@ -28,21 +28,21 @@ Now the expression dialog will be launched.
 
 * Enter a suitable name for the expression in the `Name` text area available in right pane. By default, it will be `Expression1`.
 
-![](Expression-Images/QueryExp-Value.PNG)
+  ![](Expression-Images/QueryExp-Value.PNG)
 
 * Define an expression in an **Expression** text area. The syntax for defining a simple expression is,
 
-   `{function name(}[columnname]{operator[columnname])…}`
+  `{function name(}[columnname]{operator[columnname])…}`
 
-   where, content within curly braces is optional.
+  where, content within curly braces is optional.
 
-   Some expressions for reference:
+  Some expressions for reference:
 
-   1)	YEAR([Order Date]) – To compute year of order date.
+  1. YEAR([Order Date]) – To compute year of order date.
 
-   2)	[Freight]+100 – To compute the total with 100 added to Freight.
+  2. [Freight]+100 – To compute the total with 100 added to Freight.
 
-   Following built-in functions are supported in Expression Designer.
+  Following built-in functions are supported in Expression Designer.
 
    <table>
    <tr>
@@ -519,7 +519,7 @@ Now the expression dialog will be launched.
 
 * Click `Close` icon to remove the selected expression column.
 
-    ![](Expression-Images/Exp-Delete.png)
+  ![](Expression-Images/Exp-Delete.png)
 
 ## Edit an Expression Column
 

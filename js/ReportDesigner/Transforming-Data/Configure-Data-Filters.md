@@ -26,9 +26,9 @@ Now, the data filter dialog will be launched.
 
 1. Add a filter condition by clicking the `Add` icon in the dialog.
 
-    ![](Data-Filters-Images/Query-Add.png)
+   ![](Data-Filters-Images/Query-Add.png)
 
-    To add a filter, specify one or more filter conditions. A filter equation consists of field name that identifies which field data need to be filtered, an operator, and the value to compare.
+   To add a filter, specify one or more filter conditions. A filter equation consists of field name that identifies which field data need to be filtered, an operator, and the value to compare.
 
 2. In **Field** dropdown, select the field to filter.
 
@@ -36,19 +36,18 @@ Now, the data filter dialog will be launched.
 
 4. In the **Value** field, type the value against which the data need to be filtered.
 
-    ![](Data-Filters-Images/Filter-Condition.png)
+   ![](Data-Filters-Images/Filter-Condition.png)
 
 5. More than one filter condition can be defined by following above steps.
 
-    ![](Data-Filters-Images/Query-FilterMultiple.png)
+   ![](Data-Filters-Images/Query-FilterMultiple.png)
 
 6. Execute the query. Now, the `OrderID` with data less than or equal to **10295** and `EmployeeID` equal to **8** will be displayed in the preview.
 
-    ![](Data-Filters-Images/Preview-Data.png)
+   ![](Data-Filters-Images/Preview-Data.png)
 
 ### Removing a filter condition
 
 Remove a filter condition by clicking the `close` icon at left of the respective filter condition.
 
 ![](Data-Filters-Images/Close-Icon.png)
- 

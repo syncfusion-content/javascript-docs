@@ -12,10 +12,10 @@ api: /api/js/ejreportdesigner
 
 * In the configuration panel, click the `Parameters` icon. Hover the cursor on the parameter which you want to edit from the list of parameters.
 
-![](Edit-Parameter-Images/Parameter-Edit-Icon.png)
+  ![](Edit-Parameter-Images/Parameter-Edit-Icon.png)
 
 * Click the `menu` icon in the above image, will display the context menu. Choose `Edit` from the context menu, the report parameter wizard opens.
   
-![](Edit-Parameter-Images/Parameter-Context-Menu.png)
+  ![](Edit-Parameter-Images/Parameter-Context-Menu.png)
 
 * Now, you can edit the parameter properties.

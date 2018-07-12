@@ -20,15 +20,15 @@ You can add new parameter using the following steps:
 
 1. Click `Parameter` icon in the configuration panel to launch the `Parameter` configuration.
 
-![](Create-Parameter-Images/Parameter-DataPane.png)
+   ![](Create-Parameter-Images/Parameter-DataPane.png)
 
 2. Next, click the `New Parameter` button.
 
-![](Create-Parameter-Images/New-Parameter.png)
+   ![](Create-Parameter-Images/New-Parameter.png)
 
-Now, the following wizard will be displayed.
+   Now, the following wizard will be displayed.
 
-![](Create-Parameter-Images/New-Parameter-Fields.png)
+   ![](Create-Parameter-Images/New-Parameter-Fields.png)
 
 3. In **Name**, type the name of the parameter or use default name. By default, manually-created parameters name are similar to `ReportParameter1`.
 
@@ -38,11 +38,11 @@ Now, the following wizard will be displayed.
 
 6. Select **Allow blank value**, if parameter value needs to be set as an empty string or a blank value.
 
-  > Note: If you specify valid values for a parameter, and you want a blank value to be one of the valid values, you must include it as one of the values that you specify. Selecting this option does not automatically include a blank value for available values.
+   > Note: If you specify valid values for a parameter, and you want a blank value to be one of the valid values, you must include it as one of the values that you specify. Selecting this option does not automatically include a blank value for available values.
 
 7. Select **Allow null value**, if the value of the parameter needs to be set as null.
 
-  > Note: If you specify valid values for a parameter, and you want null to be one of the valid values, you must include null as one of the values that you specify. Selecting this option does not automatically include the null value for available values.
+   > Note: If you specify valid values for a parameter, and you want null to be one of the valid values, you must include null as one of the values that you specify. Selecting this option does not automatically include the null value for available values.
 
 8. Select **Allow multiple values**, if the value for the parameter should be multiple values. Null values are not allowed.
 
@@ -70,11 +70,11 @@ You can choose the `Available Value` tab in parameter dialog to add available va
 
    * Click **Specify value** to enter a static list of parameter values from which the user can choose. If you select this option, a list in which you can type values and labels appears.
 
-    ![](Create-Parameter-Images/Parameter-Specify-Avail.png)
+     ![](Create-Parameter-Images/Parameter-Specify-Avail.png)
 
      * Click **Add** and then enter the value in the **Value** text box, and optionally, the label in the **Label** text box. If you do not provide the label, the value is used.
 
-     ![](Create-Parameter-Images/Parameter-Specify-Add.png)
+       ![](Create-Parameter-Images/Parameter-Specify-Add.png)
 
        You can write an expression for the value by clicking the icon which is right after to **Value** textbox.
 
@@ -84,15 +84,15 @@ You can choose the `Available Value` tab in parameter dialog to add available va
 
        To change the order of an item in the list, click and hold the icon in the left corner of **Label** text box, and then drag the item to higher or lower position in the list.
 
-       ![](Create-Parameter-Images/Parameter-Specify-Drag.png)
+         ![](Create-Parameter-Images/Parameter-Specify-Drag.png)
 
        The position of dragged item is shown as below:
 
-       ![](Create-Parameter-Images/Default-Specify-Add.png)
+         ![](Create-Parameter-Images/Default-Specify-Add.png)
 
    * Click **Query Value** to provide the name of an existing dataset that retrieves the values for this parameter.
 
-    ![](Create-Parameter-Images/Parameter-Query-Avail.png)
+     ![](Create-Parameter-Images/Parameter-Query-Avail.png)
    
      In **Dataset**, choose the name of the dataset. Datasets can be defined using the data view. For more information, refer [Create Dataset](/js/ReportDesigner/create-data/Create-New-Data).
 
@@ -104,9 +104,9 @@ You can choose the `Available Value` tab in parameter dialog to add available va
 
    * Click **None** to remove available values for parameter. When you preview the report, the drop-down list of available values for the parameter no longer appears. 
 
-> Note: If you have specified available values for a parameter, the valid values always appear as a drop-down list in preview.
-
 2. Click `OK`.
+
+> Note: If you have specified available values for a parameter, the valid values always appear as a drop-down list in preview.
 
 ### Add default values
 
@@ -114,15 +114,15 @@ Parameters will have default values to automatically run report on first view wi
 
 1. By default, the parameter dialog will be launched with `Available Value` tab. To switch over to `Default Value` tab, click the **Default Value** which has below options
 
-![](Create-Parameter-Images/Default-None.png)
+   ![](Create-Parameter-Images/Default-None.png)
 
    * Click **Specify value** to provide a value or list of values.
 
-    ![](Create-Parameter-Images/Parameter-Specify-Avail.png)
+     ![](Create-Parameter-Images/Parameter-Specify-Avail.png)
 
      * Click **Add** and then enter the value in the **Value** text box.
 
-     ![](Create-Parameter-Images/Default-Add-Expr.png)
+       ![](Create-Parameter-Images/Default-Add-Expr.png)
 
        You can write an expression for the value by clicking the icon which is right after to **Value** textbox.
 
@@ -130,7 +130,7 @@ Parameters will have default values to automatically run report on first view wi
       
    * Click **Query Value** to provide the name of an existing dataset that retrieves the values.
 
-    ![](Create-Parameter-Images/Default-Query.png)
+     ![](Create-Parameter-Images/Default-Query.png)
    
      In **Dataset**, choose the name of the dataset. Datasets can be defined using the data view. For more information, refer [Create Dataset](/js/ReportDesigner/create-data/Create-New-Data).
 
@@ -176,6 +176,6 @@ The parameter can be placed easily in design area using below steps:
 
    ![](Create-Parameter-Images/Parameter-ExpressionDialog.png)
 
-* Click ok.
+* Click `OK`.
 
 You can follow the above steps to display parameter on the page `Header` and `Body`.
