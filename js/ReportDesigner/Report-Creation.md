@@ -20,25 +20,25 @@ Add a new data source by establishing a data connection with any of the supporte
 
 Please find the steps below to set up connection for creating a RDL Dataset which will contains the information needed to retrieve a specific set of data from a data source,
 
-* Click the `Data` icon in the configuration panel to launch a `Data` configuration.
+1. Click the `Data` icon in the configuration panel to launch a `Data` configuration.
 
- ![](Report-Creation-Images/Datasource-Start.png)
+   ![](Report-Creation-Images/Datasource-Start.png)
 
-* Next, click the `Add DataSet` button in `Data` panel.
+2. Next, click the `Add DataSet` button in `Data` panel.
 
-![](Report-Creation-Images/Dataset-CreateWizard.png)
+   ![](Report-Creation-Images/Dataset-CreateWizard.png)
 
-* Then, click `Create New` in the context menu, it will launch connection type panel. In the connection type panel, click on the data source type that you want to connect. Here, `SQL` connection type is used to demonstrate.
+3. Then, click `Create New` in the context menu, it will launch connection type panel. In the connection type panel, click on the data source type that you want to connect. Here, `SQL` connection type is used to demonstrate.
 
- ![](Report-Creation-Images/SQL-Connect.png)
+   ![](Report-Creation-Images/SQL-Connect.png)
 
-In the new data source configuration panel, fill the server name and related details. 
+   In the new data source configuration panel, fill the server name and related details. 
 
-![](Report-Creation-Images/Datasource-CreateWizard.png)
+   ![](Report-Creation-Images/Datasource-CreateWizard.png)
 
-* Click the `Connect` button. Now the following view will be displayed.
+4. Click the `Connect` button. Now the following view will be displayed.
 
-![](Report-Creation-Images/Dataset-DesignView.png)
+   ![](Report-Creation-Images/Dataset-DesignView.png)
 
 You can enter the query directly in the Query Editor or use the Query Designer to build the query interactively and view the result of the query. Here, the data is created with the help of the Query Designer.
 
@@ -148,17 +148,17 @@ To bind the data to a report item that is placed in the design area, focus on th
 
 ![](Report-Creation-Images/Focus-Widget.png)
 
-* Click the `Properties` icon in the configuration panel.
+1. Click the `Properties` icon in the configuration panel.
 
-![](Report-Creation-Images/Properties-Icon.png)
+   ![](Report-Creation-Images/Properties-Icon.png)
 
-Now, the report item properties panel displayed like below:
+   Now, the report item properties panel displayed like below:
 
-![](Report-Creation-Images/Properties-Window.png)
+   ![](Report-Creation-Images/Properties-Window.png)
 
-* Click the `Data` tab in the properties panel. Now, the data assign tab switches like below:
+2. Click the `Data` tab in the properties panel. Now, the data assign tab switches like below:
 
-![](Report-Creation-Images/DataAssign-Window.png)
+   ![](Report-Creation-Images/DataAssign-Window.png)
 
 Data assign panel shows the data configuration view. The numeric columns are listed under the `Measures` section; other type columns are listed under the `Dimensions` section.
 
@@ -166,49 +166,49 @@ Data assign panel shows the data configuration view. The numeric columns are lis
 
 ### Data Assign Options
 
-1. **Drag Drop Measure Element**:
+1. **Drag Drop Measure Element**
 
-Select and drag the numeric column (measure element) from the `Measures` section that you want to visualize the data and drop into the `Y Value(s)` section.
+   Select and drag the numeric column (measure element) from the `Measures` section that you want to visualize the data and drop into the `Y Value(s)` section.
 
-![](Report-creation-Images/ColumnChart-DataAssign1.png)
+   ![](Report-creation-Images/ColumnChart-DataAssign1.png)
 
-Now, the report item preview will look like below:
+   Now, the report item preview will look like below:
 
-![](Report-Creation-Images/Gripper-AssignData.png)
+   ![](Report-Creation-Images/Gripper-AssignData.png)
 
 2. **Aggregate Options**:
 
-Click the `Settings` icon (highlighted below) to open the aggregation type drop-down list.
+   Click the `Settings` icon (highlighted below) to open the aggregation type drop-down list.
 
-![](Report-Creation-Images/Settings-Icon.png)
+   ![](Report-Creation-Images/Settings-Icon.png)
 
-You can set the aggregation type by which you can compute the selected column.
+   You can set the aggregation type by which you can compute the selected column.
 
-![](Report-Creation-Images/Aggregation-Type.png)
+   ![](Report-Creation-Images/Aggregation-Type.png)
 
 3. **Drag Drop Dimension Element**:
 
-Select and drag the dimension element from the `Dimensions` section to measure against any of the selected numeric column(s) in `Y Value(s)` section, and drop into the `Column(s)` section.  
+   Select and drag the dimension element from the `Dimensions` section to measure against any of the selected numeric column(s) in `Y Value(s)` section, and drop into the `Column(s)` section.  
 
-![](Report-Creation-Images/DragColumn-Section.png)
+   ![](Report-Creation-Images/DragColumn-Section.png)
 
-Now, the report item preview will look like below:
+   Now, the report item preview will look like below:
 
-![](Report-Creation-Images/Column-Chart2.png)
+   ![](Report-Creation-Images/Column-Chart2.png)
 
 4. **Grouping**:
 
-You can group the added column element with another column, by adding the respective dimension element into Row(s) section.
+   You can group the added column element with another column, by adding the respective dimension element into Row(s) section.
 
-![](Report-Creation-Images/Row-DragColumn.png)
+   ![](Report-Creation-Images/Row-DragColumn.png)
 
-Now, the report item design will look like below.
+   Now, the report item design will look like below.
 
-![](Report-Creation-Images/Column-Chart3.png)
+   ![](Report-Creation-Images/Column-Chart3.png)
 
 5. **Filtering**:
 
-You can filter the data from getting bounded to report item, by applying filters to the selected measure type or dimension type columns.
+   You can filter the data from getting bounded to report item, by applying filters to the selected measure type or dimension type columns.
 
 ## Configuring report item
 

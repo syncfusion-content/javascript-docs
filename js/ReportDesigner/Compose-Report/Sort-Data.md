@@ -12,7 +12,7 @@ api: /api/js/ejreportdesigner
 
 Sorting controls the order in which the data appears in a data region. Sort data in a dataset query, or define a sort expression for a data region or group. 
 
- ![](Sort-Data-Images/Sort-Dialog.png)
+![](Sort-Data-Images/Sort-Dialog.png)
 
 For each sort expression, follow these steps:
 
