@@ -26,11 +26,11 @@ To create a new `Web Forms` in the application follow the below steps.
 
 1. Right-Click on the project and select `Add`. 
 
-   ![](Images/JS-Sample-Img2.png)
+    ![](Images/JS-Sample-Img2.png)
 
 2. Click `New Item` and select `HTML` page from the listed templates.
 
-   ![](Images/JS-Sample-Img3.png) 
+    ![](Images/JS-Sample-Img3.png) 
 
 3. Name the page as Default.html and click Add.
 
@@ -94,7 +94,7 @@ Add the script files and theme files in the &lt;title&gt; tag of the Default.htm
 
 Use the above code example while adding scripts and styles.
 
-> Note: You can get the themes and scripts from the installed location [Installed Drive]:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript\{{ site.releaseversion }}\JavaScript\assets\
+N> You can get the themes and scripts from the installed location [Installed Drive]:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript\{{ site.releaseversion }}\JavaScript\assets\
 
 ## Control Initialization
 
@@ -315,14 +315,14 @@ namespace ReportDesignerSample
 {
     public class Global : System.Web.HttpApplication
     {
-    protected void Application_Start(object sender, EventArgs e)
-    {
-        System.Web.Http.GlobalConfiguration.Configuration.Routes.MapHttpRoute(
-        name: "DefaultApi",
-        routeTemplate: "api/{controller}/{action}/{id}",
-        defaults: new { id = RouteParameter.Optional });
-        AppDomain.CurrentDomain.SetData("SQLServerCompactEditionUnderWebHosting", true);
-    }
+        protected void Application_Start(object sender, EventArgs e)
+        {
+            System.Web.Http.GlobalConfiguration.Configuration.Routes.MapHttpRoute(
+            name: "DefaultApi",
+            routeTemplate: "api/{controller}/{action}/{id}",
+            defaults: new { id = RouteParameter.Optional });
+            AppDomain.CurrentDomain.SetData("SQLServerCompactEditionUnderWebHosting", true);
+        }
     }
 }
 
