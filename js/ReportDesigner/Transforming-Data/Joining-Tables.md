@@ -178,15 +178,15 @@ The FULL OUTER JOIN keyword returns all the rows from the left table (table1), a
 
 To compare the values of the two columns (one from each table) between tables, any of the operator list shown in the below image can be used.
 
- ![](Joiner-Images/Operator-List.png)
+![](Joiner-Images/Operator-List.png)
 
- ![](Joiner-Images/Join-Tables.png)
+![](Joiner-Images/Join-Tables.png)
 
 ### Edit a join condition
 
 * Update an existing join condition by clicking the `Edit` icon in the respective field.
 
-    ![](Joiner-Images/Edit-Join.png)
+  ![](Joiner-Images/Edit-Join.png)
 
 * Clicking on the icon will enable the respective join fields.
 
