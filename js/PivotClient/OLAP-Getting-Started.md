@@ -893,14 +893,6 @@ namespace PivotClientDemo
                             dictionary.Add("Collection", repCol);
                         }
                     }
-                    else
-                    {
-                        if (analysisMode.ToLower() == "pivot" && operationalMode.ToLower() == "servermode")
-                            dictionary = pivotClientHelper.GetJsonData("LoadReport", ProductSales.GetSalesData(), Encoding.UTF8.GetString(reportByte));
-                        else
-                            dictionary.Add("report", Encoding.UTF8.GetString(reportByte));
-                        break;
-                    }
                 }
             }
             return dictionary;
