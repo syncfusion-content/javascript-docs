@@ -269,7 +269,7 @@ Following are the list of properties that are excluded during grid export, to re
 * enableRTL
 * cssClass
 
-To ignore the additional desired grid  properties on exporting use  [`addIgnoreOnExport `](https://help.syncfusion.com/api/js/ejgrid#methods:addignoreonexport "addIgnoreOnExport ") method. Here we ignored fitlerSettings so while exporting it will be exported without filtering applied.
+To ignore the additional desired grid  properties on exporting use  [`addIgnoreOnExport `](https://help.syncfusion.com/api/js/ejgrid#methods:addignoreonexport "addIgnoreOnExport ") method. Here we ignored filterSettings so while exporting it will be exported without filtering applied.
 
 The snippet for this is.
 
