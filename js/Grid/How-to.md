@@ -626,7 +626,10 @@ The following code example describes the above behavior.
     }
 }
 </script>
+
 {% endhighlight %}
+
+{% endtabs %}
 
 N> This solution is applicable only for local data.
 
