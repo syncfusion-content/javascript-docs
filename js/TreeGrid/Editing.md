@@ -522,6 +522,22 @@ The row position can be also defined while initializing the TreeGrid. The below 
 The above screenshot shows new record added in row position of `child`.
 {:.caption}
 
+## updating records using method
+
+Records can be updated dynamically to TreeGrid using the method  [`updateRecordByIndex`](/api/js/ejtreegrid#methods:updaterecordbyindex "updateRecordByIndex"). Record index and the data to be updated will be passed to the method argument to update.
+
+The below code snippet explains dynamically updating a record in tree grid. 
+
+{% highlight js %}
+
+        var treeGridObj = $("#treegrid").data("ejTreeGrid");
+        var data = {
+            taskName: "Updated task",
+        };
+        treeGridObj.updateRecordByIndex(2,data); // To update a task
+
+{% endhighlight %}
+
 ## Delete record
 
 TreeGrid provides support to delete a record by enabling [`allowDeleting`](/api/js/ejtreegrid#members:editsettings-allowdeleting "editSettings.allowDeleting") property.
