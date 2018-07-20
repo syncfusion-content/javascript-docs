@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 # Set the vertical scroll position
-In Gantt it is posible to set the vertical scroller position dynamically in button click using [`setScrollTop`](/api/js/ejgantt#methods:setscrolltop) public method.
+In Gantt it is possible to set the vertical scroller position dynamically in button click using [`setScrollTop`](/api/js/ejgantt#methods:setscrolltop) public method.
 
 The following code example explains how to set the scroll position at button click.
 
