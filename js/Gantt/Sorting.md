@@ -130,3 +130,19 @@ Before Sorting
 ![](/js/Gantt/Sorting_images/Sorting_img5.png)
 After Sorting
 {:.caption}
+
+## Clear all the sorting dynamically
+
+In Gantt it is possible to clear all the sorted columns and return to previous position by using [`clearSorting`](/api/js/ejgantt#methods:clearsorting) public method.
+The following code snippet show how to remove all the sorting in button click.
+
+{% highlight javascript %}
+
+<div id="gantt"></div> 
+ 
+<script>
+var ganttObject = $("#gantt").data("ejGantt");
+ganttObject.clearSorting();
+</script>
+
+{% endhighlight %}

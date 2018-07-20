@@ -22,7 +22,23 @@ Gantt supports the following types of column editors,
   * Maskedit
   * Currency
   * Dropdown
-  
+
+## Get column collection
+
+In Gantt it is possible to get all the defined columns into a variable using [`getColumns`](/api/js/ejgantt#methods:getcolumns) public method.
+we can customize these columns at load. The following code snippet explains this.
+
+{% highlight javascript %}
+
+ $("#GanttContainer").ejGantt({
+        //...
+        load: function (args) {
+            var columns = this.getColumns();            
+        }
+ });
+ 
+{% endhighlight %}
+
 ## Format column
 
 It is possible to format a column using [`load`](/api/js/ejgantt#events:load) event. The following code examples show how to format the ‘progress’ column with percentage value.
