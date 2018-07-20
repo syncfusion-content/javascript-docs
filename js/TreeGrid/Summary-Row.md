@@ -12,19 +12,19 @@ api: /api/js/ejtreegrid
 
 Summary rows in TreeGrid is used to summarize every hierarchy with the set of predefined summary types using the column values. 
 
-* [`summaryRows`](https://help.syncfusion.com/api/js/ejtreegrid#members:summaryrows "summaryRows") - Using this property, user can define the summary rows in TreeGrid.
-* [`summaryRows.title`](https://help.syncfusion.com/api/js/ejtreegrid#members:summaryrows-title "summaryRows.title") - Title for each summary row can be defined using this property. 
-* [`summaryRows.summaryColumns`](https://help.syncfusion.com/api/js/ejtreegrid#members:summaryrows-summarycolumns "summaryRows.summaryColumns") - Using this property, it is possible to defined the summary for specific columns alone in a summary row.
-* [`showSummaryRow`](https://help.syncfusion.com/api/js/ejtreegrid#members:showsummaryrow "showSummaryRow") - This property is to make the summary row visible. 
-* [`showTotalSummary`](https://help.syncfusion.com/api/js/ejtreegrid#members:showtotalsummary "showTotalSummary") - This property is to make the total summary row visible which is the overall summary row displayed for all the rows in the TreeGrid content.
+* [`summaryRows`](/api/js/ejtreegrid#members:summaryrows) - Using this property, user can define the summary rows in TreeGrid.
+* [`summaryRows.title`](/api/js/ejtreegrid#members:summaryrows-title) - Title for each summary row can be defined using this property. 
+* [`summaryRows.summaryColumns`](/api/js/ejtreegrid#members:summaryrows-summarycolumns) - Using this property, it is possible to defined the summary for specific columns alone in a summary row.
+* [`showSummaryRow`](/api/js/ejtreegrid#members:showsummaryrow) - This property is to make the summary row visible. 
+* [`showTotalSummary`](/api/js/ejtreegrid#members:showtotalsummary) - This property is to make the total summary row visible which is the overall summary row displayed for all the rows in the TreeGrid content.
 
 ## Defining summary columns
 
-* [`summaryType`](https://help.syncfusion.com/api/js/ejtreegrid#members:summaryrows-summarycolumns-summarytype "summaryRows.summaryColumn.summaryType") - Using this property, user can define the type of summary to be displayed in a column. 
-* [`dataMember`](https://help.syncfusion.com/api/js/ejtreegrid#members:summaryrows-summarycolumns-datamember "summaryRows.summaryColumns.dataMember") - This property is used to map the field values which is used for summary calculations.
-* [`displayColumn`](https://help.syncfusion.com/api/js/ejtreegrid#members:summaryrows-summarycolumns-displaycolumn "summaryRows.summaryColumns.displayColumn") - This property is used to specify the column in which the summary to be displayed.
-* [`prefix`](https://help.syncfusion.com/api/js/ejtreegrid#members:summaryrows-summarycolumns-prefix "summaryRows.summaryColumns.prefix") and [`suffix`](https://help.syncfusion.com/api/js/ejtreegrid#members:summaryrows-summarycolumns-suffix "summaryRows.summaryColumns.suffix") properties are used to define the text should be displayed along with the summary column value.
-* [`format`](https://help.syncfusion.com/api/js/ejtreegrid#members:summaryrows-summarycolumns-format "summaryRows.summaryColumns.format") property is used for formatting the summary column value.
+* [`summaryType`](/api/js/ejtreegrid#members:summaryrows-summarycolumns-summarytype "summaryRows.summaryColumn.summaryType") - Using this property, user can define the type of summary to be displayed in a column. 
+* [`dataMember`](/api/js/ejtreegrid#members:summaryrows-summarycolumns-datamember "summaryRows.summaryColumns.dataMember") - This property is used to map the field values which is used for summary calculations.
+* [`displayColumn`](/api/js/ejtreegrid#members:summaryrows-summarycolumns-displaycolumn "summaryRows.summaryColumns.displayColumn") - This property is used to specify the column in which the summary to be displayed.
+* [`prefix`](/api/js/ejtreegrid#members:summaryrows-summarycolumns-prefix "summaryRows.summaryColumns.prefix") and [`suffix`](/api/js/ejtreegrid#members:summaryrows-summarycolumns-suffix "summaryRows.summaryColumns.suffix") properties are used to define the text should be displayed along with the summary column value.
+* [`format`](/api/js/ejtreegrid#members:summaryrows-summarycolumns-format "summaryRows.summaryColumns.format") property is used for formatting the summary column value.
 
 The below code snippet explains defining a summary row in TreeGrid,
 {% highlight js %}
@@ -77,7 +77,7 @@ The below screenshot shows the output of above code example.
 
 ## Customize height of total summary
 
-Using [`totalSummaryHeight`](https://help.syncfusion.com/api/js/ejtreegrid#members:totalSummaryHeight "totalSummaryHeight") property we can customize the height of the total summary container.
+Using [`totalSummaryHeight`](/api/js/ejtreegrid#members:totalsummaryheight) property we can customize the height of the total summary container.
 The below code example shows how to update the footer summary container height.
 {% highlight js %}
   $("#treegrid").ejTreeGrid({
@@ -98,7 +98,7 @@ We can expand/collapse the total summary rows in TreeGrid using following method
 
 ### Using Expander Icon
 
-We can enable expander icon in total summary row by using [`collapsibleTotalSummary`](https://help.syncfusion.com/api/js/ejtreegrid#members:collapsibleTotalSummary "collapsibleTotalSummary") property. By default expander icon will be rendered in first row of 0th column in total summary rows.
+We can enable expander icon in total summary row by using [`collapsibleTotalSummary`](/api/js/ejtreegrid#members:collapsibletotalsummary "collapsibleTotalSummary") property. By default expander icon will be rendered in first row of 0th column in total summary rows.
 Please find the below code example to enable collapsible total summary row in TreeGrid.
 {% highlight js %}
   $("#treegrid").ejTreeGrid({
@@ -109,11 +109,11 @@ Please find the below code example to enable collapsible total summary row in Tr
 {% endhighlight %}
 ![](SummaryRows_images/SummaryRows_img3.png)
 
-N> We can also customize the expander icon column in total summary row by using `_summaryColumnIndex` property and [`load`](https://help.syncfusion.com/api/js/ejgantt#events:load "load") event.
+N> We can also customize the expander icon column in total summary row by using `_summaryColumnIndex` property and [`load`](/api/js/ejtreegrid#events:load "load") event.
 
 ### Using Method
 
-Total summary rows in TreeGrid can be expanded/collapsed by using [`expandCollapseTotalSummary`](https://help.syncfusion.com/api/js/ejgantt#methods:expandCollapseTotalSummary "expandCollapseTotalSummary") method.
+Total summary rows in TreeGrid can be expanded/collapsed by using [`expandCollapseTotalSummary`](/api/js/ejtreegrid#methods:expandcollapsetotalsummary "expandCollapseTotalSummary") method.
 Please find the code example to collapse the total summary rows below.
 {% highlight js %}
     <button onclick="expandCollapse()">expandCollapse</button>
