@@ -174,7 +174,7 @@ totalGroupCollapse</td></tr>
 
 To change the keyboard interaction keys for the grid actions mentioned in above table, modify the corresponding properties of Grid [`keySettings`](https://help.syncfusion.com/api/js/ejgrid#members:keysettings).
 
-The default key for "SaveRequest" is "Enter" key and in the following code example, we have changed it to "F3".
+The default key for moving to next page in grid is "PageDown" key and in the following code example, we have changed it to "Right Arrow".
 
 {% highlight html %}
 <div id="Grid"></div>
@@ -186,13 +186,11 @@ $(function () {
 		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
 		dataSource : window.gridData,
 		keySettings: {
-                 saveRequest: "114",
+                 nextPage: "39", previousPage: "37"
         },
-		toolbarSettings : {	showToolbar : true, toolbarItems : ["add", "edit", "delete", "update", "cancel"] },
-		editSettings : { allowEditing: true, allowAdding: true, allowDeleting: true},
 		allowPaging : true,
 		columns : [
-					{ field: "OrderID", isPrimaryKey: true },
+					{ field: "OrderID"},
 					{ field: "CustomerID" },
 					{ field: "EmployeeID" },
 					{ field: "ShipCity" },
