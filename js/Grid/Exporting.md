@@ -946,7 +946,7 @@ N> Excel File will be exported in the collapsed state with the expand/collapse i
                     Type type = property.PropertyType;
                     object value = null;
                     string serialize = serializer.Serialize(data.Value);
-                    if (ds.Key == "childGrid")
+                    if (data.Key == "childGrid")
                         value = ConvertGridObject(serialize);
                     else
                         value = serializer.Deserialize(serialize, type);
