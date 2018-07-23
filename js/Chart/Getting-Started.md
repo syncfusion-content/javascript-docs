@@ -23,9 +23,9 @@ Create an **HTML** page and add the scripts references in the order mentioned in
 <html>
 <head>
     <!--  jquery script  -->
-    <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
+    <script src="https://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
     <!-- Essential JS UI widget -->
-    <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"></script>
+    <script src="https://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"></script>
 </head>
 <body>
 </body>
