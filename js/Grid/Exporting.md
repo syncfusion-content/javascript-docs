@@ -269,7 +269,7 @@ Following are the list of properties that are excluded during grid export, to re
 * enableRTL
 * cssClass
 
-To ignore the additional desired grid  properties on exporting use  [`addIgnoreOnExport `](https://help.syncfusion.com/api/js/ejgrid#methods:addignoreonexport "addIgnoreOnExport ") method. Here we ignored fitlerSettings so while exporting it will be exported without filtering applied.
+To ignore the additional desired grid  properties on exporting use  [`addIgnoreOnExport `](https://help.syncfusion.com/api/js/ejgrid#methods:addignoreonexport "addIgnoreOnExport ") method. Here we ignored filterSettings so while exporting it will be exported without filtering applied.
 
 The snippet for this is.
 
@@ -502,10 +502,10 @@ public void templateInfo(object currentCell, object row)
   object templates;
   foreach (var data in row.GetType().GetProperties())
   {
-     if (range.Value.Contains(ds.Name))
+     if (range.Value.Contains(data.Name))
      {
        templates = row.GetType().GetProperty(data.Name).GetValue(row, null);
-       range.Value = range.Value.Replace(ds.Name, templatevalue.ToString());
+       range.Value = range.Value.Replace(data.Name, templates.ToString());
        var regex = new Regex("<a [^>]*href=(?:'(?<href>.*?)')|(?:\"(?<href>.*?)\")", RegexOptions.IgnoreCase);
        var urls = regex.Matches(range.Value.ToString()).OfType<match>().Select(m => m.Groups["href"].Value).SingleOrDefault();
        IHyperLink hyperlink = (range.Parent as Syncfusion.XlsIO.Implementation.WorksheetImpl).HyperLinks.Add(range);
@@ -522,7 +522,7 @@ public void WordTemplateInfo(object currentCell, object row)
   object templates;
   foreach (var data in row.GetType().GetProperties())
   {
-     if (wCell.LastParagraph.Text.ToString().Contains(ds.Name))
+     if (wCell.LastParagraph.Text.ToString().Contains(data.Name))
      {
         templates = row.GetType().GetProperty(data.Name).GetValue(row, null);
         var regex = new Regex("<a [^>]*href=(?:'(?<href>.*?)')|(?:\"(?<href>.*?)\")", RegexOptions.IgnoreCase);
@@ -540,7 +540,7 @@ public void PdfTemplateInfo(object currentCell, object row)
    range.Value = Uri.UnescapeDataString(range.Value.ToString());
    foreach (var data in row.GetType().GetProperties())
    {
-     if (range.Value.ToString().Contains(ds.Name))
+     if (range.Value.ToString().Contains(data.Name))
      {
        templates = row.GetType().GetProperty(data.Name).GetValue(row, null);
        var regex = new Regex("<a [^>]*href=(?:'(?<href>.*?)')|(?:\"(?<href>.*?)\")", RegexOptions.IgnoreCase);
@@ -711,10 +711,10 @@ public class GridController : Controller
      object templates;
      foreach (var data in row.GetType().GetProperties())
      {
-       if (range.Value.Contains(ds.Name))
+       if (range.Value.Contains(data.Name))
        {
          templates = row.GetType().GetProperty(data.Name).GetValue(row, null);
-         range.Value = range.Value.Replace(data.Name, templatevalue.ToString());
+         range.Value = range.Value.Replace(data.Name, templates.ToString());
          var charsToRemove = new string[] { '{', '}', '<b>', ':', '</b>', '<br />', 'style', '=', 'class', '</div>', '<p>', '</p>', 'detail', '<b', '>', };
          foreach (var c in charsToRemove)
          {
@@ -747,12 +747,12 @@ public class GridController : Controller
    public void PdfDetailTemplateInfo(object currentCell, object row)
    {
      Syncfusion.Pdf.Grid.PdfGridCell range = (Syncfusion.Pdf.Grid.PdfGridCell)currentCell;
-     object templatevalue;
-     foreach (var ds in row.GetType().GetProperties())
+     object templates;
+     foreach (var data in row.GetType().GetProperties())
      {
-        if (range.Value.ToString().Contains(ds.Name))
+        if (range.Value.ToString().Contains(data.Name))
         {
-          templatevalue = row.GetType().GetProperty(data.Name).GetValue(row, null);
+          templates = row.GetType().GetProperty(data.Name).GetValue(row, null);
           range.Value = range.Value.ToString().Replace(data.Name, templates.ToString());
           var charsToRemove = new string[] { '{', '}', '<b>', ':', '</b>', '<br />', 'style', '=', 'class', '</div>', '<p>', '</p>', 'detail', '<b', '>', };
           foreach (var c in charsToRemove)
@@ -768,13 +768,13 @@ public class GridController : Controller
     JavaScriptSerializer serializer = new JavaScriptSerializer();
     IEnumerable div = (IEnumerable)serializer.Deserialize(gridProperty, typeof(IEnumerable));
     GridProperties gridProp = new GridProperties();
-    foreach (KeyValuePair<string, object> ds in div)
+    foreach (KeyValuePair<string, object> data in div)
     {
-      var property = gridProp.GetType().GetProperty(ds.Key, BindingFlags.Instance | BindingFlags.Public | BindingFlags.IgnoreCase);
+      var property = gridProp.GetType().GetProperty(data.Key, BindingFlags.Instance | BindingFlags.Public | BindingFlags.IgnoreCase);
       if (property != null)
       {
         Type type = property.PropertyType;
-        string serialize = serializer.Serialize(ds.Value);
+        string serialize = serializer.Serialize(data.Value);
         object value = serializer.Deserialize(serialize, type);
         property.SetValue(gridProp, value, null);
       }
@@ -938,15 +938,15 @@ N> Excel File will be exported in the collapsed state with the expand/collapse i
             JavaScriptSerializer serializer = new JavaScriptSerializer();
             IEnumerable div = (IEnumerable)serializer.Deserialize(gridProperty, typeof(IEnumerable));
             GridProperties gridProp = new GridProperties();
-            foreach (KeyValuePair<string, object> ds in div)
+            foreach (KeyValuePair<string, object> data in div)
             {
-                var property = gridProp.GetType().GetProperty(ds.Key, BindingFlags.Instance | BindingFlags.Public | BindingFlags.IgnoreCase);
+                var property = gridProp.GetType().GetProperty(data.Key, BindingFlags.Instance | BindingFlags.Public | BindingFlags.IgnoreCase);
                 if (property != null)
                 {
                     Type type = property.PropertyType;
                     object value = null;
-                    string serialize = serializer.Serialize(ds.Value);
-                    if (ds.Key == "childGrid")
+                    string serialize = serializer.Serialize(data.Value);
+                    if (data.Key == "childGrid")
                         value = ConvertGridObject(serialize);
                     else
                         value = serializer.Deserialize(serialize, type);
