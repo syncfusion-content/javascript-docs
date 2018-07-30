@@ -292,7 +292,7 @@ The following code shows how to render row drag tooltip with tooltip template.
 ![](/js/TreeGrid/Rows_images/Rows_img3.png)
 
 ### Customize row drag and drop action
-In TreeGrid, [`rowDragStart`](https://help.syncfusion.com/api/js/ejtreegrid#events:rowdragstart), [`rowDrag`](https://help.syncfusion.com/api/js/ejtreegrid#events:rowdrag) and [`rowDragStop`](https://help.syncfusion.com/api/js/ejtreegrid#events:rowdragstop) events are triggered on row drag and drop action. Using this event we can prevent drag and drop action of particular record and validate the drop position on particular record. 
+In TreeGrid, [`rowDragStart`](https://help.syncfusion.com/api/js/ejtreegrid#events:rowdragstart), [`rowDrag`](https://help.syncfusion.com/api/js/ejtreegrid#events:rowdrag), [`rowDragStop`](https://help.syncfusion.com/api/js/ejtreegrid#events:rowdropactionbegin) and [`rowDropActionBegin`](https://help.syncfusion.com/api/js/ejtreegrid#events:rowdropactionbegin) events are triggered on row drag and drop action. Using this event we can prevent drag and drop action of particular record and validate the drop position on particular record. 
 
 The below code example shows how to use this events.
 
@@ -312,7 +312,7 @@ The below code example shows how to use this events.
             rowDragStop: function (args) {
                 if (args.targetRow.taskID == 6) // Can't drop any task on Task Id 6
                     args.cancel = true;
-            },            
+            },                    
         });
 
 {% endhighlight %}
@@ -345,6 +345,26 @@ We can also customize row drag and drop actions by using below properties
 ![](/js/TreeGrid/Rows_images/Rows_img13.png)
 
 [Click](http://js.syncfusion.com/demos/web/#!/bootstrap/treegrid/rows/rowdraganddrop) here to view the demo sample for multiple drag and drop action.
+
+### Drag and drop row programmatically
+
+TreeGrid provide option to drag and drop a row programmatically at button click using [`moveRow`](/api/js/ejtreegrid#methods:moverow "moveRow") public method.
+The following arguments are used to specify positions to drag and drop a row,
+ * fromIndex - where we going to drag a row 
+ * toIndex -  where we wish to drop it
+ * position - drop the row as above below or child.
+The following code example shows how to drag and drop a row in button click.
+
+{% highlight html %}
+ 
+<div id="treeGridContainer"></div> 
+ 
+<script>
+// Create Tree Grid object
+var treegridObj = $("#treeGridContainer").data("ejTreeGrid");
+treegridObj.moveRow(4, 15, "child"); // To move the row
+</script>
+{% endhighlight %}
 
 ## Details row
 

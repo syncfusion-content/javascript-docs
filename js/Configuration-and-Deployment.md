@@ -11,17 +11,15 @@ documentation: ug
 
 ## For Windows Users
 
-Download and install the **Essential Studio for JavaScript** setup from this [link](http://www.syncfusion.com/downloads/javascript) after logging in with your Syncfusion account. Licensed customers can download the install from the [downloads](http://www.syncfusion.com/support/directtrac/downloads) section.
-
 ### Install Location
 
 The installer copies the required scripts, stylesheets and samples into the following location
 
-`(installed location)\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\`
+`(installed location)\Syncfusion\Essential Studio\JavaScript\{{ site.releaseversion }}`
 
-_For example, if you had chosen to install under `C:\Program Files (x86)`, then navigate to the below location, C:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\_
+_For example, if you had chosen to install under `C:\Program Files (x86)`, then navigate to the below location, C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript\{{ site.releaseversion }}_
 
-Within the root `javascript` folder, the `assets` folder contains all the minified versions of scripts and stylesheets where as the `assets-src` folder contains the uncompressed version of the same files. The assets have been organized in the following folder structure
+Within the root folder, the `assets` folder contains all the minified versions of scripts and stylesheets where as the `assets-src` folder contains the uncompressed version of the same files. The assets have been organized in the following folder structure
 
   * CSS - contains the style sheets for mobile and web components.
   * External - contains the external dependency files such as jQuery, JsRender etc.
@@ -31,8 +29,6 @@ Within the root `javascript` folder, the `assets` folder contains all the minifi
 N> jQuery.easing external dependency has been removed from version 14.3.0.49 onwards. Kindly include this jQuery.easing dependency for versions lesser than 14.3.0.49 in order to support animation effects.
 
 ## For Mac and Linux Users
-
-**Mac** and **Linux** users can download all the necessary files in a zip archive from this [link](http://www.syncfusion.com/downloads/javascript) after logging in with your Syncfusion account. Licensed customers can download the archive from the [downloads](http://www.syncfusion.com/support/directtrac/downloads) section.
 
 The assets have been organized in the following folder structure
 
