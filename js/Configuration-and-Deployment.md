@@ -7,7 +7,7 @@ control: Introduction
 documentation: ug
 ---
 
-# Installation and Deployment
+# Configuration and Deployment
 
 ## For Windows Users
 
