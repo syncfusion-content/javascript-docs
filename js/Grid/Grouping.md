@@ -369,6 +369,7 @@ $(function () {
                     allowPaging: true,
                     allowSorting: true,
                     allowGrouping:true,
+                    groupSettings: { groupedColumns: ["EmployeeID"] },
                     columns: [
                                   { field: "OrderID", headerText: "Order ID", isPrimaryKey: true, textAlign: ej.TextAlign.Right, width: 80 },
                                   { field: "CustomerID", headerText: "Customer ID", width: 90 },
