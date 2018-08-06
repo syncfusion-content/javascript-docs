@@ -344,3 +344,76 @@ $(function () {
 The following output is displayed as a result of the previous code example.
 
 ![](Grouping_images/Grouping_img11.png)
+
+## Handling grouped records count in server-side    
+
+When binding remote data to grid with on-demand data loading, only current page data knowledge is available to grid and so grouped records count would be shown based on current Page only. 
+
+This can be rectified when binding data to grid using [UrlAdaptor](https://help.syncfusion.com/js/datamanager/data-adaptors#url-adaptor) of DataManager. The grouped column values should be passed into the `groupDs` property of return object from server-side along with datasource and count.
+
+The following code example describes the above behavior.
+
+{% tabs %}
+ 
+{% highlight html %}
+ <div id="Grid"></div>
+{% endhighlight %}
+
+{% highlight javascript %}
+$(function () {
+                $("#Grid").ejGrid({
+                    dataSource: ej.DataManager({
+			                  url:"/Grid/UrlDataSource",
+			                  adaptor: new ej.UrlAdaptor()
+                		});,
+                    allowPaging: true,
+                    allowSorting: true,
+                    allowGrouping:true,
+                    columns: [
+                                  { field: "OrderID", headerText: "Order ID", isPrimaryKey: true, textAlign: ej.TextAlign.Right, width: 80 },
+                                  { field: "CustomerID", headerText: "Customer ID", width: 90 },
+                                  { field: "EmployeeID", headerText: "Employee ID", textAlign: ej.TextAlign.Right, width: 90 },
+                                  { field: "Freight", headerText: "Freight", textAlign: ej.TextAlign.Right, width: 75, format: "{0:C}" },
+                                  { field: "OrderDate", headerText: "Order Date", textAlign: ej.TextAlign.Right, width: 75, format: "{0:MM/dd/yyyy}"}
+                    ],
+                });
+                
+        });
+           
+{% endhighlight %}
+
+{% highlight c# %}
+
+    namespace MVCSampleBrowser.Controllers
+        {
+            public class GridController : Controller
+              { 
+                public ActionResult GridFeatures()
+                 {
+                   var DataSource = new NorthwindDataContext().OrdersViews.ToList();
+                   ViewBag.DataSource = DataSource;
+                   return View();
+                 }
+                public ActionResult UrlDataSource(DataManager dm)
+                 {
+                    IEnumerable DataSource = new NorthwindDataContext().OrdersViews.ToList();
+                    int count = DataSource.AsQueryable().Count();
+                    IEnumerable GroupDs = new List<object>(); ;
+                    DataOperations ds = new DataOperations();
+                    List<string> str = new List<string>();
+                    if (dm.Group != null)
+                        GroupDs = ds.PerformSelect(DataSource, dm.Group); //Pass grouped column records
+                    if (dm.Sorted != null)
+                        DataSource = ds.PerformSorting(DataSource, dm.Sorted);
+                    DataSource = ds.PerformSkip(DataSource, dm.Skip);
+                    DataSource = DataSource.AsQueryable().Take(dm.Take);
+                    return Json(new {result = DataSource, count =count, groupDs = GroupDs }, JsonRequestBehavior.AllowGet);
+                 }  
+             }     
+        } 
+{% endhighlight  %}   
+{% endtabs %}  
+
+The following output is displayed as a result of the above code example.
+
+![](Grouping_images/Grouping_img12.png)
