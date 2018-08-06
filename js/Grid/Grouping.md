@@ -394,19 +394,19 @@ $(function () {
                    ViewBag.DataSource = DataSource;
                    return View();
                  }
-                public ActionResult UrlDataSource(DataManager dm)
+                public ActionResult UrlDataSource(DataManager value)
                  {
                     IEnumerable DataSource = new NorthwindDataContext().OrdersViews.ToList();
                     int count = DataSource.AsQueryable().Count();
                     IEnumerable GroupDs = new List<object>(); ;
-                    DataOperations ds = new DataOperations();
+                    DataOperations operations = new DataOperations();
                     List<string> str = new List<string>();
-                    if (dm.Group != null)
-                        GroupDs = ds.PerformSelect(DataSource, dm.Group); //Pass grouped column records
-                    if (dm.Sorted != null)
-                        DataSource = ds.PerformSorting(DataSource, dm.Sorted);
-                    DataSource = ds.PerformSkip(DataSource, dm.Skip);
-                    DataSource = DataSource.AsQueryable().Take(dm.Take);
+                    if (value.Group != null)
+                        GroupDs = operations.PerformSelect(DataSource, value.Group); //Pass grouped column records
+                    if (value.Sorted != null)
+                        DataSource = operations.PerformSorting(DataSource, value.Sorted);
+                    DataSource = operations.PerformSkip(DataSource, value.Skip);
+                    DataSource = DataSource.AsQueryable().Take(value.Take);
                     return Json(new {result = DataSource, count =count, groupDs = GroupDs }, JsonRequestBehavior.AllowGet);
                  }  
              }     
