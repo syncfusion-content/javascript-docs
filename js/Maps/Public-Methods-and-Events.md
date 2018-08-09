@@ -334,6 +334,27 @@ $("#container").ejMap({
 {% endhighlight %}
 
 
+### displayTextRendering
+
+Triggers before rendering the data labels. You can use [`displayTextRendering`](../api/ejmap#events:displaytextrendering) event.
+
+
+
+{% highlight js %}
+ 
+//displayTextRendering event for maps
+
+$("#container").ejMap({
+
+    displayTextRendering: function (args) {
+             //Do something
+    }
+	
+});
+
+{% endhighlight %}
+
+
 
 <a class="" href="http://www.syncfusion.com/copyright" target="_blank">Copyright &copy; 2001 - 2015 Syncfusion Inc. All Rights Reserved</a>
 
