@@ -152,8 +152,6 @@ You can set Application Tab [`type`](https://help.syncfusion.com/api/js/ejribbon
 
 Separator between Backstage items can be enabled by setting [`enableSeparator`](https://help.syncfusion.com/api/js/ejribbon#members:applicationtab-backstagesettings-pages-enableseparator) as true. Width of back stage side header can be customized using [`headerWidth`](https://help.syncfusion.com/api/js/ejribbon#members:applicationtab-backstagesettings-headerwidth), If not set based on content given width will be considered.
 
-You can add/remove/update backStage item to the ribbon control by using [`addBackStageItem`](https://help.syncfusion.com/api/js/ejribbon#methods:addbackstageitem), [`removeBackStageItem`](https://help.syncfusion.com/api/js/ejribbon#methods:removebackstageitem) and [`updateBackStageItem`](https://help.syncfusion.com/api/js/ejribbon#methods:updatebackstageitem) methods. Also you can show/hide the backstage page in ribbon control by using [`showBackstage`](https://help.syncfusion.com/api/js/ejribbon#methods:showbackstage) and [`hideBackstage`](https://help.syncfusion.com/api/js/ejribbon#methods:hidebackstage methods.
-
 To render the Ribbon with the Backstage page, refer to the following code snippet.
 
 {% highlight html %}
@@ -267,3 +265,5 @@ To render the Ribbon with the Backstage page, refer to the following code snippe
 ![](/js/Ribbon/Application-Tab_images/Application-Tab_img3.png)
 
 N> Height & width of backstage can be set using [`height`](https://help.syncfusion.com/api/js/ejribbon#members:applicationtab-backstagesettings-height) and `width`, if these are not set, Ribbon’s height & width will be considered.
+
+You can add/remove/update backStage item to the ribbon control by using [`addBackStageItem`](https://help.syncfusion.com/api/js/ejribbon#methods:addbackstageitem), [`removeBackStageItem`](https://help.syncfusion.com/api/js/ejribbon#methods:removebackstageitem) and [`updateBackStageItem`](https://help.syncfusion.com/api/js/ejribbon#methods:updatebackstageitem) methods. Also you can show/hide the backstage page in ribbon control by using [`showBackstage`](https://help.syncfusion.com/api/js/ejribbon#methods:showbackstage) and [`hideBackstage`](https://help.syncfusion.com/api/js/ejribbon#methods:hidebackstage methods.
