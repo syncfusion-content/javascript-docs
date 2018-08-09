@@ -58,7 +58,9 @@ Execute the above code to render the following output.
 
 You can enable indicators by setting [`showIndicators`](../api/ejcirculargauge#members:scales-showindicators) to ‘true’. The [`height`](../api/ejcirculargauge#members:scales-indicators-height) and [`width`](../api/ejcirculargauge#members:scales-indicators-width) property for the indicators are used to specify the area allocated to the indicator for the width and height respectively. You can use the [`position`](../api/ejcirculargauge#members:scales-indicators-position) collection to position the indicators along [`x`](../api/ejcirculargauge#members:scales-indicators-position-x) and [`y`](../api/ejcirculargauge#members:scales-indicators-position-y) axis. 
 
-Indicators are of several types such as, circle, rectangle, rounded rectangle, text and image. By using the [`type`](../api/ejcirculargauge#members:scales-indicators-type) property you can avail those shapes. For image type [`imageUrl`](../api/ejcirculargauge#members:scales-indicators-imageurl) property is used. 
+Indicators are of several types such as, circle, rectangle, rounded rectangle, text and image. By using the [`type`](../api/ejcirculargauge#members:scales-indicators-type) property you can avail those shapes.
+The available shapes in the indicators are **circle**, **rectangle**, **roundedrectangle**, **text**, **triangle**, **diamond**, **trapezoid**, **pentagon**, **wedge**, **star**, **ellipse**,**horizontalLine**, **verticalline**, **cross**, **uparrow**, **downarrow**, **rightarrow**, **leftarrow** and **rightarrow**.
+For image type [`imageUrl`](../api/ejcirculargauge#members:scales-indicators-imageurl) property is used. 
 
 {% highlight html %}
 
