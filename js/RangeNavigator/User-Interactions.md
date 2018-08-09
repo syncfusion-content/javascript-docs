@@ -133,6 +133,19 @@ To customize border of selected interval, use [`color`](../api/ejrangenavigator#
 ![](/js/RangeNavigator/User-Interactions_images/User-Interactions_img4.png)
 
 
+## Range Selection behaviour
+
+Allows to show the value between the particular periods (i.e) from 1st January to 1st February and so on. The default value is true. If we set the "allowNextValue" property as false, it allows to show the value between the particular periods.(i.e) from 1st January to 31st January and so on.
+
+{% highlight javascript %}
+ 
+    $("#container").ejRangeNavigator({
+            allowNextValue: false;
+    });
+
+ {% endhighlight %}
+
+
 ## Scrollbar
 
 * To render the Scrollbar in RangeNavigator, you need to enable [`enableScrollbar`](../api/ejrangenavigator#members:enablescrollbar) option.

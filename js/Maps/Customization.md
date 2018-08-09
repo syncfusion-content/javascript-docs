@@ -570,3 +570,26 @@ The below properties are used for `labelSettings`
 
 {% endhighlight %}
 
+The appearance of the labels can be customized by using the (../api/ejrangenavigator#members:layers-labelsettings-font) [`font`] 
+The [`color`](../api/ejrangenavigator#members:series-marker-datalabel-font-color), 
+[`fontFamily`](../api/ejrangenavigator#members:layers-labelsettings-font-fontfamily), [`fontStyle`](../api/ejrangenavigator#members:layers-labelsettings-font-fontstyle), [`fontWeight`](../api/ejrangenavigator#members:layers-labelsettings-font-fontweight), [`opacity`](../api/ejrangenavigator#members:layers-labelsettings-font-opacity) and [`size`](../api/ejrangenavigator#members:layers-labelsettings-font-size) of font can also be customized. 
+
+The following code example shows to customize the font.
+
+{% highlight javascript %}
+
+    jQuery(function ($) {
+        $("#mapContainer").ejMap({
+            layers: [
+            {
+                shapeData: usMap,
+                enableMouseHover:true,
+                LabelSettings: {                                       
+                    showLabels: true,                    
+                    font: { color: "black", size:"13px" }                   
+                }
+            }]
+        });
+     });  
+    
+{% endhighlight %}
