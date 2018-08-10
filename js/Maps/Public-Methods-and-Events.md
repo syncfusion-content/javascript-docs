@@ -334,6 +334,27 @@ $("#container").ejMap({
 {% endhighlight %}
 
 
+### displayTextRendering
+
+The [`displayTextRendering`](../api/ejmap#events:displaytextrendering) event is triggered before rendering the data labels. You can use this event to customize the label text or change the text value.
+
+
+
+{% highlight js %}
+ 
+//The displayTextRendering event for maps
+
+$("#container").ejMap({
+
+    displayTextRendering: function (args) {
+             //Do something
+    }
+	
+});
+
+{% endhighlight %}
+
+
 
 <a class="" href="http://www.syncfusion.com/copyright" target="_blank">Copyright &copy; 2001 - 2015 Syncfusion Inc. All Rights Reserved</a>
 

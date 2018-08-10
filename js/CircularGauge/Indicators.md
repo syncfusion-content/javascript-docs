@@ -56,9 +56,11 @@ Execute the above code to render the following output.
 
 ## Basic Customization
 
-You can enable indicators by setting [`showIndicators`](../api/ejcirculargauge#members:scales-showindicators) to ‘true’. The [`height`](../api/ejcirculargauge#members:scales-indicators-height) and [`width`](../api/ejcirculargauge#members:scales-indicators-width) property for the indicators are used to specify the area allocated to the indicator for the width and height respectively. You can use the [`position`](../api/ejcirculargauge#members:scales-indicators-position) collection to position the indicators along [`x`](../api/ejcirculargauge#members:scales-indicators-position-x) and [`y`](../api/ejcirculargauge#members:scales-indicators-position-y) axis. 
+You can enable indicators by setting the [`showIndicators`](../api/ejcirculargauge#members:scales-showindicators) property to ‘true’. The [`height`](../api/ejcirculargauge#members:scales-indicators-height) and [`width`](../api/ejcirculargauge#members:scales-indicators-width) properties of the indicators are used to specify the area allocated to the indicator for the width and height. You can use the [`position`](../api/ejcirculargauge#members:scales-indicators-position) collection to position the indicators along with [`x-axis`](../api/ejcirculargauge#members:scales-indicators-position-x) and [`y-axis`](../api/ejcirculargauge#members:scales-indicators-position-y). 
 
-Indicators are of several types such as, circle, rectangle, rounded rectangle, text and image. By using the [`type`](../api/ejcirculargauge#members:scales-indicators-type) property you can avail those shapes. For image type [`imageUrl`](../api/ejcirculargauge#members:scales-indicators-imageurl) property is used. 
+The indicator can be displayed in the following shapes in circular gauge: **circle**, **rectangle**, **rounded rectangle**, **text**, **triangle**, **diamond**, **trapezoid**, **pentagon**, **wedge**, **star**, **ellipse**,**horizontal line**, **vertical line**, **cross**, **up arrow**, **down arrow**, **right arrow**, **left arrow**, and **right arrow**. By using the [`type`](../api/ejcirculargauge#members:scales-indicators-type) property, you can set the desired type to indicators.
+
+For image type, the [`imageUrl`](../api/ejcirculargauge#members:scales-indicators-imageurl) property is used. 
 
 {% highlight html %}
 
