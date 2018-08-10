@@ -336,13 +336,13 @@ $("#container").ejMap({
 
 ### displayTextRendering
 
-Triggers before rendering the data labels. You can use [`displayTextRendering`](../api/ejmap#events:displaytextrendering) event.
+The [`displayTextRendering`](../api/ejmap#events:displaytextrendering) event is triggered before rendering the data labels. You can use this event to customize the label text or change the text value.
 
 
 
 {% highlight js %}
  
-//displayTextRendering event for maps
+//The displayTextRendering event for maps
 
 $("#container").ejMap({
 
