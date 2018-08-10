@@ -93,9 +93,9 @@ The following screenshot illustrates a **RangeNavigator** with labels inside the
 
 ![](/js/RangeNavigator/Appearance-And-Styling_images/Appearance-And-Styling_img2.png) 
 
-##### Label Intersection
+##### Label intersection
 
-When the labels are overlap with each other based on the range navigator dimensions and label size, you can use the [`labelIntersectAction`](../api/ejrangenavigator#members:labelsettings-higherlevel-labelintersectaction) property to avoid overlapping. The default value of the [`labelIntersectAction`](../api/ejrangenavigator#members:labelsettings-higherlevel-labelintersectaction) is **none**. The other available values of the Label Intersect Actions are **hide**.
+The labels will overlap with each other when they are large in size. You can avoid overlapping using the [`labelIntersectAction`](../api/ejrangenavigator#members:labelsettings-higherlevel-labelintersectaction) property. The default value of the [`labelIntersectAction`](../api/ejrangenavigator#members:labelsettings-higherlevel-labelintersectaction) is **none**; another available value of the this property is **hide**.
 
 {% highlight javascript %}
 
