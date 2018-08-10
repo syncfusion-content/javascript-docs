@@ -135,7 +135,7 @@ To customize border of selected interval, use [`color`](../api/ejrangenavigator#
 
 ## Range selection
 
-You can use the "allowNextValue" property to show the values between particular periods, e.g. between 1st January and 1st February. The default value of this property is true. If you set this property to false, values can be shown between the particular periods.
+You can use the "allowNextValue" property to show the values between particular periods, e.g. between 1st January and 1st February. The default value of this property is true. If you set this property to false, values can be shown between the particular periods, e.g. between 1st January and 31st January.
 
 {% highlight javascript %}
  
