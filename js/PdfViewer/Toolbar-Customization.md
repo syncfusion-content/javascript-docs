@@ -456,4 +456,6 @@ The following code snippet shows how to create a customer toolbar by using the [
 
 Run the sample. You can view the PDF viewer with custom toolbar.
 
-Sample: [http://www.syncfusion.com/downloads/support/directtrac/general/ze/PdfViewer_ToolbarCustomization-835476603](http://www.syncfusion.com/downloads/support/directtrac/general/ze/PdfViewer_ToolbarCustomization-835476603 "Custom Toolbar sample")
+**Sample:**
+
+<http://www.syncfusion.com/downloads/support/directtrac/general/ze/PdfViewer_ToolbarCustomization63328491>
