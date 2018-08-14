@@ -44,7 +44,7 @@ By default it having the value “*.*”, so it allows all the file types. In ca
 
 As you already know FileExplorer is a client – server based control and each action performed in the client sends an AJAX request to the server to perform the server side operations. While the AJAX request, the AJAX configurations can be customized through [ajaxSettings](https://help.syncfusion.com/api/js/ejfileexplorer#members:ajaxsettings) property.
 
-The [beforeAjaxRequest](https://help.syncfusion.com/api/js/ejfileexplorer#events:beforeajaxrequest) event will be triggered before the AJAX request is performed.
+The [beforeAjaxRequest](https://help.syncfusion.com/api/js/ejfileexplorer#events:beforeajaxrequest) event will be triggered before the AJAX request is performed. You can modify the ajax request in this event.
 
 You can see the following requests passed during the **client – server actions**:
 
