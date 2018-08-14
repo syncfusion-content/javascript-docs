@@ -515,7 +515,9 @@ Add the following code in the <body> tag in the Default.html page. Here, PDF vie
 
 Run the sample application and you can see the PDF Viewer on the page as displayed in the following screenshot.
 
-Sample: [http://www.syncfusion.com/downloads/support/directtrac/general/ze/PdfViewer_JSSample1105898354](http://www.syncfusion.com/downloads/support/directtrac/general/ze/PdfViewer_JSSample1105898354 "Getting Started sample")
+**Sample:**
+
+<http://www.syncfusion.com/downloads/support/directtrac/general/ze/PdfViewer_GettingStarted-67533367>
 
 ![](Getting-Started_images/Getting-Started_img5.png)
 
