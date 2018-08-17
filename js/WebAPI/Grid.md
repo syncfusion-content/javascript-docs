@@ -250,7 +250,7 @@ Content-Type: application/json;odata=verbose;charset=utf-8
 
 ## Put
 
- [POST] [/Api/Grid/Put](http://js.syncfusion.com/demos/ejservices/api/Grid/Put)
+ [PUT] [/Api/Grid/Put](http://js.syncfusion.com/demos/ejservices/api/Grid/Put)
 
 It is used to update the Grid data. 
 
@@ -273,7 +273,7 @@ Content-Type: application/json;odata=verbose;charset=utf-8
 
 ## Delete
 
- [POST] [/Api/Grid/Delete](http://js.syncfusion.com/demos/ejservices/api/Grid/Delete)
+ [DELETE] [/Api/Grid/Delete](http://js.syncfusion.com/demos/ejservices/api/Grid/Delete)
 
 It is used to delete the data which is present in Grid column. 
 
