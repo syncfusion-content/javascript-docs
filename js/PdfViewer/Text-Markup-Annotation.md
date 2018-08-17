@@ -91,7 +91,7 @@ $(function () { 
 
 The text markup annotations are added to the PDF document using the text markup annotation tools provided in the toolbar of the ejPdfViewer control.
 
-The annotations can be added to the PDF document from the client side using the [annotationType]("annotationType property") property and [addAnnotation]("addAnnotation method") method.
+The annotations can be added to the PDF document from the client side using the [annotationType](https://help.syncfusion.com/api/js/ejpdfviewer#annotationtype-enum "annotationType property") property and [addAnnotation](https://help.syncfusion.com/api/js/ejpdfviewer#methods:addannotation "addAnnotation method") method.
 
 {% highlight javascript %}
 var pdfviewerObj = $("#container").data("ejPdfViewer");
