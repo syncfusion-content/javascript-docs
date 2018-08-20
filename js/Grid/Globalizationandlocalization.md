@@ -80,10 +80,6 @@ CancelEdit</td><td>
 Are you sure you want to Cancel the changes?</td></tr>
 <tr>
 <td>
-PagerInfo</td><td>
-{0} of {1} pages ({2} items)</td></tr>
-<tr>
-<td>
 FrozenColumnsViewAlert</td><td>
 Frozen columns should be in grid view area.</td></tr>
 <tr>
@@ -258,26 +254,45 @@ Sort In Ascending Order.</td></tr>
 <td>
 SortInDescendingOrder</td><td>
 Sort In Descending Order.</td></tr>
+</table>
+
+## Pager Localization
+
+Paging in Grid can also be localized using the `ej.Pager.Locale` object. Please find the table with list of properties and its value in locale object.
+
+<table>
+<tr>
+<th>
+Locale key words </th><th>
+Text</th></tr>
 <tr>
 <td>
 PagerInfo</td><td>
 {0} of {1} pages ({2} items)</td></tr>
 <tr>
 <td>
-NextPage</td><td>
-Next Page</td></tr>
+firstPageTooltip</td><td>
+Go to first page</td></tr>
 <tr>
 <td>
-PreviousPage</td><td>
-Previous Page</td></tr>
+lastPageTooltip</td><td>
+Go to last page</td></tr>
 <tr>
 <td>
-FirstPage</td><td>
-First Page</td></tr>
+nextPageTooltip</td><td>
+Go to next page</td></tr>
 <tr>
 <td>
-LastPage</td><td>
-Last Page</td></tr>
+previousPageTooltip</td><td>
+Go to previous page</td></tr>
+<tr>
+<td>
+nextPagerTooltip</td><td>
+Go to next Pager</td></tr>
+<tr>
+<td>
+previousPagerTooltip</td><td>
+Go to previous Pager</td></tr>
 </table>
 
 
@@ -425,6 +440,14 @@ DateFilter</td><td>
 Date Filter</td></tr>
 <tr>
 <td>
+DateTimeFilter</td><td>
+Date Time Filters</td></tr>
+<tr>
+<td>
+GuidFilter</td><td>
+Guid Filters</td></tr>
+<tr>
+<td>
 StringMenuOptions</td><td>
 [{ text:"Equal",value:"equal"},{ text:"Not Equal", value:"notequal"},{ text:"Starts With",value:"startswith"}, { text:"Ends With",value:"endswith"},{ text:"Contains",value:"contains"}, {text:"Custom Filter", value:"customfilter"}],</td></tr>
 <tr>
@@ -435,6 +458,10 @@ NumberMenuOptions</td><td>
 <td>
 DateMenuOptions</td><td>
 [{ text:"Equal", value:"equal"}, {text:"Not Equal",value:"notequal"},{text:"Less Than",>value:"lessthan"}, {text:"Less Than Or Equal",value:"lessthanorequal"}, {text:"Greater Than",value:"greaterthan"},{text:"Greater Than Or Equal", value:"greaterthanorequal"}, { text:"Between",value:"between"},{ text:"Custom Filter", value:"customfilter"}]</td></tr>
+<tr>
+<td>
+DatetimeMenuOptions</td><td>
+[{ text: "Equal", value: "equal" }, { text: "Not Equal", value: "notequal" }, { text: "Less Than", value: "lessthan" }, { text: "Less Than Or Equal", value: "lessthanorequal" }, { text: "Greater Than", value: "greaterthan" }, { text: "Greater Than Or Equal", value: "greaterthanorequal" }, { text: "Between", value: "between" }, { text: "Custom Filter", value: "customfilter" }]</td></tr>
 <tr>
 <td>
 Top10MenuOptions</td><td>
@@ -481,6 +508,10 @@ DatePickerWaterMark</td><td>
 Select date</td></tr>
 <tr>
 <td>
+DateTimePickerWaterMark</td><td>
+Select date time</td></tr>
+<tr>
+<td>
 True</td><td>
 True</td></tr>
 <tr>
@@ -507,6 +538,10 @@ Enter value</td></tr>
 <td>
 Search</td><td>
 Search</td></tr>
+<tr>
+<td>
+AddToFilter</td><td>
+Add current selection to filter</td></tr>
 </table>
 Please find the code
 
