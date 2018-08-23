@@ -446,7 +446,7 @@ This file, contains action handler methods. Based on the request parameters, it 
                     case "Read":
                         return ftpFileExplorerOperations.Read(args.Path, args.ExtensionsAllow);
                     case "Search":
-                        return ftpFileExplorerOpeartions.Search(args.Path, args.ExtensionsAllow, args.SearchString, args.CaseSensitive);
+                        return ftpFileExplorerOperations.Search(args.Path, args.ExtensionsAllow, args.SearchString, args.CaseSensitive);
                     case "CreateFolder":
                         return ftpFileExplorerOperations.CreateFolder(args.Path, args.Name);
                     case "Paste":
