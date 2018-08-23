@@ -436,7 +436,7 @@ This file, contains action handler methods. Based on the request parameters, it 
 
             if (args.ActionType == "Upload")
             {
-                ftpFileExplorerOpeartions.Upload(args.Files, args.Path);
+                ftpFileExplorerOperations.Upload(args.Files, args.Path);
             }
 
             try
@@ -444,19 +444,19 @@ This file, contains action handler methods. Based on the request parameters, it 
                 switch (args.ActionType)
                 {
                     case "Read":
-                        return ftpFileExplorerOpeartions.Read(args.Path, args.ExtensionsAllow);
+                        return ftpFileExplorerOperations.Read(args.Path, args.ExtensionsAllow);
                     case "Search":
                         return ftpFileExplorerOpeartions.Search(args.Path, args.ExtensionsAllow, args.SearchString, args.CaseSensitive);
                     case "CreateFolder":
-                        return ftpFileExplorerOpeartions.CreateFolder(args.Path, args.Name);
+                        return ftpFileExplorerOperations.CreateFolder(args.Path, args.Name);
                     case "Paste":
-                        return ftpFileExplorerOpeartions.Paste(args.LocationFrom, args.LocationTo, args.Names, args.Action, null);
+                        return ftpFileExplorerOperations.Paste(args.LocationFrom, args.LocationTo, args.Names, args.Action, null);
                     case "Remove":
-                        return ftpFileExplorerOpeartions.Remove(args.Names, args.Path);
+                        return ftpFileExplorerOperations.Remove(args.Names, args.Path);
                     case "Rename":
-                        return ftpFileExplorerOpeartions.Rename(args.Path, args.Name, args.NewName, null);
+                        return ftpFileExplorerOperations.Rename(args.Path, args.Name, args.NewName, null);
                     case "GetDetails":
-                        return ftpFileExplorerOpeartions.GetDetails(args.Path, args.Names);
+                        return ftpFileExplorerOperations.GetDetails(args.Path, args.Names);
                 }
                 return "";
 
@@ -475,9 +475,9 @@ This file, contains action handler methods. Based on the request parameters, it 
         {
 
             if (ActionType == "Download")
-                ftpFileExplorerOpeartions.Download(Path, HttpContext.Current.Request.QueryString.GetValues("Names"));
+                ftpFileExplorerOperations.Download(Path, HttpContext.Current.Request.QueryString.GetValues("Names"));
             else if (ActionType == "GetImage")
-                ftpFileExplorerOpeartions.GetImage(Path, null);
+                ftpFileExplorerOperations.GetImage(Path, null);
 
 
         }
@@ -498,7 +498,7 @@ After that, you need to specify the FTP folder path and AJAX action handler name
 {% highlight html %}
 
 $("#fileExplorer").ejFileExplorer({ //Path of the folder that you want to view in FileExplorer. 
-path: “ftp://localHost/filebrowser/", //Path of file handling operation method 
+path: "ftp://localHost/FileBrowser/", //Path of file handling operation method 
 ajaxAction: "http://localhost/api/FileExplorer/FileOperations" });
 
 {% endhighlight %}
