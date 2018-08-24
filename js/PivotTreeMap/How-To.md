@@ -10,7 +10,7 @@ api: /api/js/ejpivottreemap
 
 # How to
 
-### Generate JSON object from Olap cube
+### Generate JSON object from OLAP cube
 The [`generateJSON`](/api/js/ejpivottreemap#methods:generatejson) method is used to render the control with the pivot engine obtained from the OLAP cube.
 
 {% highlight html %}
