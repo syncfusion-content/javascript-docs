@@ -428,7 +428,7 @@ This file, contains action handler methods. Based on the request parameters, it 
 
 {% highlight c# %}
 
-[HttpPost]
+        [HttpPost]
         [ActionName("doJSONAction")]
         public object doJSONAction()
         {
@@ -495,7 +495,7 @@ This file, contains action handler methods. Based on the request parameters, it 
 You will create FTP URL like “ftp://localhost/FileBrowser/” (Port number may vary).
 After that, you need to specify the FTP folder path and AJAX action handler name as shown in below code block.
 
-{% highlight html %}
+{% highlight javascript %}
 
 $("#fileExplorer").ejFileExplorer({ //Path of the folder that you want to view in FileExplorer. 
 path: "ftp://localHost/FileBrowser/", //Path of file handling operation method 
