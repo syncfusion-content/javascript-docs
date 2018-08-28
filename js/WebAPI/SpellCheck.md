@@ -9,8 +9,6 @@ keywords: spellcheck, ejspellcheck, syncfusion, spellcheck api
 
 ## CheckWords
 
-[GET] Service link: https://js.syncfusion.com/demos/ejservices/api/SpellCheck/CheckWords
-
 It is used for splitting the input string into separate words and checking whether it is an erroneous word or not. Also, it forms a list of error words and its corresponding suggestions as a collection.  
 
 ### URL parameters
@@ -147,8 +145,6 @@ function showDialog() {
 {% endhighlight %}
 
 ## AddToDictionary
-
- [GET] Service link: https://js.syncfusion.com/demos/ejservices/api/SpellCheck/AddToDictionary
 
 It is used to add the custom word into the custom dictionary file.
 
