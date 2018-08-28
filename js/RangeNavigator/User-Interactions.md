@@ -133,9 +133,22 @@ To customize border of selected interval, use [`color`](../api/ejrangenavigator#
 ![](/js/RangeNavigator/User-Interactions_images/User-Interactions_img4.png)
 
 
+## Range selection
+
+You can use the "allowNextValue" property to show the values between particular periods, e.g. between 1st January and 1st February. The default value of this property is true. If you set this property to false, values can be shown between the particular periods, e.g. between 1st January and 31st January.
+
+{% highlight javascript %}
+ 
+    $("#container").ejRangeNavigator({
+            allowNextValue: false;
+    });
+
+ {% endhighlight %}
+
+
 ## Scrollbar
 
-* To render the Scrollbar in RangeNavigator, you need to enable [`enableScrollbar`](../api/ejrangenavigator#members:enablescrollbar) option.
+* To render the scroll bar in range navigator, enable the [`enableScrollbar`](../api/ejrangenavigator#members:enablescrollbar) option.
  
 * [`scrollRangeSettings`](../api/ejrangenavigator#members:scrollrangesettings) of  rangenavigator [`start`](../api/ejrangenavigator#members:scrollrangesettings-start) and [`end`](../api/ejrangenavigator#members:scrollrangesettings-end) value is used to set the minimum and maximum datasource value to be added in the rangenavigator.
  

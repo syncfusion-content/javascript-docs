@@ -400,3 +400,109 @@ It used to search all the matched files and sub-folders in the given folder path
 You can set the alias name to the root folder of FileExplorer by using `rootFolderName` API. It is used to replace the actual root folder name in the FileExplorer UI. Refer to the below sample to set the alias name for the root folder of FileExplorer.
 
 Sample Link: [link](http://jsplayground.syncfusion.com/psx0vwle)
+
+
+## Use the FTP connection using FileExplorer
+
+You can access your FTP service using our FileExplorer component and can manage your files easily.
+
+### FTP Login
+
+First you will need the FTP account login information. You can connect with the primary username and password or an FTP account. The FTP server is open to the public, using anonymous access. But most of the FTP servers are password protected. 
+Username: username or user@example.com
+Password: The password that was created for the user you are using.
+
+### FTP with FileExplorer server
+
+In this FTP Web API application, we have provided “FTPFileOperationController” file, which contains “doJSONAction” action method. When you make AJAX request to this controller part, “doJSONAction” method will be called after based on ActionType” parameter value, then it calls the corresponding built-in FTP file handling methods such as ‘Read’, ‘Search’, ‘Download’, ‘Upload’, ‘Remove’, ‘Rename’ which are available in our “FTPFileExplorerOperations” class.
+
+### Steps to create FileExplorer application to access FTP server
+
+**Step 1:** Create a new ASP.NET MVC project using Visual Studio.
+
+**Step 2:** Include **“FTPFileExplorerOperations”** file in that application. This file contains built-in file handling methods which helps to connect our FileExplorer with FTP service.
+
+**Step 3:** Add **“FileExplorerController.cs”** file in the controller part of FTP project.
+
+This file, contains action handler methods. Based on the request parameters, it helps to call the built-in file handling methods of **FTPFileExplorerOperations** and perform corresponding actions.
+
+{% highlight c# %}
+
+        [HttpPost]
+        [ActionName("doJSONAction")]
+        public object doJSONAction()
+        {
+            FileExplorerParams args = FileExplorerOperations.GetAjaxData(Request);
+
+            if (args.ActionType == "Upload")
+            {
+                ftpFileExplorerOperations.Upload(args.Files, args.Path);
+            }
+
+            try
+            {
+                switch (args.ActionType)
+                {
+                    case "Read":
+                        return ftpFileExplorerOperations.Read(args.Path, args.ExtensionsAllow);
+                    case "Search":
+                        return ftpFileExplorerOperations.Search(args.Path, args.ExtensionsAllow, args.SearchString, args.CaseSensitive);
+                    case "CreateFolder":
+                        return ftpFileExplorerOperations.CreateFolder(args.Path, args.Name);
+                    case "Paste":
+                        return ftpFileExplorerOperations.Paste(args.LocationFrom, args.LocationTo, args.Names, args.Action, null);
+                    case "Remove":
+                        return ftpFileExplorerOperations.Remove(args.Names, args.Path);
+                    case "Rename":
+                        return ftpFileExplorerOperations.Rename(args.Path, args.Name, args.NewName, null);
+                    case "GetDetails":
+                        return ftpFileExplorerOperations.GetDetails(args.Path, args.Names);
+                }
+                return "";
+
+            }
+            catch (Exception e)
+            {
+                FileExplorerResponse Response = new FileExplorerResponse();
+                Response.error = e.GetType().FullName + ", " + e.Message;
+                return Response;
+            }
+        }
+
+        [HttpGet]
+        [ActionName("PerformAction")]
+        public void PerformAction(string ActionType, string Path)
+        {
+
+            if (ActionType == "Download")
+                ftpFileExplorerOperations.Download(Path, HttpContext.Current.Request.QueryString.GetValues("Names"));
+            else if (ActionType == "GetImage")
+                ftpFileExplorerOperations.GetImage(Path, null);
+
+
+        }
+
+        [HttpGet]
+        [ActionName("doJSONAction")]
+        public void doJSONAction(string ActionType, string Path)
+        {
+            PerformAction(ActionType, Path);
+        }
+
+{% endhighlight %}
+
+**Step 4:** Add FTP Storage path that is viewed by FileExplorer.
+You will create FTP URL like “ftp://localhost/FileBrowser/” (Port number may vary).
+After that, you need to specify the FTP folder path and AJAX action handler name as shown in below code block.
+
+{% highlight javascript %}
+
+$("#fileExplorer").ejFileExplorer({ //Path of the folder that you want to view in FileExplorer. 
+path: "ftp://localHost/FileBrowser/", //Path of file handling operation method 
+ajaxAction: "http://localhost/api/FileExplorer/FileOperations" });
+
+{% endhighlight %}
+
+We have prepared a demo based on above steps, please refer this.
+
+[http://www.syncfusion.com/downloads/support/directtrac/general/ze/FTPFileExplorerOperations-1690670324.zip](http://www.syncfusion.com/downloads/support/directtrac/general/ze/FTPFileExplorerOperations-1690670324.zip#)
