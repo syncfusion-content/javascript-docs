@@ -422,21 +422,25 @@ In this FTP Web API application, we have provided “FTPFileOperationController�
 
 **Step 2:** Include **“FTPFileExplorerOperations”** file in that application. This file contains built-in file handling methods which helps to connect our FileExplorer with FTP service.
 
+[http://www.syncfusion.com/downloads/support/directtrac/general/ze/FTPFileExplorerOperations-1690670324.zip](http://www.syncfusion.com/downloads/support/directtrac/general/ze/FTPFileExplorerOperations-1690670324.zip#)
+
 **Step 3:** Add **“FileExplorerController.cs”** file in the controller part of FTP project.
 
 This file, contains action handler methods. Based on the request parameters, it helps to call the built-in file handling methods of **FTPFileExplorerOperations** and perform corresponding actions.
 
 {% highlight c# %}
 
+        FTPFileExplorerOperations operation = new FTPFileExplorerOperations();
+        
         [HttpPost]
         [ActionName("doJSONAction")]
         public object doJSONAction()
         {
-            FileExplorerParams args = FileExplorerOperations.GetAjaxData(Request);
+            FileExplorerParams args = GetAjaxData(Request);
 
             if (args.ActionType == "Upload")
             {
-                ftpFileExplorerOperations.Upload(args.Files, args.Path);
+                operation.Upload(args.Files, args.Path);
             }
 
             try
@@ -444,19 +448,19 @@ This file, contains action handler methods. Based on the request parameters, it 
                 switch (args.ActionType)
                 {
                     case "Read":
-                        return ftpFileExplorerOperations.Read(args.Path, args.ExtensionsAllow);
+                        return operation.Read(args.Path, args.ExtensionsAllow);
                     case "Search":
-                        return ftpFileExplorerOperations.Search(args.Path, args.ExtensionsAllow, args.SearchString, args.CaseSensitive);
+                        return operation.Search(args.Path, args.ExtensionsAllow, args.SearchString, args.CaseSensitive);
                     case "CreateFolder":
-                        return ftpFileExplorerOperations.CreateFolder(args.Path, args.Name);
+                        return operation.CreateFolder(args.Path, args.Name);
                     case "Paste":
-                        return ftpFileExplorerOperations.Paste(args.LocationFrom, args.LocationTo, args.Names, args.Action, null);
+                        return operation.Paste(args.LocationFrom, args.LocationTo, args.Names, args.Action, null);
                     case "Remove":
-                        return ftpFileExplorerOperations.Remove(args.Names, args.Path);
+                        return operation.Remove(args.Names, args.Path);
                     case "Rename":
-                        return ftpFileExplorerOperations.Rename(args.Path, args.Name, args.NewName, null);
+                        return operation.Rename(args.Path, args.Name, args.NewName, null);
                     case "GetDetails":
-                        return ftpFileExplorerOperations.GetDetails(args.Path, args.Names);
+                        return operation.GetDetails(args.Path, args.Names);
                 }
                 return "";
 
@@ -475,9 +479,9 @@ This file, contains action handler methods. Based on the request parameters, it 
         {
 
             if (ActionType == "Download")
-                ftpFileExplorerOperations.Download(Path, HttpContext.Current.Request.QueryString.GetValues("Names"));
+                operation.Download(Path, HttpContext.Current.Request.QueryString.GetValues("Names"));
             else if (ActionType == "GetImage")
-                ftpFileExplorerOperations.GetImage(Path, null);
+                operation.GetImage(Path, null);
 
 
         }
@@ -489,6 +493,23 @@ This file, contains action handler methods. Based on the request parameters, it 
             PerformAction(ActionType, Path);
         }
 
+        public FileExplorerParams GetAjaxData(HttpRequestMessage request)
+        {
+            FileExplorerParams args = new FileExplorerParams();
+            if (HttpContext.Current.Request.Files.Count > 0)
+            {
+                args.Path = HttpContext.Current.Request.QueryString.GetValues("Path")[0];
+                args.ActionType = "Upload";
+            }
+            else
+            {
+                var serializer = new JavaScriptSerializer();
+                args = (FileExplorerParams)serializer.Deserialize(request.Content.ReadAsStringAsync().Result, typeof(FileExplorerParams));
+            }
+            return args;
+        }
+
+
 {% endhighlight %}
 
 **Step 4:** Add FTP Storage path that is viewed by FileExplorer.
@@ -499,10 +520,10 @@ After that, you need to specify the FTP folder path and AJAX action handler name
 
 $("#fileExplorer").ejFileExplorer({ //Path of the folder that you want to view in FileExplorer. 
 path: "ftp://localHost/FileBrowser/", //Path of file handling operation method 
-ajaxAction: "http://localhost/api/FileExplorer/FileOperations" });
+ajaxAction: "http://localhost/FileExplorer/FileOperation/doJSONAction" });
 
 {% endhighlight %}
 
 We have prepared a demo based on above steps, please refer this.
 
-[http://www.syncfusion.com/downloads/support/directtrac/general/ze/FTPFileExplorerOperations-1690670324.zip](http://www.syncfusion.com/downloads/support/directtrac/general/ze/FTPFileExplorerOperations-1690670324.zip#)
+[http://www.syncfusion.com/downloads/support/directtrac/general/ze/FTPWebAPI-1200546959.zip](http://www.syncfusion.com/downloads/support/directtrac/general/ze/FTPWebAPI-1200546959.zip#)
