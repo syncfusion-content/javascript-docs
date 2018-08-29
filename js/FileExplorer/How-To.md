@@ -520,7 +520,7 @@ After that, you need to specify the FTP folder path and AJAX action handler name
 
 $("#fileExplorer").ejFileExplorer({ //Path of the folder that you want to view in FileExplorer. 
 path: "ftp://localHost/FileBrowser/", //Path of file handling operation method 
-ajaxAction: "http://localhost/fileexplorer/fileoperation/doJSONAction" });
+ajaxAction: "http://localhost/FileExplorer/FileOperation/doJSONAction" });
 
 {% endhighlight %}
 
