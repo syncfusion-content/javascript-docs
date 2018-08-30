@@ -97,8 +97,6 @@ The details of WebAPI has been shown in the below table.
 |[Load](WebAPI/PdfViewer#load)|It loads the PDF document in the PDF viewer control and process the PDF document for each request.|
 |[FileUpload](WebAPI/PdfViewer#fileupload)|It uploads and loads the PDF document to the PDF viewer control.|
 |[Download](WebAPI/PdfViewer#download)|It downloads the PDF document that is in view of the PDF viewer control.|
-|[Unload](WebAPI/PdfViewer#unload)|It unloads and disposes the PDF document resources being displayed in the PDF viewer from the server side.|
-
 
 ### PivotChart (Relational)
 
