@@ -256,11 +256,11 @@ String Path,
 <br/>
 String ExtensionsAllow,
 <br/>
-<br/>IEnumerable<object> SelectedItems<br/>
+<br/>IEnumerable&lt;object&gt; SelectedItems<br/>
 <br/>
 </td>
 <td>
-Response data should be in JSON format with key name as ‘files’ and JSON fields should be with following field names {{'__“__'| markdownify }}{{'__name__'| markdownify }}{{'__,__  '| markdownify }}{{'__isFile__'| markdownify }}{{'__,__ '| markdownify }}{{'__hasChild__'| markdownify }}{{'__”.__'| markdownify }}<br/><br/>If needed, customer can also add additional data along with the JSON result.<br/><br/>{{'__For__ '| markdownify }}{{'__example__'| markdownify }}{{'__:__'| markdownify }}<br/><br/>{files:[{name: "7.png", type: "File", size: 11439, dateModified: "3/31/2015 3:16:38 PM", hasChild: false},{name: "human.png", type: "File", size: 11059, dateModified: "3/31/2015 3:16:35 PM", hasChild: false}]}<br/>
+Response data should be in JSON format with key name as ‘files’ and JSON fields should be with following field names.<br/><br/>If needed, customer can also add additional data along with the JSON result.<br/><br/>{files:[{name: "7.png", type: "File", size: 11439, dateModified: "3/31/2015 3:16:38 PM", hasChild: false},{name: "human.png", type: "File", size: 11059, dateModified: "3/31/2015 3:16:35 PM", hasChild: false}]}<br/>
 <br/>
 </td>
 <td>
@@ -282,7 +282,7 @@ String Path,
 String Name,
 <br/>
 <br/>
-IEnumerable<object> SelectedItems
+IEnumerable&lt;object&gt; SelectedItems
 <br/>
 <br/>
 </td>
@@ -306,9 +306,9 @@ String LocationTo,
 String[] Names,
 <br/><br/>
 String Action,
-<br/><br/>IEnumerable<CommonFileDetails> CommonFiles
-<br/><br/>IEnumerable<object> SelectedItems
-<br/><br/>IEnumerable<object> TargetFolder
+<br/><br/>IEnumerable&lt;CommonFileDetails&gt; CommonFiles
+<br/><br/>IEnumerable&lt;object&gt; SelectedItems
+<br/><br/>IEnumerable&lt;object&gt; TargetFolder
 <br/><br/></td><td>
 Here you may return the pasted file details or empty.
 <br/><br/><br/><br/></td><td>
@@ -319,7 +319,7 @@ Remove<br/><br/></td><td>
 String ActionType,
  <br/><br/>String[] Names,
 <br/><br/>String Path
-<br/><br/>IEnumerable<object> SelectedItems
+<br/><br/>IEnumerable&lt;object&gt; SelectedItems
 <br/><br/>
 </td><td>
 Here you may return the removed file details or empty.
@@ -339,7 +339,7 @@ String Name,
 <br/><br/>
 String NewName,
 <br/><br/>
-IEnumerable<CommonFileDetails> CommonFiles<br/><br/>IEnumerable<object> SelectedItems<br/><br/>
+IEnumerable&lt;CommonFileDetails&gt;&lt;CommonFileDetails&gt; CommonFiles<br/><br/>IEnumerable&lt;object&gt; SelectedItems<br/><br/>
 </td><td>
 Here you may return the renamed file details or empty.<br/><br/><br/><br/>
 </td><td>
@@ -348,7 +348,7 @@ Rename the file or folder from the given path<br/><br/></td></tr>
 <td>
 GetDetails<br/><br/>
 </td><td>
-String ActionType, <br/><br/>String Path,<br/><br/>String[] Names,<br/><br/>IEnumerable<object> SelectedItems<br/><br/>
+String ActionType, <br/><br/>String Path,<br/><br/>String[] Names,<br/><br/>IEnumerable&lt;object&gt; SelectedItems<br/><br/>
 </td><td>
 Response data should be in JSON format like below<br/><br/>{details:[{CreationTime:"4/28/2015 9:44:32 AM", Extension:".png", Format:"Archive", FullName:"F:\All samples\FileExplorer_Custom\FileExplorerContent\human.png", LastAccessTime:"4/28/2015 9:44:32 AM", LastWriteTime:"3/31/2015 3:16:35 PM", Length:11059, Name:"human.png"}]}<br/><br/>
 </td><td>
@@ -358,7 +358,7 @@ get the details of the file/folder from the given path and return data in JSON f
 <td>
 Download<br/><br/>
 </td><td>
-String ActionType,<br/><br/>String Path,<br/><br/>String[] Names,<br/><br/>IEnumerable<object> SelectedItems<br/><br/>
+String ActionType,<br/><br/>String Path,<br/><br/>String[] Names,<br/><br/>IEnumerable&lt;object&gt; SelectedItems<br/><br/>
 </td><td>
 Void<br/><br/>
 </td><td>
@@ -368,7 +368,7 @@ download the file from the given path<br/><br/>
 <td>
 Upload<br/><br/>
 </td><td>
-String ActionType, <br/><br/>IEnumerable<HttpPostedFileBase> FileUpload,<br/><br/>String Path<br/><br/>IEnumerable<object> SelectedItems <br/><br/>
+String ActionType, <br/><br/>IEnumerable&lt;HttpPostedFileBase&gt; FileUpload,<br/><br/>String Path<br/><br/>IEnumerable&lt;object&gt; SelectedItems <br/><br/>
 </td><td>
 Void<br/><br/>
 </td><td>
@@ -379,7 +379,7 @@ upload the file to the given path<br/><br/>
 <td>
 GetImage<br/><br/>
 </td><td>
-String Path,<br/><br/>IEnumerable<object> SelectedItems<br/><br/>
+String Path,<br/><br/>IEnumerable&lt;object&gt; SelectedItems<br/><br/>
 </td><td>
 Should return image in HttpResponseMessage.<br/><br/>
 </td><td>
@@ -388,9 +388,9 @@ Used to get image form the given physical path.<br/><br/>
 <tr>
 <td>
 Search<br/><br/></td><td>
-String ActionType,<br/><br/>String Path,<br/><br/>String SearchString,<br/><br/>Bool CaseSensitive<br/><br/>String ExtensionsAllow<br/><br/>IEnumerable<object> SelectedItems<br/><br/>
+String ActionType,<br/><br/>String Path,<br/><br/>String SearchString,<br/><br/>Bool CaseSensitive<br/><br/>String ExtensionsAllow<br/><br/>IEnumerable&lt;object&gt; SelectedItems<br/><br/>
 </td><td>
-It should return data in JSON format with key name as ‘files’ and JSON fields need to be with following field names {{'__“__'| markdownify }}{{'__name__'| markdownify }}{{'__,__  '| markdownify }}{{'__filterPath__'| markdownify }}{{'__,__  '| markdownify }}{{'__isFile__'| markdownify }}{{'__,__ '| markdownify }}{{'__hasChild__'| markdownify }}{{'__”.__'| markdownify }}{{'____'| markdownify }}<br/><br/>{<br/><br/>"files":[{"name":"bird.jpg","type":"File","size":102182,"dateModified":"1/9/2016 6:48:42 AM","hasChild":false,"isFile":true,"filterPath":null},<br/><br/>{"name":"sea.jpg","type":"File","size":97145,"dateModified":"1/9/2016 6:48:42 AM","hasChild":false,"isFile":true,"filterPath":null }],<br/><br/>"details":null,<br/><br/>"error":null<br/><br/>}<br/><br/></td><td>
+It should return data in JSON format with key name as ‘files’ and JSON fields need to be with following field names.<br/><br/>{"files":[{"name":"bird.jpg","type":"File","size":102182,"dateModified":"1/9/2016 6:48:42 AM","hasChild":false,"isFile":true,"filterPath":null},<br/><br/>{"name":"sea.jpg","type":"File","size":97145,"dateModified":"1/9/2016 6:48:42 AM","hasChild":false,"isFile":true,"filterPath":null }],"details":null,"error":null}<br/><br/></td><td>
 It used to search all the matched files and sub-folders in the given folder path also it filters the specified files using it types.<br/><br/><br/><br/>
 </td></tr>
 </table>
@@ -518,8 +518,10 @@ After that, you need to specify the FTP folder path and AJAX action handler name
 
 {% highlight javascript %}
 
-$("#fileExplorer").ejFileExplorer({ //Path of the folder that you want to view in FileExplorer. 
-path: "ftp://localHost/FileBrowser/", //Path of file handling operation method 
+$("#fileExplorer").ejFileExplorer({ 
+//Path of the folder that you want to view in FileExplorer. 
+path: "ftp://localHost/FileBrowser/", 
+//Path of file handling operation method 
 ajaxAction: "http://localhost/FileExplorer/FileOperation/doJSONAction" });
 
 {% endhighlight %}
