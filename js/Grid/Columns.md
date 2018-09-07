@@ -1064,6 +1064,126 @@ The following output is displayed as a result of the above code example.
 
 ![](columns_images/columns_img20.png)
 
+## Foreign Key Adaptor
+
+### foreignKeyField matches with Grid field
+
+The Grid can have a look up column. The Foreign key column using `foreignKeyField` has some limitations such as sort/group operations on column will happen based on `field` instead of `foreignKeyField`. The `ForeignKeyAdaptor` can be used to overcome this limitation.
+      
+N> It works by specifying a virtual column (which is not in the grid datasource) in the Grid. This Adaptor should be initialized in the `load` event of the grid. `ForeignKeyAdaptor` supported for only local data binding.
+
+The following code example describes the above behavior.      
+
+
+{% tabs %}  
+{% highlight javascript %}
+
+ <script type="text/javascript">
+      var foreignObj = [
+        {
+            dataSource: window.employeeView,
+            foreignKeyField: "EmployeeID", //Property in the Grid's main as well as foreignKey dataSource
+            foreignKeyValue: "FirstName" //Property in foreignkey dataSource
+        }
+    ];
+        $(function () {
+            // the datasource "window.gridData" is referred from jsondata.min.js
+            var data = window.gridData;
+            $("#Grid1").ejGrid({
+                dataSource: data,
+                allowPaging: true,
+                allowSorting: true,
+                allowFiltering: true,
+                allowGrouping: true,
+                allowMultiSorting: true,
+            	load: function(args){               
+                	this.model.dataSource.adaptor = new ej.ForeignKeyAdaptor(foreignObj, "JsonAdaptor");
+              	},
+			columns: [
+                         { field: "OrderID", width: 80, isPrimaryKey: true,textAlign: ej.TextAlign.Right,headerText: "Order ID" } ,
+                         { field: "FirstName", width: 75, headerText: "First Name" },
+                         { field: "Freight", textAlign: ej.TextAlign.Right, width: 75, format: "{0:C}" },
+                         { field: "ShipName", headerText: 'Ship Name', width: 150 },
+                         { field: "ShipCountry", headerText: 'Ship Country', width: 90 }
+                ]
+            });
+        });
+    </script>
+{% endhighlight  %}
+{% endtabs %}           
+
+ I> 1. The `field` name of the virtual column should be the name of the field to display from foreign datasource.
+ I> 2. By default, the `ForeignKeyAdaptor` uses `JsonAdaptor`, to use other Adaptors specify the Adaptor name as the second argument during initialization.
+
+The following output is displayed as a result of the above code example.
+
+![](columns_images/columns_img42.png)
+
+### foreignKeyField does not match with Grid field
+
+In some cases 'foreignKeyField' value does not match with Grid main dataSource, we can define the 'foreignKeyField' along with 'field' in the ForeignKeyAdaptor.
+      
+N> This Adaptor should be initialized in the `load` event of the grid. `ForeignKeyAdaptor` supported for only local data binding.
+
+The following code example describes the above behavior.      
+
+
+{% tabs %}  
+{% highlight javascript %}
+
+ <script type="text/javascript">
+      var Data = [
+         { FirstName: 'VINET', Employee: 1},
+	     { FirstName: 'TOMSP', Employee: 2},
+	     { FirstName: 'HANAR', Employee: 3},
+	     { FirstName: 'ANTON', Employee: 4},
+	     { FirstName: 'SUPRD', Employee: 5},
+	     { FirstName: 'WELLI', Employee: 6},
+	     { FirstName: 'HILLA', Employee: 7},
+	     { FirstName: 'ANTON', Employee: 8},
+	     { FirstName: 'AROUT', Employee: 9},
+	     		 
+       ];
+      var foreignObj = [
+        {
+            dataSource: Data,
+            foreignKeyField: "Employee",  //Property in foreignkey dataSource
+            field: "EmployeeID",//Property in the Grid's main dataSource
+            foreignKeyValue: "FirstName" //Property in foreignkey dataSource
+        }
+    ];
+      
+        $(function () {
+            // the datasource "window.gridData" is referred from jsondata.min.js
+            var data = window.gridData;
+            $("#Grid1").ejGrid({
+                dataSource: data,
+                allowPaging: true,
+                allowSorting: true,
+                allowFiltering: true,
+                allowGrouping: true,
+                allowMultiSorting: true,
+            	load: function(args){               
+                	this.model.dataSource.adaptor = new ej.ForeignKeyAdaptor(foreignObj, "JsonAdaptor");
+              	},
+			    columns: [
+                         { field: "OrderID", width: 80, isPrimaryKey: true,textAlign: ej.TextAlign.Right,headerText: "Order ID" } ,
+                         { field: "EmployeeID_FirstName", width: 75, headerText: "First Name" },
+                         { field: "Freight", textAlign: ej.TextAlign.Right, width: 75, format: "{0:C}" },
+                         { field: "ShipName", headerText: 'Ship Name', width: 150 },
+                         { field: "ShipCountry", headerText: 'Ship Country', width: 90 }
+                ]
+            });
+        });
+    </script>
+{% endhighlight  %}
+{% endtabs %}           
+
+ I> 1. The `field` name of the virtual column should be the name of the field to display from foreign datasource.
+ 
+The following output is displayed as a result of the above code example.
+
+![](columns_images/columns_img43.png)
 
 ## Customize column
 
