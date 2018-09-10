@@ -1479,7 +1479,9 @@ The following code example describes the above behavior.
 {% highlight cs %}
 public ActionResult Insert(EditableOrder value)
 {
-	//Insert record in database
+    OrderRepository.Add(value);
+    var data = OrderRepository.GetAllRecords();
+    return Json(value, JsonRequestBehavior.AllowGet);
 }
 {% endhighlight %}
 
@@ -1498,7 +1500,9 @@ The following code example describes the above behavior.
 {% highlight cs %}
 public ActionResult Update(EditableOrder value)
 {
-	//Update record in database
+    OrderRepository.Update(value);
+    var data = OrderRepository.GetAllRecords();
+    return Json(value, JsonRequestBehavior.AllowGet);
 }
 {% endhighlight %}
 
@@ -1516,7 +1520,9 @@ The following code example describes the above behavior.
 {% highlight cs %}
 public ActionResult Remove(int key)
 {
-	//Delete record in database
+  OrderRepository.Delete(key);
+  var data = OrderRepository.GetAllRecords();
+  return Json(key, JsonRequestBehavior.AllowGet);
 }
 {% endhighlight %}
 
@@ -1568,9 +1574,15 @@ $(function () {
 {% endhighlight %}
 
 {% highlight javascript %}
-public ActionResult CrudUpdate(EditableOrder value, string action)
+public ActionResult CrudUpdate(EditableOrder value, string action,int Key)
 {
-	//Delete record in database
+    if (action == "update")
+        OrderRepository.Update(value);
+    else if (action == "insert")
+        OrderRepository.Add(value);
+    else if (action == "remove")
+        OrderRepository.Delete(key);
+    return Json(value, JsonRequestBehavior.AllowGet);
 }
 {% endhighlight %}
 
@@ -1625,10 +1637,17 @@ $(function () {
 
 {% highlight c# %}
 
-	public ActionResult BatchUpdate(string action, List<EditableOrder> added, List<EditableOrder> changed, List<EditableOrder> deleted, int? key)
-		{
-				//Save the batch changes in database
-			}
+public ActionResult BatchUpdate(string action, List<EditableOrder> added, List<EditableOrder> changed, List<EditableOrder> deleted, int? key)
+{
+    if (changed != null)
+        OrderRepository.Update(changed);
+    if (deleted != null)
+        OrderRepository.Delete(deleted);
+    if (added != null)
+        OrderRepository.Add(added);
+    var data = OrderRepository.GetComplexRecords();
+    return Json(new { changed = changed, added = added, deleted = deleted }, JsonRequestBehavior.AllowGet);
+}
 
 {% endhighlight %}
 
