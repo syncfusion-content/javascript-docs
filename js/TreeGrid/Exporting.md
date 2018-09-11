@@ -43,7 +43,7 @@ function toolbarClick(args) {
 
 {% endhighlight %}
 
-The below screen shot shows Gantt with excel and Pdf exporting enabled.
+The below screen shot shows Gantt with excel and PDF exporting enabled.
 
 ![](/js/TreeGrid/Export_images/Export_img1.png)
 
