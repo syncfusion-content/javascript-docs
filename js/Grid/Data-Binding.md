@@ -302,7 +302,7 @@ $(function() {
 
 {% endhighlight %}
 
-Please refer to this [link](https://help.syncfusion.com/js/datamanager/data-binding#offline-mode "offline") for further reference on `offline` property
+Please refer to this [link](https://help.syncfusion.com/js/datamanager/adavancedfunctionalities#offline-support "offline") for further reference on `offline` property
 
 The following output is displayed as a result of the above code example.
 
