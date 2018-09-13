@@ -1066,11 +1066,17 @@ The following output is displayed as a result of the above code example.
 
 ## Foreign Key Adaptor
 
-### foreignKeyField matches with Grid field
-
 The Grid can have a look up column. The Foreign key column using `foreignKeyField` has some limitations such as sort/group operations on column will happen based on `field` instead of `foreignKeyField`. The `ForeignKeyAdaptor` can be used to overcome this limitation.
       
 N> It works by specifying a virtual column (which is not in the grid datasource) in the Grid. This Adaptor should be initialized in the `load` event of the grid. `ForeignKeyAdaptor` supported for only local data binding.
+
+ I> 1. The `field` name of the virtual column should be the name of the field to display from foreign datasource.
+ I> 2. By default, the `ForeignKeyAdaptor` uses `JsonAdaptor`, to use other Adaptors specify the Adaptor name as the second argument during initialization.
+
+
+We have two cases while using ForeignKeyAdaptor.
+
+### foreignKeyField name is same as the Grid field name
 
 The following code example describes the above behavior.      
 
@@ -1112,16 +1118,13 @@ The following code example describes the above behavior.
 {% endhighlight  %}
 {% endtabs %}           
 
- I> 1. The `field` name of the virtual column should be the name of the field to display from foreign datasource.
- I> 2. By default, the `ForeignKeyAdaptor` uses `JsonAdaptor`, to use other Adaptors specify the Adaptor name as the second argument during initialization.
-
 The following output is displayed as a result of the above code example.
 
 ![](columns_images/columns_img42.png)
 
-### foreignKeyField does not match with Grid field
+### foreignKeyField name differs with Grid field name
 
-In some cases 'foreignKeyField' value does not match with Grid main dataSource, we can define the 'foreignKeyField' along with 'field' in the ForeignKeyAdaptor.
+In some cases 'foreignKeyField' value does not match with Grid field name in that scenario we can define the 'foreignKeyField' along with 'field' in the ForeignKeyAdaptor.
       
 N> This Adaptor should be initialized in the `load` event of the grid. `ForeignKeyAdaptor` supported for only local data binding.
 
@@ -1179,8 +1182,6 @@ The following code example describes the above behavior.
 {% endhighlight  %}
 {% endtabs %}           
 
- I> 1. The `field` name of the virtual column should be the name of the field to display from foreign datasource.
- 
 The following output is displayed as a result of the above code example.
 
 ![](columns_images/columns_img43.png)
