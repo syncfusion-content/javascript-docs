@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Rectangle Report Item | ReportDesigner | JS | Syncfusion
+title: Pivot Grid Report Item | ReportDesigner | JS | Syncfusion
 description: Draw a Pivot Grid Item
 platform: js
 control: ReportDesigner

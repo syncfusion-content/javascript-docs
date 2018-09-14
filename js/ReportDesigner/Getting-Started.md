@@ -70,7 +70,7 @@ Add the References, scripts, styles that are required for the Report Designer.
 
 #### Add Scripts and Styles
 
-Add the script files and theme files in the &lt;title&gt; tag of the Default.html page.
+Add the script files and theme files in the &lt;head&gt; tag of the Default.html page.
   
 {% highlight html %}
 
@@ -106,7 +106,7 @@ Initialize Report Designer by using the following code example in the &lt;body&g
 <script type="text/javascript">
     $(function() {
         $("#container").ejReportDesigner({
-            serviceUrl: '../../api/ReportingAPI'
+            serviceUrl: '../../api/ReportDesigner'
         });
     });
 </script>
@@ -137,39 +137,13 @@ using System.Collections;
 using System.Web;
 using Syncfusion.EJ.ReportDesigner;
 using System.IO;
-using Reporting.ExternalServer;
 
 namespace ReportDesignerSample
 {
     public class ReportDesignerController : ApiController, Syncfusion.EJ.ReportDesigner.IReportDesignerController
     {
-        string CachePath = "App_Data\\ReportServer\\Cache\\";
-
-        internal ExternalServer Server
-        {
-            get;
-            set;
-        }
-
-        internal string ServerURL
-        {
-            get;
-            set;
-        }
-
-        internal string AuthorizationHeaderValue
-        {
-            get;
-            set;
-        }
-
         public ReportDesignerController()
         {
-            ExternalServer externalServer = new ExternalServer();
-            this.Server = externalServer;
-            this.ServerURL = "Sample";
-            externalServer.ReportServerUrl = this.ServerURL;
-            ReportDesignerHelper.ReportingServer = externalServer;
         }
 
         [HttpPost]
@@ -197,13 +171,12 @@ namespace ReportDesignerSample
 
         public void OnInitReportOptions(Syncfusion.EJ.ReportViewer.ReportViewerOptions reportOption)
         {
-            reportOption.ReportModel.ReportingServer = this.Server;
-            reportOption.ReportModel.ReportServerUrl = this.ServerURL;
-            reportOption.ReportModel.ReportServerCredential = new NetworkCredential("Sample", "Password");
+            //You can update report options here
         }
 
         public void OnReportLoaded(Syncfusion.EJ.ReportViewer.ReportViewerOptions reportOption)
         {
+            //You can update report options here
         }
 
         public object GetResource(string key, string resourcetype, bool isPrint)
@@ -215,7 +188,7 @@ namespace ReportDesignerSample
         {
             string targetFolder = HttpContext.Current.Server.MapPath("~/");
             string fileName = !string.IsNullOrEmpty(ReportDesignerHelper.SaveFileName) ? ReportDesignerHelper.SaveFileName : Path.GetFileName(httpPostedFile.FileName);
-            targetFolder += CachePath;
+            targetFolder += "Cache";
 
             if (!Directory.Exists(targetFolder))
             {
@@ -233,41 +206,14 @@ namespace ReportDesignerSample
 
         public List<Syncfusion.EJ.ReportDesigner.FileModel> GetFiles(Syncfusion.EJ.ReportDesigner.FileType fileType)
         {
-            List<FileModel> databases = new List<FileModel>();
-            var folderPath = HttpContext.Current.Server.MapPath("~/") + CachePath + ReportDesignerHelper.EJReportDesignerToken + "\\";
-
-            if (Directory.Exists(folderPath))
-            {
-                DirectoryInfo directoryInfo = new DirectoryInfo(folderPath);
-                FileInfo[] Files = directoryInfo.GetFiles(this.GetFileExtension(fileType));
-
-                foreach (FileInfo file in Files)
-                {
-                    databases.Add(new FileModel() { Name = file.Name, Path = "../" + CachePath + ReportDesignerHelper.EJReportDesignerToken + "/" + file.Name });
-                }
-            }
-
-            return databases;
+            throw new NotImplementedException();
         }
 
-        private string GetFileExtension(Syncfusion.EJ.ReportDesigner.FileType fileType)
-        {
-            if (fileType == FileType.Sdf)
-            {
-                return "*.sdf";
-            }
-            else if (fileType == FileType.Xml)
-            {
-                return "*.xml";
-            }
-
-            return "*.rdl";
-        }
 
         public string GetFilePath(string fileName)
         {
             string targetFolder = HttpContext.Current.Server.MapPath("~/");
-            targetFolder += CachePath;
+            targetFolder += "Cache";
 
             if (!Directory.Exists(targetFolder))
             {
@@ -279,10 +225,9 @@ namespace ReportDesignerSample
                 Directory.CreateDirectory(targetFolder + "\\" + ReportDesignerHelper.EJReportDesignerToken);
             }
 
-            var folderPath = HttpContext.Current.Server.MapPath("~/") + CachePath + ReportDesignerHelper.EJReportDesignerToken + "\\";
+            var folderPath = HttpContext.Current.Server.MapPath("~/") + "Cache\\" + ReportDesignerHelper.EJReportDesignerToken + "\\";
             return folderPath + fileName;
         }
-
 
         public FileModel GetFile(string filename, bool isOverride)
         {
