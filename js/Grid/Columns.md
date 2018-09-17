@@ -1076,7 +1076,12 @@ N> It works by specifying a virtual column (which is not in the grid datasource)
 
 We have two cases while using ForeignKeyAdaptor.
 
+1. foreignKeyField name is same as the Grid field name. 
+2. foreignKeyField name differs with Grid field name.
+
 ### foreignKeyField name is same as the Grid field name
+
+When foreignKeyField name matches with Grid field name, field property is not required to map the foreignKey dataSource to Grid datSource.  
 
 The following code example describes the above behavior.      
 
