@@ -1081,7 +1081,7 @@ We have two cases while using ForeignKeyAdaptor.
 
 ### foreignKeyField name is same as the Grid field name
 
-When foreignKeyField name matches with Grid field name, field property is not required to map the foreignKey dataSource to Grid datSource.  
+Intialize the foreignKeyAdaptor in the load event of Grid and define the Grid column field name as foreignKeyField name.  
 
 The following code example describes the above behavior.      
 
@@ -1129,7 +1129,7 @@ The following output is displayed as a result of the above code example.
 
 ### foreignKeyField name differs with Grid field name
 
-In some cases 'foreignKeyField' value does not match with Grid field name in that scenario we can define the 'foreignKeyField' along with 'field' in the ForeignKeyAdaptor.
+In some cases 'foreignKeyField' value does not match with Grid field name in that scenario we suggest you to initialize the foreignKeyAdaptor in the load event of Grid and define the 'foreignKeyField' along with 'field' in the ForeignKeyAdaptor.
       
 N> This Adaptor should be initialized in the `load` event of the grid. `ForeignKeyAdaptor` supported for only local data binding.
 
