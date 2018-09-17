@@ -15,6 +15,8 @@ The Grid control uses [`ej.DataManager`](https://help.syncfusion.com/js/datamana
 2. Remote data
 3. HTML table
 
+N> 1. To update the dataSource after Grid rendered, use `dataSource` method of Grid. Refer to this [link](https://help.syncfusion.com/api/js/ejgrid#members:datasource) for more information.
+N> 2. DateTime values, retrieved from server-end or database, will be converted based on the local time zone. To avoid the local time zone conversion, refer this knowledge base [link](https://www.syncfusion.com/kb/8613/how-to-convert-dates-to-utc-format).
 
 ## Local Data
 
