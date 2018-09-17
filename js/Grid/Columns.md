@@ -1081,7 +1081,7 @@ We have two cases while using ForeignKeyAdaptor.
 
 ### foreignKeyField name is same as the Grid field name
 
-Intialize the foreignKeyAdaptor in the load event of Grid and define the Grid column field name as foreignKeyField name.  
+Initialize the foreignKeyAdaptor in the load event of Grid and define the Grid column field name as foreignKeyField name.  
 
 The following code example describes the above behavior.      
 
