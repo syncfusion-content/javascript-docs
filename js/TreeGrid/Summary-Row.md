@@ -164,7 +164,7 @@ Custom summary can be used to create summary values based on your required custo
 
     function customSummary(args, data) {
 
-        //ej.sum is aggregate to add data of totalcosts from datasource
+        //ej.sum is aggregate to add data of total costs from datasource
 
         return ej.sum(data, "TotalCosts");
 
