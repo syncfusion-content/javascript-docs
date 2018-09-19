@@ -1081,7 +1081,7 @@ We have two cases while using ForeignKeyAdaptor.
 
 ### foreignKeyField name is same as the Grid field name
 
-Initialize the foreignKeyAdaptor in the load event of Grid and define the Grid column field name as foreignKeyField name.  
+Initialize the foreignKeyAdaptor in the load event of Grid and define the Grid column field name as foreignKeyValue name.  
 
 The following code example describes the above behavior.      
 
@@ -1129,7 +1129,7 @@ The following output is displayed as a result of the above code example.
 
 ### foreignKeyField name differs with Grid field name
 
-In some cases 'foreignKeyField' value does not match with Grid field name in that scenario we suggest you to initialize the foreignKeyAdaptor in the load event of Grid and define the 'foreignKeyField' along with 'field' in the ForeignKeyAdaptor.
+In some scenarios 'foreignKeyField' name does not match with Grid field name, so we suggest you to define the 'foreignKeyField' along with 'field' in the ForeignKeyAdaptor and initialize the ForeignKeyAdaptor to ejGrid in the load event.
       
 N> This Adaptor should be initialized in the `load` event of the grid. `ForeignKeyAdaptor` supported for only local data binding.
 
