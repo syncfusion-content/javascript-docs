@@ -57,5 +57,5 @@ The following code example shows how to set the `searchHierarchyMode` in the tre
 The following image depicts the output of above code example
 ![](Searching_images/SearchHierarchyModes_img1.png)
 
-The above screen shot shows TreeGrid filter with `child` filter mode.
+The above screenshot shows Tree Grid with `child` search mode.
 

@@ -176,7 +176,7 @@ The output of the tree grid with `batchEditing` is obtained as follows.
 ![](Editing_images/BatchEdit_img1.png)
 
 
-In batch editing, the edit mode can be changed to **cell** or **row** or **dialog** with the [`batchEditSettings.editMode`](https://help.syncfusion.com/api/js/ejtreegrid#members:editsettings-batcheditsettings-editmode) property. The following code snippet shows how to set the editMode to row in the batchEditSettings property.
+In batch editing, the edit mode can be changed to **cell** or **row** or **dialog** with the [`batchEditSettings.editMode`](https://help.syncfusion.com/api/js/ejtreegrid#members:editsettings-batcheditsettings-editmode) property. The following code snippet shows how to set the editMode to row in the [`batchEditSettings`](https://help.syncfusion.com/api/js/ejtreegrid#members:editsettings-batcheditsettings) property.
 
 {% highlight js %}
 
@@ -200,12 +200,12 @@ In batch editing, the edit mode can be changed to **cell** or **row** or **dialo
 
 {% endhighlight %}
 
-The output of the tree grid with `batchEditSettings` and `editMode` as row is as obtained follows.
+The output of the tree grid with `batchEditSettings` and `editMode` as `row` is as obtained follows.
 
 ![](Editing_images/BatchEdit_img2.png)
 
 
-N> After modifying all changes in the tree grid, click the Save button and set the requestType as `batchSave`. The [`actionComplete`](https://help.syncfusion.com/api/js/ejtreegrid#events:actioncomplete) event will be triggered with updated records in the `batchChanges` argument. Using this event, you can update all the modified records to database.
+N> After modifying all changes in the tree grid, click the save button in the toolbar. The [`actionComplete`](https://help.syncfusion.com/api/js/ejtreegrid#events:actioncomplete) event will be triggered with updated records in the `batchChanges` argument with `requestType` argument as `batchSave`. Using this event, you can update all the modified records to the database.
 
 
 ## Cell edit type and its params
