@@ -154,19 +154,12 @@ The batch editing support in the tree grid is used to save all added, edited, an
 {% highlight js %}
 
     $("#TreeGridContainer").ejTreeGrid({
-
         //...
-
         editSettings: {
-
             allowEditing: true,
-
             beginEditAction: "click",
-
             editMode: "batchEditing"
-
         },
-
     });
 
 {% endhighlight %}
@@ -181,21 +174,13 @@ In batch editing, the edit mode can be changed to **cell** or **row** or **dialo
 {% highlight js %}
 
     $("#TreeGridContainer").ejTreeGrid({
-
         //...
-
         editSettings: {
-
             allowEditing: true,
-
             beginEditAction: "click",
-
             editMode: "batchEditing",
-
             batchEditSettings: { editMode: "row" },
-
         },
-
     });
 
 {% endhighlight %}
