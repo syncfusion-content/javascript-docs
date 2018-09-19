@@ -1066,7 +1066,7 @@ The following output is displayed as a result of the above code example.
 
 ## Foreign Key Adaptor
 
-The Grid can have a look up column. The Foreign key column using `foreignKeyField` has some limitations such as sort/group operations on column will happen based on `field` instead of `foreignKeyField`. The `ForeignKeyAdaptor` can be used to overcome this limitation.
+The Grid can have a look up column. The Foreign key column using [`foreignKeyField`](https://help.syncfusion.com/api/js/ejgrid#members:columns-foreignkeyfield "foreignKeyField") has some limitations such as sort/group operations on column will happen based on `field` instead of [`foreignKeyField`](https://help.syncfusion.com/api/js/ejgrid#members:columns-foreignkeyfield "foreignKeyField"). The `ForeignKeyAdaptor` can be used to overcome this limitation.
       
 N> It works by specifying a virtual column (which is not in the grid datasource) in the Grid. This Adaptor should be initialized in the `load` event of the grid. `ForeignKeyAdaptor` supported for only local data binding.
 
@@ -1081,7 +1081,7 @@ We have two cases while using ForeignKeyAdaptor.
 
 ### foreignKeyField name is same as the Grid field name
 
-Initialize the foreignKeyAdaptor in the load event of Grid and define the Grid column field name as foreignKeyValue name.  
+Initialize the foreignKeyAdaptor in the load event of Grid and define the Grid column field name as [`foreignKeyValue`](https://help.syncfusion.com/api/js/ejgrid#members:columns-foreignkeyvalue "foreignKeyValue") name.  
 
 The following code example describes the above behavior.      
 
@@ -1129,9 +1129,9 @@ The following output is displayed as a result of the above code example.
 
 ### foreignKeyField name differs with Grid field name
 
-In some scenarios 'foreignKeyField' name does not match with Grid field name, so we suggest you to define the 'foreignKeyField' along with 'field' in the ForeignKeyAdaptor and initialize the ForeignKeyAdaptor to ejGrid in the load event.
+In some cases [`foreignKeyField`](https://help.syncfusion.com/api/js/ejgrid#members:columns-foreignkeyfield "foreignKeyField") name does not match with Grid [`field`](https://help.syncfusion.com/api/js/ejgrid#members:columns-field "field") name,In this scenario we have defined the [`foreignKeyField`](https://help.syncfusion.com/api/js/ejgrid#members:columns-foreignkeyfield "foreignKeyField") along with [`field`](https://help.syncfusion.com/api/js/ejgrid#members:columns-field "field") in the ForeignKeyAdaptor and initialize the ForeignKeyAdaptor to ejGrid in the load event.
       
-N> This Adaptor should be initialized in the `load` event of the grid. `ForeignKeyAdaptor` supported for only local data binding.
+Grid column field name must be a combination of Grid [`field`](https://help.syncfusion.com/api/js/ejgrid#members:columns-field "field") name and [`foreignKeyField`](https://help.syncfusion.com/api/js/ejgrid#members:columns-foreignkeyfield "foreignKeyField") name separated by "_".  
 
 The following code example describes the above behavior.      
 
