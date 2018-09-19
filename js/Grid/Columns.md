@@ -1129,7 +1129,7 @@ The following output is displayed as a result of the above code example.
 
 ### foreignKeyField name differs with Grid field name
 
-In some cases [`foreignKeyField`](https://help.syncfusion.com/api/js/ejgrid#members:columns-foreignkeyfield "foreignKeyField") name does not match with Grid [`field`](https://help.syncfusion.com/api/js/ejgrid#members:columns-field "field") name,In this scenario we have defined the [`foreignKeyField`](https://help.syncfusion.com/api/js/ejgrid#members:columns-foreignkeyfield "foreignKeyField") along with [`field`](https://help.syncfusion.com/api/js/ejgrid#members:columns-field "field") in the ForeignKeyAdaptor and initialize the ForeignKeyAdaptor to ejGrid in the [`load`](https://help.syncfusion.com/api/js/ejgrid#events:load "load") event.
+In some cases [`foreignKeyField`](https://help.syncfusion.com/api/js/ejgrid#members:columns-foreignkeyfield "foreignKeyField") name does not match with Grid [`field`](https://help.syncfusion.com/api/js/ejgrid#members:columns-field "field") name/ In this scenario we have to define the [`foreignKeyField`](https://help.syncfusion.com/api/js/ejgrid#members:columns-foreignkeyfield "foreignKeyField") along with [`field`](https://help.syncfusion.com/api/js/ejgrid#members:columns-field "field") in the ForeignKeyAdaptor and initialize the ForeignKeyAdaptor to ejGrid in the [`load`](https://help.syncfusion.com/api/js/ejgrid#events:load "load") event.
       
 Grid column field name must be a combination of Grid [`field`](https://help.syncfusion.com/api/js/ejgrid#members:columns-field "field") name and [`foreignKeyField`](https://help.syncfusion.com/api/js/ejgrid#members:columns-foreignkeyfield "foreignKeyField") name separated by "_".  
 
