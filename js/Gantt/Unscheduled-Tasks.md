@@ -10,7 +10,7 @@ api: /api/js/ejgantt
 
 # Unscheduled Tasks
 
-Unscheduled tasks are tasks that are planned for project but do not have definite schedule dates.  Now, the Gantt supports rendering the unscheduled tasks. You can create/update the tasks with anyone of start date, end date, and duration values or none. You can enable/disable the unscheduled tasks by using the [`allowUnscheduledTask`](/api/js/ejgantt#members:allowUnscheduledTask)property.
+Unscheduled tasks are tasks that are planned for project but do not have definite schedule dates.  Now, the Gantt supports rendering the unscheduled tasks. You can create/update the tasks with anyone of start date, end date and duration values or none. You can enable/disable the unscheduled tasks by using the [`allowUnscheduledTask`](/api/js/ejgantt#members:allowUnscheduledTask)property.
 
 ## Unscheduled Task Types
 
@@ -67,11 +67,11 @@ The following screenshot displays the output of the above code.
 
 ![](Unscheduled-Tasks_images/Image1.png)
 
-N> If the allowUnscheduledTask property is set to false for unplanned task, the Gantt will automatically calculate the scheduled dates with default value of duration 1 and the scheduledStartDate is considered as start date for a task.
+N> If the [`allowUnscheduledTask`](/api/js/ejgantt#members:allowUnscheduledTask) property is set to `false` for unplanned task, the Gantt will automatically calculate the scheduled dates with default value of duration 1 and the project scheduled start date is considered as start date for a task.
 
 ## Show/hide null text in Gantt columns
 
-You can show/hide the null text cell value for start date, end date, and duration columns by using the `showNullText` column property. This can be customized in load event of Gantt. You can change the `Null` string by using the `nullText` property in the locale text file of the Gantt control. The following code snippets explain this behavior.
+You can show/hide the null text cell value for start date, end date and duration columns by using the `showNullText` column property. This can be customized in load event of Gantt. You can change the `Null` string by using the `nullText` property in the locale text file of the Gantt control. The following code snippets explain this behavior.
 
 {% highlight javascript %}
 
