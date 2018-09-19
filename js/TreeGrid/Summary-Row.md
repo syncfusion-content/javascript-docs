@@ -137,37 +137,21 @@ Custom summary can be used to create summary values based on your required custo
 {% highlight js %}
 
     $("#TreeGridContainer").ejTreeGrid({
-
         showSummaryRow: true,
-
         summaryRows: [
-
         {
-
             title: "Custom Summary",
-
             summaryColumns: [{
-
                 summaryType: ej.TreeGrid.SummaryType.Custom,
-
                 customSummaryValue: customSummary,
-
                 displayColumn: "TotalCosts"
-
             }]
-
         }
-
         ],
-
     });
-
     function customSummary(args, data) {
-
         //ej.sum is aggregate to add data of total costs from datasource
-
         return ej.sum(data, "TotalCosts");
-
     }
 
 {% endhighlight %}
