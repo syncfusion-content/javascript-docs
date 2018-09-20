@@ -842,8 +842,8 @@ The following code example describes the above behavior.
     });
     function currency() {
             var rs = 100000;
-            var dol = 0.017;
-            return (rs * dol);
+            var value = 0.017;
+            return (rs * value);
     }    
 </script>
 
@@ -933,8 +933,8 @@ The following code example describes the above behavior.
 <script type="text/javascript">
     function currency() {
             var rs = 100000;
-            var dol = 0.017;
-            return (rs * dol);
+            var value = 0.017;
+            return (rs * value);
     }
 </script>
    
