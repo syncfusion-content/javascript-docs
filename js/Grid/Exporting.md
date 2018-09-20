@@ -785,6 +785,162 @@ public class GridController : Controller
 
 {% endhighlight %}
 
+## Exporting with Custom Summary
+
+In Exporting, custom summary needs to be handled using `QueryCustomSummaryInfo` server-side event.
+
+The following code example describes the above behavior.
+
+{% tabs %}
+
+{% highlight html %}
+
+<div id="Grid"></div>
+
+<script type="text/javascript">
+    $(function () {
+        var gridData = @Html.Raw(Json.Encode(ViewBag.datasource))
+
+        // the datasource "window.gridData" is referred from jsondata.min.js
+        $("#Grid").ejGrid({
+            dataSource: gridData,
+            toolbarSettings: { showToolbar: true, toolbarItems: [ej.Grid.ToolBarItems.ExcelExport, ej.Grid.ToolBarItems.WordExport, ej.Grid.ToolBarItems.PdfExport] },
+            showSummary: true,
+            summaryRows: [{
+                summaryColumns: [{
+                    summaryType: ej.Grid.SummaryType.Custom,
+                    customSummaryValue: currency,
+                    displayColumn: "Freight",
+                    format: "{0:C2}"
+                }]
+            }],
+      allowPaging: true,
+            columns:
+              [
+                { field: "OrderID", headerText: "Order ID", textAlign: ej.TextAlign.Right, width: 70 },
+                { field: "CustomerID", headerText: "Customer ID", textAlign: ej.TextAlign.Left, width: 70 },
+                {field: "EmployeeID", headerText: "Employee ID", textAlign: ej.TextAlign.Right, width: 70 },
+                { field: "ShipCity", headerText: "Ship City", textAlign: ej.TextAlign.Left, width: 70 },
+                { field: "Freight",  headerText: "Freight",textAlign: ej.TextAlign.Right, width: 70,format: "{0:C2}"}
+              ],
+            toolbarClick: function (e) {
+                this.exportGrid = this["export"];
+                if (e.itemName == "Excel Export") {
+                    this.exportGrid('/Grid/ExportToExcel')
+                    e.cancel = true;
+                }
+                else if (e.itemName == "Word Export") {
+                    this.exportGrid('/Grid/ExportToWord')
+                    e.cancel = true;
+                }
+                else if (e.itemName == "PDF Export") {
+                    this.exportGrid('/Grid/ExportToPDF')
+                    e.cancel = true;
+                }
+            },
+        });
+    });
+    function currency() {
+            var rs = 100000;
+            var value = 0.017;
+            return (rs * value);
+    }    
+</script>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+   namespace Grid.Controllers
+   {
+     public class GridController : Controller
+     {
+        public ActionResult GridFeatures()
+        {
+            var DataSource = new NorthwindDataContext().OrdersViews.ToList();
+            ViewBag.datasource = DataSource;
+            return View();
+        }
+        public void ExportToExcel(string GridModel)
+        {
+            ExcelExport exp = new ExcelExport();
+            GridExcelExport GridExp = new GridExcelExport();
+            GridExp.QueryCustomSummaryInfo = SummaryCellInfo;
+            GridExp.Theme = "flat-saffron";
+            GridExp.FileName = "Export.xlsx";
+            var DataSource = new NorthwindDataContext().OrdersViews.Take(100).ToList();
+            GridProperties obj = ConvertGridObject(GridModel);
+            exp.Export(obj, DataSource, GridExp);
+        }
+        public void ExportToWord(string GridModel)
+        {
+            WordExport exp = new WordExport();
+            GridWordExport GridExp = new GridWordExport();
+            GridExp.QueryCustomSummaryInfo = SummaryCellInfo;
+            GridExp.Theme = "flat-saffron";
+            GridExp.FileName = "Export.docx";
+            var DataSource = new NorthwindDataContext().OrdersViews.Take(100).ToList();
+            GridProperties obj = ConvertGridObject(GridModel);
+            exp.Export(obj, DataSource, GridExp);
+        }
+        public void ExportToPdf(string GridModel)
+        {
+            PdfExport exp = new PdfExport();
+            GridPdfExport GridExp = new GridPdfExport();
+            GridExp.QueryCustomSummaryInfo = SummaryCellInfo;
+            GridExp.Theme = "flat-saffron";
+            GridExp.FileName = "Export.pdf";
+            var DataSource = new NorthwindDataContext().OrdersViews.Take(100).ToList();
+            GridProperties obj = ConvertGridObject(GridModel);
+            exp.Export(obj, DataSource, GridExp);
+        }
+        private object SummaryCellInfo(IQueryable arg1, SummaryColumn arg2)
+        {
+            var rs = 0; double value = 0;
+            if (arg2.DisplayColumn == "Freight")
+            {
+                rs = 100000;
+                value = 0.017;
+            }
+
+            return (rs * value);
+        }
+        private GridProperties ConvertGridObject(string gridProperty)
+        {
+            JavaScriptSerializer serializer = new JavaScriptSerializer();
+            IEnumerable div = (IEnumerable)serializer.Deserialize(gridProperty, typeof(IEnumerable));
+            GridProperties gridProp = new GridProperties();
+            foreach (KeyValuePair<string, object> ds in div)
+            {
+                var property = gridProp.GetType().GetProperty(ds.Key, BindingFlags.Instance | BindingFlags.Public | BindingFlags.IgnoreCase);
+                if (property != null)
+                {
+                    Type type = property.PropertyType;
+                    string serialize = serializer.Serialize(ds.Value);
+                    object value = serializer.Deserialize(serialize, type);
+                    property.SetValue(gridProp, value, null);
+                }
+            }
+            return gridProp;
+        }
+     }
+   }
+   
+{% endhighlight  %}
+
+{% highlight js %}
+
+<script type="text/javascript">
+    function currency() {
+            var rs = 100000;
+            var value = 0.017;
+            return (rs * value);
+    }
+</script>
+   
+{% endhighlight  %}
+
+{% endtabs %}
 
 ## Theme
 
