@@ -797,12 +797,6 @@ The following code example describes the above behavior.
 
 <div id="Grid"></div>
 
-
-<script id="tabGridContents" type="text/x-jsrender">
-    <b> More Details: </b> <br /><br /> <b class='detail'>Last Name</b> - {{:LastName}} <br /> <br /> <b class='detail'>Home Phone</b> - {{:HomePhone}} <br /> <br /> <b class='detail'>Ext No</b> - {{:Extension}}
-  
-</script>
-
 <script type="text/javascript">
     $(function () {
         var gridData = @Html.Raw(Json.Encode(ViewBag.datasource))
@@ -846,6 +840,11 @@ The following code example describes the above behavior.
             },
         });
     });
+    function currency() {
+            var rs = 100000;
+            var dol = 0.017;
+            return (rs * dol);
+    }    
 </script>
 
 {% endhighlight %}
