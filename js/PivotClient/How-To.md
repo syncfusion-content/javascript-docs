@@ -584,6 +584,63 @@ $("#PivotClient1").ejPivotClient({
 
 {% endhighlight %}
 
+## Applying conditional formatting in pivot client
+The conditional formatting in the pivot client allows you to highlight the particular cells in the pivot grid with certain color, font-style, font-family, etc., based on the applied condition. Also, the condition can be applied for certain measure alone.
+The conditional formatting is enabled by setting the `enableConditionalFormatting` property to true in the `renderSuccess` event and the formatting dialog is launched when the `openConditionalFormattingDialog` method is invoked.
+
+{% highlight html %}
+
+<div id="sampleProperties">
+   <div class="prop-grid">
+      <div class="row">
+        <button class="customBtn" id="Btn1">
+           Apply
+         </button>
+         <button class="customBtn" id="Btn2">
+           Reset
+        </button>
+       </div>
+    </div>
+</div>
+
+{% endhighlight %}
+
+{% highlight javascript %}
+
+$("#PivotClient").ejPivotClient({
+//Datasource bound to PivotClient control.
+renderSuccess: "successEvent"
+});
+function successEvent(args) {
+//…
+   this._pivotGrid.model.enableConditionalFormatting = true;
+   pivotGridObj = this._pivotGrid;
+   $("#Btn1").ejButton({
+   roundedCorner: true,
+   size: "small",
+   type: ej.ButtonType.Button,
+   click: "ApplyChanges"
+ });
+   $("#Btn2").ejButton({
+   roundedCorner: true,
+   size: "small",
+   type: ej.ButtonType.Button,
+   click: "Reset"
+ });
+}
+function ApplyChanges() {
+  if (pivotGridObj.model.enableConditionalFormatting) {
+  pivotGridObj.openConditionalFormattingDialog();
+}
+}
+function Reset() {
+  pivotGridObj._removeCellFormatting(true, false);
+  pivotGridObj._list = ["Add New"];
+}
+
+{% endhighlight %}
+
+![Conditional formatting in PivotClient](How-To_images/conditional_formatting_pivotclient.png)
 
 ## Setting custom name to service methods
 The [`serviceMethodSettings`](/api/js/ejpivotclient#members:servicemethodsettings) allows you to set the custom name for methods in the WebAPI/WCF, communicated during the AJAX post.
