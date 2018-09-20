@@ -16,7 +16,7 @@ This section explains briefly about how to create a **ReportDesigner** in your 
 
 The following steps displays the Project Creation Wizard in Visual Studio 2013.
 
-Create a new ` ASP.NET Empty Web application` project by selecting the **WEB** category from the listed project template in Microsoft Visual Studio IDE.     
+Create a new `ASP.NET Empty Web application` project by selecting the **WEB** category from the listed project template in Microsoft Visual Studio IDE.     
 
 ![](Images/JS-Sample-Img1.png) 
 
@@ -26,7 +26,7 @@ Create a new ` ASP.NET Empty Web application` project by selecting the **WEB** c
 
     ![](Images/JS-Sample-Img4.png) 
 
-2. Add the following references to the project that are necessary for using the report designer control and click OK.
+2. Add the following Syncfusion assemblies to the project that are necessary for using the report designer control and click OK.
 
    * Syncfusion.Chart.Wpf
    * Syncfusion.Compression.Base
@@ -42,7 +42,7 @@ Create a new ` ASP.NET Empty Web application` project by selecting the **WEB** c
 
     > Refer the above assemblies from the installed location, [Installed Location]:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript\{{ site.releaseversion }}\Assemblies
 
-3.  Add reference to the following assemblies from [NuGet package](https://help.syncfusion.com/extension/syncfusion-nuget-packages/web-nuget-packages-details "Web NuGet Package Details").
+3.  Add the following WebAPI assemblies from [NuGet package](https://www.nuget.org/packages/Microsoft.AspNet.WebApi/ "Web NuGet Package Details").
 
     * System.Web.Http
     * System. Web.Http.WebHost
@@ -71,7 +71,7 @@ For complete dependencies list of report designer control [Click here](/js/Repor
 
 Add the script files and theme files in the &lt;head&gt; tag of the Default.html page.
 
-**Themes**
+#### Themes
 
 {% highlight html %}
 
@@ -80,9 +80,9 @@ Add the script files and theme files in the &lt;head&gt; tag of the Default.html
 
 {% endhighlight %} 
 
-**Scripts**
+#### Scripts
 
-**External dependencies**
+##### External dependencies
 
 {% highlight html %}
 
@@ -92,7 +92,7 @@ Add the script files and theme files in the &lt;head&gt; tag of the Default.html
 
 {% endhighlight %} 
 
-**Internal dependencies**
+##### Internal dependencies
 
 Refer the below scripts to render report designer control.
 
@@ -103,7 +103,7 @@ Refer the below scripts to render report designer control.
  
 {% endhighlight %} 
 
-**Code Mirror**
+###### Code Mirror
 
 To edit the SQL queries with syntax highlighter need to refer the below code mirror scripts and themes.
 
@@ -290,7 +290,7 @@ If `Global Application Class` file already exists in your application skip the b
  
 #### Route WebAPI
 
-Open the `Global Application Class` file in the application and modify the WebAPI routing in Application_Start event as follows.
+Modify the WebAPI routing in Application_Start event of `Global.asax` file as follows.
 
 {% highlight c# %}
 
