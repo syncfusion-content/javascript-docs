@@ -142,6 +142,9 @@ $("#HistogramContainer").ejGantt({
 		viewType: ej.Gantt.ViewType.HistogramView,
 		splitterResized: splitterResized,
         actionComplete: actionComplete,
+		load: function (args) {
+		 this.isProjectViewData = false;
+		},
 		
 	});
     function splitterResized(args) {
@@ -154,7 +157,6 @@ $("#HistogramContainer").ejGantt({
         }
     function actionComplete(args) {
         if (args.requestType == "scroll" && args.scrollDirection == "horizontal") {
-                console.log(this._id + "-" + args.scrollLeft);
                 var scrollLeft = args.scrollLeft;
                 if (this._id == "GanttContainer" && !args.isScrollByMethod) {
                     $("#HistogramContainer").ejGantt("setChartScrollLeft", scrollLeft);
