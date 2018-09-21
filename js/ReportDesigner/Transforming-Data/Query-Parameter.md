@@ -26,9 +26,9 @@ Now the query parameters dialog will be launched.
 
         ![](Query-Parameter-images/Param-Add.png)
 
-   2. **Parameter Name** : In the **Parameter Name** text box, type the name of the query parameter.
+  2. **Parameter Name** : In the **Parameter Name** text box, type the name of the query parameter.
 
-   3. **Value** : In **Value** field, type or select the value to pass to the parameter.
+  3. **Value** : In **Value** field, type or select the value to pass to the parameter.
      
         * Values can contain an expression that evaluates to a value to pass to the query parameter. The expressions in the value list includes the field list for the current report.
 
@@ -44,7 +44,7 @@ Now the query parameters dialog will be launched.
 
             ![](Query-Parameter-images/Exp-Black.png)
 
-   3. Click `OK` to save the query parameters.
+  3. Click `OK` to save the query parameters.
 
 #### Remove Parameters
 

@@ -12,21 +12,21 @@ api: /api/js/ejreportdesigner
 
 Web designer supports to switch the report unit type.
 
-1. Now, the users can switch report's unit type to the following unit types:
+1.Now, the users can switch report's unit type to the following unit types:
 
-    * Inches
-    * Centimeters
-    * Pixels
-    * Points
-    * Millimeters
-    * Picas
+* Inches
+* Centimeters
+* Pixels
+* Points
+* Millimeters
+* Picas
 
-2. Open the **Report Properties** in the property panel.
+2.Open the **Report Properties** in the property panel.
 
-    ![](unitswitcher-images/unitswitcher_img1.png)
+![](unitswitcher-images/unitswitcher_img1.png)
 
-3. Under the **Page Units** property provided a dropdown to switch the report unit type.
+3.Under the **Page Units** property provided a dropdown to switch the report unit type.
 
-    ![](unitswitcher-images/unitswitcher_img2.png)
+![](unitswitcher-images/unitswitcher_img2.png)
 
-4. Select your desired unit type in the dropdown, now the selected unit type will be applied to the report.
+4.Select your desired unit type in the dropdown, now the selected unit type will be applied to the report.
