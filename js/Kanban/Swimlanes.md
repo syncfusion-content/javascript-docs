@@ -49,6 +49,97 @@ The following output is displayed as a result of the above code example.
 
 ![](Swimlane_images/swimlane_img1.png)
 
+## Customized swimlane header text
+
+You can change the swimlane row header text using the swimlane [`headers`](https://help.syncfusion.com/api/js/ejkanban#members:swimlanesettings-headers) property.  In this property, the text is changed using the [`text`](https://help.syncfusion.com/api/js/ejkanban#members:swimlanesettings-headers-text) property and the corresponding value is mapped into the [`key`](https://help.syncfusion.com/api/js/ejkanban#members:swimlanesettings-headers-key) property based on [`swimlaneKey`](https://help.syncfusion.com/api/js/ejkanban#members:fields-swimlanekey) datasource mapping.
+
+Refer to the following code example.
+
+{% highlight html %}
+
+    <div id='Kanban'></div>
+
+{% endhighlight %}
+
+{% highlight javascript %}
+
+    var kanbanData = [
+        { Id: 6, Status: "Close", Summary: "Arrange a web meeting with the customer to get the login page requirements.", Type: "Others", Priority: "Low", Tags: "Meeting", Estimate: 2, Assignee: "Janet", ImgUrl: "/images/kanban/6.png", RankId: 1 },
+        { Id: 7, Status: "Validate", Summary: "Validate new requirements", Type: "Improvement", Priority: "Low", Tags: "Validation", Estimate: 1.5, Assignee: "Janet", ImgUrl: "/images/kanban/7.png", RankId: 1 },
+        { Id: 8, Status: "Close", Summary: "Login page validation", Type: "Story", Priority: "Release Breaker", Tags: "Validation,Fix", Estimate: 2.5, Assignee: "Andrew Fuller", ImgUrl: "/images/kanban/8.png", RankId: 2 },
+        { Id: 9, Status: "Testing", Summary: "Fix the issues reported in Safari browser.", Type: "Bug", Priority: "Release Breaker", Tags: "Fix,Safari", Estimate: 1.5, Assignee: "Janet", ImgUrl: "/images/kanban/1.png", RankId: 2 },
+        { Id: 10, Status: "InProgress", Summary: "Test the application in the IE browser.", Type: "Story", Priority: "Low", Tags: "Testing,IE", Estimate: 5.5, Assignee: "Andrew Fuller", ImgUrl: "/images/kanban/4.png", RankId: 3 }];
+    $("#Kanban").ejKanban({
+        dataSource: kanbanData,
+        columns: [
+            { headerText: "Backlog", key: "Open" },
+            { headerText: "InProgress", key: "InProgress" },
+            { headerText: "Done", key: "Close" }
+        ],
+        keyField: "Status",
+        allowTitle: true,
+        fields: {
+            content: "Summary",
+            primaryKey: "Id",
+            swimlaneKey: "Assignee",
+        },
+        swimlaneSettings: {
+            headers: [{ text: 'Andrew', key: 'Andrew Fuller' },
+            { text: 'Janet', key: 'Janet' }]
+        },
+    });
+
+{% endhighlight %}
+
+The following output is displayed as a result of the above code example.
+
+![](Swimlane_images/swimlane_img6.png)
+
+## Empty swimlane row on Kanban board
+
+You can create an empty swimlane row by enabling the [`showEmptySwimlane`](https://help.syncfusion.com/api/js/ejkanban#members:swimlanesettings-showemptyswimlane) property based on swimlane headers [`key`](https://help.syncfusion.com/api/js/ejkanban#members:swimlanesettings-headers-key) value mapping.  If no data is present, then the empty swimlane row is rendered on the Kanban board based on the specified swimlane headers [`key`](https://help.syncfusion.com/api/js/ejkanban#members:swimlanesettings-headers-key).
+
+Refer to the following code.
+
+{% highlight html %}
+
+    <div id='Kanban'></div>
+
+{% endhighlight %}
+
+{% highlight javascript %}
+ 
+    var kanbanData = [
+        { Id: 8, Status: "Close", Summary: "Login page validation", Type: "Story", Priority: "Release Breaker", Tags: "Validation,Fix", Estimate: 2.5, Assignee: "Andrew Fuller", ImgUrl: "/images/kanban/8.png", RankId: 2 },
+        { Id: 9, Status: "Testing", Summary: "Fix the issues reported in Safari browser.", Type: "Bug", Priority: "Release Breaker", Tags: "Fix,Safari", Estimate: 1.5, Assignee: "Janet", ImgUrl: "/images/kanban/1.png", RankId: 2 },
+        { Id: 10, Status: "InProgress", Summary: "Test the application in the IE browser.", Type: "Story", Priority: "Low", Tags: "Testing,IE", Estimate: 5.5, Assignee: "Andrew Fuller", ImgUrl: "/images/kanban/4.png", RankId: 3 }];
+    $("#Kanban").ejKanban({
+        dataSource: kanbanData,
+        columns: [
+            { headerText: "Backlog", key: "Open" },
+            { headerText: "InProgress", key: "InProgress" },
+            { headerText: "Done", key: "Close" }
+        ],
+        keyField: "Status",
+        allowTitle: true,
+        fields: {
+            content: "Summary",
+            primaryKey: "Id",
+            swimlaneKey: "Assignee",
+        },
+        swimlaneSettings: {
+            showEmptySwimlane: true,
+            headers: [{ text: 'Andrew', key: 'Andrew Fuller' },
+                { text: 'Janet', key: 'Janet Leverling' }]
+            },
+        });
+
+{% endhighlight %}
+
+The following output is displayed as a result of the above code example.
+
+![](Swimlane_images/swimlane_img7.png)
+
 ## Drag And Drop between swim lanes
 
 You can set ['allowDragAndDrop'](https://help.syncfusion.com/api/js/ejkanban#members:swimlanesettings-allowdraganddrop) property of ['swimlaneSettings'](https://help.syncfusion.com/api/js/ejkanban#members:swimlanesettings) as true to enable Drag and Drop between the swim lanes.
