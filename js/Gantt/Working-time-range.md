@@ -39,7 +39,7 @@ The following screen shot shows working time range in Gantt control.
 
 ## Highlight working time range
 
-Highlight the working time range with background color by using the [`dayWorkingTime.background`](/api/js/ejgantt#members:dayworkingtime) property. You can highlight the non-working time ranges in a day. To do this, set the [`highlightNonWorkingTime`](/api/js/ejgantt#members:highlightnonworkingtime) property to `true`. To customize the non-working time background, use the [`nonWorkingBackground`](/api/js/ejgantt#members:nonworkingbackground) property.
+Highlight the working time range with a background color by using the [`dayWorkingTime.background`](/api/js/ejgantt#members:dayworkingtime) property. You can highlight the non-working time ranges in a day. To do this, set the [`highlightNonWorkingTime`](/api/js/ejgantt#members:highlightnonworkingtime) property to `true`. To customize the non-working time background, use the [`nonWorkingBackground`](/api/js/ejgantt#members:nonworkingbackground) property.
 
 The following code snippet explains how to define the working time range with background in Gantt.
 
@@ -56,7 +56,7 @@ $("#GanttContainer").ejGantt({
 
 {% endhighlight %}
 
-N> The background colors of working time range are highlighted only when the [`scheduleHeaderSettings.scheduleType`](/api/js/ejgantt#members:scheduleheadersettings-scheduleheadertype) value as `day`.
+N> The background colors of working time range are highlighted only when the [`scheduleHeaderSettings.scheduleHeaderType`](/api/js/ejgantt#members:scheduleheadersettings-scheduleheadertype) value as `day`.
 
 The following screenshot shows the working time range with background colors.
 
