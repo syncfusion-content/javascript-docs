@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Member Editors
-description: Memebr editor in PivotClient control
+title: Member Editor
+description: Member editor in PivotClient control
 platform: js
 control: PivotClient
 documentation: ug
