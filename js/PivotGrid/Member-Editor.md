@@ -10,13 +10,13 @@ api: /api/js/ejpivotgrid
 
 # Member Editor
 
-Member editor is a dialog that displays the members of the current field in a tree view structure, which can be opened by clicking the filter icon available in the grouping bar. It helps to search, filter, and sort the field members available in the pivot grid control.
+The member editor dialog displays the members of current field in a tree view structure, which is opened by clicking the filter icon available in the grouping bar. It helps to search, filter, and sort the field members available in the pivot grid control.
 
 ![Member editor in pivot grid control](Member_Editor_images/member_editor.png)
 
 ## Member editor - Paging
 
-The paging support in member editor helps you to improve the rendering performance of the member editor dialog by dividing the large amount of data into sections and displaying them.
+The paging support in the member editor helps you to improve the rendering performance of the member editor dialog by dividing the large amounts of data into sections and displaying them.
 
 You can enable the member editor paging and set the member editor page size in the pivot grid control by setting the [`enableMemberEditorPaging`](/api/js/ejpivotgrid#members:enablemembereditorpaging) and [`memberEditorPageSize`](/api/js/ejpivotgrid#members:membereditorpagesize) properties.
 
@@ -33,7 +33,7 @@ You can enable the member editor paging and set the member editor page size in t
 
 {% endhighlight %}
 
-Following are the navigation option available in the member editor pager.
+Following are the navigation options available in the member editor pager:
 * Move first: Navigates to the first page.
 * Move previous: Navigates to the previous page from the current page.
 * Move next: Navigates to the next page from the current page.
@@ -44,7 +44,7 @@ Following are the navigation option available in the member editor pager.
 
 ## Member editor - Sorting
 
-The sorting support in member editor helps you to sort the field members either in ascending or descending order.
+The sorting support in the member editor helps you to sort the field members in ascending or descending order.
 
 You can enable the member editor sorting in the pivot grid control by setting the [`enableMemberEditorSorting`](/api/js/ejpivotgrid#members:enableMemberEditorSorting) property.
 
