@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview
-description: overview
+title: Overview of FileExplorer widget for Essential JS
+description: Explains about the FileExplorer widget and its key features for managing the File system through any web application.
 platform: js
 control: File Explorer
 documentation: ug

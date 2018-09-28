@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Behavior Settings
-description: Customize the behavior of FileExplorer.
+title: Behavior Settings FileExplorer widget for Essential JS
+description: Customize the behavior of FileExplorer control showcase all the files from the filesystem, here you can customize the file types.
 platform: js
 control: FileExplorer
 documentation: ug
