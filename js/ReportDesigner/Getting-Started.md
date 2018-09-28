@@ -10,95 +10,122 @@ api: /api/js/ejreportdesigner
 
 # Getting Started with JavaScript Application
 
-This section explains briefly about how to create a ReportDesigner in your web application with JavaScript.
+This section explains briefly about how to create a **ReportDesigner** in your web application with **JavaScript**.
 
 ## Project Creation
 
-The following steps displays the Project Creation Wizard in Visual Studio 2012.
+The following steps displays the Project Creation Wizard in Visual Studio 2013.
 
-Create a new ASP.NET Empty Web application project by selecting the **WEB** category from the listed project template in Microsoft Visual Studio IDE.     
+Create a new `ASP.NET Empty Web application` project by selecting the **WEB** category from the listed project template in Microsoft Visual Studio IDE.     
 
 ![](Images/JS-Sample-Img1.png) 
 
-### Create HTML Page
-
-To create a new `Web Forms` in the application follow the below steps.
-
-1. Right-Click on the project and select `Add`. 
-
-    ![](Images/JS-Sample-Img2.png)
-
-2. Click `New Item` and select `HTML` page from the listed templates.
-
-    ![](Images/JS-Sample-Img3.png) 
-
-3. Name the page as Default.html and click Add.
-
-### Adding References, Scripts, Styles and Control in HTML Page
-
-Add the References, scripts, styles that are required for the Report Designer.
-
-#### Add References
+### Add References
 
 1. In the Solution Explorer, right-click the `References` folder and then click `Add Reference`.
 
     ![](Images/JS-Sample-Img4.png) 
 
-2. Add the following assemblies and click OK.
+2. Add the following Syncfusion assemblies to the project that are necessary for using the report designer control and click OK.
 
-   * System.Web.Routing
-   * System.Web.Http
-   * System.Web.WebHost
-   * System.Net.Http
-   * System.Net.Http.WebRequest
-   * System.Net.Http.Formatting
-   * Syncfusion.Compression.Base   
-   * Syncfusion.EJ.ReportViewer
-   * Syncfusion.EJ.ReportDesigner
-   * Syncfusion.Pdf.Base
-   * Syncfusion.XlsIO.Base
-   * Syncfusion.Presentation.Base
-   * Syncfusion.DocIO.Base
-   * Syncfusion.Shared.Wpf
    * Syncfusion.Chart.Wpf
+   * Syncfusion.Compression.Base
+   * Syncfusion.DocIO.Base
+   * Syncfusion.EJ.ReportDesigner
+   * Syncfusion.EJ.ReportViewer
    * Syncfusion.Gauge.Wpf
+   * Syncfusion.Pdf.Base
+   * Syncfusion.Presentation.Base
+   * Syncfusion.Shared.Wpf
    * Syncfusion.SfMaps.Wpf
+   * Syncfusion.XlsIO.Base
 
- N> Refer the above assemblies from the installed location, C:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript\{{ site.releaseversion }}\Assemblies
- N>
- N> Refer System.Web.Http, System.Web.Http.WebHost, System.Net.Http.WebRequest and System.Net.Http.Formatting assemblies from ASP.NET WebApi NuGet package. 
+    > Refer the above assemblies from the installed location, [Installed Location]:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript\{{ site.releaseversion }}\Assemblies
 
-#### Add Scripts and Styles
+3.  Add the following WebAPI assemblies from [NuGet package](https://www.nuget.org/packages/Microsoft.AspNet.WebApi/ "Web NuGet Package Details").
 
-Add the script files and theme files in the &lt;title&gt; tag of the Default.html page.
-  
+    * System.Web.Http
+    * System. Web.Http.WebHost
+    * System.Net.Http.WebRequest
+    * System.Net.Http.Formatting
+
+    > The System.Web.Routing and System.Net.Http assemblies are also required, which are referred by default when creating the project.
+
+### Create HTML Page
+
+1. Right-Click on the project and select `Add` then click `New Item`. 
+
+    ![](Images/JS-Sample-Img2.png)
+
+2. Select `HTML Page` from the listed templates and name the page as **Default.html**.
+
+    ![](Images/JS-Sample-Img3.png) 
+
+3. Click Add.
+
+    ![](Images/JS-Sample-Img7.png)
+
+### Add Scripts and Styles
+
+For complete dependencies list of report designer control [Click here](/js/ReportDesigner/Dependencies).
+
+Add the script files and theme files in the &lt;head&gt; tag of the Default.html page.
+
+#### Themes
+
 {% highlight html %}
 
 <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
 <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.reportdesigner.min.css" rel="stylesheet" />
-<link href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/codemirror.min.css" rel="stylesheet" />
-<link href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/addon/hint/show-hint.min.css" rel="stylesheet" />
+
+{% endhighlight %} 
+
+#### Scripts
+
+##### External dependencies
+
+{% highlight html %}
 
 <script src="http://code.jquery.com/jquery-1.10.2.min.js" type="text/javascript"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" type="text/javascript"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jsrender/0.9.90/jsrender.min.js" type="text/javascript"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/codemirror.min.js" type="text/javascript"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/addon/hint/show-hint.min.js" type="text/javascript"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/addon/hint/sql-hint.min.js" type="text/javascript"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/mode/sql/sql.min.js" type="text/javascript"></script>
+{% endhighlight %} 
+
+##### Internal dependencies
+
+Refer the below scripts to render report designer control.
+
+{% highlight html %}
+
 <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js" type="text/javascript"></script>
 <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.reportdesigner.min.js" type="text/javascript"></script>
  
 {% endhighlight %} 
 
+###### Code Mirror
+
+To edit the SQL queries with syntax highlighter need to refer the below code mirror scripts and themes.
+
+{% highlight html %}
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/codemirror.min.css" rel="stylesheet" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/addon/hint/show-hint.min.css" rel="stylesheet" />
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/codemirror.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/addon/hint/show-hint.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/addon/hint/sql-hint.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/mode/sql/sql.min.js" type="text/javascript"></script>
+
+{% endhighlight %} 
+
 Use the above code example while adding scripts and styles.
 
-N> You can get the themes and scripts from the installed location [Installed Drive]:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript\{{ site.releaseversion }}\JavaScript\assets\
+> [Click here](https://help.syncfusion.com/js/installation-and-deployment# "Installation and deployment") to know more about script and style sheets installed in local machine.
 
-## Control Initialization
+### Control Initialization
 
-Initialize Report Designer by using the following code example in the &lt;body&gt; tag of the Default.html page.
+Initialize Report Designer by using the following code example in the &lt;body&gt; tag of the **Default.html** page.
 
 {% highlight html %}
 
@@ -106,7 +133,7 @@ Initialize Report Designer by using the following code example in the &lt;body&g
 <script type="text/javascript">
     $(function() {
         $("#container").ejReportDesigner({
-            serviceUrl: '../../api/ReportingAPI'
+            serviceUrl: '../../api/ReportDesigner'
         });
     });
 </script>
@@ -117,105 +144,78 @@ Initialize Report Designer by using the following code example in the &lt;body&g
  
 The JavaScript Report Designer uses WebApi services to process the report file and get the request from control.
 
-![](Images/JS-Sample-Img5.png)
+**Add Controller**
 
-### Defining WebAPI Controller
+1. Right-Click on the project and select `Add` then click `New Item`. 
+
+    ![](Images/JS-Sample-Img2.png)
+
+2. Select `Web API Controller Class` from the listed templates and name the controller as **ReportDesignerController.cs**. 
+
+    ![](Images/JS-Sample-Img5.png)
+
+3. Click Add.
+
+    ![](Images/JS-Sample-Img8.png)
+
+#### Inherit IReportDesignerController
  
-The ApiController should inherit the `IReportDesignerController` and to process the report file, please add the following code example to its method definition. The interface `IReportDesignerController` contains the required actions and helper methods declaration to process the report. The `ReportDesignerHelper` and `ReportHelper` class contains helper methods that helps to process Post/Get request from control and return the response to control.
+The ApiController should inherit the `IReportDesignerController` and to process the report file. The interface `IReportDesignerController` contains the required actions and helper methods declaration to process the report. The `ReportDesignerHelper` and `ReportHelper` class contains helper methods that helps to process Post/Get request from control and return the response to control.
+
+Please add the following code example in `ReportDesignerController.cs`.
 
 {% highlight c# %}
 
 using System;
-using Syncfusion.EJ.ReportViewer;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
-using Syncfusion.Reports.EJ;
-using System.Collections;
-using System.Web;
-using Syncfusion.EJ.ReportDesigner;
 using System.IO;
-using Reporting.ExternalServer;
+using System.Web;
+using Syncfusion.EJ.ReportViewer;
+using Syncfusion.Reports.EJ;
+using Syncfusion.EJ.ReportDesigner;
 
 namespace ReportDesignerSample
 {
     public class ReportDesignerController : ApiController, Syncfusion.EJ.ReportDesigner.IReportDesignerController
     {
-        string CachePath = "App_Data\\ReportServer\\Cache\\";
-
-        internal ExternalServer Server
+        public string GetFilePath(string fileName)
         {
-            get;
-            set;
+            string targetFolder = HttpContext.Current.Server.MapPath("~/");
+            targetFolder += "Cache";
+
+            if (!Directory.Exists(targetFolder))
+            {
+                Directory.CreateDirectory(targetFolder);
+            }
+
+            if (!Directory.Exists(targetFolder + "\\" + ReportDesignerHelper.EJReportDesignerToken))
+            {
+                Directory.CreateDirectory(targetFolder + "\\" + ReportDesignerHelper.EJReportDesignerToken);
+            }
+
+            var folderPath = HttpContext.Current.Server.MapPath("~/") + "Cache\\" + ReportDesignerHelper.EJReportDesignerToken + "\\";
+            return folderPath + fileName;
         }
 
-        internal string ServerURL
-        {
-            get;
-            set;
-        }
-
-        internal string AuthorizationHeaderValue
-        {
-            get;
-            set;
-        }
-
-        public ReportDesignerController()
-        {
-            ExternalServer externalServer = new ExternalServer();
-            this.Server = externalServer;
-            this.ServerURL = "Sample";
-            externalServer.ReportServerUrl = this.ServerURL;
-            ReportDesignerHelper.ReportingServer = externalServer;
-        }
-
-        [HttpPost]
-        public void UploadReportAction()
-        {
-            ReportDesignerHelper.ProcessDesigner(null, this, HttpContext.Current.Request.Files[0]);
-        }
-
-        [HttpGet]
         public object GetImage(string key, string image)
         {
             return ReportDesignerHelper.GetImage(key, image, this);
         }
 
-        [HttpPost]
         public object PostDesignerAction(Dictionary<string, object> jsonResult)
         {
             return ReportDesignerHelper.ProcessDesigner(jsonResult, this, null);
         }
 
-        public object PostReportAction(Dictionary<string, object> jsonResult)
-        {
-            return ReportHelper.ProcessReport(jsonResult, this as IReportController);
-        }
-
-        public void OnInitReportOptions(Syncfusion.EJ.ReportViewer.ReportViewerOptions reportOption)
-        {
-            reportOption.ReportModel.ReportingServer = this.Server;
-            reportOption.ReportModel.ReportServerUrl = this.ServerURL;
-            reportOption.ReportModel.ReportServerCredential = new NetworkCredential("Sample", "Password");
-        }
-
-        public void OnReportLoaded(Syncfusion.EJ.ReportViewer.ReportViewerOptions reportOption)
-        {
-        }
-
-        public object GetResource(string key, string resourcetype, bool isPrint)
-        {
-            return ReportHelper.GetResource(key, resourcetype, isPrint);
-        }
-
-        public bool UploadFile(HttpPostedFile httpPostedFile)
+        public bool UploadFile(System.Web.HttpPostedFile httpPostedFile)
         {
             string targetFolder = HttpContext.Current.Server.MapPath("~/");
             string fileName = !string.IsNullOrEmpty(ReportDesignerHelper.SaveFileName) ? ReportDesignerHelper.SaveFileName : Path.GetFileName(httpPostedFile.FileName);
-            targetFolder += CachePath;
+            targetFolder += "Cache";
 
             if (!Directory.Exists(targetFolder))
             {
@@ -231,60 +231,37 @@ namespace ReportDesignerSample
             return true;
         }
 
-        public List<Syncfusion.EJ.ReportDesigner.FileModel> GetFiles(Syncfusion.EJ.ReportDesigner.FileType fileType)
+        public void UploadReportAction()
         {
-            List<FileModel> databases = new List<FileModel>();
-            var folderPath = HttpContext.Current.Server.MapPath("~/") + CachePath + ReportDesignerHelper.EJReportDesignerToken + "\\";
-
-            if (Directory.Exists(folderPath))
-            {
-                DirectoryInfo directoryInfo = new DirectoryInfo(folderPath);
-                FileInfo[] Files = directoryInfo.GetFiles(this.GetFileExtension(fileType));
-
-                foreach (FileInfo file in Files)
-                {
-                    databases.Add(new FileModel() { Name = file.Name, Path = "../" + CachePath + ReportDesignerHelper.EJReportDesignerToken + "/" + file.Name });
-                }
-            }
-
-            return databases;
+            ReportDesignerHelper.ProcessDesigner(null, this, HttpContext.Current.Request.Files[0]);
         }
 
-        private string GetFileExtension(Syncfusion.EJ.ReportDesigner.FileType fileType)
+        public object GetResource(string key, string resourcetype, bool isPrint)
         {
-            if (fileType == FileType.Sdf)
-            {
-                return "*.sdf";
-            }
-            else if (fileType == FileType.Xml)
-            {
-                return "*.xml";
-            }
-
-            return "*.rdl";
+            return ReportHelper.GetResource(key, resourcetype, isPrint);
         }
 
-        public string GetFilePath(string fileName)
+        public void OnInitReportOptions(ReportViewerOptions reportOption)
         {
-            string targetFolder = HttpContext.Current.Server.MapPath("~/");
-            targetFolder += CachePath;
-
-            if (!Directory.Exists(targetFolder))
-            {
-                Directory.CreateDirectory(targetFolder);
-            }
-
-            if (!Directory.Exists(targetFolder + "\\" + ReportDesignerHelper.EJReportDesignerToken))
-            {
-                Directory.CreateDirectory(targetFolder + "\\" + ReportDesignerHelper.EJReportDesignerToken);
-            }
-
-            var folderPath = HttpContext.Current.Server.MapPath("~/") + CachePath + ReportDesignerHelper.EJReportDesignerToken + "\\";
-            return folderPath + fileName;
+            //You can update report options here
         }
 
+        public void OnReportLoaded(ReportViewerOptions reportOption)
+        {
+            //You can update report options here
+        }
+
+        public object PostReportAction(Dictionary<string, object> jsonResult)
+        {
+            return ReportHelper.ProcessReport(jsonResult, this as IReportController);
+        }
 
         public FileModel GetFile(string filename, bool isOverride)
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<FileModel> GetFiles(FileType fileType)
         {
             throw new NotImplementedException();
         }
@@ -295,11 +272,25 @@ namespace ReportDesignerSample
 
 ### WebAPI Routing
 
-1. Right-click the project and select Add and select Global.asax file from the listed templates.
+If `Global Application Class` file already exists in your application skip the below **Add Global Application Class** section.
+
+#### Add Global Application Class
+
+1. Right-Click on the project and select `Add` then click `New Item`. 
+
+    ![](Images/JS-Sample-Img2.png) 
+
+2. Select `Global Application Class` from the listed templates and name it as `Global.asax`.
 
     ![](images/JS-Sample-img6.png)
 
-2. Route the WebAPI in Application_Start event into Global.asax file as follows.
+3. Click Add.
+
+    ![](Images/JS-Sample-Img9.png)
+ 
+#### Route WebAPI
+
+Modify the WebAPI routing in Application_Start event of `Global.asax` file as follows.
 
 {% highlight c# %}
 
@@ -365,115 +356,3 @@ Set the Report Server `serviceUrl` and `serviceAuthorizationToken` in the Report
 </script>
 
 {% endhighlight %} 
-
-## Integrate the component with External Server
-
-Report Designer can be integrated with the External Server or Server file browsing by using below code snippet. After integrating you can open, browse and edit the reports in External Server or Application Data using Report designer.
-
-{% highlight html %}
-
-<script type="text/javascript">
-    $(function() {
-        $("#container").ejReportDesigner({
-            serviceUrl: '../../api/ReportDesigner'
-        });
-    });
-</script>
-
-{% endhighlight %} 
-
-{% highlight c# %}
-
-using Syncfusion.EJ.ReportViewer;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Net.Http;
-using System.Web.Http;
-using Syncfusion.Reports.EJ;
-using System.Collections;
-using System.Web;
-using Syncfusion.EJ.ReportDesigner;
-using System.IO;
-using Reporting.ExternalServer;
-
-namespace EJServices.Controllers
-{
-    public class ReportDesignerController : ApiController, Syncfusion.EJ.ReportDesigner.IReportDesignerController
-    {
-        public ReportDesignerController()
-        {
-            ExternalServer externalServer = new ExternalServer();
-            externalServer.ReportServerUrl = "Your Path";
-            ReportDesignerHelper.ReportingServer = externalServer;
-        }
-
-        public FileModel GetFile(string filename, bool isOverride)
-        {
-            throw new NotImplementedException();
-        }
-
-        public string GetFilePath(string key)
-        {
-            throw new NotImplementedException();
-        }
-
-        public List<FileModel> GetFiles(FileType fileType)
-        {
-            throw new NotImplementedException();
-        }
-
-        [HttpGet]
-        public object GetImage(string key, string image)
-        {
-            throw new NotImplementedException();
-        }
-
-        [HttpPost]
-        public object PostDesignerAction(Dictionary<string, object> jsonResult)
-        {
-            throw new NotImplementedException();
-        }
-
-        public bool UploadFile(HttpPostedFile httpPostedFile)
-        {
-            throw new NotImplementedException();
-        }
-
-        [HttpPost]
-        public void UploadReportAction()
-        {
-            throw new NotImplementedException();
-        }
-
-        public object GetResource(string key, string resourcetype, bool isPrint)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void OnInitReportOptions(ReportViewerOptions reportOption)
-        {
-            reportOption.ReportModel.ReportingServer = this.Server;
-            reportOption.ReportModel.ReportServerUrl = this.ServerURL;
-            reportOption.ReportModel.ReportServerCredential = new NetworkCredential("Sample", "Password");
-        }
-
-        public void OnReportLoaded(ReportViewerOptions reportOption)
-        {
-            throw new NotImplementedException();
-        }
-
-        public object PostReportAction(Dictionary<string, object> jsonResult)
-        {
-            throw new NotImplementedException();
-        }
-    }
-}
-
-{% endhighlight %}
-
-N> You can refer the External Server sample and service from the installed location 
-N> sample: %public%\Documents\Syncfusion\JavaScript\{{ site.releaseversion }}\samples\web\reportdesigner\ReportBuilder.html
-N> API Service: %public%\Documents\Syncfusion\JavaScript\{{ site.releaseversion }}\ejservices\Controllers\ReportDesignerController.cs
-N> External Server: %public%\Documents\Syncfusion\JavaScript\{{ site.releaseversion }}\ejservices\Controllers\ExternalReportServer.cs
-

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Rectangle Report Item | ReportDesigner | JS | Syncfusion
+title: Subreport Report Item | ReportDesigner | JS | Syncfusion
 description: Draw a SubReport Item
 platform: js
 control: ReportDesigner

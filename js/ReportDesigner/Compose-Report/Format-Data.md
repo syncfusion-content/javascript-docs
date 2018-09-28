@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Line Report Item | ReportDesigner | JS | Syncfusion
-description: Draw a Line Item
+title: Format Data | ReportDesigner | JS | Syncfusion
+description: How to format data to present in better way.
 platform: js
 control: ReportDesigner
 documentation: ug

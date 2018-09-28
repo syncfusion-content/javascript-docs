@@ -256,11 +256,11 @@ String Path,
 <br/>
 String ExtensionsAllow,
 <br/>
-<br/>IEnumerable<object> SelectedItems<br/>
+<br/>IEnumerable&lt;object&gt; SelectedItems<br/>
 <br/>
 </td>
 <td>
-Response data should be in JSON format with key name as ‘files’ and JSON fields should be with following field names {{'__“__'| markdownify }}{{'__name__'| markdownify }}{{'__,__  '| markdownify }}{{'__isFile__'| markdownify }}{{'__,__ '| markdownify }}{{'__hasChild__'| markdownify }}{{'__”.__'| markdownify }}<br/><br/>If needed, customer can also add additional data along with the JSON result.<br/><br/>{{'__For__ '| markdownify }}{{'__example__'| markdownify }}{{'__:__'| markdownify }}<br/><br/>{files:[{name: "7.png", type: "File", size: 11439, dateModified: "3/31/2015 3:16:38 PM", hasChild: false},{name: "human.png", type: "File", size: 11059, dateModified: "3/31/2015 3:16:35 PM", hasChild: false}]}<br/>
+Response data should be in JSON format with key name as ‘files’ and JSON fields should be with following field names.<br/><br/>If needed, customer can also add additional data along with the JSON result.<br/><br/>{files:[{name: "7.png", type: "File", size: 11439, dateModified: "3/31/2015 3:16:38 PM", hasChild: false},{name: "human.png", type: "File", size: 11059, dateModified: "3/31/2015 3:16:35 PM", hasChild: false}]}<br/>
 <br/>
 </td>
 <td>
@@ -282,7 +282,7 @@ String Path,
 String Name,
 <br/>
 <br/>
-IEnumerable<object> SelectedItems
+IEnumerable&lt;object&gt; SelectedItems
 <br/>
 <br/>
 </td>
@@ -306,9 +306,9 @@ String LocationTo,
 String[] Names,
 <br/><br/>
 String Action,
-<br/><br/>IEnumerable<CommonFileDetails> CommonFiles
-<br/><br/>IEnumerable<object> SelectedItems
-<br/><br/>IEnumerable<object> TargetFolder
+<br/><br/>IEnumerable&lt;CommonFileDetails&gt; CommonFiles
+<br/><br/>IEnumerable&lt;object&gt; SelectedItems
+<br/><br/>IEnumerable&lt;object&gt; TargetFolder
 <br/><br/></td><td>
 Here you may return the pasted file details or empty.
 <br/><br/><br/><br/></td><td>
@@ -319,7 +319,7 @@ Remove<br/><br/></td><td>
 String ActionType,
  <br/><br/>String[] Names,
 <br/><br/>String Path
-<br/><br/>IEnumerable<object> SelectedItems
+<br/><br/>IEnumerable&lt;object&gt; SelectedItems
 <br/><br/>
 </td><td>
 Here you may return the removed file details or empty.
@@ -339,7 +339,7 @@ String Name,
 <br/><br/>
 String NewName,
 <br/><br/>
-IEnumerable<CommonFileDetails> CommonFiles<br/><br/>IEnumerable<object> SelectedItems<br/><br/>
+IEnumerable&lt;CommonFileDetails&gt;&lt;CommonFileDetails&gt; CommonFiles<br/><br/>IEnumerable&lt;object&gt; SelectedItems<br/><br/>
 </td><td>
 Here you may return the renamed file details or empty.<br/><br/><br/><br/>
 </td><td>
@@ -348,7 +348,7 @@ Rename the file or folder from the given path<br/><br/></td></tr>
 <td>
 GetDetails<br/><br/>
 </td><td>
-String ActionType, <br/><br/>String Path,<br/><br/>String[] Names,<br/><br/>IEnumerable<object> SelectedItems<br/><br/>
+String ActionType, <br/><br/>String Path,<br/><br/>String[] Names,<br/><br/>IEnumerable&lt;object&gt; SelectedItems<br/><br/>
 </td><td>
 Response data should be in JSON format like below<br/><br/>{details:[{CreationTime:"4/28/2015 9:44:32 AM", Extension:".png", Format:"Archive", FullName:"F:\All samples\FileExplorer_Custom\FileExplorerContent\human.png", LastAccessTime:"4/28/2015 9:44:32 AM", LastWriteTime:"3/31/2015 3:16:35 PM", Length:11059, Name:"human.png"}]}<br/><br/>
 </td><td>
@@ -358,7 +358,7 @@ get the details of the file/folder from the given path and return data in JSON f
 <td>
 Download<br/><br/>
 </td><td>
-String ActionType,<br/><br/>String Path,<br/><br/>String[] Names,<br/><br/>IEnumerable<object> SelectedItems<br/><br/>
+String ActionType,<br/><br/>String Path,<br/><br/>String[] Names,<br/><br/>IEnumerable&lt;object&gt; SelectedItems<br/><br/>
 </td><td>
 Void<br/><br/>
 </td><td>
@@ -368,7 +368,7 @@ download the file from the given path<br/><br/>
 <td>
 Upload<br/><br/>
 </td><td>
-String ActionType, <br/><br/>IEnumerable<HttpPostedFileBase> FileUpload,<br/><br/>String Path<br/><br/>IEnumerable<object> SelectedItems <br/><br/>
+String ActionType, <br/><br/>IEnumerable&lt;HttpPostedFileBase&gt; FileUpload,<br/><br/>String Path<br/><br/>IEnumerable&lt;object&gt; SelectedItems <br/><br/>
 </td><td>
 Void<br/><br/>
 </td><td>
@@ -379,7 +379,7 @@ upload the file to the given path<br/><br/>
 <td>
 GetImage<br/><br/>
 </td><td>
-String Path,<br/><br/>IEnumerable<object> SelectedItems<br/><br/>
+String Path,<br/><br/>IEnumerable&lt;object&gt; SelectedItems<br/><br/>
 </td><td>
 Should return image in HttpResponseMessage.<br/><br/>
 </td><td>
@@ -388,9 +388,9 @@ Used to get image form the given physical path.<br/><br/>
 <tr>
 <td>
 Search<br/><br/></td><td>
-String ActionType,<br/><br/>String Path,<br/><br/>String SearchString,<br/><br/>Bool CaseSensitive<br/><br/>String ExtensionsAllow<br/><br/>IEnumerable<object> SelectedItems<br/><br/>
+String ActionType,<br/><br/>String Path,<br/><br/>String SearchString,<br/><br/>Bool CaseSensitive<br/><br/>String ExtensionsAllow<br/><br/>IEnumerable&lt;object&gt; SelectedItems<br/><br/>
 </td><td>
-It should return data in JSON format with key name as ‘files’ and JSON fields need to be with following field names {{'__“__'| markdownify }}{{'__name__'| markdownify }}{{'__,__  '| markdownify }}{{'__filterPath__'| markdownify }}{{'__,__  '| markdownify }}{{'__isFile__'| markdownify }}{{'__,__ '| markdownify }}{{'__hasChild__'| markdownify }}{{'__”.__'| markdownify }}{{'____'| markdownify }}<br/><br/>{<br/><br/>"files":[{"name":"bird.jpg","type":"File","size":102182,"dateModified":"1/9/2016 6:48:42 AM","hasChild":false,"isFile":true,"filterPath":null},<br/><br/>{"name":"sea.jpg","type":"File","size":97145,"dateModified":"1/9/2016 6:48:42 AM","hasChild":false,"isFile":true,"filterPath":null }],<br/><br/>"details":null,<br/><br/>"error":null<br/><br/>}<br/><br/></td><td>
+It should return data in JSON format with key name as ‘files’ and JSON fields need to be with following field names.<br/><br/>{"files":[{"name":"bird.jpg","type":"File","size":102182,"dateModified":"1/9/2016 6:48:42 AM","hasChild":false,"isFile":true,"filterPath":null},<br/><br/>{"name":"sea.jpg","type":"File","size":97145,"dateModified":"1/9/2016 6:48:42 AM","hasChild":false,"isFile":true,"filterPath":null }],"details":null,"error":null}<br/><br/></td><td>
 It used to search all the matched files and sub-folders in the given folder path also it filters the specified files using it types.<br/><br/><br/><br/>
 </td></tr>
 </table>
@@ -422,21 +422,25 @@ In this FTP Web API application, we have provided “FTPFileOperationController�
 
 **Step 2:** Include **“FTPFileExplorerOperations”** file in that application. This file contains built-in file handling methods which helps to connect our FileExplorer with FTP service.
 
+[http://www.syncfusion.com/downloads/support/directtrac/general/ze/FTPFileExplorerOperations901960089.zip](http://www.syncfusion.com/downloads/support/directtrac/general/ze/FTPFileExplorerOperations901960089.zip#)
+
 **Step 3:** Add **“FileExplorerController.cs”** file in the controller part of FTP project.
 
 This file, contains action handler methods. Based on the request parameters, it helps to call the built-in file handling methods of **FTPFileExplorerOperations** and perform corresponding actions.
 
 {% highlight c# %}
 
+        FTPFileExplorerOperations operation = new FTPFileExplorerOperations();
+        
         [HttpPost]
         [ActionName("doJSONAction")]
         public object doJSONAction()
         {
-            FileExplorerParams args = FileExplorerOperations.GetAjaxData(Request);
+            FileExplorerParams args = GetAjaxData(Request);
 
             if (args.ActionType == "Upload")
             {
-                ftpFileExplorerOperations.Upload(args.Files, args.Path);
+                operation.Upload(args.Files, args.Path);
             }
 
             try
@@ -444,19 +448,19 @@ This file, contains action handler methods. Based on the request parameters, it 
                 switch (args.ActionType)
                 {
                     case "Read":
-                        return ftpFileExplorerOperations.Read(args.Path, args.ExtensionsAllow);
+                        return operation.Read(args.Path, args.ExtensionsAllow);
                     case "Search":
-                        return ftpFileExplorerOperations.Search(args.Path, args.ExtensionsAllow, args.SearchString, args.CaseSensitive);
+                        return operation.Search(args.Path, args.ExtensionsAllow, args.SearchString, args.CaseSensitive);
                     case "CreateFolder":
-                        return ftpFileExplorerOperations.CreateFolder(args.Path, args.Name);
+                        return operation.CreateFolder(args.Path, args.Name);
                     case "Paste":
-                        return ftpFileExplorerOperations.Paste(args.LocationFrom, args.LocationTo, args.Names, args.Action, null);
+                        return operation.Paste(args.LocationFrom, args.LocationTo, args.Names, args.Action, null);
                     case "Remove":
-                        return ftpFileExplorerOperations.Remove(args.Names, args.Path);
+                        return operation.Remove(args.Names, args.Path);
                     case "Rename":
-                        return ftpFileExplorerOperations.Rename(args.Path, args.Name, args.NewName, null);
+                        return operation.Rename(args.Path, args.Name, args.NewName, null);
                     case "GetDetails":
-                        return ftpFileExplorerOperations.GetDetails(args.Path, args.Names);
+                        return operation.GetDetails(args.Path, args.Names);
                 }
                 return "";
 
@@ -475,9 +479,9 @@ This file, contains action handler methods. Based on the request parameters, it 
         {
 
             if (ActionType == "Download")
-                ftpFileExplorerOperations.Download(Path, HttpContext.Current.Request.QueryString.GetValues("Names"));
+                operation.Download(Path, HttpContext.Current.Request.QueryString.GetValues("Names"));
             else if (ActionType == "GetImage")
-                ftpFileExplorerOperations.GetImage(Path, null);
+                operation.GetImage(Path, null);
 
 
         }
@@ -489,6 +493,23 @@ This file, contains action handler methods. Based on the request parameters, it 
             PerformAction(ActionType, Path);
         }
 
+        public FileExplorerParams GetAjaxData(HttpRequestMessage request)
+        {
+            FileExplorerParams args = new FileExplorerParams();
+            if (HttpContext.Current.Request.Files.Count > 0)
+            {
+                args.Path = HttpContext.Current.Request.QueryString.GetValues("Path")[0];
+                args.ActionType = "Upload";
+            }
+            else
+            {
+                var serializer = new JavaScriptSerializer();
+                args = (FileExplorerParams)serializer.Deserialize(request.Content.ReadAsStringAsync().Result, typeof(FileExplorerParams));
+            }
+            return args;
+        }
+
+
 {% endhighlight %}
 
 **Step 4:** Add FTP Storage path that is viewed by FileExplorer.
@@ -497,12 +518,14 @@ After that, you need to specify the FTP folder path and AJAX action handler name
 
 {% highlight javascript %}
 
-$("#fileExplorer").ejFileExplorer({ //Path of the folder that you want to view in FileExplorer. 
-path: "ftp://localHost/FileBrowser/", //Path of file handling operation method 
-ajaxAction: "http://localhost/api/FileExplorer/FileOperations" });
+$("#fileExplorer").ejFileExplorer({ 
+//Path of the folder that you want to view in FileExplorer. 
+path: "ftp://localHost/FileBrowser/", 
+//Path of file handling operation method 
+ajaxAction: "http://localhost/FileExplorer/FileOperation/doJSONAction" });
 
 {% endhighlight %}
 
 We have prepared a demo based on above steps, please refer this.
 
-[http://www.syncfusion.com/downloads/support/directtrac/general/ze/FTPFileExplorerOperations-1690670324.zip](http://www.syncfusion.com/downloads/support/directtrac/general/ze/FTPFileExplorerOperations-1690670324.zip#)
+[http://www.syncfusion.com/downloads/support/directtrac/general/ze/FTPWebAPI1239740174.zip](http://www.syncfusion.com/downloads/support/directtrac/general/ze/FTPWebAPI1239740174.zip#)
