@@ -122,7 +122,7 @@ The following screenshot shows the resource histogram with project view Gantt.
 ![](/js/Gantt/HistogramView_images/HistogramView_1.png)
 
 Please find our online demo sample for further reference
-[ResourceHistogram](https://js.syncfusion.com/demos/web/#!/bootstrap/gantt/histogramview)
+[ResourceHistogram](https://js.syncfusion.com/demos/web/#!/bootstrap/gantt/resourcehistogram)
 
 ### Synchronize with resource view
 The following code snippet shows how to synchronize the resource histogram view Gantt with resource view Gantt.
