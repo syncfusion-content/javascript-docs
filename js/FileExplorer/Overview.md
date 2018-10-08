@@ -16,7 +16,7 @@ For a live demo of FileExplorer check the online sample from [here](https://js.s
 
 N>  The FileExplorer control was officially added with the Essential Studio JavaScript package from the v13.1 release only.
 
-![](Overview_images/Overview_img1.png)
+![FileExplorer_OverView](Overview_images/Overview_img1.png)
 
 
 ## Key features
