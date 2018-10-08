@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Member Editors
-description: Memebr editor in PivotClient control
+title: Member Editor
+description: Member editor in PivotClient control
 platform: js
 control: PivotClient
 documentation: ug
@@ -10,13 +10,13 @@ api: /api/js/ejpivotclient
 
 # Member Editor
 
-Member editor is a dialog that displays the members of the current field in a tree view structure, which can be opened by clicking the pivot button available in the axis elements. It helps to search, filter, and sort the field members available in the pivot client control.
+The member editor dialog displays the members of current field in a tree view structure, which is opened by clicking the pivot button available in axis elements. It helps to search, filter, and sort the field members available in the pivot client control.
 
 ![Member editor in pivot client control](Member_Editor_images/member_editor.png)
 
 ## Member editor - Paging
 
-The member editor paging helps you to improve the rendering performance of the dialog by dividing the large amount of data into sections and displaying them.
+The member editor paging helps you to improve the rendering performance of the dialog by dividing the large amounts of data into sections and displaying them.
 
 You can enable the member editor paging and set the member editor page size in the pivot client control by setting the [`enableMemberEditorPaging`](/api/js/ejpivotclient#members:enablemembereditorpaging) and [`memberEditorPageSize`](/api/js/ejpivotclient#members:membereditorpagesize) properties.
 
@@ -33,19 +33,20 @@ You can enable the member editor paging and set the member editor page size in t
 
 {% endhighlight %}
 
-The following are the navigation option available in the member editor pager:
-* Move first - Navigates to the first page.
-* Move previous - Navigates to the previous page from the current page.
-* Move next - Navigates to the next page from the current page.
-* Move last - Navigates to the last page.
-* Numeric box - Navigates to the desired page by entering an appropriate page number in a numeric value.
+The following are the navigation options available in the member editor pager:
+
+* Move first: Navigates to the first page.
+* Move previous: Navigates to the previous page from the current page.
+* Move next: Navigates to the next page from the current page.
+* Move last: Navigates to the last page.
+* Numeric box: Navigates to the desired page by entering an appropriate page number in a numeric value.
 
 
 ![Paging in member editor](Member_Editor_images/member_editor_paging.png)
 
 ## Member editor - Sorting
 
-The sorting support in member editor helps you to sort the field members either in ascending or descending order.
+The sorting support in the member editor helps you to sort the field members in ascending or descending order.
 
 You can enable the member editor sorting in the pivot grid control by setting the [`enableMemberEditorSorting`](/api/js/ejpivotgrid#members:enableMemberEditorSorting) property.
 

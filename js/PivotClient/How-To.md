@@ -585,7 +585,7 @@ $("#PivotClient1").ejPivotClient({
 {% endhighlight %}
 
 ## Applying conditional formatting in pivot client
-The conditional formatting in the pivot client allows you to highlight particular cells in pivot grid with certain color, font-style, font-family, etc., based on the applied condition. Also, the condition can be applied for certain measure alone.
+The conditional formatting in the pivot client allows you to highlight the particular cells in the pivot grid with certain color, font-style, font-family, etc., based on the applied condition. Also, the condition can be applied for certain measure alone.
 The conditional formatting is enabled by setting the `enableConditionalFormatting` property to true in the `renderSuccess` event and the formatting dialog is launched when the `openConditionalFormattingDialog` method is invoked.
 
 {% highlight html %}
