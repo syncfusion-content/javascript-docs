@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Behavior Settings
-description: Customize the behavior of FileExplorer.
+title: Behavior Settings FileExplorer widget for Essential JS
+description: Customize the behavior of FileExplorer control showcase all the files from the filesystem, here you can customize the file types.
 platform: js
 control: FileExplorer
 documentation: ug
@@ -22,9 +22,9 @@ By default it having the value “*.*”, so it allows all the file types. In ca
 
     $(function () {
 
-        var fileSystemPath = "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/";
+        var fileSystemPath = "https://js.syncfusion.com/demos/ejServices/Content/FileBrowser/";
 
-        var ajaxActionHandler = "http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations";
+        var ajaxActionHandler = "https://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations";
 
         $("#fileExplorer").ejFileExplorer({
 
@@ -74,11 +74,11 @@ If you want to customize read action alone, the AJAX **url** and **dataType** ar
 
         $(function () {
 
-            var fileSystemPath = "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/";
+            var fileSystemPath = "https://js.syncfusion.com/demos/ejServices/Content/FileBrowser/";
 
-            var ajaxActionHandler = "http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations";
+            var ajaxActionHandler = "https://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations";
 
-            var ajaxJSONPActionHandler = "http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperationsCors";
+            var ajaxJSONPActionHandler = "https://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperationsCors";
 
             $("#fileExplorer").ejFileExplorer({
 
