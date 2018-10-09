@@ -23,7 +23,7 @@ Full circle frame allows the pivot gauge to display in a circular shape. The fra
 
 {% endhighlight %}
 
-![](Frame-Type_images/FullCircle.png)
+![Shows full circle of pivot gauge widget](Frame-Type_images/FullCircle.png)
 
 ## Half circle
 
@@ -46,5 +46,5 @@ The half circle frame allows the pivot gauge to display in a semi-circular shape
 
 {% endhighlight %}
 
-![](Frame-Type_images/HalfCircle.png)
+![Shows half circle of pivot gauge widget](Frame-Type_images/HalfCircle.png)
 

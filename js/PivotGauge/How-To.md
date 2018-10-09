@@ -104,7 +104,7 @@ The [`destroy`](../api/ejpivotgauge#methods:destroy) method is used to destroy t
 {% endhighlight %}
 
 ### Explicit asynchronous invoke
-The [`doAjaxPost`](/api/js/ejpivottreemap#methods:doajaxpost) method is used to perform an asynchronous HTTP (AJAX) request.
+The [`doAjaxPost`](/api/js/ejpivotgauge#methods:doajaxpost) method is used to perform an asynchronous HTTP (AJAX) request.
 
 {% highlight html %}
 
@@ -160,6 +160,22 @@ You can set the OLAP report along with axis information using the [`setOlapRepor
     $("#PivotGauge1").ejPivotGrid();
     var pivotGaugeObj = $("#PivotGauge1").data("ejPivotGauge");
     var report = pivotGaugeObj.setOlapReport(olapReportObj);
+</script>
+
+{% endhighlight %}
+
+### Destroying the object of PivotGauge
+
+The [`destroy`](/api/js/ejpivotgauge#methods:destroy) method is used to destroy the **PivotGauge** widget associated events that are bound using “this._on” and brings the control to pre-init state.
+
+{% highlight html %}
+
+<div id="PivotGauge1"></div>
+
+<script>
+    $("#PivotGauge1").ejPivotGauge();
+    var pivotGaugeObj = $("#PivotGauge1").data("ejPivotGauge");
+    pivotGaugeObj.destroy();
 </script>
 
 {% endhighlight %}
