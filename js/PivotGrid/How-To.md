@@ -205,6 +205,85 @@ The [`setJSONRecords`](/api/js/ejpivotgrid#methods:setJSONRecords) method is use
 
 {% endhighlight %}
 
+### Rendering the widget with pre-defined JSON records
+
+The [`renderControlFromJSON`](/api/js/ejpivotgrid#methods:rendercontrolfromjson) method is used to render the **PivotGrid** widget with the pre-defined JSON records available at that instant.
+
+{% highlight html %}
+
+<div id="PivotGrid1"></div>
+
+<script>
+    $("#PivotGrid1").ejPivotGrid();
+    var pivotGridObj = $("#PivotGrid1").data("ejPivotGrid");
+    pivotGridObj.renderControlFromJSON({ pivotGridObj.getJSONRecords() });
+</script>
+
+{% endhighlight %}
+
+### Getting the current OLAP report
+You can get the current OLAP report along with axis information by [`getOlapReport`](/api/js/ejpivotgrid#methods:getolapreport) method.
+
+{% highlight html %}
+
+<div id="PivotGrid1"></div>
+
+<script>
+    $("#PivotGrid1").ejPivotGrid();
+    var pivotGridObj = $("#PivotGrid1").data("ejPivotGrid");
+    var report = pivotGridObj.getOlapReport();
+</script>
+
+{% endhighlight %}
+
+### Setting the OLAP report
+You can set the OLAP report along with axis information by the [`setOlapReport`](/api/js/ejpivotgrid#methods:setolapreport) method.
+
+{% highlight html %}
+
+<div id="PivotGrid1"></div>
+
+<script>
+    $("#PivotGrid1").ejPivotGrid();
+    var pivotGridObj = $("#PivotGrid1").data("ejPivotGrid");
+    var report = pivotGridObj.setOlapReport(olapReportObj);
+</script>
+
+{% endhighlight %}
+
+### Loading the report
+You can load the specified report from the database/local storage by [`loadReport`](/api/js/ejpivotgrid#methods:loadreport) method.
+
+{% highlight html %}
+
+<div id="PivotGrid1"></div>
+
+<script>
+    $("#PivotGrid1").ejPivotGrid();
+    var pivotGridObj = $("#PivotGrid1").data("ejPivotGrid");
+    var storageOption = "local"; //it takes the string value "local" for loading a report from local storage and "database" for loading from database.
+    var url = "";//it takes the service method url for loading report from database. For local it is not required.
+    pivotGridObj.loadReport("reportName", storageOption, url);
+</script>
+
+{% endhighlight %}
+
+### Explicit asynchronous post
+
+The [`doPostBack`](/api/js/ejpivotgrid#methods:dopostback) method is used to perform an asynchronous HTTP (AJAX) post operation.
+
+{% highlight html %}
+
+<div id="PivotGrid1"></div>
+
+<script>
+    $("#PivotGrid1").ejPivotGrid();
+   var pivotGridObj = $("#PivotGrid1").data("ejPivotGrid");
+    pivotGridObj.doPostBack("/PivotService/Initialize", { "key", "Hello World" });
+</script>
+
+{% endhighlight %}
+
 
 ## Events
 
@@ -353,6 +432,79 @@ $("#PivotGrid1").ejPivotGrid({
 {% endhighlight %}
 
 
+### Triggering event on successful completion of AJAX request
+
+The [`renderSuccess`](/api/js/ejpivotgrid#events:rendersuccess) event is triggered when the AJAX request returns successfully at the client-side.
+
+{% highlight javascript %}
+
+    $("#PivotGrid1").ejPivotGrid({
+
+            //render success event
+            renderSuccess: function(args) {
+
+        },
+
+            //...
+    });
+
+{% endhighlight %}
+
+### Triggering event after completing the controls rendering
+
+The [`renderComplete`](/api/js/ejpivotgrid#events:rendercomplete) event is triggered after PivotClient gets completely rendered.
+
+{% highlight javascript %}
+
+    $("#PivotGrid1").ejPivotGrid({
+
+            //render complete event
+            renderComplete: function(args) {
+
+            },
+
+            //...
+        });
+
+{% endhighlight %}
+
+### Triggering event on failure of AJAX request
+
+The [`renderFailure`](/api/js/ejpivotgrid#events:renderfailure) event is triggered when any error occurred during the AJAX request.
+
+{% highlight javascript %}
+
+    $("#PivotGrid1").ejPivotGrid({
+
+            //render complete event
+            renderFailure: function(args) {
+
+        },
+
+            //...
+    });
+
+{% endhighlight %}
+
+### Triggering event while loading report
+
+The [`loadReport`](/api/js/ejpivotgrid#events:loadReport) event is triggered while loading report from database.
+
+{% highlight javascript %}
+
+    $("#PivotGrid1").ejPivotGrid({
+
+            //load report event
+            loadReport: function(args) {
+
+        },
+
+            //...
+    });
+
+{% endhighlight %}
+
+
 ## Members
 
 ### Getting Raw items by triggering cell double click event
@@ -371,6 +523,23 @@ Cell double click on pivot grid allows you to get the raw items of cell which is
 
             //...
         });
+
+{% endhighlight %}
+
+### Setting custom theme
+You can render the PivotClient with any one of the built-in themes by using the [`cssClass`](/api/js/ejpivotgrid#members:cssclass)property.
+
+{% highlight html %}
+
+    <script type="text/javascript">
+        $(function() {
+            $("#PivotGrid1").ejPivotGrid({
+              cssClass: "gradient-lime"
+            });
+
+        });
+
+    </script>
 
 {% endhighlight %}
 
