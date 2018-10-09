@@ -393,7 +393,7 @@ The following are the available features in the context menu:
 
 * [`3D Charts`](/api/js/ejpivotchart#members:enable3d): You can choose different 3D chart types. The **"Disable 3D Charts"** option is available to disable the 3D chart, and it is rendered as the respective 2D chart.
 
-![Chart types with 3D in context menu of JavaScript pivot chart widget](How-To_images/3DCharts.png)
+![Chart types with three dimensional in context menu of JavaScript pivot chart widget](How-To_images/3DCharts.png)
 
 * `Exporting`: You can export the chart in different formats given in the following image. You have to mention the export settings through the[`beforeExport`](/api/js/ejpivotchart#events:beforeexport) event.
 
