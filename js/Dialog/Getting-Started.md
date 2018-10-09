@@ -70,7 +70,7 @@ Add links to the [CDN](https://help.syncfusion.com/js/cdn) Script files with dep
 
 
 N>To reduce the file size further please use [GZip](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/optimize-encoding-and-transfer?hl=en) compression in your server. 
-{%seealso%}[custom script generator](https://help.syncfusion.com/js/include-only-the-needed-widgets) {%endseealso%}
+{%seealso%}[custom script generator](https://csg.syncfusion.com/combine) {%endseealso%}
 
 ## Create Dialog
 
