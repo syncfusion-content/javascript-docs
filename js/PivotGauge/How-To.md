@@ -118,6 +118,51 @@ The [`doAjaxPost`](/api/js/ejpivottreemap#methods:doajaxpost) method is used to 
 
 {% endhighlight %}
 
+### Rendering the widget with predefined JSON records
+
+The [`renderControlFromJSON`](/api/js/ejpivotgauge#methods:rendercontrolfromjson) method is used to render the **PivotGauge** component with predefined JSON records available at that instant.
+
+{% highlight html %}
+
+<div id="PivotGauge1"></div>
+
+<script>
+    $("#PivotGauge1").ejPivotGauge();
+    var pivotGaugeObj = $("#PivotGauge1").data("ejPivotGauge");
+    pivotGaugeObj.renderControlFromJSON({ this.getJSONRecords() });
+</script>
+
+{% endhighlight %}
+
+### Getting the current OLAP report
+You can get the current OLAP report along with axis information using the [`getOlapReport`](/api/js/ejpivotgauge#methods:getolapreport) method.
+
+{% highlight html %}
+
+<div id="PivotGauge1"></div>
+
+<script>
+    $("#PivotGauge1").ejPivotGauge();
+    var pivotGaugeObj = $("#PivotGauge1").data("ejPivotGauge");
+    var report = pivotGaugeObj.getOlapReport();
+</script>
+
+{% endhighlight %}
+
+### Setting the OLAP report
+You can set the OLAP report along with axis information using the [`setOlapReport`](/api/js/ejpivotgauge#methods:setolapreport) method.
+
+{% highlight html %}
+
+<div id="PivotGauge1"></div>
+
+<script>
+    $("#PivotGauge1").ejPivotGrid();
+    var pivotGaugeObj = $("#PivotGauge1").data("ejPivotGauge");
+    var report = pivotGaugeObj.setOlapReport(olapReportObj);
+</script>
+
+{% endhighlight %}
 
 ## Events
 
@@ -195,6 +240,61 @@ The [`beforeServiceInvoke`](/api/js/ejpivotgauge#events:beforeserviceinvoke) eve
 
 {% endhighlight %}
 
+### Triggering event on successful completion of AJAX request
+
+The [`renderSuccess`](/api/js/ejpivotgauge#events:rendersuccess) event is triggered when AJAX request returns successfully at the client-side.
+
+{% highlight javascript %}
+
+$("#PivotGauge1").ejPivotGauge({
+
+            //render success event
+            renderSuccess: function(args) {
+
+            },
+
+            //...
+        });
+
+{% endhighlight %}
+
+### Triggering event after the control rendered
+
+The [`renderComplete`](/api/js/ejpivotgauge#events:rendercomplete) event is triggered after the pivot client is rendered completely.
+
+{% highlight javascript %}
+
+    $("#PivotGauge1").ejPivotGauge({
+
+            //render complete event
+            renderComplete: function(args) {
+
+            },
+
+            //...
+    });
+
+{% endhighlight %}
+
+### Triggering event on failure of AJAX request
+
+The [`renderFailure`](/api/js/ejpivotgauge#events:renderfailure) event is triggered when any error occurred during the AJAX request.
+
+{% highlight javascript %}
+
+   $("#PivotGauge1").ejPivotGauge({
+
+            //render complete event
+            renderFailure: function(args) {
+
+            },
+
+            //...
+        });
+
+{% endhighlight %}
+
+
 
 ## Members
 
@@ -229,6 +329,23 @@ Allows you to enable the “withCredentials” property in the XMLHttpRequest ob
 
     });
 </script>
+
+{% endhighlight %}
+
+### Setting custom theme
+You can render the pivot gauge with one of the available built-in themes by using the [`cssClass`](/api/js/ejpivotgauge#members:cssclass) property.
+
+{% highlight html %}
+
+    <script type="text/javascript">
+        $(function() {
+            $("#PivotGauge1").ejPivotGauge({
+              cssClass: "gradient-lime"
+            });
+
+        });
+
+    </script>
 
 {% endhighlight %}
 

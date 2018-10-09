@@ -449,7 +449,7 @@ $("#PivotGrid1").ejPivotGrid({
 
 {% endhighlight %}
 
-![](How-To_images/jsonRendering.png)
+![JSON rendering in JavaScript pivot grid control](How-To_images/jsonRendering.png)
 
 ### Connect the Field List with PivotGrid using its ID
 You can connect PivotSchemaDesigner with specified ID to the PivotGrid control. This connection can be enabled by the [`pivotTableFieldListID`](/api/js/ejpivotgrid#members:pivottablefieldlistid) property. The
@@ -509,7 +509,7 @@ To improve user action, the Context Menu option in PivotGrid allows you to enabl
 
 {% endhighlight %}
 
-![](How-To_images/contextMenu.png)
+![Context menu in JavaScript pivot grid control](How-To_images/contextMenu.png)
 
 The following are the available features in Context Menu.
 
@@ -528,36 +528,36 @@ The following are the available customizations in Context Menu.
 
 * `Summary Customization` - Allows you to customize the row/column totals through dialog.
 
-![](How-To_images/summaryCustomization.png)
+![Summary customization in context menu of JavaScript pivot grid control](How-To_images/summaryCustomization.png)
 
 * `Conditional Formatting` - Allows you to format a specific set of cells based on the condition by the conditional dialog.
 * `Calculated Field` - Supports to insert a new calculated field based on the existing pivot fields through the calculated field dialog.
 * `Number Formatting` - Allows you to specify the required number format that should be used in values of the PivotGrid by setting the `format` through Formatting dialog.
 
-![](How-To_images/numberFormatting.png)
+![Number formatting in context menu of JavaScript pivot grid control](How-To_images/numberFormatting.png)
 
 * `Summary Types` - Allow you to specify the required [`layout`](/api/js/ejpivotgrid#members:layout) that should be used in summary cells of the PivotGrid through Summary Types dialog.
 
-![](How-To_images/summaryTypes.png)
+![Summary Types in context menu of JavaScript pivot grid control](How-To_images/summaryTypes.png)
 
 
 The following are the available features through sub context menu.
 
 * `Layouts` - Allows you to specify the required [`layout`](/api/js/ejpivotgrid#members:layout) through sub menus.
 
-![](How-To_images/layouts.png)
+![Layouts in context menu of JavaScript pivot grid control](How-To_images/layouts.png)
 
 * `Hyper Link` - Allows you to enable/disable hyperlink for row header, column header, value, and summary cells.
 
-![](How-To_images/hyperlink.png)
+![Hyperlink types in context menu of JavaScript pivot grid control](How-To_images/hyperlink.png)
 
 * `Exporting` - Allows you to export PivotGrid in a desired format. You have to mention the export settings through [`beforeExport`](/api/js/ejpivotgrid#events:beforeExport) event.
 
-![](How-To_images/exporting.png)
+![Exporting in context menu of JavaScript pivot grid control ](How-To_images/exporting.png)
 
 * `Frozen Headers` - Allows you to freeze the PivotGrid in a desired dimension row/column.
 
-![](How-To_images/frozenHeaders.png)
+![Freeze headers in context menu of JavaScript pivot grid control](How-To_images/frozenHeaders.png)
 
 
 ## Setting Custom Name to Service Methods
@@ -796,6 +796,18 @@ $("#PivotSchemaDesigner1").ejPivotSchemaDesigner({
 
 {% endhighlight %}
 
+### Triggering event while dragging the field
+
+The [`dragMove`](/api/js/ejpivotschemadesigner#events:dragmove) event is triggered when a field in the pivot schema designer is started to drag.
+
+{% highlight javascript %}
+
+$("#PivotSchemaDesigner1").$("#PivotSchemaDesigner1")  ({
+        // drag move event
+        dragMove: function (args) {}
+});
+
+{% endhighlight %}
 
 ## Members
 
@@ -815,10 +827,21 @@ The [`locale`](/api/js/ejpivotschemadesigner#members:locale) property is used to
 
 {% endhighlight %}
 
+### Setting custom theme
+You can render the pivot schema designer with one of the built-in themes using the [`cssClass`](/api/js/ejpivotschemadesigner#members:cssclass) property.
 
+{% highlight html %}
 
+    <script type="text/javascript">
+        $(function() {
+            $("#PivotSchemaDesigner1").ejPivotSchemaDesigner ({
+              cssClass: "gradient-lime"
+            });
 
+        });
+    </script>
 
+{% endhighlight %}
 
 
 
