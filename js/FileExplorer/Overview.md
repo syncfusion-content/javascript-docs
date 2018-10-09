@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview
-description: overview
+title: Overview of FileExplorer widget for Essential JS
+description: Explains about the FileExplorer widget and its key features for managing the File system through any web application.
 platform: js
 control: File Explorer
 documentation: ug
@@ -12,11 +12,11 @@ api: /api/js/ejfileexplorer
 
 The **Essential JavaScript FileExplorer** is an interface for managing the File system through any web application. It allows the user to perform the most common file operations include browse, open, create, rename, copy, paste or move, delete and file searching.
 
-For a live demo of FileExplorer check the online sample from [here](http://js.syncfusion.com/demos/web/#!/azure/fileexplorer/DefaultFunctionalities)
+For a live demo of FileExplorer check the online sample from [here](https://js.syncfusion.com/demos/web/#!/azure/fileexplorer/DefaultFunctionalities)
 
 N>  The FileExplorer control was officially added with the Essential Studio JavaScript package from the v13.1 release only.
 
-![](Overview_images/Overview_img1.png)
+![FileExplorer_OverView](Overview_images/Overview_img1.png)
 
 
 ## Key features
