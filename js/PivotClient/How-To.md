@@ -146,7 +146,51 @@ The [`getActiveTab`](/api/js/ejpivotclient#methods:getactivetab) method is used 
 
 {% endhighlight %}
 
+### Getting the current OLAP report
+You can get the current OLAP report along with axis information using the [`getOlapReport`](/api/js/ejpivotclient#methods:getolapreport) method.
 
+{% highlight html %}
+
+<div id="PivotClient1"></div>
+
+<script>
+    $("#PivotClient1").ejPivotClient();
+    var pivotClientObj = $("#PivotClient1").data("ejPivotClient");
+    var report = pivotClientObj.getOlapReport();
+</script>
+
+{% endhighlight %}
+
+### Setting the OLAP report
+You can set the OLAP report along with axis information using the [`setOlapReport`](/api/js/ejpivotclient#methods:setolapreport) method.
+
+{% highlight html %}
+
+<div id="PivotClient1"></div>
+
+<script>
+    $("#PivotClient1").ejPivotClient();
+    var pivotClientObj = $("#PivotClient1").data("ejPivotClient");
+    var report = pivotClientObj.setOlapReport(olapReportObj);
+</script>
+
+{% endhighlight %}
+
+### Explicit asynchronous post
+
+The [`doPostBack`](/api/js/ejpivotclient#methods:dopostback) method is used to perform an asynchronous HTTP (AJAX) post operation.
+
+{% highlight html %}
+
+<div id="PivotClient1"></div>
+
+<script>
+    $("#PivotClient1").ejPivotClient();
+    var pivotClientObj = $("#PivotClient1").data("ejPivotClient");
+    pivotClientObj.doPostBack("/PivotService/Initialize", { "key", "Hello World" });
+</script>
+
+{% endhighlight %}
 ## Events
 
 ### Triggering event before saving the reports
@@ -482,6 +526,78 @@ The [`load`](/api/js/ejpivotclient#events:load) event is triggered while you ini
 
 {% endhighlight %}
 
+### Triggering event on successful completion of AJAX request
+
+The [`renderSuccess`](/api/js/ejpivotclient#events:rendersuccess) event is triggered when the AJAX request returns successfully at the client-side.
+
+{% highlight javascript %}
+
+    $("#PivotClient1").ejPivotClient ({
+
+            //render success event
+            renderSuccess: function(args) {
+
+        },
+
+            //...
+    });
+
+{% endhighlight %}
+
+### Triggering event after the control rendered
+
+The [`renderComplete`](/api/js/ejpivotclient#events:rendercomplete) event is triggered after the pivot client is rendered completely.
+
+{% highlight javascript %}
+
+    $("#PivotClient1").ejPivotClient({
+
+            //render complete event
+            renderComplete: function(args) {
+
+        },
+
+            //...
+    });
+
+{% endhighlight %}
+
+### Triggering event while loading the saved report
+
+The [`loadReport`](/api/js/ejpivotclient#events:loadreport) event is triggered while loading the saved reports collection from the database.
+
+{% highlight javascript %}
+
+    $("#PivotClient1").ejPivotClient({
+
+            //load report event
+            loadReport: function(args) {
+
+        },
+
+            //...
+    });
+
+{% endhighlight %}
+
+### Triggering event on failure of AJAX request
+
+The [`renderFailure`](/api/js/ejpivotclient#events:renderfailure) event is triggered when any error occurred during the AJAX request.
+
+{% highlight javascript %}
+
+    $("#PivotClient1").ejPivotClient({
+
+            //render complete event
+            renderFailure: function(args) {
+
+        },
+
+            //...
+    });
+
+{% endhighlight %}
+
 
 ## Members
 
@@ -511,7 +627,7 @@ The [`showUniqueNameOnPivotButton`](/api/js/ejpivotclient#members:showuniquename
 
 {% endhighlight %}
 
-![](How-To_images/uniqueNamePivotButton.png)
+![Shows unique name on pivot button with JavaScript pivot client control](How-To_images/uniqueNamePivotButton.png)
 
 ### Showing report collection in toolbar
 The [`showReportCollection`](/api/js/ejpivotclient#members:showreportcollection) property allows you to load the saved report collection from the database and show it in the toolbar.
@@ -526,7 +642,7 @@ The [`showReportCollection`](/api/js/ejpivotclient#members:showreportcollection)
 
 {% endhighlight %}
 
-![](How-To_images/reportCollection.png)
+![Shows report collection in JavaScript pivot client control](How-To_images/reportCollection.png)
 
 ### Getting JSON format by triggering cell click event
 Cell click on the pivot grid allows you to get JSON format of the cell which is clicked. To enable cell click event in the pivot client, you can use the [`enableCellClick`](/api/js/ejpivotclient#members:enablecellclick) property. You can get the JSON format of the value cell through the [`cellClick`](/api/js/ejpivotclient#events:cellclick) event.
@@ -583,6 +699,24 @@ $("#PivotClient1").ejPivotClient({
     });
 
 {% endhighlight %}
+
+### Setting custom theme
+You can render the pivot client with one of the built-in themes using the [`cssClass`](/api/js/ejpivotclient#members:cssclass) property.
+
+{% highlight html %}
+
+    <script type="text/javascript">
+        $(function() {
+            $("#PivotClient1").ejPivotClient({
+              cssClass: "gradient-lime"
+            });
+
+        });
+
+    </script>
+
+{% endhighlight %}
+
 
 ## Applying conditional formatting in pivot client
 The conditional formatting in the pivot client allows you to highlight the particular cells in the pivot grid with certain color, font-style, font-family, etc., based on the applied condition. Also, the condition can be applied for certain measure alone.

@@ -48,7 +48,7 @@ The following are the navigation options available in the member editor pager:
 
 The sorting support in the member editor helps you to sort the field members in ascending or descending order.
 
-You can enable the member editor sorting in the pivot grid control by setting the [`enableMemberEditorSorting`](/api/js/ejpivotgrid#members:enableMemberEditorSorting) property.
+You can enable the member editor sorting in the pivot grid control by setting the [`enableMemberEditorSorting`](/api/js/ejpivotclient#members:enablemembereditorsorting) property.
 
 {% highlight html %}
 
