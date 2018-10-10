@@ -106,6 +106,88 @@ The following output is displayed as a result of the above code example.
 
 ![](Data_Binding_images/Data_Bind_img2.png)
 
+### URL Adaptor
+
+You can use the `UrlAdaptor` of [`ejDataManger`](https://help.syncfusion.com/api/js/ejdatamanager) when binding `dataSource` from remote data. At initial load of Kanban, using `url` property of DataManager, data are fetched from remote data and bound to Kanban. You can map CRUD operation in Kanban to Server-Side Controller action using the property `crudUrl`.
+
+The following code example describes the above behavior.
+
+{% highlight html %}
+
+    <div id='Kanban'></div>
+
+{% endhighlight %}
+
+{% highlight javascript %}
+
+   <script type="text/javascript">
+        $(function () {
+          var dataManager = ej.DataManager({
+              url: "Kanban/GetData",
+              crudUrl: "Kanban/Crud",
+              adaptor: "UrlAdaptor"
+          });
+          $("#Kanban").ejKanban(
+            {
+                dataSource: dataManager,
+                columns: [
+                    { headerText: "Backlog", key: "Open", showAddButton: true },
+                    { headerText: "In Progress", key: "InProgress" },
+                    { headerText: "Done", key: "Close" }
+                ],
+                keyField: "Status",
+                fields: {
+                    content: "Summary",
+                    primaryKey: "Id",
+                    priority:"RankId"
+                },
+            }
+        );
+    });
+    </script>
+
+{% endhighlight %}
+
+Also when you use `UrlAdaptor`, you need to return the data as JSON and the JSON object must contain a properties result & count. The `result` holds the `dataSource` as its value and `count` holds the total cards count as its value.
+
+The following code example describes the above behavior.
+
+{% highlight c# %}
+     
+    public ActionResult GetData(Syncfusion.JavaScript.DataManager value)
+        {
+           var DataSource = db.Tasks.ToList();
+           DataResult result1 = new DataResult();
+           DataOperations operation = new DataOperations();
+           result1.result = DataSource;
+           result1.count = DataSource.AsQueryable().Count();
+           if (value.Skip > 0)
+               result1.result = operation.PerformSkip(result1.result, value.Skip);
+           if (value.Take > 0)
+               result1.result = operation.PerformTake(result1.result, value.Take);
+           return Json(result1, JsonRequestBehavior.AllowGet);
+       }
+     public class DataResult
+      {
+        public IEnumerable result { get; set; }
+        public int count { get; set; }
+    }
+         
+{% endhighlight  %}
+
+Please refer to the below screenshot.
+
+![](Editing_images/editing_img6.png)
+
+Using `DataOperations` helper class you can perform Kanban action at server side. The in-built methods that we have provided in the DataOperations class are listed below.
+
+1.	PerformTake
+2.	PerformSelect
+3.	Execute
+
+For more information about the Server-Side operation you can refer the below link.
+
+[`Persisting Data in Server`](https://help.syncfusion.com/js/kanban/editing#persisting-data-in-server) 
 
 ### WebAPI
 
