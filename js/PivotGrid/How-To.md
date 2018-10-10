@@ -205,6 +205,85 @@ The [`setJSONRecords`](/api/js/ejpivotgrid#methods:setJSONRecords) method is use
 
 {% endhighlight %}
 
+### Rendering the widget with pre-defined JSON records
+
+The [`renderControlFromJSON`](/api/js/ejpivotgrid#methods:rendercontrolfromjson) method is used to render the **PivotGrid** widget with the pre-defined JSON records available at that instant.
+
+{% highlight html %}
+
+<div id="PivotGrid1"></div>
+
+<script>
+    $("#PivotGrid1").ejPivotGrid();
+    var pivotGridObj = $("#PivotGrid1").data("ejPivotGrid");
+    pivotGridObj.renderControlFromJSON({ pivotGridObj.getJSONRecords() });
+</script>
+
+{% endhighlight %}
+
+### Getting the current OLAP report
+You can get the current OLAP report along with axis information by [`getOlapReport`](/api/js/ejpivotgrid#methods:getolapreport) method.
+
+{% highlight html %}
+
+<div id="PivotGrid1"></div>
+
+<script>
+    $("#PivotGrid1").ejPivotGrid();
+    var pivotGridObj = $("#PivotGrid1").data("ejPivotGrid");
+    var report = pivotGridObj.getOlapReport();
+</script>
+
+{% endhighlight %}
+
+### Setting the OLAP report
+You can set the OLAP report along with axis information by the [`setOlapReport`](/api/js/ejpivotgrid#methods:setolapreport) method.
+
+{% highlight html %}
+
+<div id="PivotGrid1"></div>
+
+<script>
+    $("#PivotGrid1").ejPivotGrid();
+    var pivotGridObj = $("#PivotGrid1").data("ejPivotGrid");
+    var report = pivotGridObj.setOlapReport(olapReportObj);
+</script>
+
+{% endhighlight %}
+
+### Loading the report
+You can load the specified report from the database/local storage by [`loadReport`](/api/js/ejpivotgrid#methods:loadreport) method.
+
+{% highlight html %}
+
+<div id="PivotGrid1"></div>
+
+<script>
+    $("#PivotGrid1").ejPivotGrid();
+    var pivotGridObj = $("#PivotGrid1").data("ejPivotGrid");
+    var storageOption = "local"; //it takes the string value "local" for loading a report from local storage and "database" for loading from database.
+    var url = "";//it takes the service method url for loading report from database. For local it is not required.
+    pivotGridObj.loadReport("reportName", storageOption, url);
+</script>
+
+{% endhighlight %}
+
+### Explicit asynchronous post
+
+The [`doPostBack`](/api/js/ejpivotgrid#methods:dopostback) method is used to perform an asynchronous HTTP (AJAX) post operation.
+
+{% highlight html %}
+
+<div id="PivotGrid1"></div>
+
+<script>
+    $("#PivotGrid1").ejPivotGrid();
+   var pivotGridObj = $("#PivotGrid1").data("ejPivotGrid");
+    pivotGridObj.doPostBack("/PivotService/Initialize", { "key", "Hello World" });
+</script>
+
+{% endhighlight %}
+
 
 ## Events
 
@@ -353,6 +432,79 @@ $("#PivotGrid1").ejPivotGrid({
 {% endhighlight %}
 
 
+### Triggering event on successful completion of AJAX request
+
+The [`renderSuccess`](/api/js/ejpivotgrid#events:rendersuccess) event is triggered when the AJAX request returns successfully at the client-side.
+
+{% highlight javascript %}
+
+    $("#PivotGrid1").ejPivotGrid({
+
+            //render success event
+            renderSuccess: function(args) {
+
+        },
+
+            //...
+    });
+
+{% endhighlight %}
+
+### Triggering event after completing the controls rendering
+
+The [`renderComplete`](/api/js/ejpivotgrid#events:rendercomplete) event is triggered after PivotClient gets completely rendered.
+
+{% highlight javascript %}
+
+    $("#PivotGrid1").ejPivotGrid({
+
+            //render complete event
+            renderComplete: function(args) {
+
+            },
+
+            //...
+        });
+
+{% endhighlight %}
+
+### Triggering event on failure of AJAX request
+
+The [`renderFailure`](/api/js/ejpivotgrid#events:renderfailure) event is triggered when any error occurred during the AJAX request.
+
+{% highlight javascript %}
+
+    $("#PivotGrid1").ejPivotGrid({
+
+            //render complete event
+            renderFailure: function(args) {
+
+        },
+
+            //...
+    });
+
+{% endhighlight %}
+
+### Triggering event while loading report
+
+The [`loadReport`](/api/js/ejpivotgrid#events:loadReport) event is triggered while loading report from database.
+
+{% highlight javascript %}
+
+    $("#PivotGrid1").ejPivotGrid({
+
+            //load report event
+            loadReport: function(args) {
+
+        },
+
+            //...
+    });
+
+{% endhighlight %}
+
+
 ## Members
 
 ### Getting Raw items by triggering cell double click event
@@ -371,6 +523,23 @@ Cell double click on pivot grid allows you to get the raw items of cell which is
 
             //...
         });
+
+{% endhighlight %}
+
+### Setting custom theme
+You can render the PivotClient with any one of the built-in themes by using the [`cssClass`](/api/js/ejpivotgrid#members:cssclass)property.
+
+{% highlight html %}
+
+    <script type="text/javascript">
+        $(function() {
+            $("#PivotGrid1").ejPivotGrid({
+              cssClass: "gradient-lime"
+            });
+
+        });
+
+    </script>
 
 {% endhighlight %}
 
@@ -449,7 +618,7 @@ $("#PivotGrid1").ejPivotGrid({
 
 {% endhighlight %}
 
-![](How-To_images/jsonRendering.png)
+![JSON rendering in JavaScript pivot grid control](How-To_images/jsonRendering.png)
 
 ### Connect the Field List with PivotGrid using its ID
 You can connect PivotSchemaDesigner with specified ID to the PivotGrid control. This connection can be enabled by the [`pivotTableFieldListID`](/api/js/ejpivotgrid#members:pivottablefieldlistid) property. The
@@ -509,7 +678,7 @@ To improve user action, the Context Menu option in PivotGrid allows you to enabl
 
 {% endhighlight %}
 
-![](How-To_images/contextMenu.png)
+![Context menu in JavaScript pivot grid control](How-To_images/contextMenu.png)
 
 The following are the available features in Context Menu.
 
@@ -528,36 +697,36 @@ The following are the available customizations in Context Menu.
 
 * `Summary Customization` - Allows you to customize the row/column totals through dialog.
 
-![](How-To_images/summaryCustomization.png)
+![Summary customization in context menu of JavaScript pivot grid control](How-To_images/summaryCustomization.png)
 
 * `Conditional Formatting` - Allows you to format a specific set of cells based on the condition by the conditional dialog.
 * `Calculated Field` - Supports to insert a new calculated field based on the existing pivot fields through the calculated field dialog.
 * `Number Formatting` - Allows you to specify the required number format that should be used in values of the PivotGrid by setting the `format` through Formatting dialog.
 
-![](How-To_images/numberFormatting.png)
+![Number formatting in context menu of JavaScript pivot grid control](How-To_images/numberFormatting.png)
 
 * `Summary Types` - Allow you to specify the required [`layout`](/api/js/ejpivotgrid#members:layout) that should be used in summary cells of the PivotGrid through Summary Types dialog.
 
-![](How-To_images/summaryTypes.png)
+![Summary Types in context menu of JavaScript pivot grid control](How-To_images/summaryTypes.png)
 
 
 The following are the available features through sub context menu.
 
 * `Layouts` - Allows you to specify the required [`layout`](/api/js/ejpivotgrid#members:layout) through sub menus.
 
-![](How-To_images/layouts.png)
+![Layouts in context menu of JavaScript pivot grid control](How-To_images/layouts.png)
 
 * `Hyper Link` - Allows you to enable/disable hyperlink for row header, column header, value, and summary cells.
 
-![](How-To_images/hyperlink.png)
+![Hyperlink types in context menu of JavaScript pivot grid control](How-To_images/hyperlink.png)
 
 * `Exporting` - Allows you to export PivotGrid in a desired format. You have to mention the export settings through [`beforeExport`](/api/js/ejpivotgrid#events:beforeExport) event.
 
-![](How-To_images/exporting.png)
+![Exporting in context menu of JavaScript pivot grid control ](How-To_images/exporting.png)
 
 * `Frozen Headers` - Allows you to freeze the PivotGrid in a desired dimension row/column.
 
-![](How-To_images/frozenHeaders.png)
+![Freeze headers in context menu of JavaScript pivot grid control](How-To_images/frozenHeaders.png)
 
 
 ## Setting Custom Name to Service Methods
@@ -796,6 +965,18 @@ $("#PivotSchemaDesigner1").ejPivotSchemaDesigner({
 
 {% endhighlight %}
 
+### Triggering event while dragging the field
+
+The [`dragMove`](/api/js/ejpivotschemadesigner#events:dragmove) event is triggered when a field in the pivot schema designer is started to drag.
+
+{% highlight javascript %}
+
+$("#PivotSchemaDesigner1").$("#PivotSchemaDesigner1")  ({
+        // drag move event
+        dragMove: function (args) {}
+});
+
+{% endhighlight %}
 
 ## Members
 
@@ -815,10 +996,21 @@ The [`locale`](/api/js/ejpivotschemadesigner#members:locale) property is used to
 
 {% endhighlight %}
 
+### Setting custom theme
+You can render the pivot schema designer with one of the built-in themes using the [`cssClass`](/api/js/ejpivotschemadesigner#members:cssclass) property.
 
+{% highlight html %}
 
+    <script type="text/javascript">
+        $(function() {
+            $("#PivotSchemaDesigner1").ejPivotSchemaDesigner ({
+              cssClass: "gradient-lime"
+            });
 
+        });
+    </script>
 
+{% endhighlight %}
 
 
 

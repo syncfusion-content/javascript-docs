@@ -85,6 +85,85 @@ The [`setJSONRecords`](/api/js/ejpivottreemap#methods:setjsonrecords) method is 
 
 {% endhighlight %}
 
+### Rendering the widget with predefined JSON records
+
+The [`renderTreeMapFromJSON`](/api/js/ejpivottreemap#methods:rendertreemapfromjson) method is used to render the **PivotTreeMap** component with JSON records available at that instant.
+
+{% highlight html %}
+
+<div id="PivotTreeMap1"></div>
+
+<script>
+    $("#ejPivotTreeMap1").ejPivotTreeMap();
+    var treeMapObj = $("#PivotTreeMap1").data("ejPivotTreeMap");
+    treeMapObj.renderTreeMapFromJSON(treeMapObj.getJSONRecords());
+</script>
+
+{% endhighlight %}
+
+### Getting the current OLAP report
+You can get the current OLAP report along with axis information using the [`getOlapReport`](/api/js/ejpivottreemap#methods:getolapreport) method.
+
+{% highlight html %}
+
+<div id="PivotTreeMap1"></div>
+
+<script>
+    $("#ejPivotTreeMap1").ejPivotTreeMap();
+    var treeMapObj = $("#PivotTreeMap1").data("ejPivotTreeMap");
+    var report = treeMapObj.getOlapReport();
+
+</script>
+
+{% endhighlight %}
+
+### Setting the OLAP report
+You can set the OLAP report along with axis information using the [`setOlapReport`](/api/js/ejpivottreemap#methods:setolapreport) method.
+
+{% highlight html %}
+
+<div id="PivotTreeMap1"></div>
+
+<script>
+    $("#ejPivotTreeMap1").ejPivotTreeMap();
+    var treeMapObj = $("#PivotTreeMap1").data("ejPivotTreeMap");
+    var report = treeMapObj.setOlapReport(olapReportObj);
+</script>
+
+{% endhighlight %}
+
+### Explicit asynchronous post
+
+The [`doPostBack`](/api/js/ejpivottreemap#methods:dopostback) method is used to perform an asynchronous HTTP (AJAX) post operation.
+
+{% highlight html %}
+
+<div id="PivotTreeMap1"></div>
+
+<script>
+    $("#PivotTreeMap1").ejPivotTreeMap();
+    var treeMapObj = $("#PivotTreeMap1").data("ejPivotTreeMap");
+    treeMapObj.doPostBack("/PivotService/Initialize", { "key", "Hello World" });
+</script>
+
+{% endhighlight %}
+
+### Rendering the widget using JSON records and report
+
+The [`renderControlSuccess`](/api/js/ejpivottreemap#methods:rendercontrolsuccess) method is used to receive the JSON records and report from the service, which is utilized for rendering the widget.
+
+{% highlight html %}
+
+<div id="PivotTreeMap1"></div>
+
+<script>
+    $("#PivotTreeMap1").ejPivotTreeMap();
+    var treeMapObj = $("#PivotTreeMap1").data("ejPivotTreeMap");
+    treeMapObj.renderControlSuccess({ "OlapReport": this.getOlapReport(), "JsonRecords": this.getJSONRecords() });
+</script>
+
+{% endhighlight %}
+
 ### Invoking event before pivot engine population
 The [`beforePivotEnginePopulate`](/api/js/ejpivottreemap#events:beforepivotenginepopulate) event is triggered before populating the pivot engine from the data source.
 
@@ -170,6 +249,60 @@ The [`load`](/api/js/ejpivottreemap#events:load) event is triggered when the piv
 
 {% endhighlight %}
 
+### Triggering event on successful completion of AJAX request
+
+The [`renderSuccess`](/api/js/ejpivottreemap#events:rendersuccess) event is triggered when the AJAX request returns successfully at the client-side.
+
+{% highlight javascript %}
+
+$("#PivotTreeMap1").ejPivotTreeMap({
+
+            //render success event
+            renderSuccess: function(args) {
+
+            },
+
+            //...
+        });
+
+{% endhighlight %}
+
+### Triggering event after the control rendered
+
+The [`renderComplete`](/api/js/ejpivottreemap#events:rendercomplete) event is triggered after the pivot tree map is rendered completely.
+
+{% highlight javascript %}
+
+$("#PivotTreeMap1").ejPivotTreeMap({
+
+            //render complete event
+            renderComplete: function(args) {
+
+            },
+
+            //...
+        });
+
+{% endhighlight %}
+
+### Triggering event on failure of AJAX request
+
+The [`renderFailure`](/api/js/ejpivottreemap#events:renderfailure) event is triggered when any error occurred during the AJAX request.
+
+{% highlight javascript %}
+
+$("#PivotTreeMap1").ejPivotTreeMap({
+
+            //render complete event
+            renderFailure: function(args) {
+
+            },
+
+            //...
+        });
+
+{% endhighlight %}
+
 
 ## Members
 
@@ -204,6 +337,23 @@ Allows you to enable the “withCredentials” property in the XMLHttpRequest ob
 
     });
 </script>
+
+{% endhighlight %}
+
+### Setting custom theme
+You can render the pivot tree map with one of the available built-in themes by using the [`cssClass`](/api/js/ejpivottreemap#members:cssclass) property.
+
+{% highlight html %}
+
+    <script type="text/javascript">
+        $(function() {
+            $("#PivotTreeMap1").ejPivotTreeMap({
+              cssClass: "gradient-lime"
+            });
+
+        });
+
+    </script>
 
 {% endhighlight %}
 
