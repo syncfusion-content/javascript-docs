@@ -117,6 +117,84 @@ The [`setJSONRecords`](/api/js/ejpivotchart#methods:setjsonrecords) method is us
 
 {% endhighlight %}
 
+### Rendering the widget with pre-defined JSON records
+
+The [`renderChartFromJSON`](/api/js/ejpivotchart#methods:renderchartfromjson) method is used to render the **PivotChart** widget with predefined JSON records available at that instant.
+
+{% highlight html %}
+
+<div id="PivotChart1"></div>
+
+<script>
+    $("#PivotChart1").ejPivotChart();
+    var pivotChartObj = $("#PivotChart1").data("ejPivotChart");
+    pivotChartObj.renderControlFromJSON({ pivotChartObj.getJSONRecords() });
+</script>
+
+{% endhighlight %}
+
+### Getting the current OLAP report
+You can get the current OLAP report along with axis information using the [`getOlapReport`](/api/js/ejpivotchart#methods:getolapreport) method.
+
+{% highlight html %}
+
+<div id="PivotChart1"></div>
+
+<script>
+    $("#PivotChart1").ejPivotChart();
+    var pivotChartObj = $("#PivotChart1").data("ejPivotChart");
+    var report = pivotChartObj.getOlapReport();
+</script>
+
+{% endhighlight %}
+
+### Setting the OLAP report
+You can set the OLAP report along with axis information using the [`setOlapReport`](/api/js/ejpivotchart#methods:setolapreport) method.
+
+{% highlight html %}
+
+<div id="PivotChart1"></div>
+
+<script>
+    $("#PivotChart1").ejPivotChart();
+    var pivotChartObj = $("#PivotChart1").data("ejPivotChart");
+    var report = pivotChartObj.setOlapReport(olapReportObj);
+</script>
+
+{% endhighlight %}
+
+### Explicit asynchronous post
+
+The [`doPostBack`](/api/js/ejpivotchart#methods:dopostback) method is used to perform an asynchronous HTTP (AJAX) post operation.
+
+{% highlight html %}
+
+<div id="PivotChart1"></div>
+
+<script>
+    $("#PivotChart1").ejPivotChart();
+    var pivotChartObj = $("#PivotChart1").data("ejPivotChart");
+    pivotChartObj.doPostBack("/PivotService/Initialize", { "key", "Hello World" });
+</script>
+
+{% endhighlight %}
+
+### Rendering the widget using JSON records and report returned from the service
+
+The [`renderControlSuccess`](/api/js/ejpivotchart#methods:rendercontrolsuccess) method is used to receive the JSON records and report from the service, which is utilized for rendering the widget.
+
+{% highlight html %}
+
+<div id="PivotChart1"></div>
+
+<script>
+    $("#PivotChart1").ejPivotChart();
+    var pivotChartObj = $("#PivotChart1").data("ejPivotChart");
+    pivotChartObj.renderControlSuccess({ "OlapReport": pivotChartObj.getOlapReport(), "JsonRecords": pivotChartObj.getJSONRecords() });
+</script>
+
+{% endhighlight %}
+
 
 ## Events
 
@@ -203,6 +281,60 @@ $("#PivotChart1").ejPivotChart({
 
 {% endhighlight %}
 
+### Triggering event on successful completion of AJAX request
+
+The [`renderSuccess`](/api/js/ejpivotchart#events:rendersuccess) event is triggered when the AJAX request returns successfully at the client-side.
+
+{% highlight javascript %}
+
+    $("#PivotChart1").ejPivotChart({
+
+            //render success event
+            renderSuccess: function(args) {
+
+    },
+
+            //...
+});
+
+{% endhighlight %}
+
+### Triggering event after the control rendered
+
+The [`renderComplete`](/api/js/ejpivotchart#events:rendercomplete) event is triggered after the pivot client is rendered completely.
+
+{% highlight javascript %}
+
+    $("#PivotChart1").ejPivotChart({
+
+            //render complete event
+            renderComplete: function(args) {
+
+        },
+
+            //...
+    });
+
+{% endhighlight %}
+
+### Triggering event on failure of AJAX request
+
+The [`renderFailure`](/api/js/ejpivotchart#events:renderfailure) event is triggered when any error occurred during the AJAX request.
+
+{% highlight javascript %}
+
+    $("#PivotChart1").ejPivotChart({
+
+            //render failure event
+            renderFailure: function(args) {
+
+        },
+
+            //...
+    });
+
+{% endhighlight %}
+
 
 ## Members
 
@@ -245,7 +377,7 @@ To improve user action, the context menu option in the pivot chart allows you to
 
 {% endhighlight %}
 
-![](How-To_images/contextMenu.png)
+![Context menu in JavaScript pivot chart widget](How-To_images/contextMenu.png)
 
 The following are the available features in the context menu:
 
@@ -253,30 +385,46 @@ The following are the available features in the context menu:
 * [`Legend`](/api/js/ejpivotchart#members:legend): It allows you to show/hide the legend in the pivot chart component.
 * [`Zooming`](/api/js/ejchart#members:zooming-enable): It allows you to zoom the chart by using the rubber band selection.
 
-![](How-To_images/zooming.png)
+![Zooming in context menu of JavaScript pivot chart widget](How-To_images/zooming.png)
 
 * [`Chart types`](/api/js/ejpivotchart#members:commonseriesoptions-type): You can choose different 2D charts by UI operations.
 
-![](How-To_images/chartTypes.png)
+![Chart types in context menu of JavaScript pivot chart widget](How-To_images/chartTypes.png)
 
 * [`3D Charts`](/api/js/ejpivotchart#members:enable3d): You can choose different 3D chart types. The **"Disable 3D Charts"** option is available to disable the 3D chart, and it is rendered as the respective 2D chart.
 
-![](How-To_images/3DCharts.png)
+![Chart types with three dimensional in context menu of JavaScript pivot chart widget](How-To_images/TDCharts.png)
 
 * `Exporting`: You can export the chart in different formats given in the following image. You have to mention the export settings through the[`beforeExport`](/api/js/ejpivotchart#events:beforeexport) event.
 
-![](How-To_images/exporting.png)
+![Exporting in context menu of JavaScript pivot chart control](How-To_images/exporting.png)
 
 * `Interactions`: Different types of interactions are available in the context menu to view the datum in the chart.
 
 For more on this topic, [click here](https://help.syncfusion.com/js/pivotchart/user-interactions)
 
-![](How-To_images/interactions.png)
+![UI interaction in context menu of JavaScript pivot chart control ](How-To_images/interactions.png)
 
 * [`Smart Labels`](/api/js/ejchart#members:primaryxaxis-labelintersectaction): You can customize the labels in a different view by giving the options mentioned in the following image:
 
-![](How-To_images/smartLabels.png)
+![Smart labels in context menu of JavaScript pivot chart widget](How-To_images/smartLabels.png)
 
+### Setting custom theme
+You can render the pivot chart with one of the available built-in themes by using the [`cssClass`](/api/js/ejpivotchart#members:cssclass) property.
+
+{% highlight html %}
+
+    <script type="text/javascript">
+        $(function() {
+            $("#PivotChart1").ejPivotChart({
+              cssClass: "gradient-lime"
+            });
+
+        });
+
+    </script>
+
+{% endhighlight %}
 
 ## Setting custom name to service methods
 The [`serviceMethodSettings`](/api/js/ejpivotchart#members:servicemethodsettings) allows you to set the custom name for methods in the WebAPI/WCF, communicated during the AJAX post. The following table will explain the service methods:
