@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Dependent scripts and .NET libraries
+title: Dependent scripts and .NET libraries for Essential JS widgets
 description: Common scripts and .NET libraries for Syncfusion components are listed.
 platform: js
 control: Introduction
