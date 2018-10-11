@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Prioritization of cards
-description: Prioritization of cards
+description: Priority property is used to set re-ordering for Kanban cards position when dropping the card in Kanban board.
 documentation: ug
 platform: js
 keywords: card priority
@@ -52,4 +52,4 @@ The following output is displayed as a result of the above code example.
 
 N> For Drag and Drop event handling, please refer this [API](https://help.syncfusion.com/api/js/ejkanban#events:carddrag).
 
-N> If you are not set [`priority`](https://help.syncfusion.com/api/js/ejkanban#members:fields-priority) property in the fields of Kanban, cards are dropped based on specifying JSON data orders in a particular column.  If you are set [`priority`](https://help.syncfusion.com/api/js/ejkanban#members:fields-priority) property, you can drop the card at a particular position based on previous card `priority` value and also dynamically changed on next cards `priority` values.
+N> If you are not set [`priority`](https://help.syncfusion.com/api/js/ejkanban#members:fields-priority) property in the fields of Kanban, cards are dropped based on specifying JSON data orders in a particular column.  If you set [`priority`](https://help.syncfusion.com/api/js/ejkanban#members:fields-priority) property, you can drop the card at a particular position based on previous card `priority` value and also dynamically changed on next cards `priority` values.
