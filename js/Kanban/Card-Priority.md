@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Prioritization of cards
-description: Priority property is used to set re-ordering for Kanban cards position when dropping the card in Kanban board.
+description: The priority property is used to reorder the cards position in any desired place by dropping the card in Kanban board.
 documentation: ug
 platform: js
 keywords: card priority
