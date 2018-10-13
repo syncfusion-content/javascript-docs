@@ -48,7 +48,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Card_Priority_images/card_priority_img1.png)
+![Card Priority](Card_Priority_images/card_priority_img1.png)
 
 N> For Drag and Drop event handling, please refer this [API](https://help.syncfusion.com/api/js/ejkanban#events:carddrag).
 

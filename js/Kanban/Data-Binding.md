@@ -60,7 +60,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Data_Binding_images/Data_Bind_img1.png)
+![local data](Data_Binding_images/Data_Bind_img1.png)
 
 ## Remote Data
 
@@ -104,7 +104,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Data_Binding_images/Data_Bind_img2.png)
+![OData](Data_Binding_images/Data_Bind_img2.png)
 
 ### URL Adaptor
 
@@ -177,7 +177,7 @@ The following code example describes the above behavior.
 
 Please refer to the below screenshot.
 
-![](Editing_images/editing_img6.png)
+![Url Adaptor](Data_Binding_images/Data_Bind_img4.png)
 
 Using `DataOperations` helper class you can perform Kanban action at server side. The in-built methods that we have provided in the DataOperations class are listed below.
 
@@ -267,4 +267,4 @@ http://www.asp.net/web-api/overview/getting-started-with-aspnet-web-api/tutorial
 
 The following output is displayed as a result of the above code example.
 
-![](Data_Binding_images/Data_Bind_img3.png)
+![Web Api](Data_Binding_images/Data_Bind_img3.png)

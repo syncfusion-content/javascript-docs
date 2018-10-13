@@ -101,11 +101,11 @@ The following code example describes the above behavior.
 
 The following output is displayed before dropping Kanban cards.
 
-![](Drag_and_Drop_images/drag_and_drop_img2.png)
+![External before drop](Drag_and_Drop_images/drag_and_drop_img2.png)
 
 The following output is displayed after dropping Kanban cards.
 
-![](Drag_and_Drop_images/drag_and_drop_img3.png)
+![External after drop](Drag_and_Drop_images/drag_and_drop_img3.png)
 
 ### See Also
 
@@ -185,8 +185,8 @@ The following code example describes the above behavior.
 
 The following output is displayed before dropping the cards on Grid.
 
-![](Drag_and_Drop_images/drag_and_drop_img4.png)
+![External before droping the card](Drag_and_Drop_images/drag_and_drop_img4.png)
 
 The following output is displayed after dropping the cards on Grid.
 
-![](Drag_and_Drop_images/drag_and_drop_img5.png)
+![External after droping the card](Drag_and_Drop_images/drag_and_drop_img5.png)

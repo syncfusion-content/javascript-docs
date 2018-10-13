@@ -207,7 +207,7 @@ The Kanban can be created from a HTML `DIV` element with the HTML `id` attribute
 
 {% endhighlight %}
 
-![](Getting_Started_images/Getting_Started_img1.png)
+![Kanban getting started](Getting_Started_images/Getting_Started_img1.png)
 
 ## Data Binding
 
@@ -244,7 +244,7 @@ The Kanban can be created from a HTML `DIV` element with the HTML `id` attribute
 
 {% endhighlight %}
 
-![](Getting_Started_images/Getting_Started_img2.png)
+![Databinding](Getting_Started_images/Getting_Started_img2.png)
 
 N>  ODataAdaptor is the default adaptor used within DataManager. While binding to other web services, proper [`data adaptor`](https://help.syncfusion.com/js/datamanager/data-adaptors) needs to be set for `adaptor` option of DataManager.
 
@@ -294,7 +294,7 @@ In order to display cards in Kanban control, you need to map the database fields
 
 {% endhighlight %} 
 
-![](Getting_Started_images/Getting_Started_img3.png)
+![Mapping Value](Getting_Started_images/Getting_Started_img3.png)
 
 N>  `fields.primaryKey` field is mandatory for “Drag and Drop” ,”Selection” and “Editing” Features.
 
@@ -339,7 +339,7 @@ N>  `fields.primaryKey` field is mandatory for “Drag and Drop” ,”Selection
 
 {% endhighlight %} 
 
-![](Getting_Started_images/Getting_Started_img4.png)
+![Enable Swimlane](Getting_Started_images/Getting_Started_img4.png)
 
 ## Adding Filters
 
@@ -386,4 +386,4 @@ Filters allows to filter the collection of cards from `dataSource` which meets t
 
 {% endhighlight %} 
 
-![](Getting_Started_images/Getting_Started_img5.png)
+![Filters](Getting_Started_images/Getting_Started_img5.png)
