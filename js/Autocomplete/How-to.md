@@ -98,7 +98,7 @@ Refer to the following code sample.
             $('#selectCar').ejAutocomplete({
                 dataSource: dataManger,
                 fields: { key: "Id", text: "Name" },
-	         value: "Two"
+    	        value: "Two"
             });
         });
 </script>
@@ -107,17 +107,15 @@ Refer to the following code sample.
 
 {% highlight c# %}
 
-public ActionResult GetOutletsForAutocomplete(DataManager dm)
+public ActionResult GetOutletsForAutocomplete(DataManager value)
         {
             var models = GetTestData();
 
             IEnumerable Data = GetTestData();
             Syncfusion.JavaScript.DataSources.DataOperations operation = new Syncfusion.JavaScript.DataSources.DataOperations();
-
-            var data = operation.Execute(models, dm);
-            if (dm.Where != null && dm.Where.Count > 0) //Filtering 
+            if (value.Where != null && value.Where.Count > 0) //Filtering 
             {
-                data = operation.PerformWhereFilter(models, dm.Where, dm.Where[0].Operator);
+                data = operation.PerformWhereFilter(models, value.Where, value.Where[0].Operator);
             }
             return Json(data, JsonRequestBehavior.AllowGet);
         }
@@ -222,17 +220,17 @@ Refer to the following code snippet.
 
 {% highlight c# %}
 
-      public ActionResult GetOutletsForAutocomplete(DataManager dm)
+      public ActionResult GetOutletsForAutocomplete(DataManager value)
         {
             var models = GetTestData();
 
             IEnumerable Data = GetTestData();
             Syncfusion.JavaScript.DataSources.DataOperations operation = new Syncfusion.JavaScript.DataSources.DataOperations();
 
-            var data = operation.Execute(models, dm);
-            if (dm.Where != null && dm.Where.Count > 0) //Filtering 
+            var data = operation.Execute(models, value);
+            if (value.Where != null && value.Where.Count > 0) //Filtering 
             {
-                data = operation.PerformWhereFilter(models, dm.Where, dm.Where[0].Operator);
+                data = operation.PerformWhereFilter(models, value.Where, value.Where[0].Operator);
             }
             return Json(data, JsonRequestBehavior.AllowGet);
         }
