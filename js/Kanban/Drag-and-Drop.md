@@ -101,11 +101,11 @@ The following code example describes the above behavior.
 
 The following output is displayed before dropping Kanban cards.
 
-![](Drag_and_Drop_images/drag_and_drop_img2.png)
+![External before drop](Drag_and_Drop_images/drag_and_drop_img2.png)
 
 The following output is displayed after dropping Kanban cards.
 
-![](Drag_and_Drop_images/drag_and_drop_img3.png)
+![External after drop](Drag_and_Drop_images/drag_and_drop_img3.png)
 
 ### See Also
 
@@ -185,52 +185,8 @@ The following code example describes the above behavior.
 
 The following output is displayed before dropping the cards on Grid.
 
-![](Drag_and_Drop_images/drag_and_drop_img4.png)
+![External before droping the card](Drag_and_Drop_images/drag_and_drop_img4.png)
 
 The following output is displayed after dropping the cards on Grid.
 
-![](Drag_and_Drop_images/drag_and_drop_img5.png)
-
-## Prioritization of cards
-
-Prioritizing cards is easy with drag-and-drop re-ordering that helps you to categorize most important work at the top.Cards can be categorized with priority by mapping specific database field into [`priority`](https://help.syncfusion.com/api/js/ejkanban#members:fields-priority) property.
-
-`RankId` defined in the dataSource which is consist priority of cards. The `RankId` will be changed while card ordering changes through `Drag and Drop` and `Editing`.
-
-The following code example describes the above behavior.
-
-{% highlight html %}
-
-    <div id='Kanban'></div>
-
-{% endhighlight %}
-
-{% highlight javascript %}
-
-    $(function () {
-        var data = ej.DataManager(window.kanbanData).executeLocal(ej.Query().take(30));
-        
-        $("#Kanban").ejKanban(
-            {
-                dataSource: data,
-                columns: [
-                    { headerText: "Backlog", key: "Open" },
-                    { headerText: "In Progress", key: "InProgress" },    
-                    { headerText: "Done", key: "Close" }
-                ],
-                keyField: "Status",
-                fields: {
-                    content: "Summary",
-                    primaryKey: "Id",
-                    priority: "RankId"
-                }
-        });
-    });
-
-{% endhighlight %}
-
-The following output is displayed as a result of the above code example.
-
-![](Drag_and_Drop_images/drag_and_drop_img1.png)
-
-N> For Drag and Drop event handling , please refer this [API](https://help.syncfusion.com/api/js/ejkanban#events:carddrag).
+![External after droping the card](Drag_and_Drop_images/drag_and_drop_img5.png)
