@@ -30,7 +30,7 @@ $("#diagram").ejDiagram({
 
 {% endhighlight %}
 
-![](/js/Diagram/Rulers_images/Rulers_images1.png)
+![](/js/Diagram/Ruler_images/Rulers_images1.png)
 
 ## Customizing the Ruler
 
@@ -93,4 +93,4 @@ function arrangeTick(args) {
 
 {% endhighlight %}
 
-![](/js/Diagram/Rulers_images/Rulers_images2.png)
+![](/js/Diagram/Ruler_images/Rulers_images2.png)
