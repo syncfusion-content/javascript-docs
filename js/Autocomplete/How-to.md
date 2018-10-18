@@ -79,7 +79,7 @@ The following screenshot illustrates the previous hidden input state of code.
 
 ![howto](how-to_images/howto3.png)
 
-### remote data
+### Remote data
 
 The remote data also allows you to set the default value into autocomplete using [`value`](https://help.syncfusion.com/api/js/ejautocomplete#members:value) property. 
 
