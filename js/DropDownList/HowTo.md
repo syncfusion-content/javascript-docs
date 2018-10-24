@@ -912,3 +912,48 @@ In the DropDownList control, the `Display` property for the outer wrapper elemen
 {% endhighlight %}  
 
 [Sample](http://jsplayground.syncfusion.com/gxmdr42a)
+
+## Add context menu for DropDownList items
+
+ContextMenu can be added for DropDownList items by setting the class name of  DropDownList popup container as contextMenuTarget. Please refer to the following code.
+
+{% highlight javascript %}
+      
+       <div class="ctrllabel">Select a bike</div>
+            <input type="text" id="bikeList" />
+               <ul id="contextMenu">
+                    <li><a>Add To Cart</a></li>
+                    <li><a>Buy</a></li>
+                    <li><a>View</a></li>
+                 </ul>
+             
+    <script type="text/javascript">
+        var target;
+        $(function () {
+            // declaration
+            BikeList = [
+                 { id: "bk1", text: "Apache RTR" }, { id: "bk2", text: "CBR 150-R" }, { id: "bk3", text: "CBZ Xtreme" },
+                 { id: "bk4", text: "Discover" }, { id: "bk5", text: "Dazzler" }, { id: "bk6", text: "Flame" },
+                 { id: "bk7", text: "FZ-S" }, { id: "bk8", text: "Pulsar" }
+            ];            
+            $('#bikeList').ejDropDownList({
+                dataSource: BikeList,
+                fields: { id: "id", text: "text", value: "text" }
+            });
+          $("#contextMenu").ejMenu(
+							{
+							    menuType: ej.MenuType.ContextMenu,
+							    openOnClick: false,
+							    contextMenuTarget: ".e-content"
+							});
+         
+        });
+      
+
+    </script>
+ 
+ {% endhighlight %}
+
+[Sample](https://jsplayground.syncfusion.com/si4mex5s)
+
+![](HowTo_images/contextmenu.png) 
