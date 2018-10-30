@@ -79,5 +79,4 @@ The previous example is modified as below to handle the success and failure even
 
 
 
-N>The same way we can render the iframe and image content for the Dialog widget by specifying the [contentType](https://help.syncfusion.com/api/js/ejdialog#members:contenttype) as “iframe” and “image” respectively and also by specifying the proper location in the [contentUrl](https://help.syncfusion.com/api/js/ejdialog#members:contenturl) property.
-
+N>The same way we can render the iframe and image content for the Dialog widget by specifying the [contentType](https://help.syncfusion.com/api/js/ejdialog#members:contenttype) as “iframe” and “image” respectively and also by specifying the proper location in the [contentUrl](https://help.syncfusion.com/api/js/ejdialog#members:contenturl) property.  If you wish to dynamically change the dialog content, you can set the [`contentUrl`](https://help.syncfusion.com/api/js/ejdialog#members:contenturl) and the [`contentType`](https://help.syncfusion.com/api/js/ejdialog#members:contenttype) property through setModel on any action.
