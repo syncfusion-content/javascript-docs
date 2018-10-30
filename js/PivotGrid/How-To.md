@@ -926,6 +926,38 @@ The [`refreshControl`](/api/js/ejpivotschemadesigner#methods:refreshControl) met
 
 {% endhighlight %}
 
+### Destroying the object of PivotSchemaDesigner
+
+The [`destroy`](/api/js/ejpivotschemadesigner#methods:destroy) method is used to destroy the **PivotSchemaDesigner** widget associated events that are bound using “this._on” and brings the control to pre-init state.
+
+{% highlight html %}
+
+<div id="PivotSchemaDesigner1"></div>
+
+<script>
+    $("#PivotSchemaDesigner1").ejPivotSchemaDesigner();
+    var schemaObj = $("#PivotSchemaDesigner1").data("ejPivotSchemaDesigner");
+    schemaObj.destroy();
+</script>
+
+{% endhighlight %}
+
+### Explicit asynchronous invoke
+
+The [`doAjaxPost`](/api/js/ejpivotschemadesigner#methods:doajaxpost) method is used to Perform an asynchronous HTTP (AJAX) request.
+
+{% highlight html %}
+
+<div id="PivotSchemaDesigner1"></div>
+
+<script>
+    $("#PivotSchemaDesigner1").ejPivotSchemaDesigner();
+    var schemaObj = $("#PivotSchemaDesigner1").data("ejPivotSchemaDesigner");
+    schemaObj.doAjaxPost("POST", "/PivotService/Initialize", { "key", "Hello World" }, successEvent, null);
+</script>
+
+{% endhighlight %}
+
 
 ## Events
 
@@ -975,6 +1007,24 @@ $("#PivotSchemaDesigner1").$("#PivotSchemaDesigner1")  ({
         // drag move event
         dragMove: function (args) {}
 });
+
+{% endhighlight %}
+
+### Triggering event before the PivotSchemaDesigner loaded
+
+The [`load`](/api/js/ejpivotschemadesigner#events:load) event is triggered when the PivotSchemaDesigner loading is initiated.
+
+{% highlight javascript %}
+
+$("#PivotSchemaDesigner1").ejPivotSchemaDesigner({
+
+            //load event
+            load: function(args) {
+
+            },
+
+            //...
+        });
 
 {% endhighlight %}
 
