@@ -956,4 +956,4 @@ ContextMenu can be added for DropDownList items by setting the class name of  Dr
 
 [Sample](https://jsplayground.syncfusion.com/si4mex5s)
 
-![](HowTo_images/contextmenu.png) 
+![](HowTo_images/contextmenu.PNG) 
