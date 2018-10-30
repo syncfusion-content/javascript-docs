@@ -106,5 +106,5 @@ Required field, `minlength`, maxlength, minWordCount and maxWordCount values val
   
 {% endhighlight %}
 
-![](Working-with-Content_images/Validation.png)
+![validation](Working-with-Content_images/Validation.png)
 
