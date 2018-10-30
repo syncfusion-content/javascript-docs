@@ -294,7 +294,7 @@ The following structure is maintained for JavaScript platform NuGet packages fro
 			Syncfusion.JavaScript<br/>
 		</td>
 		<td>
-			Grid<br/>Data Visualization<br/>Business Intelligence<br/>Layout<br/>Editors<br/>Navigation<br/>Notification<br/>Framework<br/>Data Science<br/>Miscellaneous<br/>Integration<br/>Report Viewer<br/>To know more information about the controls for above categories navigate the below link.<br/>{{'<http://www.syncfusion.com/products/javascript>'| markdownify }} <br/><br/>
+			Grid<br/>Data Visualization<br/>Business Intelligence<br/>Layout<br/>Editors<br/>Navigation<br/>Notification<br/>Framework<br/>Data Science<br/>Miscellaneous<br/>Integration<br/>Report Viewer<br/>To know more information about the controls for above categories navigate the below link.<br/>{{'<http://www.syncfusion.com/javascript-ui-controls>'| markdownify }} <br/><br/>
 		</td>
 		<td>
 			-<br/>

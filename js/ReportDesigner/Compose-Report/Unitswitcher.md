@@ -21,7 +21,7 @@ Web designer supports to switch the report unit type.
     * Millimeters
     * Picas
 
-2. To switch the report's unit type open the **Report Properties** in the property panel.
+2. Open the **Report Properties** in the property panel.
 
     ![](unitswitcher-images/unitswitcher_img1.png)
 
@@ -29,4 +29,4 @@ Web designer supports to switch the report unit type.
 
     ![](unitswitcher-images/unitswitcher_img2.png)
 
-4. Select your desired unit type in the dropdown, now the report's unit type will be switched to the applied unit type.
+4. Select your desired unit type in the dropdown, now the selected unit type will be applied to the report.
