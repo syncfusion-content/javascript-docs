@@ -123,7 +123,7 @@ Bind the [select](https://help.syncfusion.com/api/js/ejdropdownlist#events:selec
 
 The following screenshot will exhibit the select event arguments details,
 
-![](HowTo_images/HowTo_img1.jpeg)
+![disable](HowTo_images/HowTo_img1.jpeg)
 
 ## Append custom HTML in DropDownList popup outside the scroller part?
 
@@ -187,7 +187,7 @@ You can use [headerTemplate](https://help.syncfusion.com/api/js/ejdropdownlist#m
 
 The following screenshot exhibits the output of the above code,
 
-![](HowTo_images/HowTo_img2.jpeg)
+![checkall](HowTo_images/HowTo_img2.jpeg)
 
 ## To Cascade DropDownLists with different field names
 By default cascading is performed based on the Value field, so that it needs to be same with cascaded DropDownList. If you need to cascade 2 DropDownLists with different field names and same values in it, you can achieve it using cascadeQuery and [cascade](https://help.syncfusion.com/api/js/ejdropdownlist#events:cascade "") event. Define the cascade event for the DropDownList from which you need to filter the datasource for the other DropDownList. 
@@ -257,7 +257,7 @@ In the cascade event arguments, modify the cascadeQuery which has the filtering 
 
 {% endhighlight %}
 
-![](HowTo_images/HowTo_img3.jpeg)
+![cascade](HowTo_images/HowTo_img3.jpeg)
 
 ## To reorder the selected items and assign it to the top of popup list
 Consider a DropDownList enabled with Virtual Scrolling, Filter search and Checkbox. This allows you to search through the list items and select multiple items. Selected items will be maintained in the DropDownList textbox but randomly shown in the pop up. 
@@ -559,10 +559,10 @@ Removing an entry from DropdownList is demonstrated in the below given sample.
 The following screenshot exhibits the output of above code:
 
 Before removing an item:
-![](HowTo_images/Image1.JPG)
+![item](HowTo_images/Image1.JPG)
 
 After removing an item:
-![](HowTo_images/Image2.JPG)
+![remove](HowTo_images/Image2.JPG)
 
 ## Select the image rather than the text from the DropDownList when the template concept is used?
 
@@ -647,7 +647,7 @@ Apply the following styles
 
 {% endhighlight %}
 
-![](HowTo_images/customValue.jpg)
+![customValue](HowTo_images/customValue.jpg)
 
 N> This scenarios, will be suits for the single select mode in the DropDownList.
 
@@ -681,7 +681,7 @@ This can be achieved, by adding the attributes directly to the input element if 
    
 {% endhighlight %}
 
- ![](HowTo_images/htmlAttr.png)
+ ![htmlAttr](HowTo_images/htmlAttr.png)
  
 ## Add tooltip on hovering the DropDownList’s items?
  
@@ -866,7 +866,7 @@ Method 1: Setting custom delimiter Character
     
 {% endhighlight %}
 
-![](HowTo_images/Json1.jpg)
+![Delimiters](HowTo_images/Json1.jpg)
 
 Method 2: Using Visual Mode
 
@@ -894,7 +894,7 @@ Method 2: Using Visual Mode
  
  {% endhighlight %}
 
-![](HowTo_images/Json2.jpg)   
+![Visual](HowTo_images/Json2.jpg)   
 
 ## Display the Validation message in the same line as the DropDownList
 
@@ -956,4 +956,4 @@ ContextMenu can be added for DropDownList items by setting the class name of  Dr
 
 [Sample](https://jsplayground.syncfusion.com/si4mex5s)
 
-![](HowTo_images/contextmenu.png) 
+![contextmenu](HowTo_images/contextmenu.jpg) 
