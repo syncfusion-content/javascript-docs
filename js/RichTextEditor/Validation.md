@@ -13,7 +13,7 @@ api: /api/js/ejrte
 
 You can validate the RichTextEditor’s value on form submission by applying [validationRules](https://help.syncfusion.com/api/js/ejrte#members:validationrules) and [validationMessage](https://help.syncfusion.com/api/js/ejrte#members:validationmessage) to the RichTextEditor.
 
-N> [jquery.validate.min](http://cdn.syncfusion.com/js/assets/external/jquery.validate.min.js) script file should be referred for validation, for more details, refer [here](http://jqueryvalidation.org/documentation).
+N> [jquery.validate.min](http://cdn.syncfusion.com/js/assets/external/jquery.validate.min.js) script file should be referred for validation, for more details, refer [here](http://jqueryvalidation.org/documentation).Please refer [here](https://help.syncfusion.com/js/validation) to know more details on the steps for validation. 
 
 ## jQuery Validation Methods
 
@@ -106,5 +106,5 @@ Required field, `minlength`, maxlength, minWordCount and maxWordCount values val
   
 {% endhighlight %}
 
-![](Working-with-Content_images/Validation.png)
+![validation](Working-with-Content_images/Validation.png)
 
