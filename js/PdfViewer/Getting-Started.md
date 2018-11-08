@@ -335,27 +335,6 @@ When the PDF document is unloaded from the PDF viewer control, the documentUnloa
 </div>
 {% endhighlight %}
 
-**Getting the Hyperlink from the PDF document**
-
-When the hyperlinks available in the PDF document is clicked, the hyperlinkClick event will be triggered. The hyperlink URL will be returned in the event argument. You can define the event method using the [hyperlinkClick](https://help.syncfusion.com/api/js/ejpdfviewer#hyperlinkclick "hyperlinkClick Event") property of the control.
-
-{% highlight html %}
-<div>
-    <div id="viewer" style="height: 650px;width: 950px;min-height:404px;" ></div>
-    <script type="text/javascript">
-    $(function () {
-        $("#viewer").ejPdfViewer({
-            serviceUrl: “https://js.syncfusion.com/ejServices/api/PdfViewer”, 
-            hyperlinkClick: “hyperlinkClick”
-        });
-    });
-        function hyperlinkClick (args) {
-            alert("The hyperlink in the PDF document is clicked.");
-        }
-    </script>
-</div>
-{% endhighlight %}
-
 **Notifying the failure of the request in the client**
 
 When the AJAX requests from the client to the API controller is failed, ajaxRequestFailure event will be triggered. You can define the event method using the [ajaxRequestFailure](https://help.syncfusion.com/api/js/ejpdfviewer#ajaxrequestfailure "ajaxRequestFailure Event") property of the control.
@@ -372,6 +351,27 @@ When the AJAX requests from the client to the API controller is failed, ajaxRequ
     });
         function ajaxFailureRequest (args) {
             alert("The AJAX request to the server is failed.");
+        }
+    </script>
+</div>
+{% endhighlight %}
+
+### Getting the Hyperlink from the PDF document
+
+When the hyperlinks available in the PDF document is clicked, the hyperlinkClick event will be triggered. The hyperlink URL will be returned in the event argument. You can define the event method using the [hyperlinkClick](https://help.syncfusion.com/api/js/ejpdfviewer#hyperlinkclick "hyperlinkClick Event") property of the control.
+
+{% highlight html %}
+<div>
+    <div id="viewer" style="height: 650px;width: 950px;min-height:404px;" ></div>
+    <script type="text/javascript">
+    $(function () {
+        $("#viewer").ejPdfViewer({
+            serviceUrl: “https://js.syncfusion.com/ejServices/api/PdfViewer”, 
+            hyperlinkClick: “hyperlinkClick”
+        });
+    });
+        function hyperlinkClick (args) {
+            alert("The hyperlink in the PDF document is clicked.");
         }
     </script>
 </div>
