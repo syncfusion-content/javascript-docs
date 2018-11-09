@@ -17,13 +17,13 @@ This section explains how to create the PDF viewer in your web application using
 
 Create a new project in the Visual Studio by selecting the ASP.NET Empty Web Application template. The following screenshot displays the Project Creation Wizard in Visual Studio 2012.
 
-![](Getting-Started_images/Getting-Started_img1.jpeg)
+![GettingStarted](Getting-Started_images/Getting-Started_img1.jpeg)
 
 **Create HTML Page**
 
 Right-click the project and select New Item option from the ‘Add’ menu to add a HTML page to the application. Name the page as **Default.html** and click OK.
 
-![](Getting-Started_images/Getting-Started_img2.jpeg)
+![GettingStarted](Getting-Started_images/Getting-Started_img2.jpeg)
 
 ### Add References, Scripts, Styles
 
@@ -335,27 +335,6 @@ When the PDF document is unloaded from the PDF viewer control, the documentUnloa
 </div>
 {% endhighlight %}
 
-**Getting the Hyperlink from the PDF document**
-
-When the hyperlinks available in the PDF document is clicked, the hyperlinkClick event will be triggered. The hyperlink URL will be returned in the event argument. You can define the event method using the [hyperlinkClick](https://help.syncfusion.com/api/js/ejpdfviewer#hyperlinkclick "hyperlinkClick Event") property of the control.
-
-{% highlight html %}
-<div>
-    <div id="viewer" style="height: 650px;width: 950px;min-height:404px;" ></div>
-    <script type="text/javascript">
-    $(function () {
-        $("#viewer").ejPdfViewer({
-            serviceUrl: “https://js.syncfusion.com/ejServices/api/PdfViewer”, 
-            hyperlinkClick: “hyperlinkClick”
-        });
-    });
-        function hyperlinkClick (args) {
-            alert("The hyperlink in the PDF document is clicked.");
-        }
-    </script>
-</div>
-{% endhighlight %}
-
 **Notifying the failure of the request in the client**
 
 When the AJAX requests from the client to the API controller is failed, ajaxRequestFailure event will be triggered. You can define the event method using the [ajaxRequestFailure](https://help.syncfusion.com/api/js/ejpdfviewer#ajaxrequestfailure "ajaxRequestFailure Event") property of the control.
@@ -372,6 +351,27 @@ When the AJAX requests from the client to the API controller is failed, ajaxRequ
     });
         function ajaxFailureRequest (args) {
             alert("The AJAX request to the server is failed.");
+        }
+    </script>
+</div>
+{% endhighlight %}
+
+### Getting the Hyperlink from the PDF document
+
+When the hyperlinks available in the PDF document is clicked, the hyperlinkClick event will be triggered. The hyperlink URL will be returned in the event argument. You can define the event method using the [hyperlinkClick](https://help.syncfusion.com/api/js/ejpdfviewer#hyperlinkclick "hyperlinkClick Event") property of the control.
+
+{% highlight html %}
+<div>
+    <div id="viewer" style="height: 650px;width: 950px;min-height:404px;" ></div>
+    <script type="text/javascript">
+    $(function () {
+        $("#viewer").ejPdfViewer({
+            serviceUrl: “https://js.syncfusion.com/ejServices/api/PdfViewer”, 
+            hyperlinkClick: “hyperlinkClick”
+        });
+    });
+        function hyperlinkClick (args) {
+            alert("The hyperlink in the PDF document is clicked.");
         }
     </script>
 </div>
@@ -402,7 +402,7 @@ Add the following code in the <body> tag in the Default.html page. Here, the PDF
 
 The PDF viewer uses Web API services to process the PDF file. Right-Click the Project, select Add and Web API Controller Class from the listed templates. Rename it as **PdfViewerAPIController.cs**.
 
-![](Getting-Started_images/Getting-Started_img3.jpeg)
+![GettingStarted](Getting-Started_images/Getting-Started_img3.jpeg)
 
 N> While adding WebAPI Controller Class, name it with the suffix “Controller” that is mandatory. For example, in the demo the controller is named as “PdfViewerAPIController”.
 
@@ -465,7 +465,7 @@ N> Create a folder named Data in the project location and add the PDF document t
 
 Right-Click the Project, select Add and Global.asax file from the listed templates.
 
-![](Getting-Started_images/Getting-Started_img4.jpeg)
+![GettingStarted](Getting-Started_images/Getting-Started_img4.jpeg)
 
 You can route the Web API in the Application_Start event into Global.asax file as follows.
 
@@ -519,7 +519,7 @@ Run the sample application and you can see the PDF Viewer on the page as display
 
 <http://www.syncfusion.com/downloads/support/directtrac/general/ze/PdfViewer_GettingStarted-67533367>
 
-![](Getting-Started_images/Getting-Started_img5.png)
+![GettingStarted](Getting-Started_images/Getting-Started_img5.png)
 
 **Destroy**
 
