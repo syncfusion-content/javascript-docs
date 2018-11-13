@@ -70,7 +70,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](dataBinding_images/dataBinding_img1.png)
+![Bind local data to Grid.](dataBinding_images/dataBinding_img1.png)
 
 
 N> 1. There is no in-built support to bind the XML data to the grid. But you can achieve this requirement with the help of [custom adaptor](https://help.syncfusion.com/js/datamanager/data-adaptors#custom-adaptor) concept. 
@@ -107,7 +107,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](dataBinding_images/dataBinding_img2.png)
+![Bind remote data to Grid](dataBinding_images/dataBinding_img2.png)
 
 
 #### OData Version 4
@@ -203,7 +203,7 @@ namespace EJGrid.Controllers
 
 The following output is displayed as a result of the above code example.
 
-![](dataBinding_images/dataBinding_img3.png)
+![Bind data from WEBAPI service](dataBinding_images/dataBinding_img3.png)
 
 
 ### Other RESTful web services
@@ -272,7 +272,7 @@ $(function() {
 
 The following output is displayed as a result of the above code example.
 
-![](dataBinding_images/dataBinding_img4.png)
+![Bind data from other restful service](dataBinding_images/dataBinding_img4.png)
 
 
 ### Load At Once
@@ -308,7 +308,7 @@ Please refer to this [link](https://help.syncfusion.com/js/datamanager/adavanced
 
 The following output is displayed as a result of the above code example.
 
-![](dataBinding_images/dataBinding_img5.png)
+![load data at once fro service](dataBinding_images/dataBinding_img5.png)
 
 
 ### Data Caching
@@ -346,7 +346,7 @@ $(function() {
 
 The following output is displayed as a result of the above code example.
 
-![](dataBinding_images/dataBinding_img6.png)
+![Bind data with data caching](dataBinding_images/dataBinding_img6.png)
 
 
 ### Custom request parameters and HTTP Header
@@ -378,8 +378,45 @@ $(function() {
 
 The custom parameter will be passed along with the data request of the grid as follows.
 
-![](dataBinding_images/dataBinding_img7.png)
+![send custom parameter along with request](dataBinding_images/dataBinding_img7.png)
 
+#### Adding custom header to server using datamanager
+
+You can pass any values in the Headers of ejDataManager and retrieve them at the server-side using the Request object of the HttpRequestMessage. This can be added to the headers either in the [`load`](https://help.syncfusion.com/api/js/ejgrid#events:load "load") event of ejGrid or while performing any server-side operations like editing/adding and retrieve them at the server-side as follows.
+
+{% highlight html %}
+ <div id="Grid"></div>
+{% endhighlight %}
+
+{% highlight javascript %}
+$(function() {
+$("#Grid").ejGrid({
+        dataSource: ej.DataManager({ url: "/Home/DataSource", adaptor: new ej.UrlAdaptor() }),
+        allowScrolling: true,
+        allowFiltering: true,
+        allowPaging: true,
+        load: function(args){
+            this.model.dataSource.dataSource.headers = [];//So define them as array
+            this.model.dataSource.dataSource.headers.push({ "field": "OrderID"});//pushing Some JSON Object
+            this.model.dataSource.dataSource.headers.push({ "IsValid": true });//pushing Some JSON Object
+  
+        },
+        columns: [
+  
+                { field: "OrderID" },
+                { field: "ShipCountry" },
+                { field: "CustomerID" },
+                { field: "EmployeeID" },
+                { field: "ShipCity" }
+        ]
+    });
+});
+
+{% endhighlight %}
+
+The custom header will be passed along with the data request of the grid as follows.
+
+![send custom header along with request using dataManager](dataBinding_images/dataBinding_img11.png)
 
 #### Handling HTTP Errors
 
@@ -445,7 +482,7 @@ $(function() {
 
 The following output is displayed as a result of the above code example.
 
-![](dataBinding_images/dataBinding_img8.png)
+![how to handle the HTTP error](dataBinding_images/dataBinding_img8.png)
 
 
 ## HTML Table 
@@ -528,7 +565,7 @@ $(function() {
 
 The following output is displayed as a result of the above code example.
 
-![](dataBinding_images/dataBinding_img9.png)
+![Bind HTML data to grid](dataBinding_images/dataBinding_img9.png)
 
 
 I> The HTML Table element is the only valid element when using HTML Table binding. Using other elements will throws an exception.
@@ -591,4 +628,4 @@ N> If the argument is set to true in the refreshContent([argument]]), it will re
 
 The following output is displayed as a result of the above code example.
 
-![](dataBinding_images/dataBinding_img10.png)
+![update the Grid dataSource upon dropdownlist selection](dataBinding_images/dataBinding_img10.png)
