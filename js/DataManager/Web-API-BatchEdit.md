@@ -1,6 +1,6 @@
 ---
 layout: post
-title: WebAPI Batch Edit
+title: WebAPI Batch Edit | Syncfusion
 description: WebAPI Batch Edit
 platform: ejmvc
 control: DataManager
