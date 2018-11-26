@@ -15,8 +15,8 @@ WebAPI Batch Editing is a unique feature, where requests to add, remove and chan
 
 ## Authentication
 
-The authentication is access to authenticate user only. It allowed to access and perform the action on a web resource, the authentication is the security purpose of the access method. In data manger provided `enableAntiForgery` property, you can enable the property will
-generate unique id and validate the id into the server. For more information `Antiforgery` [Anti Forgery](https://help.syncfusion.com/js/datamanager/antiforgery).
+The authentication is access to authenticate user only. It allowed to access and perform the action on a web resource, the authentication is the security purpose of the access method. In data manger provided `enableAntiForgery` property, which will
+generate unique id and validate the id in server. For more information `Antiforgery` [Anti Forgery](https://help.syncfusion.com/js/datamanager/antiforgery).
 
 ## Configuration
 Below are listed the steps for you to follow when configuring the DataManager for ASP.NET MVC to do batch updates.
