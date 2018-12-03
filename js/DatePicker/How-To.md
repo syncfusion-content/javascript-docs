@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to
+title: Syncfusion How-to
 description: How-to section
 platform: js
 control: DatePicker
