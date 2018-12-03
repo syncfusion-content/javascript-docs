@@ -49,7 +49,7 @@ Execute the above code to render the following output.
 
 
 
-![checked status](/js/Checkbox/Easy-customization_images/Easy-customization_img1.png) 
+![checked status](Easy-customization_images/Easy-customization_img1.png) 
 
 
 ## Enable Tri-State
@@ -90,7 +90,7 @@ In the **HTML** page, add the following input elements to configure Checkbox wid
 Execute the above code to render the following output.
 
 
-![enable tri state](/js/Checkbox/Easy-customization_images/Easy-customization_img2.png) 
+![enable tri state](Easy-customization_images/Easy-customization_img2.png) 
 
 
 
@@ -176,7 +176,7 @@ In the **HTML** page, add the following input elements to configure **Checkbox**
 Execute the above code to render the following output.
 
 
-![check state](/js/Checkbox/Easy-customization_images/Easy-customization_img3.png) 
+![check state](Easy-customization_images/Easy-customization_img3.png) 
 
 
 
@@ -233,7 +233,7 @@ In the **HTML** page, add the following input elements to configure **Checkbox**
 Execute the above code to render the following output.
 
 
-![size](/js/Checkbox/Easy-customization_images/Easy-customization_img4.png) 
+![size](Easy-customization_images/Easy-customization_img4.png) 
 
 
 
@@ -273,7 +273,7 @@ In the **HTML** page, add the following input elements to configure **Checkbox**
 Execute the above code to render the following output.
 
 
-![text](/js/Checkbox/Easy-customization_images/Easy-customization_img5.png) 
+![text](Easy-customization_images/Easy-customization_img5.png) 
 
 
 
@@ -317,7 +317,7 @@ In the **HTML** page, add the following input elements to configure **Checkbox**
 Execute the above code to render the following output.
 
 
-![rounded corner](/js/Checkbox/Easy-customization_images/Easy-customization_img6.png) 
+![rounded corner](Easy-customization_images/Easy-customization_img6.png) 
 
 ## Styles Customization
 
