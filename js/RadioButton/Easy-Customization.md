@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Easy-Customization
+title: Syncfusion Easy-Customization
 description: easy customization
 platform: js
 control: RadioButton
@@ -79,7 +79,7 @@ The following image is displayed as the output for the above steps.
 
 
 
-![](/js/RadioButton/Easy-Customization_images/Easy-Customization_img1.png) 
+![checked status](Easy-Customization_images/Easy-Customization_img1.png) 
 
 ## Text
 
@@ -127,8 +127,6 @@ In the **HTML** page, add the following input elements to configure the **RadioB
 
 Configure the CSS styles to align the radio buttons.
 
-
-
 {% highlight css %}
 
 <style>
@@ -144,7 +142,7 @@ Configure the CSS styles to align the radio buttons.
 
 The following image is displayed as the output for the above steps.
 
-![](/js/RadioButton/Easy-Customization_images/Easy-Customization_img2.png) 
+![text](Easy-Customization_images/Easy-Customization_img2.png) 
 
 ## Size
 
@@ -250,7 +248,7 @@ The following image is displayed as the output for the above steps.
 
 
 
-![](/js/RadioButton/Easy-Customization_images/Easy-Customization_img3.png) 
+![size](Easy-Customization_images/Easy-Customization_img3.png) 
 
 ## RTL Support 
 
@@ -318,5 +316,56 @@ The following image is displayed as the output for the above steps.
 
 
 
-![](/js/RadioButton/Easy-Customization_images/Easy-Customization_img4.png) 
+![rtl](Easy-Customization_images/Easy-Customization_img4.png) 
+
+## Styles Customization
+
+RadioButton allows you to customize its appearance by using user-defined CSS and custom skin options such as colors and backgrounds. To apply custom themes, use  **CssClass** property. CssClass property sets the root class for RadioButton theme.
+
+By using this CssClass, you can override the existing styles under the theme style sheet. The theme style sheet applies theme-specific styles like colors and backgrounds. From the root class, you can customize the RadioButton control theme.
+
+In the following example, the border color and border width of the active RadioButton is customized through the custom classes to create the success, and danger indication with RadioButton.
+
+{% highlight html %}
+
+        <div class="radioalign">
+            <span>
+                <b>Agree terms & conditions:</b>
+            </span>
+            <span style="margin-left: 15px">
+                <input type="radio" name="radio1" id="Radio_checked" />
+                <input type="radio" name="radio1" id="Radio_unchecked" />
+            </span>
+            <br>
+            <br>
+            <span>
+                <b>Confirm:</b>
+            </span>
+            <span style="margin-left: 15px">
+                <input type="radio" name="radio1" id="RadioButton3" />
+                <input type="radio" name="radio1" id="RadioButton4" />
+            </span>
+        </div>
+
+{% endhighlight %}
+
+{% highlight css %}
+
+<style>
+        .success .e-spanicon.e-rad-active,
+        .success .e-spanicon.e-rad-active:hover {
+            border-color: #17ad37;
+            border-width: 2px;
+        }
+
+        .warning .e-spanicon.e-rad-active,
+        .warning .e-spanicon.e-rad-active:hover {
+            border-color: #ff6e40;
+            border-width: 2px;
+        }
+    </style>
+
+{% endhighlight %}
+
+![customization](Easy-Customization_images/Easy-Customization_img5.png)
 
