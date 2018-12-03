@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Easy-Customization
+title: Syncfusion Easy-Customization
 description: easy customization
 platform: js
 control: RadioButton
@@ -79,7 +79,7 @@ The following image is displayed as the output for the above steps.
 
 
 
-![](/js/RadioButton/Easy-Customization_images/Easy-Customization_img1.png) 
+![checked status](/js/RadioButton/Easy-Customization_images/Easy-Customization_img1.png) 
 
 ## Text
 
@@ -127,8 +127,6 @@ In the **HTML** page, add the following input elements to configure the **RadioB
 
 Configure the CSS styles to align the radio buttons.
 
-
-
 {% highlight css %}
 
 <style>
@@ -144,7 +142,7 @@ Configure the CSS styles to align the radio buttons.
 
 The following image is displayed as the output for the above steps.
 
-![](/js/RadioButton/Easy-Customization_images/Easy-Customization_img2.png) 
+![text](/js/RadioButton/Easy-Customization_images/Easy-Customization_img2.png) 
 
 ## Size
 
@@ -250,7 +248,7 @@ The following image is displayed as the output for the above steps.
 
 
 
-![](/js/RadioButton/Easy-Customization_images/Easy-Customization_img3.png) 
+![size](/js/RadioButton/Easy-Customization_images/Easy-Customization_img3.png) 
 
 ## RTL Support 
 
@@ -318,7 +316,7 @@ The following image is displayed as the output for the above steps.
 
 
 
-![](/js/RadioButton/Easy-Customization_images/Easy-Customization_img4.png) 
+![rtl](/js/RadioButton/Easy-Customization_images/Easy-Customization_img4.png) 
 
 ## Styles Customization
 
@@ -369,5 +367,5 @@ In the following example, the border color and border width of the active RadioB
 
 {% endhighlight %}
 
-![](Easy-Customization_images/Easy-Customization_img5.png)
+![customization](Easy-Customization_images/Easy-Customization_img5.png)
 
