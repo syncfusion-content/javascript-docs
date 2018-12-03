@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to
+title: Syncfusion How-to
 description: How-to section
 platform: js
 control: DatePicker
@@ -55,6 +55,56 @@ DatePicker allows you to restrict date selection in specific range by using date
 
 
 {% endhighlight %}
+
+## How to add clear button with DatePicker?
+
+Clear button can be included in the DatePicker control. In the `created` event of DatePicker, clear button element should be appended in the input element and event for clearing the value should bind with the clear button element. Refer the sample from the link [Clear button](http://jsplayground.syncfusion.com/mmdn4d0q) to know how to add the clear button with the DatePicker component.
+
+{% highlight html %}
+
+    <div class="control">
+        <label>Select Date</label>
+            <input id="datepick" type="text" />
+    </div>
+
+<style>
+    .e-clear-date {
+        text-align: center;
+        position: absolute;
+        right: 24px;
+        top: 0;
+        line-height: 2;
+        background: #ececec;
+        width: 21px !important;
+        height: 28px !important;
+        margin-top: -14px !important;
+    }
+
+    .e-clear-date:hover {
+       background: #86cbea;
+       cursor: pointer;
+    }
+
+    .e-clear-date:before {
+       content: "\e605";
+       font-size: 16px;
+       line-height: 1.8;
+   }
+</style>
+
+{% endhighlight %}
+
+{% highlight javascript %}
+
+ function onCreate(e) {
+        if (this.innerWrapper.find('.e-clear-date').length == 0) {
+            this.innerWrapper.append("<span class='e-clear-date e-icon'></span>"); // create and append the 'div' element to the calendar
+            this._on($('.e-clear-date', this.innerWrapper), "click", function () { this.option('value', null); if (!this.model.displayInline) this.hide(); }); // bind the 'Click' event to that 'div' element
+        }
+    }
+
+{% endhighlight %}
+
 
 ## How to integrate with bootstrap grid system? 
 
