@@ -12,7 +12,7 @@ api: /api/js/ejgroupbutton
 
 ## Show/Hide the items
 
-Particular currently showing button items can be hided. Also it provides the options to show the hided button again. These functionalities can be achieved using **showItem** or **hideItem** method.
+Particular currently showing button items can be hided. Also it provides the options to show the hidden button again. These functionalities can be achieved using **showItem** or **hideItem** method.
 
 **Hide the Button item based on given index**
 
@@ -28,7 +28,7 @@ Particular currently showing button items can be hided. Also it provides the opt
 
 {% endhighlight %}
 
-**Show the hided Button item based on given index**
+**Show the hidden Button item based on given index**
 
 {% highlight js %}
 
