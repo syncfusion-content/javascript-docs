@@ -219,7 +219,7 @@ The following screenshot illustrates the **Tab** with **Reload** icon.
 
 ## Collapsible Tabs
 
-You can collapse the **Tab** content by enabling the [collapsible](https://help.syncfusion.com/api/js/ejtab#members:collapsible) property to ‘**true**’. When the property is set to ‘**true**’ then click the active **Tab** header, the **Tab** contents are hided. By default, the property value is set to ‘**false**’.
+You can collapse the **Tab** content by enabling the [collapsible](https://help.syncfusion.com/api/js/ejtab#members:collapsible) property to ‘**true**’. When the property is set to ‘**true**’ then click the active **Tab** header, the **Tab** contents are hidden. By default, the property value is set to ‘**false**’.
 
 The following code example is used to render the **Tab** widget with customized collapsible mode.
 

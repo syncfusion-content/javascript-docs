@@ -68,7 +68,7 @@ Output for Accordion control when panel height is set to auto so that the maximu
 
 ## Rounded corner
 
-You can customize the shape of the **Accordion** widget from regular rectangular shape to rounded rectangle shape enabling [showroundedCorner](https://help.syncfusion.com/api/js/ejaccordion#members:showroundedcorner) property that is set to false by default.
+You can customize the shape of the **Accordion** widget from regular rectangular shape to rounded rectangle shape enabling [show rounded Corner](https://help.syncfusion.com/api/js/ejaccordion#members:showroundedcorner) property that is set to false by default.
 
 ### Enabling Rounded corner property
 

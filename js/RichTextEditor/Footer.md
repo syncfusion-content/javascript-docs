@@ -59,7 +59,7 @@ N> Source view is useful for working directly with raw HTML text, so this tool i
 
 ## HTML Tag Info
 
-The HTML tag info tool that shows the path of currently selected tag along with hierarchy of parent tags to which it belongs using [showHtmltagInfo](https://help.syncfusion.com/api/js/ejrte#members:showhtmltaginfo) property. The tag information is displayed at the bottom of the editor. It is used to determine which element has the focus in the editor’s content. 
+The HTML tag info tool that shows the path of currently selected tag along with hierarchy of parent tags to which it belongs using [show Html tag Info](https://help.syncfusion.com/api/js/ejrte#members:showhtmltaginfo) property. The tag information is displayed at the bottom of the editor. It is used to determine which element has the focus in the editor’s content. 
 
 {% highlight html %}
 
