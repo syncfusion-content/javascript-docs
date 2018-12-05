@@ -59,7 +59,7 @@ N> Source view is useful for working directly with raw HTML text, so this tool i
 
 ## HTML Tag Info
 
-The HTML tag info tool that shows the path of currently selected tag along with hierarchy of parent tags to which it belongs using [showHtmltagInfo](https://help.syncfusion.com/api/js/ejrte#members:showhtmltaginfo) property. The tag information is displayed at the bottom of the editor. It is used to determine which element has the focus in the editor’s content. 
+The HTML tag info tool that shows the path of currently selected tag along with hierarchy of parent tags to which it belongs using [show Html tag Info](https://help.syncfusion.com/api/js/ejrte#members:showhtmltaginfo) property. The tag information is displayed at the bottom of the editor. It is used to determine which element has the focus in the editor’s content. 
 
 {% highlight html %}
 
@@ -170,6 +170,6 @@ The editor automatically counts the number of characters and words in the conten
 
 By clicking the Characters Count/Word Count labels in footer , The word and character count information dialog is opened. It contains the details of the number of words and characters with and without spacing.  
 
-![](UserInterface_images/wordchar.png)
+![count](UserInterface_images/wordchar.png)
 
 N> The editor counts the characters by including the space, and this validation occurs while pasting the content into the editor also.
