@@ -18,7 +18,7 @@ This section explains briefly about how to create a **Toolbar** in your applicat
 
 **Toolbar** control supports displaying a list of tools in a Web page. This control is capable of customizing toolbar items with any functionality by using enriched **client-side** methods. This control consists of a collection of **unordered lists** contains text and images into a **&lt;div&gt;.** From the following section, you can learn how to customize **toolbar** control for a **PDF reader** scenario. The following screen shot shows the appearance of **toolbar** in **PDF reader** simulator application.
 
-![toolbar](/js/Toolbar/Getting-Started_images/Getting-Started_img1.png) 
+![toolbar](Getting-Started_images/Getting-Started_img1.png) 
 
 ## Create a Toolbar
 
@@ -88,7 +88,7 @@ Create an HTML file and add the following template into the **HTML** file for **
 
 
 
-![default toolbar](/js/Toolbar/Getting-Started_images/Getting-Started_img2.png)
+![default toolbar](Getting-Started_images/Getting-Started_img2.png)
 
 
 
@@ -205,7 +205,7 @@ Execute the code to render a toolbar with a list of **toolbar items**.
 
 
 
-![toolbar items](/js/Toolbar/Getting-Started_images/Getting-Started_img3.png)
+![toolbar items](Getting-Started_images/Getting-Started_img3.png)
 
 Toolbar with list of toolbar items
 {:.caption}
@@ -401,7 +401,7 @@ Execute the code to render a **toolbar items** with separator using [enable sepa
 
 
 
-![toolbar separator](/js/Toolbar/Getting-Started_images/Getting-Started_img4.png)
+![toolbar separator](Getting-Started_images/Getting-Started_img4.png)
 
 
 ## Add Actions to Toolbar Items
@@ -475,7 +475,7 @@ Execute the given code to render a **PDF reader** as follows.
 
 
 
-![toolbar customized](/js/Toolbar/Getting-Started_images/Getting-Started_img6.png) 
+![toolbar customized](Getting-Started_images/Getting-Started_img6.png) 
 
 
 

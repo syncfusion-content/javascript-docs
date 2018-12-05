@@ -81,7 +81,7 @@ Add following **CSS** for header image customization.
 
 The following screenshot illustrates the **Tab** with the customized header image. 
 
-![tab header](/js/Tab/Appearance-and-Styling_images/Appearance-and-Styling_img1.png)
+![tab header](Appearance-and-Styling_images/Appearance-and-Styling_img1.png)
 
 Header Image Customization
 {:.caption}
@@ -127,7 +127,7 @@ Add the following **HTML** to render **Tab** with rounder corner.
 
 The following screenshot illustrates the **Tab** with Rounded corner.
 
-![tab rounded](/js/Tab/Appearance-and-Styling_images/Appearance-and-Styling_img2.png) 
+![tab rounded](Appearance-and-Styling_images/Appearance-and-Styling_img2.png) 
 
 
 ## Enable/Disable
@@ -171,7 +171,7 @@ Add the following **HTML** to render **Tab** with enable/disable.
 
 The following screenshot illustrates the **Tab** with disabled format.
 
-![tab disabled](/js/Tab/Appearance-and-Styling_images/Appearance-and-Styling_img3.png) 
+![tab disabled](Appearance-and-Styling_images/Appearance-and-Styling_img3.png) 
 
 
 ## Enabling Reload Icon
@@ -214,7 +214,7 @@ Add the following **HTML** to render **Tab** with **Reload** icon.
 
 The following screenshot illustrates the **Tab** with **Reload** icon.
 
-![tab reload](/js/Tab/Appearance-and-Styling_images/Appearance-and-Styling_img4.png) 
+![tab reload](Appearance-and-Styling_images/Appearance-and-Styling_img4.png) 
 
 
 ## Collapsible Tabs
@@ -258,7 +258,7 @@ Add the following **HTML** to render **Tab** with customized collapsible mode.
 
 The following screenshot illustrates the **Tab** with customized collapsible mode.
 
-![tab collapsible](/js/Tab/Appearance-and-Styling_images/Appearance-and-Styling_img5.png) 
+![tab collapsible](Appearance-and-Styling_images/Appearance-and-Styling_img5.png) 
 
 
 ## Adjusting Tab Size
@@ -305,7 +305,7 @@ Add the following **HTML** to render **Tab** with customized height and height a
 
 The following screenshot illustrates the **Tab** with customized height and height adjust mode.
 
-![tab size](/js/Tab/Appearance-and-Styling_images/Appearance-and-Styling_img6.png) 
+![tab size](Appearance-and-Styling_images/Appearance-and-Styling_img6.png) 
 
 
 
@@ -351,7 +351,7 @@ Add the following **HTML** to render **Tab** with customized width.
 
 The following screenshot illustrates the **Tab** with customized width.
 
-![tab width](/js/Tab/Appearance-and-Styling_images/Appearance-and-Styling_img7.png) 
+![tab width](Appearance-and-Styling_images/Appearance-and-Styling_img7.png) 
 
 
 ## Theme
@@ -427,7 +427,7 @@ Add the following styles
 
 The following screenshot illustrates the **Tab** with customized style.
 
-![tab css](/js/Tab/Appearance-and-Styling_images/Appearance-and-Styling_img8.png) 
+![tab css](Appearance-and-Styling_images/Appearance-and-Styling_img8.png) 
 
 
 
