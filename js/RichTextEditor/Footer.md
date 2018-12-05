@@ -170,6 +170,6 @@ The editor automatically counts the number of characters and words in the conten
 
 By clicking the Characters Count/Word Count labels in footer , The word and character count information dialog is opened. It contains the details of the number of words and characters with and without spacing.  
 
-![](UserInterface_images/wordchar.png)
+![count](UserInterface_images/wordchar.png)
 
 N> The editor counts the characters by including the space, and this validation occurs while pasting the content into the editor also.
