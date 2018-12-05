@@ -397,7 +397,7 @@ After updating the Toolbar items with their **CSS** styles, you can render the t
 
 
 
-Execute the code to render a **toolbar items** with separator using [enable seperator](https://help.syncfusion.com/api/js/ejtoolbar#members:enableseparator)
+Execute the code to render a **toolbar items** with separator using [enable separator](https://help.syncfusion.com/api/js/ejtoolbar#members:enableseparator)
 
 
 
