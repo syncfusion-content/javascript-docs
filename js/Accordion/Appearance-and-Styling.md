@@ -64,7 +64,7 @@ Output for Accordion control when panel height is set to auto so that the maximu
 
 
 
-![Accordion size](/js/Accordion/Appearance-and-Styling_images/Appearance-and-Styling_img1.png) 
+![Accordion size](/Appearance-and-Styling_images/Appearance-and-Styling_img1.png) 
 
 ## Rounded corner
 
