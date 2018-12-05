@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Miscellaneous
+title: Miscellaneous | GroupButton | JavaScript | Syncfusion
 description: miscellaneous
 platform: js
 control: GroupButton
@@ -12,7 +12,7 @@ api: /api/js/ejgroupbutton
 
 ## Show/Hide the items
 
-Particular currently showing button items can be hided. Also it provides the options to show the hided button again. These functionalities can be achieved using **showItem** or **hideItem** method.
+Particular currently showing button items can be hidden. Also it provides the options to show the hidden button again. These functionalities can be achieved using **showItem** or **hideItem** method.
 
 **Hide the Button item based on given index**
 
@@ -28,7 +28,7 @@ Particular currently showing button items can be hided. Also it provides the opt
 
 {% endhighlight %}
 
-**Show the hided Button item based on given index**
+**Show the hidden Button item based on given index**
 
 {% highlight js %}
 
@@ -90,7 +90,7 @@ Also entire GroupButton can be enabled or disabled using enable (), disable publ
 
 {% endhighlight %}
 
-![](Miscellaneous_images/Miscellaneous_img1.jpeg)
+![Enable/Disable the GroupButton Item](Miscellaneous_images/Miscellaneous_img1.jpeg)
 
 
 ## Getting Index of given Element
