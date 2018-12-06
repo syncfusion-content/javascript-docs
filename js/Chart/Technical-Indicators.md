@@ -404,7 +404,7 @@ Also, you can change and customize the tooltip [`color`](../api/ejchart#members:
 
 ## Indicators dPeriod
 
-The [`dPeriod`] (../api/ejchart#members:indicators-dperiod) value for stochastic indicator.
+The [`dPeriod`](../api/ejchart#members:indicators-dperiod) value for stochastic indicator.
 
 {% highlight javascript %}
 
@@ -417,9 +417,9 @@ The [`dPeriod`] (../api/ejchart#members:indicators-dperiod) value for stochastic
 
 {% endhighlight %}
 
-## Indicators enableAimation
+## Indicators enableAnimation
 
-Enables/disables the [`enable animation`] (../api/ejchart#members:indicators-enableanimation)
+Enables/disables the [`enableAnimation`](../api/ejchart#members:indicators-enableanimation)
 
 {% highlight javascript %}
 
@@ -434,7 +434,7 @@ Enables/disables the [`enable animation`] (../api/ejchart#members:indicators-ena
 
 ## Indicators AnimationDuration
 
-Specifies [`animation duration`] (../api/ejchart#members:indicators-animationduration) for indicator rendering.
+Specifies [`animationDuration`](../api/ejchart#members:indicators-animationduration) for indicator rendering.
 
 {% highlight javascript %}
 
@@ -524,8 +524,8 @@ Controls the [`width`](../api/ejchart#members:indicators-histogram-border-width)
 
 {% endhighlight %}
 
-## Indicators Kperiod
-Specifies the [`k period`](../api/ejchart#members:indicators-kperiod) in stochastic indicator.
+## Indicators kPeriod
+Specifies the [`kPeriod`](../api/ejchart#members:indicators-kperiod) in stochastic indicator.
 
 {% highlight javascript %}
 
@@ -601,10 +601,10 @@ Specifies [`period`](../api/ejchart#members:indicators-period) value in indicato
 {% endhighlight %}
 
 ## Indicators PeriodLine
-Options to customize the [`period line`] (../api/ejchart#members:indicators-periodline)in indicators.
+Options to customize the [`periodLine`](../api/ejchart#members:indicators-periodline)in indicators.
 
 ## Indicators PeriodLine fill
-[`fill`] (../api/ejchart#members:indicators-periodline-fill) color of period line in indicator.
+[`fill`](../api/ejchart#members:indicators-periodline-fill) color of period line in indicator.
 {% highlight javascript %}
 
 
@@ -618,7 +618,7 @@ Options to customize the [`period line`] (../api/ejchart#members:indicators-peri
 {% endhighlight %}
 
 ## Indicators PeriodLine width
-[`Width`] (../api/ejchart#members:indicators-periodline-width)of the period line in indicators.
+[`Width`](../api/ejchart#members:indicators-periodline-width)of the period line in indicators.
 
 {% highlight javascript %}
 
@@ -633,7 +633,7 @@ Options to customize the [`period line`] (../api/ejchart#members:indicators-peri
 {% endhighlight %}
 
 ## Indicators Short Period
-Specifies the [`short period`] (../api/ejchart#members:indicators-shortperiod)in MACD indicator.
+Specifies the [`shortPeriod`](../api/ejchart#members:indicators-shortperiod)in MACD indicator.
 
 {% highlight javascript %}
 
@@ -648,7 +648,7 @@ Specifies the [`short period`] (../api/ejchart#members:indicators-shortperiod)in
 {% endhighlight %}
 
 ## Indicators standardDeviations
-Specifies the [`standard deviations`] (../api/ejchart#members:indicators-standarddeviations) value for Bollinger band indicator.
+Specifies the [`standardDeviations`](../api/ejchart#members:indicators-standarddeviations) value for Bollinger band indicator.
 
 {% highlight javascript %}
 
@@ -828,7 +828,7 @@ indicators :[{ xAxisName :  "xAxis"}]
 {% endhighlight %}
 
 ## Indicators yAxisName
-Name of the vertical axis used for indicator.  [`yAxisName`] (../api/js/ejchart#members:indicators-yaxisname)property  is used when y axis name is not specified
+Name of the vertical axis used for indicator.  [`yAxisName`](../api/js/ejchart#members:indicators-yaxisname)property  is used when y axis name is not specified
 
 {% highlight javascript %}
 

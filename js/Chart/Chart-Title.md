@@ -258,7 +258,7 @@ Font [`size`](../api/ejchart#members:title-font-size) for Chart title.
 
 
 ### title maximum width
-[`Maximum width`] (../api/ejchart#members:title-maximumwidth) of the title, when the title exceeds this width, the title gets trimmed, when enableTrim is true.
+[`MaximumWidth`](../api/ejchart#members:title-maximumwidth) of the title, when the title exceeds this width, the title gets trimmed, when enableTrim is true.
 
 {% highlight javascript %}
 
@@ -272,7 +272,7 @@ Font [`size`](../api/ejchart#members:title-font-size) for Chart title.
 {% endhighlight %} 
 
 ### title text overflow
- [`text overflow`] (../api/ejchart#members:title-textoverflow) specifies the action taken when the Chart width is more than the titleWidth.
+ [`TextOverflow`](../api/ejchart#members:title-textoverflow) specifies the action taken when the Chart width is more than the titleWidth.
 
  {% highlight javascript %}
 
@@ -302,7 +302,7 @@ Font [`size`](../api/ejchart#members:title-font-size) for Chart title.
 
 ### title subtitle font fontStyle
 
-[`font style`] (../api/ejchart#members:title-subtitle-font-fontstyle)for sub title.
+[`FontStyle`](../api/ejchart#members:title-subtitle-font-fontstyle)for sub title.
 
 {% highlight javascript %}
 
@@ -317,7 +317,7 @@ Font [`size`](../api/ejchart#members:title-font-size) for Chart title.
 
 ### title subtitle font fontWeight
 
-[`font weight`] (../api/ejchart#members:title-subtitle-font-fontweight)for sub title.
+[`FontWeight`](../api/ejchart#members:title-subtitle-font-fontweight)for sub title.
 
 {% highlight javascript %}
 

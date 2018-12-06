@@ -511,7 +511,7 @@ You can collapse the specific series/point legend item displaying in the chart, 
 ![](/js/Chart/Legend_images/Legend_img17.png)
 
 ## legend enableScrollbar
-Controls whether legend has to use scrollbar or not. When [`enable scrollbar`] (../api/ejchart#members:legend-enablescrollbar) appears depending upon size and position properties of legend.
+Controls whether legend has to use scrollbar or not. When [`enableScrollbar`](../api/ejchart#members:legend-enablescrollbar) appears depending upon size and position properties of legend.
 
 {% highlight javascript %}
 
@@ -543,7 +543,7 @@ Options to customize the [`font`](../api/ejchart#members:legend-font)used for le
 
 ## legend font fontStyle
 
-[`Fontstyle`](../api/ejchart#members:legend-font-fontstyle) for legend item text.
+[`FontStyle`](../api/ejchart#members:legend-font-fontstyle) for legend item text.
 
 {% highlight javascript %}
 
@@ -558,7 +558,7 @@ Options to customize the [`font`](../api/ejchart#members:legend-font)used for le
 
 ## legend font fontWeight
 
-[`Font weight`] (../api/ejchart#members:legend-font-fontweight)for legend item text.
+[`FontWeight`](../api/ejchart#members:legend-font-fontweight)for legend item text.
 
 {% highlight javascript %}
 
@@ -592,7 +592,7 @@ Options to customize the [`style`](../api/ejchart#members:legend-itemstyle) of l
 Options for customizing the [`border`](../api/ejchart#members:legend-itemstyle-border) of legend items.
 
 ## legend itemStyle border color
-Border [`color`] (../api/ejchart#members:legend-itemstyle-border-color)of the legend items.
+Border [`color`](../api/ejchart#members:legend-itemstyle-border-color)of the legend items.
  
  {% highlight javascript %}
 
