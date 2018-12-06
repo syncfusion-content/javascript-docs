@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Technical Indicators
+title: Syncfusion EJ1 Chart - Technical Indicators
 description: What are the different types of technical indicators supported in Essential Chart for financial analysis.
 platform: js
 control: Chart
@@ -105,7 +105,7 @@ To create an Accumulation Distribution indicator, set the [`indicators.type`](..
 
 {% endhighlight %}
 
-![](/js/Chart/Technical-Indicators_images/Technical-Indicators_img1.png)
+![Accumulation Distribution](Technical-Indicators_images/Technical-Indicators_img1.png)
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/technicalindicators/accumulationdistribution) here to view the Accumulation Distribution indicator online demo sample.
 
@@ -131,7 +131,7 @@ You can create an ATR indicator by setting the [`indicators.type`](../api/ejchar
 
 {% endhighlight %}
 
-![](/js/Chart/Technical-Indicators_images/Technical-Indicators_img2.png)
+![ATR](Technical-Indicators_images/Technical-Indicators_img2.png)
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/technicalindicators/atr) here to view the ATR indicator online demo sample.
 
@@ -157,7 +157,7 @@ Bollinger Band indicator is created by setting the [`indicators.type`](../api/ej
 
 {% endhighlight %}
 
-![](/js/Chart/Technical-Indicators_images/Technical-Indicators_img3.png)
+![Bollinger Band](Technical-Indicators_images/Technical-Indicators_img3.png)
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/technicalindicators/bollingerband) here to view the Bollinger Band indicator online demo sample.
 
@@ -183,7 +183,7 @@ To render an EMA indicator, you have to set the [`indicators.type`](../api/ejcha
 
 {% endhighlight %}
 
-![](/js/Chart/Technical-Indicators_images/Technical-Indicators_img4.png)
+![EMA](Technical-Indicators_images/Technical-Indicators_img4.png)
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/technicalindicators/ema) here to view the EMA indicator online demo sample.
 
@@ -209,7 +209,7 @@ Momentum Technical indicator is created by setting the [`indicators.type`](../ap
 
 {% endhighlight %}
 
-![](/js/Chart/Technical-Indicators_images/Technical-Indicators_img5.png)
+![Momentum](Technical-Indicators_images/Technical-Indicators_img5.png)
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/technicalindicators/momentum) here to view the Momentum indicator online demo sample.
 
@@ -235,7 +235,7 @@ To render an MACD indicator, you have to set the [`indicators.type`](../api/ejch
 
 {% endhighlight %}
 
-![](/js/Chart/Technical-Indicators_images/Technical-Indicators_img6.png)
+![MACD](Technical-Indicators_images/Technical-Indicators_img6.png)
 
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/technicalindicators/macd) here to view the MACD indicator online demo sample.
@@ -263,7 +263,7 @@ By using the [`macdType`](../api/ejchart#members:indicators-macdtype) enumeratio
 
 {% endhighlight %}
 
-![](/js/Chart/Technical-Indicators_images/Technical-Indicators_img7.png)
+![MACD Type](Technical-Indicators_images/Technical-Indicators_img7.png)
 
 
 ### Relative Strength Index (RSI)
@@ -288,7 +288,7 @@ To render the RSI indicator, set the [`indicators.type`](../api/ejchart#members:
 {% endhighlight %}
 
 
-![](/js/Chart/Technical-Indicators_images/Technical-Indicators_img8.png)
+![RSI](Technical-Indicators_images/Technical-Indicators_img8.png)
 
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/technicalindicators/rsi) here to view the RSI indicator online demo sample.
@@ -315,7 +315,7 @@ To render the SMA indicator, you should specify the [`indicators.type`](../api/e
 
 {% endhighlight %}
 
-![](/js/Chart/Technical-Indicators_images/Technical-Indicators_img9.png)
+![SMA](Technical-Indicators_images/Technical-Indicators_img9.png)
 
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/technicalindicators/sma) here to view the SMA indicator online demo sample.
@@ -343,7 +343,7 @@ For the Stochastic indicator, you need to set the [`indicators.type`](../api/ejc
 
 {% endhighlight %}
 
-![](/js/Chart/Technical-Indicators_images/Technical-Indicators_img10.png)
+![Stochastic](Technical-Indicators_images/Technical-Indicators_img10.png)
 
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/technicalindicators/stochastic) here to view the stochastic indicator online demo sample.
@@ -370,7 +370,7 @@ To render the TMA indicator, you should specify the [`indicators.type`](../api/e
 
 {% endhighlight %}
 
-![](/js/Chart/Technical-Indicators_images/Technical-Indicators_img11.png)
+![TMA](Technical-Indicators_images/Technical-Indicators_img11.png)
 
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/technicalindicators/tma) here to view the TMA indicator online demo sample.
@@ -400,11 +400,11 @@ Also, you can change and customize the tooltip [`color`](../api/ejchart#members:
 
 {% endhighlight %}
 
-![](/js/Chart/Technical-Indicators_images/Technical-Indicators_img12.png)
+![Tooltip](Technical-Indicators_images/Technical-Indicators_img12.png)
 
 ## Indicators dPeriod
 
-The [`dPeriod`] (../api/ejchart#members:indicators-dperiod) value for stochastic indicator.
+The [`dPeriod`](../api/ejchart#members:indicators-dperiod) value for stochastic indicator.
 
 {% highlight javascript %}
 
@@ -417,9 +417,9 @@ The [`dPeriod`] (../api/ejchart#members:indicators-dperiod) value for stochastic
 
 {% endhighlight %}
 
-## Indicators enableAimation
+## Indicators enableAnimation
 
-Enables/disables the [`enable animation`] (../api/ejchart#members:indicators-enableanimation)
+Enables/disables the [`enableAnimation`](../api/ejchart#members:indicators-enableanimation)
 
 {% highlight javascript %}
 
@@ -434,7 +434,7 @@ Enables/disables the [`enable animation`] (../api/ejchart#members:indicators-ena
 
 ## Indicators AnimationDuration
 
-Specifies [`animation duration`] (../api/ejchart#members:indicators-animationduration) for indicator rendering.
+Specifies [`animationDuration`](../api/ejchart#members:indicators-animationduration) for indicator rendering.
 
 {% highlight javascript %}
 
@@ -524,8 +524,8 @@ Controls the [`width`](../api/ejchart#members:indicators-histogram-border-width)
 
 {% endhighlight %}
 
-## Indicators Kperiod
-Specifies the [`k period`](../api/ejchart#members:indicators-kperiod) in stochastic indicator.
+## Indicators kPeriod
+Specifies the [`kPeriod`](../api/ejchart#members:indicators-kperiod) in stochastic indicator.
 
 {% highlight javascript %}
 
@@ -601,10 +601,10 @@ Specifies [`period`](../api/ejchart#members:indicators-period) value in indicato
 {% endhighlight %}
 
 ## Indicators PeriodLine
-Options to customize the [`period line`] (../api/ejchart#members:indicators-periodline)in indicators.
+Options to customize the [`periodLine`](../api/ejchart#members:indicators-periodline)in indicators.
 
 ## Indicators PeriodLine fill
-[`fill`] (../api/ejchart#members:indicators-periodline-fill) color of period line in indicator.
+[`fill`](../api/ejchart#members:indicators-periodline-fill) color of period line in indicator.
 {% highlight javascript %}
 
 
@@ -618,7 +618,7 @@ Options to customize the [`period line`] (../api/ejchart#members:indicators-peri
 {% endhighlight %}
 
 ## Indicators PeriodLine width
-[`Width`] (../api/ejchart#members:indicators-periodline-width)of the period line in indicators.
+[`Width`](../api/ejchart#members:indicators-periodline-width)of the period line in indicators.
 
 {% highlight javascript %}
 
@@ -633,7 +633,7 @@ Options to customize the [`period line`] (../api/ejchart#members:indicators-peri
 {% endhighlight %}
 
 ## Indicators Short Period
-Specifies the [`short period`] (../api/ejchart#members:indicators-shortperiod)in MACD indicator.
+Specifies the [`shortPeriod`](../api/ejchart#members:indicators-shortperiod)in MACD indicator.
 
 {% highlight javascript %}
 
@@ -648,7 +648,7 @@ Specifies the [`short period`] (../api/ejchart#members:indicators-shortperiod)in
 {% endhighlight %}
 
 ## Indicators standardDeviations
-Specifies the [`standard deviations`] (../api/ejchart#members:indicators-standarddeviations) value for Bollinger band indicator.
+Specifies the [`standardDeviations`](../api/ejchart#members:indicators-standarddeviations) value for Bollinger band indicator.
 
 {% highlight javascript %}
 
@@ -828,7 +828,7 @@ indicators :[{ xAxisName :  "xAxis"}]
 {% endhighlight %}
 
 ## Indicators yAxisName
-Name of the vertical axis used for indicator.  [`yAxisName`] (../api/js/ejchart#members:indicators-yaxisname)property  is used when y axis name is not specified
+Name of the vertical axis used for indicator.  [`yAxisName`](../api/js/ejchart#members:indicators-yaxisname)property  is used when y axis name is not specified
 
 {% highlight javascript %}
 

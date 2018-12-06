@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Chart Title
+title: Syncfusion EJ1 Chart - Title
 description: How to customize the chart title.
 platform: js
 control: Chart
@@ -49,7 +49,7 @@ $("#container").ejChart({
 
 {% endhighlight %}
 
-![](/js/Chart/Chart-Title_images/Chart-Title_img1.png)
+![Title](Chart-Title_images/Chart-Title_img1.png)
 
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/chartcustomization/subtitle) here to view the Chart Title online demo sample.
@@ -83,7 +83,7 @@ The original text will be displayed as tooltip on mouse hover.
 
 {% endhighlight %}
 
-![](/js/Chart/Chart-Title_images/Chart-Title_img5.png)
+![Title Customization](Chart-Title_images/Chart-Title_img5.png)
 
 
 ### Title Alignment
@@ -109,7 +109,7 @@ You can change the title alignment to *center*, *far* and *near* by using the [`
 
 {% endhighlight %} 
 
-![](/js/Chart/Chart-Title_images/Chart-Title_img2.png)
+![Title Alignment](Chart-Title_images/Chart-Title_img2.png)
 
 ### title border
 
@@ -258,7 +258,7 @@ Font [`size`](../api/ejchart#members:title-font-size) for Chart title.
 
 
 ### title maximum width
-[`Maximum width`] (../api/ejchart#members:title-maximumwidth) of the title, when the title exceeds this width, the title gets trimmed, when enableTrim is true.
+[`MaximumWidth`](../api/ejchart#members:title-maximumwidth) of the title, when the title exceeds this width, the title gets trimmed, when enableTrim is true.
 
 {% highlight javascript %}
 
@@ -272,7 +272,7 @@ Font [`size`](../api/ejchart#members:title-font-size) for Chart title.
 {% endhighlight %} 
 
 ### title text overflow
- [`text overflow`] (../api/ejchart#members:title-textoverflow) specifies the action taken when the Chart width is more than the titleWidth.
+ [`TextOverflow`](../api/ejchart#members:title-textoverflow) specifies the action taken when the Chart width is more than the titleWidth.
 
  {% highlight javascript %}
 
@@ -302,7 +302,7 @@ Font [`size`](../api/ejchart#members:title-font-size) for Chart title.
 
 ### title subtitle font fontStyle
 
-[`font style`] (../api/ejchart#members:title-subtitle-font-fontstyle)for sub title.
+[`FontStyle`](../api/ejchart#members:title-subtitle-font-fontstyle)for sub title.
 
 {% highlight javascript %}
 
@@ -317,7 +317,7 @@ Font [`size`](../api/ejchart#members:title-font-size) for Chart title.
 
 ### title subtitle font fontWeight
 
-[`font weight`] (../api/ejchart#members:title-subtitle-font-fontweight)for sub title.
+[`FontWeight`](../api/ejchart#members:title-subtitle-font-fontweight)for sub title.
 
 {% highlight javascript %}
 
@@ -572,7 +572,7 @@ $("#container").ejChart({
 
 {% endhighlight %}
 
-![](/js/Chart/Chart-Title_images/Chart-Title_img3.png)
+![SubTitle](Chart-Title_images/Chart-Title_img3.png)
 
 
 We can trim, wrap and wrapAndTrim to the chart title using [`textOverflow`](../api/ejchart#members:title-subtitle-textoverflow) property. 
@@ -606,7 +606,7 @@ The original text will be displayed as tooltip on mouse hover.
 
 {% endhighlight %}
 
-![](/js/Chart/Chart-Title_images/Chart-Title_img6.png)
+![SubTitle Customization](Chart-Title_images/Chart-Title_img6.png)
 
 ### Subtitle Alignment
 
@@ -633,7 +633,7 @@ You can change the subtitle alignment to *center*, *far* and *near* by using the
 
 {% endhighlight %}
 
-![](/js/Chart/Chart-Title_images/Chart-Title_img4.png)
+![SubTitle Alignment](Chart-Title_images/Chart-Title_img4.png)
 
 
 
