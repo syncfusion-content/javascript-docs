@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Chart legend
+title: Syncfusion EJ1 Chart - Legend
 description: How to cutomize the legend in Essential JavaScript Chart.
 platform: js
 control: Chart
@@ -31,7 +31,7 @@ By default, the legend is enabled in the chart. You can enable or disable it by 
 
 {% endhighlight %}
 
-![](/js/Chart/Legend_images/Legend_img1.png)
+![Visible](Legend_images/Legend_img1.png)
 
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/chartcustomization/legendposition) here to view the online demo sample for legend position.
@@ -59,7 +59,7 @@ To add the title to the legend, you have to specify the [`text`](../api/ejchart#
 
 {% endhighlight %}
 
-![](/js/Chart/Legend_images/Legend_img2.png)
+![Title](Legend_images/Legend_img2.png)
 
 
 ## Position and Align the Legend
@@ -83,7 +83,7 @@ By using the [`position`](../api/ejchart#members:legend-position) option, you ca
 
 {% endhighlight %}
 
-![](/js/Chart/Legend_images/Legend_img3.png)
+![Position](Legend_images/Legend_img3.png)
 
 **Legend Alignment**
 
@@ -106,7 +106,7 @@ You can align the legend to the *center*, *far* or *near* based on its position 
 
 {% endhighlight %}
 
-![](/js/Chart/Legend_images/Legend_img4.png)
+![Alignment](Legend_images/Legend_img4.png)
 
 
 ## Arrange legend items in the rows and columns
@@ -138,7 +138,7 @@ You can arrange the legend items horizontally and vertically by using the [`rowC
 
 {% endhighlight %}
 
-![](/js/Chart/Legend_images/Legend_img5.png)
+![RowColumn](Legend_images/Legend_img5.png)
 
 
 ## Customization
@@ -163,7 +163,7 @@ To change the legend icon shape, you have to specify the shape in the [`shape`](
 
 {% endhighlight %}
 
-![](/js/Chart/Legend_images/Legend_img6.png)
+![Shape](Legend_images/Legend_img6.png)
 
 
 ### Legend items size and border
@@ -186,7 +186,7 @@ You can change the size of the legend items by using the [`width`](../api/ejchar
 
 {% endhighlight %}
 
-![](/js/Chart/Legend_images/Legend_img7.png)
+![ItemStyle](Legend_images/Legend_img7.png)
 
 ### Legend size
 
@@ -208,7 +208,7 @@ By default, legend takes 20% of the [`height`](../api/ejchart#members:legend-siz
 
 {% endhighlight %}
 
-![](/js/Chart/Legend_images/Legend_img8.png)
+![Size](Legend_images/Legend_img8.png)
 
 
 ### Legend Item Padding
@@ -231,7 +231,7 @@ You can control the spacing between the legend items by using the [`itemPadding`
 
 {% endhighlight %}
 
-![](/js/Chart/Legend_images/Legend_img9.png)
+![ItemPadding](Legend_images/Legend_img9.png)
 
 
 ### Legend background
@@ -297,7 +297,7 @@ The color and width of the border are customized using the [`color`](../api/ejch
 
 {% endhighlight %}
 
-![](/js/Chart/Legend_images/Legend_img10.png)
+![Border](Legend_images/Legend_img10.png)
 
 ### Legend opacity
 
@@ -341,7 +341,7 @@ You can enable or disable the legend scrollbar by using the [`enableScrollbar`](
 
 {% endhighlight %}
 
-![](/js/Chart/Legend_images/Legend_img11.png)
+![Scrollbar](Legend_images/Legend_img11.png)
 
 
 ### Legend Location
@@ -394,7 +394,7 @@ To customize the legend item text and title you can use the [`font`](../api/ejch
 
 {% endhighlight %}
 
-![](/js/Chart/Legend_images/Legend_img12.png)
+![LegendText](Legend_images/Legend_img12.png)
 
 ### LegendItems Text Overflow
 
@@ -420,20 +420,20 @@ You can trim the legend item text when its width exceeds the [`legend.textWidth`
 
 {% endhighlight %}
 
-![](/js/Chart/Legend_images/Legend_img13.png) 
+![TextOverflow](Legend_images/Legend_img13.png) 
 
 
 **Wrap**
 
 By specifying [`textOverflow`](../api/ejchart#members:legend-textOverflow) as **"wrap"**, you can wrap the legend text by word.
 
-![](/js/Chart/Legend_images/Legend_img14.png)
+![Wrap](Legend_images/Legend_img14.png)
 
 **WrapAndTrim**
 
 You can wrap and trim the legend text by specifying [`textOverflow`](../api/ejchart#members:legend-textOverflow) as **"wrapAndTrim"**. The original text will be displayed on mouse hover.
 
-![](/js/Chart/Legend_images/Legend_img15.png)
+![WrapAndTrim](Legend_images/Legend_img15.png)
    
 
 ## Handle the legend item clicked
@@ -483,7 +483,7 @@ You can select a specific series or point while clicking on the corresponding le
 
 {% endhighlight %}
 
-![](/js/Chart/Legend_images/Legend_img16.png)
+![ToggleVisibility](Legend_images/Legend_img16.png)
 
 
 
@@ -508,7 +508,7 @@ You can collapse the specific series/point legend item displaying in the chart, 
       
 {% endhighlight %}
 
-![](/js/Chart/Legend_images/Legend_img17.png)
+![VisibleOnLegend](Legend_images/Legend_img17.png)
 
 ## legend enableScrollbar
 Controls whether legend has to use scrollbar or not. When [`enableScrollbar`](../api/ejchart#members:legend-enablescrollbar) appears depending upon size and position properties of legend.

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Chart Title
+title: Syncfusion EJ1 Chart - Title
 description: How to customize the chart title.
 platform: js
 control: Chart
@@ -49,7 +49,7 @@ $("#container").ejChart({
 
 {% endhighlight %}
 
-![](/js/Chart/Chart-Title_images/Chart-Title_img1.png)
+![Title](Chart-Title_images/Chart-Title_img1.png)
 
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/chartcustomization/subtitle) here to view the Chart Title online demo sample.
@@ -83,7 +83,7 @@ The original text will be displayed as tooltip on mouse hover.
 
 {% endhighlight %}
 
-![](/js/Chart/Chart-Title_images/Chart-Title_img5.png)
+![Title Customization](Chart-Title_images/Chart-Title_img5.png)
 
 
 ### Title Alignment
@@ -109,7 +109,7 @@ You can change the title alignment to *center*, *far* and *near* by using the [`
 
 {% endhighlight %} 
 
-![](/js/Chart/Chart-Title_images/Chart-Title_img2.png)
+![Title Alignment](Chart-Title_images/Chart-Title_img2.png)
 
 ### title border
 
@@ -572,7 +572,7 @@ $("#container").ejChart({
 
 {% endhighlight %}
 
-![](/js/Chart/Chart-Title_images/Chart-Title_img3.png)
+![SubTitle](Chart-Title_images/Chart-Title_img3.png)
 
 
 We can trim, wrap and wrapAndTrim to the chart title using [`textOverflow`](../api/ejchart#members:title-subtitle-textoverflow) property. 
@@ -606,7 +606,7 @@ The original text will be displayed as tooltip on mouse hover.
 
 {% endhighlight %}
 
-![](/js/Chart/Chart-Title_images/Chart-Title_img6.png)
+![SubTitle Customization](Chart-Title_images/Chart-Title_img6.png)
 
 ### Subtitle Alignment
 
@@ -633,7 +633,7 @@ You can change the subtitle alignment to *center*, *far* and *near* by using the
 
 {% endhighlight %}
 
-![](/js/Chart/Chart-Title_images/Chart-Title_img4.png)
+![SubTitle Alignment](Chart-Title_images/Chart-Title_img4.png)
 
 
 
