@@ -201,6 +201,8 @@ public HttpResponseMessage Import()
 
 You can dynamically open excel document by clicking the file menu in ribbon and choose Open to upload excel file.
 
+N> [`isImport`](https://help.syncfusion.com/api/js/ejspreadsheet#members:isImport "isImport") API gets a value, that indicates whether importing or not while loading the sheets in spreadsheet 
+
 ## Save
 
 The Spreadsheet can save its data, style, format into an excel file. To enable save option in Spreadsheet set [`allowExporting`](https://help.syncfusion.com/api/js/ejspreadsheet#members:exportsettings-allowexporting "allowExporting") option in [`exportSettings`](https://help.syncfusion.com/api/js/ejspreadsheet#members:exportsettings "exportSettings") as `true`. Since Spreadsheet uses server side helper to save documents set [`excelUrl`](https://help.syncfusion.com/api/js/ejspreadsheet#members:exportsettings-excelurl "excelUrl"),[`csvUrl`](https://help.syncfusion.com/api/js/ejspreadsheet#members:exportsettings-csvurl "csvUrl"),[`pdfUrl`](https://help.syncfusion.com/api/js/ejspreadsheet#members:exportsettings-pdfurl "pdfUrl") in [`exportSettings`](https://help.syncfusion.com/api/js/ejspreadsheet#members:exportsettings "exportSettings") option and also you can define password while exporting the spreadsheet by using [`password`](https://help.syncfusion.com/api/js/ejspreadsheet#members:exportsettings-password "password") API.
