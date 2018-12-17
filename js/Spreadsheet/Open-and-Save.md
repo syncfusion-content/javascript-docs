@@ -129,7 +129,7 @@ public class SpreadSheetController : ApiController
 
 {% endhighlight %}
 
-![](Open-and-Save_images/Open-and-Save_img1.png)
+![open and save](Open-and-Save_images/Open-and-Save_img1.png)
 
 ### Methods
 
