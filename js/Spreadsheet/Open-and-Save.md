@@ -129,7 +129,7 @@ public class SpreadSheetController : ApiController
 
 {% endhighlight %}
 
-![](Open-and-Save_images/Open-and-Save_img1.png)
+![open and save](Open-and-Save_images/Open-and-Save_img1.png)
 
 ### Methods
 
@@ -200,6 +200,8 @@ public HttpResponseMessage Import()
 ### User Interface
 
 You can dynamically open excel document by clicking the file menu in ribbon and choose Open to upload excel file.
+
+N> [`isImport`](https://help.syncfusion.com/api/js/ejspreadsheet#members:isImport "isImport") API gets a value, that indicates whether importing or not while loading the sheets in spreadsheet. 
 
 ## Save
 
