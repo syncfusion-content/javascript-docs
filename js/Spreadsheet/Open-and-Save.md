@@ -201,7 +201,7 @@ public HttpResponseMessage Import()
 
 You can dynamically open excel document by clicking the file menu in ribbon and choose Open to upload excel file.
 
-N> [`isImport`](https://help.syncfusion.com/api/js/ejspreadsheet#members:isImport "isImport") API gets a value, that indicates whether importing or not while loading the sheets in spreadsheet 
+N> [`isImport`](https://help.syncfusion.com/api/js/ejspreadsheet#members:isImport "isImport") API gets a value, that indicates whether importing or not while loading the sheets in spreadsheet. 
 
 ## Save
 
