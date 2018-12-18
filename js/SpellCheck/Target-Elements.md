@@ -1,5 +1,5 @@
 ---
-title: SpellCheck - Working with Target Elements
+title: Syncfusion SpellCheck - Working with Target Elements
 description: Target element's text spell checking with Syncfusion SpellCheck
 platform: js
 control: spellcheck
@@ -111,7 +111,7 @@ You can append the styles of error word from the application side, while perform
 
 ## Multiple Target
 
-The SpellCheck control has support for multiple target HTML element’s texts spelling and correct its error words. This can be achieved by passing the target HTML elements “id” values or “CSS Class Name” or combination of both id and class names to the property “controlsToValidate”.
+The SpellCheck control has support for multiple target HTML element’s texts spelling and correct its error words. This can be achieved by passing the target HTML elements “id” values or “CSS Class Name” or combination of both id and class names to the property [`controlsToValidate`](/api/js/ejspellcheck#members:controlstovalidate).
 
 The following code example describes the above behavior.
 
