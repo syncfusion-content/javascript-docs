@@ -1,5 +1,5 @@
 ---
-title: SpellCheck - Functionalities
+title: Syncfusion SpellCheck - Functionalities
 description: SpellCheck Functionalities
 platform: js
 control: spellcheck
@@ -250,7 +250,7 @@ MMI control panel with touch pad and dual-view technology, sound system with the
 
 The following screenshot displays the output for the above code
 
-![](/js/SpellCheck/ValidateOnType_images/validateontype.png)
+![SpellCheck validation type image](ValidateOnType_images/validateontype.png)
 
 
 You can also validate the content within the IFrame element or IFrame element target text, by passing the IFrame element id or class name value to the `controlsToValidate` property. 

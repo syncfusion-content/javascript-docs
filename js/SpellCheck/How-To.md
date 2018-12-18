@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to SpellCheck on typing with time interval? 
+title: How to Syncfusion SpellCheck on typing with time interval? 
 description: How to SpellCheck on typing with time interval
 platform: js
 control: SpellCheck

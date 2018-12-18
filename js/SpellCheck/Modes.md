@@ -1,5 +1,5 @@
 ---
-title: SpellCheck - Operations
+title: Syncfusion SpellCheck - Operations
 description: SpellCheck Operations
 platform: js
 control: spellcheck

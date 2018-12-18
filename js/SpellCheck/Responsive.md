@@ -1,5 +1,5 @@
 ---
-title: SpellCheck - Responsive
+title: Syncfusion SpellCheck - Responsive
 description: How to set the spellcheck, responsive to screen resolutions
 platform: js
 control: spellcheck
@@ -71,4 +71,4 @@ The dialog of spell check control is rendering based on the client browser’s w
 
 Mobile Rendering Screenshot:
 
-![](Responsive_Images/Responsive_Image.png)
+![SpellCheck responsive image](Responsive_Images/Responsive_Image.png)

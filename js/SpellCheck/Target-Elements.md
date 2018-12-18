@@ -1,5 +1,5 @@
 ---
-title: SpellCheck - Working with Target Elements
+title: Syncfusion SpellCheck - Working with Target Elements
 description: Target element's text spell checking with Syncfusion SpellCheck
 platform: js
 control: spellcheck

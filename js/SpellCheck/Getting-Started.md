@@ -1,5 +1,5 @@
 ---
-title: Getting started with SpellCheck component	
+title: Getting started with Syncfusion SpellCheck component	
 description: Rendering a basic SpellCheck
 platform: js
 control: spellcheck

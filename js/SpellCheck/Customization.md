@@ -1,5 +1,5 @@
 ---
-title: SpellCheck - Customization
+title: Syncfusion SpellCheck - Customization
 description: SpellCheck Customization
 platform: js
 control: spellcheck
