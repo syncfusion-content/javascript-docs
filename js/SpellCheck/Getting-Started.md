@@ -118,7 +118,7 @@ $(function() { // Document is ready
 
 ## Service Reference
 
-Assign the service method (CheckWords) path reference to the property [dictionaryUrl](/api/js/ejspellcheck#members:dictionarysettings-dictionaryurl), which is mandatory to check the spelling of the word.
+Assign the service method (CheckWords) path reference to the property [dictionaryUrl](/api/js/ejspellcheck#members:dictionarysettings-dictionaryurl) of [`dictionarySettings`](/api/js/ejspellcheck#members:dictionarysettings), which is mandatory to check the spelling of the word.
 
 The CheckWords method will perform the splitting of target sentence into separate words and check each word is that an erroneous or not. If the word is erroneous fetching the possible suggestions for it and returns those details as a result. 
 

@@ -191,7 +191,7 @@ The following code example uses to change all the error word occurrences.
 
 The SpellCheck control provides the support to add the custom words into the custom dictionary file.
 
-The [addToDictionary](/api/js/ejspellcheck#methods:addToDictionary) option is used to add the custom words into the custom dictionary file.
+The [addToDictionary](/api/js/ejspellcheck#methods:addToDictionary) option is used to add the custom words into the custom dictionary file by using [`customDictionaryUrl`](/api/js/ejspellcheck#members:dictionarysettings-customdictionaryurl) property.
 
 The following code example uses to add the custom word into the custom dictionary file.
 
@@ -258,7 +258,7 @@ Detailed information is given [here](https://help.syncfusion.com/js/spellcheck/m
 
 ## Suggestion Words
 
-The `getSuggestionWords` option is used to retrieve the possible suggestion words for an error word which is provided to correct that spelling.
+The [`getSuggestionWords`](/api/js/ejspellcheck#methods:getsuggestionwords) option is used to retrieve the possible suggestion words for an error word which is provided to correct that spelling. By using [`maxSuggestionCount`](/api/js/ejspellcheck#members:maxsuggestioncount), you can set the maximum suggestion display count.
 
 The following code example describes the above behavior.
 
@@ -292,7 +292,7 @@ N> You can get the suggestion words after some time interval once this method is
 
 ## Synchronous request
 
-On setting `enableAsync` option to false, enables the synchronous request to the server to perform SpellCheck operations.
+On setting [`enableAsync`](/api/js/ejspellcheck#members:enableasync) option to false, enables the synchronous request to the server to perform SpellCheck operations.
 
 The following code example describes the above behavior.
 
@@ -319,4 +319,4 @@ MMI control panel with touch pad and dual-view technology, sound system with the
 
 {% endhighlight %}
 
-N> You need to set the `ajaxDataType` value as `json` to retrieve the synchronous request result properly.
+N> You need to set the [`ajaxDataType`](/api/js/ejspellcheck#members:ajaxdatatype) value as `json` to retrieve the synchronous request result properly.

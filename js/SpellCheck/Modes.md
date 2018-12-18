@@ -133,7 +133,7 @@ The following code example used to define some actions after the dialog closing 
 
 {% endhighlight %}
 
-It is possible to predict the error word details before starting the spellcheck operations through dialog mode by using the client side event [start](/api/js/ejspellcheck#members:start). The below code example describes the above behavior.
+It is possible to predict the error word details before starting the spellcheck operations through dialog mode by using the client side event [start](/api/js/ejspellcheck#events:start). The below code example describes the above behavior.
 
 {% highlight html %}
 
@@ -160,7 +160,7 @@ It is possible to predict the error word details before starting the spellcheck 
 
 {% endhighlight %}
 
-You can get the corrected text content details before updating it into target element with the help of the client side event [complete](/api/js/ejspellcheck#members:complete) as mentioned in the below code example.
+You can get the corrected text content details before updating it into target element with the help of the client side event [complete](/api/js/ejspellcheck#events:complete) as mentioned in the below code example.
 
 {% highlight html %}
 
@@ -265,7 +265,7 @@ N> The **id** given for the custom menu items **must be unique**.
 
 ### Handling Menu Actions
 
-The client-side event [contextClick](/api/js/ejspellcheck#events:contextClick) can be used to define specific actions when a click made on the custom menu items. The following code example describes the above behavior.
+The client-side event [contextClick](/api/js/ejspellcheck#events:contextclick) can be used to define specific actions when a click made on the custom menu items. The following code example describes the above behavior.
 
 {% highlight html %}
 
@@ -301,7 +301,7 @@ The client-side event [contextClick](/api/js/ejspellcheck#events:contextClick) c
 {% endhighlight %}
 
 
-It is possible to predict the target (error word) on which the right click is made with the use of the event [contextOpen](/api/js/ejspellcheck#events:contextOpen). The below code example shows how to block the display of context menu, when right clicked on the word by setting **args.cancel** as **true**.
+It is possible to predict the target (error word) on which the right click is made with the use of the event [contextOpen](/api/js/ejspellcheck#events:contextopen). The below code example shows how to block the display of context menu, when right clicked on the word by setting **args.cancel** as **true**.
 
 {% highlight html %}
 
