@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to use pdfium rendering engine in Syncfusion Essential JS PDF viewer.
+title: Pdfium rendering engine in Syncfusion Essential JS PDF viewer.
 description: How to use pdfium rendering engine in Syncfusion Essential JS PDF viewer.
 platform: js
 control: PDF viewer
@@ -46,11 +46,11 @@ Exports the specified page as image using the Pdfium rendering engine.
 //Uses the Syncfusion.EJ.PdfViewer assembly   
 PdfViewerHelper viewer = new PdfViewerHelper();
 //To load the PDF document.
-viewer.Load(dataPathBase + @"Xyz.pdf"); 
+viewer.Load(dataPathBase + @"JavaScript_Succinctly.pdf"); 
 //Exports the first page of the PDF document into image  
 Bitmap image = viewer.ExportAsImage(0); 
  //To save the image             
-image.Save(dataPathBase + @"Xyz.png", System.Drawing.Imaging.ImageFormat.Png);
+image.Save(dataPathBase + @"JavaScript_Succinctly.png", System.Drawing.Imaging.ImageFormat.Png);
 {% endhighlight %}
 
 **ExportAsImage(int pageIndex, float dpiX, float dpiY)**
@@ -61,11 +61,11 @@ Exports the specified page as image with respect to the specified DPI values.
 //Uses the Syncfusion.EJ.PdfViewer assembly  
 PdfViewerHelper viewer = new PdfViewerHelper();
 //To load the PDF document 
-viewer.Load(dataPathBase + @"Xyz.pdf");
+viewer.Load(dataPathBase + @"JavaScript_Succinctly.pdf");
 //Exports the first page of the PDF document as image with the specified DPI values
 Bitmap image = viewer.ExportAsImage(0, 200, 200); 
 //To save the image             
-image.Save(dataPathBase + @"Xyz.png", System.Drawing.Imaging.ImageFormat.Png);
+image.Save(dataPathBase + @"JavaScript_Succinctly.png", System.Drawing.Imaging.ImageFormat.Png);
 {% endhighlight %}
 
 **ExportAsImage(int pageIndex, SizeF customSize, bool keepAspectRatio)**
@@ -76,11 +76,11 @@ Exports the specified page as image with respect to the specified custom size.
 //Uses the Syncfusion.EJ.PdfViewer assembly  
 PdfViewerHelper viewer = new PdfViewerHelper();
 //To load the PDF document 
-viewer.Load(dataPathBase + @"Xyz.pdf");
+viewer.Load(dataPathBase + @"JavaScript_Succinctly.pdf");
 //Exports the first page of the PDF document as image with the custom size
 Bitmap image = viewer.ExportAsImage(0, new SizeF(200, 300), true); 
 //To save the image             
-image.Save(dataPathBase + @"Xyz.png", System.Drawing.Imaging.ImageFormat.Png);
+image.Save(dataPathBase + @"JavaScript_Succinctly.png", System.Drawing.Imaging.ImageFormat.Png);
 {% endhighlight %}
 
 **ExportAsImage(int pageIndex, SizeF customSize, float dpiX, float dpiY, bool keepAspectRatio)**
@@ -91,11 +91,11 @@ Exports the specified page as image with respect to the custom size and the spec
 //Uses the Syncfusion.EJ.PdfViewer assembly  
 PdfViewerHelper viewer = new PdfViewerHelper();
 //To load the PDF document 
-viewer.Load(dataPathBase + @"Xyz.pdf");
+viewer.Load(dataPathBase + @"JavaScript_Succinctly.pdf");
 //Exports the first page of the PDF document as image with the custom size and the specified DPI values
 Bitmap image = viewer.ExportAsImage(0, new SizeF(200, 300),200,200, true);
 //To save the image             
-image.Save(dataPathBase + @"Xyz.png", System.Drawing.Imaging.ImageFormat.Png);
+image.Save(dataPathBase + @"JavaScript_Succinctly.png", System.Drawing.Imaging.ImageFormat.Png);
 {% endhighlight %}
 
 **ExportAsImage(int startIndex, int endIndex)**
@@ -106,13 +106,13 @@ Exports the specified pages as images using the Pdfium rendering engine.
 //Uses the Syncfusion.EJ.PdfViewer assembly  
 PdfViewerHelper viewer = new PdfViewerHelper();
 //To load the PDF document 
-viewer.Load(dataPathBase + @"Xyz.pdf");
+viewer.Load(dataPathBase + @"JavaScript_Succinctly.pdf");
 //Exports the PDF document pages as images 
 Bitmap[] image = viewer.ExportAsImage(0, viewer.PageCount - 1); 
 for (int i = 0; i < viewer.PageCount - 1; i++)
 	{
 	//To save the image             
-    image[i].Save(dataPathBase + @"Xyz_" + i + ".png", System.Drawing.Imaging.ImageFormat.Png);
+    image[i].Save(dataPathBase + @"JavaScript_Succinctly_" + i + ".png", System.Drawing.Imaging.ImageFormat.Png);
 	}
 {% endhighlight %}
 
@@ -124,13 +124,13 @@ Exports the specified pages as images with respect to the specified DPI values.
 //Uses the Syncfusion.EJ.PdfViewer assembly  
 PdfViewerHelper viewer = new PdfViewerHelper();
 //To load the PDF document 
-viewer.Load(dataPathBase + @"Xyz.pdf");
+viewer.Load(dataPathBase + @"JavaScript_Succinctly.pdf");
 // Exports the PDF document pages as images 
 Bitmap[] image = viewer.ExportAsImage(0, viewer.PageCount – 1, 200, 200); 
 for (int i = 0; i < viewer.PageCount - 1; i++)
 	{
 	//To save the image             
-    image[i].Save(dataPathBase + @"Xyz_" + i + ".png", System.Drawing.Imaging.ImageFormat.Png);
+    image[i].Save(dataPathBase + @"JavaScript_Succinctly_" + i + ".png", System.Drawing.Imaging.ImageFormat.Png);
 	}
 {% endhighlight %}
 
@@ -142,13 +142,13 @@ Exports the specified pages as images with respect to the specified custom size.
 //Uses the Syncfusion.EJ.PdfViewer assembly  
 PdfViewerHelper viewer = new PdfViewerHelper();
 //To load the PDF document 
-viewer.Load(dataPathBase + @"Xyz.pdf");
+viewer.Load(dataPathBase + @"JavaScript_Succinctly.pdf");
 // Exports the PDF document pages as images 
 Bitmap[] image = viewer.ExportAsImage(0, viewer.PageCount – 1, new SizeF(200, 300), false);
 for (int i = 0; i < viewer.PageCount - 1; i++)
 	{
 	//To save the image             
-    image[i].Save(dataPathBase + @"Xyz_" + i + ".png", System.Drawing.Imaging.ImageFormat.Png);
+    image[i].Save(dataPathBase + @"JavaScript_Succinctly_" + i + ".png", System.Drawing.Imaging.ImageFormat.Png);
 	}
 {% endhighlight %}
 
@@ -160,13 +160,13 @@ Exports the specified pages as images with respect to the custom size and the sp
 //Uses the Syncfusion.EJ.PdfViewer assembly  
 PdfViewerHelper viewer = new PdfViewerHelper();
 //To load the PDF document 
-viewer.Load(dataPathBase + @"Xyz.pdf");
+viewer.Load(dataPathBase + @"JavaScript_Succinctly.pdf");
 // Exports the PDF document pages as images 
 Bitmap[] image = viewer.ExportAsImage(0, viewer.PageCount – 1, new SizeF(200, 300),200,200,false); 
 for (int i = 0; i < viewer.PageCount - 1; i++)
 	{
 	//To save the image             
-    image[i].Save(dataPathBase + @"Xyz_" + i + ".png", System.Drawing.Imaging.ImageFormat.Png);
+    image[i].Save(dataPathBase + @"JavaScript_Succinctly_" + i + ".png", System.Drawing.Imaging.ImageFormat.Png);
 	}
 {% endhighlight %}
 
@@ -179,11 +179,11 @@ The following code snippet explains how to extract the text from a page.
 {% highlight c# %}
 // Uses the Syncfusion.EJ.PdfViewer assembly  
 PdfViewerHelper helper = new PdfViewerHelper(); 
-helper.Load("Xyz.pdf");
+helper.Load("JavaScript_Succinctly.pdf");
 //Returns the bounds of the text
-List<Syncfusion.EJ.PdfViewer.TextData> textdata = new List<Syncfusion.EJ.PdfViewer.TextData>();
+List<Syncfusion.EJ.PdfViewer.TextData> textCollection = new List<Syncfusion.EJ.PdfViewer.TextData>();
 //Extracts the text from the first page of the PDF document along with its bounds
-string text = helper.ExtractText(0, out textdata);
+string text = helper.ExtractText(0, out textCollection);
 System.IO.File.WriteAllText("../../output/" + data + ".txt", text);
 {% endhighlight %}
 
