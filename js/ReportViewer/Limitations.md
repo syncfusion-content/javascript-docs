@@ -16,7 +16,7 @@ documentation: ug
 ## Layout process
 
 * The Syncfusion ReportViewer control has some limitations in the Tablix cell split layout process in comparison with MS ReportViewer. When the table cell width value exceeds the page width, the entire cell moves to the next page to display the complete cell items. 
-* The Syncfusion ReportViewer control does not support vertical alignment in the textbox report item.
+* The Syncfusion ReportViewer control does not support vertical alignment in the text box report item.
 
 ## Unsupported expression
 
