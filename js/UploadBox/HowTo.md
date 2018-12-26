@@ -98,10 +98,10 @@ Uploaded file can be downloaded using another button through onclick event to in
                 filename = hostingEnv.WebRootPath + $@"\{filename}";
                 ViewBag.FileName = filename;
                 size += file.Length;
-                using (FileStream fs = System.IO.File.Create(filename))
+                using (FileStream stream = System.IO.File.Create(filename))
                 {
-                    file.CopyTo(fs);
-                    fs.Flush();
+                    file.CopyTo(stream);
+                    stream.Flush();
                 }
             }
             return View("UploadFeatures");
