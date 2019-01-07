@@ -141,7 +141,7 @@ The following table shows the supported report items in the web report designer.
 
 <tr>
 <td>Table</td> 
-<td>No</td>
+<td>Yes</td>
 </tr>
 
 <tr>
