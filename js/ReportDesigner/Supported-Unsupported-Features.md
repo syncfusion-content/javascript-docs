@@ -1,6 +1,6 @@
 ---
 layout: post
-title: supported and unsupported features | Web report designer | Syncfusion
+title: Syncfusion Web ReportDesigner supported and unsupported features
 description: Supported features in web report designer
 platform: js
 control: ReportDesigner
