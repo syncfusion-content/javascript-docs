@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Web report designer supported and unsupported features list 
+title: supported and unsupported features list | Web report designer | Syncfusion
 description: Supported features in web report designer
 platform: js
 control: ReportDesigner
@@ -8,7 +8,7 @@ documentation: ug
 api: /api/js/ejreportdesigner
 ---
 
-# Supported and Unsupported Report Items
+## Supported and Unsupported Report Items
 
 The following table shows the supported report items in the web report designer.
 
@@ -176,7 +176,7 @@ The following table shows the supported report items in the web report designer.
 
 </table>
 
-# Supported and Unsupported Features
+## Supported and Unsupported Features
 
 <table>
 <tr>
@@ -230,7 +230,7 @@ The following table shows the supported report items in the web report designer.
 
 </table>
 
-# Supported and Unsupported DataSources
+## Supported and Unsupported DataSources
 
 The following table shows the supported DataSources in the web report designer.
 
