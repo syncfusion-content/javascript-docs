@@ -21,6 +21,8 @@ N> 2. Frozen Rows and Frozen Columns
 N> 3. Hierarchy
 N> 4. Detail template 
 
+I> `ejgrid.responsive.css` should be referred.
+
 ## Mobile Layout
 
 If client width is less than 321px, the grid will render in mobile mode. In which, you can see that grid user interface is customized and redesigned for best view in small screens. The customized features includes responsive row rendering, filtering, sorting, searching and editing.
@@ -271,5 +273,4 @@ $("#Grid").ejGrid({
 
 {% endhighlight %}
 
-I> `ejgrid.responsive.css` should be referred.
 
