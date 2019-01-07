@@ -232,7 +232,7 @@ The following table shows the supported report items in the web report designer.
 
 ## Supported and Unsupported DataSources
 
-The following table lists ReportDesigner data providers that you can use to retrieve data for report datasets and report items.
+The following table lists supported data sources, to establish connection and retrieve data in web ReportDesigner.
 
 <table>
 
