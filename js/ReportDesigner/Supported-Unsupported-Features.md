@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Web report designer supported and unsupported features list 
+title: Syncfusion Web ReportDesigner supported and unsupported features
 description: Supported features in web report designer
 platform: js
 control: ReportDesigner
@@ -8,7 +8,7 @@ documentation: ug
 api: /api/js/ejreportdesigner
 ---
 
-# Supported and Unsupported Report Items
+## Supported and Unsupported Report Items
 
 The following table shows the supported report items in the web report designer.
 
@@ -141,7 +141,7 @@ The following table shows the supported report items in the web report designer.
 
 <tr>
 <td>Table</td> 
-<td>No</td>
+<td>Yes</td>
 </tr>
 
 <tr>
@@ -176,7 +176,7 @@ The following table shows the supported report items in the web report designer.
 
 </table>
 
-# Supported and Unsupported Features
+## Supported and Unsupported Features
 
 <table>
 <tr>
@@ -225,6 +225,49 @@ The following table shows the supported report items in the web report designer.
 
 <tr>
 <td>Report Properties</td> 
+<td>Yes</td>
+</tr>
+
+</table>
+
+## Supported and Unsupported DataSources
+
+The following table lists the supported data sources for establishing a connection to the data provider and retrieve data in the Web ReportDesigner.
+
+<table>
+
+<tr>
+<th align="left">DataSources</th>
+<th align="left">Supported</th>
+</tr>
+
+<tr>
+<td>Microsoft SQL Server</td> 
+<td>Yes</td>
+</tr>
+
+<tr>
+<td>ODBC</td> 
+<td>Yes</td>
+</tr>
+
+<tr>
+<td>OLE DB</td> 
+<td>Yes</td>
+</tr>
+
+<tr>
+<td>Oracle</td> 
+<td>Yes</td>
+</tr>
+
+<tr>
+<td>SQL CE</td> 
+<td>Yes</td>
+</tr>
+
+<tr>
+<td>XML</td>
 <td>Yes</td>
 </tr>
 
