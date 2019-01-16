@@ -18,7 +18,7 @@ The Report Viewer uses ASP.NET Web API to process the report file and JavaScript
 
 1. Open Visual Studio and create a new project by clicking New Project. Select the Web category, select the ASP.NET Empty Web Application template, and then click OK. The following screenshot displays the Project Creation Wizard.
 
-![](Getting-Started_images/Getting-Started_img2.png) 
+![Project creation wizard of an ASP.NET application](Getting-Started_images/Getting-Started_img2.png) 
 
 Project Creation Wizard
 {:.caption}
@@ -31,7 +31,7 @@ N> You can obtain sample rdl/rdlc files from Syncfusion installed location (%use
 
 Create an ASP.NET Web API service to process the report file and request from Report Viewer. Right-click the project and click Add Item then select Web API Controller class. Name the controller as ReportApiController then click Add.
 
-![](Getting-Started_images/Getting-Started_img6.png) 
+![Shows dialog to add a new WebApi Controller](Getting-Started_images/Getting-Started_img6.png) 
 
 Adding WebApi Controller
 {:.caption}
@@ -41,7 +41,7 @@ To configure the Web API service to process report actions, add reporting server
 
 1. In the Solution Explorer, right-click the References folder and then click Add Reference
 
-   ![](Getting-Started_images/Getting-Started_img5.png) 
+   ![Displays the reporting assemblies added to the project](Getting-Started_images/Getting-Started_img5.png) 
    
    Adding Reference
    {:.caption}
@@ -127,7 +127,7 @@ The following steps help you to create a routing to include action name in the U
 
 1. Right-Click the Project, select Add  and select Global.asax file from the listed templates.
 
-   ![](Getting-Started_images/Getting-Started_img7.png) 
+   ![Shows adding a Global.asax file for WebAPI routing](Getting-Started_images/Getting-Started_img7.png) 
    
    Adding Global.asax
    {:.caption}
@@ -165,14 +165,14 @@ To create a new Web Form in the application
 
 1. Right-Click on the project and select Add
 
-   ![](Getting-Started_images/Getting-Started_img3.png) 
+   ![Shows the add new item project menu options](Getting-Started_images/Getting-Started_img3.png) 
    
    New Item Wizard
    {:.caption}
 
 2. Click New Item and select HTML Page from the listed templates
 
-   ![](Getting-Started_images/Getting-Started_img4.png) 
+   ![Adding a new HTML page for Report Viewer](Getting-Started_images/Getting-Started_img4.png) 
    
    Adding HTML Form
    {:.caption}
@@ -223,7 +223,7 @@ N> Here the `reportPath` property is set to a RDL report that is available in th
 
 Run the sample application and you can see the ReportViewer on the page as displayed in the following screenshot.
 
-![](Getting-Started_images/Getting-Started_img8.png) 
+![Sales dashboard RDL report rendered in Report Viewer](Getting-Started_images/Getting-Started_img8.png) 
 
 ReportViewer with Sales Dashboard Report
 {:.caption}
@@ -266,7 +266,7 @@ ReportViewer supports to load RDL/RDLC files from SSRS Server. The following ste
 
 3. Run the application and you can see the ReportViewer on the page as displayed in the following screenshot.
 
-   ![](Getting-Started_images/Getting-Started_img9.png) 
+   ![Territory Sales SSRS report rendered in Report Viewer](Getting-Started_images/Getting-Started_img9.png) 
    
    Report from SSRS
    {:.caption}
@@ -310,7 +310,7 @@ The ReportViewer has data binding support to visualize the RDLC reports. The fol
 
 2. Run the application and you can see the ReportViewer on the page as displayed in the following screenshot.
 
-   ![](Getting-Started_images/Getting-Started_img10.png) 
+   ![Product List local report rendered in Report Viewer](Getting-Started_images/Getting-Started_img10.png) 
    
    Product List RDLC Report
    {:.caption}
