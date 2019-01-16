@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started
+title: Getting Started | Report Viewer | Syncfusion
 description: getting started
 platform: js
 control: ReportViewer
@@ -14,7 +14,7 @@ This section explains you the steps required to display an already created repor
 
 ## Create your application
 
-The Report Viewer uses ASP.NET Web API to process the report file and JavaScript to render the repot result within web page. In the following example, we will start by creating an ASP.NET Web API and render the already created reports.
+The Report Viewer uses ASP.NET Web API to process the report file and JavaScript to render the processed report result within web page. In the following example, we will start by creating an ASP.NET Web API and render the already created reports.
 
 1. Open Visual Studio and create a new project by clicking New Project. Select the Web category, select the ASP.NET Empty Web Application template, and then click OK. The following screenshot displays the Project Creation Wizard.
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview
+title: Overview | Report Viewer | Syncfusion
 description: overview
 platform: js
 control: ReportViewer
