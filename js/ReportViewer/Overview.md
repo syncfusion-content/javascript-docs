@@ -10,36 +10,15 @@ api: /api/js/ejreportviewer
 
 # Overview
 
-The ReportViewer is a visualization control to view Microsoft SSRS RDL/RDLC files on a web page and it is powered by HTML5/JavaScript. It has support to bind DataSources/Parameters to the Reports and also supports exporting, paging, zooming and printing the report.
+The ReportViewer is a visualization control used to display SSRS, RDL, and RDLC reports within web applications. It has support to bind DataSources/Parameters and render reports with all major capabilities of RDL reporting such as parameters, variables, expressions, code modules, calculated fields, sorting, grouping, filtering, paging, report linking, drill down (toggle item), drill through, hyperlink and more. You can export the report to PDF, Excel, CSV, WORD, PowerPoint, and HTML formats.
 
-## Key Features
+Some of the key features are,
 
-The ReportViewer supports the following features.
-
-* DataSources (SQL Server, Oracle, MS Azure, XML, Business Object and SQL Server Compact Data Sources)
-* Filters and Parameters
-* Built-in Fields and Expressions
-* Grouping and Sorting
-* Report Items
-* Table
-* Matrix
-* List
-* Chart
-* Sparkline
-* DataBar
-* Map
-* Gauge
-* Indicator
-* Image
-* Textbox
-* Line
-* Rectangle
-* Subreport
-* Actions: Drilldown, Drill through, Toggle and Document Map
-* Printing, Exporting, Paging, FitToPage and Zooming
-* Report Processing Events
-* KnockOut/AngularJS Support
-* Toolbar Customization
-
-
-
+* Allows to view RDL/RDLC reports that are local or embedded in an application without using SSRS server.
+* Supports interactive features like drill down, drill through, hyperlinks and interactive sorting. 
+* Provides zooming, paging, and fit to page options.
+* Provides events for report processing customization.
+* Easily customize each and every element of report viewer.
+* Responsive UI and touch in mobile devices and touch screen monitors.
+* Supports jQuery, Angular, React, Ember, Aurelia, PHP, and JSP.
+* KnockOut/AngularJS supported.

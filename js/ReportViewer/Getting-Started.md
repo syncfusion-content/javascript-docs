@@ -10,42 +10,34 @@ api: /api/js/ejreportviewer
 
 # Getting Started
 
-This section explains briefly about how to create a ReportViewer in your web application with JavaScript.
+This section explains you the steps required to display an already created reports using Report Viewer in your web application with JavaScript.
 
-## Create your first ReportViewer in JavaScript
+## Create your application
 
-This section explains how to configure a ReportViewer component in web application. As ReportViewer uses WebApi to process the report file, you can also learn how to create WebApi Service to process the report for ReportViewer. In the following example, the ReportViewer component displays the Sales Dashboard Report.    
+The Report Viewer uses ASP.NET Web API to process the report file and JavaScript to render the repot result within web page. In the following example, we will start by creating an ASP.NET Web API and render the already created reports.
 
-Open Visual Studio and create a new project by clicking New Project. Select the Web category, select the ASP.NET Empty Web Application template, and then click OK. The following screenshot displays the Project Creation Wizard.
+1. Open Visual Studio and create a new project by clicking New Project. Select the Web category, select the ASP.NET Empty Web Application template, and then click OK. The following screenshot displays the Project Creation Wizard.
 
 ![](Getting-Started_images/Getting-Started_img2.png) 
 
 Project Creation Wizard
 {:.caption}
 
-### Create HTML Page
+2. Create a folder App_Data in the application for storage and add your already created report files to it.
 
-To create a new Web Form in the application
+N> You can obtain sample rdl/rdlc files from Syncfusion installed location (%userprofile%\AppData\Local\Syncfusion\EssentialStudio\{{ site.releaseversion }}\Common\Data\ejReportTemplate).
 
-1. Right-Click on the project and select Add
+### Add WebAPI controller for ReportViewer
 
-   ![](Getting-Started_images/Getting-Started_img3.png) 
-   
-   New Item Wizard
-   {:.caption}
+Create an ASP.NET Web API service to process the report file and request from Report Viewer. Right-click the project and click Add Item then select Web API Controller class. Name the controller as ReportApiController then click Add.
 
-2. Click New Item and select HTML Page from the listed templates
+![](Getting-Started_images/Getting-Started_img6.png) 
 
-   ![](Getting-Started_images/Getting-Started_img4.png) 
-   
-   Adding HTML Form
-   {:.caption}
+Adding WebApi Controller
+{:.caption}
 
-3. Name the page as Default.html and click OK.
-
-### Add References, Scripts, Styles and Control in HTML Page
-
-### Add References
+#### Add References
+To configure the Web API service to process report actions, add reporting server-side assembly references to the project.
 
 1. In the Solution Explorer, right-click the References folder and then click Add Reference
 
@@ -80,51 +72,7 @@ To create a new Web Form in the application
    
 3. Click OK
 
-### Add Scripts and Styles
-
-Add the script files and CSS files in the &lt;title&gt; tag of the default.html page.
-
-{% highlight html %}
-
-<link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
-<script src="http://code.jquery.com/jquery-1.10.2.min.js" type="text/javascript"></script>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" type="text/javascript"></script>
-<script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js" type="text/javascript"></script>
-
-{% endhighlight %}
-
-### Add Control in HTML Page
-
-Add the following code example in the &lt;body&gt; tag in the Default.html page. Set the desired `reportPath` and `reportServiceUrl` to ReportViewer.
-
-{% highlight html %}
-
-<div>
-    <!-- Creating a div tag which will act as a container for ejReportViewer widget.-->
-    <div  style="height: 650px;width: 950px;min-height:404px;" id="viewer"></div>
-    <!-- Setting property and initializing ejReportViewer widget.-->
-    <script type="text/javascript">
-        $(function () {
-            $("#viewer").ejReportViewer({
-                reportServiceUrl: "/api/ReportApi",
-                reportPath: '~/App_Data/Sales Dashboard.rdl'
-            });
-        });
-    </script>
-</div>
-
-{% endhighlight %}
-
-N> Add your report files to your application’s App_Data folder. You can obtain sample rdl/rdlc files from Syncfusion installed location (%userprofile%\AppData\Local\Syncfusion\EssentialStudio\{{ site.releaseversion }}\Common\Data\ejReportTemplate).
-
-### Add WebAPI controller for ReportViewer
-
-The JavaScript ReportViewer uses WebApi services to process the report file and process the request from control.
-
-![](Getting-Started_images/Getting-Started_img6.png) 
-
-Adding WebApi Controller
-{:.caption}
+N> You can use the Syncfusion NuGet package `Syncfusion.Web.ReportViewer` without installing the Essential Studio to add the reporting server-side assemblies. The Syncfusion reporting NuGet packages are published in public NuGet.org so, no need any additional configurations to utilize the `Syncfusion.Web.ReportViewer` NuGet package.
 
 #### Inherit IReportController
 
@@ -175,6 +123,7 @@ namespace ReportViewerDemo.Api
 {% endhighlight %}
 
 ### WebAPI Routing
+The following steps help you to create a routing to include action name in the URI.
 
 1. Right-Click the Project, select Add  and select Global.asax file from the listed templates.
 
@@ -209,6 +158,66 @@ namespace ReportViewerDemo.Api
 		   }
 	   }
    ~~~
+
+### Create HTML Page
+
+To create a new Web Form in the application
+
+1. Right-Click on the project and select Add
+
+   ![](Getting-Started_images/Getting-Started_img3.png) 
+   
+   New Item Wizard
+   {:.caption}
+
+2. Click New Item and select HTML Page from the listed templates
+
+   ![](Getting-Started_images/Getting-Started_img4.png) 
+   
+   Adding HTML Form
+   {:.caption}
+
+3. Name the page as Default.html and click OK.
+
+### Add Scripts, Styles, and Control in HTML Page
+
+### Add Scripts and Styles
+
+Add the CSS files, dependent (jquery-1.10.2.min.js, jquery.easing.min.js) and control script files and in the &lt;head&gt; tag of the Default.html page.
+
+{% highlight html %}
+
+<link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
+<script src="http://code.jquery.com/jquery-1.10.2.min.js" type="text/javascript"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" type="text/javascript"></script>
+<script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js" type="text/javascript"></script>
+
+{% endhighlight %}
+
+### Add Control in HTML Page
+
+Add the following code example in the &lt;body&gt; tag in the Default.html page. Set the desired `reportPath` and `reportServiceUrl` to ReportViewer.
+
+{% highlight html %}
+
+<div>
+    <!-- Creating a div tag which will act as a container for ejReportViewer widget.-->
+    <div  style="height: 650px;width: 950px;min-height:404px;" id="viewer"></div>
+    <!-- Setting property and initializing ejReportViewer widget.-->
+    <script type="text/javascript">
+        $(function () {
+            $("#viewer").ejReportViewer({
+                reportServiceUrl: "/api/ReportApi",
+                reportPath: '~/App_Data/Sales Dashboard.rdl'
+            });
+        });
+    </script>
+</div>
+
+{% endhighlight %}
+
+
+N> Here the `reportPath` property is set to a RDL report that is available in the project App_Data folder.
 
 ### Run the Application
 
