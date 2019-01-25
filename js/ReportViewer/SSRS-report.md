@@ -29,7 +29,7 @@ ReportViewer has support to load RDL reports from SSRS Report Server. To render 
 {% endhighlight %}
 
 N> Report Server URL should be in the format of http://<servername>/reportserver$instanceName
-The report path should be in the format of /foldername/reportname.
+The report path should be in the format of /folder name/report name.
 
 ## Network credentials for SSRS
 The network credentials are required to connect with the specified SSRS Report Server using Report Viewer. Specify the `ReportServerCredential` property in Web API Controller `OnInitReportOptions` method.
