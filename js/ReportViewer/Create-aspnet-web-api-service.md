@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started | JavaScript Report Viewer | Syncfusion
-description: Getting started with Syncfusion HTML5 JavaScript Report Viewer
+title: Create ASP.NET Web API Service | Report Viewer | Syncfusion
+description: Create ASP.NET Web API Service for Syncfusion HTML5 JavaScript Report Viewer to process and render reports.
 platform: js
 control: ReportViewer
 documentation: ug
