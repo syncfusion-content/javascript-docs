@@ -23,10 +23,10 @@ You can show the progress information, when the exporting takes long time to com
                 {
                     reportServiceUrl: "/api/ReportsApi",
                     reportPath: '~/App_Data/Sales Order Detail.rdl',
-                    exportProgressChanged: "onexportProgressChanged",
+                    exportProgressChanged: "onExportProgressChanged",
                 });
         });
-        function onexportProgressChanged(args) {
+        function onExportProgressChanged(args) {
             if (args.stage == "beginExport") {
                 console.log(args.stage);
                 args.format =

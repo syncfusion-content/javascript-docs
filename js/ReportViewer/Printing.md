@@ -180,11 +180,11 @@ Report Viewer provides events that helps to show the progress information, when 
             $("#container").ejReportViewer({
                 reportServiceUrl: "/api/ReportsApi",
                 reportPath: '~/App_Data/Sales Order Detail.rdl',
-                printProgressChanged:"onprintProgressChanged",
+                printProgressChanged:"onPrintProgressChanged",
             });
         });
 
-        function onprintProgressChanged(args) {
+        function onPrintProgressChanged(args) {
             if (args.stage == "beginPrint") {
                 $('#reportviewer').ejWaitingPopup({ showOnInit: true, cssClass: "customStyle", text: "Preparing print data.. Please wait..." });
             }

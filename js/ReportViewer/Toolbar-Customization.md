@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Toolbar Customization
+title: Toolbar Customization | Report Viewer | Syncfusion
 description: toolbar customization
 platform: js
 control: ReportViewer

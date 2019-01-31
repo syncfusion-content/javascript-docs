@@ -18,7 +18,7 @@ N> You can obtain Side_By_SideMainReport.rdl, Side_By_SideSubReport.rdl files fr
 
 N> If the reports used from installed location it requires NorthwindIO_Reports.sdf database to run, so add it to your application.
 
-2.	Set reportpath and reportServiceUrl properties of Report Viewer as in below code snippet.
+2.	Set `reportPath` and `reportServiceUrl` properties of Report Viewer as in below code snippet.
 
 {% highlight javascript %}
         <script type="text/javascript">

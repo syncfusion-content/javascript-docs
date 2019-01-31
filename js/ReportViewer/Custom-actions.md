@@ -23,7 +23,7 @@ Add user defined buttons and invoke custom actions using Report Viewer property 
                     reportServiceUrl: "/api/ReportsApi",
                     reportPath: '~/App_Data/Sales Order Detail.rdl',
                     toolbarSettings: {
-                        click: 'emialReport',
+                        click: 'emailReport',
                         customToolBarItems: [{
                             itemType: ej.ReportViewer.InputElement.Default,
                             groupIndex: 3,
@@ -34,7 +34,7 @@ Add user defined buttons and invoke custom actions using Report Viewer property 
                                 content: 'Send rendered report as mail attachment',
                             },
 
-                            click: 'emialReport'
+                            click: 'emailReport'
                         }]
                     }
                 });
@@ -42,8 +42,8 @@ Add user defined buttons and invoke custom actions using Report Viewer property 
         function emailReport(args) {
             var proxy = $('#container').data('ejReportViewer');
             var Report = proxy.model.reportPath;
-            var lastslash = Report.lastIndexOf("/");
-            var reportName = Report.substring(lastslash + 1);
+            var lastsIndex = Report.lastIndexOf("/");
+            var reportName = Report.substring(lastsIndex + 1);
             var requrl = proxy.model.reportServiceUrl + '/SendEmail';
             var _json = {
                 exportType: "PDF", reportViewerToken: proxy._reportViewerToken, ReportName: reportName
@@ -90,8 +90,8 @@ N> In the above code sample, report is exported to PDF and sent to users, using 
                 MailMessage mail = new MailMessage();
                 SmtpClient SmtpServer = new SmtpClient("smtp.gmail.com");
                 mail.IsBodyHtml = true;
-                mail.From = new MailAddress("xxxx@gmail.com");
-                mail.To.Add("xxxx@gmail.com");
+                mail.From = new MailAddress("xx@gmail.com");
+                mail.To.Add("xx@gmail.com");
                 mail.Subject = "Report Name : " + reportName;
                 stream.Position = 0;
 
@@ -104,7 +104,7 @@ N> In the above code sample, report is exported to PDF and sent to users, using 
                 }
 
                 SmtpServer.Port = 587;
-                SmtpServer.Credentials = new System.Net.NetworkCredential("xxxx@gmail.com", "yyyyyyxxx");
+                SmtpServer.Credentials = new System.Net.NetworkCredential("xx@gmail.com", "xx");
                 SmtpServer.EnableSsl = true;
                 SmtpServer.Send(mail);
 
@@ -112,7 +112,7 @@ N> In the above code sample, report is exported to PDF and sent to users, using 
             }
             catch (Exception ex)
             {
-                ex.ToString();
+                return ex.ToString();
             }
 
             return false;

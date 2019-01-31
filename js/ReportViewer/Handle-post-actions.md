@@ -107,7 +107,7 @@ The custom data values are stored in `CustomData` header key, you can store it t
     }
 {% endhighlight %}
 
-## AjaxSucess
+## AjaxSuccess
 To perform custom action or show user defined message, when an ajax request was successful you can use the `ajaxSuccess` event.
 
 {% highlight javascript %}
