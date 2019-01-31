@@ -47,6 +47,7 @@ Report Viewer has data binding support, which allows you to view RDLC reports th
 {% endhighlight %}
 
 N> The RDLC report used in the above example is taken from the Syncfusion build installed location. You can obtain sample rdlc files from below location. (%userprofile%\AppData\Local\Syncfusion\EssentialStudio\{{ site.releaseversion }}\Common\Data\ejReportTemplate).
+
 4. Build and run the application to view the output result.
 
 

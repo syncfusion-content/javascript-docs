@@ -8,8 +8,9 @@ documentation: ug
 api: /api/js/ejreportviewer
 ---
 
-# Create ASP.NET Web API
+# Create ASP.NET Web API Service
 In this section, you will use the new ASP.NET web project templates to create a Web API for Report Viewer to process the report actions.
+
 1. Open Visual Studio 2012, from the File menu, select New Project. 
 2. Select the Visual C#, Web project type from the project type, then select the ASP.NET Empty Web Application project type. Set the project's Name to “ReportViewerWebAPIService” then click OK.
 
@@ -17,6 +18,7 @@ In this section, you will use the new ASP.NET web project templates to create a 
 
 ## List of dependency libraries
 The Web API service configuration requires reporting server-side assembly references.
+
 1. In the Solution Explorer, right-click the References then click Add Reference.
 2. Add the below mentioned libraries to the application from installed location or GAC (Global Assembly Cache).
 
@@ -99,6 +101,7 @@ namespace ReportViewerWebAPIService
 
 ## Configure routing in global application class
 The following steps guides you to configure the routing to include action name in the URI.
+
 1. Right-click the project in the solution explorer and select Add > New item.
 2. In the Add New Item window, select Global Application class and name it as “Global.asax”, and then click Add.
 
