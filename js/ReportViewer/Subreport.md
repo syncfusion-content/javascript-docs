@@ -12,13 +12,13 @@ api: /api/js/ejreportviewer
 
 Report Viewer has support to displays another report inside the body of a main report. The following guides you to customize the subreport properties such as data source, report path, and parameters. 
 
-1.	Add the sub report and main reports to your application, in this tutorial we are using the already created reports. Refer the Create Report section to create a new report.
+1.Add the sub report and main reports to your application, in this tutorial we are using the already created reports. Refer the Create Report section to create a new report.
 
 N> You can obtain Side_By_SideMainReport.rdl, Side_By_SideSubReport.rdl files from Syncfusion installed location (%userprofile%\AppData\Local\Syncfusion\EssentialStudio\{{ site.releaseversion }}\Common\Data\ejReportTemplate) or you can download from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Subreports-1004880284).
 
 N> If the reports used from installed location it requires NorthwindIO_Reports.sdf database to run, so add it to your application.
 
-2.	Set `reportPath` and `reportServiceUrl` properties of Report Viewer as in below code snippet.
+2.Set `reportPath` and `reportServiceUrl` properties of Report Viewer as in below code snippet.
 
 {% highlight javascript %}
         <script type="text/javascript">
@@ -32,7 +32,7 @@ N> If the reports used from installed location it requires NorthwindIO_Reports.s
 
 {% endhighlight %}
 
-3.	Build and run the application, to view the below result.
+3.Build and run the application, to view the below result.
 
 ![Employee comparison using subreport report item](Getting-Started_images/side-by-side-subreport.png)
 

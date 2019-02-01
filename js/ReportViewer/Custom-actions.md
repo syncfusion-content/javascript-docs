@@ -12,8 +12,8 @@ Add user defined buttons and invoke custom actions using Report Viewer property 
 
 ## Add email button
 
-1.	Create email button option in toolbar, using the `customToolBarItems` property with values such as index, cssClass name, tooltip, click event to fire when click the button.
-2.	Access the Report Viewer model and create json array for sending to Web API server. You can use the following codes for creating the event with custom action.  
+1.Create email button option in toolbar, using the [`customToolBarItems`](../api/ejreportviewer#members:toolbarSettings-customtoolbaritems) property with values such as index, cssClass name, tooltip, click event to fire when click the button.
+2.Access the Report Viewer model and create json array for sending to Web API server. You can use the following codes for creating the event with custom action.  
 
 {% highlight javascript %}
     <script type="text/javascript">
@@ -64,9 +64,9 @@ N> In the above code sample, report is exported to PDF and sent to users, using 
 
 ## Create custom email action
 
-1.	Create a new action method `SendEmail` in Web API service.
-2.	Export the report to required type using ReportHelper.GetReport to send report stream as attachment.
-3.	The following code sample exports the report to stream and send it as attachment to a specified mail address. Here in the code, used SmtpClient to send the report as email attachment.
+1.Create a new action method `SendEmail` in Web API service.
+2.Export the report to required type using ReportHelper.GetReport to send report stream as attachment.
+3.The following code sample exports the report to stream and send it as attachment to a specified mail address. Here in the code, used SmtpClient to send the report as email attachment.
 
 {% highlight c# %}
         public object SendEmail(Dictionary<string, object> jsonResult)
@@ -119,6 +119,6 @@ N> In the above code sample, report is exported to PDF and sent to users, using 
         }
 {% endhighlight %}
 
-4.	Build and run the application, to view the Report Viewer with custom toolbar option.
+4.Build and run the application, to view the Report Viewer with custom toolbar option.
 
 ![Report Viewer with custom email option in toolbar](Report-Service_images/add-web-api-controller.png)

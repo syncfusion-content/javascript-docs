@@ -13,8 +13,8 @@ Report Viewer provides events, properties to control and customize the exporting
 ## Export event handling
 You can show the progress information, when the exporting takes long time to complete.
 
-1.	Set the `exportProgressChanged` in Report Viewer initialization.
-2.	Implement the function and add code samples to show custom message based on the progress stage. The follow code sample shows the progress message based on the export event status.  
+1.Set the [`exportProgressChanged`](../api/ejreportviewer#events:exportprogresschanged) in Report Viewer initialization.
+2.Implement the function and add code samples to show custom message based on the progress stage. The follow code sample shows the progress message based on the export event status.  
 
 {% highlight javascript %}
     <script type="text/javascript">
@@ -59,7 +59,7 @@ You can show the progress information, when the exporting takes long time to com
 {% endhighlight %}
 
 ## Change Excel and Word export format
-Allows you to change the default file format to any other file format using `excelFormat` and `wordFormat` properties. The following code sample changes the default versions.
+Allows you to change the default file format to any other file format using [`excelFormat`](../api/ejreportviewer#members:exportsettings-excelformat) and [`wordFormat`](../api/ejreportviewer#members:exportsettings-wordformat) properties. The following code sample changes the default versions.
 
 {% highlight javascript %}
     <script type="text/javascript">
@@ -80,7 +80,7 @@ Allows you to change the default file format to any other file format using `exc
 {% endhighlight %}
 
 ## Hide specific export type for report 
-Show or hide the default export types available in component using `exportOptions` property. The following code hides the HTML export type from default export options.
+Show or hide the default export types available in component using [`exportOptions`](../api/ejreportviewer#members:exportsettings-exportoptions) property. The following code hides the HTML export type from default export options.
 
 {% highlight javascript %}
     <script type="text/javascript">
@@ -132,9 +132,9 @@ You can export the report as PDF/A-1b document by specifying the conformance lev
 ### Add custom PDF fonts
 Allows to have custom fonts in the PDF exported document by adding the font streams to `Fonts` collection in `PDFOptions` instance.
 
-1.	Add the font .ttf files into your application App_Data folder. 
-2.	In the solution explore open the properties of the font file and set the Copy to Output Directory property to Copy always.
-3.	Initialize the Font collection and add the font stream to it.
+1.Add the font .ttf files into your application App_Data folder. 
+2.In the solution explore open the properties of the font file and set the Copy to Output Directory property to Copy always.
+3.Initialize the Font collection and add the font stream to it.
 
 N> The key value provided in the font collection should be same as in the report item font property. 
 
@@ -154,7 +154,7 @@ N> The key value provided in the font collection should be same as in the report
 N> If any fonts used in the report definition that is not installed or available in the local system then you must load the font stream.
 
 ## Word export options
-The ` WordOptions` provides properties to manage Word document export behaviors.
+The `WordOptions` provides properties to manage Word document export behaviors.
 
 ### Word document type
 You can save the report to required document version by setting the `FormatType` property.
@@ -202,10 +202,10 @@ You can restrict a Word document from editing either by providing a password or 
 {% endhighlight %}
 
 ## Excel export options
-The ` ExcelOptions` provides properties to manage Excel document export behaviors.
+The `ExcelOptions` provides properties to manage Excel document export behaviors.
 
 ### Excel document type
-You can save the report to required excel version by setting the ` ExcelSaveType ` property.
+You can save the report to required excel version by setting the `ExcelSaveType ` property.
 
 {% highlight c# %}
             reportOption.ReportModel.ExcelOptions = new Syncfusion.EJ.ReportWriter.ExcelOptions()

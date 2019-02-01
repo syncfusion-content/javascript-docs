@@ -12,7 +12,7 @@ documentation: ug
 This event triggered before an Ajax request is sent to Report Viewer Web API service. It allows you to set additional headers, custom data. Here in the following code sample demonstrates adding custom authorization header and passing default parameter value to service.
 
 ### Add custom header in ajax request
-Initialize the `ajaxBeforeLoad` event in script and add the authorization token to `headers` property.
+Initialize the [`ajaxBeforeLoad`](../api/ejreportviewer#events:ajaxbeforeload) event in script and add the authorization token to `headers` property.
 
 {% highlight javascript %}
     <script type="text/javascript">
@@ -108,7 +108,7 @@ The custom data values are stored in `CustomData` header key, you can store it t
 {% endhighlight %}
 
 ## AjaxSuccess
-To perform custom action or show user defined message, when an ajax request was successful you can use the `ajaxSuccess` event.
+To perform custom action or show user defined message, when an ajax request was successful you can use the [`ajaxSuccess`](../api/ejreportviewer#events:ajaxsuccess) event.
 
 {% highlight javascript %}
     <script type="text/javascript">
@@ -128,7 +128,7 @@ To perform custom action or show user defined message, when an ajax request was 
 {% endhighlight %}
 
 ## AjaxError
-The `ajaxError` event is called if an error occurred with the request, you can display the customized error detail in the event method.
+The [`ajaxError`](../api/ejreportviewer#events:ajaxerror) event is called if an error occurred with the request, you can display the customized error detail in the event method.
 
 {% highlight javascript %}
     <script type="text/javascript">

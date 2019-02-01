@@ -22,7 +22,6 @@ $("#viewer").ejReportViewer({
 {% endhighlight %}
 
 ## Network Credentials for SSRS
-
 The Network credentials can be given at Web API Controller to connect the SSRS server.
 
 {% highlight c# %}
@@ -39,6 +38,3 @@ public void OnInitReportOptions(ReportViewerOptions reportOptions)
 {% endhighlight %}
 
 N> DataSource credentials must be added to the ReportViewer for Shared DataSources that do not have credentials in the connection string and used in the SSRS Reports.
-
-
-

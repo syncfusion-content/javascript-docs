@@ -9,11 +9,10 @@ api: /api/js/ejreportviewer
 ---
 
 # Toolbar Customization
-
 You can hide the component toolbar and show customized user interface or customize toolbar icons, element’s appearances using templates and Report Viewer properties. 
 
 ## Hide parameter block and toolbar items
-To hide toolbar items, set the `toolbarSettings` property. Set the items property as ToolbarItems.Parameters to remove parameter button from toolbar and hide the parameter block. 
+To hide toolbar items, set the [`toolbarSettings`](../api/ejreportviewer#members:toolbarsettings) property. Set the items property as ToolbarItems.Parameters to remove parameter button from toolbar and hide the parameter block. 
 
 {% highlight javascript %}
         <script type="text/javascript">
@@ -44,10 +43,10 @@ The below code sample hides the Print options from toolbar items.
 
 {% endhighlight %}
 
-Similarly, show or hide all other toolbar options with help of `toolbarSettings.items` enum.
+Similarly, show or hide all other toolbar options with help of [`toolbarSettings.items`](../api/ejreportviewer#members:toolbarsettings-items) enum.
 
 ## Hide toolbar
-To hide the Report Viewer toolbar set the `showToolbar` property to false.
+To hide the Report Viewer toolbar set the [`showToolbar`](../api/ejreportviewer#members:members:toolbarsettings-showtoolbar) property to false.
 
 {% highlight javascript %}
     <script type="text/javascript">
@@ -65,7 +64,7 @@ To hide the Report Viewer toolbar set the `showToolbar` property to false.
 {% endhighlight %}
 
 ## Decide the export option
-Report Viewer provides `exportOptions` property to show or hide the default export types available in component. The following code hides the HTML export type from default export options. 
+Report Viewer provides [`exportOptions`](../api/ejreportviewer#members:members:exportsettings-exportoptions) property to show or hide the default export types available in component. The following code hides the HTML export type from default export options. 
 
 {% highlight javascript %}
     <script type="text/javascript">
@@ -83,7 +82,7 @@ Report Viewer provides `exportOptions` property to show or hide the default expo
 {% endhighlight %}
 
 ## Add custom items to export dropdown
-To add custom items to the export drop-down available in the Report Viewer toolbar, use the property `customExportItems` and provide the JSON array of collection input with index, cssClass name and value property as given below code snippet.
+To add custom items to the export drop-down available in the Report Viewer toolbar, use the property [`customExportItems`](../api/ejreportviewer#members:members:exportsettings-customexportitems) and provide the JSON array of collection input with index, cssClass name and value property as given below code snippet.
 
 {% highlight javascript %}
             $(function () {
@@ -107,7 +106,7 @@ To add custom items to the export drop-down available in the Report Viewer toolb
 {% endhighlight %}
 
 ## Add custom option to toolbar
-The properties `customToolBarItems` and `customToolBarGroups` used to add custom toolbar items to the Report Viewer toolbar and it takes JSON array collection input with index, cssClass name, tooltip, event to fire when clicked on it. The below code adds an email option to the toolbar.
+The properties [`customToolBarItems`](../api/ejreportviewer#members:members:toolbarsettings-customtoolbaritems) and [`customToolBarGroups`](../api/ejreportviewer#members:members:toolbarsettings-customtoolbargroups) used to add custom toolbar items to the Report Viewer toolbar and it takes JSON array collection input with index, cssClass name, tooltip, event to fire when clicked on it. The below code adds an email option to the toolbar.
 
 {% highlight javascript %}
             $(function () {

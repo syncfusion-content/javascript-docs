@@ -103,6 +103,3 @@ public class ReportsController: ApiController,IReportController
 }
 
 {% endhighlight %}
-
-
-

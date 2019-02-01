@@ -13,7 +13,7 @@ Report Viewer provides Print button in the toolbar to print a copy of the report
 N> The values you set in the Page Setup dialog box are for current session only. When you close the report and reopen it, it will have the default values again. The default values for page setup dialog come from the report properties, which are set in Design view.
 
 ## View report in print mode
-Print margins are displayed in Print Layout only, to view report in print mode by default, set the `printMode` property to true. 
+Print margins are displayed in Print Layout only, to view report in print mode by default, set the [`printMode`](../api/ejreportviewer#members:printmode) property to true. 
   
 {% highlight javascript %}
         <script type="text/javascript">
@@ -30,7 +30,7 @@ Print margins are displayed in Print Layout only, to view report in print mode b
 {% endhighlight %}
 
 ## Print in new page
-To open the print in new tab of the current browser set the property `printOptions` to NewTab. By default, it shows the print dialog in same page.
+To open the print in new tab of the current browser set the property [`printOptions`](../api/ejreportviewer#members:printOptions) to NewTab. By default, it shows the print dialog in same page.
 
 {% highlight javascript %}
     <script type="text/javascript">
@@ -47,7 +47,7 @@ To open the print in new tab of the current browser set the property `printOptio
 N> The pop-up blocker must be enabled for the page to open the print view in new tab.
 
 ## Set page orientation and paper size
-You can specify print page paper size, orientation at client side to change page setup properties by setting the `pageSettings` property.
+You can specify print page paper size, orientation at client side to change page setup properties by setting the [`pageSettings`](../api/ejreportviewer#members:pagesettings) property.
 
 {% highlight javascript %}
     <script type="text/javascript">
@@ -66,7 +66,7 @@ You can specify print page paper size, orientation at client side to change page
 {% endhighlight %}
 
 ## Set report margin
-To set margin values to the report page setup use the property `margins` and specify the value to top, right, bottom and left.
+To set margin values to the report page setup use the property [`margins`](../api/ejreportviewer#members:pagesettings-margins) and specify the value to top, right, bottom and left.
 
 {% highlight javascript %}
     <script type="text/javascript">
@@ -91,7 +91,7 @@ To set margin values to the report page setup use the property `margins` and spe
 N> The values set in margin property is considered as inches input.
 
 ## Set page height and width
-To set margin values to the report page setup use the property `margins` and provide the value to top, right, bottom and left.
+To set height and width values to the report page setup use the property [`height`](../api/ejreportviewer#members:pagesettings-height), [`width`](../api/ejreportviewer#members:pagesettings-width) properties.
 
 {% highlight javascript %}
     <script type="text/javascript">
@@ -112,7 +112,7 @@ To set margin values to the report page setup use the property `margins` and pro
 N> The values set in height and width property are considered as inches input.
 
 ## Print Delay
-When the report has more images, the browser will send the report stream to print dialog before the images are completely loaded. To load the stream with complete image, you need to increase the print delay in current print job. Report Viewer provides the event `reportPrint` in which you can increase the print delay as shown in below code.
+When the report has more images, the browser will send the report stream to print dialog before the images are completely loaded. To load the stream with complete image, you need to increase the print delay in current print job. Report Viewer provides the event [`reportPrint`](../api/ejreportviewer#events:reportprint) in which you can increase the print delay as shown in below code.
 
 {% highlight javascript %}
     <script type="text/javascript">
@@ -171,8 +171,8 @@ While printing report the external styles used in the application overrides and 
 ## Show print progress
 Report Viewer provides events that helps to show the progress information, when the printing takes long time to complete. 
 
-1. Set the ` printProgressChanged ` in Report Viewer initialization.
-2. Implement the function and add code samples to show custom message based on the print progress stage. The follow code sample shows the progress message based on the print event status.  
+1.Set the `printProgressChanged` in Report Viewer initialization.
+2.Implement the function and add code samples to show custom message based on the print progress stage. The follow code sample shows the progress message based on the print event status.  
 
 {% highlight javascript %}
     <script type="text/javascript">

@@ -120,11 +120,10 @@ N> Here in this sample, used the IndicatorReport.rdlc and you can find the repor
             }];
         }
     </script>
-
 {% endhighlight %}
 
 ## Report error
-When an error occurs in the report it raises the `reportError` event and you can handle and show the details in your custom dialog instead of component default error detail interface.
+When an error occurs in the report it raises the [`reportError`](../api/ejreportviewer#events:reporterror) event and you can handle and show the details in your custom dialog instead of component default error detail interface.
 
 {% highlight javascript %}
     <script type="text/javascript">
@@ -142,13 +141,12 @@ When an error occurs in the report it raises the `reportError` event and you can
             args.cancel = true;
         }
     </script>
-
 {% endhighlight %}
 
 N> To suppress the default error dialog, set the cancel argument to true.
 
 ## Show error
-The `showError` event invoked whenever click on a report item that contains error processing errors. It provides detailed information about the cause of error. You can override it and show your customized dialog.
+The [`showError`](../api/ejreportviewer#events:showerror) event invoked whenever click on a report item that contains error processing errors. It provides detailed information about the cause of error. You can override it and show your customized dialog.
 
 {% highlight javascript %}
     <script type="text/javascript">
@@ -170,12 +168,10 @@ The `showError` event invoked whenever click on a report item that contains erro
             args.cancel = true;
         }
     </script>
-
 {% endhighlight %}
 
 ## Drill through
-When a drill through item is selected in a report, it invokes the `drillThrough` event, you can change the drill through arguments such as drill through report parameter, datasources. The following sample code loads drill through report and adds data source to the report before the drillthrough report is rendered.
-
+When a drill through item is selected in a report, it invokes the [`drillThrough`](../api/ejreportviewer#events:drillthrough) event, you can change the drill through arguments such as drill through report parameter, datasources. The following sample code loads drill through report and adds data source to the report before the drillthrough report is rendered.
 
 {% highlight c# %}
     <script type="text/javascript">
@@ -194,12 +190,10 @@ When a drill through item is selected in a report, it invokes the `drillThrough`
             args.actionInfo.Parameters = [{ name: 'SalesOrderNumber', labels: ['SO50751'], values: ['SO50751'] }];
         }
     </script>
-
 {% endhighlight %}
 
 ## Hyperlink
-The `hyperlink` event occurs when a user clicks a hyperlink in a report, before the hyperlink is followed. The following sample code redirects to new custom URL and cancels the component default action.
-
+The [`hyperlink`](../api/ejreportviewer#events:hyperlink) event occurs when a user clicks a hyperlink in a report, before the hyperlink is followed. The following sample code redirects to new custom URL and cancels the component default action.
 
 {% highlight c# %}
     <script type="text/javascript">
@@ -216,7 +210,6 @@ The `hyperlink` event occurs when a user clicks a hyperlink in a report, before 
             window.open(args.actionInfo.Hyperlink + "/Report Parameter");
         }
     </script>
-
 {% endhighlight %}
 
 N> You can bind data source only for RDLC reports. The RDL report has the connection information in report definition itself, so no need to bind data source.
@@ -232,5 +225,4 @@ You can change the credential and connection information of the data sources use
                 reportOption.ReportModel.DataSourceCredentials.Add(new Syncfusion.Reports.EJ.DataSourceCredentials("NorthWind", "Data Source=dataplatformdemodata.syncfusion.com;Initial Catalog=Northwind;user id=demoreadonly@data-platform-demo;password=N@c)=Y8s*1&dh"));
             }
         }
-
 {% endhighlight %}

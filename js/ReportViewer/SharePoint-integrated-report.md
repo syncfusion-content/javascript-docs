@@ -31,7 +31,7 @@ To render SharePoint integrated SSRS reports set the [`reportServerUrl`](../api/
 N> In SharePoint integrated mode reportServerUrl will be same as your site URL.
 The report path is relative to your reportServerUrl with file extension.
 
-## Credentials for SharePoint server
+## Forms credential for SharePoint server
 The Forms credentials are required to connect with the specified SharePoint integrated SSRS Report Server using Report Viewer. Specify the `ReportServerFormsCredential` property in Web API Controller `OnInitReportOptions` method.
 
 {% highlight c# %}
