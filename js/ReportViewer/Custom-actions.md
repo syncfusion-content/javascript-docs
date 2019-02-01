@@ -66,7 +66,7 @@ N> In the above code sample, report is exported to PDF and sent to users, using 
 
 1.	Create a new action method `SendEmail` in Web API service.
 2.	Export the report to required type using ReportHelper.GetReport to send report stream as attachment.
-3.	The following code sample exports the report to stream and send it as attachment to a specified mail address. Here in the code, used smtpClient to send the report as email attachment.
+3.	The following code sample exports the report to stream and send it as attachment to a specified mail address. Here in the code, used SmtpClient to send the report as email attachment.
 
 {% highlight c# %}
         public object SendEmail(Dictionary<string, object> jsonResult)
