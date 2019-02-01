@@ -13,9 +13,9 @@ api: /api/js/ejreportviewer
 Report Viewer has data binding support, which allows you to view RDLC reports that exist on the local file system with JSON array and custom business object data collection. The following steps demonstrates how to render a RDLC report with JSON array and custom business object data collection.
 
 ## Bind data source at client side
-1. Set the RDLC report path to `reportPath` property.
-2. Assign the [`processingMode`](../api/ejreportviewer#members:processingmode) property to `ProcessingMode.Local`.
-3. Bind the JSON array collection to [`dataSources`](../api/ejreportviewer#members:datasources) property as shown in below code.
+1.Set the RDLC report path to `reportPath` property.
+2.Assign the [`processingMode`](../api/ejreportviewer#members:processingmode) property to `ProcessingMode.Local`.
+3.Bind the JSON array collection to [`dataSources`](../api/ejreportviewer#members:datasources) property as shown in below code.
 
 {% highlight javascript %}
 <div style="height: 100%; width: 100%;">
@@ -47,13 +47,14 @@ Report Viewer has data binding support, which allows you to view RDLC reports th
 {% endhighlight %}
 
 N> The RDLC report used in the above example is taken from the Syncfusion build installed location. You can obtain sample rdlc files from below location. (%userprofile%\AppData\Local\Syncfusion\EssentialStudio\{{ site.releaseversion }}\Common\Data\ejReportTemplate).
-4. Build and run the application to view the output result.
+
+4.Build and run the application to view the output result.
 
 
 ## Bind data source in Web API controller
 To bind the custom business object data collection in Web API controller.  The following code shows the steps to configure the Web API controller to render RDLC report with business object data collection.
 
-1. Create class and methods that returns business object data collection.
+1.Create class and methods that returns business object data collection.
 
 {% highlight c# %}
     public class ProductList
@@ -105,8 +106,8 @@ To bind the custom business object data collection in Web API controller.  The f
     }
 {% endhighlight %}
 
-2. Set the `ProcessingMode` to Local and `ReportPath` to the RDLC report location.
-3. Bind the business object data values collection by adding new item to `DataSources` as in the below code snippet.
+2.Set the `ProcessingMode` to Local and `ReportPath` to the RDLC report location.
+3.Bind the business object data values collection by adding new item to `DataSources` as in the below code snippet.
 
 {% highlight c# %}
 public class ReportsApiController : ApiController, IReportController
@@ -124,6 +125,6 @@ public class ReportsApiController : ApiController, IReportController
 
 N> Here the `Name` is case sensitive and it should be same as in the data source name in the report definition. The `Value` property accepts IList, DataSet, and DataTable inputs.
 
-4. Build and run the application, the result shown as in below screenshot.
+4.Build and run the application, the result shown as in below screenshot.
 
 ![Product list RDLC report with client side JSON array data binding](Getting-Started_images/rdlc-local-report.png)

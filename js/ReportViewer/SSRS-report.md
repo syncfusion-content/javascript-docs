@@ -9,7 +9,6 @@ api: /api/js/ejreportviewer
 ---
 
 # Load SSRS RDL reports
-
 ReportViewer has support to load RDL reports from SSRS Report Server. To render SSRS Reports set the [`reportServerUrl`](../api/ejreportviewer#members:reportserverurl), [`reportPath`](../api/ejreportviewer#members:reportpath), `reportServiceUrl` properties as in the below code snippet.
 
 {% highlight javascript %}
@@ -28,8 +27,8 @@ ReportViewer has support to load RDL reports from SSRS Report Server. To render 
 
 {% endhighlight %}
 
-N> Report Server URL should be in the format of http://<servername>/reportserver$instanceName
-The report path should be in the format of /folder name/report name.
+N> Report Server URL should be in the format of "http://<servername>/reportserver$instanceName"
+The report path should be in the format of "/folder name/report name".
 
 ## Network credentials for SSRS
 The network credentials are required to connect with the specified SSRS Report Server using Report Viewer. Specify the `ReportServerCredential` property in Web API Controller `OnInitReportOptions` method.
@@ -44,7 +43,6 @@ public void OnInitReportOptions(ReportViewerOptions reportOption)
 
 
 ## Data source credential for shared data sources
-
 The SSRS Report Server does not provide options to get credential information of the report data source deployed on SSRS server. If the report has any data source that uses credentials to connect with database, then you must specify the `DataSourceCredentials` for each report data source to establish database connection.
 
 {% highlight c# %}

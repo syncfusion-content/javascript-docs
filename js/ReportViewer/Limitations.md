@@ -13,8 +13,12 @@ documentation: ug
 The ReportViewer control does not support RDL Specification for SQL Server 2000 and SQL Server 2005.
 
 ## Report Layout
-The Syncfusion ReportViewer control has some limitations in the Tablix cell split layout process in comparison with MS ReportViewer. When the table cell width value exceeds the page width, the entire cell moves to the next page to display the complete cell items. 
-The Syncfusion ReportViewer control does not support vertical alignment in the text box report item.
+1.	Vertical alignment in the text box report item is not supported in web rendering.
+2.	In the Tablix cell split layout process when the table cell width value exceeds the page width, the entire cell moves to the next page to display the complete cell items. 
 
 ## Expressions
-The object function and VB function do not have complete support in the ReportViewer.
+The object function and VB function do not have complete support.
+
+## SSRS
+The SSRS Report Server does not provide options to get credential information of the report data source deployed on server. If the report has any data source that uses credentials to connect with database, then you must specify the data source credentials for each report data source to establish database connection.
+

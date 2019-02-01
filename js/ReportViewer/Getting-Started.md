@@ -9,27 +9,27 @@ api: /api/js/ejreportviewer
 ---
 
 # Getting Started
-
 This section explains briefly about the steps required to display a report that is already created and added to your web application. Report Viewer requires a Web API service to process the report file, so you must create any one of the following Web API service,
-* [ASP.NET Web API Service](/js/create-aspnet-web-api-service)
-* [ASP.NET Core Web API Service](/js/create-aspnetcore-web-api)
-* [SelfHost Web API Service](/js/create-selfhost-web-api)
+
+* [ASP.NET Web API Service](/js/reportviewer/create-aspnet-web-api-service)
+* [ASP.NET Core Web API Service](/js/reportviewer/create-aspnetcore-web-api)
 
 Once created the Web API service, add Report Viewer to your application page to render the reports.
 
 ## Adding already created report
 Create a folder App_Data in your application for storage and add already created reports to it.
 
-
 N> You can obtain sample rdl/rdlc files from Syncfusion installed location (%userprofile%\AppData\Local\Syncfusion\EssentialStudio\{{ site.releaseversion }}\Common\Data\ejReportTemplate).
 In this tutorial, Sales Order Detail.rdl report is used, it can be downloaded from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Sales_Order_Detail-1633189686).
 
 ## Adding scripts and CSS references
 Create a HTML page in your application and add scripts and style sheets that are mandatorily required to use Report Viewer which are listed below in an appropriate order.
+
 1.	ej.web.all.min.css
 2.	jquery-1.10.2.min.js
 3.	jquery.easing.min.js
 4.	ej.web.all.min.js
+
 You can use the below code in &lt;head&gt; tag of the Report Viewer HTML page.
 
 {% highlight html %}

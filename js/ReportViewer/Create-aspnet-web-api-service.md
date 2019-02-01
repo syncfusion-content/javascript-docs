@@ -8,17 +8,19 @@ documentation: ug
 api: /api/js/ejreportviewer
 ---
 
-# Create ASP.NET Web API
+# Create ASP.NET Web API Service
 In this section, you will use the new ASP.NET web project templates to create a Web API for Report Viewer to process the report actions.
-1. Open Visual Studio 2012, from the File menu, select New Project. 
-2. Select the Visual C#, Web project type from the project type, then select the ASP.NET Empty Web Application project type. Set the project's Name to “ReportViewerWebAPIService” then click OK.
+
+1.Open Visual Studio 2012, from the File menu, select New Project. 
+2.Select the Visual C#, Web project type from the project type, then select the ASP.NET Empty Web Application project type. Set the project's Name to “ReportViewerWebAPIService” then click OK.
 
 ![Creating a new ASP.NET Empty Web Application Project](Report-Service_images/aspnet-empty-application.png)
 
 ## List of dependency libraries
 The Web API service configuration requires reporting server-side assembly references.
-1. In the Solution Explorer, right-click the References then click Add Reference.
-2. Add the below mentioned libraries to the application from installed location or GAC (Global Assembly Cache).
+
+1.In the Solution Explorer, right-click the References then click Add Reference.
+2.Add the below mentioned libraries to the application from installed location or GAC (Global Assembly Cache).
 
 N> If you have installed any version of Essential Studio, then the location of Syncfusion libraries is 
 System drive:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript\{{ site.releaseversion }}\Assemblies.
@@ -43,8 +45,8 @@ System drive:\Program Files (x86)\Syncfusion\Essential Studio\JavaScript\{{ site
 N> If you have not installed any version of Essential Studio then you can add the above assemblies from Syncfusion NuGet package `Syncfusion.Web.ReportViewer`. The Syncfusion reporting NuGet packages are published in public NuGet.org so, no need any additional configurations to utilize the Syncfusion.Web.ReportViewer NuGet package.
 
 ## Add Web API Service
-1. Right-click the project and select Add -> New Item from the context menu.
-2. In the Add New Item dialog, select Web API Controller class and name it as ReportsApiController then, click Add.
+1.Right-click the project and select Add -> New Item from the context menu.
+2.In the Add New Item dialog, select Web API Controller class and name it as ReportsApiController then, click Add.
 
 ![Adding a new controller to the project](Report-Service_images/add-web-api-controller.png)
 
@@ -99,12 +101,13 @@ namespace ReportViewerWebAPIService
 
 ## Configure routing in global application class
 The following steps guides you to configure the routing to include action name in the URI.
-1. Right-click the project in the solution explorer and select Add > New item.
-2. In the Add New Item window, select Global Application class and name it as “Global.asax”, and then click Add.
+
+1.Right-click the project in the solution explorer and select Add > New item.
+2.In the Add New Item window, select Global Application class and name it as “Global.asax”, and then click Add.
 
 ![Adding Global.asax file](Report-Service_images/add-global-application-class.png)
 
-3. In the Global.asax file, add namespace “using System.Web.Http;”, then configure the routing in Application_Start event as shown in the below code.
+3.In the Global.asax file, add namespace “using System.Web.Http;”, then configure the routing in Application_Start event as shown in the below code.
 
 {% highlight c# %}
 using System;
@@ -132,4 +135,4 @@ namespace ReportViewerWebAPIService
 
 {% endhighlight %}
 
-4. Compile and run the Web API service application.
+4.Compile and run the Web API service application.
