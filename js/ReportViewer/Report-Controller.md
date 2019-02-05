@@ -1,20 +1,16 @@
 ---
 layout: post
-title: Report Controller
-description: report controller
+title: Report Controller | JavaScript Reoprt Viewer | Syncfusion
+description: Learn about IReportController methods that are required for report processing. 
 platform: js
 control: ReportViewer
 documentation: ug
 api: /api/js/ejreportviewer
 ---
 
-# Report Controller
+# IReportController
 
-The ReportViewer uses Web API services to process the report file, process the request from control and to return the processed data to control. The Syncfusion.EJ.ReportViewer assembly has helper APIs to define the service actions and process the service requests. 
-
-## IReportController
-
-The interface `IReportController` has the declaration of action methods that is defined in WebApi Controller for processing the RDL/RDLC files and for processing request from ReportViewer control. The `IReportController` has the following action methods declaration. 
+The interface `IReportController` has the declaration of action methods that is defined in WebApi Controller for processing the RDL, RDLC, SSRS report and handling request from ReportViewer control. The IReportController has the following action methods declaration. 
 
 <table>
 <tr>
@@ -41,7 +37,7 @@ Report loaded method that is triggered when report and sub report begin loading.
 
 ## ReportHelper
 
-The class `ReportHelper` contains helper methods that helps process Post/Get request from ReportViewer control and returns the response to ReportViewer control. The `ReportHelper` has the following methods. 
+TThe class `ReportHelper` contains helper methods that helps process Post/Get request from ReportViewer control and returns the response to ReportViewer control. It has the following methods. 
 
 <table>
 <tr>
@@ -107,6 +103,3 @@ public class ReportsController: ApiController,IReportController
 }
 
 {% endhighlight %}
-
-
-

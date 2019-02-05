@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Events
-description: events
+title: Events | JavaScript Report Viewer | Syncfusion
+description: JavaScript Report Viewer events.
 platform: js
 control: ReportViewer
 documentation: ug
@@ -78,18 +78,3 @@ function reportLoaded(senderObj) {
 }
 
 {% endhighlight %}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
