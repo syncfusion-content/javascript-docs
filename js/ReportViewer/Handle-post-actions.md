@@ -8,6 +8,7 @@ documentation: ug
 ---
 
 # Handle Post Actions
+
 ## AjaxBeforeLoad
 This event triggered before an Ajax request is sent to Report Viewer Web API service. It allows you to set additional headers, custom data. Here in the following code sample demonstrates adding custom authorization header and passing default parameter value to service.
 

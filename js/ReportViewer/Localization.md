@@ -9,7 +9,7 @@ documentation: ug
 
 # Localization
 
-Report Viewer supports to localize its static text and tooltip. To render the static with specific culture, refer the corresponding culture script and set culture name in [`locale`](../api/ejreportviewer#members:locale) property of Report Viewer.
+You can localize static text and tooltip of Report Viewer. To render the static with specific culture, refer the corresponding culture script and set culture name in [`locale`](../api/ejreportviewer#members:locale) property of Report Viewer.
 
 {% highlight html %}
 
@@ -38,6 +38,8 @@ Report Viewer supports to localize its static text and tooltip. To render the st
 </body>
 
 {% endhighlight %}
+
+N> Refer the [Localization](../localization) document to get the culture specific script files.
 
 ![Renders Report Viewer in French localization](Localization_images\report-viewer-localization.png)
 

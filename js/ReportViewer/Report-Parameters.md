@@ -12,7 +12,7 @@ api: /api/js/ejreportviewer
 
 Report Viewer allows to pass or set report parameters default values at runtime. It provides [`parameters`](../api/ejreportviewer#members:parameters) property to set values of report parameters. You can set report parameters while creating ReportViewer control in script or in Web API Controller.
 
-## Set Parameter at client
+## Set parameter at client
 The [`parameters`](../api/ejreportviewer#members:parameters) property takes JSON array values with parameter details such as name, prompt, labels, values, and nullable. 
 1.Set the default value to the [`values`](../api/ejreportviewer#members:parameters-values) property and name of the report parameter to [`name`](../api/ejreportviewer#members:parameters-name) property.
 

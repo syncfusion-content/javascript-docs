@@ -16,6 +16,8 @@ This section explains briefly about the steps required to display a report that 
 
 Once created the Web API service, add Report Viewer to your application page to render the reports.
 
+I> The Report Viewer is only for rendering the reports. You must use a report generation tool to create a report, to know more refer the [Create Report](/js/reportviewer/how-to/create-report) section for creating new reports.
+
 ## Adding already created report
 Create a folder App_Data in your application for storage and add already created reports to it.
 

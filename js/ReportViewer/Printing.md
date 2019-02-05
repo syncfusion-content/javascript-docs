@@ -216,5 +216,5 @@ The extra blank page is created when the Body of your report is too wide for you
 
 **Body Width <= Page Width - (Left Margin + Right Margin)**
 
-For more details on designing a report to remove the empty pages in report, you can refer to the knowledge base article of report page sizing.
+For more details on designing a report to remove the empty pages in report, you can refer to the knowledge base article of [report page sizing](https://www.syncfusion.com/kb/8622/how-to-avoid-the-extra-blank-pages-in-print-and-print-preview).
 

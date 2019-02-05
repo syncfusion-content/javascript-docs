@@ -213,16 +213,3 @@ The [`hyperlink`](../api/ejreportviewer#events:hyperlink) event occurs when a us
 {% endhighlight %}
 
 N> You can bind data source only for RDLC reports. The RDL report has the connection information in report definition itself, so no need to bind data source.
-
-## Modify subreport data source connection string
-You can change the credential and connection information of the data sources used in the subreport using the SubReportModel in `OnInitReportOptions` method.
-
-{% highlight c# %}
-        public void OnInitReportOptions(ReportViewerOptions reportOption)
-        {
-            if (reportOption.SubReportModel != null)
-            {
-                reportOption.ReportModel.DataSourceCredentials.Add(new Syncfusion.Reports.EJ.DataSourceCredentials("NorthWind", "Data Source=dataplatformdemodata.syncfusion.com;Initial Catalog=Northwind;user id=demoreadonly@data-platform-demo;password=N@c)=Y8s*1&dh"));
-            }
-        }
-{% endhighlight %}
