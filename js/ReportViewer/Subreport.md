@@ -34,7 +34,7 @@ N> If the reports used from installed location it requires NorthwindIO_Reports.s
 
 3.Build and run the application, to view the below result.
 
-![Employee comparison using subreport report item](Getting-Started_images/side-by-side-subreport.png)
+![Employee comparison using subreport report item](/images/getting-started/side-by-side-subreport.png)
 
 ## Change subreport path
 To change the subreport file path, set ReportPath property of SubReportModel in `OnInitReportOptions` method.

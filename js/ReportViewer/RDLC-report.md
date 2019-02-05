@@ -127,4 +127,4 @@ N> Here the `Name` is case sensitive and it should be same as in the data source
 
 4.Build and run the application, the result shown as in below screenshot.
 
-![Product list RDLC report with client side JSON array data binding](Getting-Started_images/rdlc-local-report.png)
+![Product list RDLC report with client side JSON array data binding](/images/getting-started/rdlc-local-report.png)

@@ -36,6 +36,8 @@ This section describes step by step procedure to create a RDLC report using Visu
 
 2.Select the Visual C#, Reporting project type from the project type, then select the Reports Application project type. Set the project's Name to "RDLCReportsApplication" then click OK.
 
+N> If you don't see the Business Intelligence or Report Server Project options, you need to update SSDT with the Business Intelligence templates. See [Download SQL Server Data Tools](https://docs.microsoft.com/en-us/sql/ssdt/previous-releases-of-sql-server-data-tools-ssdt-and-ssdt-bi?view=sql-server-2017#links-to-download-pages).
+
 ![Create new reporting application project](/images/how-to/create-report/reporting-application.png)
 
 ### Create business object class

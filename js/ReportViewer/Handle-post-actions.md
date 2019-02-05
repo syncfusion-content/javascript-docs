@@ -8,6 +8,11 @@ documentation: ug
 ---
 
 # Handle Post Actions
+Report processing actions are sent in ajax request to exchange data with Web API service. You can use the following Report Viewer events to customize the ajax requests.
+
+* AjaxBeforeLoad
+* AjaxSucess
+* AjaxError
 
 ## AjaxBeforeLoad
 This event triggered before an Ajax request is sent to Report Viewer Web API service. It allows you to set additional headers, custom data. Here in the following code sample demonstrates adding custom authorization header and passing default parameter value to service.

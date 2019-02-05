@@ -14,7 +14,7 @@ In this section, you will use the new ASP.NET web project templates to create a 
 1.Open Visual Studio 2012, from the File menu, select New Project. 
 2.Select the Visual C#, Web project type from the project type, then select the ASP.NET Empty Web Application project type. Set the project's Name to “ReportViewerWebAPIService” then click OK.
 
-![Creating a new ASP.NET Empty Web Application Project](Report-Service_images/aspnet-empty-application.png)
+![Creating a new ASP.NET Empty Web Application Project](/images/report-service/aspnet-empty-application.png)
 
 ## List of dependency libraries
 The Web API service configuration requires reporting server-side assembly references.
@@ -48,7 +48,7 @@ N> If you have not installed any version of Essential Studio then you can add th
 1.Right-click the project and select Add -> New Item from the context menu.
 2.In the Add New Item dialog, select Web API Controller class and name it as ReportsApiController then, click Add.
 
-![Adding a new controller to the project](Report-Service_images/add-web-api-controller.png)
+![Adding a new controller to the project](/images/report-service/add-web-api-controller.png)
 
 N> While adding WebAPI Controller class, name it with the suffix “Controller” that is mandatory.
 
@@ -105,7 +105,7 @@ The following steps guides you to configure the routing to include action name i
 1.Right-click the project in the solution explorer and select Add > New item.
 2.In the Add New Item window, select Global Application class and name it as “Global.asax”, and then click Add.
 
-![Adding Global.asax file](Report-Service_images/add-global-application-class.png)
+![Adding Global.asax file](/images/report-service/add-global-application-class.png)
 
 3.In the Global.asax file, add namespace “using System.Web.Http;”, then configure the routing in Application_Start event as shown in the below code.
 

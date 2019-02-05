@@ -8,13 +8,13 @@ documentation: ug
 ---
 
 # Printing 
-Report Viewer provides Print button in the toolbar to print a copy of the report. The page setup dialog allows to set the paper size or other page setup properties, to see print margins, click Print Layout on the toolbar. 
+Report Viewer provides print button in the toolbar to print a copy of the report. The page setup dialog allows to set the paper size or other page setup properties, to see print margins, click Print Layout on the toolbar. 
 
-N> The values you set in the Page Setup dialog box are for current session only. When you close the report and reopen it, it will have the default values again. The default values for page setup dialog come from the report properties, which are set in Design view.
+N> The values you set in the Page Setup dialog box are for current session only. When you close the report and reopen it, it will have the default values again. The default values for page setup dialog come from the report properties, which are set in design view.
 
 ## View report in print mode
 Print margins are displayed in Print Layout only, to view report in print mode by default, set the [`printMode`](../api/ejreportviewer#members:printmode) property to true. 
-  
+
 {% highlight javascript %}
         <script type="text/javascript">
             $(function () {
@@ -28,6 +28,8 @@ Print margins are displayed in Print Layout only, to view report in print mode b
 
     </script>
 {% endhighlight %}
+
+N> By default, Report Viewer renders report in normal layout in which the print margins are not displayed.
 
 ## Print in new page
 To open the print in new tab of the current browser set the property [`printOptions`](../api/ejreportviewer#members:printOptions) to NewTab. By default, it shows the print dialog in same page.
